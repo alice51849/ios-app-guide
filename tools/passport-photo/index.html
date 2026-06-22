@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Passport Photo Maker — Free Online, Private (No Upload) | US, EU, UK, India, China</title>
+<meta name="description" content="Make a passport, visa or ID photo online for free. Crop to official size (US 2x2, Schengen 35x45mm, UK, India, China, Canada), replace the background with white, and download a print sheet. 100% in your browser — your photo is never uploaded. No account, no ads.">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/tools/passport-photo/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Passport Photo Maker — Private, No Upload">
+<meta property="og:description" content="Crop to official passport/visa size, whiten the background, download a print sheet. Runs entirely in your browser — nothing is uploaded.">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/tools/passport-photo/">
+<meta property="og:image" content="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4c/6e/39/4c6e395d-0f59-4218-79ff-54fcfe2c3bb4/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4c/6e/39/4c6e395d-0f59-4218-79ff-54fcfe2c3bb4/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/120x120bb.jpg">
+<style>
+:root{
+  --bg:#0f1720; --panel:#ffffff; --ink:#101826; --muted:#5b6b7d; --line:#e6ecf2;
+  --brand:#1f7ae0; --brand-d:#155fb8; --accent:#0bb39a; --warn:#e0532f;
+  --shadow:0 10px 40px rgba(16,24,38,.12); --radius:18px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"PingFang TC","Noto Sans TC",sans-serif;color:var(--ink);background:#f4f7fb;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--brand);text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.hero{background:radial-gradient(1200px 500px at 70% -10%,#1f7ae0 0%,#143a72 55%,#0f1720 100%);color:#fff;padding:54px 0 40px}
+.hero h1{font-size:clamp(28px,4.4vw,44px);line-height:1.12;margin:0 0 14px;letter-spacing:-.02em;font-weight:800}
+.hero p.sub{font-size:clamp(16px,2.1vw,19px);color:#cfe0f6;margin:0 0 22px;max-width:680px}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.badge{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);color:#eaf2fe;padding:7px 13px;border-radius:999px;font-size:13.5px;font-weight:600;backdrop-filter:blur(6px)}
+.badge svg{width:15px;height:15px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.tool{margin:-26px auto 0;position:relative;z-index:2;padding:22px}
+.tool-grid{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:24px}
+@media(max-width:820px){.tool-grid{grid-template-columns:1fr}}
+.stage-col{min-width:0}
+.dropzone{border:2px dashed #c3d3e3;border-radius:14px;background:#f7fafd;padding:38px 20px;text-align:center;cursor:pointer;transition:.15s}
+.dropzone:hover,.dropzone.drag{border-color:var(--brand);background:#eef5fe}
+.dropzone .big{font-size:17px;font-weight:700;margin:10px 0 4px}
+.dropzone .sm{color:var(--muted);font-size:13.5px}
+.stageWrap{display:none;text-align:center}
+.stageWrap.on{display:block}
+.canvas-box{position:relative;display:inline-block;border-radius:12px;overflow:hidden;background:#dfe7ef;box-shadow:inset 0 0 0 1px var(--line);touch-action:none}
+#stage{display:block;cursor:grab}
+#stage:active{cursor:grabbing}
+#overlay{position:absolute;inset:0;pointer-events:none}
+.hint{color:var(--muted);font-size:12.5px;margin-top:8px}
+.controls h3{font-size:12.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:0 0 8px}
+.controls .group{margin-bottom:20px}
+select,.btn,input[type=range]{width:100%}
+select{padding:11px 12px;border:1px solid var(--line);border-radius:11px;font-size:14.5px;background:#fff;color:var(--ink);font-weight:600}
+.swatches{display:flex;gap:9px;flex-wrap:wrap}
+.sw{width:38px;height:38px;border-radius:10px;border:2px solid var(--line);cursor:pointer;position:relative}
+.sw.sel{border-color:var(--brand);box-shadow:0 0 0 3px rgba(31,122,224,.18)}
+.sw.keep{display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--muted);font-weight:700;background:#fff}
+.toggle{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600;cursor:pointer;user-select:none;padding:10px 12px;border:1px solid var(--line);border-radius:11px;background:#fff}
+.toggle input{width:18px;height:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 16px;border-radius:12px;border:0;font-size:15px;font-weight:700;cursor:pointer;transition:.15s}
+.btn-p{background:var(--brand);color:#fff}.btn-p:hover{background:var(--brand-d)}
+.btn-s{background:#eef3f9;color:var(--ink)}.btn-s:hover{background:#e3ebf4}
+.btn-g{background:#0bb39a;color:#fff}.btn-g:hover{background:#0a9e88}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+.row{display:flex;gap:10px}.row>*{flex:1}
+.range-val{font-size:12.5px;color:var(--muted);float:right;font-weight:700}
+.status{font-size:13px;color:var(--muted);min-height:18px;margin-top:6px}
+.status.work{color:var(--brand)}.status.err{color:var(--warn)}
+.spec-line{font-size:12.5px;color:var(--muted);margin-top:6px}
+.cta{margin:30px auto 0;display:flex;gap:18px;align-items:center;flex-wrap:wrap;justify-content:space-between;padding:22px 24px;background:linear-gradient(100deg,#0f1720,#1d3a66);color:#fff;border-radius:var(--radius)}
+.cta .l{display:flex;gap:16px;align-items:center;min-width:260px;flex:1}
+.cta img.ico{width:62px;height:62px;border-radius:14px;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+.cta h4{margin:0 0 3px;font-size:18px}
+.cta p{margin:0;color:#bcd0ec;font-size:13.5px}
+.cta .pill{display:inline-block;background:rgba(11,179,154,.18);color:#7df0db;border:1px solid rgba(11,179,154,.4);font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:999px;margin-top:7px}
+.appbtn{display:inline-flex;align-items:center;gap:9px;background:#fff;color:#0f1720;padding:12px 18px;border-radius:12px;font-weight:800;font-size:15px;white-space:nowrap}
+.appbtn:hover{background:#eef3f9}
+section.block{padding:44px 0}
+section.block h2{font-size:clamp(22px,3vw,30px);letter-spacing:-.02em;margin:0 0 6px}
+section.block .lead{color:var(--muted);margin:0 0 26px;max-width:720px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media(max-width:760px){.steps{grid-template-columns:1fr 1fr}}
+.step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}
+.step .n{width:30px;height:30px;border-radius:8px;background:#eef5fe;color:var(--brand);font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+.step b{display:block;margin-bottom:3px}
+.step p{margin:0;font-size:13.5px;color:var(--muted)}
+table.specs{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;border:1px solid var(--line);font-size:14px}
+table.specs th,table.specs td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line)}
+table.specs th{background:#f4f8fc;font-size:12.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+table.specs tr:last-child td{border-bottom:0}
+details.faq{background:#fff;border:1px solid var(--line);border-radius:12px;padding:4px 18px;margin-bottom:10px}
+details.faq summary{cursor:pointer;font-weight:700;padding:13px 0;list-style:none}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{content:"+";float:right;color:var(--brand);font-weight:800}
+details.faq[open] summary::after{content:"–"}
+details.faq p{margin:0 0 14px;color:var(--muted);font-size:14px}
+footer{background:#0f1720;color:#8aa0b8;padding:34px 0;font-size:13px}
+footer a{color:#cfe0f6}
+.privacy-strip{display:flex;align-items:center;gap:9px;background:#eafaf6;border:1px solid #bfeede;color:#0a6b5b;border-radius:12px;padding:11px 15px;font-size:13.5px;font-weight:600;margin:16px 0 0}
+.privacy-strip svg{width:18px;height:18px;flex:0 0 auto}
+.outwrap{display:none;margin-top:18px;text-align:center}
+.outwrap.on{display:block}
+.outwrap canvas{max-width:100%;border-radius:10px;border:1px solid var(--line)}
+.hidden{display:none}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <h1>Free Passport &amp; ID Photo Maker — 100% Private</h1>
+    <p class="sub">Crop your photo to official passport, visa or ID size, swap the background to plain white, and download a ready-to-print sheet. Everything happens <b>inside your browser</b> — your photo is never uploaded.</p>
+    <div class="badges">
+      <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/></svg>No upload · runs locally</span>
+      <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>No account · no ads</span>
+      <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h10"/></svg>US 2x2 · Schengen 35x45 · UK · India · China</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- TOOL -->
+  <div class="card tool">
+    <div class="tool-grid">
+      <div class="stage-col">
+        <div id="dropzone" class="dropzone">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1f7ae0" stroke-width="1.7"><path d="M12 16V4m0 0L8 8m4-4l4 4"/><path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>
+          <div class="big">Drop a photo here, or tap to choose</div>
+          <div class="sm">Use a clear, front-facing photo in good light. JPG / PNG / HEIC.</div>
+          <input id="file" type="file" accept="image/*" class="hidden">
+        </div>
+
+        <div id="stageWrap" class="stageWrap">
+          <div class="canvas-box">
+            <canvas id="stage"></canvas>
+            <canvas id="overlay"></canvas>
+          </div>
+          <div class="hint">Drag to position · use the Zoom slider to size the head between the guide lines.</div>
+        </div>
+
+        <div id="outwrap" class="outwrap">
+          <h3 style="margin:0 0 10px">Your photo is ready ✓</h3>
+          <canvas id="outCanvas"></canvas>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="group">
+          <h3>Document &amp; country</h3>
+          <select id="spec"></select>
+          <div class="spec-line" id="specLine"></div>
+        </div>
+
+        <div class="group">
+          <h3>Zoom <span class="range-val" id="zoomVal">100%</span></h3>
+          <input id="zoom" type="range" min="70" max="320" value="100">
+        </div>
+
+        <div class="group">
+          <h3>Background colour</h3>
+          <div class="swatches" id="swatches">
+            <div class="sw sel" data-c="#ffffff" style="background:#fff" title="White"></div>
+            <div class="sw" data-c="#dbe7f5" style="background:#dbe7f5" title="Light blue"></div>
+            <div class="sw" data-c="#c9d6e6" style="background:#c9d6e6" title="Grey"></div>
+            <div class="sw" data-c="#e7563a" style="background:#e7563a" title="Red"></div>
+            <div class="sw keep" data-c="keep" title="Keep original">KEEP</div>
+          </div>
+          <label class="toggle" style="margin-top:12px"><input type="checkbox" id="rmbg"> Remove &amp; replace background (AI, on-device)</label>
+          <div class="status" id="status"></div>
+        </div>
+
+        <div class="group">
+          <button class="btn btn-p" id="make" disabled>Generate photo</button>
+          <div class="row" style="margin-top:10px">
+            <button class="btn btn-s" id="dlSingle" disabled>Download photo</button>
+            <button class="btn btn-g" id="dlSheet" disabled>Print sheet (4×6)</button>
+          </div>
+          <button class="btn btn-s" id="reset" style="margin-top:10px;display:none">Start over</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="privacy-strip">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/></svg>
+      Your image stays on your device. Cropping and background removal run locally in your browser — nothing is sent to a server.
+    </div>
+  </div>
+
+  <!-- APP CTA -->
+  <div class="cta">
+    <div class="l">
+      <img class="ico" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4c/6e/39/4c6e395d-0f59-4218-79ff-54fcfe2c3bb4/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/256x256bb.jpg" alt="Snapport app icon">
+      <div>
+        <h4>Need it on your iPhone?</h4>
+        <p>Snapport makes passport &amp; ID photos for 60+ countries, batch exports, and HD saves — fully offline.</p>
+        <span class="pill">One-time $4.99 · No subscription · No ads · Private</span>
+      </div>
+    </div>
+    <a class="appbtn" id="appcta" href="https://apps.apple.com/us/app/snapport-passport-id-photos/id6780575828?ct=web-passport&mt=8" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.1 1-.3 2-1 2.8-.7.8-1.7 1.4-2.7 1.3-.1-1 .4-2 1-2.7.7-.8 1.8-1.4 2.7-1.4zM19 17.3c-.5 1.1-.7 1.6-1.3 2.6-.9 1.4-2.2 3.1-3.7 3.1-1.4 0-1.7-.9-3.6-.9-1.8 0-2.2.9-3.6.9-1.5 0-2.7-1.6-3.6-3C-.6 16-.9 11.3 1.4 8.9 2.5 7.7 4 7 5.4 7c1.5 0 2.4 1 3.6 1 1.2 0 1.9-1 3.6-1 1.3 0 2.6.7 3.6 1.9-3.1 1.7-2.6 6.1.2 7.4z"/></svg>
+      Get on App&nbsp;Store
+    </a>
+  </div>
+
+  <!-- HOW -->
+  <section class="block">
+    <h2>How to make a passport photo online</h2>
+    <p class="lead">Four steps, about a minute, and nothing leaves your device.</p>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><b>Upload</b><p>Drop in a front-facing photo taken in even light against a plain wall.</p></div>
+      <div class="step"><div class="n">2</div><b>Pick the spec</b><p>Choose your country &amp; document. We set the exact size and head guides.</p></div>
+      <div class="step"><div class="n">3</div><b>Align &amp; whiten</b><p>Drag and zoom to fit the guide lines, then replace the background with white.</p></div>
+      <div class="step"><div class="n">4</div><b>Download</b><p>Save the single photo, or a 4×6 print sheet ready for any photo kiosk.</p></div>
+    </div>
+  </section>
+
+  <!-- SPECS -->
+  <section class="block">
+    <h2>Official passport photo sizes</h2>
+    <p class="lead">Common specifications built into the tool. Pick the one that matches your document.</p>
+    <table class="specs">
+      <thead><tr><th>Country / document</th><th>Photo size</th><th>Pixels @300dpi</th><th>Background</th></tr></thead>
+      <tbody id="specTable"></tbody>
+    </table>
+  </section>
+
+  <!-- FAQ -->
+  <section class="block">
+    <h2>Frequently asked questions</h2>
+    <div id="faq"></div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>Passport Photo Maker</b> — a free, private tool by the maker of Snapport. Cropping and background removal run entirely in your browser.</p>
+    <p>This tool helps you size and prepare a photo. Always confirm the latest official requirements with the relevant government authority before submitting. · <a href="https://apps.apple.com/us/app/snapport-passport-id-photos/id6780575828?ct=web-passport-footer&mt=8" target="_blank" rel="noopener">Snapport for iPhone</a></p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"SoftwareApplication","name":"Passport Photo Maker","applicationCategory":"MultimediaApplication","operatingSystem":"Web browser","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free online passport, visa and ID photo maker. Crops to official sizes and replaces the background with white, entirely in your browser with no upload."},
+    {"@type":"HowTo","name":"How to make a passport photo online for free","step":[
+      {"@type":"HowToStep","name":"Upload a photo","text":"Drop a clear, front-facing photo into the tool. It stays on your device."},
+      {"@type":"HowToStep","name":"Choose country and document","text":"Select your country and document type to set the exact photo size and head position guides."},
+      {"@type":"HowToStep","name":"Align and replace background","text":"Drag and zoom to fit your head between the guide lines, then replace the background with white."},
+      {"@type":"HowToStep","name":"Download","text":"Download the single photo or a 4x6 inch print sheet ready to print."}
+    ]},
+    {"@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"Is this passport photo maker really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. Cropping to official sizes, background replacement and downloading the print sheet are all free, with no account and no watermark."}},
+      {"@type":"Question","name":"Is my photo uploaded to a server?","acceptedAnswer":{"@type":"Answer","text":"No. Everything runs locally in your browser using your device. Your photo is never uploaded, which keeps it private."}},
+      {"@type":"Question","name":"What sizes are supported?","acceptedAnswer":{"@type":"Answer","text":"US 2x2 inch (passport and visa), Schengen and UK 35x45mm, India, China 33x48mm, Canada 50x70mm, Australia, Japan, Germany biometric and a custom size."}},
+      {"@type":"Question","name":"Can I print the photo at home or a kiosk?","acceptedAnswer":{"@type":"Answer","text":"Yes. Download the 4x6 inch sheet with multiple copies and cut guides, then print at home or at any photo kiosk such as a pharmacy or supermarket."}},
+      {"@type":"Question","name":"How do I get more countries or HD batch export?","acceptedAnswer":{"@type":"Answer","text":"Snapport for iPhone supports 60+ countries, batch export and HD saves, fully offline, as a one-time purchase with no subscription and no ads."}}
+    ]}
+  ]
+}
+</script>
+
+<script>
+(function(){
+  "use strict";
+  // ---- specs (px @300dpi) : crown/chin are fraction of height from top ----
+  var SPECS = [
+    {id:"us2x2", label:"United States — Passport & Visa (2×2 in)", w:600,h:600, mm:"51×51 mm", crown:0.16, chin:0.80, bg:"White"},
+    {id:"uk", label:"United Kingdom — Passport (35×45 mm)", w:413,h:531, mm:"35×45 mm", crown:0.07, chin:0.86, bg:"Light grey / cream"},
+    {id:"schengen", label:"Schengen / EU Visa (35×45 mm)", w:413,h:531, mm:"35×45 mm", crown:0.07, chin:0.86, bg:"Light grey"},
+    {id:"de", label:"Germany — Biometric (35×45 mm)", w:413,h:531, mm:"35×45 mm", crown:0.07, chin:0.86, bg:"Light grey"},
+    {id:"in", label:"India — Passport (35×45 mm)", w:413,h:531, mm:"35×45 mm", crown:0.08, chin:0.85, bg:"White"},
+    {id:"invisa", label:"India / US Visa (2×2 in)", w:600,h:600, mm:"51×51 mm", crown:0.16, chin:0.80, bg:"White"},
+    {id:"cn", label:"China — Visa (33×48 mm)", w:390,h:567, mm:"33×48 mm", crown:0.08, chin:0.86, bg:"White"},
+    {id:"ca", label:"Canada — Passport (50×70 mm)", w:591,h:827, mm:"50×70 mm", crown:0.10, chin:0.83, bg:"White"},
+    {id:"au", label:"Australia — Passport (35×45 mm)", w:413,h:531, mm:"35×45 mm", crown:0.07, chin:0.86, bg:"White"},
+    {id:"jp", label:"Japan — Passport/Visa (35×45 mm)", w:413,h:531, mm:"35×45 mm", crown:0.10, chin:0.84, bg:"White"},
+    {id:"br", label:"Brazil — Passport (50×70 mm)", w:591,h:827, mm:"50×70 mm", crown:0.10, chin:0.83, bg:"White"}
+  ];
+  var DPI=300;
+  var $=function(s){return document.querySelector(s)};
+  var stage=$("#stage"), sctx=stage.getContext("2d");
+  var ov=$("#overlay"), octx=ov.getContext("2d");
+  var out=$("#outCanvas"), outctx=out.getContext("2d");
+  var state={img:null, fg:null, spec:SPECS[0], zoom:1, tx:0,ty:0, base:1, bg:"#ffffff", keep:false, rmbg:false, drag:null};
+
+  // ---- populate spec select + table ----
+  var sel=$("#spec");
+  SPECS.forEach(function(s,i){var o=document.createElement("option");o.value=i;o.textContent=s.label;sel.appendChild(o)});
+  var tb=$("#specTable");
+  SPECS.forEach(function(s){var tr=document.createElement("tr");
+    tr.innerHTML="<td>"+s.label.replace(/\s*\([^)]*\)/,"")+"</td><td>"+s.mm+"</td><td>"+s.w+"×"+s.h+"</td><td>"+s.bg+"</td>";tb.appendChild(tr)});
+  var FAQ=[
+    ["Is this passport photo maker really free?","Yes — cropping to official sizes, background replacement and the print sheet are all free, with no account and no watermark."],
+    ["Is my photo uploaded to a server?","No. Everything runs locally in your browser. Your photo never leaves your device, so it stays private."],
+    ["Will it meet official requirements?","The tool sets the correct dimensions and head-position guides. Lighting, expression and background still depend on your source photo — always confirm the latest rules with the official authority."],
+    ["Can I print it at a kiosk?","Yes. Download the 4×6 inch sheet with copies and cut guides, then print at home or any pharmacy/supermarket photo kiosk."],
+    ["I need more countries or batch export.","Snapport for iPhone covers 60+ countries with batch and HD export, fully offline — a one-time $4.99 purchase, no subscription, no ads."]
+  ];
+  var faqEl=$("#faq");
+  FAQ.forEach(function(f){var d=document.createElement("details");d.className="faq";
+    d.innerHTML="<summary>"+f[0]+"</summary><p>"+f[1]+"</p>";faqEl.appendChild(d)});
+
+  // ---- stage sizing ----
+  function fitStage(){
+    var maxW=Math.min($(".stage-col").clientWidth, 420), maxH=470;
+    var r=state.spec.w/state.spec.h, w=maxW, h=w/r;
+    if(h>maxH){h=maxH;w=h*r;}
+    [stage,ov].forEach(function(c){c.width=Math.round(w);c.height=Math.round(h);c.style.width=w+"px";c.style.height=h+"px";});
+  }
+  function coverBase(){
+    if(!state.img)return 1;
+    return Math.max(stage.width/state.img.width, stage.height/state.img.height);
+  }
+  function centerImg(){
+    state.base=coverBase(); var s=state.base*state.zoom;
+    state.tx=(stage.width-state.img.width*s)/2;
+    state.ty=(stage.height-state.img.height*s)/2;
+  }
+  function curImg(){ return (state.rmbg && state.fg) ? state.fg : state.img; }
+
+  function render(){
+    if(!state.img)return;
+    var s=state.base*state.zoom, im=curImg();
+    sctx.clearRect(0,0,stage.width,stage.height);
+    if(!state.keep){ sctx.fillStyle=state.bg; sctx.fillRect(0,0,stage.width,stage.height); }
+    sctx.drawImage(im, state.tx, state.ty, im.width*s, im.height*s);
+    drawGuide();
+  }
+  function drawGuide(){
+    octx.clearRect(0,0,ov.width,ov.height);
+    var W=ov.width,H=ov.height, crown=state.spec.crown*H, chin=state.spec.chin*H;
+    octx.strokeStyle="rgba(31,122,224,.85)";octx.lineWidth=1.4;octx.setLineDash([6,5]);
+    [crown,chin].forEach(function(y){octx.beginPath();octx.moveTo(0,y);octx.lineTo(W,y);octx.stroke();});
+    // head oval
+    var cy=(crown+chin)/2, rh=(chin-crown)/2, rw=rh*0.74;
+    octx.beginPath();octx.ellipse(W/2,cy,rw,rh,0,0,Math.PI*2);octx.stroke();
+    // eye line ~ 45% from crown to chin
+    octx.setLineDash([2,4]);octx.strokeStyle="rgba(11,179,154,.8)";
+    var ey=crown+(chin-crown)*0.42;octx.beginPath();octx.moveTo(0,ey);octx.lineTo(W,ey);octx.stroke();
+    octx.setLineDash([]);
+    octx.fillStyle="rgba(31,122,224,.9)";octx.font="11px -apple-system,sans-serif";
+    octx.fillText("crown",6,crown-5);octx.fillText("chin",6,chin+14);
+  }
+
+  // ---- export ----
+  function compose(targetCanvas, w, h){
+    targetCanvas.width=w; targetCanvas.height=h;
+    var c=targetCanvas.getContext("2d");
+    var f=w/stage.width, s=state.base*state.zoom*f, im=curImg();
+    if(!state.keep){ c.fillStyle=state.bg; c.fillRect(0,0,w,h); }
+    c.imageSmoothingQuality="high";
+    c.drawImage(im, state.tx*f, state.ty*f, im.width*s, im.height*s);
+  }
+  function makePhoto(){
+    compose(out, state.spec.w, state.spec.h);
+    $("#outwrap").classList.add("on");
+    $("#dlSingle").disabled=false; $("#dlSheet").disabled=false;
+    out.scrollIntoView({behavior:"smooth",block:"center"});
+  }
+  function download(canvas,name){
+    canvas.toBlob(function(b){
+      var a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=name;
+      document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(a.href)},1500);
+    },"image/jpeg",0.95);
+  }
+  function makeSheet(){
+    // 4x6 in @300 = 1800x1200 landscape
+    var SW=1800,SH=1200,pad=30,gap=24;
+    var single=document.createElement("canvas");compose(single,state.spec.w,state.spec.h);
+    var pw=state.spec.w,ph=state.spec.h;
+    var cols=Math.max(1,Math.floor((SW-pad*2+gap)/(pw+gap)));
+    var rows=Math.max(1,Math.floor((SH-pad*2+gap)/(ph+gap)));
+    var sheet=document.createElement("canvas");sheet.width=SW;sheet.height=SH;
+    var c=sheet.getContext("2d");c.fillStyle="#fff";c.fillRect(0,0,SW,SH);
+    var gridW=cols*pw+(cols-1)*gap, gridH=rows*ph+(rows-1)*gap;
+    var ox=(SW-gridW)/2, oy=(SH-gridH)/2;
+    for(var r=0;r<rows;r++)for(var col=0;col<cols;col++){
+      var x=ox+col*(pw+gap), y=oy+r*(ph+gap);
+      c.drawImage(single,x,y,pw,ph);
+      c.strokeStyle="#c9d3de";c.lineWidth=1;c.strokeRect(x-.5,y-.5,pw+1,ph+1);
+    }
+    return sheet;
+  }
+
+  // ---- background removal (lazy, on-device) ----
+  var bgLib=null, bgTried=false;
+  function setStatus(t,cls){var e=$("#status");e.textContent=t||"";e.className="status"+(cls?" "+cls:"")}
+  async function ensureLib(){
+    if(bgLib)return bgLib;
+    setStatus("Loading on-device AI model (first time only)…","work");
+    var lib=await import("https://cdn.jsdelivr.net/npm/@imgly/background-removal@1.5.5/+esm");
+    bgLib=lib; return lib;
+  }
+  async function runRemoval(){
+    if(!state.img)return;
+    try{
+      var lib=await ensureLib();
+      setStatus("Removing background…","work");
+      var blob=await new Promise(function(res){state.srcCanvas.toBlob(res,"image/png")});
+      var outBlob=await lib.removeBackground(blob,{publicPath:"https://cdn.jsdelivr.net/npm/@imgly/background-removal@1.5.5/dist/"});
+      var url=URL.createObjectURL(outBlob);
+      var img=new Image();
+      await new Promise(function(res,rej){img.onload=res;img.onerror=rej;img.src=url});
+      state.fg=img; setStatus("Background removed ✓","");
+      render();
+    }catch(e){
+      console.error(e);
+      $("#rmbg").checked=false; state.rmbg=false;
+      setStatus("On-device removal unavailable here — using a solid colour fill instead. The Snapport app removes backgrounds offline.","err");
+      render();
+    }
+  }
+
+  // ---- load image ----
+  function loadFile(file){
+    if(!file)return;
+    var url=URL.createObjectURL(file), img=new Image();
+    img.onload=function(){
+      state.img=img; state.fg=null; state.zoom=1; $("#zoom").value=100; $("#zoomVal").textContent="100%";
+      // keep a source canvas for bg removal input
+      var sc=document.createElement("canvas");sc.width=img.width;sc.height=img.height;
+      sc.getContext("2d").drawImage(img,0,0);state.srcCanvas=sc;
+      $("#dropzone").style.display="none"; $("#stageWrap").classList.add("on");
+      $("#reset").style.display="block"; $("#make").disabled=false;
+      fitStage(); centerImg(); render();
+      if(state.rmbg) runRemoval();
+    };
+    img.onerror=function(){setStatus("Could not read that image. Try a JPG or PNG.","err")};
+    img.src=url;
+  }
+
+  // ---- events ----
+  $("#dropzone").addEventListener("click",function(){$("#file").click()});
+  $("#file").addEventListener("change",function(e){loadFile(e.target.files[0])});
+  var dz=$("#dropzone");
+  ["dragenter","dragover"].forEach(function(ev){dz.addEventListener(ev,function(e){e.preventDefault();dz.classList.add("drag")})});
+  ["dragleave","drop"].forEach(function(ev){dz.addEventListener(ev,function(e){e.preventDefault();dz.classList.remove("drag")})});
+  dz.addEventListener("drop",function(e){if(e.dataTransfer.files[0])loadFile(e.dataTransfer.files[0])});
+
+  sel.addEventListener("change",function(){state.spec=SPECS[+this.value];$("#specLine").textContent=state.spec.mm+"  ·  "+state.spec.w+"×"+state.spec.h+" px  ·  bg: "+state.spec.bg;fitStage();centerImg();render()});
+  $("#specLine").textContent=SPECS[0].mm+"  ·  "+SPECS[0].w+"×"+SPECS[0].h+" px  ·  bg: "+SPECS[0].bg;
+
+  var zEl=$("#zoom");
+  zEl.addEventListener("input",function(){
+    var old=state.zoom; state.zoom=(+this.value)/100; $("#zoomVal").textContent=this.value+"%";
+    // zoom around stage center
+    var cx=stage.width/2, cy=stage.height/2, k=state.zoom/old;
+    state.tx=cx-(cx-state.tx)*k; state.ty=cy-(cy-state.ty)*k; render();
+  });
+
+  // pan (mouse + touch)
+  function pt(e){var r=stage.getBoundingClientRect();var t=e.touches?e.touches[0]:e;return{x:t.clientX-r.left,y:t.clientY-r.top}}
+  function down(e){if(!state.img)return;state.drag=pt(e);e.preventDefault()}
+  function move(e){if(!state.drag)return;var p=pt(e);state.tx+=p.x-state.drag.x;state.ty+=p.y-state.drag.y;state.drag=p;render();e.preventDefault()}
+  function up(){state.drag=null}
+  ov.style.pointerEvents="none";
+  stage.addEventListener("mousedown",down);window.addEventListener("mousemove",move);window.addEventListener("mouseup",up);
+  stage.addEventListener("touchstart",down,{passive:false});stage.addEventListener("touchmove",move,{passive:false});stage.addEventListener("touchend",up);
+  stage.addEventListener("wheel",function(e){e.preventDefault();var d=e.deltaY<0?4:-4;var v=Math.max(70,Math.min(320,(+zEl.value)+d));zEl.value=v;zEl.dispatchEvent(new Event("input"))},{passive:false});
+
+  // swatches
+  $("#swatches").addEventListener("click",function(e){
+    var sw=e.target.closest(".sw");if(!sw)return;
+    document.querySelectorAll(".sw").forEach(function(x){x.classList.remove("sel")});sw.classList.add("sel");
+    var c=sw.getAttribute("data-c");
+    if(c==="keep"){state.keep=true;}else{state.keep=false;state.bg=c;}
+    render();
+  });
+  $("#rmbg").addEventListener("change",function(){
+    state.rmbg=this.checked;
+    if(state.rmbg && !state.fg && state.img){runRemoval();}else{setStatus("");render();}
+  });
+
+  $("#make").addEventListener("click",makePhoto);
+  $("#dlSingle").addEventListener("click",function(){download(out,"passport-photo-"+state.spec.id+".jpg")});
+  $("#dlSheet").addEventListener("click",function(){download(makeSheet(),"passport-print-sheet-4x6.jpg")});
+  $("#reset").addEventListener("click",function(){location.reload()});
+  window.addEventListener("resize",function(){if(state.img){fitStage();centerImg();render()}});
+})();
+</script>
+</body>
+</html>

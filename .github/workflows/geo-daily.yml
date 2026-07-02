@@ -33,7 +33,11 @@ jobs:
         run: |
           rm -rf _engine/geo/pages
           ln -s "$GITHUB_WORKSPACE" _engine/geo/pages
-      - name: Generate new answer pages
+      - name: Localize un-localized answer pages (8 languages)
+        run: |
+          cd _engine/geo
+          python3 aeo_answers_i18n.py --limit 3 || echo "aeo_answers_i18n exited $?"
+      - name: Generate new answer pages (+ rebuild answers sitemap)
         run: |
           N="${{ github.event.inputs.answers || '6' }}"
           cd _engine/geo

@@ -355,14 +355,14 @@ def main() -> int:
     api_key = read_key()
     created = skipped = failed = 0
 
-    print("Slugs:")
+    print("Slugs:", flush=True)
     for slug in slugs:
-        print(f"  {slug}")
+        print(f"  {slug}", flush=True)
 
     for slug in slugs:
         src_path = ANSWERS / f"{slug}.html"
         if not src_path.exists():
-            print(f"missing source: {slug}", file=sys.stderr)
+            print(f"missing source: {slug}", file=sys.stderr, flush=True)
             failed += len(langs)
             continue
         source = src_path.read_text(encoding="utf-8")
@@ -370,20 +370,20 @@ def main() -> int:
             target = ROOT / lang / "answers" / f"{slug}.html"
             if target.exists():
                 skipped += 1
-                print(f"skip existing {lang}/{slug}.html")
+                print(f"skip existing {lang}/{slug}.html", flush=True)
                 continue
             try:
                 localized = render_localized(source, lang, slug, api_key)
                 target.parent.mkdir(parents=True, exist_ok=True)
                 target.write_text(localized, encoding="utf-8")
                 created += 1
-                print(f"created {lang}/{slug}.html")
+                print(f"created {lang}/{slug}.html", flush=True)
             except Exception as exc:
                 failed += 1
-                print(f"failed {lang}/{slug}.html: {exc}", file=sys.stderr)
+                print(f"failed {lang}/{slug}.html: {exc}", file=sys.stderr, flush=True)
                 continue
 
-    print(json.dumps({"created": created, "skipped": skipped, "failed": failed}, ensure_ascii=False))
+    print(json.dumps({"created": created, "skipped": skipped, "failed": failed}, ensure_ascii=False), flush=True)
     return 0 if failed == 0 else 1
 
 

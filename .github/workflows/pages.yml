@@ -25,6 +25,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Prune engine/tooling from published site
+        run: rm -rf _engine
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

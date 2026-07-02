@@ -1,0 +1,58 @@
+name: Daily GEO content
+
+on:
+  schedule:
+    - cron: "0 2 * * *"   # 每天 02:00 UTC 自動生成新內容
+  workflow_dispatch:
+    inputs:
+      answers:
+        description: "New answer pages to generate"
+        default: "6"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: geo-content
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    env:
+      GEO_SITE: https://alice51849.github.io/ios-app-guide
+      OPENAI_MODEL: gpt-4o-mini
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Provision OpenAI key
+        run: printf '%s' "${{ secrets.OPENAI_KEY }}" > "$HOME/.openai_key"
+      - name: Link site dir into engine layout
+        run: |
+          rm -rf _engine/geo/pages
+          ln -s "$GITHUB_WORKSPACE" _engine/geo/pages
+      - name: Generate new answer pages
+        run: |
+          N="${{ github.event.inputs.answers || '6' }}"
+          cd _engine/geo
+          python3 aeo_answers.py --limit "$N" || echo "aeo_answers exited $?"
+      - name: Refresh llms.txt / sitemaps
+        run: |
+          cd _engine/geo
+          python3 gen_llms.py || echo "gen_llms exited $?"
+      - name: Unlink site dir
+        run: rm -f _engine/geo/pages
+      - name: Commit & push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Daily GEO content: new answer pages + refreshed sitemaps"
+            git push
+            echo "Pushed new content."
+          fi

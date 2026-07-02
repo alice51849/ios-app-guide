@@ -389,7 +389,7 @@ def question_plan(keys: list[str] | None) -> list[tuple[str, str]]:
     plan: list[tuple[str, str]] = []
     seen_slugs: set[str] = set()
     for key in ordered:
-        for q in queries.CURATED.get(key, queries.ALL.get(key, [])):
+        for q in queries.ALL.get(key, queries.CURATED.get(key, [])):
             if not is_english_answer_question(q):
                 continue
             slug = slugify(q)

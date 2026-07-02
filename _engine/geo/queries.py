@@ -103,6 +103,16 @@ CURATED = {
         "app to track my toeic score progress toward 990",
         "app to fix my toeic weak points",
         "private toeic study app with no account needed",
+        "toeic app alternative to studysapuri english",
+        "abceed alternative toeic app for iphone",
+        "santa toeic alternative app for iphone",
+        "hackers toeic app alternative",
+        "toeicer alternative toeic listening and reading app",
+        "tflat toeic alternative app for iphone",
+        "migii toeic alternative app",
+        "best toeic app for working professionals to reach 900",
+        "toeic app for self study without a tutor",
+        "toeic app to practice listening and reading on the commute",
     ],
 }
 # pro 版沿用對應免費版的利基查詢

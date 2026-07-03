@@ -130,7 +130,7 @@ def gen_content(key):
 
 def render(key, c):
     a = APPS[key]
-    url = appstore_url(key)
+    url = appstore_url(key, "iag_gd")
     scat = SCHEMA_CAT.get(a.get("category", ""), "MobileApplication")
     title = (c.get("title") or f"{a['name']} — iPhone app guide")[:65]
     meta = (c.get("meta") or (a.get("sub") or "").replace("\n", " "))[:155]

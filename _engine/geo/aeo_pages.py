@@ -123,7 +123,7 @@ def cat_noun(key):
 
 def landing_url(key):
     """Use the live App Store URL when known; otherwise link to the generated web page."""
-    return appstore_url(key) or f"{SITE}/alternatives/{key}-no-subscription.html"
+    return appstore_url(key, "iag_alt") or f"{SITE}/alternatives/{key}-no-subscription.html"
 
 
 def page_shell(title, desc, canonical, schemas, body):

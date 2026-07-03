@@ -307,7 +307,7 @@ def build_one(key, locale, all_locales):
     locdata = load_app_locales(key)
     loc = locdata.get(locale, {})
     name, sub, desc, kws = _meta_from(loc, a)
-    url = appstore_url(key) or f"{SITE}/{locale}/{key}.html"
+    url = appstore_url(key, "iag_lp") or f"{SITE}/{locale}/{key}.html"
     ui = get_ui(locale)
     cat = SCHEMA_CAT.get(a.get("category", "utility"), "UtilitiesApplication")
     is_rtl = base_lang(locale) in RTL
@@ -333,7 +333,7 @@ def build_one(key, locale, all_locales):
         "inLanguage": locale,
         "description": desc or sub,
         "url": url,
-        "installUrl": appstore_url(key) or url,
+        "installUrl": appstore_url(key, "iag_lp") or url,
         "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD",
                    "description": offer_desc},
         "featureList": feats,
@@ -392,7 +392,7 @@ def build_one(key, locale, all_locales):
   <p>{e(pricing_text)}</p>
 {faq_section}
   <h2>{e(ui["dl"])}</h2>
-  <p><a href="{e(appstore_url(key) or url)}">{e(ui["get"].format(name=name))}</a></p>
+  <p><a href="{e(appstore_url(key, "iag_lp") or url)}">{e(ui["get"].format(name=name))}</a></p>
 </main>
 </body>
 </html>

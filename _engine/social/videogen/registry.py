@@ -340,7 +340,13 @@ APPSTORE = {
 }
 
 
-def appstore_url(key):
-    """Direct App Store link for an app key (empty string if unknown)."""
+def appstore_url(key, campaign=None):
+    """Direct App Store link for an app key (empty string if unknown).
+
+    campaign: optional App Store Connect campaign token (ct=) for attribution.
+    """
     aid = APPSTORE.get(key)
-    return f"https://apps.apple.com/app/id{aid}" if aid else ""
+    if not aid:
+        return ""
+    url = f"https://apps.apple.com/app/id{aid}"
+    return f"{url}?ct={campaign}" if campaign else url

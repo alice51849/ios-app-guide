@@ -122,7 +122,7 @@ def prompt_for(question: str, key: str) -> list[dict[str, str]]:
         "sub": app.get("sub", ""),
         "cta_bullets": app.get("cta_bullets", []),
         "keywords": app.get("keywords", []),
-        "app_store_url": appstore_url(key),
+        "app_store_url": appstore_url(key, "iag_ans"),
         "truth_notes": app_truth_notes(key, app),
     }
     system = (
@@ -287,7 +287,7 @@ def feature_list(key: str) -> list[str]:
 def render_page(question: str, key: str, content: dict[str, Any]) -> str:
     app = APPS[key]
     name = app["name"]
-    url = appstore_url(key)
+    url = appstore_url(key, "iag_ans")
     slug = slugify(question)
     canonical = f"{SITE}/answers/{slug}.html"
     title = f"{question}: honest iPhone app buying guide"

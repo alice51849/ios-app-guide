@@ -37,13 +37,9 @@ jobs:
         run: |
           rm -rf _engine/geo/pages
           ln -s "$GITHUB_WORKSPACE" _engine/geo/pages
-      - name: Localize un-localized answer pages (8 languages)
-        run: |
-          cd _engine/geo
-          python3 aeo_answers_i18n.py --limit 2 || echo "aeo_answers_i18n exited $?"
       - name: Generate new answer pages (+ rebuild answers sitemap)
         run: |
-          N="${{ github.event.inputs.answers || '6' }}"
+          N="${{ github.event.inputs.answers || '8' }}"
           cd _engine/geo
           python3 aeo_answers.py --limit "$N" || echo "aeo_answers exited $?"
       - name: Refresh hubs + Atom feed + llms.txt / sitemaps
@@ -52,17 +48,31 @@ jobs:
           python3 gen_hubs.py || echo "gen_hubs exited $?"
           python3 gen_feed.py || echo "gen_feed exited $?"
           python3 gen_llms.py || echo "gen_llms exited $?"
-      - name: Unlink site dir
-        run: rm -f _engine/geo/pages
-      - name: Commit & push if changed
+      - name: Commit English content first (fast, before slow localization)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
           if git diff --cached --quiet; then
-            echo "No changes to commit."
+            echo "No content changes."
           else
             git commit -m "Daily GEO content: new answer pages + refreshed sitemaps"
+            git pull --rebase --autostash || true
             git push
-            echo "Pushed new content."
+          fi
+      - name: Localize a small batch (best-effort; may be slow / rate-limited)
+        run: |
+          cd _engine/geo
+          timeout 25m python3 aeo_answers_i18n.py --limit 2 || echo "aeo_answers_i18n stopped ($?)"
+      - name: Unlink site dir
+        run: rm -f _engine/geo/pages
+      - name: Commit localized pages if any
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No localized changes."
+          else
+            git commit -m "Daily GEO content: localized answer pages"
+            git pull --rebase --autostash || true
+            git push
           fi

@@ -2,7 +2,8 @@ name: Daily IndexNow refresh
 
 on:
   schedule:
-    - cron: "47 3 * * *"   # 每天 03:47 UTC 通知 Bing/Yandex 重新抓取(避開整點/半點高負載)
+    - cron: "47 4 * * *"    # 每天 2 次通知 Bing/Yandex/Naver 重抓(離峰,全天保持新鮮)
+    - cron: "47 16 * * *"
   workflow_dispatch:
 
 permissions:

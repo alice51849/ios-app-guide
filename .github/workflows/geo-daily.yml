@@ -2,12 +2,16 @@ name: Daily GEO content
 
 on:
   schedule:
-    - cron: "23 2 * * *"   # 每天 02:23 UTC 自動生成新內容(避開整點高負載延遲)
+    # 每天 4 次(每 6 小時,離峰分鐘)→ 全天候不間斷產內容
+    - cron: "23 1 * * *"
+    - cron: "23 7 * * *"
+    - cron: "23 13 * * *"
+    - cron: "23 19 * * *"
   workflow_dispatch:
     inputs:
       answers:
         description: "New answer pages to generate"
-        default: "6"
+        default: "8"
 
 permissions:
   contents: write

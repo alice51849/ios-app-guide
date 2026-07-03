@@ -243,6 +243,23 @@ def main():
                    "results": results}, f, ensure_ascii=False, indent=2)
     md = write_markdown(results)
 
+    # 趨勢追蹤:每次量測 append 一筆到 sov_history.json(同日覆蓋),讓幾週後能看出走勢
+    hist_path = os.path.join(os.path.dirname(JSON_OUT), "sov_history.json")
+    hist = []
+    if os.path.exists(hist_path):
+        try:
+            hist = json.load(open(hist_path, encoding="utf-8"))
+        except Exception:  # noqa: BLE001
+            hist = []
+    today = date.today().isoformat()
+    hist = [h for h in hist if h.get("date") != today]
+    avg = round(sum(r["mention_rate"] for r in results) / len(results), 3) if results else 0
+    hist.append({"date": today, "model": OPENAI_MODEL, "avg_mention_rate": avg,
+                 "rates": {r["key"]: round(r["mention_rate"], 3) for r in results}})
+    hist.sort(key=lambda h: h.get("date", ""))
+    json.dump(hist, open(hist_path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    print(f"趨勢:平均 AI 曝光率 {int(avg*100)}%(歷史 {len(hist)} 週) → {hist_path}")
+
     print("\n== 摘要 ==")
     for r in sorted(results, key=lambda r: -r["mention_rate"]):
         print(f"  {r['name']:<18} 被推薦 {int(r['mention_rate']*100):>3}%  "

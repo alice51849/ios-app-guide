@@ -3,6 +3,8 @@ name: Deploy static site to Pages
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - '_engine/**'
   workflow_dispatch:
 
 permissions:

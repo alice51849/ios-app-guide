@@ -2,7 +2,7 @@ name: Daily GEO content
 
 on:
   schedule:
-    - cron: "0 2 * * *"   # 每天 02:00 UTC 自動生成新內容
+    - cron: "23 2 * * *"   # 每天 02:23 UTC 自動生成新內容(避開整點高負載延遲)
   workflow_dispatch:
     inputs:
       answers:

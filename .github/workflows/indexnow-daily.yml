@@ -2,7 +2,7 @@ name: Daily IndexNow refresh
 
 on:
   schedule:
-    - cron: "30 3 * * *"   # 每天 03:30 UTC 通知 Bing/Yandex 重新抓取(freshness 訊號)
+    - cron: "47 3 * * *"   # 每天 03:47 UTC 通知 Bing/Yandex 重新抓取(避開整點/半點高負載)
   workflow_dispatch:
 
 permissions:

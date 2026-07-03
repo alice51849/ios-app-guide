@@ -456,19 +456,26 @@ def regenerate_index() -> None:
 
 def write_sitemap() -> None:
     """Rebuild sitemap_answers.xml from files that actually exist (EN + localized)."""
+    import time as _time
     pages_dir = ROOT / "pages"
-    locs: list[str] = []
+    entries: list[tuple[str, Path]] = []
     for p in sorted(pages_dir.glob("answers/*.html")):
-        locs.append(f"{SITE}/answers/{p.name}")
+        entries.append((f"{SITE}/answers/{p.name}", p))
     for p in sorted(pages_dir.glob("*/answers/*.html")):
         rel = p.relative_to(pages_dir).as_posix()
-        locs.append(f"{SITE}/{rel}")
-    body = "\n".join(f"  <url><loc>{html.escape(u)}</loc></url>" for u in locs)
+        entries.append((f"{SITE}/{rel}", p))
+
+    def _lm(p: Path) -> str:
+        return _time.strftime("%Y-%m-%d", _time.gmtime(p.stat().st_mtime))
+
+    body = "\n".join(
+        f"  <url><loc>{html.escape(u)}</loc><lastmod>{_lm(p)}</lastmod></url>"
+        for u, p in entries)
     xml = ('<?xml version="1.0" encoding="UTF-8"?>\n'
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
            f"{body}\n</urlset>\n")
     (pages_dir / "sitemap_answers.xml").write_text(xml, encoding="utf-8")
-    print(f"SITEMAP sitemap_answers.xml {len(locs)} urls", flush=True)
+    print(f"SITEMAP sitemap_answers.xml {len(entries)} urls", flush=True)
 
 
 def main() -> None:

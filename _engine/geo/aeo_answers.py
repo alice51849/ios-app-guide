@@ -377,15 +377,24 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
 <section class="wrap card"><h2>FAQ</h2>{faq_html}</section></main><footer class="footer"><div class="wrap">Independent guide. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.</div></footer></body></html>'''
 
 
+def _sov_rates() -> dict:
+    """Latest AI share-of-voice per app (lower rate = more neglected by AI = higher priority)."""
+    path = ROOT / "reports" / "aeo_sov.json"
+    try:
+        d = json.loads(path.read_text(encoding="utf-8"))
+        return {r["key"]: r.get("mention_rate", 0.0) for r in d.get("results", [])}
+    except Exception:  # noqa: BLE001
+        return {}
+
+
 def question_plan(keys: list[str] | None) -> list[tuple[str, str]]:
     selected = keys or list(APPS.keys())
     unknown = [k for k in selected if k not in APPS]
     if unknown:
         raise SystemExit(f"Unknown app key(s): {', '.join(unknown)}")
-    ordered = []
-    if "aim990" in selected:
-        ordered.append("aim990")
-    ordered.extend([k for k in selected if k != "aim990"])
+    # 自我改進的回饋迴路:優先為「AI 曝光率最低」的 app 補內容(measure→prioritize→measure)
+    rates = _sov_rates()
+    ordered = sorted(selected, key=lambda k: (rates.get(k, 0.0), k))
     plan: list[tuple[str, str]] = []
     seen_slugs: set[str] = set()
     for key in ordered:

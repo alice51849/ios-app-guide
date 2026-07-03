@@ -21,7 +21,9 @@ ANSWERS = ROOT / "answers"
 BASE_URL = "https://alice51849.github.io/ios-app-guide"
 ALL_LANGS = ["de-DE", "es-ES", "fr-FR", "ja", "ko", "pt-BR", "zh-Hans", "zh-Hant",
              "it", "ru", "tr", "id", "vi", "th", "ar-SA", "hi", "nl-NL", "pl", "sv", "uk"]
-HREFLANG_ORDER = ["en", "es-ES", "pt-BR", "de-DE", "fr-FR", "ja", "ko", "zh-Hant", "zh-Hans", "x-default"]
+HREFLANG_ORDER = ["en", "es-ES", "pt-BR", "de-DE", "fr-FR", "ja", "ko", "zh-Hant", "zh-Hans",
+                  "it", "ru", "tr", "id", "vi", "th", "ar-SA", "hi", "nl-NL", "pl", "sv", "uk",
+                  "x-default"]
 BASE_LANG = {
     "de-DE": "de-DE",
     "es-ES": "es-ES",
@@ -31,6 +33,18 @@ BASE_LANG = {
     "pt-BR": "pt-BR",
     "zh-Hans": "zh-Hans",
     "zh-Hant": "zh-Hant",
+    "it": "it",
+    "ru": "ru",
+    "tr": "tr",
+    "id": "id",
+    "vi": "vi",
+    "th": "th",
+    "ar-SA": "ar",
+    "hi": "hi",
+    "nl-NL": "nl",
+    "pl": "pl",
+    "sv": "sv",
+    "uk": "uk",
 }
 LANG_NAMES = {
     "de-DE": "German for Germany",
@@ -41,6 +55,18 @@ LANG_NAMES = {
     "pt-BR": "Brazilian Portuguese",
     "zh-Hans": "Simplified Chinese",
     "zh-Hant": "Traditional Chinese",
+    "it": "Italian",
+    "ru": "Russian",
+    "tr": "Turkish",
+    "id": "Indonesian",
+    "vi": "Vietnamese",
+    "th": "Thai",
+    "ar-SA": "Arabic",
+    "hi": "Hindi",
+    "nl-NL": "Dutch",
+    "pl": "Polish",
+    "sv": "Swedish",
+    "uk": "Ukrainian",
 }
 BRANDS = [
     "Aim990",

@@ -36,7 +36,7 @@ jobs:
       - name: Localize un-localized answer pages (8 languages)
         run: |
           cd _engine/geo
-          python3 aeo_answers_i18n.py --limit 3 || echo "aeo_answers_i18n exited $?"
+          python3 aeo_answers_i18n.py --limit 6 || echo "aeo_answers_i18n exited $?"
       - name: Generate new answer pages (+ rebuild answers sitemap)
         run: |
           N="${{ github.event.inputs.answers || '6' }}"

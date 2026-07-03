@@ -117,13 +117,14 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_answers.xml",
             f"Sitemap: {SITE}/sitemap_guides.xml",
             f"Sitemap: {SITE}/sitemap_stories.xml",
+            f"Sitemap: {SITE}/sitemap_hubs.xml",
             f"Sitemap: {SITE}/sitemap_index.xml", ""]
     return "\n".join(out)
 
 
 def build_sitemap_index():
     maps = ["sitemap.xml", "sitemap_alternatives.xml", "sitemap_answers.xml", "sitemap_guides.xml",
-            "sitemap_stories.xml"]
+            "sitemap_stories.xml", "sitemap_hubs.xml"]
     items = "\n".join(f"  <sitemap><loc>{SITE}/{m}</loc></sitemap>" for m in maps
                       if os.path.exists(os.path.join(PAGES, m)))
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'

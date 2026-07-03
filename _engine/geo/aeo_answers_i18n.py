@@ -19,7 +19,8 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent / "pages"
 ANSWERS = ROOT / "answers"
 BASE_URL = "https://alice51849.github.io/ios-app-guide"
-ALL_LANGS = ["de-DE", "es-ES", "fr-FR", "ja", "ko", "pt-BR", "zh-Hans", "zh-Hant"]
+ALL_LANGS = ["de-DE", "es-ES", "fr-FR", "ja", "ko", "pt-BR", "zh-Hans", "zh-Hant",
+             "it", "ru", "tr", "id", "vi", "th", "ar-SA", "hi", "nl-NL", "pl", "sv", "uk"]
 HREFLANG_ORDER = ["en", "es-ES", "pt-BR", "de-DE", "fr-FR", "ja", "ko", "zh-Hant", "zh-Hans", "x-default"]
 BASE_LANG = {
     "de-DE": "de-DE",
@@ -88,11 +89,14 @@ def localize_url(url: str, lang: str) -> str:
 
 
 def discover_slugs(limit: int | None = None) -> list[str]:
-    english = {p.name for p in ANSWERS.glob("*.html")}
-    es = {p.name for p in (ROOT / "es-ES" / "answers").glob("*.html")}
-    new_files = sorted(english - es)
-    aim = [x for x in new_files if re.search(r"(toeic|990)", x)]
-    other = [x for x in new_files if x not in set(aim)]
+    english = {p.name for p in ANSWERS.glob("*.html") if p.name != "index.html"}
+
+    def missing_any_lang(name: str) -> bool:
+        return any(not (ROOT / lang / "answers" / name).exists() for lang in ALL_LANGS)
+
+    todo = sorted(n for n in english if missing_any_lang(n))
+    aim = [x for x in todo if re.search(r"(toeic|990)", x)]
+    other = [x for x in todo if x not in set(aim)]
     ordered = [Path(x).stem for x in aim + other]
     return ordered[:limit] if limit else ordered
 

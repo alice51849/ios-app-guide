@@ -39,7 +39,8 @@ SOV = os.path.join(HERE, "reports", "aeo_sov.json")
 AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "anthropic-ai",
            "Claude-Web", "PerplexityBot", "Perplexity-User", "Google-Extended",
            "Googlebot", "Bingbot", "Applebot", "Applebot-Extended", "CCBot",
-           "Amazonbot", "Bytespider", "Meta-ExternalAgent", "DuckDuckBot"]
+           "Amazonbot", "Bytespider", "Meta-ExternalAgent", "DuckDuckBot",
+           "cohere-ai", "YandexBot", "PetalBot"]
 
 
 def load_competitors():

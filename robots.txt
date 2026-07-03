@@ -54,6 +54,15 @@ Allow: /
 User-agent: DuckDuckBot
 Allow: /
 
+User-agent: cohere-ai
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
 User-agent: *
 Allow: /
 

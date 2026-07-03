@@ -122,6 +122,17 @@ CURATED["lumimissionpro"] = CURATED["lumimission"]
 CURATED["lumibopomofopro"] = CURATED["lumibopomofo"]
 
 
+# 從 AEO share-of-voice 報告自動載入每個 app 的真實競品 → 產生 "X alternative" 查詢
+import json as _json  # noqa: E402
+_SOV_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "aeo_sov.json")
+_COMPETITORS = {}
+try:
+    for _r in _json.load(open(_SOV_PATH, encoding="utf-8")).get("results", []):
+        _COMPETITORS[_r["key"]] = [c for c, _ in _r.get("top_competitors", [])][:3]
+except Exception:
+    _COMPETITORS = {}
+
+
 def queries_for(key):
     """合併手工精選 + 從 keywords 自動衍生的自然語言查詢,去重。"""
     a = APPS[key]
@@ -129,6 +140,8 @@ def queries_for(key):
     for kw in a.get("keywords", [])[:4]:
         out.append(f"best {kw} app")
         out.append(f"{kw} app for iphone")
+    for comp in _COMPETITORS.get(key, []):
+        out.append(f"{comp} alternative app for iphone")
     seen, res = set(), []
     for q in out:
         if q.lower() not in seen:

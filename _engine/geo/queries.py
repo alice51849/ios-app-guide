@@ -140,6 +140,8 @@ def queries_for(key):
     for kw in a.get("keywords", [])[:4]:
         out.append(f"best {kw} app")
         out.append(f"{kw} app for iphone")
+        out.append(f"{kw} app for iphone free")
+        out.append(f"how to choose a {kw} app")
     for comp in _COMPETITORS.get(key, []):
         out.append(f"{comp} alternative app for iphone")
     seen, res = set(), []

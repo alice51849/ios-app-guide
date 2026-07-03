@@ -100,7 +100,8 @@ def build_llms(comp_map):
                 lines.append(f"- [{title}]({SITE}/guides/{f})")
     lines += ["", "## Sitemaps",
               f"- {SITE}/sitemap.xml", f"- {SITE}/sitemap_alternatives.xml",
-              f"- {SITE}/sitemap_answers.xml", ""]
+              f"- {SITE}/sitemap_answers.xml",
+              "", "## Latest updates (Atom feed)", f"- {SITE}/feed.xml", ""]
     return "\n".join(lines)
 
 

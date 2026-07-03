@@ -42,9 +42,10 @@ jobs:
           N="${{ github.event.inputs.answers || '6' }}"
           cd _engine/geo
           python3 aeo_answers.py --limit "$N" || echo "aeo_answers exited $?"
-      - name: Refresh llms.txt / sitemaps
+      - name: Refresh Atom feed + llms.txt / sitemaps
         run: |
           cd _engine/geo
+          python3 gen_feed.py || echo "gen_feed exited $?"
           python3 gen_llms.py || echo "gen_llms exited $?"
       - name: Unlink site dir
         run: rm -f _engine/geo/pages

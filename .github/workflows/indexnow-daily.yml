@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: "47 4 * * *"    # 每天 2 次通知 Bing/Yandex/Naver 重抓(離峰,全天保持新鮮)
     - cron: "47 16 * * *"
+  workflow_run:
+    workflows: ["Daily GEO content"]   # 每次內容生成後即通知搜尋引擎(排程不可靠時的確定性觸發)
+    types: [completed]
   workflow_dispatch:
 
 permissions:

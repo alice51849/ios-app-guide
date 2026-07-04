@@ -122,6 +122,112 @@ CURATED["lumimissionpro"] = CURATED["lumimission"]
 CURATED["lumibopomofopro"] = CURATED["lumibopomofo"]
 
 
+# 2026-07 擴充:補齊各 App 高意圖利基問句,均衡覆蓋 22 App(就地擴充,pro 版沿用同物件)
+_MORE = {
+    "snapport": [
+        "passport photo app that auto removes the background",
+        "how to check if my passport photo size is correct",
+        "app to print passport photos at home from iphone",
+        "baby passport photo app that gets the size right",
+        "visa photo maker app without a subscription",
+    ],
+    "sononote": [
+        "app to transcribe voice memos to text on iphone",
+        "private meeting transcription app that stays on device",
+        "voice to text notes app that works offline",
+        "turn a lecture recording into notes app iphone",
+        "dictation notes app with no monthly fee",
+    ],
+    "cvdesk": [
+        "how to make an ats friendly resume on my iphone",
+        "resume builder app with no watermark or subscription",
+        "app to export my cv as a clean pdf",
+        "resume template app for job hunting iphone",
+        "one time payment resume maker app",
+    ],
+    "picclear": [
+        "how to delete duplicate photos on iphone for free",
+        "app to find similar and blurry photos to delete",
+        "clean up iphone storage without deleting all photos",
+        "app to find large videos taking up storage",
+        "duplicate photo cleaner with no subscription",
+    ],
+    "scanto": [
+        "how to scan documents to pdf on iphone offline",
+        "document scanner app that locks scans with face id",
+        "scan receipts and export to pdf app iphone",
+        "offline ocr scanner app that extracts text",
+        "app to scan and sign documents on iphone",
+    ],
+    "cyca": [
+        "period tracker app that keeps data offline",
+        "menstrual cycle app with no account or cloud",
+        "ovulation tracker app that respects privacy",
+        "period app that does not sell my data",
+        "simple pms and symptom tracker app iphone",
+    ],
+    "gmoney": [
+        "travel budget app for iphone that works offline",
+        "trip expense tracker with built in currency converter",
+        "app to track spending in multiple currencies abroad",
+        "offline currency converter and travel money app",
+        "vacation budget planner app with no subscription",
+    ],
+    "hourstag": [
+        "app that shows purchases in hours of work",
+        "how many hours of work does this cost app",
+        "spending tracker to curb impulse buying iphone",
+        "money mindset app to think before you spend",
+        "simple private expense awareness app no subscription",
+    ],
+    "lockhour": [
+        "app to block distracting apps while studying",
+        "screen time limit app that actually works iphone",
+        "how to lock myself out of social media apps",
+        "focus timer that blocks apps during deep work",
+        "digital detox app with no subscription",
+    ],
+    "unblurry": [
+        "how to fix a blurry photo on iphone",
+        "app to sharpen an out of focus picture",
+        "make old blurry photos clearer app iphone",
+        "unblur and enhance photo app without subscription",
+    ],
+    "photocream": [
+        "film filter app to make photos look analog",
+        "vintage retro camera filter app for iphone",
+        "aesthetic film presets photo app no subscription",
+        "app to give digital photos a 35mm film look",
+    ],
+    "lumiweather": [
+        "kid friendly weather app for families",
+        "weather app that tells kids what to wear today",
+        "simple family weather app to plan outings with kids",
+        "weather app for children with cute visuals",
+    ],
+    "lumimath": [
+        "fun math practice app for young kids offline",
+        "app to teach kids addition and subtraction",
+        "kids math game app with no ads or subscription",
+    ],
+    "lumimission": [
+        "morning routine app for kids with rewards",
+        "chore chart app for children on iphone",
+        "app to help kids build daily habits",
+    ],
+    "lumiletters": [
+        "app to teach toddlers letter sounds phonics",
+        "learn the alphabet app for preschoolers offline",
+        "abc tracing app for kids with no ads",
+    ],
+}
+for _k, _qs in _MORE.items():
+    _base = CURATED.setdefault(_k, [])
+    for _q in _qs:
+        if _q not in _base:
+            _base.append(_q)
+
+
 # 從 AEO share-of-voice 報告自動載入每個 app 的真實競品 → 產生 "X alternative" 查詢
 import json as _json  # noqa: E402
 _SOV_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "aeo_sov.json")

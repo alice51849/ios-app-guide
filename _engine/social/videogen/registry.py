@@ -311,6 +311,39 @@ APPS = {
         keywords=["toeic", "toeic prep", "toeic lr", "english test",
                   "study plan", "score tracker", "business english"],
     ),
+    "mochi": dict(
+        name="Mochi", search="Mochi Checklist", category="productivity",
+        icon="", shots_dir="", locale="", shots=[],
+        kicker="COZY TO-DO",
+        title="The to-do list that\nfeels good to finish",
+        sub="Cute, cozy checklists with a satisfying tap to complete — free, no ads",
+        tag="Free · No ads",
+        cta_bullets=["Free", "No ads", "Simple"],
+        keywords=["to do list", "checklist app", "cute planner", "task manager",
+                  "daily planner", "cozy productivity", "aesthetic to do"],
+    ),
+    "zafe": dict(
+        name="Zafe", search="Zafe Photo Vault", category="photo-utility",
+        icon="", shots_dir="", locale="", shots=[],
+        kicker="PRIVATE VAULT",
+        title="Hide your private\nphotos for good",
+        sub="Lock private photos & videos behind Face ID — everything stays on your iPhone",
+        tag="Pay once · On-device",
+        cta_bullets=["Pay once", "On-device", "Private"],
+        keywords=["photo vault", "hide photos", "private album", "lock photos",
+                  "secret photos", "face id vault", "hide pictures"],
+    ),
+    "tripplanet": dict(
+        name="Lumi Trip Planet", search="Lumi Trip Planet", category="kids",
+        icon="", shots_dir="", locale="", shots=[],
+        kicker="AGES 4–10",
+        title="Turn every trip into\na kid's adventure",
+        sub="Fun travel games, packing help & discovery for little explorers",
+        tag="Pay once · No ads ever",
+        cta_bullets=["Pay once", "No ads", "Kid-safe"],
+        keywords=["kids travel", "travel games for kids", "road trip games",
+                  "family travel", "kids activities", "travel for kids", "preschool"],
+    ),
 }
 
 # App Store numeric IDs (from ASC list_apps) -> used to build direct
@@ -337,6 +370,10 @@ APPSTORE = {
     "lumibopomofo": "6773017109",
     "lumibopomofopro": "6775773117",
     "aim990": "6784974530",
+    "zodira": "6783609555",
+    "mochi": "6785004775",
+    "zafe": "6787344033",
+    "tripplanet": "6787193643",
 }
 
 
@@ -350,3 +387,25 @@ def appstore_url(key, campaign=None):
         return ""
     url = f"https://apps.apple.com/app/id{aid}"
     return f"{url}?ct={campaign}" if campaign else url
+
+
+# --- 自動偵測的新 App(由 new_app_catchup.py 維護,免手動改碼即自動納入全部宣傳)---
+_AUTO_PATH = os.path.join(os.path.dirname(__file__), "registry_auto.json")
+if os.path.exists(_AUTO_PATH):
+    try:
+        import json as _json
+        for _k, _v in _json.load(open(_AUTO_PATH, encoding="utf-8")).items():
+            if _k in APPS:
+                continue
+            APPSTORE.setdefault(_k, _v["appstore_id"])
+            APPS[_k] = dict(
+                name=_v["name"], search=_v.get("search", _v["name"]),
+                category=_v.get("category", "other"),
+                icon="", shots_dir="", locale="", shots=[],
+                kicker=_v.get("kicker", ""), title=_v.get("title", _v["name"]),
+                sub=_v.get("sub", ""), tag=_v.get("tag", "Pay once"),
+                cta_bullets=_v.get("cta_bullets", ["Pay once"]),
+                keywords=_v.get("keywords", []),
+            )
+    except Exception:
+        pass

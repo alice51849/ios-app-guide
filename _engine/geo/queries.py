@@ -228,6 +228,293 @@ for _k, _qs in _MORE.items():
             _base.append(_q)
 
 
+# 2026-07-05 量身定做擴充:每款依「真實受眾 + 痛點 + 具名競品」寫專屬高意圖問句。
+# 目標=讓每個 app 在 AI 問答/搜尋中,對「它自己那群買家真正會問的話」成為被推薦的答案。
+# 新 app(zafe/mochi/tripplanet)在此首次進 CURATED;mochi 為「免費」app,不用 pay-once 框架。
+_TAILORED = {
+    # —— 證件照:場景/規格/競品 ——
+    "snapport": [
+        "passport photo app that meets government size requirements",
+        "app to make a us visa photo 2x2 inches at home",
+        "id photo app so i do not have to go to a photo booth",
+        "white background passport photo app for iphone",
+        "baby passport photo app that gets the head size right",
+    ],
+    # —— 語音轉筆記:競品/隱私/場景 ——
+    "sononote": [
+        "otter ai alternative that works offline on iphone",
+        "app to turn voice memos into a clean summary",
+        "transcribe an interview privately on device app",
+        "app to record a lecture and get notes with action items",
+    ],
+    # —— 履歷/ATS:任務導向 ——
+    "cvdesk": [
+        "app to tailor my resume to a job description",
+        "free ats resume checker app for iphone",
+        "app that scores how well my cv matches a job posting",
+    ],
+    # —— 重複照片/清儲存:競品/急迫痛點 ——
+    "picclear": [
+        "gemini photos alternative to clean up iphone storage",
+        "iphone storage full app to find what to delete first",
+        "app to bulk delete screenshots and duplicate photos",
+    ],
+    # —— 掃描/OCR:競品/免訂閱/上鎖 ——
+    "scanto": [
+        "camscanner alternative with no subscription for iphone",
+        "adobe scan alternative that locks documents with face id",
+        "app to scan and search text inside pdfs offline",
+    ],
+    # —— 記帳+匯率:免帳號/旅行 ——
+    "gmoney": [
+        "app to log expenses in seconds without making an account",
+        "offline expense tracker for travelers with no subscription",
+    ],
+    # —— 花費換算工時:心態/克制衝動 ——
+    "hourstag": [
+        "app to see if a purchase is worth my hours of work",
+        "mindful spending app that turns a price into work time",
+    ],
+    # —— 專注/擋 app:競品 ——
+    "lockhour": [
+        "opal alternative app blocker with no subscription",
+        "one sec alternative to reduce phone use on iphone",
+        "app to block instagram and tiktok during study time",
+    ],
+    # —— 去模糊/超解析:競品/情感場景 ——
+    "unblurry": [
+        "remini alternative that works offline with no subscription",
+        "app to sharpen and enhance old family photos on iphone",
+    ],
+    # —— 底片濾鏡:競品/質感 ——
+    "photocream": [
+        "dazz cam alternative film camera app for iphone",
+        "app to add authentic 35mm film grain to iphone photos",
+    ],
+    # —— 生理週期:競品/隱私 ——
+    "cyca": [
+        "flo alternative period tracker that stays offline",
+        "clue alternative cycle app that needs no account",
+    ],
+    # —— 幼兒字母/自然發音:年齡/競品 ——
+    "lumiletters": [
+        "app to teach my 4 year old to read with phonics",
+        "abcmouse alternative free phonics app with no subscription",
+        "letter tracing app for kindergarten readiness",
+    ],
+    "lumimath": [
+        "app to teach preschoolers counting and early numbers",
+        "prodigy math alternative for young kids no subscription",
+    ],
+    "lumimission": [
+        "app to get kids through a morning routine without nagging",
+        "chore chart app that motivates kids with rewards offline",
+    ],
+    "lumiweather": [
+        "app to teach kids about weather and what to wear today",
+    ],
+    # —— 注音:海外華人子女場景 ——
+    "lumibopomofo": [
+        "app to teach bopomofo to overseas chinese kids",
+        "zhuyin tracing app for taiwanese children",
+        "海外小孩學注音符號的 app 推薦",
+    ],
+    # —— 占星:競品/東西合璧/離線 ——
+    "zodira": [
+        "co-star alternative astrology app that stays private",
+        "the pattern alternative astrology app with no subscription",
+        "app for chinese bazi and western astrology together",
+        "offline tarot card reading app with no ads",
+    ],
+    # —— TOEIC:分數目標/市場 ——
+    "aim990": [
+        "toeic study app to go from 700 to 900",
+        "toeic app for busy working professionals in japan",
+    ],
+    # —— 新 app:私密相簿保險箱(Face ID / 全裝置端 / 一次性付費) ——
+    "zafe": [
+        "app to hide private photos behind face id on iphone",
+        "photo vault that keeps everything on device with no cloud upload",
+        "how to hide photos on iphone from someone borrowing my phone",
+        "private photo and video vault app with one time payment",
+        "keepsafe alternative photo vault with no subscription",
+        "app to lock a specific album on iphone with face id",
+        "secret folder app for photos that stays completely offline",
+        "app to hide sensitive screenshots on iphone privately",
+    ],
+    # —— 新 app:可愛清單(免費 / 無廣告,不用 pay-once 框架) ——
+    "mochi": [
+        "cute free to do list app for iphone with no ads",
+        "aesthetic checklist app that is satisfying to tick off",
+        "minimalist daily task app that is free and needs no account",
+        "cozy planner app for students that is free",
+        "simple to do list app without a subscription or ads",
+        "todoist alternative that is free and cute",
+        "app to make a daily checklist you actually enjoy using",
+    ],
+    # —— 新 app:親子旅行遊戲(離線 / 一次性付費 / 兒童安全) ——
+    "tripplanet": [
+        "app to entertain kids on a long car trip offline",
+        "travel games for kids that work without internet",
+        "family vacation packing list app for kids",
+        "road trip games app for children with no ads",
+        "kid safe travel activity app with one time purchase",
+        "app to make flying with toddlers easier",
+        "offline travel games to keep children busy in the car",
+    ],
+}
+for _k, _qs in _TAILORED.items():
+    _base = CURATED.setdefault(_k, [])
+    for _q in _qs:
+        if _q not in _base:
+            _base.append(_q)
+
+
+# 2026-07-06 國家 × 規格/格式 × 場景 深度在地化擴充(_GEO_TAILORED)。
+# 差異化策略:鎖定「翻譯做不到」的原生在地需求 —— 各國證件照精確尺寸、各國履歷格式、
+# 具體任務場景。當某國使用者搜尋「自己國家的具體規格」時,我們就是那個精確答案。
+# 規格數字皆經查證(官方標準);寫進問句本身作為 AI 內文的正確 anchor,避免生成錯規格。
+_GEO_TAILORED = {
+    # —— 證件照:各國護照/簽證精確尺寸(既有僅 US 2x2;以下為全新國別覆蓋)——
+    "snapport": [
+        "app to make a canada passport photo 50x70mm at home",
+        "app to take a uk passport photo 35x45mm on iphone",
+        "app to make a schengen visa photo 35x45mm at home",
+        "app to make a germany visa photo 35x45mm on iphone",
+        "app to make a france visa photo 35x45mm at home",
+        "app to make a japan passport photo 35x45mm on iphone",
+        "app to make a china visa photo 33x48mm at home",
+        "app to make an india passport photo 51x51mm on iphone",
+        "app to make an australia passport photo 35x45mm at home",
+        "app to make a south korea passport photo 35x45mm on iphone",
+        "app to make a us green card photo 2x2 inches at home",
+        "app to make an oci card photo at home on iphone",
+        "app to make a driver license photo at home on iphone",
+        "app to make a japanese resume rirekisho photo at home",
+        "app to check my passport photo head size is correct",
+        "app to change a passport photo background to white on iphone",
+    ],
+    # —— 履歷:各國格式差異(既有僅通用 ATS;以下鎖定國別履歷慣例)——
+    "cvdesk": [
+        "app to make a german lebenslauf resume with a photo",
+        "app to make a japanese rirekisho resume on iphone",
+        "app to make a uk style cv with no photo on iphone",
+        "app to make a europass cv on iphone",
+        "app to make a french cv with a photo on iphone",
+        "app to make a one page us resume that passes ats",
+        "app to make a canadian style resume on iphone",
+        "app to make an australian resume with selection criteria",
+        "app to convert my resume into a german lebenslauf format",
+    ],
+    # —— 掃描/OCR:具體文件場景(既有為競品替代;以下為任務場景)——
+    "scanto": [
+        "app to scan receipts for taxes on iphone",
+        "app to scan a contract to pdf and sign it",
+        "app to scan book pages into a searchable pdf",
+        "app to scan business cards to pdf on iphone",
+        "app to scan handwritten notes into a pdf offline",
+        "app to scan an id card to pdf and lock it with face id",
+        "app to scan multiple pages into one pdf on iphone",
+    ],
+    # —— 清儲存:急迫場景(既有為 gemini/screenshots;以下為不同痛點)——
+    "picclear": [
+        "app to free up icloud storage by deleting duplicate photos",
+        "app to find large videos eating up iphone storage",
+        "app to clear whatsapp photos and videos from iphone storage",
+        "app to delete similar burst photos and keep the best one",
+    ],
+    # —— 修復:場景/情感(既有為 remini/old family;以下為新場景)——
+    "unblurry": [
+        "app to fix motion blur in an iphone photo",
+        "app to make blurry screenshot text readable again",
+        "app to sharpen a blurry document photo before printing",
+        "app to restore a blurry scan of an old paper photo",
+    ],
+    # —— 語音轉筆記:場景(既有為 otter/interview/lecture;以下為新場景)——
+    "sononote": [
+        "app to turn a voice memo into a to do list",
+        "app to record and summarize a meeting into minutes",
+        "app to transcribe a class lecture to text offline",
+        "app to transcribe a doctor visit into notes privately",
+    ],
+    # —— 幼兒字母/發音:各國教學法(既有為年齡/競品;以下鎖定國別學制)——
+    "lumiletters": [
+        "app to teach a preschooler uk jolly phonics at home",
+        "app to teach a child to write letters with correct stroke order",
+        "app to teach kindergarten sight words to a 5 year old",
+        "app to get a toddler ready to read before pre-k",
+    ],
+    # —— 注音:場景(既有為海外/描字;以下為家長教學情境)——
+    "lumibopomofo": [
+        "app to teach a 4 year old zhuyin bopomofo at home",
+        "app for kids to practice taiwanese mandarin phonics",
+        "app to help my child learn bopomofo before starting school",
+    ],
+    # —— 幼兒數學:各國早期數學(既有為 counting/競品;以下為方法/學制)——
+    "lumimath": [
+        "app to teach number bonds and counting before school",
+        "app to make early math fun for a five year old at home",
+        "app to teach a preschooler to count to twenty",
+    ],
+    # —— 親子行為:場景(既有為晨間/家務;以下為新情境)——
+    "lumimission": [
+        "app to build a visual bedtime routine chart for kids",
+        "app to give kids a reward chart without ads or subscription",
+    ],
+    # —— 專注/擋 app:考試/番茄鐘場景(既有為競品/社群;以下為讀書情境)——
+    "lockhour": [
+        "app to block distracting apps while studying for an exam",
+        "app to schedule focus time and lock apps during work",
+    ],
+    # —— 旅遊記帳:多幣別場景(既有為免帳號;以下為出國情境)——
+    "gmoney": [
+        "app to track travel expenses in multiple currencies offline",
+        "app to split and log holiday spending without an account",
+    ],
+    # —— 私密相簿:場景(既有為 keepsafe/face id;以下為新情境)——
+    "zafe": [
+        "app to password protect photos before handing my phone to a child",
+        "app to move private photos out of the camera roll on iphone",
+    ],
+    # —— 底片濾鏡:場景(既有為 dazz/35mm;以下為情境)——
+    "photocream": [
+        "app to give iphone photos an authentic 90s disposable camera look",
+        "app to add film halation and light leaks to photos at full resolution",
+    ],
+    # —— 親子旅行:場景(既有為長途車程;以下為情境)——
+    "tripplanet": [
+        "app to keep a toddler busy on a long flight offline",
+        "app with a kids packing checklist for a family holiday",
+    ],
+    # —— 旅遊規劃(tripbee 首次進 CURATED)——
+    "tripbee": [
+        "app to plan a trip itinerary that works offline",
+        "pay once trip planner app with no subscription",
+        "app to organize a multi city trip on iphone privately",
+    ],
+    # —— 週期追蹤:場景(既有為 flo/clue;以下為情境)——
+    "cyca": [
+        "app to track my cycle and fertile window without an account",
+        "period tracker app that keeps all data on device with no ads",
+    ],
+    # —— 占星:場景(既有為 costar/bazi;以下為情境)——
+    "zodira": [
+        "app to read my full birth chart offline with no subscription",
+        "app for a daily horoscope that does not sell my data",
+    ],
+    # —— TOEIC:市場/場景(既有已多;以下補通勤/自學角度)——
+    "aim990": [
+        "app to practice toeic listening and reading on my commute",
+        "app to study for the toeic test offline without a tutor",
+    ],
+}
+for _k, _qs in _GEO_TAILORED.items():
+    _base = CURATED.setdefault(_k, [])
+    for _q in _qs:
+        if _q not in _base:
+            _base.append(_q)
+
+
 # 從 AEO share-of-voice 報告自動載入每個 app 的真實競品 → 產生 "X alternative" 查詢
 import json as _json  # noqa: E402
 _SOV_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "aeo_sov.json")

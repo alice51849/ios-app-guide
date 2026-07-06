@@ -539,6 +539,26 @@ for _k, _qs in _GEO_TAILORED2.items():
             _base.append(_q)
 
 
+# 2026-07-06 tick:各國履歷格式加廣(接上 answer_facts 的 RESUME_FORMATS)。
+_GEO_TAILORED3 = {
+    "cvdesk": [
+        "app to make a spanish cv with a photo on iphone",
+        "app to make an italian cv on iphone",
+        "app to make a dutch cv with no photo on iphone",
+        "app to make a chinese resume with a photo on iphone",
+        "app to make a korean resume with a headshot on iphone",
+        "app to make a brazilian resume on iphone",
+        "app to make an indian resume on iphone",
+        "app to make a singapore resume on iphone",
+    ],
+}
+for _k, _qs in _GEO_TAILORED3.items():
+    _base = CURATED.setdefault(_k, [])
+    for _q in _qs:
+        if _q not in _base:
+            _base.append(_q)
+
+
 # 從 AEO share-of-voice 報告自動載入每個 app 的真實競品 → 產生 "X alternative" 查詢
 import json as _json  # noqa: E402
 _SOV_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "aeo_sov.json")

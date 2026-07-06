@@ -31,6 +31,7 @@ OPENAI_ENDPOINT = "https://api.openai.com/v1/chat/completions"
 sys.path.insert(0, str(ROOT / ".." / "social"))
 from videogen.registry import APPS, appstore_url  # noqa: E402
 import queries  # noqa: E402
+import answer_facts  # noqa: E402
 
 TEMPLATE = ANSWERS_DIR / "best-offline-document-scanner-app-for-iphone.html"
 
@@ -55,6 +56,13 @@ def is_english_answer_question(question: str) -> bool:
 def read_key() -> str:
     key_path = Path(os.path.expanduser("~/.openai_key"))
     return key_path.read_text(encoding="utf-8").strip()
+
+
+def key_available() -> bool:
+    try:
+        return bool(read_key())
+    except Exception:  # noqa: BLE001
+        return False
 
 
 def extract_style() -> str:
@@ -192,7 +200,7 @@ def call_openai(messages: list[dict[str, str]]) -> dict[str, Any]:
 def default_content(question: str, key: str) -> dict[str, Any]:
     app = APPS[key]
     name = app["name"]
-    return {
+    base = {
         "meta_description": f"{question}: what to check before choosing an iPhone app, and where {name} may fit as a practical option.",
         "lead": f"A practical buying guide for {question}, with criteria to check before you install.",
         "short_answer_paragraphs": [
@@ -220,6 +228,10 @@ def default_content(question: str, key: str) -> dict[str, Any]:
             {"q": "Is this page independent?", "a": "Yes. It is a buying guide; app names and trademarks belong to their respective owners."},
         ],
     }
+    overlay = answer_facts.topic_facts(question, key, app)
+    if overlay:
+        base.update(overlay)
+    return base
 
 
 def normalized_content(raw: dict[str, Any], question: str, key: str) -> dict[str, Any]:
@@ -415,8 +427,12 @@ def create_page(key: str, question: str) -> str | None:
     if path.exists():
         return None
     try:
-        raw = call_openai(prompt_for(question, key))
-        content = normalized_content(raw, question, key)
+        if key_available():
+            raw = call_openai(prompt_for(question, key))
+            content = normalized_content(raw, question, key)
+        else:
+            # 無 OpenAI key:改用內建、帶入該 App 真實賣點的內容,免費且全自動
+            content = normalized_content(default_content(question, key), question, key)
     except Exception as exc:
         print(f"SKIP {slug}: {exc}", flush=True)
         return None
@@ -491,6 +507,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Generate AEO/GEO answer pages.")
     parser.add_argument("apps", nargs="*", help="Optional app keys. Defaults to all apps.")
     parser.add_argument("--limit", type=int, default=None, help="Maximum number of new pages to create.")
+    parser.add_argument("--no-finalize", action="store_true", help="Skip index+sitemap rebuild (for parallel workers).")
     args = parser.parse_args()
     ANSWERS_DIR.mkdir(parents=True, exist_ok=True)
     created: list[str] = []
@@ -500,8 +517,9 @@ def main() -> None:
         slug = create_page(key, question)
         if slug:
             created.append(slug)
-    regenerate_index()
-    write_sitemap()
+    if not args.no_finalize:
+        regenerate_index()
+        write_sitemap()
     print(json.dumps({"created_count": len(created), "created_slugs": created}, ensure_ascii=False, indent=2), flush=True)
 
 

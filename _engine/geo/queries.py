@@ -559,6 +559,36 @@ for _k, _qs in _GEO_TAILORED3.items():
             _base.append(_q)
 
 
+# 2026-07-06 tick:純資訊型 AEO 問句(what size / does X need a photo / how long)。
+# AI 搜尋引擎最愛引用「直接回答規格」的頁,回答中順帶帶出對應 App。
+_GEO_TAILORED4 = {
+    "snapport": [
+        "what size is a us passport photo",
+        "what size is a canada passport photo",
+        "what size is a uk passport photo",
+        "what size is a schengen visa photo",
+        "what size is a japan passport photo",
+        "what size is an india passport photo",
+        "what size is a china visa photo",
+        "what size is an australia passport photo",
+        "what size is a south korea passport photo",
+    ],
+    "cvdesk": [
+        "does a german lebenslauf need a photo",
+        "does a japanese resume need a photo",
+        "how long should a us resume be",
+        "does a chinese resume need a photo",
+        "should a uk cv have a photo",
+        "does a french cv need a photo",
+    ],
+}
+for _k, _qs in _GEO_TAILORED4.items():
+    _base = CURATED.setdefault(_k, [])
+    for _q in _qs:
+        if _q not in _base:
+            _base.append(_q)
+
+
 # 從 AEO share-of-voice 報告自動載入每個 app 的真實競品 → 產生 "X alternative" 查詢
 import json as _json  # noqa: E402
 _SOV_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "aeo_sov.json")

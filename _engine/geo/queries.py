@@ -651,6 +651,26 @@ for _k, _qs in _GEO_TAILORED6.items():
             _base.append(_q)
 
 
+# 2026-07-07 tick:非護照證件照類型(US 簽證數位照/入籍/綠卡、加拿大入籍、居留證)。
+_GEO_TAILORED7 = {
+    "snapport": [
+        "app to take a us visa digital photo for ds-160",
+        "app to make a us citizenship naturalization photo at home",
+        "app to make a us green card photo at home on iphone",
+        "app to make a canadian citizenship photo at home",
+        "app to make a schengen residence permit photo at home",
+        "app to make a digital photo for an online visa application",
+        "what are the photo requirements for a ds-160 us visa",
+        "what size is a us citizenship photo",
+    ],
+}
+for _k, _qs in _GEO_TAILORED7.items():
+    _base = CURATED.setdefault(_k, [])
+    for _q in _qs:
+        if _q not in _base:
+            _base.append(_q)
+
+
 # 從 AEO share-of-voice 報告自動載入每個 app 的真實競品 → 產生 "X alternative" 查詢
 import json as _json  # noqa: E402
 _SOV_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "aeo_sov.json")

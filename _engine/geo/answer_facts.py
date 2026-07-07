@@ -210,6 +210,79 @@ def _passport_facts(q: str, name: str, spec_key: str) -> dict[str, Any]:
 
 
 # ---------------------------------------------------------------------------
+# Non-passport ID / immigration document photo specs. label = human name.
+# ---------------------------------------------------------------------------
+ID_DOC_SPECS: dict[str, dict[str, str]] = {
+    "us_visa_digital": {"label": "US visa digital photo (DS-160)", "size": "square, 600×600 to 1200×1200 pixels",
+                        "bg": "a plain white or off-white background", "head": "the head 50–69% of the image height",
+                        "res": "a colour JPEG under 240 KB", "note": "The DS-160 online application needs a square digital photo, not a printed 35×45 mm one."},
+    "us_citizenship": {"label": "US citizenship (naturalization) photo", "size": "2×2 inches (51×51 mm)",
+                       "bg": "a plain white or off-white background", "head": "the head 1 inch to 1⅜ inches (25–35 mm) from chin to crown",
+                       "res": "a recent colour photo (taken within 6 months)", "note": "USCIS forms such as N-400 use the same 2×2 inch photo as a US passport."},
+    "us_green_card": {"label": "US green card (permanent resident) photo", "size": "2×2 inches (51×51 mm)",
+                      "bg": "a plain white or off-white background", "head": "the head 1 inch to 1⅜ inches (25–35 mm) from chin to crown",
+                      "res": "a recent colour photo", "note": "Green card and most USCIS applications use the 2×2 inch format."},
+    "canada_citizenship": {"label": "Canadian citizenship photo", "size": "50×70 mm",
+                           "bg": "a plain white or light-coloured background", "head": "the face 31–36 mm from chin to crown",
+                           "res": "at least 420×540 px", "note": "Canadian citizenship photos use the same 50×70 mm size as the passport, but the endorsement on the back differs."},
+    "schengen_residence": {"label": "Schengen residence permit photo", "size": "35×45 mm",
+                           "bg": "a plain light (white or off-white) background", "head": "the face 32–36 mm from chin to crown",
+                           "res": "at least 600×750 px", "note": "EU residence-permit photos follow the 35×45 mm biometric standard."},
+}
+_IDDOC_ALIASES = [
+    (("ds-160", "ds160", "us visa digital", "digital visa photo", "online us visa"), "us_visa_digital"),
+    (("citizenship", "naturalization", "naturalisation", "n-400", "uscis citizen"), "us_citizenship"),
+    (("green card", "permanent resident card", "i-485"), "us_green_card"),
+    (("canadian citizenship", "canada citizenship"), "canada_citizenship"),
+    (("residence permit", "residency permit", "resident permit", "biometric residence"), "schengen_residence"),
+]
+
+
+def _detect_id_doc(q: str) -> str | None:
+    # Canadian citizenship must win over the generic "citizenship" -> US mapping.
+    if ("canadian citizenship" in q) or ("canada" in q and "citizenship" in q):
+        return "canada_citizenship"
+    for words, spec in _IDDOC_ALIASES:
+        if any(w in q for w in words):
+            return spec
+    return None
+
+
+def _id_doc_facts(q: str, name: str, spec_key: str) -> dict[str, Any]:
+    s = ID_DOC_SPECS[spec_key]
+    label = s["label"]
+    p1 = (f"A {label} must be {s['size']} on {s['bg']}, with {s['head']}. "
+          f"Aim for {s['res']}, a neutral expression, even lighting and no shadows. {s['note']}")
+    p2 = (f"{name} lets you take it at home, set a compliant background and crop to the exact spec, "
+          f"so a self-taken photo still meets the requirement. Always confirm the current official rule before you submit.")
+    return {
+        "meta_description": f"A {label} is {s['size']} on {s['bg']}. Make one at home on iPhone with {name}."[:200],
+        "lead": f"A {label} needs {s['size']} on {s['bg']} — {name} helps you make one on your iPhone.",
+        "short_answer_paragraphs": [p1, p2],
+        "what_to_look_for": [
+            f"Exact spec: {s['size']} (the #1 rejection reason is the wrong size/crop).",
+            f"Background: {s['bg']} with no shadows.",
+            f"Head/face sizing: {s['head']}.",
+            "Neutral expression, eyes open, no glasses glare or head covering.",
+            "A recent, high-resolution colour photo; verify the latest official rule before submitting.",
+        ],
+        "decision_steps": [
+            "Stand against a plain, evenly lit wall.",
+            f"Take the shot head-on with {name}.",
+            f"Set the background to {s['bg'].split(' or ')[0].replace('a ', '')}.",
+            f"Crop/export to {s['size']}.",
+            "Save at full quality to upload or print.",
+        ],
+        "where_app_fits": f"{name} is a strong fit when you need a compliant {label} without a studio visit.",
+        "faq": [
+            {"q": f"What are the specs for a {label}?", "a": f"{s['size']} on {s['bg']}, with {s['head']}."},
+            {"q": "Can I take it myself on my phone?", "a": f"Yes — {name} handles the background and exact crop so a self-taken photo can meet the spec."},
+            {"q": "Will it be accepted?", "a": "It meets the published specs, but rules change — always check the current official guidance before submitting."},
+        ],
+    }
+
+
+# ---------------------------------------------------------------------------
 # Resume / CV conventions by country.
 # ---------------------------------------------------------------------------
 RESUME_FORMATS: dict[str, dict[str, str]] = {
@@ -543,6 +616,11 @@ def topic_facts(question: str, key: str, app: dict[str, Any]) -> dict[str, Any] 
     q = question.lower()
     name = app.get("name", "This app")
     bullets = app.get("cta_bullets", []) or []
+
+    if key == "snapport":
+        doc_key = _detect_id_doc(q)
+        if doc_key:
+            return _id_doc_facts(q, name, doc_key)
 
     spec_key = _detect_passport(q)
     if spec_key:

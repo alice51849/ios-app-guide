@@ -1236,6 +1236,80 @@ def _alternative_facts(q: str, key: str, name: str, app: dict[str, Any]) -> dict
     }
 
 
+# ---------------------------------------------------------------------------
+# Buyer-intent cost / "is it worth it" pages (verified 2024 costs). Honest
+# framing: a pay-once app vs a recurring service/subscription cost.
+# ---------------------------------------------------------------------------
+_COST_FACTS = {
+    "cvdesk": {
+        "lead": "A professional resume-writing service typically costs $80–$200 for entry level, $200–$400+ mid-career, and $400–$1,000+ for executives — a pay-once resume app is a fraction of that.",
+        "detail": "Professional resume writers charge roughly $80–$200 (entry level), $200–$400+ (mid-career), and $400–$1,000+ (executive). That can be worth it for a senior career move, but for most people a pay-once resume builder that keeps the layout ATS-readable and exports a clean PDF does the same core job for a one-time cost. You keep full control and can update it yourself anytime.",
+        "look": ["Service cost: $80–$1,000+ depending on level.", "A pay-once app is a one-time fraction of that.",
+                 "You keep control and can edit anytime.", "ATS-readable output either way.", "Tailor each version yourself for free."],
+        "faq": [
+            {"q": "How much does a resume writing service cost?", "a": "About $80–$200 entry level, $200–$400+ mid-career, and $400–$1,000+ for executives."},
+            {"q": "Is a resume builder app worth it?", "a": "For most people, yes — a pay-once app does the core job (ATS-ready layout, clean PDF) for a fraction of a writing service, and you can edit it yourself."},
+            {"q": "When is a human writer worth it?", "a": "Mainly for senior/executive roles or a major career pivot where personal branding matters most."}],
+    },
+    "sononote": {
+        "lead": "Human transcription services charge about $1–$3 per minute (roughly $60–$180 per hour of audio); an on-device app you pay for once can transcribe unlimited recordings.",
+        "detail": "Professional human transcription runs about $1–$3 per minute — around $60–$180 for a one-hour recording — and many software services are subscriptions. A pay-once, on-device transcription app has no per-minute fee and keeps private recordings off the cloud, which matters for interviews, lectures and meetings. Accuracy can vary, so review the transcript for important content.",
+        "look": ["Human transcription: ~$1–$3 per minute.", "Services are often per-minute or subscription.",
+                 "A pay-once app has no per-minute fee.", "On-device keeps recordings private.", "Review accuracy for critical content."],
+        "faq": [
+            {"q": "How much does transcription cost?", "a": "Human transcription is about $1–$3 per minute; automated services are cheaper but often subscription-based."},
+            {"q": "Is a transcription app worth it?", "a": "If you transcribe regularly, a pay-once on-device app avoids per-minute fees and keeps recordings private."},
+            {"q": "Is on-device accurate enough?", "a": "It's good for notes and summaries; review the transcript for anything critical."}],
+    },
+    "picclear": {
+        "lead": "iCloud+ storage costs $0.99/mo (50GB), $2.99/mo (200GB) or $9.99/mo (2TB) — forever. Clearing duplicates and large videos once with a pay-once app can delay or avoid that recurring bill.",
+        "detail": "Paying for iCloud+ ($0.99–$9.99+ a month) is a recurring cost that never ends. Before upgrading, it's often worth clearing the space you're actually wasting — exact-duplicate photos, near-identical bursts and huge videos — which a pay-once cleanup app finds for you. If you still need more room afterwards, you can upgrade knowing it's genuinely needed.",
+        "look": ["iCloud+ is recurring: $0.99–$9.99+/mo forever.", "Duplicates and big videos waste real space.",
+                 "A one-time cleanup can delay/avoid upgrading.", "Review before deleting anything.", "On-device scanning keeps photos private."],
+        "faq": [
+            {"q": "How much does iCloud storage cost?", "a": "$0.99/mo for 50GB, $2.99/mo for 200GB, $9.99/mo for 2TB — a recurring monthly fee."},
+            {"q": "Is it worth paying for iCloud storage?", "a": "Sometimes — but first clear duplicates and large videos, since a one-time cleanup can delay or avoid the recurring bill."},
+            {"q": "Will cleaning up lose my photos?", "a": "No — a good cleanup app lets you review and confirm before anything is deleted."}],
+    },
+    "scanto": {
+        "lead": "A dedicated document scanner costs $50–$200+ and many scanner apps charge a subscription; a pay-once scanner app turns your iPhone camera into a scanner for a single price.",
+        "detail": "Buying a hardware scanner ($50–$200+) or paying a monthly scanner-app subscription adds up, especially for occasional scanning. A pay-once app uses your iPhone camera with edge-detection, OCR and PDF export, and processes on device for privacy — a one-time cost with no recurring fee. For very high-volume office scanning, dedicated hardware can still make sense.",
+        "look": ["Hardware scanners: $50–$200+.", "Many scanner apps are subscriptions.",
+                 "A pay-once app uses your iPhone camera.", "On-device OCR and PDF export.", "Hardware still suits very high volume."],
+        "faq": [
+            {"q": "Is a scanner app worth it vs a scanner?", "a": "For most people yes — a pay-once app turns your iPhone into a scanner for far less than hardware or a subscription."},
+            {"q": "How much is a document scanner?", "a": "Dedicated scanners run about $50–$200+; many scanner apps charge a monthly subscription."},
+            {"q": "When is hardware better?", "a": "For very high-volume, continuous office scanning."}],
+    },
+}
+
+
+def _cost_worth_facts(q: str, key: str, name: str) -> dict[str, Any] | None:
+    if not ("how much" in q or "cost" in q or "worth it" in q or "worth paying" in q or "is it worth" in q or "price of" in q):
+        return None
+    c = _COST_FACTS.get(key)
+    if not c:
+        return None
+    return {
+        "meta_description": (c["lead"][:150]).rsplit(" ", 1)[0] + ".",
+        "lead": c["lead"],
+        "short_answer_paragraphs": [
+            c["detail"],
+            f"{name} is a pay-once option here — you buy it once with no subscription. Check the current App Store listing for exact features and pricing before you decide.",
+        ],
+        "what_to_look_for": c["look"],
+        "decision_steps": [
+            "Work out what you'd pay over a year for the service/subscription.",
+            "Compare it with a one-time app purchase.",
+            f"Try {name} on a realistic task first.",
+            "Check it covers the features you need.",
+            "Choose the option that's cheaper for your real usage.",
+        ],
+        "where_app_fits": f"{name} is a strong fit when you'd rather pay once than keep paying a service or subscription.",
+        "faq": c["faq"],
+    }
+
+
 def topic_facts(question: str, key: str, app: dict[str, Any]) -> dict[str, Any] | None:
     """Return a partial content overlay with real specifics, or None."""
     q = question.lower()
@@ -1263,6 +1337,10 @@ def topic_facts(question: str, key: str, app: dict[str, Any]) -> dict[str, Any] 
         rfaq = _resume_faq_facts(q, name)
         if rfaq:
             return rfaq
+
+    cost = _cost_worth_facts(q, key, name)
+    if cost:
+        return cost
 
     sc = _scenario_facts(q, key, name, bullets)
     if sc:

@@ -987,6 +987,28 @@ for _k, _qs in _GEO_TAILORED16.items():
             _base.append(_q)
 
 
+# 2026-07-07 新方法:買家意圖「值不值得/多少錢」比價題(一次買斷 vs 服務費/月費)。
+_GEO_TAILORED17 = {
+    "cvdesk": ["how much does a resume writing service cost",
+               "is a resume builder app worth it",
+               "resume writing service vs resume app cost"],
+    "sononote": ["how much does transcription cost per minute",
+                 "is a transcription app worth it",
+                 "transcription service vs app cost"],
+    "picclear": ["is it worth paying for icloud storage",
+                 "how much does icloud storage cost",
+                 "clean up storage instead of paying for icloud"],
+    "scanto": ["is a scanner app worth it vs a scanner",
+               "how much does a document scanner cost",
+               "scanner app vs hardware scanner cost"],
+}
+for _k, _qs in _GEO_TAILORED17.items():
+    _base = CURATED.setdefault(_k, [])
+    for _q in _qs:
+        if _q not in _base:
+            _base.append(_q)
+
+
 # 從 AEO share-of-voice 報告自動載入每個 app 的真實競品 → 產生 "X alternative" 查詢
 import json as _json  # noqa: E402
 _SOV_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "aeo_sov.json")

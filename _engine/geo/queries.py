@@ -589,6 +589,68 @@ for _k, _qs in _GEO_TAILORED4.items():
             _base.append(_q)
 
 
+# 2026-07-07 tick:TripBee Pro 查詢覆蓋補齊(原僅 7 條,遠低於同類;皆誠實高意圖情境)。
+_GEO_TAILORED5 = {
+    "tripbee": [
+        "app to plan a day by day travel itinerary on iphone",
+        "app to organize flights hotels and activities in one place",
+        "app to make a packing list for a trip on iphone",
+        "trip planner app that keeps my plans private on device",
+        "app to plan a family vacation itinerary with kids",
+        "app to plan a road trip route with stops offline",
+        "app to plan a multi city europe trip on iphone",
+        "app to organize a group trip itinerary with friends",
+        "app to plan a weekend getaway on iphone",
+        "app to track a travel budget and expenses offline",
+        "app to save trip ideas and build an itinerary later",
+        "travel organizer app with no account required",
+        "app to plan a business trip schedule on iphone",
+        "app to keep all travel bookings in one place offline",
+        "pay once travel planner app instead of a subscription",
+        "app to make a shared travel itinerary for a family holiday",
+        "app to plan a solo trip privately on iphone",
+        "offline trip planner app that does not sell my data",
+    ],
+    "tripplanet": [
+        "app to teach kids about a country before a family trip",
+        "travel activity app to keep children busy on a road trip offline",
+    ],
+    "mochi": [
+        "simple free to do list app for iphone with no account",
+        "app to plan my day with a clean checklist offline",
+    ],
+}
+for _k, _qs in _GEO_TAILORED5.items():
+    _base = CURATED.setdefault(_k, [])
+    for _q in _qs:
+        if _q not in _base:
+            _base.append(_q)
+
+
+# 2026-07-07 tick:更多旅遊/移民大國護照規格(接上 answer_facts 的 PASSPORT_SPECS)。
+_GEO_TAILORED6 = {
+    "snapport": [
+        "app to make a mexico passport photo 35x45mm at home",
+        "app to make a malaysia passport photo 35x50mm on iphone",
+        "app to make a turkey passport photo 50x60mm at home",
+        "app to make a nigeria passport photo 35x45mm on iphone",
+        "app to make a south africa passport photo 35x45mm at home",
+        "app to make a pakistan passport photo 35x45mm on iphone",
+        "app to make a bangladesh passport photo 45x35mm at home",
+        "app to make an egypt visa photo 40x60mm on iphone",
+        "app to make a uae visa photo 40x60mm at home",
+        "what size is a malaysia passport photo",
+        "what size is a turkey passport photo",
+        "what size is a uae visa photo",
+    ],
+}
+for _k, _qs in _GEO_TAILORED6.items():
+    _base = CURATED.setdefault(_k, [])
+    for _q in _qs:
+        if _q not in _base:
+            _base.append(_q)
+
+
 # 從 AEO share-of-voice 報告自動載入每個 app 的真實競品 → 產生 "X alternative" 查詢
 import json as _json  # noqa: E402
 _SOV_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "aeo_sov.json")

@@ -3358,6 +3358,108 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "Usually — you pay once for {name} and print inexpensive copies yourself."
    }
   ]
+ },
+ {
+  "app_key": "aim990",
+  "kind": "faq",
+  "query": "How to study for the TOEIC Listening and Reading test in 30 days",
+  "match": [
+   "study for toeic in 30 days",
+   "toeic 30 day study plan",
+   "how to prepare toeic listening reading",
+   "toeic prep plan one month"
+  ],
+  "lead": "A focused 30-day TOEIC plan works best when it covers every part in a set sequence and spends extra time on your weakest question types instead of re-drilling what you already know.",
+  "detail": "A month is enough to lift your familiarity with the TOEIC L&R format if you study daily and target weak spots. A good plan cycles through listening (Parts 1–4), reading (Parts 5–7) and vocabulary, with periodic full mock tests to build stamina and timing. {name} provides a day-by-day plan across all parts plus a weakness engine that drills the question types you miss most, and it works offline so you can study on a commute. Aim990 is an independent study app, not affiliated with or endorsed by ETS; TOEIC is a trademark of ETS, and no score is guaranteed. Results depend on your effort and starting level; check the current App Store listing for features and pricing.",
+  "bullets": [
+   "Day-by-day plan across all TOEIC L&R parts",
+   "Weakness engine focuses on your weakest question types",
+   "Full mock tests to build timing and stamina",
+   "Works offline for commute study",
+   "Independent app — not affiliated with ETS; no score guaranteed"
+  ],
+  "faq": [
+   {
+    "q": "Can I really improve in 30 days?",
+    "a": "Daily practice can raise your familiarity with the format; results depend on your effort and starting level. No app can guarantee a score."
+   },
+   {
+    "q": "Is this an official ETS app?",
+    "a": "No — it's an independent study app, not affiliated with or endorsed by ETS. TOEIC is a trademark of ETS."
+   },
+   {
+    "q": "Does it work offline?",
+    "a": "Yes — you can study without a connection, e.g. on a commute."
+   }
+  ]
+ },
+ {
+  "app_key": "aim990",
+  "kind": "faq",
+  "query": "What is the best way to practice TOEIC Part 5 grammar and Part 7 reading",
+  "match": [
+   "practice toeic part 5 grammar",
+   "toeic part 7 reading practice",
+   "best way to practice toeic reading",
+   "improve toeic part 5 part 7"
+  ],
+  "lead": "For TOEIC reading, Part 5 rewards fast grammar and vocabulary recognition, while Part 7 rewards timed reading and skimming — so practice both under time pressure and review your misses.",
+  "detail": "Part 5 tests grammar and word choice quickly, so short repeated drills build the pattern recognition you need; Part 7 tests reading speed and comprehension, so timed passages and skimming practice matter most. {name} drills Part 5-style items and gives timed reading practice, and its weakness engine surfaces the specific structures or question types you keep missing so you review the right things. It works offline for short daily sessions. Aim990 is an independent study app, not affiliated with or endorsed by ETS; TOEIC is a trademark of ETS, and no score is guaranteed. Confirm current features and pricing on the App Store.",
+  "bullets": [
+   "Short repeated Part 5-style grammar/vocabulary drills",
+   "Timed Part 7-style reading and skimming practice",
+   "Weakness engine surfaces structures you keep missing",
+   "Offline — fits short daily sessions",
+   "Independent app — not affiliated with ETS; no score guaranteed"
+  ],
+  "faq": [
+   {
+    "q": "How do I get faster at Part 7?",
+    "a": "Practise timed passages and skimming for key information; {name} offers timed reading practice and flags what you miss."
+   },
+   {
+    "q": "Is it affiliated with the official test?",
+    "a": "No — it's independent and not affiliated with ETS; TOEIC is an ETS trademark."
+   },
+   {
+    "q": "Can it guarantee a higher score?",
+    "a": "No — no app can guarantee a score; it helps you practise the format and your weak areas."
+   }
+  ]
+ },
+ {
+  "app_key": "aim990",
+  "kind": "scenario",
+  "query": "How to prepare for TOEIC while working full time with limited study time",
+  "match": [
+   "prepare toeic while working full time",
+   "toeic study limited time busy",
+   "study toeic busy schedule commute",
+   "toeic prep for working professionals"
+  ],
+  "lead": "With a full-time job, the realistic path to a better TOEIC score is short, targeted daily practice — a few focused drills on your weak areas beats occasional long, unfocused sessions.",
+  "detail": "Busy professionals don't have hours a day, so efficiency matters: short sessions that target your weakest question types, plus an occasional full mock on a free day. {name} works fully offline with no login, so you can practise on the train or on a break, and its weakness engine keeps each short session focused on what will help your score most. A day-by-day plan keeps you consistent. Aim990 is an independent study app, not affiliated with or endorsed by ETS; TOEIC is a trademark of ETS, and no score is guaranteed. Outcomes depend on your effort; check the App Store for current details.",
+  "bullets": [
+   "Short daily drills that target weak question types",
+   "Fully offline, no login — practise anywhere",
+   "Occasional full mock tests on free days",
+   "Day-by-day plan keeps you consistent",
+   "Independent app — not affiliated with ETS; no score guaranteed"
+  ],
+  "faq": [
+   {
+    "q": "I only have 20 minutes a day — is that useful?",
+    "a": "Yes — short, targeted daily practice is effective; {name}'s weakness engine keeps each session focused."
+   },
+   {
+    "q": "Do I need to be online?",
+    "a": "No — it works fully offline with no login, ideal for a commute."
+   },
+   {
+    "q": "Is it an official test app or subscription-free?",
+    "a": "It's an independent app (not affiliated with ETS); check the current App Store listing for its features and pricing before you decide."
+   }
+  ]
  }
 ]
 ''')

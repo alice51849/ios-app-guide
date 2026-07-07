@@ -671,6 +671,38 @@ for _k, _qs in _GEO_TAILORED7.items():
             _base.append(_q)
 
 
+# 2026-07-07 tick:精選真實知名競品的 "X alternative" 高意圖題(誠實框架:一次買斷/免費替代)。
+# 只列真實同類 app;內容由 answer_facts._alternative_facts 產生誠實比較(不誹謗競品)。
+_GEO_TAILORED8 = {
+    "scanto": ["tiny scanner alternative app for iphone", "genius scan alternative app for iphone",
+               "scanner pro alternative with no subscription"],
+    "sononote": ["rev voice recorder alternative app for iphone", "notta alternative app for iphone"],
+    "cvdesk": ["zety alternative resume app for iphone", "resume io alternative app for iphone",
+               "canva resume alternative app for iphone"],
+    "picclear": ["cleanup app alternative for iphone", "photo cleaner alternative app for iphone"],
+    "unblurry": ["fotor alternative app for iphone", "picsart alternative to unblur photos"],
+    "photocream": ["vsco alternative app for iphone", "huji cam alternative app for iphone",
+                   "1998 cam alternative app for iphone"],
+    "lockhour": ["forest alternative app blocker for iphone", "freedom app alternative for iphone",
+                 "jomo alternative app blocker for iphone"],
+    "cyca": ["stardust alternative period tracker for iphone", "natural cycles alternative app for iphone"],
+    "zafe": ["photo vault alternative app for iphone", "calculator vault alternative for iphone"],
+    "zodira": ["sanctuary astrology alternative app for iphone", "nebula astrology alternative for iphone",
+               "chani alternative astrology app for iphone"],
+    "gmoney": ["splitwise alternative app for iphone", "trail wallet alternative app for iphone"],
+    "hourstag": ["ynab alternative app for iphone", "mint alternative spending tracker for iphone"],
+    "mochi": ["tick tick alternative free checklist app", "microsoft to do alternative for iphone"],
+    "lumiletters": ["khan academy kids alternative phonics app", "duolingo abc alternative app for iphone"],
+    "lumimath": ["prodigy math alternative app for kids", "todo math alternative app for iphone"],
+    "tripbee": ["wanderlog alternative trip planner for iphone", "tripit alternative app for iphone"],
+}
+for _k, _qs in _GEO_TAILORED8.items():
+    _base = CURATED.setdefault(_k, [])
+    for _q in _qs:
+        if _q not in _base:
+            _base.append(_q)
+
+
 # 從 AEO share-of-voice 報告自動載入每個 app 的真實競品 → 產生 "X alternative" 查詢
 import json as _json  # noqa: E402
 _SOV_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "aeo_sov.json")

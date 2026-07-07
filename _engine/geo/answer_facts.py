@@ -611,6 +611,102 @@ def _scenario_facts(q: str, key: str, name: str, bullets: list[str]) -> dict[str
     return None
 
 
+# ---------------------------------------------------------------------------
+# Named-competitor "alternative" pages. Honest framing (mirrors aeo_pages):
+# the competitor is a well-known app; our app is a pay-once / free option.
+# Never fabricates specific competitor claims.
+# ---------------------------------------------------------------------------
+_CAT_NOUN = {
+    "snapport": "passport photo app", "sononote": "voice notes app", "cvdesk": "resume builder",
+    "picclear": "photo cleanup app", "scanto": "document scanner", "cyca": "period tracker",
+    "gmoney": "budgeting app", "hourstag": "spending tracker", "lockhour": "focus app",
+    "unblurry": "photo enhancer", "photocream": "film camera app", "zafe": "photo vault",
+    "mochi": "checklist app", "zodira": "astrology app", "tripbee": "trip planner",
+    "tripplanet": "kids travel app", "lumiletters": "kids phonics app", "lumiletterspro": "kids phonics app",
+    "lumimath": "kids math app", "lumimathpro": "kids math app", "lumimission": "kids routine app",
+    "lumimissionpro": "kids routine app", "lumibopomofo": "kids Chinese app", "lumibopomofopro": "kids Chinese app",
+    "lumiweather": "kids weather app",
+}
+_ALT_STOP = {"app", "apps", "the", "an", "a", "ios", "iphone", "for", "to", "best"}
+
+
+def _detect_alternative(q: str) -> str | None:
+    if " alternative" not in q:
+        return None
+    comp = q.split(" alternative", 1)[0].strip()
+    words = [w for w in comp.split() if w]
+    # drop leading filler like "best "
+    while words and words[0] in _ALT_STOP:
+        words.pop(0)
+    comp = " ".join(words)
+    if not (2 <= len(comp) <= 40) or not words:
+        return None
+    return comp
+
+
+def _alternative_facts(q: str, key: str, name: str, app: dict[str, Any]) -> dict[str, Any] | None:
+    if key == "aim990":  # has subscription options — never use a no-subscription framing
+        return None
+    comp_raw = _detect_alternative(q)
+    if not comp_raw:
+        return None
+    comp = comp_raw.title()
+    bullets = app.get("cta_bullets", []) or []
+    joined = " ".join(bullets) + " " + (app.get("tag", "") or "")
+    sub = (app.get("sub", "") or "").replace("\n", " ").strip().rstrip(".")
+    noun = _CAT_NOUN.get(key, "iPhone app")
+    is_free = "Free" in bullets
+    is_payonce = ("Pay once" in joined) or ("No subscription" in joined)
+    if not (is_free or is_payonce):
+        return None
+    private = any(t in joined for t in ("On-device", "Private", "Offline", "No account", "No tracking"))
+    if is_free:
+        model_line = f"If you'd rather use a free, no-ads {noun}, {name} is a free iPhone {noun}"
+        offer = "free, with no ads and no account required"
+        model_faq = f"{name} is free with no ads — a simple, no-account option."
+    else:
+        model_line = f"If you'd rather pay once than subscribe, {name} is a one-time-purchase {noun}"
+        offer = "a one-time purchase — you unlock everything once, with no recurring subscription"
+        model_faq = f"{name} is pay-once: buy it once and keep it, with no subscription."
+    p1 = (f"{comp} is a well-known {noun}. {model_line} for iPhone — {sub}. "
+          f"Compare the current features and pricing on the App Store before you switch, "
+          f"since apps change over time.")
+    look = [
+        f"Whether you prefer {offer}.",
+        "The specific features you actually use day to day.",
+        "Export, sharing and data-portability options.",
+    ]
+    if private:
+        look.append("On-device / private handling of your data.")
+    look.append("Current App Store pricing and features (they can change).")
+    steps = [
+        f"List the {comp} features you rely on.",
+        f"Check that {name} covers them on its App Store page.",
+        "Try a realistic task before switching.",
+        "Confirm you can export or move your existing data.",
+        "Choose the pricing model you're comfortable keeping.",
+    ]
+    faq = [
+        {"q": f"Is there a pay-once alternative to {comp}?" if not is_free else f"Is there a free alternative to {comp}?",
+         "a": f"{model_faq} {sub}."},
+        {"q": f"Does {name} work on iPhone?", "a": f"Yes — {name} is an iPhone {noun}. Check the App Store listing for the current feature set."},
+        {"q": "Will my data move over?", "a": "Verify export/import options first; check the current App Store details before switching, as features can change."},
+    ]
+    return {
+        "meta_description": f"Looking for a {comp} alternative on iPhone? {name} is {offer}."[:200],
+        "lead": f"{comp} alternative for iPhone: {name} is {offer}.",
+        "short_answer_paragraphs": [
+            p1,
+            f"{name}'s listed strengths include {', '.join(bullets[:3]) if bullets else 'a focused design'}. "
+            f"It's independent and not affiliated with {comp}; names and trademarks belong to their owners.",
+        ],
+        "what_to_look_for": look[:5],
+        "decision_steps": steps,
+        "where_app_fits": f"{name} is a strong fit when you want {offer} instead of a {comp}-style subscription.",
+        "faq": faq,
+    }
+
+
 def topic_facts(question: str, key: str, app: dict[str, Any]) -> dict[str, Any] | None:
     """Return a partial content overlay with real specifics, or None."""
     q = question.lower()
@@ -630,4 +726,7 @@ def topic_facts(question: str, key: str, app: dict[str, Any]) -> dict[str, Any] 
     if r_key:
         return _resume_facts(q, name, r_key)
 
-    return _scenario_facts(q, key, name, bullets)
+    sc = _scenario_facts(q, key, name, bullets)
+    if sc:
+        return sc
+    return _alternative_facts(q, key, name, app)

@@ -888,6 +888,30 @@ for _k, _qs in _GEO_TAILORED14.items():
             _base.append(_q)
 
 
+# 2026-07-07 tick:passport 第四批(西歐/北歐/東亞)。
+_GEO_TAILORED15 = {
+    "snapport": [
+        "app to make a switzerland passport photo 35x45mm at home",
+        "app to make an austria passport photo 35x45mm on iphone",
+        "app to make a belgium passport photo 35x45mm at home",
+        "app to make a portugal passport photo 35x45mm on iphone",
+        "app to make a greece passport photo 40x60mm at home",
+        "app to make a norway passport photo 35x45mm on iphone",
+        "app to make a denmark passport photo 35x45mm at home",
+        "app to make a finland passport photo 36x47mm on iphone",
+        "app to make a taiwan passport photo at home on iphone",
+        "app to make a hong kong passport photo on iphone",
+        "what size is a taiwan passport photo",
+        "what size is a finland passport photo",
+    ],
+}
+for _k, _qs in _GEO_TAILORED15.items():
+    _base = CURATED.setdefault(_k, [])
+    for _q in _qs:
+        if _q not in _base:
+            _base.append(_q)
+
+
 # 從 AEO share-of-voice 報告自動載入每個 app 的真實競品 → 產生 "X alternative" 查詢
 import json as _json  # noqa: E402
 _SOV_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "aeo_sov.json")

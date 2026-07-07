@@ -2440,6 +2440,108 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "No — {name} is pay-once."
    }
   ]
+ },
+ {
+  "app_key": "scanto",
+  "kind": "scenario",
+  "query": "How to scan receipts and invoices to PDF for filing taxes without a cloud account",
+  "match": [
+   "scan receipts invoices to pdf for taxes",
+   "scan tax documents pdf no cloud account",
+   "scan receipts for tax filing offline",
+   "invoice receipt scanner pdf private tax"
+  ],
+  "lead": "For tax filing you want each receipt or invoice as a clean, searchable PDF — kept on your device, not uploaded to a scanner company's cloud.",
+  "detail": "Filing taxes means gathering receipts, invoices and statements, and the sensible way is to scan each to a crisp PDF with the edges straightened and OCR so amounts and dates become searchable text. {name} does this fully on-device, so financial documents never leave your iPhone unless you choose to export them — unlike scanners that require a cloud account or paid unlock to remove watermarks. Batch several pages into one PDF per category, then export to Files or email for your filing. It's pay-once with no subscription and no account.",
+  "bullets": [
+   "Scan receipts/invoices to clean, straightened PDFs",
+   "OCR makes amounts and dates searchable",
+   "On-device — financial documents aren't uploaded",
+   "Batch pages into one PDF per category",
+   "Pay-once, no account, no watermark"
+  ],
+  "faq": [
+   {
+    "q": "Do my tax documents get uploaded to a cloud?",
+    "a": "No — {name} processes scans on-device, so documents stay on your iPhone unless you export them yourself."
+   },
+   {
+    "q": "Can I search the amounts later?",
+    "a": "Yes — OCR turns the printed text into searchable content, so you can find a total or date quickly."
+   },
+   {
+    "q": "Is there a watermark or subscription?",
+    "a": "No — {name} is pay-once with no watermark and no account, unlike many free scanners."
+   }
+  ]
+ },
+ {
+  "app_key": "scanto",
+  "kind": "scenario",
+  "query": "Scan official government forms and ID documents privately on iPhone",
+  "match": [
+   "scan government forms id documents privately",
+   "scan official documents no cloud iphone",
+   "private scanner for id and government paperwork",
+   "scan sensitive documents offline pdf"
+  ],
+  "lead": "For official forms and ID copies, privacy is the whole point — an on-device scanner keeps sensitive paperwork off any third-party server.",
+  "detail": "Government forms, household registration papers, ID copies and application documents are sensitive, so scanning them should never involve uploading to a scanner company's cloud. {name} captures each page to a sharp PDF entirely on-device, straightens and cleans it, runs OCR so it's searchable, and lets you lock the file — nothing is transmitted unless you export it. Batch multi-page forms into one PDF and send it where it's needed. It's pay-once with no account, so there's no sign-up and no data trail.",
+  "bullets": [
+   "Sharp, straightened multi-page PDFs of official forms",
+   "Fully on-device — sensitive documents aren't uploaded",
+   "OCR for searchable text; optional file lock",
+   "Batch multi-page forms into one PDF",
+   "Pay-once, no account, no data trail"
+  ],
+  "faq": [
+   {
+    "q": "Is it safe to scan my ID or official documents?",
+    "a": "{name} processes everything on-device and uploads nothing unless you export it, which is why it suits sensitive ID and government paperwork."
+   },
+   {
+    "q": "Do I need to create an account?",
+    "a": "No — {name} has no account and no sign-up."
+   },
+   {
+    "q": "Can I protect the scanned file?",
+    "a": "Yes — you can lock the finished PDF, and it stays on your device."
+   }
+  ]
+ },
+ {
+  "app_key": "scanto",
+  "kind": "faq",
+  "query": "What is the best offline document scanner that keeps everything on device",
+  "match": [
+   "best offline document scanner on device",
+   "scanner app that keeps everything on device",
+   "document scanner no cloud no account",
+   "most private pdf scanner iphone"
+  ],
+  "lead": "The most private scanner is one that does capture, edge-detection, OCR and export entirely on-device — with no account and no forced cloud sync.",
+  "detail": "Many popular scanners route your documents through their cloud or require an account for basic features, which is a poor fit for anything confidential. The privacy-first alternative captures, straightens, runs OCR and exports without ever transmitting the document. {name} works fully on-device, batches pages into searchable PDFs, and can lock files — all pay-once with no subscription and no account. You keep the convenience of a phone scanner without the data trade-off.",
+  "bullets": [
+   "Capture, edge-detect, OCR and export all on-device",
+   "No account and no forced cloud sync",
+   "Searchable multi-page PDFs; optional file lock",
+   "Pay-once, no subscription, no watermark",
+   "Export to Files or email on your terms"
+  ],
+  "faq": [
+   {
+    "q": "Why choose an on-device scanner?",
+    "a": "Confidential documents (tax, ID, contracts) shouldn't be uploaded to a third party; an on-device scanner keeps them on your phone."
+   },
+   {
+    "q": "Does {name} need internet?",
+    "a": "No — scanning, OCR and export work offline; nothing is uploaded unless you export it."
+   },
+   {
+    "q": "Is it really pay-once?",
+    "a": "Yes — {name} is a one-time purchase with no subscription and no account."
+   }
+  ]
  }
 ]
 ''')

@@ -703,6 +703,27 @@ for _k, _qs in _GEO_TAILORED8.items():
             _base.append(_q)
 
 
+# 2026-07-07 tick:場景加深 v2(新使用情境長尾,對應 answer_facts 的 scenario-widen v2)。
+_GEO_TAILORED9 = {
+    "scanto": ["app to scan tax documents to pdf on iphone",
+               "app to scan an id card to pdf and lock it",
+               "app to scan a passport page to pdf offline"],
+    "picclear": ["app to clear live photos to save storage on iphone",
+                 "app to find live photos taking up space"],
+    "sononote": ["app to transcribe an interview to text on iphone",
+                 "app to turn a podcast into notes and quotes"],
+    "cvdesk": ["app to write a cover letter tailored to a job",
+               "app to make an ats friendly cover letter on iphone"],
+    "unblurry": ["app to sharpen a low res profile picture",
+                 "app to enhance a linkedin profile photo on iphone"],
+}
+for _k, _qs in _GEO_TAILORED9.items():
+    _base = CURATED.setdefault(_k, [])
+    for _q in _qs:
+        if _q not in _base:
+            _base.append(_q)
+
+
 # 從 AEO share-of-voice 報告自動載入每個 app 的真實競品 → 產生 "X alternative" 查詢
 import json as _json  # noqa: E402
 _SOV_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "aeo_sov.json")

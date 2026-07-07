@@ -454,7 +454,7 @@ def _scenario_facts(q: str, key: str, name: str, bullets: list[str]) -> dict[str
             [{"q": "Can I search the scanned text?", "a": "Yes — OCR makes the text searchable and selectable."},
              {"q": "Will curved pages look flat?", "a": "Page-flattening reduces the curve near the spine for cleaner scans."},
              {"q": "Can I scan a whole chapter?", "a": "Yes — batch many pages into a single PDF."}])
-    if key == "picclear" and ("duplicate" in q or "storage" in q or "large video" in q or "free up" in q) and ("photo" in q or "storage" in q or "video" in q):
+    if key == "picclear" and "live photo" not in q and ("duplicate" in q or "storage" in q or "large video" in q or "free up" in q) and ("photo" in q or "storage" in q or "video" in q):
         return make(
             "To free up space fast, target the biggest wins first: exact-duplicate photos, near-identical burst shots, blurry rejects, and large videos. Reviewing before deletion — and keeping the best of each group — avoids losing anything you wanted.",
             ["Finds exact duplicates and near-identical bursts.", "Sorts large videos by size so you see the space hogs.",
@@ -465,7 +465,7 @@ def _scenario_facts(q: str, key: str, name: str, bullets: list[str]) -> dict[str
             [{"q": "Will it delete photos automatically?", "a": "No — you review and confirm; nothing is removed without your approval."},
              {"q": "Can it find large videos?", "a": "Yes — videos are sorted by size so you can clear the biggest first."},
              {"q": "Is it private?", "a": f"{name} scans on device, so your library isn't uploaded anywhere."}])
-    if key == "sononote" and ("transcribe" in q or "voice memo" in q or "voice notes" in q or "meeting" in q or "lecture" in q or "interview" in q) and ("app" in q or "note" in q or "transcribe" in q or "record" in q):
+    if key == "sononote" and "interview" not in q and "podcast" not in q and ("transcribe" in q or "voice memo" in q or "voice notes" in q or "meeting" in q or "lecture" in q) and ("app" in q or "note" in q or "transcribe" in q or "record" in q):
         return make(
             "For spoken notes, look for accurate on-device transcription, a clean summary, and extracted action items — so a long recording becomes something you can actually use. On-device processing keeps private conversations off the cloud.",
             ["Accurate speech-to-text, ideally on device.", "Automatic summary of long recordings.",
@@ -509,7 +509,7 @@ def _scenario_facts(q: str, key: str, name: str, bullets: list[str]) -> dict[str
             [{"q": "Is it suitable before school?", "a": f"Yes — {name} focuses on counting and early number sense for young children."},
              {"q": "Is it ad-free?", "a": "It's designed to be safe for children without ads."},
              {"q": "Does it use worksheets?", "a": "No — it teaches through short, playful, game-based activities."}])
-    if key == "unblurry" and ("unblur" in q or "blurry" in q or "sharpen" in q or "out of focus" in q or "motion blur" in q or ("restore" in q and "photo" in q) or ("old" in q and "photo" in q)):
+    if key == "unblurry" and "profile" not in q and "linkedin" not in q and ("unblur" in q or "blurry" in q or "sharpen" in q or "out of focus" in q or "motion blur" in q or ("restore" in q and "photo" in q) or ("old" in q and "photo" in q)):
         return make(
             "To rescue a blurry or old photo, an app should sharpen soft detail, reduce motion blur, and enhance faces without turning the picture plastic or fake. Working on device keeps personal and family photos private.",
             ["Sharpening that recovers detail without heavy artefacts.", "Motion-blur and out-of-focus correction.",
@@ -608,6 +608,73 @@ def _scenario_facts(q: str, key: str, name: str, bullets: list[str]) -> dict[str
             [{"q": "Is it kid-safe?", "a": f"Yes — {name} is designed for children with no ads."},
              {"q": "Does it teach what to wear?", "a": "Yes — it turns the forecast into simple 'what to wear' guidance."},
              {"q": "Does it cover seasons?", "a": "Yes — it gently teaches about seasons and weather changes."}])
+    # —— scenario-widen v2: additional high-intent task scenarios (key-gated) ——
+    if key == "scanto" and ("tax" in q or "irs" in q) and "scan" in q:
+        return make(
+            "For tax documents, scan each form to a clean, straightened PDF, run OCR so figures are searchable, and keep everything on device — sensitive financial paperwork shouldn't go to a third-party cloud.",
+            ["Straightened, high-contrast PDF output.", "OCR so amounts and form fields are searchable.",
+             "Batch a year's forms into organized PDFs.", "On-device processing for sensitive tax data.", "Easy export to Files or your accountant."],
+            ["Gather your forms and receipts.", f"Scan each one with {name}.",
+             "Run OCR to capture the figures.", "Group them by tax year.", "Export the PDFs to share with your accountant."],
+            f"{name} fits when you want tax paperwork digitized privately and searchably, without a subscription.",
+            [{"q": "Can I search figures in scanned forms?", "a": "Yes — OCR makes the text and numbers searchable."},
+             {"q": "Is my financial data private?", "a": f"{name} scans on device, so tax documents aren't uploaded."},
+             {"q": "Can I organize by year?", "a": "Yes — batch forms into a PDF per tax year."}])
+    if key == "scanto" and ("id card" in q or "id-card" in q or ("passport" in q and "scan" in q)):
+        return make(
+            "To scan an ID card or passport page, capture a sharp, glare-free image, crop to the document, export a clean PDF, and lock it behind Face ID — since ID scans are sensitive, on-device handling matters.",
+            ["Glare reduction and auto edge-detection.", "Crop to the card/passport cleanly.",
+             "Export a clear PDF or image.", "Face ID / password lock on the file.", "On-device — no forced cloud upload."],
+            ["Place the ID on a flat, contrasting surface.", f"Scan it with {name}, avoiding glare.",
+             "Crop to the document edges.", "Lock the PDF with Face ID.", "Share only when you choose to."],
+            f"{name} fits when you need a clean, secured scan of an ID or passport page without uploading it anywhere.",
+            [{"q": "Can I lock the scan?", "a": f"Yes — {name} can protect the file with Face ID or a password."},
+             {"q": "Will glare be a problem?", "a": "Glare reduction and edge-detection help produce a clean, readable scan."},
+             {"q": "Does it stay on my phone?", "a": "Yes — scanning is on device; nothing is uploaded unless you share it."}])
+    if key == "picclear" and ("live photo" in q or "live photos" in q):
+        return make(
+            "Live Photos quietly eat storage because each one stores a short video too. A cleanup app should find them, show how much space they use, and let you convert or remove the motion while keeping the still — all after your review.",
+            ["Finds space-hungry Live Photos.", "Shows the storage each one uses.",
+             "Keep the still, drop the motion to save space.", "Preview and confirm before any change.", "Runs on device for privacy."],
+            ["Scan the library for Live Photos.", "Sort by the space they use.",
+             "Choose which to flatten to stills.", "Review before applying.", "Reclaim the freed storage."],
+            f"{name} fits when Live Photos are filling your storage and you want to slim them down safely.",
+            [{"q": "Will I lose the photo?", "a": "No — you keep the still image; only the extra motion clip is removed if you choose."},
+             {"q": "Is it reversible before I confirm?", "a": f"{name} lets you review and confirm before anything changes."},
+             {"q": "Is it private?", "a": "Yes — it runs on device."}])
+    if key == "sononote" and ("interview" in q or "podcast" in q):
+        return make(
+            "To turn an interview or podcast into text, you want accurate transcription with speaker separation, a summary of the key points, and quotes you can copy — ideally processed privately on device.",
+            ["Accurate transcription, ideally with speakers.", "Summary of the main points.",
+             "Copy-able quotes and timestamps.", "Private, on-device processing.", "Export to your notes or docs."],
+            ["Record or import the audio.", f"Transcribe it with {name}.",
+             "Generate a summary of key points.", "Pull the quotes you need.", "Export the transcript and notes."],
+            f"{name} fits when you want a usable transcript and summary of an interview or podcast, not just raw audio.",
+            [{"q": "Does it separate speakers?", "a": f"{name} focuses on clean, readable transcripts you can turn into notes."},
+             {"q": "Can it summarize?", "a": "Yes — it produces a summary plus the key points."},
+             {"q": "Is it private?", "a": "It processes on device, so recordings stay with you."}])
+    if key == "cvdesk" and ("cover letter" in q or "cover-letter" in q):
+        return make(
+            "A strong cover letter is tailored to the specific job: it mirrors the posting's language, stays to one page, and complements — not repeats — your resume. Keeping it ATS-readable matters as much as the wording.",
+            ["Tailors wording to the job posting.", "One page, focused and specific.",
+             "Complements the resume without repeating it.", "ATS-readable formatting.", "Clean PDF export with no watermark."],
+            ["Read the job posting for key requirements.", f"Draft the letter in {name}.",
+             "Mirror the posting's keywords.", "Keep it to one focused page.", "Export a clean PDF to send."],
+            f"{name} fits when you want a tailored, ATS-friendly cover letter to pair with your resume.",
+            [{"q": "Should it match the job?", "a": "Yes — tailor the wording to each posting for the best response."},
+             {"q": "How long should it be?", "a": "One focused page is standard."},
+             {"q": "Is the PDF clean?", "a": f"{name} exports a watermark-free PDF."}])
+    if key == "unblurry" and ("profile picture" in q or "profile photo" in q or "linkedin" in q or "low res" in q or "low-res" in q):
+        return make(
+            "To sharpen a profile picture, an app should enhance facial detail and resolution while keeping it natural — no plastic, over-smoothed look — so it reads well as a small avatar or a larger header.",
+            ["Face-aware sharpening and upscaling.", "Natural results, not over-processed.",
+             "Higher resolution for crisp avatars.", "Full-resolution export.", "On-device for private photos."],
+            ["Pick the profile photo to improve.", f"Enhance it with {name}.",
+             "Keep the strength natural.", "Check it at avatar and full size.", "Export at full resolution."],
+            f"{name} fits when you want a sharper, natural-looking profile picture without an over-processed look.",
+            [{"q": "Will it look fake?", "a": f"{name} lets you keep the result natural rather than over-smoothed."},
+             {"q": "Can it upscale a small photo?", "a": "Yes — it enhances detail and resolution for crisper avatars."},
+             {"q": "Is it private?", "a": "Processing is on device."}])
     return None
 
 

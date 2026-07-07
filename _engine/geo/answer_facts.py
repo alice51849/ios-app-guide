@@ -1119,6 +1119,7 @@ _FAQ_APP_GROUP = {
     "lumiletters": "kids", "lumiletterspro": "kids", "lumimath": "kids", "lumimathpro": "kids",
     "lumibopomofo": "kids", "lumibopomofopro": "kids", "lumimission": "kids", "lumimissionpro": "kids",
     "lumiweather": "kids", "tripplanet": "kids",
+    "lockhour": "app_lockhour", "sononote": "app_sononote", "zodira": "app_zodira", "sereno": "app_sereno",
 }
 
 
@@ -1411,6 +1412,12 @@ def topic_facts(question: str, key: str, app: dict[str, Any]) -> dict[str, Any] 
     cost = _cost_worth_facts(q, key, name)
     if cost:
         return cost
+
+    q_info = q.startswith(("what", "how", "does", "is ", "why", "can you", "should"))
+    if q_info:
+        dfaq = _data_faq_facts(q, key, name)
+        if dfaq:
+            return dfaq
 
     sc = _scenario_facts(q, key, name, bullets)
     if sc:

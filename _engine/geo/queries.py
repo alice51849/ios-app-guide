@@ -1044,6 +1044,26 @@ for _k, _qs in _GEO_TAILORED18.items():
             _base.append(_q)
 
 
+# 2026-07-08 整合 more-faq worker:LockHour/Sono Note/Zodira/Sereno 資訊型 FAQ。
+_GEO_TAILORED19 = {
+    "lockhour": ["how to reduce screen time on iphone",
+                 "how to stay focused while studying",
+                 "does app blocking actually work"],
+    "sononote": ["what is the best way to take meeting notes",
+                 "how to record a lecture and get notes"],
+    "zodira": ["what is a birth chart",
+               "what is a rising sign",
+               "what is bazi chinese astrology"],
+    "sereno": ["does white noise actually help you sleep",
+               "what is the difference between white pink and brown noise"],
+}
+for _k, _qs in _GEO_TAILORED19.items():
+    _base = CURATED.setdefault(_k, [])
+    for _q in _qs:
+        if _q not in _base:
+            _base.append(_q)
+
+
 # 從 AEO share-of-voice 報告自動載入每個 app 的真實競品 → 產生 "X alternative" 查詢
 import json as _json  # noqa: E402
 _SOV_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "aeo_sov.json")

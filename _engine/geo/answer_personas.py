@@ -1,0 +1,1116 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Persona-scoped recommendation data (page type: "best [app] for [persona]").
+
+Each entry is verified from app source/READMEs/store copy by the persona
+research worker (2026-07-08). Content is structured around a single user
+type's real objections and workflow, NOT a generic feature list with a
+persona label. Honesty rules applied:
+  - aim990: HAS a subscription and TOEIC/ETS is a trademark → NEVER framed as
+    "no subscription"; includes not-affiliated + no-score-guarantee caveats.
+  - unblurry: honest about what on-device sharpening can and cannot recover.
+  - pay-once framing used only for genuinely pay-once / one-time-unlock apps.
+
+Consumed by answer_facts._persona_facts(); queries fed from queries.py.
+"""
+from typing import Any
+
+# app_key -> list of persona entries.
+# Each entry:
+#   query    : canonical persona query (also added to queries.py)
+#   triggers : distinctive substrings; ANY match routes to this persona
+#   persona  : short label
+#   lead     : opening line (honest concession first where relevant)
+#   paras    : 2 short-answer paragraphs
+#   look     : what_to_look_for bullets (the persona's must-haves)
+#   steps    : decision_steps
+#   fits     : where_app_fits (conversion hook)
+#   faq      : persona-specific Q/A (objection handling)
+PERSONAS: dict[str, list[dict[str, Any]]] = {
+    "scanto": [
+        {
+            "query": "best offline document scanner app no cloud for nurses",
+            "triggers": ["for nurses", "for a nurse", "nurse", "patient consent", "medical paperwork"],
+            "persona": "nurses & clinical staff",
+            "lead": "If you scan patient consent forms, discharge paperwork or referrals, the scanner has to keep that paperwork on the device — never uploaded to someone else's cloud.",
+            "paras": [
+                "For clinical work the priority is confidentiality and speed: capture a consent form, discharge sheet or ID in one tap, keep it fully on-device, and lock it behind Face ID. A scanner that makes zero network requests is the only kind you can safely use for sensitive patient paperwork.",
+                "It also needs to work when the ward Wi-Fi is flaky — everything should function offline, with sharp multi-page PDFs and OCR so a form is searchable later. Avoid any scanner that forces a cloud account or free-tier upload.",
+            ],
+            "look": [
+                "Zero network requests — paperwork never leaves the phone.",
+                "Face ID / password lock on finished PDFs.",
+                "Works fully offline (no ward Wi-Fi needed).",
+                "One-tap capture and sharp multi-page PDFs.",
+                "OCR so forms are searchable, pay-once (no per-scan paywall).",
+            ],
+            "steps": [
+                "Confirm the scanner makes no network requests.",
+                "Scan a consent form and lock the PDF with Face ID.",
+                "Check it works with Wi-Fi off.",
+                "Verify OCR makes the text searchable.",
+                "Keep the file on-device or export deliberately.",
+            ],
+            "fits": "fits nurses who need fast, private, offline scanning of sensitive paperwork without a cloud account.",
+            "faq": [
+                {"q": "Does anything get uploaded to a cloud?", "a": "No — a properly offline scanner processes on-device and makes no network requests, so patient paperwork stays on your phone."},
+                {"q": "Can I lock a scanned form?", "a": "Yes — lock the finished PDF behind Face ID or a password before it's stored or shared."},
+                {"q": "Will it work without hospital Wi-Fi?", "a": "Yes — scanning, OCR and export all work offline."},
+            ],
+        },
+        {
+            "query": "best document scanner app no subscription for students",
+            "triggers": ["for students", "for a student", "student", "lecture notes", "handouts"],
+            "persona": "students",
+            "lead": "For scanning lecture notes and handouts, the thing that matters most to a student is that one purchase covers unlimited scans — no paywall reappearing mid-semester.",
+            "paras": [
+                "A student scanner should turn a stack of handwritten notes or printed handouts into a clean, searchable PDF in seconds, with OCR so you can find a topic before an exam. Batch multiple pages into one file per lecture.",
+                "Pay-once matters here: a single purchase should give unlimited scans forever, with no monthly fee and no watermark on the exported PDF.",
+            ],
+            "look": [
+                "Pay once — unlimited scans, no monthly fee.",
+                "OCR so notes are searchable before exams.",
+                "Batch many pages into one PDF per lecture.",
+                "No watermark on exports.",
+                "Fast auto edge-detection for quick capture.",
+            ],
+            "steps": [
+                "Scan a page of notes and check the edges auto-detect.",
+                "Batch a full lecture into one PDF.",
+                "Enable OCR and search for a keyword.",
+                "Confirm exports have no watermark.",
+                "Verify it's a one-time purchase, not a subscription.",
+            ],
+            "fits": "fits students who want unlimited, searchable note scans from a single pay-once purchase.",
+            "faq": [
+                {"q": "Is there a monthly fee?", "a": "No — a pay-once scanner charges once and gives unlimited scans, which suits a student budget better than a subscription."},
+                {"q": "Can I search my scanned notes?", "a": "Yes — OCR turns printed and clear handwritten text into searchable content."},
+                {"q": "Can I combine a whole lecture?", "a": "Yes — batch several pages into one PDF per class."},
+            ],
+        },
+    ],
+    "snapport": [
+        {
+            "query": "best passport photo app for babies and toddlers at home",
+            "triggers": ["for babies", "for a baby", "baby", "toddler", "infant", "newborn"],
+            "persona": "parents of babies & toddlers",
+            "lead": "Getting a compliant passport photo of a baby is the hard case: they won't sit still, can't hold a pose, and most countries relax the neutral-expression rule for infants — so the app has to help you crop and size, not force an adult pose.",
+            "paras": [
+                "For a baby photo, lay the child on a plain white sheet and shoot from directly above, or hold them against a plain background. The app's job is the fiddly part: detecting the face, cropping to the exact country size, and checking head proportions — since a wailing or sleeping infant is usually accepted.",
+                "Country-specific templates matter because infant head-size ratios and dimensions differ. A home app that outputs the correct size for your country saves a trip to a studio that may not handle babies well anyway.",
+            ],
+            "look": [
+                "Country-specific size templates (head ratio varies for infants).",
+                "Face-alignment guides for an unposed baby.",
+                "Plain-background handling / background removal.",
+                "Export a single correctly-sized photo to print.",
+                "Guidance on relaxed infant expression rules.",
+            ],
+            "steps": [
+                "Lay the baby on a plain white sheet, shoot from directly above.",
+                "Pick your country's template in the app.",
+                "Let it detect the face and crop to size.",
+                "Check head proportions against the guide.",
+                "Export and print (or order prints).",
+            ],
+            "fits": "fits parents who need a compliant infant passport photo at home without wrestling a baby into a studio pose.",
+            "faq": [
+                {"q": "My baby won't hold a neutral expression — is that OK?", "a": "For infants most countries relax the neutral-expression and open-eyes rules; check your country's guidance, which the app's template reflects."},
+                {"q": "How do I get a plain background with a baby?", "a": "Shoot against a plain white sheet or use background removal, then let the app crop to size."},
+                {"q": "Will it be the right size for my country?", "a": "Yes — pick your country's template so the head ratio and dimensions match official requirements. Always confirm against the official spec."},
+            ],
+        },
+        {
+            "query": "best app to take professional id photo for resume",
+            "triggers": ["for resume", "for a resume", "resume photo", "cv photo", "professional headshot", "id photo for job"],
+            "persona": "job seekers",
+            "lead": "For a resume or job-application headshot, you don't need a studio — you need a cropped, correctly-proportioned photo with a clean background that looks professional at a small size.",
+            "paras": [
+                "A resume-photo template crops to the right proportions and lets you swap a messy background for a plain one, so a phone snap becomes a tidy headshot. Shoot in soft, even light facing a window and keep a neutral, approachable expression.",
+                "Because it's on-device, your photo isn't uploaded anywhere, and a single export gives you a file ready to drop into a CV or a LinkedIn/ID upload.",
+            ],
+            "look": [
+                "Resume / ID headshot template with correct proportions.",
+                "Background replacement to a clean, plain colour.",
+                "On-device processing (photo isn't uploaded).",
+                "Single-photo export ready for a CV or profile.",
+                "Guidance on framing and expression.",
+            ],
+            "steps": [
+                "Face a window in soft, even light.",
+                "Use the resume/ID template to frame the crop.",
+                "Swap the background for a plain colour.",
+                "Keep a neutral, approachable expression.",
+                "Export and place it on your CV or profile.",
+            ],
+            "fits": "fits job seekers who want a clean, professional headshot from their phone without a photo studio.",
+            "faq": [
+                {"q": "Do I need a studio backdrop?", "a": "No — background replacement gives you a clean plain background from any setting."},
+                {"q": "Is my photo uploaded anywhere?", "a": "On-device processing keeps the photo on your phone unless you export it."},
+                {"q": "What size should a resume photo be?", "a": "There's no single standard; a square or 3:4 headshot works for most CVs and profiles — the template keeps proportions right."},
+            ],
+        },
+    ],
+    "cvdesk": [
+        {
+            "query": "best resume builder app for career changers 2026",
+            "triggers": ["career changer", "career change", "changing careers", "switching careers"],
+            "persona": "career changers",
+            "lead": "When you're switching fields, the resume problem is different: your experience is real but 'unrelated' on paper, and ATS filters reject you before a human reads it. The fix is reframing and keyword matching, not a prettier template.",
+            "paras": [
+                "A career-changer resume needs transferable skills surfaced and the target job's language mirrored. Paste the job description, see which required skills are missing from your draft, and rework your bullets to speak the new field's vocabulary — so the ATS scores you in range.",
+                "Doing this on-device means you can iterate honestly on real experience without uploading your CV to a third-party server, and export an ATS-safe PDF with no watermark.",
+            ],
+            "look": [
+                "Job-description keyword matcher (see missing skills).",
+                "On-device ATS score and fix list.",
+                "Reframe bullets to the target field's language.",
+                "ATS-safe PDF export, no watermark.",
+                "No CV data uploaded to a server.",
+            ],
+            "steps": [
+                "Paste the target job description.",
+                "See which required skills are missing.",
+                "Rewrite bullets to mirror the new field's terms.",
+                "Recheck the ATS score until it's in range.",
+                "Export an ATS-safe PDF.",
+            ],
+            "fits": "fits career changers who need to reframe transferable experience so ATS systems don't filter them out.",
+            "faq": [
+                {"q": "How do I get past ATS with unrelated experience?", "a": "Mirror the target job's keywords and surface transferable skills; the keyword matcher shows exactly what's missing."},
+                {"q": "Is my resume uploaded anywhere?", "a": "No — the ATS scoring and matching run on-device, so your CV stays on your phone."},
+                {"q": "Will the PDF have a watermark?", "a": "No — exports are clean, ATS-safe PDFs."},
+            ],
+        },
+        {
+            "query": "best ats resume app to tailor applications for each job",
+            "triggers": ["tailor applications", "tailor each job", "for recent graduates", "for new grads", "for graduates", "recent graduate"],
+            "persona": "recent graduates",
+            "lead": "New grads apply to a lot of roles with a thin work history, so the winning move is tailoring each application to the posting — not sending the same generic CV everywhere.",
+            "paras": [
+                "Paste each job description and immediately see which skills or keywords your resume is missing, then adjust before you submit. With limited experience, matching the posting's language is what gets you past the ATS filter to a human reviewer.",
+                "Because matching runs on-device, you can tailor quickly for every application without sharing your CV with any third-party service, and export a clean ATS-safe PDF each time.",
+            ],
+            "look": [
+                "Offline job-description keyword matcher.",
+                "Instant view of missing skills per posting.",
+                "On-device ATS score.",
+                "Fast re-tailoring for many applications.",
+                "No third-party upload of your CV.",
+            ],
+            "steps": [
+                "Paste the job posting for the role.",
+                "See the missing keywords vs your resume.",
+                "Add the genuine skills you have that match.",
+                "Confirm the ATS score improved.",
+                "Export a tailored PDF for that application.",
+            ],
+            "fits": "fits recent graduates tailoring each application to beat ATS filters with a limited work history.",
+            "faq": [
+                {"q": "Should I really change my CV for every job?", "a": "Tailoring the keywords to each posting materially improves ATS pass rates, which matters most when your experience is thin."},
+                {"q": "Does it share my CV with anyone?", "a": "No — matching and scoring are on-device."},
+                {"q": "Is it a subscription?", "a": "It's a pay-once app — check the current App Store listing for exact pricing."},
+            ],
+        },
+    ],
+    "picclear": [
+        {
+            "query": "best app to free up iphone storage deleting duplicate photos",
+            "triggers": ["running out of storage", "storage is full", "free up storage", "out of space", "iphone storage full"],
+            "persona": "people out of storage",
+            "lead": "When your iPhone says 'Storage Almost Full', the fastest wins are exact-duplicate photos, near-identical burst shots, big videos and old screenshots — cleared in that order, with a review step so you never lose the keeper.",
+            "paras": [
+                "An on-device Vision scan can find true duplicates and visually-similar groups across your whole library, plus surface the large videos quietly eating gigabytes. The important part is that you review and confirm — nothing is auto-deleted.",
+                "Clearing the biggest groups first reclaims space quickly, and doing it on-device means your library is never uploaded to a service.",
+            ],
+            "look": [
+                "On-device scan for exact + near-duplicate photos.",
+                "Large videos sorted by size.",
+                "Similar bursts grouped so you keep the best.",
+                "Review-and-confirm — no auto-delete.",
+                "Runs on-device (library not uploaded).",
+            ],
+            "steps": [
+                "Scan the library for duplicates and similar shots.",
+                "Sort videos by size to find the biggest.",
+                "Review each group and keep the best one.",
+                "Confirm before deleting.",
+                "Empty 'Recently Deleted' to reclaim the space.",
+            ],
+            "fits": "fits anyone out of storage who wants gigabytes back fast without deleting the wrong photo.",
+            "faq": [
+                {"q": "Will it delete photos without asking?", "a": "No — you review each group and confirm; nothing is removed without approval."},
+                {"q": "What frees the most space fastest?", "a": "Large videos and exact duplicates first, then near-identical bursts and old screenshots."},
+                {"q": "Is my library uploaded?", "a": "No — scanning runs on-device."},
+            ],
+        },
+        {
+            "query": "best app to clean up thousands of old photos on iphone",
+            "triggers": ["thousands of old photos", "years of photos", "for seniors", "for my parents", "not tech savvy", "clean up old photos"],
+            "persona": "people with years of photos",
+            "lead": "After years of photos, the risk isn't finding duplicates — it's accidentally deleting something you wanted. The right tool surfaces near-duplicates by how they look, and never removes anything without an explicit yes.",
+            "paras": [
+                "A visual-similarity scan groups shots that look alike (not just identical filenames), so you can keep the best of each moment and clear the rest. Handling a large recent library in one pass means you make real progress without scrolling forever.",
+                "Because it never auto-deletes and shows a clear before/after, it's safe for someone who isn't especially tech-savvy — and it keeps everything on-device.",
+            ],
+            "look": [
+                "Near-duplicate grouping by visual similarity.",
+                "Handles a large library in one scan.",
+                "Never auto-deletes — explicit approval only.",
+                "Clear review so you keep the best of each moment.",
+                "On-device and private.",
+            ],
+            "steps": [
+                "Run a full-library similarity scan.",
+                "Review groups of look-alike photos.",
+                "Keep the best of each moment.",
+                "Approve the rest for deletion.",
+                "Empty 'Recently Deleted' to finish.",
+            ],
+            "fits": "fits people with years of accumulated photos who want a safe, guided cleanup they won't regret.",
+            "faq": [
+                {"q": "Is it safe if I'm not techy?", "a": "Yes — it only groups and suggests; you approve every deletion, and nothing goes automatically."},
+                {"q": "Does it find look-alikes, not just identical files?", "a": "Yes — it groups by visual similarity, so near-duplicate bursts are caught too."},
+                {"q": "Are my photos uploaded?", "a": "No — the scan runs on-device."},
+            ],
+        },
+    ],
+    "unblurry": [
+        {
+            "query": "best app to fix blurry photos of kids on iphone",
+            "triggers": ["blurry photos of kids", "blurry photo of my", "for parents", "of my kids", "family photos blurry"],
+            "persona": "parents & families",
+            "lead": "Kids never hold still, so soft-focus and camera-shake shots are inevitable. On-device sharpening can rescue a lot of these — with the honest caveat that mild blur recovers well and severe motion blur may not fully clear.",
+            "paras": [
+                "For a slightly soft photo of your child, Auto Clear and Sharpen modes can recover detail in seconds, and a before/after slider lets you see the real improvement before you save — so you keep the shot only if it genuinely looks better.",
+                "It works on-device with no subscription, so family photos aren't uploaded anywhere. Set expectations honestly: it sharpens soft focus and mild shake best; a heavily smeared shot has less detail to recover.",
+            ],
+            "look": [
+                "Auto Clear / Sharpen for soft-focus shots.",
+                "Before/after slider to judge the real result.",
+                "On-device — family photos not uploaded.",
+                "Pay-once, no subscription.",
+                "Honest limits: best on mild blur, not severe smear.",
+            ],
+            "steps": [
+                "Open the soft or shaky photo of your child.",
+                "Try Auto Clear, then Sharpen.",
+                "Compare with the before/after slider.",
+                "Save only if it genuinely looks better.",
+                "For very blurry shots, keep expectations realistic.",
+            ],
+            "fits": "fits parents rescuing soft-focus or mildly shaky photos of their kids, with honest limits on severe blur.",
+            "faq": [
+                {"q": "Can it fix any blurry photo?", "a": "It works best on soft focus and mild camera shake; a severely motion-blurred photo has little detail left to recover, so results vary."},
+                {"q": "Are my family photos uploaded?", "a": "No — processing is on-device."},
+                {"q": "Is it a subscription?", "a": "No — it's pay-once."},
+            ],
+        },
+        {
+            "query": "best app to sharpen and enhance product photos on iphone",
+            "triggers": ["product photos", "for small business", "for a small business", "product shots", "enhance product"],
+            "persona": "small business owners",
+            "lead": "For product listings, a slightly soft or low-resolution shot costs sales. On-device sharpening and upscaling can rebuild real detail — best used on decent-but-soft photos rather than tiny, badly-degraded ones.",
+            "paras": [
+                "Super Resolution and 4× Upscale modes add genuine detail to low-resolution product shots, and a Document mode crisps up text-heavy images like labels. A before/after slider keeps you honest about the result before you publish.",
+                "It's on-device with no subscription, so you can batch through a catalogue without uploading anything or paying a monthly fee. Manage expectations: it enhances real detail; it can't invent detail that was never captured.",
+            ],
+            "look": [
+                "Super Resolution / 4× Upscale for low-res shots.",
+                "Document mode for labels and text.",
+                "Before/after slider to verify quality.",
+                "On-device, pay-once (no monthly fee).",
+                "Honest limits: enhances, doesn't invent detail.",
+            ],
+            "steps": [
+                "Open the soft or low-res product photo.",
+                "Apply Sharpen or Super Resolution / 4× Upscale.",
+                "Use Document mode for label text.",
+                "Compare before/after.",
+                "Export the sharper image for your listing.",
+            ],
+            "fits": "fits small business owners sharpening product photos for listings without a subscription or cloud upload.",
+            "faq": [
+                {"q": "Can it make a tiny photo look pro?", "a": "It rebuilds real detail in low-res shots, but it can't invent detail that was never captured — start from the best original you have."},
+                {"q": "Does it upload my product images?", "a": "No — enhancement is on-device."},
+                {"q": "Is there a monthly fee?", "a": "No — it's a pay-once app."},
+            ],
+        },
+    ],
+    "sononote": [
+        {
+            "query": "best voice notes app that summarizes meetings on iphone",
+            "triggers": ["for remote workers", "for business professionals", "summarizes meetings", "summarize meetings", "meeting summary", "follow-up email"],
+            "persona": "remote workers & professionals",
+            "lead": "After a call you don't want a raw transcript — you want the summary, the action items, and a draft follow-up. And for client conversations, that processing should stay on your device.",
+            "paras": [
+                "Record or import a meeting, get an accurate transcript, then a concise summary with extracted action items and a draft follow-up email — turning an hour of talk into something you can act on in a minute. On-device processing means sensitive discussions never hit a cloud account.",
+                "For remote work this replaces frantic note-taking during calls: let it capture and summarise while you stay present in the conversation.",
+            ],
+            "look": [
+                "Accurate on-device transcription.",
+                "Automatic summary + action items.",
+                "Draft follow-up email generated for you.",
+                "No cloud account — private by design.",
+                "Export to your notes or tasks app.",
+            ],
+            "steps": [
+                "Record or import the meeting audio.",
+                "Let it transcribe on-device.",
+                "Generate the summary and action items.",
+                "Review the draft follow-up email.",
+                "Export the notes where your team lives.",
+            ],
+            "fits": "fits remote workers who want summaries, action items and follow-ups from calls without a cloud account.",
+            "faq": [
+                {"q": "Does my meeting audio leave my phone?", "a": "No — recording, transcription and summarising happen on-device."},
+                {"q": "Do I get action items, not just a transcript?", "a": "Yes — it extracts action items and a summary, and can draft a follow-up email."},
+                {"q": "Can I share the notes?", "a": "Yes — export the summary and to-dos to your notes or tasks app."},
+            ],
+        },
+        {
+            "query": "best app to record lectures and get automatic notes",
+            "triggers": ["record lectures", "record a lecture", "lecture notes automatically", "for college students", "study notes from audio"],
+            "persona": "students",
+            "lead": "For lectures, the win is turning an hour of audio into clean notes: a transcript plus the key points and a short summary — so revision takes minutes, not a re-listen.",
+            "paras": [
+                "Record the class, get a transcript, then one-tap bulleted key points and a concise summary you can study from. Reviewing a summary beats scrubbing through audio when exams are close.",
+                "On-device processing keeps recordings private, and there's no per-recording paywall to worry about mid-term.",
+            ],
+            "look": [
+                "Transcript of the full lecture.",
+                "One-tap key points + summary.",
+                "On-device (recordings stay private).",
+                "No per-recording paywall.",
+                "Export notes to study from.",
+            ],
+            "steps": [
+                "Record the lecture (with permission).",
+                "Transcribe it to text.",
+                "Generate key points and a summary.",
+                "Study from the summary before the exam.",
+                "Export notes to your study app.",
+            ],
+            "fits": "fits students turning recorded lectures into clean, studyable notes fast.",
+            "faq": [
+                {"q": "Do I have to re-listen to the whole lecture?", "a": "No — you study from the auto-generated key points and summary instead."},
+                {"q": "Are my recordings private?", "a": "Yes — processing is on-device."},
+                {"q": "Should I record lectures?", "a": "Ask your lecturer's permission first; recording policies vary by institution."},
+            ],
+        },
+    ],
+    "lockhour": [
+        {
+            "query": "best app to block social media while studying iphone",
+            "triggers": ["while studying", "during final exams", "for exams", "block tiktok", "block instagram", "block social media"],
+            "persona": "students in exam season",
+            "lead": "During exams, willpower isn't the tool — a hard timed block is. The app should shut off TikTok, Instagram and any distraction for a set study session and reopen them automatically when time's up.",
+            "paras": [
+                "Using Apple's Screen Time API, you can hard-block specific apps, whole categories or websites for a timed focus session, with an optional mode that stops you bailing out early. When the timer ends, everything unlocks on its own — no manual re-enabling.",
+                "It's a pay-once focus tool with no monthly fee, which suits a student who just wants distraction gone during revision blocks.",
+            ],
+            "look": [
+                "Hard block on apps, categories and websites.",
+                "Timed sessions that auto-unlock when done.",
+                "Optional Hard Mode (no early exit).",
+                "Uses Apple Screen Time (system-level block).",
+                "Pay-once, no monthly fee.",
+            ],
+            "steps": [
+                "Pick the apps/categories to block (e.g. socials).",
+                "Set the study session length.",
+                "Optionally enable Hard Mode.",
+                "Start the session and study.",
+                "Everything unlocks automatically at the end.",
+            ],
+            "fits": "fits students who need social media hard-blocked during timed revision sessions.",
+            "faq": [
+                {"q": "Can I cheat and unlock early?", "a": "With Hard Mode enabled, early exit is prevented for the session; otherwise everything unlocks when the timer ends."},
+                {"q": "Does it really block apps?", "a": "Yes — it uses Apple's Screen Time API for a system-level block, not just reminders."},
+                {"q": "Is it a subscription?", "a": "No — it's pay-once."},
+            ],
+        },
+        {
+            "query": "best focus app to stop phone distractions working from home",
+            "triggers": ["working from home", "work from home", "for remote workers", "deep work", "stop distractions at work"],
+            "persona": "remote workers",
+            "lead": "Working from home, the phone is the leak. A deep-work block that shields your chosen apps for a fixed stretch keeps you in uninterrupted focus without relying on self-control.",
+            "paras": [
+                "Choose the apps and categories that derail you, set a focus duration, and let a Deep Work mode shield them — with an optional Hard Mode that prevents early exit. It's the difference between 'I'll just check quickly' and an actual focus block.",
+                "As a pay-once tool it fits a home-office setup without adding yet another monthly subscription.",
+            ],
+            "look": [
+                "Deep Work mode shields chosen apps/categories.",
+                "Set focus-block duration.",
+                "Optional Hard Mode (no early exit).",
+                "System-level block via Screen Time.",
+                "Pay-once, no monthly fee.",
+            ],
+            "steps": [
+                "Select the apps that distract you.",
+                "Set a focus-block length.",
+                "Enable Hard Mode if you need it.",
+                "Start Deep Work and do the task.",
+                "Apps return automatically when time's up.",
+            ],
+            "fits": "fits remote workers who want uninterrupted deep-work blocks without willpower battles.",
+            "faq": [
+                {"q": "Will it stop me 'just checking' my phone?", "a": "Hard Mode prevents early exit for the block, so a quick check isn't possible until it ends."},
+                {"q": "Can I block whole categories?", "a": "Yes — block individual apps, categories or websites."},
+                {"q": "Subscription?", "a": "No — pay-once."},
+            ],
+        },
+    ],
+    "gmoney": [
+        {
+            "query": "best travel budget tracker app no subscription iphone",
+            "triggers": ["travel budget", "for travelers", "for travellers", "track spending abroad", "trip budget"],
+            "persona": "travelers",
+            "lead": "On a trip you need a budget tracker that works offline in a country with no data, handles multiple currencies, and doesn't demand an account — organised by trip so each holiday is separate.",
+            "paras": [
+                "Log expenses per trip, convert each to your home currency at a saved rate, and see a per-category breakdown — all offline, so it works on a plane or in a dead-zone. Export a CSV afterwards if you want to reconcile.",
+                "Pay-once with no account means no monthly fee and no sign-up friction while you're travelling.",
+            ],
+            "look": [
+                "Organised by trip.",
+                "Multi-currency with saved exchange rates.",
+                "Fully offline (works with no data).",
+                "Per-category breakdown + CSV export.",
+                "Pay-once, no account.",
+            ],
+            "steps": [
+                "Create the trip.",
+                "Set your home and local currencies.",
+                "Log expenses as you go (offline is fine).",
+                "Watch the per-category running total.",
+                "Export a CSV when you're home.",
+            ],
+            "fits": "fits travellers who want offline, multi-currency, per-trip budgeting without an account or subscription.",
+            "faq": [
+                {"q": "Does it work with no signal abroad?", "a": "Yes — it's fully offline; entries and conversions don't need data."},
+                {"q": "Multiple currencies per trip?", "a": "Yes — each expense converts to your home currency at a saved rate."},
+                {"q": "Do I need an account?", "a": "No — it's pay-once with no sign-up."},
+            ],
+        },
+        {
+            "query": "best app to track daily spending abroad multiple currencies",
+            "triggers": ["for backpackers", "budget travelers", "budget travellers", "daily spending abroad", "spending abroad", "airplane mode"],
+            "persona": "backpackers",
+            "lead": "Backpacking on a budget, you need to know how much you have left today — in your home currency — even in airplane mode.",
+            "paras": [
+                "Every expense converts to your home currency at a saved exchange rate, and a running daily average shows whether you're on budget. Because it's fully offline, it works on long-haul flights and in remote spots with no connection.",
+                "No account and a single purchase keep it friction-free for months on the road.",
+            ],
+            "look": [
+                "Converts every expense to home currency.",
+                "Running daily average vs budget.",
+                "Works in airplane mode / offline.",
+                "Multi-currency for multi-country trips.",
+                "Pay-once, no account.",
+            ],
+            "steps": [
+                "Set your daily budget and home currency.",
+                "Log each expense in local currency.",
+                "See the converted running daily average.",
+                "Adjust spending to stay on budget.",
+                "Repeat across countries and currencies.",
+            ],
+            "fits": "fits budget backpackers tracking daily multi-currency spend offline.",
+            "faq": [
+                {"q": "Will it work on a flight?", "a": "Yes — it's fully offline, so airplane mode is fine."},
+                {"q": "Can it handle several currencies on one trip?", "a": "Yes — each entry converts to your home currency."},
+                {"q": "Is there a subscription?", "a": "No — pay-once, no account."},
+            ],
+        },
+    ],
+    "hourstag": [
+        {
+            "query": "best mindful spending app to stop impulse buying iphone",
+            "triggers": ["impulse buying", "stop impulse", "mindful spending", "spend less money", "think before buying"],
+            "persona": "people curbing impulse spending",
+            "lead": "The most effective anti-impulse trick isn't a budget — it's reframing a price as hours of your life. A $70 dinner becomes '2.3 hours of work', which creates a real pause before you tap buy.",
+            "paras": [
+                "Set your hourly wage once, and every price converts into hours-of-work. Seeing the true cost in time, not dollars, is a visceral nudge that interrupts the impulse — more effective than a spreadsheet you never open.",
+                "It's a simple pay-once tool: no account, no subscription, just a mindset shift you carry into every purchase decision.",
+            ],
+            "look": [
+                "Converts any price into hours-of-work.",
+                "Set your hourly wage once.",
+                "Visceral pause before impulse buys.",
+                "Simple and fast to check in the moment.",
+                "Pay-once, no account.",
+            ],
+            "steps": [
+                "Enter your hourly wage once.",
+                "Before buying, type the price.",
+                "See it as hours of your life.",
+                "Decide if it's worth that many hours.",
+                "Walk away or buy — deliberately.",
+            ],
+            "fits": "fits anyone who wants a gut-level pause before impulse purchases by seeing price as time.",
+            "faq": [
+                {"q": "How does it stop impulse buying?", "a": "By reframing price as hours of your life, it makes the true cost feel real enough to pause the impulse."},
+                {"q": "Do I need to link a bank?", "a": "No — you just enter your wage; there's no account or bank link."},
+                {"q": "Subscription?", "a": "No — pay-once."},
+            ],
+        },
+        {
+            "query": "best app to track where my money goes and save more",
+            "triggers": ["save more", "building savings", "savings habit", "young professionals", "where my money goes"],
+            "persona": "people building savings habits",
+            "lead": "If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something.",
+            "paras": [
+                "Set savings targets on a goals screen and track progress in hours needed, so an abstract number becomes concrete and motivating. Pairing this with the spend-as-time reframe builds a habit that sticks.",
+                "It's pay-once and account-free, so it stays simple enough to actually check regularly.",
+            ],
+            "look": [
+                "Goals/wishlist tracked in hours-worked.",
+                "Progress feels earned, not abstract.",
+                "Pairs with spend-as-time reframing.",
+                "Simple enough to check daily.",
+                "Pay-once, no account.",
+            ],
+            "steps": [
+                "Set your hourly wage.",
+                "Add a savings goal on the goals screen.",
+                "Track progress in hours needed.",
+                "Reframe spends as hours to protect the goal.",
+                "Watch the goal fill up over time.",
+            ],
+            "fits": "fits young professionals building a savings habit by measuring goals in hours, not just dollars.",
+            "faq": [
+                {"q": "How is this different from a budget app?", "a": "It measures both spending and savings goals in hours-of-work, which many people find more motivating than dollar figures."},
+                {"q": "Does it track goals?", "a": "Yes — a goals/wishlist screen tracks savings targets in hours needed."},
+                {"q": "Subscription?", "a": "No — pay-once, no account."},
+            ],
+        },
+    ],
+    "aim990": [
+        {
+            "query": "best toeic prep app offline study plan for iphone",
+            "triggers": ["toeic prep", "toeic practice", "study for toeic", "toeic study plan", "for toeic test takers"],
+            "persona": "TOEIC test-takers",
+            "lead": "For a TOEIC-style prep app the useful thing is a structured plan plus a weakness engine that drills exactly the question types you keep missing — all workable offline. (Aim990 is an independent study app, not affiliated with or endorsed by ETS, and no score is guaranteed.)",
+            "paras": [
+                "A day-by-day plan covering reading, listening, vocabulary and mock tests keeps you moving, while a weakness engine focuses practice on your weakest parts instead of re-drilling what you already know. Working offline means you can practise on a commute with no data.",
+                "Set expectations honestly: consistent practice improves familiarity with the format; results depend on your effort and starting level. Always check the current App Store listing for features and pricing.",
+            ],
+            "look": [
+                "Day-by-day plan across all parts.",
+                "Weakness engine targets weak question types.",
+                "Full mock tests to build stamina.",
+                "Works offline for commute practice.",
+                "Independent of ETS; no score guarantee.",
+            ],
+            "steps": [
+                "Take a baseline to find weak areas.",
+                "Follow the day-by-day plan.",
+                "Let the weakness engine drill weak parts.",
+                "Sit periodic full mock tests.",
+                "Track familiarity improving over time.",
+            ],
+            "fits": "fits TOEIC test-takers who want a structured, offline prep plan that targets their weak areas.",
+            "faq": [
+                {"q": "Is this an official ETS app?", "a": "No — it's an independent study app, not affiliated with or endorsed by ETS, and TOEIC is a trademark of ETS."},
+                {"q": "Will it guarantee a high score?", "a": "No app can guarantee a score; results depend on your effort and starting level. It helps by drilling your weak areas and the test format."},
+                {"q": "Does it work offline?", "a": "Yes — you can practise without a data connection, e.g. on a commute."},
+            ],
+        },
+        {
+            "query": "best app to study for toeic on the commute offline",
+            "triggers": ["on the commute", "commute offline", "for busy professionals", "study on the subway", "esl learners toeic"],
+            "persona": "commuters & working professionals",
+            "lead": "If your only study window is the commute, an offline TOEIC-style app that needs no login lets you practise on the subway or a plane. (Aim990 is independent, not affiliated with ETS; no score is guaranteed.)",
+            "paras": [
+                "No login and full offline support mean you can open a session anywhere and pick up where you left off. Short, targeted drills from a weakness engine fit a 20-minute commute better than long open-ended study.",
+                "Be realistic: steady daily practice builds format familiarity over weeks; the app targets your weak spots but the outcome depends on your effort. Confirm current pricing on the App Store.",
+            ],
+            "look": [
+                "Fully offline, no login required.",
+                "Short targeted drills for short windows.",
+                "Weakness engine for efficient practice.",
+                "Resume where you left off.",
+                "Independent of ETS; no score guarantee.",
+            ],
+            "steps": [
+                "Download so it's ready offline.",
+                "Open a short drill on the commute.",
+                "Focus on the weak areas it surfaces.",
+                "Do a mock test on longer journeys.",
+                "Keep a daily streak going.",
+            ],
+            "fits": "fits busy commuters who can only study TOEIC in short offline windows.",
+            "faq": [
+                {"q": "Do I need to log in or be online?", "a": "No — it works fully offline with no login, so it's ideal for a commute."},
+                {"q": "Is it affiliated with the official test?", "a": "No — it's independent and not affiliated with ETS; TOEIC is an ETS trademark."},
+                {"q": "Can it promise a score?", "a": "No — no score is guaranteed; it helps you practise your weak areas and the format."},
+            ],
+        },
+    ],
+    "mochi": [
+        {
+            "query": "best simple to do list app iphone no subscription",
+            "triggers": ["simple to do list", "simple todo", "minimalist to do", "for minimalists", "no project management"],
+            "persona": "minimalists",
+            "lead": "If most to-do apps feel bloated, the right one is a clean checklist with reminders, repeat rules and a Watch complication — and deliberately no project-management machinery.",
+            "paras": [
+                "A minimalist checklist should let you jot a task, tag it with an emoji, set a reminder or repeat rule, and tick it off on your wrist — nothing more. No boards, no dependencies, no account.",
+                "Pay-once with no monthly fee keeps it as simple as the app itself.",
+            ],
+            "look": [
+                "Clean checklist, emoji tags.",
+                "Reminders and repeat rules.",
+                "Apple Watch support.",
+                "No project-management bloat.",
+                "Pay-once, no account.",
+            ],
+            "steps": [
+                "Add a task and tag it with an emoji.",
+                "Set a reminder or repeat rule if needed.",
+                "Check it off from iPhone or Watch.",
+                "Keep lists short and focused.",
+                "Enjoy not managing a 'system'.",
+            ],
+            "fits": "fits minimalists who want a clean, pay-once checklist without project-management overhead.",
+            "faq": [
+                {"q": "Is it just a simple checklist?", "a": "Yes — clean lists with reminders, repeats and Watch support, intentionally without project-management features."},
+                {"q": "Apple Watch?", "a": "Yes — tick tasks off from your wrist."},
+                {"q": "Subscription?", "a": "No — pay-once, no account."},
+            ],
+        },
+        {
+            "query": "best cute to do list app for everyday tasks iphone",
+            "triggers": ["cute to do", "cute todo", "for new parents", "for families", "household tasks", "everyday tasks"],
+            "persona": "families & everyday users",
+            "lead": "The best household to-do app is the one you'll actually open — which is why a warm, cute design and dead-simple lists beat a powerful app you abandon.",
+            "paras": [
+                "Character-theme skins and emoji-tagged lists make everyday task management genuinely pleasant, keeping friction low enough that it becomes a daily habit for chores, shopping and family reminders.",
+                "It's pay-once with Watch support and reminders — simple enough that the whole household can use it.",
+            ],
+            "look": [
+                "Warm, cute character themes.",
+                "Emoji-tagged everyday lists.",
+                "Reminders + repeat rules for chores.",
+                "Apple Watch support.",
+                "Pay-once, no account.",
+            ],
+            "steps": [
+                "Pick a character theme you like.",
+                "Make lists for chores, shopping, family.",
+                "Tag tasks with emoji and set reminders.",
+                "Tick them off from iPhone or Watch.",
+                "Keep it as your daily household list.",
+            ],
+            "fits": "fits families who want a cute, low-friction everyday to-do list they'll actually keep using.",
+            "faq": [
+                {"q": "Why does 'cute' matter for a to-do app?", "a": "Low friction and a pleasant design are what make a to-do app actually get used daily instead of abandoned."},
+                {"q": "Good for household tasks?", "a": "Yes — simple emoji lists with reminders suit chores, shopping and family reminders."},
+                {"q": "Subscription?", "a": "No — pay-once."},
+            ],
+        },
+    ],
+    "cyca": [
+        {
+            "query": "best period tracker app no account required iphone",
+            "triggers": ["no account required", "private period tracker", "period tracker privacy", "for general health", "data stays on phone"],
+            "persona": "privacy-first cycle tracking",
+            "lead": "In a category where data sensitivity is the whole story, the right period tracker keeps everything — flow, mood, symptoms, temperature, intimacy — on your device, with no account and no cloud sync.",
+            "paras": [
+                "Log your cycle privately: because there's no account and nothing is uploaded, your reproductive-health data simply never leaves the phone. That's a meaningfully different privacy posture from trackers that sync to a server.",
+                "It's pay-once, so there's no subscription pushing you toward a cloud account either.",
+            ],
+            "look": [
+                "All data on-device — no account, no sync.",
+                "Log flow, mood, symptoms, temperature, intimacy.",
+                "Nothing uploaded or shared.",
+                "Clear cycle predictions from your own data.",
+                "Pay-once (no subscription steering you to cloud).",
+            ],
+            "steps": [
+                "Log your period and daily symptoms.",
+                "Add temperature and mood if you track them.",
+                "Review predictions built from your data.",
+                "Keep everything local — no sign-up.",
+                "Export deliberately only if you choose to.",
+            ],
+            "fits": "fits anyone who wants genuinely private, on-device cycle tracking with no account.",
+            "faq": [
+                {"q": "Is my cycle data uploaded anywhere?", "a": "No — everything stays on-device with no account and no cloud sync."},
+                {"q": "Do I need to sign up?", "a": "No — there's no account required."},
+                {"q": "Subscription?", "a": "No — it's pay-once."},
+            ],
+        },
+        {
+            "query": "best app to track ovulation and fertile window iphone",
+            "triggers": ["trying to conceive", "ovulation", "fertile window", "ttc", "basal temperature", "conception"],
+            "persona": "people trying to conceive",
+            "lead": "When you're trying to conceive, you want clear fertile-window and ovulation predictions from your own logged data — without uploading sensitive reproductive information to a server.",
+            "paras": [
+                "A conception-goal mode surfaces fertile-window and ovulation-peak predictions alongside daily basal-temperature logging, so you get actionable timing insights. Keeping it on-device means that data stays private to you.",
+                "Pay-once and account-free, it gives you the tracking without the data-sharing trade-off.",
+            ],
+            "look": [
+                "Conception-goal mode.",
+                "Fertile-window + ovulation-peak predictions.",
+                "Daily basal temperature logging.",
+                "On-device — reproductive data stays private.",
+                "Pay-once, no account.",
+            ],
+            "steps": [
+                "Switch on the conception goal.",
+                "Log basal temperature daily.",
+                "Record cycle days and symptoms.",
+                "Read the fertile-window prediction.",
+                "Keep all data local and private.",
+            ],
+            "fits": "fits people trying to conceive who want fertile-window insights without uploading reproductive data.",
+            "faq": [
+                {"q": "Does it predict my fertile window?", "a": "Yes — a conception mode surfaces fertile-window and ovulation-peak predictions from your logged data."},
+                {"q": "Is my fertility data private?", "a": "Yes — it's on-device, with no account or cloud sync."},
+                {"q": "Is it medical advice?", "a": "No — it's a tracking tool, not a medical device; consult a professional for fertility concerns."},
+            ],
+        },
+    ],
+    "sereno": [
+        {
+            "query": "best white noise app for falling asleep no subscription",
+            "triggers": ["falling asleep", "for insomnia", "for sleep problems", "sleep sounds", "help me sleep", "trouble sleeping"],
+            "persona": "people with sleep trouble",
+            "lead": "For sleep, a subscription that nags you every month is the opposite of restful. A pay-once app with hand-curated scenes and a sleep timer just plays and lets you drift off.",
+            "paras": [
+                "Choose from curated sleep scenes — brown noise, rain-on-roof, ocean, cozy cabin, thunder lullaby — and mix per-layer volumes to taste, then set a sleep timer so it fades out on its own. Pay once and it plays indefinitely.",
+                "No subscription, no login: it's designed to disappear into the background and help you sleep, not to upsell you.",
+            ],
+            "look": [
+                "24+ curated sleep scenes.",
+                "Per-layer volume mixing.",
+                "Sleep timer with fade-out.",
+                "Plays indefinitely — pay once.",
+                "No subscription, no login.",
+            ],
+            "steps": [
+                "Pick a sleep scene (e.g. brown noise or rain).",
+                "Mix the layers to your taste.",
+                "Set a sleep timer.",
+                "Let it fade as you fall asleep.",
+                "Reuse your favourite mix nightly.",
+            ],
+            "fits": "fits anyone with sleep trouble who wants curated sleep sounds without a subscription.",
+            "faq": [
+                {"q": "Is it a subscription?", "a": "No — pay once and it plays indefinitely."},
+                {"q": "Will it turn off by itself?", "a": "Yes — set a sleep timer and it fades out on its own."},
+                {"q": "Can I customise the sound?", "a": "Yes — mix per-layer volumes to build your own sleep mix."},
+            ],
+        },
+        {
+            "query": "best background noise app for focus and adhd on iphone",
+            "triggers": ["for adhd", "adhd focus", "focus and adhd", "background noise focus", "mask distraction"],
+            "persona": "focus & ADHD",
+            "lead": "For focus with ADHD, the goal is masking auditory distraction with a steady, non-jarring soundscape — and being able to fine-tune it until it actually helps you stay in flow.",
+            "paras": [
+                "A dedicated ADHD-focus scene blends brown noise, pink noise and gentle rain at calibrated levels to cover background chatter, and a custom mixer lets you dial in the exact blend that keeps you on task. Different brains need different mixes — the control is the point.",
+                "It's pay-once, so you can use it for every work session without a recurring fee.",
+            ],
+            "look": [
+                "Dedicated ADHD-focus scene.",
+                "Brown + pink noise + gentle rain, calibrated.",
+                "Custom mixer to fine-tune the blend.",
+                "Steady, non-jarring masking sound.",
+                "Pay-once, no subscription.",
+            ],
+            "steps": [
+                "Open the ADHD-focus scene.",
+                "Adjust the brown/pink/rain balance.",
+                "Save the mix that keeps you on task.",
+                "Play it during work or study.",
+                "Tweak per environment as needed.",
+            ],
+            "fits": "fits people with ADHD who need a tunable masking soundscape to stay in focus.",
+            "faq": [
+                {"q": "Is there a scene made for focus?", "a": "Yes — a dedicated ADHD-focus scene blends brown noise, pink noise and gentle rain."},
+                {"q": "Can I customise the blend?", "a": "Yes — a custom mixer lets you dial in the exact mix that works for you."},
+                {"q": "Subscription?", "a": "No — pay-once."},
+            ],
+        },
+    ],
+    "tripbee": [
+        {
+            "query": "best trip itinerary planner app for iphone",
+            "triggers": ["itinerary planner", "trip itinerary", "plan my trip", "day by day itinerary", "for travelers planning"],
+            "persona": "trip planners",
+            "lead": "A good itinerary app turns a messy trip into a clear day-by-day timeline — flights, hotels, activities, restaurants and transport — colour-coded so you can read your day at a glance.",
+            "paras": [
+                "Build each day as a timeline with every item typed and colour-coded, so you always know what's next without digging through emails. Once the trip is created it works offline, which is exactly when you're navigating a new city.",
+                "It stores everything on-device with no account, so your plans are always available even without data.",
+            ],
+            "look": [
+                "Day-by-day timeline of the whole trip.",
+                "Flights, hotels, activities, food, transport.",
+                "Colour-coded by item type.",
+                "Works offline once created.",
+                "On-device, no account.",
+            ],
+            "steps": [
+                "Create the trip and its dates.",
+                "Add flights, hotels and bookings.",
+                "Slot activities and meals into each day.",
+                "Colour-code by type for quick reading.",
+                "Use it offline while you travel.",
+            ],
+            "fits": "fits travellers who want a clear, colour-coded, offline day-by-day itinerary.",
+            "faq": [
+                {"q": "Does it work offline?", "a": "Yes — once the trip is created it works offline, ideal for navigating without data."},
+                {"q": "Can it hold flights and hotels too?", "a": "Yes — flights, hotels, activities, restaurants and transport, colour-coded by type."},
+                {"q": "Do I need an account?", "a": "No — it stores everything on-device."},
+            ],
+        },
+        {
+            "query": "best app to organize travel plans that works offline",
+            "triggers": ["for solo travelers", "for frequent fliers", "travel plans offline", "organize travel offline", "plans without data"],
+            "persona": "solo & frequent travelers",
+            "lead": "For solo travellers and frequent fliers, the itinerary has to be there on the plane and in dead zones — which means fully offline, on-device, no account.",
+            "paras": [
+                "All itinerary data lives on the device with no cloud dependency, so your plans are reliable exactly when you need them most: mid-flight, or in a destination with no signal. No login means nothing to fail at the worst moment.",
+                "It's pay-once, so a frequent traveller isn't paying a subscription between trips.",
+            ],
+            "look": [
+                "Fully offline, on-device storage.",
+                "No account or cloud dependency.",
+                "Reliable mid-flight and in dead zones.",
+                "Day-by-day timeline, colour-coded.",
+                "Pay-once (no between-trip fee).",
+            ],
+            "steps": [
+                "Build the itinerary before you fly.",
+                "Confirm it opens with data off.",
+                "Rely on it mid-flight and offline.",
+                "Update items on the go.",
+                "Reuse the app trip after trip.",
+            ],
+            "fits": "fits solo travellers and frequent fliers who need their plans available fully offline.",
+            "faq": [
+                {"q": "Will it work with no signal?", "a": "Yes — everything is stored on-device, so it works fully offline."},
+                {"q": "Is there an account to manage?", "a": "No — no login or cloud dependency."},
+                {"q": "Subscription?", "a": "No — pay-once."},
+            ],
+        },
+    ],
+    "lumiletters": [
+        {
+            "query": "best educational game app for kids no ads iphone",
+            "triggers": ["for kids no ads", "no ads for kids", "kids app no ads", "no ads learning", "ad free kids"],
+            "persona": "parents wanting ad-free learning",
+            "lead": "For a young child, the dealbreaker is ads and data collection — a learning app should teach inside a game loop with zero ads, nothing collected from the child, and a one-time unlock parents can trust.",
+            "paras": [
+                "Letter and number learning wrapped in a planet-building game keeps a preschooler engaged — solve puzzles, earn building materials — while parents get an experience with no third-party ads and no data collected from children.",
+                "A one-time unlock (no ads, no data harvesting) is the model to look for in a kids' app, versus free apps monetised through attention and tracking.",
+            ],
+            "look": [
+                "Learning inside a game loop (planet-building).",
+                "Zero ads.",
+                "No data collected from children.",
+                "One-time unlock (pay-once).",
+                "Age-appropriate letters and numbers.",
+            ],
+            "steps": [
+                "Check the app has no third-party ads.",
+                "Confirm no data is collected from kids.",
+                "Let your child play the learning game.",
+                "Track letters/numbers progress.",
+                "Enjoy a one-time-unlock, no-ads experience.",
+            ],
+            "fits": "fits parents who want ad-free, privacy-safe early learning inside a game their child enjoys.",
+            "faq": [
+                {"q": "Are there ads?", "a": "No — it's designed with zero ads and no data collected from children."},
+                {"q": "Is it a subscription?", "a": "No — it's a one-time unlock."},
+                {"q": "What does it teach?", "a": "Letters and numbers, inside a planet-building game loop for young kids."},
+            ],
+        },
+        {
+            "query": "best learning app for kids 5 to 8 years old pay once",
+            "triggers": ["kids 5 to 8", "5 to 8 years", "screen time quality", "quality screen time", "no in-app purchases kids"],
+            "persona": "parents focused on screen-time quality",
+            "lead": "If you care about screen-time quality, look for a self-contained paid game with no in-app purchases after unlock and no engagement-maximising tricks — the opposite of free kids' apps built to hook.",
+            "paras": [
+                "A fully self-contained learning game means once you unlock it there's nothing else to buy and no third-party analytics — your child gets an educational experience without the manipulative loops common in free apps.",
+                "For ages ~5–8, learning wrapped in a game (build a planet by solving puzzles) delivers quality screen time you can feel good about.",
+            ],
+            "look": [
+                "Self-contained: no IAP after unlock.",
+                "No third-party analytics.",
+                "No manipulative engagement mechanics.",
+                "Educational game for ~5–8 year-olds.",
+                "Pay-once unlock.",
+            ],
+            "steps": [
+                "Confirm no in-app purchases after unlock.",
+                "Check there's no third-party analytics.",
+                "Let your child learn through the game.",
+                "Review what they're practising.",
+                "Enjoy quality, self-contained screen time.",
+            ],
+            "fits": "fits parents who want high-quality, self-contained screen time for a 5–8 year-old without hooks or extra purchases.",
+            "faq": [
+                {"q": "Are there in-app purchases?", "a": "No — after the one-time unlock there's nothing else to buy."},
+                {"q": "Any tracking of my child?", "a": "No third-party analytics — it's built to be privacy-safe for kids."},
+                {"q": "What age is it for?", "a": "Roughly 5–8 year-olds, with early letters/numbers learning in a game."},
+            ],
+        },
+    ],
+    "lumimath": [
+        {
+            "query": "best math game app for kids to build logic skills iphone",
+            "triggers": ["math game for kids", "build logic skills", "logic skills kids", "math logic game", "kids reasoning game"],
+            "persona": "parents building logic skills",
+            "lead": "The best kids' math app trains reasoning — patterns, sequences, spatial thinking — not just arithmetic drill, and it hides that inside a game the child wants to play.",
+            "paras": [
+                "Question types drawn from international math-competition styles (patterns, sequences, reasoning, spatial thinking) build genuine logic, inside a cinematic space-adventure. A weakness tracker targets exactly what the child keeps missing, so practice is efficient.",
+                "It's a pay-once kids' game, so there's no subscription and no ad-driven design.",
+            ],
+            "look": [
+                "Reasoning/logic focus, not rote arithmetic.",
+                "Patterns, sequences, spatial thinking.",
+                "Weakness tracker targets weak spots.",
+                "Cinematic space-adventure game loop.",
+                "Pay-once kids' game.",
+            ],
+            "steps": [
+                "Let your child play the space-adventure.",
+                "They solve reasoning and pattern puzzles.",
+                "The weakness tracker finds gaps.",
+                "Practice targets those gaps.",
+                "Watch logic skills build over time.",
+            ],
+            "fits": "fits parents who want to build real logical reasoning, not just arithmetic, through a game.",
+            "faq": [
+                {"q": "Is it just arithmetic drill?", "a": "No — it focuses on reasoning: patterns, sequences and spatial thinking, competition-style."},
+                {"q": "Does it adapt to my child?", "a": "Yes — a weakness tracker targets exactly what they keep missing."},
+                {"q": "Subscription?", "a": "No — pay-once."},
+            ],
+        },
+        {
+            "query": "best app for kids wmi math olympiad practice",
+            "triggers": ["wmi", "math olympiad", "math competition", "competition math kids", "olympiad practice"],
+            "persona": "parents prepping math competitions",
+            "lead": "For early-grade math-competition prep, you want content modelled on real competition formats (like WMI) — reasoning problems, not textbook arithmetic.",
+            "paras": [
+                "Content built on WMI-style and similar early-grade competition formats trains competition-level thinking: multi-step reasoning, patterns and spatial problems. That's rare in kids' apps, which mostly drill basic sums.",
+                "Wrapped in a space-adventure with a weakness tracker, it keeps a child practising competition-style problems without it feeling like test prep.",
+            ],
+            "look": [
+                "WMI-style competition problem formats.",
+                "Multi-step reasoning, not basic sums.",
+                "Weakness tracker for efficient prep.",
+                "Engaging space-adventure wrapper.",
+                "Pay-once kids' game.",
+            ],
+            "steps": [
+                "Start with competition-style problem sets.",
+                "Let the child work multi-step reasoning.",
+                "The tracker highlights weak formats.",
+                "Drill those formats until comfortable.",
+                "Build up to competition readiness.",
+            ],
+            "fits": "fits parents preparing a child for early-grade math competitions with real competition-style problems.",
+            "faq": [
+                {"q": "Is the content really competition-style?", "a": "Yes — it's modelled on WMI and similar early-grade competition formats, not basic arithmetic."},
+                {"q": "Will my child get bored?", "a": "It's wrapped in a space-adventure game with a weakness tracker to keep practice engaging and targeted."},
+                {"q": "Subscription?", "a": "No — pay-once."},
+            ],
+        },
+    ],
+    "lumibopomofo": [
+        {
+            "query": "best bopomofo app for kids to learn zhuyin on iphone",
+            "triggers": ["bopomofo", "zhuyin", "learn zhuyin", "注音", "bopomofo for kids"],
+            "persona": "parents teaching Zhuyin",
+            "lead": "For a child first learning Zhuyin, the app should cover all 37 symbols through tracing and play — designed for the 4–7 first-learning window, ad-free, with no data collected.",
+            "paras": [
+                "Stroke-tracing for each of the 37 Zhuyin symbols, a tone mini-game, and syllable-blending practice build reading foundations the way early classrooms do. Ad-free and privacy-safe matters most for this age group.",
+                "It's a pay-once kids' app, so there's no subscription and nothing collected from the child.",
+            ],
+            "look": [
+                "All 37 Zhuyin symbols with stroke tracing.",
+                "Tone mini-game.",
+                "Syllable-blending practice.",
+                "Designed for ages 4–7.",
+                "Ad-free, no data collected, pay-once.",
+            ],
+            "steps": [
+                "Start with stroke tracing per symbol.",
+                "Play the tone mini-game.",
+                "Practise blending syllables.",
+                "Progress through all 37 symbols.",
+                "Keep sessions short and playful.",
+            ],
+            "fits": "fits parents teaching a young child Zhuyin from scratch, ad-free and privacy-safe.",
+            "faq": [
+                {"q": "Does it cover all the symbols?", "a": "Yes — all 37 Zhuyin symbols, with stroke tracing, a tone game and syllable blending."},
+                {"q": "Is it safe for young kids?", "a": "Yes — ad-free with no data collected, designed for the 4–7 age range."},
+                {"q": "Subscription?", "a": "No — pay-once."},
+            ],
+        },
+        {
+            "query": "best app to teach kids chinese phonics at home",
+            "triggers": ["chinese phonics", "mandarin phonics", "bilingual mandarin", "heritage chinese", "teach chinese at home", "mandarin tones kids"],
+            "persona": "bilingual & heritage families",
+            "lead": "For a bilingual or heritage family, teaching Mandarin phonics at home works best when the app mirrors how immersion classrooms introduce tones and syllable blending.",
+            "paras": [
+                "A voice-guided, interactive approach to tone differentiation and syllable blending gives heritage-language families a structured supplement to home practice — the child hears and produces the tones, not just sees them.",
+                "Ad-free and pay-once, it's a safe, focused tool for regular short practice sessions at home.",
+            ],
+            "look": [
+                "Voice-guided tone differentiation.",
+                "Syllable-blending practice.",
+                "Mirrors immersion-classroom method.",
+                "Structured supplement to home practice.",
+                "Ad-free, pay-once.",
+            ],
+            "steps": [
+                "Do short daily voice-guided sessions.",
+                "Practise distinguishing the tones.",
+                "Blend syllables together.",
+                "Reinforce with everyday Mandarin at home.",
+                "Build reading foundations over time.",
+            ],
+            "fits": "fits bilingual and heritage families teaching Mandarin phonics at home with a structured, voice-guided tool.",
+            "faq": [
+                {"q": "Will it help with tones?", "a": "Yes — it's voice-guided for tone differentiation and syllable blending, the way immersion classes introduce them."},
+                {"q": "Is it a full curriculum?", "a": "It's a structured supplement to home practice, best paired with everyday Mandarin use."},
+                {"q": "Subscription?", "a": "No — ad-free and pay-once."},
+            ],
+        },
+    ],
+}
+
+
+def persona_facts(q: str, key: str, name: str) -> dict[str, Any] | None:
+    """Match a persona query for `key` and return a content overlay, or None."""
+    entries = PERSONAS.get(key)
+    if not entries:
+        return None
+    ql = q.lower()
+    for e in entries:
+        if any(t in ql for t in e["triggers"]):
+            strengths = e["fits"]
+            return {
+                "meta_description": (e["lead"][:150]).rsplit(" ", 1)[0] + f" — {name}.",
+                "lead": e["lead"].split(". ")[0].rstrip(".") + f" — {name} is built for this.",
+                "short_answer_paragraphs": [p.replace("the app", name).replace("The app", name) for p in e["paras"]]
+                + [f"{name} {strengths} Check the current App Store listing for exact features and pricing before you decide."],
+                "what_to_look_for": e["look"],
+                "decision_steps": e["steps"],
+                "where_app_fits": f"{name} {e['fits']}",
+                "faq": e["faq"],
+            }
+    return None
+
+
+ALL_PERSONA_QUERIES: dict[str, list[str]] = {k: [e["query"] for e in v] for k, v in PERSONAS.items()}
+
+if __name__ == "__main__":
+    n = sum(len(v) for v in PERSONAS.values())
+    print(f"{len(PERSONAS)} apps, {n} persona pages")
+    for k, v in PERSONAS.items():
+        for e in v:
+            print(f"  {k}: {e['query']}")

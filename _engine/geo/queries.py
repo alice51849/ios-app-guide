@@ -1064,6 +1064,58 @@ for _k, _qs in _GEO_TAILORED19.items():
             _base.append(_q)
 
 
+# 2026-07-08 persona-scoped recommendation pages ("best [app] for [persona]") and
+# winner-app deep content — pulled from the answer_facts data modules (single
+# source of truth, so adding entries there auto-creates the pages here).
+try:
+    from answer_personas import ALL_PERSONA_QUERIES as _PERSONA_Q
+except Exception:
+    _PERSONA_Q = {}
+for _k, _qs in _PERSONA_Q.items():
+    _base = CURATED.setdefault(_k, [])
+    for _q in _qs:
+        if _q not in _base:
+            _base.append(_q)
+
+try:
+    from answer_deep import ALL_DEEP_QUERIES as _DEEP_Q
+except Exception:
+    _DEEP_Q = {}
+for _k, _qs in _DEEP_Q.items():
+    _base = CURATED.setdefault(_k, [])
+    for _q in _qs:
+        if _q not in _base:
+            _base.append(_q)
+
+# 2026-07-08 more-countries2 worker: 8 new passport countries + 7 new resume markets.
+_GEO_TAILORED20 = {
+    "snapport": [
+        "poland passport photo size and background",
+        "czech republic passport photo requirements",
+        "hungary passport photo size",
+        "romania passport photo requirements",
+        "ukraine passport photo rules",
+        "qatar passport photo size",
+        "kuwait passport photo blue background",
+        "iceland passport photo background requirements",
+    ],
+    "cvdesk": [
+        "how to write a saudi arabia cv",
+        "thailand cv format with photo",
+        "vietnam cv format",
+        "philippines resume format",
+        "south africa cv no photo",
+        "how to write a nigeria cv",
+        "egypt cv format",
+    ],
+}
+for _k, _qs in _GEO_TAILORED20.items():
+    _base = CURATED.setdefault(_k, [])
+    for _q in _qs:
+        if _q not in _base:
+            _base.append(_q)
+
+
 # 從 AEO share-of-voice 報告自動載入每個 app 的真實競品 → 產生 "X alternative" 查詢
 import json as _json  # noqa: E402
 _SOV_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "aeo_sov.json")

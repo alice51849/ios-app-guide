@@ -26,6 +26,18 @@ try:
 except Exception:  # pragma: no cover
     FAQ_GROUPS = {}
 
+try:
+    from answer_deep import deep_facts as _deep_facts
+except Exception:  # pragma: no cover
+    def _deep_facts(q: str, key: str, name: str):  # type: ignore
+        return None
+
+try:
+    from answer_personas import persona_facts as _persona_facts
+except Exception:  # pragma: no cover
+    def _persona_facts(q: str, key: str, name: str):  # type: ignore
+        return None
+
 # ---------------------------------------------------------------------------
 # Passport / visa / ID photo specifications, by country. Sizes in millimetres.
 # (w, h, background, head/face guidance, extra note)
@@ -189,6 +201,35 @@ PASSPORT_SPECS: dict[str, dict[str, str]] = {
                  "note": "Hong Kong photo sizes vary by document; confirm the exact size with Immigration before submitting."},
 }
 
+# 2026-07-08 more-countries2 worker: 8 verified additions (specs cross-checked
+# against official portals; two notable outliers — Kuwait blue bg, Iceland non-white bg).
+PASSPORT_SPECS.update({
+    "poland": {"aka": "Poland", "size": "35×45 mm", "bg": "plain white or very light off-white",
+               "head": "the face 31–36 mm from chin to crown (head ~70–80% of the photo)", "res": "at least 413×531 px (300 DPI); 600 DPI for digital portals",
+               "note": "Standard ICAO format. Glasses have been prohibited since 2014, both ears must be visible, and the photo must be under 6 months old."},
+    "czechia": {"aka": "Czechia (the Czech Republic)", "size": "35×45 mm", "bg": "white, light blue or light grey (all accepted)",
+                "head": "the face at least 13 mm eyes-to-chin, with 2 mm clearance above the head", "res": "at least 413×531 px (300 DPI)",
+                "note": "The accepted background range (white, light blue or light grey) is broader than most EU peers. Glasses banned since 2017. Confirmed 35×45 mm via the MVCR — some tools wrongly list 40×50 mm."},
+    "hungary": {"aka": "Hungary", "size": "35×45 mm", "bg": "plain white or light grey",
+                "head": "the face 32–36 mm from chin to crown, centred", "res": "at least 413×531 px (300 DPI)",
+                "note": "Glasses are permitted only with no glare and eyes fully visible; tinted lenses are not allowed. Head coverings only for religious reasons."},
+    "romania": {"aka": "Romania", "size": "35×45 mm", "bg": "plain white or light grey",
+                "head": "the face 32–36 mm from chin to crown (ideally 34.5 mm)", "res": "at least 826×1062 px (600 DPI) for digital submissions",
+                "note": "Romania mandates 600 DPI for digital submissions — stricter than most peers. Glasses are not permitted."},
+    "ukraine": {"aka": "Ukraine", "size": "35×45 mm", "bg": "plain white or light grey",
+                "head": "the face 32–36 mm from chin to crown, eye-line 35–45% from the top", "res": "at least 413×531 px (300 DPI); 600 DPI recommended for uploads",
+                "note": "No retouching or digital modification is permitted (stricter than many EU states). Glasses are banned."},
+    "qatar": {"aka": "Qatar", "size": "35×45 mm", "bg": "plain white",
+              "head": "the face 32–36 mm from chin to crown, both eyes visible", "res": "at least 413×531 px (300 DPI), colour only",
+              "note": "Confirmed 35×45 mm via MOI Qatar — some third-party tools wrongly list 40×60 mm. Remove glasses, or wear them with no reflections and no tint."},
+    "kuwait": {"aka": "Kuwait", "size": "40×50 mm", "bg": "a SOLID BLUE background (white is not used)",
+               "head": "the face about 75% of the photo height (37–38 mm chin to crown)", "res": "at least 472×591 px (300 DPI), bright clear colour",
+               "note": "Major outlier: Kuwait uses 40×50 mm AND a blue background — many tools wrongly show 40×60 mm on white. A single-colour hijab is allowed with the full face visible. Confirmed via the Kuwait e-Government portal."},
+    "iceland": {"aka": "Iceland", "size": "35×45 mm", "bg": "light grey or light blue (white is NOT accepted)",
+                "head": "the face 32–36 mm from chin to crown, no shadows", "res": "at least 413×531 px (300 DPI), colour only",
+                "note": "Unusual for a Schengen/Nordic state: Iceland explicitly prohibits white backgrounds and requires light grey or light blue. No headwear except religious/medical."},
+})
+
 # Country/keyword aliases → spec key
 _COUNTRY_ALIASES = {
     "us ": "us", "u.s": "us", "united states": "us", "american": "us", "usa": "us", "green card": "us",
@@ -243,6 +284,14 @@ _COUNTRY_ALIASES = {
     "finland": "finland", "finnish": "finland",
     "taiwan": "taiwan", "taiwanese": "taiwan",
     "hong kong": "hongkong", "hongkong": "hongkong",
+    "poland": "poland", "polish": "poland",
+    "czechia": "czechia", "czech republic": "czechia", "czech": "czechia",
+    "hungary": "hungary", "hungarian": "hungary",
+    "romania": "romania", "romanian": "romania",
+    "ukraine": "ukraine", "ukrainian": "ukraine",
+    "qatar": "qatar", "qatari": "qatar",
+    "kuwait": "kuwait", "kuwaiti": "kuwait",
+    "iceland": "iceland", "icelandic": "iceland",
 }
 
 
@@ -558,6 +607,32 @@ RESUME_FORMATS: dict[str, dict[str, str]] = {
                   "rule": "a 'data diri' section with name, date of birth, gender and marital status (sometimes religion for government roles), topped by a formal passport-style photo",
                   "len": "1–2 pages", "photo": "Yes — a formal photo is standard"},
 }
+
+# 2026-07-08 more-countries2 worker: 7 verified additions. Photo norms cross-checked
+# against official guidance (TAFEP/MOM Singapore, POPIA South Africa, recruiter norms).
+RESUME_FORMATS.update({
+    "saudi": {"aka": "Saudi", "doc": "CV (السيرة الذاتية)",
+              "rule": "a passport-style photo (top corner) plus nationality, age, marital status and iqama/visa status for local GCC employers; English (British spelling) or Arabic — but omit the photo and personal data for multinational or ATS-screened applications",
+              "len": "1–2 pages", "photo": "Yes for local employers — discouraged for MNC/ATS roles"},
+    "thailand": {"aka": "Thai", "doc": "resume",
+                 "rule": "a professional passport-style photo at the top, plus date of birth, gender and address; reverse-chronological with a factual, humble tone; Thai or English depending on the employer",
+                 "len": "1–2 pages", "photo": "Yes — a professional headshot is the norm"},
+    "vietnam": {"aka": "Vietnamese", "doc": "CV / Sơ yếu lý lịch",
+                "rule": "a professional photo (top corner) plus date of birth, gender and marital status; reverse-chronological; Vietnamese for domestic firms, English for international/MNC roles",
+                "len": "1–2 pages", "photo": "Yes — expected by nearly all local employers"},
+    "philippines": {"aka": "Philippine", "doc": "resume",
+                    "rule": "traditionally a small passport-style ID photo (upper corner) with personal details, though photos are increasingly omitted at multinationals to reduce bias; English; always check the job ad",
+                    "len": "1–2 pages", "photo": "Optional — traditional but a shifting norm"},
+    "southafrica": {"aka": "South African", "doc": "CV",
+                    "rule": "no photo, ID number, race or marital status (POPIA and Employment Equity Act make these legally sensitive); British English; references 'available on request'",
+                    "len": "2 pages (up to 3 for senior or academic roles)", "photo": "No — legally sensitive under POPIA"},
+    "nigeria": {"aka": "Nigerian", "doc": "CV",
+                "rule": "no photo for standard roles; full referee details listed at the end (not just 'on request'); a cover letter is usually expected; formal, concise and reverse-chronological",
+                "len": "1–2 pages (up to 3 for 10+ years' experience)", "photo": "No — not standard for professional roles"},
+    "egypt": {"aka": "Egyptian", "doc": "CV",
+              "rule": "a passport-style photo plus date of birth, nationality and marital status for private-sector roles (NGOs/UN agencies may discourage it); mention a strong GPA or honours; English or Arabic",
+              "len": "1–2 pages", "photo": "Yes for private sector — discouraged by NGOs/UN"},
+})
 _RESUME_ALIASES = {
     "lebenslauf": "germany", "german": "germany",
     "rirekisho": "japan", "japanese": "japan",
@@ -582,6 +657,13 @@ _RESUME_ALIASES = {
     "uae cv": "uae", "dubai cv": "uae", "emirates cv": "uae",
     "russian": "russia", "russia cv": "russia", "rezume": "russia",
     "indonesian": "indonesia", "indonesia cv": "indonesia",
+    "saudi cv": "saudi", "saudi arabia cv": "saudi", "saudi resume": "saudi", "saudi arabia resume": "saudi",
+    "thai resume": "thailand", "thailand cv": "thailand", "thai cv": "thailand", "thailand resume": "thailand",
+    "vietnamese": "vietnam", "vietnam cv": "vietnam", "vietnam resume": "vietnam",
+    "philippine resume": "philippines", "philippines cv": "philippines", "philippines resume": "philippines", "filipino resume": "philippines",
+    "south africa cv": "southafrica", "south african cv": "southafrica", "south africa resume": "southafrica",
+    "nigerian cv": "nigeria", "nigeria cv": "nigeria", "nigeria resume": "nigeria",
+    "egypt cv": "egypt", "egyptian cv": "egypt", "egypt resume": "egypt",
 }
 
 
@@ -1391,6 +1473,12 @@ def topic_facts(question: str, key: str, app: dict[str, Any]) -> dict[str, Any] 
         doc_key = _detect_id_doc(q)
         if doc_key:
             return _id_doc_facts(q, name, doc_key)
+        # A named country's exact spec wins over the generic rule page — critical
+        # for outliers (e.g. Kuwait's blue background, Iceland's non-white background)
+        # where the generic "white/off-white" answer would be factually wrong.
+        country_key = _detect_passport(q)
+        if country_key:
+            return _passport_facts(q, name, country_key)
         if "passport photo" in q or "visa photo" in q or "passport photos" in q:
             rule = _passport_rule_facts(q, name)
             if rule:
@@ -1412,6 +1500,14 @@ def topic_facts(question: str, key: str, app: dict[str, Any]) -> dict[str, Any] 
     cost = _cost_worth_facts(q, key, name)
     if cost:
         return cost
+
+    dp = _deep_facts(q, key, name)
+    if dp:
+        return dp
+
+    pf = _persona_facts(q, key, name)
+    if pf:
+        return pf
 
     q_info = q.startswith(("what", "how", "does", "is ", "why", "can you", "should"))
     if q_info:

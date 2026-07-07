@@ -2202,6 +2202,142 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "Yes. All birth profiles in {name} are stored on-device only. There is no cloud sync, no account, and no third-party access to any birth data you store in the app."
    }
   ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "faq",
+  "query": "Does learning Bopomofo help my English-speaking child pronounce Mandarin better?",
+  "match": [
+   "bopomofo help english-speaking child",
+   "zhuyin better pronunciation english speaker",
+   "does bopomofo improve mandarin pronunciation",
+   "zhuyin vs pinyin pronunciation kids english"
+  ],
+  "lead": "For a child who reads English, Zhuyin (Bopomofo) can give cleaner Mandarin pronunciation than Pinyin — because its 37 symbols look nothing like the English alphabet, so kids don't fall back on English sounds.",
+  "detail": "A common issue when English-speaking children learn Mandarin with Pinyin is that letters like 'x', 'q', 'zh' or 'c' trigger English sounds, which fossilises into an accent. Zhuyin avoids this entirely: each of the 37 symbols (ㄅㄆㄇㄈ…) maps to one Mandarin sound with no English association, so the child learns the sound fresh. {name} teaches all 37 symbols with native Taiwanese audio, stroke tracing and a tone game, so pronunciation and tones are learned together from the start. It's ad-free, collects no data from children, and is a one-time unlock — no subscription.",
+  "bullets": [
+   "37 Zhuyin symbols carry no English-letter baggage, so kids don't default to English sounds",
+   "Native Taiwanese audio for every symbol models correct pronunciation",
+   "Tone game teaches the four tones alongside the sounds",
+   "Ad-free, no data collected from children, one-time unlock",
+   "Designed for the 4–7 first-learning window"
+  ],
+  "faq": [
+   {
+    "q": "Is Zhuyin really better than Pinyin for pronunciation?",
+    "a": "For English-reading children, many teachers find Zhuyin reduces English-sound interference because its symbols aren't Latin letters. Pinyin is still useful for typing and international standards — some families learn Zhuyin first, then Pinyin later."
+   },
+   {
+    "q": "Will my child still be able to type Chinese?",
+    "a": "Yes — Zhuyin is a standard input method on iPhone and Mac, so children who learn Bopomofo can type Chinese directly. {name} focuses on reading and pronunciation foundations."
+   },
+   {
+    "q": "Does {name} collect any data from my child?",
+    "a": "No — {name} is ad-free with no third-party analytics or tracking; nothing is collected from children."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "App to reinforce weekend Chinese school Bopomofo lessons at home",
+  "match": [
+   "weekend chinese school bopomofo",
+   "reinforce chinese school zhuyin at home",
+   "chinese school homework bopomofo practice",
+   "supplement heritage chinese school zhuyin"
+  ],
+  "lead": "If your child attends a weekend Taiwanese/Chinese school that teaches Zhuyin, daily short practice at home is what makes it stick — and a focused app beats worksheets for a young child.",
+  "detail": "Weekend Chinese schools usually introduce Zhuyin but only meet once a week, so the symbols fade without midweek practice. Rather than printing worksheets, a few minutes a day of playful review keeps all 37 symbols fresh. {name} covers every symbol with stroke tracing, a listen-and-tap recognition mode, a tone mini-game and syllable blending — the same building blocks a Taiwan first-grader uses — so home practice mirrors what the teacher covers. It's ad-free, no data collected, and a one-time unlock, so parents can hand the iPhone over safely.",
+  "bullets": [
+   "Daily 5-minute review keeps weekly class lessons from fading",
+   "All 37 symbols: stroke tracing + listen-and-tap recognition",
+   "Tone mini-game and syllable blending, like a Taiwan first-grade sequence",
+   "Safe to hand to a child: ad-free, no data collected",
+   "One-time unlock, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "Will it match what my child's Chinese school teaches?",
+    "a": "{name} follows the standard 37-symbol Zhuyin taught in Taiwan, so it reinforces the same symbols and sounds most heritage schools use. Check your school's order and use the app to review whatever was covered."
+   },
+   {
+    "q": "How much practice a day?",
+    "a": "A few minutes daily is more effective than one long session — short, playful review is what keeps the symbols in memory for a young child."
+   },
+   {
+    "q": "Is it safe for my child to use alone?",
+    "a": "Yes — it's ad-free with no external links in front of children and collects no data; any parent-only areas sit behind a parental gate."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "Help my child read Taiwanese picture books with Zhuyin annotations",
+  "match": [
+   "read taiwanese picture books zhuyin",
+   "zhuyin annotated books children",
+   "taiwan children books bopomofo reading",
+   "help child read traditional chinese zhuyin"
+  ],
+  "lead": "Most Taiwanese children's books print Zhuyin beside the characters, so once your child knows the 37 symbols they can sound out and read almost any Taiwan kids' book independently.",
+  "detail": "Taiwan children's books are typeset with Zhuyin annotations next to each character precisely so early readers can decode new words on their own. That makes Zhuyin the key that unlocks a huge library of traditional-character books for a heritage child. {name} teaches all 37 symbols plus blending, so a child can move from symbols to sounding out annotated words. It uses native Taiwanese audio and a tone game so the reading sounds right, and it's ad-free with no data collected — a one-time unlock for the whole family.",
+  "bullets": [
+   "Zhuyin unlocks self-reading of Taiwan's Zhuyin-annotated picture books",
+   "Teaches symbols → blending → sounding out words",
+   "Native Taiwanese audio and tone practice for correct reading aloud",
+   "Traditional characters, as used in Taiwan and Hong Kong",
+   "Ad-free, no data collected, one-time unlock"
+  ],
+  "faq": [
+   {
+    "q": "Why do Taiwanese kids' books have Bopomofo next to the characters?",
+    "a": "So early readers can decode unfamiliar characters by their sound — learning Zhuyin lets your child use that system to read independently."
+   },
+   {
+    "q": "Does {name} teach traditional or simplified characters?",
+    "a": "Zhuyin is used with traditional characters as in Taiwan. {name} focuses on the phonetic symbols and sounds that let a child read traditional-character books."
+   },
+   {
+    "q": "Is there a subscription?",
+    "a": "No — {name} is a one-time unlock, ad-free, with no data collected from children."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "faq",
+  "query": "How can grandparents in Taiwan help a child abroad learn Bopomofo over video call?",
+  "match": [
+   "grandparents taiwan help learn bopomofo",
+   "video call zhuyin practice grandparent",
+   "teach bopomofo over facetime taiwan family",
+   "long distance zhuyin practice grandparents"
+  ],
+  "lead": "Grandparents in Taiwan are a wonderful Zhuyin resource — pairing their video calls with a structured app gives a child abroad both real conversation and consistent daily symbol practice.",
+  "detail": "Video calls with grandparents give a heritage child priceless listening and speaking practice, but they're occasional and unstructured for learning the 37 symbols. Pairing calls with a daily app fills the gap: the child builds symbol recognition and tones consistently, then uses calls to practise real words with family. {name} covers all 37 symbols with native audio, stroke tracing, a tone game and blending, so grandparents can ask 'which sound is this?' and the child can answer. It's ad-free, collects no data from children, and is a one-time unlock.",
+  "bullets": [
+   "App gives daily structured practice between family video calls",
+   "Grandparents supply real conversation; app supplies the 37 symbols + tones",
+   "Native Taiwanese audio so the child hears authentic pronunciation",
+   "Stroke tracing, tone game and blending build reading foundations",
+   "Ad-free, no data collected, one-time unlock"
+  ],
+  "faq": [
+   {
+    "q": "How do we combine calls with the app?",
+    "a": "Use the app daily for symbol and tone practice, then let grandparents practise real words and sentences on calls — the child brings what they learned to the conversation."
+   },
+   {
+    "q": "My child is shy on calls — does that matter?",
+    "a": "Building confidence with the symbols and sounds in {name} first often makes children more willing to try speaking with family."
+   },
+   {
+    "q": "Is it private and safe for kids?",
+    "a": "Yes — {name} is ad-free, collects no data from children, and keeps any parent-only functions behind a parental gate."
+   }
+  ]
  }
 ]
 ''')

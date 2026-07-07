@@ -3562,6 +3562,108 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "Zhuyin is used with traditional characters as in Taiwan; {name} focuses on the phonetic symbols and sounds."
    }
   ]
+ },
+ {
+  "app_key": "lumiweather",
+  "kind": "faq",
+  "query": "What is the best weather app for families with young children",
+  "match": [
+   "best weather app for families",
+   "best weather app with kids",
+   "family weather app young children",
+   "weather app for parents with kids"
+  ],
+  "lead": "The best family weather app doesn't just show numbers — it tells you whether it's a good day to take the kids out, what they should wear, and what to do if it rains.",
+  "detail": "General weather apps give temperature and a forecast, but parents need the practical read: is it safe and comfortable for a young child outside, what to dress them in, and a plan-B activity for bad weather. {name} turns the forecast into a family-friendly outlook with a what-to-wear suggestion, an outdoor-suitability read, and activity ideas for the day. It's designed for parents, and it's a focused, family-oriented app rather than a data-heavy meteorology tool. Check the current App Store listing for features and pricing.",
+  "bullets": [
+   "Turns the forecast into a family-friendly daily read",
+   "What-to-wear suggestions for young children",
+   "Outdoor-suitability guidance for the day",
+   "Activity ideas, including rainy-day options",
+   "Designed for parents, not a data-heavy weather tool"
+  ],
+  "faq": [
+   {
+    "q": "How is this different from the built-in weather app?",
+    "a": "{name} translates the forecast into practical parent guidance — what to wear, whether to go out, what to do — rather than just raw numbers."
+   },
+   {
+    "q": "Is it for kids or parents?",
+    "a": "It's a tool for parents to plan the day around young children, with kid-friendly presentation."
+   },
+   {
+    "q": "Does it replace a full weather app?",
+    "a": "It focuses on family planning; use a full meteorology app if you need detailed radar and data."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiweather",
+  "kind": "scenario",
+  "query": "How to plan outdoor activities with kids around the weather",
+  "match": [
+   "plan outdoor activities with kids weather",
+   "plan the day with children around weather",
+   "when to take kids outside weather app",
+   "weather based activity planning children"
+  ],
+  "lead": "Planning a day with young children around the weather means checking not just rain, but temperature comfort, UV, and having a good indoor plan ready when conditions aren't right.",
+  "detail": "Parents plan around more than 'will it rain' — you want to know if it's comfortable and safe for a young child, when the UV is high, and what to do instead when the weather turns. {name} gives an at-a-glance suitability read for outings, what-to-wear guidance, and activity ideas for both good and bad weather, so you can plan the day confidently. It presents the forecast in a family-friendly way rather than as dense meteorological data.",
+  "bullets": [
+   "At-a-glance outdoor-suitability read for the day",
+   "Considers comfort and UV, not just rain",
+   "What-to-wear guidance for the conditions",
+   "Activity ideas for good and bad weather",
+   "Family-friendly presentation of the forecast"
+  ],
+  "faq": [
+   {
+    "q": "Does it help when the weather is bad?",
+    "a": "Yes — {name} suggests indoor activity ideas so you have a plan-B for rainy or unsuitable days."
+   },
+   {
+    "q": "Does it consider UV and comfort?",
+    "a": "Yes — it factors in more than rain, including comfort and UV, for planning outings with young children."
+   },
+   {
+    "q": "Is it a full weather app?",
+    "a": "It's focused on family planning; pair it with a detailed weather app if you need radar and precise data."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiweather",
+  "kind": "faq",
+  "query": "Is there a what-to-wear weather app for dressing kids appropriately",
+  "match": [
+   "what to wear weather app for kids",
+   "app to dress kids for the weather",
+   "how to dress child for weather app",
+   "kids clothing weather suggestion app"
+  ],
+  "lead": "A what-to-wear weather app translates the forecast into a clothing suggestion for a child, so you dress them for real comfort rather than guessing from a temperature number.",
+  "detail": "Knowing it's '15 degrees and breezy' doesn't tell a busy parent what a toddler should actually wear. {name} turns the day's conditions into a practical what-to-wear suggestion for a young child, alongside an outdoor-suitability read and activity ideas. It's built for parents who want a quick, confident answer each morning, presented in a family-friendly way. Check the current App Store listing for exact features.",
+  "bullets": [
+   "Translates conditions into a child's clothing suggestion",
+   "Removes the guesswork from a temperature number",
+   "Pairs with outdoor-suitability and activity ideas",
+   "Quick morning answer for busy parents",
+   "Family-friendly presentation"
+  ],
+  "faq": [
+   {
+    "q": "Does it tell me exactly what to put on my child?",
+    "a": "{name} gives a practical what-to-wear suggestion based on the day's conditions; use your judgement for your child's specific needs."
+   },
+   {
+    "q": "Is it just temperature?",
+    "a": "No — it factors conditions into a clothing suggestion, plus outing suitability and activities."
+   },
+   {
+    "q": "Who is it for?",
+    "a": "Parents of young children who want a quick, practical daily read rather than raw weather data."
+   }
+  ]
  }
 ]
 ''')

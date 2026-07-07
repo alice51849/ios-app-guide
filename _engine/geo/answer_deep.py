@@ -2338,6 +2338,108 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "Yes — {name} is ad-free, collects no data from children, and keeps any parent-only functions behind a parental gate."
    }
   ]
+ },
+ {
+  "app_key": "gmoney",
+  "kind": "scenario",
+  "query": "Best app to track spending on a Johor Bahru weekend trip in SGD and MYR",
+  "match": [
+   "johor bahru weekend trip sgd myr",
+   "jb trip expense sgd ringgit",
+   "track spending johor bahru singapore dollar",
+   "weekend jb budget multi currency app"
+  ],
+  "lead": "For a JB weekend from Singapore you're paying in ringgit but thinking in Singapore dollars — so the app has to log MYR spending and show the SGD equivalent instantly, offline.",
+  "detail": "On a Johor Bahru trip your money goes to food, petrol, services and retail, mostly in MYR, while you budget in SGD. {name} lets you log each expense in the local currency and see it converted to your home currency at a rate you set, organised by trip, so you always know the true SGD cost of the weekend. It works fully offline — handy at the causeway or anywhere signal is patchy — and exports a per-category CSV afterwards. It's pay-once with no account and no bank linking, so nothing connects to your finances.",
+  "bullets": [
+   "Log expenses in MYR, see the SGD equivalent at your set rate",
+   "Organised per trip, so each JB weekend stays separate",
+   "Category breakdown (food, petrol, services, retail)",
+   "Fully offline — works at the causeway and in low-signal spots",
+   "Pay-once, no account, no bank linking; CSV export"
+  ],
+  "faq": [
+   {
+    "q": "Does it update the exchange rate automatically?",
+    "a": "{name} uses a rate you set for the trip, so your totals are predictable and work offline; update the rate when it moves."
+   },
+   {
+    "q": "Do I have to link my bank?",
+    "a": "No — {name} has no bank linking and no account; you enter expenses manually, so nothing touches your bank."
+   },
+   {
+    "q": "Can I see how much I spent in Singapore dollars?",
+    "a": "Yes — every MYR expense shows its SGD equivalent, and you get a per-category and per-trip total."
+   }
+  ]
+ },
+ {
+  "app_key": "gmoney",
+  "kind": "faq",
+  "query": "How to split and track group travel expenses in multiple currencies without linking a bank",
+  "match": [
+   "split group travel expenses multiple currencies",
+   "track group trip spending no bank linking",
+   "multi currency group travel budget app",
+   "share trip costs foreign currency offline"
+  ],
+  "lead": "For a group trip across currencies, the safe approach is a private, offline tracker where you log shared costs and convert everything to one home currency — no bank linking, no account.",
+  "detail": "When friends travel together across currencies, the awkward part is keeping shared costs (petrol, dining, rooms) clear when some pay in SGD and some in MYR or another currency. {name} lets you log each expense in its currency, convert to a single home currency at your set rate, and tag it by category and trip, so the running totals stay honest. Because it's fully offline with no account and no bank linking, you can use it anywhere and nothing connects to anyone's finances. It's pay-once, and you can export a CSV to settle up afterwards.",
+  "bullets": [
+   "Log shared costs in any currency, convert to one home currency",
+   "Tag by category and trip to keep group spending clear",
+   "Fully offline — no signal needed at the destination",
+   "No account, no bank linking — private by design",
+   "Pay-once; CSV export to settle up"
+  ],
+  "faq": [
+   {
+    "q": "Is this a full bill-splitting app?",
+    "a": "{name} is a private multi-currency expense tracker organised by trip; it keeps clear per-category totals you can export as CSV to settle up, without linking anyone's bank."
+   },
+   {
+    "q": "Does it work with no internet abroad?",
+    "a": "Yes — it's fully offline, so logging and conversions work with no signal."
+   },
+   {
+    "q": "Is there a subscription?",
+    "a": "No — {name} is pay-once with no account."
+   }
+  ]
+ },
+ {
+  "app_key": "hourstag",
+  "kind": "scenario",
+  "query": "App to see how many hours of work a purchase costs before buying in Taiwan or Korea",
+  "match": [
+   "hours of work a purchase costs",
+   "how many hours work to buy this",
+   "convert price to work hours before buying",
+   "time cost of purchase app"
+  ],
+  "lead": "The most effective pause before a purchase is seeing its price as hours of your life — a NT$1,500 or ₩60,000 buy becomes 'X hours of work', which interrupts the impulse.",
+  "detail": "Budgets are easy to ignore; time is not. {name} converts any price into hours-of-work using your hourly wage, so a tempting buy is reframed as the hours you'd trade for it — a visceral nudge that creates real hesitation. Set your wage once and check any price in seconds; a goals screen also tracks savings targets in hours rather than money, making them feel earned. It's pay-once with no account and no bank linking, so it stays simple and private wherever you are.",
+  "bullets": [
+   "Converts any price into hours-of-work at your wage",
+   "A visceral pause that plain budgets don't create",
+   "Goals tracked in hours, so savings feel earned",
+   "No account, no bank linking — private and simple",
+   "Pay-once, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "How does seeing hours help me spend less?",
+    "a": "Reframing a price as hours of your life makes the true cost concrete, which interrupts impulse buying more effectively than a dollar figure."
+   },
+   {
+    "q": "Do I need to connect my bank?",
+    "a": "No — you just set your hourly wage; {name} has no bank linking and no account."
+   },
+   {
+    "q": "Is it a subscription?",
+    "a": "No — {name} is pay-once."
+   }
+  ]
  }
 ]
 ''')

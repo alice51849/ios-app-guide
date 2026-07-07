@@ -3256,6 +3256,108 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "Yes — {name} is pay-once with no subscription."
    }
   ]
+ },
+ {
+  "app_key": "snapport",
+  "kind": "faq",
+  "query": "Why do passport photos get rejected and how to avoid it",
+  "match": [
+   "why do passport photos get rejected",
+   "avoid passport photo rejection",
+   "passport photo rejected reasons",
+   "common passport photo mistakes rejection"
+  ],
+  "lead": "Most passport photos are rejected for a handful of fixable reasons: wrong size or crop, shadows or a non-plain background, glasses glare, a non-neutral expression, or low resolution.",
+  "detail": "Rejections almost always come down to size/crop being off, an uneven or coloured background, shadows on the face or wall, glasses reflections, a smile or tilted head, or a blurry low-resolution image. The fix is to shoot against a plain, evenly-lit wall, keep a neutral expression, and crop to the exact size your country requires. {name} guides framing, removes the background to a compliant colour, and crops to the correct dimensions for your country, so a self-taken photo can still meet the spec. Always confirm the current official requirement before submitting.",
+  "bullets": [
+   "Wrong size/crop is the #1 rejection reason — {name} crops to spec",
+   "Plain, evenly-lit background; background auto-replaced to a compliant colour",
+   "Neutral expression, eyes open, no glasses glare",
+   "High resolution — avoid blurry or pixelated photos",
+   "Confirm the current official rule before you submit"
+  ],
+  "faq": [
+   {
+    "q": "What's the most common reason for rejection?",
+    "a": "Wrong size or crop. {name} crops to your country's exact dimensions to avoid this."
+   },
+   {
+    "q": "Can I wear glasses?",
+    "a": "Most countries now discourage or prohibit glasses; if allowed, avoid any glare and keep eyes fully visible."
+   },
+   {
+    "q": "Will my self-taken photo be accepted?",
+    "a": "It can meet the published measurements, but rules change — always check the current official guidance before submitting."
+   }
+  ]
+ },
+ {
+  "app_key": "snapport",
+  "kind": "scenario",
+  "query": "How to take a compliant passport photo at home without a photo booth",
+  "match": [
+   "take passport photo at home without booth",
+   "diy passport photo iphone compliant",
+   "passport photo at home no studio",
+   "make my own passport photo phone"
+  ],
+  "lead": "You can make a compliant passport photo at home with your iPhone — the key is even light, a plain background, a neutral pose, and cropping to your country's exact size.",
+  "detail": "A photo-booth trip isn't necessary if you handle the four things that matter: stand against a plain wall in soft even light, face the camera straight on with a neutral expression, avoid shadows, and crop to the precise size your country needs. {name} guides the framing, replaces the background with a compliant colour, and crops to the exact dimensions, then exports a print- or upload-ready file. It's pay-once, so you can retake as many times as needed without paying again. Confirm the official spec before you submit.",
+  "bullets": [
+   "Even, soft light and a plain wall — no booth needed",
+   "Straight-on framing with a neutral expression",
+   "Background auto-replaced to a compliant colour",
+   "Crop to your country's exact size; export to print or upload",
+   "Pay-once — retake as many times as you need"
+  ],
+  "faq": [
+   {
+    "q": "Do I need special equipment?",
+    "a": "No — a plain wall, even light and your iPhone are enough; {name} handles the background and crop."
+   },
+   {
+    "q": "Can I retake it if it's not right?",
+    "a": "Yes — {name} is pay-once, so you can retake freely until it's correct."
+   },
+   {
+    "q": "How do I know the size is right?",
+    "a": "{name} crops to your country's dimensions; always confirm the current official requirement before submitting."
+   }
+  ]
+ },
+ {
+  "app_key": "snapport",
+  "kind": "faq",
+  "query": "How to print passport photos at home or at a pharmacy from my phone",
+  "match": [
+   "print passport photos at home",
+   "print passport photo pharmacy from phone",
+   "how to print id photo correct size",
+   "passport photo print 4x6 layout"
+  ],
+  "lead": "To print passport photos yourself, lay them out on a standard 4x6 photo sheet at the correct size, then print at home or at a pharmacy kiosk — much cheaper than a studio.",
+  "detail": "Once you have a correctly-sized passport photo, you can print several copies on a standard 4x6 (10x15 cm) sheet at a pharmacy kiosk or home photo printer. The trick is keeping each photo at the exact required dimensions so they're accepted after cutting. {name} crops to your country's size and can arrange the photo for printing, so you get usable copies without a studio. It's pay-once and on-device. Always confirm your country's size and print requirements before submitting.",
+  "bullets": [
+   "Photos kept at your country's exact required size",
+   "Arrange on a 4x6 sheet for a pharmacy kiosk or home printer",
+   "Multiple copies far cheaper than a studio",
+   "On-device; export a print-ready file",
+   "Pay-once — no per-photo fee"
+  ],
+  "faq": [
+   {
+    "q": "Can I print at a pharmacy?",
+    "a": "Yes — export a print-ready 4x6 layout and use a pharmacy photo kiosk or a home printer."
+   },
+   {
+    "q": "Will the size stay correct after printing?",
+    "a": "Keep the photo at your country's exact dimensions; {name} crops to spec so copies are the right size after cutting."
+   },
+   {
+    "q": "Is it cheaper than a studio?",
+    "a": "Usually — you pay once for {name} and print inexpensive copies yourself."
+   }
+  ]
  }
 ]
 ''')

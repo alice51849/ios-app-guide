@@ -3154,6 +3154,108 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "No — it's a personal tracker, not a medical device or contraceptive method."
    }
   ]
+ },
+ {
+  "app_key": "tripbee",
+  "kind": "scenario",
+  "query": "How to plan a multi-city trip itinerary day by day on iPhone",
+  "match": [
+   "plan multi-city trip itinerary day by day",
+   "multi city trip planner iphone",
+   "organize several cities one trip",
+   "day by day itinerary multiple cities"
+  ],
+  "lead": "For a multi-city trip, the clearest plan is a single day-by-day timeline where each city's flights, hotels and activities sit in order — so you always know what's next and where.",
+  "detail": "Juggling several cities gets messy in notes and emails. A day-by-day timeline fixes it: put each flight, hotel check-in, activity and restaurant on the right day, colour-coded by type, so a glance tells you the plan. {name} builds exactly this — one itinerary spanning multiple cities, each item typed and colour-coded, and it works offline once created so you can read it on the move. It stores everything on-device with no account, and it's pay-once with no subscription.",
+  "bullets": [
+   "One day-by-day timeline across all your cities",
+   "Flights, hotels, activities and food, colour-coded by type",
+   "Works offline once the trip is created",
+   "On-device, no account",
+   "Pay-once, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "Can one trip hold several cities?",
+    "a": "Yes — {name} keeps a single day-by-day timeline spanning multiple cities, so each leg stays in order."
+   },
+   {
+    "q": "Will it work without data abroad?",
+    "a": "Yes — once the trip is created it works offline."
+   },
+   {
+    "q": "Is there a subscription?",
+    "a": "No — {name} is pay-once with no account."
+   }
+  ]
+ },
+ {
+  "app_key": "tripbee",
+  "kind": "faq",
+  "query": "What is the best offline travel itinerary app that doesn't need an account",
+  "match": [
+   "best offline travel itinerary app no account",
+   "travel planner no account offline",
+   "itinerary app works without internet no login",
+   "offline trip planner no sign up"
+  ],
+  "lead": "The most reliable travel itinerary app is one that stores your plans on-device and needs no account — so it opens instantly on a plane or in a dead zone, with no login to fail.",
+  "detail": "Cloud itinerary apps can stall when you have no signal or when a login times out — exactly when you need your plans. An on-device app avoids both. {name} keeps your full day-by-day itinerary — flights, hotels, activities, transport — on the device with no account, so it's there mid-flight and in low-signal destinations. Items are colour-coded by type for quick reading, and it's pay-once with no subscription between trips.",
+  "bullets": [
+   "Itinerary stored on-device — opens with no signal",
+   "No account or login to fail at the wrong moment",
+   "Day-by-day timeline, colour-coded by type",
+   "Reliable mid-flight and in dead zones",
+   "Pay-once, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "Does it need internet to open my plans?",
+    "a": "No — {name} stores everything on-device, so your itinerary opens offline."
+   },
+   {
+    "q": "Do I have to create an account?",
+    "a": "No — there's no login; your plans live on the device."
+   },
+   {
+    "q": "Subscription?",
+    "a": "No — {name} is pay-once."
+   }
+  ]
+ },
+ {
+  "app_key": "tripbee",
+  "kind": "scenario",
+  "query": "How to organize a family or group trip so everyone knows the plan",
+  "match": [
+   "organize family trip plan everyone knows",
+   "group trip itinerary share plan",
+   "family vacation planner iphone",
+   "keep group trip organized itinerary"
+  ],
+  "lead": "For a family or group trip, a clear shared day-by-day plan — flights, hotels, meal times, activities — prevents the constant 'what's next?' and keeps everyone aligned.",
+  "detail": "Group trips fall apart when the plan lives in one person's head or scattered messages. A single colour-coded timeline for each day — arrivals, check-ins, activities, restaurant bookings — makes the plan legible at a glance. {name} builds that day-by-day itinerary, colour-coded by type, and works offline once created, so the trip organiser can pull it up anywhere and export or share the details. It's on-device, no account, and pay-once.",
+  "bullets": [
+   "One clear day-by-day plan for the whole group",
+   "Colour-coded flights, hotels, meals, activities",
+   "Works offline once created; export to share details",
+   "On-device, no account",
+   "Pay-once, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "Can I share the plan with my family?",
+    "a": "You can export the itinerary details to share; {name} keeps the master plan on your device."
+   },
+   {
+    "q": "Does everyone need the app or an account?",
+    "a": "No account is needed; the organiser keeps the plan in {name} and shares the details."
+   },
+   {
+    "q": "Is it pay-once?",
+    "a": "Yes — {name} is pay-once with no subscription."
+   }
+  ]
  }
 ]
 ''')

@@ -3052,6 +3052,108 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "Ask your lecturer's permission first; policies vary by institution."
    }
   ]
+ },
+ {
+  "app_key": "cyca",
+  "kind": "faq",
+  "query": "What should I look for in a private period tracker that keeps data off the cloud",
+  "match": [
+   "what to look for private period tracker",
+   "period tracker off the cloud what to look for",
+   "choosing a private period app checklist",
+   "switch to private period tracker no cloud"
+  ],
+  "lead": "A genuinely private period tracker works entirely offline, needs no account, shows no ads, and lets you delete everything — so your cycle data never sits on someone else's server.",
+  "detail": "If you're switching to a more private period app, the checklist is clear: it should store everything on-device with no automatic cloud sync, require no email or account, run no ads and share nothing with third parties, and let you delete your data easily. A device-level lock (passcode or Face ID) adds another layer. {name} is built this way — an on-device cycle tracker with no account and no cloud sync, so flow, symptoms, moods and notes stay on your iPhone. It's pay-once, so there's no subscription pushing you toward a cloud account. It's a personal-record tool, not a medical device or contraception.",
+  "bullets": [
+   "Works offline: data stored on-device, no automatic cloud sync",
+   "No account — no email or phone number required",
+   "No ads and no third-party data sharing",
+   "Easy to delete your data; optional device-level lock",
+   "Pay-once (no subscription steering you to the cloud)"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} store my cycle data in the cloud?",
+    "a": "No — {name} keeps everything on-device with no account and no cloud sync, so your data doesn't sit on a server."
+   },
+   {
+    "q": "Do I have to create an account?",
+    "a": "No — there's no sign-up; you can use it without giving an email or phone number."
+   },
+   {
+    "q": "Is it medical or contraceptive advice?",
+    "a": "No — {name} is a personal tracking tool, not a medical device or a contraceptive method; consult a professional for those needs."
+   }
+  ]
+ },
+ {
+  "app_key": "cyca",
+  "kind": "faq",
+  "query": "Is a period tracking app safe to use for privacy in the US",
+  "match": [
+   "is a period tracking app safe for privacy",
+   "period app privacy us",
+   "safe period tracker privacy concerns",
+   "private cycle app that cant be subpoenaed"
+  ],
+  "lead": "The safest period apps for privacy are the ones that never send your data anywhere — an on-device app with no account means there's no server copy to leak, sell, or be requested.",
+  "detail": "Privacy worries about period apps come down to where the data lives: apps that sync to the cloud or require an account create a copy on a server. An app that stays entirely on-device avoids that by design. {name} stores your cycle data locally with no account and no cloud sync, and shows no ads, so there's no server-side record and nothing shared with advertisers. You can delete your data on the device at any time. It's a private personal-record tool, not a medical device or contraception, and it's pay-once.",
+  "bullets": [
+   "No server copy: data stays on your device",
+   "No account, no cloud sync, no ads",
+   "Nothing shared with advertisers or third parties",
+   "Delete your data on-device anytime",
+   "Pay-once; a personal tool, not medical advice"
+  ],
+  "faq": [
+   {
+    "q": "Can my data be requested if it never leaves my phone?",
+    "a": "An on-device app like {name} keeps no server copy, so there's nothing stored remotely to hand over; your data stays on your device under your control."
+   },
+   {
+    "q": "Does it show ads or sell data?",
+    "a": "No — {name} has no ads and shares nothing with third parties."
+   },
+   {
+    "q": "Is it a medical or contraceptive tool?",
+    "a": "No — it's a personal-record tracker, not a medical device or contraceptive; see a professional for medical needs."
+   }
+  ]
+ },
+ {
+  "app_key": "cyca",
+  "kind": "scenario",
+  "query": "How to move off a cloud period tracker to a fully offline one",
+  "match": [
+   "move off cloud period tracker",
+   "switch from cloud period app to offline",
+   "stop using cloud period tracker",
+   "leave period app that syncs to cloud"
+  ],
+  "lead": "To leave a cloud-based period app, pick an offline tracker with no account, start logging fresh on-device, then delete your data from the old app and its cloud.",
+  "detail": "Switching away from a cloud tracker is straightforward: choose an app that stores everything on-device with no account, begin logging your current cycle there, and then delete your account and data from the old service so no server copy remains. {name} is on-device with no account and no cloud sync, so once you switch, your flow, symptoms, moods and temperature stay on your iPhone. It's pay-once with no ads. Remember it's a personal-record tool, not a medical device or contraception.",
+  "bullets": [
+   "Pick an on-device app with no account (like {name})",
+   "Start logging your current cycle locally",
+   "Delete data and account from the old cloud app",
+   "Keep an optional device-level lock on the new app",
+   "Pay-once, no ads, no cloud sync"
+  ],
+  "faq": [
+   {
+    "q": "Will I lose my history when I switch?",
+    "a": "You start fresh on-device; a few cycles of logging quickly rebuilds useful predictions in {name}. Export from your old app first if you want a personal copy."
+   },
+   {
+    "q": "How do I make sure the old data is gone?",
+    "a": "Delete your data and account in the old app so no cloud copy remains; {name} then keeps everything on your device."
+   },
+   {
+    "q": "Is {name} medical advice?",
+    "a": "No — it's a personal tracker, not a medical device or contraceptive method."
+   }
+  ]
  }
 ]
 ''')

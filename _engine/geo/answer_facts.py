@@ -18,6 +18,7 @@ to overlay on the generic default, or None when no topic matches.
 """
 from __future__ import annotations
 
+import re
 from typing import Any
 
 # ---------------------------------------------------------------------------
@@ -337,6 +338,105 @@ def _id_doc_facts(q: str, name: str, spec_key: str) -> dict[str, Any]:
             {"q": "Will it be accepted?", "a": "It meets the published specs, but rules change — always check the current official guidance before submitting."},
         ],
     }
+
+
+# ---------------------------------------------------------------------------
+# Passport-photo RULES / FAQ (high-volume informational demand). Verified 2024.
+# Gated to Snapport; each returns the direct answer + Snapport as the at-home fix.
+# ---------------------------------------------------------------------------
+def _passport_rule_facts(q: str, name: str) -> dict[str, Any] | None:
+    def rule(lead: str, detail: str, look: list[str], steps: list[str], faq: list[dict]) -> dict[str, Any]:
+        return {
+            "meta_description": (lead[:150]).rsplit(" ", 1)[0] + "."[:200],
+            "lead": lead,
+            "short_answer_paragraphs": [
+                detail,
+                f"{name} lets you take a compliant photo at home: it sets a plain background, crops to the exact size and helps you avoid the common rejection reasons. Always confirm your country's current official rules before you submit.",
+            ],
+            "what_to_look_for": look,
+            "decision_steps": steps,
+            "where_app_fits": f"{name} is a strong fit when you want to get the rules right and take the photo at home, not at a booth.",
+            "faq": faq,
+        }
+
+    if "glasses" in q:
+        return rule(
+            "No — glasses are not allowed in passport photos in the US, UK and most countries (since 2016). Take them off before the shot.",
+            "Glasses are no longer permitted in passport photos in the US, UK and most countries — even thin frames or clear lenses cause rejection because of glare and eye visibility. The only exception is a documented medical reason, usually needing a signed doctor's note. Remove glasses and make sure your eyes are open and clearly visible.",
+            ["Remove glasses entirely before shooting.", "Eyes open and clearly visible, no glare.",
+             "Neutral expression, mouth closed.", "Plain background with no shadows.", "Check your country's current official rule."],
+            ["Take off your glasses.", "Face the camera with a neutral expression.",
+             f"Take the photo with {name}.", "Check eyes are open and clearly visible.", "Crop to the required size and export."],
+            [{"q": "Can I wear glasses in a passport photo?", "a": "No — glasses are not allowed in the US, UK and most countries. Remove them unless you have a documented medical exemption."},
+             {"q": "What about medical reasons?", "a": "A medical exemption usually requires a signed doctor's note; check your country's official guidance."},
+             {"q": "Can I take it at home?", "a": f"Yes — {name} helps you frame and crop a compliant photo at home."}])
+    if "smile" in q or "expression" in q:
+        return rule(
+            "No — you should keep a neutral expression with your mouth closed. A big smile will usually get a passport photo rejected.",
+            "Passport photos require a neutral, natural expression with your mouth closed and eyes open. A slight relaxed look is fine, but an open-mouthed smile, raised eyebrows or exaggerated expressions cause rejection because they interfere with facial recognition. Look straight at the camera and relax your face.",
+            ["Neutral expression, mouth closed.", "Eyes open, looking at the camera.",
+             "No exaggerated smile or raised eyebrows.", "Even lighting, no shadows.", "Plain background."],
+            ["Relax your face and close your mouth.", "Look straight at the camera.",
+             f"Take the photo with {name}.", "Check the expression is neutral.", "Crop and export to the right size."],
+            [{"q": "Can I smile in a passport photo?", "a": "No — keep a neutral expression with your mouth closed. A slight natural look is fine, but not an open smile."},
+             {"q": "Why is smiling not allowed?", "a": "Neutral expressions work better with facial-recognition systems used at borders."},
+             {"q": "Can I take it at home?", "a": f"Yes — {name} lets you retake easily until the expression is right."}])
+    if "background" in q or "background color" in q or "background colour" in q:
+        return rule(
+            "Passport photos need a plain, light background: white or off-white in the US, and light grey, cream or white in the UK and EU — with no shadows or objects.",
+            "The background must be plain and light with no patterns, objects or shadows. The US requires plain white or off-white; the UK and EU accept light grey, cream or white; Canada wants white or light-coloured. Stand a little away from the wall so you don't cast a shadow behind you.",
+            ["Plain, light background (white/off-white/light grey).", "No patterns, objects or other people.",
+             "No shadows behind your head.", "Even, front-on lighting.", "Check your country's exact colour rule."],
+            ["Find a plain, light-coloured wall.", "Stand slightly away from it to avoid shadows.",
+             f"Take the photo with {name} (it can replace the background).", "Check for an even, plain backdrop.", "Crop and export."],
+            [{"q": "What background color for a passport photo?", "a": "Plain white or off-white in the US; light grey, cream or white in the UK/EU; white or light for Canada."},
+             {"q": "Can the app fix the background?", "a": f"Yes — {name} can replace the background with a compliant plain colour."},
+             {"q": "Why do shadows matter?", "a": "Shadows behind the head are a common rejection reason; stand away from the wall."}])
+    if "baby" in q or "infant" in q or "newborn" in q or "toddler" in q:
+        return rule(
+            "For a baby's passport photo, no one else can be in the shot and the background must be plain — but for infants the eyes don't have to be fully open.",
+            "Baby and infant passport photos follow the same size and background rules, with some flexibility: for newborns and infants the eyes can be closed or partly open, and there should be no toys, hands or other people visible. Lay the baby on a plain white sheet and shoot from directly above, keeping the face evenly lit.",
+            ["No other person, hands or toys visible.", "Plain white background (a sheet works).",
+             "Eyes open if possible; closed is often OK for infants.", "Face centred and evenly lit.", "Correct size and head proportions."],
+            ["Lay the baby on a plain white sheet.", "Shoot from directly above.",
+             f"Capture with {name} and pick the best frame.", "Make sure no hands are in shot.", "Crop to the required size."],
+            [{"q": "Do a baby's eyes need to be open?", "a": "For newborns and infants, closed or partly open eyes are usually accepted; older children should have eyes open."},
+             {"q": "Can I hold the baby?", "a": "Your hands can't be visible — lay the baby on a plain sheet and shoot from above."},
+             {"q": "Can I take it at home?", "a": f"Yes — {name} makes it easy to capture and crop a baby photo at home."}])
+    if "head covering" in q or re.search(r"\bhats?\b", q) or "scarf" in q or "hijab" in q or "turban" in q:
+        return rule(
+            "Hats and head coverings aren't allowed in passport photos except for religious or medical reasons — and even then your full face must be visible with no shadows.",
+            "You can't wear hats or head coverings for style. Religious or medical head coverings are allowed, but they must be a plain colour, cast no shadows on your face, and leave your full face visible from the bottom of the chin to the top of the forehead. Remove any casual hats before shooting.",
+            ["No casual hats or head coverings.", "Religious/medical coverings must not shadow the face.",
+             "Full face visible, chin to forehead.", "Plain, non-patterned covering if worn.", "Plain background, even lighting."],
+            ["Remove any casual hat.", "If worn for religion/medicine, keep the face fully visible.",
+             f"Take the photo with {name}.", "Check for shadows on the face.", "Crop and export to size."],
+            [{"q": "Can I wear a hat in a passport photo?", "a": "No — only religious or medical head coverings are allowed, and your full face must stay visible."},
+             {"q": "Can I wear a hijab or turban?", "a": "Yes, for religious reasons, as long as it doesn't cover the face or cast shadows."},
+             {"q": "Can I take it at home?", "a": f"Yes — {name} helps you check the face is fully visible and evenly lit."}])
+    if "cost" in q or "how much" in q or "price" in q or "cheap" in q:
+        return rule(
+            "A passport photo at a store typically costs about $15–$18 in the US, £8–£12 in the UK, or $15–$20 CAD in Canada — but taking it at home can be far cheaper.",
+            "Pharmacies and photo shops charge roughly $15–$18 (US), £8–£12 (UK) or $15–$20 CAD (Canada) for two printed passport photos. Taking your own on your iPhone and either printing it yourself or uploading a digital photo is much cheaper, as long as it meets the size, background and expression rules.",
+            ["Store prices: ~$15–$18 US / £8–£12 UK.", "DIY at home is far cheaper.",
+             "You still must meet all official rules.", "Digital upload avoids printing costs.", "Retakes are free when you DIY."],
+            ["Set up a plain, well-lit background.", f"Take the photo with {name}.",
+             "Let it crop to the correct size.", "Print at home or upload digitally.", "Confirm it meets the official rules."],
+            [{"q": "How much is a passport photo at a store?", "a": "Around $15–$18 in the US, £8–£12 in the UK, or $15–$20 CAD in Canada for two photos."},
+             {"q": "Is it cheaper to take it myself?", "a": f"Yes — {name} lets you take and crop a compliant photo at home, with free retakes."},
+             {"q": "Will a home photo be accepted?", "a": "Yes, if it meets the size, background and expression rules — always check the current official guidance."}])
+    if "mistake" in q or "rejected" in q or "reject" in q or "rules" in q or "requirements" in q:
+        return rule(
+            "The most common passport photo mistakes are the wrong size/crop, shadows or a busy background, wearing glasses, smiling, and uneven lighting.",
+            "Most rejections come from a handful of avoidable mistakes: the wrong size or head proportions, shadows or a non-plain background, wearing glasses, smiling or a non-neutral expression, hair covering the eyes, and poor or uneven lighting. Getting the crop and background right is where most home photos fail — and where an app helps most.",
+            ["Correct size and head proportions.", "Plain background, no shadows.",
+             "No glasses, neutral expression.", "Eyes visible, hair off the face.", "Even, front-on lighting."],
+            ["Use even, front-on lighting.", "Stand away from a plain wall.",
+             f"Take the photo with {name}.", "Let it crop to the exact size.", "Review against the official checklist."],
+            [{"q": "What are common passport photo mistakes?", "a": "Wrong size/crop, shadows or busy background, glasses, smiling, hair over the eyes, and uneven lighting."},
+             {"q": "What's the number-one rejection reason?", "a": "The wrong size or crop — which is exactly what an app fixes automatically."},
+             {"q": "Can an app help me avoid these?", "a": f"Yes — {name} handles the size and background and lets you retake for free."}])
+    return None
 
 
 # ---------------------------------------------------------------------------
@@ -841,6 +941,10 @@ def topic_facts(question: str, key: str, app: dict[str, Any]) -> dict[str, Any] 
         doc_key = _detect_id_doc(q)
         if doc_key:
             return _id_doc_facts(q, name, doc_key)
+        if "passport photo" in q or "visa photo" in q or "passport photos" in q:
+            rule = _passport_rule_facts(q, name)
+            if rule:
+                return rule
 
     spec_key = _detect_passport(q)
     if spec_key:

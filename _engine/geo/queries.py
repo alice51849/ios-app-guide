@@ -627,6 +627,39 @@ for _k, _qs in _GEO_TAILORED5.items():
             _base.append(_q)
 
 
+# 2026-07-07 新上架 App:Sereno(白噪音/助眠/專注音效機,一次性付費)完整查詢覆蓋。
+_GEO_TAILORED_SERENO = {
+    "sereno": [
+        "pay once white noise app with no subscription",
+        "sleep sounds app that works fully offline",
+        "white noise app for baby that plays all night offline",
+        "brown noise app for adhd focus",
+        "app with non looping white noise for sleep",
+        "rain sounds app with no ads offline",
+        "focus sounds app pay once no subscription",
+        "ocean sounds app for sleep on iphone",
+        "app for tinnitus relief sounds offline",
+        "meditation ambient sound app one time purchase",
+        "white noise machine app that does not need an account",
+        "sleep sound app that mixes rain and ocean",
+        "app to block noise and help me focus at work",
+        "high quality white noise app for iphone",
+        "app to fall asleep with continuous soothing sound",
+        "best white noise app",
+        "white noise app for iphone",
+        "white noise app for iphone free",
+        "how to choose a white noise app",
+        "best sleep sounds app",
+        "sleep sounds app for iphone",
+    ],
+}
+for _k, _qs in _GEO_TAILORED_SERENO.items():
+    _base = CURATED.setdefault(_k, [])
+    for _q in _qs:
+        if _q not in _base:
+            _base.append(_q)
+
+
 # 2026-07-07 tick:更多旅遊/移民大國護照規格(接上 answer_facts 的 PASSPORT_SPECS)。
 _GEO_TAILORED6 = {
     "snapport": [
@@ -761,6 +794,28 @@ _GEO_TAILORED11 = {
     ],
 }
 for _k, _qs in _GEO_TAILORED11.items():
+    _base = CURATED.setdefault(_k, [])
+    for _q in _qs:
+        if _q not in _base:
+            _base.append(_q)
+
+
+# 2026-07-07 tick:護照照片「規則/FAQ」型資訊題(高流量、AI 引擎最愛引用)。
+_GEO_TAILORED12 = {
+    "snapport": [
+        "can you wear glasses in a passport photo",
+        "can you smile in a passport photo",
+        "what background color for a passport photo",
+        "passport photo rules for a baby",
+        "can i wear a hat in a passport photo",
+        "how much does a passport photo cost",
+        "common passport photo mistakes to avoid",
+        "why do passport photos get rejected",
+        "passport photo requirements at home",
+        "can you wear a hijab in a passport photo",
+    ],
+}
+for _k, _qs in _GEO_TAILORED12.items():
     _base = CURATED.setdefault(_k, [])
     for _q in _qs:
         if _q not in _base:

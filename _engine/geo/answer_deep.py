@@ -2848,6 +2848,210 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "No — processing is on-device."
    }
   ]
+ },
+ {
+  "app_key": "zafe",
+  "kind": "scenario",
+  "query": "How to hide private photos on iPhone behind Face ID so they don't show in the camera roll",
+  "match": [
+   "hide private photos behind face id",
+   "hide photos from camera roll iphone",
+   "private photo vault face id",
+   "keep photos hidden iphone lock"
+  ],
+  "lead": "To truly hide photos, move them into a Face ID-locked vault that keeps them out of the main camera roll — not just the built-in Hidden album, which anyone with your unlocked phone can open.",
+  "detail": "iOS's Hidden album is only lightly protected — someone holding your unlocked phone can still open it. A dedicated vault locks photos behind Face ID and keeps them out of the camera roll entirely. {name} imports photos into an on-device, Face ID-locked vault, and includes extras like a decoy passcode and break-in alerts, so sensitive images stay genuinely private. Everything stays on your device — nothing is uploaded — and it's pay-once with no subscription.",
+  "bullets": [
+   "Face ID-locked vault, separate from the camera roll",
+   "Imported photos removed from the main library",
+   "Decoy passcode and break-in alert options",
+   "Fully on-device — nothing uploaded",
+   "Pay-once, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "Isn't the built-in Hidden album enough?",
+    "a": "Not really — anyone with your unlocked phone can open the Hidden album. {name} locks photos behind Face ID in a separate vault."
+   },
+   {
+    "q": "Are my photos uploaded to a cloud?",
+    "a": "No — {name} keeps everything on-device; nothing is uploaded."
+   },
+   {
+    "q": "What's a decoy passcode?",
+    "a": "It opens a separate, harmless vault, so you can hand over a passcode without revealing your real private photos."
+   }
+  ]
+ },
+ {
+  "app_key": "zafe",
+  "kind": "faq",
+  "query": "What is the most private photo vault app that keeps everything on device",
+  "match": [
+   "most private photo vault app",
+   "photo vault keeps everything on device",
+   "private photo locker no cloud",
+   "secure photo vault offline iphone"
+  ],
+  "lead": "The most private vault is one that stores and locks photos entirely on-device, with no account and no cloud — so there's no server that can be breached or subpoenaed.",
+  "detail": "Many 'vault' apps quietly sync to a cloud, which defeats the purpose. A truly private vault keeps everything local and behind Face ID. {name} stores your photos in an on-device, Face ID-locked vault with no account, plus a decoy passcode and break-in alerts for extra safety. Because nothing leaves the phone, there's no cloud copy to leak. It's pay-once — no subscription and no sign-up.",
+  "bullets": [
+   "Everything stored on-device — no cloud, no account",
+   "Face ID lock with decoy passcode option",
+   "Break-in alerts for extra safety",
+   "No server copy that can leak",
+   "Pay-once, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "Does it back up to a cloud?",
+    "a": "No — {name} keeps everything on-device, so there's no cloud copy; back up your device securely if you want redundancy."
+   },
+   {
+    "q": "Do I need an account?",
+    "a": "No — there's no sign-up; the vault is local and locked behind Face ID."
+   },
+   {
+    "q": "Is it a subscription?",
+    "a": "No — {name} is pay-once."
+   }
+  ]
+ },
+ {
+  "app_key": "zafe",
+  "kind": "scenario",
+  "query": "How to keep sensitive documents and ID photos private on my phone",
+  "match": [
+   "keep sensitive documents private phone",
+   "hide id photos passport scans iphone",
+   "private storage for documents face id",
+   "lock sensitive photos documents iphone"
+  ],
+  "lead": "Passport scans, ID photos and financial screenshots shouldn't sit in your normal camera roll — a Face ID-locked, on-device vault keeps them private.",
+  "detail": "Sensitive images — ID copies, passport scans, financial screenshots — are risky in the main library where they show in previews and backups. {name} moves them into an on-device vault locked behind Face ID, out of the camera roll, with a decoy passcode and break-in alerts. Nothing is uploaded, so there's no cloud exposure. It's pay-once with no account, so your most sensitive images stay on your device and under your control.",
+  "bullets": [
+   "Face ID vault for ID scans, documents, screenshots",
+   "Removed from the camera roll and previews",
+   "Decoy passcode + break-in alerts",
+   "On-device — no cloud exposure",
+   "Pay-once, no account"
+  ],
+  "faq": [
+   {
+    "q": "Why not just leave them in Photos?",
+    "a": "Photos in the main library appear in previews, searches and backups. {name} isolates sensitive images in a Face ID-locked vault."
+   },
+   {
+    "q": "Is anything uploaded?",
+    "a": "No — {name} is fully on-device."
+   },
+   {
+    "q": "Subscription?",
+    "a": "No — pay-once, no account."
+   }
+  ]
+ },
+ {
+  "app_key": "sononote",
+  "kind": "scenario",
+  "query": "How to turn a recorded conversation into notes with a summary and action items",
+  "match": [
+   "turn recorded conversation into notes",
+   "recording to summary and action items",
+   "transcribe and summarize a meeting on iphone",
+   "get action items from a recording"
+  ],
+  "lead": "To make a recording useful you want more than a transcript — a summary and a clear list of action items you can act on, ideally processed privately on your device.",
+  "detail": "A raw transcript is hard to use; the value is in the summary and the extracted to-dos. {name} records or imports audio, transcribes it, then generates a concise summary, action items and even a draft follow-up email — all on-device, so private conversations don't go to a cloud account. Export the notes to wherever you work. It's pay-once with no subscription and no account, so a long meeting becomes something usable in a minute.",
+  "bullets": [
+   "Record or import, then transcribe on-device",
+   "Concise summary + extracted action items",
+   "Draft follow-up email generated for you",
+   "On-device — no cloud account; private",
+   "Pay-once, export to your notes app"
+  ],
+  "faq": [
+   {
+    "q": "Does my audio go to a cloud?",
+    "a": "No — {name} processes on-device, so recordings and transcripts stay on your phone."
+   },
+   {
+    "q": "Do I get action items, not just a transcript?",
+    "a": "Yes — {name} produces a summary and action items, and can draft a follow-up email."
+   },
+   {
+    "q": "Is it a subscription?",
+    "a": "No — {name} is pay-once."
+   }
+  ]
+ },
+ {
+  "app_key": "sononote",
+  "kind": "faq",
+  "query": "Best offline voice to text app that works without an internet connection",
+  "match": [
+   "best offline voice to text app",
+   "transcribe without internet iphone",
+   "voice to text no connection",
+   "on-device transcription app private"
+  ],
+  "lead": "An offline voice-to-text app transcribes on your device, so it works with no signal and keeps your recordings private.",
+  "detail": "Cloud transcription needs a connection and sends your audio to a server. An on-device app avoids both. {name} transcribes on-device, so it works offline — on a plane, in a basement meeting room — and your audio never leaves the phone. It also summarises and pulls out action items, and exports to your notes. It's pay-once with no account, so there's no subscription and no sign-up.",
+  "bullets": [
+   "On-device transcription — works with no signal",
+   "Audio stays private, never uploaded",
+   "Summary + action items, not just a transcript",
+   "Export to your notes or tasks app",
+   "Pay-once, no account"
+  ],
+  "faq": [
+   {
+    "q": "Does it work with no internet?",
+    "a": "Yes — {name} transcribes on-device, so it works offline."
+   },
+   {
+    "q": "Is my audio uploaded?",
+    "a": "No — everything is processed on the phone."
+   },
+   {
+    "q": "Subscription?",
+    "a": "No — {name} is pay-once."
+   }
+  ]
+ },
+ {
+  "app_key": "sononote",
+  "kind": "scenario",
+  "query": "How to record and summarize a university lecture into study notes",
+  "match": [
+   "record and summarize university lecture",
+   "lecture to study notes app",
+   "summarize class recording iphone",
+   "turn lecture into notes automatically"
+  ],
+  "lead": "For lectures, the win is turning an hour of audio into a transcript plus key points and a short summary — so revision takes minutes, not a re-listen.",
+  "detail": "Recording a lecture is only useful if you don't have to replay the whole thing. {name} transcribes the class on-device, then generates key points and a concise summary you can study from, and lets you export the notes. Because it's on-device it keeps recordings private and works without a connection. It's pay-once with no per-recording paywall, so it fits a student budget. Always get your lecturer's permission before recording.",
+  "bullets": [
+   "Transcribes the lecture on-device",
+   "Key points + concise summary to study from",
+   "Export notes to your study app",
+   "Private and offline; no per-recording fee",
+   "Pay-once, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "Do I have to re-listen to the whole lecture?",
+    "a": "No — you study from {name}'s auto-generated key points and summary instead."
+   },
+   {
+    "q": "Are my recordings private?",
+    "a": "Yes — {name} processes on-device."
+   },
+   {
+    "q": "Should I record lectures?",
+    "a": "Ask your lecturer's permission first; policies vary by institution."
+   }
+  ]
  }
 ]
 ''')

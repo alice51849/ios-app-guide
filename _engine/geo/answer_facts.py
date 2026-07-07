@@ -21,6 +21,11 @@ from __future__ import annotations
 import re
 from typing import Any
 
+try:
+    from answer_faqs import FAQ_GROUPS
+except Exception:  # pragma: no cover
+    FAQ_GROUPS = {}
+
 # ---------------------------------------------------------------------------
 # Passport / visa / ID photo specifications, by country. Sizes in millimetres.
 # (w, h, background, head/face guidance, extra note)
@@ -799,7 +804,7 @@ def _scenario_facts(q: str, key: str, name: str, bullets: list[str]) -> dict[str
             [{"q": "Can I search the scanned text?", "a": "Yes — OCR makes the text searchable and selectable."},
              {"q": "Will curved pages look flat?", "a": "Page-flattening reduces the curve near the spine for cleaner scans."},
              {"q": "Can I scan a whole chapter?", "a": "Yes — batch many pages into a single PDF."}])
-    if key == "picclear" and "live photo" not in q and ("duplicate" in q or "storage" in q or "large video" in q or "free up" in q) and ("photo" in q or "storage" in q or "video" in q):
+    if key == "picclear" and "live photo" not in q and not q.startswith(("why", "what", "does")) and ("duplicate" in q or "storage" in q or "large video" in q or "free up" in q) and ("photo" in q or "storage" in q or "video" in q):
         return make(
             "To free up space fast, target the biggest wins first: exact-duplicate photos, near-identical burst shots, blurry rejects, and large videos. Reviewing before deletion — and keeping the best of each group — avoids losing anything you wanted.",
             ["Finds exact duplicates and near-identical bursts.", "Sorts large videos by size so you see the space hogs.",
@@ -1042,7 +1047,7 @@ def _scenario_facts(q: str, key: str, name: str, bullets: list[str]) -> dict[str
             [{"q": "Does it work offline?", "a": f"Yes — {name} keeps your itinerary available offline while you travel."},
              {"q": "Do I need an account?", "a": "No account is required to plan a trip."},
              {"q": "Subscription?", "a": "It's a one-time purchase, not a subscription."}])
-    if key == "lumimission" and ("routine" in q or "morning" in q or "bedtime" in q or "chore" in q or "reward chart" in q or "brush teeth" in q or "habit" in q):
+    if key in {"lumimission", "lumimissionpro"} and ("routine" in q or "morning" in q or "bedtime" in q or "chore" in q or "reward chart" in q or "brush teeth" in q or "habit" in q):
         return make(
             "Kids follow routines better when they're visual and rewarding: a simple picture checklist for morning or bedtime, with a reward for finishing, turns nagging into a game. No ads and a kid-safe design keep it stress-free.",
             ["Visual picture checklists for routines.", "Morning, bedtime and chore routines.",
@@ -1053,6 +1058,39 @@ def _scenario_facts(q: str, key: str, name: str, bullets: list[str]) -> dict[str
             [{"q": "Does it help with morning routines?", "a": f"Yes — {name} turns routines into a visual checklist kids can follow."},
              {"q": "Is it kid-safe?", "a": "Yes — it's designed for children with no ads."},
              {"q": "Subscription?", "a": "It's a one-time purchase."}])
+    if key in {"tripplanet"} and ("kid" in q or "child" in q or "toddler" in q or "family" in q or "car" in q or "road trip" in q or "flight" in q or "plane" in q or "travel" in q):
+        return make(
+            "To keep young children happy while travelling, look for offline games and activities that work with no signal on a plane or in the car, with no ads and no in-app purchases popping up — so a long journey becomes fun instead of stressful.",
+            ["Works fully offline (plane/car, no signal).", "Age-appropriate travel games and activities.",
+             "No ads and no surprise in-app purchases.", "A packing/discovery element kids enjoy.", "A pay-once, kid-safe design."],
+            ["Download it before you leave.", f"Let your child explore {name}'s travel games offline.",
+             "Use the packing and discovery activities.", "Keep sessions short and playful.", "No signal needed on the way."],
+            f"{name} fits when you want offline, kid-safe travel games to keep children happy on a long trip.",
+            [{"q": "Does it work offline?", "a": f"Yes — {name} works with no signal, so it's ideal for planes and car rides."},
+             {"q": "Is it kid-safe?", "a": "Yes — no ads and no surprise purchases; it's designed for children."},
+             {"q": "Subscription?", "a": "It's a one-time purchase."}])
+    if key == "sereno" and ("white noise" in q or "brown noise" in q or "pink noise" in q or "sleep sound" in q or "sleep sounds" in q or "rain sound" in q or "rain sounds" in q or "focus sound" in q or "sound machine" in q or "fall asleep" in q or "ocean sound" in q or "noise to" in q or "sounds to sleep" in q or "sounds to focus" in q or "sound to sleep" in q):
+        return make(
+            "A good sound machine gives you clean, loopable white, pink and brown noise plus nature sounds (rain, ocean), a sleep timer, and full offline playback — so you can fall asleep or focus without ads, accounts or a subscription.",
+            ["White, pink and brown noise plus nature sounds.", "Seamless loops with no gaps.",
+             "A sleep timer and background playback.", "Works fully offline, no account.", "A pay-once model with no subscription or ads."],
+            ["Pick a sound (white/brown noise, rain, ocean).", f"Set a sleep timer in {name}.",
+             "Adjust the volume to a comfortable level.", "Let it play in the background.", "Use it nightly or while focusing."],
+            f"{name} fits when you want high-quality sleep and focus sounds that work offline, with no ads or subscription.",
+            [{"q": "Does it work offline?", "a": f"Yes — {name} plays fully offline with no account needed."},
+             {"q": "What sounds does it have?", "a": "White, pink and brown noise plus nature sounds like rain and ocean."},
+             {"q": "Subscription?", "a": "It's a one-time purchase, no subscription or ads."}])
+    if key == "aim990" and ("toeic" in q or "listening" in q or "reading" in q or "english test" in q or "study plan" in q or "score" in q):
+        return make(
+            "To improve a TOEIC Listening & Reading score, consistent daily practice works best: short timed drills, targeted work on your weak sections, and tracking your progress over a set plan. TOEIC is a registered trademark of ETS; this is an independent study aid, not affiliated with or endorsed by ETS, and no app can guarantee a score.",
+            ["Daily Listening & Reading practice.", "Targeted drills for your weak spots.",
+             "Timed practice to build exam pace.", "Progress tracking over a study plan.", "Realistic, honest expectations — no guaranteed scores."],
+            ["Take a short diagnostic to find weak areas.", f"Follow a daily plan in {name}.",
+             "Drill your weakest Listening/Reading parts.", "Practice under timed conditions.", "Track your progress over the plan."],
+            f"{name} fits when you want a structured daily TOEIC L&R study routine with weak-spot drills and score tracking.",
+            [{"q": "How do I study for the TOEIC test?", "a": "Practice daily, focus on your weakest sections, and do timed drills to build pace; track progress over a plan."},
+             {"q": "Can an app guarantee a TOEIC score?", "a": "No — no app can guarantee a score. TOEIC is a registered trademark of ETS; this is an independent study aid, not endorsed by ETS."},
+             {"q": "How long does TOEIC prep take?", "a": "It varies by starting level and study time; steady daily practice over several weeks is a common approach."}])
     return None
 
 
@@ -1073,6 +1111,52 @@ _CAT_NOUN = {
     "lumiweather": "kids weather app",
 }
 _ALT_STOP = {"app", "apps", "the", "an", "a", "ios", "iphone", "for", "to", "best"}
+
+
+_FAQ_APP_GROUP = {
+    "scanto": "scanner",
+    "picclear": "storage", "unblurry": "storage",
+    "lumiletters": "kids", "lumiletterspro": "kids", "lumimath": "kids", "lumimathpro": "kids",
+    "lumibopomofo": "kids", "lumibopomofopro": "kids", "lumimission": "kids", "lumimissionpro": "kids",
+    "lumiweather": "kids", "tripplanet": "kids",
+}
+
+
+def _data_faq_facts(q: str, key: str, name: str) -> dict[str, Any] | None:
+    grp = _FAQ_APP_GROUP.get(key)
+    if not grp or grp not in FAQ_GROUPS:
+        return None
+    best, best_score = None, 0
+    for b in FAQ_GROUPS[grp]:
+        score = sum(1 for t in b.get("triggers", []) if t and t in q)
+        if score > best_score:
+            best_score, best = score, b
+    if not best or best_score < 2:
+        return None
+    if grp == "kids":
+        p2 = (f"{name} is a pay-once, ad-free, kid-safe iOS app built around this. It's designed for young "
+              f"children with no ads or third-party tracking — check the current App Store listing for details.")
+        where = f"{name} is a strong fit when you want a safe, ad-free way to support this at home."
+    elif grp == "scanner":
+        p2 = (f"{name} does this on your iPhone: it scans to a clean PDF, runs on-device OCR, and can lock files "
+              f"with Face ID — a pay-once app with no subscription. Check the App Store listing for current features.")
+        where = f"{name} is a strong fit when you want private, on-device scanning without a subscription."
+    else:  # storage
+        p2 = (f"{name} helps with this on your iPhone and works on device for privacy — a pay-once app with no "
+              f"subscription. Test it on a real example and check the current App Store listing for details.")
+        where = f"{name} is a strong fit when you want a focused, private, pay-once tool for this."
+    steps = []
+    for b in best.get("bullets", [])[:5]:
+        steps.append(b if b.endswith(".") else b + ".")
+    return {
+        "meta_description": (best["lead"][:150]).rsplit(" ", 1)[0] + ".",
+        "lead": best["lead"],
+        "short_answer_paragraphs": [best["detail"], p2],
+        "what_to_look_for": best.get("bullets", []) or ["Check the current App Store listing for details."],
+        "decision_steps": steps or ["Try it on a realistic example.", "Check the App Store listing."],
+        "where_app_fits": where,
+        "faq": best.get("faq", []),
+    }
 
 
 def _detect_alternative(q: str) -> str | None:
@@ -1183,4 +1267,7 @@ def topic_facts(question: str, key: str, app: dict[str, Any]) -> dict[str, Any] 
     sc = _scenario_facts(q, key, name, bullets)
     if sc:
         return sc
+    dfaq = _data_faq_facts(q, key, name)
+    if dfaq:
+        return dfaq
     return _alternative_facts(q, key, name, app)

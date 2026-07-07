@@ -912,6 +912,81 @@ for _k, _qs in _GEO_TAILORED15.items():
             _base.append(_q)
 
 
+# 2026-07-07 橫向鋪滿:新上架 app(Sereno)+ 0 覆蓋(Aim990)+ 3 組 FAQ(掃描/儲存/兒童)。
+_GEO_TAILORED16 = {
+    # —— 新上架:Sereno 白噪音/助眠 ——
+    "sereno": [
+        "best white noise app to sleep offline",
+        "app to fall asleep faster with sounds",
+        "brown noise app for focus and concentration",
+        "rain sounds app that works offline",
+        "sound machine app with a sleep timer no subscription",
+        "pink noise app for sleep on iphone",
+        "ocean sounds app to relax pay once",
+        "white noise app with no ads or subscription",
+    ],
+    # —— 0 覆蓋:Aim990 TOEIC(誠實、含 ETS 免責)——
+    "aim990": [
+        "how to study for the toeic test",
+        "how to improve my toeic listening and reading score",
+        "how long does it take to prepare for toeic",
+        "toeic study plan app for daily practice",
+        "how to fix my toeic weak spots",
+    ],
+    # —— 掃描/PDF FAQ(ScanTo)——
+    "scanto": [
+        "how to scan a document with an iphone",
+        "what is ocr for scanned pdfs",
+        "how to combine multiple images into one pdf on iphone",
+        "how to reduce pdf file size on iphone",
+        "how to convert a jpg to pdf on iphone",
+        "how to sign a pdf on iphone",
+        "how to scan a document without shadows",
+        "how to password protect a pdf on iphone",
+        "how to scan multiple pages into one pdf",
+        "is it safe to scan sensitive documents with an app",
+    ],
+    # —— 儲存/照片 FAQ(PicClear / Unblurry)——
+    "picclear": [
+        "why is my iphone storage always full",
+        "how to free up iphone storage fast",
+        "what is other system data on iphone storage",
+        "does deleting photos free up space immediately",
+    ],
+    "unblurry": [
+        "can you actually unblur a photo",
+        "how to upscale a photo to higher resolution",
+        "what is heic and should you convert to jpg",
+    ],
+    # —— 兒童學習 FAQ(Lumi 系列)——
+    "lumiletters": [
+        "what age do kids start reading",
+        "what is phonics and why is it used to teach reading",
+        "what age should a child start phonics",
+        "how to teach a toddler the alphabet at home",
+    ],
+    "lumimath": [
+        "when do children learn to count and recognize numbers",
+        "how to teach early math to a preschooler at home",
+    ],
+    "lumibopomofo": [
+        "what is zhuyin bopomofo and how do kids learn it",
+    ],
+    "lumiweather": [
+        "how much screen time is appropriate for young children",
+    ],
+    "lumimission": [
+        "how to get kids to follow a morning or bedtime routine",
+        "what makes a kids learning app safe and good",
+    ],
+}
+for _k, _qs in _GEO_TAILORED16.items():
+    _base = CURATED.setdefault(_k, [])
+    for _q in _qs:
+        if _q not in _base:
+            _base.append(_q)
+
+
 # 從 AEO share-of-voice 報告自動載入每個 app 的真實競品 → 產生 "X alternative" 查詢
 import json as _json  # noqa: E402
 _SOV_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "aeo_sov.json")

@@ -836,7 +836,7 @@ def _scenario_facts(q: str, key: str, name: str, bullets: list[str]) -> dict[str
             [{"q": "Is there a watermark?", "a": f"{name} exports at full resolution without a watermark."},
              {"q": "Does it look like real film?", "a": "It emulates real film stocks with grain, halation and light leaks, not a generic filter."},
              {"q": "Subscription or pay once?", "a": "It uses a one-time purchase rather than a subscription."}])
-    if key == "zafe" and ("hide" in q or "vault" in q or "private album" in q or "secret" in q or "lock photos" in q or "hide photos" in q or "hide pictures" in q):
+    if key == "zafe" and ("hide" in q or "vault" in q or "private album" in q or "secret" in q or "lock photos" in q or "hide photos" in q or "hide pictures" in q or "camera roll" in q or "private photos" in q):
         return make(
             "To keep photos private, a vault should lock them behind Face ID, move them out of the main camera roll, and keep everything on device with no cloud upload — so nobody scrolling your phone stumbles onto them.",
             ["Face ID / passcode lock on the album.", "Moves photos out of the visible camera roll.",
@@ -980,6 +980,39 @@ def _scenario_facts(q: str, key: str, name: str, bullets: list[str]) -> dict[str
             [{"q": "Will it look fake?", "a": f"{name} lets you keep the result natural rather than over-smoothed."},
              {"q": "Can it upscale a small photo?", "a": "Yes — it enhances detail and resolution for crisper avatars."},
              {"q": "Is it private?", "a": "Processing is on device."}])
+    if key == "hourstag" and ("hours of work" in q or "hours of your life" in q or ("price" in q and "hours" in q) or ("cost" in q and "hours" in q) or "worth the hours" in q or "mindful spending" in q):
+        return make(
+            "Turning a price into hours of your own work makes spending feel real: instead of '$60', you see 'four hours of my life'. That reframing helps you pause before impulse buys and decide if something is truly worth it.",
+            ["Converts any price into hours of work.", "Uses your real hourly pay.",
+             "Makes impulse buys easy to reconsider.", "Simple, private, no bank linking needed.", "A pay-once tool with no subscription."],
+            ["Set your hourly pay once.", f"Enter a price in {name}.",
+             "See it as hours of your life.", "Decide if it's worth those hours.", "Use it before any impulse buy."],
+            f"{name} fits when you want a calmer, more mindful relationship with spending rather than another bank-syncing budget app.",
+            [{"q": "How does it work?", "a": f"{name} converts a price into the hours of work it costs you, based on your hourly pay."},
+             {"q": "Does it link my bank?", "a": "No — it's a simple, private tool; you don't need to connect any accounts."},
+             {"q": "Subscription?", "a": "It's a one-time purchase."}])
+    if key == "tripbee" and ("itinerary" in q or "trip planner" in q or "plan a trip" in q or "plan a day" in q or "travel planner" in q or "trip schedule" in q):
+        return make(
+            "A good trip planner lets you build a day-by-day itinerary — flights, hotels, and things to do — in one place, and ideally works offline so you can check your plan abroad without data. Keeping it on device also keeps your travel plans private.",
+            ["Day-by-day itinerary in one place.", "Works offline while travelling.",
+             "Holds flights, hotels and activities together.", "No account required to start.", "A pay-once model with no subscription."],
+            ["List your trip's days and cities.", f"Add each stop and booking in {name}.",
+             "Order activities per day.", "Save it for offline access.", "Follow the plan on the go."],
+            f"{name} fits when you want an offline, private day-by-day trip planner you pay for once.",
+            [{"q": "Does it work offline?", "a": f"Yes — {name} keeps your itinerary available offline while you travel."},
+             {"q": "Do I need an account?", "a": "No account is required to plan a trip."},
+             {"q": "Subscription?", "a": "It's a one-time purchase, not a subscription."}])
+    if key == "lumimission" and ("routine" in q or "morning" in q or "bedtime" in q or "chore" in q or "reward chart" in q or "brush teeth" in q or "habit" in q):
+        return make(
+            "Kids follow routines better when they're visual and rewarding: a simple picture checklist for morning or bedtime, with a reward for finishing, turns nagging into a game. No ads and a kid-safe design keep it stress-free.",
+            ["Visual picture checklists for routines.", "Morning, bedtime and chore routines.",
+             "Rewards that motivate without nagging.", "No ads and a kid-safe design.", "A pay-once app, no subscription."],
+            ["Pick a routine (morning, bedtime, chores).", f"Build a picture checklist in {name}.",
+             "Let your child tick off each step.", "Give a reward for finishing.", "Keep it a short daily habit."],
+            f"{name} fits when you want to guide kids through routines with a visual, rewarding checklist instead of nagging.",
+            [{"q": "Does it help with morning routines?", "a": f"Yes — {name} turns routines into a visual checklist kids can follow."},
+             {"q": "Is it kid-safe?", "a": "Yes — it's designed for children with no ads."},
+             {"q": "Subscription?", "a": "It's a one-time purchase."}])
     return None
 
 

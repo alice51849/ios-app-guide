@@ -866,6 +866,28 @@ for _k, _qs in _GEO_TAILORED13.items():
             _base.append(_q)
 
 
+# 2026-07-07 平行 worker 整合(app-scenarios):填補 hourstag/zafe/tripbee/lumimission 場景缺口。
+_GEO_TAILORED14 = {
+    "hourstag": ["app that converts a price to hours of work before buying",
+                 "app to see how many hours of work a purchase costs"],
+    "zafe": ["app to move private photos out of the iphone camera roll",
+             "app to move sensitive photos into a locked vault"],
+    "tripbee": ["offline day by day trip itinerary planner for iphone",
+                "app to build a travel itinerary that works offline"],
+    "lumimission": ["app to help a toddler build a morning routine",
+                    "app to guide kids through a bedtime routine with rewards"],
+    "gmoney": ["app to track foreign currency spending offline while traveling"],
+    "photocream": ["photo editor with real film grain and halation"],
+    "zodira": ["birth chart app for iphone with no account offline"],
+    "lumiweather": ["weather app that tells me what clothes my child should wear"],
+}
+for _k, _qs in _GEO_TAILORED14.items():
+    _base = CURATED.setdefault(_k, [])
+    for _q in _qs:
+        if _q not in _base:
+            _base.append(_q)
+
+
 # 從 AEO share-of-voice 報告自動載入每個 app 的真實競品 → 產生 "X alternative" 查詢
 import json as _json  # noqa: E402
 _SOV_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "aeo_sov.json")

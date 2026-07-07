@@ -822,6 +822,50 @@ for _k, _qs in _GEO_TAILORED12.items():
             _base.append(_q)
 
 
+# 2026-07-07 平行 worker 整合:resume 國別(7)+ resume FAQ + 真實競品(付費/訂閱)。
+_GEO_TAILORED13 = {
+    "cvdesk": [
+        # resume countries batch 2
+        "app to make a mexican cv on iphone",
+        "app to make a swedish cv on iphone",
+        "app to make a polish cv on iphone",
+        "app to make a turkish cv on iphone",
+        "app to make a uae cv with a photo on iphone",
+        "app to make a russian resume on iphone",
+        "app to make an indonesian cv on iphone",
+        # resume FAQ (high-volume informational)
+        "how many pages should a resume be",
+        "should a resume have a photo",
+        "what is an ats and how to make a resume ats friendly",
+        "how to explain an employment gap on a resume",
+        "should you put references on a resume",
+        "how many bullet points per job on a resume",
+        "reverse chronological vs functional resume format",
+        "should i send my resume as pdf or word",
+        "should you tailor your resume to each job",
+    ],
+    # real, paid/subscription competitors -> honest pay-once alternative pages
+    "gmoney": ["travelspend alternative app for iphone", "tripcoin alternative app for iphone"],
+    "hourstag": ["copilot money alternative app for iphone", "pocketguard alternative app for iphone",
+                 "spendee alternative app for iphone"],
+    "zafe": ["keepsafe alternative app for iphone", "kyms alternative photo vault for iphone"],
+    "photocream": ["nomo cam alternative app for iphone", "darkroom alternative app for iphone",
+                   "afterlight alternative app for iphone"],
+    "tripbee": ["sygic travel alternative app for iphone", "roadtrippers alternative app for iphone"],
+    "cyca": ["clue alternative period tracker for iphone", "flo alternative period tracker for iphone"],
+    "mochi": ["things 3 alternative free checklist app", "any.do alternative for iphone"],
+    "lumimath": ["splashlearn alternative math app for kids"],
+    "lumimission": ["s'moresup alternative chore app for kids", "homey alternative chore app for iphone"],
+    "lumiweather": ["tinybop weather alternative app for kids", "marcopolo weather alternative for kids"],
+    "tripplanet": ["stack the states alternative app for kids", "stack the countries alternative for kids"],
+}
+for _k, _qs in _GEO_TAILORED13.items():
+    _base = CURATED.setdefault(_k, [])
+    for _q in _qs:
+        if _q not in _base:
+            _base.append(_q)
+
+
 # 從 AEO share-of-voice 報告自動載入每個 app 的真實競品 → 產生 "X alternative" 查詢
 import json as _json  # noqa: E402
 _SOV_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "aeo_sov.json")

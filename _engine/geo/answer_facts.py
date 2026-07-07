@@ -491,6 +491,27 @@ RESUME_FORMATS: dict[str, dict[str, str]] = {
     "singapore": {"aka": "Singapore", "doc": "resume",
                   "rule": "an optional photo, a career summary and a clean reverse-chronological layout",
                   "len": "1–2 pages", "photo": "Optional"},
+    "mexico": {"aka": "Mexican", "doc": "CV / currículum",
+               "rule": "written in Spanish, reverse-chronological, with a header that traditionally lists name, date of birth and nationality; a passport-style photo top-right is common in traditional sectors but often dropped for multinationals",
+               "len": "1–2 pages", "photo": "Optional — common traditionally, omitted for multinationals"},
+    "sweden": {"aka": "Swedish", "doc": "CV",
+               "rule": "a minimalist, strictly reverse-chronological CV in Swedish or English with just name, phone and email; date of birth, marital status and photo are deliberately omitted under strong anti-discrimination norms",
+               "len": "1–2 pages", "photo": "No — omitted by convention"},
+    "poland": {"aka": "Polish", "doc": "CV",
+               "rule": "a reverse-chronological CV that must end with the mandatory GDPR data-processing consent clause; a professional photo and date of birth are optional and increasingly dropped",
+               "len": "1–2 pages", "photo": "Optional — declining"},
+    "turkey": {"aka": "Turkish", "doc": "CV / özgeçmiş",
+               "rule": "written in Turkish with a passport-style photo and a header listing date of birth and marital status, plus — uniquely — a military-service status field for male candidates",
+               "len": "1–2 pages", "photo": "Yes — a professional photo is expected"},
+    "uae": {"aka": "UAE", "doc": "CV",
+            "rule": "a detailed personal header that prominently states nationality and visa/residency status (needed for work permits), plus date of birth, marital status and a passport-style photo",
+            "len": "2 pages", "photo": "Yes — a professional photo is standard"},
+    "russia": {"aka": "Russian", "doc": "resume (резюме)",
+               "rule": "written in Russian, reverse-chronological, with a header that includes date of birth, city and often a desired salary; a professional photo is recommended (hh.ru prompts for one)",
+               "len": "1–2 pages", "photo": "Recommended — commonly included"},
+    "indonesia": {"aka": "Indonesian", "doc": "CV / daftar riwayat hidup",
+                  "rule": "a 'data diri' section with name, date of birth, gender and marital status (sometimes religion for government roles), topped by a formal passport-style photo",
+                  "len": "1–2 pages", "photo": "Yes — a formal photo is standard"},
 }
 _RESUME_ALIASES = {
     "lebenslauf": "germany", "german": "germany",
@@ -509,6 +530,13 @@ _RESUME_ALIASES = {
     "brazilian": "brazil", "brazil resume": "brazil",
     "indian": "india", "india resume": "india",
     "singapore": "singapore",
+    "mexican": "mexico", "mexico cv": "mexico", "mexico resume": "mexico",
+    "swedish": "sweden", "sweden cv": "sweden",
+    "polish": "poland", "poland cv": "poland",
+    "turkish": "turkey", "turkey cv": "turkey", "ozgecmis": "turkey",
+    "uae cv": "uae", "dubai cv": "uae", "emirates cv": "uae",
+    "russian": "russia", "russia cv": "russia", "rezume": "russia",
+    "indonesian": "indonesia", "indonesia cv": "indonesia",
 }
 
 
@@ -554,6 +582,126 @@ def _resume_facts(q: str, name: str, spec_key: str) -> dict[str, Any]:
             {"q": "Will it pass ATS?", "a": f"{name} keeps the layout machine-readable; still tailor the keywords to each posting for the best match."},
         ],
     }
+
+
+# ---------------------------------------------------------------------------
+# Resume FAQ (high-volume informational demand). Verified 2024. Gated to CV Desk.
+# ---------------------------------------------------------------------------
+def _resume_faq_facts(q: str, name: str) -> dict[str, Any] | None:
+    def faq(lead: str, detail: str, look: list[str], steps: list[str], qa: list[dict]) -> dict[str, Any]:
+        return {
+            "meta_description": (lead[:150]).rsplit(" ", 1)[0] + "."[:200],
+            "lead": lead,
+            "short_answer_paragraphs": [
+                detail,
+                f"{name} helps you apply this on your iPhone: it keeps the layout ATS-readable, exports a clean PDF with no watermark, and lets you tailor each version to the job. Always adapt to the specific role and country.",
+            ],
+            "what_to_look_for": look,
+            "decision_steps": steps,
+            "where_app_fits": f"{name} is a strong fit when you want a resume that follows best practice and still passes automated screening.",
+            "faq": qa,
+        }
+
+    if "how many pages" in q or "resume length" in q or "one page or two" in q or "how long should a resume" in q or "how long should a cv" in q:
+        return faq(
+            "In the US, keep a resume to one page for under ~7 years of experience; two pages is fine — often preferred — for experienced professionals.",
+            "One page is the US norm for early-career candidates; two pages is widely accepted, and often preferred, once you have around seven or more years of relevant experience. UK CVs run to about two pages, and academic CVs can be longer. The goal is relevance — cut anything that doesn't support the target role rather than padding to fill a page.",
+            ["One page for early career (US).", "Two pages once experienced (~7+ years).",
+             "UK CVs ~2 pages; academic CVs longer.", "Cut anything not relevant to the role.", "Prioritise recent, measurable achievements."],
+            ["Decide by experience, not by rule.", "Lead with your most relevant, recent roles.",
+             f"Draft it in {name}.", "Trim anything that doesn't support the job.", "Export a clean one- or two-page PDF."],
+            [{"q": "Should a resume be one page?", "a": "One page for under ~7 years' experience; two pages is fine when you have more."},
+             {"q": "Is a two-page resume bad?", "a": "No — it's often preferred for experienced candidates, as long as every line is relevant."},
+             {"q": "How long is a UK CV?", "a": "Usually about two pages."}])
+    if ("photo" in q) and ("resume" in q or "cv" in q):
+        return faq(
+            "In the US, UK, Canada, Australia and Ireland, don't put a photo on your resume; in Japan, South Korea, Germany and France a photo is expected.",
+            "Photo norms split sharply by country. In the US, UK, Canada, Australia and Ireland a photo is discouraged and can raise discrimination concerns, so it's left off. In Japan and South Korea a passport-style photo is effectively required, and in Germany and France it's customary. When applying abroad, follow the convention of the country where the job is based.",
+            ["No photo for US/UK/CA/AU/IE resumes.", "Photo expected in JP/KR (and customary DE/FR).",
+             "Follow the target country's norm.", "If used, a professional headshot only.", "Keep the rest of the header lean."],
+            ["Check where the job is based.", "Apply that country's photo convention.",
+             f"Build the resume in {name}.", "Add or omit the photo accordingly.", "Export a clean PDF."],
+            [{"q": "Should a resume have a photo?", "a": "Not in the US/UK/Canada/Australia/Ireland; yes in Japan/South Korea and customarily in Germany/France."},
+             {"q": "Why no photo in the US?", "a": "Anti-discrimination norms mean recruiters prefer resumes without photos."},
+             {"q": "What if I apply abroad?", "a": "Follow the convention of the country where the role is based."}])
+    if ("ats" in q) and ("what is" in q or "how" in q or "friendly" in q or "pass" in q or "beat" in q):
+        return faq(
+            "An ATS (Applicant Tracking System) scans and ranks resumes before a human sees them; to pass it, use a simple single-column layout, standard headings and fonts, and keywords from the job posting.",
+            "An Applicant Tracking System parses your resume into fields and ranks it against the job description, and most large employers use one. To stay readable, use a single-column layout, standard section headings (Experience, Education, Skills), common fonts, and no text inside images or tables. Then mirror the exact keywords from the posting so the system scores you as a strong match.",
+            ["Single-column, simple layout.", "Standard headings and fonts.",
+             "No text in images, columns or text boxes.", "Keywords mirrored from the job posting.", "Submit as PDF unless Word is requested."],
+            ["Start from a clean single-column template.", "Use standard section headings.",
+             f"Write it in {name} to keep it machine-readable.", "Mirror keywords from the posting.", "Export and test it parses cleanly."],
+            [{"q": "What is an ATS?", "a": "Software that scans, parses and ranks resumes before a recruiter reviews them."},
+             {"q": "How do I make my resume ATS-friendly?", "a": "Single column, standard headings/fonts, no text-in-images, and keywords from the job posting."},
+             {"q": "Does formatting matter?", "a": "Yes — complex layouts, tables and images can break ATS parsing."}])
+    if ("gap" in q) and ("resume" in q or "cv" in q or "employment" in q or "work" in q):
+        return faq(
+            "Explain an employment gap briefly and honestly — add a short 'Career Break' entry noting what you did (caregiving, study, travel) rather than hiding it.",
+            "The clearest approach is to include a brief, honest 'Career Break' line in your chronological history with dates and a few words on what you did — caregiving, study, health, travel or freelancing. Hiding gaps tends to raise more questions than a short, matter-of-fact note. Focus on any skills or courses you kept up during the time.",
+            ["A short, honest 'Career Break' entry.", "Dates and a brief reason.",
+             "Any study, courses or freelance work done.", "Skills kept current.", "A neutral, confident tone."],
+            ["Add a 'Career Break' entry with dates.", "Note briefly what you did.",
+             "Highlight any learning or freelance work.", f"Keep it concise in {name}.", "Move on — don't over-explain."],
+            [{"q": "How do I explain a gap on my resume?", "a": "Add a brief, honest 'Career Break' entry with dates and what you did, rather than hiding it."},
+             {"q": "Should I hide an employment gap?", "a": "No — a short, matter-of-fact note reads better than an unexplained gap."},
+             {"q": "What if I studied during the gap?", "a": "List the course or skills — it shows you stayed active."}])
+    if "reference" in q and ("resume" in q or "cv" in q):
+        return faq(
+            "Don't put references — or 'references available on request' — on your resume. Keep a separate reference sheet and share it only when asked.",
+            "'References available on request' is outdated and just wastes space, since recruiters assume you can provide them. Listing actual references on the resume is also unnecessary and exposes them to contact before you're a serious candidate. Prepare a separate, formatted reference sheet and hand it over only when an employer specifically asks, usually after an interview.",
+            ["No references on the resume itself.", "Skip 'references available on request'.",
+             "Keep a separate reference sheet ready.", "Share it only when requested.", "Use the space for achievements instead."],
+            ["Remove references from the resume.", "Use the space for results and skills.",
+             "Prepare a separate reference sheet.", "Provide it only when asked.", f"Keep the resume tight in {name}."],
+            [{"q": "Should I put references on my resume?", "a": "No — keep a separate sheet and provide it only when an employer asks."},
+             {"q": "Is 'references available on request' needed?", "a": "No — it's outdated and wastes space."},
+             {"q": "When do I share references?", "a": "Usually after a first or second interview, when specifically requested."}])
+    if ("bullet" in q) and ("resume" in q or "cv" in q or "job" in q):
+        return faq(
+            "Use about three to six bullet points per job, and write each as an achievement: action verb + what you did + a measurable result.",
+            "Three to six bullets per role is the sweet spot — enough to show impact without overwhelming a recruiter who scans for only a few seconds. Write each bullet as an achievement, not a duty: start with a strong action verb, state what you did, and add a measurable result (a number, percentage or outcome) wherever you can. Put more bullets on recent, relevant roles and fewer on older ones.",
+            ["3–6 bullets per role.", "Achievements, not duties.",
+             "Action verb + task + measurable result.", "Numbers/percentages where possible.", "More detail on recent roles."],
+            ["List each role's biggest wins.", "Start each bullet with an action verb.",
+             "Add a number or outcome.", f"Tighten them in {name}.", "Trim older roles to 1–2 bullets."],
+            [{"q": "How many bullet points per job?", "a": "About three to six, weighted toward your most recent roles."},
+             {"q": "How do I write a good bullet?", "a": "Action verb + what you did + a measurable result."},
+             {"q": "Duties or achievements?", "a": "Achievements — show impact, not just responsibilities."}])
+    if ("chronological" in q or "functional" in q or "hybrid" in q) or ("resume format" in q or "cv format" in q) and ("which" in q or "best" in q or "vs" in q):
+        return faq(
+            "Use a reverse-chronological resume by default; a functional (skills-first) format only if you're changing careers or have big gaps; hybrid to blend both.",
+            "Reverse-chronological — most recent role first — is what recruiters and ATS expect, and it's the right default for anyone with a steady, relevant history. A functional format leads with skills and downplays dates, which can help career-changers or those with large gaps, but recruiters often distrust it. A hybrid opens with a short skills summary, then a chronological history — a safe middle ground.",
+            ["Reverse-chronological is the default.", "Functional only for big gaps/career change.",
+             "Hybrid = skills summary + chronological.", "ATS handles chronological best.", "Match the format to your situation."],
+            ["Assess your history and gaps.", "Pick chronological unless you have a reason not to.",
+             "If changing careers, consider hybrid.", f"Build it in {name}.", "Keep it ATS-readable."],
+            [{"q": "Which resume format is best?", "a": "Reverse-chronological for most people; hybrid if you're changing careers."},
+             {"q": "Is a functional resume good?", "a": "Only for specific cases (big gaps, career change) — recruiters can be wary of it."},
+             {"q": "What is a hybrid resume?", "a": "A short skills summary followed by a reverse-chronological history."}])
+    if ("pdf" in q or "word" in q or "docx" in q or "file format" in q) and ("resume" in q or "cv" in q):
+        return faq(
+            "Send your resume as a PDF by default — it keeps your layout on every device — unless the posting or agency asks for Word (.docx).",
+            "PDF is the safest default: it renders identically everywhere, preserves your fonts and layout, and can't be accidentally edited. Send Word (.docx) only when it's explicitly requested — some recruitment agencies add their own formatting, and a few older ATS portals parse Word more reliably. The rule is simple: follow the posting's instruction; if there isn't one, send PDF.",
+            ["PDF by default for layout safety.", "Word (.docx) only when requested.",
+             "Follow the posting's instruction.", "Keep the filename professional.", "Check the PDF opens cleanly."],
+            ["Finish the resume.", f"Export a PDF from {name}.",
+             "Name the file clearly (Name_Role.pdf).", "Send Word only if asked.", "Double-check it opens on desktop."],
+            [{"q": "PDF or Word for a resume?", "a": "PDF by default; Word only when the posting or agency requests it."},
+             {"q": "Why PDF?", "a": "It renders identically everywhere and can't be accidentally reformatted."},
+             {"q": "When should I send Word?", "a": "When explicitly asked, e.g. by an agency that adds its own formatting."}])
+    if ("tailor" in q or "keywords" in q) and ("resume" in q or "cv" in q or "job" in q):
+        return faq(
+            "Yes — tailor your resume to each job by mirroring the posting's keywords; a generic resume scores poorly against ATS and recruiters.",
+            "Tailoring is one of the highest-impact steps: ATS scores your resume against the exact wording of the job description, so mirror the skills and terms it uses (using the real ones that apply to you). Reorder your bullets to lead with the most relevant experience for that role. A single generic resume sent everywhere consistently underperforms tailored versions.",
+            ["Mirror the posting's keywords (honestly).", "Lead with the most relevant experience.",
+             "Adjust the summary per role.", "Keep one master version to tailor from.", "Don't keyword-stuff."],
+            ["Read the posting for key skills/terms.", "Match them in your resume where true.",
+             "Reorder bullets by relevance.", f"Save tailored versions in {name}.", "Export a fresh PDF per application."],
+            [{"q": "Should I tailor my resume to each job?", "a": "Yes — mirror the posting's keywords and lead with the most relevant experience."},
+             {"q": "Why does tailoring matter?", "a": "ATS scores against the job description's exact language, so a generic resume ranks lower."},
+             {"q": "Can I keyword-stuff?", "a": "No — use only real, relevant terms; stuffing is easy to spot and backfires."}])
+    return None
 
 
 # ---------------------------------------------------------------------------
@@ -953,6 +1101,11 @@ def topic_facts(question: str, key: str, app: dict[str, Any]) -> dict[str, Any] 
     r_key = _detect_resume(q)
     if r_key:
         return _resume_facts(q, name, r_key)
+
+    if key == "cvdesk" and ("resume" in q or "cv" in q):
+        rfaq = _resume_faq_facts(q, name)
+        if rfaq:
+            return rfaq
 
     sc = _scenario_facts(q, key, name, bullets)
     if sc:

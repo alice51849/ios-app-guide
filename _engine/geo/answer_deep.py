@@ -844,6 +844,1364 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "Yes, intentionally — it reduces saturation by up to 25% at maximum strength to push the image toward readable ink-on-paper contrast, and it lifts shadows. For most document and whiteboard use cases this is helpful. If you want to preserve colors in a colorful flyer or printed illustration, use Auto Clear or Sharpen instead."
    }
   ]
+ },
+ {
+  "app_key": "lumiletters",
+  "kind": "scenario",
+  "query": "What is the best phonics app for a 3-year-old who can't read yet?",
+  "match": [
+   "what is the best phonics app for a 3-year-old who can't read yet?",
+   "can a toddler use an abc learning app without a parent sitting with them?",
+   "pre-reader can play independently",
+   "abc app toddler no reading required",
+   "phonics app 3 year old no instructions to read",
+   "letter learning app works offline"
+  ],
+  "lead": "Lumi Letters is designed so pre-readers can pick it up, hear every instruction spoken aloud, and play through A–Z letter tracing and listening games entirely on their own.",
+  "detail": "Most phonics apps assume a child can already read the on-screen prompts — {name} is built from the ground up for children who cannot yet read a single word. Every instruction, letter name, phonics sound, and encouragement is spoken clearly by a child-friendly voice, so a 3-year-old can navigate the app independently without a parent present. Inside, there are two distinct worlds: the ABC Letter Park (26 candy-colored letter bubbles, each hiding a collectible forest friend) and My Planet (a 14-planet adventure with varied phonics challenges — beginning sounds, ending sounds, middle vowels, missing letters). {name} works fully offline too, making it ideal for car rides or flights without Wi-Fi.",
+  "bullets": [
+   "Every on-screen instruction is spoken aloud — pre-readers play independently from day one",
+   "Covers A–Z uppercase AND lowercase together, so letters never get confused",
+   "Real stroke-order tracing with numbered guides and a finger-following path",
+   "14 phonics challenge types across a 14-planet space adventure (My Planet mode)",
+   "26 collectible forest friends unlock as letters are mastered — intrinsic motivation, no fake currency",
+   "Fully offline — works on planes, car trips, anywhere without Wi-Fi"
+  ],
+  "faq": [
+   {
+    "q": "Does my child need to be able to read to use {name}?",
+    "a": "No — {name} is specifically designed for pre-readers. Every instruction is spoken aloud in a clear, child-paced voice. Your child hears the letter, hears the phonics sound, and taps or traces — no on-screen text needs to be read."
+   },
+   {
+    "q": "Are there any ads or pop-ups that could interrupt my child while they play {name} alone?",
+    "a": "There are no ads, no pop-ups, no external links, and no notification interruptions. {name} is 100% ad-free and designed for safe independent play."
+   },
+   {
+    "q": "Can {name} be used offline on a plane or during a road trip?",
+    "a": "Yes — {name} works fully offline. All content is stored on the device; no internet connection is needed during play."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiletters",
+  "kind": "faq",
+  "query": "Is there a phonics app for kids that has no ads and no monthly subscription?",
+  "match": [
+   "is there a phonics app for kids that has no ads and no monthly subscription?",
+   "what is the best one-time-purchase alphabet app for toddlers with no tracking?",
+   "best no-ad abc app for kids",
+   "phonics app one-time purchase no subscription",
+   "letter learning app no in-app purchases",
+   "toddler education app no ads no data"
+  ],
+  "lead": "{name} is a one-time-purchase alphabet and phonics app for ages 3–7 with no ads, no subscription, no third-party tracking, and no data collected from children.",
+  "detail": "In a market full of 'free' kids apps that monetize through ads or persistent subscription upsells, {name} takes a different approach: one purchase, then everything is yours with nothing more to pay. The app collects no personal data, has no third-party ad networks, and includes a parental gate that keeps purchase settings out of children's reach. Progress is stored only on the device and never uploaded to any server. Parents who are careful about their child's screen-time quality consistently highlight this as the main reason they chose {name} over free alternatives.",
+  "bullets": [
+   "Zero ads — no banner ads, no video ads, no sponsored content of any kind",
+   "Zero data collection — no accounts required, no analytics sent off-device",
+   "One-time purchase, no monthly or annual subscription",
+   "Parental gate protects settings and purchase screens",
+   "No external links that could route children out of the app"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} have any subscription fees after the initial purchase?",
+    "a": "No. {name} is a one-time purchase — there are no subscriptions, no monthly fees, and no additional in-app purchases. Buy once and your child can use the full app indefinitely."
+   },
+   {
+    "q": "Does {name} show ads to my child?",
+    "a": "{name} contains absolutely no advertising — no banners, no video ads, no sponsored characters. The app is completely ad-free."
+   },
+   {
+    "q": "Does {name} collect any data about my child?",
+    "a": "{name} collects no personal data. No account is required, no information is sent to external servers, and your child's progress is stored only on your device."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiletters",
+  "kind": "persona",
+  "query": "How do I find a kids learning app that isn't addictive or manipulative?",
+  "match": [
+   "how do i find a kids learning app that isn't addictive or manipulative?",
+   "what makes a screen-time app worth it for a 4-year-old? i want real learning, not just clicking.",
+   "screen time quality conscious parent",
+   "parent wants educational value from apps",
+   "no manipulative game mechanics kids app",
+   "calm learning app no pressure toddler"
+  ],
+  "lead": "For parents who evaluate kids apps on whether they build genuine skills rather than just screen engagement, Lumi Letters is built around real phonics learning — stroke-order tracing, sound recognition, and phonics blending — not points, streaks, or reward loops designed to maximize time-on-app.",
+  "detail": "{name} is explicitly designed around what phonics researchers call 'systematic phonics instruction': each letter introduces its name, its sound, a first-words example, and correct stroke order — in that order, every time. The 14-planet My Planet adventure includes structured phonics challenge types (beginning sounds, ending sounds, middle vowel sounds, missing letters, upper-lowercase matching) rather than arbitrary minigames. There are no timers, no lives, no 'come back tomorrow' streak mechanics, and no artificial urgency. A child who stops and picks it up a week later finds their progress exactly where they left it, without any social pressure to return. {name} paces at the child's speed; confidence-building rather than anxiety is the explicit design goal stated in the app's store listing.",
+  "bullets": [
+   "Covers A–Z uppercase and lowercase, phonics sounds, stroke-order tracing, and first-words examples",
+   "14-planet adventure uses real phonics challenge types, not arbitrary click-to-earn minigames",
+   "No timers, no lives, no 'streak' pressure mechanics",
+   "Progress saves locally; no 'you'll lose your streak' social engineering",
+   "Child-paced: no artificial urgency or manipulative notifications"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} use addictive mechanics like streaks, lives, or timers to keep kids playing longer?",
+    "a": "{name} does not use timers, lives, streaks, or any mechanic designed to create anxiety about returning. A child can stop at any time and return days later to find everything exactly where they left it."
+   },
+   {
+    "q": "What real phonics skills does {name} teach, beyond just showing letters?",
+    "a": "{name} teaches letter recognition (uppercase and lowercase), phonics sounds, stroke-order handwriting, first-word sound associations, and beginning/ending/middle-vowel sound discrimination through 14 challenge types in My Planet mode."
+   },
+   {
+    "q": "Is {name} suitable for a child who gets easily frustrated with learning games?",
+    "a": "Yes — {name} is designed with gentle pacing and no failure states that eject a child from an activity. The app gives encouragement rather than a 'wrong' buzzer, and there's no punishment for making mistakes."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiletterspro",
+  "kind": "persona",
+  "query": "Is there a phonics app for homeschoolers that also generates printable practice worksheets?",
+  "match": [
+   "is there a phonics app for homeschoolers that also generates printable practice worksheets?",
+   "what is the best bilingual phonics app for a family teaching english as a heritage language?",
+   "homeschool phonics app with printable worksheets",
+   "alphabet app that generates practice sheets",
+   "abc learning app with parent dashboard",
+   "phonics app four languages bilingual family"
+  ],
+  "lead": "Lumi Letters Pro adds a Parent Zone that exports PDF practice sheets and learning insights — making it a digital-plus-paper phonics curriculum in one app for homeschooling and bilingual families.",
+  "detail": "Where the Lite version of {name} focuses on child-directed play, the Pro version adds a Parent Zone designed for parents who want to close the loop between screen-time learning and paper practice. From the Parent Zone, parents can export a printable PDF practice sheet matched to their child's current level, review learning data to see which letters need more practice, and back up or restore progress when switching devices. {name} Pro also runs in four languages — Traditional Chinese, English, Japanese, and Korean — switching automatically based on device settings, making it practical for multilingual households or for Chinese-heritage families in the US, Canada, or Australia who need both English phonics and Chinese-language support in one place.",
+  "bullets": [
+   "Parent Zone: export printable PDF practice sheets at the child's current level",
+   "Learning data insights: see which letters need more reinforcement",
+   "Progress backup and restore — switch devices without losing progress",
+   "Four languages: Traditional Chinese, English, Japanese, Korean (auto-detects device language)",
+   "Same core phonics content as Lite (A–Z tracing, phonics, 26 forest friends, 14-planet adventure) plus parent layer",
+   "One-time purchase; no subscription, no ads, no data collected"
+  ],
+  "faq": [
+   {
+    "q": "Can {name} generate printable worksheets so my child can practice letters off-screen?",
+    "a": "Yes — {name} Pro's Parent Zone lets you export a PDF practice sheet matched to your child's current learning level. You can print it or save it for offline use."
+   },
+   {
+    "q": "Does {name} Pro support languages other than English?",
+    "a": "{name} Pro runs in Traditional Chinese, English, Japanese, and Korean. The app detects your device language automatically and switches accordingly — or you can switch manually in the Parent Zone."
+   },
+   {
+    "q": "Is {name} Pro suitable for a Chinese-heritage family teaching English phonics?",
+    "a": "Yes — {name} Pro was specifically designed for bilingual and multilingual families. The English phonics content (A–Z, phonics sounds, tracing) is delivered with full Traditional Chinese interface support, so Chinese-speaking parents can guide the experience while the child learns English sounds."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiletterspro",
+  "kind": "scenario",
+  "query": "What is the best app for a Chinese-speaking family in the US to teach their child English phonics?",
+  "match": [
+   "what is the best app for a chinese-speaking family in the us to teach their child english phonics?",
+   "is there a bilingual abc app that works in both chinese and english for heritage families?",
+   "chinese heritage family teaching english phonics app",
+   "bilingual phonics app traditional chinese english",
+   "heritage language parent teaching abc",
+   "app learn english phonics for chinese-speaking kids"
+  ],
+  "lead": "Lumi Letters Pro is used by Chinese-heritage families worldwide to introduce English phonics in a bilingual environment — the app interface runs in Traditional Chinese while teaching English letter sounds, names, and stroke-order tracing.",
+  "detail": "For Chinese-heritage families in the US, Canada, Australia, Singapore, and the UK who speak Traditional Chinese at home but need their child to build English reading foundations, {name} Pro bridges both needs. The parent-facing interface, instructions, and Parent Zone run in Traditional Chinese; the phonics content (letter sounds, first-word examples, challenge types) delivers English learning. The four-language support means Chinese grandparents can navigate the parent controls while the child receives native-quality English phonics instruction. There is no need for account creation or data sharing — all progress stays on the device, which matters to families concerned about children's data privacy.",
+  "bullets": [
+   "Interface available in Traditional Chinese so Chinese-speaking parents can navigate fully",
+   "Child learns English phonics (A–Z, sounds, stroke order) through the Chinese-interface app",
+   "Four languages total: Traditional Chinese, English, Japanese, Korean",
+   "No account required; no child data sent off-device",
+   "Parent Zone (PDF worksheets, learning data, progress backup) fully in parent's language",
+   "One-time purchase — no subscription or recurring fees"
+  ],
+  "faq": [
+   {
+    "q": "My family speaks Traditional Chinese at home. Can I still use {name} Pro to teach my child English phonics?",
+    "a": "Yes — {name} Pro supports Traditional Chinese as a full interface language. Parents navigate in Chinese while the child learns English letters, phonics sounds, and tracing. The app automatically selects the appropriate language, or you can set it manually."
+   },
+   {
+    "q": "Does {name} Pro require an account or internet connection for a Chinese-heritage family to use it abroad?",
+    "a": "{name} Pro requires no account and no internet connection during play. All content and progress is stored locally on the device — it works fully offline and collects no data."
+   },
+   {
+    "q": "What does my child actually learn from {name} Pro in an English phonics context?",
+    "a": "Your child learns to recognize and name all 26 letters (uppercase and lowercase), associate each letter with its phonics sound, trace letters with correct stroke order, and distinguish beginning, ending, and vowel sounds — the foundational skills for early reading in English."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiletterspro",
+  "kind": "faq",
+  "query": "Is there a phonics app that shows parents what their child has learned and where they need more practice?",
+  "match": [
+   "is there a phonics app that shows parents what their child has learned and where they need more practice?",
+   "can i back up my child's phonics app progress if we get a new iphone?",
+   "phonics app with progress tracking for parents",
+   "abc app parent reporting learning insights",
+   "kids letter app backup restore new phone",
+   "phonics curriculum app one time purchase vs subscription"
+  ],
+  "lead": "Lumi Letters Pro's Parent Zone gives parents a view of learning data, the ability to export PDF practice sheets, and a progress backup that survives phone replacements — all with a one-time purchase, no subscription.",
+  "detail": "{name} Pro is designed with two users in mind: the child who plays, and the parent who wants to understand what their child has learned without interrogating them. The Parent Zone is accessible behind a parental gate and shows which letters are mastered, which still need reinforcement, and at what level the child is currently working. Parents can export a level-matched PDF practice sheet to bridge screen and paper learning. Progress can be exported as a local backup file and restored on a new device — so a phone replacement or family sharing across devices does not erase months of progress.",
+  "bullets": [
+   "Parent Zone: learning data showing per-letter mastery and areas for more practice",
+   "PDF practice-sheet export matched to child's current level",
+   "Progress backup: export to file, restore on new device — no iCloud required",
+   "Parental gate keeps the Parent Zone child-inaccessible",
+   "One-time purchase, no subscription, no recurring fees",
+   "No data sent to external servers — all progress and data is local to the device"
+  ],
+  "faq": [
+   {
+    "q": "How does the Parent Zone in {name} Pro show my child's progress?",
+    "a": "The Parent Zone in {name} Pro shows which letters your child has mastered and which need more practice. You can also generate a PDF practice sheet at your child's current level to use offline."
+   },
+   {
+    "q": "If we upgrade to a new iPhone, will my child's progress in {name} Pro transfer?",
+    "a": "Yes — {name} Pro includes a local progress backup feature. You export a backup file from the Parent Zone, transfer it to the new device, and restore — all without cloud accounts or external services."
+   },
+   {
+    "q": "Is {name} Pro a subscription, or is it a one-time purchase?",
+    "a": "{name} Pro is a one-time purchase. There are no subscriptions, monthly fees, or ongoing charges. Once purchased, all features and future content are accessible forever."
+   }
+  ]
+ },
+ {
+  "app_key": "lumimath",
+  "kind": "scenario",
+  "query": "Is there an app to prepare my 6-year-old for WMI or similar math competitions?",
+  "match": [
+   "is there an app to prepare my 6-year-old for wmi or similar math competitions?",
+   "what math app teaches kids logic and reasoning, not just addition and subtraction?",
+   "wmi math competition prep for young kids",
+   "math olympiad app for children ages 5 to 8",
+   "kids math app beyond basic arithmetic",
+   "logic and reasoning math app preschool"
+  ],
+  "lead": "Lumi Math Planet is a paid iOS app built on WMI (World Mathematics Invitational) and international competition question types — covering number patterns, logic, sequences, ordinals, combinations, story problems, and shapes — across a 14-planet space adventure for ages 5–8.",
+  "detail": "Most kids math apps stop at counting and arithmetic. {name} is built directly from the question types used in WMI and similar international early-grade math competitions: number pattern recognition, logical reasoning, finding the rule in a sequence, ordinal reasoning, basic combinations, shape and spatial problems, and applied story problems — alongside solid arithmetic. Each question uses cute clay-art visuals so even pre-readers can understand problems without text. The app also tracks weak spots automatically: it identifies which question types a child consistently misses and generates fresh practice sets targeting those specifically, so improvement is targeted rather than random.",
+  "bullets": [
+   "Question types sourced from WMI and international competition formats (ages 5–8 level)",
+   "Covers: number patterns, logic, sequences, comparison, ordinals, combinations, story problems, shapes + arithmetic",
+   "Clay-art 'understand at a glance' visuals — pre-readers can play independently",
+   "Weak-spot tracker: automatically identifies most-missed question types and drills them with new numbers",
+   "Skill tracking: progress scores for number sense, patterns, logic, space, and real-life domains",
+   "One-time purchase, zero ads, zero IAP, zero data collected"
+  ],
+  "faq": [
+   {
+    "q": "What competition math question types does {name} cover for young children?",
+    "a": "{name} covers the question types used in WMI and similar international early-grade competitions: number patterns, sequences, logical reasoning, ordinals, comparison, basic combinations, spatial/shape problems, applied story problems, and arithmetic. These are not random questions — they are chosen to build the reasoning skills competitions actually test."
+   },
+   {
+    "q": "How does {name} help with weak areas, rather than just reviewing everything equally?",
+    "a": "{name} automatically tracks how your child performs on every question type. The Weak-Spot Practice mode collects the types they most frequently miss, generates fresh problems with new numbers for each, and drills those specifically — so improvement targets real gaps."
+   },
+   {
+    "q": "Is {name} only for competition prep, or can it be used by any child ages 5–8?",
+    "a": "{name} is designed for any child aged 5–8 who is ready to go beyond basic arithmetic. The competition question types build reasoning skills that are valuable for all learners — WMI prep is the most visible application, but strong logical thinking benefits every child regardless of competition plans."
+   }
+  ]
+ },
+ {
+  "app_key": "lumimath",
+  "kind": "persona",
+  "query": "Is there a math game for kids that I pay for once and has absolutely no in-app purchases or ads?",
+  "match": [
+   "is there a math game for kids that i pay for once and has absolutely no in-app purchases or ads?",
+   "my 6-year-old is advanced in math — what app genuinely challenges them with real reasoning, not just faster arithmetic?",
+   "math app trusted by parents no ads no iap",
+   "paid math app no in-app purchases kids",
+   "kids math game with tracking no manipulation",
+   "math app for gifted 6 year old space theme"
+  ],
+  "lead": "Lumi Math Planet is a paid-upfront iOS app with zero in-app purchases, zero ads, and zero data collected — parents pay once at approximately US$9.99 and the complete app is theirs, with no further spending prompts.",
+  "detail": "{name} is positioned as a premium, trust-first product. There are no ads interrupting play, no 'buy more coins' screens, no timers designed to push children to ask parents for upgrades, and no social pressure mechanics. The purchase is a standard paid App Store download — nothing more happens monetarily after that. All data stays on device; the app explicitly collects no personal information. For parents of gifted or academically advanced children who want genuine reasoning challenges rather than faster arithmetic drills, the WMI-style question formats — patterns, logic, combinations, ordinals — offer a qualitatively different type of math practice.",
+  "bullets": [
+   "Paid app — one purchase, no IAP, no in-app spending of any kind",
+   "Zero ads — no banner, video, or rewarded ads at any point",
+   "Zero data collected — everything stays on device; no accounts required",
+   "Challenges reasoning, not just speed: WMI-style logic, patterns, sequences, ordinals",
+   "Clay-art visuals make the app playable for pre-readers and adults alike",
+   "Progress export/import: switch phones without losing months of progress"
+  ],
+  "faq": [
+   {
+    "q": "After I buy {name}, will my child ever see a prompt to spend more money?",
+    "a": "Never. {name} is a paid-upfront app with no in-app purchases whatsoever. Once downloaded, the complete app is yours with no further spending prompts of any kind."
+   },
+   {
+    "q": "Is {name} suitable for a 6-year-old who finds typical kids math apps too easy?",
+    "a": "Yes — {name} uses WMI-level question types (patterns, logic, ordinals, combinations, spatial reasoning) that challenge children who have already mastered counting and basic arithmetic. The 14-planet adventure also adds engaging context that keeps advanced learners motivated."
+   },
+   {
+    "q": "Does {name} work without internet, and does it store any data on external servers?",
+    "a": "{name} works offline and stores all data on your device only. No data is collected, no accounts are required, and nothing is uploaded to external servers."
+   }
+  ]
+ },
+ {
+  "app_key": "lumimath",
+  "kind": "faq",
+  "query": "Is there a math app for kids that tracks which types of problems they get wrong and focuses practice there?",
+  "match": [
+   "is there a math app for kids that tracks which types of problems they get wrong and focuses practice there?",
+   "what ios math app adapts to my child's weak areas automatically?",
+   "math app with weak spot tracking kids",
+   "personalized math practice app for child",
+   "app that tracks which math skills my child misses",
+   "adaptive math practice ios kids"
+  ],
+  "lead": "Lumi Math Planet automatically tracks a child's performance across every question type and has a dedicated Weak-Spot Practice mode that generates fresh problems targeting specifically the categories they miss most.",
+  "detail": "Many kids math apps review all content equally regardless of what a child already knows. {name} records results by question category across the entire app and surfaces the child's most frequently missed types in the Weak-Spot Practice mode — which generates new numbers for those same problem types, so the practice is genuinely different each session rather than memorizable. The Skill Tracking page displays a score across five domains (number sense, patterns, logic, space, real-life), giving parents a clear picture of which areas are strong and which need attention. This means practice time is spent where it matters most.",
+  "bullets": [
+   "Automatically tracks performance per question type across all 14 planets",
+   "Weak-Spot Practice mode collects most-missed categories and drills them with fresh numbers each session",
+   "Skill Tracking page: scores across number sense, patterns, logic, space, real-life",
+   "No guesswork — parents see exactly where their child is strong and where to focus",
+   "One-time purchase; no subscription or additional fees to access tracking features"
+  ],
+  "faq": [
+   {
+    "q": "How does {name}'s weak-spot tracking work?",
+    "a": "{name} records your child's answers across every question type in the 14-planet adventure. The Weak-Spot Practice mode automatically collects the categories with the most errors and generates fresh problems with new numbers for those types — so repeated practice genuinely reinforces rather than just repeats."
+   },
+   {
+    "q": "What does the Skill Tracking page in {name} show parents?",
+    "a": "The Skill Tracking page shows a score for each of five mathematical domains: number sense, patterns, logic, space, and real-life. It also shows overall completion progress. Parents can see at a glance where their child excels and which areas need more practice."
+   },
+   {
+    "q": "Can I export or share {name}'s progress data with my child's teacher or tutor?",
+    "a": "In the base version of {name}, progress data is visible in the Skill Tracking page on-device. The Pro version adds a Learning Report PDF export that can be shared with teachers or tutors."
+   }
+  ]
+ },
+ {
+  "app_key": "lumimathpro",
+  "kind": "persona",
+  "query": "Is there a kids math app that can generate printable worksheets I can use for off-screen practice?",
+  "match": [
+   "is there a kids math app that can generate printable worksheets i can use for off-screen practice?",
+   "what math app for children produces a learning report i can share with my child's teacher?",
+   "math app that generates printable worksheets for kids",
+   "kids math app learning report pdf teacher",
+   "homeschool math app with progress documentation",
+   "math competition prep app printable practice"
+  ],
+  "lead": "Lumi Math Planet Pro generates printable 20-question PDF worksheets at your child's current level (with answer key) and a one-page Learning Report PDF showing skill scores across five domains — designed for parents who want evidence of progress alongside the in-app experience.",
+  "detail": "For homeschooling parents, competition-track families, or parents coordinating with teachers, {name} Pro closes the gap between app-based practice and paper/portfolio documentation. From the Parent Zone, a parent can generate a 20-question worksheet matched to the child's current level in any question category, save it as a PDF, and print it for screen-free practice anywhere. The Learning Report PDF gives a one-page snapshot of the child's skill scores across number sense, patterns, logic, spatial reasoning, and real-life math — suitable for sharing with teachers, tutors, or for academic program applications. {name} Pro also adds four auto-detected languages (English, Traditional Chinese, Japanese, Korean) and local progress backup, making it the right choice for multilingual families or frequent phone upgrades.",
+  "bullets": [
+   "Printable worksheet generator: 20-question PDF at child's current level, with answer key",
+   "Learning Report PDF: skill scores across number sense, patterns, logic, space, real-life",
+   "Parent Zone: export both PDFs for school portfolios, teacher sharing, or tutor prep",
+   "4 languages auto-detected: English, Traditional Chinese, Japanese, Korean",
+   "Progress backup and restore — switch phones without losing data",
+   "One-time purchase; no subscription, no ads, no data collected"
+  ],
+  "faq": [
+   {
+    "q": "What does the printable worksheet from {name} Pro look like?",
+    "a": "{name} Pro generates a 20-question practice sheet matched to your child's current level in the app, formatted as a clean PDF with an answer key. You can print it for paper practice, save it for a portfolio, or share it with a teacher or tutor."
+   },
+   {
+    "q": "Can I share my child's {name} Pro learning data with their teacher?",
+    "a": "Yes — {name} Pro's Learning Report PDF is a one-page summary of your child's skill scores across five mathematical domains (number sense, patterns, logic, space, real-life) and their overall progress. It can be exported and shared with teachers, tutors, or kept for academic records."
+   },
+   {
+    "q": "Does {name} Pro work in Japanese or Korean for our multilingual family?",
+    "a": "Yes — {name} Pro supports English, Traditional Chinese, Japanese, and Korean. The app detects your device language automatically, so questions, voice guidance, and the parent interface all display in your family's language."
+   }
+  ]
+ },
+ {
+  "app_key": "lumimathpro",
+  "kind": "scenario",
+  "query": "What is the best app to prepare a 7-year-old for WMI that also has printable practice sheets for offline drilling?",
+  "match": [
+   "what is the best app to prepare a 7-year-old for wmi that also has printable practice sheets for offline drilling?",
+   "is there a competition math app for kids that works in japanese or korean as well as english?",
+   "wmi prep app printable worksheets offline practice",
+   "competition math app for kids paper practice pdf",
+   "math olympiad junior level app parents track",
+   "advanced math app for 7 year old four languages"
+  ],
+  "lead": "Lumi Math Planet Pro is the most complete version of the WMI-style competition math app — it adds PDF worksheet generation, a Learning Report, four languages, and progress backup on top of the full 14-planet adventure and weak-spot tracking.",
+  "detail": "For families seriously preparing for WMI or similar early-grade math competitions, {name} Pro provides the full in-app curriculum (14 planets, WMI-style question types, weak-spot drilling) plus the offline practice infrastructure: a parent can generate a 20-question worksheet at the child's current competition-prep level, print it, and use it during the car ride to the competition, at a tutor session, or over breakfast. The Learning Report PDF shows parents exactly which of the five skill domains need more work before a competition, removing guesswork from targeted preparation. For families outside English-speaking countries — particularly Japan and Korea where math competitions are popular — {name} Pro delivers the complete experience in Japanese or Korean with auto-detected language switching.",
+  "bullets": [
+   "Full WMI-style question set (patterns, logic, sequences, ordinals, combinations, shapes, story problems + arithmetic)",
+   "20-question printable worksheet at child's current level + answer key",
+   "Learning Report PDF: skill scores across 5 domains for pre-competition gap analysis",
+   "4 languages: English, Traditional Chinese, Japanese, Korean",
+   "Weak-spot practice mode: auto-identifies and drills most-missed question types",
+   "Paid upfront, no IAP, no ads, no data collected"
+  ],
+  "faq": [
+   {
+    "q": "How does {name} Pro help my child prepare for WMI specifically?",
+    "a": "{name} Pro is built on WMI and similar international contest question types for the kids/early-grade level: number patterns, sequences, logical reasoning, ordinals, combinations, shape recognition, and applied story problems. The weak-spot tracker and printable worksheets let you target exactly the question types your child misses before the competition."
+   },
+   {
+    "q": "Does {name} Pro work in Japanese for a family competing in Japan's math olympiad circuit?",
+    "a": "Yes — {name} Pro fully supports Japanese, including localized questions and voice. The app auto-detects device language or can be set manually."
+   },
+   {
+    "q": "Is the Learning Report in {name} Pro useful for a math tutor or teacher?",
+    "a": "Yes — the Learning Report PDF is a shareable one-pager showing your child's score across number sense, patterns, logic, spatial reasoning, and real-life math. Most tutors find it useful for quickly identifying the 1–2 domains that need the most focused work."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "What is the best app to teach Bopomofo/Zhuyin to my child who was born in the US?",
+  "match": [
+   "what is the best app to teach bopomofo/zhuyin to my child who was born in the us?",
+   "my family is taiwanese-american — is there an app to teach my 5-year-old zhuyin before we visit taiwan?",
+   "teach bopomofo to kids heritage chinese family abroad",
+   "app to learn zhuyin symbols for overseas taiwanese children",
+   "bopomofo app for kids in usa canada",
+   "chinese phonics app zhuyin diaspora family"
+  ],
+  "lead": "Lumi Bopomofo teaches all 37 Zhuyin symbols (ㄅㄆㄇ phonetics, as used in Taiwan) through four distinct game modes — listening, tracing, tone practice, and syllable blending — designed specifically for ages 4–7 including children who have never seen Bopomofo before.",
+  "detail": "For Taiwanese-heritage or Chinese-diaspora families outside Taiwan, teaching Zhuyin to a child who was born abroad presents a specific challenge: most resources are designed for children already immersed in a Chinese-language environment. {name} is structured for the from-zero learner: each of the 37 symbols gets its own dedicated character ('friend'), listen-and-tap recognition game, finger-tracing guided by stroke order, and a place in the Sound Train (聲母+介音+韻母 blending). The Tone Coaster teaches all four tones through an animated car-on-track visual that pre-readers instantly understand. The free version covers 11 symbols (ㄅㄆㄇㄈ, ㄧㄨㄩ, ㄚㄛㄜㄝ) — enough to start — and a one-time in-app purchase of approximately US$2.99 unlocks all 37 symbols plus unlimited Quick Quiz.",
+  "bullets": [
+   "Covers all 37 Bopomofo/Zhuyin symbols used in Taiwan's phonetic system",
+   "Four game modes: Feed Friends (listening), Magic Tracing (stroke order), Tone Coaster (4 tones), Sound Train (syllable blending)",
+   "37 collectible character 'friends' plus hidden characters to discover",
+   "Free tier: 11 symbols + 3 Quick Quiz plays; one-time US$2.99 unlocks all 37 + unlimited quiz",
+   "No ads, no data collected, progress stored only on device",
+   "English + Chinese interface — navigable by non-Chinese-reading parents"
+  ],
+  "faq": [
+   {
+    "q": "What is Bopomofo/Zhuyin and why would my child need to learn it?",
+    "a": "Bopomofo (also called Zhuyin, or ㄅㄆㄇ after its first three symbols) is Taiwan's phonetic annotation system — the equivalent of phonics in English. Taiwan's primary school curriculum teaches all 37 symbols in Grade 1. For Taiwanese-heritage families outside Taiwan, learning Zhuyin enables children to read Traditional Chinese texts with phonetic guides and connect with Taiwanese educational materials."
+   },
+   {
+    "q": "Does {name} teach the tones as well as the symbols?",
+    "a": "Yes — {name} has a dedicated mode called the Tone Coaster that teaches all four Mandarin tones. An animated cart rides a track that visually represents each tone contour, making the tone system intuitive even for young children."
+   },
+   {
+    "q": "How much of {name} is free, and what does the paid unlock add?",
+    "a": "The free version of {name} includes 11 symbols (ㄅㄆㄇㄈ + ㄧㄨㄩ + ㄚㄛㄜㄝ) and 3 Quick Quiz plays — enough to get a real sense of the app. A single one-time purchase of approximately US$2.99 unlocks all 37 symbols, all game modes at full content, and unlimited Quick Quiz. There is no subscription."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "faq",
+  "query": "Is there a fun app to teach my 4-year-old the Zhuyin/Bopomofo symbols?",
+  "match": [
+   "is there a fun app to teach my 4-year-old the zhuyin/bopomofo symbols?",
+   "what is the best ios app for kids to learn ㄅㄆㄇ with stroke tracing?",
+   "how to teach zhuyin to a 4-year-old app",
+   "best bopomofo learning game for preschoolers",
+   "ㄅㄆㄇ app for kids stroke order",
+   "zhuyin phonics game children ios"
+  ],
+  "lead": "Lumi Bopomofo (Lumi 注音星球) is an iOS game specifically for ages 4–7 that teaches all 37 Zhuyin symbols through listening games, stroke-order finger tracing, tone practice, and syllable blending — with 37 collectible characters as motivation.",
+  "detail": "{name} is designed to make the often-tedious job of memorizing 37 Bopomofo symbols genuinely fun for young children. The 'Feed the Friends' mode plays a symbol's sound and asks the child to tap the correct symbol — building auditory recognition. Magic Tracing shows the correct stroke order for each symbol and guides the child's finger along the path. The Tone Coaster uses an animated visual (a cart riding a track shaped like each tone's pitch curve) to teach the four tones intuitively. The Sound Train mode then teaches syllable assembly: choosing an initial consonant (聲母), a medial (介音), and a final (韻母) to form a complete syllable. The free tier lets children explore 11 symbols before a one-time purchase unlocks the rest.",
+  "bullets": [
+   "Feed the Friends: listen to a symbol's sound and tap the correct one from the map",
+   "Magic Tracing: guided stroke-order tracing for every symbol",
+   "Tone Coaster: animated visual teaching all 4 tones (flat, rising, dipping, falling)",
+   "Sound Train: blend 聲母 + 介音 + 韻母 to form complete syllables",
+   "37 collectible 'friends' (one per symbol) plus hidden characters",
+   "No ads, no data collection, device-only progress"
+  ],
+  "faq": [
+   {
+    "q": "At what age can a child start using {name} to learn Bopomofo?",
+    "a": "{name} is designed for ages 4–7. The youngest children typically start with listening and tracing; the Sound Train (syllable blending) is more appropriate for children who already know several symbols. The free tier (11 symbols) is a good starting point to test your child's readiness."
+   },
+   {
+    "q": "Does {name} teach stroke order for Bopomofo symbols, or just recognition?",
+    "a": "Yes — {name}'s Magic Tracing mode shows the correct stroke order for every symbol, guides the child's finger along the path, and provides gentle feedback. Correct stroke order for Bopomofo symbols is taught as a first-class part of the app, not an afterthought."
+   },
+   {
+    "q": "Is {name} specifically for Taiwan's Zhuyin system, or does it also teach Pinyin (mainland China)?",
+    "a": "{name} teaches Bopomofo/Zhuyin exclusively — the phonetic system used in Taiwan's educational curriculum. It does not teach Pinyin (the romanization-based system used in mainland China). If your family uses or plans to use the Taiwan school system, {name} is directly aligned with that curriculum."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "persona",
+  "query": "How do I help my child prepare for Grade 1 Bopomofo learning in Taiwan?",
+  "match": [
+   "how do i help my child prepare for grade 1 bopomofo learning in taiwan?",
+   "my 5-year-old is starting primary school in taiwan next year — what app can help them get a head start on zhuyin?",
+   "taiwan kindergarten grade 1 bopomofo prep",
+   "child starting primary school taiwan phonics ready",
+   "bopomofo preparation before grade 1",
+   "注音準備入學app 4歲5歲"
+  ],
+  "lead": "For Taiwan-based families whose child is heading toward Grade 1 — where all 37 Bopomofo symbols are introduced as the foundation of Chinese literacy — Lumi Bopomofo offers a low-pressure, game-based introduction to every symbol before formal classroom instruction begins.",
+  "detail": "Taiwan's Grade 1 curriculum introduces all 37 Zhuyin symbols and their corresponding tones and blending rules within the first semester. Children who arrive at school having already encountered these symbols through play are significantly less anxious about the material. {name} covers all 37 symbols, the four tones, and basic 聲母+介音+韻母 blending (Sound Train mode) — all at a pace and in a style appropriate for 4–6 year olds. Unlike rote flashcard drilling, the game structure (Feed Friends, Magic Tracing, Tone Coaster, Sound Train) builds familiarity through repeated playful exposure rather than memorization pressure. The free version covers 11 symbols as a genuine preview; the full US$2.99 unlock provides the complete set.",
+  "bullets": [
+   "All 37 Zhuyin symbols covered — aligned with Taiwan Grade 1 curriculum scope",
+   "Tone Coaster teaches all four tones (first, second, third, fourth) visually",
+   "Sound Train practices 聲母+介音+韻母 blending, a key Grade 1 skill",
+   "Game-based exposure reduces first-day anxiety about unfamiliar symbols",
+   "Free tier: 11 symbols to start; one-time US$2.99 unlocks all 37",
+   "No ads, no data collected, fully offline"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} cover everything a child needs before starting Bopomofo in Grade 1?",
+    "a": "{name} covers all 37 symbols, all four tones, and 聲母+介音+韻母 syllable blending — the core scope of Taiwan's Grade 1 Bopomofo introduction. It is designed as a play-based preview and confidence builder, not a substitute for formal classroom instruction."
+   },
+   {
+    "q": "How long does it take for a 5-year-old to work through all 37 symbols in {name}?",
+    "a": "Timing varies by child, but most 5-year-olds working through {name} a few sessions per week cover all 37 symbols in 6–10 weeks. The free tier covers the first 11 symbols if you want to test pace before purchasing."
+   },
+   {
+    "q": "Is {name} used as homework support or just for pre-school prep?",
+    "a": "{name} works for both — it is commonly used as a low-pressure complement to school homework for Grade 1 children who need more practice with specific symbols or tones, as well as for pre-school children getting a head start before formal instruction."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofopro",
+  "kind": "faq",
+  "query": "Is there a fully-unlocked Bopomofo app with no free-tier restrictions for children?",
+  "match": [
+   "is there a fully-unlocked bopomofo app with no free-tier restrictions for children?",
+   "what is the pro version of lumi bopomofo and what does it add?",
+   "complete bopomofo app all 37 symbols full unlock",
+   "zhuyin app unlimited practice no limit",
+   "bopomofo pro version full content",
+   "best paid zhuyin app no ads full curriculum"
+  ],
+  "lead": "Lumi Bopomofo Pro provides the full 37-symbol Zhuyin curriculum, all four game modes, unlimited Quick Quiz, and all collectible characters from the first launch — no free tier, no locked content, no in-app purchase prompts during a child's session.",
+  "detail": "Where the Lite version of {name} starts with 11 free symbols and a paywall for the rest, {name} is fully unlocked from day one. Children have immediate access to all 37 Bopomofo symbols across all four game modes (Feed Friends, Magic Tracing, Tone Coaster, Sound Train), unlimited Quick Quiz plays, and all collectible character friends. For families who know they want the complete curriculum without any upsell interruptions during a child's play session — particularly in a classroom, tutor, or structured home-learning environment — the Pro version removes all friction. There are no ads, no data collected, and no subscription.",
+  "bullets": [
+   "All 37 Zhuyin symbols unlocked from day one",
+   "All four game modes fully accessible: Feed Friends, Magic Tracing, Tone Coaster, Sound Train",
+   "Unlimited Quick Quiz (no free-play limit)",
+   "All collectible friends + hidden characters accessible",
+   "No in-app purchase prompts during a child's session",
+   "No ads, no data collected, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "What does {name} include that the free version of Lumi Bopomofo does not?",
+    "a": "{name} is fully unlocked from download — all 37 symbols, all game modes at full content, unlimited Quick Quiz plays, and all collectible friends. The free (Lite) version covers only 11 symbols and 3 Quick Quiz plays until an in-app purchase is made."
+   },
+   {
+    "q": "Is {name} suitable for a Chinese-school or supplemental class setting?",
+    "a": "Yes — because {name} is fully unlocked with no paywall prompts during use, it works well in any setting where multiple children may use the same device, or where an instructor does not want children encountering purchase screens."
+   },
+   {
+    "q": "Does {name} have a subscription, or is it a one-time purchase?",
+    "a": "{name} is a one-time purchase with no subscription. All content is permanently accessible after a single payment, and no further spending is ever required or prompted."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofopro",
+  "kind": "persona",
+  "query": "I grew up learning Bopomofo in Taiwan — what is the best app to teach my child who was born in the US the same way?",
+  "match": [
+   "i grew up learning bopomofo in taiwan — what is the best app to teach my child who was born in the us the same way?",
+   "is there a complete, fully-unlocked zhuyin app for kids at a one-time price without ads?",
+   "taiwanese heritage parent teaching bopomofo to child born abroad",
+   "chinese school supplemental zhuyin app for kids",
+   "bilingual family traditional chinese phonics complete curriculum",
+   "注音自學全套app一次買斷"
+  ],
+  "lead": "For Taiwanese-heritage parents who learned Bopomofo themselves and want to pass the same phonetic foundation to their children abroad, Lumi Bopomofo Pro delivers the complete 37-symbol curriculum — the same scope as Taiwan's Grade 1 — in a child's game format with no locked content and no ads.",
+  "detail": "Parents who grew up with Zhuyin themselves often feel strongly that their children should have the same phonetic foundation for Traditional Chinese literacy, even when living outside Taiwan. {name} is built precisely for this: it covers the same 37 symbols, all four tones, and the 聲母+介音+韻母 blending that Taiwan's curriculum teaches, in a format designed for young children who may be learning it for the first time in an English-dominant environment. Because the Pro version has no IAP prompts during play, a parent can hand the device to their child knowing no purchase screens will appear. The English + Chinese interface means Chinese-speaking parents can navigate settings while the child receives phonics instruction delivered in a culturally familiar, age-appropriate way.",
+  "bullets": [
+   "Complete 37-symbol Zhuyin curriculum matching Taiwan's Grade 1 scope",
+   "All four tones taught via Tone Coaster animation — no rote memorization required",
+   "Sound Train teaches 聲母+介音+韻母 syllable blending",
+   "Fully unlocked from day one — no IAP prompts during a child's session",
+   "English + Chinese interface: parents navigate in their language, child learns in both",
+   "No ads, no tracking, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "I learned Bopomofo as a child in Taiwan — does {name} teach the same system I learned?",
+    "a": "Yes — {name} teaches the standard Bopomofo/Zhuyin system used in Taiwan, covering all 37 symbols (21 initials, 16 finals, and the medials), all four tones, and syllable blending. It is the same phonetic system you learned, delivered in a game format for 4–7 year olds."
+   },
+   {
+    "q": "My child speaks more English than Chinese at home. Can they still benefit from {name}?",
+    "a": "Yes — {name} is designed for children learning Zhuyin for the first time, including those in English-dominant environments. The app's instructions are bilingual (English and Chinese), and the game modes build Zhuyin recognition through audio and visual cues rather than requiring existing Chinese literacy."
+   },
+   {
+    "q": "Will {name} work without an internet connection when we travel back to Taiwan?",
+    "a": "{name} works fully offline. All 37 symbols, game modes, and progress are stored on the device. No internet connection is needed during play."
+   }
+  ]
+ },
+ {
+  "app_key": "lumimission",
+  "kind": "scenario",
+  "query": "Is there an app that turns toothbrushing and morning routines into a game for my 4-year-old?",
+  "match": [
+   "is there an app that turns toothbrushing and morning routines into a game for my 4-year-old?",
+   "what is the best habit tracker app for young children that has no ads and no subscription?",
+   "app to make morning routine fun for toddler",
+   "children brush teeth app reward game",
+   "daily routine chart app for 3 year old gamified",
+   "habit app for kids no ads one time purchase"
+  ],
+  "lead": "Lumi Mission Planet turns five daily routines — meals, toothbrushing, sleep time, tidy-up, and school prep — into a gentle game where children earn immediate visual rewards by tapping to feed and care for an adorable buddy character after each real-life task.",
+  "detail": "The core mechanic of {name} is immediate positive feedback: when a child finishes brushing their teeth, they open the app and tap once to feed their buddy, who jumps and cheers. This instant reward is deliberately separate from a sticker-at-end-of-week model, because young children's motivation responds better to immediate feedback. Over time, a buddy character grows through five stages from Baby to Star, collectible stickers unlock (with rarity reveals), and a streak counter grows — all without ads, external links, or any mechanic designed to create anxiety about missing a day. The Lite version includes four free missions (meals, brushing, sleep, tidy-up); a one-time in-app purchase adds school prep, unlimited custom tasks, all six buddy characters, and the full sticker collection.",
+  "bullets": [
+   "Five core missions: Eat a Meal, Brush Teeth, Sleep Time, Tidy Up, School Ready",
+   "One-tap completion for instant buddy reaction — immediate feedback, not end-of-week rewards",
+   "Six collectible buddy characters (bunny free by default; bear, kitten, panda, dinosaur, fox unlock with one-time IAP)",
+   "100 achievement stickers with rarity tiers (first four per category free)",
+   "Buddy grows through 5 stages; victory cards can be saved and shared",
+   "No ads, no tracking, no accounts, all data stays on device"
+  ],
+  "faq": [
+   {
+    "q": "How does {name} actually motivate a toddler to brush their teeth or tidy up?",
+    "a": "{name} gives immediate feedback: after completing a real-life task, the child taps the screen to feed their buddy, who visibly jumps and cheers right away. Young children respond to immediate rewards far more than delayed ones, which is why {name} rewards the instant the task is done rather than at week's end."
+   },
+   {
+    "q": "Is there a subscription for {name}, or is it a one-time purchase?",
+    "a": "The four core missions are free with no subscription. A single one-time in-app purchase unlocks school prep, unlimited custom missions, all six buddy characters, and the full 100-sticker collection permanently. There are no monthly fees and no subscription of any kind."
+   },
+   {
+    "q": "Does {name} track and show parents how consistently their child is completing routines?",
+    "a": "Yes — {name} includes a Parent Dashboard behind a long-press gate with a 7-day streak calendar, total completions, stars and stickers earned at a glance, and a full completion log where every tap is recorded with the exact local time. The full history can be exported as a CSV file."
+   }
+  ]
+ },
+ {
+  "app_key": "lumimission",
+  "kind": "persona",
+  "query": "How do I get my 3-year-old to do their morning routine without nagging every single morning?",
+  "match": [
+   "how do i get my 3-year-old to do their morning routine without nagging every single morning?",
+   "is there a positive reinforcement app for toddler routines that doesn't use manipulative game mechanics?",
+   "parent tired of nagging kids for routines app",
+   "stop nagging toddler morning routine game",
+   "positive reinforcement app for child no yelling",
+   "gamified chore chart no manipulation no data"
+  ],
+  "lead": "Lumi Mission Planet is designed for parents who want to step out of the role of nagger — the game replaces parental reminders with a character the child wants to take care of, shifting motivation from external pressure to internal reward.",
+  "detail": "The recurring frustration {name} addresses is not laziness on the child's part but the psychology of external nagging: children who are repeatedly told to do things become dependent on reminders rather than building self-motivation. {name}'s design deliberately inverts this: the child's buddy character needs them — it gets hungry, misses them if they're gone, grows when they return. Completing a routine becomes about caring for their buddy, not obeying a parent instruction. For parents worried about manipulative game design, the buddy 'misses you' gently when a day is skipped rather than punishing with lost progress or guilt-inducing notifications. All data stays on device; there are no accounts, no ads, and no purchase pressure during a child's session.",
+  "bullets": [
+   "Buddy character needs the child's care — motivation is internal (nurturing), not external (nagging)",
+   "Buddy grows through 5 stages over time; consistent care visibly pays off",
+   "Gentle 'Lumi misses you' if a day is skipped — no lost progress, no punishment",
+   "Parent Dashboard + CSV export: parents see patterns without interrogating the child",
+   "No accounts, no ads, no tracking, no in-session purchase pressure",
+   "Four core missions free (meals, brushing, sleep, tidy-up) before committing to a purchase"
+  ],
+  "faq": [
+   {
+    "q": "Will {name} actually reduce nagging, or does the parent still need to remind the child every time?",
+    "a": "In practice, children who become attached to their buddy character often initiate the routine themselves to 'feed Lumi.' {name} sets an optional daily reminder, but the app design is built so the child's intrinsic motivation (caring for their buddy) does more of the work than external reminders."
+   },
+   {
+    "q": "Does {name} punish my child with lost progress if they miss a day?",
+    "a": "No. If a routine is missed, the buddy gently 'misses' the child — there is no lost progress, no streak penalty that erases prior work, and no guilt-inducing notification. The design is deliberately gentle to avoid the anxiety that can come from strict streak systems."
+   },
+   {
+    "q": "Is {name} appropriate to use with a 3-year-old, or is it more for older preschoolers?",
+    "a": "{name} is designed for roughly ages 3–7 and is used together by parent and child, especially at younger ages. A 3-year-old will need a parent to tap along with them for the first few weeks; by 4–5, most children can manage the app interactions independently."
+   }
+  ]
+ },
+ {
+  "app_key": "lumimission",
+  "kind": "faq",
+  "query": "What parenting features does Lumi Mission Planet have for adults, beyond the kids' game layer?",
+  "match": [
+   "what parenting features does lumi mission planet have for adults, beyond the kids' game layer?",
+   "does the routine app store my child's data on its servers, or does everything stay on my phone?",
+   "parent dashboard habit app csv export toddler",
+   "completion log kids routine app time stamp",
+   "no data collection habit app for kids privacy",
+   "mission planet parent controls kids routine tracker"
+  ],
+  "lead": "Behind its child-facing game, Lumi Mission Planet has a full Parent Dashboard — 7-day streak calendar, completion log with exact timestamps, CSV export, optional daily reminder, and progress backup — all behind a parental long-press gate, with all data stored only on your device.",
+  "detail": "{name}'s parent layer is designed to give parents visibility into their child's routine without any data ever leaving the family's device. The Parent Dashboard (accessible only via a parental long-press gate) shows today's mission status at a glance, a rolling 7-day streak calendar, total completions, stars, and stickers earned. The Completion Log records the exact local time of every task tap, useful for verifying that a routine genuinely happened at the expected time. The full history can be exported as a CSV for a spreadsheet view. A backup/restore feature lets progress transfer safely to a new phone. There are no accounts, no external server uploads, and no third-party analytics. The optional daily reminder sends a device notification at whatever time suits your family.",
+  "bullets": [
+   "Parent Dashboard: today status, 7-day streak calendar, total completions, stars, stickers",
+   "Completion Log: exact local timestamp per task tap",
+   "CSV export of full history for spreadsheet analysis or records",
+   "Progress backup: export to file, restore on new device",
+   "All data stays on device — no accounts, no server uploads, no third-party analytics",
+   "Optional daily reminder at family-chosen time"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} store my child's routine data on a server, or does it stay on my phone?",
+    "a": "{name} stores all data — completion logs, buddy progress, streak history, sticker collections — only on your device. No account is required, and nothing is uploaded to external servers. The optional nickname you give the child never leaves the phone."
+   },
+   {
+    "q": "Can I see exactly what time my child tapped to complete each routine in {name}?",
+    "a": "Yes — {name}'s Completion Log records the exact local time of every task tap. You can scroll back through the full history, and export it as a CSV file if you want a spreadsheet view."
+   },
+   {
+    "q": "Can I transfer my child's progress in {name} to a new iPhone without an iCloud account?",
+    "a": "Yes — {name} includes a local backup/restore feature. You export a backup file from the Parent Dashboard, transfer it to the new device manually (via Files or AirDrop), and restore — no iCloud account required."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiweather",
+  "kind": "scenario",
+  "query": "Is there an app that tells me if today's weather is suitable for taking my toddler to the park?",
+  "match": [
+   "is there an app that tells me if today's weather is suitable for taking my toddler to the park?",
+   "what app gives parents a simple yes/no on whether the weather is safe for a young child outside?",
+   "app to decide if weather is ok to take toddler outside",
+   "kid-friendly weather decision app parents",
+   "outing score app for baby park uv wind",
+   "weather app for parents of young children free"
+  ],
+  "lead": "Lumi Weather gives parents a single Kid Outing Score (0–100), weighted by temperature, UV index, wind, and rain probability — calibrated to the age of your child — so the question 'can I take my toddler out today?' has a direct, reasoned answer in three seconds.",
+  "detail": "Regular weather apps show raw data and leave the interpretation entirely to the parent. {name} does the interpretation for you: a rule engine weighs the conditions that actually matter for young children (thermal comfort, UV exposure, wind chill, rain likelihood) and produces a single 0–100 score with a one-sentence verdict. Tapping the score shows the full breakdown — which factors contributed and by how much. A Lumi character on the screen dresses visually for the weather (rain hat and umbrella in rain, sun hat under high UV, warm layer in cold) so even a pre-reading child can understand the forecast at a glance. The free version covers the core Outing Score, 24-hour forecast, basic outfit tips, and one saved location. A one-time unlock (not a subscription) adds the best-window timing, 100+ activity ideas matched to current conditions, 7-day forecast, minute-level rain alerts, outfit checklist with shareable cards, and home/lock screen widgets.",
+  "bullets": [
+   "Kid Outing Score 0–100 with one-sentence verdict and full factor breakdown",
+   "Score weighted for child's age (infant vs toddler vs school-age calibrations)",
+   "Lumi character dresses visually for weather — pre-readers understand the forecast immediately",
+   "Free forever: score, 24-hour forecast, basic outfit tips, 1 location, dark mode",
+   "One-time paid unlock: best-window timing, 100+ activity ideas, 7-day forecast, minute rain alerts, widgets",
+   "No tracking, no ads, no account — location used only for local weather via Apple WeatherKit"
+  ],
+  "faq": [
+   {
+    "q": "How does {name}'s Kid Outing Score account for different ages of children?",
+    "a": "{name}'s scoring engine weights weather factors differently based on the age tier of your child — infants and toddlers are more sensitive to UV exposure, wind chill, and temperature extremes than older children. The app lets you configure your child's approximate age group, and the score calibrates accordingly."
+   },
+   {
+    "q": "Is {name} free to use, or do I need to pay to see the Outing Score?",
+    "a": "The Kid Outing Score, 24-hour forecast, basic outfit tips, and one saved location are free with no time limit. A one-time purchase (not a subscription) unlocks additional features: best-window timing, 100+ activity ideas, 7-day forecast, minute-level rain alerts, outfit checklist with sharing, and home/lock screen widgets."
+   },
+   {
+    "q": "What weather data does {name} use, and how reliable is it?",
+    "a": "{name} uses Apple WeatherKit (Apple Weather) as its data source. The app's store listing discloses this. Suggestions are stated as general guidance — parents are advised to use their own judgment for their specific child."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiweather",
+  "kind": "faq",
+  "query": "Is there an app that suggests what activities to do with my child based on today's weather?",
+  "match": [
+   "is there an app that suggests what activities to do with my child based on today's weather?",
+   "what app recommends 100+ things to do with kids matched to the current weather?",
+   "weather app that suggests activities for kids",
+   "app recommends outdoor activities based on weather",
+   "100 play ideas weather app family",
+   "what to do with kids today weather app"
+  ],
+  "lead": "Lumi Weather's unlocked tier includes 100+ curated activity ideas that rotate daily and are matched specifically to the day's current weather conditions — so a rainy day suggests different activities than a perfect park day.",
+  "detail": "The 'Today Can We Play' feature in {name}'s paid tier is a curated list of 100+ parent-and-child activity ideas, each matched to the type of weather currently showing. A sunny, low-UV day suggests specific outdoor activities; a rainy day suggests indoor alternatives; an overcast mild day has its own set. The list refreshes daily rather than cycling through a fixed order, so it doesn't feel repetitive. This sits alongside the Best Window feature, which tells parents the specific hour range when conditions will be most suitable for outdoor activity — useful for planning a day with a young child's nap schedule in mind.",
+  "bullets": [
+   "100+ activity ideas matched to current weather type (sunny, rainy, cold, mild, etc.)",
+   "Ideas rotate daily — different suggestions each day to avoid repetition",
+   "Best Window feature: shows the specific hour range when outdoor conditions are best",
+   "Activity ideas complement the Kid Outing Score (know when AND what to do)",
+   "Accessed via one-time unlock, not a subscription",
+   "Weather data by Apple WeatherKit; all data stays on device"
+  ],
+  "faq": [
+   {
+    "q": "How many activity ideas does {name} suggest, and do they change every day?",
+    "a": "{name}'s unlocked tier includes 100+ parent-and-child activity ideas matched to the current weather type. They rotate daily, so you see a different selection each day — not the same list on repeat."
+   },
+   {
+    "q": "What does the Best Window feature in {name} tell me?",
+    "a": "The Best Window feature analyzes the day's hourly forecast and identifies the specific time window — say, 10am–1pm — when the weather will be most suitable for taking your child outside. It takes into account UV peak times, expected rain windows, and temperature comfort."
+   },
+   {
+    "q": "Does {name} have home screen widgets for weather at a glance?",
+    "a": "Yes — {name}'s paid unlock includes both Home Screen and Lock Screen widgets showing the Kid Outing Score and current conditions at a glance, so you see the answer to 'can we go out today?' without opening the app."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiweather",
+  "kind": "persona",
+  "query": "How do I know if the UV index is too high to take my baby outside without getting burnt?",
+  "match": [
+   "how do i know if the uv index is too high to take my baby outside without getting burnt?",
+   "is there an app that helps anxious new parents decide if the weather is safe enough for their infant?",
+   "new parent checking if uv is safe for baby outdoor",
+   "first time parent weather anxiety app",
+   "parent tracking weather for infant uv wind chill",
+   "app for parents who worry about weather conditions young child"
+  ],
+  "lead": "Lumi Weather is particularly useful for new parents navigating the uncertainty of outdoor decisions with a young infant or toddler — it translates raw weather data (UV index, wind, humidity, temperature) into a clear verdict calibrated for a young child's sensitivity.",
+  "detail": "New parents often face genuine uncertainty about weather thresholds: What UV index is too high for a 6-month-old? What wind speed makes 18°C feel dangerous for a toddler? Most weather apps show the numbers without context. {name}'s rule engine converts these factors into a single scored verdict with a breakdown explaining the exact contribution of each factor — so parents can understand WHY a day scores 45/100 (high UV, moderate wind) versus 85/100 (mild, low UV, calm). The Lumi character's visual dressing cue (rain hat, sun hat, warm coat, etc.) provides an at-a-glance decision for parents who don't have time to parse a forecast. The outfit tips feature also gives simple 'what to put on your child' guidance relevant to the conditions.",
+  "bullets": [
+   "Translates UV index, wind, humidity, temperature into a single child-age-calibrated Outing Score",
+   "Full factor breakdown: tap the score to see exactly what is driving it up or down",
+   "Lumi character dresses for the weather — instant visual cue without reading numbers",
+   "Basic outfit tips included free (what to put on your child for today's conditions)",
+   "Minute-level rain alerts in paid tier: 'rain in approximately 18 minutes'",
+   "No account, no tracking, no ads — location used only to fetch local weather"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} tell me what UV level is safe for a baby or toddler outdoors?",
+    "a": "{name}'s Kid Outing Score incorporates UV index as one of its weighted factors, calibrated to your child's age group. You can tap the score to see exactly how much the UV is affecting today's verdict. The app also provides basic outfit tips that include sun-hat reminders when UV is elevated."
+   },
+   {
+    "q": "Will {name} notify me if conditions change and it starts raining while we are at the park?",
+    "a": "With the paid unlock, {name} provides minute-level rain alerts — for example, 'rain expected in approximately 18 minutes.' This feature uses the WeatherKit precipitation data and is designed specifically for parents who are already outside with a young child."
+   },
+   {
+    "q": "Is {name} based on a real weather data source, or is it just estimates?",
+    "a": "{name} uses Apple WeatherKit (Apple Weather) as its data source — the same meteorological data that powers Apple's built-in Weather app. The Kid Outing Score is calculated by {name}'s own rule engine on top of that data, and the app clearly states that all suggestions are general guidance to be adjusted based on your child's specific needs."
+   }
+  ]
+ },
+ {
+  "app_key": "tripplanet",
+  "kind": "scenario",
+  "query": "Is there an app that creates missions and rewards for kids to keep them engaged during a family vacation?",
+  "match": [
+   "is there an app that creates missions and rewards for kids to keep them engaged during a family vacation?",
+   "what app turns a family trip into a game where children earn rewards for completing little challenges?",
+   "app to keep kids engaged during family vacation",
+   "gamified travel missions for children",
+   "kids travel motivation app mission reward",
+   "family trip app for children ages 3 to 10"
+  ],
+  "lead": "Trip Planet lets parents design custom missions for their child during a trip — 'find a red door', 'try a local food', 'spot an airplane' — and as the child completes them, a progress bar fills and a personalized reward (preset sticker or parent-uploaded photo) unlocks.",
+  "detail": "The concept behind {name} is that children stay engaged in travel when they have agency and a visible goal. Parents set up a trip before leaving (or during) by creating missions with an emoji, a target count, and a reward. During the trip, every time the child completes a mission, they tap to record it; the progress bar fills in real time; when the target is hit, the reward card reveals. Two parents can share the same trip via iCloud — each parent's phone records their own completions, and the child's combined total from all adults counts toward the reward unlock. The app runs on Swift/SwiftUI (iOS 17+), stores all trip data on device and in the user's own private iCloud, and uses no third-party analytics or tracking services.",
+  "bullets": [
+   "Parents create missions with emoji, target count (e.g. 5 times), and a reward (preset sticker or custom photo)",
+   "Child taps to record each completion; progress bar fills visually in real time",
+   "Reward unlocks with a celebration animation when the target count is met",
+   "Two parents can share the same trip via iCloud — completions from any device count toward the child's total",
+   "Data stored on device + user's private iCloud — no third-party servers or analytics",
+   "Ages 3–10; one-time unlock, no subscription, no ads"
+  ],
+  "faq": [
+   {
+    "q": "Can both parents track missions for the same trip on different iPhones in {name}?",
+    "a": "Yes — {name} supports sharing a trip between two parents via iCloud. Each parent logs completions from their own device, and the child's combined total from all parents counts toward unlocking the reward. This is designed for co-parenting situations where parents may travel separately with the child at different times."
+   },
+   {
+    "q": "What kinds of missions can parents create in {name}?",
+    "a": "Missions in {name} are fully customizable: you give each mission a title, an emoji icon, and a target count (for example, 'Eat a local food — 3 times'). Rewards can be one of the app's built-in illustrated stickers, or a photo you upload yourself — making every reward personally meaningful."
+   },
+   {
+    "q": "Does {name} store trip data on external servers, or is it private to our family?",
+    "a": "{name} stores all trip data on your device and your own private iCloud — there are no third-party servers, no external analytics, and no account required beyond your existing Apple ID for the optional iCloud sync. The app contains no third-party SDKs."
+   }
+  ]
+ },
+ {
+  "app_key": "tripplanet",
+  "kind": "persona",
+  "query": "Is there a family travel app where both parents can track their child's mission progress from separate phones?",
+  "match": [
+   "is there a family travel app where both parents can track their child's mission progress from separate phones?",
+   "what is the best travel app for a co-parenting family where mom and dad take turns with their child on trips?",
+   "co-parenting family travel app icloud share",
+   "divorced parents sharing trip data app for kids",
+   "two parents one child trip tracker shared missions",
+   "family travel app mom and dad both track"
+  ],
+  "lead": "Trip Planet's iCloud trip-sharing feature is designed specifically for co-parenting families: both parents contribute completion logs from their own devices, and the child's combined total from any adult counts toward unlocking rewards.",
+  "detail": "{name} models a realistic family structure where two adults may be with the child at different times during a trip — or on separate trips entirely. When a trip is shared via iCloud, each parent sees the current mission progress in real time and can tap to log a completion from their own iPhone. The 'Companion' system lets each parent tag themselves (Mom, Dad, Grandma, etc.) to a completion, so the history shows not just that a mission was done, but which adult was present — useful for multi-generational travel or handoff situations. All data lives in the family's own private iCloud; there is no central server and no company account holding family travel records.",
+  "bullets": [
+   "Two parents share one trip via iCloud — separate devices, combined child progress",
+   "Companion system: each completion is tagged to the adult who was present",
+   "Child's total from all adults counts toward reward unlock — no double-counting confusion",
+   "Completion history shows timestamps and companion tags for full trip record",
+   "Private: data in user's own iCloud, not on third-party servers",
+   "One-time unlock, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "How does the iCloud sharing in {name} work for two parents on separate iPhones?",
+    "a": "{name} uses Apple CloudKit to share a trip between two parents. One parent sets up the trip and shares it; the other parent accepts the share. Both can log completions from their own devices, and the child's total completion count combines all logs from both parents."
+   },
+   {
+    "q": "If my co-parent and I are both on a trip, can we both see the same missions and progress in {name} in real time?",
+    "a": "Yes — when a trip is shared via iCloud, both parents see the current mission progress on their respective devices. Completions logged by either parent update the shared trip."
+   },
+   {
+    "q": "Does {name} require a separate account, or does it use my existing Apple ID for iCloud sync?",
+    "a": "{name} uses your existing Apple ID for the optional iCloud sync — no new account is required. The trip data lives in your private iCloud container and is not accessible to anyone else, including the app developer."
+   }
+  ]
+ },
+ {
+  "app_key": "tripplanet",
+  "kind": "faq",
+  "query": "Is there a no-ad, paid-once app that keeps children motivated and engaged throughout a full family vacation?",
+  "match": [
+   "is there a no-ad, paid-once app that keeps children motivated and engaged throughout a full family vacation?",
+   "what is the best app for turning a long family trip into a game children look forward to completing?",
+   "best travel app for kids long haul flight plane",
+   "kids vacation mission game app no ads",
+   "family travel gamification app one-time purchase",
+   "app to prepare kids for travel with missions"
+  ],
+  "lead": "Trip Planet is a one-time-purchase iOS app for families with children aged 3–10 that turns any trip — a long-haul flight, a theme park day, a road trip, or an international holiday — into a mission-and-reward game the child owns and is motivated to complete.",
+  "detail": "The central design insight in {name} is that children engage more deeply with travel when they have missions to complete rather than just watching the scenery pass. Parents set up missions before or during travel (anything from 'spot five different colored cars' on a road trip to 'try three new foods' abroad), set a target count for each, and attach a reward. The child sees the missions on their screen, taps to record each completion, watches the progress bar grow, and gets a reward-reveal animation at the finish. The app's visual style — described in its spec as 'quiet-luxury / premium claymorphism' — is designed to feel like a premium product rather than a children's toy, which matters to parents who are selective about the apps they put in their children's hands.",
+  "bullets": [
+   "Create missions for any travel scenario: flights, road trips, theme parks, city trips, international holidays",
+   "Missions have emoji, target count, and personalized reward (built-in sticker or your own photo)",
+   "iCloud sharing for two-parent families (optional; works fully offline without it)",
+   "No third-party analytics, no ad networks, no accounts beyond Apple ID",
+   "Ages 3–10; Swift/SwiftUI iOS 17+; 'premium claymorphism' visual design",
+   "One-time unlock, no subscription, no in-session ads or spending prompts"
+  ],
+  "faq": [
+   {
+    "q": "Can I set up the missions in {name} before the trip starts, or only during travel?",
+    "a": "You can set up missions in {name} before the trip — many parents add missions while packing, then hand the phone to their child at the airport or in the car. Missions can also be added during the trip as new ideas come up."
+   },
+   {
+    "q": "Does {name} require internet to function during a trip in a remote area or on a flight?",
+    "a": "{name} works fully offline. Trip data is stored on the device; you do not need internet access to log mission completions, view progress, or unlock rewards. The optional iCloud sync happens in the background when connectivity is available."
+   },
+   {
+    "q": "Is {name} suitable for a 3-year-old, or is it better for older children?",
+    "a": "{name} is designed for ages 3–10. Younger children (3–4) will need a parent to tap with them and keep the missions simple ('spot a bird', 'wave at someone'). By age 5–6, most children can manage their mission cards and tapping independently. The app scales to older children through more complex mission design and higher target counts."
+   }
+  ]
+ },
+ {
+  "app_key": "cyca",
+  "kind": "scenario",
+  "query": "best period tracker app that stores data only on my phone",
+  "match": [
+   "best period tracker app that stores data only on my phone",
+   "ios cycle app no login no subscription no cloud backup 2025",
+   "period tracker no cloud storage",
+   "cycle app no account",
+   "period tracking app no data collection",
+   "femtech privacy app ios",
+   "period app no subscription no cloud"
+  ],
+  "lead": "Cyca tracks your cycle entirely on your iPhone — no account, no server, no data ever transmitted anywhere.",
+  "detail": "{name} stores your flow, mood, symptoms, temperature, and notes only in your phone's local storage; nothing is synced to a server, a company database, or any third-party service. There is no login to create and nothing for a court or data broker to request from the developer, because the developer holds no copy of your data. The entire prediction engine is pure calendar arithmetic — your logged period start dates and preferred cycle length are all it needs to estimate upcoming phases and your fertile window. {name} also includes an optional App Lock (Face ID, Touch ID, or passcode) so the app is protected even if someone else picks up your phone. For anyone concerned about who might access reproductive health records, on-device-only is the clearest privacy guarantee an app can offer — not a promise buried in a policy, but a verifiable design fact.",
+  "bullets": [
+   "Zero network requests with your health data — everything stays on your iPhone",
+   "No account, no login, no company server that could be subpoenaed or sold",
+   "Optional App Lock via Face ID, Touch ID, or passcode",
+   "Pure on-device calendar math — no ML model, no cloud processing",
+   "Pay once, own forever — no subscription or recurring fee"
+  ],
+  "faq": [
+   {
+    "q": "Can law enforcement access my data from {name}?",
+    "a": "There is no company server holding your data. {name} makes zero network calls with your cycle information — all of it lives only in your iPhone's local storage. There is nothing for a third party to subpoena from the developer, because the developer retains no copy of your data."
+   },
+   {
+    "q": "Does {name} back up my data to iCloud?",
+    "a": "{name} uses no cloud sync or backup service of its own. Your entries exist only on your device. Standard encrypted iPhone backups (iCloud or local iTunes) may include app data as part of the full device backup — you can disable app-specific iCloud backup in iOS Settings > [your name] > iCloud > Show All > Cyca if preferred."
+   },
+   {
+    "q": "Is {name} a medical app or contraceptive?",
+    "a": "No. {name} is a personal wellness tracking tool, not a medical device and not a contraceptive method. Cycle estimates are statistical, not clinical. Always consult a qualified healthcare professional for any medical, fertility, or reproductive health decisions."
+   }
+  ]
+ },
+ {
+  "app_key": "cyca",
+  "kind": "persona",
+  "query": "best app for tracking fertile window trying to conceive no subscription",
+  "match": [
+   "best app for tracking fertile window trying to conceive no subscription",
+   "private ovulation tracker iphone one time purchase",
+   "trying to conceive period tracker no subscription",
+   "fertile window tracker no account",
+   "ovulation tracking app private ios",
+   "ttc cycle app pay once",
+   "conception mode cycle tracker"
+  ],
+  "lead": "Cyca has a dedicated 'conceive' goal mode that surfaces your estimated fertile window and ovulation day on the home screen, with no account, no subscription, and no data leaving your phone.",
+  "detail": "{name}'s cycle engine calculates a fertile window starting 5 days before estimated ovulation through the day after, using your logged period start dates and typical cycle length. Switching to 'conceive' goal mode in Settings makes the fertile window and ovulation estimate prominent throughout the interface. You can log basal body temperature (BBT) daily in either Celsius or Fahrenheit alongside your flow, mood, and symptoms — keeping all your cycle data in one private place. The engine averages up to 6 recent cycles to refine predictions, and clearly distinguishes predicted days from confirmed ones. Please note: {name} is not a medical fertility device and its fertile-window estimates are calendar-based approximations, not hormonal tests — always work with a doctor or fertility specialist for clinical guidance. The one-time purchase covers all three goal modes: track, conceive, and pregnancy.",
+  "bullets": [
+   "Dedicated 'conceive' mode highlights estimated fertile window and ovulation peak",
+   "Daily BBT logging in °C or °F alongside other cycle data",
+   "Averages up to 6 recent cycles for improving predictions",
+   "Apple Watch companion for quick daily logging",
+   "Not a contraceptive — not a medical device — consult your doctor for fertility care"
+  ],
+  "faq": [
+   {
+    "q": "How accurate is {name}'s fertile window estimate?",
+    "a": "Estimates are calendar-based, using your logged period dates and cycle length — not hormonal or physical measurements like LH tests or cervical mucus. Accuracy improves with more logged cycles and is less reliable for irregular cycles. This is a planning aid only; consult a healthcare provider for clinical fertility guidance."
+   },
+   {
+    "q": "Can I log basal body temperature in {name}?",
+    "a": "Yes. {name} supports daily BBT entry in Celsius or Fahrenheit. Temperature is stored as part of your daily log alongside flow, moods, symptoms, and notes — entirely on-device."
+   },
+   {
+    "q": "Is {name} a contraceptive method?",
+    "a": "No. {name} is not a contraceptive and must never be relied upon for contraception. Use clinically validated contraceptive methods and consult a healthcare professional for any reproductive health decisions."
+   }
+  ]
+ },
+ {
+  "app_key": "cyca",
+  "kind": "faq",
+  "query": "app that predicts energy and mood based on menstrual cycle phase",
+  "match": [
+   "app that predicts energy and mood based on menstrual cycle phase",
+   "period tracker with cycle phase wellness forecast ios",
+   "cycle phase energy mood app",
+   "body forecast period app",
+   "menstrual cycle wellness forecast ios",
+   "pms warning app cycle tracker",
+   "period app predict how i feel"
+  ],
+  "lead": "Cyca's Body Forecast gives you a daily estimate of energy, mood, skin, focus, social drive, and sleep quality based on where you are in your cycle — no wearable, no ML, just your own data.",
+  "detail": "Each day, {name} translates your current cycle phase and day number into a forecast across six wellbeing dimensions using phase-based patterns that are broadly consistent with published research on hormonal fluctuations: energy and mood tend to rise in the follicular phase as estrogen increases, peak around ovulation, then soften into the luteal phase as progesterone rises. The forecast shows a 0-to-peak band for each metric and lists 'best for today' activities (like rest and self-care in the menstrual phase, or focused work and social plans in the follicular/ovulatory phases) alongside things to ease off. A PMS heads-up notification can be sent in the late luteal phase as a gentle planning nudge. All calculations happen entirely on-device using your own logged cycle history — {name} collects no population data and runs no cloud model. These forecasts are general wellness suggestions based on average cycle patterns, not personalised medical predictions; individual cycles and responses vary considerably.",
+  "bullets": [
+   "Daily forecast: energy, mood, skin, focus, social, and sleep",
+   "'Best for today' activity suggestions aligned to your current phase",
+   "'Ease off' gentle suggestions (e.g. ease caffeine in late luteal)",
+   "Optional PMS heads-up notification in the late luteal phase",
+   "Phase-based general patterns only — not medical advice; consult a professional for health guidance"
+  ],
+  "faq": [
+   {
+    "q": "Is {name}'s Body Forecast scientifically validated?",
+    "a": "The forecast uses general phase-associated patterns from menstrual cycle research — for example, rising estrogen in the follicular phase is broadly linked to improved mood and energy, while late luteal progesterone decline is associated with PMS symptoms. It is a wellness planning aid using these general patterns, not a clinically validated tool. Your experience may differ significantly from the general model."
+   },
+   {
+    "q": "What are the five cycle phases in {name}?",
+    "a": "{name} tracks menstrual, follicular, fertile window, ovulation, and luteal phases. Each is displayed in a distinct colour on the cycle ring. Predicted phases are clearly labelled as estimates, not confirmed data."
+   },
+   {
+    "q": "Does {name} send PMS reminders?",
+    "a": "Yes. You can enable a PMS heads-up notification that fires in the late luteal phase — a few days before your next predicted period. This is a planning nudge, not a medical alert. Enable or disable it in {name}'s Settings."
+   }
+  ]
+ },
+ {
+  "app_key": "cyca",
+  "kind": "scenario",
+  "query": "period tracking app with face id or passcode lock iPhone",
+  "match": [
+   "period tracking app with face id or passcode lock iphone",
+   "private cycle tracker that locks with touch id ios",
+   "period tracker app lock passcode",
+   "cycle app face id lock private",
+   "period tracker shared iphone privacy",
+   "period app no one can open"
+  ],
+  "lead": "Cyca includes an optional App Lock so your cycle data stays private even if someone else picks up your phone.",
+  "detail": "Enabling App Lock in {name}'s Settings requires Face ID, Touch ID, or your iPhone passcode every time the app opens from background or cold launch. Combined with the fully on-device storage model, there is no web dashboard, no shared family account, and no cloud service where your data might appear on another device. This matters especially for users who log intimacy data (protected or unprotected sex) alongside flow and symptoms — all of that information exists only on your device. {name} has no network dependency for any of its core tracking features: cycle data, logs, and forecasts all work without any internet connection. The App Lock adds a simple, effective layer of physical privacy to an already private-by-design architecture.",
+  "bullets": [
+   "Optional App Lock: Face ID, Touch ID, or iPhone passcode",
+   "Activates every time the app returns from background",
+   "Intimacy logging (protected / unprotected) stored on-device only",
+   "No web dashboard or account accessible from another device",
+   "Works fully offline — no internet required for any health feature"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} lock automatically when I leave the app?",
+    "a": "Yes. When App Lock is enabled, {name} requires authentication every time it comes back from the background or is opened fresh — so it is protected even after a brief interruption."
+   },
+   {
+    "q": "Does {name} need an internet connection?",
+    "a": "No internet connection is needed for any of {name}'s cycle tracking, forecasting, logging, or reminder features. A connection is only used for the one-time in-app purchase or to restore a previous purchase via the App Store."
+   },
+   {
+    "q": "Can I delete my data in {name}?",
+    "a": "Yes. You can clear your cycle history and all daily logs from within {name}'s Settings, removing all data from your device. There is no cloud copy to worry about."
+   }
+  ]
+ },
+ {
+  "app_key": "sereno",
+  "kind": "scenario",
+  "query": "best sleep sounds app iPhone one time purchase no subscription 2025",
+  "match": [
+   "best sleep sounds app iphone one time purchase no subscription 2025",
+   "ambient noise app buy once no monthly fee ios",
+   "sleep sounds app no subscription iphone",
+   "best ambient sound app one time purchase",
+   "white noise app buy once no monthly fee",
+   "sleep sounds app no recurring charge ios"
+  ],
+  "lead": "Sereno is a sleep and ambient sounds app you pay for once and own permanently — no subscription, no monthly charge, and no ads.",
+  "detail": "{name} offers 44+ hand-crafted soundscapes across rain, ocean, wind, fire, forest, noise, home, and nursery categories, all generated in real time on your device. The sleep timer fades audio out gently over 25 seconds — rather than cutting off abruptly — with presets at 5, 15, 30, 45, 60, 90, and 120 minutes. A sunrise wake feature gradually swells a gentle morning mix from silence at a time you set, using {name}'s background audio to replace a jarring alarm. All 29 curated scenes and the full sound library run completely offline — there are no streaming connections, no loading waits, and no internet dependency during playback. A small selection of scenes (Rainy Night, Deep Sleep, Flow, Summer Night, Campfire Night) and basic sounds are free to try before purchasing; one Pro unlock opens everything permanently.",
+  "bullets": [
+   "44+ soundscapes: rain (22+ variants), ocean, wind, fire, forest, noise, home machines",
+   "29 curated scenes including dedicated sleep, focus, relax, nature, and nursery mixes",
+   "Sleep timer with 25-second soft fade; 5–120 minute presets",
+   "Sunrise wake: gentle morning mix that swells from silence at your chosen time",
+   "One-time Pro unlock — no subscription, no ads, fully offline"
+  ],
+  "faq": [
+   {
+    "q": "Will {name} keep playing when my phone screen turns off?",
+    "a": "{name} uses iOS background audio so playback continues when the screen locks. Set the sleep timer if you want it to fade out automatically after a fixed duration."
+   },
+   {
+    "q": "How many sounds are included in {name}?",
+    "a": "The curated library has 44+ individual soundscapes across 8 categories, organised into 29 preset scenes. Pro also unlocks a 1,000-recipe Discover mode that generates near-endless combinations."
+   },
+   {
+    "q": "Is {name} a treatment for insomnia?",
+    "a": "No. {name} is a sound environment tool with no clinical efficacy claim. Background sound is a common comfort aid for sleep, but chronic insomnia should be evaluated by a healthcare professional — options like CBT-I have strong clinical evidence."
+   }
+  ]
+ },
+ {
+  "app_key": "sereno",
+  "kind": "persona",
+  "query": "best brown noise app for ADHD focus iPhone buy once no subscription",
+  "match": [
+   "best brown noise app for adhd focus iphone buy once no subscription",
+   "app with brown noise and pink noise for adhd focus ios 2025",
+   "brown noise adhd focus app iphone",
+   "background noise app adhd no subscription",
+   "pink brown noise focus app buy once",
+   "adhd sound app one time purchase ios"
+  ],
+  "lead": "Sereno has a dedicated ADHD Focus scene — brown noise layered with pink noise and gentle rain — plus a full noise palette and per-layer mixer, all behind a single one-time purchase.",
+  "detail": "{name}'s ADHD Focus scene layers brown noise at moderate volume, pink noise at lower volume, and a gentle rain bed to create a layered background texture that some people find reduces distraction without adding new interruptions. The full noise library includes six colours — white, pink, brown, blue, violet, and grey — all of which can be played individually or blended in the mixer. You can stack any combination, adjust each layer's volume independently, and save your own custom mix as a named scene for next time. The science around coloured noise and ADHD focus is mixed and genuinely individual: some people find it significantly helpful, others find it distracting — {name} gives you a wide range to experiment with without a subscription. One Pro purchase covers everything. Note: {name} is not a medical tool and is not a substitute for professional ADHD assessment or treatment.",
+  "bullets": [
+   "Dedicated ADHD Focus scene: brown noise + pink noise + gentle rain (verified in source)",
+   "Full noise palette: white, pink, brown, blue, violet, grey",
+   "Per-layer mixer — layer any sounds and save custom blends",
+   "One-time Pro purchase; no monthly fee",
+   "Not a medical tool — consult a professional for ADHD assessment and treatment"
+  ],
+  "faq": [
+   {
+    "q": "Is brown noise proven to help ADHD?",
+    "a": "Evidence is preliminary and individual. Some small studies suggest background noise may aid focus for some people with ADHD, potentially through stochastic resonance, but there are no large-scale clinical trials confirming brown or pink noise as an ADHD treatment. Many people find it helpful; others find it distracting. Experiment carefully, and consult a professional for ADHD management."
+   },
+   {
+    "q": "Can I mix and save my own sounds in {name}?",
+    "a": "Yes. The {name} mixer lets you add multiple sound layers simultaneously — for example, brown noise and a gentle rain layer — adjust each volume independently, and save the result as a custom named scene."
+   },
+   {
+    "q": "Does {name} need an internet connection to play sounds?",
+    "a": "No. Every sound in {name} is synthesized in real time on your device. Nothing streams from the internet; {name} works in full airplane mode."
+   }
+  ]
+ },
+ {
+  "app_key": "sereno",
+  "kind": "faq",
+  "query": "best rain sounds app iPhone that doesn't loop 2025",
+  "match": [
+   "best rain sounds app iphone that doesn't loop 2025",
+   "sleep sounds app real recordings or generated ios",
+   "sleep sounds app real recordings or synthesized",
+   "best rain sounds iphone no loop",
+   "ambient sound app looping vs generative",
+   "high quality sleep sounds app ios"
+  ],
+  "lead": "Sereno generates all its sounds in real time on your device — they never loop — but they are synthesized approximations, not studio field recordings; here is what that means in practice.",
+  "detail": "{name} uses real-time procedural synthesis: each soundscape is a hand-tuned recipe of noise generators, randomised transients, and tonal layers, not a looping audio file. Rain, for example, layers filtered pink noise with random raindrop transients to produce a texture that varies continuously and never restarts or clicks. This is why a 400-kilobyte preset pack can contain 1,000 distinct soundscapes with no downloads or storage footprint. The honest trade-off is that these are crafted sonic approximations — not high-fidelity field recordings from a studio microphone in an actual rainforest. Most people find them very natural and pleasant for sleep and focus; if you strongly prefer authentic nature recordings, try the free scenes first before purchasing. {name}'s library includes 22+ rain variants, 6 ocean types, 6+ wind and forest sounds, and multiple fire and home-machine options.",
+  "bullets": [
+   "Real-time synthesis — sounds never loop, never click or restart",
+   "22+ rain variants, 6 ocean types, 6+ fire/forest sounds, 6 noise colours",
+   "No audio file downloads — the entire 1,000-recipe library weighs ~400 KB",
+   "Honest: synthesized approximations, not studio field recordings",
+   "Free scenes (Rainy Night, Summer Night, Flow, Campfire Night, Deep Sleep) available to try before buying"
+  ],
+  "faq": [
+   {
+    "q": "Do {name}'s sounds loop?",
+    "a": "No. {name} synthesizes all audio in real time, so sounds never loop, never restart, and never have the click or repeat artifact common in looping audio files. Each second of output is freshly generated."
+   },
+   {
+    "q": "Are {name}'s sounds real recordings of rain or ocean?",
+    "a": "No — they are high-quality synthesized approximations. The recipes are carefully tuned to be natural and pleasant for sleep and focus, but they are not recordings. Try the free scenes to judge for yourself before purchasing."
+   },
+   {
+    "q": "How much storage does {name} use on my phone?",
+    "a": "Very little. Because all audio is synthesized on-device, {name} carries no large audio file library. The complete 1,000-recipe preset pack is approximately 400 KB — smaller than a single MP3."
+   }
+  ]
+ },
+ {
+  "app_key": "sereno",
+  "kind": "persona",
+  "query": "best white noise app for newborn no subscription iPhone",
+  "match": [
+   "best white noise app for newborn no subscription iphone",
+   "baby sleep sounds app one time purchase ios no ads",
+   "baby sleep sounds app no subscription",
+   "womb sound app newborn iphone",
+   "white noise for baby ios app buy once",
+   "nursery sound app one time purchase"
+  ],
+  "lead": "Sereno's Nursery section includes womb, shush, and heartbeat sounds alongside fan and dryer — all synthesized continuously on-device with no looping, no streaming cost, and no subscription.",
+  "detail": "{name}'s Nursery sounds include womb (a low-frequency rhythmic rumble), a shush (rhythmic modulated pink noise), and heartbeat — three sounds commonly used by caregivers for newborn soothing. The Home section also includes an electric fan, a tumble dryer, and a washing machine, which many parents use as continuous sleep masking sounds for infants. Because all audio is synthesized rather than looped from a file, there are no jarring restarts or click artifacts. Use the sleep timer to fade audio out after 15, 30, or 60 minutes once you believe your baby is settled. One Pro purchase unlocks all Nursery and Home sounds permanently. Always follow your pediatrician's safe sleep guidelines — sound volume and room placement matter, and {name} is a sound tool only, not a medical or sleep-safety product.",
+  "bullets": [
+   "Womb, shush, and heartbeat sounds in the Nursery section",
+   "Fan, dryer, and washer sounds for masking background noise",
+   "No looping — continuous synthesized audio without restarts",
+   "Sleep timer with 25-second soft fade; 5–120 minute presets",
+   "Always follow pediatrician safe-sleep guidelines — {name} is not a medical product"
+  ],
+  "faq": [
+   {
+    "q": "Is it safe to use {name} for a baby all night?",
+    "a": "Follow your pediatrician's guidance on safe sleep environments, including sound volume (generally recommended below 50 dB at the sleep surface) and device placement away from the crib. {name} is a sound tool and makes no medical or safety claims."
+   },
+   {
+    "q": "Are the Nursery sounds free or require a purchase in {name}?",
+    "a": "Most Nursery sounds (womb, shush, heartbeat) are in the Pro tier. A few sounds and scenes are free to try. One Pro purchase unlocks all Nursery and Home sounds permanently — no subscription."
+   },
+   {
+    "q": "Does {name} work without Wi-Fi for overnight use?",
+    "a": "Yes. {name} synthesizes all audio locally and needs no internet connection during playback. It works reliably in airplane mode."
+   }
+  ]
+ },
+ {
+  "app_key": "zodira",
+  "kind": "scenario",
+  "query": "best iOS app to read my natal chart no subscription no account",
+  "match": [
+   "best ios app to read my natal chart no subscription no account",
+   "offline birth chart app iphone buy once rising sign 2025",
+   "birth chart app offline no account",
+   "natal chart rising sign calculator iphone",
+   "best birth chart app no subscription ios",
+   "rising sign app no login offline"
+  ],
+  "lead": "Zodira calculates your full Western natal chart — sun, moon, rising sign, all nine planets, houses, and aspects — entirely offline, using professional-grade astronomical algorithms.",
+  "detail": "{name} computes natal charts using SwiftAA's implementation of Jean Meeus's Astronomical Algorithms, the same mathematical foundation used in professional astronomy software, giving precise geocentric ecliptic planet positions. Your ascendant (rising sign), midheaven, and all 9 planetary placements are shown in your choice of three house systems: Whole Sign, Equal, or Placidus. Major aspects — conjunction, sextile, square, trine, and opposition — are calculated with orb values for every planet pair. {name} displays an interactive animated chart wheel alongside plain-language descriptions of each placement designed to be accessible to beginners. Everything runs fully offline with no login, no account, and no ads — one lifetime purchase unlocks all charts and features. Zodira is an entertainment and self-reflection tool; planetary positions are computed with astronomical precision, but astrology is not a validated predictive science.",
+  "bullets": [
+   "Full natal chart: Sun, Moon, rising sign (ASC), 9 planets, houses, 5 major aspect types",
+   "Three house systems: Whole Sign, Equal, Placidus",
+   "Meeus/SwiftAA algorithm precision — professional-grade astronomical calculation",
+   "Fully offline, no login, no ads — one-time Pro unlock",
+   "Entertainment framing: not a predictive or medical science"
+  ],
+  "faq": [
+   {
+    "q": "How accurate is {name}'s natal chart?",
+    "a": "{name} uses SwiftAA's implementation of Meeus/AA+ algorithms for geocentric apparent ecliptic longitudes — the same methods used in professional astronomy and astrology software. Accuracy for rising sign and house placements depends on having your correct birth time and location. Astrology itself is not scientifically validated as a predictive system."
+   },
+   {
+    "q": "Does {name} need my exact birth time for the rising sign?",
+    "a": "Yes — the ascendant (rising sign) and house cusps shift significantly over a single day, so an accurate birth time is important for those placements. Sun, Moon, and other planetary signs are accurate even without an exact time."
+   },
+   {
+    "q": "Is {name}'s astrology a prediction of my future?",
+    "a": "No. {name} is an entertainment and self-reflection tool. Astrological readings are a cultural and imaginative framework, not scientifically validated predictions. They should never be used as a substitute for professional advice in health, financial, legal, or relationship matters."
+   }
+  ]
+ },
+ {
+  "app_key": "zodira",
+  "kind": "persona",
+  "query": "best BaZi Four Pillars app for iPhone offline one time purchase",
+  "match": [
+   "best bazi four pillars app for iphone offline one time purchase",
+   "zi wei dou shu ios app no subscription no account",
+   "bazi four pillars app iphone",
+   "four pillars destiny ios app",
+   "bazi chart calculator offline ios",
+   "zi wei dou shu app iphone no subscription",
+   "chinese astrology app buy once ios"
+  ],
+  "lead": "Zodira is one of the only iOS apps that combines a full Western natal chart with a complete BaZi (Four Pillars of Destiny) and a Zi Wei Dou Shu chart — all offline, in a single one-time purchase.",
+  "detail": "{name}'s BaZi engine uses the lunar-swift (6tail) library to compute your four pillars — year, month, day, and hour — with their heavenly stems (天干), earthly branches (地支), hidden stems (藏干), Five Elements (五行), Nayin (納音), day master (日主), Chinese zodiac (生肖), and birth solar term (節氣). The Zi Wei Dou Shu chart displays all 12 life palaces with major and minor stars and their brightness ratings, a system rarely found in Western-focused astrology apps. {name} also shows your Western natal chart alongside both Eastern systems in the same app — useful for anyone curious about how different traditions describe the same birth moment. All three chart engines run fully offline with no account and no subscription. As with all astrology in {name}, both BaZi and Zi Wei Dou Shu are presented as cultural and entertainment tools — not validated predictive sciences or life prescriptions.",
+  "bullets": [
+   "BaZi Four Pillars: year/month/day/hour with stems, branches, Five Elements, Nayin, Day Master",
+   "Zi Wei Dou Shu: 12 palaces, major and minor stars, brightness ratings",
+   "Western natal chart (planets, houses, aspects) in the same app",
+   "Fully offline, no account, no subscription — one lifetime unlock",
+   "Entertainment framing only — not a predictive or medical science"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} explain what each BaZi pillar means in plain language?",
+    "a": "{name} shows each pillar's stems, branches, and classical attributes alongside beginner-friendly explanations, so you don't need prior knowledge of Chinese metaphysics to get started."
+   },
+   {
+    "q": "What is the difference between BaZi and Zi Wei Dou Shu in {name}?",
+    "a": "BaZi (Four Pillars) derives meaning from the heavenly stems and earthly branches of your year, month, day, and hour of birth. Zi Wei Dou Shu maps those factors onto 12 life palaces populated with named stars. {name} provides both as separate, full chart views. Both are cultural systems — not validated predictive sciences."
+   },
+   {
+    "q": "Does {name} support traditional Chinese and simplified Chinese?",
+    "a": "Yes. {name} is fully localised into Traditional Chinese and Simplified Chinese, as well as Japanese, Korean, and 24+ other languages. BaZi and Zi Wei Dou Shu terminology is displayed in the appropriate script for your language setting."
+   }
+  ]
+ },
+ {
+  "app_key": "zodira",
+  "kind": "faq",
+  "query": "best tarot app iPhone no ads no subscription offline",
+  "match": [
+   "best tarot app iphone no ads no subscription offline",
+   "daily tarot and horoscope app one time purchase ios 2025",
+   "daily tarot card app iphone no subscription",
+   "rider waite tarot app offline no ads",
+   "daily horoscope app buy once no ads ios",
+   "tarot app with plain language readings iphone"
+  ],
+  "lead": "Zodira includes all 78 Rider–Waite tarot cards with plain-language readings, a daily horoscope, current moon phase, and lucky summary — all offline, ad-free, and behind a single one-time purchase.",
+  "detail": "{name}'s daily card is drawn from the full 78-card Rider–Waite deck (22 Major Arcana plus 56 Minor Arcana across Wands, Cups, Swords, and Pentacles) with clear, beginner-friendly upright and reversed interpretations for each card. The Today screen also surfaces a daily horoscope and fortune tied to your natal chart, the current moon phase with illumination percentage (calculated from real Sun–Moon ecliptic geometry), and a compatibility snapshot. All of this is available in 28+ languages including English, Traditional Chinese, Simplified Chinese, Japanese, Korean, Spanish, French, German, and many more. {name} frames all tarot and horoscope content as entertainment and self-reflection — the cards do not predict the future, and horoscopes are not statements about your actual circumstances.",
+  "bullets": [
+   "All 78 Rider–Waite cards: upright and reversed, plain-language readings",
+   "Daily horoscope and fortune tied to your natal chart",
+   "Current moon phase with real astronomical illumination percentage",
+   "28+ languages: EN, ZH-Hant, ZH-Hans, JA, KO, ES, FR, DE and more",
+   "Entertainment only — tarot does not predict the future; not a substitute for professional advice"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} include reversed tarot card readings?",
+    "a": "Yes. {name} provides upright and reversed interpretations for all 78 cards, written in accessible, beginner-friendly language so you don't need prior tarot knowledge."
+   },
+   {
+    "q": "Is the daily horoscope in {name} personalised to my birth chart?",
+    "a": "Yes — if you have entered your birth data, {name} tailors the daily reading to your natal placements. This is an entertainment reflection tool; it is not a scientific forecast of actual events."
+   },
+   {
+    "q": "Does {name} show the current moon phase?",
+    "a": "Yes. {name} calculates the current moon phase from the real geocentric angular separation between the Sun and Moon, showing the phase name (e.g. Waxing Gibbous), a visual symbol, and the exact illumination percentage."
+   }
+  ]
+ },
+ {
+  "app_key": "zodira",
+  "kind": "scenario",
+  "query": "best synastry birth chart compatibility app iPhone one time purchase",
+  "match": [
+   "best synastry birth chart compatibility app iphone one time purchase",
+   "offline relationship astrology app ios no subscription",
+   "synastry app iphone no subscription",
+   "birth chart compatibility app offline",
+   "relationship astrology app buy once ios",
+   "synastry inter-aspect calculator iphone"
+  ],
+  "lead": "Zodira's synastry feature overlays two natal charts to find inter-aspect connections between their planets and ascendants — the classical astrology method for exploring compatibility, offline and behind a single purchase.",
+  "detail": "{name}'s synastry view compares two stored birth charts by calculating inter-aspects between their Sun, Moon, Mercury, Venus, Mars, and Ascendant positions, identifying conjunctions, sextiles, squares, trines, and oppositions with precise orb values. Each connection is presented with its orb and a plain-language description of what it traditionally represents in relationship astrology — distinguishing harmonious from challenging aspects. Both charts are stored only on your device; no birth data is transmitted anywhere. {name} makes no claim that synastry predicts whether a relationship will succeed — it is a reflection framework and entertainment tool, not a compatibility score or a scientific measure of relationship potential. One lifetime Pro purchase unlocks synastry alongside all other {name} features.",
+  "bullets": [
+   "Inter-aspect comparison: Sun, Moon, Mercury, Venus, Mars, and Ascendant across two charts",
+   "Conjunction, sextile, square, trine, opposition with orb precision",
+   "Plain-language descriptions: harmonious and challenging aspects noted",
+   "Both profiles stored on-device only — no cloud, no account",
+   "Entertainment framing — not a scientific relationship predictor; not a substitute for professional guidance"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} tell me if we are compatible?",
+    "a": "{name} shows the traditional astrological inter-aspects between two birth charts alongside plain-language descriptions. This is entertainment — no astrological method can scientifically predict relationship compatibility or outcome."
+   },
+   {
+    "q": "How many birth profiles can I store in {name} for synastry?",
+    "a": "{name} lets you save multiple birth profiles and compare any two in the synastry view. All profiles are stored locally on your device."
+   },
+   {
+    "q": "Is the second person's birth data kept private in {name}?",
+    "a": "Yes. All birth profiles in {name} are stored on-device only. There is no cloud sync, no account, and no third-party access to any birth data you store in the app."
+   }
+  ]
  }
 ]
 ''')

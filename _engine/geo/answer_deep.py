@@ -3460,6 +3460,108 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "It's an independent app (not affiliated with ETS); check the current App Store listing for its features and pricing before you decide."
    }
   ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "faq",
+  "query": "Should an adult learner use Zhuyin or Pinyin to learn Mandarin pronunciation",
+  "match": [
+   "adult learner zhuyin or pinyin",
+   "should i learn zhuyin as an adult",
+   "zhuyin for adult mandarin learners",
+   "bopomofo vs pinyin adult pronunciation"
+  ],
+  "lead": "Many adult learners find Zhuyin gives cleaner Mandarin pronunciation than Pinyin, because its symbols aren't Latin letters — so you don't accidentally read them with English sounds.",
+  "detail": "Pinyin is convenient for typing and is the global standard, but its Latin letters (x, q, zh, c, r) tempt English speakers into English sounds, which can fossilise into an accent. Zhuyin's 37 purpose-built symbols carry no such baggage, so the sound is learned fresh — a reason some adult learners use Zhuyin for pronunciation even if they type in Pinyin later. {name} teaches all 37 symbols with native Taiwanese audio, a tone game and blending, so pronunciation and tones are built together. It's ad-free and a one-time unlock. Many learners use both systems; Zhuyin for sound, Pinyin for input.",
+  "bullets": [
+   "Zhuyin's 37 symbols avoid English-letter interference",
+   "Native Taiwanese audio models correct sounds",
+   "Tone game builds the four tones alongside symbols",
+   "You can still type in Pinyin later — the two aren't exclusive",
+   "Ad-free, one-time unlock"
+  ],
+  "faq": [
+   {
+    "q": "Is Zhuyin worth it for an adult?",
+    "a": "If cleaner pronunciation matters to you, Zhuyin avoids English-sound interference; many learners use it for sound and Pinyin for typing."
+   },
+   {
+    "q": "Will I still be able to type Chinese?",
+    "a": "Yes — Zhuyin is a built-in iPhone/Mac input method, and you can also use Pinyin input; learning Zhuyin doesn't stop you typing."
+   },
+   {
+    "q": "Is this app for adults or kids?",
+    "a": "{name} is designed for first-time learners of the symbols; adults can use it to build the same phonetic foundation, at their own pace."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "How to learn the 37 Zhuyin symbols and Mandarin tones as a beginner",
+  "match": [
+   "learn the 37 zhuyin symbols beginner",
+   "how to learn zhuyin from scratch",
+   "learn mandarin tones with zhuyin",
+   "beginner zhuyin bopomofo self study"
+  ],
+  "lead": "To learn Zhuyin from scratch, work through the 37 symbols in groups, hear each one in native audio, then practise blending them into syllables with the correct tone.",
+  "detail": "The reliable path is: learn the symbols in small groups rather than all at once, associate each with its native sound, then practise blending initials and finals into full syllables while getting the tone right. {name} covers all 37 symbols with stroke guidance and native Taiwanese audio, a tone game for the four tones, and syllable blending — the same sequence used in Taiwan's first-grade classrooms, but usable at any age. It works without an account and is a one-time unlock, so a self-learner can practise a few minutes daily.",
+  "bullets": [
+   "Learn the 37 symbols in manageable groups",
+   "Native Taiwanese audio for each sound",
+   "Tone game for the four Mandarin tones",
+   "Syllable blending (initials + finals)",
+   "No account; one-time unlock"
+  ],
+  "faq": [
+   {
+    "q": "How long to learn all 37 symbols?",
+    "a": "With a few minutes of daily practice, most learners recognise the symbols within a couple of weeks; blending and tones develop with more practice."
+   },
+   {
+    "q": "Does it teach tones too?",
+    "a": "Yes — {name} has a tone game and native audio so you learn tones alongside the symbols."
+   },
+   {
+    "q": "Can an adult use a kids' learning app?",
+    "a": "The content suits first-time learners of the symbols; adults can work through it at their own pace to build the same foundation."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "faq",
+  "query": "Why do Taiwanese use Zhuyin instead of Pinyin and should learners care",
+  "match": [
+   "why taiwanese use zhuyin instead of pinyin",
+   "zhuyin vs pinyin taiwan",
+   "should learners care about zhuyin",
+   "difference zhuyin pinyin taiwan mainland"
+  ],
+  "lead": "Taiwan uses Zhuyin (Bopomofo) as its standard phonetic system for teaching reading and typing, while mainland China uses Pinyin — so learners aiming at Taiwan or traditional characters often prefer Zhuyin.",
+  "detail": "Zhuyin is the phonetic system taught in Taiwanese schools and used for input there; Pinyin, using the Latin alphabet, is the mainland and international standard. If your goal is connecting with Taiwan, reading traditional-character books (which print Zhuyin annotations), or cleaner pronunciation without English-letter interference, Zhuyin is worth learning. {name} teaches all 37 symbols with native Taiwanese audio, tones and blending, ad-free and one-time unlock. Learners with mainland or general goals may prefer Pinyin — the two aren't mutually exclusive.",
+  "bullets": [
+   "Zhuyin = Taiwan's standard for teaching reading and typing",
+   "Pinyin = mainland and international standard (Latin letters)",
+   "Zhuyin suits Taiwan focus and traditional-character reading",
+   "Avoids English-letter pronunciation interference",
+   "{name}: 37 symbols, native audio, ad-free, one-time unlock"
+  ],
+  "faq": [
+   {
+    "q": "Do I have to choose one?",
+    "a": "No — many learners use Zhuyin for pronunciation and reading Taiwanese materials, and Pinyin for typing or mainland-focused study."
+   },
+   {
+    "q": "Is Zhuyin only used in Taiwan?",
+    "a": "It's the standard phonetic system in Taiwan; it's also used by heritage families and learners focused on traditional characters."
+   },
+   {
+    "q": "Is this app tied to traditional characters?",
+    "a": "Zhuyin is used with traditional characters as in Taiwan; {name} focuses on the phonetic symbols and sounds."
+   }
+  ]
  }
 ]
 ''')

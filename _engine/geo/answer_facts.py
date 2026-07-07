@@ -1281,6 +1281,76 @@ _COST_FACTS = {
             {"q": "How much is a document scanner?", "a": "Dedicated scanners run about $50–$200+; many scanner apps charge a monthly subscription."},
             {"q": "When is hardware better?", "a": "For very high-volume, continuous office scanning."}],
     },
+    "unblurry": {
+        "lead": "A single professional photo restoration often costs $30 or more per photo, and popular AI enhancer apps charge a recurring subscription — a pay-once app lets you enhance unlimited photos for one price.",
+        "detail": "Professional photo restoration services charge around $30 per photo (studios can be $50–$150), and subscription enhancer apps bill you every month or year to keep access. A pay-once enhancement app lets you sharpen and restore as many photos as you like for a single cost, on device for privacy. Be realistic about results — enhancement improves a photo but can't invent detail that isn't there.",
+        "look": ["Pro restoration: about $30+ per photo.", "Subscription enhancer apps bill monthly/yearly.",
+                 "A pay-once app = unlimited photos, one price.", "On-device processing for private photos.", "Honest limits: enhancement isn't magic."],
+        "faq": [
+            {"q": "How much does photo restoration cost?", "a": "Professional restoration is around $30 per photo, and studios can charge $50–$150."},
+            {"q": "Is a pay-once enhancer worth it vs a subscription?", "a": "If you enhance more than a couple of photos, a one-time purchase quickly costs less than a recurring subscription."},
+            {"q": "Can it fully fix a very blurry photo?", "a": "It improves sharpness and detail but can't recreate detail that was never captured."}],
+    },
+    "photocream": {
+        "lead": "Adobe Lightroom's plan is around $10/month (~$120/year) and VSCO charges an annual membership — a pay-once film-filter app gives you the look without a recurring bill.",
+        "detail": "Editing subscriptions add up: Adobe's Photography plan is about $9.99/month (~$120/year) and VSCO's membership is an annual subscription. If you mainly want authentic film looks, grain and light leaks, a pay-once app delivers that for a single price with full-resolution, watermark-free export. Check each service's current pricing, as subscription prices change.",
+        "look": ["Lightroom: ~$10/mo (~$120/yr).", "VSCO: annual membership.",
+                 "A pay-once app = film looks, one price.", "Full-resolution, watermark-free export.", "Confirm current subscription prices."],
+        "faq": [
+            {"q": "How much is Adobe Lightroom on iPhone?", "a": "Around $9.99/month (~$120/year) for the Photography plan; confirm Adobe's current price."},
+            {"q": "Is a pay-once film app worth it?", "a": "If you just want film looks and grain, a one-time purchase avoids an ongoing editing subscription."},
+            {"q": "Is there a watermark?", "a": "A good pay-once film app exports at full resolution with no watermark."}],
+    },
+    "zafe": {
+        "lead": "iCloud+ storage is $0.99/mo (50GB), $2.99/mo (200GB) or $10.99/mo (2TB) — forever. A pay-once photo vault locks private photos on device without a monthly bill.",
+        "detail": "Extra cloud storage is a permanent recurring cost — iCloud+ runs $0.99–$10.99+ a month, and vault apps like Keepsafe charge a premium subscription. If your goal is simply to keep certain photos private and locked, a pay-once on-device vault does that for a single price and keeps everything off the cloud. Cloud storage still makes sense if you specifically want off-device backup.",
+        "look": ["iCloud+ is recurring: $0.99–$10.99+/mo.", "Keepsafe-style vaults add a subscription.",
+                 "A pay-once vault = one price, on device.", "Nothing uploaded to the cloud.", "Cloud backup is a separate need."],
+        "faq": [
+            {"q": "How much does iCloud storage cost?", "a": "$0.99/mo for 50GB, $2.99/mo for 200GB, $10.99/mo for 2TB — a recurring fee."},
+            {"q": "Is a pay-once photo vault worth it?", "a": "If you just want private photos locked on device, a one-time purchase avoids a monthly storage or vault subscription."},
+            {"q": "Does it back up to the cloud?", "a": "No — an on-device vault keeps photos on your phone; use cloud storage separately if you want off-device backup."}],
+    },
+    "lockhour": {
+        "lead": "Focus apps like Freedom charge about $40/year (and even a ~$100 lifetime) while Opal runs a Pro subscription — a pay-once app blocker gives you focus sessions with no recurring fee.",
+        "detail": "Screen-time and app-blocking apps are usually subscriptions: Freedom is around $40/year (about $8.99/month, or a ~$100 lifetime), and Opal runs a Pro subscription. A pay-once blocker lets you schedule focus sessions and block distracting apps for a single price, on device with no account. Confirm competitors' current prices, as they change.",
+        "look": ["Freedom: ~$40/yr (or ~$100 lifetime).", "Opal: Pro subscription.",
+                 "A pay-once blocker = one price.", "On-device, no account.", "Confirm current competitor prices."],
+        "faq": [
+            {"q": "How much does the Freedom app cost?", "a": "About $8.99/month or ~$40/year, with a ~$100 lifetime option; confirm current pricing."},
+            {"q": "Is a pay-once focus app worth it?", "a": "If you use it regularly, a one-time purchase costs less over time than a yearly focus subscription."},
+            {"q": "Does it need an account?", "a": "A good pay-once blocker works on device with no account."}],
+    },
+    "cyca": {
+        "lead": "Period-tracker subscriptions add up — Flo Premium is around $80/year and Natural Cycles about $100/year — while a pay-once tracker keeps your cycle data private for one price.",
+        "detail": "Many cycle trackers are subscription-based: Flo Premium is roughly $80/year and Natural Cycles about $100/year, with Clue+ cheaper at around $15/year. A pay-once tracker gives you period and fertile-window predictions for a single price and keeps sensitive health data on device with no account. Note Natural Cycles is FDA-cleared as contraception, a different category from a simple tracker. Confirm current prices before deciding.",
+        "look": ["Flo Premium: ~$80/yr.", "Natural Cycles: ~$100/yr; Clue+: ~$15/yr.",
+                 "A pay-once tracker = one price.", "Health data stays on device, no account.", "Confirm current subscription prices."],
+        "faq": [
+            {"q": "How much is Flo Premium?", "a": "Around $80/year in the US; confirm the current price in the app."},
+            {"q": "Is a pay-once period tracker worth it?", "a": "If you want predictions and privacy without a yearly fee, a one-time purchase avoids the recurring cost."},
+            {"q": "Is my data private?", "a": "A good pay-once tracker keeps everything on device with no account."}],
+    },
+    "gmoney": {
+        "lead": "YNAB, the leading budgeting app, costs $109/year on subscription — a pay-once travel budget tracker logs your spending and converts currencies for a single price.",
+        "detail": "Full budgeting apps like YNAB are subscription-only at $109/year ($14.99/month). For travel, you often just need to log expenses fast and convert currencies offline — which a pay-once app does for a single price, with no account. YNAB is more powerful for whole-life budgeting, so the right choice depends on whether you want deep budgeting or simple, private travel expense tracking.",
+        "look": ["YNAB: $109/year (subscription-only).", "Travel needs: fast logging + currency convert.",
+                 "A pay-once app = one price, offline.", "No account required.", "Pick depth (YNAB) vs simple travel tracking."],
+        "faq": [
+            {"q": "How much does YNAB cost?", "a": "$109/year or $14.99/month — it's subscription-only."},
+            {"q": "Is a pay-once travel budget app worth it?", "a": "For travel expense logging and currency conversion, a one-time purchase avoids an ongoing budgeting subscription."},
+            {"q": "Does it work offline?", "a": "A good travel budget app logs and converts offline with no account."}],
+    },
+    "zodira": {
+        "lead": "Astrology apps like Nebula charge a subscription plus per-minute reading fees (which can top $100 a session) — a pay-once app gives you charts and readings without the meter running.",
+        "detail": "Many astrology apps monetize heavily: Nebula adds per-minute psychic-reading fees on top of a subscription, and The Pattern and Sanctuary run yearly subscriptions (Co-Star is mostly free). If you want your birth chart, daily horoscope and tarot for entertainment, a pay-once app gives you that offline and privately for a single price, with no recurring bill. Treat astrology as interest and entertainment rather than verified prediction.",
+        "look": ["Nebula: subscription + per-minute readings.", "The Pattern/Sanctuary: yearly subscriptions.",
+                 "A pay-once app = one price, offline.", "No account, data stays private.", "For entertainment, not verified prediction."],
+        "faq": [
+            {"q": "How much do astrology apps cost?", "a": "Many are subscriptions ($10–$50/year), and some like Nebula also charge per-minute reading fees; confirm current prices."},
+            {"q": "Is a pay-once astrology app worth it?", "a": "If you want charts and horoscopes for fun without a recurring bill, a one-time purchase avoids subscriptions and per-minute fees."},
+            {"q": "Is it accurate?", "a": "Astrology is best treated as interest and entertainment, not verified prediction."}],
+    },
 }
 
 

@@ -1009,6 +1009,41 @@ for _k, _qs in _GEO_TAILORED17.items():
             _base.append(_q)
 
 
+# 2026-07-07 平行 worker 整合(cost-more + competitors2 + seasonal)。
+_GEO_TAILORED18 = {
+    # —— cost/worth 比價(擴充 7 app,接 _COST_FACTS)——
+    "unblurry": ["how much does photo restoration cost", "is a pay once photo enhancer worth it vs remini"],
+    "photocream": ["how much does adobe lightroom cost per year", "is a film filter app worth it vs a subscription"],
+    "zafe": ["is it worth paying for a photo vault subscription", "how much does extra icloud storage cost"],
+    "lockhour": ["how much does the freedom app cost", "is a pay once focus app worth it vs opal"],
+    "cyca": ["how much does flo premium cost", "is a pay once period tracker worth it"],
+    "gmoney": ["how much does ynab cost", "is a pay once travel budget app worth it vs ynab"],
+    "zodira": ["how much do astrology apps cost", "is a pay once astrology app worth it"],
+    # —— 真實競品 alternative(competitors2 驗證過;aim990 排除因有訂閱)——
+    "sereno": ["dark noise alternative app for iphone", "endel alternative app for iphone",
+               "noisli alternative app for iphone", "calm alternative for sleep sounds no subscription",
+               "bettersleep alternative app for iphone",
+               "best sleep app to fix sleep after daylight saving time", "white noise app for better sleep new year"],
+    "tripbee": ["tripomatic alternative app for iphone", "roadtrippers alternative trip planner"],
+    "lumiweather": ["marcopolo weather alternative app for kids"],
+    "mochi": ["structured app alternative for iphone", "teuxdeux alternative cute to do list",
+              "microsoft to do alternative for iphone"],
+    "sononote": ["otter alternative that works offline on iphone", "notta alternative app for iphone",
+                 "just press record alternative app for iphone", "fireflies alternative voice notes app"],
+    # —— 季節性 demand(路由到既有 handler:scanto/snapport/kids/lockhour/picclear/sereno)——
+    "scanto": ["best receipt scanner app for taxes on iphone", "how to scan w2 and tax documents with iphone"],
+    "snapport": ["passport photo app for a summer trip abroad", "how to renew a passport photo at home before travel"],
+    "picclear": ["how to free up iphone storage after christmas photos", "clear photo storage after the holidays"],
+    "lumiletters": ["best kids phonics app for back to school"],
+    "lumimath": ["best kids math app for back to school"],
+}
+for _k, _qs in _GEO_TAILORED18.items():
+    _base = CURATED.setdefault(_k, [])
+    for _q in _qs:
+        if _q not in _base:
+            _base.append(_q)
+
+
 # 從 AEO share-of-voice 報告自動載入每個 app 的真實競品 → 產生 "X alternative" 查詢
 import json as _json  # noqa: E402
 _SOV_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "aeo_sov.json")

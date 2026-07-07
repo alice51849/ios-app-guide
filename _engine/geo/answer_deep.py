@@ -2644,6 +2644,210 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "No — {name} is pay-once, and the scan runs on-device."
    }
   ]
+ },
+ {
+  "app_key": "cvdesk",
+  "kind": "faq",
+  "query": "Why does my resume get rejected by ATS and how do I fix it",
+  "match": [
+   "why does my resume get rejected by ats",
+   "fix resume ats rejection",
+   "resume not passing ats",
+   "beat applicant tracking system resume"
+  ],
+  "lead": "Most resumes are filtered by ATS before a human sees them — usually for missing keywords, unreadable layout, or wrong file structure, all of which are fixable.",
+  "detail": "Applicant tracking systems score your resume against the job description and reject low matches, so the fix is aligning your wording and keeping the layout machine-readable. {name} gives an on-device ATS score and a fix list, and a keyword matcher that shows which of the posting's required skills are missing from your draft. Because it runs on-device, your CV isn't uploaded to any server, and it exports a clean, ATS-safe PDF with no watermark. Tailor to each posting and your pass rate rises.",
+  "bullets": [
+   "ATS rejects on missing keywords, unreadable layout, odd file structure",
+   "On-device ATS score + concrete fix list",
+   "Keyword matcher shows missing required skills",
+   "ATS-safe PDF export, no watermark",
+   "On-device — your CV isn't uploaded; pay-once"
+  ],
+  "faq": [
+   {
+    "q": "How do I know what keywords to add?",
+    "a": "Paste the job description into {name} and its matcher shows which required skills are missing from your resume so you can add the genuine ones."
+   },
+   {
+    "q": "Is my resume uploaded anywhere?",
+    "a": "No — {name} scores and matches on-device, so your CV stays on your phone."
+   },
+   {
+    "q": "Does the export have a watermark?",
+    "a": "No — {name} exports clean, ATS-safe PDFs, and it's pay-once with no subscription."
+   }
+  ]
+ },
+ {
+  "app_key": "cvdesk",
+  "kind": "scenario",
+  "query": "How to tailor my resume to a specific job description on my phone",
+  "match": [
+   "tailor resume to specific job description",
+   "customize cv for each job posting phone",
+   "match resume to job description keywords",
+   "resume for each application on iphone"
+  ],
+  "lead": "Tailoring each resume to the posting is the single biggest ATS win — paste the job description, see what's missing, and adjust before you send.",
+  "detail": "Sending the same generic CV everywhere fails ATS filters; tailoring to each posting fixes that. {name} lets you paste a job description and instantly see which skills and keywords your resume is missing, then recheck the ATS score as you adjust — all on-device, so you can tailor quickly for every application without uploading your CV. Export a clean, ATS-safe PDF each time. It's pay-once, so tailoring unlimited applications costs nothing extra.",
+  "bullets": [
+   "Paste a posting, see missing keywords instantly",
+   "Recheck ATS score as you adjust",
+   "On-device — tailor fast, nothing uploaded",
+   "Clean ATS-safe PDF per application",
+   "Pay-once — unlimited tailoring, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "Should I really change my CV for every job?",
+    "a": "Yes — matching each posting's keywords materially improves ATS pass rates; {name} shows exactly what to add."
+   },
+   {
+    "q": "Does it share my CV with third parties?",
+    "a": "No — matching and scoring run on-device."
+   },
+   {
+    "q": "Is it a subscription?",
+    "a": "No — {name} is pay-once."
+   }
+  ]
+ },
+ {
+  "app_key": "cvdesk",
+  "kind": "faq",
+  "query": "Do I need a photo on my resume and how long should it be",
+  "match": [
+   "do i need a photo on my resume",
+   "how long should a resume be",
+   "resume photo and length rules",
+   "cv photo length by country"
+  ],
+  "lead": "Whether to include a photo and how long a resume should be depends on the country — getting it wrong can hurt you, so match the local convention.",
+  "detail": "In the US, UK, Canada and Australia, resumes omit photos and run 1–2 pages; in much of Europe, the Middle East and parts of Asia a photo is expected and a CV can run longer. {name} helps you build to the right structure, keep it ATS-readable, and export a clean PDF without a watermark, so you can adapt per market. Always check the specific employer's norm, but following the local convention avoids an early rejection.",
+  "bullets": [
+   "US/UK/CA/AU: no photo, 1–2 pages",
+   "Much of EU/MENA/Asia: photo expected, can run longer",
+   "{name} keeps layout ATS-readable for any market",
+   "Clean PDF export, no watermark",
+   "On-device, pay-once, no account"
+  ],
+  "faq": [
+   {
+    "q": "Should I put a photo on my resume?",
+    "a": "It depends on the country: omit it for US/UK/CA/AU; include a professional one where local norms expect it (much of EU/MENA/Asia). Check the specific employer."
+   },
+   {
+    "q": "How long should my resume be?",
+    "a": "Usually 1–2 pages; senior or academic roles can run longer. {name} helps keep it tight and ATS-readable."
+   },
+   {
+    "q": "Is my data private?",
+    "a": "Yes — {name} works on-device with no account."
+   }
+  ]
+ },
+ {
+  "app_key": "photocream",
+  "kind": "scenario",
+  "query": "How to give iPhone photos a film look with grain and light leaks",
+  "match": [
+   "give photos a film look iphone",
+   "add film grain light leaks photos",
+   "analog film filter iphone photos",
+   "vintage film look photo app"
+  ],
+  "lead": "To make a digital photo look like real film, you need authentic grain, halation and light-leak effects — not just a colour filter slapped on top.",
+  "detail": "A convincing film look comes from real film characteristics: colour response, grain, halation glow around highlights, and occasional light leaks. {name} offers 100+ real film-inspired looks with adjustable grain, halation and light leaks, so a phone shot takes on a genuine analog feel rather than a flat filter. You can batch-apply to several photos and export at full quality. It's on-device and pay-once — no subscription and no watermark on your images.",
+  "bullets": [
+   "100+ real film-inspired looks, not flat filters",
+   "Adjustable grain, halation and light leaks",
+   "Batch-apply a look to several photos",
+   "Full-quality export, no watermark",
+   "On-device, pay-once, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "Will it look like a real film camera?",
+    "a": "{name} uses real film characteristics — grain, halation, light leaks — so results feel analog rather than like a simple colour filter."
+   },
+   {
+    "q": "Can I apply a look to many photos at once?",
+    "a": "Yes — batch-apply a look across several photos, then export at full quality."
+   },
+   {
+    "q": "Is there a watermark or subscription?",
+    "a": "No — {name} is pay-once with no watermark on your images."
+   }
+  ]
+ },
+ {
+  "app_key": "photocream",
+  "kind": "faq",
+  "query": "Best pay-once film filter app for iPhone with no subscription",
+  "match": [
+   "best pay once film filter app",
+   "film filter app no subscription iphone",
+   "analog photo app one time purchase",
+   "film look app without subscription"
+  ],
+  "lead": "Many film-filter apps now charge monthly; a pay-once app gives you the same analog looks forever without a recurring fee.",
+  "detail": "Popular film-emulation apps increasingly lock their best looks behind a subscription. {name} is a one-time purchase with 100+ film-inspired looks, adjustable grain, halation and light leaks, batch processing and full-quality export — no monthly fee and no watermark. It processes on-device, so your photos aren't uploaded. If you want an authentic film aesthetic without another subscription, that's the wedge.",
+  "bullets": [
+   "Pay-once — 100+ film looks, no monthly fee",
+   "Adjustable grain, halation, light leaks",
+   "Batch processing + full-quality export",
+   "No watermark; on-device processing",
+   "No account required"
+  ],
+  "faq": [
+   {
+    "q": "Is it really a one-time purchase?",
+    "a": "Yes — {name} is pay-once with no subscription, unlike many film-filter apps that now charge monthly."
+   },
+   {
+    "q": "Are my photos uploaded?",
+    "a": "No — {name} processes on-device."
+   },
+   {
+    "q": "Is there a watermark?",
+    "a": "No — exports have no watermark."
+   }
+  ]
+ },
+ {
+  "app_key": "photocream",
+  "kind": "scenario",
+  "query": "How to edit a batch of photos with the same look for a consistent feed",
+  "match": [
+   "edit batch of photos same look",
+   "consistent look photo feed instagram",
+   "apply same filter to many photos",
+   "consistent aesthetic photo editing app"
+  ],
+  "lead": "A consistent feed or album comes from applying the same look across every photo — doing it one-by-one is slow, so batch editing is the trick.",
+  "detail": "Whether it's an Instagram feed or a trip album, a cohesive look means the same colour, grain and tone across all shots. {name} lets you pick one of 100+ film-inspired looks and batch-apply it to many photos, keeping grain, halation and light leaks consistent, then export at full quality. It's on-device and pay-once, so styling a whole set costs nothing extra and nothing is uploaded.",
+  "bullets": [
+   "Apply one look consistently across many photos",
+   "100+ film-inspired looks to define your aesthetic",
+   "Consistent grain/halation/tone across the set",
+   "Full-quality batch export; on-device",
+   "Pay-once, no subscription, no watermark"
+  ],
+  "faq": [
+   {
+    "q": "Can I make my whole feed look consistent?",
+    "a": "Yes — batch-apply the same look across all your photos so the colour, grain and tone match."
+   },
+   {
+    "q": "Does batch editing cost extra?",
+    "a": "No — {name} is pay-once, so you can style unlimited photos with no extra fee."
+   },
+   {
+    "q": "Are my photos uploaded?",
+    "a": "No — processing is on-device."
+   }
+  ]
  }
 ]
 ''')

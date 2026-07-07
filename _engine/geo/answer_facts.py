@@ -268,20 +268,37 @@ ID_DOC_SPECS: dict[str, dict[str, str]] = {
     "schengen_residence": {"label": "Schengen residence permit photo", "size": "35×45 mm",
                            "bg": "a plain light (white or off-white) background", "head": "the face 32–36 mm from chin to crown",
                            "res": "at least 600×750 px", "note": "EU residence-permit photos follow the 35×45 mm biometric standard."},
+    "uk_visa": {"label": "UK visa / settlement photo", "size": "45×35 mm",
+                "bg": "a light grey or plain cream background", "head": "the head 29–34 mm from chin to crown",
+                "res": "at least 600×750 px", "note": "UK visa, settlement and BRP photos use 45×35 mm, the same as a UK passport photo."},
+    "au_citizenship": {"label": "Australian citizenship photo", "size": "45×35 mm",
+                       "bg": "a plain light-coloured background", "head": "the face 32–36 mm from chin to crown",
+                       "res": "at least 600×750 px", "note": "Australian citizenship photos are 45×35 mm; two identical copies are usually required."},
+    "india_oci": {"label": "India OCI photo", "size": "2×2 inches (51×51 mm)",
+                  "bg": "a plain white background with no shadows", "head": "the face 70–80% of the frame",
+                  "res": "350×350 px recommended (200–900 px)", "note": "OCI photos are square (2×2 inches), like a US photo, not 35×45 mm."},
+    "india_pan": {"label": "India PAN card photo", "size": "35×25 mm",
+                  "bg": "a plain white background", "head": "the face filling 70–80% of the frame",
+                  "res": "at least 413×295 px", "note": "PAN card photos use a small 35×25 mm size, so a passport crop won't fit."},
 }
 _IDDOC_ALIASES = [
     (("ds-160", "ds160", "us visa digital", "digital visa photo", "online us visa"), "us_visa_digital"),
     (("citizenship", "naturalization", "naturalisation", "n-400", "uscis citizen"), "us_citizenship"),
     (("green card", "permanent resident card", "i-485"), "us_green_card"),
     (("canadian citizenship", "canada citizenship"), "canada_citizenship"),
-    (("residence permit", "residency permit", "resident permit", "biometric residence"), "schengen_residence"),
+    (("uk visa", "uk settlement", "settlement photo", "brp", "biometric residence"), "uk_visa"),
+    (("oci photo", "oci card", "overseas citizen of india"), "india_oci"),
+    (("pan card", "pan photo"), "india_pan"),
+    (("residence permit", "residency permit", "resident permit"), "schengen_residence"),
 ]
 
 
 def _detect_id_doc(q: str) -> str | None:
-    # Canadian citizenship must win over the generic "citizenship" -> US mapping.
+    # Country-specific citizenship must win over the generic "citizenship" -> US mapping.
     if ("canadian citizenship" in q) or ("canada" in q and "citizenship" in q):
         return "canada_citizenship"
+    if ("australian citizenship" in q) or ("australia" in q and "citizenship" in q):
+        return "au_citizenship"
     for words, spec in _IDDOC_ALIASES:
         if any(w in q for w in words):
             return spec

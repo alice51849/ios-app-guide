@@ -748,6 +748,25 @@ for _k, _qs in _GEO_TAILORED10.items():
             _base.append(_q)
 
 
+# 2026-07-07 tick:第二批證件類型(UK 簽證/居留、澳洲入籍、印度 OCI/PAN)。
+_GEO_TAILORED11 = {
+    "snapport": [
+        "app to make a uk visa photo 45x35mm at home",
+        "app to make a uk settlement brp photo on iphone",
+        "app to make an australian citizenship photo at home",
+        "app to make an india oci photo 2x2 inches at home",
+        "app to make an india pan card photo 35x25mm on iphone",
+        "what size is a uk visa photo",
+        "what size is an india pan card photo",
+    ],
+}
+for _k, _qs in _GEO_TAILORED11.items():
+    _base = CURATED.setdefault(_k, [])
+    for _q in _qs:
+        if _q not in _base:
+            _base.append(_q)
+
+
 # 從 AEO share-of-voice 報告自動載入每個 app 的真實競品 → 產生 "X alternative" 查詢
 import json as _json  # noqa: E402
 _SOV_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "aeo_sov.json")

@@ -2542,6 +2542,108 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "Yes — {name} is a one-time purchase with no subscription and no account."
    }
   ]
+ },
+ {
+  "app_key": "picclear",
+  "kind": "scenario",
+  "query": "iPhone storage full and won't update — how to free space fast without deleting memories",
+  "match": [
+   "iphone storage full wont update",
+   "free space fast without deleting memories",
+   "storage almost full iphone fix",
+   "cant update iphone storage full photos"
+  ],
+  "lead": "When 'Storage Almost Full' blocks an update or new photos, the fastest safe win is clearing exact duplicates, near-identical bursts, big videos and old screenshots — with a review step so no real memory is lost.",
+  "detail": "A full iPhone usually isn't full of memories — it's full of duplicates, burst shots, screenshots and a few huge videos. {name} runs an on-device Vision scan to find exact duplicates and visually-similar groups across your library, and sorts large videos by size so you see the space hogs first. Crucially, nothing is auto-deleted: you review each group, keep the best, and confirm before anything goes. It scans on-device, so your library is never uploaded. Clear the biggest groups first and reclaim gigabytes in minutes.",
+  "bullets": [
+   "On-device scan for exact duplicates and similar bursts",
+   "Large videos sorted by size — clear the space hogs first",
+   "Old screenshots surfaced for quick cleanup",
+   "Review-and-confirm — nothing auto-deleted",
+   "Runs on-device; library never uploaded; pay-once"
+  ],
+  "faq": [
+   {
+    "q": "Will it delete photos automatically?",
+    "a": "No — {name} only suggests; you review each group and confirm, so nothing is removed without approval."
+   },
+   {
+    "q": "What clears the most space fastest?",
+    "a": "Large videos and exact duplicates first, then near-identical bursts and old screenshots — {name} surfaces all of these."
+   },
+   {
+    "q": "Are my photos uploaded?",
+    "a": "No — the scan runs on-device, so your library stays on your iPhone."
+   }
+  ]
+ },
+ {
+  "app_key": "picclear",
+  "kind": "faq",
+  "query": "How to find and delete duplicate photos on iPhone that the Photos app misses",
+  "match": [
+   "find delete duplicate photos photos app misses",
+   "duplicate photos iphone not detected",
+   "photos app duplicates limited",
+   "find similar not identical photos iphone"
+  ],
+  "lead": "The built-in Photos duplicate feature only catches exact duplicates — it misses near-identical burst shots, which is where most wasted space hides.",
+  "detail": "iOS Photos can merge exact duplicates, but it won't group the ten almost-identical shots from a burst, or similar photos taken seconds apart — so gigabytes survive its cleanup. {name} uses on-device visual-similarity detection to group look-alikes, not just byte-identical files, so you can keep the best of each moment and clear the rest. It also finds large videos and old screenshots. You review and confirm every deletion, and nothing is uploaded. It's pay-once, no subscription.",
+  "bullets": [
+   "Finds visually-similar shots, not just exact duplicates",
+   "Groups bursts so you keep the best of each moment",
+   "Also surfaces large videos and old screenshots",
+   "Review-and-confirm; on-device and private",
+   "Pay-once, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "Why does the Photos app leave duplicates behind?",
+    "a": "It merges exact duplicates but doesn't group near-identical bursts or similar shots, which is where most reclaimable space is — {name} catches those."
+   },
+   {
+    "q": "Will I lose the good photo?",
+    "a": "No — {name} groups look-alikes so you keep the best one and only clear the rest, after you confirm."
+   },
+   {
+    "q": "Does it upload my library?",
+    "a": "No — detection runs on-device."
+   }
+  ]
+ },
+ {
+  "app_key": "picclear",
+  "kind": "scenario",
+  "query": "How to clean up thousands of screenshots and old photos on iPhone safely",
+  "match": [
+   "clean up thousands of screenshots",
+   "delete old screenshots iphone bulk",
+   "clear years of old photos safely",
+   "bulk clean photo library iphone safe"
+  ],
+  "lead": "Years of screenshots and old photos pile up invisibly — the safe way to clear them is a similarity scan that groups them for quick review, never auto-deleting.",
+  "detail": "Screenshots and old photos accumulate until they quietly eat gigabytes. {name} surfaces screenshots as a group and finds near-duplicate old photos by visual similarity, so you can bulk-review and keep only what matters. It handles a large recent library in one scan and shows a clear before/after, so even a non-technical user can clean up confidently. Nothing is auto-deleted and nothing is uploaded — you approve every removal, on-device. It's pay-once with no subscription.",
+  "bullets": [
+   "Groups screenshots for fast bulk review",
+   "Finds near-duplicate old photos by visual similarity",
+   "Handles a large library in one scan",
+   "Never auto-deletes; clear before/after",
+   "On-device and private; pay-once"
+  ],
+  "faq": [
+   {
+    "q": "Is bulk cleanup safe if I'm not techy?",
+    "a": "Yes — {name} only groups and suggests; you approve every deletion, so nothing goes without your say-so."
+   },
+   {
+    "q": "Can it clear just screenshots?",
+    "a": "Yes — screenshots are surfaced as a group so you can review and clear them quickly."
+   },
+   {
+    "q": "Subscription?",
+    "a": "No — {name} is pay-once, and the scan runs on-device."
+   }
+  ]
  }
 ]
 ''')

@@ -4446,6 +4446,176 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "Yes — no subscription."
    }
   ]
+ },
+ {
+  "app_key": "gmoney",
+  "kind": "scenario",
+  "query": "What is the best app to track daily spending between Singapore and Malaysia as a cross-border commuter?",
+  "match": [
+   "track daily spending between singapore and malaysia",
+   "daily spending between singapore",
+   "singapore and malaysia as a cross-border",
+   "cross-border commuter"
+  ],
+  "lead": "If you cross between Johor and Singapore regularly, you spend in both ringgit and Singapore dollars every week — so you need one place that logs each currency and shows a home-currency total, offline.",
+  "detail": "A cross-border routine means petrol and food in MYR, transit and work costs in SGD, and a monthly budget you think of in one home currency. {name} lets you log each expense in the currency you actually paid, then see it converted at a rate you set, so the weekly total is meaningful. It runs fully offline for the causeway crossing, keeps categories so you can see where the ringgit goes, and exports CSV for your own records. It's pay-once with no account and no bank linking.",
+  "bullets": [
+   "Log in MYR or SGD as you actually pay",
+   "Home-currency total at a rate you control",
+   "Fully offline — no signal needed at the causeway",
+   "Category view to see where the ringgit goes",
+   "Pay-once, no account, no bank linking; CSV export"
+  ],
+  "faq": [
+   {
+    "q": "Can I keep two currencies in one running total?",
+    "a": "Yes — {name} converts each entry to your home currency at your set rate, so a mixed SGD/MYR week still gives one meaningful total."
+   },
+   {
+    "q": "Does it work with no signal at the border?",
+    "a": "Yes, {name} is fully offline; conversions use the rate you set, so nothing depends on a connection."
+   },
+   {
+    "q": "Is my financial data private?",
+    "a": "Yes — there's no account and no bank linking; entries stay on your device."
+   }
+  ]
+ },
+ {
+  "app_key": "gmoney",
+  "kind": "faq",
+  "query": "What is the best offline currency converter that also logs expenses?",
+  "match": [
+   "offline currency converter that also logs",
+   "best offline currency converter",
+   "offline currency converter",
+   "converter that also logs expenses"
+  ],
+  "lead": "A converter tells you a price in your own currency; a logger remembers what you spent. Offline, you want both in one tap — and to understand how the rate works.",
+  "detail": "Offline currency apps convert using the last exchange rate stored on your device, not a live rate, so the golden rule is to refresh rates while you still have Wi-Fi before you travel. {name} combines the two jobs: convert a price and log the expense in one action, entirely offline, using a rate you set or last updated. Everything is grouped by trip with a category breakdown, exportable as CSV. Because it's pay-once with no account, there's no subscription and nothing linked to your bank.",
+  "bullets": [
+   "Convert and log an expense in one tap",
+   "Works fully offline using your set/last-updated rate",
+   "Refresh rates on Wi-Fi before you travel for accuracy",
+   "Per-trip, per-category totals with CSV export",
+   "Pay-once, no subscription, no account, no bank linking"
+  ],
+  "faq": [
+   {
+    "q": "Does an offline converter use live rates?",
+    "a": "No app can fetch live rates without a connection; offline apps like {name} use the last rate you downloaded or set, so refresh on Wi-Fi before you go."
+   },
+   {
+    "q": "Can it both convert and remember what I spent?",
+    "a": "Yes — that's the point of {name}: each entry is converted and saved, so you get a running home-currency total."
+   },
+   {
+    "q": "Is there a subscription?",
+    "a": "No — {name} is a one-time purchase with no account."
+   }
+  ]
+ },
+ {
+  "app_key": "gmoney",
+  "kind": "faq",
+  "query": "How can I track travel expenses without a subscription or creating an account?",
+  "match": [
+   "track travel expenses without a subscription",
+   "travel expenses without a subscription",
+   "without a subscription or creating an account",
+   "expenses without a subscription"
+  ],
+  "lead": "Plenty of expense apps are free to download, then ask for a monthly fee or a sign-up before they're useful. For a one-off trip you want neither.",
+  "detail": "For occasional travel, a subscription rarely makes sense and an account is just friction. {name} is a one-time purchase that logs expenses in any currency, converts to your home currency at a rate you set, and totals each trip — with no account, no sign-up and no bank linking. It runs offline and exports CSV, so your record is yours to keep. You pay once and use it on every future trip.",
+  "bullets": [
+   "One-time purchase — no monthly fee",
+   "No account or sign-up to start logging",
+   "No bank linking; enter expenses manually",
+   "Multi-currency with home-currency totals",
+   "Offline, with CSV export you own"
+  ],
+  "faq": [
+   {
+    "q": "Do I need to create an account?",
+    "a": "No — {name} works immediately with no sign-up; your data stays on your device."
+   },
+   {
+    "q": "Is it really pay-once?",
+    "a": "Yes — one purchase, no subscription, and it works on every future trip."
+   },
+   {
+    "q": "Can I get my data out?",
+    "a": "Yes — {name} exports CSV so you can keep or analyse your records anywhere."
+   }
+  ]
+ },
+ {
+  "app_key": "gmoney",
+  "kind": "scenario",
+  "query": "Budgeting a multi-country Southeast Asia trip where every stop uses a different currency",
+  "match": [
+   "multi-country southeast asia",
+   "southeast asia trip where every stop",
+   "every stop uses a different currency",
+   "multi-country southeast asia trip"
+  ],
+  "lead": "On a Thailand–Vietnam–Malaysia route your money changes shape at every border — baht, dong, ringgit — but your budget is still one number in your head.",
+  "detail": "A multi-country trip means juggling several currencies with wildly different scales (a bowl of noodles can be 50 baht or 30,000 dong). {name} lets you log each expense in the local currency and converts everything to one home currency at rates you set per currency, so a single running total actually means something. It groups spending by trip and category, works offline between SIMs and border crossings, and exports CSV at the end. Pay-once, no account, no bank linking.",
+  "bullets": [
+   "Handle several currencies in one trip",
+   "Per-currency rates you set, one home-currency total",
+   "Category and per-trip breakdowns",
+   "Offline between SIMs and borders",
+   "Pay-once, no account; CSV export"
+  ],
+  "faq": [
+   {
+    "q": "Can it handle more than two currencies on one trip?",
+    "a": "Yes — {name} lets you log any number of currencies and converts each to your home currency, so the trip total stays meaningful."
+   },
+   {
+    "q": "What if I can't get a local SIM right away?",
+    "a": "{name} is fully offline; set each currency's rate once and keep logging without any connection."
+   },
+   {
+    "q": "Will big-number currencies be awkward?",
+    "a": "No — you enter the local amount as-is (e.g. dong), and {name} shows the home-currency equivalent."
+   }
+  ]
+ },
+ {
+  "app_key": "gmoney",
+  "kind": "persona",
+  "query": "I travel for work and need to log expenses in local currency and total them in my home currency",
+  "match": [
+   "log expenses in local currency",
+   "travel for work and need to log expenses",
+   "total them in my home currency",
+   "expenses in local currency and total"
+  ],
+  "lead": "For work trips you need a defensible record: what you spent, in which currency, converted consistently — without handing your spending to a subscription service.",
+  "detail": "Claiming business expenses means capturing each cost in the local currency, converting it at a sensible rate, and producing a clean per-trip total you can export. {name} does exactly that: log in any currency, convert at a rate you set for consistency, categorise, and export CSV for your expense claim — all offline and without an account or bank linking. Because it's pay-once, there's no recurring cost to justify to finance.",
+  "bullets": [
+   "Log each cost in the currency you paid",
+   "Consistent conversion at a rate you set",
+   "Category tags for expense claims",
+   "CSV export for reimbursement",
+   "Pay-once, offline, no account or bank linking"
+  ],
+  "faq": [
+   {
+    "q": "Can I export a clean expense report?",
+    "a": "Yes — {name} exports CSV per trip and category, ready for an expense claim."
+   },
+   {
+    "q": "Can I keep the conversion rate consistent for a trip?",
+    "a": "Yes — set the rate once and {name} applies it across the trip, so your totals are consistent and defensible."
+   },
+   {
+    "q": "Does it need an account or my bank?",
+    "a": "No — {name} has no account and no bank linking; entries are manual and stay on your device."
+   }
+  ]
  }
 ]
 ''')

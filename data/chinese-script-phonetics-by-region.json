@@ -1,0 +1,59 @@
+{
+  "name": "Chinese script & Mandarin phonetic system by region",
+  "description": "Which Chinese script (Traditional or Simplified) and which Mandarin pronunciation system (Zhuyin/Bopomofo or Hanyu Pinyin) is standard in schools across Taiwan, Mainland China, Hong Kong, Macau, Singapore, Malaysia and overseas heritage communities.",
+  "identifier": "https://alice51849.github.io/ios-app-guide/data/chinese-script-phonetics-by-region.json",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": "Lumi Apps",
+  "dateModified": "2026-07-08",
+  "regions": [
+    {
+      "region": "Taiwan",
+      "code": "TW",
+      "script": "Traditional",
+      "mandarinPhonetic": "Zhuyin (Bopomofo)",
+      "notes": "Children learn Zhuyin (注音) first to read; Hanyu Pinyin is taught later as secondary."
+    },
+    {
+      "region": "Mainland China",
+      "code": "CN",
+      "script": "Simplified",
+      "mandarinPhonetic": "Hanyu Pinyin",
+      "notes": "Hanyu Pinyin is universal in education, dictionaries and input methods."
+    },
+    {
+      "region": "Hong Kong",
+      "code": "HK",
+      "script": "Traditional",
+      "mandarinPhonetic": "Pinyin for Mandarin classes",
+      "notes": "Cantonese is the daily classroom language; no standard phonetic aid, Pinyin used in Mandarin lessons."
+    },
+    {
+      "region": "Macau",
+      "code": "MO",
+      "script": "Traditional",
+      "mandarinPhonetic": "Pinyin for Mandarin classes",
+      "notes": "Similar to Hong Kong; Portuguese is also official. Mandarin taught as a subject, often with Pinyin."
+    },
+    {
+      "region": "Singapore",
+      "code": "SG",
+      "script": "Simplified",
+      "mandarinPhonetic": "Hanyu Pinyin",
+      "notes": "Mandarin is the 'Mother Tongue' subject, taught with Simplified characters and Pinyin."
+    },
+    {
+      "region": "Malaysia",
+      "code": "MY",
+      "script": "Simplified",
+      "mandarinPhonetic": "Hanyu Pinyin",
+      "notes": "Chinese-medium schools mostly use Simplified since the 1980s, with Hanyu Pinyin."
+    },
+    {
+      "region": "Overseas heritage schools",
+      "code": "—",
+      "script": "Traditional or Simplified",
+      "mandarinPhonetic": "Zhuyin or Pinyin",
+      "notes": "Taiwan-oriented weekend schools often teach Traditional + Zhuyin; Mainland-oriented ones teach Simplified + Pinyin."
+    }
+  ]
+}

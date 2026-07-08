@@ -328,6 +328,93 @@ def build_passport_page():
     return slug
 
 
+# ── Chinese script + Mandarin phonetic system by region (ties to Lumi Bopomofo) ──
+CN_REGIONS = [
+    # (region, code, script, phonetic, notes)
+    ("Taiwan", "TW", "Traditional", "Zhuyin (Bopomofo)",
+     "Children learn Zhuyin (注音) first to read; Hanyu Pinyin is taught later as secondary."),
+    ("Mainland China", "CN", "Simplified", "Hanyu Pinyin",
+     "Hanyu Pinyin is universal in education, dictionaries and input methods."),
+    ("Hong Kong", "HK", "Traditional", "Pinyin for Mandarin classes",
+     "Cantonese is the daily classroom language; no standard phonetic aid, Pinyin used in Mandarin lessons."),
+    ("Macau", "MO", "Traditional", "Pinyin for Mandarin classes",
+     "Similar to Hong Kong; Portuguese is also official. Mandarin taught as a subject, often with Pinyin."),
+    ("Singapore", "SG", "Simplified", "Hanyu Pinyin",
+     "Mandarin is the 'Mother Tongue' subject, taught with Simplified characters and Pinyin."),
+    ("Malaysia", "MY", "Simplified", "Hanyu Pinyin",
+     "Chinese-medium schools mostly use Simplified since the 1980s, with Hanyu Pinyin."),
+    ("Overseas heritage schools", "—", "Traditional or Simplified", "Zhuyin or Pinyin",
+     "Taiwan-oriented weekend schools often teach Traditional + Zhuyin; Mainland-oriented ones teach Simplified + Pinyin."),
+]
+
+
+def cn_regions_json():
+    return {
+        "name": "Chinese script & Mandarin phonetic system by region",
+        "description": ("Which Chinese script (Traditional or Simplified) and which Mandarin "
+                        "pronunciation system (Zhuyin/Bopomofo or Hanyu Pinyin) is standard in "
+                        "schools across Taiwan, Mainland China, Hong Kong, Macau, Singapore, "
+                        "Malaysia and overseas heritage communities."),
+        "identifier": f"{SITE}/data/chinese-script-phonetics-by-region.json",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "creator": "Lumi Apps",
+        "dateModified": TODAY,
+        "regions": [{"region": r, "code": c, "script": s, "mandarinPhonetic": p, "notes": n}
+                    for r, c, s, p, n in CN_REGIONS],
+    }
+
+
+def build_cn_regions_page():
+    slug = "chinese-script-phonetics-by-region"
+    title = "Traditional vs Simplified, Zhuyin vs Pinyin — by Region | Open Data"
+    h1 = "Chinese script & phonetics by region"
+    desc = ("Does Taiwan use Zhuyin or Pinyin? Traditional or Simplified in Hong Kong? A citable "
+            "reference of the standard Chinese script and Mandarin phonetic system by region. "
+            "Free open data (CC BY 4.0).")
+    lead = ("Taiwan uses Traditional characters and Zhuyin (Bopomofo); the Mainland uses Simplified "
+            "and Pinyin. Here is the full, citable breakdown by region.")
+    rows = ""
+    for r, c, s, p, n in CN_REGIONS:
+        rows += (f'<tr><td><strong>{html.escape(r)}</strong></td>'
+                 f'<td class="nw">{html.escape(s)}</td>'
+                 f'<td class="nw">{html.escape(p)}</td>'
+                 f'<td>{html.escape(n)}</td></tr>')
+    tables = ('<div class="card"><table>'
+              '<tr><th>Region</th><th>Script</th><th>Mandarin phonetic</th><th>Notes</th></tr>'
+              f'{rows}</table></div>')
+    dj = cn_regions_json()
+    schema = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "Dataset", "name": dj["name"], "description": dj["description"],
+        "url": f"{SITE}/data/{slug}.html", "identifier": dj["identifier"],
+        "license": dj["license"], "creator": {"@type": "Organization", "name": "Lumi Apps"},
+        "dateModified": dj["dateModified"],
+        "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json",
+                          "contentUrl": dj["identifier"]}],
+        "keywords": ["Traditional Chinese", "Simplified Chinese", "Zhuyin", "Bopomofo",
+                     "Hanyu Pinyin", "Taiwan", "Mandarin"],
+    }, ensure_ascii=False)
+    pills = ('<span class="pill">7 regions</span>'
+             '<span class="pill">script + phonetics</span>')
+    cta = ('<h2>Learning the Taiwan way — Traditional + Zhuyin</h2>\n'
+           '<p>If your family follows the Taiwanese system (Traditional characters, Zhuyin first), '
+           '<strong>Lumi Bopomofo</strong> teaches all 37 Zhuyin symbols through games — a one-time '
+           'purchase, no ads, no subscription, everything on the device.</p>\n'
+           f'<a class="cta" href="{BOPOMOFO_APP}">Get Lumi Bopomofo on the App Store →</a>\n'
+           f'<p style="font-size:14px"><a href="{SITE}/data/zhuyin-bopomofo.html">'
+           'See the full Zhuyin dataset →</a> &nbsp;·&nbsp; '
+           f'<a href="{SITE}/data/">More open datasets →</a></p>')
+    page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
+                       lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
+                       crumb="Chinese script & phonetics", pills=pills, tables=tables,
+                       schema=schema, cta=cta)
+    os.makedirs(DATA, exist_ok=True)
+    open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
+        json.dumps(dj, ensure_ascii=False, indent=2))
+    open(os.path.join(DATA, f"{slug}.html"), "w", encoding="utf-8").write(page)
+    return slug
+
+
 INDEX = """<!doctype html>
 <html lang="en">
 <head>
@@ -427,11 +514,18 @@ def main():
     args = ap.parse_args()
     slug = build_zhuyin_page()
     pslug = build_passport_page()
+    rslug = build_cn_regions_page()
     datasets = [{
         "slug": slug,
         "name": "Zhuyin (Bopomofo): all 37 symbols",
         "blurb": "The complete 21 initials + 3 medials + 13 finals, each with Pinyin, "
                  "Unicode and an example word. JSON download included.",
+        "tag": "Language · CC BY 4.0",
+    }, {
+        "slug": rslug,
+        "name": "Chinese script & phonetics by region",
+        "blurb": "Traditional vs Simplified and Zhuyin vs Pinyin across Taiwan, China, Hong Kong, "
+                 "Singapore, Malaysia and overseas schools. JSON download included.",
         "tag": "Language · CC BY 4.0",
     }, {
         "slug": pslug,

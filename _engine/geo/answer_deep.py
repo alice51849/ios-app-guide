@@ -4616,6 +4616,176 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "No — {name} has no account and no bank linking; entries are manual and stay on your device."
    }
   ]
+ },
+ {
+  "app_key": "lumibopomofopro",
+  "kind": "faq",
+  "query": "Is there a Bopomofo app with no ads or tracking that is safe for a preschooler?",
+  "match": [
+   "bopomofo app with no ads or tracking",
+   "no ads or tracking that is safe for a preschooler",
+   "bopomofo app with no ads",
+   "safe for a preschooler"
+  ],
+  "lead": "For a preschooler, 'safe' means more than age-appropriate: no third-party ads that could lead anywhere, and no tracking of a young child.",
+  "detail": "A Bopomofo app for a preschooler should be a calm, closed space — all 37 symbols to explore and nothing else. {name} has no third-party ads, no analytics or tracking, and works on-device, so a 3-to-5-year-old can tap through the symbols safely. It's a one-time purchase, so there's no subscription prompt and no ads interrupting a young child, and any external links or purchases sit behind a parental gate.",
+  "bullets": [
+   "No third-party ads at all",
+   "No analytics or tracking of your child",
+   "Runs on-device; nothing uploaded",
+   "All 37 Zhuyin symbols to explore",
+   "Pay-once; links and purchases behind a parental gate"
+  ],
+  "faq": [
+   {
+    "q": "Does it show ads to my child?",
+    "a": "No — {name} has no third-party ads, so nothing can lead your child away mid-lesson."
+   },
+   {
+    "q": "Does it track my child's data?",
+    "a": "No — {name} does no analytics or tracking and works on-device."
+   },
+   {
+    "q": "Is it a subscription?",
+    "a": "No — {name} is a one-time purchase, so there are no recurring prompts."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofopro",
+  "kind": "faq",
+  "query": "What is the best pay-once Bopomofo app to share across siblings without a subscription?",
+  "match": [
+   "pay-once bopomofo app to share across siblings",
+   "share across siblings without a subscription",
+   "bopomofo app to share across siblings",
+   "share across siblings"
+  ],
+  "lead": "If two or three children are learning Mandarin, a monthly fee per app adds up fast — a one-time purchase you can use for every child makes far more sense.",
+  "detail": "{name} is a one-time purchase, so once you own it every child in the family can use it on the same device — no per-child subscription and no repeat fees as younger siblings reach the age to start. It covers all 37 Zhuyin symbols and tones with no ads, so each child gets the complete app, and because progress is simple and on-device you can hand the device from one child to the next.",
+  "bullets": [
+   "One purchase covers the whole family",
+   "No per-child or monthly fees",
+   "All 37 symbols and tones, no ads",
+   "On-device — pass the device between children",
+   "Great value for two or more learners"
+  ],
+  "faq": [
+   {
+    "q": "Do I pay again for each child?",
+    "a": "No — {name} is one purchase; every child can use it on the same device."
+   },
+   {
+    "q": "Is anything locked behind a subscription?",
+    "a": "No — {name} unlocks everything for a single price."
+   },
+   {
+    "q": "Does each child need an account?",
+    "a": "No — {name} works on-device with no logins."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofopro",
+  "kind": "persona",
+  "query": "I teach at a Chinese heritage school and need a Bopomofo app my class can use without ads or logins",
+  "match": [
+   "teach at a chinese heritage school",
+   "bopomofo app my class can use",
+   "chinese heritage school",
+   "my class can use without ads or logins"
+  ],
+  "lead": "In Taiwan, Grade 1 begins with about ten weeks of Zhuyin before characters; a heritage school abroad often compresses that into weekend classes, so the right app reinforces symbols without ads or logins.",
+  "detail": "A classroom app has to be frictionless: no per-student logins, no ads, and no data collection on minors. {name} works on-device with all 37 Zhuyin symbols and tones, no third-party ads and no account, so a heritage-school teacher can use it on a shared device or recommend it for home practice that mirrors the Taiwan curriculum's Zhuyin-first foundation. It's pay-once, so there's no subscription for families to manage.",
+  "bullets": [
+   "No per-student logins or accounts",
+   "No third-party ads or tracking of minors",
+   "All 37 symbols and tones, on-device",
+   "Mirrors Taiwan's Zhuyin-first Grade 1 start",
+   "Pay-once — nothing for families to renew"
+  ],
+  "faq": [
+   {
+    "q": "Do students need to log in?",
+    "a": "No — {name} works on-device with no accounts, so it's ready on a shared classroom device."
+   },
+   {
+    "q": "Is it safe to recommend to families?",
+    "a": "Yes — {name} has no third-party ads and no tracking, and it's a one-time purchase."
+   },
+   {
+    "q": "Does it match what's taught in Taiwan?",
+    "a": "It focuses on the same 37 Zhuyin symbols and tones that Taiwan's Grade 1 begins with."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofopro",
+  "kind": "scenario",
+  "query": "How to build a daily at-home Bopomofo routine for two children at different levels",
+  "match": [
+   "daily at-home bopomofo routine for two children",
+   "two children at different levels",
+   "daily at-home bopomofo routine",
+   "bopomofo routine for two children"
+  ],
+  "lead": "With two children at different stages — one just meeting the symbols, one linking them into words — you want one app that works for both without separate setups.",
+  "detail": "{name} lets each child work through the 37 Zhuyin symbols and tones at their own pace on the same device: a younger child can explore and recognise symbols while an older one practises reading them in context. There are no ads and no logins, so switching between children is instant, and it's a one-time purchase for the whole family. A short daily session per child builds recall faster than occasional long ones.",
+  "bullets": [
+   "Each child works at their own pace",
+   "Instant switching — no logins or profiles to manage",
+   "All 37 symbols and tones in one app",
+   "Short daily sessions beat occasional long ones",
+   "One purchase for the whole family, no ads"
+  ],
+  "faq": [
+   {
+    "q": "Can two children use it without separate accounts?",
+    "a": "Yes — {name} works on-device with no logins, so you just hand the device over."
+   },
+   {
+    "q": "How long should each session be?",
+    "a": "Short and daily works best — a few minutes per child builds recall faster than rare long sessions."
+   },
+   {
+    "q": "Do I pay twice for two children?",
+    "a": "No — {name} is a single purchase the whole family can use."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofopro",
+  "kind": "faq",
+  "query": "Do Bopomofo learning apps require a subscription or can I pay once?",
+  "match": [
+   "bopomofo learning apps require a subscription",
+   "require a subscription or can i pay once",
+   "bopomofo learning apps require",
+   "can i pay once"
+  ],
+  "lead": "Many learning apps are free to download, then require a subscription to unlock the actual lessons — for something a child uses for a few months, that adds up.",
+  "detail": "Bopomofo apps vary: some are subscription-based, some pay-once, some ad-supported. {name} is a one-time purchase that unlocks everything — all 37 Zhuyin symbols and tones — with no subscription and no ads. You pay once and use it for as long as your child needs it, and for younger siblings later; because it runs on-device with no account, there's nothing to renew or cancel.",
+  "bullets": [
+   "One-time purchase, no subscription",
+   "Unlocks all 37 symbols and tones",
+   "No ads and no account",
+   "Reusable for younger siblings later",
+   "On-device — nothing to renew or cancel"
+  ],
+  "faq": [
+   {
+    "q": "Is {name} a subscription?",
+    "a": "No — it's a one-time purchase that unlocks the whole app."
+   },
+   {
+    "q": "Will I be charged again later?",
+    "a": "No — you pay once; there's nothing to renew."
+   },
+   {
+    "q": "Do free Bopomofo apps cost more over time?",
+    "a": "They can — ad-supported or subscription apps add up, whereas {name} is a single price."
+   }
+  ]
  }
 ]
 ''')

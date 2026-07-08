@@ -3902,6 +3902,74 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "Yes — no ads, no data collected from children, one-time unlock."
    }
   ]
+ },
+ {
+  "app_key": "lockhour",
+  "kind": "faq",
+  "query": "How to stop being addicted to my phone and reduce screen time",
+  "match": [
+   "stop being addicted to my phone",
+   "reduce screen time iphone app",
+   "break phone addiction app",
+   "spend less time on phone"
+  ],
+  "lead": "Cutting phone use works better with a hard timed block than willpower — you decide the rules once, and the app enforces them so you're not relying on self-control in the moment.",
+  "detail": "Most 'just use it less' advice fails because the pull happens in the moment. A timed block removes the decision: you pick the apps and hours, and they're locked until time's up. {name} uses Apple's Screen Time API to hard-block chosen apps, categories or sites for a session, with an optional Hard Mode that prevents ending it early. Set recurring blocks for study, work, meals or bedtime, and everything unlocks automatically when the timer ends. It's pay-once with no subscription. It reduces access; building better habits is still up to you.",
+  "bullets": [
+   "Timed hard-block removes in-the-moment willpower battles",
+   "Blocks apps, categories or websites you choose",
+   "Optional Hard Mode prevents ending a session early",
+   "Recurring blocks for study, work, meals, bedtime",
+   "Pay-once; uses Apple Screen Time (system-level)"
+  ],
+  "faq": [
+   {
+    "q": "Will an app really help me use my phone less?",
+    "a": "A hard timed block enforces the limit so you don't rely on willpower; {name} locks chosen apps until the session ends."
+   },
+   {
+    "q": "Can I bypass it when tempted?",
+    "a": "With Hard Mode on, early exit is prevented for the session; otherwise apps unlock when the timer ends."
+   },
+   {
+    "q": "Is it a subscription?",
+    "a": "No — {name} is pay-once."
+   }
+  ]
+ },
+ {
+  "app_key": "lockhour",
+  "kind": "faq",
+  "query": "Is Apple Screen Time enough or do I need a separate app blocker",
+  "match": [
+   "is apple screen time enough",
+   "screen time vs app blocker",
+   "do i need a separate app blocker",
+   "screen time not working well enough"
+  ],
+  "lead": "Apple's built-in Screen Time is a good start, but many people tap 'Ignore Limit' — so a stricter blocker with a no-bypass mode is what actually holds.",
+  "detail": "Screen Time's app limits work until you hit the limit and tap 'Ignore Limit,' which is easy to do repeatedly. A dedicated blocker built on the same Screen Time framework can add stricter enforcement: timed sessions and a Hard Mode that prevents early exit. {name} does exactly that — it uses Apple's Screen Time API but adds hard, timed blocks you can't casually bypass, plus recurring schedules. It's honest about how blocking works (it builds on Screen Time, not around it) and it's pay-once. If you keep ignoring the built-in limits, a stricter layer is what helps.",
+  "bullets": [
+   "Screen Time is easy to bypass with 'Ignore Limit'",
+   "{name} adds hard, timed blocks on the same framework",
+   "Hard Mode prevents early exit for the session",
+   "Recurring schedules for consistent enforcement",
+   "Pay-once; builds on Screen Time, honestly"
+  ],
+  "faq": [
+   {
+    "q": "Why isn't built-in Screen Time enough for me?",
+    "a": "Its limits can be dismissed with 'Ignore Limit.' {name} adds timed blocks and a no-early-exit Hard Mode for stricter enforcement."
+   },
+   {
+    "q": "Does it replace Screen Time?",
+    "a": "No — {name} uses Apple's Screen Time API and adds stricter, timed blocking on top of it."
+   },
+   {
+    "q": "Subscription?",
+    "a": "No — it's pay-once."
+   }
+  ]
  }
 ]
 ''')

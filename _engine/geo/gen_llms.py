@@ -114,6 +114,10 @@ def build_llms(comp_map):
             for f in ds:
                 title = re.sub(r"[-_]", " ", f[:-5])
                 lines.append(f"- [{title}]({SITE}/data/{f}) · JSON: {SITE}/data/{f[:-5]}.json")
+    lines += ["", "## All apps & where to follow",
+              "- All apps by this developer (one page): "
+              "https://apps.apple.com/developer/id1136144960",
+              "- Telegram channel (free tools + app updates): https://t.me/LumiApps2026"]
     lines += ["", "## Sitemaps",
               f"- {SITE}/sitemap.xml", f"- {SITE}/sitemap_alternatives.xml",
               f"- {SITE}/sitemap_answers.xml",

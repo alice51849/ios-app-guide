@@ -3664,6 +3664,108 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "Parents of young children who want a quick, practical daily read rather than raw weather data."
    }
   ]
+ },
+ {
+  "app_key": "lumimath",
+  "kind": "faq",
+  "query": "What is the best math app for kids that builds real problem-solving not just drills",
+  "match": [
+   "best math app for kids problem solving",
+   "math app kids real thinking not drills",
+   "math app builds reasoning kids",
+   "best kids math app logic"
+  ],
+  "lead": "The best kids' math app trains reasoning — patterns, sequences, spatial thinking — inside a game, rather than just repeating arithmetic facts.",
+  "detail": "Rote arithmetic drills build speed but not the flexible thinking that helps a child with harder problems later. A stronger approach uses competition-style question types — patterns, sequences, logical reasoning, spatial problems — presented as a game so the child stays engaged. {name} draws on international math-competition formats inside a space-adventure, with a weakness tracker that focuses practice on what the child keeps missing. It's ad-free with no data collected from children and a one-time unlock, so parents can trust it. Check the current App Store listing for details.",
+  "bullets": [
+   "Reasoning focus: patterns, sequences, spatial thinking",
+   "Competition-style question types, not rote drills",
+   "Weakness tracker targets what the child keeps missing",
+   "Engaging space-adventure game wrapper",
+   "Ad-free, no data collected, one-time unlock"
+  ],
+  "faq": [
+   {
+    "q": "Is it just arithmetic practice?",
+    "a": "No — {name} focuses on reasoning and competition-style problems, which build flexible problem-solving beyond rote drills."
+   },
+   {
+    "q": "Does it adapt to my child?",
+    "a": "Yes — a weakness tracker focuses practice on the problem types your child keeps missing."
+   },
+   {
+    "q": "Is it safe for kids?",
+    "a": "Yes — ad-free, no data collected from children, one-time unlock."
+   }
+  ]
+ },
+ {
+  "app_key": "lumimath",
+  "kind": "scenario",
+  "query": "How to keep my child engaged with math practice they actually enjoy",
+  "match": [
+   "keep child engaged with math practice",
+   "math practice kids actually enjoy",
+   "make math fun for kids app",
+   "child hates math practice app"
+  ],
+  "lead": "Children stick with math when the practice feels like a game with a goal — not a worksheet — and when the difficulty matches where they actually are.",
+  "detail": "A child who resists worksheets will often happily solve the same concepts wrapped in a game with progress and rewards. The key is engagement plus the right level: practice that adapts to what they find hard keeps it challenging without being discouraging. {name} wraps reasoning and competition-style math in a space-adventure, and its weakness tracker keeps the difficulty targeted so the child stays in the sweet spot. It's ad-free, collects no data from children, and is a one-time unlock — no pressure to buy more.",
+  "bullets": [
+   "Math wrapped in a game with progress and rewards",
+   "Adapts difficulty to what the child finds hard",
+   "Reasoning and competition-style problems, not just sums",
+   "Ad-free, no data collected, one-time unlock",
+   "Keeps practice challenging but not discouraging"
+  ],
+  "faq": [
+   {
+    "q": "My child hates worksheets — will this help?",
+    "a": "Many children engage more with game-based practice; {name} wraps the same concepts in a space-adventure with progress and rewards."
+   },
+   {
+    "q": "Will it be too hard or too easy?",
+    "a": "{name}'s weakness tracker targets the child's level, keeping practice challenging without discouraging them."
+   },
+   {
+    "q": "Any ads or extra purchases?",
+    "a": "No — it's ad-free with no data collected and a one-time unlock."
+   }
+  ]
+ },
+ {
+  "app_key": "lumimath",
+  "kind": "faq",
+  "query": "Is there a math app for kids with no ads and no in-app purchases",
+  "match": [
+   "math app for kids no ads no in-app purchases",
+   "kids math app no ads pay once",
+   "math game no ads no iap children",
+   "safe math app for kids no ads"
+  ],
+  "lead": "For young children, the safest math app is a self-contained one-time purchase with no ads and no in-app purchases after unlock — nothing to accidentally tap or buy.",
+  "detail": "Free kids' math apps often carry ads or nudge in-app purchases, which is risky when a young child holds the phone. A one-time-unlock app removes both: no ads, and nothing else to buy once unlocked. {name} is fully self-contained — reasoning and competition-style math in a space-adventure — with no ads, no third-party analytics, and no data collected from children. Parents get quality practice without manipulative mechanics. Confirm current details on the App Store.",
+  "bullets": [
+   "No ads and no in-app purchases after unlock",
+   "No third-party analytics; no data collected from children",
+   "Self-contained: nothing to accidentally tap or buy",
+   "Reasoning-focused math in a game",
+   "One-time unlock, parent-trustworthy"
+  ],
+  "faq": [
+   {
+    "q": "Are there ads?",
+    "a": "No — {name} has no ads and no data collected from children."
+   },
+   {
+    "q": "Any in-app purchases after I buy it?",
+    "a": "No — it's a one-time unlock with nothing else to buy."
+   },
+   {
+    "q": "Is my child's data collected?",
+    "a": "No — no third-party analytics or tracking; nothing is collected from children."
+   }
+  ]
  }
 ]
 ''')

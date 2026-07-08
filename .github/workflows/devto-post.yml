@@ -1,0 +1,22 @@
+name: Dev.to auto post
+
+on:
+  schedule:
+    - cron: "0 10 */3 * *"   # 每 3 天一次(Dev.to 重原創,低頻不洗版)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Publish next unposted article to Dev.to
+        env:
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+        run: python3 .github/scripts/devto_post.py

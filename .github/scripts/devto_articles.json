@@ -1,0 +1,32 @@
+[
+ {
+  "title": "Make a passport or ID photo at home on your iPhone (no photo booth)",
+  "tags": [
+   "ios",
+   "productivity",
+   "tutorial",
+   "privacy"
+  ],
+  "body": "You don't need a photo booth for a passport or visa photo. On an iPhone you can shoot a compliant one at home in under a minute — if the app handles the three hard parts: the exact size for your country, a clean white background, and the right head position.\n\n**What a compliant photo needs**\n- The correct size (US 2×2 in / 51×51 mm; most countries 35×45 mm; Canada 50×70 mm).\n- A plain, even background (usually white).\n- Head height and eye line within range.\n\nI built **[Snapport](https://apps.apple.com/app/id6780575828)** for exactly this: country size templates, automatic background replacement, head-position guides, and a print-ready sheet — processed on-device, one-time purchase, no subscription.\n\nReference: free passport-size table by country → https://alice51849.github.io/ios-app-guide/data/passport-photo-sizes.html"
+ },
+ {
+  "title": "Free printable Zhuyin (Bopomofo) practice sheets for teaching kids Chinese",
+  "tags": [
+   "ios",
+   "showdev",
+   "productivity",
+   "indie"
+  ],
+  "body": "If you're teaching a child Zhuyin (Bopomofo, ㄅㄆㄇ) — the phonetic system used in Taiwan — repeated writing practice is what makes the 37 symbols stick.\n\nI made a few **free, printable web tools** (no signup) for parents and teachers:\n- Practice sheets (田字格 tracing) → https://alice51849.github.io/ios-app-guide/tools/zhuyin-practice-sheet.html\n- Flashcards → https://alice51849.github.io/ios-app-guide/tools/zhuyin-flashcards.html\n- Bingo cards for the classroom → https://alice51849.github.io/ios-app-guide/tools/zhuyin-bingo.html\n- Symbol chart → https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-chart.html\n\nTo learn the symbols through play, **[Lumi Bopomofo](https://apps.apple.com/app/id6773017109)** turns all 37 into games — one-time purchase, no ads, no subscription, everything on-device."
+ },
+ {
+  "title": "Scan documents to searchable PDFs offline — one-time purchase, no cloud",
+  "tags": [
+   "ios",
+   "productivity",
+   "privacy",
+   "tutorial"
+  ],
+  "body": "Most scanner apps push a subscription and upload your documents to their cloud. For sensitive papers (IDs, contracts, receipts) that's the opposite of what you want.\n\n**What to look for in a scanner app**\n- OCR so scans become *searchable* PDFs.\n- Everything on-device — no upload, no account.\n- A lock (Face ID) for private documents.\n- Offline, and a one-time price.\n\nI built **[ScanTo Pro](https://apps.apple.com/app/id6779977651)** to do exactly that: scan → OCR → searchable PDF → Face ID lock, fully offline, pay once.\n\nIf you're comparing pay-once vs subscription tools generally, I keep a 5-year cost breakdown here → https://alice51849.github.io/ios-app-guide/subscription-swap.html"
+ }
+]

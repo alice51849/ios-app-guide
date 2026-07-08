@@ -1,0 +1,55 @@
+{
+  "name": "Mandarin Chinese tones (with Zhuyin & Pinyin marks)",
+  "description": "The four Mandarin tones plus the neutral tone, each with its Chao pitch-contour number, description, Zhuyin (Bopomofo) tone mark, Pinyin mark and the classic 'ma' example.",
+  "identifier": "https://alice51849.github.io/ios-app-guide/data/mandarin-tones.json",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": "Lumi Apps",
+  "dateModified": "2026-07-09",
+  "tones": [
+    {
+      "tone": "1st (high level)",
+      "chaoContour": "55",
+      "description": "High and level, like holding a steady high note",
+      "zhuyinMark": "(unmarked)",
+      "pinyinExample": "mā",
+      "exampleCharacter": "媽",
+      "meaning": "mother"
+    },
+    {
+      "tone": "2nd (rising)",
+      "chaoContour": "35",
+      "description": "Rises from mid to high, like a questioning 'eh?'",
+      "zhuyinMark": "ˊ",
+      "pinyinExample": "má",
+      "exampleCharacter": "麻",
+      "meaning": "hemp"
+    },
+    {
+      "tone": "3rd (dipping)",
+      "chaoContour": "214",
+      "description": "Dips low then rises; often just low in fast speech",
+      "zhuyinMark": "ˇ",
+      "pinyinExample": "mǎ",
+      "exampleCharacter": "馬",
+      "meaning": "horse"
+    },
+    {
+      "tone": "4th (falling)",
+      "chaoContour": "51",
+      "description": "Starts high and drops sharply, like a firm command",
+      "zhuyinMark": "ˋ",
+      "pinyinExample": "mà",
+      "exampleCharacter": "罵",
+      "meaning": "scold"
+    },
+    {
+      "tone": "Neutral (light)",
+      "chaoContour": "—",
+      "description": "Short, light, unstressed; pitch depends on the tone before",
+      "zhuyinMark": "˙",
+      "pinyinExample": "ma",
+      "exampleCharacter": "嗎",
+      "meaning": "question particle"
+    }
+  ]
+}

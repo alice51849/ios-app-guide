@@ -618,6 +618,94 @@ def build_currency_page():
     return slug
 
 
+# ── Mandarin tones (ties to Lumi Bopomofo) ──
+TONES = [
+    # (tone, chao, description, zhuyin_mark, pinyin_ex, char, meaning)
+    ("1st (high level)", "55", "High and level, like holding a steady high note",
+     "(unmarked)", "mā", "媽", "mother"),
+    ("2nd (rising)", "35", "Rises from mid to high, like a questioning 'eh?'",
+     "ˊ", "má", "麻", "hemp"),
+    ("3rd (dipping)", "214", "Dips low then rises; often just low in fast speech",
+     "ˇ", "mǎ", "馬", "horse"),
+    ("4th (falling)", "51", "Starts high and drops sharply, like a firm command",
+     "ˋ", "mà", "罵", "scold"),
+    ("Neutral (light)", "—", "Short, light, unstressed; pitch depends on the tone before",
+     "˙", "ma", "嗎", "question particle"),
+]
+
+
+def tones_json():
+    return {
+        "name": "Mandarin Chinese tones (with Zhuyin & Pinyin marks)",
+        "description": ("The four Mandarin tones plus the neutral tone, each with its Chao "
+                        "pitch-contour number, description, Zhuyin (Bopomofo) tone mark, Pinyin "
+                        "mark and the classic 'ma' example."),
+        "identifier": f"{SITE}/data/mandarin-tones.json",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "creator": "Lumi Apps",
+        "dateModified": TODAY,
+        "tones": [{"tone": t, "chaoContour": c, "description": d, "zhuyinMark": z,
+                   "pinyinExample": p, "exampleCharacter": ch, "meaning": m}
+                  for t, c, d, z, p, ch, m in TONES],
+    }
+
+
+def build_tones_page():
+    slug = "mandarin-tones"
+    title = "The 4 Mandarin Tones (+ Neutral) — Chart with Zhuyin & Pinyin | Open Data"
+    h1 = "Mandarin Chinese tones"
+    desc = ("How many tones does Mandarin have? The four tones plus the neutral tone, each with "
+            "its pitch contour, Zhuyin (Bopomofo) & Pinyin marks and the classic 'ma' example. "
+            "Free open data (CC BY 4.0).")
+    lead = ("Mandarin is tonal: the same sound 'ma' means mother, hemp, horse or scold depending "
+            "on the tone. Here is a citable reference of all five tones with their marks.")
+    rows = ""
+    for t, c, d, z, p, ch, m in TONES:
+        rows += (f'<tr><td><strong>{html.escape(t)}</strong></td>'
+                 f'<td class="nw">{html.escape(c)}</td>'
+                 f'<td class="nw" style="font-size:20px">{html.escape(z)}</td>'
+                 f'<td class="nw">{ch} <span class="py">{html.escape(p)}</span> — {html.escape(m)}</td>'
+                 f'<td>{html.escape(d)}</td></tr>')
+    tables = ('<div class="card"><table>'
+              '<tr><th>Tone</th><th>Pitch (Chao)</th><th>Zhuyin mark</th>'
+              '<th>Example</th><th>Description</th></tr>'
+              f'{rows}</table></div>')
+    dj = tones_json()
+    schema = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "Dataset", "name": dj["name"], "description": dj["description"],
+        "url": f"{SITE}/data/{slug}.html", "identifier": dj["identifier"],
+        "license": dj["license"], "creator": {"@type": "Organization", "name": "Lumi Apps"},
+        "dateModified": dj["dateModified"],
+        "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json",
+                          "contentUrl": dj["identifier"]}],
+        "keywords": ["Mandarin tones", "Chinese tones", "Zhuyin", "Bopomofo", "Pinyin",
+                     "tone marks", "四聲"],
+    }, ensure_ascii=False)
+    pills = ('<span class="pill">4 tones + neutral</span>'
+             '<span class="pill">Zhuyin & Pinyin marks</span>')
+    cta = ('<h2>Learn tones and Zhuyin the Taiwan way</h2>\n'
+           '<p>Tones make or break Mandarin pronunciation. <strong>Lumi Bopomofo</strong> teaches '
+           'the 37 Zhuyin symbols and their tone marks through games — a one-time purchase, no ads, '
+           'no subscription, on-device.</p>\n'
+           f'<a class="cta" href="{BOPOMOFO_APP}">Get Lumi Bopomofo on the App Store →</a>\n'
+           f'<p style="font-size:14px"><a href="{SITE}/data/zhuyin-bopomofo.html">Zhuyin symbols '
+           'dataset →</a> &nbsp;·&nbsp; <a href="{S}/data/">More open datasets →</a></p>'
+           .replace("{S}", SITE))
+    page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
+                       lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
+                       crumb="Mandarin tones", pills=pills, tables=tables, schema=schema, cta=cta,
+                       related=related_block([
+                           ("Zhuyin (Bopomofo) symbols", "data/zhuyin-bopomofo.html"),
+                           ("Kids learning apps", "kids-learning.html"),
+                           ("Printable Bopomofo chart", "tools/zhuyin-bopomofo-chart.html")]))
+    os.makedirs(DATA, exist_ok=True)
+    open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
+        json.dumps(dj, ensure_ascii=False, indent=2))
+    open(os.path.join(DATA, f"{slug}.html"), "w", encoding="utf-8").write(page)
+    return slug
+
+
 INDEX = """<!doctype html>
 <html lang="en">
 <head>
@@ -728,11 +816,18 @@ def main():
     rslug = build_cn_regions_page()
     cvslug = build_resume_page()
     curslug = build_currency_page()
+    tslug = build_tones_page()
     datasets = [{
         "slug": slug,
         "name": "Zhuyin (Bopomofo): all 37 symbols",
         "blurb": "The complete 21 initials + 3 medials + 13 finals, each with Pinyin, "
                  "Unicode and an example word. JSON download included.",
+        "tag": "Language · CC BY 4.0",
+    }, {
+        "slug": tslug,
+        "name": "Mandarin tones (with Zhuyin & Pinyin marks)",
+        "blurb": "The 4 tones + neutral, each with Chao pitch contour, Zhuyin/Pinyin marks and "
+                 "the classic 'ma' example. JSON download included.",
         "tag": "Language · CC BY 4.0",
     }, {
         "slug": rslug,

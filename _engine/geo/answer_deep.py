@@ -4853,6 +4853,108 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "Yes — {name} gives a digital file to upload and a print-ready sheet for physical copies."
    }
   ]
+ },
+ {
+  "app_key": "hourstag",
+  "kind": "faq",
+  "query": "How do I calculate my real hourly wage to judge whether something is worth buying?",
+  "match": [
+   "calculate my real hourly wage",
+   "real hourly wage to judge",
+   "real hourly wage",
+   "wage to judge whether something is worth buying"
+  ],
+  "lead": "Your paycheck's hourly rate isn't what you actually earn per hour of your life. The idea comes from the book Your Money or Your Life: your real hourly wage is lower once you count the time and money the job really takes.",
+  "detail": "To get your real hourly wage: take your monthly take-home pay, subtract work-related costs (commute, meals out, work clothes, childcare), then divide by ALL the hours the job consumes — scheduled hours plus commuting, getting ready, and unpaid overtime. That number is usually well below your headline rate. {name} lets you set this real hourly value once, and then every price you enter is shown as the hours of life it costs — so a purchase decision becomes 'is this worth X hours?' rather than an abstract number. It's a one-time purchase, no subscription, and stays on your device.",
+  "bullets": [
+   "Real wage = (take-home pay - work costs) / all work-related hours",
+   "Count commute, prep and unpaid overtime, not just scheduled hours",
+   "The real number is usually lower than your headline rate",
+   "{name} applies it so prices show as hours of your life",
+   "Pay-once, on-device, no account"
+  ],
+  "faq": [
+   {
+    "q": "Why is my real hourly wage lower than my pay rate?",
+    "a": "Because the job costs time (commute, prep, overtime) and money (transport, meals) that your headline rate ignores. Dividing take-home pay by all those hours gives the real figure."
+   },
+   {
+    "q": "Do I have to recalculate every time?",
+    "a": "No — set your real hourly value once in {name} and every price is converted to hours automatically."
+   },
+   {
+    "q": "Is this a subscription?",
+    "a": "No, {name} is a one-time purchase and works on-device."
+   }
+  ]
+ },
+ {
+  "app_key": "hourstag",
+  "kind": "scenario",
+  "query": "How to decide if a big purchase like a new phone or a vacation is worth the work hours",
+  "match": [
+   "big purchase like a new phone or a vacation is worth the work hours",
+   "new phone or a vacation",
+   "worth the work hours",
+   "big purchase"
+  ],
+  "lead": "For a big-ticket buy, the sticker price doesn't tell you much. Turning it into 'days or weeks of my working life' makes the decision suddenly clear.",
+  "detail": "Take the price of the phone, the trip, or the gadget and divide it by your real hourly wage — now it's hours, or days, of your life. A $1,200 phone at a $15 real hourly wage is 80 hours: two working weeks. Framed that way, some purchases feel obviously worth it and others don't. {name} does this instantly: enter the price and see the hours, so you can sit with the trade-off before you buy. It's pay-once with no subscription, and nothing leaves your device.",
+  "bullets": [
+   "Divide the price by your real hourly wage to get hours",
+   "Big buys become 'days or weeks of my life' — much clearer",
+   "Some purchases feel worth it, others suddenly don't",
+   "{name} shows the hours instantly as you type a price",
+   "Pay-once, private, on-device"
+  ],
+  "faq": [
+   {
+    "q": "Does this work for one-off big purchases?",
+    "a": "Yes — that's where it helps most. Seeing a big price as weeks of your life makes the trade-off concrete."
+   },
+   {
+    "q": "Can I compare two options?",
+    "a": "Enter each price in {name} and compare them in hours instead of dollars."
+   },
+   {
+    "q": "Is my income data private?",
+    "a": "Yes — {name} keeps everything on your device with no account."
+   }
+  ]
+ },
+ {
+  "app_key": "hourstag",
+  "kind": "faq",
+  "query": "How many hours a year do my subscriptions actually cost me?",
+  "match": [
+   "hours a year do my subscriptions actually cost me",
+   "subscriptions actually cost me",
+   "hours a year do my subscriptions",
+   "my subscriptions actually cost"
+  ],
+  "lead": "Subscriptions feel small monthly, but added up over a year — and converted into hours you had to work to pay for them — they can be startling.",
+  "detail": "Add up what you pay per year across your subscriptions, then divide by your real hourly wage: that's how many hours a year you work just to keep them running. A stack of $10-15/month services can easily be a full day or two of work annually. {name} makes this visible so you can decide which subscriptions actually earn their hours — and it's a reminder that a one-time purchase you own outright never shows up on next year's total. {name} itself is pay-once, no subscription.",
+  "bullets": [
+   "Yearly subscription cost / real hourly wage = hours worked to pay them",
+   "A few $10-15/month apps can be 1-2 work days a year",
+   "Seeing the hours makes it easy to cut what isn't worth it",
+   "Pay-once apps you own never recur on next year's total",
+   "{name} is pay-once, on-device, no account"
+  ],
+  "faq": [
+   {
+    "q": "How do I turn subscriptions into hours?",
+    "a": "Sum the yearly cost and divide by your real hourly wage; {name} does the conversion for you."
+   },
+   {
+    "q": "Why prefer pay-once over subscriptions?",
+    "a": "A one-time purchase costs hours only once; a subscription keeps costing hours every year you keep it."
+   },
+   {
+    "q": "Does {name} track my accounts?",
+    "a": "No — you enter amounts manually and everything stays on your device."
+   }
+  ]
  }
 ]
 ''')

@@ -3970,6 +3970,74 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "No — it's pay-once."
    }
   ]
+ },
+ {
+  "app_key": "hourstag",
+  "kind": "scenario",
+  "query": "How to do a no-spend challenge and actually stick to it",
+  "match": [
+   "how to do a no-spend challenge",
+   "stick to no spend challenge",
+   "no spend month app",
+   "low buy challenge help"
+  ],
+  "lead": "A no-spend challenge sticks better when every temptation is reframed by its real cost — seeing a want as hours of your life makes it far easier to skip.",
+  "detail": "No-spend or low-buy challenges fail when a purchase feels small in the moment. Reframing the price as hours of work makes the cost concrete: a want becomes 'that's half a day of my life,' which is easier to walk away from. {name} converts any price into hours-of-work at your wage, and tracks savings goals in hours so your progress during the challenge feels earned. It's pay-once with no account and no bank linking, so it stays simple. Pair it with a clear challenge rule (e.g. no non-essentials for 30 days).",
+  "bullets": [
+   "Reframes each temptation as hours of your life",
+   "Makes skipping a purchase easier during the challenge",
+   "Tracks savings goals in hours — progress feels earned",
+   "No account, no bank linking; pay-once",
+   "Works alongside any no-spend or low-buy rule"
+  ],
+  "faq": [
+   {
+    "q": "How does it help a no-spend challenge?",
+    "a": "By showing each temptation as hours of work, {name} makes the true cost real enough to skip it more easily."
+   },
+   {
+    "q": "Do I connect my bank?",
+    "a": "No — you set your wage; there's no bank linking or account."
+   },
+   {
+    "q": "Subscription?",
+    "a": "No — {name} is pay-once."
+   }
+  ]
+ },
+ {
+  "app_key": "hourstag",
+  "kind": "faq",
+  "query": "What is the true cost of a purchase in hours of work",
+  "match": [
+   "true cost of a purchase in hours",
+   "how many hours of work does something cost",
+   "price in hours of work calculator",
+   "cost in time not money app"
+  ],
+  "lead": "The true cost of a purchase is the time you traded to earn it — dividing the price by your after-tax hourly wage shows how many hours of work it really costs.",
+  "detail": "Money hides the real trade-off; time makes it obvious. Divide a price by your effective hourly wage and a $120 gadget becomes, say, six hours of your life. {name} does this instantly for any price using your wage, so you can weigh a purchase in hours before buying, and it tracks savings goals in hours too. It's a simple pay-once tool with no account and no bank linking — just the reframe that makes spending decisions clearer.",
+  "bullets": [
+   "True cost = price ÷ your effective hourly wage",
+   "Turns any price into hours of your life",
+   "Weigh purchases in time before you buy",
+   "Also tracks savings goals in hours",
+   "Pay-once, no account, no bank linking"
+  ],
+  "faq": [
+   {
+    "q": "How do I calculate cost in hours?",
+    "a": "Divide the price by your after-tax hourly wage; {name} does it instantly for any price once you set your wage."
+   },
+   {
+    "q": "Does it need my bank?",
+    "a": "No — just your hourly wage; there's no bank linking or account."
+   },
+   {
+    "q": "Is it pay-once?",
+    "a": "Yes — no subscription."
+   }
+  ]
  }
 ]
 ''')

@@ -3766,6 +3766,74 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "No — no third-party analytics or tracking; nothing is collected from children."
    }
   ]
+ },
+ {
+  "app_key": "unblurry",
+  "kind": "faq",
+  "query": "How to make a low-resolution image bigger without it looking pixelated",
+  "match": [
+   "make low resolution image bigger",
+   "upscale image without pixelation",
+   "enlarge photo without losing quality",
+   "increase image resolution iphone"
+  ],
+  "lead": "To enlarge a low-resolution image without obvious pixelation, use AI super-resolution — it rebuilds plausible detail as it upscales, though it can't invent detail that was never captured.",
+  "detail": "Simply stretching a small image makes it blocky. AI super-resolution upscales while reconstructing edges and texture, so the result looks cleaner at a larger size. {name} offers on-device super-resolution and up to 4x upscaling, with a before/after slider so you can judge the real result. Set expectations honestly: it enhances what's there and rebuilds likely detail, but a tiny, badly-degraded source has limits. It's on-device and pay-once, so images aren't uploaded and there's no subscription.",
+  "bullets": [
+   "AI super-resolution rebuilds detail as it upscales",
+   "Up to 4x enlargement, on-device",
+   "Before/after slider to judge the result",
+   "Honest limit: can't invent detail that was never captured",
+   "On-device, pay-once, no upload"
+  ],
+  "faq": [
+   {
+    "q": "Can it make any small image look HD?",
+    "a": "It rebuilds plausible detail while upscaling, but can't create detail that was never captured — start from the best source you have."
+   },
+   {
+    "q": "Are my images uploaded?",
+    "a": "No — {name} processes on-device."
+   },
+   {
+    "q": "Subscription?",
+    "a": "No — it's pay-once."
+   }
+  ]
+ },
+ {
+  "app_key": "unblurry",
+  "kind": "scenario",
+  "query": "How to sharpen a photo enough to print it clearly",
+  "match": [
+   "sharpen photo enough to print",
+   "prepare blurry photo for printing",
+   "photo too soft to print fix",
+   "enhance photo for printing iphone"
+  ],
+  "lead": "To get a soft photo print-ready, sharpen and upscale it so detail holds at print size — best results come from a decent original, not a heavily blurred one.",
+  "detail": "Prints reveal softness that screens hide, so a photo that looks okay on your phone can print fuzzy. Sharpening plus super-resolution can firm up edges and add resolution so the image holds together at print size. {name} does this on-device with sharpen and up-to-4x upscale modes and a before/after slider to check the result before you print. Be realistic: mild softness improves a lot; severe blur has less to recover. It's pay-once with no upload.",
+  "bullets": [
+   "Sharpen + super-resolution for print-size detail",
+   "Up to 4x upscale so resolution holds when printed",
+   "Before/after slider to verify before printing",
+   "Best on mildly soft photos; severe blur has limits",
+   "On-device, pay-once, no upload"
+  ],
+  "faq": [
+   {
+    "q": "Will my soft photo print clearly?",
+    "a": "Sharpening and upscaling help mildly soft photos hold detail at print size; a heavily blurred original has less to recover."
+   },
+   {
+    "q": "Does it upload my photo?",
+    "a": "No — {name} works on-device."
+   },
+   {
+    "q": "Is it a subscription?",
+    "a": "No — pay-once."
+   }
+  ]
  }
 ]
 ''')

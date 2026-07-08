@@ -4310,6 +4310,74 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "Yes — {name} is pay-once and works on-device with no account."
    }
   ]
+ },
+ {
+  "app_key": "picclear",
+  "kind": "faq",
+  "query": "How to find large videos taking up space on iPhone",
+  "match": [
+   "find large videos taking up space",
+   "large videos eating iphone storage",
+   "delete big videos iphone",
+   "which videos use most storage"
+  ],
+  "lead": "The fastest way to reclaim gigabytes is to find your biggest videos first — sorting the library by file size surfaces the few large clips that use most of the space.",
+  "detail": "A handful of long 4K videos often take more room than thousands of photos. Instead of scrolling, sort your library by size so the space hogs come to the top, then review and delete the ones you don't need. {name} scans on-device and sorts large videos by size, alongside duplicate photos and old screenshots, and it never auto-deletes — you review and confirm each one. Nothing is uploaded. It's pay-once, so clearing space costs nothing extra.",
+  "bullets": [
+   "Sorts large videos by size — biggest first",
+   "A few 4K clips often beat thousands of photos for space",
+   "Review and confirm; nothing auto-deleted",
+   "Also finds duplicates and old screenshots",
+   "On-device, pay-once, nothing uploaded"
+  ],
+  "faq": [
+   {
+    "q": "Why is my storage full when I have few videos?",
+    "a": "A few long 4K videos can use more space than thousands of photos; {name} sorts videos by size so you spot them fast."
+   },
+   {
+    "q": "Will it delete a video I want?",
+    "a": "No — you review and confirm each deletion; nothing is removed automatically."
+   },
+   {
+    "q": "Is my library uploaded?",
+    "a": "No — {name} scans on-device."
+   }
+  ]
+ },
+ {
+  "app_key": "picclear",
+  "kind": "scenario",
+  "query": "How to clean up burst photos and keep only the best shot",
+  "match": [
+   "clean up burst photos",
+   "keep best shot from burst",
+   "too many similar photos burst",
+   "pick best photo from similar"
+  ],
+  "lead": "Burst and rapid-fire shots leave dozens of near-identical photos — the fix is to group the look-alikes so you can keep the single best and clear the rest.",
+  "detail": "Every burst or 'just one more' moment leaves a cluster of near-identical shots that quietly fill your library. {name} groups these look-alikes by visual similarity (not just identical files), so you can glance at each group, keep the sharpest or best-lit one, and clear the rest — after you confirm. It runs on-device and never auto-deletes, and it also surfaces exact duplicates, large videos and old screenshots. Pay-once, nothing uploaded.",
+  "bullets": [
+   "Groups near-identical burst shots by visual similarity",
+   "Keep the best of each group, clear the rest",
+   "Review and confirm — no auto-delete",
+   "Also finds duplicates, large videos, screenshots",
+   "On-device, pay-once, nothing uploaded"
+  ],
+  "faq": [
+   {
+    "q": "Can it find similar shots, not just identical?",
+    "a": "Yes — {name} groups look-alikes by visual similarity, so burst clusters are caught, not just byte-identical files."
+   },
+   {
+    "q": "Will I lose the good one?",
+    "a": "No — you keep the best of each group and only clear the rest, after confirming."
+   },
+   {
+    "q": "Subscription?",
+    "a": "No — {name} is pay-once and scans on-device."
+   }
+  ]
  }
 ]
 ''')

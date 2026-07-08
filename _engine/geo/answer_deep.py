@@ -4038,6 +4038,74 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "Yes — no subscription."
    }
   ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "faq",
+  "query": "How do you type Chinese using Zhuyin Bopomofo on an iPhone",
+  "match": [
+   "type chinese using zhuyin",
+   "zhuyin keyboard iphone",
+   "bopomofo typing chinese",
+   "how to type chinese bopomofo"
+  ],
+  "lead": "iPhone has a built-in Zhuyin (Bopomofo) keyboard — you type the phonetic symbols for a syllable and pick the character, which is why learning the 37 symbols also lets a child type Chinese.",
+  "detail": "On iPhone you can add the Zhuyin keyboard under Settings > General > Keyboard, then type by entering a syllable's Bopomofo symbols and choosing the character. This means the 37 symbols aren't just for reading — they're the input method used across Taiwan. A child who learns Zhuyin with {name} (all 37 symbols, native audio, tones and blending) gains the foundation to both read and type traditional Chinese. {name} is ad-free, collects no data from children, and is a one-time unlock.",
+  "bullets": [
+   "iPhone has a built-in Zhuyin/Bopomofo keyboard",
+   "Type a syllable's symbols, then pick the character",
+   "Learning the 37 symbols enables reading AND typing",
+   "{name} teaches all 37 symbols with native audio and tones",
+   "Ad-free, no data collected, one-time unlock"
+  ],
+  "faq": [
+   {
+    "q": "Can my child type Chinese after learning Zhuyin?",
+    "a": "Yes — Zhuyin is a built-in iPhone keyboard, so learning the 37 symbols lets a child type traditional Chinese, not just read it."
+   },
+   {
+    "q": "How do I add the Zhuyin keyboard?",
+    "a": "Settings > General > Keyboard > Keyboards > Add New Keyboard, then choose the Chinese (Traditional) Zhuyin option."
+   },
+   {
+    "q": "Does {name} teach typing?",
+    "a": "{name} teaches the 37 symbols, tones and blending — the foundation you use to type with the system Zhuyin keyboard."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "faq",
+  "query": "Is Zhuyin useful for reading Chinese or only for pronunciation",
+  "match": [
+   "is zhuyin useful for reading",
+   "zhuyin for reading or pronunciation",
+   "does zhuyin help reading chinese",
+   "what is zhuyin used for"
+  ],
+  "lead": "Zhuyin helps with both: it teaches correct pronunciation and tones, and because Taiwanese children's books print Zhuyin beside characters, it also lets early readers decode and read new words on their own.",
+  "detail": "Zhuyin (Bopomofo) does double duty. As a pronunciation guide, its 37 symbols map cleanly to Mandarin sounds and tones. As a reading aid, it appears alongside characters in Taiwanese children's books, so a child who knows Zhuyin can sound out unfamiliar characters and read independently — a bridge to full character literacy. {name} builds this foundation with all 37 symbols, native Taiwanese audio, a tone game and syllable blending. It's ad-free, no data collected, one-time unlock.",
+  "bullets": [
+   "Teaches correct pronunciation and the four tones",
+   "Printed beside characters in Taiwan kids' books — aids reading",
+   "Lets early readers decode new characters independently",
+   "A bridge toward full character literacy",
+   "{name}: 37 symbols, native audio, ad-free, one-time unlock"
+  ],
+  "faq": [
+   {
+    "q": "Is Zhuyin only for pronunciation?",
+    "a": "No — it also aids reading, since Taiwanese children's books print Zhuyin beside characters so kids can decode new words."
+   },
+   {
+    "q": "Does knowing Zhuyin help learn characters?",
+    "a": "Yes — it lets a child sound out and read annotated books independently, which supports building character literacy over time."
+   },
+   {
+    "q": "Is {name} suitable for a first-time learner?",
+    "a": "Yes — it's designed for the 4–7 first-learning window, ad-free with no data collected."
+   }
+  ]
  }
 ]
 ''')

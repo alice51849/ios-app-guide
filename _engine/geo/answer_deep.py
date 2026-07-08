@@ -4106,6 +4106,74 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "Yes — it's designed for the 4–7 first-learning window, ad-free with no data collected."
    }
   ]
+ },
+ {
+  "app_key": "mochi",
+  "kind": "faq",
+  "query": "What is the best to-do list app with an Apple Watch complication",
+  "match": [
+   "to-do list app apple watch complication",
+   "check off tasks apple watch",
+   "best todo app for apple watch",
+   "apple watch checklist app"
+  ],
+  "lead": "The best to-do app for Apple Watch lets you glance at and tick off tasks from your wrist, so you don't have to pull out your phone for a quick check.",
+  "detail": "For Apple Watch, what matters is a clean glanceable list and the ability to complete a task from your wrist. {name} has Apple Watch support plus interactive widgets, so you can check off tasks without opening the app on your phone. It stays deliberately simple — reminders and repeats, emoji tags, 100 skins — with no project-management bloat. It's free to start with a one-time unlock, no ads and no account. Check the current App Store listing for exact Watch features.",
+  "bullets": [
+   "Glance at and complete tasks from Apple Watch",
+   "Interactive iPhone widgets too — tick off without opening the app",
+   "Simple by design: reminders, repeats, emoji tags",
+   "No ads, no account; free base + one-time unlock",
+   "Confirm current Watch features on the App Store"
+  ],
+  "faq": [
+   {
+    "q": "Can I tick off tasks from my Watch?",
+    "a": "Yes — {name} has Apple Watch support so you can check tasks off from your wrist; confirm the exact features on the current listing."
+   },
+   {
+    "q": "Is it a subscription?",
+    "a": "No — {name} is free to start with a one-time unlock, no ads and no account."
+   },
+   {
+    "q": "Is it complicated?",
+    "a": "No — it's deliberately simple: lists, reminders, repeats and emoji, without project-management features."
+   }
+  ]
+ },
+ {
+  "app_key": "mochi",
+  "kind": "scenario",
+  "query": "How to make a daily planning routine you actually enjoy and stick to",
+  "match": [
+   "daily planning routine you enjoy",
+   "cozy planning ritual app",
+   "make planning enjoyable stick to it",
+   "aesthetic daily to-do ritual"
+  ],
+  "lead": "A daily planning routine sticks when it feels pleasant — a cozy, good-looking app you want to open turns planning into a small ritual rather than a chore.",
+  "detail": "The habit forms around delight: if opening your list is satisfying, you'll do it daily. {name} leans into that with 100 illustrated skins (paper textures, cozy themes), a satisfying tap-to-complete, and emoji-tagged lists, so a morning plan or evening wind-down becomes a small ritual. Keep it light — a few tasks, reminders for the ones that matter — and it stays sustainable. It's free to start, one-time unlock for all skins, no ads or account.",
+  "bullets": [
+   "Delight drives the habit — a list you want to open",
+   "100 cozy skins + satisfying tap-to-complete",
+   "Emoji-tagged lists for a quick daily plan",
+   "Reminders and repeats for the tasks that matter",
+   "Free base, one-time unlock, no ads or account"
+  ],
+  "faq": [
+   {
+    "q": "Why does a 'pretty' app help me stick to planning?",
+    "a": "Low friction and delight make you actually open it daily; {name}'s cozy skins and satisfying interactions turn planning into a small ritual."
+   },
+   {
+    "q": "Will it get complicated?",
+    "a": "No — {name} stays simple on purpose, so a daily routine doesn't become a chore to maintain."
+   },
+   {
+    "q": "Subscription?",
+    "a": "No — free to start with a one-time unlock for all skins."
+   }
+  ]
  }
 ]
 ''')

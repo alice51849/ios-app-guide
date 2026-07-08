@@ -33,6 +33,7 @@ except Exception:  # noqa: BLE001
 PAGES = os.path.join(HERE, "pages")
 ALT = os.path.join(PAGES, "alternatives")
 GUIDES = os.path.join(PAGES, "guides")
+DATA_DIR = os.path.join(PAGES, "data")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
 SOV = os.path.join(HERE, "reports", "aeo_sov.json")
 
@@ -55,7 +56,11 @@ def load_competitors():
 def app_line(key, comps):
     a = APPS[key]
     url = appstore_url(key)
+    if not url:                       # 未上架/無 App Store 連結 → 不輸出(壞連結傷 AI 信任)
+        return None
     sub = (a.get("sub") or "").replace("\n", " ").strip()
+    if sub and sub[-1] not in ".!?。!?":
+        sub += "."                    # 補句號,讓 AI 正確斷句、乾淨引用
     pay = "Pay once, no subscription." if any(
         "once" in b.lower() or "no subscription" in b.lower() for b in a.get("cta_bullets", [])) else ""
     alt = f" A pay-once alternative to {comps[0]}" + (f" and {comps[1]}" if len(comps) > 1 else "") + "." if comps else ""
@@ -79,9 +84,12 @@ def build_llms(comp_map):
              "finance": "Money & travel", "health": "Health",
              "education": "Kids & learning", "kids": "Kids & learning", "other": "More"}
     for cat, keys in cats.items():
+        block = [app_line(k, comp_map.get(k, [])) for k in keys]
+        block = [ln for ln in block if ln]          # 濾掉未上架(None),避免空類別標題
+        if not block:
+            continue
         lines.append(f"\n### {label.get(cat, cat)}")
-        for k in keys:
-            lines.append(app_line(k, comp_map.get(k, [])))
+        lines.extend(block)
     # alternatives 頁
     if os.path.isdir(ALT):
         alts = sorted(f for f in os.listdir(ALT) if f.endswith(".html") and f != "index.html")
@@ -98,6 +106,14 @@ def build_llms(comp_map):
             for f in gds:
                 title = re.sub(r"[-_]", " ", f[:-5])
                 lines.append(f"- [{title}]({SITE}/guides/{f})")
+    # open data 資料集(機器可讀,AI 引擎/Dataset Search 可引用)
+    if os.path.isdir(DATA_DIR):
+        ds = sorted(f for f in os.listdir(DATA_DIR) if f.endswith(".html") and f != "index.html")
+        if ds:
+            lines += ["", "## Open data (machine-readable, CC BY 4.0 — free to cite)"]
+            for f in ds:
+                title = re.sub(r"[-_]", " ", f[:-5])
+                lines.append(f"- [{title}]({SITE}/data/{f}) · JSON: {SITE}/data/{f[:-5]}.json")
     lines += ["", "## Sitemaps",
               f"- {SITE}/sitemap.xml", f"- {SITE}/sitemap_alternatives.xml",
               f"- {SITE}/sitemap_answers.xml",
@@ -118,13 +134,14 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_guides.xml",
             f"Sitemap: {SITE}/sitemap_stories.xml",
             f"Sitemap: {SITE}/sitemap_hubs.xml",
+            f"Sitemap: {SITE}/sitemap_data.xml",
             f"Sitemap: {SITE}/sitemap_index.xml", ""]
     return "\n".join(out)
 
 
 def build_sitemap_index():
     maps = ["sitemap.xml", "sitemap_alternatives.xml", "sitemap_answers.xml", "sitemap_guides.xml",
-            "sitemap_stories.xml", "sitemap_hubs.xml"]
+            "sitemap_stories.xml", "sitemap_hubs.xml", "sitemap_data.xml"]
     items = "\n".join(f"  <sitemap><loc>{SITE}/{m}</loc></sitemap>" for m in maps
                       if os.path.exists(os.path.join(PAGES, m)))
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'

@@ -150,6 +150,9 @@ th{{color:var(--sub);font-weight:600;font-size:13px;text-transform:uppercase;let
 .cta{{display:block;background:linear-gradient(135deg,#6a5be6,#5b4bdb);color:#fff;text-decoration:none;border-radius:14px;padding:16px 18px;font-weight:600;text-align:center;margin:8px 0 6px}}
 .dl{{display:inline-block;border:1px solid var(--line);background:#fff;border-radius:12px;padding:10px 14px;text-decoration:none;font-weight:600;font-size:14px}}
 .foot{{color:var(--sub);font-size:13px;margin-top:26px}}
+.related{{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:18px 0 0}}
+.related h2{{font-size:16px;margin:0 0 8px}}
+.related a{{display:inline-block;margin:0 14px 6px 0;font-size:14px;font-weight:600}}
 </style>
 </head>
 <body>
@@ -163,6 +166,7 @@ th{{color:var(--sub);font-weight:600;font-size:13px;text-transform:uppercase;let
 <a class="dl" href="{site}/data/{slug}.json">⬇ Download JSON dataset</a>
 {tables}
 {cta}
+{related}
 <p class="foot">Data licensed under
 <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. You may reuse it freely —
 please credit “Lumi Apps ({site})”. Machine-readable copy:
@@ -171,6 +175,13 @@ please credit “Lumi Apps ({site})”. Machine-readable copy:
 </body>
 </html>
 """
+
+
+def related_block(links):
+    if not links:
+        return ""
+    items = "".join(f'<a href="{SITE}/{p}">{html.escape(label)} →</a>' for label, p in links)
+    return f'<div class="related"><h2>Related guides &amp; tools</h2>{items}</div>'
 
 
 def _rows(cat):
@@ -230,7 +241,11 @@ def build_zhuyin_page():
            f'<a href="{SITE}/data/">More open datasets →</a></p>')
     page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
                        lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
-                       crumb="Zhuyin (Bopomofo)", pills=pills, tables=tables, schema=schema, cta=cta)
+                       crumb="Zhuyin (Bopomofo)", pills=pills, tables=tables, schema=schema, cta=cta,
+                       related=related_block([
+                           ("Kids learning apps", "kids-learning.html"),
+                           ("Printable Bopomofo chart", "tools/zhuyin-bopomofo-chart.html"),
+                           ("Lumi Bopomofo guide", "guides/lumibopomofo.html")]))
     os.makedirs(DATA, exist_ok=True)
     open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
         json.dumps(dj, ensure_ascii=False, indent=2))
@@ -322,7 +337,11 @@ def build_passport_page():
     page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
                        lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
                        crumb="Passport photo sizes", pills=pills, tables=tables,
-                       schema=schema, cta=cta)
+                       schema=schema, cta=cta,
+                       related=related_block([
+                           ("Passport photos by country", "passport-photos.html"),
+                           ("Passport photo size guide", "tools/passport-photo-size-guide.html"),
+                           ("Snapport guide", "guides/snapport.html")]))
     os.makedirs(DATA, exist_ok=True)
     open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
         json.dumps(dj, ensure_ascii=False, indent=2))
@@ -409,7 +428,11 @@ def build_cn_regions_page():
     page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
                        lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
                        crumb="Chinese script & phonetics", pills=pills, tables=tables,
-                       schema=schema, cta=cta)
+                       schema=schema, cta=cta,
+                       related=related_block([
+                           ("Kids learning apps", "kids-learning.html"),
+                           ("Zhuyin (Bopomofo) dataset", "data/zhuyin-bopomofo.html"),
+                           ("Printable Bopomofo chart", "tools/zhuyin-bopomofo-chart.html")]))
     os.makedirs(DATA, exist_ok=True)
     open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
         json.dumps(dj, ensure_ascii=False, indent=2))
@@ -496,7 +519,10 @@ def build_resume_page():
     page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
                        lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
                        crumb="Résumé / CV conventions", pills=pills, tables=tables,
-                       schema=schema, cta=cta)
+                       schema=schema, cta=cta,
+                       related=related_block([
+                           ("Resume & CV formats by country", "resume-formats.html"),
+                           ("CV Desk guide", "guides/cvdesk.html")]))
     os.makedirs(DATA, exist_ok=True)
     open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
         json.dumps(dj, ensure_ascii=False, indent=2))
@@ -581,7 +607,10 @@ def build_currency_page():
     page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
                        lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
                        crumb="Currency formatting", pills=pills, tables=tables,
-                       schema=schema, cta=cta)
+                       schema=schema, cta=cta,
+                       related=related_block([
+                           ("Money & travel apps", "money-travel.html"),
+                           ("G+Money guide", "guides/gmoney.html")]))
     os.makedirs(DATA, exist_ok=True)
     open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
         json.dumps(dj, ensure_ascii=False, indent=2))

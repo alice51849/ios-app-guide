@@ -4786,6 +4786,73 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "They can — ad-supported or subscription apps add up, whereas {name} is a single price."
    }
   ]
+ },
+ {
+  "app_key": "snapport",
+  "kind": "scenario",
+  "query": "How to take a baby or newborn passport photo at home",
+  "match": [
+   "baby or newborn passport photo at home",
+   "newborn passport photo at home",
+   "baby passport photo",
+   "newborn passport photo"
+  ],
+  "lead": "A newborn can't sit up, look straight, or hold still — which is exactly why baby passport photos get rejected. The trick is to shoot from above while the baby lies on a plain white surface.",
+  "detail": "For a baby passport photo, lay the baby on their back on a smooth white sheet, then stand directly above and shoot down so the face is square to the camera. Rules are more lenient for infants: for under-1s, eyes don't have to be fully open and a slightly open mouth is usually fine — but no hands, no supporting props, and nothing else can be visible in the frame. {name} then crops to the exact size for your country and gives you a print-ready sheet or a digital file. Use even daylight, turn the flash off, and take lots of shots to get one clean frame.",
+  "bullets": [
+   "Lay baby on a plain white sheet; shoot from directly above",
+   "Under-1s: eyes may be closed, mouth slightly open is usually OK",
+   "No hands, props or supports visible in the frame",
+   "Even daylight, no flash (avoids red-eye and shadows)",
+   "{name} crops to the correct size and exports print or digital"
+  ],
+  "faq": [
+   {
+    "q": "Do the baby's eyes have to be open?",
+    "a": "For babies under one year, eyes don't have to be fully open — open is preferred but not required. {name} helps you pick the best of several shots."
+   },
+   {
+    "q": "Can my hand support the baby in the photo?",
+    "a": "No — hands and supports can't be visible. Lay the baby flat on white and shoot from above so nothing else is in frame."
+   },
+   {
+    "q": "How do I get the size right?",
+    "a": "{name} crops your photo to your country's exact passport size and head proportion, then exports a print sheet or digital file."
+   }
+  ]
+ },
+ {
+  "app_key": "snapport",
+  "kind": "faq",
+  "query": "How do I get a digital passport photo for an online application?",
+  "match": [
+   "digital passport photo for an online application",
+   "digital passport photo",
+   "passport photo for an online application"
+  ],
+  "lead": "More passport and visa applications are online now, and they don't want a scan of a print — they want a digital photo at specific pixel dimensions and file size.",
+  "detail": "Online applications usually ask for a square or portrait JPEG at a set pixel size (for example the US online form wants 600x600 to 1200x1200 pixels) with a plain background and correct head proportion. Taking a phone photo and uploading it rarely passes on the first try because the crop and background are off. {name} produces a digital file cropped to your country's exact spec with a clean background, so you get a compliant image to upload — and a print-ready version too if you also need physical copies.",
+  "bullets": [
+   "Online forms want a digital JPEG at set pixel dimensions",
+   "Plain background and correct head size/position required",
+   "A raw phone photo usually fails crop/background checks",
+   "{name} exports a compliant digital file to upload",
+   "Also gives a print sheet if you need physical copies"
+  ],
+  "faq": [
+   {
+    "q": "What size does a digital passport photo need to be?",
+    "a": "It varies by country; many online forms want a square JPEG (e.g. 600x600 to 1200x1200 px for the US). {name} crops to your country's spec."
+   },
+   {
+    "q": "Can I just upload a phone photo?",
+    "a": "Usually not directly — the crop, head size and background need to match. {name} fixes those and exports a compliant file."
+   },
+   {
+    "q": "Can I get both digital and printed?",
+    "a": "Yes — {name} gives a digital file to upload and a print-ready sheet for physical copies."
+   }
+  ]
  }
 ]
 ''')

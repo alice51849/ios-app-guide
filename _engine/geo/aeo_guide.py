@@ -34,7 +34,10 @@ GUIDES = os.path.join(PAGES, "guides")
 DATA = os.path.join(ROOT, "data")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
 SOV = os.path.join(HERE, "reports", "aeo_sov.json")
-OPENAI_KEY = open(os.path.expanduser("~/.openai_key")).read().strip()
+try:
+    OPENAI_KEY = open(os.path.expanduser("~/.openai_key")).read().strip()
+except OSError:
+    OPENAI_KEY = ""  # 免費 batch(Copilot 親撰內容)不需 key;僅 OpenAI 生成路徑才用得到
 OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
 e = html.escape
 

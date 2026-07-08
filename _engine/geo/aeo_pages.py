@@ -40,7 +40,7 @@ SOV = os.path.join(REPORTS, "aeo_sov.json")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
 
 # 有訂閱制(非純買斷)的 app —— 不可套用「pay-once / 免訂閱」比較頁,否則不實宣稱。
-NO_SUB_EXCLUDE = {"aim990"}
+NO_SUB_EXCLUDE = set()  # 皆為一次性買斷制;經 ASC 查證 aim990 無訂閱(NON_CONSUMABLE unlock),不再排除
 
 # 類別 → 給人看的名詞 + schema 類別
 CAT_NOUN = {

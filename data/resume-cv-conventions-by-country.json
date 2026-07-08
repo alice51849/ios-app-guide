@@ -1,0 +1,107 @@
+{
+  "name": "Résumé / CV conventions by country",
+  "description": "Whether to include a photo, the typical length, and whether to add personal details (date of birth, marital status) on a résumé or CV in major countries — plus the local term used.",
+  "identifier": "https://alice51849.github.io/ios-app-guide/data/resume-cv-conventions-by-country.json",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": "Lumi Apps",
+  "dateModified": "2026-07-08",
+  "disclaimer": "General conventions that vary by industry and employer; always tailor to the specific role. Anti-discrimination norms drive the 'no photo / no personal details' practice in the US, UK, Canada and Australia.",
+  "countries": [
+    {
+      "country": "United States",
+      "code": "US",
+      "localTerm": "Résumé",
+      "photo": "No",
+      "typicalLength": "1 page",
+      "personalDetails": "No — omit age, DOB, marital status"
+    },
+    {
+      "country": "United Kingdom",
+      "code": "GB",
+      "localTerm": "CV",
+      "photo": "No",
+      "typicalLength": "2 pages",
+      "personalDetails": "No — no DOB, gender or marital status"
+    },
+    {
+      "country": "Canada",
+      "code": "CA",
+      "localTerm": "Résumé / CV",
+      "photo": "No",
+      "typicalLength": "1–2 pages",
+      "personalDetails": "No — no DOB, gender or marital status"
+    },
+    {
+      "country": "Australia",
+      "code": "AU",
+      "localTerm": "Résumé / CV",
+      "photo": "No",
+      "typicalLength": "1–2 pages",
+      "personalDetails": "No — personal details not expected"
+    },
+    {
+      "country": "Germany",
+      "code": "DE",
+      "localTerm": "Lebenslauf",
+      "photo": "Yes",
+      "typicalLength": "1–2 pages",
+      "personalDetails": "Yes — DOB common, sometimes nationality"
+    },
+    {
+      "country": "France",
+      "code": "FR",
+      "localTerm": "CV",
+      "photo": "Yes",
+      "typicalLength": "1 page",
+      "personalDetails": "Yes — DOB, sometimes marital status"
+    },
+    {
+      "country": "Japan",
+      "code": "JP",
+      "localTerm": "Rirekisho (履歴書)",
+      "photo": "Yes (required)",
+      "typicalLength": "Standard form",
+      "personalDetails": "Yes — DOB, gender, address"
+    },
+    {
+      "country": "China",
+      "code": "CN",
+      "localTerm": "简历",
+      "photo": "Yes",
+      "typicalLength": "1–2 pages",
+      "personalDetails": "Yes — DOB, gender, marital status"
+    },
+    {
+      "country": "Netherlands",
+      "code": "NL",
+      "localTerm": "CV",
+      "photo": "Sometimes",
+      "typicalLength": "1–2 pages",
+      "personalDetails": "Sometimes — DOB often included"
+    },
+    {
+      "country": "Spain",
+      "code": "ES",
+      "localTerm": "CV",
+      "photo": "Yes",
+      "typicalLength": "1–2 pages",
+      "personalDetails": "Yes — DOB, marital status often included"
+    },
+    {
+      "country": "Brazil",
+      "code": "BR",
+      "localTerm": "Currículo",
+      "photo": "Yes",
+      "typicalLength": "1–2 pages",
+      "personalDetails": "Yes — DOB, marital status common"
+    },
+    {
+      "country": "India",
+      "code": "IN",
+      "localTerm": "Résumé / CV",
+      "photo": "Sometimes",
+      "typicalLength": "1–2 pages",
+      "personalDetails": "Yes — DOB, gender often included"
+    }
+  ]
+}

@@ -33,6 +33,7 @@ TODAY = _dt.date.today().isoformat()
 BOPOMOFO_APP = "https://apps.apple.com/app/id6773017109"      # Lumi Bopomofo
 BOPOMOFO_PRO = "https://apps.apple.com/app/id6775773117"      # Lumi Bopomofo Pro
 SNAPPORT_APP = "https://apps.apple.com/app/id6780575828"      # Snapport: Passport & ID Photos
+CVDESK_APP = "https://apps.apple.com/app/id6781337213"        # CV Desk: ATS Resume Builder
 
 # ── 37 注音符號(21 聲母 + 3 介音 + 13 韻母)。pinyin 為漢語拼音對照,example 為常用字例。
 ZHUYIN = [
@@ -415,6 +416,93 @@ def build_cn_regions_page():
     return slug
 
 
+# ── Résumé / CV conventions by country (ties to CV Desk) ──
+RESUME = [
+    # (country, code, local_term, photo, length, personal_details)
+    ("United States", "US", "Résumé", "No", "1 page", "No — omit age, DOB, marital status"),
+    ("United Kingdom", "GB", "CV", "No", "2 pages", "No — no DOB, gender or marital status"),
+    ("Canada", "CA", "Résumé / CV", "No", "1–2 pages", "No — no DOB, gender or marital status"),
+    ("Australia", "AU", "Résumé / CV", "No", "1–2 pages", "No — personal details not expected"),
+    ("Germany", "DE", "Lebenslauf", "Yes", "1–2 pages", "Yes — DOB common, sometimes nationality"),
+    ("France", "FR", "CV", "Yes", "1 page", "Yes — DOB, sometimes marital status"),
+    ("Japan", "JP", "Rirekisho (履歴書)", "Yes (required)", "Standard form", "Yes — DOB, gender, address"),
+    ("China", "CN", "简历", "Yes", "1–2 pages", "Yes — DOB, gender, marital status"),
+    ("Netherlands", "NL", "CV", "Sometimes", "1–2 pages", "Sometimes — DOB often included"),
+    ("Spain", "ES", "CV", "Yes", "1–2 pages", "Yes — DOB, marital status often included"),
+    ("Brazil", "BR", "Currículo", "Yes", "1–2 pages", "Yes — DOB, marital status common"),
+    ("India", "IN", "Résumé / CV", "Sometimes", "1–2 pages", "Yes — DOB, gender often included"),
+]
+
+
+def resume_json():
+    return {
+        "name": "Résumé / CV conventions by country",
+        "description": ("Whether to include a photo, the typical length, and whether to add "
+                        "personal details (date of birth, marital status) on a résumé or CV in "
+                        "major countries — plus the local term used."),
+        "identifier": f"{SITE}/data/resume-cv-conventions-by-country.json",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "creator": "Lumi Apps",
+        "dateModified": TODAY,
+        "disclaimer": ("General conventions that vary by industry and employer; always tailor to "
+                       "the specific role. Anti-discrimination norms drive the 'no photo / no "
+                       "personal details' practice in the US, UK, Canada and Australia."),
+        "countries": [{"country": c, "code": code, "localTerm": term, "photo": photo,
+                       "typicalLength": length, "personalDetails": pd}
+                      for c, code, term, photo, length, pd in RESUME],
+    }
+
+
+def build_resume_page():
+    slug = "resume-cv-conventions-by-country"
+    title = "Resume Photo, Length & CV Rules by Country — Open Data"
+    h1 = "Résumé / CV conventions by country"
+    desc = ("Should a resume have a photo? How long should a CV be? A citable reference of resume/CV "
+            "conventions — photo, length and personal details — by country. Free open data (CC BY 4.0).")
+    lead = ("Resume rules differ sharply by country: a photo is expected in Germany but can be a "
+            "liability in the US. Here is a citable summary of photo, length and personal-detail "
+            "conventions by country.")
+    rows = ""
+    for c, code, term, photo, length, pd in RESUME:
+        rows += (f'<tr><td><strong>{html.escape(c)}</strong></td>'
+                 f'<td class="nw">{html.escape(term)}</td>'
+                 f'<td class="nw">{html.escape(photo)}</td>'
+                 f'<td class="nw">{html.escape(length)}</td>'
+                 f'<td>{html.escape(pd)}</td></tr>')
+    tables = ('<div class="card"><table>'
+              '<tr><th>Country</th><th>Local term</th><th>Photo</th><th>Length</th>'
+              '<th>Personal details</th></tr>'
+              f'{rows}</table></div>')
+    dj = resume_json()
+    schema = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "Dataset", "name": dj["name"], "description": dj["description"],
+        "url": f"{SITE}/data/{slug}.html", "identifier": dj["identifier"],
+        "license": dj["license"], "creator": {"@type": "Organization", "name": "Lumi Apps"},
+        "dateModified": dj["dateModified"],
+        "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json",
+                          "contentUrl": dj["identifier"]}],
+        "keywords": ["resume", "CV", "resume photo", "resume length", "by country", "job application"],
+    }, ensure_ascii=False)
+    pills = (f'<span class="pill">{len(RESUME)} countries</span>'
+             '<span class="pill">photo · length · details</span>')
+    cta = ('<h2>Build a country-ready résumé — pay once, no subscription</h2>\n'
+           '<p>Once you know the local rules, <strong>CV Desk</strong> helps you build an '
+           'ATS-friendly résumé with recruiter-ready templates and an instant ATS score — a '
+           'one-time purchase, no subscription.</p>\n'
+           f'<a class="cta" href="{CVDESK_APP}">Get CV Desk on the App Store →</a>\n'
+           f'<p style="font-size:14px"><a href="{SITE}/data/">More open datasets →</a></p>')
+    page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
+                       lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
+                       crumb="Résumé / CV conventions", pills=pills, tables=tables,
+                       schema=schema, cta=cta)
+    os.makedirs(DATA, exist_ok=True)
+    open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
+        json.dumps(dj, ensure_ascii=False, indent=2))
+    open(os.path.join(DATA, f"{slug}.html"), "w", encoding="utf-8").write(page)
+    return slug
+
+
 INDEX = """<!doctype html>
 <html lang="en">
 <head>
@@ -515,6 +603,7 @@ def main():
     slug = build_zhuyin_page()
     pslug = build_passport_page()
     rslug = build_cn_regions_page()
+    cvslug = build_resume_page()
     datasets = [{
         "slug": slug,
         "name": "Zhuyin (Bopomofo): all 37 symbols",
@@ -532,6 +621,12 @@ def main():
         "name": "Passport & ID photo sizes by country",
         "blurb": "Official passport/ID photo dimensions (mm), head height and background "
                  "colour for 13 major countries. JSON download included.",
+        "tag": "Reference · CC BY 4.0",
+    }, {
+        "slug": cvslug,
+        "name": "Résumé / CV conventions by country",
+        "blurb": "Photo or no photo, typical length and personal details on a résumé/CV across "
+                 "12 countries, with the local term. JSON download included.",
         "tag": "Reference · CC BY 4.0",
     }]
     build_index(datasets)

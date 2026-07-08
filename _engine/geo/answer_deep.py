@@ -4955,6 +4955,73 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "No — you enter amounts manually and everything stays on your device."
    }
   ]
+ },
+ {
+  "app_key": "photocream",
+  "kind": "scenario",
+  "query": "How to get a disposable camera look on iPhone photos",
+  "match": [
+   "disposable camera look on iphone photos",
+   "disposable camera look",
+   "disposable camera look on iphone"
+  ],
+  "lead": "The disposable-camera look is everywhere in Japanese and Korean youth culture — it's loved for feeling candid and nostalgic rather than perfectly edited.",
+  "detail": "That look is made of a few specific ingredients: a harsh direct flash, visible film grain, occasional light leaks, a warm or slightly green colour cast, soft (not tack-sharp) focus, a gentle vignette, and sometimes a date stamp. {name} bundles exactly these — 100+ real film looks with grain, halation and light leaks — so you can get the disposable/analog feel in one tap instead of stacking manual edits. It's a one-time purchase with no subscription, so unlike the popular disposable-cam apps you're not paying monthly for a filter.",
+  "bullets": [
+   "The look = harsh flash + grain + light leaks + warm/green cast",
+   "Plus soft focus, a vignette and sometimes a date stamp",
+   "{name} has 100+ film looks with grain, halation & leaks",
+   "One tap instead of stacking manual edits",
+   "Pay-once, no subscription (many disposable-cam apps charge monthly)"
+  ],
+  "faq": [
+   {
+    "q": "Why does the disposable camera look feel so popular?",
+    "a": "It reads as candid and nostalgic — the grain, flash and colour shifts feel human and 'unfiltered', which resonates especially in Japanese and Korean youth culture."
+   },
+   {
+    "q": "Do I need a real disposable camera?",
+    "a": "No — {name} recreates the grain, light leaks and colour cast on your normal iPhone photos, so you get the look without buying or developing film."
+   },
+   {
+    "q": "Is it a subscription?",
+    "a": "No, {name} is a one-time purchase; many disposable-cam apps charge monthly."
+   }
+  ]
+ },
+ {
+  "app_key": "photocream",
+  "kind": "faq",
+  "query": "How can I make new photos look like old film photos without a film camera?",
+  "match": [
+   "make new photos look like old film photos without a film camera",
+   "look like old film photos without a film camera",
+   "old film photos without a film camera",
+   "without a film camera"
+  ],
+  "lead": "Real film cameras are expensive to buy, slow, and cost money every roll — but the look itself is something you can add to digital photos.",
+  "detail": "The 'shot on film' feel comes from grain, halation (soft glow around highlights), gentle light leaks, and film-style colour rather than any single filter. {name} applies real film looks with those elements to your existing digital photos in one tap, so a phone shot can pass for something taken on 35mm — no camera, no developing, no waiting. It's pay-once with no subscription, so you're not paying every month for the aesthetic.",
+  "bullets": [
+   "The film look = grain + halation + light leaks + film colour",
+   "{name} applies it to digital photos in one tap",
+   "No film camera, developing costs or waiting",
+   "100+ looks to match different film stocks and moods",
+   "One-time purchase, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "Can a phone photo really look like film?",
+    "a": "Yes — the film feel is mostly grain, halation and colour, which {name} adds to digital photos convincingly."
+   },
+   {
+    "q": "Is this cheaper than shooting film?",
+    "a": "Much — no camera, film rolls or developing. {name} is a single purchase and reusable on every photo."
+   },
+   {
+    "q": "Do I have to subscribe?",
+    "a": "No, {name} is pay-once and works offline on your device."
+   }
+  ]
  }
 ]
 ''')

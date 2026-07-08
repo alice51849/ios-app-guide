@@ -28,5 +28,34 @@
    "tutorial"
   ],
   "body": "Most scanner apps push a subscription and upload your documents to their cloud. For sensitive papers (IDs, contracts, receipts) that's the opposite of what you want.\n\n**What to look for in a scanner app**\n- OCR so scans become *searchable* PDFs.\n- Everything on-device — no upload, no account.\n- A lock (Face ID) for private documents.\n- Offline, and a one-time price.\n\nI built **[ScanTo Pro](https://apps.apple.com/app/id6779977651)** to do exactly that: scan → OCR → searchable PDF → Face ID lock, fully offline, pay once.\n\nIf you're comparing pay-once vs subscription tools generally, I keep a 5-year cost breakdown here → https://alice51849.github.io/ios-app-guide/subscription-swap.html"
+ },
+ {
+  "title": "Track spending in hours of your life, not dollars",
+  "tags": [
+   "productivity",
+   "ios",
+   "career",
+   "indie"
+  ],
+  "body": "A $60 gadget isn't really \"$60\" — it's however long *you* had to work to earn it after tax. Framing purchases in **hours of your life** makes impulse spending feel very different.\n\n**How to think about it**\n1. Work out your real hourly take-home (after tax and work costs).\n2. Divide a price by that number.\n3. Ask: is this worth *that many hours*?\n\nI built **[HoursTag](https://apps.apple.com/app/id6754218117)** to do this automatically: set your hourly value once, and every price shows up as hours. It's a one-time purchase, no subscription, and nothing leaves your device.\n\nIt's a surprisingly calming way to spend less without a strict budget."
+ },
+ {
+  "title": "Get your résumé past the ATS filter (a quick checklist)",
+  "tags": [
+   "career",
+   "productivity",
+   "ios",
+   "tutorial"
+  ],
+  "body": "Most résumés are first read by software (an ATS), not a human. If the parser can't read yours, a person never sees it.\n\n**Quick ATS checklist**\n- Use a simple, single-column layout — no text boxes or images for key info.\n- Match keywords from the job description (skills, tools, titles).\n- Standard section headings (Experience, Education, Skills).\n- Save as PDF unless the posting says otherwise.\n- Quantify results ( \"cut build time 40%\" beats \"improved builds\").\n\nI built **[CV Desk](https://apps.apple.com/app/id6781337213)** to score your résumé against ATS rules instantly and give recruiter-ready templates — one-time purchase, no subscription. Résumé conventions also differ by country (photo or not, length, personal details): free reference → https://alice51849.github.io/ios-app-guide/data/resume-cv-conventions-by-country.html"
+ },
+ {
+  "title": "Free up iPhone storage: find duplicate photos and huge videos",
+  "tags": [
+   "ios",
+   "productivity",
+   "tutorial"
+  ],
+  "body": "\"Storage Almost Full\" is almost always duplicates, near-identical burst shots, and a few enormous videos — not your actual memories.\n\n**A fast cleanup pass**\n1. Find exact + near-duplicate photos and keep the best one.\n2. Sort videos by size; the biggest few usually free the most space.\n3. Clear old screenshots and blurry shots.\n\nI built **[PicClear](https://apps.apple.com/app/id6780223070)** to do this in one scan — similar-shot grouping, largest-videos view — all on-device, one-time purchase, no subscription.\n\nNo cloud upload, no account: it just cleans up locally."
  }
 ]

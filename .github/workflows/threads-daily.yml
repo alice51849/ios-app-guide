@@ -1,0 +1,24 @@
+name: Threads daily post
+
+on:
+  schedule:
+    - cron: "0 3 * * *"    # 台灣 11:00
+    - cron: "0 14 * * *"   # 歐美
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Post to Threads (free, no OpenAI)
+        env:
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+        run: python3 .github/scripts/threads_post.py

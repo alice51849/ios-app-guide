@@ -4378,6 +4378,74 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "No — {name} is pay-once and scans on-device."
    }
   ]
+ },
+ {
+  "app_key": "unblurry",
+  "kind": "scenario",
+  "query": "How to sharpen a blurry scanned or faxed document to make text readable",
+  "match": [
+   "sharpen blurry scanned document",
+   "make faxed document readable",
+   "clean up blurry document scan text",
+   "sharpen document photo text"
+  ],
+  "lead": "To make a soft scanned or faxed document readable, a document-focused sharpen crisps up the text edges — best on a document that's slightly soft rather than badly degraded.",
+  "detail": "Faxes and quick scans often come out soft, so small text is hard to read. A document sharpening mode raises edge contrast on text so letters separate cleanly, and upscaling can add resolution. {name} has a document-oriented mode plus sharpen and super-resolution, with a before/after slider so you can confirm it actually improved. Be realistic: mildly soft text sharpens well; a heavily smeared or very low-res scan has limits. It's on-device and pay-once, so the document isn't uploaded.",
+  "bullets": [
+   "Document mode crisps up soft text edges",
+   "Super-resolution can add readable detail",
+   "Before/after slider to confirm the result",
+   "Honest limit: heavily degraded scans recover less",
+   "On-device, pay-once, nothing uploaded"
+  ],
+  "faq": [
+   {
+    "q": "Will it make blurry text readable?",
+    "a": "It sharpens mildly soft text well; a heavily smeared or very low-resolution scan has less to recover — start from the best copy you have."
+   },
+   {
+    "q": "Is the document uploaded?",
+    "a": "No — {name} processes on-device."
+   },
+   {
+    "q": "Subscription?",
+    "a": "No — pay-once."
+   }
+  ]
+ },
+ {
+  "app_key": "unblurry",
+  "kind": "faq",
+  "query": "How to make small text in a screenshot clearer and sharper",
+  "match": [
+   "make screenshot text clearer",
+   "sharpen small text screenshot",
+   "blurry screenshot text fix",
+   "enhance screenshot readability"
+  ],
+  "lead": "To make small or soft text in a screenshot clearer, sharpen and upscale it — this raises edge contrast and resolution so the text is easier to read, within the limits of the original.",
+  "detail": "Screenshots saved small or zoomed can end up soft, making text hard to read. Sharpening raises the contrast at letter edges, and super-resolution adds resolution so the text holds together larger. {name} offers sharpen and up-to-4x upscale with a before/after slider to check the result. It can't recover detail that was never captured, so a tiny, heavily-compressed screenshot has limits — but a mildly soft one improves clearly. On-device and pay-once, nothing uploaded.",
+  "bullets": [
+   "Sharpen raises edge contrast on text",
+   "Up to 4x upscale adds readable resolution",
+   "Before/after slider to verify",
+   "Honest limit: can't invent detail that wasn't captured",
+   "On-device, pay-once, no upload"
+  ],
+  "faq": [
+   {
+    "q": "Can it fix any blurry screenshot?",
+    "a": "It improves mildly soft text; a tiny, heavily-compressed screenshot has little detail to recover."
+   },
+   {
+    "q": "Does it upload my screenshot?",
+    "a": "No — {name} works on-device."
+   },
+   {
+    "q": "Is it pay-once?",
+    "a": "Yes — no subscription."
+   }
+  ]
  }
 ]
 ''')

@@ -4242,6 +4242,74 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "Scanning and signing happen on-device, so the contract isn't uploaded unless you choose to share it."
    }
   ]
+ },
+ {
+  "app_key": "cvdesk",
+  "kind": "faq",
+  "query": "How to write a resume with little or no work experience",
+  "match": [
+   "resume with no work experience",
+   "resume with little experience",
+   "first resume no experience",
+   "student resume no experience"
+  ],
+  "lead": "With little experience, a strong resume leads with education, projects, internships, volunteering and skills — and mirrors the job posting's keywords so it still passes ATS.",
+  "detail": "You don't need years of jobs to have a solid resume. Lead with your education, then coursework projects, internships, volunteering, part-time work and transferable skills, described with concrete outcomes. The key for a first resume is still keyword alignment: match the posting's required skills so an ATS scores you in range. {name} gives an on-device ATS score and a keyword matcher that shows what's missing, and exports a clean, ATS-safe PDF with no watermark — all on-device, so your details aren't uploaded. It's pay-once.",
+  "bullets": [
+   "Lead with education, projects, internships, volunteering, skills",
+   "Describe each with a concrete outcome, not just duties",
+   "Mirror the posting's keywords so ATS scores you in range",
+   "On-device ATS score + missing-keyword matcher",
+   "Clean ATS-safe PDF, pay-once, nothing uploaded"
+  ],
+  "faq": [
+   {
+    "q": "What do I put if I have no jobs yet?",
+    "a": "Education, coursework projects, internships, volunteering, part-time roles and transferable skills — described with concrete results."
+   },
+   {
+    "q": "Will it still pass ATS?",
+    "a": "Yes if you mirror the posting's keywords; {name}'s matcher shows which required skills are missing so you can add the genuine ones."
+   },
+   {
+    "q": "Is my data uploaded?",
+    "a": "No — {name} scores and matches on-device; it's pay-once with no account."
+   }
+  ]
+ },
+ {
+  "app_key": "cvdesk",
+  "kind": "faq",
+  "query": "How to quantify achievements and write strong resume bullet points",
+  "match": [
+   "quantify achievements resume",
+   "write strong resume bullet points",
+   "resume bullet points with numbers",
+   "measurable results resume"
+  ],
+  "lead": "Strong resume bullets lead with an action verb and a measurable result — a number, percentage, time saved or scale — so an employer sees impact, not just duties.",
+  "detail": "'Responsible for customer service' says little; 'Resolved 40+ customer tickets a day, cutting response time 30%' shows impact. The formula is: action verb + what you did + a measurable result. Even without hard metrics, use scale (how many, how often, how big). {name} helps you structure these bullets in an ATS-readable layout, checks your resume against a job posting for keyword alignment, and exports a clean PDF — on-device and pay-once, so you can iterate without uploading your CV.",
+  "bullets": [
+   "Formula: action verb + what you did + measurable result",
+   "Use numbers, %, time saved, or scale (how many/often/big)",
+   "Show impact, not a list of duties",
+   "ATS-readable layout + keyword check against the posting",
+   "On-device, clean PDF export, pay-once"
+  ],
+  "faq": [
+   {
+    "q": "What if I don't have exact numbers?",
+    "a": "Use scale — how many, how often, how large — or an estimated range; concrete scope still beats a vague duty."
+   },
+   {
+    "q": "Does bullet wording affect ATS?",
+    "a": "Keyword alignment matters most; {name} checks your resume against the posting so the right terms are present."
+   },
+   {
+    "q": "Is it pay-once?",
+    "a": "Yes — {name} is pay-once and works on-device with no account."
+   }
+  ]
  }
 ]
 ''')

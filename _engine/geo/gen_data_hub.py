@@ -34,6 +34,7 @@ BOPOMOFO_APP = "https://apps.apple.com/app/id6773017109"      # Lumi Bopomofo
 BOPOMOFO_PRO = "https://apps.apple.com/app/id6775773117"      # Lumi Bopomofo Pro
 SNAPPORT_APP = "https://apps.apple.com/app/id6780575828"      # Snapport: Passport & ID Photos
 CVDESK_APP = "https://apps.apple.com/app/id6781337213"        # CV Desk: ATS Resume Builder
+GMONEY_APP = "https://apps.apple.com/app/id6755782939"        # G+Money: currency + expense
 
 # ── 37 注音符號(21 聲母 + 3 介音 + 13 韻母)。pinyin 為漢語拼音對照,example 為常用字例。
 ZHUYIN = [
@@ -503,6 +504,91 @@ def build_resume_page():
     return slug
 
 
+# ── Currency formatting by country (ties to G+Money) ──
+CURRENCY = [
+    # (country, iso, symbol, position, decimal_sep, thousands_sep, example)
+    ("United States", "USD", "$", "before", ".", ",", "$1,234,567.89"),
+    ("United Kingdom", "GBP", "£", "before", ".", ",", "£1,234,567.89"),
+    ("Germany", "EUR", "€", "after", ",", ".", "1.234.567,89 €"),
+    ("France", "EUR", "€", "after", ",", " (space)", "1 234 567,89 €"),
+    ("Ireland", "EUR", "€", "before", ".", ",", "€1,234,567.89"),
+    ("Japan", "JPY", "¥", "before", "— (no minor unit)", ",", "¥1,234,567"),
+    ("Switzerland", "CHF", "CHF", "before", ".", "’ (apostrophe)", "CHF 1’234’567.89"),
+    ("India", "INR", "₹", "before", ".", ", (2-2-3 grouping)", "₹12,34,567.89"),
+    ("Brazil", "BRL", "R$", "before", ",", ".", "R$ 1.234.567,89"),
+    ("China", "CNY", "¥", "before", ".", ",", "¥1,234,567.89"),
+    ("Canada", "CAD", "$", "before", ".", ",", "$1,234,567.89"),
+    ("Australia", "AUD", "$", "before", ".", ",", "$1,234,567.89"),
+    ("South Korea", "KRW", "₩", "before", "— (no minor unit)", ",", "₩1,234,567"),
+    ("Taiwan", "TWD", "NT$", "before", ".", ",", "NT$1,234,567"),
+]
+
+
+def currency_json():
+    return {
+        "name": "Currency formatting by country",
+        "description": ("How money is written in each country: the currency symbol, whether the "
+                        "symbol goes before or after the amount, the decimal separator, the "
+                        "thousands separator and a worked example of 1234567.89."),
+        "identifier": f"{SITE}/data/currency-format-by-country.json",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "creator": "Lumi Apps",
+        "dateModified": TODAY,
+        "currencies": [{"country": c, "currencyCode": iso, "symbol": sym, "symbolPosition": pos,
+                        "decimalSeparator": dsep, "thousandsSeparator": tsep, "example": ex}
+                       for c, iso, sym, pos, dsep, tsep, ex in CURRENCY],
+    }
+
+
+def build_currency_page():
+    slug = "currency-format-by-country"
+    title = "Currency Format by Country — Symbol, Separators | Open Data"
+    h1 = "Currency formatting by country"
+    desc = ("How is currency written in each country? Symbol position, decimal and thousands "
+            "separators with a worked example, by country. Free, machine-readable open data (CC BY 4.0).")
+    lead = ("$1,234.56 in the US is 1.234,56 € in Germany and CHF 1’234.56 in Switzerland. Here is "
+            "a citable reference of currency symbols, separators and formatting by country.")
+    rows = ""
+    for c, iso, sym, pos, dsep, tsep, ex in CURRENCY:
+        rows += (f'<tr><td><strong>{html.escape(c)}</strong></td>'
+                 f'<td class="nw">{html.escape(iso)} {html.escape(sym)}</td>'
+                 f'<td class="nw">{html.escape(pos)}</td>'
+                 f'<td class="nw">{html.escape(dsep)} / {html.escape(tsep)}</td>'
+                 f'<td class="nw">{html.escape(ex)}</td></tr>')
+    tables = ('<div class="card"><table>'
+              '<tr><th>Country</th><th>Currency</th><th>Symbol</th>'
+              '<th>Decimal / thousands</th><th>Example</th></tr>'
+              f'{rows}</table></div>')
+    dj = currency_json()
+    schema = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "Dataset", "name": dj["name"], "description": dj["description"],
+        "url": f"{SITE}/data/{slug}.html", "identifier": dj["identifier"],
+        "license": dj["license"], "creator": {"@type": "Organization", "name": "Lumi Apps"},
+        "dateModified": dj["dateModified"],
+        "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json",
+                          "contentUrl": dj["identifier"]}],
+        "keywords": ["currency format", "currency symbol", "decimal separator", "thousands separator",
+                     "by country", "money formatting"],
+    }, ensure_ascii=False)
+    pills = (f'<span class="pill">{len(CURRENCY)} currencies</span>'
+             '<span class="pill">symbol · separators · example</span>')
+    cta = ('<h2>Convert and log money in any currency — pay once</h2>\n'
+           '<p>Travelling or shopping across currencies? <strong>G+Money</strong> converts and logs '
+           'every expense in one tap, offline — a one-time purchase, no subscription.</p>\n'
+           f'<a class="cta" href="{GMONEY_APP}">Get G+Money on the App Store →</a>\n'
+           f'<p style="font-size:14px"><a href="{SITE}/data/">More open datasets →</a></p>')
+    page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
+                       lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
+                       crumb="Currency formatting", pills=pills, tables=tables,
+                       schema=schema, cta=cta)
+    os.makedirs(DATA, exist_ok=True)
+    open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
+        json.dumps(dj, ensure_ascii=False, indent=2))
+    open(os.path.join(DATA, f"{slug}.html"), "w", encoding="utf-8").write(page)
+    return slug
+
+
 INDEX = """<!doctype html>
 <html lang="en">
 <head>
@@ -546,10 +632,18 @@ def build_index(datasets):
         items += (f'<a class="item" href="{SITE}/data/{d["slug"]}.html"><h2>{html.escape(d["name"])}</h2>'
                   f'<p>{html.escape(d["blurb"])}</p><span class="tag">{d["tag"]}</span></a>')
     schema = json.dumps({
-        "@context": "https://schema.org", "@type": "CollectionPage",
-        "name": "Open data — Lumi Apps", "url": f"{SITE}/data/",
-        "hasPart": [{"@type": "Dataset", "name": d["name"],
-                     "url": f"{SITE}/data/{d['slug']}.html"} for d in datasets],
+        "@context": "https://schema.org", "@type": "DataCatalog",
+        "name": "Open data — Lumi Apps",
+        "description": "Free, machine-readable reference datasets (CC BY 4.0) for AI assistants, "
+                       "researchers and developers, maintained by the makers of pay-once iOS apps.",
+        "url": f"{SITE}/data/",
+        "creator": {"@type": "Organization", "name": "Lumi Apps"},
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "dataset": [{"@type": "Dataset", "name": d["name"], "description": d["blurb"],
+                     "url": f"{SITE}/data/{d['slug']}.html",
+                     "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json",
+                                       "contentUrl": f"{SITE}/data/{d['slug']}.json"}]}
+                    for d in datasets],
     }, ensure_ascii=False)
     open(os.path.join(DATA, "index.html"), "w", encoding="utf-8").write(
         INDEX.format(site=SITE, items=items, schema=schema))
@@ -604,6 +698,7 @@ def main():
     pslug = build_passport_page()
     rslug = build_cn_regions_page()
     cvslug = build_resume_page()
+    curslug = build_currency_page()
     datasets = [{
         "slug": slug,
         "name": "Zhuyin (Bopomofo): all 37 symbols",
@@ -627,6 +722,12 @@ def main():
         "name": "Résumé / CV conventions by country",
         "blurb": "Photo or no photo, typical length and personal details on a résumé/CV across "
                  "12 countries, with the local term. JSON download included.",
+        "tag": "Reference · CC BY 4.0",
+    }, {
+        "slug": curslug,
+        "name": "Currency formatting by country",
+        "blurb": "Currency symbol, symbol position, decimal and thousands separators with a "
+                 "worked example across 14 countries. JSON download included.",
         "tag": "Reference · CC BY 4.0",
     }]
     build_index(datasets)

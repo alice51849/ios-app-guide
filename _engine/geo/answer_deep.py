@@ -3834,6 +3834,74 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "No — pay-once."
    }
   ]
+ },
+ {
+  "app_key": "lumimission",
+  "kind": "faq",
+  "query": "What is the best chore and routine chart app for young kids",
+  "match": [
+   "best chore chart app for kids",
+   "routine chart app young children",
+   "digital chore chart kids app",
+   "reward chart app for kids no ads"
+  ],
+  "lead": "The best routine or chore app for young children turns daily tasks into a rewarding game they want to complete — without ads or anything that pressures them to spend.",
+  "detail": "Paper star charts work until they get lost or forgotten; a good app keeps the routine visible and rewarding every day. {name} turns morning routines, bedtime steps and simple chores into a friendly game with rewards, so a young child follows along with less nagging. It's built for the 3–6 age range, ad-free with no data collected from children, and a one-time unlock — so there's nothing manipulative and nothing extra to buy. Parents get the structure without the mess of paper charts. Check the current App Store listing for details.",
+  "bullets": [
+   "Turns routines and chores into a rewarding game",
+   "Keeps the daily routine visible — no lost paper charts",
+   "Designed for young children (about ages 3–6)",
+   "Ad-free, no data collected from children",
+   "One-time unlock, nothing manipulative"
+  ],
+  "faq": [
+   {
+    "q": "Is it better than a paper star chart?",
+    "a": "It keeps the routine visible and rewarding daily without getting lost, and turns tasks into a game young children engage with."
+   },
+   {
+    "q": "Is it safe for my child?",
+    "a": "Yes — {name} is ad-free, collects no data from children, and any parent settings sit behind a parental gate."
+   },
+   {
+    "q": "Are there extra purchases?",
+    "a": "No — it's a one-time unlock with nothing else to buy."
+   }
+  ]
+ },
+ {
+  "app_key": "lumimission",
+  "kind": "scenario",
+  "query": "How to build good daily habits and independence in a preschooler",
+  "match": [
+   "build daily habits preschooler",
+   "teach preschooler independence routine",
+   "help young child do routine independently",
+   "daily habits app for preschool kids"
+  ],
+  "lead": "Young children build independence when a routine is predictable, visual, and rewarding — so they can see what comes next and feel proud completing it themselves.",
+  "detail": "Preschoolers thrive on predictable routines they can follow with less adult prompting. Making each step visual and rewarding helps a child move through getting dressed, brushing teeth or tidying up on their own. {name} presents daily routines as a friendly game with steps and rewards, so a child gains independence and parents nag less. It's for the 3–6 range, ad-free, no data collected, and a one-time unlock. Pair it with consistent daily use for the best results.",
+  "bullets": [
+   "Predictable, visual routines a child can follow themselves",
+   "Rewards each completed step to build motivation",
+   "Grows independence — less adult prompting needed",
+   "Ad-free, no data collected, one-time unlock",
+   "Designed for preschool-age children"
+  ],
+  "faq": [
+   {
+    "q": "How does it build independence?",
+    "a": "By making each routine step visual and rewarding, {name} helps a child see what's next and complete it themselves with less prompting."
+   },
+   {
+    "q": "What age is it for?",
+    "a": "It's designed for roughly ages 3–6, the window for building early daily habits."
+   },
+   {
+    "q": "Is it ad-free and private?",
+    "a": "Yes — no ads, no data collected from children, one-time unlock."
+   }
+  ]
  }
 ]
 ''')

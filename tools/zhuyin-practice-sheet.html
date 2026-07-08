@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>注音練習表產生器 — 免費列印 ㄅㄆㄇ 描寫練習（37 符號）</title>
+<meta name="description" content="免費線上產生注音符號描寫練習表：可選聲母、介音、韻母或全部 37 個注音，田字格描紅、附例字，一鍵列印給孩子在家練 ㄅㄆㄇ。適合幼兒園、小一新生與海外華語家庭。">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/tools/zhuyin-practice-sheet.html">
+<meta property="og:title" content="注音練習表產生器 — 免費列印 ㄅㄆㄇ 描寫練習">
+<meta property="og:description" content="選好注音符號，一鍵產生田字格描寫練習表並列印，讓孩子在家練注音。">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"注音練習表產生器","inLanguage":"zh-Hant","applicationCategory":"EducationalApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"TWD"},"description":"免費產生可列印的注音符號（ㄅㄆㄇ）田字格描寫練習表，可選聲母、介音、韻母或全部 37 個符號。","url":"https://alice51849.github.io/ios-app-guide/tools/zhuyin-practice-sheet.html"}
+</script>
+<style>
+:root{--bg:#f7f7fb;--card:#fff;--ink:#181826;--muted:#5d6370;--line:#e5e6ef;--brand:#5b5ff2;--brand2:#8b5cf6;--trace:#c9ccd8}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang TC","Noto Sans TC","Microsoft JhengHei",Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#fff,var(--bg));color:var(--ink);line-height:1.7}
+a{color:#3840d0}
+.wrap{width:min(1000px,100% - 28px);margin:auto}
+.top{padding:16px 0;border-bottom:1px solid var(--line);background:rgba(255,255,255,.9);backdrop-filter:blur(10px);position:sticky;top:0;z-index:5}
+.nav{display:flex;justify-content:space-between;gap:14px;align-items:center}
+.nav a{text-decoration:none;font-weight:700;font-size:15px}
+.nav .links a{font-weight:500;color:var(--muted);margin-left:14px}
+.hero{padding:26px 0 8px}
+h1{font-size:clamp(23px,5vw,33px);margin:.1em 0 .2em;letter-spacing:-.01em}
+.lead{color:var(--muted);font-size:clamp(15px,3.3vw,17px);margin:0 0 6px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin:16px 0}
+.panel h2{font-size:15px;margin:0 0 12px;color:var(--muted);font-weight:700;letter-spacing:.02em}
+.row{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center}
+.seg{display:inline-flex;background:#eef0f7;border-radius:11px;padding:4px;gap:2px;flex-wrap:wrap}
+.seg button{border:0;background:transparent;padding:8px 13px;border-radius:8px;font-weight:600;font-size:14px;color:var(--muted);cursor:pointer}
+.seg button.on{background:#fff;color:var(--brand);box-shadow:0 1px 3px rgba(20,20,60,.12)}
+label.fld{font-size:14px;color:var(--muted);display:inline-flex;align-items:center;gap:7px}
+select,input[type=number]{border:1px solid var(--line);border-radius:9px;padding:7px 9px;font-size:14px;font-family:inherit;background:#fff}
+.chk{display:inline-flex;align-items:center;gap:7px;font-size:14px;color:var(--ink)}
+.picker{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.picker button{border:1px solid var(--line);background:#fff;border-radius:9px;min-width:40px;padding:7px 4px;font-size:20px;cursor:pointer;line-height:1}
+.picker button.on{background:var(--brand);color:#fff;border-color:var(--brand)}
+.act{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0 2px}
+.btn{border:0;border-radius:12px;padding:12px 20px;font-weight:700;font-size:15px;cursor:pointer}
+.btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff}
+.btn.ghost{background:#fff;border:1px solid var(--line);color:var(--ink)}
+/* sheet */
+.sheet{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;margin:16px 0}
+.sheet-hd{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2px solid var(--ink);padding-bottom:8px;margin-bottom:14px}
+.sheet-hd h3{margin:0;font-size:19px}
+.sheet-hd .meta{font-size:13px;color:var(--muted)}
+.line{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px dashed var(--line)}
+.key{flex:0 0 auto;text-align:center;min-width:78px}
+.key .sym{font-size:40px;line-height:1;font-weight:600}
+.key .py{font-size:12px;color:var(--muted);font-family:ui-monospace,Menlo,monospace}
+.key .ex{font-size:13px;color:var(--muted)}
+.cells{display:flex;gap:8px;flex-wrap:nowrap;overflow:hidden}
+.cell{flex:0 0 auto;width:52px;height:52px;border:1px solid #d7d9e6;border-radius:6px;position:relative;display:flex;align-items:center;justify-content:center;font-size:34px}
+.cell::before,.cell::after{content:"";position:absolute;background:#eceef6}
+.cell::before{left:50%;top:4px;bottom:4px;width:1px;transform:translateX(-.5px)}
+.cell::after{top:50%;left:4px;right:4px;height:1px;transform:translateY(-.5px)}
+.cell.trace{color:var(--trace)}
+.cell.blank{color:transparent}
+.cta{display:block;background:linear-gradient(135deg,#6a5be6,var(--brand));color:#fff;text-decoration:none;border-radius:14px;padding:15px 18px;font-weight:700;text-align:center;margin:18px 0 6px}
+.foot{color:var(--muted);font-size:13px;margin:22px 0 40px}
+.hint{color:var(--muted);font-size:13px;margin-top:6px}
+@media print{
+  .top,.hero .lead,.panel,.act,.cta,.foot,.printhide{display:none!important}
+  body{background:#fff}
+  .wrap{width:100%}
+  .sheet{border:0;border-radius:0;padding:0;margin:0}
+  .line{padding:9px 0}
+  .cell{width:56px;height:56px}
+  h1{display:none}
+  @page{margin:14mm}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap nav">
+  <a href="https://alice51849.github.io/ios-app-guide/index.html">iOS App 指南</a>
+  <span class="links"><a href="https://alice51849.github.io/ios-app-guide/tools/">免費工具</a><a href="https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-chart.html">注音對照表</a></span>
+</div></header>
+
+<main class="wrap">
+<section class="hero">
+  <h1>注音練習表產生器</h1>
+  <p class="lead">選好要練的注音符號,一鍵產生「田字格描紅」練習表並列印,讓孩子在家把 ㄅㄆㄇ 一筆一畫寫熟。適合幼兒園、小一新生,以及在海外自學注音的華語家庭。</p>
+</section>
+
+<section class="panel printhide">
+  <h2>1. 選要練的符號</h2>
+  <div class="row">
+    <div class="seg" id="grp">
+      <button data-g="all" class="on">全部 37</button>
+      <button data-g="initial">聲母 21</button>
+      <button data-g="medial">介音 3</button>
+      <button data-g="final">韻母 13</button>
+      <button data-g="pick">自選</button>
+    </div>
+  </div>
+  <div class="picker" id="picker" style="display:none"></div>
+  <div class="hint" id="pickhint" style="display:none">點符號加入或移除;可自由組合。</div>
+</section>
+
+<section class="panel printhide">
+  <h2>2. 版面設定</h2>
+  <div class="row">
+    <label class="fld">每個符號描紅格數
+      <select id="trace"><option>4</option><option selected>6</option><option>8</option></select>
+    </label>
+    <label class="fld">空白練習格數
+      <select id="blank"><option>2</option><option selected>4</option><option>6</option></select>
+    </label>
+    <label class="chk"><input type="checkbox" id="showex" checked> 顯示例字</label>
+  </div>
+  <div class="act">
+    <button class="btn primary" onclick="window.print()">🖨️ 列印練習表</button>
+    <button class="btn ghost" id="regen">重新產生</button>
+  </div>
+  <div class="hint">列印時會自動隱藏設定區,只印出乾淨的練習表(建議 A4 直印)。</div>
+</section>
+
+<section class="sheet" id="sheet"></section>
+
+<a class="cta" href="https://apps.apple.com/app/id6773017109?ct=iag_zhuyin_sheet">用遊戲學注音:下載 Lumi 注音星球(買斷制、無廣告)→</a>
+<p class="foot">此工具與練習表可自由列印、影印、分享給家長與老師使用。注音符號依教育部標準 37 個符號製作。學會認讀後,搭配 <strong>Lumi 注音星球</strong> 以遊戲反覆練習成效最好——一次買斷、無廣告、無訂閱,資料留在裝置上。</p>
+</main>
+
+<script>
+const DATA=[
+ ["ㄅ","b","爸","initial"],["ㄆ","p","怕","initial"],["ㄇ","m","媽","initial"],["ㄈ","f","飛","initial"],
+ ["ㄉ","d","大","initial"],["ㄊ","t","天","initial"],["ㄋ","n","你","initial"],["ㄌ","l","來","initial"],
+ ["ㄍ","g","狗","initial"],["ㄎ","k","看","initial"],["ㄏ","h","好","initial"],["ㄐ","j","家","initial"],
+ ["ㄑ","q","去","initial"],["ㄒ","x","小","initial"],["ㄓ","zh","中","initial"],["ㄔ","ch","吃","initial"],
+ ["ㄕ","sh","是","initial"],["ㄖ","r","人","initial"],["ㄗ","z","早","initial"],["ㄘ","c","菜","initial"],
+ ["ㄙ","s","三","initial"],
+ ["ㄧ","i","一","medial"],["ㄨ","u","五","medial"],["ㄩ","ü","魚","medial"],
+ ["ㄚ","a","大","final"],["ㄛ","o","波","final"],["ㄜ","e","喝","final"],["ㄝ","ê","誒","final"],
+ ["ㄞ","ai","愛","final"],["ㄟ","ei","給","final"],["ㄠ","ao","好","final"],["ㄡ","ou","有","final"],
+ ["ㄢ","an","安","final"],["ㄣ","en","恩","final"],["ㄤ","ang","忙","final"],["ㄥ","eng","冷","final"],
+ ["ㄦ","er","二","final"]
+];
+let group="all", picked=new Set(DATA.map(d=>d[0]));
+const $=s=>document.querySelector(s);
+function selected(){
+  if(group==="all") return DATA;
+  if(group==="pick") return DATA.filter(d=>picked.has(d[0]));
+  return DATA.filter(d=>d[3]===group);
+}
+function buildPicker(){
+  const p=$("#picker"); p.innerHTML="";
+  DATA.forEach(d=>{
+    const b=document.createElement("button"); b.textContent=d[0];
+    if(picked.has(d[0])) b.classList.add("on");
+    b.onclick=()=>{ if(picked.has(d[0])){picked.delete(d[0]);b.classList.remove("on");} else {picked.add(d[0]);b.classList.add("on");} render(); };
+    p.appendChild(b);
+  });
+}
+function render(){
+  const items=selected();
+  const tr=+$("#trace").value, bl=+$("#blank").value, ex=$("#showex").checked;
+  const today=new Date().toLocaleDateString("zh-TW");
+  let h=`<div class="sheet-hd"><h3>注音描寫練習</h3><div class="meta">姓名 ______________　日期 ${today}　共 ${items.length} 字</div></div>`;
+  items.forEach(d=>{
+    let cells="";
+    for(let i=0;i<tr;i++) cells+=`<div class="cell trace">${d[0]}</div>`;
+    for(let i=0;i<bl;i++) cells+=`<div class="cell blank">${d[0]}</div>`;
+    const key=`<div class="key"><div class="sym">${d[0]}</div><div class="py">${d[1]}</div>${ex?`<div class="ex">${d[2]}（${d[0]}）</div>`:""}</div>`;
+    h+=`<div class="line">${key}<div class="cells">${cells}</div></div>`;
+  });
+  $("#sheet").innerHTML=h;
+}
+document.querySelectorAll("#grp button").forEach(b=>{
+  b.onclick=()=>{
+    document.querySelectorAll("#grp button").forEach(x=>x.classList.remove("on"));
+    b.classList.add("on"); group=b.dataset.g;
+    const show=group==="pick";
+    $("#picker").style.display=show?"flex":"none";
+    $("#pickhint").style.display=show?"block":"none";
+    render();
+  };
+});
+["#trace","#blank","#showex"].forEach(s=>$(s).addEventListener("change",render));
+$("#regen").onclick=render;
+buildPicker(); render();
+</script>
+</body>
+</html>

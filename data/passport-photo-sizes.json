@@ -1,0 +1,167 @@
+{
+  "name": "Passport & ID photo size requirements by country",
+  "description": "Official passport / ID photo dimensions (width × height in millimetres), required head height and background colour for major countries, for checking and cropping compliant photos.",
+  "identifier": "https://alice51849.github.io/ios-app-guide/data/passport-photo-sizes.json",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": "Lumi Apps",
+  "dateModified": "2026-07-08",
+  "disclaimer": "Requirements change; always confirm with the issuing authority before submitting. Ranges reflect commonly accepted specifications.",
+  "countries": [
+    {
+      "country": "United States",
+      "countryCode": "US",
+      "width_mm": 51,
+      "height_mm": 51,
+      "size_label": "51 × 51 mm (2 × 2 in)",
+      "head_height_mm": {
+        "min": 25,
+        "max": 35
+      },
+      "background": "white"
+    },
+    {
+      "country": "United Kingdom",
+      "countryCode": "GB",
+      "width_mm": 35,
+      "height_mm": 45,
+      "size_label": "35 × 45 mm",
+      "head_height_mm": {
+        "min": 29,
+        "max": 34
+      },
+      "background": "light grey / cream"
+    },
+    {
+      "country": "Canada",
+      "countryCode": "CA",
+      "width_mm": 50,
+      "height_mm": 70,
+      "size_label": "50 × 70 mm",
+      "head_height_mm": {
+        "min": 31,
+        "max": 36
+      },
+      "background": "white"
+    },
+    {
+      "country": "Australia",
+      "countryCode": "AU",
+      "width_mm": 35,
+      "height_mm": 45,
+      "size_label": "35–40 × 45–50 mm (35 × 45 accepted)",
+      "head_height_mm": {
+        "min": 32,
+        "max": 36
+      },
+      "background": "white"
+    },
+    {
+      "country": "India",
+      "countryCode": "IN",
+      "width_mm": 35,
+      "height_mm": 45,
+      "size_label": "35 × 45 mm",
+      "head_height_mm": {
+        "min": 25,
+        "max": 35
+      },
+      "background": "white"
+    },
+    {
+      "country": "China",
+      "countryCode": "CN",
+      "width_mm": 33,
+      "height_mm": 48,
+      "size_label": "33 × 48 mm",
+      "head_height_mm": {
+        "min": 28,
+        "max": 33
+      },
+      "background": "white"
+    },
+    {
+      "country": "Japan",
+      "countryCode": "JP",
+      "width_mm": 35,
+      "height_mm": 45,
+      "size_label": "35 × 45 mm",
+      "head_height_mm": {
+        "min": 32,
+        "max": 36
+      },
+      "background": "white"
+    },
+    {
+      "country": "Schengen / EU",
+      "countryCode": "EU",
+      "width_mm": 35,
+      "height_mm": 45,
+      "size_label": "35 × 45 mm",
+      "head_height_mm": {
+        "min": 32,
+        "max": 36
+      },
+      "background": "light grey"
+    },
+    {
+      "country": "Germany",
+      "countryCode": "DE",
+      "width_mm": 35,
+      "height_mm": 45,
+      "size_label": "35 × 45 mm",
+      "head_height_mm": {
+        "min": 32,
+        "max": 36
+      },
+      "background": "light grey"
+    },
+    {
+      "country": "France",
+      "countryCode": "FR",
+      "width_mm": 35,
+      "height_mm": 45,
+      "size_label": "35 × 45 mm",
+      "head_height_mm": {
+        "min": 32,
+        "max": 36
+      },
+      "background": "light grey"
+    },
+    {
+      "country": "Taiwan",
+      "countryCode": "TW",
+      "width_mm": 35,
+      "height_mm": 45,
+      "size_label": "35 × 45 mm",
+      "head_height_mm": {
+        "min": 32,
+        "max": 36
+      },
+      "background": "white"
+    },
+    {
+      "country": "South Korea",
+      "countryCode": "KR",
+      "width_mm": 35,
+      "height_mm": 45,
+      "size_label": "35 × 45 mm",
+      "head_height_mm": {
+        "min": 32,
+        "max": 36
+      },
+      "background": "white"
+    },
+    {
+      "country": "Brazil",
+      "countryCode": "BR",
+      "width_mm": 35,
+      "height_mm": 45,
+      "size_label": "35 × 45 mm",
+      "head_height_mm": {
+        "min": 32,
+        "max": 36
+      },
+      "background": "white"
+    }
+  ]
+}

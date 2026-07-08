@@ -32,6 +32,7 @@ TODAY = _dt.date.today().isoformat()
 
 BOPOMOFO_APP = "https://apps.apple.com/app/id6773017109"      # Lumi Bopomofo
 BOPOMOFO_PRO = "https://apps.apple.com/app/id6775773117"      # Lumi Bopomofo Pro
+SNAPPORT_APP = "https://apps.apple.com/app/id6780575828"      # Snapport: Passport & ID Photos
 
 # ── 37 注音符號(21 聲母 + 3 介音 + 13 韻母)。pinyin 為漢語拼音對照,example 為常用字例。
 ZHUYIN = [
@@ -143,6 +144,7 @@ th{{color:var(--sub);font-weight:600;font-size:13px;text-transform:uppercase;let
 .sym{{font-size:26px;line-height:1;white-space:nowrap}}
 .py{{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;white-space:nowrap}}
 .ex{{white-space:nowrap}}
+.nw{{white-space:nowrap}}
 .cta{{display:block;background:linear-gradient(135deg,#6a5be6,#5b4bdb);color:#fff;text-decoration:none;border-radius:14px;padding:16px 18px;font-weight:600;text-align:center;margin:8px 0 6px}}
 .dl{{display:inline-block;border:1px solid var(--line);background:#fff;border-radius:12px;padding:10px 14px;text-decoration:none;font-weight:600;font-size:14px}}
 .foot{{color:var(--sub);font-size:13px;margin-top:26px}}
@@ -150,22 +152,15 @@ th{{color:var(--sub);font-weight:600;font-size:13px;text-transform:uppercase;let
 </head>
 <body>
 <div class="wrap">
-<div class="crumb"><a href="{site}/data/">Open data</a> › Zhuyin (Bopomofo)</div>
+<div class="crumb"><a href="{site}/data/">Open data</a> › {crumb}</div>
 <h1>{h1}</h1>
 <p class="lead">{lead}</p>
 <div class="meta">
-<span class="pill">37 symbols</span><span class="pill">21 initials · 3 medials · 13 finals</span>
-<span class="pill">CC-BY 4.0 — free to reuse with credit</span><span class="pill">Updated {today}</span>
+{pills}<span class="pill">CC-BY 4.0 — free to reuse with credit</span><span class="pill">Updated {today}</span>
 </div>
 <a class="dl" href="{site}/data/{slug}.json">⬇ Download JSON dataset</a>
 {tables}
-<h2>Learn these with a game — pay once, no subscription</h2>
-<p>The fastest way for a child to master all 37 symbols is playful, repeated practice.
-<strong>Lumi Bopomofo</strong> teaches every symbol above through games — a one-time purchase,
-no ads, no subscription, everything stays on the device.</p>
-<a class="cta" href="{app}">Get Lumi Bopomofo on the App Store →</a>
-<p style="font-size:14px"><a href="{site}/tools/zhuyin-bopomofo-chart.html">Printable Bopomofo chart →</a>
-&nbsp;·&nbsp; <a href="{site}/data/">More open datasets →</a></p>
+{cta}
 <p class="foot">Data licensed under
 <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. You may reuse it freely —
 please credit “Lumi Apps ({site})”. Machine-readable copy:
@@ -221,9 +216,111 @@ def build_zhuyin_page():
              "url": f"{SITE}/data/{slug}.html", "hasDefinedTerm": terms},
         ],
     }, ensure_ascii=False)
+    pills = ('<span class="pill">37 symbols</span>'
+             '<span class="pill">21 initials · 3 medials · 13 finals</span>')
+    cta = ('<h2>Learn these with a game — pay once, no subscription</h2>\n'
+           '<p>The fastest way for a child to master all 37 symbols is playful, repeated practice. '
+           '<strong>Lumi Bopomofo</strong> teaches every symbol above through games — a one-time '
+           'purchase, no ads, no subscription, everything stays on the device.</p>\n'
+           f'<a class="cta" href="{BOPOMOFO_APP}">Get Lumi Bopomofo on the App Store →</a>\n'
+           f'<p style="font-size:14px"><a href="{SITE}/tools/zhuyin-bopomofo-chart.html">'
+           'Printable Bopomofo chart →</a> &nbsp;·&nbsp; '
+           f'<a href="{SITE}/data/">More open datasets →</a></p>')
     page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
                        lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
-                       tables=tables, schema=schema, app=BOPOMOFO_APP)
+                       crumb="Zhuyin (Bopomofo)", pills=pills, tables=tables, schema=schema, cta=cta)
+    os.makedirs(DATA, exist_ok=True)
+    open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
+        json.dumps(dj, ensure_ascii=False, indent=2))
+    open(os.path.join(DATA, f"{slug}.html"), "w", encoding="utf-8").write(page)
+    return slug
+
+
+PASSPORT = [
+    # (country, ISO code, width_mm, height_mm, size_label, head_min_mm, head_max_mm, background)
+    ("United States", "US", 51, 51, "51 × 51 mm (2 × 2 in)", 25, 35, "white"),
+    ("United Kingdom", "GB", 35, 45, "35 × 45 mm", 29, 34, "light grey / cream"),
+    ("Canada", "CA", 50, 70, "50 × 70 mm", 31, 36, "white"),
+    ("Australia", "AU", 35, 45, "35–40 × 45–50 mm (35 × 45 accepted)", 32, 36, "white"),
+    ("India", "IN", 35, 45, "35 × 45 mm", 25, 35, "white"),
+    ("China", "CN", 33, 48, "33 × 48 mm", 28, 33, "white"),
+    ("Japan", "JP", 35, 45, "35 × 45 mm", 32, 36, "white"),
+    ("Schengen / EU", "EU", 35, 45, "35 × 45 mm", 32, 36, "light grey"),
+    ("Germany", "DE", 35, 45, "35 × 45 mm", 32, 36, "light grey"),
+    ("France", "FR", 35, 45, "35 × 45 mm", 32, 36, "light grey"),
+    ("Taiwan", "TW", 35, 45, "35 × 45 mm", 32, 36, "white"),
+    ("South Korea", "KR", 35, 45, "35 × 45 mm", 32, 36, "white"),
+    ("Brazil", "BR", 35, 45, "35 × 45 mm", 32, 36, "white"),
+]
+
+
+def passport_records():
+    out = []
+    for c, code, w, h, label, hmin, hmax, bg in PASSPORT:
+        out.append({
+            "country": c, "countryCode": code,
+            "width_mm": w, "height_mm": h, "size_label": label,
+            "head_height_mm": {"min": hmin, "max": hmax}, "background": bg,
+        })
+    return out
+
+
+def passport_json():
+    return {
+        "name": "Passport & ID photo size requirements by country",
+        "description": ("Official passport / ID photo dimensions (width × height in millimetres), "
+                        "required head height and background colour for major countries, for "
+                        "checking and cropping compliant photos."),
+        "identifier": f"{SITE}/data/passport-photo-sizes.json",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "creator": "Lumi Apps",
+        "dateModified": TODAY,
+        "disclaimer": ("Requirements change; always confirm with the issuing authority before "
+                       "submitting. Ranges reflect commonly accepted specifications."),
+        "countries": passport_records(),
+    }
+
+
+def build_passport_page():
+    slug = "passport-photo-sizes"
+    title = "Passport Photo Size by Country (mm) — Free Open Data | Lumi Apps"
+    h1 = "Passport & ID photo sizes by country"
+    desc = ("Official passport / ID photo dimensions in millimetres, head-height requirement and "
+            "background colour for major countries. Free, machine-readable open data (CC BY 4.0).")
+    lead = ("How big should a passport photo be? Here is a citable reference of official photo "
+            "sizes (in mm), head-height requirements and background colour by country.")
+    rows = ""
+    for c, code, w, h, label, hmin, hmax, bg in PASSPORT:
+        rows += (f'<tr><td><strong>{html.escape(c)}</strong></td>'
+                 f'<td class="nw">{html.escape(label)}</td>'
+                 f'<td class="nw">{hmin}–{hmax} mm</td>'
+                 f'<td>{html.escape(bg)}</td></tr>')
+    tables = ('<div class="card"><table>'
+              '<tr><th>Country</th><th>Photo size</th><th>Head height</th><th>Background</th></tr>'
+              f'{rows}</table></div>')
+    dj = passport_json()
+    schema = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "Dataset", "name": dj["name"], "description": dj["description"],
+        "url": f"{SITE}/data/{slug}.html", "identifier": dj["identifier"],
+        "license": dj["license"], "creator": {"@type": "Organization", "name": "Lumi Apps"},
+        "dateModified": dj["dateModified"],
+        "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json",
+                          "contentUrl": dj["identifier"]}],
+        "keywords": ["passport photo size", "ID photo", "photo dimensions", "mm", "by country"],
+    }, ensure_ascii=False)
+    pills = (f'<span class="pill">{len(PASSPORT)} countries</span>'
+             '<span class="pill">sizes in mm</span>')
+    cta = ('<h2>Make a compliant photo at home — pay once, no subscription</h2>\n'
+           '<p>You don’t need a photo booth. <strong>Snapport</strong> crops your photo to the exact '
+           'size for any country above, checks the head position and prints or exports a ready-to-use '
+           'sheet — a one-time purchase, no subscription, everything on your iPhone.</p>\n'
+           f'<a class="cta" href="{SNAPPORT_APP}">Get Snapport on the App Store →</a>\n'
+           f'<p style="font-size:14px"><a href="{SITE}/data/">More open datasets →</a></p>')
+    page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
+                       lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
+                       crumb="Passport photo sizes", pills=pills, tables=tables,
+                       schema=schema, cta=cta)
     os.makedirs(DATA, exist_ok=True)
     open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
         json.dumps(dj, ensure_ascii=False, indent=2))
@@ -303,7 +400,7 @@ def publish(urls):
     try:
         run(["git", "add", "-A"], cwd=repo)
         run(["git", "commit", "-m",
-             "Open data hub: Zhuyin/Bopomofo 37-symbol dataset (CC-BY, AI-citable)\n\n"
+             "Open data hub update (CC-BY, AI-citable datasets)\n\n"
              "Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"], cwd=repo)
         run(["git", "pull", "--rebase", "--autostash"], cwd=repo)
         run(["git", "push"], cwd=repo)
@@ -329,12 +426,19 @@ def main():
     ap.add_argument("--publish", action="store_true")
     args = ap.parse_args()
     slug = build_zhuyin_page()
+    pslug = build_passport_page()
     datasets = [{
         "slug": slug,
         "name": "Zhuyin (Bopomofo): all 37 symbols",
         "blurb": "The complete 21 initials + 3 medials + 13 finals, each with Pinyin, "
                  "Unicode and an example word. JSON download included.",
         "tag": "Language · CC BY 4.0",
+    }, {
+        "slug": pslug,
+        "name": "Passport & ID photo sizes by country",
+        "blurb": "Official passport/ID photo dimensions (mm), head height and background "
+                 "colour for 13 major countries. JSON download included.",
+        "tag": "Reference · CC BY 4.0",
     }]
     build_index(datasets)
     urls = build_sitemap(datasets)

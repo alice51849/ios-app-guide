@@ -57,5 +57,32 @@
    "tutorial"
   ],
   "body": "\"Storage Almost Full\" is almost always duplicates, near-identical burst shots, and a few enormous videos — not your actual memories.\n\n**A fast cleanup pass**\n1. Find exact + near-duplicate photos and keep the best one.\n2. Sort videos by size; the biggest few usually free the most space.\n3. Clear old screenshots and blurry shots.\n\nI built **[PicClear](https://apps.apple.com/app/id6780223070)** to do this in one scan — similar-shot grouping, largest-videos view — all on-device, one-time purchase, no subscription.\n\nNo cloud upload, no account: it just cleans up locally."
+ },
+ {
+  "title": "A period tracker that stays on your device (no account, no data selling)",
+  "tags": [
+   "privacy",
+   "ios",
+   "productivity"
+  ],
+  "body": "Cycle-tracking apps are some of the most privacy-sensitive apps on your phone — yet many upload your data and monetize it. For something this personal, on-device is the only sane default.\n\n**What to look for**\n- Data stored on-device, not in someone's cloud.\n- No account / no sign-up required.\n- A clear view of phases, fertile window, and gentle days.\n- A one-time price, not a subscription on your own health data.\n\nI built **[Cyca](https://apps.apple.com/app/id6782251621)** to do exactly that: private period & cycle tracking that stays on your iPhone — pay once, no account, nothing uploaded."
+ },
+ {
+  "title": "Sharpen a blurry photo on iPhone without uploading it anywhere",
+  "tags": [
+   "ios",
+   "privacy",
+   "tutorial"
+  ],
+  "body": "Most \"AI photo enhancer\" apps send your photo to a server. For personal photos — kids, family, documents — that's a lot of trust for a blur fix.\n\n**On-device enhancement, in short**\n- Super-resolution reconstructs detail and upscales.\n- Doing it locally means the photo never leaves your phone.\n- No subscription needed for occasional fixes.\n\nI built **[Unblurry](https://apps.apple.com/app/id6782275018)** to sharpen and upscale photos entirely **on-device** — pay once, no account, nothing uploaded. Great for old scans, screenshots, and slightly-soft shots."
+ },
+ {
+  "title": "White noise & sleep sounds that actually work offline (no subscription)",
+  "tags": [
+   "ios",
+   "productivity",
+   "privacy"
+  ],
+  "body": "White, brown and rain noise genuinely help many people sleep or focus — but sound apps are one of the most aggressively monetized categories, often gating the good sounds or the sleep timer behind a subscription.\n\n**What a good sound app needs**\n- A rich library you can *mix* (rain over brown noise, etc.).\n- A reliable sleep timer with fade-out.\n- Offline playback (no streaming, no data use overnight).\n- A one-time price for something you use nightly.\n\nI built **[Sereno](https://apps.apple.com/app/id6788236641)** as a pay-once sound machine: mixable sounds, timers, fully offline — no ads, no subscription."
  }
 ]

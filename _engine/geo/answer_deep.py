@@ -4174,6 +4174,74 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
     "a": "No — free to start with a one-time unlock for all skins."
    }
   ]
+ },
+ {
+  "app_key": "scanto",
+  "kind": "scenario",
+  "query": "How to scan book pages or notes into a searchable PDF on iPhone",
+  "match": [
+   "scan book pages searchable pdf",
+   "scan notes into searchable pdf",
+   "scan textbook pages iphone ocr",
+   "digitize notes searchable"
+  ],
+  "lead": "To turn book pages or handwritten notes into a searchable PDF, scan each page with edge-detection and run OCR so you can find any word later — then batch them into one file.",
+  "detail": "Photos of pages aren't searchable and look skewed; a proper scan straightens each page, removes shadows near the spine, and runs OCR so the text becomes selectable and searchable. {name} does this on-device, batches many pages into a single PDF, and keeps everything on your phone unless you export it. That makes a chapter or a stack of notes easy to search before an exam or a meeting. It's pay-once with no account and no watermark.",
+  "bullets": [
+   "Edge-detection straightens each page; shadow removal near the spine",
+   "OCR makes the text searchable and selectable",
+   "Batch many pages into one PDF",
+   "On-device — nothing uploaded unless you export",
+   "Pay-once, no account, no watermark"
+  ],
+  "faq": [
+   {
+    "q": "Can I search text inside the scan?",
+    "a": "Yes — OCR turns the page text into searchable, selectable content."
+   },
+   {
+    "q": "Will curved book pages look flat?",
+    "a": "Page straightening reduces the curve near the spine for cleaner, more readable scans."
+   },
+   {
+    "q": "Is it private?",
+    "a": "{name} scans on-device, so pages aren't uploaded unless you export them; it's pay-once with no account."
+   }
+  ]
+ },
+ {
+  "app_key": "scanto",
+  "kind": "scenario",
+  "query": "How to scan sign and lock a contract PDF on iPhone",
+  "match": [
+   "scan sign and lock a contract",
+   "sign a contract pdf iphone private",
+   "scan contract add signature lock",
+   "secure signed pdf iphone"
+  ],
+  "lead": "To handle a contract on your phone, scan each page to a crisp PDF, add your signature, and lock the file — keeping a sensitive document on your device instead of a third-party cloud.",
+  "detail": "A signed contract is sensitive, so the ideal flow keeps it on-device: scan every page to a straight, clean PDF, drop your signature where needed, and lock the finished file behind Face ID or a password. {name} does all of this on-device and batches the pages into one PDF, so you can send a signed, secured file without uploading it to an online service first. It's pay-once with no account.",
+  "bullets": [
+   "Sharp multi-page PDF with straightened pages",
+   "Add a signature directly on the page",
+   "Lock the finished PDF with Face ID or a password",
+   "On-device — no forced cloud upload",
+   "Pay-once, no account"
+  ],
+  "faq": [
+   {
+    "q": "Can I sign inside the app?",
+    "a": "Yes — add a signature onto the scanned page before exporting."
+   },
+   {
+    "q": "Can I protect the PDF?",
+    "a": "{name} can lock the finished file behind Face ID or a password."
+   },
+   {
+    "q": "Does it stay private?",
+    "a": "Scanning and signing happen on-device, so the contract isn't uploaded unless you choose to share it."
+   }
+  ]
  }
 ]
 ''')

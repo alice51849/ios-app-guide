@@ -1,0 +1,25 @@
+name: Telegram daily post
+
+on:
+  schedule:
+    - cron: "0 1 * * *"    # 09:00 台灣 / 亞洲早
+    - cron: "0 9 * * *"    # 歐洲早 / 中東
+    - cron: "0 15 * * *"   # 美洲
+  workflow_dispatch:        # 可手動觸發(測試用)
+
+permissions:
+  contents: read
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Post to Telegram channel (free, no OpenAI)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python3 .github/scripts/telegram_post.py

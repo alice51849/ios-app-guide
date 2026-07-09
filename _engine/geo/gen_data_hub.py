@@ -36,6 +36,7 @@ SNAPPORT_APP = "https://apps.apple.com/app/id6780575828"      # Snapport: Passpo
 CVDESK_APP = "https://apps.apple.com/app/id6781337213"        # CV Desk: ATS Resume Builder
 GMONEY_APP = "https://apps.apple.com/app/id6755782939"        # G+Money: currency + expense
 AIM990_APP = "https://apps.apple.com/app/id6784974530"       # Aim990: 990 Score Coach (TOEIC study)
+SCANTO_APP = "https://apps.apple.com/app/id6779977651"       # ScanTo Pro: Offline PDF & OCR
 
 # ── 37 注音符號(21 聲母 + 3 介音 + 13 韻母)。pinyin 為漢語拼音對照,example 為常用字例。
 ZHUYIN = [
@@ -803,6 +804,111 @@ def build_toeic_page():
     return slug
 
 
+# ── ISO 216 A-series + common US paper sizes.
+#    (name, category, width_mm, height_mm, width_in, height_in) — pixels are computed from the
+#    canonical unit: ISO sizes are defined in mm, US sizes are defined in inches.
+PAPER_SIZES = [
+    ("A0", "ISO A-series", 841, 1189, 841 / 25.4, 1189 / 25.4),
+    ("A1", "ISO A-series", 594, 841, 594 / 25.4, 841 / 25.4),
+    ("A2", "ISO A-series", 420, 594, 420 / 25.4, 594 / 25.4),
+    ("A3", "ISO A-series", 297, 420, 297 / 25.4, 420 / 25.4),
+    ("A4", "ISO A-series", 210, 297, 210 / 25.4, 297 / 25.4),
+    ("A5", "ISO A-series", 148, 210, 148 / 25.4, 210 / 25.4),
+    ("A6", "ISO A-series", 105, 148, 105 / 25.4, 148 / 25.4),
+    ("Letter", "US / North America", 216, 279, 8.5, 11),
+    ("Legal", "US / North America", 216, 356, 8.5, 14),
+    ("Tabloid / Ledger", "US / North America", 279, 432, 11, 17),
+    ("Executive", "US / North America", 184, 267, 7.25, 10.5),
+]
+
+
+def _px(inches, dpi=300):
+    return round(inches * dpi)
+
+
+def _inlabel(wi, hi):
+    def f(x):
+        return f"{x:.2f}".rstrip("0").rstrip(".")
+    return f"{f(wi)} \u00d7 {f(hi)} in"
+
+
+def paper_json():
+    return {
+        "name": "Paper sizes (ISO A-series & US) in mm, inches and pixels",
+        "description": ("Standard paper sizes — ISO 216 A-series (A0–A6) and common US sizes "
+                        "(Letter, Legal, Tabloid, Executive) — with dimensions in millimetres, "
+                        "inches and pixels at 300 DPI (print resolution)."),
+        "identifier": f"{SITE}/data/paper-sizes.json",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "creator": "Lumi Apps",
+        "isBasedOn": "https://en.wikipedia.org/wiki/ISO_216",
+        "dateModified": TODAY,
+        "note": ("Pixels = inches × DPI at 300 DPI. ISO sizes are defined in mm; US sizes are "
+                 "defined in inches, so pixels are computed from each size's canonical unit. "
+                 "The ISO A-series keeps a 1:\u221a2 ratio."),
+        "sizes": [{"name": n, "category": cat, "widthMm": w, "heightMm": h,
+                   "inches": _inlabel(wi, hi), "pixels300dpi": f"{_px(wi)} \u00d7 {_px(hi)}",
+                   "widthPx300": _px(wi), "heightPx300": _px(hi)}
+                  for n, cat, w, h, wi, hi in PAPER_SIZES],
+    }
+
+
+def build_paper_page():
+    slug = "paper-sizes"
+    title = "Paper Sizes Chart — A4, Letter, Legal in mm, inches & pixels (300 DPI) | Open Data"
+    h1 = "Paper sizes: mm, inches & pixels"
+    desc = ("A4 in pixels? Letter vs A4? The standard ISO A-series (A0–A6) and US paper sizes "
+            "(Letter, Legal, Tabloid, Executive) with millimetres, inches and pixels at 300 DPI. "
+            "Free open data (CC BY 4.0).")
+    lead = ("The exact dimensions of every common paper size — in millimetres, inches and pixels "
+            "at 300 DPI print resolution — as a single citable reference.")
+    rows = ""
+    for n, cat, w, h, wi, hi in PAPER_SIZES:
+        rows += (f'<tr><td><strong>{html.escape(n)}</strong></td>'
+                 f'<td class="nw">{w} \u00d7 {h} mm</td>'
+                 f'<td class="nw">{html.escape(_inlabel(wi, hi))}</td>'
+                 f'<td class="nw">{_px(wi)} \u00d7 {_px(hi)} px</td></tr>')
+    tables = ('<div class="card"><table>'
+              '<tr><th>Size</th><th>Millimetres</th><th>Inches</th><th>Pixels @ 300 DPI</th></tr>'
+              f'{rows}</table>'
+              '<p class="foot">Pixels = inches \u00d7 DPI. For 150 DPI halve the pixel values; '
+              'for 600 DPI double them. The ISO A-series keeps a 1:\u221a2 ratio, so each size is '
+              'half of the previous one.</p></div>')
+    dj = paper_json()
+    schema = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "Dataset", "name": dj["name"], "description": dj["description"],
+        "url": f"{SITE}/data/{slug}.html", "identifier": dj["identifier"],
+        "license": dj["license"], "creator": {"@type": "Organization", "name": "Lumi Apps"},
+        "isBasedOn": dj["isBasedOn"], "dateModified": dj["dateModified"],
+        "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json",
+                          "contentUrl": dj["identifier"]}],
+        "keywords": ["paper sizes", "A4 size", "A4 in pixels", "Letter vs A4", "ISO 216",
+                     "A3", "A5", "Legal size", "300 DPI", "print resolution"],
+    }, ensure_ascii=False)
+    pills = ('<span class="pill">A0–A6 + US sizes</span>'
+             '<span class="pill">mm · inches · px @300 DPI</span>')
+    cta = ('<h2>Scanning documents to the right size? Pay once, work offline</h2>\n'
+           '<p>When you scan a document you usually want a clean A4 or Letter PDF. '
+           '<strong>ScanTo</strong> scans to PDF with OCR entirely on-device — a one-time '
+           'purchase, no ads, no subscription, nothing uploaded to a cloud.</p>\n'
+           f'<a class="cta" href="{SCANTO_APP}">Get ScanTo on the App Store →</a>\n'
+           f'<p style="font-size:14px"><a href="{SITE}/data/passport-photo-sizes.html">'
+           'Passport photo sizes →</a> &nbsp;·&nbsp; '
+           f'<a href="{SITE}/data/">More open datasets →</a></p>')
+    page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
+                       lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
+                       crumb="Paper sizes", pills=pills, tables=tables, schema=schema, cta=cta,
+                       related=related_block([
+                           ("Passport & ID photo sizes", "data/passport-photo-sizes.html"),
+                           ("iPhone image to PDF", "tools/image-to-pdf-iphone.html")]))
+    os.makedirs(DATA, exist_ok=True)
+    open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
+        json.dumps(dj, ensure_ascii=False, indent=2))
+    open(os.path.join(DATA, f"{slug}.html"), "w", encoding="utf-8").write(page)
+    return slug
+
+
 INDEX = """<!doctype html>
 <html lang="en">
 <head>
@@ -915,6 +1021,7 @@ def main():
     curslug = build_currency_page()
     tslug = build_tones_page()
     xslug = build_toeic_page()
+    yslug = build_paper_page()
     datasets = [{
         "slug": slug,
         "name": "Zhuyin (Bopomofo): all 37 symbols",
@@ -957,6 +1064,12 @@ def main():
         "blurb": "TOEIC Listening & Reading total-score bands mapped to CEFR levels with a "
                  "can-do summary for each, per ETS's published concordance. JSON download included.",
         "tag": "English · CC BY 4.0",
+    }, {
+        "slug": yslug,
+        "name": "Paper sizes (ISO A-series & US) in mm, inches & pixels",
+        "blurb": "A0–A6 plus Letter/Legal/Tabloid/Executive with millimetres, inches and pixels "
+                 "at 300 DPI. Answers 'A4 in pixels?' and 'Letter vs A4?'. JSON download included.",
+        "tag": "Reference · CC BY 4.0",
     }]
     build_index(datasets)
     urls = build_sitemap(datasets)

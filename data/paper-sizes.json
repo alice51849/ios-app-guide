@@ -1,0 +1,122 @@
+{
+  "name": "Paper sizes (ISO A-series & US) in mm, inches and pixels",
+  "description": "Standard paper sizes — ISO 216 A-series (A0–A6) and common US sizes (Letter, Legal, Tabloid, Executive) — with dimensions in millimetres, inches and pixels at 300 DPI (print resolution).",
+  "identifier": "https://alice51849.github.io/ios-app-guide/data/paper-sizes.json",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": "Lumi Apps",
+  "isBasedOn": "https://en.wikipedia.org/wiki/ISO_216",
+  "dateModified": "2026-07-09",
+  "note": "Pixels = inches × DPI at 300 DPI. ISO sizes are defined in mm; US sizes are defined in inches, so pixels are computed from each size's canonical unit. The ISO A-series keeps a 1:√2 ratio.",
+  "sizes": [
+    {
+      "name": "A0",
+      "category": "ISO A-series",
+      "widthMm": 841,
+      "heightMm": 1189,
+      "inches": "33.11 × 46.81 in",
+      "pixels300dpi": "9933 × 14043",
+      "widthPx300": 9933,
+      "heightPx300": 14043
+    },
+    {
+      "name": "A1",
+      "category": "ISO A-series",
+      "widthMm": 594,
+      "heightMm": 841,
+      "inches": "23.39 × 33.11 in",
+      "pixels300dpi": "7016 × 9933",
+      "widthPx300": 7016,
+      "heightPx300": 9933
+    },
+    {
+      "name": "A2",
+      "category": "ISO A-series",
+      "widthMm": 420,
+      "heightMm": 594,
+      "inches": "16.54 × 23.39 in",
+      "pixels300dpi": "4961 × 7016",
+      "widthPx300": 4961,
+      "heightPx300": 7016
+    },
+    {
+      "name": "A3",
+      "category": "ISO A-series",
+      "widthMm": 297,
+      "heightMm": 420,
+      "inches": "11.69 × 16.54 in",
+      "pixels300dpi": "3508 × 4961",
+      "widthPx300": 3508,
+      "heightPx300": 4961
+    },
+    {
+      "name": "A4",
+      "category": "ISO A-series",
+      "widthMm": 210,
+      "heightMm": 297,
+      "inches": "8.27 × 11.69 in",
+      "pixels300dpi": "2480 × 3508",
+      "widthPx300": 2480,
+      "heightPx300": 3508
+    },
+    {
+      "name": "A5",
+      "category": "ISO A-series",
+      "widthMm": 148,
+      "heightMm": 210,
+      "inches": "5.83 × 8.27 in",
+      "pixels300dpi": "1748 × 2480",
+      "widthPx300": 1748,
+      "heightPx300": 2480
+    },
+    {
+      "name": "A6",
+      "category": "ISO A-series",
+      "widthMm": 105,
+      "heightMm": 148,
+      "inches": "4.13 × 5.83 in",
+      "pixels300dpi": "1240 × 1748",
+      "widthPx300": 1240,
+      "heightPx300": 1748
+    },
+    {
+      "name": "Letter",
+      "category": "US / North America",
+      "widthMm": 216,
+      "heightMm": 279,
+      "inches": "8.5 × 11 in",
+      "pixels300dpi": "2550 × 3300",
+      "widthPx300": 2550,
+      "heightPx300": 3300
+    },
+    {
+      "name": "Legal",
+      "category": "US / North America",
+      "widthMm": 216,
+      "heightMm": 356,
+      "inches": "8.5 × 14 in",
+      "pixels300dpi": "2550 × 4200",
+      "widthPx300": 2550,
+      "heightPx300": 4200
+    },
+    {
+      "name": "Tabloid / Ledger",
+      "category": "US / North America",
+      "widthMm": 279,
+      "heightMm": 432,
+      "inches": "11 × 17 in",
+      "pixels300dpi": "3300 × 5100",
+      "widthPx300": 3300,
+      "heightPx300": 5100
+    },
+    {
+      "name": "Executive",
+      "category": "US / North America",
+      "widthMm": 184,
+      "heightMm": 267,
+      "inches": "7.25 × 10.5 in",
+      "pixels300dpi": "2175 × 3150",
+      "widthPx300": 2175,
+      "heightPx300": 3150
+    }
+  ]
+}

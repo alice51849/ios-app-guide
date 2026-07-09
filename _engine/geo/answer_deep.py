@@ -230,6 +230,42 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
  },
  {
   "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "My child starts grade 1 in September and doesn't know any Bopomofo yet — will they fall behind?",
+  "match": [
+   "doesn't know any bopomofo",
+   "fall behind in grade 1 bopomofo",
+   "starts grade 1 in september and doesn't know",
+   "will my child fall behind without bopomofo",
+   "child doesn't know bopomofo before school"
+  ],
+  "lead": "Taiwan grade 1 teaches Bopomofo from zero — the curriculum assumes no prior knowledge and covers all 37 symbols in the first ten weeks — so a child starting without it will not be left behind; a gentle head start simply makes those fast early weeks feel calmer.",
+  "detail": "Taiwan's Ministry of Education curriculum for grade 1 explicitly assumes children have not learned Bopomofo (注音符號) before: teachers start from the very first symbols (ㄅㄆㄇㄈ) and build up sound, writing, and blending over roughly the first ten weeks after the early-September start, before moving on to reading. So a child who arrives in September knowing no Bopomofo is exactly who the curriculum is designed for, and within a few weeks the class levels out. What a small head start changes is comfort, not survival: children who already recognise some symbols by sound feel less rushed during those intensive first weeks and are less likely to compare themselves anxiously with classmates who attended cram schools. If you have a few weeks before school and want a low-pressure warm-up, keep it playful — 10–15 minute sessions a few times a week, focused on hearing and recognising symbols rather than perfect handwriting. {name} covers all 37 symbols across four game modes (audio recognition, stroke tracing, four-tone practice, and syllable blending) for ages 4–7, with a dual English and Traditional Chinese interface, on-device progress, no ads, and a one-time unlock instead of a subscription — a calm way to build familiarity without turning summer into school.",
+  "bullets": [
+   "Taiwan's grade 1 curriculum assumes zero prior Bopomofo and teaches all 37 symbols from scratch in about the first ten weeks",
+   "A child who starts school knowing no Bopomofo is not behind — the class levels out within a few weeks",
+   "A head start changes comfort, not outcomes: prepped children feel less rushed in the intensive first weeks",
+   "If you warm up beforehand, keep it playful — 10–15 minutes a few times a week, sound-first, no handwriting pressure",
+   "Avoid anxious comparison with cram-school peers; steady home practice catches any child up",
+   "Reading Taiwan-published books later is easier once the 37 symbols are familiar"
+  ],
+  "faq": [
+   {
+    "q": "Will my child really be okay starting grade 1 with no Bopomofo at all?",
+    "a": "Yes. Taiwan's grade 1 curriculum is designed to teach Bopomofo from zero, so teachers assume no prior knowledge and build up from the first symbols. Most classes level out within a few weeks. A head start is a comfort, not a requirement."
+   },
+   {
+    "q": "Is it worth doing anything in the few weeks before school, then?",
+    "a": "A light warm-up helps your child feel calmer during the fast first ten weeks, but it should stay playful — 10 to 15 minutes a few times a week focused on recognising symbols by sound. Avoid drilling or pushing for neat handwriting, which can create pressure before school even starts."
+   },
+   {
+    "q": "How do I help without knowing Bopomofo well myself?",
+    "a": "{name} plays accurate audio for every symbol so your child hears correct pronunciation directly, and the dual English and Traditional Chinese interface lets you follow along even if your own Bopomofo is rusty. Short sessions together are enough to build familiarity."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
   "kind": "faq",
   "query": "Should I teach my child Bopomofo or Pinyin first?",
   "match": [

@@ -266,6 +266,43 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
  },
  {
   "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "My child recognises the Bopomofo symbols but can't blend them into syllables — how can I help?",
+  "match": [
+   "can't blend them into syllables",
+   "recognises the bopomofo symbols but can't blend",
+   "child can't blend bopomofo",
+   "struggling to blend zhuyin",
+   "blend bopomofo into syllables",
+   "knows the symbols but can't blend"
+  ],
+  "lead": "Recognising the 37 Bopomofo symbols and blending them into syllables are two different skills — many 4–7-year-olds know the symbols yet stall at 拼讀 (blending). Short, playful, sound-first practice bridges the gap.",
+  "detail": "In Zhuyin (注音符號), reading a syllable means blending an initial + a final (two-part, e.g. ㄅ + ㄚ → ㄅㄚ) or an initial + medial + final (three-part, e.g. ㄐ + ㄧ + ㄣ → ㄐㄧㄣ), then adding one of the four tones. A child can know every symbol in isolation and still find this combining step hard — it is the most common Zhuyin hurdle for ages 4–7, and being slow at first is completely normal. The approach that works is direct blending: say each sound clearly and separately, then connect them a little faster each time (ㄅ… ㄚ… ㄅㄚ), using a clap or a rhythm to mark the join. Master two-part blends before three-part ones, and add the four tones only after the base syllable is comfortable (ㄅㄚ → ㄅㄚˊ ㄅㄚˇ ㄅㄚˋ). Pairing each blended syllable with a familiar word (ㄅㄚ → 爸, ㄇㄚ → 媽) makes it stick. {name}'s syllable-blending mode (Sound Train) is built for exactly this step — it models the initial-plus-final join with audio and animation, so a child hears the blend and not just the separate symbols — alongside symbol recognition, stroke tracing and four-tone practice, for ages 4–7, pay-once, no ads, on-device.",
+  "bullets": [
+   "Recognising symbols and blending them (拼讀) are separate skills — knowing all 37 doesn't mean a child can blend yet",
+   "Blending is the most common Zhuyin hurdle at ages 4–7; being slow at first is normal, not a red flag",
+   "Use direct blending: say each sound separately, then join a little faster each time (ㄅ… ㄚ… ㄅㄚ)",
+   "Master two-part blends (聲母+韻母) before three-part (聲母+介音+韻母)",
+   "Add the four tones only after the base syllable is comfortable",
+   "Anchor each blend to a familiar word (ㄅㄚ → 爸, ㄇㄚ → 媽) so it sticks"
+  ],
+  "faq": [
+   {
+    "q": "My child knows every symbol but freezes when blending — is something wrong?",
+    "a": "No. Recognising symbols and blending them into a syllable are different skills, and the blending step (拼讀) is the classic sticking point for 4–7-year-olds. Short daily practice with the say-then-join method usually gets it flowing within a few weeks."
+   },
+   {
+    "q": "What is the difference between two-part and three-part blends?",
+    "a": "Two-part is an initial + final (ㄅ + ㄚ → ㄅㄚ). Three-part adds a medial ㄧ/ㄨ/ㄩ in the middle (ㄐ + ㄧ + ㄣ → ㄐㄧㄣ). Get two-part blends solid first, then introduce three-part — think of the medial as a bridge connecting the two ends."
+   },
+   {
+    "q": "Should I add tones while we are still learning to blend?",
+    "a": "Blend the base syllable first, then layer the four tones once it is comfortable (ㄅㄚ → ㄅㄚˊ ㄅㄚˇ ㄅㄚˋ). Trying to do both at once tends to overwhelm. {name}'s Sound Train mode blends first and practises tones separately, which mirrors this order."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
   "kind": "faq",
   "query": "Should I teach my child Bopomofo or Pinyin first?",
   "match": [

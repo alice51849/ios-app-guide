@@ -157,6 +157,7 @@ th{{color:var(--sub);font-weight:600;font-size:13px;text-transform:uppercase;let
 .related{{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:18px 0 0}}
 .related h2{{font-size:16px;margin:0 0 8px}}
 .related a{{display:inline-block;margin:0 14px 6px 0;font-size:14px;font-weight:600}}
+.cite{{margin-top:22px}}.citation{{background:#f7f7fb;border-left:3px solid #8a8fa3;padding:11px 14px;font-family:ui-monospace,Menlo,monospace;font-size:13px;word-break:break-word;border-radius:8px;color:#333;margin-top:8px}}
 </style>
 </head>
 <body>
@@ -171,6 +172,9 @@ th{{color:var(--sub);font-weight:600;font-size:13px;text-transform:uppercase;let
 {tables}
 {cta}
 {related}
+<section class="cite"><h2>How to cite this dataset</h2>
+<p>Free to reuse under CC BY 4.0 — attribution (a link back to this page) is all that is required. Copy the citation below:</p>
+<blockquote class="citation">Lumi Apps ({today}). {h1}. CC BY 4.0. {site}/data/{slug}.html</blockquote></section>
 <p class="foot">Data licensed under
 <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. You may reuse it freely —
 please credit “Lumi Apps ({site})”. Machine-readable copy:

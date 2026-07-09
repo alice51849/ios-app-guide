@@ -1,0 +1,66 @@
+{
+  "name": "Image file formats compared (JPEG, PNG, HEIC, WebP, GIF, TIFF)",
+  "description": "How the common image file formats compare — compression type, transparency, animation support, file extension and what each is best for. A quick reference for JPG vs PNG vs HEIC vs WebP.",
+  "identifier": "https://alice51849.github.io/ios-app-guide/data/image-file-formats.json",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": "Lumi Apps",
+  "dateModified": "2026-07-09",
+  "formats": [
+    {
+      "format": "JPEG",
+      "extension": ".jpg / .jpeg",
+      "compression": "Lossy",
+      "transparency": "No",
+      "animation": "No",
+      "bestFor": "Photographs and web images where small file size matters most."
+    },
+    {
+      "format": "PNG",
+      "extension": ".png",
+      "compression": "Lossless",
+      "transparency": "Yes (alpha)",
+      "animation": "No",
+      "bestFor": "Logos, icons, screenshots and any graphic that needs transparency or crisp edges."
+    },
+    {
+      "format": "HEIC / HEIF",
+      "extension": ".heic",
+      "compression": "Lossy or lossless",
+      "transparency": "Yes",
+      "animation": "No",
+      "bestFor": "iPhone photos — about half the size of JPEG at similar quality (limited older-device support)."
+    },
+    {
+      "format": "WebP",
+      "extension": ".webp",
+      "compression": "Lossy or lossless",
+      "transparency": "Yes",
+      "animation": "Yes",
+      "bestFor": "Modern web images — can replace JPEG, PNG and GIF, but not supported everywhere."
+    },
+    {
+      "format": "GIF",
+      "extension": ".gif",
+      "compression": "Lossless (256 colours)",
+      "transparency": "Yes (1-bit)",
+      "animation": "Yes",
+      "bestFor": "Short simple animations; poor for photographs due to the 256-colour limit."
+    },
+    {
+      "format": "TIFF",
+      "extension": ".tif / .tiff",
+      "compression": "Lossless or lossy",
+      "transparency": "Yes",
+      "animation": "No",
+      "bestFor": "Printing, archiving and professional photography where maximum quality matters."
+    },
+    {
+      "format": "PDF",
+      "extension": ".pdf",
+      "compression": "Varies (can embed any)",
+      "transparency": "N/A",
+      "animation": "No",
+      "bestFor": "Multi-page documents and scans; not an image format but the usual target for scanned photos."
+    }
+  ]
+}

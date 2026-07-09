@@ -1002,6 +1002,97 @@ def build_resolutions_page():
     return slug
 
 
+# ── Common image file formats. (name, ext, compression, transparency, animation, best_for)
+IMAGE_FORMATS = [
+    ("JPEG", ".jpg / .jpeg", "Lossy", "No", "No",
+     "Photographs and web images where small file size matters most."),
+    ("PNG", ".png", "Lossless", "Yes (alpha)", "No",
+     "Logos, icons, screenshots and any graphic that needs transparency or crisp edges."),
+    ("HEIC / HEIF", ".heic", "Lossy or lossless", "Yes", "No",
+     "iPhone photos — about half the size of JPEG at similar quality (limited older-device support)."),
+    ("WebP", ".webp", "Lossy or lossless", "Yes", "Yes",
+     "Modern web images — can replace JPEG, PNG and GIF, but not supported everywhere."),
+    ("GIF", ".gif", "Lossless (256 colours)", "Yes (1-bit)", "Yes",
+     "Short simple animations; poor for photographs due to the 256-colour limit."),
+    ("TIFF", ".tif / .tiff", "Lossless or lossy", "Yes", "No",
+     "Printing, archiving and professional photography where maximum quality matters."),
+    ("PDF", ".pdf", "Varies (can embed any)", "N/A", "No",
+     "Multi-page documents and scans; not an image format but the usual target for scanned photos."),
+]
+
+
+def formats_json():
+    return {
+        "name": "Image file formats compared (JPEG, PNG, HEIC, WebP, GIF, TIFF)",
+        "description": ("How the common image file formats compare — compression type, "
+                        "transparency, animation support, file extension and what each is best "
+                        "for. A quick reference for JPG vs PNG vs HEIC vs WebP."),
+        "identifier": f"{SITE}/data/image-file-formats.json",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "creator": "Lumi Apps",
+        "dateModified": TODAY,
+        "formats": [{"format": n, "extension": ext, "compression": comp,
+                     "transparency": tr, "animation": an, "bestFor": best}
+                    for n, ext, comp, tr, an, best in IMAGE_FORMATS],
+    }
+
+
+def build_formats_page():
+    slug = "image-file-formats"
+    title = "Image File Formats Compared — JPG vs PNG vs HEIC vs WebP | Open Data"
+    h1 = "Image file formats compared"
+    desc = ("JPG vs PNG vs HEIC vs WebP vs GIF vs TIFF: compression, transparency, animation and "
+            "what each format is best for. Free open data (CC BY 4.0).")
+    lead = ("Which image format should you use? Here is how JPEG, PNG, HEIC, WebP, GIF and TIFF "
+            "compare on compression, transparency and animation — a single citable reference.")
+    rows = ""
+    for n, ext, comp, tr, an, best in IMAGE_FORMATS:
+        rows += (f'<tr><td><strong>{html.escape(n)}</strong><br><span class="py">{html.escape(ext)}</span></td>'
+                 f'<td class="nw">{html.escape(comp)}</td>'
+                 f'<td class="nw">{html.escape(tr)}</td>'
+                 f'<td class="nw">{html.escape(an)}</td>'
+                 f'<td>{html.escape(best)}</td></tr>')
+    tables = ('<div class="card"><table>'
+              '<tr><th>Format</th><th>Compression</th><th>Transparency</th><th>Animation</th>'
+              '<th>Best for</th></tr>'
+              f'{rows}</table>'
+              '<p class="foot">Rule of thumb: JPEG for photos, PNG for graphics/transparency, '
+              'HEIC for iPhone storage, WebP for modern web, TIFF for print/archive. Converting '
+              'between formats re-compresses the image \u2014 keep an original if you can.</p></div>')
+    dj = formats_json()
+    schema = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "Dataset", "name": dj["name"], "description": dj["description"],
+        "url": f"{SITE}/data/{slug}.html", "identifier": dj["identifier"],
+        "license": dj["license"], "creator": {"@type": "Organization", "name": "Lumi Apps"},
+        "dateModified": dj["dateModified"],
+        "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json",
+                          "contentUrl": dj["identifier"]}],
+        "keywords": ["image formats", "JPG vs PNG", "HEIC", "WebP", "GIF", "TIFF", "JPEG",
+                     "transparency", "lossless", "file format"],
+    }, ensure_ascii=False)
+    pills = ('<span class="pill">JPEG · PNG · HEIC · WebP · GIF · TIFF</span>')
+    cta = ('<h2>Working with photos on your iPhone?</h2>\n'
+           '<p>Whatever the format, a blurry or low-resolution photo is still blurry. '
+           '<strong>Unblurry</strong> sharpens and upscales JPEG, PNG, HEIC and WebP photos '
+           'entirely on-device \u2014 a one-time purchase, no ads, no subscription.</p>\n'
+           f'<a class="cta" href="{UNBLURRY_APP}">Get Unblurry on the App Store →</a>\n'
+           f'<p style="font-size:14px"><a href="{SITE}/data/image-video-resolutions.html">'
+           'Image &amp; video resolutions →</a> &nbsp;·&nbsp; '
+           f'<a href="{SITE}/data/">More open datasets →</a></p>')
+    page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
+                       lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
+                       crumb="Image file formats", pills=pills, tables=tables, schema=schema,
+                       cta=cta, related=related_block([
+                           ("Image &amp; video resolutions", "data/image-video-resolutions.html"),
+                           ("iPhone photo tools", "photo-tools.html")]))
+    os.makedirs(DATA, exist_ok=True)
+    open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
+        json.dumps(dj, ensure_ascii=False, indent=2))
+    open(os.path.join(DATA, f"{slug}.html"), "w", encoding="utf-8").write(page)
+    return slug
+
+
 INDEX = """<!doctype html>
 <html lang="en">
 <head>
@@ -1116,6 +1207,7 @@ def main():
     xslug = build_toeic_page()
     yslug = build_paper_page()
     zslug = build_resolutions_page()
+    fslug = build_formats_page()
     datasets = [{
         "slug": slug,
         "name": "Zhuyin (Bopomofo): all 37 symbols",
@@ -1169,6 +1261,12 @@ def main():
         "name": "Image & video resolutions (720p, 1080p, 4K, 8K)",
         "blurb": "360p to 8K with exact pixel dimensions, aspect ratio and megapixels. Answers "
                  "'what resolution is 4K?' and '1080p vs 1440p'. JSON download included.",
+        "tag": "Reference · CC BY 4.0",
+    }, {
+        "slug": fslug,
+        "name": "Image file formats compared (JPG, PNG, HEIC, WebP…)",
+        "blurb": "JPEG/PNG/HEIC/WebP/GIF/TIFF/PDF on compression, transparency, animation and "
+                 "best use. Answers 'JPG vs PNG' and 'what is HEIC'. JSON download included.",
         "tag": "Reference · CC BY 4.0",
     }]
     build_index(datasets)

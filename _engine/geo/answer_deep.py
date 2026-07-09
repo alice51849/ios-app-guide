@@ -377,6 +377,43 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
  },
  {
   "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "My child learns the Bopomofo symbols but keeps forgetting them — how do I help?",
+  "match": [
+   "learns the bopomofo symbols but keeps forgetting",
+   "child keeps forgetting the bopomofo symbols",
+   "forgets the bopomofo symbols",
+   "can't remember the bopomofo symbols",
+   "child forgets zhuyin",
+   "keeps forgetting the symbols"
+  ],
+  "lead": "Forgetting is normal — young memory fades without revisiting. The fix isn't longer study but short, spaced, playful review: a few minutes several times a week, mixing a little new with lots of old.",
+  "detail": "A 4–7-year-old will learn a Zhuyin symbol and forget it within days unless it comes back — that is how young memory works, not a sign of a problem. The evidence-based fix is spaced repetition plus microlearning: revisit each symbol the same day, the next day, about a week later, and again a few weeks on, in short 5–10 minute bursts rather than one long session. Frequency beats duration — three tiny reviews across a day stick better than one long drill. Introduce only one or two new symbols at a time and spend most of each session revisiting old ones, so the child feels success, not overload. Make the review playful: matching a symbol to an object (ㄅ with 杯, ㄈ with 蜂), hiding symbol cards for a treasure hunt, singing the symbols, or letting the child teach a toy. Tie symbols to everyday life — point at a cup and say ㄅ — and praise progress without rushing. {name} is built around exactly this rhythm: short, game-based sessions that resurface earlier symbols across four modes (recognition, tracing, four-tone practice and syllable blending), with accurate audio and on-device progress, for ages 4–7, pay-once, no ads — so the spaced revisiting happens naturally instead of feeling like drilling.",
+  "bullets": [
+   "Forgetting is normal at 4–7 — young memory fades without revisiting; it is not a red flag",
+   "Use spaced repetition: revisit same day, next day, about a week, about a month, in 5–10 minute bursts",
+   "Frequency beats duration — several tiny reviews a day stick better than one long session",
+   "Add only one or two new symbols at a time; spend most of each session on old ones",
+   "Make review playful: object matching (ㄅ/杯), card treasure hunts, songs, teach-the-toy",
+   "Tie symbols to daily life and praise progress — no rushing or blaming"
+  ],
+  "faq": [
+   {
+    "q": "Is it normal for my child to forget symbols they just learned?",
+    "a": "Completely. Young memory fades quickly unless a symbol is revisited, so forgetting is expected, not a problem. The fix is short, spaced reviews — the same day, the next day, a week later — rather than trying to learn more at once."
+   },
+   {
+    "q": "How should I split learning new symbols versus reviewing old ones?",
+    "a": "Lean heavily on review. Introduce just one or two new symbols in a session and spend most of the time resurfacing ones already seen. That mix keeps the child succeeding instead of feeling overwhelmed, which is what makes symbols stick."
+   },
+   {
+    "q": "How long should each practice session be?",
+    "a": "Short — five to ten minutes, a few times across the day beats one long sitting. {name}'s game-based sessions are designed to be brief and to resurface earlier symbols automatically, so the spaced repetition happens without it feeling like drilling."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
   "kind": "faq",
   "query": "Should I teach my child Bopomofo or Pinyin first?",
   "match": [

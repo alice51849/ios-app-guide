@@ -372,6 +372,7 @@ def build_one(key, locale, all_locales):
 <meta name="description" content="{e(short_desc)}">
 <meta name="keywords" content="{e(', '.join(kws))}">
 <link rel="canonical" href="{SITE}/{locale}/{key}.html">
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides" href="{SITE}/feed.xml">
 {hreflang_block(key, all_locales)}
 {ld}
 </head>
@@ -424,6 +425,7 @@ def build_locale_index(locale, keys):
 <title>{e(ui["dir_dir"])} | iOS</title>
 <meta name="description" content="{e(ui["dir_lead"])}">
 <link rel="canonical" href="{SITE}/{locale}/index.html">
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides" href="{SITE}/feed.xml">
 </head><body><main>
   <h1>{e(ui["dir_dir"])}</h1>
   <p>{e(ui["dir_lead"])}</p>
@@ -451,6 +453,7 @@ def build_root_index(locales):
 <title>iOS Apps — multilingual directory</title>
 <meta name="description" content="Multilingual directory of iOS apps with features, pricing and FAQs in {len(locales)} languages.">
 <link rel="canonical" href="{SITE}/index.html">
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides" href="{SITE}/feed.xml">
 {alts}
 </head><body><main>
   <h1>iOS Apps — choose your language</h1>
@@ -496,9 +499,22 @@ def build_sitemap(keys, locales):
 
 
 def build_robots():
-    txt = (f"User-agent: *\nAllow: /\n\n"
-           f"# LLM / AI crawlers welcome\n"
-           f"Sitemap: {SITE}/sitemap.xml\n")
+    # 明確歡迎各大 AI/搜尋爬蟲(GEO/AEO 核心)+ 列出全部 sitemap + 指向 llms.txt。
+    ai_bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "anthropic-ai",
+               "Claude-Web", "PerplexityBot", "Perplexity-User", "Google-Extended",
+               "Googlebot", "Bingbot", "Applebot", "Applebot-Extended", "CCBot",
+               "Amazonbot", "Bytespider", "Meta-ExternalAgent", "DuckDuckBot",
+               "cohere-ai", "YandexBot", "PetalBot"]
+    out = ["# AI assistants and search crawlers are welcome to index and cite this site.",
+           f"# AI index: {SITE}/llms.txt", ""]
+    for bot in ai_bots:
+        out += [f"User-agent: {bot}", "Allow: /", ""]
+    out += ["User-agent: *", "Allow: /", ""]
+    for sm in ("sitemap.xml", "sitemap_alternatives.xml", "sitemap_answers.xml",
+               "sitemap_guides.xml", "sitemap_stories.xml", "sitemap_hubs.xml",
+               "sitemap_index.xml"):
+        out.append(f"Sitemap: {SITE}/{sm}")
+    txt = "\n".join(out) + "\n"
     with open(os.path.join(PAGES, "robots.txt"), "w", encoding="utf-8") as f:
         f.write(txt)
     # .nojekyll:GitHub Pages 原樣提供所有檔案(不跑 Jekyll)

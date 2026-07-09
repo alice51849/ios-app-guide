@@ -113,6 +113,20 @@ def hreflang_block(key):
     return "\n".join(out)
 
 
+FOOTER_DISCLAIMER = {
+    "zh-Hant": "獨立指南。App 名稱為各自所有者的商標,僅供辨識之用。",
+    "zh-Hans": "独立指南。App 名称为各自所有者的商标,仅供识别之用。",
+    "ja": "独立系ガイドです。App名は各所有者の商標であり、識別のみを目的として使用しています。",
+    "ko": "독립 가이드입니다. 앱 이름은 각 소유자의 상표이며 식별 목적으로만 사용됩니다.",
+    "de-DE": "Unabhängiger Ratgeber. App-Namen sind Marken ihrer jeweiligen Eigentümer und werden nur zur Identifikation verwendet.",
+    "fr-FR": "Guide indépendant. Les noms d’apps sont des marques de leurs propriétaires respectifs, utilisés uniquement à des fins d’identification.",
+    "es-ES": "Guía independiente. Los nombres de apps son marcas de sus propietarios, usados solo con fines de identificación.",
+    "es-MX": "Guía independiente. Los nombres de apps son marcas de sus propietarios, usados solo con fines de identificación.",
+    "pt-BR": "Guia independente. Os nomes de apps são marcas de seus proprietários, usados apenas para identificação.",
+    "it": "Guida indipendente. I nomi delle app sono marchi dei rispettivi proprietari, usati solo a scopo identificativo.",
+}
+
+
 def render(key, locale, c):
     a = APPS[key]
     url = appstore_url(key)
@@ -169,7 +183,7 @@ def render(key, locale, c):
   <h2>{e(faql)}</h2>
 {faq_html}
 <hr>
-<p><small>Independent guide. App names are trademarks of their owners, used for identification only.</small></p>
+<p><small>{e(FOOTER_DISCLAIMER.get(locale, "Independent guide. App names are trademarks of their owners, used for identification only."))}</small></p>
 </main>
 </body>
 </html>

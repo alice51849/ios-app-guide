@@ -15,6 +15,15 @@ SITE = "https://alice51849.github.io/ios-app-guide"
 MAXN = 4
 STOP = set("a an the and or of to in for on at by as it this that these those you your with how do i my is are can app apps for iphone ios free best what when should choose vs".split())
 SEC_RE = re.compile(r'<section class="wrap related-answers">.*?</section>', re.S)
+# Localized "Related answers" heading per locale (fallback to English)
+HEADINGS = {
+    "": "Related answers", "zh-Hant": "\u5ef6\u4f38\u95b1\u8b80", "zh-Hans": "\u5ef6\u4f38\u9605\u8bfb",
+    "ja": "\u95a2\u9023\u3059\u308b\u56de\u7b54", "ko": "\uad00\ub828 \ub2f5\ubcc0",
+    "es-ES": "Respuestas relacionadas", "es-MX": "Respuestas relacionadas",
+    "de-DE": "Verwandte Antworten", "fr-FR": "R\u00e9ponses associ\u00e9es",
+    "pt-BR": "Respostas relacionadas", "pt-PT": "Respostas relacionadas",
+    "it": "Risposte correlate", "ru": "\u041f\u043e\u0445\u043e\u0436\u0438\u0435 \u043e\u0442\u0432\u0435\u0442\u044b",
+}
 
 def appid(h):
     m = re.search(r'apps\.apple\.com/app/id(\d+)', h)
@@ -29,8 +38,15 @@ def tokens(slug):
 
 def main():
     dry = "--dry-run" in sys.argv
+    locale = ""
+    for i, a in enumerate(sys.argv):
+        if a == "--locale" and i + 1 < len(sys.argv):
+            locale = sys.argv[i + 1]
+    ans_dir = os.path.join(ROOT, locale, "answers") if locale else ANS
+    url_base = f"{SITE}/{locale}/answers" if locale else f"{SITE}/answers"
+    heading = HEADINGS.get(locale, HEADINGS[""])
     pages = {}
-    for f in sorted(glob.glob(os.path.join(ANS, "*.html"))):
+    for f in sorted(glob.glob(os.path.join(ans_dir, "*.html"))):
         slug = os.path.basename(f)[:-5]
         if slug == "index":
             continue
@@ -38,7 +54,7 @@ def main():
         a = appid(h)
         if not a:
             continue
-        pages[slug] = {"app": a, "h1": get_h1(slug) or slug, "tok": tokens(slug), "f": f, "html": h}
+        pages[slug] = {"app": a, "h1": get_h1(h) or slug, "tok": tokens(slug), "f": f, "html": h}
     # group by app
     by_app = {}
     for slug, p in pages.items():
@@ -52,10 +68,10 @@ def main():
         if not top:
             continue
         items = "".join(
-            f'<li><a href="{SITE}/answers/{s}.html">{html.escape(pages[s]["h1"])}</a></li>'
+            f'<li><a href="{url_base}/{s}.html">{html.escape(pages[s]["h1"])}</a></li>'
             for s in top
         )
-        section = f'<section class="wrap related-answers"><h2>Related answers</h2><ul>{items}</ul></section>'
+        section = f'<section class="wrap related-answers"><h2>{html.escape(heading)}</h2><ul>{items}</ul></section>'
         h = p["html"]
         h2 = SEC_RE.sub("", h)  # remove existing (idempotent)
         if "</main>" not in h2:
@@ -67,7 +83,7 @@ def main():
                 print(f"[{slug}] app={p['app']} -> related: {top}")
             if not dry:
                 open(p["f"], "w", encoding="utf-8").write(h2)
-    print(f"{'DRY ' if dry else ''}changed={changed} / {len(pages)} pages")
+    print(f"{'DRY ' if dry else ''}locale={locale or 'en'} changed={changed} / {len(pages)} pages")
 
 if __name__ == "__main__":
     main()

@@ -68,6 +68,10 @@ jobs:
         run: |
           cd _engine/geo
           python3 fix_en_hreflang.py || echo "fix_en_hreflang exited $?"
+      - name: Add related-answers internal links (EN)
+        run: |
+          cd _engine/geo
+          python3 add_related_answers.py || echo "add_related_answers exited $?"
       - name: Unlink site dir
         run: rm -f _engine/geo/pages
       - name: Commit localized pages if any

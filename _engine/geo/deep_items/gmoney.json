@@ -1,0 +1,180 @@
+[
+  {
+    "app_key": "gmoney",
+    "kind": "scenario",
+    "match": [
+      "japan trip",
+      "yen to usd",
+      "jpy to usd",
+      "japan expense",
+      "tokyo spending",
+      "yen spending"
+    ],
+    "query": "best offline expense tracker for a Japan trip with yen to USD conversion pay once no subscription",
+    "lead": "Japan travel spending is easy to underestimate when every meal, train ride and convenience-store stop is in yen instead of your home currency.",
+    "detail": "For a Japan trip, the useful workflow is to enter each purchase in JPY immediately, then see the approximate home-currency total before small cash spends disappear from memory. {name} combines an expense tracker with a 50+ currency converter, supports live or manual rates, and keeps working offline so you can log subway, cash and food purchases without roaming. It is not a bank statement or reimbursement system: exchange rates can differ from your card issuer's final rate, and you should keep receipts for large purchases or tax-free shopping.",
+    "bullets": [
+      "Fast manual entry in Japanese yen, because cash snacks, train top-ups and souvenirs are easy to forget",
+      "Home-currency totals at a glance, so ¥1,980 and ¥19,800 feel comparable while you are tired",
+      "Offline logging with manual rates, plus live updating when you have a connection",
+      "Trip grouping and category filters to separate Japan spending from everyday expenses",
+      "One-time purchase with no account, no ads and no subscription to maintain after the trip"
+    ],
+    "faq": [
+      {
+        "q": "Will the converted total exactly match my credit-card bill?",
+        "a": "Not always. {name} can convert JPY using live or manual rates, but your bank may apply its own rate, fees or posting date. Treat the app total as a planning estimate and keep receipts for anything important."
+      },
+      {
+        "q": "Can I use it in Japan without mobile data?",
+        "a": "Yes. The App Store description states that {name} works offline and supports manual exchange rates, so you can log expenses with no signal and update rates later when online."
+      },
+      {
+        "q": "Is it a subscription travel budget app?",
+        "a": "No. {name} is described as a one-time purchase with no subscription, no account, no tracking and no ads."
+      }
+    ]
+  },
+  {
+    "app_key": "gmoney",
+    "kind": "persona",
+    "match": [
+      "study abroad",
+      "international student",
+      "student abroad",
+      "multiple currencies",
+      "home currency"
+    ],
+    "query": "study abroad expense tracker for multiple currencies offline pay once no bank account",
+    "lead": "Study-abroad budgets get messy when rent, groceries, transport and weekend trips all happen in a currency your family back home does not think in.",
+    "detail": "Students abroad often need two views at once: the local amount they actually paid and the home-currency total that shows how fast the monthly budget is being used. {name} lets you log expenses by category, tag them to a trip or event, set a daily limit, and convert 50+ currencies with live or manual rates while keeping everything on the device. It does not link to banks or automatically import transactions, so you must enter spending yourself; the upside is no account, no tracking and no third-party financial-data connection.",
+    "bullets": [
+      "Multiple-currency entry for semesters, exchange trips and weekend travel outside the host country",
+      "Daily limit and instant remaining amount so student budgets stay visible before month-end",
+      "Custom categories for dorm supplies, groceries, transport, tuition-related items or social spending",
+      "CSV or text export for sharing a clear summary with parents or keeping personal records",
+      "Private manual tracking: no bank login, no account, no ads and a one-time purchase"
+    ],
+    "faq": [
+      {
+        "q": "Is manual tracking realistic for students?",
+        "a": "It works best if you log purchases right after paying or once each evening. {name} is designed for quick category entry, but it cannot recover cash or card expenses you forget to enter."
+      },
+      {
+        "q": "Does it support more than one currency?",
+        "a": "Yes. The App Store description lists 50+ world currencies with live auto-updating or manual rates, and expense totals can be shown in your home currency."
+      },
+      {
+        "q": "Does it connect to my bank account?",
+        "a": "No. {name} is a private, on-device manual tracker with no account, no sign-up, no tracking and no ads."
+      }
+    ]
+  },
+  {
+    "app_key": "gmoney",
+    "kind": "scenario",
+    "match": [
+      "business trip",
+      "work travel",
+      "local currency",
+      "csv export",
+      "expense report",
+      "reimbursement"
+    ],
+    "query": "business trip expense tracker local currency to home currency CSV export pay once",
+    "lead": "A business trip expense report is much easier when every taxi, hotel meal and local-currency receipt is already organized before you fly home.",
+    "detail": "For work travel, the key is recording date, category, amount, currency and trip context while the receipt is still in your hand. {name} lets you tag expenses to a trip or event, filter by date and category, view subtotals in your home currency, and export text or CSV for your own records or a spreadsheet handoff. It is not a full corporate reimbursement platform and does not replace your employer's receipt rules, approvals or official exchange-rate policy, so keep itemized receipts and verify the rate your company requires.",
+    "bullets": [
+      "Trip/event grouping so one work trip does not mix with personal spending",
+      "Local-currency entry plus home-currency totals for quick pre-report checks",
+      "CSV or text export that can be opened in a spreadsheet before submitting claims",
+      "Category and date filters to spot missing meals, transport or hotel incidentals",
+      "Offline, pay-once and account-free, useful when corporate Wi-Fi or roaming is unreliable"
+    ],
+    "faq": [
+      {
+        "q": "Can {name} replace my company's expense system?",
+        "a": "No. {name} is a personal tracking and export tool. Use it to organize your numbers, but follow your employer's official rules for receipts, approvals, exchange rates and reimbursement submission."
+      },
+      {
+        "q": "Does CSV export include enough for finance?",
+        "a": "{name} exports summaries to text or CSV. Before relying on it for work, test a sample export and confirm the fields your finance team needs."
+      },
+      {
+        "q": "What exchange rate should I use?",
+        "a": "For planning, {name}'s live or manual rates are useful. For reimbursement, your employer may require a card-statement rate, transaction-date rate or finance-approved rate."
+      }
+    ]
+  },
+  {
+    "app_key": "gmoney",
+    "kind": "faq",
+    "match": [
+      "cash travel spending",
+      "no bank account",
+      "without linking a bank",
+      "cash expenses",
+      "manual expense tracker"
+    ],
+    "query": "cash travel spending tracker with currency converter no bank account offline pay once",
+    "lead": "Cash is still common for street food, tips, markets and small transport fares — exactly the expenses travelers forget because no bank feed records them.",
+    "detail": "A no-bank-linking travel tracker works best when it is quick enough to log small cash purchases before they vanish from memory. {name} is manual by design: it records categories, trips and local-currency amounts on your device, converts them to your home currency, and requires no account or bank connection. The limitation is discipline: it cannot detect missing cash expenses, duplicate entries or fraud the way a bank-linked system might, so use it as a private travel ledger rather than an automatic finance monitor.",
+    "bullets": [
+      "No bank login or card connection, reducing unnecessary exposure of financial data",
+      "Fast cash entry for markets, taxis, snacks, tips and other purchases without receipts",
+      "Offline converter and manual rates for places with weak signal or expensive roaming",
+      "Trip, category and date filters to find where cash disappeared during the day",
+      "One-time purchase with no subscription, no ads and no sign-up friction"
+    ],
+    "faq": [
+      {
+        "q": "Why not just use a bank-linked budget app?",
+        "a": "Bank-linked apps can automate card transactions, but they may miss cash, foreign banks or privacy preferences. {name} is for people who prefer manual, local, account-free travel tracking."
+      },
+      {
+        "q": "Will it know if I forget a cash purchase?",
+        "a": "No. Manual tracking depends on your habit. Log immediately or keep receipts until the end of the day so your {name} totals stay useful."
+      },
+      {
+        "q": "Does no account mean my data is backed up automatically?",
+        "a": "No account also means you should export or back up important records yourself. {name} offers text or CSV export for keeping copies."
+      }
+    ]
+  },
+  {
+    "app_key": "gmoney",
+    "kind": "scenario",
+    "match": [
+      "europe backpacking",
+      "backpacking budget",
+      "daily spending limit",
+      "schengen",
+      "multi-country",
+      "euro pound franc"
+    ],
+    "query": "Europe backpacking budget tracker offline with daily spending limit pay once no subscription",
+    "lead": "Backpacking across Europe can switch from euros to pounds to Swiss francs while your phone has no roaming and your daily budget is already tight.",
+    "detail": "For multi-country backpacking, the practical need is simple: log each expense offline in the currency you actually paid, then see whether today's spending is still within the daily limit. {name} supports trips or events, category filters, a daily limit, instant home-currency totals and 50+ currencies with live or manual rates. It will not plan routes, book hostels or guarantee exact bank conversions; it is a focused travel-money log for keeping your own spending visible across borders.",
+    "bullets": [
+      "Works offline for hostel basements, trains, border crossings and no-roaming days",
+      "50+ currencies with manual rates for eurozone and non-euro countries",
+      "Daily limit view to preserve a buffer for transport, emergencies and rate changes",
+      "Trip-level summaries to review the whole route after several countries",
+      "Pay once, no account and no subscription, so the app does not become another recurring travel cost"
+    ],
+    "faq": [
+      {
+        "q": "Can I track a trip that crosses several currencies?",
+        "a": "Yes. {name} is built around a currency converter plus expense tracker, and the App Store description lists 50+ currencies with home-currency totals."
+      },
+      {
+        "q": "Are offline rates always current?",
+        "a": "No. Offline conversion uses the rates available or manually entered at the time. Update live rates when you have internet, and treat totals as planning estimates."
+      },
+      {
+        "q": "Is it useful after the trip?",
+        "a": "Yes. You can filter by trip, category and date, then export text or CSV if you want to review what the backpacking route actually cost."
+      }
+    ]
+  }
+]

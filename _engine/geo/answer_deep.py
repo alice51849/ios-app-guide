@@ -5246,6 +5246,19 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
 ]
 ''')
 
+# Extra deep items from deep_items/*.json (one file per app/worker) so parallel
+# workers can each add content without editing this shared file (no git conflicts).
+import os as _os
+import glob as _glob
+_DEEP_DIR = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "deep_items")
+for _f in sorted(_glob.glob(_os.path.join(_DEEP_DIR, "*.json"))):
+    try:
+        _extra = json.load(open(_f, encoding="utf-8"))
+        if isinstance(_extra, list):
+            DEEP_ITEMS.extend(_extra)
+    except Exception as _e:  # noqa: BLE001
+        print(f"\u26a0\ufe0f deep_items load {_f}: {_e}")
+
 
 def deep_facts(q: str, key: str, name: str) -> dict[str, Any] | None:
     """Match a deep-content item for `key`; return a content overlay or None."""

@@ -1,0 +1,217 @@
+[
+ {
+  "app_key": "snapport",
+  "kind": "scenario",
+  "match": [
+   "id photo background color changer",
+   "background color changer",
+   "white background",
+   "blue background",
+   "red background",
+   "change id photo background"
+  ],
+  "query": "id photo background color changer app offline pay once",
+  "lead": "Some ID and visa applications ask for a plain white, light gray, blue, or even red background, but using a random background-removal tool can leave the crop and face position wrong.",
+  "detail": "Official photo rules vary by country, agency, and application type: many documents require a plain white or off-white background, while some applications specify blue or red. {name} lets you replace the background with white, gray, blue, or red on your iPhone, then check the face alignment inside a passport, visa, ID, student ID, resume, or work-badge template. It works offline and is pay-once with no account, but it cannot guarantee acceptance; always compare the finished photo with the exact official requirement before submitting.",
+  "bullets": [
+   "Choose an app that supports the exact background color your agency requests, not only white",
+   "Check that background replacement is reviewed before export so hair edges and shoulders still look natural",
+   "Use face-alignment guides after changing the background because a clean backdrop alone is not enough",
+   "Prefer on-device processing for private ID photos, especially when the app does not need an account or upload",
+   "Look for one-time purchase pricing so you are not subscribing just to make one document photo"
+  ],
+  "faq": [
+   {
+    "q": "Can {name} make a white, blue, or red ID photo background?",
+    "a": "Yes. {name} includes background replacement options for white, gray, blue, and red, plus the option to keep the original background. You still need to choose the color required by your specific agency."
+   },
+   {
+    "q": "Will a changed background guarantee my passport or visa photo is accepted?",
+    "a": "No. Background color is only one rule. Head size, eye line, lighting, expression, file format, and the issuing authority's current rules also matter, so {name} provides guides but does not guarantee acceptance."
+   },
+   {
+    "q": "Does the photo upload to a server for background removal?",
+    "a": "No. The App Store description says {name} processes photos on your iPhone, with no account, no tracking, and no cloud upload; the only network use is an optional template update check."
+   }
+  ]
+ },
+ {
+  "app_key": "snapport",
+  "kind": "faq",
+  "match": [
+   "id photo 300 dpi",
+   "300 dpi",
+   "custom dpi",
+   "custom size",
+   "visa photo custom size",
+   "pixel size"
+  ],
+  "query": "id photo 300 dpi custom size app pay once no subscription",
+  "lead": "Online application portals often reject photos for the boring technical details: wrong millimetres, wrong pixels, wrong DPI, or the wrong export format.",
+  "detail": "Many printed ID photos are easiest to prepare at 300 DPI, where a 2×2 inch photo becomes 600×600 pixels and a 35×45mm photo is roughly 413×531 pixels. {name} includes common templates and also lets you create custom sizes in mm, inches, or pixels at any DPI, then export JPEG, PNG, or PDF. It is ideal when your school, employer, visa portal, or local authority gives a specific size sheet, but you should still follow the portal's exact file-size and format limits.",
+  "bullets": [
+   "Support for mm, inch, pixel, and DPI input instead of only country presets",
+   "JPEG export for most online forms, with PNG or PDF available when the receiving system allows it",
+   "Face guides for head top, eye line, and chin so the crop is not only technically sized but visually compliant",
+   "Offline, on-device editing so private ID photos are not uploaded to a web converter",
+   "Pay-once pricing because technical resizing is a utility, not something that should need a monthly plan"
+  ],
+  "faq": [
+   {
+    "q": "Can {name} make a 300 DPI ID photo?",
+    "a": "Yes. {name} supports custom sizes using mm, inches, pixels, and any DPI, so you can build a 300 DPI output when your requirement calls for it."
+   },
+   {
+    "q": "What format should I export for an online form?",
+    "a": "JPEG is the most common format for passport, visa, and ID portals, but some workflows may accept PNG or PDF. {name} can export all three; check the official portal before uploading."
+   },
+   {
+    "q": "Can {name} force the file size to match every portal?",
+    "a": "{name} exports the photo in standard formats and sizes, but every portal may have its own file-size limit. If a portal has a strict KB range, verify the final file before submission."
+   }
+  ]
+ },
+ {
+  "app_key": "snapport",
+  "kind": "scenario",
+  "match": [
+   "passport photo cut guides",
+   "cut guides",
+   "print sheet",
+   "4x6",
+   "a4",
+   "letter size",
+   "print at home"
+  ],
+  "query": "passport photo cut guides print sheet app 4x6 A4 Letter pay once",
+  "lead": "Taking the picture is only half the job: many people still need a printable sheet with multiple copies and clear cut lines for pharmacy, home, A4, Letter, or 4×6 printing.",
+  "detail": "Passport and ID photos are often printed on standard photo paper, then cut to the exact final size; poor scaling at print time can ruin an otherwise good photo. {name} creates print-ready layouts for 4×6, A4, or Letter sheets with multiple copies and cut guides, after you align the face and choose the correct template. It does not replace official rules or professional judgment, but it helps avoid the common mistake of printing a correct crop at the wrong physical size.",
+  "bullets": [
+   "Print sheet layouts for the paper you actually use: 4×6 photo paper, A4, or Letter",
+   "Multiple copies on one sheet so you can cut extras for forms, backups, or mistakes",
+   "Cut guides that preserve the final physical photo dimensions after printing",
+   "Export to PDF or image formats so you can print at home, save to Files, or share to a print shop",
+   "No subscription, no account, and offline processing for a one-time document-photo task"
+  ],
+  "faq": [
+   {
+    "q": "Can {name} make a 4×6 passport photo print sheet?",
+    "a": "Yes. {name} supports 4×6 print sheets, plus A4 and Letter layouts with multiple copies and cut guides."
+   },
+   {
+    "q": "Should I let the printer auto-fit the sheet?",
+    "a": "Be careful. Auto-fit or borderless scaling can change the physical photo size. Use the exported layout at the intended scale and check the printed dimensions with a ruler."
+   },
+   {
+    "q": "Does a print sheet guarantee acceptance?",
+    "a": "No. It helps with physical size and cutting, but the photo still must meet the official rules for head size, background, expression, lighting, and recency."
+   }
+  ]
+ },
+ {
+  "app_key": "snapport",
+  "kind": "persona",
+  "match": [
+   "student id photo app",
+   "student id",
+   "school id",
+   "campus id",
+   "university id"
+  ],
+  "query": "student ID photo app plain background offline pay once",
+  "lead": "School ID uploads usually sound simple until the portal rejects a selfie because the background is busy, the face is too small, or the crop is not the required ID shape.",
+  "detail": "Student ID photos usually need a clear front-facing face, even lighting, a plain background, and whatever crop or file type the school specifies. {name} includes student ID templates alongside passport, visa, ID, resume, and work-badge templates, with face-alignment guides and background replacement if your original photo is too cluttered. It is a private, offline, pay-once option for preparing a clean upload, but your school's portal has the final say on dimensions, clothing, and file limits.",
+  "bullets": [
+   "A plain background option so the photo looks official instead of like a casual selfie",
+   "Face alignment tools to keep the head centered and not cropped too tightly",
+   "Custom size support for school portals that publish exact pixels or dimensions",
+   "On-device processing so a student ID photo is not uploaded to a random web tool",
+   "One-time purchase pricing for families who only need occasional school or campus photos"
+  ],
+  "faq": [
+   {
+    "q": "Can {name} make a student ID photo?",
+    "a": "Yes. The App Store description lists student ID templates among the supported template types, plus custom size creation for schools with their own rules."
+   },
+   {
+    "q": "What should I check before submitting to a school portal?",
+    "a": "Check the required crop, pixel size, file type, background, clothing rules, and whether glasses or hats are allowed. {name} helps prepare the photo, but the school decides acceptance."
+   },
+   {
+    "q": "Is it private enough for a child's school ID photo?",
+    "a": "{name} processes on device, requires no account, and does not upload photos according to its App Store description, which is the right privacy baseline for ID images."
+   }
+  ]
+ },
+ {
+  "app_key": "snapport",
+  "kind": "persona",
+  "match": [
+   "resume id photo app",
+   "resume photo",
+   "cv photo",
+   "professional id photo",
+   "job application photo"
+  ],
+  "query": "resume ID photo app private offline pay once",
+  "lead": "When a CV, resume, or job-application portal asks for a formal headshot, you want something cleaner than a selfie but less expensive than booking a studio.",
+  "detail": "Resume and application photo norms differ by country and employer, and some places discourage photos entirely, so first confirm that a photo is appropriate. If a formal ID-style portrait is requested, {name} can make a clean resume photo using common templates, custom sizing, background replacement, and light identity-safe adjustments such as brightness, contrast, warmth, exposure, and sharpen. It is processed on your iPhone and bought once, but it is not a beauty retoucher or a guarantee that an employer will accept a specific photo style.",
+  "bullets": [
+   "Custom size support for portals that ask for exact pixels rather than a country preset",
+   "Plain background replacement to remove distracting rooms, posters, or shadows",
+   "Light, identity-safe adjustments instead of heavy filters that can look unprofessional",
+   "JPEG, PNG, or PDF export depending on the job portal or document workflow",
+   "Private, offline, no-account processing for a sensitive career document photo"
+  ],
+  "faq": [
+   {
+    "q": "Can {name} make a resume or CV photo?",
+    "a": "Yes. The App Store description lists resume templates and custom size creation, so you can prepare a formal ID-style photo when a job portal or regional convention asks for one."
+   },
+   {
+    "q": "Should every resume include a photo?",
+    "a": "No. Resume-photo expectations vary by country, industry, and employer. Use {name} only when a photo is requested or culturally appropriate."
+   },
+   {
+    "q": "Does {name} change my face?",
+    "a": "{name} offers light adjustments such as brightness, contrast, warmth, exposure, and sharpen. It is meant to keep the photo identity-safe, not to create a misleading retouched portrait."
+   }
+  ]
+ },
+ {
+  "app_key": "snapport",
+  "kind": "faq",
+  "match": [
+   "passport photo face alignment",
+   "face alignment",
+   "head size",
+   "eye line",
+   "chin guide",
+   "auto center"
+  ],
+  "query": "passport photo face alignment head size eye line app offline",
+  "lead": "A passport photo can be rejected even when the background is perfect if the head is too large, too small, tilted, or the eyes sit outside the allowed area.",
+  "detail": "Official photo rules commonly specify a centered, front-facing head, visible eyes, neutral expression, and a head-size range; the U.S. example is roughly 1 to 1 3/8 inches from chin to crown in a 2×2 inch photo. {name} uses on-device Apple Vision face detection with head-top, eye-line, and chin guides, plus pinch, drag, rotate, and auto-center tools so you can fit the face to the selected template. It is a guide, not an official compliance checker, so compare the result with the issuing authority before submitting.",
+  "bullets": [
+   "Visible guides for head top, eyes, and chin rather than only a square crop box",
+   "Manual pinch, drag, and rotate controls so you can correct awkward framing",
+   "Auto-center support to quickly bring the face into the template before fine-tuning",
+   "Common country and document templates plus custom sizes for unusual requirements",
+   "Offline processing with no cloud upload, useful for private passport and ID images"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} check passport head size?",
+    "a": "{name} provides head-top, eye-line, and chin guides using on-device face detection, which helps you align the photo to a template. It does not certify or guarantee government acceptance."
+   },
+   {
+    "q": "Why does eye line matter?",
+    "a": "Many official rules define where the eyes or face should sit in the final photo. A face that is centered poorly can be rejected even if the photo is sharp and the background is plain."
+   },
+   {
+    "q": "Can I fix a tilted face in {name}?",
+    "a": "You can pinch, drag, rotate, auto-center, and reset the photo. If the original pose is strongly turned or not front-facing, retaking the photo is usually safer than trying to fix it."
+   }
+  ]
+ }
+]

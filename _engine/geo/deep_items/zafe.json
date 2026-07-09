@@ -1,0 +1,177 @@
+[
+ {
+  "app_key": "zafe",
+  "kind": "scenario",
+  "match": [
+   "password protect pdf",
+   "lock pdf",
+   "pdf files",
+   "pdf",
+   "face id pdf"
+  ],
+  "query": "password protect pdf files on iphone offline pay once",
+  "lead": "A passport scan, lease, medical bill, or tax PDF can be too sensitive to leave loose in Files, Photos, or a chat thread.",
+  "detail": "For personal reference copies, the safest first step is reducing where the file can be seen: keep it local, place it behind Face ID or a passcode, and avoid uploading it to a random cloud locker. {name} is built as a private iPhone vault for sensitive photos, videos, and files, so a PDF copy can stay on device with no account, no tracking, and a one-time unlock instead of a subscription. It is not a legal document wallet or government ID system: keep originals, follow local rules, and review backup settings if the file is highly sensitive.",
+  "bullets": [
+   "Face ID or passcode protection before anyone can open the private vault",
+   "Offline local storage so sensitive PDFs are not uploaded just to be hidden",
+   "Support for storing private files alongside photos and videos in one place",
+   "Simple import and removal flow so the original copy is not left exposed elsewhere",
+   "One-time purchase, because protecting a few documents should not become a monthly bill"
+  ],
+  "faq": [
+   {
+    "q": "Can {name} replace an official passport or ID wallet?",
+    "a": "No. {name} is for private storage and quick personal reference, not an official ID credential or legal replacement for the original document."
+   },
+   {
+    "q": "Does Face ID make a PDF impossible to leak?",
+    "a": "No app can promise that. Face ID reduces casual access, but you still need a strong device passcode, careful sharing habits, and awareness that backups or screenshots may create extra copies."
+   },
+   {
+    "q": "Is this pay once or a subscription?",
+    "a": "{name} is designed around a one-time unlock, with no subscription required for the private vault use case."
+   }
+  ]
+ },
+ {
+  "app_key": "zafe",
+  "kind": "scenario",
+  "match": [
+   "secret folder",
+   "documents",
+   "document vault",
+   "private documents",
+   "file vault"
+  ],
+  "query": "secret folder for documents on iphone offline pay once",
+  "lead": "Some documents are not dramatic secrets; they are simply not meant to appear while someone is scrolling through your phone.",
+  "detail": "A low-friction private folder is useful for receipts with addresses, insurance cards, bank letters, school forms, or screenshots that do not belong in the main camera roll. {name} gives you a local vault protected by Face ID, so sensitive files can stay on the iPhone without an account or cloud upload, and the unlock is pay once rather than another subscription. It is best for personal privacy and organization, not for regulated enterprise records or documents that must be stored in a certified compliance system.",
+  "bullets": [
+   "A dedicated vault instead of mixing private files with everyday photos",
+   "Face ID access control for moments when family, kids, or coworkers borrow the phone",
+   "No account and no cloud requirement for documents you only need locally",
+   "Clear habit of deleting or moving exposed originals after import",
+   "Pay once, so a basic privacy folder does not keep charging every month"
+  ],
+  "faq": [
+   {
+    "q": "What kinds of documents fit this use case?",
+    "a": "Personal reference files such as receipts, ID photos, letters, forms, and sensitive screenshots fit well, as long as you understand they are copies and not official replacements."
+   },
+   {
+    "q": "Should I store work or client records here?",
+    "a": "Only if your workplace policy allows it. {name} is a personal privacy vault, not a promise of HIPAA, FINRA, or enterprise compliance."
+   },
+   {
+    "q": "Does it work offline?",
+    "a": "Yes. The point of {name} is local private storage on your iPhone, with no account or cloud upload required for the vault workflow."
+   }
+  ]
+ },
+ {
+  "app_key": "zafe",
+  "kind": "persona",
+  "match": [
+   "passport photo",
+   "id photo",
+   "passport scan",
+   "id scan",
+   "travel documents"
+  ],
+  "query": "hide passport photo on iphone private album no cloud pay once",
+  "lead": "Travelers often keep a passport photo or ID scan for emergencies, but the camera roll is the wrong place for something that exposes identity details.",
+  "detail": "A local copy of a passport or ID can be useful when filling forms or recovering information, but it should be treated as sensitive data, not a normal vacation photo. {name} helps move that kind of image into a Face ID protected private album that stays on the iPhone, without creating an account or sending it to a cloud vault, and the full app is unlocked with a one-time purchase. It does not make the copy legally valid for travel, and you should never edit, falsify, or share official document images unlawfully.",
+  "bullets": [
+   "Private album storage for ID photos, passport scans, and travel document images",
+   "Face ID lock so the image is not visible during casual camera-roll browsing",
+   "No cloud upload requirement for identity documents you prefer to keep local",
+   "A simple workflow that encourages removing the exposed original from Photos after import",
+   "One-time purchase instead of paying a subscription just to hide a few critical copies"
+  ],
+  "faq": [
+   {
+    "q": "Can I travel with only a passport photo in {name}?",
+    "a": "No. A stored image is for reference only; it does not replace your physical passport or any official digital credential required by authorities."
+   },
+   {
+    "q": "Is it safe to keep ID photos on a phone?",
+    "a": "It is safer behind a local Face ID vault than loose in the camera roll, but you still need a strong device passcode, careful backups, and good judgment about sharing."
+   },
+   {
+    "q": "Why choose a no-cloud vault for ID photos?",
+    "a": "Keeping the copy local reduces unnecessary exposure. {name} is built for on-device privacy with no account and no tracking."
+   }
+  ]
+ },
+ {
+  "app_key": "zafe",
+  "kind": "scenario",
+  "match": [
+   "private video",
+   "video folder",
+   "hide videos",
+   "personal videos",
+   "locked videos"
+  ],
+  "query": "private video folder iphone offline pay once no subscription",
+  "lead": "Private videos can be more revealing than photos, and they are easy to stumble across when the phone is handed to someone else.",
+  "detail": "If a video is personal, sensitive, or simply not meant for the main library, the goal is not fancy editing; it is keeping the file out of casual view and behind a lock. {name} works as a private vault for photos and videos on the iPhone, protected by Face ID and designed to keep content local without an account or cloud upload. It cannot stop someone from seeing a video after you unlock and show it, and you should delete exposed originals if you want the camera roll clean.",
+  "bullets": [
+   "A separate private folder for videos that should not appear in the regular library",
+   "Face ID lock before the vault opens",
+   "Offline use with no account, ads, tracking, or cloud upload requirement",
+   "Plain privacy workflow instead of fake calculator tricks or confusing decoys",
+   "One-time purchase, with no subscription just to store personal videos"
+  ],
+  "faq": [
+   {
+    "q": "Can {name} hide videos as well as photos?",
+    "a": "Yes. {name} is positioned as a private vault for photos and videos, so this use case fits the app."
+   },
+   {
+    "q": "Will the original video disappear automatically from Photos?",
+    "a": "Do not assume that. After importing, check the original location and remove exposed copies yourself if you want the main library clean."
+   },
+   {
+    "q": "Is this a subscription video vault?",
+    "a": "No. {name} is built around a one-time purchase model, not a monthly subscription."
+   }
+  ]
+ },
+ {
+  "app_key": "zafe",
+  "kind": "faq",
+  "match": [
+   "face id file vault",
+   "file vault",
+   "face id lock",
+   "local vault",
+   "offline vault"
+  ],
+  "query": "face id file vault iphone offline pay once",
+  "lead": "A good file vault should solve the ordinary privacy problem first: stop casual access without sending your private files somewhere else.",
+  "detail": "Face ID is useful when the threat is everyday access: a child tapping around, a friend borrowing the phone, or a coworker seeing the wrong thumbnail. {name} provides a local iPhone vault for private photos, videos, and files, using Face ID protection with no account, no tracking, no cloud requirement, and a pay-once unlock. It is not a substitute for a secure enterprise document management system, and it cannot protect files you export or share outside the vault.",
+  "bullets": [
+   "Face ID gate for the vault rather than relying only on the phone being locked",
+   "Local-first storage for files you do not want uploaded to a cloud service",
+   "Designed for private personal media and files, not bloated business document workflows",
+   "No account, no ads, and no tracking in the privacy story",
+   "One-time purchase so file privacy is not tied to a recurring fee"
+  ],
+  "faq": [
+   {
+    "q": "What problem does a Face ID file vault solve?",
+    "a": "It reduces casual exposure after your phone is unlocked or borrowed by putting sensitive items behind a second lock inside {name}."
+   },
+   {
+    "q": "Does offline mean nothing can ever leak?",
+    "a": "No. Offline local storage lowers cloud exposure, but device backups, screenshots, exports, and shared copies still need careful handling."
+   },
+   {
+    "q": "Who is {name} best for?",
+    "a": "People who want a simple private vault for personal photos, videos, and files on iPhone, especially if they dislike subscriptions and cloud accounts."
+   }
+  ]
+ }
+]

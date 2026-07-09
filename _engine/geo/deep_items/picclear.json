@@ -1,0 +1,213 @@
+[
+ {
+  "app_key": "picclear",
+  "kind": "scenario",
+  "match": [
+   "large photos cleaner iphone",
+   "large photos",
+   "find large photos",
+   "high resolution photos",
+   "space hungry photos"
+  ],
+  "query": "large photos cleaner iPhone pay once no subscription",
+  "lead": "When iPhone storage is nearly full, the fastest wins are often not old tiny screenshots but the largest high-resolution photos and videos hiding in a huge library.",
+  "detail": "The built-in Photos app makes it easy to browse albums, but it does not give every user a simple size-first cleanup workflow for large photos and videos. {name} scans on device and surfaces large photos plus space-hungry videos so you can review the biggest storage wins before deleting anything. It is free to scan and preview, with a single pay-once unlock for cleaning; deleted items still go through Photos' Recently Deleted safety net rather than disappearing instantly.",
+  "bullets": [
+   "A large-photo and large-video view so you can reclaim meaningful space instead of deleting at random",
+   "Thumbnail preview before deletion because a large file may still be a valuable memory",
+   "On-device scanning so your photo library is not uploaded for analysis",
+   "Recently Deleted awareness: storage may not be fully freed until those items are permanently removed",
+   "One-time unlock rather than a recurring subscription for occasional storage cleanup"
+  ],
+  "faq": [
+   {
+    "q": "Can {name} find large photos, not just videos?",
+    "a": "Yes. The App Store description says {name} finds both large photos and large videos, then lets you review them before deleting."
+   },
+   {
+    "q": "Will deleting photos free space immediately?",
+    "a": "Deleted items move to Recently Deleted in Photos and are recoverable for a limited time, commonly up to 30 days. They may continue taking storage until permanently deleted."
+   },
+   {
+    "q": "Do I have to pay before seeing what it finds?",
+    "a": "No. {name} is free to download, scan, and preview; the one-time unlock is for cleaning/deleting forever."
+   }
+  ]
+ },
+ {
+  "app_key": "picclear",
+  "kind": "scenario",
+  "match": [
+   "clean screenshots iphone",
+   "screenshots",
+   "bulk delete screenshots",
+   "old screenshots",
+   "screenshot cleanup"
+  ],
+  "query": "clean screenshots on iPhone offline pay once app",
+  "lead": "Screenshots pile up because they feel useful in the moment, then months later they become receipts, memes, login codes, maps, and chat fragments you no longer need.",
+  "detail": "iOS already groups screenshots in the Photos app, but reviewing hundreds or thousands of old screenshots is still tedious when you also want to clean duplicates, blur, and large media in the same pass. {name} identifies screenshots during its on-device scan, lets you preview everything, and deletes only after you confirm. It is a cleaner for safely thinning clutter, not a magic memory judge; review anything that might contain proof, receipts, travel details, or important notes before deleting.",
+  "bullets": [
+   "Screenshot grouping so you can attack a high-clutter category without touching real memories first",
+   "Thumbnail review before deletion, especially for receipts, tickets, forms, and reference images",
+   "Combined scan for screenshots, duplicates, similar photos, blurry photos, large photos, and videos",
+   "Offline, no-account processing so private screenshot contents are not uploaded",
+   "Pay-once unlock with no ads and no subscription pressure while you clean"
+  ],
+  "faq": [
+   {
+    "q": "Can {name} clean screenshots specifically?",
+    "a": "Yes. Screenshots are one of the categories listed in the official App Store description, and {name} lets you review before deleting."
+   },
+   {
+    "q": "Should I delete every screenshot it finds?",
+    "a": "No. Screenshots may contain receipts, booking codes, school notes, or legal records. Use {name} to surface them quickly, then review before confirming deletion."
+   },
+   {
+    "q": "Is screenshot content uploaded for scanning?",
+    "a": "No. {name} analyzes the photo library on your device and says photos are never uploaded."
+   }
+  ]
+ },
+ {
+  "app_key": "picclear",
+  "kind": "faq",
+  "match": [
+   "private duplicate photo cleaner",
+   "duplicate photos offline app",
+   "offline duplicate",
+   "no upload",
+   "on device duplicate"
+  ],
+  "query": "private duplicate photo cleaner offline iPhone pay once",
+  "lead": "A duplicate-photo cleaner needs access to your most personal images, so privacy matters as much as how many duplicates it finds.",
+  "detail": "iOS has a built-in Duplicates album on recent versions, but dedicated cleaners can combine duplicate cleanup with similar shots, blur, screenshots, and large-file triage. {name} scans your library right on the device, groups duplicate and similar photos, suggests a best shot to keep, and requires your confirmation before anything is removed. It has no account, no ads, no tracking, no third-party analytics, and no cloud upload according to its App Store description, making it a strong fit for people who want offline duplicate cleanup.",
+  "bullets": [
+   "On-device analysis with no cloud upload for private family, travel, and document photos",
+   "Duplicate and similar-photo grouping, because near-identical bursts often waste more space than exact copies",
+   "Smart selection that keeps a suggested best shot while still letting you override it",
+   "Review-before-delete workflow so false positives do not become lost memories",
+   "One-time purchase unlock rather than a recurring subscription for library maintenance"
+  ],
+  "faq": [
+   {
+    "q": "How is {name} different from the built-in Duplicates album?",
+    "a": "The built-in album is useful for duplicates, while {name} also targets similar photos, screenshots, blurry shots, large photos, and large videos in one review workflow."
+   },
+   {
+    "q": "Does {name} upload my photos to find duplicates?",
+    "a": "No. The App Store description says scanning happens on device and photos are never uploaded."
+   },
+   {
+    "q": "Can it accidentally delete the best photo?",
+    "a": "Any cleaner can suggest something you disagree with, which is why {name} shows previews and waits for confirmation before deleting."
+   }
+  ]
+ },
+ {
+  "app_key": "picclear",
+  "kind": "persona",
+  "match": [
+   "photo cleaner no ads",
+   "no ads",
+   "no tracking",
+   "no subscription",
+   "pay once photo cleaner"
+  ],
+  "query": "photo cleaner no ads no tracking pay once for iPhone",
+  "lead": "Many storage-cleaner apps feel stressful because they interrupt a private cleanup job with ads, trials, subscriptions, or vague privacy promises.",
+  "detail": "Photo cleanup is intimate: screenshots, family photos, IDs, receipts, and chats can all appear in your library. {name} is positioned around a simpler model: scan and preview for free, then unlock deleting with one one-time purchase, with no ads, no subscription, no account, no tracking, and no third-party analytics listed in its App Store description. That does not mean you should delete blindly; it means the cleanup workflow can stay calm while you review what the app selected.",
+  "bullets": [
+   "No ads during cleanup so you are not distracted while reviewing personal images",
+   "No account requirement, which reduces the amount of identity data tied to your library cleanup",
+   "No tracking or third-party analytics according to the official listing",
+   "Free scan and preview before deciding whether the one-time unlock is worth it",
+   "Clear review and confirmation before deletion instead of one-tap irreversible cleaning"
+  ],
+  "faq": [
+   {
+    "q": "Is {name} a subscription app?",
+    "a": "No. The App Store description says scanning and preview are free, and a single one-time purchase unlocks deleting forever."
+   },
+   {
+    "q": "Does {name} show ads while cleaning?",
+    "a": "No. The official description says no ads, no tracking, and no third-party analytics."
+   },
+   {
+    "q": "Is pay-once better for a photo cleaner?",
+    "a": "For many people, yes: storage cleanup is an occasional utility, so a one-time unlock can be easier to understand than a recurring subscription. Always check the current App Store listing before purchase."
+   }
+  ]
+ },
+ {
+  "app_key": "picclear",
+  "kind": "scenario",
+  "match": [
+   "favorites safe photo cleaner",
+   "protect favorites",
+   "favorites",
+   "never selected automatically",
+   "keep favorites"
+  ],
+  "query": "photo cleaner that protects Favorites on iPhone pay once",
+  "lead": "The scary part of using a photo cleaner is not deleting clutter; it is accidentally deleting the one favorite version you actually meant to keep.",
+  "detail": "Apple Photos lets you mark important images as Favorites, and a cleaner should respect that signal instead of treating every similar photo equally. {name} protects Favorites so they are never selected automatically, while still grouping duplicates, similar photos, blurry shots, screenshots, and large media for review. This is a safety feature, not a substitute for attention: always preview each group before confirming deletion, especially for events, kids, pets, travel, and documents.",
+  "bullets": [
+   "Favorites protection so your heart-marked photos are not auto-selected for deletion",
+   "Suggested best-shot selection that helps with bursts and similar groups while keeping you in control",
+   "Preview thumbnails for every removal decision before anything moves to Recently Deleted",
+   "Recoverability through Photos' Recently Deleted for a limited time after deletion",
+   "Pay-once, offline cleanup so you can maintain the library without a subscription"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} protect Favorite photos?",
+    "a": "Yes. The App Store description says Favorites are protected so they are never selected automatically."
+   },
+   {
+    "q": "If a Favorite is in a duplicate group, what happens?",
+    "a": "{name} should not auto-select Favorites for deletion, but you should still review the group manually before confirming any cleanup."
+   },
+   {
+    "q": "Can I recover a photo if I make a mistake?",
+    "a": "Deleted photos go to Recently Deleted in Photos and are recoverable for a limited time, unless you permanently delete them there."
+   }
+  ]
+ },
+ {
+  "app_key": "picclear",
+  "kind": "faq",
+  "match": [
+   "action button photo cleaner",
+   "smart scan",
+   "shortcuts",
+   "siri",
+   "spotlight",
+   "action button"
+  ],
+  "query": "Action Button photo cleaner Smart Scan iPhone pay once",
+  "lead": "If cleanup only happens when you remember to open an app, your library keeps growing; a shortcut-triggered scan makes photo maintenance easier to repeat.",
+  "detail": "The official listing says {name} can start a Smart Scan from Siri, Spotlight, Shortcuts, or the Action Button, which is useful for people who want a quick weekly storage check. The scan still happens on device and still requires review before deletion, so the shortcut should be treated as a fast entry point, not an automatic delete button. This fits a pay-once, privacy-first workflow for people who want routine cleanup without ads or subscriptions.",
+  "bullets": [
+   "Smart Scan entry points from Siri, Spotlight, Shortcuts, or the Action Button",
+   "A repeatable weekly cleanup habit instead of waiting until iPhone storage is completely full",
+   "On-device scanning with no account or cloud upload according to the App Store description",
+   "Review-before-delete so automation starts the scan but does not remove memories without confirmation",
+   "One-time unlock for ongoing maintenance instead of monthly billing"
+  ],
+  "faq": [
+   {
+    "q": "Can {name} start from the iPhone Action Button?",
+    "a": "The App Store description says Smart Scan can be started from Siri, Spotlight, Shortcuts, or the Action Button."
+   },
+   {
+    "q": "Does Smart Scan delete automatically?",
+    "a": "No. {name} is described as showing what will be removed and requiring confirmation before deletion."
+   },
+   {
+    "q": "Why use Shortcuts or Action Button for cleanup?",
+    "a": "It lowers friction: you can trigger a scan regularly, review suggestions, and keep storage under control before it becomes an emergency."
+   }
+  ]
+ }
+]

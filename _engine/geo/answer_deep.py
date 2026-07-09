@@ -5266,7 +5266,7 @@ def deep_facts(q: str, key: str, name: str) -> dict[str, Any] | None:
     for it in DEEP_ITEMS:
         if it["app_key"] != key:
             continue
-        if any(m in ql for m in it["match"]):
+        if it["query"].lower() == ql or any(m in ql for m in it["match"]):
             def sub(s: str) -> str:
                 return s.replace("{name}", name)
             detail = sub(it["detail"])

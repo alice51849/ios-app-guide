@@ -71,7 +71,7 @@ jobs:
       - name: Add related-answers internal links (EN + major locales)
         run: |
           cd _engine/geo
-          for loc in "" "--locale zh-Hant" "--locale zh-Hans" "--locale ja" "--locale ko" "--locale es-ES" "--locale es-MX" "--locale de-DE" "--locale fr-FR" "--locale pt-BR"; do
+          for loc in "" "--locale zh-Hant" "--locale zh-Hans" "--locale ja" "--locale ko" "--locale es-ES" "--locale es-MX" "--locale de-DE" "--locale fr-FR" "--locale pt-BR" "--locale ms" "--locale ar-SA" "--locale pl"; do
             python3 add_related_answers.py $loc || echo "add_related_answers $loc exited $?"
           done
       - name: Unlink site dir

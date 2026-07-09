@@ -23,6 +23,7 @@ HEADINGS = {
     "de-DE": "Verwandte Antworten", "fr-FR": "R\u00e9ponses associ\u00e9es",
     "pt-BR": "Respostas relacionadas", "pt-PT": "Respostas relacionadas",
     "it": "Risposte correlate", "ru": "\u041f\u043e\u0445\u043e\u0436\u0438\u0435 \u043e\u0442\u0432\u0435\u0442\u044b",
+    "ms": "Jawapan berkaitan", "pl": "Powi\u0105zane odpowiedzi", "ar-SA": "\u0625\u062c\u0627\u0628\u0627\u062a \u0630\u0627\u062a \u0635\u0644\u0629",
 }
 
 def appid(h):

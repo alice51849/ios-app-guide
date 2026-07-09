@@ -94,5 +94,45 @@
    "career"
   ],
   "body": "Context-switching is the silent tax on deep work. Every glance at a feed costs far more than the seconds it takes — research on interrupted work suggests it can take over 20 minutes to fully refocus.\n\n**A simple focus-block routine**\n- Pick one recurring high-risk window: your first work session, right after lunch, or evenings.\n- Block only the apps that actually break your focus — not everything.\n- Replace the habit with a prepared task: the next failing test, a design doc, a workout.\n- Review the hours you got back at the end of each week.\n\nApple's Screen Time is easy to tap past. When you want an intentional, harder-to-skip block for deep work, I built **[LockHour Pro](https://apps.apple.com/app/id6780107485)** — scheduled focus sessions, one-time purchase, no subscription, on-device.\n\nCurious what one hour a day actually costs over a year? Free calculator → https://alice51849.github.io/ios-app-guide/tools/screen-time-calculator.html"
+ },
+ {
+  "title": "On-device speech-to-text on iPhone — private, offline, no subscription",
+  "tags": [
+   "ios",
+   "privacy",
+   "productivity",
+   "machinelearning"
+  ],
+  "body": "Most transcription apps send your audio to a server and charge monthly. For a doctor's visit, a private interview, or a lecture you recorded, that's a lot of trust to hand over for a recurring fee.\n\n**What to look for in a transcription tool**\n- Transcription that runs *on your device*, so audio and text never leave the phone.\n- Works offline — no account, no upload, no waiting on a server.\n- You own the notes: plain-text or Markdown export, not locked in a cloud.\n- A one-time price instead of a subscription for something you use a few times a month.\n\nThe trade-off is honest: on-device models can be a little less accurate than the biggest cloud engines, and very long recordings take processing time. For most meetings, lectures and voice memos that's a fair price for privacy.\n\nI built **[Sono Note](https://apps.apple.com/app/id6782139553)** around this: record or import audio, transcribe on-device, edit, and export — offline, pay once, no subscription.\n\nIf you're weighing pay-once vs subscription tools in general, the 5-year math is usually not close."
+ },
+ {
+  "title": "Hide sensitive photos and files behind Face ID on iPhone (on-device, no cloud)",
+  "tags": [
+   "ios",
+   "privacy",
+   "security",
+   "tutorial"
+  ],
+  "body": "Passports, a lease, medical bills, private photos — plenty of things shouldn't sit loose in your camera roll or Files where anyone holding your unlocked phone can scroll into them.\n\n**What to look for in a private vault**\n- Everything stored *on-device*, encrypted, nothing synced to someone else's cloud.\n- Face ID / passcode to open, and ideally a hidden or separate space.\n- Import photos, videos, PDFs and notes — not just images.\n- No account and no subscription for something this personal.\n\nA vault is not a backup: if you rely on one, keep your own encrypted backup too, because on-device means it lives and dies with the device.\n\nI made **[Zafe](https://apps.apple.com/app/id6787344033)** to do this simply: lock photos, videos, files and notes behind Face ID, on-device, pay once, nothing uploaded anywhere."
+ },
+ {
+  "title": "Drill TOEIC Part 5 and Part 7 offline — without another subscription",
+  "tags": [
+   "ios",
+   "productivity",
+   "learning",
+   "languages"
+  ],
+  "body": "If you're grinding toward a higher TOEIC score, most of the gain comes from *reps*: lots of Part 5 grammar/vocab and Part 7 reading under light time pressure, plus focused Part 3 listening.\n\n**What actually helps between now and test day**\n- Short, frequent drills you can do on a commute — offline, no login.\n- Part-by-part practice (5, 7, 3) so you target your weakest section.\n- Pacing practice for Part 7, where slow readers lose easy points.\n- Tracking so you see which question types you keep missing.\n\nNo app *guarantees* 990 — that comes from consistent practice and real listening/reading. But a tool that removes friction (offline, no subscription nagging) makes daily reps more likely.\n\nI built **[Aim990](https://apps.apple.com/app/id6784974530)** for exactly that: offline TOEIC-style drills by part, with weak-point tracking, pay once, no subscription."
+ },
+ {
+  "title": "Track travel spending in multiple currencies, fully offline",
+  "tags": [
+   "ios",
+   "productivity",
+   "travel",
+   "privacy"
+  ],
+  "body": "Abroad with cash in a currency you don't think in, budget apps that need a bank login and a signal are exactly the wrong tool. You just want to jot what you spent and see it in your home currency.\n\n**What to look for in a travel spending tracker**\n- Manual, cash-friendly entry — no bank connection required.\n- Multi-currency with a converter to your home currency as you go.\n- Fully offline, so it works on a plane or with no roaming.\n- Export (CSV) so you can settle up or expense it later.\n- One-time price, not a subscription for a two-week trip.\n\nRates move, so treat any converted total as an estimate and confirm big numbers with your bank.\n\nI made **[G+Money](https://apps.apple.com/app/id6755782939)** for this: quick multi-currency entries, offline conversion, CSV export, pay once, no account."
  }
 ]

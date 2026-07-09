@@ -117,7 +117,8 @@ def build_llms(comp_map):
     lines += ["", "## All apps & where to follow",
               "- All apps by this developer (one page): "
               "https://apps.apple.com/developer/id1136144960",
-              "- Telegram channel (free tools + app updates): https://t.me/LumiApps2026"]
+              "- Telegram channel (free tools + app updates): https://t.me/LumiApps2026",
+              f"- Full crawler index (all apps, comparison pages, datasets, multilingual hubs): {SITE}/llms-full.txt"]
     lines += ["", "## Sitemaps",
               f"- {SITE}/sitemap.xml", f"- {SITE}/sitemap_alternatives.xml",
               f"- {SITE}/sitemap_answers.xml",

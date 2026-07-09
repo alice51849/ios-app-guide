@@ -303,6 +303,43 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
  },
  {
   "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "My child keeps confusing the second and third Bopomofo tones — how do I help?",
+  "match": [
+   "confusing the second and third bopomofo tones",
+   "confuses the second and third tone",
+   "mix up the second and third tone",
+   "child confuses mandarin tones",
+   "can't tell apart the tones",
+   "keeps confusing the tones"
+  ],
+  "lead": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch shape visible and physical, not to explain it.",
+  "detail": "Mandarin has four tones marked in Zhuyin: first ˉ (high and level), second ˊ (rising), third ˇ (dipping — it falls then rises, like a checkmark), and fourth ˋ (falling sharply). The pair children confuse most is the second and third, because both finish by rising. Explaining this rarely works for a 4–7-year-old; showing it does. Pair each tone with a hand gesture the child copies: for the second tone, sweep your hand upward as you say it (ㄇㄚˊ, má); for the third, dip your hand down then back up in a V shape (ㄇㄚˇ, mǎ). Say them slowly and a little exaggerated, then in minimal pairs so the contrast is obvious — 麻 (máˊ) versus 馬 (mǎˇ), 牙 versus 也. A mirror, a sing-song voice, or recording the child and playing it back all help them hear the difference themselves. Keep sessions short and playful; tone accuracy comes from lots of light exposure, not drilling. {name}'s four-tone practice (Tone Coaster) is built for exactly this — it plays the correct pitch for each tone with animation so a child hears and sees the rise-versus-dip, alongside symbol recognition, stroke tracing and syllable blending, for ages 4–7, pay-once, no ads, on-device.",
+  "bullets": [
+   "The second (rising ˊ) and third (dipping ˇ) tones are the classic mix-up because both end by rising",
+   "Show the pitch, don't explain it: pair each tone with a hand gesture the child copies",
+   "Second tone = sweep the hand up; third tone = dip down then up in a V",
+   "Use minimal pairs so the contrast is obvious — 麻 (máˊ) versus 馬 (mǎˇ)",
+   "A mirror, a sing-song voice, or recording-and-replay helps the child hear the difference",
+   "Keep it short and playful — tones come from light repeated exposure, not drilling"
+  ],
+  "faq": [
+   {
+    "q": "Why does my child mix up the second and third tones specifically?",
+    "a": "Because both tones end with the pitch rising — the second rises straight up, while the third dips first and then rises. Young ears latch onto the shared upward ending. Making the falling-then-rising shape of the third tone visible with a hand gesture usually clears it up."
+   },
+   {
+    "q": "Is it better to explain the tones or just practise them?",
+    "a": "At ages 4–7, practise beats explanation. Copying a hand gesture, using an exaggerated sing-song voice, and hearing minimal pairs (麻 versus 馬) build the distinction far faster than describing pitch in words."
+   },
+   {
+    "q": "How much tone practice does my child need?",
+    "a": "Short and frequent wins. A few minutes of playful gesture-and-say practice several times a week, especially with minimal pairs, is enough. {name}'s Tone Coaster mode plays the correct pitch for each tone so your child can hear and copy it directly."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
   "kind": "faq",
   "query": "Should I teach my child Bopomofo or Pinyin first?",
   "match": [

@@ -38,6 +38,7 @@ GMONEY_APP = "https://apps.apple.com/app/id6755782939"        # G+Money: currenc
 AIM990_APP = "https://apps.apple.com/app/id6784974530"       # Aim990: 990 Score Coach (TOEIC study)
 SCANTO_APP = "https://apps.apple.com/app/id6779977651"       # ScanTo Pro: Offline PDF & OCR
 UNBLURRY_APP = "https://apps.apple.com/app/id6782275018"     # Unblurry Pro: Unblur & HD
+CYCA_APP = "https://apps.apple.com/app/id6782251621"         # Cyca: Period & Cycle Tracker
 
 # ── 37 注音符號(21 聲母 + 3 介音 + 13 韻母)。pinyin 為漢語拼音對照,example 為常用字例。
 ZHUYIN = [
@@ -1093,6 +1094,94 @@ def build_formats_page():
     return slug
 
 
+# ── The four phases of the menstrual cycle (typical 28-day cycle; individual cycles vary widely).
+#    (phase, typical_days, main_hormones, what_happens)
+CYCLE_PHASES = [
+    ("Menstrual", "1\u20135", "Oestrogen & progesterone lowest",
+     "The uterine lining (endometrium) sheds \u2014 this is the period. Day 1 is the first day of bleeding."),
+    ("Follicular", "1\u201313", "FSH then rising oestrogen",
+     "The pituitary releases FSH; follicles develop in the ovary and one matures, while oestrogen rebuilds the lining. Overlaps with the menstrual phase."),
+    ("Ovulation", "~14", "LH surge, oestrogen peaks",
+     "A surge of luteinising hormone (LH) releases the mature egg. The fertile window spans roughly the few days before and the day of ovulation."),
+    ("Luteal", "15\u201328", "Progesterone rises",
+     "The empty follicle becomes the corpus luteum and secretes progesterone, thickening the lining. If no pregnancy occurs, hormones fall and the next period begins (PMS may appear)."),
+]
+
+CYCLE_DISCLAIMER = ("General educational information based on a textbook 28-day cycle. Real cycles "
+                    "vary widely in length and timing between people and from month to month; day "
+                    "ranges here are averages, not predictions. This is not medical advice \u2014 "
+                    "for health concerns consult a qualified healthcare professional.")
+
+
+def cycle_json():
+    return {
+        "name": "The 4 phases of the menstrual cycle",
+        "description": ("The four phases of the menstrual cycle \u2014 menstrual, follicular, "
+                        "ovulation and luteal \u2014 with typical day ranges in a 28-day cycle, "
+                        "the main hormones involved and what happens in each phase."),
+        "identifier": f"{SITE}/data/menstrual-cycle-phases.json",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "creator": "Lumi Apps",
+        "isBasedOn": "https://www.nhs.uk/conditions/periods/",
+        "dateModified": TODAY,
+        "disclaimer": CYCLE_DISCLAIMER,
+        "phases": [{"phase": p, "typicalDays": d, "mainHormones": hm, "whatHappens": w}
+                   for p, d, hm, w in CYCLE_PHASES],
+    }
+
+
+def build_cycle_page():
+    slug = "menstrual-cycle-phases"
+    title = "The 4 Menstrual Cycle Phases — Days, Hormones & What Happens | Open Data"
+    h1 = "The 4 phases of the menstrual cycle"
+    desc = ("Menstrual, follicular, ovulation and luteal: the four phases of the menstrual cycle "
+            "with typical day ranges (28-day cycle), the main hormones and what happens in each. "
+            "Free open data (CC BY 4.0). Educational, not medical advice.")
+    lead = ("The menstrual cycle has four phases. Here is a citable reference of each phase, its "
+            "typical day range in a 28-day cycle, the main hormones and what happens.")
+    rows = ""
+    for p, d, hm, w in CYCLE_PHASES:
+        rows += (f'<tr><td><strong>{html.escape(p)}</strong></td>'
+                 f'<td class="nw">{html.escape(d)}</td>'
+                 f'<td>{html.escape(hm)}</td>'
+                 f'<td>{html.escape(w)}</td></tr>')
+    tables = ('<div class="card"><table>'
+              '<tr><th>Phase</th><th>Typical days</th><th>Main hormones</th><th>What happens</th></tr>'
+              f'{rows}</table>'
+              f'<p class="foot">{html.escape(CYCLE_DISCLAIMER)}</p></div>')
+    dj = cycle_json()
+    schema = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "Dataset", "name": dj["name"], "description": dj["description"],
+        "url": f"{SITE}/data/{slug}.html", "identifier": dj["identifier"],
+        "license": dj["license"], "creator": {"@type": "Organization", "name": "Lumi Apps"},
+        "isBasedOn": dj["isBasedOn"], "dateModified": dj["dateModified"],
+        "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json",
+                          "contentUrl": dj["identifier"]}],
+        "keywords": ["menstrual cycle", "cycle phases", "follicular phase", "luteal phase",
+                     "ovulation", "fertile window", "period tracking"],
+    }, ensure_ascii=False)
+    pills = ('<span class="pill">4 phases</span>'
+             '<span class="pill">28-day reference</span>')
+    cta = ('<h2>Track your own cycle privately \u2014 pay once, on-device</h2>\n'
+           '<p>Everyone\u2019s cycle is different, so the most useful data is your own. '
+           '<strong>Cyca</strong> tracks your period, phases and best days entirely on your '
+           'phone \u2014 no account, a one-time purchase, no ads, nothing sent to a cloud.</p>\n'
+           f'<a class="cta" href="{CYCA_APP}">Get Cyca on the App Store →</a>\n'
+           f'<p style="font-size:14px"><a href="{SITE}/data/">More open datasets →</a></p>')
+    page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
+                       lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
+                       crumb="Menstrual cycle phases", pills=pills, tables=tables, schema=schema,
+                       cta=cta, related=related_block([
+                           ("Best cycle tracker app", "answers/best-cycle-tracker-app.html"),
+                           ("More open datasets", "data/")]))
+    os.makedirs(DATA, exist_ok=True)
+    open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
+        json.dumps(dj, ensure_ascii=False, indent=2))
+    open(os.path.join(DATA, f"{slug}.html"), "w", encoding="utf-8").write(page)
+    return slug
+
+
 INDEX = """<!doctype html>
 <html lang="en">
 <head>
@@ -1208,6 +1297,7 @@ def main():
     yslug = build_paper_page()
     zslug = build_resolutions_page()
     fslug = build_formats_page()
+    cslug = build_cycle_page()
     datasets = [{
         "slug": slug,
         "name": "Zhuyin (Bopomofo): all 37 symbols",
@@ -1268,6 +1358,12 @@ def main():
         "blurb": "JPEG/PNG/HEIC/WebP/GIF/TIFF/PDF on compression, transparency, animation and "
                  "best use. Answers 'JPG vs PNG' and 'what is HEIC'. JSON download included.",
         "tag": "Reference · CC BY 4.0",
+    }, {
+        "slug": cslug,
+        "name": "The 4 phases of the menstrual cycle",
+        "blurb": "Menstrual, follicular, ovulation and luteal with typical days, hormones and "
+                 "what happens. Educational reference (not medical advice). JSON download included.",
+        "tag": "Health · CC BY 4.0",
     }]
     build_index(datasets)
     urls = build_sitemap(datasets)

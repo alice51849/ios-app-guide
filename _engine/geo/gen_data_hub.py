@@ -37,6 +37,7 @@ CVDESK_APP = "https://apps.apple.com/app/id6781337213"        # CV Desk: ATS Res
 GMONEY_APP = "https://apps.apple.com/app/id6755782939"        # G+Money: currency + expense
 AIM990_APP = "https://apps.apple.com/app/id6784974530"       # Aim990: 990 Score Coach (TOEIC study)
 SCANTO_APP = "https://apps.apple.com/app/id6779977651"       # ScanTo Pro: Offline PDF & OCR
+UNBLURRY_APP = "https://apps.apple.com/app/id6782275018"     # Unblurry Pro: Unblur & HD
 
 # ── 37 注音符號(21 聲母 + 3 介音 + 13 韻母)。pinyin 為漢語拼音對照,example 為常用字例。
 ZHUYIN = [
@@ -909,6 +910,98 @@ def build_paper_page():
     return slug
 
 
+# ── Common display/video resolutions (square-pixel, in pixels). (name, w, h, aspect, note)
+IMAGE_RESOLUTIONS = [
+    ("nHD (360p)", 640, 360, "16:9", "Small mobile / thumbnail video"),
+    ("VGA", 640, 480, "4:3", "Classic standard-definition"),
+    ("SD (480p)", 854, 480, "16:9", "Standard-definition widescreen"),
+    ("HD (720p)", 1280, 720, "16:9", "\u201cHD ready\u201d"),
+    ("Full HD (1080p)", 1920, 1080, "16:9", "The most common video/photo size"),
+    ("QHD / 2K (1440p)", 2560, 1440, "16:9", "High-end phones & monitors"),
+    ("4K UHD (2160p)", 3840, 2160, "16:9", "4\u00d7 the pixels of 1080p"),
+    ("DCI 4K", 4096, 2160, "\u224817:9", "Digital-cinema 4K (slightly wider)"),
+    ("8K UHD (4320p)", 7680, 4320, "16:9", "16\u00d7 the pixels of 1080p"),
+]
+
+
+def _mp(w, h):
+    return round(w * h / 1_000_000, 2)
+
+
+def resolutions_json():
+    return {
+        "name": "Common image & video resolutions in pixels",
+        "description": ("Standard display and video resolutions — 360p, VGA, 480p, 720p, 1080p, "
+                        "1440p (QHD/2K), 4K UHD, DCI 4K and 8K — with exact pixel dimensions, "
+                        "aspect ratio and megapixels."),
+        "identifier": f"{SITE}/data/image-video-resolutions.json",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "creator": "Lumi Apps",
+        "dateModified": TODAY,
+        "note": "Megapixels = width \u00d7 height / 1,000,000. Dimensions assume square pixels.",
+        "resolutions": [{"name": n, "width": w, "height": h, "pixels": f"{w}\u00d7{h}",
+                         "aspectRatio": a, "megapixels": _mp(w, h), "note": note}
+                        for n, w, h, a, note in IMAGE_RESOLUTIONS],
+    }
+
+
+def build_resolutions_page():
+    slug = "image-video-resolutions"
+    title = "Image & Video Resolutions Chart — 720p, 1080p, 4K, 8K in Pixels | Open Data"
+    h1 = "Image & video resolutions"
+    desc = ("What resolution is 4K? 1080p vs 1440p vs 4K in pixels. Standard display and video "
+            "resolutions (360p to 8K) with exact pixel dimensions, aspect ratio and megapixels. "
+            "Free open data (CC BY 4.0).")
+    lead = ("Every common screen and video resolution from 360p to 8K, with exact pixel sizes, "
+            "aspect ratio and megapixels — a single citable reference.")
+    rows = ""
+    for n, w, h, a, note in IMAGE_RESOLUTIONS:
+        rows += (f'<tr><td><strong>{html.escape(n)}</strong></td>'
+                 f'<td class="nw">{w} \u00d7 {h}</td>'
+                 f'<td class="nw">{html.escape(a)}</td>'
+                 f'<td class="nw">{_mp(w, h)} MP</td>'
+                 f'<td>{html.escape(note)}</td></tr>')
+    tables = ('<div class="card"><table>'
+              '<tr><th>Resolution</th><th>Pixels</th><th>Aspect</th><th>Megapixels</th><th>Notes</th></tr>'
+              f'{rows}</table>'
+              '<p class="foot">Megapixels = width \u00d7 height / 1,000,000. Each 4K frame has '
+              'four times the pixels of 1080p; 8K has sixteen times. Upscaling adds pixels but not '
+              'true detail \u2014 start from the sharpest source you have.</p></div>')
+    dj = resolutions_json()
+    schema = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "Dataset", "name": dj["name"], "description": dj["description"],
+        "url": f"{SITE}/data/{slug}.html", "identifier": dj["identifier"],
+        "license": dj["license"], "creator": {"@type": "Organization", "name": "Lumi Apps"},
+        "dateModified": dj["dateModified"],
+        "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json",
+                          "contentUrl": dj["identifier"]}],
+        "keywords": ["resolution", "1080p", "4K", "8K", "720p", "1440p", "pixels", "megapixels",
+                     "aspect ratio", "UHD", "Full HD"],
+    }, ensure_ascii=False)
+    pills = ('<span class="pill">360p \u2192 8K</span>'
+             '<span class="pill">pixels \u00b7 aspect \u00b7 megapixels</span>')
+    cta = ('<h2>Photo too small or soft for the resolution you need?</h2>\n'
+           '<p>Upscaling can\u2019t invent detail that isn\u2019t there, but AI super-resolution can '
+           'get you closer. <strong>Unblurry</strong> sharpens and upscales photos entirely '
+           'on-device \u2014 a one-time purchase, no ads, no subscription, nothing uploaded.</p>\n'
+           f'<a class="cta" href="{UNBLURRY_APP}">Get Unblurry on the App Store →</a>\n'
+           f'<p style="font-size:14px"><a href="{SITE}/data/paper-sizes.html">Paper sizes '
+           '(print) →</a> &nbsp;·&nbsp; '
+           f'<a href="{SITE}/data/">More open datasets →</a></p>')
+    page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
+                       lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
+                       crumb="Image & video resolutions", pills=pills, tables=tables, schema=schema,
+                       cta=cta, related=related_block([
+                           ("Paper sizes (mm/in/px)", "data/paper-sizes.html"),
+                           ("iPhone photo tools", "photo-tools.html")]))
+    os.makedirs(DATA, exist_ok=True)
+    open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
+        json.dumps(dj, ensure_ascii=False, indent=2))
+    open(os.path.join(DATA, f"{slug}.html"), "w", encoding="utf-8").write(page)
+    return slug
+
+
 INDEX = """<!doctype html>
 <html lang="en">
 <head>
@@ -1022,6 +1115,7 @@ def main():
     tslug = build_tones_page()
     xslug = build_toeic_page()
     yslug = build_paper_page()
+    zslug = build_resolutions_page()
     datasets = [{
         "slug": slug,
         "name": "Zhuyin (Bopomofo): all 37 symbols",
@@ -1069,6 +1163,12 @@ def main():
         "name": "Paper sizes (ISO A-series & US) in mm, inches & pixels",
         "blurb": "A0–A6 plus Letter/Legal/Tabloid/Executive with millimetres, inches and pixels "
                  "at 300 DPI. Answers 'A4 in pixels?' and 'Letter vs A4?'. JSON download included.",
+        "tag": "Reference · CC BY 4.0",
+    }, {
+        "slug": zslug,
+        "name": "Image & video resolutions (720p, 1080p, 4K, 8K)",
+        "blurb": "360p to 8K with exact pixel dimensions, aspect ratio and megapixels. Answers "
+                 "'what resolution is 4K?' and '1080p vs 1440p'. JSON download included.",
         "tag": "Reference · CC BY 4.0",
     }]
     build_index(datasets)

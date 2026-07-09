@@ -1,0 +1,92 @@
+{
+  "name": "Common image & video resolutions in pixels",
+  "description": "Standard display and video resolutions — 360p, VGA, 480p, 720p, 1080p, 1440p (QHD/2K), 4K UHD, DCI 4K and 8K — with exact pixel dimensions, aspect ratio and megapixels.",
+  "identifier": "https://alice51849.github.io/ios-app-guide/data/image-video-resolutions.json",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": "Lumi Apps",
+  "dateModified": "2026-07-09",
+  "note": "Megapixels = width × height / 1,000,000. Dimensions assume square pixels.",
+  "resolutions": [
+    {
+      "name": "nHD (360p)",
+      "width": 640,
+      "height": 360,
+      "pixels": "640×360",
+      "aspectRatio": "16:9",
+      "megapixels": 0.23,
+      "note": "Small mobile / thumbnail video"
+    },
+    {
+      "name": "VGA",
+      "width": 640,
+      "height": 480,
+      "pixels": "640×480",
+      "aspectRatio": "4:3",
+      "megapixels": 0.31,
+      "note": "Classic standard-definition"
+    },
+    {
+      "name": "SD (480p)",
+      "width": 854,
+      "height": 480,
+      "pixels": "854×480",
+      "aspectRatio": "16:9",
+      "megapixels": 0.41,
+      "note": "Standard-definition widescreen"
+    },
+    {
+      "name": "HD (720p)",
+      "width": 1280,
+      "height": 720,
+      "pixels": "1280×720",
+      "aspectRatio": "16:9",
+      "megapixels": 0.92,
+      "note": "“HD ready”"
+    },
+    {
+      "name": "Full HD (1080p)",
+      "width": 1920,
+      "height": 1080,
+      "pixels": "1920×1080",
+      "aspectRatio": "16:9",
+      "megapixels": 2.07,
+      "note": "The most common video/photo size"
+    },
+    {
+      "name": "QHD / 2K (1440p)",
+      "width": 2560,
+      "height": 1440,
+      "pixels": "2560×1440",
+      "aspectRatio": "16:9",
+      "megapixels": 3.69,
+      "note": "High-end phones & monitors"
+    },
+    {
+      "name": "4K UHD (2160p)",
+      "width": 3840,
+      "height": 2160,
+      "pixels": "3840×2160",
+      "aspectRatio": "16:9",
+      "megapixels": 8.29,
+      "note": "4× the pixels of 1080p"
+    },
+    {
+      "name": "DCI 4K",
+      "width": 4096,
+      "height": 2160,
+      "pixels": "4096×2160",
+      "aspectRatio": "≈17:9",
+      "megapixels": 8.85,
+      "note": "Digital-cinema 4K (slightly wider)"
+    },
+    {
+      "name": "8K UHD (4320p)",
+      "width": 7680,
+      "height": 4320,
+      "pixels": "7680×4320",
+      "aspectRatio": "16:9",
+      "megapixels": 33.18,
+      "note": "16× the pixels of 1080p"
+    }
+  ]
+}

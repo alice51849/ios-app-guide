@@ -340,6 +340,43 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
  },
  {
   "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "My child confuses similar-looking Bopomofo symbols like ㄣ and ㄥ — how do I help?",
+  "match": [
+   "confuses similar-looking bopomofo symbols",
+   "confuses ㄣ and ㄥ",
+   "similar looking bopomofo symbols",
+   "confuse similar zhuyin symbols",
+   "child mixes up bopomofo symbols",
+   "tell apart similar bopomofo symbols"
+  ],
+  "lead": "Some Bopomofo symbols look or sound almost alike — ㄣ/ㄥ, ㄌ/ㄖ, ㄈ/ㄏ — so children swap them. The fix is to make the small visual difference and the mouth movement obvious, one pair at a time.",
+  "detail": "A handful of Zhuyin symbols are easy to mix up because they look similar, sound similar, or both. The most common pairs are ㄣ and ㄥ (a front nasal versus a back nasal), ㄌ and ㄖ, and ㄈ and ㄏ. Tackle one pair at a time, and give the child two anchors: a visual cue and a mouth cue. For ㄣ versus ㄥ, point out that ㄥ has an extra little tail, and contrast the sound with word pairs like 登 (ㄉㄣ) versus 燈 (ㄉㄥ) — ask the child to touch their nose and feel where the sound sits (ㄣ is shorter and further forward; ㄥ resonates longer at the back). For ㄌ versus ㄖ, ㄌ is said with the tongue tip tapping behind the top teeth (like English l), while ㄖ curls the tongue back (a retroflex, closer to English r); try 啦 versus 熱. For ㄈ versus ㄏ, ㄈ bites the top teeth on the lower lip and pushes air out (like f), while ㄏ is a relaxed breath with the tongue out of the way (like h); try 飯 versus 汗. Colour-marking the extra stroke, tracing the shapes with a finger, and short daily card-matching games all help. Keep it light and one pair at a time. {name} pairs accurate audio with each symbol and its stroke animation, so a child hears the difference and sees the shape — across symbol recognition, stroke tracing, four-tone practice and syllable blending, for ages 4–7, pay-once, no ads, on-device.",
+  "bullets": [
+   "The usual mix-ups are ㄣ/ㄥ (front vs back nasal), ㄌ/ㄖ, and ㄈ/ㄏ — work one pair at a time",
+   "Give two anchors per pair: a visual cue (e.g. ㄥ has an extra tail) and a mouth or tongue cue",
+   "ㄌ taps the tongue behind the top teeth (like l); ㄖ curls the tongue back (like r)",
+   "ㄈ bites the lip like f; ㄏ is a relaxed breath like h",
+   "Use minimal word pairs to hear the contrast — 登/燈, 啦/熱, 飯/汗",
+   "Colour-mark the different stroke and trace the shape; keep sessions short and playful"
+  ],
+  "faq": [
+   {
+    "q": "Which Bopomofo symbols do children mix up most?",
+    "a": "The classic pairs are ㄣ and ㄥ (a front nasal versus a back nasal), ㄌ and ㄖ, and ㄈ and ㄏ. They look similar, sound similar, or both. Teaching one pair at a time — with a visual cue and a mouth cue — prevents them blurring together."
+   },
+   {
+    "q": "How do I explain the ㄣ versus ㄥ difference to a young child?",
+    "a": "Skip the linguistics. Show that ㄥ has an extra little tail, then say a word pair like 登 (ㄉㄣ) and 燈 (ㄉㄥ) and have the child touch their nose: ㄣ feels shorter and further forward, ㄥ resonates longer at the back. Feeling and hearing beats explaining."
+   },
+   {
+    "q": "Should I fix all the confusing pairs at once?",
+    "a": "No — one pair at a time. Get ㄣ/ㄥ comfortable before moving to ㄌ/ㄖ. Short, playful daily practice with cards or gestures, and words the child already knows, makes the distinction stick without pressure. {name}'s audio-plus-animation for each symbol reinforces both the sound and the shape."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
   "kind": "faq",
   "query": "Should I teach my child Bopomofo or Pinyin first?",
   "match": [

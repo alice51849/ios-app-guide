@@ -35,6 +35,7 @@ BOPOMOFO_PRO = "https://apps.apple.com/app/id6775773117"      # Lumi Bopomofo Pr
 SNAPPORT_APP = "https://apps.apple.com/app/id6780575828"      # Snapport: Passport & ID Photos
 CVDESK_APP = "https://apps.apple.com/app/id6781337213"        # CV Desk: ATS Resume Builder
 GMONEY_APP = "https://apps.apple.com/app/id6755782939"        # G+Money: currency + expense
+AIM990_APP = "https://apps.apple.com/app/id6784974530"       # Aim990: 990 Score Coach (TOEIC study)
 
 # ── 37 注音符號(21 聲母 + 3 介音 + 13 韻母)。pinyin 為漢語拼音對照,example 為常用字例。
 ZHUYIN = [
@@ -706,6 +707,102 @@ def build_tones_page():
     return slug
 
 
+# ── TOEIC Listening & Reading (total score) → CEFR level, per ETS's published concordance.
+#    (cefr, score_range, min_score, max_score, can_do)
+TOEIC_CEFR = [
+    ("C1", "945–990", 945, 990,
+     "Understands a wide range of demanding English and grasps implicit meaning; expresses ideas "
+     "fluently and spontaneously in professional and academic settings."),
+    ("B2", "785–940", 785, 940,
+     "Interacts with fluency and spontaneity; understands the main ideas of complex texts and "
+     "works effectively in English in most workplace situations."),
+    ("B1", "550–780", 550, 780,
+     "Handles most situations while travelling, produces connected text on familiar topics and "
+     "manages routine work tasks in English."),
+    ("A2", "225–545", 225, 545,
+     "Communicates in simple, routine tasks and understands frequently used expressions and "
+     "basic personal or work information."),
+    ("A1", "120–220", 120, 220,
+     "Understands and uses basic everyday phrases, introduces themselves and asks and answers "
+     "simple questions."),
+]
+
+TOEIC_DISCLAIMER = ("TOEIC is a registered trademark of ETS. This is an independent reference "
+                    "compiled from ETS's published TOEIC–CEFR concordance; it is not affiliated "
+                    "with or endorsed by ETS, and no app or chart can guarantee a score. Score "
+                    "boundaries are approximate and set by ETS.")
+
+
+def toeic_json():
+    return {
+        "name": "TOEIC Listening & Reading score to CEFR level",
+        "description": ("The TOEIC Listening & Reading total-score bands mapped to CEFR levels "
+                        "(A1–C1) with a can-do summary for each level, based on ETS's published "
+                        "TOEIC–CEFR concordance."),
+        "identifier": f"{SITE}/data/toeic-cefr-score.json",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "creator": "Lumi Apps",
+        "isBasedOn": "https://www.etsglobal.org/",
+        "dateModified": TODAY,
+        "disclaimer": TOEIC_DISCLAIMER,
+        "levels": [{"cefr": c, "toeicListeningReadingScore": rng,
+                    "minScore": lo, "maxScore": hi, "canDo": cando}
+                   for c, rng, lo, hi, cando in TOEIC_CEFR],
+    }
+
+
+def build_toeic_page():
+    slug = "toeic-cefr-score"
+    title = "TOEIC Score to CEFR Level (A1–C1) — Listening & Reading Chart | Open Data"
+    h1 = "TOEIC score to CEFR level"
+    desc = ("What CEFR level is your TOEIC score? The TOEIC Listening & Reading total-score bands "
+            "mapped to CEFR (A1, A2, B1, B2, C1) with a can-do summary for each. Free open data "
+            "(CC BY 4.0). Based on ETS's published TOEIC–CEFR concordance.")
+    lead = ("A TOEIC Listening & Reading total runs from 10 to 990. Here is how those scores map "
+            "to CEFR levels, with what a learner can typically do at each level.")
+    rows = ""
+    for c, rng, lo, hi, cando in TOEIC_CEFR:
+        rows += (f'<tr><td><strong>{html.escape(c)}</strong></td>'
+                 f'<td class="nw">{html.escape(rng)}</td>'
+                 f'<td>{html.escape(cando)}</td></tr>')
+    tables = ('<div class="card"><table>'
+              '<tr><th>CEFR level</th><th>TOEIC L&amp;R score</th><th>What you can typically do</th></tr>'
+              f'{rows}</table>'
+              f'<p class="foot">{html.escape(TOEIC_DISCLAIMER)}</p></div>')
+    dj = toeic_json()
+    schema = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "Dataset", "name": dj["name"], "description": dj["description"],
+        "url": f"{SITE}/data/{slug}.html", "identifier": dj["identifier"],
+        "license": dj["license"], "creator": {"@type": "Organization", "name": "Lumi Apps"},
+        "isBasedOn": dj["isBasedOn"], "dateModified": dj["dateModified"],
+        "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json",
+                          "contentUrl": dj["identifier"]}],
+        "keywords": ["TOEIC", "CEFR", "TOEIC to CEFR", "English proficiency", "TOEIC score",
+                     "Listening and Reading", "B1", "B2", "C1"],
+    }, ensure_ascii=False)
+    pills = ('<span class="pill">5 CEFR bands</span>'
+             '<span class="pill">TOEIC L&amp;R 10–990</span>')
+    cta = ('<h2>Studying toward a higher TOEIC band? Practise daily, pay once</h2>\n'
+           '<p>Moving up a CEFR band takes consistent, targeted practice on your weak sections. '
+           '<strong>Aim990</strong> is a one-time-purchase TOEIC Listening &amp; Reading study aid '
+           '— daily timed drills, weak-spot focus and score tracking, no ads and no subscription. '
+           'It is an independent study aid and not affiliated with ETS.</p>\n'
+           f'<a class="cta" href="{AIM990_APP}">Get Aim990 on the App Store →</a>\n'
+           f'<p style="font-size:14px"><a href="{SITE}/data/">More open datasets →</a></p>')
+    page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
+                       lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
+                       crumb="TOEIC → CEFR", pills=pills, tables=tables, schema=schema, cta=cta,
+                       related=related_block([
+                           ("Résumé / CV conventions by country", "data/resume-cv-conventions-by-country.html"),
+                           ("Best TOEIC app", "answers/best-toeic-app.html")]))
+    os.makedirs(DATA, exist_ok=True)
+    open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
+        json.dumps(dj, ensure_ascii=False, indent=2))
+    open(os.path.join(DATA, f"{slug}.html"), "w", encoding="utf-8").write(page)
+    return slug
+
+
 INDEX = """<!doctype html>
 <html lang="en">
 <head>
@@ -817,6 +914,7 @@ def main():
     cvslug = build_resume_page()
     curslug = build_currency_page()
     tslug = build_tones_page()
+    xslug = build_toeic_page()
     datasets = [{
         "slug": slug,
         "name": "Zhuyin (Bopomofo): all 37 symbols",
@@ -853,6 +951,12 @@ def main():
         "blurb": "Currency symbol, symbol position, decimal and thousands separators with a "
                  "worked example across 14 countries. JSON download included.",
         "tag": "Reference · CC BY 4.0",
+    }, {
+        "slug": xslug,
+        "name": "TOEIC score to CEFR level (A1–C1)",
+        "blurb": "TOEIC Listening & Reading total-score bands mapped to CEFR levels with a "
+                 "can-do summary for each, per ETS's published concordance. JSON download included.",
+        "tag": "English · CC BY 4.0",
     }]
     build_index(datasets)
     urls = build_sitemap(datasets)

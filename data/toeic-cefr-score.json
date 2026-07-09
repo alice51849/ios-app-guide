@@ -1,0 +1,47 @@
+{
+  "name": "TOEIC Listening & Reading score to CEFR level",
+  "description": "The TOEIC Listening & Reading total-score bands mapped to CEFR levels (A1–C1) with a can-do summary for each level, based on ETS's published TOEIC–CEFR concordance.",
+  "identifier": "https://alice51849.github.io/ios-app-guide/data/toeic-cefr-score.json",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": "Lumi Apps",
+  "isBasedOn": "https://www.etsglobal.org/",
+  "dateModified": "2026-07-09",
+  "disclaimer": "TOEIC is a registered trademark of ETS. This is an independent reference compiled from ETS's published TOEIC–CEFR concordance; it is not affiliated with or endorsed by ETS, and no app or chart can guarantee a score. Score boundaries are approximate and set by ETS.",
+  "levels": [
+    {
+      "cefr": "C1",
+      "toeicListeningReadingScore": "945–990",
+      "minScore": 945,
+      "maxScore": 990,
+      "canDo": "Understands a wide range of demanding English and grasps implicit meaning; expresses ideas fluently and spontaneously in professional and academic settings."
+    },
+    {
+      "cefr": "B2",
+      "toeicListeningReadingScore": "785–940",
+      "minScore": 785,
+      "maxScore": 940,
+      "canDo": "Interacts with fluency and spontaneity; understands the main ideas of complex texts and works effectively in English in most workplace situations."
+    },
+    {
+      "cefr": "B1",
+      "toeicListeningReadingScore": "550–780",
+      "minScore": 550,
+      "maxScore": 780,
+      "canDo": "Handles most situations while travelling, produces connected text on familiar topics and manages routine work tasks in English."
+    },
+    {
+      "cefr": "A2",
+      "toeicListeningReadingScore": "225–545",
+      "minScore": 225,
+      "maxScore": 545,
+      "canDo": "Communicates in simple, routine tasks and understands frequently used expressions and basic personal or work information."
+    },
+    {
+      "cefr": "A1",
+      "toeicListeningReadingScore": "120–220",
+      "minScore": 120,
+      "maxScore": 220,
+      "canDo": "Understands and uses basic everyday phrases, introduces themselves and asks and answers simple questions."
+    }
+  ]
+}

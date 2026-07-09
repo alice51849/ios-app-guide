@@ -194,6 +194,42 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
  },
  {
   "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "How can my child prepare for grade 1 Bopomofo over the summer before school starts?",
+  "match": [
+   "prepare for grade 1 bopomofo over the summer",
+   "bopomofo over the summer",
+   "summer bopomofo prep",
+   "summer before school starts bopomofo",
+   "get ready for grade 1 bopomofo over the summer"
+  ],
+  "lead": "Taiwan grade 1 teaches all 37 Bopomofo symbols in roughly the first ten weeks after the early-September start, so a light, playful summer warm-up — recognising symbols by sound, not drilling — lets your child arrive familiar and far less stressed.",
+  "detail": "In Taiwan, elementary school begins in early September and grade 1 covers the entire 37-symbol Bopomofo (注音符號, Zhuyin) system intensively in about the first ten weeks before moving on to reading connected text. Children who arrive already recognising the symbols by sound handle that fast pace with much less stress. The summer beforehand is ideal for a gentle warm-up rather than academic drilling: aim for short, playful 10–15 minute sessions a few times a week, focused on hearing and recognising symbols instead of perfect handwriting. A sensible summer arc is to start with the initials (聲母 ㄅㄆㄇㄈ…), add the medials and finals (韻母 ㄧㄨㄩ, ㄚㄛㄜㄝ…), then lightly touch the four tones and simple blending (拼讀) — always game-first. {name} maps onto exactly this sequence with four modes — audio symbol recognition, stroke tracing, four-tone practice, and syllable blending — for ages 4–7, in 10–15 minute sessions, with a dual English and Traditional Chinese interface, on-device progress, no ads, and a one-time unlock instead of a subscription.",
+  "bullets": [
+   "Taiwan grade 1 starts in early September and teaches all 37 Bopomofo symbols in about the first ten weeks",
+   "Summer prep should be light and playful — 10–15 minutes a few times a week, not daily drilling",
+   "At ages 4–7, prioritise recognising symbols by sound over perfect stroke writing",
+   "A natural summer sequence: initials (聲母) → medials and finals (韻母) → four tones → simple blending (拼讀)",
+   "Arriving already familiar with the symbols lowers first-term stress when the class moves quickly",
+   "Keep it game-based so the child links Bopomofo with play, not pressure"
+  ],
+  "faq": [
+   {
+    "q": "When is Bopomofo taught in Taiwan, and why prepare over the summer?",
+    "a": "Taiwan elementary school starts in early September, and grade 1 teaches the full 37-symbol Bopomofo system in roughly the first ten weeks before shifting to reading. A relaxed summer warm-up means your child already recognises the symbols when that fast-paced phase begins, which lowers stress for the whole family."
+   },
+   {
+    "q": "How much summer practice is enough — does daily drilling help?",
+    "a": "Short and playful beats long and heavy at ages 4–7. Ten to fifteen minutes a few times a week, focused on sound recognition and light tracing, is plenty. Daily drilling and pushing for perfect handwriting can make a child associate Bopomofo with pressure before school even starts."
+   },
+   {
+    "q": "Do I need to know Bopomofo myself to help my child over the summer?",
+    "a": "No. {name} plays accurate audio for every symbol so your child hears correct pronunciation directly, and the dual English and Traditional Chinese interface lets English-dominant parents follow along. Learning a few symbols together usually makes the sessions more fun."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
   "kind": "faq",
   "query": "Should I teach my child Bopomofo or Pinyin first?",
   "match": [

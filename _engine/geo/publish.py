@@ -43,8 +43,25 @@ def main():
     run(["git", "-c", "user.name=alice51849",
          "-c", "user.email=alice51849@users.noreply.github.com",
          "commit", "-m", "Update multilingual GEO pages"], cwd=PAGES)
-    run(["git", "-c", "credential.helper=!gh auth git-credential",
-         "push", "-q", "origin", "main"], cwd=PAGES)
+    # 2b) 健壯 push:固定在 main;被拒就以「我方重生內容為準」rebase(-X theirs)後重試;
+    #     萬一 rebase 仍衝突,abort + 對齊遠端(絕不留下 detached/衝突壞狀態,下輪重生再推)。
+    CRED = "credential.helper=!gh auth git-credential"
+    run(["git", "checkout", "main"], cwd=PAGES)
+    pushed = False
+    for _ in range(3):
+        rc, _ = run(["git", "-c", CRED, "push", "-q", "origin", "main"], cwd=PAGES)
+        if rc == 0:
+            pushed = True
+            break
+        rc2, _ = run(["git", "-c", CRED, "pull", "--rebase", "-X", "theirs",
+                      "-q", "origin", "main"], cwd=PAGES)
+        if rc2 != 0:
+            run(["git", "rebase", "--abort"], cwd=PAGES)
+            run(["git", "reset", "--hard", "origin/main"], cwd=PAGES)
+            print("⚠️ rebase 衝突已中止並對齊遠端;本輪變更留待下次重生推送。")
+            break
+    if not pushed:
+        print("⚠️ 未能 push(已保持 repo 乾淨)。")
     # 3) IndexNow:有變更才推
     run([PY, os.path.join(HERE, "indexnow_submit.py")], env=env)
     print("\n✅ GEO 發布完成")

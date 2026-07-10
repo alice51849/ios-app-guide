@@ -244,6 +244,24 @@ def default_content(question: str, key: str) -> dict[str, Any]:
             "Confirm export and backup options.",
             "Choose the pricing model you are comfortable maintaining.",
         ],
+        "comparison_rows": [
+            {
+                "need": "Pricing model",
+                "check": "Check whether useful features require a subscription, a one-time unlock, or neither.",
+                "why": "The cheapest app on day one may not be cheapest after a year.",
+            },
+            {
+                "need": "Privacy model",
+                "check": "Prefer on-device work when the content is sensitive.",
+                "why": "Private documents, resumes, study data, and family content deserve careful handling.",
+            },
+            {
+                "need": "Export / lock-in",
+                "check": "Confirm file formats, sharing, backup, and deletion controls.",
+                "why": "A good app should help you finish the task, not trap your work.",
+            },
+        ],
+        "sources": [],
         "where_app_fits": f"{name} is a strong fit when you want a focused iPhone tool rather than a broad, complicated suite.",
         "faq": [
             {"q": f"Is {name} a good option?", "a": f"{name} can be a good option if its current App Store features match your needs and budget."},
@@ -265,6 +283,8 @@ def normalized_content(raw: dict[str, Any], question: str, key: str) -> dict[str
         "short_answer_paragraphs": safe_list(raw.get("short_answer_paragraphs"), 2, base["short_answer_paragraphs"]),
         "what_to_look_for": safe_list(raw.get("what_to_look_for"), 5, base["what_to_look_for"]),
         "decision_steps": safe_list(raw.get("decision_steps"), 5, base["decision_steps"]),
+        "comparison_rows": base["comparison_rows"],
+        "sources": base["sources"],
         "where_app_fits": safe_text(raw.get("where_app_fits"), base["where_app_fits"]),
         "faq": raw.get("faq") if isinstance(raw.get("faq"), list) else base["faq"],
     }
@@ -374,6 +394,21 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
     pills = "".join(f'<span class="pill">{e(x)}</span>' for x in feature_list(key))
     look = "".join(f"<li>{e(x)}</li>" for x in content["what_to_look_for"])
     steps = "".join(f"<li>{e(x)}</li>" for x in content["decision_steps"])
+    comparison_rows = "".join(
+        f'<tr><td>{e(row["need"])}</td><td>{e(row["check"])}</td><td>{e(row["why"])}</td></tr>'
+        for row in content["comparison_rows"]
+    )
+    sources = [
+        source for source in content.get("sources", [])
+        if source["url"].startswith("https://")
+    ]
+    sources_html = ""
+    if sources:
+        links = "".join(
+            f'<li><a href="{e(source["url"])}" rel="noopener">{e(source["title"])}</a></li>'
+            for source in sources
+        )
+        sources_html = f'<h2>Official sources</h2><ul class="checklist">{links}</ul>'
     paras = "".join(f"<p>{e(x)}</p>" for x in content["short_answer_paragraphs"])
     faq_html = "".join(
         f'<div itemscope itemtype="https://schema.org/Question"><h3 itemprop="name">{e(item["q"])}</h3><div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><p itemprop="text">{e(item["a"])}</p></div></div>'
@@ -408,7 +443,7 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
 </head>
 <body><header class="top"><div class="wrap nav"><a href="{SITE}/index.html">iOS App Guide</a><nav><a href="{SITE}/answers/index.html">Answers</a> · <a href="{SITE}/tools/">Free tools</a> · <a href="{SITE}/alternatives/">Alternatives</a> · <a href="{SITE}/about.html">About</a></nav></div></header>
 <main><section class="hero wrap"><div class="breadcrumb"><a href="{SITE}/index.html">Home</a> / <a href="{SITE}/answers/index.html">Answers</a></div><div class="eyebrow">High-intent answer</div><h1>{e(question)}</h1><p class="lead">{e(content["lead"])}</p><p><a class="cta" href="{url}" rel="nofollow noopener">Get {e(name)} on the App Store →</a> <a class="cta ghost" href="{SITE}/tools/index.html">free tool →</a></p></section>
-<section class="wrap grid"><article class="card two answer"><h2>Short answer</h2>{paras}<h2>What to look for before choosing</h2><ul class="checklist">{look}</ul><h2>A practical decision process</h2><ol class="checklist">{steps}</ol><h2>Quick comparison</h2><table><thead><tr><th>Need</th><th>What to check</th><th>Why it matters</th></tr></thead><tbody><tr><td>Pricing model</td><td>Check whether useful features require a subscription, a one-time unlock, or neither.</td><td>The cheapest app on day one may not be cheapest after a year.</td></tr><tr><td>Privacy model</td><td>Prefer on-device work when the content is sensitive.</td><td>Private documents, resumes, study data, and family content deserve careful handling.</td></tr><tr><td>Export / lock-in</td><td>Confirm file formats, sharing, backup, and deletion controls.</td><td>A good app should help you finish the task, not trap your work.</td></tr></tbody></table><h2>Where {e(name)} fits</h2><p>{e(content["where_app_fits"])}</p><p>{pills}</p><p class="notice">This page is an independent buying guide. App Store features and prices can change, so confirm details on the listing before purchase.{e(special_notice)}</p></article><aside class="card side"><h2>Helpful links</h2><div class="toc"><a href="{url}" rel="nofollow noopener">Get {e(name)} on the App Store</a><a href="{guide_link}">{e(name)} app guide</a><a href="{alt_link}">{e(name)} alternatives / guide</a><a href="{SITE}/tools/index.html">free tool</a></div><h2>Best for</h2><p class="muted">{e('; '.join(feature_list(key)))}</p></aside></section>
+<section class="wrap grid"><article class="card two answer"><h2>Short answer</h2>{paras}<h2>What to look for before choosing</h2><ul class="checklist">{look}</ul><h2>A practical decision process</h2><ol class="checklist">{steps}</ol><h2>Quick comparison</h2><table><thead><tr><th>Need</th><th>What to check</th><th>Why it matters</th></tr></thead><tbody>{comparison_rows}</tbody></table>{sources_html}<h2>Where {e(name)} fits</h2><p>{e(content["where_app_fits"])}</p><p>{pills}</p><p class="notice">This page is an independent buying guide. App Store features and prices can change, so confirm details on the listing before purchase.{e(special_notice)}</p></article><aside class="card side"><h2>Helpful links</h2><div class="toc"><a href="{url}" rel="nofollow noopener">Get {e(name)} on the App Store</a><a href="{guide_link}">{e(name)} app guide</a><a href="{alt_link}">{e(name)} alternatives / guide</a><a href="{SITE}/tools/index.html">free tool</a></div><h2>Best for</h2><p class="muted">{e('; '.join(feature_list(key)))}</p></aside></section>
 <section class="wrap card"><h2>FAQ</h2>{faq_html}</section></main><footer class="footer"><div class="wrap">Independent guide. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.</div></footer></body></html>'''
 
 

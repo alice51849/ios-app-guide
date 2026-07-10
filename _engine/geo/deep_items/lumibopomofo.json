@@ -248,5 +248,75 @@
         "a": "No. Use the Ministry handbook for formal notation; Lumi Bopomofo reinforces symbol recognition, pronunciation and tones through play."
       }
     ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "official_dictionary_bridge",
+    "match": [
+      "why learn zhuyin if already speaks chinese",
+      "zhuyin help child read a chinese dictionary",
+      "bopomofo useful beyond first grade",
+      "use zhuyin to read independently",
+      "why should my child learn zhuyin"
+    ],
+    "query": "Why should my child learn Zhuyin if they already speak Chinese?",
+    "lead": "Zhuyin gives Mandarin-speaking children a pronunciation key for decoding unfamiliar Traditional Chinese characters without waiting for an adult.",
+    "detail": "Taiwan's official Ministry of Education Mini Dictionary displays standard Zhuyin pronunciation with its entries, and Zhuyin-annotated children's material uses the same 37-symbol system. Once a child recognizes those symbols and tones, the phonetic guide becomes a bridge from a character they do not yet know to a sound they may already understand. That makes Zhuyin useful beyond a short school unit: it supports dictionary use, independent reading and accurate pronunciation. Official reference: https://dict.mini.moe.edu.tw/. {name} builds the symbol, sound, tone and blending foundation through play; it is free to download, with a one-time lifetime unlock, no ads and no recurring subscription.",
+    "bullets": [
+      "Connects unfamiliar Traditional Chinese characters to pronunciations a Mandarin-speaking child may already know",
+      "Uses the same standard Zhuyin shown by Taiwan's official Ministry of Education Mini Dictionary",
+      "Supports independent reading instead of requiring an adult to pronounce every new character",
+      "Covers all 37 symbols, tones and syllable blending through short play activities",
+      "Free download with a one-time lifetime unlock, no ads and no recurring subscription"
+    ],
+    "decision_steps": [
+      "Start with a familiar spoken word and show the child its Traditional Chinese characters.",
+      "Point out the Zhuyin guide and blend its symbols into the word's pronunciation.",
+      "Check an unfamiliar character together in Taiwan's Ministry of Education Mini Dictionary.",
+      "Read a short Zhuyin-annotated story for five to ten minutes, letting the child decode before helping.",
+      "Use Lumi Bopomofo to revisit only the symbols, tones or blends that still cause hesitation."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Already speaks Mandarin",
+        "check": "Practice that connects Zhuyin symbols and tones to familiar spoken words",
+        "why": "Oral vocabulary becomes a foundation for decoding written characters"
+      },
+      {
+        "need": "Meets an unknown character",
+        "check": "A standard Zhuyin pronunciation guide or Ministry of Education dictionary entry",
+        "why": "The child can recover the sound without waiting for an adult to read it"
+      },
+      {
+        "need": "Builds reading independence",
+        "check": "Short practice plus real Zhuyin-annotated stories",
+        "why": "A phonetic skill becomes useful only when the child applies it to reading"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is the practice layer: it builds symbol recognition, tones and blending through short games. Pair it with shared reading and Taiwan's official dictionary rather than treating any app as a replacement for books or conversation.",
+    "sources": [
+      {
+        "title": "Taiwan Ministry of Education Mini Dictionary",
+        "url": "https://dict.mini.moe.edu.tw/"
+      },
+      {
+        "title": "Taiwan Ministry of Education Bopomofo Handbook",
+        "url": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Why learn Zhuyin if my child already speaks Mandarin?",
+        "a": "Speaking gives a child vocabulary, but not a way to decode an unfamiliar written character. Zhuyin connects the character to a pronunciation the child may already understand."
+      },
+      {
+        "q": "Is there an official Zhuyin dictionary for children?",
+        "a": "Yes. Taiwan's Ministry of Education Mini Dictionary at https://dict.mini.moe.edu.tw/ displays standard Zhuyin pronunciation with dictionary entries."
+      },
+      {
+        "q": "Does Lumi Bopomofo replace reading together?",
+        "a": "No. It builds the symbol-to-sound, tone and blending foundation through play. Children still benefit from shared reading and real conversation."
+      }
+    ]
   }
 ]

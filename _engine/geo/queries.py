@@ -322,6 +322,8 @@ _TAILORED = {
     "lumibopomofo": [
         "app to teach bopomofo to overseas chinese kids",
         "zhuyin tracing app for taiwanese children",
+        "Why should my child learn Zhuyin if they already speak Chinese?",
+        "How can Zhuyin help my child read a Chinese dictionary?",
         "海外小孩學注音符號的 app 推薦",
     ],
     # —— 占星:競品/東西合璧/離線 ——

@@ -5280,7 +5280,7 @@ def deep_facts(q: str, key: str, name: str) -> dict[str, Any] | None:
                 return s.replace("{name}", name)
             detail = sub(it["detail"])
             lead = sub(it["lead"])
-            return {
+            overlay = {
                 "meta_description": concise_meta(sub(it["lead"])),
                 "lead": lead,
                 "short_answer_paragraphs": [
@@ -5289,9 +5289,25 @@ def deep_facts(q: str, key: str, name: str) -> dict[str, Any] | None:
                     f"listing for exact features and pricing before you decide.",
                 ],
                 "what_to_look_for": [sub(b) for b in it["bullets"]],
-                "where_app_fits": f"{name} is built for exactly this — use the checklist above and test it on a real example.",
+                "where_app_fits": sub(it.get(
+                    "where_app_fits",
+                    f"{name} is built for exactly this — use the checklist above and test it on a real example.",
+                )),
                 "faq": [{"q": sub(f["q"]), "a": sub(f["a"])} for f in it["faq"]],
             }
+            if "decision_steps" in it:
+                overlay["decision_steps"] = [sub(step) for step in it["decision_steps"]]
+            if "comparison_rows" in it:
+                overlay["comparison_rows"] = [
+                    {field: sub(row[field]) for field in ("need", "check", "why")}
+                    for row in it["comparison_rows"]
+                ]
+            if "sources" in it:
+                overlay["sources"] = [
+                    {"title": sub(source["title"]), "url": source["url"]}
+                    for source in it["sources"]
+                ]
+            return overlay
     return None
 
 

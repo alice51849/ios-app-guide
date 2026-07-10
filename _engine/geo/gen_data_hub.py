@@ -6,7 +6,7 @@
 GEO 下一層槓桿:除了 answer/guide/alternatives 這些「文章型」內容外,再提供
 **結構化開放資料集**(JSON + schema.org/Dataset + DefinedTermSet)。AI 助理與
 Google Dataset Search 特別偏好引用「乾淨、可機讀、標明授權與來源」的事實資料;
-每個資料集都連回對應的 pay-once app,形成 data → citation → app 的漏斗。
+每個資料集都連回對應的隱私優先 app,形成 data → citation → app 的漏斗。
 
 首發:注音(Zhuyin/Bopomofo)37 符號完整資料集 — 綁營收第一的 Lumi Bopomofo。
 CC-BY-4.0 授權(要求標註來源=最自然的反向連結/品牌曝光)。100% 自動、零成本、
@@ -251,10 +251,10 @@ def build_zhuyin_page():
     }, ensure_ascii=False)
     pills = ('<span class="pill">37 symbols</span>'
              '<span class="pill">21 initials · 3 medials · 13 finals</span>')
-    cta = ('<h2>Learn these with a game — pay once, no subscription</h2>\n'
+    cta = ('<h2>Learn these with a game — free to start, no subscription</h2>\n'
            '<p>The fastest way for a child to master all 37 symbols is playful, repeated practice. '
-           '<strong>Lumi Bopomofo</strong> teaches every symbol above through games — a one-time '
-           'purchase, no ads, no subscription, everything stays on the device.</p>\n'
+           '<strong>Lumi Bopomofo</strong> teaches every symbol above through games — free to start '
+           'with a one-time unlock for complete content, no ads and no subscription.</p>\n'
            f'<a class="cta" href="{BOPOMOFO_APP}">Get Lumi Bopomofo on the App Store →</a>\n'
            f'<p style="font-size:14px"><a href="{SITE}/tools/zhuyin-bopomofo-chart.html">'
            'Printable Bopomofo chart →</a> &nbsp;·&nbsp; '
@@ -348,10 +348,11 @@ def build_passport_page():
     }, ensure_ascii=False)
     pills = (f'<span class="pill">{len(PASSPORT)} countries</span>'
              '<span class="pill">sizes in mm</span>')
-    cta = ('<h2>Make a compliant photo at home — pay once, no subscription</h2>\n'
+    cta = ('<h2>Make a compliant photo at home — privately on your iPhone</h2>\n'
            '<p>You don’t need a photo booth. <strong>Snapport</strong> crops your photo to the exact '
            'size for any country above, checks the head position and prints or exports a ready-to-use '
-           'sheet — a one-time purchase, no subscription, everything on your iPhone.</p>\n'
+           'sheet, with processing kept on your iPhone. Check the App Store listing for current '
+           'access details in your region.</p>\n'
            f'<a class="cta" href="{SNAPPORT_APP}">Get Snapport on the App Store →</a>\n'
            f'<p style="font-size:14px"><a href="{SITE}/data/">More open datasets →</a></p>')
     page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
@@ -439,8 +440,8 @@ def build_cn_regions_page():
              '<span class="pill">script + phonetics</span>')
     cta = ('<h2>Learning the Taiwan way — Traditional + Zhuyin</h2>\n'
            '<p>If your family follows the Taiwanese system (Traditional characters, Zhuyin first), '
-           '<strong>Lumi Bopomofo</strong> teaches all 37 Zhuyin symbols through games — a one-time '
-           'purchase, no ads, no subscription, everything on the device.</p>\n'
+           '<strong>Lumi Bopomofo</strong> teaches all 37 Zhuyin symbols through games — free to '
+           'start with a one-time unlock for complete content, no ads and no subscription.</p>\n'
            f'<a class="cta" href="{BOPOMOFO_APP}">Get Lumi Bopomofo on the App Store →</a>\n'
            f'<p style="font-size:14px"><a href="{SITE}/data/zhuyin-bopomofo.html">'
            'See the full Zhuyin dataset →</a> &nbsp;·&nbsp; '
@@ -706,8 +707,8 @@ def build_tones_page():
              '<span class="pill">Zhuyin & Pinyin marks</span>')
     cta = ('<h2>Learn tones and Zhuyin the Taiwan way</h2>\n'
            '<p>Tones make or break Mandarin pronunciation. <strong>Lumi Bopomofo</strong> teaches '
-           'the 37 Zhuyin symbols and their tone marks through games — a one-time purchase, no ads, '
-           'no subscription, on-device.</p>\n'
+           'the 37 Zhuyin symbols and their tone marks through games — free to start with a one-time '
+           'unlock for complete content, no ads and no subscription.</p>\n'
            f'<a class="cta" href="{BOPOMOFO_APP}">Get Lumi Bopomofo on the App Store →</a>\n'
            f'<p style="font-size:14px"><a href="{SITE}/data/zhuyin-bopomofo.html">Zhuyin symbols '
            'dataset →</a> &nbsp;·&nbsp; <a href="{S}/data/">More open datasets →</a></p>'
@@ -802,10 +803,10 @@ def build_toeic_page():
     }, ensure_ascii=False)
     pills = ('<span class="pill">5 CEFR bands</span>'
              '<span class="pill">TOEIC L&amp;R 10–990</span>')
-    cta = ('<h2>Studying toward a higher TOEIC band? Practise daily, pay once</h2>\n'
+    cta = ('<h2>Studying toward a higher TOEIC band? Practise daily with a one-time unlock</h2>\n'
            '<p>Moving up a CEFR band takes consistent, targeted practice on your weak sections. '
-           '<strong>Aim990</strong> is a one-time-purchase TOEIC Listening &amp; Reading study aid '
-           '— daily timed drills, weak-spot focus and score tracking, no ads and no subscription. '
+           '<strong>Aim990</strong> is a TOEIC Listening &amp; Reading study aid with a one-time '
+           'unlock, no subscription, daily timed drills, weak-spot focus, score tracking and no ads. '
            'It is an independent study aid and not affiliated with ETS.</p>\n'
            f'<a class="cta" href="{AIM990_APP}">Get Aim990 on the App Store →</a>\n'
            f'<p style="font-size:14px"><a href="{SITE}/data/">More open datasets →</a></p>')
@@ -1179,10 +1180,11 @@ def build_cycle_page():
     }, ensure_ascii=False)
     pills = ('<span class="pill">4 phases</span>'
              '<span class="pill">28-day reference</span>')
-    cta = ('<h2>Track your own cycle privately \u2014 pay once, on-device</h2>\n'
+    cta = ('<h2>Track your own cycle privately \u2014 on-device</h2>\n'
            '<p>Everyone\u2019s cycle is different, so the most useful data is your own. '
            '<strong>Cyca</strong> tracks your period, phases and best days entirely on your '
-           'phone \u2014 no account, a one-time purchase, no ads, nothing sent to a cloud.</p>\n'
+           'phone \u2014 no account, no ads and nothing sent to a cloud. Check the App Store listing '
+           'for current access details in your region.</p>\n'
            f'<a class="cta" href="{CYCA_APP}">Get Cyca on the App Store →</a>\n'
            f'<p style="font-size:14px"><a href="{SITE}/data/">More open datasets →</a></p>')
     page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
@@ -1225,7 +1227,7 @@ h1{{font-size:clamp(26px,5vw,36px);margin:.1em 0}}
 <h1>Open data</h1>
 <p class="lead">Free, machine-readable reference datasets you can cite and reuse under
 <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> — built and maintained by
-the makers of a family of pay-once iOS apps.</p>
+the makers of a family of privacy-minded iOS apps.</p>
 {items}
 <p class="foot">Building on the web with AI? These datasets are clean JSON with schema.org
 metadata — free to ingest and cite. Please credit “Lumi Apps ({site})”.</p>
@@ -1244,7 +1246,7 @@ def build_index(datasets):
         "@context": "https://schema.org", "@type": "DataCatalog",
         "name": "Open data — Lumi Apps",
         "description": "Free, machine-readable reference datasets (CC BY 4.0) for AI assistants, "
-                       "researchers and developers, maintained by the makers of pay-once iOS apps.",
+                       "researchers and developers, maintained by independent iOS app makers.",
         "url": f"{SITE}/data/",
         "creator": {"@type": "Organization", "name": "Lumi Apps"},
         "license": "https://creativecommons.org/licenses/by/4.0/",

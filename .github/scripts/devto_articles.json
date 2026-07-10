@@ -106,16 +106,6 @@
     "body": "Most transcription apps send your audio to a server and charge monthly. For a doctor's visit, a private interview, or a lecture you recorded, that's a lot of trust to hand over for a recurring fee.\n\n**What to look for in a transcription tool**\n- Transcription that runs *on your device*, so audio and text never leave the phone.\n- Works offline — no account, no upload, no waiting on a server.\n- You own the notes: plain-text or Markdown export, not locked in a cloud.\n- A one-time price instead of a subscription for something you use a few times a month.\n\nThe trade-off is honest: on-device models can be a little less accurate than the biggest cloud engines, and very long recordings take processing time. For most meetings, lectures and voice memos that's a fair price for privacy.\n\nI built **[Sono Note](https://apps.apple.com/app/id6782139553)** around this: record or import audio, transcribe on-device, edit, and export — offline, pay once, no subscription.\n\nIf you're weighing pay-once vs subscription tools in general, the 5-year math is usually not close."
   },
   {
-    "title": "Hide sensitive photos and files behind Face ID on iPhone (on-device, no cloud)",
-    "tags": [
-      "ios",
-      "privacy",
-      "security",
-      "tutorial"
-    ],
-    "body": "Passports, a lease, medical bills, private photos — plenty of things shouldn't sit loose in your camera roll or Files where anyone holding your unlocked phone can scroll into them.\n\n**What to look for in a private vault**\n- Everything stored *on-device*, encrypted, nothing synced to someone else's cloud.\n- Face ID / passcode to open, and ideally a hidden or separate space.\n- Import photos, videos, PDFs and notes — not just images.\n- No account and no subscription for something this personal.\n\nA vault is not a backup: if you rely on one, keep your own encrypted backup too, because on-device means it lives and dies with the device.\n\nI made **[Zafe](https://apps.apple.com/app/id6787344033)** to do this simply: lock photos, videos, files and notes behind Face ID, on-device, pay once, nothing uploaded anywhere."
-  },
-  {
     "title": "Drill TOEIC Part 5 and Part 7 offline — without another subscription",
     "tags": [
       "ios",

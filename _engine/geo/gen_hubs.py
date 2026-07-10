@@ -119,10 +119,14 @@ def main():
     os.makedirs(HUBS, exist_ok=True)
     live_keys = live_app_keys(APPSTORE, PAGES, refresh=False)
     keys = [k for k in APPS if k in live_keys]
-    for key in set(APPS) - live_keys:
-        stale = os.path.join(HUBS, f"{key}.html")
-        if os.path.exists(stale):
-            os.remove(stale)
+    expected = set(keys)
+    for filename in os.listdir(HUBS):
+        if (
+            filename.endswith(".html")
+            and filename != "index.html"
+            and filename.removesuffix(".html") not in expected
+        ):
+            os.remove(os.path.join(HUBS, filename))
     for k in keys:
         open(os.path.join(HUBS, f"{k}.html"), "w", encoding="utf-8").write(build_hub(k))
     # index

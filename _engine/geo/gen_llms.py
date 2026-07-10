@@ -77,8 +77,6 @@ def load_competitors():
 def positioning(key):
     app = APPS[key]
     facts = " · ".join([app.get("tag", "")] + app.get("cta_bullets", [])).lower()
-    if key == "aim990":
-        return ""
     if "free to start" in facts:
         return "Free to start." + (" No subscription." if "no subscription" in facts else "")
     if re.search(r"\bfree\b", facts):
@@ -303,7 +301,8 @@ def build_llms_full(comp_map, live_keys):
     for filename in (
         "sitemap_index.xml", "sitemap.xml", "sitemap_alternatives.xml",
         "sitemap_answers.xml", "sitemap_guides.xml", "sitemap_stories.xml",
-        "sitemap_hubs.xml", "sitemap_data.xml", "sitemap_swap.xml", "feed.xml",
+        "sitemap_hubs.xml", "sitemap_tools.xml", "sitemap_data.xml",
+        "sitemap_swap.xml", "feed.xml",
     ):
         if os.path.exists(os.path.join(PAGES, filename)):
             lines.append(f"- {SITE}/{filename}")
@@ -324,6 +323,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_guides.xml",
             f"Sitemap: {SITE}/sitemap_stories.xml",
             f"Sitemap: {SITE}/sitemap_hubs.xml",
+            f"Sitemap: {SITE}/sitemap_tools.xml",
             f"Sitemap: {SITE}/sitemap_data.xml",
             f"Sitemap: {SITE}/sitemap_swap.xml",
             f"Sitemap: {SITE}/sitemap_index.xml", ""]
@@ -332,7 +332,8 @@ def build_robots():
 
 def build_sitemap_index():
     maps = ["sitemap.xml", "sitemap_alternatives.xml", "sitemap_answers.xml", "sitemap_guides.xml",
-            "sitemap_stories.xml", "sitemap_hubs.xml", "sitemap_data.xml", "sitemap_swap.xml"]
+            "sitemap_stories.xml", "sitemap_hubs.xml", "sitemap_tools.xml",
+            "sitemap_data.xml", "sitemap_swap.xml"]
     items = "\n".join(f"  <sitemap><loc>{SITE}/{m}</loc></sitemap>" for m in maps
                       if os.path.exists(os.path.join(PAGES, m)))
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -371,9 +372,16 @@ def publish(urls):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--publish", action="store_true")
+    ap.add_argument(
+        "--cached-live",
+        action="store_true",
+        help="Use the verified availability snapshot without refreshing it.",
+    )
     args = ap.parse_args()
     comp_map = load_competitors()
-    live_keys = live_app_keys(APPSTORE, PAGES)
+    live_keys = live_app_keys(
+        APPSTORE, PAGES, refresh=not args.cached_live
+    )
     open(os.path.join(PAGES, "llms.txt"), "w", encoding="utf-8").write(build_llms(comp_map, live_keys))
     open(os.path.join(PAGES, "llms-full.txt"), "w", encoding="utf-8").write(
         build_llms_full(comp_map, live_keys))

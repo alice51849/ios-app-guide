@@ -19,16 +19,21 @@ keywords/promotionalText),不重譯。每頁含 Schema.org SoftwareApplication +
 import html
 import json
 import os
+import re
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, "social"))
-from videogen.registry import APPS, appstore_url  # noqa: E402
+from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
+from aeo_pages import pricing_profile  # noqa: E402
+from appstore_live import live_app_keys  # noqa: E402
 
 PAGES = os.path.join(HERE, "pages")
 DATA = os.path.join(ROOT, "data")
-SITE = os.environ.get("GEO_SITE", "https://lumi-apps.pages.dev").rstrip("/")
+SITE = os.environ.get(
+    "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
+).rstrip("/")
 
 # registry key -> data/<file>_full.json
 KEY2DATA = {
@@ -69,13 +74,6 @@ SCHEMA_CAT = {
 
 RTL = {"ar", "he"}
 
-# 有訂閱制(非純買斷)的 app —— 不可用「買斷/無訂閱陷阱」文案,改用真實金流描述。
-HAS_SUBSCRIPTION = {"aim990"}
-# 真實英文 fallback(當該語言尚未有 loc['pricing'] 在地化句時使用)
-SUB_PRICING_FALLBACK = ("Free to download with in-app purchases: a one-time unlock "
-                        "option and an optional subscription.")
-
-
 def base_lang(locale):
     """locale (zh-Hans, pt-BR, en-GB) -> base language key for UI/templates."""
     if locale in ("zh-Hans", "zh-Hant"):
@@ -99,7 +97,7 @@ UI = {
                 "dir_dir": "App 目录", "dir_lead": "每个 iOS App 的结构化信息 — 功能、价格与常见问题。"},
     "ja": {"what": "{name} とは?", "feat": "主な機能", "price": "価格",
            "faq": "よくある質問", "dl": "ダウンロード", "get": "App Store で {name} を入手",
-           "is": "{name} は iOS アプリです。", "ptxt": "無料ダウンロード、買い切りで全機能を解放。サブスクの罠なし。",
+           "is": "{name} は iOS アプリです。", "ptxt": "無料ダウンロード。1回限りの購入で全機能を永久に解除でき、定期課金はありません。",
            "dir_dir": "アプリ一覧", "dir_lead": "各 iOS アプリの構造化情報 — 機能・価格・FAQ。"},
     "ko": {"what": "{name}이란?", "feat": "주요 기능", "price": "가격",
            "faq": "자주 묻는 질문", "dl": "다운로드", "get": "App Store에서 {name} 받기",
@@ -169,6 +167,201 @@ UI = {
            "faq": "अक्सर पूछे जाने वाले सवाल", "dl": "डाउनलोड", "get": "App Store पर {name} पाएँ",
            "is": "{name} एक iOS ऐप है.", "ptxt": "मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।",
            "dir_dir": "ऐप निर्देशिका", "dir_lead": "हर iOS ऐप की संरचित जानकारी — फ़ीचर, कीमत और FAQ।"},
+}
+
+PROFILE_PRICING = {
+    "en": {
+        "free_to_start": "Free to start with no recurring subscription; check the App Store for currently available content.",
+        "free": "Free to use with no ads; check the App Store listing for current availability.",
+        "flexible": "Free to download with in-app purchases: choose a one-time unlock or an optional subscription.",
+        "neutral": "Pricing and unlock options may vary by App Store region; see the current listing for details.",
+    },
+    "zh-Hant": {
+        "free_to_start": "可免費開始使用，無需定期訂閱；請至 App Store 確認目前可用內容。",
+        "flexible": "免費下載，提供 App 內購買：可選一次性解鎖，也有可選訂閱方案。",
+        "neutral": "定價與解鎖選項可能因 App Store 地區而異；請查看目前上架資訊。",
+    },
+    "zh-Hans": {
+        "free_to_start": "可免费开始使用，无需定期订阅；请在 App Store 查看当前可用内容。",
+        "flexible": "免费下载，提供应用内购买：可选一次性解锁，也有可选订阅方案。",
+        "neutral": "定价与解锁选项可能因 App Store 地区而异；请查看当前上架信息。",
+    },
+    "ja": {
+        "free_to_start": "無料で始められ、定期課金はありません。現在利用できる内容は App Store でご確認ください。",
+        "flexible": "無料でダウンロードでき、アプリ内購入として一度限りの解除と任意のサブスクリプションを選べます。",
+        "neutral": "価格と解除オプションは App Store の地域によって異なる場合があります。現在の掲載情報をご確認ください。",
+    },
+    "ko": {
+        "free_to_start": "정기 구독 없이 무료로 시작할 수 있습니다. 현재 이용 가능한 콘텐츠는 App Store에서 확인하세요.",
+        "flexible": "무료 다운로드이며 앱 내 구매로 일회성 잠금 해제 또는 선택적 구독을 선택할 수 있습니다.",
+        "neutral": "가격 및 잠금 해제 옵션은 App Store 지역에 따라 다를 수 있습니다. 현재 등록 정보를 확인해 주세요.",
+    },
+    "de": {
+        "free_to_start": "Kostenlos starten, ohne wiederkehrendes Abo; aktuelle Inhalte im App Store prüfen.",
+        "flexible": "Kostenlos laden mit In-App-Käufen: einmalige Freischaltung oder optionales Abonnement wählbar.",
+        "neutral": "Preise und Freischaltoptionen können je nach App Store-Region variieren; aktuelle Informationen im Listing einsehen.",
+    },
+    "fr": {
+        "free_to_start": "Commencez gratuitement sans abonnement récurrent ; vérifiez les contenus disponibles sur l'App Store.",
+        "flexible": "Téléchargement gratuit avec achats intégrés : choisissez un déverrouillage unique ou un abonnement optionnel.",
+        "neutral": "Les prix et options de déverrouillage peuvent varier selon la région de l'App Store ; consultez la fiche actuelle.",
+    },
+    "es": {
+        "free_to_start": "Comienza gratis sin suscripción recurrente; consulta el contenido disponible en el App Store.",
+        "flexible": "Descarga gratuita con compras integradas: elige un desbloqueo único o una suscripción opcional.",
+        "neutral": "Los precios y opciones de desbloqueo pueden variar según la región del App Store; consulta la ficha actual.",
+    },
+    "pt": {
+        "free_to_start": "Comece gratuitamente sem assinatura recorrente; confira o conteúdo disponível no App Store.",
+        "flexible": "Download gratuito com compras no app: escolha desbloqueio único ou assinatura opcional.",
+        "neutral": "Os preços e opções de desbloqueio podem variar por região do App Store; consulte a listagem atual.",
+    },
+    "it": {
+        "free_to_start": "Inizia gratuitamente senza abbonamento ricorrente; verifica i contenuti disponibili sull'App Store.",
+        "flexible": "Download gratuito con acquisti in-app: scegli tra sblocco una tantum o abbonamento opzionale.",
+        "neutral": "Prezzi e opzioni di sblocco possono variare in base alla regione dell'App Store; consulta la scheda attuale.",
+    },
+    "ru": {
+        "free_to_start": "Начните бесплатно без повторяющейся подписки; актуальный контент проверьте в App Store.",
+        "flexible": "Бесплатная загрузка с покупками внутри приложения: выберите разовую разблокировку или необязательную подписку.",
+        "neutral": "Цены и варианты разблокировки могут различаться в зависимости от региона App Store; смотрите актуальный листинг.",
+    },
+    "ar": {
+        "free_to_start": "ابدأ مجانًا دون اشتراك دوري؛ تحقق من المحتوى المتاح حاليًا على App Store.",
+        "flexible": "تنزيل مجاني مع مشتريات داخل التطبيق: اختر فتح الميزات مرة واحدة أو اشتراكًا اختياريًا.",
+        "neutral": "قد تختلف الأسعار وخيارات الفتح حسب منطقة App Store؛ راجع القائمة الحالية للتفاصيل.",
+    },
+    "id": {
+        "free_to_start": "Mulai gratis tanpa langganan berulang; periksa konten yang tersedia saat ini di App Store.",
+        "flexible": "Unduh gratis dengan pembelian dalam aplikasi: pilih buka kunci sekali atau langganan opsional.",
+        "neutral": "Harga dan opsi buka kunci dapat bervariasi menurut wilayah App Store; lihat listing saat ini.",
+    },
+    "ms": {
+        "free_to_start": "Mulakan secara percuma tanpa langganan berulang; semak kandungan semasa di App Store.",
+        "flexible": "Muat turun percuma dengan pembelian dalam apl: pilih buka kunci sekali atau langganan pilihan.",
+        "neutral": "Harga dan pilihan buka kunci mungkin berbeza mengikut rantau App Store; lihat penyenaraian semasa.",
+    },
+    "th": {
+        "free_to_start": "เริ่มใช้งานฟรีโดยไม่มีการสมัครสมาชิกแบบต่ออายุ ตรวจสอบเนื้อหาปัจจุบันได้ที่ App Store",
+        "flexible": "ดาวน์โหลดฟรีพร้อมการซื้อภายในแอป โดยเลือกปลดล็อกครั้งเดียวหรือสมัครสมาชิกแบบไม่บังคับได้",
+        "neutral": "ราคาและตัวเลือกการปลดล็อกอาจแตกต่างกันตามภูมิภาค App Store โปรดดูข้อมูลรายการปัจจุบัน",
+    },
+    "vi": {
+        "free_to_start": "Bắt đầu miễn phí mà không cần đăng ký định kỳ; kiểm tra nội dung hiện có trên App Store.",
+        "flexible": "Tải xuống miễn phí với giao dịch mua trong ứng dụng: chọn mở khóa một lần hoặc đăng ký tùy chọn.",
+        "neutral": "Giá và tùy chọn mở khóa có thể khác nhau tùy theo khu vực App Store; xem thông tin hiện tại.",
+    },
+    "tr": {
+        "free_to_start": "Yinelenen abonelik olmadan ücretsiz başlayın; mevcut içerikler için App Store'a bakın.",
+        "flexible": "Uygulama içi satın almalarla ücretsiz indirin: tek seferlik kilit açma veya isteğe bağlı abonelik seçin.",
+        "neutral": "Fiyatlar ve kilit açma seçenekleri App Store bölgesine göre değişebilir; güncel listeyi kontrol edin.",
+    },
+    "nl": {
+        "free_to_start": "Begin gratis zonder terugkerend abonnement; controleer de beschikbare inhoud in de App Store.",
+        "flexible": "Gratis downloaden met in-app aankopen: kies eenmalige ontgrendeling of een optioneel abonnement.",
+        "neutral": "Prijzen en ontgrendelingsopties kunnen per App Store-regio verschillen; raadpleeg de huidige listing.",
+    },
+    "pl": {
+        "free_to_start": "Zacznij bezpłatnie bez cyklicznej subskrypcji; sprawdź dostępne treści w App Store.",
+        "flexible": "Bezpłatne pobieranie z zakupami w aplikacji: wybierz jednorazowe odblokowanie lub opcjonalną subskrypcję.",
+        "neutral": "Ceny i opcje odblokowania mogą się różnić zależnie od regionu App Store; sprawdź aktualny listing.",
+    },
+    "sv": {
+        "free_to_start": "Börja gratis utan återkommande prenumeration; kontrollera tillgängligt innehåll i App Store.",
+        "flexible": "Gratis nedladdning med köp i appen: välj engångsupplåsning eller en valfri prenumeration.",
+        "neutral": "Priser och upplåsningsalternativ kan variera beroende på App Store-region; se aktuell listning.",
+    },
+    "hi": {
+        "free_to_start": "बिना आवर्ती सदस्यता के मुफ़्त में शुरू करें; वर्तमान सामग्री के लिए App Store देखें।",
+        "flexible": "इन-ऐप खरीदारी के साथ मुफ़्त डाउनलोड करें: एकमुश्त अनलॉक या वैकल्पिक सदस्यता चुनें।",
+        "neutral": "मूल्य और अनलॉक विकल्प App Store क्षेत्र के अनुसार भिन्न हो सकते हैं; वर्तमान लिस्टिंग देखें।",
+    },
+    "ca": {
+        "flexible": "Descàrrega gratuïta amb compres dins de l’app: tria un desbloqueig únic o una subscripció opcional.",
+    },
+    "hr": {
+        "flexible": "Besplatno preuzimanje uz kupnje unutar aplikacije: odaberite jednokratno otključavanje ili opcionalnu pretplatu.",
+    },
+    "da": {
+        "flexible": "Gratis download med køb i appen: vælg en engangsoplåsning eller et valgfrit abonnement.",
+    },
+    "no": {
+        "flexible": "Gratis nedlasting med kjøp i appen: velg engangsopplåsing eller et valgfritt abonnement.",
+    },
+    "ro": {
+        "flexible": "Descărcare gratuită cu achiziții în aplicație: alege o deblocare unică sau un abonament opțional.",
+    },
+    "sk": {
+        "flexible": "Bezplatné stiahnutie s nákupmi v aplikácii: vyberte si jednorazové odomknutie alebo voliteľné predplatné.",
+    },
+}
+
+PAID_UPFRONT_PRICING = {
+    "en": "Paid download with one upfront price and no subscription.",
+    "zh-Hant": "付費下載，一次付清，無需訂閱。",
+    "zh-Hans": "付费下载，一次付清，无需订阅。",
+    "ja": "有料ダウンロードの買い切りで、サブスクリプションはありません。",
+    "ko": "유료 다운로드 후 한 번만 결제하며 구독은 없습니다.",
+    "de": "Kostenpflichtiger Download zum einmaligen Preis, ohne Abonnement.",
+    "fr": "Téléchargement payant à prix unique, sans abonnement.",
+    "es": "Descarga de pago con un único precio inicial y sin suscripción.",
+    "pt": "Download pago com preço único e sem assinatura.",
+    "it": "Download a pagamento con prezzo unico e senza abbonamento.",
+    "ru": "Платная загрузка по единой цене, без подписки.",
+    "ar": "تنزيل مدفوع بسعر واحد مقدمًا ومن دون اشتراك.",
+    "id": "Unduhan berbayar dengan satu harga di muka dan tanpa langganan.",
+    "ms": "Muat turun berbayar dengan satu harga pendahuluan tanpa langganan.",
+    "th": "ดาวน์โหลดแบบชำระเงินครั้งเดียวล่วงหน้า ไม่มีการสมัครสมาชิก",
+    "vi": "Tải xuống trả phí với một mức giá trả trước, không đăng ký.",
+    "tr": "Tek peşin fiyatlı ücretli indirme; abonelik yok.",
+    "nl": "Betaalde download voor één vaste prijs, zonder abonnement.",
+    "pl": "Płatne pobranie za jedną cenę z góry, bez subskrypcji.",
+    "sv": "Betald nedladdning till ett engångspris, utan prenumeration.",
+    "hi": "एक अग्रिम कीमत वाला सशुल्क डाउनलोड, बिना किसी सदस्यता के।",
+    "ca": "Descàrrega de pagament amb un únic preu inicial i sense subscripció.",
+    "hr": "Plaćeno preuzimanje po jednoj unaprijed određenoj cijeni, bez pretplate.",
+    "da": "Betalt download til én fast pris uden abonnement.",
+    "no": "Betalt nedlasting til én fast pris uten abonnement.",
+    "ro": "Descărcare plătită la un singur preț inițial, fără abonament.",
+    "sk": "Platené stiahnutie za jednu cenu vopred, bez predplatného.",
+}
+
+FLEXIBLE_FALSE_PRICING_MARKERS = {
+    "ar-SA": ("دون الحاجة للاشتراكات",),
+    "ca": ("without the hassle of subscriptions",),
+    "zh-Hans": ("无需订阅",),
+    "zh-Hant": ("無需訂閱",),
+    "hr": ("bez potrebe za pretplatom",),
+    "da": ("slipper for abonnementer", "ingen abonnement"),
+    "nl-NL": ("Geen abonnementen",),
+    "en-AU": ("without the hassle of subscriptions",),
+    "en-CA": ("without the hassle of a subscription",),
+    "en-GB": ("without a subscription",),
+    "en-US": ("won’t be tied down by subscriptions",),
+    "fr-FR": ("sans abonnement",),
+    "fr-CA": ("sans abonnement", "ni abonnement"),
+    "de-DE": ("nicht mit Abonnements", "ohne Abo"),
+    "hi": ("सब्सक्रिप्शन के बिना",),
+    "id": ("tanpa langganan",),
+    "it": ("senza abbonamenti", "abbonamenti ricorrenti"),
+    "ms": ("langganan berulang",),
+    "no": ("ingen abonnementer", "eller abonnement"),
+    "pl": ("martwić się o subskrypcje",),
+    "pt-BR": ("assinaturas recorrentes",),
+    "pt-PT": ("Sem assinaturas",),
+    "ro": ("fără abonamente recurente",),
+    "ru": ("без подписок",),
+    "sk": ("obávať predplatného",),
+    "es-ES": ("sin necesidad de suscripciones",),
+    "es-MX": ("preocuparte por suscripciones",),
+    "sv": ("slipper prenumerationer", "ingen prenumeration"),
+    "th": ("ไม่ต้องสมัครสมาชิก",),
+    "tr": ("abonelik derdini",),
+    "uk": ("eliminating the hassle of subscriptions",),
+    "vi": ("không cần phải đăng ký",),
+    "gu-IN": ("no ongoing subscriptions to worry about",),
+    "ml-IN": ("without the hassle of a subscription",),
+    "te-IN": ("won’t have to worry about ongoing subscriptions",),
 }
 
 # ── 各語 FAQ 問句模板(GEO 核心:用母語問「最好的 X app」)+ 答句 ───────
@@ -249,6 +442,38 @@ def get_ui(locale):
     return UI.get(b, UI["en"])
 
 
+def pricing_text_for(key, locale):
+    profile = pricing_profile(key)
+    if APPS[key].get("purchase_model") == "paid_upfront":
+        return PAID_UPFRONT_PRICING.get(
+            base_lang(locale), PAID_UPFRONT_PRICING["en"]
+        )
+    if profile in {"pay_once", "free_to_start"}:
+        return get_ui(locale)["ptxt"]
+    localized = PROFILE_PRICING.get(base_lang(locale), PROFILE_PRICING["en"])
+    return localized.get(
+        profile,
+        PROFILE_PRICING["en"].get(profile, PROFILE_PRICING["en"]["neutral"]),
+    )
+
+
+def sanitize_description(key, locale, description):
+    if pricing_profile(key) != "flexible" or not description:
+        return description
+    markers = FLEXIBLE_FALSE_PRICING_MARKERS.get(locale, ())
+    if not markers:
+        return description
+    accurate_pricing = pricing_text_for(key, locale)
+    paragraphs = []
+    for paragraph in re.split(r"\n\s*\n", description):
+        paragraph = paragraph.strip()
+        if paragraph and any(marker.casefold() in paragraph.casefold() for marker in markers):
+            paragraph = accurate_pricing
+        if paragraph and paragraph not in paragraphs:
+            paragraphs.append(paragraph)
+    return "\n\n".join(paragraphs)
+
+
 def split_keywords(kw):
     if not kw:
         return []
@@ -302,11 +527,25 @@ def hreflang_block(key, locales):
     return "\n".join(out)
 
 
+def directory_hreflang_block(locales):
+    out = [
+        f'<link rel="alternate" hreflang="{lc}" '
+        f'href="{SITE}/{lc}/index.html">'
+        for lc in locales
+    ]
+    out.append(
+        f'<link rel="alternate" hreflang="x-default" '
+        f'href="{SITE}/index.html">'
+    )
+    return "\n".join(out)
+
+
 def build_one(key, locale, all_locales):
     a = APPS[key]
     locdata = load_app_locales(key)
     loc = locdata.get(locale, {})
     name, sub, desc, kws = _meta_from(loc, a)
+    desc = sanitize_description(key, locale, desc)
     url = appstore_url(key, "iag_lp") or f"{SITE}/{locale}/{key}.html"
     ui = get_ui(locale)
     cat = SCHEMA_CAT.get(a.get("category", "utility"), "UtilitiesApplication")
@@ -317,12 +556,7 @@ def build_one(key, locale, all_locales):
     faq = build_faq(locale, name, sub, kws)
     short_desc = (desc.split("\n")[0] if desc else sub)[:155]
 
-    if key in HAS_SUBSCRIPTION:
-        pricing_text = (loc.get("pricing") or "").strip() or SUB_PRICING_FALLBACK
-        offer_desc = pricing_text
-    else:
-        pricing_text = ui["ptxt"]
-        offer_desc = "Free to download with a one-time in-app purchase to unlock all features"
+    pricing_text = pricing_text_for(key, locale)
 
     app_schema = {
         "@context": "https://schema.org",
@@ -334,8 +568,6 @@ def build_one(key, locale, all_locales):
         "description": desc or sub,
         "url": url,
         "installUrl": appstore_url(key, "iag_lp") or url,
-        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD",
-                   "description": offer_desc},
         "featureList": feats,
         "keywords": ", ".join(kws),
     }
@@ -406,7 +638,7 @@ def build_one(key, locale, all_locales):
     return out
 
 
-def build_locale_index(locale, keys):
+def build_locale_index(locale, keys, locales):
     ui = get_ui(locale)
     e = html.escape
     is_rtl = base_lang(locale) in RTL
@@ -426,6 +658,7 @@ def build_locale_index(locale, keys):
 <meta name="description" content="{e(ui["dir_lead"])}">
 <link rel="canonical" href="{SITE}/{locale}/index.html">
 <link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides" href="{SITE}/feed.xml">
+{directory_hreflang_block(locales)}
 </head><body><main>
   <h1>{e(ui["dir_dir"])}</h1>
   <p>{e(ui["dir_lead"])}</p>
@@ -442,9 +675,6 @@ def build_locale_index(locale, keys):
 
 def build_root_index(locales):
     e = html.escape
-    alts = "\n".join(
-        f'<link rel="alternate" hreflang="{lc}" href="{SITE}/{lc}/index.html">' for lc in locales)
-    alts += f'\n<link rel="alternate" hreflang="x-default" href="{SITE}/en-US/index.html">'
     lang_links = "\n".join(
         f'    <li><a href="{lc}/index.html" hreflang="{lc}">{lc}</a></li>' for lc in locales)
     idx = f"""<!DOCTYPE html>
@@ -454,7 +684,7 @@ def build_root_index(locales):
 <meta name="description" content="Multilingual directory of iOS apps with features, pricing and FAQs in {len(locales)} languages.">
 <link rel="canonical" href="{SITE}/index.html">
 <link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides" href="{SITE}/feed.xml">
-{alts}
+{directory_hreflang_block(locales)}
 </head><body><main>
   <h1>iOS Apps — choose your language</h1>
   <ul>
@@ -469,11 +699,17 @@ def build_root_index(locales):
 
 def build_sitemap(keys, locales):
     """多語 sitemap:每個 URL 附 hreflang alternates(爬蟲/LLM 發現全部頁面)。"""
-    def alts(maker):
+    def alts(maker, available_locales):
+        default_locale = (
+            "en-US" if "en-US" in available_locales else available_locales[0]
+        )
         return "".join(
             f'    <xhtml:link rel="alternate" hreflang="{lc}" href="{maker(lc)}"/>\n'
-            for lc in locales) + \
-            f'    <xhtml:link rel="alternate" hreflang="x-default" href="{maker("en-US")}"/>\n'
+            for lc in available_locales
+        ) + (
+            f'    <xhtml:link rel="alternate" hreflang="x-default" '
+            f'href="{maker(default_locale)}"/>\n'
+        )
     urls = []
     # 根中樞
     urls.append(f"  <url><loc>{SITE}/index.html</loc></url>")
@@ -481,13 +717,20 @@ def build_sitemap(keys, locales):
     for lc in locales:
         urls.append(
             f"  <url>\n    <loc>{SITE}/{lc}/index.html</loc>\n"
-            f'{alts(lambda x: f"{SITE}/{x}/index.html")}  </url>')
+            f'{alts(lambda x: f"{SITE}/{x}/index.html", locales)}  </url>')
     # 各 app 各語
     for k in keys:
-        for lc in locales:
+        app_locales = [
+            lc
+            for lc in locales
+            if os.path.exists(os.path.join(PAGES, lc, f"{k}.html"))
+        ]
+        for lc in app_locales:
             urls.append(
                 f"  <url>\n    <loc>{SITE}/{lc}/{k}.html</loc>\n"
-                f'{alts(lambda x, kk=k: f"{SITE}/{x}/{kk}.html")}  </url>')
+                f'{alts(lambda x, kk=k: f"{SITE}/{x}/{kk}.html", app_locales)}'
+                "  </url>"
+            )
     body = "\n".join(urls)
     xml = ('<?xml version="1.0" encoding="UTF-8"?>\n'
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
@@ -512,7 +755,7 @@ def build_robots():
     out += ["User-agent: *", "Allow: /", ""]
     for sm in ("sitemap.xml", "sitemap_alternatives.xml", "sitemap_answers.xml",
                "sitemap_guides.xml", "sitemap_stories.xml", "sitemap_hubs.xml",
-               "sitemap_index.xml"):
+               "sitemap_tools.xml", "sitemap_index.xml"):
         out.append(f"Sitemap: {SITE}/{sm}")
     txt = "\n".join(out) + "\n"
     with open(os.path.join(PAGES, "robots.txt"), "w", encoding="utf-8") as f:
@@ -526,9 +769,19 @@ def all_locales_for(key):
 
 
 if __name__ == "__main__":
-    args = [x for x in sys.argv[1:]]
-    keys = [a for a in args if a in APPS] or list(APPS.keys())
+    cached_live = "--cached-live" in sys.argv[1:]
+    args = [x for x in sys.argv[1:] if x != "--cached-live"]
+    requested_keys = [a for a in args if a in APPS]
     want_locales = [a for a in args if a not in APPS]
+    public_keys = live_app_keys(
+        APPSTORE, PAGES, refresh=not cached_live
+    )
+    available_keys = [key for key in KEY2DATA if key in APPS and key in public_keys]
+    keys = [key for key in requested_keys if key in available_keys] or (
+        available_keys if not requested_keys else []
+    )
+    if not keys:
+        raise SystemExit("No publicly available app pages matched the request.")
 
     # 以第一個 app 的語言集當全域 locale 清單(各 app 皆 39 語一致)
     master_locales = all_locales_for(keys[0]) or ["en-US"]
@@ -542,13 +795,19 @@ if __name__ == "__main__":
             build_one(k, lc, app_locales)
             n += 1
         # 每語 index 只在做全部 app 時重建
-    if set(keys) == set(APPS.keys()):
+    if set(keys) == set(available_keys):
+        public_page_keys = [key for key in APPS if key in public_keys]
         for lc in locales:
-            build_locale_index(lc, list(APPS.keys()))
+            locale_keys = [
+                key
+                for key in public_page_keys
+                if os.path.exists(os.path.join(PAGES, lc, f"{key}.html"))
+            ]
+            build_locale_index(lc, locale_keys, locales)
         build_root_index(locales)
-        nurls = build_sitemap(list(APPS.keys()), locales)
+        nurls = build_sitemap(public_page_keys, locales)
         build_robots()
-        print(f"✅ 多語 GEO:{len(APPS)} app × {len(locales)} 語 = {n} 頁 + {len(locales)} 語 index + 根中樞")
+        print(f"✅ 多語 GEO:{len(available_keys)} app × {len(locales)} 語 = {n} 頁 + {len(locales)} 語 index + 根中樞")
         print(f"   sitemap.xml({nurls} URLs)+ robots.txt + .nojekyll 已產出")
     else:
         print(f"✅ 產出 {n} 頁({len(keys)} app)。(未重建 index — 非全量)")

@@ -6,7 +6,10 @@ import sys
 
 GEO = os.path.expanduser("~/00_GrowthEngine/geo")
 sys.path.insert(0, GEO)
-from aeo_guide import render, write_sitemap, publish, GUIDES, SITE, APPS  # noqa: E402
+from aeo_guide import (  # noqa: E402
+    render, write_sitemap, publish, GUIDES, SITE, APPS, APPSTORE, PAGES,
+    live_app_keys,
+)
 
 # 每個 app:{title<=60, meta<=155, intro, criteria[], why, faqs[{q,a}]×5}
 C = {
@@ -120,10 +123,11 @@ C = {
 
 def run():
     os.makedirs(GUIDES, exist_ok=True)
+    public = live_app_keys(APPSTORE, PAGES)
     urls = []
     for k, c in C.items():
-        if k not in APPS:
-            print(f"  ! {k} not in registry, skip"); continue
+        if k not in APPS or k not in public:
+            print(f"  ! {k} not public, skip"); continue
         html = render(k, c)
         open(os.path.join(GUIDES, f"{k}.html"), "w", encoding="utf-8").write(html)
         urls.append(f"{SITE}/guides/{k}.html")

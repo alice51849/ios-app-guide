@@ -27,7 +27,8 @@ from datetime import date
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, "social"))
-from videogen.registry import APPS, appstore_url  # noqa: E402
+from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
+from appstore_live import live_app_keys  # noqa: E402
 
 PAGES = os.path.join(HERE, "pages")
 GUIDES = os.path.join(PAGES, "guides")
@@ -145,10 +146,6 @@ def render(key, c):
     app_schema = {"@context": "https://schema.org", "@type": "SoftwareApplication",
                   "name": a["name"], "operatingSystem": "iOS", "applicationCategory": scat,
                   "url": url, "installUrl": url, "description": meta,
-                  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD",
-                             "description": "Free to download; one-time in-app purchase to unlock. No subscription."
-                             if any("once" in b.lower() or "subscription" in b.lower()
-                                    for b in a.get("cta_bullets", [])) else "Free to download."},
                   "featureList": a.get("cta_bullets", []) + a.get("keywords", [])[:5]}
     faq_schema = {"@context": "https://schema.org", "@type": "FAQPage",
                   "mainEntity": [{"@type": "Question", "name": q,
@@ -241,7 +238,12 @@ def main():
     ap.add_argument("apps", nargs="*")
     ap.add_argument("--publish", action="store_true")
     args = ap.parse_args()
-    keys = [k for k in (args.apps or APPS.keys()) if k in APPS]
+    live_keys = live_app_keys(APPSTORE, PAGES, refresh=False)
+    keys = [
+        k
+        for k in (args.apps or APPS.keys())
+        if k in APPS and k in live_keys
+    ]
     os.makedirs(GUIDES, exist_ok=True)
     urls = []
     for k in keys:

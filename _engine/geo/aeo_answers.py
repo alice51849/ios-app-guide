@@ -133,7 +133,7 @@ def app_truth_notes(key: str, app: dict[str, Any]) -> list[str]:
     bullets = ", ".join(app.get("cta_bullets", []))
     if key == "aim990":
         notes.extend([
-            "Aim990 has BOTH a one-time unlock option AND subscription options; never claim no subscription.",
+            "Aim990 has a one-time unlock and no subscription.",
             "Never promise or guarantee a TOEIC score or improvement.",
             "TOEIC is a registered trademark of ETS. Aim990 is an independent study aid, not affiliated with or endorsed by ETS.",
         ])
@@ -284,8 +284,11 @@ def normalized_content(raw: dict[str, Any], question: str, key: str) -> dict[str
         if "ETS" not in content["where_app_fits"]:
             content["where_app_fits"] = content["where_app_fits"].rstrip(".") + "." + disclaimer
         joined = json.dumps(content, ensure_ascii=False).lower()
-        if "no subscription" in joined or "subscription-free" in joined:
-            raise ValueError("Unsafe Aim990 subscription claim detected")
+        if re.search(
+            r"optional subscriptions?|subscription options?|offers? subscriptions?",
+            joined,
+        ):
+            raise ValueError("Unsafe Aim990 optional-subscription claim detected")
     return content
 
 
@@ -314,7 +317,6 @@ def feature_list(key: str) -> list[str]:
     app = APPS[key]
     features = list(app.get("cta_bullets", []))[:5]
     if key == "aim990":
-        features.append("One-time unlock option and subscription options")
         features.append("Independent TOEIC L&R study aid")
     return features[:6]
 
@@ -363,7 +365,6 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
         "url": url,
         "installUrl": url,
         "description": meta,
-        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free to download; check the App Store for current pricing and unlock details."},
         "featureList": feature_list(key),
     }
     org = {"@context": "https://schema.org", "@graph": [
@@ -425,8 +426,10 @@ def _coverage_rates() -> dict:
         return {}
 
 
-def question_plan(keys: list[str] | None) -> list[tuple[str, str]]:
-    public = live_app_keys(APPSTORE, ROOT / "pages", refresh=True)
+def question_plan(
+    keys: list[str] | None, refresh_live: bool = True
+) -> list[tuple[str, str]]:
+    public = live_app_keys(APPSTORE, ROOT / "pages", refresh=refresh_live)
     selected = keys or [key for key in APPS if key in public]
     unknown = [k for k in selected if k not in APPS]
     if unknown:
@@ -483,8 +486,17 @@ def parse_page_info(path: Path) -> tuple[str, str]:
     return html.unescape(title), html.unescape(app)
 
 
+def is_redirect_page(path: Path) -> bool:
+    head = path.read_text(encoding="utf-8", errors="replace")[:4096].lower()
+    return 'http-equiv="refresh"' in head and 'name="robots" content="noindex' in head
+
+
 def regenerate_index() -> None:
-    pages = [p for p in ANSWERS_DIR.glob("*.html") if p.name != "index.html"]
+    pages = [
+        p
+        for p in ANSWERS_DIR.glob("*.html")
+        if p.name != "index.html" and not is_redirect_page(p)
+    ]
     cards = []
     for p in sorted(pages, key=lambda x: x.stem):
         title, app = parse_page_info(p)
@@ -518,10 +530,12 @@ def write_sitemap() -> None:
     pages_dir = ROOT / "pages"
     entries: list[tuple[str, Path]] = []
     for p in sorted(pages_dir.glob("answers/*.html")):
-        entries.append((f"{SITE}/answers/{p.name}", p))
+        if not is_redirect_page(p):
+            entries.append((f"{SITE}/answers/{p.name}", p))
     for p in sorted(pages_dir.glob("*/answers/*.html")):
         rel = p.relative_to(pages_dir).as_posix()
-        entries.append((f"{SITE}/{rel}", p))
+        if not is_redirect_page(p):
+            entries.append((f"{SITE}/{rel}", p))
 
     def _lm(p: Path) -> str:
         return _time.strftime("%Y-%m-%d", _time.gmtime(p.stat().st_mtime))
@@ -542,12 +556,19 @@ def main() -> None:
     parser.add_argument("--limit", type=int, default=None, help="Maximum number of new pages to create.")
     parser.add_argument("--no-finalize", action="store_true", help="Skip index+sitemap rebuild (for parallel workers).")
     parser.add_argument("--use-openai", action="store_true", help="Explicitly opt in to OpenAI generation. Default is offline.")
+    parser.add_argument(
+        "--cached-live",
+        action="store_true",
+        help="Use the verified availability snapshot without refreshing it.",
+    )
     args = parser.parse_args()
     if args.use_openai and not key_available():
         parser.error("--use-openai requires ~/.openai_key")
     ANSWERS_DIR.mkdir(parents=True, exist_ok=True)
     created: list[str] = []
-    for key, question in question_plan(args.apps or None):
+    for key, question in question_plan(
+        args.apps or None, refresh_live=not args.cached_live
+    ):
         if args.limit is not None and len(created) >= args.limit:
             break
         slug = create_page(key, question, use_openai=args.use_openai)

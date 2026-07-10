@@ -14,12 +14,16 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "..", "social"))
-from videogen.registry import APPS, appstore_url  # noqa: E402
+from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 sys.path.insert(0, HERE)
+from aeo_pages import pricing_profile  # noqa: E402
+from appstore_live import live_app_keys  # noqa: E402
 from queries import queries_for  # noqa: E402
 
 PAGES = os.path.join(HERE, "pages")
-SITE = os.environ.get("GEO_SITE", "https://lumi-apps.pages.dev")  # 部署網域(可換)
+SITE = os.environ.get(
+    "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
+).rstrip("/")
 
 SCHEMA_CAT = {
     "photo-utility": "PhotographyApplication",
@@ -61,6 +65,34 @@ def _faq(key, a):
     return qa
 
 
+def pricing_copy(key):
+    model = APPS[key].get("purchase_model")
+    profile = pricing_profile(key)
+    if model == "paid_upfront":
+        return "Paid download with one upfront price and no subscription."
+    if model == "free_with_lifetime_unlock":
+        return (
+            "Free to download with an optional one-time lifetime unlock "
+            "and no recurring subscription."
+        )
+    if profile == "free":
+        return "Free to use; verify current availability on the App Store."
+    if profile == "free_to_start":
+        return (
+            "Free to start with a one-time complete-content unlock and "
+            "no recurring subscription."
+        )
+    if profile == "pay_once":
+        return (
+            "One-time-purchase access with no recurring subscription; "
+            "verify the current regional price on the App Store."
+        )
+    return (
+        "Pricing and unlock details may vary by App Store region; "
+        "check the current listing."
+    )
+
+
 def build_one(key):
     a = APPS[key]
     name = a["name"]
@@ -79,8 +111,6 @@ def build_one(key):
         "description": desc,
         "url": url or f"{SITE}/{key}.html",
         "installUrl": url,
-        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD",
-                   "description": "Free with in-app purchase / subscription to unlock all features"},
         "featureList": feats,
         "keywords": ", ".join(a.get("keywords", [])),
     }
@@ -129,8 +159,7 @@ def build_one(key):
   </ul>
 
   <h2>Pricing</h2>
-  <p>{e(name)} is free to download with a one-time purchase or subscription to unlock all
-  features and remove ads. A free tier is available.</p>
+  <p>{e(pricing_copy(key))}</p>
 
   <h2>Frequently asked questions</h2>
 {faq_html}
@@ -170,9 +199,29 @@ def build_index(keys):
 
 
 if __name__ == "__main__":
-    keys = [k for k in sys.argv[1:] if k in APPS] or list(APPS.keys())
+    requested = sys.argv[1:]
+    unknown = [key for key in requested if key not in APPS]
+    if unknown:
+        raise SystemExit(f"Unknown app key(s): {', '.join(unknown)}")
+    public = live_app_keys(APPSTORE, PAGES)
+    keys = [
+        key
+        for key in (requested or APPS.keys())
+        if key in public
+    ]
+    unavailable = [key for key in requested if key not in public]
+    if unavailable:
+        raise SystemExit(
+            "App Store not public; outreach skipped: "
+            + ", ".join(unavailable)
+        )
     for k in keys:
         print("✓", build_one(k))
-    build_index(list(APPS.keys()))
-    print(f"\n✅ 產出 {len(keys)} 頁 + index.html → geo/pages/")
+    if not requested:
+        build_index(keys)
+    print(
+        f"\n✅ 產出 {len(keys)} 頁"
+        + (" + index.html" if not requested else "")
+        + " → geo/pages/"
+    )
     print(f"   部署網域(可用 GEO_SITE 覆寫): {SITE}")

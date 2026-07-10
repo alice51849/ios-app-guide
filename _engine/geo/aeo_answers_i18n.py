@@ -12,6 +12,7 @@ import sys
 import time
 import urllib.error
 import urllib.request
+from urllib.parse import urlsplit, urlunsplit
 from pathlib import Path
 from typing import Any
 
@@ -84,14 +85,32 @@ def page_url(slug: str, lang: str | None = None) -> str:
 
 
 def localize_url(url: str, lang: str) -> str:
-    if not url.startswith(BASE_URL + "/"):
+    parsed = urlsplit(url)
+    base = urlsplit(BASE_URL)
+    if (
+        parsed.scheme != base.scheme
+        or parsed.netloc != base.netloc
+        or not parsed.path.startswith(base.path.rstrip("/") + "/")
+    ):
         return url
-    suffix = url[len(BASE_URL) + 1 :]
+    suffix = parsed.path[len(base.path.rstrip("/")) + 1 :]
     if suffix.startswith(tuple(x + "/" for x in ALL_LANGS)):
         return url
-    if suffix.startswith("#"):
+    localized = ROOT / lang / suffix
+    if suffix.endswith("/"):
+        localized /= "index.html"
+    if not localized.exists():
         return url
-    return f"{BASE_URL}/{lang}/{suffix}"
+    localized_path = f"{base.path.rstrip('/')}/{lang}/{suffix}"
+    return urlunsplit(
+        (
+            parsed.scheme,
+            parsed.netloc,
+            localized_path,
+            parsed.query,
+            parsed.fragment,
+        )
+    )
 
 
 def discover_slugs(limit: int | None = None) -> list[str]:
@@ -238,7 +257,7 @@ def call_openai(strings: list[str], lang: str, slug: str, api_key: str) -> dict[
         "Return strict JSON with one object key 'translations' mapping every source string exactly to a native translation. "
         "Preserve HTML entities conceptually but output plain Unicode text. Preserve brand names and URLs. "
         f"Do not translate these brand/platform names: {', '.join(BRANDS)}. "
-        "For Aim990/TOEIC content: never claim 'no subscription'; Aim990 has both a one-time unlock option and subscription plans. "
+        "For Aim990/TOEIC content: preserve that Aim990 has a one-time unlock and no subscription. "
         "Never promise or guarantee a TOEIC score or improvement. Keep the disclaimer that Aim990 is an independent study aid, "
         "is not affiliated with or endorsed by ETS, and TOEIC is a trademark of ETS. "
         "Do not fabricate ratings, downloads, awards, or claims."
@@ -287,14 +306,27 @@ def replace_spans(source: str, replacements: list[tuple[int, int, str]]) -> str:
     return "".join(out)
 
 
-def alternates_html(slug: str) -> str:
+def alternates_html(slug: str, current_lang: str | None = None) -> str:
     lines = []
-    for code in HREFLANG_ORDER:
-        if code == "en" or code == "x-default":
-            href = page_url(slug)
-        else:
-            href = page_url(slug, code)
-        lines.append(f'<link rel="alternate" hreflang="{code}" href="{href}">')
+    english = ANSWERS / f"{slug}.html"
+    if english.exists():
+        lines.append(
+            f'<link rel="alternate" hreflang="en" href="{page_url(slug)}">'
+        )
+    for code in ALL_LANGS:
+        target = ROOT / code / "answers" / f"{slug}.html"
+        if code == current_lang or target.exists():
+            lines.append(
+                f'<link rel="alternate" hreflang="{code}" '
+                f'href="{page_url(slug, code)}">'
+            )
+    default = page_url(slug) if english.exists() else page_url(
+        slug, current_lang
+    )
+    if default:
+        lines.append(
+            f'<link rel="alternate" hreflang="x-default" href="{default}">'
+        )
     return "\n".join(lines)
 
 
@@ -320,7 +352,7 @@ def finalize_html(source: str, lang: str, slug: str) -> str:
     )
     source = re.sub(
         r'(<link rel="alternate" hreflang="[^"]+" href="[^"]+">\s*)+',
-        alternates_html(slug) + "\n",
+        alternates_html(slug, lang) + "\n",
         source,
         count=1,
     )

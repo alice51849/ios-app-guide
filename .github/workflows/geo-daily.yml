@@ -36,17 +36,27 @@ jobs:
           ln -s "$GITHUB_WORKSPACE" _engine/geo/pages
       - name: Verify zero-cost growth infrastructure
         run: python3 -m unittest discover -s _engine/geo/tests -p "test_*.py"
+      - name: Refresh verified App Store availability once
+        run: |
+          cd _engine/geo
+          python3 -c 'import sys; sys.path.insert(0, "../social"); from appstore_live import live_app_keys; from videogen.registry import APPSTORE; print("verified public apps:", len(live_app_keys(APPSTORE, "pages", refresh=True)))'
       - name: Generate new answer pages (+ rebuild answers sitemap)
         run: |
           N="${{ github.event.inputs.answers || '8' }}"
           cd _engine/geo
-          python3 aeo_answers.py --limit "$N"
+          python3 aeo_answers.py --cached-live --limit "$N"
       - name: Refresh AI indexes + hubs + Atom feed
         run: |
           cd _engine/geo
-          python3 gen_llms.py
+          python3 gen_roundups.py
+          python3 aeo_pages.py --cached-live
+          python3 gen_cost_compare.py
+          python3 gen_calculator.py
+          python3 gen_data_hub.py
           python3 gen_hubs.py
           python3 gen_app_catalog.py
+          python3 cleanup_localized_assets.py --cached-live
+          python3 gen_llms.py --cached-live
           python3 gen_feed.py
       - name: Commit English content first (fast, before slow localization)
         run: |
@@ -57,7 +67,7 @@ jobs:
             echo "No content changes."
           else
             git commit -m "Daily GEO content: new answer pages + refreshed sitemaps"
-            git pull --rebase --autostash || true
+            git pull --rebase --autostash -X theirs
             git push
           fi
       - name: Localize from curated dictionaries (zero-cost, no API)
@@ -71,6 +81,10 @@ jobs:
         run: |
           cd _engine/geo
           python3 fix_en_hreflang.py || echo "fix_en_hreflang exited $?"
+      - name: Prune stale localized assets and pricing links
+        run: |
+          cd _engine/geo
+          python3 cleanup_localized_assets.py --cached-live
       - name: Add related-answers internal links (EN + major locales)
         run: |
           cd _engine/geo
@@ -83,6 +97,10 @@ jobs:
           for loc in "" "--locale zh-Hant" "--locale zh-Hans" "--locale ja" "--locale ko" "--locale es-ES" "--locale es-MX" "--locale de-DE" "--locale fr-FR" "--locale pt-BR" "--locale ms" "--locale ar-SA" "--locale pl"; do
             python3 add_related_tools.py $loc || echo "add_related_tools $loc exited $?"
           done
+      - name: Final link and availability cleanup
+        run: |
+          cd _engine/geo
+          python3 cleanup_localized_assets.py --cached-live
       - name: Unlink site dir
         run: rm -f _engine/geo/pages
       - name: Commit localized pages if any
@@ -92,6 +110,6 @@ jobs:
             echo "No localized changes."
           else
             git commit -m "Daily GEO content: localized answer pages"
-            git pull --rebase --autostash || true
+            git pull --rebase --autostash -X theirs
             git push
           fi

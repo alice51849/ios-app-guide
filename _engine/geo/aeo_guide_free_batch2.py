@@ -5,7 +5,10 @@ import sys
 
 GEO = os.path.expanduser("~/00_GrowthEngine/geo")
 sys.path.insert(0, GEO)
-from aeo_guide import render, write_sitemap, publish, GUIDES, SITE, APPS  # noqa: E402
+from aeo_guide import (  # noqa: E402
+    render, write_sitemap, publish, GUIDES, SITE, APPS, APPSTORE, PAGES,
+    live_app_keys,
+)
 
 C = {
  "picclear": {
@@ -328,10 +331,11 @@ C = {
 
 def run():
     os.makedirs(GUIDES, exist_ok=True)
+    public = live_app_keys(APPSTORE, PAGES)
     urls = []
     for k, c in C.items():
-        if k not in APPS:
-            print(f"  ! {k} not in registry, skip"); continue
+        if k not in APPS or k not in public:
+            print(f"  ! {k} not public, skip"); continue
         open(os.path.join(GUIDES, f"{k}.html"), "w", encoding="utf-8").write(render(k, c))
         urls.append(f"{SITE}/guides/{k}.html")
         print(f"  \u2713 {APPS[k]['name']}: {c['title'][:46]}")

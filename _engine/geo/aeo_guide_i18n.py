@@ -27,14 +27,23 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, "social"))
 sys.path.insert(0, HERE)
-from videogen.registry import APPS, appstore_url  # noqa: E402
+from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from aeo_guide import en_desc, competitors, gaps, SCHEMA_CAT, OPENAI_MODEL  # noqa: E402
+from appstore_live import live_app_keys  # noqa: E402
 
 PAGES = os.path.join(HERE, "pages")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
 STATE = os.path.join(HERE, "reports", ".guide_i18n_state.json")
-OPENAI_KEY = open(os.path.expanduser("~/.openai_key")).read().strip()
+try:
+    OPENAI_KEY = open(os.path.expanduser("~/.openai_key")).read().strip()
+except OSError:
+    OPENAI_KEY = ""
 e = html.escape
+HREFLANG_BLOCK_RE = re.compile(
+    r'(?:\s*<link\b[^>]*\brel="alternate"[^>]*'
+    r'\bhreflang="[^"]+"[^>]*>)+',
+    re.IGNORECASE,
+)
 
 # locale -> (語言名稱, 是否 RTL)
 LANGS = {
@@ -62,6 +71,8 @@ def save_state(done):
 
 
 def openai_json(system, user, max_tokens=1100, retries=3):
+    if not OPENAI_KEY:
+        raise RuntimeError("~/.openai_key is required to generate guide content")
     body = json.dumps({"model": OPENAI_MODEL,
                        "messages": [{"role": "system", "content": system},
                                     {"role": "user", "content": user}],
@@ -105,12 +116,72 @@ def gen(key, locale):
     return openai_json(SYS, user)
 
 
-def hreflang_block(key):
-    out = [f'<link rel="alternate" hreflang="en" href="{SITE}/guides/{key}.html">']
+def hreflang_block(key, current_locale=None):
+    out = []
+    english = os.path.join(PAGES, "guides", f"{key}.html")
+    if os.path.exists(english):
+        out.append(
+            f'<link rel="alternate" hreflang="en" '
+            f'href="{SITE}/guides/{key}.html">'
+        )
     for lc in ALL_LOCALES:
-        out.append(f'<link rel="alternate" hreflang="{lc.split("-")[0]}" href="{SITE}/{lc}/guides/{key}.html">')
-    out.append(f'<link rel="alternate" hreflang="x-default" href="{SITE}/guides/{key}.html">')
+        target = os.path.join(PAGES, lc, "guides", f"{key}.html")
+        if lc == current_locale or os.path.exists(target):
+            out.append(
+                f'<link rel="alternate" hreflang="{lc}" '
+                f'href="{SITE}/{lc}/guides/{key}.html">'
+            )
+    default = (
+        f"{SITE}/guides/{key}.html"
+        if os.path.exists(english)
+        else f"{SITE}/{current_locale}/guides/{key}.html"
+    )
+    out.append(
+        f'<link rel="alternate" hreflang="x-default" href="{default}">'
+    )
     return "\n".join(out)
+
+
+def reconcile_hreflang(keys):
+    changed = 0
+    for key in keys:
+        targets = [
+            (os.path.join(PAGES, "guides", f"{key}.html"), None)
+        ]
+        targets.extend(
+            (
+                os.path.join(PAGES, locale, "guides", f"{key}.html"),
+                locale,
+            )
+            for locale in ALL_LOCALES
+        )
+        for path, locale in targets:
+            if not os.path.exists(path):
+                continue
+            with open(path, encoding="utf-8") as handle:
+                original = handle.read()
+            block = hreflang_block(key, locale)
+            if HREFLANG_BLOCK_RE.search(original):
+                updated = HREFLANG_BLOCK_RE.sub(
+                    "\n" + block, original, count=1
+                )
+            else:
+                canonical = re.search(
+                    r'<link rel="canonical" href="[^"]+">', original
+                )
+                if not canonical:
+                    raise ValueError(f"Missing canonical link in {path}")
+                updated = (
+                    original[: canonical.end()]
+                    + "\n"
+                    + block
+                    + original[canonical.end() :]
+                )
+            if updated != original:
+                with open(path, "w", encoding="utf-8") as handle:
+                    handle.write(updated)
+                changed += 1
+    return changed
 
 
 FOOTER_DISCLAIMER = {
@@ -144,8 +215,7 @@ def render(key, locale, c):
 
     app_schema = {"@context": "https://schema.org", "@type": "SoftwareApplication", "name": a["name"],
                   "operatingSystem": "iOS", "applicationCategory": scat, "inLanguage": locale,
-                  "url": url, "installUrl": url, "description": meta,
-                  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}
+                  "url": url, "installUrl": url, "description": meta}
     faq_schema = {"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": locale,
                   "mainEntity": [{"@type": "Question", "name": q,
                                   "acceptedAnswer": {"@type": "Answer", "text": ans}} for q, ans in faqs]}
@@ -166,7 +236,7 @@ def render(key, locale, c):
 <title>{e(title)}</title>
 <meta name="description" content="{e(meta)}">
 <link rel="canonical" href="{SITE}/{locale}/guides/{key}.html">
-{hreflang_block(key)}
+{hreflang_block(key, locale)}
 {ld}
 </head>
 <body>
@@ -192,13 +262,16 @@ def render(key, locale, c):
 
 def git_publish(n):
     def run(cmd):
-        subprocess.run(cmd, cwd=PAGES, capture_output=True, text=True)
+        return subprocess.run(
+            cmd, cwd=PAGES, capture_output=True, text=True, check=True
+        )
     run(["git", "add", "-A"])
-    st = subprocess.run(["git", "status", "--porcelain"], cwd=PAGES, capture_output=True, text=True)
+    st = run(["git", "status", "--porcelain"])
     if not st.stdout.strip():
         return
     run(["git", "-c", "user.name=alice51849", "-c", "user.email=alice51849@users.noreply.github.com",
          "commit", "-m", f"Localize app guide pages (+{n}) [AEO i18n]"])
+    run(["git", "pull", "--rebase", "--autostash", "-X", "theirs"])
     run(["git", "-c", "credential.helper=!gh auth git-credential", "push", "-q", "origin", "main"])
     print(f"  ⬆ 已部署一批(+{n} 頁)")
 
@@ -209,11 +282,43 @@ def main():
     ap.add_argument("--langs", default="", help="逗號分隔 locale(預設全部)")
     ap.add_argument("--batch", type=int, default=40, help="每 N 頁 commit+push 一次")
     ap.add_argument("--publish", action="store_true", help="邊跑邊部署(預設只寫檔)")
+    ap.add_argument(
+        "--cached-live",
+        action="store_true",
+        help="Use the verified availability snapshot without refreshing it.",
+    )
     args = ap.parse_args()
 
-    keys = [k for k in (args.apps or APPS.keys()) if k in APPS]
+    public = live_app_keys(
+        APPSTORE, PAGES, refresh=not args.cached_live
+    )
+    unavailable = [key for key in args.apps if key not in public]
+    if unavailable:
+        raise SystemExit(
+            "App Store not public; outreach skipped: "
+            + ", ".join(unavailable)
+        )
+    keys = [
+        key
+        for key in (args.apps or APPS.keys())
+        if key in APPS and key in public
+    ]
     locales = [l for l in (args.langs.split(",") if args.langs else ALL_LOCALES) if l in LANGS]
     done = load_state()
+    for key in set(APPS) - public:
+        for locale in ALL_LOCALES:
+            stale = os.path.join(PAGES, locale, "guides", f"{key}.html")
+            if os.path.exists(stale):
+                os.remove(stale)
+    done = {
+        (key, locale)
+        for key, locale in done
+        if key in public
+        and os.path.exists(
+            os.path.join(PAGES, locale, "guides", f"{key}.html")
+        )
+    }
+    save_state(done)
     todo = [(k, lc) for k in keys for lc in locales if (k, lc) not in done]
     print(f"待生成 {len(todo)} 頁(已完成 {len(done)});語言 {len(locales)}、app {len(keys)}")
     n_since = 0
@@ -229,9 +334,12 @@ def main():
         if i % 10 == 0 or i == len(todo):
             print(f"  [{i}/{len(todo)}] {k}/{lc} ✓")
         if args.publish and n_since >= args.batch:
-            git_publish(n_since); n_since = 0
-    if args.publish and n_since:
-        git_publish(n_since)
+            reconciled = reconcile_hreflang(keys)
+            git_publish(n_since + reconciled)
+            n_since = 0
+    reconciled = reconcile_hreflang(keys)
+    if args.publish and (n_since or reconciled):
+        git_publish(n_since + reconciled)
     print(f"完成。state → {STATE}")
 
 

@@ -40,8 +40,8 @@ REPORTS = os.path.join(HERE, "reports")
 SOV = os.path.join(REPORTS, "aeo_sov.json")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
 
-# Aim990 同時提供一次解鎖與可選訂閱；所有外宣必須清楚呈現兩種選項。
-FLEXIBLE_PRICING = {"aim990"}
+# Only add keys here after ASC verifies both a one-time unlock and subscriptions.
+FLEXIBLE_PRICING = set()
 
 # 類別 → 給人看的名詞 + schema 類別
 CAT_NOUN = {
@@ -124,6 +124,11 @@ def pricing_profile(key):
     if key in FLEXIBLE_PRICING:
         return "flexible"
     app = APPS[key]
+    purchase_model = app.get("purchase_model")
+    if purchase_model == "free_with_lifetime_unlock":
+        return "free_to_start"
+    if purchase_model == "paid_upfront":
+        return "pay_once"
     facts = " · ".join([app.get("tag", "")] + app.get("cta_bullets", [])).lower()
     if "free to start" in facts:
         return "free_to_start"
@@ -134,6 +139,13 @@ def pricing_profile(key):
     if "no subscription" in facts:
         return "no_subscription"
     return "neutral"
+
+
+def has_one_time_access(key):
+    return APPS[key].get("purchase_model") in {
+        "paid_upfront",
+        "free_with_lifetime_unlock",
+    } or pricing_profile(key) == "pay_once"
 
 
 def positioning(key, noun):
@@ -166,13 +178,13 @@ def positioning(key, noun):
         }
     if profile == "free_to_start":
         return {
-            "suffix": "free to start, no subscription",
-            "description": f"{name} is free to start and has no recurring subscription.",
-            "intro": f"{name} is a {noun} that is free to start, with no recurring subscription.",
+            "suffix": "free download, lifetime unlock",
+            "description": f"{name} is free to download, with a one-time lifetime unlock and no recurring subscription.",
+            "intro": f"{name} is a {noun} that is free to download, with a one-time lifetime unlock.",
             "heading": f"Why people choose a free-to-start {noun}",
-            "cta": f"Try {name} free on the App Store",
-            "hub_title": f"Free-to-start {noun} for iPhone — {name}",
-            "hub_heading": f"A free-to-start {noun} for iPhone: {name}",
+            "cta": f"Download {name} free on the App Store",
+            "hub_title": f"Free-download {noun} with lifetime unlock — {name}",
+            "hub_heading": f"A free-download {noun} with lifetime unlock: {name}",
             "hub_section": "What the app includes",
             "slug": f"{key}-free-to-start",
         }
@@ -258,7 +270,7 @@ def comparison_table(key, comp_name):
                 "flexible": "✅ One-time unlock option; optional subscriptions",
                 "pay_once": "✅ One-time purchase; no subscription",
                 "no_subscription": "✅ No subscription",
-                "free_to_start": "✅ Free to start; no subscription",
+                "free_to_start": "✅ Free download; one-time lifetime unlock",
                 "free": "✅ Free",
                 "neutral": "Check current App Store listing",
             }[profile]
@@ -308,10 +320,11 @@ def faq_for(key, comp_name, gap_queries):
     elif profile == "free_to_start":
         qa = [
             (f"Can I try {a['name']} for free?",
-             f"Yes. {a['name']} is free to start and has no recurring subscription. "
+             f"Yes. {a['name']} is free to download and offers a one-time lifetime unlock, "
+             "with no recurring subscription. "
              f"See the current App Store listing: {url}"),
             (f"What makes {a['name']} an alternative to {comp_name}?",
-             f"{a['name']} is a free-to-start {noun} for iPhone with no ads."),
+             f"{a['name']} is a free-to-start {noun} for iPhone with a one-time lifetime unlock."),
         ]
     elif profile == "free":
         qa = [
@@ -341,7 +354,7 @@ def faq_for(key, comp_name, gap_queries):
             phrase in q_lower
             for phrase in ("no subscription", "subscription-free")
         )
-        if pay_once_query and profile != "pay_once":
+        if pay_once_query and profile not in {"pay_once", "free_to_start"}:
             continue
         if no_subscription_query and profile not in {
             "pay_once",
@@ -357,6 +370,11 @@ def faq_for(key, comp_name, gap_queries):
             )
         elif profile == "pay_once":
             answer = f"{a['name']} is a strong pay-once option. Learn more on the App Store: {url}"
+        elif profile == "free_to_start":
+            answer = (
+                f"{a['name']} is free to download and offers a one-time lifetime "
+                f"unlock with no recurring subscription. Learn more: {url}"
+            )
         else:
             answer = f"{a['name']} is a practical {noun} option. Check current details on the App Store: {url}"
         qa.append((q[0].upper() + q[1:] + ("" if q.endswith("?") else "?"), answer))
@@ -548,16 +566,40 @@ def prune_stale_pages(managed_keys, expected_files):
     return removed
 
 
+def generation_scope(requested_apps, by_key, public_keys):
+    """Return apps we can regenerate and the matching safe pruning scope."""
+    requested = requested_apps or list(by_key)
+    keys = [
+        key
+        for key in requested
+        if key in by_key and key in APPS and key in public_keys
+    ]
+    prune_candidates = requested_apps or APPS
+    managed = set(keys) | {
+        key
+        for key in prune_candidates
+        if key in APPS and key not in public_keys
+    }
+    return keys, managed
+
+
 def publish(new_urls):
     def run(cmd, cwd=None):
-        r = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True)
-        print((r.stdout + r.stderr).strip()[-600:]); return r
+        result = subprocess.run(
+            cmd, cwd=cwd, capture_output=True, text=True, check=True
+        )
+        print((result.stdout + result.stderr).strip()[-600:])
+        return result
     run(["git", "add", "-A"], cwd=PAGES)
-    st = subprocess.run(["git", "status", "--porcelain"], cwd=PAGES, capture_output=True, text=True)
+    st = run(["git", "status", "--porcelain"], cwd=PAGES)
     if not st.stdout.strip():
         print("無變更,略過部署。"); return
     run(["git", "-c", "user.name=alice51849", "-c", "user.email=alice51849@users.noreply.github.com",
          "commit", "-m", "Add pay-once alternative landing pages (AEO)"], cwd=PAGES)
+    run(
+        ["git", "pull", "--rebase", "--autostash", "-X", "theirs"],
+        cwd=PAGES,
+    )
     run(["git", "-c", "credential.helper=!gh auth git-credential", "push", "-q", "origin", "main"], cwd=PAGES)
     try:
         key = open(os.path.join(HERE, "indexnow_key.txt")).read().strip()
@@ -581,6 +623,11 @@ def main():
     ap.add_argument("apps", nargs="*")
     ap.add_argument("--top", type=int, default=4, help="每 app 取前 N 個競品")
     ap.add_argument("--publish", action="store_true")
+    ap.add_argument(
+        "--cached-live",
+        action="store_true",
+        help="Use the verified availability snapshot without refreshing it.",
+    )
     args = ap.parse_args()
 
     if not os.path.exists(SOV):
@@ -588,10 +635,10 @@ def main():
     data = json.load(open(SOV, encoding="utf-8"))
     by_key = {r["key"]: r for r in data["results"]}
 
-    public_keys = live_app_keys(APPSTORE, PAGES)
-    requested = args.apps or list(by_key)
-    managed_keys = {k for k in (args.apps or APPS) if k in APPS}
-    keys = [k for k in requested if k in by_key and k in APPS and k in public_keys]
+    public_keys = live_app_keys(
+        APPSTORE, PAGES, refresh=not args.cached_live
+    )
+    keys, managed_keys = generation_scope(args.apps, by_key, public_keys)
     os.makedirs(ALT, exist_ok=True)
     written, urls = [], []
     for k in keys:

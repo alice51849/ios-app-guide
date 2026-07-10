@@ -26,27 +26,37 @@ def run(cmd, cwd=None, env=None):
     return r.returncode, out
 
 
+def require(cmd, cwd=None, env=None):
+    returncode, output = run(cmd, cwd=cwd, env=env)
+    if returncode != 0:
+        raise RuntimeError(
+            f"Command failed ({returncode}): {' '.join(cmd)}\n"
+            f"{output[-1500:]}"
+        )
+    return output
+
+
 def main():
     env = dict(os.environ, GEO_SITE=SITE)
     # 1) 重建
-    run([PY, os.path.join(HERE, "build_pages_i18n.py")], env=env)
+    require([PY, os.path.join(HERE, "build_pages_i18n.py")], env=env)
     if "--no-push" in sys.argv:
         print("\n(--no-push:略過部署/推送)")
         return
     # 2) git commit + push(用 porcelain 偵測變更,locale 無關)
-    run(["git", "add", "-A"], cwd=PAGES)
-    _, status = run(["git", "status", "--porcelain"], cwd=PAGES)
+    require(["git", "add", "-A"], cwd=PAGES)
+    status = require(["git", "status", "--porcelain"], cwd=PAGES)
     if not status.strip():
         print("內容無變更,略過部署與 IndexNow。")
         print("\n✅ GEO 發布完成(無變更)")
         return
-    run(["git", "-c", "user.name=alice51849",
-         "-c", "user.email=alice51849@users.noreply.github.com",
-         "commit", "-m", "Update multilingual GEO pages"], cwd=PAGES)
+    require(["git", "-c", "user.name=alice51849",
+             "-c", "user.email=alice51849@users.noreply.github.com",
+             "commit", "-m", "Update multilingual GEO pages"], cwd=PAGES)
     # 2b) 健壯 push:固定在 main;被拒就以「我方重生內容為準」rebase(-X theirs)後重試;
     #     萬一 rebase 仍衝突,abort + 對齊遠端(絕不留下 detached/衝突壞狀態,下輪重生再推)。
     CRED = "credential.helper=!gh auth git-credential"
-    run(["git", "checkout", "main"], cwd=PAGES)
+    require(["git", "checkout", "main"], cwd=PAGES)
     pushed = False
     for _ in range(3):
         rc, _ = run(["git", "-c", CRED, "push", "-q", "origin", "main"], cwd=PAGES)
@@ -57,13 +67,12 @@ def main():
                       "-q", "origin", "main"], cwd=PAGES)
         if rc2 != 0:
             run(["git", "rebase", "--abort"], cwd=PAGES)
-            run(["git", "reset", "--hard", "origin/main"], cwd=PAGES)
-            print("⚠️ rebase 衝突已中止並對齊遠端;本輪變更留待下次重生推送。")
+            print("⚠️ rebase 衝突已中止；本機提交保留，等待下次重試。")
             break
     if not pushed:
-        print("⚠️ 未能 push(已保持 repo 乾淨)。")
+        raise RuntimeError("未能 push；已保留本機提交，未送出 IndexNow。")
     # 3) IndexNow:有變更才推
-    run([PY, os.path.join(HERE, "indexnow_submit.py")], env=env)
+    require([PY, os.path.join(HERE, "indexnow_submit.py")], env=env)
     print("\n✅ GEO 發布完成")
 
 

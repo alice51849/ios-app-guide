@@ -31,6 +31,7 @@ import gen_cost_compare
 import gen_hubs
 import gen_llms
 import gen_roundups
+import indexnow_submit
 import outreach_scorecard
 
 
@@ -711,6 +712,24 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("gen_llms.py --cached-live", workflow)
         self.assertGreaterEqual(
             workflow.count("cleanup_localized_assets.py --cached-live"), 3
+        )
+        publish = (Path(GEO) / "publish.py").read_text(encoding="utf-8")
+        self.assertNotIn("reset --hard", publish)
+
+    def test_indexnow_retries_and_surfaces_total_failure(self):
+        with mock.patch.object(
+            indexnow_submit.urllib.request,
+            "urlopen",
+            side_effect=OSError("offline"),
+        ) as urlopen, mock.patch.object(indexnow_submit.time, "sleep"):
+            self.assertFalse(
+                indexnow_submit.submit(
+                    ["https://example.com/page"], "public-key"
+                )
+            )
+        self.assertEqual(
+            len(indexnow_submit.ENDPOINTS) * 3,
+            urlopen.call_count,
         )
 
     def test_answer_schema_and_aim990_truth_use_verified_model(self):

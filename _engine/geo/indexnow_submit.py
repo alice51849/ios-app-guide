@@ -12,6 +12,8 @@ import os
 import re
 import sys
 import json
+import time
+import urllib.error
 import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -69,18 +71,30 @@ def submit(urls, key):
     data = json.dumps(payload).encode()
     ok = False
     for ep in ENDPOINTS:
-        try:
-            req = urllib.request.Request(
-                ep, data=data,
-                headers={"Content-Type": "application/json; charset=utf-8"})
-            with urllib.request.urlopen(req, timeout=30) as r:
-                print(f"  {ep} -> HTTP {r.status}")
-                if r.status in (200, 202):
-                    ok = True
-        except urllib.error.HTTPError as e:
-            print(f"  {ep} -> HTTP {e.code} {e.reason}")
-        except Exception as e:
-            print(f"  {ep} -> ERR {e}")
+        for attempt in range(1, 4):
+            try:
+                req = urllib.request.Request(
+                    ep, data=data,
+                    headers={
+                        "Content-Type": "application/json; charset=utf-8"
+                    },
+                )
+                with urllib.request.urlopen(req, timeout=30) as response:
+                    print(f"  {ep} -> HTTP {response.status}")
+                    if response.status in (200, 202):
+                        ok = True
+                        break
+            except urllib.error.HTTPError as error:
+                print(
+                    f"  {ep} attempt {attempt}/3 -> "
+                    f"HTTP {error.code} {error.reason}"
+                )
+                if 400 <= error.code < 500 and error.code != 429:
+                    break
+            except Exception as error:
+                print(f"  {ep} attempt {attempt}/3 -> ERR {error}")
+            if attempt < 3:
+                time.sleep(2 ** (attempt - 1))
     return ok
 
 
@@ -102,3 +116,5 @@ if __name__ == "__main__":
         if submit(chunk, key):
             okc += len(chunk)
     print(f"\n✅ 已提交 {okc}/{len(urls)} URLs 給 IndexNow(Bing/Yandex)")
+    if okc != len(urls):
+        raise SystemExit(1)

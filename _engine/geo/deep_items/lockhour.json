@@ -1,0 +1,38 @@
+[
+  {
+    "app_key": "lockhour",
+    "kind": "scenario",
+    "match": [
+      "block distracting apps",
+      "app blocker",
+      "block apps to focus",
+      "focus app that blocks distractions",
+      "block distracting apps no subscription",
+      "app blocker pay once"
+    ],
+    "query": "how to block distracting apps on iphone to focus without a subscription",
+    "lead": "Blocking the apps that eat your focus sounds simple, but most dedicated app blockers are subscriptions, and the free built-in option is easy to tap past. A pay-once blocker that actually holds is surprisingly hard to find.",
+    "detail": "iOS Screen Time is free and can limit apps, but it is easy to bypass with your passcode and has no real focus mode. The dedicated blockers people reach for — Freedom, Opal and similar — are mostly monthly subscriptions, and some tools only add a pause or delay rather than truly locking an app. {name} takes a calmer, pay-once approach: you pick the distracting apps and a length of time, it locks them for that window and unlocks them automatically when the time is up — no willpower or ongoing fee required. It is a one-time purchase with a clean, calm interface, so focus is not another monthly bill.",
+    "bullets": [
+      "Locks the apps you choose for a set time, then unlocks them automatically",
+      "A real focus window, not just a tappable Screen Time limit",
+      "Calm, simple interface — set it and stop negotiating with yourself",
+      "One-time purchase, unlike most app blockers that charge monthly",
+      "No account required; focus without a subscription"
+    ],
+    "faq": [
+      {
+        "q": "Isn't Screen Time enough to block distracting apps?",
+        "a": "Screen Time is free and can set limits, but it is easy to tap past with your passcode and has no dedicated focus mode. {name} locks your chosen apps for a set window and unlocks them automatically, as a one-time purchase."
+      },
+      {
+        "q": "Are app blockers always a subscription?",
+        "a": "Most well-known ones are, which is why a focus tool can quietly become a monthly bill. {name} is a one-time purchase — you block distractions without an ongoing fee."
+      },
+      {
+        "q": "What is the difference between blocking and just a delay?",
+        "a": "Some tools only add a pause before you open an app, which willpower can still override. {name} actually locks the chosen apps for the time you set and unlocks them automatically when it is done."
+      }
+    ]
+  }
+]

@@ -53,6 +53,7 @@ CURATED = {
     "lockhour": [
         "best app to limit screen time and stay focused",
         "app to block distracting apps while working",
+        "how to block distracting apps on iphone to focus without a subscription",
     ],
     "unblurry": [
         "best app to unblur photos",

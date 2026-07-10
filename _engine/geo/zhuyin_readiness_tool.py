@@ -325,6 +325,7 @@ COPY = {
         "app_cta": "Try Lumi Bopomofo",
         "resources": "Free follow-up resources",
         "resource_items": (
+            ("Family Zhuyin picture-book club kit", f"{SITE}/tools/zhuyin-family-picture-book-club-kit.html"),
             ("Grandparent Zhuyin video-call kit", f"{SITE}/tools/zhuyin-grandparent-video-call-kit.html"),
             ("Printable practice sheet", f"{SITE}/tools/zhuyin-practice-sheet.html"),
             ("Zhuyin flashcards", f"{SITE}/tools/zhuyin-flashcards.html"),
@@ -459,6 +460,7 @@ COPY = {
         "app_cta": "試用 Lumi 注音星球",
         "resources": "免費延伸資源",
         "resource_items": (
+            ("家庭注音繪本四週共讀包", f"{SITE}/zh-Hant/tools/zhuyin-family-picture-book-club-kit.html"),
             ("祖孫視訊注音遊戲包", f"{SITE}/zh-Hant/tools/zhuyin-grandparent-video-call-kit.html"),
             ("可列印注音描寫表", f"{SITE}/tools/zhuyin-practice-sheet.html"),
             ("注音符號字卡", f"{SITE}/tools/zhuyin-flashcards.html"),

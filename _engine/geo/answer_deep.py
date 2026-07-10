@@ -2501,27 +2501,79 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "taiwan children books bopomofo reading",
    "help child read traditional chinese zhuyin"
   ],
-  "lead": "Most Taiwanese children's books print Zhuyin beside the characters, so once your child knows the 37 symbols they can sound out and read almost any Taiwan kids' book independently.",
-  "detail": "Taiwan children's books are typeset with Zhuyin annotations next to each character precisely so early readers can decode new words on their own. That makes Zhuyin the key that unlocks a huge library of traditional-character books for a heritage child. {name} teaches all 37 symbols plus blending, so a child can move from symbols to sounding out annotated words. It uses native Taiwanese audio and a tone game so the reading sounds right, and it's ad-free with no data collected — a one-time unlock for the whole family.",
+  "page_title": "Free 4-Week Zhuyin Picture-Book Club Kit for Families",
+  "meta_description": "Free bilingual four-week Zhuyin picture-book club kit with gentle prompts, a non-scored log and copyright-safe guidance for families.",
+  "lead": "Use a free bilingual four-week family plan with any legally owned or borrowed Traditional Chinese picture book that includes Zhuyin annotations. Each ten-minute routine uses child choice, pictures, one familiar word and low-pressure conversation—without uploading or reproducing the book.",
+  "detail": "The free family picture-book club kit linked above provides original before-during-after prompts and a printable, non-scored reading log. It never asks for a book title, text, image or child profile, and it does not host or link to unauthorized book copies. A 2020 systematic review and meta-analysis of 19 randomized trials involving 2,594 children found small average effects on expressive language (d = 0.41) and receptive language (d = 0.26), and a larger effect on caregiver book-sharing competence (d = 1.01). The review did not test Zhuyin, this exact four-week or ten-minute routine, independent reading, or this tool, so the page makes no score or learning-speed promise. Families can use Taiwan's Ministry of Education Mini Dictionary to check one unfamiliar character together. Lumi Bopomofo is optional between reading days: the free download covers all 37 symbols, listening, tracing, tones and blending with an optional one-time lifetime unlock, no ads and no recurring subscription.",
+  "follow_up": "Start with the free club kit and a legal family or library book. If the child later wants structured symbol, tone or blending practice between reading days, then consider Lumi Bopomofo or the linked free tools.",
+  "primary_resource_url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-family-picture-book-club-kit.html",
+  "primary_resource_label": "Open the free family picture-book club kit",
   "bullets": [
-   "Zhuyin unlocks self-reading of Taiwan's Zhuyin-annotated picture books",
-   "Teaches symbols → blending → sounding out words",
-   "Native Taiwanese audio and tone practice for correct reading aloud",
-   "Traditional characters, as used in Taiwan and Hong Kong",
-   "Ad-free, no data collected, one-time unlock"
+   "Four reusable weekly routines with before, during and after-reading prompts",
+   "Use only a book the family legally owns, borrows or accesses through an authorized service",
+   "No copied book text, title field, upload, account, score or saved child log",
+   "Child choice, pointing, listening, gestures and retelling all count as participation",
+   "English and Traditional Chinese pages that families can print or share"
+  ],
+  "decision_steps": [
+   "Choose a legally owned or borrowed Traditional Chinese picture book with readable Zhuyin annotations.",
+   "Open the same bilingual plan or print the four-week routine and non-scored log.",
+   "Let the child choose the book, page or picture before the adult points out one annotation.",
+   "Read for up to ten gentle minutes; use the MOE Mini Dictionary for at most one unfamiliar character.",
+   "Circle only what happened, leave blanks without judgment and stop before the exchange becomes a quiz."
+  ],
+  "comparison_rows": [
+   {
+    "need": "Legal book access",
+    "check": "A family-owned, library-borrowed or authorized digital copy stays beside you",
+    "why": "The free kit supplies original prompts and never redistributes copyrighted stories"
+   },
+   {
+    "need": "Shared interaction",
+    "check": "The child can choose, point, listen, act, speak or retell",
+    "why": "Participation stays conversational instead of becoming a pronunciation test"
+   },
+   {
+    "need": "Responsible evidence",
+    "check": "Research limits are stated and no Zhuyin score or learning-speed promise is made",
+    "why": "A broad book-sharing meta-analysis is not direct evidence for this exact kit"
+   }
+  ],
+  "where_app_fits": "Lumi Bopomofo is not required for the family book club. It is an optional between-reading layer when a child wants more listening, tracing, tone or blending practice across all 37 symbols; the printable club plan remains fully usable without any app.",
+  "sources": [
+   {
+    "title": "Free bilingual family Zhuyin picture-book club kit",
+    "url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-family-picture-book-club-kit.html"
+   },
+   {
+    "title": "Shared picture-book reading systematic review and meta-analysis",
+    "url": "https://centaur.reading.ac.uk/80756/"
+   },
+   {
+    "title": "Taiwan Ministry of Education Mini Dictionary",
+    "url": "https://dict.mini.moe.edu.tw/"
+   },
+   {
+    "title": "Taiwan Ministry of Education Bopomofo Handbook",
+    "url": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"
+   }
   ],
   "faq": [
    {
-    "q": "Why do Taiwanese kids' books have Bopomofo next to the characters?",
-    "a": "So early readers can decode unfamiliar characters by their sound — learning Zhuyin lets your child use that system to read independently."
+    "q": "Does the free kit provide copies of Taiwanese picture books?",
+    "a": "No. Use a book you legally own, borrow or access through an authorized service. The kit provides original prompts and a blank reading log only."
    },
    {
-    "q": "Does {name} teach traditional or simplified characters?",
-    "a": "Zhuyin is used with traditional characters as in Taiwan. {name} focuses on the phonetic symbols and sounds that let a child read traditional-character books."
+    "q": "Must my child read every Zhuyin annotation aloud?",
+    "a": "No. Listening, pointing, choosing a picture, acting or joining one familiar word are all valid participation."
    },
    {
-    "q": "Is there a subscription?",
-    "a": "No — {name} is a one-time unlock, ad-free, with no data collected from children."
+    "q": "Does four weeks guarantee better reading or Zhuyin scores?",
+    "a": "No. The cited review studied varied book-sharing interventions and language outcomes, not Zhuyin, this schedule or this tool."
+   },
+   {
+    "q": "Do I need Lumi Bopomofo to use the club kit?",
+    "a": "No. The club works with a legal book and family conversation. Lumi Bopomofo is optional practice between reading days, with a free download and optional one-time lifetime unlock."
    }
   ]
  },

@@ -59,7 +59,7 @@ a{color:#4f3ea1}.wrap{width:min(1040px,calc(100% - 32px));margin:auto}.top{posit
 </section>
 <section class="wrap grid resources">
 <article class="card half app-card"><h2>兩次檢核之間，需要有人帶著練嗎？</h2><p>Lumi 注音星球用聽音、描寫、聲調與拼讀遊戲練習全部 37 個符號。可免費下載，另提供一次性永久解鎖；無廣告、無定期訂閱。</p><a class="button" href="https://apps.apple.com/app/id6773017109?ct=iag_readiness_zh-hant" rel="nofollow noopener">試用 Lumi 注音星球</a></article>
-<article class="card half"><h2>免費延伸資源</h2><ul><li><a href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-grandparent-video-call-kit.html">祖孫視訊注音遊戲包</a></li><li><a href="https://alice51849.github.io/ios-app-guide/tools/zhuyin-practice-sheet.html">可列印注音描寫表</a></li><li><a href="https://alice51849.github.io/ios-app-guide/tools/zhuyin-flashcards.html">注音符號字卡</a></li><li><a href="https://alice51849.github.io/ios-app-guide/tools/zhuyin-bingo.html">注音賓果</a></li><li><a href="https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-chart.html">37 個注音符號表</a></li><li><a href="https://alice51849.github.io/ios-app-guide/zh-Hant/guides/zhuyin-5-day-lesson-plan-heritage-school.html">海外中文學校五日教案</a></li></ul></article>
+<article class="card half"><h2>免費延伸資源</h2><ul><li><a href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-family-picture-book-club-kit.html">家庭注音繪本四週共讀包</a></li><li><a href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-grandparent-video-call-kit.html">祖孫視訊注音遊戲包</a></li><li><a href="https://alice51849.github.io/ios-app-guide/tools/zhuyin-practice-sheet.html">可列印注音描寫表</a></li><li><a href="https://alice51849.github.io/ios-app-guide/tools/zhuyin-flashcards.html">注音符號字卡</a></li><li><a href="https://alice51849.github.io/ios-app-guide/tools/zhuyin-bingo.html">注音賓果</a></li><li><a href="https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-chart.html">37 個注音符號表</a></li><li><a href="https://alice51849.github.io/ios-app-guide/zh-Hant/guides/zhuyin-5-day-lesson-plan-heritage-school.html">海外中文學校五日教案</a></li></ul></article>
 </section>
 <section class="wrap grid">
 <article class="card half"><h2>方法說明與官方參考</h2><p>這份獨立檢核以低壓力的形成性觀察為目的；符號字形與標示方式依台灣教育部資料核對，但本工具並非由教育部製作或背書。</p><ul class="source-list"><li><a href="https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html" rel="noopener">教育部《國語注音符號手冊》</a></li><li><a href="https://stroke-order.learningweb.moe.edu.tw/phoneticWrite.jsp?la=0" rel="noopener">教育部《注音練習簿》</a></li></ul></article>
@@ -117,7 +117,8 @@ a{color:#4f3ea1}.wrap{width:min(1040px,calc(100% - 32px));margin:auto}.top{posit
     });
   }
   function recommendationCard(item){
-    return '';
+    return '<article class="rec"><h3>'+item.title+'</h3><p>'+item.text+
+      '</p><a href="'+item.url+'">'+item.label+' →</a></article>';
   }
   function renderResult(){
     var scores={};

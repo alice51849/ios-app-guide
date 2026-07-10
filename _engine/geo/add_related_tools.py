@@ -49,11 +49,12 @@ def main():
     tool_files = glob.glob(os.path.join(en_tools_dir, "*.html"))
     priority = {
         "zhuyin-readiness-check.html": 0,
-        "zhuyin-grandparent-video-call-kit.html": 1,
+        "zhuyin-family-picture-book-club-kit.html": 1,
+        "zhuyin-grandparent-video-call-kit.html": 2,
     }
     tool_files.sort(
         key=lambda path: (
-            priority.get(os.path.basename(path), 2),
+            priority.get(os.path.basename(path), 3),
             os.path.basename(path),
         )
     )
@@ -88,9 +89,10 @@ def main():
         if not a or a not in by_app:
             continue
         limit = (
-            7
+            8
             if any(
                 "zhuyin-readiness-check" in url
+                or "zhuyin-family-picture-book-club-kit" in url
                 or "zhuyin-grandparent-video-call-kit" in url
                 for url, _label in by_app[a]
             )

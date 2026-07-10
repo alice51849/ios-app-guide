@@ -10,6 +10,7 @@ filling any missing topic pages. Never touches git.
 
 Usage:
     python3 regen_facts.py            # upgrade all topic-matched pages
+    python3 regen_facts.py tripbee    # upgrade one app's topic-matched pages
     python3 regen_facts.py --dry-run  # report what would change, write nothing
 """
 from __future__ import annotations
@@ -21,12 +22,17 @@ import aeo_answers as A
 import answer_facts
 
 
-def run(dry_run: bool = False) -> dict:
+def run(dry_run: bool = False, keys: list[str] | None = None) -> dict:
     upgraded: list[str] = []
     created: list[str] = []
     failed: list[str] = []
     seen: set[str] = set()
-    for key, qlist in A.queries.ALL.items():
+    selected = keys or list(A.queries.ALL)
+    unknown = [key for key in selected if key not in A.queries.ALL]
+    if unknown:
+        raise SystemExit(f"Unknown app key(s): {', '.join(unknown)}")
+    for key in selected:
+        qlist = A.queries.ALL[key]
         if key not in A.APPS:
             continue
         app = A.APPS[key]
@@ -67,5 +73,7 @@ def run(dry_run: bool = False) -> dict:
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description="Regenerate topic-matched answer pages with fresh facts.")
+    ap.add_argument("apps", nargs="*", help="Optional app keys; defaults to all apps.")
     ap.add_argument("--dry-run", action="store_true", help="Report only; write nothing.")
-    run(dry_run=ap.parse_args().dry_run)
+    args = ap.parse_args()
+    run(dry_run=args.dry_run, keys=args.apps or None)

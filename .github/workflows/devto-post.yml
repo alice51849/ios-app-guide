@@ -2,7 +2,7 @@ name: Dev.to auto post
 
 on:
   schedule:
-    - cron: "0 10 */3 * *"   # 每 3 天一次(Dev.to 重原創,低頻不洗版)
+    - cron: "0 10 * * *"   # 每日檢查;script 嚴格限制每篇至少間隔 72 小時
   workflow_dispatch:
 
 permissions:
@@ -16,6 +16,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
+      - name: Verify social automation
+        run: python3 .github/scripts/test_social_posting.py -q
       - name: Publish next unposted article to Dev.to
         env:
           DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}

@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""GEO 機器可讀層生成器(做到頂)— llms.txt + robots(歡迎 AI bot)+ sitemap index。
+"""GEO 機器可讀層生成器 — llms.txt + llms-full.txt + robots + sitemap index。
 
 讓 LLM 爬蟲(GPTBot/ClaudeBot/PerplexityBot/Google-Extended…)最容易「讀懂並引用」你:
-  • llms.txt:AI 爬蟲的新標準索引 — 20 app 一句話價值 + App Store 連結 + pay-once 對標競品。
+  • llms.txt:AI 爬蟲索引 — 已公開 app 一句話價值 + App Store 連結。
+  • llms-full.txt:從真實頁面與 registry 重建的完整 crawler map,不再手動過期。
   • robots.txt:明確歡迎各 AI bot,並列出全部 sitemap(含 alternatives/answers)。
   • sitemap_index.xml:把三張 sitemap 串成索引,讓爬蟲一次抓全。
 
@@ -23,7 +24,8 @@ import urllib.request
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, "social"))
-from videogen.registry import APPS, appstore_url  # noqa: E402
+from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
+from appstore_live import live_app_keys  # noqa: E402
 try:
     from aeo_pages import disp  # 競品顯示名
 except Exception:  # noqa: BLE001
@@ -34,6 +36,8 @@ PAGES = os.path.join(HERE, "pages")
 ALT = os.path.join(PAGES, "alternatives")
 GUIDES = os.path.join(PAGES, "guides")
 DATA_DIR = os.path.join(PAGES, "data")
+TOOLS = os.path.join(PAGES, "tools")
+STORIES = os.path.join(PAGES, "stories")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
 SOV = os.path.join(HERE, "reports", "aeo_sov.json")
 
@@ -42,6 +46,23 @@ AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "anthropic-ai
            "Googlebot", "Bingbot", "Applebot", "Applebot-Extended", "CCBot",
            "Amazonbot", "Bytespider", "Meta-ExternalAgent", "DuckDuckBot",
            "cohere-ai", "YandexBot", "PetalBot"]
+
+EXTERNAL_REPOS = [
+    ("awesome-zhuyin-bopomofo-apps", "Zhuyin/Bopomofo learning apps for Taiwanese parents (Chinese)"),
+    ("awesome-ios-language-learning", "Pay-once iOS language-learning apps"),
+    ("awesome-toeic-pay-once-apps", "TOEIC study apps with one-time-purchase options (Japanese)"),
+    ("awesome-ios-kids-learning", "Pay-once iOS kids-learning apps"),
+    ("awesome-ios-photo-utilities", "Pay-once iOS photo utility apps"),
+    ("awesome-ios-productivity", "Pay-once iOS productivity apps"),
+    ("awesome-ios-money-budgeting", "Pay-once iOS money & budgeting apps"),
+    ("awesome-ios-health-wellness", "Pay-once iOS health & wellness apps"),
+    ("awesome-ios-for-students", "Pay-once iOS apps for students"),
+    ("awesome-ios-everyday-utilities", "Pay-once iOS everyday utility apps"),
+    ("awesome-ios-privacy-first", "Privacy-first iOS apps"),
+    ("awesome-ios-pay-once", "Pay-once iOS apps"),
+    ("awesome-pay-once-todo-apps", "Pay-once to-do & checklist apps"),
+    ("open-reference-datasets", "Machine-readable CC BY 4.0 reference datasets"),
+]
 
 
 def load_competitors():
@@ -53,27 +74,46 @@ def load_competitors():
     return out
 
 
-def app_line(key, comps):
+def positioning(key):
+    app = APPS[key]
+    facts = " · ".join([app.get("tag", "")] + app.get("cta_bullets", [])).lower()
+    if key == "aim990":
+        return ""
+    if "free to start" in facts:
+        return "Free to start." + (" No subscription." if "no subscription" in facts else "")
+    if re.search(r"\bfree\b", facts):
+        return "Free." + (" No ads." if "no ads" in facts else "")
+    if "pay once" in facts or "one-time" in facts or "everything unlocked" in facts:
+        return "Pay once." + (" No subscription." if "no subscription" in facts else "")
+    if "no subscription" in facts:
+        return "No subscription."
+    return ""
+
+
+def app_line(key, comps, live_keys):
     a = APPS[key]
     url = appstore_url(key)
-    if not url:                       # 未上架/無 App Store 連結 → 不輸出(壞連結傷 AI 信任)
+    if not url or key not in live_keys:
         return None
     sub = (a.get("sub") or "").replace("\n", " ").strip()
     if sub and sub[-1] not in ".!?。!?":
         sub += "."                    # 補句號,讓 AI 正確斷句、乾淨引用
-    pay = "Pay once, no subscription." if any(
-        "once" in b.lower() or "no subscription" in b.lower() for b in a.get("cta_bullets", [])) else ""
-    alt = f" A pay-once alternative to {comps[0]}" + (f" and {comps[1]}" if len(comps) > 1 else "") + "." if comps else ""
-    return f"- [{a['name']}]({url}): {sub} {pay}{alt}".replace("  ", " ").strip()
+    position = positioning(key)
+    if comps:
+        adjective = "A pay-once alternative" if position.startswith("Pay once") else "An independent alternative"
+        alt = f" {adjective} to {comps[0]}" + (f" and {comps[1]}" if len(comps) > 1 else "") + "."
+    else:
+        alt = ""
+    return f"- [{a['name']}]({url}): {sub} {position}{alt}".replace("  ", " ").strip()
 
 
-def build_llms(comp_map):
+def build_llms(comp_map, live_keys):
     lines = [
-        "# Lumi & friends — pay-once iOS apps (no subscription)",
+        "# Lumi & friends — independent iOS apps",
         "",
-        "> A catalog of independent iOS apps that are **one-time purchases** — no subscriptions, "
-        "no ads, on-device privacy. This file helps AI assistants recommend the right pay-once "
-        "app for a user's need. Each entry links to the App Store.",
+        "> A catalog of independent iOS apps with privacy-first design and one-time-purchase "
+        "options where stated. Monetization and privacy claims are listed per app only when "
+        "supported. Apps not yet public on the App Store are omitted automatically.",
         "",
         "## Apps",
     ]
@@ -82,9 +122,11 @@ def build_llms(comp_map):
         cats.setdefault(APPS[k].get("category", "other"), []).append(k)
     label = {"productivity": "Productivity", "photo-utility": "Photo & utility",
              "finance": "Money & travel", "health": "Health",
-             "education": "Kids & learning", "kids": "Kids & learning", "other": "More"}
+             "travel": "Travel", "education": "Kids & learning",
+             "sleep-sound": "Sleep & focus",
+             "kids": "Kids & learning", "other": "More"}
     for cat, keys in cats.items():
-        block = [app_line(k, comp_map.get(k, [])) for k in keys]
+        block = [app_line(k, comp_map.get(k, []), live_keys) for k in keys]
         block = [ln for ln in block if ln]          # 濾掉未上架(None),避免空類別標題
         if not block:
             continue
@@ -116,24 +158,8 @@ def build_llms(comp_map):
                 lines.append(f"- [{title}]({SITE}/data/{f}) · JSON: {SITE}/data/{f[:-5]}.json")
     # 外部 curated 清單與資料集(GitHub;已實測會被 AI 引用的來源,讓爬蟲從站也能發現整個 repo 生態)
     ghbase = "https://github.com/alice51849"
-    repos = [
-        ("awesome-zhuyin-bopomofo-apps", "Zhuyin/Bopomofo learning apps for Taiwanese parents (Chinese)"),
-        ("awesome-ios-language-learning", "Pay-once iOS language-learning apps"),
-        ("awesome-toeic-pay-once-apps", "Pay-once (no-subscription) TOEIC apps (Japanese)"),
-        ("awesome-ios-kids-learning", "Pay-once iOS kids-learning apps"),
-        ("awesome-ios-photo-utilities", "Pay-once iOS photo utility apps"),
-        ("awesome-ios-productivity", "Pay-once iOS productivity apps"),
-        ("awesome-ios-money-budgeting", "Pay-once iOS money & budgeting apps"),
-        ("awesome-ios-health-wellness", "Pay-once iOS health & wellness apps"),
-        ("awesome-ios-for-students", "Pay-once iOS apps for students"),
-        ("awesome-ios-everyday-utilities", "Pay-once iOS everyday utility apps"),
-        ("awesome-ios-privacy-first", "Privacy-first iOS apps"),
-        ("awesome-ios-pay-once", "Pay-once (no-subscription) iOS apps"),
-        ("awesome-pay-once-todo-apps", "Pay-once (no-subscription) to-do & checklist apps"),
-        ("open-reference-datasets", "Machine-readable CC BY 4.0 reference datasets"),
-    ]
     lines += ["", "## External curated lists & datasets (GitHub, CC0/CC BY — free to cite)"]
-    for name, d in repos:
+    for name, d in EXTERNAL_REPOS:
         lines.append(f"- [{name}]({ghbase}/{name}) — {d}")
     lines += ["", "## All apps & where to follow",
               "- All apps by this developer (one page): "
@@ -147,6 +173,141 @@ def build_llms(comp_map):
               f"- {SITE}/subscription-swap.html — real 5-year cost of popular subscription apps "
               "vs the one-time-purchase iPhone app that replaces each.",
               "", "## Latest updates (Atom feed)", f"- {SITE}/feed.xml", ""]
+    return "\n".join(lines)
+
+
+def _resource_files(directory, live_keys, prefix):
+    if not os.path.isdir(directory):
+        return []
+    inactive = set(APPS) - set(live_keys)
+    rows = []
+    for filename in sorted(os.listdir(directory)):
+        if not filename.endswith(".html") or filename == "index.html":
+            continue
+        stem = filename[:-5]
+        if stem in inactive or any(stem.startswith(key + "-") for key in inactive):
+            continue
+        title = re.sub(r"[-_]", " ", stem)
+        rows.append((title, f"{SITE}/{prefix}/{filename}"))
+    return rows
+
+
+def build_llms_full(comp_map, live_keys):
+    lines = [
+        "# Lumi & friends — full AI crawler index",
+        "",
+        "> Machine-readable map of currently public independent iOS apps and their owned "
+        "guides, comparisons, tools, datasets, visual stories, localized catalogs, and "
+        "external citation sources. App Store availability is verified against Apple's "
+        "public lookup service; unavailable apps are omitted.",
+        "",
+        "## Crawl entry points",
+    ]
+    entry_points = [
+        ("English app catalog", "apps/index.html"),
+        ("Traditional Chinese app catalog", "apps/zh-Hant/index.html"),
+        ("Japanese app catalog", "apps/ja/index.html"),
+        ("App topic hubs", "hubs/index.html"),
+        ("High-intent answers", "answers/index.html"),
+        ("Comparison pages", "alternatives/index.html"),
+        ("Visual stories", "stories/index.html"),
+        ("Open data", "data/index.html"),
+        ("Free tools", "tools/index.html"),
+    ]
+    for title, rel in entry_points:
+        if os.path.exists(os.path.join(PAGES, rel)):
+            lines.append(f"- [{title}]({SITE}/{rel})")
+
+    lines += ["", "## Public apps"]
+    cats = {}
+    for key in APPS:
+        if key in live_keys:
+            cats.setdefault(APPS[key].get("category", "other"), []).append(key)
+    labels = {
+        "productivity": "Productivity",
+        "photo-utility": "Photo & utility",
+        "finance": "Money & travel",
+        "travel": "Travel",
+        "sleep-sound": "Sleep & focus",
+        "health": "Health",
+        "education": "Education",
+        "kids": "Kids & learning",
+        "lifestyle": "Lifestyle",
+        "other": "More",
+    }
+    for category, keys in cats.items():
+        lines += ["", f"### {labels.get(category, category)}"]
+        for key in keys:
+            app = APPS[key]
+            sub = (app.get("sub") or app.get("tag") or "").replace("\n", " ").strip()
+            facts = list(dict.fromkeys(
+                value for value in [app.get("tag", "")] + app.get("cta_bullets", [])
+                if value
+            ))
+            lines += [
+                "",
+                f"#### {app['name']}",
+                f"- Summary: {sub}",
+                f"- App Store: {appstore_url(key)}",
+            ]
+            if facts:
+                lines.append(f"- Supported positioning: {'; '.join(facts)}")
+            detail = os.path.join(PAGES, "en-US", f"{key}.html")
+            if os.path.exists(detail):
+                lines.append(f"- Canonical app guide: {SITE}/en-US/{key}.html")
+            hub = os.path.join(PAGES, "hubs", f"{key}.html")
+            if os.path.exists(hub):
+                lines.append(f"- Topic hub: {SITE}/hubs/{key}.html")
+            comps = comp_map.get(key, [])
+            if comps:
+                lines.append(f"- Comparison context: {', '.join(comps)}")
+            alternatives = _resource_files(ALT, {key}, "alternatives")
+            alternatives = [row for row in alternatives if row[0].replace(" ", "-").startswith(key + "-")]
+            for title, url in alternatives:
+                lines.append(f"- Comparison: [{title}]({url})")
+
+    resource_sections = [
+        ("Guides", GUIDES, "guides"),
+        ("Free interactive tools", TOOLS, "tools"),
+        ("Open reference data", DATA_DIR, "data"),
+        ("Visual stories", STORIES, "stories"),
+        ("Comparison library", ALT, "alternatives"),
+    ]
+    for heading, directory, prefix in resource_sections:
+        resources = _resource_files(directory, live_keys, prefix)
+        if not resources:
+            continue
+        lines += ["", f"## {heading}"]
+        for title, url in resources:
+            lines.append(f"- [{title}]({url})")
+            if prefix == "data":
+                json_path = os.path.join(directory, os.path.basename(url)[:-5] + ".json")
+                if os.path.exists(json_path):
+                    lines.append(f"  - JSON: {url[:-5]}.json")
+
+    locale_hubs = []
+    for name in sorted(os.listdir(PAGES)):
+        if not re.fullmatch(r"[a-z]{2}(?:-(?:[A-Z]{2}|[A-Z][a-z]{3}))?", name):
+            continue
+        if os.path.exists(os.path.join(PAGES, name, "index.html")):
+            locale_hubs.append((name, f"{SITE}/{name}/index.html"))
+    if locale_hubs:
+        lines += ["", "## Localized catalog hubs"]
+        lines.extend(f"- [{locale}]({url})" for locale, url in locale_hubs)
+
+    lines += ["", "## External curated lists and datasets"]
+    for name, description in EXTERNAL_REPOS:
+        lines.append(f"- [{name}](https://github.com/alice51849/{name}) — {description}")
+
+    lines += ["", "## Sitemaps and feed"]
+    for filename in (
+        "sitemap_index.xml", "sitemap.xml", "sitemap_alternatives.xml",
+        "sitemap_answers.xml", "sitemap_guides.xml", "sitemap_stories.xml",
+        "sitemap_hubs.xml", "sitemap_data.xml", "sitemap_swap.xml", "feed.xml",
+    ):
+        if os.path.exists(os.path.join(PAGES, filename)):
+            lines.append(f"- {SITE}/{filename}")
+    lines.append("")
     return "\n".join(lines)
 
 
@@ -212,13 +373,19 @@ def main():
     ap.add_argument("--publish", action="store_true")
     args = ap.parse_args()
     comp_map = load_competitors()
-    open(os.path.join(PAGES, "llms.txt"), "w", encoding="utf-8").write(build_llms(comp_map))
+    live_keys = live_app_keys(APPSTORE, PAGES)
+    open(os.path.join(PAGES, "llms.txt"), "w", encoding="utf-8").write(build_llms(comp_map, live_keys))
+    open(os.path.join(PAGES, "llms-full.txt"), "w", encoding="utf-8").write(
+        build_llms_full(comp_map, live_keys))
     open(os.path.join(PAGES, "robots.txt"), "w", encoding="utf-8").write(build_robots())
     open(os.path.join(PAGES, "sitemap_index.xml"), "w", encoding="utf-8").write(build_sitemap_index())
-    print(f"✓ llms.txt / robots.txt / sitemap_index.xml → {PAGES}")
-    print(f"  llms.txt 收錄 {len(APPS)} app；robots 歡迎 {len(AI_BOTS)} 個 AI/搜尋 bot")
+    print(f"✓ llms.txt / llms-full.txt / robots.txt / sitemap_index.xml → {PAGES}")
+    print(f"  收錄 {len(live_keys)}/{len(APPS)} 個已公開 app；robots 歡迎 {len(AI_BOTS)} 個 AI/搜尋 bot")
     if args.publish:
-        publish([f"{SITE}/llms.txt", f"{SITE}/robots.txt", f"{SITE}/sitemap_index.xml"])
+        publish([
+            f"{SITE}/llms.txt", f"{SITE}/llms-full.txt",
+            f"{SITE}/robots.txt", f"{SITE}/sitemap_index.xml",
+        ])
     else:
         print("（加 --publish 部署)")
 

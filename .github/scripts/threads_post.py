@@ -1,26 +1,54 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Threads 自動發文 — 零成本,重用 telegram_posts.json 內容池。
-兩步流程:建容器 → 等就緒 → 發布;transient 500 會重試。token 來自 env(GitHub Secret)。
-"""
+"""Threads 自動發文 — 在地化每日輪播與可靠兩階段發布。"""
 import datetime as _dt
 import json
 import os
 import sys
 import time
-import urllib.error
 import urllib.parse
 import urllib.request
 
+from social_post_common import (
+    HTTPStatusError,
+    RequestError,
+    channel_candidates,
+    footer_for,
+    request_json,
+    validate_url,
+)
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 UA = "Mozilla/5.0 (Lumi Apps poster)"
-FOOTER = "\n\n— Lumi Apps · 買斷制 · 無訂閱"
+MAX_POST_CHARS = 500
 
 
-def _post(url, data):
-    req = urllib.request.Request(url, data=urllib.parse.urlencode(data).encode(),
-                                 headers={"User-Agent": UA})
-    return json.load(urllib.request.urlopen(req, timeout=30))
+def _threads_transient(_status, body):
+    try:
+        payload = json.loads(body)
+    except json.JSONDecodeError:
+        payload = {}
+    error = payload.get("error", {}) if isinstance(payload, dict) else {}
+    marked_transient = (
+        bool(error.get("is_transient")) if isinstance(error, dict) else False
+    )
+    return marked_transient or "transient" in body.lower()
+
+
+def _post(url, data, *, label, retry_delays=(2, 4)):
+    req = urllib.request.Request(
+        url,
+        data=urllib.parse.urlencode(data).encode(),
+        headers={"User-Agent": UA},
+    )
+    return request_json(
+        req,
+        label=label,
+        timeout=30,
+        attempts=3,
+        retry_delays=retry_delays,
+        extra_transient=_threads_transient,
+    )
 
 
 # Threads 兩個排程時段(03/14 UTC):台灣/亞洲早、歐美。各發對應時區在地語言。
@@ -34,49 +62,79 @@ def _zone(hour_utc):
     return "west" if 9 <= hour_utc < 21 else "asia"  # 09–21 UTC 歐美;其餘(含 03:00)亞洲
 
 
-def pick(pool):
-    base = _dt.datetime(2026, 1, 1)
-    now = _dt.datetime.utcnow()
-    hours = int((now - base).total_seconds() // 3600)
-    langs = TZ_LANGS[_zone(now.hour)]
-    subset = [p for p in pool if p.get("lang") in langs]
-    if not subset:
-        subset = pool
-    return subset[hours % len(subset)]
+def candidates(pool, now=None):
+    now = (
+        _dt.datetime.now(_dt.timezone.utc)
+        if now is None
+        else now
+    )
+    zone = _zone(
+        now.hour if now.tzinfo is None else now.astimezone(_dt.timezone.utc).hour
+    )
+    return channel_candidates(pool, f"threads:{zone}", now)
+
+
+def pick(pool, now=None):
+    return candidates(pool, now)[0]
+
+
+def compose_text(item):
+    return f"{item['text']}\n\n{item['url']}\n\n{footer_for(item.get('lang'))}"
+
+
+def pick_postable(pool, now=None):
+    for item in candidates(pool, now):
+        text = compose_text(item)
+        if len(text) > MAX_POST_CHARS:
+            print(
+                f"Threads: skipping overlong item ({len(text)} chars, "
+                f"lang={item.get('lang')}, app={item.get('app')})",
+                file=sys.stderr,
+            )
+            continue
+        url = item.get("url")
+        if validate_url(url):
+            return item, text
+        print(f"Threads: skipping dead URL ({url})", file=sys.stderr)
+    raise RequestError(
+        "Threads: no live item of 500 characters or fewer remains in this channel"
+    )
 
 
 def main():
     tok = os.environ.get("THREADS_TOKEN", "").strip()
     uid = os.environ.get("THREADS_USER_ID", "").strip()
     if not tok or not uid:
-        print("missing THREADS_TOKEN / THREADS_USER_ID", file=sys.stderr); sys.exit(1)
-    pool = json.load(open(os.path.join(HERE, "telegram_posts.json"), encoding="utf-8"))
-    item = pick(pool)
-    text = f"{item['text']}\n\n{item['url']}{FOOTER}"
+        print("missing THREADS_TOKEN / THREADS_USER_ID", file=sys.stderr)
+        return 1
     try:
+        with open(
+            os.path.join(HERE, "telegram_posts.json"), encoding="utf-8"
+        ) as pool_file:
+            pool = json.load(pool_file)
+        item, text = pick_postable(pool)
         c = _post(f"https://graph.threads.net/v1.0/{uid}/threads",
-                  {"media_type": "TEXT", "text": text, "access_token": tok})
+                  {"media_type": "TEXT", "text": text, "access_token": tok},
+                  label="Threads container")
         cid = c.get("id")
         if not cid:
-            print("no container id:", c, file=sys.stderr); sys.exit(1)
-        # 等容器就緒再發布,transient 錯誤重試
-        for attempt in range(4):
-            time.sleep(35 if attempt == 0 else 25)
-            try:
-                p = _post(f"https://graph.threads.net/v1.0/{uid}/threads_publish",
-                          {"creation_id": cid, "access_token": tok})
-                print("threads posted ok, id:", p.get("id"), "| app:", item.get("app"))
-                return
-            except urllib.error.HTTPError as e:
-                b = e.read().decode()[:150]
-                if "transient" in b or e.code == 500:
-                    print(f"transient, retry {attempt+1}...", file=sys.stderr); continue
-                print("threads publish error:", e.code, b, file=sys.stderr); sys.exit(1)
-        print("threads publish failed after retries (transient)", file=sys.stderr)
-    except urllib.error.HTTPError as e:
-        print("threads container error:", e.code, e.read().decode()[:200], file=sys.stderr)
-        sys.exit(1)
+            raise RequestError("Threads container returned no id")
+        time.sleep(35)
+        published = _post(
+            f"https://graph.threads.net/v1.0/{uid}/threads_publish",
+            {"creation_id": cid, "access_token": tok},
+            label="Threads publish",
+            retry_delays=(25, 25),
+        )
+        post_id = published.get("id")
+        if not post_id:
+            raise RequestError("Threads publish returned no id")
+        print("threads posted ok, id:", post_id, "| app:", item.get("app"))
+        return 0
+    except (HTTPStatusError, RequestError, ValueError, KeyError) as error:
+        print(f"Threads post failed: {error}", file=sys.stderr)
+        return 1
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

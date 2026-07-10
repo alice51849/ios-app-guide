@@ -305,8 +305,13 @@ def localize_body_links(source: str, lang: str) -> str:
     return re.sub(r'(<a\b[^>]*\bhref=")(https://alice51849\.github\.io/ios-app-guide/[^"]+)(")', repl, source)
 
 
+RTL_LANGS = {"ar-SA", "he", "ur-PK", "fa"}
+
+
 def finalize_html(source: str, lang: str, slug: str) -> str:
-    source = re.sub(r'<html\s+lang="[^"]+"', f'<html lang="{BASE_LANG[lang]}"', source, count=1)
+    dir_attr = ' dir="rtl"' if lang in RTL_LANGS else ""
+    source = re.sub(r'<html\s+lang="[^"]+"(?:\s+dir="[^"]+")?',
+                    f'<html lang="{BASE_LANG[lang]}"{dir_attr}', source, count=1)
     source = re.sub(
         r'<link rel="canonical" href="[^"]+">',
         f'<link rel="canonical" href="{page_url(slug, lang)}">',
@@ -328,9 +333,8 @@ def finalize_html(source: str, lang: str, slug: str) -> str:
     return localize_body_links(source, lang)
 
 
-def render_localized(source: str, lang: str, slug: str, api_key: str) -> str:
+def render_localized(source: str, lang: str, slug: str, mapping: dict[str, str]) -> str:
     strings, spans, json_spans = extract_strings(source)
-    mapping = call_openai(strings, lang, slug, api_key)
 
     replacements: list[tuple[int, int, str]] = []
     for start, end, original, kind in spans:
@@ -358,12 +362,48 @@ def main() -> int:
     parser.add_argument("slugs", nargs="*", help="Optional answer slugs, with or without .html")
     parser.add_argument("--langs", help="Locales to generate (comma or space separated)")
     parser.add_argument("--limit", type=int, help="Limit number of discovered slugs when no positional slugs are provided")
+    parser.add_argument("--dump", metavar="DIR", help="不翻譯,僅把每個 slug 的待譯字串輸出成 DIR/<slug>.json,供 agent 自行在地化(不用 OpenAI key)。")
+    parser.add_argument("--trans", metavar="DIR", help="從全域 DIR/<lang>.json {原文:譯文}(agent 自產)組 mapping,免用 OpenAI key。字串全覆蓋才生成;缺漏寫到 DIR/_missing.<lang>.json 供補譯。")
+    parser.add_argument("--allow-partial", action="store_true", help="搭配 --trans:即使有字串未譯也生成(未譯者維持原文)。預設關閉以免英文 fallback。")
+    parser.add_argument("--openai", action="store_true", help="Explicitly opt in to OpenAI translation. Default requires --trans or --dump.")
     args = parser.parse_args()
+    if args.openai and args.trans:
+        parser.error("--openai and --trans are mutually exclusive")
+    if not args.dump and not args.trans and not args.openai:
+        parser.error("zero-cost default: use --trans DIR or --dump DIR (or explicitly pass --openai)")
 
     langs = parse_langs(args.langs)
     slugs = [Path(s).stem for s in args.slugs] if args.slugs else discover_slugs(args.limit)
-    api_key = read_key()
+
+    # --dump:輸出待譯字串(語言無關,strings 對所有語言相同),供 agent 自行翻譯。
+    if args.dump:
+        dump_dir = Path(args.dump)
+        dump_dir.mkdir(parents=True, exist_ok=True)
+        n = 0
+        for slug in slugs:
+            src_path = ANSWERS / f"{slug}.html"
+            if not src_path.exists():
+                print(f"missing source: {slug}", file=sys.stderr, flush=True)
+                continue
+            strings, _, _ = extract_strings(src_path.read_text(encoding="utf-8"))
+            (dump_dir / f"{slug}.json").write_text(
+                json.dumps({"slug": slug, "strings": strings}, ensure_ascii=False, indent=1),
+                encoding="utf-8")
+            n += 1
+            print(f"dumped {slug} ({len(strings)} strings)", flush=True)
+        print(json.dumps({"dumped": n}, ensure_ascii=False), flush=True)
+        return 0
+
+    api_key = read_key() if args.openai else ""
     created = skipped = failed = 0
+    # --trans:每語言載入全域字典 + 累積缺漏(供 agent 下次補譯)。
+    global_maps: dict[str, dict[str, str]] = {}
+    missing_acc: dict[str, dict[str, int]] = {}
+    if args.trans:
+        for lang in langs:
+            gp = Path(args.trans) / f"{lang}.json"
+            global_maps[lang] = json.loads(gp.read_text(encoding="utf-8")) if gp.exists() else {}
+            missing_acc[lang] = {}
 
     print("Slugs:", flush=True)
     for slug in slugs:
@@ -383,7 +423,21 @@ def main() -> int:
                 print(f"skip existing {lang}/{slug}.html", flush=True)
                 continue
             try:
-                localized = render_localized(source, lang, slug, api_key)
+                if args.trans:
+                    strings, _, _ = extract_strings(source)
+                    gm = global_maps[lang]
+                    mapping = {s: gm[s] for s in strings if s in gm}
+                    miss = [s for s in strings if s not in gm]
+                    if miss and not args.allow_partial:
+                        for s in miss:
+                            missing_acc[lang][s] = missing_acc[lang].get(s, 0) + 1
+                        skipped += 1
+                        print(f"incomplete {lang}/{slug}.html — 缺 {len(miss)} 字串,略過", flush=True)
+                        continue
+                else:
+                    strings, _, _ = extract_strings(source)
+                    mapping = call_openai(strings, lang, slug, api_key)
+                localized = render_localized(source, lang, slug, mapping)
                 target.parent.mkdir(parents=True, exist_ok=True)
                 target.write_text(localized, encoding="utf-8")
                 created += 1
@@ -393,7 +447,24 @@ def main() -> int:
                 print(f"failed {lang}/{slug}.html: {exc}", file=sys.stderr, flush=True)
                 continue
 
+    # 寫出各語言累積缺漏(依出現頁數排序,優先補高頻共用字串)。
+    if args.trans:
+        for lang, miss in missing_acc.items():
+            if not miss:
+                continue
+            ordered = dict(sorted(miss.items(), key=lambda kv: -kv[1]))
+            (Path(args.trans) / f"_missing.{lang}.json").write_text(
+                json.dumps(ordered, ensure_ascii=False, indent=1), encoding="utf-8")
+            print(f"[{lang}] 待補譯字串 {len(ordered)} → _missing.{lang}.json", flush=True)
+
     print(json.dumps({"created": created, "skipped": skipped, "failed": failed}, ensure_ascii=False), flush=True)
+    # 產生新 i18n 頁後自動刷新答案 sitemap(涵蓋所有 */answers/*.html),避免漏索引。
+    if created:
+        try:
+            import aeo_answers  # noqa
+            aeo_answers.write_sitemap()
+        except Exception as exc:
+            print(f"sitemap refresh skipped: {exc}", file=sys.stderr, flush=True)
     return 0 if failed == 0 else 1
 
 

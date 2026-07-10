@@ -17,6 +17,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
+      - name: Verify social automation
+        run: python3 .github/scripts/test_social_posting.py -q
       - name: Post to Threads (free, no OpenAI)
         env:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}

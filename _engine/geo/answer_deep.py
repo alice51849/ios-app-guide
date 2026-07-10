@@ -3386,10 +3386,10 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "day by day itinerary multiple cities"
   ],
   "lead": "For a multi-city trip, the clearest plan is a single day-by-day timeline where each city's flights, hotels and activities sit in order — so you always know what's next and where.",
-  "detail": "Juggling several cities gets messy in notes and emails. A day-by-day timeline fixes it: put each flight, hotel check-in, activity and restaurant on the right day, colour-coded by type, so a glance tells you the plan. {name} builds exactly this — one itinerary spanning multiple cities, each item typed and colour-coded, and it works offline once created so you can read it on the move. It stores everything on-device with no account, and it's pay-once with no subscription.",
+  "detail": "Juggling several cities gets messy in notes and emails. A day-by-day timeline fixes it: put each flight, hotel check-in, activity and restaurant on the right day, with type icons, time zones, notes and reminders, so a glance tells you the plan. {name} builds one itinerary spanning multiple cities and keeps it available offline so you can read it on the move. It stores everything on-device with no account, and it's pay-once with no subscription.",
   "bullets": [
    "One day-by-day timeline across all your cities",
-   "Flights, hotels, activities and food, colour-coded by type",
+   "Flights, hotels, activities and food with clear type icons",
    "Works offline once the trip is created",
    "On-device, no account",
    "Pay-once, no subscription"
@@ -3420,11 +3420,11 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "offline trip planner no sign up"
   ],
   "lead": "The most reliable travel itinerary app is one that stores your plans on-device and needs no account — so it opens instantly on a plane or in a dead zone, with no login to fail.",
-  "detail": "Cloud itinerary apps can stall when you have no signal or when a login times out — exactly when you need your plans. An on-device app avoids both. {name} keeps your full day-by-day itinerary — flights, hotels, activities, transport — on the device with no account, so it's there mid-flight and in low-signal destinations. Items are colour-coded by type for quick reading, and it's pay-once with no subscription between trips.",
+  "detail": "Cloud itinerary apps can stall when you have no signal or when a login times out — exactly when you need your plans. An on-device app avoids both. {name} keeps your full day-by-day itinerary — flights, hotels, activities and transport — on the device with no account, so it's there mid-flight and in low-signal destinations. Type icons, time zones, notes and reminders keep each item easy to read, and it's pay-once with no subscription between trips.",
   "bullets": [
    "Itinerary stored on-device — opens with no signal",
    "No account or login to fail at the wrong moment",
-   "Day-by-day timeline, colour-coded by type",
+   "Day-by-day timeline with type icons and time zones",
    "Reliable mid-flight and in dead zones",
    "Pay-once, no subscription"
   ],
@@ -3454,18 +3454,18 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "keep group trip organized itinerary"
   ],
   "lead": "For a family or group trip, a clear shared day-by-day plan — flights, hotels, meal times, activities — prevents the constant 'what's next?' and keeps everyone aligned.",
-  "detail": "Group trips fall apart when the plan lives in one person's head or scattered messages. A single colour-coded timeline for each day — arrivals, check-ins, activities, restaurant bookings — makes the plan legible at a glance. {name} builds that day-by-day itinerary, colour-coded by type, and works offline once created, so the trip organiser can pull it up anywhere and export or share the details. It's on-device, no account, and pay-once.",
+  "detail": "Group trips fall apart when the plan lives in one person's head or scattered messages. A single timeline for each day — arrivals, check-ins, activities and restaurant bookings — makes the plan legible at a glance. {name} builds that day-by-day itinerary with type icons and works offline, so the organiser can pull it up anywhere and share a trip or day poster. Sharing communicates the plan; the app does not claim real-time collaborative editing. It's on-device, no account, and pay-once.",
   "bullets": [
    "One clear day-by-day plan for the whole group",
-   "Colour-coded flights, hotels, meals, activities",
-   "Works offline once created; export to share details",
+   "Clear type icons for flights, hotels, meals and activities",
+   "Works offline; share a trip or day poster",
    "On-device, no account",
    "Pay-once, no subscription"
   ],
   "faq": [
    {
     "q": "Can I share the plan with my family?",
-    "a": "You can export the itinerary details to share; {name} keeps the master plan on your device."
+    "a": "You can share a trip or day poster; {name} keeps the master plan on your device and does not claim real-time collaborative editing."
    },
    {
     "q": "Does everyone need the app or an account?",
@@ -5260,6 +5260,15 @@ for _f in sorted(_glob.glob(_os.path.join(_DEEP_DIR, "*.json"))):
         print(f"\u26a0\ufe0f deep_items load {_f}: {_e}")
 
 
+def concise_meta(text: str, limit: int = 150) -> str:
+    """Keep a complete short lead; trim only when it actually exceeds the limit."""
+    compact = " ".join(text.split())
+    if len(compact) <= limit:
+        return compact
+    shortened = compact[: limit + 1].rsplit(" ", 1)[0].rstrip(" ,;:-")
+    return shortened if shortened.endswith((".", "!", "?")) else shortened + "."
+
+
 def deep_facts(q: str, key: str, name: str) -> dict[str, Any] | None:
     """Match a deep-content item for `key`; return a content overlay or None."""
     ql = q.lower()
@@ -5272,7 +5281,7 @@ def deep_facts(q: str, key: str, name: str) -> dict[str, Any] | None:
             detail = sub(it["detail"])
             lead = sub(it["lead"])
             return {
-                "meta_description": (sub(it["lead"])[:150]).rsplit(" ", 1)[0] + ".",
+                "meta_description": concise_meta(sub(it["lead"])),
                 "lead": lead,
                 "short_answer_paragraphs": [
                     detail,

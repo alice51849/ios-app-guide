@@ -25,29 +25,29 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GEO_SITE: https://alice51849.github.io/ios-app-guide
-      OPENAI_MODEL: gpt-4o-mini
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Provision OpenAI key
-        run: printf '%s' "${{ secrets.OPENAI_KEY }}" > "$HOME/.openai_key"
       - name: Link site dir into engine layout
         run: |
           rm -rf _engine/geo/pages
           ln -s "$GITHUB_WORKSPACE" _engine/geo/pages
+      - name: Verify zero-cost growth infrastructure
+        run: python3 -m unittest discover -s _engine/geo/tests -p "test_*.py"
       - name: Generate new answer pages (+ rebuild answers sitemap)
         run: |
           N="${{ github.event.inputs.answers || '8' }}"
           cd _engine/geo
-          python3 aeo_answers.py --limit "$N" || echo "aeo_answers exited $?"
-      - name: Refresh hubs + Atom feed + llms.txt / sitemaps
+          python3 aeo_answers.py --limit "$N"
+      - name: Refresh AI indexes + hubs + Atom feed
         run: |
           cd _engine/geo
-          python3 gen_hubs.py || echo "gen_hubs exited $?"
-          python3 gen_feed.py || echo "gen_feed exited $?"
-          python3 gen_llms.py || echo "gen_llms exited $?"
+          python3 gen_llms.py
+          python3 gen_hubs.py
+          python3 gen_app_catalog.py
+          python3 gen_feed.py
       - name: Commit English content first (fast, before slow localization)
         run: |
           git config user.name "github-actions[bot]"
@@ -60,10 +60,13 @@ jobs:
             git pull --rebase --autostash || true
             git push
           fi
-      - name: Localize a small batch (best-effort; may be slow / rate-limited)
+      - name: Localize from curated dictionaries (zero-cost, no API)
         run: |
           cd _engine/geo
-          timeout 25m python3 aeo_answers_i18n.py --limit 2 || echo "aeo_answers_i18n stopped ($?)"
+          timeout 10m python3 aeo_answers_i18n.py \
+            --trans i18n_trans \
+            --langs "zh-Hant ja ko de-DE es-ES fr-FR pt-BR ms" \
+            --limit 2
       - name: Fix EN hreflang reciprocity (declare newly-added locale versions)
         run: |
           cd _engine/geo

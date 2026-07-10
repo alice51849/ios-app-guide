@@ -1,18 +1,48 @@
 {
-  "tripbee": {
-    "appstore_id": "6787754435",
-    "name": "TripBee Pro",
-    "search": "TripBee Pro",
-    "category": "other",
-    "sub": "TripBee Pro — a pay-once iOS app, no subscription",
-    "tag": "Pay once · No subscription",
-    "cta_bullets": [
-      "Pay once",
-      "No subscription",
-      "Private"
-    ],
-    "keywords": [
-      "tripbee"
-    ]
-  }
+ "tripbee": {
+  "appstore_id": "6787754435",
+  "name": "TripBee Pro: Trip Planner",
+  "search": "TripBee Pro Trip Planner",
+  "category": "travel",
+  "sub": "Private offline day-by-day trip planner with smart family packing lists and one-tap Apple Maps directions",
+  "tag": "Pay once · No subscription · Offline",
+  "cta_bullets": [
+   "Pay once",
+   "No subscription",
+   "Private",
+   "Offline",
+   "No account"
+  ],
+  "keywords": [
+   "trip planner",
+   "travel itinerary",
+   "family packing list",
+   "offline travel",
+   "vacation planner",
+   "trip organizer"
+  ]
+ },
+ "sereno": {
+  "appstore_id": "6788236641",
+  "name": "Sereno",
+  "search": "Sereno",
+  "category": "sleep-sound",
+  "sub": "A high-end sound machine for sleep, focus & calm — pay once",
+  "tag": "Pay once · No subscription · Offline",
+  "cta_bullets": [
+   "Pay once",
+   "No ads",
+   "Offline"
+  ],
+  "keywords": [
+   "white noise",
+   "sleep sounds",
+   "brown noise",
+   "focus",
+   "rain sounds",
+   "tinnitus",
+   "ocean",
+   "meditation"
+  ]
+ }
 }

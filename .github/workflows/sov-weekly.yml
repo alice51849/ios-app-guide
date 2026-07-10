@@ -1,4 +1,4 @@
-name: Weekly AI visibility (share-of-voice)
+name: Weekly zero-cost outreach coverage
 
 on:
   schedule:
@@ -15,27 +15,25 @@ concurrency:
 jobs:
   measure:
     runs-on: ubuntu-latest
-    env:
-      OPENAI_MODEL: gpt-4o-mini
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Provision OpenAI key
-        run: printf '%s' "${{ secrets.OPENAI_KEY }}" > "$HOME/.openai_key"
-      - name: Measure AI share-of-voice (all apps)
+      - name: Link site dir into engine layout
         run: |
-          cd _engine/geo
-          python3 aeo_sov.py || echo "aeo_sov exited $?"
+          rm -rf _engine/geo/pages
+          ln -s "$GITHUB_WORKSPACE" _engine/geo/pages
+      - name: Measure factual owned-asset coverage
+        run: python3 _engine/geo/outreach_scorecard.py
       - name: Commit report
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A _engine/geo/reports
           if git diff --cached --quiet; then
-            echo "No SOV changes."
+            echo "No coverage changes."
           else
-            git commit -m "Weekly AI share-of-voice report [skip deploy]"
+            git commit -m "Weekly zero-cost outreach coverage [skip deploy]"
             git push
           fi

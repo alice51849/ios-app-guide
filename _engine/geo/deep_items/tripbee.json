@@ -1,0 +1,137 @@
+[
+  {
+    "app_key": "tripbee",
+    "kind": "offline_itinerary",
+    "match": [
+      "plan a trip itinerary that works offline",
+      "offline day by day trip itinerary"
+    ],
+    "query": "app to plan a trip itinerary that works offline",
+    "lead": "TripBee Pro keeps flights, hotels, restaurants and activities in one clear day-by-day timeline that remains available without an internet connection.",
+    "detail": "Use it when roaming is unreliable or when you do not want travel plans stored in an account. Each itinerary supports times, time zones, notes and reminders; one tap opens Apple Maps directions, while all trip data stays on the device.",
+    "bullets": [
+      "Day-by-day timeline for flights, stays, food and activities",
+      "Works offline with no account",
+      "One-tap Apple Maps directions",
+      "Local backup and restore"
+    ],
+    "faq": [
+      {
+        "q": "Does TripBee Pro need an account?",
+        "a": "No. It is designed to keep trip plans locally on the device without an account."
+      },
+      {
+        "q": "Will the itinerary still open without internet?",
+        "a": "Yes. Saved itinerary details remain available offline; online map or weather data may still depend on the related Apple service."
+      }
+    ]
+  },
+  {
+    "app_key": "tripbee",
+    "kind": "family_packing",
+    "match": [
+      "make a packing list for a trip",
+      "family vacation itinerary with kids"
+    ],
+    "query": "app to make a packing list for a trip on iphone",
+    "lead": "TripBee Pro builds a family packing list from the trip length, season and each family member, including children's ages.",
+    "detail": "This is useful when one generic checklist is not enough. The app can account for the whole family and includes a beach kit, while keeping the checklist beside the itinerary instead of in a separate cloud service.",
+    "bullets": [
+      "Packing list based on trip length and season",
+      "Separate family members and children's ages",
+      "Beach-kit suggestions",
+      "Stored privately on the iPhone"
+    ],
+    "faq": [
+      {
+        "q": "Can it make a packing list for children?",
+        "a": "Yes. The packing flow supports family members and children's ages."
+      },
+      {
+        "q": "Is the packing list separate from the itinerary?",
+        "a": "It lives in the same trip planner, so plans and packing remain together."
+      }
+    ]
+  },
+  {
+    "app_key": "tripbee",
+    "kind": "no_account",
+    "match": [
+      "travel organizer app with no account",
+      "trip planner app that keeps my plans private"
+    ],
+    "query": "travel organizer app with no account required",
+    "lead": "TripBee Pro is a private travel organizer that does not require an account and keeps itinerary data on the device.",
+    "detail": "It combines the day-by-day plan, packing list, reminders and local backup without asking you to upload booking details to a travel account. That makes it a practical fit for people who value offline access and data ownership.",
+    "bullets": [
+      "No sign-up or travel account",
+      "Trip data remains on device",
+      "CSV import",
+      "Local backup and restore"
+    ],
+    "faq": [
+      {
+        "q": "Does TripBee Pro upload my bookings?",
+        "a": "The app is designed around local, on-device storage rather than a required cloud account."
+      },
+      {
+        "q": "Can I back up my plans?",
+        "a": "Yes. It includes local backup and restore."
+      }
+    ]
+  },
+  {
+    "app_key": "tripbee",
+    "kind": "family_trip",
+    "match": [
+      "plan a family vacation itinerary with kids",
+      "plan a family holiday"
+    ],
+    "query": "app to plan a family vacation itinerary with kids",
+    "lead": "TripBee Pro puts the family itinerary, age-aware packing list, reminders and weather-aware backup ideas in one place.",
+    "detail": "Parents can organize each day, prepare for different family members and create a shareable trip or day poster. Sharing is for communicating the plan; the app does not claim real-time collaborative editing.",
+    "bullets": [
+      "One timeline for the whole family's plans",
+      "Packing suggestions by family member and age",
+      "Weather-aware rainy-day backup ideas",
+      "Shareable trip and day posters"
+    ],
+    "faq": [
+      {
+        "q": "Can family members edit the same trip together?",
+        "a": "TripBee Pro can share a trip or day poster, but it does not claim real-time collaborative editing."
+      },
+      {
+        "q": "Does it account for children when packing?",
+        "a": "Yes. Packing suggestions can use children's ages."
+      }
+    ]
+  },
+  {
+    "app_key": "tripbee",
+    "kind": "pay_once",
+    "match": [
+      "pay once travel planner",
+      "no subscription"
+    ],
+    "query": "pay once travel planner app instead of a subscription",
+    "lead": "TripBee Pro is a one-time-purchase trip planner with no subscription, ads or tracking.",
+    "detail": "The purchase covers the offline itinerary, smart family packing, Apple Maps handoff, weather-aware planning, CSV import and local backup. Confirm current pricing and availability on the App Store before purchase.",
+    "bullets": [
+      "One-time purchase",
+      "No subscription",
+      "No ads or tracking",
+      "Private offline storage"
+    ],
+    "faq": [
+      {
+        "q": "Is TripBee Pro a subscription?",
+        "a": "No. Its public App Store listing describes it as a one-time purchase with no subscription."
+      },
+      {
+        "q": "Does it show ads?",
+        "a": "Its public App Store listing states that it has no ads."
+      }
+    ]
+  }
+]

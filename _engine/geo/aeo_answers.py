@@ -29,11 +29,33 @@ MODEL = "gpt-4o-mini"
 OPENAI_ENDPOINT = "https://api.openai.com/v1/chat/completions"
 
 sys.path.insert(0, str(ROOT / ".." / "social"))
-from videogen.registry import APPS, appstore_url  # noqa: E402
+from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
+from appstore_live import live_app_keys  # noqa: E402
 import queries  # noqa: E402
 import answer_facts  # noqa: E402
 
 TEMPLATE = ANSWERS_DIR / "best-offline-document-scanner-app-for-iphone.html"
+
+# Commercial focus first, then share-of-voice within each tier. Every public app
+# remains eligible; this only prevents the daily limit from being spent on the
+# least valuable broad-market queries before proven/narrow segments.
+OUTREACH_TIER = {
+    "lumibopomofo": 0,
+    "lumibopomofopro": 0,
+    "snapport": 1,
+    "lumiletterspro": 1,
+    "lumimathpro": 1,
+    "lumimissionpro": 1,
+    "gmoney": 1,
+    "hourstag": 1,
+    "aim990": 2,
+    "mochi": 2,
+    "scanto": 2,
+    "cyca": 2,
+    "cvdesk": 2,
+    "lockhour": 2,
+    "unblurry": 2,
+}
 
 
 def slugify(question: str) -> str:
@@ -389,24 +411,35 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
 <section class="wrap card"><h2>FAQ</h2>{faq_html}</section></main><footer class="footer"><div class="wrap">Independent guide. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.</div></footer></body></html>'''
 
 
-def _sov_rates() -> dict:
-    """Latest AI share-of-voice per app (lower rate = more neglected by AI = higher priority)."""
-    path = ROOT / "reports" / "aeo_sov.json"
+def _coverage_rates() -> dict:
+    """Owned outreach coverage per app (lower = more neglected within its tier)."""
+    path = ROOT / "reports" / "outreach_coverage.json"
     try:
         d = json.loads(path.read_text(encoding="utf-8"))
-        return {r["key"]: r.get("mention_rate", 0.0) for r in d.get("results", [])}
+        return {
+            row["key"]: row.get("coverage_score", 0.0)
+            for row in d.get("rows", [])
+            if row.get("public")
+        }
     except Exception:  # noqa: BLE001
         return {}
 
 
 def question_plan(keys: list[str] | None) -> list[tuple[str, str]]:
-    selected = keys or list(APPS.keys())
+    public = live_app_keys(APPSTORE, ROOT / "pages", refresh=True)
+    selected = keys or [key for key in APPS if key in public]
     unknown = [k for k in selected if k not in APPS]
     if unknown:
         raise SystemExit(f"Unknown app key(s): {', '.join(unknown)}")
-    # 自我改進的回饋迴路:優先為「AI 曝光率最低」的 app 補內容(measure→prioritize→measure)
-    rates = _sov_rates()
-    ordered = sorted(selected, key=lambda k: (rates.get(k, 0.0), k))
+    unavailable = [k for k in selected if k not in public]
+    if unavailable:
+        raise SystemExit(f"App Store not public; outreach skipped: {', '.join(unavailable)}")
+    # 先守住商業優先層級，再用 AI 曝光率補同層級最弱處。
+    rates = _coverage_rates()
+    ordered = sorted(
+        selected,
+        key=lambda k: (OUTREACH_TIER.get(k, 3), rates.get(k, 0.0), k),
+    )
     plan: list[tuple[str, str]] = []
     seen_slugs: set[str] = set()
     for key in ordered:
@@ -421,17 +454,17 @@ def question_plan(keys: list[str] | None) -> list[tuple[str, str]]:
     return plan
 
 
-def create_page(key: str, question: str) -> str | None:
+def create_page(key: str, question: str, use_openai: bool = False) -> str | None:
     slug = slugify(question)
     path = ANSWERS_DIR / f"{slug}.html"
     if path.exists():
         return None
     try:
-        if key_available():
+        if use_openai:
             raw = call_openai(prompt_for(question, key))
             content = normalized_content(raw, question, key)
         else:
-            # 無 OpenAI key:改用內建、帶入該 App 真實賣點的內容,免費且全自動
+            # 預設只用內建真實賣點，避免背景排程意外產生 API 成本。
             content = normalized_content(default_content(question, key), question, key)
     except Exception as exc:
         print(f"SKIP {slug}: {exc}", flush=True)
@@ -508,13 +541,16 @@ def main() -> None:
     parser.add_argument("apps", nargs="*", help="Optional app keys. Defaults to all apps.")
     parser.add_argument("--limit", type=int, default=None, help="Maximum number of new pages to create.")
     parser.add_argument("--no-finalize", action="store_true", help="Skip index+sitemap rebuild (for parallel workers).")
+    parser.add_argument("--use-openai", action="store_true", help="Explicitly opt in to OpenAI generation. Default is offline.")
     args = parser.parse_args()
+    if args.use_openai and not key_available():
+        parser.error("--use-openai requires ~/.openai_key")
     ANSWERS_DIR.mkdir(parents=True, exist_ok=True)
     created: list[str] = []
     for key, question in question_plan(args.apps or None):
         if args.limit is not None and len(created) >= args.limit:
             break
-        slug = create_page(key, question)
+        slug = create_page(key, question, use_openai=args.use_openai)
         if slug:
             created.append(slug)
     if not args.no_finalize:

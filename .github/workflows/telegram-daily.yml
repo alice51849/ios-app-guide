@@ -18,6 +18,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
+      - name: Verify social automation
+        run: python3 .github/scripts/test_social_posting.py -q
       - name: Post to Telegram channel (free, no OpenAI)
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}

@@ -15,7 +15,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, "social"))
 sys.path.insert(0, HERE)
-from videogen.registry import APPS, appstore_url  # noqa: E402
+from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
+from appstore_live import live_app_keys  # noqa: E402
 import queries  # noqa: E402
 
 PAGES = os.path.join(HERE, "pages")
@@ -91,7 +92,7 @@ def build_hub(key):
     # language pills (landing pages in many languages)
     langs = []
     for lc in sorted(os.listdir(PAGES)):
-        if re.fullmatch(r"[a-z]{2}(-[A-Z]{2})?", lc) and exists(f"{lc}/{key}.html"):
+        if re.fullmatch(r"[a-z]{2}(?:-(?:[A-Z]{2}|[A-Z][a-z]{3}))?", lc) and exists(f"{lc}/{key}.html"):
             langs.append(f'<a class="pill" href="{SITE}/{lc}/{key}.html" hreflang="{lc}">{lc}</a>')
     langs_html = "".join(langs)
 
@@ -101,7 +102,7 @@ def build_hub(key):
 <meta name="description" content="Everything about {e(name)} — {e(sub)}. Buying guides, answers to common questions, comparisons and the App Store link.">
 <link rel="canonical" href="{canon}">
 <style>{STYLE}</style>
-<script type="application/ld+json">{{"@context":"https://schema.org","@type":"CollectionPage","name":"{e(name)} resources","url":"{canon}","about":{{"@type":"SoftwareApplication","name":"{e(name)}","operatingSystem":"iOS","applicationCategory":"MobileApplication","offers":{{"@type":"Offer","price":"0","priceCurrency":"USD"}}}}}}</script>
+<script type="application/ld+json">{{"@context":"https://schema.org","@type":"CollectionPage","name":"{e(name)} resources","url":"{canon}","about":{{"@type":"SoftwareApplication","name":"{e(name)}","operatingSystem":"iOS","applicationCategory":"MobileApplication"}}}}</script>
 </head><body>
 <header class="top"><div class="wrap nav"><a href="{SITE}/index.html">iOS App Guide</a><a href="{SITE}/answers/">Answers</a><a href="{SITE}/stories/">Stories</a></div></header>
 <main class="wrap">
@@ -116,7 +117,12 @@ def build_hub(key):
 
 def main():
     os.makedirs(HUBS, exist_ok=True)
-    keys = [k for k in APPS if appstore_url(k)]
+    live_keys = live_app_keys(APPSTORE, PAGES, refresh=False)
+    keys = [k for k in APPS if k in live_keys]
+    for key in set(APPS) - live_keys:
+        stale = os.path.join(HUBS, f"{key}.html")
+        if os.path.exists(stale):
+            os.remove(stale)
     for k in keys:
         open(os.path.join(HUBS, f"{k}.html"), "w", encoding="utf-8").write(build_hub(k))
     # index
@@ -130,7 +136,7 @@ def main():
     # sitemap
     lm = time.strftime("%Y-%m-%d", time.gmtime())
     rows = [f'  <url><loc>{SITE}/hubs/{k}.html</loc><lastmod>{lm}</lastmod></url>' for k in keys]
-    rows.append(f'  <url><loc>{SITE}/hubs/index.html</loc><lastmod>{lm}</lastmod></url>')
+    rows.append(f'  <url><loc>{SITE}/hubs/</loc><lastmod>{lm}</lastmod></url>')
     xml = ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
            + "\n".join(rows) + "\n</urlset>\n")
     open(os.path.join(PAGES, "sitemap_hubs.xml"), "w", encoding="utf-8").write(xml)

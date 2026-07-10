@@ -11,8 +11,8 @@ Public apps: **24** · Average coverage: **98.5%**
 | Lumi Mission Planet | 93.3% | 44/44 | 2 | 5 | hub / guide / story |
 | Lumi Weather | 93.3% | 40/40 | 2 | 5 | hub / guide / story |
 | Sono Note | 93.3% | 57/57 | 2 | 5 | hub / guide / story |
-| Lumi Bopomofo | 98.9% | 63/65 | 5 | 5 | hub / guide / story |
-| Lumi Bopomofo Pro | 98.9% | 63/65 | 3 | 5 | hub / guide / story |
+| Lumi Bopomofo | 98.9% | 64/66 | 5 | 5 | hub / guide / story |
+| Lumi Bopomofo Pro | 98.9% | 64/66 | 3 | 5 | hub / guide / story |
 | PicClear | 99.4% | 59/60 | 3 | 5 | hub / guide / story |
 | Sereno | 99.4% | 57/58 | 4 | 5 | hub / guide / story |
 | Aim990 | 100.0% | 56/56 | 4 | 5 | hub / guide / story |

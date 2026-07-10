@@ -108,6 +108,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("offers", aeo_pages.app_schema("aim990", "Accurate copy"))
         slug, page = aeo_pages.hub_page("aim990", [])
         self.assertEqual("aim990-flexible-unlock", slug)
+        self.assertEqual(slug, aeo_pages.alternative_hub_slug("aim990"))
         self.assertIn("one-time unlock option", page)
         self.assertIn("optional subscription plans", page)
         self.assertNotIn("No subscription, no recurring fees", page)
@@ -126,6 +127,10 @@ class GeneratorTests(unittest.TestCase):
                     ["simple task app pay once no subscription"],
                 )
                 self.assertEqual(expected_slug, actual_slug)
+                self.assertEqual(
+                    expected_slug,
+                    aeo_pages.alternative_hub_slug(key),
+                )
                 self.assertNotIn("pay once", actual_page.lower())
 
     def test_alternatives_prune_stale_or_unlisted_app_pages(self):

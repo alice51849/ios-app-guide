@@ -11,6 +11,7 @@ filling any missing topic pages. Never touches git.
 Usage:
     python3 regen_facts.py            # upgrade all topic-matched pages
     python3 regen_facts.py tripbee    # upgrade one app's topic-matched pages
+    python3 regen_facts.py lumibopomofo --query "exact question"
     python3 regen_facts.py --dry-run  # report what would change, write nothing
 """
 from __future__ import annotations
@@ -22,11 +23,17 @@ import aeo_answers as A
 import answer_facts
 
 
-def run(dry_run: bool = False, keys: list[str] | None = None) -> dict:
+def run(
+    dry_run: bool = False,
+    keys: list[str] | None = None,
+    questions: list[str] | None = None,
+) -> dict:
     upgraded: list[str] = []
     created: list[str] = []
     failed: list[str] = []
     seen: set[str] = set()
+    requested_questions = set(questions or [])
+    matched_questions: set[str] = set()
     selected = keys or list(A.queries.ALL)
     unknown = [key for key in selected if key not in A.queries.ALL]
     if unknown:
@@ -37,6 +44,9 @@ def run(dry_run: bool = False, keys: list[str] | None = None) -> dict:
             continue
         app = A.APPS[key]
         for q in qlist:
+            if requested_questions and q not in requested_questions:
+                continue
+            matched_questions.add(q)
             if not A.is_english_answer_question(q):
                 continue
             slug = A.slugify(q)
@@ -56,6 +66,11 @@ def run(dry_run: bool = False, keys: list[str] | None = None) -> dict:
                 (upgraded if existed else created).append(slug)
             except Exception as exc:  # noqa: BLE001
                 failed.append(f"{slug}: {exc}")
+    missing_questions = requested_questions - matched_questions
+    if missing_questions:
+        raise SystemExit(
+            "Unknown question(s): " + ", ".join(sorted(missing_questions))
+        )
     if not dry_run:
         A.regenerate_index()
         A.write_sitemap()
@@ -74,6 +89,16 @@ def run(dry_run: bool = False, keys: list[str] | None = None) -> dict:
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description="Regenerate topic-matched answer pages with fresh facts.")
     ap.add_argument("apps", nargs="*", help="Optional app keys; defaults to all apps.")
+    ap.add_argument(
+        "--query",
+        action="append",
+        default=[],
+        help="Regenerate one exact question; may be repeated.",
+    )
     ap.add_argument("--dry-run", action="store_true", help="Report only; write nothing.")
     args = ap.parse_args()
-    run(dry_run=args.dry_run, keys=args.apps or None)
+    run(
+        dry_run=args.dry_run,
+        keys=args.apps or None,
+        questions=args.query or None,
+    )

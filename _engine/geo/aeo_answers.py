@@ -33,6 +33,7 @@ from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
 import queries  # noqa: E402
 import answer_facts  # noqa: E402
+from aeo_pages import alternative_hub_slug  # noqa: E402
 
 TEMPLATE = ANSWERS_DIR / "best-offline-document-scanner-app-for-iphone.html"
 
@@ -378,11 +379,10 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
         for item in faq
     )
     guide_link = f"{SITE}/guides/{key}.html"
-    alt_link = f"{SITE}/alternatives/{key}-no-subscription.html"
+    alt_link = f"{SITE}/alternatives/{alternative_hub_slug(key)}.html"
     special_notice = ""
     if key == "aim990":
         special_notice = " TOEIC is a registered trademark of ETS. Aim990 is an independent study aid and is not affiliated with or endorsed by ETS. No app can guarantee a TOEIC score."
-        alt_link = f"{SITE}/guides/{key}.html"
     return f'''<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(meta)}"><link rel="canonical" href="{canonical}">

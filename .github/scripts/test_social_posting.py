@@ -83,7 +83,7 @@ class RotationTests(unittest.TestCase):
                 self.assertTrue(all(item["lang"] in languages for item in picks))
 
     def test_all_channels_choose_different_items_on_the_same_day(self):
-        for day in range(400):
+        for day in range(1000):
             picks = (
                 telegram_post.pick(self.pool, self._at(day, 1)),
                 threads_post.pick(self.pool, self._at(day, 3)),

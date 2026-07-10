@@ -136,11 +136,10 @@ def rotated_channel_candidates(pool, channel, now=None):
     return subset[start:] + subset[:start]
 
 
-def _new_schedule(pool, through_channel):
+def _new_schedule(pool):
     items = list(pool)
-    channels = CHANNEL_ORDER[: CHANNEL_ORDER.index(through_channel) + 1]
     subsets = {}
-    for channel in channels:
+    for channel in CHANNEL_ORDER:
         spec = CHANNEL_SPECS[channel]
         subset = [item for item in items if item.get("lang") in spec["langs"]]
         subset = subset or items
@@ -151,22 +150,81 @@ def _new_schedule(pool, through_channel):
             raise ValueError(f"duplicate social post in {channel} pool")
         subsets[channel] = subset
     return {
-        "channels": channels,
         "subsets": subsets,
-        "queues": {channel: [] for channel in channels},
-        "cycles": {channel: 0 for channel in channels},
-        "days": {},
-        "last_day": -1,
+        "schedules": {channel: {} for channel in CHANNEL_ORDER},
+        "planned_cycles": {channel: set() for channel in CHANNEL_ORDER},
     }
 
 
-def _refill_queue(state, channel):
+def _cycle_items(state, channel, cycle):
     subset = state["subsets"][channel]
-    cycle = state["cycles"][channel]
     step = CHANNEL_ORDER.index(channel) + 1
     offset = (CHANNEL_SPECS[channel]["offset"] + cycle * step) % len(subset)
-    state["queues"][channel] = subset[offset:] + subset[:offset]
-    state["cycles"][channel] += 1
+    return subset[offset:] + subset[:offset]
+
+
+def _ensure_schedule_through(state, channel_index, end_day):
+    channel = CHANNEL_ORDER[channel_index]
+    subset = state["subsets"][channel]
+    final_cycle = end_day // len(subset)
+    for cycle in range(final_cycle + 1):
+        if cycle in state["planned_cycles"][channel]:
+            continue
+        start = cycle * len(subset)
+        days = list(range(start, start + len(subset)))
+        for earlier_index in range(channel_index):
+            _ensure_schedule_through(state, earlier_index, days[-1])
+
+        items = _cycle_items(state, channel, cycle)
+        forbidden = {
+            day: {
+                item_key(state["schedules"][earlier][day])
+                for earlier in CHANNEL_ORDER[:channel_index]
+            }
+            for day in days
+        }
+        item_to_day = {}
+        day_to_item = {}
+
+        def assign(day, seen_items):
+            day_offset = day - start
+            for offset in range(len(items)):
+                item_index = (day_offset + offset) % len(items)
+                if item_index in seen_items:
+                    continue
+                item = items[item_index]
+                if item_key(item) in forbidden[day]:
+                    continue
+                seen_items.add(item_index)
+                previous_day = item_to_day.get(item_index)
+                if previous_day is None or assign(previous_day, seen_items):
+                    item_to_day[item_index] = day
+                    day_to_item[day] = item_index
+                    return True
+            return False
+
+        ordered_days = sorted(
+            days,
+            key=lambda day: (
+                len(items) - sum(
+                    item_key(item) in forbidden[day] for item in items
+                ),
+                day,
+            ),
+        )
+        for day in ordered_days:
+            if not assign(day, set()):
+                raise ScheduleCapacityError(
+                    f"cannot build a fair cycle for {channel}; "
+                    "add more localized content"
+                )
+        if len(day_to_item) != len(days):
+            raise ScheduleCapacityError(
+                f"incomplete fair cycle for {channel}; add more localized content"
+            )
+        for day, item_index in day_to_item.items():
+            state["schedules"][channel][day] = items[item_index]
+        state["planned_cycles"][channel].add(cycle)
 
 
 def _scheduled_picks(pool, through_channel, now=None):
@@ -175,37 +233,18 @@ def _scheduled_picks(pool, through_channel, now=None):
         raise ValueError(f"social schedule predates {BASE_DATE.isoformat()}")
     items = list(pool)
     signature = tuple(item_key(item) for item in items)
-    cache_key = (signature, through_channel)
-    state = _SCHEDULE_CACHE.get(cache_key)
+    state = _SCHEDULE_CACHE.get(signature)
     if state is None:
-        state = _new_schedule(items, through_channel)
-        _SCHEDULE_CACHE[cache_key] = state
+        state = _new_schedule(items)
+        _SCHEDULE_CACHE[signature] = state
 
-    for day in range(state["last_day"] + 1, target_day + 1):
-        used = set()
-        picks = {}
-        for channel in state["channels"]:
-            if not state["queues"][channel]:
-                _refill_queue(state, channel)
-            selected = next(
-                (
-                    item
-                    for item in state["queues"][channel]
-                    if item_key(item) not in used
-                ),
-                None,
-            )
-            if selected is None:
-                raise ScheduleCapacityError(
-                    f"cannot schedule a unique daily post for {channel}; "
-                    "add more localized content"
-                )
-            state["queues"][channel].remove(selected)
-            picks[channel] = selected
-            used.add(item_key(selected))
-        state["days"][day] = picks
-        state["last_day"] = day
-    return state["days"][target_day]
+    target_index = CHANNEL_ORDER.index(through_channel)
+    for channel_index in range(target_index + 1):
+        _ensure_schedule_through(state, channel_index, target_day)
+    return {
+        channel: state["schedules"][channel][target_day]
+        for channel in CHANNEL_ORDER[: target_index + 1]
+    }
 
 
 def channel_candidates(pool, channel, now=None):

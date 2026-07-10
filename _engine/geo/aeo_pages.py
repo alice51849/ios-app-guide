@@ -201,6 +201,13 @@ def positioning(key, noun):
     }
 
 
+def alternative_hub_slug(key):
+    if pricing_profile(key) == "flexible":
+        return f"{key}-flexible-unlock"
+    noun, _ = cat_noun(key)
+    return positioning(key, noun)["slug"]
+
+
 def cat_noun(key):
     return CAT_NOUN.get(APPS[key].get("category", "productivity"), ("app", "MobileApplication"))
 
@@ -496,7 +503,7 @@ def hub_page(key, gap_queries):
 {faq_html}
 
   <p><a href="{e(url)}"><strong>{e(position['cta'])} →</strong></a></p>"""
-    slug = f"{key}-flexible-unlock" if flexible else position["slug"]
+    slug = alternative_hub_slug(key)
     canonical = f"{SITE}/alternatives/{slug}.html"
     return slug, page_shell(title, desc, canonical, schemas, body)
 

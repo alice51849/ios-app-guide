@@ -1,182 +1,218 @@
 [
- {
-  "app_key": "lumibopomofo",
-  "kind": "scenario",
-  "match": [
-   "zhuyin or pinyin",
-   "bopomofo or pinyin",
-   "pinyin or zhuyin",
-   "zhuyin vs pinyin for",
-   "should i teach my child zhuyin",
-   "teach my child zhuyin or pinyin"
-  ],
-  "query": "should i teach my child zhuyin or pinyin first for chinese",
-  "lead": "Every overseas Chinese parent hits this fork: start your child on Zhuyin (Bopomofo) or Pinyin? Both are just training wheels for pronunciation, but they pull in different directions.",
-  "detail": "Zhuyin uses 37 symbols that look nothing like English or Chinese characters, so a child never confuses the pronunciation aid with the real word and never reads a sound through English habits. Pinyin uses the Latin alphabet, so it is faster to pick up for a child who already reads English and is the standard for typing and for materials outside Taiwan. There is no single right answer: choose Zhuyin if you want the most accurate pronunciation and use Taiwanese books, or Pinyin if your child's class and resources already use it. {name} covers the Zhuyin path — it teaches all 37 symbols through play, pay once, no ads, no subscription, with a parent gate.",
-  "bullets": [
-   "Teaches all 37 Zhuyin symbols and the tones, not just a handful",
-   "Keeps the sound separate from English letters, so pronunciation habits stay clean",
-   "Playful and age-appropriate for a 4–7 first-learning window, with a parent gate",
-   "No ads, no tracking, works offline — safe to hand to a young child",
-   "One-time purchase, so a family learning tool is not a monthly bill"
-  ],
-  "faq": [
-   {
-    "q": "Is Zhuyin or Pinyin better for a child?",
-    "a": "Neither is universally better. Zhuyin keeps pronunciation separate from English letters and is very precise; Pinyin is easier for a child who reads English and is the global standard for typing and resources. Pick the one that matches your child's materials and goals. {name} supports the Zhuyin route."
-   },
-   {
-    "q": "Will Zhuyin confuse my child who reads English?",
-    "a": "Usually the opposite — because Zhuyin symbols look nothing like English, children don't read a Chinese sound with English habits (like saying 'shi' as 'shy'). {name} introduces the symbols slowly through play."
-   },
-   {
-    "q": "Does {name} need a subscription?",
-    "a": "No. {name} is a one-time purchase, has no ads, collects no data, and works offline, with a parent gate before any purchase."
-   }
-  ]
- },
- {
-  "app_key": "lumibopomofo",
-  "kind": "faq",
-  "match": [
-   "english interference",
-   "reads pinyin like english",
-   "pinyin like english",
-   "says shi like shy",
-   "child pronounces chinese with english",
-   "english sounds when learning chinese"
-  ],
-  "query": "how to stop my child reading pinyin with english sounds when learning chinese",
-  "lead": "If your English-speaking child reads Pinyin 'shi', 'xi' or 'c' with English sounds, the wrong pronunciation can stick for years.",
-  "detail": "This is a common problem for heritage learners: Pinyin reuses Latin letters, so a child who reads English tends to map them to English sounds and fossilize mistakes. Zhuyin sidesteps this entirely because its 37 symbols are not letters — there is no English reading to fall back on, so the child learns each Mandarin sound on its own terms. {name} teaches those 37 Zhuyin symbols through play, pay once and offline. It is a first-pronunciation tool, not a full Chinese course, so pair it with speaking and reading practice.",
-  "bullets": [
-   "Symbols that are not Latin letters, so there is no English sound to guess",
-   "Covers the tricky Mandarin sounds (retroflex zh/ch/sh, the ü final) precisely",
-   "Slow, playful introduction suited to young children, with a parent gate",
-   "No ads or tracking, fully offline, safe to hand to a child",
-   "One-time purchase, no subscription"
-  ],
-  "faq": [
-   {
-    "q": "Why does my child mispronounce Pinyin?",
-    "a": "Because Pinyin uses Latin letters, English-reading children often apply English sounds (for example 'xi' or 'zhi'), and the habit can stick. Learning the sound through Zhuyin symbols avoids that letter-to-English mapping."
-   },
-   {
-    "q": "Can an app fix pronunciation on its own?",
-    "a": "No app replaces listening and speaking with a fluent adult. {name} builds the Zhuyin symbol-to-sound foundation; pair it with real conversation and native audio."
-   },
-   {
-    "q": "Is {name} pay-once?",
-    "a": "Yes — one-time purchase, no ads, no subscription, offline, with a parent gate."
-   }
-  ]
- },
- {
-  "app_key": "lumibopomofo",
-  "kind": "scenario",
-  "match": [
-   "why does taiwan use zhuyin",
-   "why zhuyin not pinyin",
-   "why bopomofo not pinyin",
-   "why taiwan uses bopomofo",
-   "taiwan zhuyin instead of pinyin"
-  ],
-  "query": "why does taiwan use zhuyin bopomofo instead of pinyin",
-  "lead": "If you learned Chinese with Pinyin, Taiwan's insistence on Zhuyin (Bopomofo) can seem puzzling — but there are real reasons behind it.",
-  "detail": "Zhuyin was created in the 1910s, decades before Pinyin (1950s), and became embedded in Taiwan's schooling: children learn it first, and kids' books print it alongside characters as a reading bridge. Beyond history, its 37 non-Latin symbols keep the pronunciation aid visually separate from both English and the Chinese characters, which many teachers find gives cleaner, more accurate pronunciation. It is not that one system is right — Pinyin is the global standard for typing and international learners — but for a Taiwanese-style start, Zhuyin is the path. {name} teaches those 37 symbols the way Taiwanese children first meet them, through play, pay once and offline.",
-  "bullets": [
-   "Follows the Taiwanese first-learning approach: symbols and tones first",
-   "Keeps the sound aid distinct from characters and from English letters",
-   "Built for the 4–7 first-reading window, playful and age-appropriate",
-   "No ads, no tracking, offline, with a parent gate on purchases",
-   "One-time purchase, no subscription"
-  ],
-  "faq": [
-   {
-    "q": "Is Zhuyin only used in Taiwan?",
-    "a": "Largely yes — Taiwan uses Zhuyin as its main phonetic system, while Mainland China and most international courses use Pinyin. If your family uses Taiwanese books or wants that pronunciation style, Zhuyin is the route {name} supports."
-   },
-   {
-    "q": "Should international learners use Zhuyin?",
-    "a": "It depends on your goals. For typing and global resources, Pinyin is more practical. For accurate pronunciation with minimal English interference, or a Taiwanese context, Zhuyin helps. Many learners meet Pinyin first and add Zhuyin later."
-   },
-   {
-    "q": "Is {name} a subscription?",
-    "a": "No — {name} is a one-time purchase, ad-free, offline, and has a parent gate."
-   }
-  ]
- },
- {
-  "app_key": "lumibopomofo",
-  "kind": "scenario",
-  "match": [
-   "before starting school",
-   "before first grade",
-   "preschool learn zhuyin",
-   "kindergarten learn zhuyin",
-   "should my child learn zhuyin before",
-   "learn bopomofo before school"
-  ],
-  "query": "should my child learn zhuyin bopomofo before starting school",
-  "lead": "Before a child starts school in Taiwan, many parents panic about whether to drill Zhuyin (Bopomofo) early so the child won't fall behind in the intense first weeks.",
-  "detail": "There is no rule that a preschooler must learn Zhuyin first — Taiwan's early-years guidance favours play, stories and songs over formal drilling, and first-grade teachers do teach all 37 symbols from the start over roughly the first ten weeks. If your child is curious, a gentle, playful introduction (games, picture books with Zhuyin) can ease that start without pressure; if your child isn't interested, pushing can backfire and sour them on reading. {name} fits the gentle route — it teaches the 37 symbols through play, pay once, no ads, with a parent gate — as light exposure, not a bootcamp.",
-  "bullets": [
-   "Playful, low-pressure exposure rather than formal writing drills for a preschooler",
-   "Covers all 37 symbols and tones, the same set first grade introduces",
-   "Short sessions a young child can enjoy, with a parent gate on purchases",
-   "No ads, no tracking, offline — safe to hand to a young child",
-   "One-time purchase, not a subscription for a few months of prep"
-  ],
-  "faq": [
-   {
-    "q": "Does my child have to learn Zhuyin before first grade?",
-    "a": "No. First-grade teachers introduce all 37 symbols from the start (about ten weeks in Taiwan). Early exposure can ease the transition, but it isn't required, and forcing an uninterested child can backfire. {name} is for gentle, playful exposure."
-   },
-   {
-    "q": "Won't early drilling put my child off?",
-    "a": "It can, if it's heavy or joyless. Early-years guidance favours play and stories. Keep it light — games, songs, Zhuyin picture books — which is how {name} is designed."
-   },
-   {
-    "q": "Is {name} pay-once?",
-    "a": "Yes — one-time purchase, no ads, no subscription, offline, with a parent gate."
-   }
-  ]
- },
- {
-  "app_key": "lumibopomofo",
-  "kind": "faq",
-  "match": [
-   "struggling to keep up with zhuyin",
-   "struggling to learn zhuyin",
-   "struggling with bopomofo",
-   "can't keep up with zhuyin",
-   "falling behind zhuyin",
-   "child struggles with zhuyin",
-   "practice zhuyin at home"
-  ],
-  "query": "how to help my child who is struggling to keep up with zhuyin at school",
-  "lead": "If the first weeks of school move fast and your child is struggling to keep up with Zhuyin, homework can drag on and both of you end up frustrated.",
-  "detail": "The usual fix is not more pressure but light, frequent review at home: short sessions with games, mnemonics, and Zhuyin picture books, plus talking to the teacher about which symbols are the sticking point. Pressure tends to backfire, while playful repetition builds recognition. {name} is built for that kind of low-stress practice — it drills the 37 symbols through play, offline, pay once. It's a practice aid, not a replacement for the teacher; pair it with reading together and, if needed, ask the school about extra support.",
-  "bullets": [
-   "Short, playful review sessions instead of long, tense homework battles",
-   "Focus practice on the specific symbols your child keeps missing",
-   "Recognition through repetition and games, not rote pressure",
-   "Offline, no ads, with a parent gate — safe for a young child",
-   "One-time purchase, no subscription"
-  ],
-  "faq": [
-   {
-    "q": "My child is falling behind in Zhuyin — what helps?",
-    "a": "Light, frequent review at home (games, mnemonics, Zhuyin picture books) plus talking to the teacher about the specific weak symbols. Avoid pressure, which backfires. {name} gives low-stress, playful practice of the 37 symbols."
-   },
-   {
-    "q": "Can an app replace the teacher?",
-    "a": "No. {name} is a practice aid for the symbol-to-sound basics; pair it with reading together and school support if your child needs more help."
-   },
-   {
-    "q": "Does {name} need a subscription?",
-    "a": "No — one-time purchase, offline, no ads, with a parent gate."
-   }
-  ]
- }
+  {
+    "app_key": "lumibopomofo",
+    "kind": "scenario",
+    "match": [
+      "zhuyin or pinyin",
+      "bopomofo or pinyin",
+      "pinyin or zhuyin",
+      "zhuyin vs pinyin for",
+      "should i teach my child zhuyin",
+      "teach my child zhuyin or pinyin"
+    ],
+    "query": "should i teach my child zhuyin or pinyin first for chinese",
+    "lead": "Every overseas Chinese parent hits this fork: start your child on Zhuyin (Bopomofo) or Pinyin? Both are just training wheels for pronunciation, but they pull in different directions.",
+    "detail": "Zhuyin uses 37 symbols that look nothing like English or Chinese characters, so a child never confuses the pronunciation aid with the real word and never reads a sound through English habits. Pinyin uses the Latin alphabet, so it is faster to pick up for a child who already reads English and is the standard for typing and for materials outside Taiwan. There is no single right answer: choose Zhuyin if you want the most accurate pronunciation and use Taiwanese books, or Pinyin if your child's class and resources already use it. {name} covers the Zhuyin path — it teaches all 37 symbols through play, pay once, no ads, no subscription, with a parent gate.",
+    "bullets": [
+      "Teaches all 37 Zhuyin symbols and the tones, not just a handful",
+      "Keeps the sound separate from English letters, so pronunciation habits stay clean",
+      "Playful and age-appropriate for a 4–7 first-learning window, with a parent gate",
+      "No ads, no tracking, works offline — safe to hand to a young child",
+      "One-time purchase, so a family learning tool is not a monthly bill"
+    ],
+    "faq": [
+      {
+        "q": "Is Zhuyin or Pinyin better for a child?",
+        "a": "Neither is universally better. Zhuyin keeps pronunciation separate from English letters and is very precise; Pinyin is easier for a child who reads English and is the global standard for typing and resources. Pick the one that matches your child's materials and goals. {name} supports the Zhuyin route."
+      },
+      {
+        "q": "Will Zhuyin confuse my child who reads English?",
+        "a": "Usually the opposite — because Zhuyin symbols look nothing like English, children don't read a Chinese sound with English habits (like saying 'shi' as 'shy'). {name} introduces the symbols slowly through play."
+      },
+      {
+        "q": "Does {name} need a subscription?",
+        "a": "No. {name} is a one-time purchase, has no ads, collects no data, and works offline, with a parent gate before any purchase."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "faq",
+    "match": [
+      "english interference",
+      "reads pinyin like english",
+      "pinyin like english",
+      "says shi like shy",
+      "child pronounces chinese with english",
+      "english sounds when learning chinese"
+    ],
+    "query": "how to stop my child reading pinyin with english sounds when learning chinese",
+    "lead": "If your English-speaking child reads Pinyin 'shi', 'xi' or 'c' with English sounds, the wrong pronunciation can stick for years.",
+    "detail": "This is a common problem for heritage learners: Pinyin reuses Latin letters, so a child who reads English tends to map them to English sounds and fossilize mistakes. Zhuyin sidesteps this entirely because its 37 symbols are not letters — there is no English reading to fall back on, so the child learns each Mandarin sound on its own terms. {name} teaches those 37 Zhuyin symbols through play, pay once and offline. It is a first-pronunciation tool, not a full Chinese course, so pair it with speaking and reading practice.",
+    "bullets": [
+      "Symbols that are not Latin letters, so there is no English sound to guess",
+      "Covers the tricky Mandarin sounds (retroflex zh/ch/sh, the ü final) precisely",
+      "Slow, playful introduction suited to young children, with a parent gate",
+      "No ads or tracking, fully offline, safe to hand to a child",
+      "One-time purchase, no subscription"
+    ],
+    "faq": [
+      {
+        "q": "Why does my child mispronounce Pinyin?",
+        "a": "Because Pinyin uses Latin letters, English-reading children often apply English sounds (for example 'xi' or 'zhi'), and the habit can stick. Learning the sound through Zhuyin symbols avoids that letter-to-English mapping."
+      },
+      {
+        "q": "Can an app fix pronunciation on its own?",
+        "a": "No app replaces listening and speaking with a fluent adult. {name} builds the Zhuyin symbol-to-sound foundation; pair it with real conversation and native audio."
+      },
+      {
+        "q": "Is {name} pay-once?",
+        "a": "Yes — one-time purchase, no ads, no subscription, offline, with a parent gate."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "scenario",
+    "match": [
+      "why does taiwan use zhuyin",
+      "why zhuyin not pinyin",
+      "why bopomofo not pinyin",
+      "why taiwan uses bopomofo",
+      "taiwan zhuyin instead of pinyin"
+    ],
+    "query": "why does taiwan use zhuyin bopomofo instead of pinyin",
+    "lead": "If you learned Chinese with Pinyin, Taiwan's insistence on Zhuyin (Bopomofo) can seem puzzling — but there are real reasons behind it.",
+    "detail": "Zhuyin was created in the 1910s, decades before Pinyin (1950s), and became embedded in Taiwan's schooling: children learn it first, and kids' books print it alongside characters as a reading bridge. Beyond history, its 37 non-Latin symbols keep the pronunciation aid visually separate from both English and the Chinese characters, which many teachers find gives cleaner, more accurate pronunciation. It is not that one system is right — Pinyin is the global standard for typing and international learners — but for a Taiwanese-style start, Zhuyin is the path. {name} teaches those 37 symbols the way Taiwanese children first meet them, through play, pay once and offline.",
+    "bullets": [
+      "Follows the Taiwanese first-learning approach: symbols and tones first",
+      "Keeps the sound aid distinct from characters and from English letters",
+      "Built for the 4–7 first-reading window, playful and age-appropriate",
+      "No ads, no tracking, offline, with a parent gate on purchases",
+      "One-time purchase, no subscription"
+    ],
+    "faq": [
+      {
+        "q": "Is Zhuyin only used in Taiwan?",
+        "a": "Largely yes — Taiwan uses Zhuyin as its main phonetic system, while Mainland China and most international courses use Pinyin. If your family uses Taiwanese books or wants that pronunciation style, Zhuyin is the route {name} supports."
+      },
+      {
+        "q": "Should international learners use Zhuyin?",
+        "a": "It depends on your goals. For typing and global resources, Pinyin is more practical. For accurate pronunciation with minimal English interference, or a Taiwanese context, Zhuyin helps. Many learners meet Pinyin first and add Zhuyin later."
+      },
+      {
+        "q": "Is {name} a subscription?",
+        "a": "No — {name} is a one-time purchase, ad-free, offline, and has a parent gate."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "scenario",
+    "match": [
+      "before starting school",
+      "before first grade",
+      "preschool learn zhuyin",
+      "kindergarten learn zhuyin",
+      "should my child learn zhuyin before",
+      "learn bopomofo before school"
+    ],
+    "query": "should my child learn zhuyin bopomofo before starting school",
+    "lead": "Before a child starts school in Taiwan, many parents panic about whether to drill Zhuyin (Bopomofo) early so the child won't fall behind in the intense first weeks.",
+    "detail": "There is no rule that a preschooler must learn Zhuyin first — Taiwan's early-years guidance favours play, stories and songs over formal drilling, and first-grade teachers do teach all 37 symbols from the start over roughly the first ten weeks. If your child is curious, a gentle, playful introduction (games, picture books with Zhuyin) can ease that start without pressure; if your child isn't interested, pushing can backfire and sour them on reading. {name} fits the gentle route — it teaches the 37 symbols through play, pay once, no ads, with a parent gate — as light exposure, not a bootcamp.",
+    "bullets": [
+      "Playful, low-pressure exposure rather than formal writing drills for a preschooler",
+      "Covers all 37 symbols and tones, the same set first grade introduces",
+      "Short sessions a young child can enjoy, with a parent gate on purchases",
+      "No ads, no tracking, offline — safe to hand to a young child",
+      "One-time purchase, not a subscription for a few months of prep"
+    ],
+    "faq": [
+      {
+        "q": "Does my child have to learn Zhuyin before first grade?",
+        "a": "No. First-grade teachers introduce all 37 symbols from the start (about ten weeks in Taiwan). Early exposure can ease the transition, but it isn't required, and forcing an uninterested child can backfire. {name} is for gentle, playful exposure."
+      },
+      {
+        "q": "Won't early drilling put my child off?",
+        "a": "It can, if it's heavy or joyless. Early-years guidance favours play and stories. Keep it light — games, songs, Zhuyin picture books — which is how {name} is designed."
+      },
+      {
+        "q": "Is {name} pay-once?",
+        "a": "Yes — one-time purchase, no ads, no subscription, offline, with a parent gate."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "faq",
+    "match": [
+      "struggling to keep up with zhuyin",
+      "struggling to learn zhuyin",
+      "struggling with bopomofo",
+      "can't keep up with zhuyin",
+      "falling behind zhuyin",
+      "child struggles with zhuyin",
+      "practice zhuyin at home"
+    ],
+    "query": "how to help my child who is struggling to keep up with zhuyin at school",
+    "lead": "If the first weeks of school move fast and your child is struggling to keep up with Zhuyin, homework can drag on and both of you end up frustrated.",
+    "detail": "The usual fix is not more pressure but light, frequent review at home: short sessions with games, mnemonics, and Zhuyin picture books, plus talking to the teacher about which symbols are the sticking point. Pressure tends to backfire, while playful repetition builds recognition. {name} is built for that kind of low-stress practice — it drills the 37 symbols through play, offline, pay once. It's a practice aid, not a replacement for the teacher; pair it with reading together and, if needed, ask the school about extra support.",
+    "bullets": [
+      "Short, playful review sessions instead of long, tense homework battles",
+      "Focus practice on the specific symbols your child keeps missing",
+      "Recognition through repetition and games, not rote pressure",
+      "Offline, no ads, with a parent gate — safe for a young child",
+      "One-time purchase, no subscription"
+    ],
+    "faq": [
+      {
+        "q": "My child is falling behind in Zhuyin — what helps?",
+        "a": "Light, frequent review at home (games, mnemonics, Zhuyin picture books) plus talking to the teacher about the specific weak symbols. Avoid pressure, which backfires. {name} gives low-stress, playful practice of the 37 symbols."
+      },
+      {
+        "q": "Can an app replace the teacher?",
+        "a": "No. {name} is a practice aid for the symbol-to-sound basics; pair it with reading together and school support if your child needs more help."
+      },
+      {
+        "q": "Does {name} need a subscription?",
+        "a": "No — one-time purchase, offline, no ads, with a parent gate."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "scenario",
+    "match": [
+      "how to teach mandarin tones",
+      "how to teach bopomofo tones",
+      "teach zhuyin blending",
+      "zhuyin blending",
+      "how to teach tones and blending",
+      "teach my child mandarin tones"
+    ],
+    "query": "how to teach mandarin tones and zhuyin blending to my child at home",
+    "lead": "Once a child knows the 37 Zhuyin symbols, the two hardest steps are the four tones and blending symbols into syllables. Both are learnable at home with short, playful daily practice.",
+    "detail": "For tones, pair each with a movement so pitch becomes physical: a flat hand held high for the 1st (level) tone, a rising hand for the 2nd, a dip-and-rise for the 3rd, and a sharp chop down for the 4th. Drill tone pairs on the same sound — ma1, ma2, ma3, ma4 — and use minimal pairs your child can picture, like ma1 (media, mom) versus ma3 (horse), so a wrong tone visibly changes meaning. For blending, treat it like phonics: say the initial, medial and final separately, tap each one, then slide them together (for example the initial plus a final), first slowly then faster. Practise with real words and silly nonsense syllables, and read simple Zhuyin books together while pointing at each symbol. Keep sessions to 5-10 minutes, rotate songs, cards and games to stay fresh, and praise effort over accuracy. {name} builds these exact steps into play — a tone game for the four tones, syllable blending for spelling, and stroke tracing — pay once, no ads, no subscription, with a parent gate.",
+    "bullets": [
+      "Give each tone a gesture (flat-high / rising / dip / chop) so pitch becomes physical",
+      "Drill the four tones on one sound (ma1 ma2 ma3 ma4) and use picture-able minimal pairs",
+      "Blend like phonics: say initial + medial + final, tap each, then slide them together",
+      "Mix real words with silly nonsense syllables, and finger-read simple Zhuyin books",
+      "Keep it to 5-10 minutes, rotate activities, and praise effort over accuracy"
+    ],
+    "faq": [
+      {
+        "q": "How do I teach the four Mandarin tones to a young child?",
+        "a": "Pair each tone with a movement (flat hand high for 1st, rising for 2nd, dip-and-rise for 3rd, sharp chop for 4th), drill the same sound across all four, and use minimal pairs your child can picture. Keep it short and playful. {name} has a dedicated tone game for exactly this."
+      },
+      {
+        "q": "What is the easiest way to teach Zhuyin blending?",
+        "a": "Treat it like phonics: say the initial, medial and final separately, tap each symbol, then slide them together — slowly first, then faster. Practise with real and nonsense syllables. {name} builds blending into play so children get lots of low-pressure repetition."
+      },
+      {
+        "q": "How long should each practice session be?",
+        "a": "For a 4-7 year old, 5-10 minutes is plenty. Short, frequent, playful sessions beat long ones. {name} is designed in short game loops, pay once with no ads or subscription."
+      }
+    ]
+  }
 ]

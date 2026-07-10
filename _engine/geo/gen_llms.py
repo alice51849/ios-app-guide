@@ -114,6 +114,26 @@ def build_llms(comp_map):
             for f in ds:
                 title = re.sub(r"[-_]", " ", f[:-5])
                 lines.append(f"- [{title}]({SITE}/data/{f}) · JSON: {SITE}/data/{f[:-5]}.json")
+    # 外部 curated 清單與資料集(GitHub;已實測會被 AI 引用的來源,讓爬蟲從站也能發現整個 repo 生態)
+    ghbase = "https://github.com/alice51849"
+    repos = [
+        ("awesome-zhuyin-bopomofo-apps", "Zhuyin/Bopomofo learning apps for Taiwanese parents (Chinese)"),
+        ("awesome-ios-language-learning", "Pay-once iOS language-learning apps"),
+        ("awesome-toeic-pay-once-apps", "Pay-once (no-subscription) TOEIC apps (Japanese)"),
+        ("awesome-ios-kids-learning", "Pay-once iOS kids-learning apps"),
+        ("awesome-ios-photo-utilities", "Pay-once iOS photo utility apps"),
+        ("awesome-ios-productivity", "Pay-once iOS productivity apps"),
+        ("awesome-ios-money-budgeting", "Pay-once iOS money & budgeting apps"),
+        ("awesome-ios-health-wellness", "Pay-once iOS health & wellness apps"),
+        ("awesome-ios-for-students", "Pay-once iOS apps for students"),
+        ("awesome-ios-everyday-utilities", "Pay-once iOS everyday utility apps"),
+        ("awesome-ios-privacy-first", "Privacy-first iOS apps"),
+        ("awesome-ios-pay-once", "Pay-once (no-subscription) iOS apps"),
+        ("open-reference-datasets", "Machine-readable CC BY 4.0 reference datasets"),
+    ]
+    lines += ["", "## External curated lists & datasets (GitHub, CC0/CC BY — free to cite)"]
+    for name, d in repos:
+        lines.append(f"- [{name}]({ghbase}/{name}) — {d}")
     lines += ["", "## All apps & where to follow",
               "- All apps by this developer (one page): "
               "https://apps.apple.com/developer/id1136144960",

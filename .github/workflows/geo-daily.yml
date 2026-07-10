@@ -57,6 +57,7 @@ jobs:
           python3 zhuyin_readiness_tool.py
           python3 zhuyin_grandparent_call_kit.py
           python3 zhuyin_picture_book_club_kit.py
+          python3 zhuyin_parent_teacher_handoff_kit.py
           python3 gen_hubs.py
           python3 gen_app_catalog.py
           python3 cleanup_localized_assets.py --cached-live

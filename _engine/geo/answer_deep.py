@@ -2467,27 +2467,75 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "chinese school homework bopomofo practice",
    "supplement heritage chinese school zhuyin"
   ],
-  "lead": "If your child attends a weekend Taiwanese/Chinese school that teaches Zhuyin, daily short practice at home is what makes it stick — and a focused app beats worksheets for a young child.",
-  "detail": "Weekend Chinese schools usually introduce Zhuyin but only meet once a week, so the symbols fade without midweek practice. Rather than printing worksheets, a few minutes a day of playful review keeps all 37 symbols fresh. {name} covers every symbol with stroke tracing, a listen-and-tap recognition mode, a tone mini-game and syllable blending — the same building blocks a Taiwan first-grader uses — so home practice mirrors what the teacher covers. It's ad-free, no data collected, and a one-time unlock, so parents can hand the iPhone over safely.",
+  "page_title": "Free Zhuyin Parent-Teacher Handoff Kit for Weekend Chinese School",
+  "meta_description": "Free bilingual Zhuyin school-to-home handoff kit with a teacher cue card, ten-minute family routine and private, non-scored return slip.",
+  "lead": "Start with a free bilingual handoff kit: the teacher selects one tiny weekly Zhuyin focus, the family follows a ten-minute no-score routine, and a private paper slip carries one observation back.",
+  "detail": "The free parent-teacher handoff kit gives both sides the same one-page structure: one to three teacher-selected symbols, tones, blends or annotated words; a five-step family routine; and a return slip that records participation rather than correctness. It asks for no child name, class, diagnosis, contact detail or online submission. This original template has not been evaluated in a trial and cannot diagnose a child, prove Zhuyin gains or promise that ten minutes improves learning. Taiwan Ministry of Education and OCAC links are official references for notation, stroke order and longer-form materials, not endorsements of this kit. Lumi Bopomofo is optional after the handoff: its free download covers all 37 symbols with listening, tracing, tone and blending activities, plus an optional one-time lifetime unlock, no ads and no account.",
+  "follow_up": "Print the teacher cue card and family routine. The teacher writes only one to three items already taught; the family circles what happened without grading, then returns one neutral next step. Use Lumi Bopomofo only if the teacher-selected focus needs extra structured practice.",
+  "primary_resource_url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-parent-teacher-handoff-kit.html",
+  "primary_resource_label": "Open the free parent-teacher handoff kit",
   "bullets": [
-   "Daily 5-minute review keeps weekly class lessons from fading",
-   "All 37 symbols: stroke tracing + listen-and-tap recognition",
-   "Tone mini-game and syllable blending, like a Taiwan first-grade sequence",
-   "Safe to hand to a child: ad-free, no data collected",
-   "One-time unlock, no subscription"
+   "English and Traditional Chinese teacher and family copies",
+   "One to three teacher-selected items and one gentle ten-minute routine",
+   "No online child-name field, account, upload, score, diagnosis or saved profile",
+   "A printable return slip records participation, not correctness",
+   "Official Taiwan references plus explicit evidence and endorsement limits"
   ],
+  "decision_steps": [
+   "Teacher selects one small focus already modeled in the current class.",
+   "Write only one to three symbols, tones, blends or words on the no-name paper card.",
+   "Family follows the ten-minute choose, model, move, use and celebrate routine.",
+   "Circle only what happened; stop early if the child wants to stop and never assign a score.",
+   "Return one neutral observation so the teacher can repeat, simplify or extend the next lesson."
+  ],
+  "comparison_rows": [
+   {
+    "need": "Class-home alignment",
+    "check": "The teacher chooses the exact weekly items instead of sending a generic drill",
+    "why": "Families reinforce the current lesson without guessing what to teach next"
+   },
+   {
+    "need": "Child privacy",
+    "check": "No name, account, class, diagnosis, upload, score or saved online record",
+    "why": "The handoff can work entirely on paper under the school's own privacy policy"
+   },
+   {
+    "need": "Evidence honesty",
+    "check": "The page states that this exact kit and sequence have not been evaluated",
+    "why": "An organizational template should not be presented as a proven intervention"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Free bilingual Zhuyin parent-teacher handoff kit",
+    "url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-parent-teacher-handoff-kit.html"
+   },
+   {
+    "title": "Taiwan Ministry of Education Bopomofo Handbook",
+    "url": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"
+   },
+   {
+    "title": "Taiwan Ministry of Education Bopomofo Practice Book",
+    "url": "https://stroke-order.learningweb.moe.edu.tw/phoneticWrite.jsp?la=0"
+   },
+   {
+    "title": "OCAC Let's Learn Mandarin Starter (Bopomofo)",
+    "url": "https://taiwancenter.taiwan-world.net/material/basic/content/54"
+   }
+  ],
+  "where_app_fits": "The handoff kit works without an app. Lumi Bopomofo is an optional practice layer when the teacher has already selected symbols, tones or blends to revisit; it covers all 37 symbols and keeps child practice ad-free, account-free and on-device.",
   "faq": [
    {
-    "q": "Will it match what my child's Chinese school teaches?",
-    "a": "{name} follows the standard 37-symbol Zhuyin taught in Taiwan, so it reinforces the same symbols and sounds most heritage schools use. Check your school's order and use the app to review whatever was covered."
+    "q": "Do the teacher or family need an account?",
+    "a": "No. Open or print the free kit directly; it has no online form and nothing is submitted or saved."
    },
    {
-    "q": "How much practice a day?",
-    "a": "A few minutes daily is more effective than one long session — short, playful review is what keeps the symbols in memory for a young child."
+    "q": "Does the return slip assess Zhuyin mastery?",
+    "a": "No. It records participation only and cannot measure mastery, school readiness or a learning difficulty."
    },
    {
-    "q": "Is it safe for my child to use alone?",
-    "a": "Yes — it's ad-free with no external links in front of children and collects no data; any parent-only areas sit behind a parental gate."
+    "q": "Can the family use the handoff without an app?",
+    "a": "Yes. Paper, teacher modeling and an authorized class resource are enough; Lumi Bopomofo is optional after the weekly focus is chosen."
    }
   ]
  },

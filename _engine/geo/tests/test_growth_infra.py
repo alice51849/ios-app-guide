@@ -20,6 +20,7 @@ import aeo_answers
 import aeo_answers_i18n
 import aeo_guide_i18n
 import aeo_pages
+import add_related_tools
 import answer_deep
 import appstore_live
 import build_pages
@@ -35,6 +36,7 @@ import indexnow_submit
 import outreach_scorecard
 import zhuyin_grandparent_call_kit
 import zhuyin_heritage_lesson_plan
+import zhuyin_parent_teacher_handoff_kit
 import zhuyin_picture_book_club_kit
 import zhuyin_readiness_tool
 
@@ -104,6 +106,131 @@ class AppStoreAvailabilityTests(unittest.TestCase):
 
 
 class GeneratorTests(unittest.TestCase):
+    def test_parent_teacher_handoff_is_bilingual_private_and_non_scored(self):
+        english = zhuyin_parent_teacher_handoff_kit.render_page("en")
+        traditional = zhuyin_parent_teacher_handoff_kit.render_page("zh-Hant")
+        for page in (english, traditional):
+            self.assertIn('"WebApplication", "LearningResource"', page)
+            self.assertIn('"@type": "HowTo"', page)
+            self.assertIn("creativecommons.org/licenses/by/4.0/", page)
+            self.assertIn('hreflang="en"', page)
+            self.assertIn('hreflang="zh-Hant"', page)
+            self.assertIn("phoneticWrite.jsp", page)
+            self.assertIn("id6773017109", page)
+            self.assertNotIn("localStorage", page)
+            self.assertNotIn("XMLHttpRequest", page)
+            self.assertNotIn("fetch(", page)
+            self.assertNotIn("getUserMedia", page)
+            self.assertNotIn("<input", page)
+        self.assertIn("has not been evaluated in a trial", english)
+        self.assertIn("records participation, not correctness", english)
+        self.assertIn("尚未經試驗評估", traditional)
+        self.assertIn("不標對錯，也不給分", traditional)
+        self.assertIn("optional one-time lifetime unlock", english)
+        self.assertIn("一次性永久解鎖", traditional)
+
+    def test_parent_teacher_handoff_builds_both_pages_and_index_card(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            tools = pages / "tools"
+            tools.mkdir()
+            (tools / "index.html").write_text(
+                "<main><section></section></main>", encoding="utf-8"
+            )
+            urls = zhuyin_parent_teacher_handoff_kit.build(pages)
+            self.assertEqual(2, len(urls))
+            self.assertTrue(
+                (tools / f"{zhuyin_parent_teacher_handoff_kit.SLUG}.html").exists()
+            )
+            self.assertTrue(
+                (
+                    pages
+                    / "zh-Hant"
+                    / "tools"
+                    / f"{zhuyin_parent_teacher_handoff_kit.SLUG}.html"
+                ).exists()
+            )
+            index = (tools / "index.html").read_text(encoding="utf-8")
+            self.assertEqual(
+                1, index.count("zhuyin-parent-teacher-handoff-kit.html")
+            )
+
+    def test_bopomofo_tools_are_shared_with_lite_and_pro_answers(self):
+        self.assertEqual(
+            add_related_tools.BOPOMOFO_APP_IDS,
+            add_related_tools.related_app_ids(
+                "6773017109", "zhuyin-parent-teacher-handoff-kit"
+            ),
+        )
+        self.assertEqual(
+            add_related_tools.BOPOMOFO_APP_IDS,
+            add_related_tools.related_app_ids(
+                "6775773117", "zhuyin-parent-teacher-handoff-kit"
+            ),
+        )
+        self.assertEqual(
+            ("6773017109",),
+            add_related_tools.related_app_ids("6773017109", "screen-time-calculator"),
+        )
+
+    def test_weekend_school_answer_leads_with_free_handoff_kit(self):
+        question = "App to reinforce weekend Chinese school Bopomofo lessons at home"
+        content = aeo_answers.normalized_content(
+            aeo_answers.default_content(question, "lumibopomofo"),
+            question,
+            "lumibopomofo",
+        )
+        page = aeo_answers.render_page(question, "lumibopomofo", content)
+        self.assertEqual(
+            "https://alice51849.github.io/ios-app-guide/"
+            "tools/zhuyin-parent-teacher-handoff-kit.html",
+            content["primary_resource_url"],
+        )
+        self.assertIn(
+            "<title>Free Zhuyin Parent-Teacher Handoff Kit for "
+            "Weekend Chinese School</title>",
+            page,
+        )
+        self.assertLess(
+            page.index("Open the free parent-teacher handoff kit"),
+            page.index("Get Lumi Bopomofo on the App Store"),
+        )
+        self.assertIn("has not been evaluated in a trial", page)
+        self.assertIn("records participation rather than correctness", page)
+        self.assertIn("not endorsements of this kit", page)
+
+    def test_weekend_school_answer_has_complete_resource_first_zh_hant_version(self):
+        question = "App to reinforce weekend Chinese school Bopomofo lessons at home"
+        content = aeo_answers.normalized_content(
+            aeo_answers.default_content(question, "lumibopomofo"),
+            question,
+            "lumibopomofo",
+        )
+        source = aeo_answers.render_page(question, "lumibopomofo", content)
+        mapping_path = Path(GEO) / "i18n_trans" / "zh-Hant.json"
+        mapping = json.loads(mapping_path.read_text(encoding="utf-8"))
+        strings, _, _ = aeo_answers_i18n.extract_strings(source)
+        missing = [string for string in strings if string not in mapping]
+        self.assertEqual([], missing)
+
+        localized = aeo_answers_i18n.render_localized(
+            source,
+            "zh-Hant",
+            "app-to-reinforce-weekend-chinese-school-bopomofo-lessons-at-home",
+            {string: mapping[string] for string in strings},
+        )
+        kit_url = (
+            "https://alice51849.github.io/ios-app-guide/zh-Hant/"
+            "tools/zhuyin-parent-teacher-handoff-kit.html"
+        )
+        app_url = "https://apps.apple.com/app/id6773017109?ct=iag_ans"
+        main = localized.split("<main>", 1)[1]
+        self.assertIn("<title>免費注音家庭—教師交接包</title>", localized)
+        self.assertLess(main.index(kit_url), main.index(app_url))
+        self.assertIn("尚未經試驗評估", localized)
+        self.assertIn("記錄參與方式，而不是對錯", localized)
+        self.assertNotIn("對幼兒來說,一款專注的 App 勝過練習表", localized)
+
     def test_picture_book_club_is_bilingual_private_and_copyright_safe(self):
         english = zhuyin_picture_book_club_kit.render_page("en")
         traditional = zhuyin_picture_book_club_kit.render_page("zh-Hant")
@@ -1041,12 +1168,14 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("aeo_pages.py --cached-live", workflow)
         self.assertIn("gen_llms.py --cached-live", workflow)
         self.assertIn("zhuyin_picture_book_club_kit.py", workflow)
+        self.assertIn("zhuyin_parent_teacher_handoff_kit.py", workflow)
         self.assertGreaterEqual(
             workflow.count("cleanup_localized_assets.py --cached-live"), 3
         )
         publish = (Path(GEO) / "publish.py").read_text(encoding="utf-8")
         self.assertNotIn("reset --hard", publish)
         self.assertIn("zhuyin_picture_book_club_kit.py", publish)
+        self.assertIn("zhuyin_parent_teacher_handoff_kit.py", publish)
 
     def test_indexnow_retries_and_surfaces_total_failure(self):
         with mock.patch.object(

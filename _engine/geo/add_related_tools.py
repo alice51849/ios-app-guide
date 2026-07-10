@@ -20,6 +20,7 @@ HEADINGS = {
     "pt-BR": "Ferramentas gratuitas", "ms": "Alat percuma",
     "pl": "Darmowe narz\u0119dzia", "ar-SA": "\u0623\u062f\u0648\u0627\u062a \u0645\u062c\u0627\u0646\u064a\u0629",
 }
+BOPOMOFO_APP_IDS = ("6773017109", "6775773117")
 
 def appid(h):
     m = re.search(r'apps\.apple\.com/app/id(\d+)', h)
@@ -35,6 +36,12 @@ def label(slug, h1, locale):
         return slug.replace("-", " ").title()
     return h1
 
+
+def related_app_ids(app_id, slug):
+    if app_id in BOPOMOFO_APP_IDS and slug.startswith("zhuyin-"):
+        return BOPOMOFO_APP_IDS
+    return (app_id,)
+
 def main():
     dry = "--dry-run" in sys.argv
     locale = ""
@@ -49,12 +56,13 @@ def main():
     tool_files = glob.glob(os.path.join(en_tools_dir, "*.html"))
     priority = {
         "zhuyin-readiness-check.html": 0,
-        "zhuyin-family-picture-book-club-kit.html": 1,
-        "zhuyin-grandparent-video-call-kit.html": 2,
+        "zhuyin-parent-teacher-handoff-kit.html": 1,
+        "zhuyin-family-picture-book-club-kit.html": 2,
+        "zhuyin-grandparent-video-call-kit.html": 3,
     }
     tool_files.sort(
         key=lambda path: (
-            priority.get(os.path.basename(path), 3),
+            priority.get(os.path.basename(path), 4),
             os.path.basename(path),
         )
     )
@@ -76,7 +84,8 @@ def main():
             # EN page: clean English (CJK-fallback). Locale page linking an EN-only tool:
             # use the EN h1 as-is (zhuyin tool titles are Traditional Chinese, right for zh pages).
             lbl = label(slug, get_h1(h), "") if not locale else (get_h1(h) or label(slug, None, locale))
-        by_app.setdefault(a, []).append((url, lbl))
+        for related_app_id in related_app_ids(a, slug):
+            by_app.setdefault(related_app_id, []).append((url, lbl))
     changed = 0
     total = 0
     for f in sorted(glob.glob(os.path.join(ans_dir, "*.html"))):
@@ -89,9 +98,10 @@ def main():
         if not a or a not in by_app:
             continue
         limit = (
-            8
+            9
             if any(
                 "zhuyin-readiness-check" in url
+                or "zhuyin-parent-teacher-handoff-kit" in url
                 or "zhuyin-family-picture-book-club-kit" in url
                 or "zhuyin-grandparent-video-call-kit" in url
                 for url, _label in by_app[a]

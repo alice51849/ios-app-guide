@@ -41,6 +41,7 @@ SOURCES = (
 )
 RELATED_URLS = (
     f"{SITE}/tools/zhuyin-readiness-check.html",
+    f"{SITE}/tools/zhuyin-parent-teacher-handoff-kit.html",
     f"{SITE}/tools/zhuyin-grandparent-video-call-kit.html",
     f"{SITE}/tools/zhuyin-family-picture-book-club-kit.html",
     f"{SITE}/tools/zhuyin-practice-sheet.html",
@@ -253,6 +254,7 @@ COPY = {
         "related": "Related free resources",
         "related_labels": (
             "3-minute Zhuyin skills check",
+            "Parent-teacher Zhuyin handoff kit",
             "Grandparent Zhuyin video-call kit",
             "Family Zhuyin picture-book club kit",
             "Zhuyin practice sheet",
@@ -346,6 +348,7 @@ COPY = {
         "related": "相關免費資源",
         "related_labels": (
             "3 分鐘注音學習檢核",
+            "家庭—教師注音交接包",
             "祖孫視訊注音遊戲包",
             "家庭注音繪本四週共讀包",
             "注音描寫練習表",
@@ -478,8 +481,9 @@ def render_page(locale: str) -> str:
     related_urls = list(RELATED_URLS)
     if locale == "zh-Hant":
         related_urls[0] = f"{SITE}/zh-Hant/tools/zhuyin-readiness-check.html"
-        related_urls[1] = f"{SITE}/zh-Hant/tools/zhuyin-grandparent-video-call-kit.html"
-        related_urls[2] = f"{SITE}/zh-Hant/tools/zhuyin-family-picture-book-club-kit.html"
+        related_urls[1] = f"{SITE}/zh-Hant/tools/zhuyin-parent-teacher-handoff-kit.html"
+        related_urls[2] = f"{SITE}/zh-Hant/tools/zhuyin-grandparent-video-call-kit.html"
+        related_urls[3] = f"{SITE}/zh-Hant/tools/zhuyin-family-picture-book-club-kit.html"
     related = "".join(
         f'<li><a href="{html.escape(url)}">{html.escape(label)}</a></li>'
         for label, url in zip(t["related_labels"], related_urls)

@@ -204,6 +204,7 @@ COPY = {
         "related": "Related free resources",
         "related_items": (
             ("3-minute Zhuyin skills check", f"{SITE}/tools/zhuyin-readiness-check.html"),
+            ("Parent-teacher Zhuyin handoff kit", f"{SITE}/tools/zhuyin-parent-teacher-handoff-kit.html"),
             ("Grandparent Zhuyin video-call kit", f"{SITE}/tools/zhuyin-grandparent-video-call-kit.html"),
             ("Five-day heritage-school lesson plan", f"{SITE}/guides/zhuyin-5-day-lesson-plan-heritage-school.html"),
             ("Zhuyin flashcards", f"{SITE}/tools/zhuyin-flashcards.html"),
@@ -287,6 +288,7 @@ COPY = {
         "related": "相關免費資源",
         "related_items": (
             ("3 分鐘注音學習檢核", f"{SITE}/zh-Hant/tools/zhuyin-readiness-check.html"),
+            ("家庭—教師注音交接包", f"{SITE}/zh-Hant/tools/zhuyin-parent-teacher-handoff-kit.html"),
             ("祖孫視訊注音遊戲包", f"{SITE}/zh-Hant/tools/zhuyin-grandparent-video-call-kit.html"),
             ("海外中文學校五日教案", f"{SITE}/zh-Hant/guides/zhuyin-5-day-lesson-plan-heritage-school.html"),
             ("注音符號字卡", f"{SITE}/tools/zhuyin-flashcards.html"),

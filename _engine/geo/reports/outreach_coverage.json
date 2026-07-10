@@ -2,7 +2,7 @@
   "generated_on": "2026-07-10",
   "metric": "owned outreach asset coverage (not AI recommendation share-of-voice)",
   "public_apps": 24,
-  "average_public_coverage": 0.957,
+  "average_public_coverage": 0.985,
   "rows": [
     {
       "key": "snapport",
@@ -44,7 +44,7 @@
         "en",
         "zh-Hant"
       ],
-      "alternatives": 8,
+      "alternatives": 5,
       "detail": true,
       "hub": true,
       "guide": true,
@@ -112,7 +112,7 @@
         "ru",
         "zh-Hant"
       ],
-      "alternatives": 6,
+      "alternatives": 5,
       "detail": true,
       "hub": true,
       "guide": true,
@@ -136,7 +136,7 @@
         "pt-BR",
         "zh-Hant"
       ],
-      "alternatives": 6,
+      "alternatives": 5,
       "detail": true,
       "hub": true,
       "guide": true,
@@ -157,7 +157,7 @@
         "ms",
         "zh-Hans"
       ],
-      "alternatives": 7,
+      "alternatives": 5,
       "detail": true,
       "hub": true,
       "guide": true,
@@ -178,7 +178,7 @@
         "ja",
         "zh-Hant"
       ],
-      "alternatives": 6,
+      "alternatives": 5,
       "detail": true,
       "hub": true,
       "guide": true,
@@ -202,7 +202,7 @@
         "ja",
         "zh-Hant"
       ],
-      "alternatives": 6,
+      "alternatives": 5,
       "detail": true,
       "hub": true,
       "guide": true,
@@ -255,7 +255,7 @@
         "ru",
         "zh-Hant"
       ],
-      "alternatives": 6,
+      "alternatives": 5,
       "detail": true,
       "hub": true,
       "guide": true,
@@ -295,7 +295,7 @@
         "en",
         "zh-Hant"
       ],
-      "alternatives": 6,
+      "alternatives": 5,
       "detail": true,
       "hub": true,
       "guide": true,
@@ -315,7 +315,7 @@
         "en",
         "zh-Hant"
       ],
-      "alternatives": 6,
+      "alternatives": 5,
       "detail": true,
       "hub": true,
       "guide": true,
@@ -335,7 +335,7 @@
         "en",
         "zh-Hant"
       ],
-      "alternatives": 6,
+      "alternatives": 5,
       "detail": true,
       "hub": true,
       "guide": true,
@@ -347,12 +347,14 @@
       "name": "Lumi Letters Pro",
       "public": true,
       "appstore": "https://apps.apple.com/app/id6778491147",
-      "coverage_score": 0.867,
+      "coverage_score": 1.0,
       "answers": 51,
       "planned_answers": 51,
-      "social_posts": 2,
+      "social_posts": 4,
       "social_languages": [
-        "en"
+        "en",
+        "ja",
+        "zh-Hant"
       ],
       "alternatives": 5,
       "detail": true,
@@ -366,14 +368,16 @@
       "name": "Lumi Math Pro",
       "public": true,
       "appstore": "https://apps.apple.com/app/id6776958488",
-      "coverage_score": 0.867,
+      "coverage_score": 1.0,
       "answers": 48,
       "planned_answers": 48,
-      "social_posts": 2,
+      "social_posts": 4,
       "social_languages": [
-        "en"
+        "en",
+        "ja",
+        "zh-Hant"
       ],
-      "alternatives": 6,
+      "alternatives": 5,
       "detail": true,
       "hub": true,
       "guide": true,
@@ -385,14 +389,16 @@
       "name": "Lumi Mission Planet Pro",
       "public": true,
       "appstore": "https://apps.apple.com/app/id6779745474",
-      "coverage_score": 0.867,
+      "coverage_score": 1.0,
       "answers": 44,
       "planned_answers": 44,
-      "social_posts": 2,
+      "social_posts": 4,
       "social_languages": [
-        "en"
+        "en",
+        "ja",
+        "zh-Hant"
       ],
-      "alternatives": 6,
+      "alternatives": 5,
       "detail": true,
       "hub": true,
       "guide": true,
@@ -415,7 +421,7 @@
         "fr",
         "zh-Hant"
       ],
-      "alternatives": 6,
+      "alternatives": 5,
       "detail": true,
       "hub": true,
       "guide": true,
@@ -427,11 +433,12 @@
       "name": "Lumi Bopomofo Pro",
       "public": true,
       "appstore": "https://apps.apple.com/app/id6775773117",
-      "coverage_score": 0.923,
+      "coverage_score": 0.989,
       "answers": 63,
       "planned_answers": 65,
-      "social_posts": 2,
+      "social_posts": 3,
       "social_languages": [
+        "en",
         "pl",
         "zh-Hant"
       ],
@@ -452,7 +459,7 @@
       "planned_answers": 48,
       "social_posts": 0,
       "social_languages": [],
-      "alternatives": 5,
+      "alternatives": 0,
       "detail": true,
       "hub": false,
       "guide": true,
@@ -513,7 +520,7 @@
       "planned_answers": 44,
       "social_posts": 0,
       "social_languages": [],
-      "alternatives": 4,
+      "alternatives": 0,
       "detail": true,
       "hub": false,
       "guide": true,
@@ -530,7 +537,7 @@
       "planned_answers": 35,
       "social_posts": 0,
       "social_languages": [],
-      "alternatives": 5,
+      "alternatives": 0,
       "detail": true,
       "hub": false,
       "guide": true,
@@ -539,14 +546,20 @@
     },
     {
       "key": "tripbee",
-      "name": "TripBee Pro",
+      "name": "TripBee Pro: Trip Planner",
       "public": true,
       "appstore": "https://apps.apple.com/app/id6787754435",
-      "coverage_score": 0.8,
-      "answers": 39,
-      "planned_answers": 39,
-      "social_posts": 0,
-      "social_languages": [],
+      "coverage_score": 1.0,
+      "answers": 51,
+      "planned_answers": 51,
+      "social_posts": 5,
+      "social_languages": [
+        "de",
+        "en",
+        "es",
+        "ja",
+        "zh-Hant"
+      ],
       "alternatives": 5,
       "detail": true,
       "hub": true,

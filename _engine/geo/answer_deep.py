@@ -2535,27 +2535,71 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "teach bopomofo over facetime taiwan family",
    "long distance zhuyin practice grandparents"
   ],
-  "lead": "Grandparents in Taiwan are a wonderful Zhuyin resource — pairing their video calls with a structured app gives a child abroad both real conversation and consistent daily symbol practice.",
-  "detail": "Video calls with grandparents give a heritage child priceless listening and speaking practice, but they're occasional and unstructured for learning the 37 symbols. Pairing calls with a daily app fills the gap: the child builds symbol recognition and tones consistently, then uses calls to practise real words with family. {name} covers all 37 symbols with native audio, stroke tracing, a tone game and blending, so grandparents can ask 'which sound is this?' and the child can answer. It's ad-free, collects no data from children, and is a one-time unlock.",
+  "page_title": "Free Zhuyin Video-Call Kit for Grandparents and Kids",
+  "meta_description": "Free bilingual 10-minute Zhuyin video-call kit: family words, camera games, tone gestures and gentle prompts for grandparents and children.",
+  "primary_resource_url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-grandparent-video-call-kit.html",
+  "primary_resource_label": "Open the free grandparent video-call kit",
+  "lead": "Use a free bilingual ten-minute call routine that gives grandparents three familiar family words, a camera treasure hunt, tone gestures and low-pressure prompts—without turning the call into a test.",
+  "detail": "The free grandparent video-call kit linked above works on screen or as a printout and requires no login. A nearby parent helps both sides look at the same real object while the grandparent models one sound, waits for any response and naturally repeats the correct word without grading the child. A 48-family longitudinal study found that grandparent sensitivity predicted infants' positive affect during both video and in-person interactions; the paper also summarizes the value of real-time social contingency and nearby-adult scaffolding. That study did not test Zhuyin or this kit, so the page states the limitation instead of promising faster learning. {name} is optional practice between calls: the free download covers all 37 symbols, listening, tracing, tones and blending with an optional one-time lifetime unlock, no ads and no recurring subscription.",
+  "follow_up": "Start with the free family-call kit and real conversation. If the child wants more structured symbol, tone or blending practice between calls, then consider Lumi Bopomofo or the linked free flashcards and lesson plan.",
   "bullets": [
-   "App gives daily structured practice between family video calls",
-   "Grandparents supply real conversation; app supplies the 37 symbols + tones",
-   "Native Taiwanese audio so the child hears authentic pronunciation",
-   "Stroke tracing, tone game and blending build reading foundations",
-   "Ad-free, no data collected, one-time unlock"
+   "Five short turns across ten minutes, with permission to stop earlier",
+   "Three rotating family words plus camera-based objects and gestures",
+   "Nearby-parent support and patient response instead of pass/fail quizzing",
+   "English and Traditional Chinese pages that grandparents can print or share",
+   "No camera, microphone, account, upload or saved child profile"
+  ],
+  "decision_steps": [
+   "Open the same bilingual page on both sides or print the grandparent script.",
+   "Let the child choose one of three familiar family-word cards.",
+   "Grandparent models the sound once; the child may echo, point or make the action.",
+   "Find a matching real object or gesture on camera, then try one tone hand motion.",
+   "Use the word in a family sentence and let the child pick the next call's card."
+  ],
+  "comparison_rows": [
+   {
+    "need": "Real interaction",
+    "check": "Live turn-taking with a familiar grandparent and real household objects",
+    "why": "The call stays a relationship and conversation, not a prerecorded drill"
+   },
+   {
+    "need": "Young-child support",
+    "check": "A nearby parent stabilizes the device, waits and redirects attention",
+    "why": "Research summarized in the cited study supports in-person adult scaffolding during video chat"
+   },
+   {
+    "need": "Responsible claims",
+    "check": "Research limits are stated and no learning-speed or diagnostic promise is made",
+    "why": "A video-chat study is not direct evidence that one kit improves Zhuyin outcomes"
+   }
+  ],
+  "where_app_fits": "Lumi Bopomofo is not required for the family call. It is an optional between-call layer when a child wants more listening, tracing, tone or blending practice across all 37 symbols; the free printable kit remains fully usable without any app.",
+  "sources": [
+   {
+    "title": "Free bilingual grandparent Zhuyin video-call kit",
+    "url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-grandparent-video-call-kit.html"
+   },
+   {
+    "title": "Presence at a distance: intergenerational video-chat study",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9539353/"
+   },
+   {
+    "title": "Taiwan Ministry of Education Bopomofo Handbook",
+    "url": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"
+   }
   ],
   "faq": [
    {
-    "q": "How do we combine calls with the app?",
-    "a": "Use the app daily for symbol and tone practice, then let grandparents practise real words and sentences on calls — the child brings what they learned to the conversation."
+    "q": "Does the grandparent need to know how to teach Zhuyin?",
+    "a": "No. The free script uses familiar words, gestures, objects and real conversation. It is not a formal lesson plan."
    },
    {
-    "q": "My child is shy on calls — does that matter?",
-    "a": "Building confidence with the symbols and sounds in {name} first often makes children more willing to try speaking with family."
+    "q": "What if my child is shy or will not repeat the sound?",
+    "a": "Pointing, finding an object, waving or making a hand gesture all count as a turn. Do not demand repetition; switch back to ordinary family conversation when attention drops."
    },
    {
-    "q": "Is it private and safe for kids?",
-    "a": "Yes — {name} is ad-free, collects no data from children, and keeps any parent-only functions behind a parental gate."
+    "q": "Does the kit record our call or save the child's answers?",
+    "a": "No. The page has no camera, microphone, account, form submission or saved result. It only displays and prints prompts."
    }
   ]
  },

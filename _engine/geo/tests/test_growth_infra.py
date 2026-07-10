@@ -33,6 +33,7 @@ import gen_llms
 import gen_roundups
 import indexnow_submit
 import outreach_scorecard
+import zhuyin_grandparent_call_kit
 import zhuyin_heritage_lesson_plan
 import zhuyin_readiness_tool
 
@@ -102,6 +103,112 @@ class AppStoreAvailabilityTests(unittest.TestCase):
 
 
 class GeneratorTests(unittest.TestCase):
+    def test_grandparent_call_kit_is_bilingual_private_and_evidence_limited(self):
+        english = zhuyin_grandparent_call_kit.render_page("en")
+        traditional = zhuyin_grandparent_call_kit.render_page("zh-Hant")
+        for page in (english, traditional):
+            self.assertIn('"WebApplication", "LearningResource"', page)
+            self.assertIn("creativecommons.org/licenses/by/4.0/", page)
+            self.assertIn('hreflang="en"', page)
+            self.assertIn('hreflang="zh-Hant"', page)
+            self.assertIn("PMC9539353", page)
+            self.assertIn("id6773017109", page)
+            self.assertNotIn("localStorage", page)
+            self.assertNotIn("XMLHttpRequest", page)
+            self.assertNotIn("fetch(", page)
+            self.assertNotIn("getUserMedia", page)
+        self.assertIn("did not test Zhuyin learning or this kit", english)
+        self.assertIn("沒有測試注音學習，也沒有測試本工具", traditional)
+        self.assertIn("one-time lifetime unlock", english)
+        self.assertIn("一次性永久解鎖", traditional)
+
+    def test_grandparent_call_kit_builds_both_pages_and_index_card(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            tools = pages / "tools"
+            tools.mkdir()
+            (tools / "index.html").write_text(
+                "<main><section></section></main>", encoding="utf-8"
+            )
+            urls = zhuyin_grandparent_call_kit.build(pages)
+            self.assertEqual(2, len(urls))
+            self.assertTrue(
+                (tools / f"{zhuyin_grandparent_call_kit.SLUG}.html").exists()
+            )
+            self.assertTrue(
+                (
+                    pages
+                    / "zh-Hant"
+                    / "tools"
+                    / f"{zhuyin_grandparent_call_kit.SLUG}.html"
+                ).exists()
+            )
+            index = (tools / "index.html").read_text(encoding="utf-8")
+            self.assertEqual(
+                1, index.count("zhuyin-grandparent-video-call-kit.html")
+            )
+
+    def test_grandparent_answer_leads_with_free_call_kit(self):
+        question = (
+            "How can grandparents in Taiwan help a child abroad learn "
+            "Bopomofo over video call?"
+        )
+        content = aeo_answers.normalized_content(
+            aeo_answers.default_content(question, "lumibopomofo"),
+            question,
+            "lumibopomofo",
+        )
+        page = aeo_answers.render_page(question, "lumibopomofo", content)
+        self.assertEqual(
+            "https://alice51849.github.io/ios-app-guide/"
+            "tools/zhuyin-grandparent-video-call-kit.html",
+            content["primary_resource_url"],
+        )
+        self.assertIn(
+            "<title>Free Zhuyin Video-Call Kit for Grandparents and Kids</title>",
+            page,
+        )
+        self.assertLess(
+            page.index("Open the free grandparent video-call kit"),
+            page.index("Get Lumi Bopomofo on the App Store"),
+        )
+        self.assertIn("did not test Zhuyin or this kit", page)
+
+    def test_grandparent_answer_has_complete_resource_first_zh_hant_version(self):
+        question = (
+            "How can grandparents in Taiwan help a child abroad learn "
+            "Bopomofo over video call?"
+        )
+        content = aeo_answers.normalized_content(
+            aeo_answers.default_content(question, "lumibopomofo"),
+            question,
+            "lumibopomofo",
+        )
+        source = aeo_answers.render_page(question, "lumibopomofo", content)
+        mapping_path = Path(GEO) / "i18n_trans" / "zh-Hant.json"
+        mapping = json.loads(mapping_path.read_text(encoding="utf-8"))
+        strings, _, _ = aeo_answers_i18n.extract_strings(source)
+        missing = [string for string in strings if string not in mapping]
+        self.assertEqual([], missing)
+
+        localized = aeo_answers_i18n.render_localized(
+            source,
+            "zh-Hant",
+            "how-can-grandparents-in-taiwan-help-a-child-abroad-"
+            "learn-bopomofo-over-video-call",
+            {string: mapping[string] for string in strings},
+        )
+        kit_url = (
+            "https://alice51849.github.io/ios-app-guide/zh-Hant/"
+            "tools/zhuyin-grandparent-video-call-kit.html"
+        )
+        app_url = "https://apps.apple.com/app/id6773017109?ct=iag_ans"
+        main = localized.split("<main>", 1)[1]
+        self.assertIn("<title>免費祖孫注音視訊遊戲包</title>", localized)
+        self.assertLess(main.index(kit_url), main.index(app_url))
+        self.assertIn("該研究並未測試注音或這套工具", localized)
+        self.assertNotIn("對第一次學注音的孩子", localized)
+
     def test_zhuyin_skills_check_is_bilingual_private_and_non_diagnostic(self):
         english = zhuyin_readiness_tool.render_page("en")
         traditional = zhuyin_readiness_tool.render_page("zh-Hant")

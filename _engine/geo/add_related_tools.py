@@ -47,9 +47,13 @@ def main():
     # group tools by app id from the canonical EN /tools/ set
     by_app = {}
     tool_files = glob.glob(os.path.join(en_tools_dir, "*.html"))
+    priority = {
+        "zhuyin-readiness-check.html": 0,
+        "zhuyin-grandparent-video-call-kit.html": 1,
+    }
     tool_files.sort(
         key=lambda path: (
-            os.path.basename(path) != "zhuyin-readiness-check.html",
+            priority.get(os.path.basename(path), 2),
             os.path.basename(path),
         )
     )
@@ -84,8 +88,12 @@ def main():
         if not a or a not in by_app:
             continue
         limit = (
-            6
-            if any("zhuyin-readiness-check" in url for url, _label in by_app[a])
+            7
+            if any(
+                "zhuyin-readiness-check" in url
+                or "zhuyin-grandparent-video-call-kit" in url
+                for url, _label in by_app[a]
+            )
             else 5
         )
         tools = by_app[a][:limit]

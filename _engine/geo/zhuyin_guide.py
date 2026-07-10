@@ -62,6 +62,12 @@ def build():
          "在台灣就學的孩子以注音為主。"),
         ("iPad 可以用嗎?",
          f"可以,{free_name}與{pro_name}都支援 iPhone 與 iPad。"),
+        ("孩子每天練注音多久比較好?",
+         "學前階段建議每天 10–15 分鐘、少量多餐。時間太長容易失去興趣;固定、短、開心,比一次久坐更有效。"),
+        ("注音 App 能取代老師或家長陪讀嗎?",
+         "不能。App 是輔助複習與提升興趣的工具,真正的糾音、鼓勵與陪伴還是要靠大人。把 App 當成每天十幾分鐘的小遊戲最理想。"),
+        ("要不要在上小一前就先學注音?",
+         "沒有標準答案。孩子有興趣可以溫和帶入,沒興趣也不必強迫——小一前十週老師會循序漸進地教。提早接觸的目的是降低陌生感,不是超前搶跑。"),
     ]
     faq_schema = {"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh-Hant",
                   "mainEntity": [{"@type": "Question", "name": q,
@@ -108,6 +114,16 @@ def build():
     <li><strong>隱私安全</strong>:不收個資、不需註冊、進度存在裝置本機。</li>
   </ul>
 
+  <h2>按孩子的年齡與情境挑選</h2>
+  <p>不同階段的孩子,適合的注音 App 型態不一樣:</p>
+  <ul>
+    <li><strong>3–4 歲啟蒙</strong>:以「認符號、聽發音、玩遊戲」為主,先不急著寫字。挑插圖可愛、原聲發音、互動翻卡的 App,一次玩 5–10 分鐘就好。</li>
+    <li><strong>5–6 歲小一先修</strong>:要能涵蓋全部 <strong>37 個注音、四聲與拼讀</strong>,最好附筆順描摹,幫孩子在開學前把音、形、義串起來。</li>
+    <li><strong>幼兒園大班暑假衝刺</strong>:重點是每天固定 10–15 分鐘的習慣,先認讀再描寫;選能離線、隨開隨玩、不需帳號的 App 最順。</li>
+    <li><strong>海外華人子女</strong>:搭配注音學發音,避免用英語的音去套注音;影片＋App 混搭,家長陪讀效果最好。</li>
+    <li><strong>跟不上或會抗拒的孩子</strong>:把目標拆小(一天一兩個音)、多用遊戲與鼓勵、絕不施壓;買斷型 App 沒有扣款壓力,可以慢慢來。</li>
+  </ul>
+
   <h2>推薦:{e(free_name)}(免費)與 {e(pro_name)}(完整版)</h2>
   <p><strong>{e(free_name)}</strong> — {e(free.get('subtitle',''))}。
   專為約 4–7 歲孩子設計的注音符號學習遊戲:餵食小夥伴聽音選注音、魔法描寫練筆順、
@@ -116,6 +132,20 @@ def build():
   <p>想<strong>一次解鎖全部關卡與遊戲</strong>、無內購彈窗,可選 <strong>{e(pro_name)}</strong>:
   一次購買、永久使用、適合家庭共用,沒有訂閱。</p>
   <p>👉 <a href="{e(pro_url)}"><strong>取得 {e(pro_name)}(App Store)</strong></a></p>
+
+  <h2>在家陪練注音的小技巧</h2>
+  <ul>
+    <li><strong>固定時段、建立儀式感</strong>:每天同一時間、同一個位置開始,孩子更容易進入狀態。</li>
+    <li><strong>先聽、再讀、後寫</strong>:順序是「認符號 → 記聲調 → 練拼讀 → 描筆順」,別一開始就要求寫得工整。</li>
+    <li><strong>生活中找注音</strong>:招牌、繪本、菜單、零食包裝上都有注音,隨手指認比坐著背更有效。</li>
+    <li><strong>紙筆與 App 交替</strong>:用 App 練發音與筆順動畫,再用紙筆實際描一次,雙管齊下記得更牢。</li>
+    <li><strong>多鼓勵、不比較、不施壓</strong>:學前階段興趣最重要,少量多餐、玩得開心,比進度快慢重要得多。</li>
+  </ul>
+
+  <h2>還有哪些注音 App 可以比較?</h2>
+  <p>市面上也有<strong>注音學習卡</strong>、中研院大腦與語言實驗室的<strong>注音冒險王</strong>、教材出版社的<strong>翰林趣學注音</strong>等選擇,各有側重。
+  想看含這些 App 的完整比較與挑選建議,可參考這份獨立整理的
+  <a href="https://github.com/alice51849/awesome-zhuyin-bopomofo-apps" rel="nofollow"><strong>注音學習 App 精選清單</strong></a>。</p>
 
   <h2>常見問題</h2>
 {faq_html}

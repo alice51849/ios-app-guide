@@ -83,6 +83,15 @@ ZHUYIN = [
     ("ㄥ", "eng", "final", "冷", "lěng", "cold"),
     ("ㄦ", "er", "final", "二", "èr", "two"),
 ]
+# 37 符號的 IPA(寬式,依標準語言學/維基百科 Bopomofo 對照,web 查證 2026-07-10)
+ZHUYIN_IPA = {
+    "ㄅ": "p", "ㄆ": "pʰ", "ㄇ": "m", "ㄈ": "f", "ㄉ": "t", "ㄊ": "tʰ", "ㄋ": "n", "ㄌ": "l",
+    "ㄍ": "k", "ㄎ": "kʰ", "ㄏ": "x", "ㄐ": "tɕ", "ㄑ": "tɕʰ", "ㄒ": "ɕ", "ㄓ": "ʈʂ", "ㄔ": "ʈʂʰ",
+    "ㄕ": "ʂ", "ㄖ": "ʐ", "ㄗ": "ts", "ㄘ": "tsʰ", "ㄙ": "s",
+    "ㄧ": "i", "ㄨ": "u", "ㄩ": "y",
+    "ㄚ": "a", "ㄛ": "ɔ", "ㄜ": "ɤ", "ㄝ": "ɛ", "ㄞ": "ai", "ㄟ": "ei", "ㄠ": "au", "ㄡ": "ou",
+    "ㄢ": "an", "ㄣ": "ən", "ㄤ": "aŋ", "ㄥ": "əŋ", "ㄦ": "ɚ",
+}
 CAT_LABEL = {"initial": "Initials (consonants)", "medial": "Medials (glides)",
              "final": "Finals (vowels)"}
 
@@ -94,6 +103,7 @@ def zhuyin_records():
             "symbol": sym,
             "unicode": "U+%04X" % ord(sym),
             "pinyin": py,
+            "ipa": ZHUYIN_IPA.get(sym, ""),
             "category": cat,
             "example": {"character": ch, "pinyin": chpy, "meaning": gloss},
         })
@@ -107,7 +117,7 @@ def zhuyin_json():
         "description": ("The complete set of 37 Zhuyin Fuhao (Bopomofo) symbols used to teach "
                         "Mandarin pronunciation in Taiwan: 21 initials (consonants), 3 medials "
                         "(glides) and 13 finals (vowels), each with its Hanyu Pinyin equivalent, "
-                        "Unicode code point and a common example word."),
+                        "IPA transcription, Unicode code point and a common example word."),
         "identifier": f"{SITE}/data/zhuyin-bopomofo.json",
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "creator": "Lumi Apps",
@@ -198,28 +208,29 @@ def _rows(cat):
         if c != cat:
             continue
         r.append(f'<tr><td class="sym">{sym}</td><td class="py">{html.escape(py)}</td>'
+                 f'<td class="ipa">[{html.escape(ZHUYIN_IPA.get(sym, ""))}]</td>'
                  f'<td class="ex">{ch} <span class="py">{chpy}</span> — {html.escape(gloss)}</td></tr>')
     return "\n".join(r)
 
 
 def build_zhuyin_page():
     slug = "zhuyin-bopomofo"
-    title = "Zhuyin (Bopomofo) Chart — All 37 Symbols with Pinyin | Open Data"
+    title = "Zhuyin (Bopomofo) Chart — All 37 Symbols with Pinyin & IPA | Open Data"
     h1 = "Zhuyin (Bopomofo): all 37 symbols"
     desc = ("The complete list of the 37 Zhuyin (Bopomofo) symbols — 21 initials, 3 medials and "
-            "13 finals — each with its Pinyin equivalent, Unicode point and an example word. "
-            "Free, machine-readable open data (CC BY 4.0).")
+            "13 finals — each with its Pinyin equivalent, IPA transcription, Unicode point and an "
+            "example word. Free, machine-readable open data (CC BY 4.0).")
     lead = ("Bopomofo (注音符號) is the phonetic system used to teach Mandarin pronunciation in "
-            "Taiwan. Here is the full, citable reference — 37 symbols mapped to Hanyu Pinyin.")
+            "Taiwan. Here is the full, citable reference — 37 symbols mapped to Hanyu Pinyin and IPA.")
     tables = ""
     for cat in ("initial", "medial", "final"):
         tables += (f'<div class="card"><h2>{CAT_LABEL[cat]}</h2><table>'
-                   f'<tr><th>Symbol</th><th>Pinyin</th><th>Example</th></tr>'
+                   f'<tr><th>Symbol</th><th>Pinyin</th><th>IPA</th><th>Example</th></tr>'
                    f'{_rows(cat)}</table></div>')
     dj = zhuyin_json()
     terms = [{
         "@type": "DefinedTerm", "name": r["symbol"],
-        "description": f'Pinyin {r["pinyin"]}; example {r["example"]["character"]} '
+        "description": f'Pinyin {r["pinyin"]}; IPA [{r["ipa"]}]; example {r["example"]["character"]} '
                        f'({r["example"]["pinyin"]}) — {r["example"]["meaning"]}',
         "inDefinedTermSet": f"{SITE}/data/{slug}.html",
     } for r in dj["symbols"]]
@@ -232,7 +243,8 @@ def build_zhuyin_page():
              "isBasedOn": dj["isBasedOn"], "dateModified": dj["dateModified"],
              "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json",
                                "contentUrl": dj["identifier"]}],
-             "keywords": ["Bopomofo", "Zhuyin", "注音符號", "Mandarin", "Pinyin", "phonetics"]},
+             "keywords": ["Bopomofo", "Zhuyin", "注音符號", "Mandarin", "Pinyin", "phonetics",
+                          "IPA", "International Phonetic Alphabet"]},
             {"@type": "DefinedTermSet", "name": "Zhuyin (Bopomofo) symbols",
              "url": f"{SITE}/data/{slug}.html", "hasDefinedTerm": terms},
         ],

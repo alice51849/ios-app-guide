@@ -1,6 +1,6 @@
 {
   "name": "Zhuyin (Bopomofo) — 37 phonetic symbols",
-  "description": "The complete set of 37 Zhuyin Fuhao (Bopomofo) symbols used to teach Mandarin pronunciation in Taiwan: 21 initials (consonants), 3 medials (glides) and 13 finals (vowels), each with its Hanyu Pinyin equivalent, Unicode code point and a common example word.",
+  "description": "The complete set of 37 Zhuyin Fuhao (Bopomofo) symbols used to teach Mandarin pronunciation in Taiwan: 21 initials (consonants), 3 medials (glides) and 13 finals (vowels), each with its Hanyu Pinyin equivalent, IPA transcription, Unicode code point and a common example word.",
   "identifier": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": "Lumi Apps",
@@ -18,6 +18,7 @@
       "symbol": "ㄅ",
       "unicode": "U+3105",
       "pinyin": "b",
+      "ipa": "p",
       "category": "initial",
       "example": {
         "character": "爸",
@@ -29,6 +30,7 @@
       "symbol": "ㄆ",
       "unicode": "U+3106",
       "pinyin": "p",
+      "ipa": "pʰ",
       "category": "initial",
       "example": {
         "character": "怕",
@@ -40,6 +42,7 @@
       "symbol": "ㄇ",
       "unicode": "U+3107",
       "pinyin": "m",
+      "ipa": "m",
       "category": "initial",
       "example": {
         "character": "媽",
@@ -51,6 +54,7 @@
       "symbol": "ㄈ",
       "unicode": "U+3108",
       "pinyin": "f",
+      "ipa": "f",
       "category": "initial",
       "example": {
         "character": "飛",
@@ -62,6 +66,7 @@
       "symbol": "ㄉ",
       "unicode": "U+3109",
       "pinyin": "d",
+      "ipa": "t",
       "category": "initial",
       "example": {
         "character": "大",
@@ -73,6 +78,7 @@
       "symbol": "ㄊ",
       "unicode": "U+310A",
       "pinyin": "t",
+      "ipa": "tʰ",
       "category": "initial",
       "example": {
         "character": "天",
@@ -84,6 +90,7 @@
       "symbol": "ㄋ",
       "unicode": "U+310B",
       "pinyin": "n",
+      "ipa": "n",
       "category": "initial",
       "example": {
         "character": "你",
@@ -95,6 +102,7 @@
       "symbol": "ㄌ",
       "unicode": "U+310C",
       "pinyin": "l",
+      "ipa": "l",
       "category": "initial",
       "example": {
         "character": "來",
@@ -106,6 +114,7 @@
       "symbol": "ㄍ",
       "unicode": "U+310D",
       "pinyin": "g",
+      "ipa": "k",
       "category": "initial",
       "example": {
         "character": "狗",
@@ -117,6 +126,7 @@
       "symbol": "ㄎ",
       "unicode": "U+310E",
       "pinyin": "k",
+      "ipa": "kʰ",
       "category": "initial",
       "example": {
         "character": "看",
@@ -128,6 +138,7 @@
       "symbol": "ㄏ",
       "unicode": "U+310F",
       "pinyin": "h",
+      "ipa": "x",
       "category": "initial",
       "example": {
         "character": "好",
@@ -139,6 +150,7 @@
       "symbol": "ㄐ",
       "unicode": "U+3110",
       "pinyin": "j",
+      "ipa": "tɕ",
       "category": "initial",
       "example": {
         "character": "家",
@@ -150,6 +162,7 @@
       "symbol": "ㄑ",
       "unicode": "U+3111",
       "pinyin": "q",
+      "ipa": "tɕʰ",
       "category": "initial",
       "example": {
         "character": "去",
@@ -161,6 +174,7 @@
       "symbol": "ㄒ",
       "unicode": "U+3112",
       "pinyin": "x",
+      "ipa": "ɕ",
       "category": "initial",
       "example": {
         "character": "小",
@@ -172,6 +186,7 @@
       "symbol": "ㄓ",
       "unicode": "U+3113",
       "pinyin": "zh",
+      "ipa": "ʈʂ",
       "category": "initial",
       "example": {
         "character": "中",
@@ -183,6 +198,7 @@
       "symbol": "ㄔ",
       "unicode": "U+3114",
       "pinyin": "ch",
+      "ipa": "ʈʂʰ",
       "category": "initial",
       "example": {
         "character": "吃",
@@ -194,6 +210,7 @@
       "symbol": "ㄕ",
       "unicode": "U+3115",
       "pinyin": "sh",
+      "ipa": "ʂ",
       "category": "initial",
       "example": {
         "character": "是",
@@ -205,6 +222,7 @@
       "symbol": "ㄖ",
       "unicode": "U+3116",
       "pinyin": "r",
+      "ipa": "ʐ",
       "category": "initial",
       "example": {
         "character": "人",
@@ -216,6 +234,7 @@
       "symbol": "ㄗ",
       "unicode": "U+3117",
       "pinyin": "z",
+      "ipa": "ts",
       "category": "initial",
       "example": {
         "character": "早",
@@ -227,6 +246,7 @@
       "symbol": "ㄘ",
       "unicode": "U+3118",
       "pinyin": "c",
+      "ipa": "tsʰ",
       "category": "initial",
       "example": {
         "character": "菜",
@@ -238,6 +258,7 @@
       "symbol": "ㄙ",
       "unicode": "U+3119",
       "pinyin": "s",
+      "ipa": "s",
       "category": "initial",
       "example": {
         "character": "三",
@@ -249,6 +270,7 @@
       "symbol": "ㄧ",
       "unicode": "U+3127",
       "pinyin": "i / yi",
+      "ipa": "i",
       "category": "medial",
       "example": {
         "character": "一",
@@ -260,6 +282,7 @@
       "symbol": "ㄨ",
       "unicode": "U+3128",
       "pinyin": "u / wu",
+      "ipa": "u",
       "category": "medial",
       "example": {
         "character": "五",
@@ -271,6 +294,7 @@
       "symbol": "ㄩ",
       "unicode": "U+3129",
       "pinyin": "ü / yu",
+      "ipa": "y",
       "category": "medial",
       "example": {
         "character": "魚",
@@ -282,6 +306,7 @@
       "symbol": "ㄚ",
       "unicode": "U+311A",
       "pinyin": "a",
+      "ipa": "a",
       "category": "final",
       "example": {
         "character": "大",
@@ -293,6 +318,7 @@
       "symbol": "ㄛ",
       "unicode": "U+311B",
       "pinyin": "o",
+      "ipa": "ɔ",
       "category": "final",
       "example": {
         "character": "波",
@@ -304,6 +330,7 @@
       "symbol": "ㄜ",
       "unicode": "U+311C",
       "pinyin": "e",
+      "ipa": "ɤ",
       "category": "final",
       "example": {
         "character": "喝",
@@ -315,6 +342,7 @@
       "symbol": "ㄝ",
       "unicode": "U+311D",
       "pinyin": "ê",
+      "ipa": "ɛ",
       "category": "final",
       "example": {
         "character": "誒",
@@ -326,6 +354,7 @@
       "symbol": "ㄞ",
       "unicode": "U+311E",
       "pinyin": "ai",
+      "ipa": "ai",
       "category": "final",
       "example": {
         "character": "愛",
@@ -337,6 +366,7 @@
       "symbol": "ㄟ",
       "unicode": "U+311F",
       "pinyin": "ei",
+      "ipa": "ei",
       "category": "final",
       "example": {
         "character": "給",
@@ -348,6 +378,7 @@
       "symbol": "ㄠ",
       "unicode": "U+3120",
       "pinyin": "ao",
+      "ipa": "au",
       "category": "final",
       "example": {
         "character": "好",
@@ -359,6 +390,7 @@
       "symbol": "ㄡ",
       "unicode": "U+3121",
       "pinyin": "ou",
+      "ipa": "ou",
       "category": "final",
       "example": {
         "character": "有",
@@ -370,6 +402,7 @@
       "symbol": "ㄢ",
       "unicode": "U+3122",
       "pinyin": "an",
+      "ipa": "an",
       "category": "final",
       "example": {
         "character": "安",
@@ -381,6 +414,7 @@
       "symbol": "ㄣ",
       "unicode": "U+3123",
       "pinyin": "en",
+      "ipa": "ən",
       "category": "final",
       "example": {
         "character": "恩",
@@ -392,6 +426,7 @@
       "symbol": "ㄤ",
       "unicode": "U+3124",
       "pinyin": "ang",
+      "ipa": "aŋ",
       "category": "final",
       "example": {
         "character": "忙",
@@ -403,6 +438,7 @@
       "symbol": "ㄥ",
       "unicode": "U+3125",
       "pinyin": "eng",
+      "ipa": "əŋ",
       "category": "final",
       "example": {
         "character": "冷",
@@ -414,6 +450,7 @@
       "symbol": "ㄦ",
       "unicode": "U+3126",
       "pinyin": "er",
+      "ipa": "ɚ",
       "category": "final",
       "example": {
         "character": "二",

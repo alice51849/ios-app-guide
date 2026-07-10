@@ -15,6 +15,21 @@ import urllib.request
 HERE = os.path.dirname(os.path.abspath(__file__))
 FOOTER = "\n\n— Lumi Apps(獨立開發者 · 買斷制 · 無訂閱)"
 
+# 依 3 個排程時段(01/09/15 UTC)發對應時區的在地語言,讓各國看到自己語言的貼文。
+TZ_LANGS = {
+    "asia": ["zh-Hant", "ja", "ko", "zh-Hans", "ms"],          # 09:00 台灣 / 亞洲(21–05 UTC)
+    "eu_me": ["de", "fr", "es", "pt-BR", "ru", "ar", "pl"],     # 歐洲早 / 中東(05–13 UTC)
+    "americas": ["en", "es", "pt-BR"],                          # 美洲(13–21 UTC)
+}
+
+
+def _zone(hour_utc):
+    if 5 <= hour_utc < 13:
+        return "eu_me"
+    if 13 <= hour_utc < 21:
+        return "americas"
+    return "asia"  # 21–05 UTC(含 01:00 排程)
+
 
 def load_pool():
     with open(os.path.join(HERE, "telegram_posts.json"), encoding="utf-8") as f:
@@ -22,11 +37,16 @@ def load_pool():
 
 
 def pick(pool):
-    # 依「距基準日的小時數」輪播:不同排程時段=不同貼文,循環涵蓋全部
+    # 先依當前時區挑對應在地語言子集,再依「距基準日的小時數」在子集內輪播:
+    # 各時段發當地語言、循環涵蓋該語言全部貼文、同時段不同天不重複。
     base = _dt.datetime(2026, 1, 1)
     now = _dt.datetime.utcnow()
     hours = int((now - base).total_seconds() // 3600)
-    return pool[hours % len(pool)]
+    langs = TZ_LANGS[_zone(now.hour)]
+    subset = [p for p in pool if p.get("lang") in langs]
+    if not subset:
+        subset = pool
+    return subset[hours % len(subset)]
 
 
 def main():

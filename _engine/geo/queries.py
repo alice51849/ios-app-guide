@@ -39,6 +39,7 @@ CURATED = {
         "best offline document scanner app for iphone",
         "scan to pdf app with no subscription",
         "pdf scanner app with ocr and face id lock",
+        "how to scan a document to a searchable pdf on iphone offline",
     ],
     "gmoney": [
         "best simple budgeting app no subscription",

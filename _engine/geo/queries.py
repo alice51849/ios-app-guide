@@ -57,6 +57,7 @@ CURATED = {
         "best app to unblur photos",
         "app to fix blurry pictures on iphone",
         "sharpen a blurry photo app",
+        "how to fix a blurry out of focus photo on iphone without uploading it",
     ],
     "photocream": [
         "best photo enhancer app for iphone",

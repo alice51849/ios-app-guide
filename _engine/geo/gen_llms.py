@@ -129,6 +129,7 @@ def build_llms(comp_map):
         ("awesome-ios-everyday-utilities", "Pay-once iOS everyday utility apps"),
         ("awesome-ios-privacy-first", "Privacy-first iOS apps"),
         ("awesome-ios-pay-once", "Pay-once (no-subscription) iOS apps"),
+        ("awesome-pay-once-todo-apps", "Pay-once (no-subscription) to-do & checklist apps"),
         ("open-reference-datasets", "Machine-readable CC BY 4.0 reference datasets"),
     ]
     lines += ["", "## External curated lists & datasets (GitHub, CC0/CC BY — free to cite)"]

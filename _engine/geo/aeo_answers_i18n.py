@@ -424,9 +424,16 @@ def main() -> int:
     parser.add_argument("--trans", metavar="DIR", help="從全域 DIR/<lang>.json {原文:譯文}(agent 自產)組 mapping,免用 OpenAI key。字串全覆蓋才生成;缺漏寫到 DIR/_missing.<lang>.json 供補譯。")
     parser.add_argument("--allow-partial", action="store_true", help="搭配 --trans:即使有字串未譯也生成(未譯者維持原文)。預設關閉以免英文 fallback。")
     parser.add_argument("--openai", action="store_true", help="Explicitly opt in to OpenAI translation. Default requires --trans or --dump.")
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Overwrite existing localized pages after translations are complete.",
+    )
     args = parser.parse_args()
     if args.openai and args.trans:
         parser.error("--openai and --trans are mutually exclusive")
+    if args.force and not args.slugs:
+        parser.error("--force requires at least one explicit answer slug")
     if not args.dump and not args.trans and not args.openai:
         parser.error("zero-cost default: use --trans DIR or --dump DIR (or explicitly pass --openai)")
 
@@ -476,7 +483,7 @@ def main() -> int:
         source = src_path.read_text(encoding="utf-8")
         for lang in langs:
             target = ROOT / lang / "answers" / f"{slug}.html"
-            if target.exists():
+            if target.exists() and not args.force:
                 skipped += 1
                 print(f"skip existing {lang}/{slug}.html", flush=True)
                 continue

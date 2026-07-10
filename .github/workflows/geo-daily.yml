@@ -45,6 +45,12 @@ jobs:
           N="${{ github.event.inputs.answers || '8' }}"
           cd _engine/geo
           python3 aeo_answers.py --cached-live --limit "$N"
+          SUMMER_SLUG="how-can-my-child-prepare-for-grade-1-bopomofo-over-the-summer-before-school-starts"
+          OBSERVATION_SLUG="how-can-i-check-my-child-s-zhuyin-skills-at-home-in-three-minutes"
+          python3 aeo_answers.py lumibopomofo --cached-live \
+            --refresh-slug "$SUMMER_SLUG" --refresh-slug "$OBSERVATION_SLUG"
+          python3 aeo_answers_i18n.py "$SUMMER_SLUG" "$OBSERVATION_SLUG" \
+            --langs zh-Hant --trans i18n_trans --force
       - name: Refresh AI indexes + hubs + Atom feed
         run: |
           cd _engine/geo
@@ -59,6 +65,10 @@ jobs:
           python3 zhuyin_picture_book_club_kit.py
           python3 zhuyin_parent_teacher_handoff_kit.py
           python3 zhuyin_library_storytime_kit.py
+          python3 zhuyin_grade1_summer_calendar.py
+          python3 zhuyin_grade1_guide.py
+          python3 add_related_tools.py
+          python3 add_related_tools.py --locale zh-Hant
           python3 gen_hubs.py
           python3 gen_app_catalog.py
           python3 cleanup_localized_assets.py --cached-live

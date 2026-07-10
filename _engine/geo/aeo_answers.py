@@ -455,9 +455,7 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
     if primary_resource_url:
         hero_actions = (
             f'<a class="cta" href="{e(primary_resource_url)}">'
-            f'{e(primary_resource_label)} →</a> '
-            f'<a class="cta ghost" href="{url}" rel="nofollow noopener">'
-            f'Get {e(name)} on the App Store →</a>'
+            f'{e(primary_resource_label)} →</a>'
         )
         helpful_resource = (
             f'<a href="{e(primary_resource_url)}">{e(primary_resource_label)}</a>'
@@ -546,10 +544,15 @@ def question_plan(
     return plan
 
 
-def create_page(key: str, question: str, use_openai: bool = False) -> str | None:
+def create_page(
+    key: str,
+    question: str,
+    use_openai: bool = False,
+    force: bool = False,
+) -> str | None:
     slug = slugify(question)
     path = ANSWERS_DIR / f"{slug}.html"
-    if path.exists():
+    if path.exists() and not force:
         return None
     try:
         if use_openai:
@@ -562,7 +565,7 @@ def create_page(key: str, question: str, use_openai: bool = False) -> str | None
         print(f"SKIP {slug}: {exc}", flush=True)
         return None
     path.write_text(render_page(question, key, content), encoding="utf-8")
-    print(f"CREATED {slug}", flush=True)
+    print(f"{'REFRESHED' if force else 'CREATED'} {slug}", flush=True)
     return slug
 
 
@@ -646,6 +649,12 @@ def main() -> None:
     parser.add_argument("--no-finalize", action="store_true", help="Skip index+sitemap rebuild (for parallel workers).")
     parser.add_argument("--use-openai", action="store_true", help="Explicitly opt in to OpenAI generation. Default is offline.")
     parser.add_argument(
+        "--refresh-slug",
+        action="append",
+        default=[],
+        help="Regenerate only this existing answer slug; may be repeated.",
+    )
+    parser.add_argument(
         "--cached-live",
         action="store_true",
         help="Use the verified availability snapshot without refreshing it.",
@@ -654,13 +663,27 @@ def main() -> None:
     if args.use_openai and not key_available():
         parser.error("--use-openai requires ~/.openai_key")
     ANSWERS_DIR.mkdir(parents=True, exist_ok=True)
+    plan = question_plan(args.apps or None, refresh_live=not args.cached_live)
+    force = bool(args.refresh_slug)
+    if force:
+        by_slug = {slugify(question): (key, question) for key, question in plan}
+        requested = [Path(value).stem for value in args.refresh_slug]
+        missing = [slug for slug in requested if slug not in by_slug]
+        if missing:
+            parser.error(
+                "unknown --refresh-slug value(s): " + ", ".join(missing)
+            )
+        plan = [by_slug[slug] for slug in requested]
     created: list[str] = []
-    for key, question in question_plan(
-        args.apps or None, refresh_live=not args.cached_live
-    ):
+    for key, question in plan:
         if args.limit is not None and len(created) >= args.limit:
             break
-        slug = create_page(key, question, use_openai=args.use_openai)
+        slug = create_page(
+            key,
+            question,
+            use_openai=args.use_openai,
+            force=force,
+        )
         if slug:
             created.append(slug)
     if not args.no_finalize:

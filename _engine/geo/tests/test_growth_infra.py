@@ -36,6 +36,8 @@ import gen_roundups
 import indexnow_submit
 import outreach_scorecard
 import zhuyin_grandparent_call_kit
+import zhuyin_grade1_guide
+import zhuyin_grade1_summer_calendar
 import zhuyin_heritage_lesson_plan
 import zhuyin_library_storytime_kit
 import zhuyin_parent_teacher_handoff_kit
@@ -108,6 +110,201 @@ class AppStoreAvailabilityTests(unittest.TestCase):
 
 
 class GeneratorTests(unittest.TestCase):
+    def test_grade1_guide_is_resource_first_and_makes_no_readiness_claim(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            (pages / "guides").mkdir()
+            localized_guides = pages / "zh-Hant" / "guides"
+            localized_guides.mkdir(parents=True)
+            (localized_guides / "existing.html").write_text(
+                "<html></html>", encoding="utf-8"
+            )
+            url = zhuyin_grade1_guide.build(pages)
+            page = (
+                pages / "guides" / f"{zhuyin_grade1_guide.SLUG}.html"
+            ).read_text(encoding="utf-8")
+            sitemap = (pages / "sitemap_guides.xml").read_text(
+                encoding="utf-8"
+            )
+
+        calendar_url = zhuyin_grade1_guide.CALENDAR_URL
+        self.assertEqual(
+            f"{zhuyin_grade1_guide.SITE}/guides/"
+            f"{zhuyin_grade1_guide.SLUG}.html",
+            url,
+        )
+        self.assertLess(page.index(calendar_url), page.index("id6773017109"))
+        self.assertIn("尚未經研究評估", page)
+        self.assertIn("不教完或評量全部 37 個符號", page)
+        self.assertIn('"@type": "LearningResource"', page)
+        self.assertNotIn('"price": "0"', page)
+        self.assertNotIn("前十週", page)
+        self.assertNotIn("不會落後", page)
+        self.assertNotIn("黃金期", page)
+        self.assertIn("/zh-Hant/tools/", page)
+        self.assertIn("/zh-Hant/guides/existing.html", sitemap)
+
+    def test_grade1_summer_calendar_is_bilingual_private_and_non_scored(self):
+        english = zhuyin_grade1_summer_calendar.render_page("en")
+        traditional = zhuyin_grade1_summer_calendar.render_page("zh-Hant")
+        for page in (english, traditional):
+            self.assertIn('"WebApplication", "LearningResource"', page)
+            self.assertIn('"@type": "HowTo"', page)
+            self.assertIn('"@type": "FAQPage"', page)
+            self.assertIn("creativecommons.org/licenses/by/4.0/", page)
+            self.assertIn('hreflang="en"', page)
+            self.assertIn('hreflang="zh-Hant"', page)
+            self.assertIn("html_ch/index.html", page)
+            self.assertIn("phonetic.jsp?la=0", page)
+            self.assertIn("id6773017109", page)
+            self.assertNotIn("localStorage", page)
+            self.assertNotIn("XMLHttpRequest", page)
+            self.assertNotIn("fetch(", page)
+            self.assertNotIn("getUserMedia", page)
+            self.assertNotIn("<input", page)
+            schemas = [
+                json.loads(block)
+                for block in re.findall(
+                    r'<script type="application/ld\+json">(.*?)</script>',
+                    page,
+                    re.S,
+                )
+            ]
+            howto = next(
+                schema for schema in schemas if schema.get("@type") == "HowTo"
+            )
+            self.assertEqual(14, len(howto["step"]))
+        self.assertIn("does not teach or assess all 37 symbols", english)
+        self.assertIn("has not been evaluated in a study", english)
+        self.assertIn("No completion tracking", english)
+        self.assertIn("不教完或評量全部 37 個符號", traditional)
+        self.assertIn("尚未經研究評估", traditional)
+        self.assertIn("沒有完成度追蹤", traditional)
+        for page in (english, traditional):
+            main = page.split("<main>", 1)[1]
+            self.assertLess(
+                main.index("zhuyin-readiness-check.html"),
+                main.index("id6773017109"),
+            )
+
+    def test_answer_force_refresh_overwrites_an_existing_curated_page(self):
+        question = (
+            "How can my child prepare for grade 1 Bopomofo over the summer "
+            "before school starts?"
+        )
+        slug = aeo_answers.slugify(question)
+        with tempfile.TemporaryDirectory() as directory, mock.patch.object(
+            aeo_answers, "ANSWERS_DIR", Path(directory)
+        ):
+            path = Path(directory) / f"{slug}.html"
+            path.write_text("stale", encoding="utf-8")
+            refreshed = aeo_answers.create_page(
+                "lumibopomofo", question, force=True
+            )
+            output = path.read_text(encoding="utf-8")
+        self.assertEqual(slug, refreshed)
+        self.assertNotEqual("stale", output)
+        self.assertIn("Free 14-Day Grade 1 Zhuyin", output)
+
+    def test_grade1_summer_calendar_builds_both_pages_and_index_card(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            tools = pages / "tools"
+            tools.mkdir()
+            (tools / "index.html").write_text(
+                "<main><section></section></main>", encoding="utf-8"
+            )
+            urls = zhuyin_grade1_summer_calendar.build(pages)
+            self.assertEqual(2, len(urls))
+            self.assertTrue(
+                (tools / f"{zhuyin_grade1_summer_calendar.SLUG}.html").exists()
+            )
+            self.assertTrue(
+                (
+                    pages
+                    / "zh-Hant"
+                    / "tools"
+                    / f"{zhuyin_grade1_summer_calendar.SLUG}.html"
+                ).exists()
+            )
+            index = (tools / "index.html").read_text(encoding="utf-8")
+            self.assertEqual(
+                1, index.count("zhuyin-grade1-14-day-summer-calendar.html")
+            )
+
+    def test_grade1_summer_answer_leads_with_free_calendar(self):
+        question = (
+            "How can my child prepare for grade 1 Bopomofo over the summer "
+            "before school starts?"
+        )
+        content = aeo_answers.normalized_content(
+            aeo_answers.default_content(question, "lumibopomofo"),
+            question,
+            "lumibopomofo",
+        )
+        page = aeo_answers.render_page(question, "lumibopomofo", content)
+        self.assertEqual(
+            "https://alice51849.github.io/ios-app-guide/"
+            "tools/zhuyin-grade1-14-day-summer-calendar.html",
+            content["primary_resource_url"],
+        )
+        self.assertIn(
+            "<title>Free 14-Day Grade 1 Zhuyin Summer Warm-Up Calendar</title>",
+            page,
+        )
+        self.assertLess(
+            page.index("Open the free 14-day summer calendar"),
+            page.index("Get Lumi Bopomofo on the App Store"),
+        )
+        self.assertIn("has not been evaluated in a study", page)
+        self.assertIn("does not teach or assess all 37 symbols", page)
+        self.assertNotIn("first ten weeks", page)
+        self.assertNotIn("far less stressed", page)
+        hero = page.split('<section class="hero', 1)[1].split("</section>", 1)[0]
+        self.assertNotIn("apps.apple.com", hero)
+
+    def test_grade1_summer_answer_has_complete_resource_first_zh_hant_version(
+        self,
+    ):
+        question = (
+            "How can my child prepare for grade 1 Bopomofo over the summer "
+            "before school starts?"
+        )
+        content = aeo_answers.normalized_content(
+            aeo_answers.default_content(question, "lumibopomofo"),
+            question,
+            "lumibopomofo",
+        )
+        source = aeo_answers.render_page(question, "lumibopomofo", content)
+        mapping_path = Path(GEO) / "i18n_trans" / "zh-Hant.json"
+        mapping = json.loads(mapping_path.read_text(encoding="utf-8"))
+        strings, _, _ = aeo_answers_i18n.extract_strings(source)
+        missing = [string for string in strings if string not in mapping]
+        self.assertEqual([], missing)
+
+        localized = aeo_answers_i18n.render_localized(
+            source,
+            "zh-Hant",
+            "how-can-my-child-prepare-for-grade-1-bopomofo-over-the-summer-"
+            "before-school-starts",
+            {string: mapping[string] for string in strings},
+        )
+        calendar_url = (
+            "https://alice51849.github.io/ios-app-guide/zh-Hant/tools/"
+            "zhuyin-grade1-14-day-summer-calendar.html"
+        )
+        app_url = "https://apps.apple.com/app/id6773017109?ct=iag_ans"
+        main = localized.split("<main>", 1)[1]
+        self.assertIn(
+            "<title>免費小一入學前 14 天注音暖身日曆</title>",
+            localized,
+        )
+        self.assertLess(main.index(calendar_url), main.index(app_url))
+        self.assertIn("尚未經研究評估", localized)
+        self.assertIn("不教完或評量全部 37 個符號", localized)
+        self.assertNotIn("前十週", localized)
+        self.assertNotIn("不會落後", localized)
+
     def test_library_storytime_is_bilingual_private_and_rights_safe(self):
         english = zhuyin_library_storytime_kit.render_page("en")
         traditional = zhuyin_library_storytime_kit.render_page("zh-Hant")
@@ -319,6 +516,12 @@ class GeneratorTests(unittest.TestCase):
             add_related_tools.BOPOMOFO_APP_IDS,
             add_related_tools.related_app_ids(
                 "6775773117", "zhuyin-parent-teacher-handoff-kit"
+            ),
+        )
+        self.assertEqual(
+            add_related_tools.BOPOMOFO_APP_IDS,
+            add_related_tools.related_app_ids(
+                "6773017109", "zhuyin-grade1-14-day-summer-calendar"
             ),
         )
         self.assertEqual(
@@ -602,9 +805,12 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("該研究並未測試注音或這套工具", localized)
         self.assertNotIn("對第一次學注音的孩子", localized)
 
-    def test_zhuyin_skills_check_is_bilingual_private_and_non_diagnostic(self):
+    def test_zhuyin_observation_guide_is_private_non_scored_and_non_diagnostic(self):
         english = zhuyin_readiness_tool.render_page("en")
         traditional = zhuyin_readiness_tool.render_page("zh-Hant")
+        for tasks in zhuyin_readiness_tool.TASKS.values():
+            for task in tasks:
+                self.assertTrue(all(len(option) == 2 for option in task["options"]))
         for page in (english, traditional):
             self.assertIn('"WebApplication", "LearningResource"', page)
             self.assertIn('hreflang="en"', page)
@@ -615,10 +821,22 @@ class GeneratorTests(unittest.TestCase):
             self.assertNotIn("localStorage", page)
             self.assertNotIn("XMLHttpRequest", page)
             self.assertNotIn("fetch(", page)
+            self.assertNotIn('id="stage-name"', page)
+            self.assertNotIn("cfg.stages", page)
+            self.assertNotIn("value*50", page)
+            self.assertNotIn(" / 2", page)
+            self.assertNotIn('value="0"', page)
+            main = page.split("<main>", 1)[1]
+            self.assertLess(
+                main.index("14-day" if page is english else "14 天"),
+                main.index("id6773017109"),
+            )
         self.assertIn("not a school assessment", english)
         self.assertIn("cannot determine school readiness", english)
+        self.assertIn("without a total, score or level", english)
         self.assertIn("不是學校評量", traditional)
         self.assertIn("不是官方評量", traditional)
+        self.assertIn("不產生總分或分級", traditional)
         self.assertIn("one-time lifetime unlock", english)
         self.assertIn("一次性永久解鎖", traditional)
 
@@ -662,15 +880,53 @@ class GeneratorTests(unittest.TestCase):
             content["primary_resource_url"],
         )
         self.assertIn(
-            "<title>3-Minute Zhuyin Skills Check | "
+            "<title>3-Minute Zhuyin Observation Guide | "
             "Free Private Parent Tool</title>",
             page,
         )
         self.assertLess(
-            page.index("Open the free 3-minute skills check"),
+            page.index("Open the free 3-minute observation guide"),
             page.index("Get Lumi Bopomofo on the App Store"),
         )
+        hero = page.split('<section class="hero', 1)[1].split("</section>", 1)[0]
+        self.assertNotIn("apps.apple.com", hero)
+        mapping = json.loads(
+            (
+                Path(GEO) / "i18n_trans" / "zh-Hant.json"
+            ).read_text(encoding="utf-8")
+        )
+        strings, _, _ = aeo_answers_i18n.extract_strings(page)
+        self.assertEqual([], [string for string in strings if string not in mapping])
+        localized = aeo_answers_i18n.render_localized(
+            page,
+            "zh-Hant",
+            "how-can-i-check-my-child-s-zhuyin-skills-at-home-in-three-minutes",
+            {string: mapping[string] for string in strings},
+        )
+        localized_main = localized.split("<main>", 1)[1]
+        self.assertLess(
+            localized_main.index(
+                "/zh-Hant/tools/zhuyin-readiness-check.html"
+            ),
+            localized_main.index("id6773017109"),
+        )
+        self.assertIn("不產生總分、分數、階段或分級", localized)
         self.assertIn("Sources and resources", page)
+
+    def test_i18n_force_requires_an_explicit_answer_slug(self):
+        argv = [
+            "aeo_answers_i18n.py",
+            "--langs",
+            "zh-Hant",
+            "--trans",
+            "i18n_trans",
+            "--force",
+        ]
+        with mock.patch.object(sys, "argv", argv), mock.patch(
+            "sys.stderr"
+        ), self.assertRaises(SystemExit) as raised:
+            aeo_answers_i18n.main()
+        self.assertEqual(2, raised.exception.code)
 
     def test_heritage_lesson_plan_is_bilingual_and_honest(self):
         english = zhuyin_heritage_lesson_plan.render_page("en")
@@ -1323,6 +1579,11 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_picture_book_club_kit.py", workflow)
         self.assertIn("zhuyin_parent_teacher_handoff_kit.py", workflow)
         self.assertIn("zhuyin_library_storytime_kit.py", workflow)
+        self.assertIn("zhuyin_grade1_summer_calendar.py", workflow)
+        self.assertIn("zhuyin_grade1_guide.py", workflow)
+        self.assertIn("--refresh-slug \"$SUMMER_SLUG\"", workflow)
+        self.assertIn("--refresh-slug \"$OBSERVATION_SLUG\"", workflow)
+        self.assertIn("--trans i18n_trans --force", workflow)
         self.assertGreaterEqual(
             workflow.count("cleanup_localized_assets.py --cached-live"), 3
         )
@@ -1331,6 +1592,11 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_picture_book_club_kit.py", publish)
         self.assertIn("zhuyin_parent_teacher_handoff_kit.py", publish)
         self.assertIn("zhuyin_library_storytime_kit.py", publish)
+        self.assertIn("zhuyin_grade1_summer_calendar.py", publish)
+        self.assertIn("zhuyin_grade1_guide.py", publish)
+        self.assertIn("--refresh-slug", publish)
+        self.assertIn("aeo_answers_i18n.py", publish)
+        self.assertIn("add_related_answers.py", publish)
         self.assertIn("fix_en_hreflang.py", publish)
 
     def test_indexnow_retries_and_surfaces_total_failure(self):

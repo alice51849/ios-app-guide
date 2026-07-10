@@ -38,6 +38,13 @@ def require(cmd, cwd=None, env=None):
 
 def main():
     env = dict(os.environ, GEO_SITE=SITE)
+    curated_slugs = [
+        (
+            "how-can-my-child-prepare-for-grade-1-bopomofo-over-the-summer-"
+            "before-school-starts"
+        ),
+        "how-can-i-check-my-child-s-zhuyin-skills-at-home-in-three-minutes",
+    ]
     # 1) 重建
     require([PY, os.path.join(HERE, "build_pages_i18n.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_heritage_lesson_plan.py")], env=env)
@@ -46,6 +53,40 @@ def main():
     require([PY, os.path.join(HERE, "zhuyin_picture_book_club_kit.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_parent_teacher_handoff_kit.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_library_storytime_kit.py")], env=env)
+    require([PY, os.path.join(HERE, "zhuyin_grade1_summer_calendar.py")], env=env)
+    require([PY, os.path.join(HERE, "zhuyin_grade1_guide.py")], env=env)
+    refresh_command = [
+        PY,
+        os.path.join(HERE, "aeo_answers.py"),
+        "lumibopomofo",
+        "--cached-live",
+    ]
+    for slug in curated_slugs:
+        refresh_command.extend(["--refresh-slug", slug])
+    require(refresh_command, env=env)
+    require(
+        [
+            PY,
+            os.path.join(HERE, "aeo_answers_i18n.py"),
+            *curated_slugs,
+            "--langs",
+            "zh-Hant",
+            "--trans",
+            os.path.join(HERE, "i18n_trans"),
+            "--force",
+        ],
+        env=env,
+    )
+    require([PY, os.path.join(HERE, "add_related_answers.py")], env=env)
+    require(
+        [PY, os.path.join(HERE, "add_related_answers.py"), "--locale", "zh-Hant"],
+        env=env,
+    )
+    require([PY, os.path.join(HERE, "add_related_tools.py")], env=env)
+    require(
+        [PY, os.path.join(HERE, "add_related_tools.py"), "--locale", "zh-Hant"],
+        env=env,
+    )
     require([PY, os.path.join(HERE, "fix_en_hreflang.py")], env=env)
     if "--no-push" in sys.argv:
         print("\n(--no-push:略過部署/推送)")

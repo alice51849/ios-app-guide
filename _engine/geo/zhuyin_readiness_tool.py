@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Build a bilingual, private, parent-guided Zhuyin skills check."""
+"""Build a bilingual, private, no-score Zhuyin observation guide."""
 from __future__ import annotations
 
 import html
@@ -39,9 +39,9 @@ TASKS = {
             ),
             "sample": ("ㄅ", "ㄌ", "ㄓ", "ㄙ", "ㄩ", "ㄤ"),
             "options": (
-                ("0", "0–2 recognized", "Start with a smaller symbol set"),
-                ("1", "3–4 recognized", "Recognition is taking shape"),
-                ("2", "5–6 recognized", "Secure in this small sample"),
+                ("0–2 recognized", "Use a smaller symbol set next"),
+                ("3–4 recognized", "Keep this small set available"),
+                ("5–6 recognized", "Try a different small set another day"),
             ),
         },
         {
@@ -54,9 +54,9 @@ TASKS = {
             ),
             "sample": ("ㄇㄚ", "ㄇㄚˊ", "ㄇㄚˇ", "ㄇㄚˋ", "˙ㄇㄚ"),
             "options": (
-                ("0", "0–1 without help", "Begin with two contrasting tones"),
-                ("1", "2–3 without help", "Some tone contrasts are clear"),
-                ("2", "4–5 without help", "Secure in this small sample"),
+                ("0–1 without help", "Use two contrasting tones next"),
+                ("2–3 without help", "Keep these contrasts available"),
+                ("4–5 without help", "Try different familiar syllables another day"),
             ),
         },
         {
@@ -69,9 +69,9 @@ TASKS = {
             ),
             "sample": ("ㄅ ＋ ㄚ", "ㄇ ＋ ㄧ", "ㄕ ＋ ㄨㄟˇ"),
             "options": (
-                ("0", "Not yet", "Keep the two sounds separate and slow"),
-                ("1", "1 blend alone", "The blending idea is emerging"),
-                ("2", "2–3 blends alone", "Ready for more varied syllables"),
+                ("Not yet", "Keep the two sounds separate and slow"),
+                ("1 blend alone", "Repeat one familiar pair another day"),
+                ("2–3 blends alone", "Try different familiar syllables another day"),
             ),
         },
         {
@@ -84,9 +84,9 @@ TASKS = {
             ),
             "sample": ("ㄅ", "ㄓ", "ㄩ"),
             "options": (
-                ("0", "Not yet", "Trace large shapes first"),
-                ("1", "1–2 with support", "Shape memory is developing"),
-                ("2", "2–3 independently", "Ready for short writing practice"),
+                ("Not yet", "Offer air-tracing or large shapes next"),
+                ("1–2 with support", "Keep the same small set available"),
+                ("2–3 independently", "Try different familiar shapes another day"),
             ),
         },
         {
@@ -99,9 +99,9 @@ TASKS = {
             ),
             "sample": ("ㄅㄚˋ　˙ㄅㄚ　ㄏㄜ　ㄕㄨㄟˇ", "爸爸喝水"),
             "options": (
-                ("0", "Not yet", "Return to symbols and short blends"),
-                ("1", "With one prompt", "Zhuyin is starting to support reading"),
-                ("2", "Independently", "Try a short Zhuyin-annotated story next"),
+                ("Not yet", "Return to symbols or short familiar blends"),
+                ("With one prompt", "Try another familiar phrase another day"),
+                ("Independently", "Choose one short annotated phrase another day"),
             ),
         },
     ),
@@ -113,9 +113,9 @@ TASKS = {
             "instruction": "請打亂順序指給孩子看；這一輪先不教、不糾正，只記錄孩子今天認得多少。",
             "sample": ("ㄅ", "ㄌ", "ㄓ", "ㄙ", "ㄩ", "ㄤ"),
             "options": (
-                ("0", "認得 0–2 個", "先縮小每次練習的符號組"),
-                ("1", "認得 3–4 個", "符號辨認正在成形"),
-                ("2", "認得 5–6 個", "這一小組已相對穩定"),
+                ("認得 0–2 個", "下次使用更小的符號組"),
+                ("認得 3–4 個", "保留這一小組供日後使用"),
+                ("認得 5–6 個", "改天再換一小組觀察"),
             ),
         },
         {
@@ -125,9 +125,9 @@ TASKS = {
             "instruction": "自然念出每一種聲調，請孩子指出或跟念；不用示範第二次就答出的才計入。",
             "sample": ("ㄇㄚ", "ㄇㄚˊ", "ㄇㄚˇ", "ㄇㄚˋ", "˙ㄇㄚ"),
             "options": (
-                ("0", "獨立完成 0–1 個", "先從兩個差異大的聲調開始"),
-                ("1", "獨立完成 2–3 個", "已能分辨部分聲調"),
-                ("2", "獨立完成 4–5 個", "這一小組已相對穩定"),
+                ("獨立完成 0–1 個", "下次使用兩個差異大的聲調"),
+                ("獨立完成 2–3 個", "保留這些聲調對比供日後使用"),
+                ("獨立完成 4–5 個", "改天再換熟悉音節觀察"),
             ),
         },
         {
@@ -137,9 +137,9 @@ TASKS = {
             "instruction": "從左向右指讀，請孩子把兩個音慢慢連起來；可先示範一次，再記錄能獨立拼出的題數。",
             "sample": ("ㄅ ＋ ㄚ", "ㄇ ＋ ㄧ", "ㄕ ＋ ㄨㄟˇ"),
             "options": (
-                ("0", "目前還不會", "先把兩個音拉長、分開念"),
-                ("1", "獨立拼出 1 題", "已開始理解拼音方式"),
-                ("2", "獨立拼出 2–3 題", "可加入更多不同音節"),
+                ("目前還不會", "先把兩個音拉長、分開念"),
+                ("獨立拼出 1 題", "改天再用同一組熟悉聲音"),
+                ("獨立拼出 2–3 題", "改天再換熟悉音節觀察"),
             ),
         },
         {
@@ -149,9 +149,9 @@ TASKS = {
             "instruction": "請用空白紙；只觀察形狀與方向是否可辨識，不要求速度或像印刷字一樣完美。",
             "sample": ("ㄅ", "ㄓ", "ㄩ"),
             "options": (
-                ("0", "目前還不會", "先用大字描寫建立動作記憶"),
-                ("1", "協助下完成 1–2 個", "字形記憶正在發展"),
-                ("2", "獨立完成 2–3 個", "可進入短時間書寫練習"),
+                ("目前還不會", "下次可用空寫或大字描寫"),
+                ("協助下完成 1–2 個", "保留這一小組供日後使用"),
+                ("獨立完成 2–3 個", "改天再換熟悉字形觀察"),
             ),
         },
         {
@@ -161,9 +161,9 @@ TASKS = {
             "instruction": "若孩子已認得國字，請先遮住下方國字，只看注音慢慢讀；讀完再揭曉短句。",
             "sample": ("ㄅㄚˋ　˙ㄅㄚ　ㄏㄜ　ㄕㄨㄟˇ", "爸爸喝水"),
             "options": (
-                ("0", "目前還不會", "回到單一符號與短音節"),
-                ("1", "提示一次後完成", "注音已開始支援閱讀"),
-                ("2", "可以獨立讀出", "下一步可讀短篇注音故事"),
+                ("目前還不會", "回到單一符號或熟悉短音節"),
+                ("提示一次後完成", "改天再換一個熟悉短句"),
+                ("可以獨立讀出", "改天再選一個短注音句"),
             ),
         },
     ),
@@ -202,28 +202,28 @@ SAMPLE_SETS = {
 COPY = {
     "en": {
         "lang": "en",
-        "title": "3-Minute Zhuyin Skills Check for Parents",
+        "title": "3-Minute Zhuyin Observation Guide for Parents",
         "description": (
-            "A free, private, parent-guided Bopomofo check that samples symbol "
-            "recognition, tones, blending, writing and reading—then suggests what to practice next."
+            "A free, private, parent-guided Bopomofo observation guide for symbol "
+            "recognition, tones, blending, writing and reading—with no score or level."
         ),
         "eyebrow": "Free private tool · no login",
         "lead": (
-            "Five tiny observations reveal which Zhuyin skill to practice next—without "
-            "turning learning into a pass-or-fail test."
+            "Record five tiny observations, then choose any gentle next activity—without "
+            "a total, score, stage or pass-or-fail result."
         ),
         "privacy": "Private · no upload · nothing saved",
         "disclaimer": "Guide only · not a test or diagnosis",
-        "start": "Start the 3-minute check",
+        "start": "Start the 3-minute observation",
         "language": "繁體中文",
         "before": "Before you begin",
         "before_items": (
             "Use only with a child who has already met at least some Zhuyin symbols.",
             "Sit beside the child, keep the tone neutral and avoid correcting during each sample.",
             "If a sample contains symbols not yet taught, choose “New sample” instead of counting them as errors.",
-            "Stop if the child is tired or frustrated; today’s result is only a practice guide.",
+            "Stop if the child is tired or frustrated; today’s choices are only practice notes.",
         ),
-        "method": "What this quick check observes",
+        "method": "What this observation guide samples",
         "method_text": (
             "It samples five building blocks: recognizing symbols, hearing tones, blending "
             "sounds, copying shapes and using Zhuyin to decode a short phrase. It does not "
@@ -235,41 +235,19 @@ COPY = {
         "new_sample": "New sample",
         "back": "Back",
         "next": "Next",
-        "result_button": "See practice plan",
-        "result_title": "Your next-practice map",
+        "result_button": "See observation notes",
+        "result_title": "Today’s observation notes",
         "result_note": (
-            "A lower observation means “practice this next,” not “behind.” Repeat with "
-            "different examples in 2–4 weeks rather than drilling these exact prompts."
+            "These five choices are not combined, ranked or converted into a score or level. "
+            "Choose any one free activity below, or stop without assigning a next step."
         ),
-        "dimension_title": "Five-skill snapshot",
-        "recommend_title": "Best next steps",
-        "restart": "Check again",
-        "print": "Print result",
+        "dimension_title": "What you observed",
+        "recommend_title": "Free activities you may choose",
+        "restart": "Observe again",
+        "print": "Print notes",
         "share": "Share tool",
         "shared": "Tool link copied.",
-        "share_title": "Free 3-minute Zhuyin skills check",
-        "stages": (
-            {
-                "max": 3,
-                "name": "Exploring",
-                "text": "Keep sessions tiny: one symbol group, one contrast and plenty of listening.",
-            },
-            {
-                "max": 6,
-                "name": "Building",
-                "text": "The pieces are forming. Practice the least-secure skill in short, playful repeats.",
-            },
-            {
-                "max": 8,
-                "name": "Connecting",
-                "text": "Symbols, tones and blends are connecting. Add short words and supported reading.",
-            },
-            {
-                "max": 10,
-                "name": "Applying",
-                "text": "Use Zhuyin in real reading: short stories, dictionary lookups and varied syllables.",
-            },
-        ),
+        "share_title": "Free 3-minute Zhuyin observation guide",
         "recommendations": {
             "recognition": {
                 "title": "Build fast symbol recognition",
@@ -286,8 +264,8 @@ COPY = {
             "blending": {
                 "title": "Practice smooth blending",
                 "text": "Slide an initial toward the rest of the syllable while stretching both sounds.",
-                "label": "Try Lumi Bopomofo’s blending games",
-                "url": "",
+                "label": "Open the free 14-day activity calendar",
+                "url": f"{SITE}/tools/zhuyin-grade1-14-day-summer-calendar.html",
             },
             "writing": {
                 "title": "Strengthen shape memory",
@@ -302,21 +280,7 @@ COPY = {
                 "url": f"{SITE}/guides/zhuyin-5-day-lesson-plan-heritage-school.html",
             },
         },
-        "all_strong": (
-            {
-                "title": "Use Zhuyin beyond drills",
-                "text": "Look up an unfamiliar character and let Zhuyin unlock a word the child already understands.",
-                "label": "See the dictionary-to-reading guide",
-                "url": f"{SITE}/answers/why-should-my-child-learn-zhuyin-if-they-already-speak-chinese.html",
-            },
-            {
-                "title": "Keep retrieval playful",
-                "text": "Mix symbols and tones into a quick family or classroom game.",
-                "label": "Generate a free Zhuyin bingo card",
-                "url": f"{SITE}/tools/zhuyin-bingo.html",
-            },
-        ),
-        "app_title": "Need guided practice between check-ins?",
+        "app_title": "Want an optional guided practice layer?",
         "app_text": (
             "Lumi Bopomofo adds listening, tracing, tone and blending games for all 37 "
             "symbols. It is free to download with an optional one-time lifetime unlock, "
@@ -325,6 +289,7 @@ COPY = {
         "app_cta": "Try Lumi Bopomofo",
         "resources": "Free follow-up resources",
         "resource_items": (
+            ("14-day Grade 1 Zhuyin summer warm-up", f"{SITE}/tools/zhuyin-grade1-14-day-summer-calendar.html"),
             ("Parent-teacher Zhuyin handoff kit", f"{SITE}/tools/zhuyin-parent-teacher-handoff-kit.html"),
             ("Family Zhuyin picture-book club kit", f"{SITE}/tools/zhuyin-family-picture-book-club-kit.html"),
             ("Grandparent Zhuyin video-call kit", f"{SITE}/tools/zhuyin-grandparent-video-call-kit.html"),
@@ -339,7 +304,7 @@ COPY = {
         ),
         "sources": "Method and official references",
         "sources_text": (
-            "This independent checklist was designed as a low-pressure formative practice "
+            "This independent guide was designed as a low-pressure practice observation "
             "guide. Symbol forms and notation were checked against Taiwan Ministry of "
             "Education references; those agencies did not create or endorse this tool."
         ),
@@ -350,66 +315,60 @@ COPY = {
         "faq_title": "Parent FAQ",
         "faq": (
             (
-                "Is this a Zhuyin readiness test or diagnosis?",
-                "No. It is a tiny parent-guided sample that suggests what to practice next. It cannot determine school readiness, a reading level, a speech issue or any developmental condition.",
+                "Is this a Zhuyin readiness test, score or diagnosis?",
+                "No. It records five separate observations without a total, score or level. It cannot determine school readiness, a reading level, a speech issue or any developmental condition.",
             ),
             (
-                "How often should we repeat it?",
-                "Every two to four weeks is enough. Use different symbols, blends and phrases so improvement reflects transferable skill rather than memorizing this page.",
+                "When should we repeat it?",
+                "Only when another observation would be useful. Use different symbols, blends and phrases rather than drilling or memorizing this page.",
             ),
             (
                 "What if my child rarely speaks Mandarin?",
-                "Treat oral language as a separate learning need. Pair symbol work with conversation, stories and fluent speech; do not interpret a low result here as a learning difficulty.",
+                "Treat oral language as a separate learning need. Pair symbol work with conversation, stories and fluent speech; do not interpret any choice here as a learning difficulty.",
             ),
             (
                 "Does this tool collect my child’s answers?",
-                "No. It has no account, form submission or cloud storage. Scoring happens only in the current browser tab and disappears when the page is closed or reset.",
+                "No. It has no account, form submission or cloud storage. Choices remain only in the current browser tab and disappear when the page is closed or reset.",
             ),
         ),
         "home": "Home",
         "tools": "Free tools",
-        "footer": "Independent educational resource. Not an official assessment or professional diagnosis.",
+        "footer": "Independent no-score educational resource. Not an official assessment or professional diagnosis.",
     },
     "zh-Hant": {
         "lang": "zh-Hant",
-        "title": "3 分鐘注音學習檢核｜給家長的下一步練習指南",
-        "description": "免費、私密的家長引導式注音檢核，快速觀察符號認讀、聲調、拼讀、書寫與閱讀應用，找出下一步練習方向。",
+        "title": "3 分鐘注音觀察指南｜給家長的低壓力練習筆記",
+        "description": "免費、私密的家長引導式注音觀察指南，分別記下符號認讀、聲調、拼讀、書寫與閱讀互動，不產生總分或分級。",
         "eyebrow": "免費私密工具 · 免登入",
-        "lead": "用五個小觀察找出孩子下一步最值得練的注音能力，不把學習變成及格或不及格。",
+        "lead": "分別記下五個小觀察，再任選一個溫和活動；不加總、不評分、不分級，也沒有及格或不及格。",
         "privacy": "私密 · 不上傳 · 不儲存",
         "disclaimer": "僅供練習 · 不是測驗或診斷",
-        "start": "開始 3 分鐘檢核",
+        "start": "開始 3 分鐘觀察",
         "language": "English",
         "before": "開始前請先知道",
         "before_items": (
             "適合已接觸過部分注音符號的孩子；完全初學者可先從注音符號表開始。",
             "請坐在孩子身旁，語氣保持輕鬆，每一題先不糾正或教答案。",
             "若出現孩子還沒學過的符號，請按「換一組」，不要把未教過算成答錯。",
-            "孩子疲倦或挫折就先停止；今天的結果只用來安排下一步練習。",
+            "孩子疲倦或挫折就先停止；今天的選擇只是一份練習筆記。",
         ),
-        "method": "這份快速檢核觀察什麼？",
+        "method": "這份觀察指南取樣什麼？",
         "method_text": "五個面向包括符號認讀、聲調聽辨、拼音結合、字形書寫，以及用注音讀短句。它不代表 37 個符號的完整熟練度，也不評量口語中文、理解力或正式閱讀程度；更不是學校評量或專業診斷。",
         "step_template": "第 {current} 題，共 {total} 題",
         "choose": "請先選擇最接近今天表現的選項。",
         "new_sample": "換一組",
         "back": "上一題",
         "next": "下一題",
-        "result_button": "查看練習方向",
-        "result_title": "孩子的下一步練習地圖",
-        "result_note": "較低的觀察只代表「下一步先練這裡」，不代表落後。建議 2–4 週後換一組題目再看，不要反覆背熟本頁題目。",
-        "dimension_title": "五項能力快照",
-        "recommend_title": "最值得先做的練習",
-        "restart": "重新檢核",
-        "print": "列印結果",
+        "result_button": "查看觀察筆記",
+        "result_title": "今天的五項觀察筆記",
+        "result_note": "這五個選擇不會加總、排序，也不會換算成分數或階段。可從下方免費活動任選一項，也可以不安排下一步。",
+        "dimension_title": "今天觀察到的情況",
+        "recommend_title": "可自由選擇的免費活動",
+        "restart": "重新觀察",
+        "print": "列印筆記",
         "share": "分享工具",
         "shared": "已複製工具連結。",
-        "share_title": "免費 3 分鐘注音學習檢核",
-        "stages": (
-            {"max": 3, "name": "探索中", "text": "每次只練一小組符號與一組聲音對比，多聽、多玩，不追求速度。"},
-            {"max": 6, "name": "建立中", "text": "基礎正在成形；把最不穩定的一項拆小，用短時間遊戲反覆練習。"},
-            {"max": 8, "name": "連結中", "text": "符號、聲調與拼音開始連起來，可加入短詞和有提示的閱讀。"},
-            {"max": 10, "name": "應用中", "text": "把注音用進真實閱讀：短篇故事、查字典與更多不同音節。"},
-        ),
+        "share_title": "免費 3 分鐘注音觀察指南",
         "recommendations": {
             "recognition": {
                 "title": "加快符號認讀",
@@ -426,8 +385,8 @@ COPY = {
             "blending": {
                 "title": "練習流暢拼音",
                 "text": "把聲符慢慢滑向後半段，兩個聲音拉長後連成一個音節。",
-                "label": "用 Lumi 注音星球練拼音",
-                "url": "",
+                "label": "開啟免費 14 天活動日曆",
+                "url": f"{SITE}/zh-Hant/tools/zhuyin-grade1-14-day-summer-calendar.html",
             },
             "writing": {
                 "title": "建立字形動作記憶",
@@ -442,25 +401,12 @@ COPY = {
                 "url": f"{SITE}/zh-Hant/guides/zhuyin-5-day-lesson-plan-heritage-school.html",
             },
         },
-        "all_strong": (
-            {
-                "title": "離開練習題，真的用注音",
-                "text": "查一個陌生國字，讓孩子用注音連回已經聽懂的詞。",
-                "label": "閱讀查字典到自主閱讀指南",
-                "url": f"{SITE}/zh-Hant/answers/why-should-my-child-learn-zhuyin-if-they-already-speak-chinese.html",
-            },
-            {
-                "title": "用遊戲保持提取速度",
-                "text": "把不同符號與聲調混進簡短的家庭或課堂遊戲。",
-                "label": "產生免費注音賓果卡",
-                "url": f"{SITE}/tools/zhuyin-bingo.html",
-            },
-        ),
-        "app_title": "兩次檢核之間，需要有人帶著練嗎？",
+        "app_title": "想加入選用的引導式練習嗎？",
         "app_text": "Lumi 注音星球用聽音、描寫、聲調與拼讀遊戲練習全部 37 個符號。可免費下載，另提供一次性永久解鎖；無廣告、無定期訂閱。",
         "app_cta": "試用 Lumi 注音星球",
         "resources": "免費延伸資源",
         "resource_items": (
+            ("小一入學前 14 天注音暖身日曆", f"{SITE}/zh-Hant/tools/zhuyin-grade1-14-day-summer-calendar.html"),
             ("家庭—教師注音交接包", f"{SITE}/zh-Hant/tools/zhuyin-parent-teacher-handoff-kit.html"),
             ("家庭注音繪本四週共讀包", f"{SITE}/zh-Hant/tools/zhuyin-family-picture-book-club-kit.html"),
             ("祖孫視訊注音遊戲包", f"{SITE}/zh-Hant/tools/zhuyin-grandparent-video-call-kit.html"),
@@ -474,30 +420,30 @@ COPY = {
             ),
         ),
         "sources": "方法說明與官方參考",
-        "sources_text": "這份獨立檢核以低壓力的形成性觀察為目的；符號字形與標示方式依台灣教育部資料核對，但本工具並非由教育部製作或背書。",
+        "sources_text": "這份獨立指南以低壓力的練習觀察為目的；符號字形與標示方式依台灣教育部資料核對，但本工具並非由教育部製作或背書。",
         "source_labels": ("教育部《國語注音符號手冊》", "教育部《注音練習簿》"),
         "faq_title": "家長常見問題",
         "faq": (
             (
-                "這是注音入學準備測驗或診斷嗎？",
-                "不是。它只抽樣孩子今天的表現，用來建議下一步練習；不能判定入學準備度、閱讀程度、語言問題或任何發展狀況。",
+                "這是注音入學準備測驗、分數或診斷嗎？",
+                "不是。它只分別記下五項觀察，不產生總分或分級；不能判定入學準備度、閱讀程度、語言問題或任何發展狀況。",
             ),
             (
-                "多久做一次比較適合？",
-                "每 2–4 週一次就夠了。請更換符號、拼音與短句，才能觀察能力是否能轉用，而不是只背熟本頁題目。",
+                "什麼時候可以再觀察一次？",
+                "只有再次觀察確實有幫助時才需要。請更換符號、拼音與短句，不要反覆練習或背熟本頁題目。",
             ),
             (
                 "孩子平常很少說中文怎麼辦？",
-                "口語經驗需要另外補充。請把符號練習搭配對話、故事與流利的中文語音；不要把本頁較低的結果解讀為學習困難。",
+                "口語經驗需要另外補充。請把符號練習搭配對話、故事與流利的中文語音；不要把本頁任何選擇解讀為學習困難。",
             ),
             (
                 "工具會蒐集孩子的答案嗎？",
-                "不會。沒有帳號、表單送出或雲端儲存；結果只在目前分頁內計算，關閉或重設後就消失。",
+                "不會。沒有帳號、表單送出或雲端儲存；選擇只留在目前分頁，關閉或重設後就消失。",
             ),
         ),
         "home": "首頁",
         "tools": "免費工具",
-        "footer": "獨立教育資源；不是官方評量，也不是專業診斷。",
+        "footer": "不評分的獨立教育資源；不是官方評量，也不是專業診斷。",
     },
 }
 
@@ -506,7 +452,7 @@ STYLE = """
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:linear-gradient(180deg,#f8fcfb 0,#fffaf0 52%,#f7f4ff 100%);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif;line-height:1.65}
 a{color:#4f3ea1}.wrap{width:min(1040px,calc(100% - 32px));margin:auto}.top{position:sticky;top:0;z-index:5;background:#fffffff0;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:800}.nav-links{display:flex;gap:16px;align-items:center}.hero{padding:58px 0 28px}.eyebrow{color:var(--jade);font-size:.78rem;font-weight:900;letter-spacing:.09em;text-transform:uppercase}.hero h1{max-width:900px;margin:.18em 0;font-size:clamp(2rem,5.8vw,4.25rem);line-height:1.04;letter-spacing:-.035em}.lead{max-width:780px;font-size:clamp(1.08rem,2.4vw,1.28rem);color:var(--muted)}.trust{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.badge{display:inline-flex;align-items:center;gap:7px;padding:8px 12px;border:1px solid #cde7df;border-radius:999px;background:#f5fffb;color:#176554;font-size:.9rem;font-weight:800;white-space:nowrap}.badge.warn{border-color:#ead79d;background:var(--warn);color:#705417}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.button{appearance:none;border:0;border-radius:999px;padding:12px 19px;background:linear-gradient(135deg,var(--jade),var(--jade2));color:#fff!important;text-decoration:none;font:inherit;font-weight:850;cursor:pointer;white-space:nowrap;box-shadow:0 8px 20px #087f6b25}.button.secondary{background:#fff;color:#4f3ea1!important;border:1px solid #cfc7e8;box-shadow:none}.button:focus-visible,.option:focus-within{outline:3px solid #e1b95d;outline-offset:3px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.card{grid-column:span 12;background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:0 12px 34px #28354c12}.half{grid-column:span 6}.third{grid-column:span 4}h2{font-size:clamp(1.45rem,3vw,2.05rem);line-height:1.16;margin:1.55em 0 .6em}h3{line-height:1.25}.muted{color:var(--muted)}.check-shell{margin-top:26px;background:#fff;border:1px solid #d8e4e0;border-radius:28px;overflow:hidden;box-shadow:0 20px 60px #17463818}.check-head{padding:18px 24px;background:linear-gradient(135deg,#eefaf6,#f6f2ff);border-bottom:1px solid #dfe8e4}.progress-row{display:flex;align-items:center;justify-content:space-between;gap:16px;font-weight:850}.progress-track{height:8px;margin-top:11px;border-radius:999px;background:#dfe8e4;overflow:hidden}.progress-bar{height:100%;width:20%;background:linear-gradient(90deg,var(--jade),#79c792);transition:width .3s ease}.step-panel{display:none;padding:clamp(22px,4vw,38px)}.step-panel.active{display:block}.step-kicker{color:var(--jade);font-weight:850}.step-panel h2{margin:.25em 0 .35em}.sample{display:flex;align-items:center;justify-content:center;gap:clamp(8px,2vw,18px);flex-wrap:wrap;min-height:112px;margin:24px 0;padding:18px;border:1px solid #dfd7c5;border-radius:22px;background:linear-gradient(145deg,#fffaf0,#fff)}.symbol{display:inline-flex;align-items:center;justify-content:center;min-width:64px;min-height:68px;padding:7px 10px;border-radius:16px;background:#fff;box-shadow:0 6px 16px #33230d14;font-size:clamp(1.65rem,6vw,3rem);font-weight:850;white-space:nowrap}.options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.option{display:block;position:relative;min-width:0}.option input{position:absolute;opacity:0;pointer-events:none}.option-body{display:block;height:100%;padding:15px;border:2px solid #e2e5e7;border-radius:17px;background:#fff;cursor:pointer;transition:border-color .18s,transform .18s,background .18s}.option input:checked+.option-body{border-color:var(--jade);background:#effbf7;transform:translateY(-2px)}.option-title{display:block;font-weight:900}.option-detail{display:block;margin-top:3px;color:var(--muted);font-size:.9rem}.error{display:none;margin:14px 0 0;color:#a13f34;font-weight:800}.error.show{display:block}.check-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 24px;border-top:1px solid #e5e8e6;background:#fbfdfc}.check-nav .button[hidden]{display:none}.result{display:none;padding:clamp(24px,5vw,44px)}.result.active{display:block}.stage{display:inline-flex;padding:8px 13px;border-radius:999px;background:#eaf8f3;color:#116451;font-weight:900;white-space:nowrap}.result-lead{font-size:1.12rem}.skill-row{display:grid;grid-template-columns:minmax(120px,1fr) 2fr auto;gap:12px;align-items:center;margin:12px 0}.skill-label{font-weight:800}.skill-track{height:10px;border-radius:99px;background:#e5e9e7;overflow:hidden}.skill-fill{height:100%;background:linear-gradient(90deg,#deb35a,var(--jade2));border-radius:99px}.skill-value{color:var(--muted);font-size:.88rem;white-space:nowrap}.recommendations{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.rec{padding:17px;border:1px solid #e4ddcf;border-radius:18px;background:#fff}.rec h3{margin:.1em 0}.rec p{color:var(--muted)}.rec a{font-weight:850}.notice{padding:16px 18px;border-left:5px solid var(--gold);border-radius:14px;background:var(--warn)}.source-list a{overflow-wrap:anywhere}.footer{margin-top:44px;padding:28px 0;border-top:1px solid var(--line);color:var(--muted)}.share-status{min-height:1.5em;color:var(--jade);font-weight:800}
 .sample-action{display:block;margin:-14px auto 22px;border:0;background:transparent;color:#4f3ea1;font:inherit;font-weight:850;cursor:pointer;white-space:nowrap}
-@media(max-width:760px){.half,.third{grid-column:span 12}.options,.recommendations{grid-template-columns:1fr}.nav-links a:first-child{display:none}.hero{padding-top:38px}.skill-row{grid-template-columns:1fr auto}.skill-track{grid-column:1/-1;grid-row:2}.check-nav{padding:15px}.step-panel{padding:22px 16px}.symbol{min-width:52px;min-height:58px}.option-title,.button{white-space:nowrap}}
+@media(max-width:760px){.half,.third{grid-column:span 12}.options,.recommendations{grid-template-columns:1fr}.nav-links a:first-child{display:none}.hero{padding-top:38px}.observation-row{grid-template-columns:1fr}.check-nav{padding:15px}.step-panel{padding:22px 16px}.symbol{min-width:52px;min-height:58px}.option-title,.button{white-space:nowrap}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 @media print{.top,.hero,.intro,.check-head,.step-panel,.check-nav,.result .actions,.app-card,.resources,.faq,.footer{display:none!important}body{background:#fff}.check-shell{border:0;box-shadow:none}.result.active{display:block!important;padding:0}.card,.rec{box-shadow:none;break-inside:avoid}.recommendations{grid-template-columns:1fr}.wrap{width:100%}}
 """
@@ -564,33 +510,22 @@ SCRIPT = """
       '</p><a href="'+item.url+'">'+item.label+' →</a></article>';
   }
   function renderResult(){
-    var scores={};
-    var total=0;
+    var observations={};
     panels.forEach(function(panel){
-      var value=parseInt(selected(panel).value,10);
-      scores[panel.dataset.dimension]=value;
-      total+=value;
+      var option=selected(panel).closest(".option");
+      observations[panel.dataset.dimension]={
+        title:option.querySelector(".option-title").textContent,
+        detail:option.querySelector(".option-detail").textContent
+      };
     });
-    var stage=cfg.stages[cfg.stages.length-1];
-    cfg.stages.some(function(candidate){
-      if(total<=candidate.max){stage=candidate;return true;}
-      return false;
-    });
-    document.getElementById("stage-name").textContent=stage.name;
-    document.getElementById("stage-text").textContent=stage.text;
     document.getElementById("skill-results").innerHTML=cfg.dimensionOrder.map(function(id){
-      var value=scores[id];
-      return '<div class="skill-row"><div class="skill-label">'+cfg.dimensions[id].label+
-        '</div><div class="skill-track" aria-hidden="true"><div class="skill-fill" style="width:'+
-        (value*50)+'%"></div></div><div class="skill-value">'+value+' / 2</div></div>';
+      var observation=observations[id];
+      return '<article class="rec"><h3>'+cfg.dimensions[id].label+
+        '</h3><p><strong>'+observation.title+'</strong><br>'+observation.detail+'</p></article>';
     }).join("");
-    var recs;
-    if(total>=9){
-      recs=cfg.allStrong;
-    }else{
-      recs=cfg.dimensionOrder.slice().sort(function(a,b){return scores[a]-scores[b];})
-        .slice(0,3).map(function(id){return cfg.dimensions[id].recommendation;});
-    }
+    var recs=cfg.dimensionOrder.map(function(id){
+      return cfg.dimensions[id].recommendation;
+    });
     document.getElementById("recommendations").innerHTML=recs.map(recommendationCard).join("");
     document.getElementById("check-content").hidden=true;
     result.classList.add("active");
@@ -666,12 +601,12 @@ def render_tasks(locale: str) -> str:
         )
         options = "".join(
             '<label class="option">'
-            f'<input type="radio" name="{task["id"]}" value="{value}">'
+            f'<input type="radio" name="{task["id"]}" value="choice-{option_index}">'
             '<span class="option-body">'
             f'<span class="option-title">{html.escape(title)}</span>'
             f'<span class="option-detail">{html.escape(detail)}</span>'
             "</span></label>"
-            for value, title, detail in task["options"]
+            for option_index, (title, detail) in enumerate(task["options"], 1)
         )
         output.append(
             f'<section class="step-panel{" active" if index == 0 else ""}" '
@@ -695,25 +630,21 @@ def render_page(locale: str) -> str:
     home = f"{SITE}/{'zh-Hant/' if locale == 'zh-Hant' else ''}index.html"
     app_url = appstore_url("lumibopomofo", f"iag_readiness_{locale.lower()}")
 
-    recommendations = json.loads(json.dumps(t["recommendations"], ensure_ascii=False))
-    recommendations["blending"]["url"] = app_url
     config = {
         "stepTemplate": t["step_template"],
         "next": t["next"],
         "resultButton": t["result_button"],
         "shareTitle": t["share_title"],
         "shared": t["shared"],
-        "stages": t["stages"],
         "dimensionOrder": [task["id"] for task in TASKS[locale]],
         "sampleSets": SAMPLE_SETS,
         "dimensions": {
             task["id"]: {
                 "label": task["label"],
-                "recommendation": recommendations[task["id"]],
+                "recommendation": t["recommendations"][task["id"]],
             }
             for task in TASKS[locale]
         },
-        "allStrong": t["all_strong"],
     }
     before_items = "".join(
         f"<li>{html.escape(item)}</li>" for item in t["before_items"]
@@ -739,7 +670,7 @@ def render_page(locale: str) -> str:
             "browserRequirements": "JavaScript",
             "isAccessibleForFree": True,
             "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
-            "learningResourceType": "Parent-guided formative learning check",
+            "learningResourceType": "Parent-guided no-score observation guide",
             "educationalUse": "Practice planning",
             "educationalLevel": "Beginner",
             "typicalAgeRange": "4-9",
@@ -829,9 +760,8 @@ def render_page(locale: str) -> str:
 <div class="check-nav"><button class="button secondary" id="back-button" type="button">{html.escape(t["back"])}</button><p class="error" id="step-error" role="alert">{html.escape(t["choose"])}</p><button class="button" id="next-button" type="button">{html.escape(t["next"])}</button></div>
 </div>
 <section class="result" id="result" tabindex="-1">
-<span class="stage" id="stage-name"></span>
 <h2>{html.escape(t["result_title"])}</h2>
-<p class="result-lead" id="stage-text"></p><p class="notice">{html.escape(t["result_note"])}</p>
+<p class="notice">{html.escape(t["result_note"])}</p>
 <h2>{html.escape(t["dimension_title"])}</h2><div id="skill-results"></div>
 <h2>{html.escape(t["recommend_title"])}</h2><div class="recommendations" id="recommendations"></div>
 <div class="actions"><button class="button secondary" id="restart-button" type="button">{html.escape(t["restart"])}</button><button class="button secondary" id="print-button" type="button">{html.escape(t["print"])}</button><button class="button" id="share-button" type="button">{html.escape(t["share"])}</button></div>
@@ -839,8 +769,8 @@ def render_page(locale: str) -> str:
 </section>
 </section>
 <section class="wrap grid resources">
-<article class="card half app-card"><h2>{html.escape(t["app_title"])}</h2><p>{html.escape(t["app_text"])}</p><a class="button" href="{html.escape(app_url)}" rel="nofollow noopener">{html.escape(t["app_cta"])}</a></article>
 <article class="card half"><h2>{html.escape(t["resources"])}</h2><ul>{resources}</ul></article>
+<article class="card half app-card"><h2>{html.escape(t["app_title"])}</h2><p>{html.escape(t["app_text"])}</p><a class="button" href="{html.escape(app_url)}" rel="nofollow noopener">{html.escape(t["app_cta"])}</a></article>
 </section>
 <section class="wrap grid">
 <article class="card half"><h2>{html.escape(t["sources"])}</h2><p>{html.escape(t["sources_text"])}</p><ul class="source-list">{source_links}</ul></article>
@@ -863,8 +793,8 @@ def update_tools_index(pages: Path = PAGES) -> bool:
     target = f"{SLUG}.html"
     card = (
         '<article class="card third"><h2>'
-        f'<a href="{target}">3-Minute Zhuyin Skills Check</a></h2>'
-        "<p>Find the next Bopomofo skill to practice—private, parent-guided and no login.</p>"
+        f'<a href="{target}">3-Minute Zhuyin Observation Guide</a></h2>'
+        "<p>Record five private observations with no score, level, login or upload.</p>"
         "</article>"
     )
     grid_marker = '<section class="wrap grid">'

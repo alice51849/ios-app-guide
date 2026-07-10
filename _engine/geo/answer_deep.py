@@ -203,28 +203,71 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "summer before school starts bopomofo",
    "get ready for grade 1 bopomofo over the summer"
   ],
-  "lead": "Taiwan grade 1 teaches all 37 Bopomofo symbols in roughly the first ten weeks after the early-September start, so a light, playful summer warm-up — recognising symbols by sound, not drilling — lets your child arrive familiar and far less stressed.",
-  "detail": "In Taiwan, elementary school begins in early September and grade 1 covers the entire 37-symbol Bopomofo (注音符號, Zhuyin) system intensively in about the first ten weeks before moving on to reading connected text. Children who arrive already recognising the symbols by sound handle that fast pace with much less stress. The summer beforehand is ideal for a gentle warm-up rather than academic drilling: aim for short, playful 10–15 minute sessions a few times a week, focused on hearing and recognising symbols instead of perfect handwriting. A sensible summer arc is to start with the initials (聲母 ㄅㄆㄇㄈ…), add the medials and finals (韻母 ㄧㄨㄩ, ㄚㄛㄜㄝ…), then lightly touch the four tones and simple blending (拼讀) — always game-first. {name} maps onto exactly this sequence with four modes — audio symbol recognition, stroke tracing, four-tone practice, and syllable blending — for ages 4–7, in 10–15 minute sessions, with a dual English and Traditional Chinese interface, on-device progress, no ads, and a one-time unlock instead of a subscription.",
+  "page_title": "Free 14-Day Grade 1 Zhuyin Summer Warm-Up Calendar",
+  "meta_description": "Free bilingual 14-day Zhuyin summer calendar with 8–10 minute activities, three starting lanes, no scores, no login and no school-readiness claim.",
+  "lead": "Start with a free bilingual, print-ready 14-day calendar: choose a gentle starting lane, sample listening, shape, stroke, tone, blending and reading activities, and stop each day within eight to ten minutes.",
+  "detail": "The free 14-day Grade 1 Zhuyin summer warm-up offers three flexible lanes: completely new, recognises some symbols, or ready to combine familiar sounds. Each day follows the same short choose, model, play, connect and close rhythm, with a gentle route plus an optional stretch only when the child is comfortable. It has no child-name field, date field, completion tracker, account, upload, score, diagnosis or saved profile. Taiwan Ministry of Education references establish standard Zhuyin forms, notation and stroke order; they do not prescribe or endorse this calendar. This original 14-day sequence has not been evaluated in a study, does not teach or assess all 37 symbols, and cannot show school readiness, faster learning or future results. Schools differ, so families should ask the child's school about its actual teaching plan. Lumi Bopomofo is optional inside a chosen day for guided listening, tracing, tone or blending practice; the complete calendar works without an app.",
+  "follow_up": "Open or print the free calendar first. If Zhuyin is completely new, choose only two or three symbols from the official chart and let listening count. If the child has prior exposure, use the free three-minute observation guide once to choose a lane rather than assign a score. Repeat, pause or ask the school whenever that is the gentler next step.",
+  "primary_resource_url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-grade1-14-day-summer-calendar.html",
+  "primary_resource_label": "Open the free 14-day summer calendar",
   "bullets": [
-   "Taiwan grade 1 starts in early September and teaches all 37 Bopomofo symbols in about the first ten weeks",
-   "Summer prep should be light and playful — 10–15 minutes a few times a week, not daily drilling",
-   "At ages 4–7, prioritise recognising symbols by sound over perfect stroke writing",
-   "A natural summer sequence: initials (聲母) → medials and finals (韻母) → four tones → simple blending (拼讀)",
-   "Arriving already familiar with the symbols lowers first-term stress when the class moves quickly",
-   "Keep it game-based so the child links Bopomofo with play, not pressure"
+   "English and Traditional Chinese 14-day printable calendar",
+   "Three flexible starting lanes instead of one age-based level",
+   "Eight to ten minutes with an explicit stop boundary each day",
+   "No name, date tracker, score, diagnosis, account, upload or saved profile",
+   "Official symbol and stroke references with explicit non-endorsement and evidence limits"
   ],
+  "decision_steps": [
+   "Ask the child's school about its actual first-term plan; do not treat this calendar as an entrance requirement.",
+   "Choose the completely new, recognises some or ready-to-combine lane for today.",
+   "Follow the short choose, model, play, connect and close rhythm without quizzing first.",
+   "Use the optional stretch only when the child remains comfortable, and stop within ten minutes.",
+   "After Day 14, repeat, pause or choose one neutral next step without assigning a level."
+  ],
+  "comparison_rows": [
+   {
+    "need": "Flexible starting point",
+    "check": "Three lanes can change from day to day",
+    "why": "Prior exposure varies and the calendar should not label a child"
+   },
+   {
+    "need": "Bounded practice",
+    "check": "Each day has an eight-to-ten-minute ceiling and permission to stop",
+    "why": "Completing every activity is not the goal"
+   },
+   {
+    "need": "Evidence honesty",
+    "check": "The page states that the 14-day sequence is untested and not a readiness measure",
+    "why": "Official notation sources cannot prove outcomes for an independent family routine"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Free bilingual 14-day Grade 1 Zhuyin summer calendar",
+    "url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-grade1-14-day-summer-calendar.html"
+   },
+   {
+    "title": "Taiwan Ministry of Education Bopomofo Handbook",
+    "url": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/html_ch/index.html"
+   },
+   {
+    "title": "Taiwan Ministry of Education Zhuyin Stroke Order",
+    "url": "https://stroke-order.learningweb.moe.edu.tw/phonetic.jsp?la=0"
+   }
+  ],
+  "where_app_fits": "The full 14-day calendar works without an app. Lumi Bopomofo is an optional activity layer after a family chooses today's lane; it provides guided listening, tracing, tone and blending practice across all 37 symbols without making the app or the calendar a school prerequisite.",
   "faq": [
    {
-    "q": "When is Bopomofo taught in Taiwan, and why prepare over the summer?",
-    "a": "Taiwan elementary school starts in early September, and grade 1 teaches the full 37-symbol Bopomofo system in roughly the first ten weeks before shifting to reading. A relaxed summer warm-up means your child already recognises the symbols when that fast-paced phase begins, which lowers stress for the whole family."
+    "q": "Must my child know Zhuyin before Grade 1?",
+    "a": "This calendar sets no entrance requirement. Ask the child's school about its teaching plan and use the calendar only as an optional familiarity routine."
    },
    {
-    "q": "How much summer practice is enough — does daily drilling help?",
-    "a": "Short and playful beats long and heavy at ages 4–7. Ten to fifteen minutes a few times a week, focused on sound recognition and light tracing, is plenty. Daily drilling and pushing for perfect handwriting can make a child associate Bopomofo with pressure before school even starts."
+    "q": "Will fourteen days teach all 37 symbols?",
+    "a": "No. The calendar samples listening, shape, stroke, tone, blending and reading interactions. Repeat, pause or continue later without assigning a level."
    },
    {
-    "q": "Do I need to know Bopomofo myself to help my child over the summer?",
-    "a": "No. {name} plays accurate audio for every symbol so your child hears correct pronunciation directly, and the dual English and Traditional Chinese interface lets English-dominant parents follow along. Learning a few symbols together usually makes the sessions more fun."
+    "q": "Is Lumi Bopomofo required for the calendar?",
+    "a": "No. Paper, official references, adult modeling and a legally available annotated book are enough. The app is an optional practice activity."
    }
   ]
  },

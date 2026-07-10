@@ -215,6 +215,10 @@ COPY = {
         "related": "Related free resources",
         "related_items": (
             (
+                "Library Zhuyin family storytime kit",
+                f"{SITE}/tools/zhuyin-library-storytime-kit.html",
+            ),
+            (
                 "Five-day heritage-school lesson plan",
                 f"{SITE}/guides/zhuyin-5-day-lesson-plan-heritage-school.html",
             ),
@@ -321,6 +325,10 @@ COPY = {
         "app_cta": "試用 Lumi 注音星球",
         "related": "相關免費資源",
         "related_items": (
+            (
+                "圖書館注音親子故事時間包",
+                f"{SITE}/zh-Hant/tools/zhuyin-library-storytime-kit.html",
+            ),
             (
                 "海外中文學校五日教案",
                 f"{SITE}/zh-Hant/guides/zhuyin-5-day-lesson-plan-heritage-school.html",

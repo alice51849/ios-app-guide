@@ -45,6 +45,8 @@ def main():
     require([PY, os.path.join(HERE, "zhuyin_grandparent_call_kit.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_picture_book_club_kit.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_parent_teacher_handoff_kit.py")], env=env)
+    require([PY, os.path.join(HERE, "zhuyin_library_storytime_kit.py")], env=env)
+    require([PY, os.path.join(HERE, "fix_en_hreflang.py")], env=env)
     if "--no-push" in sys.argv:
         print("\n(--no-push:略過部署/推送)")
         return

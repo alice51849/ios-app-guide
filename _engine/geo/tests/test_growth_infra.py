@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import subprocess
 import sys
 import tempfile
@@ -36,6 +37,7 @@ import indexnow_submit
 import outreach_scorecard
 import zhuyin_grandparent_call_kit
 import zhuyin_heritage_lesson_plan
+import zhuyin_library_storytime_kit
 import zhuyin_parent_teacher_handoff_kit
 import zhuyin_picture_book_club_kit
 import zhuyin_readiness_tool
@@ -106,6 +108,157 @@ class AppStoreAvailabilityTests(unittest.TestCase):
 
 
 class GeneratorTests(unittest.TestCase):
+    def test_library_storytime_is_bilingual_private_and_rights_safe(self):
+        english = zhuyin_library_storytime_kit.render_page("en")
+        traditional = zhuyin_library_storytime_kit.render_page("zh-Hant")
+        for page in (english, traditional):
+            self.assertIn('"WebApplication", "LearningResource"', page)
+            self.assertIn('"@type": "HowTo"', page)
+            self.assertIn('"@type": "FAQPage"', page)
+            self.assertIn("creativecommons.org/licenses/by/4.0/", page)
+            self.assertIn('hreflang="en"', page)
+            self.assertIn('hreflang="zh-Hant"', page)
+            self.assertIn("centaur.reading.ac.uk/80756", page)
+            self.assertIn("id6773017109", page)
+            self.assertNotIn("localStorage", page)
+            self.assertNotIn("XMLHttpRequest", page)
+            self.assertNotIn("fetch(", page)
+            self.assertNotIn("getUserMedia", page)
+            self.assertNotIn("<input", page)
+        self.assertIn("grants no right to perform", english)
+        self.assertIn("did not test group library storytime", english)
+        self.assertIn("no registration, name field, attendance form", english)
+        self.assertIn("不授予朗讀、展示、錄影、直播", traditional)
+        self.assertIn("沒有測試圖書館團體故事時間", traditional)
+        self.assertIn("一次性永久解鎖", traditional)
+
+    def test_library_storytime_builds_both_pages_and_index_card(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            tools = pages / "tools"
+            tools.mkdir()
+            (tools / "index.html").write_text(
+                "<main><section></section></main>", encoding="utf-8"
+            )
+            urls = zhuyin_library_storytime_kit.build(pages)
+            self.assertEqual(2, len(urls))
+            self.assertTrue(
+                (tools / f"{zhuyin_library_storytime_kit.SLUG}.html").exists()
+            )
+            self.assertTrue(
+                (
+                    pages
+                    / "zh-Hant"
+                    / "tools"
+                    / f"{zhuyin_library_storytime_kit.SLUG}.html"
+                ).exists()
+            )
+            index = (tools / "index.html").read_text(encoding="utf-8")
+            self.assertEqual(1, index.count("zhuyin-library-storytime-kit.html"))
+
+    def test_library_storytime_answer_leads_with_free_kit(self):
+        question = "How can a library run a Zhuyin storytime for families?"
+        content = aeo_answers.normalized_content(
+            aeo_answers.default_content(question, "lumibopomofo"),
+            question,
+            "lumibopomofo",
+        )
+        page = aeo_answers.render_page(question, "lumibopomofo", content)
+        self.assertEqual(
+            "https://alice51849.github.io/ios-app-guide/"
+            "tools/zhuyin-library-storytime-kit.html",
+            content["primary_resource_url"],
+        )
+        self.assertIn(
+            "<title>Free Zhuyin Library Storytime Kit for Families</title>",
+            page,
+        )
+        self.assertLess(
+            page.index("Open the free library storytime kit"),
+            page.index("Get Lumi Bopomofo on the App Store"),
+        )
+        self.assertIn("grants no right to perform", page)
+        self.assertIn("did not test group library storytime", page)
+        self.assertIn("d = 0.41", page)
+        self.assertIn("d = 0.26", page)
+        self.assertIn("d = 1.01", page)
+        schemas = [
+            json.loads(block)
+            for block in re.findall(
+                r'<script type="application/ld\+json">\s*(.*?)\s*</script>',
+                page,
+                re.S,
+            )
+        ]
+        software = next(
+            schema for schema in schemas if schema.get("@type") == "SoftwareApplication"
+        )
+        resource = next(
+            schema for schema in schemas if schema.get("@type") == "LearningResource"
+        )
+        self.assertEqual(content["where_app_fits"], software["description"])
+        self.assertEqual(content["primary_resource_url"], resource["url"])
+        self.assertNotEqual(content["meta_description"], software["description"])
+
+    def test_library_storytime_answer_has_complete_resource_first_zh_hant_version(
+        self,
+    ):
+        question = "How can a library run a Zhuyin storytime for families?"
+        content = aeo_answers.normalized_content(
+            aeo_answers.default_content(question, "lumibopomofo"),
+            question,
+            "lumibopomofo",
+        )
+        source = aeo_answers.render_page(question, "lumibopomofo", content)
+        mapping_path = Path(GEO) / "i18n_trans" / "zh-Hant.json"
+        mapping = json.loads(mapping_path.read_text(encoding="utf-8"))
+        strings, _, _ = aeo_answers_i18n.extract_strings(source)
+        missing = [string for string in strings if string not in mapping]
+        self.assertEqual([], missing)
+
+        localized = aeo_answers_i18n.render_localized(
+            source,
+            "zh-Hant",
+            "how-can-a-library-run-a-zhuyin-storytime-for-families",
+            {string: mapping[string] for string in strings},
+        )
+        kit_url = (
+            "https://alice51849.github.io/ios-app-guide/zh-Hant/"
+            "tools/zhuyin-library-storytime-kit.html"
+        )
+        app_url = "https://apps.apple.com/app/id6773017109?ct=iag_ans"
+        main = localized.split("<main>", 1)[1]
+        self.assertIn("<title>免費圖書館注音親子故事時間包</title>", localized)
+        self.assertLess(main.index(kit_url), main.index(app_url))
+        self.assertIn("不授予朗讀、展示、錄影或散布書籍的權利", localized)
+        self.assertIn("沒有測試圖書館團體故事時間", localized)
+        self.assertIn("d = 0.41", localized)
+        self.assertNotIn("對第一次學注音的孩子", localized)
+        schemas = [
+            json.loads(block)
+            for block in re.findall(
+                r'<script type="application/ld\+json">\s*(.*?)\s*</script>',
+                localized,
+                re.S,
+            )
+        ]
+        breadcrumb = next(
+            schema for schema in schemas if schema.get("@type") == "BreadcrumbList"
+        )
+        software = next(
+            schema for schema in schemas if schema.get("@type") == "SoftwareApplication"
+        )
+        resource = next(
+            schema for schema in schemas if schema.get("@type") == "LearningResource"
+        )
+        self.assertEqual(
+            "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/"
+            "how-can-a-library-run-a-zhuyin-storytime-for-families.html",
+            breadcrumb["itemListElement"][-1]["item"],
+        )
+        self.assertEqual(kit_url, resource["url"])
+        self.assertIn("選用的家庭練習層", software["description"])
+
     def test_parent_teacher_handoff_is_bilingual_private_and_non_scored(self):
         english = zhuyin_parent_teacher_handoff_kit.render_page("en")
         traditional = zhuyin_parent_teacher_handoff_kit.render_page("zh-Hant")
@@ -1169,6 +1322,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("gen_llms.py --cached-live", workflow)
         self.assertIn("zhuyin_picture_book_club_kit.py", workflow)
         self.assertIn("zhuyin_parent_teacher_handoff_kit.py", workflow)
+        self.assertIn("zhuyin_library_storytime_kit.py", workflow)
         self.assertGreaterEqual(
             workflow.count("cleanup_localized_assets.py --cached-live"), 3
         )
@@ -1176,6 +1330,8 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("reset --hard", publish)
         self.assertIn("zhuyin_picture_book_club_kit.py", publish)
         self.assertIn("zhuyin_parent_teacher_handoff_kit.py", publish)
+        self.assertIn("zhuyin_library_storytime_kit.py", publish)
+        self.assertIn("fix_en_hreflang.py", publish)
 
     def test_indexnow_retries_and_surfaces_total_failure(self):
         with mock.patch.object(

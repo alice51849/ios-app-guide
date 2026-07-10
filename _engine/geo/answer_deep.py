@@ -2460,6 +2460,94 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
  {
   "app_key": "lumibopomofo",
   "kind": "scenario",
+  "query": "How can a library run a Zhuyin storytime for families?",
+  "match": [
+   "how can a library run a zhuyin storytime for families",
+   "library zhuyin storytime",
+   "bopomofo storytime library",
+   "traditional chinese storytime program",
+   "zhuyin family program library",
+   "bopomofo story hour"
+  ],
+  "page_title": "Free Zhuyin Library Storytime Kit for Families",
+  "meta_description": "Free bilingual 30-minute Zhuyin library storytime kit with rights checks, symbol-hunt cards, family prompts and no child-data collection.",
+  "lead": "Start with a free bilingual, print-ready 30-minute program: confirm the book and planned use under current local rules, read for meaning, offer a three-symbol hunt and send one gentle prompt home.",
+  "detail": "The free library storytime kit provides an original six-part facilitator routine, a blank three-symbol hunt card, a family take-home prompt and an optional no-name aggregate program note. It contains no story and grants no right to perform, display, record, stream, photograph, scan or distribute a book; staff must approve the selected title and every planned use under current local law, licenses, publisher terms and library policy. The page has no registration, child-name field, attendance form, camera, microphone, upload or saved profile. A 2020 systematic review and meta-analysis covered 19 randomized trials and 2,594 children; parent/caregiver book-sharing interventions showed small average effects on expressive language (d = 0.41) and receptive language (d = 0.26), plus a larger effect on caregiver book-sharing competence (d = 1.01). Those studies did not test group library storytime, Zhuyin, a 30-minute format, the symbol hunt or this kit, so they cannot support a promise about language gains, reading scores or attendance. Lumi Bopomofo is optional after the program for families who want structured listening, tracing, tone and blending practice.",
+  "follow_up": "Open or print the free kit first. Ask the library's designated staff member to approve one Traditional Chinese title and the exact in-person, display, recording or transmission plan. Run the six low-pressure phases, keep any aggregate paper note anonymous and use the optional app only after the complete no-app program.",
+  "primary_resource_url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-library-storytime-kit.html",
+  "primary_resource_label": "Open the free library storytime kit",
+  "bullets": [
+   "English and Traditional Chinese 30-minute facilitator routine",
+   "Rights checklist that grants no permission to use, record or distribute a book",
+   "Original blank symbol-hunt and family take-home cards",
+   "No child name, attendance form, account, upload or saved profile",
+   "Explicit limits on what shared-reading research can support"
+  ],
+  "decision_steps": [
+   "Have designated library staff approve the title and each planned use under current local rules, licenses and policy.",
+   "Choose three Zhuyin symbols already visible in the authorized copy and write only those symbols on the blank hunt card.",
+   "Offer listen, point, join, watch or stop as equal participation choices during the six-phase storytime.",
+   "Keep the optional aggregate facilitator note on paper without names, contact details, photos, audio or video.",
+   "Send the original family prompt home and treat Lumi Bopomofo as optional practice, not part of the required program."
+  ],
+  "comparison_rows": [
+   {
+    "need": "Rights-safe planning",
+    "check": "The kit includes no story and grants no performance, display, recording, streaming, scanning or distribution rights",
+    "why": "Book use must be approved separately for the library's location, license, title and delivery method"
+   },
+   {
+    "need": "Child privacy",
+    "check": "No registration, name, attendance form, camera, microphone, upload or saved child profile",
+    "why": "The program can run with an authorized book, printed cards and an anonymous aggregate note"
+   },
+   {
+    "need": "Evidence honesty",
+    "check": "The page separates caregiver book-sharing research from this untested group library format",
+    "why": "A broad meta-analysis cannot prove outcomes for Zhuyin, a 30-minute program or this exact kit"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Free bilingual Zhuyin library storytime kit",
+    "url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-library-storytime-kit.html"
+   },
+   {
+    "title": "Shared picture-book reading systematic review and meta-analysis",
+    "url": "https://centaur.reading.ac.uk/80756/"
+   },
+   {
+    "title": "Taiwan Ministry of Education Bopomofo Handbook",
+    "url": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"
+   },
+   {
+    "title": "OCAC Let's Learn Mandarin Starter (Bopomofo)",
+    "url": "https://taiwancenter.taiwan-world.net/material/basic/content/54"
+   }
+  ],
+  "where_app_fits": "The full library program works without an app. Lumi Bopomofo is an optional take-home practice layer for families who later want listening, tracing, tone or blending activities across all 37 symbols; it is not required to run storytime.",
+  "faq": [
+   {
+    "q": "Does the free kit include or license a picture book?",
+    "a": "No. It includes original program prompts only. The library must separately approve the title and every planned use."
+   },
+   {
+    "q": "Can a library record or livestream the storytime?",
+    "a": "This kit grants no such right. Check the rights holder, current license, local law and library policy before any recording or transmission."
+   },
+   {
+    "q": "Does the anonymous note assess a child?",
+    "a": "No. It is an optional aggregate program note, not attendance tracking, a child profile or a learning assessment."
+   },
+   {
+    "q": "Is Lumi Bopomofo required?",
+    "a": "No. An approved book, facilitator interaction and the original printable cards complete the program without any app."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "scenario",
   "query": "App to reinforce weekend Chinese school Bopomofo lessons at home",
   "match": [
    "weekend chinese school bopomofo",

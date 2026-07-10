@@ -172,10 +172,19 @@ def apply_json_mapping(obj: Any, mapping: dict[str, str], key: str | None = None
 def update_breadcrumb_urls(obj: Any, lang: str, slug: str) -> Any:
     if isinstance(obj, dict):
         if obj.get("@type") == "BreadcrumbList":
-            for item in obj.get("itemListElement", []):
+            items = obj.get("itemListElement", [])
+            for index, item in enumerate(items):
                 if isinstance(item, dict) and isinstance(item.get("item"), str):
-                    item["item"] = localize_url(item["item"], lang)
+                    item["item"] = (
+                        page_url(slug, lang)
+                        if index == len(items) - 1
+                        else localize_url(item["item"], lang)
+                    )
             return obj
+        if obj.get("@type") == "LearningResource" and isinstance(
+            obj.get("url"), str
+        ):
+            obj["url"] = localize_url(obj["url"], lang)
         if obj.get("@type") == "ListItem" and isinstance(obj.get("item"), str):
             obj["item"] = localize_url(obj["item"], lang)
         for v in obj.values():
@@ -330,6 +339,23 @@ def alternates_html(slug: str, current_lang: str | None = None) -> str:
     return "\n".join(lines)
 
 
+def reconcile_english_alternates(slug: str) -> bool:
+    path = ANSWERS / f"{slug}.html"
+    if not path.exists():
+        return False
+    source = path.read_text(encoding="utf-8")
+    updated = re.sub(
+        r'(<link rel="alternate" hreflang="[^"]+" href="[^"]+">\s*)+',
+        alternates_html(slug) + "\n",
+        source,
+        count=1,
+    )
+    if updated == source:
+        return False
+    path.write_text(updated, encoding="utf-8")
+    return True
+
+
 def localize_body_links(source: str, lang: str) -> str:
     def repl(m: re.Match[str]) -> str:
         return f'{m.group(1)}{localize_url(m.group(2), lang)}{m.group(3)}'
@@ -472,6 +498,7 @@ def main() -> int:
                 localized = render_localized(source, lang, slug, mapping)
                 target.parent.mkdir(parents=True, exist_ok=True)
                 target.write_text(localized, encoding="utf-8")
+                reconcile_english_alternates(slug)
                 created += 1
                 print(f"created {lang}/{slug}.html", flush=True)
             except Exception as exc:

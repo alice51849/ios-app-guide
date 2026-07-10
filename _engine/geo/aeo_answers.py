@@ -368,6 +368,8 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
     canonical = f"{SITE}/answers/{slug}.html"
     title = content.get("page_title") or f"{question}: honest iPhone app buying guide"
     meta = content["meta_description"][:220]
+    primary_resource_url = content.get("primary_resource_url", "")
+    primary_resource_label = content.get("primary_resource_label", "")
     faq = content["faq"]
     breadcrumb = {
         "@context": "https://schema.org",
@@ -403,9 +405,24 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
         "applicationCategory": application_category(key),
         "url": url,
         "installUrl": url,
-        "description": meta,
+        "description": content["where_app_fits"],
         "featureList": feature_list(key),
     }
+    resource_schema_html = ""
+    if primary_resource_url:
+        resource = {
+            "@context": "https://schema.org",
+            "@type": "LearningResource",
+            "name": title,
+            "description": meta,
+            "url": primary_resource_url,
+            "isAccessibleForFree": True,
+        }
+        resource_schema_html = (
+            '<script type="application/ld+json">\n'
+            f"{j(resource)}\n"
+            "</script>"
+        )
     org = {"@context": "https://schema.org", "@graph": [
         {"@type": "Organization", "@id": f"{SITE}/#organization", "name": "iOS App Guide", "url": SITE},
         {"@type": "WebSite", "@id": f"{SITE}/#website", "url": SITE, "name": "iOS App Guide", "publisher": {"@id": f"{SITE}/#organization"}},
@@ -435,8 +452,6 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
     )
     guide_link = f"{SITE}/guides/{key}.html"
     alt_link = f"{SITE}/alternatives/{alternative_hub_slug(key)}.html"
-    primary_resource_url = content.get("primary_resource_url", "")
-    primary_resource_label = content.get("primary_resource_label", "")
     if primary_resource_url:
         hero_actions = (
             f'<a class="cta" href="{e(primary_resource_url)}">'
@@ -473,6 +488,7 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
 <script type="application/ld+json">
 {j(howto)}
 </script>
+{resource_schema_html}
 <script type="application/ld+json">
 {j(software)}
 </script><script type="application/ld+json">

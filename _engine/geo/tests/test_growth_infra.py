@@ -27,9 +27,11 @@ import appstore_live
 import build_pages
 import build_pages_i18n
 import cleanup_localized_assets
+import family_travel_mission_cards
 import gen_app_catalog
 import gen_calculator
 import gen_cost_compare
+import gen_feed
 import gen_hubs
 import gen_llms
 import gen_roundups
@@ -110,6 +112,234 @@ class AppStoreAvailabilityTests(unittest.TestCase):
 
 
 class GeneratorTests(unittest.TestCase):
+    def test_atom_feed_discovers_new_free_tools(self):
+        with tempfile.TemporaryDirectory() as directory, mock.patch.object(
+            gen_feed, "PAGES", directory
+        ):
+            for subdir in ("answers", "guides", "alternatives", "tools"):
+                path = Path(directory) / subdir
+                path.mkdir()
+                (path / "index.html").write_text("<html></html>", encoding="utf-8")
+            tool = Path(directory) / "tools" / "private-travel-tool.html"
+            tool.write_text(
+                '<title>Private Travel Tool</title>'
+                '<meta name="description" content="Private printable prompts.">',
+                encoding="utf-8",
+            )
+            items = gen_feed.collect()
+        self.assertTrue(
+            any(url.endswith("/tools/private-travel-tool.html") for _, url, _ in items)
+        )
+
+    def test_family_travel_cards_are_bilingual_private_and_safety_bounded(self):
+        english = family_travel_mission_cards.render_page("en", app_public=False)
+        traditional = family_travel_mission_cards.render_page(
+            "zh-Hant", app_public=False
+        )
+        self.assertEqual(12, len(family_travel_mission_cards.SCENARIOS["en"]))
+        self.assertEqual(
+            12, len(family_travel_mission_cards.SCENARIOS["zh-Hant"])
+        )
+        for page in (english, traditional):
+            self.assertIn('"WebApplication","LearningResource"', page)
+            self.assertIn('"@type":"HowTo"', page)
+            self.assertIn('"@type":"FAQPage"', page)
+            self.assertIn('hreflang="en"', page)
+            self.assertIn('hreflang="zh-Hant"', page)
+            self.assertIn(family_travel_mission_cards.TSA_PHOTOS, page)
+            self.assertIn(family_travel_mission_cards.FAA_CHILD_SAFETY, page)
+            self.assertIn(family_travel_mission_cards.NHTSA_CHILD_PASSENGER, page)
+            self.assertEqual(12, page.count("data-scene="))
+            self.assertEqual(3, page.count("data-style="))
+            self.assertIn('id="print-boundary"', page)
+            self.assertNotIn(f"id{family_travel_mission_cards.APP_ID}", page)
+            self.assertNotIn('"@type":"SoftwareApplication"', page)
+            self.assertNotIn("localStorage", page)
+            self.assertNotIn("XMLHttpRequest", page)
+            self.assertNotIn("fetch(", page)
+            self.assertNotIn("getUserMedia", page)
+            self.assertNotIn("<input", page)
+            self.assertNotIn("<form", page)
+            schemas = [
+                json.loads(block)
+                for block in re.findall(
+                    r'<script type="application/ld\+json">(.*?)</script>',
+                    page,
+                    re.S,
+                )
+            ]
+            howto = next(
+                schema for schema in schemas if schema.get("@type") == "HowTo"
+            )
+            self.assertEqual(5, len(howto["step"]))
+        self.assertIn("The driver never reads, answers or operates", english)
+        self.assertIn("These cards never ask for photos", english)
+        self.assertIn("not ages, levels or ability rankings", english)
+        self.assertIn("never ask a driver to look", english)
+        self.assertIn("non-driving companion", english)
+        self.assertNotIn("Tell your adult", english)
+        self.assertNotIn("With your adult, invent", english)
+        self.assertIn("駕駛絕不閱讀、回答或操作", traditional)
+        self.assertIn("完全沒有拍照任務", traditional)
+        self.assertIn("不是年齡、程度或能力排名", traditional)
+        self.assertIn("絕不要求駕駛查看", traditional)
+        self.assertIn("非駕駛同行者", traditional)
+        for locale_scenarios in family_travel_mission_cards.SCENARIOS.values():
+            for scenario in locale_scenarios:
+                self.assertFalse(
+                    any("photo" in target.lower() for target in scenario["targets"])
+                )
+                self.assertFalse(
+                    any("拍照" in target for target in scenario["targets"])
+                )
+
+    def test_family_travel_cards_gate_app_link_on_verified_availability(self):
+        private_page = family_travel_mission_cards.render_page(
+            "en", app_public=False
+        )
+        public_page = family_travel_mission_cards.render_page("en", app_public=True)
+        self.assertNotIn(f"id{family_travel_mission_cards.APP_ID}", private_page)
+        self.assertIn(f"id{family_travel_mission_cards.APP_ID}", public_page)
+        schemas = [
+            json.loads(block)
+            for block in re.findall(
+                r'<script type="application/ld\+json">(.*?)</script>',
+                public_page,
+                re.S,
+            )
+        ]
+        software = next(
+            schema
+            for schema in schemas
+            if schema.get("@type") == "SoftwareApplication"
+        )
+        self.assertEqual(family_travel_mission_cards.APP_NAME, software["name"])
+        self.assertNotIn("offers", software)
+        self.assertNotIn("price", software)
+        main = public_page.split("<main>", 1)[1]
+        self.assertLess(main.index('id="generator"'), main.index(f"id{family_travel_mission_cards.APP_ID}"))
+
+    def test_family_travel_cards_build_both_pages_and_index_card(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            tools = pages / "tools"
+            tools.mkdir()
+            (tools / "index.html").write_text(
+                '<main><section class="wrap grid"></section></main>',
+                encoding="utf-8",
+            )
+            urls = family_travel_mission_cards.build(pages, app_public=False)
+            self.assertEqual(2, len(urls))
+            self.assertTrue(
+                (tools / f"{family_travel_mission_cards.SLUG}.html").exists()
+            )
+            self.assertTrue(
+                (
+                    pages
+                    / "zh-Hant"
+                    / "tools"
+                    / f"{family_travel_mission_cards.SLUG}.html"
+                ).exists()
+            )
+            index = (tools / "index.html").read_text(encoding="utf-8")
+            self.assertEqual(
+                1,
+                index.count(
+                    f"{family_travel_mission_cards.SLUG}.html"
+                ),
+            )
+
+    def test_family_travel_answer_leads_with_free_private_generator(self):
+        question = (
+            "How can I make printable travel missions for kids without sharing "
+            "their data?"
+        )
+        content = aeo_answers.normalized_content(
+            aeo_answers.default_content(question, "tripplanet"),
+            question,
+            "tripplanet",
+        )
+        page = aeo_answers.render_page(question, "tripplanet", content)
+        self.assertEqual(
+            f"{family_travel_mission_cards.SITE}/tools/"
+            f"{family_travel_mission_cards.SLUG}.html",
+            content["primary_resource_url"],
+        )
+        self.assertIn(
+            "<title>Free Private Printable Travel Mission Card Generator</title>",
+            page,
+        )
+        self.assertLess(
+            page.index("Open the free private travel mission-card generator"),
+            page.index("Get Lumi Trip Planet on the App Store"),
+        )
+        self.assertIn("Airport cards contain no photo tasks", page)
+        self.assertIn("driver never reads, answers or operates", page)
+        hero = page.split('<section class="hero', 1)[1].split("</section>", 1)[0]
+        self.assertNotIn("apps.apple.com", hero)
+
+    def test_family_travel_answer_has_complete_resource_first_zh_hant_version(
+        self,
+    ):
+        question = (
+            "How can I make printable travel missions for kids without sharing "
+            "their data?"
+        )
+        content = aeo_answers.normalized_content(
+            aeo_answers.default_content(question, "tripplanet"),
+            question,
+            "tripplanet",
+        )
+        source = aeo_answers.render_page(question, "tripplanet", content)
+        mapping_path = Path(GEO) / "i18n_trans" / "zh-Hant.json"
+        mapping = json.loads(mapping_path.read_text(encoding="utf-8"))
+        strings, _, _ = aeo_answers_i18n.extract_strings(source)
+        missing = [string for string in strings if string not in mapping]
+        self.assertEqual([], missing)
+
+        slug = (
+            "how-can-i-make-printable-travel-missions-for-kids-without-"
+            "sharing-their-data"
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            localized_tool = (
+                Path(directory)
+                / "zh-Hant"
+                / "tools"
+                / f"{family_travel_mission_cards.SLUG}.html"
+            )
+            localized_tool.parent.mkdir(parents=True)
+            localized_tool.write_text("<html></html>", encoding="utf-8")
+            with mock.patch.object(
+                aeo_answers_i18n, "ROOT", Path(directory)
+            ):
+                localized = aeo_answers_i18n.render_localized(
+                    source,
+                    "zh-Hant",
+                    slug,
+                    {string: mapping[string] for string in strings},
+                )
+        resource_url = (
+            f"{family_travel_mission_cards.SITE}/zh-Hant/tools/"
+            f"{family_travel_mission_cards.SLUG}.html"
+        )
+        app_url = (
+            f"https://apps.apple.com/app/id{family_travel_mission_cards.APP_ID}"
+            "?ct=iag_ans"
+        )
+        main = localized.split("<main>", 1)[1]
+        self.assertIn(
+            "<title>免費私密可列印旅行任務卡產生器</title>",
+            localized,
+        )
+        self.assertLess(main.index(resource_url), main.index(app_url))
+        self.assertIn("機場卡沒有拍照任務", localized)
+        self.assertIn("駕駛在行車時絕不閱讀、回答或操作", localized)
+        self.assertNotIn(
+            "How can I make printable travel missions",
+            localized,
+        )
+
     def test_grade1_guide_is_resource_first_and_makes_no_readiness_claim(self):
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)
@@ -1581,8 +1811,11 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_library_storytime_kit.py", workflow)
         self.assertIn("zhuyin_grade1_summer_calendar.py", workflow)
         self.assertIn("zhuyin_grade1_guide.py", workflow)
+        self.assertIn("family_travel_mission_cards.py", workflow)
         self.assertIn("--refresh-slug \"$SUMMER_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$OBSERVATION_SLUG\"", workflow)
+        self.assertIn("--refresh-slug \"$TRIP_SLUG\"", workflow)
+        self.assertIn('"tripplanet" in live_app_keys', workflow)
         self.assertIn("--trans i18n_trans --force", workflow)
         self.assertGreaterEqual(
             workflow.count("cleanup_localized_assets.py --cached-live"), 3
@@ -1594,6 +1827,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_library_storytime_kit.py", publish)
         self.assertIn("zhuyin_grade1_summer_calendar.py", publish)
         self.assertIn("zhuyin_grade1_guide.py", publish)
+        self.assertIn("family_travel_mission_cards.py", publish)
         self.assertIn("--refresh-slug", publish)
         self.assertIn("aeo_answers_i18n.py", publish)
         self.assertIn("add_related_answers.py", publish)

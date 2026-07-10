@@ -36,9 +36,9 @@ def _desc(path):
 
 
 def collect():
-    """英文內容頁(answers/guides 根層 + alternatives),取最近更新。"""
+    """英文內容頁(answers/guides/alternatives/tools),取最近更新。"""
     items = []
-    for sub in ("answers", "guides", "alternatives"):
+    for sub in ("answers", "guides", "alternatives", "tools"):
         d = os.path.join(PAGES, sub)
         if not os.path.isdir(d):
             continue
@@ -73,7 +73,7 @@ def main():
     feed = (
         '<?xml version="1.0" encoding="utf-8"?>\n'
         '<feed xmlns="http://www.w3.org/2005/Atom">\n'
-        "  <title>iOS App Guide — latest answers &amp; guides</title>\n"
+        "  <title>iOS App Guide — latest answers, guides &amp; tools</title>\n"
         f'  <link href="{SITE}/"/>\n'
         f'  <link rel="self" href="{SITE}/feed.xml"/>\n'
         f"  <id>{SITE}/</id>\n"

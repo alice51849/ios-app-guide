@@ -347,6 +347,7 @@ _TAILORED = {
     ],
     # —— 新 app:可愛清單(免費 / 無廣告,不用 pay-once 框架) ——
     "mochi": [
+        "cute aesthetic to-do list app for iphone without a subscription",
         "cute free to do list app for iphone with no ads",
         "aesthetic checklist app that is satisfying to tick off",
         "minimalist daily task app that is free and needs no account",

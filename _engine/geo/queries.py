@@ -64,6 +64,7 @@ CURATED = {
     "cyca": [
         "best period and cycle tracker app private",
         "simple cycle tracking app no account",
+        "private period tracker that keeps my data on my phone",
     ],
     "lumiletters": [
         "best app to teach kids the alphabet",

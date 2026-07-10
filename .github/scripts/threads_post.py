@@ -23,10 +23,26 @@ def _post(url, data):
     return json.load(urllib.request.urlopen(req, timeout=30))
 
 
+# Threads 兩個排程時段(03/14 UTC):台灣/亞洲早、歐美。各發對應時區在地語言。
+TZ_LANGS = {
+    "asia": ["zh-Hant", "ja", "ko", "zh-Hans", "ms"],                    # 03 UTC 台灣 11:00 / 亞洲
+    "west": ["en", "es", "de", "fr", "pt-BR", "ru", "ar", "pl"],         # 14 UTC 歐美
+}
+
+
+def _zone(hour_utc):
+    return "west" if 9 <= hour_utc < 21 else "asia"  # 09–21 UTC 歐美;其餘(含 03:00)亞洲
+
+
 def pick(pool):
     base = _dt.datetime(2026, 1, 1)
-    hours = int((_dt.datetime.utcnow() - base).total_seconds() // 3600)
-    return pool[hours % len(pool)]
+    now = _dt.datetime.utcnow()
+    hours = int((now - base).total_seconds() // 3600)
+    langs = TZ_LANGS[_zone(now.hour)]
+    subset = [p for p in pool if p.get("lang") in langs]
+    if not subset:
+        subset = pool
+    return subset[hours % len(subset)]
 
 
 def main():

@@ -33,6 +33,7 @@ import gen_llms
 import gen_roundups
 import indexnow_submit
 import outreach_scorecard
+import zhuyin_heritage_lesson_plan
 
 
 class AppStoreAvailabilityTests(unittest.TestCase):
@@ -100,6 +101,44 @@ class AppStoreAvailabilityTests(unittest.TestCase):
 
 
 class GeneratorTests(unittest.TestCase):
+    def test_heritage_lesson_plan_is_bilingual_and_honest(self):
+        english = zhuyin_heritage_lesson_plan.render_page("en")
+        traditional = zhuyin_heritage_lesson_plan.render_page("zh-Hant")
+        for page in (english, traditional):
+            self.assertIn('"@type": "LearningResource"', page)
+            self.assertIn("creativecommons.org/licenses/by/4.0/", page)
+            self.assertIn('hreflang="en"', page)
+            self.assertIn('hreflang="zh-Hant"', page)
+            self.assertIn(
+                "https://language.moe.gov.tw/001/Upload/files/site_content/"
+                "M0001/juyin/index.html",
+                page,
+            )
+        self.assertIn("Ministry of Education", english)
+        self.assertIn("台灣教育部", traditional)
+        self.assertIn("does not claim to teach all 37", english)
+        self.assertIn("不宣稱五天就能學完全部 37 個注音", traditional)
+        self.assertIn("one-time lifetime unlock", english)
+        self.assertNotIn("subscription option", english)
+
+    def test_heritage_lesson_plan_builds_both_pages_and_sitemap(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            (pages / "guides").mkdir()
+            urls = zhuyin_heritage_lesson_plan.build(pages)
+            self.assertEqual(2, len(urls))
+            for locale in ("", "zh-Hant/"):
+                target = (
+                    pages
+                    / locale
+                    / "guides"
+                    / f"{zhuyin_heritage_lesson_plan.SLUG}.html"
+                )
+                self.assertTrue(target.exists())
+            sitemap = (pages / "sitemap_guides.xml").read_text(encoding="utf-8")
+            self.assertIn(urls[0], sitemap)
+            self.assertIn(urls[1], sitemap)
+
     def test_answer_localizer_keeps_alternative_links_canonical(self):
         url = (
             "https://alice51849.github.io/ios-app-guide/"

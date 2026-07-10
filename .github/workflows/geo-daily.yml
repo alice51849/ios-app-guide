@@ -53,6 +53,7 @@ jobs:
           python3 gen_cost_compare.py
           python3 gen_calculator.py
           python3 gen_data_hub.py
+          python3 zhuyin_heritage_lesson_plan.py
           python3 gen_hubs.py
           python3 gen_app_catalog.py
           python3 cleanup_localized_assets.py --cached-live

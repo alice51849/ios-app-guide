@@ -318,5 +318,79 @@
         "a": "No. It builds the symbol-to-sound, tone and blending foundation through play. Children still benefit from shared reading and real conversation."
       }
     ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "heritage_school_lesson_plan",
+    "match": [
+      "five-day zhuyin lesson plan",
+      "5 day bopomofo lesson plan",
+      "heritage chinese school zhuyin lesson",
+      "weekend chinese school lesson plan",
+      "free zhuyin teacher resource"
+    ],
+    "query": "Where can I find a free five-day Zhuyin lesson plan for a heritage Chinese school?",
+    "lead": "Use a print-ready five-day starter mini-unit that teaches a repeatable Zhuyin routine without pretending children can master all 37 symbols in one week.",
+    "detail": "The free bilingual lesson plan at https://alice51849.github.io/ios-app-guide/guides/zhuyin-5-day-lesson-plan-heritage-school.html gives teachers five 30-minute sessions for ages 4–8. It starts with 12 symbols, slow blending and tone awareness, then shows how to repeat the routine with the remaining symbols. It is printable, requires no account and is licensed CC BY 4.0 for adaptation with attribution. The plan links Taiwan Ministry of Education notation and handwriting references plus Overseas Community Affairs Council materials. {name} is optional practice between classes: it adds listening, tracing, tone and blending games, with no ads or account; the free download offers a one-time lifetime unlock rather than a recurring subscription.",
+    "bullets": [
+      "Five complete 30-minute sessions with objectives, timed activities and exit checks",
+      "Honest 12-symbol starter set rather than an unrealistic five-day mastery claim",
+      "English and Traditional Chinese versions, formatted for printing",
+      "CC BY 4.0 reuse plus direct Taiwan Ministry of Education and OCAC references",
+      "Works without an app; optional no-ads practice through Lumi Bopomofo"
+    ],
+    "decision_steps": [
+      "Day 1: connect ㄅ ㄆ ㄇ ㄈ and ㄚ to sounds through modeling, cards and tracing.",
+      "Day 2: add ㄉ ㄊ ㄋ ㄌ while reviewing the first group.",
+      "Day 3: add ㄧ ㄨ ㄩ and begin slow symbol blending.",
+      "Day 4: hear first through fourth tones and the neutral tone with ㄇㄚ.",
+      "Day 5: decode a small real-word set, review and choose the next symbols."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Ready-to-use short unit",
+        "check": "Timed activities, materials, objectives and exit checks",
+        "why": "A teacher can print and teach instead of assembling disconnected worksheets"
+      },
+      {
+        "need": "Accurate expectations",
+        "check": "A starter set with a continuation method, not a five-day fluency promise",
+        "why": "Young learners need repeated practice across multiple weeks"
+      },
+      {
+        "need": "Reusable overseas resource",
+        "check": "English and Traditional Chinese pages under CC BY 4.0",
+        "why": "Heritage schools can adapt the plan and share it with attribution"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is an optional practice layer after teacher modeling, card work and shared reading. It reinforces all 37 symbols, tones and blending through short games; the lesson plan remains fully usable without any app.",
+    "sources": [
+      {
+        "title": "Free bilingual five-day Zhuyin lesson plan",
+        "url": "https://alice51849.github.io/ios-app-guide/guides/zhuyin-5-day-lesson-plan-heritage-school.html"
+      },
+      {
+        "title": "Taiwan Ministry of Education Bopomofo Handbook",
+        "url": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"
+      },
+      {
+        "title": "Overseas Community Affairs Council e-book catalog",
+        "url": "https://www.ocac.gov.tw/OCAC/Pages/List.aspx?nodeid=1438"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Will this teach all 37 Zhuyin symbols in five days?",
+        "a": "No. It deliberately teaches a 12-symbol starter set and a routine teachers can repeat over following weeks."
+      },
+      {
+        "q": "Can a heritage school adapt and share the lesson?",
+        "a": "Yes. The original lesson is CC BY 4.0, so it can be printed, adapted and shared with attribution to iOS App Guide."
+      },
+      {
+        "q": "Does the class need Lumi Bopomofo?",
+        "a": "No. Cards, paper, teacher modeling and games are enough. Lumi Bopomofo is an optional no-ads practice layer between lessons."
+      }
+    ]
   }
 ]

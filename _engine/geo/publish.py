@@ -40,6 +40,7 @@ def main():
     env = dict(os.environ, GEO_SITE=SITE)
     # 1) 重建
     require([PY, os.path.join(HERE, "build_pages_i18n.py")], env=env)
+    require([PY, os.path.join(HERE, "zhuyin_heritage_lesson_plan.py")], env=env)
     if "--no-push" in sys.argv:
         print("\n(--no-push:略過部署/推送)")
         return

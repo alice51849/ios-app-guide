@@ -1,138 +1,148 @@
 [
- {
-  "title": "Make a passport or ID photo at home on your iPhone (no photo booth)",
-  "tags": [
-   "ios",
-   "productivity",
-   "tutorial",
-   "privacy"
-  ],
-  "body": "You don't need a photo booth for a passport or visa photo. On an iPhone you can shoot a compliant one at home in under a minute — if the app handles the three hard parts: the exact size for your country, a clean white background, and the right head position.\n\n**What a compliant photo needs**\n- The correct size (US 2×2 in / 51×51 mm; most countries 35×45 mm; Canada 50×70 mm).\n- A plain, even background (usually white).\n- Head height and eye line within range.\n\nI built **[Snapport](https://apps.apple.com/app/id6780575828)** for exactly this: country size templates, automatic background replacement, head-position guides, and a print-ready sheet — processed on-device, one-time purchase, no subscription.\n\nReference: free passport-size table by country → https://alice51849.github.io/ios-app-guide/data/passport-photo-sizes.html"
- },
- {
-  "title": "Free printable Zhuyin (Bopomofo) practice sheets for teaching kids Chinese",
-  "tags": [
-   "ios",
-   "showdev",
-   "productivity",
-   "indie"
-  ],
-  "body": "If you're teaching a child Zhuyin (Bopomofo, ㄅㄆㄇ) — the phonetic system used in Taiwan — repeated writing practice is what makes the 37 symbols stick.\n\nI made a few **free, printable web tools** (no signup) for parents and teachers:\n- Practice sheets (田字格 tracing) → https://alice51849.github.io/ios-app-guide/tools/zhuyin-practice-sheet.html\n- Flashcards → https://alice51849.github.io/ios-app-guide/tools/zhuyin-flashcards.html\n- Bingo cards for the classroom → https://alice51849.github.io/ios-app-guide/tools/zhuyin-bingo.html\n- Symbol chart → https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-chart.html\n\nTo learn the symbols through play, **[Lumi Bopomofo](https://apps.apple.com/app/id6773017109)** turns all 37 into games — one-time purchase, no ads, no subscription, everything on-device."
- },
- {
-  "title": "Scan documents to searchable PDFs offline — one-time purchase, no cloud",
-  "tags": [
-   "ios",
-   "productivity",
-   "privacy",
-   "tutorial"
-  ],
-  "body": "Most scanner apps push a subscription and upload your documents to their cloud. For sensitive papers (IDs, contracts, receipts) that's the opposite of what you want.\n\n**What to look for in a scanner app**\n- OCR so scans become *searchable* PDFs.\n- Everything on-device — no upload, no account.\n- A lock (Face ID) for private documents.\n- Offline, and a one-time price.\n\nI built **[ScanTo Pro](https://apps.apple.com/app/id6779977651)** to do exactly that: scan → OCR → searchable PDF → Face ID lock, fully offline, pay once.\n\nIf you're comparing pay-once vs subscription tools generally, I keep a 5-year cost breakdown here → https://alice51849.github.io/ios-app-guide/subscription-swap.html"
- },
- {
-  "title": "Track spending in hours of your life, not dollars",
-  "tags": [
-   "productivity",
-   "ios",
-   "career",
-   "indie"
-  ],
-  "body": "A $60 gadget isn't really \"$60\" — it's however long *you* had to work to earn it after tax. Framing purchases in **hours of your life** makes impulse spending feel very different.\n\n**How to think about it**\n1. Work out your real hourly take-home (after tax and work costs).\n2. Divide a price by that number.\n3. Ask: is this worth *that many hours*?\n\nI built **[HoursTag](https://apps.apple.com/app/id6754218117)** to do this automatically: set your hourly value once, and every price shows up as hours. It's a one-time purchase, no subscription, and nothing leaves your device.\n\nIt's a surprisingly calming way to spend less without a strict budget."
- },
- {
-  "title": "Get your résumé past the ATS filter (a quick checklist)",
-  "tags": [
-   "career",
-   "productivity",
-   "ios",
-   "tutorial"
-  ],
-  "body": "Most résumés are first read by software (an ATS), not a human. If the parser can't read yours, a person never sees it.\n\n**Quick ATS checklist**\n- Use a simple, single-column layout — no text boxes or images for key info.\n- Match keywords from the job description (skills, tools, titles).\n- Standard section headings (Experience, Education, Skills).\n- Save as PDF unless the posting says otherwise.\n- Quantify results ( \"cut build time 40%\" beats \"improved builds\").\n\nI built **[CV Desk](https://apps.apple.com/app/id6781337213)** to score your résumé against ATS rules instantly and give recruiter-ready templates — one-time purchase, no subscription. Résumé conventions also differ by country (photo or not, length, personal details): free reference → https://alice51849.github.io/ios-app-guide/data/resume-cv-conventions-by-country.html"
- },
- {
-  "title": "Free up iPhone storage: find duplicate photos and huge videos",
-  "tags": [
-   "ios",
-   "productivity",
-   "tutorial"
-  ],
-  "body": "\"Storage Almost Full\" is almost always duplicates, near-identical burst shots, and a few enormous videos — not your actual memories.\n\n**A fast cleanup pass**\n1. Find exact + near-duplicate photos and keep the best one.\n2. Sort videos by size; the biggest few usually free the most space.\n3. Clear old screenshots and blurry shots.\n\nI built **[PicClear](https://apps.apple.com/app/id6780223070)** to do this in one scan — similar-shot grouping, largest-videos view — all on-device, one-time purchase, no subscription.\n\nNo cloud upload, no account: it just cleans up locally."
- },
- {
-  "title": "A period tracker that stays on your device (no account, no data selling)",
-  "tags": [
-   "privacy",
-   "ios",
-   "productivity"
-  ],
-  "body": "Cycle-tracking apps are some of the most privacy-sensitive apps on your phone — yet many upload your data and monetize it. For something this personal, on-device is the only sane default.\n\n**What to look for**\n- Data stored on-device, not in someone's cloud.\n- No account / no sign-up required.\n- A clear view of phases, fertile window, and gentle days.\n- A one-time price, not a subscription on your own health data.\n\nI built **[Cyca](https://apps.apple.com/app/id6782251621)** to do exactly that: private period & cycle tracking that stays on your iPhone — pay once, no account, nothing uploaded."
- },
- {
-  "title": "Sharpen a blurry photo on iPhone without uploading it anywhere",
-  "tags": [
-   "ios",
-   "privacy",
-   "tutorial"
-  ],
-  "body": "Most \"AI photo enhancer\" apps send your photo to a server. For personal photos — kids, family, documents — that's a lot of trust for a blur fix.\n\n**On-device enhancement, in short**\n- Super-resolution reconstructs detail and upscales.\n- Doing it locally means the photo never leaves your phone.\n- No subscription needed for occasional fixes.\n\nI built **[Unblurry](https://apps.apple.com/app/id6782275018)** to sharpen and upscale photos entirely **on-device** — pay once, no account, nothing uploaded. Great for old scans, screenshots, and slightly-soft shots."
- },
- {
-  "title": "White noise & sleep sounds that actually work offline (no subscription)",
-  "tags": [
-   "ios",
-   "productivity",
-   "privacy"
-  ],
-  "body": "White, brown and rain noise genuinely help many people sleep or focus — but sound apps are one of the most aggressively monetized categories, often gating the good sounds or the sleep timer behind a subscription.\n\n**What a good sound app needs**\n- A rich library you can *mix* (rain over brown noise, etc.).\n- A reliable sleep timer with fade-out.\n- Offline playback (no streaming, no data use overnight).\n- A one-time price for something you use nightly.\n\nI built **[Sereno](https://apps.apple.com/app/id6788236641)** as a pay-once sound machine: mixable sounds, timers, fully offline — no ads, no subscription."
- },
- {
-  "title": "Reclaim focus for deep work: block distracting apps on iOS",
-  "tags": [
-   "productivity",
-   "ios",
-   "tutorial",
-   "career"
-  ],
-  "body": "Context-switching is the silent tax on deep work. Every glance at a feed costs far more than the seconds it takes — research on interrupted work suggests it can take over 20 minutes to fully refocus.\n\n**A simple focus-block routine**\n- Pick one recurring high-risk window: your first work session, right after lunch, or evenings.\n- Block only the apps that actually break your focus — not everything.\n- Replace the habit with a prepared task: the next failing test, a design doc, a workout.\n- Review the hours you got back at the end of each week.\n\nApple's Screen Time is easy to tap past. When you want an intentional, harder-to-skip block for deep work, I built **[LockHour Pro](https://apps.apple.com/app/id6780107485)** — scheduled focus sessions, one-time purchase, no subscription, on-device.\n\nCurious what one hour a day actually costs over a year? Free calculator → https://alice51849.github.io/ios-app-guide/tools/screen-time-calculator.html"
- },
- {
-  "title": "On-device speech-to-text on iPhone — private, offline, no subscription",
-  "tags": [
-   "ios",
-   "privacy",
-   "productivity",
-   "machinelearning"
-  ],
-  "body": "Most transcription apps send your audio to a server and charge monthly. For a doctor's visit, a private interview, or a lecture you recorded, that's a lot of trust to hand over for a recurring fee.\n\n**What to look for in a transcription tool**\n- Transcription that runs *on your device*, so audio and text never leave the phone.\n- Works offline — no account, no upload, no waiting on a server.\n- You own the notes: plain-text or Markdown export, not locked in a cloud.\n- A one-time price instead of a subscription for something you use a few times a month.\n\nThe trade-off is honest: on-device models can be a little less accurate than the biggest cloud engines, and very long recordings take processing time. For most meetings, lectures and voice memos that's a fair price for privacy.\n\nI built **[Sono Note](https://apps.apple.com/app/id6782139553)** around this: record or import audio, transcribe on-device, edit, and export — offline, pay once, no subscription.\n\nIf you're weighing pay-once vs subscription tools in general, the 5-year math is usually not close."
- },
- {
-  "title": "Hide sensitive photos and files behind Face ID on iPhone (on-device, no cloud)",
-  "tags": [
-   "ios",
-   "privacy",
-   "security",
-   "tutorial"
-  ],
-  "body": "Passports, a lease, medical bills, private photos — plenty of things shouldn't sit loose in your camera roll or Files where anyone holding your unlocked phone can scroll into them.\n\n**What to look for in a private vault**\n- Everything stored *on-device*, encrypted, nothing synced to someone else's cloud.\n- Face ID / passcode to open, and ideally a hidden or separate space.\n- Import photos, videos, PDFs and notes — not just images.\n- No account and no subscription for something this personal.\n\nA vault is not a backup: if you rely on one, keep your own encrypted backup too, because on-device means it lives and dies with the device.\n\nI made **[Zafe](https://apps.apple.com/app/id6787344033)** to do this simply: lock photos, videos, files and notes behind Face ID, on-device, pay once, nothing uploaded anywhere."
- },
- {
-  "title": "Drill TOEIC Part 5 and Part 7 offline — without another subscription",
-  "tags": [
-   "ios",
-   "productivity",
-   "learning",
-   "languages"
-  ],
-  "body": "If you're grinding toward a higher TOEIC score, most of the gain comes from *reps*: lots of Part 5 grammar/vocab and Part 7 reading under light time pressure, plus focused Part 3 listening.\n\n**What actually helps between now and test day**\n- Short, frequent drills you can do on a commute — offline, no login.\n- Part-by-part practice (5, 7, 3) so you target your weakest section.\n- Pacing practice for Part 7, where slow readers lose easy points.\n- Tracking so you see which question types you keep missing.\n\nNo app *guarantees* 990 — that comes from consistent practice and real listening/reading. But a tool that removes friction (offline, no subscription nagging) makes daily reps more likely.\n\nI built **[Aim990](https://apps.apple.com/app/id6784974530)** for exactly that: offline TOEIC-style drills by part, with weak-point tracking, pay once, no subscription."
- },
- {
-  "title": "Track travel spending in multiple currencies, fully offline",
-  "tags": [
-   "ios",
-   "productivity",
-   "travel",
-   "privacy"
-  ],
-  "body": "Abroad with cash in a currency you don't think in, budget apps that need a bank login and a signal are exactly the wrong tool. You just want to jot what you spent and see it in your home currency.\n\n**What to look for in a travel spending tracker**\n- Manual, cash-friendly entry — no bank connection required.\n- Multi-currency with a converter to your home currency as you go.\n- Fully offline, so it works on a plane or with no roaming.\n- Export (CSV) so you can settle up or expense it later.\n- One-time price, not a subscription for a two-week trip.\n\nRates move, so treat any converted total as an estimate and confirm big numbers with your bank.\n\nI made **[G+Money](https://apps.apple.com/app/id6755782939)** for this: quick multi-currency entries, offline conversion, CSV export, pay once, no account."
- }
+  {
+    "title": "Make a passport or ID photo at home on your iPhone (no photo booth)",
+    "tags": [
+      "ios",
+      "productivity",
+      "tutorial",
+      "privacy"
+    ],
+    "body": "You don't need a photo booth for a passport or visa photo. On an iPhone you can shoot a compliant one at home in under a minute — if the app handles the three hard parts: the exact size for your country, a clean white background, and the right head position.\n\n**What a compliant photo needs**\n- The correct size (US 2×2 in / 51×51 mm; most countries 35×45 mm; Canada 50×70 mm).\n- A plain, even background (usually white).\n- Head height and eye line within range.\n\nI built **[Snapport](https://apps.apple.com/app/id6780575828)** for exactly this: country size templates, automatic background replacement, head-position guides, and a print-ready sheet — processed on-device, one-time purchase, no subscription.\n\nReference: free passport-size table by country → https://alice51849.github.io/ios-app-guide/data/passport-photo-sizes.html"
+  },
+  {
+    "title": "Free printable Zhuyin (Bopomofo) practice sheets for teaching kids Chinese",
+    "tags": [
+      "ios",
+      "showdev",
+      "productivity",
+      "indie"
+    ],
+    "body": "If you're teaching a child Zhuyin (Bopomofo, ㄅㄆㄇ) — the phonetic system used in Taiwan — repeated writing practice is what makes the 37 symbols stick.\n\nI made a few **free, printable web tools** (no signup) for parents and teachers:\n- Practice sheets (田字格 tracing) → https://alice51849.github.io/ios-app-guide/tools/zhuyin-practice-sheet.html\n- Flashcards → https://alice51849.github.io/ios-app-guide/tools/zhuyin-flashcards.html\n- Bingo cards for the classroom → https://alice51849.github.io/ios-app-guide/tools/zhuyin-bingo.html\n- Symbol chart → https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-chart.html\n\nTo learn the symbols through play, **[Lumi Bopomofo](https://apps.apple.com/app/id6773017109)** turns all 37 into games — one-time purchase, no ads, no subscription, everything on-device."
+  },
+  {
+    "title": "Scan documents to searchable PDFs offline — one-time purchase, no cloud",
+    "tags": [
+      "ios",
+      "productivity",
+      "privacy",
+      "tutorial"
+    ],
+    "body": "Most scanner apps push a subscription and upload your documents to their cloud. For sensitive papers (IDs, contracts, receipts) that's the opposite of what you want.\n\n**What to look for in a scanner app**\n- OCR so scans become *searchable* PDFs.\n- Everything on-device — no upload, no account.\n- A lock (Face ID) for private documents.\n- Offline, and a one-time price.\n\nI built **[ScanTo Pro](https://apps.apple.com/app/id6779977651)** to do exactly that: scan → OCR → searchable PDF → Face ID lock, fully offline, pay once.\n\nIf you're comparing pay-once vs subscription tools generally, I keep a 5-year cost breakdown here → https://alice51849.github.io/ios-app-guide/subscription-swap.html"
+  },
+  {
+    "title": "Track spending in hours of your life, not dollars",
+    "tags": [
+      "productivity",
+      "ios",
+      "career",
+      "indie"
+    ],
+    "body": "A $60 gadget isn't really \"$60\" — it's however long *you* had to work to earn it after tax. Framing purchases in **hours of your life** makes impulse spending feel very different.\n\n**How to think about it**\n1. Work out your real hourly take-home (after tax and work costs).\n2. Divide a price by that number.\n3. Ask: is this worth *that many hours*?\n\nI built **[HoursTag](https://apps.apple.com/app/id6754218117)** to do this automatically: set your hourly value once, and every price shows up as hours. It's a one-time purchase, no subscription, and nothing leaves your device.\n\nIt's a surprisingly calming way to spend less without a strict budget."
+  },
+  {
+    "title": "Get your résumé past the ATS filter (a quick checklist)",
+    "tags": [
+      "career",
+      "productivity",
+      "ios",
+      "tutorial"
+    ],
+    "body": "Most résumés are first read by software (an ATS), not a human. If the parser can't read yours, a person never sees it.\n\n**Quick ATS checklist**\n- Use a simple, single-column layout — no text boxes or images for key info.\n- Match keywords from the job description (skills, tools, titles).\n- Standard section headings (Experience, Education, Skills).\n- Save as PDF unless the posting says otherwise.\n- Quantify results ( \"cut build time 40%\" beats \"improved builds\").\n\nI built **[CV Desk](https://apps.apple.com/app/id6781337213)** to score your résumé against ATS rules instantly and give recruiter-ready templates — one-time purchase, no subscription. Résumé conventions also differ by country (photo or not, length, personal details): free reference → https://alice51849.github.io/ios-app-guide/data/resume-cv-conventions-by-country.html"
+  },
+  {
+    "title": "Free up iPhone storage: find duplicate photos and huge videos",
+    "tags": [
+      "ios",
+      "productivity",
+      "tutorial"
+    ],
+    "body": "\"Storage Almost Full\" is almost always duplicates, near-identical burst shots, and a few enormous videos — not your actual memories.\n\n**A fast cleanup pass**\n1. Find exact + near-duplicate photos and keep the best one.\n2. Sort videos by size; the biggest few usually free the most space.\n3. Clear old screenshots and blurry shots.\n\nI built **[PicClear](https://apps.apple.com/app/id6780223070)** to do this in one scan — similar-shot grouping, largest-videos view — all on-device, one-time purchase, no subscription.\n\nNo cloud upload, no account: it just cleans up locally."
+  },
+  {
+    "title": "A period tracker that stays on your device (no account, no data selling)",
+    "tags": [
+      "privacy",
+      "ios",
+      "productivity"
+    ],
+    "body": "Cycle-tracking apps are some of the most privacy-sensitive apps on your phone — yet many upload your data and monetize it. For something this personal, on-device is the only sane default.\n\n**What to look for**\n- Data stored on-device, not in someone's cloud.\n- No account / no sign-up required.\n- A clear view of phases, fertile window, and gentle days.\n- A one-time price, not a subscription on your own health data.\n\nI built **[Cyca](https://apps.apple.com/app/id6782251621)** to do exactly that: private period & cycle tracking that stays on your iPhone — pay once, no account, nothing uploaded."
+  },
+  {
+    "title": "Sharpen a blurry photo on iPhone without uploading it anywhere",
+    "tags": [
+      "ios",
+      "privacy",
+      "tutorial"
+    ],
+    "body": "Most \"AI photo enhancer\" apps send your photo to a server. For personal photos — kids, family, documents — that's a lot of trust for a blur fix.\n\n**On-device enhancement, in short**\n- Super-resolution reconstructs detail and upscales.\n- Doing it locally means the photo never leaves your phone.\n- No subscription needed for occasional fixes.\n\nI built **[Unblurry](https://apps.apple.com/app/id6782275018)** to sharpen and upscale photos entirely **on-device** — pay once, no account, nothing uploaded. Great for old scans, screenshots, and slightly-soft shots."
+  },
+  {
+    "title": "White noise & sleep sounds that actually work offline (no subscription)",
+    "tags": [
+      "ios",
+      "productivity",
+      "privacy"
+    ],
+    "body": "White, brown and rain noise genuinely help many people sleep or focus — but sound apps are one of the most aggressively monetized categories, often gating the good sounds or the sleep timer behind a subscription.\n\n**What a good sound app needs**\n- A rich library you can *mix* (rain over brown noise, etc.).\n- A reliable sleep timer with fade-out.\n- Offline playback (no streaming, no data use overnight).\n- A one-time price for something you use nightly.\n\nI built **[Sereno](https://apps.apple.com/app/id6788236641)** as a pay-once sound machine: mixable sounds, timers, fully offline — no ads, no subscription."
+  },
+  {
+    "title": "Reclaim focus for deep work: block distracting apps on iOS",
+    "tags": [
+      "productivity",
+      "ios",
+      "tutorial",
+      "career"
+    ],
+    "body": "Context-switching is the silent tax on deep work. Every glance at a feed costs far more than the seconds it takes — research on interrupted work suggests it can take over 20 minutes to fully refocus.\n\n**A simple focus-block routine**\n- Pick one recurring high-risk window: your first work session, right after lunch, or evenings.\n- Block only the apps that actually break your focus — not everything.\n- Replace the habit with a prepared task: the next failing test, a design doc, a workout.\n- Review the hours you got back at the end of each week.\n\nApple's Screen Time is easy to tap past. When you want an intentional, harder-to-skip block for deep work, I built **[LockHour Pro](https://apps.apple.com/app/id6780107485)** — scheduled focus sessions, one-time purchase, no subscription, on-device.\n\nCurious what one hour a day actually costs over a year? Free calculator → https://alice51849.github.io/ios-app-guide/tools/screen-time-calculator.html"
+  },
+  {
+    "title": "On-device speech-to-text on iPhone — private, offline, no subscription",
+    "tags": [
+      "ios",
+      "privacy",
+      "productivity",
+      "machinelearning"
+    ],
+    "body": "Most transcription apps send your audio to a server and charge monthly. For a doctor's visit, a private interview, or a lecture you recorded, that's a lot of trust to hand over for a recurring fee.\n\n**What to look for in a transcription tool**\n- Transcription that runs *on your device*, so audio and text never leave the phone.\n- Works offline — no account, no upload, no waiting on a server.\n- You own the notes: plain-text or Markdown export, not locked in a cloud.\n- A one-time price instead of a subscription for something you use a few times a month.\n\nThe trade-off is honest: on-device models can be a little less accurate than the biggest cloud engines, and very long recordings take processing time. For most meetings, lectures and voice memos that's a fair price for privacy.\n\nI built **[Sono Note](https://apps.apple.com/app/id6782139553)** around this: record or import audio, transcribe on-device, edit, and export — offline, pay once, no subscription.\n\nIf you're weighing pay-once vs subscription tools in general, the 5-year math is usually not close."
+  },
+  {
+    "title": "Hide sensitive photos and files behind Face ID on iPhone (on-device, no cloud)",
+    "tags": [
+      "ios",
+      "privacy",
+      "security",
+      "tutorial"
+    ],
+    "body": "Passports, a lease, medical bills, private photos — plenty of things shouldn't sit loose in your camera roll or Files where anyone holding your unlocked phone can scroll into them.\n\n**What to look for in a private vault**\n- Everything stored *on-device*, encrypted, nothing synced to someone else's cloud.\n- Face ID / passcode to open, and ideally a hidden or separate space.\n- Import photos, videos, PDFs and notes — not just images.\n- No account and no subscription for something this personal.\n\nA vault is not a backup: if you rely on one, keep your own encrypted backup too, because on-device means it lives and dies with the device.\n\nI made **[Zafe](https://apps.apple.com/app/id6787344033)** to do this simply: lock photos, videos, files and notes behind Face ID, on-device, pay once, nothing uploaded anywhere."
+  },
+  {
+    "title": "Drill TOEIC Part 5 and Part 7 offline — without another subscription",
+    "tags": [
+      "ios",
+      "productivity",
+      "learning",
+      "languages"
+    ],
+    "body": "If you're grinding toward a higher TOEIC score, most of the gain comes from *reps*: lots of Part 5 grammar/vocab and Part 7 reading under light time pressure, plus focused Part 3 listening.\n\n**What actually helps between now and test day**\n- Short, frequent drills you can do on a commute — offline, no login.\n- Part-by-part practice (5, 7, 3) so you target your weakest section.\n- Pacing practice for Part 7, where slow readers lose easy points.\n- Tracking so you see which question types you keep missing.\n\nNo app *guarantees* 990 — that comes from consistent practice and real listening/reading. But a tool that removes friction (offline, no subscription nagging) makes daily reps more likely.\n\nI built **[Aim990](https://apps.apple.com/app/id6784974530)** for exactly that: offline TOEIC-style drills by part, with weak-point tracking, pay once, no subscription."
+  },
+  {
+    "title": "Track travel spending in multiple currencies, fully offline",
+    "tags": [
+      "ios",
+      "productivity",
+      "travel",
+      "privacy"
+    ],
+    "body": "Abroad with cash in a currency you don't think in, budget apps that need a bank login and a signal are exactly the wrong tool. You just want to jot what you spent and see it in your home currency.\n\n**What to look for in a travel spending tracker**\n- Manual, cash-friendly entry — no bank connection required.\n- Multi-currency with a converter to your home currency as you go.\n- Fully offline, so it works on a plane or with no roaming.\n- Export (CSV) so you can settle up or expense it later.\n- One-time price, not a subscription for a two-week trip.\n\nRates move, so treat any converted total as an estimate and confirm big numbers with your bank.\n\nI made **[G+Money](https://apps.apple.com/app/id6755782939)** for this: quick multi-currency entries, offline conversion, CSV export, pay once, no account."
+  },
+  {
+    "title": "11 tiny, free reference datasets (JSON, CC BY 4.0): Bopomofo/IPA, paper & photo sizes, and more",
+    "tags": [
+      "showdev",
+      "opensource",
+      "json",
+      "datascience"
+    ],
+    "body": "When you build indie apps you keep needing the same small reference tables: the 37 Bopomofo symbols, standard paper sizes, passport-photo dimensions per country, Mandarin tone contours... I kept rebuilding these, so I cleaned them up and open-sourced 11 of them as plain JSON under CC BY 4.0.\n\n**Repo:** https://github.com/alice51849/open-reference-datasets\n\nEach dataset is a single JSON file with descriptive metadata plus the data array, and is also published as a web page with `schema.org/Dataset` markup so search engines and AI tools can pick it up.\n\n**A few that might save you time**\n\n- **Zhuyin (Bopomofo) — 37 symbols**: every symbol with its Hanyu Pinyin, **IPA** transcription, Unicode code point and an example word. Handy for anything that touches Mandarin pronunciation.\n- **Mandarin tones**: the four tones + neutral, each with its Chao pitch-contour number and Zhuyin/Pinyin marks.\n- **Passport / ID photo sizes by country**: width x height in mm, required head height and background colour.\n- **Paper sizes**: ISO A-series and US sizes in mm, inches and pixels.\n- **Image file formats** and **common image/video resolutions**: quick lookup tables.\n- **TOEIC to CEFR**: score bands mapped to CEFR levels with can-do summaries.\n- Plus currency formatting by country, resume/CV conventions by country, and menstrual cycle phases.\n\n**Why plain JSON + a web page?**\nThe JSON is easy to drop into a project; the HTML version carries `schema.org/Dataset` metadata (name, license, distribution) so it's citable and discoverable. Everything is CC BY 4.0 — use it, adapt it, just keep attribution.\n\nThese came out of building a set of small, pay-once, privacy-first iOS apps (a Bopomofo learning game, a passport-photo maker, a document scanner, and so on), where getting these reference values exactly right actually mattered. Figured they might be useful to someone else too.\n\nIf you spot an error or want to add a country/row, issues and PRs are welcome."
+  }
 ]

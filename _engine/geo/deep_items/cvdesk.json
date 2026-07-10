@@ -1,0 +1,38 @@
+[
+  {
+    "app_key": "cvdesk",
+    "kind": "scenario",
+    "match": [
+      "ats-friendly resume",
+      "ats resume",
+      "ats safe resume",
+      "resume builder without uploading",
+      "resume app no subscription",
+      "make a resume on iphone offline"
+    ],
+    "query": "how to make an ats-friendly resume on iphone without a subscription",
+    "lead": "Getting past the ATS — the software that scans your resume before a human sees it — is where most applications quietly fail. The catch: most resume builders that promise ATS-safe output want a subscription and upload your personal data to their servers.",
+    "detail": "An ATS (applicant tracking system) parses your resume into fields, so layout choices matter: tables, text boxes, columns, images and fancy headers can break parsing and get you filtered out. You can build an ATS-safe resume by hand in Pages or Google Docs if you know the rules, but it is easy to trip on them. A dedicated builder helps — as long as it does not lock output behind a subscription or upload your contact details, work history and job targets to a server. {name} is built for this: it produces ATS-safe resumes with standard sections and clean formatting entirely on your iPhone — no account, no upload, no subscription — and exports to PDF and Word. Your personal data, which a resume is full of, never leaves the device.",
+    "bullets": [
+      "ATS parsing breaks on tables, columns, text boxes and images — a safe builder avoids them",
+      "Standard section titles and clean formatting help your resume actually get read",
+      "A resume is full of personal data — on-device building keeps it off any server",
+      "No account, no upload, no subscription — unlike most resume builders",
+      "{name} exports ATS-safe PDF and Word on your iPhone"
+    ],
+    "faq": [
+      {
+        "q": "What makes a resume ATS-friendly?",
+        "a": "Simple, parseable structure: standard section titles (Work Experience, Education, Skills), no tables, columns, text boxes or images, standard fonts, and a clean PDF or Word export. {name} builds resumes with this structure by default so they parse cleanly."
+      },
+      {
+        "q": "Do resume builder apps upload my personal data?",
+        "a": "Many do — they need an account and store your resume on their servers, which is a privacy concern given how much personal data a resume holds. {name} works entirely on your iPhone with no account and no upload."
+      },
+      {
+        "q": "Do I need a subscription for a good resume app?",
+        "a": "No. {name} is a one-time purchase with no subscription, builds ATS-safe resumes on-device, and exports to PDF and Word — so you are not paying monthly just to download your own resume."
+      }
+    ]
+  }
+]

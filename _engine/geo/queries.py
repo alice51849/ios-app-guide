@@ -29,6 +29,7 @@ CURATED = {
         "best resume builder app to pass ats",
         "app to check my resume ats score",
         "cv maker app with no watermark",
+        "how to make an ats-friendly resume on iphone without a subscription",
     ],
     "picclear": [
         "best app to find duplicate photos on iphone",

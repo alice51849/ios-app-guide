@@ -40,6 +40,7 @@ SOURCES = (
     ),
 )
 RELATED_URLS = (
+    f"{SITE}/tools/zhuyin-readiness-check.html",
     f"{SITE}/tools/zhuyin-practice-sheet.html",
     f"{SITE}/tools/zhuyin-flashcards.html",
     f"{SITE}/tools/zhuyin-bingo.html",
@@ -249,6 +250,7 @@ COPY = {
         ),
         "related": "Related free resources",
         "related_labels": (
+            "3-minute Zhuyin skills check",
             "Zhuyin practice sheet",
             "Zhuyin flashcards",
             "Zhuyin bingo",
@@ -339,6 +341,7 @@ COPY = {
         "reuse_text": "本原創教案採 CC BY 4.0，可列印、改編與分享；請標註「iOS App Guide」並連回本頁。",
         "related": "相關免費資源",
         "related_labels": (
+            "3 分鐘注音學習檢核",
             "注音描寫練習表",
             "注音符號字卡",
             "注音賓果",
@@ -466,9 +469,12 @@ def render_page(locale: str) -> str:
             },
         ],
     }
+    related_urls = list(RELATED_URLS)
+    if locale == "zh-Hant":
+        related_urls[0] = f"{SITE}/zh-Hant/tools/zhuyin-readiness-check.html"
     related = "".join(
         f'<li><a href="{html.escape(url)}">{html.escape(label)}</a></li>'
-        for label, url in zip(t["related_labels"], RELATED_URLS)
+        for label, url in zip(t["related_labels"], related_urls)
     )
 
     return f"""<!DOCTYPE html>

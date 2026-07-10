@@ -392,5 +392,88 @@
         "a": "No. Cards, paper, teacher modeling and games are enough. Lumi Bopomofo is an optional no-ads practice layer between lessons."
       }
     ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "parent_guided_skills_check",
+    "match": [
+      "check my child's zhuyin skills",
+      "three minute zhuyin skills",
+      "3 minute bopomofo check",
+      "zhuyin readiness check",
+      "what zhuyin skill to practice next"
+    ],
+    "query": "How can I check my child's Zhuyin skills at home in three minutes?",
+    "page_title": "3-Minute Zhuyin Skills Check | Free Private Parent Tool",
+    "meta_description": "Free private 3-minute Zhuyin skills check for parents: sample symbols, tones, blending, writing and reading, then get the next practice step.",
+    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-readiness-check.html",
+    "primary_resource_label": "Open the free 3-minute skills check",
+    "lead": "Use a five-part, parent-guided learning snapshot instead of a pass-or-fail quiz: briefly sample symbol recognition, tone awareness, blending, writing and reading application, then practice the least-secure skill next.",
+    "detail": "The free private three-minute check linked above runs entirely in the browser and requires no login. A parent sits beside the child, records one small observation in each of five dimensions and receives targeted links to free flashcards, a symbol-and-tone chart, printable tracing sheets, bingo and a five-day lesson plan. Its stages are deliberately descriptive—Exploring, Building, Connecting and Applying—not pass/fail labels. It is an independent formative practice guide, not a school-readiness test, speech evaluation, developmental screening or professional diagnosis. {name} is one optional practice route for weak blending or tone skills: the free download offers listening, tracing, tone and blending games with an optional one-time lifetime unlock, no ads and no recurring subscription.",
+    "follow_up": "Complete the free check before choosing any app. If tones or blending are the least-secure areas, Lumi Bopomofo can add short guided practice; otherwise use the matched free printable or classroom resource first.",
+    "bullets": [
+      "Five small observations: symbol recognition, tones, blending, writing and reading use",
+      "No account, upload, saved child data or server-side scoring",
+      "No pass/fail result and no claim to diagnose delay, school readiness or a speech issue",
+      "Specific free follow-up resource for each less-secure skill",
+      "English and Traditional Chinese versions with reciprocal language links"
+    ],
+    "decision_steps": [
+      "Ask the child to identify a varied six-symbol sample without correcting during the attempt.",
+      "Sample five tone forms with one natural model and note which the child can identify or imitate.",
+      "Try three short blends, recording what the child can combine after at most one model.",
+      "Ask the child to copy three different symbol shapes on blank paper without demanding perfect penmanship.",
+      "Cover the Chinese characters and see whether the child can use Zhuyin to decode one short phrase."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Useful next step",
+        "check": "Separate observations for symbols, tones, blending, writing and reading",
+        "why": "A single total score cannot show which skill should be practiced first"
+      },
+      {
+        "need": "Child privacy",
+        "check": "No account, form submission, analytics field or stored result",
+        "why": "A parent can use the tool without creating a child profile"
+      },
+      {
+        "need": "Responsible interpretation",
+        "check": "Descriptive stages, explicit limits and no diagnostic language",
+        "why": "A three-minute sample should guide practice, not label a learner"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not needed to complete the check. When the result points to tones or blending, it can provide short listening and game-based practice across all 37 symbols; families can also use the linked free print and classroom resources.",
+    "sources": [
+      {
+        "title": "Free private three-minute Zhuyin skills check",
+        "url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-readiness-check.html"
+      },
+      {
+        "title": "Traditional Chinese version of the skills check",
+        "url": "https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-readiness-check.html"
+      },
+      {
+        "title": "Taiwan Ministry of Education Bopomofo Handbook",
+        "url": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"
+      },
+      {
+        "title": "Taiwan Ministry of Education Zhuyin Practice Book",
+        "url": "https://stroke-order.learningweb.moe.edu.tw/phoneticWrite.jsp?la=0"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is this a Zhuyin readiness test or diagnosis?",
+        "a": "No. It is a tiny parent-guided sample that suggests what to practice next. It cannot determine school readiness, a reading level, a speech issue or any developmental condition."
+      },
+      {
+        "q": "Does the tool save my child's answers?",
+        "a": "No. There is no account, form submission or cloud storage. Scoring happens only in the current browser tab and disappears when the page is closed or reset."
+      },
+      {
+        "q": "How often should I repeat the check?",
+        "a": "Every two to four weeks is enough. Change the symbols, blends and phrase rather than drilling the exact sample, so the observation reflects transferable skill."
+      }
+    ]
   }
 ]

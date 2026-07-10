@@ -34,6 +34,7 @@ import gen_roundups
 import indexnow_submit
 import outreach_scorecard
 import zhuyin_heritage_lesson_plan
+import zhuyin_readiness_tool
 
 
 class AppStoreAvailabilityTests(unittest.TestCase):
@@ -101,6 +102,76 @@ class AppStoreAvailabilityTests(unittest.TestCase):
 
 
 class GeneratorTests(unittest.TestCase):
+    def test_zhuyin_skills_check_is_bilingual_private_and_non_diagnostic(self):
+        english = zhuyin_readiness_tool.render_page("en")
+        traditional = zhuyin_readiness_tool.render_page("zh-Hant")
+        for page in (english, traditional):
+            self.assertIn('"WebApplication", "LearningResource"', page)
+            self.assertIn('hreflang="en"', page)
+            self.assertIn('hreflang="zh-Hant"', page)
+            self.assertIn("id=\"skills-form\"", page)
+            self.assertIn("id=\"result\"", page)
+            self.assertIn("id6773017109", page)
+            self.assertNotIn("localStorage", page)
+            self.assertNotIn("XMLHttpRequest", page)
+            self.assertNotIn("fetch(", page)
+        self.assertIn("not a school assessment", english)
+        self.assertIn("cannot determine school readiness", english)
+        self.assertIn("不是學校評量", traditional)
+        self.assertIn("不是官方評量", traditional)
+        self.assertIn("one-time lifetime unlock", english)
+        self.assertIn("一次性永久解鎖", traditional)
+
+    def test_zhuyin_skills_check_builds_both_pages_and_index_card(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            tools = pages / "tools"
+            tools.mkdir()
+            (tools / "index.html").write_text(
+                "<main><section></section></main>", encoding="utf-8"
+            )
+            urls = zhuyin_readiness_tool.build(pages)
+            self.assertEqual(2, len(urls))
+            self.assertTrue(
+                (tools / f"{zhuyin_readiness_tool.SLUG}.html").exists()
+            )
+            self.assertTrue(
+                (
+                    pages
+                    / "zh-Hant"
+                    / "tools"
+                    / f"{zhuyin_readiness_tool.SLUG}.html"
+                ).exists()
+            )
+            index = (tools / "index.html").read_text(encoding="utf-8")
+            self.assertEqual(1, index.count("zhuyin-readiness-check.html"))
+
+    def test_zhuyin_skills_answer_leads_with_free_resource(self):
+        question = (
+            "How can I check my child's Zhuyin skills at home in three minutes?"
+        )
+        content = aeo_answers.normalized_content(
+            aeo_answers.default_content(question, "lumibopomofo"),
+            question,
+            "lumibopomofo",
+        )
+        page = aeo_answers.render_page(question, "lumibopomofo", content)
+        self.assertEqual(
+            "https://alice51849.github.io/ios-app-guide/"
+            "tools/zhuyin-readiness-check.html",
+            content["primary_resource_url"],
+        )
+        self.assertIn(
+            "<title>3-Minute Zhuyin Skills Check | "
+            "Free Private Parent Tool</title>",
+            page,
+        )
+        self.assertLess(
+            page.index("Open the free 3-minute skills check"),
+            page.index("Get Lumi Bopomofo on the App Store"),
+        )
+        self.assertIn("Sources and resources", page)
+
     def test_heritage_lesson_plan_is_bilingual_and_honest(self):
         english = zhuyin_heritage_lesson_plan.render_page("en")
         traditional = zhuyin_heritage_lesson_plan.render_page("zh-Hant")

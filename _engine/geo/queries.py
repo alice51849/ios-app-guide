@@ -326,6 +326,7 @@ _TAILORED = {
         "How can Zhuyin help my child read a Chinese dictionary?",
         "Where can I find a free five-day Zhuyin lesson plan for a heritage Chinese school?",
         "printable Bopomofo mini unit for weekend Chinese school teachers",
+        "How can I check my child's Zhuyin skills at home in three minutes?",
         "海外小孩學注音符號的 app 推薦",
     ],
     # —— 占星:競品/東西合璧/離線 ——

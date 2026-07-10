@@ -262,6 +262,9 @@ def default_content(question: str, key: str) -> dict[str, Any]:
             },
         ],
         "sources": [],
+        "page_title": "",
+        "primary_resource_url": "",
+        "primary_resource_label": "",
         "where_app_fits": f"{name} is a strong fit when you want a focused iPhone tool rather than a broad, complicated suite.",
         "faq": [
             {"q": f"Is {name} a good option?", "a": f"{name} can be a good option if its current App Store features match your needs and budget."},
@@ -285,6 +288,17 @@ def normalized_content(raw: dict[str, Any], question: str, key: str) -> dict[str
         "decision_steps": safe_list(raw.get("decision_steps"), 5, base["decision_steps"]),
         "comparison_rows": base["comparison_rows"],
         "sources": base["sources"],
+        "page_title": safe_text(
+            raw.get("page_title"), base.get("page_title", "")
+        ),
+        "primary_resource_url": safe_text(
+            raw.get("primary_resource_url"),
+            base.get("primary_resource_url", ""),
+        ),
+        "primary_resource_label": safe_text(
+            raw.get("primary_resource_label"),
+            base.get("primary_resource_label", ""),
+        ),
         "where_app_fits": safe_text(raw.get("where_app_fits"), base["where_app_fits"]),
         "faq": raw.get("faq") if isinstance(raw.get("faq"), list) else base["faq"],
     }
@@ -298,6 +312,11 @@ def normalized_content(raw: dict[str, Any], question: str, key: str) -> dict[str
         if len(faqs) >= 3:
             break
     content["faq"] = faqs or base["faq"]
+    if not content["primary_resource_url"].startswith(f"{SITE}/"):
+        content["primary_resource_url"] = ""
+        content["primary_resource_label"] = ""
+    elif not content["primary_resource_label"]:
+        content["primary_resource_label"] = "Open free resource"
 
     if key == "aim990":
         disclaimer = " TOEIC is a registered trademark of ETS; Aim990 is an independent study aid and is not affiliated with or endorsed by ETS. It does not guarantee any score."
@@ -347,7 +366,7 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
     url = appstore_url(key, "iag_ans")
     slug = slugify(question)
     canonical = f"{SITE}/answers/{slug}.html"
-    title = f"{question}: honest iPhone app buying guide"
+    title = content.get("page_title") or f"{question}: honest iPhone app buying guide"
     meta = content["meta_description"][:220]
     faq = content["faq"]
     breadcrumb = {
@@ -408,7 +427,7 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
             f'<li><a href="{e(source["url"])}" rel="noopener">{e(source["title"])}</a></li>'
             for source in sources
         )
-        sources_html = f'<h2>Official sources</h2><ul class="checklist">{links}</ul>'
+        sources_html = f'<h2>Sources and resources</h2><ul class="checklist">{links}</ul>'
     paras = "".join(f"<p>{e(x)}</p>" for x in content["short_answer_paragraphs"])
     faq_html = "".join(
         f'<div itemscope itemtype="https://schema.org/Question"><h3 itemprop="name">{e(item["q"])}</h3><div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><p itemprop="text">{e(item["a"])}</p></div></div>'
@@ -416,6 +435,25 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
     )
     guide_link = f"{SITE}/guides/{key}.html"
     alt_link = f"{SITE}/alternatives/{alternative_hub_slug(key)}.html"
+    primary_resource_url = content.get("primary_resource_url", "")
+    primary_resource_label = content.get("primary_resource_label", "")
+    if primary_resource_url:
+        hero_actions = (
+            f'<a class="cta" href="{e(primary_resource_url)}">'
+            f'{e(primary_resource_label)} →</a> '
+            f'<a class="cta ghost" href="{url}" rel="nofollow noopener">'
+            f'Get {e(name)} on the App Store →</a>'
+        )
+        helpful_resource = (
+            f'<a href="{e(primary_resource_url)}">{e(primary_resource_label)}</a>'
+        )
+    else:
+        hero_actions = (
+            f'<a class="cta" href="{url}" rel="nofollow noopener">'
+            f'Get {e(name)} on the App Store →</a> '
+            f'<a class="cta ghost" href="{SITE}/tools/index.html">free tool →</a>'
+        )
+        helpful_resource = f'<a href="{SITE}/tools/index.html">free tool</a>'
     special_notice = ""
     if key == "aim990":
         special_notice = " TOEIC is a registered trademark of ETS. Aim990 is an independent study aid and is not affiliated with or endorsed by ETS. No app can guarantee a TOEIC score."
@@ -442,8 +480,8 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
 </script>
 </head>
 <body><header class="top"><div class="wrap nav"><a href="{SITE}/index.html">iOS App Guide</a><nav><a href="{SITE}/answers/index.html">Answers</a> · <a href="{SITE}/tools/">Free tools</a> · <a href="{SITE}/alternatives/">Alternatives</a> · <a href="{SITE}/about.html">About</a></nav></div></header>
-<main><section class="hero wrap"><div class="breadcrumb"><a href="{SITE}/index.html">Home</a> / <a href="{SITE}/answers/index.html">Answers</a></div><div class="eyebrow">High-intent answer</div><h1>{e(question)}</h1><p class="lead">{e(content["lead"])}</p><p><a class="cta" href="{url}" rel="nofollow noopener">Get {e(name)} on the App Store →</a> <a class="cta ghost" href="{SITE}/tools/index.html">free tool →</a></p></section>
-<section class="wrap grid"><article class="card two answer"><h2>Short answer</h2>{paras}<h2>What to look for before choosing</h2><ul class="checklist">{look}</ul><h2>A practical decision process</h2><ol class="checklist">{steps}</ol><h2>Quick comparison</h2><table><thead><tr><th>Need</th><th>What to check</th><th>Why it matters</th></tr></thead><tbody>{comparison_rows}</tbody></table>{sources_html}<h2>Where {e(name)} fits</h2><p>{e(content["where_app_fits"])}</p><p>{pills}</p><p class="notice">This page is an independent buying guide. App Store features and prices can change, so confirm details on the listing before purchase.{e(special_notice)}</p></article><aside class="card side"><h2>Helpful links</h2><div class="toc"><a href="{url}" rel="nofollow noopener">Get {e(name)} on the App Store</a><a href="{guide_link}">{e(name)} app guide</a><a href="{alt_link}">{e(name)} alternatives / guide</a><a href="{SITE}/tools/index.html">free tool</a></div><h2>Best for</h2><p class="muted">{e('; '.join(feature_list(key)))}</p></aside></section>
+<main><section class="hero wrap"><div class="breadcrumb"><a href="{SITE}/index.html">Home</a> / <a href="{SITE}/answers/index.html">Answers</a></div><div class="eyebrow">High-intent answer</div><h1>{e(question)}</h1><p class="lead">{e(content["lead"])}</p><p>{hero_actions}</p></section>
+<section class="wrap grid"><article class="card two answer"><h2>Short answer</h2>{paras}<h2>What to look for before choosing</h2><ul class="checklist">{look}</ul><h2>A practical decision process</h2><ol class="checklist">{steps}</ol><h2>Quick comparison</h2><table><thead><tr><th>Need</th><th>What to check</th><th>Why it matters</th></tr></thead><tbody>{comparison_rows}</tbody></table>{sources_html}<h2>Where {e(name)} fits</h2><p>{e(content["where_app_fits"])}</p><p>{pills}</p><p class="notice">This page is an independent buying guide. App Store features and prices can change, so confirm details on the listing before purchase.{e(special_notice)}</p></article><aside class="card side"><h2>Helpful links</h2><div class="toc">{helpful_resource}<a href="{url}" rel="nofollow noopener">Get {e(name)} on the App Store</a><a href="{guide_link}">{e(name)} app guide</a><a href="{alt_link}">{e(name)} alternatives / guide</a></div><h2>Best for</h2><p class="muted">{e('; '.join(feature_list(key)))}</p></aside></section>
 <section class="wrap card"><h2>FAQ</h2>{faq_html}</section></main><footer class="footer"><div class="wrap">Independent guide. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.</div></footer></body></html>'''
 
 

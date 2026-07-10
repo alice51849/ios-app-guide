@@ -5281,12 +5281,17 @@ def deep_facts(q: str, key: str, name: str) -> dict[str, Any] | None:
             detail = sub(it["detail"])
             lead = sub(it["lead"])
             overlay = {
-                "meta_description": concise_meta(sub(it["lead"])),
+                "meta_description": concise_meta(
+                    sub(it.get("meta_description", it["lead"]))
+                ),
                 "lead": lead,
                 "short_answer_paragraphs": [
                     detail,
-                    f"Try {name} on a real example first, and check the current App Store "
-                    f"listing for exact features and pricing before you decide.",
+                    sub(it.get(
+                        "follow_up",
+                        f"Try {name} on a real example first, and check the current App Store "
+                        f"listing for exact features and pricing before you decide.",
+                    )),
                 ],
                 "what_to_look_for": [sub(b) for b in it["bullets"]],
                 "where_app_fits": sub(it.get(
@@ -5307,6 +5312,13 @@ def deep_facts(q: str, key: str, name: str) -> dict[str, Any] | None:
                     {"title": sub(source["title"]), "url": source["url"]}
                     for source in it["sources"]
                 ]
+            for field in (
+                "page_title",
+                "primary_resource_url",
+                "primary_resource_label",
+            ):
+                if field in it:
+                    overlay[field] = sub(it[field])
             return overlay
     return None
 

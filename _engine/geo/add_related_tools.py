@@ -46,7 +46,14 @@ def main():
     heading = HEADINGS.get(locale, HEADINGS[""])
     # group tools by app id from the canonical EN /tools/ set
     by_app = {}
-    for f in sorted(glob.glob(os.path.join(en_tools_dir, "*.html"))):
+    tool_files = glob.glob(os.path.join(en_tools_dir, "*.html"))
+    tool_files.sort(
+        key=lambda path: (
+            os.path.basename(path) != "zhuyin-readiness-check.html",
+            os.path.basename(path),
+        )
+    )
+    for f in tool_files:
         slug = os.path.basename(f)[:-5]
         if slug == "index":
             continue
@@ -76,7 +83,12 @@ def main():
         a = appid(h)
         if not a or a not in by_app:
             continue
-        tools = by_app[a][:5]
+        limit = (
+            6
+            if any("zhuyin-readiness-check" in url for url, _label in by_app[a])
+            else 5
+        )
+        tools = by_app[a][:limit]
         items = "".join(
             f'<li><a href="{url}">{html.escape(lbl)}</a></li>' for url, lbl in tools
         )

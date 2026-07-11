@@ -5,6 +5,7 @@ from __future__ import annotations
 import copy
 import csv
 import datetime as dt
+import email.utils
 import hashlib
 import io
 import importlib.util
@@ -230,7 +231,7 @@ class GeneratorTests(unittest.TestCase):
             self.assertFalse(gen_feed._write_if_changed(str(output), "stable"))
             self.assertEqual(modified, output.stat().st_mtime_ns)
 
-    def test_atom_feed_keeps_every_canonical_guide_within_the_item_cap(self):
+    def test_atom_feed_keeps_guides_and_free_tools_within_the_item_cap(self):
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(
             gen_feed, "PAGES", directory
         ):
@@ -244,9 +245,25 @@ class GeneratorTests(unittest.TestCase):
                     '{"dateModified":"2026-07-12"}</script>',
                     encoding="utf-8",
                 )
+            owned_answer = root / "answers" / "owned-resource.html"
+            owned_answer.write_text(
+                "<title>Owned resource</title>"
+                f'<a class="cta" href="{gen_feed.SITE}/tools/owned.html">'
+                "Open resource</a>"
+                '<script type="application/ld+json">'
+                '{"dateModified":"2020-01-01"}</script>',
+                encoding="utf-8",
+            )
             for name in ("app-one", "app-two"):
                 (root / "guides" / f"{name}.html").write_text(
                     f"<title>{name}</title>"
+                    '<script type="application/ld+json">'
+                    '{"dateModified":"2020-01-01"}</script>',
+                    encoding="utf-8",
+                )
+            for index in range(25):
+                (root / "tools" / f"tool-{index:02d}.html").write_text(
+                    f"<title>tool-{index:02d}</title>"
                     '<script type="application/ld+json">'
                     '{"dateModified":"2020-01-01"}</script>',
                     encoding="utf-8",
@@ -258,9 +275,213 @@ class GeneratorTests(unittest.TestCase):
             {
                 f"{gen_feed.SITE}/guides/app-one.html",
                 f"{gen_feed.SITE}/guides/app-two.html",
+                f"{gen_feed.SITE}/answers/owned-resource.html",
             }
             <= urls
         )
+        self.assertEqual(
+            gen_feed.RESERVED_SUBDIR_LIMITS[0][1],
+            sum("/tools/" in url for url in urls),
+        )
+
+    def test_syndication_feed_serializers_share_one_valid_item_selection(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            items = []
+            for index in range(2):
+                page = root / f"item-{index}.html"
+                page.write_text(
+                    f"<title>Item {index}</title>"
+                    f'<meta name="description" content="Summary {index}.">',
+                    encoding="utf-8",
+                )
+                items.append(
+                    (
+                        dt.datetime(
+                            2026,
+                            7,
+                            12,
+                            index,
+                            tzinfo=dt.timezone.utc,
+                        ).timestamp(),
+                        f"https://example.com/item-{index}",
+                        str(page),
+                    )
+                )
+            newest = items[-1][0]
+            atom = ET.fromstring(gen_feed.render_atom(items, gen_feed.iso(newest)))
+            rss = ET.fromstring(gen_feed.render_rss(items, newest))
+            json_feed = json.loads(gen_feed.render_json_feed(items))
+
+        atom_ns = "{http://www.w3.org/2005/Atom}"
+        atom_ids = {
+            entry.find(atom_ns + "id").text
+            for entry in atom.findall(atom_ns + "entry")
+        }
+        self.assertEqual(
+            "2.0",
+            rss.attrib["version"],
+        )
+        channel = rss.find("channel")
+        self.assertIsNotNone(channel.find("title"))
+        self.assertIsNotNone(channel.find("link"))
+        self.assertIsNotNone(channel.find("description"))
+        rss_items = channel.findall("item")
+        rss_ids = {item.find("guid").text for item in rss_items}
+        for item in rss_items:
+            self.assertEqual("true", item.find("guid").attrib["isPermaLink"])
+            self.assertEqual(
+                dt.timezone.utc,
+                email.utils.parsedate_to_datetime(
+                    item.find("pubDate").text
+                ).tzinfo,
+            )
+        self.assertEqual(
+            "https://jsonfeed.org/version/1.1",
+            json_feed["version"],
+        )
+        self.assertEqual(f"{gen_feed.SITE}/feed.json", json_feed["feed_url"])
+        json_ids = {item["id"] for item in json_feed["items"]}
+        for item in json_feed["items"]:
+            self.assertTrue(item["content_text"])
+            self.assertRegex(
+                item["date_modified"],
+                r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$",
+            )
+        self.assertEqual(atom_ids, rss_ids)
+        self.assertEqual(atom_ids, json_ids)
+
+    def test_syndication_generator_writes_three_idempotent_feeds(self):
+        with tempfile.TemporaryDirectory() as directory, mock.patch.object(
+            gen_feed,
+            "PAGES",
+            directory,
+        ), mock.patch.object(
+            gen_feed,
+            "_git_modified_times",
+            return_value={},
+        ):
+            root = Path(directory)
+            for subdir in ("answers", "guides", "alternatives", "tools", "data"):
+                (root / subdir).mkdir()
+            page = root / "guides" / "sample-app.html"
+            page.write_text(
+                "<html><head><title>Sample App Guide</title>"
+                '<meta name="description" content="A stable app guide.">'
+                '<script type="application/ld+json">'
+                '{"dateModified":"2026-07-12"}</script></head><body></body></html>',
+                encoding="utf-8",
+            )
+            gen_feed.main()
+            outputs = tuple(
+                root / filename
+                for filename in ("feed.xml", "rss.xml", "feed.json")
+            )
+            self.assertTrue(all(path.is_file() for path in outputs))
+            tracked = (*outputs, page)
+            mtimes = {path: path.stat().st_mtime_ns for path in tracked}
+            page_content = page.read_text(encoding="utf-8")
+            for media_type in (
+                "application/atom+xml",
+                "application/rss+xml",
+                "application/feed+json",
+            ):
+                self.assertEqual(1, page_content.count(f'type="{media_type}"'))
+            gen_feed.main()
+            self.assertEqual(
+                mtimes,
+                {path: path.stat().st_mtime_ns for path in tracked},
+            )
+
+    def test_feed_autodiscovery_advertises_atom_rss_and_json_feed(self):
+        links = build_pages_i18n.feed_discovery_links()
+        for media_type, filename in (
+            ("application/atom+xml", "feed.xml"),
+            ("application/rss+xml", "rss.xml"),
+            ("application/feed+json", "feed.json"),
+        ):
+            self.assertIn(f'type="{media_type}"', links)
+            self.assertIn(f'href="{build_pages_i18n.SITE}/{filename}"', links)
+
+    def test_published_syndication_feeds_cover_every_app_guide(self):
+        pages = Path(GEO) / "pages"
+        atom_ns = "{http://www.w3.org/2005/Atom}"
+        atom = ET.parse(pages / "feed.xml").getroot()
+        rss = ET.parse(pages / "rss.xml").getroot()
+        json_feed = json.loads((pages / "feed.json").read_text(encoding="utf-8"))
+        atom_ids = [
+            entry.find(atom_ns + "id").text
+            for entry in atom.findall(atom_ns + "entry")
+        ]
+        rss_ids = [
+            item.find("guid").text
+            for item in rss.find("channel").findall("item")
+        ]
+        json_ids = [item["id"] for item in json_feed["items"]]
+        self.assertEqual(gen_feed.MAX_ITEMS, len(atom_ids))
+        self.assertEqual(atom_ids, rss_ids)
+        self.assertEqual(atom_ids, json_ids)
+        expected_guides = {
+            f"{gen_feed.SITE}/guides/{path.name}"
+            for path in (pages / "guides").glob("*.html")
+            if path.name != "index.html"
+        }
+        self.assertTrue(expected_guides <= set(atom_ids))
+        expected_resource_answers = set()
+        for path in (pages / "answers").glob("*.html"):
+            if path.name == "index.html":
+                continue
+            content = path.read_text(encoding="utf-8")
+            match = gen_feed.CTA_RE.search(content[:32_000])
+            if match and match.group(1).startswith(f"{gen_feed.SITE}/"):
+                expected_resource_answers.add(
+                    f"{gen_feed.SITE}/answers/{path.name}"
+                )
+        self.assertGreater(len(expected_resource_answers), 10)
+        self.assertTrue(expected_resource_answers <= set(atom_ids))
+        self.assertEqual(
+            gen_feed.RESERVED_SUBDIR_LIMITS[0][1],
+            sum("/tools/" in url for url in atom_ids),
+        )
+        self.assertEqual(
+            "https://jsonfeed.org/version/1.1",
+            json_feed["version"],
+        )
+        self.assertLess((pages / "feed.json").stat().st_size, 100_000)
+        for url in atom_ids:
+            prefix = f"{gen_feed.SITE}/"
+            if not url.startswith(prefix) or not url.endswith(".html"):
+                continue
+            content = (pages / url[len(prefix):]).read_text(encoding="utf-8")
+            for media_type, filename in (
+                ("application/atom+xml", "feed.xml"),
+                ("application/rss+xml", "rss.xml"),
+                ("application/feed+json", "feed.json"),
+            ):
+                self.assertEqual(1, content.count(f'type="{media_type}"'))
+                self.assertIn(f'href="{gen_feed.SITE}/{filename}"', content)
+
+        discovery_pages = []
+        for page in (pages / "index.html", *pages.glob("*/*.html")):
+            content = page.read_text(encoding="utf-8")
+            if 'type="application/atom+xml"' in content:
+                discovery_pages.append(content)
+        self.assertGreater(len(discovery_pages), 1_000)
+        for content in discovery_pages:
+            for media_type, filename in (
+                ("application/atom+xml", "feed.xml"),
+                ("application/rss+xml", "rss.xml"),
+                ("application/feed+json", "feed.json"),
+            ):
+                self.assertEqual(1, content.count(f'type="{media_type}"'))
+                self.assertIn(f'href="{gen_feed.SITE}/{filename}"', content)
+
+        llms = (pages / "llms.txt").read_text(encoding="utf-8")
+        llms_full = (pages / "llms-full.txt").read_text(encoding="utf-8")
+        for content in (llms, llms_full):
+            self.assertIn(f"{gen_feed.SITE}/feed.xml", content)
+            self.assertIn(f"{gen_feed.SITE}/rss.xml", content)
+            self.assertIn(f"{gen_feed.SITE}/feed.json", content)
 
     def test_data_hub_preserves_date_until_dataset_content_changes(self):
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(

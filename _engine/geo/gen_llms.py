@@ -561,7 +561,10 @@ def build_llms(comp_map, live_keys):
               "", "## Featured: escape subscriptions (pay-once swaps)",
               f"- {SITE}/subscription-swap.html — real 5-year cost of popular subscription apps "
               "vs the one-time-purchase iPhone app that replaces each.",
-              "", "## Latest updates (Atom feed)", f"- {SITE}/feed.xml", ""]
+              "", "## Latest updates (syndication feeds)",
+              f"- Atom: {SITE}/feed.xml",
+              f"- RSS 2.0: {SITE}/rss.xml",
+              f"- JSON Feed 1.1: {SITE}/feed.json", ""]
     return "\n".join(lines)
 
 
@@ -1114,7 +1117,7 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_index.xml", "sitemap.xml", "sitemap_alternatives.xml",
         "sitemap_answers.xml", "sitemap_guides.xml", "sitemap_stories.xml",
         "sitemap_hubs.xml", "sitemap_tools.xml", "sitemap_data.xml",
-        "sitemap_api.xml", "sitemap_swap.xml", "feed.xml",
+        "sitemap_api.xml", "sitemap_swap.xml", "feed.xml", "rss.xml", "feed.json",
         "sitemap_opds.xml", "sitemap_ro_crate.xml",
         "sitemap_anki.xml",
         "sitemap_vocab.xml",

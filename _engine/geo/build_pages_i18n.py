@@ -28,12 +28,14 @@ sys.path.insert(0, os.path.join(ROOT, "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from aeo_pages import pricing_profile  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
+from gen_feed import feed_discovery_links  # noqa: E402
 
 PAGES = os.path.join(HERE, "pages")
 DATA = os.path.join(ROOT, "data")
 SITE = os.environ.get(
     "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
 ).rstrip("/")
+
 
 # registry key -> data/<file>_full.json
 KEY2DATA = {
@@ -638,7 +640,7 @@ def build_one(key, locale, all_locales):
 <meta name="description" content="{e(short_desc)}">
 <meta name="keywords" content="{e(', '.join(kws))}">
 <link rel="canonical" href="{SITE}/{locale}/{key}.html">
-<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides" href="{SITE}/feed.xml">
+{feed_discovery_links()}
 {hreflang_block(key, all_locales)}
 {ld}
 </head>
@@ -691,7 +693,7 @@ def build_locale_index(locale, keys, locales):
 <title>{e(ui["dir_dir"])} | iOS</title>
 <meta name="description" content="{e(ui["dir_lead"])}">
 <link rel="canonical" href="{SITE}/{locale}/index.html">
-<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides" href="{SITE}/feed.xml">
+{feed_discovery_links()}
 {directory_hreflang_block(locales)}
 </head><body><main>
   <h1>{e(ui["dir_dir"])}</h1>
@@ -717,7 +719,7 @@ def build_root_index(locales):
 <title>iOS Apps — multilingual directory</title>
 <meta name="description" content="Multilingual directory of iOS apps with features, pricing and FAQs in {len(locales)} languages.">
 <link rel="canonical" href="{SITE}/index.html">
-<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides" href="{SITE}/feed.xml">
+{feed_discovery_links()}
 {directory_hreflang_block(locales)}
 </head><body><main>
   <h1>iOS Apps — choose your language</h1>

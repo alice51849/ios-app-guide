@@ -70,6 +70,7 @@ CONTENT_PATTERNS = (
     "data/packages/zhuyin-bopomofo-dcat3/**/*",
     "data/packages/zhuyin-bopomofo-csvw/**/*",
     "data/packages/zhuyin-bopomofo-bagit/**/*",
+    "data/packages/zhuyin-bopomofo-ocfl/**/*",
     "publications/bopomofo-37-symbol-reference/**/*",
     "opds/bopomofo-37-symbol-reference.*",
     "api/v1/bopomofo-symbols/**/*",
@@ -78,6 +79,7 @@ CONTENT_PATTERNS = (
     "zh-Hant/data/packages/zhuyin-bopomofo/**/*",
     "zh-Hant/data/packages/zhuyin-bopomofo-csvw/**/*",
     "zh-Hant/data/packages/zhuyin-bopomofo-bagit/**/*",
+    "zh-Hant/data/packages/zhuyin-bopomofo-ocfl/**/*",
     "zh-Hant/api/v1/bopomofo-symbols/**/*",
     "zh-Hant/tools/zhuyin-*",
 )
@@ -177,6 +179,15 @@ REQUIRED_PATHS = (
     / "zhuyin-bopomofo-bagit"
     / "checksums-sha256.txt",
     Path("data") / "packages" / "zhuyin-bopomofo-bagit" / "metadata.jsonld",
+    Path("data")
+    / "packages"
+    / "zhuyin-bopomofo-ocfl"
+    / "bopomofo-37-symbols-ocfl-1.1.zip",
+    Path("data")
+    / "packages"
+    / "zhuyin-bopomofo-ocfl"
+    / "checksums-sha256.txt",
+    Path("data") / "packages" / "zhuyin-bopomofo-ocfl" / "metadata.jsonld",
 )
 CARD_START = "<!-- resourcesync-card:start -->"
 CARD_END = "<!-- resourcesync-card:end -->"
@@ -222,7 +233,7 @@ COPY = {
             (
                 "Portable packages",
                 "Croissant, Data Package, LMS imports, accessible EPUB editions, "
-                "OER metadata, RFC 8493 BagIt and the DCAT 3 catalog",
+                "OER metadata, RFC 8493 BagIt, OCFL 1.1 and the DCAT 3 catalog",
             ),
             ("Static API", "OpenAPI plus all 37 versioned symbol responses"),
             ("Open teaching tools", "Bilingual guides, decks and printable activities"),
@@ -290,7 +301,7 @@ COPY = {
             (
                 "可攜套件",
                 "Croissant、Data Package、LMS 匯入檔、無障礙 EPUB 版本、"
-                "OER metadata、RFC 8493 BagIt 與 DCAT 3 目錄",
+                "OER metadata、RFC 8493 BagIt、OCFL 1.1 與 DCAT 3 目錄",
             ),
             ("靜態 API", "OpenAPI 與完整 37 個版本化符號回應"),
             ("開放教學工具", "雙語指南、牌組與可列印活動"),

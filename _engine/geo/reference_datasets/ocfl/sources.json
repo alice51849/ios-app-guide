@@ -1,0 +1,24 @@
+{
+  "specification": "Oxford Common File Layout Specification",
+  "version": "OCFL 1.1.1",
+  "objectDeclaration": "ocfl_object_1.1",
+  "published": "2022-10-07",
+  "updated": "2024-11-07",
+  "retrieved": "2026-07-12",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/OCFL/spec/c3f88b31ab8c82c37a190a4f0e5b9bc3c9f01010/1.1/spec/index.md",
+      "sha256": "3d02c6c68e542f471d9252cf1f02cd97e94615e3063930507fb2c33aa31d8f6e"
+    },
+    {
+      "url": "https://ocfl.io/1.1/spec/inventory_schema.json",
+      "sha256": "3f87a36951c25464824a25273e1480fd68448668f05ee7fa5af0115716b0b82c"
+    }
+  ],
+  "notes": [
+    "The 1.1.1 editorial revision retains the OCFL 1.1 object declaration and inventory type URI.",
+    "The package is one OCFL Object, not an OCFL Storage Root.",
+    "OCFL specifies an object-at-rest layout, not a ZIP serialization or OCFL-specific archive media type.",
+    "The downloadable wrapper therefore uses the generic application/zip media type and a separate outer checksum."
+  ]
+}

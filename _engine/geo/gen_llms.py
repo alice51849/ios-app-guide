@@ -46,6 +46,7 @@ ZHUYIN_CROISSANT_DATASET = "zhuyin-bopomofo-ml-dataset"
 ZHUYIN_DATA_PACKAGE = "zhuyin-bopomofo"
 ZHUYIN_CSVW_PACKAGE = "zhuyin-bopomofo-csvw"
 ZHUYIN_BAGIT_PACKAGE = "zhuyin-bopomofo-bagit"
+ZHUYIN_OCFL_OBJECT = "zhuyin-bopomofo-ocfl"
 ZHUYIN_RESOURCE_SYNC = "zhuyin-bopomofo-resourcesync"
 ZHUYIN_LMS_BANK = "zhuyin-bopomofo-lms-question-bank"
 ZHUYIN_EPUB = "zhuyin-bopomofo-epub-reference"
@@ -289,6 +290,24 @@ def build_llms(comp_map, live_keys):
             f"- Deterministic BagIt ZIP: {package}/bopomofo-37-symbols-bagit-rfc8493.zip",
             f"- Outer SHA-256 checksum: {package}/checksums-sha256.txt",
             f"- Preservation package metadata: {package}/metadata.jsonld",
+        ]
+    if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
+            ZHUYIN_OCFL_OBJECT,
+            "metadata.jsonld",
+        )
+    ):
+        package = f"{SITE}/data/packages/{ZHUYIN_OCFL_OBJECT}"
+        lines += [
+            "",
+            "## Bopomofo version-aware preservation object (OCFL 1.1)",
+            f"- English guide: {package}/",
+            f"- Traditional Chinese guide: {SITE}/zh-Hant/data/packages/{ZHUYIN_OCFL_OBJECT}/",
+            f"- Deterministic OCFL object ZIP: {package}/bopomofo-37-symbols-ocfl-1.1.zip",
+            f"- Outer SHA-256 checksum: {package}/checksums-sha256.txt",
+            f"- Preservation object metadata: {package}/metadata.jsonld",
         ]
     if os.path.exists(
         os.path.join(
@@ -710,6 +729,24 @@ def build_llms_full(comp_map, live_keys):
         os.path.join(
             DATA_DIR,
             "packages",
+            ZHUYIN_OCFL_OBJECT,
+            "metadata.jsonld",
+        )
+    ):
+        package = f"{SITE}/data/packages/{ZHUYIN_OCFL_OBJECT}"
+        lines += [
+            "",
+            "## Bopomofo OCFL 1.1 preservation object",
+            f"- [English guide]({package}/)",
+            f"- [Traditional Chinese guide]({SITE}/zh-Hant/data/packages/{ZHUYIN_OCFL_OBJECT}/)",
+            f"  - Deterministic OCFL object ZIP: {package}/bopomofo-37-symbols-ocfl-1.1.zip",
+            f"  - Outer SHA-256 checksum: {package}/checksums-sha256.txt",
+            f"  - Preservation object metadata: {package}/metadata.jsonld",
+        ]
+    if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
             ZHUYIN_DATA_PACKAGE,
             "datapackage.json",
         )
@@ -870,6 +907,7 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_datapackage.xml",
         "sitemap_csvw.xml",
         "sitemap_bagit.xml",
+        "sitemap_ocfl.xml",
         "sitemap_lms.xml",
         "sitemap_epub.xml",
         "sitemap_library_catalog.xml",
@@ -909,6 +947,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_datapackage.xml",
             f"Sitemap: {SITE}/sitemap_csvw.xml",
             f"Sitemap: {SITE}/sitemap_bagit.xml",
+            f"Sitemap: {SITE}/sitemap_ocfl.xml",
             f"Sitemap: {SITE}/sitemap_lms.xml",
             f"Sitemap: {SITE}/sitemap_epub.xml",
             f"Sitemap: {SITE}/sitemap_library_catalog.xml",
@@ -933,6 +972,7 @@ def build_sitemap_index():
         "sitemap_datapackage.xml",
         "sitemap_csvw.xml",
         "sitemap_bagit.xml",
+        "sitemap_ocfl.xml",
         "sitemap_lms.xml",
         "sitemap_epub.xml",
         "sitemap_library_catalog.xml",

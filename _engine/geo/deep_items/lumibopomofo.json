@@ -37,6 +37,92 @@
   },
   {
     "app_key": "lumibopomofo",
+    "kind": "ocfl_digital_preservation",
+    "match": [
+      "digital repository download an ocfl 1.1 object",
+      "bopomofo ocfl preservation object",
+      "zhuyin ocfl repository",
+      "ocfl 1.1 bopomofo data"
+    ],
+    "query": "Where can a digital repository download an OCFL 1.1 object for Bopomofo data?",
+    "page_title": "Download an OCFL 1.1 Object for Bopomofo Data",
+    "meta_description": "Download a validated OCFL 1.1 object for all 37 Bopomofo symbols, with root and version inventories, SHA-512 content addressing and SHA-256 fixity.",
+    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/",
+    "primary_resource_label": "Download the Bopomofo OCFL preservation object",
+    "lead": "Use the open OCFL 1.1 object for a transparent, version-aware preservation copy of the complete 37-symbol Bopomofo dataset and its standards metadata.",
+    "detail": "The deterministic ZIP extracts to one OCFL Object root. Its exact 0=ocfl_object_1.1 Namaste file declares OCFL 1.1, while the object-root inventory.json and inventory.json.sha512 files are byte-identical to those in the head-version directory. The inventory identifies the object with a stable URI, uses SHA-512 for content addressing, maps physical version content paths in its manifest, and maps content digests to ten portable logical paths in the head state. A complete SHA-256 fixity block independently covers every stored content file. The logical state preserves the canonical 37-row UTF-8 CSV, equivalent JSON Lines, W3C CSVW metadata, MLCommons Croissant 1.1 metadata, the SKOS vocabulary in JSON-LD, Turtle and N-Triples, SHACL shapes, a validation guide and the CC BY 4.0 notice. The extracted object validates with ocfl-py 2.1.0. OCFL specifies an object-at-rest filesystem layout, not a ZIP transfer serialization or OCFL-specific media type, so the download uses generic application/zip with a separate outer SHA-256. This is one OCFL Object, not an OCFL Storage Root, repository service, institutional endorsement or proof of ingest.",
+    "follow_up": "Download the ZIP and checksum into the same directory, verify the outer SHA-256, extract the single object root, then run ocfl-validate.py against that directory with ocfl-py 2.1.0. Inspect the inventory id, head, manifest, version state and local rights policy before repository ingest.",
+    "bullets": [
+      "Complete U+3105 through U+3129 Bopomofo coverage with no audio or learner records",
+      "Exact OCFL 1.1 Namaste declaration plus root and head-version inventory sidecars",
+      "SHA-512 content-addressed manifest and complete SHA-256 fixity block",
+      "Ten logical files with physical content paths separated from logical paths",
+      "Deterministic single-root ZIP with a separately published outer SHA-256"
+    ],
+    "decision_steps": [
+      "Download the ZIP, checksums-sha256.txt and metadata.jsonld from the object guide.",
+      "Run shasum -a 256 -c checksums-sha256.txt before extracting the transfer wrapper.",
+      "Extract the ZIP and confirm it creates only the bopomofo-37-symbols-ocfl object root.",
+      "Run ocfl-validate.py bopomofo-37-symbols-ocfl with ocfl-py 2.1.0.",
+      "Confirm the inventory id and local retention policy before staging repository ingest."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Transparent object identification",
+        "check": "The root contains the exact 0=ocfl_object_1.1 Namaste declaration",
+        "why": "Humans and tools can identify the extracted directory without proprietary software"
+      },
+      {
+        "need": "Version and path reconstruction",
+        "check": "The inventory separates physical manifest paths from logical state paths",
+        "why": "A repository can rebuild the head state while retaining immutable version content"
+      },
+      {
+        "need": "Independent byte verification",
+        "check": "SHA-512 covers content addressing and SHA-256 fixity covers every physical content path",
+        "why": "An OCFL validator can verify inventories, sidecars, state mappings and stored bytes"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not required to download, validate, preserve or reconstruct the OCFL object. If currently available, it appears only after the open repository resource as an optional on-device practice layer.",
+    "sources": [
+      {
+        "title": "Bopomofo OCFL 1.1 preservation object",
+        "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/"
+      },
+      {
+        "title": "Oxford Common File Layout Specification 1.1",
+        "url": "https://ocfl.io/1.1/spec/"
+      },
+      {
+        "title": "Official OCFL 1.1 inventory JSON Schema",
+        "url": "https://ocfl.io/1.1/spec/inventory_schema.json"
+      },
+      {
+        "title": "ocfl-py validator",
+        "url": "https://github.com/zimeon/ocfl-py"
+      },
+      {
+        "title": "IANA application/zip media type registration",
+        "url": "https://www.iana.org/assignments/media-types/application/zip"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the ZIP itself an OCFL-defined serialization?",
+        "a": "No. OCFL 1.1 defines the object-at-rest and storage-root filesystem layouts, not a transfer archive or OCFL-specific media type. The download uses a generic application/zip wrapper and publishes a separate checksum for those ZIP bytes."
+      },
+      {
+        "q": "Is this download a complete OCFL Storage Root?",
+        "a": "No. It is one independently valid OCFL Object with an object declaration. A repository may place it under a separately declared OCFL Storage Root using its own deterministic storage layout."
+      },
+      {
+        "q": "How does the object preserve future changes?",
+        "a": "The generator compares the current logical state with the published head. If source bytes or logical paths change, it appends a new forward-delta version, retains prior version directories and reuses existing content digests instead of rewriting history."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
     "kind": "bagit_digital_preservation",
     "match": [
       "digital repository download an rfc 8493 bagit package",
@@ -987,16 +1073,16 @@
       "dcat 3 bopomofo open data catalog"
     ],
     "query": "Where can an open-data catalog harvest a Bopomofo dataset in DCAT 3?",
-    "page_title": "Harvest Ten Open Bopomofo Datasets from a Static DCAT 3 Catalog",
-    "meta_description": "Download a W3C DCAT 3 JSON-LD or Turtle catalog for ten Bopomofo datasets and 48 exact distributions with SPDX SHA-256.",
+    "page_title": "Harvest Eleven Open Bopomofo Datasets from a Static DCAT 3 Catalog",
+    "meta_description": "Download a W3C DCAT 3 JSON-LD or Turtle catalog for eleven Bopomofo datasets and 51 exact distributions with SPDX SHA-256.",
     "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html",
     "primary_resource_label": "Download the Bopomofo DCAT 3 catalog",
-    "lead": "Use the static Bopomofo DCAT 3 open-data catalog. It lists ten related datasets and 48 exact distributions in equivalent JSON-LD and Turtle graphs, with one deterministic ZIP bundle.",
-    "detail": "The catalog covers the 37-symbol reference data, static JSON API, SKOS and SHACL vocabulary, Croissant, CSVW and Data Package tables, the RFC 8493 BagIt preservation package, Anki imports, LMS packages, EPUB and OPDS publication files, library records, and OER repository metadata. Every direct distribution records an IANA media-type IRI, byte size, CC BY 4.0 license, language IRIs and an SPDX SHA-256 checksum calculated from the published bytes. Each dcat:CatalogRecord has exactly one foaf:primaryTopic, and the static API is represented separately as a dcat:DataService. Download from https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html. This is a static DCAT description, not portal registration, W3C certification, institutional endorsement or proof that an external catalog has harvested it.",
+    "lead": "Use the static Bopomofo DCAT 3 open-data catalog. It lists eleven related datasets and 51 exact distributions in equivalent JSON-LD and Turtle graphs, with one deterministic ZIP bundle.",
+    "detail": "The catalog covers the 37-symbol reference data, static JSON API, SKOS and SHACL vocabulary, Croissant, CSVW and Data Package tables, RFC 8493 BagIt and OCFL 1.1 preservation packages, Anki imports, LMS packages, EPUB and OPDS publication files, library records, and OER repository metadata. Every direct distribution records an IANA media-type IRI, byte size, CC BY 4.0 license, language IRIs and an SPDX SHA-256 checksum calculated from the published bytes. Each dcat:CatalogRecord has exactly one foaf:primaryTopic, and the static API is represented separately as a dcat:DataService. Download from https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html. This is a static DCAT description, not portal registration, W3C certification, institutional endorsement or proof that an external catalog has harvested it.",
     "follow_up": "Parse the JSON-LD or Turtle in a staging catalog, read dcat:dataset and dcat:record, verify distribution hashes and byte sizes, and map themes, language policies and local identifiers before publication. Use dcat:downloadURL for files and dcat:endpointURL for the read-only API.",
     "bullets": [
-      "Ten catalogued Bopomofo datasets with bilingual titles and descriptions",
-      "Forty-eight direct distributions spanning data, linked data, tabular metadata, preservation packages, learning packages, publications and repository metadata",
+      "Eleven catalogued Bopomofo datasets with bilingual titles and descriptions",
+      "Fifty-one direct distributions spanning data, linked data, tabular metadata, preservation packages, learning packages, publications and repository metadata",
       "Equivalent JSON-LD and Turtle RDF graphs with stable named resources",
       "SPDX SHA-256 checksums, exact byte sizes, IANA media-type IRIs and distribution-level CC BY 4.0 licenses",
       "One dcat:DataService for the versioned static JSON API, with OpenAPI endpoint description"

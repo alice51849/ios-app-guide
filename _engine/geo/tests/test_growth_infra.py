@@ -60,6 +60,7 @@ import zhuyin_anki_deck
 import zhuyin_croissant_dataset
 import zhuyin_csvw_metadata
 import zhuyin_bagit_package
+import zhuyin_ocfl_object
 import zhuyin_dcat_catalog
 import zhuyin_epub_opds
 import zhuyin_frictionless_package
@@ -2713,6 +2714,341 @@ class GeneratorTests(unittest.TestCase):
             bag.validate()
             self.assertTrue(bag.is_valid())
 
+    def _seed_zhuyin_ocfl_pages(self, pages):
+        self._seed_zhuyin_bagit_pages(pages)
+        zhuyin_bagit_package.build(pages, app_public=False)
+
+    def test_zhuyin_ocfl_object_is_versioned_deterministic_and_discoverable(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            self._seed_zhuyin_ocfl_pages(pages)
+            payload, descriptions = zhuyin_ocfl_object.load_payload(pages)
+            first = zhuyin_ocfl_object.make_artifacts(
+                payload,
+                descriptions,
+                zhuyin_ocfl_object.INITIAL_DATE,
+            )
+            second = zhuyin_ocfl_object.make_artifacts(
+                payload,
+                descriptions,
+                zhuyin_ocfl_object.INITIAL_DATE,
+            )
+            self.assertEqual(
+                {
+                    key: value["bytes"]
+                    for key, value in first.items()
+                    if isinstance(value, dict) and "bytes" in value
+                },
+                {
+                    key: value["bytes"]
+                    for key, value in second.items()
+                    if isinstance(value, dict) and "bytes" in value
+                },
+            )
+            self.assertEqual(first["_object_files"], second["_object_files"])
+            zhuyin_ocfl_object.validate_artifacts(first)
+
+            object_files = first["_object_files"]
+            inventory_bytes = object_files["inventory.json"]
+            inventory = json.loads(inventory_bytes)
+            self.assertEqual(10, len(payload))
+            self.assertEqual("v1", inventory["head"])
+            self.assertEqual(
+                zhuyin_ocfl_object.INVENTORY_TYPE,
+                inventory["type"],
+            )
+            self.assertEqual("sha512", inventory["digestAlgorithm"])
+            self.assertEqual(
+                inventory_bytes,
+                object_files["v1/inventory.json"],
+            )
+            self.assertEqual(
+                zhuyin_ocfl_object._sidecar(inventory_bytes),
+                object_files["inventory.json.sha512"],
+            )
+            self.assertEqual(
+                object_files["inventory.json.sha512"],
+                object_files["v1/inventory.json.sha512"],
+            )
+            self.assertEqual(
+                zhuyin_ocfl_object._state_for_payload(payload),
+                inventory["versions"]["v1"]["state"],
+            )
+            self.assertEqual(
+                zhuyin_ocfl_object.INITIAL_TIMESTAMP,
+                inventory["versions"]["v1"]["created"],
+            )
+            created = dt.datetime.fromisoformat(
+                inventory["versions"]["v1"]["created"].replace("Z", "+00:00")
+            )
+            self.assertLessEqual(created, dt.datetime.now(dt.timezone.utc))
+            manifest_paths = {
+                path
+                for paths in inventory["manifest"].values()
+                for path in paths
+            }
+            fixity_paths = {
+                path
+                for paths in inventory["fixity"]["sha256"].values()
+                for path in paths
+            }
+            self.assertEqual(manifest_paths, fixity_paths)
+            self.assertEqual(10, len(manifest_paths))
+
+            changed = dict(payload)
+            changed_path = "data/README.md"
+            changed[changed_path] += b"\nVersioning regression fixture.\n"
+            versioned_files = zhuyin_ocfl_object.make_object_files(
+                changed,
+                "2026-07-13T00:00:00Z",
+                object_files,
+            )
+            zhuyin_ocfl_object.validate_object_files(
+                versioned_files,
+                changed,
+            )
+            versioned = json.loads(versioned_files["inventory.json"])
+            self.assertEqual("v2", versioned["head"])
+            self.assertEqual({"v1", "v2"}, set(versioned["versions"]))
+            for path, content in object_files.items():
+                if path not in {"inventory.json", "inventory.json.sha512"}:
+                    self.assertEqual(content, versioned_files[path])
+            new_content_paths = [
+                path for path in versioned_files if path.startswith("v2/content/")
+            ]
+            self.assertEqual([f"v2/content/{changed_path}"], new_content_paths)
+            self.assertEqual(
+                "Preservation update after a logical-state change.",
+                versioned["versions"]["v2"]["message"],
+            )
+            versioned_artifacts = zhuyin_ocfl_object.make_artifacts(
+                changed,
+                descriptions,
+                "2026-07-13",
+                object_files,
+                "2026-07-13T00:00:00Z",
+            )
+            versioned_page = zhuyin_ocfl_object.render_page(
+                "en",
+                versioned_artifacts,
+                app_public=False,
+            )
+            self.assertIn(
+                "object root and head-version directory",
+                versioned_page,
+            )
+            self.assertIn("└── v2/ (inventory + sidecar + content/)", versioned_page)
+            self.assertNotIn("object root and v1 directory", versioned_page)
+
+            renamed = dict(payload)
+            renamed["data/PRESERVATION.md"] = renamed.pop("data/README.md")
+            renamed_files = zhuyin_ocfl_object.make_object_files(
+                renamed,
+                "2026-07-13T00:00:00Z",
+                object_files,
+            )
+            zhuyin_ocfl_object.validate_object_files(renamed_files, renamed)
+            renamed_inventory = json.loads(renamed_files["inventory.json"])
+            self.assertEqual(
+                "Preservation update after a logical-state change.",
+                renamed_inventory["versions"]["v2"]["message"],
+            )
+            self.assertFalse(
+                any(path.startswith("v2/content/") for path in renamed_files)
+            )
+
+            with mock.patch.object(
+                zhuyin_ocfl_object,
+                "render_readme",
+                return_value=b"https://apps.apple.com/app/id6773017109\n",
+            ):
+                contaminated_payload, contaminated_descriptions = (
+                    zhuyin_ocfl_object.load_payload(pages)
+                )
+            contaminated = zhuyin_ocfl_object.make_artifacts(
+                contaminated_payload,
+                contaminated_descriptions,
+                zhuyin_ocfl_object.INITIAL_DATE,
+            )
+            with self.assertRaises(ValueError):
+                zhuyin_ocfl_object.validate_artifacts(contaminated)
+
+            urls = zhuyin_ocfl_object.build(pages, app_public=False)
+            expected = (
+                pages
+                / zhuyin_ocfl_object.PACKAGE_PATH
+                / zhuyin_ocfl_object.BUNDLE_FILENAME,
+                pages
+                / zhuyin_ocfl_object.PACKAGE_PATH
+                / zhuyin_ocfl_object.CHECKSUM_FILENAME,
+                pages
+                / zhuyin_ocfl_object.PACKAGE_PATH
+                / zhuyin_ocfl_object.METADATA_FILENAME,
+                pages / zhuyin_ocfl_object.PACKAGE_PATH / "index.html",
+                pages
+                / "zh-Hant"
+                / zhuyin_ocfl_object.PACKAGE_PATH
+                / "index.html",
+                pages / "sitemap_ocfl.xml",
+            )
+            self.assertEqual(6, len(urls))
+            self.assertTrue(all(path.exists() for path in expected))
+            built_metadata = json.loads(expected[2].read_text(encoding="utf-8"))
+            self.assertEqual(
+                zhuyin_ocfl_object.INITIAL_TIMESTAMP,
+                built_metadata["dateModified"],
+            )
+            for page in expected[3:5]:
+                content = page.read_text(encoding="utf-8")
+                self.assertIn("OCFL 1.1", content)
+                self.assertIn("ocfl-validate.py", content)
+                self.assertNotIn("apps.apple.com", content)
+                self.assertNotIn('"SoftwareApplication"', content)
+            public = zhuyin_ocfl_object.render_page(
+                "en",
+                first,
+                app_public=True,
+            )
+            self.assertIn(zhuyin_ocfl_object.APP_ID, public)
+            self.assertIn('"SoftwareApplication"', public)
+
+            with mock.patch.object(
+                gen_llms,
+                "DATA_DIR",
+                str(pages / "data"),
+            ), mock.patch.object(
+                gen_llms,
+                "PAGES",
+                str(pages),
+            ):
+                llms = gen_llms.build_llms({}, set())
+                full = gen_llms.build_llms_full({}, set())
+                robots = gen_llms.build_robots()
+                sitemap_index = gen_llms.build_sitemap_index()
+            for content in (llms, full):
+                self.assertIn("OCFL 1.1", content)
+                self.assertIn(zhuyin_ocfl_object.BUNDLE_URL, content)
+                self.assertIn(zhuyin_ocfl_object.METADATA_URL, content)
+            for content in (robots, sitemap_index):
+                self.assertIn("sitemap_ocfl.xml", content)
+
+            deep_items = json.loads(
+                (
+                    Path(GEO)
+                    / "deep_items"
+                    / "lumibopomofo.json"
+                ).read_text(encoding="utf-8")
+            )
+            deep_item = next(
+                item
+                for item in deep_items
+                if item["kind"] == "ocfl_digital_preservation"
+            )
+            self.assertEqual(
+                zhuyin_ocfl_object.PACKAGE_URL,
+                deep_item["primary_resource_url"],
+            )
+            self.assertIn("ten portable logical paths", deep_item["detail"])
+            self.assertIn(
+                "not a ZIP transfer serialization",
+                deep_item["detail"],
+            )
+            translations = json.loads(
+                (
+                    Path(GEO) / "i18n_trans" / "zh-Hant.json"
+                ).read_text(encoding="utf-8")
+            )
+
+            def translated_strings(value, parent_key=""):
+                if isinstance(value, str):
+                    if parent_key not in {
+                        "app_key",
+                        "kind",
+                        "match",
+                        "primary_resource_url",
+                        "url",
+                    }:
+                        yield value
+                elif isinstance(value, list):
+                    for child in value:
+                        yield from translated_strings(child, parent_key)
+                elif isinstance(value, dict):
+                    for key, child in value.items():
+                        yield from translated_strings(child, key)
+
+            self.assertEqual(
+                [],
+                [
+                    value
+                    for value in translated_strings(deep_item)
+                    if value not in translations
+                ],
+            )
+            self.assertIn(
+                "How to choose: " + deep_item["query"],
+                translations,
+            )
+            for truncated in (
+                "Download the ZIP, checksums-sha256.txt and metadata.jsonld "
+                "from the object guide",
+                "Run shasum -a 256 -c checksums-sha256.txt before extracting "
+                "the transfer wrapper",
+                "Extract the ZIP and confirm it creates only the "
+                "bopomofo-37-symbols-ocfl object ",
+                "Confirm the inventory id and local retention policy before "
+                "staging repository in",
+            ):
+                self.assertIn(truncated, translations)
+            self.assertIn(
+                deep_item["primary_resource_label"] + " →",
+                translations,
+            )
+
+            mtimes = {
+                path: path.stat().st_mtime_ns
+                for path in (*expected, pages / "data" / "index.html")
+            }
+            zhuyin_ocfl_object.build(pages, app_public=False)
+            self.assertEqual(
+                mtimes,
+                {path: path.stat().st_mtime_ns for path in mtimes},
+            )
+
+    @unittest.skipUnless(
+        importlib.util.find_spec("ocfl"),
+        "Independent ocfl-py validator is installed in CI",
+    )
+    def test_zhuyin_ocfl_object_validates_with_independent_processor(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory) / "site"
+            extracted = Path(directory) / "extracted"
+            self._seed_zhuyin_ocfl_pages(pages)
+            zhuyin_ocfl_object.build(pages, app_public=False)
+            bundle = (
+                pages
+                / zhuyin_ocfl_object.PACKAGE_PATH
+                / zhuyin_ocfl_object.BUNDLE_FILENAME
+            )
+            with zipfile.ZipFile(bundle) as archive:
+                archive.extractall(extracted)
+            validator = Path(sys.executable).with_name("ocfl-validate.py")
+            result = subprocess.run(
+                [
+                    str(validator),
+                    "--very-quiet",
+                    str(extracted / zhuyin_ocfl_object.OBJECT_ROOT),
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(
+                0,
+                result.returncode,
+                result.stdout + result.stderr,
+            )
+            self.assertIn("is VALID", result.stdout + result.stderr)
+
     def test_zhuyin_lms_question_bank_is_complete_and_portable(self):
         rows = zhuyin_croissant_dataset.records()
         first = zhuyin_lms_assessment_bank.make_core_artifacts(rows)
@@ -4320,6 +4656,7 @@ class GeneratorTests(unittest.TestCase):
         zhuyin_frictionless_package.build(pages, app_public=False)
         zhuyin_csvw_metadata.build(pages, app_public=False)
         zhuyin_bagit_package.build(pages, app_public=False)
+        zhuyin_ocfl_object.build(pages, app_public=False)
         zhuyin_static_api.build(pages, app_public=False)
         zhuyin_lms_assessment_bank.build(pages, app_public=False)
         zhuyin_epub_opds.build(pages, app_public=False)
@@ -4349,8 +4686,8 @@ class GeneratorTests(unittest.TestCase):
                     package_dir / zhuyin_dcat_catalog.METADATA_FILENAME
                 ).read_text(encoding="utf-8")
             )
-            self.assertEqual(10, metadata["numberOfItems"])
-            self.assertEqual(10, len(metadata["dataset"]))
+            self.assertEqual(11, metadata["numberOfItems"])
+            self.assertEqual(11, len(metadata["dataset"]))
             self.assertEqual(3, len(metadata["distribution"]))
             self.assertEqual(
                 zhuyin_dcat_catalog.DCAT_SPEC,
@@ -4429,7 +4766,7 @@ class GeneratorTests(unittest.TestCase):
             for landing in (english, traditional):
                 self.assertIn("DCAT 3", landing)
                 self.assertIn("SPDX", landing)
-                self.assertIn("48", landing)
+                self.assertIn("51", landing)
                 self.assertNotIn("apps.apple.com", landing)
                 self.assertNotIn('"SoftwareApplication"', landing)
 
@@ -4508,7 +4845,7 @@ class GeneratorTests(unittest.TestCase):
             )
             for answer in published_answers:
                 content = answer.read_text(encoding="utf-8")
-                self.assertIn("48", content)
+                self.assertIn("51", content)
                 self.assertIn("BagIt", content)
                 self.assertNotIn("45 exact distributions", content)
                 self.assertNotIn("45 個確切", content)
@@ -4571,7 +4908,7 @@ class GeneratorTests(unittest.TestCase):
                 format="turtle",
             )
             self.assertTrue(isomorphic(json_graph, turtle_graph))
-            self.assertEqual(1025, len(json_graph))
+            self.assertEqual(1098, len(json_graph))
 
             dcat = zhuyin_dcat_catalog.DCAT
             dcterms = zhuyin_dcat_catalog.DCTERMS
@@ -4605,9 +4942,9 @@ class GeneratorTests(unittest.TestCase):
                 {URIRef(zhuyin_dcat_catalog.CATALOG_ID)},
                 catalogs,
             )
-            self.assertEqual(10, len(records))
-            self.assertEqual(10, len(datasets))
-            self.assertEqual(48, len(distributions))
+            self.assertEqual(11, len(records))
+            self.assertEqual(11, len(datasets))
+            self.assertEqual(51, len(distributions))
             self.assertEqual(
                 {URIRef(zhuyin_dcat_catalog.API_SERVICE)},
                 services,
@@ -4700,6 +5037,18 @@ class GeneratorTests(unittest.TestCase):
                 set(
                     json_graph.objects(
                         bagit_dataset,
+                        URIRef(dcterms + "conformsTo"),
+                    )
+                ),
+            )
+            ocfl_dataset = URIRef(
+                f"{zhuyin_dcat_catalog.LANDING_URL}#dataset-ocfl"
+            )
+            self.assertEqual(
+                {URIRef(zhuyin_ocfl_object.SPEC_URL)},
+                set(
+                    json_graph.objects(
+                        ocfl_dataset,
                         URIRef(dcterms + "conformsTo"),
                     )
                 ),
@@ -4842,7 +5191,7 @@ class GeneratorTests(unittest.TestCase):
                     hashlib.sha256(content).hexdigest(),
                     str(values[0]),
                 )
-            self.assertEqual(48, len(checksum_nodes))
+            self.assertEqual(51, len(checksum_nodes))
             self.assertEqual(
                 1,
                 len(
@@ -5002,7 +5351,7 @@ class GeneratorTests(unittest.TestCase):
 
             resources = zhuyin_resourcesync.discover_resources(pages)
             entries = resource_list.findall(f"{{{sitemap_ns}}}url")
-            self.assertEqual(153, len(resources))
+            self.assertEqual(158, len(resources))
             self.assertEqual(len(resources), len(entries))
             resources_by_path = {
                 resource.relative_path.as_posix(): resource
@@ -6996,6 +7345,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_frictionless_package.py", workflow)
         self.assertIn("zhuyin_csvw_metadata.py", workflow)
         self.assertIn("zhuyin_bagit_package.py", workflow)
+        self.assertIn("zhuyin_ocfl_object.py", workflow)
         self.assertIn("zhuyin_static_api.py", workflow)
         self.assertIn("zhuyin_lms_assessment_bank.py", workflow)
         self.assertIn("zhuyin_epub_opds.py", workflow)
@@ -7032,6 +7382,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_frictionless_package.py",
             "zhuyin_csvw_metadata.py",
             "zhuyin_bagit_package.py",
+            "zhuyin_ocfl_object.py",
             "zhuyin_static_api.py",
             "zhuyin_lms_assessment_bank.py",
             "zhuyin_epub_opds.py",
@@ -7057,6 +7408,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("--refresh-slug \"$DCAT_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$CSVW_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$BAGIT_SLUG\"", workflow)
+        self.assertIn("--refresh-slug \"$OCFL_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$TRIP_SLUG\"", workflow)
         self.assertIn('"lumibopomofo" in live_app_keys', workflow)
         self.assertIn('"tripplanet" in live_app_keys', workflow)
@@ -7078,6 +7430,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_frictionless_package.py", publish)
         self.assertIn("zhuyin_csvw_metadata.py", publish)
         self.assertIn("zhuyin_bagit_package.py", publish)
+        self.assertIn("zhuyin_ocfl_object.py", publish)
         self.assertIn("zhuyin_static_api.py", publish)
         self.assertIn("zhuyin_lms_assessment_bank.py", publish)
         self.assertIn("zhuyin_epub_opds.py", publish)
@@ -7115,6 +7468,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_frictionless_package.py",
             "zhuyin_csvw_metadata.py",
             "zhuyin_bagit_package.py",
+            "zhuyin_ocfl_object.py",
             "zhuyin_static_api.py",
             "zhuyin_lms_assessment_bank.py",
             "zhuyin_epub_opds.py",

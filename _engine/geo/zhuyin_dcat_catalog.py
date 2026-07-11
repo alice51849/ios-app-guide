@@ -277,6 +277,28 @@ DATASETS = (
         conforms_to=("https://www.rfc-editor.org/rfc/rfc8493",),
     ),
     DatasetSpec(
+        key="ocfl",
+        title_en="Bopomofo OCFL 1.1 preservation object",
+        title_zh="注音 OCFL 1.1 數位保存物件",
+        description_en=(
+            "A version-aware OCFL 1.1 object with ten logical files, SHA-512 "
+            "content addressing, complete SHA-256 fixity and a deterministic ZIP."
+        ),
+        description_zh=(
+            "具版本能力的 OCFL 1.1 保存物件，包含 10 個 logical files、"
+            "SHA-512 content addressing、完整 SHA-256 fixity 與 deterministic ZIP。"
+        ),
+        landing_path="data/packages/zhuyin-bopomofo-ocfl/",
+        metadata_path="data/packages/zhuyin-bopomofo-ocfl/metadata.jsonld",
+        distribution_paths=(
+            "data/packages/zhuyin-bopomofo-ocfl/bopomofo-37-symbols-ocfl-1.1.zip",
+            "data/packages/zhuyin-bopomofo-ocfl/checksums-sha256.txt",
+            "data/packages/zhuyin-bopomofo-ocfl/metadata.jsonld",
+        ),
+        keywords=("OCFL 1.1", "digital preservation", "versioning", "fixity"),
+        conforms_to=("https://ocfl.io/1.1/spec/",),
+    ),
+    DatasetSpec(
         key="anki",
         title_en="Bopomofo Anki import decks",
         title_zh="注音 Anki 匯入牌組",
@@ -419,8 +441,8 @@ COPY = {
         "lang": "en",
         "title": "DCAT 3 open-data catalog for Bopomofo resources",
         "description": (
-            "Download a static W3C DCAT 3 catalog covering ten verified "
-            "Bopomofo datasets and 48 exact distributions."
+            "Download a static W3C DCAT 3 catalog covering eleven verified "
+            "Bopomofo datasets and 51 exact distributions."
         ),
         "eyebrow": "W3C DCAT 3 · JSON-LD + Turtle · SHA-256",
         "lead": (
@@ -431,8 +453,8 @@ COPY = {
         "back": "Open data",
         "language": "繁體中文",
         "badges": (
-            "10 catalogued datasets",
-            "48 exact distributions",
+            "11 catalogued datasets",
+            "51 exact distributions",
             "SPDX SHA-256 fixity",
             "No account or API key",
         ),
@@ -452,7 +474,7 @@ COPY = {
             (
                 "Reference and linked data",
                 "Core JSON, SKOS, SHACL, Croissant, CSVW, CSV, JSON Lines, "
-                "Data Package 2.0 and RFC 8493 BagIt.",
+                "Data Package 2.0, RFC 8493 BagIt and OCFL 1.1.",
             ),
             (
                 "Learning and publication files",
@@ -503,7 +525,7 @@ COPY = {
         "lang": "zh-Hant",
         "title": "注音開放資源 DCAT 3 資料目錄",
         "description": (
-            "下載靜態 W3C DCAT 3 目錄，收錄 10 組已驗證注音資料集與 48 個精確版本。"
+            "下載靜態 W3C DCAT 3 目錄，收錄 11 組已驗證注音資料集與 51 個精確版本。"
         ),
         "eyebrow": "W3C DCAT 3 · JSON-LD＋Turtle · SHA-256",
         "lead": (
@@ -513,8 +535,8 @@ COPY = {
         "back": "開放資料",
         "language": "English",
         "badges": (
-            "10 組目錄資料集",
-            "48 個精確版本",
+            "11 組目錄資料集",
+            "51 個精確版本",
             "SPDX SHA-256 fixity",
             "免帳號與 API key",
         ),
@@ -534,7 +556,7 @@ COPY = {
             (
                 "參考資料與 linked data",
                 "核心 JSON、SKOS、SHACL、Croissant、CSVW、CSV、JSON Lines、"
-                "Data Package 2.0 與 RFC 8493 BagIt。",
+                "Data Package 2.0、RFC 8493 BagIt 與 OCFL 1.1。",
             ),
             (
                 "學習與出版檔案",
@@ -1592,7 +1614,7 @@ def _update_data_index(
         f'{CARD_START}<a class="item" href="{LANDING_URL}"><div>'
         '<span class="tag">W3C DCAT 3 · JSON-LD · Turtle</span>'
         "<h2>Bopomofo open-data catalog</h2>"
-        "<p>Ten datasets and 48 exact distributions with SPDX SHA-256 "
+        "<p>Eleven datasets and 51 exact distributions with SPDX SHA-256 "
         "fixity and bilingual metadata.</p></div>"
         f'<span class="arrow">&rarr;</span></a>{CARD_END}'
     )

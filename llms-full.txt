@@ -653,6 +653,13 @@
   - Outer SHA-256 checksum: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/checksums-sha256.txt
   - Preservation package metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/metadata.jsonld
 
+## Bopomofo OCFL 1.1 preservation object
+- [English guide](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/)
+- [Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-ocfl/)
+  - Deterministic OCFL object ZIP: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/bopomofo-37-symbols-ocfl-1.1.zip
+  - Outer SHA-256 checksum: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/checksums-sha256.txt
+  - Preservation object metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/metadata.jsonld
+
 ## Bopomofo portable Data Package
 - [English Data Package guide](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/)
 - [Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo/)
@@ -806,6 +813,7 @@
 - https://alice51849.github.io/ios-app-guide/sitemap_datapackage.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_csvw.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_bagit.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_ocfl.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_lms.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_epub.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_library_catalog.xml

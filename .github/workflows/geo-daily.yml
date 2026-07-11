@@ -40,7 +40,10 @@ jobs:
           python3 -m venv "$RUNNER_TEMP/iiif-validator"
           "$RUNNER_TEMP/iiif-validator/bin/pip" install \
             --requirement _engine/geo/requirements-iiif-validation.txt
-          echo "$RUNNER_TEMP/iiif-validator/bin" >> "$GITHUB_PATH"
+          mkdir -p "$RUNNER_TEMP/iiif-validator-bin"
+          ln -s "$RUNNER_TEMP/iiif-validator/bin/iiif-validator" \
+            "$RUNNER_TEMP/iiif-validator-bin/iiif-validator"
+          echo "$RUNNER_TEMP/iiif-validator-bin" >> "$GITHUB_PATH"
       - name: Link site dir into engine layout
         run: |
           rm -rf _engine/geo/pages

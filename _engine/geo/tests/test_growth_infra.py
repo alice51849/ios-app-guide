@@ -7813,6 +7813,11 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_ocfl_object.py", workflow)
         self.assertIn("zhuyin_iiif_presentation.py", workflow)
         self.assertIn("requirements-iiif-validation.txt", workflow)
+        self.assertIn("iiif-validator-bin", workflow)
+        self.assertNotIn(
+            'echo "$RUNNER_TEMP/iiif-validator/bin" >> "$GITHUB_PATH"',
+            workflow,
+        )
         self.assertIn("zhuyin_static_api.py", workflow)
         self.assertIn("zhuyin_lms_assessment_bank.py", workflow)
         self.assertIn("zhuyin_epub_opds.py", workflow)

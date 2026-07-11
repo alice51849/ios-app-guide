@@ -28,6 +28,7 @@ SITE = os.environ.get(
     "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
 ).rstrip("/")
 LOCALE_RE = re.compile(r"^[a-z]{2,3}(?:-[A-Za-z]{2,4})?$")
+RESERVED_TOP_LEVEL_DIRS = {"api"}
 URL_BLOCK_RE = re.compile(r"\s*<url>.*?</url>", re.DOTALL)
 SITEMAP_ALT_LINK_RE = re.compile(
     r'\s*<xhtml:link\b[^>]*\bhref="([^"]+)"[^>]*/>',
@@ -176,7 +177,11 @@ def locale_dirs(pages: Path) -> list[Path]:
     return sorted(
         child
         for child in pages.iterdir()
-        if child.is_dir() and LOCALE_RE.fullmatch(child.name)
+        if (
+            child.is_dir()
+            and child.name not in RESERVED_TOP_LEVEL_DIRS
+            and LOCALE_RE.fullmatch(child.name)
+        )
     )
 
 
@@ -488,7 +493,7 @@ def internal_link_target(
         if parsed.path == site_path:
             target = pages / "index.html"
         elif not parsed.path.startswith(f"{site_path}/"):
-            return pages / "__missing_external_site_path__"
+            return None
         else:
             relative = parsed.path[len(site_path) + 1 :]
             target = pages / relative

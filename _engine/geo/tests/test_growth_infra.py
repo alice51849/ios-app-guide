@@ -438,6 +438,41 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn('"@type":"SoftwareApplication"', public_page)
         self.assertNotIn('"offers"', public_page)
 
+    def test_cleanup_preserves_api_namespace_and_cross_project_links(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            (pages / "api").mkdir()
+            (pages / "en-US").mkdir()
+            self.assertEqual(
+                ["en-US"],
+                [path.name for path in cleanup_localized_assets.locale_dirs(pages)],
+            )
+            cross_project = (
+                '<a href="https://alice51849.github.io/'
+                'awesome-family-travel-missions/">Curated resources</a>'
+            )
+            self.assertEqual(
+                cross_project,
+                cleanup_localized_assets.remove_missing_html_links(
+                    pages / "data" / "family-travel-missions.html",
+                    cross_project,
+                    pages,
+                ),
+            )
+            api_page = (
+                '<link rel="canonical" href="'
+                'https://alice51849.github.io/ios-app-guide/api/">'
+            )
+            self.assertEqual(
+                api_page,
+                cleanup_localized_assets.repair_html_hreflang(
+                    pages / "api" / "index.html",
+                    api_page,
+                    pages,
+                    {"en-US"},
+                ),
+            )
+
     def test_family_travel_static_api_builds_stable_versioned_surface(self):
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)

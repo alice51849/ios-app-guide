@@ -32,6 +32,7 @@ import build_pages_i18n
 import cleanup_localized_assets
 import family_travel_dataset
 import family_travel_mission_cards
+import family_travel_observation_passport
 import family_travel_static_api
 import gen_app_catalog
 import gen_calculator
@@ -307,6 +308,12 @@ class GeneratorTests(unittest.TestCase):
             self.assertIn("family-travel-missions.csv-metadata.json", private_page)
             self.assertIn("family-travel-missions.dcat.jsonld", private_page)
             self.assertIn("/api/v1/family-travel-missions/", private_page)
+            expected_passport = (
+                "/zh-Hant/tools/family-travel-observation-passport.html"
+                if locale == "zh-Hant"
+                else "/tools/family-travel-observation-passport.html"
+            )
+            self.assertIn(expected_passport, private_page)
             self.assertNotIn("apps.apple.com", private_page)
             self.assertNotIn('"@type":"SoftwareApplication"', private_page)
         public_page = family_travel_dataset.render_page(
@@ -701,6 +708,120 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("price", software)
         main = public_page.split("<main>", 1)[1]
         self.assertLess(main.index('id="generator"'), main.index(f"id{family_travel_mission_cards.APP_ID}"))
+
+    def test_family_travel_observation_passport_is_open_private_and_bilingual(self):
+        dataset = family_travel_observation_passport.load_dataset()
+        artifacts = family_travel_observation_passport.make_pdf_artifacts(dataset)
+        for locale in ("en", "zh-Hant"):
+            page = family_travel_observation_passport.render_page(
+                dataset,
+                locale,
+                artifacts[locale],
+                app_public=False,
+                modified="2026-07-11",
+            )
+            self.assertEqual(14, page.count('class="passport-sheet'))
+            self.assertEqual(36, page.count('class="prompt-card'))
+            self.assertIn('"@type":"LearningResource"', page)
+            self.assertIn('"accessModeSufficient"', page)
+            self.assertIn('hreflang="en"', page)
+            self.assertIn('hreflang="zh-Hant"', page)
+            self.assertIn("application/ld+json", page)
+            self.assertIn(f"{family_travel_observation_passport.SLUG}.metadata.json", page)
+            self.assertNotIn("apps.apple.com", page)
+            self.assertNotIn('"@type":"SoftwareApplication"', page)
+            self.assertNotIn("<form", page)
+            self.assertNotIn("<input", page)
+            self.assertNotIn("localStorage", page)
+            self.assertNotIn("XMLHttpRequest", page)
+            self.assertNotIn("fetch(", page)
+            for artifact in artifacts[locale].values():
+                self.assertTrue(artifact["bytes"].startswith(b"%PDF-"))
+                self.assertGreater(len(artifact["bytes"]), 20_000)
+                self.assertIn(artifact["sha256"], page)
+        english = family_travel_observation_passport.render_page(
+            dataset, "en", artifacts["en"], app_public=False
+        )
+        self.assertIn("No names · No destinations · No photos", english)
+        traditional = family_travel_observation_passport.render_page(
+            dataset, "zh-Hant", artifacts["zh-Hant"], app_public=False
+        )
+        self.assertIn("不填姓名 · 不填目的地 · 不拍照", traditional)
+        self.assertIn("駕駛絕不閱讀、回答或操作", traditional)
+
+        metadata = family_travel_observation_passport.metadata_graph(
+            dataset, "2026-07-11", artifacts
+        )
+        family_travel_observation_passport.validate_metadata(metadata)
+        encoded = json.dumps(metadata, ensure_ascii=False)
+        self.assertNotIn("apps.apple.com", encoded)
+        self.assertNotIn("SoftwareApplication", encoded)
+        self.assertNotIn(family_travel_observation_passport.APP_ID, encoded)
+        self.assertEqual(2, len(metadata["@graph"]))
+        for resource in metadata["@graph"]:
+            self.assertEqual(
+                ["textual"],
+                resource["accessModeSufficient"]["itemListElement"],
+            )
+            self.assertEqual(2, len(resource["encoding"]))
+
+    def test_family_travel_observation_passport_app_layer_is_verified_and_optional(self):
+        dataset = family_travel_observation_passport.load_dataset()
+        artifacts = family_travel_observation_passport.make_pdf_artifacts(dataset)
+        private_page = family_travel_observation_passport.render_page(
+            dataset, "en", artifacts["en"], app_public=False
+        )
+        public_page = family_travel_observation_passport.render_page(
+            dataset, "en", artifacts["en"], app_public=True
+        )
+        self.assertNotIn(family_travel_observation_passport.APP_ID, private_page)
+        self.assertIn(family_travel_observation_passport.APP_ID, public_page)
+        self.assertIn('"@type":"SoftwareApplication"', public_page)
+        main = public_page.split("<main>", 1)[1]
+        self.assertLess(
+            main.index('id="passport"'),
+            main.index(family_travel_observation_passport.APP_ID),
+        )
+
+    def test_family_travel_observation_passport_build_is_stable(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            tools = pages / "tools"
+            tools.mkdir()
+            (tools / "index.html").write_text(
+                '<main><section class="wrap grid"></section></main>',
+                encoding="utf-8",
+            )
+            urls = family_travel_observation_passport.build(
+                pages, app_public=False
+            )
+            outputs = [
+                tools / f"{family_travel_observation_passport.SLUG}.html",
+                pages
+                / "zh-Hant"
+                / "tools"
+                / f"{family_travel_observation_passport.SLUG}.html",
+                tools
+                / f"{family_travel_observation_passport.SLUG}.metadata.json",
+                *sorted(tools.glob(f"{family_travel_observation_passport.SLUG}-*.pdf")),
+            ]
+            self.assertEqual(7, len(urls))
+            self.assertEqual(7, len(outputs))
+            self.assertTrue(all(path.exists() for path in outputs))
+            self.assertTrue(all(path.stat().st_size > 20_000 for path in outputs[-4:]))
+            mtimes = {path: path.stat().st_mtime_ns for path in outputs}
+            family_travel_observation_passport.build(
+                pages, app_public=False
+            )
+            self.assertEqual(
+                mtimes, {path: path.stat().st_mtime_ns for path in outputs}
+            )
+            self.assertEqual(
+                1,
+                (tools / "index.html")
+                .read_text(encoding="utf-8")
+                .count(f"{family_travel_observation_passport.SLUG}.html"),
+            )
 
     def test_family_travel_cards_build_both_pages_and_index_card(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -2295,6 +2416,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_grade1_summer_calendar.py", workflow)
         self.assertIn("zhuyin_grade1_guide.py", workflow)
         self.assertIn("family_travel_mission_cards.py", workflow)
+        self.assertIn("family_travel_observation_passport.py", workflow)
         self.assertIn("--refresh-slug \"$SUMMER_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$OBSERVATION_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$TRIP_SLUG\"", workflow)
@@ -2311,6 +2433,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_grade1_summer_calendar.py", publish)
         self.assertIn("zhuyin_grade1_guide.py", publish)
         self.assertIn("family_travel_mission_cards.py", publish)
+        self.assertIn("family_travel_observation_passport.py", publish)
         self.assertIn("--refresh-slug", publish)
         self.assertIn("aeo_answers_i18n.py", publish)
         self.assertIn("add_related_answers.py", publish)

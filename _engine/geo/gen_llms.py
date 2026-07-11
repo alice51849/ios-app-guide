@@ -41,6 +41,7 @@ TOOLS = os.path.join(PAGES, "tools")
 STORIES = os.path.join(PAGES, "stories")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
 SOV = os.path.join(HERE, "reports", "aeo_sov.json")
+FAMILY_TRAVEL_OER = "family-travel-observation-passport"
 
 AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "anthropic-ai",
            "Claude-Web", "PerplexityBot", "Perplexity-User", "Google-Extended",
@@ -163,6 +164,16 @@ def build_llms(comp_map, live_keys):
             f"- Documentation: {SITE}/api/v1/family-travel-missions/",
             f"- OpenAPI 3.1: {SITE}/api/v1/family-travel-missions/openapi.json",
             f"- API index: {SITE}/api/v1/family-travel-missions/index.json",
+        ]
+    if os.path.exists(os.path.join(TOOLS, f"{FAMILY_TRAVEL_OER}.metadata.json")):
+        lines += [
+            "",
+            "## Open educational resources (CC BY 4.0)",
+            f"- Family Travel Observation Passport: {SITE}/tools/{FAMILY_TRAVEL_OER}.html",
+            f"- Traditional Chinese edition: {SITE}/zh-Hant/tools/{FAMILY_TRAVEL_OER}.html",
+            f"- Machine-readable OER metadata: {SITE}/tools/{FAMILY_TRAVEL_OER}.metadata.json",
+            f"- English A4 PDF: {SITE}/tools/{FAMILY_TRAVEL_OER}-en-a4.pdf",
+            f"- Traditional Chinese A4 PDF: {SITE}/tools/{FAMILY_TRAVEL_OER}-zh-hant-a4.pdf",
         ]
     # 外部 curated 清單與資料集(GitHub;已實測會被 AI 引用的來源,讓爬蟲從站也能發現整個 repo 生態)
     ghbase = "https://github.com/alice51849"
@@ -304,6 +315,18 @@ def build_llms_full(comp_map, live_keys):
             f"  - API index: {SITE}/api/v1/family-travel-missions/index.json",
             f"  - Index schema: {SITE}/api/v1/family-travel-missions/index.schema.json",
             f"  - Scenario schema: {SITE}/api/v1/family-travel-missions/scenario.schema.json",
+        ]
+    if os.path.exists(os.path.join(TOOLS, f"{FAMILY_TRAVEL_OER}.metadata.json")):
+        lines += [
+            "",
+            "## Open educational resources",
+            f"- [Family Travel Observation Passport]({SITE}/tools/{FAMILY_TRAVEL_OER}.html)",
+            f"  - Traditional Chinese: {SITE}/zh-Hant/tools/{FAMILY_TRAVEL_OER}.html",
+            f"  - OER metadata: {SITE}/tools/{FAMILY_TRAVEL_OER}.metadata.json",
+            f"  - English A4 PDF: {SITE}/tools/{FAMILY_TRAVEL_OER}-en-a4.pdf",
+            f"  - English US Letter PDF: {SITE}/tools/{FAMILY_TRAVEL_OER}-en-letter.pdf",
+            f"  - Traditional Chinese A4 PDF: {SITE}/tools/{FAMILY_TRAVEL_OER}-zh-hant-a4.pdf",
+            f"  - Traditional Chinese US Letter PDF: {SITE}/tools/{FAMILY_TRAVEL_OER}-zh-hant-letter.pdf",
         ]
 
     locale_hubs = []

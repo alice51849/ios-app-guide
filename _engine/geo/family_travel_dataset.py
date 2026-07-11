@@ -45,6 +45,7 @@ DICTIONARY_URL = (
     "DATA_DICTIONARY.md"
 )
 API_DOCS_URL = f"{SITE}/api/v1/family-travel-missions/"
+PASSPORT_URL = f"{SITE}/tools/family-travel-observation-passport.html"
 CONTENT_MODIFIED_RE = re.compile(
     r'<meta name="content-modified" content="([0-9]{4}-[0-9]{2}-[0-9]{2})">'
 )
@@ -113,6 +114,7 @@ COPY = {
             "Free to reuse under CC BY 4.0 with attribution. Suggested citation:"
         ),
         "related": "Free companion resources",
+        "passport": "Print the family travel observation passport",
         "generator": "Make printable mission cards",
         "curated": "Compare trusted family-travel resources",
         "api": "Use the versioned static API",
@@ -182,6 +184,7 @@ COPY = {
         "cite": "引用方式",
         "cite_note": "依 CC BY 4.0 授權，可在標示來源後自由再利用。建議引用：",
         "related": "免費搭配資源",
+        "passport": "列印親子旅行觀察護照",
         "generator": "製作可列印任務卡",
         "curated": "比較可信親子旅行資源",
         "api": "使用版本化靜態 API",
@@ -441,12 +444,14 @@ def render_page(
     copy = COPY[locale]
     modified = page_modified or dataset["dateModified"]
     other_locale = "zh-Hant" if locale == "en" else "en"
+    passport_url = PASSPORT_URL
     generator_url = dataset["relatedResources"][0]["url"]
     curated_url = dataset["relatedResources"][1]["url"]
     api_docs_url = (
         API_DOCS_URL if locale == "en" else f"{SITE}/zh-Hant/api/v1/{SLUG}/"
     )
     if locale == "zh-Hant":
+        passport_url = passport_url.replace(f"{SITE}/", f"{SITE}/zh-Hant/")
         generator_url = generator_url.replace(f"{SITE}/", f"{SITE}/zh-Hant/")
         curated_url = curated_url.rstrip("/") + "/zh-Hant/"
     badges = "".join(f"<span>{html.escape(item)}</span>" for item in copy["badges"])
@@ -557,7 +562,7 @@ summary span{{color:var(--sub);font-size:13px;white-space:nowrap}}.scenario-body
 </section>
 <section>
 <h2>{html.escape(copy['related'])}</h2>
-<div class="related"><a href="{html.escape(generator_url, quote=True)}">{html.escape(copy['generator'])} →</a><a href="{html.escape(curated_url, quote=True)}">{html.escape(copy['curated'])} →</a><a href="{html.escape(api_docs_url, quote=True)}">{html.escape(copy['api'])} →</a></div>
+<div class="related"><a href="{html.escape(passport_url, quote=True)}">{html.escape(copy['passport'])} →</a><a href="{html.escape(generator_url, quote=True)}">{html.escape(copy['generator'])} →</a><a href="{html.escape(curated_url, quote=True)}">{html.escape(copy['curated'])} →</a><a href="{html.escape(api_docs_url, quote=True)}">{html.escape(copy['api'])} →</a></div>
 </section>
 {app_block}
 <footer>{html.escape(copy['footer'])}</footer>

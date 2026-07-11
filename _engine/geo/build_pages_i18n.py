@@ -790,7 +790,8 @@ def build_robots():
         out += [f"User-agent: {bot}", "Allow: /", ""]
     out += ["User-agent: *", "Allow: /", ""]
     for sm in ("sitemap.xml", "sitemap_alternatives.xml", "sitemap_answers.xml",
-               "sitemap_guides.xml", "sitemap_stories.xml", "sitemap_hubs.xml",
+               "sitemap_guides.xml", "sitemap_stories.xml", "sitemap_images.xml",
+               "sitemap_hubs.xml",
                "sitemap_tools.xml", "sitemap_index.xml"):
         out.append(f"Sitemap: {SITE}/{sm}")
     txt = "\n".join(out) + "\n"

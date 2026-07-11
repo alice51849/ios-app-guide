@@ -191,6 +191,7 @@ def main():
     )
     require([PY, os.path.join(HERE, "fix_en_hreflang.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_resourcesync.py")], env=env)
+    require([PY, os.path.join(HERE, "gen_image_sitemap.py")], env=env)
     require([PY, os.path.join(HERE, "gen_llms.py"), "--cached-live"], env=env)
     require([PY, os.path.join(HERE, "gen_feed.py")], env=env)
     if "--no-push" in sys.argv:

@@ -50,6 +50,7 @@ import gen_cost_compare
 import gen_data_hub
 import gen_feed
 import gen_hubs
+import gen_image_sitemap
 import gen_llms
 import gen_roundups
 import indexnow_submit
@@ -232,6 +233,85 @@ class GeneratorTests(unittest.TestCase):
             modified = output.stat().st_mtime_ns
             self.assertFalse(gen_feed._write_if_changed(str(output), "stable"))
             self.assertEqual(modified, output.stat().st_mtime_ns)
+
+    def test_image_sitemap_maps_every_canonical_story_to_its_owned_poster(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            images = pages / "stories" / "img"
+            images.mkdir(parents=True)
+            for key in ("alpha", "beta"):
+                (images / f"{key}-poster.jpg").write_bytes(f"{key}-image".encode())
+                (pages / "stories" / f"{key}.html").write_text(
+                    '<link rel="canonical" href="'
+                    f'{gen_image_sitemap.SITE}/stories/{key}.html">'
+                    '<amp-story poster-portrait-src="'
+                    f'{gen_image_sitemap.SITE}/stories/img/{key}-poster.jpg">',
+                    encoding="utf-8",
+                )
+            (pages / "stories" / "index.html").write_text(
+                "<html></html>", encoding="utf-8"
+            )
+
+            count, changed = gen_image_sitemap.generate(pages)
+            output = pages / "sitemap_images.xml"
+            first_mtime = output.stat().st_mtime_ns
+            second_count, second_changed = gen_image_sitemap.generate(pages)
+
+            self.assertEqual((2, True), (count, changed))
+            self.assertEqual((2, False), (second_count, second_changed))
+            self.assertEqual(first_mtime, output.stat().st_mtime_ns)
+            root = ET.parse(output).getroot()
+            sitemap = f"{{{gen_image_sitemap.SITEMAP_NS}}}"
+            image = f"{{{gen_image_sitemap.IMAGE_NS}}}"
+            urls = root.findall(f"{sitemap}url")
+            self.assertEqual(
+                [
+                    f"{gen_image_sitemap.SITE}/stories/alpha.html",
+                    f"{gen_image_sitemap.SITE}/stories/beta.html",
+                ],
+                [item.findtext(f"{sitemap}loc") for item in urls],
+            )
+            self.assertEqual(
+                [
+                    f"{gen_image_sitemap.SITE}/stories/img/alpha-poster.jpg",
+                    f"{gen_image_sitemap.SITE}/stories/img/beta-poster.jpg",
+                ],
+                [
+                    item.find(f"{image}image").findtext(f"{image}loc")
+                    for item in urls
+                ],
+            )
+            text = output.read_text(encoding="utf-8")
+            for deprecated in ("image:caption", "image:title", "image:license"):
+                self.assertNotIn(deprecated, text)
+            self.assertIn("sitemap_images.xml", gen_llms.build_robots())
+            with mock.patch.object(gen_llms, "PAGES", str(pages)):
+                self.assertIn("sitemap_images.xml", gen_llms.build_sitemap_index())
+
+    def test_image_sitemap_rejects_missing_or_unowned_posters(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            stories = pages / "stories"
+            stories.mkdir()
+            story = stories / "alpha.html"
+            story.write_text(
+                '<link rel="canonical" href="'
+                f'{gen_image_sitemap.SITE}/stories/alpha.html">'
+                '<amp-story poster-portrait-src="https://example.com/poster.jpg">',
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(ValueError, "not a stable owned URL"):
+                gen_image_sitemap.generate(pages)
+
+            story.write_text(
+                '<link rel="canonical" href="'
+                f'{gen_image_sitemap.SITE}/stories/alpha.html">'
+                '<amp-story poster-portrait-src="'
+                f'{gen_image_sitemap.SITE}/stories/img/missing.jpg">',
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(FileNotFoundError, "missing or empty"):
+                gen_image_sitemap.generate(pages)
 
     def test_atom_feed_keeps_guides_and_free_tools_within_the_item_cap(self):
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(
@@ -9949,6 +10029,7 @@ class GeneratorTests(unittest.TestCase):
         final_chain = (
             "cleanup_localized_assets.py --cached-live",
             "zhuyin_resourcesync.py",
+            "gen_image_sitemap.py",
             "gen_llms.py --cached-live",
             "gen_feed.py",
         )
@@ -10002,6 +10083,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_oer_metadata.py", publish)
         self.assertIn("zhuyin_dcat_catalog.py", publish)
         self.assertIn("zhuyin_resourcesync.py", publish)
+        self.assertIn("gen_image_sitemap.py", publish)
         self.assertIn("family_travel_mission_cards.py", publish)
         self.assertIn("family_travel_observation_passport.py", publish)
         self.assertIn("family_travel_opds_catalog.py", publish)
@@ -10051,6 +10133,7 @@ class GeneratorTests(unittest.TestCase):
             "add_related_tools.py",
             "fix_en_hreflang.py",
             "zhuyin_resourcesync.py",
+            "gen_image_sitemap.py",
             "gen_llms.py",
             "gen_feed.py",
         )

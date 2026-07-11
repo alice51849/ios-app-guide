@@ -190,6 +190,7 @@ jobs:
           cd _engine/geo
           python3 cleanup_localized_assets.py --cached-live
           python3 zhuyin_resourcesync.py
+          python3 gen_image_sitemap.py
           python3 gen_llms.py --cached-live
           python3 gen_feed.py
       - name: Unlink site dir

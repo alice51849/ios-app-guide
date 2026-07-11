@@ -46,6 +46,8 @@ DICTIONARY_URL = (
 )
 API_DOCS_URL = f"{SITE}/api/v1/family-travel-missions/"
 PASSPORT_URL = f"{SITE}/tools/family-travel-observation-passport.html"
+RO_CRATE_FILENAME = f"{SLUG}-ro-crate-metadata.json"
+RO_CRATE_URL = f"{SITE}/data/{RO_CRATE_FILENAME}"
 CONTENT_MODIFIED_RE = re.compile(
     r'<meta name="content-modified" content="([0-9]{4}-[0-9]{2}-[0-9]{2})">'
 )
@@ -82,6 +84,7 @@ COPY = {
         "schema": "JSON Schema",
         "csvw": "CSVW metadata",
         "dcat": "DCAT 3 JSON-LD",
+        "ro_crate": "RO-Crate research object",
         "dictionary": "Data dictionary",
         "design": "Privacy and safety by design",
         "design_text": (
@@ -160,6 +163,7 @@ COPY = {
         "schema": "JSON Schema",
         "csvw": "CSVW 中繼資料",
         "dcat": "DCAT 3 JSON-LD",
+        "ro_crate": "RO-Crate 研究物件",
         "dictionary": "資料字典",
         "design": "從資料設計落實隱私與安全",
         "design_text": (
@@ -323,6 +327,13 @@ def _dataset_schema(
                         else f"{SITE}/zh-Hant/api/v1/{SLUG}/"
                     ),
                 },
+                {
+                    "@type": "CreativeWork",
+                    "name": COPY[locale]["ro_crate"],
+                    "url": RO_CRATE_URL,
+                    "encodingFormat": "application/ld+json",
+                    "conformsTo": "https://w3id.org/ro/crate/1.3",
+                },
             ],
             "usageInfo": DICTIONARY_URL,
             "citation": (
@@ -368,6 +379,7 @@ def _download_cards(copy: dict) -> str:
         (copy["schema"], f"{SLUG}.schema.json", "Schema"),
         (copy["csvw"], f"{SLUG}.csv-metadata.json", "CSVW"),
         (copy["dcat"], f"{SLUG}.dcat.jsonld", "DCAT"),
+        (copy["ro_crate"], RO_CRATE_FILENAME, "RO-Crate 1.3"),
     )
     cards = "".join(
         '<a class="download" href="{url}"><strong>{label}</strong>'
@@ -490,6 +502,7 @@ def render_page(
 <link rel="alternate" hreflang="en" href="{html.escape(page_url('en'), quote=True)}">
 <link rel="alternate" hreflang="zh-Hant" href="{html.escape(page_url('zh-Hant'), quote=True)}">
 <link rel="alternate" hreflang="x-default" href="{html.escape(page_url('en'), quote=True)}">
+<link rel="describedby" type="application/ld+json" href="{html.escape(RO_CRATE_URL, quote=True)}" title="RO-Crate 1.3 metadata">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{html.escape(copy['title'], quote=True)}">
 <meta property="og:description" content="{html.escape(copy['description'], quote=True)}">

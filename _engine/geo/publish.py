@@ -47,8 +47,11 @@ def main():
     ]
     # 1) 重建
     require([PY, os.path.join(HERE, "build_pages_i18n.py")], env=env)
+    require([PY, os.path.join(HERE, "gen_data_hub.py")], env=env)
+    require([PY, os.path.join(HERE, "family_travel_static_api.py")], env=env)
     require([PY, os.path.join(HERE, "family_travel_observation_passport.py")], env=env)
     require([PY, os.path.join(HERE, "family_travel_opds_catalog.py")], env=env)
+    require([PY, os.path.join(HERE, "family_travel_ro_crate.py")], env=env)
     require([PY, os.path.join(HERE, "family_travel_mission_cards.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_heritage_lesson_plan.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_readiness_tool.py")], env=env)
@@ -58,6 +61,10 @@ def main():
     require([PY, os.path.join(HERE, "zhuyin_library_storytime_kit.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_grade1_summer_calendar.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_grade1_guide.py")], env=env)
+    require(
+        [PY, os.path.join(HERE, "prioritize_trip_planet_resources.py")],
+        env=env,
+    )
     refresh_command = [
         PY,
         os.path.join(HERE, "aeo_answers.py"),
@@ -91,6 +98,7 @@ def main():
         env=env,
     )
     require([PY, os.path.join(HERE, "fix_en_hreflang.py")], env=env)
+    require([PY, os.path.join(HERE, "gen_llms.py"), "--cached-live"], env=env)
     if "--no-push" in sys.argv:
         print("\n(--no-push:略過部署/推送)")
         return

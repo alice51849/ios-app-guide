@@ -35,6 +35,7 @@ from family_travel_dataset import (
     APP_KEY,
     APP_NAME,
     SITE,
+    RO_CRATE_URL,
     is_app_public,
     load_dataset,
     render_versioned_page,
@@ -93,6 +94,7 @@ COPY = {
         "letter": "US Letter PDF",
         "html_print": "Print this web version",
         "metadata": "Machine-readable OER metadata",
+        "ro_crate": "RO-Crate research object",
         "opds2": "OPDS 2.0 catalog",
         "opds1": "OPDS 1.2 catalog",
         "inside": "What is inside",
@@ -227,6 +229,7 @@ COPY = {
         "letter": "US Letter PDF",
         "html_print": "列印目前網頁版本",
         "metadata": "機器可讀 OER 中繼資料",
+        "ro_crate": "RO-Crate 研究物件",
         "opds2": "OPDS 2.0 資源目錄",
         "opds1": "OPDS 1.2 資源目錄",
         "inside": "護照包含什麼",
@@ -891,6 +894,7 @@ def render_page(
 <link rel="alternate" hreflang="zh-Hant" href="{canonical('zh-Hant')}">
 <link rel="alternate" hreflang="x-default" href="{canonical('en')}">
 <link rel="alternate" type="application/ld+json" href="{METADATA_URL}" title="OER metadata">
+<link rel="describedby" type="application/ld+json" href="{RO_CRATE_URL}" title="RO-Crate 1.3 metadata">
 <link rel="alternate" type="application/opds+json" href="{OPDS2_URL}" title="OPDS 2.0 catalog">
 <link rel="alternate" type="application/atom+xml;profile=opds-catalog;kind=acquisition" href="{OPDS1_URL}" title="OPDS 1.2 catalog">
 {pdf_alternates}
@@ -906,7 +910,7 @@ def render_page(
 <header class="top screen-only"><div class="wrap nav"><a href="{home}">iOS App Guide</a><nav><a href="{SITE}/tools/">{html.escape(copy['tools'])}</a> · <a href="{alternate}">{html.escape(copy['language'])}</a></nav></div></header>
 <main>
 <section class="hero wrap screen-only"><div class="eyebrow">{html.escape(copy['eyebrow'])}</div><h1>{html.escape(copy['title'])}</h1><p class="lead">{html.escape(copy['lead'])}</p><div class="badges">{badges}</div><div class="actions"><a class="button" href="#passport">{html.escape(copy['start'])}</a><a class="button secondary" href="{alternate}">{html.escape(copy['language'])}</a></div></section>
-<section class="screen-grid wrap screen-only"><article class="panel wide"><h2>{html.escape(copy['download'])}</h2><p>{html.escape(copy['download_intro'])}</p><div class="downloads">{downloads}</div><div class="actions"><button class="button secondary" type="button" onclick="window.print()">{html.escape(copy['html_print'])}</button><a class="button secondary" href="{METADATA_URL}">{html.escape(copy['metadata'])}</a><a class="button secondary" href="{OPDS2_URL}">{html.escape(copy['opds2'])}</a><a class="button secondary" href="{OPDS1_URL}">{html.escape(copy['opds1'])}</a></div></article><article class="panel"><h2>{html.escape(copy['inside'])}</h2><p>{html.escape(copy['inside_text'])}</p><h3>{html.escape(copy['how'])}</h3><ol>{how_items}</ol></article><article class="panel"><h2>{html.escape(copy['choices'])}</h2><p>{html.escape(copy['choices_text'])}</p><h3>{html.escape(copy['respect'])}</h3><p>{html.escape(copy['respect_text'])}</p></article><article class="panel privacy"><h2>{html.escape(copy['privacy'])}</h2><p>{html.escape(copy['privacy_text'])}</p></article><article class="panel"><h2>{html.escape(copy['safety'])}</h2><p>{html.escape(copy['safety_text'])}</p></article></section>
+<section class="screen-grid wrap screen-only"><article class="panel wide"><h2>{html.escape(copy['download'])}</h2><p>{html.escape(copy['download_intro'])}</p><div class="downloads">{downloads}</div><div class="actions"><button class="button secondary" type="button" onclick="window.print()">{html.escape(copy['html_print'])}</button><a class="button secondary" href="{METADATA_URL}">{html.escape(copy['metadata'])}</a><a class="button secondary" href="{RO_CRATE_URL}">{html.escape(copy['ro_crate'])}</a><a class="button secondary" href="{OPDS2_URL}">{html.escape(copy['opds2'])}</a><a class="button secondary" href="{OPDS1_URL}">{html.escape(copy['opds1'])}</a></div></article><article class="panel"><h2>{html.escape(copy['inside'])}</h2><p>{html.escape(copy['inside_text'])}</p><h3>{html.escape(copy['how'])}</h3><ol>{how_items}</ol></article><article class="panel"><h2>{html.escape(copy['choices'])}</h2><p>{html.escape(copy['choices_text'])}</p><h3>{html.escape(copy['respect'])}</h3><p>{html.escape(copy['respect_text'])}</p></article><article class="panel privacy"><h2>{html.escape(copy['privacy'])}</h2><p>{html.escape(copy['privacy_text'])}</p></article><article class="panel"><h2>{html.escape(copy['safety'])}</h2><p>{html.escape(copy['safety_text'])}</p></article></section>
 <section class="passport wrap" id="passport">{cover}{''.join(scenario_pages)}{closing}</section>
 <section class="screen-grid wrap screen-only"><article class="panel wide"><h2>{html.escape(copy['source'])}</h2><p>{html.escape(copy['source_text'])}</p><ul class="sources">{sources}</ul></article><article class="panel wide"><h2>{html.escape(copy['faq'])}</h2>{faq}</article>{app_section}</section>
 </main>

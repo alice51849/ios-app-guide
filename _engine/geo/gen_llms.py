@@ -38,6 +38,7 @@ STORIES = os.path.join(PAGES, "stories")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
 SOV = os.path.join(HERE, "reports", "aeo_sov.json")
 FAMILY_TRAVEL_OER = "family-travel-observation-passport"
+FAMILY_TRAVEL_RO_CRATE = "family-travel-missions-ro-crate-metadata.json"
 
 AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "anthropic-ai",
            "Claude-Web", "PerplexityBot", "Perplexity-User", "Google-Extended",
@@ -174,6 +175,11 @@ def build_llms(comp_map, live_keys):
                 f"- OPDS 2.0 catalog: {opds2}",
                 f"- OPDS 1.2 catalog: {opds1}",
             ]
+        ro_crate_lines = []
+        if os.path.exists(os.path.join(DATA_DIR, FAMILY_TRAVEL_RO_CRATE)):
+            ro_crate_lines = [
+                f"- RO-Crate 1.3 research object: {SITE}/data/{FAMILY_TRAVEL_RO_CRATE}"
+            ]
         lines += [
             "",
             "## Open educational resources (CC BY 4.0)",
@@ -182,6 +188,7 @@ def build_llms(comp_map, live_keys):
             f"- Machine-readable OER metadata: {SITE}/tools/{FAMILY_TRAVEL_OER}.metadata.json",
             f"- English A4 PDF: {SITE}/tools/{FAMILY_TRAVEL_OER}-en-a4.pdf",
             f"- Traditional Chinese A4 PDF: {SITE}/tools/{FAMILY_TRAVEL_OER}-zh-hant-a4.pdf",
+            *ro_crate_lines,
             *opds_lines,
         ]
     # 外部 curated 清單與資料集(GitHub;已實測會被 AI 引用的來源,讓爬蟲從站也能發現整個 repo 生態)
@@ -334,6 +341,11 @@ def build_llms_full(comp_map, live_keys):
                 f"  - OPDS 2.0 catalog: {opds2}",
                 f"  - OPDS 1.2 catalog: {opds1}",
             ]
+        ro_crate_lines = []
+        if os.path.exists(os.path.join(DATA_DIR, FAMILY_TRAVEL_RO_CRATE)):
+            ro_crate_lines = [
+                f"  - RO-Crate 1.3 research object: {SITE}/data/{FAMILY_TRAVEL_RO_CRATE}"
+            ]
         lines += [
             "",
             "## Open educational resources",
@@ -344,6 +356,7 @@ def build_llms_full(comp_map, live_keys):
             f"  - English US Letter PDF: {SITE}/tools/{FAMILY_TRAVEL_OER}-en-letter.pdf",
             f"  - Traditional Chinese A4 PDF: {SITE}/tools/{FAMILY_TRAVEL_OER}-zh-hant-a4.pdf",
             f"  - Traditional Chinese US Letter PDF: {SITE}/tools/{FAMILY_TRAVEL_OER}-zh-hant-letter.pdf",
+            *ro_crate_lines,
             *opds_lines,
         ]
 
@@ -367,7 +380,7 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_answers.xml", "sitemap_guides.xml", "sitemap_stories.xml",
         "sitemap_hubs.xml", "sitemap_tools.xml", "sitemap_data.xml",
         "sitemap_api.xml", "sitemap_swap.xml", "feed.xml",
-        "sitemap_opds.xml",
+        "sitemap_opds.xml", "sitemap_ro_crate.xml",
     ):
         if os.path.exists(os.path.join(PAGES, filename)):
             lines.append(f"- {SITE}/{filename}")
@@ -393,6 +406,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_api.xml",
             f"Sitemap: {SITE}/sitemap_swap.xml",
             f"Sitemap: {SITE}/sitemap_opds.xml",
+            f"Sitemap: {SITE}/sitemap_ro_crate.xml",
             f"Sitemap: {SITE}/sitemap_index.xml", ""]
     return "\n".join(out)
 
@@ -401,7 +415,7 @@ def build_sitemap_index():
     maps = ["sitemap.xml", "sitemap_alternatives.xml", "sitemap_answers.xml", "sitemap_guides.xml",
             "sitemap_stories.xml", "sitemap_hubs.xml", "sitemap_tools.xml",
             "sitemap_data.xml", "sitemap_api.xml", "sitemap_swap.xml"]
-    maps.append("sitemap_opds.xml")
+    maps.extend(["sitemap_opds.xml", "sitemap_ro_crate.xml"])
     items = "\n".join(f"  <sitemap><loc>{SITE}/{m}</loc></sitemap>" for m in maps
                       if os.path.exists(os.path.join(PAGES, m)))
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'

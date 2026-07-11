@@ -34,6 +34,7 @@ import family_travel_dataset
 import family_travel_mission_cards
 import family_travel_observation_passport
 import family_travel_opds_catalog
+import family_travel_ro_crate
 import family_travel_static_api
 import gen_app_catalog
 import gen_calculator
@@ -45,6 +46,7 @@ import gen_llms
 import gen_roundups
 import indexnow_submit
 import outreach_scorecard
+import prioritize_trip_planet_resources
 import zhuyin_grandparent_call_kit
 import zhuyin_grade1_guide
 import zhuyin_grade1_summer_calendar
@@ -877,6 +879,100 @@ class GeneratorTests(unittest.TestCase):
                 mtimes, {path: path.stat().st_mtime_ns for path in outputs}
             )
 
+    def test_family_travel_ro_crate_is_complete_private_and_stable(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            tools = pages / "tools"
+            tools.mkdir()
+            (tools / "index.html").write_text(
+                '<main><section class="wrap grid"></section></main>',
+                encoding="utf-8",
+            )
+            dataset = family_travel_dataset.load_dataset()
+            artifacts = family_travel_observation_passport.make_pdf_artifacts(dataset)
+            family_travel_dataset.build(pages, app_public=False)
+            family_travel_static_api.build(pages, app_public=False)
+            with mock.patch.object(
+                family_travel_observation_passport,
+                "make_pdf_artifacts",
+                return_value=artifacts,
+            ):
+                family_travel_observation_passport.build(
+                    pages, app_public=False
+                )
+            family_travel_opds_catalog.build(pages, artifacts)
+            urls = family_travel_ro_crate.build(pages)
+            metadata_path = pages / "data" / family_travel_ro_crate.FILENAME
+            sitemap_path = pages / "sitemap_ro_crate.xml"
+            self.assertEqual(
+                [
+                    family_travel_ro_crate.METADATA_URL,
+                    family_travel_ro_crate.SITEMAP_URL,
+                ],
+                urls,
+            )
+            crate = json.loads(metadata_path.read_text(encoding="utf-8"))
+            family_travel_ro_crate.validate_crate(crate, pages)
+            entities = {entity["@id"]: entity for entity in crate["@graph"]}
+            descriptor = entities["ro-crate-metadata.json"]
+            self.assertEqual(
+                {"@id": family_travel_ro_crate.ROOT_ID},
+                descriptor["about"],
+            )
+            self.assertEqual(
+                {"@id": family_travel_ro_crate.PROFILE},
+                descriptor["conformsTo"],
+            )
+            root = entities[family_travel_ro_crate.ROOT_ID]
+            self.assertIn("Dataset", root["@type"])
+            self.assertEqual(dataset["dateCreated"], root["datePublished"])
+            self.assertEqual(
+                {"@id": family_travel_ro_crate.LICENSE}, root["license"]
+            )
+            self.assertEqual(
+                {spec.url for spec in family_travel_ro_crate.FILE_SPECS},
+                {item["@id"] for item in root["hasPart"]},
+            )
+            self.assertNotIn(
+                family_travel_ro_crate.METADATA_URL,
+                {item["@id"] for item in root["hasPart"]},
+            )
+            encoded = json.dumps(crate, ensure_ascii=False)
+            self.assertNotIn("apps.apple.com", encoded)
+            self.assertNotIn("SoftwareApplication", encoded)
+            self.assertNotIn(family_travel_ro_crate.APP_ID, encoded)
+            self.assertNotIn(family_travel_ro_crate.APP_NAME, encoded)
+            self.assertNotIn(family_travel_ro_crate.APP_SHORT_NAME, encoded)
+            for spec in family_travel_ro_crate.FILE_SPECS:
+                self.assertTrue(spec.url.startswith("https://"))
+                self.assertIn("File", family_travel_ro_crate._types(entities[spec.url]))
+            for relative_page in (
+                "data/family-travel-missions.html",
+                "zh-Hant/data/family-travel-missions.html",
+                "tools/family-travel-observation-passport.html",
+                "zh-Hant/tools/family-travel-observation-passport.html",
+            ):
+                page = (pages / relative_page).read_text(encoding="utf-8")
+                self.assertIn(family_travel_ro_crate.METADATA_URL, page)
+                self.assertNotIn("apps.apple.com", page)
+            self.assertIn(
+                family_travel_ro_crate.METADATA_URL,
+                sitemap_path.read_text(encoding="utf-8"),
+            )
+            mtimes = {
+                path: path.stat().st_mtime_ns
+                for path in (metadata_path, sitemap_path)
+            }
+            family_travel_ro_crate.build(pages)
+            self.assertEqual(
+                mtimes, {path: path.stat().st_mtime_ns for path in mtimes}
+            )
+            self.assertIn("sitemap_ro_crate.xml", gen_llms.build_robots())
+            with mock.patch.object(gen_llms, "PAGES", str(pages)):
+                self.assertIn(
+                    "sitemap_ro_crate.xml", gen_llms.build_sitemap_index()
+                )
+
     def test_family_travel_observation_passport_build_is_stable(self):
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)
@@ -916,6 +1012,56 @@ class GeneratorTests(unittest.TestCase):
                 .read_text(encoding="utf-8")
                 .count(f"{family_travel_observation_passport.SLUG}.html"),
             )
+
+    def test_trip_planet_resources_remain_first_and_unique(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            tools = pages / "tools"
+            tools.mkdir()
+            other = (
+                '<article class="card third"><h2><a href="other.html">'
+                "Other</a></h2><p>Other tool.</p></article>"
+            )
+            index = tools / "index.html"
+            index.write_text(
+                "<main>"
+                + prioritize_trip_planet_resources.GRID_MARKER
+                + other
+                + "</section></main>",
+                encoding="utf-8",
+            )
+
+            index_mutators = (
+                family_travel_observation_passport.update_tools_index,
+                family_travel_mission_cards.update_tools_index,
+                zhuyin_readiness_tool.update_tools_index,
+                zhuyin_grandparent_call_kit.update_tools_index,
+                zhuyin_picture_book_club_kit.update_tools_index,
+                zhuyin_parent_teacher_handoff_kit.update_tools_index,
+                zhuyin_library_storytime_kit.update_tools_index,
+                zhuyin_grade1_summer_calendar.update_tools_index,
+            )
+
+            def run_complete_tool_sequence() -> None:
+                for mutate in index_mutators:
+                    mutate(pages)
+                prioritize_trip_planet_resources.prioritize(pages)
+
+            run_complete_tool_sequence()
+            prioritized = index.read_text(encoding="utf-8")
+            mission_href = prioritize_trip_planet_resources.PRIORITY_HREFS[0]
+            passport_href = prioritize_trip_planet_resources.PRIORITY_HREFS[1]
+            self.assertLess(
+                prioritized.index(mission_href), prioritized.index(passport_href)
+            )
+            self.assertLess(prioritized.index(passport_href), prioritized.index(other))
+            for href in prioritize_trip_planet_resources.PRIORITY_HREFS:
+                self.assertEqual(1, prioritized.count(href))
+            mtime = index.stat().st_mtime_ns
+            self.assertFalse(prioritize_trip_planet_resources.prioritize(pages))
+            self.assertEqual(mtime, index.stat().st_mtime_ns)
+            run_complete_tool_sequence()
+            self.assertEqual(prioritized, index.read_text(encoding="utf-8"))
 
     def test_family_travel_cards_build_both_pages_and_index_card(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -2664,6 +2810,36 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("family_travel_mission_cards.py", workflow)
         self.assertIn("family_travel_observation_passport.py", workflow)
         self.assertIn("family_travel_opds_catalog.py", workflow)
+        self.assertIn("family_travel_ro_crate.py", workflow)
+        self.assertIn("prioritize_trip_planet_resources.py", workflow)
+        refresh_block = workflow.split(
+            "- name: Refresh AI indexes + hubs + Atom feed", 1
+        )[1].split("- name: Commit English content first", 1)[0]
+        workflow_chain = (
+            "gen_data_hub.py",
+            "family_travel_static_api.py",
+            "family_travel_observation_passport.py",
+            "family_travel_opds_catalog.py",
+            "family_travel_ro_crate.py",
+            "family_travel_mission_cards.py",
+            "zhuyin_heritage_lesson_plan.py",
+            "zhuyin_readiness_tool.py",
+            "zhuyin_grandparent_call_kit.py",
+            "zhuyin_picture_book_club_kit.py",
+            "zhuyin_parent_teacher_handoff_kit.py",
+            "zhuyin_library_storytime_kit.py",
+            "zhuyin_grade1_summer_calendar.py",
+            "zhuyin_grade1_guide.py",
+            "prioritize_trip_planet_resources.py",
+            "add_related_tools.py",
+            "gen_hubs.py",
+            "gen_app_catalog.py",
+            "cleanup_localized_assets.py --cached-live",
+            "gen_llms.py --cached-live",
+            "gen_feed.py",
+        )
+        workflow_positions = [refresh_block.index(item) for item in workflow_chain]
+        self.assertEqual(sorted(workflow_positions), workflow_positions)
         self.assertIn("--refresh-slug \"$SUMMER_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$OBSERVATION_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$TRIP_SLUG\"", workflow)
@@ -2682,6 +2858,35 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("family_travel_mission_cards.py", publish)
         self.assertIn("family_travel_observation_passport.py", publish)
         self.assertIn("family_travel_opds_catalog.py", publish)
+        self.assertIn("family_travel_ro_crate.py", publish)
+        self.assertIn("gen_data_hub.py", publish)
+        self.assertIn("family_travel_static_api.py", publish)
+        self.assertIn("prioritize_trip_planet_resources.py", publish)
+        self.assertIn('gen_llms.py"), "--cached-live"', publish)
+        publish_chain = (
+            "build_pages_i18n.py",
+            "gen_data_hub.py",
+            "family_travel_static_api.py",
+            "family_travel_observation_passport.py",
+            "family_travel_opds_catalog.py",
+            "family_travel_ro_crate.py",
+            "family_travel_mission_cards.py",
+            "zhuyin_heritage_lesson_plan.py",
+            "zhuyin_readiness_tool.py",
+            "zhuyin_grandparent_call_kit.py",
+            "zhuyin_picture_book_club_kit.py",
+            "zhuyin_parent_teacher_handoff_kit.py",
+            "zhuyin_library_storytime_kit.py",
+            "zhuyin_grade1_summer_calendar.py",
+            "zhuyin_grade1_guide.py",
+            "prioritize_trip_planet_resources.py",
+            "add_related_answers.py",
+            "add_related_tools.py",
+            "fix_en_hreflang.py",
+            "gen_llms.py",
+        )
+        publish_positions = [publish.index(item) for item in publish_chain]
+        self.assertEqual(sorted(publish_positions), publish_positions)
         self.assertIn("--refresh-slug", publish)
         self.assertIn("aeo_answers_i18n.py", publish)
         self.assertIn("add_related_answers.py", publish)

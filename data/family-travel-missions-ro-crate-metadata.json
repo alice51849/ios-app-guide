@@ -1,0 +1,524 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.3/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html"
+      },
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.3"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html",
+      "@type": [
+        "Dataset",
+        "LearningResource"
+      ],
+      "name": "Family Travel Mission Taxonomy and Observation Passport",
+      "description": "A bilingual, privacy-first research object combining an open family-travel mission taxonomy, printable observation passport, static API and OPDS catalogs.",
+      "url": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html",
+      "identifier": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html#identifier"
+      },
+      "cite-as": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html"
+      },
+      "version": "1.0.0",
+      "datePublished": "2026-07-11",
+      "dateModified": "2026-07-11",
+      "inLanguage": [
+        "en",
+        "zh-Hant"
+      ],
+      "keywords": [
+        "family travel",
+        "travel activity",
+        "observation prompt",
+        "privacy-first",
+        "children",
+        "English",
+        "Traditional Chinese",
+        "open educational resource",
+        "RO-Crate",
+        "static API"
+      ],
+      "isAccessibleForFree": true,
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "creator": {
+        "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+      },
+      "publisher": {
+        "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+      },
+      "learningResourceType": [
+        "Dataset",
+        "Printable",
+        "API"
+      ],
+      "educationalUse": "Family-guided observation, bilingual travel vocabulary practice and reuse in research or educational tools",
+      "hasPart": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.json"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.csv"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.schema.json"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.csv-metadata.json"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.dcat.jsonld"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/index.json"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/openapi.json"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/index.html"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/zh-Hant/api/v1/family-travel-missions/index.html"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.metadata.json"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.html"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/zh-Hant/tools/family-travel-observation-passport.html"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport-en-a4.pdf"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport-en-letter.pdf"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport-zh-hant-a4.pdf"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport-zh-hant-letter.pdf"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/opds/family-travel-observation-passport.json"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/opds/family-travel-observation-passport.xml"
+        }
+      ],
+      "subjectOf": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.dcat.jsonld"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/openapi.json"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.metadata.json"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/opds/family-travel-observation-passport.json"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://www.tsa.gov/travel/frequently-asked-questions/can-i-film-and-take-photos-security-checkpoint"
+        },
+        {
+          "@id": "https://www.faa.gov/travelers/fly_children/child_safety_seat_tips"
+        },
+        {
+          "@id": "https://www.nhtsa.gov/vehicle-safety/car-seats-and-booster-seats"
+        },
+        {
+          "@id": "https://www.transportation.gov/resources/individuals/aviation-consumer-protection/tips-families-and-links-airline-webpages"
+        },
+        {
+          "@id": "https://www.nps.gov/kids/junior-rangers.htm"
+        },
+        {
+          "@id": "https://www.ftc.gov/business-guidance/privacy-security/childrens-privacy"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html#identifier",
+      "@type": "PropertyValue",
+      "name": "Family travel research object canonical identifier",
+      "description": "Canonical web identifier for this research object.",
+      "propertyID": "URL",
+      "value": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html",
+      "url": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html"
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/#organization",
+      "@type": "Organization",
+      "name": "Lumi Apps - iOS App Guide",
+      "url": "https://alice51849.github.io/ios-app-guide",
+      "contactPoint": {
+        "@id": "https://github.com/alice51849"
+      }
+    },
+    {
+      "@id": "https://github.com/alice51849",
+      "@type": "ContactPoint",
+      "name": "iOS App Guide maintainer profile",
+      "url": "https://github.com/alice51849"
+    },
+    {
+      "@id": "https://creativecommons.org/licenses/by/4.0/",
+      "@type": "CreativeWork",
+      "name": "Creative Commons Attribution 4.0 International",
+      "description": "Permits sharing and adaptation for any purpose with attribution."
+    },
+    {
+      "@id": "https://w3id.org/ro/crate/1.3",
+      "@type": "CreativeWork",
+      "name": "RO-Crate Metadata Specification 1.3"
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.json",
+      "@type": "File",
+      "name": "Canonical bilingual family travel mission taxonomy",
+      "description": "Canonical bilingual family travel mission taxonomy, published as part of the bilingual family-travel research object.",
+      "encodingFormat": "application/json",
+      "contentSize": "32969",
+      "sha256": "62955a31f6fa945542f446cc38b9cdd5346911c7efaed0038c9792be8db8ad1e",
+      "sdDatePublished": "2026-07-11T00:00:00Z",
+      "isPartOf": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html"
+      },
+      "inLanguage": [
+        "en",
+        "zh-Hant"
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.csv",
+      "@type": "File",
+      "name": "Flat bilingual family travel mission records",
+      "description": "Flat bilingual family travel mission records, published as part of the bilingual family-travel research object.",
+      "encodingFormat": "text/csv",
+      "contentSize": "203449",
+      "sha256": "e2a19509c0525b6988143507ba39338dcbae7ad1c1501838fa32f69bb2ee5e04",
+      "sdDatePublished": "2026-07-11T00:00:00Z",
+      "isPartOf": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html"
+      },
+      "inLanguage": [
+        "en",
+        "zh-Hant"
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.schema.json",
+      "@type": "File",
+      "name": "Family travel mission JSON Schema",
+      "description": "Family travel mission JSON Schema, published as part of the bilingual family-travel research object.",
+      "encodingFormat": "application/schema+json",
+      "contentSize": "8076",
+      "sha256": "aa38471f34ce3d5492c20f10320a5ec0188c1688e000da757b33263a8676a220",
+      "sdDatePublished": "2026-07-11T00:00:00Z",
+      "isPartOf": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.csv-metadata.json",
+      "@type": "File",
+      "name": "Family travel mission CSVW metadata",
+      "description": "Family travel mission CSVW metadata, published as part of the bilingual family-travel research object.",
+      "encodingFormat": "application/csvm+json",
+      "contentSize": "6451",
+      "sha256": "b6c422e88c6de2b19a24b84bba5c37b9c62a1427bb17c59173620b1d2a0c7bf6",
+      "sdDatePublished": "2026-07-11T00:00:00Z",
+      "isPartOf": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.dcat.jsonld",
+      "@type": "File",
+      "name": "Family travel mission DCAT 3 metadata",
+      "description": "Family travel mission DCAT 3 metadata, published as part of the bilingual family-travel research object.",
+      "encodingFormat": "application/ld+json",
+      "contentSize": "3640",
+      "sha256": "8eaf765e0d875e47111fff5c3187769917abb9da6020858d93bce55ff862c2ef",
+      "sdDatePublished": "2026-07-11T00:00:00Z",
+      "isPartOf": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html"
+      },
+      "inLanguage": [
+        "en",
+        "zh-Hant"
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/index.json",
+      "@type": "File",
+      "name": "Family travel missions static API index",
+      "description": "Family travel missions static API index, published as part of the bilingual family-travel research object.",
+      "encodingFormat": "application/json",
+      "contentSize": "4169",
+      "sha256": "18175b8c63445ea33a54d2494a76a5fb9298476b917e2ee0ebde871bae779514",
+      "sdDatePublished": "2026-07-11T00:00:00Z",
+      "isPartOf": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/openapi.json",
+      "@type": "File",
+      "name": "Family travel missions OpenAPI 3.1 document",
+      "description": "Family travel missions OpenAPI 3.1 document, published as part of the bilingual family-travel research object.",
+      "encodingFormat": "application/vnd.oai.openapi+json;version=3.1",
+      "contentSize": "8844",
+      "sha256": "4d69361120b1e077019ebbf53de3c78054272c174298c3188b8c716353bdbdfc",
+      "sdDatePublished": "2026-07-11T00:00:00Z",
+      "isPartOf": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/index.html",
+      "@type": "File",
+      "name": "Family travel missions static API documentation",
+      "description": "Family travel missions static API documentation, published as part of the bilingual family-travel research object.",
+      "encodingFormat": "text/html",
+      "contentSize": "9413",
+      "sha256": "726f051f1a6022e6fdf3d1ae447240586eb9da5d95f316a93e2a892f1a459b62",
+      "sdDatePublished": "2026-07-11T00:00:00Z",
+      "isPartOf": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/zh-Hant/api/v1/family-travel-missions/index.html",
+      "@type": "File",
+      "name": "親子旅行任務靜態 API 說明",
+      "description": "親子旅行任務靜態 API 說明, published as part of the bilingual family-travel research object.",
+      "encodingFormat": "text/html",
+      "contentSize": "9377",
+      "sha256": "680c991a7cf78ebe303c02a0bb2d43096907157e316dc0f2e87fba5a8ad1a5a8",
+      "sdDatePublished": "2026-07-11T00:00:00Z",
+      "isPartOf": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html"
+      },
+      "inLanguage": "zh-Hant"
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.metadata.json",
+      "@type": [
+        "File",
+        "LearningResource"
+      ],
+      "name": "Family travel observation passport OER metadata",
+      "description": "Family travel observation passport OER metadata, published as part of the bilingual family-travel research object.",
+      "encodingFormat": "application/ld+json",
+      "contentSize": "7378",
+      "sha256": "6ac7151be2a880c3702124a4a664acb356fa4e93c1a0570e3a55d6db01a9edfd",
+      "sdDatePublished": "2026-07-11T00:00:00Z",
+      "isPartOf": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html"
+      },
+      "inLanguage": [
+        "en",
+        "zh-Hant"
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.html",
+      "@type": [
+        "File",
+        "LearningResource"
+      ],
+      "name": "Family travel observation passport",
+      "description": "Family travel observation passport, published as part of the bilingual family-travel research object.",
+      "encodingFormat": "text/html",
+      "contentSize": "36086",
+      "sha256": "5b1464d7b11177dbe03ff159f453f88ed08f90223897174cccde932737c3428f",
+      "sdDatePublished": "2026-07-11T00:00:00Z",
+      "isPartOf": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/zh-Hant/tools/family-travel-observation-passport.html",
+      "@type": [
+        "File",
+        "LearningResource"
+      ],
+      "name": "親子旅行觀察護照",
+      "description": "親子旅行觀察護照, published as part of the bilingual family-travel research object.",
+      "encodingFormat": "text/html",
+      "contentSize": "35941",
+      "sha256": "464e02fea7009395726d83473dc65dbd2807b7b3a034dca7f6777dfed06da139",
+      "sdDatePublished": "2026-07-11T00:00:00Z",
+      "isPartOf": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html"
+      },
+      "inLanguage": "zh-Hant"
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport-en-a4.pdf",
+      "@type": [
+        "File",
+        "LearningResource"
+      ],
+      "name": "Family travel observation passport - English A4 PDF",
+      "description": "Family travel observation passport - English A4 PDF, published as part of the bilingual family-travel research object.",
+      "encodingFormat": "application/pdf",
+      "contentSize": "27869",
+      "sha256": "185193cee7dc165c9e5162bca6b6cd9500130b91853527af862e661f296e38fb",
+      "sdDatePublished": "2026-07-11T00:00:00Z",
+      "isPartOf": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport-en-letter.pdf",
+      "@type": [
+        "File",
+        "LearningResource"
+      ],
+      "name": "Family travel observation passport - English US Letter PDF",
+      "description": "Family travel observation passport - English US Letter PDF, published as part of the bilingual family-travel research object.",
+      "encodingFormat": "application/pdf",
+      "contentSize": "27900",
+      "sha256": "e9cca24d577fb7a71be5a14ac33711c225ac2886224d8c2877992688ba185c2f",
+      "sdDatePublished": "2026-07-11T00:00:00Z",
+      "isPartOf": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport-zh-hant-a4.pdf",
+      "@type": [
+        "File",
+        "LearningResource"
+      ],
+      "name": "親子旅行觀察護照 - 繁體中文 A4 PDF",
+      "description": "親子旅行觀察護照 - 繁體中文 A4 PDF, published as part of the bilingual family-travel research object.",
+      "encodingFormat": "application/pdf",
+      "contentSize": "32697",
+      "sha256": "23f05aaa5869ab2894397b452955922e22d2568d806f1ad4bf61a14c19f7fa59",
+      "sdDatePublished": "2026-07-11T00:00:00Z",
+      "isPartOf": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html"
+      },
+      "inLanguage": "zh-Hant"
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport-zh-hant-letter.pdf",
+      "@type": [
+        "File",
+        "LearningResource"
+      ],
+      "name": "親子旅行觀察護照 - 繁體中文 US Letter PDF",
+      "description": "親子旅行觀察護照 - 繁體中文 US Letter PDF, published as part of the bilingual family-travel research object.",
+      "encodingFormat": "application/pdf",
+      "contentSize": "32692",
+      "sha256": "1a670e48f08a2d4af25fac7978eb46617a72b3de4b7aff62d5903621ab6fd74b",
+      "sdDatePublished": "2026-07-11T00:00:00Z",
+      "isPartOf": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html"
+      },
+      "inLanguage": "zh-Hant"
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/opds/family-travel-observation-passport.json",
+      "@type": [
+        "File",
+        "LearningResource"
+      ],
+      "name": "Family travel observation passport OPDS 2.0 catalog",
+      "description": "Family travel observation passport OPDS 2.0 catalog, published as part of the bilingual family-travel research object.",
+      "encodingFormat": "application/opds+json",
+      "contentSize": "7590",
+      "sha256": "5e9f1b642681cc192ad8181e9cc6ee3102badaec172b1805e88be3d1b8a3de70",
+      "sdDatePublished": "2026-07-11T00:00:00Z",
+      "isPartOf": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html"
+      },
+      "inLanguage": [
+        "en",
+        "zh-Hant"
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/opds/family-travel-observation-passport.xml",
+      "@type": [
+        "File",
+        "LearningResource"
+      ],
+      "name": "Family travel observation passport OPDS 1.2 catalog",
+      "description": "Family travel observation passport OPDS 1.2 catalog, published as part of the bilingual family-travel research object.",
+      "encodingFormat": "application/atom+xml;profile=opds-catalog;kind=acquisition",
+      "contentSize": "6164",
+      "sha256": "01596d99c1f7e34cfbdaba00425d99ff07cc5ac96ce3792c65cb89ec07514659",
+      "sdDatePublished": "2026-07-11T00:00:00Z",
+      "isPartOf": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html"
+      },
+      "inLanguage": [
+        "en",
+        "zh-Hant"
+      ]
+    },
+    {
+      "@id": "https://www.tsa.gov/travel/frequently-asked-questions/can-i-film-and-take-photos-security-checkpoint",
+      "@type": "CreativeWork",
+      "name": "Can I film and take photos at a security checkpoint?",
+      "publisher": "U.S. Transportation Security Administration"
+    },
+    {
+      "@id": "https://www.faa.gov/travelers/fly_children/child_safety_seat_tips",
+      "@type": "CreativeWork",
+      "name": "Child Safety Seat Tips",
+      "publisher": "U.S. Federal Aviation Administration"
+    },
+    {
+      "@id": "https://www.nhtsa.gov/vehicle-safety/car-seats-and-booster-seats",
+      "@type": "CreativeWork",
+      "name": "Car Seats and Booster Seats",
+      "publisher": "U.S. National Highway Traffic Safety Administration"
+    },
+    {
+      "@id": "https://www.transportation.gov/resources/individuals/aviation-consumer-protection/tips-families-and-links-airline-webpages",
+      "@type": "CreativeWork",
+      "name": "Tips for Families and Links to Airline Webpages",
+      "publisher": "U.S. Department of Transportation"
+    },
+    {
+      "@id": "https://www.nps.gov/kids/junior-rangers.htm",
+      "@type": "CreativeWork",
+      "name": "Become a Junior Ranger",
+      "publisher": "U.S. National Park Service"
+    },
+    {
+      "@id": "https://www.ftc.gov/business-guidance/privacy-security/childrens-privacy",
+      "@type": "CreativeWork",
+      "name": "Children's Privacy",
+      "publisher": "U.S. Federal Trade Commission"
+    }
+  ]
+}

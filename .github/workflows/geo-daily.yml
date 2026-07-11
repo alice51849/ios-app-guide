@@ -75,6 +75,7 @@ jobs:
           python3 family_travel_static_api.py
           python3 family_travel_observation_passport.py
           python3 family_travel_opds_catalog.py
+          python3 family_travel_ro_crate.py
           python3 family_travel_mission_cards.py
           python3 zhuyin_heritage_lesson_plan.py
           python3 zhuyin_readiness_tool.py
@@ -84,6 +85,7 @@ jobs:
           python3 zhuyin_library_storytime_kit.py
           python3 zhuyin_grade1_summer_calendar.py
           python3 zhuyin_grade1_guide.py
+          python3 prioritize_trip_planet_resources.py
           python3 add_related_tools.py
           python3 add_related_tools.py --locale zh-Hant
           python3 gen_hubs.py

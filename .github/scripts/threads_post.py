@@ -101,6 +101,32 @@ def pick_postable(pool, now=None):
     )
 
 
+def publish_text(token, user_id, text, sleeper=time.sleep):
+    if len(text) > MAX_POST_CHARS:
+        raise ValueError(
+            f"Threads post exceeds {MAX_POST_CHARS} characters: {len(text)}"
+        )
+    container = _post(
+        f"https://graph.threads.net/v1.0/{user_id}/threads",
+        {"media_type": "TEXT", "text": text, "access_token": token},
+        label="Threads container",
+    )
+    container_id = container.get("id")
+    if not container_id:
+        raise RequestError("Threads container returned no id")
+    sleeper(35)
+    published = _post(
+        f"https://graph.threads.net/v1.0/{user_id}/threads_publish",
+        {"creation_id": container_id, "access_token": token},
+        label="Threads publish",
+        retry_delays=(25, 25),
+    )
+    post_id = published.get("id")
+    if not post_id:
+        raise RequestError("Threads publish returned no id")
+    return post_id
+
+
 def main():
     tok = os.environ.get("THREADS_TOKEN", "").strip()
     uid = os.environ.get("THREADS_USER_ID", "").strip()
@@ -113,22 +139,7 @@ def main():
         ) as pool_file:
             pool = json.load(pool_file)
         item, text = pick_postable(pool)
-        c = _post(f"https://graph.threads.net/v1.0/{uid}/threads",
-                  {"media_type": "TEXT", "text": text, "access_token": tok},
-                  label="Threads container")
-        cid = c.get("id")
-        if not cid:
-            raise RequestError("Threads container returned no id")
-        time.sleep(35)
-        published = _post(
-            f"https://graph.threads.net/v1.0/{uid}/threads_publish",
-            {"creation_id": cid, "access_token": tok},
-            label="Threads publish",
-            retry_delays=(25, 25),
-        )
-        post_id = published.get("id")
-        if not post_id:
-            raise RequestError("Threads publish returned no id")
+        post_id = publish_text(tok, uid, text)
         print("threads posted ok, id:", post_id, "| app:", item.get("app"))
         return 0
     except (HTTPStatusError, RequestError, ValueError, KeyError) as error:

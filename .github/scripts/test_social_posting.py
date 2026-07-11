@@ -17,6 +17,7 @@ if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
 import devto_post
+import portfolio_daily
 import social_post_common as common
 import telegram_post
 import threads_post
@@ -227,6 +228,105 @@ class RetryTests(unittest.TestCase):
                 400, '{"error":{"is_transient":true}}'
             )
         )
+
+
+class DailyPortfolioCoverageTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.apps = portfolio_daily.load_public_apps()
+
+    def test_current_live_registry_is_covered_without_a_static_post_pool(self):
+        selected_ids = {app.app_id for app in self.apps}
+        self.assertEqual(portfolio_daily.load_live_ids(), selected_ids)
+        auto_registry = os.path.join(
+            portfolio_daily.ENGINE_SOCIAL,
+            "videogen",
+            "registry_auto.json",
+        )
+        with open(auto_registry, encoding="utf-8") as auto_file:
+            auto_ids = {
+                str(entry["appstore_id"])
+                for entry in json.load(auto_file).values()
+            }
+        self.assertEqual(
+            auto_ids & portfolio_daily.load_live_ids(),
+            auto_ids & selected_ids,
+        )
+
+    def test_unpublished_apps_are_excluded_and_new_live_apps_auto_join(self):
+        apps = {
+            "live": {"name": "Current App", "category": "productivity"},
+            "new": {"name": "New App", "category": "travel"},
+            "draft": {"name": "Draft App", "category": "kids"},
+        }
+        appstore = {"live": "1", "new": "2", "draft": "3"}
+        selected = portfolio_daily.select_public_apps(
+            apps, appstore, {"1", "2"}
+        )
+        self.assertEqual(["1", "2"], sorted(app.app_id for app in selected))
+        self.assertNotIn("Draft App", [app.name for app in selected])
+
+    def test_unknown_live_app_fails_loudly(self):
+        with self.assertRaisesRegex(
+            portfolio_daily.CoverageError, "missing from the registry"
+        ):
+            portfolio_daily.select_public_apps(
+                {"known": {"name": "Known", "category": "other"}},
+                {"known": "1"},
+                {"1", "2"},
+            )
+
+    def test_each_platform_covers_every_live_app_exactly_once(self):
+        for platform, builder, limit in (
+            (
+                "telegram",
+                portfolio_daily.telegram_messages,
+                portfolio_daily.TELEGRAM_LIMIT,
+            ),
+            (
+                "threads",
+                portfolio_daily.threads_messages,
+                portfolio_daily.THREADS_LIMIT,
+            ),
+        ):
+            with self.subTest(platform=platform):
+                messages = builder(self.apps)
+                portfolio_daily.validate_coverage(platform, self.apps, messages)
+                combined = "\n".join(message.text for message in messages)
+                for app in self.apps:
+                    self.assertIn(app.name, combined)
+                self.assertTrue(all(len(message.text) <= limit for message in messages))
+
+    def test_large_portfolio_splits_without_losing_coverage(self):
+        apps = [
+            portfolio_daily.PublicApp(
+                key=f"app-{index}",
+                app_id=str(index),
+                name=f"Portfolio Utility {index:03d}",
+                category="productivity",
+            )
+            for index in range(120)
+        ]
+        for platform, builder in (
+            ("telegram", portfolio_daily.telegram_messages),
+            ("threads", portfolio_daily.threads_messages),
+        ):
+            messages = builder(apps)
+            self.assertGreater(len(messages), 1)
+            portfolio_daily.validate_coverage(platform, apps, messages)
+
+    def test_daily_workflow_runs_both_platforms(self):
+        workflow = os.path.join(
+            portfolio_daily.REPO_ROOT,
+            ".github",
+            "workflows",
+            "portfolio-daily.yml",
+        )
+        with open(workflow, encoding="utf-8") as workflow_file:
+            text = workflow_file.read()
+        self.assertIn('cron: "30 4 * * *"', text)
+        self.assertIn("--platform telegram", text)
+        self.assertIn("--platform threads", text)
 
 
 class DevToGateTests(unittest.TestCase):

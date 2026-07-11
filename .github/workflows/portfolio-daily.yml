@@ -1,0 +1,47 @@
+name: Daily Full Portfolio Coverage
+
+on:
+  schedule:
+    # 12:30 in Taiwan: one complete, non-spammy daily portfolio digest.
+    - cron: "30 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daily-full-portfolio
+  cancel-in-progress: false
+
+jobs:
+  telegram:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Verify social posting regressions
+        run: python3 .github/scripts/test_social_posting.py -q
+      - name: Publish every public app to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python3 .github/scripts/portfolio_daily.py --platform telegram
+
+  threads:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Verify social posting regressions
+        run: python3 .github/scripts/test_social_posting.py -q
+      - name: Publish every public app to Threads
+        env:
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+        run: python3 .github/scripts/portfolio_daily.py --platform threads

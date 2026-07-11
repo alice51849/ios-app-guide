@@ -53,6 +53,8 @@ LICENSE = "https://creativecommons.org/licenses/by/4.0/"
 DATASET_PAGE = f"{SITE}/data/family-travel-missions.html"
 API_DOCS = f"{SITE}/api/v1/family-travel-missions/"
 METADATA_URL = f"{SITE}/tools/{SLUG}.metadata.json"
+OPDS2_URL = f"{SITE}/opds/{SLUG}.json"
+OPDS1_URL = f"{SITE}/opds/{SLUG}.xml"
 PDF_SIZES = {"a4": A4, "letter": LETTER}
 CONTENT_MODIFIED_RE = re.compile(r'"dateModified"\s*:\s*"(\d{4}-\d{2}-\d{2})"')
 
@@ -91,6 +93,8 @@ COPY = {
         "letter": "US Letter PDF",
         "html_print": "Print this web version",
         "metadata": "Machine-readable OER metadata",
+        "opds2": "OPDS 2.0 catalog",
+        "opds1": "OPDS 1.2 catalog",
         "inside": "What is inside",
         "inside_text": (
             "One adult guide, one page for each of 12 common travel settings and one "
@@ -223,6 +227,8 @@ COPY = {
         "letter": "US Letter PDF",
         "html_print": "列印目前網頁版本",
         "metadata": "機器可讀 OER 中繼資料",
+        "opds2": "OPDS 2.0 資源目錄",
+        "opds1": "OPDS 1.2 資源目錄",
         "inside": "護照包含什麼",
         "inside_text": (
             "一頁大人指南、12 種常見旅行情境各一頁，以及一頁再利用與來源標示；"
@@ -311,7 +317,7 @@ STYLE = """
 *{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#f9f6ef,#edf4f6);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"PingFang TC","Microsoft JhengHei",sans-serif}
 a{color:var(--blue)}.wrap{width:min(1040px,calc(100% - 32px));margin:auto}.top{padding:15px 0;border-bottom:1px solid var(--line);background:#ffffffed;position:sticky;top:0;z-index:3}.nav{display:flex;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:780}
 .hero{padding:56px 0 30px}.eyebrow{color:var(--gold);font-size:13px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}.hero h1{font-size:clamp(2.25rem,6vw,4.35rem);line-height:1.03;letter-spacing:-.04em;margin:.18em 0}.lead{max-width:800px;color:var(--sub);font-size:clamp(1.05rem,2.5vw,1.28rem)}
-.badges,.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.badge{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:750;white-space:nowrap}.button{display:inline-block;border:0;border-radius:999px;padding:12px 18px;background:linear-gradient(135deg,var(--blue),#347d91);color:#fff;text-decoration:none;font-weight:820;cursor:pointer}.button.secondary{background:#fff;color:var(--blue);border:1px solid #b8cbd2}
+.badges,.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.badge{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:750;white-space:nowrap}.button{display:inline-block;border:0;border-radius:999px;padding:12px 18px;background:linear-gradient(135deg,var(--blue),#347d91);color:#fff;text-decoration:none;font-weight:820;cursor:pointer;white-space:nowrap}.button.secondary{background:#fff;color:var(--blue);border:1px solid #b8cbd2}
 .screen-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px;margin:18px auto 38px}.panel{grid-column:span 6;background:#fff;border:1px solid var(--line);border-radius:22px;padding:23px;box-shadow:0 10px 28px #2632480d}.panel.wide{grid-column:span 12}.panel.privacy{background:var(--mint)}h2{font-size:clamp(1.45rem,3vw,2.05rem);line-height:1.2;margin:0 0 10px}h3{line-height:1.25}.panel p{color:var(--sub)}
 .downloads{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-top:16px}.download{padding:16px;border:1px solid var(--line);border-radius:14px;background:var(--paper);text-decoration:none;font-weight:800}.download span{display:block;color:var(--sub);font-size:12px;font-weight:500}.passport{margin:32px auto}.passport-sheet{width:min(820px,100%);min-height:900px;margin:20px auto;padding:42px;background:var(--paper);border:1px solid var(--line);border-radius:24px;box-shadow:0 15px 40px #27344812;display:flex;flex-direction:column}.sheet-no{color:var(--gold);font-size:12px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}.passport-sheet h2{font-size:clamp(1.8rem,4vw,2.75rem);margin:8px 0 13px}.boundary{padding:14px 16px;border-left:5px solid var(--gold);background:#fff5dc;border-radius:12px;color:#3d4654}.prompt-grid{display:grid;gap:13px;margin-top:20px}.prompt-card{border:1px solid #cad8dc;border-radius:16px;padding:17px;background:#fff}.prompt-card h3{color:var(--blue);margin:0 0 6px}.prompt-card p{margin:0;color:#465366}.note{margin-top:22px;font-weight:750}.note-box{min-height:135px;border:1px dashed #9fa9b5;border-radius:14px;background:#fff}.skip{margin-top:auto;padding-top:20px;color:var(--sub);font-size:13px}.cover-sheet{justify-content:center;text-align:center}.cover-sheet .boundary{text-align:left;margin-top:28px}.closing-sheet{justify-content:center}.closing-sheet a{overflow-wrap:anywhere}.sources li{margin:8px 0}.faq-item{border-top:1px solid var(--line);padding:15px 0}.faq-item:first-child{border-top:0}.app-card{border-color:#b9cfd6;background:#f6fcfd}.footer{margin-top:42px;padding:28px 0;border-top:1px solid var(--line);color:var(--sub);font-size:13px}
 @media(max-width:720px){.panel{grid-column:span 12}.passport-sheet{min-height:0;padding:24px}.nav{align-items:flex-start;flex-direction:column}.hero{padding-top:36px}}
@@ -885,6 +891,8 @@ def render_page(
 <link rel="alternate" hreflang="zh-Hant" href="{canonical('zh-Hant')}">
 <link rel="alternate" hreflang="x-default" href="{canonical('en')}">
 <link rel="alternate" type="application/ld+json" href="{METADATA_URL}" title="OER metadata">
+<link rel="alternate" type="application/opds+json" href="{OPDS2_URL}" title="OPDS 2.0 catalog">
+<link rel="alternate" type="application/atom+xml;profile=opds-catalog;kind=acquisition" href="{OPDS1_URL}" title="OPDS 1.2 catalog">
 {pdf_alternates}
 <meta property="og:type" content="website">
 <meta property="og:title" content="{html.escape(copy['title'], quote=True)}">
@@ -898,7 +906,7 @@ def render_page(
 <header class="top screen-only"><div class="wrap nav"><a href="{home}">iOS App Guide</a><nav><a href="{SITE}/tools/">{html.escape(copy['tools'])}</a> · <a href="{alternate}">{html.escape(copy['language'])}</a></nav></div></header>
 <main>
 <section class="hero wrap screen-only"><div class="eyebrow">{html.escape(copy['eyebrow'])}</div><h1>{html.escape(copy['title'])}</h1><p class="lead">{html.escape(copy['lead'])}</p><div class="badges">{badges}</div><div class="actions"><a class="button" href="#passport">{html.escape(copy['start'])}</a><a class="button secondary" href="{alternate}">{html.escape(copy['language'])}</a></div></section>
-<section class="screen-grid wrap screen-only"><article class="panel wide"><h2>{html.escape(copy['download'])}</h2><p>{html.escape(copy['download_intro'])}</p><div class="downloads">{downloads}</div><div class="actions"><button class="button secondary" type="button" onclick="window.print()">{html.escape(copy['html_print'])}</button><a class="button secondary" href="{METADATA_URL}">{html.escape(copy['metadata'])}</a></div></article><article class="panel"><h2>{html.escape(copy['inside'])}</h2><p>{html.escape(copy['inside_text'])}</p><h3>{html.escape(copy['how'])}</h3><ol>{how_items}</ol></article><article class="panel"><h2>{html.escape(copy['choices'])}</h2><p>{html.escape(copy['choices_text'])}</p><h3>{html.escape(copy['respect'])}</h3><p>{html.escape(copy['respect_text'])}</p></article><article class="panel privacy"><h2>{html.escape(copy['privacy'])}</h2><p>{html.escape(copy['privacy_text'])}</p></article><article class="panel"><h2>{html.escape(copy['safety'])}</h2><p>{html.escape(copy['safety_text'])}</p></article></section>
+<section class="screen-grid wrap screen-only"><article class="panel wide"><h2>{html.escape(copy['download'])}</h2><p>{html.escape(copy['download_intro'])}</p><div class="downloads">{downloads}</div><div class="actions"><button class="button secondary" type="button" onclick="window.print()">{html.escape(copy['html_print'])}</button><a class="button secondary" href="{METADATA_URL}">{html.escape(copy['metadata'])}</a><a class="button secondary" href="{OPDS2_URL}">{html.escape(copy['opds2'])}</a><a class="button secondary" href="{OPDS1_URL}">{html.escape(copy['opds1'])}</a></div></article><article class="panel"><h2>{html.escape(copy['inside'])}</h2><p>{html.escape(copy['inside_text'])}</p><h3>{html.escape(copy['how'])}</h3><ol>{how_items}</ol></article><article class="panel"><h2>{html.escape(copy['choices'])}</h2><p>{html.escape(copy['choices_text'])}</p><h3>{html.escape(copy['respect'])}</h3><p>{html.escape(copy['respect_text'])}</p></article><article class="panel privacy"><h2>{html.escape(copy['privacy'])}</h2><p>{html.escape(copy['privacy_text'])}</p></article><article class="panel"><h2>{html.escape(copy['safety'])}</h2><p>{html.escape(copy['safety_text'])}</p></article></section>
 <section class="passport wrap" id="passport">{cover}{''.join(scenario_pages)}{closing}</section>
 <section class="screen-grid wrap screen-only"><article class="panel wide"><h2>{html.escape(copy['source'])}</h2><p>{html.escape(copy['source_text'])}</p><ul class="sources">{sources}</ul></article><article class="panel wide"><h2>{html.escape(copy['faq'])}</h2>{faq}</article>{app_section}</section>
 </main>

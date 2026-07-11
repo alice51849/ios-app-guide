@@ -74,6 +74,7 @@ jobs:
           python3 gen_data_hub.py
           python3 family_travel_static_api.py
           python3 family_travel_observation_passport.py
+          python3 family_travel_opds_catalog.py
           python3 family_travel_mission_cards.py
           python3 zhuyin_heritage_lesson_plan.py
           python3 zhuyin_readiness_tool.py

@@ -33,6 +33,7 @@ import cleanup_localized_assets
 import family_travel_dataset
 import family_travel_mission_cards
 import family_travel_observation_passport
+import family_travel_opds_catalog
 import family_travel_static_api
 import gen_app_catalog
 import gen_calculator
@@ -728,6 +729,13 @@ class GeneratorTests(unittest.TestCase):
             self.assertIn('hreflang="zh-Hant"', page)
             self.assertIn("application/ld+json", page)
             self.assertIn(f"{family_travel_observation_passport.SLUG}.metadata.json", page)
+            self.assertIn(family_travel_observation_passport.OPDS2_URL, page)
+            self.assertIn(family_travel_observation_passport.OPDS1_URL, page)
+            self.assertIn('type="application/opds+json"', page)
+            self.assertIn(
+                'type="application/atom+xml;profile=opds-catalog;kind=acquisition"',
+                page,
+            )
             self.assertNotIn("apps.apple.com", page)
             self.assertNotIn('"@type":"SoftwareApplication"', page)
             self.assertNotIn("<form", page)
@@ -782,6 +790,87 @@ class GeneratorTests(unittest.TestCase):
             main.index('id="passport"'),
             main.index(family_travel_observation_passport.APP_ID),
         )
+
+    def test_family_travel_opds_catalogs_are_symmetric_private_and_stable(self):
+        dataset = family_travel_observation_passport.load_dataset()
+        artifacts = family_travel_observation_passport.make_pdf_artifacts(dataset)
+        json_text, xml_text = family_travel_opds_catalog.render_catalogs(
+            dataset, "2026-07-11", artifacts
+        )
+        catalog = json.loads(json_text)
+        json_acquisitions = family_travel_opds_catalog.validate_opds2(
+            catalog, artifacts
+        )
+        xml_acquisitions = family_travel_opds_catalog.validate_opds1(
+            xml_text, "2026-07-11T00:00:00Z", artifacts
+        )
+        self.assertEqual(json_acquisitions, xml_acquisitions)
+        self.assertEqual(2, len(catalog["publications"]))
+        self.assertEqual(4, len(json_acquisitions))
+        self.assertEqual(
+            family_travel_opds_catalog.OPDS2_MEDIA_TYPE,
+            next(
+                link["type"]
+                for link in catalog["links"]
+                if link["rel"] == "self"
+            ),
+        )
+        encoded = json_text + xml_text
+        self.assertNotIn("apps.apple.com", encoded)
+        self.assertNotIn("SoftwareApplication", encoded)
+        self.assertNotIn(family_travel_opds_catalog.APP_ID, encoded)
+        self.assertNotIn(family_travel_opds_catalog.APP_NAME, encoded)
+        self.assertIn("No PDF/UA conformance is claimed", encoded)
+        self.assertNotIn('"conformsTo"', encoded)
+        self.assertNotIn("taggedPDF", encoded)
+        for publication in catalog["publications"]:
+            self.assertEqual(
+                ["textual"],
+                publication["metadata"]["accessibility"]["accessModeSufficient"],
+            )
+            acquisitions = [
+                link
+                for link in publication["links"]
+                if link["rel"] == family_travel_opds_catalog.OPEN_ACCESS_REL
+            ]
+            self.assertEqual(2, len(acquisitions))
+            self.assertTrue(
+                all(link["type"] == "application/pdf" for link in acquisitions)
+            )
+
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            tools = pages / "tools"
+            tools.mkdir()
+            (tools / "index.html").write_text(
+                '<main><section class="wrap grid"></section></main>',
+                encoding="utf-8",
+            )
+            family_travel_observation_passport.build(pages, app_public=False)
+            urls = family_travel_opds_catalog.build(pages, artifacts)
+            outputs = [
+                pages
+                / "opds"
+                / f"{family_travel_observation_passport.SLUG}.json",
+                pages
+                / "opds"
+                / f"{family_travel_observation_passport.SLUG}.xml",
+                pages / "sitemap_opds.xml",
+            ]
+            self.assertEqual(
+                [
+                    family_travel_observation_passport.OPDS2_URL,
+                    family_travel_observation_passport.OPDS1_URL,
+                    family_travel_opds_catalog.SITEMAP_URL,
+                ],
+                urls,
+            )
+            self.assertTrue(all(path.exists() for path in outputs))
+            mtimes = {path: path.stat().st_mtime_ns for path in outputs}
+            family_travel_opds_catalog.build(pages, artifacts)
+            self.assertEqual(
+                mtimes, {path: path.stat().st_mtime_ns for path in outputs}
+            )
 
     def test_family_travel_observation_passport_build_is_stable(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -2417,6 +2506,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_grade1_guide.py", workflow)
         self.assertIn("family_travel_mission_cards.py", workflow)
         self.assertIn("family_travel_observation_passport.py", workflow)
+        self.assertIn("family_travel_opds_catalog.py", workflow)
         self.assertIn("--refresh-slug \"$SUMMER_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$OBSERVATION_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$TRIP_SLUG\"", workflow)
@@ -2434,6 +2524,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_grade1_guide.py", publish)
         self.assertIn("family_travel_mission_cards.py", publish)
         self.assertIn("family_travel_observation_passport.py", publish)
+        self.assertIn("family_travel_opds_catalog.py", publish)
         self.assertIn("--refresh-slug", publish)
         self.assertIn("aeo_answers_i18n.py", publish)
         self.assertIn("add_related_answers.py", publish)

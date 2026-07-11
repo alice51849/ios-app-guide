@@ -48,6 +48,7 @@ def main():
     # 1) 重建
     require([PY, os.path.join(HERE, "build_pages_i18n.py")], env=env)
     require([PY, os.path.join(HERE, "family_travel_observation_passport.py")], env=env)
+    require([PY, os.path.join(HERE, "family_travel_opds_catalog.py")], env=env)
     require([PY, os.path.join(HERE, "family_travel_mission_cards.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_heritage_lesson_plan.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_readiness_tool.py")], env=env)

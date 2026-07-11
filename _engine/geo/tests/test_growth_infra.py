@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import copy
 import csv
+import hashlib
 import importlib.util
 import json
 import os
@@ -56,6 +57,7 @@ import zhuyin_library_storytime_kit
 import zhuyin_parent_teacher_handoff_kit
 import zhuyin_picture_book_club_kit
 import zhuyin_readiness_tool
+import zhuyin_skos_vocabulary
 from videogen.registry import (  # noqa: E402
     APPS,
     VALID_PURCHASE_MODELS,
@@ -1105,6 +1107,288 @@ class GeneratorTests(unittest.TestCase):
             zhuyin_anki_deck.build(pages, app_public=False)
             self.assertEqual(
                 mtimes, {path: path.stat().st_mtime_ns for path in mtimes}
+            )
+
+    def test_zhuyin_skos_graph_is_complete_and_app_independent(self):
+        triples, artifacts = zhuyin_skos_vocabulary.make_graph_artifacts(
+            zhuyin_skos_vocabulary.INITIAL_DATE
+        )
+        self.assertEqual(740, len(triples))
+        self.assertEqual(
+            {"jsonld", "turtle", "ntriples", "shacl"},
+            set(artifacts),
+        )
+        jsonld = json.loads(artifacts["jsonld"]["content"])
+        self.assertEqual(1.1, jsonld["@context"]["@version"])
+        graph_ids = {
+            node["@id"] for node in jsonld["@graph"] if "@id" in node
+        }
+        expected_ids = {
+            f"zhuyin:u{ord(record[0]):04X}" for record in gen_data_hub.ZHUYIN
+        }
+        self.assertTrue(expected_ids.issubset(graph_ids))
+        self.assertEqual(37, len(expected_ids))
+        self.assertEqual(
+            set(range(0x3105, 0x312A)),
+            {ord(record[0]) for record in gen_data_hub.ZHUYIN},
+        )
+        ntriples = artifacts["ntriples"]["content"]
+        for value in re.findall(r"<([^>]+)>", ntriples):
+            value.encode("ascii")
+        for artifact in artifacts.values():
+            content = artifact["content"]
+            self.assertNotIn("apps.apple.com", content)
+            self.assertNotIn(zhuyin_skos_vocabulary.APP_ID, content)
+            self.assertNotIn(zhuyin_skos_vocabulary.APP_NAME, content)
+            self.assertEqual(
+                hashlib.sha256(artifact["bytes"]).hexdigest(),
+                artifact["sha256"],
+            )
+        zhuyin_skos_vocabulary.validate_triples(triples)
+        zhuyin_skos_vocabulary.validate_graph_artifacts(artifacts)
+        metadata = zhuyin_skos_vocabulary.metadata_graph(
+            triples,
+            artifacts,
+            zhuyin_skos_vocabulary.INITIAL_DATE,
+        )
+        zhuyin_skos_vocabulary.validate_metadata(
+            metadata,
+            triples,
+            artifacts,
+        )
+        dataset = metadata["@graph"][0]
+        self.assertEqual(740, dataset["void:triples"])
+        self.assertEqual(46, dataset["void:entities"])
+        self.assertEqual(
+            40,
+            dataset["void:classPartition"]["void:entities"],
+        )
+        self.assertEqual(4, len(dataset["dcat:distribution"]))
+
+    @unittest.skipUnless(
+        importlib.util.find_spec("rdflib")
+        and importlib.util.find_spec("pyshacl"),
+        "RDF validation dependencies are installed in CI",
+    )
+    def test_zhuyin_skos_serializations_are_isomorphic_and_shacl_valid(self):
+        from pyshacl import validate
+        from rdflib import Graph, Literal, URIRef
+        from rdflib.compare import to_isomorphic
+
+        triples, artifacts = zhuyin_skos_vocabulary.make_graph_artifacts(
+            zhuyin_skos_vocabulary.INITIAL_DATE
+        )
+        graphs = []
+        for key, rdf_format in (
+            ("jsonld", "json-ld"),
+            ("turtle", "turtle"),
+            ("ntriples", "nt"),
+        ):
+            graph = Graph()
+            graph.parse(data=artifacts[key]["content"], format=rdf_format)
+            self.assertEqual(len(triples), len(graph))
+            graphs.append(graph)
+        self.assertEqual(
+            to_isomorphic(graphs[0]),
+            to_isomorphic(graphs[1]),
+        )
+        self.assertEqual(
+            to_isomorphic(graphs[0]),
+            to_isomorphic(graphs[2]),
+        )
+        shapes = Graph()
+        shapes.parse(data=artifacts["shacl"]["content"], format="turtle")
+        conforms, _results, report = validate(
+            graphs[0],
+            shacl_graph=shapes,
+            inference="none",
+        )
+        self.assertTrue(conforms, report)
+
+        invalid = Graph()
+        for triple in graphs[0]:
+            invalid.add(triple)
+        invalid.add(
+            (
+                URIRef(zhuyin_skos_vocabulary.concept_uri("ㄅ")),
+                URIRef(zhuyin_skos_vocabulary.SKOS_PREF_LABEL),
+                Literal("Duplicate English label", lang="en"),
+            )
+        )
+        conforms, _results, _report = validate(
+            invalid,
+            shacl_graph=shapes,
+            inference="none",
+        )
+        self.assertFalse(conforms)
+
+    def test_zhuyin_skos_build_is_bilingual_versioned_and_discoverable(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            data = pages / "data"
+            data.mkdir()
+            source_card = (
+                f'<a class="item" href="{zhuyin_skos_vocabulary.SITE}/data/'
+                'zhuyin-bopomofo.html"><h2>Source dataset</h2></a>'
+            )
+            catalog_schema = json.dumps(
+                {
+                    "@context": "https://schema.org",
+                    "@type": "DataCatalog",
+                    "dataset": [
+                        {
+                            "@type": "Dataset",
+                            "url": zhuyin_skos_vocabulary.SOURCE_PAGE,
+                        }
+                    ],
+                }
+            )
+            (data / "index.html").write_text(
+                '<script type="application/ld+json">'
+                f"{catalog_schema}</script><main>{source_card}"
+                '<p class="foot">Footer</p></main>',
+                encoding="utf-8",
+            )
+            urls = zhuyin_skos_vocabulary.build(pages, app_public=False)
+            self.assertEqual(8, len(urls))
+            triples, downloads, _modified = (
+                zhuyin_skos_vocabulary.write_versioned_artifacts(data)
+            )
+            expected_paths = [
+                data / f"{zhuyin_skos_vocabulary.SLUG}.html",
+                pages
+                / "zh-Hant"
+                / "data"
+                / f"{zhuyin_skos_vocabulary.SLUG}.html",
+                *[
+                    data / artifact["filename"]
+                    for artifact in downloads.values()
+                ],
+                pages / "sitemap_vocab.xml",
+            ]
+            self.assertEqual(8, len(expected_paths))
+            self.assertTrue(all(path.exists() for path in expected_paths))
+            english = expected_paths[0].read_text(encoding="utf-8")
+            traditional = expected_paths[1].read_text(encoding="utf-8")
+            for page in (english, traditional):
+                self.assertIn('"Dataset","DefinedTermSet"', page)
+                self.assertIn('"FAQPage"', page)
+                self.assertIn('hreflang="en"', page)
+                self.assertIn('hreflang="zh-Hant"', page)
+                self.assertIn('type="application/ld+json"', page)
+                self.assertIn('type="text/turtle"', page)
+                self.assertNotIn("apps.apple.com", page)
+                self.assertNotIn(zhuyin_skos_vocabulary.APP_ID, page)
+                self.assertNotIn('"SoftwareApplication"', page)
+            self.assertIn("Bopomofo SKOS Vocabulary", english)
+            self.assertIn("注音符號 SKOS 詞彙", traditional)
+            public = zhuyin_skos_vocabulary.render_page(
+                "en",
+                downloads,
+                app_public=True,
+            )
+            self.assertIn(zhuyin_skos_vocabulary.APP_ID, public)
+            self.assertIn('"SoftwareApplication"', public)
+
+            metadata = json.loads(
+                (data / zhuyin_skos_vocabulary.METADATA_FILENAME).read_text(
+                    encoding="utf-8"
+                )
+            )
+            graph_artifacts = {
+                key: artifact
+                for key, artifact in downloads.items()
+                if key != "metadata"
+            }
+            zhuyin_skos_vocabulary.validate_metadata(
+                metadata,
+                triples,
+                graph_artifacts,
+            )
+            encoded_metadata = json.dumps(metadata, ensure_ascii=False)
+            self.assertNotIn("apps.apple.com", encoded_metadata)
+            distributions = {
+                node["@id"]: node
+                for node in metadata["@graph"]
+                if node.get("@type") == "dcat:Distribution"
+            }
+            for key, artifact in graph_artifacts.items():
+                distribution = distributions[
+                    f"{zhuyin_skos_vocabulary.DATASET_URI}-{key}"
+                ]
+                self.assertEqual(
+                    artifact["sha256"],
+                    distribution["schema:sha256"],
+                )
+                self.assertEqual(
+                    len(artifact["bytes"]),
+                    distribution["dcat:byteSize"],
+                )
+
+            sitemap = expected_paths[-1].read_text(encoding="utf-8")
+            for url in urls[:-1]:
+                self.assertIn(url, sitemap)
+            index = (data / "index.html").read_text(encoding="utf-8")
+            target = f"{zhuyin_skos_vocabulary.SLUG}.html"
+            self.assertEqual(
+                1,
+                index.count(
+                    f'href="{zhuyin_skos_vocabulary.LANDING_URL}"'
+                ),
+            )
+            self.assertLess(index.index("zhuyin-bopomofo.html"), index.index(target))
+            catalog_schema = json.loads(
+                re.search(
+                    r'<script type="application/ld\+json">(.*?)</script>',
+                    index,
+                    re.DOTALL,
+                ).group(1)
+            )
+            catalog_entries = [
+                dataset
+                for dataset in catalog_schema["dataset"]
+                if dataset.get("url") == zhuyin_skos_vocabulary.LANDING_URL
+            ]
+            self.assertEqual(1, len(catalog_entries))
+            self.assertEqual(5, len(catalog_entries[0]["distribution"]))
+
+            with mock.patch.object(
+                gen_llms, "DATA_DIR", str(data)
+            ), mock.patch.object(
+                gen_llms, "PAGES", str(pages)
+            ):
+                llms = gen_llms.build_llms({}, set())
+                full = gen_llms.build_llms_full({}, set())
+                sitemap_index = gen_llms.build_sitemap_index()
+            for generated_index in (llms, full):
+                self.assertIn("Bopomofo linked open vocabulary", generated_index)
+                self.assertIn(
+                    downloads["jsonld"]["url"],
+                    generated_index,
+                )
+                self.assertIn(
+                    downloads["metadata"]["url"],
+                    generated_index,
+                )
+            self.assertNotRegex(
+                llms,
+                re.escape(
+                    f"{zhuyin_skos_vocabulary.SITE}/data/"
+                    f"{zhuyin_skos_vocabulary.SLUG}.json"
+                )
+                + r"(?:\s|$)",
+            )
+            self.assertIn("sitemap_vocab.xml", sitemap_index)
+            self.assertIn("sitemap_vocab.xml", gen_llms.build_robots())
+
+            mtimes = {
+                path: path.stat().st_mtime_ns
+                for path in [*expected_paths, data / "index.html"]
+            }
+            zhuyin_skos_vocabulary.build(pages, app_public=False)
+            self.assertEqual(
+                mtimes,
+                {path: path.stat().st_mtime_ns for path in mtimes},
             )
 
     def test_family_travel_observation_passport_build_is_stable(self):
@@ -2951,6 +3235,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_grade1_summer_calendar.py", workflow)
         self.assertIn("zhuyin_grade1_guide.py", workflow)
         self.assertIn("zhuyin_anki_deck.py", workflow)
+        self.assertIn("zhuyin_skos_vocabulary.py", workflow)
         self.assertIn("family_travel_mission_cards.py", workflow)
         self.assertIn("family_travel_observation_passport.py", workflow)
         self.assertIn("family_travel_opds_catalog.py", workflow)
@@ -2975,6 +3260,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_grade1_summer_calendar.py",
             "zhuyin_grade1_guide.py",
             "zhuyin_anki_deck.py",
+            "zhuyin_skos_vocabulary.py",
             "prioritize_trip_planet_resources.py",
             "add_related_tools.py",
             "gen_hubs.py",
@@ -3001,6 +3287,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_grade1_summer_calendar.py", publish)
         self.assertIn("zhuyin_grade1_guide.py", publish)
         self.assertIn("zhuyin_anki_deck.py", publish)
+        self.assertIn("zhuyin_skos_vocabulary.py", publish)
         self.assertIn("family_travel_mission_cards.py", publish)
         self.assertIn("family_travel_observation_passport.py", publish)
         self.assertIn("family_travel_opds_catalog.py", publish)
@@ -3026,6 +3313,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_grade1_summer_calendar.py",
             "zhuyin_grade1_guide.py",
             "zhuyin_anki_deck.py",
+            "zhuyin_skos_vocabulary.py",
             "prioritize_trip_planet_resources.py",
             "add_related_answers.py",
             "add_related_tools.py",

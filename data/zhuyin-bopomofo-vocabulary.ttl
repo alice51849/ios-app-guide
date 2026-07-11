@@ -1,0 +1,677 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix zhuyin: <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#> .
+
+zhuyin:scheme
+    a skos:ConceptScheme, schema:DefinedTermSet ;
+    skos:prefLabel "Bopomofo (Zhuyin) 37-Symbol Vocabulary"@en, "注音符號 37 符號詞彙"@zh-Hant ;
+    dcterms:title "Bopomofo (Zhuyin) 37-Symbol Vocabulary"@en, "注音符號 37 符號詞彙"@zh-Hant ;
+    dcterms:description "A bilingual SKOS concept scheme for all 37 Bopomofo symbols, including Pinyin, broad IPA, Unicode notation and example words."@en, "完整涵蓋 37 個注音符號的雙語 SKOS concept scheme，包含漢語拼音、寬式 IPA、Unicode notation 與例字。"@zh-Hant ;
+    dcterms:creator <https://alice51849.github.io/ios-app-guide/#organization> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:source <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json>, <https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html>, <https://www.unicode.org/charts/PDF/U3100.pdf> ;
+    dcterms:conformsTo <https://www.w3.org/TR/skos-reference/> ;
+    dcterms:created "2026-07-11"^^xsd:date ;
+    dcterms:modified "2026-07-11"^^xsd:date ;
+    schema:numberOfItems "37"^^xsd:integer ;
+    skos:hasTopConcept zhuyin:initials, zhuyin:medials, zhuyin:finals .
+
+<https://alice51849.github.io/ios-app-guide/#organization>
+    a schema:Organization ;
+    schema:name "Lumi Apps - iOS App Guide" .
+
+zhuyin:pinyin
+    a rdf:Property ;
+    rdfs:label "Hanyu Pinyin"@en, "漢語拼音"@zh-Hant ;
+    rdfs:domain skos:Concept ;
+    rdfs:range rdfs:Literal .
+
+zhuyin:ipa
+    a rdf:Property ;
+    rdfs:label "broad IPA"@en, "寬式 IPA"@zh-Hant ;
+    rdfs:domain skos:Concept ;
+    rdfs:range rdfs:Literal .
+
+zhuyin:exampleCharacter
+    a rdf:Property ;
+    rdfs:label "example character"@en, "例字"@zh-Hant ;
+    rdfs:domain skos:Concept ;
+    rdfs:range rdfs:Literal .
+
+zhuyin:examplePinyin
+    a rdf:Property ;
+    rdfs:label "example Pinyin"@en, "例字拼音"@zh-Hant ;
+    rdfs:domain skos:Concept ;
+    rdfs:range rdfs:Literal .
+
+zhuyin:exampleMeaning
+    a rdf:Property ;
+    rdfs:label "example meaning"@en, "例字英文意思"@zh-Hant ;
+    rdfs:domain skos:Concept ;
+    rdfs:range rdfs:Literal .
+
+zhuyin:initials
+    a skos:Concept ;
+    skos:prefLabel "Zhuyin initials"@en, "注音聲母"@zh-Hant ;
+    skos:definition "The 21 consonant initials in the Zhuyin system."@en, "注音符號系統中的 21 個聲母。"@zh-Hant ;
+    skos:notation "initial"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:topConceptOf zhuyin:scheme ;
+    skos:narrower zhuyin:u3105, zhuyin:u3106, zhuyin:u3107, zhuyin:u3108, zhuyin:u3109, zhuyin:u310A, zhuyin:u310B, zhuyin:u310C, zhuyin:u310D, zhuyin:u310E, zhuyin:u310F, zhuyin:u3110, zhuyin:u3111, zhuyin:u3112, zhuyin:u3113, zhuyin:u3114, zhuyin:u3115, zhuyin:u3116, zhuyin:u3117, zhuyin:u3118, zhuyin:u3119 .
+
+zhuyin:medials
+    a skos:Concept ;
+    skos:prefLabel "Zhuyin medials"@en, "注音介音"@zh-Hant ;
+    skos:definition "The three glide medials in the Zhuyin system."@en, "注音符號系統中的 3 個介音。"@zh-Hant ;
+    skos:notation "medial"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:topConceptOf zhuyin:scheme ;
+    skos:narrower zhuyin:u3127, zhuyin:u3128, zhuyin:u3129 .
+
+zhuyin:finals
+    a skos:Concept ;
+    skos:prefLabel "Zhuyin finals"@en, "注音韻母"@zh-Hant ;
+    skos:definition "The 13 vowel finals in the Zhuyin system."@en, "注音符號系統中的 13 個韻母。"@zh-Hant ;
+    skos:notation "final"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:topConceptOf zhuyin:scheme ;
+    skos:narrower zhuyin:u311A, zhuyin:u311B, zhuyin:u311C, zhuyin:u311D, zhuyin:u311E, zhuyin:u311F, zhuyin:u3120, zhuyin:u3121, zhuyin:u3122, zhuyin:u3123, zhuyin:u3124, zhuyin:u3125, zhuyin:u3126 .
+
+zhuyin:u3105
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄅ"@en, "ㄅ"@zh-Hant ;
+    skos:altLabel "b"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin initial ㄅ, corresponding to Hanyu Pinyin b and broad IPA [p]. Example: 爸 (bà), father."@en, "注音聲母 ㄅ，對應漢語拼音 b 與寬式 IPA [p]；例字：爸（bà）。"@zh-Hant ;
+    skos:notation "U+3105"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:initials ;
+    dcterms:identifier "U+3105" ;
+    schema:termCode "U+3105" ;
+    zhuyin:pinyin "b"@zh-Latn-pinyin ;
+    zhuyin:ipa "p" ;
+    zhuyin:exampleCharacter "爸"@zh-Hant ;
+    zhuyin:examplePinyin "bà"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "father"@en .
+
+zhuyin:u3106
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄆ"@en, "ㄆ"@zh-Hant ;
+    skos:altLabel "p"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin initial ㄆ, corresponding to Hanyu Pinyin p and broad IPA [pʰ]. Example: 怕 (pà), afraid."@en, "注音聲母 ㄆ，對應漢語拼音 p 與寬式 IPA [pʰ]；例字：怕（pà）。"@zh-Hant ;
+    skos:notation "U+3106"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:initials ;
+    dcterms:identifier "U+3106" ;
+    schema:termCode "U+3106" ;
+    zhuyin:pinyin "p"@zh-Latn-pinyin ;
+    zhuyin:ipa "pʰ" ;
+    zhuyin:exampleCharacter "怕"@zh-Hant ;
+    zhuyin:examplePinyin "pà"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "afraid"@en .
+
+zhuyin:u3107
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄇ"@en, "ㄇ"@zh-Hant ;
+    skos:altLabel "m"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin initial ㄇ, corresponding to Hanyu Pinyin m and broad IPA [m]. Example: 媽 (mā), mother."@en, "注音聲母 ㄇ，對應漢語拼音 m 與寬式 IPA [m]；例字：媽（mā）。"@zh-Hant ;
+    skos:notation "U+3107"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:initials ;
+    dcterms:identifier "U+3107" ;
+    schema:termCode "U+3107" ;
+    zhuyin:pinyin "m"@zh-Latn-pinyin ;
+    zhuyin:ipa "m" ;
+    zhuyin:exampleCharacter "媽"@zh-Hant ;
+    zhuyin:examplePinyin "mā"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "mother"@en .
+
+zhuyin:u3108
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄈ"@en, "ㄈ"@zh-Hant ;
+    skos:altLabel "f"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin initial ㄈ, corresponding to Hanyu Pinyin f and broad IPA [f]. Example: 飛 (fēi), to fly."@en, "注音聲母 ㄈ，對應漢語拼音 f 與寬式 IPA [f]；例字：飛（fēi）。"@zh-Hant ;
+    skos:notation "U+3108"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:initials ;
+    dcterms:identifier "U+3108" ;
+    schema:termCode "U+3108" ;
+    zhuyin:pinyin "f"@zh-Latn-pinyin ;
+    zhuyin:ipa "f" ;
+    zhuyin:exampleCharacter "飛"@zh-Hant ;
+    zhuyin:examplePinyin "fēi"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "to fly"@en .
+
+zhuyin:u3109
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄉ"@en, "ㄉ"@zh-Hant ;
+    skos:altLabel "d"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin initial ㄉ, corresponding to Hanyu Pinyin d and broad IPA [t]. Example: 大 (dà), big."@en, "注音聲母 ㄉ，對應漢語拼音 d 與寬式 IPA [t]；例字：大（dà）。"@zh-Hant ;
+    skos:notation "U+3109"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:initials ;
+    dcterms:identifier "U+3109" ;
+    schema:termCode "U+3109" ;
+    zhuyin:pinyin "d"@zh-Latn-pinyin ;
+    zhuyin:ipa "t" ;
+    zhuyin:exampleCharacter "大"@zh-Hant ;
+    zhuyin:examplePinyin "dà"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "big"@en .
+
+zhuyin:u310A
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄊ"@en, "ㄊ"@zh-Hant ;
+    skos:altLabel "t"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin initial ㄊ, corresponding to Hanyu Pinyin t and broad IPA [tʰ]. Example: 天 (tiān), sky."@en, "注音聲母 ㄊ，對應漢語拼音 t 與寬式 IPA [tʰ]；例字：天（tiān）。"@zh-Hant ;
+    skos:notation "U+310A"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:initials ;
+    dcterms:identifier "U+310A" ;
+    schema:termCode "U+310A" ;
+    zhuyin:pinyin "t"@zh-Latn-pinyin ;
+    zhuyin:ipa "tʰ" ;
+    zhuyin:exampleCharacter "天"@zh-Hant ;
+    zhuyin:examplePinyin "tiān"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "sky"@en .
+
+zhuyin:u310B
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄋ"@en, "ㄋ"@zh-Hant ;
+    skos:altLabel "n"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin initial ㄋ, corresponding to Hanyu Pinyin n and broad IPA [n]. Example: 你 (nǐ), you."@en, "注音聲母 ㄋ，對應漢語拼音 n 與寬式 IPA [n]；例字：你（nǐ）。"@zh-Hant ;
+    skos:notation "U+310B"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:initials ;
+    dcterms:identifier "U+310B" ;
+    schema:termCode "U+310B" ;
+    zhuyin:pinyin "n"@zh-Latn-pinyin ;
+    zhuyin:ipa "n" ;
+    zhuyin:exampleCharacter "你"@zh-Hant ;
+    zhuyin:examplePinyin "nǐ"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "you"@en .
+
+zhuyin:u310C
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄌ"@en, "ㄌ"@zh-Hant ;
+    skos:altLabel "l"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin initial ㄌ, corresponding to Hanyu Pinyin l and broad IPA [l]. Example: 來 (lái), to come."@en, "注音聲母 ㄌ，對應漢語拼音 l 與寬式 IPA [l]；例字：來（lái）。"@zh-Hant ;
+    skos:notation "U+310C"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:initials ;
+    dcterms:identifier "U+310C" ;
+    schema:termCode "U+310C" ;
+    zhuyin:pinyin "l"@zh-Latn-pinyin ;
+    zhuyin:ipa "l" ;
+    zhuyin:exampleCharacter "來"@zh-Hant ;
+    zhuyin:examplePinyin "lái"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "to come"@en .
+
+zhuyin:u310D
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄍ"@en, "ㄍ"@zh-Hant ;
+    skos:altLabel "g"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin initial ㄍ, corresponding to Hanyu Pinyin g and broad IPA [k]. Example: 狗 (gǒu), dog."@en, "注音聲母 ㄍ，對應漢語拼音 g 與寬式 IPA [k]；例字：狗（gǒu）。"@zh-Hant ;
+    skos:notation "U+310D"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:initials ;
+    dcterms:identifier "U+310D" ;
+    schema:termCode "U+310D" ;
+    zhuyin:pinyin "g"@zh-Latn-pinyin ;
+    zhuyin:ipa "k" ;
+    zhuyin:exampleCharacter "狗"@zh-Hant ;
+    zhuyin:examplePinyin "gǒu"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "dog"@en .
+
+zhuyin:u310E
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄎ"@en, "ㄎ"@zh-Hant ;
+    skos:altLabel "k"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin initial ㄎ, corresponding to Hanyu Pinyin k and broad IPA [kʰ]. Example: 看 (kàn), to look."@en, "注音聲母 ㄎ，對應漢語拼音 k 與寬式 IPA [kʰ]；例字：看（kàn）。"@zh-Hant ;
+    skos:notation "U+310E"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:initials ;
+    dcterms:identifier "U+310E" ;
+    schema:termCode "U+310E" ;
+    zhuyin:pinyin "k"@zh-Latn-pinyin ;
+    zhuyin:ipa "kʰ" ;
+    zhuyin:exampleCharacter "看"@zh-Hant ;
+    zhuyin:examplePinyin "kàn"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "to look"@en .
+
+zhuyin:u310F
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄏ"@en, "ㄏ"@zh-Hant ;
+    skos:altLabel "h"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin initial ㄏ, corresponding to Hanyu Pinyin h and broad IPA [x]. Example: 好 (hǎo), good."@en, "注音聲母 ㄏ，對應漢語拼音 h 與寬式 IPA [x]；例字：好（hǎo）。"@zh-Hant ;
+    skos:notation "U+310F"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:initials ;
+    dcterms:identifier "U+310F" ;
+    schema:termCode "U+310F" ;
+    zhuyin:pinyin "h"@zh-Latn-pinyin ;
+    zhuyin:ipa "x" ;
+    zhuyin:exampleCharacter "好"@zh-Hant ;
+    zhuyin:examplePinyin "hǎo"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "good"@en .
+
+zhuyin:u3110
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄐ"@en, "ㄐ"@zh-Hant ;
+    skos:altLabel "j"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin initial ㄐ, corresponding to Hanyu Pinyin j and broad IPA [tɕ]. Example: 家 (jiā), home."@en, "注音聲母 ㄐ，對應漢語拼音 j 與寬式 IPA [tɕ]；例字：家（jiā）。"@zh-Hant ;
+    skos:notation "U+3110"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:initials ;
+    dcterms:identifier "U+3110" ;
+    schema:termCode "U+3110" ;
+    zhuyin:pinyin "j"@zh-Latn-pinyin ;
+    zhuyin:ipa "tɕ" ;
+    zhuyin:exampleCharacter "家"@zh-Hant ;
+    zhuyin:examplePinyin "jiā"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "home"@en .
+
+zhuyin:u3111
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄑ"@en, "ㄑ"@zh-Hant ;
+    skos:altLabel "q"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin initial ㄑ, corresponding to Hanyu Pinyin q and broad IPA [tɕʰ]. Example: 去 (qù), to go."@en, "注音聲母 ㄑ，對應漢語拼音 q 與寬式 IPA [tɕʰ]；例字：去（qù）。"@zh-Hant ;
+    skos:notation "U+3111"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:initials ;
+    dcterms:identifier "U+3111" ;
+    schema:termCode "U+3111" ;
+    zhuyin:pinyin "q"@zh-Latn-pinyin ;
+    zhuyin:ipa "tɕʰ" ;
+    zhuyin:exampleCharacter "去"@zh-Hant ;
+    zhuyin:examplePinyin "qù"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "to go"@en .
+
+zhuyin:u3112
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄒ"@en, "ㄒ"@zh-Hant ;
+    skos:altLabel "x"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin initial ㄒ, corresponding to Hanyu Pinyin x and broad IPA [ɕ]. Example: 小 (xiǎo), small."@en, "注音聲母 ㄒ，對應漢語拼音 x 與寬式 IPA [ɕ]；例字：小（xiǎo）。"@zh-Hant ;
+    skos:notation "U+3112"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:initials ;
+    dcterms:identifier "U+3112" ;
+    schema:termCode "U+3112" ;
+    zhuyin:pinyin "x"@zh-Latn-pinyin ;
+    zhuyin:ipa "ɕ" ;
+    zhuyin:exampleCharacter "小"@zh-Hant ;
+    zhuyin:examplePinyin "xiǎo"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "small"@en .
+
+zhuyin:u3113
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄓ"@en, "ㄓ"@zh-Hant ;
+    skos:altLabel "zh"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin initial ㄓ, corresponding to Hanyu Pinyin zh and broad IPA [ʈʂ]. Example: 中 (zhōng), middle."@en, "注音聲母 ㄓ，對應漢語拼音 zh 與寬式 IPA [ʈʂ]；例字：中（zhōng）。"@zh-Hant ;
+    skos:notation "U+3113"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:initials ;
+    dcterms:identifier "U+3113" ;
+    schema:termCode "U+3113" ;
+    zhuyin:pinyin "zh"@zh-Latn-pinyin ;
+    zhuyin:ipa "ʈʂ" ;
+    zhuyin:exampleCharacter "中"@zh-Hant ;
+    zhuyin:examplePinyin "zhōng"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "middle"@en .
+
+zhuyin:u3114
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄔ"@en, "ㄔ"@zh-Hant ;
+    skos:altLabel "ch"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin initial ㄔ, corresponding to Hanyu Pinyin ch and broad IPA [ʈʂʰ]. Example: 吃 (chī), to eat."@en, "注音聲母 ㄔ，對應漢語拼音 ch 與寬式 IPA [ʈʂʰ]；例字：吃（chī）。"@zh-Hant ;
+    skos:notation "U+3114"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:initials ;
+    dcterms:identifier "U+3114" ;
+    schema:termCode "U+3114" ;
+    zhuyin:pinyin "ch"@zh-Latn-pinyin ;
+    zhuyin:ipa "ʈʂʰ" ;
+    zhuyin:exampleCharacter "吃"@zh-Hant ;
+    zhuyin:examplePinyin "chī"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "to eat"@en .
+
+zhuyin:u3115
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄕ"@en, "ㄕ"@zh-Hant ;
+    skos:altLabel "sh"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin initial ㄕ, corresponding to Hanyu Pinyin sh and broad IPA [ʂ]. Example: 是 (shì), to be."@en, "注音聲母 ㄕ，對應漢語拼音 sh 與寬式 IPA [ʂ]；例字：是（shì）。"@zh-Hant ;
+    skos:notation "U+3115"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:initials ;
+    dcterms:identifier "U+3115" ;
+    schema:termCode "U+3115" ;
+    zhuyin:pinyin "sh"@zh-Latn-pinyin ;
+    zhuyin:ipa "ʂ" ;
+    zhuyin:exampleCharacter "是"@zh-Hant ;
+    zhuyin:examplePinyin "shì"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "to be"@en .
+
+zhuyin:u3116
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄖ"@en, "ㄖ"@zh-Hant ;
+    skos:altLabel "r"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin initial ㄖ, corresponding to Hanyu Pinyin r and broad IPA [ʐ]. Example: 人 (rén), person."@en, "注音聲母 ㄖ，對應漢語拼音 r 與寬式 IPA [ʐ]；例字：人（rén）。"@zh-Hant ;
+    skos:notation "U+3116"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:initials ;
+    dcterms:identifier "U+3116" ;
+    schema:termCode "U+3116" ;
+    zhuyin:pinyin "r"@zh-Latn-pinyin ;
+    zhuyin:ipa "ʐ" ;
+    zhuyin:exampleCharacter "人"@zh-Hant ;
+    zhuyin:examplePinyin "rén"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "person"@en .
+
+zhuyin:u3117
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄗ"@en, "ㄗ"@zh-Hant ;
+    skos:altLabel "z"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin initial ㄗ, corresponding to Hanyu Pinyin z and broad IPA [ts]. Example: 早 (zǎo), early."@en, "注音聲母 ㄗ，對應漢語拼音 z 與寬式 IPA [ts]；例字：早（zǎo）。"@zh-Hant ;
+    skos:notation "U+3117"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:initials ;
+    dcterms:identifier "U+3117" ;
+    schema:termCode "U+3117" ;
+    zhuyin:pinyin "z"@zh-Latn-pinyin ;
+    zhuyin:ipa "ts" ;
+    zhuyin:exampleCharacter "早"@zh-Hant ;
+    zhuyin:examplePinyin "zǎo"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "early"@en .
+
+zhuyin:u3118
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄘ"@en, "ㄘ"@zh-Hant ;
+    skos:altLabel "c"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin initial ㄘ, corresponding to Hanyu Pinyin c and broad IPA [tsʰ]. Example: 菜 (cài), vegetable."@en, "注音聲母 ㄘ，對應漢語拼音 c 與寬式 IPA [tsʰ]；例字：菜（cài）。"@zh-Hant ;
+    skos:notation "U+3118"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:initials ;
+    dcterms:identifier "U+3118" ;
+    schema:termCode "U+3118" ;
+    zhuyin:pinyin "c"@zh-Latn-pinyin ;
+    zhuyin:ipa "tsʰ" ;
+    zhuyin:exampleCharacter "菜"@zh-Hant ;
+    zhuyin:examplePinyin "cài"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "vegetable"@en .
+
+zhuyin:u3119
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄙ"@en, "ㄙ"@zh-Hant ;
+    skos:altLabel "s"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin initial ㄙ, corresponding to Hanyu Pinyin s and broad IPA [s]. Example: 三 (sān), three."@en, "注音聲母 ㄙ，對應漢語拼音 s 與寬式 IPA [s]；例字：三（sān）。"@zh-Hant ;
+    skos:notation "U+3119"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:initials ;
+    dcterms:identifier "U+3119" ;
+    schema:termCode "U+3119" ;
+    zhuyin:pinyin "s"@zh-Latn-pinyin ;
+    zhuyin:ipa "s" ;
+    zhuyin:exampleCharacter "三"@zh-Hant ;
+    zhuyin:examplePinyin "sān"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "three"@en .
+
+zhuyin:u3127
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄧ"@en, "ㄧ"@zh-Hant ;
+    skos:altLabel "i"@zh-Latn-pinyin, "yi"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin medial ㄧ, corresponding to Hanyu Pinyin i / yi and broad IPA [i]. Example: 一 (yī), one."@en, "注音介音 ㄧ，對應漢語拼音 i / yi 與寬式 IPA [i]；例字：一（yī）。"@zh-Hant ;
+    skos:notation "U+3127"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:medials ;
+    dcterms:identifier "U+3127" ;
+    schema:termCode "U+3127" ;
+    zhuyin:pinyin "i / yi"@zh-Latn-pinyin ;
+    zhuyin:ipa "i" ;
+    zhuyin:exampleCharacter "一"@zh-Hant ;
+    zhuyin:examplePinyin "yī"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "one"@en .
+
+zhuyin:u3128
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄨ"@en, "ㄨ"@zh-Hant ;
+    skos:altLabel "u"@zh-Latn-pinyin, "wu"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin medial ㄨ, corresponding to Hanyu Pinyin u / wu and broad IPA [u]. Example: 五 (wǔ), five."@en, "注音介音 ㄨ，對應漢語拼音 u / wu 與寬式 IPA [u]；例字：五（wǔ）。"@zh-Hant ;
+    skos:notation "U+3128"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:medials ;
+    dcterms:identifier "U+3128" ;
+    schema:termCode "U+3128" ;
+    zhuyin:pinyin "u / wu"@zh-Latn-pinyin ;
+    zhuyin:ipa "u" ;
+    zhuyin:exampleCharacter "五"@zh-Hant ;
+    zhuyin:examplePinyin "wǔ"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "five"@en .
+
+zhuyin:u3129
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄩ"@en, "ㄩ"@zh-Hant ;
+    skos:altLabel "ü"@zh-Latn-pinyin, "yu"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin medial ㄩ, corresponding to Hanyu Pinyin ü / yu and broad IPA [y]. Example: 魚 (yú), fish."@en, "注音介音 ㄩ，對應漢語拼音 ü / yu 與寬式 IPA [y]；例字：魚（yú）。"@zh-Hant ;
+    skos:notation "U+3129"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:medials ;
+    dcterms:identifier "U+3129" ;
+    schema:termCode "U+3129" ;
+    zhuyin:pinyin "ü / yu"@zh-Latn-pinyin ;
+    zhuyin:ipa "y" ;
+    zhuyin:exampleCharacter "魚"@zh-Hant ;
+    zhuyin:examplePinyin "yú"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "fish"@en .
+
+zhuyin:u311A
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄚ"@en, "ㄚ"@zh-Hant ;
+    skos:altLabel "a"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin final ㄚ, corresponding to Hanyu Pinyin a and broad IPA [a]. Example: 大 (dà), big."@en, "注音韻母 ㄚ，對應漢語拼音 a 與寬式 IPA [a]；例字：大（dà）。"@zh-Hant ;
+    skos:notation "U+311A"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:finals ;
+    dcterms:identifier "U+311A" ;
+    schema:termCode "U+311A" ;
+    zhuyin:pinyin "a"@zh-Latn-pinyin ;
+    zhuyin:ipa "a" ;
+    zhuyin:exampleCharacter "大"@zh-Hant ;
+    zhuyin:examplePinyin "dà"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "big"@en .
+
+zhuyin:u311B
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄛ"@en, "ㄛ"@zh-Hant ;
+    skos:altLabel "o"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin final ㄛ, corresponding to Hanyu Pinyin o and broad IPA [ɔ]. Example: 波 (bō), wave."@en, "注音韻母 ㄛ，對應漢語拼音 o 與寬式 IPA [ɔ]；例字：波（bō）。"@zh-Hant ;
+    skos:notation "U+311B"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:finals ;
+    dcterms:identifier "U+311B" ;
+    schema:termCode "U+311B" ;
+    zhuyin:pinyin "o"@zh-Latn-pinyin ;
+    zhuyin:ipa "ɔ" ;
+    zhuyin:exampleCharacter "波"@zh-Hant ;
+    zhuyin:examplePinyin "bō"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "wave"@en .
+
+zhuyin:u311C
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄜ"@en, "ㄜ"@zh-Hant ;
+    skos:altLabel "e"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin final ㄜ, corresponding to Hanyu Pinyin e and broad IPA [ɤ]. Example: 喝 (hē), to drink."@en, "注音韻母 ㄜ，對應漢語拼音 e 與寬式 IPA [ɤ]；例字：喝（hē）。"@zh-Hant ;
+    skos:notation "U+311C"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:finals ;
+    dcterms:identifier "U+311C" ;
+    schema:termCode "U+311C" ;
+    zhuyin:pinyin "e"@zh-Latn-pinyin ;
+    zhuyin:ipa "ɤ" ;
+    zhuyin:exampleCharacter "喝"@zh-Hant ;
+    zhuyin:examplePinyin "hē"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "to drink"@en .
+
+zhuyin:u311D
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄝ"@en, "ㄝ"@zh-Hant ;
+    skos:altLabel "ê"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin final ㄝ, corresponding to Hanyu Pinyin ê and broad IPA [ɛ]. Example: 誒 (ề), hey (interjection)."@en, "注音韻母 ㄝ，對應漢語拼音 ê 與寬式 IPA [ɛ]；例字：誒（ề）。"@zh-Hant ;
+    skos:notation "U+311D"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:finals ;
+    dcterms:identifier "U+311D" ;
+    schema:termCode "U+311D" ;
+    zhuyin:pinyin "ê"@zh-Latn-pinyin ;
+    zhuyin:ipa "ɛ" ;
+    zhuyin:exampleCharacter "誒"@zh-Hant ;
+    zhuyin:examplePinyin "ề"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "hey (interjection)"@en .
+
+zhuyin:u311E
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄞ"@en, "ㄞ"@zh-Hant ;
+    skos:altLabel "ai"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin final ㄞ, corresponding to Hanyu Pinyin ai and broad IPA [ai]. Example: 愛 (ài), love."@en, "注音韻母 ㄞ，對應漢語拼音 ai 與寬式 IPA [ai]；例字：愛（ài）。"@zh-Hant ;
+    skos:notation "U+311E"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:finals ;
+    dcterms:identifier "U+311E" ;
+    schema:termCode "U+311E" ;
+    zhuyin:pinyin "ai"@zh-Latn-pinyin ;
+    zhuyin:ipa "ai" ;
+    zhuyin:exampleCharacter "愛"@zh-Hant ;
+    zhuyin:examplePinyin "ài"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "love"@en .
+
+zhuyin:u311F
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄟ"@en, "ㄟ"@zh-Hant ;
+    skos:altLabel "ei"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin final ㄟ, corresponding to Hanyu Pinyin ei and broad IPA [ei]. Example: 給 (gěi), to give."@en, "注音韻母 ㄟ，對應漢語拼音 ei 與寬式 IPA [ei]；例字：給（gěi）。"@zh-Hant ;
+    skos:notation "U+311F"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:finals ;
+    dcterms:identifier "U+311F" ;
+    schema:termCode "U+311F" ;
+    zhuyin:pinyin "ei"@zh-Latn-pinyin ;
+    zhuyin:ipa "ei" ;
+    zhuyin:exampleCharacter "給"@zh-Hant ;
+    zhuyin:examplePinyin "gěi"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "to give"@en .
+
+zhuyin:u3120
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄠ"@en, "ㄠ"@zh-Hant ;
+    skos:altLabel "ao"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin final ㄠ, corresponding to Hanyu Pinyin ao and broad IPA [au]. Example: 好 (hǎo), good."@en, "注音韻母 ㄠ，對應漢語拼音 ao 與寬式 IPA [au]；例字：好（hǎo）。"@zh-Hant ;
+    skos:notation "U+3120"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:finals ;
+    dcterms:identifier "U+3120" ;
+    schema:termCode "U+3120" ;
+    zhuyin:pinyin "ao"@zh-Latn-pinyin ;
+    zhuyin:ipa "au" ;
+    zhuyin:exampleCharacter "好"@zh-Hant ;
+    zhuyin:examplePinyin "hǎo"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "good"@en .
+
+zhuyin:u3121
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄡ"@en, "ㄡ"@zh-Hant ;
+    skos:altLabel "ou"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin final ㄡ, corresponding to Hanyu Pinyin ou and broad IPA [ou]. Example: 有 (yǒu), to have."@en, "注音韻母 ㄡ，對應漢語拼音 ou 與寬式 IPA [ou]；例字：有（yǒu）。"@zh-Hant ;
+    skos:notation "U+3121"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:finals ;
+    dcterms:identifier "U+3121" ;
+    schema:termCode "U+3121" ;
+    zhuyin:pinyin "ou"@zh-Latn-pinyin ;
+    zhuyin:ipa "ou" ;
+    zhuyin:exampleCharacter "有"@zh-Hant ;
+    zhuyin:examplePinyin "yǒu"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "to have"@en .
+
+zhuyin:u3122
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄢ"@en, "ㄢ"@zh-Hant ;
+    skos:altLabel "an"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin final ㄢ, corresponding to Hanyu Pinyin an and broad IPA [an]. Example: 安 (ān), peace."@en, "注音韻母 ㄢ，對應漢語拼音 an 與寬式 IPA [an]；例字：安（ān）。"@zh-Hant ;
+    skos:notation "U+3122"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:finals ;
+    dcterms:identifier "U+3122" ;
+    schema:termCode "U+3122" ;
+    zhuyin:pinyin "an"@zh-Latn-pinyin ;
+    zhuyin:ipa "an" ;
+    zhuyin:exampleCharacter "安"@zh-Hant ;
+    zhuyin:examplePinyin "ān"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "peace"@en .
+
+zhuyin:u3123
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄣ"@en, "ㄣ"@zh-Hant ;
+    skos:altLabel "en"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin final ㄣ, corresponding to Hanyu Pinyin en and broad IPA [ən]. Example: 恩 (ēn), grace."@en, "注音韻母 ㄣ，對應漢語拼音 en 與寬式 IPA [ən]；例字：恩（ēn）。"@zh-Hant ;
+    skos:notation "U+3123"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:finals ;
+    dcterms:identifier "U+3123" ;
+    schema:termCode "U+3123" ;
+    zhuyin:pinyin "en"@zh-Latn-pinyin ;
+    zhuyin:ipa "ən" ;
+    zhuyin:exampleCharacter "恩"@zh-Hant ;
+    zhuyin:examplePinyin "ēn"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "grace"@en .
+
+zhuyin:u3124
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄤ"@en, "ㄤ"@zh-Hant ;
+    skos:altLabel "ang"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin final ㄤ, corresponding to Hanyu Pinyin ang and broad IPA [aŋ]. Example: 忙 (máng), busy."@en, "注音韻母 ㄤ，對應漢語拼音 ang 與寬式 IPA [aŋ]；例字：忙（máng）。"@zh-Hant ;
+    skos:notation "U+3124"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:finals ;
+    dcterms:identifier "U+3124" ;
+    schema:termCode "U+3124" ;
+    zhuyin:pinyin "ang"@zh-Latn-pinyin ;
+    zhuyin:ipa "aŋ" ;
+    zhuyin:exampleCharacter "忙"@zh-Hant ;
+    zhuyin:examplePinyin "máng"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "busy"@en .
+
+zhuyin:u3125
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄥ"@en, "ㄥ"@zh-Hant ;
+    skos:altLabel "eng"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin final ㄥ, corresponding to Hanyu Pinyin eng and broad IPA [əŋ]. Example: 冷 (lěng), cold."@en, "注音韻母 ㄥ，對應漢語拼音 eng 與寬式 IPA [əŋ]；例字：冷（lěng）。"@zh-Hant ;
+    skos:notation "U+3125"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:finals ;
+    dcterms:identifier "U+3125" ;
+    schema:termCode "U+3125" ;
+    zhuyin:pinyin "eng"@zh-Latn-pinyin ;
+    zhuyin:ipa "əŋ" ;
+    zhuyin:exampleCharacter "冷"@zh-Hant ;
+    zhuyin:examplePinyin "lěng"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "cold"@en .
+
+zhuyin:u3126
+    a skos:Concept, schema:DefinedTerm ;
+    skos:prefLabel "Bopomofo symbol ㄦ"@en, "ㄦ"@zh-Hant ;
+    skos:altLabel "er"@zh-Latn-pinyin ;
+    skos:definition "The Zhuyin final ㄦ, corresponding to Hanyu Pinyin er and broad IPA [ɚ]. Example: 二 (èr), two."@en, "注音韻母 ㄦ，對應漢語拼音 er 與寬式 IPA [ɚ]；例字：二（èr）。"@zh-Hant ;
+    skos:notation "U+3126"^^xsd:string ;
+    skos:inScheme zhuyin:scheme ;
+    skos:broader zhuyin:finals ;
+    dcterms:identifier "U+3126" ;
+    schema:termCode "U+3126" ;
+    zhuyin:pinyin "er"@zh-Latn-pinyin ;
+    zhuyin:ipa "ɚ" ;
+    zhuyin:exampleCharacter "二"@zh-Hant ;
+    zhuyin:examplePinyin "èr"@zh-Latn-pinyin ;
+    zhuyin:exampleMeaning "two"@en .

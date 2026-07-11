@@ -62,6 +62,7 @@ def main():
     require([PY, os.path.join(HERE, "zhuyin_grade1_summer_calendar.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_grade1_guide.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_anki_deck.py")], env=env)
+    require([PY, os.path.join(HERE, "zhuyin_skos_vocabulary.py")], env=env)
     require(
         [PY, os.path.join(HERE, "prioritize_trip_planet_resources.py")],
         env=env,

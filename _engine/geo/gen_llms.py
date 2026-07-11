@@ -40,6 +40,7 @@ SOV = os.path.join(HERE, "reports", "aeo_sov.json")
 FAMILY_TRAVEL_OER = "family-travel-observation-passport"
 FAMILY_TRAVEL_RO_CRATE = "family-travel-missions-ro-crate-metadata.json"
 ZHUYIN_ANKI_DECK = "zhuyin-bopomofo-anki-deck"
+ZHUYIN_SKOS_VOCABULARY = "zhuyin-bopomofo-vocabulary"
 
 AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "anthropic-ai",
            "Claude-Web", "PerplexityBot", "Perplexity-User", "Google-Extended",
@@ -157,7 +158,11 @@ def build_llms(comp_map, live_keys):
             lines += ["", "## Open data (machine-readable, CC BY 4.0 — free to cite)"]
             for f in ds:
                 title = re.sub(r"[-_]", " ", f[:-5])
-                lines.append(f"- [{title}]({SITE}/data/{f}) · JSON: {SITE}/data/{f[:-5]}.json")
+                line = f"- [{title}]({SITE}/data/{f})"
+                json_path = os.path.join(DATA_DIR, f"{f[:-5]}.json")
+                if os.path.exists(json_path):
+                    line += f" · JSON: {SITE}/data/{f[:-5]}.json"
+                lines.append(line)
     family_api = os.path.join(API_DIR, "v1", "family-travel-missions")
     if os.path.exists(os.path.join(family_api, "openapi.json")):
         lines += [
@@ -201,6 +206,20 @@ def build_llms(comp_map, live_keys):
             f"- English UTF-8 TSV: {SITE}/tools/{ZHUYIN_ANKI_DECK}-en.tsv",
             f"- Traditional Chinese UTF-8 TSV: {SITE}/tools/{ZHUYIN_ANKI_DECK}-zh-hant.tsv",
             f"- LRMI / Schema.org metadata: {SITE}/tools/{ZHUYIN_ANKI_DECK}.metadata.json",
+        ]
+    if os.path.exists(
+        os.path.join(DATA_DIR, f"{ZHUYIN_SKOS_VOCABULARY}.metadata.jsonld")
+    ):
+        lines += [
+            "",
+            "## Bopomofo linked open vocabulary (SKOS, CC BY 4.0)",
+            f"- English landing page: {SITE}/data/{ZHUYIN_SKOS_VOCABULARY}.html",
+            f"- Traditional Chinese landing page: {SITE}/zh-Hant/data/{ZHUYIN_SKOS_VOCABULARY}.html",
+            f"- JSON-LD 1.1: {SITE}/data/{ZHUYIN_SKOS_VOCABULARY}.jsonld",
+            f"- Turtle: {SITE}/data/{ZHUYIN_SKOS_VOCABULARY}.ttl",
+            f"- N-Triples: {SITE}/data/{ZHUYIN_SKOS_VOCABULARY}.nt",
+            f"- SHACL shapes: {SITE}/data/{ZHUYIN_SKOS_VOCABULARY}.shacl.ttl",
+            f"- DCAT 3 / VoID metadata: {SITE}/data/{ZHUYIN_SKOS_VOCABULARY}.metadata.jsonld",
         ]
     # 外部 curated 清單與資料集(GitHub;已實測會被 AI 引用的來源,讓爬蟲從站也能發現整個 repo 生態)
     ghbase = "https://github.com/alice51849"
@@ -380,6 +399,20 @@ def build_llms_full(comp_map, live_keys):
             f"  - Traditional Chinese UTF-8 TSV: {SITE}/tools/{ZHUYIN_ANKI_DECK}-zh-hant.tsv",
             f"- LRMI / Schema.org metadata: {SITE}/tools/{ZHUYIN_ANKI_DECK}.metadata.json",
         ]
+    if os.path.exists(
+        os.path.join(DATA_DIR, f"{ZHUYIN_SKOS_VOCABULARY}.metadata.jsonld")
+    ):
+        lines += [
+            "",
+            "## Bopomofo linked open vocabulary",
+            f"- [English SKOS vocabulary]({SITE}/data/{ZHUYIN_SKOS_VOCABULARY}.html)",
+            f"- [Traditional Chinese edition]({SITE}/zh-Hant/data/{ZHUYIN_SKOS_VOCABULARY}.html)",
+            f"  - JSON-LD 1.1: {SITE}/data/{ZHUYIN_SKOS_VOCABULARY}.jsonld",
+            f"  - Turtle: {SITE}/data/{ZHUYIN_SKOS_VOCABULARY}.ttl",
+            f"  - N-Triples: {SITE}/data/{ZHUYIN_SKOS_VOCABULARY}.nt",
+            f"  - SHACL: {SITE}/data/{ZHUYIN_SKOS_VOCABULARY}.shacl.ttl",
+            f"  - DCAT 3 / VoID: {SITE}/data/{ZHUYIN_SKOS_VOCABULARY}.metadata.jsonld",
+        ]
 
     locale_hubs = []
     for name in sorted(os.listdir(PAGES)):
@@ -403,6 +436,7 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_api.xml", "sitemap_swap.xml", "feed.xml",
         "sitemap_opds.xml", "sitemap_ro_crate.xml",
         "sitemap_anki.xml",
+        "sitemap_vocab.xml",
     ):
         if os.path.exists(os.path.join(PAGES, filename)):
             lines.append(f"- {SITE}/{filename}")
@@ -430,6 +464,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_opds.xml",
             f"Sitemap: {SITE}/sitemap_ro_crate.xml",
             f"Sitemap: {SITE}/sitemap_anki.xml",
+            f"Sitemap: {SITE}/sitemap_vocab.xml",
             f"Sitemap: {SITE}/sitemap_index.xml", ""]
     return "\n".join(out)
 
@@ -438,7 +473,12 @@ def build_sitemap_index():
     maps = ["sitemap.xml", "sitemap_alternatives.xml", "sitemap_answers.xml", "sitemap_guides.xml",
             "sitemap_stories.xml", "sitemap_hubs.xml", "sitemap_tools.xml",
             "sitemap_data.xml", "sitemap_api.xml", "sitemap_swap.xml"]
-    maps.extend(["sitemap_opds.xml", "sitemap_ro_crate.xml", "sitemap_anki.xml"])
+    maps.extend([
+        "sitemap_opds.xml",
+        "sitemap_ro_crate.xml",
+        "sitemap_anki.xml",
+        "sitemap_vocab.xml",
+    ])
     items = "\n".join(f"  <sitemap><loc>{SITE}/{m}</loc></sitemap>" for m in maps
                       if os.path.exists(os.path.join(PAGES, m)))
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'

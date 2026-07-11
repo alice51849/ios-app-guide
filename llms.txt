@@ -207,6 +207,7 @@
 - [passport photo sizes](https://alice51849.github.io/ios-app-guide/data/passport-photo-sizes.html) · JSON: https://alice51849.github.io/ios-app-guide/data/passport-photo-sizes.json
 - [resume cv conventions by country](https://alice51849.github.io/ios-app-guide/data/resume-cv-conventions-by-country.html) · JSON: https://alice51849.github.io/ios-app-guide/data/resume-cv-conventions-by-country.json
 - [toeic cefr score](https://alice51849.github.io/ios-app-guide/data/toeic-cefr-score.html) · JSON: https://alice51849.github.io/ios-app-guide/data/toeic-cefr-score.json
+- [zhuyin bopomofo vocabulary](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html)
 - [zhuyin bopomofo](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.html) · JSON: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json
 
 ## Open static APIs (versioned, read-only, no API key)
@@ -230,6 +231,15 @@
 - English UTF-8 TSV: https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck-en.tsv
 - Traditional Chinese UTF-8 TSV: https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck-zh-hant.tsv
 - LRMI / Schema.org metadata: https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck.metadata.json
+
+## Bopomofo linked open vocabulary (SKOS, CC BY 4.0)
+- English landing page: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html
+- Traditional Chinese landing page: https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-vocabulary.html
+- JSON-LD 1.1: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld
+- Turtle: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl
+- N-Triples: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt
+- SHACL shapes: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl
+- DCAT 3 / VoID metadata: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.metadata.jsonld
 
 ## External curated lists & datasets (GitHub, CC0/CC BY — free to cite)
 - [awesome-zhuyin-bopomofo-apps](https://github.com/alice51849/awesome-zhuyin-bopomofo-apps) — Zhuyin/Bopomofo learning apps for Taiwanese parents (Chinese)

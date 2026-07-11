@@ -86,6 +86,7 @@ jobs:
           python3 zhuyin_grade1_summer_calendar.py
           python3 zhuyin_grade1_guide.py
           python3 zhuyin_anki_deck.py
+          python3 zhuyin_skos_vocabulary.py
           python3 prioritize_trip_planet_resources.py
           python3 add_related_tools.py
           python3 add_related_tools.py --locale zh-Hant

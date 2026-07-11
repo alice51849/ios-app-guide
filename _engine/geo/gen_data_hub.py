@@ -315,6 +315,8 @@ def build_zhuyin_page():
            'Printable Bopomofo chart →</a> &nbsp;·&nbsp; '
            f'<a href="{SITE}/tools/zhuyin-bopomofo-anki-deck.html">'
            'Free Anki import deck →</a> &nbsp;·&nbsp; '
+           f'<a href="{SITE}/data/zhuyin-bopomofo-vocabulary.html">'
+           'SKOS linked-data vocabulary →</a> &nbsp;·&nbsp; '
            f'<a href="{SITE}/data/">More open datasets →</a></p>')
     page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
                        lead=html.escape(lead), site=SITE, slug=slug, today=dj["dateModified"],
@@ -323,6 +325,7 @@ def build_zhuyin_page():
                            ("Kids learning apps", "kids-learning.html"),
                            ("Printable Bopomofo chart", "tools/zhuyin-bopomofo-chart.html"),
                            ("Free Bopomofo Anki deck", "tools/zhuyin-bopomofo-anki-deck.html"),
+                           ("Bopomofo SKOS vocabulary", "data/zhuyin-bopomofo-vocabulary.html"),
                            ("Lumi Bopomofo guide", "guides/lumibopomofo.html")]))
     os.makedirs(DATA, exist_ok=True)
     write_text_if_changed(

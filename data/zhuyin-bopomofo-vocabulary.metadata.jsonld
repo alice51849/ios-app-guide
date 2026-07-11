@@ -1,0 +1,212 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "void": "http://rdfs.org/ns/void#",
+    "schema": "https://schema.org/"
+  },
+  "@graph": [
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset",
+      "@type": [
+        "dcat:Dataset",
+        "void:Dataset",
+        "schema:Dataset"
+      ],
+      "dcterms:title": [
+        {
+          "@value": "Bopomofo SKOS Vocabulary - 37 Zhuyin Symbols as Linked Open Data",
+          "@language": "en"
+        },
+        {
+          "@value": "注音符號 SKOS 詞彙｜37 符號 Linked Open Data",
+          "@language": "zh-Hant"
+        }
+      ],
+      "dcterms:description": [
+        {
+          "@value": "Download a CC BY 4.0 SKOS vocabulary for all 37 Zhuyin symbols in JSON-LD, Turtle and N-Triples, with SHACL and DCAT/VoID metadata.",
+          "@language": "en"
+        },
+        {
+          "@value": "免費下載完整 37 注音符號 SKOS 詞彙，提供 JSON-LD、Turtle、N-Triples、SHACL 與 DCAT/VoID 中繼資料。",
+          "@language": "zh-Hant"
+        }
+      ],
+      "dcterms:created": "2026-07-11",
+      "dcterms:modified": "2026-07-11",
+      "dcterms:creator": {
+        "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+      },
+      "dcterms:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dcterms:source": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json"
+        },
+        {
+          "@id": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"
+        },
+        {
+          "@id": "https://www.unicode.org/charts/PDF/U3100.pdf"
+        }
+      ],
+      "dcterms:conformsTo": [
+        {
+          "@id": "https://www.w3.org/TR/skos-reference/"
+        },
+        {
+          "@id": "https://www.w3.org/TR/json-ld11/"
+        },
+        {
+          "@id": "https://www.w3.org/TR/vocab-dcat-3/"
+        },
+        {
+          "@id": "https://www.w3.org/TR/void/"
+        },
+        {
+          "@id": "https://www.w3.org/TR/shacl/"
+        }
+      ],
+      "dcterms:language": [
+        "en",
+        "zh-Hant",
+        "zh-Latn-pinyin"
+      ],
+      "dcat:landingPage": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html"
+      },
+      "dcat:distribution": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-jsonld"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-turtle"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-ntriples"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-shacl"
+        }
+      ],
+      "dcat:keyword": [
+        "Bopomofo",
+        "Zhuyin",
+        "注音符號",
+        "SKOS",
+        "linked open data",
+        "Mandarin phonetics"
+      ],
+      "void:uriSpace": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#",
+      "void:triples": 740,
+      "void:entities": 46,
+      "void:uriRegexPattern": "^https://alice51849\\.github\\.io/ios\\-app\\-guide/data/zhuyin\\-bopomofo\\-vocabulary\\.html\\#",
+      "void:classPartition": {
+        "@type": "void:Dataset",
+        "void:class": {
+          "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "void:entities": 40
+      },
+      "void:properties": 30,
+      "void:classes": 6,
+      "void:vocabulary": [
+        {
+          "@id": "http://www.w3.org/2004/02/skos/core#"
+        },
+        {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        {
+          "@id": "https://schema.org/"
+        }
+      ],
+      "void:exampleResource": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3105"
+      },
+      "void:dataDump": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt"
+        }
+      ],
+      "schema:numberOfItems": 37
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-jsonld",
+      "@type": "dcat:Distribution",
+      "dcterms:title": "JSON-LD 1.1",
+      "dcterms:format": {
+        "@id": "http://www.w3.org/ns/formats/JSON-LD"
+      },
+      "dcat:accessURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
+      },
+      "dcat:mediaType": "application/ld+json",
+      "dcat:byteSize": 79017,
+      "schema:sha256": "e8a4f56690766420f00a3762e08de8d86bfbeb09b00093dfbc4c619508dc855a"
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-turtle",
+      "@type": "dcat:Distribution",
+      "dcterms:title": "Turtle",
+      "dcterms:format": {
+        "@id": "http://www.w3.org/ns/formats/Turtle"
+      },
+      "dcat:accessURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl"
+      },
+      "dcat:mediaType": "text/turtle",
+      "dcat:byteSize": 32239,
+      "schema:sha256": "0173df5ad1c3fcad5bc85e0ba738f05617cbd95bd664f81260344eb5337d2411"
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-ntriples",
+      "@type": "dcat:Distribution",
+      "dcterms:title": "N-Triples",
+      "dcterms:format": {
+        "@id": "http://www.w3.org/ns/formats/N-Triples"
+      },
+      "dcat:accessURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt"
+      },
+      "dcat:mediaType": "application/n-triples",
+      "dcat:byteSize": 141016,
+      "schema:sha256": "3ebe082c284c4b2c8af816ff08731ca9bd694f2f5985e4b459874f4a3ec216ef"
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-shacl",
+      "@type": "dcat:Distribution",
+      "dcterms:title": "SHACL",
+      "dcterms:format": {
+        "@id": "http://www.w3.org/ns/formats/Turtle"
+      },
+      "dcat:accessURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl"
+      },
+      "dcat:mediaType": "text/turtle",
+      "dcat:byteSize": 4070,
+      "schema:sha256": "3f96d72fbbea61f308b28b8b54fc9867b0c2f6ae1538763e05093a9565fdd7cc"
+    }
+  ]
+}

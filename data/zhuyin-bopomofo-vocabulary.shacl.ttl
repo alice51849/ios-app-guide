@@ -1,0 +1,128 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix zhuyin: <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#> .
+
+zhuyin:SchemeShape a sh:NodeShape ;
+    sh:targetNode zhuyin:scheme ;
+    sh:not [ sh:class skos:Concept ] ;
+    sh:not [ sh:class skos:Collection ] ;
+    sh:property [
+        sh:path rdf:type ;
+        sh:hasValue skos:ConceptScheme
+    ] ;
+    sh:property [
+        sh:path skos:hasTopConcept ;
+        sh:minCount 3 ;
+        sh:maxCount 3 ;
+        sh:in ( zhuyin:initials zhuyin:medials zhuyin:finals )
+    ] ;
+    sh:property [
+        sh:path dcterms:license ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:IRI
+    ] ;
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:minCount 2 ;
+        sh:maxCount 2 ;
+        sh:uniqueLang true ;
+        sh:languageIn ( "en" "zh-Hant" )
+    ] .
+
+zhuyin:CategoryShape a sh:NodeShape ;
+    sh:targetObjectsOf skos:broader ;
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:minCount 2 ;
+        sh:maxCount 2 ;
+        sh:uniqueLang true ;
+        sh:languageIn ( "en" "zh-Hant" )
+    ] ;
+    sh:property [
+        sh:path skos:inScheme ;
+        sh:hasValue zhuyin:scheme ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] ;
+    sh:property [
+        sh:path skos:narrower ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI
+    ] .
+
+zhuyin:SymbolShape a sh:NodeShape ;
+    sh:targetSubjectsOf zhuyin:pinyin ;
+    sh:property [
+        sh:path rdf:type ;
+        sh:hasValue skos:Concept
+    ] ;
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:minCount 2 ;
+        sh:maxCount 2 ;
+        sh:uniqueLang true ;
+        sh:languageIn ( "en" "zh-Hant" )
+    ] ;
+    sh:property [
+        sh:path skos:notation ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:pattern "^U\\+[0-9A-F]{4}$"
+    ] ;
+    sh:property [
+        sh:path skos:inScheme ;
+        sh:hasValue zhuyin:scheme ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] ;
+    sh:property [
+        sh:path skos:broader ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:in ( zhuyin:initials zhuyin:medials zhuyin:finals )
+    ] ;
+    sh:property [ sh:path zhuyin:pinyin ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path zhuyin:ipa ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path zhuyin:exampleCharacter ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path zhuyin:examplePinyin ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path zhuyin:exampleMeaning ; sh:minCount 1 ; sh:maxCount 1 ] .
+
+zhuyin:SkosLabelIntegrityShape a sh:NodeShape ;
+    sh:targetClass skos:Concept ;
+    sh:not [ sh:class skos:Collection ] ;
+    sh:sparql [
+        sh:message "SKOS S13: label properties must be pairwise disjoint."@en ;
+        sh:select """
+            SELECT $this WHERE {
+                { $this skos:prefLabel ?label ; skos:altLabel ?label . }
+                UNION
+                { $this skos:prefLabel ?label ; skos:hiddenLabel ?label . }
+                UNION
+                { $this skos:altLabel ?label ; skos:hiddenLabel ?label . }
+            }
+        """
+    ] ;
+    sh:sparql [
+        sh:message "SKOS S27: related and broaderTransitive must be disjoint."@en ;
+        sh:select """
+            SELECT $this WHERE {
+                $this skos:related ?target ;
+                      skos:broaderTransitive ?target .
+            }
+        """
+    ] ;
+    sh:sparql [
+        sh:message "SKOS S46: exactMatch must be disjoint from broadMatch and relatedMatch."@en ;
+        sh:select """
+            SELECT $this WHERE {
+                { $this skos:exactMatch ?target ; skos:broadMatch ?target . }
+                UNION
+                { $this skos:exactMatch ?target ; skos:relatedMatch ?target . }
+            }
+        """
+    ] .

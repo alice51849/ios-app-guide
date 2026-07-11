@@ -425,6 +425,7 @@
   - JSON: https://alice51849.github.io/ios-app-guide/data/resume-cv-conventions-by-country.json
 - [toeic cefr score](https://alice51849.github.io/ios-app-guide/data/toeic-cefr-score.html)
   - JSON: https://alice51849.github.io/ios-app-guide/data/toeic-cefr-score.json
+- [zhuyin bopomofo vocabulary](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html)
 - [zhuyin bopomofo](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.html)
   - JSON: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json
 
@@ -602,6 +603,15 @@
   - Traditional Chinese UTF-8 TSV: https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck-zh-hant.tsv
 - LRMI / Schema.org metadata: https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck.metadata.json
 
+## Bopomofo linked open vocabulary
+- [English SKOS vocabulary](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html)
+- [Traditional Chinese edition](https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-vocabulary.html)
+  - JSON-LD 1.1: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld
+  - Turtle: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl
+  - N-Triples: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt
+  - SHACL: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl
+  - DCAT 3 / VoID: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.metadata.jsonld
+
 ## Localized catalog hubs
 - [ar-SA](https://alice51849.github.io/ios-app-guide/ar-SA/index.html)
 - [bn-BD](https://alice51849.github.io/ios-app-guide/bn-BD/index.html)
@@ -686,3 +696,4 @@
 - https://alice51849.github.io/ios-app-guide/sitemap_opds.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_ro_crate.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_anki.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_vocab.xml

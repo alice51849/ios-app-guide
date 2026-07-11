@@ -5849,7 +5849,20 @@ class GeneratorTests(unittest.TestCase):
     def test_zhuyin_dcat_catalog_is_complete_verifiable_and_deterministic(self):
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)
-            self._seed_zhuyin_dcat_pages(pages)
+            with mock.patch.object(
+                zhuyin_mets_premis_package,
+                "_utc_now",
+                return_value=dt.datetime(
+                    2026,
+                    7,
+                    11,
+                    20,
+                    33,
+                    13,
+                    tzinfo=dt.timezone.utc,
+                ),
+            ):
+                self._seed_zhuyin_dcat_pages(pages)
             urls = zhuyin_dcat_catalog.build(pages, app_public=False)
             self.assertEqual(7, len(urls))
 
@@ -5919,7 +5932,7 @@ class GeneratorTests(unittest.TestCase):
                     stamp.day,
                     stamp.hour,
                     stamp.minute,
-                    stamp.second,
+                    stamp.second - stamp.second % 2,
                 )
                 for info in archive.infolist():
                     self.assertEqual(expected_date, info.date_time)

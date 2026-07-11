@@ -69,16 +69,19 @@ jobs:
           BAGIT_SLUG="where-can-a-digital-repository-download-an-rfc-8493-bagit-package-for-bopomofo-data"
           OCFL_SLUG="where-can-a-digital-repository-download-an-ocfl-1-1-object-for-bopomofo-data"
           IIIF_SLUG="where-can-a-library-load-a-iiif-presentation-3-manifest-for-all-37-bopomofo-symbols"
+          RO_CRATE_SLUG="where-can-i-download-a-ro-crate-1-3-research-object-for-all-37-bopomofo-symbols"
           if python3 -c 'import sys; sys.path.insert(0, "../social"); from appstore_live import live_app_keys; from videogen.registry import APPSTORE; sys.exit(0 if "lumibopomofo" in live_app_keys(APPSTORE, "pages", refresh=False) else 1)'; then
             python3 aeo_answers.py lumibopomofo --cached-live \
               --refresh-slug "$SUMMER_SLUG" --refresh-slug "$OBSERVATION_SLUG" \
               --refresh-slug "$EPUB_SLUG" --refresh-slug "$LIBRARY_SLUG" \
               --refresh-slug "$OER_SLUG" --refresh-slug "$DCAT_SLUG" \
               --refresh-slug "$CSVW_SLUG" --refresh-slug "$BAGIT_SLUG" \
-              --refresh-slug "$OCFL_SLUG" --refresh-slug "$IIIF_SLUG"
+              --refresh-slug "$OCFL_SLUG" --refresh-slug "$IIIF_SLUG" \
+              --refresh-slug "$RO_CRATE_SLUG"
             python3 aeo_answers_i18n.py "$SUMMER_SLUG" "$OBSERVATION_SLUG" \
               "$EPUB_SLUG" "$LIBRARY_SLUG" "$OER_SLUG" "$DCAT_SLUG" \
               "$CSVW_SLUG" "$BAGIT_SLUG" "$OCFL_SLUG" "$IIIF_SLUG" \
+              "$RO_CRATE_SLUG" \
               --langs zh-Hant --trans i18n_trans --force
           else
             echo "Lumi Bopomofo is not public; stale app-linked answers will be pruned."
@@ -121,6 +124,7 @@ jobs:
           python3 zhuyin_bagit_package.py
           python3 zhuyin_ocfl_object.py
           python3 zhuyin_iiif_presentation.py
+          python3 zhuyin_ro_crate.py
           python3 zhuyin_static_api.py
           python3 zhuyin_lms_assessment_bank.py
           python3 zhuyin_epub_opds.py

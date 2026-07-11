@@ -37,6 +37,88 @@
   },
   {
     "app_key": "lumibopomofo",
+    "kind": "ro_crate_research_object",
+    "match": [
+      "download a ro-crate 1.3 research object",
+      "bopomofo ro-crate",
+      "zhuyin research object",
+      "ro-crate 1.3 bopomofo symbols"
+    ],
+    "query": "Where can I download a RO-Crate 1.3 research object for all 37 Bopomofo symbols?",
+    "page_title": "Download a RO-Crate 1.3 Research Object for All 37 Bopomofo Symbols",
+    "meta_description": "Download an attached RO-Crate 1.3 package for all 37 Bopomofo symbols with CSV, JSON Lines, Croissant, CSVW, SKOS and SHA-256.",
+    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/",
+    "primary_resource_label": "Open the Bopomofo RO-Crate 1.3 guide",
+    "lead": "Use the attached, app-independent RO-Crate to transfer the complete 37-symbol Bopomofo reference table and its standards metadata as one reproducible research object.",
+    "detail": "The deterministic ZIP contains ten members at its crate root: ro-crate-metadata.json, a script-free ro-crate-preview.html, bilingual README and CC BY 4.0 attribution files, five data entities and checksums-sha256.txt. The payload covers the canonical 37-row UTF-8 CSV, equivalent JSON Lines, MLCommons Croissant 1.1 metadata, W3C CSVW metadata and the SKOS JSON-LD vocabulary. The metadata descriptor uses the required ro-crate-metadata.json identifier, points to one absolute root Dataset and declares conformance to RO-Crate 1.3. Every root hasPart File has a relative URI, name, description, media type, exact byte size and SHA-256. Validation uses the official 1.3 context pinned to an immutable public source commit, expands the graph offline and checks every path, byte, digest, checksum and deterministic ZIP property. Available third-party validator profiles currently stop at RO-Crate 1.2, so the resource does not claim third-party 1.3 certification. It also assigns no DOI, registers no repository deposit and makes no claim of external ingest or RO-Crate community endorsement.",
+    "follow_up": "Download the ZIP and checksums-sha256.txt, verify the ZIP bytes, extract it without changing paths, then parse ro-crate-metadata.json with an RO-Crate 1.3-aware tool. Confirm the root Dataset, seven hasPart entities, relative file paths, byte lengths and SHA-256 values before repository staging.",
+    "bullets": [
+      "Complete U+3105 through U+3129 coverage in a canonical 37-row CSV and equivalent JSON Lines",
+      "RO-Crate 1.3 descriptor, root Dataset and seven exact local File data entities",
+      "Croissant 1.1, W3C CSVW and SKOS JSON-LD metadata in one attached crate",
+      "Script-free static preview, bilingual reuse guide and CC BY 4.0 attribution",
+      "Deterministic ten-member ZIP with byte-exact SHA-256 checksums"
+    ],
+    "decision_steps": [
+      "Open the bilingual guide and download the attached ZIP plus checksums-sha256.txt.",
+      "Verify the published ZIP SHA-256 before extraction.",
+      "Confirm that ro-crate-metadata.json references the official RO-Crate 1.3 context and profile.",
+      "Check that all seven root hasPart paths exist and match their contentSize and sha256 values.",
+      "Test the extracted crate with a 1.3-aware consumer before repository ingest."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Research-object structure",
+        "check": "RO-Crate 1.3 metadata descriptor linked to one absolute root Dataset",
+        "why": "Consumers can find the crate root without guessing from filenames"
+      },
+      {
+        "need": "Portable core data",
+        "check": "CSV, JSON Lines, Croissant, CSVW and SKOS files use relative crate paths",
+        "why": "The extracted ZIP remains useful without depending on an app or account"
+      },
+      {
+        "need": "Fixity and reproducibility",
+        "check": "Stable member order, fixed ZIP timestamps and SHA-256 for every member except the checksum list",
+        "why": "A repository can reproduce and compare the exact transfer bytes"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not required to download, parse, validate or reuse any RO-Crate data entity. If currently available, it appears only after the complete research object as an optional on-device practice layer.",
+    "sources": [
+      {
+        "title": "Bopomofo RO-Crate 1.3 research object",
+        "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/"
+      },
+      {
+        "title": "RO-Crate Metadata Specification 1.3.0",
+        "url": "https://www.researchobject.org/ro-crate/specification/1.3/"
+      },
+      {
+        "title": "RO-Crate 1.3 JSON-LD context",
+        "url": "https://w3id.org/ro/crate/1.3/context"
+      },
+      {
+        "title": "Pinned RO-Crate specification source",
+        "url": "https://github.com/ResearchObject/ro-crate/commit/4b4f939c18022550ae0b992b7ddfb2cb5b2e8608"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is this an attached or detached RO-Crate?",
+        "a": "It is an attached RO-Crate package. The ZIP root contains ro-crate-metadata.json beside its local payload files and static preview. The same files are also published individually for inspection."
+      },
+      {
+        "q": "Does this package have a DOI or prove repository deposit?",
+        "a": "No. It uses a stable canonical web identifier but does not assign a DOI, register a repository record or prove that any institution has ingested it."
+      },
+      {
+        "q": "Has a third-party validator certified RO-Crate 1.3 conformance?",
+        "a": "No. Available third-party base profiles currently stop at 1.2. The generator instead checks the pinned normative 1.3 context and required structure, expands JSON-LD offline and validates every packaged byte without claiming certification."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
     "kind": "ocfl_digital_preservation",
     "match": [
       "digital repository download an ocfl 1.1 object",
@@ -1159,16 +1241,16 @@
       "dcat 3 bopomofo open data catalog"
     ],
     "query": "Where can an open-data catalog harvest a Bopomofo dataset in DCAT 3?",
-    "page_title": "Harvest Twelve Open Bopomofo Datasets from a Static DCAT 3 Catalog",
-    "meta_description": "Download a W3C DCAT 3 JSON-LD or Turtle catalog for twelve Bopomofo datasets and 56 exact distributions with SPDX SHA-256.",
+    "page_title": "Harvest Thirteen Open Bopomofo Datasets from a Static DCAT 3 Catalog",
+    "meta_description": "Download a W3C DCAT 3 JSON-LD or Turtle catalog for thirteen Bopomofo datasets and 60 exact distributions with SPDX SHA-256.",
     "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html",
     "primary_resource_label": "Download the Bopomofo DCAT 3 catalog",
-    "lead": "Use the static Bopomofo DCAT 3 open-data catalog. It lists twelve related datasets and 56 exact distributions in equivalent JSON-LD and Turtle graphs, with one deterministic ZIP bundle.",
-    "detail": "The catalog covers the 37-symbol reference data, static JSON API, SKOS and SHACL vocabulary, Croissant, CSVW and Data Package tables, RFC 8493 BagIt and OCFL 1.1 preservation packages, IIIF Presentation 3 visual resources, Anki imports, LMS packages, EPUB and OPDS publication files, library records, and OER repository metadata. Every direct distribution records an IANA media-type IRI, byte size, CC BY 4.0 license, language IRIs and an SPDX SHA-256 checksum calculated from the published bytes. Each dcat:CatalogRecord has exactly one foaf:primaryTopic, and the static API is represented separately as a dcat:DataService. Download from https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html. This is a static DCAT description, not portal registration, W3C certification, institutional endorsement or proof that an external catalog has harvested it.",
+    "lead": "Use the static Bopomofo DCAT 3 open-data catalog. It lists thirteen related datasets and 60 exact distributions in equivalent JSON-LD and Turtle graphs, with one deterministic ZIP bundle.",
+    "detail": "The catalog covers the 37-symbol reference data, static JSON API, SKOS and SHACL vocabulary, Croissant, CSVW and Data Package tables, RFC 8493 BagIt, OCFL 1.1 and RO-Crate 1.3 preservation and research-object packages, IIIF Presentation 3 visual resources, Anki imports, LMS packages, EPUB and OPDS publication files, library records, and OER repository metadata. Every direct distribution records an IANA media-type IRI, byte size, CC BY 4.0 license, language IRIs and an SPDX SHA-256 checksum calculated from the published bytes. Each dcat:CatalogRecord has exactly one foaf:primaryTopic, and the static API is represented separately as a dcat:DataService. Download from https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html. This is a static DCAT description, not portal registration, W3C certification, institutional endorsement or proof that an external catalog has harvested it.",
     "follow_up": "Parse the JSON-LD or Turtle in a staging catalog, read dcat:dataset and dcat:record, verify distribution hashes and byte sizes, and map themes, language policies and local identifiers before publication. Use dcat:downloadURL for files and dcat:endpointURL for the read-only API.",
     "bullets": [
-      "Twelve catalogued Bopomofo datasets with bilingual titles and descriptions",
-      "Fifty-six direct distributions spanning data, linked data, tabular metadata, preservation packages, visual resources, learning packages, publications and repository metadata",
+      "Thirteen catalogued Bopomofo datasets with bilingual titles and descriptions",
+      "Sixty direct distributions spanning data, linked data, tabular metadata, preservation and research-object packages, visual resources, learning packages, publications and repository metadata",
       "Equivalent JSON-LD and Turtle RDF graphs with stable named resources",
       "SPDX SHA-256 checksums, exact byte sizes, IANA media-type IRIs and distribution-level CC BY 4.0 licenses",
       "One dcat:DataService for the versioned static JSON API, with OpenAPI endpoint description"

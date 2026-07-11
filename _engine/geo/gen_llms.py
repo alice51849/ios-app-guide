@@ -48,6 +48,7 @@ ZHUYIN_CSVW_PACKAGE = "zhuyin-bopomofo-csvw"
 ZHUYIN_BAGIT_PACKAGE = "zhuyin-bopomofo-bagit"
 ZHUYIN_OCFL_OBJECT = "zhuyin-bopomofo-ocfl"
 ZHUYIN_IIIF_RESOURCE = "zhuyin-bopomofo-iiif-presentation-3"
+ZHUYIN_RO_CRATE = "zhuyin-bopomofo-ro-crate"
 ZHUYIN_RESOURCE_SYNC = "zhuyin-bopomofo-resourcesync"
 ZHUYIN_LMS_BANK = "zhuyin-bopomofo-lms-question-bank"
 ZHUYIN_EPUB = "zhuyin-bopomofo-epub-reference"
@@ -329,6 +330,25 @@ def build_llms(comp_map, live_keys):
         os.path.join(
             DATA_DIR,
             "packages",
+            ZHUYIN_RO_CRATE,
+            "ro-crate-metadata.json",
+        )
+    ):
+        package = f"{SITE}/data/packages/{ZHUYIN_RO_CRATE}"
+        lines += [
+            "",
+            "## Bopomofo RO-Crate 1.3 research object",
+            f"- English guide: {package}/",
+            f"- Traditional Chinese guide: {SITE}/zh-Hant/data/packages/{ZHUYIN_RO_CRATE}/",
+            f"- Attached deterministic ZIP: {package}/bopomofo-37-symbols-ro-crate-1.3.zip",
+            f"- RO-Crate metadata: {package}/ro-crate-metadata.json",
+            f"- Static crate preview: {package}/ro-crate-preview.html",
+            f"- SHA-256 checksums: {package}/checksums-sha256.txt",
+        ]
+    if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
             ZHUYIN_DATA_PACKAGE,
             "datapackage.json",
         )
@@ -525,6 +545,10 @@ def build_llms_full(comp_map, live_keys):
         (
             "Bopomofo IIIF Presentation API 3 visual resource",
             f"data/{ZHUYIN_IIIF_RESOURCE}.html",
+        ),
+        (
+            "Bopomofo RO-Crate 1.3 research object",
+            f"data/packages/{ZHUYIN_RO_CRATE}/",
         ),
         (
             "Bopomofo LMS question bank",
@@ -782,6 +806,25 @@ def build_llms_full(comp_map, live_keys):
         os.path.join(
             DATA_DIR,
             "packages",
+            ZHUYIN_RO_CRATE,
+            "ro-crate-metadata.json",
+        )
+    ):
+        package = f"{SITE}/data/packages/{ZHUYIN_RO_CRATE}"
+        lines += [
+            "",
+            "## Bopomofo RO-Crate 1.3 research object",
+            f"- [English guide]({package}/)",
+            f"- [Traditional Chinese guide]({SITE}/zh-Hant/data/packages/{ZHUYIN_RO_CRATE}/)",
+            f"  - Attached deterministic ZIP: {package}/bopomofo-37-symbols-ro-crate-1.3.zip",
+            f"  - RO-Crate metadata: {package}/ro-crate-metadata.json",
+            f"  - Static crate preview: {package}/ro-crate-preview.html",
+            f"  - SHA-256 checksums: {package}/checksums-sha256.txt",
+        ]
+    if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
             ZHUYIN_DATA_PACKAGE,
             "datapackage.json",
         )
@@ -944,6 +987,7 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_bagit.xml",
         "sitemap_ocfl.xml",
         "sitemap_iiif.xml",
+        "sitemap_ro_crate_bopomofo.xml",
         "sitemap_lms.xml",
         "sitemap_epub.xml",
         "sitemap_library_catalog.xml",
@@ -985,6 +1029,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_bagit.xml",
             f"Sitemap: {SITE}/sitemap_ocfl.xml",
             f"Sitemap: {SITE}/sitemap_iiif.xml",
+            f"Sitemap: {SITE}/sitemap_ro_crate_bopomofo.xml",
             f"Sitemap: {SITE}/sitemap_lms.xml",
             f"Sitemap: {SITE}/sitemap_epub.xml",
             f"Sitemap: {SITE}/sitemap_library_catalog.xml",
@@ -1011,6 +1056,7 @@ def build_sitemap_index():
         "sitemap_bagit.xml",
         "sitemap_ocfl.xml",
         "sitemap_iiif.xml",
+        "sitemap_ro_crate_bopomofo.xml",
         "sitemap_lms.xml",
         "sitemap_epub.xml",
         "sitemap_library_catalog.xml",

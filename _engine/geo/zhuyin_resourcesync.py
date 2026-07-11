@@ -55,6 +55,22 @@ IIIF_IMAGE_PATHS = tuple(
     IIIF_PATH / "images" / f"u{codepoint:04X}.svg"
     for codepoint in range(0x3105, 0x312A)
 )
+RO_CRATE_PATH = Path("data") / "packages" / "zhuyin-bopomofo-ro-crate"
+RO_CRATE_REQUIRED_PATHS = (
+    RO_CRATE_PATH / "index.html",
+    RO_CRATE_PATH / "ro-crate-metadata.json",
+    RO_CRATE_PATH / "ro-crate-preview.html",
+    RO_CRATE_PATH / "README.txt",
+    RO_CRATE_PATH / "LICENSE.txt",
+    RO_CRATE_PATH / "checksums-sha256.txt",
+    RO_CRATE_PATH / "bopomofo-37-symbols-ro-crate-1.3.zip",
+    RO_CRATE_PATH / "data" / "zhuyin-bopomofo-ml-dataset.csv",
+    RO_CRATE_PATH / "data" / "zhuyin-bopomofo-ml-dataset.jsonl",
+    RO_CRATE_PATH / "data" / "zhuyin-bopomofo-ml-dataset.croissant.jsonld",
+    RO_CRATE_PATH / "data" / "zhuyin-bopomofo-ml-dataset.csv-metadata.json",
+    RO_CRATE_PATH / "data" / "zhuyin-bopomofo-vocabulary.jsonld",
+    Path("zh-Hant") / RO_CRATE_PATH / "index.html",
+)
 
 SOURCE_DESCRIPTION_URL = "https://alice51849.github.io/.well-known/resourcesync"
 SOURCE_DESCRIPTION_COPY_URL = f"{SITE}/{SOURCE_DESCRIPTION_COPY_PATH.as_posix()}"
@@ -76,6 +92,7 @@ CONTENT_PATTERNS = (
     "data/packages/zhuyin-bopomofo-csvw/**/*",
     "data/packages/zhuyin-bopomofo-bagit/**/*",
     "data/packages/zhuyin-bopomofo-ocfl/**/*",
+    "data/packages/zhuyin-bopomofo-ro-crate/**/*",
     "iiif/3/bopomofo/**/*",
     "publications/bopomofo-37-symbol-reference/**/*",
     "opds/bopomofo-37-symbol-reference.*",
@@ -86,6 +103,7 @@ CONTENT_PATTERNS = (
     "zh-Hant/data/packages/zhuyin-bopomofo-csvw/**/*",
     "zh-Hant/data/packages/zhuyin-bopomofo-bagit/**/*",
     "zh-Hant/data/packages/zhuyin-bopomofo-ocfl/**/*",
+    "zh-Hant/data/packages/zhuyin-bopomofo-ro-crate/**/*",
     "zh-Hant/api/v1/bopomofo-symbols/**/*",
     "zh-Hant/tools/zhuyin-*",
 )
@@ -200,6 +218,7 @@ REQUIRED_PATHS = (
     IIIF_PATH / "checksums-sha256.txt",
     IIIF_PATH / "metadata.jsonld",
     *IIIF_IMAGE_PATHS,
+    *RO_CRATE_REQUIRED_PATHS,
 )
 CARD_START = "<!-- resourcesync-card:start -->"
 CARD_END = "<!-- resourcesync-card:end -->"
@@ -245,7 +264,8 @@ COPY = {
             (
                 "Portable packages",
                 "Croissant, Data Package, LMS imports, accessible EPUB editions, "
-                "OER metadata, RFC 8493 BagIt, OCFL 1.1 and the DCAT 3 catalog",
+                "OER metadata, RFC 8493 BagIt, OCFL 1.1, RO-Crate 1.3 and the "
+                "DCAT 3 catalog",
             ),
             (
                 "Visual interoperability",
@@ -317,7 +337,8 @@ COPY = {
             (
                 "可攜套件",
                 "Croissant、Data Package、LMS 匯入檔、無障礙 EPUB 版本、"
-                "OER metadata、RFC 8493 BagIt、OCFL 1.1 與 DCAT 3 目錄",
+                "OER metadata、RFC 8493 BagIt、OCFL 1.1、RO-Crate 1.3 與 "
+                "DCAT 3 目錄",
             ),
             (
                 "視覺互通資源",

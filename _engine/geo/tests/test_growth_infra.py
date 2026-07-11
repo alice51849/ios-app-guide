@@ -75,6 +75,7 @@ import zhuyin_parent_teacher_handoff_kit
 import zhuyin_picture_book_club_kit
 import zhuyin_readiness_tool
 import zhuyin_resourcesync
+import zhuyin_ro_crate
 import zhuyin_skos_vocabulary
 import zhuyin_static_api
 from videogen.registry import (  # noqa: E402
@@ -3469,6 +3470,298 @@ class GeneratorTests(unittest.TestCase):
                     json.dumps(report, ensure_ascii=False, indent=2),
                 )
 
+    def test_zhuyin_ro_crate_is_complete_deterministic_and_discoverable(self):
+        from rdflib import Graph
+
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            data = pages / "data"
+            tools = pages / "tools"
+            data.mkdir(parents=True)
+            tools.mkdir()
+            with mock.patch.object(
+                gen_data_hub, "PAGES", str(pages)
+            ), mock.patch.object(
+                gen_data_hub, "DATA", str(data)
+            ):
+                gen_data_hub.build_zhuyin_page()
+            (data / "index.html").write_text(
+                '<script type="application/ld+json">'
+                '{"@context":"https://schema.org","@type":"DataCatalog",'
+                '"dataset":[]}</script><main><a class="item" href="'
+                f'{zhuyin_skos_vocabulary.SOURCE_PAGE}">'
+                '<h2>Source dataset</h2></a>'
+                '<p class="foot">Footer</p></main>',
+                encoding="utf-8",
+            )
+            (tools / "index.html").write_text(
+                '<main><section class="wrap grid"></section></main>',
+                encoding="utf-8",
+            )
+            zhuyin_skos_vocabulary.build(pages, app_public=False)
+            zhuyin_croissant_dataset.build(pages, app_public=False)
+            zhuyin_csvw_metadata.build(pages, app_public=False)
+
+            first = zhuyin_ro_crate.make_artifacts(
+                pages, zhuyin_ro_crate.INITIAL_DATE
+            )
+            second = zhuyin_ro_crate.make_artifacts(
+                pages, zhuyin_ro_crate.INITIAL_DATE
+            )
+            self.assertEqual(first, second)
+            zhuyin_ro_crate.validate_artifacts(
+                first, zhuyin_ro_crate.INITIAL_DATE
+            )
+
+            context_bytes = zhuyin_ro_crate.CONTEXT_PATH.read_bytes()
+            self.assertEqual(196942, len(context_bytes))
+            self.assertEqual(
+                zhuyin_ro_crate.CONTEXT_SHA256,
+                hashlib.sha256(context_bytes).hexdigest(),
+            )
+            sources = json.loads(
+                zhuyin_ro_crate.SOURCES_PATH.read_text(encoding="utf-8")
+            )
+            self.assertEqual(
+                "1.3.0",
+                sources["context"]["version"],
+            )
+            self.assertEqual(
+                zhuyin_ro_crate.SPEC_COMMIT,
+                sources["specification"]["commit"],
+            )
+
+            metadata = json.loads(first[zhuyin_ro_crate.METADATA_FILENAME])
+            self.assertEqual(zhuyin_ro_crate.CONTEXT, metadata["@context"])
+            entities = {entity["@id"]: entity for entity in metadata["@graph"]}
+            self.assertEqual(
+                {
+                    "@id": zhuyin_ro_crate.METADATA_FILENAME,
+                    "@type": "CreativeWork",
+                    "about": {"@id": zhuyin_ro_crate.ROOT_ID},
+                    "conformsTo": {"@id": zhuyin_ro_crate.PROFILE},
+                },
+                entities[zhuyin_ro_crate.METADATA_FILENAME],
+            )
+            root = entities[zhuyin_ro_crate.ROOT_ID]
+            self.assertIn("Dataset", root["@type"])
+            self.assertEqual(
+                {"@id": zhuyin_ro_crate.MOE_PUBLISHER_ID},
+                entities[zhuyin_ro_crate.MOE_REFERENCE_ID]["publisher"],
+            )
+            self.assertEqual(
+                "Organization",
+                entities[zhuyin_ro_crate.MOE_PUBLISHER_ID]["@type"],
+            )
+            self.assertEqual(
+                {
+                    zhuyin_ro_crate.README_FILENAME,
+                    zhuyin_ro_crate.LICENSE_FILENAME,
+                    *(spec.crate_path for spec in zhuyin_ro_crate.PAYLOAD_SPECS),
+                },
+                {part["@id"] for part in root["hasPart"]},
+            )
+            self.assertEqual(7, len(root["hasPart"]))
+            for part in root["hasPart"]:
+                relative = part["@id"]
+                self.assertFalse(Path(relative).is_absolute())
+                self.assertNotIn("..", Path(relative).parts)
+                entity = entities[relative]
+                self.assertEqual(
+                    str(len(first[relative])),
+                    entity["contentSize"],
+                )
+                self.assertEqual(
+                    hashlib.sha256(first[relative]).hexdigest(),
+                    entity["sha256"],
+                )
+
+            csv_rows = list(
+                csv.DictReader(
+                    io.StringIO(
+                        first["data/zhuyin-bopomofo-ml-dataset.csv"].decode(
+                            "utf-8"
+                        )
+                    )
+                )
+            )
+            jsonl_rows = [
+                json.loads(line)
+                for line in first[
+                    "data/zhuyin-bopomofo-ml-dataset.jsonl"
+                ]
+                .decode("utf-8")
+                .splitlines()
+            ]
+            self.assertEqual(37, len(csv_rows))
+            self.assertEqual(37, len(jsonl_rows))
+            self.assertEqual(
+                [row["symbol_id"] for row in csv_rows],
+                [row["symbol_id"] for row in jsonl_rows],
+            )
+
+            local_metadata = copy.deepcopy(metadata)
+            local_metadata["@context"] = json.loads(context_bytes)["@context"]
+            graph = Graph().parse(
+                data=json.dumps(local_metadata, ensure_ascii=False),
+                format="json-ld",
+                publicID=zhuyin_ro_crate.ROOT_ID,
+            )
+            self.assertGreaterEqual(len(graph), 80)
+
+            expected_members = [
+                zhuyin_ro_crate.METADATA_FILENAME,
+                zhuyin_ro_crate.PREVIEW_FILENAME,
+                zhuyin_ro_crate.README_FILENAME,
+                zhuyin_ro_crate.LICENSE_FILENAME,
+                *(
+                    spec.crate_path
+                    for spec in zhuyin_ro_crate.PAYLOAD_SPECS
+                ),
+                zhuyin_ro_crate.CHECKSUM_FILENAME,
+            ]
+            with zipfile.ZipFile(
+                io.BytesIO(first[zhuyin_ro_crate.BUNDLE_FILENAME])
+            ) as archive:
+                self.assertEqual(expected_members, archive.namelist())
+                for info in archive.infolist():
+                    self.assertEqual(
+                        zhuyin_ro_crate.ZIP_TIMESTAMP,
+                        info.date_time,
+                    )
+                    self.assertEqual(
+                        zipfile.ZIP_DEFLATED,
+                        info.compress_type,
+                    )
+                    self.assertEqual(0o100644, info.external_attr >> 16)
+                    self.assertEqual(first[info.filename], archive.read(info))
+            checksum_entries = {
+                path: digest
+                for digest, path in (
+                    line.split("  ", 1)
+                    for line in first[zhuyin_ro_crate.CHECKSUM_FILENAME]
+                    .decode("ascii")
+                    .splitlines()
+                )
+            }
+            self.assertEqual(set(expected_members[:-1]), set(checksum_entries))
+            for path, digest in checksum_entries.items():
+                self.assertEqual(
+                    hashlib.sha256(first[path]).hexdigest(),
+                    digest,
+                )
+            for path in expected_members:
+                raw = first[path]
+                for forbidden in (
+                    b"apps.apple.com",
+                    zhuyin_ro_crate.APP_ID.encode("ascii"),
+                    zhuyin_ro_crate.APP_NAME.encode("utf-8"),
+                    b"SoftwareApplication",
+                ):
+                    self.assertNotIn(forbidden.lower(), raw.lower())
+            self.assertNotIn(
+                b"<script",
+                first[zhuyin_ro_crate.PREVIEW_FILENAME].lower(),
+            )
+
+            urls = zhuyin_ro_crate.build(pages, app_public=False)
+            self.assertEqual(14, len(urls))
+            package = pages / zhuyin_ro_crate.PACKAGE_PATH
+            expected_paths = [
+                *(package / path for path in first),
+                package / "index.html",
+                pages
+                / "zh-Hant"
+                / zhuyin_ro_crate.PACKAGE_PATH
+                / "index.html",
+                pages / zhuyin_ro_crate.SITEMAP_PATH,
+                data / "index.html",
+            ]
+            self.assertTrue(all(path.is_file() for path in expected_paths))
+            for landing in expected_paths[-4:-2]:
+                content = landing.read_text(encoding="utf-8")
+                self.assertIn("RO-Crate 1.3", content)
+                self.assertIn(zhuyin_ro_crate.BUNDLE_URL, content)
+                self.assertNotIn("apps.apple.com", content)
+                self.assertNotIn('"SoftwareApplication"', content)
+            public = zhuyin_ro_crate.render_page(
+                "en",
+                first,
+                zhuyin_ro_crate.INITIAL_DATE,
+                app_public=True,
+            )
+            self.assertIn(zhuyin_ro_crate.APP_ID, public)
+            self.assertIn('"SoftwareApplication"', public)
+            self.assertGreater(
+                public.index(zhuyin_ro_crate.COPY["en"]["app_title"]),
+                public.index(zhuyin_ro_crate.COPY["en"]["sources"]),
+            )
+
+            index = (data / "index.html").read_text(encoding="utf-8")
+            self.assertEqual(1, index.count(zhuyin_ro_crate.CARD_START))
+            self.assertIn(zhuyin_ro_crate.PACKAGE_URL, index)
+            schema_match = re.search(
+                r'<script type="application/ld\+json">(.*?)</script>',
+                index,
+                re.DOTALL,
+            )
+            catalog = json.loads(schema_match.group(1))
+            crate_entries = [
+                item
+                for item in catalog["dataset"]
+                if item.get("url") == zhuyin_ro_crate.PACKAGE_URL
+            ]
+            self.assertEqual(1, len(crate_entries))
+            self.assertEqual(4, len(crate_entries[0]["distribution"]))
+            sitemap = (pages / zhuyin_ro_crate.SITEMAP_PATH).read_text(
+                encoding="utf-8"
+            )
+            for relative in expected_members:
+                self.assertIn(
+                    f"{zhuyin_ro_crate.PACKAGE_URL}{relative}",
+                    sitemap,
+                )
+
+            with mock.patch.object(
+                gen_llms, "PAGES", str(pages)
+            ), mock.patch.object(
+                gen_llms, "DATA_DIR", str(data)
+            ):
+                llms = gen_llms.build_llms({}, set())
+                full = gen_llms.build_llms_full({}, set())
+                robots = gen_llms.build_robots()
+                sitemap_index = gen_llms.build_sitemap_index()
+            for content in (llms, full):
+                self.assertIn("Bopomofo RO-Crate 1.3 research object", content)
+                self.assertIn(zhuyin_ro_crate.METADATA_URL, content)
+            for content in (robots, sitemap_index):
+                self.assertIn(
+                    zhuyin_ro_crate.SITEMAP_PATH.as_posix(),
+                    content,
+                )
+
+            deep_item = next(
+                item
+                for item in answer_deep.DEEP_ITEMS
+                if item.get("kind") == "ro_crate_research_object"
+                and item.get("app_key") == "lumibopomofo"
+            )
+            self.assertEqual(
+                zhuyin_ro_crate.PACKAGE_URL,
+                deep_item["primary_resource_url"],
+            )
+            self.assertNotIn("DOI", deep_item["lead"])
+            self.assertNotIn("certified", deep_item["lead"].lower())
+
+            mtimes = {
+                path: path.stat().st_mtime_ns for path in expected_paths
+            }
+            zhuyin_ro_crate.build(pages, app_public=False)
+            self.assertEqual(
+                mtimes,
+                {path: path.stat().st_mtime_ns for path in expected_paths},
+            )
+
     def test_zhuyin_lms_question_bank_is_complete_and_portable(self):
         rows = zhuyin_croissant_dataset.records()
         first = zhuyin_lms_assessment_bank.make_core_artifacts(rows)
@@ -5078,6 +5371,7 @@ class GeneratorTests(unittest.TestCase):
         zhuyin_bagit_package.build(pages, app_public=False)
         zhuyin_ocfl_object.build(pages, app_public=False)
         zhuyin_iiif_presentation.build(pages, app_public=False)
+        zhuyin_ro_crate.build(pages, app_public=False)
         zhuyin_static_api.build(pages, app_public=False)
         zhuyin_lms_assessment_bank.build(pages, app_public=False)
         zhuyin_epub_opds.build(pages, app_public=False)
@@ -5107,8 +5401,8 @@ class GeneratorTests(unittest.TestCase):
                     package_dir / zhuyin_dcat_catalog.METADATA_FILENAME
                 ).read_text(encoding="utf-8")
             )
-            self.assertEqual(12, metadata["numberOfItems"])
-            self.assertEqual(12, len(metadata["dataset"]))
+            self.assertEqual(13, metadata["numberOfItems"])
+            self.assertEqual(13, len(metadata["dataset"]))
             self.assertEqual(3, len(metadata["distribution"]))
             self.assertEqual(
                 zhuyin_dcat_catalog.DCAT_SPEC,
@@ -5187,8 +5481,9 @@ class GeneratorTests(unittest.TestCase):
             for landing in (english, traditional):
                 self.assertIn("DCAT 3", landing)
                 self.assertIn("SPDX", landing)
-                self.assertIn("56", landing)
+                self.assertIn("60", landing)
                 self.assertIn("IIIF", landing)
+                self.assertIn("RO-Crate", landing)
                 self.assertNotIn("apps.apple.com", landing)
                 self.assertNotIn('"SoftwareApplication"', landing)
 
@@ -5267,11 +5562,12 @@ class GeneratorTests(unittest.TestCase):
             )
             for answer in published_answers:
                 content = answer.read_text(encoding="utf-8")
-                self.assertIn("56", content)
+                self.assertIn("60", content)
                 self.assertIn("IIIF", content)
                 self.assertIn("BagIt", content)
-                self.assertNotIn("45 exact distributions", content)
-                self.assertNotIn("45 個確切", content)
+                self.assertIn("RO-Crate", content)
+                self.assertNotIn("56 exact distributions", content)
+                self.assertNotIn("56 個精確", content)
 
             translations = json.loads(
                 (
@@ -5331,7 +5627,7 @@ class GeneratorTests(unittest.TestCase):
                 format="turtle",
             )
             self.assertTrue(isomorphic(json_graph, turtle_graph))
-            self.assertEqual(1199, len(json_graph))
+            self.assertEqual(1286, len(json_graph))
 
             dcat = zhuyin_dcat_catalog.DCAT
             dcterms = zhuyin_dcat_catalog.DCTERMS
@@ -5365,9 +5661,9 @@ class GeneratorTests(unittest.TestCase):
                 {URIRef(zhuyin_dcat_catalog.CATALOG_ID)},
                 catalogs,
             )
-            self.assertEqual(12, len(records))
-            self.assertEqual(12, len(datasets))
-            self.assertEqual(56, len(distributions))
+            self.assertEqual(13, len(records))
+            self.assertEqual(13, len(datasets))
+            self.assertEqual(60, len(distributions))
             self.assertEqual(
                 {URIRef(zhuyin_dcat_catalog.API_SERVICE)},
                 services,
@@ -5484,6 +5780,18 @@ class GeneratorTests(unittest.TestCase):
                 set(
                     json_graph.objects(
                         iiif_dataset,
+                        URIRef(dcterms + "conformsTo"),
+                    )
+                ),
+            )
+            ro_crate_dataset = URIRef(
+                f"{zhuyin_dcat_catalog.LANDING_URL}#dataset-ro-crate"
+            )
+            self.assertEqual(
+                {URIRef(zhuyin_ro_crate.PROFILE)},
+                set(
+                    json_graph.objects(
+                        ro_crate_dataset,
                         URIRef(dcterms + "conformsTo"),
                     )
                 ),
@@ -5641,7 +5949,7 @@ class GeneratorTests(unittest.TestCase):
                     hashlib.sha256(content).hexdigest(),
                     str(values[0]),
                 )
-            self.assertEqual(56, len(checksum_nodes))
+            self.assertEqual(60, len(checksum_nodes))
             self.assertEqual(
                 1,
                 len(
@@ -5801,7 +6109,7 @@ class GeneratorTests(unittest.TestCase):
 
             resources = zhuyin_resourcesync.discover_resources(pages)
             entries = resource_list.findall(f"{{{sitemap_ns}}}url")
-            self.assertEqual(202, len(resources))
+            self.assertEqual(215, len(resources))
             self.assertEqual(len(resources), len(entries))
             resources_by_path = {
                 resource.relative_path.as_posix(): resource
@@ -5827,6 +6135,26 @@ class GeneratorTests(unittest.TestCase):
                     "application/json",
                     resources_by_path[relative].media_type,
                 )
+            for relative in zhuyin_resourcesync.RO_CRATE_REQUIRED_PATHS:
+                self.assertIn(relative.as_posix(), resources_by_path)
+            self.assertEqual(
+                "application/zip",
+                resources_by_path[
+                    (
+                        "data/packages/zhuyin-bopomofo-ro-crate/"
+                        "bopomofo-37-symbols-ro-crate-1.3.zip"
+                    )
+                ].media_type,
+            )
+            self.assertEqual(
+                "application/ld+json",
+                resources_by_path[
+                    (
+                        "data/packages/zhuyin-bopomofo-ro-crate/"
+                        "data/zhuyin-bopomofo-ml-dataset.croissant.jsonld"
+                    )
+                ].media_type,
+            )
             self.assertEqual(
                 37,
                 sum("/symbols/" in resource.url for resource in resources),
@@ -7850,6 +8178,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_bagit_package.py", workflow)
         self.assertIn("zhuyin_ocfl_object.py", workflow)
         self.assertIn("zhuyin_iiif_presentation.py", workflow)
+        self.assertIn("zhuyin_ro_crate.py", workflow)
         self.assertIn("requirements-iiif-validation.txt", workflow)
         self.assertIn("iiif-validator-bin", workflow)
         self.assertNotIn(
@@ -7894,6 +8223,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_bagit_package.py",
             "zhuyin_ocfl_object.py",
             "zhuyin_iiif_presentation.py",
+            "zhuyin_ro_crate.py",
             "zhuyin_static_api.py",
             "zhuyin_lms_assessment_bank.py",
             "zhuyin_epub_opds.py",
@@ -7921,6 +8251,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("--refresh-slug \"$BAGIT_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$OCFL_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$IIIF_SLUG\"", workflow)
+        self.assertIn("--refresh-slug \"$RO_CRATE_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$TRIP_SLUG\"", workflow)
         self.assertIn('"lumibopomofo" in live_app_keys', workflow)
         self.assertIn('"tripplanet" in live_app_keys', workflow)
@@ -7944,6 +8275,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_bagit_package.py", publish)
         self.assertIn("zhuyin_ocfl_object.py", publish)
         self.assertIn("zhuyin_iiif_presentation.py", publish)
+        self.assertIn("zhuyin_ro_crate.py", publish)
         self.assertIn("zhuyin_static_api.py", publish)
         self.assertIn("zhuyin_lms_assessment_bank.py", publish)
         self.assertIn("zhuyin_epub_opds.py", publish)
@@ -7959,6 +8291,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("family_travel_static_api.py", publish)
         self.assertIn("prioritize_trip_planet_resources.py", publish)
         self.assertIn('gen_llms.py"), "--cached-live"', publish)
+        self.assertIn("gen_feed.py", publish)
         publish_chain = (
             "build_pages_i18n.py",
             "gen_data_hub.py",
@@ -7983,6 +8316,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_bagit_package.py",
             "zhuyin_ocfl_object.py",
             "zhuyin_iiif_presentation.py",
+            "zhuyin_ro_crate.py",
             "zhuyin_static_api.py",
             "zhuyin_lms_assessment_bank.py",
             "zhuyin_epub_opds.py",
@@ -7995,6 +8329,7 @@ class GeneratorTests(unittest.TestCase):
             "add_related_tools.py",
             "fix_en_hreflang.py",
             "gen_llms.py",
+            "gen_feed.py",
         )
         publish_positions = [publish.index(item) for item in publish_chain]
         self.assertEqual(sorted(publish_positions), publish_positions)

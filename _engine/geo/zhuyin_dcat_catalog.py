@@ -30,7 +30,7 @@ HERE = Path(__file__).resolve().parent
 PAGES = HERE / "pages"
 INITIAL_DATE = "2026-07-11"
 TODAY = dt.date.today().isoformat()
-VERSION = "1.1.0"
+VERSION = "1.2.0"
 
 SLUG = "zhuyin-bopomofo-dcat3-open-data-catalog"
 PACKAGE_PATH = Path("data") / "packages" / "zhuyin-bopomofo-dcat3"
@@ -328,6 +328,32 @@ DATASETS = (
         conforms_to=("https://iiif.io/api/presentation/3.0/",),
     ),
     DatasetSpec(
+        key="ro-crate",
+        title_en="Bopomofo RO-Crate 1.3 research object",
+        title_zh="注音 RO-Crate 1.3 研究物件",
+        description_en=(
+            "An attached RO-Crate 1.3 package containing the complete 37-symbol "
+            "table with JSON Lines, Croissant, CSVW and SKOS metadata."
+        ),
+        description_zh=(
+            "Attached RO-Crate 1.3 套件，收錄完整 37 符號表格、JSON Lines、"
+            "Croissant、CSVW 與 SKOS metadata。"
+        ),
+        landing_path="data/packages/zhuyin-bopomofo-ro-crate/",
+        metadata_path=(
+            "data/packages/zhuyin-bopomofo-ro-crate/ro-crate-metadata.json"
+        ),
+        distribution_paths=(
+            "data/packages/zhuyin-bopomofo-ro-crate/"
+            "bopomofo-37-symbols-ro-crate-1.3.zip",
+            "data/packages/zhuyin-bopomofo-ro-crate/ro-crate-metadata.json",
+            "data/packages/zhuyin-bopomofo-ro-crate/ro-crate-preview.html",
+            "data/packages/zhuyin-bopomofo-ro-crate/checksums-sha256.txt",
+        ),
+        keywords=("RO-Crate 1.3", "research object", "FAIR data", "Bopomofo"),
+        conforms_to=("https://w3id.org/ro/crate/1.3",),
+    ),
+    DatasetSpec(
         key="anki",
         title_en="Bopomofo Anki import decks",
         title_zh="注音 Anki 匯入牌組",
@@ -470,8 +496,8 @@ COPY = {
         "lang": "en",
         "title": "DCAT 3 open-data catalog for Bopomofo resources",
         "description": (
-            "Download a static W3C DCAT 3 catalog covering twelve verified "
-            "Bopomofo datasets and 56 exact distributions."
+            "Download a static W3C DCAT 3 catalog covering thirteen verified "
+            "Bopomofo datasets and 60 exact distributions."
         ),
         "eyebrow": "W3C DCAT 3 · JSON-LD + Turtle · SHA-256",
         "lead": (
@@ -482,8 +508,8 @@ COPY = {
         "back": "Open data",
         "language": "繁體中文",
         "badges": (
-            "12 catalogued datasets",
-            "56 exact distributions",
+            "13 catalogued datasets",
+            "60 exact distributions",
             "SPDX SHA-256 fixity",
             "No account or API key",
         ),
@@ -503,7 +529,8 @@ COPY = {
             (
                 "Reference and linked data",
                 "Core JSON, SKOS, SHACL, Croissant, CSVW, CSV, JSON Lines, "
-                "Data Package 2.0, RFC 8493 BagIt, OCFL 1.1 and IIIF Presentation 3.",
+                "Data Package 2.0, RFC 8493 BagIt, OCFL 1.1, IIIF Presentation 3 "
+                "and RO-Crate 1.3.",
             ),
             (
                 "Learning and publication files",
@@ -554,7 +581,7 @@ COPY = {
         "lang": "zh-Hant",
         "title": "注音開放資源 DCAT 3 資料目錄",
         "description": (
-            "下載靜態 W3C DCAT 3 目錄，收錄 12 組已驗證注音資料集與 56 個精確版本。"
+            "下載靜態 W3C DCAT 3 目錄，收錄 13 組已驗證注音資料集與 60 個精確版本。"
         ),
         "eyebrow": "W3C DCAT 3 · JSON-LD＋Turtle · SHA-256",
         "lead": (
@@ -564,8 +591,8 @@ COPY = {
         "back": "開放資料",
         "language": "English",
         "badges": (
-            "12 組目錄資料集",
-            "56 個精確版本",
+            "13 組目錄資料集",
+            "60 個精確版本",
             "SPDX SHA-256 fixity",
             "免帳號與 API key",
         ),
@@ -585,7 +612,8 @@ COPY = {
             (
                 "參考資料與 linked data",
                 "核心 JSON、SKOS、SHACL、Croissant、CSVW、CSV、JSON Lines、"
-                "Data Package 2.0、RFC 8493 BagIt、OCFL 1.1 與 IIIF Presentation 3。",
+                "Data Package 2.0、RFC 8493 BagIt、OCFL 1.1、IIIF Presentation 3 "
+                "與 RO-Crate 1.3。",
             ),
             (
                 "學習與出版檔案",
@@ -735,6 +763,8 @@ def _media_type(relative_path: str) -> str:
         return "application/xml"
     if name.endswith(".epub"):
         return "application/epub+zip"
+    if name.endswith(".html"):
+        return "text/html"
     if name.endswith(".zip"):
         return "application/zip"
     if name.endswith(".csv"):
@@ -1643,7 +1673,7 @@ def _update_data_index(
         f'{CARD_START}<a class="item" href="{LANDING_URL}"><div>'
         '<span class="tag">W3C DCAT 3 · JSON-LD · Turtle</span>'
         "<h2>Bopomofo open-data catalog</h2>"
-        "<p>Twelve datasets and 56 exact distributions with SPDX SHA-256 "
+        "<p>Thirteen datasets and 60 exact distributions with SPDX SHA-256 "
         "fixity and bilingual metadata.</p></div>"
         f'<span class="arrow">&rarr;</span></a>{CARD_END}'
     )

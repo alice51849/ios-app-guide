@@ -40,16 +40,16 @@
   a dcat:Catalog ;
   dcterms:title "Bopomofo open-data catalog"@en,
     "注音開放資料目錄"@zh-Hant ;
-  dcterms:description "Download a static W3C DCAT 3 catalog covering twelve verified Bopomofo datasets and 56 exact distributions."@en,
-    "下載靜態 W3C DCAT 3 目錄，收錄 12 組已驗證注音資料集與 56 個精確版本。"@zh-Hant ;
+  dcterms:description "Download a static W3C DCAT 3 catalog covering thirteen verified Bopomofo datasets and 60 exact distributions."@en,
+    "下載靜態 W3C DCAT 3 目錄，收錄 13 組已驗證注音資料集與 60 個精確版本。"@zh-Hant ;
   dcterms:publisher <https://alice51849.github.io/ios-app-guide/#organization> ;
   dcterms:issued "2026-07-11"^^xsd:date ;
-  dcterms:modified "2026-07-11T18:16:13Z"^^xsd:dateTime ;
+  dcterms:modified "2026-07-11T19:02:29Z"^^xsd:dateTime ;
   dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
     <http://id.loc.gov/vocabulary/iso639-1/zh> ;
   dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
   dcterms:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
-  dcat:version "1.1.0" ;
+  dcat:version "1.2.0" ;
   foaf:homepage <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html> ;
   dcat:themeTaxonomy <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#themes> ;
   dcat:service <https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols#service> ;
@@ -60,6 +60,7 @@
     <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-bagit>,
     <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-ocfl>,
     <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-iiif>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-ro-crate>,
     <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-anki>,
     <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-lms>,
     <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-epub>,
@@ -72,6 +73,7 @@
     <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-bagit>,
     <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-ocfl>,
     <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-iiif>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-ro-crate>,
     <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-anki>,
     <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-lms>,
     <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-epub>,
@@ -83,7 +85,7 @@
   dcterms:title "Catalog entry for Complete 37-symbol Bopomofo reference data"@en,
     "完整 37 符號注音參考資料目錄紀錄"@zh-Hant ;
   dcterms:issued "2026-07-11"^^xsd:date ;
-  dcterms:modified "2026-07-11T18:16:13Z"^^xsd:dateTime ;
+  dcterms:modified "2026-07-11T19:02:29Z"^^xsd:dateTime ;
   dcterms:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
   foaf:primaryTopic <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-symbols> .
 
@@ -151,7 +153,7 @@
   dcterms:title "Catalog entry for Bopomofo SKOS linked-open-data vocabulary"@en,
     "注音符號 SKOS Linked Open Data 詞彙目錄紀錄"@zh-Hant ;
   dcterms:issued "2026-07-11"^^xsd:date ;
-  dcterms:modified "2026-07-11T18:16:13Z"^^xsd:dateTime ;
+  dcterms:modified "2026-07-11T19:02:29Z"^^xsd:dateTime ;
   dcterms:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
   foaf:primaryTopic <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-skos> .
 
@@ -275,7 +277,7 @@
   dcterms:title "Catalog entry for Bopomofo table with Croissant 1.1 and CSVW metadata"@en,
     "附 Croissant 1.1 與 CSVW metadata 的注音表格資料集目錄紀錄"@zh-Hant ;
   dcterms:issued "2026-07-11"^^xsd:date ;
-  dcterms:modified "2026-07-11T18:16:13Z"^^xsd:dateTime ;
+  dcterms:modified "2026-07-11T19:02:29Z"^^xsd:dateTime ;
   dcterms:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
   foaf:primaryTopic <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-croissant> .
 
@@ -438,7 +440,7 @@
   dcterms:title "Catalog entry for Bopomofo Frictionless Data Package 2.0"@en,
     "注音 Frictionless Data Package 2.0目錄紀錄"@zh-Hant ;
   dcterms:issued "2026-07-11"^^xsd:date ;
-  dcterms:modified "2026-07-11T18:16:13Z"^^xsd:dateTime ;
+  dcterms:modified "2026-07-11T19:02:29Z"^^xsd:dateTime ;
   dcterms:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
   foaf:primaryTopic <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-data-package> .
 
@@ -524,7 +526,7 @@
   dcterms:title "Catalog entry for Bopomofo RFC 8493 BagIt preservation package"@en,
     "注音 RFC 8493 BagIt 數位保存套件目錄紀錄"@zh-Hant ;
   dcterms:issued "2026-07-11"^^xsd:date ;
-  dcterms:modified "2026-07-11T18:16:13Z"^^xsd:dateTime ;
+  dcterms:modified "2026-07-11T19:02:29Z"^^xsd:dateTime ;
   dcterms:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
   foaf:primaryTopic <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-bagit> .
 
@@ -611,7 +613,7 @@
   dcterms:title "Catalog entry for Bopomofo OCFL 1.1 preservation object"@en,
     "注音 OCFL 1.1 數位保存物件目錄紀錄"@zh-Hant ;
   dcterms:issued "2026-07-11"^^xsd:date ;
-  dcterms:modified "2026-07-11T18:16:13Z"^^xsd:dateTime ;
+  dcterms:modified "2026-07-11T19:02:29Z"^^xsd:dateTime ;
   dcterms:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
   foaf:primaryTopic <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-ocfl> .
 
@@ -698,7 +700,7 @@
   dcterms:title "Catalog entry for Complete Bopomofo IIIF Presentation API 3 resource"@en,
     "完整注音 IIIF Presentation API 3 資源目錄紀錄"@zh-Hant ;
   dcterms:issued "2026-07-11"^^xsd:date ;
-  dcterms:modified "2026-07-11T18:16:13Z"^^xsd:dateTime ;
+  dcterms:modified "2026-07-11T19:02:29Z"^^xsd:dateTime ;
   dcterms:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
   foaf:primaryTopic <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-iiif> .
 
@@ -816,12 +818,117 @@
   spdx:algorithm spdx:checksumAlgorithm_sha256 ;
   spdx:checksumValue "43279303ad1bb131972a92508117df3b7baa4d724263873d3ab8ae1fba5ab3cd"^^xsd:hexBinary .
 
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-ro-crate>
+  a dcat:CatalogRecord ;
+  dcterms:title "Catalog entry for Bopomofo RO-Crate 1.3 research object"@en,
+    "注音 RO-Crate 1.3 研究物件目錄紀錄"@zh-Hant ;
+  dcterms:issued "2026-07-11"^^xsd:date ;
+  dcterms:modified "2026-07-11T19:02:29Z"^^xsd:dateTime ;
+  dcterms:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
+  foaf:primaryTopic <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-ro-crate> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-ro-crate>
+  a dcat:Dataset ;
+  dcterms:title "Bopomofo RO-Crate 1.3 research object"@en,
+    "注音 RO-Crate 1.3 研究物件"@zh-Hant ;
+  dcterms:description "An attached RO-Crate 1.3 package containing the complete 37-symbol table with JSON Lines, Croissant, CSVW and SKOS metadata."@en,
+    "Attached RO-Crate 1.3 套件，收錄完整 37 符號表格、JSON Lines、Croissant、CSVW 與 SKOS metadata。"@zh-Hant ;
+  dcterms:identifier "LUMI-ZHUYIN-DCAT-RO-CRATE" ;
+  dcterms:issued "2026-07-11"^^xsd:date ;
+  dcterms:modified "2026-07-11"^^xsd:date ;
+  dcterms:publisher <https://alice51849.github.io/ios-app-guide/#organization> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:landingPage <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/> ;
+  dcterms:conformsTo <https://w3id.org/ro/crate/1.3> ;
+  dcat:keyword "RO-Crate 1.3"@en,
+    "research object"@en,
+    "FAIR data"@en,
+    "Bopomofo"@en ;
+  dcat:theme <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-language>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-education>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-metadata> ;
+  dcat:distribution <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-ro-crate-1>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-ro-crate-2>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-ro-crate-3>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-ro-crate-4> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-ro-crate-1>
+  a dcat:Distribution ;
+  dcterms:title "bopomofo-37-symbols-ro-crate-1.3.zip" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/bopomofo-37-symbols-ro-crate-1.3.zip> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/bopomofo-37-symbols-ro-crate-1.3.zip> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/zip> ;
+  dcat:byteSize "20388"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  dcat:packageFormat <https://www.iana.org/assignments/media-types/application/zip> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-ro-crate-1-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-ro-crate-1-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "013ed0af7088b277d253cc0307e8588df54a82f3413bb924272b3a7c80c9482b"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-ro-crate-2>
+  a dcat:Distribution ;
+  dcterms:title "ro-crate-metadata.json" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/ro-crate-metadata.json> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/ro-crate-metadata.json> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> ;
+  dcat:byteSize "9141"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-ro-crate-2-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-ro-crate-2-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "5234a58309cef45161c2180d0da5c7a8d5ef5b8c13d6ce607dffa7a57712b5a5"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-ro-crate-3>
+  a dcat:Distribution ;
+  dcterms:title "ro-crate-preview.html" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/ro-crate-preview.html> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/ro-crate-preview.html> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> ;
+  dcat:byteSize "4268"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-ro-crate-3-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-ro-crate-3-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "3187b38c41cdd0253ea496e3f99122ea3c4ec020c858318f947ac3cc7e52ebac"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-ro-crate-4>
+  a dcat:Distribution ;
+  dcterms:title "checksums-sha256.txt" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/checksums-sha256.txt> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/checksums-sha256.txt> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/text/plain> ;
+  dcat:byteSize "874"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-ro-crate-4-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-ro-crate-4-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "9f094d1016703260d0663460ab4b528c4b05b0947fec0703bd2891acca255255"^^xsd:hexBinary .
+
 <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-anki>
   a dcat:CatalogRecord ;
   dcterms:title "Catalog entry for Bopomofo Anki import decks"@en,
     "注音 Anki 匯入牌組目錄紀錄"@zh-Hant ;
   dcterms:issued "2026-07-11"^^xsd:date ;
-  dcterms:modified "2026-07-11T18:16:13Z"^^xsd:dateTime ;
+  dcterms:modified "2026-07-11T19:02:29Z"^^xsd:dateTime ;
   dcterms:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
   foaf:primaryTopic <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-anki> .
 
@@ -904,7 +1011,7 @@
   dcterms:title "Catalog entry for Bopomofo LMS assessment bank"@en,
     "注音 LMS 題庫目錄紀錄"@zh-Hant ;
   dcterms:issued "2026-07-11"^^xsd:date ;
-  dcterms:modified "2026-07-11T18:16:13Z"^^xsd:dateTime ;
+  dcterms:modified "2026-07-11T19:02:29Z"^^xsd:dateTime ;
   dcterms:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
   foaf:primaryTopic <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-lms> .
 
@@ -1043,7 +1150,7 @@
   dcterms:title "Catalog entry for Bopomofo EPUB 3.3 publication and OPDS catalogs"@en,
     "注音 EPUB 3.3 出版品與 OPDS 目錄目錄紀錄"@zh-Hant ;
   dcterms:issued "2026-07-11"^^xsd:date ;
-  dcterms:modified "2026-07-11T18:16:13Z"^^xsd:dateTime ;
+  dcterms:modified "2026-07-11T19:02:29Z"^^xsd:dateTime ;
   dcterms:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
   foaf:primaryTopic <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-epub> .
 
@@ -1200,7 +1307,7 @@
   dcterms:title "Catalog entry for Bopomofo EPUB library catalog records"@en,
     "注音 EPUB 圖書館書目紀錄目錄紀錄"@zh-Hant ;
   dcterms:issued "2026-07-11"^^xsd:date ;
-  dcterms:modified "2026-07-11T18:16:13Z"^^xsd:dateTime ;
+  dcterms:modified "2026-07-11T19:02:29Z"^^xsd:dateTime ;
   dcterms:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
   foaf:primaryTopic <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-library> .
 
@@ -1343,7 +1450,7 @@
   dcterms:title "Catalog entry for Bopomofo OER repository metadata"@en,
     "注音 OER 典藏庫 metadata目錄紀錄"@zh-Hant ;
   dcterms:issued "2026-07-11"^^xsd:date ;
-  dcterms:modified "2026-07-11T18:16:13Z"^^xsd:dateTime ;
+  dcterms:modified "2026-07-11T19:02:29Z"^^xsd:dateTime ;
   dcterms:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
   foaf:primaryTopic <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-oer-metadata> .
 

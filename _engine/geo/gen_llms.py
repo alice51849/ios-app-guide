@@ -44,6 +44,8 @@ ZHUYIN_ANKI_DECK = "zhuyin-bopomofo-anki-deck"
 ZHUYIN_SKOS_VOCABULARY = "zhuyin-bopomofo-vocabulary"
 ZHUYIN_CROISSANT_DATASET = "zhuyin-bopomofo-ml-dataset"
 ZHUYIN_DATA_PACKAGE = "zhuyin-bopomofo"
+ZHUYIN_RESOURCE_SYNC = "zhuyin-bopomofo-resourcesync"
+RESOURCE_SYNC_SOURCE = "https://alice51849.github.io/.well-known/resourcesync"
 
 AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "anthropic-ai",
            "Claude-Web", "PerplexityBot", "Perplexity-User", "Google-Extended",
@@ -266,6 +268,19 @@ def build_llms(comp_map, live_keys):
             f"- Table Schema 2.0: {package}/table-schema.json",
             f"- UTF-8 CSV: {package}/symbols.csv",
         ]
+    if os.path.exists(
+        os.path.join(PAGES, "resourcesync", "resourcelist.xml")
+    ):
+        lines += [
+            "",
+            "## Bopomofo ResourceSync harvest feed (OAI ResourceSync 1.1)",
+            f"- English guide: {SITE}/data/{ZHUYIN_RESOURCE_SYNC}.html",
+            f"- Traditional Chinese guide: {SITE}/zh-Hant/data/{ZHUYIN_RESOURCE_SYNC}.html",
+            f"- Well-known Source Description: {RESOURCE_SYNC_SOURCE}",
+            f"- Capability List: {SITE}/resourcesync/capabilitylist.xml",
+            f"- Complete Resource List with SHA-256: {SITE}/resourcesync/resourcelist.xml",
+            f"- Collection JSON-LD: {SITE}/resourcesync/bopomofo-collection.jsonld",
+        ]
     # 外部 curated 清單與資料集(GitHub;已實測會被 AI 引用的來源,讓爬蟲從站也能發現整個 repo 生態)
     ghbase = "https://github.com/alice51849"
     lines += ["", "## External curated lists & datasets (GitHub, CC0/CC BY — free to cite)"]
@@ -323,6 +338,10 @@ def build_llms_full(comp_map, live_keys):
         ("Visual stories", "stories/index.html"),
         ("Open data", "data/index.html"),
         ("Open static APIs", "api/index.html"),
+        (
+            "Bopomofo ResourceSync feed",
+            f"data/{ZHUYIN_RESOURCE_SYNC}.html",
+        ),
         ("Free tools", "tools/index.html"),
     ]
     for title, rel in entry_points:
@@ -507,6 +526,19 @@ def build_llms_full(comp_map, live_keys):
             f"  - Table Schema 2.0: {package}/table-schema.json",
             f"  - UTF-8 CSV: {package}/symbols.csv",
         ]
+    if os.path.exists(
+        os.path.join(PAGES, "resourcesync", "resourcelist.xml")
+    ):
+        lines += [
+            "",
+            "## Bopomofo ResourceSync harvest feed",
+            f"- [English guide]({SITE}/data/{ZHUYIN_RESOURCE_SYNC}.html)",
+            f"- [Traditional Chinese guide]({SITE}/zh-Hant/data/{ZHUYIN_RESOURCE_SYNC}.html)",
+            f"- Source Description: {RESOURCE_SYNC_SOURCE}",
+            f"- Capability List: {SITE}/resourcesync/capabilitylist.xml",
+            f"- Resource List: {SITE}/resourcesync/resourcelist.xml",
+            f"- Collection JSON-LD: {SITE}/resourcesync/bopomofo-collection.jsonld",
+        ]
 
     locale_hubs = []
     for name in sorted(os.listdir(PAGES)):
@@ -533,6 +565,8 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_vocab.xml",
         "sitemap_croissant.xml",
         "sitemap_datapackage.xml",
+        "sitemap_resourcesync.xml",
+        "resourcesync/resourcelist.xml",
     ):
         if os.path.exists(os.path.join(PAGES, filename)):
             lines.append(f"- {SITE}/{filename}")
@@ -563,6 +597,8 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_vocab.xml",
             f"Sitemap: {SITE}/sitemap_croissant.xml",
             f"Sitemap: {SITE}/sitemap_datapackage.xml",
+            f"Sitemap: {SITE}/sitemap_resourcesync.xml",
+            f"Sitemap: {SITE}/resourcesync/resourcelist.xml",
             f"Sitemap: {SITE}/sitemap_index.xml", ""]
     return "\n".join(out)
 
@@ -578,6 +614,8 @@ def build_sitemap_index():
         "sitemap_vocab.xml",
         "sitemap_croissant.xml",
         "sitemap_datapackage.xml",
+        "sitemap_resourcesync.xml",
+        "resourcesync/resourcelist.xml",
     ])
     items = "\n".join(f"  <sitemap><loc>{SITE}/{m}</loc></sitemap>" for m in maps
                       if os.path.exists(os.path.join(PAGES, m)))

@@ -13,6 +13,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+import xml.etree.ElementTree as ET
 from pathlib import Path
 from unittest import mock
 
@@ -60,6 +61,7 @@ import zhuyin_library_storytime_kit
 import zhuyin_parent_teacher_handoff_kit
 import zhuyin_picture_book_club_kit
 import zhuyin_readiness_tool
+import zhuyin_resourcesync
 import zhuyin_skos_vocabulary
 import zhuyin_static_api
 from videogen.registry import (  # noqa: E402
@@ -2120,6 +2122,184 @@ class GeneratorTests(unittest.TestCase):
                 {path: path.stat().st_mtime_ns for path in mtimes},
             )
 
+    def _seed_zhuyin_resourcesync_pages(self, pages):
+        data = pages / "data"
+        data.mkdir(parents=True)
+        (data / "index.html").write_text(
+            '<main><p class="foot">Footer</p></main>',
+            encoding="utf-8",
+        )
+        for relative in zhuyin_resourcesync.REQUIRED_PATHS[:-1]:
+            path = pages / relative
+            path.parent.mkdir(parents=True, exist_ok=True)
+            payload = {"fixture": True}
+            if relative.name.endswith(".croissant.jsonld"):
+                payload["dateModified"] = "2026-07-11"
+            path.write_text(
+                json.dumps(payload) + "\n",
+                encoding="utf-8",
+            )
+        tool = pages / "tools" / "zhuyin-open-practice.html"
+        tool.parent.mkdir(parents=True)
+        tool.write_text(
+            '<meta name="content-modified" content="2026-07-10">fixture',
+            encoding="utf-8",
+        )
+        zhuyin_static_api.build(pages, app_public=False)
+
+    def test_zhuyin_resourcesync_is_complete_verifiable_and_discoverable(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            self._seed_zhuyin_resourcesync_pages(pages)
+            urls = zhuyin_resourcesync.build(pages, app_public=False)
+
+            expected = (
+                pages / zhuyin_resourcesync.SOURCE_DESCRIPTION_COPY_PATH,
+                pages / zhuyin_resourcesync.CAPABILITY_LIST_PATH,
+                pages / zhuyin_resourcesync.RESOURCE_LIST_PATH,
+                pages / zhuyin_resourcesync.COLLECTION_PATH,
+                pages / zhuyin_resourcesync.STATE_PATH,
+                pages / zhuyin_resourcesync.LANDING_PATH,
+                pages / zhuyin_resourcesync.ZH_LANDING_PATH,
+                pages / zhuyin_resourcesync.SITEMAP_PATH,
+            )
+            self.assertEqual(7, len(urls))
+            self.assertTrue(all(path.exists() for path in expected))
+            self.assertEqual(
+                "https://alice51849.github.io/.well-known/resourcesync",
+                zhuyin_resourcesync.SOURCE_DESCRIPTION_URL,
+            )
+
+            sitemap_ns = zhuyin_resourcesync.SITEMAP_NAMESPACE
+            rs_ns = zhuyin_resourcesync.RS_NAMESPACE
+            source = ET.parse(expected[0]).getroot()
+            capability = ET.parse(expected[1]).getroot()
+            resource_list = ET.parse(expected[2]).getroot()
+            self.assertEqual(
+                "description",
+                source.find(f"{{{rs_ns}}}md").attrib["capability"],
+            )
+            self.assertEqual(
+                "capabilitylist",
+                capability.find(f"{{{rs_ns}}}md").attrib["capability"],
+            )
+            root_metadata = resource_list.find(f"{{{rs_ns}}}md")
+            self.assertEqual("resourcelist", root_metadata.attrib["capability"])
+            self.assertRegex(
+                root_metadata.attrib["at"],
+                r"^\d{4}-\d{2}-\d{2}T00:00:00Z$",
+            )
+
+            resources = zhuyin_resourcesync.discover_resources(pages)
+            entries = resource_list.findall(f"{{{sitemap_ns}}}url")
+            self.assertEqual(len(resources), len(entries))
+            self.assertEqual(
+                37,
+                sum("/symbols/" in resource.url for resource in resources),
+            )
+            by_url = {resource.url: resource for resource in resources}
+            for entry in entries:
+                url = entry.find(f"{{{sitemap_ns}}}loc").text
+                metadata = entry.find(f"{{{rs_ns}}}md").attrib
+                resource = by_url[url]
+                self.assertEqual(
+                    f"sha-256:{resource.sha256}",
+                    metadata["hash"],
+                )
+                self.assertEqual(str(resource.byte_length), metadata["length"])
+                self.assertEqual(resource.media_type, metadata["type"])
+                local = pages / resource.relative_path
+                self.assertEqual(
+                    resource.sha256,
+                    hashlib.sha256(local.read_bytes()).hexdigest(),
+                )
+
+            raw_controls = "\n".join(
+                path.read_text(encoding="utf-8") for path in expected[:4]
+            )
+            self.assertNotIn("apps.apple.com", raw_controls)
+            self.assertNotIn(zhuyin_resourcesync.APP_ID, raw_controls)
+            self.assertNotIn(zhuyin_resourcesync.APP_NAME, raw_controls)
+            self.assertNotIn("SoftwareApplication", raw_controls)
+            collection = json.loads(expected[3].read_text(encoding="utf-8"))
+            self.assertEqual(zhuyin_resourcesync.SPEC, collection["conformsTo"])
+            self.assertEqual(
+                f"{len(resources)} resources",
+                collection["size"],
+            )
+            index = (pages / "data" / "index.html").read_text(encoding="utf-8")
+            self.assertEqual(1, index.count(zhuyin_resourcesync.CARD_START))
+            self.assertIn(zhuyin_resourcesync.LANDING_URL, index)
+
+            with mock.patch.object(
+                gen_llms, "PAGES", str(pages)
+            ), mock.patch.object(
+                gen_llms, "DATA_DIR", str(pages / "data")
+            ):
+                llms = gen_llms.build_llms({}, set())
+                full = gen_llms.build_llms_full({}, set())
+                robots = gen_llms.build_robots()
+                sitemap_index = gen_llms.build_sitemap_index()
+            for content in (llms, full):
+                self.assertIn("Bopomofo ResourceSync", content)
+                self.assertIn(zhuyin_resourcesync.RESOURCE_LIST_URL, content)
+            self.assertIn(zhuyin_resourcesync.RESOURCE_LIST_URL, robots)
+            self.assertIn(
+                zhuyin_resourcesync.RESOURCE_LIST_URL,
+                sitemap_index,
+            )
+
+            mtimes = {path: path.stat().st_mtime_ns for path in expected}
+            zhuyin_resourcesync.build(pages, app_public=False)
+            self.assertEqual(
+                mtimes,
+                {path: path.stat().st_mtime_ns for path in expected},
+            )
+
+    def test_zhuyin_resourcesync_snapshot_changes_only_with_resource_bytes(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            self._seed_zhuyin_resourcesync_pages(pages)
+            with mock.patch.object(
+                zhuyin_resourcesync, "TODAY", "2026-07-11"
+            ):
+                zhuyin_resourcesync.build(pages, app_public=False)
+            state_path = pages / zhuyin_resourcesync.STATE_PATH
+            first = json.loads(state_path.read_text(encoding="utf-8"))
+
+            with mock.patch.object(
+                zhuyin_resourcesync, "TODAY", "2026-07-12"
+            ):
+                zhuyin_resourcesync.build(pages, app_public=False)
+            unchanged = json.loads(state_path.read_text(encoding="utf-8"))
+            self.assertEqual(first, unchanged)
+
+            canonical = pages / "data" / "zhuyin-bopomofo.json"
+            canonical.write_text('{"fixture":"changed"}\n', encoding="utf-8")
+            with mock.patch.object(
+                zhuyin_resourcesync, "TODAY", "2026-07-12"
+            ):
+                zhuyin_resourcesync.build(pages, app_public=False)
+            changed = json.loads(state_path.read_text(encoding="utf-8"))
+            self.assertNotEqual(first["fingerprint"], changed["fingerprint"])
+            self.assertEqual("2026-07-12T00:00:00Z", changed["at"])
+
+    def test_zhuyin_resourcesync_landing_page_gates_optional_app_layer(self):
+        private = zhuyin_resourcesync.render_page(
+            "zh-Hant", 80, app_public=False
+        )
+        public = zhuyin_resourcesync.render_page(
+            "zh-Hant", 80, app_public=True
+        )
+        self.assertIn('hreflang="en"', private)
+        self.assertIn('hreflang="zh-Hant"', private)
+        self.assertIn(zhuyin_resourcesync.SOURCE_DESCRIPTION_URL, private)
+        self.assertNotIn("apps.apple.com", private)
+        self.assertNotIn('"SoftwareApplication"', private)
+        self.assertIn(zhuyin_resourcesync.APP_ID, public)
+        self.assertIn('"SoftwareApplication"', public)
+        self.assertNotIn('"offers"', public)
+
     def test_family_travel_observation_passport_build_is_stable(self):
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)
@@ -3968,6 +4148,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_croissant_dataset.py", workflow)
         self.assertIn("zhuyin_frictionless_package.py", workflow)
         self.assertIn("zhuyin_static_api.py", workflow)
+        self.assertIn("zhuyin_resourcesync.py", workflow)
         self.assertIn("family_travel_mission_cards.py", workflow)
         self.assertIn("family_travel_observation_passport.py", workflow)
         self.assertIn("family_travel_opds_catalog.py", workflow)
@@ -3996,6 +4177,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_croissant_dataset.py",
             "zhuyin_frictionless_package.py",
             "zhuyin_static_api.py",
+            "zhuyin_resourcesync.py",
             "prioritize_trip_planet_resources.py",
             "add_related_tools.py",
             "gen_hubs.py",
@@ -4026,6 +4208,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_croissant_dataset.py", publish)
         self.assertIn("zhuyin_frictionless_package.py", publish)
         self.assertIn("zhuyin_static_api.py", publish)
+        self.assertIn("zhuyin_resourcesync.py", publish)
         self.assertIn("family_travel_mission_cards.py", publish)
         self.assertIn("family_travel_observation_passport.py", publish)
         self.assertIn("family_travel_opds_catalog.py", publish)
@@ -4055,6 +4238,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_croissant_dataset.py",
             "zhuyin_frictionless_package.py",
             "zhuyin_static_api.py",
+            "zhuyin_resourcesync.py",
             "prioritize_trip_planet_resources.py",
             "add_related_answers.py",
             "add_related_tools.py",

@@ -208,6 +208,7 @@
 - [resume cv conventions by country](https://alice51849.github.io/ios-app-guide/data/resume-cv-conventions-by-country.html) · JSON: https://alice51849.github.io/ios-app-guide/data/resume-cv-conventions-by-country.json
 - [toeic cefr score](https://alice51849.github.io/ios-app-guide/data/toeic-cefr-score.html) · JSON: https://alice51849.github.io/ios-app-guide/data/toeic-cefr-score.json
 - [zhuyin bopomofo ml dataset](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html)
+- [zhuyin bopomofo resourcesync](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html)
 - [zhuyin bopomofo vocabulary](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html)
 - [zhuyin bopomofo](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.html) · JSON: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json
 
@@ -258,6 +259,14 @@
 - Data Package descriptor: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json
 - Table Schema 2.0: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json
 - UTF-8 CSV: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv
+
+## Bopomofo ResourceSync harvest feed (OAI ResourceSync 1.1)
+- English guide: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html
+- Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-resourcesync.html
+- Well-known Source Description: https://alice51849.github.io/.well-known/resourcesync
+- Capability List: https://alice51849.github.io/ios-app-guide/resourcesync/capabilitylist.xml
+- Complete Resource List with SHA-256: https://alice51849.github.io/ios-app-guide/resourcesync/resourcelist.xml
+- Collection JSON-LD: https://alice51849.github.io/ios-app-guide/resourcesync/bopomofo-collection.jsonld
 
 ## External curated lists & datasets (GitHub, CC0/CC BY — free to cite)
 - [awesome-zhuyin-bopomofo-apps](https://github.com/alice51849/awesome-zhuyin-bopomofo-apps) — Zhuyin/Bopomofo learning apps for Taiwanese parents (Chinese)

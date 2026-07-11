@@ -12,6 +12,7 @@
 - [Visual stories](https://alice51849.github.io/ios-app-guide/stories/index.html)
 - [Open data](https://alice51849.github.io/ios-app-guide/data/index.html)
 - [Open static APIs](https://alice51849.github.io/ios-app-guide/api/index.html)
+- [Bopomofo ResourceSync feed](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html)
 - [Free tools](https://alice51849.github.io/ios-app-guide/tools/index.html)
 
 ## Public apps
@@ -426,6 +427,7 @@
 - [toeic cefr score](https://alice51849.github.io/ios-app-guide/data/toeic-cefr-score.html)
   - JSON: https://alice51849.github.io/ios-app-guide/data/toeic-cefr-score.json
 - [zhuyin bopomofo ml dataset](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html)
+- [zhuyin bopomofo resourcesync](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html)
 - [zhuyin bopomofo vocabulary](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html)
 - [zhuyin bopomofo](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.html)
   - JSON: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json
@@ -632,6 +634,14 @@
   - Table Schema 2.0: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json
   - UTF-8 CSV: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv
 
+## Bopomofo ResourceSync harvest feed
+- [English guide](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html)
+- [Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-resourcesync.html)
+- Source Description: https://alice51849.github.io/.well-known/resourcesync
+- Capability List: https://alice51849.github.io/ios-app-guide/resourcesync/capabilitylist.xml
+- Resource List: https://alice51849.github.io/ios-app-guide/resourcesync/resourcelist.xml
+- Collection JSON-LD: https://alice51849.github.io/ios-app-guide/resourcesync/bopomofo-collection.jsonld
+
 ## Localized catalog hubs
 - [ar-SA](https://alice51849.github.io/ios-app-guide/ar-SA/index.html)
 - [bn-BD](https://alice51849.github.io/ios-app-guide/bn-BD/index.html)
@@ -719,3 +729,5 @@
 - https://alice51849.github.io/ios-app-guide/sitemap_vocab.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_croissant.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_datapackage.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_resourcesync.xml
+- https://alice51849.github.io/ios-app-guide/resourcesync/resourcelist.xml

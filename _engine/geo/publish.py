@@ -66,6 +66,7 @@ def main():
     require([PY, os.path.join(HERE, "zhuyin_croissant_dataset.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_frictionless_package.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_static_api.py")], env=env)
+    require([PY, os.path.join(HERE, "zhuyin_resourcesync.py")], env=env)
     require(
         [PY, os.path.join(HERE, "prioritize_trip_planet_resources.py")],
         env=env,

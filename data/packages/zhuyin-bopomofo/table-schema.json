@@ -1,0 +1,233 @@
+{
+  "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+  "missingValues": [],
+  "primaryKey": [
+    "symbol_id"
+  ],
+  "fields": [
+    {
+      "name": "order",
+      "title": "Order",
+      "description": "Stable pedagogical order from 1 through 37.",
+      "type": "integer",
+      "constraints": {
+        "required": true,
+        "unique": true,
+        "minimum": 1,
+        "maximum": 37
+      },
+      "example": "1"
+    },
+    {
+      "name": "symbol_id",
+      "title": "Symbol ID",
+      "description": "Stable ASCII identifier derived from the Unicode code point.",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "unique": true,
+        "enum": [
+          "u3105",
+          "u3106",
+          "u3107",
+          "u3108",
+          "u3109",
+          "u310A",
+          "u310B",
+          "u310C",
+          "u310D",
+          "u310E",
+          "u310F",
+          "u3110",
+          "u3111",
+          "u3112",
+          "u3113",
+          "u3114",
+          "u3115",
+          "u3116",
+          "u3117",
+          "u3118",
+          "u3119",
+          "u3127",
+          "u3128",
+          "u3129",
+          "u311A",
+          "u311B",
+          "u311C",
+          "u311D",
+          "u311E",
+          "u311F",
+          "u3120",
+          "u3121",
+          "u3122",
+          "u3123",
+          "u3124",
+          "u3125",
+          "u3126"
+        ]
+      },
+      "example": "u3105"
+    },
+    {
+      "name": "concept_uri",
+      "title": "Concept URI",
+      "description": "Stable URI for the corresponding SKOS concept.",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "unique": true
+      },
+      "example": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3105",
+      "format": "uri"
+    },
+    {
+      "name": "symbol",
+      "title": "Symbol",
+      "description": "The single Bopomofo character.",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "unique": true,
+        "minLength": 1,
+        "maxLength": 1
+      },
+      "example": "ㄅ"
+    },
+    {
+      "name": "unicode",
+      "title": "Unicode",
+      "description": "Unicode code point in U+XXXX notation.",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "unique": true,
+        "enum": [
+          "U+3105",
+          "U+3106",
+          "U+3107",
+          "U+3108",
+          "U+3109",
+          "U+310A",
+          "U+310B",
+          "U+310C",
+          "U+310D",
+          "U+310E",
+          "U+310F",
+          "U+3110",
+          "U+3111",
+          "U+3112",
+          "U+3113",
+          "U+3114",
+          "U+3115",
+          "U+3116",
+          "U+3117",
+          "U+3118",
+          "U+3119",
+          "U+3127",
+          "U+3128",
+          "U+3129",
+          "U+311A",
+          "U+311B",
+          "U+311C",
+          "U+311D",
+          "U+311E",
+          "U+311F",
+          "U+3120",
+          "U+3121",
+          "U+3122",
+          "U+3123",
+          "U+3124",
+          "U+3125",
+          "U+3126"
+        ]
+      },
+      "example": "U+3105"
+    },
+    {
+      "name": "pinyin",
+      "title": "Pinyin",
+      "description": "Hanyu Pinyin correspondence.",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "minLength": 1
+      },
+      "example": "b"
+    },
+    {
+      "name": "ipa",
+      "title": "IPA",
+      "description": "Compact IPA correspondence for the symbol.",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "minLength": 1
+      },
+      "example": "p"
+    },
+    {
+      "name": "category",
+      "title": "Category",
+      "description": "One of initial, medial or final.",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "initial",
+          "medial",
+          "final"
+        ]
+      },
+      "example": "initial"
+    },
+    {
+      "name": "category_uri",
+      "title": "Category URI",
+      "description": "Stable URI for the SKOS category concept.",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#finals",
+          "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials",
+          "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#medials"
+        ]
+      },
+      "example": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials",
+      "format": "uri"
+    },
+    {
+      "name": "example_character",
+      "title": "Example character",
+      "description": "Traditional Chinese example character.",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "minLength": 1
+      },
+      "example": "爸"
+    },
+    {
+      "name": "example_pinyin",
+      "title": "Example Pinyin",
+      "description": "Tone-marked Pinyin for the example.",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "minLength": 1
+      },
+      "example": "bà"
+    },
+    {
+      "name": "example_meaning_en",
+      "title": "Example meaning",
+      "description": "Short English gloss for the example.",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "minLength": 1
+      },
+      "example": "father"
+    }
+  ]
+}

@@ -43,6 +43,7 @@ FAMILY_TRAVEL_RO_CRATE = "family-travel-missions-ro-crate-metadata.json"
 ZHUYIN_ANKI_DECK = "zhuyin-bopomofo-anki-deck"
 ZHUYIN_SKOS_VOCABULARY = "zhuyin-bopomofo-vocabulary"
 ZHUYIN_CROISSANT_DATASET = "zhuyin-bopomofo-ml-dataset"
+ZHUYIN_DATA_PACKAGE = "zhuyin-bopomofo"
 
 AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "anthropic-ai",
            "Claude-Web", "PerplexityBot", "Perplexity-User", "Google-Extended",
@@ -246,6 +247,24 @@ def build_llms(comp_map, live_keys):
             f"- UTF-8 CSV: {SITE}/data/{ZHUYIN_CROISSANT_DATASET}.csv",
             f"- JSON Lines: {SITE}/data/{ZHUYIN_CROISSANT_DATASET}.jsonl",
             f"- Croissant 1.1 JSON-LD: {SITE}/data/{ZHUYIN_CROISSANT_DATASET}.croissant.jsonld",
+        ]
+    if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
+            ZHUYIN_DATA_PACKAGE,
+            "datapackage.json",
+        )
+    ):
+        package = f"{SITE}/data/packages/{ZHUYIN_DATA_PACKAGE}"
+        lines += [
+            "",
+            "## Bopomofo portable Data Package (Data Package 2.0, CC BY 4.0)",
+            f"- English package guide: {package}/",
+            f"- Traditional Chinese package guide: {SITE}/zh-Hant/data/packages/{ZHUYIN_DATA_PACKAGE}/",
+            f"- Data Package descriptor: {package}/datapackage.json",
+            f"- Table Schema 2.0: {package}/table-schema.json",
+            f"- UTF-8 CSV: {package}/symbols.csv",
         ]
     # 外部 curated 清單與資料集(GitHub;已實測會被 AI 引用的來源,讓爬蟲從站也能發現整個 repo 生態)
     ghbase = "https://github.com/alice51849"
@@ -470,6 +489,24 @@ def build_llms_full(comp_map, live_keys):
             f"  - JSON Lines: {SITE}/data/{ZHUYIN_CROISSANT_DATASET}.jsonl",
             f"  - MLCommons Croissant 1.1: {SITE}/data/{ZHUYIN_CROISSANT_DATASET}.croissant.jsonld",
         ]
+    if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
+            ZHUYIN_DATA_PACKAGE,
+            "datapackage.json",
+        )
+    ):
+        package = f"{SITE}/data/packages/{ZHUYIN_DATA_PACKAGE}"
+        lines += [
+            "",
+            "## Bopomofo portable Data Package",
+            f"- [English Data Package guide]({package}/)",
+            f"- [Traditional Chinese guide]({SITE}/zh-Hant/data/packages/{ZHUYIN_DATA_PACKAGE}/)",
+            f"  - Data Package 2.0 descriptor: {package}/datapackage.json",
+            f"  - Table Schema 2.0: {package}/table-schema.json",
+            f"  - UTF-8 CSV: {package}/symbols.csv",
+        ]
 
     locale_hubs = []
     for name in sorted(os.listdir(PAGES)):
@@ -495,6 +532,7 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_anki.xml",
         "sitemap_vocab.xml",
         "sitemap_croissant.xml",
+        "sitemap_datapackage.xml",
     ):
         if os.path.exists(os.path.join(PAGES, filename)):
             lines.append(f"- {SITE}/{filename}")
@@ -524,6 +562,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_anki.xml",
             f"Sitemap: {SITE}/sitemap_vocab.xml",
             f"Sitemap: {SITE}/sitemap_croissant.xml",
+            f"Sitemap: {SITE}/sitemap_datapackage.xml",
             f"Sitemap: {SITE}/sitemap_index.xml", ""]
     return "\n".join(out)
 
@@ -538,6 +577,7 @@ def build_sitemap_index():
         "sitemap_anki.xml",
         "sitemap_vocab.xml",
         "sitemap_croissant.xml",
+        "sitemap_datapackage.xml",
     ])
     items = "\n".join(f"  <sitemap><loc>{SITE}/{m}</loc></sitemap>" for m in maps
                       if os.path.exists(os.path.join(PAGES, m)))

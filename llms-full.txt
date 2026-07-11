@@ -625,6 +625,13 @@
   - JSON Lines: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl
   - MLCommons Croissant 1.1: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld
 
+## Bopomofo portable Data Package
+- [English Data Package guide](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/)
+- [Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo/)
+  - Data Package 2.0 descriptor: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json
+  - Table Schema 2.0: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json
+  - UTF-8 CSV: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv
+
 ## Localized catalog hubs
 - [ar-SA](https://alice51849.github.io/ios-app-guide/ar-SA/index.html)
 - [bn-BD](https://alice51849.github.io/ios-app-guide/bn-BD/index.html)
@@ -711,3 +718,4 @@
 - https://alice51849.github.io/ios-app-guide/sitemap_anki.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_vocab.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_croissant.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_datapackage.xml

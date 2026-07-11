@@ -54,6 +54,7 @@ import zhuyin_grade1_guide
 import zhuyin_grade1_summer_calendar
 import zhuyin_anki_deck
 import zhuyin_croissant_dataset
+import zhuyin_frictionless_package
 import zhuyin_heritage_lesson_plan
 import zhuyin_library_storytime_kit
 import zhuyin_parent_teacher_handoff_kit
@@ -1737,6 +1738,14 @@ class GeneratorTests(unittest.TestCase):
             self.assertIn("Limitations and non-uses", english)
             self.assertIn("注音符號 ML 資料集", traditional)
             self.assertIn("限制與不適用情境", traditional)
+            self.assertIn(
+                zhuyin_croissant_dataset.FRICTIONLESS_PAGE,
+                english,
+            )
+            self.assertIn(
+                zhuyin_croissant_dataset.ZH_FRICTIONLESS_PAGE,
+                traditional,
+            )
 
             rows, metadata, downloads, _modified = (
                 zhuyin_croissant_dataset.write_versioned_artifacts(data)
@@ -1819,6 +1828,290 @@ class GeneratorTests(unittest.TestCase):
                 for path in [*expected_paths, data / "index.html"]
             }
             zhuyin_croissant_dataset.build(
+                pages,
+                app_public=False,
+            )
+            self.assertEqual(
+                mtimes,
+                {path: path.stat().st_mtime_ns for path in mtimes},
+            )
+
+    def test_zhuyin_frictionless_package_is_complete_and_app_independent(self):
+        rows = zhuyin_croissant_dataset.records()
+        artifacts = zhuyin_frictionless_package.make_artifacts(rows)
+        zhuyin_frictionless_package.validate_artifacts(rows, artifacts)
+        descriptor = json.loads(artifacts["descriptor"]["content"])
+        schema = json.loads(artifacts["schema"]["content"])
+        resource = descriptor["resources"][0]
+
+        self.assertEqual(
+            zhuyin_frictionless_package.DATA_PACKAGE_PROFILE,
+            descriptor["$schema"],
+        )
+        self.assertEqual(
+            zhuyin_frictionless_package.TABLE_SCHEMA_PROFILE,
+            schema["$schema"],
+        )
+        self.assertNotIn("fieldsMatch", schema)
+        self.assertEqual(["symbol_id"], schema["primaryKey"])
+        self.assertEqual(
+            list(zhuyin_croissant_dataset.FIELD_NAMES),
+            [field["name"] for field in schema["fields"]],
+        )
+        self.assertEqual("symbols.csv", resource["path"])
+        self.assertEqual("table-schema.json", resource["schema"])
+        self.assertEqual(
+            len(artifacts["csv"]["content"].encode("utf-8")),
+            resource["bytes"],
+        )
+        self.assertEqual(
+            f"sha256:{artifacts['csv']['sha256']}",
+            resource["hash"],
+        )
+        csv_rows = list(
+            csv.DictReader(artifacts["csv"]["content"].splitlines())
+        )
+        self.assertEqual(37, len(csv_rows))
+        self.assertEqual(
+            list(zhuyin_croissant_dataset.FIELD_NAMES),
+            list(csv_rows[0]),
+        )
+        raw = "\n".join(artifact["content"] for artifact in artifacts.values())
+        self.assertNotIn("apps.apple.com", raw)
+        self.assertNotIn(zhuyin_frictionless_package.APP_ID, raw)
+        self.assertNotIn(zhuyin_frictionless_package.APP_NAME, raw)
+        self.assertNotIn("SoftwareApplication", raw)
+
+        contaminated = copy.deepcopy(artifacts)
+        package = json.loads(contaminated["descriptor"]["content"])
+        package["description"] = zhuyin_frictionless_package.APP_NAME
+        contaminated["descriptor"]["content"] = json.dumps(package)
+        with self.assertRaises(ValueError):
+            zhuyin_frictionless_package.validate_artifacts(rows, contaminated)
+
+    @unittest.skipUnless(
+        importlib.util.find_spec("frictionless"),
+        "Official Frictionless validation dependency is installed in CI",
+    )
+    def test_zhuyin_frictionless_package_validates_and_loads_officially(self):
+        from frictionless import Package, Schema, validate
+
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            zhuyin_frictionless_package.build(pages, app_public=False)
+            package_path = (
+                pages
+                / zhuyin_frictionless_package.PACKAGE_PATH
+                / zhuyin_frictionless_package.DESCRIPTOR_FILENAME
+            )
+            schema_path = (
+                pages
+                / zhuyin_frictionless_package.PACKAGE_PATH
+                / zhuyin_frictionless_package.SCHEMA_FILENAME
+            )
+            validation = validate(str(package_path))
+            package = Package(str(package_path))
+            package_validation = package.validate()
+            schema_validation = Schema.validate_descriptor(
+                json.loads(schema_path.read_text(encoding="utf-8"))
+            )
+            self.assertTrue(
+                validation.valid,
+                validation.flatten(["type", "note"]),
+            )
+            self.assertTrue(
+                package_validation.valid,
+                package_validation.flatten(["type", "note"]),
+            )
+            self.assertTrue(
+                schema_validation.valid,
+                schema_validation.flatten(["type", "note"]),
+            )
+            loaded = [
+                row.to_dict()
+                for row in package.get_resource("symbols").read_rows()
+            ]
+            self.assertEqual(zhuyin_croissant_dataset.records(), loaded)
+
+    def test_zhuyin_frictionless_build_is_bilingual_and_discoverable(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            data = pages / "data"
+            data.mkdir()
+            croissant_card = (
+                f'<a class="item" href="'
+                f'{zhuyin_frictionless_package.CROISSANT_PAGE}">'
+                "<h2>Croissant dataset</h2></a>"
+            )
+            catalog_schema = json.dumps(
+                {
+                    "@context": "https://schema.org",
+                    "@type": "DataCatalog",
+                    "dataset": [
+                        {
+                            "@type": "Dataset",
+                            "url": zhuyin_frictionless_package.CROISSANT_PAGE,
+                        }
+                    ],
+                }
+            )
+            (data / "index.html").write_text(
+                '<script type="application/ld+json">'
+                f"{catalog_schema}</script><main>{croissant_card}"
+                '<p class="foot">Footer</p></main>',
+                encoding="utf-8",
+            )
+            urls = zhuyin_frictionless_package.build(
+                pages,
+                app_public=False,
+            )
+            package = pages / zhuyin_frictionless_package.PACKAGE_PATH
+            expected_paths = [
+                package / "index.html",
+                pages
+                / "zh-Hant"
+                / zhuyin_frictionless_package.PACKAGE_PATH
+                / "index.html",
+                package / zhuyin_frictionless_package.DESCRIPTOR_FILENAME,
+                package / zhuyin_frictionless_package.SCHEMA_FILENAME,
+                package / zhuyin_frictionless_package.CSV_FILENAME,
+                pages / "sitemap_datapackage.xml",
+            ]
+            self.assertEqual(6, len(urls))
+            self.assertTrue(all(path.exists() for path in expected_paths))
+            english = expected_paths[0].read_text(encoding="utf-8")
+            traditional = expected_paths[1].read_text(encoding="utf-8")
+            for page in (english, traditional):
+                self.assertIn('hreflang="en"', page)
+                self.assertIn('hreflang="zh-Hant"', page)
+                self.assertIn("datapackage.json", page)
+                self.assertIn("table-schema.json", page)
+                self.assertIn("symbols.csv", page)
+                self.assertNotIn("apps.apple.com", page)
+                self.assertNotIn(zhuyin_frictionless_package.APP_ID, page)
+                self.assertNotIn('"SoftwareApplication"', page)
+            self.assertIn("Bopomofo Frictionless Data Package 2.0", english)
+            self.assertIn(
+                "注音符號 Frictionless Data Package 2.0",
+                traditional,
+            )
+            self.assertIn("<th>順序</th>", traditional)
+            self.assertIn("<td>聲母</td>", traditional)
+            self.assertIn(
+                zhuyin_frictionless_package.ZH_CROISSANT_PAGE,
+                traditional,
+            )
+            self.assertIn(
+                zhuyin_frictionless_package.ZH_SKOS_PAGE,
+                traditional,
+            )
+            public = zhuyin_frictionless_package.render_page(
+                "en",
+                zhuyin_croissant_dataset.records(),
+                zhuyin_frictionless_package.make_artifacts(
+                    zhuyin_croissant_dataset.records()
+                ),
+                app_public=True,
+            )
+            self.assertIn(zhuyin_frictionless_package.APP_ID, public)
+            self.assertIn('"SoftwareApplication"', public)
+
+            sitemap = expected_paths[-1].read_text(encoding="utf-8")
+            for url in urls[:-1]:
+                self.assertIn(url, sitemap)
+            index = (data / "index.html").read_text(encoding="utf-8")
+            self.assertEqual(
+                1,
+                index.count(
+                    f'href="{zhuyin_frictionless_package.PACKAGE_URL}"'
+                ),
+            )
+            self.assertLess(
+                index.index(zhuyin_frictionless_package.CROISSANT_PAGE),
+                index.index(zhuyin_frictionless_package.PACKAGE_URL),
+            )
+            catalog = json.loads(
+                re.search(
+                    r'<script type="application/ld\+json">(.*?)</script>',
+                    index,
+                    re.DOTALL,
+                ).group(1)
+            )
+            entries = [
+                dataset
+                for dataset in catalog["dataset"]
+                if dataset.get("url")
+                == zhuyin_frictionless_package.PACKAGE_URL
+            ]
+            self.assertEqual(1, len(entries))
+            self.assertEqual(3, len(entries[0]["distribution"]))
+
+            with mock.patch.object(
+                gen_llms,
+                "DATA_DIR",
+                str(data),
+            ), mock.patch.object(
+                gen_llms,
+                "PAGES",
+                str(pages),
+            ):
+                llms = gen_llms.build_llms({}, set())
+                full = gen_llms.build_llms_full({}, set())
+                sitemap_index = gen_llms.build_sitemap_index()
+                robots = gen_llms.build_robots()
+            for generated_index in (llms, full):
+                self.assertIn(
+                    "Bopomofo portable Data Package",
+                    generated_index,
+                )
+                self.assertIn(
+                    zhuyin_frictionless_package.DESCRIPTOR_URL,
+                    generated_index,
+                )
+                self.assertIn(
+                    zhuyin_frictionless_package.CSV_URL,
+                    generated_index,
+                )
+            self.assertIn("sitemap_datapackage.xml", sitemap_index)
+            self.assertIn("sitemap_datapackage.xml", robots)
+
+            (
+                croissant_rows,
+                croissant_metadata,
+                croissant_downloads,
+            ) = zhuyin_croissant_dataset._candidates(
+                zhuyin_croissant_dataset.INITIAL_DATE
+            )
+            croissant_page = zhuyin_croissant_dataset.render_page(
+                "en",
+                croissant_rows,
+                croissant_metadata,
+                croissant_downloads,
+                app_public=False,
+            )
+            self.assertIn(
+                zhuyin_croissant_dataset.FRICTIONLESS_PAGE,
+                croissant_page,
+            )
+            with mock.patch.object(
+                gen_data_hub,
+                "DATA",
+                str(data),
+            ):
+                gen_data_hub.build_zhuyin_page()
+            source_page = (data / "zhuyin-bopomofo.html").read_text(
+                encoding="utf-8"
+            )
+            self.assertIn(
+                zhuyin_frictionless_package.PACKAGE_URL,
+                source_page,
+            )
+
+            mtimes = {
+                path: path.stat().st_mtime_ns
+                for path in [*expected_paths, data / "index.html"]
+            }
+            zhuyin_frictionless_package.build(
                 pages,
                 app_public=False,
             )
@@ -3673,6 +3966,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_anki_deck.py", workflow)
         self.assertIn("zhuyin_skos_vocabulary.py", workflow)
         self.assertIn("zhuyin_croissant_dataset.py", workflow)
+        self.assertIn("zhuyin_frictionless_package.py", workflow)
         self.assertIn("zhuyin_static_api.py", workflow)
         self.assertIn("family_travel_mission_cards.py", workflow)
         self.assertIn("family_travel_observation_passport.py", workflow)
@@ -3700,6 +3994,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_anki_deck.py",
             "zhuyin_skos_vocabulary.py",
             "zhuyin_croissant_dataset.py",
+            "zhuyin_frictionless_package.py",
             "zhuyin_static_api.py",
             "prioritize_trip_planet_resources.py",
             "add_related_tools.py",
@@ -3729,6 +4024,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_anki_deck.py", publish)
         self.assertIn("zhuyin_skos_vocabulary.py", publish)
         self.assertIn("zhuyin_croissant_dataset.py", publish)
+        self.assertIn("zhuyin_frictionless_package.py", publish)
         self.assertIn("zhuyin_static_api.py", publish)
         self.assertIn("family_travel_mission_cards.py", publish)
         self.assertIn("family_travel_observation_passport.py", publish)
@@ -3757,6 +4053,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_anki_deck.py",
             "zhuyin_skos_vocabulary.py",
             "zhuyin_croissant_dataset.py",
+            "zhuyin_frictionless_package.py",
             "zhuyin_static_api.py",
             "prioritize_trip_planet_resources.py",
             "add_related_answers.py",

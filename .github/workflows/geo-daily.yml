@@ -88,6 +88,7 @@ jobs:
           python3 zhuyin_anki_deck.py
           python3 zhuyin_skos_vocabulary.py
           python3 zhuyin_croissant_dataset.py
+          python3 zhuyin_frictionless_package.py
           python3 zhuyin_static_api.py
           python3 prioritize_trip_planet_resources.py
           python3 add_related_tools.py

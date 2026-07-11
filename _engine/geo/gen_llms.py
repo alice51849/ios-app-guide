@@ -564,7 +564,9 @@ def build_llms(comp_map, live_keys):
               "", "## Latest updates (syndication feeds)",
               f"- Atom: {SITE}/feed.xml",
               f"- RSS 2.0: {SITE}/rss.xml",
-              f"- JSON Feed 1.1: {SITE}/feed.json", ""]
+              f"- JSON Feed 1.1: {SITE}/feed.json",
+              "- Real-time updates: WebSub hub advertised inside every feed "
+              "(https://pubsubhubbub.appspot.com/)", ""]
     return "\n".join(lines)
 
 
@@ -1141,6 +1143,10 @@ def build_llms_full(comp_map, live_keys):
     ):
         if os.path.exists(os.path.join(PAGES, filename)):
             lines.append(f"- {SITE}/{filename}")
+    lines.append(
+        "- WebSub real-time hub: https://pubsubhubbub.appspot.com/ "
+        "(topic URLs are advertised inside all three feeds)"
+    )
     lines.append("")
     return "\n".join(lines)
 

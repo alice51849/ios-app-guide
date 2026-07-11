@@ -16,6 +16,9 @@ import time
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.path.join(HERE, "pages")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
+WEBSUB_HUB = os.environ.get(
+    "WEBSUB_HUB", "https://pubsubhubbub.appspot.com/"
+)
 MAX_ITEMS = 60
 REQUIRED_SUBDIRS = ("guides",)
 REQUIRED_RELATIVE_PATHS = (
@@ -258,6 +261,7 @@ def render_atom(items, now):
         "  <title>iOS App Guide — latest answers, guides, tools &amp; data</title>\n"
         f'  <link href="{SITE}/"/>\n'
         f'  <link rel="self" href="{SITE}/feed.xml"/>\n'
+        f'  <link rel="hub" href="{WEBSUB_HUB}"/>\n'
         f"  <id>{SITE}/</id>\n"
         f"  <updated>{now}</updated>\n"
         + "\n".join(entries)
@@ -294,6 +298,7 @@ def render_rss(items, now):
         "    <ttl>360</ttl>\n"
         f'    <atom:link href="{SITE}/rss.xml" rel="self" '
         'type="application/rss+xml"/>\n'
+        f'    <atom:link href="{WEBSUB_HUB}" rel="hub"/>\n'
         f'    <atom:link href="{SITE}/feed.xml" rel="alternate" '
         'type="application/atom+xml"/>\n'
         f'    <atom:link href="{SITE}/feed.json" rel="alternate" '
@@ -330,6 +335,12 @@ def render_json_feed(items):
                     "and open datasets."
                 ),
                 "language": "en",
+                "hubs": [
+                    {
+                        "type": "WebSub",
+                        "url": WEBSUB_HUB,
+                    }
+                ],
                 "items": records,
             },
             ensure_ascii=False,

@@ -17,6 +17,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+import urllib.parse
 import xml.etree.ElementTree as ET
 import zipfile
 from pathlib import Path
@@ -52,6 +53,7 @@ import gen_hubs
 import gen_llms
 import gen_roundups
 import indexnow_submit
+import notify_websub
 import outreach_scorecard
 import prioritize_trip_planet_resources
 import static_api_catalog
@@ -342,6 +344,14 @@ class GeneratorTests(unittest.TestCase):
         self.assertIsNotNone(channel.find("title"))
         self.assertIsNotNone(channel.find("link"))
         self.assertIsNotNone(channel.find("description"))
+        self.assertEqual(
+            gen_feed.WEBSUB_HUB,
+            atom.find(f"{atom_ns}link[@rel='hub']").attrib["href"],
+        )
+        self.assertEqual(
+            gen_feed.WEBSUB_HUB,
+            channel.find(f"{atom_ns}link[@rel='hub']").attrib["href"],
+        )
         rss_items = channel.findall("item")
         rss_ids = {item.find("guid").text for item in rss_items}
         for item in rss_items:
@@ -357,6 +367,10 @@ class GeneratorTests(unittest.TestCase):
             json_feed["version"],
         )
         self.assertEqual(f"{gen_feed.SITE}/feed.json", json_feed["feed_url"])
+        self.assertEqual(
+            [{"type": "WebSub", "url": gen_feed.WEBSUB_HUB}],
+            json_feed["hubs"],
+        )
         json_ids = {item["id"] for item in json_feed["items"]}
         for item in json_feed["items"]:
             self.assertTrue(item["content_text"])
@@ -498,6 +512,86 @@ class GeneratorTests(unittest.TestCase):
             self.assertIn(f"{gen_feed.SITE}/feed.xml", content)
             self.assertIn(f"{gen_feed.SITE}/rss.xml", content)
             self.assertIn(f"{gen_feed.SITE}/feed.json", content)
+            self.assertIn(gen_feed.WEBSUB_HUB, content)
+
+    def test_websub_notifier_verifies_deployment_and_retries_publish(self):
+        class Response:
+            def __init__(self, body=b"", status=200):
+                self.body = body
+                self.status = status
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *args):
+                return False
+
+            def read(self):
+                return self.body
+
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            bodies = []
+            for filename in notify_websub.FEED_FILES:
+                body = f"deployed {filename}".encode()
+                (root / filename).write_bytes(body)
+                bodies.append(body)
+            with mock.patch.object(
+                notify_websub.urllib.request,
+                "urlopen",
+                side_effect=[Response(body) for body in bodies],
+            ) as urlopen:
+                notify_websub.wait_until_deployed(
+                    root, attempts=1, timeout=7
+                )
+            self.assertEqual(len(notify_websub.TOPICS), urlopen.call_count)
+            self.assertTrue(
+                all(call.kwargs["timeout"] == 7 for call in urlopen.call_args_list)
+            )
+
+        with mock.patch.object(
+            notify_websub.urllib.request,
+            "urlopen",
+            side_effect=[OSError("offline"), Response(status=204)],
+        ) as urlopen, mock.patch.object(notify_websub.time, "sleep") as sleep:
+            self.assertEqual(
+                204,
+                notify_websub.notify(attempts=2, timeout=9, delay=1),
+            )
+        self.assertEqual(2, urlopen.call_count)
+        sleep.assert_called_once_with(1)
+        request = urlopen.call_args_list[-1].args[0]
+        payload = urllib.parse.parse_qs(request.data.decode("ascii"))
+        self.assertEqual(["publish"], payload["hub.mode"])
+        self.assertEqual(list(notify_websub.TOPICS), payload["hub.url"])
+        self.assertEqual(
+            "application/x-www-form-urlencoded; charset=utf-8",
+            request.get_header("Content-type"),
+        )
+
+    def test_websub_notifier_surfaces_total_failure(self):
+        with mock.patch.object(
+            notify_websub.urllib.request,
+            "urlopen",
+            side_effect=OSError("offline"),
+        ) as urlopen, mock.patch.object(notify_websub.time, "sleep"):
+            with self.assertRaisesRegex(RuntimeError, "after 3 attempts"):
+                notify_websub.notify(attempts=3, delay=0)
+        self.assertEqual(3, urlopen.call_count)
+
+    def test_pages_deploy_notifies_websub_only_after_success(self):
+        workflow = (
+            Path(GEO) / "pages" / ".github" / "workflows" / "pages.yml"
+        ).read_text(encoding="utf-8")
+        preserve = workflow.index("cp _engine/geo/notify_websub.py")
+        prune = workflow.index("rm -rf _engine")
+        deploy = workflow.index("uses: actions/deploy-pages@v4")
+        notify = workflow.rindex('python3 \"$RUNNER_TEMP/notify_websub.py\"')
+        self.assertLess(preserve, prune)
+        self.assertLess(prune, deploy)
+        self.assertLess(deploy, notify)
+        self.assertIn("--feed-dir \"$GITHUB_WORKSPACE\"", workflow)
+        self.assertIn("timeout-minutes: 6", workflow)
 
     def test_data_hub_preserves_date_until_dataset_content_changes(self):
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(

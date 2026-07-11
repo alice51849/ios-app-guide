@@ -32,8 +32,10 @@ jobs:
           ref: main
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Prune engine/tooling from published site
-        run: rm -rf _engine
+      - name: Preserve WebSub notifier and prune engine/tooling
+        run: |
+          cp _engine/geo/notify_websub.py "$RUNNER_TEMP/notify_websub.py"
+          rm -rf _engine
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -49,3 +51,13 @@ jobs:
         id: deployment_retry
         if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v4
+      - name: Notify WebSub subscribers
+        if: >-
+          steps.deployment.outcome == 'success' ||
+          steps.deployment_retry.outcome == 'success'
+        timeout-minutes: 6
+        env:
+          GEO_SITE: https://alice51849.github.io/ios-app-guide
+        run: >-
+          python3 "$RUNNER_TEMP/notify_websub.py"
+          --feed-dir "$GITHUB_WORKSPACE"

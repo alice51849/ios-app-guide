@@ -555,7 +555,10 @@ def build_llms(comp_map, live_keys):
               "https://apps.apple.com/developer/id1136144960",
               "- Telegram channel (free tools + app updates): https://t.me/LumiApps2026",
               f"- Full crawler index (all apps, comparison pages, datasets, multilingual hubs): {SITE}/llms-full.txt"]
-    lines += ["", "## Sitemaps",
+    lines += ["", "## RFC 9264 Web Linkset",
+              f"- App relationship graph: {SITE}/linkset.json",
+              f"- Linkset sitemap: {SITE}/sitemap_linkset.xml",
+              "", "## Sitemaps",
               f"- {SITE}/sitemap.xml", f"- {SITE}/sitemap_alternatives.xml",
               f"- {SITE}/sitemap_answers.xml",
               "", "## Featured: escape subscriptions (pay-once swaps)",
@@ -1118,7 +1121,7 @@ def build_llms_full(comp_map, live_keys):
     for filename in (
         "sitemap_index.xml", "sitemap.xml", "sitemap_alternatives.xml",
         "sitemap_answers.xml", "sitemap_guides.xml", "sitemap_stories.xml",
-        "sitemap_images.xml",
+        "sitemap_images.xml", "sitemap_linkset.xml", "linkset.json",
         "sitemap_hubs.xml", "sitemap_tools.xml", "sitemap_data.xml",
         "sitemap_api.xml", "sitemap_swap.xml", "feed.xml", "rss.xml", "feed.json",
         "sitemap_opds.xml", "sitemap_ro_crate.xml",
@@ -1165,6 +1168,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_guides.xml",
             f"Sitemap: {SITE}/sitemap_stories.xml",
             f"Sitemap: {SITE}/sitemap_images.xml",
+            f"Sitemap: {SITE}/sitemap_linkset.xml",
             f"Sitemap: {SITE}/sitemap_hubs.xml",
             f"Sitemap: {SITE}/sitemap_tools.xml",
             f"Sitemap: {SITE}/sitemap_data.xml",
@@ -1197,7 +1201,8 @@ def build_robots():
 
 def build_sitemap_index():
     maps = ["sitemap.xml", "sitemap_alternatives.xml", "sitemap_answers.xml", "sitemap_guides.xml",
-            "sitemap_stories.xml", "sitemap_images.xml", "sitemap_hubs.xml", "sitemap_tools.xml",
+            "sitemap_stories.xml", "sitemap_images.xml", "sitemap_linkset.xml",
+            "sitemap_hubs.xml", "sitemap_tools.xml",
             "sitemap_data.xml", "sitemap_api.xml", "sitemap_swap.xml"]
     maps.extend([
         "sitemap_opds.xml",

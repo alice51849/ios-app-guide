@@ -51,6 +51,7 @@ import gen_data_hub
 import gen_feed
 import gen_hubs
 import gen_image_sitemap
+import gen_linkset
 import gen_llms
 import gen_roundups
 import indexnow_submit
@@ -312,6 +313,171 @@ class GeneratorTests(unittest.TestCase):
             )
             with self.assertRaisesRegex(FileNotFoundError, "missing or empty"):
                 gen_image_sitemap.generate(pages)
+
+    def test_rfc9264_linkset_covers_app_relations_and_is_idempotent(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            guide = pages / "guides" / "lumibopomofo.html"
+            localized = pages / "zh-Hant" / "guides" / "lumibopomofo.html"
+            story = pages / "stories" / "lumibopomofo.html"
+            poster = pages / "stories" / "img" / "lumibopomofo-poster.jpg"
+            hub = pages / "hubs" / "lumibopomofo.html"
+            for path in (guide, localized, story, poster, hub):
+                path.parent.mkdir(parents=True, exist_ok=True)
+            site = gen_linkset.SITE
+            guide.write_text(
+                "<head>"
+                f'<link rel="canonical" href="{site}/guides/lumibopomofo.html">'
+                f'<link rel="alternate" hreflang="en" href="{site}/guides/lumibopomofo.html">'
+                f'<link rel="alternate" hreflang="x-default" href="{site}/guides/lumibopomofo.html">'
+                f'<link rel="alternate" hreflang="zh-Hant" href="{site}/zh-Hant/guides/lumibopomofo.html">'
+                f'<link rel="linkset" href="{site}/old-linkset.json">'
+                f'<link rel="alternate" type="application/atom+xml" href="{site}/feed.xml">'
+                "</head>",
+                encoding="utf-8",
+            )
+            localized.write_text("<head></head>", encoding="utf-8")
+            story.write_text(
+                "<head>"
+                f'<link rel="canonical" href="{site}/stories/lumibopomofo.html">'
+                "</head><body>"
+                f'<amp-story poster-portrait-src="{site}/stories/img/lumibopomofo-poster.jpg">',
+                encoding="utf-8",
+            )
+            poster.write_bytes(b"poster")
+            hub.write_text("<head></head>", encoding="utf-8")
+            (pages / "index.html").write_text(
+                f'<head><link rel="canonical" href="{site}/index.html"></head>',
+                encoding="utf-8",
+            )
+            for relative in (
+                "feed.xml",
+                "rss.xml",
+                "feed.json",
+                "llms-full.txt",
+                "apps/index.html",
+            ):
+                path = pages / relative
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text("resource", encoding="utf-8")
+
+            first = gen_linkset.generate(pages, {"lumibopomofo"})
+            tracked = [
+                pages / "linkset.json",
+                pages / "sitemap_linkset.xml",
+                pages / "index.html",
+                guide,
+            ]
+            mtimes = {path: path.stat().st_mtime_ns for path in tracked}
+            second = gen_linkset.generate(pages, {"lumibopomofo"})
+
+            self.assertEqual(
+                {
+                    "apps": 1,
+                    "contexts": 2,
+                    "discovery_pages": 2,
+                    "changed_files": 4,
+                },
+                first,
+            )
+            self.assertEqual(0, second["changed_files"])
+            self.assertEqual(mtimes, {path: path.stat().st_mtime_ns for path in tracked})
+            document = json.loads(
+                (pages / "linkset.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(["linkset"], list(document))
+            root, app = document["linkset"]
+            self.assertEqual(f"{site}/index.html", root["anchor"])
+            self.assertEqual(
+                f"{site}/guides/lumibopomofo.html", root["item"][0]["href"]
+            )
+            self.assertEqual(
+                [{"value": "Lumi Bopomofo", "language": "en"}],
+                root["item"][0]["title*"],
+            )
+            self.assertEqual(
+                f"{site}/guides/lumibopomofo.html", app["anchor"]
+            )
+            self.assertEqual(
+                [
+                    f"{site}/guides/lumibopomofo.html",
+                    f"{site}/zh-Hant/guides/lumibopomofo.html",
+                ],
+                [target["href"] for target in app["alternate"]],
+            )
+            self.assertEqual(
+                ["en", "x-default"], app["alternate"][0]["hreflang"]
+            )
+            related = [target["href"] for target in app["related"]]
+            self.assertEqual(
+                "https://apps.apple.com/app/id6773017109?ct=iag_linkset",
+                related[0],
+            )
+            self.assertEqual(
+                [
+                    {
+                        "value": "Lumi Bopomofo on the App Store",
+                        "language": "en",
+                    }
+                ],
+                app["related"][0]["title*"],
+            )
+            self.assertEqual(f"{site}/stories/lumibopomofo.html", related[1])
+            self.assertEqual(
+                f"{site}/stories/img/lumibopomofo-poster.jpg",
+                app["preview"][0]["href"],
+            )
+            for context in document["linkset"]:
+                self.assertTrue(context["anchor"].startswith("https://"))
+                for relation, targets in context.items():
+                    if relation == "anchor":
+                        continue
+                    for target in targets:
+                        self.assertTrue(target["href"].startswith("https://"))
+
+            discovery = gen_linkset.discovery_link()
+            self.assertEqual(1, guide.read_text(encoding="utf-8").count(discovery))
+            self.assertLess(
+                guide.read_text(encoding="utf-8").index(discovery),
+                guide.read_text(encoding="utf-8").index("application/atom+xml"),
+            )
+            self.assertEqual(
+                1,
+                (pages / "index.html").read_text(encoding="utf-8").count(discovery),
+            )
+            self.assertNotIn(
+                "rel=\"linkset\"", localized.read_text(encoding="utf-8")
+            )
+            sitemap = ET.parse(pages / "sitemap_linkset.xml").getroot()
+            self.assertEqual(
+                f"{site}/linkset.json",
+                sitemap.findtext(f"{{{gen_linkset.SITEMAP_NS}}}url/"
+                                 f"{{{gen_linkset.SITEMAP_NS}}}loc"),
+            )
+            self.assertIn("sitemap_linkset.xml", gen_llms.build_robots())
+            with mock.patch.object(gen_llms, "PAGES", str(pages)):
+                self.assertIn(
+                    "sitemap_linkset.xml", gen_llms.build_sitemap_index()
+                )
+
+    def test_rfc9264_linkset_rejects_story_and_public_app_mismatch(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            stories = pages / "stories"
+            images = stories / "img"
+            images.mkdir(parents=True)
+            (stories / "lumibopomofo.html").write_text(
+                '<link rel="canonical" href="'
+                f'{gen_linkset.SITE}/stories/lumibopomofo.html">'
+                '<amp-story poster-portrait-src="'
+                f'{gen_linkset.SITE}/stories/img/lumibopomofo-poster.jpg">',
+                encoding="utf-8",
+            )
+            (images / "lumibopomofo-poster.jpg").write_bytes(b"poster")
+            with self.assertRaisesRegex(ValueError, "missing=.*lumibopomofopro"):
+                gen_linkset.build_document(
+                    pages, {"lumibopomofo", "lumibopomofopro"}
+                )
 
     def test_atom_feed_keeps_guides_and_free_tools_within_the_item_cap(self):
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(
@@ -10030,6 +10196,7 @@ class GeneratorTests(unittest.TestCase):
             "cleanup_localized_assets.py --cached-live",
             "zhuyin_resourcesync.py",
             "gen_image_sitemap.py",
+            "gen_linkset.py",
             "gen_llms.py --cached-live",
             "gen_feed.py",
         )
@@ -10084,6 +10251,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_dcat_catalog.py", publish)
         self.assertIn("zhuyin_resourcesync.py", publish)
         self.assertIn("gen_image_sitemap.py", publish)
+        self.assertIn("gen_linkset.py", publish)
         self.assertIn("family_travel_mission_cards.py", publish)
         self.assertIn("family_travel_observation_passport.py", publish)
         self.assertIn("family_travel_opds_catalog.py", publish)
@@ -10134,6 +10302,7 @@ class GeneratorTests(unittest.TestCase):
             "fix_en_hreflang.py",
             "zhuyin_resourcesync.py",
             "gen_image_sitemap.py",
+            "gen_linkset.py",
             "gen_llms.py",
             "gen_feed.py",
         )

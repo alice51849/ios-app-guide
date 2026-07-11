@@ -5,6 +5,7 @@ from __future__ import annotations
 import copy
 import csv
 import hashlib
+import io
 import importlib.util
 import json
 import os
@@ -14,6 +15,7 @@ import sys
 import tempfile
 import unittest
 import xml.etree.ElementTree as ET
+import zipfile
 from pathlib import Path
 from unittest import mock
 
@@ -58,6 +60,7 @@ import zhuyin_croissant_dataset
 import zhuyin_frictionless_package
 import zhuyin_heritage_lesson_plan
 import zhuyin_library_storytime_kit
+import zhuyin_lms_assessment_bank
 import zhuyin_parent_teacher_handoff_kit
 import zhuyin_picture_book_club_kit
 import zhuyin_readiness_tool
@@ -2122,6 +2125,215 @@ class GeneratorTests(unittest.TestCase):
                 {path: path.stat().st_mtime_ns for path in mtimes},
             )
 
+    def test_zhuyin_lms_question_bank_is_complete_and_portable(self):
+        rows = zhuyin_croissant_dataset.records()
+        first = zhuyin_lms_assessment_bank.make_core_artifacts(rows)
+        second = zhuyin_lms_assessment_bank.make_core_artifacts(rows)
+        self.assertEqual(
+            {key: item["bytes"] for key, item in first.items()},
+            {key: item["bytes"] for key, item in second.items()},
+        )
+
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            data = pages / "data"
+            data.mkdir(parents=True)
+            catalog = {
+                "@context": "https://schema.org",
+                "@type": "DataCatalog",
+                "dataset": [],
+            }
+            (data / "index.html").write_text(
+                '<script type="application/ld+json">'
+                + json.dumps(catalog)
+                + '</script><main><p class="foot">Footer</p></main>',
+                encoding="utf-8",
+            )
+            urls = zhuyin_lms_assessment_bank.build(
+                pages, app_public=False
+            )
+            package = pages / zhuyin_lms_assessment_bank.PACKAGE_PATH
+            expected = [
+                pages / zhuyin_lms_assessment_bank.LANDING_PATH,
+                pages / zhuyin_lms_assessment_bank.ZH_LANDING_PATH,
+                pages / zhuyin_lms_assessment_bank.SITEMAP_PATH,
+                data / "index.html",
+                *[
+                    package / artifact["filename"]
+                    for artifact in {
+                        **first,
+                        "metadata": {
+                            "filename": (
+                                zhuyin_lms_assessment_bank.METADATA_FILENAME
+                            )
+                        },
+                    }.values()
+                ],
+            ]
+            self.assertEqual(9, len(urls))
+            self.assertTrue(all(path.exists() for path in expected))
+
+            artifacts = {
+                key: {
+                    **artifact,
+                    "bytes": (package / artifact["filename"]).read_bytes(),
+                }
+                for key, artifact in {
+                    **first,
+                    "metadata": {
+                        "filename": (
+                            zhuyin_lms_assessment_bank.METADATA_FILENAME
+                        ),
+                        "label": "Schema.org JSON-LD metadata",
+                        "media_type": "application/ld+json",
+                        "locale": "en",
+                        "url": zhuyin_lms_assessment_bank.METADATA_URL,
+                    },
+                }.items()
+            }
+            zhuyin_lms_assessment_bank.validate_artifacts(rows, artifacts)
+            with zipfile.ZipFile(
+                io.BytesIO(first["qti_en"]["bytes"])
+            ) as archive:
+                manifest = archive.read("imsmanifest.xml").decode("utf-8")
+            self.assertIn(
+                "qtiv2p1_imscpv1p2_v1p0.xsd",
+                manifest,
+            )
+            self.assertIn(
+                "<schema>QTIv2.1 Package</schema>",
+                manifest,
+            )
+            self.assertIn(
+                "<schemaversion>"
+                + zhuyin_lms_assessment_bank.QTI_PACKAGE_SCHEMA_VERSION
+                + "</schemaversion>",
+                manifest,
+            )
+            metadata = json.loads(
+                (package / "metadata.jsonld").read_text(encoding="utf-8")
+            )
+            self.assertEqual(5, len(metadata["distribution"]))
+            for distribution in metadata["distribution"]:
+                local = package / Path(distribution["contentUrl"]).name
+                self.assertEqual(
+                    distribution["sha256"],
+                    hashlib.sha256(local.read_bytes()).hexdigest(),
+                )
+
+            english = (
+                pages / zhuyin_lms_assessment_bank.LANDING_PATH
+            ).read_text(encoding="utf-8")
+            traditional = (
+                pages / zhuyin_lms_assessment_bank.ZH_LANDING_PATH
+            ).read_text(encoding="utf-8")
+            for page in (english, traditional):
+                self.assertIn('rel="resourcesync"', page)
+                self.assertIn('hreflang="en"', page)
+                self.assertIn('hreflang="zh-Hant"', page)
+                self.assertNotIn("apps.apple.com", page)
+                self.assertNotIn('"SoftwareApplication"', page)
+            public = zhuyin_lms_assessment_bank.render_page(
+                "zh-Hant",
+                rows,
+                artifacts,
+                zhuyin_lms_assessment_bank.INITIAL_DATE,
+                app_public=True,
+            )
+            self.assertIn(zhuyin_lms_assessment_bank.APP_ID, public)
+            self.assertIn('"SoftwareApplication"', public)
+            self.assertNotIn('"offers"', public)
+
+            index = (data / "index.html").read_text(encoding="utf-8")
+            self.assertEqual(
+                1, index.count(zhuyin_lms_assessment_bank.CARD_START)
+            )
+            self.assertIn(
+                zhuyin_lms_assessment_bank.LANDING_URL, index
+            )
+            with mock.patch.object(
+                gen_llms, "PAGES", str(pages)
+            ), mock.patch.object(
+                gen_llms, "DATA_DIR", str(data)
+            ):
+                llms = gen_llms.build_llms({}, set())
+                full = gen_llms.build_llms_full({}, set())
+                robots = gen_llms.build_robots()
+                sitemap_index = gen_llms.build_sitemap_index()
+            for generated in (llms, full):
+                self.assertIn("Bopomofo LMS question bank", generated)
+                self.assertIn(
+                    zhuyin_lms_assessment_bank.METADATA_URL, generated
+                )
+            self.assertIn("sitemap_lms.xml", robots)
+            self.assertIn("sitemap_lms.xml", sitemap_index)
+
+            mtimes = {
+                path: path.stat().st_mtime_ns for path in expected
+            }
+            zhuyin_lms_assessment_bank.build(
+                pages, app_public=False
+            )
+            self.assertEqual(
+                mtimes,
+                {path: path.stat().st_mtime_ns for path in expected},
+            )
+
+    def test_lms_question_bank_answer_is_resource_first_and_bounded(self):
+        question = (
+            "Where can I download a free Bopomofo QTI question bank "
+            "for Canvas or Moodle?"
+        )
+        content = aeo_answers.normalized_content(
+            aeo_answers.default_content(question, "lumibopomofo"),
+            question,
+            "lumibopomofo",
+        )
+        page = aeo_answers.render_page(
+            question, "lumibopomofo", content
+        )
+        self.assertEqual(
+            zhuyin_lms_assessment_bank.LANDING_URL,
+            content["primary_resource_url"],
+        )
+        self.assertIn("QTI 2.1", page)
+        self.assertIn("Moodle XML", page)
+        self.assertIn("staging course", page)
+        self.assertIn("not a standardized test", page)
+        self.assertLess(
+            page.index("Download the free Bopomofo LMS question bank"),
+            page.index("Get Lumi Bopomofo on the App Store"),
+        )
+        mapping = json.loads(
+            (
+                Path(GEO)
+                / "i18n_trans"
+                / "zh-Hant.json"
+            ).read_text(encoding="utf-8")
+        )
+        strings, _, _ = aeo_answers_i18n.extract_strings(page)
+        self.assertEqual(
+            [], [string for string in strings if string not in mapping]
+        )
+        localized = aeo_answers_i18n.render_localized(
+            page,
+            "zh-Hant",
+            aeo_answers.slugify(question),
+            {string: mapping[string] for string in strings},
+        )
+        self.assertIn(
+            "<title>免費注音 QTI 2.1 與 Moodle XML 題庫</title>",
+            localized,
+        )
+        self.assertIn(
+            zhuyin_lms_assessment_bank.ZH_LANDING_URL,
+            localized,
+        )
+        self.assertNotIn(
+            "The open CC BY 4.0 bank provides",
+            localized,
+        )
+
     def _seed_zhuyin_resourcesync_pages(self, pages):
         data = pages / "data"
         data.mkdir(parents=True)
@@ -2129,7 +2341,7 @@ class GeneratorTests(unittest.TestCase):
             '<main><p class="foot">Footer</p></main>',
             encoding="utf-8",
         )
-        for relative in zhuyin_resourcesync.REQUIRED_PATHS[:-1]:
+        for relative in zhuyin_resourcesync.REQUIRED_PATHS[:4]:
             path = pages / relative
             path.parent.mkdir(parents=True, exist_ok=True)
             payload = {"fixture": True}
@@ -2146,6 +2358,7 @@ class GeneratorTests(unittest.TestCase):
             encoding="utf-8",
         )
         zhuyin_static_api.build(pages, app_public=False)
+        zhuyin_lms_assessment_bank.build(pages, app_public=False)
 
     def test_zhuyin_resourcesync_is_complete_verifiable_and_discoverable(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -4149,6 +4362,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_croissant_dataset.py", workflow)
         self.assertIn("zhuyin_frictionless_package.py", workflow)
         self.assertIn("zhuyin_static_api.py", workflow)
+        self.assertIn("zhuyin_lms_assessment_bank.py", workflow)
         self.assertIn("zhuyin_resourcesync.py", workflow)
         self.assertIn("family_travel_mission_cards.py", workflow)
         self.assertIn("family_travel_observation_passport.py", workflow)
@@ -4178,6 +4392,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_croissant_dataset.py",
             "zhuyin_frictionless_package.py",
             "zhuyin_static_api.py",
+            "zhuyin_lms_assessment_bank.py",
             "zhuyin_resourcesync.py",
             "prioritize_trip_planet_resources.py",
             "add_related_tools.py",
@@ -4209,6 +4424,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_croissant_dataset.py", publish)
         self.assertIn("zhuyin_frictionless_package.py", publish)
         self.assertIn("zhuyin_static_api.py", publish)
+        self.assertIn("zhuyin_lms_assessment_bank.py", publish)
         self.assertIn("zhuyin_resourcesync.py", publish)
         self.assertIn("family_travel_mission_cards.py", publish)
         self.assertIn("family_travel_observation_passport.py", publish)
@@ -4239,6 +4455,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_croissant_dataset.py",
             "zhuyin_frictionless_package.py",
             "zhuyin_static_api.py",
+            "zhuyin_lms_assessment_bank.py",
             "zhuyin_resourcesync.py",
             "prioritize_trip_planet_resources.py",
             "add_related_answers.py",

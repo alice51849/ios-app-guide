@@ -475,5 +475,88 @@
         "a": "Only when another observation would be useful. Change the symbols, blends and phrase rather than drilling or memorizing the exact sample."
       }
     ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "teacher_lms_resource",
+    "match": [
+      "bopomofo qti question bank",
+      "zhuyin qti question bank",
+      "bopomofo questions for canvas",
+      "zhuyin questions for moodle",
+      "bopomofo lms question bank"
+    ],
+    "query": "Where can I download a free Bopomofo QTI question bank for Canvas or Moodle?",
+    "page_title": "Free Bopomofo QTI 2.1 and Moodle XML Question Bank",
+    "meta_description": "Download 37 editable Bopomofo questions as English or Traditional Chinese QTI 2.1 and Moodle XML, with a CSV answer key and SHA-256 metadata.",
+    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html",
+    "primary_resource_label": "Download the free Bopomofo LMS question bank",
+    "lead": "Use the free bilingual LMS question bank linked above: it contains one editable symbol-to-Pinyin item for each of the 37 Bopomofo symbols, with separate QTI 2.1 and Moodle XML downloads.",
+    "detail": "The open CC BY 4.0 bank provides English and Traditional Chinese QTI 2.1 ZIP packages, English and Traditional Chinese Moodle XML files, a CSV answer key and JSON-LD metadata with byte lengths and SHA-256 hashes. Each QTI archive contains imsmanifest.xml plus 37 self-contained single-response assessmentItem files. It uses no images, external media, account, tracking or child data. Import behavior varies by LMS version, so the resource explicitly recommends a staging course rather than claiming guaranteed compatibility.",
+    "follow_up": "Download the format your LMS currently supports, import it into a staging course, inspect all 37 items and edit wording or feedback for your class. The bank is practice content, not a standardized test, norm, level or school-readiness measure.",
+    "bullets": [
+      "Complete 21-initial, 3-medial and 13-final coverage from one canonical source table",
+      "Separate English and Traditional Chinese QTI 2.1 ZIP packages",
+      "Separate native Moodle XML imports for both languages",
+      "Stable item IDs, one correct response, answer key, byte lengths and SHA-256",
+      "CC BY 4.0, no account, tracking, external media or learner-data collection"
+    ],
+    "decision_steps": [
+      "Check the LMS import documentation for the version currently deployed by the school.",
+      "Choose QTI 2.1 for a compatible QTI importer or Moodle XML for Moodle's native importer.",
+      "Import into a staging course without extracting the QTI ZIP.",
+      "Review each item, category, answer and feedback before assigning it.",
+      "Treat results as classroom practice observations, never as a diagnosis or readiness score."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Canvas-compatible route",
+        "check": "QTI 2.1 ZIP with imsmanifest.xml and 37 assessmentItem files",
+        "why": "Canvas currently documents QTI 1.2 and 2.1 imports, but each installation should still be tested"
+      },
+      {
+        "need": "Moodle-native route",
+        "check": "Moodle XML with one category, stable idnumbers and 37 multichoice questions",
+        "why": "The native format avoids presenting QTI 3.0 as universally supported"
+      },
+      {
+        "need": "Auditable content",
+        "check": "CSV answer key plus JSON-LD byte lengths and SHA-256 hashes",
+        "why": "Teachers and catalog tools can verify the exact files before reuse"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not required to download, import or edit the question bank. It appears after the free teacher resource as an optional on-device practice layer for families.",
+    "sources": [
+      {
+        "title": "Free Bopomofo QTI 2.1 and Moodle XML question bank",
+        "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html"
+      },
+      {
+        "title": "1EdTech QTI 2.1 implementation guide",
+        "url": "https://www.imsglobal.org/question/qtiv2p1/imsqti_implv2p1.html"
+      },
+      {
+        "title": "Canvas QTI import documentation",
+        "url": "https://community.instructure.com/en/kb/articles/660996-how-do-i-import-quizzes-from-qti-packages"
+      },
+      {
+        "title": "Moodle question import documentation",
+        "url": "https://docs.moodle.org/en/Import_questions"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is this a Common Cartridge file?",
+        "a": "No. It is an item-level QTI 2.1 content package plus separate Moodle XML exports. The page labels each format precisely and does not rename the package as Common Cartridge."
+      },
+      {
+        "q": "Will the QTI ZIP import into every Canvas or LMS version?",
+        "a": "No universal guarantee is possible. Canvas currently documents QTI 1.2 and 2.1 imports, but institutions customize and upgrade at different times. Import into a staging course and inspect all questions first."
+      },
+      {
+        "q": "Can I use the total as a Zhuyin readiness score?",
+        "a": "No. These are editable symbol-to-Pinyin practice items without norms, levels or cut scores. They do not assess pronunciation, tone production, reading fluency or school readiness."
+      }
+    ]
   }
 ]

@@ -207,6 +207,7 @@
 - [passport photo sizes](https://alice51849.github.io/ios-app-guide/data/passport-photo-sizes.html) · JSON: https://alice51849.github.io/ios-app-guide/data/passport-photo-sizes.json
 - [resume cv conventions by country](https://alice51849.github.io/ios-app-guide/data/resume-cv-conventions-by-country.html) · JSON: https://alice51849.github.io/ios-app-guide/data/resume-cv-conventions-by-country.json
 - [toeic cefr score](https://alice51849.github.io/ios-app-guide/data/toeic-cefr-score.html) · JSON: https://alice51849.github.io/ios-app-guide/data/toeic-cefr-score.json
+- [zhuyin bopomofo lms question bank](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html)
 - [zhuyin bopomofo ml dataset](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html)
 - [zhuyin bopomofo resourcesync](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html)
 - [zhuyin bopomofo vocabulary](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html)
@@ -259,6 +260,16 @@
 - Data Package descriptor: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json
 - Table Schema 2.0: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json
 - UTF-8 CSV: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv
+
+## Bopomofo LMS question bank (QTI 2.1 + Moodle XML, CC BY 4.0)
+- English guide: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html
+- Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-lms-question-bank.html
+- QTI 2.1 English package: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-qti-2.1-en.zip
+- QTI 2.1 Traditional Chinese package: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-qti-2.1-zh-hant.zip
+- Moodle XML English: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-moodle-en.xml
+- Moodle XML Traditional Chinese: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-moodle-zh-hant.xml
+- Answer key: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/answer-key.csv
+- JSON-LD metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/metadata.jsonld
 
 ## Bopomofo ResourceSync harvest feed (OAI ResourceSync 1.1)
 - English guide: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html

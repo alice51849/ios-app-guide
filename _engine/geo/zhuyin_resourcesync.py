@@ -62,6 +62,7 @@ SITEMAP_URL = f"{SITE}/{SITEMAP_PATH.as_posix()}"
 CONTENT_PATTERNS = (
     "data/zhuyin-bopomofo*",
     "data/packages/zhuyin-bopomofo/**/*",
+    "data/packages/zhuyin-bopomofo-lms/**/*",
     "api/v1/bopomofo-symbols/**/*",
     "tools/zhuyin-*",
     "zh-Hant/data/zhuyin-bopomofo*",
@@ -75,6 +76,12 @@ REQUIRED_PATHS = (
     Path("data") / "zhuyin-bopomofo-ml-dataset.croissant.jsonld",
     Path("data") / "packages" / "zhuyin-bopomofo" / "datapackage.json",
     Path("api") / "v1" / "bopomofo-symbols" / "index.json",
+    Path("data") / "packages" / "zhuyin-bopomofo-lms" / "metadata.jsonld",
+    Path("data") / "packages" / "zhuyin-bopomofo-lms" / "bopomofo-qti-2.1-en.zip",
+    Path("data") / "packages" / "zhuyin-bopomofo-lms" / "bopomofo-qti-2.1-zh-hant.zip",
+    Path("data") / "packages" / "zhuyin-bopomofo-lms" / "bopomofo-moodle-en.xml",
+    Path("data") / "packages" / "zhuyin-bopomofo-lms" / "bopomofo-moodle-zh-hant.xml",
+    Path("data") / "packages" / "zhuyin-bopomofo-lms" / "answer-key.csv",
 )
 CARD_START = "<!-- resourcesync-card:start -->"
 CARD_END = "<!-- resourcesync-card:end -->"
@@ -117,7 +124,10 @@ COPY = {
         ),
         "groups": (
             ("Data and linked data", "JSON, CSV, JSON-LD, Turtle and N-Triples"),
-            ("Portable packages", "Croissant 1.1 and Data Package 2.0"),
+            (
+                "Portable packages",
+                "Croissant, Data Package and bilingual LMS import bundles",
+            ),
             ("Static API", "OpenAPI plus all 37 versioned symbol responses"),
             ("Open teaching tools", "Bilingual guides, decks and printable activities"),
         ),
@@ -181,7 +191,10 @@ COPY = {
         ),
         "groups": (
             ("資料與 Linked Data", "JSON、CSV、JSON-LD、Turtle 與 N-Triples"),
-            ("可攜套件", "Croissant 1.1 與 Data Package 2.0"),
+            (
+                "可攜套件",
+                "Croissant、Data Package 與雙語 LMS 匯入套件",
+            ),
             ("靜態 API", "OpenAPI 與完整 37 個版本化符號回應"),
             ("開放教學工具", "雙語指南、牌組與可列印活動"),
         ),

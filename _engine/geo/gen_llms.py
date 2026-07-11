@@ -45,6 +45,7 @@ ZHUYIN_SKOS_VOCABULARY = "zhuyin-bopomofo-vocabulary"
 ZHUYIN_CROISSANT_DATASET = "zhuyin-bopomofo-ml-dataset"
 ZHUYIN_DATA_PACKAGE = "zhuyin-bopomofo"
 ZHUYIN_RESOURCE_SYNC = "zhuyin-bopomofo-resourcesync"
+ZHUYIN_LMS_BANK = "zhuyin-bopomofo-lms-question-bank"
 RESOURCE_SYNC_SOURCE = "https://alice51849.github.io/.well-known/resourcesync"
 
 AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "anthropic-ai",
@@ -269,6 +270,27 @@ def build_llms(comp_map, live_keys):
             f"- UTF-8 CSV: {package}/symbols.csv",
         ]
     if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
+            "zhuyin-bopomofo-lms",
+            "metadata.jsonld",
+        )
+    ):
+        package = f"{SITE}/data/packages/zhuyin-bopomofo-lms"
+        lines += [
+            "",
+            "## Bopomofo LMS question bank (QTI 2.1 + Moodle XML, CC BY 4.0)",
+            f"- English guide: {SITE}/data/{ZHUYIN_LMS_BANK}.html",
+            f"- Traditional Chinese guide: {SITE}/zh-Hant/data/{ZHUYIN_LMS_BANK}.html",
+            f"- QTI 2.1 English package: {package}/bopomofo-qti-2.1-en.zip",
+            f"- QTI 2.1 Traditional Chinese package: {package}/bopomofo-qti-2.1-zh-hant.zip",
+            f"- Moodle XML English: {package}/bopomofo-moodle-en.xml",
+            f"- Moodle XML Traditional Chinese: {package}/bopomofo-moodle-zh-hant.xml",
+            f"- Answer key: {package}/answer-key.csv",
+            f"- JSON-LD metadata: {package}/metadata.jsonld",
+        ]
+    if os.path.exists(
         os.path.join(PAGES, "resourcesync", "resourcelist.xml")
     ):
         lines += [
@@ -341,6 +363,10 @@ def build_llms_full(comp_map, live_keys):
         (
             "Bopomofo ResourceSync feed",
             f"data/{ZHUYIN_RESOURCE_SYNC}.html",
+        ),
+        (
+            "Bopomofo LMS question bank",
+            f"data/{ZHUYIN_LMS_BANK}.html",
         ),
         ("Free tools", "tools/index.html"),
     ]
@@ -527,6 +553,27 @@ def build_llms_full(comp_map, live_keys):
             f"  - UTF-8 CSV: {package}/symbols.csv",
         ]
     if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
+            "zhuyin-bopomofo-lms",
+            "metadata.jsonld",
+        )
+    ):
+        package = f"{SITE}/data/packages/zhuyin-bopomofo-lms"
+        lines += [
+            "",
+            "## Bopomofo LMS question bank",
+            f"- [English guide]({SITE}/data/{ZHUYIN_LMS_BANK}.html)",
+            f"- [Traditional Chinese guide]({SITE}/zh-Hant/data/{ZHUYIN_LMS_BANK}.html)",
+            f"  - QTI 2.1 English: {package}/bopomofo-qti-2.1-en.zip",
+            f"  - QTI 2.1 Traditional Chinese: {package}/bopomofo-qti-2.1-zh-hant.zip",
+            f"  - Moodle XML English: {package}/bopomofo-moodle-en.xml",
+            f"  - Moodle XML Traditional Chinese: {package}/bopomofo-moodle-zh-hant.xml",
+            f"  - CSV answer key: {package}/answer-key.csv",
+            f"  - JSON-LD metadata: {package}/metadata.jsonld",
+        ]
+    if os.path.exists(
         os.path.join(PAGES, "resourcesync", "resourcelist.xml")
     ):
         lines += [
@@ -565,6 +612,7 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_vocab.xml",
         "sitemap_croissant.xml",
         "sitemap_datapackage.xml",
+        "sitemap_lms.xml",
         "sitemap_resourcesync.xml",
         "resourcesync/resourcelist.xml",
     ):
@@ -597,6 +645,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_vocab.xml",
             f"Sitemap: {SITE}/sitemap_croissant.xml",
             f"Sitemap: {SITE}/sitemap_datapackage.xml",
+            f"Sitemap: {SITE}/sitemap_lms.xml",
             f"Sitemap: {SITE}/sitemap_resourcesync.xml",
             f"Sitemap: {SITE}/resourcesync/resourcelist.xml",
             f"Sitemap: {SITE}/sitemap_index.xml", ""]
@@ -614,6 +663,7 @@ def build_sitemap_index():
         "sitemap_vocab.xml",
         "sitemap_croissant.xml",
         "sitemap_datapackage.xml",
+        "sitemap_lms.xml",
         "sitemap_resourcesync.xml",
         "resourcesync/resourcelist.xml",
     ])

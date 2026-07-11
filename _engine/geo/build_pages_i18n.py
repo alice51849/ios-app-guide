@@ -458,7 +458,29 @@ def pricing_text_for(key, locale):
 
 
 def sanitize_description(key, locale, description):
-    if pricing_profile(key) != "flexible" or not description:
+    if not description:
+        return description
+    model = APPS[key].get("purchase_model")
+    if model == "paid_upfront":
+        false_markers = (
+            "free to download",
+            "free-to-start",
+            "free to start",
+            "one-time unlock",
+        )
+        accurate_pricing = pricing_text_for(key, locale)
+        lines = []
+        inserted_pricing = False
+        for line in description.splitlines():
+            if any(marker in line.casefold() for marker in false_markers):
+                if not inserted_pricing:
+                    prefix = "• " if line.lstrip().startswith("•") else ""
+                    lines.append(f"{prefix}{accurate_pricing}")
+                    inserted_pricing = True
+                continue
+            lines.append(line)
+        return "\n".join(lines)
+    if pricing_profile(key) != "flexible":
         return description
     markers = FLEXIBLE_FALSE_PRICING_MARKERS.get(locale, ())
     if not markers:
@@ -498,9 +520,21 @@ def load_app_locales(key):
 
 def _meta_from(loc_data, fallback):
     name = (loc_data.get("name") or fallback["name"]).strip()
-    sub = (loc_data.get("subtitle") or "").strip()
-    desc = (loc_data.get("description") or "").strip()
+    sub = (loc_data.get("subtitle") or fallback.get("sub") or "").strip()
+    desc = (
+        loc_data.get("description")
+        or fallback.get("description")
+        or fallback.get("sub")
+        or ""
+    ).strip()
     kws = split_keywords(loc_data.get("keywords", ""))
+    if not kws:
+        fallback_keywords = fallback.get("keywords", [])
+        kws = (
+            split_keywords(fallback_keywords)
+            if isinstance(fallback_keywords, str)
+            else list(fallback_keywords)
+        )
     return name, sub, desc, kws
 
 
@@ -765,7 +799,17 @@ def build_robots():
 
 
 def all_locales_for(key):
-    return list(load_app_locales(key).keys())
+    return list(load_app_locales(key).keys()) or ["en-US"]
+
+
+def master_locales_for(keys):
+    return sorted(
+        {
+            locale
+            for key in keys
+            for locale in all_locales_for(key)
+        }
+    ) or ["en-US"]
 
 
 if __name__ == "__main__":
@@ -776,20 +820,19 @@ if __name__ == "__main__":
     public_keys = live_app_keys(
         APPSTORE, PAGES, refresh=not cached_live
     )
-    available_keys = [key for key in KEY2DATA if key in APPS and key in public_keys]
+    available_keys = [key for key in APPS if key in public_keys]
     keys = [key for key in requested_keys if key in available_keys] or (
         available_keys if not requested_keys else []
     )
     if not keys:
         raise SystemExit("No publicly available app pages matched the request.")
 
-    # 以第一個 app 的語言集當全域 locale 清單(各 app 皆 39 語一致)
-    master_locales = all_locales_for(keys[0]) or ["en-US"]
+    master_locales = master_locales_for(keys)
     locales = [lc for lc in master_locales if (not want_locales or lc in want_locales)]
 
     n = 0
     for k in keys:
-        app_locales = all_locales_for(k) or ["en-US"]
+        app_locales = sorted(all_locales_for(k) or ["en-US"])
         use = [lc for lc in app_locales if (not want_locales or lc in want_locales)]
         for lc in use:
             build_one(k, lc, app_locales)
@@ -807,7 +850,10 @@ if __name__ == "__main__":
         build_root_index(locales)
         nurls = build_sitemap(public_page_keys, locales)
         build_robots()
-        print(f"✅ 多語 GEO:{len(available_keys)} app × {len(locales)} 語 = {n} 頁 + {len(locales)} 語 index + 根中樞")
+        print(
+            f"✅ 多語 GEO:{len(available_keys)} app = {n} 頁 + "
+            f"{len(locales)} 語 index + 根中樞"
+        )
         print(f"   sitemap.xml({nurls} URLs)+ robots.txt + .nojekyll 已產出")
     else:
         print(f"✅ 產出 {n} 頁({len(keys)} app)。(未重建 index — 非全量)")

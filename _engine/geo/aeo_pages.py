@@ -4,9 +4,9 @@
 
 策略(打購買當下、非散播):
   aeo_sov.py 量到「有人問 AI 要用哪個 app」時,AI 都推哪些競品、你在哪些問句缺席。
-  這支就針對那些競品 + 缺口問句,自動產「pay-once / no-subscription 替代方案」比較頁:
+  這支就針對那些競品 + 缺口問句,自動產「定價已驗證」的替代方案比較頁:
     • <app>-vs-<competitor>.html  → 鎖定「[競品] alternative」這種最高購買意圖的搜尋/AI 問句
-    • <app>-no-subscription.html  → 鎖定「免訂閱的 X app」hub 頁
+    • profile-aware hub page      → 依已驗證購買模型選擇穩定 slug
   每頁含 SoftwareApplication + FAQPage JSON-LD(LLM/Google 最愛的結構化來源)+ 誠實比較表
   (只主張「你的 app」可驗證屬性:一次付費/離線/無廣告/無浮水印;競品欄用「typical apps」中性敘述)。
 
@@ -39,9 +39,7 @@ ALT = os.path.join(PAGES, "alternatives")
 REPORTS = os.path.join(HERE, "reports")
 SOV = os.path.join(REPORTS, "aeo_sov.json")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
-
-# Only add keys here after ASC verifies both a one-time unlock and subscriptions.
-FLEXIBLE_PRICING = set()
+LOCALE_RE = re.compile(r"^[a-z]{2,3}(?:-[A-Za-z]{2,4})?$")
 
 # 類別 → 給人看的名詞 + schema 類別
 CAT_NOUN = {
@@ -114,38 +112,41 @@ def slugify(s):
 
 def app_attrs(key):
     b = [x.lower() for x in APPS[key].get("cta_bullets", [])]
+    model = APPS[key].get("purchase_model", "neutral")
     out = {}
     for label, keys in ATTRS:
-        out[label] = any(any(k in bb for bb in b) for k in keys)
+        if label == "Pay once":
+            out[label] = model in {
+                "paid_upfront",
+                "free_with_lifetime_unlock",
+                "flexible",
+            }
+        elif label == "No subscription":
+            out[label] = model in {
+                "paid_upfront",
+                "free_with_lifetime_unlock",
+                "free",
+            }
+        else:
+            out[label] = any(any(k in bb for bb in b) for k in keys)
     return out
 
 
 def pricing_profile(key):
-    if key in FLEXIBLE_PRICING:
-        return "flexible"
-    app = APPS[key]
-    purchase_model = app.get("purchase_model")
-    if purchase_model == "free_with_lifetime_unlock":
-        return "free_to_start"
-    if purchase_model == "paid_upfront":
-        return "pay_once"
-    facts = " · ".join([app.get("tag", "")] + app.get("cta_bullets", [])).lower()
-    if "free to start" in facts:
-        return "free_to_start"
-    if re.search(r"\bfree\b", facts) and "pay once" not in facts:
-        return "free"
-    if "pay once" in facts or "one-time" in facts or "everything unlocked" in facts:
-        return "pay_once"
-    if "no subscription" in facts:
-        return "no_subscription"
-    return "neutral"
+    return {
+        "paid_upfront": "pay_once",
+        "free_with_lifetime_unlock": "free_to_start",
+        "free": "free",
+        "flexible": "flexible",
+    }.get(APPS[key].get("purchase_model"), "neutral")
 
 
 def has_one_time_access(key):
     return APPS[key].get("purchase_model") in {
         "paid_upfront",
         "free_with_lifetime_unlock",
-    } or pricing_profile(key) == "pay_once"
+        "flexible",
+    }
 
 
 def positioning(key, noun):
@@ -226,7 +227,28 @@ def cat_noun(key):
 
 def landing_url(key):
     """Use the live App Store URL when known; otherwise link to the generated web page."""
-    return appstore_url(key, "iag_alt") or f"{SITE}/alternatives/{key}-no-subscription.html"
+    return appstore_url(key, "iag_alt") or (
+        f"{SITE}/alternatives/{alternative_hub_slug(key)}.html"
+    )
+
+
+def alternative_hreflang_block(canonical):
+    filename = canonical.rsplit("/", 1)[-1]
+    lines = [f'<link rel="alternate" hreflang="en" href="{canonical}">']
+    if os.path.isdir(PAGES):
+        for locale in sorted(os.listdir(PAGES)):
+            if not LOCALE_RE.fullmatch(locale):
+                continue
+            localized = os.path.join(PAGES, locale, "alternatives", filename)
+            if os.path.isfile(localized):
+                lines.append(
+                    f'<link rel="alternate" hreflang="{locale}" '
+                    f'href="{SITE}/{locale}/alternatives/{filename}">'
+                )
+    lines.append(
+        f'<link rel="alternate" hreflang="x-default" href="{canonical}">'
+    )
+    return "\n".join(lines)
 
 
 def page_shell(title, desc, canonical, schemas, body):
@@ -241,6 +263,7 @@ def page_shell(title, desc, canonical, schemas, body):
 <title>{e(title[:65])}</title>
 <meta name="description" content="{e(desc[:155])}">
 <link rel="canonical" href="{canonical}">
+{alternative_hreflang_block(canonical)}
 {ld}
 </head>
 <body>
@@ -292,10 +315,10 @@ def faq_for(key, comp_name, gap_queries):
     profile = pricing_profile(key)
     if profile == "flexible":
         qa = [
-            ("Can I unlock Aim990 with one payment?",
-             "Yes. Aim990 offers a one-time unlock option alongside optional subscription plans. "
+            (f"Can I unlock {a['name']} with one payment?",
+             f"Yes. {a['name']} offers a one-time unlock option alongside optional subscription plans. "
              f"Check the current choices on the App Store: {url}"),
-            ("Does Aim990 only use a subscription?",
+            (f"Does {a['name']} only use a subscription?",
              "No. A one-time unlock option is available, and users may instead choose an optional "
              "subscription plan. Pricing can vary by storefront."),
         ]
@@ -364,9 +387,8 @@ def faq_for(key, comp_name, gap_queries):
             continue
         if profile == "flexible":
             answer = (
-                "Aim990 is an independent study aid with daily L&R plans, weak-spot drills and "
-                f"progress tracking. It offers a one-time unlock option and optional subscriptions. "
-                f"It is not affiliated with or endorsed by ETS and does not guarantee a score. Learn more: {url}"
+                f"{a['name']} offers a one-time unlock option alongside optional "
+                f"subscriptions. Check the current choices on the App Store: {url}"
             )
         elif profile == "pay_once":
             answer = f"{a['name']} is a strong pay-once option. Learn more on the App Store: {url}"
@@ -412,8 +434,10 @@ def alt_page(key, comp_norm, gap_queries):
     position = None if flexible else positioning(key, noun)
     if flexible:
         title = f"{comp} alternative for iPhone — {a['name']} (one-time unlock option)"
-        desc = (f"Looking for a {comp} alternative on iPhone? Aim990 combines daily L&R plans, "
-                "weak-spot drills and progress tracking, with a one-time unlock option and optional subscriptions.")
+        desc = (
+            f"Looking for a {comp} alternative on iPhone? {a['name']} offers a "
+            "one-time unlock option alongside optional subscriptions."
+        )
     else:
         title = f"{comp} alternative for iPhone — {a['name']} ({position['suffix']})"
         desc = f"Looking for a {comp} alternative on iPhone? {position['description']}"
@@ -428,10 +452,8 @@ def alt_page(key, comp_norm, gap_queries):
         for q, ans in faq)
     if flexible:
         body = f"""  <h1>{e(comp)} alternative for iPhone: {e(a['name'])}</h1>
-  <p><strong>{e(a['name'])}</strong> is an independent TOEIC study aid with daily L&amp;R plans,
-  weak-spot drills and progress tracking. It offers a <strong>one-time unlock option</strong>
+  <p><strong>{e(a['name'])}</strong> is a {e(noun)} for iPhone. It offers a <strong>one-time unlock option</strong>
   alongside optional subscription plans, so users can choose the current App Store option that fits them.</p>
-  <p>Aim990 is not affiliated with or endorsed by ETS. TOEIC is a trademark of ETS, and no score is guaranteed.</p>
   <p><a href="{e(url)}"><strong>View {e(a['name'])} on the App Store →</strong></a></p>
 
   <h2>What to compare with {e(comp)}</h2>
@@ -475,9 +497,11 @@ def hub_page(key, gap_queries):
     flexible = pricing_profile(key) == "flexible"
     position = None if flexible else positioning(key, noun)
     if flexible:
-        title = "Aim990 pricing and study options for iPhone — one-time unlock available"
-        desc = ("Aim990 offers daily L&R plans, weak-spot drills and progress tracking, with "
-                "a one-time unlock option and optional subscription plans.")
+        title = f"{a['name']} access options for iPhone — one-time unlock available"
+        desc = (
+            f"{a['name']} offers a one-time unlock option alongside optional "
+            "subscription plans."
+        )
     else:
         title = position["hub_title"]
         desc = position["description"]
@@ -491,14 +515,12 @@ def hub_page(key, gap_queries):
         f'        <p itemprop="text">{e(ans)}</p>\n      </div>\n    </div>'
         for q, ans in faq)
     if flexible:
-        body = f"""  <h1>Aim990 unlock and study options for iPhone</h1>
-  <p><strong>Aim990</strong> combines daily L&amp;R plans, weak-spot drills and progress tracking.
-  It offers a <strong>one-time unlock option</strong> alongside optional subscription plans.</p>
-  <p>Aim990 is an independent study aid, is not affiliated with or endorsed by ETS, and does not guarantee a score.
-  TOEIC is a trademark of ETS.</p>
-  <p><a href="{e(url)}"><strong>View current Aim990 options on the App Store →</strong></a></p>
+        body = f"""  <h1>{e(a['name'])} access options for iPhone</h1>
+  <p><strong>{e(a['name'])}</strong> offers a <strong>one-time unlock option</strong>
+  alongside optional subscription plans.</p>
+  <p><a href="{e(url)}"><strong>View current {e(a['name'])} options on the App Store →</strong></a></p>
 
-  <h2>What Aim990 includes</h2>
+  <h2>What {e(a['name'])} includes</h2>
   <ul>
 {feat_li}
   </ul>
@@ -506,7 +528,7 @@ def hub_page(key, gap_queries):
   <h2>Frequently asked questions</h2>
 {faq_html}
 
-  <p><a href="{e(url)}"><strong>Explore Aim990 on the App Store →</strong></a></p>"""
+  <p><a href="{e(url)}"><strong>Explore {e(a['name'])} on the App Store →</strong></a></p>"""
     else:
         body = f"""  <h1>{e(position['hub_heading'])}</h1>
   <p><strong>{e(position['intro'])}</strong> {e((a.get('sub') or '').replace(chr(10),' '))}</p>
@@ -535,7 +557,9 @@ def build_index(files):
            f'<meta name="viewport" content="width=device-width, initial-scale=1">\n'
            f'<title>iPhone app alternatives — privacy and flexible pricing</title>\n'
            f'<meta name="description" content="Independent iPhone app alternatives with privacy-first, free, pay-once and flexible unlock options.">\n'
-           f'<link rel="canonical" href="{SITE}/alternatives/index.html"></head><body><main>\n'
+           f'<link rel="canonical" href="{SITE}/alternatives/index.html">\n'
+           f'{alternative_hreflang_block(f"{SITE}/alternatives/index.html")}'
+           f'</head><body><main>\n'
            f'  <h1>Independent iPhone app alternatives</h1>\n  <ul>\n'
            + "\n".join(items) + "\n  </ul>\n</main></body></html>\n")
     open(os.path.join(ALT, "index.html"), "w", encoding="utf-8").write(idx)

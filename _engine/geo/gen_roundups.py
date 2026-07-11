@@ -16,6 +16,7 @@ from pathlib import Path
 HERE = Path(os.path.dirname(os.path.abspath(__file__)))
 PAGES = HERE / "pages"
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
+LOCALE_RE = re.compile(r"^[a-z]{2,3}(?:-[A-Za-z]{2,4})?$")
 sys.path.insert(0, str(HERE.parent / "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from aeo_pages import pricing_profile  # noqa: E402
@@ -93,6 +94,25 @@ def slugify(value):
 
 def legacy_slug(topic):
     return f"best-pay-once-{slugify(topic)}-app-2026"
+
+
+def answer_hreflang_block(slug, canonical):
+    filename = f"{slug}.html"
+    lines = [f'<link rel="alternate" hreflang="en" href="{canonical}">']
+    if PAGES.is_dir():
+        for locale_dir in sorted(PAGES.iterdir(), key=lambda path: path.name):
+            if not locale_dir.is_dir() or not LOCALE_RE.fullmatch(locale_dir.name):
+                continue
+            localized = locale_dir / "answers" / filename
+            if localized.is_file():
+                lines.append(
+                    f'<link rel="alternate" hreflang="{locale_dir.name}" '
+                    f'href="{SITE}/{locale_dir.name}/answers/{filename}">'
+                )
+    lines.append(
+        f'<link rel="alternate" hreflang="x-default" href="{canonical}">'
+    )
+    return "\n".join(lines)
 
 
 def profile_slugs(topic):
@@ -311,6 +331,7 @@ def build(key):
                   "author": {"@type": "Organization", "name": "iOS App Guide"},
                   "publisher": {"@type": "Organization", "name": "iOS App Guide"},
                   "mainEntityOfPage": canon, "inLanguage": "en"}
+    hreflang = answer_hreflang_block(slug, canon)
 
     pills = "".join(f'<span class="pill">{esc(b)}</span>' for b in bullets)
     faq_html = "".join(f"<h3>{esc(q)}</h3><p>{esc(ans)}</p>" for q, ans in faq)
@@ -318,8 +339,8 @@ def build(key):
            f'<meta name="viewport" content="width=device-width, initial-scale=1">'
            f'<title>{esc(copy["title"])} — honest pick</title>'
            f'<meta name="description" content="{esc(copy["lead"])}">'
-           f'<link rel="canonical" href="{canon}">'
-           f'<link rel="alternate" hreflang="en" href="{canon}"><link rel="alternate" hreflang="x-default" href="{canon}">'
+           f'<link rel="canonical" href="{canon}">\n'
+           f'{hreflang}'
            f'<meta property="og:type" content="article"><meta property="og:title" content="{esc(copy["title"])}">'
            f'<meta property="og:url" content="{canon}"><style>{CSS}</style>'
            f'<script type="application/ld+json">{json.dumps(article_ld, ensure_ascii=False)}</script>'

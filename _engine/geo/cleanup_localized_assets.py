@@ -8,6 +8,7 @@ import html
 import json
 import os
 import re
+import shutil
 import sys
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -68,21 +69,29 @@ ZERO_PRICE_LAST_OFFER_RE = re.compile(
     r',\s*"offers"\s*:\s*\{(?=[^{}]*"price"\s*:\s*"0")[^{}]*\}\s*(?=\})',
     re.DOTALL,
 )
-LEGACY_ALT_SLUGS = {
-    "aim990-flexible-unlock": "aim990-free-to-start",
-    "aim990-no-subscription": "aim990-free-to-start",
-    "lumibopomofo-no-subscription": "lumibopomofo-free-to-start",
-    "mochi-no-subscription": "mochi-free-to-start",
-    "mochi-pay-once": "mochi-free-to-start",
-    "mochi-free-no-ads": "mochi-free-to-start",
-    "snapport-private-alternative": "snapport-no-subscription",
-    "sononote-no-subscription": "sononote-free-to-start",
-    "picclear-private-alternative": "picclear-free-to-start",
-    "picclear-no-subscription": "picclear-free-to-start",
-    "cyca-private-alternative": "cyca-free-to-start",
-    "cyca-no-subscription": "cyca-free-to-start",
+_HUB_SUFFIX_BY_PROFILE = {
+    "pay_once": "no-subscription",
+    "free_to_start": "free-to-start",
+    "free": "free-no-ads",
+    "flexible": "flexible-unlock",
+    "neutral": "private-alternative",
 }
-ACCURATE_LEGACY_PROFILES = {"pay_once", "no_subscription"}
+_LEGACY_HUB_SUFFIXES = {
+    "no-subscription",
+    "pay-once",
+    "free-to-start",
+    "free-no-ads",
+    "flexible-unlock",
+    "private-alternative",
+}
+LEGACY_ALT_SLUGS = {}
+for _key in APPS:
+    _current = f"{_key}-{_HUB_SUFFIX_BY_PROFILE[pricing_profile(_key)]}"
+    for _suffix in _LEGACY_HUB_SUFFIXES:
+        _legacy = f"{_key}-{_suffix}"
+        if _legacy != _current:
+            LEGACY_ALT_SLUGS[_legacy] = _current
+ACCURATE_LEGACY_PROFILES = {"pay_once"}
 PAID_UPFRONT_KEYS = {
     key
     for key, app in APPS.items()
@@ -144,6 +153,10 @@ AIM990_FALSE_COPY = {
     "pt-BR": (
         "O Aim990 é um aplicativo pago, mas não possui assinaturas, permitindo que você pague uma única vez.",
         "Recursos sem anúncios e sem assinatura",
+    ),
+    "pa-IN": (
+        "ਇੱਕ ਵਾਰੀ ਖੋਲ੍ਹਣ ਦਾ ਵਿਕਲਪ ਅਤੇ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਵਿਕਲਪ",
+        "ਲਚਕੀਲੇ ਭੁਗਤਾਨ ਦੇ ਵਿਕਲਪ, ਜਿਸ ਵਿੱਚ ਇੱਕ ਵਾਰੀ ਖੋਲ੍ਹਣ ਅਤੇ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਸ਼ਾਮਲ ਹਨ",
     ),
     "ro": (
         "Aim990 este o aplicație cu plată unică, fără abonamente sau reclame.",
@@ -228,7 +241,10 @@ def aim990_bad_translations(locale: str) -> set[str]:
     except (OSError, TypeError, ValueError, json.JSONDecodeError):
         return set()
     markers = re.compile(
-        r"optional subscriptions?|subscription (?:options?|plans?)",
+        r"optional subscriptions?"
+        r"|one-time unlock(?: option)? and subscription "
+        r"(?:options?|plans?|models?)"
+        r"|flexible payment options including one-time purchase and subscriptions",
         re.IGNORECASE,
     )
     return {
@@ -260,11 +276,15 @@ def sanitize_aim990_optional_claims(
         re.compile(
             r"(?:both\s+)?(?:a\s+)?one-time unlock(?: option)?"
             r"(?:\s+and|\s+or|\s+plus|\s+alongside)\s+"
-            r"(?:optional\s+)?subscription (?:options?|plans?)",
+            r"(?:optional\s+)?subscription (?:options?|plans?|models?)",
             re.IGNORECASE,
         ),
         re.compile(
             r"one-time or subscription options",
+            re.IGNORECASE,
+        ),
+        re.compile(
+            r"flexible payment options including one-time purchase and subscriptions",
             re.IGNORECASE,
         ),
     )
@@ -872,6 +892,14 @@ def cleanup(pages: Path, live_keys: set[str]) -> dict[str, int]:
         for alternative in root_alt.glob(f"{key}-*.html"):
             alternative.unlink()
             stats["removed_alternatives"] += 1
+
+    if root_alt.is_dir():
+        for legacy_dir in root_alt.iterdir():
+            if legacy_dir.is_dir() and LOCALE_RE.fullmatch(legacy_dir.name):
+                stats["removed_alternatives"] += sum(
+                    1 for _ in legacy_dir.rglob("*.html")
+                )
+                shutil.rmtree(legacy_dir)
 
     valid_alternatives = {
         path.name for path in root_alt.glob("*.html") if path.name != "index.html"

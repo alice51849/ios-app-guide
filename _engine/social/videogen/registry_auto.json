@@ -13,6 +13,7 @@
    "Offline",
    "No account"
   ],
+  "purchase_model": "paid_upfront",
   "keywords": [
    "trip planner",
    "travel itinerary",
@@ -27,13 +28,16 @@
   "name": "Sereno",
   "search": "Sereno",
   "category": "sleep-sound",
-  "sub": "A high-end sound machine for sleep, focus & calm — pay once",
-  "tag": "Pay once · No subscription · Offline",
+  "sub": "A high-end sound machine for sleep, focus & calm — free to try, unlock once",
+  "tag": "Free to start · One-time unlock · Offline",
   "cta_bullets": [
-   "Pay once",
+   "Free to start",
+   "One-time unlock",
+   "No subscription",
    "No ads",
    "Offline"
   ],
+  "purchase_model": "free_with_lifetime_unlock",
   "keywords": [
    "white noise",
    "sleep sounds",

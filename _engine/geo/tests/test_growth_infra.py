@@ -53,6 +53,11 @@ import zhuyin_library_storytime_kit
 import zhuyin_parent_teacher_handoff_kit
 import zhuyin_picture_book_club_kit
 import zhuyin_readiness_tool
+from videogen.registry import (  # noqa: E402
+    APPS,
+    VALID_PURCHASE_MODELS,
+    classify_purchase_model,
+)
 
 
 class AppStoreAvailabilityTests(unittest.TestCase):
@@ -1964,6 +1969,125 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("Free to download", aim_pricing)
         self.assertIn("no recurring subscription", aim_pricing)
         self.assertNotIn("or subscription", aim_pricing)
+        paid_description = (
+            "A calm routine app.\n"
+            "• Free to download, one-time unlock\n"
+            "Built for families."
+        )
+        sanitized_paid = build_pages_i18n.sanitize_description(
+            "lumimissionpro", "en-AU", paid_description
+        )
+        self.assertNotIn("Free to download", sanitized_paid)
+        self.assertIn("Paid download", sanitized_paid)
+
+    def test_registry_only_apps_get_complete_english_landing_pages(self):
+        name, sub, desc, keywords = build_pages_i18n._meta_from(
+            {}, APPS["mochi"]
+        )
+        self.assertEqual("Mochi", name)
+        self.assertTrue(sub)
+        self.assertTrue(desc)
+        self.assertTrue(keywords)
+        self.assertEqual(["en-US"], build_pages_i18n.all_locales_for("mochi"))
+        locales = build_pages_i18n.master_locales_for(
+            ["mochi", "snapport"]
+        )
+        self.assertIn("zh-Hant", locales)
+        self.assertEqual(
+            locales,
+            build_pages_i18n.master_locales_for(["snapport", "mochi"]),
+        )
+        with tempfile.TemporaryDirectory() as directory, mock.patch.object(
+            build_pages_i18n, "PAGES", directory
+        ):
+            output = build_pages_i18n.build_one(
+                "mochi", "en-US", ["en-US"]
+            )
+            page = Path(output).read_text(encoding="utf-8")
+        self.assertIn(APPS["mochi"]["sub"], page)
+        self.assertIn("Free to download", page)
+        self.assertNotIn("<meta name=\"description\" content=\"\">", page)
+
+    def test_registry_purchase_models_are_explicit_and_verified(self):
+        paid_upfront = {
+            "snapport",
+            "gmoney",
+            "hourstag",
+            "lumiletterspro",
+            "lumimathpro",
+            "lumimissionpro",
+            "lumibopomofopro",
+            "tripbee",
+        }
+        free_with_unlock = {
+            "sononote",
+            "cvdesk",
+            "picclear",
+            "scanto",
+            "cyca",
+            "lockhour",
+            "unblurry",
+            "photocream",
+            "lumiletters",
+            "lumimath",
+            "lumimission",
+            "lumiweather",
+            "lumibopomofo",
+            "zodira",
+            "aim990",
+            "mochi",
+            "zafe",
+            "tripplanet",
+            "sereno",
+        }
+        self.assertEqual(paid_upfront | free_with_unlock, set(APPS))
+        for key in paid_upfront:
+            self.assertEqual("paid_upfront", APPS[key]["purchase_model"])
+        for key in free_with_unlock:
+            self.assertEqual(
+                "free_with_lifetime_unlock", APPS[key]["purchase_model"]
+            )
+        self.assertTrue(
+            all(
+                app["purchase_model"] in VALID_PURCHASE_MODELS
+                for app in APPS.values()
+            )
+        )
+
+    def test_purchase_model_classifier_is_conservative(self):
+        self.assertEqual(
+            "paid_upfront", classify_purchase_model(4.99, [], False)
+        )
+        self.assertEqual(
+            "free_with_lifetime_unlock",
+            classify_purchase_model(0, ["NON_CONSUMABLE"], False),
+        )
+        self.assertEqual("free", classify_purchase_model(0, [], False))
+        self.assertEqual(
+            "neutral",
+            classify_purchase_model(0, ["NON_CONSUMABLE"], True),
+        )
+        self.assertEqual(
+            "neutral", classify_purchase_model(0, ["CONSUMABLE"], False)
+        )
+        self.assertEqual(
+            "neutral", classify_purchase_model(None, ["NON_CONSUMABLE"], False)
+        )
+
+    def test_unknown_pricing_never_infers_claims_from_marketing_copy(self):
+        unknown = {
+            "name": "Unknown",
+            "category": "productivity",
+            "tag": "Pay once · No subscription",
+            "cta_bullets": ["Pay once", "No subscription"],
+            "purchase_model": "neutral",
+        }
+        with mock.patch.dict(aeo_pages.APPS, {"unknown": unknown}):
+            self.assertEqual("neutral", aeo_pages.pricing_profile("unknown"))
+            self.assertFalse(aeo_pages.has_one_time_access("unknown"))
+            attrs = aeo_pages.app_attrs("unknown")
+            self.assertFalse(attrs["Pay once"])
+            self.assertFalse(attrs["No subscription"])
 
     def test_localized_cleanup_removes_stale_pricing_assets(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -1979,12 +2103,12 @@ class GeneratorTests(unittest.TestCase):
             root_tools.mkdir()
             (root_tools / "helper.html").write_text("tool", encoding="utf-8")
             (root_alt / "snapport-no-subscription.html").write_text("")
-            (root_alt / "cvdesk-no-subscription.html").write_text("")
+            (root_alt / "gmoney-no-subscription.html").write_text("")
             (root_alt / "index.html").write_text("")
             (localized_alt / "snapport-private-alternative.html").write_text(
                 "stale pricing", encoding="utf-8"
             )
-            (localized_alt / "cvdesk-no-subscription.html").write_text(
+            (localized_alt / "gmoney-no-subscription.html").write_text(
                 "accurate pricing", encoding="utf-8"
             )
             (localized / "zodira.html").write_text("unlisted", encoding="utf-8")
@@ -2059,7 +2183,7 @@ class GeneratorTests(unittest.TestCase):
             )
             (localized_alt / "index.html").write_text(
                 '<ul><li><a href="snapport-no-subscription.html">Snapport</a></li>'
-                '<li><a href="cvdesk-no-subscription.html">CV Desk</a></li></ul>',
+                '<li><a href="gmoney-no-subscription.html">G+Money</a></li></ul>',
                 encoding="utf-8",
             )
             (localized / "index.html").write_text(
@@ -2080,7 +2204,7 @@ class GeneratorTests(unittest.TestCase):
             self.assertFalse(
                 (localized_alt / "snapport-private-alternative.html").exists()
             )
-            self.assertTrue((localized_alt / "cvdesk-no-subscription.html").exists())
+            self.assertTrue((localized_alt / "gmoney-no-subscription.html").exists())
             self.assertFalse((localized / "zodira.html").exists())
             self.assertFalse(stale_roundup.exists())
             self.assertFalse(unlisted_answer.exists())
@@ -2138,6 +2262,16 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(1, stats["removed_stale_roundups"])
             self.assertEqual(1, stats["removed_sitemap_urls"])
 
+    def test_cleanup_removes_legacy_nested_alternative_locales(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            legacy = pages / "alternatives" / "ja"
+            legacy.mkdir(parents=True)
+            (legacy / "old.html").write_text("legacy", encoding="utf-8")
+            stats = cleanup_localized_assets.cleanup(pages, set(APPS))
+            self.assertFalse(legacy.exists())
+            self.assertEqual(1, stats["removed_alternatives"])
+
     def test_aim990_guide_claims_include_free_download(self):
         old = (
             '<p itemprop="text">Aim990是一款一次性購買的應用程式，'
@@ -2170,6 +2304,29 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertGreater(count, 0)
         self.assertNotIn(ja_bad, ja_sanitized)
+        model_claim = (
+            "Aim990 offers both a one-time unlock and subscription models. "
+            "Flexible payment options including one-time purchase and "
+            "subscriptions."
+        )
+        sanitized, count = (
+            cleanup_localized_assets.sanitize_aim990_optional_claims(
+                model_claim, "en-US"
+            )
+        )
+        self.assertEqual(2, count)
+        self.assertNotIn("subscription models", sanitized)
+        self.assertNotIn("Flexible payment options", sanitized)
+        pa_bad = (
+            "Aim990: ਇੱਕ ਵਾਰੀ ਖੋਲ੍ਹਣ ਦਾ ਵਿਕਲਪ ਅਤੇ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਵਿਕਲਪ"
+        )
+        sanitized, count = (
+            cleanup_localized_assets.sanitize_known_aim990_claims(
+                pa_bad, "pa-IN"
+            )
+        )
+        self.assertEqual(1, count)
+        self.assertNotIn("ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਵਿਕਲਪ", sanitized)
 
     def test_cleanup_prunes_unlisted_public_surfaces(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -2613,6 +2770,30 @@ class GeneratorTests(unittest.TestCase):
             "picclear": ("free_to_start", "picclear-free-to-start"),
             "cyca": ("free_to_start", "cyca-free-to-start"),
             "sononote": ("free_to_start", "sononote-free-to-start"),
+            "cvdesk": ("free_to_start", "cvdesk-free-to-start"),
+            "scanto": ("free_to_start", "scanto-free-to-start"),
+            "lockhour": ("free_to_start", "lockhour-free-to-start"),
+            "unblurry": ("free_to_start", "unblurry-free-to-start"),
+            "photocream": ("free_to_start", "photocream-free-to-start"),
+            "lumiletters": ("free_to_start", "lumiletters-free-to-start"),
+            "lumimath": ("free_to_start", "lumimath-free-to-start"),
+            "lumimission": ("free_to_start", "lumimission-free-to-start"),
+            "lumiweather": ("free_to_start", "lumiweather-free-to-start"),
+            "zodira": ("free_to_start", "zodira-free-to-start"),
+            "aim990": ("free_to_start", "aim990-free-to-start"),
+            "zafe": ("free_to_start", "zafe-free-to-start"),
+            "tripplanet": ("free_to_start", "tripplanet-free-to-start"),
+            "sereno": ("free_to_start", "sereno-free-to-start"),
+            "gmoney": ("pay_once", "gmoney-no-subscription"),
+            "hourstag": ("pay_once", "hourstag-no-subscription"),
+            "lumiletterspro": ("pay_once", "lumiletterspro-no-subscription"),
+            "lumimathpro": ("pay_once", "lumimathpro-no-subscription"),
+            "lumimissionpro": ("pay_once", "lumimissionpro-no-subscription"),
+            "lumibopomofopro": (
+                "pay_once",
+                "lumibopomofopro-no-subscription",
+            ),
+            "tripbee": ("pay_once", "tripbee-no-subscription"),
         }
         for key, (profile, expected_slug) in expected_profiles.items():
             with self.subTest(key=key):
@@ -2663,6 +2844,16 @@ class GeneratorTests(unittest.TestCase):
     def test_legacy_lifetime_unlock_slugs_map_to_current_pages(self):
         for old, current in {
             "aim990-no-subscription": "aim990-free-to-start",
+            "cvdesk-no-subscription": "cvdesk-free-to-start",
+            "scanto-no-subscription": "scanto-free-to-start",
+            "lockhour-no-subscription": "lockhour-free-to-start",
+            "unblurry-no-subscription": "unblurry-free-to-start",
+            "photocream-no-subscription": "photocream-free-to-start",
+            "lumiletters-no-subscription": "lumiletters-free-to-start",
+            "lumimath-no-subscription": "lumimath-free-to-start",
+            "lumimission-no-subscription": "lumimission-free-to-start",
+            "lumiweather-no-subscription": "lumiweather-free-to-start",
+            "sereno-no-subscription": "sereno-free-to-start",
             "picclear-private-alternative": "picclear-free-to-start",
             "cyca-private-alternative": "cyca-free-to-start",
             "sononote-no-subscription": "sononote-free-to-start",

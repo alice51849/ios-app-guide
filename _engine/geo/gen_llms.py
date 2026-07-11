@@ -26,11 +26,7 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
-try:
-    from aeo_pages import disp  # 競品顯示名
-except Exception:  # noqa: BLE001
-    def disp(x):
-        return " ".join(w.capitalize() for w in (x or "").split())
+from aeo_pages import disp, pricing_profile  # noqa: E402
 
 PAGES = os.path.join(HERE, "pages")
 ALT = os.path.join(PAGES, "alternatives")
@@ -77,16 +73,16 @@ def load_competitors():
 
 
 def positioning(key):
-    app = APPS[key]
-    facts = " · ".join([app.get("tag", "")] + app.get("cta_bullets", [])).lower()
-    if "free to start" in facts:
-        return "Free to start." + (" No subscription." if "no subscription" in facts else "")
-    if re.search(r"\bfree\b", facts):
-        return "Free." + (" No ads." if "no ads" in facts else "")
-    if "pay once" in facts or "one-time" in facts or "everything unlocked" in facts:
-        return "Pay once." + (" No subscription." if "no subscription" in facts else "")
-    if "no subscription" in facts:
-        return "No subscription."
+    profile = pricing_profile(key)
+    bullets = " · ".join(APPS[key].get("cta_bullets", [])).lower()
+    if profile == "free_to_start":
+        return "Free to start. One-time unlock. No subscription."
+    if profile == "free":
+        return "Free." + (" No ads." if "no ads" in bullets else "")
+    if profile == "pay_once":
+        return "Paid once. No subscription."
+    if profile == "flexible":
+        return "Free to start. One-time and subscription options."
     return ""
 
 
@@ -100,7 +96,11 @@ def app_line(key, comps, live_keys):
         sub += "."                    # 補句號,讓 AI 正確斷句、乾淨引用
     position = positioning(key)
     if comps:
-        adjective = "A pay-once alternative" if position.startswith("Pay once") else "An independent alternative"
+        adjective = (
+            "A pay-once alternative"
+            if pricing_profile(key) in {"pay_once", "free_to_start"}
+            else "An independent alternative"
+        )
         alt = f" {adjective} to {comps[0]}" + (f" and {comps[1]}" if len(comps) > 1 else "") + "."
     else:
         alt = ""
@@ -136,7 +136,7 @@ def build_llms(comp_map, live_keys):
     if os.path.isdir(ALT):
         alts = sorted(f for f in os.listdir(ALT) if f.endswith(".html") and f != "index.html")
         if alts:
-            lines += ["", "## Pay-once alternatives (comparison pages)"]
+            lines += ["", "## App alternatives (comparison pages)"]
             for f in alts:
                 title = re.sub(r"[-_]", " ", f[:-5])
                 lines.append(f"- [{title}]({SITE}/alternatives/{f})")

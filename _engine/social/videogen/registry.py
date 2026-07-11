@@ -9,6 +9,35 @@ Hooks are pain-point / savings / before-after angles — the virality lever.
 import os
 
 
+VALID_PURCHASE_MODELS = frozenset(
+    {
+        "paid_upfront",
+        "free_with_lifetime_unlock",
+        "free",
+        "flexible",
+        "neutral",
+    }
+)
+
+
+def classify_purchase_model(price, iap_types, has_subscriptions):
+    """Return a conservative model from verified App Store purchase data."""
+    try:
+        price = float(price)
+    except (TypeError, ValueError):
+        return "neutral"
+    types = {str(value).upper() for value in iap_types if value}
+    if has_subscriptions:
+        return "neutral"
+    if price > 0 and not types:
+        return "paid_upfront"
+    if price == 0 and types == {"NON_CONSUMABLE"}:
+        return "free_with_lifetime_unlock"
+    if price == 0 and not types:
+        return "free"
+    return "neutral"
+
+
 def H(p):
     return os.path.expanduser(p)
 
@@ -52,6 +81,7 @@ APPS = {
         sub="Instant ATS score + recruiter-ready templates",
         tag="Export PDF · No watermark",
         cta_bullets=["Pay once", "No watermark", "PDF & Word"],
+        purchase_model="free_with_lifetime_unlock",
         keywords=["resume builder", "cv maker", "ats resume", "resume template",
                   "job search", "career", "resume tips"],
     ),
@@ -81,6 +111,7 @@ APPS = {
         sub="Scan, OCR-search & Face ID-lock docs — pay once",
         tag="Pay once · Private",
         cta_bullets=["Pay once", "No subscription", "On-device"],
+        purchase_model="free_with_lifetime_unlock",
         keywords=["pdf scanner", "document scanner", "scan to pdf", "ocr app",
                   "scan documents", "paperless", "iphone tips"],
     ),
@@ -108,6 +139,7 @@ APPS = {
         sub="Convert + log every expense in one tap — offline",
         tag="Pay once · No account",
         cta_bullets=["Pay once", "Offline", "No account"],
+        purchase_model="paid_upfront",
         keywords=["travel budget", "currency converter", "expense tracker",
                   "travel money", "trip budget", "travel hack"],
     ),
@@ -121,6 +153,7 @@ APPS = {
         sub="See what everything really costs — in hours of your life",
         tag="Pay once · 17 languages",
         cta_bullets=["Pay once", "Private", "No tracking"],
+        purchase_model="paid_upfront",
         keywords=["money mindset", "budgeting", "spending tracker",
                   "financial freedom", "money tips", "personal finance"],
     ),
@@ -134,6 +167,7 @@ APPS = {
         sub="Block the apps that steal your focus — one tap",
         tag="Pay once · Private",
         cta_bullets=["Pay once", "No ads", "On-device"],
+        purchase_model="free_with_lifetime_unlock",
         keywords=["screen time", "app blocker", "focus app", "digital detox",
                   "study focus", "deep work", "productivity"],
     ),
@@ -147,6 +181,7 @@ APPS = {
         sub="AI super-resolution makes it crisp — on your iPhone",
         tag="Pay once · On-device",
         cta_bullets=["Pay once", "Private", "On-device"],
+        purchase_model="free_with_lifetime_unlock",
         keywords=["unblur photo", "photo enhancer", "ai upscale",
                   "fix blurry photo", "enhance photo", "photo quality"],
     ),
@@ -160,6 +195,7 @@ APPS = {
         sub="100+ real film looks, grain, halation & light leaks",
         tag="Pay once · No watermark",
         cta_bullets=["Pay once", "No watermark", "Full-res"],
+        purchase_model="free_with_lifetime_unlock",
         keywords=["film filter", "vintage filter", "photo editor", "aesthetic",
                   "film camera", "retro", "presets"],
     ),
@@ -175,6 +211,7 @@ APPS = {
         sub="Playful phonics, tracing & letter games",
         tag="Pay once · No ads ever",
         cta_bullets=["Pay once", "No ads", "Kid-safe"],
+        purchase_model="free_with_lifetime_unlock",
         keywords=["abc for kids", "phonics", "learn letters", "kids learning",
                   "preschool", "toddler", "alphabet"],
     ),
@@ -188,6 +225,7 @@ APPS = {
         sub="A whole galaxy of number adventures",
         tag="Pay once · No ads ever",
         cta_bullets=["Pay once", "No ads", "Kid-safe"],
+        purchase_model="free_with_lifetime_unlock",
         keywords=["math for kids", "kids math game", "learn numbers",
                   "preschool math", "counting", "education", "kids learning"],
     ),
@@ -201,6 +239,7 @@ APPS = {
         sub="A daily habit & bedtime ritual kids love",
         tag="Pay once · No ads ever",
         cta_bullets=["Pay once", "No ads", "Kid-safe"],
+        purchase_model="free_with_lifetime_unlock",
         keywords=["kids routine", "chore chart", "habit tracker for kids",
                   "bedtime", "parenting", "toddler", "kids learning"],
     ),
@@ -214,6 +253,7 @@ APPS = {
         sub="Weather + a kid-outing score, tuned to their age",
         tag="Pay once · No tracking",
         cta_bullets=["Pay once", "No ads", "Kid-safe"],
+        purchase_model="free_with_lifetime_unlock",
         keywords=["weather for kids", "family weather", "what to wear",
                   "kids outing", "parenting", "weather app"],
     ),
@@ -229,6 +269,7 @@ APPS = {
         sub="The complete phonics, tracing & word-building world",
         tag="Pay once · Everything unlocked",
         cta_bullets=["Pay once", "No ads", "Kid-safe"],
+        purchase_model="paid_upfront",
         keywords=["learn to read", "phonics for kids", "abc for kids",
                   "sight words", "preschool reading", "kindergarten prep",
                   "kids learning"],
@@ -243,6 +284,7 @@ APPS = {
         sub="The whole number galaxy — every adventure unlocked",
         tag="Pay once · Everything unlocked",
         cta_bullets=["Pay once", "No ads", "Kid-safe"],
+        purchase_model="paid_upfront",
         keywords=["math for kids", "kids math game", "learn numbers",
                   "addition for kids", "counting", "preschool math",
                   "kids learning"],
@@ -257,6 +299,7 @@ APPS = {
         sub="Habits, chores & bedtime kids actually want to do",
         tag="Pay once · Everything unlocked",
         cta_bullets=["Pay once", "No ads", "Kid-safe"],
+        purchase_model="paid_upfront",
         keywords=["kids routine", "chore chart", "habit tracker for kids",
                   "bedtime routine", "morning routine", "parenting",
                   "kids learning"],
@@ -286,6 +329,7 @@ APPS = {
         sub="The complete Zhuyin (Bopomofo) world — every sound & game unlocked",
         tag="Pay once · Everything unlocked",
         cta_bullets=["Pay once", "No ads", "Kid-safe"],
+        purchase_model="paid_upfront",
         keywords=["bopomofo", "zhuyin", "learn chinese for kids",
                   "mandarin for kids", "chinese phonics", "raising bilingual",
                   "heritage language"],
@@ -300,6 +344,7 @@ APPS = {
         sub="AI astrology, tarot, horoscope, BaZi & Zi Wei — offline and private",
         tag="Pay once · Offline",
         cta_bullets=["Pay once", "No subscription", "Offline", "No ads", "No tracking"],
+        purchase_model="free_with_lifetime_unlock",
         keywords=["astrology", "tarot", "horoscope", "birth chart",
                   "bazi", "zi wei", "daily horoscope"],
     ),
@@ -337,6 +382,7 @@ APPS = {
         sub="Lock private photos & videos behind Face ID — everything stays on your iPhone",
         tag="Pay once · On-device",
         cta_bullets=["Pay once", "On-device", "Private"],
+        purchase_model="free_with_lifetime_unlock",
         keywords=["photo vault", "hide photos", "private album", "lock photos",
                   "secret photos", "face id vault", "hide pictures"],
     ),
@@ -348,6 +394,7 @@ APPS = {
         sub="Fun travel games, packing help & discovery for little explorers",
         tag="Pay once · No ads ever",
         cta_bullets=["Pay once", "No ads", "Kid-safe"],
+        purchase_model="free_with_lifetime_unlock",
         keywords=["kids travel", "travel games for kids", "road trip games",
                   "family travel", "kids activities", "travel for kids", "preschool"],
     ),
@@ -410,9 +457,34 @@ if os.path.exists(_AUTO_PATH):
                 category=_v.get("category", "other"),
                 icon="", shots_dir="", locale="", shots=[],
                 kicker=_v.get("kicker", ""), title=_v.get("title", _v["name"]),
-                sub=_v.get("sub", ""), tag=_v.get("tag", "Pay once"),
-                cta_bullets=_v.get("cta_bullets", ["Pay once"]),
+                sub=_v.get("sub", ""),
+                tag=_v.get("tag", "See App Store for current details"),
+                cta_bullets=_v.get("cta_bullets", []),
+                purchase_model=_v.get("purchase_model", "neutral"),
                 keywords=_v.get("keywords", []),
             )
-    except Exception:
-        pass
+    except (OSError, TypeError, ValueError) as exc:
+        raise RuntimeError(f"Invalid automatic app registry: {_AUTO_PATH}") from exc
+
+for _key, _app in APPS.items():
+    _model = _app.setdefault("purchase_model", "neutral")
+    if _model not in VALID_PURCHASE_MODELS:
+        raise ValueError(f"Invalid purchase model for {_key}: {_model}")
+    if _model == "neutral":
+        _pricing_markers = (
+            "pay once",
+            "one-time",
+            "subscription",
+            "free to start",
+            "paid download",
+        )
+        if any(
+            marker in _app.get("tag", "").lower()
+            for marker in _pricing_markers
+        ):
+            _app["tag"] = "See App Store for current details"
+        _app["cta_bullets"] = [
+            bullet
+            for bullet in _app.get("cta_bullets", [])
+            if not any(marker in bullet.lower() for marker in _pricing_markers)
+        ]

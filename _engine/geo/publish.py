@@ -57,6 +57,10 @@ def main():
             "where-can-an-oer-repository-download-metadata-for-a-"
             "bopomofo-learning-resource"
         ),
+        (
+            "where-can-an-open-data-catalog-harvest-a-bopomofo-"
+            "dataset-in-dcat-3"
+        ),
     ]
     # 1) 重建
     require([PY, os.path.join(HERE, "build_pages_i18n.py")], env=env)
@@ -83,6 +87,7 @@ def main():
     require([PY, os.path.join(HERE, "zhuyin_epub_opds.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_library_catalog.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_oer_metadata.py")], env=env)
+    require([PY, os.path.join(HERE, "zhuyin_dcat_catalog.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_resourcesync.py")], env=env)
     require(
         [PY, os.path.join(HERE, "prioritize_trip_planet_resources.py")],

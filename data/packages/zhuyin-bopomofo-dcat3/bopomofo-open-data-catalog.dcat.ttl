@@ -1,0 +1,1113 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://alice51849.github.io/ios-app-guide/#organization>
+  a foaf:Organization ;
+  foaf:name "Lumi Apps - iOS App Guide"@en,
+    "Lumi Apps iOS 應用指南"@zh-Hant ;
+  foaf:homepage <https://alice51849.github.io/ios-app-guide> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#themes>
+  a skos:ConceptScheme ;
+  skos:prefLabel "Bopomofo open-resource themes"@en,
+    "注音開放資源主題"@zh-Hant .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-language>
+  a skos:Concept ;
+  skos:prefLabel "Language data"@en,
+    "語言資料"@zh-Hant ;
+  skos:inScheme <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#themes> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-education>
+  a skos:Concept ;
+  skos:prefLabel "Educational resources"@en,
+    "教育資源"@zh-Hant ;
+  skos:inScheme <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#themes> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-metadata>
+  a skos:Concept ;
+  skos:prefLabel "Metadata and catalogs"@en,
+    "Metadata 與目錄"@zh-Hant ;
+  skos:inScheme <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#themes> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#catalog>
+  a dcat:Catalog ;
+  dcterms:title "Bopomofo open-data catalog"@en,
+    "注音開放資料目錄"@zh-Hant ;
+  dcterms:description "Download a static W3C DCAT 3 catalog covering nine verified Bopomofo datasets and 41 exact distributions."@en,
+    "下載靜態 W3C DCAT 3 目錄，收錄 9 組已驗證注音資料集與 41 個精確版本。"@zh-Hant ;
+  dcterms:publisher <https://alice51849.github.io/ios-app-guide/#organization> ;
+  dcterms:issued "2026-07-11"^^xsd:date ;
+  dcterms:modified "2026-07-11T14:23:16Z"^^xsd:dateTime ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcterms:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
+  dcat:version "1.0.0" ;
+  foaf:homepage <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html> ;
+  dcat:themeTaxonomy <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#themes> ;
+  dcat:service <https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols#service> ;
+  dcat:dataset <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-symbols>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-skos>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-croissant>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-data-package>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-anki>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-lms>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-epub>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-library>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-oer-metadata> ;
+  dcat:record <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-symbols>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-skos>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-croissant>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-data-package>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-anki>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-lms>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-epub>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-library>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-oer-metadata> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-symbols>
+  a dcat:CatalogRecord ;
+  dcterms:title "Catalog entry for Complete 37-symbol Bopomofo reference data"@en,
+    "完整 37 符號注音參考資料目錄紀錄"@zh-Hant ;
+  dcterms:issued "2026-07-11"^^xsd:date ;
+  dcterms:modified "2026-07-11T14:23:16Z"^^xsd:dateTime ;
+  dcterms:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
+  foaf:primaryTopic <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-symbols> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-symbols>
+  a dcat:Dataset ;
+  dcterms:title "Complete 37-symbol Bopomofo reference data"@en,
+    "完整 37 符號注音參考資料"@zh-Hant ;
+  dcterms:description "The complete Bopomofo inventory with Unicode, Hanyu Pinyin, broad IPA, category and example fields."@en,
+    "完整注音符號清單，包含 Unicode、漢語拼音、概略 IPA、分類與例字欄位。"@zh-Hant ;
+  dcterms:identifier "LUMI-ZHUYIN-DCAT-SYMBOLS" ;
+  dcterms:issued "2026-07-11"^^xsd:date ;
+  dcterms:modified "2026-07-11"^^xsd:date ;
+  dcterms:publisher <https://alice51849.github.io/ios-app-guide/#organization> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:landingPage <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.html> ;
+  dcat:keyword "Bopomofo"@en,
+    "Zhuyin"@en,
+    "Unicode"@en,
+    "Mandarin phonetics"@en ;
+  dcat:theme <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-language>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-education>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-metadata> ;
+  dcat:distribution <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-symbols-1>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-symbols-2> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-symbols-1>
+  a dcat:Distribution ;
+  dcterms:title "zhuyin-bopomofo.json" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> ;
+  dcat:byteSize "9675"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-symbols-1-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-symbols-1-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "5072ef1d1fb3951830f71fc4e2bac378c6f9a22b883070cd9f96eb7c2de230d7"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-symbols-2>
+  a dcat:Distribution ;
+  dcterms:title "index.json" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.json> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.json> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> ;
+  dcat:byteSize "9773"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  dcat:accessService <https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols#service> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-symbols-2-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-symbols-2-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "e6c95e415d94c8e9f32c9169e68acd2e988960ce171449c7d3d0a0c848a50028"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-skos>
+  a dcat:CatalogRecord ;
+  dcterms:title "Catalog entry for Bopomofo SKOS linked-open-data vocabulary"@en,
+    "注音符號 SKOS Linked Open Data 詞彙目錄紀錄"@zh-Hant ;
+  dcterms:issued "2026-07-11"^^xsd:date ;
+  dcterms:modified "2026-07-11T14:23:16Z"^^xsd:dateTime ;
+  dcterms:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
+  foaf:primaryTopic <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-skos> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-skos>
+  a dcat:Dataset ;
+  dcterms:title "Bopomofo SKOS linked-open-data vocabulary"@en,
+    "注音符號 SKOS Linked Open Data 詞彙"@zh-Hant ;
+  dcterms:description "All 37 Bopomofo symbols as stable SKOS concepts in JSON-LD, Turtle and N-Triples, with SHACL validation shapes."@en,
+    "將全部 37 個注音符號建模為穩定 SKOS 概念，提供 JSON-LD、Turtle、N-Triples 與 SHACL 驗證形狀。"@zh-Hant ;
+  dcterms:identifier "LUMI-ZHUYIN-DCAT-SKOS" ;
+  dcterms:issued "2026-07-11"^^xsd:date ;
+  dcterms:modified "2026-07-11"^^xsd:date ;
+  dcterms:publisher <https://alice51849.github.io/ios-app-guide/#organization> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:landingPage <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html> ;
+  dcterms:conformsTo <https://www.w3.org/TR/skos-reference/>,
+    <https://www.w3.org/TR/json-ld11/>,
+    <https://www.w3.org/TR/shacl/> ;
+  dcat:keyword "SKOS"@en,
+    "linked open data"@en,
+    "Bopomofo"@en,
+    "SHACL"@en ;
+  dcat:theme <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-language>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-education>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-metadata> ;
+  dcat:distribution <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-skos-1>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-skos-2>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-skos-3>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-skos-4>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-skos-5> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-skos-1>
+  a dcat:Distribution ;
+  dcterms:title "zhuyin-bopomofo-vocabulary.jsonld" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/ld+json> ;
+  dcat:byteSize "79017"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-skos-1-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-skos-1-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "e8a4f56690766420f00a3762e08de8d86bfbeb09b00093dfbc4c619508dc855a"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-skos-2>
+  a dcat:Distribution ;
+  dcterms:title "zhuyin-bopomofo-vocabulary.ttl" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
+  dcat:byteSize "32239"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-skos-2-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-skos-2-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "0173df5ad1c3fcad5bc85e0ba738f05617cbd95bd664f81260344eb5337d2411"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-skos-3>
+  a dcat:Distribution ;
+  dcterms:title "zhuyin-bopomofo-vocabulary.nt" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/n-triples> ;
+  dcat:byteSize "141016"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-skos-3-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-skos-3-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "3ebe082c284c4b2c8af816ff08731ca9bd694f2f5985e4b459874f4a3ec216ef"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-skos-4>
+  a dcat:Distribution ;
+  dcterms:title "zhuyin-bopomofo-vocabulary.shacl.ttl" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
+  dcat:byteSize "4070"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-skos-4-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-skos-4-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "3f96d72fbbea61f308b28b8b54fc9867b0c2f6ae1538763e05093a9565fdd7cc"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-skos-5>
+  a dcat:Distribution ;
+  dcterms:title "zhuyin-bopomofo-vocabulary.metadata.jsonld" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.metadata.jsonld> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.metadata.jsonld> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/ld+json> ;
+  dcat:byteSize "7408"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-skos-5-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-skos-5-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "07677e136027ee01638b334acc6df1435509967bd274d2c38e341a67e94d814e"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-croissant>
+  a dcat:CatalogRecord ;
+  dcterms:title "Catalog entry for Bopomofo tabular dataset with Croissant 1.1 metadata"@en,
+    "附 Croissant 1.1 metadata 的注音表格資料集目錄紀錄"@zh-Hant ;
+  dcterms:issued "2026-07-11"^^xsd:date ;
+  dcterms:modified "2026-07-11T14:23:16Z"^^xsd:dateTime ;
+  dcterms:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
+  foaf:primaryTopic <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-croissant> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-croissant>
+  a dcat:Dataset ;
+  dcterms:title "Bopomofo tabular dataset with Croissant 1.1 metadata"@en,
+    "附 Croissant 1.1 metadata 的注音表格資料集"@zh-Hant ;
+  dcterms:description "A 37-row UTF-8 table in CSV and JSON Lines with MLCommons Croissant 1.1 metadata."@en,
+    "37 列 UTF-8 注音表格，提供 CSV、JSON Lines 與 MLCommons Croissant 1.1 metadata。"@zh-Hant ;
+  dcterms:identifier "LUMI-ZHUYIN-DCAT-CROISSANT" ;
+  dcterms:issued "2026-07-11"^^xsd:date ;
+  dcterms:modified "2026-07-11"^^xsd:date ;
+  dcterms:publisher <https://alice51849.github.io/ios-app-guide/#organization> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:landingPage <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html> ;
+  dcterms:conformsTo <http://mlcommons.org/croissant/1.1> ;
+  dcat:keyword "Croissant"@en,
+    "CSV"@en,
+    "JSON Lines"@en,
+    "machine learning"@en ;
+  dcat:theme <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-language>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-education>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-metadata> ;
+  dcat:distribution <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-1>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-2>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-3> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-1>
+  a dcat:Distribution ;
+  dcterms:title "zhuyin-bopomofo-ml-dataset.csv" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/text/csv> ;
+  dcat:byteSize "8350"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-1-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-1-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "6d9235a013dd1856130841bdf6866f22173903bec726690b9b4c3e555b223422"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-2>
+  a dcat:Distribution ;
+  dcterms:title "zhuyin-bopomofo-ml-dataset.jsonl" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/text/plain> ;
+  dcat:byteSize "14734"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-2-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-2-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "68729f91871ca6603929c2a28ffb567513bf0a4f233f55164c236bd36b31b131"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-3>
+  a dcat:Distribution ;
+  dcterms:title "zhuyin-bopomofo-ml-dataset.croissant.jsonld" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/ld+json> ;
+  dcat:byteSize "13777"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-3-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-3-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "d96d4b5a8d50247ace01825cc267a657e0f9ac9785e6f9283b4f7312337e30e7"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-data-package>
+  a dcat:CatalogRecord ;
+  dcterms:title "Catalog entry for Bopomofo Frictionless Data Package 2.0"@en,
+    "注音 Frictionless Data Package 2.0目錄紀錄"@zh-Hant ;
+  dcterms:issued "2026-07-11"^^xsd:date ;
+  dcterms:modified "2026-07-11T14:23:16Z"^^xsd:dateTime ;
+  dcterms:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
+  foaf:primaryTopic <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-data-package> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-data-package>
+  a dcat:Dataset ;
+  dcterms:title "Bopomofo Frictionless Data Package 2.0"@en,
+    "注音 Frictionless Data Package 2.0"@zh-Hant ;
+  dcterms:description "A portable Data Package 2.0 containing the complete typed 37-symbol CSV table and its Table Schema."@en,
+    "可攜式 Data Package 2.0，包含完整 37 符號 CSV 型別表格與 Table Schema。"@zh-Hant ;
+  dcterms:identifier "LUMI-ZHUYIN-DCAT-DATA-PACKAGE" ;
+  dcterms:issued "2026-07-11T00:00:00Z"^^xsd:dateTime ;
+  dcterms:modified "2026-07-11T00:00:00Z"^^xsd:dateTime ;
+  dcterms:publisher <https://alice51849.github.io/ios-app-guide/#organization> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:landingPage <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/> ;
+  dcterms:conformsTo <https://datapackage.org/standard/data-package/> ;
+  dcat:keyword "Data Package"@en,
+    "Frictionless Data"@en,
+    "Table Schema"@en,
+    "CSV"@en ;
+  dcat:theme <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-language>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-education>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-metadata> ;
+  dcat:distribution <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-data-package-1>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-data-package-2>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-data-package-3> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-data-package-1>
+  a dcat:Distribution ;
+  dcterms:title "datapackage.json" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> ;
+  dcat:byteSize "2165"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-data-package-1-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-data-package-1-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "80efcd4adad386e9838f53b5d415f38be84ab4b5e3ecc6d9156b0284f7e1ab94"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-data-package-2>
+  a dcat:Distribution ;
+  dcterms:title "table-schema.json" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> ;
+  dcat:byteSize "5470"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-data-package-2-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-data-package-2-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "ac2e61302e11c8613a44ab42c2927daace54ce1583a20b2f5072de6d407dc7fb"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-data-package-3>
+  a dcat:Distribution ;
+  dcterms:title "symbols.csv" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/text/csv> ;
+  dcat:byteSize "8350"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-data-package-3-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-data-package-3-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "6d9235a013dd1856130841bdf6866f22173903bec726690b9b4c3e555b223422"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-anki>
+  a dcat:CatalogRecord ;
+  dcterms:title "Catalog entry for Bopomofo Anki import decks"@en,
+    "注音 Anki 匯入牌組目錄紀錄"@zh-Hant ;
+  dcterms:issued "2026-07-11"^^xsd:date ;
+  dcterms:modified "2026-07-11T14:23:16Z"^^xsd:dateTime ;
+  dcterms:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
+  foaf:primaryTopic <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-anki> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-anki>
+  a dcat:Dataset ;
+  dcterms:title "Bopomofo Anki import decks"@en,
+    "注音 Anki 匯入牌組"@zh-Hant ;
+  dcterms:description "English and Traditional Chinese UTF-8 tab-separated flashcard imports covering all 37 symbols."@en,
+    "英文與繁體中文 UTF-8 tab-separated 字卡匯入檔，完整涵蓋 37 個符號。"@zh-Hant ;
+  dcterms:identifier "LUMI-ZHUYIN-DCAT-ANKI" ;
+  dcterms:issued "2026-07-11"^^xsd:date ;
+  dcterms:modified "2026-07-11"^^xsd:date ;
+  dcterms:publisher <https://alice51849.github.io/ios-app-guide/#organization> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:landingPage <https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck.html> ;
+  dcat:keyword "Anki"@en,
+    "flashcards"@en,
+    "Bopomofo practice"@en,
+    "TSV"@en ;
+  dcat:theme <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-language>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-education>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-metadata> ;
+  dcat:distribution <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-anki-1>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-anki-2>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-anki-3> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-anki-1>
+  a dcat:Distribution ;
+  dcterms:title "zhuyin-bopomofo-anki-deck-en.tsv" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck-en.tsv> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck-en.tsv> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/text/tab-separated-values> ;
+  dcat:byteSize "2966"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-anki-1-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-anki-1-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "3f9a8967144fa02f920520d6bbb57c4f5807d840ddad85847ae9b2bc8a5b370b"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-anki-2>
+  a dcat:Distribution ;
+  dcterms:title "zhuyin-bopomofo-anki-deck-zh-hant.tsv" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck-zh-hant.tsv> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck-zh-hant.tsv> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/text/tab-separated-values> ;
+  dcat:byteSize "3676"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-anki-2-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-anki-2-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "de15e5e96246ae96ce25aa75c29ba7db2b76df3338ee0f1786104572aa8bfa9b"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-anki-3>
+  a dcat:Distribution ;
+  dcterms:title "zhuyin-bopomofo-anki-deck.metadata.json" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck.metadata.json> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck.metadata.json> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> ;
+  dcat:byteSize "5039"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-anki-3-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-anki-3-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "b526b5c0da4e8bed381a515fc5d7dc09757ac5ff02061f8c893adbc55fba0bbc"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-lms>
+  a dcat:CatalogRecord ;
+  dcterms:title "Catalog entry for Bopomofo LMS assessment bank"@en,
+    "注音 LMS 題庫目錄紀錄"@zh-Hant ;
+  dcterms:issued "2026-07-11"^^xsd:date ;
+  dcterms:modified "2026-07-11T14:23:16Z"^^xsd:dateTime ;
+  dcterms:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
+  foaf:primaryTopic <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-lms> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-lms>
+  a dcat:Dataset ;
+  dcterms:title "Bopomofo LMS assessment bank"@en,
+    "注音 LMS 題庫"@zh-Hant ;
+  dcterms:description "Thirty-seven symbol-recognition questions packaged for QTI 2.1 and Moodle XML, plus a CSV answer key."@en,
+    "37 題符號辨識題，提供 QTI 2.1、Moodle XML 與 CSV 答案表。"@zh-Hant ;
+  dcterms:identifier "LUMI-ZHUYIN-DCAT-LMS" ;
+  dcterms:issued "2026-07-11"^^xsd:date ;
+  dcterms:modified "2026-07-11"^^xsd:date ;
+  dcterms:publisher <https://alice51849.github.io/ios-app-guide/#organization> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:landingPage <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html> ;
+  dcterms:conformsTo <https://www.imsglobal.org/question/qtiv2p1/imsqti_implv2p1.html>,
+    <https://docs.moodle.org/en/Import_questions> ;
+  dcat:keyword "QTI 2.1"@en,
+    "Moodle XML"@en,
+    "assessment"@en,
+    "LMS"@en ;
+  dcat:theme <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-language>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-education>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-metadata> ;
+  dcat:distribution <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-lms-1>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-lms-2>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-lms-3>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-lms-4>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-lms-5>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-lms-6> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-lms-1>
+  a dcat:Distribution ;
+  dcterms:title "bopomofo-qti-2.1-en.zip" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-qti-2.1-en.zip> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-qti-2.1-en.zip> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/zip> ;
+  dcat:byteSize "25533"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  dcat:packageFormat <https://www.iana.org/assignments/media-types/application/zip> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-lms-1-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-lms-1-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "af18ae415e3fe5c0eb2b94ccfe5a2f7ef990889b5e5d50d48a661c7104c5c659"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-lms-2>
+  a dcat:Distribution ;
+  dcterms:title "bopomofo-qti-2.1-zh-hant.zip" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-qti-2.1-zh-hant.zip> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-qti-2.1-zh-hant.zip> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/zip> ;
+  dcat:byteSize "27472"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  dcat:packageFormat <https://www.iana.org/assignments/media-types/application/zip> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-lms-2-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-lms-2-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "3791a820195a73a8350460a57ee73fc84fc7a59d4194fa72fb758fafbd39b974"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-lms-3>
+  a dcat:Distribution ;
+  dcterms:title "bopomofo-moodle-en.xml" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-moodle-en.xml> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-moodle-en.xml> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/xml> ;
+  dcat:byteSize "39403"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-lms-3-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-lms-3-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "a460e3435033d10de87e351a466b04db8f2894cb1962af8c4d189b746d5498f0"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-lms-4>
+  a dcat:Distribution ;
+  dcterms:title "bopomofo-moodle-zh-hant.xml" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-moodle-zh-hant.xml> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-moodle-zh-hant.xml> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/xml> ;
+  dcat:byteSize "39269"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-lms-4-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-lms-4-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "d53f057d468cb8d182074892b74b378c8220671b5590c107c72722c3476f9f33"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-lms-5>
+  a dcat:Distribution ;
+  dcterms:title "answer-key.csv" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/answer-key.csv> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/answer-key.csv> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/text/csv> ;
+  dcat:byteSize "1844"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-lms-5-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-lms-5-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "af520995babf661aaef468dca42add9d5e3f02d1ee293432fc6c88638868273b"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-lms-6>
+  a dcat:Distribution ;
+  dcterms:title "metadata.jsonld" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/metadata.jsonld> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/metadata.jsonld> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/ld+json> ;
+  dcat:byteSize "3659"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-lms-6-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-lms-6-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "676f2bf06e014e060b26382ddb38ad3fb9e5e6158e034cf0dd1b13b47b01d77f"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-epub>
+  a dcat:CatalogRecord ;
+  dcterms:title "Catalog entry for Bopomofo EPUB 3.3 publication and OPDS catalogs"@en,
+    "注音 EPUB 3.3 出版品與 OPDS 目錄目錄紀錄"@zh-Hant ;
+  dcterms:issued "2026-07-11"^^xsd:date ;
+  dcterms:modified "2026-07-11T14:23:16Z"^^xsd:dateTime ;
+  dcterms:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
+  foaf:primaryTopic <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-epub> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-epub>
+  a dcat:Dataset ;
+  dcterms:title "Bopomofo EPUB 3.3 publication and OPDS catalogs"@en,
+    "注音 EPUB 3.3 出版品與 OPDS 目錄"@zh-Hant ;
+  dcterms:description "English and Traditional Chinese EPUB 3.3 reference editions with Readium manifests and OPDS 2.0 and 1.2 catalogs."@en,
+    "英文與繁體中文 EPUB 3.3 參考書，附 Readium manifest、OPDS 2.0 與 OPDS 1.2 目錄。"@zh-Hant ;
+  dcterms:identifier "LUMI-ZHUYIN-DCAT-EPUB" ;
+  dcterms:issued "2026-07-11"^^xsd:date ;
+  dcterms:modified "2026-07-11T10:45:50Z"^^xsd:dateTime ;
+  dcterms:publisher <https://alice51849.github.io/ios-app-guide/#organization> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:landingPage <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html> ;
+  dcterms:conformsTo <https://www.w3.org/TR/epub-33/>,
+    <https://readium.org/webpub-manifest/>,
+    <https://specs.opds.io/opds-2.0>,
+    <https://specs.opds.io/opds-1.2> ;
+  dcat:keyword "EPUB 3.3"@en,
+    "OPDS"@en,
+    "Readium"@en,
+    "accessible publication"@en ;
+  dcat:theme <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-language>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-education>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-metadata> ;
+  dcat:distribution <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-1>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-2>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-3>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-4>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-5>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-6>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-7> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-1>
+  a dcat:Distribution ;
+  dcterms:title "bopomofo-37-symbol-reference-en.epub" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/epub+zip> ;
+  dcat:byteSize "9564"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-1-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-1-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "be0b7cdcc34875930343c41c230fc105f00944e1736d658d9d8de0b67b54cff9"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-2>
+  a dcat:Distribution ;
+  dcterms:title "bopomofo-37-symbol-reference-zh-hant.epub" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/epub+zip> ;
+  dcat:byteSize "10287"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-2-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-2-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "0e1f335c5b92aa0f2002a7bf130591005df5e36f76335717925f60a206b8e64b"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-3>
+  a dcat:Distribution ;
+  dcterms:title "manifest.json" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/manifest.json> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/manifest.json> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> ;
+  dcat:byteSize "5327"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-3-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-3-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "09ec312d52ba898b2a960077f4d289532701552eb302d34ee640ad73bdbdac16"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-4>
+  a dcat:Distribution ;
+  dcterms:title "manifest.json" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/zh-Hant/manifest.json> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/zh-Hant/manifest.json> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> ;
+  dcat:byteSize "5425"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-4-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-4-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "e334dadc09d8e45429c7ec74d2cf27df1fad2a75388c5ecc3d2a01805e015827"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-5>
+  a dcat:Distribution ;
+  dcterms:title "bopomofo-37-symbol-reference.json" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/opds/bopomofo-37-symbol-reference.json> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/opds/bopomofo-37-symbol-reference.json> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> ;
+  dcat:byteSize "7313"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-5-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-5-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "eec21c6cb926389c7a2831247806827cc8f0be8b040851974df726cfed416dcb"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-6>
+  a dcat:Distribution ;
+  dcterms:title "bopomofo-37-symbol-reference.xml" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/opds/bopomofo-37-symbol-reference.xml> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/opds/bopomofo-37-symbol-reference.xml> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/atom+xml> ;
+  dcat:byteSize "5920"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-6-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-6-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "abec7a277bdb59eac7d19e5c710c79e9e2daaa77d2ea8ebf25fbdc585321edaa"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-7>
+  a dcat:Distribution ;
+  dcterms:title "metadata.jsonld" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/metadata.jsonld> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/metadata.jsonld> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/ld+json> ;
+  dcat:byteSize "3986"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-7-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-epub-7-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "15a6a277d079e8c6937ace33373427a331be0b14010f9fb8b4503f104752bee4"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-library>
+  a dcat:CatalogRecord ;
+  dcterms:title "Catalog entry for Bopomofo EPUB library catalog records"@en,
+    "注音 EPUB 圖書館書目紀錄目錄紀錄"@zh-Hant ;
+  dcterms:issued "2026-07-11"^^xsd:date ;
+  dcterms:modified "2026-07-11T14:23:16Z"^^xsd:dateTime ;
+  dcterms:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
+  foaf:primaryTopic <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-library> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-library>
+  a dcat:Dataset ;
+  dcterms:title "Bopomofo EPUB library catalog records"@en,
+    "注音 EPUB 圖書館書目紀錄"@zh-Hant ;
+  dcterms:description "Candidate MARCXML, MODS 3.8 and BIBFRAME 2.0 records for the two exact open EPUB editions."@en,
+    "對應兩個開放 EPUB 版本的 MARCXML、MODS 3.8 與 BIBFRAME 2.0 候選書目紀錄。"@zh-Hant ;
+  dcterms:identifier "LUMI-ZHUYIN-DCAT-LIBRARY" ;
+  dcterms:issued "2026-07-11"^^xsd:date ;
+  dcterms:modified "2026-07-11T10:45:50Z"^^xsd:dateTime ;
+  dcterms:publisher <https://alice51849.github.io/ios-app-guide/#organization> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:landingPage <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html> ;
+  dcterms:conformsTo <https://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd>,
+    <https://www.loc.gov/standards/mods/v3/mods-3-8.xsd>,
+    <https://id.loc.gov/ontologies/bibframe.html> ;
+  dcat:keyword "MARCXML"@en,
+    "MODS 3.8"@en,
+    "BIBFRAME 2.0"@en,
+    "library metadata"@en ;
+  dcat:theme <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-language>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-education>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-metadata> ;
+  dcat:distribution <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-library-1>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-library-2>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-library-3>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-library-4>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-library-5>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-library-6> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-library-1>
+  a dcat:Distribution ;
+  dcterms:title "bopomofo-37-symbol-library-catalog-bundle.zip" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-library-catalog-bundle.zip> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-library-catalog-bundle.zip> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/zip> ;
+  dcat:byteSize "7970"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  dcat:packageFormat <https://www.iana.org/assignments/media-types/application/zip> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-library-1-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-library-1-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "c7dc38d04e25ab8283096474dd874d4cbe3a7ae4e0109644d817d971d4aab0ba"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-library-2>
+  a dcat:Distribution ;
+  dcterms:title "bopomofo-37-symbol-reference.marcxml.xml" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.marcxml.xml> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.marcxml.xml> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/marcxml+xml> ;
+  dcat:byteSize "10420"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-library-2-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-library-2-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "b55535fd2e41b6b6965261a6f866a0872229b04a84365eae0c9501a071634068"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-library-3>
+  a dcat:Distribution ;
+  dcterms:title "bopomofo-37-symbol-reference.mods.xml" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.mods.xml> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.mods.xml> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/mods+xml> ;
+  dcat:byteSize "5915"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-library-3-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-library-3-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "3bfb9f4dd858410abca2ddcb18af61efca34f9c0f33aa794dd39b59247f779ab"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-library-4>
+  a dcat:Distribution ;
+  dcterms:title "bopomofo-37-symbol-reference.bibframe.jsonld" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.bibframe.jsonld> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.bibframe.jsonld> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/ld+json> ;
+  dcat:byteSize "12726"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-library-4-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-library-4-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "877cee6863e77af8d95b3c730cfa0b420b60221e384190cbe33fe4af929a99a3"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-library-5>
+  a dcat:Distribution ;
+  dcterms:title "bopomofo-37-symbol-reference.bibframe.ttl" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.bibframe.ttl> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.bibframe.ttl> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
+  dcat:byteSize "9105"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-library-5-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-library-5-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "0a823448b1a0a1c8641fead8cca0a0b56e4523570780f09b9cf8cae3a90c64ab"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-library-6>
+  a dcat:Distribution ;
+  dcterms:title "metadata.jsonld" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/metadata.jsonld> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/metadata.jsonld> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/ld+json> ;
+  dcat:byteSize "4554"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-library-6-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-library-6-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "4fe7c6acb31c2cfea933ecc000f5e0d412e008f115225db359bfb285c6d3e500"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-oer-metadata>
+  a dcat:CatalogRecord ;
+  dcterms:title "Catalog entry for Bopomofo OER repository metadata"@en,
+    "注音 OER 典藏庫 metadata目錄紀錄"@zh-Hant ;
+  dcterms:issued "2026-07-11"^^xsd:date ;
+  dcterms:modified "2026-07-11T14:23:16Z"^^xsd:dateTime ;
+  dcterms:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
+  foaf:primaryTopic <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-oer-metadata> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-oer-metadata>
+  a dcat:Dataset ;
+  dcterms:title "Bopomofo OER repository metadata"@en,
+    "注音 OER 典藏庫 metadata"@zh-Hant ;
+  dcterms:description "Standalone OAI-DC records and DCMI Terms and LRMI JSON-LD for the two exact open EPUB editions."@en,
+    "對應兩個開放 EPUB 版本的獨立 OAI-DC、DCMI Terms 與 LRMI JSON-LD metadata。"@zh-Hant ;
+  dcterms:identifier "LUMI-ZHUYIN-DCAT-OER-METADATA" ;
+  dcterms:issued "2026-07-11"^^xsd:date ;
+  dcterms:modified "2026-07-11T13:00:48Z"^^xsd:dateTime ;
+  dcterms:publisher <https://alice51849.github.io/ios-app-guide/#organization> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:landingPage <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html> ;
+  dcterms:conformsTo <https://www.openarchives.org/OAI/2.0/oai_dc.xsd>,
+    <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/>,
+    <https://www.dublincore.org/specifications/lrmi/lrmi_terms/> ;
+  dcat:keyword "OAI-DC"@en,
+    "DCMI Terms"@en,
+    "LRMI"@en,
+    "OER metadata"@en ;
+  dcat:theme <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-language>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-education>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-metadata> ;
+  dcat:distribution <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-oer-metadata-1>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-oer-metadata-2>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-oer-metadata-3>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-oer-metadata-4>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-oer-metadata-5>,
+    <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-oer-metadata-6> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-oer-metadata-1>
+  a dcat:Distribution ;
+  dcterms:title "bopomofo-37-symbol-oer-metadata-bundle.zip" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-oer-metadata-bundle.zip> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-oer-metadata-bundle.zip> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/zip> ;
+  dcat:byteSize "9842"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  dcat:packageFormat <https://www.iana.org/assignments/media-types/application/zip> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-oer-metadata-1-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-oer-metadata-1-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "674a6afbd46902f7c722607ba60ba020b493d1a81cadefbf86fc2e3a3a0ddd6a"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-oer-metadata-2>
+  a dcat:Distribution ;
+  dcterms:title "bopomofo-37-symbol-reference-en.oai-dc.xml" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference-en.oai-dc.xml> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference-en.oai-dc.xml> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/xml> ;
+  dcat:byteSize "2357"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-oer-metadata-2-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-oer-metadata-2-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "afdf7a343c448f1112a65eefca2215fc82b840dbbdb7acad408e14c82004d9b2"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-oer-metadata-3>
+  a dcat:Distribution ;
+  dcterms:title "bopomofo-37-symbol-reference-zh-hant.oai-dc.xml" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference-zh-hant.oai-dc.xml> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference-zh-hant.oai-dc.xml> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/xml> ;
+  dcat:byteSize "2377"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-oer-metadata-3-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-oer-metadata-3-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "c05fb23988619b22f44b6515ce3ee48a9b72573216f8d722b31059bf1a1608c2"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-oer-metadata-4>
+  a dcat:Distribution ;
+  dcterms:title "bopomofo-37-symbol-reference.dcmi-terms.jsonld" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.dcmi-terms.jsonld> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.dcmi-terms.jsonld> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/ld+json> ;
+  dcat:byteSize "13687"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-oer-metadata-4-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-oer-metadata-4-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "fa0c3c6d5c0f9fb1482a7cef67cef1200c92b80ab1d9a52dbd0fbb4af36517ca"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-oer-metadata-5>
+  a dcat:Distribution ;
+  dcterms:title "bopomofo-37-symbol-reference.lrmi.jsonld" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.lrmi.jsonld> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.lrmi.jsonld> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/ld+json> ;
+  dcat:byteSize "18898"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-oer-metadata-5-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-oer-metadata-5-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "4e3f312f69e448481f5825ad213b6710a2767b807c209f0e47101833e30aa23c"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-oer-metadata-6>
+  a dcat:Distribution ;
+  dcterms:title "metadata.jsonld" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:accessURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/metadata.jsonld> ;
+  dcat:downloadURL <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/metadata.jsonld> ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/application/ld+json> ;
+  dcat:byteSize "5433"^^xsd:nonNegativeInteger ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>,
+    <http://id.loc.gov/vocabulary/iso639-1/zh> ;
+  spdx:checksum <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-oer-metadata-6-sha256> .
+
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-oer-metadata-6-sha256>
+  a spdx:Checksum ;
+  spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+  spdx:checksumValue "b380ea52a6a36023ccb80cce170fb72d9ffc6ccfff3f41db08924a28cefa5b17"^^xsd:hexBinary .
+
+<https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols#service>
+  a dcat:DataService ;
+  dcterms:title "Bopomofo symbols static JSON API"@en,
+    "注音符號靜態 JSON API"@zh-Hant ;
+  dcterms:description "Versioned read-only JSON endpoints for all 37 Bopomofo symbols."@en,
+    "完整 37 個注音符號的版本化唯讀 JSON endpoints。"@zh-Hant ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcterms:conformsTo <https://spec.openapis.org/oas/v3.1.1> ;
+  dcat:endpointURL <https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.json> ;
+  dcat:endpointDescription <https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/openapi.json> ;
+  dcat:landingPage <https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/> ;
+  dcat:servesDataset <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-symbols> .

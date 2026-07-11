@@ -207,6 +207,7 @@
 - [passport photo sizes](https://alice51849.github.io/ios-app-guide/data/passport-photo-sizes.html) · JSON: https://alice51849.github.io/ios-app-guide/data/passport-photo-sizes.json
 - [resume cv conventions by country](https://alice51849.github.io/ios-app-guide/data/resume-cv-conventions-by-country.html) · JSON: https://alice51849.github.io/ios-app-guide/data/resume-cv-conventions-by-country.json
 - [toeic cefr score](https://alice51849.github.io/ios-app-guide/data/toeic-cefr-score.html) · JSON: https://alice51849.github.io/ios-app-guide/data/toeic-cefr-score.json
+- [zhuyin bopomofo dcat3 open data catalog](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html)
 - [zhuyin bopomofo epub reference](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html)
 - [zhuyin bopomofo library catalog records](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html)
 - [zhuyin bopomofo lms question bank](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html)
@@ -294,6 +295,14 @@
 - BIBFRAME 2.0 JSON-LD: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.bibframe.jsonld
 - BIBFRAME 2.0 Turtle: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.bibframe.ttl
 - Checksums and metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/metadata.jsonld
+
+## Bopomofo DCAT 3 open-data catalog
+- English guide: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html
+- Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-dcat3-open-data-catalog.html
+- Complete ZIP bundle: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog-dcat3-bundle.zip
+- DCAT 3 JSON-LD: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.jsonld
+- DCAT 3 Turtle: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.ttl
+- Checksums and metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/metadata.jsonld
 
 ## Bopomofo OER repository metadata (DCMI + LRMI)
 - English guide: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html

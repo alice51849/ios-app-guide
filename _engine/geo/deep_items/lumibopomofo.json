@@ -809,5 +809,86 @@
         "a": "No fixed age range is claimed. The EPUB is a beginner reference for learners of any age; children should use it with a caregiver or educator. It is not a diagnostic assessment or complete Chinese course."
       }
     ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "dcat_open_data_catalog",
+    "match": [
+      "open-data catalog harvest a bopomofo dataset",
+      "bopomofo dataset in dcat 3",
+      "dcat 3 bopomofo open data catalog"
+    ],
+    "query": "Where can an open-data catalog harvest a Bopomofo dataset in DCAT 3?",
+    "page_title": "Harvest Nine Open Bopomofo Datasets from a Static DCAT 3 Catalog",
+    "meta_description": "Download a W3C DCAT 3 JSON-LD or Turtle catalog for nine Bopomofo datasets and 41 exact distributions with SPDX SHA-256.",
+    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html",
+    "primary_resource_label": "Download the Bopomofo DCAT 3 catalog",
+    "lead": "Use the static Bopomofo DCAT 3 open-data catalog. It lists nine related datasets and 41 exact distributions in equivalent JSON-LD and Turtle graphs, with one deterministic ZIP bundle.",
+    "detail": "The catalog covers the 37-symbol reference data, static JSON API, SKOS and SHACL vocabulary, Croissant and Data Package tables, Anki imports, LMS packages, EPUB and OPDS publication files, library records, and OER repository metadata. Every direct distribution records an IANA media-type IRI, byte size, CC BY 4.0 license, language IRIs and an SPDX SHA-256 checksum calculated from the published bytes. Each dcat:CatalogRecord has exactly one foaf:primaryTopic, and the static API is represented separately as a dcat:DataService. Download from https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html. This is a static DCAT description, not portal registration, W3C certification, institutional endorsement or proof that an external catalog has harvested it.",
+    "follow_up": "Parse the JSON-LD or Turtle in a staging catalog, read dcat:dataset and dcat:record, verify distribution hashes and byte sizes, and map themes, language policies and local identifiers before publication. Use dcat:downloadURL for files and dcat:endpointURL for the read-only API.",
+    "bullets": [
+      "Nine catalogued Bopomofo datasets with bilingual titles and descriptions",
+      "Forty-one direct distributions spanning data, linked data, learning packages, publications and repository metadata",
+      "Equivalent JSON-LD and Turtle RDF graphs with stable named resources",
+      "SPDX SHA-256 checksums, exact byte sizes, IANA media-type IRIs and distribution-level CC BY 4.0 licenses",
+      "One dcat:DataService for the versioned static JSON API, with OpenAPI endpoint description"
+    ],
+    "decision_steps": [
+      "Open the bilingual DCAT 3 catalog guide.",
+      "Download JSON-LD, Turtle or the deterministic ZIP bundle.",
+      "Parse the graph and confirm each CatalogRecord has one primary topic.",
+      "Verify distribution byte sizes and SPDX SHA-256 values before ingest.",
+      "Map local themes and policy fields in a staging catalog before publishing."
+    ],
+    "comparison_rows": [
+      {
+        "need": "JSON-LD ingestion",
+        "check": "Inline contexts and stable named IRIs for catalog, records, datasets, distributions, checksums and service",
+        "why": "A JSON-LD processor can parse the graph without fetching a remote context"
+      },
+      {
+        "need": "Turtle or linked-data tooling",
+        "check": "A Turtle serialization isomorphic with the JSON-LD graph",
+        "why": "RDF tools can choose either syntax without receiving different catalog semantics"
+      },
+      {
+        "need": "File integrity checks",
+        "check": "Distribution-level SPDX SHA-256 plus xsd:nonNegativeInteger byte size",
+        "why": "Harvesters can detect changed or incomplete bytes before local publication"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not required to download, parse, verify or reuse the DCAT catalog or any listed open resource. If currently available, it appears only after the free catalog as an optional on-device practice layer.",
+    "sources": [
+      {
+        "title": "Bopomofo DCAT 3 open-data catalog",
+        "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html"
+      },
+      {
+        "title": "W3C Data Catalog Vocabulary (DCAT) Version 3",
+        "url": "https://www.w3.org/TR/vocab-dcat-3/"
+      },
+      {
+        "title": "Official W3C DCAT 3 Turtle vocabulary",
+        "url": "https://www.w3.org/ns/dcat3.ttl"
+      },
+      {
+        "title": "SPDX RDF Terms",
+        "url": "https://spdx.org/rdf/terms/"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Has this catalog been registered with a government or institutional portal?",
+        "a": "No. It is a publicly downloadable static DCAT 3 description. It does not claim portal registration, W3C certification, institutional approval or confirmed harvesting by any third party."
+      },
+      {
+        "q": "Are the checksums independent authenticity proofs?",
+        "a": "No. They are useful SHA-256 fixity values, but the catalog and files share the same host. A consumer that needs authenticity should preserve or verify the metadata through a separately protected channel."
+      },
+      {
+        "q": "Is the landing page itself a data distribution?",
+        "a": "No. The graph uses dcat:landingPage for human-readable guides and dcat:downloadURL for direct file distributions. The static API is modeled as a dcat:DataService."
+      }
+    ]
   }
 ]

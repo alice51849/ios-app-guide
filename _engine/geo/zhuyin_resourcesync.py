@@ -67,6 +67,7 @@ CONTENT_PATTERNS = (
     "data/packages/zhuyin-bopomofo-epub/**/*",
     "data/packages/zhuyin-bopomofo-library/**/*",
     "data/packages/zhuyin-bopomofo-oer/**/*",
+    "data/packages/zhuyin-bopomofo-dcat3/**/*",
     "publications/bopomofo-37-symbol-reference/**/*",
     "opds/bopomofo-37-symbol-reference.*",
     "api/v1/bopomofo-symbols/**/*",
@@ -137,6 +138,19 @@ REQUIRED_PATHS = (
     / "zhuyin-bopomofo-oer"
     / "bopomofo-37-symbol-oer-metadata-bundle.zip",
     Path("data") / "packages" / "zhuyin-bopomofo-oer" / "metadata.jsonld",
+    Path("data")
+    / "packages"
+    / "zhuyin-bopomofo-dcat3"
+    / "bopomofo-open-data-catalog.dcat.jsonld",
+    Path("data")
+    / "packages"
+    / "zhuyin-bopomofo-dcat3"
+    / "bopomofo-open-data-catalog.dcat.ttl",
+    Path("data")
+    / "packages"
+    / "zhuyin-bopomofo-dcat3"
+    / "bopomofo-open-data-catalog-dcat3-bundle.zip",
+    Path("data") / "packages" / "zhuyin-bopomofo-dcat3" / "metadata.jsonld",
 )
 CARD_START = "<!-- resourcesync-card:start -->"
 CARD_END = "<!-- resourcesync-card:end -->"
@@ -182,7 +196,7 @@ COPY = {
             (
                 "Portable packages",
                 "Croissant, Data Package, LMS imports, accessible EPUB editions "
-                "and OER repository metadata",
+                "and OER repository metadata, plus the DCAT 3 catalog",
             ),
             ("Static API", "OpenAPI plus all 37 versioned symbol responses"),
             ("Open teaching tools", "Bilingual guides, decks and printable activities"),
@@ -250,7 +264,7 @@ COPY = {
             (
                 "可攜套件",
                 "Croissant、Data Package、LMS 匯入檔、無障礙 EPUB 版本與 "
-                "OER 典藏庫 metadata",
+                "OER 典藏庫 metadata、DCAT 3 目錄",
             ),
             ("靜態 API", "OpenAPI 與完整 37 個版本化符號回應"),
             ("開放教學工具", "雙語指南、牌組與可列印活動"),
@@ -290,13 +304,18 @@ class Resource:
 
 
 def _media_type(path: Path) -> str:
+    if (
+        path.parent.name == "opds"
+        and path.name == "bopomofo-37-symbol-reference.xml"
+    ):
+        return "application/atom+xml"
     suffix = path.suffix.lower()
     overrides = {
         ".csv": "text/csv",
         ".epub": "application/epub+zip",
         ".json": "application/json",
         ".jsonld": "application/ld+json",
-        ".jsonl": "application/x-ndjson",
+        ".jsonl": "text/plain",
         ".nt": "application/n-triples",
         ".tsv": "text/tab-separated-values",
         ".ttl": "text/turtle",

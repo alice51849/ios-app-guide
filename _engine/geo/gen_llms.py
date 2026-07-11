@@ -49,6 +49,7 @@ ZHUYIN_LMS_BANK = "zhuyin-bopomofo-lms-question-bank"
 ZHUYIN_EPUB = "zhuyin-bopomofo-epub-reference"
 ZHUYIN_LIBRARY_CATALOG = "zhuyin-bopomofo-library-catalog-records"
 ZHUYIN_OER_METADATA = "zhuyin-bopomofo-oer-repository-metadata"
+ZHUYIN_DCAT_CATALOG = "zhuyin-bopomofo-dcat3-open-data-catalog"
 RESOURCE_SYNC_SOURCE = "https://alice51849.github.io/.well-known/resourcesync"
 
 AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "anthropic-ai",
@@ -341,6 +342,25 @@ def build_llms(comp_map, live_keys):
         os.path.join(
             DATA_DIR,
             "packages",
+            "zhuyin-bopomofo-dcat3",
+            "metadata.jsonld",
+        )
+    ):
+        package = f"{SITE}/data/packages/zhuyin-bopomofo-dcat3"
+        lines += [
+            "",
+            "## Bopomofo DCAT 3 open-data catalog",
+            f"- English guide: {SITE}/data/{ZHUYIN_DCAT_CATALOG}.html",
+            f"- Traditional Chinese guide: {SITE}/zh-Hant/data/{ZHUYIN_DCAT_CATALOG}.html",
+            f"- Complete ZIP bundle: {package}/bopomofo-open-data-catalog-dcat3-bundle.zip",
+            f"- DCAT 3 JSON-LD: {package}/bopomofo-open-data-catalog.dcat.jsonld",
+            f"- DCAT 3 Turtle: {package}/bopomofo-open-data-catalog.dcat.ttl",
+            f"- Checksums and metadata: {package}/metadata.jsonld",
+        ]
+    if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
             "zhuyin-bopomofo-oer",
             "metadata.jsonld",
         )
@@ -447,6 +467,10 @@ def build_llms_full(comp_map, live_keys):
         (
             "Bopomofo OER repository metadata",
             f"data/{ZHUYIN_OER_METADATA}.html",
+        ),
+        (
+            "Bopomofo DCAT 3 open-data catalog",
+            f"data/{ZHUYIN_DCAT_CATALOG}.html",
         ),
         ("Free tools", "tools/index.html"),
     ]
@@ -701,6 +725,25 @@ def build_llms_full(comp_map, live_keys):
         os.path.join(
             DATA_DIR,
             "packages",
+            "zhuyin-bopomofo-dcat3",
+            "metadata.jsonld",
+        )
+    ):
+        package = f"{SITE}/data/packages/zhuyin-bopomofo-dcat3"
+        lines += [
+            "",
+            "## Bopomofo DCAT 3 open-data catalog",
+            f"- [English guide]({SITE}/data/{ZHUYIN_DCAT_CATALOG}.html)",
+            f"- [Traditional Chinese guide]({SITE}/zh-Hant/data/{ZHUYIN_DCAT_CATALOG}.html)",
+            f"  - Complete ZIP bundle: {package}/bopomofo-open-data-catalog-dcat3-bundle.zip",
+            f"  - DCAT 3 JSON-LD: {package}/bopomofo-open-data-catalog.dcat.jsonld",
+            f"  - DCAT 3 Turtle: {package}/bopomofo-open-data-catalog.dcat.ttl",
+            f"  - Checksums and metadata: {package}/metadata.jsonld",
+        ]
+    if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
             "zhuyin-bopomofo-oer",
             "metadata.jsonld",
         )
@@ -761,6 +804,7 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_epub.xml",
         "sitemap_library_catalog.xml",
         "sitemap_oer_metadata.xml",
+        "sitemap_dcat.xml",
         "sitemap_resourcesync.xml",
         "resourcesync/resourcelist.xml",
     ):
@@ -797,6 +841,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_epub.xml",
             f"Sitemap: {SITE}/sitemap_library_catalog.xml",
             f"Sitemap: {SITE}/sitemap_oer_metadata.xml",
+            f"Sitemap: {SITE}/sitemap_dcat.xml",
             f"Sitemap: {SITE}/sitemap_resourcesync.xml",
             f"Sitemap: {SITE}/resourcesync/resourcelist.xml",
             f"Sitemap: {SITE}/sitemap_index.xml", ""]
@@ -818,6 +863,7 @@ def build_sitemap_index():
         "sitemap_epub.xml",
         "sitemap_library_catalog.xml",
         "sitemap_oer_metadata.xml",
+        "sitemap_dcat.xml",
         "sitemap_resourcesync.xml",
         "resourcesync/resourcelist.xml",
     ])

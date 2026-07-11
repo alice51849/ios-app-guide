@@ -58,6 +58,7 @@ import zhuyin_grade1_guide
 import zhuyin_grade1_summer_calendar
 import zhuyin_anki_deck
 import zhuyin_croissant_dataset
+import zhuyin_dcat_catalog
 import zhuyin_epub_opds
 import zhuyin_frictionless_package
 import zhuyin_heritage_lesson_plan
@@ -3702,34 +3703,608 @@ class GeneratorTests(unittest.TestCase):
                 set(lrmi_graph.predicates()),
             )
 
-    def _seed_zhuyin_resourcesync_pages(self, pages):
+    def _seed_zhuyin_dcat_pages(self, pages):
         data = pages / "data"
+        tools = pages / "tools"
         data.mkdir(parents=True)
+        tools.mkdir()
+        with mock.patch.object(
+            gen_data_hub,
+            "PAGES",
+            str(pages),
+        ), mock.patch.object(
+            gen_data_hub,
+            "DATA",
+            str(data),
+        ):
+            gen_data_hub.build_zhuyin_page()
         (data / "index.html").write_text(
-            '<main><p class="foot">Footer</p></main>',
+            '<script type="application/ld+json">'
+            '{"@context":"https://schema.org","@type":"DataCatalog",'
+            '"dataset":[]}</script><main><a class="item" href="'
+            f'{zhuyin_skos_vocabulary.SOURCE_PAGE}">'
+            '<h2>Source dataset</h2></a>'
+            '<p class="foot">Footer</p></main>',
             encoding="utf-8",
         )
-        for relative in zhuyin_resourcesync.REQUIRED_PATHS[:4]:
-            path = pages / relative
-            path.parent.mkdir(parents=True, exist_ok=True)
-            payload = {"fixture": True}
-            if relative.name.endswith(".croissant.jsonld"):
-                payload["dateModified"] = "2026-07-11"
-            path.write_text(
-                json.dumps(payload) + "\n",
-                encoding="utf-8",
-            )
-        tool = pages / "tools" / "zhuyin-open-practice.html"
-        tool.parent.mkdir(parents=True)
-        tool.write_text(
-            '<meta name="content-modified" content="2026-07-10">fixture',
+        (tools / "index.html").write_text(
+            '<main><section class="wrap grid"></section></main>',
             encoding="utf-8",
         )
+        zhuyin_anki_deck.build(pages, app_public=False)
+        zhuyin_skos_vocabulary.build(pages, app_public=False)
+        zhuyin_croissant_dataset.build(pages, app_public=False)
+        zhuyin_frictionless_package.build(pages, app_public=False)
         zhuyin_static_api.build(pages, app_public=False)
         zhuyin_lms_assessment_bank.build(pages, app_public=False)
         zhuyin_epub_opds.build(pages, app_public=False)
         zhuyin_library_catalog.build(pages, app_public=False)
         zhuyin_oer_metadata.build(pages, app_public=False)
+
+    def test_zhuyin_dcat_catalog_is_complete_verifiable_and_deterministic(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            self._seed_zhuyin_dcat_pages(pages)
+            urls = zhuyin_dcat_catalog.build(pages, app_public=False)
+            self.assertEqual(7, len(urls))
+
+            package_dir = pages / zhuyin_dcat_catalog.PACKAGE_PATH
+            expected = tuple(
+                package_dir / filename
+                for filename in zhuyin_dcat_catalog.DOWNLOAD_FILENAMES
+            ) + (
+                pages / zhuyin_dcat_catalog.LANDING_PATH,
+                pages / zhuyin_dcat_catalog.ZH_LANDING_PATH,
+                pages / zhuyin_dcat_catalog.SITEMAP_PATH,
+            )
+            self.assertTrue(all(path.exists() for path in expected))
+
+            metadata = json.loads(
+                (
+                    package_dir / zhuyin_dcat_catalog.METADATA_FILENAME
+                ).read_text(encoding="utf-8")
+            )
+            self.assertEqual(9, metadata["numberOfItems"])
+            self.assertEqual(9, len(metadata["dataset"]))
+            self.assertEqual(3, len(metadata["distribution"]))
+            self.assertEqual(
+                zhuyin_dcat_catalog.DCAT_SPEC,
+                metadata["conformsTo"],
+            )
+            for distribution in metadata["distribution"]:
+                filename = Path(distribution["contentUrl"]).name
+                local = package_dir / filename
+                self.assertEqual(
+                    local.stat().st_size,
+                    int(distribution["contentSize"].split()[0]),
+                )
+                self.assertEqual(
+                    hashlib.sha256(local.read_bytes()).hexdigest(),
+                    distribution["sha256"],
+                )
+
+            raw_parts = [
+                (package_dir / filename).read_bytes()
+                for filename in (
+                    *zhuyin_dcat_catalog.PRIMARY_FILENAMES,
+                    zhuyin_dcat_catalog.METADATA_FILENAME,
+                )
+            ]
+            with zipfile.ZipFile(
+                package_dir / zhuyin_dcat_catalog.BUNDLE_FILENAME
+            ) as archive:
+                self.assertEqual(
+                    {
+                        *zhuyin_dcat_catalog.PRIMARY_FILENAMES,
+                        "README.txt",
+                        "checksums.sha256",
+                    },
+                    set(archive.namelist()),
+                )
+                self.assertEqual(
+                    sorted(archive.namelist()),
+                    archive.namelist(),
+                )
+                stamp = zhuyin_dcat_catalog._timestamp(
+                    metadata["dateModified"]
+                )
+                expected_date = (
+                    max(1980, stamp.year),
+                    stamp.month,
+                    stamp.day,
+                    stamp.hour,
+                    stamp.minute,
+                    stamp.second,
+                )
+                for info in archive.infolist():
+                    self.assertEqual(expected_date, info.date_time)
+                    self.assertEqual(0o100644, info.external_attr >> 16)
+                    raw_parts.append(archive.read(info.filename))
+                for filename in zhuyin_dcat_catalog.PRIMARY_FILENAMES:
+                    self.assertEqual(
+                        (package_dir / filename).read_bytes(),
+                        archive.read(filename),
+                    )
+
+            raw = b"\n".join(raw_parts)
+            for forbidden in (
+                b"apps.apple.com",
+                zhuyin_dcat_catalog.APP_ID.encode("ascii"),
+                zhuyin_dcat_catalog.APP_NAME.encode("utf-8"),
+                b"SoftwareApplication",
+            ):
+                self.assertNotIn(forbidden, raw)
+
+            english = (
+                pages / zhuyin_dcat_catalog.LANDING_PATH
+            ).read_text(encoding="utf-8")
+            traditional = (
+                pages / zhuyin_dcat_catalog.ZH_LANDING_PATH
+            ).read_text(encoding="utf-8")
+            for landing in (english, traditional):
+                self.assertIn("DCAT 3", landing)
+                self.assertIn("SPDX", landing)
+                self.assertIn("41", landing)
+                self.assertNotIn("apps.apple.com", landing)
+                self.assertNotIn('"SoftwareApplication"', landing)
+
+            package_info = {
+                filename: zhuyin_dcat_catalog._artifact(
+                    filename,
+                    (package_dir / filename).read_bytes(),
+                )
+                for filename in zhuyin_dcat_catalog.DOWNLOAD_FILENAMES
+            }
+            public = zhuyin_dcat_catalog.render_landing(
+                "en",
+                package_info,
+                metadata["dateModified"],
+                zhuyin_dcat_catalog.INITIAL_DATE,
+                True,
+            )
+            self.assertIn("apps.apple.com", public)
+            self.assertIn('"SoftwareApplication"', public)
+
+            index = (pages / "data" / "index.html").read_text(
+                encoding="utf-8"
+            )
+            self.assertEqual(
+                1,
+                index.count(zhuyin_dcat_catalog.CARD_START),
+            )
+            self.assertIn(zhuyin_dcat_catalog.LANDING_URL, index)
+            sitemap = (
+                pages / zhuyin_dcat_catalog.SITEMAP_PATH
+            ).read_text(encoding="utf-8")
+            for filename in zhuyin_dcat_catalog.DOWNLOAD_FILENAMES:
+                self.assertIn(
+                    f"{zhuyin_dcat_catalog.PACKAGE_URL}/{filename}",
+                    sitemap,
+                )
+
+            with mock.patch.object(
+                gen_llms,
+                "PAGES",
+                str(pages),
+            ), mock.patch.object(
+                gen_llms,
+                "DATA_DIR",
+                str(pages / "data"),
+            ):
+                llms = gen_llms.build_llms({}, set())
+                full = gen_llms.build_llms_full({}, set())
+                robots = gen_llms.build_robots()
+                sitemap_index = gen_llms.build_sitemap_index()
+            for content in (llms, full):
+                self.assertIn("Bopomofo DCAT 3 open-data catalog", content)
+                self.assertIn(
+                    zhuyin_dcat_catalog.JSONLD_FILENAME,
+                    content,
+                )
+            for content in (robots, sitemap_index):
+                self.assertIn("sitemap_dcat.xml", content)
+
+            translations = json.loads(
+                (
+                    Path(GEO) / "i18n_trans" / "zh-Hant.json"
+                ).read_text(encoding="utf-8")
+            )
+            detail_source = next(
+                source
+                for source in translations
+                if source.startswith(
+                    "The catalog covers the 37-symbol reference data"
+                )
+            )
+            detail_translation = translations[detail_source]
+            self.assertIn(
+                zhuyin_dcat_catalog.ZH_LANDING_URL,
+                detail_translation,
+            )
+            self.assertNotIn(
+                zhuyin_dcat_catalog.LANDING_URL + " 下載",
+                detail_translation,
+            )
+
+            mtimes = {
+                path: path.stat().st_mtime_ns
+                for path in (*expected, pages / "data" / "index.html")
+            }
+            zhuyin_dcat_catalog.build(pages, app_public=False)
+            self.assertEqual(
+                mtimes,
+                {
+                    path: path.stat().st_mtime_ns
+                    for path in (*expected, pages / "data" / "index.html")
+                },
+            )
+
+    @unittest.skipUnless(
+        importlib.util.find_spec("rdflib"),
+        "RDF validation dependency is installed in CI",
+    )
+    def test_zhuyin_dcat_catalog_matches_official_vocabulary_and_files(self):
+        from rdflib import Graph, RDF, URIRef, XSD
+        from rdflib.compare import isomorphic
+
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            self._seed_zhuyin_dcat_pages(pages)
+            zhuyin_dcat_catalog.build(pages, app_public=False)
+            package = pages / zhuyin_dcat_catalog.PACKAGE_PATH
+
+            json_graph = Graph().parse(
+                package / zhuyin_dcat_catalog.JSONLD_FILENAME,
+                format="json-ld",
+            )
+            turtle_graph = Graph().parse(
+                package / zhuyin_dcat_catalog.TURTLE_FILENAME,
+                format="turtle",
+            )
+            self.assertTrue(isomorphic(json_graph, turtle_graph))
+            self.assertEqual(891, len(json_graph))
+
+            dcat = zhuyin_dcat_catalog.DCAT
+            dcterms = zhuyin_dcat_catalog.DCTERMS
+            foaf = zhuyin_dcat_catalog.FOAF
+            spdx = zhuyin_dcat_catalog.SPDX
+            catalogs = set(
+                json_graph.subjects(RDF.type, URIRef(dcat + "Catalog"))
+            )
+            records = set(
+                json_graph.subjects(
+                    RDF.type,
+                    URIRef(dcat + "CatalogRecord"),
+                )
+            )
+            datasets = set(
+                json_graph.subjects(RDF.type, URIRef(dcat + "Dataset"))
+            )
+            distributions = set(
+                json_graph.subjects(
+                    RDF.type,
+                    URIRef(dcat + "Distribution"),
+                )
+            )
+            services = set(
+                json_graph.subjects(
+                    RDF.type,
+                    URIRef(dcat + "DataService"),
+                )
+            )
+            self.assertEqual(
+                {URIRef(zhuyin_dcat_catalog.CATALOG_ID)},
+                catalogs,
+            )
+            self.assertEqual(9, len(records))
+            self.assertEqual(9, len(datasets))
+            self.assertEqual(41, len(distributions))
+            self.assertEqual(
+                {URIRef(zhuyin_dcat_catalog.API_SERVICE)},
+                services,
+            )
+
+            catalog = next(iter(catalogs))
+            self.assertEqual(
+                datasets,
+                set(json_graph.objects(catalog, URIRef(dcat + "dataset"))),
+            )
+            self.assertEqual(
+                records,
+                set(json_graph.objects(catalog, URIRef(dcat + "record"))),
+            )
+            catalog_modified = list(
+                json_graph.objects(
+                    catalog,
+                    URIRef(dcterms + "modified"),
+                )
+            )
+            self.assertEqual(1, len(catalog_modified))
+            for record in records:
+                primary_topics = list(
+                    json_graph.objects(
+                        record,
+                        URIRef(foaf + "primaryTopic"),
+                    )
+                )
+                self.assertEqual(1, len(primary_topics))
+                self.assertIn(primary_topics[0], datasets)
+                self.assertEqual(
+                    catalog_modified,
+                    list(
+                        json_graph.objects(
+                            record,
+                            URIRef(dcterms + "modified"),
+                        )
+                    ),
+                )
+            self.assertTrue(
+                any(
+                    catalog_modified[0]
+                    not in set(
+                        json_graph.objects(
+                            dataset,
+                            URIRef(dcterms + "modified"),
+                        )
+                    )
+                    for dataset in datasets
+                )
+            )
+            epub_dataset = URIRef(
+                f"{zhuyin_dcat_catalog.LANDING_URL}#dataset-epub"
+            )
+            epub_standards = set(
+                json_graph.objects(
+                    epub_dataset,
+                    URIRef(dcterms + "conformsTo"),
+                )
+            )
+            self.assertTrue(
+                {
+                    URIRef(zhuyin_dcat_catalog.WEBPUB_SPEC),
+                    URIRef(zhuyin_dcat_catalog.OPDS2_SPEC),
+                    URIRef(zhuyin_dcat_catalog.OPDS1_SPEC),
+                }
+                <= epub_standards
+            )
+
+            checksum_nodes = set()
+            unregistered_media_types = {
+                "https://www.iana.org/assignments/media-types/application/jsonl",
+                "https://www.iana.org/assignments/media-types/application/schema+json",
+                "https://www.iana.org/assignments/media-types/application/webpub+json",
+                "https://www.iana.org/assignments/media-types/application/opds+json",
+            }
+            site_prefix = f"{zhuyin_dcat_catalog.SITE}/"
+            for distribution in distributions:
+                download_urls = list(
+                    json_graph.objects(
+                        distribution,
+                        URIRef(dcat + "downloadURL"),
+                    )
+                )
+                access_urls = list(
+                    json_graph.objects(
+                        distribution,
+                        URIRef(dcat + "accessURL"),
+                    )
+                )
+                media_types = list(
+                    json_graph.objects(
+                        distribution,
+                        URIRef(dcat + "mediaType"),
+                    )
+                )
+                byte_sizes = list(
+                    json_graph.objects(
+                        distribution,
+                        URIRef(dcat + "byteSize"),
+                    )
+                )
+                checksums = list(
+                    json_graph.objects(
+                        distribution,
+                        URIRef(spdx + "checksum"),
+                    )
+                )
+                self.assertEqual(1, len(download_urls))
+                self.assertEqual(download_urls, access_urls)
+                self.assertEqual(1, len(media_types))
+                self.assertTrue(
+                    str(media_types[0]).startswith(
+                        "https://www.iana.org/assignments/media-types/"
+                    )
+                )
+                self.assertNotIn(
+                    str(media_types[0]),
+                    unregistered_media_types,
+                )
+                self.assertEqual(1, len(byte_sizes))
+                self.assertEqual(XSD.nonNegativeInteger, byte_sizes[0].datatype)
+                self.assertEqual(
+                    [URIRef(zhuyin_dcat_catalog.LICENSE)],
+                    list(
+                        json_graph.objects(
+                            distribution,
+                            URIRef(dcterms + "license"),
+                        )
+                    ),
+                )
+                self.assertEqual(1, len(checksums))
+                checksum = checksums[0]
+                checksum_nodes.add(checksum)
+                self.assertIn(
+                    (checksum, RDF.type, URIRef(spdx + "Checksum")),
+                    json_graph,
+                )
+                self.assertEqual(
+                    [URIRef(spdx + "checksumAlgorithm_sha256")],
+                    list(
+                        json_graph.objects(
+                            checksum,
+                            URIRef(spdx + "algorithm"),
+                        )
+                    ),
+                )
+                values = list(
+                    json_graph.objects(
+                        checksum,
+                        URIRef(spdx + "checksumValue"),
+                    )
+                )
+                self.assertEqual(1, len(values))
+                self.assertEqual(XSD.hexBinary, values[0].datatype)
+
+                url = str(download_urls[0])
+                self.assertTrue(url.startswith(site_prefix))
+                if url.endswith("/opds/bopomofo-37-symbol-reference.xml"):
+                    self.assertEqual(
+                        [
+                            URIRef(
+                                "https://www.iana.org/assignments/"
+                                "media-types/application/atom+xml"
+                            )
+                        ],
+                        media_types,
+                    )
+                elif url.endswith(
+                    "/data/zhuyin-bopomofo-ml-dataset.jsonl"
+                ):
+                    self.assertEqual(
+                        [
+                            URIRef(
+                                "https://www.iana.org/assignments/"
+                                "media-types/text/plain"
+                            )
+                        ],
+                        media_types,
+                    )
+                elif (
+                    url.endswith("/table-schema.json")
+                    or "/publications/bopomofo-37-symbol-reference/"
+                    in url
+                    and url.endswith("/manifest.json")
+                    or url.endswith(
+                        "/opds/bopomofo-37-symbol-reference.json"
+                    )
+                ):
+                    self.assertEqual(
+                        [
+                            URIRef(
+                                "https://www.iana.org/assignments/"
+                                "media-types/application/json"
+                            )
+                        ],
+                        media_types,
+                    )
+                local = pages / url.removeprefix(site_prefix)
+                self.assertTrue(local.is_file(), url)
+                content = local.read_bytes()
+                self.assertEqual(len(content), int(str(byte_sizes[0])))
+                self.assertEqual(
+                    hashlib.sha256(content).hexdigest(),
+                    str(values[0]),
+                )
+            self.assertEqual(41, len(checksum_nodes))
+
+            service = next(iter(services))
+            self.assertEqual(
+                [URIRef(zhuyin_dcat_catalog.API_INDEX)],
+                list(
+                    json_graph.objects(
+                        service,
+                        URIRef(dcat + "endpointURL"),
+                    )
+                ),
+            )
+            self.assertEqual(
+                [URIRef(zhuyin_dcat_catalog.API_OPENAPI)],
+                list(
+                    json_graph.objects(
+                        service,
+                        URIRef(dcat + "endpointDescription"),
+                    )
+                ),
+            )
+
+            specifications = (
+                Path(GEO) / "reference_datasets" / "dcat3"
+            )
+            sources = json.loads(
+                (specifications / "sources.json").read_text(encoding="utf-8")
+            )
+            for source in sources["files"]:
+                self.assertEqual(
+                    source["sha256"],
+                    hashlib.sha256(
+                        (specifications / source["filename"]).read_bytes()
+                    ).hexdigest(),
+                )
+            notice = (
+                specifications / sources["notice"]["filename"]
+            ).read_text(encoding="utf-8")
+            self.assertIn("W3C Document License", notice)
+            self.assertIn(
+                "https://www.w3.org/copyright/document-license-2023/",
+                notice,
+            )
+            vocabulary = Graph().parse(
+                specifications / "dcat3.ttl",
+                format="turtle",
+            )
+            declared = set(vocabulary.subjects())
+            used_dcat = {
+                term
+                for triple in json_graph
+                for term in triple
+                if isinstance(term, URIRef) and str(term).startswith(dcat)
+            }
+            self.assertFalse(used_dcat - declared)
+
+            metadata_graph = Graph().parse(
+                package / zhuyin_dcat_catalog.METADATA_FILENAME,
+                format="json-ld",
+            )
+            schema = "https://schema.org/"
+            for predicate in (
+                "url",
+                "license",
+                "contentUrl",
+                "conformsTo",
+            ):
+                values = list(
+                    metadata_graph.objects(
+                        predicate=URIRef(schema + predicate)
+                    )
+                )
+                self.assertTrue(values, predicate)
+                self.assertTrue(
+                    all(isinstance(value, URIRef) for value in values),
+                    (predicate, values),
+                )
+
+    def _seed_zhuyin_resourcesync_pages(self, pages):
+        self._seed_zhuyin_dcat_pages(pages)
+        for generator in (
+            zhuyin_readiness_tool,
+            zhuyin_grandparent_call_kit,
+            zhuyin_picture_book_club_kit,
+            zhuyin_parent_teacher_handoff_kit,
+            zhuyin_library_storytime_kit,
+            zhuyin_grade1_summer_calendar,
+        ):
+            generator.build(pages)
+        for filename in (
+            "zhuyin-bingo.html",
+            "zhuyin-bopomofo-chart.html",
+            "zhuyin-flashcards.html",
+            "zhuyin-practice-sheet.html",
+        ):
+            (pages / "tools" / filename).write_text(
+                '<meta name="content-modified" content="2026-07-10">fixture',
+                encoding="utf-8",
+            )
+        zhuyin_dcat_catalog.build(pages, app_public=False)
 
     def test_zhuyin_resourcesync_is_complete_verifiable_and_discoverable(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -3776,7 +4351,24 @@ class GeneratorTests(unittest.TestCase):
 
             resources = zhuyin_resourcesync.discover_resources(pages)
             entries = resource_list.findall(f"{{{sitemap_ns}}}url")
+            self.assertEqual(142, len(resources))
             self.assertEqual(len(resources), len(entries))
+            resources_by_path = {
+                resource.relative_path.as_posix(): resource
+                for resource in resources
+            }
+            self.assertEqual(
+                "application/atom+xml",
+                resources_by_path[
+                    "opds/bopomofo-37-symbol-reference.xml"
+                ].media_type,
+            )
+            self.assertEqual(
+                "text/plain",
+                resources_by_path[
+                    "data/zhuyin-bopomofo-ml-dataset.jsonl"
+                ].media_type,
+            )
             self.assertEqual(
                 37,
                 sum("/symbols/" in resource.url for resource in resources),
@@ -5756,6 +6348,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_epub_opds.py", workflow)
         self.assertIn("zhuyin_library_catalog.py", workflow)
         self.assertIn("zhuyin_oer_metadata.py", workflow)
+        self.assertIn("zhuyin_dcat_catalog.py", workflow)
         self.assertIn("zhuyin_resourcesync.py", workflow)
         self.assertIn("family_travel_mission_cards.py", workflow)
         self.assertIn("family_travel_observation_passport.py", workflow)
@@ -5789,6 +6382,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_epub_opds.py",
             "zhuyin_library_catalog.py",
             "zhuyin_oer_metadata.py",
+            "zhuyin_dcat_catalog.py",
             "zhuyin_resourcesync.py",
             "prioritize_trip_planet_resources.py",
             "add_related_tools.py",
@@ -5805,6 +6399,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("--refresh-slug \"$EPUB_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$LIBRARY_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$OER_SLUG\"", workflow)
+        self.assertIn("--refresh-slug \"$DCAT_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$TRIP_SLUG\"", workflow)
         self.assertIn('"lumibopomofo" in live_app_keys', workflow)
         self.assertIn('"tripplanet" in live_app_keys', workflow)
@@ -5829,6 +6424,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_epub_opds.py", publish)
         self.assertIn("zhuyin_library_catalog.py", publish)
         self.assertIn("zhuyin_oer_metadata.py", publish)
+        self.assertIn("zhuyin_dcat_catalog.py", publish)
         self.assertIn("zhuyin_resourcesync.py", publish)
         self.assertIn("family_travel_mission_cards.py", publish)
         self.assertIn("family_travel_observation_passport.py", publish)
@@ -5863,6 +6459,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_epub_opds.py",
             "zhuyin_library_catalog.py",
             "zhuyin_oer_metadata.py",
+            "zhuyin_dcat_catalog.py",
             "zhuyin_resourcesync.py",
             "prioritize_trip_planet_resources.py",
             "add_related_answers.py",

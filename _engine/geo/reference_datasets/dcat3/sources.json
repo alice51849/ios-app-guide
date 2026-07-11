@@ -1,0 +1,24 @@
+{
+  "retrieved": "2026-07-11",
+  "purpose": "Pinned offline vocabulary for validating the Bopomofo DCAT 3 catalog.",
+  "notice": {
+    "filename": "NOTICE-W3C.txt",
+    "source": "https://www.w3.org/copyright/document-license-2023/"
+  },
+  "files": [
+    {
+      "filename": "dcat3.ttl",
+      "url": "https://www.w3.org/ns/dcat3.ttl",
+      "specification": "https://www.w3.org/TR/vocab-dcat-3/",
+      "license": "https://www.w3.org/copyright/document-license-2023/",
+      "sha256": "d1624d3bbf364f6fc1d43b9a188bbb9e67639b1a7d46a5cb7ea3f5d47d02b62f"
+    }
+  ],
+  "externalVocabularies": [
+    {
+      "name": "SPDX RDF Terms",
+      "url": "https://spdx.org/rdf/terms/",
+      "usage": "Distribution SHA-256 checksums use spdx:Checksum, spdx:algorithm, spdx:checksumValue and spdx:checksumAlgorithm_sha256."
+    }
+  ]
+}

@@ -88,6 +88,19 @@ METS_PREMIS_REQUIRED_PATHS = (
     METS_PREMIS_PATH / "data" / "zhuyin-bopomofo-vocabulary.jsonld",
     Path("zh-Hant") / METS_PREMIS_PATH / "index.html",
 )
+ORE_PATH = Path("data") / "packages" / "zhuyin-bopomofo-oai-ore"
+ORE_REQUIRED_PATHS = (
+    ORE_PATH / "index.html",
+    ORE_PATH / "bopomofo-resource-map.ore.rdf",
+    ORE_PATH / "bopomofo-resource-map.ore.ttl",
+    ORE_PATH / "bopomofo-resource-map.ore.jsonld",
+    ORE_PATH / "README.txt",
+    ORE_PATH / "LICENSE.txt",
+    ORE_PATH / "checksums-sha256.txt",
+    ORE_PATH / "metadata.jsonld",
+    ORE_PATH / "bopomofo-37-symbols-oai-ore-bundle.zip",
+    Path("zh-Hant") / ORE_PATH / "index.html",
+)
 
 SOURCE_DESCRIPTION_URL = "https://alice51849.github.io/.well-known/resourcesync"
 SOURCE_DESCRIPTION_COPY_URL = f"{SITE}/{SOURCE_DESCRIPTION_COPY_PATH.as_posix()}"
@@ -111,6 +124,7 @@ CONTENT_PATTERNS = (
     "data/packages/zhuyin-bopomofo-ocfl/**/*",
     "data/packages/zhuyin-bopomofo-ro-crate/**/*",
     "data/packages/zhuyin-bopomofo-mets2-premis3/**/*",
+    "data/packages/zhuyin-bopomofo-oai-ore/**/*",
     "iiif/3/bopomofo/**/*",
     "publications/bopomofo-37-symbol-reference/**/*",
     "opds/bopomofo-37-symbol-reference.*",
@@ -123,6 +137,7 @@ CONTENT_PATTERNS = (
     "zh-Hant/data/packages/zhuyin-bopomofo-ocfl/**/*",
     "zh-Hant/data/packages/zhuyin-bopomofo-ro-crate/**/*",
     "zh-Hant/data/packages/zhuyin-bopomofo-mets2-premis3/**/*",
+    "zh-Hant/data/packages/zhuyin-bopomofo-oai-ore/**/*",
     "zh-Hant/api/v1/bopomofo-symbols/**/*",
     "zh-Hant/tools/zhuyin-*",
 )
@@ -239,6 +254,7 @@ REQUIRED_PATHS = (
     *IIIF_IMAGE_PATHS,
     *RO_CRATE_REQUIRED_PATHS,
     *METS_PREMIS_REQUIRED_PATHS,
+    *ORE_REQUIRED_PATHS,
 )
 CARD_START = "<!-- resourcesync-card:start -->"
 CARD_END = "<!-- resourcesync-card:end -->"
@@ -415,6 +431,7 @@ def _media_type(path: Path) -> str:
         ".jsonld": "application/ld+json",
         ".jsonl": "text/plain",
         ".nt": "application/n-triples",
+        ".rdf": "application/rdf+xml",
         ".svg": "image/svg+xml",
         ".tsv": "text/tab-separated-values",
         ".ttl": "text/turtle",

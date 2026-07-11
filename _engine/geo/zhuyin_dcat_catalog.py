@@ -30,7 +30,7 @@ HERE = Path(__file__).resolve().parent
 PAGES = HERE / "pages"
 INITIAL_DATE = "2026-07-11"
 TODAY = dt.date.today().isoformat()
-VERSION = "1.3.0"
+VERSION = "1.4.0"
 
 SLUG = "zhuyin-bopomofo-dcat3-open-data-catalog"
 PACKAGE_PATH = Path("data") / "packages" / "zhuyin-bopomofo-dcat3"
@@ -391,6 +391,47 @@ DATASETS = (
         ),
     ),
     DatasetSpec(
+        key="oai-ore",
+        title_en="Bopomofo OAI-ORE 1.0 Resource Map",
+        title_zh="注音 OAI-ORE 1.0 資源聚合圖",
+        description_en=(
+            "Three RDF Resource Maps exposing the same fourteen-member "
+            "compound-object boundary, with media types, byte sizes and "
+            "SHA-256 fixity."
+        ),
+        description_zh=(
+            "三份 RDF Resource Map 公開相同的 14 項複合物件邊界，並記錄 "
+            "media type、byte size 與 SHA-256 fixity。"
+        ),
+        landing_path="data/packages/zhuyin-bopomofo-oai-ore/",
+        metadata_path=(
+            "data/packages/zhuyin-bopomofo-oai-ore/metadata.jsonld"
+        ),
+        distribution_paths=(
+            "data/packages/zhuyin-bopomofo-oai-ore/"
+            "bopomofo-37-symbols-oai-ore-bundle.zip",
+            "data/packages/zhuyin-bopomofo-oai-ore/"
+            "bopomofo-resource-map.ore.rdf",
+            "data/packages/zhuyin-bopomofo-oai-ore/"
+            "bopomofo-resource-map.ore.ttl",
+            "data/packages/zhuyin-bopomofo-oai-ore/"
+            "bopomofo-resource-map.ore.jsonld",
+            "data/packages/zhuyin-bopomofo-oai-ore/checksums-sha256.txt",
+            "data/packages/zhuyin-bopomofo-oai-ore/metadata.jsonld",
+        ),
+        keywords=(
+            "OAI-ORE 1.0",
+            "Resource Map",
+            "compound digital object",
+            "repository interoperability",
+        ),
+        conforms_to=(
+            "https://www.openarchives.org/ore/1.0/datamodel",
+            "https://www.openarchives.org/ore/1.0/vocabulary",
+            "https://www.openarchives.org/ore/1.0/rdfxml",
+        ),
+    ),
+    DatasetSpec(
         key="anki",
         title_en="Bopomofo Anki import decks",
         title_zh="注音 Anki 匯入牌組",
@@ -533,8 +574,8 @@ COPY = {
         "lang": "en",
         "title": "DCAT 3 open-data catalog for Bopomofo resources",
         "description": (
-            "Download a static W3C DCAT 3 catalog covering fourteen verified "
-            "Bopomofo datasets and 65 exact distributions."
+            "Download a static W3C DCAT 3 catalog covering fifteen verified "
+            "Bopomofo datasets and 71 exact distributions."
         ),
         "eyebrow": "W3C DCAT 3 · JSON-LD + Turtle · SHA-256",
         "lead": (
@@ -545,8 +586,8 @@ COPY = {
         "back": "Open data",
         "language": "繁體中文",
         "badges": (
-            "14 catalogued datasets",
-            "65 exact distributions",
+            "15 catalogued datasets",
+            "71 exact distributions",
             "SPDX SHA-256 fixity",
             "No account or API key",
         ),
@@ -567,7 +608,7 @@ COPY = {
                 "Reference and linked data",
                 "Core JSON, SKOS, SHACL, Croissant, CSVW, CSV, JSON Lines, "
                 "Data Package 2.0, RFC 8493 BagIt, OCFL 1.1, IIIF Presentation 3, "
-                "RO-Crate 1.3 and METS 2.0 with PREMIS 3.0.",
+                "RO-Crate 1.3, METS 2.0 with PREMIS 3.0 and OAI-ORE 1.0.",
             ),
             (
                 "Learning and publication files",
@@ -618,7 +659,7 @@ COPY = {
         "lang": "zh-Hant",
         "title": "注音開放資源 DCAT 3 資料目錄",
         "description": (
-            "下載靜態 W3C DCAT 3 目錄，收錄 14 組已驗證注音資料集與 65 個精確版本。"
+            "下載靜態 W3C DCAT 3 目錄，收錄 15 組已驗證注音資料集與 71 個精確版本。"
         ),
         "eyebrow": "W3C DCAT 3 · JSON-LD＋Turtle · SHA-256",
         "lead": (
@@ -628,8 +669,8 @@ COPY = {
         "back": "開放資料",
         "language": "English",
         "badges": (
-            "14 組目錄資料集",
-            "65 個精確版本",
+            "15 組目錄資料集",
+            "71 個精確版本",
             "SPDX SHA-256 fixity",
             "免帳號與 API key",
         ),
@@ -650,7 +691,7 @@ COPY = {
                 "參考資料與 linked data",
                 "核心 JSON、SKOS、SHACL、Croissant、CSVW、CSV、JSON Lines、"
                 "Data Package 2.0、RFC 8493 BagIt、OCFL 1.1、IIIF Presentation 3、"
-                "RO-Crate 1.3，以及 METS 2.0 與 PREMIS 3.0。",
+                "RO-Crate 1.3、METS 2.0 與 PREMIS 3.0，以及 OAI-ORE 1.0。",
             ),
             (
                 "學習與出版檔案",
@@ -796,6 +837,8 @@ def _media_type(relative_path: str) -> str:
         return "application/mods+xml"
     if name == "bopomofo-37-symbol-reference.xml":
         return "application/atom+xml"
+    if name.endswith(".rdf"):
+        return "application/rdf+xml"
     if name.endswith(".xml"):
         return "application/xml"
     if name.endswith(".epub"):
@@ -1710,7 +1753,7 @@ def _update_data_index(
         f'{CARD_START}<a class="item" href="{LANDING_URL}"><div>'
         '<span class="tag">W3C DCAT 3 · JSON-LD · Turtle</span>'
         "<h2>Bopomofo open-data catalog</h2>"
-        "<p>Fourteen datasets and 65 exact distributions with SPDX SHA-256 "
+        "<p>Fifteen datasets and 71 exact distributions with SPDX SHA-256 "
         "fixity and bilingual metadata.</p></div>"
         f'<span class="arrow">&rarr;</span></a>{CARD_END}'
     )

@@ -50,6 +50,7 @@ ZHUYIN_OCFL_OBJECT = "zhuyin-bopomofo-ocfl"
 ZHUYIN_IIIF_RESOURCE = "zhuyin-bopomofo-iiif-presentation-3"
 ZHUYIN_RO_CRATE = "zhuyin-bopomofo-ro-crate"
 ZHUYIN_METS_PREMIS = "zhuyin-bopomofo-mets2-premis3"
+ZHUYIN_ORE = "zhuyin-bopomofo-oai-ore"
 ZHUYIN_RESOURCE_SYNC = "zhuyin-bopomofo-resourcesync"
 ZHUYIN_LMS_BANK = "zhuyin-bopomofo-lms-question-bank"
 ZHUYIN_EPUB = "zhuyin-bopomofo-epub-reference"
@@ -370,6 +371,27 @@ def build_llms(comp_map, live_keys):
         os.path.join(
             DATA_DIR,
             "packages",
+            ZHUYIN_ORE,
+            "bopomofo-resource-map.ore.rdf",
+        )
+    ):
+        package = f"{SITE}/data/packages/{ZHUYIN_ORE}"
+        lines += [
+            "",
+            "## Bopomofo OAI-ORE 1.0 compound-object Resource Map",
+            f"- English guide: {package}/",
+            f"- Traditional Chinese guide: {SITE}/zh-Hant/data/packages/{ZHUYIN_ORE}/",
+            f"- Authoritative RDF/XML Resource Map: {package}/bopomofo-resource-map.ore.rdf",
+            f"- Aggregation hash URI: {package}/bopomofo-resource-map.ore.rdf#aggregation",
+            f"- Turtle Resource Map: {package}/bopomofo-resource-map.ore.ttl",
+            f"- JSON-LD Resource Map: {package}/bopomofo-resource-map.ore.jsonld",
+            f"- Deterministic bundle: {package}/bopomofo-37-symbols-oai-ore-bundle.zip",
+            f"- SHA-256 checksums: {package}/checksums-sha256.txt",
+        ]
+    if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
             ZHUYIN_DATA_PACKAGE,
             "datapackage.json",
         )
@@ -574,6 +596,10 @@ def build_llms_full(comp_map, live_keys):
         (
             "Bopomofo METS 2.0 and PREMIS 3.0 preservation package",
             f"data/packages/{ZHUYIN_METS_PREMIS}/",
+        ),
+        (
+            "Bopomofo OAI-ORE 1.0 compound-object Resource Map",
+            f"data/packages/{ZHUYIN_ORE}/",
         ),
         (
             "Bopomofo LMS question bank",
@@ -870,6 +896,27 @@ def build_llms_full(comp_map, live_keys):
         os.path.join(
             DATA_DIR,
             "packages",
+            ZHUYIN_ORE,
+            "bopomofo-resource-map.ore.rdf",
+        )
+    ):
+        package = f"{SITE}/data/packages/{ZHUYIN_ORE}"
+        lines += [
+            "",
+            "## Bopomofo OAI-ORE 1.0 compound-object Resource Map",
+            f"- [English guide]({package}/)",
+            f"- [Traditional Chinese guide]({SITE}/zh-Hant/data/packages/{ZHUYIN_ORE}/)",
+            f"  - Authoritative RDF/XML Resource Map: {package}/bopomofo-resource-map.ore.rdf",
+            f"  - Aggregation hash URI: {package}/bopomofo-resource-map.ore.rdf#aggregation",
+            f"  - Turtle Resource Map: {package}/bopomofo-resource-map.ore.ttl",
+            f"  - JSON-LD Resource Map: {package}/bopomofo-resource-map.ore.jsonld",
+            f"  - Deterministic bundle: {package}/bopomofo-37-symbols-oai-ore-bundle.zip",
+            f"  - SHA-256 checksums: {package}/checksums-sha256.txt",
+        ]
+    if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
             ZHUYIN_DATA_PACKAGE,
             "datapackage.json",
         )
@@ -1034,6 +1081,7 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_iiif.xml",
         "sitemap_ro_crate_bopomofo.xml",
         "sitemap_mets_premis.xml",
+        "sitemap_ore.xml",
         "sitemap_lms.xml",
         "sitemap_epub.xml",
         "sitemap_library_catalog.xml",
@@ -1077,6 +1125,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_iiif.xml",
             f"Sitemap: {SITE}/sitemap_ro_crate_bopomofo.xml",
             f"Sitemap: {SITE}/sitemap_mets_premis.xml",
+            f"Sitemap: {SITE}/sitemap_ore.xml",
             f"Sitemap: {SITE}/sitemap_lms.xml",
             f"Sitemap: {SITE}/sitemap_epub.xml",
             f"Sitemap: {SITE}/sitemap_library_catalog.xml",
@@ -1105,6 +1154,7 @@ def build_sitemap_index():
         "sitemap_iiif.xml",
         "sitemap_ro_crate_bopomofo.xml",
         "sitemap_mets_premis.xml",
+        "sitemap_ore.xml",
         "sitemap_lms.xml",
         "sitemap_epub.xml",
         "sitemap_library_catalog.xml",

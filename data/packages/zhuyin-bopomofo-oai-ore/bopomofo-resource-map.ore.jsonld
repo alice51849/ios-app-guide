@@ -1,0 +1,785 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "ore": "http://www.openarchives.org/ore/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.json",
+      "dcterms:format": [
+        "application/json"
+      ],
+      "dcterms:title": [
+        {
+          "@value": "Static Bopomofo API collection",
+          "@language": "en"
+        }
+      ],
+      "spdx:checksum": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.json#sha256"
+        }
+      ],
+      "ore:isAggregatedBy": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+        }
+      ],
+      "dcat:byteSize": [
+        {
+          "@value": "9773",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.json#sha256",
+      "spdx:algorithm": [
+        {
+          "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+        }
+      ],
+      "spdx:checksumValue": [
+        {
+          "@value": "e6c95e415d94c8e9f32c9169e68acd2e988960ce171449c7d3d0a0c848a50028",
+          "@type": "http://www.w3.org/2001/XMLSchema#hexBinary"
+        }
+      ],
+      "@type": [
+        "http://spdx.org/rdf/terms#Checksum"
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/openapi.json",
+      "dcterms:format": [
+        "application/vnd.oai.openapi+json;version=3.1"
+      ],
+      "dcterms:title": [
+        {
+          "@value": "OpenAPI 3.1 description for the static API",
+          "@language": "en"
+        }
+      ],
+      "spdx:checksum": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/openapi.json#sha256"
+        }
+      ],
+      "ore:isAggregatedBy": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+        }
+      ],
+      "dcat:byteSize": [
+        {
+          "@value": "22659",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/openapi.json#sha256",
+      "spdx:algorithm": [
+        {
+          "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+        }
+      ],
+      "spdx:checksumValue": [
+        {
+          "@value": "9ba0af494930aede38462f542ff9d5dc691a37e14cd9cf166ca491ad6b956211",
+          "@type": "http://www.w3.org/2001/XMLSchema#hexBinary"
+        }
+      ],
+      "@type": [
+        "http://spdx.org/rdf/terms#Checksum"
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher",
+      "@type": [
+        "http://purl.org/dc/terms/Agent",
+        "http://xmlns.com/foaf/0.1/Organization"
+      ],
+      "foaf:name": [
+        "iOS App Guide Open Resources"
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.jsonld",
+      "dcterms:created": [
+        {
+          "@value": "2026-07-11T00:00:00Z",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      ],
+      "dcterms:creator": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher"
+        }
+      ],
+      "dcterms:modified": [
+        {
+          "@value": "2026-07-11T20:52:12Z",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      ],
+      "dcterms:rights": [
+        {
+          "@id": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "ore:describes": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+        }
+      ],
+      "@type": [
+        "http://www.openarchives.org/ore/terms/ResourceMap"
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation",
+      "dcterms:conformsTo": [
+        {
+          "@id": "https://www.openarchives.org/ore/1.0/datamodel"
+        },
+        {
+          "@id": "https://www.openarchives.org/ore/1.0/vocabulary"
+        }
+      ],
+      "dcterms:creator": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher"
+        }
+      ],
+      "dcterms:description": [
+        {
+          "@value": "A finite compound object containing fourteen machine-readable representations and metadata resources for all 37 Bopomofo symbols.",
+          "@language": "en"
+        },
+        {
+          "@value": "包含完整 37 個注音符號之 14 項機器可讀資料與 metadata 的有限複合物件。",
+          "@language": "zh-Hant"
+        }
+      ],
+      "dcterms:rights": [
+        {
+          "@id": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "dcterms:title": [
+        {
+          "@value": "Bopomofo 37-symbol open-data aggregation",
+          "@language": "en"
+        },
+        {
+          "@value": "注音 37 符號開放資料聚合",
+          "@language": "zh-Hant"
+        }
+      ],
+      "ore:aggregates": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.json"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/openapi.json"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json"
+        }
+      ],
+      "ore:isDescribedBy": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.jsonld"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.ttl"
+        }
+      ],
+      "@type": [
+        "http://www.openarchives.org/ore/terms/Aggregation"
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json",
+      "dcterms:format": [
+        "application/json"
+      ],
+      "dcterms:title": [
+        {
+          "@value": "Frictionless Data Package 2.0 descriptor",
+          "@language": "en"
+        }
+      ],
+      "spdx:checksum": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json#sha256"
+        }
+      ],
+      "ore:isAggregatedBy": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+        }
+      ],
+      "dcat:byteSize": [
+        {
+          "@value": "2165",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json#sha256",
+      "spdx:algorithm": [
+        {
+          "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+        }
+      ],
+      "spdx:checksumValue": [
+        {
+          "@value": "80efcd4adad386e9838f53b5d415f38be84ab4b5e3ecc6d9156b0284f7e1ab94",
+          "@type": "http://www.w3.org/2001/XMLSchema#hexBinary"
+        }
+      ],
+      "@type": [
+        "http://spdx.org/rdf/terms#Checksum"
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv",
+      "dcterms:format": [
+        "text/csv"
+      ],
+      "dcterms:title": [
+        {
+          "@value": "Frictionless package CSV resource",
+          "@language": "en"
+        }
+      ],
+      "spdx:checksum": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv#sha256"
+        }
+      ],
+      "ore:isAggregatedBy": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+        }
+      ],
+      "dcat:byteSize": [
+        {
+          "@value": "8350",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv#sha256",
+      "spdx:algorithm": [
+        {
+          "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+        }
+      ],
+      "spdx:checksumValue": [
+        {
+          "@value": "6d9235a013dd1856130841bdf6866f22173903bec726690b9b4c3e555b223422",
+          "@type": "http://www.w3.org/2001/XMLSchema#hexBinary"
+        }
+      ],
+      "@type": [
+        "http://spdx.org/rdf/terms#Checksum"
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json",
+      "dcterms:format": [
+        "application/json"
+      ],
+      "dcterms:title": [
+        {
+          "@value": "Frictionless Table Schema 2.0",
+          "@language": "en"
+        }
+      ],
+      "spdx:checksum": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json#sha256"
+        }
+      ],
+      "ore:isAggregatedBy": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+        }
+      ],
+      "dcat:byteSize": [
+        {
+          "@value": "5470",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json#sha256",
+      "spdx:algorithm": [
+        {
+          "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+        }
+      ],
+      "spdx:checksumValue": [
+        {
+          "@value": "ac2e61302e11c8613a44ab42c2927daace54ce1583a20b2f5072de6d407dc7fb",
+          "@type": "http://www.w3.org/2001/XMLSchema#hexBinary"
+        }
+      ],
+      "@type": [
+        "http://spdx.org/rdf/terms#Checksum"
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
+      "dcterms:format": [
+        "application/ld+json"
+      ],
+      "dcterms:title": [
+        {
+          "@value": "MLCommons Croissant 1.1 metadata",
+          "@language": "en"
+        }
+      ],
+      "spdx:checksum": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld#sha256"
+        }
+      ],
+      "ore:isAggregatedBy": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+        }
+      ],
+      "dcat:byteSize": [
+        {
+          "@value": "13777",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld#sha256",
+      "spdx:algorithm": [
+        {
+          "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+        }
+      ],
+      "spdx:checksumValue": [
+        {
+          "@value": "d96d4b5a8d50247ace01825cc267a657e0f9ac9785e6f9283b4f7312337e30e7",
+          "@type": "http://www.w3.org/2001/XMLSchema#hexBinary"
+        }
+      ],
+      "@type": [
+        "http://spdx.org/rdf/terms#Checksum"
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv",
+      "dcterms:format": [
+        "text/csv"
+      ],
+      "dcterms:title": [
+        {
+          "@value": "Canonical 37-row Bopomofo CSV",
+          "@language": "en"
+        }
+      ],
+      "spdx:checksum": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv#sha256"
+        }
+      ],
+      "ore:isAggregatedBy": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+        }
+      ],
+      "dcat:byteSize": [
+        {
+          "@value": "8350",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv#sha256",
+      "spdx:algorithm": [
+        {
+          "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+        }
+      ],
+      "spdx:checksumValue": [
+        {
+          "@value": "6d9235a013dd1856130841bdf6866f22173903bec726690b9b4c3e555b223422",
+          "@type": "http://www.w3.org/2001/XMLSchema#hexBinary"
+        }
+      ],
+      "@type": [
+        "http://spdx.org/rdf/terms#Checksum"
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
+      "dcterms:format": [
+        "application/csvm+json"
+      ],
+      "dcterms:title": [
+        {
+          "@value": "W3C CSVW metadata",
+          "@language": "en"
+        }
+      ],
+      "spdx:checksum": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json#sha256"
+        }
+      ],
+      "ore:isAggregatedBy": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+        }
+      ],
+      "dcat:byteSize": [
+        {
+          "@value": "7701",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json#sha256",
+      "spdx:algorithm": [
+        {
+          "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+        }
+      ],
+      "spdx:checksumValue": [
+        {
+          "@value": "eb8dcf8e39f65a5d3747a527c58537ad13f8c5a7ae56b55b34189c4ca9a98771",
+          "@type": "http://www.w3.org/2001/XMLSchema#hexBinary"
+        }
+      ],
+      "@type": [
+        "http://spdx.org/rdf/terms#Checksum"
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl",
+      "dcterms:format": [
+        "text/plain"
+      ],
+      "dcterms:title": [
+        {
+          "@value": "Equivalent Bopomofo JSON Lines records",
+          "@language": "en"
+        }
+      ],
+      "spdx:checksum": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl#sha256"
+        }
+      ],
+      "ore:isAggregatedBy": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+        }
+      ],
+      "dcat:byteSize": [
+        {
+          "@value": "14734",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl#sha256",
+      "spdx:algorithm": [
+        {
+          "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+        }
+      ],
+      "spdx:checksumValue": [
+        {
+          "@value": "68729f91871ca6603929c2a28ffb567513bf0a4f233f55164c236bd36b31b131",
+          "@type": "http://www.w3.org/2001/XMLSchema#hexBinary"
+        }
+      ],
+      "@type": [
+        "http://spdx.org/rdf/terms#Checksum"
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld",
+      "dcterms:format": [
+        "application/ld+json"
+      ],
+      "dcterms:title": [
+        {
+          "@value": "Bopomofo SKOS vocabulary in JSON-LD",
+          "@language": "en"
+        }
+      ],
+      "spdx:checksum": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld#sha256"
+        }
+      ],
+      "ore:isAggregatedBy": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+        }
+      ],
+      "dcat:byteSize": [
+        {
+          "@value": "79017",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld#sha256",
+      "spdx:algorithm": [
+        {
+          "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+        }
+      ],
+      "spdx:checksumValue": [
+        {
+          "@value": "e8a4f56690766420f00a3762e08de8d86bfbeb09b00093dfbc4c619508dc855a",
+          "@type": "http://www.w3.org/2001/XMLSchema#hexBinary"
+        }
+      ],
+      "@type": [
+        "http://spdx.org/rdf/terms#Checksum"
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt",
+      "dcterms:format": [
+        "application/n-triples"
+      ],
+      "dcterms:title": [
+        {
+          "@value": "Bopomofo SKOS vocabulary in N-Triples",
+          "@language": "en"
+        }
+      ],
+      "spdx:checksum": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt#sha256"
+        }
+      ],
+      "ore:isAggregatedBy": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+        }
+      ],
+      "dcat:byteSize": [
+        {
+          "@value": "141016",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt#sha256",
+      "spdx:algorithm": [
+        {
+          "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+        }
+      ],
+      "spdx:checksumValue": [
+        {
+          "@value": "3ebe082c284c4b2c8af816ff08731ca9bd694f2f5985e4b459874f4a3ec216ef",
+          "@type": "http://www.w3.org/2001/XMLSchema#hexBinary"
+        }
+      ],
+      "@type": [
+        "http://spdx.org/rdf/terms#Checksum"
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl",
+      "dcterms:format": [
+        "text/turtle"
+      ],
+      "dcterms:title": [
+        {
+          "@value": "SHACL validation shapes for the SKOS vocabulary",
+          "@language": "en"
+        }
+      ],
+      "spdx:checksum": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl#sha256"
+        }
+      ],
+      "ore:isAggregatedBy": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+        }
+      ],
+      "dcat:byteSize": [
+        {
+          "@value": "4070",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl#sha256",
+      "spdx:algorithm": [
+        {
+          "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+        }
+      ],
+      "spdx:checksumValue": [
+        {
+          "@value": "3f96d72fbbea61f308b28b8b54fc9867b0c2f6ae1538763e05093a9565fdd7cc",
+          "@type": "http://www.w3.org/2001/XMLSchema#hexBinary"
+        }
+      ],
+      "@type": [
+        "http://spdx.org/rdf/terms#Checksum"
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl",
+      "dcterms:format": [
+        "text/turtle"
+      ],
+      "dcterms:title": [
+        {
+          "@value": "Bopomofo SKOS vocabulary in Turtle",
+          "@language": "en"
+        }
+      ],
+      "spdx:checksum": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl#sha256"
+        }
+      ],
+      "ore:isAggregatedBy": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+        }
+      ],
+      "dcat:byteSize": [
+        {
+          "@value": "32239",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl#sha256",
+      "spdx:algorithm": [
+        {
+          "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+        }
+      ],
+      "spdx:checksumValue": [
+        {
+          "@value": "0173df5ad1c3fcad5bc85e0ba738f05617cbd95bd664f81260344eb5337d2411",
+          "@type": "http://www.w3.org/2001/XMLSchema#hexBinary"
+        }
+      ],
+      "@type": [
+        "http://spdx.org/rdf/terms#Checksum"
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json",
+      "dcterms:format": [
+        "application/json"
+      ],
+      "dcterms:title": [
+        {
+          "@value": "Canonical 37-symbol Bopomofo JSON",
+          "@language": "en"
+        }
+      ],
+      "spdx:checksum": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json#sha256"
+        }
+      ],
+      "ore:isAggregatedBy": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+        }
+      ],
+      "dcat:byteSize": [
+        {
+          "@value": "9675",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json#sha256",
+      "spdx:algorithm": [
+        {
+          "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+        }
+      ],
+      "spdx:checksumValue": [
+        {
+          "@value": "5072ef1d1fb3951830f71fc4e2bac378c6f9a22b883070cd9f96eb7c2de230d7",
+          "@type": "http://www.w3.org/2001/XMLSchema#hexBinary"
+        }
+      ],
+      "@type": [
+        "http://spdx.org/rdf/terms#Checksum"
+      ]
+    }
+  ]
+}

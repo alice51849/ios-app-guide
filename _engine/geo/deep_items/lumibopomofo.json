@@ -37,6 +37,92 @@
   },
   {
     "app_key": "lumibopomofo",
+    "kind": "oai_ore_resource_map",
+    "match": [
+      "repository harvest an oai-ore resource map",
+      "bopomofo oai-ore resource map",
+      "zhuyin compound digital object",
+      "oai-ore bopomofo data"
+    ],
+    "query": "Where can a repository harvest an OAI-ORE Resource Map for Bopomofo data?",
+    "page_title": "Harvest an OAI-ORE Resource Map for Bopomofo Data",
+    "meta_description": "Download RDF/XML, Turtle and JSON-LD OAI-ORE Resource Maps for fourteen verified resources covering all 37 Bopomofo symbols.",
+    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/",
+    "primary_resource_label": "Open the Bopomofo OAI-ORE Resource Map guide",
+    "lead": "Use the app-independent OAI-ORE aggregation to expose fourteen Bopomofo data, vocabulary, schema and API resources as one finite compound digital object.",
+    "detail": "The package publishes three Resource Maps with distinct protocol-based URI-R identifiers: an authoritative RDF/XML map, a Turtle map and a JSON-LD map. Each describes the same URI-A and the same fourteen-member Aggregation Graph. The URI-A appends #aggregation to the RDF/XML URI, following OAI-ORE's no-server hash-URI implementation: a client dereferencing the Aggregation removes the fragment and retrieves its Resource Map without requiring 303 redirects or content negotiation. Every map has exactly one ore:describes statement, identifies the publishing Agent and modification timestamp, exposes all three maps through ore:isDescribedBy, and enumerates the same ore:aggregates boundary. Members cover canonical JSON, CSV, JSON Lines, Croissant, CSVW, SKOS JSON-LD/Turtle/N-Triples, SHACL, Frictionless Data Package and Table Schema files, plus the static API index and OpenAPI description. Each resource records its media type, byte size, inverse ore:isAggregatedBy relation and named SPDX SHA-256 checksum. All serializations are parsed independently as RDF, checked for connectedness and ORE structural constraints, and compared against the exact published source bytes. The six-member deterministic ZIP contains the three maps, bilingual README, CC BY 4.0 notice and checksum list. JSON-LD is provided as an additional RDF serialization; the resource does not claim it was an original 2008 OAI-ORE serialization profile. It also does not claim OAI endorsement, external repository ingest, DOI assignment, third-party certification, content negotiation or Atom conformance.",
+    "follow_up": "Open the bilingual guide, resolve the RDF/XML Resource Map or download the deterministic ZIP, verify checksums-sha256.txt, then parse the maps as RDF. Confirm that each URI-R describes the published hash URI, all three maps expose the same fourteen ore:aggregates objects, and every byte size and SHA-256 matches the fetched resource before repository staging.",
+    "bullets": [
+      "One hash-URI Aggregation representing fourteen exact Bopomofo resources",
+      "Distinct RDF/XML, Turtle and JSON-LD Resource Map URIs with the same Aggregation Graph",
+      "Required creator and modified metadata plus ore:describes, ore:isDescribedBy and ore:aggregates links",
+      "Media type, byte size, inverse membership and SPDX SHA-256 for every resource",
+      "Deterministic six-member ZIP with bilingual validation guide and checksums"
+    ],
+    "decision_steps": [
+      "Open the package guide and record the RDF/XML Resource Map and #aggregation URIs.",
+      "Download the Resource Maps or bundle and verify checksums-sha256.txt.",
+      "Parse each file with an RDF/XML, Turtle or JSON-LD-aware RDF library.",
+      "Confirm one ore:describes target and the same fourteen ore:aggregates members in every map.",
+      "Fetch each member and compare its media type, byte size and SHA-256 before ingest."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Compound-object boundary",
+        "check": "Exactly fourteen protocol-based ore:aggregates resource URIs",
+        "why": "A repository can identify the complete logical object instead of guessing from hyperlinks"
+      },
+      {
+        "need": "Static authoritative discovery",
+        "check": "RDF/XML URI plus #aggregation follows the OAI-ORE hash-URI pattern",
+        "why": "Dereferencing works on static hosting without server-side 303 redirects"
+      },
+      {
+        "need": "Byte-level transfer checks",
+        "check": "dcat:byteSize and named SPDX SHA-256 nodes match every fetched member",
+        "why": "A harvester can reject stale, incomplete or altered compound-object parts"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not required to discover, parse, validate, harvest or reuse any OAI-ORE member. If currently available, it appears only after the complete open aggregation as an optional on-device practice layer.",
+    "sources": [
+      {
+        "title": "Bopomofo OAI-ORE 1.0 Resource Map",
+        "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/"
+      },
+      {
+        "title": "OAI-ORE 1.0 Abstract Data Model",
+        "url": "https://www.openarchives.org/ore/1.0/datamodel"
+      },
+      {
+        "title": "OAI-ORE 1.0 Vocabulary",
+        "url": "https://www.openarchives.org/ore/1.0/vocabulary"
+      },
+      {
+        "title": "OAI-ORE HTTP hash-URI implementation",
+        "url": "https://www.openarchives.org/ore/1.0/http"
+      },
+      {
+        "title": "OAI-ORE RDF/XML Resource Map profile",
+        "url": "https://www.openarchives.org/ore/1.0/rdfxml"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Why does the Aggregation URI end in #aggregation?",
+        "a": "OAI-ORE documents a hash-URI pattern for static hosts without 303 redirect support. A client removes the fragment when dereferencing, retrieves the RDF/XML Resource Map, then distinguishes the conceptual Aggregation from the Resource Map URI."
+      },
+      {
+        "q": "Do the three Resource Maps have the same URI?",
+        "a": "No. OAI-ORE requires each Resource Map to have a distinct URI. Each map describes the same Aggregation and exposes the same fourteen-member Aggregation Graph while retaining serialization-specific Resource Map metadata."
+      },
+      {
+        "q": "Is JSON-LD an original OAI-ORE 1.0 serialization profile?",
+        "a": "No. OAI-ORE defines a Resource Map as an RDF Graph and states that any RDF syntax may serialize it, but its 2008 implementation documents directly profile formats such as RDF/XML and Atom. JSON-LD is supplied here as an additional modern RDF serialization without claiming an original OAI profile."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
     "kind": "ro_crate_research_object",
     "match": [
       "download a ro-crate 1.3 research object",
@@ -1323,16 +1409,16 @@
       "dcat 3 bopomofo open data catalog"
     ],
     "query": "Where can an open-data catalog harvest a Bopomofo dataset in DCAT 3?",
-    "page_title": "Harvest Fourteen Open Bopomofo Datasets from a Static DCAT 3 Catalog",
-    "meta_description": "Download a W3C DCAT 3 JSON-LD or Turtle catalog for fourteen Bopomofo datasets and 65 exact distributions with SPDX SHA-256.",
+    "page_title": "Harvest Fifteen Open Bopomofo Datasets from a Static DCAT 3 Catalog",
+    "meta_description": "Download a W3C DCAT 3 JSON-LD or Turtle catalog for fifteen Bopomofo datasets and 71 exact distributions with SPDX SHA-256.",
     "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html",
     "primary_resource_label": "Download the Bopomofo DCAT 3 catalog",
-    "lead": "Use the static Bopomofo DCAT 3 open-data catalog. It lists fourteen related datasets and 65 exact distributions in equivalent JSON-LD and Turtle graphs, with one deterministic ZIP bundle.",
-    "detail": "The catalog covers the 37-symbol reference data, static JSON API, SKOS and SHACL vocabulary, Croissant, CSVW and Data Package tables, RFC 8493 BagIt, OCFL 1.1, RO-Crate 1.3, and METS 2.0 with PREMIS 3.0 preservation and research-object packages, IIIF Presentation 3 visual resources, Anki imports, LMS packages, EPUB and OPDS publication files, library records, and OER repository metadata. Every direct distribution records an IANA media-type IRI, byte size, CC BY 4.0 license, language IRIs and an SPDX SHA-256 checksum calculated from the published bytes. Each dcat:CatalogRecord has exactly one foaf:primaryTopic, and the static API is represented separately as a dcat:DataService. Download from https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html. This is a static DCAT description, not portal registration, W3C certification, institutional endorsement or proof that an external catalog has harvested it.",
+    "lead": "Use the static Bopomofo DCAT 3 open-data catalog. It lists fifteen related datasets and 71 exact distributions in equivalent JSON-LD and Turtle graphs, with one deterministic ZIP bundle.",
+    "detail": "The catalog covers the 37-symbol reference data, static JSON API, SKOS and SHACL vocabulary, Croissant, CSVW and Data Package tables, RFC 8493 BagIt, OCFL 1.1, RO-Crate 1.3, METS 2.0 with PREMIS 3.0, and OAI-ORE 1.0 preservation, research-object and compound-object packages, IIIF Presentation 3 visual resources, Anki imports, LMS packages, EPUB and OPDS publication files, library records, and OER repository metadata. Every direct distribution records an IANA media-type IRI, byte size, CC BY 4.0 license, language IRIs and an SPDX SHA-256 checksum calculated from the published bytes. Each dcat:CatalogRecord has exactly one foaf:primaryTopic, and the static API is represented separately as a dcat:DataService. Download from https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html. This is a static DCAT description, not portal registration, W3C certification, institutional endorsement or proof that an external catalog has harvested it.",
     "follow_up": "Parse the JSON-LD or Turtle in a staging catalog, read dcat:dataset and dcat:record, verify distribution hashes and byte sizes, and map themes, language policies and local identifiers before publication. Use dcat:downloadURL for files and dcat:endpointURL for the read-only API.",
     "bullets": [
-      "Fourteen catalogued Bopomofo datasets with bilingual titles and descriptions",
-      "Sixty-five direct distributions spanning data, linked data, tabular metadata, preservation and research-object packages, visual resources, learning packages, publications and repository metadata",
+      "Fifteen catalogued Bopomofo datasets with bilingual titles and descriptions",
+      "Seventy-one direct distributions spanning data, linked data, tabular metadata, preservation, research-object and compound-object packages, visual resources, learning packages, publications and repository metadata",
       "Equivalent JSON-LD and Turtle RDF graphs with stable named resources",
       "SPDX SHA-256 checksums, exact byte sizes, IANA media-type IRIs and distribution-level CC BY 4.0 licenses",
       "One dcat:DataService for the versioned static JSON API, with OpenAPI endpoint description"

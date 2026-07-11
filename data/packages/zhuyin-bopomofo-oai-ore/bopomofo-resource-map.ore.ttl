@@ -1,0 +1,155 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.json> <http://purl.org/dc/terms/format> "application/json" .
+<https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.json> <http://purl.org/dc/terms/title> "Static Bopomofo API collection"@en .
+<https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.json> <http://spdx.org/rdf/terms#checksum> <https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.json#sha256> .
+<https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.json> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.json> <http://www.w3.org/ns/dcat#byteSize> "9773"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.json#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.json#sha256> <http://spdx.org/rdf/terms#checksumValue> "e6c95e415d94c8e9f32c9169e68acd2e988960ce171449c7d3d0a0c848a50028"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.json#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/openapi.json> <http://purl.org/dc/terms/format> "application/vnd.oai.openapi+json;version=3.1" .
+<https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/openapi.json> <http://purl.org/dc/terms/title> "OpenAPI 3.1 description for the static API"@en .
+<https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/openapi.json> <http://spdx.org/rdf/terms#checksum> <https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/openapi.json#sha256> .
+<https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/openapi.json> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/openapi.json> <http://www.w3.org/ns/dcat#byteSize> "22659"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/openapi.json#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/openapi.json#sha256> <http://spdx.org/rdf/terms#checksumValue> "9ba0af494930aede38462f542ff9d5dc691a37e14cd9cf166ca491ad6b956211"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/openapi.json#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Agent> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher> <http://xmlns.com/foaf/0.1/name> "iOS App Guide Open Resources" .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://purl.org/dc/terms/conformsTo> <https://www.openarchives.org/ore/1.0/datamodel> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://purl.org/dc/terms/conformsTo> <https://www.openarchives.org/ore/1.0/vocabulary> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://purl.org/dc/terms/creator> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://purl.org/dc/terms/description> "A finite compound object containing fourteen machine-readable representations and metadata resources for all 37 Bopomofo symbols."@en .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://purl.org/dc/terms/description> "包含完整 37 個注音符號之 14 項機器可讀資料與 metadata 的有限複合物件。"@zh-Hant .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://purl.org/dc/terms/rights> <https://creativecommons.org/licenses/by/4.0/> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://purl.org/dc/terms/title> "Bopomofo 37-symbol open-data aggregation"@en .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://purl.org/dc/terms/title> "注音 37 符號開放資料聚合"@zh-Hant .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.json> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/openapi.json> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/isDescribedBy> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.jsonld> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/isDescribedBy> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/isDescribedBy> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.ttl> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Aggregation> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.ttl> <http://purl.org/dc/terms/created> "2026-07-11T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.ttl> <http://purl.org/dc/terms/creator> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.ttl> <http://purl.org/dc/terms/modified> "2026-07-11T20:52:12Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.ttl> <http://purl.org/dc/terms/rights> <https://creativecommons.org/licenses/by/4.0/> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.ttl> <http://www.openarchives.org/ore/terms/describes> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/ResourceMap> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json> <http://purl.org/dc/terms/format> "application/json" .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json> <http://purl.org/dc/terms/title> "Frictionless Data Package 2.0 descriptor"@en .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json> <http://spdx.org/rdf/terms#checksum> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json#sha256> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json> <http://www.w3.org/ns/dcat#byteSize> "2165"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json#sha256> <http://spdx.org/rdf/terms#checksumValue> "80efcd4adad386e9838f53b5d415f38be84ab4b5e3ecc6d9156b0284f7e1ab94"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv> <http://purl.org/dc/terms/format> "text/csv" .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv> <http://purl.org/dc/terms/title> "Frictionless package CSV resource"@en .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv> <http://spdx.org/rdf/terms#checksum> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv#sha256> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv> <http://www.w3.org/ns/dcat#byteSize> "8350"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv#sha256> <http://spdx.org/rdf/terms#checksumValue> "6d9235a013dd1856130841bdf6866f22173903bec726690b9b4c3e555b223422"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json> <http://purl.org/dc/terms/format> "application/json" .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json> <http://purl.org/dc/terms/title> "Frictionless Table Schema 2.0"@en .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json> <http://spdx.org/rdf/terms#checksum> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json#sha256> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json> <http://www.w3.org/ns/dcat#byteSize> "5470"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json#sha256> <http://spdx.org/rdf/terms#checksumValue> "ac2e61302e11c8613a44ab42c2927daace54ce1583a20b2f5072de6d407dc7fb"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld> <http://purl.org/dc/terms/format> "application/ld+json" .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld> <http://purl.org/dc/terms/title> "MLCommons Croissant 1.1 metadata"@en .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld> <http://spdx.org/rdf/terms#checksum> <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld#sha256> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld> <http://www.w3.org/ns/dcat#byteSize> "13777"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld#sha256> <http://spdx.org/rdf/terms#checksumValue> "d96d4b5a8d50247ace01825cc267a657e0f9ac9785e6f9283b4f7312337e30e7"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv> <http://purl.org/dc/terms/format> "text/csv" .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv> <http://purl.org/dc/terms/title> "Canonical 37-row Bopomofo CSV"@en .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv> <http://spdx.org/rdf/terms#checksum> <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv#sha256> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv> <http://www.w3.org/ns/dcat#byteSize> "8350"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv#sha256> <http://spdx.org/rdf/terms#checksumValue> "6d9235a013dd1856130841bdf6866f22173903bec726690b9b4c3e555b223422"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json> <http://purl.org/dc/terms/format> "application/csvm+json" .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json> <http://purl.org/dc/terms/title> "W3C CSVW metadata"@en .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json> <http://spdx.org/rdf/terms#checksum> <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json#sha256> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json> <http://www.w3.org/ns/dcat#byteSize> "7701"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json#sha256> <http://spdx.org/rdf/terms#checksumValue> "eb8dcf8e39f65a5d3747a527c58537ad13f8c5a7ae56b55b34189c4ca9a98771"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl> <http://purl.org/dc/terms/format> "text/plain" .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl> <http://purl.org/dc/terms/title> "Equivalent Bopomofo JSON Lines records"@en .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl> <http://spdx.org/rdf/terms#checksum> <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl#sha256> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl> <http://www.w3.org/ns/dcat#byteSize> "14734"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl#sha256> <http://spdx.org/rdf/terms#checksumValue> "68729f91871ca6603929c2a28ffb567513bf0a4f233f55164c236bd36b31b131"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld> <http://purl.org/dc/terms/format> "application/ld+json" .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld> <http://purl.org/dc/terms/title> "Bopomofo SKOS vocabulary in JSON-LD"@en .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld> <http://spdx.org/rdf/terms#checksum> <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld#sha256> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld> <http://www.w3.org/ns/dcat#byteSize> "79017"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld#sha256> <http://spdx.org/rdf/terms#checksumValue> "e8a4f56690766420f00a3762e08de8d86bfbeb09b00093dfbc4c619508dc855a"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt> <http://purl.org/dc/terms/format> "application/n-triples" .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt> <http://purl.org/dc/terms/title> "Bopomofo SKOS vocabulary in N-Triples"@en .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt> <http://spdx.org/rdf/terms#checksum> <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt#sha256> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt> <http://www.w3.org/ns/dcat#byteSize> "141016"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt#sha256> <http://spdx.org/rdf/terms#checksumValue> "3ebe082c284c4b2c8af816ff08731ca9bd694f2f5985e4b459874f4a3ec216ef"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl> <http://purl.org/dc/terms/format> "text/turtle" .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl> <http://purl.org/dc/terms/title> "SHACL validation shapes for the SKOS vocabulary"@en .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl> <http://spdx.org/rdf/terms#checksum> <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl#sha256> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl> <http://www.w3.org/ns/dcat#byteSize> "4070"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl#sha256> <http://spdx.org/rdf/terms#checksumValue> "3f96d72fbbea61f308b28b8b54fc9867b0c2f6ae1538763e05093a9565fdd7cc"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl> <http://purl.org/dc/terms/format> "text/turtle" .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl> <http://purl.org/dc/terms/title> "Bopomofo SKOS vocabulary in Turtle"@en .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl> <http://spdx.org/rdf/terms#checksum> <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl#sha256> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl> <http://www.w3.org/ns/dcat#byteSize> "32239"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl#sha256> <http://spdx.org/rdf/terms#checksumValue> "0173df5ad1c3fcad5bc85e0ba738f05617cbd95bd664f81260344eb5337d2411"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json> <http://purl.org/dc/terms/format> "application/json" .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json> <http://purl.org/dc/terms/title> "Canonical 37-symbol Bopomofo JSON"@en .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json> <http://spdx.org/rdf/terms#checksum> <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json#sha256> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json> <http://www.w3.org/ns/dcat#byteSize> "9675"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json#sha256> <http://spdx.org/rdf/terms#checksumValue> "5072ef1d1fb3951830f71fc4e2bac378c6f9a22b883070cd9f96eb7c2de230d7"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .

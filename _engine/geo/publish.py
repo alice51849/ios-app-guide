@@ -85,6 +85,10 @@ def main():
             "where-can-a-digital-repository-download-a-mets-2-0-and-premis-3-0-"
             "package-for-bopomofo-data"
         ),
+        (
+            "where-can-a-repository-harvest-an-oai-ore-resource-map-for-"
+            "bopomofo-data"
+        ),
     ]
     # 1) 重建
     require([PY, os.path.join(HERE, "build_pages_i18n.py")], env=env)
@@ -113,6 +117,7 @@ def main():
     require([PY, os.path.join(HERE, "zhuyin_ro_crate.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_mets_premis_package.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_static_api.py")], env=env)
+    require([PY, os.path.join(HERE, "zhuyin_ore_resource_map.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_lms_assessment_bank.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_epub_opds.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_library_catalog.py")], env=env)

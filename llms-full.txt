@@ -16,6 +16,7 @@
 - [Bopomofo IIIF Presentation API 3 visual resource](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html)
 - [Bopomofo RO-Crate 1.3 research object](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/)
 - [Bopomofo METS 2.0 and PREMIS 3.0 preservation package](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/)
+- [Bopomofo OAI-ORE 1.0 compound-object Resource Map](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/)
 - [Bopomofo LMS question bank](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html)
 - [Accessible Bopomofo EPUB and downloadable catalog files](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html)
 - [Bopomofo EPUB library catalog records](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html)
@@ -690,6 +691,16 @@
   - SHA-256 checksums: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/checksums-sha256.txt
   - Package metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/metadata.jsonld
 
+## Bopomofo OAI-ORE 1.0 compound-object Resource Map
+- [English guide](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/)
+- [Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-oai-ore/)
+  - Authoritative RDF/XML Resource Map: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf
+  - Aggregation hash URI: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation
+  - Turtle Resource Map: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.ttl
+  - JSON-LD Resource Map: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.jsonld
+  - Deterministic bundle: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-37-symbols-oai-ore-bundle.zip
+  - SHA-256 checksums: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/checksums-sha256.txt
+
 ## Bopomofo portable Data Package
 - [English Data Package guide](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/)
 - [Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo/)
@@ -847,6 +858,7 @@
 - https://alice51849.github.io/ios-app-guide/sitemap_iiif.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_ro_crate_bopomofo.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_mets_premis.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_ore.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_lms.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_epub.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_library_catalog.xml

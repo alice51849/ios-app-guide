@@ -36,6 +36,7 @@ PAGES = os.path.join(HERE, "pages")
 ALT = os.path.join(PAGES, "alternatives")
 GUIDES = os.path.join(PAGES, "guides")
 DATA_DIR = os.path.join(PAGES, "data")
+API_DIR = os.path.join(PAGES, "api")
 TOOLS = os.path.join(PAGES, "tools")
 STORIES = os.path.join(PAGES, "stories")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
@@ -154,6 +155,15 @@ def build_llms(comp_map, live_keys):
             for f in ds:
                 title = re.sub(r"[-_]", " ", f[:-5])
                 lines.append(f"- [{title}]({SITE}/data/{f}) · JSON: {SITE}/data/{f[:-5]}.json")
+    family_api = os.path.join(API_DIR, "v1", "family-travel-missions")
+    if os.path.exists(os.path.join(family_api, "openapi.json")):
+        lines += [
+            "",
+            "## Open static APIs (versioned, read-only, no API key)",
+            f"- Documentation: {SITE}/api/v1/family-travel-missions/",
+            f"- OpenAPI 3.1: {SITE}/api/v1/family-travel-missions/openapi.json",
+            f"- API index: {SITE}/api/v1/family-travel-missions/index.json",
+        ]
     # 外部 curated 清單與資料集(GitHub;已實測會被 AI 引用的來源,讓爬蟲從站也能發現整個 repo 生態)
     ghbase = "https://github.com/alice51849"
     lines += ["", "## External curated lists & datasets (GitHub, CC0/CC BY — free to cite)"]
@@ -210,6 +220,7 @@ def build_llms_full(comp_map, live_keys):
         ("Comparison pages", "alternatives/index.html"),
         ("Visual stories", "stories/index.html"),
         ("Open data", "data/index.html"),
+        ("Open static APIs", "api/index.html"),
         ("Free tools", "tools/index.html"),
     ]
     for title, rel in entry_points:
@@ -283,6 +294,18 @@ def build_llms_full(comp_map, live_keys):
                 if os.path.exists(json_path):
                     lines.append(f"  - JSON: {url[:-5]}.json")
 
+    family_api = os.path.join(API_DIR, "v1", "family-travel-missions")
+    if os.path.exists(os.path.join(family_api, "openapi.json")):
+        lines += [
+            "",
+            "## Open static APIs",
+            f"- [Family Travel Missions API v1]({SITE}/api/v1/family-travel-missions/)",
+            f"  - OpenAPI 3.1: {SITE}/api/v1/family-travel-missions/openapi.json",
+            f"  - API index: {SITE}/api/v1/family-travel-missions/index.json",
+            f"  - Index schema: {SITE}/api/v1/family-travel-missions/index.schema.json",
+            f"  - Scenario schema: {SITE}/api/v1/family-travel-missions/scenario.schema.json",
+        ]
+
     locale_hubs = []
     for name in sorted(os.listdir(PAGES)):
         if not re.fullmatch(r"[a-z]{2}(?:-(?:[A-Z]{2}|[A-Z][a-z]{3}))?", name):
@@ -302,7 +325,7 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_index.xml", "sitemap.xml", "sitemap_alternatives.xml",
         "sitemap_answers.xml", "sitemap_guides.xml", "sitemap_stories.xml",
         "sitemap_hubs.xml", "sitemap_tools.xml", "sitemap_data.xml",
-        "sitemap_swap.xml", "feed.xml",
+        "sitemap_api.xml", "sitemap_swap.xml", "feed.xml",
     ):
         if os.path.exists(os.path.join(PAGES, filename)):
             lines.append(f"- {SITE}/{filename}")
@@ -325,6 +348,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_hubs.xml",
             f"Sitemap: {SITE}/sitemap_tools.xml",
             f"Sitemap: {SITE}/sitemap_data.xml",
+            f"Sitemap: {SITE}/sitemap_api.xml",
             f"Sitemap: {SITE}/sitemap_swap.xml",
             f"Sitemap: {SITE}/sitemap_index.xml", ""]
     return "\n".join(out)
@@ -333,7 +357,7 @@ def build_robots():
 def build_sitemap_index():
     maps = ["sitemap.xml", "sitemap_alternatives.xml", "sitemap_answers.xml", "sitemap_guides.xml",
             "sitemap_stories.xml", "sitemap_hubs.xml", "sitemap_tools.xml",
-            "sitemap_data.xml", "sitemap_swap.xml"]
+            "sitemap_data.xml", "sitemap_api.xml", "sitemap_swap.xml"]
     items = "\n".join(f"  <sitemap><loc>{SITE}/{m}</loc></sitemap>" for m in maps
                       if os.path.exists(os.path.join(PAGES, m)))
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'

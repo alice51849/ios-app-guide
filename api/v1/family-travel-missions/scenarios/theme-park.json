@@ -1,0 +1,116 @@
+{
+  "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/scenario.schema.json",
+  "apiVersion": "1.0.0",
+  "datasetVersion": "1.0.0",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "scenario": {
+    "id": "theme-park",
+    "name": {
+      "en": "Theme park",
+      "zh-Hant": "主題樂園"
+    },
+    "stationaryRequired": true,
+    "photoTaskAllowed": false,
+    "driverInteractionAllowed": false,
+    "adultSupervisionRequired": true,
+    "skipAllowed": true,
+    "safetyBoundary": {
+      "en": "Use only while safely stationary and when the adult permits it. Queue, ride, height, restraint and staff instructions always take priority.",
+      "zh-Hant": "只有在安全停留且大人允許時才使用。排隊、設施、身高、安全裝置與工作人員指示永遠優先。"
+    },
+    "officialReferenceIds": [],
+    "targets": [
+      {
+        "id": "target-01",
+        "text": {
+          "en": "one design detail in the waiting area",
+          "zh-Hant": "等候區裡的一個設計細節"
+        }
+      },
+      {
+        "id": "target-02",
+        "text": {
+          "en": "one map symbol",
+          "zh-Hant": "地圖上的一個符號"
+        }
+      },
+      {
+        "id": "target-03",
+        "text": {
+          "en": "one object that helps staff communicate",
+          "zh-Hant": "一件協助工作人員溝通的物品"
+        }
+      },
+      {
+        "id": "target-04",
+        "text": {
+          "en": "one colour used to guide visitors",
+          "zh-Hant": "一種用來引導遊客的顏色"
+        }
+      },
+      {
+        "id": "target-05",
+        "text": {
+          "en": "one shaded or quiet rest area",
+          "zh-Hant": "一個有遮蔭或較安靜的休息區"
+        }
+      },
+      {
+        "id": "target-06",
+        "text": {
+          "en": "one sound that belongs to the theme",
+          "zh-Hant": "一個符合主題的聲音"
+        }
+      },
+      {
+        "id": "target-07",
+        "text": {
+          "en": "one way the group can stay together",
+          "zh-Hant": "一種讓同行成員保持在一起的方法"
+        }
+      }
+    ]
+  },
+  "participationModes": [
+    {
+      "id": "watch",
+      "name": {
+        "en": "Watch or point",
+        "zh-Hant": "看一看／指出來"
+      },
+      "promptTemplate": {
+        "en": "From your current spot, notice {target}. Point only when the setting permits and your supervising adult has said it is safe; never ask a driver to look.",
+        "zh-Hant": "從目前位置觀察「{target}」。只有在情境允許且陪同大人已確認安全時，才從原地指出來；絕不要求駕駛查看。"
+      },
+      "ageBand": null,
+      "abilityLevel": null
+    },
+    {
+      "id": "describe",
+      "name": {
+        "en": "Notice or describe",
+        "zh-Hant": "觀察／描述"
+      },
+      "promptTemplate": {
+        "en": "Notice {target}. Think of one colour, shape, sound or detail. Share only with a non-driving companion when the setting permits.",
+        "zh-Hant": "觀察「{target}」，想一個顏色、形狀、聲音或細節；只有在情境允許且有非駕駛同行者時才分享。"
+      },
+      "ageBand": null,
+      "abilityLevel": null
+    },
+    {
+      "id": "create",
+      "name": {
+        "en": "Plan or create",
+        "zh-Hant": "規劃／創作"
+      },
+      "promptTemplate": {
+        "en": "Use {target} as a prompt. Invent one kind question, route idea or tiny story alone or with a non-driving companion when permitted.",
+        "zh-Hant": "以「{target}」為提示，自己想一個友善問題、小路線或迷你故事；情境允許時也可和非駕駛同行者一起想。"
+      },
+      "ageBand": null,
+      "abilityLevel": null
+    }
+  ],
+  "officialReferences": []
+}

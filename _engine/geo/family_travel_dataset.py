@@ -3,9 +3,11 @@
 
 from __future__ import annotations
 
+import datetime as dt
 import html
 import json
 import os
+import re
 import shutil
 import sys
 from pathlib import Path
@@ -27,7 +29,10 @@ PAGES = HERE / "pages"
 SOURCE_DIR = HERE / "reference_datasets"
 SLUG = "family-travel-missions"
 APP_KEY = "tripplanet"
+APP_ID = "6787193643"
 APP_NAME = "Lumi Trip Planet: World Travel"
+APP_SHORT_NAME = "Lumi Trip Planet"
+TODAY = dt.date.today().isoformat()
 FILES = (
     f"{SLUG}.json",
     f"{SLUG}.csv",
@@ -38,6 +43,10 @@ FILES = (
 DICTIONARY_URL = (
     "https://github.com/alice51849/open-reference-datasets/blob/master/"
     "DATA_DICTIONARY.md"
+)
+API_DOCS_URL = f"{SITE}/api/v1/family-travel-missions/"
+CONTENT_MODIFIED_RE = re.compile(
+    r'<meta name="content-modified" content="([0-9]{4}-[0-9]{2}-[0-9]{2})">'
 )
 
 COPY = {
@@ -106,6 +115,7 @@ COPY = {
         "related": "Free companion resources",
         "generator": "Make printable mission cards",
         "curated": "Compare trusted family-travel resources",
+        "api": "Use the versioned static API",
         "app_title": "Optional digital travel layer",
         "app_text": (
             "Lumi Trip Planet adds an optional on-device way to continue world-travel "
@@ -174,6 +184,7 @@ COPY = {
         "related": "免費搭配資源",
         "generator": "製作可列印任務卡",
         "curated": "比較可信親子旅行資源",
+        "api": "使用版本化靜態 API",
         "app_title": "選用數位旅行層",
         "app_text": (
             "Lumi Trip Planet 提供選用的裝置端世界旅行活動；開放資料與任務卡"
@@ -205,6 +216,23 @@ def copy_if_changed(source: Path, target: Path) -> bool:
     return True
 
 
+def render_versioned_page(
+    path: Path,
+    renderer,
+    initial_date: str,
+    current_date: str = TODAY,
+) -> str:
+    existing = path.read_text(encoding="utf-8") if path.exists() else ""
+    match = CONTENT_MODIFIED_RE.search(existing)
+    prior_date = match.group(1) if match else initial_date
+    candidate = renderer(prior_date)
+    if candidate == existing:
+        return prior_date
+    modified = current_date
+    write_text_if_changed(path, renderer(modified))
+    return modified
+
+
 def is_app_public(pages: Path = PAGES) -> bool:
     return APP_KEY in live_app_keys(APPSTORE, pages, refresh=False)
 
@@ -214,7 +242,9 @@ def page_url(locale: str) -> str:
     return f"{SITE}/{prefix}data/{SLUG}.html"
 
 
-def _dataset_schema(dataset: dict, locale: str, app_public: bool) -> dict:
+def _dataset_schema(
+    dataset: dict, locale: str, app_public: bool, page_modified: str
+) -> dict:
     locale_copy = COPY[locale]
     canonical = page_url(locale)
     distributions = []
@@ -236,6 +266,16 @@ def _dataset_schema(dataset: dict, locale: str, app_public: bool) -> dict:
             }
         )
     graph: list[dict] = [
+        {
+            "@type": "WebPage",
+            "@id": canonical,
+            "name": locale_copy["title"],
+            "description": locale_copy["description"],
+            "url": canonical,
+            "inLanguage": locale_copy["lang"],
+            "dateModified": page_modified,
+            "mainEntity": {"@id": f"{canonical}#dataset"},
+        },
         {
             "@type": "Dataset",
             "@id": f"{canonical}#dataset",
@@ -259,17 +299,28 @@ def _dataset_schema(dataset: dict, locale: str, app_public: bool) -> dict:
                 "name": "Lumi Apps Open Data",
                 "url": f"{SITE}/data/",
             },
-            "subjectOf": {
-                "@type": "WebApplication",
-                "name": dataset["relatedResources"][0]["name"][locale],
-                "url": (
-                    dataset["relatedResources"][0]["url"]
-                    if locale == "en"
-                    else dataset["relatedResources"][0]["url"].replace(
-                        f"{SITE}/", f"{SITE}/zh-Hant/"
-                    )
-                ),
-            },
+            "subjectOf": [
+                {
+                    "@type": "WebApplication",
+                    "name": dataset["relatedResources"][0]["name"][locale],
+                    "url": (
+                        dataset["relatedResources"][0]["url"]
+                        if locale == "en"
+                        else dataset["relatedResources"][0]["url"].replace(
+                            f"{SITE}/", f"{SITE}/zh-Hant/"
+                        )
+                    ),
+                },
+                {
+                    "@type": "TechArticle",
+                    "name": COPY[locale]["api"],
+                    "url": (
+                        API_DOCS_URL
+                        if locale == "en"
+                        else f"{SITE}/zh-Hant/api/v1/{SLUG}/"
+                    ),
+                },
+            ],
             "usageInfo": DICTIONARY_URL,
             "citation": (
                 f"Lumi Apps ({dataset['dateModified']}). "
@@ -381,11 +432,20 @@ def _reference_list(dataset: dict) -> str:
     )
 
 
-def render_page(dataset: dict, locale: str, app_public: bool = False) -> str:
+def render_page(
+    dataset: dict,
+    locale: str,
+    app_public: bool = False,
+    page_modified: str | None = None,
+) -> str:
     copy = COPY[locale]
+    modified = page_modified or dataset["dateModified"]
     other_locale = "zh-Hant" if locale == "en" else "en"
     generator_url = dataset["relatedResources"][0]["url"]
     curated_url = dataset["relatedResources"][1]["url"]
+    api_docs_url = (
+        API_DOCS_URL if locale == "en" else f"{SITE}/zh-Hant/api/v1/{SLUG}/"
+    )
     if locale == "zh-Hant":
         generator_url = generator_url.replace(f"{SITE}/", f"{SITE}/zh-Hant/")
         curated_url = curated_url.rstrip("/") + "/zh-Hant/"
@@ -409,7 +469,7 @@ def render_page(dataset: dict, locale: str, app_public: bool = False) -> str:
         f"CC BY 4.0. {page_url(locale)}"
     )
     schema = json.dumps(
-        _dataset_schema(dataset, locale, app_public),
+        _dataset_schema(dataset, locale, app_public, modified),
         ensure_ascii=False,
         separators=(",", ":"),
     ).replace("</", "<\\/")
@@ -420,6 +480,7 @@ def render_page(dataset: dict, locale: str, app_public: bool = False) -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{html.escape(copy['title'])}</title>
 <meta name="description" content="{html.escape(copy['description'], quote=True)}">
+<meta name="content-modified" content="{html.escape(modified, quote=True)}">
 <link rel="canonical" href="{html.escape(page_url(locale), quote=True)}">
 <link rel="alternate" hreflang="en" href="{html.escape(page_url('en'), quote=True)}">
 <link rel="alternate" hreflang="zh-Hant" href="{html.escape(page_url('zh-Hant'), quote=True)}">
@@ -496,7 +557,7 @@ summary span{{color:var(--sub);font-size:13px;white-space:nowrap}}.scenario-body
 </section>
 <section>
 <h2>{html.escape(copy['related'])}</h2>
-<div class="related"><a href="{html.escape(generator_url, quote=True)}">{html.escape(copy['generator'])} →</a><a href="{html.escape(curated_url, quote=True)}">{html.escape(copy['curated'])} →</a></div>
+<div class="related"><a href="{html.escape(generator_url, quote=True)}">{html.escape(copy['generator'])} →</a><a href="{html.escape(curated_url, quote=True)}">{html.escape(copy['curated'])} →</a><a href="{html.escape(api_docs_url, quote=True)}">{html.escape(copy['api'])} →</a></div>
 </section>
 {app_block}
 <footer>{html.escape(copy['footer'])}</footer>
@@ -515,13 +576,17 @@ def build(pages: Path = PAGES, app_public: bool | None = None) -> str:
     for filename in FILES:
         copy_if_changed(SOURCE_DIR / filename, data_dir / filename)
     public = is_app_public(pages) if app_public is None else app_public
-    write_text_if_changed(
+    render_versioned_page(
         data_dir / f"{SLUG}.html",
-        render_page(dataset, "en", public),
+        lambda modified: render_page(dataset, "en", public, modified),
+        dataset["dateModified"],
+        TODAY,
     )
-    write_text_if_changed(
+    render_versioned_page(
         zh_data_dir / f"{SLUG}.html",
-        render_page(dataset, "zh-Hant", public),
+        lambda modified: render_page(dataset, "zh-Hant", public, modified),
+        dataset["dateModified"],
+        TODAY,
     )
     return SLUG
 

@@ -1,0 +1,209 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/scenario.schema.json",
+  "title": "Family Travel Mission API scenario response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "apiVersion",
+    "datasetVersion",
+    "license",
+    "scenario",
+    "participationModes",
+    "officialReferences"
+  ],
+  "properties": {
+    "$schema": {
+      "const": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/scenario.schema.json"
+    },
+    "apiVersion": {
+      "const": "1.0.0"
+    },
+    "datasetVersion": {
+      "const": "1.0.0"
+    },
+    "license": {
+      "const": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "scenario": {
+      "$ref": "#/$defs/scenario"
+    },
+    "participationModes": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "$ref": "#/$defs/participationMode"
+      }
+    },
+    "officialReferences": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/officialReference"
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "localizedString": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "en",
+        "zh-Hant"
+      ],
+      "properties": {
+        "en": {
+          "type": "string",
+          "minLength": 1
+        },
+        "zh-Hant": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "text"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "text": {
+          "$ref": "#/$defs/localizedString"
+        }
+      }
+    },
+    "scenario": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "stationaryRequired",
+        "photoTaskAllowed",
+        "driverInteractionAllowed",
+        "adultSupervisionRequired",
+        "skipAllowed",
+        "safetyBoundary",
+        "officialReferenceIds",
+        "targets"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "$ref": "#/$defs/localizedString"
+        },
+        "stationaryRequired": {
+          "const": true
+        },
+        "photoTaskAllowed": {
+          "const": false
+        },
+        "driverInteractionAllowed": {
+          "const": false
+        },
+        "adultSupervisionRequired": {
+          "const": true
+        },
+        "skipAllowed": {
+          "const": true
+        },
+        "safetyBoundary": {
+          "$ref": "#/$defs/localizedString"
+        },
+        "officialReferenceIds": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "targets": {
+          "type": "array",
+          "minItems": 7,
+          "maxItems": 7,
+          "items": {
+            "$ref": "#/$defs/target"
+          }
+        }
+      }
+    },
+    "participationMode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "promptTemplate",
+        "ageBand",
+        "abilityLevel"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "$ref": "#/$defs/localizedString"
+        },
+        "promptTemplate": {
+          "$ref": "#/$defs/localizedString"
+        },
+        "ageBand": {
+          "type": "null"
+        },
+        "abilityLevel": {
+          "type": "null"
+        }
+      }
+    },
+    "officialReference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "publisher",
+        "title",
+        "url",
+        "supports"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "publisher": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "supports": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/scenario.schema.json",
+  "apiVersion": "1.0.0",
+  "datasetVersion": "1.0.0",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "scenario": {
+    "id": "nature-beach",
+    "name": {
+      "en": "Nature or beach",
+      "zh-Hant": "自然景點或海邊"
+    },
+    "stationaryRequired": true,
+    "photoTaskAllowed": false,
+    "driverInteractionAllowed": false,
+    "adultSupervisionRequired": true,
+    "skipAllowed": true,
+    "safetyBoundary": {
+      "en": "Stay where the adult and local rules allow. Observe wildlife from a safe distance; do not touch, collect or feed anything for a card.",
+      "zh-Hant": "只停留在大人與當地規則允許的地方，和野生動物保持安全距離；不為了卡片觸摸、撿走或餵食任何東西。"
+    },
+    "officialReferenceIds": [
+      "nps-junior-ranger"
+    ],
+    "targets": [
+      {
+        "id": "target-01",
+        "text": {
+          "en": "one pattern made by wind or water",
+          "zh-Hant": "一種由風或水形成的圖案"
+        }
+      },
+      {
+        "id": "target-02",
+        "text": {
+          "en": "one natural object to observe without taking",
+          "zh-Hant": "一件只觀察、不帶走的自然物"
+        }
+      },
+      {
+        "id": "target-03",
+        "text": {
+          "en": "one sign of an animal from a safe distance",
+          "zh-Hant": "一個從安全距離看得到的動物線索"
+        }
+      },
+      {
+        "id": "target-04",
+        "text": {
+          "en": "two shades of one colour",
+          "zh-Hant": "同一種顏色的兩種深淺"
+        }
+      },
+      {
+        "id": "target-05",
+        "text": {
+          "en": "one weather change",
+          "zh-Hant": "一項天氣變化"
+        }
+      },
+      {
+        "id": "target-06",
+        "text": {
+          "en": "one sound you can hear without moving closer",
+          "zh-Hant": "一個不用靠近也聽得到的聲音"
+        }
+      },
+      {
+        "id": "target-07",
+        "text": {
+          "en": "one way to leave the place as you found it",
+          "zh-Hant": "一種讓環境保持原樣的方法"
+        }
+      }
+    ]
+  },
+  "participationModes": [
+    {
+      "id": "watch",
+      "name": {
+        "en": "Watch or point",
+        "zh-Hant": "看一看／指出來"
+      },
+      "promptTemplate": {
+        "en": "From your current spot, notice {target}. Point only when the setting permits and your supervising adult has said it is safe; never ask a driver to look.",
+        "zh-Hant": "從目前位置觀察「{target}」。只有在情境允許且陪同大人已確認安全時，才從原地指出來；絕不要求駕駛查看。"
+      },
+      "ageBand": null,
+      "abilityLevel": null
+    },
+    {
+      "id": "describe",
+      "name": {
+        "en": "Notice or describe",
+        "zh-Hant": "觀察／描述"
+      },
+      "promptTemplate": {
+        "en": "Notice {target}. Think of one colour, shape, sound or detail. Share only with a non-driving companion when the setting permits.",
+        "zh-Hant": "觀察「{target}」，想一個顏色、形狀、聲音或細節；只有在情境允許且有非駕駛同行者時才分享。"
+      },
+      "ageBand": null,
+      "abilityLevel": null
+    },
+    {
+      "id": "create",
+      "name": {
+        "en": "Plan or create",
+        "zh-Hant": "規劃／創作"
+      },
+      "promptTemplate": {
+        "en": "Use {target} as a prompt. Invent one kind question, route idea or tiny story alone or with a non-driving companion when permitted.",
+        "zh-Hant": "以「{target}」為提示，自己想一個友善問題、小路線或迷你故事；情境允許時也可和非駕駛同行者一起想。"
+      },
+      "ageBand": null,
+      "abilityLevel": null
+    }
+  ],
+  "officialReferences": [
+    {
+      "id": "nps-junior-ranger",
+      "publisher": "U.S. National Park Service",
+      "title": "Become a Junior Ranger",
+      "url": "https://www.nps.gov/kids/junior-rangers.htm",
+      "supports": [
+        "nature-beach"
+      ]
+    }
+  ]
+}

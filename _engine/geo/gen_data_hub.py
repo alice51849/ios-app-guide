@@ -20,6 +20,7 @@ import datetime as _dt
 import html
 import json
 import os
+import re
 import subprocess
 import sys
 import urllib.request
@@ -32,6 +33,9 @@ PAGES = os.path.join(HERE, "pages")
 DATA = os.path.join(PAGES, "data")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
 TODAY = _dt.date.today().isoformat()
+CONTENT_MODIFIED_RE = re.compile(
+    r'<meta name="content-modified" content="([0-9]{4}-[0-9]{2}-[0-9]{2})">'
+)
 
 BOPOMOFO_APP = "https://apps.apple.com/app/id6773017109"      # Lumi Bopomofo
 BOPOMOFO_PRO = "https://apps.apple.com/app/id6775773117"      # Lumi Bopomofo Pro
@@ -81,6 +85,15 @@ def dataset_lastmod(slug):
             return json.load(handle).get("dateModified") or TODAY
     except (FileNotFoundError, json.JSONDecodeError, OSError):
         return TODAY
+
+
+def page_lastmod(path, fallback):
+    try:
+        with open(path, encoding="utf-8") as handle:
+            match = CONTENT_MODIFIED_RE.search(handle.read(12000))
+        return match.group(1) if match else fallback
+    except OSError:
+        return fallback
 
 # ── 37 注音符號(21 聲母 + 3 介音 + 13 韻母)。pinyin 為漢語拼音對照,example 為常用字例。
 ZHUYIN = [
@@ -1327,8 +1340,27 @@ def build_index(datasets):
 
 
 def build_sitemap(datasets):
-    modified = {dataset["slug"]: dataset_lastmod(dataset["slug"]) for dataset in datasets}
-    catalog_modified = max(modified.values(), default=TODAY)
+    dataset_modified = {
+        dataset["slug"]: dataset_lastmod(dataset["slug"]) for dataset in datasets
+    }
+    modified = {
+        dataset["slug"]: page_lastmod(
+            os.path.join(DATA, f"{dataset['slug']}.html"),
+            dataset_modified[dataset["slug"]],
+        )
+        for dataset in datasets
+    }
+    localized_modified = {
+        dataset["slug"]: page_lastmod(
+            os.path.join(PAGES, "zh-Hant", "data", f"{dataset['slug']}.html"),
+            modified[dataset["slug"]],
+        )
+        for dataset in datasets
+        if dataset.get("localized")
+    }
+    catalog_modified = max(
+        [*modified.values(), *localized_modified.values()], default=TODAY
+    )
     entries = [(f"{SITE}/data/", catalog_modified)]
     entries.extend(
         (f"{SITE}/data/{dataset['slug']}.html", modified[dataset["slug"]])
@@ -1337,7 +1369,7 @@ def build_sitemap(datasets):
     entries.extend(
         (
             f"{SITE}/zh-Hant/data/{dataset['slug']}.html",
-            modified[dataset["slug"]],
+            localized_modified[dataset["slug"]],
         )
         for dataset in datasets
         if dataset.get("localized")

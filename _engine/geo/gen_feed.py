@@ -56,6 +56,7 @@ def _git_modified_times():
                 "alternatives",
                 "tools",
                 "data",
+                "api",
             ],
             check=True,
             capture_output=True,
@@ -103,7 +104,7 @@ def _write_if_changed(path, content):
 
 
 def collect():
-    """英文內容頁(answers/guides/alternatives/tools/data),取最近更新。"""
+    """英文內容頁與 API 文件,取可驗證的最近更新時間。"""
     items = []
     git_modified = _git_modified_times()
     for sub in ("answers", "guides", "alternatives", "tools", "data"):
@@ -117,6 +118,16 @@ def collect():
             items.append(
                 (_content_modified(p, git_modified), f"{SITE}/{sub}/{name}", p)
             )
+    for relative, url in (
+        ("api/index.html", f"{SITE}/api/"),
+        (
+            "api/v1/family-travel-missions/index.html",
+            f"{SITE}/api/v1/family-travel-missions/",
+        ),
+    ):
+        path = os.path.join(PAGES, relative)
+        if os.path.exists(path):
+            items.append((_content_modified(path, git_modified), url, path))
     items.sort(reverse=True)
     return items[:MAX_ITEMS]
 

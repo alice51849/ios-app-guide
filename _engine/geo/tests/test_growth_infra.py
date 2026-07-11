@@ -2,7 +2,9 @@
 """Regression tests for App Store availability and AI outreach generation."""
 from __future__ import annotations
 
+import copy
 import csv
+import importlib.util
 import json
 import os
 import re
@@ -30,6 +32,7 @@ import build_pages_i18n
 import cleanup_localized_assets
 import family_travel_dataset
 import family_travel_mission_cards
+import family_travel_static_api
 import gen_app_catalog
 import gen_calculator
 import gen_cost_compare
@@ -135,12 +138,30 @@ class GeneratorTests(unittest.TestCase):
                 '<meta name="description" content="Bilingual open data.">',
                 encoding="utf-8",
             )
+            api_docs = (
+                Path(directory)
+                / "api"
+                / "v1"
+                / "family-travel-missions"
+                / "index.html"
+            )
+            api_docs.parent.mkdir(parents=True)
+            api_docs.write_text(
+                '<title>Family Travel API</title>'
+                '<meta name="description" content="Versioned static API.">'
+                '<script type="application/ld+json">'
+                '{"dateModified":"2026-07-11"}</script>',
+                encoding="utf-8",
+            )
             items = gen_feed.collect()
         self.assertTrue(
             any(url.endswith("/tools/private-travel-tool.html") for _, url, _ in items)
         )
         self.assertTrue(
             any(url.endswith("/data/family-travel-missions.html") for _, url, _ in items)
+        )
+        self.assertTrue(
+            any(url.endswith("/api/v1/family-travel-missions/") for _, url, _ in items)
         )
 
     def test_atom_feed_uses_semantic_date_and_avoids_unchanged_rewrites(self):
@@ -285,6 +306,7 @@ class GeneratorTests(unittest.TestCase):
             self.assertIn("family-travel-missions.schema.json", private_page)
             self.assertIn("family-travel-missions.csv-metadata.json", private_page)
             self.assertIn("family-travel-missions.dcat.jsonld", private_page)
+            self.assertIn("/api/v1/family-travel-missions/", private_page)
             self.assertNotIn("apps.apple.com", private_page)
             self.assertNotIn('"@type":"SoftwareApplication"', private_page)
         public_page = family_travel_dataset.render_page(
@@ -337,6 +359,224 @@ class GeneratorTests(unittest.TestCase):
                     f"{gen_data_hub.SITE}/zh-Hant/data/{slug}.html",
                 ],
                 urls,
+            )
+
+    def test_family_travel_static_api_matches_canonical_dataset(self):
+        dataset = family_travel_static_api.load_dataset()
+        index = family_travel_static_api.api_index(dataset)
+        scenarios = {
+            scenario["id"]: family_travel_static_api.scenario_payload(
+                dataset, scenario
+            )
+            for scenario in dataset["scenarios"]
+        }
+        openapi = family_travel_static_api.openapi_document(dataset)
+        canonical_schema = json.loads(
+            (
+                family_travel_static_api.SOURCE_DIR
+                / "family-travel-missions.schema.json"
+            ).read_text(encoding="utf-8")
+        )
+        index_schema = family_travel_static_api.index_schema(
+            dataset, canonical_schema
+        )
+        scenario_schema = family_travel_static_api.scenario_schema(
+            dataset, canonical_schema
+        )
+        family_travel_static_api.validate_artifacts(
+            dataset,
+            index,
+            scenarios,
+            openapi,
+            index_schema,
+            scenario_schema,
+        )
+        self.assertEqual(12, len(index["scenarios"]))
+        self.assertEqual(12, len(scenarios))
+        self.assertEqual(13, len(openapi["paths"]))
+        self.assertEqual("3.1.0", openapi["openapi"])
+        self.assertEqual([], openapi["security"])
+        for payload in scenarios.values():
+            self.assertEqual(7, len(payload["scenario"]["targets"]))
+            self.assertEqual(3, len(payload["participationModes"]))
+        encoded = json.dumps(
+            {"index": index, "scenarios": scenarios, "openapi": openapi}
+        )
+        self.assertNotIn("apps.apple.com", encoded)
+        self.assertNotIn("SoftwareApplication", encoded)
+        self.assertNotIn(family_travel_static_api.APP_NAME, encoded)
+        contaminated = copy.deepcopy(scenarios)
+        contaminated["airport"]["scenario"]["targets"][0]["text"][
+            "en"
+        ] = "Lumi Trip Planet id6787193643"
+        with self.assertRaises(ValueError):
+            family_travel_static_api.validate_artifacts(
+                dataset,
+                index,
+                contaminated,
+                openapi,
+                index_schema,
+                scenario_schema,
+            )
+
+    def test_family_travel_static_api_docs_gate_optional_app_layer(self):
+        dataset = family_travel_static_api.load_dataset()
+        for locale in ("en", "zh-Hant"):
+            private_page = family_travel_static_api.render_docs(
+                dataset, locale, app_public=False
+            )
+            self.assertIn("openapi.json", private_page)
+            self.assertIn("index.schema.json", private_page)
+            self.assertIn('hreflang="en"', private_page)
+            self.assertIn('hreflang="zh-Hant"', private_page)
+            self.assertNotIn("apps.apple.com", private_page)
+            self.assertNotIn('"@type":"SoftwareApplication"', private_page)
+        public_page = family_travel_static_api.render_docs(
+            dataset, "en", app_public=True
+        )
+        self.assertIn(f"id{family_travel_mission_cards.APP_ID}", public_page)
+        self.assertIn('"@type":"SoftwareApplication"', public_page)
+        self.assertNotIn('"offers"', public_page)
+
+    def test_family_travel_static_api_builds_stable_versioned_surface(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            urls = family_travel_static_api.build(pages, app_public=False)
+            api = pages / family_travel_static_api.API_PATH
+            self.assertEqual(19, len(urls))
+            for filename in (
+                "index.html",
+                "index.json",
+                "index.schema.json",
+                "scenario.schema.json",
+                "openapi.json",
+            ):
+                self.assertTrue((api / filename).exists())
+            scenario_files = sorted((api / "scenarios").glob("*.json"))
+            self.assertEqual(12, len(scenario_files))
+            self.assertTrue(
+                (
+                    pages
+                    / "zh-Hant"
+                    / family_travel_static_api.API_PATH
+                    / "index.html"
+                ).exists()
+            )
+            self.assertTrue((pages / "api" / "index.html").exists())
+            self.assertIn(
+                family_travel_static_api.api_url(),
+                (pages / "sitemap_api.xml").read_text(encoding="utf-8"),
+            )
+            generated = [
+                *api.rglob("*"),
+                pages / "zh-Hant" / family_travel_static_api.API_PATH / "index.html",
+                pages / "api" / "index.html",
+                pages / "sitemap_api.xml",
+            ]
+            mtimes = {
+                path: path.stat().st_mtime_ns for path in generated if path.is_file()
+            }
+            family_travel_static_api.build(pages, app_public=False)
+            self.assertEqual(
+                mtimes, {path: path.stat().st_mtime_ns for path in mtimes}
+            )
+            self.assertIn("sitemap_api.xml", gen_llms.build_robots())
+            with mock.patch.object(gen_llms, "PAGES", str(pages)):
+                self.assertIn(
+                    "sitemap_api.xml", gen_llms.build_sitemap_index()
+                )
+
+    @unittest.skipUnless(
+        importlib.util.find_spec("jsonschema")
+        and importlib.util.find_spec("openapi_spec_validator"),
+        "validation dependencies are installed in CI",
+    )
+    def test_family_travel_static_api_passes_published_specifications(self):
+        from jsonschema import Draft202012Validator, FormatChecker
+        from openapi_spec_validator import validate_url
+
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            family_travel_static_api.build(pages, app_public=False)
+            api = pages / family_travel_static_api.API_PATH
+            index_schema = json.loads(
+                (api / "index.schema.json").read_text(encoding="utf-8")
+            )
+            scenario_schema = json.loads(
+                (api / "scenario.schema.json").read_text(encoding="utf-8")
+            )
+            Draft202012Validator.check_schema(index_schema)
+            Draft202012Validator.check_schema(scenario_schema)
+            Draft202012Validator(
+                index_schema, format_checker=FormatChecker()
+            ).validate(
+                json.loads((api / "index.json").read_text(encoding="utf-8"))
+            )
+            scenario_validator = Draft202012Validator(
+                scenario_schema, format_checker=FormatChecker()
+            )
+            for path in sorted((api / "scenarios").glob("*.json")):
+                scenario_validator.validate(
+                    json.loads(path.read_text(encoding="utf-8"))
+                )
+            validate_url((api / "openapi.json").as_uri())
+
+    def test_verified_app_gate_updates_page_freshness_once(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            family_travel_dataset.build(pages, app_public=False)
+            family_travel_static_api.build(pages, app_public=False)
+            with mock.patch.object(
+                family_travel_dataset, "TODAY", "2026-07-12"
+            ), mock.patch.object(
+                family_travel_static_api, "TODAY", "2026-07-12"
+            ):
+                family_travel_dataset.build(pages, app_public=True)
+                family_travel_static_api.build(pages, app_public=True)
+            dataset_page = (
+                pages / "data" / "family-travel-missions.html"
+            )
+            api_page = pages / family_travel_static_api.API_PATH / "index.html"
+            for page in (dataset_page, api_page):
+                content = page.read_text(encoding="utf-8")
+                self.assertIn(
+                    '<meta name="content-modified" content="2026-07-12">',
+                    content,
+                )
+                self.assertIn('"@type":"SoftwareApplication"', content)
+            self.assertIn(
+                "<lastmod>2026-07-12</lastmod>",
+                (pages / "sitemap_api.xml").read_text(encoding="utf-8"),
+            )
+            with mock.patch.object(
+                gen_data_hub, "PAGES", str(pages)
+            ), mock.patch.object(
+                gen_data_hub, "DATA", str(pages / "data")
+            ):
+                gen_data_hub.build_sitemap(
+                    [
+                        {
+                            "slug": "family-travel-missions",
+                            "localized": True,
+                        }
+                    ]
+                )
+            self.assertIn(
+                "<lastmod>2026-07-12</lastmod>",
+                (pages / "sitemap_data.xml").read_text(encoding="utf-8"),
+            )
+            mtimes = {
+                page: page.stat().st_mtime_ns for page in (dataset_page, api_page)
+            }
+            with mock.patch.object(
+                family_travel_dataset, "TODAY", "2026-07-13"
+            ), mock.patch.object(
+                family_travel_static_api, "TODAY", "2026-07-13"
+            ):
+                family_travel_dataset.build(pages, app_public=True)
+                family_travel_static_api.build(pages, app_public=True)
+            self.assertEqual(
+                mtimes, {page: page.stat().st_mtime_ns for page in mtimes}
             )
 
     def test_family_travel_cards_are_bilingual_private_and_safety_bounded(self):

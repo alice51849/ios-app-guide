@@ -1,0 +1,179 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/index.schema.json",
+  "title": "Family Travel Missions API index",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "apiVersion",
+    "datasetVersion",
+    "generatedFrom",
+    "license",
+    "languages",
+    "scope",
+    "privacyDesign",
+    "documentation",
+    "openapi",
+    "scenarios"
+  ],
+  "properties": {
+    "$schema": {
+      "const": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/index.schema.json"
+    },
+    "apiVersion": {
+      "const": "1.0.0"
+    },
+    "datasetVersion": {
+      "const": "1.0.0"
+    },
+    "generatedFrom": {
+      "const": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.json"
+    },
+    "license": {
+      "const": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "languages": {
+      "const": [
+        "en",
+        "zh-Hant"
+      ]
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scenarioCount",
+        "targetCount",
+        "participationModeCount",
+        "flatRecordCount"
+      ],
+      "properties": {
+        "scenarioCount": {
+          "const": 12
+        },
+        "targetCount": {
+          "const": 84
+        },
+        "participationModeCount": {
+          "const": 3
+        },
+        "flatRecordCount": {
+          "const": 252
+        }
+      }
+    },
+    "privacyDesign": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "accountRequired",
+        "personalDataRequested",
+        "photoTasksIncluded",
+        "locationDataRequested",
+        "itineraryDataRequested",
+        "completionTrackingIncluded",
+        "prohibitedFields"
+      ],
+      "properties": {
+        "accountRequired": {
+          "const": false
+        },
+        "personalDataRequested": {
+          "const": false
+        },
+        "photoTasksIncluded": {
+          "const": false
+        },
+        "locationDataRequested": {
+          "const": false
+        },
+        "itineraryDataRequested": {
+          "const": false
+        },
+        "completionTrackingIncluded": {
+          "const": false
+        },
+        "prohibitedFields": {
+          "type": "array",
+          "minItems": 7,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "documentation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "en",
+        "zh-Hant"
+      ],
+      "properties": {
+        "en": {
+          "const": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/"
+        },
+        "zh-Hant": {
+          "const": "https://alice51849.github.io/ios-app-guide/zh-Hant/api/v1/family-travel-missions/"
+        }
+      }
+    },
+    "openapi": {
+      "const": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/openapi.json"
+    },
+    "scenarios": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {
+        "$ref": "#/$defs/endpoint"
+      }
+    }
+  },
+  "$defs": {
+    "localizedString": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "en",
+        "zh-Hant"
+      ],
+      "properties": {
+        "en": {
+          "type": "string",
+          "minLength": 1
+        },
+        "zh-Hant": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "endpoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scenarioId",
+        "name",
+        "url"
+      ],
+      "properties": {
+        "scenarioId": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "name": {
+          "$ref": "#/$defs/localizedString"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://alice51849\\.github\\.io/ios-app-guide/api/v1/family-travel-missions/scenarios/"
+        }
+      }
+    }
+  }
+}

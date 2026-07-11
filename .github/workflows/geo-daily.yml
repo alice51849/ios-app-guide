@@ -26,10 +26,14 @@ jobs:
     env:
       GEO_SITE: https://alice51849.github.io/ios-app-guide
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
+          cache: pip
+          cache-dependency-path: _engine/geo/requirements-validation.txt
+      - name: Install validation dependencies
+        run: python3 -m pip install --requirement _engine/geo/requirements-validation.txt
       - name: Link site dir into engine layout
         run: |
           rm -rf _engine/geo/pages
@@ -68,6 +72,7 @@ jobs:
           python3 gen_cost_compare.py
           python3 gen_calculator.py
           python3 gen_data_hub.py
+          python3 family_travel_static_api.py
           python3 family_travel_mission_cards.py
           python3 zhuyin_heritage_lesson_plan.py
           python3 zhuyin_readiness_tool.py

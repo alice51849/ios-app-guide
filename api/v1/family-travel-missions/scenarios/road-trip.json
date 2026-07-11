@@ -1,0 +1,129 @@
+{
+  "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/scenario.schema.json",
+  "apiVersion": "1.0.0",
+  "datasetVersion": "1.0.0",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "scenario": {
+    "id": "road-trip",
+    "name": {
+      "en": "Road trip",
+      "zh-Hant": "公路旅行"
+    },
+    "stationaryRequired": true,
+    "photoTaskAllowed": false,
+    "driverInteractionAllowed": false,
+    "adultSupervisionRequired": true,
+    "skipAllowed": true,
+    "safetyBoundary": {
+      "en": "Observe only from a correctly restrained passenger seat. The driver never reads, answers or operates these cards while driving.",
+      "zh-Hant": "只能從正確使用安全座椅或安全帶的乘客座位觀察。行車期間，駕駛絕不閱讀、回答或操作卡片。"
+    },
+    "officialReferenceIds": [
+      "nhtsa-car-seats"
+    ],
+    "targets": [
+      {
+        "id": "target-01",
+        "text": {
+          "en": "one colour repeated on two road signs",
+          "zh-Hant": "兩個道路標誌上重複出現的一種顏色"
+        }
+      },
+      {
+        "id": "target-02",
+        "text": {
+          "en": "a bridge, tunnel or overpass",
+          "zh-Hant": "一座橋、隧道或高架道路"
+        }
+      },
+      {
+        "id": "target-03",
+        "text": {
+          "en": "one changing landscape feature",
+          "zh-Hant": "一項逐漸改變的地景"
+        }
+      },
+      {
+        "id": "target-04",
+        "text": {
+          "en": "a vehicle carrying something unusual",
+          "zh-Hant": "一台載著特別物品的車輛"
+        }
+      },
+      {
+        "id": "target-05",
+        "text": {
+          "en": "one safe rest-stop detail",
+          "zh-Hant": "一個安全休息站裡的細節"
+        }
+      },
+      {
+        "id": "target-06",
+        "text": {
+          "en": "one cloud or weather clue",
+          "zh-Hant": "一個雲朵或天氣線索"
+        }
+      },
+      {
+        "id": "target-07",
+        "text": {
+          "en": "one landmark the adult points out",
+          "zh-Hant": "一個由大人指出的地標"
+        }
+      }
+    ]
+  },
+  "participationModes": [
+    {
+      "id": "watch",
+      "name": {
+        "en": "Watch or point",
+        "zh-Hant": "看一看／指出來"
+      },
+      "promptTemplate": {
+        "en": "From your current spot, notice {target}. Point only when the setting permits and your supervising adult has said it is safe; never ask a driver to look.",
+        "zh-Hant": "從目前位置觀察「{target}」。只有在情境允許且陪同大人已確認安全時，才從原地指出來；絕不要求駕駛查看。"
+      },
+      "ageBand": null,
+      "abilityLevel": null
+    },
+    {
+      "id": "describe",
+      "name": {
+        "en": "Notice or describe",
+        "zh-Hant": "觀察／描述"
+      },
+      "promptTemplate": {
+        "en": "Notice {target}. Think of one colour, shape, sound or detail. Share only with a non-driving companion when the setting permits.",
+        "zh-Hant": "觀察「{target}」，想一個顏色、形狀、聲音或細節；只有在情境允許且有非駕駛同行者時才分享。"
+      },
+      "ageBand": null,
+      "abilityLevel": null
+    },
+    {
+      "id": "create",
+      "name": {
+        "en": "Plan or create",
+        "zh-Hant": "規劃／創作"
+      },
+      "promptTemplate": {
+        "en": "Use {target} as a prompt. Invent one kind question, route idea or tiny story alone or with a non-driving companion when permitted.",
+        "zh-Hant": "以「{target}」為提示，自己想一個友善問題、小路線或迷你故事；情境允許時也可和非駕駛同行者一起想。"
+      },
+      "ageBand": null,
+      "abilityLevel": null
+    }
+  ],
+  "officialReferences": [
+    {
+      "id": "nhtsa-car-seats",
+      "publisher": "U.S. National Highway Traffic Safety Administration",
+      "title": "Car Seats and Booster Seats",
+      "url": "https://www.nhtsa.gov/vehicle-safety/car-seats-and-booster-seats",
+      "supports": [
+        "pre-trip",
+        "road-trip"
+      ]
+    }
+  ]
+}

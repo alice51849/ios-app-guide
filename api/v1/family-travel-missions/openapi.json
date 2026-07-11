@@ -1,0 +1,331 @@
+{
+  "openapi": "3.1.0",
+  "jsonSchemaDialect": "https://json-schema.org/draft/2020-12/schema",
+  "info": {
+    "title": "Family Travel Missions Static API",
+    "summary": "Privacy-first bilingual family travel observation prompts.",
+    "description": "Versioned, read-only static JSON endpoints generated from the CC BY 4.0 family travel mission taxonomy. No authentication or personal data.",
+    "version": "1.0.0",
+    "license": {
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions",
+      "description": "GitHub Pages static API"
+    }
+  ],
+  "externalDocs": {
+    "description": "Dataset landing page and provenance",
+    "url": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html"
+  },
+  "tags": [
+    {
+      "name": "Family travel missions",
+      "description": "Optional, adult-supervised observation prompts with no photo tasks or driver interaction."
+    }
+  ],
+  "paths": {
+    "/index.json": {
+      "get": {
+        "tags": [
+          "Family travel missions"
+        ],
+        "summary": "List all family travel mission scenarios",
+        "operationId": "listFamilyTravelMissionScenarios",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "The bilingual API index.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./index.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/scenarios/pre-trip.json": {
+      "get": {
+        "tags": [
+          "Family travel missions"
+        ],
+        "summary": "Get the Before leaving mission setting",
+        "operationId": "getPreTripMission",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One bilingual, safety-bounded scenario.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./scenario.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/scenarios/airport.json": {
+      "get": {
+        "tags": [
+          "Family travel missions"
+        ],
+        "summary": "Get the Airport mission setting",
+        "operationId": "getAirportMission",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One bilingual, safety-bounded scenario.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./scenario.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/scenarios/flight.json": {
+      "get": {
+        "tags": [
+          "Family travel missions"
+        ],
+        "summary": "Get the Flight mission setting",
+        "operationId": "getFlightMission",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One bilingual, safety-bounded scenario.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./scenario.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/scenarios/road-trip.json": {
+      "get": {
+        "tags": [
+          "Family travel missions"
+        ],
+        "summary": "Get the Road trip mission setting",
+        "operationId": "getRoadTripMission",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One bilingual, safety-bounded scenario.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./scenario.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/scenarios/train-ferry.json": {
+      "get": {
+        "tags": [
+          "Family travel missions"
+        ],
+        "summary": "Get the Train or ferry mission setting",
+        "operationId": "getTrainFerryMission",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One bilingual, safety-bounded scenario.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./scenario.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/scenarios/city-walk.json": {
+      "get": {
+        "tags": [
+          "Family travel missions"
+        ],
+        "summary": "Get the City walk mission setting",
+        "operationId": "getCityWalkMission",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One bilingual, safety-bounded scenario.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./scenario.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/scenarios/museum.json": {
+      "get": {
+        "tags": [
+          "Family travel missions"
+        ],
+        "summary": "Get the Museum mission setting",
+        "operationId": "getMuseumMission",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One bilingual, safety-bounded scenario.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./scenario.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/scenarios/theme-park.json": {
+      "get": {
+        "tags": [
+          "Family travel missions"
+        ],
+        "summary": "Get the Theme park mission setting",
+        "operationId": "getThemeParkMission",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One bilingual, safety-bounded scenario.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./scenario.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/scenarios/nature-beach.json": {
+      "get": {
+        "tags": [
+          "Family travel missions"
+        ],
+        "summary": "Get the Nature or beach mission setting",
+        "operationId": "getNatureBeachMission",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One bilingual, safety-bounded scenario.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./scenario.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/scenarios/hotel.json": {
+      "get": {
+        "tags": [
+          "Family travel missions"
+        ],
+        "summary": "Get the Hotel mission setting",
+        "operationId": "getHotelMission",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One bilingual, safety-bounded scenario.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./scenario.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/scenarios/restaurant.json": {
+      "get": {
+        "tags": [
+          "Family travel missions"
+        ],
+        "summary": "Get the Restaurant mission setting",
+        "operationId": "getRestaurantMission",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One bilingual, safety-bounded scenario.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./scenario.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/scenarios/quiet-waiting.json": {
+      "get": {
+        "tags": [
+          "Family travel missions"
+        ],
+        "summary": "Get the Quiet waiting mission setting",
+        "operationId": "getQuietWaitingMission",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One bilingual, safety-bounded scenario.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./scenario.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "IndexResponse": {
+        "$ref": "./index.schema.json"
+      },
+      "ScenarioResponse": {
+        "$ref": "./scenario.schema.json"
+      }
+    }
+  },
+  "security": [],
+  "x-static-read-only": true,
+  "x-personal-data-requested": false
+}

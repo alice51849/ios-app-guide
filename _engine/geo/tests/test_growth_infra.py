@@ -50,6 +50,7 @@ import prioritize_trip_planet_resources
 import zhuyin_grandparent_call_kit
 import zhuyin_grade1_guide
 import zhuyin_grade1_summer_calendar
+import zhuyin_anki_deck
 import zhuyin_heritage_lesson_plan
 import zhuyin_library_storytime_kit
 import zhuyin_parent_teacher_handoff_kit
@@ -127,6 +128,21 @@ class AppStoreAvailabilityTests(unittest.TestCase):
 
 
 class GeneratorTests(unittest.TestCase):
+    def test_answer_style_falls_back_when_the_named_template_is_pruned(self):
+        with tempfile.TemporaryDirectory() as directory:
+            answers = Path(directory)
+            fallback = answers / "available-answer.html"
+            fallback.write_text(
+                "<html><style>\nbody{color:#123}\n</style></html>",
+                encoding="utf-8",
+            )
+            with mock.patch.object(
+                aeo_answers, "ANSWERS_DIR", answers
+            ), mock.patch.object(
+                aeo_answers, "TEMPLATE", answers / "missing-answer.html"
+            ):
+                self.assertEqual("body{color:#123}", aeo_answers.extract_style())
+
     def test_atom_feed_discovers_new_free_tools_and_open_data(self):
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(
             gen_feed, "PAGES", directory
@@ -973,6 +989,124 @@ class GeneratorTests(unittest.TestCase):
                     "sitemap_ro_crate.xml", gen_llms.build_sitemap_index()
                 )
 
+    def test_zhuyin_anki_decks_are_complete_official_two_field_imports(self):
+        artifacts = zhuyin_anki_deck.make_artifacts()
+        self.assertEqual({"en", "zh-Hant"}, set(artifacts))
+        eh_record = next(
+            record for record in gen_data_hub.ZHUYIN if record[0] == "ㄝ"
+        )
+        self.assertEqual(("ê", "final", "誒", "ề", "hey (interjection)"), eh_record[1:])
+        expected_symbols = [record[0] for record in gen_data_hub.ZHUYIN]
+        for locale, artifact in artifacts.items():
+            content = artifact["content"]
+            self.assertEqual(content, artifact["bytes"].decode("utf-8"))
+            self.assertFalse(content.startswith("\ufeff"))
+            lines = content.splitlines()
+            self.assertEqual("#separator:Tab", lines[0])
+            self.assertEqual("#html:false", lines[1])
+            self.assertTrue(lines[2].startswith("#tags:"))
+            self.assertTrue(lines[3].startswith("#deck:"))
+            self.assertEqual("#columns:Front\tBack", lines[4])
+            rows = lines[5:]
+            self.assertEqual(37, len(rows))
+            fields = [row.split("\t") for row in rows]
+            self.assertTrue(all(len(row) == 2 for row in fields))
+            self.assertEqual(expected_symbols, [row[0] for row in fields])
+            self.assertEqual(37, len({row[0] for row in fields}))
+            self.assertTrue(
+                all(gen_data_hub.ZHUYIN_IPA[row[0]] in row[1] for row in fields)
+            )
+            self.assertNotIn("#guid", content)
+            self.assertNotIn("apps.apple.com", content)
+            self.assertNotIn(zhuyin_anki_deck.APP_ID, content)
+            zhuyin_anki_deck.validate_tsv(locale, content)
+
+    def test_zhuyin_anki_build_is_bilingual_versioned_and_discoverable(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            tools = pages / "tools"
+            tools.mkdir()
+            (tools / "index.html").write_text(
+                '<main><section class="wrap grid"></section></main>',
+                encoding="utf-8",
+            )
+            urls = zhuyin_anki_deck.build(pages, app_public=False)
+            self.assertEqual(6, len(urls))
+            artifacts = zhuyin_anki_deck.make_artifacts()
+            expected_paths = [
+                tools / zhuyin_anki_deck.DECKS["en"]["filename"],
+                tools / zhuyin_anki_deck.DECKS["zh-Hant"]["filename"],
+                tools / zhuyin_anki_deck.METADATA_FILENAME,
+                tools / f"{zhuyin_anki_deck.SLUG}.html",
+                pages / "zh-Hant" / "tools" / f"{zhuyin_anki_deck.SLUG}.html",
+                pages / "sitemap_anki.xml",
+            ]
+            self.assertTrue(all(path.exists() for path in expected_paths))
+            english = expected_paths[3].read_text(encoding="utf-8")
+            traditional = expected_paths[4].read_text(encoding="utf-8")
+            for page in (english, traditional):
+                self.assertIn('"LearningResource"', page)
+                self.assertIn('"FAQPage"', page)
+                self.assertIn('hreflang="en"', page)
+                self.assertIn('hreflang="zh-Hant"', page)
+                self.assertIn('type="text/tab-separated-values"', page)
+                self.assertIn(zhuyin_anki_deck.METADATA_URL, page)
+                self.assertNotIn("apps.apple.com", page)
+                self.assertNotIn(zhuyin_anki_deck.APP_ID, page)
+                self.assertNotIn('"SoftwareApplication"', page)
+            self.assertIn("Free Bopomofo Anki Deck", english)
+            self.assertIn("免費注音 Anki 牌組", traditional)
+            public = zhuyin_anki_deck.render_page(
+                "en", artifacts, app_public=True
+            )
+            self.assertIn(zhuyin_anki_deck.APP_ID, public)
+            self.assertIn('"SoftwareApplication"', public)
+
+            metadata = json.loads(expected_paths[2].read_text(encoding="utf-8"))
+            zhuyin_anki_deck.validate_metadata(metadata, artifacts)
+            encoded_metadata = json.dumps(metadata, ensure_ascii=False)
+            self.assertNotIn("apps.apple.com", encoded_metadata)
+            resources = {
+                resource["inLanguage"]: resource
+                for resource in metadata["@graph"]
+            }
+            for locale, artifact in artifacts.items():
+                encoding = resources[locale]["encoding"]
+                self.assertEqual(artifact["sha256"], encoding["sha256"])
+                self.assertEqual(
+                    f"{len(artifact['bytes'])} bytes",
+                    encoding["contentSize"],
+                )
+                self.assertEqual(37, resources[locale]["numberOfItems"])
+            sitemap = expected_paths[5].read_text(encoding="utf-8")
+            for url in urls[:-1]:
+                self.assertIn(url, sitemap)
+            index = (tools / "index.html").read_text(encoding="utf-8")
+            self.assertEqual(1, index.count(f"{zhuyin_anki_deck.SLUG}.html"))
+
+            with mock.patch.object(gen_llms, "TOOLS", str(tools)), mock.patch.object(
+                gen_llms, "PAGES", str(pages)
+            ):
+                llms = gen_llms.build_llms({}, set())
+                full = gen_llms.build_llms_full({}, set())
+                sitemap_index = gen_llms.build_sitemap_index()
+            for generated_index in (llms, full):
+                self.assertIn("Open Bopomofo flashcard imports", generated_index)
+                self.assertIn(zhuyin_anki_deck.METADATA_URL, generated_index)
+                self.assertIn(artifacts["en"]["url"], generated_index)
+                self.assertIn(artifacts["zh-Hant"]["url"], generated_index)
+            self.assertIn("sitemap_anki.xml", sitemap_index)
+            self.assertIn("sitemap_anki.xml", gen_llms.build_robots())
+
+            mtimes = {
+                path: path.stat().st_mtime_ns
+                for path in [*expected_paths, tools / "index.html"]
+            }
+            zhuyin_anki_deck.build(pages, app_public=False)
+            self.assertEqual(
+                mtimes, {path: path.stat().st_mtime_ns for path in mtimes}
+            )
+
     def test_family_travel_observation_passport_build_is_stable(self):
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)
@@ -1040,6 +1174,7 @@ class GeneratorTests(unittest.TestCase):
                 zhuyin_parent_teacher_handoff_kit.update_tools_index,
                 zhuyin_library_storytime_kit.update_tools_index,
                 zhuyin_grade1_summer_calendar.update_tools_index,
+                zhuyin_anki_deck.update_tools_index,
             )
 
             def run_complete_tool_sequence() -> None:
@@ -1055,6 +1190,14 @@ class GeneratorTests(unittest.TestCase):
                 prioritized.index(mission_href), prioritized.index(passport_href)
             )
             self.assertLess(prioritized.index(passport_href), prioritized.index(other))
+            self.assertLess(
+                prioritized.index(passport_href),
+                prioritized.index(f"{zhuyin_anki_deck.SLUG}.html"),
+            )
+            self.assertLess(
+                prioritized.index(f"{zhuyin_anki_deck.SLUG}.html"),
+                prioritized.index(other),
+            )
             for href in prioritize_trip_planet_resources.PRIORITY_HREFS:
                 self.assertEqual(1, prioritized.count(href))
             mtime = index.stat().st_mtime_ns
@@ -2807,6 +2950,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_library_storytime_kit.py", workflow)
         self.assertIn("zhuyin_grade1_summer_calendar.py", workflow)
         self.assertIn("zhuyin_grade1_guide.py", workflow)
+        self.assertIn("zhuyin_anki_deck.py", workflow)
         self.assertIn("family_travel_mission_cards.py", workflow)
         self.assertIn("family_travel_observation_passport.py", workflow)
         self.assertIn("family_travel_opds_catalog.py", workflow)
@@ -2830,6 +2974,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_library_storytime_kit.py",
             "zhuyin_grade1_summer_calendar.py",
             "zhuyin_grade1_guide.py",
+            "zhuyin_anki_deck.py",
             "prioritize_trip_planet_resources.py",
             "add_related_tools.py",
             "gen_hubs.py",
@@ -2855,6 +3000,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_library_storytime_kit.py", publish)
         self.assertIn("zhuyin_grade1_summer_calendar.py", publish)
         self.assertIn("zhuyin_grade1_guide.py", publish)
+        self.assertIn("zhuyin_anki_deck.py", publish)
         self.assertIn("family_travel_mission_cards.py", publish)
         self.assertIn("family_travel_observation_passport.py", publish)
         self.assertIn("family_travel_opds_catalog.py", publish)
@@ -2879,6 +3025,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_library_storytime_kit.py",
             "zhuyin_grade1_summer_calendar.py",
             "zhuyin_grade1_guide.py",
+            "zhuyin_anki_deck.py",
             "prioritize_trip_planet_resources.py",
             "add_related_answers.py",
             "add_related_tools.py",

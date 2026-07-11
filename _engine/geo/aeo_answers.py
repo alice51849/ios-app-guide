@@ -89,11 +89,15 @@ def key_available() -> bool:
 
 
 def extract_style() -> str:
-    text = TEMPLATE.read_text(encoding="utf-8")
-    m = re.search(r"<style>\n(.*?)\n</style>", text, re.S)
-    if not m:
-        raise RuntimeError("Could not extract template CSS")
-    return m.group(1)
+    candidates = [TEMPLATE, *sorted(ANSWERS_DIR.glob("*.html"))]
+    for candidate in candidates:
+        if not candidate.exists():
+            continue
+        text = candidate.read_text(encoding="utf-8")
+        m = re.search(r"<style>\n(.*?)\n</style>", text, re.S)
+        if m:
+            return m.group(1)
+    raise RuntimeError("Could not extract template CSS from any answer page")
 
 
 STYLE = extract_style()

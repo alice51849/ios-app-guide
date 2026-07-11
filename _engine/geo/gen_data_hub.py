@@ -127,7 +127,7 @@ ZHUYIN = [
     ("ㄚ", "a", "final", "大", "dà", "big"),
     ("ㄛ", "o", "final", "波", "bō", "wave"),
     ("ㄜ", "e", "final", "喝", "hē", "to drink"),
-    ("ㄝ", "ê", "final", "誒", "ê", "hey (interjection)"),
+    ("ㄝ", "ê", "final", "誒", "ề", "hey (interjection)"),
     ("ㄞ", "ai", "final", "愛", "ài", "love"),
     ("ㄟ", "ei", "final", "給", "gěi", "to give"),
     ("ㄠ", "ao", "final", "好", "hǎo", "good"),
@@ -313,6 +313,8 @@ def build_zhuyin_page():
            f'<a class="cta" href="{BOPOMOFO_APP}">Get Lumi Bopomofo on the App Store →</a>\n'
            f'<p style="font-size:14px"><a href="{SITE}/tools/zhuyin-bopomofo-chart.html">'
            'Printable Bopomofo chart →</a> &nbsp;·&nbsp; '
+           f'<a href="{SITE}/tools/zhuyin-bopomofo-anki-deck.html">'
+           'Free Anki import deck →</a> &nbsp;·&nbsp; '
            f'<a href="{SITE}/data/">More open datasets →</a></p>')
     page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
                        lead=html.escape(lead), site=SITE, slug=slug, today=dj["dateModified"],
@@ -320,6 +322,7 @@ def build_zhuyin_page():
                        related=related_block([
                            ("Kids learning apps", "kids-learning.html"),
                            ("Printable Bopomofo chart", "tools/zhuyin-bopomofo-chart.html"),
+                           ("Free Bopomofo Anki deck", "tools/zhuyin-bopomofo-anki-deck.html"),
                            ("Lumi Bopomofo guide", "guides/lumibopomofo.html")]))
     os.makedirs(DATA, exist_ok=True)
     write_text_if_changed(

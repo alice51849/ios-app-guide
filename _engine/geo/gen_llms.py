@@ -39,6 +39,7 @@ SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").
 SOV = os.path.join(HERE, "reports", "aeo_sov.json")
 FAMILY_TRAVEL_OER = "family-travel-observation-passport"
 FAMILY_TRAVEL_RO_CRATE = "family-travel-missions-ro-crate-metadata.json"
+ZHUYIN_ANKI_DECK = "zhuyin-bopomofo-anki-deck"
 
 AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "anthropic-ai",
            "Claude-Web", "PerplexityBot", "Perplexity-User", "Google-Extended",
@@ -190,6 +191,16 @@ def build_llms(comp_map, live_keys):
             f"- Traditional Chinese A4 PDF: {SITE}/tools/{FAMILY_TRAVEL_OER}-zh-hant-a4.pdf",
             *ro_crate_lines,
             *opds_lines,
+        ]
+    if os.path.exists(os.path.join(TOOLS, f"{ZHUYIN_ANKI_DECK}.metadata.json")):
+        lines += [
+            "",
+            "## Open Bopomofo flashcard imports (CC BY 4.0)",
+            f"- English 37-symbol Anki deck: {SITE}/tools/{ZHUYIN_ANKI_DECK}.html",
+            f"- Traditional Chinese edition: {SITE}/zh-Hant/tools/{ZHUYIN_ANKI_DECK}.html",
+            f"- English UTF-8 TSV: {SITE}/tools/{ZHUYIN_ANKI_DECK}-en.tsv",
+            f"- Traditional Chinese UTF-8 TSV: {SITE}/tools/{ZHUYIN_ANKI_DECK}-zh-hant.tsv",
+            f"- LRMI / Schema.org metadata: {SITE}/tools/{ZHUYIN_ANKI_DECK}.metadata.json",
         ]
     # 外部 curated 清單與資料集(GitHub;已實測會被 AI 引用的來源,讓爬蟲從站也能發現整個 repo 生態)
     ghbase = "https://github.com/alice51849"
@@ -359,6 +370,16 @@ def build_llms_full(comp_map, live_keys):
             *ro_crate_lines,
             *opds_lines,
         ]
+    if os.path.exists(os.path.join(TOOLS, f"{ZHUYIN_ANKI_DECK}.metadata.json")):
+        lines += [
+            "",
+            "## Open Bopomofo flashcard imports",
+            f"- [English 37-symbol Anki deck]({SITE}/tools/{ZHUYIN_ANKI_DECK}.html)",
+            f"  - English UTF-8 TSV: {SITE}/tools/{ZHUYIN_ANKI_DECK}-en.tsv",
+            f"- [Traditional Chinese edition]({SITE}/zh-Hant/tools/{ZHUYIN_ANKI_DECK}.html)",
+            f"  - Traditional Chinese UTF-8 TSV: {SITE}/tools/{ZHUYIN_ANKI_DECK}-zh-hant.tsv",
+            f"- LRMI / Schema.org metadata: {SITE}/tools/{ZHUYIN_ANKI_DECK}.metadata.json",
+        ]
 
     locale_hubs = []
     for name in sorted(os.listdir(PAGES)):
@@ -381,6 +402,7 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_hubs.xml", "sitemap_tools.xml", "sitemap_data.xml",
         "sitemap_api.xml", "sitemap_swap.xml", "feed.xml",
         "sitemap_opds.xml", "sitemap_ro_crate.xml",
+        "sitemap_anki.xml",
     ):
         if os.path.exists(os.path.join(PAGES, filename)):
             lines.append(f"- {SITE}/{filename}")
@@ -407,6 +429,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_swap.xml",
             f"Sitemap: {SITE}/sitemap_opds.xml",
             f"Sitemap: {SITE}/sitemap_ro_crate.xml",
+            f"Sitemap: {SITE}/sitemap_anki.xml",
             f"Sitemap: {SITE}/sitemap_index.xml", ""]
     return "\n".join(out)
 
@@ -415,7 +438,7 @@ def build_sitemap_index():
     maps = ["sitemap.xml", "sitemap_alternatives.xml", "sitemap_answers.xml", "sitemap_guides.xml",
             "sitemap_stories.xml", "sitemap_hubs.xml", "sitemap_tools.xml",
             "sitemap_data.xml", "sitemap_api.xml", "sitemap_swap.xml"]
-    maps.extend(["sitemap_opds.xml", "sitemap_ro_crate.xml"])
+    maps.extend(["sitemap_opds.xml", "sitemap_ro_crate.xml", "sitemap_anki.xml"])
     items = "\n".join(f"  <sitemap><loc>{SITE}/{m}</loc></sitemap>" for m in maps
                       if os.path.exists(os.path.join(PAGES, m)))
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'

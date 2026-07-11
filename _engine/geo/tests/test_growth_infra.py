@@ -52,6 +52,7 @@ import zhuyin_grandparent_call_kit
 import zhuyin_grade1_guide
 import zhuyin_grade1_summer_calendar
 import zhuyin_anki_deck
+import zhuyin_croissant_dataset
 import zhuyin_heritage_lesson_plan
 import zhuyin_library_storytime_kit
 import zhuyin_parent_teacher_handoff_kit
@@ -1386,6 +1387,254 @@ class GeneratorTests(unittest.TestCase):
                 for path in [*expected_paths, data / "index.html"]
             }
             zhuyin_skos_vocabulary.build(pages, app_public=False)
+            self.assertEqual(
+                mtimes,
+                {path: path.stat().st_mtime_ns for path in mtimes},
+            )
+
+    def test_zhuyin_croissant_records_are_complete_and_app_independent(self):
+        rows = zhuyin_croissant_dataset.records()
+        zhuyin_croissant_dataset.validate_records(rows)
+        self.assertEqual(37, len(rows))
+        self.assertEqual(
+            set(range(0x3105, 0x312A)),
+            {ord(row["symbol"]) for row in rows},
+        )
+        self.assertEqual(
+            list(range(1, 38)),
+            [row["order"] for row in rows],
+        )
+        self.assertEqual(
+            list(zhuyin_croissant_dataset.FIELD_NAMES),
+            list(rows[0]),
+        )
+        eh_record = next(row for row in rows if row["symbol"] == "ㄝ")
+        self.assertEqual("ề", eh_record["example_pinyin"])
+        self.assertEqual(
+            zhuyin_skos_vocabulary.concept_uri("ㄝ"),
+            eh_record["concept_uri"],
+        )
+        artifacts = zhuyin_croissant_dataset.make_data_artifacts(rows)
+        self.assertEqual({"csv", "jsonl"}, set(artifacts))
+        for artifact in artifacts.values():
+            self.assertEqual(
+                hashlib.sha256(artifact["bytes"]).hexdigest(),
+                artifact["sha256"],
+            )
+            self.assertFalse(artifact["content"].startswith("\ufeff"))
+            self.assertNotIn("apps.apple.com", artifact["content"])
+            self.assertNotIn(
+                zhuyin_croissant_dataset.APP_ID,
+                artifact["content"],
+            )
+            self.assertNotIn(
+                zhuyin_croissant_dataset.APP_NAME,
+                artifact["content"],
+            )
+
+    @unittest.skipUnless(
+        importlib.util.find_spec("mlcroissant"),
+        "Official Croissant validation dependency is installed in CI",
+    )
+    def test_zhuyin_croissant_validates_and_loads_with_official_reader(self):
+        import mlcroissant
+
+        with tempfile.TemporaryDirectory() as directory:
+            data = Path(directory)
+            rows, metadata, downloads, _modified = (
+                zhuyin_croissant_dataset.write_versioned_artifacts(data)
+            )
+            metadata_path = (
+                data / zhuyin_croissant_dataset.METADATA_FILENAME
+            )
+            csv_path = data / zhuyin_croissant_dataset.CSV_FILENAME
+            dataset = mlcroissant.Dataset(
+                jsonld=metadata_path,
+                mapping={
+                    zhuyin_croissant_dataset.CSV_FILENAME: csv_path,
+                },
+            )
+            loaded = list(dataset.records(record_set="symbols"))
+            self.assertEqual(37, len(loaded))
+            self.assertEqual(1, loaded[0]["symbols/order"])
+            self.assertEqual(
+                rows[0]["symbol"].encode("utf-8"),
+                loaded[0]["symbols/symbol"],
+            )
+            validator = Path(sys.executable).with_name("mlcroissant")
+            result = subprocess.run(
+                [
+                    str(validator),
+                    "validate",
+                    "--jsonld",
+                    str(metadata_path),
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(
+                0,
+                result.returncode,
+                result.stdout + result.stderr,
+            )
+            self.assertIn("Done.", result.stdout + result.stderr)
+            self.assertEqual(
+                zhuyin_croissant_dataset.CROISSANT_SPEC,
+                metadata["conformsTo"],
+            )
+            self.assertEqual(3, len(downloads))
+
+    def test_zhuyin_croissant_build_is_bilingual_and_discoverable(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            data = pages / "data"
+            data.mkdir()
+            source_card = (
+                f'<a class="item" href="{zhuyin_croissant_dataset.SOURCE_PAGE}">'
+                "<h2>Source dataset</h2></a>"
+            )
+            catalog_schema = json.dumps(
+                {
+                    "@context": "https://schema.org",
+                    "@type": "DataCatalog",
+                    "dataset": [
+                        {
+                            "@type": "Dataset",
+                            "url": zhuyin_croissant_dataset.SOURCE_PAGE,
+                        }
+                    ],
+                }
+            )
+            (data / "index.html").write_text(
+                '<script type="application/ld+json">'
+                f"{catalog_schema}</script><main>{source_card}"
+                '<p class="foot">Footer</p></main>',
+                encoding="utf-8",
+            )
+            urls = zhuyin_croissant_dataset.build(
+                pages,
+                app_public=False,
+            )
+            self.assertEqual(6, len(urls))
+            expected_paths = [
+                data / f"{zhuyin_croissant_dataset.SLUG}.html",
+                pages
+                / "zh-Hant"
+                / "data"
+                / f"{zhuyin_croissant_dataset.SLUG}.html",
+                data / zhuyin_croissant_dataset.CSV_FILENAME,
+                data / zhuyin_croissant_dataset.JSONL_FILENAME,
+                data / zhuyin_croissant_dataset.METADATA_FILENAME,
+                pages / "sitemap_croissant.xml",
+            ]
+            self.assertTrue(all(path.exists() for path in expected_paths))
+            english = expected_paths[0].read_text(encoding="utf-8")
+            traditional = expected_paths[1].read_text(encoding="utf-8")
+            for page in (english, traditional):
+                self.assertIn(
+                    zhuyin_croissant_dataset.CROISSANT_SPEC,
+                    page,
+                )
+                self.assertIn('"cr:RecordSet"', page)
+                self.assertIn('hreflang="en"', page)
+                self.assertIn('hreflang="zh-Hant"', page)
+                self.assertIn('type="text/csv"', page)
+                self.assertNotIn("apps.apple.com", page)
+                self.assertNotIn(
+                    zhuyin_croissant_dataset.APP_ID,
+                    page,
+                )
+                self.assertNotIn('"SoftwareApplication"', page)
+            self.assertIn("Bopomofo ML Dataset", english)
+            self.assertIn("Limitations and non-uses", english)
+            self.assertIn("注音符號 ML 資料集", traditional)
+            self.assertIn("限制與不適用情境", traditional)
+
+            rows, metadata, downloads, _modified = (
+                zhuyin_croissant_dataset.write_versioned_artifacts(data)
+            )
+            zhuyin_croissant_dataset.validate_metadata(
+                metadata,
+                rows,
+                {key: value for key, value in downloads.items() if key != "metadata"},
+            )
+            public = zhuyin_croissant_dataset.render_page(
+                "en",
+                rows,
+                metadata,
+                downloads,
+                app_public=True,
+            )
+            self.assertIn(zhuyin_croissant_dataset.APP_ID, public)
+            self.assertIn('"SoftwareApplication"', public)
+            raw_metadata = expected_paths[4].read_text(encoding="utf-8")
+            self.assertNotIn("apps.apple.com", raw_metadata)
+            self.assertNotIn(
+                zhuyin_croissant_dataset.APP_ID,
+                raw_metadata,
+            )
+
+            sitemap = expected_paths[-1].read_text(encoding="utf-8")
+            for url in urls[:-1]:
+                self.assertIn(url, sitemap)
+            index = (data / "index.html").read_text(encoding="utf-8")
+            self.assertEqual(
+                1,
+                index.count(
+                    f'href="{zhuyin_croissant_dataset.LANDING_URL}"'
+                ),
+            )
+            catalog = json.loads(
+                re.search(
+                    r'<script type="application/ld\+json">(.*?)</script>',
+                    index,
+                    re.DOTALL,
+                ).group(1)
+            )
+            entries = [
+                dataset
+                for dataset in catalog["dataset"]
+                if dataset.get("url")
+                == zhuyin_croissant_dataset.LANDING_URL
+            ]
+            self.assertEqual(1, len(entries))
+            self.assertEqual(3, len(entries[0]["distribution"]))
+
+            with mock.patch.object(
+                gen_llms,
+                "DATA_DIR",
+                str(data),
+            ), mock.patch.object(
+                gen_llms,
+                "PAGES",
+                str(pages),
+            ):
+                llms = gen_llms.build_llms({}, set())
+                full = gen_llms.build_llms_full({}, set())
+                sitemap_index = gen_llms.build_sitemap_index()
+                robots = gen_llms.build_robots()
+            for generated_index in (llms, full):
+                self.assertIn("Bopomofo AI/ML dataset", generated_index)
+                self.assertIn(
+                    zhuyin_croissant_dataset.METADATA_URL,
+                    generated_index,
+                )
+                self.assertIn(
+                    zhuyin_croissant_dataset.CSV_URL,
+                    generated_index,
+                )
+            self.assertIn("sitemap_croissant.xml", sitemap_index)
+            self.assertIn("sitemap_croissant.xml", robots)
+
+            mtimes = {
+                path: path.stat().st_mtime_ns
+                for path in [*expected_paths, data / "index.html"]
+            }
+            zhuyin_croissant_dataset.build(
+                pages,
+                app_public=False,
+            )
             self.assertEqual(
                 mtimes,
                 {path: path.stat().st_mtime_ns for path in mtimes},
@@ -3236,6 +3485,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_grade1_guide.py", workflow)
         self.assertIn("zhuyin_anki_deck.py", workflow)
         self.assertIn("zhuyin_skos_vocabulary.py", workflow)
+        self.assertIn("zhuyin_croissant_dataset.py", workflow)
         self.assertIn("family_travel_mission_cards.py", workflow)
         self.assertIn("family_travel_observation_passport.py", workflow)
         self.assertIn("family_travel_opds_catalog.py", workflow)
@@ -3261,6 +3511,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_grade1_guide.py",
             "zhuyin_anki_deck.py",
             "zhuyin_skos_vocabulary.py",
+            "zhuyin_croissant_dataset.py",
             "prioritize_trip_planet_resources.py",
             "add_related_tools.py",
             "gen_hubs.py",
@@ -3288,6 +3539,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_grade1_guide.py", publish)
         self.assertIn("zhuyin_anki_deck.py", publish)
         self.assertIn("zhuyin_skos_vocabulary.py", publish)
+        self.assertIn("zhuyin_croissant_dataset.py", publish)
         self.assertIn("family_travel_mission_cards.py", publish)
         self.assertIn("family_travel_observation_passport.py", publish)
         self.assertIn("family_travel_opds_catalog.py", publish)
@@ -3314,6 +3566,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_grade1_guide.py",
             "zhuyin_anki_deck.py",
             "zhuyin_skos_vocabulary.py",
+            "zhuyin_croissant_dataset.py",
             "prioritize_trip_planet_resources.py",
             "add_related_answers.py",
             "add_related_tools.py",

@@ -207,6 +207,7 @@
 - [passport photo sizes](https://alice51849.github.io/ios-app-guide/data/passport-photo-sizes.html) · JSON: https://alice51849.github.io/ios-app-guide/data/passport-photo-sizes.json
 - [resume cv conventions by country](https://alice51849.github.io/ios-app-guide/data/resume-cv-conventions-by-country.html) · JSON: https://alice51849.github.io/ios-app-guide/data/resume-cv-conventions-by-country.json
 - [toeic cefr score](https://alice51849.github.io/ios-app-guide/data/toeic-cefr-score.html) · JSON: https://alice51849.github.io/ios-app-guide/data/toeic-cefr-score.json
+- [zhuyin bopomofo ml dataset](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html)
 - [zhuyin bopomofo vocabulary](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html)
 - [zhuyin bopomofo](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.html) · JSON: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json
 
@@ -240,6 +241,13 @@
 - N-Triples: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt
 - SHACL shapes: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl
 - DCAT 3 / VoID metadata: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.metadata.jsonld
+
+## Bopomofo AI/ML dataset (MLCommons Croissant 1.1, CC BY 4.0)
+- English data card: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html
+- Traditional Chinese data card: https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-ml-dataset.html
+- UTF-8 CSV: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv
+- JSON Lines: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl
+- Croissant 1.1 JSON-LD: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld
 
 ## External curated lists & datasets (GitHub, CC0/CC BY — free to cite)
 - [awesome-zhuyin-bopomofo-apps](https://github.com/alice51849/awesome-zhuyin-bopomofo-apps) — Zhuyin/Bopomofo learning apps for Taiwanese parents (Chinese)

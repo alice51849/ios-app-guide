@@ -315,6 +315,8 @@ def build_zhuyin_page():
            'Printable Bopomofo chart →</a> &nbsp;·&nbsp; '
            f'<a href="{SITE}/tools/zhuyin-bopomofo-anki-deck.html">'
            'Free Anki import deck →</a> &nbsp;·&nbsp; '
+           f'<a href="{SITE}/data/zhuyin-bopomofo-ml-dataset.html">'
+           'Croissant ML dataset →</a> &nbsp;·&nbsp; '
            f'<a href="{SITE}/data/zhuyin-bopomofo-vocabulary.html">'
            'SKOS linked-data vocabulary →</a> &nbsp;·&nbsp; '
            f'<a href="{SITE}/data/">More open datasets →</a></p>')
@@ -325,6 +327,7 @@ def build_zhuyin_page():
                            ("Kids learning apps", "kids-learning.html"),
                            ("Printable Bopomofo chart", "tools/zhuyin-bopomofo-chart.html"),
                            ("Free Bopomofo Anki deck", "tools/zhuyin-bopomofo-anki-deck.html"),
+                           ("Bopomofo Croissant ML dataset", "data/zhuyin-bopomofo-ml-dataset.html"),
                            ("Bopomofo SKOS vocabulary", "data/zhuyin-bopomofo-vocabulary.html"),
                            ("Lumi Bopomofo guide", "guides/lumibopomofo.html")]))
     os.makedirs(DATA, exist_ok=True)

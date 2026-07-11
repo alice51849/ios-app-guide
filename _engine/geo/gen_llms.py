@@ -41,6 +41,7 @@ FAMILY_TRAVEL_OER = "family-travel-observation-passport"
 FAMILY_TRAVEL_RO_CRATE = "family-travel-missions-ro-crate-metadata.json"
 ZHUYIN_ANKI_DECK = "zhuyin-bopomofo-anki-deck"
 ZHUYIN_SKOS_VOCABULARY = "zhuyin-bopomofo-vocabulary"
+ZHUYIN_CROISSANT_DATASET = "zhuyin-bopomofo-ml-dataset"
 
 AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "anthropic-ai",
            "Claude-Web", "PerplexityBot", "Perplexity-User", "Google-Extended",
@@ -220,6 +221,18 @@ def build_llms(comp_map, live_keys):
             f"- N-Triples: {SITE}/data/{ZHUYIN_SKOS_VOCABULARY}.nt",
             f"- SHACL shapes: {SITE}/data/{ZHUYIN_SKOS_VOCABULARY}.shacl.ttl",
             f"- DCAT 3 / VoID metadata: {SITE}/data/{ZHUYIN_SKOS_VOCABULARY}.metadata.jsonld",
+        ]
+    if os.path.exists(
+        os.path.join(DATA_DIR, f"{ZHUYIN_CROISSANT_DATASET}.croissant.jsonld")
+    ):
+        lines += [
+            "",
+            "## Bopomofo AI/ML dataset (MLCommons Croissant 1.1, CC BY 4.0)",
+            f"- English data card: {SITE}/data/{ZHUYIN_CROISSANT_DATASET}.html",
+            f"- Traditional Chinese data card: {SITE}/zh-Hant/data/{ZHUYIN_CROISSANT_DATASET}.html",
+            f"- UTF-8 CSV: {SITE}/data/{ZHUYIN_CROISSANT_DATASET}.csv",
+            f"- JSON Lines: {SITE}/data/{ZHUYIN_CROISSANT_DATASET}.jsonl",
+            f"- Croissant 1.1 JSON-LD: {SITE}/data/{ZHUYIN_CROISSANT_DATASET}.croissant.jsonld",
         ]
     # 外部 curated 清單與資料集(GitHub;已實測會被 AI 引用的來源,讓爬蟲從站也能發現整個 repo 生態)
     ghbase = "https://github.com/alice51849"
@@ -413,6 +426,18 @@ def build_llms_full(comp_map, live_keys):
             f"  - SHACL: {SITE}/data/{ZHUYIN_SKOS_VOCABULARY}.shacl.ttl",
             f"  - DCAT 3 / VoID: {SITE}/data/{ZHUYIN_SKOS_VOCABULARY}.metadata.jsonld",
         ]
+    if os.path.exists(
+        os.path.join(DATA_DIR, f"{ZHUYIN_CROISSANT_DATASET}.croissant.jsonld")
+    ):
+        lines += [
+            "",
+            "## Bopomofo AI/ML dataset",
+            f"- [English Croissant data card]({SITE}/data/{ZHUYIN_CROISSANT_DATASET}.html)",
+            f"- [Traditional Chinese data card]({SITE}/zh-Hant/data/{ZHUYIN_CROISSANT_DATASET}.html)",
+            f"  - UTF-8 CSV: {SITE}/data/{ZHUYIN_CROISSANT_DATASET}.csv",
+            f"  - JSON Lines: {SITE}/data/{ZHUYIN_CROISSANT_DATASET}.jsonl",
+            f"  - MLCommons Croissant 1.1: {SITE}/data/{ZHUYIN_CROISSANT_DATASET}.croissant.jsonld",
+        ]
 
     locale_hubs = []
     for name in sorted(os.listdir(PAGES)):
@@ -437,6 +462,7 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_opds.xml", "sitemap_ro_crate.xml",
         "sitemap_anki.xml",
         "sitemap_vocab.xml",
+        "sitemap_croissant.xml",
     ):
         if os.path.exists(os.path.join(PAGES, filename)):
             lines.append(f"- {SITE}/{filename}")
@@ -465,6 +491,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_ro_crate.xml",
             f"Sitemap: {SITE}/sitemap_anki.xml",
             f"Sitemap: {SITE}/sitemap_vocab.xml",
+            f"Sitemap: {SITE}/sitemap_croissant.xml",
             f"Sitemap: {SITE}/sitemap_index.xml", ""]
     return "\n".join(out)
 
@@ -478,6 +505,7 @@ def build_sitemap_index():
         "sitemap_ro_crate.xml",
         "sitemap_anki.xml",
         "sitemap_vocab.xml",
+        "sitemap_croissant.xml",
     ])
     items = "\n".join(f"  <sitemap><loc>{SITE}/{m}</loc></sitemap>" for m in maps
                       if os.path.exists(os.path.join(PAGES, m)))

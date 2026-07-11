@@ -107,11 +107,11 @@
       ],
       "dcterms:description": [
         {
-          "@value": "Download a static W3C DCAT 3 catalog covering eleven verified Bopomofo datasets and 51 exact distributions.",
+          "@value": "Download a static W3C DCAT 3 catalog covering twelve verified Bopomofo datasets and 56 exact distributions.",
           "@language": "en"
         },
         {
-          "@value": "下載靜態 W3C DCAT 3 目錄，收錄 11 組已驗證注音資料集與 51 個精確版本。",
+          "@value": "下載靜態 W3C DCAT 3 目錄，收錄 12 組已驗證注音資料集與 56 個精確版本。",
           "@language": "zh-Hant"
         }
       ],
@@ -123,7 +123,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T17:19:58Z",
+        "@value": "2026-07-11T18:16:13Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:language": [
@@ -141,7 +141,7 @@
         "@id": "https://www.w3.org/TR/vocab-dcat-3/"
       },
       "dcat:version": {
-        "@value": "1.0.0"
+        "@value": "1.1.0"
       },
       "foaf:homepage": {
         "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html"
@@ -170,6 +170,9 @@
         },
         {
           "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-ocfl"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-iiif"
         },
         {
           "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-anki"
@@ -207,6 +210,9 @@
           "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-ocfl"
         },
         {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-iiif"
+        },
+        {
           "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-anki"
         },
         {
@@ -241,7 +247,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T17:19:58Z",
+        "@value": "2026-07-11T18:16:13Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -451,7 +457,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T17:19:58Z",
+        "@value": "2026-07-11T18:16:13Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -813,7 +819,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T17:19:58Z",
+        "@value": "2026-07-11T18:16:13Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -1281,7 +1287,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T17:19:58Z",
+        "@value": "2026-07-11T18:16:13Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -1539,7 +1545,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T17:19:58Z",
+        "@value": "2026-07-11T18:16:13Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -1800,7 +1806,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T17:19:58Z",
+        "@value": "2026-07-11T18:16:13Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -2044,6 +2050,363 @@
       }
     },
     {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-iiif",
+      "@type": "dcat:CatalogRecord",
+      "dcterms:title": [
+        {
+          "@value": "Catalog entry for Complete Bopomofo IIIF Presentation API 3 resource",
+          "@language": "en"
+        },
+        {
+          "@value": "完整注音 IIIF Presentation API 3 資源目錄紀錄",
+          "@language": "zh-Hant"
+        }
+      ],
+      "dcterms:issued": {
+        "@value": "2026-07-11",
+        "@type": "xsd:date"
+      },
+      "dcterms:modified": {
+        "@value": "2026-07-11T18:16:13Z",
+        "@type": "xsd:dateTime"
+      },
+      "dcterms:conformsTo": {
+        "@id": "https://www.w3.org/TR/vocab-dcat-3/"
+      },
+      "foaf:primaryTopic": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-iiif"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-iiif",
+      "@type": "dcat:Dataset",
+      "dcterms:title": [
+        {
+          "@value": "Complete Bopomofo IIIF Presentation API 3 resource",
+          "@language": "en"
+        },
+        {
+          "@value": "完整注音 IIIF Presentation API 3 資源",
+          "@language": "zh-Hant"
+        }
+      ],
+      "dcterms:description": [
+        {
+          "@value": "A bilingual IIIF Presentation API 3.0.0 Collection and Manifest with 37 ordered Canvases, safe static SVG cards and a deterministic ZIP.",
+          "@language": "en"
+        },
+        {
+          "@value": "雙語 IIIF Presentation API 3.0.0 Collection 與 Manifest，包含 37 個有序 Canvas、安全靜態 SVG 圖卡及 deterministic ZIP。",
+          "@language": "zh-Hant"
+        }
+      ],
+      "dcterms:identifier": {
+        "@value": "LUMI-ZHUYIN-DCAT-IIIF"
+      },
+      "dcterms:issued": {
+        "@value": "2026-07-12",
+        "@type": "xsd:date"
+      },
+      "dcterms:modified": {
+        "@value": "2026-07-11T17:50:00Z",
+        "@type": "xsd:dateTime"
+      },
+      "dcterms:publisher": {
+        "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+      },
+      "dcterms:language": [
+        {
+          "@id": "http://id.loc.gov/vocabulary/iso639-1/en"
+        },
+        {
+          "@id": "http://id.loc.gov/vocabulary/iso639-1/zh"
+        }
+      ],
+      "dcterms:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dcat:landingPage": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html"
+      },
+      "dcterms:conformsTo": {
+        "@id": "https://iiif.io/api/presentation/3.0/"
+      },
+      "dcat:keyword": [
+        {
+          "@value": "IIIF Presentation API 3",
+          "@language": "en"
+        },
+        {
+          "@value": "Bopomofo",
+          "@language": "en"
+        },
+        {
+          "@value": "SVG",
+          "@language": "en"
+        },
+        {
+          "@value": "digital collections",
+          "@language": "en"
+        }
+      ],
+      "dcat:theme": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-language"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-education"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#theme-metadata"
+        }
+      ],
+      "dcat:distribution": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-iiif-1"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-iiif-2"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-iiif-3"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-iiif-4"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-iiif-5"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-iiif-1",
+      "@type": "dcat:Distribution",
+      "dcterms:title": {
+        "@value": "collection.json"
+      },
+      "dcterms:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dcat:accessURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/collection.json"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/collection.json"
+      },
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/application/json"
+      },
+      "dcat:byteSize": {
+        "@value": "1526",
+        "@type": "xsd:nonNegativeInteger"
+      },
+      "dcterms:language": [
+        {
+          "@id": "http://id.loc.gov/vocabulary/iso639-1/en"
+        },
+        {
+          "@id": "http://id.loc.gov/vocabulary/iso639-1/zh"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-iiif-1-sha256"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-iiif-1-sha256",
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+        "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": {
+        "@value": "ee825f28ea05055f08b4be1ae22e03cdb0c4adc55699e590af3ab6b4c8b5e863",
+        "@type": "xsd:hexBinary"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-iiif-2",
+      "@type": "dcat:Distribution",
+      "dcterms:title": {
+        "@value": "manifest.json"
+      },
+      "dcterms:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dcat:accessURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/manifest.json"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/manifest.json"
+      },
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/application/json"
+      },
+      "dcat:byteSize": {
+        "@value": "120940",
+        "@type": "xsd:nonNegativeInteger"
+      },
+      "dcterms:language": [
+        {
+          "@id": "http://id.loc.gov/vocabulary/iso639-1/en"
+        },
+        {
+          "@id": "http://id.loc.gov/vocabulary/iso639-1/zh"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-iiif-2-sha256"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-iiif-2-sha256",
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+        "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": {
+        "@value": "dea96363d882f1b7d04979092b884e2e7b223c7387d6f07360048bce533b082b",
+        "@type": "xsd:hexBinary"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-iiif-3",
+      "@type": "dcat:Distribution",
+      "dcterms:title": {
+        "@value": "bopomofo-37-symbols-iiif-presentation-3.zip"
+      },
+      "dcterms:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dcat:accessURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/bopomofo-37-symbols-iiif-presentation-3.zip"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/bopomofo-37-symbols-iiif-presentation-3.zip"
+      },
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/application/zip"
+      },
+      "dcat:byteSize": {
+        "@value": "222009",
+        "@type": "xsd:nonNegativeInteger"
+      },
+      "dcterms:language": [
+        {
+          "@id": "http://id.loc.gov/vocabulary/iso639-1/en"
+        },
+        {
+          "@id": "http://id.loc.gov/vocabulary/iso639-1/zh"
+        }
+      ],
+      "dcat:packageFormat": {
+        "@id": "https://www.iana.org/assignments/media-types/application/zip"
+      },
+      "spdx:checksum": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-iiif-3-sha256"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-iiif-3-sha256",
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+        "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": {
+        "@value": "9df20d6ebcf4b9fada38fb67ab7874a76f14ead2ab69049a98e18409e7b979f8",
+        "@type": "xsd:hexBinary"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-iiif-4",
+      "@type": "dcat:Distribution",
+      "dcterms:title": {
+        "@value": "checksums-sha256.txt"
+      },
+      "dcterms:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dcat:accessURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/checksums-sha256.txt"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/checksums-sha256.txt"
+      },
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/text/plain"
+      },
+      "dcat:byteSize": {
+        "@value": "3343",
+        "@type": "xsd:nonNegativeInteger"
+      },
+      "dcterms:language": [
+        {
+          "@id": "http://id.loc.gov/vocabulary/iso639-1/en"
+        },
+        {
+          "@id": "http://id.loc.gov/vocabulary/iso639-1/zh"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-iiif-4-sha256"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-iiif-4-sha256",
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+        "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": {
+        "@value": "0bb7f88b06d39fc985d8aff1f1cf52eea4261cfb85c2ca97a3e18f645b57d8f8",
+        "@type": "xsd:hexBinary"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-iiif-5",
+      "@type": "dcat:Distribution",
+      "dcterms:title": {
+        "@value": "metadata.jsonld"
+      },
+      "dcterms:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dcat:accessURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/metadata.jsonld"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/metadata.jsonld"
+      },
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
+      },
+      "dcat:byteSize": {
+        "@value": "18588",
+        "@type": "xsd:nonNegativeInteger"
+      },
+      "dcterms:language": [
+        {
+          "@id": "http://id.loc.gov/vocabulary/iso639-1/en"
+        },
+        {
+          "@id": "http://id.loc.gov/vocabulary/iso639-1/zh"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-iiif-5-sha256"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-iiif-5-sha256",
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+        "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": {
+        "@value": "43279303ad1bb131972a92508117df3b7baa4d724263873d3ab8ae1fba5ab3cd",
+        "@type": "xsd:hexBinary"
+      }
+    },
+    {
       "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-anki",
       "@type": "dcat:CatalogRecord",
       "dcterms:title": [
@@ -2061,7 +2424,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T17:19:58Z",
+        "@value": "2026-07-11T18:16:13Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -2306,7 +2669,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T17:19:58Z",
+        "@value": "2026-07-11T18:16:13Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -2699,7 +3062,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T17:19:58Z",
+        "@value": "2026-07-11T18:16:13Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -3140,7 +3503,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T17:19:58Z",
+        "@value": "2026-07-11T18:16:13Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -3553,7 +3916,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T17:19:58Z",
+        "@value": "2026-07-11T18:16:13Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {

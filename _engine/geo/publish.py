@@ -73,6 +73,10 @@ def main():
             "where-can-a-digital-repository-download-an-ocfl-1-1-object-"
             "for-bopomofo-data"
         ),
+        (
+            "where-can-a-library-load-a-iiif-presentation-3-manifest-for-all-"
+            "37-bopomofo-symbols"
+        ),
     ]
     # 1) 重建
     require([PY, os.path.join(HERE, "build_pages_i18n.py")], env=env)
@@ -97,6 +101,7 @@ def main():
     require([PY, os.path.join(HERE, "zhuyin_csvw_metadata.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_bagit_package.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_ocfl_object.py")], env=env)
+    require([PY, os.path.join(HERE, "zhuyin_iiif_presentation.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_static_api.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_lms_assessment_bank.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_epub_opds.py")], env=env)

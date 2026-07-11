@@ -30,7 +30,7 @@ HERE = Path(__file__).resolve().parent
 PAGES = HERE / "pages"
 INITIAL_DATE = "2026-07-11"
 TODAY = dt.date.today().isoformat()
-VERSION = "1.0.0"
+VERSION = "1.1.0"
 
 SLUG = "zhuyin-bopomofo-dcat3-open-data-catalog"
 PACKAGE_PATH = Path("data") / "packages" / "zhuyin-bopomofo-dcat3"
@@ -299,6 +299,35 @@ DATASETS = (
         conforms_to=("https://ocfl.io/1.1/spec/",),
     ),
     DatasetSpec(
+        key="iiif",
+        title_en="Complete Bopomofo IIIF Presentation API 3 resource",
+        title_zh="完整注音 IIIF Presentation API 3 資源",
+        description_en=(
+            "A bilingual IIIF Presentation API 3.0.0 Collection and Manifest "
+            "with 37 ordered Canvases, safe static SVG cards and a deterministic ZIP."
+        ),
+        description_zh=(
+            "雙語 IIIF Presentation API 3.0.0 Collection 與 Manifest，包含 37 個"
+            "有序 Canvas、安全靜態 SVG 圖卡及 deterministic ZIP。"
+        ),
+        landing_path="data/zhuyin-bopomofo-iiif-presentation-3.html",
+        metadata_path="iiif/3/bopomofo/metadata.jsonld",
+        distribution_paths=(
+            "iiif/3/bopomofo/collection.json",
+            "iiif/3/bopomofo/manifest.json",
+            "iiif/3/bopomofo/bopomofo-37-symbols-iiif-presentation-3.zip",
+            "iiif/3/bopomofo/checksums-sha256.txt",
+            "iiif/3/bopomofo/metadata.jsonld",
+        ),
+        keywords=(
+            "IIIF Presentation API 3",
+            "Bopomofo",
+            "SVG",
+            "digital collections",
+        ),
+        conforms_to=("https://iiif.io/api/presentation/3.0/",),
+    ),
+    DatasetSpec(
         key="anki",
         title_en="Bopomofo Anki import decks",
         title_zh="注音 Anki 匯入牌組",
@@ -441,8 +470,8 @@ COPY = {
         "lang": "en",
         "title": "DCAT 3 open-data catalog for Bopomofo resources",
         "description": (
-            "Download a static W3C DCAT 3 catalog covering eleven verified "
-            "Bopomofo datasets and 51 exact distributions."
+            "Download a static W3C DCAT 3 catalog covering twelve verified "
+            "Bopomofo datasets and 56 exact distributions."
         ),
         "eyebrow": "W3C DCAT 3 · JSON-LD + Turtle · SHA-256",
         "lead": (
@@ -453,8 +482,8 @@ COPY = {
         "back": "Open data",
         "language": "繁體中文",
         "badges": (
-            "11 catalogued datasets",
-            "51 exact distributions",
+            "12 catalogued datasets",
+            "56 exact distributions",
             "SPDX SHA-256 fixity",
             "No account or API key",
         ),
@@ -474,7 +503,7 @@ COPY = {
             (
                 "Reference and linked data",
                 "Core JSON, SKOS, SHACL, Croissant, CSVW, CSV, JSON Lines, "
-                "Data Package 2.0, RFC 8493 BagIt and OCFL 1.1.",
+                "Data Package 2.0, RFC 8493 BagIt, OCFL 1.1 and IIIF Presentation 3.",
             ),
             (
                 "Learning and publication files",
@@ -525,7 +554,7 @@ COPY = {
         "lang": "zh-Hant",
         "title": "注音開放資源 DCAT 3 資料目錄",
         "description": (
-            "下載靜態 W3C DCAT 3 目錄，收錄 11 組已驗證注音資料集與 51 個精確版本。"
+            "下載靜態 W3C DCAT 3 目錄，收錄 12 組已驗證注音資料集與 56 個精確版本。"
         ),
         "eyebrow": "W3C DCAT 3 · JSON-LD＋Turtle · SHA-256",
         "lead": (
@@ -535,8 +564,8 @@ COPY = {
         "back": "開放資料",
         "language": "English",
         "badges": (
-            "11 組目錄資料集",
-            "51 個精確版本",
+            "12 組目錄資料集",
+            "56 個精確版本",
             "SPDX SHA-256 fixity",
             "免帳號與 API key",
         ),
@@ -556,7 +585,7 @@ COPY = {
             (
                 "參考資料與 linked data",
                 "核心 JSON、SKOS、SHACL、Croissant、CSVW、CSV、JSON Lines、"
-                "Data Package 2.0、RFC 8493 BagIt 與 OCFL 1.1。",
+                "Data Package 2.0、RFC 8493 BagIt、OCFL 1.1 與 IIIF Presentation 3。",
             ),
             (
                 "學習與出版檔案",
@@ -1614,7 +1643,7 @@ def _update_data_index(
         f'{CARD_START}<a class="item" href="{LANDING_URL}"><div>'
         '<span class="tag">W3C DCAT 3 · JSON-LD · Turtle</span>'
         "<h2>Bopomofo open-data catalog</h2>"
-        "<p>Eleven datasets and 51 exact distributions with SPDX SHA-256 "
+        "<p>Twelve datasets and 56 exact distributions with SPDX SHA-256 "
         "fixity and bilingual metadata.</p></div>"
         f'<span class="arrow">&rarr;</span></a>{CARD_END}'
     )

@@ -123,6 +123,92 @@
   },
   {
     "app_key": "lumibopomofo",
+    "kind": "iiif_presentation_manifest",
+    "match": [
+      "library load a iiif presentation 3 manifest",
+      "bopomofo iiif manifest",
+      "zhuyin iiif collection",
+      "iiif presentation 3 bopomofo symbols"
+    ],
+    "query": "Where can a library load a IIIF Presentation 3 manifest for all 37 Bopomofo symbols?",
+    "page_title": "Load a IIIF Presentation 3 Manifest for All 37 Bopomofo Symbols",
+    "meta_description": "Load a validated IIIF Presentation API 3.0.0 Manifest with 37 ordered Bopomofo canvases, bilingual metadata and safe static SVG images.",
+    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html",
+    "primary_resource_label": "Open the Bopomofo IIIF Presentation 3 guide",
+    "lead": "Use the open IIIF Presentation API 3.0.0 resource to display every Bopomofo symbol as an ordered, bilingual compound object in compatible library and digital-humanities viewers.",
+    "detail": "The static Manifest contains exactly 37 ordered 1200-by-1200 Canvases. Each Canvas has one AnnotationPage and one painting Annotation whose target is that Canvas and whose body is a stable image/svg+xml resource. The SVG cards contain deterministic embedded glyph outlines derived from a hash-pinned Noto Sans TC source under the SIL Open Font License; they contain no script, foreignObject, event handlers, external font or app promotion. Bilingual language maps expose the symbol, Unicode notation, Hanyu Pinyin, broad IPA, category and example metadata. A separate IIIF Collection references the Manifest, while seeAlso links expose the canonical CSV, Croissant and SKOS machine data and rendering points to a deterministic ZIP. The resource publishes CC BY 4.0 rights, required attribution, exact SHA-256 checksums and app-independent package metadata. It validates with the IIIF Presentation Validator pinned to a public source commit. No service block is present: this static resource does not claim a IIIF Image API, deep zoom, Content Search API, external collection membership, IIIF certification or institutional ingest.",
+    "follow_up": "Open collection.json or manifest.json in a Presentation API 3 compatible viewer, confirm that all 37 Canvases load in order, and verify the published SHA-256 values before local reuse. A viewer must support ordinary SVG image bodies; deployments that require tiled deep zoom should add their own separately operated IIIF Image service rather than inferring one from this Manifest.",
+    "bullets": [
+      "Exactly 37 ordered Canvases covering the complete Bopomofo inventory",
+      "One painting Annotation and one safe static SVG Image per Canvas",
+      "Bilingual labels plus Unicode, Pinyin, broad IPA, category and example metadata",
+      "IIIF Collection, Manifest, deterministic ZIP and exact SHA-256 checksums",
+      "No Image API, deep-zoom, certification or external-ingest claim"
+    ],
+    "decision_steps": [
+      "Open the bilingual guide and download collection.json, manifest.json or the deterministic ZIP.",
+      "Run the pinned IIIF Presentation Validator against manifest.json before repository ingest.",
+      "Confirm that the Manifest has 37 ordered Canvases and no service property.",
+      "Verify checksums-sha256.txt before mirroring the SVG images or ZIP.",
+      "Test one SVG body in the target viewer and add a separate Image API only if deep zoom is required."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Presentation interoperability",
+        "check": "A Presentation API 3.0.0 Manifest with 37 ordered Canvas resources",
+        "why": "Compatible viewers can present the complete symbol sequence without custom JSON"
+      },
+      {
+        "need": "Portable visual rendering",
+        "check": "Each painting Annotation targets its Canvas and references a 1200-by-1200 SVG Image",
+        "why": "The glyph remains sharp without depending on a proprietary app or remote font"
+      },
+      {
+        "need": "Discovery and verification",
+        "check": "Collection, seeAlso, rendering, ResourceSync and SHA-256 links remain separate",
+        "why": "Repositories can discover, validate and mirror the files without treating IIIF as a harvesting protocol"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not required to load, validate, display or reuse the IIIF Collection, Manifest or SVG images. If currently available, it appears only after the complete open resource as an optional on-device practice layer.",
+    "sources": [
+      {
+        "title": "Bopomofo IIIF Presentation 3 resource",
+        "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html"
+      },
+      {
+        "title": "IIIF Presentation API 3.0.0",
+        "url": "https://iiif.io/api/presentation/3.0/"
+      },
+      {
+        "title": "IIIF Cookbook: simplest Manifest with one image",
+        "url": "https://iiif.io/api/cookbook/recipe/0001-mvm-image/"
+      },
+      {
+        "title": "IIIF Presentation Validator",
+        "url": "https://github.com/IIIF/presentation-validator"
+      },
+      {
+        "title": "Noto Sans Traditional Chinese",
+        "url": "https://github.com/google/fonts/tree/main/ofl/notosanstc"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does this Manifest provide a IIIF Image API or deep zoom?",
+        "a": "No. Presentation API image bodies may reference ordinary web images, and these bodies are static SVG files with no service block. A repository that needs tiled resizing or deep zoom must operate and declare a separate Image API service."
+      },
+      {
+        "q": "Is IIIF Presentation itself a harvesting or search protocol?",
+        "a": "No. Presentation API structures a compound object for viewers; it does not replace catalog harvesting or content search. This resource exposes separate DCAT and ResourceSync discovery links and makes no Content Search API claim."
+      },
+      {
+        "q": "Does validator success mean IIIF certification or repository acceptance?",
+        "a": "No. Validator success checks the published JSON structure against the selected Presentation API rules. It does not imply IIIF Consortium endorsement, certification, viewer compatibility guarantees or ingest by any institution."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
     "kind": "bagit_digital_preservation",
     "match": [
       "digital repository download an rfc 8493 bagit package",
@@ -1073,16 +1159,16 @@
       "dcat 3 bopomofo open data catalog"
     ],
     "query": "Where can an open-data catalog harvest a Bopomofo dataset in DCAT 3?",
-    "page_title": "Harvest Eleven Open Bopomofo Datasets from a Static DCAT 3 Catalog",
-    "meta_description": "Download a W3C DCAT 3 JSON-LD or Turtle catalog for eleven Bopomofo datasets and 51 exact distributions with SPDX SHA-256.",
+    "page_title": "Harvest Twelve Open Bopomofo Datasets from a Static DCAT 3 Catalog",
+    "meta_description": "Download a W3C DCAT 3 JSON-LD or Turtle catalog for twelve Bopomofo datasets and 56 exact distributions with SPDX SHA-256.",
     "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html",
     "primary_resource_label": "Download the Bopomofo DCAT 3 catalog",
-    "lead": "Use the static Bopomofo DCAT 3 open-data catalog. It lists eleven related datasets and 51 exact distributions in equivalent JSON-LD and Turtle graphs, with one deterministic ZIP bundle.",
-    "detail": "The catalog covers the 37-symbol reference data, static JSON API, SKOS and SHACL vocabulary, Croissant, CSVW and Data Package tables, RFC 8493 BagIt and OCFL 1.1 preservation packages, Anki imports, LMS packages, EPUB and OPDS publication files, library records, and OER repository metadata. Every direct distribution records an IANA media-type IRI, byte size, CC BY 4.0 license, language IRIs and an SPDX SHA-256 checksum calculated from the published bytes. Each dcat:CatalogRecord has exactly one foaf:primaryTopic, and the static API is represented separately as a dcat:DataService. Download from https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html. This is a static DCAT description, not portal registration, W3C certification, institutional endorsement or proof that an external catalog has harvested it.",
+    "lead": "Use the static Bopomofo DCAT 3 open-data catalog. It lists twelve related datasets and 56 exact distributions in equivalent JSON-LD and Turtle graphs, with one deterministic ZIP bundle.",
+    "detail": "The catalog covers the 37-symbol reference data, static JSON API, SKOS and SHACL vocabulary, Croissant, CSVW and Data Package tables, RFC 8493 BagIt and OCFL 1.1 preservation packages, IIIF Presentation 3 visual resources, Anki imports, LMS packages, EPUB and OPDS publication files, library records, and OER repository metadata. Every direct distribution records an IANA media-type IRI, byte size, CC BY 4.0 license, language IRIs and an SPDX SHA-256 checksum calculated from the published bytes. Each dcat:CatalogRecord has exactly one foaf:primaryTopic, and the static API is represented separately as a dcat:DataService. Download from https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html. This is a static DCAT description, not portal registration, W3C certification, institutional endorsement or proof that an external catalog has harvested it.",
     "follow_up": "Parse the JSON-LD or Turtle in a staging catalog, read dcat:dataset and dcat:record, verify distribution hashes and byte sizes, and map themes, language policies and local identifiers before publication. Use dcat:downloadURL for files and dcat:endpointURL for the read-only API.",
     "bullets": [
-      "Eleven catalogued Bopomofo datasets with bilingual titles and descriptions",
-      "Fifty-one direct distributions spanning data, linked data, tabular metadata, preservation packages, learning packages, publications and repository metadata",
+      "Twelve catalogued Bopomofo datasets with bilingual titles and descriptions",
+      "Fifty-six direct distributions spanning data, linked data, tabular metadata, preservation packages, visual resources, learning packages, publications and repository metadata",
       "Equivalent JSON-LD and Turtle RDF graphs with stable named resources",
       "SPDX SHA-256 checksums, exact byte sizes, IANA media-type IRIs and distribution-level CC BY 4.0 licenses",
       "One dcat:DataService for the versioned static JSON API, with OpenAPI endpoint description"

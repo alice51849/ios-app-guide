@@ -11,6 +11,7 @@ import importlib.util
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -64,6 +65,7 @@ import zhuyin_ocfl_object
 import zhuyin_dcat_catalog
 import zhuyin_epub_opds
 import zhuyin_frictionless_package
+import zhuyin_iiif_presentation
 import zhuyin_heritage_lesson_plan
 import zhuyin_library_storytime_kit
 import zhuyin_library_catalog
@@ -3049,6 +3051,424 @@ class GeneratorTests(unittest.TestCase):
             )
             self.assertIn("is VALID", result.stdout + result.stderr)
 
+    def test_zhuyin_iiif_resource_is_complete_safe_and_deterministic(self):
+        rows = zhuyin_croissant_dataset.records()
+        first = zhuyin_iiif_presentation.make_artifacts(rows)
+        second = zhuyin_iiif_presentation.make_artifacts(rows)
+        zhuyin_iiif_presentation.validate_artifacts(first)
+        self.assertEqual(
+            {
+                key: item["bytes"]
+                for key, item in first.items()
+                if isinstance(item, dict) and "bytes" in item
+            },
+            {
+                key: item["bytes"]
+                for key, item in second.items()
+                if isinstance(item, dict) and "bytes" in item
+            },
+        )
+        self.assertEqual(
+            {
+                symbol_id: item["bytes"]
+                for symbol_id, item in first["images"].items()
+            },
+            {
+                symbol_id: item["bytes"]
+                for symbol_id, item in second["images"].items()
+            },
+        )
+
+        collection = json.loads(first["collection"]["bytes"])
+        manifest = json.loads(first["manifest"]["bytes"])
+        self.assertEqual(
+            zhuyin_iiif_presentation.IIIF_CONTEXT,
+            collection["@context"],
+        )
+        self.assertEqual(
+            zhuyin_iiif_presentation.IIIF_CONTEXT,
+            manifest["@context"],
+        )
+        self.assertIsInstance(manifest["@context"], str)
+        self.assertEqual("Collection", collection["type"])
+        self.assertEqual("Manifest", manifest["type"])
+        self.assertEqual("application/json", first["collection"]["media_type"])
+        self.assertEqual("application/json", first["manifest"]["media_type"])
+        self.assertEqual(
+            [
+                {
+                    "id": zhuyin_iiif_presentation.MANIFEST_URL,
+                    "type": "Manifest",
+                    "label": collection["items"][0]["label"],
+                    "thumbnail": collection["items"][0]["thumbnail"],
+                }
+            ],
+            collection["items"],
+        )
+        self.assertNotIn("items", collection["items"][0])
+        self.assertEqual(
+            zhuyin_iiif_presentation.NAV_DATE,
+            manifest["navDate"],
+        )
+        self.assertLessEqual(
+            dt.datetime.fromisoformat(
+                manifest["navDate"].replace("Z", "+00:00")
+            ),
+            dt.datetime.now(dt.timezone.utc),
+        )
+        self.assertEqual(
+            zhuyin_iiif_presentation.IIIF_RIGHTS,
+            manifest["rights"],
+        )
+        self.assertEqual(
+            [
+                zhuyin_croissant_dataset.CSV_URL,
+                zhuyin_croissant_dataset.METADATA_URL,
+                zhuyin_iiif_presentation.SKOS_JSONLD_URL,
+            ],
+            [item["id"] for item in manifest["seeAlso"]],
+        )
+        self.assertEqual(
+            zhuyin_iiif_presentation.BUNDLE_URL,
+            manifest["rendering"][0]["id"],
+        )
+        self.assertEqual(37, len(manifest["items"]))
+
+        language_maps = []
+        for node in zhuyin_iiif_presentation._walk(manifest):
+            if isinstance(node, dict) and set(node) == {"en", "zh-Hant"}:
+                language_maps.append(node)
+        self.assertTrue(language_maps)
+        self.assertTrue(
+            all(
+                all(
+                    isinstance(values, list)
+                    and values
+                    and all(isinstance(value, str) and value for value in values)
+                    for values in language_map.values()
+                )
+                for language_map in language_maps
+            )
+        )
+
+        glyph_document, glyphs = zhuyin_iiif_presentation.load_glyph_paths()
+        self.assertEqual(
+            [row["symbol_id"] for row in rows],
+            [glyph["symbol_id"] for glyph in glyph_document["glyphs"]],
+        )
+        namespace = "{http://www.w3.org/2000/svg}"
+        for row, canvas in zip(rows, manifest["items"], strict=True):
+            expected_canvas = zhuyin_iiif_presentation.canvas_id(
+                row["symbol_id"]
+            )
+            self.assertEqual(expected_canvas, canvas["id"])
+            self.assertEqual("Canvas", canvas["type"])
+            self.assertEqual(
+                (
+                    zhuyin_iiif_presentation.CARD_SIZE,
+                    zhuyin_iiif_presentation.CARD_SIZE,
+                ),
+                (canvas["width"], canvas["height"]),
+            )
+            self.assertEqual(6, len(canvas["metadata"]))
+            page = canvas["items"][0]
+            self.assertEqual([f"{expected_canvas}/page"], [page["id"]])
+            self.assertEqual("AnnotationPage", page["type"])
+            self.assertEqual(1, len(page["items"]))
+            annotation = page["items"][0]
+            self.assertEqual(f"{expected_canvas}/annotation", annotation["id"])
+            self.assertEqual("painting", annotation["motivation"])
+            self.assertEqual(expected_canvas, annotation["target"])
+            body = annotation["body"]
+            self.assertEqual(
+                zhuyin_iiif_presentation.image_url(row["symbol_id"]),
+                body["id"],
+            )
+            self.assertEqual("Image", body["type"])
+            self.assertEqual("image/svg+xml", body["format"])
+            self.assertEqual(
+                (
+                    zhuyin_iiif_presentation.CARD_SIZE,
+                    zhuyin_iiif_presentation.CARD_SIZE,
+                ),
+                (body["width"], body["height"]),
+            )
+            self.assertNotIn("service", body)
+
+            svg = first["images"][row["symbol_id"]]["bytes"]
+            root = ET.fromstring(svg)
+            self.assertEqual("1200", root.get("width"))
+            self.assertEqual("1200", root.get("height"))
+            title = root.find(f"{namespace}title")
+            path = root.find(f"{namespace}path")
+            self.assertIsNotNone(title)
+            self.assertIn(row["symbol"], title.text)
+            self.assertIsNotNone(path)
+            self.assertEqual(glyphs[row["symbol_id"]]["path"], path.get("d"))
+            self.assertEqual(
+                zhuyin_iiif_presentation._glyph_transform(
+                    glyphs[row["symbol_id"]]
+                ),
+                path.get("transform"),
+            )
+            self.assertTrue(
+                all(
+                    (element.text or "").isascii()
+                    for element in root.findall(f"{namespace}text")
+                )
+            )
+
+        self.assertFalse(
+            any(
+                isinstance(node, dict) and "service" in node
+                for node in zhuyin_iiif_presentation._walk(manifest)
+            )
+        )
+        machine_bytes = [
+            first["collection"]["bytes"],
+            first["manifest"]["bytes"],
+            *[item["bytes"] for item in first["images"].values()],
+            first["bundle"]["bytes"],
+            first["checksums"]["bytes"],
+            first["metadata"]["bytes"],
+        ]
+        for raw in machine_bytes:
+            for marker in zhuyin_iiif_presentation.FORBIDDEN_MACHINE_MARKERS:
+                self.assertNotIn(marker.lower(), raw.lower())
+
+        expected_zip_names = [
+            f"{zhuyin_iiif_presentation.ZIP_ROOT}/{relative}"
+            for relative, _content in first["_zip_members"]
+        ]
+        with zipfile.ZipFile(io.BytesIO(first["bundle"]["bytes"])) as archive:
+            self.assertEqual(expected_zip_names, archive.namelist())
+            for info in archive.infolist():
+                self.assertEqual(
+                    zhuyin_iiif_presentation.ZIP_TIMESTAMP,
+                    info.date_time,
+                )
+                self.assertEqual(zipfile.ZIP_STORED, info.compress_type)
+                self.assertEqual(0o644, (info.external_attr >> 16) & 0o777)
+            for relative, content in first["_zip_members"]:
+                self.assertEqual(
+                    content,
+                    archive.read(
+                        f"{zhuyin_iiif_presentation.ZIP_ROOT}/{relative}"
+                    ),
+                )
+
+        checksum_lines = first["checksums"]["bytes"].decode("ascii").splitlines()
+        self.assertEqual(40, len(checksum_lines))
+        checksum_entries = {
+            path: digest
+            for digest, path in (
+                line.split("  ", 1) for line in checksum_lines
+            )
+        }
+        self.assertNotIn(
+            zhuyin_iiif_presentation.CHECKSUM_FILENAME,
+            checksum_entries,
+        )
+        self.assertNotIn(
+            zhuyin_iiif_presentation.METADATA_FILENAME,
+            checksum_entries,
+        )
+        for artifact in first["_checksum_members"]:
+            self.assertEqual(
+                hashlib.sha256(artifact["bytes"]).hexdigest(),
+                checksum_entries[artifact["path"]],
+            )
+
+        metadata = json.loads(first["metadata"]["bytes"])
+        self.assertEqual(37, metadata["numberOfItems"])
+        self.assertEqual(
+            zhuyin_iiif_presentation.NAV_DATE,
+            metadata["dateModified"],
+        )
+        self.assertEqual(
+            zhuyin_iiif_presentation.IIIF_SPEC_URL,
+            metadata["conformsTo"],
+        )
+        distributions = {
+            item["contentUrl"]: item for item in metadata["distribution"]
+        }
+        for key in (
+            "collection",
+            "manifest",
+            "bundle",
+            "checksums",
+        ):
+            artifact = first[key]
+            self.assertEqual(
+                artifact["sha256"],
+                distributions[artifact["url"]]["sha256"],
+            )
+            self.assertEqual(
+                f"{len(artifact['bytes'])} B",
+                distributions[artifact["url"]]["contentSize"],
+            )
+        self.assertEqual(
+            set(first["images"]),
+            {item["identifier"] for item in metadata["hasPart"]},
+        )
+
+        zhuyin_iiif_presentation.validate_reference_pins()
+        self.assertEqual(
+            "864727d210d54f2537bbe23b3a839436c3992af72de9322af5270897246bd44f",
+            zhuyin_iiif_presentation.FONT_SHA256,
+        )
+        self.assertEqual(
+            "ef9b2a76efe7eaa812502d3315a114255930914a5fa28c414f3584fda550b643",
+            zhuyin_iiif_presentation.GLYPH_PATHS_SHA256,
+        )
+        contaminated = copy.deepcopy(manifest)
+        contaminated["summary"]["en"] = [
+            "https://apps.apple.com/app/id6773017109"
+        ]
+        with self.assertRaises(ValueError):
+            zhuyin_iiif_presentation.validate_manifest(contaminated, rows)
+        unsafe_svg = first["images"][rows[0]["symbol_id"]]["bytes"].replace(
+            b"</svg>",
+            b"<script>alert(1)</script></svg>",
+        )
+        with self.assertRaises(ValueError):
+            zhuyin_iiif_presentation.validate_svg(
+                unsafe_svg,
+                rows[0],
+                glyphs[rows[0]["symbol_id"]],
+            )
+
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            data = pages / "data"
+            data.mkdir(parents=True)
+            catalog = {
+                "@context": "https://schema.org",
+                "@type": "DataCatalog",
+                "dataset": [],
+            }
+            (data / "index.html").write_text(
+                '<script type="application/ld+json">'
+                f"{json.dumps(catalog)}</script><main>"
+                '<p class="foot">Footer</p></main>',
+                encoding="utf-8",
+            )
+            urls = zhuyin_iiif_presentation.build(
+                pages,
+                app_public=False,
+            )
+            resource = pages / zhuyin_iiif_presentation.RESOURCE_PATH
+            expected = [
+                data
+                / f"{zhuyin_iiif_presentation.LANDING_SLUG}.html",
+                pages
+                / "zh-Hant"
+                / "data"
+                / f"{zhuyin_iiif_presentation.LANDING_SLUG}.html",
+                resource / zhuyin_iiif_presentation.COLLECTION_FILENAME,
+                resource / zhuyin_iiif_presentation.MANIFEST_FILENAME,
+                *[
+                    resource / "images" / f"{row['symbol_id']}.svg"
+                    for row in rows
+                ],
+                resource / zhuyin_iiif_presentation.BUNDLE_FILENAME,
+                resource / zhuyin_iiif_presentation.CHECKSUM_FILENAME,
+                resource / zhuyin_iiif_presentation.METADATA_FILENAME,
+                pages / "sitemap_iiif.xml",
+            ]
+            self.assertTrue(all(path.exists() for path in expected))
+            self.assertEqual(len(expected), len(urls))
+            for landing in expected[:2]:
+                page = landing.read_text(encoding="utf-8")
+                self.assertIn("IIIF Presentation API 3", page)
+                self.assertIn(zhuyin_iiif_presentation.MANIFEST_URL, page)
+                self.assertIn(zhuyin_iiif_presentation.BUNDLE_URL, page)
+                self.assertNotIn("apps.apple.com", page)
+                self.assertNotIn('"SoftwareApplication"', page)
+            public = zhuyin_iiif_presentation.render_page(
+                "en",
+                first,
+                app_public=True,
+            )
+            self.assertIn(zhuyin_iiif_presentation.APP_ID, public)
+            self.assertIn('"SoftwareApplication"', public)
+            self.assertGreater(
+                public.index('id="optional-app"'),
+                public.index(zhuyin_iiif_presentation.COPY["en"]["sources"]),
+            )
+            sitemap = (pages / "sitemap_iiif.xml").read_text(
+                encoding="utf-8"
+            )
+            for url in urls[:-1]:
+                self.assertIn(url, sitemap)
+            index = (data / "index.html").read_text(encoding="utf-8")
+            self.assertEqual(
+                1,
+                index.count(
+                    f'href="{zhuyin_iiif_presentation.LANDING_URL}"'
+                ),
+            )
+            schema_match = re.search(
+                r'<script type="application/ld\+json">(.*?)</script>',
+                index,
+                re.DOTALL,
+            )
+            data_catalog = json.loads(schema_match.group(1))
+            self.assertEqual(
+                1,
+                sum(
+                    item.get("url") == zhuyin_iiif_presentation.LANDING_URL
+                    for item in data_catalog["dataset"]
+                ),
+            )
+            mtimes = {
+                path: path.stat().st_mtime_ns
+                for path in (*expected, data / "index.html")
+            }
+            zhuyin_iiif_presentation.build(pages, app_public=False)
+            self.assertEqual(
+                mtimes,
+                {path: path.stat().st_mtime_ns for path in mtimes},
+            )
+
+    @unittest.skipUnless(
+        shutil.which("iiif-validator"),
+        "Pinned IIIF validator is installed in an isolated environment",
+    )
+    def test_zhuyin_iiif_validates_with_official_cli(self):
+        artifacts = zhuyin_iiif_presentation.make_artifacts()
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            paths = []
+            for key in ("collection", "manifest"):
+                path = root / artifacts[key]["filename"]
+                path.write_bytes(artifacts[key]["bytes"])
+                paths.append(path)
+            for path in paths:
+                result = subprocess.run(
+                    [
+                        shutil.which("iiif-validator"),
+                        "validate",
+                        "--version",
+                        "3.0",
+                        str(path),
+                    ],
+                    capture_output=True,
+                    text=True,
+                    check=False,
+                )
+                self.assertEqual(
+                    0,
+                    result.returncode,
+                    result.stdout + result.stderr,
+                )
+                report = json.loads(result.stdout)
+                self.assertEqual(
+                    1,
+                    report["okay"],
+                    json.dumps(report, ensure_ascii=False, indent=2),
+                )
+
     def test_zhuyin_lms_question_bank_is_complete_and_portable(self):
         rows = zhuyin_croissant_dataset.records()
         first = zhuyin_lms_assessment_bank.make_core_artifacts(rows)
@@ -4657,6 +5077,7 @@ class GeneratorTests(unittest.TestCase):
         zhuyin_csvw_metadata.build(pages, app_public=False)
         zhuyin_bagit_package.build(pages, app_public=False)
         zhuyin_ocfl_object.build(pages, app_public=False)
+        zhuyin_iiif_presentation.build(pages, app_public=False)
         zhuyin_static_api.build(pages, app_public=False)
         zhuyin_lms_assessment_bank.build(pages, app_public=False)
         zhuyin_epub_opds.build(pages, app_public=False)
@@ -4686,8 +5107,8 @@ class GeneratorTests(unittest.TestCase):
                     package_dir / zhuyin_dcat_catalog.METADATA_FILENAME
                 ).read_text(encoding="utf-8")
             )
-            self.assertEqual(11, metadata["numberOfItems"])
-            self.assertEqual(11, len(metadata["dataset"]))
+            self.assertEqual(12, metadata["numberOfItems"])
+            self.assertEqual(12, len(metadata["dataset"]))
             self.assertEqual(3, len(metadata["distribution"]))
             self.assertEqual(
                 zhuyin_dcat_catalog.DCAT_SPEC,
@@ -4766,7 +5187,8 @@ class GeneratorTests(unittest.TestCase):
             for landing in (english, traditional):
                 self.assertIn("DCAT 3", landing)
                 self.assertIn("SPDX", landing)
-                self.assertIn("51", landing)
+                self.assertIn("56", landing)
+                self.assertIn("IIIF", landing)
                 self.assertNotIn("apps.apple.com", landing)
                 self.assertNotIn('"SoftwareApplication"', landing)
 
@@ -4845,7 +5267,8 @@ class GeneratorTests(unittest.TestCase):
             )
             for answer in published_answers:
                 content = answer.read_text(encoding="utf-8")
-                self.assertIn("51", content)
+                self.assertIn("56", content)
+                self.assertIn("IIIF", content)
                 self.assertIn("BagIt", content)
                 self.assertNotIn("45 exact distributions", content)
                 self.assertNotIn("45 個確切", content)
@@ -4908,7 +5331,7 @@ class GeneratorTests(unittest.TestCase):
                 format="turtle",
             )
             self.assertTrue(isomorphic(json_graph, turtle_graph))
-            self.assertEqual(1098, len(json_graph))
+            self.assertEqual(1199, len(json_graph))
 
             dcat = zhuyin_dcat_catalog.DCAT
             dcterms = zhuyin_dcat_catalog.DCTERMS
@@ -4942,9 +5365,9 @@ class GeneratorTests(unittest.TestCase):
                 {URIRef(zhuyin_dcat_catalog.CATALOG_ID)},
                 catalogs,
             )
-            self.assertEqual(11, len(records))
-            self.assertEqual(11, len(datasets))
-            self.assertEqual(51, len(distributions))
+            self.assertEqual(12, len(records))
+            self.assertEqual(12, len(datasets))
+            self.assertEqual(56, len(distributions))
             self.assertEqual(
                 {URIRef(zhuyin_dcat_catalog.API_SERVICE)},
                 services,
@@ -5049,6 +5472,18 @@ class GeneratorTests(unittest.TestCase):
                 set(
                     json_graph.objects(
                         ocfl_dataset,
+                        URIRef(dcterms + "conformsTo"),
+                    )
+                ),
+            )
+            iiif_dataset = URIRef(
+                f"{zhuyin_dcat_catalog.LANDING_URL}#dataset-iiif"
+            )
+            self.assertEqual(
+                {URIRef(zhuyin_iiif_presentation.IIIF_SPEC_URL)},
+                set(
+                    json_graph.objects(
+                        iiif_dataset,
                         URIRef(dcterms + "conformsTo"),
                     )
                 ),
@@ -5165,6 +5600,21 @@ class GeneratorTests(unittest.TestCase):
                         ],
                         media_types,
                     )
+                elif url.endswith(
+                    (
+                        "/iiif/3/bopomofo/collection.json",
+                        "/iiif/3/bopomofo/manifest.json",
+                    )
+                ):
+                    self.assertEqual(
+                        [
+                            URIRef(
+                                "https://www.iana.org/assignments/"
+                                "media-types/application/json"
+                            )
+                        ],
+                        media_types,
+                    )
                 elif (
                     url.endswith("/table-schema.json")
                     or "/publications/bopomofo-37-symbol-reference/"
@@ -5191,7 +5641,7 @@ class GeneratorTests(unittest.TestCase):
                     hashlib.sha256(content).hexdigest(),
                     str(values[0]),
                 )
-            self.assertEqual(51, len(checksum_nodes))
+            self.assertEqual(56, len(checksum_nodes))
             self.assertEqual(
                 1,
                 len(
@@ -5351,7 +5801,7 @@ class GeneratorTests(unittest.TestCase):
 
             resources = zhuyin_resourcesync.discover_resources(pages)
             entries = resource_list.findall(f"{{{sitemap_ns}}}url")
-            self.assertEqual(158, len(resources))
+            self.assertEqual(202, len(resources))
             self.assertEqual(len(resources), len(entries))
             resources_by_path = {
                 resource.relative_path.as_posix(): resource
@@ -5369,9 +5819,24 @@ class GeneratorTests(unittest.TestCase):
                     "data/zhuyin-bopomofo-ml-dataset.jsonl"
                 ].media_type,
             )
+            for relative in (
+                "iiif/3/bopomofo/collection.json",
+                "iiif/3/bopomofo/manifest.json",
+            ):
+                self.assertEqual(
+                    "application/json",
+                    resources_by_path[relative].media_type,
+                )
             self.assertEqual(
                 37,
                 sum("/symbols/" in resource.url for resource in resources),
+            )
+            self.assertEqual(
+                37,
+                sum(
+                    "/iiif/3/bopomofo/images/" in resource.url
+                    for resource in resources
+                ),
             )
             by_url = {resource.url: resource for resource in resources}
             for entry in entries:
@@ -7346,6 +7811,8 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_csvw_metadata.py", workflow)
         self.assertIn("zhuyin_bagit_package.py", workflow)
         self.assertIn("zhuyin_ocfl_object.py", workflow)
+        self.assertIn("zhuyin_iiif_presentation.py", workflow)
+        self.assertIn("requirements-iiif-validation.txt", workflow)
         self.assertIn("zhuyin_static_api.py", workflow)
         self.assertIn("zhuyin_lms_assessment_bank.py", workflow)
         self.assertIn("zhuyin_epub_opds.py", workflow)
@@ -7383,6 +7850,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_csvw_metadata.py",
             "zhuyin_bagit_package.py",
             "zhuyin_ocfl_object.py",
+            "zhuyin_iiif_presentation.py",
             "zhuyin_static_api.py",
             "zhuyin_lms_assessment_bank.py",
             "zhuyin_epub_opds.py",
@@ -7409,6 +7877,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("--refresh-slug \"$CSVW_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$BAGIT_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$OCFL_SLUG\"", workflow)
+        self.assertIn("--refresh-slug \"$IIIF_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$TRIP_SLUG\"", workflow)
         self.assertIn('"lumibopomofo" in live_app_keys', workflow)
         self.assertIn('"tripplanet" in live_app_keys', workflow)
@@ -7431,6 +7900,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_csvw_metadata.py", publish)
         self.assertIn("zhuyin_bagit_package.py", publish)
         self.assertIn("zhuyin_ocfl_object.py", publish)
+        self.assertIn("zhuyin_iiif_presentation.py", publish)
         self.assertIn("zhuyin_static_api.py", publish)
         self.assertIn("zhuyin_lms_assessment_bank.py", publish)
         self.assertIn("zhuyin_epub_opds.py", publish)
@@ -7469,6 +7939,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_csvw_metadata.py",
             "zhuyin_bagit_package.py",
             "zhuyin_ocfl_object.py",
+            "zhuyin_iiif_presentation.py",
             "zhuyin_static_api.py",
             "zhuyin_lms_assessment_bank.py",
             "zhuyin_epub_opds.py",

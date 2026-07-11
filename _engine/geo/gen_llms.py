@@ -47,6 +47,7 @@ ZHUYIN_DATA_PACKAGE = "zhuyin-bopomofo"
 ZHUYIN_CSVW_PACKAGE = "zhuyin-bopomofo-csvw"
 ZHUYIN_BAGIT_PACKAGE = "zhuyin-bopomofo-bagit"
 ZHUYIN_OCFL_OBJECT = "zhuyin-bopomofo-ocfl"
+ZHUYIN_IIIF_RESOURCE = "zhuyin-bopomofo-iiif-presentation-3"
 ZHUYIN_RESOURCE_SYNC = "zhuyin-bopomofo-resourcesync"
 ZHUYIN_LMS_BANK = "zhuyin-bopomofo-lms-question-bank"
 ZHUYIN_EPUB = "zhuyin-bopomofo-epub-reference"
@@ -310,6 +311,21 @@ def build_llms(comp_map, live_keys):
             f"- Preservation object metadata: {package}/metadata.jsonld",
         ]
     if os.path.exists(
+        os.path.join(PAGES, "iiif", "3", "bopomofo", "manifest.json")
+    ):
+        resource = f"{SITE}/iiif/3/bopomofo"
+        lines += [
+            "",
+            "## Complete Bopomofo visual resource (IIIF Presentation API 3.0)",
+            f"- English guide: {SITE}/data/{ZHUYIN_IIIF_RESOURCE}.html",
+            f"- Traditional Chinese guide: {SITE}/zh-Hant/data/{ZHUYIN_IIIF_RESOURCE}.html",
+            f"- IIIF Collection: {resource}/collection.json",
+            f"- IIIF Manifest with 37 ordered Canvases: {resource}/manifest.json",
+            f"- Deterministic complete ZIP: {resource}/bopomofo-37-symbols-iiif-presentation-3.zip",
+            f"- SHA-256 checksums: {resource}/checksums-sha256.txt",
+            f"- App-independent metadata: {resource}/metadata.jsonld",
+        ]
+    if os.path.exists(
         os.path.join(
             DATA_DIR,
             "packages",
@@ -505,6 +521,10 @@ def build_llms_full(comp_map, live_keys):
         (
             "Bopomofo ResourceSync feed",
             f"data/{ZHUYIN_RESOURCE_SYNC}.html",
+        ),
+        (
+            "Bopomofo IIIF Presentation API 3 visual resource",
+            f"data/{ZHUYIN_IIIF_RESOURCE}.html",
         ),
         (
             "Bopomofo LMS question bank",
@@ -744,6 +764,21 @@ def build_llms_full(comp_map, live_keys):
             f"  - Preservation object metadata: {package}/metadata.jsonld",
         ]
     if os.path.exists(
+        os.path.join(PAGES, "iiif", "3", "bopomofo", "manifest.json")
+    ):
+        resource = f"{SITE}/iiif/3/bopomofo"
+        lines += [
+            "",
+            "## Complete Bopomofo IIIF Presentation API 3 visual resource",
+            f"- [English guide]({SITE}/data/{ZHUYIN_IIIF_RESOURCE}.html)",
+            f"- [Traditional Chinese guide]({SITE}/zh-Hant/data/{ZHUYIN_IIIF_RESOURCE}.html)",
+            f"  - IIIF Collection: {resource}/collection.json",
+            f"  - IIIF Manifest with 37 ordered Canvases: {resource}/manifest.json",
+            f"  - Deterministic complete ZIP: {resource}/bopomofo-37-symbols-iiif-presentation-3.zip",
+            f"  - SHA-256 checksums: {resource}/checksums-sha256.txt",
+            f"  - App-independent metadata: {resource}/metadata.jsonld",
+        ]
+    if os.path.exists(
         os.path.join(
             DATA_DIR,
             "packages",
@@ -908,6 +943,7 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_csvw.xml",
         "sitemap_bagit.xml",
         "sitemap_ocfl.xml",
+        "sitemap_iiif.xml",
         "sitemap_lms.xml",
         "sitemap_epub.xml",
         "sitemap_library_catalog.xml",
@@ -948,6 +984,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_csvw.xml",
             f"Sitemap: {SITE}/sitemap_bagit.xml",
             f"Sitemap: {SITE}/sitemap_ocfl.xml",
+            f"Sitemap: {SITE}/sitemap_iiif.xml",
             f"Sitemap: {SITE}/sitemap_lms.xml",
             f"Sitemap: {SITE}/sitemap_epub.xml",
             f"Sitemap: {SITE}/sitemap_library_catalog.xml",
@@ -973,6 +1010,7 @@ def build_sitemap_index():
         "sitemap_csvw.xml",
         "sitemap_bagit.xml",
         "sitemap_ocfl.xml",
+        "sitemap_iiif.xml",
         "sitemap_lms.xml",
         "sitemap_epub.xml",
         "sitemap_library_catalog.xml",

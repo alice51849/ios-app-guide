@@ -209,6 +209,7 @@
 - [toeic cefr score](https://alice51849.github.io/ios-app-guide/data/toeic-cefr-score.html) · JSON: https://alice51849.github.io/ios-app-guide/data/toeic-cefr-score.json
 - [zhuyin bopomofo dcat3 open data catalog](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html)
 - [zhuyin bopomofo epub reference](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html)
+- [zhuyin bopomofo iiif presentation 3](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html)
 - [zhuyin bopomofo library catalog records](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html)
 - [zhuyin bopomofo lms question bank](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html)
 - [zhuyin bopomofo ml dataset](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html)
@@ -280,6 +281,15 @@
 - Deterministic OCFL object ZIP: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/bopomofo-37-symbols-ocfl-1.1.zip
 - Outer SHA-256 checksum: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/checksums-sha256.txt
 - Preservation object metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/metadata.jsonld
+
+## Complete Bopomofo visual resource (IIIF Presentation API 3.0)
+- English guide: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html
+- Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-iiif-presentation-3.html
+- IIIF Collection: https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/collection.json
+- IIIF Manifest with 37 ordered Canvases: https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/manifest.json
+- Deterministic complete ZIP: https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/bopomofo-37-symbols-iiif-presentation-3.zip
+- SHA-256 checksums: https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/checksums-sha256.txt
+- App-independent metadata: https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/metadata.jsonld
 
 ## Bopomofo portable Data Package (Data Package 2.0, CC BY 4.0)
 - English package guide: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/

@@ -1,0 +1,64 @@
+{
+  "resource": "Complete Bopomofo IIIF Presentation API 3.0 resource",
+  "retrieved": "2026-07-12",
+  "iiifPresentationApi": {
+    "repository": "https://github.com/IIIF/api",
+    "commit": "28a88829699ebbbe7722b4692cf3b7b67969bc6c",
+    "specification": {
+      "path": "source/presentation/3.0/index.md",
+      "url": "https://raw.githubusercontent.com/IIIF/api/28a88829699ebbbe7722b4692cf3b7b67969bc6c/source/presentation/3.0/index.md",
+      "sha256": "43d3e009418ea7601207c4a2945d3735629238c4427c3b01e81bb6e2a7b13f22"
+    },
+    "context": {
+      "path": "source/presentation/3/context.json",
+      "url": "https://raw.githubusercontent.com/IIIF/api/28a88829699ebbbe7722b4692cf3b7b67969bc6c/source/presentation/3/context.json",
+      "sha256": "4bef9062347af702919b625655735a67a700f847f29f6501708c426159eda02d"
+    }
+  },
+  "officialValidator": {
+    "repository": "https://github.com/IIIF/presentation-validator",
+    "commit": "fb5bd9039494701dc7472cdcaffe83fb5a212463",
+    "schema": {
+      "path": "schema/iiif_3_0.json",
+      "url": "https://raw.githubusercontent.com/IIIF/presentation-validator/fb5bd9039494701dc7472cdcaffe83fb5a212463/schema/iiif_3_0.json",
+      "sha256": "14dd7ee8aee25d959be4b12feddb4179c726909fc85b925f6707f4ab3bfe2ad6"
+    },
+    "command": "iiif-validator validate --version 3.0 <file>"
+  },
+  "glyphSource": {
+    "repository": "https://github.com/google/fonts",
+    "commit": "ec0464b978de222073645d6d3366f3fdf03376d8",
+    "font": {
+      "family": "Noto Sans TC",
+      "path": "ofl/notosanstc/NotoSansTC[wght].ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/ec0464b978de222073645d6d3366f3fdf03376d8/ofl/notosanstc/NotoSansTC%5Bwght%5D.ttf",
+      "bytes": 11941968,
+      "sha256": "864727d210d54f2537bbe23b3a839436c3992af72de9322af5270897246bd44f"
+    },
+    "license": {
+      "name": "SIL Open Font License 1.1",
+      "path": "ofl/notosanstc/OFL.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/ec0464b978de222073645d6d3366f3fdf03376d8/ofl/notosanstc/OFL.txt",
+      "bytes": 4388,
+      "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+    },
+    "instance": {
+      "axis": "wght",
+      "value": 650,
+      "unitsPerEm": 1000,
+      "extractor": "fontTools 4.63.0 varLib.instancer plus SVGPathPen",
+      "coordinatePrecision": 3
+    },
+    "derivedAsset": {
+      "path": "glyph-paths.json",
+      "glyphs": 37,
+      "bytes": 36202,
+      "sha256": "ef9b2a76efe7eaa812502d3315a114255930914a5fa28c414f3584fda550b643"
+    }
+  },
+  "notes": [
+    "The variable font was used only once to derive the committed static path outlines; the font binary is not redistributed.",
+    "The SVG cards expose no IIIF Image API service and make no deep-zoom claim.",
+    "Validation or use of the specifications does not imply IIIF Consortium, Google, or font-author endorsement."
+  ]
+}

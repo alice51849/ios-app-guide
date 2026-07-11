@@ -1,0 +1,5592 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "Complete Bopomofo: 37 Zhuyin symbol cards"
+    ],
+    "zh-Hant": [
+      "完整注音：37 張注音符號圖卡"
+    ]
+  },
+  "summary": {
+    "en": [
+      "An ordered, app-independent IIIF Presentation resource for every standard Bopomofo symbol."
+    ],
+    "zh-Hant": [
+      "依標準教學順序收錄全部注音符號，且不依賴 App 的 IIIF Presentation 資源。"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "en": [
+          "Coverage"
+        ],
+        "zh-Hant": [
+          "涵蓋範圍"
+        ]
+      },
+      "value": {
+        "en": [
+          "37 standard Bopomofo symbols"
+        ],
+        "zh-Hant": [
+          "37 個標準注音符號"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Canonical order"
+        ],
+        "zh-Hant": [
+          "標準順序"
+        ]
+      },
+      "value": {
+        "en": [
+          "21 initials, 3 medials, 13 finals"
+        ],
+        "zh-Hant": [
+          "21 個聲母、3 個介音、13 個韻母"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Image model"
+        ],
+        "zh-Hant": [
+          "影像模式"
+        ]
+      },
+      "value": {
+        "en": [
+          "Static 1200 × 1200 SVG painting bodies; no Image API service"
+        ],
+        "zh-Hant": [
+          "靜態 1200 × 1200 SVG painting body；未提供 Image API service"
+        ]
+      }
+    }
+  ],
+  "rights": "http://creativecommons.org/licenses/by/4.0/",
+  "requiredStatement": {
+    "label": {
+      "en": [
+        "Attribution"
+      ],
+      "zh-Hant": [
+        "標示"
+      ]
+    },
+    "value": {
+      "en": [
+        "Lumi Apps – iOS App Guide, Complete Bopomofo Open Reference"
+      ],
+      "zh-Hant": [
+        "Lumi Apps – iOS App Guide，完整注音開放參考資料"
+      ]
+    }
+  },
+  "provider": [
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/#organization",
+      "type": "Agent",
+      "label": {
+        "en": [
+          "Lumi Apps – iOS App Guide"
+        ],
+        "zh-Hant": [
+          "Lumi Apps – iOS App Guide"
+        ]
+      },
+      "homepage": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide",
+          "type": "Text",
+          "label": {
+            "en": [
+              "iOS App Guide open resources"
+            ],
+            "zh-Hant": [
+              "iOS App Guide 開放資源"
+            ]
+          },
+          "format": "text/html"
+        }
+      ]
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html",
+      "type": "Text",
+      "label": {
+        "en": [
+          "English resource guide"
+        ],
+        "zh-Hant": [
+          "英文資源說明"
+        ]
+      },
+      "format": "text/html",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-iiif-presentation-3.html",
+      "type": "Text",
+      "label": {
+        "en": [
+          "Traditional Chinese resource guide"
+        ],
+        "zh-Hant": [
+          "繁體中文資源說明"
+        ]
+      },
+      "format": "text/html",
+      "language": [
+        "zh-Hant"
+      ]
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv",
+      "type": "Dataset",
+      "label": {
+        "en": [
+          "Canonical 37-row CSV"
+        ],
+        "zh-Hant": [
+          "標準 37 列 CSV"
+        ]
+      },
+      "format": "text/csv"
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
+      "type": "Dataset",
+      "label": {
+        "en": [
+          "MLCommons Croissant metadata"
+        ],
+        "zh-Hant": [
+          "MLCommons Croissant metadata"
+        ]
+      },
+      "format": "application/ld+json"
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld",
+      "type": "Dataset",
+      "label": {
+        "en": [
+          "SKOS Bopomofo vocabulary"
+        ],
+        "zh-Hant": [
+          "SKOS 注音詞彙表"
+        ]
+      },
+      "format": "application/ld+json"
+    }
+  ],
+  "rendering": [
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/bopomofo-37-symbols-iiif-presentation-3.zip",
+      "type": "Dataset",
+      "label": {
+        "en": [
+          "Download the complete deterministic ZIP"
+        ],
+        "zh-Hant": [
+          "下載完整 deterministic ZIP"
+        ]
+      },
+      "format": "application/zip"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3105.svg",
+      "type": "Image",
+      "format": "image/svg+xml",
+      "height": 1200,
+      "width": 1200
+    }
+  ],
+  "navDate": "2026-07-11T17:50:00Z",
+  "items": [
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3105",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "01. Bopomofo ㄅ (b)"
+        ],
+        "zh-Hant": [
+          "01. 注音符號 ㄅ（b）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄅ"
+            ],
+            "zh-Hant": [
+              "ㄅ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+3105"
+            ],
+            "zh-Hant": [
+              "U+3105"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "b"
+            ],
+            "zh-Hant": [
+              "b"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "p"
+            ],
+            "zh-Hant": [
+              "p"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Initial"
+            ],
+            "zh-Hant": [
+              "聲母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "爸 (bà): father"
+            ],
+            "zh-Hant": [
+              "爸（bà）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3105/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3105/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3105.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3105"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3106",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "02. Bopomofo ㄆ (p)"
+        ],
+        "zh-Hant": [
+          "02. 注音符號 ㄆ（p）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄆ"
+            ],
+            "zh-Hant": [
+              "ㄆ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+3106"
+            ],
+            "zh-Hant": [
+              "U+3106"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "p"
+            ],
+            "zh-Hant": [
+              "p"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "pʰ"
+            ],
+            "zh-Hant": [
+              "pʰ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Initial"
+            ],
+            "zh-Hant": [
+              "聲母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "怕 (pà): afraid"
+            ],
+            "zh-Hant": [
+              "怕（pà）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3106/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3106/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3106.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3106"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3107",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "03. Bopomofo ㄇ (m)"
+        ],
+        "zh-Hant": [
+          "03. 注音符號 ㄇ（m）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄇ"
+            ],
+            "zh-Hant": [
+              "ㄇ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+3107"
+            ],
+            "zh-Hant": [
+              "U+3107"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "m"
+            ],
+            "zh-Hant": [
+              "m"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "m"
+            ],
+            "zh-Hant": [
+              "m"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Initial"
+            ],
+            "zh-Hant": [
+              "聲母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "媽 (mā): mother"
+            ],
+            "zh-Hant": [
+              "媽（mā）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3107/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3107/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3107.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3107"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3108",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "04. Bopomofo ㄈ (f)"
+        ],
+        "zh-Hant": [
+          "04. 注音符號 ㄈ（f）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄈ"
+            ],
+            "zh-Hant": [
+              "ㄈ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+3108"
+            ],
+            "zh-Hant": [
+              "U+3108"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "f"
+            ],
+            "zh-Hant": [
+              "f"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "f"
+            ],
+            "zh-Hant": [
+              "f"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Initial"
+            ],
+            "zh-Hant": [
+              "聲母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "飛 (fēi): to fly"
+            ],
+            "zh-Hant": [
+              "飛（fēi）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3108/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3108/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3108.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3108"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3109",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "05. Bopomofo ㄉ (d)"
+        ],
+        "zh-Hant": [
+          "05. 注音符號 ㄉ（d）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄉ"
+            ],
+            "zh-Hant": [
+              "ㄉ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+3109"
+            ],
+            "zh-Hant": [
+              "U+3109"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "d"
+            ],
+            "zh-Hant": [
+              "d"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "t"
+            ],
+            "zh-Hant": [
+              "t"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Initial"
+            ],
+            "zh-Hant": [
+              "聲母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "大 (dà): big"
+            ],
+            "zh-Hant": [
+              "大（dà）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3109/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3109/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3109.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3109"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310A",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "06. Bopomofo ㄊ (t)"
+        ],
+        "zh-Hant": [
+          "06. 注音符號 ㄊ（t）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄊ"
+            ],
+            "zh-Hant": [
+              "ㄊ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+310A"
+            ],
+            "zh-Hant": [
+              "U+310A"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "t"
+            ],
+            "zh-Hant": [
+              "t"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "tʰ"
+            ],
+            "zh-Hant": [
+              "tʰ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Initial"
+            ],
+            "zh-Hant": [
+              "聲母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "天 (tiān): sky"
+            ],
+            "zh-Hant": [
+              "天（tiān）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310A/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310A/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u310A.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310A"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310B",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "07. Bopomofo ㄋ (n)"
+        ],
+        "zh-Hant": [
+          "07. 注音符號 ㄋ（n）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄋ"
+            ],
+            "zh-Hant": [
+              "ㄋ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+310B"
+            ],
+            "zh-Hant": [
+              "U+310B"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "n"
+            ],
+            "zh-Hant": [
+              "n"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "n"
+            ],
+            "zh-Hant": [
+              "n"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Initial"
+            ],
+            "zh-Hant": [
+              "聲母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "你 (nǐ): you"
+            ],
+            "zh-Hant": [
+              "你（nǐ）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310B/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310B/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u310B.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310B"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310C",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "08. Bopomofo ㄌ (l)"
+        ],
+        "zh-Hant": [
+          "08. 注音符號 ㄌ（l）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄌ"
+            ],
+            "zh-Hant": [
+              "ㄌ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+310C"
+            ],
+            "zh-Hant": [
+              "U+310C"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "l"
+            ],
+            "zh-Hant": [
+              "l"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "l"
+            ],
+            "zh-Hant": [
+              "l"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Initial"
+            ],
+            "zh-Hant": [
+              "聲母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "來 (lái): to come"
+            ],
+            "zh-Hant": [
+              "來（lái）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310C/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310C/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u310C.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310C"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310D",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "09. Bopomofo ㄍ (g)"
+        ],
+        "zh-Hant": [
+          "09. 注音符號 ㄍ（g）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄍ"
+            ],
+            "zh-Hant": [
+              "ㄍ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+310D"
+            ],
+            "zh-Hant": [
+              "U+310D"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "g"
+            ],
+            "zh-Hant": [
+              "g"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "k"
+            ],
+            "zh-Hant": [
+              "k"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Initial"
+            ],
+            "zh-Hant": [
+              "聲母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "狗 (gǒu): dog"
+            ],
+            "zh-Hant": [
+              "狗（gǒu）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310D/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310D/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u310D.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310E",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "10. Bopomofo ㄎ (k)"
+        ],
+        "zh-Hant": [
+          "10. 注音符號 ㄎ（k）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄎ"
+            ],
+            "zh-Hant": [
+              "ㄎ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+310E"
+            ],
+            "zh-Hant": [
+              "U+310E"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "k"
+            ],
+            "zh-Hant": [
+              "k"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "kʰ"
+            ],
+            "zh-Hant": [
+              "kʰ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Initial"
+            ],
+            "zh-Hant": [
+              "聲母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "看 (kàn): to look"
+            ],
+            "zh-Hant": [
+              "看（kàn）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310E/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310E/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u310E.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310E"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310F",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "11. Bopomofo ㄏ (h)"
+        ],
+        "zh-Hant": [
+          "11. 注音符號 ㄏ（h）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄏ"
+            ],
+            "zh-Hant": [
+              "ㄏ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+310F"
+            ],
+            "zh-Hant": [
+              "U+310F"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "h"
+            ],
+            "zh-Hant": [
+              "h"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "x"
+            ],
+            "zh-Hant": [
+              "x"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Initial"
+            ],
+            "zh-Hant": [
+              "聲母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "好 (hǎo): good"
+            ],
+            "zh-Hant": [
+              "好（hǎo）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310F/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310F/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u310F.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310F"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3110",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "12. Bopomofo ㄐ (j)"
+        ],
+        "zh-Hant": [
+          "12. 注音符號 ㄐ（j）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄐ"
+            ],
+            "zh-Hant": [
+              "ㄐ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+3110"
+            ],
+            "zh-Hant": [
+              "U+3110"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "j"
+            ],
+            "zh-Hant": [
+              "j"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "tɕ"
+            ],
+            "zh-Hant": [
+              "tɕ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Initial"
+            ],
+            "zh-Hant": [
+              "聲母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "家 (jiā): home"
+            ],
+            "zh-Hant": [
+              "家（jiā）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3110/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3110/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3110.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3110"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3111",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "13. Bopomofo ㄑ (q)"
+        ],
+        "zh-Hant": [
+          "13. 注音符號 ㄑ（q）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄑ"
+            ],
+            "zh-Hant": [
+              "ㄑ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+3111"
+            ],
+            "zh-Hant": [
+              "U+3111"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "q"
+            ],
+            "zh-Hant": [
+              "q"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "tɕʰ"
+            ],
+            "zh-Hant": [
+              "tɕʰ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Initial"
+            ],
+            "zh-Hant": [
+              "聲母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "去 (qù): to go"
+            ],
+            "zh-Hant": [
+              "去（qù）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3111/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3111/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3111.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3111"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3112",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "14. Bopomofo ㄒ (x)"
+        ],
+        "zh-Hant": [
+          "14. 注音符號 ㄒ（x）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄒ"
+            ],
+            "zh-Hant": [
+              "ㄒ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+3112"
+            ],
+            "zh-Hant": [
+              "U+3112"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "x"
+            ],
+            "zh-Hant": [
+              "x"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "ɕ"
+            ],
+            "zh-Hant": [
+              "ɕ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Initial"
+            ],
+            "zh-Hant": [
+              "聲母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "小 (xiǎo): small"
+            ],
+            "zh-Hant": [
+              "小（xiǎo）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3112/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3112/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3112.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3112"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3113",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "15. Bopomofo ㄓ (zh)"
+        ],
+        "zh-Hant": [
+          "15. 注音符號 ㄓ（zh）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄓ"
+            ],
+            "zh-Hant": [
+              "ㄓ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+3113"
+            ],
+            "zh-Hant": [
+              "U+3113"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "zh"
+            ],
+            "zh-Hant": [
+              "zh"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "ʈʂ"
+            ],
+            "zh-Hant": [
+              "ʈʂ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Initial"
+            ],
+            "zh-Hant": [
+              "聲母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "中 (zhōng): middle"
+            ],
+            "zh-Hant": [
+              "中（zhōng）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3113/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3113/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3113.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3113"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3114",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "16. Bopomofo ㄔ (ch)"
+        ],
+        "zh-Hant": [
+          "16. 注音符號 ㄔ（ch）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄔ"
+            ],
+            "zh-Hant": [
+              "ㄔ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+3114"
+            ],
+            "zh-Hant": [
+              "U+3114"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "ch"
+            ],
+            "zh-Hant": [
+              "ch"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "ʈʂʰ"
+            ],
+            "zh-Hant": [
+              "ʈʂʰ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Initial"
+            ],
+            "zh-Hant": [
+              "聲母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "吃 (chī): to eat"
+            ],
+            "zh-Hant": [
+              "吃（chī）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3114/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3114/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3114.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3114"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3115",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "17. Bopomofo ㄕ (sh)"
+        ],
+        "zh-Hant": [
+          "17. 注音符號 ㄕ（sh）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄕ"
+            ],
+            "zh-Hant": [
+              "ㄕ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+3115"
+            ],
+            "zh-Hant": [
+              "U+3115"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "sh"
+            ],
+            "zh-Hant": [
+              "sh"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "ʂ"
+            ],
+            "zh-Hant": [
+              "ʂ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Initial"
+            ],
+            "zh-Hant": [
+              "聲母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "是 (shì): to be"
+            ],
+            "zh-Hant": [
+              "是（shì）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3115/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3115/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3115.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3115"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3116",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "18. Bopomofo ㄖ (r)"
+        ],
+        "zh-Hant": [
+          "18. 注音符號 ㄖ（r）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄖ"
+            ],
+            "zh-Hant": [
+              "ㄖ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+3116"
+            ],
+            "zh-Hant": [
+              "U+3116"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "r"
+            ],
+            "zh-Hant": [
+              "r"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "ʐ"
+            ],
+            "zh-Hant": [
+              "ʐ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Initial"
+            ],
+            "zh-Hant": [
+              "聲母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "人 (rén): person"
+            ],
+            "zh-Hant": [
+              "人（rén）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3116/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3116/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3116.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3116"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3117",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "19. Bopomofo ㄗ (z)"
+        ],
+        "zh-Hant": [
+          "19. 注音符號 ㄗ（z）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄗ"
+            ],
+            "zh-Hant": [
+              "ㄗ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+3117"
+            ],
+            "zh-Hant": [
+              "U+3117"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "z"
+            ],
+            "zh-Hant": [
+              "z"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "ts"
+            ],
+            "zh-Hant": [
+              "ts"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Initial"
+            ],
+            "zh-Hant": [
+              "聲母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "早 (zǎo): early"
+            ],
+            "zh-Hant": [
+              "早（zǎo）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3117/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3117/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3117.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3117"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3118",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "20. Bopomofo ㄘ (c)"
+        ],
+        "zh-Hant": [
+          "20. 注音符號 ㄘ（c）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄘ"
+            ],
+            "zh-Hant": [
+              "ㄘ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+3118"
+            ],
+            "zh-Hant": [
+              "U+3118"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "c"
+            ],
+            "zh-Hant": [
+              "c"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "tsʰ"
+            ],
+            "zh-Hant": [
+              "tsʰ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Initial"
+            ],
+            "zh-Hant": [
+              "聲母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "菜 (cài): vegetable"
+            ],
+            "zh-Hant": [
+              "菜（cài）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3118/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3118/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3118.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3118"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3119",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "21. Bopomofo ㄙ (s)"
+        ],
+        "zh-Hant": [
+          "21. 注音符號 ㄙ（s）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄙ"
+            ],
+            "zh-Hant": [
+              "ㄙ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+3119"
+            ],
+            "zh-Hant": [
+              "U+3119"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "s"
+            ],
+            "zh-Hant": [
+              "s"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "s"
+            ],
+            "zh-Hant": [
+              "s"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Initial"
+            ],
+            "zh-Hant": [
+              "聲母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "三 (sān): three"
+            ],
+            "zh-Hant": [
+              "三（sān）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3119/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3119/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3119.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3119"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3127",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "22. Bopomofo ㄧ (i / yi)"
+        ],
+        "zh-Hant": [
+          "22. 注音符號 ㄧ（i / yi）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄧ"
+            ],
+            "zh-Hant": [
+              "ㄧ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+3127"
+            ],
+            "zh-Hant": [
+              "U+3127"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "i / yi"
+            ],
+            "zh-Hant": [
+              "i / yi"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "i"
+            ],
+            "zh-Hant": [
+              "i"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Medial"
+            ],
+            "zh-Hant": [
+              "介音"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "一 (yī): one"
+            ],
+            "zh-Hant": [
+              "一（yī）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3127/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3127/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3127.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3127"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3128",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "23. Bopomofo ㄨ (u / wu)"
+        ],
+        "zh-Hant": [
+          "23. 注音符號 ㄨ（u / wu）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄨ"
+            ],
+            "zh-Hant": [
+              "ㄨ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+3128"
+            ],
+            "zh-Hant": [
+              "U+3128"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "u / wu"
+            ],
+            "zh-Hant": [
+              "u / wu"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "u"
+            ],
+            "zh-Hant": [
+              "u"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Medial"
+            ],
+            "zh-Hant": [
+              "介音"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "五 (wǔ): five"
+            ],
+            "zh-Hant": [
+              "五（wǔ）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3128/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3128/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3128.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3128"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3129",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "24. Bopomofo ㄩ (ü / yu)"
+        ],
+        "zh-Hant": [
+          "24. 注音符號 ㄩ（ü / yu）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄩ"
+            ],
+            "zh-Hant": [
+              "ㄩ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+3129"
+            ],
+            "zh-Hant": [
+              "U+3129"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "ü / yu"
+            ],
+            "zh-Hant": [
+              "ü / yu"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "y"
+            ],
+            "zh-Hant": [
+              "y"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Medial"
+            ],
+            "zh-Hant": [
+              "介音"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "魚 (yú): fish"
+            ],
+            "zh-Hant": [
+              "魚（yú）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3129/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3129/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3129.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3129"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311A",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "25. Bopomofo ㄚ (a)"
+        ],
+        "zh-Hant": [
+          "25. 注音符號 ㄚ（a）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄚ"
+            ],
+            "zh-Hant": [
+              "ㄚ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+311A"
+            ],
+            "zh-Hant": [
+              "U+311A"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "a"
+            ],
+            "zh-Hant": [
+              "a"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "a"
+            ],
+            "zh-Hant": [
+              "a"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Final"
+            ],
+            "zh-Hant": [
+              "韻母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "大 (dà): big"
+            ],
+            "zh-Hant": [
+              "大（dà）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311A/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311A/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u311A.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311A"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311B",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "26. Bopomofo ㄛ (o)"
+        ],
+        "zh-Hant": [
+          "26. 注音符號 ㄛ（o）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄛ"
+            ],
+            "zh-Hant": [
+              "ㄛ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+311B"
+            ],
+            "zh-Hant": [
+              "U+311B"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "o"
+            ],
+            "zh-Hant": [
+              "o"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "ɔ"
+            ],
+            "zh-Hant": [
+              "ɔ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Final"
+            ],
+            "zh-Hant": [
+              "韻母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "波 (bō): wave"
+            ],
+            "zh-Hant": [
+              "波（bō）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311B/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311B/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u311B.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311B"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311C",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "27. Bopomofo ㄜ (e)"
+        ],
+        "zh-Hant": [
+          "27. 注音符號 ㄜ（e）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄜ"
+            ],
+            "zh-Hant": [
+              "ㄜ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+311C"
+            ],
+            "zh-Hant": [
+              "U+311C"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "e"
+            ],
+            "zh-Hant": [
+              "e"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "ɤ"
+            ],
+            "zh-Hant": [
+              "ɤ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Final"
+            ],
+            "zh-Hant": [
+              "韻母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "喝 (hē): to drink"
+            ],
+            "zh-Hant": [
+              "喝（hē）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311C/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311C/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u311C.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311C"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311D",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "28. Bopomofo ㄝ (ê)"
+        ],
+        "zh-Hant": [
+          "28. 注音符號 ㄝ（ê）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄝ"
+            ],
+            "zh-Hant": [
+              "ㄝ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+311D"
+            ],
+            "zh-Hant": [
+              "U+311D"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "ê"
+            ],
+            "zh-Hant": [
+              "ê"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "ɛ"
+            ],
+            "zh-Hant": [
+              "ɛ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Final"
+            ],
+            "zh-Hant": [
+              "韻母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "誒 (ề): hey (interjection)"
+            ],
+            "zh-Hant": [
+              "誒（ề）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311D/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311D/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u311D.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311E",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "29. Bopomofo ㄞ (ai)"
+        ],
+        "zh-Hant": [
+          "29. 注音符號 ㄞ（ai）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄞ"
+            ],
+            "zh-Hant": [
+              "ㄞ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+311E"
+            ],
+            "zh-Hant": [
+              "U+311E"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "ai"
+            ],
+            "zh-Hant": [
+              "ai"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "ai"
+            ],
+            "zh-Hant": [
+              "ai"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Final"
+            ],
+            "zh-Hant": [
+              "韻母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "愛 (ài): love"
+            ],
+            "zh-Hant": [
+              "愛（ài）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311E/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311E/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u311E.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311E"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311F",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "30. Bopomofo ㄟ (ei)"
+        ],
+        "zh-Hant": [
+          "30. 注音符號 ㄟ（ei）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄟ"
+            ],
+            "zh-Hant": [
+              "ㄟ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+311F"
+            ],
+            "zh-Hant": [
+              "U+311F"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "ei"
+            ],
+            "zh-Hant": [
+              "ei"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "ei"
+            ],
+            "zh-Hant": [
+              "ei"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Final"
+            ],
+            "zh-Hant": [
+              "韻母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "給 (gěi): to give"
+            ],
+            "zh-Hant": [
+              "給（gěi）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311F/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311F/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u311F.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311F"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3120",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "31. Bopomofo ㄠ (ao)"
+        ],
+        "zh-Hant": [
+          "31. 注音符號 ㄠ（ao）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄠ"
+            ],
+            "zh-Hant": [
+              "ㄠ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+3120"
+            ],
+            "zh-Hant": [
+              "U+3120"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "ao"
+            ],
+            "zh-Hant": [
+              "ao"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "au"
+            ],
+            "zh-Hant": [
+              "au"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Final"
+            ],
+            "zh-Hant": [
+              "韻母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "好 (hǎo): good"
+            ],
+            "zh-Hant": [
+              "好（hǎo）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3120/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3120/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3120.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3120"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3121",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "32. Bopomofo ㄡ (ou)"
+        ],
+        "zh-Hant": [
+          "32. 注音符號 ㄡ（ou）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄡ"
+            ],
+            "zh-Hant": [
+              "ㄡ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+3121"
+            ],
+            "zh-Hant": [
+              "U+3121"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "ou"
+            ],
+            "zh-Hant": [
+              "ou"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "ou"
+            ],
+            "zh-Hant": [
+              "ou"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Final"
+            ],
+            "zh-Hant": [
+              "韻母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "有 (yǒu): to have"
+            ],
+            "zh-Hant": [
+              "有（yǒu）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3121/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3121/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3121.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3121"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3122",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "33. Bopomofo ㄢ (an)"
+        ],
+        "zh-Hant": [
+          "33. 注音符號 ㄢ（an）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄢ"
+            ],
+            "zh-Hant": [
+              "ㄢ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+3122"
+            ],
+            "zh-Hant": [
+              "U+3122"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "an"
+            ],
+            "zh-Hant": [
+              "an"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "an"
+            ],
+            "zh-Hant": [
+              "an"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Final"
+            ],
+            "zh-Hant": [
+              "韻母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "安 (ān): peace"
+            ],
+            "zh-Hant": [
+              "安（ān）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3122/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3122/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3122.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3122"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3123",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "34. Bopomofo ㄣ (en)"
+        ],
+        "zh-Hant": [
+          "34. 注音符號 ㄣ（en）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄣ"
+            ],
+            "zh-Hant": [
+              "ㄣ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+3123"
+            ],
+            "zh-Hant": [
+              "U+3123"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "en"
+            ],
+            "zh-Hant": [
+              "en"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "ən"
+            ],
+            "zh-Hant": [
+              "ən"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Final"
+            ],
+            "zh-Hant": [
+              "韻母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "恩 (ēn): grace"
+            ],
+            "zh-Hant": [
+              "恩（ēn）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3123/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3123/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3123.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3123"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3124",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "35. Bopomofo ㄤ (ang)"
+        ],
+        "zh-Hant": [
+          "35. 注音符號 ㄤ（ang）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄤ"
+            ],
+            "zh-Hant": [
+              "ㄤ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+3124"
+            ],
+            "zh-Hant": [
+              "U+3124"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "ang"
+            ],
+            "zh-Hant": [
+              "ang"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "aŋ"
+            ],
+            "zh-Hant": [
+              "aŋ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Final"
+            ],
+            "zh-Hant": [
+              "韻母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "忙 (máng): busy"
+            ],
+            "zh-Hant": [
+              "忙（máng）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3124/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3124/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3124.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3124"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3125",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "36. Bopomofo ㄥ (eng)"
+        ],
+        "zh-Hant": [
+          "36. 注音符號 ㄥ（eng）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄥ"
+            ],
+            "zh-Hant": [
+              "ㄥ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+3125"
+            ],
+            "zh-Hant": [
+              "U+3125"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "eng"
+            ],
+            "zh-Hant": [
+              "eng"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "əŋ"
+            ],
+            "zh-Hant": [
+              "əŋ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Final"
+            ],
+            "zh-Hant": [
+              "韻母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "冷 (lěng): cold"
+            ],
+            "zh-Hant": [
+              "冷（lěng）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3125/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3125/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3125.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3125"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3126",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "37. Bopomofo ㄦ (er)"
+        ],
+        "zh-Hant": [
+          "37. 注音符號 ㄦ（er）"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Symbol"
+            ],
+            "zh-Hant": [
+              "符號"
+            ]
+          },
+          "value": {
+            "en": [
+              "ㄦ"
+            ],
+            "zh-Hant": [
+              "ㄦ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Unicode"
+            ],
+            "zh-Hant": [
+              "Unicode"
+            ]
+          },
+          "value": {
+            "en": [
+              "U+3126"
+            ],
+            "zh-Hant": [
+              "U+3126"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Pinyin"
+            ],
+            "zh-Hant": [
+              "漢語拼音"
+            ]
+          },
+          "value": {
+            "en": [
+              "er"
+            ],
+            "zh-Hant": [
+              "er"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "IPA"
+            ],
+            "zh-Hant": [
+              "國際音標"
+            ]
+          },
+          "value": {
+            "en": [
+              "ɚ"
+            ],
+            "zh-Hant": [
+              "ɚ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Category"
+            ],
+            "zh-Hant": [
+              "分類"
+            ]
+          },
+          "value": {
+            "en": [
+              "Final"
+            ],
+            "zh-Hant": [
+              "韻母"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Example"
+            ],
+            "zh-Hant": [
+              "例字"
+            ]
+          },
+          "value": {
+            "en": [
+              "二 (èr): two"
+            ],
+            "zh-Hant": [
+              "二（èr）"
+            ]
+          }
+        }
+      ],
+      "height": 1200,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3126/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3126/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3126.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "height": 1200,
+                "width": 1200
+              },
+              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3126"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

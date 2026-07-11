@@ -1,0 +1,477 @@
+{
+  "@context": "https://schema.org",
+  "@id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/metadata.jsonld#dataset",
+  "@type": "Dataset",
+  "name": "Complete Bopomofo IIIF Presentation API 3 resource",
+  "alternateName": "完整注音 IIIF Presentation API 3 資源",
+  "description": "Explore and download a deterministic IIIF Presentation API 3.0 Manifest with 37 ordered Bopomofo symbol canvases and safe static SVG art.",
+  "datePublished": "2026-07-12",
+  "dateModified": "2026-07-11T17:50:00Z",
+  "version": "3.0.0",
+  "identifier": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/manifest.json",
+  "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html",
+  "conformsTo": "https://iiif.io/api/presentation/3.0/",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "inLanguage": [
+    "en",
+    "zh-Hant",
+    "zh-Bopo"
+  ],
+  "numberOfItems": 37,
+  "creator": {
+    "@type": "Organization",
+    "name": "Lumi Apps – iOS App Guide",
+    "url": "https://alice51849.github.io/ios-app-guide"
+  },
+  "citation": [
+    "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv",
+    "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
+    "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
+  ],
+  "measurementTechnique": "IIIF Presentation API 3.0 with one static SVG painting body per Canvas; no IIIF Image API service",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentSize": "1526 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/collection.json",
+      "encodingFormat": "application/json",
+      "name": "IIIF Presentation API 3 Collection",
+      "sha256": "ee825f28ea05055f08b4be1ae22e03cdb0c4adc55699e590af3ab6b4c8b5e863"
+    },
+    {
+      "@type": "DataDownload",
+      "contentSize": "120940 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/manifest.json",
+      "encodingFormat": "application/json",
+      "name": "IIIF Presentation API 3.0 Manifest",
+      "sha256": "dea96363d882f1b7d04979092b884e2e7b223c7387d6f07360048bce533b082b"
+    },
+    {
+      "@type": "DataDownload",
+      "contentSize": "222009 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/bopomofo-37-symbols-iiif-presentation-3.zip",
+      "encodingFormat": "application/zip",
+      "name": "Deterministic complete IIIF resource ZIP",
+      "sha256": "9df20d6ebcf4b9fada38fb67ab7874a76f14ead2ab69049a98e18409e7b979f8"
+    },
+    {
+      "@type": "DataDownload",
+      "contentSize": "3343 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/checksums-sha256.txt",
+      "encodingFormat": "text/plain",
+      "name": "SHA-256 checksums for non-recursive IIIF payload files",
+      "sha256": "0bb7f88b06d39fc985d8aff1f1cf52eea4261cfb85c2ca97a3e18f645b57d8f8"
+    }
+  ],
+  "hasPart": [
+    {
+      "@type": "ImageObject",
+      "contentSize": "2706 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3105.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u3105",
+      "name": "Bopomofo ㄅ static SVG card",
+      "sha256": "e0f0b777a7e5e22906910f2e6aea91a65ff9ab1b3a8a20bfe7d28779e944ce90",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "2717 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3106.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u3106",
+      "name": "Bopomofo ㄆ static SVG card",
+      "sha256": "08ac62c402d1aa55e9bc82265cf089b79e1b211a7755cfff6e0715ada6767cdc",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "1463 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3107.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u3107",
+      "name": "Bopomofo ㄇ static SVG card",
+      "sha256": "b72220e99b2ff2e1a527525a164c739857d8c00c05941c46cdc58b3feb6795ad",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "2260 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3108.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u3108",
+      "name": "Bopomofo ㄈ static SVG card",
+      "sha256": "ea3fe848aa271db99f2402e4e62481a34025bc6006643b2ee4c7490a911141b8",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "3021 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3109.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u3109",
+      "name": "Bopomofo ㄉ static SVG card",
+      "sha256": "7449e574c56504a763d973e827112e24f84c5ffad88b69e8d576c50897f42512",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "2530 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u310A.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u310A",
+      "name": "Bopomofo ㄊ static SVG card",
+      "sha256": "cb2e5464933066d527d7d356a9fcd2fe45cc0b23faa1b2216095a9d6ef2ab931",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "2773 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u310B.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u310B",
+      "name": "Bopomofo ㄋ static SVG card",
+      "sha256": "ed08547005eabce874c617508e61fbbe641d418cdef097b60d54cb69dc67537d",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "3115 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u310C.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u310C",
+      "name": "Bopomofo ㄌ static SVG card",
+      "sha256": "ba08d05010ba8dddfde10942db35eb93e66149bd0b61ca92ba343021fbe9d752",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "2484 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u310D.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u310D",
+      "name": "Bopomofo ㄍ static SVG card",
+      "sha256": "b41f8aecb79d041da8edbbe9f118e950ee97fc95f73fcb084add7a05c8769d6f",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "2713 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u310E.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u310E",
+      "name": "Bopomofo ㄎ static SVG card",
+      "sha256": "73f62f84bb15948b43e111a0edd341d8fc1aaaeb8f6d5edf6f1f78073f55944e",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "1799 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u310F.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u310F",
+      "name": "Bopomofo ㄏ static SVG card",
+      "sha256": "305a0029f19c8b5d3bacdaa7842007fe6d7a1502fd6dae16cfda88939e2314e9",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "2071 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3110.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u3110",
+      "name": "Bopomofo ㄐ static SVG card",
+      "sha256": "7feff6e0e9e85e482c0cc8d1a34c71f349e216af47ff8b2cf788b295669f0e64",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "1949 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3111.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u3111",
+      "name": "Bopomofo ㄑ static SVG card",
+      "sha256": "708e5a234ada6e8f030ff1507ec30e6b2cca30d02a918de04e59449d633ccbc7",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "1478 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3112.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u3112",
+      "name": "Bopomofo ㄒ static SVG card",
+      "sha256": "b255fedb626213e710bebc51f236a4656198edaf2cc2ad52a3f25eb260f6607d",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "1559 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3113.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u3113",
+      "name": "Bopomofo ㄓ static SVG card",
+      "sha256": "0c7d5938f448e68eb2c672f72fe7441c55d77301fa3f0051dad37a637d2caf7b",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "2151 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3114.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u3114",
+      "name": "Bopomofo ㄔ static SVG card",
+      "sha256": "b22ddfa3c28a4bd38db7627d12614915796cf36a07b46d23ac18d56f63486d66",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "1844 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3115.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u3115",
+      "name": "Bopomofo ㄕ static SVG card",
+      "sha256": "cd6864318a35126c9148fb4ec489073e789de514b59c15e39a0948fa9b02b2d9",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "2220 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3116.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u3116",
+      "name": "Bopomofo ㄖ static SVG card",
+      "sha256": "c011b9bfdc583efa2fcaf1477b7457a604635da87bb810bb3722ebcb3addde5c",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "2126 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3117.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u3117",
+      "name": "Bopomofo ㄗ static SVG card",
+      "sha256": "a13bb768d58832cd02f33f5042c360ee53f06c9454e6d4739eea1b90b60d6551",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "2480 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3118.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u3118",
+      "name": "Bopomofo ㄘ static SVG card",
+      "sha256": "222fc6a391b295b10aa1f61525750029a779f9d5e9bacf769a420eb7e2afd715",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "2520 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3119.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u3119",
+      "name": "Bopomofo ㄙ static SVG card",
+      "sha256": "2225174e3acd34ade0e683d18e93f0b5832c36da738b36fc6022d3ca00c30d68",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "1442 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3127.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u3127",
+      "name": "Bopomofo ㄧ static SVG card",
+      "sha256": "c729a98ba352177440c5452f017d476683b084cf71f9a51a673fead1ae6bd54a",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "2080 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3128.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u3128",
+      "name": "Bopomofo ㄨ static SVG card",
+      "sha256": "c89294abd225b22d2432a55eeae1de5cbbc58f90abb1a5b48ecde2d762de4f88",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "2001 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3129.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u3129",
+      "name": "Bopomofo ㄩ static SVG card",
+      "sha256": "c458eeb11bca3ae7885fcdf4c65591be1cd190de670ad9c15c2d54132d593607",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "2005 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u311A.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u311A",
+      "name": "Bopomofo ㄚ static SVG card",
+      "sha256": "4a46f3d21acf9cf8027be85e125adcca0273a99d9f8bcda841011d4ef3af679a",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "1998 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u311B.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u311B",
+      "name": "Bopomofo ㄛ static SVG card",
+      "sha256": "0dc49e14eb8923f2120b460d41f28a0ab5550043b4f82669c304c5a60b3496ed",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "1996 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u311C.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u311C",
+      "name": "Bopomofo ㄜ static SVG card",
+      "sha256": "6ee0dc952f3d62568d4182a1327ed2c249c427ab82976fe665f9e3385f8fc295",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "2435 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u311D.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u311D",
+      "name": "Bopomofo ㄝ static SVG card",
+      "sha256": "99be981396fdb4e64e6ece651543444be248633bd70116350f44a6ad971eb6e8",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "2747 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u311E.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u311E",
+      "name": "Bopomofo ㄞ static SVG card",
+      "sha256": "9ae6edbfa0cfee9a78f9c4e8f86bd2587964b60eae3175b2eb097e55a94361c6",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "1991 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u311F.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u311F",
+      "name": "Bopomofo ㄟ static SVG card",
+      "sha256": "a80ec6629c9a406cd1e3e355713082d8066461d671f62658efa18c918e52e2b4",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "3326 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3120.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u3120",
+      "name": "Bopomofo ㄠ static SVG card",
+      "sha256": "3dd6b1198b08a340a9e483a807480b71906d257aed0de4b6a319a0ed81ed3e3c",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "2122 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3121.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u3121",
+      "name": "Bopomofo ㄡ static SVG card",
+      "sha256": "18fe4b605f065d43e0ef1d39f0963a70a0d0f3a92a33ab33140cbc59c755789d",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "2726 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3122.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u3122",
+      "name": "Bopomofo ㄢ static SVG card",
+      "sha256": "e6839c925adb5c479f68a4efe714f8ed20a22657aafdfdb44cbd60f6e744f2d5",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "2453 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3123.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u3123",
+      "name": "Bopomofo ㄣ static SVG card",
+      "sha256": "c3d2cad6409f6c5aa96902fb1c83cbd74f08bb81b7ce699f05e55e9d836b7606",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "2537 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3124.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u3124",
+      "name": "Bopomofo ㄤ static SVG card",
+      "sha256": "ee4e73bcac20e930dc18d81fe47fa267faa387650b3b39bafddbe7b38b653307",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "2290 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3125.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u3125",
+      "name": "Bopomofo ㄥ static SVG card",
+      "sha256": "5a588d85059c038f18da9354db0a48ad909b76fdb83c55f5d6d1c912d7b4c152",
+      "height": 1200,
+      "width": 1200
+    },
+    {
+      "@type": "ImageObject",
+      "contentSize": "2402 B",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3126.svg",
+      "encodingFormat": "image/svg+xml",
+      "identifier": "u3126",
+      "name": "Bopomofo ㄦ static SVG card",
+      "sha256": "322da1b66a9c8311400bb8c0a2d3cb610b5cd558e20120ea6556c01696888cdc",
+      "height": 1200,
+      "width": 1200
+    }
+  ],
+  "usageInfo": "The checksum list covers collection.json, manifest.json, all 37 SVG files and the ZIP. It deliberately excludes itself and this metadata document to avoid recursive hashes."
+}

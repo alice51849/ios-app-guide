@@ -50,6 +50,11 @@ STATE_VERSION = 2
 LANDING_PATH = Path("data") / "zhuyin-bopomofo-resourcesync.html"
 ZH_LANDING_PATH = Path("zh-Hant") / LANDING_PATH
 SITEMAP_PATH = Path("sitemap_resourcesync.xml")
+IIIF_PATH = Path("iiif") / "3" / "bopomofo"
+IIIF_IMAGE_PATHS = tuple(
+    IIIF_PATH / "images" / f"u{codepoint:04X}.svg"
+    for codepoint in range(0x3105, 0x312A)
+)
 
 SOURCE_DESCRIPTION_URL = "https://alice51849.github.io/.well-known/resourcesync"
 SOURCE_DESCRIPTION_COPY_URL = f"{SITE}/{SOURCE_DESCRIPTION_COPY_PATH.as_posix()}"
@@ -71,6 +76,7 @@ CONTENT_PATTERNS = (
     "data/packages/zhuyin-bopomofo-csvw/**/*",
     "data/packages/zhuyin-bopomofo-bagit/**/*",
     "data/packages/zhuyin-bopomofo-ocfl/**/*",
+    "iiif/3/bopomofo/**/*",
     "publications/bopomofo-37-symbol-reference/**/*",
     "opds/bopomofo-37-symbol-reference.*",
     "api/v1/bopomofo-symbols/**/*",
@@ -188,6 +194,12 @@ REQUIRED_PATHS = (
     / "zhuyin-bopomofo-ocfl"
     / "checksums-sha256.txt",
     Path("data") / "packages" / "zhuyin-bopomofo-ocfl" / "metadata.jsonld",
+    IIIF_PATH / "collection.json",
+    IIIF_PATH / "manifest.json",
+    IIIF_PATH / "bopomofo-37-symbols-iiif-presentation-3.zip",
+    IIIF_PATH / "checksums-sha256.txt",
+    IIIF_PATH / "metadata.jsonld",
+    *IIIF_IMAGE_PATHS,
 )
 CARD_START = "<!-- resourcesync-card:start -->"
 CARD_END = "<!-- resourcesync-card:end -->"
@@ -234,6 +246,10 @@ COPY = {
                 "Portable packages",
                 "Croissant, Data Package, LMS imports, accessible EPUB editions, "
                 "OER metadata, RFC 8493 BagIt, OCFL 1.1 and the DCAT 3 catalog",
+            ),
+            (
+                "Visual interoperability",
+                "IIIF Presentation API 3 Collection, Manifest and 37 static SVG cards",
             ),
             ("Static API", "OpenAPI plus all 37 versioned symbol responses"),
             ("Open teaching tools", "Bilingual guides, decks and printable activities"),
@@ -303,6 +319,10 @@ COPY = {
                 "Croissant、Data Package、LMS 匯入檔、無障礙 EPUB 版本、"
                 "OER metadata、RFC 8493 BagIt、OCFL 1.1 與 DCAT 3 目錄",
             ),
+            (
+                "視覺互通資源",
+                "IIIF Presentation API 3 Collection、Manifest 與 37 張靜態 SVG 圖卡",
+            ),
             ("靜態 API", "OpenAPI 與完整 37 個版本化符號回應"),
             ("開放教學工具", "雙語指南、牌組與可列印活動"),
         ),
@@ -354,6 +374,7 @@ def _media_type(path: Path) -> str:
         ".jsonld": "application/ld+json",
         ".jsonl": "text/plain",
         ".nt": "application/n-triples",
+        ".svg": "image/svg+xml",
         ".tsv": "text/tab-separated-values",
         ".ttl": "text/turtle",
         ".xhtml": "application/xhtml+xml",

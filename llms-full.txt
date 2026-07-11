@@ -13,6 +13,7 @@
 - [Open data](https://alice51849.github.io/ios-app-guide/data/index.html)
 - [Open static APIs](https://alice51849.github.io/ios-app-guide/api/index.html)
 - [Bopomofo ResourceSync feed](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html)
+- [Bopomofo IIIF Presentation API 3 visual resource](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html)
 - [Bopomofo LMS question bank](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html)
 - [Accessible Bopomofo EPUB and downloadable catalog files](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html)
 - [Bopomofo EPUB library catalog records](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html)
@@ -433,6 +434,7 @@
   - JSON: https://alice51849.github.io/ios-app-guide/data/toeic-cefr-score.json
 - [zhuyin bopomofo dcat3 open data catalog](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html)
 - [zhuyin bopomofo epub reference](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html)
+- [zhuyin bopomofo iiif presentation 3](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html)
 - [zhuyin bopomofo library catalog records](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html)
 - [zhuyin bopomofo lms question bank](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html)
 - [zhuyin bopomofo ml dataset](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html)
@@ -660,6 +662,15 @@
   - Outer SHA-256 checksum: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/checksums-sha256.txt
   - Preservation object metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/metadata.jsonld
 
+## Complete Bopomofo IIIF Presentation API 3 visual resource
+- [English guide](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html)
+- [Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-iiif-presentation-3.html)
+  - IIIF Collection: https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/collection.json
+  - IIIF Manifest with 37 ordered Canvases: https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/manifest.json
+  - Deterministic complete ZIP: https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/bopomofo-37-symbols-iiif-presentation-3.zip
+  - SHA-256 checksums: https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/checksums-sha256.txt
+  - App-independent metadata: https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/metadata.jsonld
+
 ## Bopomofo portable Data Package
 - [English Data Package guide](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/)
 - [Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo/)
@@ -814,6 +825,7 @@
 - https://alice51849.github.io/ios-app-guide/sitemap_csvw.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_bagit.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_ocfl.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_iiif.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_lms.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_epub.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_library_catalog.xml

@@ -265,9 +265,23 @@ class GeneratorTests(unittest.TestCase):
                 (root / "tools" / f"tool-{index:02d}.html").write_text(
                     f"<title>tool-{index:02d}</title>"
                     '<script type="application/ld+json">'
-                    '{"dateModified":"2020-01-01"}</script>',
+                    '{"dateModified":"2026-07-14"}</script>',
                     encoding="utf-8",
                 )
+            for index in range(10):
+                (root / "data" / f"dataset-{index:02d}.html").write_text(
+                    f"<title>dataset-{index:02d}</title>"
+                    '<script type="application/ld+json">'
+                    '{"dateModified":"2026-07-15"}</script>',
+                    encoding="utf-8",
+                )
+            required_data = root / gen_feed.REQUIRED_RELATIVE_PATHS[0]
+            required_data.write_text(
+                "<title>Required authority dataset</title>"
+                '<script type="application/ld+json">'
+                '{"dateModified":"2020-01-01"}</script>',
+                encoding="utf-8",
+            )
             items = gen_feed.collect()
         self.assertEqual(gen_feed.MAX_ITEMS, len(items))
         urls = {url for _, url, _ in items}
@@ -276,13 +290,15 @@ class GeneratorTests(unittest.TestCase):
                 f"{gen_feed.SITE}/guides/app-one.html",
                 f"{gen_feed.SITE}/guides/app-two.html",
                 f"{gen_feed.SITE}/answers/owned-resource.html",
+                f"{gen_feed.SITE}/{gen_feed.REQUIRED_RELATIVE_PATHS[0]}",
             }
             <= urls
         )
-        self.assertEqual(
-            gen_feed.RESERVED_SUBDIR_LIMITS[0][1],
-            sum("/tools/" in url for url in urls),
-        )
+        for subdir, limit in gen_feed.RESERVED_SUBDIR_LIMITS:
+            self.assertEqual(
+                limit,
+                sum(f"/{subdir}/" in url for url in urls),
+            )
 
     def test_syndication_feed_serializers_share_one_valid_item_selection(self):
         with tempfile.TemporaryDirectory() as directory:

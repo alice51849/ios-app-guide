@@ -18,7 +18,10 @@ PAGES = os.path.join(HERE, "pages")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
 MAX_ITEMS = 60
 REQUIRED_SUBDIRS = ("guides",)
-RESERVED_SUBDIR_LIMITS = (("tools", 10),)
+REQUIRED_RELATIVE_PATHS = (
+    "data/zhuyin-bopomofo-dcat3-open-data-catalog.html",
+)
+RESERVED_SUBDIR_LIMITS = (("tools", 10), ("data", 3))
 FEED_TITLE = "iOS App Guide — latest answers &amp; guides"
 DATE_MODIFIED_RE = re.compile(
     r'"dateModified"\s*:\s*"([0-9]{4}-[0-9]{2}-[0-9]{2}(?:T[^"]+)?)"'
@@ -188,6 +191,10 @@ def collect():
         for item in items
         if (
             any(f"/{subdir}/" in item[1] for subdir in REQUIRED_SUBDIRS)
+            or any(
+                item[1] == f"{SITE}/{relative}"
+                for relative in REQUIRED_RELATIVE_PATHS
+            )
             or _has_owned_resource_cta(item[2])
         )
     ]
@@ -196,7 +203,7 @@ def collect():
     selected = list(required)
     selected_urls = {item[1] for item in selected}
     for subdir, limit in RESERVED_SUBDIR_LIMITS:
-        added = 0
+        added = sum(f"/{subdir}/" in item[1] for item in selected)
         for item in items:
             if len(selected) >= MAX_ITEMS or added >= limit:
                 break
@@ -204,9 +211,22 @@ def collect():
                 selected.append(item)
                 selected_urls.add(item[1])
                 added += 1
-    selected += [
-        item for item in items if item[1] not in selected_urls
-    ][: MAX_ITEMS - len(selected)]
+    reserved_paths = tuple(f"/{subdir}/" for subdir, _ in RESERVED_SUBDIR_LIMITS)
+    for item in items:
+        if len(selected) >= MAX_ITEMS:
+            break
+        if (
+            item[1] not in selected_urls
+            and not any(path in item[1] for path in reserved_paths)
+        ):
+            selected.append(item)
+            selected_urls.add(item[1])
+    for item in items:
+        if len(selected) >= MAX_ITEMS:
+            break
+        if item[1] not in selected_urls:
+            selected.append(item)
+            selected_urls.add(item[1])
     selected.sort(reverse=True)
     return selected
 

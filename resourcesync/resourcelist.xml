@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:rs="http://www.openarchives.org/rs/terms/">
   <rs:ln rel="describedby" href="https://alice51849.github.io/ios-app-guide/resourcesync/bopomofo-collection.jsonld" type="application/ld+json"/>
   <rs:ln rel="up" href="https://alice51849.github.io/ios-app-guide/resourcesync/capabilitylist.xml" type="application/xml"/>
-  <rs:md capability="resourcelist" at="2026-07-11T14:23:16Z"/>
+  <rs:md capability="resourcelist" at="2026-07-11T14:26:15Z"/>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.html</loc>
     <lastmod>2026-07-11</lastmod>
@@ -512,7 +512,7 @@
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/tools/zhuyin-readiness-check.html</loc>
-    <rs:md hash="sha-256:e3d34be2e5618f9ef1ab2574203a06a492f67dedfa174b0bbdcca00057cdd29e" length="32564" type="text/html"/>
+    <rs:md hash="sha-256:13376fff840b5fa92ced40962ae2e6893128322f342a8823d6a09595abbd1ac3" length="32690" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/api/v1/bopomofo-symbols/index.html</loc>
@@ -591,6 +591,6 @@
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-readiness-check.html</loc>
-    <rs:md hash="sha-256:76498c7ec2b1a5fdbac3feedda9dcde38a95a5cf40167fd03e4ba0faf32e5bbe" length="32245" type="text/html"/>
+    <rs:md hash="sha-256:3eb265b89426f23a89e9df9db4734bce8f49b22bc2fa612a7fbda376f5f98be3" length="32371" type="text/html"/>
   </url>
 </urlset>

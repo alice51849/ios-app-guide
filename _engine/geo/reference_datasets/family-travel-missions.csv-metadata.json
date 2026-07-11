@@ -1,0 +1,225 @@
+{
+  "@context": "http://www.w3.org/ns/csvw",
+  "url": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.csv",
+  "dc:title": "Privacy-first family travel mission taxonomy",
+  "dc:description": "Bilingual, machine-readable observation prompts for 12 family-travel settings. The taxonomy provides 84 targets and three non-age, non-ability participation modes without requesting names, ages, destinations, locations, photos, itineraries or completion records.",
+  "dc:license": "https://creativecommons.org/licenses/by/4.0/",
+  "dc:modified": "2026-07-11",
+  "dialect": {
+    "encoding": "utf-8",
+    "header": true,
+    "lineTerminators": [
+      "\n"
+    ]
+  },
+  "tableSchema": {
+    "columns": [
+      {
+        "name": "scenario_id",
+        "titles": [
+          "scenario_id",
+          "scenario id"
+        ],
+        "dc:description": "Stable kebab-case scenario identifier.",
+        "datatype": "string",
+        "required": true
+      },
+      {
+        "name": "scenario_name_en",
+        "titles": [
+          "scenario_name_en",
+          "scenario name en"
+        ],
+        "dc:description": "Scenario name in English.",
+        "datatype": "string",
+        "required": true,
+        "lang": "en"
+      },
+      {
+        "name": "scenario_name_zh_hant",
+        "titles": [
+          "scenario_name_zh_hant",
+          "scenario name zh hant"
+        ],
+        "dc:description": "Scenario name in Traditional Chinese.",
+        "datatype": "string",
+        "required": true,
+        "lang": "zh-Hant"
+      },
+      {
+        "name": "target_id",
+        "titles": [
+          "target_id",
+          "target id"
+        ],
+        "dc:description": "Stable kebab-case target identifier within the scenario.",
+        "datatype": "string",
+        "required": true
+      },
+      {
+        "name": "target_en",
+        "titles": [
+          "target_en",
+          "target en"
+        ],
+        "dc:description": "Observation target in English.",
+        "datatype": "string",
+        "required": true,
+        "lang": "en"
+      },
+      {
+        "name": "target_zh_hant",
+        "titles": [
+          "target_zh_hant",
+          "target zh hant"
+        ],
+        "dc:description": "Observation target in Traditional Chinese.",
+        "datatype": "string",
+        "required": true,
+        "lang": "zh-Hant"
+      },
+      {
+        "name": "participation_mode_id",
+        "titles": [
+          "participation_mode_id",
+          "participation mode id"
+        ],
+        "dc:description": "Stable non-age, non-ability participation-mode identifier.",
+        "datatype": "string",
+        "required": true
+      },
+      {
+        "name": "participation_mode_name_en",
+        "titles": [
+          "participation_mode_name_en",
+          "participation mode name en"
+        ],
+        "dc:description": "Participation-mode name in English.",
+        "datatype": "string",
+        "required": true,
+        "lang": "en"
+      },
+      {
+        "name": "participation_mode_name_zh_hant",
+        "titles": [
+          "participation_mode_name_zh_hant",
+          "participation mode name zh hant"
+        ],
+        "dc:description": "Participation-mode name in Traditional Chinese.",
+        "datatype": "string",
+        "required": true,
+        "lang": "zh-Hant"
+      },
+      {
+        "name": "prompt_en",
+        "titles": [
+          "prompt_en",
+          "prompt en"
+        ],
+        "dc:description": "Complete prompt in English.",
+        "datatype": "string",
+        "required": true,
+        "lang": "en"
+      },
+      {
+        "name": "prompt_zh_hant",
+        "titles": [
+          "prompt_zh_hant",
+          "prompt zh hant"
+        ],
+        "dc:description": "Complete prompt in Traditional Chinese.",
+        "datatype": "string",
+        "required": true,
+        "lang": "zh-Hant"
+      },
+      {
+        "name": "stationary_required",
+        "titles": [
+          "stationary_required",
+          "stationary required"
+        ],
+        "dc:description": "Whether the prompt must be used while safely stationary or seated.",
+        "datatype": "boolean",
+        "required": true
+      },
+      {
+        "name": "photo_task_allowed",
+        "titles": [
+          "photo_task_allowed",
+          "photo task allowed"
+        ],
+        "dc:description": "Whether the taxonomy permits a photo task; always false.",
+        "datatype": "boolean",
+        "required": true
+      },
+      {
+        "name": "driver_interaction_allowed",
+        "titles": [
+          "driver_interaction_allowed",
+          "driver interaction allowed"
+        ],
+        "dc:description": "Whether a driver may interact with the prompt; always false.",
+        "datatype": "boolean",
+        "required": true
+      },
+      {
+        "name": "adult_supervision_required",
+        "titles": [
+          "adult_supervision_required",
+          "adult supervision required"
+        ],
+        "dc:description": "Whether a supervising adult is required; always true.",
+        "datatype": "boolean",
+        "required": true
+      },
+      {
+        "name": "skip_allowed",
+        "titles": [
+          "skip_allowed",
+          "skip allowed"
+        ],
+        "dc:description": "Whether the participant may always skip the prompt; always true.",
+        "datatype": "boolean",
+        "required": true
+      },
+      {
+        "name": "safety_boundary_en",
+        "titles": [
+          "safety_boundary_en",
+          "safety boundary en"
+        ],
+        "dc:description": "Scenario-specific safety boundary in English.",
+        "datatype": "string",
+        "required": true,
+        "lang": "en"
+      },
+      {
+        "name": "safety_boundary_zh_hant",
+        "titles": [
+          "safety_boundary_zh_hant",
+          "safety boundary zh hant"
+        ],
+        "dc:description": "Scenario-specific safety boundary in Traditional Chinese.",
+        "datatype": "string",
+        "required": true,
+        "lang": "zh-Hant"
+      },
+      {
+        "name": "official_reference_ids",
+        "titles": [
+          "official_reference_ids",
+          "official reference ids"
+        ],
+        "dc:description": "Pipe-delimited IDs of relevant official safety references.",
+        "datatype": "string",
+        "required": false,
+        "separator": "|"
+      }
+    ],
+    "primaryKey": [
+      "scenario_id",
+      "target_id",
+      "participation_mode_id"
+    ]
+  }
+}

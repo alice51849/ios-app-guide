@@ -2,6 +2,7 @@
 """Regression tests for App Store availability and AI outreach generation."""
 from __future__ import annotations
 
+import csv
 import json
 import os
 import re
@@ -27,10 +28,12 @@ import appstore_live
 import build_pages
 import build_pages_i18n
 import cleanup_localized_assets
+import family_travel_dataset
 import family_travel_mission_cards
 import gen_app_catalog
 import gen_calculator
 import gen_cost_compare
+import gen_data_hub
 import gen_feed
 import gen_hubs
 import gen_llms
@@ -112,11 +115,11 @@ class AppStoreAvailabilityTests(unittest.TestCase):
 
 
 class GeneratorTests(unittest.TestCase):
-    def test_atom_feed_discovers_new_free_tools(self):
+    def test_atom_feed_discovers_new_free_tools_and_open_data(self):
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(
             gen_feed, "PAGES", directory
         ):
-            for subdir in ("answers", "guides", "alternatives", "tools"):
+            for subdir in ("answers", "guides", "alternatives", "tools", "data"):
                 path = Path(directory) / subdir
                 path.mkdir()
                 (path / "index.html").write_text("<html></html>", encoding="utf-8")
@@ -126,10 +129,215 @@ class GeneratorTests(unittest.TestCase):
                 '<meta name="description" content="Private printable prompts.">',
                 encoding="utf-8",
             )
+            dataset = Path(directory) / "data" / "family-travel-missions.html"
+            dataset.write_text(
+                '<title>Family Travel Missions</title>'
+                '<meta name="description" content="Bilingual open data.">',
+                encoding="utf-8",
+            )
             items = gen_feed.collect()
         self.assertTrue(
             any(url.endswith("/tools/private-travel-tool.html") for _, url, _ in items)
         )
+        self.assertTrue(
+            any(url.endswith("/data/family-travel-missions.html") for _, url, _ in items)
+        )
+
+    def test_atom_feed_uses_semantic_date_and_avoids_unchanged_rewrites(self):
+        with tempfile.TemporaryDirectory() as directory:
+            page = Path(directory) / "page.html"
+            page.write_text(
+                '<script type="application/ld+json">'
+                '{"dateModified":"2026-07-11"}</script>',
+                encoding="utf-8",
+            )
+            timestamp = gen_feed._content_modified(str(page), {})
+            self.assertEqual("2026-07-11T00:00:00Z", gen_feed.iso(timestamp))
+            output = Path(directory) / "feed.xml"
+            self.assertTrue(gen_feed._write_if_changed(str(output), "stable"))
+            modified = output.stat().st_mtime_ns
+            self.assertFalse(gen_feed._write_if_changed(str(output), "stable"))
+            self.assertEqual(modified, output.stat().st_mtime_ns)
+
+    def test_data_hub_preserves_date_until_dataset_content_changes(self):
+        with tempfile.TemporaryDirectory() as directory, mock.patch.object(
+            gen_data_hub, "DATA", directory
+        ):
+            existing = {"dateModified": "2026-07-10", "records": [1]}
+            Path(directory, "sample.json").write_text(
+                json.dumps(existing), encoding="utf-8"
+            )
+            unchanged = gen_data_hub.preserve_modified_date(
+                "sample", {"dateModified": "2026-07-11", "records": [1]}
+            )
+            changed = gen_data_hub.preserve_modified_date(
+                "sample", {"dateModified": "2026-07-11", "records": [1, 2]}
+            )
+            self.assertEqual("2026-07-10", unchanged["dateModified"])
+            self.assertEqual("2026-07-11", changed["dateModified"])
+
+    def test_family_travel_dataset_matches_card_generator_source(self):
+        dataset = family_travel_dataset.load_dataset()
+        self.assertEqual(12, len(dataset["scenarios"]))
+        self.assertEqual(84, sum(len(item["targets"]) for item in dataset["scenarios"]))
+        self.assertEqual(3, len(dataset["participationModes"]))
+        for locale in ("en", "zh-Hant"):
+            source_scenarios = family_travel_mission_cards.SCENARIOS[locale]
+            self.assertEqual(
+                [item["id"] for item in source_scenarios],
+                [item["id"] for item in dataset["scenarios"]],
+            )
+            for source, published in zip(source_scenarios, dataset["scenarios"]):
+                self.assertEqual(source["name"], published["name"][locale])
+                self.assertEqual(source["boundary"], published["safetyBoundary"][locale])
+                self.assertEqual(
+                    list(source["targets"]),
+                    [target["text"][locale] for target in published["targets"]],
+                )
+                self.assertTrue(published["stationaryRequired"])
+                self.assertFalse(published["photoTaskAllowed"])
+                self.assertFalse(published["driverInteractionAllowed"])
+                self.assertTrue(published["adultSupervisionRequired"])
+                self.assertTrue(published["skipAllowed"])
+            source_modes = family_travel_mission_cards.COPY[locale]["styles"]
+            for source, published in zip(source_modes, dataset["participationModes"]):
+                self.assertEqual(source["id"], published["id"])
+                self.assertEqual(source["name"], published["name"][locale])
+                self.assertEqual(source["template"], published["promptTemplate"][locale])
+                self.assertIsNone(published["ageBand"])
+                self.assertIsNone(published["abilityLevel"])
+
+    def test_family_travel_dataset_distributions_are_symmetric_and_unique(self):
+        dataset = family_travel_dataset.load_dataset()
+        source = family_travel_dataset.SOURCE_DIR
+        schema = json.loads(
+            (source / "family-travel-missions.schema.json").read_text(encoding="utf-8")
+        )
+        csvw = json.loads(
+            (source / "family-travel-missions.csv-metadata.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        dcat = json.loads(
+            (source / "family-travel-missions.dcat.jsonld").read_text(
+                encoding="utf-8"
+            )
+        )
+        with (source / "family-travel-missions.csv").open(
+            encoding="utf-8", newline=""
+        ) as handle:
+            records = list(csv.DictReader(handle))
+        self.assertEqual(dataset["scope"]["flatRecordCount"], len(records))
+        keys = {
+            (
+                row["scenario_id"],
+                row["target_id"],
+                row["participation_mode_id"],
+            )
+            for row in records
+        }
+        self.assertEqual(252, len(keys))
+        self.assertTrue(
+            all(row["photo_task_allowed"] == "false" for row in records)
+        )
+        self.assertTrue(
+            all(row["driver_interaction_allowed"] == "false" for row in records)
+        )
+        self.assertEqual(
+            list(records[0]),
+            [column["name"] for column in csvw["tableSchema"]["columns"]],
+        )
+        self.assertEqual(
+            ["scenario_id", "target_id", "participation_mode_id"],
+            csvw["tableSchema"]["primaryKey"],
+        )
+        csvw_columns = {
+            column["name"]: column for column in csvw["tableSchema"]["columns"]
+        }
+        self.assertEqual("en", csvw_columns["prompt_en"]["lang"])
+        self.assertEqual("zh-Hant", csvw_columns["prompt_zh_hant"]["lang"])
+        self.assertEqual("dcat:Dataset", dcat["@type"])
+        self.assertEqual(
+            {
+                "https://www.iana.org/assignments/media-types/application/json",
+                "https://www.iana.org/assignments/media-types/text/csv",
+            },
+            {
+                item["dcat:mediaType"]["@id"]
+                for item in dcat["dcat:distribution"]
+            },
+        )
+        scenario_schema = schema["$defs"]["scenario"]["properties"]
+        self.assertFalse(scenario_schema["photoTaskAllowed"]["const"])
+        self.assertFalse(scenario_schema["driverInteractionAllowed"]["const"])
+
+    def test_family_travel_dataset_page_gates_optional_app_layer(self):
+        dataset = family_travel_dataset.load_dataset()
+        for locale in ("en", "zh-Hant"):
+            private_page = family_travel_dataset.render_page(
+                dataset, locale, app_public=False
+            )
+            self.assertIn('"@type":"Dataset"', private_page)
+            self.assertEqual(12, private_page.count('<details class="scenario">'))
+            self.assertIn('hreflang="en"', private_page)
+            self.assertIn('hreflang="zh-Hant"', private_page)
+            self.assertIn("family-travel-missions.csv", private_page)
+            self.assertIn("family-travel-missions.schema.json", private_page)
+            self.assertIn("family-travel-missions.csv-metadata.json", private_page)
+            self.assertIn("family-travel-missions.dcat.jsonld", private_page)
+            self.assertNotIn("apps.apple.com", private_page)
+            self.assertNotIn('"@type":"SoftwareApplication"', private_page)
+        public_page = family_travel_dataset.render_page(
+            dataset, "en", app_public=True
+        )
+        self.assertIn(f"id{family_travel_mission_cards.APP_ID}", public_page)
+        self.assertIn('"@type":"SoftwareApplication"', public_page)
+        self.assertNotIn('"offers"', public_page)
+        self.assertLess(
+            public_page.index("Free companion resources"),
+            public_page.index("Optional digital travel layer"),
+        )
+
+    def test_family_travel_dataset_builds_bilingual_pages_files_and_sitemap(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            slug = family_travel_dataset.build(pages, app_public=False)
+            self.assertEqual(family_travel_dataset.SLUG, slug)
+            for filename in family_travel_dataset.FILES:
+                self.assertEqual(
+                    (family_travel_dataset.SOURCE_DIR / filename).read_bytes(),
+                    (pages / "data" / filename).read_bytes(),
+                )
+            self.assertTrue((pages / "data" / f"{slug}.html").exists())
+            self.assertTrue(
+                (pages / "zh-Hant" / "data" / f"{slug}.html").exists()
+            )
+            mtimes = {
+                path: path.stat().st_mtime_ns
+                for path in (
+                    pages / "data" / f"{slug}.html",
+                    pages / "zh-Hant" / "data" / f"{slug}.html",
+                    *(pages / "data" / filename for filename in family_travel_dataset.FILES),
+                )
+            }
+            family_travel_dataset.build(pages, app_public=False)
+            self.assertEqual(
+                mtimes, {path: path.stat().st_mtime_ns for path in mtimes}
+            )
+            with mock.patch.object(
+                gen_data_hub, "PAGES", str(pages)
+            ), mock.patch.object(gen_data_hub, "DATA", str(pages / "data")):
+                urls = gen_data_hub.build_sitemap(
+                    [{"slug": slug, "localized": True}]
+                )
+            self.assertEqual(
+                [
+                    f"{gen_data_hub.SITE}/data/",
+                    f"{gen_data_hub.SITE}/data/{slug}.html",
+                    f"{gen_data_hub.SITE}/zh-Hant/data/{slug}.html",
+                ],
+                urls,
+            )
 
     def test_family_travel_cards_are_bilingual_private_and_safety_bounded(self):
         english = family_travel_mission_cards.render_page("en", app_public=False)

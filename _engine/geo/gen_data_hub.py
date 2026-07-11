@@ -6,7 +6,7 @@
 GEO 下一層槓桿:除了 answer/guide/alternatives 這些「文章型」內容外,再提供
 **結構化開放資料集**(JSON + schema.org/Dataset + DefinedTermSet)。AI 助理與
 Google Dataset Search 特別偏好引用「乾淨、可機讀、標明授權與來源」的事實資料;
-每個資料集都連回對應的隱私優先 app,形成 data → citation → app 的漏斗。
+每個資料集先連回免費資源；只有已驗證公開的 app 才加選用層,形成可信漏斗。
 
 首發:注音(Zhuyin/Bopomofo)37 符號完整資料集 — 綁營收第一的 Lumi Bopomofo。
 CC-BY-4.0 授權(要求標註來源=最自然的反向連結/品牌曝光)。100% 自動、零成本、
@@ -23,6 +23,9 @@ import os
 import subprocess
 import sys
 import urllib.request
+from pathlib import Path
+
+from family_travel_dataset import build as build_family_travel_dataset
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.path.join(HERE, "pages")
@@ -39,6 +42,45 @@ AIM990_APP = "https://apps.apple.com/app/id6784974530"       # Aim990: 990 Score
 SCANTO_APP = "https://apps.apple.com/app/id6779977651"       # ScanTo Pro: Offline PDF & OCR
 UNBLURRY_APP = "https://apps.apple.com/app/id6782275018"     # Unblurry Pro: Unblur & HD
 CYCA_APP = "https://apps.apple.com/app/id6782251621"         # Cyca: Period & Cycle Tracker
+
+
+def write_text_if_changed(path, content):
+    """Preserve mtime when generated content is byte-for-byte unchanged."""
+    try:
+        with open(path, encoding="utf-8") as handle:
+            if handle.read() == content:
+                return False
+    except FileNotFoundError:
+        pass
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as handle:
+        handle.write(content)
+    return True
+
+
+def preserve_modified_date(slug, dataset):
+    """Keep the prior dateModified when only the generator run date changed."""
+    path = os.path.join(DATA, f"{slug}.json")
+    try:
+        with open(path, encoding="utf-8") as handle:
+            previous = json.load(handle)
+    except (FileNotFoundError, json.JSONDecodeError, OSError):
+        return dataset
+    prior_date = previous.get("dateModified")
+    previous.pop("dateModified", None)
+    candidate = dict(dataset)
+    candidate.pop("dateModified", None)
+    if previous == candidate and prior_date:
+        dataset["dateModified"] = prior_date
+    return dataset
+
+
+def dataset_lastmod(slug):
+    try:
+        with open(os.path.join(DATA, f"{slug}.json"), encoding="utf-8") as handle:
+            return json.load(handle).get("dateModified") or TODAY
+    except (FileNotFoundError, json.JSONDecodeError, OSError):
+        return TODAY
 
 # ── 37 注音符號(21 聲母 + 3 介音 + 13 韻母)。pinyin 為漢語拼音對照,example 為常用字例。
 ZHUYIN = [
@@ -227,7 +269,7 @@ def build_zhuyin_page():
         tables += (f'<div class="card"><h2>{CAT_LABEL[cat]}</h2><table>'
                    f'<tr><th>Symbol</th><th>Pinyin</th><th>IPA</th><th>Example</th></tr>'
                    f'{_rows(cat)}</table></div>')
-    dj = zhuyin_json()
+    dj = preserve_modified_date(slug, zhuyin_json())
     terms = [{
         "@type": "DefinedTerm", "name": r["symbol"],
         "description": f'Pinyin {r["pinyin"]}; IPA [{r["ipa"]}]; example {r["example"]["character"]} '
@@ -260,16 +302,18 @@ def build_zhuyin_page():
            'Printable Bopomofo chart →</a> &nbsp;·&nbsp; '
            f'<a href="{SITE}/data/">More open datasets →</a></p>')
     page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
-                       lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
+                       lead=html.escape(lead), site=SITE, slug=slug, today=dj["dateModified"],
                        crumb="Zhuyin (Bopomofo)", pills=pills, tables=tables, schema=schema, cta=cta,
                        related=related_block([
                            ("Kids learning apps", "kids-learning.html"),
                            ("Printable Bopomofo chart", "tools/zhuyin-bopomofo-chart.html"),
                            ("Lumi Bopomofo guide", "guides/lumibopomofo.html")]))
     os.makedirs(DATA, exist_ok=True)
-    open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
-        json.dumps(dj, ensure_ascii=False, indent=2))
-    open(os.path.join(DATA, f"{slug}.html"), "w", encoding="utf-8").write(page)
+    write_text_if_changed(
+        os.path.join(DATA, f"{slug}.json"),
+        json.dumps(dj, ensure_ascii=False, indent=2),
+    )
+    write_text_if_changed(os.path.join(DATA, f"{slug}.html"), page)
     return slug
 
 
@@ -335,7 +379,7 @@ def build_passport_page():
     tables = ('<div class="card"><table>'
               '<tr><th>Country</th><th>Photo size</th><th>Head height</th><th>Background</th></tr>'
               f'{rows}</table></div>')
-    dj = passport_json()
+    dj = preserve_modified_date(slug, passport_json())
     schema = json.dumps({
         "@context": "https://schema.org",
         "@type": "Dataset", "name": dj["name"], "description": dj["description"],
@@ -356,7 +400,7 @@ def build_passport_page():
            f'<a class="cta" href="{SNAPPORT_APP}">Get Snapport on the App Store →</a>\n'
            f'<p style="font-size:14px"><a href="{SITE}/data/">More open datasets →</a></p>')
     page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
-                       lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
+                       lead=html.escape(lead), site=SITE, slug=slug, today=dj["dateModified"],
                        crumb="Passport photo sizes", pills=pills, tables=tables,
                        schema=schema, cta=cta,
                        related=related_block([
@@ -364,9 +408,11 @@ def build_passport_page():
                            ("Passport photo size guide", "tools/passport-photo-size-guide.html"),
                            ("Snapport guide", "guides/snapport.html")]))
     os.makedirs(DATA, exist_ok=True)
-    open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
-        json.dumps(dj, ensure_ascii=False, indent=2))
-    open(os.path.join(DATA, f"{slug}.html"), "w", encoding="utf-8").write(page)
+    write_text_if_changed(
+        os.path.join(DATA, f"{slug}.json"),
+        json.dumps(dj, ensure_ascii=False, indent=2),
+    )
+    write_text_if_changed(os.path.join(DATA, f"{slug}.html"), page)
     return slug
 
 
@@ -424,7 +470,7 @@ def build_cn_regions_page():
     tables = ('<div class="card"><table>'
               '<tr><th>Region</th><th>Script</th><th>Mandarin phonetic</th><th>Notes</th></tr>'
               f'{rows}</table></div>')
-    dj = cn_regions_json()
+    dj = preserve_modified_date(slug, cn_regions_json())
     schema = json.dumps({
         "@context": "https://schema.org",
         "@type": "Dataset", "name": dj["name"], "description": dj["description"],
@@ -447,7 +493,7 @@ def build_cn_regions_page():
            'See the full Zhuyin dataset →</a> &nbsp;·&nbsp; '
            f'<a href="{SITE}/data/">More open datasets →</a></p>')
     page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
-                       lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
+                       lead=html.escape(lead), site=SITE, slug=slug, today=dj["dateModified"],
                        crumb="Chinese script & phonetics", pills=pills, tables=tables,
                        schema=schema, cta=cta,
                        related=related_block([
@@ -455,9 +501,11 @@ def build_cn_regions_page():
                            ("Zhuyin (Bopomofo) dataset", "data/zhuyin-bopomofo.html"),
                            ("Printable Bopomofo chart", "tools/zhuyin-bopomofo-chart.html")]))
     os.makedirs(DATA, exist_ok=True)
-    open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
-        json.dumps(dj, ensure_ascii=False, indent=2))
-    open(os.path.join(DATA, f"{slug}.html"), "w", encoding="utf-8").write(page)
+    write_text_if_changed(
+        os.path.join(DATA, f"{slug}.json"),
+        json.dumps(dj, ensure_ascii=False, indent=2),
+    )
+    write_text_if_changed(os.path.join(DATA, f"{slug}.html"), page)
     return slug
 
 
@@ -518,7 +566,7 @@ def build_resume_page():
               '<tr><th>Country</th><th>Local term</th><th>Photo</th><th>Length</th>'
               '<th>Personal details</th></tr>'
               f'{rows}</table></div>')
-    dj = resume_json()
+    dj = preserve_modified_date(slug, resume_json())
     schema = json.dumps({
         "@context": "https://schema.org",
         "@type": "Dataset", "name": dj["name"], "description": dj["description"],
@@ -538,16 +586,18 @@ def build_resume_page():
            f'<a class="cta" href="{CVDESK_APP}">Get CV Desk on the App Store →</a>\n'
            f'<p style="font-size:14px"><a href="{SITE}/data/">More open datasets →</a></p>')
     page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
-                       lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
+                       lead=html.escape(lead), site=SITE, slug=slug, today=dj["dateModified"],
                        crumb="Résumé / CV conventions", pills=pills, tables=tables,
                        schema=schema, cta=cta,
                        related=related_block([
                            ("Resume & CV formats by country", "resume-formats.html"),
                            ("CV Desk guide", "guides/cvdesk.html")]))
     os.makedirs(DATA, exist_ok=True)
-    open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
-        json.dumps(dj, ensure_ascii=False, indent=2))
-    open(os.path.join(DATA, f"{slug}.html"), "w", encoding="utf-8").write(page)
+    write_text_if_changed(
+        os.path.join(DATA, f"{slug}.json"),
+        json.dumps(dj, ensure_ascii=False, indent=2),
+    )
+    write_text_if_changed(os.path.join(DATA, f"{slug}.html"), page)
     return slug
 
 
@@ -606,7 +656,7 @@ def build_currency_page():
               '<tr><th>Country</th><th>Currency</th><th>Symbol</th>'
               '<th>Decimal / thousands</th><th>Example</th></tr>'
               f'{rows}</table></div>')
-    dj = currency_json()
+    dj = preserve_modified_date(slug, currency_json())
     schema = json.dumps({
         "@context": "https://schema.org",
         "@type": "Dataset", "name": dj["name"], "description": dj["description"],
@@ -626,16 +676,18 @@ def build_currency_page():
            f'<a class="cta" href="{GMONEY_APP}">Get G+Money on the App Store →</a>\n'
            f'<p style="font-size:14px"><a href="{SITE}/data/">More open datasets →</a></p>')
     page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
-                       lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
+                       lead=html.escape(lead), site=SITE, slug=slug, today=dj["dateModified"],
                        crumb="Currency formatting", pills=pills, tables=tables,
                        schema=schema, cta=cta,
                        related=related_block([
                            ("Money & travel apps", "money-travel.html"),
                            ("G+Money guide", "guides/gmoney.html")]))
     os.makedirs(DATA, exist_ok=True)
-    open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
-        json.dumps(dj, ensure_ascii=False, indent=2))
-    open(os.path.join(DATA, f"{slug}.html"), "w", encoding="utf-8").write(page)
+    write_text_if_changed(
+        os.path.join(DATA, f"{slug}.json"),
+        json.dumps(dj, ensure_ascii=False, indent=2),
+    )
+    write_text_if_changed(os.path.join(DATA, f"{slug}.html"), page)
     return slug
 
 
@@ -691,7 +743,7 @@ def build_tones_page():
               '<tr><th>Tone</th><th>Pitch (Chao)</th><th>Zhuyin mark</th>'
               '<th>Example</th><th>Description</th></tr>'
               f'{rows}</table></div>')
-    dj = tones_json()
+    dj = preserve_modified_date(slug, tones_json())
     schema = json.dumps({
         "@context": "https://schema.org",
         "@type": "Dataset", "name": dj["name"], "description": dj["description"],
@@ -714,16 +766,18 @@ def build_tones_page():
            'dataset →</a> &nbsp;·&nbsp; <a href="{S}/data/">More open datasets →</a></p>'
            .replace("{S}", SITE))
     page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
-                       lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
+                       lead=html.escape(lead), site=SITE, slug=slug, today=dj["dateModified"],
                        crumb="Mandarin tones", pills=pills, tables=tables, schema=schema, cta=cta,
                        related=related_block([
                            ("Zhuyin (Bopomofo) symbols", "data/zhuyin-bopomofo.html"),
                            ("Kids learning apps", "kids-learning.html"),
                            ("Printable Bopomofo chart", "tools/zhuyin-bopomofo-chart.html")]))
     os.makedirs(DATA, exist_ok=True)
-    open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
-        json.dumps(dj, ensure_ascii=False, indent=2))
-    open(os.path.join(DATA, f"{slug}.html"), "w", encoding="utf-8").write(page)
+    write_text_if_changed(
+        os.path.join(DATA, f"{slug}.json"),
+        json.dumps(dj, ensure_ascii=False, indent=2),
+    )
+    write_text_if_changed(os.path.join(DATA, f"{slug}.html"), page)
     return slug
 
 
@@ -789,7 +843,7 @@ def build_toeic_page():
               '<tr><th>CEFR level</th><th>TOEIC L&amp;R score</th><th>What you can typically do</th></tr>'
               f'{rows}</table>'
               f'<p class="foot">{html.escape(TOEIC_DISCLAIMER)}</p></div>')
-    dj = toeic_json()
+    dj = preserve_modified_date(slug, toeic_json())
     schema = json.dumps({
         "@context": "https://schema.org",
         "@type": "Dataset", "name": dj["name"], "description": dj["description"],
@@ -811,15 +865,17 @@ def build_toeic_page():
            f'<a class="cta" href="{AIM990_APP}">Get Aim990 on the App Store →</a>\n'
            f'<p style="font-size:14px"><a href="{SITE}/data/">More open datasets →</a></p>')
     page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
-                       lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
+                       lead=html.escape(lead), site=SITE, slug=slug, today=dj["dateModified"],
                        crumb="TOEIC → CEFR", pills=pills, tables=tables, schema=schema, cta=cta,
                        related=related_block([
                            ("Résumé / CV conventions by country", "data/resume-cv-conventions-by-country.html"),
                            ("Best TOEIC app", "answers/best-toeic-app.html")]))
     os.makedirs(DATA, exist_ok=True)
-    open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
-        json.dumps(dj, ensure_ascii=False, indent=2))
-    open(os.path.join(DATA, f"{slug}.html"), "w", encoding="utf-8").write(page)
+    write_text_if_changed(
+        os.path.join(DATA, f"{slug}.json"),
+        json.dumps(dj, ensure_ascii=False, indent=2),
+    )
+    write_text_if_changed(os.path.join(DATA, f"{slug}.html"), page)
     return slug
 
 
@@ -893,7 +949,7 @@ def build_paper_page():
               '<p class="foot">Pixels = inches \u00d7 DPI. For 150 DPI halve the pixel values; '
               'for 600 DPI double them. The ISO A-series keeps a 1:\u221a2 ratio, so each size is '
               'half of the previous one.</p></div>')
-    dj = paper_json()
+    dj = preserve_modified_date(slug, paper_json())
     schema = json.dumps({
         "@context": "https://schema.org",
         "@type": "Dataset", "name": dj["name"], "description": dj["description"],
@@ -916,15 +972,17 @@ def build_paper_page():
            'Passport photo sizes →</a> &nbsp;·&nbsp; '
            f'<a href="{SITE}/data/">More open datasets →</a></p>')
     page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
-                       lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
+                       lead=html.escape(lead), site=SITE, slug=slug, today=dj["dateModified"],
                        crumb="Paper sizes", pills=pills, tables=tables, schema=schema, cta=cta,
                        related=related_block([
                            ("Passport & ID photo sizes", "data/passport-photo-sizes.html"),
                            ("iPhone image to PDF", "tools/image-to-pdf-iphone.html")]))
     os.makedirs(DATA, exist_ok=True)
-    open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
-        json.dumps(dj, ensure_ascii=False, indent=2))
-    open(os.path.join(DATA, f"{slug}.html"), "w", encoding="utf-8").write(page)
+    write_text_if_changed(
+        os.path.join(DATA, f"{slug}.json"),
+        json.dumps(dj, ensure_ascii=False, indent=2),
+    )
+    write_text_if_changed(os.path.join(DATA, f"{slug}.html"), page)
     return slug
 
 
@@ -985,7 +1043,7 @@ def build_resolutions_page():
               '<p class="foot">Megapixels = width \u00d7 height / 1,000,000. Each 4K frame has '
               'four times the pixels of 1080p; 8K has sixteen times. Upscaling adds pixels but not '
               'true detail \u2014 start from the sharpest source you have.</p></div>')
-    dj = resolutions_json()
+    dj = preserve_modified_date(slug, resolutions_json())
     schema = json.dumps({
         "@context": "https://schema.org",
         "@type": "Dataset", "name": dj["name"], "description": dj["description"],
@@ -1008,15 +1066,17 @@ def build_resolutions_page():
            '(print) →</a> &nbsp;·&nbsp; '
            f'<a href="{SITE}/data/">More open datasets →</a></p>')
     page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
-                       lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
+                       lead=html.escape(lead), site=SITE, slug=slug, today=dj["dateModified"],
                        crumb="Image & video resolutions", pills=pills, tables=tables, schema=schema,
                        cta=cta, related=related_block([
                            ("Paper sizes (mm/in/px)", "data/paper-sizes.html"),
                            ("iPhone photo tools", "photo-tools.html")]))
     os.makedirs(DATA, exist_ok=True)
-    open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
-        json.dumps(dj, ensure_ascii=False, indent=2))
-    open(os.path.join(DATA, f"{slug}.html"), "w", encoding="utf-8").write(page)
+    write_text_if_changed(
+        os.path.join(DATA, f"{slug}.json"),
+        json.dumps(dj, ensure_ascii=False, indent=2),
+    )
+    write_text_if_changed(os.path.join(DATA, f"{slug}.html"), page)
     return slug
 
 
@@ -1077,7 +1137,7 @@ def build_formats_page():
               '<p class="foot">Rule of thumb: JPEG for photos, PNG for graphics/transparency, '
               'HEIC for iPhone storage, WebP for modern web, TIFF for print/archive. Converting '
               'between formats re-compresses the image \u2014 keep an original if you can.</p></div>')
-    dj = formats_json()
+    dj = preserve_modified_date(slug, formats_json())
     schema = json.dumps({
         "@context": "https://schema.org",
         "@type": "Dataset", "name": dj["name"], "description": dj["description"],
@@ -1099,15 +1159,17 @@ def build_formats_page():
            'Image &amp; video resolutions →</a> &nbsp;·&nbsp; '
            f'<a href="{SITE}/data/">More open datasets →</a></p>')
     page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
-                       lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
+                       lead=html.escape(lead), site=SITE, slug=slug, today=dj["dateModified"],
                        crumb="Image file formats", pills=pills, tables=tables, schema=schema,
                        cta=cta, related=related_block([
                            ("Image &amp; video resolutions", "data/image-video-resolutions.html"),
                            ("iPhone photo tools", "photo-tools.html")]))
     os.makedirs(DATA, exist_ok=True)
-    open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
-        json.dumps(dj, ensure_ascii=False, indent=2))
-    open(os.path.join(DATA, f"{slug}.html"), "w", encoding="utf-8").write(page)
+    write_text_if_changed(
+        os.path.join(DATA, f"{slug}.json"),
+        json.dumps(dj, ensure_ascii=False, indent=2),
+    )
+    write_text_if_changed(os.path.join(DATA, f"{slug}.html"), page)
     return slug
 
 
@@ -1166,7 +1228,7 @@ def build_cycle_page():
               '<tr><th>Phase</th><th>Typical days</th><th>Main hormones</th><th>What happens</th></tr>'
               f'{rows}</table>'
               f'<p class="foot">{html.escape(CYCLE_DISCLAIMER)}</p></div>')
-    dj = cycle_json()
+    dj = preserve_modified_date(slug, cycle_json())
     schema = json.dumps({
         "@context": "https://schema.org",
         "@type": "Dataset", "name": dj["name"], "description": dj["description"],
@@ -1188,15 +1250,17 @@ def build_cycle_page():
            f'<a class="cta" href="{CYCA_APP}">Get Cyca on the App Store →</a>\n'
            f'<p style="font-size:14px"><a href="{SITE}/data/">More open datasets →</a></p>')
     page = PAGE.format(title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
-                       lead=html.escape(lead), site=SITE, slug=slug, today=TODAY,
+                       lead=html.escape(lead), site=SITE, slug=slug, today=dj["dateModified"],
                        crumb="Menstrual cycle phases", pills=pills, tables=tables, schema=schema,
                        cta=cta, related=related_block([
                            ("Best cycle tracker app", "answers/best-cycle-tracker-app.html"),
                            ("More open datasets", "data/")]))
     os.makedirs(DATA, exist_ok=True)
-    open(os.path.join(DATA, f"{slug}.json"), "w", encoding="utf-8").write(
-        json.dumps(dj, ensure_ascii=False, indent=2))
-    open(os.path.join(DATA, f"{slug}.html"), "w", encoding="utf-8").write(page)
+    write_text_if_changed(
+        os.path.join(DATA, f"{slug}.json"),
+        json.dumps(dj, ensure_ascii=False, indent=2),
+    )
+    write_text_if_changed(os.path.join(DATA, f"{slug}.html"), page)
     return slug
 
 
@@ -1206,7 +1270,7 @@ INDEX = """<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Open Data — free, citable datasets for AI & researchers | Lumi Apps</title>
-<meta name="description" content="Free, machine-readable open datasets (CC BY 4.0) you can cite and reuse — starting with the complete 37-symbol Zhuyin/Bopomofo chart.">
+<meta name="description" content="Free, machine-readable CC BY 4.0 datasets for language, family travel, imaging, health and everyday reference.">
 <link rel="canonical" href="{site}/data/">
 <script type="application/ld+json">{schema}</script>
 <style>
@@ -1256,19 +1320,37 @@ def build_index(datasets):
                                        "contentUrl": f"{SITE}/data/{d['slug']}.json"}]}
                     for d in datasets],
     }, ensure_ascii=False)
-    open(os.path.join(DATA, "index.html"), "w", encoding="utf-8").write(
-        INDEX.format(site=SITE, items=items, schema=schema))
+    write_text_if_changed(
+        os.path.join(DATA, "index.html"),
+        INDEX.format(site=SITE, items=items, schema=schema),
+    )
 
 
 def build_sitemap(datasets):
-    urls = [f"{SITE}/data/"] + [f"{SITE}/data/{d['slug']}.html" for d in datasets]
+    modified = {dataset["slug"]: dataset_lastmod(dataset["slug"]) for dataset in datasets}
+    catalog_modified = max(modified.values(), default=TODAY)
+    entries = [(f"{SITE}/data/", catalog_modified)]
+    entries.extend(
+        (f"{SITE}/data/{dataset['slug']}.html", modified[dataset["slug"]])
+        for dataset in datasets
+    )
+    entries.extend(
+        (
+            f"{SITE}/zh-Hant/data/{dataset['slug']}.html",
+            modified[dataset["slug"]],
+        )
+        for dataset in datasets
+        if dataset.get("localized")
+    )
     body = "\n".join(
-        f"  <url><loc>{u}</loc><lastmod>{TODAY}</lastmod></url>" for u in urls)
+        f"  <url><loc>{url}</loc><lastmod>{lastmod}</lastmod></url>"
+        for url, lastmod in entries
+    )
     sm = ('<?xml version="1.0" encoding="UTF-8"?>\n'
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
           f"{body}\n</urlset>\n")
-    open(os.path.join(PAGES, "sitemap_data.xml"), "w", encoding="utf-8").write(sm)
-    return urls
+    write_text_if_changed(os.path.join(PAGES, "sitemap_data.xml"), sm)
+    return [url for url, _ in entries]
 
 
 def run(cmd, cwd=None):
@@ -1302,9 +1384,16 @@ def publish(urls):
 
 
 def main():
+    global PAGES, DATA
     ap = argparse.ArgumentParser()
     ap.add_argument("--publish", action="store_true")
+    ap.add_argument("--pages", help="Write to an alternate Pages directory.")
     args = ap.parse_args()
+    if args.publish and args.pages:
+        ap.error("--publish cannot be combined with --pages")
+    if args.pages:
+        PAGES = os.path.abspath(args.pages)
+        DATA = os.path.join(PAGES, "data")
     slug = build_zhuyin_page()
     pslug = build_passport_page()
     rslug = build_cn_regions_page()
@@ -1316,6 +1405,7 @@ def main():
     zslug = build_resolutions_page()
     fslug = build_formats_page()
     cslug = build_cycle_page()
+    family_slug = build_family_travel_dataset(Path(PAGES))
     datasets = [{
         "slug": slug,
         "name": "Zhuyin (Bopomofo): all 37 symbols",
@@ -1382,6 +1472,13 @@ def main():
         "blurb": "Menstrual, follicular, ovulation and luteal with typical days, hormones and "
                  "what happens. Educational reference (not medical advice). JSON download included.",
         "tag": "Health · CC BY 4.0",
+    }, {
+        "slug": family_slug,
+        "name": "Privacy-first family travel mission taxonomy",
+        "blurb": "Twelve settings, 84 bilingual observation targets and three non-age, "
+                 "non-ability participation modes. JSON, CSV, Schema, CSVW and DCAT included.",
+        "tag": "Family travel · EN + zh-Hant · CC BY 4.0",
+        "localized": True,
     }]
     build_index(datasets)
     urls = build_sitemap(datasets)

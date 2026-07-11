@@ -211,6 +211,7 @@
 - [zhuyin bopomofo library catalog records](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html)
 - [zhuyin bopomofo lms question bank](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html)
 - [zhuyin bopomofo ml dataset](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html)
+- [zhuyin bopomofo oer repository metadata](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html)
 - [zhuyin bopomofo resourcesync](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html)
 - [zhuyin bopomofo vocabulary](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html)
 - [zhuyin bopomofo](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.html) · JSON: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json
@@ -293,6 +294,16 @@
 - BIBFRAME 2.0 JSON-LD: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.bibframe.jsonld
 - BIBFRAME 2.0 Turtle: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.bibframe.ttl
 - Checksums and metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/metadata.jsonld
+
+## Bopomofo OER repository metadata (DCMI + LRMI)
+- English guide: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html
+- Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-oer-repository-metadata.html
+- Complete ZIP bundle: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-oer-metadata-bundle.zip
+- English OAI-DC XML: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference-en.oai-dc.xml
+- Traditional Chinese OAI-DC XML: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference-zh-hant.oai-dc.xml
+- DCMI Terms JSON-LD: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.dcmi-terms.jsonld
+- LRMI JSON-LD: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.lrmi.jsonld
+- Checksums and metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/metadata.jsonld
 
 ## Bopomofo ResourceSync harvest feed (OAI ResourceSync 1.1)
 - English guide: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html

@@ -16,6 +16,7 @@
 - [Bopomofo LMS question bank](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html)
 - [Accessible Bopomofo EPUB and downloadable catalog files](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html)
 - [Bopomofo EPUB library catalog records](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html)
+- [Bopomofo OER repository metadata](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html)
 - [Free tools](https://alice51849.github.io/ios-app-guide/tools/index.html)
 
 ## Public apps
@@ -433,6 +434,7 @@
 - [zhuyin bopomofo library catalog records](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html)
 - [zhuyin bopomofo lms question bank](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html)
 - [zhuyin bopomofo ml dataset](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html)
+- [zhuyin bopomofo oer repository metadata](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html)
 - [zhuyin bopomofo resourcesync](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html)
 - [zhuyin bopomofo vocabulary](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html)
 - [zhuyin bopomofo](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.html)
@@ -671,6 +673,16 @@
   - BIBFRAME 2.0 Turtle: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.bibframe.ttl
   - Checksums and metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/metadata.jsonld
 
+## Bopomofo OER repository metadata
+- [English guide](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html)
+- [Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-oer-repository-metadata.html)
+  - Complete ZIP bundle: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-oer-metadata-bundle.zip
+  - English OAI-DC XML: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference-en.oai-dc.xml
+  - Traditional Chinese OAI-DC XML: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference-zh-hant.oai-dc.xml
+  - DCMI Terms JSON-LD: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.dcmi-terms.jsonld
+  - LRMI JSON-LD: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.lrmi.jsonld
+  - Checksums and metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/metadata.jsonld
+
 ## Bopomofo ResourceSync harvest feed
 - [English guide](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html)
 - [Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-resourcesync.html)
@@ -769,5 +781,6 @@
 - https://alice51849.github.io/ios-app-guide/sitemap_lms.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_epub.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_library_catalog.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_oer_metadata.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_resourcesync.xml
 - https://alice51849.github.io/ios-app-guide/resourcesync/resourcelist.xml

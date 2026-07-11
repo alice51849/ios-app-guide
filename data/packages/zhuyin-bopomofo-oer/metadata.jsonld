@@ -1,0 +1,145 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "url": {
+      "@id": "https://schema.org/url",
+      "@type": "@id"
+    },
+    "license": {
+      "@id": "https://schema.org/license",
+      "@type": "@id"
+    },
+    "contentUrl": {
+      "@id": "https://schema.org/contentUrl",
+      "@type": "@id"
+    },
+    "isBasedOn": {
+      "@id": "https://schema.org/isBasedOn",
+      "@type": "@id"
+    },
+    "conformsTo": {
+      "@id": "https://schema.org/conformsTo",
+      "@type": "@id"
+    }
+  },
+  "@type": [
+    "Dataset",
+    "CreativeWork"
+  ],
+  "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#metadata-package",
+  "name": "Bopomofo OER repository metadata package",
+  "alternateName": "注音 OER 典藏庫 metadata 資料包",
+  "description": "Standalone OAI-DC records plus offline-parsable DCMI Terms and LRMI JSON-LD for two exact open Bopomofo EPUB editions.",
+  "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html",
+  "identifier": "LUMI-ZHUYIN-OER-METADATA-2026",
+  "version": "1.0.0",
+  "datePublished": "2026-07-11",
+  "dateModified": "2026-07-11T13:00:48Z",
+  "inLanguage": [
+    "en",
+    "zh-Hant"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "creator": {
+    "@type": "Organization",
+    "@id": "https://alice51849.github.io/ios-app-guide/#organization",
+    "name": "Lumi Apps - iOS App Guide",
+    "url": "https://alice51849.github.io/ios-app-guide"
+  },
+  "audience": [
+    "OER repositories",
+    "school resource portals",
+    "educators",
+    "librarians"
+  ],
+  "isBasedOn": {
+    "@type": "Book",
+    "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html",
+    "dateModified": "2026-07-11T10:45:50Z",
+    "encoding": [
+      {
+        "@type": "MediaObject",
+        "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub",
+        "encodingFormat": "application/epub+zip",
+        "contentSize": "9564 bytes",
+        "sha256": "be0b7cdcc34875930343c41c230fc105f00944e1736d658d9d8de0b67b54cff9",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "MediaObject",
+        "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub",
+        "encodingFormat": "application/epub+zip",
+        "contentSize": "10287 bytes",
+        "sha256": "0e1f335c5b92aa0f2002a7bf130591005df5e36f76335717925f60a206b8e64b",
+        "inLanguage": "zh-Hant"
+      }
+    ]
+  },
+  "conformsTo": [
+    "https://www.openarchives.org/OAI/2.0/oai_dc.xsd",
+    "https://www.dublincore.org/schemas/xmls/simpledc20021212.xsd",
+    "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/",
+    "https://www.dublincore.org/specifications/lrmi/lrmi_terms/",
+    "https://www.dublincore.org/specifications/lrmi/concept_schemes/learningResourceType/",
+    "https://www.dublincore.org/specifications/lrmi/concept_schemes/educationalUse/"
+  ],
+  "numberOfItems": 2,
+  "keywords": [
+    "Bopomofo",
+    "Zhuyin",
+    "OER metadata",
+    "OAI-DC",
+    "Dublin Core",
+    "DCMI Terms",
+    "LRMI",
+    "open educational resources"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "Complete ZIP bundle",
+      "encodingFormat": "application/zip",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-oer-metadata-bundle.zip",
+      "contentSize": "9842 bytes",
+      "sha256": "674a6afbd46902f7c722607ba60ba020b493d1a81cadefbf86fc2e3a3a0ddd6a"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "OAI-DC XML - English",
+      "encodingFormat": "application/xml",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference-en.oai-dc.xml",
+      "contentSize": "2357 bytes",
+      "sha256": "afdf7a343c448f1112a65eefca2215fc82b840dbbdb7acad408e14c82004d9b2"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "OAI-DC XML - Traditional Chinese",
+      "encodingFormat": "application/xml",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference-zh-hant.oai-dc.xml",
+      "contentSize": "2377 bytes",
+      "sha256": "c05fb23988619b22f44b6515ce3ee48a9b72573216f8d722b31059bf1a1608c2"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "DCMI Terms JSON-LD",
+      "encodingFormat": "application/ld+json",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.dcmi-terms.jsonld",
+      "contentSize": "13687 bytes",
+      "sha256": "fa0c3c6d5c0f9fb1482a7cef67cef1200c92b80ab1d9a52dbd0fbb4af36517ca"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "LRMI JSON-LD",
+      "encodingFormat": "application/ld+json",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.lrmi.jsonld",
+      "contentSize": "18898 bytes",
+      "sha256": "4e3f312f69e448481f5825ad213b6710a2767b807c209f0e47101833e30aa23c"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "Lumi Apps Open Data",
+    "url": "https://alice51849.github.io/ios-app-guide/data/"
+  }
+}

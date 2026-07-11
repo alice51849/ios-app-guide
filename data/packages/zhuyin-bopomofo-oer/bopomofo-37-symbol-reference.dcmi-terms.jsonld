@@ -1,0 +1,379 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcmiType": "http://purl.org/dc/dcmitype/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/#organization",
+      "@type": "dcterms:Agent",
+      "dcterms:title": [
+        {
+          "@value": "Lumi Apps - iOS App Guide",
+          "@language": "en"
+        },
+        {
+          "@value": "Lumi Apps iOS 應用指南",
+          "@language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#audience-learners",
+      "@type": "dcterms:AgentClass",
+      "dcterms:title": [
+        {
+          "@value": "Beginner Bopomofo learners of any age",
+          "@language": "en"
+        },
+        {
+          "@value": "任何年齡的注音初學者",
+          "@language": "zh-Hant"
+        }
+      ],
+      "dcterms:description": [
+        {
+          "@value": "Children should use the reference with a caregiver or educator.",
+          "@language": "en"
+        },
+        {
+          "@value": "兒童應由照顧者或教師陪同使用。",
+          "@language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#audience-supporters",
+      "@type": "dcterms:AgentClass",
+      "dcterms:title": [
+        {
+          "@value": "Educators, caregivers, librarians and OER repository staff",
+          "@language": "en"
+        },
+        {
+          "@value": "教師、照顧者、圖書館員與 OER 典藏庫人員",
+          "@language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#level-beginner",
+      "@type": "dcterms:AgentClass",
+      "dcterms:title": [
+        {
+          "@value": "Beginner",
+          "@language": "en"
+        },
+        {
+          "@value": "初學",
+          "@language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#method-reference",
+      "@type": "dcterms:MethodOfInstruction",
+      "dcterms:title": [
+        {
+          "@value": "Self-paced lookup, guided review or classroom support",
+          "@language": "en"
+        },
+        {
+          "@value": "自主查閱、引導式複習或課堂輔助",
+          "@language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.dcmi-terms.jsonld",
+      "@type": "dcmiType:Dataset",
+      "dcterms:title": [
+        {
+          "@value": "DCMI Terms metadata for the Bopomofo learning resource",
+          "@language": "en"
+        },
+        {
+          "@value": "注音學習資源的 DCMI Terms metadata",
+          "@language": "zh-Hant"
+        }
+      ],
+      "dcterms:description": [
+        {
+          "@value": "A bilingual linked-data record derived from the published EPUB manifest.",
+          "@language": "en"
+        },
+        {
+          "@value": "依據已發布 EPUB manifest 建立的雙語 linked-data 記錄。",
+          "@language": "zh-Hant"
+        }
+      ],
+      "dcterms:creator": {
+        "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+      },
+      "dcterms:publisher": {
+        "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+      },
+      "dcterms:issued": {
+        "@value": "2026-07-11",
+        "@type": "xsd:date"
+      },
+      "dcterms:modified": {
+        "@value": "2026-07-11T13:00:48Z",
+        "@type": "xsd:dateTime"
+      },
+      "dcterms:format": "application/ld+json",
+      "dcterms:identifier": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.dcmi-terms.jsonld",
+      "dcterms:source": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/metadata.jsonld"
+      },
+      "dcterms:references": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub"
+        }
+      ],
+      "dcterms:conformsTo": {
+        "@id": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/"
+      },
+      "dcterms:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dcterms:isPartOf": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#metadata-package"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub",
+      "@type": [
+        "dcterms:BibliographicResource",
+        "dcmiType:Text"
+      ],
+      "dcterms:title": {
+        "@value": "Bopomofo: A 37-Symbol Reference",
+        "@language": "en"
+      },
+      "dcterms:alternative": {
+        "@value": "注音符號：37 符號完整參考手冊",
+        "@language": "zh-Hant"
+      },
+      "dcterms:creator": {
+        "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+      },
+      "dcterms:publisher": {
+        "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+      },
+      "dcterms:subject": [
+        {
+          "@value": "Bopomofo (Zhuyin)",
+          "@language": "en"
+        },
+        {
+          "@value": "Mandarin phonetic symbols",
+          "@language": "en"
+        },
+        {
+          "@value": "Traditional Chinese literacy support",
+          "@language": "en"
+        }
+      ],
+      "dcterms:description": [
+        {
+          "@value": "A free, text-first EPUB 3.3 reference for all 37 Bopomofo symbols, with Pinyin, broad IPA, examples and open OPDS catalogs. It is a text-only supporting document for beginner reference and guided instruction.",
+          "@language": "en"
+        },
+        {
+          "@value": "Text-only symbol reference; no audio, pronunciation scoring, diagnostic assessment, school-readiness judgement, formal standards alignment or complete Chinese course.",
+          "@language": "en"
+        },
+        {
+          "@value": "No fixed age range. Beginner learners of any age can use the reference; children should use it with a caregiver or educator.",
+          "@language": "en"
+        }
+      ],
+      "dcterms:issued": {
+        "@value": "2026-07-11",
+        "@type": "xsd:date"
+      },
+      "dcterms:modified": {
+        "@value": "2026-07-11T10:45:50Z",
+        "@type": "xsd:dateTime"
+      },
+      "dcterms:type": {
+        "@id": "http://purl.org/dcx/lrmi-vocabs/learningResourceType/supportingDocument"
+      },
+      "dcterms:format": "application/epub+zip",
+      "dcterms:extent": "9564 bytes",
+      "dcterms:identifier": [
+        "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub",
+        "LUMI-ZHUYIN-EPUB-EN-2026",
+        "urn:sha256:be0b7cdcc34875930343c41c230fc105f00944e1736d658d9d8de0b67b54cff9"
+      ],
+      "dcterms:language": "en",
+      "dcterms:relation": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub"
+      },
+      "dcterms:rights": {
+        "@value": "Creative Commons Attribution 4.0 International; open access with no account required.",
+        "@language": "en"
+      },
+      "dcterms:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dcterms:accessRights": {
+        "@value": "Open access",
+        "@language": "en"
+      },
+      "dcterms:audience": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#audience-learners"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#audience-supporters"
+        }
+      ],
+      "dcterms:educationLevel": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#level-beginner"
+      },
+      "dcterms:instructionalMethod": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#method-reference"
+      },
+      "dcterms:conformsTo": [
+        {
+          "@id": "https://www.w3.org/TR/epub-33/"
+        },
+        {
+          "@id": "https://www.w3.org/TR/epub-a11y-11/"
+        }
+      ],
+      "dcterms:isReferencedBy": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/metadata.jsonld"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.dcmi-terms.jsonld"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub",
+      "@type": [
+        "dcterms:BibliographicResource",
+        "dcmiType:Text"
+      ],
+      "dcterms:title": {
+        "@value": "注音符號：37 符號完整參考手冊",
+        "@language": "zh-Hant"
+      },
+      "dcterms:alternative": {
+        "@value": "Bopomofo: A 37-Symbol Reference",
+        "@language": "en"
+      },
+      "dcterms:creator": {
+        "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+      },
+      "dcterms:publisher": {
+        "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+      },
+      "dcterms:subject": [
+        {
+          "@value": "注音符號",
+          "@language": "zh-Hant"
+        },
+        {
+          "@value": "國語語音符號",
+          "@language": "zh-Hant"
+        },
+        {
+          "@value": "繁體中文識字輔助",
+          "@language": "zh-Hant"
+        }
+      ],
+      "dcterms:description": [
+        {
+          "@value": "免費下載完整 37 個注音符號的純文字 EPUB 3.3 參考手冊，含漢語拼音、寬式 IPA、例字與開放 OPDS 目錄。 這是一份純文字輔助文件，適合初學者查閱，亦可搭配引導式教學。",
+          "@language": "zh-Hant"
+        },
+        {
+          "@value": "僅提供純文字符號參考；不含音訊、發音評分、診斷評量、入學準備判定、正式課綱對應或完整華語課程。",
+          "@language": "zh-Hant"
+        },
+        {
+          "@value": "不設定固定年齡範圍；任何年齡的注音初學者皆可使用，兒童應由照顧者或教師陪同。",
+          "@language": "zh-Hant"
+        }
+      ],
+      "dcterms:issued": {
+        "@value": "2026-07-11",
+        "@type": "xsd:date"
+      },
+      "dcterms:modified": {
+        "@value": "2026-07-11T10:45:50Z",
+        "@type": "xsd:dateTime"
+      },
+      "dcterms:type": {
+        "@id": "http://purl.org/dcx/lrmi-vocabs/learningResourceType/supportingDocument"
+      },
+      "dcterms:format": "application/epub+zip",
+      "dcterms:extent": "10287 bytes",
+      "dcterms:identifier": [
+        "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub",
+        "LUMI-ZHUYIN-EPUB-ZH-HANT-2026",
+        "urn:sha256:0e1f335c5b92aa0f2002a7bf130591005df5e36f76335717925f60a206b8e64b"
+      ],
+      "dcterms:language": "zh-Hant",
+      "dcterms:relation": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub"
+      },
+      "dcterms:rights": {
+        "@value": "採 Creative Commons 姓名標示 4.0 國際授權；開放存取且不需帳號。",
+        "@language": "zh-Hant"
+      },
+      "dcterms:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dcterms:accessRights": {
+        "@value": "開放存取",
+        "@language": "zh-Hant"
+      },
+      "dcterms:audience": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#audience-learners"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#audience-supporters"
+        }
+      ],
+      "dcterms:educationLevel": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#level-beginner"
+      },
+      "dcterms:instructionalMethod": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#method-reference"
+      },
+      "dcterms:conformsTo": [
+        {
+          "@id": "https://www.w3.org/TR/epub-33/"
+        },
+        {
+          "@id": "https://www.w3.org/TR/epub-a11y-11/"
+        }
+      ],
+      "dcterms:isReferencedBy": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/metadata.jsonld"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.dcmi-terms.jsonld"
+        }
+      ]
+    }
+  ]
+}

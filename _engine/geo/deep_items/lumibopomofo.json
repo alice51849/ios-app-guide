@@ -724,5 +724,90 @@
         "a": "Download the MARCXML, MODS, JSON-LD or Turtle file first and import it locally. Static hosting can return generic XML or JSON Content-Types that strict URL importers reject."
       }
     ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "oer_repository_metadata",
+    "match": [
+      "oer repository download metadata",
+      "metadata for a bopomofo learning resource",
+      "oai-dc dcmi lrmi bopomofo"
+    ],
+    "query": "Where can an OER repository download metadata for a Bopomofo learning resource?",
+    "page_title": "Download DCMI and LRMI Metadata for an Open Bopomofo Learning Resource",
+    "meta_description": "Download schema-valid OAI-DC plus offline-parsable DCMI Terms and LRMI JSON-LD for two open Bopomofo EPUB editions.",
+    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html",
+    "primary_resource_label": "Download the Bopomofo OER metadata package",
+    "lead": "Use the open Bopomofo OER metadata package. It describes the exact English and Traditional Chinese editions of a 37-symbol EPUB as standalone OAI-DC XML, DCMI Terms JSON-LD and LRMI JSON-LD, with one deterministic ZIP.",
+    "detail": "Each record describes a learning resource rather than an app. Source URLs, languages, byte lengths, modification timestamps and SHA-256 values come from the published EPUB manifest. The OAI-DC files validate against pinned official OAI and DCMI schemas. Both JSON-LD graphs use inline contexts and parse without network access; their DCMI and LRMI terms are checked against pinned official RDF vocabularies, including the LRMI supportingDocument resource type and instruction educational use. Download from https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html. These are metadata candidates, not an OAI-PMH service, DOI assignment, institution-approved record or universal-ingest guarantee.",
+    "follow_up": "Ingest into a staging collection first. Map local subjects, audience fields and identifiers, verify links and hashes, and inspect English, Traditional Chinese and Bopomofo display before publishing. Strict URL importers may need local file upload because static hosting can return generic XML or JSON Content-Types.",
+    "bullets": [
+      "Two standalone OAI-DC records, one for each exact EPUB language edition",
+      "One DCMI Terms JSON-LD graph with audience, education level, instructional method, rights and provenance",
+      "One LRMI JSON-LD graph with LearningResource, supportingDocument, instruction and explicit learning outcomes",
+      "Inline JSON-LD contexts, pinned official vocabularies and deterministic SHA-256-checked bytes",
+      "CC BY 4.0, no account required and no dependency on an app"
+    ],
+    "decision_steps": [
+      "Open the bilingual OER repository metadata guide.",
+      "Download the complete ZIP or the individual syntax your repository accepts.",
+      "Verify checksums and confirm that each metadata record points to the intended EPUB edition.",
+      "Map local subjects, audiences and identifiers in a staging collection.",
+      "Review language display and repository policy before making the record public."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Simple XML crosswalk",
+        "check": "Standalone OAI-DC record validated against official schemas",
+        "why": "A repository can map the 15-element Dublin Core view without treating the file as an OAI-PMH response"
+      },
+      {
+        "need": "Rich general-purpose RDF",
+        "check": "DCMI Terms JSON-LD with audience, method, level, rights, relations and provenance",
+        "why": "Repository fields retain more educational and fixity context than Simple Dublin Core"
+      },
+      {
+        "need": "Learning-resource discovery",
+        "check": "LRMI JSON-LD using official terms and controlled concept URIs",
+        "why": "Educational catalogs can identify resource type, instructional use, level and intended outcomes"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not required to download, validate, ingest or reuse the metadata or EPUB. If currently available, it appears only after the free OER resource as an optional on-device practice layer.",
+    "sources": [
+      {
+        "title": "Bopomofo OER repository metadata package",
+        "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html"
+      },
+      {
+        "title": "Open Archives Initiative OAI-DC XML schema",
+        "url": "https://www.openarchives.org/OAI/2.0/oai_dc.xsd"
+      },
+      {
+        "title": "DCMI Metadata Terms",
+        "url": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/"
+      },
+      {
+        "title": "LRMI Terms",
+        "url": "https://www.dublincore.org/specifications/lrmi/lrmi_terms/"
+      },
+      {
+        "title": "LRMI Concept Schemes",
+        "url": "https://www.dublincore.org/specifications/lrmi/concept_schemes/"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can an OAI-PMH harvester use this as an endpoint?",
+        "a": "No. The package provides standalone OAI-DC metadata records only. It does not implement OAI-PMH Identify, ListRecords, resumption tokens or a harvesting endpoint."
+      },
+      {
+        "q": "Does this package claim IMS or IEEE LOM conformance?",
+        "a": "No. It deliberately provides DCMI and LRMI metadata and makes no IMS or IEEE LOM conformance claim."
+      },
+      {
+        "q": "What learner age does the metadata claim?",
+        "a": "No fixed age range is claimed. The EPUB is a beginner reference for learners of any age; children should use it with a caregiver or educator. It is not a diagnostic assessment or complete Chinese course."
+      }
+    ]
   }
 ]

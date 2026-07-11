@@ -53,6 +53,10 @@ def main():
             "where-can-a-school-library-download-catalog-records-for-a-"
             "bopomofo-epub"
         ),
+        (
+            "where-can-an-oer-repository-download-metadata-for-a-"
+            "bopomofo-learning-resource"
+        ),
     ]
     # 1) 重建
     require([PY, os.path.join(HERE, "build_pages_i18n.py")], env=env)
@@ -78,6 +82,7 @@ def main():
     require([PY, os.path.join(HERE, "zhuyin_lms_assessment_bank.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_epub_opds.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_library_catalog.py")], env=env)
+    require([PY, os.path.join(HERE, "zhuyin_oer_metadata.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_resourcesync.py")], env=env)
     require(
         [PY, os.path.join(HERE, "prioritize_trip_planet_resources.py")],

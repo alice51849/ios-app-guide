@@ -46,6 +46,7 @@ CAPABILITY_LIST_PATH = Path("resourcesync") / "capabilitylist.xml"
 RESOURCE_LIST_PATH = Path("resourcesync") / "resourcelist.xml"
 COLLECTION_PATH = Path("resourcesync") / "bopomofo-collection.jsonld"
 STATE_PATH = Path("resourcesync") / "snapshot.json"
+STATE_VERSION = 2
 LANDING_PATH = Path("data") / "zhuyin-bopomofo-resourcesync.html"
 ZH_LANDING_PATH = Path("zh-Hant") / LANDING_PATH
 SITEMAP_PATH = Path("sitemap_resourcesync.xml")
@@ -65,6 +66,7 @@ CONTENT_PATTERNS = (
     "data/packages/zhuyin-bopomofo-lms/**/*",
     "data/packages/zhuyin-bopomofo-epub/**/*",
     "data/packages/zhuyin-bopomofo-library/**/*",
+    "data/packages/zhuyin-bopomofo-oer/**/*",
     "publications/bopomofo-37-symbol-reference/**/*",
     "opds/bopomofo-37-symbol-reference.*",
     "api/v1/bopomofo-symbols/**/*",
@@ -114,6 +116,27 @@ REQUIRED_PATHS = (
     / "zhuyin-bopomofo-library"
     / "bopomofo-37-symbol-library-catalog-bundle.zip",
     Path("data") / "packages" / "zhuyin-bopomofo-library" / "metadata.jsonld",
+    Path("data")
+    / "packages"
+    / "zhuyin-bopomofo-oer"
+    / "bopomofo-37-symbol-reference-en.oai-dc.xml",
+    Path("data")
+    / "packages"
+    / "zhuyin-bopomofo-oer"
+    / "bopomofo-37-symbol-reference-zh-hant.oai-dc.xml",
+    Path("data")
+    / "packages"
+    / "zhuyin-bopomofo-oer"
+    / "bopomofo-37-symbol-reference.dcmi-terms.jsonld",
+    Path("data")
+    / "packages"
+    / "zhuyin-bopomofo-oer"
+    / "bopomofo-37-symbol-reference.lrmi.jsonld",
+    Path("data")
+    / "packages"
+    / "zhuyin-bopomofo-oer"
+    / "bopomofo-37-symbol-oer-metadata-bundle.zip",
+    Path("data") / "packages" / "zhuyin-bopomofo-oer" / "metadata.jsonld",
 )
 CARD_START = "<!-- resourcesync-card:start -->"
 CARD_END = "<!-- resourcesync-card:end -->"
@@ -158,7 +181,8 @@ COPY = {
             ("Data and linked data", "JSON, CSV, JSON-LD, Turtle and N-Triples"),
             (
                 "Portable packages",
-                "Croissant, Data Package, LMS imports and accessible EPUB editions",
+                "Croissant, Data Package, LMS imports, accessible EPUB editions "
+                "and OER repository metadata",
             ),
             ("Static API", "OpenAPI plus all 37 versioned symbol responses"),
             ("Open teaching tools", "Bilingual guides, decks and printable activities"),
@@ -225,7 +249,8 @@ COPY = {
             ("資料與 Linked Data", "JSON、CSV、JSON-LD、Turtle 與 N-Triples"),
             (
                 "可攜套件",
-                "Croissant、Data Package、LMS 匯入檔與無障礙 EPUB 版本",
+                "Croissant、Data Package、LMS 匯入檔、無障礙 EPUB 版本與 "
+                "OER 典藏庫 metadata",
             ),
             ("靜態 API", "OpenAPI 與完整 37 個版本化符號回應"),
             ("開放教學工具", "雙語指南、牌組與可列印活動"),
@@ -341,6 +366,33 @@ def validate_resources(resources: list[Resource]) -> None:
             raise ValueError(f"Invalid SHA-256 for {resource.url}")
 
 
+def _utc_now() -> dt.datetime:
+    return dt.datetime.now(dt.timezone.utc)
+
+
+def _next_revision_at(previous_at: str | None) -> str:
+    candidate = _utc_now()
+    if candidate.tzinfo is None:
+        raise ValueError("ResourceSync revision time must include a timezone")
+    candidate = candidate.astimezone(dt.timezone.utc).replace(microsecond=0)
+    if previous_at:
+        try:
+            previous = dt.datetime.fromisoformat(
+                previous_at.replace("Z", "+00:00")
+            )
+        except ValueError as exc:
+            raise ValueError(
+                f"Invalid prior ResourceSync revision time: {previous_at}"
+            ) from exc
+        if previous.tzinfo is None:
+            raise ValueError(
+                f"Prior ResourceSync revision time lacks timezone: {previous_at}"
+            )
+        previous = previous.astimezone(dt.timezone.utc)
+        candidate = max(candidate, previous + dt.timedelta(seconds=1))
+    return candidate.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
 def _snapshot(pages: Path, resources: list[Resource]) -> dict:
     fingerprint_source = "\n".join(
         ":".join(
@@ -359,10 +411,17 @@ def _snapshot(pages: Path, resources: list[Resource]) -> dict:
     previous = {}
     if state_path.exists():
         previous = json.loads(state_path.read_text(encoding="utf-8"))
-    at = previous.get("at") if previous.get("fingerprint") == fingerprint else None
-    if not at:
-        at = f"{TODAY}T00:00:00Z"
+    unchanged = (
+        previous.get("stateVersion") == STATE_VERSION
+        and previous.get("fingerprint") == fingerprint
+    )
+    at = (
+        previous["at"]
+        if unchanged
+        else _next_revision_at(previous.get("at"))
+    )
     state = {
+        "stateVersion": STATE_VERSION,
         "specification": SPEC,
         "at": at,
         "fingerprint": fingerprint,

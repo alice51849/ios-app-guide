@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import copy
 import csv
+import datetime as dt
 import hashlib
 import io
 import importlib.util
@@ -63,6 +64,7 @@ import zhuyin_heritage_lesson_plan
 import zhuyin_library_storytime_kit
 import zhuyin_library_catalog
 import zhuyin_lms_assessment_bank
+import zhuyin_oer_metadata
 import zhuyin_parent_teacher_handoff_kit
 import zhuyin_picture_book_club_kit
 import zhuyin_readiness_tool
@@ -3114,6 +3116,592 @@ class GeneratorTests(unittest.TestCase):
             }
             self.assertFalse(used - declared)
 
+    def test_zhuyin_oer_metadata_is_complete_verifiable_and_deterministic(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            data = pages / "data"
+            data.mkdir(parents=True)
+            catalog = {
+                "@context": "https://schema.org",
+                "@type": "DataCatalog",
+                "dataset": [],
+            }
+            (data / "index.html").write_text(
+                '<script type="application/ld+json">'
+                + json.dumps(catalog)
+                + '</script><main><p class="foot">Footer</p></main>',
+                encoding="utf-8",
+            )
+            zhuyin_epub_opds.build(pages, app_public=False)
+            urls = zhuyin_oer_metadata.build(pages, app_public=False)
+            self.assertEqual(9, len(urls))
+
+            package_dir = pages / zhuyin_oer_metadata.PACKAGE_PATH
+            expected = tuple(
+                package_dir / filename
+                for filename in zhuyin_oer_metadata.DOWNLOAD_FILENAMES
+            ) + (
+                pages / zhuyin_oer_metadata.LANDING_PATH,
+                pages / zhuyin_oer_metadata.ZH_LANDING_PATH,
+                pages / zhuyin_oer_metadata.SITEMAP_PATH,
+            )
+            self.assertTrue(all(path.exists() for path in expected))
+
+            raw = b"\n".join(
+                (package_dir / filename).read_bytes()
+                for filename in zhuyin_oer_metadata.DOWNLOAD_FILENAMES
+            )
+            for forbidden in (
+                b"apps.apple.com",
+                zhuyin_oer_metadata.APP_ID.encode("ascii"),
+                zhuyin_oer_metadata.APP_NAME.encode("utf-8"),
+                b"SoftwareApplication",
+                b"imsmd",
+            ):
+                self.assertNotIn(forbidden, raw)
+
+            source = json.loads(
+                (
+                    pages
+                    / zhuyin_oer_metadata.SOURCE_METADATA_PATH
+                ).read_text(encoding="utf-8")
+            )
+            source_editions = {
+                item["inLanguage"]: item
+                for item in source["encoding"]
+                if item["encodingFormat"] == "application/epub+zip"
+            }
+            oai_files = (
+                ("en", zhuyin_oer_metadata.OAI_DC_EN_FILENAME),
+                ("zh-Hant", zhuyin_oer_metadata.OAI_DC_ZH_FILENAME),
+            )
+            for locale, filename in oai_files:
+                root = ET.parse(package_dir / filename).getroot()
+                self.assertEqual(
+                    f"{{{zhuyin_oer_metadata.OAI_DC_NS}}}dc",
+                    root.tag,
+                )
+                identifiers = {
+                    item.text
+                    for item in root.findall(
+                        f"{{{zhuyin_oer_metadata.DC_ELEMENTS}}}identifier"
+                    )
+                }
+                self.assertIn(
+                    source_editions[locale]["contentUrl"],
+                    identifiers,
+                )
+                self.assertIn(
+                    f"urn:sha256:{source_editions[locale]['sha256']}",
+                    identifiers,
+                )
+                self.assertFalse(
+                    root.findall(
+                        f"{{{zhuyin_oer_metadata.DC_ELEMENTS}}}source"
+                    )
+                )
+                relations = {
+                    item.text
+                    for item in root.findall(
+                        f"{{{zhuyin_oer_metadata.DC_ELEMENTS}}}relation"
+                    )
+                }
+                self.assertIn(
+                    zhuyin_oer_metadata.SOURCE_METADATA_URL,
+                    relations,
+                )
+                self.assertIn(
+                    zhuyin_oer_metadata.EPUB_LANDING_URL,
+                    relations,
+                )
+
+            for filename, modified_key in (
+                (
+                    zhuyin_oer_metadata.DCMI_FILENAME,
+                    "dcterms:modified",
+                ),
+                (
+                    zhuyin_oer_metadata.LRMI_FILENAME,
+                    "schema:dateModified",
+                ),
+            ):
+                document = json.loads(
+                    (package_dir / filename).read_text(encoding="utf-8")
+                )
+                self.assertIsInstance(document["@context"], dict)
+                resources = {
+                    node["@id"]: node
+                    for node in document["@graph"]
+                    if node.get("@id") in {
+                        source_editions["en"]["contentUrl"],
+                        source_editions["zh-Hant"]["contentUrl"],
+                    }
+                }
+                self.assertEqual(
+                    {
+                        source_editions["en"]["contentUrl"],
+                        source_editions["zh-Hant"]["contentUrl"],
+                    },
+                    set(resources),
+                )
+                for node in resources.values():
+                    self.assertEqual(
+                        source["dateModified"],
+                        node[modified_key]["@value"],
+                    )
+
+            metadata = json.loads(
+                (
+                    package_dir / zhuyin_oer_metadata.METADATA_FILENAME
+                ).read_text(encoding="utf-8")
+            )
+            self.assertEqual(5, len(metadata["distribution"]))
+            self.assertIn(
+                zhuyin_oer_metadata.OAI_DC_SCHEMA,
+                metadata["conformsTo"],
+            )
+            self.assertIn(
+                zhuyin_oer_metadata.DCMI_TERMS_SPEC,
+                metadata["conformsTo"],
+            )
+            self.assertIn(
+                zhuyin_oer_metadata.LRMI_TERMS_SPEC,
+                metadata["conformsTo"],
+            )
+            for distribution in metadata["distribution"]:
+                filename = Path(distribution["contentUrl"]).name
+                local = package_dir / filename
+                self.assertEqual(
+                    local.stat().st_size,
+                    int(distribution["contentSize"].split()[0]),
+                )
+                self.assertEqual(
+                    hashlib.sha256(local.read_bytes()).hexdigest(),
+                    distribution["sha256"],
+                )
+
+            with zipfile.ZipFile(
+                package_dir / zhuyin_oer_metadata.BUNDLE_FILENAME
+            ) as archive:
+                self.assertEqual(
+                    {
+                        *zhuyin_oer_metadata.PRIMARY_FILENAMES,
+                        "README.txt",
+                        "checksums.sha256",
+                    },
+                    set(archive.namelist()),
+                )
+                for filename in zhuyin_oer_metadata.PRIMARY_FILENAMES:
+                    self.assertEqual(
+                        (package_dir / filename).read_bytes(),
+                        archive.read(filename),
+                    )
+
+            english = (
+                pages / zhuyin_oer_metadata.LANDING_PATH
+            ).read_text(encoding="utf-8")
+            traditional = (
+                pages / zhuyin_oer_metadata.ZH_LANDING_PATH
+            ).read_text(encoding="utf-8")
+            for landing in (english, traditional):
+                self.assertIn("OAI-DC", landing)
+                self.assertIn("DCMI Terms", landing)
+                self.assertIn("LRMI", landing)
+                self.assertIn("OAI-PMH", landing)
+                self.assertNotIn("apps.apple.com", landing)
+                self.assertNotIn('"SoftwareApplication"', landing)
+
+            package_info = {
+                filename: zhuyin_oer_metadata._artifact(
+                    filename,
+                    (package_dir / filename).read_bytes(),
+                )
+                for filename in zhuyin_oer_metadata.DOWNLOAD_FILENAMES
+            }
+            public = zhuyin_oer_metadata.render_landing(
+                "en",
+                package_info,
+                metadata["dateModified"],
+                zhuyin_oer_metadata.INITIAL_DATE,
+                True,
+            )
+            self.assertIn("apps.apple.com", public)
+            self.assertIn('"SoftwareApplication"', public)
+
+            index = (data / "index.html").read_text(encoding="utf-8")
+            self.assertEqual(
+                1,
+                index.count(zhuyin_oer_metadata.CARD_START),
+            )
+            self.assertIn(zhuyin_oer_metadata.LANDING_URL, index)
+            sitemap = (
+                pages / zhuyin_oer_metadata.SITEMAP_PATH
+            ).read_text(encoding="utf-8")
+            for filename in zhuyin_oer_metadata.DOWNLOAD_FILENAMES:
+                self.assertIn(
+                    f"{zhuyin_oer_metadata.PACKAGE_URL}/{filename}",
+                    sitemap,
+                )
+
+            with mock.patch.object(
+                gen_llms,
+                "PAGES",
+                str(pages),
+            ), mock.patch.object(
+                gen_llms,
+                "DATA_DIR",
+                str(data),
+            ):
+                llms = gen_llms.build_llms({}, set())
+                full = gen_llms.build_llms_full({}, set())
+                robots = gen_llms.build_robots()
+                sitemap_index = gen_llms.build_sitemap_index()
+            for content in (llms, full):
+                self.assertIn("Bopomofo OER repository metadata", content)
+                self.assertIn(
+                    zhuyin_oer_metadata.LRMI_FILENAME,
+                    content,
+                )
+            for content in (robots, sitemap_index):
+                self.assertIn(
+                    "sitemap_oer_metadata.xml",
+                    content,
+                )
+
+            mtimes = {
+                path: path.stat().st_mtime_ns
+                for path in (*expected, data / "index.html")
+            }
+            zhuyin_oer_metadata.build(pages, app_public=False)
+            self.assertEqual(
+                mtimes,
+                {
+                    path: path.stat().st_mtime_ns
+                    for path in (*expected, data / "index.html")
+                },
+            )
+
+    @unittest.skipUnless(
+        importlib.util.find_spec("lxml")
+        and importlib.util.find_spec("rdflib"),
+        "XML and RDF validation dependencies are installed in CI",
+    )
+    def test_zhuyin_oer_metadata_matches_official_schemas_and_vocabularies(self):
+        from lxml import etree
+        from rdflib import Graph, Literal, RDF, URIRef, XSD
+
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            data = pages / "data"
+            data.mkdir(parents=True)
+            (data / "index.html").write_text(
+                '<script type="application/ld+json">'
+                '{"@context":"https://schema.org","@type":"DataCatalog",'
+                '"dataset":[]}</script><p class="foot">Footer</p>',
+                encoding="utf-8",
+            )
+            zhuyin_epub_opds.build(pages, app_public=False)
+            zhuyin_oer_metadata.build(pages, app_public=False)
+            package = pages / zhuyin_oer_metadata.PACKAGE_PATH
+            specifications = (
+                Path(GEO)
+                / "reference_datasets"
+                / "oer-metadata"
+            )
+            sources = json.loads(
+                (specifications / "sources.json").read_text(encoding="utf-8")
+            )
+            self.assertIn("IMS", sources["excluded"][0]["name"])
+            for source in sources["files"]:
+                self.assertEqual(
+                    source["sha256"],
+                    hashlib.sha256(
+                        (specifications / source["filename"]).read_bytes()
+                    ).hexdigest(),
+                )
+            notice = " ".join(
+                (
+                    specifications / sources["notice"]["filename"]
+                ).read_text(encoding="utf-8").split()
+            )
+            self.assertIn(
+                "Portions of this software may use XML and RDF schemas "
+                "Copyright © 2011 DCMI, the Dublin Core™ Metadata Initiative.",
+                notice,
+            )
+            self.assertIn(sources["notice"]["license"], notice)
+
+            class LocalSchemaResolver(etree.Resolver):
+                def resolve(self, url, public_id, context):
+                    if url.endswith("simpledc20021212.xsd"):
+                        return self.resolve_filename(
+                            str(
+                                (
+                                    specifications
+                                    / "simpledc20021212.xsd"
+                                ).resolve()
+                            ),
+                            context,
+                        )
+                    if url.endswith("xml.xsd"):
+                        return self.resolve_filename(
+                            str((specifications / "xml.xsd").resolve()),
+                            context,
+                        )
+                    return None
+
+            parser = etree.XMLParser(no_network=True)
+            parser.resolvers.add(LocalSchemaResolver())
+            schema = etree.XMLSchema(
+                etree.parse(
+                    str(specifications / "oai_dc.xsd"),
+                    parser,
+                )
+            )
+            for filename in (
+                zhuyin_oer_metadata.OAI_DC_EN_FILENAME,
+                zhuyin_oer_metadata.OAI_DC_ZH_FILENAME,
+            ):
+                schema.assertValid(
+                    etree.parse(str(package / filename), parser)
+                )
+
+            dcmi_graph = Graph().parse(
+                package / zhuyin_oer_metadata.DCMI_FILENAME,
+                format="json-ld",
+            )
+            lrmi_graph = Graph().parse(
+                package / zhuyin_oer_metadata.LRMI_FILENAME,
+                format="json-ld",
+            )
+            manifest_graph = Graph().parse(
+                package / zhuyin_oer_metadata.METADATA_FILENAME,
+                format="json-ld",
+            )
+            landing = (
+                pages / zhuyin_oer_metadata.LANDING_PATH
+            ).read_text(encoding="utf-8")
+            landing_schema = re.search(
+                r'<script type="application/ld\+json">(.*?)</script>',
+                landing,
+                flags=re.DOTALL,
+            )
+            self.assertIsNotNone(landing_schema)
+            landing_graph = Graph().parse(
+                data=landing_schema.group(1),
+                format="json-ld",
+            )
+            self.assertEqual(102, len(dcmi_graph))
+            self.assertEqual(174, len(lrmi_graph))
+            schema = zhuyin_oer_metadata.SCHEMA
+            for graph, predicates in (
+                (
+                    manifest_graph,
+                    ("url", "license", "contentUrl", "conformsTo"),
+                ),
+                (
+                    landing_graph,
+                    (
+                        "url",
+                        "license",
+                        "contentUrl",
+                        "isBasedOn",
+                        "conformsTo",
+                    ),
+                ),
+            ):
+                for predicate in predicates:
+                    values = list(
+                        graph.objects(
+                            predicate=URIRef(f"{schema}{predicate}")
+                        )
+                    )
+                    self.assertTrue(values, predicate)
+                    self.assertTrue(
+                        all(isinstance(value, URIRef) for value in values),
+                        (predicate, values),
+                    )
+            source_metadata = json.loads(
+                (
+                    pages / zhuyin_oer_metadata.SOURCE_METADATA_PATH
+                ).read_text(encoding="utf-8")
+            )
+            source_modified = Literal(
+                source_metadata["dateModified"],
+                datatype=XSD.dateTime,
+            )
+            dcmi_record = URIRef(
+                f"{zhuyin_oer_metadata.PACKAGE_URL}/"
+                f"{zhuyin_oer_metadata.DCMI_FILENAME}"
+            )
+            lrmi_record = URIRef(
+                f"{zhuyin_oer_metadata.PACKAGE_URL}/"
+                f"{zhuyin_oer_metadata.LRMI_FILENAME}"
+            )
+            source_manifest = URIRef(
+                zhuyin_oer_metadata.SOURCE_METADATA_URL
+            )
+            self.assertIn(
+                source_manifest,
+                dcmi_graph.objects(
+                    dcmi_record,
+                    URIRef(zhuyin_oer_metadata.DCTERMS + "source"),
+                ),
+            )
+            self.assertIn(
+                source_manifest,
+                lrmi_graph.objects(
+                    lrmi_record,
+                    URIRef(zhuyin_oer_metadata.SCHEMA + "isBasedOn"),
+                ),
+            )
+            for edition in source_metadata["encoding"]:
+                if edition["encodingFormat"] != "application/epub+zip":
+                    continue
+                resource = URIRef(edition["contentUrl"])
+                self.assertIn(
+                    source_modified,
+                    dcmi_graph.objects(
+                        resource,
+                        URIRef(
+                            zhuyin_oer_metadata.DCTERMS + "modified"
+                        ),
+                    ),
+                )
+                self.assertFalse(
+                    list(
+                        dcmi_graph.objects(
+                            resource,
+                            URIRef(
+                                zhuyin_oer_metadata.DCTERMS + "source"
+                            ),
+                        )
+                    )
+                )
+                self.assertFalse(
+                    list(
+                        dcmi_graph.objects(
+                            resource,
+                            URIRef(
+                                zhuyin_oer_metadata.DCTERMS + "isPartOf"
+                            ),
+                        )
+                    )
+                )
+                self.assertIn(
+                    dcmi_record,
+                    dcmi_graph.objects(
+                        resource,
+                        URIRef(
+                            zhuyin_oer_metadata.DCTERMS
+                            + "isReferencedBy"
+                        ),
+                    ),
+                )
+                for predicate in ("isBasedOn", "isPartOf"):
+                    self.assertFalse(
+                        list(
+                            lrmi_graph.objects(
+                                resource,
+                                URIRef(
+                                    zhuyin_oer_metadata.SCHEMA + predicate
+                                ),
+                            )
+                        )
+                    )
+                self.assertIn(
+                    URIRef(zhuyin_oer_metadata.EPUB_LANDING_URL),
+                    lrmi_graph.objects(
+                        resource,
+                        URIRef(
+                            zhuyin_oer_metadata.SCHEMA
+                            + "mainEntityOfPage"
+                        ),
+                    ),
+                )
+                self.assertIn(
+                    lrmi_record,
+                    lrmi_graph.objects(
+                        resource,
+                        URIRef(
+                            zhuyin_oer_metadata.SCHEMA + "subjectOf"
+                        ),
+                    ),
+                )
+                self.assertIn(
+                    source_modified,
+                    lrmi_graph.objects(
+                        resource,
+                        URIRef(
+                            zhuyin_oer_metadata.SCHEMA + "dateModified"
+                        ),
+                    ),
+                )
+            dcmi_vocabulary = Graph().parse(
+                specifications / "dcmi-terms.ttl",
+                format="turtle",
+            )
+            lrmi_vocabulary = Graph().parse(
+                specifications / "lrmi-terms.ttl",
+                format="turtle",
+            )
+            resource_types = Graph().parse(
+                specifications / "learningResourceType.ttl",
+                format="turtle",
+            )
+            educational_uses = Graph().parse(
+                specifications / "educationalUse.ttl",
+                format="turtle",
+            )
+            used_dcmi = {
+                term
+                for triple in dcmi_graph
+                for term in triple
+                if isinstance(term, URIRef)
+                and str(term).startswith(zhuyin_oer_metadata.DCTERMS)
+            }
+            used_lrmi = {
+                term
+                for triple in lrmi_graph
+                for term in triple
+                if isinstance(term, URIRef)
+                and str(term).startswith(zhuyin_oer_metadata.LRMI)
+            }
+            self.assertFalse(used_dcmi - set(dcmi_vocabulary.subjects()))
+            self.assertFalse(used_lrmi - set(lrmi_vocabulary.subjects()))
+            self.assertIn(
+                URIRef(
+                    zhuyin_oer_metadata.LRMI_RESOURCE_TYPE
+                    + "supportingDocument"
+                ),
+                set(resource_types.subjects()),
+            )
+            self.assertIn(
+                URIRef(
+                    zhuyin_oer_metadata.LRMI_EDUCATIONAL_USE
+                    + "instruction"
+                ),
+                set(educational_uses.subjects()),
+            )
+            self.assertEqual(
+                2,
+                len(
+                    set(
+                        lrmi_graph.subjects(
+                            RDF.type,
+                            URIRef(
+                                zhuyin_oer_metadata.LRMI
+                                + "LearningResource"
+                            ),
+                        )
+                    )
+                ),
+            )
+            self.assertNotIn(
+                URIRef(zhuyin_oer_metadata.LRMI + "typicalAgeRange"),
+                set(lrmi_graph.predicates()),
+            )
+
     def _seed_zhuyin_resourcesync_pages(self, pages):
         data = pages / "data"
         data.mkdir(parents=True)
@@ -3141,6 +3729,7 @@ class GeneratorTests(unittest.TestCase):
         zhuyin_lms_assessment_bank.build(pages, app_public=False)
         zhuyin_epub_opds.build(pages, app_public=False)
         zhuyin_library_catalog.build(pages, app_public=False)
+        zhuyin_oer_metadata.build(pages, app_public=False)
 
     def test_zhuyin_resourcesync_is_complete_verifiable_and_discoverable(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -3182,7 +3771,7 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual("resourcelist", root_metadata.attrib["capability"])
             self.assertRegex(
                 root_metadata.attrib["at"],
-                r"^\d{4}-\d{2}-\d{2}T00:00:00Z$",
+                r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$",
             )
 
             resources = zhuyin_resourcesync.discover_resources(pages)
@@ -3255,15 +3844,32 @@ class GeneratorTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)
             self._seed_zhuyin_resourcesync_pages(pages)
+            first_revision = dt.datetime(
+                2026,
+                7,
+                11,
+                8,
+                30,
+                tzinfo=dt.timezone.utc,
+            )
             with mock.patch.object(
-                zhuyin_resourcesync, "TODAY", "2026-07-11"
+                zhuyin_resourcesync,
+                "_utc_now",
+                return_value=first_revision,
             ):
                 zhuyin_resourcesync.build(pages, app_public=False)
             state_path = pages / zhuyin_resourcesync.STATE_PATH
             first = json.loads(state_path.read_text(encoding="utf-8"))
+            self.assertEqual(
+                zhuyin_resourcesync.STATE_VERSION,
+                first["stateVersion"],
+            )
+            self.assertEqual("2026-07-11T08:30:00Z", first["at"])
 
             with mock.patch.object(
-                zhuyin_resourcesync, "TODAY", "2026-07-12"
+                zhuyin_resourcesync,
+                "_utc_now",
+                return_value=first_revision + dt.timedelta(minutes=10),
             ):
                 zhuyin_resourcesync.build(pages, app_public=False)
             unchanged = json.loads(state_path.read_text(encoding="utf-8"))
@@ -3272,12 +3878,14 @@ class GeneratorTests(unittest.TestCase):
             canonical = pages / "data" / "zhuyin-bopomofo.json"
             canonical.write_text('{"fixture":"changed"}\n', encoding="utf-8")
             with mock.patch.object(
-                zhuyin_resourcesync, "TODAY", "2026-07-12"
+                zhuyin_resourcesync,
+                "_utc_now",
+                return_value=first_revision,
             ):
                 zhuyin_resourcesync.build(pages, app_public=False)
             changed = json.loads(state_path.read_text(encoding="utf-8"))
             self.assertNotEqual(first["fingerprint"], changed["fingerprint"])
-            self.assertEqual("2026-07-12T00:00:00Z", changed["at"])
+            self.assertEqual("2026-07-11T08:30:01Z", changed["at"])
 
     def test_zhuyin_resourcesync_landing_page_gates_optional_app_layer(self):
         private = zhuyin_resourcesync.render_page(
@@ -5147,6 +5755,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_lms_assessment_bank.py", workflow)
         self.assertIn("zhuyin_epub_opds.py", workflow)
         self.assertIn("zhuyin_library_catalog.py", workflow)
+        self.assertIn("zhuyin_oer_metadata.py", workflow)
         self.assertIn("zhuyin_resourcesync.py", workflow)
         self.assertIn("family_travel_mission_cards.py", workflow)
         self.assertIn("family_travel_observation_passport.py", workflow)
@@ -5179,6 +5788,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_lms_assessment_bank.py",
             "zhuyin_epub_opds.py",
             "zhuyin_library_catalog.py",
+            "zhuyin_oer_metadata.py",
             "zhuyin_resourcesync.py",
             "prioritize_trip_planet_resources.py",
             "add_related_tools.py",
@@ -5194,6 +5804,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("--refresh-slug \"$OBSERVATION_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$EPUB_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$LIBRARY_SLUG\"", workflow)
+        self.assertIn("--refresh-slug \"$OER_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$TRIP_SLUG\"", workflow)
         self.assertIn('"lumibopomofo" in live_app_keys', workflow)
         self.assertIn('"tripplanet" in live_app_keys', workflow)
@@ -5217,6 +5828,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_lms_assessment_bank.py", publish)
         self.assertIn("zhuyin_epub_opds.py", publish)
         self.assertIn("zhuyin_library_catalog.py", publish)
+        self.assertIn("zhuyin_oer_metadata.py", publish)
         self.assertIn("zhuyin_resourcesync.py", publish)
         self.assertIn("family_travel_mission_cards.py", publish)
         self.assertIn("family_travel_observation_passport.py", publish)
@@ -5250,6 +5862,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_lms_assessment_bank.py",
             "zhuyin_epub_opds.py",
             "zhuyin_library_catalog.py",
+            "zhuyin_oer_metadata.py",
             "zhuyin_resourcesync.py",
             "prioritize_trip_planet_resources.py",
             "add_related_answers.py",

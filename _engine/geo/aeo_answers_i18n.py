@@ -68,6 +68,7 @@ NO_TRANSLATE_JSON_KEYS = {
     "item",
     "operatingSystem",
     "applicationCategory",
+    "inLanguage",
     "price",
     "priceCurrency",
 }
@@ -166,6 +167,17 @@ def apply_json_mapping(obj: Any, mapping: dict[str, str], key: str | None = None
         return [apply_json_mapping(v, mapping, key) for v in obj]
     if isinstance(obj, str) and should_translate_json(key, obj):
         return mapping.get(obj, obj)
+    return obj
+
+
+def update_json_language(obj: Any, lang: str) -> Any:
+    if isinstance(obj, dict):
+        for key, value in obj.items():
+            obj[key] = update_json_language(value, lang)
+        if "inLanguage" in obj:
+            obj["inLanguage"] = BASE_LANG[lang]
+    elif isinstance(obj, list):
+        return [update_json_language(value, lang) for value in obj]
     return obj
 
 
@@ -360,7 +372,19 @@ def localize_body_links(source: str, lang: str) -> str:
     def repl(m: re.Match[str]) -> str:
         return f'{m.group(1)}{localize_url(m.group(2), lang)}{m.group(3)}'
 
-    return re.sub(r'(<a\b[^>]*\bhref=")(https://alice51849\.github\.io/ios-app-guide/[^"]+)(")', repl, source)
+    source = re.sub(
+        r'(<a\b[^>]*\bhref=")'
+        r'(https://alice51849\.github\.io/ios-app-guide/[^"]+)(")',
+        repl,
+        source,
+    )
+    return re.sub(
+        r'(<meta\b[^>]*\bhttp-equiv="refresh"[^>]*\bcontent="\d+;url=)'
+        r'(https://alice51849\.github\.io/ios-app-guide/[^"]+)(")',
+        repl,
+        source,
+        flags=re.I,
+    )
 
 
 RTL_LANGS = {"ar-SA", "he", "ur-PK", "fa"}
@@ -408,6 +432,7 @@ def render_localized(source: str, lang: str, slug: str, mapping: dict[str, str])
     for start, end, raw in json_spans:
         obj = json.loads(raw)
         obj = apply_json_mapping(obj, mapping)
+        obj = update_json_language(obj, lang)
         obj = update_breadcrumb_urls(obj, lang, slug)
         replacements.append((start, end, "\n" + json.dumps(obj, ensure_ascii=False, indent=2) + "\n"))
 

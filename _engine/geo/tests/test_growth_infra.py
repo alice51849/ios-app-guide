@@ -6999,6 +6999,31 @@ class GeneratorTests(unittest.TestCase):
             aeo_answers_i18n.main()
         self.assertEqual(2, raised.exception.code)
 
+    def test_answer_localizer_updates_jsonld_language_semantically(self):
+        source = (
+            '<html lang="en"><head><script type="application/ld+json">'
+            '{"@context":"https://schema.org","@type":"Article",'
+            '"headline":"Sample headline","inLanguage":"en"}'
+            "</script></head><body><h1>Sample headline</h1></body></html>"
+        )
+        strings, _, _ = aeo_answers_i18n.extract_strings(source)
+        self.assertNotIn("en", strings)
+        localized = aeo_answers_i18n.render_localized(
+            source,
+            "zh-Hant",
+            "sample",
+            {"Sample headline": "範例標題"},
+        )
+        match = re.search(
+            r'<script type="application/ld\+json">(.*?)</script>',
+            localized,
+            re.S,
+        )
+        self.assertIsNotNone(match)
+        metadata = json.loads(match.group(1))
+        self.assertEqual("zh-Hant", metadata["inLanguage"])
+        self.assertEqual("範例標題", metadata["headline"])
+
     def test_heritage_lesson_plan_is_bilingual_and_honest(self):
         english = zhuyin_heritage_lesson_plan.render_page("en")
         traditional = zhuyin_heritage_lesson_plan.render_page("zh-Hant")
@@ -7062,6 +7087,19 @@ class GeneratorTests(unittest.TestCase):
                 aeo_answers_i18n.localize_url(
                     "https://alice51849.github.io/ios-app-guide/"
                     "tools/helper.html?x=1#result",
+                    "zh-Hant",
+                ),
+            )
+            redirect = (
+                '<meta http-equiv="refresh" content="0;url='
+                "https://alice51849.github.io/ios-app-guide/tools/helper.html"
+                '">'
+            )
+            self.assertIn(
+                "content=\"0;url=https://alice51849.github.io/"
+                "ios-app-guide/zh-Hant/tools/helper.html\"",
+                aeo_answers_i18n.localize_body_links(
+                    redirect,
                     "zh-Hant",
                 ),
             )

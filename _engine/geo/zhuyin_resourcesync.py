@@ -68,12 +68,14 @@ CONTENT_PATTERNS = (
     "data/packages/zhuyin-bopomofo-library/**/*",
     "data/packages/zhuyin-bopomofo-oer/**/*",
     "data/packages/zhuyin-bopomofo-dcat3/**/*",
+    "data/packages/zhuyin-bopomofo-csvw/**/*",
     "publications/bopomofo-37-symbol-reference/**/*",
     "opds/bopomofo-37-symbol-reference.*",
     "api/v1/bopomofo-symbols/**/*",
     "tools/zhuyin-*",
     "zh-Hant/data/zhuyin-bopomofo*",
     "zh-Hant/data/packages/zhuyin-bopomofo/**/*",
+    "zh-Hant/data/packages/zhuyin-bopomofo-csvw/**/*",
     "zh-Hant/api/v1/bopomofo-symbols/**/*",
     "zh-Hant/tools/zhuyin-*",
 )
@@ -81,6 +83,19 @@ REQUIRED_PATHS = (
     Path("data") / "zhuyin-bopomofo.json",
     Path("data") / "zhuyin-bopomofo-vocabulary.jsonld",
     Path("data") / "zhuyin-bopomofo-ml-dataset.croissant.jsonld",
+    Path("data") / "zhuyin-bopomofo-ml-dataset.csv-metadata.json",
+    Path("data")
+    / "packages"
+    / "zhuyin-bopomofo-csvw"
+    / "bopomofo-37-symbols-csvw-bundle.zip",
+    Path("data")
+    / "packages"
+    / "zhuyin-bopomofo-csvw"
+    / "checksums-sha256.txt",
+    Path("data")
+    / "packages"
+    / "zhuyin-bopomofo-csvw"
+    / "metadata.jsonld",
     Path("data") / "packages" / "zhuyin-bopomofo" / "datapackage.json",
     Path("api") / "v1" / "bopomofo-symbols" / "index.json",
     Path("data") / "packages" / "zhuyin-bopomofo-lms" / "metadata.jsonld",

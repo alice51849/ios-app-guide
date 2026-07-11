@@ -107,11 +107,11 @@
       ],
       "dcterms:description": [
         {
-          "@value": "Download a static W3C DCAT 3 catalog covering nine verified Bopomofo datasets and 41 exact distributions.",
+          "@value": "Download a static W3C DCAT 3 catalog covering nine verified Bopomofo datasets and 45 exact distributions.",
           "@language": "en"
         },
         {
-          "@value": "下載靜態 W3C DCAT 3 目錄，收錄 9 組已驗證注音資料集與 41 個精確版本。",
+          "@value": "下載靜態 W3C DCAT 3 目錄，收錄 9 組已驗證注音資料集與 45 個精確版本。",
           "@language": "zh-Hant"
         }
       ],
@@ -123,7 +123,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T14:23:16Z",
+        "@value": "2026-07-11T14:53:28Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:language": [
@@ -229,7 +229,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T14:23:16Z",
+        "@value": "2026-07-11T14:53:28Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -439,7 +439,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T14:23:16Z",
+        "@value": "2026-07-11T14:53:28Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -788,11 +788,11 @@
       "@type": "dcat:CatalogRecord",
       "dcterms:title": [
         {
-          "@value": "Catalog entry for Bopomofo tabular dataset with Croissant 1.1 metadata",
+          "@value": "Catalog entry for Bopomofo table with Croissant 1.1 and CSVW metadata",
           "@language": "en"
         },
         {
-          "@value": "附 Croissant 1.1 metadata 的注音表格資料集目錄紀錄",
+          "@value": "附 Croissant 1.1 與 CSVW metadata 的注音表格資料集目錄紀錄",
           "@language": "zh-Hant"
         }
       ],
@@ -801,7 +801,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T14:23:16Z",
+        "@value": "2026-07-11T14:53:28Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -816,21 +816,21 @@
       "@type": "dcat:Dataset",
       "dcterms:title": [
         {
-          "@value": "Bopomofo tabular dataset with Croissant 1.1 metadata",
+          "@value": "Bopomofo table with Croissant 1.1 and CSVW metadata",
           "@language": "en"
         },
         {
-          "@value": "附 Croissant 1.1 metadata 的注音表格資料集",
+          "@value": "附 Croissant 1.1 與 CSVW metadata 的注音表格資料集",
           "@language": "zh-Hant"
         }
       ],
       "dcterms:description": [
         {
-          "@value": "A 37-row UTF-8 table in CSV and JSON Lines with MLCommons Croissant 1.1 metadata.",
+          "@value": "A 37-row UTF-8 table in CSV and JSON Lines with MLCommons Croissant 1.1 and W3C CSVW metadata.",
           "@language": "en"
         },
         {
-          "@value": "37 列 UTF-8 注音表格，提供 CSV、JSON Lines 與 MLCommons Croissant 1.1 metadata。",
+          "@value": "37 列 UTF-8 注音表格，提供 CSV、JSON Lines 與 MLCommons Croissant 1.1、W3C CSVW metadata。",
           "@language": "zh-Hant"
         }
       ],
@@ -862,12 +862,27 @@
       "dcat:landingPage": {
         "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html"
       },
-      "dcterms:conformsTo": {
-        "@id": "http://mlcommons.org/croissant/1.1"
-      },
+      "dcterms:conformsTo": [
+        {
+          "@id": "http://mlcommons.org/croissant/1.1"
+        },
+        {
+          "@id": "https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/"
+        },
+        {
+          "@id": "https://www.w3.org/TR/2015/REC-tabular-metadata-20151217/"
+        },
+        {
+          "@id": "https://www.w3.org/TR/2015/REC-csv2rdf-20151217/"
+        }
+      ],
       "dcat:keyword": [
         {
           "@value": "Croissant",
+          "@language": "en"
+        },
+        {
+          "@value": "CSVW",
           "@language": "en"
         },
         {
@@ -903,6 +918,18 @@
         },
         {
           "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-3"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-4"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-5"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-6"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-7"
         }
       ]
     },
@@ -1042,6 +1069,189 @@
       }
     },
     {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-4",
+      "@type": "dcat:Distribution",
+      "dcterms:title": {
+        "@value": "zhuyin-bopomofo-ml-dataset.csv-metadata.json"
+      },
+      "dcterms:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dcat:accessURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json"
+      },
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/application/csvm+json"
+      },
+      "dcat:byteSize": {
+        "@value": "7701",
+        "@type": "xsd:nonNegativeInteger"
+      },
+      "dcterms:language": [
+        {
+          "@id": "http://id.loc.gov/vocabulary/iso639-1/en"
+        },
+        {
+          "@id": "http://id.loc.gov/vocabulary/iso639-1/zh"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-4-sha256"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-4-sha256",
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+        "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": {
+        "@value": "eb8dcf8e39f65a5d3747a527c58537ad13f8c5a7ae56b55b34189c4ca9a98771",
+        "@type": "xsd:hexBinary"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-5",
+      "@type": "dcat:Distribution",
+      "dcterms:title": {
+        "@value": "bopomofo-37-symbols-csvw-bundle.zip"
+      },
+      "dcterms:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dcat:accessURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/bopomofo-37-symbols-csvw-bundle.zip"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/bopomofo-37-symbols-csvw-bundle.zip"
+      },
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/application/zip"
+      },
+      "dcat:byteSize": {
+        "@value": "4867",
+        "@type": "xsd:nonNegativeInteger"
+      },
+      "dcterms:language": [
+        {
+          "@id": "http://id.loc.gov/vocabulary/iso639-1/en"
+        },
+        {
+          "@id": "http://id.loc.gov/vocabulary/iso639-1/zh"
+        }
+      ],
+      "dcat:packageFormat": {
+        "@id": "https://www.iana.org/assignments/media-types/application/zip"
+      },
+      "spdx:checksum": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-5-sha256"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-5-sha256",
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+        "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": {
+        "@value": "8cdb9e0961d725552ce284d1a6e1521f92dd9afd69682d83fdf674851893ee3d",
+        "@type": "xsd:hexBinary"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-6",
+      "@type": "dcat:Distribution",
+      "dcterms:title": {
+        "@value": "checksums-sha256.txt"
+      },
+      "dcterms:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dcat:accessURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/checksums-sha256.txt"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/checksums-sha256.txt"
+      },
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/text/plain"
+      },
+      "dcat:byteSize": {
+        "@value": "362",
+        "@type": "xsd:nonNegativeInteger"
+      },
+      "dcterms:language": [
+        {
+          "@id": "http://id.loc.gov/vocabulary/iso639-1/en"
+        },
+        {
+          "@id": "http://id.loc.gov/vocabulary/iso639-1/zh"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-6-sha256"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-6-sha256",
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+        "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": {
+        "@value": "9b26f04fb3eef881df3a983e590f565bc155e9fe3d4782d19ecaf60391a26495",
+        "@type": "xsd:hexBinary"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-7",
+      "@type": "dcat:Distribution",
+      "dcterms:title": {
+        "@value": "metadata.jsonld"
+      },
+      "dcterms:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dcat:accessURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/metadata.jsonld"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/metadata.jsonld"
+      },
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
+      },
+      "dcat:byteSize": {
+        "@value": "3029",
+        "@type": "xsd:nonNegativeInteger"
+      },
+      "dcterms:language": [
+        {
+          "@id": "http://id.loc.gov/vocabulary/iso639-1/en"
+        },
+        {
+          "@id": "http://id.loc.gov/vocabulary/iso639-1/zh"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-7-sha256"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#distribution-croissant-7-sha256",
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+        "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": {
+        "@value": "6a382525ad09793d7e57584046595d3fd97fe9d85bc7dea0198d074dc74146c1",
+        "@type": "xsd:hexBinary"
+      }
+    },
+    {
       "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#record-data-package",
       "@type": "dcat:CatalogRecord",
       "dcterms:title": [
@@ -1059,7 +1269,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T14:23:16Z",
+        "@value": "2026-07-11T14:53:28Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -1317,7 +1527,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T14:23:16Z",
+        "@value": "2026-07-11T14:53:28Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -1562,7 +1772,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T14:23:16Z",
+        "@value": "2026-07-11T14:53:28Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -1955,7 +2165,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T14:23:16Z",
+        "@value": "2026-07-11T14:53:28Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -2396,7 +2606,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T14:23:16Z",
+        "@value": "2026-07-11T14:53:28Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -2809,7 +3019,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T14:23:16Z",
+        "@value": "2026-07-11T14:53:28Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {

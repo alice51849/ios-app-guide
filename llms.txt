@@ -258,6 +258,15 @@
 - JSON Lines: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl
 - Croissant 1.1 JSON-LD: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld
 
+## Bopomofo CSVW table metadata (W3C Recommendations)
+- English guide: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/
+- Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-csvw/
+- Canonical UTF-8 CSV: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv
+- Discoverable CSVW metadata: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json
+- Deterministic offline bundle: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/bopomofo-37-symbols-csvw-bundle.zip
+- SHA-256 checksums: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/checksums-sha256.txt
+- Dataset manifest: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/metadata.jsonld
+
 ## Bopomofo portable Data Package (Data Package 2.0, CC BY 4.0)
 - English package guide: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/
 - Traditional Chinese package guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo/

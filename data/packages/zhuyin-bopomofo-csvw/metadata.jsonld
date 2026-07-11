@@ -1,0 +1,75 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/#dataset",
+  "name": "Complete 37-symbol Bopomofo table with CSVW metadata",
+  "description": "A deterministic UTF-8 CSV and W3C CSVW metadata pair covering all 37 standard Bopomofo symbols.",
+  "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/",
+  "identifier": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
+  "version": "1.0.0",
+  "datePublished": "2026-07-11",
+  "dateModified": "2026-07-11",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": {
+    "@type": "Organization",
+    "@id": "https://alice51849.github.io/ios-app-guide/#organization",
+    "name": "Lumi Apps"
+  },
+  "isAccessibleForFree": true,
+  "inLanguage": [
+    "en",
+    "zh-Hant",
+    "zh-Latn-pinyin"
+  ],
+  "keywords": [
+    "Bopomofo",
+    "Zhuyin",
+    "CSVW",
+    "tabular metadata",
+    "Mandarin phonetics"
+  ],
+  "conformsTo": [
+    "https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/",
+    "https://www.w3.org/TR/2015/REC-tabular-metadata-20151217/",
+    "https://www.w3.org/TR/2015/REC-csv2rdf-20151217/"
+  ],
+  "isBasedOn": [
+    "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json",
+    "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html",
+    "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "zhuyin-bopomofo-ml-dataset.csv",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv",
+      "encodingFormat": "text/csv",
+      "contentSize": "8350 B",
+      "sha256": "6d9235a013dd1856130841bdf6866f22173903bec726690b9b4c3e555b223422"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "zhuyin-bopomofo-ml-dataset.csv-metadata.json",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
+      "encodingFormat": "application/csvm+json",
+      "contentSize": "7701 B",
+      "sha256": "eb8dcf8e39f65a5d3747a527c58537ad13f8c5a7ae56b55b34189c4ca9a98771"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "bopomofo-37-symbols-csvw-bundle.zip",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/bopomofo-37-symbols-csvw-bundle.zip",
+      "encodingFormat": "application/zip",
+      "contentSize": "4867 B",
+      "sha256": "8cdb9e0961d725552ce284d1a6e1521f92dd9afd69682d83fdf674851893ee3d"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "checksums-sha256.txt",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/checksums-sha256.txt",
+      "encodingFormat": "text/plain",
+      "contentSize": "362 B",
+      "sha256": "9b26f04fb3eef881df3a983e590f565bc155e9fe3d4782d19ecaf60391a26495"
+    }
+  ]
+}

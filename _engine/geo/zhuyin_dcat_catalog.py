@@ -198,15 +198,15 @@ DATASETS = (
     ),
     DatasetSpec(
         key="croissant",
-        title_en="Bopomofo tabular dataset with Croissant 1.1 metadata",
-        title_zh="附 Croissant 1.1 metadata 的注音表格資料集",
+        title_en="Bopomofo table with Croissant 1.1 and CSVW metadata",
+        title_zh="附 Croissant 1.1 與 CSVW metadata 的注音表格資料集",
         description_en=(
             "A 37-row UTF-8 table in CSV and JSON Lines with MLCommons "
-            "Croissant 1.1 metadata."
+            "Croissant 1.1 and W3C CSVW metadata."
         ),
         description_zh=(
             "37 列 UTF-8 注音表格，提供 CSV、JSON Lines 與 MLCommons "
-            "Croissant 1.1 metadata。"
+            "Croissant 1.1、W3C CSVW metadata。"
         ),
         landing_path="data/zhuyin-bopomofo-ml-dataset.html",
         metadata_path="data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
@@ -214,9 +214,24 @@ DATASETS = (
             "data/zhuyin-bopomofo-ml-dataset.csv",
             "data/zhuyin-bopomofo-ml-dataset.jsonl",
             "data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
+            "data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
+            "data/packages/zhuyin-bopomofo-csvw/bopomofo-37-symbols-csvw-bundle.zip",
+            "data/packages/zhuyin-bopomofo-csvw/checksums-sha256.txt",
+            "data/packages/zhuyin-bopomofo-csvw/metadata.jsonld",
         ),
-        keywords=("Croissant", "CSV", "JSON Lines", "machine learning"),
-        conforms_to=("http://mlcommons.org/croissant/1.1",),
+        keywords=(
+            "Croissant",
+            "CSVW",
+            "CSV",
+            "JSON Lines",
+            "machine learning",
+        ),
+        conforms_to=(
+            "http://mlcommons.org/croissant/1.1",
+            "https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/",
+            "https://www.w3.org/TR/2015/REC-tabular-metadata-20151217/",
+            "https://www.w3.org/TR/2015/REC-csv2rdf-20151217/",
+        ),
     ),
     DatasetSpec(
         key="data-package",
@@ -383,7 +398,7 @@ COPY = {
         "title": "DCAT 3 open-data catalog for Bopomofo resources",
         "description": (
             "Download a static W3C DCAT 3 catalog covering nine verified "
-            "Bopomofo datasets and 41 exact distributions."
+            "Bopomofo datasets and 45 exact distributions."
         ),
         "eyebrow": "W3C DCAT 3 · JSON-LD + Turtle · SHA-256",
         "lead": (
@@ -395,7 +410,7 @@ COPY = {
         "language": "繁體中文",
         "badges": (
             "9 catalogued datasets",
-            "41 exact distributions",
+            "45 exact distributions",
             "SPDX SHA-256 fixity",
             "No account or API key",
         ),
@@ -414,7 +429,7 @@ COPY = {
         "coverage_items": (
             (
                 "Reference and linked data",
-                "Core JSON, SKOS, SHACL, Croissant, CSV, JSON Lines and Data Package 2.0.",
+                "Core JSON, SKOS, SHACL, Croissant, CSVW, CSV, JSON Lines and Data Package 2.0.",
             ),
             (
                 "Learning and publication files",
@@ -465,7 +480,7 @@ COPY = {
         "lang": "zh-Hant",
         "title": "注音開放資源 DCAT 3 資料目錄",
         "description": (
-            "下載靜態 W3C DCAT 3 目錄，收錄 9 組已驗證注音資料集與 41 個精確版本。"
+            "下載靜態 W3C DCAT 3 目錄，收錄 9 組已驗證注音資料集與 45 個精確版本。"
         ),
         "eyebrow": "W3C DCAT 3 · JSON-LD＋Turtle · SHA-256",
         "lead": (
@@ -476,7 +491,7 @@ COPY = {
         "language": "English",
         "badges": (
             "9 組目錄資料集",
-            "41 個精確版本",
+            "45 個精確版本",
             "SPDX SHA-256 fixity",
             "免帳號與 API key",
         ),
@@ -495,7 +510,7 @@ COPY = {
         "coverage_items": (
             (
                 "參考資料與 linked data",
-                "核心 JSON、SKOS、SHACL、Croissant、CSV、JSON Lines 與 Data Package 2.0。",
+                "核心 JSON、SKOS、SHACL、Croissant、CSVW、CSV、JSON Lines 與 Data Package 2.0。",
             ),
             (
                 "學習與出版檔案",
@@ -619,6 +634,8 @@ def _source_dates(path: Path) -> tuple[str, str]:
 
 def _media_type(relative_path: str) -> str:
     name = Path(relative_path).name.lower()
+    if name.endswith(".csv-metadata.json"):
+        return "application/csvm+json"
     if name.endswith(".croissant.jsonld") or name.endswith(".jsonld"):
         return "application/ld+json"
     if name.endswith(".shacl.ttl") or name.endswith(".ttl"):
@@ -649,6 +666,8 @@ def _media_type(relative_path: str) -> str:
         return "text/csv"
     if name.endswith(".tsv"):
         return "text/tab-separated-values"
+    if name.endswith(".txt"):
+        return "text/plain"
     raise ValueError(f"Unknown DCAT distribution media type: {relative_path}")
 
 
@@ -1549,7 +1568,7 @@ def _update_data_index(
         f'{CARD_START}<a class="item" href="{LANDING_URL}"><div>'
         '<span class="tag">W3C DCAT 3 · JSON-LD · Turtle</span>'
         "<h2>Bopomofo open-data catalog</h2>"
-        "<p>Nine datasets and 41 exact distributions with SPDX SHA-256 "
+        "<p>Nine datasets and 45 exact distributions with SPDX SHA-256 "
         "fixity and bilingual metadata.</p></div>"
         f'<span class="arrow">&rarr;</span></a>{CARD_END}'
     )

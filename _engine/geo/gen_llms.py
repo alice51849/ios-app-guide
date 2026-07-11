@@ -44,6 +44,7 @@ ZHUYIN_ANKI_DECK = "zhuyin-bopomofo-anki-deck"
 ZHUYIN_SKOS_VOCABULARY = "zhuyin-bopomofo-vocabulary"
 ZHUYIN_CROISSANT_DATASET = "zhuyin-bopomofo-ml-dataset"
 ZHUYIN_DATA_PACKAGE = "zhuyin-bopomofo"
+ZHUYIN_CSVW_PACKAGE = "zhuyin-bopomofo-csvw"
 ZHUYIN_RESOURCE_SYNC = "zhuyin-bopomofo-resourcesync"
 ZHUYIN_LMS_BANK = "zhuyin-bopomofo-lms-question-bank"
 ZHUYIN_EPUB = "zhuyin-bopomofo-epub-reference"
@@ -254,6 +255,21 @@ def build_llms(comp_map, live_keys):
             f"- UTF-8 CSV: {SITE}/data/{ZHUYIN_CROISSANT_DATASET}.csv",
             f"- JSON Lines: {SITE}/data/{ZHUYIN_CROISSANT_DATASET}.jsonl",
             f"- Croissant 1.1 JSON-LD: {SITE}/data/{ZHUYIN_CROISSANT_DATASET}.croissant.jsonld",
+        ]
+    if os.path.exists(
+        os.path.join(DATA_DIR, "zhuyin-bopomofo-ml-dataset.csv-metadata.json")
+    ):
+        package = f"{SITE}/data/packages/{ZHUYIN_CSVW_PACKAGE}"
+        lines += [
+            "",
+            "## Bopomofo CSVW table metadata (W3C Recommendations)",
+            f"- English guide: {package}/",
+            f"- Traditional Chinese guide: {SITE}/zh-Hant/data/packages/{ZHUYIN_CSVW_PACKAGE}/",
+            f"- Canonical UTF-8 CSV: {SITE}/data/zhuyin-bopomofo-ml-dataset.csv",
+            f"- Discoverable CSVW metadata: {SITE}/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
+            f"- Deterministic offline bundle: {package}/bopomofo-37-symbols-csvw-bundle.zip",
+            f"- SHA-256 checksums: {package}/checksums-sha256.txt",
+            f"- Dataset manifest: {package}/metadata.jsonld",
         ]
     if os.path.exists(
         os.path.join(
@@ -639,6 +655,21 @@ def build_llms_full(comp_map, live_keys):
             f"  - MLCommons Croissant 1.1: {SITE}/data/{ZHUYIN_CROISSANT_DATASET}.croissant.jsonld",
         ]
     if os.path.exists(
+        os.path.join(DATA_DIR, "zhuyin-bopomofo-ml-dataset.csv-metadata.json")
+    ):
+        package = f"{SITE}/data/packages/{ZHUYIN_CSVW_PACKAGE}"
+        lines += [
+            "",
+            "## Bopomofo CSVW table metadata",
+            f"- [English guide]({package}/)",
+            f"- [Traditional Chinese guide]({SITE}/zh-Hant/data/packages/{ZHUYIN_CSVW_PACKAGE}/)",
+            f"  - Canonical UTF-8 CSV: {SITE}/data/zhuyin-bopomofo-ml-dataset.csv",
+            f"  - Discoverable CSVW metadata: {SITE}/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
+            f"  - Deterministic offline bundle: {package}/bopomofo-37-symbols-csvw-bundle.zip",
+            f"  - SHA-256 checksums: {package}/checksums-sha256.txt",
+            f"  - Dataset manifest: {package}/metadata.jsonld",
+        ]
+    if os.path.exists(
         os.path.join(
             DATA_DIR,
             "packages",
@@ -800,6 +831,7 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_vocab.xml",
         "sitemap_croissant.xml",
         "sitemap_datapackage.xml",
+        "sitemap_csvw.xml",
         "sitemap_lms.xml",
         "sitemap_epub.xml",
         "sitemap_library_catalog.xml",
@@ -837,6 +869,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_vocab.xml",
             f"Sitemap: {SITE}/sitemap_croissant.xml",
             f"Sitemap: {SITE}/sitemap_datapackage.xml",
+            f"Sitemap: {SITE}/sitemap_csvw.xml",
             f"Sitemap: {SITE}/sitemap_lms.xml",
             f"Sitemap: {SITE}/sitemap_epub.xml",
             f"Sitemap: {SITE}/sitemap_library_catalog.xml",
@@ -859,6 +892,7 @@ def build_sitemap_index():
         "sitemap_vocab.xml",
         "sitemap_croissant.xml",
         "sitemap_datapackage.xml",
+        "sitemap_csvw.xml",
         "sitemap_lms.xml",
         "sitemap_epub.xml",
         "sitemap_library_catalog.xml",

@@ -58,6 +58,7 @@ import zhuyin_grade1_guide
 import zhuyin_grade1_summer_calendar
 import zhuyin_anki_deck
 import zhuyin_croissant_dataset
+import zhuyin_csvw_metadata
 import zhuyin_dcat_catalog
 import zhuyin_epub_opds
 import zhuyin_frictionless_package
@@ -2130,6 +2131,307 @@ class GeneratorTests(unittest.TestCase):
                 {path: path.stat().st_mtime_ns for path in mtimes},
             )
 
+    def _seed_zhuyin_csvw_pages(self, pages):
+        data = pages / "data"
+        data.mkdir(parents=True)
+        catalog = {
+            "@context": "https://schema.org",
+            "@type": "DataCatalog",
+            "dataset": [
+                {
+                    "@type": "Dataset",
+                    "url": zhuyin_csvw_metadata.CROISSANT_PAGE,
+                }
+            ],
+        }
+        (data / "index.html").write_text(
+            '<script type="application/ld+json">'
+            + json.dumps(catalog)
+            + '</script><main><a class="item" href="'
+            + zhuyin_csvw_metadata.CROISSANT_PAGE
+            + '"><h2>Croissant dataset</h2></a>'
+            + '<p class="foot">Footer</p></main>',
+            encoding="utf-8",
+        )
+        (data / zhuyin_csvw_metadata.CSV_FILENAME).write_text(
+            zhuyin_croissant_dataset.render_csv(
+                zhuyin_croissant_dataset.records()
+            ),
+            encoding="utf-8",
+        )
+
+    def test_zhuyin_csvw_metadata_is_complete_deterministic_and_discoverable(self):
+        rows = zhuyin_croissant_dataset.records()
+        first = zhuyin_csvw_metadata.make_artifacts(
+            zhuyin_csvw_metadata.INITIAL_DATE
+        )
+        second = zhuyin_csvw_metadata.make_artifacts(
+            zhuyin_csvw_metadata.INITIAL_DATE
+        )
+        self.assertEqual(
+            {
+                key: value["bytes"]
+                for key, value in first.items()
+                if "bytes" in value
+            },
+            {
+                key: value["bytes"]
+                for key, value in second.items()
+                if "bytes" in value
+            },
+        )
+        zhuyin_csvw_metadata.validate_artifacts(rows, first)
+        metadata = json.loads(first["csvw"]["bytes"])
+        self.assertEqual(
+            [
+                zhuyin_csvw_metadata.CSVW_CONTEXT,
+                {"@language": "en"},
+            ],
+            metadata["@context"],
+        )
+        self.assertEqual(
+            zhuyin_csvw_metadata.CSV_FILENAME,
+            metadata["url"],
+        )
+        schema = metadata["tableSchema"]
+        self.assertEqual("symbol_id", schema["primaryKey"])
+        self.assertEqual(
+            list(zhuyin_croissant_dataset.FIELD_NAMES),
+            [column["name"] for column in schema["columns"]],
+        )
+        self.assertTrue(all(column["required"] for column in schema["columns"]))
+        self.assertEqual(
+            set(zhuyin_csvw_metadata.CSVW_RECOMMENDATIONS),
+            {
+                item["@id"]
+                for item in metadata["dc:conformsTo"]
+            },
+        )
+        self.assertEqual(
+            "application/csvm+json",
+            first["csvw"]["media_type"],
+        )
+        self.assertEqual(
+            37,
+            len(
+                list(
+                    csv.DictReader(
+                        first["csv"]["bytes"].decode("utf-8").splitlines()
+                    )
+                )
+            ),
+        )
+        with zipfile.ZipFile(io.BytesIO(first["bundle"]["bytes"])) as archive:
+            self.assertEqual(sorted(archive.namelist()), archive.namelist())
+            self.assertEqual(
+                {
+                    zhuyin_csvw_metadata.CSV_FILENAME,
+                    zhuyin_csvw_metadata.CSVW_FILENAME,
+                    zhuyin_csvw_metadata.README_FILENAME,
+                    zhuyin_csvw_metadata.LICENSE_FILENAME,
+                    zhuyin_csvw_metadata.CHECKSUM_FILENAME,
+                },
+                set(archive.namelist()),
+            )
+            self.assertTrue(
+                all(
+                    info.date_time == zhuyin_csvw_metadata.ZIP_TIMESTAMP
+                    for info in archive.infolist()
+                )
+            )
+        with mock.patch.object(
+            zhuyin_csvw_metadata,
+            "render_readme",
+            return_value=b"https://apps.apple.com/app/id6773017109\n",
+        ):
+            contaminated = zhuyin_csvw_metadata.make_artifacts(
+                zhuyin_csvw_metadata.INITIAL_DATE
+            )
+        with self.assertRaises(ValueError):
+            zhuyin_csvw_metadata.validate_artifacts(rows, contaminated)
+
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            self._seed_zhuyin_csvw_pages(pages)
+            urls = zhuyin_csvw_metadata.build(
+                pages,
+                app_public=False,
+            )
+            expected = [
+                pages / zhuyin_csvw_metadata.PACKAGE_PATH / "index.html",
+                pages
+                / "zh-Hant"
+                / zhuyin_csvw_metadata.PACKAGE_PATH
+                / "index.html",
+                pages / "data" / zhuyin_csvw_metadata.CSVW_FILENAME,
+                pages
+                / zhuyin_csvw_metadata.PACKAGE_PATH
+                / zhuyin_csvw_metadata.BUNDLE_FILENAME,
+                pages
+                / zhuyin_csvw_metadata.PACKAGE_PATH
+                / zhuyin_csvw_metadata.CHECKSUM_FILENAME,
+                pages
+                / zhuyin_csvw_metadata.PACKAGE_PATH
+                / zhuyin_csvw_metadata.MANIFEST_FILENAME,
+                pages / "sitemap_csvw.xml",
+            ]
+            self.assertEqual(7, len(urls))
+            self.assertTrue(all(path.exists() for path in expected))
+            english = expected[0].read_text(encoding="utf-8")
+            traditional = expected[1].read_text(encoding="utf-8")
+            for page in (english, traditional):
+                self.assertIn('hreflang="en"', page)
+                self.assertIn('hreflang="zh-Hant"', page)
+                self.assertIn(zhuyin_csvw_metadata.CSVW_FILENAME, page)
+                self.assertNotIn("apps.apple.com", page)
+                self.assertNotIn('"SoftwareApplication"', page)
+            self.assertIn("Bopomofo CSVW Metadata", english)
+            self.assertIn("完整 37 注音符號 CSVW", traditional)
+            self.assertIn("<td>聲母</td>", traditional)
+            public = zhuyin_csvw_metadata.render_page(
+                "en",
+                first,
+                app_public=True,
+            )
+            self.assertIn(zhuyin_csvw_metadata.APP_ID, public)
+            self.assertIn('"SoftwareApplication"', public)
+            index = (pages / "data" / "index.html").read_text(
+                encoding="utf-8"
+            )
+            self.assertEqual(
+                1,
+                index.count(
+                    f'href="{zhuyin_csvw_metadata.PACKAGE_URL}"'
+                ),
+            )
+            catalog = json.loads(
+                re.search(
+                    r'<script type="application/ld\+json">(.*?)</script>',
+                    index,
+                    re.DOTALL,
+                ).group(1)
+            )
+            entry = next(
+                item
+                for item in catalog["dataset"]
+                if item.get("url") == zhuyin_csvw_metadata.PACKAGE_URL
+            )
+            self.assertEqual(5, len(entry["distribution"]))
+            sitemap = expected[-1].read_text(encoding="utf-8")
+            for url in urls[:-1]:
+                self.assertIn(url, sitemap)
+
+            with mock.patch.object(
+                gen_llms,
+                "DATA_DIR",
+                str(pages / "data"),
+            ), mock.patch.object(
+                gen_llms,
+                "PAGES",
+                str(pages),
+            ):
+                llms = gen_llms.build_llms({}, set())
+                full = gen_llms.build_llms_full({}, set())
+                robots = gen_llms.build_robots()
+                sitemap_index = gen_llms.build_sitemap_index()
+            for content in (llms, full):
+                self.assertIn("Bopomofo CSVW table metadata", content)
+                self.assertIn(zhuyin_csvw_metadata.CSVW_URL, content)
+                self.assertIn(zhuyin_csvw_metadata.BUNDLE_URL, content)
+            for content in (robots, sitemap_index):
+                self.assertIn("sitemap_csvw.xml", content)
+
+            deep_items = json.loads(
+                (
+                    Path(GEO)
+                    / "deep_items"
+                    / "lumibopomofo.json"
+                ).read_text(encoding="utf-8")
+            )
+            deep_item = next(
+                item
+                for item in deep_items
+                if item["kind"] == "csvw_tabular_metadata"
+            )
+            self.assertEqual(
+                zhuyin_csvw_metadata.PACKAGE_URL,
+                deep_item["primary_resource_url"],
+            )
+            self.assertIn("37 data rows and 12 columns", deep_item["detail"])
+            self.assertIn(
+                "does not certify this package",
+                deep_item["detail"],
+            )
+            translations = json.loads(
+                (
+                    Path(GEO) / "i18n_trans" / "zh-Hant.json"
+                ).read_text(encoding="utf-8")
+            )
+
+            def translated_strings(value, parent_key=""):
+                if isinstance(value, str):
+                    if parent_key not in {
+                        "app_key",
+                        "kind",
+                        "match",
+                        "primary_resource_url",
+                        "url",
+                    }:
+                        yield value
+                elif isinstance(value, list):
+                    for child in value:
+                        yield from translated_strings(child, parent_key)
+                elif isinstance(value, dict):
+                    for key, child in value.items():
+                        yield from translated_strings(child, key)
+
+            missing = [
+                value
+                for value in translated_strings(deep_item)
+                if value not in translations
+            ]
+            self.assertEqual([], missing)
+            self.assertIn(
+                "如何選擇：",
+                translations[
+                    "How to choose: " + deep_item["query"]
+                ],
+            )
+
+            mtimes = {
+                path: path.stat().st_mtime_ns
+                for path in [*expected, pages / "data" / "index.html"]
+            }
+            zhuyin_csvw_metadata.build(pages, app_public=False)
+            self.assertEqual(
+                mtimes,
+                {path: path.stat().st_mtime_ns for path in mtimes},
+            )
+
+    @unittest.skipUnless(
+        importlib.util.find_spec("csvw"),
+        "Official CSVW validation dependency is installed in CI",
+    )
+    def test_zhuyin_csvw_metadata_validates_with_official_processor(self):
+        from csvw.metadata import Table
+
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            self._seed_zhuyin_csvw_pages(pages)
+            zhuyin_csvw_metadata.build(pages, app_public=False)
+            metadata_path = (
+                pages / "data" / zhuyin_csvw_metadata.CSVW_FILENAME
+            )
+            table = Table.from_file(metadata_path)
+            loaded = list(table)
+            self.assertEqual(37, len(loaded))
+            self.assertEqual(
+                list(zhuyin_croissant_dataset.FIELD_NAMES),
+                list(loaded[0]),
+            )
+            self.assertEqual(list(range(1, 38)), [row["order"] for row in loaded])
+            self.assertEqual(37, len({row["symbol_id"] for row in loaded}))
+
     def test_zhuyin_lms_question_bank_is_complete_and_portable(self):
         rows = zhuyin_croissant_dataset.records()
         first = zhuyin_lms_assessment_bank.make_core_artifacts(rows)
@@ -3735,6 +4037,7 @@ class GeneratorTests(unittest.TestCase):
         zhuyin_skos_vocabulary.build(pages, app_public=False)
         zhuyin_croissant_dataset.build(pages, app_public=False)
         zhuyin_frictionless_package.build(pages, app_public=False)
+        zhuyin_csvw_metadata.build(pages, app_public=False)
         zhuyin_static_api.build(pages, app_public=False)
         zhuyin_lms_assessment_bank.build(pages, app_public=False)
         zhuyin_epub_opds.build(pages, app_public=False)
@@ -3844,7 +4147,7 @@ class GeneratorTests(unittest.TestCase):
             for landing in (english, traditional):
                 self.assertIn("DCAT 3", landing)
                 self.assertIn("SPDX", landing)
-                self.assertIn("41", landing)
+                self.assertIn("45", landing)
                 self.assertNotIn("apps.apple.com", landing)
                 self.assertNotIn('"SoftwareApplication"', landing)
 
@@ -3962,7 +4265,7 @@ class GeneratorTests(unittest.TestCase):
                 format="turtle",
             )
             self.assertTrue(isomorphic(json_graph, turtle_graph))
-            self.assertEqual(891, len(json_graph))
+            self.assertEqual(952, len(json_graph))
 
             dcat = zhuyin_dcat_catalog.DCAT
             dcterms = zhuyin_dcat_catalog.DCTERMS
@@ -3998,7 +4301,7 @@ class GeneratorTests(unittest.TestCase):
             )
             self.assertEqual(9, len(records))
             self.assertEqual(9, len(datasets))
-            self.assertEqual(41, len(distributions))
+            self.assertEqual(45, len(distributions))
             self.assertEqual(
                 {URIRef(zhuyin_dcat_catalog.API_SERVICE)},
                 services,
@@ -4066,6 +4369,22 @@ class GeneratorTests(unittest.TestCase):
                     URIRef(zhuyin_dcat_catalog.OPDS1_SPEC),
                 }
                 <= epub_standards
+            )
+            croissant_dataset = URIRef(
+                f"{zhuyin_dcat_catalog.LANDING_URL}#dataset-croissant"
+            )
+            csvw_standards = set(
+                json_graph.objects(
+                    croissant_dataset,
+                    URIRef(dcterms + "conformsTo"),
+                )
+            )
+            self.assertTrue(
+                {
+                    URIRef(value)
+                    for value in zhuyin_csvw_metadata.CSVW_RECOMMENDATIONS
+                }
+                <= csvw_standards
             )
 
             checksum_nodes = set()
@@ -4205,7 +4524,21 @@ class GeneratorTests(unittest.TestCase):
                     hashlib.sha256(content).hexdigest(),
                     str(values[0]),
                 )
-            self.assertEqual(41, len(checksum_nodes))
+            self.assertEqual(45, len(checksum_nodes))
+            self.assertEqual(
+                1,
+                len(
+                    set(
+                        json_graph.subjects(
+                            URIRef(dcat + "mediaType"),
+                            URIRef(
+                                "https://www.iana.org/assignments/"
+                                "media-types/application/csvm+json"
+                            ),
+                        )
+                    )
+                ),
+            )
 
             service = next(iter(services))
             self.assertEqual(
@@ -4351,7 +4684,7 @@ class GeneratorTests(unittest.TestCase):
 
             resources = zhuyin_resourcesync.discover_resources(pages)
             entries = resource_list.findall(f"{{{sitemap_ns}}}url")
-            self.assertEqual(142, len(resources))
+            self.assertEqual(148, len(resources))
             self.assertEqual(len(resources), len(entries))
             resources_by_path = {
                 resource.relative_path.as_posix(): resource
@@ -6343,6 +6676,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_skos_vocabulary.py", workflow)
         self.assertIn("zhuyin_croissant_dataset.py", workflow)
         self.assertIn("zhuyin_frictionless_package.py", workflow)
+        self.assertIn("zhuyin_csvw_metadata.py", workflow)
         self.assertIn("zhuyin_static_api.py", workflow)
         self.assertIn("zhuyin_lms_assessment_bank.py", workflow)
         self.assertIn("zhuyin_epub_opds.py", workflow)
@@ -6377,6 +6711,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_skos_vocabulary.py",
             "zhuyin_croissant_dataset.py",
             "zhuyin_frictionless_package.py",
+            "zhuyin_csvw_metadata.py",
             "zhuyin_static_api.py",
             "zhuyin_lms_assessment_bank.py",
             "zhuyin_epub_opds.py",
@@ -6400,6 +6735,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("--refresh-slug \"$LIBRARY_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$OER_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$DCAT_SLUG\"", workflow)
+        self.assertIn("--refresh-slug \"$CSVW_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$TRIP_SLUG\"", workflow)
         self.assertIn('"lumibopomofo" in live_app_keys', workflow)
         self.assertIn('"tripplanet" in live_app_keys', workflow)
@@ -6419,6 +6755,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_skos_vocabulary.py", publish)
         self.assertIn("zhuyin_croissant_dataset.py", publish)
         self.assertIn("zhuyin_frictionless_package.py", publish)
+        self.assertIn("zhuyin_csvw_metadata.py", publish)
         self.assertIn("zhuyin_static_api.py", publish)
         self.assertIn("zhuyin_lms_assessment_bank.py", publish)
         self.assertIn("zhuyin_epub_opds.py", publish)
@@ -6454,6 +6791,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_skos_vocabulary.py",
             "zhuyin_croissant_dataset.py",
             "zhuyin_frictionless_package.py",
+            "zhuyin_csvw_metadata.py",
             "zhuyin_static_api.py",
             "zhuyin_lms_assessment_bank.py",
             "zhuyin_epub_opds.py",

@@ -57,6 +57,7 @@ import zhuyin_grade1_guide
 import zhuyin_grade1_summer_calendar
 import zhuyin_anki_deck
 import zhuyin_croissant_dataset
+import zhuyin_epub_opds
 import zhuyin_frictionless_package
 import zhuyin_heritage_lesson_plan
 import zhuyin_library_storytime_kit
@@ -2279,6 +2280,354 @@ class GeneratorTests(unittest.TestCase):
                 {path: path.stat().st_mtime_ns for path in expected},
             )
 
+    def test_zhuyin_epub_opds_is_complete_accessible_and_portable(self):
+        rows = zhuyin_croissant_dataset.records()
+        first = zhuyin_epub_opds.make_epub_artifacts(rows)
+        second = zhuyin_epub_opds.make_epub_artifacts(rows)
+        self.assertEqual(
+            {locale: item["bytes"] for locale, item in first.items()},
+            {locale: item["bytes"] for locale, item in second.items()},
+        )
+
+        for locale, artifact in first.items():
+            zhuyin_epub_opds.validate_epub(
+                rows, locale, artifact["bytes"]
+            )
+            with zipfile.ZipFile(io.BytesIO(artifact["bytes"])) as archive:
+                infos = archive.infolist()
+                self.assertEqual("mimetype", infos[0].filename)
+                self.assertEqual(zipfile.ZIP_STORED, infos[0].compress_type)
+                self.assertEqual(
+                    zhuyin_epub_opds.EPUB_MEDIA_TYPE.encode("ascii"),
+                    archive.read("mimetype"),
+                )
+                self.assertEqual(
+                    (1980, 1, 1, 0, 0, 0),
+                    infos[0].date_time,
+                )
+                package = archive.read("EPUB/package.opf").decode("utf-8")
+                self.assertIn(
+                    "<meta property=\"schema:accessMode\">textual</meta>",
+                    package,
+                )
+                self.assertIn(
+                    "noFlashingHazard",
+                    package,
+                )
+                self.assertNotIn("certifiedBy", package)
+
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            data = pages / "data"
+            data.mkdir(parents=True)
+            catalog = {
+                "@context": "https://schema.org",
+                "@type": "DataCatalog",
+                "dataset": [],
+            }
+            (data / "index.html").write_text(
+                '<script type="application/ld+json">'
+                + json.dumps(catalog)
+                + '</script><main><p class="foot">Footer</p></main>',
+                encoding="utf-8",
+            )
+            urls = zhuyin_epub_opds.build(
+                pages,
+                app_public=False,
+            )
+            self.assertEqual(10, len(urls))
+
+            manifests = {}
+            for locale, artifact in first.items():
+                epub_path = (
+                    pages
+                    / zhuyin_epub_opds.PACKAGE_PATH
+                    / artifact["filename"]
+                )
+                self.assertEqual(artifact["bytes"], epub_path.read_bytes())
+                directory_path = pages / zhuyin_epub_opds.web_path(locale)
+                manifest_path = directory_path / "manifest.json"
+                manifest_bytes = manifest_path.read_bytes()
+                manifest = json.loads(manifest_bytes)
+                web_files = {
+                    path.name: path.read_bytes()
+                    for path in directory_path.iterdir()
+                    if path.name != "manifest.json"
+                }
+                zhuyin_epub_opds.validate_web_manifest(
+                    locale,
+                    manifest,
+                    artifact,
+                    web_files,
+                )
+                self.assertEqual(
+                    len(zhuyin_epub_opds.CONTENT_ORDER),
+                    len(manifest["readingOrder"]),
+                )
+                epub_link = next(
+                    link
+                    for link in manifest["links"]
+                    if link.get("type")
+                    == zhuyin_epub_opds.EPUB_MEDIA_TYPE
+                )
+                self.assertEqual(
+                    len(artifact["bytes"]),
+                    epub_link["size"],
+                )
+                self.assertNotIn("length", epub_link)
+                manifests[locale] = {
+                    "bytes": manifest_bytes,
+                    "sha256": hashlib.sha256(manifest_bytes).hexdigest(),
+                    "url": zhuyin_epub_opds.manifest_url(locale),
+                }
+
+            opds2 = json.loads(
+                (pages / zhuyin_epub_opds.OPDS2_PATH).read_text(
+                    encoding="utf-8"
+                )
+            )
+            opds1 = (pages / zhuyin_epub_opds.OPDS1_PATH).read_text(
+                encoding="utf-8"
+            )
+            zhuyin_epub_opds.validate_catalogs(opds2, opds1, first)
+            self.assertEqual(2, len(opds2["publications"]))
+            for publication in opds2["publications"]:
+                acquisition = next(
+                    link
+                    for link in publication["links"]
+                    if link.get("rel")
+                    == zhuyin_epub_opds.OPEN_ACCESS_REL
+                )
+                self.assertIn("size", acquisition)
+                self.assertNotIn("length", acquisition)
+
+            metadata = json.loads(
+                (
+                    pages
+                    / zhuyin_epub_opds.PACKAGE_PATH
+                    / zhuyin_epub_opds.METADATA_FILENAME
+                ).read_text(encoding="utf-8")
+            )
+            self.assertEqual(4, len(metadata["encoding"]))
+            self.assertEqual(
+                zhuyin_epub_opds.EPUB_SPEC,
+                metadata["conformsTo"],
+            )
+            self.assertEqual(
+                {
+                    zhuyin_epub_opds.WEBPUB_SPEC,
+                    zhuyin_epub_opds.OPDS2_SPEC,
+                    zhuyin_epub_opds.OPDS1_SPEC,
+                },
+                set(metadata["citation"]),
+            )
+            local_by_url = {
+                artifact["url"]: (
+                    pages
+                    / zhuyin_epub_opds.PACKAGE_PATH
+                    / artifact["filename"]
+                )
+                for artifact in first.values()
+            }
+            local_by_url.update(
+                {
+                    zhuyin_epub_opds.manifest_url(locale): (
+                        pages
+                        / zhuyin_epub_opds.web_path(locale)
+                        / "manifest.json"
+                    )
+                    for locale in zhuyin_epub_opds.COPY
+                }
+            )
+            for encoding in metadata["encoding"]:
+                local = local_by_url[encoding["contentUrl"]]
+                self.assertEqual(
+                    encoding["sha256"],
+                    hashlib.sha256(local.read_bytes()).hexdigest(),
+                )
+                self.assertEqual(
+                    int(encoding["contentSize"].split()[0]),
+                    local.stat().st_size,
+                )
+
+            english = (
+                pages / zhuyin_epub_opds.LANDING_PATH
+            ).read_text(encoding="utf-8")
+            traditional = (
+                pages / zhuyin_epub_opds.ZH_LANDING_PATH
+            ).read_text(encoding="utf-8")
+            for page in (english, traditional):
+                self.assertIn('rel="resourcesync"', page)
+                self.assertIn(zhuyin_epub_opds.OPDS2_URL, page)
+                self.assertIn(zhuyin_epub_opds.OPDS1_URL, page)
+                self.assertIn("HTTP Content-Type", page)
+                self.assertIn('manifest.json" download', page)
+                self.assertIn(
+                    f'href="{zhuyin_epub_opds.OPDS2_URL}" download',
+                    page,
+                )
+                self.assertNotIn("apps.apple.com", page)
+                self.assertNotIn('"SoftwareApplication"', page)
+            public = zhuyin_epub_opds.render_page(
+                "zh-Hant",
+                first,
+                manifests,
+                zhuyin_epub_opds.INITIAL_TIMESTAMP,
+                app_public=True,
+                page_modified="2026-07-12",
+            )
+            self.assertIn(zhuyin_epub_opds.APP_ID, public)
+            self.assertIn('"SoftwareApplication"', public)
+            self.assertNotIn('"offers"', public)
+            schema = next(
+                json.loads(raw)
+                for raw in re.findall(
+                    r'<script type="application/ld\+json">(.*?)</script>',
+                    public,
+                    re.DOTALL,
+                )
+                if '"@graph"' in raw
+            )
+            web_page = next(
+                item
+                for item in schema["@graph"]
+                if item.get("@type") == "WebPage"
+            )
+            book = next(
+                item
+                for item in schema["@graph"]
+                if "Book" in item.get("@type", [])
+            )
+            self.assertEqual("2026-07-12", web_page["dateModified"])
+            self.assertEqual(
+                zhuyin_epub_opds.INITIAL_TIMESTAMP,
+                book["dateModified"],
+            )
+
+            index = (data / "index.html").read_text(encoding="utf-8")
+            self.assertEqual(
+                1, index.count(zhuyin_epub_opds.CARD_START)
+            )
+            self.assertIn(zhuyin_epub_opds.LANDING_URL, index)
+            with mock.patch.object(
+                gen_llms, "PAGES", str(pages)
+            ), mock.patch.object(
+                gen_llms, "DATA_DIR", str(data)
+            ):
+                llms = gen_llms.build_llms({}, set())
+                full = gen_llms.build_llms_full({}, set())
+                robots = gen_llms.build_robots()
+                sitemap_index = gen_llms.build_sitemap_index()
+            for generated in (llms, full):
+                self.assertIn("Bopomofo EPUB", generated)
+                self.assertIn(zhuyin_epub_opds.OPDS2_URL, generated)
+            self.assertIn("sitemap_epub.xml", robots)
+            self.assertIn("sitemap_epub.xml", sitemap_index)
+
+            generated_files = [
+                path for path in pages.rglob("*") if path.is_file()
+            ]
+            mtimes = {
+                path: path.stat().st_mtime_ns for path in generated_files
+            }
+            zhuyin_epub_opds.build(pages, app_public=False)
+            self.assertEqual(
+                mtimes,
+                {path: path.stat().st_mtime_ns for path in generated_files},
+            )
+
+            changed_copy = copy.deepcopy(zhuyin_epub_opds.COPY)
+            changed_copy["en"]["description"] += " Revised."
+            with mock.patch.object(
+                zhuyin_epub_opds,
+                "COPY",
+                changed_copy,
+            ), mock.patch.object(
+                zhuyin_epub_opds,
+                "TODAY",
+                "2026-07-11",
+            ), mock.patch.object(
+                zhuyin_epub_opds,
+                "NOW",
+                "2026-07-11T12:34:56Z",
+            ):
+                zhuyin_epub_opds.build(pages, app_public=False)
+                expected_date = "2026-07-11"
+                expected_timestamp = "2026-07-11T12:34:56Z"
+                for locale, filename in (
+                    (
+                        "en",
+                        "bopomofo-37-symbol-reference-en.epub",
+                    ),
+                    (
+                        "zh-Hant",
+                        "bopomofo-37-symbol-reference-zh-hant.epub",
+                    ),
+                ):
+                    epub_path = (
+                        pages
+                        / zhuyin_epub_opds.PACKAGE_PATH
+                        / filename
+                    )
+                    with zipfile.ZipFile(epub_path) as archive:
+                        package = archive.read(
+                            "EPUB/package.opf"
+                        ).decode("utf-8")
+                        title = archive.read(
+                            "EPUB/title.xhtml"
+                        ).decode("utf-8")
+                    self.assertIn(expected_timestamp, package)
+                    self.assertIn(
+                        f'content="{expected_timestamp}"',
+                        title,
+                    )
+                    manifest = json.loads(
+                        (
+                            pages
+                            / zhuyin_epub_opds.web_path(locale)
+                            / "manifest.json"
+                        ).read_text(encoding="utf-8")
+                    )
+                    self.assertEqual(
+                        expected_timestamp,
+                        manifest["metadata"]["modified"],
+                    )
+                opds = json.loads(
+                    (pages / zhuyin_epub_opds.OPDS2_PATH).read_text(
+                        encoding="utf-8"
+                    )
+                )
+                self.assertEqual(
+                    expected_timestamp,
+                    opds["metadata"]["modified"],
+                )
+                metadata = json.loads(
+                    (
+                        pages
+                        / zhuyin_epub_opds.PACKAGE_PATH
+                        / zhuyin_epub_opds.METADATA_FILENAME
+                    ).read_text(encoding="utf-8")
+                )
+                self.assertEqual(
+                    expected_timestamp,
+                    metadata["dateModified"],
+                )
+                changed_files = [
+                    path for path in pages.rglob("*") if path.is_file()
+                ]
+                changed_mtimes = {
+                    path: path.stat().st_mtime_ns
+                    for path in changed_files
+                }
+                zhuyin_epub_opds.build(pages, app_public=False)
+                self.assertEqual(
+                    changed_mtimes,
+                    {
+                        path: path.stat().st_mtime_ns
+                        for path in changed_files
+                    },
+                )
+
     def test_lms_question_bank_answer_is_resource_first_and_bounded(self):
         question = (
             "Where can I download a free Bopomofo QTI question bank "
@@ -2334,6 +2683,97 @@ class GeneratorTests(unittest.TestCase):
             localized,
         )
 
+    def test_epub_answer_is_resource_first_bilingual_and_bounded(self):
+        question = (
+            "Where can I download a free Bopomofo EPUB for e-readers?"
+        )
+        content = aeo_answers.normalized_content(
+            aeo_answers.default_content(question, "lumibopomofo"),
+            question,
+            "lumibopomofo",
+        )
+        page = aeo_answers.render_page(
+            question, "lumibopomofo", content
+        )
+        self.assertEqual(
+            zhuyin_epub_opds.LANDING_URL,
+            content["primary_resource_url"],
+        )
+        for text in (
+            "EPUB 3.3",
+            "OPDS 2.0",
+            "OPDS 1.2",
+            "all 37 Bopomofo symbols",
+            "no scripts, images, tracking",
+            "not audio instruction",
+        ):
+            self.assertIn(text, page)
+        self.assertLess(
+            page.index("Download the free Bopomofo EPUB"),
+            page.index("Get Lumi Bopomofo on the App Store"),
+        )
+
+        mapping = json.loads(
+            (
+                Path(GEO)
+                / "i18n_trans"
+                / "zh-Hant.json"
+            ).read_text(encoding="utf-8")
+        )
+        strings, _, _ = aeo_answers_i18n.extract_strings(page)
+        self.assertEqual(
+            [], [string for string in strings if string not in mapping]
+        )
+        localized = aeo_answers_i18n.render_localized(
+            page,
+            "zh-Hant",
+            aeo_answers.slugify(question),
+            {string: mapping[string] for string in strings},
+        )
+        self.assertIn(
+            "<title>免費無障礙注音 EPUB 3.3 與 OPDS 目錄</title>",
+            localized,
+        )
+        self.assertIn(zhuyin_epub_opds.ZH_LANDING_URL, localized)
+        self.assertIn("下載免費注音 EPUB", localized)
+        self.assertIn("不具診斷用途", localized)
+        self.assertNotIn(
+            "Each CC BY 4.0 EPUB 3.3 edition",
+            localized,
+        )
+
+    def test_answer_index_preserves_existing_locale_alternates(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            answers = root / "pages" / "answers"
+            answers.mkdir(parents=True)
+            (answers / "sample.html").write_text(
+                '<h1>Sample answer</h1><script type="application/ld+json">'
+                '{"@type":"SoftwareApplication","name":"Sample App"}'
+                "</script>",
+                encoding="utf-8",
+            )
+            for locale in ("ja", "zh-Hant"):
+                localized = root / "pages" / locale / "answers" / "index.html"
+                localized.parent.mkdir(parents=True)
+                localized.write_text("localized", encoding="utf-8")
+            with mock.patch.object(
+                aeo_answers,
+                "ROOT",
+                root,
+            ), mock.patch.object(
+                aeo_answers,
+                "ANSWERS_DIR",
+                answers,
+            ):
+                aeo_answers.regenerate_index()
+            index = (answers / "index.html").read_text(encoding="utf-8")
+            self.assertIn('hreflang="en"', index)
+            self.assertIn('hreflang="ja"', index)
+            self.assertIn('hreflang="zh-Hant"', index)
+            self.assertIn('hreflang="x-default"', index)
+            self.assertNotIn('hreflang="de-DE"', index)
+
     def _seed_zhuyin_resourcesync_pages(self, pages):
         data = pages / "data"
         data.mkdir(parents=True)
@@ -2359,6 +2799,7 @@ class GeneratorTests(unittest.TestCase):
         )
         zhuyin_static_api.build(pages, app_public=False)
         zhuyin_lms_assessment_bank.build(pages, app_public=False)
+        zhuyin_epub_opds.build(pages, app_public=False)
 
     def test_zhuyin_resourcesync_is_complete_verifiable_and_discoverable(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -4363,6 +4804,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_frictionless_package.py", workflow)
         self.assertIn("zhuyin_static_api.py", workflow)
         self.assertIn("zhuyin_lms_assessment_bank.py", workflow)
+        self.assertIn("zhuyin_epub_opds.py", workflow)
         self.assertIn("zhuyin_resourcesync.py", workflow)
         self.assertIn("family_travel_mission_cards.py", workflow)
         self.assertIn("family_travel_observation_passport.py", workflow)
@@ -4393,6 +4835,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_frictionless_package.py",
             "zhuyin_static_api.py",
             "zhuyin_lms_assessment_bank.py",
+            "zhuyin_epub_opds.py",
             "zhuyin_resourcesync.py",
             "prioritize_trip_planet_resources.py",
             "add_related_tools.py",
@@ -4406,8 +4849,11 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(sorted(workflow_positions), workflow_positions)
         self.assertIn("--refresh-slug \"$SUMMER_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$OBSERVATION_SLUG\"", workflow)
+        self.assertIn("--refresh-slug \"$EPUB_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$TRIP_SLUG\"", workflow)
+        self.assertIn('"lumibopomofo" in live_app_keys', workflow)
         self.assertIn('"tripplanet" in live_app_keys', workflow)
+        self.assertIn("aeo_answers.py --cached-live --limit 0", workflow)
         self.assertIn("--trans i18n_trans --force", workflow)
         self.assertGreaterEqual(
             workflow.count("cleanup_localized_assets.py --cached-live"), 3
@@ -4425,6 +4871,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_frictionless_package.py", publish)
         self.assertIn("zhuyin_static_api.py", publish)
         self.assertIn("zhuyin_lms_assessment_bank.py", publish)
+        self.assertIn("zhuyin_epub_opds.py", publish)
         self.assertIn("zhuyin_resourcesync.py", publish)
         self.assertIn("family_travel_mission_cards.py", publish)
         self.assertIn("family_travel_observation_passport.py", publish)
@@ -4456,6 +4903,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_frictionless_package.py",
             "zhuyin_static_api.py",
             "zhuyin_lms_assessment_bank.py",
+            "zhuyin_epub_opds.py",
             "zhuyin_resourcesync.py",
             "prioritize_trip_planet_resources.py",
             "add_related_answers.py",
@@ -4467,6 +4915,9 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(sorted(publish_positions), publish_positions)
         self.assertIn("--refresh-slug", publish)
         self.assertIn("aeo_answers_i18n.py", publish)
+        self.assertIn('"lumibopomofo" in live', publish)
+        self.assertIn('"cleanup_localized_assets.py"', publish)
+        self.assertIn('"0"', publish)
         self.assertIn("add_related_answers.py", publish)
         self.assertIn("fix_en_hreflang.py", publish)
 

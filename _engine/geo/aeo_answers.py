@@ -606,9 +606,24 @@ def regenerate_index() -> None:
         {"@type": "Organization", "@id": f"{SITE}/#organization", "name": "iOS App Guide", "url": SITE},
         {"@type": "WebSite", "@id": f"{SITE}/#website", "url": SITE, "name": "iOS App Guide", "publisher": {"@id": f"{SITE}/#organization"}},
     ]}
+    alternate_links = [
+        f'<link rel="alternate" hreflang="en" href="{canonical}">'
+    ]
+    locale_pattern = re.compile(r"^[a-z]{2,3}(?:-[A-Za-z]{2,4})?$")
+    for localized in sorted((ROOT / "pages").glob("*/answers/index.html")):
+        locale = localized.parent.parent.name
+        if locale_pattern.fullmatch(locale):
+            alternate_links.append(
+                '<link rel="alternate" '
+                f'hreflang="{e(locale)}" '
+                f'href="{SITE}/{e(locale)}/answers/index.html">'
+            )
+    alternate_links.append(
+        f'<link rel="alternate" hreflang="x-default" href="{canonical}">'
+    )
+    alternates = "\n".join(alternate_links)
     html_doc = f'''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>iOS App Answer Guides — High-Intent Buying Help</title><meta name="description" content="Substantive iPhone app buying guides for high-intent questions across productivity, education, finance, photo utilities, health, lifestyle, and kids apps."><link rel="canonical" href="{canonical}">
-<link rel="alternate" hreflang="en" href="{canonical}">
-<link rel="alternate" hreflang="x-default" href="{canonical}"><meta property="og:type" content="website"><meta property="og:title" content="iOS App Answer Guides"><meta property="og:description" content="Honest buying guides and answer pages for iPhone apps."><meta property="og:url" content="{canonical}"><meta name="twitter:card" content="summary"><style>
+{alternates}<meta property="og:type" content="website"><meta property="og:title" content="iOS App Answer Guides"><meta property="og:description" content="Honest buying guides and answer pages for iPhone apps."><meta property="og:url" content="{canonical}"><meta name="twitter:card" content="summary"><style>
 {STYLE}
 </style><script type="application/ld+json">
 {j(breadcrumb)}

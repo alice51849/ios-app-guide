@@ -1,0 +1,108 @@
+{
+  "@context": "https://schema.org",
+  "@type": [
+    "Book",
+    "LearningResource",
+    "Dataset"
+  ],
+  "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html#book",
+  "name": "Bopomofo: A 37-Symbol Reference",
+  "alternateName": "注音符號：37 符號完整參考手冊",
+  "description": "A free, text-first EPUB 3.3 reference for all 37 Bopomofo symbols, with Pinyin, broad IPA, examples and open OPDS catalogs.",
+  "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html",
+  "inLanguage": [
+    "en",
+    "zh-Hant",
+    "zh-Bopo"
+  ],
+  "version": "1.0.0",
+  "datePublished": "2026-07-11",
+  "dateModified": "2026-07-11T10:45:50Z",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "learningResourceType": "Reference",
+  "educationalUse": [
+    "reference",
+    "practice"
+  ],
+  "accessMode": [
+    "textual"
+  ],
+  "accessModeSufficient": [
+    "textual"
+  ],
+  "accessibilityFeature": [
+    "tableOfContents",
+    "readingOrder",
+    "structuralNavigation"
+  ],
+  "accessibilityHazard": [
+    "noFlashingHazard",
+    "noMotionSimulationHazard",
+    "noSoundHazard"
+  ],
+  "isBasedOn": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html",
+  "conformsTo": "https://www.w3.org/TR/epub-33/",
+  "citation": [
+    "https://readium.org/webpub-manifest/",
+    "https://specs.opds.io/opds-2.0",
+    "https://specs.opds.io/opds-1.2"
+  ],
+  "creator": {
+    "@type": "Organization",
+    "name": "Lumi Apps - iOS App Guide",
+    "url": "https://alice51849.github.io/ios-app-guide"
+  },
+  "encoding": [
+    {
+      "@type": "MediaObject",
+      "name": "Bopomofo: A 37-Symbol Reference - EPUB 3.3",
+      "encodingFormat": "application/epub+zip",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub",
+      "contentSize": "9564 bytes",
+      "sha256": "be0b7cdcc34875930343c41c230fc105f00944e1736d658d9d8de0b67b54cff9",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "MediaObject",
+      "name": "Bopomofo: A 37-Symbol Reference - Readium manifest JSON file",
+      "encodingFormat": "application/webpub+json",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/manifest.json",
+      "contentSize": "5327 bytes",
+      "sha256": "09ec312d52ba898b2a960077f4d289532701552eb302d34ee640ad73bdbdac16",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "MediaObject",
+      "name": "注音符號：37 符號完整參考手冊 - EPUB 3.3",
+      "encodingFormat": "application/epub+zip",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub",
+      "contentSize": "10287 bytes",
+      "sha256": "0e1f335c5b92aa0f2002a7bf130591005df5e36f76335717925f60a206b8e64b",
+      "inLanguage": "zh-Hant"
+    },
+    {
+      "@type": "MediaObject",
+      "name": "注音符號：37 符號完整參考手冊 - Readium manifest JSON file",
+      "encodingFormat": "application/webpub+json",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/zh-Hant/manifest.json",
+      "contentSize": "5425 bytes",
+      "sha256": "e334dadc09d8e45429c7ec74d2cf27df1fad2a75388c5ecc3d2a01805e015827",
+      "inLanguage": "zh-Hant"
+    }
+  ],
+  "subjectOf": [
+    {
+      "@type": "DataDownload",
+      "name": "OPDS 2.0 catalog JSON file",
+      "encodingFormat": "application/opds+json",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/opds/bopomofo-37-symbol-reference.json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "OPDS 1.2 catalog Atom file",
+      "encodingFormat": "application/atom+xml;profile=opds-catalog;kind=acquisition",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/opds/bopomofo-37-symbol-reference.xml"
+    }
+  ]
+}

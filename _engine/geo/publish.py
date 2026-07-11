@@ -16,6 +16,10 @@ ROOT = os.path.dirname(HERE)
 PAGES = os.path.join(HERE, "pages")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide")
 PY = sys.executable
+sys.path.insert(0, os.path.join(ROOT, "social"))
+
+from appstore_live import live_app_keys  # noqa: E402
+from videogen.registry import APPSTORE  # noqa: E402
 
 
 def run(cmd, cwd=None, env=None):
@@ -44,6 +48,7 @@ def main():
             "before-school-starts"
         ),
         "how-can-i-check-my-child-s-zhuyin-skills-at-home-in-three-minutes",
+        "where-can-i-download-a-free-bopomofo-epub-for-e-readers",
     ]
     # 1) 重建
     require([PY, os.path.join(HERE, "build_pages_i18n.py")], env=env)
@@ -67,30 +72,56 @@ def main():
     require([PY, os.path.join(HERE, "zhuyin_frictionless_package.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_static_api.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_lms_assessment_bank.py")], env=env)
+    require([PY, os.path.join(HERE, "zhuyin_epub_opds.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_resourcesync.py")], env=env)
     require(
         [PY, os.path.join(HERE, "prioritize_trip_planet_resources.py")],
         env=env,
     )
-    refresh_command = [
-        PY,
-        os.path.join(HERE, "aeo_answers.py"),
-        "lumibopomofo",
-        "--cached-live",
-    ]
-    for slug in curated_slugs:
-        refresh_command.extend(["--refresh-slug", slug])
-    require(refresh_command, env=env)
+    live = live_app_keys(APPSTORE, PAGES, refresh=False)
+    if "lumibopomofo" in live:
+        refresh_command = [
+            PY,
+            os.path.join(HERE, "aeo_answers.py"),
+            "lumibopomofo",
+            "--cached-live",
+        ]
+        for slug in curated_slugs:
+            refresh_command.extend(["--refresh-slug", slug])
+        require(refresh_command, env=env)
+        require(
+            [
+                PY,
+                os.path.join(HERE, "aeo_answers_i18n.py"),
+                *curated_slugs,
+                "--langs",
+                "zh-Hant",
+                "--trans",
+                os.path.join(HERE, "i18n_trans"),
+                "--force",
+            ],
+            env=env,
+        )
+    else:
+        print(
+            "Lumi Bopomofo is not public; stale app-linked answers "
+            "will be pruned."
+        )
     require(
         [
             PY,
-            os.path.join(HERE, "aeo_answers_i18n.py"),
-            *curated_slugs,
-            "--langs",
-            "zh-Hant",
-            "--trans",
-            os.path.join(HERE, "i18n_trans"),
-            "--force",
+            os.path.join(HERE, "cleanup_localized_assets.py"),
+            "--cached-live",
+        ],
+        env=env,
+    )
+    require(
+        [
+            PY,
+            os.path.join(HERE, "aeo_answers.py"),
+            "--cached-live",
+            "--limit",
+            "0",
         ],
         env=env,
     )

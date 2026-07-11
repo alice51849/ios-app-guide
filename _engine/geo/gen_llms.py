@@ -46,6 +46,7 @@ ZHUYIN_CROISSANT_DATASET = "zhuyin-bopomofo-ml-dataset"
 ZHUYIN_DATA_PACKAGE = "zhuyin-bopomofo"
 ZHUYIN_RESOURCE_SYNC = "zhuyin-bopomofo-resourcesync"
 ZHUYIN_LMS_BANK = "zhuyin-bopomofo-lms-question-bank"
+ZHUYIN_EPUB = "zhuyin-bopomofo-epub-reference"
 RESOURCE_SYNC_SOURCE = "https://alice51849.github.io/.well-known/resourcesync"
 
 AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "anthropic-ai",
@@ -291,6 +292,29 @@ def build_llms(comp_map, live_keys):
             f"- JSON-LD metadata: {package}/metadata.jsonld",
         ]
     if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
+            "zhuyin-bopomofo-epub",
+            "metadata.jsonld",
+        )
+    ):
+        package = f"{SITE}/data/packages/zhuyin-bopomofo-epub"
+        publication = f"{SITE}/publications/bopomofo-37-symbol-reference"
+        lines += [
+            "",
+            "## Accessible Bopomofo EPUB 3.3 reference (CC BY 4.0)",
+            f"- English guide: {SITE}/data/{ZHUYIN_EPUB}.html",
+            f"- Traditional Chinese guide: {SITE}/zh-Hant/data/{ZHUYIN_EPUB}.html",
+            f"- English EPUB 3.3: {package}/bopomofo-37-symbol-reference-en.epub",
+            f"- Traditional Chinese EPUB 3.3: {package}/bopomofo-37-symbol-reference-zh-hant.epub",
+            f"- English Readium manifest JSON file: {publication}/en/manifest.json",
+            f"- Traditional Chinese Readium manifest JSON file: {publication}/zh-Hant/manifest.json",
+            f"- OPDS 2.0 catalog JSON file: {SITE}/opds/bopomofo-37-symbol-reference.json",
+            f"- OPDS 1.2 catalog Atom file: {SITE}/opds/bopomofo-37-symbol-reference.xml",
+            f"- JSON-LD metadata: {package}/metadata.jsonld",
+        ]
+    if os.path.exists(
         os.path.join(PAGES, "resourcesync", "resourcelist.xml")
     ):
         lines += [
@@ -367,6 +391,10 @@ def build_llms_full(comp_map, live_keys):
         (
             "Bopomofo LMS question bank",
             f"data/{ZHUYIN_LMS_BANK}.html",
+        ),
+        (
+            "Accessible Bopomofo EPUB and downloadable catalog files",
+            f"data/{ZHUYIN_EPUB}.html",
         ),
         ("Free tools", "tools/index.html"),
     ]
@@ -574,6 +602,29 @@ def build_llms_full(comp_map, live_keys):
             f"  - JSON-LD metadata: {package}/metadata.jsonld",
         ]
     if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
+            "zhuyin-bopomofo-epub",
+            "metadata.jsonld",
+        )
+    ):
+        package = f"{SITE}/data/packages/zhuyin-bopomofo-epub"
+        publication = f"{SITE}/publications/bopomofo-37-symbol-reference"
+        lines += [
+            "",
+            "## Accessible Bopomofo EPUB and downloadable catalog files",
+            f"- [English guide]({SITE}/data/{ZHUYIN_EPUB}.html)",
+            f"- [Traditional Chinese guide]({SITE}/zh-Hant/data/{ZHUYIN_EPUB}.html)",
+            f"  - English EPUB 3.3: {package}/bopomofo-37-symbol-reference-en.epub",
+            f"  - Traditional Chinese EPUB 3.3: {package}/bopomofo-37-symbol-reference-zh-hant.epub",
+            f"  - English Readium manifest JSON file: {publication}/en/manifest.json",
+            f"  - Traditional Chinese Readium manifest JSON file: {publication}/zh-Hant/manifest.json",
+            f"  - OPDS 2.0 catalog JSON file: {SITE}/opds/bopomofo-37-symbol-reference.json",
+            f"  - OPDS 1.2 catalog Atom file: {SITE}/opds/bopomofo-37-symbol-reference.xml",
+            f"  - JSON-LD metadata: {package}/metadata.jsonld",
+        ]
+    if os.path.exists(
         os.path.join(PAGES, "resourcesync", "resourcelist.xml")
     ):
         lines += [
@@ -613,6 +664,7 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_croissant.xml",
         "sitemap_datapackage.xml",
         "sitemap_lms.xml",
+        "sitemap_epub.xml",
         "sitemap_resourcesync.xml",
         "resourcesync/resourcelist.xml",
     ):
@@ -646,6 +698,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_croissant.xml",
             f"Sitemap: {SITE}/sitemap_datapackage.xml",
             f"Sitemap: {SITE}/sitemap_lms.xml",
+            f"Sitemap: {SITE}/sitemap_epub.xml",
             f"Sitemap: {SITE}/sitemap_resourcesync.xml",
             f"Sitemap: {SITE}/resourcesync/resourcelist.xml",
             f"Sitemap: {SITE}/sitemap_index.xml", ""]
@@ -664,6 +717,7 @@ def build_sitemap_index():
         "sitemap_croissant.xml",
         "sitemap_datapackage.xml",
         "sitemap_lms.xml",
+        "sitemap_epub.xml",
         "sitemap_resourcesync.xml",
         "resourcesync/resourcelist.xml",
     ])

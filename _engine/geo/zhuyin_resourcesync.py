@@ -63,6 +63,9 @@ CONTENT_PATTERNS = (
     "data/zhuyin-bopomofo*",
     "data/packages/zhuyin-bopomofo/**/*",
     "data/packages/zhuyin-bopomofo-lms/**/*",
+    "data/packages/zhuyin-bopomofo-epub/**/*",
+    "publications/bopomofo-37-symbol-reference/**/*",
+    "opds/bopomofo-37-symbol-reference.*",
     "api/v1/bopomofo-symbols/**/*",
     "tools/zhuyin-*",
     "zh-Hant/data/zhuyin-bopomofo*",
@@ -82,6 +85,13 @@ REQUIRED_PATHS = (
     Path("data") / "packages" / "zhuyin-bopomofo-lms" / "bopomofo-moodle-en.xml",
     Path("data") / "packages" / "zhuyin-bopomofo-lms" / "bopomofo-moodle-zh-hant.xml",
     Path("data") / "packages" / "zhuyin-bopomofo-lms" / "answer-key.csv",
+    Path("data") / "packages" / "zhuyin-bopomofo-epub" / "metadata.jsonld",
+    Path("data") / "packages" / "zhuyin-bopomofo-epub" / "bopomofo-37-symbol-reference-en.epub",
+    Path("data") / "packages" / "zhuyin-bopomofo-epub" / "bopomofo-37-symbol-reference-zh-hant.epub",
+    Path("publications") / "bopomofo-37-symbol-reference" / "en" / "manifest.json",
+    Path("publications") / "bopomofo-37-symbol-reference" / "zh-Hant" / "manifest.json",
+    Path("opds") / "bopomofo-37-symbol-reference.json",
+    Path("opds") / "bopomofo-37-symbol-reference.xml",
 )
 CARD_START = "<!-- resourcesync-card:start -->"
 CARD_END = "<!-- resourcesync-card:end -->"
@@ -126,7 +136,7 @@ COPY = {
             ("Data and linked data", "JSON, CSV, JSON-LD, Turtle and N-Triples"),
             (
                 "Portable packages",
-                "Croissant, Data Package and bilingual LMS import bundles",
+                "Croissant, Data Package, LMS imports and accessible EPUB editions",
             ),
             ("Static API", "OpenAPI plus all 37 versioned symbol responses"),
             ("Open teaching tools", "Bilingual guides, decks and printable activities"),
@@ -193,7 +203,7 @@ COPY = {
             ("資料與 Linked Data", "JSON、CSV、JSON-LD、Turtle 與 N-Triples"),
             (
                 "可攜套件",
-                "Croissant、Data Package 與雙語 LMS 匯入套件",
+                "Croissant、Data Package、LMS 匯入檔與無障礙 EPUB 版本",
             ),
             ("靜態 API", "OpenAPI 與完整 37 個版本化符號回應"),
             ("開放教學工具", "雙語指南、牌組與可列印活動"),
@@ -236,12 +246,14 @@ def _media_type(path: Path) -> str:
     suffix = path.suffix.lower()
     overrides = {
         ".csv": "text/csv",
+        ".epub": "application/epub+zip",
         ".json": "application/json",
         ".jsonld": "application/ld+json",
         ".jsonl": "application/x-ndjson",
         ".nt": "application/n-triples",
         ".tsv": "text/tab-separated-values",
         ".ttl": "text/turtle",
+        ".xhtml": "application/xhtml+xml",
     }
     if suffix in overrides:
         return overrides[suffix]

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/terms/" xmlns:integrity="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/metadata.jsonld#">
+  <id>https://alice51849.github.io/ios-app-guide/opds/bopomofo-37-symbol-reference.xml</id>
+  <title>Bopomofo 37-Symbol Open Publication Catalog</title>
+  <updated>2026-07-11T10:45:50Z</updated>
+  <author>
+    <name>Lumi Apps - iOS App Guide</name>
+    <uri>https://alice51849.github.io/ios-app-guide</uri>
+  </author>
+  <link rel="self" href="https://alice51849.github.io/ios-app-guide/opds/bopomofo-37-symbol-reference.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition" title="OPDS 1.2 catalog" />
+  <link rel="start" href="https://alice51849.github.io/ios-app-guide/opds/bopomofo-37-symbol-reference.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition" title="Catalog root" />
+  <link rel="alternate" href="https://alice51849.github.io/ios-app-guide/opds/bopomofo-37-symbol-reference.json" type="application/opds+json" title="OPDS 2.0 catalog" />
+  <link rel="alternate" href="https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html" type="text/html" title="Free Bopomofo EPUB 3.3 - All 37 Zhuyin Symbols" />
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" type="text/html" title="CC BY 4.0" />
+  <entry>
+    <id>https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/title.xhtml</id>
+    <title xml:lang="en">Bopomofo: A 37-Symbol Reference</title>
+    <updated>2026-07-11T10:45:50Z</updated>
+    <published>2026-07-11T00:00:00Z</published>
+    <author>
+      <name>Lumi Apps - iOS App Guide</name>
+      <uri>https://alice51849.github.io/ios-app-guide</uri>
+    </author>
+    <summary type="text" xml:lang="en">A free, text-first EPUB 3.3 reference for all 37 Bopomofo symbols, with Pinyin, broad IPA, examples and open OPDS catalogs.</summary>
+    <rights>Creative Commons Attribution 4.0 International (CC BY 4.0)</rights>
+    <dc:identifier>https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/title.xhtml</dc:identifier>
+    <dc:language>en</dc:language>
+    <dc:issued>2026-07-11</dc:issued>
+    <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
+    <dc:hasVersion>1.0.0</dc:hasVersion>
+    <category term="OER" label="Open educational resource" />
+    <link rel="alternate" href="https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/title.xhtml" type="application/xhtml+xml" title="Bopomofo: A 37-Symbol Reference" />
+    <link rel="alternate" href="https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/manifest.json" type="application/webpub+json" title="Web Publication manifest" />
+    <link rel="describedby" href="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/metadata.jsonld" type="application/ld+json" title="Schema.org metadata" />
+    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" type="text/html" title="CC BY 4.0" />
+    <link rel="http://opds-spec.org/acquisition/open-access" href="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub" type="application/epub+zip" title="Bopomofo: A 37-Symbol Reference - EPUB 3.3" length="9564">
+      <integrity:checksum algorithm="sha-256" encoding="hex">be0b7cdcc34875930343c41c230fc105f00944e1736d658d9d8de0b67b54cff9</integrity:checksum>
+    </link>
+  </entry>
+  <entry>
+    <id>https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/zh-Hant/title.xhtml</id>
+    <title xml:lang="zh-Hant">注音符號：37 符號完整參考手冊</title>
+    <updated>2026-07-11T10:45:50Z</updated>
+    <published>2026-07-11T00:00:00Z</published>
+    <author>
+      <name>Lumi Apps - iOS App Guide</name>
+      <uri>https://alice51849.github.io/ios-app-guide</uri>
+    </author>
+    <summary type="text" xml:lang="zh-Hant">免費下載完整 37 個注音符號的純文字 EPUB 3.3 參考手冊，含漢語拼音、寬式 IPA、例字與開放 OPDS 目錄。</summary>
+    <rights>Creative Commons Attribution 4.0 International (CC BY 4.0)</rights>
+    <dc:identifier>https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/zh-Hant/title.xhtml</dc:identifier>
+    <dc:language>zh-Hant</dc:language>
+    <dc:issued>2026-07-11</dc:issued>
+    <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
+    <dc:hasVersion>1.0.0</dc:hasVersion>
+    <category term="OER" label="Open educational resource" />
+    <link rel="alternate" href="https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/zh-Hant/title.xhtml" type="application/xhtml+xml" title="注音符號：37 符號完整參考手冊" />
+    <link rel="alternate" href="https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/zh-Hant/manifest.json" type="application/webpub+json" title="Web Publication manifest" />
+    <link rel="describedby" href="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/metadata.jsonld" type="application/ld+json" title="Schema.org metadata" />
+    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" type="text/html" title="CC BY 4.0" />
+    <link rel="http://opds-spec.org/acquisition/open-access" href="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub" type="application/epub+zip" title="注音符號：37 符號完整參考手冊 - EPUB 3.3" length="10287">
+      <integrity:checksum algorithm="sha-256" encoding="hex">0e1f335c5b92aa0f2002a7bf130591005df5e36f76335717925f60a206b8e64b</integrity:checksum>
+    </link>
+  </entry>
+</feed>

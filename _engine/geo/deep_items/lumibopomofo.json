@@ -558,5 +558,92 @@
         "a": "No. These are editable symbol-to-Pinyin practice items without norms, levels or cut scores. They do not assess pronunciation, tone production, reading fluency or school readiness."
       }
     ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "open_epub_resource",
+    "match": [
+      "free bopomofo epub",
+      "free zhuyin epub",
+      "bopomofo ebook for e-readers",
+      "zhuyin ebook download",
+      "bopomofo opds catalog"
+    ],
+    "query": "Where can I download a free Bopomofo EPUB for e-readers?",
+    "page_title": "Free Accessible Bopomofo EPUB 3.3 and OPDS Catalog",
+    "meta_description": "Download a free English or Traditional Chinese EPUB 3.3 reference for all 37 Bopomofo symbols, plus open OPDS catalog files for compatible tools.",
+    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html",
+    "primary_resource_label": "Download the free Bopomofo EPUB",
+    "lead": "Use the free bilingual EPUB resource on this page: it provides separate English and Traditional Chinese editions covering all 37 Bopomofo symbols, plus web-reading and OPDS catalog options.",
+    "detail": "Each CC BY 4.0 EPUB 3.3 edition contains a table of contents, text-first chapters for 21 initials, 3 medials and 13 finals, Hanyu Pinyin and broad IPA correspondences, example characters and a short non-diagnostic practice guide. The package has no scripts, images, tracking, account, learner profile or child-data collection. Downloadable Readium manifest JSON and OPDS 2.0/1.2 catalog files describe the same English and Traditional Chinese acquisitions. Because static hosting may return generic JSON or XML HTTP Content-Types, URL-based ingestion by strict catalog clients is not claimed. EPUB support also varies by reading system, so the page provides SHA-256 metadata and recommends checking the target reader rather than promising universal rendering.",
+    "follow_up": "Download the edition that matches the reader language, open it in a current EPUB 3 reading app and confirm its navigation and Bopomofo font coverage. Use the online text edition if a device cannot render EPUB correctly. This is a symbol reference, not audio instruction, a pronunciation assessment or a complete Chinese course.",
+    "bullets": [
+      "Complete 21-initial, 3-medial and 13-final coverage from one canonical 37-symbol dataset",
+      "Separate English and Traditional Chinese EPUB 3.3 editions with deterministic bytes",
+      "Text-first reading order, structural navigation and explicit accessibility metadata",
+      "Downloadable Readium manifest JSON plus OPDS 2.0 and OPDS 1.2 catalog files",
+      "CC BY 4.0, no account, scripts, tracking, external media or learner-data collection"
+    ],
+    "decision_steps": [
+      "Choose the English or Traditional Chinese edition for the reader.",
+      "Download the EPUB without extracting it, or download the OPDS file and test import in a compatible catalog reader.",
+      "Check the table of contents, reading order and Bopomofo glyph rendering on the target device.",
+      "Use the matching online text edition if the reader lacks reliable EPUB 3 or font support.",
+      "Pair the reference with fluent spoken models because a text-only book cannot assess pronunciation."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Offline e-reader copy",
+        "check": "EPUB 3.3 with all 37 symbols, navigation and no scripts or remote media",
+        "why": "The book remains portable and usable without creating an account"
+      },
+      {
+        "need": "Browser-accessible copy",
+        "check": "Matching text-first Web Publication with a Readium manifest",
+        "why": "Families can read the same reference when an EPUB app is unavailable"
+      },
+      {
+        "need": "Library or catalog discovery",
+        "check": "OPDS 2.0 JSON and OPDS 1.2 Atom feeds with open-access acquisitions and SHA-256",
+        "why": "Catalog tools that accept static JSON or XML can discover the exact bilingual files and verify their bytes"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not required to download, read or reuse the open book. It appears after the free publication as an optional on-device activity layer for families who want more than a text reference.",
+    "sources": [
+      {
+        "title": "Free Bopomofo EPUB 3.3 reference and OPDS catalog",
+        "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html"
+      },
+      {
+        "title": "W3C EPUB 3.3 specification",
+        "url": "https://www.w3.org/TR/epub-33/"
+      },
+      {
+        "title": "W3C EPUB Accessibility 1.1",
+        "url": "https://www.w3.org/TR/epub-a11y-11/"
+      },
+      {
+        "title": "Readium Web Publication Manifest",
+        "url": "https://readium.org/webpub-manifest/"
+      },
+      {
+        "title": "OPDS 2.0 specification",
+        "url": "https://specs.opds.io/opds-2.0"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Will the EPUB work in every e-reader?",
+        "a": "No universal guarantee is possible. EPUB 3 and Bopomofo font support vary by reading system. Test the target reader and use the matching online text edition if navigation or glyph rendering is incomplete. The static host may return generic JSON or XML HTTP Content-Types, so catalog clients that require exact OPDS or WebPub media types may need direct file import."
+      },
+      {
+        "q": "Does the EPUB include audio or test pronunciation?",
+        "a": "No. It is a text-first reference for symbol, Pinyin, IPA and example-word lookup. Pair it with fluent spoken models; it does not score speech, tones, fluency or school readiness."
+      },
+      {
+        "q": "Does the open book collect learner data?",
+        "a": "No. The EPUB and web publication use no account, scripts, analytics, tracking or child profile. They are downloadable CC BY 4.0 files."
+      }
+    ]
   }
 ]

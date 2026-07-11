@@ -207,6 +207,7 @@
 - [passport photo sizes](https://alice51849.github.io/ios-app-guide/data/passport-photo-sizes.html) · JSON: https://alice51849.github.io/ios-app-guide/data/passport-photo-sizes.json
 - [resume cv conventions by country](https://alice51849.github.io/ios-app-guide/data/resume-cv-conventions-by-country.html) · JSON: https://alice51849.github.io/ios-app-guide/data/resume-cv-conventions-by-country.json
 - [toeic cefr score](https://alice51849.github.io/ios-app-guide/data/toeic-cefr-score.html) · JSON: https://alice51849.github.io/ios-app-guide/data/toeic-cefr-score.json
+- [zhuyin bopomofo epub reference](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html)
 - [zhuyin bopomofo lms question bank](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html)
 - [zhuyin bopomofo ml dataset](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html)
 - [zhuyin bopomofo resourcesync](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html)
@@ -270,6 +271,17 @@
 - Moodle XML Traditional Chinese: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-moodle-zh-hant.xml
 - Answer key: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/answer-key.csv
 - JSON-LD metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/metadata.jsonld
+
+## Accessible Bopomofo EPUB 3.3 reference (CC BY 4.0)
+- English guide: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html
+- Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-epub-reference.html
+- English EPUB 3.3: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub
+- Traditional Chinese EPUB 3.3: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub
+- English Readium manifest JSON file: https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/manifest.json
+- Traditional Chinese Readium manifest JSON file: https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/zh-Hant/manifest.json
+- OPDS 2.0 catalog JSON file: https://alice51849.github.io/ios-app-guide/opds/bopomofo-37-symbol-reference.json
+- OPDS 1.2 catalog Atom file: https://alice51849.github.io/ios-app-guide/opds/bopomofo-37-symbol-reference.xml
+- JSON-LD metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/metadata.jsonld
 
 ## Bopomofo ResourceSync harvest feed (OAI ResourceSync 1.1)
 - English guide: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html

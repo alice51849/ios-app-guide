@@ -61,6 +61,7 @@ import zhuyin_epub_opds
 import zhuyin_frictionless_package
 import zhuyin_heritage_lesson_plan
 import zhuyin_library_storytime_kit
+import zhuyin_library_catalog
 import zhuyin_lms_assessment_bank
 import zhuyin_parent_teacher_handoff_kit
 import zhuyin_picture_book_club_kit
@@ -2774,6 +2775,345 @@ class GeneratorTests(unittest.TestCase):
             self.assertIn('hreflang="x-default"', index)
             self.assertNotIn('hreflang="de-DE"', index)
 
+    def test_zhuyin_library_catalog_is_complete_verifiable_and_deterministic(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            data = pages / "data"
+            data.mkdir(parents=True)
+            catalog = {
+                "@context": "https://schema.org",
+                "@type": "DataCatalog",
+                "dataset": [],
+            }
+            (data / "index.html").write_text(
+                '<script type="application/ld+json">'
+                + json.dumps(catalog)
+                + '</script><main><p class="foot">Footer</p></main>',
+                encoding="utf-8",
+            )
+            zhuyin_epub_opds.build(pages, app_public=False)
+            urls = zhuyin_library_catalog.build(
+                pages,
+                app_public=False,
+            )
+            self.assertEqual(9, len(urls))
+
+            package_dir = pages / zhuyin_library_catalog.PACKAGE_PATH
+            expected = tuple(
+                package_dir / filename
+                for filename in zhuyin_library_catalog.DOWNLOAD_FILENAMES
+            ) + (
+                pages / zhuyin_library_catalog.LANDING_PATH,
+                pages / zhuyin_library_catalog.ZH_LANDING_PATH,
+                pages / zhuyin_library_catalog.SITEMAP_PATH,
+            )
+            self.assertTrue(all(path.exists() for path in expected))
+
+            raw = b"\n".join(
+                (package_dir / filename).read_bytes()
+                for filename in zhuyin_library_catalog.DOWNLOAD_FILENAMES
+            )
+            for forbidden in (
+                b"apps.apple.com",
+                zhuyin_library_catalog.APP_ID.encode("ascii"),
+                zhuyin_library_catalog.APP_NAME.encode("utf-8"),
+                b"SoftwareApplication",
+            ):
+                self.assertNotIn(forbidden, raw)
+
+            marc = ET.parse(package_dir / zhuyin_library_catalog.MARC_FILENAME)
+            records = marc.getroot().findall(
+                f"{{{zhuyin_library_catalog.MARC_NS}}}record"
+            )
+            self.assertEqual(2, len(records))
+            source_urls = set()
+            for record in records:
+                fields = record.findall(
+                    f"{{{zhuyin_library_catalog.MARC_NS}}}datafield"
+                )
+                tags = {field.attrib["tag"] for field in fields}
+                self.assertTrue(
+                    {
+                        "041",
+                        "245",
+                        "264",
+                        "300",
+                        "336",
+                        "337",
+                        "338",
+                        "500",
+                        "506",
+                        "520",
+                        "538",
+                        "540",
+                        "546",
+                        "650",
+                        "655",
+                        "856",
+                    }.issubset(tags)
+                )
+                leader = record.findtext(
+                    f"{{{zhuyin_library_catalog.MARC_NS}}}leader"
+                )
+                self.assertEqual(24, len(leader))
+                fixed = next(
+                    field.text
+                    for field in record.findall(
+                        f"{{{zhuyin_library_catalog.MARC_NS}}}controlfield"
+                    )
+                    if field.attrib["tag"] == "008"
+                )
+                self.assertEqual(40, len(fixed))
+                for field in fields:
+                    if field.attrib["tag"] != "856":
+                        continue
+                    for subfield in field:
+                        if (
+                            subfield.attrib["code"] == "u"
+                            and "packages/zhuyin-bopomofo-epub"
+                            in (subfield.text or "")
+                        ):
+                            source_urls.add(subfield.text)
+            self.assertEqual(
+                {
+                    zhuyin_epub_opds.epub_url("en"),
+                    zhuyin_epub_opds.epub_url("zh-Hant"),
+                },
+                source_urls,
+            )
+
+            mods = ET.parse(package_dir / zhuyin_library_catalog.MODS_FILENAME)
+            mods_records = mods.getroot().findall(
+                f"{{{zhuyin_library_catalog.MODS_NS}}}mods"
+            )
+            self.assertEqual(2, len(mods_records))
+            self.assertEqual(
+                {"3.8"},
+                {record.attrib["version"] for record in mods_records},
+            )
+            for record in mods_records:
+                self.assertIsNotNone(
+                    record.find(
+                        f"{{{zhuyin_library_catalog.MODS_NS}}}titleInfo/"
+                        f"{{{zhuyin_library_catalog.MODS_NS}}}title"
+                    )
+                )
+                self.assertEqual(
+                    2,
+                    len(
+                        record.findall(
+                            f"{{{zhuyin_library_catalog.MODS_NS}}}identifier"
+                        )
+                    ),
+                )
+
+            metadata = json.loads(
+                (package_dir / zhuyin_library_catalog.METADATA_FILENAME).read_text(
+                    encoding="utf-8"
+                )
+            )
+            self.assertEqual(5, len(metadata["distribution"]))
+            self.assertEqual(
+                {
+                    zhuyin_library_catalog.MARC_SCHEMA,
+                    zhuyin_library_catalog.MODS_SCHEMA,
+                    zhuyin_library_catalog.BIBFRAME_VOCABULARY,
+                    zhuyin_library_catalog.BIBFRAME_MODEL,
+                },
+                set(metadata["conformsTo"]),
+            )
+            for distribution in metadata["distribution"]:
+                filename = Path(
+                    distribution["contentUrl"].split("?", 1)[0]
+                ).name
+                local = package_dir / filename
+                self.assertEqual(
+                    local.stat().st_size,
+                    int(distribution["contentSize"].split()[0]),
+                )
+                self.assertEqual(
+                    hashlib.sha256(local.read_bytes()).hexdigest(),
+                    distribution["sha256"],
+                )
+
+            with zipfile.ZipFile(
+                package_dir / zhuyin_library_catalog.BUNDLE_FILENAME
+            ) as archive:
+                self.assertEqual(
+                    {
+                        *zhuyin_library_catalog.PRIMARY_FILENAMES,
+                        "README.txt",
+                        "checksums.sha256",
+                    },
+                    set(archive.namelist()),
+                )
+                for filename in zhuyin_library_catalog.PRIMARY_FILENAMES:
+                    self.assertEqual(
+                        (package_dir / filename).read_bytes(),
+                        archive.read(filename),
+                    )
+
+            english = (
+                pages / zhuyin_library_catalog.LANDING_PATH
+            ).read_text(encoding="utf-8")
+            traditional = (
+                pages / zhuyin_library_catalog.ZH_LANDING_PATH
+            ).read_text(encoding="utf-8")
+            for landing in (english, traditional):
+                self.assertIn("MARCXML", landing)
+                self.assertIn("MODS 3.8", landing)
+                self.assertIn("BIBFRAME 2.0", landing)
+                self.assertIn("Content-Type", landing)
+                self.assertNotIn("apps.apple.com", landing)
+                self.assertNotIn('"SoftwareApplication"', landing)
+
+            package_info = {
+                filename: zhuyin_library_catalog._artifact(
+                    filename,
+                    (package_dir / filename).read_bytes(),
+                )
+                for filename in zhuyin_library_catalog.DOWNLOAD_FILENAMES
+            }
+            public = zhuyin_library_catalog.render_landing(
+                "en",
+                package_info,
+                metadata["dateModified"],
+                zhuyin_library_catalog.INITIAL_DATE,
+                True,
+            )
+            self.assertIn("apps.apple.com", public)
+            self.assertIn('"SoftwareApplication"', public)
+
+            index = (data / "index.html").read_text(encoding="utf-8")
+            self.assertEqual(
+                1,
+                index.count(zhuyin_library_catalog.CARD_START),
+            )
+            self.assertIn(zhuyin_library_catalog.LANDING_URL, index)
+            sitemap = (
+                pages / zhuyin_library_catalog.SITEMAP_PATH
+            ).read_text(encoding="utf-8")
+            for filename in zhuyin_library_catalog.DOWNLOAD_FILENAMES:
+                self.assertIn(f"{zhuyin_library_catalog.PACKAGE_URL}/{filename}", sitemap)
+
+            mtimes = {
+                path: path.stat().st_mtime_ns
+                for path in (*expected, data / "index.html")
+            }
+            zhuyin_library_catalog.build(pages, app_public=False)
+            self.assertEqual(
+                mtimes,
+                {
+                    path: path.stat().st_mtime_ns
+                    for path in (*expected, data / "index.html")
+                },
+            )
+
+    @unittest.skipUnless(
+        importlib.util.find_spec("lxml")
+        and importlib.util.find_spec("rdflib"),
+        "XML and RDF validation dependencies are installed in CI",
+    )
+    def test_zhuyin_library_catalog_matches_official_schemas_and_vocabulary(self):
+        from lxml import etree
+        from rdflib import Graph, RDF, URIRef
+        from rdflib.compare import isomorphic
+
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            data = pages / "data"
+            data.mkdir(parents=True)
+            (data / "index.html").write_text(
+                '<script type="application/ld+json">'
+                '{"@context":"https://schema.org","@type":"DataCatalog",'
+                '"dataset":[]}</script><p class="foot">Footer</p>',
+                encoding="utf-8",
+            )
+            zhuyin_epub_opds.build(pages, app_public=False)
+            zhuyin_library_catalog.build(pages, app_public=False)
+            package = pages / zhuyin_library_catalog.PACKAGE_PATH
+            specifications = (
+                Path(GEO)
+                / "reference_datasets"
+                / "library-catalog"
+            )
+            sources = json.loads(
+                (specifications / "sources.json").read_text(encoding="utf-8")
+            )
+            for source in sources["files"]:
+                self.assertEqual(
+                    source["sha256"],
+                    hashlib.sha256(
+                        (specifications / source["filename"]).read_bytes()
+                    ).hexdigest(),
+                )
+
+            class LocalSchemaResolver(etree.Resolver):
+                def resolve(self, url, public_id, context):
+                    if url.endswith("/mods/xml.xsd"):
+                        return self.resolve_filename(
+                            str((specifications / "xml.xsd").resolve()),
+                            context,
+                        )
+                    if url.endswith("/standards/xlink/xlink.xsd"):
+                        return self.resolve_filename(
+                            str((specifications / "xlink.xsd").resolve()),
+                            context,
+                        )
+                    return None
+
+            parser = etree.XMLParser(no_network=True)
+            parser.resolvers.add(LocalSchemaResolver())
+            for schema_name, filename in (
+                ("MARC21slim.xsd", zhuyin_library_catalog.MARC_FILENAME),
+                ("mods-3-8.xsd", zhuyin_library_catalog.MODS_FILENAME),
+            ):
+                schema = etree.XMLSchema(
+                    etree.parse(str(specifications / schema_name), parser)
+                )
+                schema.assertValid(
+                    etree.parse(str(package / filename), parser)
+                )
+
+            json_graph = Graph().parse(
+                package / zhuyin_library_catalog.BIBFRAME_JSONLD_FILENAME,
+                format="json-ld",
+            )
+            turtle_graph = Graph().parse(
+                package / zhuyin_library_catalog.BIBFRAME_TURTLE_FILENAME,
+                format="turtle",
+            )
+            self.assertTrue(isomorphic(json_graph, turtle_graph))
+            self.assertEqual(94, len(json_graph))
+            bf = zhuyin_library_catalog.BF
+            self.assertEqual(
+                2,
+                len(set(json_graph.subjects(RDF.type, URIRef(bf + "Work")))),
+            )
+            self.assertEqual(
+                2,
+                len(
+                    set(
+                        json_graph.subjects(
+                            RDF.type,
+                            URIRef(bf + "Instance"),
+                        )
+                    )
+                ),
+            )
+            ontology = Graph().parse(
+                specifications / "bibframe.rdf",
+                format="xml",
+            )
+            declared = set(ontology.subjects())
+            used = {
+                term
+                for triple in json_graph
+                for term in triple
+                if isinstance(term, URIRef) and str(term).startswith(bf)
+            }
+            self.assertFalse(used - declared)
+
     def _seed_zhuyin_resourcesync_pages(self, pages):
         data = pages / "data"
         data.mkdir(parents=True)
@@ -2800,6 +3140,7 @@ class GeneratorTests(unittest.TestCase):
         zhuyin_static_api.build(pages, app_public=False)
         zhuyin_lms_assessment_bank.build(pages, app_public=False)
         zhuyin_epub_opds.build(pages, app_public=False)
+        zhuyin_library_catalog.build(pages, app_public=False)
 
     def test_zhuyin_resourcesync_is_complete_verifiable_and_discoverable(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -4805,6 +5146,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_static_api.py", workflow)
         self.assertIn("zhuyin_lms_assessment_bank.py", workflow)
         self.assertIn("zhuyin_epub_opds.py", workflow)
+        self.assertIn("zhuyin_library_catalog.py", workflow)
         self.assertIn("zhuyin_resourcesync.py", workflow)
         self.assertIn("family_travel_mission_cards.py", workflow)
         self.assertIn("family_travel_observation_passport.py", workflow)
@@ -4836,6 +5178,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_static_api.py",
             "zhuyin_lms_assessment_bank.py",
             "zhuyin_epub_opds.py",
+            "zhuyin_library_catalog.py",
             "zhuyin_resourcesync.py",
             "prioritize_trip_planet_resources.py",
             "add_related_tools.py",
@@ -4850,6 +5193,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("--refresh-slug \"$SUMMER_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$OBSERVATION_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$EPUB_SLUG\"", workflow)
+        self.assertIn("--refresh-slug \"$LIBRARY_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$TRIP_SLUG\"", workflow)
         self.assertIn('"lumibopomofo" in live_app_keys', workflow)
         self.assertIn('"tripplanet" in live_app_keys', workflow)
@@ -4872,6 +5216,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_static_api.py", publish)
         self.assertIn("zhuyin_lms_assessment_bank.py", publish)
         self.assertIn("zhuyin_epub_opds.py", publish)
+        self.assertIn("zhuyin_library_catalog.py", publish)
         self.assertIn("zhuyin_resourcesync.py", publish)
         self.assertIn("family_travel_mission_cards.py", publish)
         self.assertIn("family_travel_observation_passport.py", publish)
@@ -4904,6 +5249,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_static_api.py",
             "zhuyin_lms_assessment_bank.py",
             "zhuyin_epub_opds.py",
+            "zhuyin_library_catalog.py",
             "zhuyin_resourcesync.py",
             "prioritize_trip_planet_resources.py",
             "add_related_answers.py",

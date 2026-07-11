@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='utf-8'?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 https://www.loc.gov/standards/mods/v3/mods-3-8.xsd">
+  <mods version="3.8" ID="lumi-zhuyin-epub-en-2026">
+    <titleInfo xml:lang="en">
+      <title>Bopomofo: A 37-Symbol Reference</title>
+      <subTitle>An EPUB 3.3 reference to all 37 Zhuyin symbols</subTitle>
+    </titleInfo>
+    <titleInfo type="alternative">
+      <title>注音符號：37 符號完整參考手冊</title>
+    </titleInfo>
+    <name type="corporate">
+      <namePart>Lumi Apps - iOS App Guide</namePart>
+      <role>
+        <roleTerm type="code" authority="marcrelator">aut</roleTerm>
+      </role>
+    </name>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="local">reference works</genre>
+    <originInfo eventType="publication">
+      <place>
+        <placeTerm type="text">[Place of publication not identified]</placeTerm>
+      </place>
+      <publisher>Lumi Apps - iOS App Guide</publisher>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2026</dateIssued>
+      <issuance>monographic</issuance>
+    </originInfo>
+    <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+    </language>
+    <physicalDescription>
+      <form authority="marcform">electronic</form>
+      <internetMediaType>application/epub+zip</internetMediaType>
+      <extent>1 online resource (1 EPUB file)</extent>
+      <digitalOrigin>born digital</digitalOrigin>
+    </physicalDescription>
+    <abstract>A free, text-first EPUB 3.3 reference for all 37 Bopomofo symbols, with Pinyin, broad IPA, examples and open OPDS catalogs.</abstract>
+    <note type="language">Text in English with Traditional Chinese examples and Bopomofo.</note>
+    <subject>
+      <topic>Bopomofo</topic>
+    </subject>
+    <subject>
+      <topic>Chinese language--Phonetics</topic>
+    </subject>
+    <subject>
+      <topic>Chinese language--Study and teaching</topic>
+    </subject>
+    <identifier type="local">LUMI-ZHUYIN-EPUB-EN-2026</identifier>
+    <identifier type="sha256">be0b7cdcc34875930343c41c230fc105f00944e1736d658d9d8de0b67b54cff9</identifier>
+    <location>
+      <url displayLabel="Download the English EPUB">https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub</url>
+    </location>
+    <accessCondition type="use and reproduction" xlink:href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International.</accessCondition>
+    <recordInfo>
+      <recordContentSource authority="local">LUMI</recordContentSource>
+      <recordCreationDate encoding="w3cdtf">2026-07-11</recordCreationDate>
+      <recordChangeDate encoding="iso8601">2026-07-11T10:45:50Z</recordChangeDate>
+      <recordIdentifier source="LUMI">lumi-zhuyin-epub-en-2026</recordIdentifier>
+    </recordInfo>
+  </mods>
+  <mods version="3.8" ID="lumi-zhuyin-epub-zh-hant-2026">
+    <titleInfo xml:lang="zh-Hant">
+      <title>注音符號：37 符號完整參考手冊</title>
+      <subTitle>涵蓋全部 37 個注音符號的 EPUB 3.3 參考手冊</subTitle>
+    </titleInfo>
+    <titleInfo type="alternative">
+      <title>Bopomofo: A 37-Symbol Reference</title>
+    </titleInfo>
+    <name type="corporate">
+      <namePart>Lumi Apps - iOS App Guide</namePart>
+      <role>
+        <roleTerm type="code" authority="marcrelator">aut</roleTerm>
+      </role>
+    </name>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="local">reference works</genre>
+    <originInfo eventType="publication">
+      <place>
+        <placeTerm type="text">[Place of publication not identified]</placeTerm>
+      </place>
+      <publisher>Lumi Apps - iOS App Guide</publisher>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2026</dateIssued>
+      <issuance>monographic</issuance>
+    </originInfo>
+    <language>
+      <languageTerm type="code" authority="iso639-2b">chi</languageTerm>
+      <languageTerm type="text">Chinese</languageTerm>
+    </language>
+    <physicalDescription>
+      <form authority="marcform">electronic</form>
+      <internetMediaType>application/epub+zip</internetMediaType>
+      <extent>1 個線上資源（1 個 EPUB 檔案）</extent>
+      <digitalOrigin>born digital</digitalOrigin>
+    </physicalDescription>
+    <abstract>免費下載完整 37 個注音符號的純文字 EPUB 3.3 參考手冊，含漢語拼音、寬式 IPA、例字與開放 OPDS 目錄。</abstract>
+    <note type="language">正文為繁體中文，並附英文說明、漢語拼音與注音符號。</note>
+    <subject>
+      <topic>Bopomofo</topic>
+    </subject>
+    <subject>
+      <topic>Chinese language--Phonetics</topic>
+    </subject>
+    <subject>
+      <topic>Chinese language--Study and teaching</topic>
+    </subject>
+    <identifier type="local">LUMI-ZHUYIN-EPUB-ZH-HANT-2026</identifier>
+    <identifier type="sha256">0e1f335c5b92aa0f2002a7bf130591005df5e36f76335717925f60a206b8e64b</identifier>
+    <location>
+      <url displayLabel="下載繁體中文 EPUB">https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub</url>
+    </location>
+    <accessCondition type="use and reproduction" xlink:href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International.</accessCondition>
+    <recordInfo>
+      <recordContentSource authority="local">LUMI</recordContentSource>
+      <recordCreationDate encoding="w3cdtf">2026-07-11</recordCreationDate>
+      <recordChangeDate encoding="iso8601">2026-07-11T10:45:50Z</recordChangeDate>
+      <recordIdentifier source="LUMI">lumi-zhuyin-epub-zh-hant-2026</recordIdentifier>
+    </recordInfo>
+  </mods>
+</modsCollection>

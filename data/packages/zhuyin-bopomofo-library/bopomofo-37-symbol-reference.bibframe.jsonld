@@ -1,0 +1,330 @@
+{
+  "@context": {
+    "bf": "http://id.loc.gov/ontologies/bibframe/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/#organization",
+      "@type": "bf:Organization",
+      "rdfs:label": "Lumi Apps - iOS App Guide"
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#genre-reference",
+      "@type": "bf:GenreForm",
+      "rdfs:label": [
+        {
+          "@value": "Reference works",
+          "@language": "en"
+        },
+        {
+          "@value": "參考工具書",
+          "@language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-bopomofo",
+      "@type": "bf:Topic",
+      "rdfs:label": [
+        {
+          "@value": "Bopomofo",
+          "@language": "en"
+        },
+        {
+          "@value": "注音符號",
+          "@language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-chinese-phonetics",
+      "@type": "bf:Topic",
+      "rdfs:label": [
+        {
+          "@value": "Chinese language--Phonetics",
+          "@language": "en"
+        },
+        {
+          "@value": "漢語語音",
+          "@language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-chinese-language-teaching",
+      "@type": "bf:Topic",
+      "rdfs:label": [
+        {
+          "@value": "Chinese language--Study and teaching",
+          "@language": "en"
+        },
+        {
+          "@value": "漢語教學",
+          "@language": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#work-en",
+      "@type": "bf:Work",
+      "rdfs:label": {
+        "@value": "Bopomofo: A 37-Symbol Reference",
+        "@language": "en"
+      },
+      "bf:title": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#title-en"
+      },
+      "bf:language": {
+        "@id": "http://id.loc.gov/vocabulary/languages/eng"
+      },
+      "bf:content": {
+        "@id": "http://id.loc.gov/vocabulary/contentTypes/txt"
+      },
+      "bf:contribution": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#contribution-en"
+      },
+      "bf:subject": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-bopomofo"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-chinese-phonetics"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-chinese-language-teaching"
+        }
+      ],
+      "bf:genreForm": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#genre-reference"
+      },
+      "bf:hasInstance": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#instance-en"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#instance-en",
+      "@type": "bf:Instance",
+      "rdfs:label": {
+        "@value": "Bopomofo: A 37-Symbol Reference",
+        "@language": "en"
+      },
+      "bf:title": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#title-en"
+      },
+      "bf:instanceOf": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#work-en"
+      },
+      "bf:media": {
+        "@id": "http://id.loc.gov/vocabulary/mediaTypes/c"
+      },
+      "bf:carrier": {
+        "@id": "http://id.loc.gov/vocabulary/carriers/cr"
+      },
+      "bf:identifiedBy": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#identifier-en"
+      },
+      "bf:provisionActivity": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#publication-en"
+      },
+      "bf:electronicLocator": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub"
+      },
+      "bf:usageAndAccessPolicy": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#use-policy-en"
+      },
+      "bf:extent": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#extent-en"
+      },
+      "bf:note": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#fixity-note-en"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#title-en",
+      "@type": "bf:Title",
+      "bf:mainTitle": {
+        "@value": "Bopomofo: A 37-Symbol Reference",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#contribution-en",
+      "@type": "bf:PrimaryContribution",
+      "bf:agent": {
+        "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+      },
+      "bf:role": {
+        "@id": "http://id.loc.gov/vocabulary/relators/aut"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#identifier-en",
+      "@type": "bf:Local",
+      "rdf:value": "LUMI-ZHUYIN-EPUB-EN-2026"
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#publication-en",
+      "@type": "bf:Publication",
+      "bf:agent": {
+        "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+      },
+      "bf:date": "2026"
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#use-policy-en",
+      "@type": "bf:UsePolicy",
+      "rdfs:label": "CC BY 4.0",
+      "rdf:value": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#extent-en",
+      "@type": "bf:Extent",
+      "rdfs:label": {
+        "@value": "1 online resource (1 EPUB file)",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#fixity-note-en",
+      "@type": "bf:Note",
+      "rdfs:label": {
+        "@value": "EPUB SHA-256: be0b7cdcc34875930343c41c230fc105f00944e1736d658d9d8de0b67b54cff9",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#work-zh-hant",
+      "@type": "bf:Work",
+      "rdfs:label": {
+        "@value": "注音符號：37 符號完整參考手冊",
+        "@language": "zh-Hant"
+      },
+      "bf:title": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#title-zh-hant"
+      },
+      "bf:language": {
+        "@id": "http://id.loc.gov/vocabulary/languages/chi"
+      },
+      "bf:content": {
+        "@id": "http://id.loc.gov/vocabulary/contentTypes/txt"
+      },
+      "bf:contribution": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#contribution-zh-hant"
+      },
+      "bf:subject": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-bopomofo"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-chinese-phonetics"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-chinese-language-teaching"
+        }
+      ],
+      "bf:genreForm": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#genre-reference"
+      },
+      "bf:hasInstance": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#instance-zh-hant"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#instance-zh-hant",
+      "@type": "bf:Instance",
+      "rdfs:label": {
+        "@value": "注音符號：37 符號完整參考手冊",
+        "@language": "zh-Hant"
+      },
+      "bf:title": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#title-zh-hant"
+      },
+      "bf:instanceOf": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#work-zh-hant"
+      },
+      "bf:media": {
+        "@id": "http://id.loc.gov/vocabulary/mediaTypes/c"
+      },
+      "bf:carrier": {
+        "@id": "http://id.loc.gov/vocabulary/carriers/cr"
+      },
+      "bf:identifiedBy": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#identifier-zh-hant"
+      },
+      "bf:provisionActivity": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#publication-zh-hant"
+      },
+      "bf:electronicLocator": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub"
+      },
+      "bf:usageAndAccessPolicy": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#use-policy-zh-hant"
+      },
+      "bf:extent": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#extent-zh-hant"
+      },
+      "bf:note": {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#fixity-note-zh-hant"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#title-zh-hant",
+      "@type": "bf:Title",
+      "bf:mainTitle": {
+        "@value": "注音符號：37 符號完整參考手冊",
+        "@language": "zh-Hant"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#contribution-zh-hant",
+      "@type": "bf:PrimaryContribution",
+      "bf:agent": {
+        "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+      },
+      "bf:role": {
+        "@id": "http://id.loc.gov/vocabulary/relators/aut"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#identifier-zh-hant",
+      "@type": "bf:Local",
+      "rdf:value": "LUMI-ZHUYIN-EPUB-ZH-HANT-2026"
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#publication-zh-hant",
+      "@type": "bf:Publication",
+      "bf:agent": {
+        "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+      },
+      "bf:date": "2026"
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#use-policy-zh-hant",
+      "@type": "bf:UsePolicy",
+      "rdfs:label": "CC BY 4.0",
+      "rdf:value": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#extent-zh-hant",
+      "@type": "bf:Extent",
+      "rdfs:label": {
+        "@value": "1 個線上資源（1 個 EPUB 檔案）",
+        "@language": "zh-Hant"
+      }
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#fixity-note-zh-hant",
+      "@type": "bf:Note",
+      "rdfs:label": {
+        "@value": "EPUB SHA-256: 0e1f335c5b92aa0f2002a7bf130591005df5e36f76335717925f60a206b8e64b",
+        "@language": "zh-Hant"
+      }
+    }
+  ]
+}

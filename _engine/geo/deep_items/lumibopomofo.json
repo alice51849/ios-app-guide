@@ -645,5 +645,84 @@
         "a": "No. The EPUB and web publication use no account, scripts, analytics, tracking or child profile. They are downloadable CC BY 4.0 files."
       }
     ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "library_catalog_resource",
+    "match": [
+      "school library download catalog records",
+      "catalog records for a bopomofo epub",
+      "marcxml mods bibframe bopomofo"
+    ],
+    "query": "Where can a school library download catalog records for a Bopomofo EPUB?",
+    "page_title": "Download MARCXML, MODS and BIBFRAME Records for a Bopomofo EPUB",
+    "meta_description": "Download two review-ready Bopomofo EPUB catalog records as MARCXML, MODS 3.8, BIBFRAME 2.0 JSON-LD and Turtle, with SHA-256.",
+    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html",
+    "primary_resource_label": "Download the Bopomofo library catalog package",
+    "lead": "Use the open Bopomofo library catalog package. It provides two review-ready edition records—English and Traditional Chinese—as MARCXML, MODS 3.8, BIBFRAME 2.0 JSON-LD and Turtle, plus one ZIP bundle.",
+    "detail": "The records describe the exact open EPUB files rather than an app. Each edition includes a stable local identifier, language, title, corporate creator, publication data, format, rights, subjects, direct download URL, byte size and SHA-256. MARCXML and MODS are validated against pinned official schemas; the two BIBFRAME serializations must parse to the same RDF graph and use terms declared by the official vocabulary. Download from the bilingual guide at https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html. These are candidate records, so a cataloger should still review local 040, subject, classification, access and holdings policy before import; they do not assign an ISBN, LCCN or OCLC number.",
+    "follow_up": "Import into a test collection first. Confirm title display, script handling, subjects, links and local control fields before exposing the record in a public catalog. A static host may return generic XML or JSON Content-Types, so download-first import is the documented fallback for strict systems.",
+    "bullets": [
+      "One deterministic ZIP contains the MARCXML, MODS 3.8, BIBFRAME JSON-LD, BIBFRAME Turtle, README and SHA-256 checksum list.",
+      "The MARCXML collection carries two bibliographic records with 001, 005, 007, 008, 041, 245, 264, 3XX, 5XX, 6XX and 856 data.",
+      "Each record links to one exact EPUB edition and carries its byte length and SHA-256 provenance.",
+      "The package is CC BY 4.0, requires no account and remains usable without any app."
+    ],
+    "decision_steps": [
+      "Open the bilingual library catalog guide.",
+      "Download the complete ZIP or the syntax your library system accepts.",
+      "Verify checksums, then review local descriptive cataloging and access fields.",
+      "Import into a test collection before publishing the record to the public catalog."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Traditional ILS import",
+        "check": "MARCXML collection with separate English and Traditional Chinese edition records",
+        "why": "Libraries can review familiar MARC fields before loading either or both editions"
+      },
+      {
+        "need": "Metadata crosswalk or repository ingest",
+        "check": "MODS 3.8 records validated against the official schema",
+        "why": "Repositories can retain descriptive structure without parsing MARC fixed fields"
+      },
+      {
+        "need": "Linked-data workflow",
+        "check": "Equivalent BIBFRAME 2.0 JSON-LD and Turtle Work/Instance graphs",
+        "why": "Graph tools can choose either syntax and still receive the same 94 RDF triples"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not required to download, validate, import or reuse these catalog records or the EPUB. If currently available, it appears only after the free library resource as an optional on-device practice layer.",
+    "sources": [
+      {
+        "title": "Bopomofo EPUB library catalog records",
+        "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html"
+      },
+      {
+        "title": "Library of Congress MARCXML schema",
+        "url": "https://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd"
+      },
+      {
+        "title": "Library of Congress MODS 3.8 schema",
+        "url": "https://www.loc.gov/standards/mods/v3/mods-3-8.xsd"
+      },
+      {
+        "title": "Library of Congress BIBFRAME 2.0 model",
+        "url": "https://www.loc.gov/bibframe/docs/bibframe2-model.html"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I import these records without reviewing them?",
+        "a": "No. They are schema-valid candidate records, not institution-approved cataloging. Review local control fields, subjects, classification, access and holdings policy in a staging collection."
+      },
+      {
+        "q": "Do the records assign an ISBN, LCCN or OCLC number?",
+        "a": "No. They use clearly labeled local identifiers and do not claim an external control number."
+      },
+      {
+        "q": "What if my library system rejects the file URL?",
+        "a": "Download the MARCXML, MODS, JSON-LD or Turtle file first and import it locally. Static hosting can return generic XML or JSON Content-Types that strict URL importers reject."
+      }
+    ]
   }
 ]

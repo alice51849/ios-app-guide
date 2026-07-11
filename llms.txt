@@ -208,6 +208,7 @@
 - [resume cv conventions by country](https://alice51849.github.io/ios-app-guide/data/resume-cv-conventions-by-country.html) · JSON: https://alice51849.github.io/ios-app-guide/data/resume-cv-conventions-by-country.json
 - [toeic cefr score](https://alice51849.github.io/ios-app-guide/data/toeic-cefr-score.html) · JSON: https://alice51849.github.io/ios-app-guide/data/toeic-cefr-score.json
 - [zhuyin bopomofo epub reference](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html)
+- [zhuyin bopomofo library catalog records](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html)
 - [zhuyin bopomofo lms question bank](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html)
 - [zhuyin bopomofo ml dataset](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html)
 - [zhuyin bopomofo resourcesync](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html)
@@ -282,6 +283,16 @@
 - OPDS 2.0 catalog JSON file: https://alice51849.github.io/ios-app-guide/opds/bopomofo-37-symbol-reference.json
 - OPDS 1.2 catalog Atom file: https://alice51849.github.io/ios-app-guide/opds/bopomofo-37-symbol-reference.xml
 - JSON-LD metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/metadata.jsonld
+
+## Bopomofo EPUB library catalog records
+- English guide: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html
+- Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-library-catalog-records.html
+- Complete ZIP bundle: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-library-catalog-bundle.zip
+- MARCXML: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.marcxml.xml
+- MODS 3.8: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.mods.xml
+- BIBFRAME 2.0 JSON-LD: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.bibframe.jsonld
+- BIBFRAME 2.0 Turtle: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.bibframe.ttl
+- Checksums and metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/metadata.jsonld
 
 ## Bopomofo ResourceSync harvest feed (OAI ResourceSync 1.1)
 - English guide: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html

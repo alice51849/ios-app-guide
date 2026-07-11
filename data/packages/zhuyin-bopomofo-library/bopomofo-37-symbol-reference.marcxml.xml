@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='utf-8'?>
+<collection xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim https://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd" id="bopomofo-37-symbol-reference">
+  <record type="Bibliographic" id="lumi-zhuyin-epub-en-2026">
+    <leader>00000nam a2200000 i 4500</leader>
+    <controlfield tag="001">lumi-zhuyin-epub-en-2026</controlfield>
+    <controlfield tag="003">LUMI</controlfield>
+    <controlfield tag="005">20260711104550.0</controlfield>
+    <controlfield tag="007">cr||||||||||||</controlfield>
+    <controlfield tag="008">260711s2026    xx     jo         0 eng d</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">LUMI-ZHUYIN-EPUB-EN-2026</subfield>
+      <subfield code="2">local</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">LUMI</subfield>
+      <subfield code="b">eng</subfield>
+      <subfield code="e">rda</subfield>
+      <subfield code="c">LUMI</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">eng</subfield>
+    </datafield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">Bopomofo: A 37-Symbol Reference</subfield>
+      <subfield code="b">An EPUB 3.3 reference to all 37 Zhuyin symbols</subfield>
+      <subfield code="c">Lumi Apps - iOS App Guide</subfield>
+    </datafield>
+    <datafield tag="246" ind1="3" ind2=" ">
+      <subfield code="a">注音符號：37 符號完整參考手冊</subfield>
+    </datafield>
+    <datafield tag="250" ind1=" " ind2=" ">
+      <subfield code="a">Version 1.0.0.</subfield>
+    </datafield>
+    <datafield tag="264" ind1=" " ind2="1">
+      <subfield code="a">[Place of publication not identified]</subfield>
+      <subfield code="b">Lumi Apps - iOS App Guide</subfield>
+      <subfield code="c">2026</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">1 online resource (1 EPUB file)</subfield>
+    </datafield>
+    <datafield tag="336" ind1=" " ind2=" ">
+      <subfield code="a">text</subfield>
+      <subfield code="b">txt</subfield>
+      <subfield code="2">rdacontent</subfield>
+    </datafield>
+    <datafield tag="337" ind1=" " ind2=" ">
+      <subfield code="a">computer</subfield>
+      <subfield code="b">c</subfield>
+      <subfield code="2">rdamedia</subfield>
+    </datafield>
+    <datafield tag="338" ind1=" " ind2=" ">
+      <subfield code="a">online resource</subfield>
+      <subfield code="b">cr</subfield>
+      <subfield code="2">rdacarrier</subfield>
+    </datafield>
+    <datafield tag="347" ind1=" " ind2=" ">
+      <subfield code="a">text file</subfield>
+      <subfield code="b">EPUB</subfield>
+      <subfield code="2">rda</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Text-first reference covering all 37 Bopomofo symbols.</subfield>
+    </datafield>
+    <datafield tag="506" ind1="0" ind2=" ">
+      <subfield code="a">Open access; no account required.</subfield>
+    </datafield>
+    <datafield tag="520" ind1=" " ind2=" ">
+      <subfield code="a">A free, text-first EPUB 3.3 reference for all 37 Bopomofo symbols, with Pinyin, broad IPA, examples and open OPDS catalogs.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">EPUB 3 reading system with Unicode Bopomofo font support.</subfield>
+    </datafield>
+    <datafield tag="540" ind1=" " ind2=" ">
+      <subfield code="a">Creative Commons Attribution 4.0 International.</subfield>
+      <subfield code="u">https://creativecommons.org/licenses/by/4.0/</subfield>
+    </datafield>
+    <datafield tag="546" ind1=" " ind2=" ">
+      <subfield code="a">Text in English with Traditional Chinese examples and Bopomofo.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="4">
+      <subfield code="a">Bopomofo</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="4">
+      <subfield code="a">Chinese language--Phonetics</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="4">
+      <subfield code="a">Chinese language--Study and teaching</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">Electronic books.</subfield>
+      <subfield code="2">lcgft</subfield>
+    </datafield>
+    <datafield tag="710" ind1="2" ind2=" ">
+      <subfield code="a">Lumi Apps - iOS App Guide</subfield>
+      <subfield code="e">author.</subfield>
+    </datafield>
+    <datafield tag="856" ind1="4" ind2="0">
+      <subfield code="3">Download the English EPUB</subfield>
+      <subfield code="u">https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub</subfield>
+      <subfield code="q">application/epub+zip</subfield>
+      <subfield code="z">SHA-256: be0b7cdcc34875930343c41c230fc105f00944e1736d658d9d8de0b67b54cff9</subfield>
+    </datafield>
+    <datafield tag="856" ind1="4" ind2="2">
+      <subfield code="3">Description and catalog record downloads</subfield>
+      <subfield code="u">https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html</subfield>
+    </datafield>
+  </record>
+  <record type="Bibliographic" id="lumi-zhuyin-epub-zh-hant-2026">
+    <leader>00000nam a2200000 i 4500</leader>
+    <controlfield tag="001">lumi-zhuyin-epub-zh-hant-2026</controlfield>
+    <controlfield tag="003">LUMI</controlfield>
+    <controlfield tag="005">20260711104550.0</controlfield>
+    <controlfield tag="007">cr||||||||||||</controlfield>
+    <controlfield tag="008">260711s2026    xx     jo         0 chi d</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">LUMI-ZHUYIN-EPUB-ZH-HANT-2026</subfield>
+      <subfield code="2">local</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">LUMI</subfield>
+      <subfield code="b">eng</subfield>
+      <subfield code="e">rda</subfield>
+      <subfield code="c">LUMI</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">chi</subfield>
+    </datafield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">注音符號：37 符號完整參考手冊</subfield>
+      <subfield code="b">涵蓋全部 37 個注音符號的 EPUB 3.3 參考手冊</subfield>
+      <subfield code="c">Lumi Apps - iOS App Guide</subfield>
+    </datafield>
+    <datafield tag="246" ind1="3" ind2=" ">
+      <subfield code="a">Bopomofo: A 37-Symbol Reference</subfield>
+    </datafield>
+    <datafield tag="250" ind1=" " ind2=" ">
+      <subfield code="a">Version 1.0.0.</subfield>
+    </datafield>
+    <datafield tag="264" ind1=" " ind2="1">
+      <subfield code="a">[Place of publication not identified]</subfield>
+      <subfield code="b">Lumi Apps - iOS App Guide</subfield>
+      <subfield code="c">2026</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">1 個線上資源（1 個 EPUB 檔案）</subfield>
+    </datafield>
+    <datafield tag="336" ind1=" " ind2=" ">
+      <subfield code="a">text</subfield>
+      <subfield code="b">txt</subfield>
+      <subfield code="2">rdacontent</subfield>
+    </datafield>
+    <datafield tag="337" ind1=" " ind2=" ">
+      <subfield code="a">computer</subfield>
+      <subfield code="b">c</subfield>
+      <subfield code="2">rdamedia</subfield>
+    </datafield>
+    <datafield tag="338" ind1=" " ind2=" ">
+      <subfield code="a">online resource</subfield>
+      <subfield code="b">cr</subfield>
+      <subfield code="2">rdacarrier</subfield>
+    </datafield>
+    <datafield tag="347" ind1=" " ind2=" ">
+      <subfield code="a">text file</subfield>
+      <subfield code="b">EPUB</subfield>
+      <subfield code="2">rda</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Text-first reference covering all 37 Bopomofo symbols.</subfield>
+    </datafield>
+    <datafield tag="506" ind1="0" ind2=" ">
+      <subfield code="a">Open access; no account required.</subfield>
+    </datafield>
+    <datafield tag="520" ind1=" " ind2=" ">
+      <subfield code="a">免費下載完整 37 個注音符號的純文字 EPUB 3.3 參考手冊，含漢語拼音、寬式 IPA、例字與開放 OPDS 目錄。</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">EPUB 3 reading system with Unicode Bopomofo font support.</subfield>
+    </datafield>
+    <datafield tag="540" ind1=" " ind2=" ">
+      <subfield code="a">Creative Commons Attribution 4.0 International.</subfield>
+      <subfield code="u">https://creativecommons.org/licenses/by/4.0/</subfield>
+    </datafield>
+    <datafield tag="546" ind1=" " ind2=" ">
+      <subfield code="a">正文為繁體中文，並附英文說明、漢語拼音與注音符號。</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="4">
+      <subfield code="a">Bopomofo</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="4">
+      <subfield code="a">Chinese language--Phonetics</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="4">
+      <subfield code="a">Chinese language--Study and teaching</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">Electronic books.</subfield>
+      <subfield code="2">lcgft</subfield>
+    </datafield>
+    <datafield tag="710" ind1="2" ind2=" ">
+      <subfield code="a">Lumi Apps - iOS App Guide</subfield>
+      <subfield code="e">author.</subfield>
+    </datafield>
+    <datafield tag="856" ind1="4" ind2="0">
+      <subfield code="3">下載繁體中文 EPUB</subfield>
+      <subfield code="u">https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub</subfield>
+      <subfield code="q">application/epub+zip</subfield>
+      <subfield code="z">SHA-256: 0e1f335c5b92aa0f2002a7bf130591005df5e36f76335717925f60a206b8e64b</subfield>
+    </datafield>
+    <datafield tag="856" ind1="4" ind2="2">
+      <subfield code="3">Description and catalog record downloads</subfield>
+      <subfield code="u">https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html</subfield>
+    </datafield>
+  </record>
+</collection>

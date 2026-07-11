@@ -47,6 +47,7 @@ ZHUYIN_DATA_PACKAGE = "zhuyin-bopomofo"
 ZHUYIN_RESOURCE_SYNC = "zhuyin-bopomofo-resourcesync"
 ZHUYIN_LMS_BANK = "zhuyin-bopomofo-lms-question-bank"
 ZHUYIN_EPUB = "zhuyin-bopomofo-epub-reference"
+ZHUYIN_LIBRARY_CATALOG = "zhuyin-bopomofo-library-catalog-records"
 RESOURCE_SYNC_SOURCE = "https://alice51849.github.io/.well-known/resourcesync"
 
 AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "anthropic-ai",
@@ -315,6 +316,27 @@ def build_llms(comp_map, live_keys):
             f"- JSON-LD metadata: {package}/metadata.jsonld",
         ]
     if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
+            "zhuyin-bopomofo-library",
+            "metadata.jsonld",
+        )
+    ):
+        package = f"{SITE}/data/packages/zhuyin-bopomofo-library"
+        lines += [
+            "",
+            "## Bopomofo EPUB library catalog records",
+            f"- English guide: {SITE}/data/{ZHUYIN_LIBRARY_CATALOG}.html",
+            f"- Traditional Chinese guide: {SITE}/zh-Hant/data/{ZHUYIN_LIBRARY_CATALOG}.html",
+            f"- Complete ZIP bundle: {package}/bopomofo-37-symbol-library-catalog-bundle.zip",
+            f"- MARCXML: {package}/bopomofo-37-symbol-reference.marcxml.xml",
+            f"- MODS 3.8: {package}/bopomofo-37-symbol-reference.mods.xml",
+            f"- BIBFRAME 2.0 JSON-LD: {package}/bopomofo-37-symbol-reference.bibframe.jsonld",
+            f"- BIBFRAME 2.0 Turtle: {package}/bopomofo-37-symbol-reference.bibframe.ttl",
+            f"- Checksums and metadata: {package}/metadata.jsonld",
+        ]
+    if os.path.exists(
         os.path.join(PAGES, "resourcesync", "resourcelist.xml")
     ):
         lines += [
@@ -395,6 +417,10 @@ def build_llms_full(comp_map, live_keys):
         (
             "Accessible Bopomofo EPUB and downloadable catalog files",
             f"data/{ZHUYIN_EPUB}.html",
+        ),
+        (
+            "Bopomofo EPUB library catalog records",
+            f"data/{ZHUYIN_LIBRARY_CATALOG}.html",
         ),
         ("Free tools", "tools/index.html"),
     ]
@@ -625,6 +651,27 @@ def build_llms_full(comp_map, live_keys):
             f"  - JSON-LD metadata: {package}/metadata.jsonld",
         ]
     if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
+            "zhuyin-bopomofo-library",
+            "metadata.jsonld",
+        )
+    ):
+        package = f"{SITE}/data/packages/zhuyin-bopomofo-library"
+        lines += [
+            "",
+            "## Bopomofo EPUB library catalog records",
+            f"- [English guide]({SITE}/data/{ZHUYIN_LIBRARY_CATALOG}.html)",
+            f"- [Traditional Chinese guide]({SITE}/zh-Hant/data/{ZHUYIN_LIBRARY_CATALOG}.html)",
+            f"  - Complete ZIP bundle: {package}/bopomofo-37-symbol-library-catalog-bundle.zip",
+            f"  - MARCXML: {package}/bopomofo-37-symbol-reference.marcxml.xml",
+            f"  - MODS 3.8: {package}/bopomofo-37-symbol-reference.mods.xml",
+            f"  - BIBFRAME 2.0 JSON-LD: {package}/bopomofo-37-symbol-reference.bibframe.jsonld",
+            f"  - BIBFRAME 2.0 Turtle: {package}/bopomofo-37-symbol-reference.bibframe.ttl",
+            f"  - Checksums and metadata: {package}/metadata.jsonld",
+        ]
+    if os.path.exists(
         os.path.join(PAGES, "resourcesync", "resourcelist.xml")
     ):
         lines += [
@@ -665,6 +712,7 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_datapackage.xml",
         "sitemap_lms.xml",
         "sitemap_epub.xml",
+        "sitemap_library_catalog.xml",
         "sitemap_resourcesync.xml",
         "resourcesync/resourcelist.xml",
     ):
@@ -699,6 +747,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_datapackage.xml",
             f"Sitemap: {SITE}/sitemap_lms.xml",
             f"Sitemap: {SITE}/sitemap_epub.xml",
+            f"Sitemap: {SITE}/sitemap_library_catalog.xml",
             f"Sitemap: {SITE}/sitemap_resourcesync.xml",
             f"Sitemap: {SITE}/resourcesync/resourcelist.xml",
             f"Sitemap: {SITE}/sitemap_index.xml", ""]
@@ -718,6 +767,7 @@ def build_sitemap_index():
         "sitemap_datapackage.xml",
         "sitemap_lms.xml",
         "sitemap_epub.xml",
+        "sitemap_library_catalog.xml",
         "sitemap_resourcesync.xml",
         "resourcesync/resourcelist.xml",
     ])

@@ -64,6 +64,7 @@ CONTENT_PATTERNS = (
     "data/packages/zhuyin-bopomofo/**/*",
     "data/packages/zhuyin-bopomofo-lms/**/*",
     "data/packages/zhuyin-bopomofo-epub/**/*",
+    "data/packages/zhuyin-bopomofo-library/**/*",
     "publications/bopomofo-37-symbol-reference/**/*",
     "opds/bopomofo-37-symbol-reference.*",
     "api/v1/bopomofo-symbols/**/*",
@@ -92,6 +93,27 @@ REQUIRED_PATHS = (
     Path("publications") / "bopomofo-37-symbol-reference" / "zh-Hant" / "manifest.json",
     Path("opds") / "bopomofo-37-symbol-reference.json",
     Path("opds") / "bopomofo-37-symbol-reference.xml",
+    Path("data")
+    / "packages"
+    / "zhuyin-bopomofo-library"
+    / "bopomofo-37-symbol-reference.marcxml.xml",
+    Path("data")
+    / "packages"
+    / "zhuyin-bopomofo-library"
+    / "bopomofo-37-symbol-reference.mods.xml",
+    Path("data")
+    / "packages"
+    / "zhuyin-bopomofo-library"
+    / "bopomofo-37-symbol-reference.bibframe.jsonld",
+    Path("data")
+    / "packages"
+    / "zhuyin-bopomofo-library"
+    / "bopomofo-37-symbol-reference.bibframe.ttl",
+    Path("data")
+    / "packages"
+    / "zhuyin-bopomofo-library"
+    / "bopomofo-37-symbol-library-catalog-bundle.zip",
+    Path("data") / "packages" / "zhuyin-bopomofo-library" / "metadata.jsonld",
 )
 CARD_START = "<!-- resourcesync-card:start -->"
 CARD_END = "<!-- resourcesync-card:end -->"

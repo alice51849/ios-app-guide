@@ -49,6 +49,10 @@ def main():
         ),
         "how-can-i-check-my-child-s-zhuyin-skills-at-home-in-three-minutes",
         "where-can-i-download-a-free-bopomofo-epub-for-e-readers",
+        (
+            "where-can-a-school-library-download-catalog-records-for-a-"
+            "bopomofo-epub"
+        ),
     ]
     # 1) 重建
     require([PY, os.path.join(HERE, "build_pages_i18n.py")], env=env)
@@ -73,6 +77,7 @@ def main():
     require([PY, os.path.join(HERE, "zhuyin_static_api.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_lms_assessment_bank.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_epub_opds.py")], env=env)
+    require([PY, os.path.join(HERE, "zhuyin_library_catalog.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_resourcesync.py")], env=env)
     require(
         [PY, os.path.join(HERE, "prioritize_trip_planet_resources.py")],

@@ -2293,6 +2293,7 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertIn('hreflang="en"', private)
         self.assertIn('hreflang="zh-Hant"', private)
+        self.assertIn('rel="resourcesync"', private)
         self.assertIn(zhuyin_resourcesync.SOURCE_DESCRIPTION_URL, private)
         self.assertNotIn("apps.apple.com", private)
         self.assertNotIn('"SoftwareApplication"', private)

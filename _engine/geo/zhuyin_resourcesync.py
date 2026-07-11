@@ -497,6 +497,7 @@ def render_page(
 <link rel="alternate" hreflang="en" href="{LANDING_URL}">
 <link rel="alternate" hreflang="zh-Hant" href="{ZH_LANDING_URL}">
 <link rel="alternate" hreflang="x-default" href="{LANDING_URL}">
+<link rel="resourcesync" href="{CAPABILITY_LIST_URL}">
 <link rel="describedby" type="application/ld+json" href="{COLLECTION_URL}">
 <script type="application/ld+json">{schema}</script>
 <style>

@@ -1,0 +1,409 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<premis:premis xmlns:premis="http://www.loc.gov/premis/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0">
+  <premis:object xsi:type="premis:file" xmlID="object-001" version="3.0">
+    <premis:objectIdentifier>
+      <premis:objectIdentifierType>URI</premis:objectIdentifierType>
+      <premis:objectIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.csv</premis:objectIdentifierValue>
+    </premis:objectIdentifier>
+    <premis:objectCharacteristics>
+      <premis:compositionLevel>0</premis:compositionLevel>
+      <premis:fixity>
+        <premis:messageDigestAlgorithm>SHA-256</premis:messageDigestAlgorithm>
+        <premis:messageDigest>6d9235a013dd1856130841bdf6866f22173903bec726690b9b4c3e555b223422</premis:messageDigest>
+        <premis:messageDigestOriginator>iOS App Guide Open Resources</premis:messageDigestOriginator>
+      </premis:fixity>
+      <premis:size>8350</premis:size>
+      <premis:format>
+        <premis:formatDesignation>
+          <premis:formatName>text/csv</premis:formatName>
+        </premis:formatDesignation>
+      </premis:format>
+    </premis:objectCharacteristics>
+    <premis:originalName>data/zhuyin-bopomofo-ml-dataset.csv</premis:originalName>
+    <premis:storage>
+      <premis:contentLocation>
+        <premis:contentLocationType>relative path</premis:contentLocationType>
+        <premis:contentLocationValue>data/zhuyin-bopomofo-ml-dataset.csv</premis:contentLocationValue>
+      </premis:contentLocation>
+      <premis:storageMedium>deterministic ZIP entry</premis:storageMedium>
+    </premis:storage>
+    <premis:linkingEventIdentifier>
+      <premis:linkingEventIdentifierType>URI</premis:linkingEventIdentifierType>
+      <premis:linkingEventIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#event-package-generation</premis:linkingEventIdentifierValue>
+    </premis:linkingEventIdentifier>
+    <premis:linkingRightsStatementIdentifier>
+      <premis:linkingRightsStatementIdentifierType>URI</premis:linkingRightsStatementIdentifierType>
+      <premis:linkingRightsStatementIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#rights-cc-by-4.0</premis:linkingRightsStatementIdentifierValue>
+    </premis:linkingRightsStatementIdentifier>
+  </premis:object>
+  <premis:object xsi:type="premis:file" xmlID="object-002" version="3.0">
+    <premis:objectIdentifier>
+      <premis:objectIdentifierType>URI</premis:objectIdentifierType>
+      <premis:objectIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.jsonl</premis:objectIdentifierValue>
+    </premis:objectIdentifier>
+    <premis:objectCharacteristics>
+      <premis:compositionLevel>0</premis:compositionLevel>
+      <premis:fixity>
+        <premis:messageDigestAlgorithm>SHA-256</premis:messageDigestAlgorithm>
+        <premis:messageDigest>68729f91871ca6603929c2a28ffb567513bf0a4f233f55164c236bd36b31b131</premis:messageDigest>
+        <premis:messageDigestOriginator>iOS App Guide Open Resources</premis:messageDigestOriginator>
+      </premis:fixity>
+      <premis:size>14734</premis:size>
+      <premis:format>
+        <premis:formatDesignation>
+          <premis:formatName>text/plain</premis:formatName>
+        </premis:formatDesignation>
+      </premis:format>
+    </premis:objectCharacteristics>
+    <premis:originalName>data/zhuyin-bopomofo-ml-dataset.jsonl</premis:originalName>
+    <premis:storage>
+      <premis:contentLocation>
+        <premis:contentLocationType>relative path</premis:contentLocationType>
+        <premis:contentLocationValue>data/zhuyin-bopomofo-ml-dataset.jsonl</premis:contentLocationValue>
+      </premis:contentLocation>
+      <premis:storageMedium>deterministic ZIP entry</premis:storageMedium>
+    </premis:storage>
+    <premis:linkingEventIdentifier>
+      <premis:linkingEventIdentifierType>URI</premis:linkingEventIdentifierType>
+      <premis:linkingEventIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#event-package-generation</premis:linkingEventIdentifierValue>
+    </premis:linkingEventIdentifier>
+    <premis:linkingRightsStatementIdentifier>
+      <premis:linkingRightsStatementIdentifierType>URI</premis:linkingRightsStatementIdentifierType>
+      <premis:linkingRightsStatementIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#rights-cc-by-4.0</premis:linkingRightsStatementIdentifierValue>
+    </premis:linkingRightsStatementIdentifier>
+  </premis:object>
+  <premis:object xsi:type="premis:file" xmlID="object-003" version="3.0">
+    <premis:objectIdentifier>
+      <premis:objectIdentifierType>URI</premis:objectIdentifierType>
+      <premis:objectIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld</premis:objectIdentifierValue>
+    </premis:objectIdentifier>
+    <premis:objectCharacteristics>
+      <premis:compositionLevel>0</premis:compositionLevel>
+      <premis:fixity>
+        <premis:messageDigestAlgorithm>SHA-256</premis:messageDigestAlgorithm>
+        <premis:messageDigest>d96d4b5a8d50247ace01825cc267a657e0f9ac9785e6f9283b4f7312337e30e7</premis:messageDigest>
+        <premis:messageDigestOriginator>iOS App Guide Open Resources</premis:messageDigestOriginator>
+      </premis:fixity>
+      <premis:size>13777</premis:size>
+      <premis:format>
+        <premis:formatDesignation>
+          <premis:formatName>application/ld+json</premis:formatName>
+        </premis:formatDesignation>
+      </premis:format>
+    </premis:objectCharacteristics>
+    <premis:originalName>data/zhuyin-bopomofo-ml-dataset.croissant.jsonld</premis:originalName>
+    <premis:storage>
+      <premis:contentLocation>
+        <premis:contentLocationType>relative path</premis:contentLocationType>
+        <premis:contentLocationValue>data/zhuyin-bopomofo-ml-dataset.croissant.jsonld</premis:contentLocationValue>
+      </premis:contentLocation>
+      <premis:storageMedium>deterministic ZIP entry</premis:storageMedium>
+    </premis:storage>
+    <premis:linkingEventIdentifier>
+      <premis:linkingEventIdentifierType>URI</premis:linkingEventIdentifierType>
+      <premis:linkingEventIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#event-package-generation</premis:linkingEventIdentifierValue>
+    </premis:linkingEventIdentifier>
+    <premis:linkingRightsStatementIdentifier>
+      <premis:linkingRightsStatementIdentifierType>URI</premis:linkingRightsStatementIdentifierType>
+      <premis:linkingRightsStatementIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#rights-cc-by-4.0</premis:linkingRightsStatementIdentifierValue>
+    </premis:linkingRightsStatementIdentifier>
+  </premis:object>
+  <premis:object xsi:type="premis:file" xmlID="object-004" version="3.0">
+    <premis:objectIdentifier>
+      <premis:objectIdentifierType>URI</premis:objectIdentifierType>
+      <premis:objectIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json</premis:objectIdentifierValue>
+    </premis:objectIdentifier>
+    <premis:objectCharacteristics>
+      <premis:compositionLevel>0</premis:compositionLevel>
+      <premis:fixity>
+        <premis:messageDigestAlgorithm>SHA-256</premis:messageDigestAlgorithm>
+        <premis:messageDigest>eb8dcf8e39f65a5d3747a527c58537ad13f8c5a7ae56b55b34189c4ca9a98771</premis:messageDigest>
+        <premis:messageDigestOriginator>iOS App Guide Open Resources</premis:messageDigestOriginator>
+      </premis:fixity>
+      <premis:size>7701</premis:size>
+      <premis:format>
+        <premis:formatDesignation>
+          <premis:formatName>application/csvm+json</premis:formatName>
+        </premis:formatDesignation>
+      </premis:format>
+    </premis:objectCharacteristics>
+    <premis:originalName>data/zhuyin-bopomofo-ml-dataset.csv-metadata.json</premis:originalName>
+    <premis:storage>
+      <premis:contentLocation>
+        <premis:contentLocationType>relative path</premis:contentLocationType>
+        <premis:contentLocationValue>data/zhuyin-bopomofo-ml-dataset.csv-metadata.json</premis:contentLocationValue>
+      </premis:contentLocation>
+      <premis:storageMedium>deterministic ZIP entry</premis:storageMedium>
+    </premis:storage>
+    <premis:linkingEventIdentifier>
+      <premis:linkingEventIdentifierType>URI</premis:linkingEventIdentifierType>
+      <premis:linkingEventIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#event-package-generation</premis:linkingEventIdentifierValue>
+    </premis:linkingEventIdentifier>
+    <premis:linkingRightsStatementIdentifier>
+      <premis:linkingRightsStatementIdentifierType>URI</premis:linkingRightsStatementIdentifierType>
+      <premis:linkingRightsStatementIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#rights-cc-by-4.0</premis:linkingRightsStatementIdentifierValue>
+    </premis:linkingRightsStatementIdentifier>
+  </premis:object>
+  <premis:object xsi:type="premis:file" xmlID="object-005" version="3.0">
+    <premis:objectIdentifier>
+      <premis:objectIdentifierType>URI</premis:objectIdentifierType>
+      <premis:objectIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-vocabulary.jsonld</premis:objectIdentifierValue>
+    </premis:objectIdentifier>
+    <premis:objectCharacteristics>
+      <premis:compositionLevel>0</premis:compositionLevel>
+      <premis:fixity>
+        <premis:messageDigestAlgorithm>SHA-256</premis:messageDigestAlgorithm>
+        <premis:messageDigest>e8a4f56690766420f00a3762e08de8d86bfbeb09b00093dfbc4c619508dc855a</premis:messageDigest>
+        <premis:messageDigestOriginator>iOS App Guide Open Resources</premis:messageDigestOriginator>
+      </premis:fixity>
+      <premis:size>79017</premis:size>
+      <premis:format>
+        <premis:formatDesignation>
+          <premis:formatName>application/ld+json</premis:formatName>
+        </premis:formatDesignation>
+      </premis:format>
+    </premis:objectCharacteristics>
+    <premis:originalName>data/zhuyin-bopomofo-vocabulary.jsonld</premis:originalName>
+    <premis:storage>
+      <premis:contentLocation>
+        <premis:contentLocationType>relative path</premis:contentLocationType>
+        <premis:contentLocationValue>data/zhuyin-bopomofo-vocabulary.jsonld</premis:contentLocationValue>
+      </premis:contentLocation>
+      <premis:storageMedium>deterministic ZIP entry</premis:storageMedium>
+    </premis:storage>
+    <premis:linkingEventIdentifier>
+      <premis:linkingEventIdentifierType>URI</premis:linkingEventIdentifierType>
+      <premis:linkingEventIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#event-package-generation</premis:linkingEventIdentifierValue>
+    </premis:linkingEventIdentifier>
+    <premis:linkingRightsStatementIdentifier>
+      <premis:linkingRightsStatementIdentifierType>URI</premis:linkingRightsStatementIdentifierType>
+      <premis:linkingRightsStatementIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#rights-cc-by-4.0</premis:linkingRightsStatementIdentifierValue>
+    </premis:linkingRightsStatementIdentifier>
+  </premis:object>
+  <premis:object xsi:type="premis:file" xmlID="object-006" version="3.0">
+    <premis:objectIdentifier>
+      <premis:objectIdentifierType>URI</premis:objectIdentifierType>
+      <premis:objectIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/README.txt</premis:objectIdentifierValue>
+    </premis:objectIdentifier>
+    <premis:objectCharacteristics>
+      <premis:compositionLevel>0</premis:compositionLevel>
+      <premis:fixity>
+        <premis:messageDigestAlgorithm>SHA-256</premis:messageDigestAlgorithm>
+        <premis:messageDigest>de8ad97486b677bab2f388f9d11666aac17445d820120e323439bd73f6e47bb7</premis:messageDigest>
+        <premis:messageDigestOriginator>iOS App Guide Open Resources</premis:messageDigestOriginator>
+      </premis:fixity>
+      <premis:size>1874</premis:size>
+      <premis:format>
+        <premis:formatDesignation>
+          <premis:formatName>text/plain</premis:formatName>
+        </premis:formatDesignation>
+      </premis:format>
+    </premis:objectCharacteristics>
+    <premis:originalName>README.txt</premis:originalName>
+    <premis:storage>
+      <premis:contentLocation>
+        <premis:contentLocationType>relative path</premis:contentLocationType>
+        <premis:contentLocationValue>README.txt</premis:contentLocationValue>
+      </premis:contentLocation>
+      <premis:storageMedium>deterministic ZIP entry</premis:storageMedium>
+    </premis:storage>
+    <premis:linkingEventIdentifier>
+      <premis:linkingEventIdentifierType>URI</premis:linkingEventIdentifierType>
+      <premis:linkingEventIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#event-package-generation</premis:linkingEventIdentifierValue>
+    </premis:linkingEventIdentifier>
+    <premis:linkingRightsStatementIdentifier>
+      <premis:linkingRightsStatementIdentifierType>URI</premis:linkingRightsStatementIdentifierType>
+      <premis:linkingRightsStatementIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#rights-cc-by-4.0</premis:linkingRightsStatementIdentifierValue>
+    </premis:linkingRightsStatementIdentifier>
+  </premis:object>
+  <premis:object xsi:type="premis:file" xmlID="object-007" version="3.0">
+    <premis:objectIdentifier>
+      <premis:objectIdentifierType>URI</premis:objectIdentifierType>
+      <premis:objectIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/LICENSE.txt</premis:objectIdentifierValue>
+    </premis:objectIdentifier>
+    <premis:objectCharacteristics>
+      <premis:compositionLevel>0</premis:compositionLevel>
+      <premis:fixity>
+        <premis:messageDigestAlgorithm>SHA-256</premis:messageDigestAlgorithm>
+        <premis:messageDigest>50e0e179d421314dbd3a7317459dddcfed2e4c2103f9e70ed0417e9748e78f25</premis:messageDigest>
+        <premis:messageDigestOriginator>iOS App Guide Open Resources</premis:messageDigestOriginator>
+      </premis:fixity>
+      <premis:size>1052</premis:size>
+      <premis:format>
+        <premis:formatDesignation>
+          <premis:formatName>text/plain</premis:formatName>
+        </premis:formatDesignation>
+      </premis:format>
+    </premis:objectCharacteristics>
+    <premis:originalName>LICENSE.txt</premis:originalName>
+    <premis:storage>
+      <premis:contentLocation>
+        <premis:contentLocationType>relative path</premis:contentLocationType>
+        <premis:contentLocationValue>LICENSE.txt</premis:contentLocationValue>
+      </premis:contentLocation>
+      <premis:storageMedium>deterministic ZIP entry</premis:storageMedium>
+    </premis:storage>
+    <premis:linkingEventIdentifier>
+      <premis:linkingEventIdentifierType>URI</premis:linkingEventIdentifierType>
+      <premis:linkingEventIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#event-package-generation</premis:linkingEventIdentifierValue>
+    </premis:linkingEventIdentifier>
+    <premis:linkingRightsStatementIdentifier>
+      <premis:linkingRightsStatementIdentifierType>URI</premis:linkingRightsStatementIdentifierType>
+      <premis:linkingRightsStatementIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#rights-cc-by-4.0</premis:linkingRightsStatementIdentifierValue>
+    </premis:linkingRightsStatementIdentifier>
+  </premis:object>
+  <premis:event xmlID="event-package-generation" version="3.0">
+    <premis:eventIdentifier>
+      <premis:eventIdentifierType>URI</premis:eventIdentifierType>
+      <premis:eventIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#event-package-generation</premis:eventIdentifierValue>
+    </premis:eventIdentifier>
+    <premis:eventType>metadata creation</premis:eventType>
+    <premis:eventDateTime>2026-07-11T20:08:50Z</premis:eventDateTime>
+    <premis:eventDetailInformation>
+      <premis:eventDetail>Generated METS 2.0 and PREMIS 3.0 records and calculated SHA-256 fixity.</premis:eventDetail>
+    </premis:eventDetailInformation>
+    <premis:eventOutcomeInformation>
+      <premis:eventOutcome>success</premis:eventOutcome>
+      <premis:eventOutcomeDetail>
+        <premis:eventOutcomeDetailNote>All seven local files matched their recorded byte lengths and SHA-256 values.</premis:eventOutcomeDetailNote>
+      </premis:eventOutcomeDetail>
+    </premis:eventOutcomeInformation>
+    <premis:linkingAgentIdentifier>
+      <premis:linkingAgentIdentifierType>URI</premis:linkingAgentIdentifierType>
+      <premis:linkingAgentIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#publisher</premis:linkingAgentIdentifierValue>
+      <premis:linkingAgentRole>implementer</premis:linkingAgentRole>
+    </premis:linkingAgentIdentifier>
+    <premis:linkingAgentIdentifier>
+      <premis:linkingAgentIdentifierType>URI</premis:linkingAgentIdentifierType>
+      <premis:linkingAgentIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#generator</premis:linkingAgentIdentifierValue>
+      <premis:linkingAgentRole>executing program</premis:linkingAgentRole>
+    </premis:linkingAgentIdentifier>
+    <premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+      <premis:linkingObjectIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.csv</premis:linkingObjectIdentifierValue>
+      <premis:linkingObjectRole>source</premis:linkingObjectRole>
+    </premis:linkingObjectIdentifier>
+    <premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+      <premis:linkingObjectIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.jsonl</premis:linkingObjectIdentifierValue>
+      <premis:linkingObjectRole>source</premis:linkingObjectRole>
+    </premis:linkingObjectIdentifier>
+    <premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+      <premis:linkingObjectIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld</premis:linkingObjectIdentifierValue>
+      <premis:linkingObjectRole>source</premis:linkingObjectRole>
+    </premis:linkingObjectIdentifier>
+    <premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+      <premis:linkingObjectIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json</premis:linkingObjectIdentifierValue>
+      <premis:linkingObjectRole>source</premis:linkingObjectRole>
+    </premis:linkingObjectIdentifier>
+    <premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+      <premis:linkingObjectIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-vocabulary.jsonld</premis:linkingObjectIdentifierValue>
+      <premis:linkingObjectRole>source</premis:linkingObjectRole>
+    </premis:linkingObjectIdentifier>
+    <premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+      <premis:linkingObjectIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/README.txt</premis:linkingObjectIdentifierValue>
+      <premis:linkingObjectRole>source</premis:linkingObjectRole>
+    </premis:linkingObjectIdentifier>
+    <premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+      <premis:linkingObjectIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/LICENSE.txt</premis:linkingObjectIdentifierValue>
+      <premis:linkingObjectRole>source</premis:linkingObjectRole>
+    </premis:linkingObjectIdentifier>
+  </premis:event>
+  <premis:agent xmlID="agent-publisher" version="3.0">
+    <premis:agentIdentifier>
+      <premis:agentIdentifierType>URI</premis:agentIdentifierType>
+      <premis:agentIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#publisher</premis:agentIdentifierValue>
+    </premis:agentIdentifier>
+    <premis:agentName>iOS App Guide Open Resources</premis:agentName>
+    <premis:agentType>organization</premis:agentType>
+    <premis:linkingEventIdentifier>
+      <premis:linkingEventIdentifierType>URI</premis:linkingEventIdentifierType>
+      <premis:linkingEventIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#event-package-generation</premis:linkingEventIdentifierValue>
+    </premis:linkingEventIdentifier>
+  </premis:agent>
+  <premis:agent xmlID="agent-generator" version="3.0">
+    <premis:agentIdentifier>
+      <premis:agentIdentifierType>URI</premis:agentIdentifierType>
+      <premis:agentIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#generator</premis:agentIdentifierValue>
+    </premis:agentIdentifier>
+    <premis:agentName>zhuyin_mets_premis_package.py</premis:agentName>
+    <premis:agentType>software</premis:agentType>
+    <premis:linkingEventIdentifier>
+      <premis:linkingEventIdentifierType>URI</premis:linkingEventIdentifierType>
+      <premis:linkingEventIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#event-package-generation</premis:linkingEventIdentifierValue>
+    </premis:linkingEventIdentifier>
+  </premis:agent>
+  <premis:rights xmlID="rights-cc-by-4-0" version="3.0">
+    <premis:rightsStatement>
+      <premis:rightsStatementIdentifier>
+        <premis:rightsStatementIdentifierType>URI</premis:rightsStatementIdentifierType>
+        <premis:rightsStatementIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#rights-cc-by-4.0</premis:rightsStatementIdentifierValue>
+      </premis:rightsStatementIdentifier>
+      <premis:rightsBasis>license</premis:rightsBasis>
+      <premis:licenseInformation>
+        <premis:licenseDocumentationIdentifier>
+          <premis:licenseDocumentationIdentifierType>URI</premis:licenseDocumentationIdentifierType>
+          <premis:licenseDocumentationIdentifierValue>https://creativecommons.org/licenses/by/4.0/</premis:licenseDocumentationIdentifierValue>
+          <premis:licenseDocumentationRole>license</premis:licenseDocumentationRole>
+        </premis:licenseDocumentationIdentifier>
+        <premis:licenseTerms>Creative Commons Attribution 4.0 International (CC BY 4.0).</premis:licenseTerms>
+      </premis:licenseInformation>
+      <premis:rightsGranted>
+        <premis:act>replicate</premis:act>
+        <premis:rightsGrantedNote>Permitted with attribution and indication of changes under CC BY 4.0.</premis:rightsGrantedNote>
+      </premis:rightsGranted>
+      <premis:rightsGranted>
+        <premis:act>migrate</premis:act>
+        <premis:rightsGrantedNote>Permitted with attribution and indication of changes under CC BY 4.0.</premis:rightsGrantedNote>
+      </premis:rightsGranted>
+      <premis:rightsGranted>
+        <premis:act>disseminate</premis:act>
+        <premis:rightsGrantedNote>Permitted with attribution and indication of changes under CC BY 4.0.</premis:rightsGrantedNote>
+      </premis:rightsGranted>
+      <premis:rightsGranted>
+        <premis:act>modify</premis:act>
+        <premis:rightsGrantedNote>Permitted with attribution and indication of changes under CC BY 4.0.</premis:rightsGrantedNote>
+      </premis:rightsGranted>
+      <premis:linkingObjectIdentifier>
+        <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+        <premis:linkingObjectIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.csv</premis:linkingObjectIdentifierValue>
+        <premis:linkingObjectRole>governed object</premis:linkingObjectRole>
+      </premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifier>
+        <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+        <premis:linkingObjectIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.jsonl</premis:linkingObjectIdentifierValue>
+        <premis:linkingObjectRole>governed object</premis:linkingObjectRole>
+      </premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifier>
+        <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+        <premis:linkingObjectIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld</premis:linkingObjectIdentifierValue>
+        <premis:linkingObjectRole>governed object</premis:linkingObjectRole>
+      </premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifier>
+        <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+        <premis:linkingObjectIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json</premis:linkingObjectIdentifierValue>
+        <premis:linkingObjectRole>governed object</premis:linkingObjectRole>
+      </premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifier>
+        <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+        <premis:linkingObjectIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-vocabulary.jsonld</premis:linkingObjectIdentifierValue>
+        <premis:linkingObjectRole>governed object</premis:linkingObjectRole>
+      </premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifier>
+        <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+        <premis:linkingObjectIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/README.txt</premis:linkingObjectIdentifierValue>
+        <premis:linkingObjectRole>governed object</premis:linkingObjectRole>
+      </premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifier>
+        <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+        <premis:linkingObjectIdentifierValue>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/LICENSE.txt</premis:linkingObjectIdentifierValue>
+        <premis:linkingObjectRole>governed object</premis:linkingObjectRole>
+      </premis:linkingObjectIdentifier>
+    </premis:rightsStatement>
+  </premis:rights>
+</premis:premis>

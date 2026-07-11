@@ -1,0 +1,24 @@
+{
+  "mets": {
+    "name": "Metadata Encoding and Transmission Standard XML Schema",
+    "version": "2.0",
+    "official_url": "https://www.loc.gov/standards/mets/mets2.xsd",
+    "repository": "https://github.com/mets/METS-schema",
+    "commit": "a89833cb0464299fdd22d7d3f0746eb4d13f5bf3",
+    "path": "v2/mets2.xsd",
+    "bytes": 88391,
+    "sha256": "1ac4af428d9ab2099b19306344d56916a3dcd7bfd39d7d2276c1fbde24205c96",
+    "license": "CC0-1.0"
+  },
+  "premis": {
+    "name": "PREMIS Preservation Metadata XML Schema",
+    "version": "3.0",
+    "official_url": "https://www.loc.gov/standards/premis/v3/premis-v3-0.xsd",
+    "repository": "https://github.com/LibraryOfCongress/premis-v3-0",
+    "commit": "3b79c30136c0f6ed673dd6ec9c9830d55730d889",
+    "path": "xsd",
+    "bytes": 52845,
+    "sha256": "03b8a77a20b32b882ad799e12262671d07ad18210c60233f4e613a1289491cba",
+    "license_note": "The official repository describes the schemas as open source community tools. This unmodified snapshot is retained only for reproducible offline validation; no SPDX license identifier is asserted for it."
+  }
+}

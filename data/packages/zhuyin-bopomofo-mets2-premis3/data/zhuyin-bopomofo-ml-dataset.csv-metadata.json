@@ -1,0 +1,260 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/csvw",
+    {
+      "@language": "en"
+    }
+  ],
+  "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
+  "url": "zhuyin-bopomofo-ml-dataset.csv",
+  "dc:title": {
+    "en": "Complete 37-symbol Bopomofo table",
+    "zh-Hant": "完整 37 符號注音表格"
+  },
+  "dc:description": {
+    "en": "A deterministic UTF-8 CSV table of all 37 standard Bopomofo symbols with Unicode, Pinyin, IPA, category and example fields.",
+    "zh-Hant": "涵蓋全部 37 個標準注音符號的確定性 UTF-8 CSV 表格，包含 Unicode、拼音、IPA、分類與例字欄位。"
+  },
+  "dc:identifier": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
+  "dc:creator": {
+    "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+  },
+  "dc:publisher": {
+    "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+  },
+  "dc:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "dc:issued": {
+    "@value": "2026-07-11",
+    "@type": "http://www.w3.org/2001/XMLSchema#date"
+  },
+  "dc:modified": {
+    "@value": "2026-07-11",
+    "@type": "http://www.w3.org/2001/XMLSchema#date"
+  },
+  "dc:language": [
+    "en",
+    "zh-Hant",
+    "zh-Latn-pinyin"
+  ],
+  "dc:conformsTo": [
+    {
+      "@id": "https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/"
+    },
+    {
+      "@id": "https://www.w3.org/TR/2015/REC-tabular-metadata-20151217/"
+    },
+    {
+      "@id": "https://www.w3.org/TR/2015/REC-csv2rdf-20151217/"
+    }
+  ],
+  "dc:source": [
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json"
+    },
+    {
+      "@id": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"
+    },
+    {
+      "@id": "https://www.unicode.org/charts/PDF/U3100.pdf"
+    }
+  ],
+  "dc:relation": [
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/"
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html"
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html"
+    }
+  ],
+  "dcat:keyword": [
+    "Bopomofo",
+    "Zhuyin",
+    "CSVW",
+    "Mandarin phonetics",
+    "open data"
+  ],
+  "dialect": {
+    "encoding": "utf-8",
+    "header": true,
+    "headerRowCount": 1,
+    "delimiter": ",",
+    "quoteChar": "\"",
+    "doubleQuote": true,
+    "lineTerminators": [
+      "\n"
+    ],
+    "skipBlankRows": false,
+    "skipColumns": 0,
+    "skipRows": 0,
+    "trim": false
+  },
+  "tableDirection": "auto",
+  "tableSchema": {
+    "aboutUrl": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#{symbol_id}",
+    "primaryKey": "symbol_id",
+    "columns": [
+      {
+        "name": "order",
+        "titles": {
+          "en": "Order",
+          "zh-Hant": "順序"
+        },
+        "dc:description": "Stable educational display order from 1 through 37.",
+        "datatype": {
+          "base": "integer",
+          "minimum": 1,
+          "maximum": 37
+        },
+        "required": true,
+        "propertyUrl": "http://schema.org/position"
+      },
+      {
+        "name": "symbol_id",
+        "titles": {
+          "en": "Symbol ID",
+          "zh-Hant": "符號 ID"
+        },
+        "dc:description": "ASCII identifier derived from the uppercase Unicode code point.",
+        "datatype": {
+          "base": "string",
+          "format": "^u31(?:0[5-9A-F]|1[0-9A-F]|2[0-9])$"
+        },
+        "required": true,
+        "propertyUrl": "http://purl.org/dc/terms/identifier"
+      },
+      {
+        "name": "concept_uri",
+        "titles": {
+          "en": "Concept IRI",
+          "zh-Hant": "概念 IRI"
+        },
+        "dc:description": "Stable IRI for the corresponding SKOS concept.",
+        "datatype": "anyURI",
+        "required": true,
+        "suppressOutput": true
+      },
+      {
+        "name": "symbol",
+        "titles": {
+          "en": "Bopomofo symbol",
+          "zh-Hant": "注音符號"
+        },
+        "dc:description": "One Bopomofo character.",
+        "datatype": {
+          "base": "string",
+          "length": 1
+        },
+        "required": true,
+        "lang": "zh-Bopo",
+        "propertyUrl": "http://www.w3.org/2004/02/skos/core#prefLabel"
+      },
+      {
+        "name": "unicode",
+        "titles": {
+          "en": "Unicode notation",
+          "zh-Hant": "Unicode 表示"
+        },
+        "dc:description": "Unicode notation in U+XXXX form.",
+        "datatype": {
+          "base": "string",
+          "format": "^U\\+31(?:0[5-9A-F]|1[0-9A-F]|2[0-9])$"
+        },
+        "required": true,
+        "propertyUrl": "http://www.w3.org/2004/02/skos/core#notation"
+      },
+      {
+        "name": "pinyin",
+        "titles": {
+          "en": "Hanyu Pinyin",
+          "zh-Hant": "漢語拼音"
+        },
+        "dc:description": "Hanyu Pinyin correspondence.",
+        "datatype": "string",
+        "required": true,
+        "lang": "zh-Latn-pinyin",
+        "propertyUrl": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin"
+      },
+      {
+        "name": "ipa",
+        "titles": {
+          "en": "IPA",
+          "zh-Hant": "國際音標"
+        },
+        "dc:description": "Broad IPA transcription without brackets.",
+        "datatype": "string",
+        "required": true,
+        "propertyUrl": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa"
+      },
+      {
+        "name": "category",
+        "titles": {
+          "en": "Category",
+          "zh-Hant": "分類"
+        },
+        "dc:description": "One of initial, medial or final.",
+        "datatype": {
+          "base": "string",
+          "format": "^(initial|medial|final)$"
+        },
+        "required": true,
+        "propertyUrl": "http://schema.org/category"
+      },
+      {
+        "name": "category_uri",
+        "titles": {
+          "en": "Category IRI",
+          "zh-Hant": "分類 IRI"
+        },
+        "dc:description": "IRI for the broader SKOS category concept.",
+        "datatype": "anyURI",
+        "required": true,
+        "propertyUrl": "http://www.w3.org/2004/02/skos/core#broader",
+        "valueUrl": "{category_uri}"
+      },
+      {
+        "name": "example_character",
+        "titles": {
+          "en": "Example character",
+          "zh-Hant": "例字"
+        },
+        "dc:description": "Traditional Chinese example character.",
+        "datatype": {
+          "base": "string",
+          "length": 1
+        },
+        "required": true,
+        "lang": "zh-Hant",
+        "propertyUrl": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter"
+      },
+      {
+        "name": "example_pinyin",
+        "titles": {
+          "en": "Example Pinyin",
+          "zh-Hant": "例字拼音"
+        },
+        "dc:description": "Tone-marked Hanyu Pinyin for the example.",
+        "datatype": "string",
+        "required": true,
+        "lang": "zh-Latn-pinyin",
+        "propertyUrl": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin"
+      },
+      {
+        "name": "example_meaning_en",
+        "titles": {
+          "en": "English meaning",
+          "zh-Hant": "英文詞義"
+        },
+        "dc:description": "Short English meaning for the example.",
+        "datatype": "string",
+        "required": true,
+        "lang": "en",
+        "propertyUrl": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning"
+      }
+    ]
+  }
+}

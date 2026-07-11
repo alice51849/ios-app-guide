@@ -71,6 +71,23 @@ RO_CRATE_REQUIRED_PATHS = (
     RO_CRATE_PATH / "data" / "zhuyin-bopomofo-vocabulary.jsonld",
     Path("zh-Hant") / RO_CRATE_PATH / "index.html",
 )
+METS_PREMIS_PATH = Path("data") / "packages" / "zhuyin-bopomofo-mets2-premis3"
+METS_PREMIS_REQUIRED_PATHS = (
+    METS_PREMIS_PATH / "index.html",
+    METS_PREMIS_PATH / "mets.xml",
+    METS_PREMIS_PATH / "premis.xml",
+    METS_PREMIS_PATH / "README.txt",
+    METS_PREMIS_PATH / "LICENSE.txt",
+    METS_PREMIS_PATH / "checksums-sha256.txt",
+    METS_PREMIS_PATH / "metadata.jsonld",
+    METS_PREMIS_PATH / "bopomofo-37-symbols-mets2-premis3.zip",
+    METS_PREMIS_PATH / "data" / "zhuyin-bopomofo-ml-dataset.csv",
+    METS_PREMIS_PATH / "data" / "zhuyin-bopomofo-ml-dataset.jsonl",
+    METS_PREMIS_PATH / "data" / "zhuyin-bopomofo-ml-dataset.croissant.jsonld",
+    METS_PREMIS_PATH / "data" / "zhuyin-bopomofo-ml-dataset.csv-metadata.json",
+    METS_PREMIS_PATH / "data" / "zhuyin-bopomofo-vocabulary.jsonld",
+    Path("zh-Hant") / METS_PREMIS_PATH / "index.html",
+)
 
 SOURCE_DESCRIPTION_URL = "https://alice51849.github.io/.well-known/resourcesync"
 SOURCE_DESCRIPTION_COPY_URL = f"{SITE}/{SOURCE_DESCRIPTION_COPY_PATH.as_posix()}"
@@ -93,6 +110,7 @@ CONTENT_PATTERNS = (
     "data/packages/zhuyin-bopomofo-bagit/**/*",
     "data/packages/zhuyin-bopomofo-ocfl/**/*",
     "data/packages/zhuyin-bopomofo-ro-crate/**/*",
+    "data/packages/zhuyin-bopomofo-mets2-premis3/**/*",
     "iiif/3/bopomofo/**/*",
     "publications/bopomofo-37-symbol-reference/**/*",
     "opds/bopomofo-37-symbol-reference.*",
@@ -104,6 +122,7 @@ CONTENT_PATTERNS = (
     "zh-Hant/data/packages/zhuyin-bopomofo-bagit/**/*",
     "zh-Hant/data/packages/zhuyin-bopomofo-ocfl/**/*",
     "zh-Hant/data/packages/zhuyin-bopomofo-ro-crate/**/*",
+    "zh-Hant/data/packages/zhuyin-bopomofo-mets2-premis3/**/*",
     "zh-Hant/api/v1/bopomofo-symbols/**/*",
     "zh-Hant/tools/zhuyin-*",
 )
@@ -219,6 +238,7 @@ REQUIRED_PATHS = (
     IIIF_PATH / "metadata.jsonld",
     *IIIF_IMAGE_PATHS,
     *RO_CRATE_REQUIRED_PATHS,
+    *METS_PREMIS_REQUIRED_PATHS,
 )
 CARD_START = "<!-- resourcesync-card:start -->"
 CARD_END = "<!-- resourcesync-card:end -->"
@@ -264,8 +284,8 @@ COPY = {
             (
                 "Portable packages",
                 "Croissant, Data Package, LMS imports, accessible EPUB editions, "
-                "OER metadata, RFC 8493 BagIt, OCFL 1.1, RO-Crate 1.3 and the "
-                "DCAT 3 catalog",
+                "OER metadata, RFC 8493 BagIt, OCFL 1.1, RO-Crate 1.3, "
+                "METS 2.0 with PREMIS 3.0 and the DCAT 3 catalog",
             ),
             (
                 "Visual interoperability",
@@ -337,8 +357,8 @@ COPY = {
             (
                 "可攜套件",
                 "Croissant、Data Package、LMS 匯入檔、無障礙 EPUB 版本、"
-                "OER metadata、RFC 8493 BagIt、OCFL 1.1、RO-Crate 1.3 與 "
-                "DCAT 3 目錄",
+                "OER metadata、RFC 8493 BagIt、OCFL 1.1、RO-Crate 1.3、"
+                "METS 2.0 與 PREMIS 3.0，以及 DCAT 3 目錄",
             ),
             (
                 "視覺互通資源",

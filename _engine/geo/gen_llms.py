@@ -49,6 +49,7 @@ ZHUYIN_BAGIT_PACKAGE = "zhuyin-bopomofo-bagit"
 ZHUYIN_OCFL_OBJECT = "zhuyin-bopomofo-ocfl"
 ZHUYIN_IIIF_RESOURCE = "zhuyin-bopomofo-iiif-presentation-3"
 ZHUYIN_RO_CRATE = "zhuyin-bopomofo-ro-crate"
+ZHUYIN_METS_PREMIS = "zhuyin-bopomofo-mets2-premis3"
 ZHUYIN_RESOURCE_SYNC = "zhuyin-bopomofo-resourcesync"
 ZHUYIN_LMS_BANK = "zhuyin-bopomofo-lms-question-bank"
 ZHUYIN_EPUB = "zhuyin-bopomofo-epub-reference"
@@ -349,6 +350,26 @@ def build_llms(comp_map, live_keys):
         os.path.join(
             DATA_DIR,
             "packages",
+            ZHUYIN_METS_PREMIS,
+            "mets.xml",
+        )
+    ):
+        package = f"{SITE}/data/packages/{ZHUYIN_METS_PREMIS}"
+        lines += [
+            "",
+            "## Bopomofo METS 2.0 + PREMIS 3.0 preservation package",
+            f"- English guide: {package}/",
+            f"- Traditional Chinese guide: {SITE}/zh-Hant/data/packages/{ZHUYIN_METS_PREMIS}/",
+            f"- Deterministic transfer ZIP: {package}/bopomofo-37-symbols-mets2-premis3.zip",
+            f"- METS 2.0 record: {package}/mets.xml",
+            f"- PREMIS 3.0 record: {package}/premis.xml",
+            f"- SHA-256 checksums: {package}/checksums-sha256.txt",
+            f"- Package metadata: {package}/metadata.jsonld",
+        ]
+    if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
             ZHUYIN_DATA_PACKAGE,
             "datapackage.json",
         )
@@ -549,6 +570,10 @@ def build_llms_full(comp_map, live_keys):
         (
             "Bopomofo RO-Crate 1.3 research object",
             f"data/packages/{ZHUYIN_RO_CRATE}/",
+        ),
+        (
+            "Bopomofo METS 2.0 and PREMIS 3.0 preservation package",
+            f"data/packages/{ZHUYIN_METS_PREMIS}/",
         ),
         (
             "Bopomofo LMS question bank",
@@ -825,6 +850,26 @@ def build_llms_full(comp_map, live_keys):
         os.path.join(
             DATA_DIR,
             "packages",
+            ZHUYIN_METS_PREMIS,
+            "mets.xml",
+        )
+    ):
+        package = f"{SITE}/data/packages/{ZHUYIN_METS_PREMIS}"
+        lines += [
+            "",
+            "## Bopomofo METS 2.0 + PREMIS 3.0 preservation package",
+            f"- [English guide]({package}/)",
+            f"- [Traditional Chinese guide]({SITE}/zh-Hant/data/packages/{ZHUYIN_METS_PREMIS}/)",
+            f"  - Deterministic transfer ZIP: {package}/bopomofo-37-symbols-mets2-premis3.zip",
+            f"  - METS 2.0 record: {package}/mets.xml",
+            f"  - PREMIS 3.0 record: {package}/premis.xml",
+            f"  - SHA-256 checksums: {package}/checksums-sha256.txt",
+            f"  - Package metadata: {package}/metadata.jsonld",
+        ]
+    if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
             ZHUYIN_DATA_PACKAGE,
             "datapackage.json",
         )
@@ -988,6 +1033,7 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_ocfl.xml",
         "sitemap_iiif.xml",
         "sitemap_ro_crate_bopomofo.xml",
+        "sitemap_mets_premis.xml",
         "sitemap_lms.xml",
         "sitemap_epub.xml",
         "sitemap_library_catalog.xml",
@@ -1030,6 +1076,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_ocfl.xml",
             f"Sitemap: {SITE}/sitemap_iiif.xml",
             f"Sitemap: {SITE}/sitemap_ro_crate_bopomofo.xml",
+            f"Sitemap: {SITE}/sitemap_mets_premis.xml",
             f"Sitemap: {SITE}/sitemap_lms.xml",
             f"Sitemap: {SITE}/sitemap_epub.xml",
             f"Sitemap: {SITE}/sitemap_library_catalog.xml",
@@ -1057,6 +1104,7 @@ def build_sitemap_index():
         "sitemap_ocfl.xml",
         "sitemap_iiif.xml",
         "sitemap_ro_crate_bopomofo.xml",
+        "sitemap_mets_premis.xml",
         "sitemap_lms.xml",
         "sitemap_epub.xml",
         "sitemap_library_catalog.xml",

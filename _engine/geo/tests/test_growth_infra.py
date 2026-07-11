@@ -70,6 +70,7 @@ import zhuyin_heritage_lesson_plan
 import zhuyin_library_storytime_kit
 import zhuyin_library_catalog
 import zhuyin_lms_assessment_bank
+import zhuyin_mets_premis_package
 import zhuyin_oer_metadata
 import zhuyin_parent_teacher_handoff_kit
 import zhuyin_picture_book_club_kit
@@ -3767,6 +3768,467 @@ class GeneratorTests(unittest.TestCase):
                 {path: path.stat().st_mtime_ns for path in expected_paths},
             )
 
+    def test_zhuyin_mets_premis_package_is_valid_deterministic_and_discoverable(
+        self,
+    ):
+        from lxml import etree
+
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            data = pages / "data"
+            tools = pages / "tools"
+            data.mkdir(parents=True)
+            tools.mkdir()
+            with mock.patch.object(
+                gen_data_hub, "PAGES", str(pages)
+            ), mock.patch.object(
+                gen_data_hub, "DATA", str(data)
+            ):
+                gen_data_hub.build_zhuyin_page()
+            (data / "index.html").write_text(
+                '<script type="application/ld+json">'
+                '{"@context":"https://schema.org","@type":"DataCatalog",'
+                '"dataset":[]}</script><main><a class="item" href="'
+                f'{zhuyin_skos_vocabulary.SOURCE_PAGE}">'
+                '<h2>Source dataset</h2></a>'
+                '<p class="foot">Footer</p></main>',
+                encoding="utf-8",
+            )
+            (tools / "index.html").write_text(
+                '<main><section class="wrap grid"></section></main>',
+                encoding="utf-8",
+            )
+            zhuyin_skos_vocabulary.build(pages, app_public=False)
+            zhuyin_croissant_dataset.build(pages, app_public=False)
+            zhuyin_csvw_metadata.build(pages, app_public=False)
+
+            package_module = zhuyin_mets_premis_package
+            generated_at = "2026-07-11T19:41:27Z"
+            first = package_module.make_artifacts(
+                pages, generated_at
+            )
+            second = package_module.make_artifacts(
+                pages, generated_at
+            )
+            self.assertEqual(first, second)
+            package_module.validate_artifacts(
+                first, generated_at
+            )
+
+            sources = json.loads(
+                package_module.SOURCES_PATH.read_text(encoding="utf-8")
+            )
+            for key, path, size, digest, commit in (
+                (
+                    "mets",
+                    package_module.METS_SCHEMA_PATH,
+                    88391,
+                    package_module.METS_SCHEMA_SHA256,
+                    package_module.METS_COMMIT,
+                ),
+                (
+                    "premis",
+                    package_module.PREMIS_SCHEMA_PATH,
+                    52845,
+                    package_module.PREMIS_SCHEMA_SHA256,
+                    package_module.PREMIS_COMMIT,
+                ),
+            ):
+                content = path.read_bytes()
+                self.assertEqual(size, len(content))
+                self.assertEqual(digest, hashlib.sha256(content).hexdigest())
+                self.assertEqual(commit, sources[key]["commit"])
+                self.assertEqual(size, sources[key]["bytes"])
+                self.assertEqual(digest, sources[key]["sha256"])
+            self.assertEqual("CC0-1.0", sources["mets"]["license"])
+            self.assertNotIn("license", sources["premis"])
+            self.assertIn("no SPDX", sources["premis"]["license_note"])
+
+            parser = etree.XMLParser(resolve_entities=False, no_network=True)
+            mets = etree.fromstring(first[package_module.METS_FILENAME], parser)
+            premis = etree.fromstring(
+                first[package_module.PREMIS_FILENAME], parser
+            )
+            namespaces = {
+                "mets": package_module.METS_NS,
+                "premis": package_module.PREMIS_NS,
+            }
+            self.assertEqual(
+                f"{{{package_module.METS_NS}}}mets",
+                mets.tag,
+            )
+            self.assertNotIn(
+                "xlink",
+                first[package_module.METS_FILENAME].decode("utf-8").lower(),
+            )
+            mets_header = mets.find("mets:metsHdr", namespaces)
+            self.assertEqual(generated_at, mets_header.get("CREATEDATE"))
+            self.assertEqual(generated_at, mets_header.get("LASTMODDATE"))
+            md_ref = mets.find("mets:mdSec/mets:md/mets:mdRef", namespaces)
+            self.assertEqual(package_module.PREMIS_FILENAME, md_ref.get("LOCREF"))
+            self.assertEqual("PREMIS", md_ref.get("MDTYPE"))
+            self.assertEqual("3.0", md_ref.get("MDTYPEVERSION"))
+            self.assertEqual(
+                hashlib.sha256(
+                    first[package_module.PREMIS_FILENAME]
+                ).hexdigest(),
+                md_ref.get("CHECKSUM"),
+            )
+
+            files = mets.findall(
+                "mets:fileSec/mets:fileGrp/mets:file",
+                namespaces,
+            )
+            self.assertEqual(7, len(files))
+            self.assertEqual(
+                {"DATA", "DOCUMENTATION"},
+                {
+                    group.get("USE")
+                    for group in mets.findall(
+                        "mets:fileSec/mets:fileGrp",
+                        namespaces,
+                    )
+                },
+            )
+            file_ids = set()
+            for element, spec in zip(files, package_module.PAYLOAD_SPECS):
+                content = first[spec.package_path]
+                location = element.find("mets:FLocat", namespaces)
+                file_ids.add(element.get("ID"))
+                self.assertEqual(spec.package_path, location.get("LOCREF"))
+                self.assertEqual(spec.media_type, element.get("MIMETYPE"))
+                self.assertEqual(str(len(content)), element.get("SIZE"))
+                self.assertEqual(
+                    hashlib.sha256(content).hexdigest(),
+                    element.get("CHECKSUM"),
+                )
+            jsonl_file = next(
+                element
+                for element in files
+                if element.find("mets:FLocat", namespaces).get(
+                    "LOCREF"
+                ).endswith(".jsonl")
+            )
+            self.assertEqual("text/plain", jsonl_file.get("MIMETYPE"))
+            self.assertEqual(
+                file_ids,
+                {
+                    pointer.get("FILEID")
+                    for pointer in mets.findall(
+                        ".//mets:structMap//mets:fptr",
+                        namespaces,
+                    )
+                },
+            )
+
+            objects = premis.findall("premis:object", namespaces)
+            events = premis.findall("premis:event", namespaces)
+            agents = premis.findall("premis:agent", namespaces)
+            rights = premis.findall("premis:rights", namespaces)
+            self.assertEqual((7, 1, 2, 1), tuple(
+                len(group) for group in (objects, events, agents, rights)
+            ))
+            object_identifiers = {
+                (
+                    obj.findtext(
+                        "premis:objectIdentifier/"
+                        "premis:objectIdentifierType",
+                        namespaces=namespaces,
+                    ),
+                    obj.findtext(
+                        "premis:objectIdentifier/"
+                        "premis:objectIdentifierValue",
+                        namespaces=namespaces,
+                    ),
+                )
+                for obj in objects
+            }
+            for obj, spec in zip(objects, package_module.PAYLOAD_SPECS):
+                content = first[spec.package_path]
+                self.assertEqual(
+                    spec.package_path,
+                    obj.findtext("premis:originalName", namespaces=namespaces),
+                )
+                self.assertEqual(
+                    str(len(content)),
+                    obj.findtext(
+                        "premis:objectCharacteristics/premis:size",
+                        namespaces=namespaces,
+                    ),
+                )
+                self.assertEqual(
+                    hashlib.sha256(content).hexdigest(),
+                    obj.findtext(
+                        "premis:objectCharacteristics/premis:fixity/"
+                        "premis:messageDigest",
+                        namespaces=namespaces,
+                    ),
+                )
+            event = events[0]
+            self.assertEqual(
+                generated_at,
+                event.findtext(
+                    "premis:eventDateTime",
+                    namespaces=namespaces,
+                ),
+            )
+            self.assertEqual(
+                "metadata creation",
+                event.findtext("premis:eventType", namespaces=namespaces),
+            )
+            self.assertEqual(
+                "success",
+                event.findtext(
+                    "premis:eventOutcomeInformation/premis:eventOutcome",
+                    namespaces=namespaces,
+                ),
+            )
+            self.assertEqual(
+                object_identifiers,
+                {
+                    (
+                        link.findtext(
+                            "premis:linkingObjectIdentifierType",
+                            namespaces=namespaces,
+                        ),
+                        link.findtext(
+                            "premis:linkingObjectIdentifierValue",
+                            namespaces=namespaces,
+                        ),
+                    )
+                    for link in event.findall(
+                        "premis:linkingObjectIdentifier",
+                        namespaces,
+                    )
+                },
+            )
+            statement = rights[0].find(
+                "premis:rightsStatement",
+                namespaces,
+            )
+            self.assertEqual(
+                "license",
+                statement.findtext(
+                    "premis:rightsBasis",
+                    namespaces=namespaces,
+                ),
+            )
+            self.assertEqual(
+                {"replicate", "migrate", "disseminate", "modify"},
+                {
+                    grant.findtext("premis:act", namespaces=namespaces)
+                    for grant in statement.findall(
+                        "premis:rightsGranted",
+                        namespaces,
+                    )
+                },
+            )
+            self.assertEqual(
+                object_identifiers,
+                {
+                    (
+                        link.findtext(
+                            "premis:linkingObjectIdentifierType",
+                            namespaces=namespaces,
+                        ),
+                        link.findtext(
+                            "premis:linkingObjectIdentifierValue",
+                            namespaces=namespaces,
+                        ),
+                    )
+                    for link in statement.findall(
+                        "premis:linkingObjectIdentifier",
+                        namespaces,
+                    )
+                },
+            )
+
+            expected_members = [
+                package_module.METS_FILENAME,
+                package_module.PREMIS_FILENAME,
+                package_module.README_FILENAME,
+                package_module.LICENSE_FILENAME,
+                *(
+                    spec.package_path
+                    for spec in package_module.PAYLOAD_SPECS
+                    if spec.group == "DATA"
+                ),
+                package_module.CHECKSUM_FILENAME,
+            ]
+            with zipfile.ZipFile(
+                io.BytesIO(first[package_module.BUNDLE_FILENAME])
+            ) as archive:
+                self.assertEqual(expected_members, archive.namelist())
+                for info in archive.infolist():
+                    self.assertEqual(package_module.ZIP_TIMESTAMP, info.date_time)
+                    self.assertEqual(zipfile.ZIP_DEFLATED, info.compress_type)
+                    self.assertEqual(0o100644, info.external_attr >> 16)
+                    self.assertEqual(first[info.filename], archive.read(info))
+            checksum_entries = {
+                path: digest
+                for digest, path in (
+                    line.split("  ", 1)
+                    for line in first[package_module.CHECKSUM_FILENAME]
+                    .decode("ascii")
+                    .splitlines()
+                )
+            }
+            self.assertEqual(set(expected_members[:-1]), set(checksum_entries))
+            for path, digest in checksum_entries.items():
+                self.assertEqual(
+                    hashlib.sha256(first[path]).hexdigest(),
+                    digest,
+                )
+            for path in expected_members:
+                for forbidden in (
+                    b"apps.apple.com",
+                    package_module.APP_ID.encode("ascii"),
+                    package_module.APP_NAME.encode("utf-8"),
+                    b"SoftwareApplication",
+                ):
+                    self.assertNotIn(forbidden.lower(), first[path].lower())
+
+            generated_time = dt.datetime(
+                2026,
+                7,
+                11,
+                19,
+                41,
+                27,
+                tzinfo=dt.timezone.utc,
+            )
+            with mock.patch.object(
+                package_module,
+                "_utc_now",
+                return_value=generated_time,
+            ):
+                urls = package_module.build(pages, app_public=False)
+            self.assertEqual(14, len(urls))
+            package = pages / package_module.PACKAGE_PATH
+            expected_paths = [
+                *(package / path for path in first),
+                package / package_module.METADATA_FILENAME,
+                package / "index.html",
+                pages
+                / "zh-Hant"
+                / package_module.PACKAGE_PATH
+                / "index.html",
+                pages / package_module.SITEMAP_PATH,
+                data / "index.html",
+            ]
+            self.assertTrue(all(path.is_file() for path in expected_paths))
+            for landing in expected_paths[-4:-2]:
+                content = landing.read_text(encoding="utf-8")
+                self.assertIn("METS 2.0", content)
+                self.assertIn("PREMIS 3.0", content)
+                self.assertIn(package_module.BUNDLE_URL, content)
+                self.assertNotIn("apps.apple.com", content)
+                self.assertNotIn('"SoftwareApplication"', content)
+            public = package_module.render_page(
+                "en",
+                first,
+                generated_at,
+                package_module.INITIAL_DATE,
+                app_public=True,
+            )
+            self.assertIn(package_module.APP_ID, public)
+            self.assertIn('"SoftwareApplication"', public)
+            self.assertGreater(
+                public.index(package_module.COPY["en"]["app_title"]),
+                public.index(package_module.COPY["en"]["sources"]),
+            )
+
+            metadata = json.loads(
+                (
+                    package / package_module.METADATA_FILENAME
+                ).read_text(encoding="utf-8")
+            )
+            self.assertEqual(4, len(metadata["distribution"]))
+            self.assertEqual(7, len(metadata["hasPart"]))
+            self.assertEqual(generated_at, metadata["dateModified"])
+            index = (data / "index.html").read_text(encoding="utf-8")
+            self.assertEqual(1, index.count(package_module.CARD_START))
+            self.assertIn(package_module.PACKAGE_URL, index)
+            sitemap = (pages / package_module.SITEMAP_PATH).read_text(
+                encoding="utf-8"
+            )
+            for relative in (
+                *expected_members,
+                package_module.METADATA_FILENAME,
+                package_module.BUNDLE_FILENAME,
+            ):
+                self.assertIn(
+                    f"{package_module.PACKAGE_URL}{relative}",
+                    sitemap,
+                )
+
+            with mock.patch.object(
+                gen_llms, "PAGES", str(pages)
+            ), mock.patch.object(
+                gen_llms, "DATA_DIR", str(data)
+            ):
+                llms = gen_llms.build_llms({}, set())
+                full = gen_llms.build_llms_full({}, set())
+                robots = gen_llms.build_robots()
+                sitemap_index = gen_llms.build_sitemap_index()
+            for content in (llms, full):
+                self.assertIn(
+                    "Bopomofo METS 2.0 + PREMIS 3.0 preservation package",
+                    content,
+                )
+                self.assertIn(package_module.METS_URL, content)
+                self.assertIn(package_module.PREMIS_URL, content)
+            for content in (robots, sitemap_index):
+                self.assertIn(package_module.SITEMAP_PATH.as_posix(), content)
+
+            deep_item = next(
+                item
+                for item in answer_deep.DEEP_ITEMS
+                if item.get("kind") == "mets_premis_preservation_package"
+                and item.get("app_key") == "lumibopomofo"
+            )
+            self.assertEqual(
+                package_module.PACKAGE_URL,
+                deep_item["primary_resource_url"],
+            )
+            self.assertNotIn("certified", deep_item["lead"].lower())
+            answer_slug = (
+                "where-can-a-digital-repository-download-a-mets-2-0-and-"
+                "premis-3-0-package-for-bopomofo-data.html"
+            )
+            for answer, package_url in (
+                (
+                    Path(GEO) / "pages" / "answers" / answer_slug,
+                    package_module.PACKAGE_URL,
+                ),
+                (
+                    Path(GEO) / "pages" / "zh-Hant" / "answers" / answer_slug,
+                    package_module.ZH_PACKAGE_URL,
+                ),
+            ):
+                content = answer.read_text(encoding="utf-8")
+                self.assertIn("METS 2.0", content)
+                self.assertIn("PREMIS 3.0", content)
+                self.assertIn(package_url, content)
+            feed = (Path(GEO) / "pages" / "feed.xml").read_text(
+                encoding="utf-8"
+            )
+            self.assertIn(answer_slug, feed)
+            self.assertIn(
+                "fourteen verified Bopomofo datasets and 65 exact "
+                "distributions",
+                feed,
+            )
+
+            mtimes = {
+                path: path.stat().st_mtime_ns for path in expected_paths
+            }
+            package_module.build(pages, app_public=False)
+            self.assertEqual(
+                mtimes,
+                {path: path.stat().st_mtime_ns for path in expected_paths},
+            )
+
     def test_zhuyin_lms_question_bank_is_complete_and_portable(self):
         rows = zhuyin_croissant_dataset.records()
         first = zhuyin_lms_assessment_bank.make_core_artifacts(rows)
@@ -5377,6 +5839,7 @@ class GeneratorTests(unittest.TestCase):
         zhuyin_ocfl_object.build(pages, app_public=False)
         zhuyin_iiif_presentation.build(pages, app_public=False)
         zhuyin_ro_crate.build(pages, app_public=False)
+        zhuyin_mets_premis_package.build(pages, app_public=False)
         zhuyin_static_api.build(pages, app_public=False)
         zhuyin_lms_assessment_bank.build(pages, app_public=False)
         zhuyin_epub_opds.build(pages, app_public=False)
@@ -5406,8 +5869,8 @@ class GeneratorTests(unittest.TestCase):
                     package_dir / zhuyin_dcat_catalog.METADATA_FILENAME
                 ).read_text(encoding="utf-8")
             )
-            self.assertEqual(13, metadata["numberOfItems"])
-            self.assertEqual(13, len(metadata["dataset"]))
+            self.assertEqual(14, metadata["numberOfItems"])
+            self.assertEqual(14, len(metadata["dataset"]))
             self.assertEqual(3, len(metadata["distribution"]))
             self.assertEqual(
                 zhuyin_dcat_catalog.DCAT_SPEC,
@@ -5486,9 +5949,11 @@ class GeneratorTests(unittest.TestCase):
             for landing in (english, traditional):
                 self.assertIn("DCAT 3", landing)
                 self.assertIn("SPDX", landing)
-                self.assertIn("60", landing)
+                self.assertIn("65", landing)
                 self.assertIn("IIIF", landing)
                 self.assertIn("RO-Crate", landing)
+                self.assertIn("METS", landing)
+                self.assertIn("PREMIS", landing)
                 self.assertNotIn("apps.apple.com", landing)
                 self.assertNotIn('"SoftwareApplication"', landing)
 
@@ -5567,10 +6032,12 @@ class GeneratorTests(unittest.TestCase):
             )
             for answer in published_answers:
                 content = answer.read_text(encoding="utf-8")
-                self.assertIn("60", content)
+                self.assertIn("65", content)
                 self.assertIn("IIIF", content)
                 self.assertIn("BagIt", content)
                 self.assertIn("RO-Crate", content)
+                self.assertIn("METS", content)
+                self.assertIn("PREMIS", content)
                 self.assertNotIn("56 exact distributions", content)
                 self.assertNotIn("56 個精確", content)
 
@@ -5632,7 +6099,7 @@ class GeneratorTests(unittest.TestCase):
                 format="turtle",
             )
             self.assertTrue(isomorphic(json_graph, turtle_graph))
-            self.assertEqual(1286, len(json_graph))
+            self.assertEqual(1388, len(json_graph))
 
             dcat = zhuyin_dcat_catalog.DCAT
             dcterms = zhuyin_dcat_catalog.DCTERMS
@@ -5666,9 +6133,9 @@ class GeneratorTests(unittest.TestCase):
                 {URIRef(zhuyin_dcat_catalog.CATALOG_ID)},
                 catalogs,
             )
-            self.assertEqual(13, len(records))
-            self.assertEqual(13, len(datasets))
-            self.assertEqual(60, len(distributions))
+            self.assertEqual(14, len(records))
+            self.assertEqual(14, len(datasets))
+            self.assertEqual(65, len(distributions))
             self.assertEqual(
                 {URIRef(zhuyin_dcat_catalog.API_SERVICE)},
                 services,
@@ -5797,6 +6264,21 @@ class GeneratorTests(unittest.TestCase):
                 set(
                     json_graph.objects(
                         ro_crate_dataset,
+                        URIRef(dcterms + "conformsTo"),
+                    )
+                ),
+            )
+            mets_premis_dataset = URIRef(
+                f"{zhuyin_dcat_catalog.LANDING_URL}#dataset-mets-premis"
+            )
+            self.assertEqual(
+                {
+                    URIRef(zhuyin_mets_premis_package.METS_SCHEMA_URL),
+                    URIRef(zhuyin_mets_premis_package.PREMIS_GUIDE_URL),
+                },
+                set(
+                    json_graph.objects(
+                        mets_premis_dataset,
                         URIRef(dcterms + "conformsTo"),
                     )
                 ),
@@ -5954,7 +6436,7 @@ class GeneratorTests(unittest.TestCase):
                     hashlib.sha256(content).hexdigest(),
                     str(values[0]),
                 )
-            self.assertEqual(60, len(checksum_nodes))
+            self.assertEqual(65, len(checksum_nodes))
             self.assertEqual(
                 1,
                 len(
@@ -6114,7 +6596,7 @@ class GeneratorTests(unittest.TestCase):
 
             resources = zhuyin_resourcesync.discover_resources(pages)
             entries = resource_list.findall(f"{{{sitemap_ns}}}url")
-            self.assertEqual(215, len(resources))
+            self.assertEqual(229, len(resources))
             self.assertEqual(len(resources), len(entries))
             resources_by_path = {
                 resource.relative_path.as_posix(): resource
@@ -6142,6 +6624,8 @@ class GeneratorTests(unittest.TestCase):
                 )
             for relative in zhuyin_resourcesync.RO_CRATE_REQUIRED_PATHS:
                 self.assertIn(relative.as_posix(), resources_by_path)
+            for relative in zhuyin_resourcesync.METS_PREMIS_REQUIRED_PATHS:
+                self.assertIn(relative.as_posix(), resources_by_path)
             self.assertEqual(
                 "application/zip",
                 resources_by_path[
@@ -6160,6 +6644,25 @@ class GeneratorTests(unittest.TestCase):
                     )
                 ].media_type,
             )
+            self.assertEqual(
+                "application/zip",
+                resources_by_path[
+                    (
+                        "data/packages/zhuyin-bopomofo-mets2-premis3/"
+                        "bopomofo-37-symbols-mets2-premis3.zip"
+                    )
+                ].media_type,
+            )
+            for filename in ("mets.xml", "premis.xml"):
+                self.assertEqual(
+                    "application/xml",
+                    resources_by_path[
+                        (
+                            "data/packages/zhuyin-bopomofo-mets2-premis3/"
+                            + filename
+                        )
+                    ].media_type,
+                )
             self.assertEqual(
                 37,
                 sum("/symbols/" in resource.url for resource in resources),
@@ -8184,6 +8687,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_ocfl_object.py", workflow)
         self.assertIn("zhuyin_iiif_presentation.py", workflow)
         self.assertIn("zhuyin_ro_crate.py", workflow)
+        self.assertIn("zhuyin_mets_premis_package.py", workflow)
         self.assertIn("requirements-iiif-validation.txt", workflow)
         self.assertIn("iiif-validator-bin", workflow)
         self.assertNotIn(
@@ -8229,6 +8733,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_ocfl_object.py",
             "zhuyin_iiif_presentation.py",
             "zhuyin_ro_crate.py",
+            "zhuyin_mets_premis_package.py",
             "zhuyin_static_api.py",
             "zhuyin_lms_assessment_bank.py",
             "zhuyin_epub_opds.py",
@@ -8271,6 +8776,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("--refresh-slug \"$OCFL_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$IIIF_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$RO_CRATE_SLUG\"", workflow)
+        self.assertIn("--refresh-slug \"$METS_PREMIS_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$TRIP_SLUG\"", workflow)
         self.assertIn('"lumibopomofo" in live_app_keys', workflow)
         self.assertIn('"tripplanet" in live_app_keys', workflow)
@@ -8295,6 +8801,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_ocfl_object.py", publish)
         self.assertIn("zhuyin_iiif_presentation.py", publish)
         self.assertIn("zhuyin_ro_crate.py", publish)
+        self.assertIn("zhuyin_mets_premis_package.py", publish)
         self.assertIn("zhuyin_static_api.py", publish)
         self.assertIn("zhuyin_lms_assessment_bank.py", publish)
         self.assertIn("zhuyin_epub_opds.py", publish)
@@ -8337,6 +8844,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_ocfl_object.py",
             "zhuyin_iiif_presentation.py",
             "zhuyin_ro_crate.py",
+            "zhuyin_mets_premis_package.py",
             "zhuyin_static_api.py",
             "zhuyin_lms_assessment_bank.py",
             "zhuyin_epub_opds.py",

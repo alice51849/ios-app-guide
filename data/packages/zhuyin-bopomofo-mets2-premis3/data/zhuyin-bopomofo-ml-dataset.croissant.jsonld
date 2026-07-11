@@ -1,0 +1,402 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "sc": "https://schema.org/",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "dct": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "annotation": "cr:annotation",
+    "arrayShape": "cr:arrayShape",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "containedIn": "cr:containedIn",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "description": {
+      "@container": "@language"
+    },
+    "equivalentProperty": "cr:equivalentProperty",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "excludes": "cr:excludes",
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isArray": "cr:isArray",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "name": {
+      "@container": "@language"
+    },
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "readLines": "cr:readLines",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sdVersion": "cr:sdVersion",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform",
+    "unArchive": "cr:unArchive",
+    "value": "cr:value"
+  },
+  "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html",
+  "@type": "sc:Dataset",
+  "conformsTo": "http://mlcommons.org/croissant/1.1",
+  "name": {
+    "en": "Bopomofo ML Dataset - All 37 Zhuyin Symbols in Croissant 1.1",
+    "zh-Hant": "注音符號 ML 資料集｜完整 37 符號 Croissant 1.1"
+  },
+  "description": {
+    "en": "Download a CC BY 4.0 table of all 37 Bopomofo symbols as CSV and JSONL with MLCommons Croissant 1.1 metadata, stable SKOS IRIs and documented provenance.",
+    "zh-Hant": "免費下載完整 37 注音符號 CSV、JSONL 與 MLCommons Croissant 1.1 中繼資料，包含穩定 SKOS IRI、校驗碼及資料來源。"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html",
+  "creator": {
+    "@id": "https://alice51849.github.io/ios-app-guide/#organization",
+    "@type": "sc:Organization",
+    "name": "Lumi Apps - iOS App Guide",
+    "url": "https://alice51849.github.io/ios-app-guide"
+  },
+  "publisher": {
+    "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+  },
+  "datePublished": "2026-07-11",
+  "dateModified": "2026-07-11",
+  "version": "1.0.0",
+  "sdVersion": "1.0.0",
+  "isLiveDataset": false,
+  "isAccessibleForFree": true,
+  "inLanguage": [
+    "en",
+    "zh-Hant",
+    "zh-Latn-pinyin"
+  ],
+  "keywords": [
+    "Bopomofo",
+    "Zhuyin",
+    "注音符號",
+    "Taiwan Mandarin",
+    "phonetics",
+    "Unicode",
+    "MLCommons Croissant",
+    "language dataset"
+  ],
+  "identifier": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html",
+  "includedInDataCatalog": "https://alice51849.github.io/ios-app-guide/data/",
+  "isBasedOn": [
+    "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json",
+    "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html"
+  ],
+  "conditionsOfAccess": "Open access; no account or API key required.",
+  "measurementTechnique": "Deterministic tabular projection of the complete 37-symbol reference.",
+  "citeAs": "@misc{lumi_bopomofo_croissant_2026, title={Bopomofo ML Dataset - All 37 Zhuyin Symbols}, author={Lumi Apps - iOS App Guide}, year={2026}, url={https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html}}",
+  "prov:wasDerivedFrom": [
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json"
+    },
+    {
+      "@id": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"
+    },
+    {
+      "@id": "https://www.unicode.org/charts/PDF/U3100.pdf"
+    }
+  ],
+  "prov:wasGeneratedBy": {
+    "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html#generation",
+    "@type": "prov:Activity",
+    "name": "Deterministic Zhuyin table generation",
+    "prov:used": [
+      {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json"
+      },
+      {
+        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html"
+      }
+    ],
+    "prov:wasAssociatedWith": {
+      "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+    }
+  },
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "zhuyin-bopomofo-ml-dataset.csv",
+      "name": "zhuyin-bopomofo-ml-dataset.csv",
+      "description": "Canonical UTF-8 table for the symbols RecordSet.",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv",
+      "contentSize": "8350 B",
+      "encodingFormat": "text/csv",
+      "sha256": "6d9235a013dd1856130841bdf6866f22173903bec726690b9b4c3e555b223422",
+      "sameAs": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "zhuyin-bopomofo-ml-dataset.jsonl",
+      "name": "zhuyin-bopomofo-ml-dataset.jsonl",
+      "description": "The same 37 records serialized as newline-delimited JSON.",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl",
+      "contentSize": "14734 B",
+      "encodingFormat": "application/x-ndjson",
+      "sha256": "68729f91871ca6603929c2a28ffb567513bf0a4f233f55164c236bd36b31b131",
+      "sameAs": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "symbols",
+      "name": "symbols",
+      "description": "One record for each of the 37 standard Bopomofo symbols.",
+      "dataType": "skos:Concept",
+      "key": {
+        "@id": "symbols/symbol_id"
+      },
+      "examples": [
+        {
+          "order": 1,
+          "symbol_id": "u3105",
+          "concept_uri": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3105",
+          "symbol": "ㄅ",
+          "unicode": "U+3105",
+          "pinyin": "b",
+          "ipa": "p",
+          "category": "initial",
+          "category_uri": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials",
+          "example_character": "爸",
+          "example_pinyin": "bà",
+          "example_meaning_en": "father"
+        },
+        {
+          "order": 2,
+          "symbol_id": "u3106",
+          "concept_uri": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3106",
+          "symbol": "ㄆ",
+          "unicode": "U+3106",
+          "pinyin": "p",
+          "ipa": "pʰ",
+          "category": "initial",
+          "category_uri": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials",
+          "example_character": "怕",
+          "example_pinyin": "pà",
+          "example_meaning_en": "afraid"
+        }
+      ],
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "symbols/order",
+          "name": "order",
+          "description": "Stable educational display order from 1 to 37.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "zhuyin-bopomofo-ml-dataset.csv"
+            },
+            "extract": {
+              "column": "order"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "symbols/symbol_id",
+          "name": "symbol_id",
+          "description": "ASCII identifier derived from the uppercase Unicode code point.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "zhuyin-bopomofo-ml-dataset.csv"
+            },
+            "extract": {
+              "column": "symbol_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "symbols/concept_uri",
+          "name": "concept_uri",
+          "description": "Stable IRI for the symbol in the companion SKOS vocabulary.",
+          "dataType": "sc:URL",
+          "source": {
+            "fileObject": {
+              "@id": "zhuyin-bopomofo-ml-dataset.csv"
+            },
+            "extract": {
+              "column": "concept_uri"
+            }
+          },
+          "equivalentProperty": "https://schema.org/url"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "symbols/symbol",
+          "name": "symbol",
+          "description": "The Bopomofo character.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "zhuyin-bopomofo-ml-dataset.csv"
+            },
+            "extract": {
+              "column": "symbol"
+            }
+          },
+          "equivalentProperty": "http://www.w3.org/2004/02/skos/core#prefLabel"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "symbols/unicode",
+          "name": "unicode",
+          "description": "Unicode notation in U+XXXX form.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "zhuyin-bopomofo-ml-dataset.csv"
+            },
+            "extract": {
+              "column": "unicode"
+            }
+          },
+          "equivalentProperty": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "symbols/pinyin",
+          "name": "pinyin",
+          "description": "Hanyu Pinyin correspondence.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "zhuyin-bopomofo-ml-dataset.csv"
+            },
+            "extract": {
+              "column": "pinyin"
+            }
+          },
+          "equivalentProperty": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "symbols/ipa",
+          "name": "ipa",
+          "description": "Broad IPA transcription without brackets.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "zhuyin-bopomofo-ml-dataset.csv"
+            },
+            "extract": {
+              "column": "ipa"
+            }
+          },
+          "equivalentProperty": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "symbols/category",
+          "name": "category",
+          "description": "One of initial, medial or final.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "zhuyin-bopomofo-ml-dataset.csv"
+            },
+            "extract": {
+              "column": "category"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "symbols/category_uri",
+          "name": "category_uri",
+          "description": "IRI for the broader SKOS category concept.",
+          "dataType": "sc:URL",
+          "source": {
+            "fileObject": {
+              "@id": "zhuyin-bopomofo-ml-dataset.csv"
+            },
+            "extract": {
+              "column": "category_uri"
+            }
+          },
+          "equivalentProperty": "http://www.w3.org/2004/02/skos/core#broader"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "symbols/example_character",
+          "name": "example_character",
+          "description": "Traditional Chinese example character.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "zhuyin-bopomofo-ml-dataset.csv"
+            },
+            "extract": {
+              "column": "example_character"
+            }
+          },
+          "equivalentProperty": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "symbols/example_pinyin",
+          "name": "example_pinyin",
+          "description": "Tone-marked Pinyin for the example.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "zhuyin-bopomofo-ml-dataset.csv"
+            },
+            "extract": {
+              "column": "example_pinyin"
+            }
+          },
+          "equivalentProperty": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin"
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "symbols/example_meaning_en",
+          "name": "example_meaning_en",
+          "description": "Short English meaning for the example.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "zhuyin-bopomofo-ml-dataset.csv"
+            },
+            "extract": {
+              "column": "example_meaning_en"
+            }
+          },
+          "equivalentProperty": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning"
+        }
+      ]
+    }
+  ]
+}

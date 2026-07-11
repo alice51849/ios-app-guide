@@ -8235,12 +8235,12 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_library_catalog.py",
             "zhuyin_oer_metadata.py",
             "zhuyin_dcat_catalog.py",
-            "zhuyin_resourcesync.py",
             "prioritize_trip_planet_resources.py",
             "add_related_tools.py",
             "gen_hubs.py",
             "gen_app_catalog.py",
             "cleanup_localized_assets.py --cached-live",
+            "zhuyin_resourcesync.py",
         )
         workflow_positions = [refresh_block.index(item) for item in workflow_chain]
         self.assertEqual(sorted(workflow_positions), workflow_positions)
@@ -8248,7 +8248,7 @@ class GeneratorTests(unittest.TestCase):
             refresh_block.index("cleanup_localized_assets.py --cached-live"),
             refresh_block.rindex("zhuyin_resourcesync.py"),
         )
-        self.assertGreaterEqual(workflow.count("zhuyin_resourcesync.py"), 3)
+        self.assertEqual(2, workflow.count("zhuyin_resourcesync.py"))
         final_cleanup_block = workflow.split(
             "- name: Final link and availability cleanup", 1
         )[1].split("- name: Unlink site dir", 1)[0]
@@ -8311,7 +8311,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("prioritize_trip_planet_resources.py", publish)
         self.assertIn('gen_llms.py"), "--cached-live"', publish)
         self.assertIn("gen_feed.py", publish)
-        self.assertGreaterEqual(publish.count("zhuyin_resourcesync.py"), 2)
+        self.assertEqual(1, publish.count("zhuyin_resourcesync.py"))
         publish_chain = (
             "build_pages_i18n.py",
             "gen_data_hub.py",
@@ -8343,11 +8343,11 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_library_catalog.py",
             "zhuyin_oer_metadata.py",
             "zhuyin_dcat_catalog.py",
-            "zhuyin_resourcesync.py",
             "prioritize_trip_planet_resources.py",
             "add_related_answers.py",
             "add_related_tools.py",
             "fix_en_hreflang.py",
+            "zhuyin_resourcesync.py",
             "gen_llms.py",
             "gen_feed.py",
         )

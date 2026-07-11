@@ -131,7 +131,6 @@ jobs:
           python3 zhuyin_library_catalog.py
           python3 zhuyin_oer_metadata.py
           python3 zhuyin_dcat_catalog.py
-          python3 zhuyin_resourcesync.py
           python3 prioritize_trip_planet_resources.py
           python3 add_related_tools.py
           python3 add_related_tools.py --locale zh-Hant

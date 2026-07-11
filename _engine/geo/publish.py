@@ -113,7 +113,6 @@ def main():
     require([PY, os.path.join(HERE, "zhuyin_library_catalog.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_oer_metadata.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_dcat_catalog.py")], env=env)
-    require([PY, os.path.join(HERE, "zhuyin_resourcesync.py")], env=env)
     require(
         [PY, os.path.join(HERE, "prioritize_trip_planet_resources.py")],
         env=env,

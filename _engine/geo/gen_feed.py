@@ -15,6 +15,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.path.join(HERE, "pages")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
 MAX_ITEMS = 60
+PINNED_SUBDIRS = ("guides",)
 DATE_MODIFIED_RE = re.compile(
     r'"dateModified"\s*:\s*"([0-9]{4}-[0-9]{2}-[0-9]{2}(?:T[^"]+)?)"'
 )
@@ -129,7 +130,19 @@ def collect():
         if os.path.exists(path):
             items.append((_content_modified(path, git_modified), url, path))
     items.sort(reverse=True)
-    return items[:MAX_ITEMS]
+    pinned = [
+        item
+        for item in items
+        if any(f"/{subdir}/" in item[1] for subdir in PINNED_SUBDIRS)
+    ]
+    if len(pinned) >= MAX_ITEMS:
+        return pinned[:MAX_ITEMS]
+    pinned_urls = {item[1] for item in pinned}
+    selected = pinned + [
+        item for item in items if item[1] not in pinned_urls
+    ][: MAX_ITEMS - len(pinned)]
+    selected.sort(reverse=True)
+    return selected
 
 
 def iso(ts):

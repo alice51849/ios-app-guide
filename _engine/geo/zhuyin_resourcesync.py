@@ -101,6 +101,22 @@ ORE_REQUIRED_PATHS = (
     ORE_PATH / "bopomofo-37-symbols-oai-ore-bundle.zip",
     Path("zh-Hant") / ORE_PATH / "index.html",
 )
+LDES_PATH = Path("data") / "packages" / "zhuyin-bopomofo-ldes"
+LDES_REQUIRED_PATHS = (
+    LDES_PATH / "index.html",
+    LDES_PATH / "bopomofo-event-stream.jsonld",
+    LDES_PATH / "bopomofo-event-stream.ttl",
+    LDES_PATH / "nodes" / "page-001.jsonld",
+    LDES_PATH / "nodes" / "page-002.jsonld",
+    LDES_PATH / "nodes" / "page-003.jsonld",
+    LDES_PATH / "bopomofo-event-member.shacl.ttl",
+    LDES_PATH / "README.txt",
+    LDES_PATH / "LICENSE.txt",
+    LDES_PATH / "checksums-sha256.txt",
+    LDES_PATH / "metadata.jsonld",
+    LDES_PATH / "bopomofo-37-symbols-ldes-tree.zip",
+    Path("zh-Hant") / LDES_PATH / "index.html",
+)
 
 SOURCE_DESCRIPTION_URL = "https://alice51849.github.io/.well-known/resourcesync"
 SOURCE_DESCRIPTION_COPY_URL = f"{SITE}/{SOURCE_DESCRIPTION_COPY_PATH.as_posix()}"
@@ -125,6 +141,7 @@ CONTENT_PATTERNS = (
     "data/packages/zhuyin-bopomofo-ro-crate/**/*",
     "data/packages/zhuyin-bopomofo-mets2-premis3/**/*",
     "data/packages/zhuyin-bopomofo-oai-ore/**/*",
+    "data/packages/zhuyin-bopomofo-ldes/**/*",
     "iiif/3/bopomofo/**/*",
     "publications/bopomofo-37-symbol-reference/**/*",
     "opds/bopomofo-37-symbol-reference.*",
@@ -138,6 +155,7 @@ CONTENT_PATTERNS = (
     "zh-Hant/data/packages/zhuyin-bopomofo-ro-crate/**/*",
     "zh-Hant/data/packages/zhuyin-bopomofo-mets2-premis3/**/*",
     "zh-Hant/data/packages/zhuyin-bopomofo-oai-ore/**/*",
+    "zh-Hant/data/packages/zhuyin-bopomofo-ldes/**/*",
     "zh-Hant/api/v1/bopomofo-symbols/**/*",
     "zh-Hant/tools/zhuyin-*",
 )
@@ -255,6 +273,7 @@ REQUIRED_PATHS = (
     *RO_CRATE_REQUIRED_PATHS,
     *METS_PREMIS_REQUIRED_PATHS,
     *ORE_REQUIRED_PATHS,
+    *LDES_REQUIRED_PATHS,
 )
 CARD_START = "<!-- resourcesync-card:start -->"
 CARD_END = "<!-- resourcesync-card:end -->"

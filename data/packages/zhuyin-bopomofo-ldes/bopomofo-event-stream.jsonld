@@ -1,0 +1,331 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "schema": "https://schema.org/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "ldes": "https://w3id.org/ldes#",
+    "tree": "https://w3id.org/tree#",
+    "zhuyin": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#"
+  },
+  "@graph": [
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#publisher",
+      "@type": [
+        "http://www.w3.org/ns/prov#Organization"
+      ],
+      "https://schema.org/name": [
+        {
+          "@value": "iOS App Guide Open Resources"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld",
+      "@type": [
+        "https://w3id.org/ldes#EventStream",
+        "https://w3id.org/tree#Node"
+      ],
+      "http://purl.org/dc/terms/conformsTo": [
+        {
+          "@id": "https://semiceu.github.io/LinkedDataEventStreams/releases/1.0.0/"
+        },
+        {
+          "@id": "https://w3id.org/tree/specification"
+        }
+      ],
+      "http://purl.org/dc/terms/description": [
+        {
+          "@value": "A complete static LDES view with 37 immutable first-version members partitioned across three TREE nodes.",
+          "@language": "en"
+        },
+        {
+          "@value": "完整靜態 LDES view，將 37 筆 immutable 第一版 member 分布於三個 TREE node。",
+          "@language": "zh-Hant"
+        }
+      ],
+      "http://purl.org/dc/terms/hasFormat": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl"
+        }
+      ],
+      "http://purl.org/dc/terms/isPartOf": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+        }
+      ],
+      "http://purl.org/dc/terms/issued": [
+        {
+          "@value": "2026-07-11T00:00:00Z",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      ],
+      "http://purl.org/dc/terms/license": [
+        {
+          "@id": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "http://purl.org/dc/terms/modified": [
+        {
+          "@value": "2026-07-11T21:36:15Z",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      ],
+      "http://purl.org/dc/terms/publisher": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#publisher"
+        }
+      ],
+      "http://purl.org/dc/terms/title": [
+        {
+          "@value": "Bopomofo 37-symbol version event stream",
+          "@language": "en"
+        },
+        {
+          "@value": "注音 37 符號版本事件流",
+          "@language": "zh-Hant"
+        }
+      ],
+      "https://w3id.org/ldes#retentionPolicy": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#retention"
+        }
+      ],
+      "https://w3id.org/ldes#timestampPath": [
+        {
+          "@id": "http://purl.org/dc/terms/created"
+        }
+      ],
+      "https://w3id.org/ldes#versionCreateObject": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
+        }
+      ],
+      "https://w3id.org/ldes#versionCreatePath": [
+        {
+          "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      ],
+      "https://w3id.org/ldes#versionOfPath": [
+        {
+          "@id": "http://purl.org/dc/terms/isVersionOf"
+        }
+      ],
+      "https://w3id.org/tree#relation": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-001-lower"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-001-upper"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-002-lower"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-002-upper"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-003-lower"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-003-upper"
+        }
+      ],
+      "https://w3id.org/tree#shape": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-member.shacl.ttl"
+        }
+      ],
+      "https://w3id.org/tree#view": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#retention",
+      "@type": [
+        "https://w3id.org/ldes#RetentionPolicy"
+      ],
+      "https://w3id.org/ldes#startingFrom": [
+        {
+          "@value": "2026-07-11T00:00:00Z",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-001-lower",
+      "@type": [
+        "https://w3id.org/tree#GreaterThanOrEqualToRelation"
+      ],
+      "https://w3id.org/tree#node": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-001.jsonld"
+        }
+      ],
+      "https://w3id.org/tree#path": [
+        {
+          "@id": "http://purl.org/dc/terms/created"
+        }
+      ],
+      "https://w3id.org/tree#remainingItems": [
+        {
+          "@value": "13",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      ],
+      "https://w3id.org/tree#value": [
+        {
+          "@value": "2026-07-11T00:00:00Z",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-001-upper",
+      "@type": [
+        "https://w3id.org/tree#LessThanRelation"
+      ],
+      "https://w3id.org/tree#node": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-001.jsonld"
+        }
+      ],
+      "https://w3id.org/tree#path": [
+        {
+          "@id": "http://purl.org/dc/terms/created"
+        }
+      ],
+      "https://w3id.org/tree#remainingItems": [
+        {
+          "@value": "13",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      ],
+      "https://w3id.org/tree#value": [
+        {
+          "@value": "2026-07-11T00:13:00Z",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-002-lower",
+      "@type": [
+        "https://w3id.org/tree#GreaterThanOrEqualToRelation"
+      ],
+      "https://w3id.org/tree#node": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld"
+        }
+      ],
+      "https://w3id.org/tree#path": [
+        {
+          "@id": "http://purl.org/dc/terms/created"
+        }
+      ],
+      "https://w3id.org/tree#remainingItems": [
+        {
+          "@value": "12",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      ],
+      "https://w3id.org/tree#value": [
+        {
+          "@value": "2026-07-11T00:13:00Z",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-002-upper",
+      "@type": [
+        "https://w3id.org/tree#LessThanRelation"
+      ],
+      "https://w3id.org/tree#node": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld"
+        }
+      ],
+      "https://w3id.org/tree#path": [
+        {
+          "@id": "http://purl.org/dc/terms/created"
+        }
+      ],
+      "https://w3id.org/tree#remainingItems": [
+        {
+          "@value": "12",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      ],
+      "https://w3id.org/tree#value": [
+        {
+          "@value": "2026-07-11T00:25:00Z",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-003-lower",
+      "@type": [
+        "https://w3id.org/tree#GreaterThanOrEqualToRelation"
+      ],
+      "https://w3id.org/tree#node": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-003.jsonld"
+        }
+      ],
+      "https://w3id.org/tree#path": [
+        {
+          "@id": "http://purl.org/dc/terms/created"
+        }
+      ],
+      "https://w3id.org/tree#remainingItems": [
+        {
+          "@value": "12",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      ],
+      "https://w3id.org/tree#value": [
+        {
+          "@value": "2026-07-11T00:25:00Z",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-003-upper",
+      "@type": [
+        "https://w3id.org/tree#LessThanRelation"
+      ],
+      "https://w3id.org/tree#node": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-003.jsonld"
+        }
+      ],
+      "https://w3id.org/tree#path": [
+        {
+          "@id": "http://purl.org/dc/terms/created"
+        }
+      ],
+      "https://w3id.org/tree#remainingItems": [
+        {
+          "@value": "12",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      ],
+      "https://w3id.org/tree#value": [
+        {
+          "@value": "2026-07-11T00:37:00Z",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      ]
+    }
+  ]
+}

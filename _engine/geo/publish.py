@@ -89,6 +89,10 @@ def main():
             "where-can-a-repository-harvest-an-oai-ore-resource-map-for-"
             "bopomofo-data"
         ),
+        (
+            "where-can-a-linked-data-client-replicate-bopomofo-as-an-ldes-1-0-"
+            "and-tree-event-stream"
+        ),
     ]
     # 1) 重建
     require([PY, os.path.join(HERE, "build_pages_i18n.py")], env=env)
@@ -117,6 +121,7 @@ def main():
     require([PY, os.path.join(HERE, "zhuyin_ro_crate.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_mets_premis_package.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_static_api.py")], env=env)
+    require([PY, os.path.join(HERE, "zhuyin_ldes_event_stream.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_ore_resource_map.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_lms_assessment_bank.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_epub_opds.py")], env=env)

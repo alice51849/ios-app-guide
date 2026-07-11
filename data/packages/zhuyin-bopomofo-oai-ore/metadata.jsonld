@@ -8,11 +8,11 @@
   "identifier": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation",
   "name": "Bopomofo OAI-ORE 1.0 Resource Map",
   "alternateName": "注音 OAI-ORE 1.0 資源聚合圖",
-  "description": "A repository-readable OAI-ORE aggregation of fourteen reusable resources for the complete 37-symbol Bopomofo dataset.",
+  "description": "A repository-readable OAI-ORE aggregation of sixteen reusable resources for the complete 37-symbol Bopomofo dataset.",
   "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/",
   "version": "1.0.0",
   "datePublished": "2026-07-11",
-  "dateModified": "2026-07-11T20:52:12Z",
+  "dateModified": "2026-07-11T21:45:19Z",
   "inLanguage": [
     "en",
     "zh-Hant"
@@ -43,24 +43,24 @@
       "name": "OAI-ORE Resource Map in RDF/XML",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf",
       "encodingFormat": "application/rdf+xml",
-      "contentSize": 20682,
-      "sha256": "15c4b9d025b0b6fec9d4a5b0bf0b768b57ad30de525a3124170815c07d13a241"
+      "contentSize": 23395,
+      "sha256": "546cb1fc83bd885575b8c49e34867d03422f6be98769761960b2ca327240b8f4"
     },
     {
       "@type": "DataDownload",
       "name": "OAI-ORE Resource Map in Turtle",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.ttl",
       "encodingFormat": "text/turtle",
-      "contentSize": 30976,
-      "sha256": "0d50787edf74e8ce65c2bc23721581f1c72d81bdcf1479c4834343fbcf3464e7"
+      "contentSize": 35131,
+      "sha256": "86d0bd8096e01b935d87d19cad764420135ef1e6a4ef5f5645a740ecd0ea2a2e"
     },
     {
       "@type": "DataDownload",
       "name": "OAI-ORE Resource Map in JSON-LD",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.jsonld",
       "encodingFormat": "application/ld+json",
-      "contentSize": 24234,
-      "sha256": "c31be5f2ffe6fc1dd6525b5f17bf290394f80e94d81a10158d84790ecee5f049"
+      "contentSize": 27385,
+      "sha256": "30307ad9c0f1e0156c60b7ff3caa5c88a99a8bb515e7cdc8f00ceb1edb2e2885"
     },
     {
       "@type": "DataDownload",
@@ -68,15 +68,15 @@
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/checksums-sha256.txt",
       "encodingFormat": "text/plain",
       "contentSize": 446,
-      "sha256": "e8052b552d14da1d2b126dcb9d4d502253430a8ceca818ff8d799fa27b6e1e4b"
+      "sha256": "6c20d3710cd3a4bd918023f8ac87eaa6e68b0a8c97fb923eb4b56502756fcc47"
     },
     {
       "@type": "DataDownload",
       "name": "Bilingual validation guide",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/README.txt",
       "encodingFormat": "text/plain",
-      "contentSize": 1984,
-      "sha256": "f4400ea8e50a677fdcc8600b379bfd5de9ae0e2f5b4290142cac871eff1f7a6d"
+      "contentSize": 1982,
+      "sha256": "ee7f821ca9fae37450a6497307a746edd16736542aaba34e6999bc0280801d9a"
     },
     {
       "@type": "DataDownload",
@@ -91,8 +91,8 @@
       "name": "Complete deterministic bundle",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-37-symbols-oai-ore-bundle.zip",
       "encodingFormat": "application/zip",
-      "contentSize": 9966,
-      "sha256": "47fa268ad21bfe8b8b9ca44b5dd8d1a607b4035dce04d143b05a8e83214d75dd"
+      "contentSize": 10723,
+      "sha256": "d4840bad229cbca80f402575d6570755627ccad407bddb8cba77e35e147a4bdc"
     }
   ],
   "hasPart": [
@@ -207,6 +207,22 @@
       "encodingFormat": "application/vnd.oai.openapi+json;version=3.1",
       "contentSize": 22659,
       "sha256": "9ba0af494930aede38462f542ff9d5dc691a37e14cd9cf166ca491ad6b956211"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Canonical LDES 1.0 JSON-LD event-stream entry point",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld",
+      "encodingFormat": "application/ld+json",
+      "contentSize": 11113,
+      "sha256": "c0ef478f3dee33ee0c268d94bcb317a03b9658b74522ae2992946c6a27c6d0f0"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Turtle discovery overview for the LDES event stream",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl",
+      "encodingFormat": "text/turtle",
+      "contentSize": 15139,
+      "sha256": "0f894e4ccf73b166b4e560daa68bf3ef5a533b7532f6c3b9262504ed6306bb23"
     }
   ]
 }

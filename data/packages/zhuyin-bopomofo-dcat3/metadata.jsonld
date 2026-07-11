@@ -22,12 +22,12 @@
   "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#catalog",
   "name": "Bopomofo DCAT 3 open-data catalog",
   "alternateName": "注音 DCAT 3 開放資料目錄",
-  "description": "Download a static W3C DCAT 3 catalog covering fifteen verified Bopomofo datasets and 71 exact distributions.",
+  "description": "Download a static W3C DCAT 3 catalog covering sixteen verified Bopomofo datasets and 80 exact distributions.",
   "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html",
   "identifier": "LUMI-ZHUYIN-DCAT3-2026",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "datePublished": "2026-07-11",
-  "dateModified": "2026-07-11T20:52:12Z",
+  "dateModified": "2026-07-11T21:45:19Z",
   "inLanguage": [
     "en",
     "zh-Hant"
@@ -41,7 +41,7 @@
     "url": "https://alice51849.github.io/ios-app-guide"
   },
   "conformsTo": "https://www.w3.org/TR/vocab-dcat-3/",
-  "numberOfItems": 15,
+  "numberOfItems": 16,
   "dataset": [
     {
       "@type": "Dataset",
@@ -111,7 +111,14 @@
       "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-oai-ore",
       "name": "Bopomofo OAI-ORE 1.0 Resource Map",
       "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/",
-      "dateModified": "2026-07-11T20:52:12Z"
+      "dateModified": "2026-07-11T21:45:19Z"
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-ldes",
+      "name": "Bopomofo LDES 1.0 and TREE event stream",
+      "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/",
+      "dateModified": "2026-07-11T21:36:15Z"
     },
     {
       "@type": "Dataset",
@@ -155,24 +162,24 @@
       "name": "Complete ZIP bundle",
       "encodingFormat": "application/zip",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog-dcat3-bundle.zip",
-      "contentSize": "26431 bytes",
-      "sha256": "23a89111b1b58965b9a37ee3bd1b812475ee8129970dfbf063627c29910022e9"
+      "contentSize": "28824 bytes",
+      "sha256": "662efcb15ccd6c4c65643fbb976551df97dd15f370036ab18b1c235a2c981707"
     },
     {
       "@type": "DataDownload",
       "name": "DCAT 3 JSON-LD",
       "encodingFormat": "application/ld+json",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.jsonld",
-      "contentSize": "197582 bytes",
-      "sha256": "b790a948ddec3ac0fea939ebec2fbde4835baf056eb874593af5e478138518a2"
+      "contentSize": "218434 bytes",
+      "sha256": "708cc4b72878f95ccd05d73d5c061ff3cf69474f50a0d7509dd2c84bc6acc6db"
     },
     {
       "@type": "DataDownload",
       "name": "DCAT 3 Turtle",
       "encodingFormat": "text/turtle",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.ttl",
-      "contentSize": "133895 bytes",
-      "sha256": "59a57f3c1cfb1fc26be738291b276125cd778d7c99b022f2f2b23194977adc8f"
+      "contentSize": "148253 bytes",
+      "sha256": "d041106da778725be42a84d9e5b58e65d5cd00d346152e0914a2a5f61f986a2c"
     }
   ]
 }

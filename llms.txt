@@ -268,6 +268,15 @@
 - SHA-256 checksums: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/checksums-sha256.txt
 - Dataset manifest: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/metadata.jsonld
 
+## Bopomofo LDES 1.0 + TREE event stream
+- English guide: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/
+- Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-ldes/
+- Canonical JSON-LD entry point: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld
+- Turtle discovery overview: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl
+- SHACL member shape: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-member.shacl.ttl
+- Deterministic bundle: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-37-symbols-ldes-tree.zip
+- SHA-256 checksums: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/checksums-sha256.txt
+
 ## Bopomofo digital-preservation package (RFC 8493 BagIt 1.0)
 - English guide: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/
 - Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-bagit/

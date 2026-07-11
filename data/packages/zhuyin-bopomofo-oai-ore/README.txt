@@ -15,7 +15,7 @@ Resource Maps
 - bopomofo-resource-map.ore.jsonld  application/ld+json
 
 Each Resource Map has its own URI-R, describes the same URI-A and exposes the
-same fourteen-member Aggregation Graph. The maps also record creator,
+same sixteen-member Aggregation Graph. The maps also record creator,
 modification time, media type, byte size and SHA-256 for every aggregated
 resource.
 
@@ -24,7 +24,7 @@ Validation
 1. Verify checksums-sha256.txt.
 2. Parse each map as RDF.
 3. Confirm one ore:describes triple from each URI-R to the Aggregation URI.
-4. Confirm fourteen ore:aggregates objects and identical membership across maps.
+4. Confirm sixteen ore:aggregates objects and identical membership across maps.
 5. Compare dcat:byteSize and SPDX SHA-256 values to each live resource.
 
 Specification
@@ -40,11 +40,11 @@ This publisher-authored map does not claim OAI endorsement, external repository
 ingest, DOI assignment, third-party certification, content negotiation or Atom
 serialization conformance.
 
-Generated: 2026-07-11T20:52:12Z
+Generated: 2026-07-11T21:45:19Z
 
 繁體中文
 --------
-本套件以 OAI-ORE Resource Map 描述完整 37 個注音符號資料的 14 項機器可讀
+本套件以 OAI-ORE Resource Map 描述完整 37 個注音符號資料的 16 項機器可讀
 資源。Aggregation URI 採不需伺服器設定的 hash URI 模式；三份 RDF map
 具有不同 URI-R，但公開相同的 Aggregation Graph。請先核對 SHA-256，再解析
 RDF 並逐一比對 ore:aggregates、byte size 與來源檔案。

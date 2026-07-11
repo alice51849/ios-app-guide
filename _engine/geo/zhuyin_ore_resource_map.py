@@ -181,6 +181,16 @@ SOURCE_SPECS = (
         "OpenAPI 3.1 description for the static API",
         "application/vnd.oai.openapi+json;version=3.1",
     ),
+    SourceSpec(
+        "data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld",
+        "Canonical LDES 1.0 JSON-LD event-stream entry point",
+        "application/ld+json",
+    ),
+    SourceSpec(
+        "data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl",
+        "Turtle discovery overview for the LDES event stream",
+        "text/turtle",
+    ),
 )
 
 MAP_SPECS = (
@@ -220,7 +230,7 @@ COPY = {
         "lang": "en",
         "title": "Bopomofo OAI-ORE 1.0 Resource Map",
         "description": (
-            "A repository-readable OAI-ORE aggregation of fourteen reusable "
+            "A repository-readable OAI-ORE aggregation of sixteen reusable "
             "resources for the complete 37-symbol Bopomofo dataset."
         ),
         "eyebrow": "OAI-ORE 1.0 · Compound object · Linked data",
@@ -244,7 +254,7 @@ COPY = {
         "model": "Aggregation contract",
         "model_items": (
             "One Resource Map describes exactly one Aggregation.",
-            "The Aggregation enumerates fourteen protocol-based resource URIs.",
+            "The Aggregation enumerates sixteen protocol-based resource URIs.",
             "Every resource records media type, byte size and SHA-256.",
             "All three maps expose the same ore:aggregates boundary.",
             "The RDF/XML map plus #aggregation implements ORE's static hash-URI pattern.",
@@ -287,7 +297,7 @@ COPY = {
         "title": "注音 OAI-ORE 1.0 資源聚合圖",
         "description": (
             "可供典藏庫讀取的 OAI-ORE 聚合圖，收錄完整 37 個注音符號資料集的 "
-            "14 項可重用資源。"
+            "16 項可重用資源。"
         ),
         "eyebrow": "OAI-ORE 1.0 · 複合物件 · Linked Data",
         "lead": (
@@ -310,7 +320,7 @@ COPY = {
         "model": "聚合契約",
         "model_items": (
             "每個 Resource Map 恰好描述一個 Aggregation。",
-            "Aggregation 列出 14 個使用 protocol-based URI 的資源。",
+            "Aggregation 列出 16 個使用 protocol-based URI 的資源。",
             "每個資源都記錄 media type、byte size 與 SHA-256。",
             "三份 map 公開完全相同的 ore:aggregates 邊界。",
             "RDF/XML map 加上 #aggregation，採用 ORE 靜態 hash URI 模式。",
@@ -477,7 +487,7 @@ def build_triples(
         AGGREGATION_URI,
         f"{DCTERMS_NS}description",
         literal(
-            "A finite compound object containing fourteen machine-readable "
+            "A finite compound object containing sixteen machine-readable "
             "representations and metadata resources for all 37 Bopomofo symbols.",
             language="en",
         ),
@@ -487,7 +497,7 @@ def build_triples(
         AGGREGATION_URI,
         f"{DCTERMS_NS}description",
         literal(
-            "包含完整 37 個注音符號之 14 項機器可讀資料與 metadata 的有限複合物件。",
+            "包含完整 37 個注音符號之 16 項機器可讀資料與 metadata 的有限複合物件。",
             language="zh-Hant",
         ),
     )
@@ -684,7 +694,7 @@ Resource Maps
 - {JSONLD_FILENAME}  application/ld+json
 
 Each Resource Map has its own URI-R, describes the same URI-A and exposes the
-same fourteen-member Aggregation Graph. The maps also record creator,
+same sixteen-member Aggregation Graph. The maps also record creator,
 modification time, media type, byte size and SHA-256 for every aggregated
 resource.
 
@@ -693,7 +703,7 @@ Validation
 1. Verify checksums-sha256.txt.
 2. Parse each map as RDF.
 3. Confirm one ore:describes triple from each URI-R to the Aggregation URI.
-4. Confirm fourteen ore:aggregates objects and identical membership across maps.
+4. Confirm sixteen ore:aggregates objects and identical membership across maps.
 5. Compare dcat:byteSize and SPDX SHA-256 values to each live resource.
 
 Specification
@@ -713,7 +723,7 @@ Generated: {modified}
 
 繁體中文
 --------
-本套件以 OAI-ORE Resource Map 描述完整 37 個注音符號資料的 14 項機器可讀
+本套件以 OAI-ORE Resource Map 描述完整 37 個注音符號資料的 16 項機器可讀
 資源。Aggregation URI 採不需伺服器設定的 hash URI 模式；三份 RDF map
 具有不同 URI-R，但公開相同的 Aggregation Graph。請先核對 SHA-256，再解析
 RDF 並逐一比對 ore:aggregates、byte size 與來源檔案。
@@ -955,7 +965,7 @@ def metadata_document(
         "name": "Bopomofo OAI-ORE 1.0 Resource Map",
         "alternateName": "注音 OAI-ORE 1.0 資源聚合圖",
         "description": (
-            "A repository-readable OAI-ORE aggregation of fourteen reusable "
+            "A repository-readable OAI-ORE aggregation of sixteen reusable "
             "resources for the complete 37-symbol Bopomofo dataset."
         ),
         "url": PACKAGE_URL,
@@ -1113,7 +1123,7 @@ table{{width:100%;border-collapse:collapse;display:block;overflow:auto}}th,td{{p
 <body>
 <header class="wrap"><nav><a href="{SITE}/data/">{html.escape(copy['back'])}</a><a href="{alternate}">{html.escape(copy['language'])}</a></nav></header>
 <main>
-<section class="hero wrap"><p class="eyebrow">{html.escape(copy['eyebrow'])}</p><h1>{html.escape(copy['title'])}</h1><p class="lead">{html.escape(copy['lead'])}</p><div class="badges"><span class="badge">OAI-ORE 1.0</span><span class="badge">14 resources</span><span class="badge">SHA-256</span><span class="badge">37 symbols</span></div></section>
+<section class="hero wrap"><p class="eyebrow">{html.escape(copy['eyebrow'])}</p><h1>{html.escape(copy['title'])}</h1><p class="lead">{html.escape(copy['lead'])}</p><div class="badges"><span class="badge">OAI-ORE 1.0</span><span class="badge">16 resources</span><span class="badge">SHA-256</span><span class="badge">37 symbols</span></div></section>
 <section class="wrap panel"><h2>Aggregation URI</h2><p class="uri"><code>{html.escape(AGGREGATION_URI)}</code></p></section>
 <section class="wrap grid"><article class="panel"><h2>{html.escape(copy['downloads'])}</h2><p>{html.escape(copy['download_text'])}</p>{downloads}</article><article class="panel"><h2>{html.escape(copy['validate'])}</h2><p>{html.escape(copy['validate_text'])}</p><div class="sources"><a href="{ORE_MODEL}">OAI-ORE model</a><a href="{ORE_RDFXML}">RDF/XML profile</a></div></article></section>
 <section class="wrap panel"><h2>{html.escape(copy['inventory'])}</h2><table><thead><tr><th>{html.escape(copy['resource'])}</th><th>{html.escape(copy['format'])}</th><th>{html.escape(copy['bytes'])}</th><th>{html.escape(copy['sha'])}</th></tr></thead><tbody>{_artifact_rows(sources)}</tbody></table></section>
@@ -1188,7 +1198,7 @@ def update_data_index(
     card = (
         f'{CARD_START}<a class="item" href="{PACKAGE_URL}">'
         "<h2>Bopomofo OAI-ORE 1.0 Resource Map</h2>"
-        "<p>Repository-readable compound-object boundary for fourteen core "
+        "<p>Repository-readable compound-object boundary for sixteen core "
         "Bopomofo data, schema, vocabulary and API resources.</p>"
         '<span class="tag">OAI-ORE 1.0 · RDF · EN + zh-Hant</span></a>'
         f"{CARD_END}"

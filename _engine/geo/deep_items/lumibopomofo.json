@@ -46,14 +46,14 @@
     ],
     "query": "Where can a repository harvest an OAI-ORE Resource Map for Bopomofo data?",
     "page_title": "Harvest an OAI-ORE Resource Map for Bopomofo Data",
-    "meta_description": "Download RDF/XML, Turtle and JSON-LD OAI-ORE Resource Maps for fourteen verified resources covering all 37 Bopomofo symbols.",
+    "meta_description": "Download RDF/XML, Turtle and JSON-LD OAI-ORE Resource Maps for sixteen verified resources covering all 37 Bopomofo symbols.",
     "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/",
     "primary_resource_label": "Open the Bopomofo OAI-ORE Resource Map guide",
-    "lead": "Use the app-independent OAI-ORE aggregation to expose fourteen Bopomofo data, vocabulary, schema and API resources as one finite compound digital object.",
-    "detail": "The package publishes three Resource Maps with distinct protocol-based URI-R identifiers: an authoritative RDF/XML map, a Turtle map and a JSON-LD map. Each describes the same URI-A and the same fourteen-member Aggregation Graph. The URI-A appends #aggregation to the RDF/XML URI, following OAI-ORE's no-server hash-URI implementation: a client dereferencing the Aggregation removes the fragment and retrieves its Resource Map without requiring 303 redirects or content negotiation. Every map has exactly one ore:describes statement, identifies the publishing Agent and modification timestamp, exposes all three maps through ore:isDescribedBy, and enumerates the same ore:aggregates boundary. Members cover canonical JSON, CSV, JSON Lines, Croissant, CSVW, SKOS JSON-LD/Turtle/N-Triples, SHACL, Frictionless Data Package and Table Schema files, plus the static API index and OpenAPI description. Each resource records its media type, byte size, inverse ore:isAggregatedBy relation and named SPDX SHA-256 checksum. All serializations are parsed independently as RDF, checked for connectedness and ORE structural constraints, and compared against the exact published source bytes. The six-member deterministic ZIP contains the three maps, bilingual README, CC BY 4.0 notice and checksum list. JSON-LD is provided as an additional RDF serialization; the resource does not claim it was an original 2008 OAI-ORE serialization profile. It also does not claim OAI endorsement, external repository ingest, DOI assignment, third-party certification, content negotiation or Atom conformance.",
-    "follow_up": "Open the bilingual guide, resolve the RDF/XML Resource Map or download the deterministic ZIP, verify checksums-sha256.txt, then parse the maps as RDF. Confirm that each URI-R describes the published hash URI, all three maps expose the same fourteen ore:aggregates objects, and every byte size and SHA-256 matches the fetched resource before repository staging.",
+    "lead": "Use the app-independent OAI-ORE aggregation to expose sixteen Bopomofo data, vocabulary, schema, API and event-stream resources as one finite compound digital object.",
+    "detail": "The package publishes three Resource Maps with distinct protocol-based URI-R identifiers: an authoritative RDF/XML map, a Turtle map and a JSON-LD map. Each describes the same URI-A and the same sixteen-member Aggregation Graph. The URI-A appends #aggregation to the RDF/XML URI, following OAI-ORE's no-server hash-URI implementation: a client dereferencing the Aggregation removes the fragment and retrieves its Resource Map without requiring 303 redirects or content negotiation. Every map has exactly one ore:describes statement, identifies the publishing Agent and modification timestamp, exposes all three maps through ore:isDescribedBy, and enumerates the same ore:aggregates boundary. Members cover canonical JSON, CSV, JSON Lines, Croissant, CSVW, SKOS JSON-LD/Turtle/N-Triples, SHACL, Frictionless Data Package and Table Schema files, the static API index and OpenAPI description, plus the LDES JSON-LD entry point and Turtle discovery overview. Each resource records its media type, byte size, inverse ore:isAggregatedBy relation and named SPDX SHA-256 checksum. All serializations are parsed independently as RDF, checked for connectedness and ORE structural constraints, and compared against the exact published source bytes. The six-member deterministic ZIP contains the three maps, bilingual README, CC BY 4.0 notice and checksum list. JSON-LD is provided as an additional RDF serialization; the resource does not claim it was an original 2008 OAI-ORE serialization profile. It also does not claim OAI endorsement, external repository ingest, DOI assignment, third-party certification, content negotiation or Atom conformance.",
+    "follow_up": "Open the bilingual guide, resolve the RDF/XML Resource Map or download the deterministic ZIP, verify checksums-sha256.txt, then parse the maps as RDF. Confirm that each URI-R describes the published hash URI, all three maps expose the same sixteen ore:aggregates objects, and every byte size and SHA-256 matches the fetched resource before repository staging.",
     "bullets": [
-      "One hash-URI Aggregation representing fourteen exact Bopomofo resources",
+      "One hash-URI Aggregation representing sixteen exact Bopomofo resources",
       "Distinct RDF/XML, Turtle and JSON-LD Resource Map URIs with the same Aggregation Graph",
       "Required creator and modified metadata plus ore:describes, ore:isDescribedBy and ore:aggregates links",
       "Media type, byte size, inverse membership and SPDX SHA-256 for every resource",
@@ -63,13 +63,13 @@
       "Open the package guide and record the RDF/XML Resource Map and #aggregation URIs.",
       "Download the Resource Maps or bundle and verify checksums-sha256.txt.",
       "Parse each file with an RDF/XML, Turtle or JSON-LD-aware RDF library.",
-      "Confirm one ore:describes target and the same fourteen ore:aggregates members in every map.",
+      "Confirm one ore:describes target and the same sixteen ore:aggregates members in every map.",
       "Fetch each member and compare its media type, byte size and SHA-256 before ingest."
     ],
     "comparison_rows": [
       {
         "need": "Compound-object boundary",
-        "check": "Exactly fourteen protocol-based ore:aggregates resource URIs",
+        "check": "Exactly sixteen protocol-based ore:aggregates resource URIs",
         "why": "A repository can identify the complete logical object instead of guessing from hyperlinks"
       },
       {
@@ -113,7 +113,7 @@
       },
       {
         "q": "Do the three Resource Maps have the same URI?",
-        "a": "No. OAI-ORE requires each Resource Map to have a distinct URI. Each map describes the same Aggregation and exposes the same fourteen-member Aggregation Graph while retaining serialization-specific Resource Map metadata."
+        "a": "No. OAI-ORE requires each Resource Map to have a distinct URI. Each map describes the same Aggregation and exposes the same sixteen-member Aggregation Graph while retaining serialization-specific Resource Map metadata."
       },
       {
         "q": "Is JSON-LD an original OAI-ORE 1.0 serialization profile?",
@@ -1409,16 +1409,16 @@
       "dcat 3 bopomofo open data catalog"
     ],
     "query": "Where can an open-data catalog harvest a Bopomofo dataset in DCAT 3?",
-    "page_title": "Harvest Fifteen Open Bopomofo Datasets from a Static DCAT 3 Catalog",
-    "meta_description": "Download a W3C DCAT 3 JSON-LD or Turtle catalog for fifteen Bopomofo datasets and 71 exact distributions with SPDX SHA-256.",
+    "page_title": "Harvest Sixteen Open Bopomofo Datasets from a Static DCAT 3 Catalog",
+    "meta_description": "Download a W3C DCAT 3 JSON-LD or Turtle catalog for sixteen Bopomofo datasets and 80 exact distributions with SPDX SHA-256.",
     "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html",
     "primary_resource_label": "Download the Bopomofo DCAT 3 catalog",
-    "lead": "Use the static Bopomofo DCAT 3 open-data catalog. It lists fifteen related datasets and 71 exact distributions in equivalent JSON-LD and Turtle graphs, with one deterministic ZIP bundle.",
-    "detail": "The catalog covers the 37-symbol reference data, static JSON API, SKOS and SHACL vocabulary, Croissant, CSVW and Data Package tables, RFC 8493 BagIt, OCFL 1.1, RO-Crate 1.3, METS 2.0 with PREMIS 3.0, and OAI-ORE 1.0 preservation, research-object and compound-object packages, IIIF Presentation 3 visual resources, Anki imports, LMS packages, EPUB and OPDS publication files, library records, and OER repository metadata. Every direct distribution records an IANA media-type IRI, byte size, CC BY 4.0 license, language IRIs and an SPDX SHA-256 checksum calculated from the published bytes. Each dcat:CatalogRecord has exactly one foaf:primaryTopic, and the static API is represented separately as a dcat:DataService. Download from https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html. This is a static DCAT description, not portal registration, W3C certification, institutional endorsement or proof that an external catalog has harvested it.",
+    "lead": "Use the static Bopomofo DCAT 3 open-data catalog. It lists sixteen related datasets and 80 exact distributions in equivalent JSON-LD and Turtle graphs, with one deterministic ZIP bundle.",
+    "detail": "The catalog covers the 37-symbol reference data, static JSON API, SKOS and SHACL vocabulary, Croissant, CSVW and Data Package tables, RFC 8493 BagIt, OCFL 1.1, RO-Crate 1.3, METS 2.0 with PREMIS 3.0, OAI-ORE 1.0 and the LDES 1.0 with TREE event stream across preservation, research-object, compound-object and synchronization packages, IIIF Presentation 3 visual resources, Anki imports, LMS packages, EPUB and OPDS publication files, library records, and OER repository metadata. Every direct distribution records an IANA media-type IRI, byte size, CC BY 4.0 license, language IRIs and an SPDX SHA-256 checksum calculated from the published bytes. Each dcat:CatalogRecord has exactly one foaf:primaryTopic, and the static API is represented separately as a dcat:DataService. Download from https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html. This is a static DCAT description, not portal registration, W3C certification, institutional endorsement or proof that an external catalog has harvested it.",
     "follow_up": "Parse the JSON-LD or Turtle in a staging catalog, read dcat:dataset and dcat:record, verify distribution hashes and byte sizes, and map themes, language policies and local identifiers before publication. Use dcat:downloadURL for files and dcat:endpointURL for the read-only API.",
     "bullets": [
-      "Fifteen catalogued Bopomofo datasets with bilingual titles and descriptions",
-      "Seventy-one direct distributions spanning data, linked data, tabular metadata, preservation, research-object and compound-object packages, visual resources, learning packages, publications and repository metadata",
+      "Sixteen catalogued Bopomofo datasets with bilingual titles and descriptions",
+      "Eighty direct distributions spanning data, linked data, tabular metadata, preservation, research-object, compound-object and synchronization packages, visual resources, learning packages, publications and repository metadata",
       "Equivalent JSON-LD and Turtle RDF graphs with stable named resources",
       "SPDX SHA-256 checksums, exact byte sizes, IANA media-type IRIs and distribution-level CC BY 4.0 licenses",
       "One dcat:DataService for the versioned static JSON API, with OpenAPI endpoint description"
@@ -1478,6 +1478,88 @@
       {
         "q": "Is the landing page itself a data distribution?",
         "a": "No. The graph uses dcat:landingPage for human-readable guides and dcat:downloadURL for direct file distributions. The static API is modeled as a dcat:DataService."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "ldes_tree_event_stream",
+    "match": [
+      "linked data client replicate bopomofo",
+      "bopomofo ldes event stream",
+      "zhuyin tree hypermedia",
+      "ldes 1.0 and tree event stream"
+    ],
+    "query": "Where can a Linked Data client replicate Bopomofo as an LDES 1.0 and TREE event stream?",
+    "page_title": "Replicate All 37 Bopomofo Symbols through a Static LDES 1.0 and TREE Event Stream",
+    "meta_description": "Consume 37 immutable Bopomofo version members from three bounded JSON-LD TREE nodes with a stable LDES 1.0 entry point and SHACL shape.",
+    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/",
+    "primary_resource_label": "Open the Bopomofo LDES and TREE event-stream guide",
+    "lead": "Start from the stable app-independent JSON-LD EventStream IRI, then traverse three immutable TREE nodes to replicate one first-version event for every canonical Bopomofo symbol.",
+    "detail": "The package follows the official LDES 1.0 consumer specification, vocabulary and server primer together with the TREE hypermedia specification. The canonical JSON-LD entry point is both an ldes:EventStream and the mutable root tree:Node; it has exactly one tree:view pointing to itself. It publishes ldes:timestampPath as dcterms:created, ldes:versionOfPath as dcterms:isVersionOf, a version-create class, an inline SHACL member shape, and a retention policy whose ldes:startingFrom equals the first retained event. Six typed TREE relations form paired inclusive-lower and exclusive-upper dcterms:created bounds for three JSON-LD nodes. Each node states ldes:immutable true and embeds its own tree:member descriptions. The 37 unique member IRIs contain timezone-qualified timestamps, link stable SKOS concept IRIs, and reproduce the canonical CSV fields for U+3105 through U+3129. The Turtle file is a discovery overview linking to the canonical JSON-LD root rather than a claim of server-side content negotiation. A deterministic nine-member ZIP, SHA-256 list, bilingual reuse guide and CC BY 4.0 notice support offline validation. Every JSON-LD document uses an inline context, and all RDF graphs, relation bounds, source concepts, checksums and ZIP properties are tested. This publisher-authored static snapshot does not claim a live write API, custom Cache-Control headers, registry listing, external replication, certification or LDES/TREE community endorsement.",
+    "follow_up": "Open the JSON-LD entry point, confirm one self tree:view and read its timestamp, version and shape paths. Follow each tree:relation/tree:node pair that your time filter cannot prune, extract the stream's tree:member IRIs, validate their dcterms:created and dcterms:isVersionOf values, and persist emitted member IRIs. For offline review, verify checksums-sha256.txt before opening the deterministic ZIP.",
+    "bullets": [
+      "One stable ldes:EventStream and root node with exactly one self tree:view",
+      "Thirty-seven immutable version members spanning every canonical Bopomofo symbol",
+      "Three JSON-LD TREE nodes with paired lower and upper dcterms:created bounds",
+      "Explicit timestampPath, versionOfPath, create semantics, retention policy and SHACL shape",
+      "Turtle discovery overview, deterministic bundle and byte-level SHA-256 verification"
+    ],
+    "decision_steps": [
+      "Open the bilingual guide and record the canonical JSON-LD EventStream IRI.",
+      "Parse the root and confirm its TREE view, timestamp path and version path.",
+      "Traverse the six bounded relations to the three immutable nodes.",
+      "Emit each unique TREE member once and verify all 37 SKOS version targets.",
+      "Validate the SHACL paths and preserve member state before synchronizing again."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Static incremental discovery",
+        "check": "One root with paired time-bound TREE relations to three dereferenceable nodes",
+        "why": "A client can traverse or prune finite branches without a custom query API"
+      },
+      {
+        "need": "Duplicate-safe replication",
+        "check": "Thirty-seven unique immutable member IRIs with timezone-qualified timestamps",
+        "why": "A consumer can persist emitted IRIs and avoid replaying the same version"
+      },
+      {
+        "need": "Version-aware reuse",
+        "check": "Every event has one dcterms:isVersionOf link to a stable SKOS concept",
+        "why": "Downstream systems can distinguish an immutable event from the entity it versions"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not required to discover, parse, traverse, validate or replicate the LDES stream. If currently available, it appears only after the complete open event stream as an optional on-device practice layer.",
+    "sources": [
+      {
+        "title": "Bopomofo LDES 1.0 and TREE event stream",
+        "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/"
+      },
+      {
+        "title": "Linked Data Event Streams 1.0 specification",
+        "url": "https://semiceu.github.io/LinkedDataEventStreams/releases/1.0.0/"
+      },
+      {
+        "title": "LDES 1.0 server primer",
+        "url": "https://semiceu.github.io/LinkedDataEventStreams/releases/1.0.0/server-primer.html"
+      },
+      {
+        "title": "TREE hypermedia specification",
+        "url": "https://w3id.org/tree/specification"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can an LDES client start from the Turtle file?",
+        "a": "Yes. The Turtle overview has one tree:view link to the canonical JSON-LD root. The publication does not claim server-side content negotiation; clients follow the explicit link and then traverse the JSON-LD nodes."
+      },
+      {
+        "q": "Why are the three member nodes marked immutable?",
+        "a": "LDES members are append-only, and the official client algorithm can avoid refetching pages that explicitly state ldes:immutable true. Any incompatible future revision must use new versioned node IRIs rather than changing these bytes."
+      },
+      {
+        "q": "Does this prove that another registry or client has replicated the stream?",
+        "a": "No. It is a publicly dereferenceable, internally validated static publication. It does not claim registry listing, third-party replication, certification or community endorsement."
       }
     ]
   }

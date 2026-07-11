@@ -100,6 +100,96 @@
       ]
     },
     {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld",
+      "dcterms:format": [
+        "application/ld+json"
+      ],
+      "dcterms:title": [
+        {
+          "@value": "Canonical LDES 1.0 JSON-LD event-stream entry point",
+          "@language": "en"
+        }
+      ],
+      "spdx:checksum": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#sha256"
+        }
+      ],
+      "ore:isAggregatedBy": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+        }
+      ],
+      "dcat:byteSize": [
+        {
+          "@value": "11113",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#sha256",
+      "spdx:algorithm": [
+        {
+          "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+        }
+      ],
+      "spdx:checksumValue": [
+        {
+          "@value": "c0ef478f3dee33ee0c268d94bcb317a03b9658b74522ae2992946c6a27c6d0f0",
+          "@type": "http://www.w3.org/2001/XMLSchema#hexBinary"
+        }
+      ],
+      "@type": [
+        "http://spdx.org/rdf/terms#Checksum"
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl",
+      "dcterms:format": [
+        "text/turtle"
+      ],
+      "dcterms:title": [
+        {
+          "@value": "Turtle discovery overview for the LDES event stream",
+          "@language": "en"
+        }
+      ],
+      "spdx:checksum": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl#sha256"
+        }
+      ],
+      "ore:isAggregatedBy": [
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+        }
+      ],
+      "dcat:byteSize": [
+        {
+          "@value": "15139",
+          "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        }
+      ]
+    },
+    {
+      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl#sha256",
+      "spdx:algorithm": [
+        {
+          "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
+        }
+      ],
+      "spdx:checksumValue": [
+        {
+          "@value": "0f894e4ccf73b166b4e560daa68bf3ef5a533b7532f6c3b9262504ed6306bb23",
+          "@type": "http://www.w3.org/2001/XMLSchema#hexBinary"
+        }
+      ],
+      "@type": [
+        "http://spdx.org/rdf/terms#Checksum"
+      ]
+    },
+    {
       "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher",
       "@type": [
         "http://purl.org/dc/terms/Agent",
@@ -124,7 +214,7 @@
       ],
       "dcterms:modified": [
         {
-          "@value": "2026-07-11T20:52:12Z",
+          "@value": "2026-07-11T21:45:19Z",
           "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
         }
       ],
@@ -159,11 +249,11 @@
       ],
       "dcterms:description": [
         {
-          "@value": "A finite compound object containing fourteen machine-readable representations and metadata resources for all 37 Bopomofo symbols.",
+          "@value": "A finite compound object containing sixteen machine-readable representations and metadata resources for all 37 Bopomofo symbols.",
           "@language": "en"
         },
         {
-          "@value": "包含完整 37 個注音符號之 14 項機器可讀資料與 metadata 的有限複合物件。",
+          "@value": "包含完整 37 個注音符號之 16 項機器可讀資料與 metadata 的有限複合物件。",
           "@language": "zh-Hant"
         }
       ],
@@ -188,6 +278,12 @@
         },
         {
           "@id": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/openapi.json"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld"
+        },
+        {
+          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl"
         },
         {
           "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json"

@@ -30,7 +30,7 @@ HERE = Path(__file__).resolve().parent
 PAGES = HERE / "pages"
 INITIAL_DATE = "2026-07-11"
 TODAY = dt.date.today().isoformat()
-VERSION = "1.4.0"
+VERSION = "1.5.0"
 
 SLUG = "zhuyin-bopomofo-dcat3-open-data-catalog"
 PACKAGE_PATH = Path("data") / "packages" / "zhuyin-bopomofo-dcat3"
@@ -432,6 +432,50 @@ DATASETS = (
         ),
     ),
     DatasetSpec(
+        key="ldes",
+        title_en="Bopomofo LDES 1.0 and TREE event stream",
+        title_zh="注音 LDES 1.0 與 TREE 事件流",
+        description_en=(
+            "A static version-aware event stream with 37 immutable members, "
+            "three bounded JSON-LD TREE nodes, a Turtle discovery overview "
+            "and a SHACL member shape."
+        ),
+        description_zh=(
+            "具版本語意的靜態事件流，包含 37 個 immutable member、三個有時間"
+            "邊界的 JSON-LD TREE node、Turtle discovery overview 與 SHACL shape。"
+        ),
+        landing_path="data/packages/zhuyin-bopomofo-ldes/",
+        metadata_path=(
+            "data/packages/zhuyin-bopomofo-ldes/metadata.jsonld"
+        ),
+        distribution_paths=(
+            "data/packages/zhuyin-bopomofo-ldes/"
+            "bopomofo-37-symbols-ldes-tree.zip",
+            "data/packages/zhuyin-bopomofo-ldes/"
+            "bopomofo-event-stream.jsonld",
+            "data/packages/zhuyin-bopomofo-ldes/"
+            "bopomofo-event-stream.ttl",
+            "data/packages/zhuyin-bopomofo-ldes/nodes/page-001.jsonld",
+            "data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld",
+            "data/packages/zhuyin-bopomofo-ldes/nodes/page-003.jsonld",
+            "data/packages/zhuyin-bopomofo-ldes/"
+            "bopomofo-event-member.shacl.ttl",
+            "data/packages/zhuyin-bopomofo-ldes/checksums-sha256.txt",
+            "data/packages/zhuyin-bopomofo-ldes/metadata.jsonld",
+        ),
+        keywords=(
+            "LDES 1.0",
+            "TREE hypermedia",
+            "Linked Data Event Streams",
+            "immutable RDF events",
+        ),
+        conforms_to=(
+            "https://semiceu.github.io/LinkedDataEventStreams/releases/1.0.0/",
+            "https://w3id.org/tree/specification",
+            "https://www.w3.org/TR/shacl/",
+        ),
+    ),
+    DatasetSpec(
         key="anki",
         title_en="Bopomofo Anki import decks",
         title_zh="注音 Anki 匯入牌組",
@@ -574,8 +618,8 @@ COPY = {
         "lang": "en",
         "title": "DCAT 3 open-data catalog for Bopomofo resources",
         "description": (
-            "Download a static W3C DCAT 3 catalog covering fifteen verified "
-            "Bopomofo datasets and 71 exact distributions."
+            "Download a static W3C DCAT 3 catalog covering sixteen verified "
+            "Bopomofo datasets and 80 exact distributions."
         ),
         "eyebrow": "W3C DCAT 3 · JSON-LD + Turtle · SHA-256",
         "lead": (
@@ -586,8 +630,8 @@ COPY = {
         "back": "Open data",
         "language": "繁體中文",
         "badges": (
-            "15 catalogued datasets",
-            "71 exact distributions",
+            "16 catalogued datasets",
+            "80 exact distributions",
             "SPDX SHA-256 fixity",
             "No account or API key",
         ),
@@ -608,7 +652,8 @@ COPY = {
                 "Reference and linked data",
                 "Core JSON, SKOS, SHACL, Croissant, CSVW, CSV, JSON Lines, "
                 "Data Package 2.0, RFC 8493 BagIt, OCFL 1.1, IIIF Presentation 3, "
-                "RO-Crate 1.3, METS 2.0 with PREMIS 3.0 and OAI-ORE 1.0.",
+                "RO-Crate 1.3, METS 2.0 with PREMIS 3.0, OAI-ORE 1.0 "
+                "and LDES 1.0 with TREE.",
             ),
             (
                 "Learning and publication files",
@@ -659,7 +704,7 @@ COPY = {
         "lang": "zh-Hant",
         "title": "注音開放資源 DCAT 3 資料目錄",
         "description": (
-            "下載靜態 W3C DCAT 3 目錄，收錄 15 組已驗證注音資料集與 71 個精確版本。"
+            "下載靜態 W3C DCAT 3 目錄，收錄 16 組已驗證注音資料集與 80 個精確版本。"
         ),
         "eyebrow": "W3C DCAT 3 · JSON-LD＋Turtle · SHA-256",
         "lead": (
@@ -669,8 +714,8 @@ COPY = {
         "back": "開放資料",
         "language": "English",
         "badges": (
-            "15 組目錄資料集",
-            "71 個精確版本",
+            "16 組目錄資料集",
+            "80 個精確版本",
             "SPDX SHA-256 fixity",
             "免帳號與 API key",
         ),
@@ -691,7 +736,8 @@ COPY = {
                 "參考資料與 linked data",
                 "核心 JSON、SKOS、SHACL、Croissant、CSVW、CSV、JSON Lines、"
                 "Data Package 2.0、RFC 8493 BagIt、OCFL 1.1、IIIF Presentation 3、"
-                "RO-Crate 1.3、METS 2.0 與 PREMIS 3.0，以及 OAI-ORE 1.0。",
+                "RO-Crate 1.3、METS 2.0 與 PREMIS 3.0、OAI-ORE 1.0，"
+                "以及搭配 TREE 的 LDES 1.0。",
             ),
             (
                 "學習與出版檔案",
@@ -1753,7 +1799,7 @@ def _update_data_index(
         f'{CARD_START}<a class="item" href="{LANDING_URL}"><div>'
         '<span class="tag">W3C DCAT 3 · JSON-LD · Turtle</span>'
         "<h2>Bopomofo open-data catalog</h2>"
-        "<p>Fifteen datasets and 71 exact distributions with SPDX SHA-256 "
+        "<p>Sixteen datasets and 80 exact distributions with SPDX SHA-256 "
         "fixity and bilingual metadata.</p></div>"
         f'<span class="arrow">&rarr;</span></a>{CARD_END}'
     )

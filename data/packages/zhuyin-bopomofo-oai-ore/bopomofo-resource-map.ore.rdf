@@ -24,6 +24,30 @@
     <spdx:checksumValue rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">9ba0af494930aede38462f542ff9d5dc691a37e14cd9cf166ca491ad6b956211</spdx:checksumValue>
     <rdf:type rdf:resource="http://spdx.org/rdf/terms#Checksum" />
   </rdf:Description>
+  <rdf:Description rdf:about="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld">
+    <dcterms:format>application/ld+json</dcterms:format>
+    <dcterms:title xml:lang="en">Canonical LDES 1.0 JSON-LD event-stream entry point</dcterms:title>
+    <spdx:checksum rdf:resource="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#sha256" />
+    <ore:isAggregatedBy rdf:resource="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation" />
+    <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11113</dcat:byteSize>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#sha256">
+    <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha256" />
+    <spdx:checksumValue rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">c0ef478f3dee33ee0c268d94bcb317a03b9658b74522ae2992946c6a27c6d0f0</spdx:checksumValue>
+    <rdf:type rdf:resource="http://spdx.org/rdf/terms#Checksum" />
+  </rdf:Description>
+  <rdf:Description rdf:about="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl">
+    <dcterms:format>text/turtle</dcterms:format>
+    <dcterms:title xml:lang="en">Turtle discovery overview for the LDES event stream</dcterms:title>
+    <spdx:checksum rdf:resource="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl#sha256" />
+    <ore:isAggregatedBy rdf:resource="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation" />
+    <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15139</dcat:byteSize>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl#sha256">
+    <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha256" />
+    <spdx:checksumValue rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">0f894e4ccf73b166b4e560daa68bf3ef5a533b7532f6c3b9262504ed6306bb23</spdx:checksumValue>
+    <rdf:type rdf:resource="http://spdx.org/rdf/terms#Checksum" />
+  </rdf:Description>
   <rdf:Description rdf:about="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher">
     <rdf:type rdf:resource="http://purl.org/dc/terms/Agent" />
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization" />
@@ -32,7 +56,7 @@
   <rdf:Description rdf:about="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf">
     <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-11T00:00:00Z</dcterms:created>
     <dcterms:creator rdf:resource="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-11T20:52:12Z</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-11T21:45:19Z</dcterms:modified>
     <dcterms:rights rdf:resource="https://creativecommons.org/licenses/by/4.0/" />
     <ore:describes rdf:resource="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation" />
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/ResourceMap" />
@@ -41,13 +65,15 @@
     <dcterms:conformsTo rdf:resource="https://www.openarchives.org/ore/1.0/datamodel" />
     <dcterms:conformsTo rdf:resource="https://www.openarchives.org/ore/1.0/vocabulary" />
     <dcterms:creator rdf:resource="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher" />
-    <dcterms:description xml:lang="en">A finite compound object containing fourteen machine-readable representations and metadata resources for all 37 Bopomofo symbols.</dcterms:description>
-    <dcterms:description xml:lang="zh-Hant">包含完整 37 個注音符號之 14 項機器可讀資料與 metadata 的有限複合物件。</dcterms:description>
+    <dcterms:description xml:lang="en">A finite compound object containing sixteen machine-readable representations and metadata resources for all 37 Bopomofo symbols.</dcterms:description>
+    <dcterms:description xml:lang="zh-Hant">包含完整 37 個注音符號之 16 項機器可讀資料與 metadata 的有限複合物件。</dcterms:description>
     <dcterms:rights rdf:resource="https://creativecommons.org/licenses/by/4.0/" />
     <dcterms:title xml:lang="en">Bopomofo 37-symbol open-data aggregation</dcterms:title>
     <dcterms:title xml:lang="zh-Hant">注音 37 符號開放資料聚合</dcterms:title>
     <ore:aggregates rdf:resource="https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.json" />
     <ore:aggregates rdf:resource="https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/openapi.json" />
+    <ore:aggregates rdf:resource="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld" />
+    <ore:aggregates rdf:resource="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl" />
     <ore:aggregates rdf:resource="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json" />
     <ore:aggregates rdf:resource="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv" />
     <ore:aggregates rdf:resource="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json" />

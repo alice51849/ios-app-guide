@@ -1,0 +1,126 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "url": {
+      "@type": "@id"
+    },
+    "license": {
+      "@type": "@id"
+    },
+    "contentUrl": {
+      "@type": "@id"
+    },
+    "conformsTo": {
+      "@type": "@id"
+    },
+    "isPartOf": {
+      "@type": "@id"
+    }
+  },
+  "@type": [
+    "Dataset",
+    "LearningResource"
+  ],
+  "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld",
+  "identifier": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld",
+  "name": "Bopomofo LDES 1.0 + TREE event stream",
+  "alternateName": "注音 LDES 1.0 與 TREE 事件流",
+  "description": "Replicate a complete app-independent Bopomofo snapshot through LDES 1.0 and TREE using 37 immutable version members.",
+  "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/",
+  "version": "1.0.0",
+  "datePublished": "2026-07-11",
+  "dateModified": "2026-07-11T21:36:15Z",
+  "inLanguage": [
+    "en",
+    "zh-Hant"
+  ],
+  "isAccessibleForFree": true,
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": {
+    "@type": "Organization",
+    "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#publisher",
+    "name": "iOS App Guide Open Resources"
+  },
+  "conformsTo": [
+    "https://semiceu.github.io/LinkedDataEventStreams/releases/1.0.0/",
+    "https://w3id.org/tree/specification",
+    "https://www.w3.org/TR/json-ld11/",
+    "https://www.w3.org/TR/shacl/"
+  ],
+  "isPartOf": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation",
+  "numberOfItems": 37,
+  "keywords": [
+    "Linked Data Event Streams",
+    "LDES 1.0",
+    "TREE hypermedia",
+    "Bopomofo",
+    "Zhuyin",
+    "immutable RDF events"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "Canonical LDES JSON-LD entry point",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld",
+      "encodingFormat": "application/ld+json",
+      "contentSize": 11113,
+      "sha256": "c0ef478f3dee33ee0c268d94bcb317a03b9658b74522ae2992946c6a27c6d0f0"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Turtle discovery overview",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl",
+      "encodingFormat": "text/turtle",
+      "contentSize": 15139,
+      "sha256": "0f894e4ccf73b166b4e560daa68bf3ef5a533b7532f6c3b9262504ed6306bb23"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Immutable TREE node page-001",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-001.jsonld",
+      "encodingFormat": "application/ld+json",
+      "contentSize": 33626,
+      "sha256": "3e78edefbc852bce23a3f2ed066fea87ab963195c6073f2a3f6d901cf9bc87c1"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Immutable TREE node page-002",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld",
+      "encodingFormat": "application/ld+json",
+      "contentSize": 31169,
+      "sha256": "a278318f325f55484a8d58ac1f2b88a7143079610e1032a6834731db93984ec7"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Immutable TREE node page-003",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-003.jsonld",
+      "encodingFormat": "application/ld+json",
+      "contentSize": 31152,
+      "sha256": "43d8e5baa131a8d75db41042159ad4a82eee1fc0ede776a941ff7867de5953fe"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "SHACL member shape",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-member.shacl.ttl",
+      "encodingFormat": "text/turtle",
+      "contentSize": 1383,
+      "sha256": "8946d9fa102d4da38fffc54a726f10649a096407295243a2ce0027c690887256"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "SHA-256 checksum list",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/checksums-sha256.txt",
+      "encodingFormat": "text/plain",
+      "contentSize": 704,
+      "sha256": "48745bb04a5c97139a0e2e121d6dfc99c65fac7e31bc6b621d6036a3555a4c1e"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Deterministic offline bundle",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-37-symbols-ldes-tree.zip",
+      "encodingFormat": "application/zip",
+      "contentSize": 10604,
+      "sha256": "643110cdfd9a643645228c24d6cd99ba5f48b78ff8375cb05122e3745ed78401"
+    }
+  ]
+}

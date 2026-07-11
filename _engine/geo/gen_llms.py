@@ -51,6 +51,7 @@ ZHUYIN_IIIF_RESOURCE = "zhuyin-bopomofo-iiif-presentation-3"
 ZHUYIN_RO_CRATE = "zhuyin-bopomofo-ro-crate"
 ZHUYIN_METS_PREMIS = "zhuyin-bopomofo-mets2-premis3"
 ZHUYIN_ORE = "zhuyin-bopomofo-oai-ore"
+ZHUYIN_LDES = "zhuyin-bopomofo-ldes"
 ZHUYIN_RESOURCE_SYNC = "zhuyin-bopomofo-resourcesync"
 ZHUYIN_LMS_BANK = "zhuyin-bopomofo-lms-question-bank"
 ZHUYIN_EPUB = "zhuyin-bopomofo-epub-reference"
@@ -276,6 +277,26 @@ def build_llms(comp_map, live_keys):
             f"- Deterministic offline bundle: {package}/bopomofo-37-symbols-csvw-bundle.zip",
             f"- SHA-256 checksums: {package}/checksums-sha256.txt",
             f"- Dataset manifest: {package}/metadata.jsonld",
+        ]
+    if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
+            ZHUYIN_LDES,
+            "bopomofo-event-stream.jsonld",
+        )
+    ):
+        package = f"{SITE}/data/packages/{ZHUYIN_LDES}"
+        lines += [
+            "",
+            "## Bopomofo LDES 1.0 + TREE event stream",
+            f"- English guide: {package}/",
+            f"- Traditional Chinese guide: {SITE}/zh-Hant/data/packages/{ZHUYIN_LDES}/",
+            f"- Canonical JSON-LD entry point: {package}/bopomofo-event-stream.jsonld",
+            f"- Turtle discovery overview: {package}/bopomofo-event-stream.ttl",
+            f"- SHACL member shape: {package}/bopomofo-event-member.shacl.ttl",
+            f"- Deterministic bundle: {package}/bopomofo-37-symbols-ldes-tree.zip",
+            f"- SHA-256 checksums: {package}/checksums-sha256.txt",
         ]
     if os.path.exists(
         os.path.join(
@@ -598,6 +619,10 @@ def build_llms_full(comp_map, live_keys):
             f"data/packages/{ZHUYIN_METS_PREMIS}/",
         ),
         (
+            "Bopomofo LDES 1.0 and TREE event stream",
+            f"data/packages/{ZHUYIN_LDES}/",
+        ),
+        (
             "Bopomofo OAI-ORE 1.0 compound-object Resource Map",
             f"data/packages/{ZHUYIN_ORE}/",
         ),
@@ -801,6 +826,26 @@ def build_llms_full(comp_map, live_keys):
             f"  - Deterministic offline bundle: {package}/bopomofo-37-symbols-csvw-bundle.zip",
             f"  - SHA-256 checksums: {package}/checksums-sha256.txt",
             f"  - Dataset manifest: {package}/metadata.jsonld",
+        ]
+    if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
+            ZHUYIN_LDES,
+            "bopomofo-event-stream.jsonld",
+        )
+    ):
+        package = f"{SITE}/data/packages/{ZHUYIN_LDES}"
+        lines += [
+            "",
+            "## Bopomofo LDES 1.0 + TREE event stream",
+            f"- [English guide]({package}/)",
+            f"- [Traditional Chinese guide]({SITE}/zh-Hant/data/packages/{ZHUYIN_LDES}/)",
+            f"  - Canonical JSON-LD entry point: {package}/bopomofo-event-stream.jsonld",
+            f"  - Turtle discovery overview: {package}/bopomofo-event-stream.ttl",
+            f"  - SHACL member shape: {package}/bopomofo-event-member.shacl.ttl",
+            f"  - Deterministic bundle: {package}/bopomofo-37-symbols-ldes-tree.zip",
+            f"  - SHA-256 checksums: {package}/checksums-sha256.txt",
         ]
     if os.path.exists(
         os.path.join(
@@ -1081,6 +1126,7 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_iiif.xml",
         "sitemap_ro_crate_bopomofo.xml",
         "sitemap_mets_premis.xml",
+        "sitemap_ldes.xml",
         "sitemap_ore.xml",
         "sitemap_lms.xml",
         "sitemap_epub.xml",
@@ -1125,6 +1171,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_iiif.xml",
             f"Sitemap: {SITE}/sitemap_ro_crate_bopomofo.xml",
             f"Sitemap: {SITE}/sitemap_mets_premis.xml",
+            f"Sitemap: {SITE}/sitemap_ldes.xml",
             f"Sitemap: {SITE}/sitemap_ore.xml",
             f"Sitemap: {SITE}/sitemap_lms.xml",
             f"Sitemap: {SITE}/sitemap_epub.xml",
@@ -1154,6 +1201,7 @@ def build_sitemap_index():
         "sitemap_iiif.xml",
         "sitemap_ro_crate_bopomofo.xml",
         "sitemap_mets_premis.xml",
+        "sitemap_ldes.xml",
         "sitemap_ore.xml",
         "sitemap_lms.xml",
         "sitemap_epub.xml",

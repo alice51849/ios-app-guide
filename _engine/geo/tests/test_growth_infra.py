@@ -69,6 +69,7 @@ import zhuyin_iiif_presentation
 import zhuyin_heritage_lesson_plan
 import zhuyin_library_storytime_kit
 import zhuyin_library_catalog
+import zhuyin_ldes_event_stream
 import zhuyin_lms_assessment_bank
 import zhuyin_mets_premis_package
 import zhuyin_oer_metadata
@@ -228,6 +229,38 @@ class GeneratorTests(unittest.TestCase):
             modified = output.stat().st_mtime_ns
             self.assertFalse(gen_feed._write_if_changed(str(output), "stable"))
             self.assertEqual(modified, output.stat().st_mtime_ns)
+
+    def test_atom_feed_keeps_every_canonical_guide_within_the_item_cap(self):
+        with tempfile.TemporaryDirectory() as directory, mock.patch.object(
+            gen_feed, "PAGES", directory
+        ):
+            root = Path(directory)
+            for subdir in ("answers", "guides", "alternatives", "tools", "data"):
+                (root / subdir).mkdir()
+            for index in range(gen_feed.MAX_ITEMS + 5):
+                (root / "answers" / f"recent-{index:02d}.html").write_text(
+                    '<title>Recent answer</title>'
+                    '<script type="application/ld+json">'
+                    '{"dateModified":"2026-07-12"}</script>',
+                    encoding="utf-8",
+                )
+            for name in ("app-one", "app-two"):
+                (root / "guides" / f"{name}.html").write_text(
+                    f"<title>{name}</title>"
+                    '<script type="application/ld+json">'
+                    '{"dateModified":"2020-01-01"}</script>',
+                    encoding="utf-8",
+                )
+            items = gen_feed.collect()
+        self.assertEqual(gen_feed.MAX_ITEMS, len(items))
+        urls = {url for _, url, _ in items}
+        self.assertTrue(
+            {
+                f"{gen_feed.SITE}/guides/app-one.html",
+                f"{gen_feed.SITE}/guides/app-two.html",
+            }
+            <= urls
+        )
 
     def test_data_hub_preserves_date_until_dataset_content_changes(self):
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(
@@ -4215,7 +4248,7 @@ class GeneratorTests(unittest.TestCase):
             )
             self.assertIn(answer_slug, feed)
             self.assertIn(
-                "fifteen verified Bopomofo datasets and 71 exact "
+                "sixteen verified Bopomofo datasets and 80 exact "
                 "distributions",
                 feed,
             )
@@ -4258,6 +4291,287 @@ class GeneratorTests(unittest.TestCase):
         zhuyin_frictionless_package.build(pages, app_public=False)
         zhuyin_csvw_metadata.build(pages, app_public=False)
         zhuyin_static_api.build(pages, app_public=False)
+        zhuyin_ldes_event_stream.build(pages, app_public=False)
+
+    def test_zhuyin_ldes_event_stream_is_complete_immutable_and_discoverable(
+        self,
+    ):
+        from rdflib import Graph, Literal, RDF, URIRef
+
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            self._seed_zhuyin_ore_pages(pages)
+            package_module = zhuyin_ldes_event_stream
+            package = pages / package_module.PACKAGE_PATH
+            modified = package_module._prior_timestamp(
+                package / package_module.METADATA_FILENAME
+            )
+            first = package_module.make_artifacts(pages, modified)
+            second = package_module.make_artifacts(pages, modified)
+            self.assertEqual(first, second)
+            package_module.validate_artifacts(pages, first, modified)
+            self.assertEqual(
+                [
+                    package_module.STREAM_JSONLD_FILENAME,
+                    package_module.STREAM_TURTLE_FILENAME,
+                    *(node.filename for node in package_module.NODE_SPECS),
+                    package_module.SHAPE_FILENAME,
+                    package_module.README_FILENAME,
+                    package_module.LICENSE_FILENAME,
+                    package_module.CHECKSUM_FILENAME,
+                    package_module.BUNDLE_FILENAME,
+                ],
+                list(first),
+            )
+
+            stream = URIRef(package_module.STREAM_URL)
+            entry_json = Graph().parse(
+                data=first[package_module.STREAM_JSONLD_FILENAME],
+                format="json-ld",
+            )
+            entry_ttl = Graph().parse(
+                data=first[package_module.STREAM_TURTLE_FILENAME],
+                format="turtle",
+            )
+            self.assertIn(
+                (
+                    stream,
+                    RDF.type,
+                    URIRef(package_module.LDES_NS + "EventStream"),
+                ),
+                entry_json,
+            )
+            self.assertEqual(
+                {stream},
+                set(
+                    entry_json.objects(
+                        stream,
+                        URIRef(package_module.TREE_NS + "view"),
+                    )
+                ),
+            )
+            self.assertEqual(
+                6,
+                len(
+                    set(
+                        entry_json.objects(
+                            stream,
+                            URIRef(package_module.TREE_NS + "relation"),
+                        )
+                    )
+                ),
+            )
+            self.assertEqual(
+                {stream},
+                set(
+                    entry_ttl.objects(
+                        URIRef(package_module.STREAM_TURTLE_URL),
+                        URIRef(package_module.TREE_NS + "view"),
+                    )
+                ),
+            )
+
+            members = set()
+            concepts = set()
+            for node in package_module.NODE_SPECS:
+                graph = Graph().parse(data=first[node.filename], format="json-ld")
+                node_uri = URIRef(node.url)
+                self.assertIn(
+                    (
+                        node_uri,
+                        URIRef(package_module.LDES_NS + "immutable"),
+                        Literal(True),
+                    ),
+                    graph,
+                )
+                node_members = set(
+                    graph.objects(
+                        stream,
+                        URIRef(package_module.TREE_NS + "member"),
+                    )
+                )
+                self.assertEqual(node.stop - node.start, len(node_members))
+                self.assertFalse(members & node_members)
+                members |= node_members
+                for member in node_members:
+                    created = list(
+                        graph.objects(
+                            member,
+                            URIRef(package_module.DCTERMS_NS + "created"),
+                        )
+                    )
+                    version_of = list(
+                        graph.objects(
+                            member,
+                            URIRef(package_module.DCTERMS_NS + "isVersionOf"),
+                        )
+                    )
+                    self.assertEqual(1, len(created))
+                    self.assertEqual(
+                        URIRef(package_module.XSD_NS + "dateTime"),
+                        created[0].datatype,
+                    )
+                    self.assertEqual(1, len(version_of))
+                    concepts.add(version_of[0])
+            self.assertEqual(37, len(members))
+            self.assertEqual(37, len(concepts))
+
+            with zipfile.ZipFile(
+                io.BytesIO(first[package_module.BUNDLE_FILENAME])
+            ) as archive:
+                self.assertEqual(
+                    sorted(first.keys() - {package_module.BUNDLE_FILENAME}),
+                    archive.namelist(),
+                )
+                for info in archive.infolist():
+                    self.assertEqual(package_module.ZIP_TIMESTAMP, info.date_time)
+                    self.assertEqual(zipfile.ZIP_DEFLATED, info.compress_type)
+                    self.assertEqual(0o100644, info.external_attr >> 16)
+                    self.assertEqual(first[info.filename], archive.read(info.filename))
+            for content in first.values():
+                for forbidden in (
+                    b"apps.apple.com",
+                    package_module.APP_ID.encode("ascii"),
+                    package_module.APP_NAME.encode("utf-8"),
+                    b"SoftwareApplication",
+                ):
+                    self.assertNotIn(forbidden.lower(), content.lower())
+
+            urls = package_module.build(pages, app_public=False)
+            self.assertEqual(12, len(urls))
+            metadata = json.loads(
+                (package / package_module.METADATA_FILENAME).read_text(
+                    encoding="utf-8"
+                )
+            )
+            self.assertEqual(37, metadata["numberOfItems"])
+            self.assertEqual(8, len(metadata["distribution"]))
+            self.assertEqual(
+                package_module.ORE_AGGREGATION_URI,
+                metadata["isPartOf"],
+            )
+            expected_paths = [
+                *(package / filename for filename in first),
+                package / package_module.METADATA_FILENAME,
+                package / "index.html",
+                pages
+                / "zh-Hant"
+                / package_module.PACKAGE_PATH
+                / "index.html",
+                pages / package_module.SITEMAP_PATH,
+                pages / "data" / "index.html",
+            ]
+            self.assertTrue(all(path.is_file() for path in expected_paths))
+            for landing in expected_paths[-4:-2]:
+                content = landing.read_text(encoding="utf-8")
+                self.assertIn("LDES 1.0", content)
+                self.assertIn(package_module.STREAM_URL, content)
+                self.assertNotIn("apps.apple.com", content)
+                self.assertNotIn('"SoftwareApplication"', content)
+
+            with mock.patch.object(
+                gen_llms,
+                "PAGES",
+                str(pages),
+            ), mock.patch.object(
+                gen_llms,
+                "DATA_DIR",
+                str(pages / "data"),
+            ):
+                llms = gen_llms.build_llms({}, set())
+                full = gen_llms.build_llms_full({}, set())
+                robots = gen_llms.build_robots()
+                sitemap_index = gen_llms.build_sitemap_index()
+            for content in (llms, full):
+                self.assertIn(
+                    "Bopomofo LDES 1.0 + TREE event stream",
+                    content,
+                )
+                self.assertIn(package_module.STREAM_URL, content)
+            for content in (robots, sitemap_index):
+                self.assertIn(package_module.SITEMAP_PATH.as_posix(), content)
+
+            deep_item = next(
+                item
+                for item in answer_deep.DEEP_ITEMS
+                if item.get("kind") == "ldes_tree_event_stream"
+                and item.get("app_key") == "lumibopomofo"
+            )
+            self.assertEqual(
+                package_module.PACKAGE_URL,
+                deep_item["primary_resource_url"],
+            )
+            translations = json.loads(
+                (
+                    Path(GEO) / "i18n_trans" / "zh-Hant.json"
+                ).read_text(encoding="utf-8")
+            )
+
+            def translated_strings(value, parent_key=""):
+                if isinstance(value, str):
+                    if parent_key not in {
+                        "app_key",
+                        "kind",
+                        "match",
+                        "primary_resource_url",
+                        "url",
+                    }:
+                        yield value
+                elif isinstance(value, list):
+                    for child in value:
+                        yield from translated_strings(child, parent_key)
+                elif isinstance(value, dict):
+                    for key, child in value.items():
+                        yield from translated_strings(child, key)
+
+            self.assertEqual(
+                [],
+                [
+                    value
+                    for value in translated_strings(deep_item)
+                    if value not in translations
+                ],
+            )
+            self.assertIn(
+                "How to choose: " + deep_item["query"],
+                translations,
+            )
+            self.assertIn(
+                deep_item["primary_resource_label"] + " →",
+                translations,
+            )
+            answer_slug = (
+                "where-can-a-linked-data-client-replicate-bopomofo-as-an-"
+                "ldes-1-0-and-tree-event-stream.html"
+            )
+            english_answer = (
+                Path(GEO) / "pages" / "answers" / answer_slug
+            ).read_text(encoding="utf-8")
+            localized_answer = (
+                Path(GEO) / "pages" / "zh-Hant" / "answers" / answer_slug
+            ).read_text(encoding="utf-8")
+            for content, package_url in (
+                (english_answer, package_module.PACKAGE_URL),
+                (localized_answer, package_module.ZH_PACKAGE_URL),
+            ):
+                self.assertIn("LDES 1.0", content)
+                self.assertIn(package_url, content)
+            answer_strings, _, _ = aeo_answers_i18n.extract_strings(
+                english_answer
+            )
+            self.assertEqual(
+                [],
+                [value for value in answer_strings if value not in translations],
+            )
+            self.assertIn(
+                translations[deep_item["page_title"]],
+                localized_answer,
+            )
+            self.assertNotIn(deep_item["page_title"], localized_answer)
+            feed = (Path(GEO) / "pages" / "feed.xml").read_text(
+                encoding="utf-8"
+            )
+            self.assertIn(answer_slug, feed)
 
     def test_zhuyin_ore_resource_map_is_complete_deterministic_and_discoverable(
         self,
@@ -4302,7 +4616,7 @@ class GeneratorTests(unittest.TestCase):
                 graph = Graph().parse(data=first[filename], format=format_name)
                 resource_map = URIRef(map_url)
                 aggregation = URIRef(package_module.AGGREGATION_URI)
-                self.assertEqual(147, len(graph))
+                self.assertEqual(165, len(graph))
                 self.assertIn(
                     (resource_map, RDF.type, package_module.ORE.ResourceMap),
                     graph,
@@ -4504,7 +4818,7 @@ class GeneratorTests(unittest.TestCase):
             )
             self.assertEqual(package_module.AGGREGATION_URI, metadata["@id"])
             self.assertEqual(7, len(metadata["distribution"]))
-            self.assertEqual(14, len(metadata["hasPart"]))
+            self.assertEqual(16, len(metadata["hasPart"]))
             self.assertEqual(modified, metadata["dateModified"])
             for landing in expected_paths[-4:-2]:
                 content = landing.read_text(encoding="utf-8")
@@ -4646,7 +4960,7 @@ class GeneratorTests(unittest.TestCase):
             )
             self.assertIn(answer_slug, feed)
             self.assertIn(
-                "fifteen verified Bopomofo datasets and 71 exact "
+                "sixteen verified Bopomofo datasets and 80 exact "
                 "distributions",
                 feed,
             )
@@ -6272,6 +6586,7 @@ class GeneratorTests(unittest.TestCase):
         zhuyin_ro_crate.build(pages, app_public=False)
         zhuyin_mets_premis_package.build(pages, app_public=False)
         zhuyin_static_api.build(pages, app_public=False)
+        zhuyin_ldes_event_stream.build(pages, app_public=False)
         zhuyin_ore_resource_map.build(pages, app_public=False)
         zhuyin_lms_assessment_bank.build(pages, app_public=False)
         zhuyin_epub_opds.build(pages, app_public=False)
@@ -6314,8 +6629,8 @@ class GeneratorTests(unittest.TestCase):
                     package_dir / zhuyin_dcat_catalog.METADATA_FILENAME
                 ).read_text(encoding="utf-8")
             )
-            self.assertEqual(15, metadata["numberOfItems"])
-            self.assertEqual(15, len(metadata["dataset"]))
+            self.assertEqual(16, metadata["numberOfItems"])
+            self.assertEqual(16, len(metadata["dataset"]))
             self.assertEqual(3, len(metadata["distribution"]))
             self.assertEqual(
                 zhuyin_dcat_catalog.DCAT_SPEC,
@@ -6478,13 +6793,14 @@ class GeneratorTests(unittest.TestCase):
             )
             for answer in published_answers:
                 content = answer.read_text(encoding="utf-8")
-                self.assertIn("71", content)
+                self.assertIn("80", content)
                 self.assertIn("IIIF", content)
                 self.assertIn("BagIt", content)
                 self.assertIn("RO-Crate", content)
                 self.assertIn("METS", content)
                 self.assertIn("PREMIS", content)
                 self.assertIn("OAI-ORE", content)
+                self.assertIn("LDES", content)
                 self.assertNotIn("56 exact distributions", content)
                 self.assertNotIn("56 個精確", content)
 
@@ -6546,7 +6862,7 @@ class GeneratorTests(unittest.TestCase):
                 format="turtle",
             )
             self.assertTrue(isomorphic(json_graph, turtle_graph))
-            self.assertEqual(1505, len(json_graph))
+            self.assertEqual(1664, len(json_graph))
 
             dcat = zhuyin_dcat_catalog.DCAT
             dcterms = zhuyin_dcat_catalog.DCTERMS
@@ -6580,9 +6896,9 @@ class GeneratorTests(unittest.TestCase):
                 {URIRef(zhuyin_dcat_catalog.CATALOG_ID)},
                 catalogs,
             )
-            self.assertEqual(15, len(records))
-            self.assertEqual(15, len(datasets))
-            self.assertEqual(71, len(distributions))
+            self.assertEqual(16, len(records))
+            self.assertEqual(16, len(datasets))
+            self.assertEqual(80, len(distributions))
             self.assertEqual(
                 {URIRef(zhuyin_dcat_catalog.API_SERVICE)},
                 services,
@@ -6742,6 +7058,22 @@ class GeneratorTests(unittest.TestCase):
                 set(
                     json_graph.objects(
                         ore_dataset,
+                        URIRef(dcterms + "conformsTo"),
+                    )
+                ),
+            )
+            ldes_dataset = URIRef(
+                f"{zhuyin_dcat_catalog.LANDING_URL}#dataset-ldes"
+            )
+            self.assertEqual(
+                {
+                    URIRef(zhuyin_ldes_event_stream.LDES_SPEC),
+                    URIRef(zhuyin_ldes_event_stream.TREE_SPEC),
+                    URIRef(zhuyin_ldes_event_stream.SHACL_SPEC),
+                },
+                set(
+                    json_graph.objects(
+                        ldes_dataset,
                         URIRef(dcterms + "conformsTo"),
                     )
                 ),
@@ -6909,7 +7241,7 @@ class GeneratorTests(unittest.TestCase):
                     hashlib.sha256(content).hexdigest(),
                     str(values[0]),
                 )
-            self.assertEqual(71, len(checksum_nodes))
+            self.assertEqual(80, len(checksum_nodes))
             self.assertEqual(
                 1,
                 len(
@@ -7069,7 +7401,7 @@ class GeneratorTests(unittest.TestCase):
 
             resources = zhuyin_resourcesync.discover_resources(pages)
             entries = resource_list.findall(f"{{{sitemap_ns}}}url")
-            self.assertEqual(239, len(resources))
+            self.assertEqual(252, len(resources))
             self.assertEqual(len(resources), len(entries))
             resources_by_path = {
                 resource.relative_path.as_posix(): resource
@@ -7101,12 +7433,41 @@ class GeneratorTests(unittest.TestCase):
                 self.assertIn(relative.as_posix(), resources_by_path)
             for relative in zhuyin_resourcesync.ORE_REQUIRED_PATHS:
                 self.assertIn(relative.as_posix(), resources_by_path)
+            for relative in zhuyin_resourcesync.LDES_REQUIRED_PATHS:
+                self.assertIn(relative.as_posix(), resources_by_path)
             self.assertEqual(
                 "application/zip",
                 resources_by_path[
                     (
                         "data/packages/zhuyin-bopomofo-ro-crate/"
                         "bopomofo-37-symbols-ro-crate-1.3.zip"
+                    )
+                ].media_type,
+            )
+            self.assertEqual(
+                "application/ld+json",
+                resources_by_path[
+                    (
+                        "data/packages/zhuyin-bopomofo-ldes/"
+                        "bopomofo-event-stream.jsonld"
+                    )
+                ].media_type,
+            )
+            self.assertEqual(
+                "text/turtle",
+                resources_by_path[
+                    (
+                        "data/packages/zhuyin-bopomofo-ldes/"
+                        "bopomofo-event-stream.ttl"
+                    )
+                ].media_type,
+            )
+            self.assertEqual(
+                "application/zip",
+                resources_by_path[
+                    (
+                        "data/packages/zhuyin-bopomofo-ldes/"
+                        "bopomofo-37-symbols-ldes-tree.zip"
                     )
                 ].media_type,
             )
@@ -9181,6 +9542,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_iiif_presentation.py", workflow)
         self.assertIn("zhuyin_ro_crate.py", workflow)
         self.assertIn("zhuyin_mets_premis_package.py", workflow)
+        self.assertIn("zhuyin_ldes_event_stream.py", workflow)
         self.assertIn("zhuyin_ore_resource_map.py", workflow)
         self.assertIn("requirements-iiif-validation.txt", workflow)
         self.assertIn("iiif-validator-bin", workflow)
@@ -9229,6 +9591,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_ro_crate.py",
             "zhuyin_mets_premis_package.py",
             "zhuyin_static_api.py",
+            "zhuyin_ldes_event_stream.py",
             "zhuyin_ore_resource_map.py",
             "zhuyin_lms_assessment_bank.py",
             "zhuyin_epub_opds.py",
@@ -9273,6 +9636,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("--refresh-slug \"$RO_CRATE_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$METS_PREMIS_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$ORE_SLUG\"", workflow)
+        self.assertIn("--refresh-slug \"$LDES_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$TRIP_SLUG\"", workflow)
         self.assertIn('"lumibopomofo" in live_app_keys', workflow)
         self.assertIn('"tripplanet" in live_app_keys', workflow)
@@ -9298,6 +9662,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_iiif_presentation.py", publish)
         self.assertIn("zhuyin_ro_crate.py", publish)
         self.assertIn("zhuyin_mets_premis_package.py", publish)
+        self.assertIn("zhuyin_ldes_event_stream.py", publish)
         self.assertIn("zhuyin_ore_resource_map.py", publish)
         self.assertIn("zhuyin_static_api.py", publish)
         self.assertIn("zhuyin_lms_assessment_bank.py", publish)
@@ -9343,6 +9708,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_ro_crate.py",
             "zhuyin_mets_premis_package.py",
             "zhuyin_static_api.py",
+            "zhuyin_ldes_event_stream.py",
             "zhuyin_ore_resource_map.py",
             "zhuyin_lms_assessment_bank.py",
             "zhuyin_epub_opds.py",
@@ -9364,6 +9730,11 @@ class GeneratorTests(unittest.TestCase):
             publish.rindex("gen_llms.py"),
         )
         self.assertIn("--refresh-slug", publish)
+        self.assertIn(
+            "where-can-a-linked-data-client-replicate-bopomofo-as-an-ldes-1-0-",
+            publish,
+        )
+        self.assertIn("and-tree-event-stream", publish)
         self.assertIn("aeo_answers_i18n.py", publish)
         self.assertIn('"lumibopomofo" in live', publish)
         self.assertIn('"cleanup_localized_assets.py"', publish)

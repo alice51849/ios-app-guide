@@ -138,6 +138,7 @@ jobs:
           python3 gen_hubs.py
           python3 gen_app_catalog.py
           python3 cleanup_localized_assets.py --cached-live
+          python3 zhuyin_resourcesync.py
           python3 aeo_answers.py --cached-live --limit 0
       - name: Commit English content first (fast, before slow localization)
         run: |

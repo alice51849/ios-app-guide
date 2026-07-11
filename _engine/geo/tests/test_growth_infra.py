@@ -8244,6 +8244,11 @@ class GeneratorTests(unittest.TestCase):
         )
         workflow_positions = [refresh_block.index(item) for item in workflow_chain]
         self.assertEqual(sorted(workflow_positions), workflow_positions)
+        self.assertLess(
+            refresh_block.index("cleanup_localized_assets.py --cached-live"),
+            refresh_block.rindex("zhuyin_resourcesync.py"),
+        )
+        self.assertGreaterEqual(workflow.count("zhuyin_resourcesync.py"), 3)
         final_cleanup_block = workflow.split(
             "- name: Final link and availability cleanup", 1
         )[1].split("- name: Unlink site dir", 1)[0]

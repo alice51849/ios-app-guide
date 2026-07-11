@@ -48,6 +48,7 @@ import gen_roundups
 import indexnow_submit
 import outreach_scorecard
 import prioritize_trip_planet_resources
+import static_api_catalog
 import zhuyin_grandparent_call_kit
 import zhuyin_grade1_guide
 import zhuyin_grade1_summer_calendar
@@ -59,6 +60,7 @@ import zhuyin_parent_teacher_handoff_kit
 import zhuyin_picture_book_club_kit
 import zhuyin_readiness_tool
 import zhuyin_skos_vocabulary
+import zhuyin_static_api
 from videogen.registry import (  # noqa: E402
     APPS,
     VALID_PURCHASE_MODELS,
@@ -586,6 +588,186 @@ class GeneratorTests(unittest.TestCase):
             )
             for path in sorted((api / "scenarios").glob("*.json")):
                 scenario_validator.validate(
+                    json.loads(path.read_text(encoding="utf-8"))
+                )
+            validate_url((api / "openapi.json").as_uri())
+
+    def test_zhuyin_static_api_matches_croissant_source(self):
+        rows = zhuyin_croissant_dataset.records()
+        index = zhuyin_static_api.api_index(rows)
+        payloads = {
+            row["symbol_id"]: zhuyin_static_api.symbol_payload(row)
+            for row in rows
+        }
+        openapi = zhuyin_static_api.openapi_document(rows)
+        index_schema = zhuyin_static_api.index_schema(rows)
+        symbol_schema = zhuyin_static_api.symbol_schema(rows)
+        zhuyin_static_api.validate_artifacts(
+            rows,
+            index,
+            payloads,
+            openapi,
+            index_schema,
+            symbol_schema,
+        )
+        self.assertEqual(37, len(index["symbols"]))
+        self.assertEqual(37, len(payloads))
+        self.assertEqual(38, len(openapi["paths"]))
+        self.assertEqual("3.1.1", openapi["openapi"])
+        self.assertEqual([], openapi["security"])
+        endpoint_pattern = index_schema["$defs"]["endpoint"]["properties"][
+            "url"
+        ]["pattern"]
+        self.assertNotIn(r"\-", endpoint_pattern)
+        self.assertTrue(endpoint_pattern.startswith(
+            r"^https://alice51849\.github\.io/ios-app-guide/"
+        ))
+        self.assertEqual(
+            {"symbolCount": 37, "initialCount": 21, "medialCount": 3,
+             "finalCount": 13, "unicodeRange": "U+3105-U+3129"},
+            index["scope"],
+        )
+        for row in rows:
+            self.assertEqual(row, payloads[row["symbol_id"]]["symbol"])
+        encoded = json.dumps(
+            {"index": index, "payloads": payloads, "openapi": openapi}
+        )
+        self.assertNotIn("apps.apple.com", encoded)
+        self.assertNotIn(zhuyin_static_api.APP_NAME, encoded)
+        contaminated = copy.deepcopy(openapi)
+        contaminated["info"]["description"] = (
+            f"{zhuyin_static_api.APP_NAME} id{zhuyin_static_api.APP_ID}"
+        )
+        with self.assertRaises(ValueError):
+            zhuyin_static_api.validate_artifacts(
+                rows,
+                index,
+                payloads,
+                contaminated,
+                index_schema,
+                symbol_schema,
+            )
+
+    def test_zhuyin_static_api_docs_gate_optional_app_layer(self):
+        rows = zhuyin_croissant_dataset.records()
+        for locale in ("en", "zh-Hant"):
+            private_page = zhuyin_static_api.render_docs(
+                rows, locale, app_public=False
+            )
+            self.assertIn('rel="service-desc"', private_page)
+            self.assertIn("openapi.json", private_page)
+            self.assertIn("symbol.schema.json", private_page)
+            self.assertIn('hreflang="en"', private_page)
+            self.assertIn('hreflang="zh-Hant"', private_page)
+            self.assertNotIn("apps.apple.com", private_page)
+            self.assertNotIn('"@type":"SoftwareApplication"', private_page)
+        public_page = zhuyin_static_api.render_docs(
+            rows, "en", app_public=True
+        )
+        self.assertIn(f"id{zhuyin_static_api.APP_ID}", public_page)
+        self.assertIn('"@type":"SoftwareApplication"', public_page)
+        self.assertNotIn('"offers"', public_page)
+
+    def test_static_api_catalog_preserves_both_api_surfaces(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            urls = zhuyin_static_api.build(pages, app_public=False)
+            api = pages / zhuyin_static_api.API_PATH
+            self.assertEqual(44, len(urls))
+            for filename in (
+                "index.html",
+                "index.json",
+                "index.schema.json",
+                "symbol.schema.json",
+                "openapi.json",
+            ):
+                self.assertTrue((api / filename).exists())
+            self.assertEqual(
+                37, len(list((api / "symbols").glob("*.json")))
+            )
+            self.assertTrue(
+                (
+                    pages
+                    / "zh-Hant"
+                    / zhuyin_static_api.API_PATH
+                    / "index.html"
+                ).exists()
+            )
+            catalog = (pages / "api" / "index.html").read_text(
+                encoding="utf-8"
+            )
+            self.assertIn("Bopomofo Symbols API v1", catalog)
+            sitemap = (pages / "sitemap_api.xml").read_text(encoding="utf-8")
+            self.assertEqual(37, sitemap.count("/symbols/"))
+            self.assertIn(
+                zhuyin_static_api.api_url("openapi.json"), sitemap
+            )
+            generated = [
+                *api.rglob("*"),
+                pages / "zh-Hant" / zhuyin_static_api.API_PATH / "index.html",
+                pages / "api" / "index.html",
+                pages / "sitemap_api.xml",
+            ]
+            mtimes = {
+                path: path.stat().st_mtime_ns
+                for path in generated
+                if path.is_file()
+            }
+            zhuyin_static_api.build(pages, app_public=False)
+            self.assertEqual(
+                mtimes, {path: path.stat().st_mtime_ns for path in mtimes}
+            )
+
+            family_travel_static_api.build(pages, app_public=False)
+            catalog = (pages / "api" / "index.html").read_text(
+                encoding="utf-8"
+            )
+            self.assertIn("Bopomofo Symbols API v1", catalog)
+            self.assertIn("Family Travel Missions API v1", catalog)
+            sitemap = (pages / "sitemap_api.xml").read_text(encoding="utf-8")
+            self.assertIn(zhuyin_static_api.api_url(), sitemap)
+            self.assertIn(family_travel_static_api.api_url(), sitemap)
+            self.assertEqual(37, sitemap.count("/symbols/"))
+            self.assertEqual(12, sitemap.count("/scenarios/"))
+            self.assertEqual(
+                ["family-travel-missions", "bopomofo-symbols"],
+                [
+                    item["slug"]
+                    for item in static_api_catalog.discovered_apis(pages)
+                ],
+            )
+
+    @unittest.skipUnless(
+        importlib.util.find_spec("jsonschema")
+        and importlib.util.find_spec("openapi_spec_validator"),
+        "validation dependencies are installed in CI",
+    )
+    def test_zhuyin_static_api_passes_published_specifications(self):
+        from jsonschema import Draft202012Validator, FormatChecker
+        from openapi_spec_validator import validate_url
+
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            zhuyin_static_api.build(pages, app_public=False)
+            api = pages / zhuyin_static_api.API_PATH
+            index_schema = json.loads(
+                (api / "index.schema.json").read_text(encoding="utf-8")
+            )
+            symbol_schema = json.loads(
+                (api / "symbol.schema.json").read_text(encoding="utf-8")
+            )
+            Draft202012Validator.check_schema(index_schema)
+            Draft202012Validator.check_schema(symbol_schema)
+            Draft202012Validator(
+                index_schema, format_checker=FormatChecker()
+            ).validate(
+                json.loads((api / "index.json").read_text(encoding="utf-8"))
+            )
+            symbol_validator = Draft202012Validator(
+                symbol_schema, format_checker=FormatChecker()
+            )
+            for path in sorted((api / "symbols").glob("*.json")):
+                symbol_validator.validate(
                     json.loads(path.read_text(encoding="utf-8"))
                 )
             validate_url((api / "openapi.json").as_uri())
@@ -1540,6 +1722,11 @@ class GeneratorTests(unittest.TestCase):
                 self.assertIn('hreflang="en"', page)
                 self.assertIn('hreflang="zh-Hant"', page)
                 self.assertIn('type="text/csv"', page)
+                self.assertIn('rel="service-desc"', page)
+                self.assertIn(
+                    zhuyin_croissant_dataset.API_OPENAPI,
+                    page,
+                )
                 self.assertNotIn("apps.apple.com", page)
                 self.assertNotIn(
                     zhuyin_croissant_dataset.APP_ID,
@@ -3486,6 +3673,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_anki_deck.py", workflow)
         self.assertIn("zhuyin_skos_vocabulary.py", workflow)
         self.assertIn("zhuyin_croissant_dataset.py", workflow)
+        self.assertIn("zhuyin_static_api.py", workflow)
         self.assertIn("family_travel_mission_cards.py", workflow)
         self.assertIn("family_travel_observation_passport.py", workflow)
         self.assertIn("family_travel_opds_catalog.py", workflow)
@@ -3512,6 +3700,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_anki_deck.py",
             "zhuyin_skos_vocabulary.py",
             "zhuyin_croissant_dataset.py",
+            "zhuyin_static_api.py",
             "prioritize_trip_planet_resources.py",
             "add_related_tools.py",
             "gen_hubs.py",
@@ -3540,6 +3729,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_anki_deck.py", publish)
         self.assertIn("zhuyin_skos_vocabulary.py", publish)
         self.assertIn("zhuyin_croissant_dataset.py", publish)
+        self.assertIn("zhuyin_static_api.py", publish)
         self.assertIn("family_travel_mission_cards.py", publish)
         self.assertIn("family_travel_observation_passport.py", publish)
         self.assertIn("family_travel_opds_catalog.py", publish)
@@ -3567,6 +3757,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_anki_deck.py",
             "zhuyin_skos_vocabulary.py",
             "zhuyin_croissant_dataset.py",
+            "zhuyin_static_api.py",
             "prioritize_trip_planet_resources.py",
             "add_related_answers.py",
             "add_related_tools.py",

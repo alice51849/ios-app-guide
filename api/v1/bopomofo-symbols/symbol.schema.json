@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbol.schema.json",
+  "title": "Bopomofo Symbols API response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "apiVersion",
+    "datasetVersion",
+    "license",
+    "symbol",
+    "provenance"
+  ],
+  "properties": {
+    "$schema": {
+      "const": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbol.schema.json"
+    },
+    "apiVersion": {
+      "const": "1.0.0"
+    },
+    "datasetVersion": {
+      "const": "1.0.0"
+    },
+    "license": {
+      "const": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "symbol": {
+      "$ref": "#/$defs/symbol"
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "concept",
+        "dataset",
+        "vocabulary"
+      ],
+      "properties": {
+        "concept": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "#u31"
+        },
+        "dataset": {
+          "const": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld"
+        },
+        "vocabulary": {
+          "const": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "symbol": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "order",
+        "symbol_id",
+        "concept_uri",
+        "symbol",
+        "unicode",
+        "pinyin",
+        "ipa",
+        "category",
+        "category_uri",
+        "example_character",
+        "example_pinyin",
+        "example_meaning_en"
+      ],
+      "properties": {
+        "order": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 37
+        },
+        "symbol_id": {
+          "type": "string",
+          "pattern": "^u31(?:0[5-9A-F]|1[0-9A-F]|2[0-9])$"
+        },
+        "concept_uri": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "#u31"
+        },
+        "symbol": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1
+        },
+        "unicode": {
+          "type": "string",
+          "pattern": "^U\\+31(?:0[5-9A-F]|1[0-9A-F]|2[0-9])$"
+        },
+        "pinyin": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ipa": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "initial",
+            "medial",
+            "final"
+          ]
+        },
+        "category_uri": {
+          "type": "string",
+          "enum": [
+            "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#finals",
+            "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials",
+            "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#medials"
+          ]
+        },
+        "example_character": {
+          "type": "string",
+          "minLength": 1
+        },
+        "example_pinyin": {
+          "type": "string",
+          "minLength": 1
+        },
+        "example_meaning_en": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

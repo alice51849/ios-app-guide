@@ -27,6 +27,7 @@ sys.path.insert(0, os.path.join(ROOT, "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
 from aeo_pages import disp, pricing_profile  # noqa: E402
+from static_api_catalog import API_DESCRIPTORS  # noqa: E402
 
 PAGES = os.path.join(HERE, "pages")
 ALT = os.path.join(PAGES, "alternatives")
@@ -164,15 +165,27 @@ def build_llms(comp_map, live_keys):
                 if os.path.exists(json_path):
                     line += f" · JSON: {SITE}/data/{f[:-5]}.json"
                 lines.append(line)
-    family_api = os.path.join(API_DIR, "v1", "family-travel-missions")
-    if os.path.exists(os.path.join(family_api, "openapi.json")):
+    static_apis = [
+        descriptor
+        for descriptor in API_DESCRIPTORS
+        if os.path.exists(
+            os.path.join(
+                API_DIR, "v1", descriptor["slug"], "openapi.json"
+            )
+        )
+    ]
+    if static_apis:
         lines += [
             "",
             "## Open static APIs (versioned, read-only, no API key)",
-            f"- Documentation: {SITE}/api/v1/family-travel-missions/",
-            f"- OpenAPI 3.1: {SITE}/api/v1/family-travel-missions/openapi.json",
-            f"- API index: {SITE}/api/v1/family-travel-missions/index.json",
         ]
+        for descriptor in static_apis:
+            base = f"{SITE}/api/v1/{descriptor['slug']}"
+            lines += [
+                f"- {descriptor['title']}: {base}/",
+                f"  - OpenAPI 3.1: {base}/openapi.json",
+                f"  - API index: {base}/index.json",
+            ]
     if os.path.exists(os.path.join(TOOLS, f"{FAMILY_TRAVEL_OER}.metadata.json")):
         opds2 = f"{SITE}/opds/{FAMILY_TRAVEL_OER}.json"
         opds1 = f"{SITE}/opds/{FAMILY_TRAVEL_OER}.xml"
@@ -364,17 +377,36 @@ def build_llms_full(comp_map, live_keys):
                 if os.path.exists(json_path):
                     lines.append(f"  - JSON: {url[:-5]}.json")
 
-    family_api = os.path.join(API_DIR, "v1", "family-travel-missions")
-    if os.path.exists(os.path.join(family_api, "openapi.json")):
+    static_apis = [
+        descriptor
+        for descriptor in API_DESCRIPTORS
+        if os.path.exists(
+            os.path.join(
+                API_DIR, "v1", descriptor["slug"], "openapi.json"
+            )
+        )
+    ]
+    if static_apis:
         lines += [
             "",
             "## Open static APIs",
-            f"- [Family Travel Missions API v1]({SITE}/api/v1/family-travel-missions/)",
-            f"  - OpenAPI 3.1: {SITE}/api/v1/family-travel-missions/openapi.json",
-            f"  - API index: {SITE}/api/v1/family-travel-missions/index.json",
-            f"  - Index schema: {SITE}/api/v1/family-travel-missions/index.schema.json",
-            f"  - Scenario schema: {SITE}/api/v1/family-travel-missions/scenario.schema.json",
         ]
+        for descriptor in static_apis:
+            api_directory = os.path.join(
+                API_DIR, "v1", descriptor["slug"]
+            )
+            base = f"{SITE}/api/v1/{descriptor['slug']}"
+            lines += [
+                f"- [{descriptor['title']}]({base}/)",
+                f"  - OpenAPI 3.1: {base}/openapi.json",
+                f"  - API index: {base}/index.json",
+            ]
+            for filename in sorted(
+                name
+                for name in os.listdir(api_directory)
+                if name.endswith(".schema.json")
+            ):
+                lines.append(f"  - JSON Schema: {base}/{filename}")
     if os.path.exists(os.path.join(TOOLS, f"{FAMILY_TRAVEL_OER}.metadata.json")):
         opds2 = f"{SITE}/opds/{FAMILY_TRAVEL_OER}.json"
         opds1 = f"{SITE}/opds/{FAMILY_TRAVEL_OER}.xml"

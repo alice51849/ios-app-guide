@@ -22,6 +22,7 @@ from family_travel_dataset import (
     render_versioned_page,
     write_text_if_changed,
 )
+from static_api_catalog import build_api_discovery
 from videogen.registry import appstore_url
 
 
@@ -606,38 +607,6 @@ footer{{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);font-s
 """
 
 
-def render_api_catalog(dataset: dict, page_modified: str | None = None) -> str:
-    modified = page_modified or dataset["dateModified"]
-    schema = json.dumps(
-        {
-            "@context": "https://schema.org",
-            "@type": "DataCatalog",
-            "name": "Lumi Apps Open APIs",
-            "description": "Free, versioned, read-only APIs generated from open datasets.",
-            "url": f"{SITE}/api/",
-            "dateModified": modified,
-            "dataset": {
-                "@type": "Dataset",
-                "name": dataset["name"],
-                "url": api_url(),
-                "license": dataset["license"],
-            },
-        },
-        ensure_ascii=False,
-        separators=(",", ":"),
-    )
-    return f"""<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Open APIs — free, versioned static data | Lumi Apps</title>
-<meta name="description" content="Free, versioned, read-only static APIs generated from citable open datasets.">
-<meta name="content-modified" content="{html.escape(modified, quote=True)}">
-<link rel="canonical" href="{SITE}/api/"><script type="application/ld+json">{schema}</script>
-<style>body{{margin:0;background:#f5f8fc;color:#142036;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}}main{{max-width:780px;margin:auto;padding:52px 20px}}a{{color:#315fc4}}article{{background:#fff;border:1px solid #dce4ef;border-radius:18px;padding:22px;margin-top:24px}}h1{{font-size:clamp(30px,6vw,48px);line-height:1.1}}p{{color:#5b687d}}.tag{{font-size:13px;font-weight:700}}</style></head>
-<body><main><p class="tag">OPEN DATA · NO API KEYS</p><h1>Open APIs</h1><p>Stable, cacheable JSON interfaces for free reference datasets.</p>
-<article><h2>Family Travel Missions API v1</h2><p>12 bilingual, privacy-first mission settings with OpenAPI 3.1 and JSON Schemas.</p><a href="{api_url()}">Read the API documentation →</a></article></main></body></html>
-"""
-
-
 def build(pages: Path = PAGES, app_public: bool | None = None) -> list[str]:
     dataset = load_dataset()
     canonical_schema = json.loads(
@@ -662,8 +631,7 @@ def build(pages: Path = PAGES, app_public: bool | None = None) -> list[str]:
     output = pages / API_PATH
     scenario_dir = output / "scenarios"
     zh_output = pages / "zh-Hant" / API_PATH
-    api_root = pages / "api"
-    for directory in (output, scenario_dir, zh_output, api_root):
+    for directory in (output, scenario_dir, zh_output):
         directory.mkdir(parents=True, exist_ok=True)
     write_text_if_changed(output / "index.json", _json(index))
     write_text_if_changed(output / "index.schema.json", _json(index_schema_document))
@@ -674,40 +642,23 @@ def build(pages: Path = PAGES, app_public: bool | None = None) -> list[str]:
     for scenario_id, payload in scenarios.items():
         write_text_if_changed(scenario_dir / f"{scenario_id}.json", _json(payload))
     public = is_app_public(pages) if app_public is None else app_public
-    en_modified = render_versioned_page(
+    render_versioned_page(
         output / "index.html",
         lambda modified: render_docs(dataset, "en", public, modified),
         dataset["dateModified"],
         TODAY,
     )
-    zh_modified = render_versioned_page(
+    render_versioned_page(
         zh_output / "index.html",
         lambda modified: render_docs(dataset, "zh-Hant", public, modified),
         dataset["dateModified"],
         TODAY,
     )
-    catalog_modified = render_versioned_page(
-        api_root / "index.html",
-        lambda modified: render_api_catalog(dataset, modified),
-        dataset["dateModified"],
-        TODAY,
-    )
-    page_entries = [
-        (f"{SITE}/api/", catalog_modified),
-        (api_url(), en_modified),
-        (f"{SITE}/zh-Hant/{API_PATH.as_posix()}/", zh_modified),
-    ]
-    body = "\n".join(
-        f"  <url><loc>{url}</loc><lastmod>{modified}</lastmod></url>"
-        for url, modified in page_entries
-    )
-    sitemap = (
-        '<?xml version="1.0" encoding="UTF-8"?>\n'
-        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        f"{body}\n</urlset>\n"
-    )
-    write_text_if_changed(pages / "sitemap_api.xml", sitemap)
-    return [url for url, _ in page_entries] + [
+    build_api_discovery(pages)
+    return [
+        f"{SITE}/api/",
+        api_url(),
+        f"{SITE}/zh-Hant/{API_PATH.as_posix()}/",
         api_url("index.json"),
         api_url("openapi.json"),
         api_url("index.schema.json"),

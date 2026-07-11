@@ -1,0 +1,25 @@
+{
+  "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbol.schema.json",
+  "apiVersion": "1.0.0",
+  "datasetVersion": "1.0.0",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "symbol": {
+    "order": 26,
+    "symbol_id": "u311B",
+    "concept_uri": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u311B",
+    "symbol": "ㄛ",
+    "unicode": "U+311B",
+    "pinyin": "o",
+    "ipa": "ɔ",
+    "category": "final",
+    "category_uri": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#finals",
+    "example_character": "波",
+    "example_pinyin": "bō",
+    "example_meaning_en": "wave"
+  },
+  "provenance": {
+    "concept": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u311B",
+    "dataset": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
+    "vocabulary": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
+  }
+}

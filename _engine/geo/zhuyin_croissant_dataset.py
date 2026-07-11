@@ -57,6 +57,8 @@ SITEMAP_URL = f"{SITE}/sitemap_croissant.xml"
 SOURCE_DATASET = f"{SITE}/data/zhuyin-bopomofo.json"
 SOURCE_PAGE = f"{SITE}/data/zhuyin-bopomofo.html"
 SKOS_PAGE = f"{SITE}/data/zhuyin-bopomofo-vocabulary.html"
+API_PAGE = f"{SITE}/api/v1/bopomofo-symbols/"
+API_OPENAPI = f"{API_PAGE}openapi.json"
 DATA_CATALOG = f"{SITE}/data/"
 ORG_URI = f"{SITE}/#organization"
 CROISSANT_SPEC = "http://mlcommons.org/croissant/1.1"
@@ -310,6 +312,7 @@ COPY = {
         ),
         "source_dataset": "View the source dataset",
         "skos": "Open the SKOS vocabulary",
+        "api": "Open the no-key symbol API",
         "croissant": "MLCommons Croissant 1.1 specification",
         "license": "License and privacy",
         "license_text": (
@@ -415,6 +418,7 @@ COPY = {
         ),
         "source_dataset": "查看來源資料集",
         "skos": "開啟 SKOS 詞彙",
+        "api": "開啟免金鑰符號 API",
         "croissant": "MLCommons Croissant 1.1 規格",
         "license": "授權與隱私",
         "license_text": (
@@ -979,6 +983,7 @@ def render_page(
 <link rel="describedby" type="{html.escape(CROISSANT_MEDIA_TYPE, quote=True)}" href="{METADATA_URL}">
 <link rel="alternate" type="text/csv" href="{CSV_URL}">
 <link rel="alternate" type="application/x-ndjson" href="{JSONL_URL}">
+<link rel="service-desc" type="application/vnd.oai.openapi+json;version=3.1" href="{API_OPENAPI}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{html.escape(copy['title'], quote=True)}">
 <meta property="og:description" content="{html.escape(copy['description'], quote=True)}">
@@ -1001,7 +1006,7 @@ main>.wrap{{margin-bottom:28px}}.panel{{background:var(--paper);border:1px solid
 <section class="wrap panel"><h2>{html.escape(copy['schema'])}</h2><p>{html.escape(copy['schema_text'])}</p><div class="table-wrap"><table><thead><tr><th>{html.escape(copy['field'])}</th><th>{html.escape(copy['type'])}</th><th>{html.escape(copy['meaning'])}</th></tr></thead><tbody>{_field_rows(locale)}</tbody></table></div></section>
 <section class="wrap two"><article class="panel"><h2>{html.escape(copy['load'])}</h2><p>{html.escape(copy['load_text'])}</p><pre>{html.escape(load_example)}</pre></article><article class="panel"><h2>{html.escape(copy['uses'])}</h2><ul>{uses}</ul><h2>{html.escape(copy['limits'])}</h2><ul>{limits}</ul></article></section>
 <section class="wrap panel"><h2>{html.escape(copy['preview'])}</h2><div class="table-wrap"><table><thead><tr><th>{html.escape(copy['order'])}</th><th>{html.escape(copy['symbol'])}</th><th>{html.escape(copy['category'])}</th><th>{html.escape(copy['pinyin'])}</th><th>{html.escape(copy['ipa'])}</th><th>{html.escape(copy['example'])}</th></tr></thead><tbody>{_preview_rows(locale, rows)}</tbody></table></div></section>
-<section class="wrap two"><article class="panel"><h2>{html.escape(copy['sources'])}</h2><p>{html.escape(copy['source_text'])}</p><div class="sources"><a href="{SOURCE_PAGE}">{html.escape(copy['source_dataset'])}</a><a href="{SKOS_PAGE}">{html.escape(copy['skos'])}</a><a href="{CROISSANT_SPEC}" rel="noopener">{html.escape(copy['croissant'])}</a></div></article><article class="panel"><h2>{html.escape(copy['license'])}</h2><p>{html.escape(copy['license_text'])}</p><a href="{LICENSE}" rel="license noopener">CC BY 4.0</a><p>{html.escape(copy['privacy_text'])}</p></article></section>
+<section class="wrap two"><article class="panel"><h2>{html.escape(copy['sources'])}</h2><p>{html.escape(copy['source_text'])}</p><div class="sources"><a href="{SOURCE_PAGE}">{html.escape(copy['source_dataset'])}</a><a href="{SKOS_PAGE}">{html.escape(copy['skos'])}</a><a href="{API_PAGE}">{html.escape(copy['api'])}</a><a href="{CROISSANT_SPEC}" rel="noopener">{html.escape(copy['croissant'])}</a></div></article><article class="panel"><h2>{html.escape(copy['license'])}</h2><p>{html.escape(copy['license_text'])}</p><a href="{LICENSE}" rel="license noopener">CC BY 4.0</a><p>{html.escape(copy['privacy_text'])}</p></article></section>
 <section class="wrap panel"><h2>{html.escape(copy['faq'])}</h2>{faqs}</section>
 <div class="wrap">{app_section}</div>
 </main>

@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.schema.json",
+  "title": "Bopomofo Symbols API index",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "apiVersion",
+    "datasetVersion",
+    "generatedFrom",
+    "license",
+    "languages",
+    "scope",
+    "documentation",
+    "openapi",
+    "symbols"
+  ],
+  "properties": {
+    "$schema": {
+      "const": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.schema.json"
+    },
+    "apiVersion": {
+      "const": "1.0.0"
+    },
+    "datasetVersion": {
+      "const": "1.0.0"
+    },
+    "generatedFrom": {
+      "const": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld"
+    },
+    "license": {
+      "const": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "languages": {
+      "const": [
+        "zh-Bopo",
+        "zh-Latn",
+        "en"
+      ]
+    },
+    "scope": {
+      "const": {
+        "symbolCount": 37,
+        "initialCount": 21,
+        "medialCount": 3,
+        "finalCount": 13,
+        "unicodeRange": "U+3105-U+3129"
+      }
+    },
+    "documentation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "en",
+        "zh-Hant"
+      ],
+      "properties": {
+        "en": {
+          "const": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/"
+        },
+        "zh-Hant": {
+          "const": "https://alice51849.github.io/ios-app-guide/zh-Hant/api/v1/bopomofo-symbols/"
+        }
+      }
+    },
+    "openapi": {
+      "const": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/openapi.json"
+    },
+    "symbols": {
+      "type": "array",
+      "minItems": 37,
+      "maxItems": 37,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/endpoint"
+      }
+    }
+  },
+  "$defs": {
+    "endpoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "symbolId",
+        "symbol",
+        "unicode",
+        "pinyin",
+        "category",
+        "url"
+      ],
+      "properties": {
+        "symbolId": {
+          "type": "string",
+          "pattern": "^u31(?:0[5-9A-F]|1[0-9A-F]|2[0-9])$"
+        },
+        "symbol": {
+          "type": "string",
+          "enum": [
+            "ㄅ",
+            "ㄆ",
+            "ㄇ",
+            "ㄈ",
+            "ㄉ",
+            "ㄊ",
+            "ㄋ",
+            "ㄌ",
+            "ㄍ",
+            "ㄎ",
+            "ㄏ",
+            "ㄐ",
+            "ㄑ",
+            "ㄒ",
+            "ㄓ",
+            "ㄔ",
+            "ㄕ",
+            "ㄖ",
+            "ㄗ",
+            "ㄘ",
+            "ㄙ",
+            "ㄧ",
+            "ㄨ",
+            "ㄩ",
+            "ㄚ",
+            "ㄛ",
+            "ㄜ",
+            "ㄝ",
+            "ㄞ",
+            "ㄟ",
+            "ㄠ",
+            "ㄡ",
+            "ㄢ",
+            "ㄣ",
+            "ㄤ",
+            "ㄥ",
+            "ㄦ"
+          ]
+        },
+        "unicode": {
+          "type": "string",
+          "pattern": "^U\\+31(?:0[5-9A-F]|1[0-9A-F]|2[0-9])$"
+        },
+        "pinyin": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "initial",
+            "medial",
+            "final"
+          ]
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://alice51849\\.github\\.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u31(?:0[5-9A-F]|1[0-9A-F]|2[0-9])\\.json$"
+        }
+      }
+    }
+  }
+}

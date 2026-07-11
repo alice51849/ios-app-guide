@@ -1,0 +1,25 @@
+{
+  "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbol.schema.json",
+  "apiVersion": "1.0.0",
+  "datasetVersion": "1.0.0",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "symbol": {
+    "order": 2,
+    "symbol_id": "u3106",
+    "concept_uri": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3106",
+    "symbol": "ㄆ",
+    "unicode": "U+3106",
+    "pinyin": "p",
+    "ipa": "pʰ",
+    "category": "initial",
+    "category_uri": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials",
+    "example_character": "怕",
+    "example_pinyin": "pà",
+    "example_meaning_en": "afraid"
+  },
+  "provenance": {
+    "concept": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3106",
+    "dataset": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
+    "vocabulary": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
+  }
+}

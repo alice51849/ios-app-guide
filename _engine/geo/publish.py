@@ -64,6 +64,7 @@ def main():
     require([PY, os.path.join(HERE, "zhuyin_anki_deck.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_skos_vocabulary.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_croissant_dataset.py")], env=env)
+    require([PY, os.path.join(HERE, "zhuyin_static_api.py")], env=env)
     require(
         [PY, os.path.join(HERE, "prioritize_trip_planet_resources.py")],
         env=env,

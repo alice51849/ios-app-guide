@@ -1,0 +1,25 @@
+{
+  "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbol.schema.json",
+  "apiVersion": "1.0.0",
+  "datasetVersion": "1.0.0",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "symbol": {
+    "order": 19,
+    "symbol_id": "u3117",
+    "concept_uri": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3117",
+    "symbol": "ㄗ",
+    "unicode": "U+3117",
+    "pinyin": "z",
+    "ipa": "ts",
+    "category": "initial",
+    "category_uri": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials",
+    "example_character": "早",
+    "example_pinyin": "zǎo",
+    "example_meaning_en": "early"
+  },
+  "provenance": {
+    "concept": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3117",
+    "dataset": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
+    "vocabulary": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
+  }
+}

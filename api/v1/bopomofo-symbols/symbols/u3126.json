@@ -1,0 +1,25 @@
+{
+  "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbol.schema.json",
+  "apiVersion": "1.0.0",
+  "datasetVersion": "1.0.0",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "symbol": {
+    "order": 37,
+    "symbol_id": "u3126",
+    "concept_uri": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3126",
+    "symbol": "ㄦ",
+    "unicode": "U+3126",
+    "pinyin": "er",
+    "ipa": "ɚ",
+    "category": "final",
+    "category_uri": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#finals",
+    "example_character": "二",
+    "example_pinyin": "èr",
+    "example_meaning_en": "two"
+  },
+  "provenance": {
+    "concept": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3126",
+    "dataset": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
+    "vocabulary": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
+  }
+}

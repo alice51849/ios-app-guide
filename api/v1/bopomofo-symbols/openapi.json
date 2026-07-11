@@ -1,0 +1,882 @@
+{
+  "openapi": "3.1.1",
+  "jsonSchemaDialect": "https://json-schema.org/draft/2020-12/schema",
+  "info": {
+    "title": "Bopomofo Symbols Static API",
+    "summary": "The complete 37-symbol Zhuyin inventory.",
+    "description": "Versioned, read-only JSON endpoints generated from a CC BY 4.0 table. No authentication, tracking or personal data.",
+    "version": "1.0.0",
+    "license": {
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols",
+      "description": "GitHub Pages static API"
+    }
+  ],
+  "externalDocs": {
+    "description": "Dataset card, field definitions and provenance",
+    "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html"
+  },
+  "tags": [
+    {
+      "name": "Bopomofo symbols",
+      "description": "All 21 initials, 3 medials and 13 finals from Unicode U+3105 through U+3129."
+    }
+  ],
+  "paths": {
+    "/index.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "List all 37 Zhuyin symbols",
+        "operationId": "listBopomofoSymbols",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "The complete Bopomofo API index.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./index.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u3105.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄅ (U+3105) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo3105",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u3106.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄆ (U+3106) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo3106",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u3107.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄇ (U+3107) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo3107",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u3108.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄈ (U+3108) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo3108",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u3109.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄉ (U+3109) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo3109",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u310A.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄊ (U+310A) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo310A",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u310B.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄋ (U+310B) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo310B",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u310C.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄌ (U+310C) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo310C",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u310D.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄍ (U+310D) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo310D",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u310E.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄎ (U+310E) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo310E",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u310F.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄏ (U+310F) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo310F",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u3110.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄐ (U+3110) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo3110",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u3111.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄑ (U+3111) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo3111",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u3112.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄒ (U+3112) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo3112",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u3113.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄓ (U+3113) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo3113",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u3114.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄔ (U+3114) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo3114",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u3115.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄕ (U+3115) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo3115",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u3116.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄖ (U+3116) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo3116",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u3117.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄗ (U+3117) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo3117",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u3118.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄘ (U+3118) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo3118",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u3119.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄙ (U+3119) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo3119",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u3127.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄧ (U+3127) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo3127",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u3128.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄨ (U+3128) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo3128",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u3129.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄩ (U+3129) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo3129",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u311A.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄚ (U+311A) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo311A",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u311B.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄛ (U+311B) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo311B",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u311C.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄜ (U+311C) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo311C",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u311D.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄝ (U+311D) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo311D",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u311E.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄞ (U+311E) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo311E",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u311F.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄟ (U+311F) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo311F",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u3120.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄠ (U+3120) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo3120",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u3121.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄡ (U+3121) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo3121",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u3122.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄢ (U+3122) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo3122",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u3123.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄣ (U+3123) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo3123",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u3124.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄤ (U+3124) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo3124",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u3125.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄥ (U+3125) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo3125",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/symbols/u3126.json": {
+      "get": {
+        "tags": [
+          "Bopomofo symbols"
+        ],
+        "summary": "Get ㄦ (U+3126) with Pinyin, IPA and an example",
+        "operationId": "getBopomofo3126",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "One Bopomofo symbol record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./symbol.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "IndexResponse": {
+        "$ref": "./index.schema.json"
+      },
+      "SymbolResponse": {
+        "$ref": "./symbol.schema.json"
+      }
+    }
+  },
+  "security": [],
+  "x-static-read-only": true,
+  "x-api-key-required": false,
+  "x-personal-data-requested": false
+}

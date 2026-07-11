@@ -1,0 +1,25 @@
+{
+  "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbol.schema.json",
+  "apiVersion": "1.0.0",
+  "datasetVersion": "1.0.0",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "symbol": {
+    "order": 21,
+    "symbol_id": "u3119",
+    "concept_uri": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3119",
+    "symbol": "ㄙ",
+    "unicode": "U+3119",
+    "pinyin": "s",
+    "ipa": "s",
+    "category": "initial",
+    "category_uri": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials",
+    "example_character": "三",
+    "example_pinyin": "sān",
+    "example_meaning_en": "three"
+  },
+  "provenance": {
+    "concept": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3119",
+    "dataset": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
+    "vocabulary": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
+  }
+}

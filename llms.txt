@@ -212,9 +212,12 @@
 - [zhuyin bopomofo](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.html) · JSON: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json
 
 ## Open static APIs (versioned, read-only, no API key)
-- Documentation: https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/
-- OpenAPI 3.1: https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/openapi.json
-- API index: https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/index.json
+- Family Travel Missions API v1: https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/
+  - OpenAPI 3.1: https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/openapi.json
+  - API index: https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/index.json
+- Bopomofo Symbols API v1: https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/
+  - OpenAPI 3.1: https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/openapi.json
+  - API index: https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.json
 
 ## Open educational resources (CC BY 4.0)
 - Family Travel Observation Passport: https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.html

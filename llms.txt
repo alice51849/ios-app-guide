@@ -267,6 +267,13 @@
 - SHA-256 checksums: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/checksums-sha256.txt
 - Dataset manifest: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/metadata.jsonld
 
+## Bopomofo digital-preservation package (RFC 8493 BagIt 1.0)
+- English guide: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/
+- Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-bagit/
+- Deterministic BagIt ZIP: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/bopomofo-37-symbols-bagit-rfc8493.zip
+- Outer SHA-256 checksum: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/checksums-sha256.txt
+- Preservation package metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/metadata.jsonld
+
 ## Bopomofo portable Data Package (Data Package 2.0, CC BY 4.0)
 - English package guide: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/
 - Traditional Chinese package guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo/

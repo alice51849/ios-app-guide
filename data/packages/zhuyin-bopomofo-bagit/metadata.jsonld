@@ -1,0 +1,138 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/#dataset",
+  "name": "RFC 8493 BagIt package for complete Bopomofo reference data",
+  "alternateName": "完整注音參考資料 BagIt 數位保存套件",
+  "description": "Download a deterministic BagIt 1.0 preservation package for the complete 37-symbol Bopomofo dataset, with SHA-256 and SHA-512 payload and tag manifests.",
+  "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/",
+  "identifier": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/",
+  "version": "1.0.0",
+  "datePublished": "2026-07-11",
+  "dateModified": "2026-07-11",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "inLanguage": [
+    "en",
+    "zh-Hant",
+    "zh-Bopo"
+  ],
+  "conformsTo": "https://www.rfc-editor.org/rfc/rfc8493",
+  "creator": {
+    "@type": "Organization",
+    "name": "Lumi Apps - iOS App Guide",
+    "url": "https://alice51849.github.io/ios-app-guide"
+  },
+  "measurementTechnique": "RFC 8493 BagIt 1.0 with SHA-256 and SHA-512 payload and tag manifests",
+  "size": "302135.10",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "Deterministic RFC 8493 BagIt ZIP",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/bopomofo-37-symbols-bagit-rfc8493.zip",
+      "encodingFormat": "application/zip",
+      "contentSize": "309126 B",
+      "sha256": "e27e729ca86f0dc0347fbd5625b9cfb6ddc06f0fa929f19287539463c2eab316"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Outer SHA-256 checksum",
+      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/checksums-sha256.txt",
+      "encodingFormat": "text/plain",
+      "contentSize": "104 B",
+      "sha256": "000818b69543fd9b7f56b45aa3b7eff0abfd07eb1e62b44b53746a559f7f13dc"
+    }
+  ],
+  "hasPart": [
+    {
+      "@type": "DigitalDocument",
+      "name": "data/LICENSE.txt",
+      "description": "CC BY 4.0 license notice",
+      "encodingFormat": "text/plain",
+      "contentSize": "391 B",
+      "sha256": "0d7eb296b36e8ee510db5311dd0da8854344a3a92177075c348a238a7b30574c",
+      "isBasedOn": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "data/README.md",
+      "description": "Preservation and validation guide",
+      "encodingFormat": "text/markdown",
+      "contentSize": "840 B",
+      "sha256": "5d556e96e0efaa1c5ca09e6766f159b83f0ec9a4f72737c0e0667ba5156f3af9",
+      "isBasedOn": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
+      "description": "MLCommons Croissant 1.1 metadata",
+      "encodingFormat": "application/ld+json; profile=\"http://mlcommons.org/croissant/1.1\"",
+      "contentSize": "13777 B",
+      "sha256": "d96d4b5a8d50247ace01825cc267a657e0f9ac9785e6f9283b4f7312337e30e7",
+      "isBasedOn": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "data/zhuyin-bopomofo-ml-dataset.csv",
+      "description": "Canonical 37-row UTF-8 table",
+      "encodingFormat": "text/csv",
+      "contentSize": "8350 B",
+      "sha256": "6d9235a013dd1856130841bdf6866f22173903bec726690b9b4c3e555b223422",
+      "isBasedOn": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
+      "description": "W3C CSVW metadata",
+      "encodingFormat": "application/csvm+json",
+      "contentSize": "7701 B",
+      "sha256": "eb8dcf8e39f65a5d3747a527c58537ad13f8c5a7ae56b55b34189c4ca9a98771",
+      "isBasedOn": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "data/zhuyin-bopomofo-ml-dataset.jsonl",
+      "description": "Equivalent JSON Lines records",
+      "encodingFormat": "application/x-ndjson",
+      "contentSize": "14734 B",
+      "sha256": "68729f91871ca6603929c2a28ffb567513bf0a4f233f55164c236bd36b31b131",
+      "isBasedOn": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "data/zhuyin-bopomofo-vocabulary.jsonld",
+      "description": "SKOS vocabulary in JSON-LD",
+      "encodingFormat": "application/ld+json",
+      "contentSize": "79017 B",
+      "sha256": "e8a4f56690766420f00a3762e08de8d86bfbeb09b00093dfbc4c619508dc855a",
+      "isBasedOn": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "data/zhuyin-bopomofo-vocabulary.nt",
+      "description": "SKOS vocabulary in N-Triples",
+      "encodingFormat": "application/n-triples",
+      "contentSize": "141016 B",
+      "sha256": "3ebe082c284c4b2c8af816ff08731ca9bd694f2f5985e4b459874f4a3ec216ef",
+      "isBasedOn": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "data/zhuyin-bopomofo-vocabulary.shacl.ttl",
+      "description": "SHACL validation shapes",
+      "encodingFormat": "text/turtle",
+      "contentSize": "4070 B",
+      "sha256": "3f96d72fbbea61f308b28b8b54fc9867b0c2f6ae1538763e05093a9565fdd7cc",
+      "isBasedOn": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "data/zhuyin-bopomofo-vocabulary.ttl",
+      "description": "SKOS vocabulary in Turtle",
+      "encodingFormat": "text/turtle",
+      "contentSize": "32239 B",
+      "sha256": "0173df5ad1c3fcad5bc85e0ba738f05617cbd95bd664f81260344eb5337d2411",
+      "isBasedOn": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl"
+    }
+  ]
+}

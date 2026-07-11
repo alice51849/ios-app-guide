@@ -56,15 +56,16 @@ jobs:
           OER_SLUG="where-can-an-oer-repository-download-metadata-for-a-bopomofo-learning-resource"
           DCAT_SLUG="where-can-an-open-data-catalog-harvest-a-bopomofo-dataset-in-dcat-3"
           CSVW_SLUG="where-can-data-tools-download-csvw-metadata-for-all-37-bopomofo-symbols"
+          BAGIT_SLUG="where-can-a-digital-repository-download-an-rfc-8493-bagit-package-for-bopomofo-data"
           if python3 -c 'import sys; sys.path.insert(0, "../social"); from appstore_live import live_app_keys; from videogen.registry import APPSTORE; sys.exit(0 if "lumibopomofo" in live_app_keys(APPSTORE, "pages", refresh=False) else 1)'; then
             python3 aeo_answers.py lumibopomofo --cached-live \
               --refresh-slug "$SUMMER_SLUG" --refresh-slug "$OBSERVATION_SLUG" \
               --refresh-slug "$EPUB_SLUG" --refresh-slug "$LIBRARY_SLUG" \
               --refresh-slug "$OER_SLUG" --refresh-slug "$DCAT_SLUG" \
-              --refresh-slug "$CSVW_SLUG"
+              --refresh-slug "$CSVW_SLUG" --refresh-slug "$BAGIT_SLUG"
             python3 aeo_answers_i18n.py "$SUMMER_SLUG" "$OBSERVATION_SLUG" \
               "$EPUB_SLUG" "$LIBRARY_SLUG" "$OER_SLUG" "$DCAT_SLUG" \
-              "$CSVW_SLUG" \
+              "$CSVW_SLUG" "$BAGIT_SLUG" \
               --langs zh-Hant --trans i18n_trans --force
           else
             echo "Lumi Bopomofo is not public; stale app-linked answers will be pruned."
@@ -104,6 +105,7 @@ jobs:
           python3 zhuyin_croissant_dataset.py
           python3 zhuyin_frictionless_package.py
           python3 zhuyin_csvw_metadata.py
+          python3 zhuyin_bagit_package.py
           python3 zhuyin_static_api.py
           python3 zhuyin_lms_assessment_bank.py
           python3 zhuyin_epub_opds.py

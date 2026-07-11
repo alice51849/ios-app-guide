@@ -255,6 +255,28 @@ DATASETS = (
         conforms_to=("https://datapackage.org/standard/data-package/",),
     ),
     DatasetSpec(
+        key="bagit",
+        title_en="Bopomofo RFC 8493 BagIt preservation package",
+        title_zh="注音 RFC 8493 BagIt 數位保存套件",
+        description_en=(
+            "A deterministic BagIt 1.0 deposit package with ten preserved "
+            "payload files, exact Payload-Oxum and SHA-256 and SHA-512 fixity."
+        ),
+        description_zh=(
+            "Deterministic BagIt 1.0 deposit package，保存 10 個 payload 檔案，"
+            "並提供精確 Payload-Oxum、SHA-256 與 SHA-512 fixity。"
+        ),
+        landing_path="data/packages/zhuyin-bopomofo-bagit/",
+        metadata_path="data/packages/zhuyin-bopomofo-bagit/metadata.jsonld",
+        distribution_paths=(
+            "data/packages/zhuyin-bopomofo-bagit/bopomofo-37-symbols-bagit-rfc8493.zip",
+            "data/packages/zhuyin-bopomofo-bagit/checksums-sha256.txt",
+            "data/packages/zhuyin-bopomofo-bagit/metadata.jsonld",
+        ),
+        keywords=("BagIt", "RFC 8493", "digital preservation", "fixity"),
+        conforms_to=("https://www.rfc-editor.org/rfc/rfc8493",),
+    ),
+    DatasetSpec(
         key="anki",
         title_en="Bopomofo Anki import decks",
         title_zh="注音 Anki 匯入牌組",
@@ -397,8 +419,8 @@ COPY = {
         "lang": "en",
         "title": "DCAT 3 open-data catalog for Bopomofo resources",
         "description": (
-            "Download a static W3C DCAT 3 catalog covering nine verified "
-            "Bopomofo datasets and 45 exact distributions."
+            "Download a static W3C DCAT 3 catalog covering ten verified "
+            "Bopomofo datasets and 48 exact distributions."
         ),
         "eyebrow": "W3C DCAT 3 · JSON-LD + Turtle · SHA-256",
         "lead": (
@@ -409,8 +431,8 @@ COPY = {
         "back": "Open data",
         "language": "繁體中文",
         "badges": (
-            "9 catalogued datasets",
-            "45 exact distributions",
+            "10 catalogued datasets",
+            "48 exact distributions",
             "SPDX SHA-256 fixity",
             "No account or API key",
         ),
@@ -429,7 +451,8 @@ COPY = {
         "coverage_items": (
             (
                 "Reference and linked data",
-                "Core JSON, SKOS, SHACL, Croissant, CSVW, CSV, JSON Lines and Data Package 2.0.",
+                "Core JSON, SKOS, SHACL, Croissant, CSVW, CSV, JSON Lines, "
+                "Data Package 2.0 and RFC 8493 BagIt.",
             ),
             (
                 "Learning and publication files",
@@ -480,7 +503,7 @@ COPY = {
         "lang": "zh-Hant",
         "title": "注音開放資源 DCAT 3 資料目錄",
         "description": (
-            "下載靜態 W3C DCAT 3 目錄，收錄 9 組已驗證注音資料集與 45 個精確版本。"
+            "下載靜態 W3C DCAT 3 目錄，收錄 10 組已驗證注音資料集與 48 個精確版本。"
         ),
         "eyebrow": "W3C DCAT 3 · JSON-LD＋Turtle · SHA-256",
         "lead": (
@@ -490,8 +513,8 @@ COPY = {
         "back": "開放資料",
         "language": "English",
         "badges": (
-            "9 組目錄資料集",
-            "45 個精確版本",
+            "10 組目錄資料集",
+            "48 個精確版本",
             "SPDX SHA-256 fixity",
             "免帳號與 API key",
         ),
@@ -510,7 +533,8 @@ COPY = {
         "coverage_items": (
             (
                 "參考資料與 linked data",
-                "核心 JSON、SKOS、SHACL、Croissant、CSVW、CSV、JSON Lines 與 Data Package 2.0。",
+                "核心 JSON、SKOS、SHACL、Croissant、CSVW、CSV、JSON Lines、"
+                "Data Package 2.0 與 RFC 8493 BagIt。",
             ),
             (
                 "學習與出版檔案",
@@ -1568,7 +1592,7 @@ def _update_data_index(
         f'{CARD_START}<a class="item" href="{LANDING_URL}"><div>'
         '<span class="tag">W3C DCAT 3 · JSON-LD · Turtle</span>'
         "<h2>Bopomofo open-data catalog</h2>"
-        "<p>Nine datasets and 45 exact distributions with SPDX SHA-256 "
+        "<p>Ten datasets and 48 exact distributions with SPDX SHA-256 "
         "fixity and bilingual metadata.</p></div>"
         f'<span class="arrow">&rarr;</span></a>{CARD_END}'
     )

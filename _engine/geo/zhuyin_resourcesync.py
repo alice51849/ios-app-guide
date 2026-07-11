@@ -69,6 +69,7 @@ CONTENT_PATTERNS = (
     "data/packages/zhuyin-bopomofo-oer/**/*",
     "data/packages/zhuyin-bopomofo-dcat3/**/*",
     "data/packages/zhuyin-bopomofo-csvw/**/*",
+    "data/packages/zhuyin-bopomofo-bagit/**/*",
     "publications/bopomofo-37-symbol-reference/**/*",
     "opds/bopomofo-37-symbol-reference.*",
     "api/v1/bopomofo-symbols/**/*",
@@ -76,6 +77,7 @@ CONTENT_PATTERNS = (
     "zh-Hant/data/zhuyin-bopomofo*",
     "zh-Hant/data/packages/zhuyin-bopomofo/**/*",
     "zh-Hant/data/packages/zhuyin-bopomofo-csvw/**/*",
+    "zh-Hant/data/packages/zhuyin-bopomofo-bagit/**/*",
     "zh-Hant/api/v1/bopomofo-symbols/**/*",
     "zh-Hant/tools/zhuyin-*",
 )
@@ -166,6 +168,15 @@ REQUIRED_PATHS = (
     / "zhuyin-bopomofo-dcat3"
     / "bopomofo-open-data-catalog-dcat3-bundle.zip",
     Path("data") / "packages" / "zhuyin-bopomofo-dcat3" / "metadata.jsonld",
+    Path("data")
+    / "packages"
+    / "zhuyin-bopomofo-bagit"
+    / "bopomofo-37-symbols-bagit-rfc8493.zip",
+    Path("data")
+    / "packages"
+    / "zhuyin-bopomofo-bagit"
+    / "checksums-sha256.txt",
+    Path("data") / "packages" / "zhuyin-bopomofo-bagit" / "metadata.jsonld",
 )
 CARD_START = "<!-- resourcesync-card:start -->"
 CARD_END = "<!-- resourcesync-card:end -->"
@@ -210,8 +221,8 @@ COPY = {
             ("Data and linked data", "JSON, CSV, JSON-LD, Turtle and N-Triples"),
             (
                 "Portable packages",
-                "Croissant, Data Package, LMS imports, accessible EPUB editions "
-                "and OER repository metadata, plus the DCAT 3 catalog",
+                "Croissant, Data Package, LMS imports, accessible EPUB editions, "
+                "OER metadata, RFC 8493 BagIt and the DCAT 3 catalog",
             ),
             ("Static API", "OpenAPI plus all 37 versioned symbol responses"),
             ("Open teaching tools", "Bilingual guides, decks and printable activities"),
@@ -278,8 +289,8 @@ COPY = {
             ("資料與 Linked Data", "JSON、CSV、JSON-LD、Turtle 與 N-Triples"),
             (
                 "可攜套件",
-                "Croissant、Data Package、LMS 匯入檔、無障礙 EPUB 版本與 "
-                "OER 典藏庫 metadata、DCAT 3 目錄",
+                "Croissant、Data Package、LMS 匯入檔、無障礙 EPUB 版本、"
+                "OER metadata、RFC 8493 BagIt 與 DCAT 3 目錄",
             ),
             ("靜態 API", "OpenAPI 與完整 37 個版本化符號回應"),
             ("開放教學工具", "雙語指南、牌組與可列印活動"),

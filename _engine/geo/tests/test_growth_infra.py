@@ -59,6 +59,7 @@ import zhuyin_grade1_summer_calendar
 import zhuyin_anki_deck
 import zhuyin_croissant_dataset
 import zhuyin_csvw_metadata
+import zhuyin_bagit_package
 import zhuyin_dcat_catalog
 import zhuyin_epub_opds
 import zhuyin_frictionless_package
@@ -2432,6 +2433,286 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(list(range(1, 38)), [row["order"] for row in loaded])
             self.assertEqual(37, len({row["symbol_id"] for row in loaded}))
 
+    def _seed_zhuyin_bagit_pages(self, pages):
+        data = pages / "data"
+        data.mkdir(parents=True)
+        with mock.patch.object(
+            gen_data_hub,
+            "PAGES",
+            str(pages),
+        ), mock.patch.object(
+            gen_data_hub,
+            "DATA",
+            str(data),
+        ):
+            gen_data_hub.build_zhuyin_page()
+        (data / "index.html").write_text(
+            '<script type="application/ld+json">'
+            '{"@context":"https://schema.org","@type":"DataCatalog",'
+            '"dataset":[]}</script><main><a class="item" href="'
+            f'{zhuyin_skos_vocabulary.SOURCE_PAGE}">'
+            '<h2>Source dataset</h2></a>'
+            '<p class="foot">Footer</p></main>',
+            encoding="utf-8",
+        )
+        zhuyin_skos_vocabulary.build(pages, app_public=False)
+        zhuyin_croissant_dataset.build(pages, app_public=False)
+        zhuyin_csvw_metadata.build(pages, app_public=False)
+
+    def test_zhuyin_bagit_package_is_complete_deterministic_and_discoverable(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            self._seed_zhuyin_bagit_pages(pages)
+            payload, descriptions = zhuyin_bagit_package.load_payload(pages)
+            first = zhuyin_bagit_package.make_artifacts(
+                payload,
+                descriptions,
+                zhuyin_bagit_package.INITIAL_DATE,
+            )
+            second = zhuyin_bagit_package.make_artifacts(
+                payload,
+                descriptions,
+                zhuyin_bagit_package.INITIAL_DATE,
+            )
+            self.assertEqual(
+                {
+                    key: value["bytes"]
+                    for key, value in first.items()
+                    if isinstance(value, dict) and "bytes" in value
+                },
+                {
+                    key: value["bytes"]
+                    for key, value in second.items()
+                    if isinstance(value, dict) and "bytes" in value
+                },
+            )
+            self.assertEqual(first["_bag_files"], second["_bag_files"])
+            zhuyin_bagit_package.validate_artifacts(first)
+            self.assertEqual(10, len(payload))
+            self.assertEqual(
+                f"{sum(len(value) for value in payload.values())}.10",
+                zhuyin_bagit_package.payload_oxum(payload),
+            )
+            for algorithm in ("sha256", "sha512"):
+                payload_manifest = zhuyin_bagit_package._manifest_entries(
+                    first["_bag_files"][f"manifest-{algorithm}.txt"]
+                )
+                tag_manifest = zhuyin_bagit_package._manifest_entries(
+                    first["_bag_files"][f"tagmanifest-{algorithm}.txt"]
+                )
+                self.assertEqual(set(payload), set(payload_manifest))
+                self.assertEqual(
+                    {
+                        "bagit.txt",
+                        "bag-info.txt",
+                        "manifest-sha256.txt",
+                        "manifest-sha512.txt",
+                    },
+                    set(tag_manifest),
+                )
+            with zipfile.ZipFile(io.BytesIO(first["bundle"]["bytes"])) as archive:
+                self.assertEqual(sorted(archive.namelist()), archive.namelist())
+                self.assertTrue(
+                    all(
+                        name.startswith(
+                            zhuyin_bagit_package.BAG_ROOT + "/"
+                        )
+                        for name in archive.namelist()
+                    )
+                )
+                self.assertTrue(
+                    all(
+                        info.date_time == zhuyin_bagit_package.ZIP_TIMESTAMP
+                        and info.compress_type == zipfile.ZIP_STORED
+                        for info in archive.infolist()
+                    )
+                )
+            metadata = json.loads(first["metadata"]["bytes"])
+            self.assertEqual(
+                zhuyin_bagit_package.RFC_URL,
+                metadata["conformsTo"],
+            )
+            self.assertEqual(10, len(metadata["hasPart"]))
+            self.assertEqual(
+                zhuyin_bagit_package.payload_oxum(payload),
+                metadata["size"],
+            )
+            with mock.patch.object(
+                zhuyin_bagit_package,
+                "render_readme",
+                return_value=b"https://apps.apple.com/app/id6773017109\n",
+            ):
+                contaminated_payload, contaminated_descriptions = (
+                    zhuyin_bagit_package.load_payload(pages)
+                )
+            contaminated = zhuyin_bagit_package.make_artifacts(
+                contaminated_payload,
+                contaminated_descriptions,
+                zhuyin_bagit_package.INITIAL_DATE,
+            )
+            with self.assertRaises(ValueError):
+                zhuyin_bagit_package.validate_artifacts(contaminated)
+
+            urls = zhuyin_bagit_package.build(pages, app_public=False)
+            expected = (
+                pages
+                / zhuyin_bagit_package.PACKAGE_PATH
+                / zhuyin_bagit_package.BUNDLE_FILENAME,
+                pages
+                / zhuyin_bagit_package.PACKAGE_PATH
+                / zhuyin_bagit_package.CHECKSUM_FILENAME,
+                pages
+                / zhuyin_bagit_package.PACKAGE_PATH
+                / zhuyin_bagit_package.METADATA_FILENAME,
+                pages / zhuyin_bagit_package.PACKAGE_PATH / "index.html",
+                pages
+                / "zh-Hant"
+                / zhuyin_bagit_package.PACKAGE_PATH
+                / "index.html",
+                pages / "sitemap_bagit.xml",
+            )
+            self.assertEqual(6, len(urls))
+            self.assertTrue(all(path.exists() for path in expected))
+            for page in expected[3:5]:
+                content = page.read_text(encoding="utf-8")
+                self.assertIn("RFC 8493", content)
+                self.assertIn("Payload-Oxum", content)
+                self.assertNotIn("apps.apple.com", content)
+                self.assertNotIn('"SoftwareApplication"', content)
+            public = zhuyin_bagit_package.render_page(
+                "en",
+                first,
+                app_public=True,
+            )
+            self.assertIn(zhuyin_bagit_package.APP_ID, public)
+            self.assertIn('"SoftwareApplication"', public)
+            sitemap = expected[-1].read_text(encoding="utf-8")
+            for url in urls[:-1]:
+                self.assertIn(url, sitemap)
+            index = (pages / "data" / "index.html").read_text(
+                encoding="utf-8"
+            )
+            self.assertEqual(
+                1,
+                index.count(
+                    f'href="{zhuyin_bagit_package.PACKAGE_URL}"'
+                ),
+            )
+
+            with mock.patch.object(
+                gen_llms,
+                "DATA_DIR",
+                str(pages / "data"),
+            ), mock.patch.object(
+                gen_llms,
+                "PAGES",
+                str(pages),
+            ):
+                llms = gen_llms.build_llms({}, set())
+                full = gen_llms.build_llms_full({}, set())
+                robots = gen_llms.build_robots()
+                sitemap_index = gen_llms.build_sitemap_index()
+            for content in (llms, full):
+                self.assertIn("RFC 8493 BagIt", content)
+                self.assertIn(zhuyin_bagit_package.BUNDLE_URL, content)
+                self.assertIn(zhuyin_bagit_package.METADATA_URL, content)
+            for content in (robots, sitemap_index):
+                self.assertIn("sitemap_bagit.xml", content)
+
+            deep_items = json.loads(
+                (
+                    Path(GEO)
+                    / "deep_items"
+                    / "lumibopomofo.json"
+                ).read_text(encoding="utf-8")
+            )
+            deep_item = next(
+                item
+                for item in deep_items
+                if item["kind"] == "bagit_digital_preservation"
+            )
+            self.assertEqual(
+                zhuyin_bagit_package.PACKAGE_URL,
+                deep_item["primary_resource_url"],
+            )
+            self.assertIn("ten payload files", deep_item["detail"])
+            self.assertIn(
+                "does not define a ZIP serialization",
+                deep_item["detail"],
+            )
+            translations = json.loads(
+                (
+                    Path(GEO) / "i18n_trans" / "zh-Hant.json"
+                ).read_text(encoding="utf-8")
+            )
+
+            def translated_strings(value, parent_key=""):
+                if isinstance(value, str):
+                    if parent_key not in {
+                        "app_key",
+                        "kind",
+                        "match",
+                        "primary_resource_url",
+                        "url",
+                    }:
+                        yield value
+                elif isinstance(value, list):
+                    for child in value:
+                        yield from translated_strings(child, parent_key)
+                elif isinstance(value, dict):
+                    for key, child in value.items():
+                        yield from translated_strings(child, key)
+
+            self.assertEqual(
+                [],
+                [
+                    value
+                    for value in translated_strings(deep_item)
+                    if value not in translations
+                ],
+            )
+            self.assertIn(
+                "如何選擇：",
+                translations[
+                    "How to choose: " + deep_item["query"]
+                ],
+            )
+
+            mtimes = {
+                path: path.stat().st_mtime_ns
+                for path in (*expected, pages / "data" / "index.html")
+            }
+            zhuyin_bagit_package.build(pages, app_public=False)
+            self.assertEqual(
+                mtimes,
+                {path: path.stat().st_mtime_ns for path in mtimes},
+            )
+
+    @unittest.skipUnless(
+        importlib.util.find_spec("bagit"),
+        "Library of Congress BagIt validator is installed in CI",
+    )
+    def test_zhuyin_bagit_package_validates_with_independent_processor(self):
+        import bagit
+
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory) / "site"
+            extracted = Path(directory) / "extracted"
+            self._seed_zhuyin_bagit_pages(pages)
+            zhuyin_bagit_package.build(pages, app_public=False)
+            bundle = (
+                pages
+                / zhuyin_bagit_package.PACKAGE_PATH
+                / zhuyin_bagit_package.BUNDLE_FILENAME
+            )
+            with zipfile.ZipFile(bundle) as archive:
+                archive.extractall(extracted)
+            bag = bagit.Bag(
+                extracted / zhuyin_bagit_package.BAG_ROOT
+            )
+            bag.validate()
+            self.assertTrue(bag.is_valid())
+
     def test_zhuyin_lms_question_bank_is_complete_and_portable(self):
         rows = zhuyin_croissant_dataset.records()
         first = zhuyin_lms_assessment_bank.make_core_artifacts(rows)
@@ -4038,6 +4319,7 @@ class GeneratorTests(unittest.TestCase):
         zhuyin_croissant_dataset.build(pages, app_public=False)
         zhuyin_frictionless_package.build(pages, app_public=False)
         zhuyin_csvw_metadata.build(pages, app_public=False)
+        zhuyin_bagit_package.build(pages, app_public=False)
         zhuyin_static_api.build(pages, app_public=False)
         zhuyin_lms_assessment_bank.build(pages, app_public=False)
         zhuyin_epub_opds.build(pages, app_public=False)
@@ -4067,8 +4349,8 @@ class GeneratorTests(unittest.TestCase):
                     package_dir / zhuyin_dcat_catalog.METADATA_FILENAME
                 ).read_text(encoding="utf-8")
             )
-            self.assertEqual(9, metadata["numberOfItems"])
-            self.assertEqual(9, len(metadata["dataset"]))
+            self.assertEqual(10, metadata["numberOfItems"])
+            self.assertEqual(10, len(metadata["dataset"]))
             self.assertEqual(3, len(metadata["distribution"]))
             self.assertEqual(
                 zhuyin_dcat_catalog.DCAT_SPEC,
@@ -4147,7 +4429,7 @@ class GeneratorTests(unittest.TestCase):
             for landing in (english, traditional):
                 self.assertIn("DCAT 3", landing)
                 self.assertIn("SPDX", landing)
-                self.assertIn("45", landing)
+                self.assertIn("48", landing)
                 self.assertNotIn("apps.apple.com", landing)
                 self.assertNotIn('"SoftwareApplication"', landing)
 
@@ -4207,6 +4489,30 @@ class GeneratorTests(unittest.TestCase):
             for content in (robots, sitemap_index):
                 self.assertIn("sitemap_dcat.xml", content)
 
+            published_answers = (
+                Path(GEO)
+                / "pages"
+                / "answers"
+                / (
+                    "where-can-an-open-data-catalog-harvest-a-bopomofo-"
+                    "dataset-in-dcat-3.html"
+                ),
+                Path(GEO)
+                / "pages"
+                / "zh-Hant"
+                / "answers"
+                / (
+                    "where-can-an-open-data-catalog-harvest-a-bopomofo-"
+                    "dataset-in-dcat-3.html"
+                ),
+            )
+            for answer in published_answers:
+                content = answer.read_text(encoding="utf-8")
+                self.assertIn("48", content)
+                self.assertIn("BagIt", content)
+                self.assertNotIn("45 exact distributions", content)
+                self.assertNotIn("45 個確切", content)
+
             translations = json.loads(
                 (
                     Path(GEO) / "i18n_trans" / "zh-Hant.json"
@@ -4265,7 +4571,7 @@ class GeneratorTests(unittest.TestCase):
                 format="turtle",
             )
             self.assertTrue(isomorphic(json_graph, turtle_graph))
-            self.assertEqual(952, len(json_graph))
+            self.assertEqual(1025, len(json_graph))
 
             dcat = zhuyin_dcat_catalog.DCAT
             dcterms = zhuyin_dcat_catalog.DCTERMS
@@ -4299,9 +4605,9 @@ class GeneratorTests(unittest.TestCase):
                 {URIRef(zhuyin_dcat_catalog.CATALOG_ID)},
                 catalogs,
             )
-            self.assertEqual(9, len(records))
-            self.assertEqual(9, len(datasets))
-            self.assertEqual(45, len(distributions))
+            self.assertEqual(10, len(records))
+            self.assertEqual(10, len(datasets))
+            self.assertEqual(48, len(distributions))
             self.assertEqual(
                 {URIRef(zhuyin_dcat_catalog.API_SERVICE)},
                 services,
@@ -4385,6 +4691,18 @@ class GeneratorTests(unittest.TestCase):
                     for value in zhuyin_csvw_metadata.CSVW_RECOMMENDATIONS
                 }
                 <= csvw_standards
+            )
+            bagit_dataset = URIRef(
+                f"{zhuyin_dcat_catalog.LANDING_URL}#dataset-bagit"
+            )
+            self.assertEqual(
+                {URIRef(zhuyin_bagit_package.RFC_URL)},
+                set(
+                    json_graph.objects(
+                        bagit_dataset,
+                        URIRef(dcterms + "conformsTo"),
+                    )
+                ),
             )
 
             checksum_nodes = set()
@@ -4524,7 +4842,7 @@ class GeneratorTests(unittest.TestCase):
                     hashlib.sha256(content).hexdigest(),
                     str(values[0]),
                 )
-            self.assertEqual(45, len(checksum_nodes))
+            self.assertEqual(48, len(checksum_nodes))
             self.assertEqual(
                 1,
                 len(
@@ -4684,7 +5002,7 @@ class GeneratorTests(unittest.TestCase):
 
             resources = zhuyin_resourcesync.discover_resources(pages)
             entries = resource_list.findall(f"{{{sitemap_ns}}}url")
-            self.assertEqual(148, len(resources))
+            self.assertEqual(153, len(resources))
             self.assertEqual(len(resources), len(entries))
             resources_by_path = {
                 resource.relative_path.as_posix(): resource
@@ -6677,6 +6995,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_croissant_dataset.py", workflow)
         self.assertIn("zhuyin_frictionless_package.py", workflow)
         self.assertIn("zhuyin_csvw_metadata.py", workflow)
+        self.assertIn("zhuyin_bagit_package.py", workflow)
         self.assertIn("zhuyin_static_api.py", workflow)
         self.assertIn("zhuyin_lms_assessment_bank.py", workflow)
         self.assertIn("zhuyin_epub_opds.py", workflow)
@@ -6712,6 +7031,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_croissant_dataset.py",
             "zhuyin_frictionless_package.py",
             "zhuyin_csvw_metadata.py",
+            "zhuyin_bagit_package.py",
             "zhuyin_static_api.py",
             "zhuyin_lms_assessment_bank.py",
             "zhuyin_epub_opds.py",
@@ -6736,6 +7056,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("--refresh-slug \"$OER_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$DCAT_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$CSVW_SLUG\"", workflow)
+        self.assertIn("--refresh-slug \"$BAGIT_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$TRIP_SLUG\"", workflow)
         self.assertIn('"lumibopomofo" in live_app_keys', workflow)
         self.assertIn('"tripplanet" in live_app_keys', workflow)
@@ -6756,6 +7077,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_croissant_dataset.py", publish)
         self.assertIn("zhuyin_frictionless_package.py", publish)
         self.assertIn("zhuyin_csvw_metadata.py", publish)
+        self.assertIn("zhuyin_bagit_package.py", publish)
         self.assertIn("zhuyin_static_api.py", publish)
         self.assertIn("zhuyin_lms_assessment_bank.py", publish)
         self.assertIn("zhuyin_epub_opds.py", publish)
@@ -6792,6 +7114,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_croissant_dataset.py",
             "zhuyin_frictionless_package.py",
             "zhuyin_csvw_metadata.py",
+            "zhuyin_bagit_package.py",
             "zhuyin_static_api.py",
             "zhuyin_lms_assessment_bank.py",
             "zhuyin_epub_opds.py",

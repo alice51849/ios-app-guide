@@ -646,6 +646,13 @@
   - SHA-256 checksums: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/checksums-sha256.txt
   - Dataset manifest: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/metadata.jsonld
 
+## Bopomofo RFC 8493 BagIt preservation package
+- [English guide](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/)
+- [Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-bagit/)
+  - Deterministic BagIt ZIP: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/bopomofo-37-symbols-bagit-rfc8493.zip
+  - Outer SHA-256 checksum: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/checksums-sha256.txt
+  - Preservation package metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/metadata.jsonld
+
 ## Bopomofo portable Data Package
 - [English Data Package guide](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/)
 - [Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo/)
@@ -798,6 +805,7 @@
 - https://alice51849.github.io/ios-app-guide/sitemap_croissant.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_datapackage.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_csvw.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_bagit.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_lms.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_epub.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_library_catalog.xml

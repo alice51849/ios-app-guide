@@ -37,6 +37,88 @@
   },
   {
     "app_key": "lumibopomofo",
+    "kind": "bagit_digital_preservation",
+    "match": [
+      "digital repository download an rfc 8493 bagit package",
+      "bopomofo bagit preservation package",
+      "zhuyin bagit deposit",
+      "rfc 8493 bopomofo data"
+    ],
+    "query": "Where can a digital repository download an RFC 8493 BagIt package for Bopomofo data?",
+    "page_title": "Download an RFC 8493 BagIt Package for Bopomofo Data",
+    "meta_description": "Download a validated BagIt 1.0 preservation ZIP for all 37 Bopomofo symbols, with exact Payload-Oxum and SHA-256 and SHA-512 manifests.",
+    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/",
+    "primary_resource_label": "Download the Bopomofo BagIt preservation package",
+    "lead": "Use the open RFC 8493 BagIt package for a self-checking preservation copy of the complete 37-symbol Bopomofo dataset and its standards metadata.",
+    "detail": "The deterministic ZIP extracts to one BagIt 1.0 base directory. Its ten payload files preserve the canonical 37-row UTF-8 CSV, equivalent JSON Lines, W3C CSVW metadata, MLCommons Croissant 1.1 metadata, the SKOS vocabulary in JSON-LD, Turtle and N-Triples, SHACL shapes, a reuse guide and the CC BY 4.0 notice. bagit.txt declares version 1.0 and UTF-8 without a BOM. bag-info.txt records the exact Payload-Oxum. Every payload appears exactly once in both SHA-256 and SHA-512 manifests, and matching tag manifests cover the declaration, bag metadata and both payload manifests without listing themselves. ZIP members use stable ordering, fixed timestamps and stored bytes, while a separate SHA-256 file protects the serialized download. The extracted package validates with LibraryOfCongress bagit-python 1.9.0. RFC 8493 is an Informational filesystem-layout specification and does not define a ZIP serialization or imply institutional endorsement, repository ingest or protection against active attacks.",
+    "follow_up": "Download the ZIP and checksum into the same directory, verify the outer SHA-256, extract the single base directory, then validate it with bagit-python 1.9.0 before staging repository ingest. Keep the original ZIP if the repository preserves transfer objects, and retain the extracted bag if it preserves filesystem packages.",
+    "bullets": [
+      "Complete U+3105 through U+3129 Bopomofo coverage with no audio or learner records",
+      "Ten payload files with an exact octet.streams Payload-Oxum",
+      "SHA-256 and SHA-512 payload manifests plus matching tag manifests",
+      "Deterministic single-root ZIP with a separately published outer SHA-256",
+      "Open CC BY 4.0 payload, no account and no API key"
+    ],
+    "decision_steps": [
+      "Download the ZIP, checksums-sha256.txt and metadata.jsonld from the package guide.",
+      "Run shasum -a 256 -c checksums-sha256.txt before extracting the transfer object.",
+      "Extract the ZIP and confirm it creates only the bopomofo-37-symbols-bagit base directory.",
+      "Run python3 -m bagit --validate bopomofo-37-symbols-bagit with bagit 1.9.0.",
+      "Inspect local rights, retention, identifier and authenticity policies before repository ingest."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Fast completeness screening",
+        "check": "bag-info.txt contains an exact Payload-Oxum for all ten payload streams",
+        "why": "A receiver can detect an obviously incomplete transfer before full checksum validation"
+      },
+      {
+        "need": "Strong fixity",
+        "check": "Every payload and required tag file is covered by both SHA-256 and SHA-512",
+        "why": "Independent validators can verify exact bytes using BagIt 1.0 mandatory algorithms"
+      },
+      {
+        "need": "Portable transfer",
+        "check": "The archive has one base directory, safe ASCII paths, fixed timestamps and a separate ZIP checksum",
+        "why": "Extraction is predictable while the serialized transfer object also has byte-level fixity"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not required to download, validate, preserve or reuse the BagIt package. If currently available, it appears only after the open repository resource as an optional on-device practice layer.",
+    "sources": [
+      {
+        "title": "Bopomofo RFC 8493 BagIt preservation package",
+        "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/"
+      },
+      {
+        "title": "RFC 8493 - The BagIt File Packaging Format (V1.0)",
+        "url": "https://www.rfc-editor.org/rfc/rfc8493"
+      },
+      {
+        "title": "LibraryOfCongress bagit-python",
+        "url": "https://github.com/LibraryOfCongress/bagit-python"
+      },
+      {
+        "title": "IANA application/zip media type registration",
+        "url": "https://www.iana.org/assignments/media-types/application/zip"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does RFC 8493 define the ZIP file itself?",
+        "a": "No. RFC 8493 defines a filesystem hierarchy for a bag and has no IANA actions. This package uses a generic application/zip transfer wrapper with one BagIt base directory and publishes a separate checksum for the ZIP bytes."
+      },
+      {
+        "q": "What does Payload-Oxum prove?",
+        "a": "It records the total payload octets and number of payload streams, so a receiver can quickly detect an incomplete bag. RFC 8493 still requires full manifest checksum validation before calling the bag valid."
+      },
+      {
+        "q": "Does a valid BagIt package prove authenticity?",
+        "a": "No. BagIt manifests provide strong corruption detection, but RFC 8493 says they are not designed to protect against active attacks. A repository that needs authenticity should apply its own trusted signatures or custody controls."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
     "kind": "csvw_tabular_metadata",
     "match": [
       "data tools download csvw metadata",
@@ -905,16 +987,16 @@
       "dcat 3 bopomofo open data catalog"
     ],
     "query": "Where can an open-data catalog harvest a Bopomofo dataset in DCAT 3?",
-    "page_title": "Harvest Nine Open Bopomofo Datasets from a Static DCAT 3 Catalog",
-    "meta_description": "Download a W3C DCAT 3 JSON-LD or Turtle catalog for nine Bopomofo datasets and 45 exact distributions with SPDX SHA-256.",
+    "page_title": "Harvest Ten Open Bopomofo Datasets from a Static DCAT 3 Catalog",
+    "meta_description": "Download a W3C DCAT 3 JSON-LD or Turtle catalog for ten Bopomofo datasets and 48 exact distributions with SPDX SHA-256.",
     "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html",
     "primary_resource_label": "Download the Bopomofo DCAT 3 catalog",
-    "lead": "Use the static Bopomofo DCAT 3 open-data catalog. It lists nine related datasets and 45 exact distributions in equivalent JSON-LD and Turtle graphs, with one deterministic ZIP bundle.",
-    "detail": "The catalog covers the 37-symbol reference data, static JSON API, SKOS and SHACL vocabulary, Croissant, CSVW and Data Package tables, Anki imports, LMS packages, EPUB and OPDS publication files, library records, and OER repository metadata. Every direct distribution records an IANA media-type IRI, byte size, CC BY 4.0 license, language IRIs and an SPDX SHA-256 checksum calculated from the published bytes. Each dcat:CatalogRecord has exactly one foaf:primaryTopic, and the static API is represented separately as a dcat:DataService. Download from https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html. This is a static DCAT description, not portal registration, W3C certification, institutional endorsement or proof that an external catalog has harvested it.",
+    "lead": "Use the static Bopomofo DCAT 3 open-data catalog. It lists ten related datasets and 48 exact distributions in equivalent JSON-LD and Turtle graphs, with one deterministic ZIP bundle.",
+    "detail": "The catalog covers the 37-symbol reference data, static JSON API, SKOS and SHACL vocabulary, Croissant, CSVW and Data Package tables, the RFC 8493 BagIt preservation package, Anki imports, LMS packages, EPUB and OPDS publication files, library records, and OER repository metadata. Every direct distribution records an IANA media-type IRI, byte size, CC BY 4.0 license, language IRIs and an SPDX SHA-256 checksum calculated from the published bytes. Each dcat:CatalogRecord has exactly one foaf:primaryTopic, and the static API is represented separately as a dcat:DataService. Download from https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html. This is a static DCAT description, not portal registration, W3C certification, institutional endorsement or proof that an external catalog has harvested it.",
     "follow_up": "Parse the JSON-LD or Turtle in a staging catalog, read dcat:dataset and dcat:record, verify distribution hashes and byte sizes, and map themes, language policies and local identifiers before publication. Use dcat:downloadURL for files and dcat:endpointURL for the read-only API.",
     "bullets": [
-      "Nine catalogued Bopomofo datasets with bilingual titles and descriptions",
-      "Forty-five direct distributions spanning data, linked data, tabular metadata, learning packages, publications and repository metadata",
+      "Ten catalogued Bopomofo datasets with bilingual titles and descriptions",
+      "Forty-eight direct distributions spanning data, linked data, tabular metadata, preservation packages, learning packages, publications and repository metadata",
       "Equivalent JSON-LD and Turtle RDF graphs with stable named resources",
       "SPDX SHA-256 checksums, exact byte sizes, IANA media-type IRIs and distribution-level CC BY 4.0 licenses",
       "One dcat:DataService for the versioned static JSON API, with OpenAPI endpoint description"

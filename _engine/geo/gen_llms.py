@@ -45,6 +45,7 @@ ZHUYIN_SKOS_VOCABULARY = "zhuyin-bopomofo-vocabulary"
 ZHUYIN_CROISSANT_DATASET = "zhuyin-bopomofo-ml-dataset"
 ZHUYIN_DATA_PACKAGE = "zhuyin-bopomofo"
 ZHUYIN_CSVW_PACKAGE = "zhuyin-bopomofo-csvw"
+ZHUYIN_BAGIT_PACKAGE = "zhuyin-bopomofo-bagit"
 ZHUYIN_RESOURCE_SYNC = "zhuyin-bopomofo-resourcesync"
 ZHUYIN_LMS_BANK = "zhuyin-bopomofo-lms-question-bank"
 ZHUYIN_EPUB = "zhuyin-bopomofo-epub-reference"
@@ -270,6 +271,24 @@ def build_llms(comp_map, live_keys):
             f"- Deterministic offline bundle: {package}/bopomofo-37-symbols-csvw-bundle.zip",
             f"- SHA-256 checksums: {package}/checksums-sha256.txt",
             f"- Dataset manifest: {package}/metadata.jsonld",
+        ]
+    if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
+            ZHUYIN_BAGIT_PACKAGE,
+            "metadata.jsonld",
+        )
+    ):
+        package = f"{SITE}/data/packages/{ZHUYIN_BAGIT_PACKAGE}"
+        lines += [
+            "",
+            "## Bopomofo digital-preservation package (RFC 8493 BagIt 1.0)",
+            f"- English guide: {package}/",
+            f"- Traditional Chinese guide: {SITE}/zh-Hant/data/packages/{ZHUYIN_BAGIT_PACKAGE}/",
+            f"- Deterministic BagIt ZIP: {package}/bopomofo-37-symbols-bagit-rfc8493.zip",
+            f"- Outer SHA-256 checksum: {package}/checksums-sha256.txt",
+            f"- Preservation package metadata: {package}/metadata.jsonld",
         ]
     if os.path.exists(
         os.path.join(
@@ -673,6 +692,24 @@ def build_llms_full(comp_map, live_keys):
         os.path.join(
             DATA_DIR,
             "packages",
+            ZHUYIN_BAGIT_PACKAGE,
+            "metadata.jsonld",
+        )
+    ):
+        package = f"{SITE}/data/packages/{ZHUYIN_BAGIT_PACKAGE}"
+        lines += [
+            "",
+            "## Bopomofo RFC 8493 BagIt preservation package",
+            f"- [English guide]({package}/)",
+            f"- [Traditional Chinese guide]({SITE}/zh-Hant/data/packages/{ZHUYIN_BAGIT_PACKAGE}/)",
+            f"  - Deterministic BagIt ZIP: {package}/bopomofo-37-symbols-bagit-rfc8493.zip",
+            f"  - Outer SHA-256 checksum: {package}/checksums-sha256.txt",
+            f"  - Preservation package metadata: {package}/metadata.jsonld",
+        ]
+    if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
             ZHUYIN_DATA_PACKAGE,
             "datapackage.json",
         )
@@ -832,6 +869,7 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_croissant.xml",
         "sitemap_datapackage.xml",
         "sitemap_csvw.xml",
+        "sitemap_bagit.xml",
         "sitemap_lms.xml",
         "sitemap_epub.xml",
         "sitemap_library_catalog.xml",
@@ -870,6 +908,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_croissant.xml",
             f"Sitemap: {SITE}/sitemap_datapackage.xml",
             f"Sitemap: {SITE}/sitemap_csvw.xml",
+            f"Sitemap: {SITE}/sitemap_bagit.xml",
             f"Sitemap: {SITE}/sitemap_lms.xml",
             f"Sitemap: {SITE}/sitemap_epub.xml",
             f"Sitemap: {SITE}/sitemap_library_catalog.xml",
@@ -893,6 +932,7 @@ def build_sitemap_index():
         "sitemap_croissant.xml",
         "sitemap_datapackage.xml",
         "sitemap_csvw.xml",
+        "sitemap_bagit.xml",
         "sitemap_lms.xml",
         "sitemap_epub.xml",
         "sitemap_library_catalog.xml",

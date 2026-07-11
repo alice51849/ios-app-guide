@@ -1,0 +1,17 @@
+{
+  "specification": "The BagIt File Packaging Format (V1.0)",
+  "version": "RFC 8493",
+  "published": "2018-10",
+  "retrieved": "2026-07-11",
+  "sources": [
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8493.txt",
+      "sha256": "4964147d2e6e16442d4a6dbfbe68178a8f33c3e791c06d68a8b33f51ad821537"
+    }
+  ],
+  "notes": [
+    "RFC 8493 is Informational and defines a filesystem hierarchy, not an archive serialization.",
+    "The downloadable ZIP uses the generic application/zip media type and retains one BagIt base directory.",
+    "BagIt 1.0 validators must support SHA-256 and SHA-512; the package publishes both manifests."
+  ]
+}

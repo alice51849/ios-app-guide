@@ -139,7 +139,6 @@ jobs:
           python3 gen_app_catalog.py
           python3 cleanup_localized_assets.py --cached-live
           python3 aeo_answers.py --cached-live --limit 0
-          python3 gen_llms.py --cached-live
       - name: Commit English content first (fast, before slow localization)
         run: |
           git config user.name "github-actions[bot]"
@@ -183,6 +182,8 @@ jobs:
         run: |
           cd _engine/geo
           python3 cleanup_localized_assets.py --cached-live
+          python3 zhuyin_resourcesync.py
+          python3 gen_llms.py --cached-live
           python3 gen_feed.py
       - name: Unlink site dir
         run: rm -f _engine/geo/pages

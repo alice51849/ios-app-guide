@@ -8241,17 +8241,20 @@ class GeneratorTests(unittest.TestCase):
             "gen_hubs.py",
             "gen_app_catalog.py",
             "cleanup_localized_assets.py --cached-live",
-            "gen_llms.py --cached-live",
         )
         workflow_positions = [refresh_block.index(item) for item in workflow_chain]
         self.assertEqual(sorted(workflow_positions), workflow_positions)
         final_cleanup_block = workflow.split(
             "- name: Final link and availability cleanup", 1
         )[1].split("- name: Unlink site dir", 1)[0]
-        self.assertLess(
-            final_cleanup_block.index("cleanup_localized_assets.py --cached-live"),
-            final_cleanup_block.index("gen_feed.py"),
+        final_chain = (
+            "cleanup_localized_assets.py --cached-live",
+            "zhuyin_resourcesync.py",
+            "gen_llms.py --cached-live",
+            "gen_feed.py",
         )
+        final_positions = [final_cleanup_block.index(item) for item in final_chain]
+        self.assertEqual(sorted(final_positions), final_positions)
         self.assertIn("--refresh-slug \"$SUMMER_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$OBSERVATION_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$EPUB_SLUG\"", workflow)
@@ -8303,6 +8306,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("prioritize_trip_planet_resources.py", publish)
         self.assertIn('gen_llms.py"), "--cached-live"', publish)
         self.assertIn("gen_feed.py", publish)
+        self.assertGreaterEqual(publish.count("zhuyin_resourcesync.py"), 2)
         publish_chain = (
             "build_pages_i18n.py",
             "gen_data_hub.py",
@@ -8344,6 +8348,10 @@ class GeneratorTests(unittest.TestCase):
         )
         publish_positions = [publish.index(item) for item in publish_chain]
         self.assertEqual(sorted(publish_positions), publish_positions)
+        self.assertLess(
+            publish.rindex("zhuyin_resourcesync.py"),
+            publish.rindex("gen_llms.py"),
+        )
         self.assertIn("--refresh-slug", publish)
         self.assertIn("aeo_answers_i18n.py", publish)
         self.assertIn('"lumibopomofo" in live', publish)

@@ -3684,6 +3684,11 @@ class GeneratorTests(unittest.TestCase):
                 self.assertIn(zhuyin_ro_crate.BUNDLE_URL, content)
                 self.assertNotIn("apps.apple.com", content)
                 self.assertNotIn('"SoftwareApplication"', content)
+                for part in root["hasPart"]:
+                    self.assertIn(
+                        f'href="{zhuyin_ro_crate.PACKAGE_URL}{part["@id"]}"',
+                        content,
+                    )
             public = zhuyin_ro_crate.render_page(
                 "en",
                 first,
@@ -8198,7 +8203,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("family_travel_ro_crate.py", workflow)
         self.assertIn("prioritize_trip_planet_resources.py", workflow)
         refresh_block = workflow.split(
-            "- name: Refresh AI indexes + hubs + Atom feed", 1
+            "- name: Refresh AI indexes + hubs", 1
         )[1].split("- name: Commit English content first", 1)[0]
         workflow_chain = (
             "gen_data_hub.py",
@@ -8237,10 +8242,16 @@ class GeneratorTests(unittest.TestCase):
             "gen_app_catalog.py",
             "cleanup_localized_assets.py --cached-live",
             "gen_llms.py --cached-live",
-            "gen_feed.py",
         )
         workflow_positions = [refresh_block.index(item) for item in workflow_chain]
         self.assertEqual(sorted(workflow_positions), workflow_positions)
+        final_cleanup_block = workflow.split(
+            "- name: Final link and availability cleanup", 1
+        )[1].split("- name: Unlink site dir", 1)[0]
+        self.assertLess(
+            final_cleanup_block.index("cleanup_localized_assets.py --cached-live"),
+            final_cleanup_block.index("gen_feed.py"),
+        )
         self.assertIn("--refresh-slug \"$SUMMER_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$OBSERVATION_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$EPUB_SLUG\"", workflow)

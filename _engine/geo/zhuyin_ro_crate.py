@@ -818,7 +818,7 @@ def _artifact_rows(artifacts: dict[str, bytes], copy: dict) -> str:
     root = entities[ROOT_ID]
     return "".join(
         "<tr>"
-        f'<td><a href="{html.escape(ref["@id"], quote=True)}">'
+        f'<td><a href="{html.escape(PACKAGE_URL + ref["@id"], quote=True)}">'
         f'{html.escape(ref["@id"])}</a></td>'
         f'<td>{html.escape(entities[ref["@id"]]["encodingFormat"])}</td>'
         f'<td>{html.escape(entities[ref["@id"]]["contentSize"])}</td>'
@@ -973,6 +973,14 @@ def validate_page(page: str, locale: str, app_public: bool) -> None:
         f'href="{PREVIEW_URL}"',
         f'href="{CHECKSUM_URL}"',
         f'href="{SPEC_URL}"',
+        *(
+            f'href="{PACKAGE_URL}{path}"'
+            for path in (
+                README_FILENAME,
+                LICENSE_FILENAME,
+                *(spec.crate_path for spec in PAYLOAD_SPECS),
+            )
+        ),
     ):
         if required not in page:
             raise ValueError(f"RO-Crate landing is missing {required}")

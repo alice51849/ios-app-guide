@@ -95,7 +95,7 @@ jobs:
           else
             echo "Trip Planet is not public yet; keeping the free resource app-link-free."
           fi
-      - name: Refresh AI indexes + hubs + Atom feed
+      - name: Refresh AI indexes + hubs
         run: |
           cd _engine/geo
           python3 gen_roundups.py
@@ -140,7 +140,6 @@ jobs:
           python3 cleanup_localized_assets.py --cached-live
           python3 aeo_answers.py --cached-live --limit 0
           python3 gen_llms.py --cached-live
-          python3 gen_feed.py
       - name: Commit English content first (fast, before slow localization)
         run: |
           git config user.name "github-actions[bot]"
@@ -184,6 +183,7 @@ jobs:
         run: |
           cd _engine/geo
           python3 cleanup_localized_assets.py --cached-live
+          python3 gen_feed.py
       - name: Unlink site dir
         run: rm -f _engine/geo/pages
       - name: Commit localized pages if any

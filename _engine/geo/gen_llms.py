@@ -558,6 +558,8 @@ def build_llms(comp_map, live_keys):
     lines += ["", "## RFC 9264 Web Linkset",
               f"- App relationship graph: {SITE}/linkset.json",
               f"- Linkset sitemap: {SITE}/sitemap_linkset.xml",
+              "", "## Social preview and oEmbed discovery",
+              f"- oEmbed endpoint sitemap: {SITE}/sitemap_oembed.xml",
               "", "## Sitemaps",
               f"- {SITE}/sitemap.xml", f"- {SITE}/sitemap_alternatives.xml",
               f"- {SITE}/sitemap_answers.xml",
@@ -1121,7 +1123,8 @@ def build_llms_full(comp_map, live_keys):
     for filename in (
         "sitemap_index.xml", "sitemap.xml", "sitemap_alternatives.xml",
         "sitemap_answers.xml", "sitemap_guides.xml", "sitemap_stories.xml",
-        "sitemap_images.xml", "sitemap_linkset.xml", "linkset.json",
+        "sitemap_images.xml", "sitemap_linkset.xml", "sitemap_oembed.xml",
+        "linkset.json",
         "sitemap_hubs.xml", "sitemap_tools.xml", "sitemap_data.xml",
         "sitemap_api.xml", "sitemap_swap.xml", "feed.xml", "rss.xml", "feed.json",
         "sitemap_opds.xml", "sitemap_ro_crate.xml",
@@ -1169,6 +1172,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_stories.xml",
             f"Sitemap: {SITE}/sitemap_images.xml",
             f"Sitemap: {SITE}/sitemap_linkset.xml",
+            f"Sitemap: {SITE}/sitemap_oembed.xml",
             f"Sitemap: {SITE}/sitemap_hubs.xml",
             f"Sitemap: {SITE}/sitemap_tools.xml",
             f"Sitemap: {SITE}/sitemap_data.xml",
@@ -1202,6 +1206,7 @@ def build_robots():
 def build_sitemap_index():
     maps = ["sitemap.xml", "sitemap_alternatives.xml", "sitemap_answers.xml", "sitemap_guides.xml",
             "sitemap_stories.xml", "sitemap_images.xml", "sitemap_linkset.xml",
+            "sitemap_oembed.xml",
             "sitemap_hubs.xml", "sitemap_tools.xml",
             "sitemap_data.xml", "sitemap_api.xml", "sitemap_swap.xml"]
     maps.extend([

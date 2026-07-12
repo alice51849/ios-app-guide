@@ -283,8 +283,15 @@ def ensure_discovery(path: Path, site: str = SITE) -> bool:
     if "</head>" not in source:
         raise ValueError(f"Linkset discovery target has no closing head: {path}")
     cleaned = DISCOVERY_RE.sub("\n", source)
+    social_index = cleaned.find("<!-- social-preview:start -->")
     feed_match = FEED_DISCOVERY_RE.search(cleaned)
-    insert_index = feed_match.start() if feed_match else cleaned.index("</head>")
+    insert_index = (
+        social_index
+        if social_index >= 0
+        else feed_match.start()
+        if feed_match
+        else cleaned.index("</head>")
+    )
     updated = (
         cleaned[:insert_index].rstrip()
         + "\n"

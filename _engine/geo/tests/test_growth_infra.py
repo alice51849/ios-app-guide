@@ -23,6 +23,8 @@ import zipfile
 from pathlib import Path
 from unittest import mock
 
+from PIL import Image
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 GEO = os.path.dirname(HERE)
 if GEO not in sys.path:
@@ -54,6 +56,7 @@ import gen_image_sitemap
 import gen_linkset
 import gen_llms
 import gen_roundups
+import gen_social_previews
 import indexnow_submit
 import notify_websub
 import outreach_scorecard
@@ -332,6 +335,8 @@ class GeneratorTests(unittest.TestCase):
                 f'<link rel="alternate" hreflang="x-default" href="{site}/guides/lumibopomofo.html">'
                 f'<link rel="alternate" hreflang="zh-Hant" href="{site}/zh-Hant/guides/lumibopomofo.html">'
                 f'<link rel="linkset" href="{site}/old-linkset.json">'
+                "<!-- social-preview:start --><meta property=\"og:title\" content=\"old\">"
+                "<!-- social-preview:end -->"
                 f'<link rel="alternate" type="application/atom+xml" href="{site}/feed.xml">'
                 "</head>",
                 encoding="utf-8",
@@ -439,6 +444,14 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(1, guide.read_text(encoding="utf-8").count(discovery))
             self.assertLess(
                 guide.read_text(encoding="utf-8").index(discovery),
+                guide.read_text(encoding="utf-8").index(
+                    "<!-- social-preview:start -->"
+                ),
+            )
+            self.assertLess(
+                guide.read_text(encoding="utf-8").index(
+                    "<!-- social-preview:end -->"
+                ),
                 guide.read_text(encoding="utf-8").index("application/atom+xml"),
             )
             self.assertEqual(
@@ -477,6 +490,121 @@ class GeneratorTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "missing=.*lumibopomofopro"):
                 gen_linkset.build_document(
                     pages, {"lumibopomofo", "lumibopomofopro"}
+                )
+
+    def test_social_previews_generate_cards_oembed_and_stable_metadata(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            guide = pages / "guides" / "lumibopomofo.html"
+            localized = pages / "zh-Hant" / "guides" / "lumibopomofo.html"
+            story = pages / "stories" / "lumibopomofo.html"
+            poster = pages / "stories" / "img" / "lumibopomofo-poster.jpg"
+            hub = pages / "hubs" / "lumibopomofo.html"
+            for path in (guide, localized, story, poster, hub):
+                path.parent.mkdir(parents=True, exist_ok=True)
+            site = gen_social_previews.SITE
+            guide.write_text(
+                "<head><title>Lumi Bopomofo — Zhuyin for Kids</title>"
+                '<meta name="description" content="A private, playful Zhuyin guide.">'
+                f'<link rel="canonical" href="{site}/guides/lumibopomofo.html">'
+                f'<link rel="alternate" hreflang="en" href="{site}/guides/lumibopomofo.html">'
+                f'<link rel="alternate" hreflang="zh-Hant" href="{site}/zh-Hant/guides/lumibopomofo.html">'
+                f'<link rel="linkset" type="application/linkset+json" href="{site}/linkset.json">'
+                f'<link rel="alternate" type="application/atom+xml" href="{site}/feed.xml">'
+                "</head>",
+                encoding="utf-8",
+            )
+            localized.write_text("<head></head>", encoding="utf-8")
+            story.write_text(
+                "<head>"
+                f'<link rel="canonical" href="{site}/stories/lumibopomofo.html">'
+                "</head><body>"
+                f'<amp-story poster-portrait-src="{site}/stories/img/lumibopomofo-poster.jpg">',
+                encoding="utf-8",
+            )
+            Image.new("RGB", (720, 960), (91, 95, 242)).save(poster, "JPEG")
+            hub.write_text("<head></head>", encoding="utf-8")
+            (pages / "index.html").write_text(
+                f'<head><link rel="canonical" href="{site}/index.html"></head>',
+                encoding="utf-8",
+            )
+            for relative in (
+                "feed.xml",
+                "rss.xml",
+                "feed.json",
+                "llms-full.txt",
+                "apps/index.html",
+            ):
+                path = pages / relative
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text("resource", encoding="utf-8")
+            stale_card = pages / "social" / "img" / "stale-share.jpg"
+            stale_oembed = pages / "oembed" / "stale.json"
+            stale_card.parent.mkdir(parents=True)
+            stale_oembed.parent.mkdir(parents=True)
+            stale_card.write_bytes(b"stale")
+            stale_oembed.write_text("{}", encoding="utf-8")
+
+            first = gen_social_previews.generate(pages, {"lumibopomofo"})
+            tracked = [
+                guide,
+                pages / "social" / "img" / "lumibopomofo-share.jpg",
+                pages / "oembed" / "lumibopomofo.json",
+                pages / "sitemap_oembed.xml",
+            ]
+            mtimes = {path: path.stat().st_mtime_ns for path in tracked}
+            second = gen_social_previews.generate(pages, {"lumibopomofo"})
+
+            self.assertEqual(
+                {
+                    "apps": 1,
+                    "cards": 1,
+                    "oembed": 1,
+                    "metadata_pages": 1,
+                    "changed_files": 6,
+                },
+                first,
+            )
+            self.assertEqual(0, second["changed_files"])
+            self.assertEqual(mtimes, {path: path.stat().st_mtime_ns for path in tracked})
+            self.assertFalse(stale_card.exists())
+            self.assertFalse(stale_oembed.exists())
+            with Image.open(tracked[1]) as card:
+                self.assertEqual("JPEG", card.format)
+                self.assertEqual(gen_social_previews.CARD_SIZE, card.size)
+                extrema = card.convert("L").getextrema()
+                self.assertGreater(extrema[1] - extrema[0], 10)
+
+            embed = json.loads(tracked[2].read_text(encoding="utf-8"))
+            self.assertEqual("1.0", embed["version"])
+            self.assertEqual("link", embed["type"])
+            self.assertEqual("Lumi Bopomofo — Zhuyin for Kids", embed["title"])
+            self.assertEqual(1200, embed["thumbnail_width"])
+            self.assertEqual(630, embed["thumbnail_height"])
+            source = guide.read_text(encoding="utf-8")
+            self.assertEqual(1, source.count(gen_social_previews.BLOCK_START))
+            self.assertEqual(1, source.count('property="og:title"'))
+            self.assertIn('name="twitter:card" content="summary_large_image"', source)
+            self.assertIn('type="application/json+oembed"', source)
+            self.assertIn(
+                "url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide"
+                "%2Fguides%2Flumibopomofo.html&amp;format=json",
+                source,
+            )
+            self.assertLess(source.index('rel="linkset"'), source.index(gen_social_previews.BLOCK_START))
+            self.assertLess(source.index(gen_social_previews.BLOCK_END), source.index("application/atom+xml"))
+            sitemap = ET.parse(pages / "sitemap_oembed.xml").getroot()
+            self.assertEqual(
+                f"{site}/oembed/lumibopomofo.json",
+                sitemap.findtext(
+                    f"{{{gen_social_previews.SITEMAP_NS}}}url/"
+                    f"{{{gen_social_previews.SITEMAP_NS}}}loc"
+                ),
+            )
+            self.assertIn("sitemap_oembed.xml", gen_llms.build_robots())
+            with mock.patch.object(gen_llms, "PAGES", str(pages)):
+                self.assertIn(
+                    "sitemap_oembed.xml", gen_llms.build_sitemap_index()
                 )
 
     def test_atom_feed_keeps_guides_and_free_tools_within_the_item_cap(self):
@@ -10197,6 +10325,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_resourcesync.py",
             "gen_image_sitemap.py",
             "gen_linkset.py",
+            "gen_social_previews.py",
             "gen_llms.py --cached-live",
             "gen_feed.py",
         )
@@ -10252,6 +10381,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_resourcesync.py", publish)
         self.assertIn("gen_image_sitemap.py", publish)
         self.assertIn("gen_linkset.py", publish)
+        self.assertIn("gen_social_previews.py", publish)
         self.assertIn("family_travel_mission_cards.py", publish)
         self.assertIn("family_travel_observation_passport.py", publish)
         self.assertIn("family_travel_opds_catalog.py", publish)
@@ -10303,6 +10433,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_resourcesync.py",
             "gen_image_sitemap.py",
             "gen_linkset.py",
+            "gen_social_previews.py",
             "gen_llms.py",
             "gen_feed.py",
         )

@@ -1,0 +1,34 @@
+name: Daily Software Heritage archive
+
+on:
+  schedule:
+    - cron: "23 2 * * *"
+  workflow_dispatch:
+    inputs:
+      repository:
+        description: Public outreach repository name (optional)
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+concurrency:
+  group: software-heritage-archive
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Verify archive rotation and deduplication
+        run: python3 .github/scripts/test_software_heritage_archive.py -q
+      - name: Archive one public outreach repository
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          SWH_REPOSITORY: ${{ inputs.repository }}
+        run: python3 .github/scripts/software_heritage_archive.py

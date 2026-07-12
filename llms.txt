@@ -431,4 +431,6 @@
 - Atom: https://alice51849.github.io/ios-app-guide/feed.xml
 - RSS 2.0: https://alice51849.github.io/ios-app-guide/rss.xml
 - JSON Feed 1.1: https://alice51849.github.io/ios-app-guide/feed.json
-- Real-time updates: WebSub hub advertised inside every feed (https://pubsubhubbub.appspot.com/)
+- Real-time updates: independent WebSub hubs advertised inside every feed:
+  - https://pubsubhubbub.appspot.com/
+  - https://pubsubhubbub.superfeedr.com/

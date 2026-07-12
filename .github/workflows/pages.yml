@@ -35,6 +35,7 @@ jobs:
       - name: Preserve WebSub notifier and prune engine/tooling
         run: |
           cp _engine/geo/notify_websub.py "$RUNNER_TEMP/notify_websub.py"
+          cp _engine/geo/websub_config.py "$RUNNER_TEMP/websub_config.py"
           rm -rf _engine
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

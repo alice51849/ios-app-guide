@@ -18,13 +18,11 @@ from html.parser import HTMLParser
 from PIL import Image
 
 import gen_social_previews
+from websub_config import WEBSUB_HUBS
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.path.join(HERE, "pages")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
-WEBSUB_HUB = os.environ.get(
-    "WEBSUB_HUB", "https://pubsubhubbub.appspot.com/"
-)
 MEDIA_NS = "http://search.yahoo.com/mrss/"
 PREVIEW_SIZE = gen_social_previews.CARD_SIZE
 PREVIEW_MIME = "image/jpeg"
@@ -341,13 +339,16 @@ def render_atom(items, now):
             f"    <summary>{e(_desc(path))}</summary>\n"
             "  </entry>"
         )
+    hub_links = "".join(
+        f'  <link rel="hub" href="{e(hub)}"/>\n' for hub in WEBSUB_HUBS
+    )
     feed = (
         '<?xml version="1.0" encoding="utf-8"?>\n'
         '<feed xmlns="http://www.w3.org/2005/Atom">\n'
         "  <title>iOS App Guide — latest answers, guides, tools &amp; data</title>\n"
         f'  <link href="{SITE}/"/>\n'
         f'  <link rel="self" href="{SITE}/feed.xml"/>\n'
-        f'  <link rel="hub" href="{WEBSUB_HUB}"/>\n'
+        f"{hub_links}"
         f"  <id>{SITE}/</id>\n"
         f"  <updated>{now}</updated>\n"
         + "\n".join(entries)
@@ -385,6 +386,10 @@ def render_rss(items, now):
             + media
             + "    </item>"
         )
+    hub_links = "".join(
+        f'    <atom:link href="{e(hub)}" rel="hub"/>\n'
+        for hub in WEBSUB_HUBS
+    )
     return (
         '<?xml version="1.0" encoding="utf-8"?>\n'
         '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" '
@@ -401,7 +406,7 @@ def render_rss(items, now):
         "    <ttl>360</ttl>\n"
         f'    <atom:link href="{SITE}/rss.xml" rel="self" '
         'type="application/rss+xml"/>\n'
-        f'    <atom:link href="{WEBSUB_HUB}" rel="hub"/>\n'
+        f"{hub_links}"
         f'    <atom:link href="{SITE}/feed.xml" rel="alternate" '
         'type="application/atom+xml"/>\n'
         f'    <atom:link href="{SITE}/feed.json" rel="alternate" '
@@ -442,10 +447,8 @@ def render_json_feed(items):
                 ),
                 "language": "en",
                 "hubs": [
-                    {
-                        "type": "WebSub",
-                        "url": WEBSUB_HUB,
-                    }
+                    {"type": "WebSub", "url": hub}
+                    for hub in WEBSUB_HUBS
                 ],
                 "items": records,
             },

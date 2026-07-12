@@ -91,6 +91,7 @@ import zhuyin_resourcesync
 import zhuyin_ro_crate
 import zhuyin_skos_vocabulary
 import zhuyin_static_api
+import websub_config
 from videogen.registry import (  # noqa: E402
     APPS,
     VALID_PURCHASE_MODELS,
@@ -1130,12 +1131,18 @@ class GeneratorTests(unittest.TestCase):
         self.assertIsNotNone(channel.find("link"))
         self.assertIsNotNone(channel.find("description"))
         self.assertEqual(
-            gen_feed.WEBSUB_HUB,
-            atom.find(f"{atom_ns}link[@rel='hub']").attrib["href"],
+            list(gen_feed.WEBSUB_HUBS),
+            [
+                link.attrib["href"]
+                for link in atom.findall(f"{atom_ns}link[@rel='hub']")
+            ],
         )
         self.assertEqual(
-            gen_feed.WEBSUB_HUB,
-            channel.find(f"{atom_ns}link[@rel='hub']").attrib["href"],
+            list(gen_feed.WEBSUB_HUBS),
+            [
+                link.attrib["href"]
+                for link in channel.findall(f"{atom_ns}link[@rel='hub']")
+            ],
         )
         rss_items = channel.findall("item")
         rss_ids = {item.find("guid").text for item in rss_items}
@@ -1153,7 +1160,10 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertEqual(f"{gen_feed.SITE}/feed.json", json_feed["feed_url"])
         self.assertEqual(
-            [{"type": "WebSub", "url": gen_feed.WEBSUB_HUB}],
+            [
+                {"type": "WebSub", "url": hub}
+                for hub in gen_feed.WEBSUB_HUBS
+            ],
             json_feed["hubs"],
         )
         json_ids = {item["id"] for item in json_feed["items"]}
@@ -1430,7 +1440,22 @@ class GeneratorTests(unittest.TestCase):
             self.assertIn(f"{gen_feed.SITE}/feed.xml", content)
             self.assertIn(f"{gen_feed.SITE}/rss.xml", content)
             self.assertIn(f"{gen_feed.SITE}/feed.json", content)
-            self.assertIn(gen_feed.WEBSUB_HUB, content)
+            for hub in gen_feed.WEBSUB_HUBS:
+                self.assertIn(hub, content)
+
+    def test_websub_hub_configuration_is_unique_https_and_shared(self):
+        self.assertEqual(
+            websub_config.DEFAULT_WEBSUB_HUBS,
+            gen_feed.WEBSUB_HUBS,
+        )
+        self.assertEqual(gen_feed.WEBSUB_HUBS, notify_websub.WEBSUB_HUBS)
+        self.assertEqual(2, len(gen_feed.WEBSUB_HUBS))
+        with self.assertRaisesRegex(ValueError, "unique"):
+            websub_config.configured_hubs(
+                "https://example.com/,https://example.com/"
+            )
+        with self.assertRaisesRegex(ValueError, "invalid"):
+            websub_config.configured_hubs("http://example.com/")
 
     def test_websub_notifier_verifies_deployment_and_retries_publish(self):
         class Response:
@@ -1487,6 +1512,20 @@ class GeneratorTests(unittest.TestCase):
             request.get_header("Content-type"),
         )
 
+    def test_websub_notifier_attempts_every_hub_before_failing(self):
+        first, second = notify_websub.WEBSUB_HUBS
+        with mock.patch.object(
+            notify_websub,
+            "notify",
+            side_effect=[RuntimeError("first unavailable"), 204],
+        ) as notify:
+            with self.assertRaisesRegex(RuntimeError, first):
+                notify_websub.notify_all(attempts=1)
+        self.assertEqual(
+            [first, second],
+            [call.kwargs["hub"] for call in notify.call_args_list],
+        )
+
     def test_websub_notifier_surfaces_total_failure(self):
         with mock.patch.object(
             notify_websub.urllib.request,
@@ -1502,10 +1541,12 @@ class GeneratorTests(unittest.TestCase):
             Path(GEO) / "pages" / ".github" / "workflows" / "pages.yml"
         ).read_text(encoding="utf-8")
         preserve = workflow.index("cp _engine/geo/notify_websub.py")
+        preserve_config = workflow.index("cp _engine/geo/websub_config.py")
         prune = workflow.index("rm -rf _engine")
         deploy = workflow.index("uses: actions/deploy-pages@v4")
         notify = workflow.rindex('python3 \"$RUNNER_TEMP/notify_websub.py\"')
         self.assertLess(preserve, prune)
+        self.assertLess(preserve_config, prune)
         self.assertLess(prune, deploy)
         self.assertLess(deploy, notify)
         self.assertIn("--feed-dir \"$GITHUB_WORKSPACE\"", workflow)

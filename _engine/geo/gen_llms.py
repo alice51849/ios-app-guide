@@ -28,6 +28,7 @@ from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
 from aeo_pages import disp, pricing_profile  # noqa: E402
 from static_api_catalog import API_DESCRIPTORS  # noqa: E402
+from websub_config import WEBSUB_HUBS  # noqa: E402
 
 PAGES = os.path.join(HERE, "pages")
 ALT = os.path.join(PAGES, "alternatives")
@@ -570,8 +571,10 @@ def build_llms(comp_map, live_keys):
               f"- Atom: {SITE}/feed.xml",
               f"- RSS 2.0: {SITE}/rss.xml",
               f"- JSON Feed 1.1: {SITE}/feed.json",
-              "- Real-time updates: WebSub hub advertised inside every feed "
-              "(https://pubsubhubbub.appspot.com/)", ""]
+              "- Real-time updates: independent WebSub hubs advertised inside "
+              "every feed:"]
+    lines.extend(f"  - {hub}" for hub in WEBSUB_HUBS)
+    lines.append("")
     return "\n".join(lines)
 
 
@@ -1150,9 +1153,10 @@ def build_llms_full(comp_map, live_keys):
     ):
         if os.path.exists(os.path.join(PAGES, filename)):
             lines.append(f"- {SITE}/{filename}")
-    lines.append(
-        "- WebSub real-time hub: https://pubsubhubbub.appspot.com/ "
+    lines.extend(
+        f"- WebSub real-time hub: {hub} "
         "(topic URLs are advertised inside all three feeds)"
+        for hub in WEBSUB_HUBS
     )
     lines.append("")
     return "\n".join(lines)

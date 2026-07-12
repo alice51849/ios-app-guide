@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify deployed feeds and notify their advertised WebSub hub."""
+"""Verify deployed feeds and notify their advertised WebSub hubs."""
 from __future__ import annotations
 
 import argparse
@@ -9,12 +9,11 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
+from websub_config import WEBSUB_HUBS
+
 SITE = os.environ.get(
     "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
 ).rstrip("/")
-HUB = os.environ.get(
-    "WEBSUB_HUB", "https://pubsubhubbub.appspot.com/"
-)
 FEED_FILES = ("feed.xml", "rss.xml", "feed.json")
 TOPICS = tuple(f"{SITE}/{filename}" for filename in FEED_FILES)
 USER_AGENT = "iOS-App-Guide-WebSub-Publisher/1.0"
@@ -80,7 +79,7 @@ def wait_until_deployed(
 
 def notify(
     topics=TOPICS,
-    hub=HUB,
+    hub=WEBSUB_HUBS[0],
     attempts=3,
     timeout=20,
     delay=2,
@@ -101,7 +100,7 @@ def notify(
                 status = response.status
             if 200 <= status < 300:
                 print(
-                    f"WebSub hub notified: HTTP {status}, "
+                    f"WebSub hub notified: {hub} HTTP {status}, "
                     f"{len(topics)} topics"
                 )
                 return status
@@ -123,6 +122,36 @@ def notify(
     )
 
 
+def notify_all(
+    hubs=WEBSUB_HUBS,
+    topics=TOPICS,
+    attempts=3,
+    timeout=20,
+    delay=2,
+):
+    if not hubs:
+        raise ValueError("at least one WebSub hub is required")
+    results = {}
+    failures = []
+    for hub in hubs:
+        try:
+            results[hub] = notify(
+                topics=topics,
+                hub=hub,
+                attempts=attempts,
+                timeout=timeout,
+                delay=delay,
+            )
+        except RuntimeError as error:
+            failures.append(f"{hub}: {error}")
+    if failures:
+        raise RuntimeError(
+            "one or more WebSub hub notifications failed: "
+            + "; ".join(failures)
+        )
+    return results
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -140,7 +169,7 @@ def main():
         timeout=args.timeout,
         delay=args.delay,
     )
-    notify(timeout=max(args.timeout, 20), delay=min(args.delay, 2))
+    notify_all(timeout=max(args.timeout, 20), delay=min(args.delay, 2))
 
 
 if __name__ == "__main__":

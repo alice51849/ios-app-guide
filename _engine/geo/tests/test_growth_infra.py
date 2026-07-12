@@ -884,6 +884,86 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(atom_ids, rss_ids)
         self.assertEqual(atom_ids, json_ids)
 
+    def test_syndication_feeds_attach_verified_app_preview_images(self):
+        with tempfile.TemporaryDirectory() as directory, mock.patch.object(
+            gen_feed, "PAGES", directory
+        ):
+            root = Path(directory)
+            guide = root / "guides" / "sample-app.html"
+            card = root / "social" / "img" / "sample-app-share.jpg"
+            guide.parent.mkdir(parents=True)
+            card.parent.mkdir(parents=True)
+            image_url = (
+                f"{gen_feed.SITE}/social/img/sample-app-share.jpg"
+            )
+            guide.write_text(
+                "<title>Sample App Guide</title>"
+                '<meta name="description" content="A visual app guide.">'
+                f'<meta property="og:image" content="{image_url}">',
+                encoding="utf-8",
+            )
+            Image.new("RGB", gen_feed.PREVIEW_SIZE, "#0d6b50").save(
+                card, "JPEG", progressive=True
+            )
+            item_url = f"{gen_feed.SITE}/guides/sample-app.html"
+            items = [(1_720_742_400, item_url, str(guide))]
+            atom = ET.fromstring(
+                gen_feed.render_atom(items, gen_feed.iso(items[0][0]))
+            )
+            rss = ET.fromstring(gen_feed.render_rss(items, items[0][0]))
+            json_feed = json.loads(gen_feed.render_json_feed(items))
+
+            atom_ns = "{http://www.w3.org/2005/Atom}"
+            enclosure = atom.find(
+                f"{atom_ns}entry/{atom_ns}link[@rel='enclosure']"
+            )
+            self.assertEqual(image_url, enclosure.attrib["href"])
+            self.assertEqual("image/jpeg", enclosure.attrib["type"])
+            self.assertEqual(str(card.stat().st_size), enclosure.attrib["length"])
+
+            media_ns = f"{{{gen_feed.MEDIA_NS}}}"
+            rss_item = rss.find("channel/item")
+            content = rss_item.find(f"{media_ns}content")
+            thumbnail = rss_item.find(f"{media_ns}thumbnail")
+            self.assertEqual(
+                {
+                    "url": image_url,
+                    "fileSize": str(card.stat().st_size),
+                    "type": "image/jpeg",
+                    "medium": "image",
+                    "isDefault": "true",
+                    "expression": "full",
+                    "width": "1200",
+                    "height": "675",
+                },
+                content.attrib,
+            )
+            self.assertEqual(
+                {"url": image_url, "width": "1200", "height": "675"},
+                thumbnail.attrib,
+            )
+            self.assertEqual(
+                "Sample App Guide preview image",
+                content.findtext(f"{media_ns}title"),
+            )
+            self.assertEqual(image_url, json_feed["items"][0]["image"])
+            self.assertEqual(image_url, json_feed["items"][0]["banner_image"])
+
+            Image.new("RGB", (600, 338), "#0d6b50").save(card, "JPEG")
+            with self.assertRaisesRegex(ValueError, "must be JPEG 1200x675"):
+                gen_feed.render_rss(items, items[0][0])
+            Image.new("RGB", gen_feed.PREVIEW_SIZE, "#0d6b50").save(
+                card, "JPEG"
+            )
+            guide.write_text(
+                "<title>Sample App Guide</title>"
+                '<meta property="og:image" '
+                'content="https://example.com/unowned.jpg">',
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(ValueError, "unowned or mismatched"):
+                gen_feed.render_json_feed(items)
+
     def test_syndication_generator_writes_three_idempotent_feeds(self):
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(
             gen_feed,
@@ -954,6 +1034,59 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(gen_feed.MAX_ITEMS, len(atom_ids))
         self.assertEqual(atom_ids, rss_ids)
         self.assertEqual(atom_ids, json_ids)
+        atom_entries = {
+            entry.findtext(atom_ns + "id"): entry
+            for entry in atom.findall(atom_ns + "entry")
+        }
+        rss_items = {
+            item.findtext("guid"): item
+            for item in rss.find("channel").findall("item")
+        }
+        json_items = {item["id"]: item for item in json_feed["items"]}
+        media_ns = f"{{{gen_feed.MEDIA_NS}}}"
+        preview_keys = {
+            path.name.removesuffix("-share.jpg")
+            for path in (pages / "social" / "img").glob("*-share.jpg")
+        }
+        expected_preview_ids = {
+            f"{gen_feed.SITE}/guides/{key}.html" for key in preview_keys
+        }
+        self.assertGreaterEqual(len(expected_preview_ids), 24)
+        self.assertTrue(expected_preview_ids <= set(atom_ids))
+        for item_id in atom_ids:
+            enclosure = atom_entries[item_id].find(
+                f"{atom_ns}link[@rel='enclosure']"
+            )
+            media_content = rss_items[item_id].find(f"{media_ns}content")
+            media_thumbnail = rss_items[item_id].find(f"{media_ns}thumbnail")
+            json_item = json_items[item_id]
+            if item_id in expected_preview_ids:
+                key = item_id.rsplit("/", 1)[-1].removesuffix(".html")
+                image_url = (
+                    f"{gen_feed.SITE}/social/img/{key}-share.jpg"
+                )
+                card = pages / "social" / "img" / f"{key}-share.jpg"
+                self.assertEqual(image_url, enclosure.attrib["href"])
+                self.assertEqual("image/jpeg", enclosure.attrib["type"])
+                self.assertEqual(
+                    str(card.stat().st_size), enclosure.attrib["length"]
+                )
+                self.assertEqual(image_url, media_content.attrib["url"])
+                self.assertEqual("image", media_content.attrib["medium"])
+                self.assertEqual("1200", media_content.attrib["width"])
+                self.assertEqual("675", media_content.attrib["height"])
+                self.assertEqual(image_url, media_thumbnail.attrib["url"])
+                self.assertEqual(image_url, json_item["image"])
+                self.assertEqual(image_url, json_item["banner_image"])
+                with Image.open(card) as image:
+                    self.assertEqual("JPEG", image.format)
+                    self.assertEqual(gen_feed.PREVIEW_SIZE, image.size)
+            else:
+                self.assertIsNone(enclosure)
+                self.assertIsNone(media_content)
+                self.assertIsNone(media_thumbnail)
+                self.assertNotIn("image", json_item)
+                self.assertNotIn("banner_image", json_item)
         expected_guides = {
             f"{gen_feed.SITE}/guides/{path.name}"
             for path in (pages / "guides").glob("*.html")

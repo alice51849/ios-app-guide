@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 """Syndication feed generator for Atom, RSS 2.0 and JSON Feed 1.1.
 
-無 OpenAI、純走訪站台檔案。三種格式共用同一份穩定選集，可排程每日重生。
+無 OpenAI、純走訪站台檔案。三種格式共用同一份穩定選集；公開 App
+另以 Atom enclosure、Media RSS 與 JSON Feed image 欄位發布驗證過的預覽圖。
 """
 import datetime as dt
 import email.utils
@@ -12,6 +13,11 @@ import os
 import re
 import subprocess
 import time
+from html.parser import HTMLParser
+
+from PIL import Image
+
+import gen_social_previews
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.path.join(HERE, "pages")
@@ -19,6 +25,9 @@ SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").
 WEBSUB_HUB = os.environ.get(
     "WEBSUB_HUB", "https://pubsubhubbub.appspot.com/"
 )
+MEDIA_NS = "http://search.yahoo.com/mrss/"
+PREVIEW_SIZE = gen_social_previews.CARD_SIZE
+PREVIEW_MIME = "image/jpeg"
 MAX_ITEMS = 60
 REQUIRED_SUBDIRS = ("guides",)
 REQUIRED_RELATIVE_PATHS = (
@@ -34,6 +43,21 @@ FEED_LINK_RE = re.compile(
     r'<link rel="alternate" type="application/'
     r'(?:atom\+xml|rss\+xml|feed\+json)"[^>]*>'
 )
+
+
+class _OpenGraphImageParser(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.images = []
+
+    def handle_starttag(self, tag, attrs):
+        values = dict(attrs)
+        if (
+            tag.lower() == "meta"
+            and values.get("property", "").lower() == "og:image"
+            and values.get("content")
+        ):
+            self.images.append(values["content"])
 
 
 def feed_discovery_links():
@@ -129,6 +153,58 @@ def _has_owned_resource_cta(path):
     except OSError:
         return False
     return bool(match and match.group(1).startswith(f"{SITE}/"))
+
+
+def _preview_image(path, url):
+    if os.path.basename(os.path.dirname(path)) != "guides":
+        return None
+    try:
+        with open(path, encoding="utf-8") as handle:
+            source = handle.read(80_000)
+    except OSError as exc:
+        raise FileNotFoundError(f"Feed guide is unreadable: {path}") from exc
+    parser = _OpenGraphImageParser()
+    parser.feed(source)
+    if not parser.images:
+        return None
+    if len(parser.images) != 1:
+        raise ValueError(f"Feed guide must have one og:image: {path}")
+
+    key = os.path.splitext(os.path.basename(path))[0]
+    expected_guide = f"{SITE}/guides/{key}.html"
+    expected_image = f"{SITE}/social/img/{key}-share.jpg"
+    if url != expected_guide:
+        raise ValueError(
+            f"Feed guide URL mismatch for {path}: {url} != {expected_guide}"
+        )
+    if parser.images[0] != expected_image:
+        raise ValueError(
+            f"Feed guide has unowned or mismatched og:image: "
+            f"{path}: {parser.images[0]}"
+        )
+
+    image_path = os.path.join(PAGES, "social", "img", f"{key}-share.jpg")
+    if not os.path.isfile(image_path) or os.path.getsize(image_path) <= 0:
+        raise FileNotFoundError(f"Feed preview image is missing or empty: {image_path}")
+    try:
+        with Image.open(image_path) as image:
+            image_format = image.format
+            image_size = image.size
+            image.verify()
+    except OSError as exc:
+        raise ValueError(f"Feed preview image is not a valid JPEG: {image_path}") from exc
+    if image_format != "JPEG" or image_size != PREVIEW_SIZE:
+        raise ValueError(
+            f"Feed preview image must be JPEG {PREVIEW_SIZE[0]}x"
+            f"{PREVIEW_SIZE[1]}: {image_path}"
+        )
+    return {
+        "url": expected_image,
+        "mime": PREVIEW_MIME,
+        "width": PREVIEW_SIZE[0],
+        "height": PREVIEW_SIZE[1],
+        "length": os.path.getsize(image_path),
+    }
 
 
 def _write_if_changed(path, content):
@@ -246,11 +322,21 @@ def render_atom(items, now):
     e = html.escape
     entries = []
     for ts, url, path in items:
+        title = _title(path)
+        preview = _preview_image(path, url)
+        enclosure = ""
+        if preview:
+            enclosure = (
+                f'    <link rel="enclosure" href="{e(preview["url"])}" '
+                f'type="{preview["mime"]}" length="{preview["length"]}" '
+                f'title="{e(title)} preview image"/>\n'
+            )
         entries.append(
             "  <entry>\n"
-            f"    <title>{e(_title(path))}</title>\n"
+            f"    <title>{e(title)}</title>\n"
             f'    <link href="{e(url)}"/>\n'
-            f"    <id>{e(url)}</id>\n"
+            + enclosure
+            + f"    <id>{e(url)}</id>\n"
             f"    <updated>{iso(ts)}</updated>\n"
             f"    <summary>{e(_desc(path))}</summary>\n"
             "  </entry>"
@@ -274,18 +360,35 @@ def render_rss(items, now):
     e = html.escape
     entries = []
     for ts, url, path in items:
+        title = _title(path)
+        preview = _preview_image(path, url)
+        media = ""
+        if preview:
+            media = (
+                f'      <media:content url="{e(preview["url"])}" '
+                f'fileSize="{preview["length"]}" type="{preview["mime"]}" '
+                f'medium="image" isDefault="true" expression="full" '
+                f'width="{preview["width"]}" height="{preview["height"]}">\n'
+                f'        <media:title type="plain">{e(title)} preview image'
+                "</media:title>\n"
+                "      </media:content>\n"
+                f'      <media:thumbnail url="{e(preview["url"])}" '
+                f'width="{preview["width"]}" height="{preview["height"]}"/>\n'
+            )
         entries.append(
             "    <item>\n"
-            f"      <title>{e(_title(path))}</title>\n"
+            f"      <title>{e(title)}</title>\n"
             f"      <link>{e(url)}</link>\n"
-            f"      <description>{e(_desc(path) or _title(path))}</description>\n"
+            f"      <description>{e(_desc(path) or title)}</description>\n"
             f'      <guid isPermaLink="true">{e(url)}</guid>\n'
             f"      <pubDate>{rss_date(ts)}</pubDate>\n"
-            "    </item>"
+            + media
+            + "    </item>"
         )
     return (
         '<?xml version="1.0" encoding="utf-8"?>\n'
-        '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n'
+        '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" '
+        f'xmlns:media="{MEDIA_NS}">\n'
         "  <channel>\n"
         "    <title>iOS App Guide — latest answers, guides, tools &amp; data</title>\n"
         f"    <link>{SITE}/</link>\n"
@@ -312,17 +415,20 @@ def render_json_feed(items):
     records = []
     for ts, url, path in items:
         description = _desc(path) or _title(path)
-        records.append(
-            {
-                "id": url,
-                "url": url,
-                "title": _title(path),
-                "content_text": description,
-                "summary": description,
-                "date_modified": iso(ts),
-                "language": "en",
-            }
-        )
+        record = {
+            "id": url,
+            "url": url,
+            "title": _title(path),
+            "content_text": description,
+            "summary": description,
+            "date_modified": iso(ts),
+            "language": "en",
+        }
+        preview = _preview_image(path, url)
+        if preview:
+            record["image"] = preview["url"]
+            record["banner_image"] = preview["url"]
+        records.append(record)
     return (
         json.dumps(
             {

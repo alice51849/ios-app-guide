@@ -726,7 +726,7 @@ class GeneratorTests(unittest.TestCase):
                     ),
                 )
 
-    def test_smart_app_banners_cover_localized_guides_and_prune_stale_tags(self):
+    def test_smart_app_banners_cover_guides_and_buyer_intent_answers(self):
         with tempfile.TemporaryDirectory() as directory:
             workspace = Path(directory)
             pages = workspace / "site"
@@ -739,7 +739,24 @@ class GeneratorTests(unittest.TestCase):
             poster = pages / "stories" / "img" / "lumibopomofo-poster.jpg"
             hub = pages / "hubs" / "lumibopomofo.html"
             stale = pages / "fr-FR" / "guides" / "stale.html"
-            for path in (guide, localized, story, poster, hub, stale):
+            answer = pages / "answers" / "best-bopomofo-app.html"
+            localized_answer = (
+                pages / "zh-Hant" / "answers" / "best-bopomofo-app.html"
+            )
+            stale_answer = pages / "fr-FR" / "answers" / "stale.html"
+            ambiguous_answer = pages / "answers" / "compare-apps.html"
+            for path in (
+                guide,
+                localized,
+                story,
+                poster,
+                hub,
+                stale,
+                answer,
+                localized_answer,
+                stale_answer,
+                ambiguous_answer,
+            ):
                 path.parent.mkdir(parents=True, exist_ok=True)
             site = gen_smart_app_banners.SITE
             guide.write_text(
@@ -772,6 +789,33 @@ class GeneratorTests(unittest.TestCase):
                 "</head>",
                 encoding="utf-8",
             )
+            answer.write_text(
+                "<head></head><body>"
+                '<a href="https://apps.apple.com/app/id6773017109?ct=iag_ans">'
+                "Get the app</a></body>",
+                encoding="utf-8",
+            )
+            localized_answer.write_text(
+                "<head></head><body>"
+                '<a href="https://apps.apple.com/app/id6773017109?ct=iag_ans">'
+                "Get the app</a></body>",
+                encoding="utf-8",
+            )
+            stale_answer.write_text(
+                "<head>"
+                f"{gen_smart_app_banners.BLOCK_START}"
+                '<meta name="apple-itunes-app" content="app-id=1">'
+                f"{gen_smart_app_banners.BLOCK_END}"
+                "</head><body>No live app link</body>",
+                encoding="utf-8",
+            )
+            ambiguous_answer.write_text(
+                "<head></head><body>"
+                "https://apps.apple.com/app/id6773017109 "
+                "https://apps.apple.com/app/id1234567890"
+                "</body>",
+                encoding="utf-8",
+            )
             (pages / "index.html").write_text(
                 f'<head><link rel="canonical" href="{site}/index.html"></head>',
                 encoding="utf-8",
@@ -792,7 +836,15 @@ class GeneratorTests(unittest.TestCase):
             )
             mtimes = {
                 path: path.stat().st_mtime_ns
-                for path in (guide, localized, stale)
+                for path in (
+                    guide,
+                    localized,
+                    stale,
+                    answer,
+                    localized_answer,
+                    stale_answer,
+                    ambiguous_answer,
+                )
             }
             second = gen_smart_app_banners.generate(
                 linked_pages, {"lumibopomofo"}
@@ -802,8 +854,9 @@ class GeneratorTests(unittest.TestCase):
                 {
                     "apps": 1,
                     "guide_pages": 2,
+                    "answer_pages": 2,
                     "languages": 2,
-                    "changed_files": 3,
+                    "changed_files": 6,
                 },
                 first,
             )
@@ -812,11 +865,19 @@ class GeneratorTests(unittest.TestCase):
                 mtimes,
                 {
                     path: path.stat().st_mtime_ns
-                    for path in (guide, localized, stale)
+                    for path in (
+                        guide,
+                        localized,
+                        stale,
+                        answer,
+                        localized_answer,
+                        stale_answer,
+                        ambiguous_answer,
+                    )
                 },
             )
             banner = gen_smart_app_banners.banner_block("6773017109")
-            for path in (guide, localized):
+            for path in (guide, localized, answer, localized_answer):
                 source = path.read_text(encoding="utf-8")
                 self.assertEqual(1, source.count(banner))
                 self.assertNotIn("app-argument", source)
@@ -832,6 +893,14 @@ class GeneratorTests(unittest.TestCase):
             self.assertNotIn(
                 gen_smart_app_banners.BLOCK_START,
                 stale.read_text(encoding="utf-8"),
+            )
+            self.assertNotIn(
+                gen_smart_app_banners.BLOCK_START,
+                stale_answer.read_text(encoding="utf-8"),
+            )
+            self.assertNotIn(
+                gen_smart_app_banners.BLOCK_START,
+                ambiguous_answer.read_text(encoding="utf-8"),
             )
             with self.assertRaisesRegex(ValueError, "app ID"):
                 gen_smart_app_banners.banner_block("not-an-id")
@@ -1011,7 +1080,8 @@ class GeneratorTests(unittest.TestCase):
             gen_guide_design.stylesheet_href()
         )
         linked = set()
-        for path in gen_smart_app_banners._guide_pages(pages):
+        guide_pages = gen_smart_app_banners._guide_pages(pages)
+        for path in guide_pages:
             source = path.read_text(encoding="utf-8")
             if gen_guide_design.BLOCK_START in source:
                 linked.add(path)
@@ -1019,7 +1089,19 @@ class GeneratorTests(unittest.TestCase):
                 self.assertEqual(
                     1, len(gen_guide_design.VIEWPORT_RE.findall(source))
                 )
-        self.assertEqual(set(targets), linked)
+        self.assertEqual(set(targets) & guide_pages, linked)
+
+        answer_pages = gen_smart_app_banners._answer_pages(pages)
+        answer_targets = set(targets) & answer_pages
+        self.assertGreater(len(answer_targets), 0)
+        for path in answer_targets:
+            source = path.read_text(encoding="utf-8")
+            self.assertEqual(
+                1,
+                source.count(
+                    gen_smart_app_banners.banner_block(targets[path])
+                ),
+            )
 
     def test_atom_feed_keeps_guides_and_free_tools_within_the_item_cap(self):
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(

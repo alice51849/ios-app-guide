@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Add Apple Smart App Banners to every localized public-app guide."""
+"""Add Apple Smart App Banners to public app guides and buyer-intent answers."""
 
 from __future__ import annotations
 
@@ -30,6 +30,10 @@ BLOCK_END = "<!-- smart-app-banner:end -->"
 BLOCK_RE = re.compile(
     rf"\s*{re.escape(BLOCK_START)}.*?{re.escape(BLOCK_END)}\s*",
     flags=re.DOTALL,
+)
+APP_STORE_LINK_RE = re.compile(
+    r"https://apps\.apple\.com/app/id(\d+)",
+    flags=re.IGNORECASE,
 )
 
 
@@ -91,6 +95,16 @@ def build_targets(
             raise ValueError(
                 f"Public app has no Smart App Banner guide pages: {record['key']}"
             )
+
+    live_ids = {APPSTORE[key] for key in live_keys}
+    for path in _answer_pages(pages):
+        source = BLOCK_RE.sub("\n", path.read_text(encoding="utf-8"))
+        app_ids = set(APP_STORE_LINK_RE.findall(source))
+        if len(app_ids) != 1:
+            continue
+        app_id = next(iter(app_ids))
+        if app_id in live_ids:
+            targets[path] = app_id
     return targets, len(records)
 
 
@@ -132,6 +146,25 @@ def _guide_pages(pages: Path) -> set[Path]:
     return paths
 
 
+def _answer_pages(pages: Path) -> set[Path]:
+    paths = {
+        path.resolve()
+        for path in (pages / "answers").glob("*.html")
+        if path.name != "index.html"
+    }
+    for child in pages.iterdir():
+        if child.name == "_engine" or not child.is_dir():
+            continue
+        answers = child / "answers"
+        if answers.is_dir():
+            paths.update(
+                path.resolve()
+                for path in answers.glob("*.html")
+                if path.name != "index.html"
+            )
+    return paths
+
+
 def _write_if_changed(path: Path, content: str) -> bool:
     if path.exists() and path.read_text(encoding="utf-8") == content:
         return False
@@ -147,11 +180,13 @@ def generate(
     if live_keys is None:
         live_keys = set(live_app_keys(APPSTORE, str(pages), refresh=False))
     targets, app_count = build_targets(pages, set(live_keys), site)
+    guide_pages = _guide_pages(pages)
+    answer_pages = _answer_pages(pages)
     changed = 0
     for path in sorted(targets):
         changed += int(ensure_banner(path, targets[path]))
 
-    for path in sorted(_guide_pages(pages) - set(targets)):
+    for path in sorted((guide_pages | answer_pages) - set(targets)):
         source = path.read_text(encoding="utf-8")
         if BLOCK_RE.search(source):
             changed += int(_write_if_changed(path, BLOCK_RE.sub("\n", source)))
@@ -163,7 +198,8 @@ def generate(
     }
     return {
         "apps": app_count,
-        "guide_pages": len(targets),
+        "guide_pages": len(set(targets) & guide_pages),
+        "answer_pages": len(set(targets) & answer_pages),
         "languages": len(languages),
         "changed_files": changed,
     }
@@ -179,6 +215,7 @@ def main() -> None:
     print(
         "Apple Smart App Banners: "
         f"{result['apps']} apps, {result['guide_pages']} guide pages, "
+        f"{result['answer_pages']} buyer-intent answer pages, "
         f"{result['languages']} languages, "
         f"{result['changed_files']} files updated"
     )

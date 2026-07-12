@@ -18,6 +18,15 @@ from html.parser import HTMLParser
 from PIL import Image
 
 import gen_social_previews
+from rsscloud_config import (
+    RSSCLOUD_DOMAIN,
+    RSSCLOUD_NOTIFY_PATH,
+    RSSCLOUD_NOTIFY_URL,
+    RSSCLOUD_PORT,
+    RSSCLOUD_PROTOCOL,
+    RSSCLOUD_SOURCE_NAMESPACE,
+    RSSCLOUD_WEBSUB_HUB,
+)
 from websub_config import WEBSUB_HUBS
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -393,7 +402,8 @@ def render_rss(items, now):
     return (
         '<?xml version="1.0" encoding="utf-8"?>\n'
         '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" '
-        f'xmlns:media="{MEDIA_NS}">\n'
+        f'xmlns:media="{MEDIA_NS}" '
+        f'xmlns:source="{RSSCLOUD_SOURCE_NAMESPACE}">\n'
         "  <channel>\n"
         "    <title>iOS App Guide — latest answers, guides, tools &amp; data</title>\n"
         f"    <link>{SITE}/</link>\n"
@@ -407,6 +417,11 @@ def render_rss(items, now):
         f'    <atom:link href="{SITE}/rss.xml" rel="self" '
         'type="application/rss+xml"/>\n'
         f"{hub_links}"
+        f'    <cloud domain="{RSSCLOUD_DOMAIN}" port="{RSSCLOUD_PORT}" '
+        f'path="{RSSCLOUD_NOTIFY_PATH}" registerProcedure="" '
+        f'protocol="{RSSCLOUD_PROTOCOL}"/>\n'
+        f"    <source:cloud>{RSSCLOUD_NOTIFY_URL}</source:cloud>\n"
+        f'    <atom:link href="{RSSCLOUD_WEBSUB_HUB}" rel="hub"/>\n'
         f'    <atom:link href="{SITE}/feed.xml" rel="alternate" '
         'type="application/atom+xml"/>\n'
         f'    <atom:link href="{SITE}/feed.json" rel="alternate" '

@@ -32,10 +32,12 @@ jobs:
           ref: main
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Preserve WebSub notifier and prune engine/tooling
+      - name: Preserve syndication notifiers and prune engine/tooling
         run: |
           cp _engine/geo/notify_websub.py "$RUNNER_TEMP/notify_websub.py"
           cp _engine/geo/websub_config.py "$RUNNER_TEMP/websub_config.py"
+          cp _engine/geo/notify_rsscloud.py "$RUNNER_TEMP/notify_rsscloud.py"
+          cp _engine/geo/rsscloud_config.py "$RUNNER_TEMP/rsscloud_config.py"
           rm -rf _engine
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -53,12 +55,36 @@ jobs:
         if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v4
       - name: Notify WebSub subscribers
+        id: notify_websub
         if: >-
-          steps.deployment.outcome == 'success' ||
-          steps.deployment_retry.outcome == 'success'
+          always() &&
+          (steps.deployment.outcome == 'success' ||
+          steps.deployment_retry.outcome == 'success')
+        continue-on-error: true
         timeout-minutes: 6
         env:
           GEO_SITE: https://alice51849.github.io/ios-app-guide
         run: >-
           python3 "$RUNNER_TEMP/notify_websub.py"
           --feed-dir "$GITHUB_WORKSPACE"
+      - name: Notify rssCloud subscribers
+        id: notify_rsscloud
+        if: >-
+          always() &&
+          (steps.deployment.outcome == 'success' ||
+          steps.deployment_retry.outcome == 'success')
+        continue-on-error: true
+        timeout-minutes: 6
+        env:
+          GEO_SITE: https://alice51849.github.io/ios-app-guide
+        run: >-
+          python3 "$RUNNER_TEMP/notify_rsscloud.py"
+          --feed-dir "$GITHUB_WORKSPACE"
+      - name: Enforce syndication notification results
+        if: >-
+          always() &&
+          (steps.deployment.outcome == 'success' ||
+          steps.deployment_retry.outcome == 'success')
+        run: |
+          test "${{ steps.notify_websub.outcome }}" = "success"
+          test "${{ steps.notify_rsscloud.outcome }}" = "success"

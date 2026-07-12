@@ -27,6 +27,10 @@ sys.path.insert(0, os.path.join(ROOT, "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
 from aeo_pages import disp, pricing_profile  # noqa: E402
+from rsscloud_config import (  # noqa: E402
+    RSSCLOUD_NOTIFY_URL,
+    RSSCLOUD_WEBSUB_HUB,
+)
 from static_api_catalog import API_DESCRIPTORS  # noqa: E402
 from websub_config import WEBSUB_HUBS  # noqa: E402
 
@@ -574,6 +578,11 @@ def build_llms(comp_map, live_keys):
               "- Real-time updates: independent WebSub hubs advertised inside "
               "every feed:"]
     lines.extend(f"  - {hub}" for hub in WEBSUB_HUBS)
+    lines += [
+        "- RSS real-time updates: rssCloud discovery is advertised in RSS 2.0:",
+        f"  - {RSSCLOUD_NOTIFY_URL}",
+        f"  - {RSSCLOUD_WEBSUB_HUB}",
+    ]
     lines.append("")
     return "\n".join(lines)
 
@@ -1158,6 +1167,10 @@ def build_llms_full(comp_map, live_keys):
         "(topic URLs are advertised inside all three feeds)"
         for hub in WEBSUB_HUBS
     )
+    lines += [
+        f"- rssCloud subscriber registration: {RSSCLOUD_NOTIFY_URL}",
+        f"- rssCloud WebSub hub: {RSSCLOUD_WEBSUB_HUB}",
+    ]
     lines.append("")
     return "\n".join(lines)
 

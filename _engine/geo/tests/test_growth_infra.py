@@ -60,9 +60,11 @@ import gen_roundups
 import gen_social_previews
 import gen_smart_app_banners
 import indexnow_submit
+import notify_rsscloud
 import notify_websub
 import outreach_scorecard
 import prioritize_trip_planet_resources
+import rsscloud_config
 import static_api_catalog
 import zhuyin_grandparent_call_kit
 import zhuyin_grade1_guide
@@ -1138,11 +1140,30 @@ class GeneratorTests(unittest.TestCase):
             ],
         )
         self.assertEqual(
-            list(gen_feed.WEBSUB_HUBS),
+            [
+                *gen_feed.WEBSUB_HUBS,
+                rsscloud_config.RSSCLOUD_WEBSUB_HUB,
+            ],
             [
                 link.attrib["href"]
                 for link in channel.findall(f"{atom_ns}link[@rel='hub']")
             ],
+        )
+        cloud = channel.find("cloud")
+        self.assertEqual(
+            {
+                "domain": rsscloud_config.RSSCLOUD_DOMAIN,
+                "port": rsscloud_config.RSSCLOUD_PORT,
+                "path": rsscloud_config.RSSCLOUD_NOTIFY_PATH,
+                "registerProcedure": "",
+                "protocol": rsscloud_config.RSSCLOUD_PROTOCOL,
+            },
+            cloud.attrib,
+        )
+        source_ns = f"{{{rsscloud_config.RSSCLOUD_SOURCE_NAMESPACE}}}"
+        self.assertEqual(
+            rsscloud_config.RSSCLOUD_NOTIFY_URL,
+            channel.findtext(f"{source_ns}cloud"),
         )
         rss_items = channel.findall("item")
         rss_ids = {item.find("guid").text for item in rss_items}
@@ -1442,6 +1463,8 @@ class GeneratorTests(unittest.TestCase):
             self.assertIn(f"{gen_feed.SITE}/feed.json", content)
             for hub in gen_feed.WEBSUB_HUBS:
                 self.assertIn(hub, content)
+            self.assertIn(rsscloud_config.RSSCLOUD_NOTIFY_URL, content)
+            self.assertIn(rsscloud_config.RSSCLOUD_WEBSUB_HUB, content)
 
     def test_websub_hub_configuration_is_unique_https_and_shared(self):
         self.assertEqual(
@@ -1536,21 +1559,115 @@ class GeneratorTests(unittest.TestCase):
                 notify_websub.notify(attempts=3, delay=0)
         self.assertEqual(3, urlopen.call_count)
 
-    def test_pages_deploy_notifies_websub_only_after_success(self):
+    def test_rsscloud_notifier_verifies_bytes_and_parses_json_or_xml(self):
+        class Response:
+            def __init__(self, body=b"", status=200):
+                self.body = body
+                self.status = status
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *args):
+                return False
+
+            def read(self):
+                return self.body
+
+        with tempfile.TemporaryDirectory() as directory:
+            body = b"deployed rss"
+            Path(directory, notify_rsscloud.RSS_FILE).write_bytes(body)
+            with mock.patch.object(
+                notify_rsscloud.urllib.request,
+                "urlopen",
+                return_value=Response(body),
+            ) as urlopen:
+                notify_rsscloud.wait_until_deployed(
+                    directory, attempts=1, timeout=7
+                )
+            self.assertEqual(7, urlopen.call_args.kwargs["timeout"])
+
+        responses = (
+            b'{"success":true,"msg":"Thanks for the ping."}',
+            b'<result success="true" msg="Thanks again."/>',
+        )
+        for body in responses:
+            with self.subTest(body=body), mock.patch.object(
+                notify_rsscloud.urllib.request,
+                "urlopen",
+                return_value=Response(body),
+            ) as urlopen:
+                self.assertTrue(notify_rsscloud.ping(attempts=1))
+                request = urlopen.call_args.args[0]
+                payload = urllib.parse.parse_qs(
+                    request.data.decode("ascii")
+                )
+                self.assertEqual([notify_rsscloud.TOPIC], payload["url"])
+                self.assertEqual(
+                    "application/x-www-form-urlencoded; charset=utf-8",
+                    request.get_header("Content-type"),
+                )
+
+    def test_rsscloud_notifier_retries_and_surfaces_rejection(self):
+        class Response:
+            status = 200
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *args):
+                return False
+
+            def read(self):
+                return b'{"success":false,"msg":"Feed unavailable"}'
+
+        with mock.patch.object(
+            notify_rsscloud.urllib.request,
+            "urlopen",
+            side_effect=[OSError("offline"), Response()],
+        ) as urlopen, mock.patch.object(
+            notify_rsscloud.time, "sleep"
+        ) as sleep:
+            with self.assertRaisesRegex(RuntimeError, "Feed unavailable"):
+                notify_rsscloud.ping(attempts=2, delay=1)
+        self.assertEqual(2, urlopen.call_count)
+        sleep.assert_called_once_with(1)
+
+    def test_pages_deploy_notifies_syndication_only_after_success(self):
         workflow = (
             Path(GEO) / "pages" / ".github" / "workflows" / "pages.yml"
         ).read_text(encoding="utf-8")
         preserve = workflow.index("cp _engine/geo/notify_websub.py")
         preserve_config = workflow.index("cp _engine/geo/websub_config.py")
+        preserve_rsscloud = workflow.index("cp _engine/geo/notify_rsscloud.py")
+        preserve_rsscloud_config = workflow.index(
+            "cp _engine/geo/rsscloud_config.py"
+        )
         prune = workflow.index("rm -rf _engine")
         deploy = workflow.index("uses: actions/deploy-pages@v4")
         notify = workflow.rindex('python3 \"$RUNNER_TEMP/notify_websub.py\"')
+        notify_rsscloud = workflow.rindex(
+            'python3 \"$RUNNER_TEMP/notify_rsscloud.py\"'
+        )
+        enforce = workflow.index("Enforce syndication notification results")
         self.assertLess(preserve, prune)
         self.assertLess(preserve_config, prune)
+        self.assertLess(preserve_rsscloud, prune)
+        self.assertLess(preserve_rsscloud_config, prune)
         self.assertLess(prune, deploy)
         self.assertLess(deploy, notify)
+        self.assertLess(notify, notify_rsscloud)
+        self.assertLess(notify_rsscloud, enforce)
         self.assertIn("--feed-dir \"$GITHUB_WORKSPACE\"", workflow)
         self.assertIn("timeout-minutes: 6", workflow)
+        self.assertIn(
+            'test "${{ steps.notify_websub.outcome }}" = "success"',
+            workflow,
+        )
+        self.assertIn(
+            'test "${{ steps.notify_rsscloud.outcome }}" = "success"',
+            workflow,
+        )
 
     def test_data_hub_preserves_date_until_dataset_content_changes(self):
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(

@@ -32,9 +32,13 @@ PAGES = HERE / "pages"
 SITE = os.environ.get(
     "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
 ).rstrip("/")
-CARD_SIZE = (1200, 630)
-POSTER_SIZE = (420, 560)
+CARD_SIZE = (1200, 675)
+POSTER_SIZE = (450, 600)
 SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
+ROBOTS_DIRECTIVE = (
+    "index,follow,max-image-preview:large,"
+    "max-snippet:-1,max-video-preview:-1"
+)
 BLOCK_START = "<!-- social-preview:start -->"
 BLOCK_END = "<!-- social-preview:end -->"
 BLOCK_RE = re.compile(
@@ -50,6 +54,7 @@ class _GuideMetadataParser(HTMLParser):
         self.title_parts: list[str] = []
         self.descriptions: list[str] = []
         self.canonicals: list[str] = []
+        self.robots: list[str] = []
 
     def handle_starttag(
         self, tag: str, attrs: list[tuple[str, str | None]]
@@ -64,6 +69,12 @@ class _GuideMetadataParser(HTMLParser):
             and values.get("content")
         ):
             self.descriptions.append(values["content"])
+        if (
+            lowered == "meta"
+            and values.get("name", "").lower() == "robots"
+            and values.get("content")
+        ):
+            self.robots.append(values["content"])
         if lowered == "link":
             relations = values.get("rel", "").lower().split()
             if "canonical" in relations and values.get("href"):
@@ -98,6 +109,18 @@ def _guide_metadata(path: Path, expected_canonical: str) -> tuple[str, str]:
         raise ValueError(
             f"{path} must have canonical {expected_canonical}; found {canonicals}"
         )
+    forbidden = {"noindex", "nofollow", "none", "nosnippet", "noimageindex"}
+    for directive in parser.robots:
+        tokens = {
+            token.strip().lower()
+            for token in re.split(r"[\s,]+", directive)
+            if token.strip()
+        }
+        if tokens & forbidden:
+            raise ValueError(
+                f"Social preview guide has conflicting robots rules: "
+                f"{path}: {sorted(tokens & forbidden)}"
+            )
     return title, descriptions[0]
 
 
@@ -198,6 +221,7 @@ def metadata_block(
         f'<meta property="og:description" content="{esc(description)}">',
         '<meta property="og:locale" content="en_US">',
         '<meta property="og:site_name" content="iOS App Guide">',
+        f'<meta name="robots" content="{ROBOTS_DIRECTIVE}">',
         '<meta name="twitter:card" content="summary_large_image">',
         f'<meta name="twitter:title" content="{esc(title)}">',
         f'<meta name="twitter:description" content="{esc(description)}">',

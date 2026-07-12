@@ -581,10 +581,15 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual("link", embed["type"])
             self.assertEqual("Lumi Bopomofo — Zhuyin for Kids", embed["title"])
             self.assertEqual(1200, embed["thumbnail_width"])
-            self.assertEqual(630, embed["thumbnail_height"])
+            self.assertEqual(675, embed["thumbnail_height"])
             source = guide.read_text(encoding="utf-8")
             self.assertEqual(1, source.count(gen_social_previews.BLOCK_START))
             self.assertEqual(1, source.count('property="og:title"'))
+            self.assertEqual(1, source.count('name="robots"'))
+            self.assertIn(
+                f'name="robots" content="{gen_social_previews.ROBOTS_DIRECTIVE}"',
+                source,
+            )
             self.assertIn('name="twitter:card" content="summary_large_image"', source)
             self.assertIn('type="application/json+oembed"', source)
             self.assertIn(
@@ -606,6 +611,19 @@ class GeneratorTests(unittest.TestCase):
             with mock.patch.object(gen_llms, "PAGES", str(pages)):
                 self.assertIn(
                     "sitemap_oembed.xml", gen_llms.build_sitemap_index()
+                )
+            conflicting = pages / "guides" / "conflicting.html"
+            conflicting.write_text(
+                "<head><title>Conflict</title>"
+                '<meta name="description" content="Conflict">'
+                '<meta name="robots" content="noindex, noimageindex">'
+                f'<link rel="canonical" href="{site}/guides/conflicting.html">'
+                "</head>",
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(ValueError, "conflicting robots"):
+                gen_social_previews._guide_metadata(
+                    conflicting, f"{site}/guides/conflicting.html"
                 )
 
     def test_smart_app_banners_cover_localized_guides_and_prune_stale_tags(self):

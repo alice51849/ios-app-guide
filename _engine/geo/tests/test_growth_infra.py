@@ -47,6 +47,7 @@ import family_travel_opds_catalog
 import family_travel_ro_crate
 import family_travel_static_api
 import gen_app_catalog
+import gen_app_store_qr_ctas
 import gen_calculator
 import gen_cost_compare
 import gen_data_hub
@@ -1035,6 +1036,185 @@ class GeneratorTests(unittest.TestCase):
                     '"><script>',
                 )
 
+    def test_app_store_qr_cards_are_direct_accessible_and_idempotent(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            page = root / "page.html"
+            fallback = root / "fallback.html"
+            stale = root / "stale.html"
+            stylesheet_href = "/ios-app-guide/assets/app-store-qr-v1.css"
+            image_href = (
+                "/ios-app-guide/assets/app-store-qr/id6773017109.svg"
+            )
+            app_href = (
+                "https://apps.apple.com/app/id6773017109?ct=localized"
+            )
+            page.write_text(
+                "<head></head><body><main>"
+                f'<a class="cta" href="{app_href}">Localized label</a>'
+                "</main></body>",
+                encoding="utf-8",
+            )
+            fallback.write_text(
+                "<head></head><body><div>"
+                f'<a class="cta" href="{app_href}">Fallback label</a>'
+                "</div>"
+                f"{gen_mobile_store_ctas.BLOCK_START}"
+                "<div>Mobile CTA</div>"
+                f"{gen_mobile_store_ctas.BLOCK_END}</body>",
+                encoding="utf-8",
+            )
+            stale.write_text(
+                "<head>"
+                f"{gen_app_store_qr_ctas.HEAD_BLOCK_START}"
+                '<link rel="stylesheet" href="/stale.css">'
+                f"{gen_app_store_qr_ctas.HEAD_BLOCK_END}"
+                "</head><body>"
+                f"{gen_app_store_qr_ctas.CARD_BLOCK_START}"
+                '<a href="https://apps.apple.com/app/id6773017109">'
+                "Stale QR</a>"
+                f"{gen_app_store_qr_ctas.CARD_BLOCK_END}</body>",
+                encoding="utf-8",
+            )
+
+            self.assertTrue(
+                gen_app_store_qr_ctas.ensure_qr_card(
+                    page,
+                    "6773017109",
+                    app_href,
+                    "Localized label",
+                    stylesheet_href,
+                    image_href,
+                )
+            )
+            mtime = page.stat().st_mtime_ns
+            self.assertFalse(
+                gen_app_store_qr_ctas.ensure_qr_card(
+                    page,
+                    "6773017109",
+                    app_href,
+                    "Localized label",
+                    stylesheet_href,
+                    image_href,
+                )
+            )
+            self.assertEqual(mtime, page.stat().st_mtime_ns)
+            source = page.read_text(encoding="utf-8")
+            self.assertEqual(
+                1, source.count(gen_app_store_qr_ctas.HEAD_BLOCK_START)
+            )
+            self.assertEqual(
+                1, source.count(gen_app_store_qr_ctas.CARD_BLOCK_START)
+            )
+            self.assertLess(
+                source.index(gen_app_store_qr_ctas.HEAD_BLOCK_START),
+                source.index("</head>"),
+            )
+            self.assertLess(
+                source.index(gen_app_store_qr_ctas.CARD_BLOCK_START),
+                source.index("</main>"),
+            )
+            self.assertIn("Localized label", source)
+            self.assertIn(image_href, source)
+            self.assertIn(
+                "https://apps.apple.com/app/id6773017109", source
+            )
+            self.assertIn("display:none", source)
+            self.assertIn(
+                "white-space: nowrap", gen_app_store_qr_ctas.CSS
+            )
+            self.assertIn("32mm", gen_app_store_qr_ctas.CSS)
+            self.assertIn("@media print", gen_app_store_qr_ctas.CSS)
+            self.assertNotIn("fetch(", gen_app_store_qr_ctas.CSS)
+
+            self.assertTrue(
+                gen_app_store_qr_ctas.ensure_qr_card(
+                    fallback,
+                    "6773017109",
+                    app_href,
+                    "Fallback label",
+                    stylesheet_href,
+                    image_href,
+                )
+            )
+            fallback_source = fallback.read_text(encoding="utf-8")
+            self.assertLess(
+                fallback_source.index(
+                    gen_app_store_qr_ctas.CARD_BLOCK_START
+                ),
+                fallback_source.index(gen_mobile_store_ctas.BLOCK_START),
+            )
+            self.assertTrue(gen_app_store_qr_ctas.remove_qr_card(stale))
+            stale_source = stale.read_text(encoding="utf-8")
+            self.assertNotIn(
+                gen_app_store_qr_ctas.HEAD_BLOCK_START, stale_source
+            )
+            self.assertNotIn(
+                gen_app_store_qr_ctas.CARD_BLOCK_START, stale_source
+            )
+            self.assertIsNone(
+                gen_mobile_store_ctas.app_store_cta(
+                    gen_app_store_qr_ctas.card_block(
+                        "6773017109",
+                        app_href,
+                        "Generated only",
+                        image_href,
+                    ),
+                    "6773017109",
+                )
+            )
+
+            svg = gen_app_store_qr_ctas.qr_svg("6773017109")
+            self.assertTrue(svg.startswith("<svg"))
+            self.assertIn(
+                "<desc>https://apps.apple.com/app/id6773017109</desc>",
+                svg,
+            )
+            self.assertNotIn("<script", svg)
+            assets = root / "assets-site"
+            stale_asset = (
+                assets
+                / gen_app_store_qr_ctas.QR_RELATIVE
+                / "id999.svg"
+            )
+            stale_asset.parent.mkdir(parents=True)
+            stale_asset.write_text("stale", encoding="utf-8")
+            self.assertEqual(
+                4,
+                gen_app_store_qr_ctas.sync_assets(
+                    assets, {"6773017109", "6787754435"}
+                ),
+            )
+            asset_mtimes = {
+                path: path.stat().st_mtime_ns
+                for path in (
+                    assets / gen_app_store_qr_ctas.STYLESHEET_RELATIVE,
+                    assets
+                    / gen_app_store_qr_ctas.QR_RELATIVE
+                    / "id6773017109.svg",
+                    assets
+                    / gen_app_store_qr_ctas.QR_RELATIVE
+                    / "id6787754435.svg",
+                )
+            }
+            self.assertEqual(
+                0,
+                gen_app_store_qr_ctas.sync_assets(
+                    assets, {"6773017109", "6787754435"}
+                ),
+            )
+            self.assertEqual(
+                asset_mtimes,
+                {path: path.stat().st_mtime_ns for path in asset_mtimes},
+            )
+            self.assertFalse(stale_asset.exists())
+            with self.assertRaisesRegex(ValueError, "app ID"):
+                gen_app_store_qr_ctas.qr_svg("not-an-id")
+            with self.assertRaisesRegex(ValueError, "site URL"):
+                gen_app_store_qr_ctas._site_asset_href(
+                    "javascript:alert(1)", Path("asset.css")
+                )
+
     def test_premium_guide_design_covers_public_locales_and_prunes_stale_links(self):
         with tempfile.TemporaryDirectory() as directory:
             workspace = Path(directory)
@@ -1212,6 +1392,51 @@ class GeneratorTests(unittest.TestCase):
                 encoding="utf-8"
             ),
         )
+        self.assertEqual(
+            gen_app_store_qr_ctas.CSS,
+            (pages / gen_app_store_qr_ctas.STYLESHEET_RELATIVE).read_text(
+                encoding="utf-8"
+            ),
+        )
+        app_ids = set(targets.values())
+        qr_directory = pages / gen_app_store_qr_ctas.QR_RELATIVE
+        self.assertEqual(
+            {f"id{app_id}.svg" for app_id in app_ids},
+            {path.name for path in qr_directory.glob("id*.svg")},
+        )
+        for app_id in app_ids:
+            self.assertEqual(
+                gen_app_store_qr_ctas.qr_svg(app_id),
+                (qr_directory / f"id{app_id}.svg").read_text(
+                    encoding="utf-8"
+                ),
+            )
+        qr_stylesheet_href = gen_app_store_qr_ctas._site_asset_href(
+            gen_guide_design.SITE,
+            gen_app_store_qr_ctas.STYLESHEET_RELATIVE,
+        )
+        qr_style_block = gen_app_store_qr_ctas.style_block(
+            qr_stylesheet_href
+        )
+
+        def assert_qr_card(path: Path, source: str) -> None:
+            app_id = targets[path]
+            cta = gen_mobile_store_ctas.app_store_cta(source, app_id)
+            self.assertIsNotNone(cta)
+            image_href = gen_app_store_qr_ctas._site_asset_href(
+                gen_guide_design.SITE,
+                gen_app_store_qr_ctas.QR_RELATIVE / f"id{app_id}.svg",
+            )
+            self.assertEqual(1, source.count(qr_style_block))
+            self.assertEqual(
+                1,
+                source.count(
+                    gen_app_store_qr_ctas.card_block(
+                        app_id, cta[0], cta[1], image_href
+                    )
+                ),
+            )
+
         block = gen_guide_design.design_block(
             gen_guide_design.stylesheet_href()
         )
@@ -1236,6 +1461,7 @@ class GeneratorTests(unittest.TestCase):
                         gen_mobile_store_ctas.mobile_cta_block(*cta)
                     ),
                 )
+                assert_qr_card(path, source)
         self.assertEqual(set(targets) & guide_pages, linked)
 
         answer_pages = gen_smart_app_banners._answer_pages(pages)
@@ -1257,6 +1483,7 @@ class GeneratorTests(unittest.TestCase):
                 1,
                 source.count(gen_mobile_store_ctas.mobile_cta_block(*cta)),
             )
+            assert_qr_card(path, source)
 
     def test_atom_feed_keeps_guides_and_free_tools_within_the_item_cap(self):
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(
@@ -11267,6 +11494,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_social_previews.py",
             "gen_smart_app_banners.py",
             "gen_mobile_store_ctas.py",
+            "gen_app_store_qr_ctas.py",
             "gen_guide_design.py",
             "gen_llms.py --cached-live",
             "gen_feed.py",
@@ -11326,6 +11554,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("gen_social_previews.py", publish)
         self.assertIn("gen_smart_app_banners.py", publish)
         self.assertIn("gen_mobile_store_ctas.py", publish)
+        self.assertIn("gen_app_store_qr_ctas.py", publish)
         self.assertIn("gen_guide_design.py", publish)
         self.assertIn("family_travel_mission_cards.py", publish)
         self.assertIn("family_travel_observation_passport.py", publish)
@@ -11381,6 +11610,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_social_previews.py",
             "gen_smart_app_banners.py",
             "gen_mobile_store_ctas.py",
+            "gen_app_store_qr_ctas.py",
             "gen_guide_design.py",
             "gen_llms.py",
             "gen_feed.py",

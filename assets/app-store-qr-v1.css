@@ -1,0 +1,118 @@
+.app-store-qr-card {
+  display: none;
+}
+
+@media (min-width: 760px), print {
+  .app-store-qr-card {
+    display: flex !important;
+    box-sizing: border-box;
+    inline-size: min(100%, 48rem);
+    margin: clamp(2rem, 6vw, 4.5rem) auto;
+    padding: clamp(1rem, 2.6vw, 1.4rem);
+    color: #101828;
+    background:
+      radial-gradient(circle at 14% 10%, rgba(99, 102, 241, 0.12), transparent 42%),
+      rgba(255, 255, 255, 0.98);
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    border-radius: 1.5rem;
+    box-shadow: 0 18px 56px rgba(15, 23, 42, 0.12);
+    break-inside: avoid;
+  }
+
+  .app-store-qr-card__link {
+    display: flex;
+    align-items: center;
+    inline-size: 100%;
+    min-inline-size: 0;
+    gap: clamp(1rem, 3vw, 1.5rem);
+    color: inherit !important;
+    text-align: start;
+    text-decoration: none;
+  }
+
+  .app-store-qr-card__image {
+    flex: 0 0 auto;
+    inline-size: clamp(7.5rem, 13vw, 9.5rem);
+    block-size: clamp(7.5rem, 13vw, 9.5rem);
+    padding: 0.45rem;
+    background: #fff;
+    border: 1px solid rgba(15, 23, 42, 0.1);
+    border-radius: 1rem;
+  }
+
+  .app-store-qr-card__copy {
+    display: grid;
+    min-inline-size: 0;
+    gap: 0.55rem;
+  }
+
+  .app-store-qr-card__label,
+  .app-store-qr-card__url {
+    display: block;
+    max-inline-size: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .app-store-qr-card__label {
+    color: #172033;
+    font-size: clamp(1rem, 1.6vw, 1.28rem);
+    font-weight: 850;
+    line-height: 1.2;
+  }
+
+  .app-store-qr-card__url {
+    color: #667085;
+    font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+    font-size: clamp(0.72rem, 1.2vw, 0.88rem);
+    line-height: 1;
+  }
+
+  .app-store-qr-card__url::before {
+    content: attr(data-store-url);
+  }
+
+  .app-store-qr-card__link:focus-visible {
+    outline: 3px solid #4f55e8;
+    outline-offset: 0.45rem;
+    border-radius: 0.8rem;
+  }
+}
+
+@media print {
+  .app-store-qr-card {
+    margin: 8mm auto;
+    padding: 5mm;
+    color: #000;
+    background: #fff;
+    border: 0.5pt solid #222;
+    border-radius: 4mm;
+    box-shadow: none;
+  }
+
+  .app-store-qr-card__link {
+    color: #000 !important;
+  }
+
+  .app-store-qr-card__link::after {
+    content: none !important;
+  }
+
+  .app-store-qr-card__image {
+    inline-size: 32mm;
+    block-size: 32mm;
+    padding: 2mm;
+    border-radius: 2mm;
+  }
+
+  .app-store-qr-card__label {
+    color: #000;
+    font-size: 12pt;
+  }
+
+  .app-store-qr-card__url {
+    color: #333;
+    font-size: 8pt;
+  }
+}

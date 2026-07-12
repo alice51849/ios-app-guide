@@ -20,6 +20,7 @@ from appstore_live import live_app_keys  # noqa: E402
 
 OWNER = "alice51849"
 PAGES = os.path.join(HERE, "pages")
+SITE = "https://alice51849.github.io/ios-app-guide"
 TOPIC_LIMIT = 15
 TOPIC_PATTERN = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 BASE_TOPICS = ("ios", "iphone", "ios-app", "app-support", "privacy")
@@ -71,6 +72,117 @@ GUIDE_METADATA = {
         "bopomofo",
         "zhuyin",
     ),
+}
+ECOSYSTEM_METADATA = {
+    "awesome-family-travel-missions": {
+        "homepage": "https://alice51849.github.io/awesome-family-travel-missions/",
+    },
+    "awesome-ios-everyday-utilities": {
+        "description": (
+            "Curated iPhone utilities for everyday tasks, focus, notes, "
+            "scanning, storage and travel."
+        ),
+        "homepage": f"{SITE}/focus-productivity.html",
+        "topics": (
+            "awesome-list",
+            "ios",
+            "iphone",
+            "everyday-utilities",
+            "productivity",
+            "app-collection",
+            "privacy",
+            "one-time-purchase",
+        ),
+    },
+    "awesome-ios-for-students": {
+        "homepage": f"{SITE}/focus-productivity.html",
+    },
+    "awesome-ios-health-wellness": {
+        "homepage": f"{SITE}/sleep-wellbeing.html",
+    },
+    "awesome-ios-kids-learning": {
+        "description": (
+            "Curated iPhone and iPad learning apps for phonics, math, "
+            "Zhuyin, routines and weather."
+        ),
+        "homepage": f"{SITE}/kids-learning.html",
+        "topics": (
+            "awesome-list",
+            "ios",
+            "iphone",
+            "ipad",
+            "kids-learning",
+            "early-learning",
+            "phonics",
+            "math-for-kids",
+            "bopomofo",
+            "zhuyin",
+            "preschool",
+            "education",
+        ),
+    },
+    "awesome-ios-language-learning": {
+        "homepage": f"{SITE}/",
+    },
+    "awesome-ios-money-budgeting": {
+        "homepage": f"{SITE}/money-travel.html",
+    },
+    "awesome-ios-pay-once": {
+        "homepage": f"{SITE}/subscription-swap.html",
+    },
+    "awesome-ios-photo-utilities": {
+        "description": (
+            "Curated iPhone photo utilities for passport photos, "
+            "enhancement, film looks, storage cleanup and document scanning."
+        ),
+        "homepage": f"{SITE}/photo-tools.html",
+        "topics": (
+            "awesome-list",
+            "ios",
+            "iphone",
+            "photo-utilities",
+            "passport-photo",
+            "photo-editor",
+            "photo-enhancement",
+            "film-photography",
+            "document-scanner",
+            "privacy",
+        ),
+    },
+    "awesome-ios-privacy-first": {
+        "homepage": f"{SITE}/",
+    },
+    "awesome-ios-productivity": {
+        "homepage": f"{SITE}/focus-productivity.html",
+    },
+    "awesome-pay-once-todo-apps": {
+        "homepage": f"{SITE}/focus-productivity.html",
+    },
+    "awesome-toeic-pay-once-apps": {
+        "homepage": f"{SITE}/guides/aim990.html",
+    },
+    "awesome-zhuyin-bopomofo-apps": {
+        "homepage": f"{SITE}/zh-Hant/guides/lumibopomofopro.html",
+    },
+    "lumi-open-data": {
+        "description": (
+            "Open reference datasets for passport photos, TOEIC, Chinese "
+            "zodiac and film photography, with machine-readable JSON."
+        ),
+        "homepage": f"{SITE}/data/",
+        "topics": (
+            "open-data",
+            "reference-data",
+            "datasets",
+            "json",
+            "machine-readable",
+            "passport-photo",
+            "toeic",
+            "chinese-zodiac",
+            "film-photography",
+            "ios",
+        ),
+    },
 }
 
 
@@ -153,7 +265,10 @@ def description_for_apps(keys):
 
 
 def desired_repositories(live_keys):
-    desired = {GUIDE_REPOSITORY: GUIDE_METADATA}
+    desired = {
+        GUIDE_REPOSITORY: GUIDE_METADATA,
+        **ECOSYSTEM_METADATA,
+    }
     for repository, keys in group_apps_by_repository(live_keys).items():
         desired[repository] = {
             "description": description_for_apps(keys),
@@ -166,9 +281,12 @@ def desired_repositories(live_keys):
 def metadata_changes(current, desired):
     changes = {}
     for field in ("description", "homepage"):
-        if (current.get(field) or "") != desired[field]:
+        if field in desired and (current.get(field) or "") != desired[field]:
             changes[field] = desired[field]
-    if set(current.get("topics") or ()) != set(desired["topics"]):
+    if (
+        "topics" in desired
+        and set(current.get("topics") or ()) != set(desired["topics"])
+    ):
         changes["topics"] = tuple(desired["topics"])
     return changes
 
@@ -211,17 +329,11 @@ def sync_repositories(desired, apply=False):
             print(json.dumps(metadata, ensure_ascii=False, indent=2))
             continue
         if "description" in changes or "homepage" in changes:
-            gh_api(
-                [
-                    "--method",
-                    "PATCH",
-                    endpoint,
-                    "-f",
-                    f"description={metadata['description']}",
-                    "-f",
-                    f"homepage={metadata['homepage']}",
-                ]
-            )
+            arguments = ["--method", "PATCH", endpoint]
+            for field in ("description", "homepage"):
+                if field in changes:
+                    arguments.extend(["-f", f"{field}={metadata[field]}"])
+            gh_api(arguments)
         if "topics" in changes:
             gh_api(
                 [

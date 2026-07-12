@@ -62,22 +62,28 @@ class GitHubRepositoryMetadataTests(unittest.TestCase):
 
     def test_desired_metadata_is_searchable_bounded_and_deterministic(self):
         desired = metadata.desired_repositories(LIVE_KEYS)
-        self.assertEqual(21, len(desired))
+        self.assertEqual(36, len(desired))
         self.assertEqual(
             desired,
             metadata.desired_repositories(reversed(sorted(LIVE_KEYS))),
         )
         for repository, values in desired.items():
-            self.assertLessEqual(len(values["description"]), 350)
-            self.assertEqual(
-                f"https://{metadata.OWNER}.github.io/{repository}/",
-                values["homepage"],
-            )
-            self.assertLessEqual(len(values["topics"]), metadata.TOPIC_LIMIT)
-            self.assertEqual(len(values["topics"]), len(set(values["topics"])))
-            for topic in values["topics"]:
-                self.assertRegex(topic, metadata.TOPIC_PATTERN)
-                self.assertLessEqual(len(topic), 50)
+            if "description" in values:
+                self.assertLessEqual(len(values["description"]), 350)
+            if "homepage" in values:
+                self.assertTrue(values["homepage"].startswith("https://"))
+            if "topics" in values:
+                self.assertLessEqual(len(values["topics"]), metadata.TOPIC_LIMIT)
+                self.assertEqual(
+                    len(values["topics"]), len(set(values["topics"]))
+                )
+                for topic in values["topics"]:
+                    self.assertRegex(topic, metadata.TOPIC_PATTERN)
+                    self.assertLessEqual(len(topic), 50)
+        self.assertEqual(
+            f"https://{metadata.OWNER}.github.io/snapport-support/",
+            desired["snapport-support"]["homepage"],
+        )
         self.assertIn(
             "zhuyin", desired["lumi-support"]["topics"]
         )
@@ -86,6 +92,21 @@ class GitHubRepositoryMetadataTests(unittest.TestCase):
         )
         self.assertIn(
             "white-noise", desired["sereno-support"]["topics"]
+        )
+        self.assertEqual(
+            f"{metadata.SITE}/kids-learning.html",
+            desired["awesome-ios-kids-learning"]["homepage"],
+        )
+        self.assertIn(
+            "passport-photo",
+            desired["awesome-ios-photo-utilities"]["topics"],
+        )
+        self.assertIn(
+            "machine-readable", desired["lumi-open-data"]["topics"]
+        )
+        self.assertEqual(
+            {"homepage"},
+            set(desired["awesome-ios-language-learning"]),
         )
 
     def test_metadata_changes_are_idempotent_and_field_specific(self):
@@ -115,6 +136,20 @@ class GitHubRepositoryMetadataTests(unittest.TestCase):
                     "topics": [],
                 },
                 desired,
+            ),
+        )
+        self.assertEqual(
+            {},
+            metadata.metadata_changes(
+                {"homepage": "https://example.com/", "topics": ["legacy"]},
+                {"homepage": "https://example.com/"},
+            ),
+        )
+        self.assertEqual(
+            {"homepage": "https://new.example/"},
+            metadata.metadata_changes(
+                {"homepage": "https://example.com/"},
+                {"homepage": "https://new.example/"},
             ),
         )
 

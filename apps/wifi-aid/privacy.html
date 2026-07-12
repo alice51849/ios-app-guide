@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff7ee">
+  <title>WiFi Aid Privacy Policy</title>
+  <meta name="description" content="WiFi Aid privacy policy: no account, advertising, analytics, or tracking; diagnostic history remains on your device.">
+  <link rel="canonical" href="https://alice51849.github.io/ios-app-guide/apps/wifi-aid/privacy.html">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg:#fff7ee; --card:rgba(255,255,255,.88); --ink:#2b1810;
+      --muted:#6b4e3e; --line:rgba(83,48,23,.13); --brand:#c9471f;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:radial-gradient(circle at 75% 8%,#ffdce6,transparent 28rem),var(--bg); line-height:1.65; }
+    main { width:min(820px,calc(100% - 36px)); margin:0 auto; padding:62px 0 84px; }
+    .eyebrow { color:var(--brand); font-size:.78rem; font-weight:850; letter-spacing:.16em; text-transform:uppercase; }
+    h1 { margin:8px 0 12px; font-size:clamp(2.7rem,8vw,5.2rem); line-height:1; letter-spacing:-.055em; }
+    .lead { margin:0; color:var(--muted); font-size:1.12rem; }
+    section { margin-top:30px; padding:clamp(22px,5vw,34px); border:1px solid var(--line); border-radius:26px; background:var(--card); box-shadow:0 16px 44px rgba(95,52,22,.07); backdrop-filter:blur(18px); }
+    h2 { margin:0 0 12px; font-size:1.4rem; }
+    h3 { margin:24px 0 6px; font-size:1.04rem; }
+    p { margin:8px 0; }
+    ul { padding-left:1.25rem; }
+    li { margin:9px 0; }
+    a { color:var(--brand); font-weight:750; }
+    nav { display:flex; flex-wrap:wrap; gap:18px; margin-top:34px; }
+    @media (prefers-color-scheme:dark) {
+      :root { --bg:#1a0d10; --card:rgba(43,23,29,.9); --ink:#fff1e8; --muted:#e0bdaa; --line:rgba(255,238,226,.14); --brand:#ff8a5c; }
+      body { background:radial-gradient(circle at 75% 8%,rgba(255,92,151,.18),transparent 28rem),var(--bg); }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">Effective July 12, 2026</div>
+    <h1>Privacy Policy</h1>
+    <p class="lead">WiFi Aid is designed to diagnose a connection without building a profile about you.</p>
+
+    <section>
+      <h2>Summary</h2>
+      <ul>
+        <li>No account is required.</li>
+        <li>WiFi Aid contains no third-party advertising, analytics, or tracking SDKs.</li>
+        <li>The developer does not collect or receive your diagnostic history, Wi-Fi identity, local addresses, or websites you choose to test.</li>
+        <li>Settings and diagnostic history are stored locally on your device.</li>
+        <li>Network checks contact public internet endpoints as described below.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Information processed on your device</h2>
+      <p>To produce a diagnosis, WiFi Aid may process the current network-path state, interface type, IPv4 and IPv6 availability, DNS support, Low Data Mode or constrained-path status, request timing, connection success or failure, and diagnostic confidence.</p>
+      <p>If you explicitly enable Wi-Fi identity and grant Apple's precise When In Use location permission, the app may also read the current Wi-Fi name, BSSID, and security type. WiFi Aid does not request continuous or background location and does not read your geographic coordinates for this feature.</p>
+      <p>Local diagnostic records may include the evidence above, local interface addresses, and the host name of a website you chose to test. These records remain inside the app's local storage on your device.</p>
+    </section>
+
+    <section>
+      <h2>Network requests</h2>
+      <p>Network diagnosis necessarily sends ordinary HTTP, HTTPS, or TCP connection attempts over your current network. WiFi Aid uses a small set of public connectivity endpoints operated by providers such as Apple, Google, Cloudflare, and GitHub, and it may contact a public website address that you enter for a website-specific check.</p>
+      <p>As with a normal browser or app request, the operator of a contacted endpoint or your network provider may receive standard connection metadata such as your public IP address, request time, protocol information, and user agent under that operator's own privacy policy. WiFi Aid does not add an account identifier, advertising identifier, Wi-Fi name, BSSID, local IP address, or diagnostic history to those requests.</p>
+      <p>The developer does not operate an analytics backend for these requests and does not receive a copy of your diagnostic report.</p>
+    </section>
+
+    <section>
+      <h2>Local storage and sharing</h2>
+      <p>App preferences, purchase-entitlement cache, onboarding status, complimentary-check usage, and diagnostic history are stored using Apple platform storage on your device. History is retained until you clear it in WiFi Aid or delete the app.</p>
+      <p>If you choose Share, WiFi Aid creates a plain-language summary through Apple's system share sheet. The generated summary intentionally excludes Wi-Fi names, BSSIDs, local addresses, custom website hosts, and raw endpoint details. The destination you select in the share sheet handles the content under its own terms.</p>
+    </section>
+
+    <section>
+      <h2>Purchases</h2>
+      <p>The optional Lifetime unlock is a one-time non-consumable in-app purchase processed by Apple StoreKit. Apple handles payment and Apple Account information. WiFi Aid receives only verified transaction and entitlement status needed to unlock the purchased features.</p>
+    </section>
+
+    <section>
+      <h2>Data collection, tracking, and sale</h2>
+      <p>WiFi Aid does not collect data for advertising, analytics, cross-app tracking, data brokerage, profiling, or sale. It does not use the advertising identifier and does not ask for App Tracking Transparency permission.</p>
+    </section>
+
+    <section>
+      <h2>Children</h2>
+      <p>WiFi Aid is a general-audience utility. It does not knowingly collect personal information from children or provide social networking, public user-generated content, messaging, advertising, or behavioral tracking.</p>
+    </section>
+
+    <section>
+      <h2>Security and limitations</h2>
+      <p>WiFi Aid minimizes information and keeps history local, but no network transmission or device storage can be guaranteed perfectly secure. Do not enter private intranet addresses, embedded passwords, access tokens, or other secrets into the website checker. WiFi Aid removes URL credentials and fragments before a check, but you remain responsible for the public destination you choose.</p>
+    </section>
+
+    <section>
+      <h2>Changes and contact</h2>
+      <p>This policy may be updated when the app's behavior or legal requirements change. The effective date above will be revised when a material update is published.</p>
+      <p>Questions about privacy can be sent to <a href="mailto:hourstag.app@gmail.com?subject=WiFi%20Aid%20Privacy">hourstag.app@gmail.com</a>.</p>
+    </section>
+
+    <nav aria-label="WiFi Aid resources">
+      <a href="index.html">WiFi Aid</a>
+      <a href="support.html">Support</a>
+      <a href="../index.html">All apps</a>
+    </nav>
+  </main>
+</body>
+</html>

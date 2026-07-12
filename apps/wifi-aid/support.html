@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff7ee">
+  <title>WiFi Aid Support</title>
+  <meta name="description" content="Help, troubleshooting, and contact information for WiFi Aid.">
+  <link rel="canonical" href="https://alice51849.github.io/ios-app-guide/apps/wifi-aid/support.html">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #fff7ee; --card: rgba(255,255,255,.88); --ink: #2b1810;
+      --muted: #6b4e3e; --line: rgba(83,48,23,.13); --brand: #c9471f;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); background: radial-gradient(circle at 75% 8%, #ffdce6, transparent 28rem), var(--bg); line-height: 1.62; }
+    main { width: min(820px, calc(100% - 36px)); margin: 0 auto; padding: 62px 0 84px; }
+    .eyebrow { color: var(--brand); font-size: .78rem; font-weight: 850; letter-spacing: .16em; text-transform: uppercase; }
+    h1 { margin: 8px 0 12px; font-size: clamp(2.7rem, 8vw, 5.2rem); line-height: 1; letter-spacing: -.055em; }
+    .lead { margin: 0; color: var(--muted); font-size: 1.12rem; }
+    section { margin-top: 30px; padding: clamp(22px, 5vw, 34px); border: 1px solid var(--line); border-radius: 26px; background: var(--card); box-shadow: 0 16px 44px rgba(95,52,22,.07); backdrop-filter: blur(18px); }
+    h2 { margin: 0 0 18px; font-size: 1.45rem; }
+    h3 { margin: 25px 0 6px; font-size: 1.05rem; }
+    p { margin: 7px 0; }
+    a { color: var(--brand); font-weight: 750; }
+    nav { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 34px; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#1a0d10; --card:rgba(43,23,29,.9); --ink:#fff1e8; --muted:#e0bdaa; --line:rgba(255,238,226,.14); --brand:#ff8a5c; }
+      body { background: radial-gradient(circle at 75% 8%, rgba(255,92,151,.18), transparent 28rem), var(--bg); }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">Help center</div>
+    <h1>WiFi Aid Support</h1>
+    <p class="lead">No account is required. Most connection questions can be resolved with the steps below.</p>
+
+    <section>
+      <h2>Using WiFi Aid</h2>
+      <h3>What does Essential Check test?</h3>
+      <p>Essential Check compares the current iOS network path, a captive-portal response, independent secure internet requests, a direct-IP connection, and hostname access. It is designed for a fast first answer.</p>
+
+      <h3>What does Deep Check add?</h3>
+      <p>Deep Check adds more independent providers, direct-IP and hostname comparisons, and repeated timing samples. Those extra samples help separate a brief timeout from a genuinely unstable connection.</p>
+
+      <h3>What does Check a Website do?</h3>
+      <p>Enter a public website address. WiFi Aid compares that destination with otherwise healthy baseline paths. It reports a site-specific issue only when the wider internet evidence is working.</p>
+
+      <h3>What does the confidence level mean?</h3>
+      <p>Confidence describes how strongly independent checks agree. A limited result is intentional: it means the evidence did not justify a stronger claim.</p>
+    </section>
+
+    <section>
+      <h2>Common connection results</h2>
+      <h3>Wi-Fi sign-in page detected</h3>
+      <p>Open Safari and complete the hotel, airport, cafe, school, or guest-network sign-in. Then return to WiFi Aid and run the check again.</p>
+
+      <h3>DNS is likely failing</h3>
+      <p>Pause any VPN or Private Relay configuration first. If direct-IP access still works while names repeatedly fail, review the DNS settings on the device or router and try a trusted resolver.</p>
+
+      <h3>Provider issue is likely</h3>
+      <p>Try one other device on the same network. Restart the router once, wait for it to reconnect, and check the provider's status page. Avoid repeated rapid restarts.</p>
+
+      <h3>The connection looks unstable or slow</h3>
+      <p>Move nearer the router, pause large transfers, and compare another Deep Check. WiFi Aid measures application-level response behavior; iOS does not provide a general-purpose nearby Wi-Fi spectrum scan.</p>
+    </section>
+
+    <section>
+      <h2>Privacy and permissions</h2>
+      <h3>Why can WiFi Aid ask for location permission?</h3>
+      <p>Apple requires precise When In Use location authorization before an app can read the name and security of the Wi-Fi network currently in use. This permission is optional and is requested only when you choose to show that network identity. WiFi Aid does not request background location.</p>
+
+      <h3>Can WiFi Aid scan nearby networks or change my router?</h3>
+      <p>No. iOS does not allow a normal App Store utility to scan every nearby Wi-Fi network, inspect other devices' traffic, or reconfigure an arbitrary router. WiFi Aid does not claim those capabilities.</p>
+
+      <h3>Where is my history stored?</h3>
+      <p>History is stored locally on this device. Use Clear History to remove it, or delete the app to remove its local data. Shared reports intentionally omit Wi-Fi names, BSSIDs, local addresses, and raw endpoints.</p>
+    </section>
+
+    <section>
+      <h2>Purchase help</h2>
+      <h3>How do I restore Lifetime access?</h3>
+      <p>Open Settings in WiFi Aid and tap Restore Purchase. Use the same Apple Account that made the original one-time purchase. There is no recurring subscription.</p>
+
+      <h3>Why is a purchase pending?</h3>
+      <p>Apple may be waiting for approval through Ask to Buy or another account requirement. WiFi Aid unlocks automatically after StoreKit provides a verified transaction.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Still need help? Email <a href="mailto:hourstag.app@gmail.com?subject=WiFi%20Aid%20Support">hourstag.app@gmail.com</a>. Include your iPhone or iPad model, iOS version, the result category, and a short description. Do not send passwords or private router credentials.</p>
+    </section>
+
+    <nav aria-label="WiFi Aid resources">
+      <a href="index.html">WiFi Aid</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="../index.html">All apps</a>
+    </nav>
+  </main>
+</body>
+</html>

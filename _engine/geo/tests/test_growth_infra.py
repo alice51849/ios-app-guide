@@ -57,6 +57,7 @@ import gen_linkset
 import gen_llms
 import gen_roundups
 import gen_social_previews
+import gen_smart_app_banners
 import indexnow_submit
 import notify_websub
 import outreach_scorecard
@@ -606,6 +607,116 @@ class GeneratorTests(unittest.TestCase):
                 self.assertIn(
                     "sitemap_oembed.xml", gen_llms.build_sitemap_index()
                 )
+
+    def test_smart_app_banners_cover_localized_guides_and_prune_stale_tags(self):
+        with tempfile.TemporaryDirectory() as directory:
+            workspace = Path(directory)
+            pages = workspace / "site"
+            pages.mkdir()
+            linked_pages = workspace / "linked-site"
+            linked_pages.symlink_to(pages, target_is_directory=True)
+            guide = pages / "guides" / "lumibopomofo.html"
+            localized = pages / "zh-Hant" / "guides" / "lumibopomofo.html"
+            story = pages / "stories" / "lumibopomofo.html"
+            poster = pages / "stories" / "img" / "lumibopomofo-poster.jpg"
+            hub = pages / "hubs" / "lumibopomofo.html"
+            stale = pages / "fr-FR" / "guides" / "stale.html"
+            for path in (guide, localized, story, poster, hub, stale):
+                path.parent.mkdir(parents=True, exist_ok=True)
+            site = gen_smart_app_banners.SITE
+            guide.write_text(
+                "<head>"
+                f'<link rel="canonical" href="{site}/guides/lumibopomofo.html">'
+                f'<link rel="alternate" hreflang="en" href="{site}/guides/lumibopomofo.html">'
+                f'<link rel="alternate" hreflang="zh-Hant" href="{site}/zh-Hant/guides/lumibopomofo.html">'
+                f'<link rel="linkset" type="application/linkset+json" href="{site}/linkset.json">'
+                "<!-- social-preview:start --><meta property=\"og:title\" content=\"Lumi\">"
+                "<!-- social-preview:end -->"
+                f'<link rel="alternate" type="application/atom+xml" href="{site}/feed.xml">'
+                "</head>",
+                encoding="utf-8",
+            )
+            localized.write_text("<head></head>", encoding="utf-8")
+            story.write_text(
+                "<head>"
+                f'<link rel="canonical" href="{site}/stories/lumibopomofo.html">'
+                "</head><body>"
+                f'<amp-story poster-portrait-src="{site}/stories/img/lumibopomofo-poster.jpg">',
+                encoding="utf-8",
+            )
+            poster.write_bytes(b"poster")
+            hub.write_text("<head></head>", encoding="utf-8")
+            stale.write_text(
+                "<head>"
+                f"{gen_smart_app_banners.BLOCK_START}"
+                '<meta name="apple-itunes-app" content="app-id=1">'
+                f"{gen_smart_app_banners.BLOCK_END}"
+                "</head>",
+                encoding="utf-8",
+            )
+            (pages / "index.html").write_text(
+                f'<head><link rel="canonical" href="{site}/index.html"></head>',
+                encoding="utf-8",
+            )
+            for relative in (
+                "feed.xml",
+                "rss.xml",
+                "feed.json",
+                "llms-full.txt",
+                "apps/index.html",
+            ):
+                path = pages / relative
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text("resource", encoding="utf-8")
+
+            first = gen_smart_app_banners.generate(
+                linked_pages, {"lumibopomofo"}
+            )
+            mtimes = {
+                path: path.stat().st_mtime_ns
+                for path in (guide, localized, stale)
+            }
+            second = gen_smart_app_banners.generate(
+                linked_pages, {"lumibopomofo"}
+            )
+
+            self.assertEqual(
+                {
+                    "apps": 1,
+                    "guide_pages": 2,
+                    "languages": 2,
+                    "changed_files": 3,
+                },
+                first,
+            )
+            self.assertEqual(0, second["changed_files"])
+            self.assertEqual(
+                mtimes,
+                {
+                    path: path.stat().st_mtime_ns
+                    for path in (guide, localized, stale)
+                },
+            )
+            banner = gen_smart_app_banners.banner_block("6773017109")
+            for path in (guide, localized):
+                source = path.read_text(encoding="utf-8")
+                self.assertEqual(1, source.count(banner))
+                self.assertNotIn("app-argument", source)
+            source = guide.read_text(encoding="utf-8")
+            self.assertLess(
+                source.index(gen_smart_app_banners.BLOCK_START),
+                source.index('rel="linkset"'),
+            )
+            self.assertLess(
+                source.index('rel="linkset"'),
+                source.index("<!-- social-preview:start -->"),
+            )
+            self.assertNotIn(
+                gen_smart_app_banners.BLOCK_START,
+                stale.read_text(encoding="utf-8"),
+            )
+            with self.assertRaisesRegex(ValueError, "app ID"):
+                gen_smart_app_banners.banner_block("not-an-id")
 
     def test_atom_feed_keeps_guides_and_free_tools_within_the_item_cap(self):
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(
@@ -10326,6 +10437,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_image_sitemap.py",
             "gen_linkset.py",
             "gen_social_previews.py",
+            "gen_smart_app_banners.py",
             "gen_llms.py --cached-live",
             "gen_feed.py",
         )
@@ -10382,6 +10494,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("gen_image_sitemap.py", publish)
         self.assertIn("gen_linkset.py", publish)
         self.assertIn("gen_social_previews.py", publish)
+        self.assertIn("gen_smart_app_banners.py", publish)
         self.assertIn("family_travel_mission_cards.py", publish)
         self.assertIn("family_travel_observation_passport.py", publish)
         self.assertIn("family_travel_opds_catalog.py", publish)
@@ -10434,6 +10547,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_image_sitemap.py",
             "gen_linkset.py",
             "gen_social_previews.py",
+            "gen_smart_app_banners.py",
             "gen_llms.py",
             "gen_feed.py",
         )

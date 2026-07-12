@@ -56,6 +56,7 @@ import gen_hubs
 import gen_image_sitemap
 import gen_linkset
 import gen_llms
+import gen_mobile_store_ctas
 import gen_roundups
 import gen_social_previews
 import gen_smart_app_banners
@@ -905,6 +906,135 @@ class GeneratorTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "app ID"):
                 gen_smart_app_banners.banner_block("not-an-id")
 
+    def test_mobile_store_ctas_reuse_localized_links_and_prune_stale_blocks(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            primary = root / "primary.html"
+            ghost = root / "ghost.html"
+            plain = root / "plain.html"
+            stale = root / "stale.html"
+            invalid = root / "invalid.html"
+            primary.write_text(
+                "<body><main>"
+                '<a href="https://apps.apple.com/app/id6773017109?ct=plain">'
+                "Plain link</a>"
+                '<section class="hero"><a class="cta" '
+                'href="https://apps.apple.com/app/id6773017109?ct=hero&amp;mt=8">'
+                "Get the app</a></section></main></body>",
+                encoding="utf-8",
+            )
+            ghost.write_text(
+                "<body><main><section class=\"hero\">"
+                "<a class='cta ghost' "
+                "href='https://apps.apple.com/app/id6773017109?ct=localized'>"
+                "Localized App Store label</a></section></main></body>",
+                encoding="utf-8",
+            )
+            plain.write_text(
+                "<body><main>"
+                '<a href="https://apps.apple.com/app/id6773017109?ct=fallback">'
+                "<span>Fallback</span> label</a></main></body>",
+                encoding="utf-8",
+            )
+            stale.write_text(
+                "<body><main>No direct link</main>"
+                f"{gen_mobile_store_ctas.BLOCK_START}"
+                '<a href="https://apps.apple.com/app/id6773017109?ct=stale">'
+                "Stale generated link</a>"
+                f"{gen_mobile_store_ctas.BLOCK_END}</body>",
+                encoding="utf-8",
+            )
+            invalid.write_text("<main>No body</main>", encoding="utf-8")
+
+            for path in (primary, ghost, plain):
+                self.assertTrue(
+                    gen_mobile_store_ctas.ensure_mobile_cta(
+                        path, "6773017109"
+                    )
+                )
+            mtimes = {
+                path: path.stat().st_mtime_ns
+                for path in (primary, ghost, plain)
+            }
+            for path in (primary, ghost, plain):
+                self.assertFalse(
+                    gen_mobile_store_ctas.ensure_mobile_cta(
+                        path, "6773017109"
+                    )
+                )
+            self.assertEqual(
+                mtimes,
+                {
+                    path: path.stat().st_mtime_ns
+                    for path in (primary, ghost, plain)
+                },
+            )
+
+            primary_source = primary.read_text(encoding="utf-8")
+            self.assertEqual(
+                1, primary_source.count(gen_mobile_store_ctas.BLOCK_START)
+            )
+            generated = gen_mobile_store_ctas.BLOCK_RE.search(primary_source)
+            self.assertIsNotNone(generated)
+            generated_source = generated.group(0)
+            self.assertIn("Get the app", generated_source)
+            self.assertNotIn("Plain link", generated_source)
+            self.assertIn("ct=hero&amp;mt=8", generated_source)
+            self.assertIn(
+                'src="/ios-app-guide/assets/mobile-store-cta-v1.js"',
+                generated_source,
+            )
+            self.assertIn("defer", generated_source)
+            self.assertIn("white-space:nowrap", gen_mobile_store_ctas.SCRIPT)
+            self.assertIn("min-height:48px", gen_mobile_store_ctas.SCRIPT)
+            self.assertIn(
+                "safe-area-inset-bottom", gen_mobile_store_ctas.SCRIPT
+            )
+            self.assertIn(
+                "prefers-reduced-motion:reduce",
+                gen_mobile_store_ctas.SCRIPT,
+            )
+            self.assertIn("IntersectionObserver", gen_mobile_store_ctas.SCRIPT)
+            self.assertIn(
+                "window.scrollY >= threshold", gen_mobile_store_ctas.SCRIPT
+            )
+            self.assertNotIn("fetch(", gen_mobile_store_ctas.SCRIPT)
+            self.assertNotIn("sendBeacon", gen_mobile_store_ctas.SCRIPT)
+
+            self.assertIn(
+                "Localized App Store label",
+                ghost.read_text(encoding="utf-8"),
+            )
+            self.assertIn(
+                "Fallback label",
+                plain.read_text(encoding="utf-8"),
+            )
+            self.assertTrue(
+                gen_mobile_store_ctas.ensure_mobile_cta(
+                    stale, "6773017109"
+                )
+            )
+            self.assertNotIn(
+                gen_mobile_store_ctas.BLOCK_START,
+                stale.read_text(encoding="utf-8"),
+            )
+            with self.assertRaisesRegex(ValueError, "closing body"):
+                gen_mobile_store_ctas.ensure_mobile_cta(
+                    invalid, "6773017109"
+                )
+            self.assertEqual(
+                "/ios-app-guide/assets/mobile-store-cta-v1.js",
+                gen_mobile_store_ctas.asset_href(),
+            )
+            with self.assertRaisesRegex(ValueError, "site URL"):
+                gen_mobile_store_ctas.asset_href("javascript:alert(1)")
+            with self.assertRaisesRegex(ValueError, "asset URL"):
+                gen_mobile_store_ctas.mobile_cta_block(
+                    "https://apps.apple.com/app/id6773017109",
+                    "Get the app",
+                    '"><script>',
+                )
+
     def test_premium_guide_design_covers_public_locales_and_prunes_stale_links(self):
         with tempfile.TemporaryDirectory() as directory:
             workspace = Path(directory)
@@ -1076,6 +1206,12 @@ class GeneratorTests(unittest.TestCase):
                 encoding="utf-8"
             ),
         )
+        self.assertEqual(
+            gen_mobile_store_ctas.SCRIPT,
+            (pages / gen_mobile_store_ctas.ASSET_RELATIVE).read_text(
+                encoding="utf-8"
+            ),
+        )
         block = gen_guide_design.design_block(
             gen_guide_design.stylesheet_href()
         )
@@ -1089,6 +1225,17 @@ class GeneratorTests(unittest.TestCase):
                 self.assertEqual(
                     1, len(gen_guide_design.VIEWPORT_RE.findall(source))
                 )
+            if path in targets:
+                cta = gen_mobile_store_ctas.app_store_cta(
+                    source, targets[path]
+                )
+                self.assertIsNotNone(cta)
+                self.assertEqual(
+                    1,
+                    source.count(
+                        gen_mobile_store_ctas.mobile_cta_block(*cta)
+                    ),
+                )
         self.assertEqual(set(targets) & guide_pages, linked)
 
         answer_pages = gen_smart_app_banners._answer_pages(pages)
@@ -1101,6 +1248,14 @@ class GeneratorTests(unittest.TestCase):
                 source.count(
                     gen_smart_app_banners.banner_block(targets[path])
                 ),
+            )
+            cta = gen_mobile_store_ctas.app_store_cta(
+                source, targets[path]
+            )
+            self.assertIsNotNone(cta)
+            self.assertEqual(
+                1,
+                source.count(gen_mobile_store_ctas.mobile_cta_block(*cta)),
             )
 
     def test_atom_feed_keeps_guides_and_free_tools_within_the_item_cap(self):
@@ -11111,6 +11266,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_linkset.py",
             "gen_social_previews.py",
             "gen_smart_app_banners.py",
+            "gen_mobile_store_ctas.py",
             "gen_guide_design.py",
             "gen_llms.py --cached-live",
             "gen_feed.py",
@@ -11169,6 +11325,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("gen_linkset.py", publish)
         self.assertIn("gen_social_previews.py", publish)
         self.assertIn("gen_smart_app_banners.py", publish)
+        self.assertIn("gen_mobile_store_ctas.py", publish)
         self.assertIn("gen_guide_design.py", publish)
         self.assertIn("family_travel_mission_cards.py", publish)
         self.assertIn("family_travel_observation_passport.py", publish)
@@ -11223,6 +11380,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_linkset.py",
             "gen_social_previews.py",
             "gen_smart_app_banners.py",
+            "gen_mobile_store_ctas.py",
             "gen_guide_design.py",
             "gen_llms.py",
             "gen_feed.py",

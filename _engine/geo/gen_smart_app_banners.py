@@ -31,6 +31,13 @@ BLOCK_RE = re.compile(
     rf"\s*{re.escape(BLOCK_START)}.*?{re.escape(BLOCK_END)}\s*",
     flags=re.DOTALL,
 )
+MOBILE_CTA_BLOCK_START = "<!-- mobile-store-cta:start -->"
+MOBILE_CTA_BLOCK_END = "<!-- mobile-store-cta:end -->"
+MOBILE_CTA_BLOCK_RE = re.compile(
+    rf"\s*{re.escape(MOBILE_CTA_BLOCK_START)}.*?"
+    rf"{re.escape(MOBILE_CTA_BLOCK_END)}\s*",
+    flags=re.DOTALL,
+)
 APP_STORE_LINK_RE = re.compile(
     r"https://apps\.apple\.com/app/id(\d+)",
     flags=re.IGNORECASE,
@@ -98,7 +105,9 @@ def build_targets(
 
     live_ids = {APPSTORE[key] for key in live_keys}
     for path in _answer_pages(pages):
-        source = BLOCK_RE.sub("\n", path.read_text(encoding="utf-8"))
+        source = MOBILE_CTA_BLOCK_RE.sub(
+            "\n", BLOCK_RE.sub("\n", path.read_text(encoding="utf-8"))
+        )
         app_ids = set(APP_STORE_LINK_RE.findall(source))
         if len(app_ids) != 1:
             continue

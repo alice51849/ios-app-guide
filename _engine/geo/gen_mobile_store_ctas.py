@@ -106,8 +106,11 @@ def _plain_label(source: str) -> str:
 
 
 def app_store_cta(source: str, app_id: str) -> tuple[str, str] | None:
-    cleaned = gen_smart_app_banners.APP_STORE_QR_BLOCK_RE.sub(
-        "\n", BLOCK_RE.sub("\n", source)
+    cleaned = gen_smart_app_banners.APP_STORE_SHARE_BLOCK_RE.sub(
+        "\n",
+        gen_smart_app_banners.APP_STORE_QR_BLOCK_RE.sub(
+            "\n", BLOCK_RE.sub("\n", source)
+        ),
     )
     candidates: list[tuple[int, str, str]] = []
     for match in ANCHOR_RE.finditer(cleaned):

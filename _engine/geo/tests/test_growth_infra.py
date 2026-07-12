@@ -48,6 +48,7 @@ import family_travel_ro_crate
 import family_travel_static_api
 import gen_app_catalog
 import gen_app_store_qr_ctas
+import gen_app_store_share_ctas
 import gen_calculator
 import gen_cost_compare
 import gen_data_hub
@@ -1215,6 +1216,108 @@ class GeneratorTests(unittest.TestCase):
                     "javascript:alert(1)", Path("asset.css")
                 )
 
+    def test_native_app_store_sharing_is_direct_localized_and_progressive(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            page = root / "page.html"
+            stale = root / "stale.html"
+            invalid = root / "invalid.html"
+            page.write_text(
+                "<html lang=\"zh-Hant\"><head></head><body><main>"
+                '<a href="https://apps.apple.com/app/id6773017109?ct=page">'
+                "Get the app</a></main></body></html>",
+                encoding="utf-8",
+            )
+            stale.write_text(
+                "<body>"
+                f"{gen_app_store_share_ctas.BLOCK_START}"
+                '<script data-app-store-share="1"></script>'
+                f"{gen_app_store_share_ctas.BLOCK_END}</body>",
+                encoding="utf-8",
+            )
+            invalid.write_text("<main>No body</main>", encoding="utf-8")
+
+            self.assertTrue(
+                gen_app_store_share_ctas.ensure_share(page, "6773017109")
+            )
+            mtime = page.stat().st_mtime_ns
+            self.assertFalse(
+                gen_app_store_share_ctas.ensure_share(page, "6773017109")
+            )
+            self.assertEqual(mtime, page.stat().st_mtime_ns)
+            source = page.read_text(encoding="utf-8")
+            self.assertEqual(
+                1, source.count(gen_app_store_share_ctas.BLOCK_START)
+            )
+            self.assertIn(
+                'data-app-store-share="6773017109"',
+                source,
+            )
+            self.assertIn(
+                'src="/ios-app-guide/assets/app-store-share-v1.js"',
+                source,
+            )
+            self.assertNotIn(
+                "https://apps.apple.com/app/id6773017109?ct=page",
+                gen_app_store_share_ctas.BLOCK_RE.search(source).group(0),
+            )
+            self.assertTrue(gen_app_store_share_ctas.remove_share(stale))
+            self.assertNotIn(
+                gen_app_store_share_ctas.BLOCK_START,
+                stale.read_text(encoding="utf-8"),
+            )
+            with self.assertRaisesRegex(ValueError, "closing body"):
+                gen_app_store_share_ctas.ensure_share(
+                    invalid, "6773017109"
+                )
+            with self.assertRaisesRegex(ValueError, "app ID"):
+                gen_app_store_share_ctas.share_block("not-an-id")
+            with self.assertRaisesRegex(ValueError, "site URL"):
+                gen_app_store_share_ctas.asset_href("javascript:alert(1)")
+            with self.assertRaisesRegex(ValueError, "asset URL"):
+                gen_app_store_share_ctas.share_block(
+                    "6773017109", '"><script>'
+                )
+
+        expected_locales = {
+            "ar-sa", "bn-bd", "ca", "cs", "da", "de-de", "el", "en",
+            "es-es", "es-mx", "fi", "fr-fr", "gu-in", "he", "hi", "hr",
+            "hu", "id", "it", "ja", "kn-in", "ko", "ml-in", "mr-in",
+            "ms", "nl-nl", "no", "or-in", "pa-in", "pl", "pt-br",
+            "pt-pt", "ro", "ru", "sk", "sl-si", "sv", "ta-in", "te-in",
+            "th", "tr", "uk", "ur-pk", "vi", "zh-hans", "zh-hant",
+        }
+        self.assertEqual(
+            expected_locales, set(gen_app_store_share_ctas.SHARE_LABELS)
+        )
+        script = gen_app_store_share_ctas.SCRIPT
+        for feature in (
+            "navigator.share",
+            "navigator.canShare",
+            "https://apps.apple.com/app/id${appId}",
+            'error.name !== "AbortError"',
+            "MutationObserver",
+            "inline-size:48px",
+            "white-space:nowrap",
+            "@media print",
+            "prefers-reduced-motion:reduce",
+        ):
+            self.assertIn(feature, script)
+        self.assertNotIn("fetch(", script)
+        self.assertNotIn("sendBeacon", script)
+        self.assertNotIn("navigator.clipboard", script)
+        generated_only = (
+            f"{gen_app_store_share_ctas.BLOCK_START}"
+            '<a href="https://apps.apple.com/app/id6773017109">'
+            "Generated link</a>"
+            f"{gen_app_store_share_ctas.BLOCK_END}"
+        )
+        self.assertIsNone(
+            gen_mobile_store_ctas.app_store_cta(
+                generated_only, "6773017109"
+            )
+        )
+
     def test_premium_guide_design_covers_public_locales_and_prunes_stale_links(self):
         with tempfile.TemporaryDirectory() as directory:
             workspace = Path(directory)
@@ -1398,6 +1501,12 @@ class GeneratorTests(unittest.TestCase):
                 encoding="utf-8"
             ),
         )
+        self.assertEqual(
+            gen_app_store_share_ctas.SCRIPT,
+            (pages / gen_app_store_share_ctas.ASSET_RELATIVE).read_text(
+                encoding="utf-8"
+            ),
+        )
         app_ids = set(targets.values())
         qr_directory = pages / gen_app_store_qr_ctas.QR_RELATIVE
         self.assertEqual(
@@ -1417,6 +1526,9 @@ class GeneratorTests(unittest.TestCase):
         )
         qr_style_block = gen_app_store_qr_ctas.style_block(
             qr_stylesheet_href
+        )
+        share_script_href = gen_app_store_share_ctas.asset_href(
+            gen_guide_design.SITE
         )
 
         def assert_qr_card(path: Path, source: str) -> None:
@@ -1462,6 +1574,14 @@ class GeneratorTests(unittest.TestCase):
                     ),
                 )
                 assert_qr_card(path, source)
+                self.assertEqual(
+                    1,
+                    source.count(
+                        gen_app_store_share_ctas.share_block(
+                            targets[path], share_script_href
+                        )
+                    ),
+                )
         self.assertEqual(set(targets) & guide_pages, linked)
 
         answer_pages = gen_smart_app_banners._answer_pages(pages)
@@ -1484,6 +1604,14 @@ class GeneratorTests(unittest.TestCase):
                 source.count(gen_mobile_store_ctas.mobile_cta_block(*cta)),
             )
             assert_qr_card(path, source)
+            self.assertEqual(
+                1,
+                source.count(
+                    gen_app_store_share_ctas.share_block(
+                        targets[path], share_script_href
+                    )
+                ),
+            )
 
     def test_atom_feed_keeps_guides_and_free_tools_within_the_item_cap(self):
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(
@@ -11495,6 +11623,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_smart_app_banners.py",
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",
+            "gen_app_store_share_ctas.py",
             "gen_guide_design.py",
             "gen_llms.py --cached-live",
             "gen_feed.py",
@@ -11555,6 +11684,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("gen_smart_app_banners.py", publish)
         self.assertIn("gen_mobile_store_ctas.py", publish)
         self.assertIn("gen_app_store_qr_ctas.py", publish)
+        self.assertIn("gen_app_store_share_ctas.py", publish)
         self.assertIn("gen_guide_design.py", publish)
         self.assertIn("family_travel_mission_cards.py", publish)
         self.assertIn("family_travel_observation_passport.py", publish)
@@ -11611,6 +11741,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_smart_app_banners.py",
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",
+            "gen_app_store_share_ctas.py",
             "gen_guide_design.py",
             "gen_llms.py",
             "gen_feed.py",

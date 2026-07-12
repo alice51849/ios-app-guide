@@ -45,6 +45,13 @@ APP_STORE_QR_BLOCK_RE = re.compile(
     rf"{re.escape(APP_STORE_QR_BLOCK_END)}\s*",
     flags=re.DOTALL,
 )
+APP_STORE_SHARE_BLOCK_START = "<!-- app-store-share:start -->"
+APP_STORE_SHARE_BLOCK_END = "<!-- app-store-share:end -->"
+APP_STORE_SHARE_BLOCK_RE = re.compile(
+    rf"\s*{re.escape(APP_STORE_SHARE_BLOCK_START)}.*?"
+    rf"{re.escape(APP_STORE_SHARE_BLOCK_END)}\s*",
+    flags=re.DOTALL,
+)
 APP_STORE_LINK_RE = re.compile(
     r"https://apps\.apple\.com/app/id(\d+)",
     flags=re.IGNORECASE,
@@ -112,10 +119,13 @@ def build_targets(
 
     live_ids = {APPSTORE[key] for key in live_keys}
     for path in _answer_pages(pages):
-        source = APP_STORE_QR_BLOCK_RE.sub(
+        source = APP_STORE_SHARE_BLOCK_RE.sub(
             "\n",
-            MOBILE_CTA_BLOCK_RE.sub(
-                "\n", BLOCK_RE.sub("\n", path.read_text(encoding="utf-8"))
+            APP_STORE_QR_BLOCK_RE.sub(
+                "\n",
+                MOBILE_CTA_BLOCK_RE.sub(
+                    "\n", BLOCK_RE.sub("\n", path.read_text(encoding="utf-8"))
+                ),
             ),
         )
         app_ids = set(APP_STORE_LINK_RE.findall(source))

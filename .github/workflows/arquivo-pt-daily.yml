@@ -1,0 +1,33 @@
+name: Daily Arquivo.pt archive
+
+on:
+  schedule:
+    - cron: "47 2 * * *"
+  workflow_dispatch:
+    inputs:
+      app:
+        description: Live app guide slug (optional)
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+concurrency:
+  group: arquivo-pt-archive
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Verify live-app rotation and bounded delivery
+        run: python3 .github/scripts/test_arquivo_pt_archive.py -q
+      - name: Archive one live app guide
+        env:
+          ARQUIVO_APP: ${{ inputs.app }}
+        run: python3 .github/scripts/arquivo_pt_archive.py

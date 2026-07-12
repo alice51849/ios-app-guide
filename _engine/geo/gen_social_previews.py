@@ -45,6 +45,21 @@ BLOCK_RE = re.compile(
     rf"\s*{re.escape(BLOCK_START)}.*?{re.escape(BLOCK_END)}\s*",
     flags=re.DOTALL,
 )
+HERO_START = "<!-- app-preview-hero:start -->"
+HERO_END = "<!-- app-preview-hero:end -->"
+HERO_RE = re.compile(
+    rf"\s*{re.escape(HERO_START)}.*?{re.escape(HERO_END)}\s*",
+    flags=re.DOTALL,
+)
+H1_RE = re.compile(r"<h1\b[^>]*>.*?</h1>", flags=re.IGNORECASE | re.DOTALL)
+HERO_STYLE = """<style>
+.iag-app-preview{margin:clamp(1rem,3vw,1.5rem) 0 clamp(1.5rem,4vw,2.25rem)}
+.iag-app-preview__link{display:block;position:relative;width:100%;max-width:1200px;margin:0 auto;overflow:hidden;border-radius:clamp(14px,2.2vw,24px);background:#0b1020;box-shadow:0 18px 50px rgba(15,23,42,.22);line-height:0}
+.iag-app-preview__link::after{content:"";position:absolute;inset:0;border:1px solid rgba(255,255,255,.28);border-radius:inherit;pointer-events:none}
+.iag-app-preview__link:focus-visible{outline:3px solid #2563eb;outline-offset:4px}
+.iag-app-preview__image{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+@media(hover:hover){.iag-app-preview__link:hover{box-shadow:0 22px 60px rgba(15,23,42,.3)}}
+</style>"""
 
 
 class _GuideMetadataParser(HTMLParser):
@@ -195,6 +210,85 @@ def oembed_document(title: str, image_url: str, site: str = SITE) -> dict[str, o
     }
 
 
+def primary_image_schema(
+    title: str,
+    description: str,
+    canonical: str,
+    image_url: str,
+    image_alt: str,
+) -> dict[str, object]:
+    return {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": f"{canonical}#webpage",
+        "url": canonical,
+        "name": title,
+        "description": description,
+        "inLanguage": "en",
+        "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "@id": f"{image_url}#primaryimage",
+            "contentUrl": image_url,
+            "url": image_url,
+            "width": CARD_SIZE[0],
+            "height": CARD_SIZE[1],
+            "encodingFormat": "image/jpeg",
+            "caption": image_alt,
+            "representativeOfPage": True,
+        },
+    }
+
+
+def _json_ld(document: dict[str, object]) -> str:
+    return json.dumps(
+        document, ensure_ascii=False, separators=(",", ":")
+    ).replace("</", "<\\/")
+
+
+def _hero_store_url(store_url: str) -> str:
+    parsed = urllib.parse.urlparse(store_url)
+    if (
+        parsed.scheme != "https"
+        or parsed.netloc != "apps.apple.com"
+        or not re.fullmatch(r"/app/id\d+", parsed.path)
+    ):
+        raise ValueError(f"Invalid App Store hero target: {store_url}")
+    return urllib.parse.urlunparse(
+        parsed._replace(query=urllib.parse.urlencode({"ct": "iag_hero"}), fragment="")
+    )
+
+
+def hero_block(
+    key: str,
+    app_name: str,
+    store_url: str,
+    site: str = SITE,
+) -> str:
+    image_url = f"{site}/social/img/{key}-share.jpg"
+    image_alt = f"{app_name} iOS app guide preview"
+    esc = lambda value: html.escape(str(value), quote=True)
+    return "\n".join(
+        (
+            HERO_START,
+            '<figure class="iag-app-preview">',
+            (
+                f'  <a class="iag-app-preview__link" '
+                f'href="{esc(_hero_store_url(store_url))}" '
+                f'aria-label="{esc(f"View {app_name} on the App Store")}">'
+            ),
+            (
+                f'    <img class="iag-app-preview__image" '
+                f'src="{esc(image_url)}" alt="{esc(image_alt)}" '
+                f'width="{CARD_SIZE[0]}" height="{CARD_SIZE[1]}" '
+                'loading="eager" decoding="async" fetchpriority="high">'
+            ),
+            "  </a>",
+            "</figure>",
+            HERO_END,
+        )
+    )
+
+
 def metadata_block(
     key: str,
     title: str,
@@ -206,6 +300,9 @@ def metadata_block(
     image_url = f"{site}/social/img/{key}-share.jpg"
     embed_url = oembed_url(key, canonical, site)
     image_alt = f"{app_name} iOS app guide preview"
+    schema = primary_image_schema(
+        title, description, canonical, image_url, image_alt
+    )
     esc = lambda value: html.escape(str(value), quote=True)
     lines = [
         BLOCK_START,
@@ -222,6 +319,10 @@ def metadata_block(
         '<meta property="og:locale" content="en_US">',
         '<meta property="og:site_name" content="iOS App Guide">',
         f'<meta name="robots" content="{ROBOTS_DIRECTIVE}">',
+        '<script type="application/ld+json" data-iag="primary-image">',
+        _json_ld(schema),
+        "</script>",
+        HERO_STYLE,
         '<meta name="twitter:card" content="summary_large_image">',
         f'<meta name="twitter:title" content="{esc(title)}">',
         f'<meta name="twitter:description" content="{esc(description)}">',
@@ -236,21 +337,42 @@ def metadata_block(
     return "\n".join(lines)
 
 
-def ensure_metadata(path: Path, block: str) -> bool:
+def ensure_guide(path: Path, metadata: str, hero: str) -> bool:
     source = path.read_text(encoding="utf-8")
     if "</head>" not in source:
         raise ValueError(f"Social preview guide has no closing head: {path}")
-    cleaned = BLOCK_RE.sub("\n", source)
+    cleaned = HERO_RE.sub("\n", BLOCK_RE.sub("\n", source))
+    if "primaryImageOfPage" in cleaned:
+        raise ValueError(
+            f"Guide already declares primaryImageOfPage outside generated block: {path}"
+        )
     feed_match = gen_linkset.FEED_DISCOVERY_RE.search(cleaned)
     insert_index = feed_match.start() if feed_match else cleaned.index("</head>")
-    updated = (
+    with_metadata = (
         cleaned[:insert_index].rstrip()
         + "\n"
-        + block
+        + metadata
         + "\n"
         + cleaned[insert_index:].lstrip()
     )
+    heading = H1_RE.search(with_metadata)
+    body_index = with_metadata.lower().find("<body")
+    if heading is None or body_index < 0 or heading.start() < body_index:
+        raise ValueError(f"Social preview guide has no body h1: {path}")
+    updated = (
+        with_metadata[: heading.end()].rstrip()
+        + "\n"
+        + hero
+        + "\n"
+        + with_metadata[heading.end() :].lstrip()
+    )
     return _write_text_if_changed(path, updated)
+
+
+def remove_generated_guide_content(path: Path) -> bool:
+    source = path.read_text(encoding="utf-8")
+    cleaned = HERO_RE.sub("\n", BLOCK_RE.sub("\n", source))
+    return source != cleaned and _write_text_if_changed(path, cleaned)
 
 
 def render_sitemap(keys: list[str], site: str = SITE) -> str:
@@ -317,7 +439,7 @@ def generate(
             )
         )
         changed += int(
-            ensure_metadata(
+            ensure_guide(
                 guide_path,
                 metadata_block(
                     key,
@@ -327,10 +449,15 @@ def generate(
                     record["name"],
                     site,
                 ),
+                hero_block(key, record["name"], record["store"], site),
             )
         )
 
     live_key_set = set(keys)
+    guides_dir = pages / "guides"
+    for stale in guides_dir.glob("*.html") if guides_dir.is_dir() else ():
+        if stale.stem not in live_key_set:
+            changed += int(remove_generated_guide_content(stale))
     for stale in image_dir.glob("*-share.jpg") if image_dir.is_dir() else ():
         if stale.name.removesuffix("-share.jpg") not in live_key_set:
             stale.unlink()
@@ -350,6 +477,7 @@ def generate(
         "cards": len(records),
         "oembed": len(records),
         "metadata_pages": len(records),
+        "hero_pages": len(records),
         "changed_files": changed,
     }
 
@@ -366,6 +494,7 @@ def main() -> None:
         f"{result['apps']} apps, {result['cards']} cards, "
         f"{result['oembed']} oEmbed responses, "
         f"{result['metadata_pages']} metadata pages, "
+        f"{result['hero_pages']} visible hero pages, "
         f"{result['changed_files']} files updated"
     )
 

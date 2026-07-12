@@ -512,7 +512,9 @@ class GeneratorTests(unittest.TestCase):
                 f'<link rel="alternate" hreflang="zh-Hant" href="{site}/zh-Hant/guides/lumibopomofo.html">'
                 f'<link rel="linkset" type="application/linkset+json" href="{site}/linkset.json">'
                 f'<link rel="alternate" type="application/atom+xml" href="{site}/feed.xml">'
-                "</head>",
+                "</head><body><main>"
+                "<h1>Lumi Bopomofo — Zhuyin for Kids</h1>"
+                "<p>Guide introduction.</p></main></body>",
                 encoding="utf-8",
             )
             localized.write_text("<head></head>", encoding="utf-8")
@@ -545,6 +547,14 @@ class GeneratorTests(unittest.TestCase):
             stale_oembed.parent.mkdir(parents=True)
             stale_card.write_bytes(b"stale")
             stale_oembed.write_text("{}", encoding="utf-8")
+            stale_guide = pages / "guides" / "stale.html"
+            stale_guide.write_text(
+                "<head><!-- social-preview:start -->old"
+                "<!-- social-preview:end --></head><body><main><h1>Stale</h1>"
+                "<!-- app-preview-hero:start -->old"
+                "<!-- app-preview-hero:end --></main></body>",
+                encoding="utf-8",
+            )
 
             first = gen_social_previews.generate(pages, {"lumibopomofo"})
             tracked = [
@@ -562,7 +572,8 @@ class GeneratorTests(unittest.TestCase):
                     "cards": 1,
                     "oembed": 1,
                     "metadata_pages": 1,
-                    "changed_files": 6,
+                    "hero_pages": 1,
+                    "changed_files": 7,
                 },
                 first,
             )
@@ -570,6 +581,9 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(mtimes, {path: path.stat().st_mtime_ns for path in tracked})
             self.assertFalse(stale_card.exists())
             self.assertFalse(stale_oembed.exists())
+            stale_source = stale_guide.read_text(encoding="utf-8")
+            self.assertNotIn(gen_social_previews.BLOCK_START, stale_source)
+            self.assertNotIn(gen_social_previews.HERO_START, stale_source)
             with Image.open(tracked[1]) as card:
                 self.assertEqual("JPEG", card.format)
                 self.assertEqual(gen_social_previews.CARD_SIZE, card.size)
@@ -592,6 +606,64 @@ class GeneratorTests(unittest.TestCase):
             )
             self.assertIn('name="twitter:card" content="summary_large_image"', source)
             self.assertIn('type="application/json+oembed"', source)
+            self.assertEqual(1, source.count(gen_social_previews.HERO_START))
+            self.assertEqual(1, source.count('class="iag-app-preview__image"'))
+            self.assertIn(
+                'href="https://apps.apple.com/app/id6773017109?ct=iag_hero"',
+                source,
+            )
+            self.assertIn(
+                'src="https://alice51849.github.io/ios-app-guide/social/img/'
+                'lumibopomofo-share.jpg"',
+                source,
+            )
+            self.assertIn(
+                'alt="Lumi Bopomofo iOS app guide preview" '
+                'width="1200" height="675" loading="eager" '
+                'decoding="async" fetchpriority="high"',
+                source,
+            )
+            self.assertIn("width:100%;height:auto;aspect-ratio:16/9", source)
+            self.assertLess(
+                source.index("</h1>"), source.index(gen_social_previews.HERO_START)
+            )
+            self.assertLess(
+                source.index(gen_social_previews.HERO_END),
+                source.index("<p>Guide introduction.</p>"),
+            )
+            self.assertNotIn(
+                gen_social_previews.HERO_START,
+                localized.read_text(encoding="utf-8"),
+            )
+            schemas = [
+                json.loads(payload)
+                for payload in re.findall(
+                    r'<script type="application/ld\+json" '
+                    r'data-iag="primary-image">\s*(.*?)\s*</script>',
+                    source,
+                    re.DOTALL,
+                )
+            ]
+            self.assertEqual(1, len(schemas))
+            schema = schemas[0]
+            self.assertEqual("WebPage", schema["@type"])
+            self.assertEqual(
+                f"{site}/guides/lumibopomofo.html#webpage", schema["@id"]
+            )
+            primary = schema["primaryImageOfPage"]
+            self.assertEqual("ImageObject", primary["@type"])
+            self.assertEqual(
+                f"{site}/social/img/lumibopomofo-share.jpg",
+                primary["contentUrl"],
+            )
+            self.assertEqual((1200, 675), (primary["width"], primary["height"]))
+            self.assertEqual("image/jpeg", primary["encodingFormat"])
+            self.assertTrue(primary["representativeOfPage"])
+            from rdflib import Graph
+
+            self.assertGreater(
+                len(Graph().parse(data=json.dumps(schema), format="json-ld")), 0
+            )
             self.assertIn(
                 "url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide"
                 "%2Fguides%2Flumibopomofo.html&amp;format=json",
@@ -624,6 +696,30 @@ class GeneratorTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "conflicting robots"):
                 gen_social_previews._guide_metadata(
                     conflicting, f"{site}/guides/conflicting.html"
+                )
+            duplicate_schema = pages / "guides" / "duplicate-schema.html"
+            duplicate_schema.write_text(
+                "<head><script type=\"application/ld+json\">"
+                '{"@context":"https://schema.org","@type":"WebPage",'
+                '"primaryImageOfPage":"https://example.com/image.jpg"}'
+                "</script></head><body><h1>Duplicate</h1></body>",
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(ValueError, "already declares"):
+                gen_social_previews.ensure_guide(
+                    duplicate_schema,
+                    gen_social_previews.metadata_block(
+                        "duplicate-schema",
+                        "Duplicate",
+                        "Duplicate",
+                        f"{site}/guides/duplicate-schema.html",
+                        "Duplicate",
+                    ),
+                    gen_social_previews.hero_block(
+                        "duplicate-schema",
+                        "Duplicate",
+                        "https://apps.apple.com/app/id123456789?ct=iag_linkset",
+                    ),
                 )
 
     def test_smart_app_banners_cover_localized_guides_and_prune_stale_tags(self):

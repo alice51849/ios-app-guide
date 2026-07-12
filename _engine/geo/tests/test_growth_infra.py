@@ -51,6 +51,7 @@ import gen_calculator
 import gen_cost_compare
 import gen_data_hub
 import gen_feed
+import gen_guide_design
 import gen_hubs
 import gen_image_sitemap
 import gen_linkset
@@ -831,6 +832,191 @@ class GeneratorTests(unittest.TestCase):
             )
             with self.assertRaisesRegex(ValueError, "app ID"):
                 gen_smart_app_banners.banner_block("not-an-id")
+
+    def test_premium_guide_design_covers_public_locales_and_prunes_stale_links(self):
+        with tempfile.TemporaryDirectory() as directory:
+            workspace = Path(directory)
+            pages = workspace / "site"
+            pages.mkdir()
+            linked_pages = workspace / "linked-site"
+            linked_pages.symlink_to(pages, target_is_directory=True)
+            guide = pages / "guides" / "lumibopomofo.html"
+            localized = pages / "zh-Hant" / "guides" / "lumibopomofo.html"
+            story = pages / "stories" / "lumibopomofo.html"
+            poster = pages / "stories" / "img" / "lumibopomofo-poster.jpg"
+            hub = pages / "hubs" / "lumibopomofo.html"
+            stale = pages / "fr-FR" / "guides" / "stale.html"
+            for path in (guide, localized, story, poster, hub, stale):
+                path.parent.mkdir(parents=True, exist_ok=True)
+            site = gen_guide_design.SITE
+            viewport = (
+                '<meta name="viewport" '
+                'content="width=device-width, initial-scale=1">'
+            )
+            guide.write_text(
+                "<head>"
+                f"{viewport}"
+                "<title>Lumi Bopomofo</title>"
+                f'<link rel="canonical" href="{site}/guides/lumibopomofo.html">'
+                f'<link rel="alternate" hreflang="en" href="{site}/guides/lumibopomofo.html">'
+                f'<link rel="alternate" hreflang="zh-Hant" href="{site}/zh-Hant/guides/lumibopomofo.html">'
+                "</head><body><main><h1>Lumi Bopomofo</h1>"
+                "<p>Guide introduction.</p></main></body>",
+                encoding="utf-8",
+            )
+            localized.write_text(
+                f"<head>{viewport}<title>注音</title></head>"
+                "<body><main><h1>注音</h1></main></body>",
+                encoding="utf-8",
+            )
+            story.write_text(
+                "<head>"
+                f'<link rel="canonical" href="{site}/stories/lumibopomofo.html">'
+                "</head><body>"
+                f'<amp-story poster-portrait-src="{site}/stories/img/lumibopomofo-poster.jpg">',
+                encoding="utf-8",
+            )
+            poster.write_bytes(b"poster")
+            hub.write_text("<head></head>", encoding="utf-8")
+            stale.write_text(
+                "<head>"
+                f"{gen_guide_design.BLOCK_START}"
+                '<link rel="stylesheet" href="/old/guide-premium-v1.css">'
+                f"{gen_guide_design.BLOCK_END}"
+                "</head><body>Stale</body>",
+                encoding="utf-8",
+            )
+            (pages / "index.html").write_text(
+                f'<head><link rel="canonical" href="{site}/index.html"></head>',
+                encoding="utf-8",
+            )
+            for relative in (
+                "feed.xml",
+                "rss.xml",
+                "feed.json",
+                "llms-full.txt",
+                "apps/index.html",
+            ):
+                path = pages / relative
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text("resource", encoding="utf-8")
+
+            with mock.patch.object(
+                gen_guide_design,
+                "live_app_keys",
+                return_value={"lumibopomofo"},
+            ) as live_lookup:
+                first = gen_guide_design.generate(linked_pages)
+                asset = pages / gen_guide_design.ASSET_RELATIVE
+                tracked = (guide, localized, stale, asset)
+                mtimes = {path: path.stat().st_mtime_ns for path in tracked}
+                second = gen_guide_design.generate(linked_pages)
+
+            self.assertEqual(
+                {
+                    "apps": 1,
+                    "guide_pages": 2,
+                    "languages": 2,
+                    "changed_files": 4,
+                },
+                first,
+            )
+            self.assertEqual(0, second["changed_files"])
+            self.assertEqual(2, live_lookup.call_count)
+            live_lookup.assert_called_with(
+                gen_guide_design.APPSTORE, str(linked_pages), refresh=False
+            )
+            self.assertEqual(
+                mtimes, {path: path.stat().st_mtime_ns for path in tracked}
+            )
+            href = gen_guide_design.stylesheet_href(site)
+            block = gen_guide_design.design_block(href)
+            for path in (guide, localized):
+                source = path.read_text(encoding="utf-8")
+                self.assertEqual(1, source.count(block))
+                self.assertLess(
+                    source.index(viewport) + len(viewport),
+                    source.index(gen_guide_design.BLOCK_START),
+                )
+            self.assertIn(
+                "<p>Guide introduction.</p>",
+                guide.read_text(encoding="utf-8"),
+            )
+            self.assertNotIn(
+                gen_guide_design.BLOCK_START,
+                stale.read_text(encoding="utf-8"),
+            )
+            css = asset.read_text(encoding="utf-8")
+            self.assertEqual(gen_guide_design.STYLESHEET, css)
+            for feature in (
+                "margin-inline",
+                "padding-inline",
+                "text-align: center",
+                "white-space: nowrap",
+                "text-overflow: ellipsis",
+                "unicode-bidi: plaintext",
+                ":focus-visible",
+                "@media screen and (prefers-color-scheme: dark)",
+                "prefers-reduced-motion: reduce",
+                "@media print",
+            ):
+                self.assertIn(feature, css)
+            print_css = css.split("@media print", 1)[1]
+            self.assertIn(
+                'main p > a[href^="https://apps.apple.com/app/id"]:visited',
+                print_css,
+            )
+            self.assertNotIn(".iag-app-preview__link", css)
+            self.assertNotIn("javascript", css.lower())
+
+            conflicting = pages / "guides" / "conflicting.html"
+            conflicting.write_text(
+                f"<head>{viewport}"
+                '<link rel="stylesheet" '
+                'href="/wrong/guide-premium-v1.css"></head>',
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(ValueError, "Conflicting"):
+                gen_guide_design.ensure_design(conflicting, href)
+
+            duplicate_viewport = pages / "guides" / "duplicate-viewport.html"
+            duplicate_viewport.write_text(
+                f"<head>{viewport}{viewport}</head>", encoding="utf-8"
+            )
+            with self.assertRaisesRegex(ValueError, "one viewport"):
+                gen_guide_design.ensure_design(duplicate_viewport, href)
+
+    def test_published_public_guides_share_one_premium_stylesheet(self):
+        pages = Path(GEO) / "pages"
+        live_keys = set(
+            gen_guide_design.live_app_keys(
+                gen_guide_design.APPSTORE, str(pages), refresh=False
+            )
+        )
+        targets, app_count = gen_smart_app_banners.build_targets(
+            pages, live_keys, gen_guide_design.SITE
+        )
+        self.assertGreaterEqual(app_count, 24)
+        self.assertGreaterEqual(len(targets), app_count)
+        self.assertEqual(
+            gen_guide_design.STYLESHEET,
+            (pages / gen_guide_design.ASSET_RELATIVE).read_text(
+                encoding="utf-8"
+            ),
+        )
+        block = gen_guide_design.design_block(
+            gen_guide_design.stylesheet_href()
+        )
+        linked = set()
+        for path in gen_smart_app_banners._guide_pages(pages):
+            source = path.read_text(encoding="utf-8")
+            if gen_guide_design.BLOCK_START in source:
+                linked.add(path)
+                self.assertEqual(1, source.count(block))
+                self.assertEqual(
+                    1, len(gen_guide_design.VIEWPORT_RE.findall(source))
+                )
+        self.assertEqual(set(targets), linked)
 
     def test_atom_feed_keeps_guides_and_free_tools_within_the_item_cap(self):
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(
@@ -10685,6 +10871,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_linkset.py",
             "gen_social_previews.py",
             "gen_smart_app_banners.py",
+            "gen_guide_design.py",
             "gen_llms.py --cached-live",
             "gen_feed.py",
         )
@@ -10742,6 +10929,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("gen_linkset.py", publish)
         self.assertIn("gen_social_previews.py", publish)
         self.assertIn("gen_smart_app_banners.py", publish)
+        self.assertIn("gen_guide_design.py", publish)
         self.assertIn("family_travel_mission_cards.py", publish)
         self.assertIn("family_travel_observation_passport.py", publish)
         self.assertIn("family_travel_opds_catalog.py", publish)
@@ -10795,6 +10983,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_linkset.py",
             "gen_social_previews.py",
             "gen_smart_app_banners.py",
+            "gen_guide_design.py",
             "gen_llms.py",
             "gen_feed.py",
         )

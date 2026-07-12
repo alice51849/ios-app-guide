@@ -194,6 +194,7 @@ jobs:
           python3 gen_linkset.py
           python3 gen_social_previews.py
           python3 gen_smart_app_banners.py
+          python3 gen_guide_design.py
           python3 gen_llms.py --cached-live
           python3 gen_feed.py
       - name: Unlink site dir

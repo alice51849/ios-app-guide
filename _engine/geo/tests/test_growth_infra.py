@@ -775,7 +775,7 @@ class GeneratorTests(unittest.TestCase):
                     ),
                 )
 
-    def test_smart_app_banners_cover_guides_and_buyer_intent_answers(self):
+    def test_smart_app_banners_cover_guides_localized_pages_and_answers(self):
         with tempfile.TemporaryDirectory() as directory:
             workspace = Path(directory)
             pages = workspace / "site"
@@ -784,6 +784,8 @@ class GeneratorTests(unittest.TestCase):
             linked_pages.symlink_to(pages, target_is_directory=True)
             guide = pages / "guides" / "lumibopomofo.html"
             localized = pages / "zh-Hant" / "guides" / "lumibopomofo.html"
+            localized_info = pages / "zh-Hant" / "lumibopomofo.html"
+            api_reference = pages / "api" / "lumibopomofo.html"
             story = pages / "stories" / "lumibopomofo.html"
             poster = pages / "stories" / "img" / "lumibopomofo-poster.jpg"
             hub = pages / "hubs" / "lumibopomofo.html"
@@ -797,6 +799,8 @@ class GeneratorTests(unittest.TestCase):
             for path in (
                 guide,
                 localized,
+                localized_info,
+                api_reference,
                 story,
                 poster,
                 hub,
@@ -821,6 +825,8 @@ class GeneratorTests(unittest.TestCase):
                 encoding="utf-8",
             )
             localized.write_text("<head></head>", encoding="utf-8")
+            localized_info.write_text("<head></head>", encoding="utf-8")
+            api_reference.write_text("<head></head>", encoding="utf-8")
             story.write_text(
                 "<head>"
                 f'<link rel="canonical" href="{site}/stories/lumibopomofo.html">'
@@ -888,6 +894,7 @@ class GeneratorTests(unittest.TestCase):
                 for path in (
                     guide,
                     localized,
+                    localized_info,
                     stale,
                     answer,
                     localized_answer,
@@ -902,10 +909,10 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(
                 {
                     "apps": 1,
-                    "guide_pages": 2,
+                    "guide_pages": 3,
                     "answer_pages": 2,
                     "languages": 2,
-                    "changed_files": 6,
+                    "changed_files": 7,
                 },
                 first,
             )
@@ -917,6 +924,7 @@ class GeneratorTests(unittest.TestCase):
                     for path in (
                         guide,
                         localized,
+                        localized_info,
                         stale,
                         answer,
                         localized_answer,
@@ -926,7 +934,13 @@ class GeneratorTests(unittest.TestCase):
                 },
             )
             banner = gen_smart_app_banners.banner_block("6773017109")
-            for path in (guide, localized, answer, localized_answer):
+            for path in (
+                guide,
+                localized,
+                localized_info,
+                answer,
+                localized_answer,
+            ):
                 source = path.read_text(encoding="utf-8")
                 self.assertEqual(1, source.count(banner))
                 self.assertNotIn("app-argument", source)
@@ -950,6 +964,18 @@ class GeneratorTests(unittest.TestCase):
             self.assertNotIn(
                 gen_smart_app_banners.BLOCK_START,
                 ambiguous_answer.read_text(encoding="utf-8"),
+            )
+            self.assertNotIn(
+                gen_smart_app_banners.BLOCK_START,
+                story.read_text(encoding="utf-8"),
+            )
+            self.assertNotIn(
+                gen_smart_app_banners.BLOCK_START,
+                hub.read_text(encoding="utf-8"),
+            )
+            self.assertNotIn(
+                gen_smart_app_banners.BLOCK_START,
+                api_reference.read_text(encoding="utf-8"),
             )
             with self.assertRaisesRegex(ValueError, "app ID"):
                 gen_smart_app_banners.banner_block("not-an-id")

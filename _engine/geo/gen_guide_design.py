@@ -473,9 +473,8 @@ def generate(
     for path in sorted(all_guides - set(targets)):
         changed += int(remove_design(path))
 
-    pages_root = pages.resolve()
     languages = {
-        "en" if path.parent.parent == pages_root else path.parent.parent.name
+        gen_smart_app_banners._page_language(path, pages)
         for path in targets
     }
     return {

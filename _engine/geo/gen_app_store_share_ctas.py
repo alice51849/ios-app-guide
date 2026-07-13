@@ -273,7 +273,7 @@ def generate(
         raise ValueError(f"Live apps have no native App Store share action: {missing}")
 
     languages = {
-        "en" if path.parent.parent == pages.resolve() else path.parent.parent.name
+        gen_smart_app_banners._page_language(path, pages)
         for path in installed
     }
     return {

@@ -56,6 +56,8 @@ APP_STORE_LINK_RE = re.compile(
     r"https://apps\.apple\.com/app/id(\d+)",
     flags=re.IGNORECASE,
 )
+LOCALE_DIRECTORY_RE = re.compile(r"[a-z]{2,3}(?:-[A-Za-z]{2,4})?")
+RESERVED_TOP_LEVEL_DIRS = {"api"}
 
 
 def _app_id(store_url: str) -> str:
@@ -117,6 +119,16 @@ def build_targets(
                 f"Public app has no Smart App Banner guide pages: {record['key']}"
             )
 
+    for path in _localized_app_pages(pages, live_keys):
+        app_id = APPSTORE[path.stem]
+        existing = targets.get(path)
+        if existing and existing != app_id:
+            raise ValueError(
+                f"Conflicting Smart App Banner app IDs for {path}: "
+                f"{existing}, {app_id}"
+            )
+        targets[path] = app_id
+
     live_ids = {APPSTORE[key] for key in live_keys}
     for path in _answer_pages(pages):
         source = APP_STORE_SHARE_BLOCK_RE.sub(
@@ -164,6 +176,22 @@ def ensure_banner(path: Path, app_id: str) -> bool:
     return _write_if_changed(path, updated)
 
 
+def _localized_app_pages(pages: Path, app_keys: set[str]) -> set[Path]:
+    paths: set[Path] = set()
+    for child in pages.iterdir():
+        if (
+            not child.is_dir()
+            or child.name in RESERVED_TOP_LEVEL_DIRS
+            or not LOCALE_DIRECTORY_RE.fullmatch(child.name)
+        ):
+            continue
+        for key in app_keys:
+            path = child / f"{key}.html"
+            if path.is_file():
+                paths.add(path.resolve())
+    return paths
+
+
 def _guide_pages(pages: Path) -> set[Path]:
     paths = {path.resolve() for path in (pages / "guides").glob("*.html")}
     for child in pages.iterdir():
@@ -172,6 +200,7 @@ def _guide_pages(pages: Path) -> set[Path]:
         guides = child / "guides"
         if guides.is_dir():
             paths.update(path.resolve() for path in guides.glob("*.html"))
+    paths.update(_localized_app_pages(pages, set(APPSTORE)))
     return paths
 
 
@@ -201,6 +230,14 @@ def _write_if_changed(path: Path, content: str) -> bool:
     return True
 
 
+def _page_language(path: Path, pages: Path) -> str:
+    pages_root = pages.resolve()
+    if path.parent.name in {"answers", "guides"}:
+        container = path.parent.parent
+        return "en" if container == pages_root else container.name
+    return path.parent.name
+
+
 def generate(
     pages: Path = PAGES,
     live_keys: set[str] | None = None,
@@ -220,11 +257,7 @@ def generate(
         if BLOCK_RE.search(source):
             changed += int(_write_if_changed(path, BLOCK_RE.sub("\n", source)))
 
-    pages_root = pages.resolve()
-    languages = {
-        "en" if path.parent.parent == pages_root else path.parent.parent.name
-        for path in targets
-    }
+    languages = {_page_language(path, pages) for path in targets}
     return {
         "apps": app_count,
         "guide_pages": len(set(targets) & guide_pages),

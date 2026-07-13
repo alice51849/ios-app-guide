@@ -11871,6 +11871,25 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("### Sleep & focus", sereno)
         self.assertNotIn("### sleep-sound", sereno)
 
+    def test_llms_full_links_only_existing_localized_app_guides(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale in ("en-US", "ja", "ko", "fr-FR"):
+                (pages / locale).mkdir()
+            for locale in ("en-US", "ja", "ko"):
+                (pages / locale / "aim990.html").write_text(
+                    locale, encoding="utf-8"
+                )
+            with mock.patch.object(gen_llms, "PAGES", str(pages)):
+                full = gen_llms.build_llms_full({}, {"aim990"})
+
+        canonical = f"{gen_llms.SITE}/en-US/aim990.html"
+        self.assertEqual(1, full.count(canonical))
+        self.assertIn("- Localized app guides:", full)
+        self.assertIn(f"- [ja]({gen_llms.SITE}/ja/aim990.html)", full)
+        self.assertIn(f"- [ko]({gen_llms.SITE}/ko/aim990.html)", full)
+        self.assertNotIn(f"{gen_llms.SITE}/fr-FR/aim990.html", full)
+
     def test_topic_hub_has_no_fake_zero_price_and_links_script_locales(self):
         hub = gen_hubs.build_hub("lumibopomofo")
         self.assertNotIn('"price":"0"', hub)

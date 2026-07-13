@@ -603,6 +603,20 @@ def _resource_files(directory, live_keys, prefix):
     return rows
 
 
+def _localized_app_guides(key):
+    if not os.path.isdir(PAGES):
+        return []
+    rows = []
+    for locale in sorted(os.listdir(PAGES)):
+        if locale == "en-US" or not re.fullmatch(
+            r"[a-z]{2}(?:-(?:[A-Z]{2}|[A-Z][a-z]{3}))?", locale
+        ):
+            continue
+        if os.path.isfile(os.path.join(PAGES, locale, f"{key}.html")):
+            rows.append((locale, f"{SITE}/{locale}/{key}.html"))
+    return rows
+
+
 def build_llms_full(comp_map, live_keys):
     lines = [
         "# Lumi & friends — full AI crawler index",
@@ -711,6 +725,13 @@ def build_llms_full(comp_map, live_keys):
             detail = os.path.join(PAGES, "en-US", f"{key}.html")
             if os.path.exists(detail):
                 lines.append(f"- Canonical app guide: {SITE}/en-US/{key}.html")
+            localized_guides = _localized_app_guides(key)
+            if localized_guides:
+                lines.append("- Localized app guides:")
+                lines.extend(
+                    f"  - [{locale}]({url})"
+                    for locale, url in localized_guides
+                )
             hub = os.path.join(PAGES, "hubs", f"{key}.html")
             if os.path.exists(hub):
                 lines.append(f"- Topic hub: {SITE}/hubs/{key}.html")

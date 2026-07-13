@@ -59,6 +59,7 @@ import gen_hubs
 import gen_image_sitemap
 import gen_linkset
 import gen_llms
+import gen_mobile_app_identity
 import gen_mobile_store_ctas
 import gen_roundups
 import gen_social_previews
@@ -1286,6 +1287,165 @@ class GeneratorTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "site URL"):
                 gen_app_store_qr_ctas._site_asset_href(
                     "javascript:alert(1)", Path("asset.css")
+                )
+
+    def test_mobile_app_identity_is_canonical_complete_and_idempotent(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            existing = root / "existing.html"
+            missing = root / "missing.html"
+            app_id = "6773017109"
+            campaign_url = (
+                "https://apps.apple.com/app/id6773017109?ct=buyer-guide"
+            )
+            existing.write_text(
+                '<html lang="zh-Hant"><head>'
+                '<script type="application/ld+json">'
+                '{"@context":"https://schema.org","@type":"Article",'
+                '"headline":"Guide"}</script>'
+                '<script type="application/ld+json">'
+                '{"@context":"https://schema.org",'
+                '"@type":"SoftwareApplication","name":"Lumi Bopomofo",'
+                f'"url":"{campaign_url}","installUrl":"{campaign_url}",'
+                '"inLanguage":"zh-Hant",'
+                '"sameAs":"https://example.com/lumi-bopomofo",'
+                '"identifier":"legacy-id"}</script>'
+                "</head><body></body></html>",
+                encoding="utf-8",
+            )
+            missing.write_text(
+                '<html lang="en"><head>'
+                '<script type="application/ld+json">'
+                '{"@context":"https://schema.org","@type":"Article",'
+                '"headline":"Buyer guide"}</script>'
+                "</head><body>"
+                f'<a href="{campaign_url}">App Store</a>'
+                "</body></html>",
+                encoding="utf-8",
+            )
+
+            self.assertEqual(
+                (True, 1, False),
+                gen_mobile_app_identity.ensure_mobile_identity(
+                    existing,
+                    app_id,
+                    "Lumi Bopomofo",
+                    "kids",
+                ),
+            )
+            existing_mtime = existing.stat().st_mtime_ns
+            self.assertEqual(
+                (False, 1, False),
+                gen_mobile_app_identity.ensure_mobile_identity(
+                    existing,
+                    app_id,
+                    "Lumi Bopomofo",
+                    "kids",
+                ),
+            )
+            self.assertEqual(existing_mtime, existing.stat().st_mtime_ns)
+
+            documents = [
+                json.loads(match.group("body"))
+                for match in gen_mobile_app_identity.JSON_LD_RE.finditer(
+                    existing.read_text(encoding="utf-8")
+                )
+            ]
+            app_schema = next(
+                document
+                for document in documents
+                if document.get("@type") == "MobileApplication"
+            )
+            canonical = "https://apps.apple.com/app/id6773017109"
+            self.assertEqual(canonical, app_schema["@id"])
+            self.assertEqual(canonical, app_schema["url"])
+            self.assertEqual(canonical, app_schema["installUrl"])
+            self.assertEqual(
+                "https://example.com/lumi-bopomofo",
+                app_schema["sameAs"],
+            )
+            self.assertEqual(
+                "Apple App Store ID",
+                app_schema["identifier"][-1]["propertyID"],
+            )
+            self.assertEqual(app_id, app_schema["identifier"][-1]["value"])
+            self.assertNotIn("inLanguage", app_schema)
+            for unsupported in (
+                "offers",
+                "aggregateRating",
+                "review",
+                "downloadUrl",
+            ):
+                self.assertNotIn(unsupported, app_schema)
+
+            self.assertEqual(
+                (True, 1, True),
+                gen_mobile_app_identity.ensure_mobile_identity(
+                    missing,
+                    app_id,
+                    "Lumi Bopomofo",
+                    "kids",
+                ),
+            )
+            inserted_mtime = missing.stat().st_mtime_ns
+            self.assertEqual(
+                (False, 1, False),
+                gen_mobile_app_identity.ensure_mobile_identity(
+                    missing,
+                    app_id,
+                    "Lumi Bopomofo",
+                    "kids",
+                ),
+            )
+            self.assertEqual(inserted_mtime, missing.stat().st_mtime_ns)
+            inserted_source = missing.read_text(encoding="utf-8")
+            self.assertEqual(1, inserted_source.count("MobileApplication"))
+            self.assertNotIn('"inLanguage"', inserted_source)
+            self.assertNotIn('"sameAs"', inserted_source)
+            self.assertNotIn('"offers"', inserted_source)
+            with self.assertRaisesRegex(ValueError, "App Store ID"):
+                gen_mobile_app_identity.canonical_store_url("not-an-id")
+
+            conflicting = root / "conflicting.html"
+            conflicting.write_text(
+                "<head><script type=\"application/ld+json\">"
+                '{"@context":"https://schema.org",'
+                '"@type":"MobileApplication","name":"Wrong",'
+                '"url":"https://apps.apple.com/app/id6781808054"}'
+                "</script></head>",
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(ValueError, "Conflicting App Store IDs"):
+                gen_mobile_app_identity.ensure_mobile_identity(
+                    conflicting,
+                    app_id,
+                    "Lumi Bopomofo",
+                    "kids",
+                )
+
+            duplicate = root / "duplicate.html"
+            identity = json.dumps(
+                gen_mobile_app_identity.mobile_app_schema(
+                    app_id,
+                    "Lumi Bopomofo",
+                    "kids",
+                )
+            )
+            duplicate.write_text(
+                "<head>"
+                f'<script type="application/ld+json">{identity}</script>'
+                f'<script type="application/ld+json">{identity}</script>'
+                "</head>",
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(
+                ValueError, "Duplicate MobileApplication identities"
+            ):
+                gen_mobile_app_identity.ensure_mobile_identity(
+                    duplicate,
+                    app_id,
+                    "Lumi Bopomofo",
+                    "kids",
                 )
 
     def test_native_app_store_sharing_is_direct_localized_and_progressive(self):
@@ -11688,6 +11848,8 @@ class GeneratorTests(unittest.TestCase):
             "gen_app_catalog.py",
             "cleanup_localized_assets.py --cached-live",
             "zhuyin_resourcesync.py",
+            "aeo_answers.py --cached-live --limit 0",
+            "gen_mobile_app_identity.py",
         )
         workflow_positions = [refresh_block.index(item) for item in workflow_chain]
         self.assertEqual(sorted(workflow_positions), workflow_positions)
@@ -11696,6 +11858,7 @@ class GeneratorTests(unittest.TestCase):
             refresh_block.rindex("zhuyin_resourcesync.py"),
         )
         self.assertEqual(2, workflow.count("zhuyin_resourcesync.py"))
+        self.assertEqual(3, workflow.count("gen_mobile_app_identity.py"))
         final_cleanup_block = workflow.split(
             "- name: Final link and availability cleanup", 1
         )[1].split("- name: Unlink site dir", 1)[0]
@@ -11706,6 +11869,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_linkset.py",
             "gen_social_previews.py",
             "gen_smart_app_banners.py",
+            "gen_mobile_app_identity.py",
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",
@@ -11767,6 +11931,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("gen_linkset.py", publish)
         self.assertIn("gen_social_previews.py", publish)
         self.assertIn("gen_smart_app_banners.py", publish)
+        self.assertIn("gen_mobile_app_identity.py", publish)
         self.assertIn("gen_mobile_store_ctas.py", publish)
         self.assertIn("gen_app_store_qr_ctas.py", publish)
         self.assertIn("gen_app_store_share_ctas.py", publish)
@@ -11824,6 +11989,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_linkset.py",
             "gen_social_previews.py",
             "gen_smart_app_banners.py",
+            "gen_mobile_app_identity.py",
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",

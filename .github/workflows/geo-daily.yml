@@ -58,6 +58,7 @@ jobs:
           python3 gen_linkset.py
           python3 gen_social_previews.py
           python3 gen_smart_app_banners.py
+          python3 gen_mobile_app_identity.py
           python3 gen_mobile_store_ctas.py
           python3 gen_app_store_qr_ctas.py
           python3 gen_app_store_share_ctas.py
@@ -162,6 +163,7 @@ jobs:
           python3 cleanup_localized_assets.py --cached-live
           python3 zhuyin_resourcesync.py
           python3 aeo_answers.py --cached-live --limit 0
+          python3 gen_mobile_app_identity.py
       - name: Commit English content first (fast, before slow localization)
         run: |
           git config user.name "github-actions[bot]"
@@ -212,6 +214,7 @@ jobs:
           python3 gen_linkset.py
           python3 gen_social_previews.py
           python3 gen_smart_app_banners.py
+          python3 gen_mobile_app_identity.py
           python3 gen_mobile_store_ctas.py
           python3 gen_app_store_qr_ctas.py
           python3 gen_app_store_share_ctas.py

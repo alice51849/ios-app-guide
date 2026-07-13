@@ -1294,15 +1294,27 @@ class GeneratorTests(unittest.TestCase):
             root = Path(directory)
             existing = root / "existing.html"
             missing = root / "missing.html"
+            localized_answer = root / "localized-answer.html"
             app_id = "6773017109"
+            site = gen_smart_app_banners.SITE
+            existing_url = f"{site}/zh-Hant/lumibopomofo.html"
+            missing_url = (
+                f"{site}/answers/best-bopomofo-app-for-kids.html"
+            )
             campaign_url = (
                 "https://apps.apple.com/app/id6773017109?ct=buyer-guide"
             )
             existing.write_text(
                 '<html lang="zh-Hant"><head>'
+                f'<link rel="canonical" href="{existing_url}">'
                 '<script type="application/ld+json">'
                 '{"@context":"https://schema.org","@type":"Article",'
                 '"headline":"Guide"}</script>'
+                '<script type="application/ld+json">'
+                '{"@context":"https://schema.org","@type":"WebPage",'
+                f'"@id":"{existing_url}#webpage","url":"{existing_url}",'
+                '"primaryImageOfPage":{"@type":"ImageObject",'
+                '"contentUrl":"https://example.com/preview.jpg"}}</script>'
                 '<script type="application/ld+json">'
                 '{"@context":"https://schema.org",'
                 '"@type":"SoftwareApplication","name":"Lumi Bopomofo",'
@@ -1315,12 +1327,31 @@ class GeneratorTests(unittest.TestCase):
             )
             missing.write_text(
                 '<html lang="en"><head>'
+                f'<link rel="canonical" href="{missing_url}">'
                 '<script type="application/ld+json">'
                 '{"@context":"https://schema.org","@type":"Article",'
                 '"headline":"Buyer guide"}</script>'
                 "</head><body>"
                 f'<a href="{campaign_url}">App Store</a>'
                 "</body></html>",
+                encoding="utf-8",
+            )
+            localized_answer_url = (
+                f"{site}/zh-Hant/answers/"
+                "best-bopomofo-app-for-kids.html"
+            )
+            localized_answer.write_text(
+                '<html lang="zh-Hant"><head>'
+                f'<link rel="canonical" href="{localized_answer_url}">'
+                '<script type="application/ld+json">'
+                f'{json.dumps(gen_mobile_app_identity.mobile_app_schema(app_id, "Lumi Bopomofo", "kids"))}'
+                "</script>"
+                '<script type="application/ld+json">'
+                '{"@context":"https://schema.org","@type":"WebPage",'
+                f'"@id":"{missing_url}#webpage","url":"{missing_url}",'
+                f'"mainEntity":{{"@id":"{missing_url}#faq"}}'
+                "}"
+                "</script></head><body></body></html>",
                 encoding="utf-8",
             )
 
@@ -1361,6 +1392,10 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(canonical, app_schema["url"])
             self.assertEqual(canonical, app_schema["installUrl"])
             self.assertEqual(
+                {"@id": f"{existing_url}#webpage"},
+                app_schema["mainEntityOfPage"],
+            )
+            self.assertEqual(
                 "https://example.com/lumi-bopomofo",
                 app_schema["sameAs"],
             )
@@ -1377,6 +1412,43 @@ class GeneratorTests(unittest.TestCase):
                 "downloadUrl",
             ):
                 self.assertNotIn(unsupported, app_schema)
+            webpage_schema = next(
+                document
+                for document in documents
+                if document.get("@type") == "WebPage"
+            )
+            self.assertEqual(
+                {
+                    "@type": "ImageObject",
+                    "contentUrl": "https://example.com/preview.jpg",
+                },
+                webpage_schema["primaryImageOfPage"],
+            )
+            self.assertEqual(
+                {"@id": canonical},
+                webpage_schema["mainEntity"],
+            )
+            self.assertEqual(existing_url, webpage_schema["url"])
+            self.assertEqual("zh-Hant", webpage_schema["inLanguage"])
+            translatable: list[str] = []
+            aeo_answers_i18n.collect_json_strings(
+                [app_schema, webpage_schema],
+                translatable,
+            )
+            self.assertNotIn(canonical, translatable)
+            self.assertNotIn(f"{existing_url}#webpage", translatable)
+            localized = aeo_answers_i18n.update_json_language(
+                json.loads(json.dumps([app_schema, webpage_schema])),
+                "zh-Hant",
+            )
+            self.assertEqual(
+                {"@id": f"{existing_url}#webpage"},
+                localized[0]["mainEntityOfPage"],
+            )
+            self.assertEqual(
+                {"@id": canonical},
+                localized[1]["mainEntity"],
+            )
 
             self.assertEqual(
                 (True, 1, True),
@@ -1400,19 +1472,151 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(inserted_mtime, missing.stat().st_mtime_ns)
             inserted_source = missing.read_text(encoding="utf-8")
             self.assertEqual(1, inserted_source.count("MobileApplication"))
-            self.assertNotIn('"inLanguage"', inserted_source)
+            self.assertEqual(1, inserted_source.count('"@type": "WebPage"'))
+            self.assertIn(
+                f'"@id": "{missing_url}#webpage"',
+                inserted_source,
+            )
+            self.assertIn(
+                f'"mentions": {{\n    "@id": "{canonical}"',
+                inserted_source,
+            )
+            inserted_documents = [
+                json.loads(match.group("body"))
+                for match in gen_mobile_app_identity.JSON_LD_RE.finditer(
+                    inserted_source
+                )
+            ]
+            inserted_app = next(
+                document
+                for document in inserted_documents
+                if document.get("@type") == "MobileApplication"
+            )
+            inserted_webpage = next(
+                document
+                for document in inserted_documents
+                if document.get("@type") == "WebPage"
+            )
+            self.assertNotIn("inLanguage", inserted_app)
+            self.assertNotIn("mainEntityOfPage", inserted_app)
+            self.assertEqual("en", inserted_webpage["inLanguage"])
+            self.assertEqual(
+                {"@id": canonical},
+                inserted_webpage["mentions"],
+            )
             self.assertNotIn('"sameAs"', inserted_source)
             self.assertNotIn('"offers"', inserted_source)
+            self.assertEqual(
+                (True, 1, False),
+                gen_mobile_app_identity.ensure_mobile_identity(
+                    localized_answer,
+                    app_id,
+                    "Lumi Bopomofo",
+                    "kids",
+                ),
+            )
+            localized_mtime = localized_answer.stat().st_mtime_ns
+            self.assertEqual(
+                (False, 1, False),
+                gen_mobile_app_identity.ensure_mobile_identity(
+                    localized_answer,
+                    app_id,
+                    "Lumi Bopomofo",
+                    "kids",
+                ),
+            )
+            self.assertEqual(
+                localized_mtime,
+                localized_answer.stat().st_mtime_ns,
+            )
+            localized_documents = [
+                json.loads(match.group("body"))
+                for match in gen_mobile_app_identity.JSON_LD_RE.finditer(
+                    localized_answer.read_text(encoding="utf-8")
+                )
+            ]
+            localized_app = next(
+                document
+                for document in localized_documents
+                if document.get("@type") == "MobileApplication"
+            )
+            localized_webpage = next(
+                document
+                for document in localized_documents
+                if document.get("@type") == "WebPage"
+            )
+            self.assertNotIn("mainEntityOfPage", localized_app)
+            self.assertEqual(
+                f"{localized_answer_url}#webpage",
+                localized_webpage["@id"],
+            )
+            self.assertEqual(
+                localized_answer_url,
+                localized_webpage["url"],
+            )
+            self.assertEqual(
+                {"@id": f"{missing_url}#faq"},
+                localized_webpage["mainEntity"],
+            )
+            self.assertEqual(
+                {"@id": canonical},
+                localized_webpage["mentions"],
+            )
+            stale_answer_relation = {
+                "@type": "WebPage",
+                "@id": f"{missing_url}#webpage",
+                "url": missing_url,
+                "mainEntity": {"@id": canonical},
+            }
+            gen_mobile_app_identity._upgrade_webpage(
+                stale_answer_relation,
+                missing_url,
+                "en",
+                app_id,
+                "mentions",
+                site,
+            )
+            self.assertNotIn("mainEntity", stale_answer_relation)
+            self.assertEqual(
+                {"@id": canonical},
+                stale_answer_relation["mentions"],
+            )
+            stale_app_relation = {
+                "@type": "WebPage",
+                "@id": f"{existing_url}#webpage",
+                "url": existing_url,
+                "mentions": [
+                    {"@id": canonical},
+                    {"@id": "https://example.com/related"},
+                ],
+            }
+            gen_mobile_app_identity._upgrade_webpage(
+                stale_app_relation,
+                existing_url,
+                "zh-Hant",
+                app_id,
+                "mainEntity",
+                site,
+            )
+            self.assertEqual(
+                {"@id": canonical},
+                stale_app_relation["mainEntity"],
+            )
+            self.assertEqual(
+                {"@id": "https://example.com/related"},
+                stale_app_relation["mentions"],
+            )
             with self.assertRaisesRegex(ValueError, "App Store ID"):
                 gen_mobile_app_identity.canonical_store_url("not-an-id")
 
             conflicting = root / "conflicting.html"
             conflicting.write_text(
-                "<head><script type=\"application/ld+json\">"
+                f'<html lang="en"><head><link rel="canonical" '
+                f'href="{missing_url}"><script type="application/ld+json">'
                 '{"@context":"https://schema.org",'
                 '"@type":"MobileApplication","name":"Wrong",'
                 '"url":"https://apps.apple.com/app/id6781808054"}'
-                "</script></head>",
+                "</script></head></html>",
                 encoding="utf-8",
             )
             with self.assertRaisesRegex(ValueError, "Conflicting App Store IDs"):
@@ -1432,10 +1636,11 @@ class GeneratorTests(unittest.TestCase):
                 )
             )
             duplicate.write_text(
-                "<head>"
+                f'<html lang="en"><head><link rel="canonical" '
+                f'href="{missing_url}">'
                 f'<script type="application/ld+json">{identity}</script>'
                 f'<script type="application/ld+json">{identity}</script>'
-                "</head>",
+                "</head></html>",
                 encoding="utf-8",
             )
             with self.assertRaisesRegex(
@@ -1443,6 +1648,57 @@ class GeneratorTests(unittest.TestCase):
             ):
                 gen_mobile_app_identity.ensure_mobile_identity(
                     duplicate,
+                    app_id,
+                    "Lumi Bopomofo",
+                    "kids",
+                )
+
+            webpage_conflict = root / "webpage-conflict.html"
+            conflict_url = f"{site}/guides/conflict.html"
+            webpage_conflict.write_text(
+                f'<html lang="en"><head><link rel="canonical" '
+                f'href="{conflict_url}">'
+                '<script type="application/ld+json">'
+                f'{json.dumps(gen_mobile_app_identity.mobile_app_schema(app_id, "Lumi Bopomofo", "kids"))}'
+                "</script>"
+                '<script type="application/ld+json">'
+                '{"@context":"https://schema.org","@type":"WebPage",'
+                f'"@id":"{conflict_url}#webpage","url":"{conflict_url}",'
+                '"mainEntity":{"@id":"https://example.com/other"}}'
+                "</script></head></html>",
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(
+                ValueError, "Conflicting WebPage mainEntity"
+            ):
+                gen_mobile_app_identity.ensure_mobile_identity(
+                    webpage_conflict,
+                    app_id,
+                    "Lumi Bopomofo",
+                    "kids",
+                )
+
+            webpage_identity_conflict = root / "webpage-identity-conflict.html"
+            webpage_identity_conflict.write_text(
+                f'<html lang="en"><head><link rel="canonical" '
+                f'href="{conflict_url}">'
+                '<script type="application/ld+json">'
+                f'{json.dumps(gen_mobile_app_identity.mobile_app_schema(app_id, "Lumi Bopomofo", "kids"))}'
+                "</script>"
+                '<script type="application/ld+json">'
+                '{"@context":"https://schema.org","@type":"WebPage",'
+                f'"@id":"{site}/guides/other.html#webpage",'
+                f'"url":"{site}/guides/other.html",'
+                f'"mainEntity":{{"@id":"{canonical}"}}'
+                "}"
+                "</script></head></html>",
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(
+                ValueError, "Conflicting WebPage identity"
+            ):
+                gen_mobile_app_identity.ensure_mobile_identity(
+                    webpage_identity_conflict,
                     app_id,
                     "Lumi Bopomofo",
                     "kids",

@@ -51,6 +51,7 @@ jobs:
       - name: Materialize newly live app surfaces
         run: |
           cd _engine/geo
+          python3 build_pages_i18n.py --cached-live
           python3 ensure_live_guides.py
           python3 gen_webstories.py
           python3 gen_image_sitemap.py

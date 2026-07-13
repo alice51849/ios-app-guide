@@ -11574,9 +11574,17 @@ class GeneratorTests(unittest.TestCase):
             Path(GEO) / "pages" / ".github" / "workflows" / "geo-daily.yml"
         ).read_text(encoding="utf-8")
         self.assertEqual(1, workflow.count("refresh=True"))
+        self.assertIn("build_pages_i18n.py --cached-live", workflow)
         self.assertIn("aeo_answers.py --cached-live", workflow)
         self.assertIn("aeo_pages.py --cached-live", workflow)
         self.assertIn("gen_llms.py --cached-live", workflow)
+        materialize_block = workflow.split(
+            "- name: Materialize newly live app surfaces", 1
+        )[1].split("- name: Verify zero-cost growth infrastructure", 1)[0]
+        self.assertLess(
+            materialize_block.index("build_pages_i18n.py --cached-live"),
+            materialize_block.index("ensure_live_guides.py"),
+        )
         self.assertIn("zhuyin_picture_book_club_kit.py", workflow)
         self.assertIn("zhuyin_parent_teacher_handoff_kit.py", workflow)
         self.assertIn("zhuyin_library_storytime_kit.py", workflow)

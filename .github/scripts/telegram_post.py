@@ -13,10 +13,8 @@ from social_post_common import (
     RequestError,
     canonical_app_store_url,
     channel_candidates,
-    filter_reachable_pool,
     footer_for,
     request_json,
-    validate_url,
 )
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -116,10 +114,9 @@ def compose_text(item):
 
 
 def pick_postable(pool, now=None):
-    live_pool = filter_reachable_pool(
-        pool, validator=validate_url, label="Telegram"
-    )
-    return candidates(live_pool, now)[0]
+    # load_pool() only contains apps from the verified live linkset. Avoid
+    # probing the full portfolio again and tripping Apple's HTTP 429 limit.
+    return candidates(pool, now)[0]
 
 
 def _send_message(token, chat, text):

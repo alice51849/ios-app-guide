@@ -191,7 +191,7 @@ class FooterAndSelectionTests(unittest.TestCase):
                     self.assertNotIn("買斷", footer)
                     self.assertNotIn("訂閱", footer)
 
-    def test_confirmed_404_skips_to_the_next_telegram_item(self):
+    def test_single_post_selection_does_not_probe_every_app_store_url(self):
         now = dt.datetime(2026, 1, 1, 1, tzinfo=dt.timezone.utc)
         pool = [
             {
@@ -202,18 +202,18 @@ class FooterAndSelectionTests(unittest.TestCase):
             }
             for index in range(8)
         ]
-        expected = telegram_post.candidates(pool[1:], now)[0]
+        expected = telegram_post.candidates(pool, now)[0]
         with mock.patch.object(
-            telegram_post,
-            "validate_url",
-            side_effect=lambda url: not url.endswith("7000000000"),
-        ) as validator:
+            urllib.request,
+            "urlopen",
+            side_effect=AssertionError("selection must not make HTTP requests"),
+        ) as opener:
             selected = telegram_post.pick_postable(pool, now)
         self.assertEqual(
             common.item_key(expected),
             common.item_key(selected),
         )
-        self.assertEqual(8, validator.call_count)
+        opener.assert_not_called()
 
     def test_dead_apps_preserve_unique_cross_channel_assignments(self):
         pool = [
@@ -269,12 +269,19 @@ class FooterAndSelectionTests(unittest.TestCase):
             mock.patch.object(
                 threads_post, "candidates", return_value=[long_item, short_item]
             ),
-            mock.patch.object(threads_post, "validate_url", return_value=True),
+            mock.patch.object(
+                urllib.request,
+                "urlopen",
+                side_effect=AssertionError(
+                    "selection must not make HTTP requests"
+                ),
+            ) as opener,
         ):
             selected, text = threads_post.pick_postable([long_item, short_item])
         self.assertIs(selected, short_item)
         self.assertIn(short_item["text"], text)
         self.assertLessEqual(len(text), threads_post.MAX_POST_CHARS)
+        opener.assert_not_called()
 
 
 class RetryTests(unittest.TestCase):

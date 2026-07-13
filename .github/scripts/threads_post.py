@@ -14,10 +14,8 @@ from social_post_common import (
     RequestError,
     canonical_app_store_url,
     channel_candidates,
-    filter_reachable_pool,
     footer_for,
     request_json,
-    validate_url,
 )
 import telegram_post
 
@@ -87,10 +85,10 @@ def compose_text(item):
 
 
 def pick_postable(pool, now=None):
-    live_pool = filter_reachable_pool(
-        pool, validator=validate_url, label="Threads"
-    )
-    for item in candidates(live_pool, now):
+    # load_pool() is already built from the verified live linkset. Rechecking
+    # every App Store URL here creates a burst of HEAD requests and triggers
+    # Apple's 429 rate limit before a single post can be published.
+    for item in candidates(pool, now):
         try:
             text = compose_text(item)
         except ValueError as error:

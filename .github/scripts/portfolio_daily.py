@@ -4,14 +4,22 @@ from __future__ import annotations
 
 import argparse
 import collections
+import concurrent.futures
 import dataclasses
 import datetime as dt
 import json
 import os
+import re
 import sys
+import urllib.parse
 from pathlib import Path
 
-from social_post_common import HTTPStatusError, RequestError
+from social_post_common import (
+    HTTPStatusError,
+    RequestError,
+    canonical_app_store_url,
+    validate_url,
+)
 
 HERE = Path(__file__).resolve().parent
 REPO_ROOT = HERE.parents[1]
@@ -25,7 +33,8 @@ import telegram_post  # noqa: E402
 import threads_post  # noqa: E402
 
 DEVELOPER_URL = "https://apps.apple.com/developer/id1136144960"
-LIVE_STATE_PATH = REPO_ROOT / ".appstore_live_state.json"
+SITE_URL = "https://alice51849.github.io/ios-app-guide"
+LINKSET_PATH = REPO_ROOT / "linkset.json"
 TELEGRAM_LIMIT = 3900
 THREADS_LIMIT = threads_post.MAX_POST_CHARS
 
@@ -66,8 +75,10 @@ class PublicApp:
     name: str
     category: str
 
-    def appstore_url(self, campaign):
-        return f"https://apps.apple.com/app/id{self.app_id}?ct={campaign}"
+    def appstore_url(self):
+        return canonical_app_store_url(
+            f"https://apps.apple.com/app/id{self.app_id}"
+        )
 
 
 @dataclasses.dataclass(frozen=True)
@@ -76,49 +87,120 @@ class DigestMessage:
     app_ids: tuple[str, ...]
 
 
-def load_live_ids(path=LIVE_STATE_PATH):
-    with open(path, encoding="utf-8") as state_file:
-        payload = json.load(state_file)
-    live_ids = payload.get("live_ids")
-    if not isinstance(live_ids, list) or not live_ids:
-        raise CoverageError(f"Missing non-empty live_ids in {path}")
-    normalized = [str(app_id) for app_id in live_ids]
-    if len(normalized) != len(set(normalized)):
-        raise CoverageError(f"Duplicate app IDs in {path}")
-    return set(normalized)
+def _title(item):
+    titles = item.get("title*") if isinstance(item, dict) else None
+    if not isinstance(titles, list):
+        raise CoverageError("Live guide is missing title metadata")
+    values = [
+        str(title.get("value") or "").strip()
+        for title in titles
+        if isinstance(title, dict)
+    ]
+    values = [value for value in values if value]
+    if not values:
+        raise CoverageError("Live guide has an empty title")
+    return values[0]
 
 
-def select_public_apps(apps, appstore, live_ids):
-    registry_ids = collections.defaultdict(list)
-    for key, app_id in appstore.items():
-        registry_ids[str(app_id)].append(key)
-    duplicate_ids = {
-        app_id: keys for app_id, keys in registry_ids.items() if len(keys) > 1
-    }
-    if duplicate_ids:
-        raise CoverageError(f"Duplicate App Store IDs in registry: {duplicate_ids}")
+def _guide_slug(href):
+    parsed = urllib.parse.urlsplit(href) if isinstance(href, str) else None
+    prefix = "/ios-app-guide/guides/"
+    if (
+        not parsed
+        or parsed.scheme != "https"
+        or parsed.netloc != "alice51849.github.io"
+        or not parsed.path.startswith(prefix)
+        or parsed.query
+        or parsed.fragment
+    ):
+        raise CoverageError(f"Invalid live guide URL: {href!r}")
+    relative = parsed.path[len(prefix) :]
+    if "/" in relative or not re.fullmatch(r"[a-z0-9-]+\.html", relative):
+        raise CoverageError(f"Invalid live guide path: {href}")
+    return relative[:-5]
 
-    unknown_ids = set(live_ids) - set(registry_ids)
-    if unknown_ids:
-        raise CoverageError(
-            "Live App Store IDs are missing from the registry: "
-            + ", ".join(sorted(unknown_ids))
+
+def _related_app_url(entry):
+    related = entry.get("related") if isinstance(entry, dict) else None
+    if not isinstance(related, list):
+        raise CoverageError("Live guide is missing related links")
+    app_urls = []
+    for relation in related:
+        href = relation.get("href") if isinstance(relation, dict) else None
+        parsed = urllib.parse.urlsplit(href) if isinstance(href, str) else None
+        if not parsed or parsed.netloc != "apps.apple.com":
+            continue
+        if parsed.scheme != "https" or parsed.fragment:
+            raise CoverageError(f"Invalid App Store relation: {href}")
+        bare_url = urllib.parse.urlunsplit(
+            (parsed.scheme, parsed.netloc, parsed.path, "", "")
         )
+        try:
+            app_urls.append(canonical_app_store_url(bare_url))
+        except ValueError as error:
+            raise CoverageError(f"Invalid App Store relation: {href}") from error
+    if len(app_urls) != 1:
+        raise CoverageError(
+            "Each live guide must have exactly one App Store related link"
+        )
+    return app_urls[0]
+
+
+def parse_public_apps(payload, apps=APPS, appstore=APPSTORE):
+    entries = payload.get("linkset") if isinstance(payload, dict) else None
+    if not isinstance(entries, list):
+        raise CoverageError("linkset.json has an invalid top-level structure")
+    root_anchors = {f"{SITE_URL}/", f"{SITE_URL}/index.html"}
+    roots = [
+        entry
+        for entry in entries
+        if isinstance(entry, dict)
+        and entry.get("anchor") in root_anchors
+        and isinstance(entry.get("item"), list)
+    ]
+    if len(roots) != 1:
+        raise CoverageError("linkset.json must contain one portfolio guide entry")
+
+    registry_by_id = collections.defaultdict(list)
+    for key, app_id in appstore.items():
+        registry_by_id[str(app_id)].append(key)
+    guide_entries = collections.defaultdict(list)
+    for entry in entries:
+        if isinstance(entry, dict) and isinstance(entry.get("anchor"), str):
+            guide_entries[entry["anchor"]].append(entry)
 
     selected = []
-    for app_id in live_ids:
-        key = registry_ids[app_id][0]
-        app = apps.get(key)
-        if not app or not str(app.get("name", "")).strip():
-            raise CoverageError(f"Registry metadata is incomplete for {key}")
+    seen_slugs = set()
+    seen_ids = set()
+    for item in roots[0]["item"]:
+        href = item.get("href") if isinstance(item, dict) else None
+        slug = _guide_slug(href)
+        if slug in seen_slugs:
+            raise CoverageError(f"Duplicate live guide slug: {slug}")
+        matches = guide_entries[href]
+        if len(matches) != 1:
+            raise CoverageError(
+                f"Live guide must have exactly one linkset context: {href}"
+            )
+        app_url = _related_app_url(matches[0])
+        app_id = urllib.parse.urlsplit(app_url).path.rsplit("id", 1)[1]
+        if app_id in seen_ids:
+            raise CoverageError(f"Duplicate live App Store ID: {app_id}")
+        registry_keys = registry_by_id.get(app_id, [])
+        key = slug if slug in apps else (registry_keys[0] if registry_keys else slug)
+        metadata = apps.get(key, {})
         selected.append(
             PublicApp(
                 key=key,
                 app_id=app_id,
-                name=str(app["name"]).strip(),
-                category=str(app.get("category", "other")),
+                name=_title(item),
+                category=str(metadata.get("category") or "other"),
             )
         )
+        seen_slugs.add(slug)
+        seen_ids.add(app_id)
+    if not selected:
+        raise CoverageError("linkset.json contains no live apps")
     return sorted(
         selected,
         key=lambda app: (
@@ -129,8 +211,42 @@ def select_public_apps(apps, appstore, live_ids):
     )
 
 
-def load_public_apps():
-    return select_public_apps(APPS, APPSTORE, load_live_ids())
+def load_public_apps(path=LINKSET_PATH):
+    with open(path, encoding="utf-8") as linkset_file:
+        return parse_public_apps(json.load(linkset_file))
+
+
+def filter_reachable_apps(apps, validator=validate_url, max_workers=8):
+    apps = list(apps)
+    if not apps:
+        raise CoverageError("Public app registry is empty")
+    worker_count = max(1, min(max_workers, len(apps)))
+    with concurrent.futures.ThreadPoolExecutor(
+        max_workers=worker_count
+    ) as executor:
+        futures = {
+            app.app_id: executor.submit(
+                validator,
+                app.appstore_url(),
+                timeout=10,
+                attempts=3,
+                retry_delays=(1, 2),
+            )
+            for app in apps
+        }
+        reachable = []
+        for app in apps:
+            if futures[app.app_id].result():
+                reachable.append(app)
+            else:
+                print(
+                    f"Daily portfolio: excluding confirmed dead URL "
+                    f"{app.appstore_url()}",
+                    file=sys.stderr,
+                )
+    if not reachable:
+        raise CoverageError("Every public App Store URL returned 404/410")
+    return reachable
 
 
 def _pack_apps(apps, entry_text, separator, capacity):
@@ -166,7 +282,7 @@ def telegram_messages(apps):
         category = CATEGORY_ZH.get(app.category, CATEGORY_ZH["other"])
         return (
             f"• {category}｜{app.name}\n"
-            f"  {app.appstore_url('daily_portfolio_telegram')}"
+            f"  {app.appstore_url()}"
         )
 
     batches = _pack_apps(
@@ -198,10 +314,13 @@ def threads_messages(apps):
     reserved_header = (
         f"Daily portfolio 99/99 — {total} live apps, all included today.\n\n"
     )
+    def entry(app):
+        return f"{app.name}\n{app.appstore_url()}"
+
     batches = _pack_apps(
         apps,
-        lambda app: app.name,
-        " · ",
+        entry,
+        "\n",
         THREADS_LIMIT - len(reserved_header) - len(footer),
     )
     if len(batches) > 99:
@@ -219,7 +338,7 @@ def threads_messages(apps):
                 f"Daily portfolio {index}/{len(batches)} — {total} live apps, "
                 "all included today.\n\n"
             )
-        text = header + " · ".join(app.name for app in batch) + footer
+        text = header + "\n".join(entry(app) for app in batch) + footer
         if len(text) > THREADS_LIMIT:
             raise CoverageError(f"Threads digest is too long: {len(text)}")
         messages.append(DigestMessage(text, tuple(app.app_id for app in batch)))
@@ -240,6 +359,21 @@ def validate_coverage(platform, apps, messages):
             f"{platform} coverage invalid: missing={missing}, "
             f"unexpected={unexpected}, duplicate_or_repeated={duplicates}"
         )
+    by_id = {app.app_id: app for app in apps}
+    link_pattern = re.compile(r"https?://apps\.apple\.com/app/id\d+\S*")
+    for message in messages:
+        expected_urls = [by_id[app_id].appstore_url() for app_id in message.app_ids]
+        observed_urls = link_pattern.findall(message.text)
+        if observed_urls != expected_urls:
+            raise CoverageError(
+                f"{platform} direct links invalid: "
+                f"expected={expected_urls}, observed={observed_urls}"
+            )
+        for url in observed_urls:
+            if canonical_app_store_url(url) != url:
+                raise CoverageError(
+                    f"{platform} App Store URL is not canonical: {url}"
+                )
 
 
 def report_coverage(platform, apps, messages):
@@ -304,7 +438,7 @@ def main(argv=None):
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args(argv)
     try:
-        apps = load_public_apps()
+        apps = filter_reachable_apps(load_public_apps())
         messages = (
             telegram_messages(apps)
             if args.platform == "telegram"

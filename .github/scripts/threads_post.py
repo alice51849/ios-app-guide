@@ -12,11 +12,14 @@ import urllib.request
 from social_post_common import (
     HTTPStatusError,
     RequestError,
+    canonical_app_store_url,
     channel_candidates,
+    filter_reachable_pool,
     footer_for,
     request_json,
     validate_url,
 )
+import telegram_post
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 UA = "Mozilla/5.0 (Lumi Apps poster)"
@@ -79,12 +82,20 @@ def pick(pool, now=None):
 
 
 def compose_text(item):
-    return f"{item['text']}\n\n{item['url']}\n\n{footer_for(item.get('lang'))}"
+    url = canonical_app_store_url(item.get("url"))
+    return f"{item['text']}\n\n{url}\n\n{footer_for(item.get('lang'))}"
 
 
 def pick_postable(pool, now=None):
-    for item in candidates(pool, now):
-        text = compose_text(item)
+    live_pool = filter_reachable_pool(
+        pool, validator=validate_url, label="Threads"
+    )
+    for item in candidates(live_pool, now):
+        try:
+            text = compose_text(item)
+        except ValueError as error:
+            print(f"Threads: skipping invalid URL ({error})", file=sys.stderr)
+            continue
         if len(text) > MAX_POST_CHARS:
             print(
                 f"Threads: skipping overlong item ({len(text)} chars, "
@@ -92,10 +103,7 @@ def pick_postable(pool, now=None):
                 file=sys.stderr,
             )
             continue
-        url = item.get("url")
-        if validate_url(url):
-            return item, text
-        print(f"Threads: skipping dead URL ({url})", file=sys.stderr)
+        return item, text
     raise RequestError(
         "Threads: no live item of 500 characters or fewer remains in this channel"
     )
@@ -134,10 +142,7 @@ def main():
         print("missing THREADS_TOKEN / THREADS_USER_ID", file=sys.stderr)
         return 1
     try:
-        with open(
-            os.path.join(HERE, "telegram_posts.json"), encoding="utf-8"
-        ) as pool_file:
-            pool = json.load(pool_file)
+        pool = telegram_post.load_pool()
         item, text = pick_postable(pool)
         post_id = publish_text(tok, uid, text)
         print("threads posted ok, id:", post_id, "| app:", item.get("app"))

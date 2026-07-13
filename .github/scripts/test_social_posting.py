@@ -47,13 +47,44 @@ def http_error(status, body=b""):
     )
 
 
+def linkset_payload(*apps):
+    root = {
+        "anchor": f"{portfolio_daily.SITE_URL}/index.html",
+        "item": [],
+    }
+    entries = [root]
+    for slug, name, app_id in apps:
+        guide_url = f"{portfolio_daily.SITE_URL}/guides/{slug}.html"
+        root["item"].append(
+            {
+                "href": guide_url,
+                "title*": [{"value": name, "language": "en"}],
+            }
+        )
+        entries.append(
+            {
+                "anchor": guide_url,
+                "related": [
+                    {
+                        "href": (
+                            f"https://apps.apple.com/app/id{app_id}"
+                            "?ct=iag_linkset"
+                        )
+                    }
+                ],
+            }
+        )
+    return {"linkset": entries}
+
+
 class RotationTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         with open(
             os.path.join(HERE, "telegram_posts.json"), encoding="utf-8"
         ) as pool_file:
-            cls.pool = json.load(pool_file)
+            json.load(pool_file)
+        cls.pool = telegram_post.load_pool()
 
     def _at(self, day, hour):
         return dt.datetime(2026, 1, 1, hour, tzinfo=dt.timezone.utc) + dt.timedelta(
@@ -68,22 +99,26 @@ class RotationTests(unittest.TestCase):
             (threads_post.pick, 3, threads_post.TZ_LANGS["asia"]),
             (threads_post.pick, 14, threads_post.TZ_LANGS["west"]),
         )
+        expected_ids = {common.app_key(item) for item in self.pool}
         for picker, hour, languages in routes:
-            expected_size = sum(
-                item.get("lang") in languages for item in self.pool
-            )
-            with self.subTest(hour=hour, expected_size=expected_size):
+            with self.subTest(hour=hour, expected_size=len(expected_ids)):
                 picks = [
                     picker(self.pool, self._at(day, hour))
-                    for day in range(expected_size)
+                    for day in range(len(expected_ids))
                 ]
                 self.assertEqual(
-                    expected_size,
-                    len({common.item_key(item) for item in picks}),
+                    expected_ids, {common.app_key(item) for item in picks}
                 )
-                self.assertTrue(all(item["lang"] in languages for item in picks))
+                for item in picks:
+                    has_localized_copy = any(
+                        common.app_key(candidate) == common.app_key(item)
+                        and candidate.get("lang") in languages
+                        for candidate in self.pool
+                    )
+                    if has_localized_copy:
+                        self.assertIn(item["lang"], languages)
 
-    def test_all_channels_choose_different_items_on_the_same_day(self):
+    def test_all_channels_choose_different_apps_on_the_same_day(self):
         for day in range(1000):
             picks = (
                 telegram_post.pick(self.pool, self._at(day, 1)),
@@ -92,7 +127,32 @@ class RotationTests(unittest.TestCase):
                 threads_post.pick(self.pool, self._at(day, 14)),
                 telegram_post.pick(self.pool, self._at(day, 15)),
             )
-            self.assertEqual(5, len({common.item_key(item) for item in picks}))
+            self.assertEqual(5, len({common.app_key(item) for item in picks}))
+
+    def test_uneven_copy_counts_cannot_bias_app_rotation(self):
+        pool = []
+        for app_index in range(5):
+            app_id = str(7_000_000_000 + app_index)
+            for copy_index in range(30 if app_index == 0 else 1):
+                pool.append(
+                    {
+                        "lang": "en",
+                        "app": app_id,
+                        "text": f"app {app_index} copy {copy_index}",
+                        "url": f"https://apps.apple.com/app/id{app_id}",
+                    }
+                )
+        expected = {str(7_000_000_000 + index) for index in range(5)}
+        for channel in common.CHANNEL_ORDER:
+            picks = {
+                common.app_key(
+                    common.channel_candidates(
+                        pool, channel, self._at(day, 15)
+                    )[0]
+                )
+                for day in range(5)
+            }
+            self.assertEqual(expected, picks)
 
 
 class FooterAndSelectionTests(unittest.TestCase):
@@ -113,13 +173,15 @@ class FooterAndSelectionTests(unittest.TestCase):
             "pl",
         }
         self.assertEqual(expected_languages, set(common.FOOTERS))
+        self.assertEqual(expected_languages, set(telegram_post.FALLBACK_TEXT))
         self.assertEqual(len(common.FOOTERS), len(set(common.FOOTERS.values())))
         for lang in expected_languages:
             with self.subTest(lang=lang):
                 item = {
                     "lang": lang,
                     "text": "Quality copy",
-                    "url": "https://example.com/app",
+                    "app": "7000000000",
+                    "url": "https://apps.apple.com/app/id7000000000",
                 }
                 footer = common.footer_for(lang)
                 self.assertTrue(telegram_post.compose_text(item).endswith(footer))
@@ -131,27 +193,51 @@ class FooterAndSelectionTests(unittest.TestCase):
 
     def test_confirmed_404_skips_to_the_next_telegram_item(self):
         now = dt.datetime(2026, 1, 1, 1, tzinfo=dt.timezone.utc)
-        candidates = telegram_post.candidates(
-            [
-                {
-                    "lang": "zh-Hant",
-                    "app": str(index),
-                    "text": f"post {index}",
-                    "url": f"https://example.com/{index}",
-                }
-                for index in range(8)
-            ],
-            now,
-        )
+        pool = [
+            {
+                "lang": "zh-Hant",
+                "app": str(7_000_000_000 + index),
+                "text": f"post {index}",
+                "url": f"https://apps.apple.com/app/id{7_000_000_000 + index}",
+            }
+            for index in range(8)
+        ]
+        expected = telegram_post.candidates(pool[1:], now)[0]
         with mock.patch.object(
-            telegram_post, "validate_url", side_effect=(False, True)
+            telegram_post,
+            "validate_url",
+            side_effect=lambda url: not url.endswith("7000000000"),
         ) as validator:
-            selected = telegram_post.pick_postable(candidates, now)
+            selected = telegram_post.pick_postable(pool, now)
         self.assertEqual(
-            common.item_key(telegram_post.candidates(candidates, now)[1]),
+            common.item_key(expected),
             common.item_key(selected),
         )
-        self.assertEqual(2, validator.call_count)
+        self.assertEqual(8, validator.call_count)
+
+    def test_dead_apps_preserve_unique_cross_channel_assignments(self):
+        pool = [
+            {
+                "lang": "en",
+                "app": str(7_000_000_000 + index),
+                "text": f"post {index}",
+                "url": f"https://apps.apple.com/app/id{7_000_000_000 + index}",
+            }
+            for index in range(7)
+        ]
+        live_pool = common.filter_reachable_pool(
+            pool,
+            validator=lambda url: not (
+                url.endswith("7000000000") or url.endswith("7000000001")
+            ),
+        )
+        picks = [
+            common.channel_candidates(
+                live_pool, channel, dt.datetime(2026, 1, 1, tzinfo=dt.timezone.utc)
+            )[0]
+            for channel in common.CHANNEL_ORDER
+        ]
+        self.assertEqual(5, len({common.app_key(item) for item in picks}))
 
     def test_url_validator_classifies_404_without_retry(self):
         opener = mock.Mock(side_effect=http_error(404))
@@ -169,15 +255,15 @@ class FooterAndSelectionTests(unittest.TestCase):
     def test_threads_skips_overlong_copy_without_truncating(self):
         long_item = {
             "lang": "en",
-            "app": "long",
+            "app": "7000000000",
             "text": "x" * 500,
-            "url": "https://example.com/long",
+            "url": "https://apps.apple.com/app/id7000000000",
         }
         short_item = {
             "lang": "en",
-            "app": "short",
+            "app": "7000000001",
             "text": "Complete, polished copy.",
-            "url": "https://example.com/short",
+            "url": "https://apps.apple.com/app/id7000000001",
         }
         with (
             mock.patch.object(
@@ -237,43 +323,75 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
 
     def test_current_live_registry_is_covered_without_a_static_post_pool(self):
         selected_ids = {app.app_id for app in self.apps}
-        self.assertEqual(portfolio_daily.load_live_ids(), selected_ids)
-        auto_registry = os.path.join(
-            portfolio_daily.ENGINE_SOCIAL,
-            "videogen",
-            "registry_auto.json",
-        )
-        with open(auto_registry, encoding="utf-8") as auto_file:
-            auto_ids = {
-                str(entry["appstore_id"])
-                for entry in json.load(auto_file).values()
-            }
         self.assertEqual(
-            auto_ids & portfolio_daily.load_live_ids(),
-            auto_ids & selected_ids,
+            selected_ids,
+            {app.app_id for app in portfolio_daily.load_public_apps()},
         )
-
-    def test_unpublished_apps_are_excluded_and_new_live_apps_auto_join(self):
-        apps = {
-            "live": {"name": "Current App", "category": "productivity"},
-            "new": {"name": "New App", "category": "travel"},
-            "draft": {"name": "Draft App", "category": "kids"},
-        }
-        appstore = {"live": "1", "new": "2", "draft": "3"}
-        selected = portfolio_daily.select_public_apps(
-            apps, appstore, {"1", "2"}
+        pool = telegram_post.load_pool()
+        self.assertEqual(
+            selected_ids,
+            {str(item["app"]) for item in pool},
         )
-        self.assertEqual(["1", "2"], sorted(app.app_id for app in selected))
-        self.assertNotIn("Draft App", [app.name for app in selected])
+        for item in pool:
+            expected = f"https://apps.apple.com/app/id{item['app']}"
+            self.assertEqual(expected, item["url"])
+        for app_id in selected_ids:
+            languages = {
+                item["lang"]
+                for item in pool
+                if str(item["app"]) == app_id
+            }
+            for channel, spec in common.CHANNEL_SPECS.items():
+                with self.subTest(app_id=app_id, channel=channel):
+                    self.assertTrue(languages.intersection(spec["langs"]))
 
-    def test_unknown_live_app_fails_loudly(self):
+    def test_linkset_discovers_unknown_new_live_apps(self):
+        selected = portfolio_daily.parse_public_apps(
+            linkset_payload(
+                ("known", "Current App", "7000000001"),
+                ("brand-new", "Brand New App", "7000000002"),
+            ),
+            apps={
+                "known": {
+                    "name": "Registry Name",
+                    "category": "productivity",
+                }
+            },
+            appstore={"known": "7000000001"},
+        )
+        by_id = {app.app_id: app for app in selected}
+        self.assertEqual({"7000000001", "7000000002"}, set(by_id))
+        self.assertEqual("Current App", by_id["7000000001"].name)
+        self.assertEqual("productivity", by_id["7000000001"].category)
+        self.assertEqual("Brand New App", by_id["7000000002"].name)
+        self.assertEqual("other", by_id["7000000002"].category)
+        self.assertEqual("brand-new", by_id["7000000002"].key)
+
+    def test_live_app_without_a_unique_context_fails_loudly(self):
+        payload = linkset_payload(("known", "Known", "7000000001"))
+        payload["linkset"] = payload["linkset"][:1]
         with self.assertRaisesRegex(
-            portfolio_daily.CoverageError, "missing from the registry"
+            portfolio_daily.CoverageError, "exactly one linkset context"
         ):
-            portfolio_daily.select_public_apps(
-                {"known": {"name": "Known", "category": "other"}},
-                {"known": "1"},
-                {"1", "2"},
+            portfolio_daily.parse_public_apps(
+                payload,
+                apps={},
+                appstore={},
+            )
+
+    def test_confirmed_dead_daily_link_is_excluded(self):
+        validator = mock.Mock(side_effect=(True, False))
+        reachable = portfolio_daily.filter_reachable_apps(
+            self.apps[:2], validator=validator, max_workers=1
+        )
+        self.assertEqual([self.apps[0]], reachable)
+        self.assertEqual(2, validator.call_count)
+
+    def test_transient_daily_link_failure_blocks_publication(self):
+        validator = mock.Mock(side_effect=common.RequestError("offline"))
+        with self.assertRaisesRegex(common.RequestError, "offline"):
+            portfolio_daily.filter_reachable_apps(
+                self.apps[:1], validator=validator, max_workers=1
             )
 
     def test_each_platform_covers_every_live_app_exactly_once(self):
@@ -295,6 +413,10 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
                 combined = "\n".join(message.text for message in messages)
                 for app in self.apps:
                     self.assertIn(app.name, combined)
+                    self.assertEqual(
+                        1, combined.count(app.appstore_url())
+                    )
+                self.assertNotIn("?ct=", combined)
                 self.assertTrue(all(len(message.text) <= limit for message in messages))
 
     def test_large_portfolio_splits_without_losing_coverage(self):

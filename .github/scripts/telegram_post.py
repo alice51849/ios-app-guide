@@ -11,7 +11,9 @@ import urllib.request
 from social_post_common import (
     HTTPStatusError,
     RequestError,
+    canonical_app_store_url,
     channel_candidates,
+    filter_reachable_pool,
     footer_for,
     request_json,
     validate_url,
@@ -26,6 +28,22 @@ TZ_LANGS = {
     "americas": ["en", "es", "pt-BR"],                          # 美洲(13–21 UTC)
 }
 
+FALLBACK_TEXT = {
+    "en": "📱 {name} — See features, screenshots, and App Store details.",
+    "zh-Hant": "📱 {name} — 查看功能、截圖與 App Store 詳情。",
+    "zh-Hans": "📱 {name} — 查看功能、截图与 App Store 详情。",
+    "ja": "📱 {name} — 機能、スクリーンショット、App Store の詳細を確認できます。",
+    "ko": "📱 {name} — 기능, 스크린샷, App Store 상세 정보를 확인하세요.",
+    "ms": "📱 {name} — Lihat ciri, tangkapan skrin dan butiran App Store.",
+    "de": "📱 {name} — Funktionen, Screenshots und App-Store-Details ansehen.",
+    "fr": "📱 {name} — Découvrez les fonctions, captures et détails sur l’App Store.",
+    "es": "📱 {name} — Consulta funciones, capturas y detalles en el App Store.",
+    "pt-BR": "📱 {name} — Veja recursos, capturas e detalhes na App Store.",
+    "ru": "📱 {name} — Посмотрите функции, снимки экрана и сведения в App Store.",
+    "ar": "📱 {name} — اطّلع على الميزات ولقطات الشاشة والتفاصيل في App Store.",
+    "pl": "📱 {name} — Zobacz funkcje, zrzuty ekranu i szczegóły w App Store.",
+}
+
 
 def _zone(hour_utc):
     if 5 <= hour_utc < 13:
@@ -37,7 +55,40 @@ def _zone(hour_utc):
 
 def load_pool():
     with open(os.path.join(HERE, "telegram_posts.json"), encoding="utf-8") as f:
-        return json.load(f)
+        static_pool = json.load(f)
+    import portfolio_daily
+
+    live_apps = {
+        app.app_id: app for app in portfolio_daily.load_public_apps()
+    }
+    pool = []
+    represented = {}
+    for item in static_pool:
+        app_id = str(item.get("app") or "")
+        if app_id not in live_apps:
+            continue
+        normalized = dict(item)
+        normalized["app"] = app_id
+        normalized["url"] = canonical_app_store_url(
+            f"https://apps.apple.com/app/id{app_id}"
+        )
+        pool.append(normalized)
+        represented.setdefault(app_id, set()).add(normalized.get("lang"))
+    for app_id, app in live_apps.items():
+        for lang, template in FALLBACK_TEXT.items():
+            if lang in represented.get(app_id, set()):
+                continue
+            pool.append(
+                {
+                    "lang": lang,
+                    "app": app_id,
+                    "text": template.format(name=app.name),
+                    "url": canonical_app_store_url(
+                        f"https://apps.apple.com/app/id{app_id}"
+                    ),
+                }
+            )
+    return pool
 
 
 def candidates(pool, now=None):
@@ -57,19 +108,18 @@ def pick(pool, now=None):
 
 
 def compose_text(item):
+    url = canonical_app_store_url(item.get("url"))
     return (
-        f"{item['text']}\n\n👉 {item['url']}\n\n"
+        f"{item['text']}\n\n👉 {url}\n\n"
         f"{footer_for(item.get('lang'))}"
     )
 
 
 def pick_postable(pool, now=None):
-    for item in candidates(pool, now):
-        url = item.get("url")
-        if validate_url(url):
-            return item
-        print(f"Telegram: skipping dead URL ({url})", file=sys.stderr)
-    raise RequestError("Telegram: no live URL remains in this channel's content pool")
+    live_pool = filter_reachable_pool(
+        pool, validator=validate_url, label="Telegram"
+    )
+    return candidates(live_pool, now)[0]
 
 
 def _send_message(token, chat, text):

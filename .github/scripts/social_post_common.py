@@ -2,9 +2,11 @@
 # -*- coding: utf-8 -*-
 """Shared deterministic rotation, localization, and HTTP retry helpers."""
 
+import concurrent.futures
 import datetime as _dt
 import http.client
 import json
+import re
 import sys
 import time
 import urllib.error
@@ -15,6 +17,7 @@ BASE_DATE = _dt.date(2026, 1, 1)
 DEFAULT_UA = "Mozilla/5.0 (Lumi Apps poster)"
 DEAD_LINK_STATUSES = frozenset((404, 410))
 TRANSIENT_STATUSES = frozenset((408, 429))
+APP_STORE_PATH_RE = re.compile(r"^/app/id(\d+)$")
 
 FOOTERS = {
     "en": "— Lumi Apps · Independent iOS developer",
@@ -64,9 +67,6 @@ CHANNEL_ORDER = (
     "threads:west",
     "telegram:americas",
 )
-_SCHEDULE_CACHE = {}
-
-
 class RequestError(RuntimeError):
     """A request failed or returned an unusable response."""
 
@@ -108,6 +108,22 @@ def footer_for(lang):
     return FOOTERS.get(lang, FOOTERS["en"])
 
 
+def canonical_app_store_url(value):
+    if not isinstance(value, str) or not value.strip():
+        raise ValueError("App Store URL is missing")
+    parsed = urllib.parse.urlsplit(value.strip())
+    match = APP_STORE_PATH_RE.fullmatch(parsed.path)
+    if (
+        parsed.scheme != "https"
+        or parsed.netloc != "apps.apple.com"
+        or not match
+        or parsed.query
+        or parsed.fragment
+    ):
+        raise ValueError(f"Invalid canonical App Store URL: {value}")
+    return f"https://apps.apple.com/app/id{match.group(1)}"
+
+
 def item_key(item):
     return (
         item.get("lang", ""),
@@ -117,165 +133,148 @@ def item_key(item):
     )
 
 
+def app_key(item):
+    value = str(item.get("app") or "").strip()
+    if not re.fullmatch(r"[0-9]+", value):
+        raise ValueError(f"invalid App Store ID in social post: {value!r}")
+    url = canonical_app_store_url(item.get("url"))
+    match = APP_STORE_PATH_RE.fullmatch(urllib.parse.urlsplit(url).path)
+    if not match or match.group(1) != value:
+        raise ValueError(
+            f"social post App Store ID does not match its URL: {value} != {url}"
+        )
+    return value
+
+
 def is_transient_status(status):
     return status in TRANSIENT_STATUSES or 500 <= status <= 599
 
 
+def _app_groups(pool):
+    groups = {}
+    for item in pool:
+        groups.setdefault(app_key(item), []).append(item)
+    if not groups:
+        raise ValueError("social post pool is empty")
+    return groups
+
+
+def filter_reachable_pool(pool, validator=None, label="Social", max_workers=8):
+    """Drop only confirmed-dead apps so every channel schedules the same live set."""
+    validator = validate_url if validator is None else validator
+    items = list(pool)
+    groups = _app_groups(items)
+    live_ids = set()
+    urls = {
+        app_id: canonical_app_store_url(app_items[0].get("url"))
+        for app_id, app_items in groups.items()
+    }
+    worker_count = max(1, min(max_workers, len(urls)))
+    with concurrent.futures.ThreadPoolExecutor(
+        max_workers=worker_count
+    ) as executor:
+        futures = {
+            app_id: executor.submit(validator, url)
+            for app_id, url in urls.items()
+        }
+        for app_id, url in urls.items():
+            if futures[app_id].result():
+                live_ids.add(app_id)
+            else:
+                print(
+                    f"{label}: excluding confirmed dead URL ({url})",
+                    file=sys.stderr,
+                )
+    if not live_ids:
+        raise RequestError(f"{label}: no live App Store URL remains")
+    return [item for item in items if app_key(item) in live_ids]
+
+
+def _copy_candidates(items, channel, day, app_index, app_count):
+    languages = CHANNEL_SPECS[channel]["langs"]
+    localized = [item for item in items if item.get("lang") in languages]
+    candidates = localized or list(items)
+    cycle = day // app_count
+    offset = (
+        cycle + app_index + CHANNEL_SPECS[channel]["offset"]
+    ) % len(candidates)
+    return candidates[offset:] + candidates[:offset]
+
+
 def rotated_channel_candidates(pool, channel, now=None):
-    """Return a channel's language subset, rotated one position per UTC day."""
+    """Rotate apps fairly, then rotate suitable copy for each selected app."""
     if channel not in CHANNEL_SPECS:
         raise ValueError(f"unknown social channel: {channel}")
-    items = list(pool)
-    spec = CHANNEL_SPECS[channel]
-    subset = [item for item in items if item.get("lang") in spec["langs"]]
-    if not subset:
-        subset = items
-    if not subset:
-        raise ValueError("social post pool is empty")
-    start = (day_sequence(now) + spec["offset"]) % len(subset)
-    return subset[start:] + subset[:start]
-
-
-def _new_schedule(pool):
-    items = list(pool)
-    subsets = {}
-    for channel in CHANNEL_ORDER:
-        spec = CHANNEL_SPECS[channel]
-        subset = [item for item in items if item.get("lang") in spec["langs"]]
-        subset = subset or items
-        if not subset:
-            raise ValueError("social post pool is empty")
-        keys = [item_key(item) for item in subset]
-        if len(keys) != len(set(keys)):
-            raise ValueError(f"duplicate social post in {channel} pool")
-        subsets[channel] = subset
-    return {
-        "subsets": subsets,
-        "schedules": {channel: {} for channel in CHANNEL_ORDER},
-        "planned_cycles": {channel: set() for channel in CHANNEL_ORDER},
-    }
-
-
-def _cycle_items(state, channel, cycle):
-    subset = state["subsets"][channel]
-    step = CHANNEL_ORDER.index(channel) + 1
-    offset = (CHANNEL_SPECS[channel]["offset"] + cycle * step) % len(subset)
-    return subset[offset:] + subset[:offset]
-
-
-def _ensure_schedule_through(state, channel_index, end_day):
-    channel = CHANNEL_ORDER[channel_index]
-    subset = state["subsets"][channel]
-    final_cycle = end_day // len(subset)
-    for cycle in range(final_cycle + 1):
-        if cycle in state["planned_cycles"][channel]:
-            continue
-        start = cycle * len(subset)
-        days = list(range(start, start + len(subset)))
-        for earlier_index in range(channel_index):
-            _ensure_schedule_through(state, earlier_index, days[-1])
-
-        items = _cycle_items(state, channel, cycle)
-        forbidden = {
-            day: {
-                item_key(state["schedules"][earlier][day])
-                for earlier in CHANNEL_ORDER[:channel_index]
-            }
-            for day in days
-        }
-        item_to_day = {}
-        day_to_item = {}
-
-        def assign(day, seen_items):
-            day_offset = day - start
-            for offset in range(len(items)):
-                item_index = (day_offset + offset) % len(items)
-                if item_index in seen_items:
-                    continue
-                item = items[item_index]
-                if item_key(item) in forbidden[day]:
-                    continue
-                seen_items.add(item_index)
-                previous_day = item_to_day.get(item_index)
-                if previous_day is None or assign(previous_day, seen_items):
-                    item_to_day[item_index] = day
-                    day_to_item[day] = item_index
-                    return True
-            return False
-
-        ordered_days = sorted(
-            days,
-            key=lambda day: (
-                len(items) - sum(
-                    item_key(item) in forbidden[day] for item in items
-                ),
-                day,
-            ),
-        )
-        for day in ordered_days:
-            if not assign(day, set()):
-                raise ScheduleCapacityError(
-                    f"cannot build a fair cycle for {channel}; "
-                    "add more localized content"
-                )
-        if len(day_to_item) != len(days):
-            raise ScheduleCapacityError(
-                f"incomplete fair cycle for {channel}; add more localized content"
-            )
-        for day, item_index in day_to_item.items():
-            state["schedules"][channel][day] = items[item_index]
-        state["planned_cycles"][channel].add(cycle)
-
-
-def _scheduled_picks(pool, through_channel, now=None):
-    target_day = day_sequence(now)
-    if target_day < 0:
+    day = day_sequence(now)
+    if day < 0:
         raise ValueError(f"social schedule predates {BASE_DATE.isoformat()}")
-    items = list(pool)
-    signature = tuple(item_key(item) for item in items)
-    state = _SCHEDULE_CACHE.get(signature)
-    if state is None:
-        state = _new_schedule(items)
-        _SCHEDULE_CACHE[signature] = state
-
-    target_index = CHANNEL_ORDER.index(through_channel)
-    for channel_index in range(target_index + 1):
-        _ensure_schedule_through(state, channel_index, target_day)
-    return {
-        channel: state["schedules"][channel][target_day]
-        for channel in CHANNEL_ORDER[: target_index + 1]
-    }
+    groups = _app_groups(pool)
+    app_ids = list(groups)
+    app_count = len(app_ids)
+    start = (day + CHANNEL_ORDER.index(channel)) % app_count
+    ordered_ids = app_ids[start:] + app_ids[:start]
+    candidates = []
+    for app_id in ordered_ids:
+        candidates.extend(
+            _copy_candidates(
+                groups[app_id],
+                channel,
+                day,
+                app_ids.index(app_id),
+                app_count,
+            )
+        )
+    return candidates
 
 
 def channel_candidates(pool, channel, now=None):
-    """Return fair-cycle candidates without same-day cross-channel duplication."""
+    """Select apps fairly before copy, without same-day app duplication."""
     if channel not in CHANNEL_ORDER:
         raise ValueError(f"unknown social channel: {channel}")
-    items = list(pool)
-    try:
-        picks = _scheduled_picks(items, CHANNEL_ORDER[-1], now)
-    except ScheduleCapacityError:
-        # Small test or recovery pools may not be large enough for all channels.
-        picks = _scheduled_picks(items, channel, now)
-    selected = picks[channel]
-    selected_key = item_key(selected)
+    day = day_sequence(now)
+    if day < 0:
+        raise ValueError(f"social schedule predates {BASE_DATE.isoformat()}")
+    groups = _app_groups(pool)
+    app_ids = list(groups)
+    if len(app_ids) < len(CHANNEL_ORDER):
+        raise ScheduleCapacityError(
+            "at least five live apps are required for unique daily channel picks"
+        )
+    app_count = len(app_ids)
+    selected_by_channel = {
+        current: app_ids[(day + index) % app_count]
+        for index, current in enumerate(CHANNEL_ORDER)
+    }
+    selected_id = selected_by_channel[channel]
     blocked = {
-        item_key(item)
-        for current, item in picks.items()
+        app_id
+        for current, app_id in selected_by_channel.items()
         if current != channel
     }
-    rotated = rotated_channel_candidates(items, channel, now)
-    safe = [
-        item
-        for item in rotated
-        if item_key(item) != selected_key and item_key(item) not in blocked
+    selected_index = app_ids.index(selected_id)
+    rotated_ids = app_ids[selected_index:] + app_ids[:selected_index]
+    safe_ids = [
+        app_id
+        for app_id in rotated_ids
+        if app_id != selected_id and app_id not in blocked
     ]
-    fallback = [
-        item
-        for item in rotated
-        if item_key(item) != selected_key and item_key(item) in blocked
+    fallback_ids = [
+        app_id
+        for app_id in rotated_ids
+        if app_id != selected_id and app_id in blocked
     ]
-    return [selected, *safe, *fallback]
+    candidates = []
+    for app_id in [selected_id, *safe_ids, *fallback_ids]:
+        candidates.extend(
+            _copy_candidates(
+                groups[app_id],
+                channel,
+                day,
+                app_ids.index(app_id),
+                app_count,
+            )
+        )
+    return candidates
 
 
 def _error_body(error):

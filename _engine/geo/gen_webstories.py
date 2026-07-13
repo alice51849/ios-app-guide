@@ -6,6 +6,7 @@
 輸出 geo/pages/stories/<key>.html + stories/img/*.jpg + stories/index.html + sitemap_stories.xml。
 純本機生成(PIL 海報 + registry 文案),不改 App、不改 App Store 內容。
 """
+import hashlib
 import html
 import os
 import sys
@@ -131,7 +132,10 @@ def story_html(key):
     kicker = (a.get("kicker") or "").strip()
     title = (a.get("title") or tagline).strip()
     bullets = a.get("cta_bullets", [])[:4]
-    pal = PALETTES[abs(hash(key)) % len(PALETTES)]
+    palette_index = int.from_bytes(
+        hashlib.sha256(key.encode("utf-8")).digest()[:4], "big"
+    ) % len(PALETTES)
+    pal = PALETTES[palette_index]
     make_poster(key, name, tagline, pal)
     url = appstore_url(key, "iag_story") or SITE
     canon = f"{SITE}/stories/{key}.html"

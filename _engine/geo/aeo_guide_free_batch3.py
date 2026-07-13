@@ -4,7 +4,7 @@
 import os
 import sys
 
-GEO = os.path.expanduser("~/00_GrowthEngine/geo")
+GEO = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, GEO)
 from aeo_guide import (  # noqa: E402
     render, write_sitemap, publish, GUIDES, SITE, APPS, APPSTORE, PAGES,

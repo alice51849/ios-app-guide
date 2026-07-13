@@ -450,6 +450,25 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
         self.assertIn("--platform telegram", text)
         self.assertIn("--platform threads", text)
 
+    def test_geo_workflow_generates_new_app_surfaces_before_linkset(self):
+        workflow = os.path.join(
+            portfolio_daily.REPO_ROOT,
+            ".github",
+            "workflows",
+            "geo-daily.yml",
+        )
+        with open(workflow, encoding="utf-8") as workflow_file:
+            text = workflow_file.read()
+        commands = (
+            "python3 aeo_guide_free_batch3.py",
+            "python3 ensure_live_guides.py",
+            "python3 gen_webstories.py",
+            "python3 gen_image_sitemap.py",
+            "python3 gen_linkset.py",
+        )
+        positions = [text.index(command) for command in commands]
+        self.assertEqual(positions, sorted(positions))
+
 
 class DevToGateTests(unittest.TestCase):
     POOL = (

@@ -28,6 +28,7 @@ sys.path.insert(0, os.path.join(ROOT, "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from aeo_pages import pricing_profile  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
+from external_app_locales import EXTERNAL_APP_LOCALES  # noqa: E402
 from gen_feed import feed_discovery_links  # noqa: E402
 
 PAGES = os.path.join(HERE, "pages")
@@ -72,6 +73,8 @@ SCHEMA_CAT = {
     "utility": "UtilitiesApplication",
     "health": "HealthApplication",
     "lifestyle": "LifestyleApplication",
+    "sleep-sound": "LifestyleApplication",
+    "travel": "TravelApplication",
 }
 
 RTL = {"ar", "he"}
@@ -511,13 +514,20 @@ def split_keywords(kw):
 
 def load_app_locales(key):
     fn = KEY2DATA.get(key)
-    if not fn:
-        return {}
-    path = os.path.join(DATA, fn)
-    if not os.path.exists(path):
-        return {}
-    with open(path, encoding="utf-8") as f:
-        return json.load(f)
+    stored = {}
+    if fn:
+        path = os.path.join(DATA, fn)
+        if os.path.exists(path):
+            with open(path, encoding="utf-8") as f:
+                stored = json.load(f)
+    curated = EXTERNAL_APP_LOCALES.get(key, {})
+    return {
+        locale: {
+            **curated.get(locale, {}),
+            **stored.get(locale, {}),
+        }
+        for locale in dict.fromkeys((*curated, *stored))
+    }
 
 
 def _meta_from(loc_data, fallback):

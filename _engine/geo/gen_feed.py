@@ -7,6 +7,7 @@
 """
 import datetime as dt
 import email.utils
+import glob
 import html
 import json
 import os
@@ -476,7 +477,11 @@ def render_json_feed(items):
 
 def main():
     items = collect()
-    for _, _, path in items:
+    discovery_paths = [
+        os.path.join(PAGES, "index.html"),
+        *glob.glob(os.path.join(PAGES, "*", "*.html")),
+    ]
+    for path in dict.fromkeys(discovery_paths):
         ensure_feed_discovery(path)
     newest = items[0][0] if items else time.time()
     feeds = {

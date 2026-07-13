@@ -48,6 +48,21 @@ jobs:
         run: |
           rm -rf _engine/geo/pages
           ln -s "$GITHUB_WORKSPACE" _engine/geo/pages
+      - name: Materialize newly live app surfaces
+        run: |
+          cd _engine/geo
+          python3 ensure_live_guides.py
+          python3 gen_webstories.py
+          python3 gen_image_sitemap.py
+          python3 gen_linkset.py
+          python3 gen_social_previews.py
+          python3 gen_smart_app_banners.py
+          python3 gen_mobile_store_ctas.py
+          python3 gen_app_store_qr_ctas.py
+          python3 gen_app_store_share_ctas.py
+          python3 gen_guide_design.py
+          python3 gen_llms.py --cached-live
+          python3 gen_feed.py
       - name: Verify zero-cost growth infrastructure
         run: python3 -m unittest discover -s _engine/geo/tests -p "test_*.py"
       - name: Refresh verified App Store availability once
@@ -190,7 +205,6 @@ jobs:
           cd _engine/geo
           python3 cleanup_localized_assets.py --cached-live
           python3 zhuyin_resourcesync.py
-          python3 aeo_guide_free_batch3.py
           python3 ensure_live_guides.py
           python3 gen_webstories.py
           python3 gen_image_sitemap.py

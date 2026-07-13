@@ -460,7 +460,6 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
         with open(workflow, encoding="utf-8") as workflow_file:
             text = workflow_file.read()
         commands = (
-            "python3 aeo_guide_free_batch3.py",
             "python3 ensure_live_guides.py",
             "python3 gen_webstories.py",
             "python3 gen_image_sitemap.py",
@@ -468,6 +467,10 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
         )
         positions = [text.index(command) for command in commands]
         self.assertEqual(positions, sorted(positions))
+        self.assertLess(
+            positions[-1],
+            text.index("python3 -m unittest discover"),
+        )
 
 
 class DevToGateTests(unittest.TestCase):

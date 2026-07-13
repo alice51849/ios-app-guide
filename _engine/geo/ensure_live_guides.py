@@ -12,6 +12,8 @@ sys.path.insert(0, str(ROOT / "social"))
 sys.path.insert(0, str(HERE))
 
 from aeo_guide import GUIDES, PAGES, render, write_sitemap  # noqa: E402
+from aeo_guide_free_batch3 import C as CURATED_CONTENT  # noqa: E402
+from aeo_guide_i18n import reconcile_hreflang  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
 from videogen.registry import APPS, APPSTORE  # noqa: E402
 
@@ -95,8 +97,10 @@ def ensure_live_guides() -> list[str]:
         path = Path(GUIDES) / f"{key}.html"
         if path.is_file():
             continue
-        path.write_text(render(key, fallback_content(key)), encoding="utf-8")
+        content = CURATED_CONTENT.get(key) or fallback_content(key)
+        path.write_text(render(key, content), encoding="utf-8")
         created.append(key)
+    reconcile_hreflang(live)
     write_sitemap()
     return created
 

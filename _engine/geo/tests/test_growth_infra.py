@@ -40,6 +40,7 @@ import appstore_live
 import build_pages
 import build_pages_i18n
 import cleanup_localized_assets
+import ensure_live_guides
 import family_travel_dataset
 import family_travel_mission_cards
 import family_travel_observation_passport
@@ -169,6 +170,51 @@ class AppStoreAvailabilityTests(unittest.TestCase):
 
 
 class GeneratorTests(unittest.TestCase):
+    def test_live_guide_fallback_only_creates_missing_pages(self):
+        with tempfile.TemporaryDirectory() as directory:
+            guides = Path(directory) / "guides"
+            guides.mkdir()
+            existing = guides / "existing.html"
+            existing.write_text("premium guide", encoding="utf-8")
+            curated = {"title": "Curated guide"}
+            with (
+                mock.patch.object(ensure_live_guides, "GUIDES", str(guides)),
+                mock.patch.object(
+                    ensure_live_guides,
+                    "APPS",
+                    {"existing": {}, "new": {}},
+                ),
+                mock.patch.object(
+                    ensure_live_guides,
+                    "CURATED_CONTENT",
+                    {"new": curated},
+                ),
+                mock.patch.object(
+                    ensure_live_guides,
+                    "live_app_keys",
+                    return_value={"existing", "new"},
+                ),
+                mock.patch.object(
+                    ensure_live_guides,
+                    "render",
+                    return_value="new guide",
+                ) as render,
+                mock.patch.object(
+                    ensure_live_guides, "reconcile_hreflang"
+                ) as reconcile,
+                mock.patch.object(ensure_live_guides, "write_sitemap"),
+            ):
+                created = ensure_live_guides.ensure_live_guides()
+
+            self.assertEqual(["new"], created)
+            self.assertEqual("premium guide", existing.read_text(encoding="utf-8"))
+            self.assertEqual(
+                "new guide",
+                (guides / "new.html").read_text(encoding="utf-8"),
+            )
+            render.assert_called_once_with("new", curated)
+            reconcile.assert_called_once_with({"existing", "new"})
+
     def test_answer_style_falls_back_when_the_named_template_is_pruned(self):
         with tempfile.TemporaryDirectory() as directory:
             answers = Path(directory)

@@ -10896,15 +10896,20 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("Free to download", sanitized_paid)
         self.assertIn("Paid download", sanitized_paid)
 
-    def test_registry_only_apps_get_complete_english_landing_pages(self):
+    def test_curated_new_apps_get_complete_localized_landing_pages(self):
+        app_locales = build_pages_i18n.all_locales_for("mochi")
         name, sub, desc, keywords = build_pages_i18n._meta_from(
-            {}, APPS["mochi"]
+            build_pages_i18n.load_app_locales("mochi")["en-US"],
+            APPS["mochi"],
         )
         self.assertEqual("Mochi", name)
         self.assertTrue(sub)
         self.assertTrue(desc)
         self.assertTrue(keywords)
-        self.assertEqual(["en-US"], build_pages_i18n.all_locales_for("mochi"))
+        self.assertEqual(
+            ["en-US", "ja", "zh-Hant", "ko", "hi", "nl-NL"],
+            app_locales,
+        )
         locales = build_pages_i18n.master_locales_for(
             ["mochi", "snapport"]
         )
@@ -10917,10 +10922,10 @@ class GeneratorTests(unittest.TestCase):
             build_pages_i18n, "PAGES", directory
         ):
             output = build_pages_i18n.build_one(
-                "mochi", "en-US", ["en-US"]
+                "mochi", "en-US", app_locales
             )
             page = Path(output).read_text(encoding="utf-8")
-        self.assertIn(APPS["mochi"]["sub"], page)
+        self.assertIn(sub, page)
         self.assertIn("Free to download", page)
         self.assertNotIn("<meta name=\"description\" content=\"\">", page)
 

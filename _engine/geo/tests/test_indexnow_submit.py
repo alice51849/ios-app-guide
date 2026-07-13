@@ -167,6 +167,23 @@ class IndexNowTests(unittest.TestCase):
         )
         self.assertEqual(2, opener.call_count)
 
+    def test_compatibility_submit_tries_every_endpoint(self) -> None:
+        calls = []
+
+        def sender(endpoint: str, _payload: bytes) -> None:
+            calls.append(endpoint)
+            raise indexnow.SubmissionError("offline")
+
+        accepted = indexnow.submit(
+            ["https://example.com/apps/one.html"],
+            "abcdefgh",
+            "https://example.com/apps",
+            endpoints=("first", "second"),
+            sender=sender,
+        )
+        self.assertFalse(accepted)
+        self.assertEqual(["first", "second"], calls)
+
 
 if __name__ == "__main__":
     unittest.main()

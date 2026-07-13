@@ -134,9 +134,10 @@ def submit_endpoint(
     endpoint: str,
     payload: bytes,
     *,
-    opener=urllib.request.urlopen,
+    opener=None,
     sleeper=time.sleep,
 ) -> None:
+    opener = urllib.request.urlopen if opener is None else opener
     last_error: Exception | None = None
     for attempt in range(1, 4):
         request = urllib.request.Request(
@@ -170,6 +171,26 @@ def submit_endpoint(
     raise SubmissionError(
         f"{endpoint} failed after 3 attempts: {last_error}"
     ) from last_error
+
+
+def submit(
+    urls: list[str],
+    key: str,
+    site: str = DEFAULT_SITE,
+    *,
+    endpoints: tuple[str, ...] = ENDPOINTS,
+    sender=submit_endpoint,
+) -> bool:
+    """Compatibility helper that reports failure after trying every endpoint."""
+    payload = payload_for(urls, key, site)
+    accepted = True
+    for endpoint in endpoints:
+        try:
+            sender(endpoint, payload)
+        except SubmissionError as error:
+            print(error)
+            accepted = False
+    return accepted
 
 
 def submit_all(

@@ -38,14 +38,15 @@ LIVE_KEYS = {
     "snapport",
     "sononote",
     "tripbee",
+    "tripplanet",
     "unblurry",
 }
 
 
 class GitHubRepositoryMetadataTests(unittest.TestCase):
-    def test_live_apps_map_to_only_their_twenty_support_repositories(self):
+    def test_live_apps_map_to_only_their_support_repositories(self):
         grouped = metadata.group_apps_by_repository(LIVE_KEYS)
-        self.assertEqual(20, len(grouped))
+        self.assertEqual(21, len(grouped))
         self.assertEqual(
             ["lumibopomofo", "lumibopomofopro"],
             grouped["lumi-support"],
@@ -57,12 +58,13 @@ class GitHubRepositoryMetadataTests(unittest.TestCase):
         self.assertEqual(["lumiweather"], grouped["lumi-weather-support"])
         self.assertEqual(["mochi"], grouped["mochitodo-support"])
         self.assertEqual(["sononote"], grouped["sono-note-support"])
-        for unlisted in ("astrea-support", "trip-planet-support", "zafe-support"):
+        self.assertEqual(["tripplanet"], grouped["trip-planet-support"])
+        for unlisted in ("astrea-support", "zafe-support"):
             self.assertNotIn(unlisted, grouped)
 
     def test_desired_metadata_is_searchable_bounded_and_deterministic(self):
         desired = metadata.desired_repositories(LIVE_KEYS)
-        self.assertEqual(36, len(desired))
+        self.assertEqual(37, len(desired))
         self.assertEqual(
             desired,
             metadata.desired_repositories(reversed(sorted(LIVE_KEYS))),

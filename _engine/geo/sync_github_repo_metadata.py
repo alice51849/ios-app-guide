@@ -36,6 +36,7 @@ REPO_OVERRIDES = {
     "lumiweather": "lumi-weather-support",
     "mochi": "mochitodo-support",
     "sononote": "sono-note-support",
+    "tripplanet": "trip-planet-support",
 }
 KEYWORD_DISPLAY = {
     "abc for kids": "ABC learning for kids",

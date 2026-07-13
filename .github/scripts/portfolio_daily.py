@@ -12,12 +12,14 @@ import os
 import re
 import sys
 import urllib.parse
+import urllib.request
 from pathlib import Path
 
 from social_post_common import (
     HTTPStatusError,
     RequestError,
     canonical_app_store_url,
+    request_json,
     validate_url,
 )
 
@@ -37,6 +39,8 @@ SITE_URL = "https://alice51849.github.io/ios-app-guide"
 LINKSET_PATH = REPO_ROOT / "linkset.json"
 TELEGRAM_LIMIT = 3900
 THREADS_LIMIT = threads_post.MAX_POST_CHARS
+THREADS_LINK_LIMIT = 5
+PORTFOLIO_WORKFLOW = "portfolio-daily.yml"
 
 CATEGORY_ORDER = {
     "kids": 0,
@@ -216,6 +220,123 @@ def load_public_apps(path=LINKSET_PATH):
         return parse_public_apps(json.load(linkset_file))
 
 
+def _github_json(url, token):
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "User-Agent": "ios-app-guide-portfolio-coverage",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    return request_json(
+        urllib.request.Request(url, headers=headers),
+        label="GitHub Actions coverage history",
+        timeout=30,
+        attempts=3,
+        retry_delays=(1, 2),
+    )
+
+
+def _github_time(value):
+    if not isinstance(value, str) or not value:
+        return None
+    try:
+        parsed = dt.datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    return parsed.astimezone(dt.timezone.utc)
+
+
+def already_published_today(
+    platform,
+    *,
+    now=None,
+    repository=None,
+    current_run_id=None,
+    token=None,
+    fetcher=_github_json,
+):
+    now = now or dt.datetime.now(dt.timezone.utc)
+    if now.tzinfo is None:
+        now = now.replace(tzinfo=dt.timezone.utc)
+    today = now.astimezone(dt.timezone.utc).date()
+    repository = (
+        os.environ.get("GITHUB_REPOSITORY", "")
+        if repository is None
+        else repository
+    )
+    current_run_id = (
+        os.environ.get("GITHUB_RUN_ID", "")
+        if current_run_id is None
+        else current_run_id
+    )
+    token = (
+        os.environ.get("GITHUB_TOKEN", "")
+        if token is None
+        else token
+    )
+    if not repository or not current_run_id:
+        return False
+    if not re.fullmatch(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+", repository):
+        raise CoverageError(f"Invalid GITHUB_REPOSITORY: {repository!r}")
+
+    base = f"https://api.github.com/repos/{repository}"
+    query = urllib.parse.urlencode(
+        {"status": "completed", "per_page": "30"}
+    )
+    history = fetcher(
+        f"{base}/actions/workflows/{PORTFOLIO_WORKFLOW}/runs?{query}",
+        token,
+    )
+    runs = history.get("workflow_runs") if isinstance(history, dict) else None
+    if not isinstance(runs, list):
+        raise CoverageError("GitHub Actions history has no workflow_runs")
+    for run in runs:
+        if not isinstance(run, dict) or str(run.get("id")) == str(
+            current_run_id
+        ):
+            continue
+        created = _github_time(run.get("created_at"))
+        if created and created.date() < today - dt.timedelta(days=1):
+            continue
+        run_id = run.get("id")
+        if not isinstance(run_id, int):
+            continue
+        jobs_payload = fetcher(
+            f"{base}/actions/runs/{run_id}/jobs?filter=all&per_page=100",
+            token,
+        )
+        jobs = (
+            jobs_payload.get("jobs")
+            if isinstance(jobs_payload, dict)
+            else None
+        )
+        if not isinstance(jobs, list):
+            raise CoverageError(
+                f"GitHub Actions run {run_id} has no jobs array"
+            )
+        for job in jobs:
+            if (
+                isinstance(job, dict)
+                and str(job.get("name") or "").casefold()
+                == platform.casefold()
+                and job.get("conclusion") == "success"
+            ):
+                completed = _github_time(job.get("completed_at"))
+                if completed is None:
+                    raise CoverageError(
+                        f"Successful {platform} job in run {run_id} "
+                        "has no valid completed_at"
+                    )
+                if completed.date() == today:
+                    print(
+                        f"{platform} portfolio already published today "
+                        f"by run {run_id}; skipping"
+                    )
+                    return True
+    return False
+
+
 def filter_reachable_apps(apps, validator=validate_url, max_workers=8):
     apps = list(apps)
     if not apps:
@@ -249,14 +370,19 @@ def filter_reachable_apps(apps, validator=validate_url, max_workers=8):
     return reachable
 
 
-def _pack_apps(apps, entry_text, separator, capacity):
+def _pack_apps(
+    apps, entry_text, separator, capacity, max_items=None
+):
     batches = []
     current = []
     current_size = 0
     for app in apps:
         entry_size = len(entry_text(app))
         added_size = entry_size + (len(separator) if current else 0)
-        if current and current_size + added_size > capacity:
+        if current and (
+            current_size + added_size > capacity
+            or (max_items is not None and len(current) >= max_items)
+        ):
             batches.append(current)
             current = []
             current_size = 0
@@ -310,7 +436,7 @@ def telegram_messages(apps):
 
 def threads_messages(apps):
     total = len(apps)
-    footer = f"\n\nAll apps: {DEVELOPER_URL}"
+    footer = ""
     reserved_header = (
         f"Daily portfolio 99/99 — {total} live apps, all included today.\n\n"
     )
@@ -322,6 +448,7 @@ def threads_messages(apps):
         entry,
         "\n",
         THREADS_LIMIT - len(reserved_header) - len(footer),
+        max_items=THREADS_LINK_LIMIT,
     )
     if len(batches) > 99:
         raise CoverageError("Threads digest requires more than 99 posts")
@@ -438,6 +565,8 @@ def main(argv=None):
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args(argv)
     try:
+        if not args.dry_run and already_published_today(args.platform):
+            return 0
         apps = filter_reachable_apps(load_public_apps())
         messages = (
             telegram_messages(apps)

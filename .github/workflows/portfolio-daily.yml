@@ -4,10 +4,14 @@ on:
   schedule:
     # 12:30 in Taiwan: one complete, non-spammy daily portfolio digest.
     - cron: "30 4 * * *"
+  workflow_run:
+    workflows: ["Daily GEO content"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
   contents: read
+  actions: read
 
 concurrency:
   group: daily-full-portfolio
@@ -15,6 +19,7 @@ concurrency:
 
 jobs:
   telegram:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -28,9 +33,11 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: python3 .github/scripts/portfolio_daily.py --platform telegram
 
   threads:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -44,4 +51,5 @@ jobs:
         env:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: python3 .github/scripts/portfolio_daily.py --platform threads

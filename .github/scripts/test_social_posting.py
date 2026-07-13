@@ -418,6 +418,23 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
                     )
                 self.assertNotIn("?ct=", combined)
                 self.assertTrue(all(len(message.text) <= limit for message in messages))
+                if platform == "threads":
+                    self.assertTrue(
+                        all(
+                            len(message.app_ids)
+                            <= portfolio_daily.THREADS_LINK_LIMIT
+                            for message in messages
+                        )
+                    )
+                    self.assertTrue(
+                        all(
+                            message.text.count("https://") <= 5
+                            for message in messages
+                        )
+                    )
+                    self.assertNotIn(
+                        portfolio_daily.DEVELOPER_URL, combined
+                    )
 
     def test_large_portfolio_splits_without_losing_coverage(self):
         apps = [
@@ -437,6 +454,139 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
             self.assertGreater(len(messages), 1)
             portfolio_daily.validate_coverage(platform, apps, messages)
 
+    def test_same_day_platform_success_prevents_duplicate_digest(self):
+        now = dt.datetime(
+            2026, 7, 13, 13, 0, tzinfo=dt.timezone.utc
+        )
+        calls = []
+
+        def fetcher(url, token):
+            calls.append((url, token))
+            if "/workflows/" in url:
+                return {
+                    "workflow_runs": [
+                        {
+                            "id": 100,
+                            "created_at": "2026-07-13T04:30:00Z",
+                        },
+                        {
+                            "id": 200,
+                            "created_at": "2026-07-13T12:00:00Z",
+                        },
+                    ]
+                }
+            if "/runs/100/jobs" in url:
+                return {
+                    "jobs": [
+                        {
+                            "name": "telegram",
+                            "conclusion": "success",
+                            "completed_at": "2026-07-13T07:46:14Z",
+                        },
+                        {
+                            "name": "threads",
+                            "conclusion": "failure",
+                            "completed_at": "2026-07-13T07:46:48Z",
+                        },
+                    ]
+                }
+            raise AssertionError(f"unexpected URL: {url}")
+
+        self.assertTrue(
+            portfolio_daily.already_published_today(
+                "telegram",
+                now=now,
+                repository="alice51849/ios-app-guide",
+                current_run_id="200",
+                token="test-token",
+                fetcher=fetcher,
+            )
+        )
+        calls.clear()
+        self.assertFalse(
+            portfolio_daily.already_published_today(
+                "threads",
+                now=now,
+                repository="alice51849/ios-app-guide",
+                current_run_id="200",
+                token="test-token",
+                fetcher=fetcher,
+            )
+        )
+        self.assertTrue(
+            all(token == "test-token" for _, token in calls)
+        )
+        self.assertTrue(
+            any("jobs?filter=all&per_page=100" in url for url, _ in calls)
+        )
+
+    def test_previous_day_success_does_not_skip_today(self):
+        def fetcher(url, _token):
+            if "/workflows/" in url:
+                return {
+                    "workflow_runs": [
+                        {
+                            "id": 100,
+                            "created_at": "2026-07-12T04:30:00Z",
+                        }
+                    ]
+                }
+            return {
+                "jobs": [
+                    {
+                        "name": "threads",
+                        "conclusion": "success",
+                        "completed_at": "2026-07-12T04:31:00Z",
+                    }
+                ]
+            }
+
+        self.assertFalse(
+            portfolio_daily.already_published_today(
+                "threads",
+                now=dt.datetime(
+                    2026, 7, 13, 0, 1, tzinfo=dt.timezone.utc
+                ),
+                repository="alice51849/ios-app-guide",
+                current_run_id="200",
+                fetcher=fetcher,
+            )
+        )
+
+    def test_ambiguous_success_timestamp_blocks_duplicate(self):
+        def fetcher(url, _token):
+            if "/workflows/" in url:
+                return {
+                    "workflow_runs": [
+                        {
+                            "id": 100,
+                            "created_at": "2026-07-13T04:30:00Z",
+                        }
+                    ]
+                }
+            return {
+                "jobs": [
+                    {
+                        "name": "threads",
+                        "conclusion": "success",
+                        "completed_at": None,
+                    }
+                ]
+            }
+
+        with self.assertRaisesRegex(
+            portfolio_daily.CoverageError, "valid completed_at"
+        ):
+            portfolio_daily.already_published_today(
+                "threads",
+                now=dt.datetime(
+                    2026, 7, 13, 13, 0, tzinfo=dt.timezone.utc
+                ),
+                repository="alice51849/ios-app-guide",
+                current_run_id="200",
+                fetcher=fetcher,
+            )
+
     def test_daily_workflow_runs_both_platforms(self):
         workflow = os.path.join(
             portfolio_daily.REPO_ROOT,
@@ -447,6 +597,12 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
         with open(workflow, encoding="utf-8") as workflow_file:
             text = workflow_file.read()
         self.assertIn('cron: "30 4 * * *"', text)
+        self.assertIn('workflows: ["Daily GEO content"]', text)
+        self.assertIn(
+            "github.event.workflow_run.conclusion == 'success'", text
+        )
+        self.assertIn("actions: read", text)
+        self.assertEqual(2, text.count("GITHUB_TOKEN:"))
         self.assertIn("--platform telegram", text)
         self.assertIn("--platform threads", text)
 

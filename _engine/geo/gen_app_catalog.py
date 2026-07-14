@@ -2,11 +2,13 @@
 """Generate localized portfolio catalogs from verified public App Store entries."""
 from __future__ import annotations
 
+from datetime import date
 import html
 import json
 import os
 import re
 import sys
+import xml.etree.ElementTree as ET
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -14,10 +16,15 @@ sys.path.insert(0, os.path.join(ROOT, "social"))
 sys.path.insert(0, HERE)
 
 from appstore_live import live_app_keys  # noqa: E402
-from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
+import gen_feed  # noqa: E402
+import gen_mobile_app_identity  # noqa: E402
+from videogen.registry import APPS, APPSTORE  # noqa: E402
 
 PAGES = os.path.join(HERE, "pages")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
+SITEMAP_NAME = "sitemap_apps.xml"
+SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
+DATE_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
 
 L10N = {
     "en": {
@@ -116,9 +123,95 @@ def detail_url(key, locale):
     return f"{SITE}/{chosen}/{key}.html"
 
 
+def catalog_urls():
+    return [f"{SITE}/{config['path']}" for config in L10N.values()]
+
+
+def sitemap_lastmods(path):
+    if not os.path.isfile(path):
+        return {}
+    try:
+        root = ET.parse(path).getroot()
+    except ET.ParseError as error:
+        raise ValueError(f"Invalid app catalog sitemap: {error}") from error
+    if root.tag != f"{{{SITEMAP_NS}}}urlset":
+        raise ValueError("App catalog sitemap must use a urlset root")
+    lastmods = {}
+    seen = set()
+    expected = set(catalog_urls())
+    for entry in root:
+        if entry.tag.rsplit("}", 1)[-1] != "url":
+            continue
+        locs = [
+            child
+            for child in entry
+            if child.tag.rsplit("}", 1)[-1] == "loc"
+        ]
+        dates = [
+            child
+            for child in entry
+            if child.tag.rsplit("}", 1)[-1] == "lastmod"
+        ]
+        if len(locs) != 1 or len(dates) > 1:
+            raise ValueError("Invalid app catalog sitemap entry")
+        location = (locs[0].text or "").strip()
+        if not location or location in seen:
+            raise ValueError("Duplicate or empty app catalog sitemap URL")
+        if location not in expected:
+            raise ValueError(f"Unexpected app catalog sitemap URL: {location}")
+        seen.add(location)
+        if dates:
+            value = (dates[0].text or "").strip()
+            try:
+                if not DATE_RE.fullmatch(value):
+                    raise ValueError
+                date.fromisoformat(value)
+            except ValueError as error:
+                raise ValueError(
+                    f"Invalid app catalog sitemap lastmod: {value}"
+                ) from error
+            lastmods[location] = value
+    return lastmods
+
+
+def render_sitemap(lastmods):
+    unknown = set(lastmods) - set(catalog_urls())
+    if unknown:
+        raise ValueError(f"Unexpected app catalog lastmod URLs: {sorted(unknown)}")
+    rows = []
+    for location in catalog_urls():
+        lastmod = lastmods.get(location)
+        suffix = f"<lastmod>{lastmod}</lastmod>" if lastmod else ""
+        rows.append(f"  <url><loc>{location}</loc>{suffix}</url>")
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        f'<urlset xmlns="{SITEMAP_NS}">\n'
+        + "\n".join(rows)
+        + "\n</urlset>\n"
+    )
+
+
+def write_if_changed(path, content):
+    try:
+        with open(path, encoding="utf-8") as handle:
+            if handle.read() == content:
+                return False
+    except OSError:
+        pass
+    with open(path, "w", encoding="utf-8") as handle:
+        handle.write(content)
+    return True
+
+
 def render_catalog(code, live_keys):
     t = L10N[code]
     canonical = f"{SITE}/{t['path']}"
+    page_id = f"{canonical}#webpage"
+    item_list_id = f"{canonical}#apps"
+    live_keys = set(live_keys)
+    unknown = live_keys - set(APPS)
+    if unknown:
+        raise ValueError(f"Unknown live app keys: {sorted(unknown)}")
     groups = {}
     for key in APPS:
         if key in live_keys:
@@ -126,13 +219,18 @@ def render_catalog(code, live_keys):
 
     sections = []
     item_list = []
+    entity_ids = set()
     position = 0
     for category, keys in groups.items():
         cards = []
         for key in keys:
             position += 1
             app = APPS[key]
-            store = appstore_url(key)
+            app_id = APPSTORE[key]
+            store = gen_mobile_app_identity.canonical_store_url(app_id)
+            if store in entity_ids:
+                raise ValueError(f"Duplicate catalog App Store identity: {store}")
+            entity_ids.add(store)
             guide = detail_url(key, t["locale"])
             hub = f"{SITE}/hubs/{key}.html"
             summary = localized_summary(key, t["locale"])
@@ -144,17 +242,19 @@ def render_catalog(code, live_keys):
                 f'<a class="store" href="{html.escape(store)}" rel="nofollow sponsored">{html.escape(t["store"])}</a>'
                 f'</div></article>'
             )
+            app_entity = gen_mobile_app_identity.mobile_app_schema(
+                app_id,
+                app["name"],
+                app.get("category", "other"),
+            )
+            app_entity.pop("@context")
+            app_entity["isPartOf"] = {"@id": page_id}
             item_list.append({
                 "@type": "ListItem",
+                "@id": f"{canonical}#app-{key}",
                 "position": position,
-                "item": {
-                    "@type": "SoftwareApplication",
-                    "name": app["name"],
-                    "operatingSystem": "iOS",
-                    "applicationCategory": category,
-                    "url": guide,
-                    "installUrl": store,
-                },
+                "url": guide,
+                "item": app_entity,
             })
         label = t["categories"].get(category, t["categories"]["other"])
         sections.append(f'<section><h2>{html.escape(label)}</h2><div class="grid">{"".join(cards)}</div></section>')
@@ -162,10 +262,12 @@ def render_catalog(code, live_keys):
     schema = {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
+        "@id": page_id,
         "name": t["title"],
         "url": canonical,
         "mainEntity": {
             "@type": "ItemList",
+            "@id": item_list_id,
             "numberOfItems": len(item_list),
             "itemListElement": item_list,
         },
@@ -173,6 +275,9 @@ def render_catalog(code, live_keys):
     alternates = "\n".join(
         f'<link rel="alternate" hreflang="{lang}" href="{SITE}/{data["path"]}">'
         for lang, data in L10N.items()
+    )
+    feed_discovery = (
+        f"\n{gen_feed.feed_discovery_links()}" if code == "en" else ""
     )
     return f'''<!DOCTYPE html>
 <html lang="{t["lang"]}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -182,7 +287,7 @@ def render_catalog(code, live_keys):
 <link rel="alternate" hreflang="x-default" href="{SITE}/{L10N["en"]["path"]}">
 <meta property="og:type" content="website"><meta property="og:title" content="{html.escape(t["title"])}">
 <meta property="og:description" content="{html.escape(t["description"])}"><meta property="og:url" content="{canonical}">
-<style>{CSS}</style><script type="application/ld+json">{json.dumps(schema, ensure_ascii=False)}</script>
+<style>{CSS}</style><script type="application/ld+json">{json.dumps(schema, ensure_ascii=False)}</script>{feed_discovery}
 </head><body><main class="wrap"><header class="hero"><div class="eyebrow">Lumi Apps</div>
 <h1>{html.escape(t["h1"])}</h1><p class="lead">{html.escape(t["lead"])}</p></header>
 {"".join(sections)}</main><footer class="footer"><div class="wrap">{html.escape(t["description"])}</div></footer></body></html>'''
@@ -190,12 +295,23 @@ def render_catalog(code, live_keys):
 
 def main():
     live_keys = live_app_keys(APPSTORE, PAGES, refresh=False)
+    changed = 0
     for code, config in L10N.items():
         path = os.path.join(PAGES, config["path"])
         os.makedirs(os.path.dirname(path), exist_ok=True)
-        with open(path, "w", encoding="utf-8") as handle:
-            handle.write(render_catalog(code, live_keys))
-    print(f"✓ {len(L10N)} localized app catalogs · {len(live_keys)} public apps")
+        content = render_catalog(code, live_keys)
+        changed += int(write_if_changed(path, content))
+    sitemap_path = os.path.join(PAGES, SITEMAP_NAME)
+    changed += int(
+        write_if_changed(
+            sitemap_path,
+            render_sitemap(sitemap_lastmods(sitemap_path)),
+        )
+    )
+    print(
+        f"✓ {len(L10N)} localized app catalogs · "
+        f"{len(live_keys)} public apps · {changed} resources updated"
+    )
 
 
 if __name__ == "__main__":

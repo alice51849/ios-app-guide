@@ -12682,6 +12682,149 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("Lumi Bopomofo", page)
         self.assertNotIn("Zafe", page)
         self.assertIn('"numberOfItems": 1', page)
+        match = re.search(
+            r'<script type="application/ld\+json">(.*?)</script>',
+            page,
+            flags=re.S,
+        )
+        self.assertIsNotNone(match)
+        schema = json.loads(match.group(1))
+        canonical = f"{gen_app_catalog.SITE}/apps/index.html"
+        page_id = f"{canonical}#webpage"
+        self.assertEqual("CollectionPage", schema["@type"])
+        self.assertEqual(page_id, schema["@id"])
+        self.assertEqual(canonical, schema["url"])
+        item_list = schema["mainEntity"]
+        self.assertEqual("ItemList", item_list["@type"])
+        self.assertEqual(f"{canonical}#apps", item_list["@id"])
+        self.assertEqual(1, item_list["numberOfItems"])
+        self.assertEqual(1, len(item_list["itemListElement"]))
+        list_item = item_list["itemListElement"][0]
+        app_id = gen_app_catalog.APPSTORE["lumibopomofo"]
+        store = f"https://apps.apple.com/app/id{app_id}"
+        self.assertEqual(f"{canonical}#app-lumibopomofo", list_item["@id"])
+        self.assertEqual(
+            f"{gen_app_catalog.SITE}/en-US/lumibopomofo.html",
+            list_item["url"],
+        )
+        app = list_item["item"]
+        self.assertEqual("MobileApplication", app["@type"])
+        self.assertEqual(store, app["@id"])
+        self.assertEqual(store, app["url"])
+        self.assertEqual(store, app["installUrl"])
+        self.assertEqual(
+            {
+                "@type": "PropertyValue",
+                "propertyID": "Apple App Store ID",
+                "value": app_id,
+            },
+            app["identifier"],
+        )
+        self.assertEqual(
+            "EducationalApplication",
+            app["applicationCategory"],
+        )
+        self.assertEqual({"@id": page_id}, app["isPartOf"])
+        self.assertNotIn("?", app["@id"])
+        self.assertIn(f'href="{store}"', page)
+        self.assertIn('type="application/atom+xml"', page)
+
+        localized = gen_app_catalog.render_catalog(
+            "zh-Hant",
+            {"lumibopomofo"},
+        )
+        localized_schema = json.loads(
+            re.search(
+                r'<script type="application/ld\+json">(.*?)</script>',
+                localized,
+                flags=re.S,
+            ).group(1)
+        )
+        localized_canonical = (
+            f"{gen_app_catalog.SITE}/apps/zh-Hant/index.html"
+        )
+        localized_item = localized_schema["mainEntity"][
+            "itemListElement"
+        ][0]
+        self.assertEqual(store, localized_item["item"]["@id"])
+        self.assertEqual(
+            {"@id": f"{localized_canonical}#webpage"},
+            localized_item["item"]["isPartOf"],
+        )
+        self.assertNotIn('type="application/atom+xml"', localized)
+
+    def test_catalog_rejects_unknown_or_duplicate_live_identities(self):
+        with self.assertRaisesRegex(ValueError, "Unknown live app keys"):
+            gen_app_catalog.render_catalog("en", {"not-in-registry"})
+        duplicate_key = "lumibopomofopro"
+        with mock.patch.dict(
+            gen_app_catalog.APPSTORE,
+            {
+                duplicate_key: gen_app_catalog.APPSTORE["lumibopomofo"],
+            },
+        ):
+            with self.assertRaisesRegex(
+                ValueError,
+                "Duplicate catalog App Store identity",
+            ):
+                gen_app_catalog.render_catalog(
+                    "en",
+                    {"lumibopomofo", duplicate_key},
+                )
+
+    def test_catalog_has_visible_inbound_link_and_dedicated_sitemap(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            with mock.patch.object(build_pages_i18n, "PAGES", str(pages)):
+                build_pages_i18n.build_root_index(["en-US", "zh-Hant"])
+            root = (pages / "index.html").read_text(encoding="utf-8")
+            catalog_url = f"{build_pages_i18n.SITE}/apps/index.html"
+            self.assertEqual(1, root.count(f'href="{catalog_url}"'))
+            self.assertIn("Browse all verified apps by category", root)
+
+            dates = {gen_app_catalog.catalog_urls()[0]: "2026-07-14"}
+            sitemap = gen_app_catalog.render_sitemap(dates)
+            document = ET.fromstring(sitemap)
+            namespace = {
+                "s": "http://www.sitemaps.org/schemas/sitemap/0.9"
+            }
+            entries = document.findall("s:url", namespace)
+            self.assertEqual(len(gen_app_catalog.L10N), len(entries))
+            locations = [
+                entry.find("s:loc", namespace).text for entry in entries
+            ]
+            self.assertEqual(gen_app_catalog.catalog_urls(), locations)
+            self.assertEqual(
+                "2026-07-14",
+                entries[0].find("s:lastmod", namespace).text,
+            )
+            self.assertIsNone(entries[1].find("s:lastmod", namespace))
+
+            sitemap_path = pages / gen_app_catalog.SITEMAP_NAME
+            sitemap_path.write_text(sitemap, encoding="utf-8")
+            self.assertEqual(
+                dates,
+                gen_app_catalog.sitemap_lastmods(str(sitemap_path)),
+            )
+            with mock.patch.object(gen_llms, "PAGES", str(pages)):
+                self.assertIn(
+                    gen_app_catalog.SITEMAP_NAME,
+                    gen_llms.build_sitemap_index(),
+                )
+            self.assertIn(
+                gen_app_catalog.SITEMAP_NAME,
+                gen_llms.build_robots(),
+            )
+            sitemap_path.write_text(
+                sitemap.replace(
+                    "</urlset>",
+                    f"<url><loc>{gen_app_catalog.catalog_urls()[0]}</loc></url>"
+                    "</urlset>",
+                ),
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(ValueError, "Duplicate"):
+                gen_app_catalog.sitemap_lastmods(str(sitemap_path))
 
     def test_question_plan_prioritizes_focus_tiers_and_skips_unlisted(self):
         public = {"lumibopomofo", "snapport", "sononote"}

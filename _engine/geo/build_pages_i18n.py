@@ -729,10 +729,10 @@ def build_root_index(locales):
 <title>iOS Apps — multilingual directory</title>
 <meta name="description" content="Multilingual directory of iOS apps with features, pricing and FAQs in {len(locales)} languages.">
 <link rel="canonical" href="{SITE}/index.html">
-{feed_discovery_links()}
 {directory_hreflang_block(locales)}
 </head><body><main>
   <h1>iOS Apps — choose your language</h1>
+  <p><a href="{SITE}/apps/index.html">Browse all verified apps by category</a></p>
   <ul>
 {lang_links}
   </ul>
@@ -802,7 +802,7 @@ def build_robots():
     for sm in ("sitemap.xml", "sitemap_alternatives.xml", "sitemap_answers.xml",
                "sitemap_guides.xml", "sitemap_stories.xml", "sitemap_images.xml",
                "sitemap_linkset.xml", "sitemap_oembed.xml", "sitemap_hubs.xml",
-               "sitemap_tools.xml", "sitemap_index.xml"):
+               "sitemap_tools.xml", "sitemap_apps.xml", "sitemap_index.xml"):
         out.append(f"Sitemap: {SITE}/{sm}")
     txt = "\n".join(out) + "\n"
     with open(os.path.join(PAGES, "robots.txt"), "w", encoding="utf-8") as f:

@@ -1155,7 +1155,8 @@ def build_llms_full(comp_map, live_keys):
     lines += ["", "## Sitemaps and feed"]
     for filename in (
         "sitemap_index.xml", "sitemap.xml", "sitemap_alternatives.xml",
-        "sitemap_answers.xml", "sitemap_guides.xml", "sitemap_stories.xml",
+        "sitemap_answers.xml", "sitemap_guides.xml", "sitemap_apps.xml",
+        "sitemap_stories.xml",
         "sitemap_images.xml", "sitemap_linkset.xml", "sitemap_oembed.xml",
         "linkset.json",
         "sitemap_hubs.xml", "sitemap_tools.xml", "sitemap_data.xml",
@@ -1207,6 +1208,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_alternatives.xml",
             f"Sitemap: {SITE}/sitemap_answers.xml",
             f"Sitemap: {SITE}/sitemap_guides.xml",
+            f"Sitemap: {SITE}/sitemap_apps.xml",
             f"Sitemap: {SITE}/sitemap_stories.xml",
             f"Sitemap: {SITE}/sitemap_images.xml",
             f"Sitemap: {SITE}/sitemap_linkset.xml",
@@ -1242,7 +1244,8 @@ def build_robots():
 
 
 def build_sitemap_index():
-    maps = ["sitemap.xml", "sitemap_alternatives.xml", "sitemap_answers.xml", "sitemap_guides.xml",
+    maps = ["sitemap.xml", "sitemap_alternatives.xml", "sitemap_answers.xml",
+            "sitemap_guides.xml", "sitemap_apps.xml",
             "sitemap_stories.xml", "sitemap_images.xml", "sitemap_linkset.xml",
             "sitemap_oembed.xml",
             "sitemap_hubs.xml", "sitemap_tools.xml",

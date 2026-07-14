@@ -42,6 +42,7 @@ import answer_portfolio
 import appstore_live
 import build_pages
 import build_pages_i18n
+import blurry_photo_diagnostic
 import cleanup_localized_assets
 import document_scan_planner
 import ensure_live_guides
@@ -11267,6 +11268,151 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(first_bytes, english.read_bytes())
             self.assertEqual(stable_mtime, english.stat().st_mtime_ns)
 
+    def test_blurry_photo_guide_is_private_bilingual_and_non_predictive(self):
+        english = blurry_photo_diagnostic.render_page(
+            "en",
+            app_public=False,
+        )
+        chinese = blurry_photo_diagnostic.render_page(
+            "zh-Hant",
+            app_public=False,
+        )
+        public = blurry_photo_diagnostic.render_page(
+            "en",
+            app_public=True,
+        )
+        for page in (english, chinese):
+            self.assertIn('"@type":"WebApplication"', page)
+            self.assertIn('"dateModified":"2026-07-15"', page)
+            self.assertIn("document.modelContext?.registerTool", page)
+            self.assertIn(
+                'name: "plan_private_blurry_photo_next_steps"',
+                page,
+            )
+            self.assertIn(
+                "annotations: {readOnlyHint: true, untrustedContentHint: false}",
+                page,
+            )
+            self.assertIn("photo_not_received_or_processed: true", page)
+            self.assertIn(
+                "not_a_diagnosis_or_restoration_guarantee: true",
+                page,
+            )
+            self.assertIn("no_recovery_percentage: true", page)
+            self.assertIn(blurry_photo_diagnostic.APPLE_SHOT, page)
+            self.assertIn(
+                blurry_photo_diagnostic.APPLE_CAMERA_HELP,
+                page,
+            )
+            self.assertIn(
+                blurry_photo_diagnostic.APPLE_SHARED_ALBUMS,
+                page,
+            )
+            self.assertIn(blurry_photo_diagnostic.ADOBE_ENHANCE, page)
+            self.assertIn(blurry_photo_diagnostic.WEBMCP_SOURCE, page)
+            self.assertNotIn('type="file"', page)
+            self.assertNotIn("FileReader", page)
+            self.assertNotIn("<canvas", page)
+            self.assertNotIn("fetch(", page)
+            self.assertNotIn("XMLHttpRequest", page)
+            self.assertNotIn("localStorage", page)
+            self.assertNotIn("sessionStorage", page)
+            self.assertNotIn("navigator.modelContext", page)
+            self.assertNotIn("origin-trial", page.lower())
+            self.assertNotIn("recovery_score", page)
+            self.assertNotIn(f"id{blurry_photo_diagnostic.APP_ID}", page)
+        self.assertIn("不計算恢復百分比", chinese)
+        self.assertIn("不清楚的文字仍視為未確認", chinese)
+        self.assertIn(f"id{blurry_photo_diagnostic.APP_ID}", public)
+        schema = blurry_photo_diagnostic.webmcp_input_schema("en")
+        self.assertFalse(schema["additionalProperties"])
+        self.assertEqual(
+            list(blurry_photo_diagnostic.ISSUES),
+            schema["properties"]["issue"]["enum"],
+        )
+        self.assertEqual(
+            "boolean",
+            schema["properties"]["digital_zoom_or_heavy_crop"]["type"],
+        )
+        execute = blurry_photo_diagnostic.SCRIPT.split(
+            "execute: async (input) => {",
+            1,
+        )[1].split("return JSON.stringify(result);", 1)[0]
+        for mutation in (
+            "textContent",
+            "innerHTML",
+            "appendChild",
+            "replaceChildren",
+            "scroll",
+            "fetch(",
+            "localStorage",
+        ):
+            self.assertNotIn(mutation, execute)
+        self.assertLess(
+            execute.index("optional_free_guide: config.freeGuide"),
+            execute.index("official_sources: config.officialSources"),
+        )
+        self.assertLess(
+            execute.index("official_sources: config.officialSources"),
+            execute.index("result.optional_unblurry_pro"),
+        )
+
+    def test_blurry_photo_guide_builds_both_pages_and_is_idempotent(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            tools = pages / "tools"
+            localized_tools = pages / "zh-Hant" / "tools"
+            tools.mkdir(parents=True)
+            localized_tools.mkdir(parents=True)
+            legacy = (
+                '<article class="card third"><h2><a href="'
+                'blurry-photo-diagnostic.html">Blurry Photo Diagnostic'
+                '</a></h2><p>Legacy score.</p></article>'
+            )
+            (tools / "index.html").write_text(
+                f'<main><section class="wrap grid">{legacy}</section></main>',
+                encoding="utf-8",
+            )
+            (localized_tools / "index.html").write_text(
+                '<main><section class="wrap grid"></section></main>',
+                encoding="utf-8",
+            )
+            urls = blurry_photo_diagnostic.build(
+                pages,
+                app_public=False,
+            )
+            self.assertEqual(2, len(urls))
+            english = tools / f"{blurry_photo_diagnostic.SLUG}.html"
+            chinese = (
+                localized_tools
+                / f"{blurry_photo_diagnostic.SLUG}.html"
+            )
+            self.assertTrue(english.exists())
+            self.assertTrue(chinese.exists())
+            for index in (
+                tools / "index.html",
+                localized_tools / "index.html",
+            ):
+                self.assertEqual(
+                    1,
+                    index.read_text(encoding="utf-8").count(
+                        f"{blurry_photo_diagnostic.SLUG}.html"
+                    ),
+                )
+            self.assertNotIn(
+                f"id{blurry_photo_diagnostic.APP_ID}",
+                english.read_text(encoding="utf-8"),
+            )
+            stable_mtime = 1_700_000_000_000_000_000
+            os.utime(english, ns=(stable_mtime, stable_mtime))
+            first_bytes = english.read_bytes()
+            blurry_photo_diagnostic.build(
+                pages,
+                app_public=False,
+            )
+            self.assertEqual(first_bytes, english.read_bytes())
+            self.assertEqual(stable_mtime, english.stat().st_mtime_ns)
+
     def test_passport_print_answer_leads_with_free_private_tool(self):
         question = (
             "How can I arrange passport photos on a 4x6 print sheet without "
@@ -13818,6 +13964,7 @@ class GeneratorTests(unittest.TestCase):
         )[1].split("- name: Verify zero-cost growth infrastructure", 1)[0]
         self.assertNotIn("passport_photo_print_sheet.py", materialize_block)
         self.assertNotIn("document_scan_planner.py", materialize_block)
+        self.assertNotIn("blurry_photo_diagnostic.py", materialize_block)
         self.assertNotIn("vocabulary_habit_planner.py", materialize_block)
         availability_block = workflow.split(
             "- name: Refresh verified App Store availability once", 1
@@ -13838,6 +13985,10 @@ class GeneratorTests(unittest.TestCase):
             availability_block.index("refresh=True"),
             availability_block.index("document_scan_planner.py"),
         )
+        self.assertLess(
+            availability_block.index("refresh=True"),
+            availability_block.index("blurry_photo_diagnostic.py"),
+        )
         self.assertNotIn("gen_sitemap_lastmod.py", materialize_block)
         self.assertIn("zhuyin_picture_book_club_kit.py", workflow)
         self.assertIn("zhuyin_parent_teacher_handoff_kit.py", workflow)
@@ -13849,6 +14000,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_story_sequence_cards.py", workflow)
         self.assertEqual(1, workflow.count("passport_photo_print_sheet.py"))
         self.assertEqual(1, workflow.count("document_scan_planner.py"))
+        self.assertEqual(1, workflow.count("blurry_photo_diagnostic.py"))
         self.assertEqual(1, workflow.count("vocabulary_habit_planner.py"))
         self.assertEqual(1, workflow.count("wordmate_language_support.py"))
         self.assertEqual(1, workflow.count("portfolio_app_finder.py"))
@@ -13859,6 +14011,10 @@ class GeneratorTests(unittest.TestCase):
         self.assertLess(
             workflow.index("refresh=True"),
             workflow.index("document_scan_planner.py"),
+        )
+        self.assertLess(
+            workflow.index("refresh=True"),
+            workflow.index("blurry_photo_diagnostic.py"),
         )
         self.assertLess(
             workflow.index("refresh=True"),
@@ -14095,6 +14251,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("reset --hard", publish)
         self.assertIn("passport_photo_print_sheet.py", publish)
         self.assertIn("document_scan_planner.py", publish)
+        self.assertIn("blurry_photo_diagnostic.py", publish)
         self.assertIn("vocabulary_habit_planner.py", publish)
         self.assertIn("wordmate_language_support.py", publish)
         self.assertIn("portfolio_app_finder.py", publish)

@@ -3403,6 +3403,10 @@ class GeneratorTests(unittest.TestCase):
             self.assertIn(family_travel_mission_cards.TSA_PHOTOS, page)
             self.assertIn(family_travel_mission_cards.FAA_CHILD_SAFETY, page)
             self.assertIn(family_travel_mission_cards.NHTSA_CHILD_PASSENGER, page)
+            self.assertIn(
+                "https://developer.chrome.com/docs/ai/webmcp/imperative-api",
+                page,
+            )
             self.assertEqual(12, page.count("data-scene="))
             self.assertEqual(3, page.count("data-style="))
             self.assertIn('id="print-boundary"', page)
@@ -3412,6 +3416,19 @@ class GeneratorTests(unittest.TestCase):
             self.assertNotIn("XMLHttpRequest", page)
             self.assertNotIn("fetch(", page)
             self.assertNotIn("getUserMedia", page)
+            self.assertIn("document.modelContext?.registerTool", page)
+            self.assertIn(
+                'name: "build_private_family_travel_mission_cards"',
+                page,
+            )
+            self.assertIn(
+                "annotations: {readOnlyHint: true, untrustedContentHint: false}",
+                page,
+            )
+            self.assertIn("no_personal_or_trip_data_requested: true", page)
+            self.assertIn("not_scored_ranked_or_tracked: true", page)
+            self.assertNotIn("navigator.modelContext", page)
+            self.assertNotIn("origin-trial", page.lower())
             self.assertNotIn("<input", page)
             self.assertNotIn("<form", page)
             schemas = [
@@ -3438,6 +3455,27 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("不是年齡、程度或能力排名", traditional)
         self.assertIn("絕不要求駕駛查看", traditional)
         self.assertIn("非駕駛同行者", traditional)
+        schema = family_travel_mission_cards.webmcp_input_schema("en")
+        self.assertFalse(schema["additionalProperties"])
+        self.assertEqual(12, len(schema["properties"]["scenario"]["enum"]))
+        self.assertEqual(
+            ["watch", "describe", "create"],
+            schema["properties"]["style"]["enum"],
+        )
+        self.assertEqual(
+            list(range(1, 8)),
+            schema["properties"]["variation"]["enum"],
+        )
+        self.assertLess(
+            english.index("optional_free_printable_tool: config.freeTool"),
+            english.index("official_safety_sources: config.officialSources"),
+        )
+        self.assertLess(
+            english.index("official_safety_sources: config.officialSources"),
+            english.index(
+                "result.optional_lumi_trip_planet = config.optionalApp"
+            ),
+        )
         for locale_scenarios in family_travel_mission_cards.SCENARIOS.values():
             for scenario in locale_scenarios:
                 self.assertFalse(
@@ -10313,6 +10351,18 @@ class GeneratorTests(unittest.TestCase):
                 index.count(
                     f"{family_travel_mission_cards.SLUG}.html"
                 ),
+            )
+            english_path = (
+                tools / f"{family_travel_mission_cards.SLUG}.html"
+            )
+            stable_mtime = 1_700_000_000_000_000_000
+            os.utime(english_path, ns=(stable_mtime, stable_mtime))
+            first_bytes = english_path.read_bytes()
+            family_travel_mission_cards.build(pages, app_public=False)
+            self.assertEqual(first_bytes, english_path.read_bytes())
+            self.assertEqual(
+                stable_mtime,
+                english_path.stat().st_mtime_ns,
             )
 
     def test_family_travel_answer_leads_with_free_private_generator(self):

@@ -26,6 +26,8 @@ SLUG = "family-travel-mission-card-generator"
 APP_KEY = "tripplanet"
 APP_ID = "6787193643"
 APP_NAME = "Lumi Trip Planet: World Travel"
+TOOL_DATE = "2026-07-15"
+WEBMCP_SOURCE = "https://developer.chrome.com/docs/ai/webmcp/imperative-api"
 LICENSE = "https://creativecommons.org/licenses/by/4.0/"
 TSA_PHOTOS = (
     "https://www.tsa.gov/travel/frequently-asked-questions/"
@@ -593,6 +595,15 @@ COPY = {
             ("NHTSA: car seats and booster seats", NHTSA_CHILD_PASSENGER),
             ("U.S. DOT: tips for families travelling by air", DOT_FAMILY_TRAVEL),
         ),
+        "webmcp_source": (
+            "Chrome WebMCP imperative API preview (subject to change)"
+        ),
+        "webmcp_description": (
+            "Build five optional, private family travel observation prompts and one "
+            "blank adult-approved card from bounded visible choices. Never collect "
+            "names, ages, locations, destinations, photos, itineraries or completion "
+            "records, and never score, rank, diagnose or claim an outcome."
+        ),
         "license_title": "Reuse the original cards",
         "license_text": (
             "The original wording and blank card layout are available under CC BY 4.0. "
@@ -737,6 +748,12 @@ COPY = {
             ("FAA：兒童搭機與兒童安全座椅", FAA_CHILD_SAFETY),
             ("NHTSA：汽車安全座椅與增高座椅", NHTSA_CHILD_PASSENGER),
             ("美國交通部：家庭航空旅行提示", DOT_FAMILY_TRAVEL),
+        ),
+        "webmcp_source": "Chrome WebMCP 命令式 API 預覽（規格可能變動）",
+        "webmcp_description": (
+            "只用畫面上的有界選項建立五張選用親子旅行觀察提示與一張由大人核准的"
+            "空白卡；絕不收集姓名、年齡、位置、目的地、照片、行程或完成紀錄，"
+            "也不評分、排名、診斷或宣稱成效。"
         ),
         "license_title": "重複利用原創卡片",
         "license_text": (
@@ -906,6 +923,91 @@ SCRIPT = r"""
     printBoundary.textContent = `${config.printBoundary} ${scene.boundary}`;
   }
 
+  function toolChoice(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const options = config.inputSchema.properties[name].enum;
+    if (!options.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    return value;
+  }
+
+  async function registerWebMcp() {
+    if (!document.modelContext?.registerTool) return;
+    await document.modelContext.registerTool({
+      name: "build_private_family_travel_mission_cards",
+      description: config.toolDescription,
+      inputSchema: config.inputSchema,
+      annotations: {readOnlyHint: true, untrustedContentHint: false},
+      execute: async (input) => {
+        if (input === null || typeof input !== "object" || Array.isArray(input)) {
+          throw new TypeError("WebMCP input must be an object.");
+        }
+        const allowed = new Set(Object.keys(config.inputSchema.properties));
+        for (const name of Object.keys(input)) {
+          if (!allowed.has(name)) {
+            throw new RangeError(`${name} is not a supported input.`);
+          }
+        }
+        const scenarioId = toolChoice(input, "scenario");
+        const styleId = toolChoice(input, "style");
+        const variation = toolChoice(input, "variation");
+        const scene = selected(config.scenarios, scenarioId);
+        const style = selected(config.styles, styleId);
+        const offset = ((variation - 1) * 2) % scene.targets.length;
+        const prompts = Array.from({length: 5}, (_, index) =>
+          scene.targets[(offset + index) % scene.targets.length]);
+        const result = {
+          result_type: "private_family_travel_mission_cards",
+          prompts_are_optional_not_instructions: true,
+          not_scored_ranked_or_tracked: true,
+          no_personal_or_trip_data_requested: true,
+          scenario: {
+            id: scene.id,
+            name: scene.name,
+            icon: scene.icon,
+            boundary: scene.boundary
+          },
+          participation_style: {
+            id: style.id,
+            name: style.name,
+            detail: style.detail
+          },
+          variation,
+          cards: prompts.map((target, index) => ({
+            number: index + 1,
+            label: config.mission,
+            title: `${scene.icon} ${scene.name}`,
+            prompt: style.template.replace("{target}", target),
+            skip_boundary: config.skip
+          })),
+          blank_card: {
+            number: 6,
+            label: config.mission,
+            title: config.blank,
+            prompt: config.blankText,
+            adult_approval_required: true,
+            skip_boundary: config.skip
+          },
+          safety_boundary: `${config.printBoundary} ${scene.boundary}`,
+          privacy_boundary: config.privacyBoundary,
+          not_a_test_boundary: config.notTestBoundary,
+          optional_free_printable_tool: config.freeTool,
+          official_safety_sources: config.officialSources,
+          license: config.license,
+          webmcp_preview_source: config.webmcpSource
+        };
+        if (config.optionalApp) {
+          result.optional_lumi_trip_planet = config.optionalApp;
+        }
+        return JSON.stringify(result);
+      }
+    });
+  }
+
   sceneButtons.forEach((button) => button.addEventListener("click", () => {
     sceneId = button.dataset.scene;
     offset = 0;
@@ -934,6 +1036,8 @@ SCRIPT = r"""
   });
   document.getElementById("print-cards").addEventListener("click", () => window.print());
   render();
+  registerWebMcp().catch((error) =>
+    console.error("WebMCP tool registration failed.", error));
 })();
 """
 
@@ -947,6 +1051,32 @@ def json_script(data: dict) -> str:
     payload = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
     payload = payload.replace("</", "<\\/")
     return f'<script type="application/ld+json">{payload}</script>'
+
+
+def webmcp_input_schema(locale: str) -> dict[str, object]:
+    if locale not in COPY:
+        raise ValueError(f"unsupported locale: {locale}")
+    return {
+        "type": "object",
+        "properties": {
+            "scenario": {
+                "type": "string",
+                "enum": [scene["id"] for scene in SCENARIOS[locale]],
+            },
+            "style": {
+                "type": "string",
+                "enum": [style["id"] for style in COPY[locale]["styles"]],
+            },
+            "variation": {
+                "type": "integer",
+                "enum": list(range(1, 8)),
+                "minimum": 1,
+                "maximum": 7,
+            },
+        },
+        "required": ["scenario", "style", "variation"],
+        "additionalProperties": False,
+    }
 
 
 def render_page(locale: str, app_public: bool = False) -> str:
@@ -981,6 +1111,11 @@ def render_page(locale: str, app_public: bool = False) -> str:
         f"<p>{html.escape(answer)}</p></article>"
         for question, answer in t["faq_items"]
     )
+    tracked_app_url = (
+        appstore_url(APP_KEY, f"iag_travel_cards_{locale.lower()}")
+        if app_public
+        else ""
+    )
     config = {
         "scenarios": SCENARIOS[locale],
         "styles": t["styles"],
@@ -990,6 +1125,30 @@ def render_page(locale: str, app_public: bool = False) -> str:
         "blankText": t["blank_text"],
         "printBoundary": t["print_boundary"],
         "status": t["status"],
+        "inputSchema": webmcp_input_schema(locale),
+        "toolDescription": t["webmcp_description"],
+        "privacyBoundary": t["privacy_text"],
+        "notTestBoundary": t["not_test_text"],
+        "officialSources": [
+            {"label": label, "url": source_url}
+            for label, source_url in t["source_items"]
+        ],
+        "freeTool": {
+            "label": t["title"],
+            "url": url,
+            "privacy": t["privacy_text"],
+        },
+        "license": LICENSE,
+        "webmcpSource": WEBMCP_SOURCE,
+        "optionalApp": (
+            {
+                "label": t["app_cta"],
+                "boundary": t["app_text"],
+                "app_store_url": tracked_app_url,
+            }
+            if tracked_app_url
+            else None
+        ),
     }
     config_json = json.dumps(config, ensure_ascii=False).replace("</", "<\\/")
 
@@ -1003,6 +1162,7 @@ def render_page(locale: str, app_public: bool = False) -> str:
             "inLanguage": locale,
             "applicationCategory": "TravelApplication",
             "operatingSystem": "Any",
+            "dateModified": TOOL_DATE,
             "isAccessibleForFree": True,
             "learningResourceType": "Printable family travel prompt cards",
             "license": LICENSE,
@@ -1052,8 +1212,7 @@ def render_page(locale: str, app_public: bool = False) -> str:
         },
     ]
     app_section = ""
-    if app_public:
-        tracked_app_url = appstore_url(APP_KEY, f"iag_travel_cards_{locale.lower()}")
+    if tracked_app_url:
         schemas.append(
             {
                 "@context": "https://schema.org",
@@ -1097,7 +1256,7 @@ def render_page(locale: str, app_public: bool = False) -> str:
 <section class="hero wrap"><div class="eyebrow">{html.escape(t["eyebrow"])}</div><h1>{html.escape(t["title"])}</h1><p class="lead">{html.escape(t["lead"])}</p><div class="badges">{badges}</div><div class="actions"><a class="button" href="#generator">{html.escape(t["start"])}</a><a class="button secondary" href="{alternate}">{html.escape(t["language"])}</a></div></section>
 <section class="wrap boundaries"><article class="card"><h2>{html.escape(t["boundary_title"])}</h2><p>{html.escape(t["boundary_text"])}</p></article><article class="card"><h2>{html.escape(t["not_test_title"])}</h2><p>{html.escape(t["not_test_text"])}</p></article></section>
 <section class="wrap generator" id="generator"><article class="card generator-shell"><div class="generator-head"><h2>{html.escape(t["generator"])}</h2><p>{html.escape(t["generator_intro"])}</p></div><div class="controls"><div class="control-block"><div class="control-label">{html.escape(t["choose_scene"])}</div><div class="choices" role="group" aria-label="{html.escape(t["choose_scene"])}">{scene_buttons}</div></div><div class="control-block"><div class="control-label">{html.escape(t["choose_style"])}</div><div class="styles" role="group" aria-label="{html.escape(t["choose_style"])}">{style_buttons}</div></div><p class="safety-note" id="scene-boundary">{html.escape(SCENARIOS[locale][0]["boundary"])}</p><div class="actions control-actions"><button class="button" id="make-cards" type="button">{html.escape(t["make"])}</button><button class="button secondary" id="new-cards" type="button">{html.escape(t["new_set"])}</button></div></div><div class="preview" id="printable-set"><div class="preview-head"><div><h2>{html.escape(t["print_heading"])}</h2></div><div class="actions"><button class="button secondary" id="print-cards" type="button">{html.escape(t["print"])}</button></div></div><p class="print-boundary" id="print-boundary">{html.escape(t["print_boundary"])} {html.escape(SCENARIOS[locale][0]["boundary"])}</p><div class="cards" id="mission-cards"></div><div class="status" id="mission-status" aria-live="polite"></div></div></article></section>
-<section class="wrap details"><article class="card"><h2>{html.escape(t["privacy"])}</h2><p>{html.escape(t["privacy_text"])}</p></article><article class="card"><h2>{html.escape(t["photo_title"])}</h2><p>{html.escape(t["photo_text"])}</p></article><article class="card wide"><h2>{html.escape(t["sources"])}</h2><p>{html.escape(t["sources_intro"])}</p><ul class="source-list">{sources}</ul></article><article class="card"><h2>{html.escape(t["license_title"])}</h2><p>{html.escape(t["license_text"])}</p><a href="{LICENSE}" rel="license noopener">Creative Commons Attribution 4.0</a></article>{app_section}</section>
+<section class="wrap details"><article class="card"><h2>{html.escape(t["privacy"])}</h2><p>{html.escape(t["privacy_text"])}</p></article><article class="card"><h2>{html.escape(t["photo_title"])}</h2><p>{html.escape(t["photo_text"])}</p></article><article class="card wide"><h2>{html.escape(t["sources"])}</h2><p>{html.escape(t["sources_intro"])}</p><ul class="source-list">{sources}</ul><p><a href="{WEBMCP_SOURCE}" rel="noopener">{html.escape(t["webmcp_source"])}</a></p></article><article class="card"><h2>{html.escape(t["license_title"])}</h2><p>{html.escape(t["license_text"])}</p><a href="{LICENSE}" rel="license noopener">Creative Commons Attribution 4.0</a></article>{app_section}</section>
 <section class="wrap faq"><h2>{html.escape(t["faq"])}</h2><div class="faq-grid">{faq}</div></section>
 </main>
 <footer class="footer"><div class="wrap">{html.escape(t["footer"])}</div></footer>
@@ -1140,6 +1299,14 @@ def update_tools_index(pages: Path = PAGES) -> bool:
     return True
 
 
+def write_text_if_changed(path: Path, content: str) -> bool:
+    if path.exists() and path.read_text(encoding="utf-8") == content:
+        return False
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(content, encoding="utf-8")
+    return True
+
+
 def build(pages: Path = PAGES, app_public: bool | None = None) -> list[str]:
     if app_public is None:
         app_public = APP_KEY in live_app_keys(APPSTORE, pages, refresh=False)
@@ -1149,8 +1316,7 @@ def build(pages: Path = PAGES, app_public: bool | None = None) -> list[str]:
         if locale == "zh-Hant":
             relative = Path(locale) / relative
         target = pages / relative
-        target.parent.mkdir(parents=True, exist_ok=True)
-        target.write_text(render_page(locale, app_public), encoding="utf-8")
+        write_text_if_changed(target, render_page(locale, app_public))
         outputs.append(canonical(locale))
     update_tools_index(pages)
     return outputs

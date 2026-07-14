@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alice51849.github.io/ios-app-guide/data/wordmate-language-support.schema.json",
+  "title": "Wordmate 44-Language Support Matrix",
+  "type": "object",
+  "required": [
+    "name",
+    "description",
+    "version",
+    "license",
+    "source_url",
+    "record_count",
+    "records"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string",
+      "format": "date"
+    },
+    "license": {
+      "type": "string",
+      "format": "uri"
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "record_count": {
+      "const": 44
+    },
+    "records": {
+      "type": "array",
+      "minItems": 44,
+      "maxItems": 44,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "language_code",
+          "english_name",
+          "traditional_chinese_name",
+          "included_in_paid_download",
+          "iphone_ipad",
+          "home_screen_widget",
+          "apple_watch",
+          "voice_availability_note",
+          "source_url",
+          "verified_date"
+        ],
+        "properties": {
+          "language_code": {
+            "type": "string",
+            "enum": [
+              "en",
+              "zh-Hant",
+              "zh-Hans",
+              "ja",
+              "ko",
+              "de",
+              "fr",
+              "es",
+              "it",
+              "pt",
+              "nl",
+              "ru",
+              "pl",
+              "tr",
+              "sv",
+              "da",
+              "no",
+              "fi",
+              "id",
+              "ms",
+              "vi",
+              "th",
+              "hi",
+              "ar",
+              "he",
+              "el",
+              "cs",
+              "sk",
+              "hr",
+              "hu",
+              "ro",
+              "uk",
+              "ca",
+              "bn",
+              "gu",
+              "kn",
+              "ml",
+              "mr",
+              "or",
+              "pa",
+              "sl",
+              "ta",
+              "te",
+              "ur"
+            ]
+          },
+          "english_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "traditional_chinese_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "included_in_paid_download": {
+            "const": true
+          },
+          "iphone_ipad": {
+            "type": "string"
+          },
+          "home_screen_widget": {
+            "type": "string"
+          },
+          "apple_watch": {
+            "type": "string"
+          },
+          "voice_availability_note": {
+            "type": "string"
+          },
+          "source_url": {
+            "const": "https://apps.apple.com/app/id6789917808"
+          },
+          "verified_date": {
+            "type": "string",
+            "format": "date"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

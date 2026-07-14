@@ -1,0 +1,83 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/csvw",
+    {
+      "@language": "en",
+      "dc": "http://purl.org/dc/terms/"
+    }
+  ],
+  "url": "https://alice51849.github.io/ios-app-guide/data/wordmate-language-support.csv",
+  "dc:title": "Wordmate 44-Language Support Matrix",
+  "dc:description": "The 44 learning languages and stated device-surface capabilities published for Wordmate.",
+  "dc:license": "https://creativecommons.org/licenses/by/4.0/",
+  "dc:source": "https://apps.apple.com/app/id6789917808",
+  "dialect": {
+    "encoding": "utf-8",
+    "header": true
+  },
+  "tableSchema": {
+    "primaryKey": "language_code",
+    "columns": [
+      {
+        "name": "language_code",
+        "titles": "Language Code",
+        "datatype": "string",
+        "required": true
+      },
+      {
+        "name": "english_name",
+        "titles": "English Name",
+        "datatype": "string",
+        "required": true
+      },
+      {
+        "name": "traditional_chinese_name",
+        "titles": "Traditional Chinese Name",
+        "datatype": "string",
+        "required": true
+      },
+      {
+        "name": "included_in_paid_download",
+        "titles": "Included In Paid Download",
+        "datatype": "boolean",
+        "required": true
+      },
+      {
+        "name": "iphone_ipad",
+        "titles": "Iphone Ipad",
+        "datatype": "string",
+        "required": true
+      },
+      {
+        "name": "home_screen_widget",
+        "titles": "Home Screen Widget",
+        "datatype": "string",
+        "required": true
+      },
+      {
+        "name": "apple_watch",
+        "titles": "Apple Watch",
+        "datatype": "string",
+        "required": true
+      },
+      {
+        "name": "voice_availability_note",
+        "titles": "Voice Availability Note",
+        "datatype": "string",
+        "required": true
+      },
+      {
+        "name": "source_url",
+        "titles": "Source Url",
+        "datatype": "anyURI",
+        "required": true
+      },
+      {
+        "name": "verified_date",
+        "titles": "Verified Date",
+        "datatype": "date",
+        "required": true
+      }
+    ]
+  }
+}

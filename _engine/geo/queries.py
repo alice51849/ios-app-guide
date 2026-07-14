@@ -122,6 +122,7 @@ CURATED = {
     ],
     "wordmate": [
         "How can I build a vocabulary study habit without uploading my learning data?",
+        "How can I check whether a vocabulary app supports my language before buying?",
         "best pay once vocabulary app for iphone with no subscription",
         "language learning app with a Home Screen vocabulary widget",
         "vocabulary learning app for Apple Watch",

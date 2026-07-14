@@ -1530,6 +1530,7 @@
 - [private vocabulary habit planner](https://alice51849.github.io/ios-app-guide/tools/private-vocabulary-habit-planner.html)
 - [screen time calculator](https://alice51849.github.io/ios-app-guide/tools/screen-time-calculator.html)
 - [subscription cost calculator](https://alice51849.github.io/ios-app-guide/tools/subscription-cost-calculator.html)
+- [wordmate 44 language support checker](https://alice51849.github.io/ios-app-guide/tools/wordmate-44-language-support-checker.html)
 - [zhuyin bingo](https://alice51849.github.io/ios-app-guide/tools/zhuyin-bingo.html)
 - [zhuyin blending card generator](https://alice51849.github.io/ios-app-guide/tools/zhuyin-blending-card-generator.html)
 - [zhuyin bopomofo anki deck](https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck.html)
@@ -1753,6 +1754,14 @@
   - API index: https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.json
   - JSON Schema: https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.schema.json
   - JSON Schema: https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbol.schema.json
+
+## Wordmate 44-language support dataset
+- [Bilingual purchase-readiness checker](https://alice51849.github.io/ios-app-guide/tools/wordmate-44-language-support-checker.html)
+  - Traditional Chinese: https://alice51849.github.io/ios-app-guide/zh-Hant/tools/wordmate-44-language-support-checker.html
+  - JSON dataset: https://alice51849.github.io/ios-app-guide/data/wordmate-language-support.json
+  - UTF-8 CSV: https://alice51849.github.io/ios-app-guide/data/wordmate-language-support.csv
+  - W3C CSVW metadata: https://alice51849.github.io/ios-app-guide/data/wordmate-language-support.csv-metadata.json
+  - JSON Schema: https://alice51849.github.io/ios-app-guide/data/wordmate-language-support.schema.json
 
 ## Open educational resources
 - [Family Travel Observation Passport](https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.html)

@@ -63,6 +63,8 @@ ZHUYIN_EPUB = "zhuyin-bopomofo-epub-reference"
 ZHUYIN_LIBRARY_CATALOG = "zhuyin-bopomofo-library-catalog-records"
 ZHUYIN_OER_METADATA = "zhuyin-bopomofo-oer-repository-metadata"
 ZHUYIN_DCAT_CATALOG = "zhuyin-bopomofo-dcat3-open-data-catalog"
+WORDMATE_LANGUAGE_DATASET = "wordmate-language-support"
+WORDMATE_LANGUAGE_TOOL = "wordmate-44-language-support-checker"
 RESOURCE_SYNC_SOURCE = "https://alice51849.github.io/.well-known/resourcesync"
 
 AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "anthropic-ai",
@@ -87,6 +89,35 @@ EXTERNAL_REPOS = [
     ("awesome-pay-once-todo-apps", "Pay-once to-do & checklist apps"),
     ("open-reference-datasets", "Machine-readable CC BY 4.0 reference datasets"),
 ]
+
+
+def wordmate_language_support_lines(*, full):
+    """Describe the checker only after its canonical dataset exists."""
+    if not os.path.exists(
+        os.path.join(DATA_DIR, f"{WORDMATE_LANGUAGE_DATASET}.json")
+    ):
+        return []
+    if full:
+        return [
+            "",
+            "## Wordmate 44-language support dataset",
+            f"- [Bilingual purchase-readiness checker]({SITE}/tools/{WORDMATE_LANGUAGE_TOOL}.html)",
+            f"  - Traditional Chinese: {SITE}/zh-Hant/tools/{WORDMATE_LANGUAGE_TOOL}.html",
+            f"  - JSON dataset: {SITE}/data/{WORDMATE_LANGUAGE_DATASET}.json",
+            f"  - UTF-8 CSV: {SITE}/data/{WORDMATE_LANGUAGE_DATASET}.csv",
+            f"  - W3C CSVW metadata: {SITE}/data/{WORDMATE_LANGUAGE_DATASET}.csv-metadata.json",
+            f"  - JSON Schema: {SITE}/data/{WORDMATE_LANGUAGE_DATASET}.schema.json",
+        ]
+    return [
+        "",
+        "## Wordmate 44-language support dataset (CC BY 4.0)",
+        f"- Bilingual purchase-readiness checker: {SITE}/tools/{WORDMATE_LANGUAGE_TOOL}.html",
+        f"- Traditional Chinese edition: {SITE}/zh-Hant/tools/{WORDMATE_LANGUAGE_TOOL}.html",
+        f"- JSON dataset: {SITE}/data/{WORDMATE_LANGUAGE_DATASET}.json",
+        f"- UTF-8 CSV: {SITE}/data/{WORDMATE_LANGUAGE_DATASET}.csv",
+        f"- W3C CSVW metadata: {SITE}/data/{WORDMATE_LANGUAGE_DATASET}.csv-metadata.json",
+        f"- JSON Schema: {SITE}/data/{WORDMATE_LANGUAGE_DATASET}.schema.json",
+    ]
 
 
 def load_competitors():
@@ -186,6 +217,7 @@ def build_llms(comp_map, live_keys):
                 if os.path.exists(json_path):
                     line += f" · JSON: {SITE}/data/{f[:-5]}.json"
                 lines.append(line)
+    lines += wordmate_language_support_lines(full=False)
     static_apis = [
         descriptor
         for descriptor in API_DESCRIPTORS
@@ -792,6 +824,7 @@ def build_llms_full(comp_map, live_keys):
                 if name.endswith(".schema.json")
             ):
                 lines.append(f"  - JSON Schema: {base}/{filename}")
+    lines += wordmate_language_support_lines(full=True)
     if os.path.exists(os.path.join(TOOLS, f"{FAMILY_TRAVEL_OER}.metadata.json")):
         opds2 = f"{SITE}/opds/{FAMILY_TRAVEL_OER}.json"
         opds1 = f"{SITE}/opds/{FAMILY_TRAVEL_OER}.xml"

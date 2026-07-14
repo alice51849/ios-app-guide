@@ -79,6 +79,7 @@ import refresh_primary_resource_answers
 import rsscloud_config
 import static_api_catalog
 import vocabulary_habit_planner
+import wordmate_language_support
 import zhuyin_blending_card_generator
 import zhuyin_sentence_reading_cards
 import zhuyin_mini_reader
@@ -11269,6 +11270,133 @@ class GeneratorTests(unittest.TestCase):
             [value for value in strings if value not in translations],
         )
 
+    def test_wordmate_language_support_checker_is_bilingual_open_and_idempotent(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            wordmate_language_support.build(pages, show_app_cta=True)
+            english_path = (
+                pages
+                / "tools"
+                / "wordmate-44-language-support-checker.html"
+            )
+            chinese_path = (
+                pages
+                / "zh-Hant"
+                / "tools"
+                / "wordmate-44-language-support-checker.html"
+            )
+            data_path = pages / "data" / "wordmate-language-support.json"
+            english = english_path.read_text(encoding="utf-8")
+            chinese = chinese_path.read_text(encoding="utf-8")
+            dataset = json.loads(data_path.read_text(encoding="utf-8"))
+            rows = list(
+                csv.DictReader(
+                    io.StringIO(
+                        (
+                            pages
+                            / "data"
+                            / "wordmate-language-support.csv"
+                        ).read_bytes().decode("utf-8")
+                    )
+                )
+            )
+            schema = json.loads(
+                (
+                    pages
+                    / "data"
+                    / "wordmate-language-support.schema.json"
+                ).read_text(encoding="utf-8")
+            )
+            csvw = json.loads(
+                (
+                    pages
+                    / "data"
+                    / "wordmate-language-support.csv-metadata.json"
+                ).read_text(encoding="utf-8")
+            )
+            stable_mtime = 1_700_000_000_000_000_000
+            os.utime(data_path, ns=(stable_mtime, stable_mtime))
+            first_bytes = data_path.read_bytes()
+            wordmate_language_support.build(pages, show_app_cta=True)
+            self.assertEqual(first_bytes, data_path.read_bytes())
+            self.assertEqual(stable_mtime, data_path.stat().st_mtime_ns)
+
+        self.assertEqual(44, len(dataset["records"]))
+        self.assertEqual(44, len(rows))
+        self.assertEqual(
+            44,
+            len({record["language_code"] for record in dataset["records"]}),
+        )
+        self.assertEqual(44, english.count("<tr data-language"))
+        self.assertIn('"@type":"Dataset"', english)
+        self.assertIn("wordmate-language-support.csv-metadata.json", english)
+        self.assertIn("wordmate-language-support.schema.json", english)
+        self.assertIn("navigator.share", english)
+        self.assertIn("navigator.clipboard.writeText", english)
+        self.assertNotIn("fetch(", english)
+        self.assertNotIn("XMLHttpRequest", english)
+        self.assertNotIn("localStorage", english)
+        self.assertNotIn("sessionStorage", english)
+        self.assertNotIn("document.cookie", english)
+        self.assertIn(
+            "https://apps.apple.com/app/id6789917808"
+            "?ct=iag_wordmate_language_matrix",
+            english,
+        )
+        self.assertIn("Try Japanese, zh-Hant, Kannada or 泰文", english)
+        self.assertIn("Wordmate 44 語言支援檢查器", chinese)
+        self.assertEqual(
+            "https://json-schema.org/draft/2020-12/schema",
+            schema["$schema"],
+        )
+        self.assertEqual(
+            "http://www.w3.org/ns/csvw",
+            csvw["@context"][0],
+        )
+        self.assertEqual(
+            "language_code",
+            csvw["tableSchema"]["primaryKey"],
+        )
+        inactive = wordmate_language_support.render_page(
+            "en",
+            show_app_cta=False,
+        )
+        self.assertNotIn("iag_wordmate_language_matrix", inactive)
+        self.assertNotIn('class="wrap card app-card"', inactive)
+
+    def test_wordmate_language_support_answer_leads_with_free_checker(self):
+        question = (
+            "How can I check whether a vocabulary app supports my language "
+            "before buying?"
+        )
+        self.assertEqual(1, queries.CURATED["wordmate"].count(question))
+        content = aeo_answers.normalized_content(
+            aeo_answers.default_content(question, "wordmate"),
+            question,
+            "wordmate",
+        )
+        page = aeo_answers.render_page(question, "wordmate", content)
+        tool_url = (
+            "https://alice51849.github.io/ios-app-guide/tools/"
+            "wordmate-44-language-support-checker.html"
+        )
+        self.assertEqual(tool_url, content["primary_resource_url"])
+        self.assertEqual("2026-07-14", content["date_modified"])
+        self.assertIn("W3C CSVW metadata", page)
+        self.assertIn("not a promise", page)
+        self.assertLess(page.index(tool_url), page.index("id6789917808"))
+        self.assertIn("not needed to use or download the free matrix", page)
+        translations = json.loads(
+            (Path(GEO) / "i18n_trans" / "zh-Hant.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        strings, _, _ = aeo_answers_i18n.extract_strings(page)
+        self.assertEqual(
+            [],
+            [value for value in strings if value not in translations],
+        )
+
     def test_primary_resource_refresh_plan_covers_every_owned_resource(self):
         expected = {
             (
@@ -13011,6 +13139,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_story_sequence_cards.py", workflow)
         self.assertEqual(1, workflow.count("passport_photo_print_sheet.py"))
         self.assertEqual(1, workflow.count("vocabulary_habit_planner.py"))
+        self.assertEqual(1, workflow.count("wordmate_language_support.py"))
         self.assertLess(
             workflow.index("refresh=True"),
             workflow.index("passport_photo_print_sheet.py"),
@@ -13018,6 +13147,10 @@ class GeneratorTests(unittest.TestCase):
         self.assertLess(
             workflow.index("refresh=True"),
             workflow.index("vocabulary_habit_planner.py"),
+        )
+        self.assertLess(
+            workflow.index("refresh=True"),
+            workflow.index("wordmate_language_support.py"),
         )
         self.assertEqual(1, workflow.count("refresh_primary_resource_answers.py"))
         self.assertIn("zhuyin_grade1_guide.py", workflow)
@@ -13242,6 +13375,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("reset --hard", publish)
         self.assertIn("passport_photo_print_sheet.py", publish)
         self.assertIn("vocabulary_habit_planner.py", publish)
+        self.assertIn("wordmate_language_support.py", publish)
         self.assertEqual(
             1,
             publish.count("refresh_primary_resource_answers.py"),

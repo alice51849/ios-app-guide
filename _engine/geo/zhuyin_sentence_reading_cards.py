@@ -821,14 +821,18 @@ def _update_one_index(index: Path, locale: str) -> bool:
         re.S,
     )
     updated = existing.sub("", text)
-    grid_marker = '<section class="wrap grid">'
-    if grid_marker in updated:
-        updated = updated.replace(grid_marker, grid_marker + card, 1)
+    anchor = re.compile(
+        r'(<article class="card third"><h2><a href="'
+        r'zhuyin-blending-card-generator\.html">.*?</article>)',
+        re.S,
+    )
+    if anchor.search(updated):
+        updated = anchor.sub(r"\1" + card, updated, count=1)
     else:
-        marker = "</section></main>"
-        if marker not in updated:
-            raise RuntimeError(f"{index} is missing its main tools section")
-        updated = updated.replace(marker, card + marker, 1)
+        grid_marker = '<section class="wrap grid">'
+        if grid_marker not in updated:
+            raise RuntimeError(f"{index} is missing its tools grid")
+        updated = updated.replace(grid_marker, grid_marker + card, 1)
     if updated == text:
         return False
     index.write_text(updated, encoding="utf-8")

@@ -1642,5 +1642,85 @@
         "a": "No reading response is entered or collected. Level, set and visibility choices remain only in page memory and reset when the page closes."
       }
     ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "connected_text_mini_reader",
+    "match": [
+      "move from zhuyin sentences to a short story",
+      "free printable zhuyin mini reader",
+      "zhuyin decodable story for kids",
+      "孩子從注音句子進到短篇故事怎麼練",
+      "免費注音小讀本",
+      "可列印注音短文"
+    ],
+    "query": "How can I help a child move from Zhuyin sentences to a short story?",
+    "page_title": "Free Printable Zhuyin Mini-Readers | 3 Original Stories",
+    "meta_description": "Read or print three original six-page Zhuyin mini-readers. Show all annotations, hide alternate pages, then reread without Zhuyin. No login or score.",
+    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-decodable-mini-reader.html",
+    "primary_resource_label": "Open the free Zhuyin mini-reader generator",
+    "lead": "Move from isolated sentences to connected text with one small six-page story at a time: read with full Zhuyin, hide the annotations on alternate pages, then reread the same story without visible Zhuyin.",
+    "detail": "The free bilingual tool linked above contains three original six-page mini-readers and 18 checked Traditional Chinese sentences. Each page keeps one short line on screen, every character has a standard Zhuyin annotation, and the same story supports three passes: all annotations visible, annotations hidden on pages 2, 4 and 6, then all annotations hidden. Nothing is typed, uploaded, timed, scored or saved, and the selected reader can be printed. Taiwan's official first-stage Mandarin outcomes include using Zhuyin material to learn reading (3-I-4) and reading text accurately at an appropriate rate (5-I-1). Those outcomes support the scope, but the Ministry of Education did not write, test or endorse these independent stories.",
+    "follow_up": "Choose one story and keep the first pass fully annotated. Use the middle pass only after the learner understands what happened across all six pages. A final no-Zhuyin reread is optional and does not prove fluency, mastery or school readiness. The free readers are complete without an app.",
+    "bullets": [
+      "Three original six-page stories with 18 checked Traditional Chinese sentences",
+      "Standard Zhuyin on every character, with phrase gaps and punctuation kept visible",
+      "Three-pass flow: full annotations, alternate-page support, then no visible Zhuyin",
+      "Browser reading and private printing with no account, form, upload, timer, score or saved profile",
+      "English and Traditional Chinese pages with direct Ministry of Education references"
+    ],
+    "decision_steps": [
+      "Choose one six-page story and read its title together.",
+      "Read all six pages with every Zhuyin annotation visible.",
+      "Talk briefly about the character, action and ending before removing support.",
+      "Hide annotations on pages 2, 4 and 6 and reread the same connected text.",
+      "Use the no-Zhuyin pass only if it feels calm; otherwise keep the support visible."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Still pauses inside a single sentence",
+        "check": "Return to the short-sentence cards before adding a six-page story",
+        "why": "Connected text adds memory and meaning demands across several lines"
+      },
+      {
+        "need": "Reads each line but loses the story",
+        "check": "Keep all Zhuyin visible and discuss what changed from page to page",
+        "why": "The goal is to connect meaning, not merely finish six separate sentences"
+      },
+      {
+        "need": "Ready to reduce annotation support",
+        "check": "Hide Zhuyin on alternate pages before hiding it everywhere",
+        "why": "A middle pass changes one support gradually without turning reading into a test"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is optional and is not needed for the free mini-readers. It can reinforce listening, tracing, tones and syllable blending before connected-text reading, with a one-time lifetime unlock, no ads, no subscription and no account.",
+    "sources": [
+      {
+        "title": "Free Zhuyin mini-reader generator",
+        "url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-decodable-mini-reader.html"
+      },
+      {
+        "title": "CIRN Mandarin learning outcomes for the first learning stage",
+        "url": "https://cirn.k12ea.gov.tw/TWELVE/List.aspx?fid=11010"
+      },
+      {
+        "title": "Taiwan Ministry of Education Mandarin Phonetic Symbols handbook",
+        "url": "https://language.moe.gov.tw/001/Upload/Files/site_content/M0001/juyin/html_ch/index.html"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Are these stories copied or adapted from a published children's book?",
+        "a": "No. All three story sequences and every sentence were written for this free tool; it reproduces no book, illustration, audio clip or Ministry worksheet."
+      },
+      {
+        "q": "Does reading the no-Zhuyin pass prove fluency?",
+        "a": "No. It is one supported reread of familiar text, not a score, level, assessment or proof of mastery."
+      },
+      {
+        "q": "Does the tool collect what a child reads?",
+        "a": "No reading response is entered or collected. Story and annotation choices remain only in page memory and reset when the page closes."
+      }
+    ]
   }
 ]

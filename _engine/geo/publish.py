@@ -81,6 +81,10 @@ def main():
             "how-can-i-help-a-child-who-can-blend-zhuyin-syllables-but-"
             "cannot-read-a-whole-sentence"
         ),
+        (
+            "how-can-i-help-a-child-move-from-zhuyin-sentences-to-a-"
+            "short-story"
+        ),
         "where-can-i-download-a-free-bopomofo-epub-for-e-readers",
         (
             "where-can-a-school-library-download-catalog-records-for-a-"
@@ -144,6 +148,7 @@ def main():
     require([PY, os.path.join(HERE, "zhuyin_grade1_summer_calendar.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_blending_card_generator.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_sentence_reading_cards.py")], env=env)
+    require([PY, os.path.join(HERE, "zhuyin_mini_reader.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_grade1_guide.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_anki_deck.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_skos_vocabulary.py")], env=env)
@@ -235,8 +240,8 @@ def main():
     require([PY, os.path.join(HERE, "gen_app_store_share_ctas.py")], env=env)
     require([PY, os.path.join(HERE, "gen_guide_design.py")], env=env)
     require([PY, os.path.join(HERE, "gen_llms.py"), "--cached-live"], env=env)
-    require([PY, os.path.join(HERE, "gen_feed.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_resourcesync.py")], env=env)
+    require([PY, os.path.join(HERE, "gen_feed.py")], env=env)
     require([PY, os.path.join(HERE, "gen_sitemap_lastmod.py")], env=env)
     if "--no-push" in sys.argv:
         print("\n(--no-push:略過部署/推送)")

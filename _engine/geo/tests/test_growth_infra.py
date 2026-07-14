@@ -75,6 +75,7 @@ import rsscloud_config
 import static_api_catalog
 import zhuyin_blending_card_generator
 import zhuyin_sentence_reading_cards
+import zhuyin_mini_reader
 import zhuyin_grandparent_call_kit
 import zhuyin_grade1_guide
 import zhuyin_grade1_summer_calendar
@@ -9835,6 +9836,7 @@ class GeneratorTests(unittest.TestCase):
             zhuyin_grade1_summer_calendar,
             zhuyin_blending_card_generator,
             zhuyin_sentence_reading_cards,
+            zhuyin_mini_reader,
         ):
             generator.build(pages)
         for filename in (
@@ -9867,6 +9869,15 @@ class GeneratorTests(unittest.TestCase):
             )
             self.assertEqual(7, len(urls))
             self.assertTrue(all(path.exists() for path in expected))
+            for landing in expected[5:7]:
+                content = landing.read_text(encoding="utf-8")
+                for filename in ("feed.xml", "rss.xml", "feed.json"):
+                    self.assertEqual(
+                        1,
+                        content.count(
+                            f'href="{gen_feed.SITE}/{filename}"'
+                        ),
+                    )
             self.assertEqual(
                 "https://alice51849.github.io/.well-known/resourcesync",
                 zhuyin_resourcesync.SOURCE_DESCRIPTION_URL,
@@ -9894,7 +9905,7 @@ class GeneratorTests(unittest.TestCase):
 
             resources = zhuyin_resourcesync.discover_resources(pages)
             entries = resource_list.findall(f"{{{sitemap_ns}}}url")
-            self.assertEqual(256, len(resources))
+            self.assertEqual(258, len(resources))
             self.assertEqual(len(resources), len(entries))
             resources_by_path = {
                 resource.relative_path.as_posix(): resource
@@ -10633,7 +10644,10 @@ class GeneratorTests(unittest.TestCase):
                 tools = pages / locale / "tools" if locale else pages / "tools"
                 tools.mkdir(parents=True)
                 (tools / "index.html").write_text(
-                    '<main><section class="wrap grid"></section></main>',
+                    '<main><section class="wrap grid">'
+                    '<article class="card third"><h2><a href="'
+                    'zhuyin-blending-card-generator.html">Blending</a>'
+                    "</h2><p>Blend.</p></article></section></main>",
                     encoding="utf-8",
                 )
             first = zhuyin_sentence_reading_cards.build(pages)
@@ -10649,6 +10663,10 @@ class GeneratorTests(unittest.TestCase):
                 self.assertEqual(
                     1,
                     index.count(f"{zhuyin_sentence_reading_cards.SLUG}.html"),
+                )
+                self.assertLess(
+                    index.index("zhuyin-blending-card-generator.html"),
+                    index.index(f"{zhuyin_sentence_reading_cards.SLUG}.html"),
                 )
 
     def test_zhuyin_sentence_answer_leads_with_free_reading_cards(self):
@@ -10672,6 +10690,132 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("fid=11010", page)
         self.assertLess(page.index(tool_url), page.index("id6773017109"))
         self.assertIn("not needed for the free sentence cards", page)
+
+    def test_zhuyin_mini_readers_are_original_private_and_non_scored(self):
+        english = zhuyin_mini_reader.render_page("en")
+        traditional = zhuyin_mini_reader.render_page("zh-Hant")
+        self.assertEqual(3, len(zhuyin_mini_reader.STORIES))
+        self.assertTrue(
+            all(len(story["pages"]) == 6 for story in zhuyin_mini_reader.STORIES)
+        )
+        self.assertEqual(
+            "˙ㄊㄡ",
+            zhuyin_mini_reader.STORIES[0]["pages"][4]["phrases"][2]["tokens"][2][
+                "reading"
+            ],
+        )
+        self.assertEqual(
+            "ㄧ",
+            zhuyin_mini_reader.STORIES[0]["pages"][5]["phrases"][2]["tokens"][0][
+                "reading"
+            ],
+        )
+        self.assertEqual(
+            "ㄨㄟ",
+            zhuyin_mini_reader.STORIES[2]["pages"][2]["phrases"][0]["tokens"][0][
+                "reading"
+            ],
+        )
+        for page in (english, traditional):
+            self.assertIn('"WebApplication", "LearningResource"', page)
+            self.assertIn('"@type": "FAQPage"', page)
+            self.assertIn('hreflang="en"', page)
+            self.assertIn('hreflang="zh-Hant"', page)
+            self.assertIn('id="story-buttons"', page)
+            self.assertIn('id="mode-buttons"', page)
+            self.assertIn('data-mode="mixed"', page)
+            self.assertIn("<ruby>", page)
+            self.assertIn("window.print()", page)
+            self.assertIn("navigator.share", page)
+            self.assertIn("id6773017109", page)
+            self.assertIn("html_ch/index.html", page)
+            self.assertIn("phonetic.jsp?la=0", page)
+            self.assertIn("fid=11010", page)
+            self.assertNotIn("localStorage", page)
+            self.assertNotIn("sessionStorage", page)
+            self.assertNotIn("XMLHttpRequest", page)
+            self.assertNotIn("fetch(", page)
+            self.assertNotIn("getUserMedia", page)
+            self.assertNotIn("<input", page)
+            self.assertNotIn("dataLayer", page)
+            self.assertNotIn("gtag(", page)
+            schemas = [
+                json.loads(block)
+                for block in re.findall(
+                    r'<script type="application/ld\+json">(.*?)</script>',
+                    page,
+                    re.S,
+                )
+            ]
+            resource = next(
+                schema
+                for schema in schemas
+                if schema.get("@type") == ["WebApplication", "LearningResource"]
+            )
+            self.assertTrue(resource["isAccessibleForFree"])
+            self.assertEqual("0", resource["offers"]["price"])
+            self.assertEqual("2026-07-14", resource["datePublished"])
+            self.assertEqual("2026-07-14", resource["dateModified"])
+            main = page.split("<main>", 1)[1]
+            self.assertLess(main.index('id="generator"'), main.index("id6773017109"))
+        self.assertIn("All 18 sentences and three story sequences", english)
+        self.assertIn("not a test, level or diagnosis", english)
+        self.assertIn("dictionary base tones", english)
+        self.assertIn("三篇故事與 18 句文字全部為本站原創", traditional)
+        self.assertIn("不是測驗、程度分級或診斷", traditional)
+        self.assertIn("注音依教育部辭典標示本調", traditional)
+        self.assertIn("one-time lifetime unlock", english)
+        self.assertIn("一次付費永久解鎖", traditional)
+
+    def test_zhuyin_mini_reader_builds_both_pages_and_indexes_idempotently(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale in ("", "zh-Hant"):
+                tools = pages / locale / "tools" if locale else pages / "tools"
+                tools.mkdir(parents=True)
+                (tools / "index.html").write_text(
+                    '<main><section class="wrap grid">'
+                    '<article class="card third"><h2><a href="'
+                    'zhuyin-short-sentence-reading-cards.html">Sentences</a>'
+                    "</h2><p>Bridge.</p></article></section></main>",
+                    encoding="utf-8",
+                )
+            first = zhuyin_mini_reader.build(pages)
+            second = zhuyin_mini_reader.build(pages)
+            self.assertEqual(first, second)
+            self.assertEqual(2, len(first))
+            for locale in ("", "zh-Hant"):
+                tools = pages / locale / "tools" if locale else pages / "tools"
+                self.assertTrue(
+                    (tools / f"{zhuyin_mini_reader.SLUG}.html").exists()
+                )
+                index = (tools / "index.html").read_text(encoding="utf-8")
+                self.assertEqual(1, index.count(f"{zhuyin_mini_reader.SLUG}.html"))
+                self.assertLess(
+                    index.index("zhuyin-short-sentence-reading-cards.html"),
+                    index.index(f"{zhuyin_mini_reader.SLUG}.html"),
+                )
+
+    def test_zhuyin_mini_reader_answer_leads_with_free_original_stories(self):
+        question = (
+            "How can I help a child move from Zhuyin sentences to a short story?"
+        )
+        self.assertEqual(1, queries.CURATED["lumibopomofo"].count(question))
+        content = aeo_answers.normalized_content(
+            aeo_answers.default_content(question, "lumibopomofo"),
+            question,
+            "lumibopomofo",
+        )
+        page = aeo_answers.render_page(question, "lumibopomofo", content)
+        tool_url = (
+            "https://alice51849.github.io/ios-app-guide/tools/"
+            "zhuyin-decodable-mini-reader.html"
+        )
+        self.assertEqual(tool_url, content["primary_resource_url"])
+        self.assertIn("three original six-page mini-readers", page)
+        self.assertIn("3-I-4", page)
+        self.assertLess(page.index(tool_url), page.index("id6773017109"))
+        self.assertIn("not needed for the free mini-readers", page)
 
     def test_grade1_summer_answer_leads_with_free_calendar(self):
         question = (
@@ -12286,8 +12430,13 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_grade1_summer_calendar.py", workflow)
         self.assertIn("zhuyin_blending_card_generator.py", workflow)
         self.assertIn("zhuyin_sentence_reading_cards.py", workflow)
+        self.assertIn("zhuyin_mini_reader.py", workflow)
         self.assertIn('READING_SLUG="how-can-i-help-a-child-who-can-blend-', workflow)
         self.assertIn('--refresh-slug "$READING_SLUG"', workflow)
+        self.assertIn(
+            'MINI_READER_SLUG="how-can-i-help-a-child-move-from-zhuyin-', workflow
+        )
+        self.assertIn('--refresh-slug "$MINI_READER_SLUG"', workflow)
         self.assertIn("zhuyin_grade1_guide.py", workflow)
         self.assertIn("zhuyin_anki_deck.py", workflow)
         self.assertIn("zhuyin_skos_vocabulary.py", workflow)
@@ -12338,6 +12487,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_grade1_summer_calendar.py",
             "zhuyin_blending_card_generator.py",
             "zhuyin_sentence_reading_cards.py",
+            "zhuyin_mini_reader.py",
             "zhuyin_grade1_guide.py",
             "zhuyin_anki_deck.py",
             "zhuyin_skos_vocabulary.py",
@@ -12376,8 +12526,8 @@ class GeneratorTests(unittest.TestCase):
             "gen_app_store_share_ctas.py",
             "gen_guide_design.py",
             "gen_llms.py --cached-live",
-            "gen_feed.py",
             "zhuyin_resourcesync.py",
+            "gen_feed.py",
             "gen_sitemap_lastmod.py",
         )
         workflow_positions = [refresh_block.index(item) for item in workflow_chain]
@@ -12425,8 +12575,8 @@ class GeneratorTests(unittest.TestCase):
             "gen_app_store_share_ctas.py",
             "gen_guide_design.py",
             "gen_llms.py --cached-live",
-            "gen_feed.py",
             "zhuyin_resourcesync.py",
+            "gen_feed.py",
             "gen_sitemap_lastmod.py",
         )
         final_positions = [final_cleanup_block.index(item) for item in final_chain]
@@ -12525,6 +12675,11 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_grade1_summer_calendar.py", publish)
         self.assertIn("zhuyin_blending_card_generator.py", publish)
         self.assertIn("zhuyin_sentence_reading_cards.py", publish)
+        self.assertIn("zhuyin_mini_reader.py", publish)
+        self.assertIn(
+            "how-can-i-help-a-child-move-from-zhuyin-sentences-to-a-short-story",
+            publish.replace('"\n            "', ""),
+        )
         self.assertIn("zhuyin_grade1_guide.py", publish)
         self.assertIn("zhuyin_anki_deck.py", publish)
         self.assertIn("zhuyin_skos_vocabulary.py", publish)
@@ -12545,6 +12700,10 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_oer_metadata.py", publish)
         self.assertIn("zhuyin_dcat_catalog.py", publish)
         self.assertIn("zhuyin_resourcesync.py", publish)
+        self.assertLess(
+            publish.index("zhuyin_resourcesync.py"),
+            publish.index("gen_feed.py"),
+        )
         self.assertIn("gen_image_sitemap.py", publish)
         self.assertIn("gen_linkset.py", publish)
         self.assertIn("gen_social_previews.py", publish)
@@ -12584,6 +12743,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_grade1_summer_calendar.py",
             "zhuyin_blending_card_generator.py",
             "zhuyin_sentence_reading_cards.py",
+            "zhuyin_mini_reader.py",
             "zhuyin_grade1_guide.py",
             "zhuyin_anki_deck.py",
             "zhuyin_skos_vocabulary.py",
@@ -12617,8 +12777,8 @@ class GeneratorTests(unittest.TestCase):
             "gen_app_store_share_ctas.py",
             "gen_guide_design.py",
             "gen_llms.py",
-            "gen_feed.py",
             "zhuyin_resourcesync.py",
+            "gen_feed.py",
             "gen_sitemap_lastmod.py",
         )
         publish_positions = [
@@ -12644,8 +12804,8 @@ class GeneratorTests(unittest.TestCase):
             push_loop.index("reconcile_lastmod_after_rebase(env)"),
         )
         self.assertLess(
-            publish.rindex("gen_feed.py"),
             publish.rindex("zhuyin_resourcesync.py"),
+            publish.rindex("gen_feed.py"),
         )
         self.assertIn("--refresh-slug", publish)
         self.assertIn(

@@ -36,7 +36,7 @@ SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").
 MEDIA_NS = "http://search.yahoo.com/mrss/"
 PREVIEW_SIZE = gen_social_previews.CARD_SIZE
 PREVIEW_MIME = "image/jpeg"
-MAX_ITEMS = 60
+MAX_ITEMS = 75
 REQUIRED_SUBDIRS = ("guides",)
 REQUIRED_RELATIVE_PATHS = (
     "data/zhuyin-bopomofo-dcat3-open-data-catalog.html",

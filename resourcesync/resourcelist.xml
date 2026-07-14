@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:rs="http://www.openarchives.org/rs/terms/">
   <rs:ln rel="describedby" href="https://alice51849.github.io/ios-app-guide/resourcesync/bopomofo-collection.jsonld" type="application/ld+json"/>
   <rs:ln rel="up" href="https://alice51849.github.io/ios-app-guide/resourcesync/capabilitylist.xml" type="application/xml"/>
-  <rs:md capability="resourcelist" at="2026-07-14T04:35:48Z"/>
+  <rs:md capability="resourcelist" at="2026-07-14T05:55:36Z"/>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.html</loc>
     <lastmod>2026-07-11</lastmod>
@@ -582,7 +582,7 @@
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html</loc>
     <lastmod>2026-07-14</lastmod>
-    <rs:md hash="sha-256:8e40b623436accd9c1048b5dfac0cd6c18395430056d3117edf845c8ded2a994" length="8300" type="text/html"/>
+    <rs:md hash="sha-256:6ebdef71e57c3a126011f07763bee8afbd3f4e750adb187e4bbec0ca276a7942" length="8825" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html</loc>
@@ -903,6 +903,10 @@
     <rs:md hash="sha-256:90aabcd6ef482223fd85fe5928678642342f5464fce08995e48cb5af2c378b04" length="10132" type="text/html"/>
   </url>
   <url>
+    <loc>https://alice51849.github.io/ios-app-guide/tools/zhuyin-decodable-mini-reader.html</loc>
+    <rs:md hash="sha-256:c3200f066726e822cdb9fa375bfba5f7147b4bdd52fda5f9a271763c882cd7d3" length="30531" type="text/html"/>
+  </url>
+  <url>
     <loc>https://alice51849.github.io/ios-app-guide/tools/zhuyin-family-picture-book-club-kit.html</loc>
     <rs:md hash="sha-256:94fabbef3daa422722dfdd7445d251724e2bf13b0d13a536258f1ec77cea5e7c" length="22889" type="text/html"/>
   </url>
@@ -1021,7 +1025,7 @@
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-resourcesync.html</loc>
     <lastmod>2026-07-14</lastmod>
-    <rs:md hash="sha-256:605926744d7eb22bb20f72df627ad4ca7c759ba86707d01fd8f78272ce1d7670" length="8156" type="text/html"/>
+    <rs:md hash="sha-256:271159bb7dc7cb66ff9f5e51a3ab0e5719b6832587f2d72b2bd12e6b87d8f838" length="8681" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-vocabulary.html</loc>
@@ -1036,6 +1040,10 @@
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-bopomofo-anki-deck.html</loc>
     <lastmod>2026-07-11</lastmod>
     <rs:md hash="sha-256:9d434aca0135951915c368296b9a8b93ffe31e490a6f0bdd2b2d1b0614c0f4f3" length="17605" type="text/html"/>
+  </url>
+  <url>
+    <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-decodable-mini-reader.html</loc>
+    <rs:md hash="sha-256:7594b7a168183fd8dd6248280a1e641a22d8d4a797f295b3b3996d97e37c9aaf" length="29849" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-family-picture-book-club-kit.html</loc>

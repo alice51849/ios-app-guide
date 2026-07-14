@@ -25,8 +25,11 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GEO_SITE: https://alice51849.github.io/ios-app-guide
+      SITEMAP_LASTMOD_INTERMEDIATE_STATE: ${{ runner.temp }}/sitemap-lastmod-intermediate.json
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
@@ -48,6 +51,13 @@ jobs:
         run: |
           rm -rf _engine/geo/pages
           ln -s "$GITHUB_WORKSPACE" _engine/geo/pages
+      - name: Snapshot truthful sitemap baseline
+        run: |
+          rm -f "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
+          if test -f _engine/geo/sitemap_lastmod_state.json; then
+            cp _engine/geo/sitemap_lastmod_state.json \
+              "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
+          fi
       - name: Materialize newly live app surfaces
         run: |
           cd _engine/geo
@@ -156,14 +166,34 @@ jobs:
           python3 zhuyin_oer_metadata.py
           python3 zhuyin_dcat_catalog.py
           python3 prioritize_trip_planet_resources.py
-          python3 add_related_tools.py
-          python3 add_related_tools.py --locale zh-Hant
           python3 gen_hubs.py
           python3 gen_app_catalog.py
+          python3 aeo_answers.py --cached-live --limit 0
+          python3 fix_en_hreflang.py || echo "fix_en_hreflang exited $?"
+          python3 cleanup_localized_assets.py --cached-live
+          for loc in "" "--locale zh-Hant" "--locale zh-Hans" "--locale ja" "--locale ko" "--locale es-ES" "--locale es-MX" "--locale de-DE" "--locale fr-FR" "--locale pt-BR" "--locale ms" "--locale ar-SA" "--locale pl"; do
+            python3 add_related_answers.py $loc || echo "add_related_answers $loc exited $?"
+          done
+          for loc in "" "--locale zh-Hant" "--locale zh-Hans" "--locale ja" "--locale ko" "--locale es-ES" "--locale es-MX" "--locale de-DE" "--locale fr-FR" "--locale pt-BR" "--locale ms" "--locale ar-SA" "--locale pl"; do
+            python3 add_related_tools.py $loc || echo "add_related_tools $loc exited $?"
+          done
           python3 cleanup_localized_assets.py --cached-live
           python3 zhuyin_resourcesync.py
-          python3 aeo_answers.py --cached-live --limit 0
+          python3 ensure_live_guides.py
+          python3 gen_webstories.py
+          python3 gen_image_sitemap.py
+          python3 gen_linkset.py
+          python3 gen_social_previews.py
+          python3 gen_smart_app_banners.py
           python3 gen_mobile_app_identity.py
+          python3 gen_mobile_store_ctas.py
+          python3 gen_app_store_qr_ctas.py
+          python3 gen_app_store_share_ctas.py
+          python3 gen_guide_design.py
+          python3 gen_llms.py --cached-live
+          python3 gen_feed.py
+          python3 gen_sitemap_lastmod.py \
+            --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
       - name: Commit English content first (fast, before slow localization)
         run: |
           git config user.name "github-actions[bot]"
@@ -174,6 +204,12 @@ jobs:
           else
             git commit -m "Daily GEO content: new answer pages + refreshed sitemaps"
             git pull --rebase --autostash -X theirs
+            python3 _engine/geo/gen_sitemap_lastmod.py \
+              --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
+            git add -A
+            if ! git diff --cached --quiet; then
+              git commit -m "Reconcile truthful sitemap lastmod after rebase"
+            fi
             git push
           fi
       - name: Localize from curated dictionaries (zero-cost, no API)
@@ -221,8 +257,7 @@ jobs:
           python3 gen_guide_design.py
           python3 gen_llms.py --cached-live
           python3 gen_feed.py
-      - name: Unlink site dir
-        run: rm -f _engine/geo/pages
+          python3 gen_sitemap_lastmod.py
       - name: Commit localized pages if any
         run: |
           git add -A
@@ -231,5 +266,12 @@ jobs:
           else
             git commit -m "Daily GEO content: localized answer pages"
             git pull --rebase --autostash -X theirs
+            python3 _engine/geo/gen_sitemap_lastmod.py
+            git add -A
+            if ! git diff --cached --quiet; then
+              git commit -m "Reconcile truthful sitemap lastmod after rebase"
+            fi
             git push
           fi
+      - name: Unlink site dir
+        run: rm -f _engine/geo/pages

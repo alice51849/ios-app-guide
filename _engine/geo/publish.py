@@ -40,6 +40,35 @@ def require(cmd, cwd=None, env=None):
     return output
 
 
+def reconcile_lastmod_after_rebase(env):
+    require([PY, os.path.join(HERE, "gen_sitemap_lastmod.py")], env=env)
+    require(["git", "add", "-A"], cwd=PAGES)
+    returncode, output = run(
+        ["git", "diff", "--cached", "--quiet"],
+        cwd=PAGES,
+    )
+    if returncode == 0:
+        return
+    if returncode != 1:
+        raise RuntimeError(
+            "Unable to inspect post-rebase sitemap changes:\n"
+            f"{output[-1500:]}"
+        )
+    require(
+        [
+            "git",
+            "-c",
+            "user.name=alice51849",
+            "-c",
+            "user.email=alice51849@users.noreply.github.com",
+            "commit",
+            "-m",
+            "Reconcile truthful sitemap lastmod after rebase",
+        ],
+        cwd=PAGES,
+    )
+
+
 def main():
     env = dict(os.environ, GEO_SITE=SITE)
     curated_slugs = [
@@ -202,6 +231,7 @@ def main():
     require([PY, os.path.join(HERE, "gen_guide_design.py")], env=env)
     require([PY, os.path.join(HERE, "gen_llms.py"), "--cached-live"], env=env)
     require([PY, os.path.join(HERE, "gen_feed.py")], env=env)
+    require([PY, os.path.join(HERE, "gen_sitemap_lastmod.py")], env=env)
     if "--no-push" in sys.argv:
         print("\n(--no-push:略過部署/推送)")
         return
@@ -231,6 +261,7 @@ def main():
             run(["git", "rebase", "--abort"], cwd=PAGES)
             print("⚠️ rebase 衝突已中止；本機提交保留，等待下次重試。")
             break
+        reconcile_lastmod_after_rebase(env)
     if not pushed:
         raise RuntimeError("未能 push；已保留本機提交，未送出 IndexNow。")
     # 3) IndexNow:有變更才推

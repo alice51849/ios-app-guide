@@ -62,6 +62,7 @@ import gen_llms
 import gen_mobile_app_identity
 import gen_mobile_store_ctas
 import gen_roundups
+import gen_sitemap_lastmod
 import gen_social_previews
 import gen_smart_app_banners
 import indexnow_submit
@@ -12020,6 +12021,25 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("aeo_answers.py --cached-live", workflow)
         self.assertIn("aeo_pages.py --cached-live", workflow)
         self.assertIn("gen_llms.py --cached-live", workflow)
+        self.assertIn("fetch-depth: 0", workflow)
+        self.assertEqual(4, workflow.count("gen_sitemap_lastmod.py"))
+        self.assertEqual(
+            2,
+            workflow.count(
+                '--state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"'
+            ),
+        )
+        snapshot_block = workflow.split(
+            "- name: Snapshot truthful sitemap baseline", 1
+        )[1].split("- name: Materialize newly live app surfaces", 1)[0]
+        self.assertIn(
+            "${{ runner.temp }}/sitemap-lastmod-intermediate.json",
+            workflow,
+        )
+        self.assertIn(
+            "cp _engine/geo/sitemap_lastmod_state.json",
+            snapshot_block,
+        )
         materialize_block = workflow.split(
             "- name: Materialize newly live app surfaces", 1
         )[1].split("- name: Verify zero-cost growth infrastructure", 1)[0]
@@ -12027,6 +12047,7 @@ class GeneratorTests(unittest.TestCase):
             materialize_block.index("build_pages_i18n.py --cached-live"),
             materialize_block.index("ensure_live_guides.py"),
         )
+        self.assertNotIn("gen_sitemap_lastmod.py", materialize_block)
         self.assertIn("zhuyin_picture_book_club_kit.py", workflow)
         self.assertIn("zhuyin_parent_teacher_handoff_kit.py", workflow)
         self.assertIn("zhuyin_library_storytime_kit.py", workflow)
@@ -12099,25 +12120,61 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_oer_metadata.py",
             "zhuyin_dcat_catalog.py",
             "prioritize_trip_planet_resources.py",
-            "add_related_tools.py",
             "gen_hubs.py",
             "gen_app_catalog.py",
-            "cleanup_localized_assets.py --cached-live",
-            "zhuyin_resourcesync.py",
             "aeo_answers.py --cached-live --limit 0",
+            "fix_en_hreflang.py",
+            "add_related_answers.py",
+            "add_related_tools.py",
+            "zhuyin_resourcesync.py",
+            "ensure_live_guides.py",
+            "gen_webstories.py",
+            "gen_image_sitemap.py",
+            "gen_linkset.py",
+            "gen_social_previews.py",
+            "gen_smart_app_banners.py",
             "gen_mobile_app_identity.py",
+            "gen_mobile_store_ctas.py",
+            "gen_app_store_qr_ctas.py",
+            "gen_app_store_share_ctas.py",
+            "gen_guide_design.py",
+            "gen_llms.py --cached-live",
+            "gen_feed.py",
+            "gen_sitemap_lastmod.py",
         )
         workflow_positions = [refresh_block.index(item) for item in workflow_chain]
         self.assertEqual(sorted(workflow_positions), workflow_positions)
+        self.assertIn(
+            '--state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"',
+            refresh_block,
+        )
+        first_cleanup = refresh_block.index(
+            "cleanup_localized_assets.py --cached-live"
+        )
+        second_cleanup = refresh_block.rindex(
+            "cleanup_localized_assets.py --cached-live"
+        )
         self.assertLess(
-            refresh_block.index("cleanup_localized_assets.py --cached-live"),
-            refresh_block.rindex("zhuyin_resourcesync.py"),
+            refresh_block.index("fix_en_hreflang.py"),
+            first_cleanup,
+        )
+        self.assertLess(
+            first_cleanup,
+            refresh_block.index("add_related_answers.py"),
+        )
+        self.assertLess(
+            refresh_block.index("add_related_tools.py"),
+            second_cleanup,
+        )
+        self.assertLess(
+            second_cleanup,
+            refresh_block.index("zhuyin_resourcesync.py"),
         )
         self.assertEqual(2, workflow.count("zhuyin_resourcesync.py"))
         self.assertEqual(3, workflow.count("gen_mobile_app_identity.py"))
         final_cleanup_block = workflow.split(
             "- name: Final link and availability cleanup", 1
-        )[1].split("- name: Unlink site dir", 1)[0]
+        )[1].split("- name: Commit localized pages if any", 1)[0]
         final_chain = (
             "cleanup_localized_assets.py --cached-live",
             "zhuyin_resourcesync.py",
@@ -12132,9 +12189,74 @@ class GeneratorTests(unittest.TestCase):
             "gen_guide_design.py",
             "gen_llms.py --cached-live",
             "gen_feed.py",
+            "gen_sitemap_lastmod.py",
         )
         final_positions = [final_cleanup_block.index(item) for item in final_chain]
         self.assertEqual(sorted(final_positions), final_positions)
+        self.assertNotIn(
+            "SITEMAP_LASTMOD_INTERMEDIATE_STATE",
+            final_cleanup_block,
+        )
+        stable_surface_chain = (
+            "ensure_live_guides.py",
+            "gen_webstories.py",
+            "gen_image_sitemap.py",
+            "gen_linkset.py",
+            "gen_social_previews.py",
+            "gen_smart_app_banners.py",
+            "gen_mobile_app_identity.py",
+            "gen_mobile_store_ctas.py",
+            "gen_app_store_qr_ctas.py",
+            "gen_app_store_share_ctas.py",
+            "gen_guide_design.py",
+            "gen_llms.py --cached-live",
+            "gen_feed.py",
+        )
+        materialize_positions = [
+            materialize_block.index(item) for item in stable_surface_chain
+        ]
+        self.assertEqual(
+            sorted(materialize_positions),
+            materialize_positions,
+        )
+        stable_lastmod_chain = (
+            *stable_surface_chain,
+            "gen_sitemap_lastmod.py",
+        )
+        for block in (refresh_block, final_cleanup_block):
+            positions = [block.index(item) for item in stable_lastmod_chain]
+            self.assertEqual(sorted(positions), positions)
+        english_commit_block = workflow.split(
+            "- name: Commit English content first", 1
+        )[1].split("- name: Localize from curated dictionaries", 1)[0]
+        localized_commit_block = workflow.split(
+            "- name: Commit localized pages if any", 1
+        )[1].split("- name: Unlink site dir", 1)[0]
+        self.assertIn(
+            "SITEMAP_LASTMOD_INTERMEDIATE_STATE",
+            english_commit_block,
+        )
+        self.assertNotIn(
+            "SITEMAP_LASTMOD_INTERMEDIATE_STATE",
+            localized_commit_block,
+        )
+        for block in (english_commit_block, localized_commit_block):
+            pull = block.index("git pull --rebase")
+            reconcile = block.index(
+                "python3 _engine/geo/gen_sitemap_lastmod.py",
+                pull,
+            )
+            restage = block.index("git add -A", reconcile)
+            push = block.index("git push", restage)
+            self.assertLess(pull, reconcile)
+            self.assertLess(reconcile, restage)
+            self.assertLess(restage, push)
+        self.assertEqual(
+            2,
+            workflow.count(
+                'git commit -m "Reconcile truthful sitemap lastmod after rebase"'
+            ),
+        )
         self.assertIn("--refresh-slug \"$SUMMER_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$OBSERVATION_SLUG\"", workflow)
         self.assertIn("--refresh-slug \"$EPUB_SLUG\"", workflow)
@@ -12201,7 +12323,10 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("prioritize_trip_planet_resources.py", publish)
         self.assertIn('gen_llms.py"), "--cached-live"', publish)
         self.assertIn("gen_feed.py", publish)
+        self.assertIn("gen_sitemap_lastmod.py", publish)
+        self.assertEqual(2, publish.count("gen_sitemap_lastmod.py"))
         self.assertEqual(1, publish.count("zhuyin_resourcesync.py"))
+        publish_main = publish.split("def main():", 1)[1]
         publish_chain = (
             "build_pages_i18n.py",
             "gen_data_hub.py",
@@ -12252,9 +12377,30 @@ class GeneratorTests(unittest.TestCase):
             "gen_guide_design.py",
             "gen_llms.py",
             "gen_feed.py",
+            "gen_sitemap_lastmod.py",
         )
-        publish_positions = [publish.index(item) for item in publish_chain]
+        publish_positions = [
+            publish_main.index(item) for item in publish_chain
+        ]
         self.assertEqual(sorted(publish_positions), publish_positions)
+        reconcile = publish.split(
+            "def reconcile_lastmod_after_rebase", 1
+        )[1].split("def main():", 1)[0]
+        reconcile_chain = (
+            "gen_sitemap_lastmod.py",
+            '"git", "add", "-A"',
+            '"git", "diff", "--cached", "--quiet"',
+            "Reconcile truthful sitemap lastmod after rebase",
+        )
+        reconcile_positions = [
+            reconcile.index(item) for item in reconcile_chain
+        ]
+        self.assertEqual(sorted(reconcile_positions), reconcile_positions)
+        push_loop = publish_main.split("for _ in range(3):", 1)[1]
+        self.assertLess(
+            push_loop.index('"pull", "--rebase"'),
+            push_loop.index("reconcile_lastmod_after_rebase(env)"),
+        )
         self.assertLess(
             publish.rindex("zhuyin_resourcesync.py"),
             publish.rindex("gen_llms.py"),

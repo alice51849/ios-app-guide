@@ -1,0 +1,210 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alice51849.github.io/ios-app-guide/data/verified-ios-app-finder-catalog.schema.json",
+  "title": "Verified Independent iOS App Finder Catalogue",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "description",
+    "question",
+    "date_modified",
+    "license",
+    "ordering",
+    "availability_verification",
+    "record_count",
+    "apps"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "question": {
+      "const": "How can I find a privacy-first iPhone app with a one-time purchase?"
+    },
+    "date_modified": {
+      "type": "string",
+      "format": "date"
+    },
+    "license": {
+      "type": "string",
+      "format": "uri"
+    },
+    "ordering": {
+      "const": "alphabetical_by_app_name_not_a_ranking"
+    },
+    "availability_verification": {
+      "type": "object",
+      "required": [
+        "source",
+        "markets",
+        "retirement_rule"
+      ],
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "markets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "retirement_rule": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "record_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "apps": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "key",
+          "app_store_id",
+          "name",
+          "category",
+          "category_labels",
+          "summaries",
+          "purchase_model",
+          "purchase_labels",
+          "one_time_option",
+          "features",
+          "keywords",
+          "capabilities",
+          "canonical_app_store_url",
+          "verified_live"
+        ],
+        "properties": {
+          "key": {
+            "type": "string",
+            "minLength": 1
+          },
+          "app_store_id": {
+            "type": "string",
+            "pattern": "^[0-9]{9,12}$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "category": {
+            "type": "string",
+            "minLength": 1
+          },
+          "category_labels": {
+            "$ref": "#/$defs/localizedText"
+          },
+          "summaries": {
+            "$ref": "#/$defs/localizedText"
+          },
+          "purchase_model": {
+            "enum": [
+              "flexible",
+              "free",
+              "free_with_lifetime_unlock",
+              "neutral",
+              "paid_upfront"
+            ]
+          },
+          "purchase_labels": {
+            "$ref": "#/$defs/localizedText"
+          },
+          "one_time_option": {
+            "type": "boolean"
+          },
+          "features": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "keywords": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "capabilities": {
+            "type": "object",
+            "required": [
+              "offline",
+              "no_account",
+              "no_ads",
+              "no_tracking",
+              "private_or_on_device",
+              "widget",
+              "apple_watch"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "offline": {
+                "type": "boolean"
+              },
+              "no_account": {
+                "type": "boolean"
+              },
+              "no_ads": {
+                "type": "boolean"
+              },
+              "no_tracking": {
+                "type": "boolean"
+              },
+              "private_or_on_device": {
+                "type": "boolean"
+              },
+              "widget": {
+                "type": "boolean"
+              },
+              "apple_watch": {
+                "type": "boolean"
+              }
+            }
+          },
+          "canonical_app_store_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "verified_live": {
+            "const": true
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "localizedText": {
+      "type": "object",
+      "required": [
+        "en",
+        "zh-Hant"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "en": {
+          "type": "string",
+          "minLength": 1
+        },
+        "zh-Hant": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

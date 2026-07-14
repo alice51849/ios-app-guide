@@ -268,8 +268,9 @@ h2{margin:34px 0 14px}.grid{display:grid;grid-template-columns:repeat(auto-fit,m
 .footer{margin-top:42px;padding:26px 0;border-top:1px solid var(--line);color:var(--muted)}"""
 
 
-def localized_summary(key, locale):
-    path = os.path.join(PAGES, locale, f"{key}.html")
+def localized_summary(key, locale, pages=None):
+    root = PAGES if pages is None else os.fspath(pages)
+    path = os.path.join(root, locale, f"{key}.html")
     try:
         with open(path, encoding="utf-8") as handle:
             text = handle.read(12000)

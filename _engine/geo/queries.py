@@ -137,6 +137,12 @@ CURATED["lumimathpro"] = CURATED["lumimath"]
 CURATED["lumimissionpro"] = CURATED["lumimission"]
 CURATED["lumibopomofopro"] = CURATED["lumibopomofo"]
 
+# Portfolio-wide owned-resource queries are consumed by generators that do not
+# recommend a single app as the answer.
+PORTFOLIO_CURATED = [
+    "How can I find a privacy-first iPhone app with a one-time purchase?",
+]
+
 
 # 2026-07 擴充:補齊各 App 高意圖利基問句,均衡覆蓋 22 App(就地擴充,pro 版沿用同物件)
 _MORE = {

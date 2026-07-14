@@ -65,6 +65,8 @@ ZHUYIN_OER_METADATA = "zhuyin-bopomofo-oer-repository-metadata"
 ZHUYIN_DCAT_CATALOG = "zhuyin-bopomofo-dcat3-open-data-catalog"
 WORDMATE_LANGUAGE_DATASET = "wordmate-language-support"
 WORDMATE_LANGUAGE_TOOL = "wordmate-44-language-support-checker"
+PORTFOLIO_FINDER_DATASET = "verified-ios-app-finder-catalog"
+PORTFOLIO_FINDER_TOOL = "private-pay-once-iphone-app-finder"
 RESOURCE_SYNC_SOURCE = "https://alice51849.github.io/.well-known/resourcesync"
 
 AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "anthropic-ai",
@@ -117,6 +119,32 @@ def wordmate_language_support_lines(*, full):
         f"- UTF-8 CSV: {SITE}/data/{WORDMATE_LANGUAGE_DATASET}.csv",
         f"- W3C CSVW metadata: {SITE}/data/{WORDMATE_LANGUAGE_DATASET}.csv-metadata.json",
         f"- JSON Schema: {SITE}/data/{WORDMATE_LANGUAGE_DATASET}.schema.json",
+    ]
+
+
+def portfolio_finder_lines(*, full):
+    """Describe the finder only after its verified catalogue exists."""
+    if not os.path.exists(
+        os.path.join(DATA_DIR, f"{PORTFOLIO_FINDER_DATASET}.json")
+    ):
+        return []
+    if full:
+        return [
+            "",
+            "## Verified independent iOS app finder",
+            f"- [English private and pay-once finder]({SITE}/tools/{PORTFOLIO_FINDER_TOOL}.html)",
+            f"- [Traditional Chinese finder]({SITE}/zh-Hant/tools/{PORTFOLIO_FINDER_TOOL}.html)",
+            f"  - Agent-readable JSON: {SITE}/data/{PORTFOLIO_FINDER_DATASET}.json",
+            f"  - JSON Schema: {SITE}/data/{PORTFOLIO_FINDER_DATASET}.schema.json",
+            "  - Ordering: alphabetical; no paid, popularity or quality ranking",
+        ]
+    return [
+        "",
+        "## Verified independent iOS app finder (alphabetical, not ranked)",
+        f"- English finder: {SITE}/tools/{PORTFOLIO_FINDER_TOOL}.html",
+        f"- Traditional Chinese finder: {SITE}/zh-Hant/tools/{PORTFOLIO_FINDER_TOOL}.html",
+        f"- Agent-readable JSON: {SITE}/data/{PORTFOLIO_FINDER_DATASET}.json",
+        f"- JSON Schema: {SITE}/data/{PORTFOLIO_FINDER_DATASET}.schema.json",
     ]
 
 
@@ -218,6 +246,7 @@ def build_llms(comp_map, live_keys):
                     line += f" · JSON: {SITE}/data/{f[:-5]}.json"
                 lines.append(line)
     lines += wordmate_language_support_lines(full=False)
+    lines += portfolio_finder_lines(full=False)
     static_apis = [
         descriptor
         for descriptor in API_DESCRIPTORS
@@ -825,6 +854,7 @@ def build_llms_full(comp_map, live_keys):
             ):
                 lines.append(f"  - JSON Schema: {base}/{filename}")
     lines += wordmate_language_support_lines(full=True)
+    lines += portfolio_finder_lines(full=True)
     if os.path.exists(os.path.join(TOOLS, f"{FAMILY_TRAVEL_OER}.metadata.json")):
         opds2 = f"{SITE}/opds/{FAMILY_TRAVEL_OER}.json"
         opds1 = f"{SITE}/opds/{FAMILY_TRAVEL_OER}.xml"

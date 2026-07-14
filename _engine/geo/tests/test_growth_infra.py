@@ -38,6 +38,7 @@ import aeo_guide_i18n
 import aeo_pages
 import add_related_tools
 import answer_deep
+import answer_portfolio
 import appstore_live
 import build_pages
 import build_pages_i18n
@@ -73,6 +74,7 @@ import notify_rsscloud
 import notify_websub
 import outreach_scorecard
 import passport_photo_print_sheet
+import portfolio_app_finder
 import prioritize_trip_planet_resources
 import queries
 import refresh_primary_resource_answers
@@ -114,6 +116,7 @@ import zhuyin_static_api
 import websub_config
 from videogen.registry import (  # noqa: E402
     APPS,
+    APPSTORE,
     VALID_PURCHASE_MODELS,
     classify_purchase_model,
 )
@@ -11397,6 +11400,222 @@ class GeneratorTests(unittest.TestCase):
             [value for value in strings if value not in translations],
         )
 
+    def test_portfolio_app_finder_is_bilingual_factual_and_idempotent(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale, summaries in {
+                "en-US": {
+                    "snapport": "Make compliant passport photos on your device.",
+                    "wordmate": "Build vocabulary across 44 languages.",
+                },
+                "zh-Hant": {
+                    "snapport": "在裝置端製作合規證件照。",
+                    "wordmate": "學習 44 種語言的實用單字。",
+                },
+            }.items():
+                for key, summary in summaries.items():
+                    path = pages / locale / f"{key}.html"
+                    path.parent.mkdir(parents=True, exist_ok=True)
+                    path.write_text(
+                        '<meta name="description" content="'
+                        + summary
+                        + '">',
+                        encoding="utf-8",
+                    )
+            for path in (
+                pages / "tools" / "index.html",
+                pages / "zh-Hant" / "tools" / "index.html",
+            ):
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(
+                    '<section class="wrap grid"></section>',
+                    encoding="utf-8",
+                )
+
+            portfolio_app_finder.build(
+                pages,
+                live_keys={"wordmate", "snapport"},
+            )
+            english_path = (
+                pages
+                / "tools"
+                / "private-pay-once-iphone-app-finder.html"
+            )
+            chinese_path = (
+                pages
+                / "zh-Hant"
+                / "tools"
+                / "private-pay-once-iphone-app-finder.html"
+            )
+            data_path = (
+                pages / "data" / "verified-ios-app-finder-catalog.json"
+            )
+            english = english_path.read_text(encoding="utf-8")
+            chinese = chinese_path.read_text(encoding="utf-8")
+            data = json.loads(data_path.read_text(encoding="utf-8"))
+            schema = json.loads(
+                (
+                    pages
+                    / "data"
+                    / "verified-ios-app-finder-catalog.schema.json"
+                ).read_text(encoding="utf-8")
+            )
+            stable_mtime = 1_700_000_000_000_000_000
+            os.utime(data_path, ns=(stable_mtime, stable_mtime))
+            first_bytes = data_path.read_bytes()
+            portfolio_app_finder.build(
+                pages,
+                live_keys={"wordmate", "snapport"},
+            )
+            self.assertEqual(first_bytes, data_path.read_bytes())
+            self.assertEqual(stable_mtime, data_path.stat().st_mtime_ns)
+
+        self.assertEqual(2, data["record_count"])
+        self.assertEqual(
+            ["Snapport", "Wordmate: Learn 44 Languages"],
+            [record["name"] for record in data["apps"]],
+        )
+        self.assertEqual(
+            "alphabetical_by_app_name_not_a_ranking",
+            data["ordering"],
+        )
+        self.assertEqual(2, english.count('data-app-card '))
+        cards = re.findall(
+            r'<article class="app-card".*?</article>',
+            english,
+            flags=re.S,
+        )
+        self.assertEqual(2, len(cards))
+        self.assertTrue(
+            all(card.count("https://apps.apple.com/app/id") == 1 for card in cards)
+        )
+        self.assertIn(
+            "https://apps.apple.com/app/id6780575828"
+            "?ct=iag_finder_snapport",
+            english,
+        )
+        self.assertIn(
+            "https://apps.apple.com/app/id6789917808"
+            "?ct=iag_finder_wordmate",
+            english,
+        )
+        self.assertLess(english.index(">Snapport<"), english.index(">Wordmate:"))
+        self.assertIn('id="category"', english)
+        self.assertIn('id="purchase"', english)
+        self.assertIn('id="privacy"', english)
+        self.assertIn('id="device"', english)
+        self.assertIn("navigator.share", english)
+        self.assertIn("navigator.clipboard.writeText", english)
+        self.assertNotIn("fetch(", english)
+        self.assertNotIn("XMLHttpRequest", english)
+        self.assertNotIn("localStorage", english)
+        self.assertNotIn("sessionStorage", english)
+        self.assertNotIn("document.cookie", english)
+        self.assertIn("絕非排行榜", chinese)
+        wordmate = next(
+            record for record in data["apps"] if record["key"] == "wordmate"
+        )
+        self.assertTrue(wordmate["capabilities"]["widget"])
+        self.assertTrue(wordmate["capabilities"]["apple_watch"])
+        self.assertTrue(wordmate["capabilities"]["no_account"])
+        self.assertTrue(wordmate["capabilities"]["no_tracking"])
+        self.assertTrue(wordmate["capabilities"]["no_ads"])
+        snapport = next(
+            record for record in data["apps"] if record["key"] == "snapport"
+        )
+        self.assertTrue(snapport["capabilities"]["private_or_on_device"])
+        self.assertEqual(
+            "https://apps.apple.com/app/id6780575828",
+            snapport["canonical_app_store_url"],
+        )
+
+        from jsonschema import Draft202012Validator, FormatChecker
+
+        Draft202012Validator.check_schema(schema)
+        Draft202012Validator(
+            schema,
+            format_checker=FormatChecker(),
+        ).validate(data)
+
+        json_ld = json.loads(
+            re.search(
+                r'<script type="application/ld\+json">(.*?)</script>',
+                english,
+                flags=re.S,
+            ).group(1)
+        )
+
+        def keys(value):
+            if isinstance(value, dict):
+                for key, child in value.items():
+                    yield key
+                    yield from keys(child)
+            elif isinstance(value, list):
+                for child in value:
+                    yield from keys(child)
+
+        forbidden = {
+            "position",
+            "aggregateRating",
+            "review",
+            "offers",
+            "price",
+        }
+        self.assertTrue(forbidden.isdisjoint(set(keys(json_ld))))
+        self.assertTrue(forbidden.isdisjoint(set(keys(data))))
+        item_list = next(
+            node
+            for node in json_ld["@graph"]
+            if node.get("@type") == "CollectionPage"
+        )["mainEntity"]
+        self.assertEqual(2, item_list["numberOfItems"])
+        self.assertTrue(
+            all(
+                "position" not in item
+                for item in item_list["itemListElement"]
+            )
+        )
+        with self.assertRaisesRegex(
+            ValueError,
+            "at least one verified live app",
+        ):
+            portfolio_app_finder.catalog_records(set(), Path("."))
+
+    def test_portfolio_finder_covers_current_verified_live_apps(self):
+        live = appstore_live.live_app_keys(
+            APPSTORE,
+            str(Path(GEO) / "pages"),
+            refresh=False,
+        )
+        records = portfolio_app_finder.catalog_records(
+            live,
+            Path(GEO) / "pages",
+        )
+        self.assertEqual(live, {record["key"] for record in records})
+        for record in records:
+            summary = record["summaries"]["en"]
+            self.assertFalse(
+                len(summary) >= 145
+                and not summary.endswith(
+                    (".", "!", "?", "…", '"', "”", "'")
+                ),
+                f"English summary ends mid-sentence: {record['key']}",
+            )
+        self.assertEqual(
+            1,
+            queries.PORTFOLIO_CURATED.count(
+                answer_portfolio.PORTFOLIO_QUERY
+            ),
+        )
+        self.assertEqual(
+            "2026-07-15",
+            answer_portfolio.CONTENT_DATE,
+        )
+        self.assertIn(
+            "campaign-links",
+            answer_portfolio.APPLE_CAMPAIGN_SOURCE,
+        )
+
     def test_primary_resource_refresh_plan_covers_every_owned_resource(self):
         expected = {
             (
@@ -13126,6 +13345,14 @@ class GeneratorTests(unittest.TestCase):
         )[1].split("- name: Generate new answer pages", 1)[0]
         self.assertLess(
             availability_block.index("refresh=True"),
+            availability_block.index("build_pages_i18n.py --cached-live"),
+        )
+        self.assertLess(
+            availability_block.index("build_pages_i18n.py --cached-live"),
+            availability_block.index("portfolio_app_finder.py"),
+        )
+        self.assertLess(
+            availability_block.index("refresh=True"),
             availability_block.index("passport_photo_print_sheet.py"),
         )
         self.assertNotIn("gen_sitemap_lastmod.py", materialize_block)
@@ -13140,6 +13367,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(1, workflow.count("passport_photo_print_sheet.py"))
         self.assertEqual(1, workflow.count("vocabulary_habit_planner.py"))
         self.assertEqual(1, workflow.count("wordmate_language_support.py"))
+        self.assertEqual(1, workflow.count("portfolio_app_finder.py"))
         self.assertLess(
             workflow.index("refresh=True"),
             workflow.index("passport_photo_print_sheet.py"),
@@ -13151,6 +13379,10 @@ class GeneratorTests(unittest.TestCase):
         self.assertLess(
             workflow.index("refresh=True"),
             workflow.index("wordmate_language_support.py"),
+        )
+        self.assertLess(
+            workflow.index("refresh=True"),
+            workflow.index("portfolio_app_finder.py"),
         )
         self.assertEqual(1, workflow.count("refresh_primary_resource_answers.py"))
         self.assertIn("zhuyin_grade1_guide.py", workflow)
@@ -13376,6 +13608,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("passport_photo_print_sheet.py", publish)
         self.assertIn("vocabulary_habit_planner.py", publish)
         self.assertIn("wordmate_language_support.py", publish)
+        self.assertIn("portfolio_app_finder.py", publish)
         self.assertEqual(
             1,
             publish.count("refresh_primary_resource_answers.py"),

@@ -1,0 +1,1196 @@
+{
+  "name": "Verified Independent iOS App Finder Catalogue",
+  "description": "Filter every verified live app in this independent portfolio by task, category, purchase model, privacy fact and Apple device surface.",
+  "question": "How can I find a privacy-first iPhone app with a one-time purchase?",
+  "date_modified": "2026-07-15",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "ordering": "alphabetical_by_app_name_not_a_ranking",
+  "availability_verification": {
+    "source": "Apple iTunes Lookup API",
+    "markets": [
+      "US",
+      "TW",
+      "JP",
+      "GB"
+    ],
+    "retirement_rule": "Retire after three consecutive verified misses"
+  },
+  "record_count": 26,
+  "apps": [
+    {
+      "key": "aim990",
+      "app_store_id": "6784974530",
+      "name": "Aim990",
+      "category": "education",
+      "category_labels": {
+        "en": "Education",
+        "zh-Hant": "學習"
+      },
+      "summaries": {
+        "en": "Daily L&R study plans, weak-spot drills & score tracking toward 990",
+        "zh-Hant": "在Aim990，我們知道準備TOEIC(R)考試的挑戰，因此我們設計了一個為期30天的學習計劃，幫助你高效提升聽力與閱讀能力。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "No subscription",
+        "Daily plan",
+        "Weak-spot drills"
+      ],
+      "keywords": [
+        "toeic",
+        "toeic prep",
+        "toeic lr",
+        "english test",
+        "study plan",
+        "score tracker",
+        "business english"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
+      "verified_live": true
+    },
+    {
+      "key": "cvdesk",
+      "app_store_id": "6781337213",
+      "name": "CV Desk",
+      "category": "productivity",
+      "category_labels": {
+        "en": "Productivity",
+        "zh-Hant": "效率工具"
+      },
+      "summaries": {
+        "en": "Build an ATS-safe resume that recruiters' systems actually read — entirely on your iPhone. No account. No upload. No subscription.",
+        "zh-Hant": "在你的 iPhone 上,做出一份「能被企業 ATS 系統正確解析」的履歷 —— 不需帳號、不上傳、無訂閱。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "No watermark",
+        "PDF & Word"
+      ],
+      "keywords": [
+        "resume builder",
+        "cv maker",
+        "ats resume",
+        "resume template",
+        "job search",
+        "career",
+        "resume tips"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
+      "verified_live": true
+    },
+    {
+      "key": "cyca",
+      "app_store_id": "6782251621",
+      "name": "Cyca",
+      "category": "health",
+      "category_labels": {
+        "en": "Health",
+        "zh-Hant": "健康"
+      },
+      "summaries": {
+        "en": "Meet Cyca — the warm, private way to understand your cycle.",
+        "zh-Hant": "認識 Cyca —— 溫柔又私密、最懂你身體的週期夥伴。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "No subscription",
+        "On-device"
+      ],
+      "keywords": [
+        "period tracker",
+        "cycle tracker",
+        "menstrual",
+        "ovulation",
+        "femtech",
+        "women health",
+        "pms"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
+      "verified_live": true
+    },
+    {
+      "key": "gmoney",
+      "app_store_id": "6755782939",
+      "name": "G+Money",
+      "category": "finance",
+      "category_labels": {
+        "en": "Money & travel",
+        "zh-Hant": "理財與旅行"
+      },
+      "summaries": {
+        "en": "Convert + log every expense in one tap — offline",
+        "zh-Hant": "G+Money 把兩個每天都會用到的工具合而為一——超快的貨幣換算 ＋ 精美的記帳——生活與旅行都適用。完全離線、完全私密。"
+      },
+      "purchase_model": "paid_upfront",
+      "purchase_labels": {
+        "en": "Paid download",
+        "zh-Hant": "付費下載"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "Offline",
+        "No account"
+      ],
+      "keywords": [
+        "travel budget",
+        "currency converter",
+        "expense tracker",
+        "travel money",
+        "trip budget",
+        "travel hack"
+      ],
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
+      "verified_live": true
+    },
+    {
+      "key": "hourstag",
+      "app_store_id": "6754218117",
+      "name": "HoursTag",
+      "category": "finance",
+      "category_labels": {
+        "en": "Money & travel",
+        "zh-Hant": "理財與旅行"
+      },
+      "summaries": {
+        "en": "What does it really cost? Not in dollars — in hours of your life.",
+        "zh-Hant": "這真正要花你多少？不是多少錢——是你生命中的幾個小時。"
+      },
+      "purchase_model": "paid_upfront",
+      "purchase_labels": {
+        "en": "Paid download",
+        "zh-Hant": "付費下載"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "Private",
+        "No tracking"
+      ],
+      "keywords": [
+        "money mindset",
+        "budgeting",
+        "spending tracker",
+        "financial freedom",
+        "money tips",
+        "personal finance"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
+      "verified_live": true
+    },
+    {
+      "key": "lockhour",
+      "app_store_id": "6780107485",
+      "name": "LockHour Pro",
+      "category": "productivity",
+      "category_labels": {
+        "en": "Productivity",
+        "zh-Hant": "效率工具"
+      },
+      "summaries": {
+        "en": "Block the apps that steal your time — and get your focus back.",
+        "zh-Hant": "封鎖偷走你時間的 App，把專注力拿回來。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "No ads",
+        "On-device"
+      ],
+      "keywords": [
+        "screen time",
+        "app blocker",
+        "focus app",
+        "digital detox",
+        "study focus",
+        "deep work",
+        "productivity"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6780107485",
+      "verified_live": true
+    },
+    {
+      "key": "lumibopomofo",
+      "app_store_id": "6773017109",
+      "name": "Lumi Bopomofo",
+      "category": "kids",
+      "category_labels": {
+        "en": "Kids & learning",
+        "zh-Hant": "兒童與學習"
+      },
+      "summaries": {
+        "en": "Lumi Bopomofo is a gentle, playful way for young children to learn the Bopomofo (Zhuyin) phonetic system.",
+        "zh-Hant": "Lumi 注音星球 是一款專為學齡前與低年級孩子（約 4–7 歲）設計的注音符號學習遊戲。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "No subscription",
+        "No ads",
+        "Kid-safe"
+      ],
+      "keywords": [
+        "bopomofo",
+        "zhuyin",
+        "learn chinese for kids",
+        "mandarin for kids",
+        "chinese phonics",
+        "bilingual kids",
+        "heritage chinese"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6773017109",
+      "verified_live": true
+    },
+    {
+      "key": "lumibopomofopro",
+      "app_store_id": "6775773117",
+      "name": "Lumi Bopomofo Pro",
+      "category": "kids",
+      "category_labels": {
+        "en": "Kids & learning",
+        "zh-Hant": "兒童與學習"
+      },
+      "summaries": {
+        "en": "Help your child fall in love with Chinese phonics through one adorable space adventure.",
+        "zh-Hant": "讓孩子愛上注音, 從一場可愛的星球冒險開始."
+      },
+      "purchase_model": "paid_upfront",
+      "purchase_labels": {
+        "en": "Paid download",
+        "zh-Hant": "付費下載"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "No ads",
+        "Kid-safe"
+      ],
+      "keywords": [
+        "bopomofo",
+        "zhuyin",
+        "learn chinese for kids",
+        "mandarin for kids",
+        "chinese phonics",
+        "raising bilingual",
+        "heritage language"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
+      "verified_live": true
+    },
+    {
+      "key": "lumiletters",
+      "app_store_id": "6778748533",
+      "name": "Lumi Letters",
+      "category": "kids",
+      "category_labels": {
+        "en": "Kids & learning",
+        "zh-Hant": "兒童與學習"
+      },
+      "summaries": {
+        "en": "Download free, play first, and unlock only if your child loves it.",
+        "zh-Hant": "免費下載，先玩玩看，喜歡再一次解鎖。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "No ads",
+        "Kid-safe"
+      ],
+      "keywords": [
+        "abc for kids",
+        "phonics",
+        "learn letters",
+        "kids learning",
+        "preschool",
+        "toddler",
+        "alphabet"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
+      "verified_live": true
+    },
+    {
+      "key": "lumiletterspro",
+      "app_store_id": "6778491147",
+      "name": "Lumi Letters Pro",
+      "category": "kids",
+      "category_labels": {
+        "en": "Kids & learning",
+        "zh-Hant": "兒童與學習"
+      },
+      "summaries": {
+        "en": "Welcome to Lumi Letters",
+        "zh-Hant": "歡迎來到 Lumi 字母星球"
+      },
+      "purchase_model": "paid_upfront",
+      "purchase_labels": {
+        "en": "Paid download",
+        "zh-Hant": "付費下載"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "No ads",
+        "Kid-safe"
+      ],
+      "keywords": [
+        "learn to read",
+        "phonics for kids",
+        "abc for kids",
+        "sight words",
+        "preschool reading",
+        "kindergarten prep",
+        "kids learning"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6778491147",
+      "verified_live": true
+    },
+    {
+      "key": "lumimath",
+      "app_store_id": "6778269699",
+      "name": "Lumi Math Planet",
+      "category": "kids",
+      "category_labels": {
+        "en": "Kids & learning",
+        "zh-Hant": "兒童與學習"
+      },
+      "summaries": {
+        "en": "Some apps teach math. This one makes a child love it.",
+        "zh-Hant": "有些 App 教數學。這一款，讓孩子愛上數學。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "No ads",
+        "Kid-safe"
+      ],
+      "keywords": [
+        "math for kids",
+        "kids math game",
+        "learn numbers",
+        "preschool math",
+        "counting",
+        "education",
+        "kids learning"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
+      "verified_live": true
+    },
+    {
+      "key": "lumimathpro",
+      "app_store_id": "6776958488",
+      "name": "Lumi Math Pro",
+      "category": "kids",
+      "category_labels": {
+        "en": "Kids & learning",
+        "zh-Hant": "兒童與學習"
+      },
+      "summaries": {
+        "en": "Turn competition-level math thinking into a space adventure kids can't put down",
+        "zh-Hant": "把「國際數學競賽等級」的思維，變成孩子停不下來的星際冒險"
+      },
+      "purchase_model": "paid_upfront",
+      "purchase_labels": {
+        "en": "Paid download",
+        "zh-Hant": "付費下載"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "No ads",
+        "Kid-safe"
+      ],
+      "keywords": [
+        "math for kids",
+        "kids math game",
+        "learn numbers",
+        "addition for kids",
+        "counting",
+        "preschool math",
+        "kids learning"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
+      "verified_live": true
+    },
+    {
+      "key": "lumimission",
+      "app_store_id": "6779750237",
+      "name": "Lumi Mission Planet",
+      "category": "kids",
+      "category_labels": {
+        "en": "Kids & learning",
+        "zh-Hant": "兒童與學習"
+      },
+      "summaries": {
+        "en": "Getting a small child to brush teeth, finish meals or tidy toys should not take a battle every single day.",
+        "zh-Hant": "要三到七歲的孩子乖乖刷牙、吃完飯、收玩具,不該每天都像打仗。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "No ads",
+        "Kid-safe"
+      ],
+      "keywords": [
+        "kids routine",
+        "chore chart",
+        "habit tracker for kids",
+        "bedtime",
+        "parenting",
+        "toddler",
+        "kids learning"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779750237",
+      "verified_live": true
+    },
+    {
+      "key": "lumimissionpro",
+      "app_store_id": "6779745474",
+      "name": "Lumi Mission Planet Pro",
+      "category": "kids",
+      "category_labels": {
+        "en": "Kids & learning",
+        "zh-Hant": "兒童與學習"
+      },
+      "summaries": {
+        "en": "Getting a small child to brush teeth, finish meals or tidy toys should not take a battle every single day.",
+        "zh-Hant": "要三到七歲的孩子乖乖刷牙、吃完飯、收玩具,不該每天都像打仗。"
+      },
+      "purchase_model": "paid_upfront",
+      "purchase_labels": {
+        "en": "Paid download",
+        "zh-Hant": "付費下載"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "No ads",
+        "Kid-safe"
+      ],
+      "keywords": [
+        "kids routine",
+        "chore chart",
+        "habit tracker for kids",
+        "bedtime routine",
+        "morning routine",
+        "parenting",
+        "kids learning"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779745474",
+      "verified_live": true
+    },
+    {
+      "key": "tripplanet",
+      "app_store_id": "6787193643",
+      "name": "Lumi Trip Planet",
+      "category": "kids",
+      "category_labels": {
+        "en": "Kids & learning",
+        "zh-Hant": "兒童與學習"
+      },
+      "summaries": {
+        "en": "Lumi Trip Planet turns waiting at the airport, long drives, and quiet hotel time into a playful travel adventure for children ages 4 to 10.",
+        "zh-Hant": "候機、長途車程與飯店空檔，常是親子旅行最容易疲累的時刻。Lumi 旅行星球把這些等待時間變成 4-10 歲孩子也能參與的旅行冒險。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "No ads",
+        "Kid-safe"
+      ],
+      "keywords": [
+        "kids travel",
+        "travel games for kids",
+        "road trip games",
+        "family travel",
+        "kids activities",
+        "travel for kids",
+        "preschool"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
+      "verified_live": true
+    },
+    {
+      "key": "lumiweather",
+      "app_store_id": "6779552704",
+      "name": "Lumi Weather",
+      "category": "kids",
+      "category_labels": {
+        "en": "Kids & learning",
+        "zh-Hant": "兒童與學習"
+      },
+      "summaries": {
+        "en": "Some mornings you stand at the window with a wriggling toddler and one quiet worry: is it too cold, too hot, too wet to take them out today?",
+        "zh-Hant": "有些早晨，你抱著扭來扭去的孩子站在窗邊，心裡只有一個小小的擔心：今天會不會太冷、太熱、太濕，不適合帶他出門？"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "No ads",
+        "Kid-safe"
+      ],
+      "keywords": [
+        "weather for kids",
+        "family weather",
+        "what to wear",
+        "kids outing",
+        "parenting",
+        "weather app"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
+      "verified_live": true
+    },
+    {
+      "key": "mochi",
+      "app_store_id": "6785004775",
+      "name": "Mochi",
+      "category": "productivity",
+      "category_labels": {
+        "en": "Productivity",
+        "zh-Hant": "效率工具"
+      },
+      "summaries": {
+        "en": "Cute, cozy checklists with a satisfying tap to complete — free, no ads",
+        "zh-Hant": "待辦清單不該讓人更焦慮。Mochi 讓你幾秒內建立清單，把今天真正要做的事排得清清楚楚，完成時只要輕輕一點，就能得到俐落又有成就感的回饋。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Free to start",
+        "Pay once",
+        "No ads",
+        "Simple"
+      ],
+      "keywords": [
+        "to do list",
+        "checklist app",
+        "cute planner",
+        "task manager",
+        "daily planner",
+        "cozy productivity",
+        "aesthetic to do"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
+      "verified_live": true
+    },
+    {
+      "key": "photocream",
+      "app_store_id": "6781808054",
+      "name": "PhotoCream",
+      "category": "photo-utility",
+      "category_labels": {
+        "en": "Photo & utility",
+        "zh-Hant": "照片與實用工具"
+      },
+      "summaries": {
+        "en": "100+ real film looks, grain, halation & light leaks",
+        "zh-Hant": "PhotoCream Pro 是您在 iPhone 和 iPad 上的終極拍攝夥伴。無論您是懷舊攝影愛好者還是自拍達人，這款應用都能滿足您的需求。超過100種真實膠片濾鏡，讓每張照片都充滿藝術感。即時預覽功能讓您在拍攝前即可看到濾鏡效果，捕捉完美瞬間。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "No watermark",
+        "Full-res"
+      ],
+      "keywords": [
+        "film filter",
+        "vintage filter",
+        "photo editor",
+        "aesthetic",
+        "film camera",
+        "retro",
+        "presets"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6781808054",
+      "verified_live": true
+    },
+    {
+      "key": "picclear",
+      "app_store_id": "6780223070",
+      "name": "PicClear",
+      "category": "photo-utility",
+      "category_labels": {
+        "en": "Photo & utility",
+        "zh-Hant": "照片與實用工具"
+      },
+      "summaries": {
+        "en": "Free up gigabytes of storage by cleaning out the photos you don’t need — duplicates, screenshots, blurry shots, and space-hungry videos.",
+        "zh-Hant": "清出佔空間的照片，騰出好幾 GB 的儲存空間——重複照片、螢幕截圖、模糊照片，還有最吃空間的影片。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "No subscription",
+        "On-device"
+      ],
+      "keywords": [
+        "free up storage",
+        "iphone storage full",
+        "delete duplicates",
+        "clean storage",
+        "iphone tips",
+        "storage hack"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
+      "verified_live": true
+    },
+    {
+      "key": "scanto",
+      "app_store_id": "6779977651",
+      "name": "ScanTo Pro",
+      "category": "productivity",
+      "category_labels": {
+        "en": "Productivity",
+        "zh-Hant": "效率工具"
+      },
+      "summaries": {
+        "en": "The scanner that does everything on your device — including reading the text — and proves it by never going online.",
+        "zh-Hant": "一款連「讀文件裡的字」都在你手機上完成、而且永不連網的掃描器。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "No subscription",
+        "On-device"
+      ],
+      "keywords": [
+        "pdf scanner",
+        "document scanner",
+        "scan to pdf",
+        "ocr app",
+        "scan documents",
+        "paperless",
+        "iphone tips"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
+      "verified_live": true
+    },
+    {
+      "key": "sereno",
+      "app_store_id": "6788236641",
+      "name": "Sereno",
+      "category": "sleep-sound",
+      "category_labels": {
+        "en": "Sleep & focus",
+        "zh-Hant": "睡眠與專注"
+      },
+      "summaries": {
+        "en": "Sereno is an offline sound machine for nights when a steady background helps you settle down and days when outside noise makes it hard to focus.",
+        "zh-Hant": "當環境太吵、思緒停不下來，穩定的背景聲能讓空間安靜許多。Sereno 是一款可離線使用的高質感音景工具，適合睡前、讀書、工作或需要沉澱的片刻。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Free to start",
+        "One-time unlock",
+        "No subscription",
+        "No ads",
+        "Offline"
+      ],
+      "keywords": [
+        "white noise",
+        "sleep sounds",
+        "brown noise",
+        "focus",
+        "rain sounds",
+        "tinnitus",
+        "ocean",
+        "meditation"
+      ],
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
+      "verified_live": true
+    },
+    {
+      "key": "snapport",
+      "app_store_id": "6780575828",
+      "name": "Snapport",
+      "category": "photo-utility",
+      "category_labels": {
+        "en": "Photo & utility",
+        "zh-Hant": "照片與實用工具"
+      },
+      "summaries": {
+        "en": "Make your own at home in 30 seconds",
+        "zh-Hant": "在家製作護照、簽證與證件照——用更沉著、更私密的方式完成。Snapport 提供常用尺寸範本、臉部對齊指引、背景工具與可列印版型，所有處理都直接在你的 iPhone 上完成。"
+      },
+      "purchase_model": "paid_upfront",
+      "purchase_labels": {
+        "en": "Paid download",
+        "zh-Hant": "付費下載"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "No subscription",
+        "On-device"
+      ],
+      "keywords": [
+        "passport photo",
+        "passport photo app",
+        "id photo",
+        "visa photo",
+        "travel hack",
+        "iphone tips",
+        "passportphoto"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
+      "verified_live": true
+    },
+    {
+      "key": "sononote",
+      "app_store_id": "6782139553",
+      "name": "Sono Note",
+      "category": "productivity",
+      "category_labels": {
+        "en": "Productivity",
+        "zh-Hant": "效率工具"
+      },
+      "summaries": {
+        "en": "Speak naturally. Walk away with writing you're proud of.",
+        "zh-Hant": "自然地說話，擁有讓你驕傲的文字。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "No subscription",
+        "On-device"
+      ],
+      "keywords": [
+        "voice notes",
+        "voice to text",
+        "meeting notes",
+        "transcribe",
+        "note taking app",
+        "study hack",
+        "productivity"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
+      "verified_live": true
+    },
+    {
+      "key": "tripbee",
+      "app_store_id": "6787754435",
+      "name": "TripBee Pro: Trip Planner",
+      "category": "travel",
+      "category_labels": {
+        "en": "Travel",
+        "zh-Hant": "旅行"
+      },
+      "summaries": {
+        "en": "Private offline day-by-day trip planner with smart family packing lists and one-tap Apple Maps directions",
+        "zh-Hant": "TripBee 把整趟旅行整理成清楚的每日行程。航班、住宿、景點、備註與全家不想錯過的安排，都能放在同一個時間軸；到了海外沒有網路，也照樣能查看。"
+      },
+      "purchase_model": "paid_upfront",
+      "purchase_labels": {
+        "en": "Paid download",
+        "zh-Hant": "付費下載"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "No subscription",
+        "Private",
+        "Offline",
+        "No account"
+      ],
+      "keywords": [
+        "trip planner",
+        "travel itinerary",
+        "family packing list",
+        "offline travel",
+        "vacation planner",
+        "trip organizer"
+      ],
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6787754435",
+      "verified_live": true
+    },
+    {
+      "key": "unblurry",
+      "app_store_id": "6782275018",
+      "name": "Unblurry",
+      "category": "photo-utility",
+      "category_labels": {
+        "en": "Photo & utility",
+        "zh-Hant": "照片與實用工具"
+      },
+      "summaries": {
+        "en": "Blurry photo? Make it crystal clear.",
+        "zh-Hant": "照片模糊了？一鍵變得清晰透亮。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "Private",
+        "On-device"
+      ],
+      "keywords": [
+        "unblur photo",
+        "photo enhancer",
+        "ai upscale",
+        "fix blurry photo",
+        "enhance photo",
+        "photo quality"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
+      "verified_live": true
+    },
+    {
+      "key": "wordmate",
+      "app_store_id": "6789917808",
+      "name": "Wordmate: Learn 44 Languages",
+      "category": "education",
+      "category_labels": {
+        "en": "Education",
+        "zh-Hant": "學習"
+      },
+      "summaries": {
+        "en": "Learn useful vocabulary in 44 languages with natural examples, a Home Screen widget and Apple Watch",
+        "zh-Hant": "把零碎時間變成真正的字彙累積。Wordmate 將 44 種語言的結構化單字學習帶到 iPhone、iPad、主畫面互動小工具與 Apple Watch；從手中到手腕，通勤、排隊或短暫空檔都能自然接續。"
+      },
+      "purchase_model": "paid_upfront",
+      "purchase_labels": {
+        "en": "Paid download",
+        "zh-Hant": "付費下載"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "44 languages",
+        "Widget + Watch",
+        "No account",
+        "No tracking",
+        "No ads"
+      ],
+      "keywords": [
+        "vocabulary app",
+        "language learning",
+        "flashcards",
+        "home screen widget",
+        "apple watch",
+        "pronunciation",
+        "example sentences",
+        "no subscription"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": false,
+        "widget": true,
+        "apple_watch": true
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6789917808",
+      "verified_live": true
+    }
+  ]
+}

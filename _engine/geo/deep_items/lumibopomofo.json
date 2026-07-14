@@ -1722,5 +1722,86 @@
         "a": "No reading response is entered or collected. Story and annotation choices remain only in page memory and reset when the page closes."
       }
     ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "story_sequence_comprehension",
+    "match": [
+      "understand and retell a zhuyin story",
+      "zhuyin story sequencing cards",
+      "free zhuyin reading comprehension practice",
+      "孩子讀完注音故事卻說不出內容",
+      "注音故事排序練習",
+      "小一注音閱讀理解練習"
+    ],
+    "query": "How can I help a child understand and retell a Zhuyin story?",
+    "page_title": "Free Zhuyin Story Sequencing Cards | Read, Order and Retell",
+    "meta_description": "Free Zhuyin story cards: reorder six events, reveal the sequence, discuss two prompts and print privately. No login, score or child data.",
+    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-story-sequencing-cards.html",
+    "primary_resource_label": "Open the free Zhuyin story sequencing cards",
+    "date_modified": "2026-07-14",
+    "lead": "Keep the words familiar and change the task: after reading one original six-page story, mix its six annotated event cards, rebuild what happened first, next and last, then retell the story together.",
+    "detail": "The free bilingual tool linked above reuses the three original Zhuyin mini-readers as a different comprehension activity. Each story has six fully annotated event cards that can be shuffled, moved earlier or later, restored to the original order, discussed and printed. Nothing is typed, uploaded, timed, scored or saved. Taiwan's official first-stage Mandarin outcomes include reading stage-appropriate texts (5-I-3), understanding important information and viewpoints (5-I-4), and using images or story structure to support understanding and retelling (5-I-6). Those outcomes support the scope, but the Ministry of Education did not create, test or endorse this independent tool.",
+    "follow_up": "Read the story once before shuffling. Ask what may happen first, move one card at a time and use before, after and because language. Reveal the original order only as a discussion reference. A restored sequence is not a grade, diagnosis or proof that the learner understood every detail.",
+    "bullets": [
+      "Three original six-event stories with standard Zhuyin kept visible on every card",
+      "Accessible move-earlier and move-later controls instead of drag-only interaction",
+      "Two oral discussion prompts per story with no answer form or collected response",
+      "Shuffle, reveal, private printing and sharing with no account, timer, score or saved profile",
+      "English and Traditional Chinese pages with direct official curriculum references"
+    ],
+    "decision_steps": [
+      "Choose one familiar story and read all six events in the original mini-reader.",
+      "Open the sequencing cards and shuffle the same six events.",
+      "Ask which event happened first and move only one card at a time.",
+      "Use before, after and because language while rebuilding the sequence.",
+      "Reveal the original order, retell the story aloud and stop without scoring."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Still works hard to read each line",
+        "check": "Keep the story in the mini-reader instead of shuffling events yet",
+        "why": "Sequencing adds memory and story-structure demands on top of decoding"
+      },
+      {
+        "need": "Reads every event but cannot connect them",
+        "check": "Move one card and ask what happened immediately before and after it",
+        "why": "A small comparison keeps attention on relationships rather than guessing a full order"
+      },
+      {
+        "need": "Can rebuild the order quickly",
+        "check": "Use the two oral prompts and retell the story in the learner's own words",
+        "why": "Correct order alone does not prove understanding of important information"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is optional and is not needed for the free sequencing cards. It can reinforce listening, tracing, tones and syllable blending before connected-text work, with a one-time lifetime unlock, no ads, no subscription and no account.",
+    "sources": [
+      {
+        "title": "Free Zhuyin story sequencing cards",
+        "url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-story-sequencing-cards.html"
+      },
+      {
+        "title": "CIRN Mandarin learning outcomes for the first learning stage",
+        "url": "https://cirn.k12ea.gov.tw/TWELVE/List.aspx?fid=11010"
+      },
+      {
+        "title": "Free original Zhuyin mini-reader generator",
+        "url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-decodable-mini-reader.html"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Are the sequencing stories copied from a book or worksheet?",
+        "a": "No. They reuse the three original story sequences written for the free mini-reader and reproduce no published book, illustration, audio clip or Ministry worksheet."
+      },
+      {
+        "q": "Does restoring the original order grade comprehension?",
+        "a": "No. It is a discussion reference only, with no score, timer, level, pass or diagnostic result."
+      },
+      {
+        "q": "Does the tool collect card moves or spoken answers?",
+        "a": "No. There is no answer form, and card order remains only in page memory until the page closes."
+      }
+    ]
   }
 ]

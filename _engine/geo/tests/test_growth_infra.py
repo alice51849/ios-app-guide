@@ -76,6 +76,7 @@ import static_api_catalog
 import zhuyin_blending_card_generator
 import zhuyin_sentence_reading_cards
 import zhuyin_mini_reader
+import zhuyin_story_sequence_cards
 import zhuyin_grandparent_call_kit
 import zhuyin_grade1_guide
 import zhuyin_grade1_summer_calendar
@@ -9837,6 +9838,7 @@ class GeneratorTests(unittest.TestCase):
             zhuyin_blending_card_generator,
             zhuyin_sentence_reading_cards,
             zhuyin_mini_reader,
+            zhuyin_story_sequence_cards,
         ):
             generator.build(pages)
         for filename in (
@@ -9905,8 +9907,25 @@ class GeneratorTests(unittest.TestCase):
 
             resources = zhuyin_resourcesync.discover_resources(pages)
             entries = resource_list.findall(f"{{{sitemap_ns}}}url")
-            self.assertEqual(258, len(resources))
+            self.assertEqual(260, len(resources))
             self.assertEqual(len(resources), len(entries))
+            self.assertEqual(0, gen_feed.ensure_site_feed_discovery(pages))
+            current_by_url = {
+                resource.url: resource
+                for resource in zhuyin_resourcesync.discover_resources(pages)
+            }
+            for entry in entries:
+                location = entry.find(f"{{{sitemap_ns}}}loc").text
+                metadata = entry.find(f"{{{rs_ns}}}md").attrib
+                current = current_by_url[location]
+                self.assertEqual(
+                    f"sha-256:{current.sha256}",
+                    metadata["hash"],
+                )
+                self.assertEqual(
+                    str(current.byte_length),
+                    metadata["length"],
+                )
             resources_by_path = {
                 resource.relative_path.as_posix(): resource
                 for resource in resources
@@ -10816,6 +10835,189 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("3-I-4", page)
         self.assertLess(page.index(tool_url), page.index("id6773017109"))
         self.assertIn("not needed for the free mini-readers", page)
+
+    def test_zhuyin_story_sequence_cards_are_private_accessible_and_non_scored(self):
+        english = zhuyin_story_sequence_cards.render_page("en")
+        traditional = zhuyin_story_sequence_cards.render_page("zh-Hant")
+        self.assertEqual(
+            [0, 1, 2, 3, 4, 5],
+            sorted(zhuyin_story_sequence_cards.STATIC_ORDER),
+        )
+        self.assertEqual(
+            {story["id"] for story in zhuyin_mini_reader.STORIES},
+            set(zhuyin_story_sequence_cards.PROMPTS),
+        )
+        for page in (english, traditional):
+            self.assertIn('"WebApplication", "LearningResource"', page)
+            self.assertIn('"@type": "FAQPage"', page)
+            self.assertIn('hreflang="en"', page)
+            self.assertIn('hreflang="zh-Hant"', page)
+            self.assertIn('id="story-buttons"', page)
+            self.assertIn('id="shuffle-cards"', page)
+            self.assertIn('id="reveal-order"', page)
+            self.assertIn('data-move="-1"', page)
+            self.assertIn('data-move="1"', page)
+            self.assertIn("<ruby>", page)
+            self.assertIn("window.print()", page)
+            self.assertIn("navigator.share", page)
+            self.assertIn("id6773017109", page)
+            self.assertIn("html_ch/index.html", page)
+            self.assertIn("fid=11010", page)
+            for outcome in ("5-I-3", "5-I-4", "5-I-6"):
+                self.assertIn(outcome, page)
+            self.assertNotIn("localStorage", page)
+            self.assertNotIn("sessionStorage", page)
+            self.assertNotIn("XMLHttpRequest", page)
+            self.assertNotIn("fetch(", page)
+            self.assertNotIn("getUserMedia", page)
+            self.assertNotIn("<input", page)
+            self.assertNotIn("dataLayer", page)
+            self.assertNotIn("gtag(", page)
+            schemas = [
+                json.loads(block)
+                for block in re.findall(
+                    r'<script type="application/ld\+json">(.*?)</script>',
+                    page,
+                    re.S,
+                )
+            ]
+            resource = next(
+                schema
+                for schema in schemas
+                if schema.get("@type") == ["WebApplication", "LearningResource"]
+            )
+            self.assertTrue(resource["isAccessibleForFree"])
+            self.assertEqual("0", resource["offers"]["price"])
+            self.assertEqual("2026-07-14", resource["datePublished"])
+            self.assertEqual("2026-07-14", resource["dateModified"])
+            main = page.split("<main>", 1)[1]
+            self.assertLess(main.index('id="generator"'), main.index("id6773017109"))
+        self.assertIn("no score, timer, level, pass or diagnostic result", english)
+        self.assertIn("one-time lifetime unlock", english)
+        self.assertIn("沒有分數、計時、等級、通過或診斷結果", traditional)
+        self.assertIn("一次付費永久解鎖", traditional)
+
+    def test_zhuyin_story_sequence_cards_build_both_pages_and_indexes_idempotently(
+        self,
+    ):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale in ("", "zh-Hant"):
+                tools = pages / locale / "tools" if locale else pages / "tools"
+                tools.mkdir(parents=True)
+                (tools / "index.html").write_text(
+                    '<main><section class="wrap grid">'
+                    '<article class="card third"><h2><a href="'
+                    'zhuyin-decodable-mini-reader.html">Reader</a>'
+                    "</h2><p>Read.</p></article></section></main>",
+                    encoding="utf-8",
+                )
+            first = zhuyin_story_sequence_cards.build(pages)
+            second = zhuyin_story_sequence_cards.build(pages)
+            self.assertEqual(first, second)
+            self.assertEqual(2, len(first))
+            for locale in ("", "zh-Hant"):
+                tools = pages / locale / "tools" if locale else pages / "tools"
+                self.assertTrue(
+                    (tools / f"{zhuyin_story_sequence_cards.SLUG}.html").exists()
+                )
+                index = (tools / "index.html").read_text(encoding="utf-8")
+                self.assertEqual(
+                    1,
+                    index.count(f"{zhuyin_story_sequence_cards.SLUG}.html"),
+                )
+                self.assertLess(
+                    index.index("zhuyin-decodable-mini-reader.html"),
+                    index.index(f"{zhuyin_story_sequence_cards.SLUG}.html"),
+                )
+
+    def test_zhuyin_story_sequence_answer_leads_with_free_cards(self):
+        question = "How can I help a child understand and retell a Zhuyin story?"
+        self.assertEqual(1, queries.CURATED["lumibopomofo"].count(question))
+        content = aeo_answers.normalized_content(
+            aeo_answers.default_content(question, "lumibopomofo"),
+            question,
+            "lumibopomofo",
+        )
+        page = aeo_answers.render_page(question, "lumibopomofo", content)
+        tool_url = (
+            "https://alice51849.github.io/ios-app-guide/tools/"
+            "zhuyin-story-sequencing-cards.html"
+        )
+        self.assertEqual(tool_url, content["primary_resource_url"])
+        self.assertEqual("2026-07-14", content["date_modified"])
+        self.assertIn('"dateModified": "2026-07-14"', page)
+        self.assertFalse(
+            aeo_answers_i18n.should_translate_json(
+                "dateModified",
+                content["date_modified"],
+            )
+        )
+        self.assertIn("six fully annotated event cards", page)
+        for outcome in ("5-I-3", "5-I-4", "5-I-6"):
+            self.assertIn(outcome, page)
+        self.assertLess(page.index(tool_url), page.index("id6773017109"))
+        self.assertIn("not needed for the free sequencing cards", page)
+        translations = json.loads(
+            (Path(GEO) / "i18n_trans" / "zh-Hant.json").read_text(encoding="utf-8")
+        )
+
+        def translated_strings(value, parent_key=""):
+            if isinstance(value, str):
+                if parent_key not in {
+                    "app_key",
+                    "date_modified",
+                    "kind",
+                    "match",
+                    "primary_resource_url",
+                    "url",
+                }:
+                    yield value
+            elif isinstance(value, list):
+                for child in value:
+                    yield from translated_strings(child, parent_key)
+            elif isinstance(value, dict):
+                for key, child in value.items():
+                    yield from translated_strings(child, key)
+
+        deep_item = next(
+            item
+            for item in answer_deep.DEEP_ITEMS
+            if item.get("kind") == "story_sequence_comprehension"
+        )
+        self.assertEqual(
+            [],
+            [
+                value
+                for value in translated_strings(deep_item)
+                if value not in translations
+            ],
+        )
+        self.assertIn("How to choose: " + question, translations)
+        self.assertIn(deep_item["primary_resource_label"] + " →", translations)
+
+    def test_answer_refresh_preserves_mtime_when_content_is_unchanged(self):
+        question = "How can I help a child understand and retell a Zhuyin story?"
+        with tempfile.TemporaryDirectory() as directory, mock.patch.object(
+            aeo_answers, "ANSWERS_DIR", Path(directory)
+        ):
+            slug = aeo_answers.create_page(
+                "lumibopomofo",
+                question,
+                force=True,
+            )
+            path = Path(directory) / f"{slug}.html"
+            stable_mtime = 1_700_000_000_000_000_000
+            os.utime(path, ns=(stable_mtime, stable_mtime))
+            self.assertEqual(
+                slug,
+                aeo_answers.create_page(
+                    "lumibopomofo",
+                    question,
+                    force=True,
+                ),
+            )
+            self.assertEqual(stable_mtime, path.stat().st_mtime_ns)
 
     def test_grade1_summer_answer_leads_with_free_calendar(self):
         question = (
@@ -12431,12 +12633,18 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_blending_card_generator.py", workflow)
         self.assertIn("zhuyin_sentence_reading_cards.py", workflow)
         self.assertIn("zhuyin_mini_reader.py", workflow)
+        self.assertIn("zhuyin_story_sequence_cards.py", workflow)
         self.assertIn('READING_SLUG="how-can-i-help-a-child-who-can-blend-', workflow)
         self.assertIn('--refresh-slug "$READING_SLUG"', workflow)
         self.assertIn(
             'MINI_READER_SLUG="how-can-i-help-a-child-move-from-zhuyin-', workflow
         )
         self.assertIn('--refresh-slug "$MINI_READER_SLUG"', workflow)
+        self.assertIn(
+            'STORY_SEQUENCE_SLUG="how-can-i-help-a-child-understand-and-retell-',
+            workflow,
+        )
+        self.assertIn('--refresh-slug "$STORY_SEQUENCE_SLUG"', workflow)
         self.assertIn("zhuyin_grade1_guide.py", workflow)
         self.assertIn("zhuyin_anki_deck.py", workflow)
         self.assertIn("zhuyin_skos_vocabulary.py", workflow)
@@ -12488,6 +12696,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_blending_card_generator.py",
             "zhuyin_sentence_reading_cards.py",
             "zhuyin_mini_reader.py",
+            "zhuyin_story_sequence_cards.py",
             "zhuyin_grade1_guide.py",
             "zhuyin_anki_deck.py",
             "zhuyin_skos_vocabulary.py",
@@ -12676,8 +12885,13 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_blending_card_generator.py", publish)
         self.assertIn("zhuyin_sentence_reading_cards.py", publish)
         self.assertIn("zhuyin_mini_reader.py", publish)
+        self.assertIn("zhuyin_story_sequence_cards.py", publish)
         self.assertIn(
             "how-can-i-help-a-child-move-from-zhuyin-sentences-to-a-short-story",
+            publish.replace('"\n            "', ""),
+        )
+        self.assertIn(
+            "how-can-i-help-a-child-understand-and-retell-a-zhuyin-story",
             publish.replace('"\n            "', ""),
         )
         self.assertIn("zhuyin_grade1_guide.py", publish)
@@ -12744,6 +12958,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_blending_card_generator.py",
             "zhuyin_sentence_reading_cards.py",
             "zhuyin_mini_reader.py",
+            "zhuyin_story_sequence_cards.py",
             "zhuyin_grade1_guide.py",
             "zhuyin_anki_deck.py",
             "zhuyin_skos_vocabulary.py",

@@ -269,6 +269,7 @@ def default_content(question: str, key: str) -> dict[str, Any]:
         "page_title": "",
         "primary_resource_url": "",
         "primary_resource_label": "",
+        "date_modified": "",
         "where_app_fits": f"{name} is a strong fit when you want a focused iPhone tool rather than a broad, complicated suite.",
         "faq": [
             {"q": f"Is {name} a good option?", "a": f"{name} can be a good option if its current App Store features match your needs and budget."},
@@ -302,6 +303,10 @@ def normalized_content(raw: dict[str, Any], question: str, key: str) -> dict[str
         "primary_resource_label": safe_text(
             raw.get("primary_resource_label"),
             base.get("primary_resource_label", ""),
+        ),
+        "date_modified": safe_text(
+            raw.get("date_modified"),
+            base.get("date_modified", ""),
         ),
         "where_app_fits": safe_text(raw.get("where_app_fits"), base["where_app_fits"]),
         "faq": raw.get("faq") if isinstance(raw.get("faq"), list) else base["faq"],
@@ -422,6 +427,8 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
             "url": primary_resource_url,
             "isAccessibleForFree": True,
         }
+        if content.get("date_modified"):
+            resource["dateModified"] = content["date_modified"]
         resource_schema_html = (
             '<script type="application/ld+json">\n'
             f"{j(resource)}\n"
@@ -568,7 +575,9 @@ def create_page(
     except Exception as exc:
         print(f"SKIP {slug}: {exc}", flush=True)
         return None
-    path.write_text(render_page(question, key, content), encoding="utf-8")
+    rendered = render_page(question, key, content)
+    if not path.exists() or path.read_text(encoding="utf-8") != rendered:
+        path.write_text(rendered, encoding="utf-8")
     print(f"{'REFRESHED' if force else 'CREATED'} {slug}", flush=True)
     return slug
 

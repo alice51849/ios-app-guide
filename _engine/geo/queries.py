@@ -987,6 +987,7 @@ _GEO_TAILORED16 = {
         "孩子會認注音符號但不會拼讀怎麼練",
         "How can I help a child who can blend Zhuyin syllables but cannot read a whole sentence?",
         "How can I help a child move from Zhuyin sentences to a short story?",
+        "How can I help a child understand and retell a Zhuyin story?",
     ],
     "lumiweather": [
         "how much screen time is appropriate for young children",

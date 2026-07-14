@@ -27,6 +27,7 @@ BOPOMOFO_TOOL_PRIORITY = {
     "zhuyin-blending-card-generator.html": 2,
     "zhuyin-short-sentence-reading-cards.html": 2.5,
     "zhuyin-decodable-mini-reader.html": 2.75,
+    "zhuyin-story-sequencing-cards.html": 2.875,
     "zhuyin-library-storytime-kit.html": 3,
     "zhuyin-parent-teacher-handoff-kit.html": 4,
     "zhuyin-family-picture-book-club-kit.html": 5,

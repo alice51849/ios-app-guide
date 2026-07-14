@@ -24,7 +24,7 @@ from family_travel_dataset import (  # noqa: E402
     render_versioned_page,
     write_text_if_changed,
 )
-from gen_feed import feed_discovery_links  # noqa: E402
+from gen_feed import ensure_site_feed_discovery, feed_discovery_links  # noqa: E402
 from videogen.registry import APPSTORE, appstore_url  # noqa: E402
 from zhuyin_croissant_dataset import (  # noqa: E402
     APP_ID,
@@ -845,6 +845,7 @@ def build(
     pages: Path = PAGES,
     app_public: bool | None = None,
 ) -> list[str]:
+    ensure_site_feed_discovery(pages)
     public = is_app_public(pages) if app_public is None else app_public
     provisional = discover_resources(pages)
     expected_count = len(provisional) + sum(

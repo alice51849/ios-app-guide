@@ -5591,6 +5591,7 @@ def deep_facts(q: str, key: str, name: str) -> dict[str, Any] | None:
                 "page_title",
                 "primary_resource_url",
                 "primary_resource_label",
+                "date_modified",
             ):
                 if field in it:
                     overlay[field] = sub(it[field])

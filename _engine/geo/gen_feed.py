@@ -247,6 +247,18 @@ def ensure_feed_discovery(path):
     return _write_if_changed(path, updated)
 
 
+def ensure_site_feed_discovery(pages=None):
+    root = os.fspath(PAGES if pages is None else pages)
+    discovery_paths = [
+        os.path.join(root, "index.html"),
+        *glob.glob(os.path.join(root, "*", "*.html")),
+    ]
+    return sum(
+        ensure_feed_discovery(path)
+        for path in dict.fromkeys(discovery_paths)
+    )
+
+
 def collect():
     """英文內容頁與 API 文件,取可驗證的最近更新時間。"""
     items = []
@@ -477,12 +489,7 @@ def render_json_feed(items):
 
 def main():
     items = collect()
-    discovery_paths = [
-        os.path.join(PAGES, "index.html"),
-        *glob.glob(os.path.join(PAGES, "*", "*.html")),
-    ]
-    for path in dict.fromkeys(discovery_paths):
-        ensure_feed_discovery(path)
+    ensure_site_feed_discovery()
     newest = items[0][0] if items else time.time()
     feeds = {
         "feed.xml": render_atom(items, iso(newest)),

@@ -75,6 +75,8 @@ NO_TRANSLATE_JSON_KEYS = {
     "inLanguage",
     "price",
     "priceCurrency",
+    "dateModified",
+    "datePublished",
 }
 
 

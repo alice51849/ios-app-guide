@@ -22,10 +22,12 @@ SITE = os.environ.get(
     "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
 ).rstrip("/")
 SLUG = "zhuyin-readiness-check"
+TOOL_DATE = "2026-07-15"
 MOE_HANDBOOK = (
     "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"
 )
 MOE_PRACTICE = "https://stroke-order.learningweb.moe.edu.tw/phoneticWrite.jsp?la=0"
+WEBMCP_SOURCE = "https://developer.chrome.com/docs/ai/webmcp/imperative-api"
 
 TASKS = {
     "en": (
@@ -312,6 +314,17 @@ COPY = {
             "Ministry of Education Bopomofo Handbook",
             "Ministry of Education Zhuyin Practice Book",
         ),
+        "webmcp_source": "Chrome WebMCP imperative API",
+        "webmcp_description": (
+            "Record five separate parent-guided Zhuyin observations and return the "
+            "same notes and optional free activities as this page. Never combine, "
+            "rank or convert the choices into a score, level, readiness judgment "
+            "or diagnosis."
+        ),
+        "webmcp_privacy": (
+            "The five choice codes are processed only in the current page execution. "
+            "They are not uploaded, submitted, saved or analyzed."
+        ),
         "faq_title": "Parent FAQ",
         "faq": (
             (
@@ -422,6 +435,12 @@ COPY = {
         "sources": "方法說明與官方參考",
         "sources_text": "這份獨立指南以低壓力的練習觀察為目的；符號字形與標示方式依台灣教育部資料核對，但本工具並非由教育部製作或背書。",
         "source_labels": ("教育部《國語注音符號手冊》", "教育部《注音練習簿》"),
+        "webmcp_source": "Chrome WebMCP imperative API",
+        "webmcp_description": (
+            "分別記錄五項家長引導式注音觀察，回傳與本頁相同的筆記及可自由選擇的免費活動；"
+            "不得加總、排序或換算成分數、階段、入學準備判斷或診斷。"
+        ),
+        "webmcp_privacy": "五個選項代碼只在目前頁面執行時處理，不會上傳、送出、儲存或分析。",
         "faq_title": "家長常見問題",
         "faq": (
             (
@@ -509,6 +528,60 @@ SCRIPT = """
     return '<article class="rec"><h3>'+item.title+'</h3><p>'+item.text+
       '</p><a href="'+item.url+'">'+item.label+' →</a></article>';
   }
+  function toolChoice(input,id){
+    if(!Object.prototype.hasOwnProperty.call(input,id)){
+      throw new TypeError(id+" is required.");
+    }
+    var value=input[id];
+    var allowed=cfg.webMcpInputSchema.properties[id].enum;
+    if(allowed.indexOf(value)===-1){
+      throw new RangeError(id+" is not a supported observation.");
+    }
+    return cfg.dimensions[id].options[value];
+  }
+  async function registerWebMcp(){
+    if(!document.modelContext?.registerTool){return;}
+    await document.modelContext.registerTool({
+      name:"record_private_zhuyin_observations",
+      description:cfg.webMcpDescription,
+      inputSchema:cfg.webMcpInputSchema,
+      annotations:{readOnlyHint:true,untrustedContentHint:false},
+      execute:async function(input){
+        if(input===null||typeof input!=="object"||Array.isArray(input)){
+          throw new TypeError("WebMCP input must be an object.");
+        }
+        Object.keys(input).forEach(function(id){
+          if(cfg.dimensionOrder.indexOf(id)===-1){
+            throw new RangeError(id+" is not a supported input.");
+          }
+        });
+        var observations=cfg.dimensionOrder.map(function(id){
+          var choice=toolChoice(input,id);
+          return {
+            dimension:id,
+            dimension_label:cfg.dimensions[id].label,
+            observation:choice.title,
+            next_observation_note:choice.detail
+          };
+        });
+        return JSON.stringify({
+          result_type:"private_zhuyin_observation_notes",
+          observations_not_combined_or_ranked:true,
+          boundary:cfg.resultNote,
+          privacy_boundary:cfg.webMcpPrivacy,
+          observations:observations,
+          optional_free_activities:cfg.dimensionOrder.map(function(id){
+            return cfg.dimensions[id].recommendation;
+          }),
+          official_and_protocol_sources:cfg.sourceUrls,
+          optional_lumi_bopomofo:{
+            description:cfg.appText,
+            app_store_url:cfg.appStoreUrl
+          }
+        });
+      }
+    });
+  }
   function renderResult(){
     var observations={};
     panels.forEach(function(panel){
@@ -574,6 +647,9 @@ SCRIPT = """
     }
   });
   showStep(0,false);
+  registerWebMcp().catch(function(registrationError){
+    console.error("WebMCP tool registration failed.",registrationError);
+  });
 })();
 """
 
@@ -589,6 +665,35 @@ def json_script(data: dict) -> str:
         + json.dumps(data, ensure_ascii=False)
         + "</script>"
     )
+
+
+def webmcp_input_schema(locale: str) -> dict[str, object]:
+    properties = {}
+    for task in TASKS[locale]:
+        choices = [
+            {
+                "type": "string",
+                "const": f"choice-{index}",
+                "title": title,
+                "description": detail,
+            }
+            for index, (title, detail) in enumerate(task["options"], 1)
+        ]
+        properties[task["id"]] = {
+            "type": "string",
+            "enum": [choice["const"] for choice in choices],
+            "oneOf": choices,
+            "description": (
+                f'{task["title"]} {task["instruction"]} '
+                "Choose the closest observation only after using the current page sample."
+            ),
+        }
+    return {
+        "type": "object",
+        "additionalProperties": False,
+        "required": [task["id"] for task in TASKS[locale]],
+        "properties": properties,
+    }
 
 
 def render_tasks(locale: str) -> str:
@@ -634,13 +739,30 @@ def render_page(locale: str) -> str:
         "stepTemplate": t["step_template"],
         "next": t["next"],
         "resultButton": t["result_button"],
+        "resultNote": t["result_note"],
         "shareTitle": t["share_title"],
         "shared": t["shared"],
+        "webMcpDescription": t["webmcp_description"],
+        "webMcpPrivacy": t["webmcp_privacy"],
+        "webMcpInputSchema": webmcp_input_schema(locale),
+        "sourceUrls": [MOE_HANDBOOK, MOE_PRACTICE, WEBMCP_SOURCE],
+        "appStoreUrl": app_url,
+        "appText": t["app_text"],
         "dimensionOrder": [task["id"] for task in TASKS[locale]],
         "sampleSets": SAMPLE_SETS,
         "dimensions": {
             task["id"]: {
                 "label": task["label"],
+                "options": {
+                    f"choice-{index}": {
+                        "title": title,
+                        "detail": detail,
+                    }
+                    for index, (title, detail) in enumerate(
+                        task["options"],
+                        1,
+                    )
+                },
                 "recommendation": t["recommendations"][task["id"]],
             }
             for task in TASKS[locale]
@@ -669,6 +791,7 @@ def render_page(locale: str) -> str:
             "operatingSystem": "Any",
             "browserRequirements": "JavaScript",
             "isAccessibleForFree": True,
+            "dateModified": TOOL_DATE,
             "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
             "learningResourceType": "Parent-guided no-score observation guide",
             "educationalUse": "Practice planning",
@@ -683,6 +806,12 @@ def render_page(locale: str) -> str:
                 "Zhuyin-supported reading",
             ],
             "citation": [MOE_HANDBOOK, MOE_PRACTICE],
+            "featureList": [
+                "Five separate parent-guided observations",
+                "No total, score, level, readiness judgment or diagnosis",
+                "No account, upload, storage or analytics",
+                "Progressive read-only WebMCP notes for supporting browsers",
+            ],
             "author": {"@type": "Organization", "name": "iOS App Guide", "url": SITE},
         },
         {
@@ -716,6 +845,7 @@ def render_page(locale: str) -> str:
     source_links = (
         f'<li><a href="{MOE_HANDBOOK}" rel="noopener">{html.escape(t["source_labels"][0])}</a></li>'
         f'<li><a href="{MOE_PRACTICE}" rel="noopener">{html.escape(t["source_labels"][1])}</a></li>'
+        f'<li><a href="{WEBMCP_SOURCE}" rel="noopener">{html.escape(t["webmcp_source"])}</a></li>'
     )
 
     config_json = json.dumps(config, ensure_ascii=False).replace("</", "<\\/")
@@ -819,6 +949,14 @@ def update_tools_index(pages: Path = PAGES) -> bool:
     return updated != text
 
 
+def write_text_if_changed(path: Path, content: str) -> bool:
+    if path.exists() and path.read_text(encoding="utf-8") == content:
+        return False
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(content, encoding="utf-8")
+    return True
+
+
 def build(pages: Path = PAGES) -> list[str]:
     outputs = []
     for locale in COPY:
@@ -826,8 +964,7 @@ def build(pages: Path = PAGES) -> list[str]:
         if locale == "zh-Hant":
             relative = Path(locale) / relative
         target = pages / relative
-        target.parent.mkdir(parents=True, exist_ok=True)
-        target.write_text(render_page(locale), encoding="utf-8")
+        write_text_if_changed(target, render_page(locale))
         outputs.append(canonical(locale))
     update_tools_index(pages)
     return outputs

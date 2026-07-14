@@ -12518,6 +12518,17 @@ class GeneratorTests(unittest.TestCase):
             self.assertNotIn("value*50", page)
             self.assertNotIn(" / 2", page)
             self.assertNotIn('value="0"', page)
+            self.assertIn("document.modelContext?.registerTool", page)
+            self.assertIn(
+                'name:"record_private_zhuyin_observations"',
+                page,
+            )
+            self.assertIn(
+                "annotations:{readOnlyHint:true,untrustedContentHint:false}",
+                page,
+            )
+            self.assertIn(zhuyin_readiness_tool.WEBMCP_SOURCE, page)
+            self.assertNotIn("origin-trial", page.casefold())
             main = page.split("<main>", 1)[1]
             self.assertLess(
                 main.index("14-day" if page is english else "14 天"),
@@ -12531,6 +12542,36 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("不產生總分或分級", traditional)
         self.assertIn("one-time lifetime unlock", english)
         self.assertIn("一次性永久解鎖", traditional)
+        schemas = [
+            json.loads(block)
+            for block in re.findall(
+                r'<script type="application/ld\+json">(.*?)</script>',
+                english,
+                re.S,
+            )
+        ]
+        resource = next(
+            schema
+            for schema in schemas
+            if "WebApplication" in schema.get("@type", [])
+        )
+        self.assertEqual(
+            zhuyin_readiness_tool.TOOL_DATE,
+            resource["dateModified"],
+        )
+        tool_schema = zhuyin_readiness_tool.webmcp_input_schema("en")
+        self.assertFalse(tool_schema["additionalProperties"])
+        self.assertEqual(
+            ["recognition", "tones", "blending", "writing", "reading"],
+            tool_schema["required"],
+        )
+        self.assertTrue(
+            all(
+                prop["enum"] == ["choice-1", "choice-2", "choice-3"]
+                and len(prop["oneOf"]) == 3
+                for prop in tool_schema["properties"].values()
+            )
+        )
 
     def test_zhuyin_skills_check_builds_both_pages_and_index_card(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -12555,6 +12596,15 @@ class GeneratorTests(unittest.TestCase):
             )
             index = (tools / "index.html").read_text(encoding="utf-8")
             self.assertEqual(1, index.count("zhuyin-readiness-check.html"))
+            english_path = (
+                tools / f"{zhuyin_readiness_tool.SLUG}.html"
+            )
+            stable_mtime = 1_700_000_000_000_000_000
+            os.utime(english_path, ns=(stable_mtime, stable_mtime))
+            first_bytes = english_path.read_bytes()
+            zhuyin_readiness_tool.build(pages)
+            self.assertEqual(first_bytes, english_path.read_bytes())
+            self.assertEqual(stable_mtime, english_path.stat().st_mtime_ns)
 
     def test_zhuyin_skills_answer_leads_with_free_resource(self):
         question = (

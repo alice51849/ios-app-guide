@@ -138,6 +138,7 @@ def main():
     require([PY, os.path.join(HERE, "zhuyin_parent_teacher_handoff_kit.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_library_storytime_kit.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_grade1_summer_calendar.py")], env=env)
+    require([PY, os.path.join(HERE, "zhuyin_blending_card_generator.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_grade1_guide.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_anki_deck.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_skos_vocabulary.py")], env=env)
@@ -219,7 +220,6 @@ def main():
         env=env,
     )
     require([PY, os.path.join(HERE, "fix_en_hreflang.py")], env=env)
-    require([PY, os.path.join(HERE, "zhuyin_resourcesync.py")], env=env)
     require([PY, os.path.join(HERE, "gen_image_sitemap.py")], env=env)
     require([PY, os.path.join(HERE, "gen_linkset.py")], env=env)
     require([PY, os.path.join(HERE, "gen_social_previews.py")], env=env)
@@ -231,6 +231,7 @@ def main():
     require([PY, os.path.join(HERE, "gen_guide_design.py")], env=env)
     require([PY, os.path.join(HERE, "gen_llms.py"), "--cached-live"], env=env)
     require([PY, os.path.join(HERE, "gen_feed.py")], env=env)
+    require([PY, os.path.join(HERE, "zhuyin_resourcesync.py")], env=env)
     require([PY, os.path.join(HERE, "gen_sitemap_lastmod.py")], env=env)
     if "--no-push" in sys.argv:
         print("\n(--no-push:略過部署/推送)")

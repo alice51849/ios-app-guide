@@ -147,6 +147,7 @@ jobs:
           python3 zhuyin_parent_teacher_handoff_kit.py
           python3 zhuyin_library_storytime_kit.py
           python3 zhuyin_grade1_summer_calendar.py
+          python3 zhuyin_blending_card_generator.py
           python3 zhuyin_grade1_guide.py
           python3 zhuyin_anki_deck.py
           python3 zhuyin_skos_vocabulary.py
@@ -179,7 +180,6 @@ jobs:
             python3 add_related_tools.py $loc || echo "add_related_tools $loc exited $?"
           done
           python3 cleanup_localized_assets.py --cached-live
-          python3 zhuyin_resourcesync.py
           python3 ensure_live_guides.py
           python3 gen_webstories.py
           python3 gen_image_sitemap.py
@@ -193,6 +193,7 @@ jobs:
           python3 gen_guide_design.py
           python3 gen_llms.py --cached-live
           python3 gen_feed.py
+          python3 zhuyin_resourcesync.py
           python3 gen_sitemap_lastmod.py \
             --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
       - name: Commit English content first (fast, before slow localization)
@@ -244,7 +245,6 @@ jobs:
         run: |
           cd _engine/geo
           python3 cleanup_localized_assets.py --cached-live
-          python3 zhuyin_resourcesync.py
           python3 ensure_live_guides.py
           python3 gen_webstories.py
           python3 gen_image_sitemap.py
@@ -258,6 +258,7 @@ jobs:
           python3 gen_guide_design.py
           python3 gen_llms.py --cached-live
           python3 gen_feed.py
+          python3 zhuyin_resourcesync.py
           python3 gen_sitemap_lastmod.py
       - name: Commit localized pages if any
         run: |

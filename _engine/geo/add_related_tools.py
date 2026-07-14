@@ -21,6 +21,31 @@ HEADINGS = {
     "pl": "Darmowe narz\u0119dzia", "ar-SA": "\u0623\u062f\u0648\u0627\u062a \u0645\u062c\u0627\u0646\u064a\u0629",
 }
 BOPOMOFO_APP_IDS = ("6773017109", "6775773117")
+BOPOMOFO_TOOL_PRIORITY = {
+    "zhuyin-readiness-check.html": 0,
+    "zhuyin-grade1-14-day-summer-calendar.html": 1,
+    "zhuyin-blending-card-generator.html": 2,
+    "zhuyin-library-storytime-kit.html": 3,
+    "zhuyin-parent-teacher-handoff-kit.html": 4,
+    "zhuyin-family-picture-book-club-kit.html": 5,
+    "zhuyin-grandparent-video-call-kit.html": 6,
+}
+DEFAULT_TOOL_LIMIT = 5
+
+
+def tool_sort_key(path):
+    filename = os.path.basename(path)
+    return (BOPOMOFO_TOOL_PRIORITY.get(filename, 4), filename)
+
+
+def related_tool_limit(tools):
+    if any(
+        marker.removesuffix(".html") in url
+        for url, _label in tools
+        for marker in BOPOMOFO_TOOL_PRIORITY
+    ):
+        return len(tools)
+    return DEFAULT_TOOL_LIMIT
 
 def appid(h):
     m = re.search(r'apps\.apple\.com/app/id(\d+)', h)
@@ -54,20 +79,7 @@ def main():
     # group tools by app id from the canonical EN /tools/ set
     by_app = {}
     tool_files = glob.glob(os.path.join(en_tools_dir, "*.html"))
-    priority = {
-        "zhuyin-readiness-check.html": 0,
-        "zhuyin-grade1-14-day-summer-calendar.html": 1,
-        "zhuyin-library-storytime-kit.html": 2,
-        "zhuyin-parent-teacher-handoff-kit.html": 3,
-        "zhuyin-family-picture-book-club-kit.html": 4,
-        "zhuyin-grandparent-video-call-kit.html": 5,
-    }
-    tool_files.sort(
-        key=lambda path: (
-            priority.get(os.path.basename(path), 4),
-            os.path.basename(path),
-        )
-    )
+    tool_files.sort(key=tool_sort_key)
     for f in tool_files:
         slug = os.path.basename(f)[:-5]
         if slug == "index":
@@ -99,19 +111,7 @@ def main():
         a = appid(h)
         if not a or a not in by_app:
             continue
-        limit = (
-            11
-            if any(
-                "zhuyin-readiness-check" in url
-                or "zhuyin-grade1-14-day-summer-calendar" in url
-                or "zhuyin-library-storytime-kit" in url
-                or "zhuyin-parent-teacher-handoff-kit" in url
-                or "zhuyin-family-picture-book-club-kit" in url
-                or "zhuyin-grandparent-video-call-kit" in url
-                for url, _label in by_app[a]
-            )
-            else 5
-        )
+        limit = related_tool_limit(by_app[a])
         tools = by_app[a][:limit]
         items = "".join(
             f'<li><a href="{url}">{html.escape(lbl)}</a></li>' for url, lbl in tools

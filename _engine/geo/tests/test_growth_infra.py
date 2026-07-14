@@ -72,6 +72,7 @@ import outreach_scorecard
 import prioritize_trip_planet_resources
 import rsscloud_config
 import static_api_catalog
+import zhuyin_blending_card_generator
 import zhuyin_grandparent_call_kit
 import zhuyin_grade1_guide
 import zhuyin_grade1_summer_calendar
@@ -9830,6 +9831,7 @@ class GeneratorTests(unittest.TestCase):
             zhuyin_parent_teacher_handoff_kit,
             zhuyin_library_storytime_kit,
             zhuyin_grade1_summer_calendar,
+            zhuyin_blending_card_generator,
         ):
             generator.build(pages)
         for filename in (
@@ -9889,7 +9891,7 @@ class GeneratorTests(unittest.TestCase):
 
             resources = zhuyin_resourcesync.discover_resources(pages)
             entries = resource_list.findall(f"{{{sitemap_ns}}}url")
-            self.assertEqual(252, len(resources))
+            self.assertEqual(254, len(resources))
             self.assertEqual(len(resources), len(entries))
             resources_by_path = {
                 resource.relative_path.as_posix(): resource
@@ -10206,6 +10208,7 @@ class GeneratorTests(unittest.TestCase):
                 zhuyin_parent_teacher_handoff_kit.update_tools_index,
                 zhuyin_library_storytime_kit.update_tools_index,
                 zhuyin_grade1_summer_calendar.update_tools_index,
+                zhuyin_blending_card_generator.update_tools_indexes,
                 zhuyin_anki_deck.update_tools_index,
             )
 
@@ -10480,6 +10483,84 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(
                 1, index.count("zhuyin-grade1-14-day-summer-calendar.html")
             )
+
+    def test_zhuyin_blending_cards_are_bilingual_private_and_non_scored(self):
+        english = zhuyin_blending_card_generator.render_page("en")
+        traditional = zhuyin_blending_card_generator.render_page("zh-Hant")
+        for page in (english, traditional):
+            self.assertIn('"WebApplication", "LearningResource"', page)
+            self.assertIn('"@type": "FAQPage"', page)
+            self.assertIn('hreflang="en"', page)
+            self.assertIn('hreflang="zh-Hant"', page)
+            self.assertIn('id="mode-buttons"', page)
+            self.assertIn('id="card-count"', page)
+            self.assertIn("window.print()", page)
+            self.assertIn("navigator.share", page)
+            self.assertIn("id6773017109", page)
+            self.assertIn("html_ch/index.html", page)
+            self.assertIn("phonetic.jsp?la=0", page)
+            self.assertNotIn("localStorage", page)
+            self.assertNotIn("sessionStorage", page)
+            self.assertNotIn("XMLHttpRequest", page)
+            self.assertNotIn("fetch(", page)
+            self.assertNotIn("getUserMedia", page)
+            self.assertNotIn("<input", page)
+            self.assertNotIn("dataLayer", page)
+            self.assertNotIn("gtag(", page)
+            schemas = [
+                json.loads(block)
+                for block in re.findall(
+                    r'<script type="application/ld\+json">(.*?)</script>',
+                    page,
+                    re.S,
+                )
+            ]
+            resource = next(
+                schema
+                for schema in schemas
+                if schema.get("@type") == ["WebApplication", "LearningResource"]
+            )
+            self.assertTrue(resource["isAccessibleForFree"])
+            self.assertEqual("0", resource["offers"]["price"])
+            self.assertEqual("2026-07-14", resource["datePublished"])
+            self.assertEqual("2026-07-14", resource["dateModified"])
+            main = page.split("<main>", 1)[1]
+            self.assertLess(main.index('id="generator"'), main.index("id6773017109"))
+        self.assertIn("not a test or diagnosis", english)
+        self.assertIn("cannot measure mastery", english)
+        self.assertIn("No Ministry images, audio, animations or worksheets", english)
+        self.assertIn("不是測驗、診斷", traditional)
+        self.assertIn("不能衡量熟練度", traditional)
+        self.assertIn("未重製教育部圖片、音檔、動畫或練習單", traditional)
+        self.assertIn("one-time lifetime unlock", english)
+        self.assertIn("一次付費永久解鎖", traditional)
+
+    def test_zhuyin_blending_cards_build_both_pages_and_indexes_idempotently(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale in ("", "zh-Hant"):
+                tools = pages / locale / "tools" if locale else pages / "tools"
+                tools.mkdir(parents=True)
+                (tools / "index.html").write_text(
+                    '<main><section class="wrap grid"></section></main>',
+                    encoding="utf-8",
+                )
+            first = zhuyin_blending_card_generator.build(pages)
+            second = zhuyin_blending_card_generator.build(pages)
+            self.assertEqual(first, second)
+            self.assertEqual(2, len(first))
+            for locale in ("", "zh-Hant"):
+                tools = pages / locale / "tools" if locale else pages / "tools"
+                self.assertTrue(
+                    (tools / f"{zhuyin_blending_card_generator.SLUG}.html").exists()
+                )
+                index = (tools / "index.html").read_text(encoding="utf-8")
+                self.assertEqual(
+                    1,
+                    index.count(
+                        f"{zhuyin_blending_card_generator.SLUG}.html"
+                    ),
+                )
 
     def test_grade1_summer_answer_leads_with_free_calendar(self):
         question = (
@@ -10774,9 +10855,46 @@ class GeneratorTests(unittest.TestCase):
             ),
         )
         self.assertEqual(
+            add_related_tools.BOPOMOFO_APP_IDS,
+            add_related_tools.related_app_ids(
+                "6773017109", "zhuyin-blending-card-generator"
+            ),
+        )
+        self.assertEqual(
             ("6773017109",),
             add_related_tools.related_app_ids("6773017109", "screen-time-calculator"),
         )
+
+    def test_bopomofo_tool_limit_keeps_every_same_app_tool(self):
+        filenames = [
+            "zhuyin-readiness-check.html",
+            "zhuyin-grade1-14-day-summer-calendar.html",
+            "zhuyin-blending-card-generator.html",
+            "zhuyin-library-storytime-kit.html",
+            "zhuyin-parent-teacher-handoff-kit.html",
+            "zhuyin-family-picture-book-club-kit.html",
+            "zhuyin-grandparent-video-call-kit.html",
+            "printable-practice-generator.html",
+            "zhuyin-bingo.html",
+            "zhuyin-bopomofo-anki-deck.html",
+            "zhuyin-bopomofo-chart.html",
+            "zhuyin-flashcards.html",
+            "zhuyin-practice-sheet.html",
+        ]
+        tools = [
+            (
+                f"https://alice51849.github.io/ios-app-guide/tools/{name}",
+                name,
+            )
+            for name in filenames
+        ]
+        limit = add_related_tools.related_tool_limit(tools)
+        selected = sorted(filenames, key=add_related_tools.tool_sort_key)[:limit]
+        self.assertEqual(len(filenames), limit)
+        self.assertEqual(len(filenames), len(selected))
+        self.assertIn("zhuyin-blending-card-generator.html", selected)
+        self.assertIn("zhuyin-family-picture-book-club-kit.html", selected)
+        self.assertIn("zhuyin-grandparent-video-call-kit.html", selected)
 
     def test_weekend_school_answer_leads_with_free_handoff_kit(self):
         question = "App to reinforce weekend Chinese school Bopomofo lessons at home"
@@ -12053,6 +12171,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_parent_teacher_handoff_kit.py", workflow)
         self.assertIn("zhuyin_library_storytime_kit.py", workflow)
         self.assertIn("zhuyin_grade1_summer_calendar.py", workflow)
+        self.assertIn("zhuyin_blending_card_generator.py", workflow)
         self.assertIn("zhuyin_grade1_guide.py", workflow)
         self.assertIn("zhuyin_anki_deck.py", workflow)
         self.assertIn("zhuyin_skos_vocabulary.py", workflow)
@@ -12101,6 +12220,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_parent_teacher_handoff_kit.py",
             "zhuyin_library_storytime_kit.py",
             "zhuyin_grade1_summer_calendar.py",
+            "zhuyin_blending_card_generator.py",
             "zhuyin_grade1_guide.py",
             "zhuyin_anki_deck.py",
             "zhuyin_skos_vocabulary.py",
@@ -12127,7 +12247,6 @@ class GeneratorTests(unittest.TestCase):
             "fix_en_hreflang.py",
             "add_related_answers.py",
             "add_related_tools.py",
-            "zhuyin_resourcesync.py",
             "ensure_live_guides.py",
             "gen_webstories.py",
             "gen_image_sitemap.py",
@@ -12141,6 +12260,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_guide_design.py",
             "gen_llms.py --cached-live",
             "gen_feed.py",
+            "zhuyin_resourcesync.py",
             "gen_sitemap_lastmod.py",
         )
         workflow_positions = [refresh_block.index(item) for item in workflow_chain]
@@ -12178,7 +12298,6 @@ class GeneratorTests(unittest.TestCase):
         )[1].split("- name: Commit localized pages if any", 1)[0]
         final_chain = (
             "cleanup_localized_assets.py --cached-live",
-            "zhuyin_resourcesync.py",
             "gen_image_sitemap.py",
             "gen_linkset.py",
             "gen_social_previews.py",
@@ -12190,6 +12309,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_guide_design.py",
             "gen_llms.py --cached-live",
             "gen_feed.py",
+            "zhuyin_resourcesync.py",
             "gen_sitemap_lastmod.py",
         )
         final_positions = [final_cleanup_block.index(item) for item in final_chain]
@@ -12286,6 +12406,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_parent_teacher_handoff_kit.py", publish)
         self.assertIn("zhuyin_library_storytime_kit.py", publish)
         self.assertIn("zhuyin_grade1_summer_calendar.py", publish)
+        self.assertIn("zhuyin_blending_card_generator.py", publish)
         self.assertIn("zhuyin_grade1_guide.py", publish)
         self.assertIn("zhuyin_anki_deck.py", publish)
         self.assertIn("zhuyin_skos_vocabulary.py", publish)
@@ -12343,6 +12464,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_parent_teacher_handoff_kit.py",
             "zhuyin_library_storytime_kit.py",
             "zhuyin_grade1_summer_calendar.py",
+            "zhuyin_blending_card_generator.py",
             "zhuyin_grade1_guide.py",
             "zhuyin_anki_deck.py",
             "zhuyin_skos_vocabulary.py",
@@ -12366,7 +12488,6 @@ class GeneratorTests(unittest.TestCase):
             "add_related_answers.py",
             "add_related_tools.py",
             "fix_en_hreflang.py",
-            "zhuyin_resourcesync.py",
             "gen_image_sitemap.py",
             "gen_linkset.py",
             "gen_social_previews.py",
@@ -12378,6 +12499,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_guide_design.py",
             "gen_llms.py",
             "gen_feed.py",
+            "zhuyin_resourcesync.py",
             "gen_sitemap_lastmod.py",
         )
         publish_positions = [
@@ -12403,8 +12525,8 @@ class GeneratorTests(unittest.TestCase):
             push_loop.index("reconcile_lastmod_after_rebase(env)"),
         )
         self.assertLess(
+            publish.rindex("gen_feed.py"),
             publish.rindex("zhuyin_resourcesync.py"),
-            publish.rindex("gen_llms.py"),
         )
         self.assertIn("--refresh-slug", publish)
         self.assertIn(

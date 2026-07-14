@@ -983,6 +983,8 @@ _GEO_TAILORED16 = {
     "lumibopomofo": [
         "what is zhuyin bopomofo and how do kids learn it",
         "how to teach mandarin tones and zhuyin blending to my child at home",
+        "my child knows bopomofo symbols but cannot blend syllables",
+        "孩子會認注音符號但不會拼讀怎麼練",
     ],
     "lumiweather": [
         "how much screen time is appropriate for young children",

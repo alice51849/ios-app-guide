@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:rs="http://www.openarchives.org/rs/terms/">
   <rs:ln rel="describedby" href="https://alice51849.github.io/ios-app-guide/resourcesync/bopomofo-collection.jsonld" type="application/ld+json"/>
   <rs:ln rel="up" href="https://alice51849.github.io/ios-app-guide/resourcesync/capabilitylist.xml" type="application/xml"/>
-  <rs:md capability="resourcelist" at="2026-07-14T00:42:11Z"/>
+  <rs:md capability="resourcelist" at="2026-07-14T03:01:34Z"/>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.html</loc>
     <lastmod>2026-07-11</lastmod>
@@ -582,7 +582,7 @@
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html</loc>
     <lastmod>2026-07-14</lastmod>
-    <rs:md hash="sha-256:f2279e6bf076ea19d0b87d00653377a15f8385e9adba9f8f87ff96ccba8a1669" length="8300" type="text/html"/>
+    <rs:md hash="sha-256:0e011ff74ba35ed2e57c34defa6294407a3f750d4cb5ec5f1f5d50a68eb6f6d8" length="8300" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html</loc>
@@ -878,6 +878,10 @@
     <rs:md hash="sha-256:3d72d42589d4166bf9ec4066bc06e05efaaa7780c9db50cc8518bf34783ad6b6" length="12350" type="text/html"/>
   </url>
   <url>
+    <loc>https://alice51849.github.io/ios-app-guide/tools/zhuyin-blending-card-generator.html</loc>
+    <rs:md hash="sha-256:f483e08d04a9ebad9345d1e6d04f6983dc4a138846b7535e9fcbdce049f8b12c" length="26343" type="text/html"/>
+  </url>
+  <url>
     <loc>https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck-en.tsv</loc>
     <rs:md hash="sha-256:3f9a8967144fa02f920520d6bbb57c4f5807d840ddad85847ae9b2bc8a5b370b" length="2966" type="text/tab-separated-values"/>
   </url>
@@ -1012,13 +1016,17 @@
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-resourcesync.html</loc>
-    <lastmod>2026-07-12</lastmod>
-    <rs:md hash="sha-256:8e34498ca29d7bedfa08a0cf6dc8f823c06a28dc8270eb0a7319a62f622553b9" length="8156" type="text/html"/>
+    <lastmod>2026-07-14</lastmod>
+    <rs:md hash="sha-256:6652d417f6a60653b989cad78ef305cd009d8d2e40270080d348b7b766e7ec3e" length="8156" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-vocabulary.html</loc>
     <lastmod>2026-07-11</lastmod>
     <rs:md hash="sha-256:686ccfbff748e9f68ff969e8ec52890d3b916f84c922633f3cf14f3258f74ec4" length="23162" type="text/html"/>
+  </url>
+  <url>
+    <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-blending-card-generator.html</loc>
+    <rs:md hash="sha-256:8d868e9280db7283157309d0280dc713f5fcee67efc9d1389aaabdada6802bb3" length="25663" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-bopomofo-anki-deck.html</loc>

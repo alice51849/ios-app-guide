@@ -77,6 +77,7 @@ import notify_rsscloud
 import notify_websub
 import outreach_scorecard
 import passport_photo_print_sheet
+import photo_storage_cleanup_planner
 import portfolio_app_finder
 import prioritize_trip_planet_resources
 import queries
@@ -11747,6 +11748,214 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(first_bytes, english.read_bytes())
             self.assertEqual(stable_mtime, english.stat().st_mtime_ns)
 
+    def test_photo_storage_planner_is_private_transparent_and_non_predictive(self):
+        english = photo_storage_cleanup_planner.render_page(
+            "en",
+            app_public=False,
+        )
+        chinese = photo_storage_cleanup_planner.render_page(
+            "zh-Hant",
+            app_public=False,
+        )
+        public = photo_storage_cleanup_planner.render_page(
+            "en",
+            app_public=True,
+        )
+        for page in (english, chinese):
+            self.assertIn('"@type":"WebApplication"', page)
+            self.assertNotIn('"@type":"SoftwareApplication"', page)
+            self.assertIn('"dateModified":"2026-07-15"', page)
+            self.assertIn("document.modelContext?.registerTool", page)
+            self.assertIn(
+                'name: "plan_private_photo_storage_cleanup"',
+                page,
+            )
+            self.assertIn(
+                "annotations: {readOnlyHint: true, untrustedContentHint: false}",
+                page,
+            )
+            self.assertIn(
+                "photos_files_metadata_icloud_device_not_accessed: true",
+                page,
+            )
+            self.assertIn(
+                "no_media_classification_or_deletion: true",
+                page,
+            )
+            self.assertIn(
+                "no_recoverable_space_prediction: true",
+                page,
+            )
+            self.assertIn(
+                "target_already_met: target <= current",
+                page,
+            )
+            self.assertIn(photo_storage_cleanup_planner.APPLE_STORAGE, page)
+            self.assertIn(
+                photo_storage_cleanup_planner.APPLE_ICLOUD_PHOTOS,
+                page,
+            )
+            self.assertIn(photo_storage_cleanup_planner.APPLE_DUPLICATES, page)
+            self.assertIn(
+                photo_storage_cleanup_planner.APPLE_DELETE_RECOVER,
+                page,
+            )
+            self.assertIn(photo_storage_cleanup_planner.WEBMCP_SOURCE, page)
+            self.assertNotIn("Realistic cleanup target", page)
+            self.assertNotIn("Likely duplicate %", page)
+            self.assertNotIn("vid*.35", page)
+            self.assertNotIn("ss*.55", page)
+            self.assertNotIn("Average photo MB", page)
+            self.assertNotIn("Average video MB", page)
+            self.assertIn(
+                'id="current-free" type="number" min="0" max="2048" '
+                'step="0.1" value="0"',
+                page,
+            )
+            self.assertIn(
+                'id="photos-storage" type="number" min="0" max="2048" '
+                'step="0.1" value="0"',
+                page,
+            )
+            self.assertNotIn('type="file"', page)
+            self.assertNotIn("<textarea", page)
+            self.assertNotIn("FileReader", page)
+            self.assertNotIn("fetch(", page)
+            self.assertNotIn("XMLHttpRequest", page)
+            self.assertNotIn("localStorage", page)
+            self.assertNotIn("sessionStorage", page)
+            self.assertNotIn("navigator.modelContext", page)
+            self.assertNotIn("origin-trial", page.lower())
+            self.assertNotIn(
+                f"id{photo_storage_cleanup_planner.APP_ID}",
+                page,
+            )
+            self.assertIn('hreflang="en"', page)
+            self.assertIn('hreflang="zh-Hant"', page)
+        self.assertIn("不估可清容量", chinese)
+        self.assertIn("不存取照片", chinese)
+        self.assertIn(
+            f"id{photo_storage_cleanup_planner.APP_ID}",
+            public,
+        )
+        self.assertLess(
+            public.index('id="storage-planner"'),
+            public.index("Official Apple steps before any optional cleaner"),
+        )
+        self.assertLess(
+            public.index("Official Apple steps before any optional cleaner"),
+            public.index("Want an optional on-device library review workflow?"),
+        )
+        schema = photo_storage_cleanup_planner.webmcp_input_schema("en")
+        self.assertFalse(schema["additionalProperties"])
+        for name in (
+            "current_free_gb",
+            "target_free_gb",
+            "photos_storage_gb",
+        ):
+            self.assertEqual(0, schema["properties"][name]["minimum"])
+            self.assertEqual(2048, schema["properties"][name]["maximum"])
+        self.assertEqual(
+            list(photo_storage_cleanup_planner.ICLOUD_STATUSES),
+            schema["properties"]["icloud_photos_status"]["enum"],
+        )
+        self.assertEqual(
+            list(photo_storage_cleanup_planner.PRIORITIES),
+            schema["properties"]["priority"]["enum"],
+        )
+        self.assertEqual(
+            "boolean",
+            schema["properties"]["independent_copy_verified"]["type"],
+        )
+        execute = photo_storage_cleanup_planner.SCRIPT.split(
+            "execute: async (input) => {",
+            1,
+        )[1].split("return JSON.stringify(result);", 1)[0]
+        for mutation in (
+            "textContent",
+            "innerHTML",
+            "appendChild",
+            "replaceChildren",
+            "scroll",
+            "fetch(",
+            "localStorage",
+        ):
+            self.assertNotIn(mutation, execute)
+        self.assertLess(
+            execute.index("optional_free_planner: config.freePlanner"),
+            execute.index("official_sources: config.officialSources"),
+        )
+        self.assertLess(
+            execute.index("official_sources: config.officialSources"),
+            execute.index("result.optional_picclear_pro"),
+        )
+
+    def test_photo_storage_planner_builds_bilingual_pages_and_replaces_old_card(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            tools = pages / "tools"
+            localized_tools = pages / "zh-Hant" / "tools"
+            tools.mkdir(parents=True)
+            localized_tools.mkdir(parents=True)
+            anchor = (
+                '<article class="card third" data-tool="'
+                'screen-time-calculator"><h2><a href="'
+                'screen-time-calculator.html">Screen time</a></h2>'
+                "<p>Planner.</p></article>"
+            )
+            old_card = (
+                '<article class="card third"><h2><a href="'
+                'photo-storage-calculator.html">Photo Storage Calculator</a>'
+                '</h2><p>Estimate cleanup space.</p>'
+                '<p class="muted">Funnels to PicClear</p></article>'
+            )
+            (tools / "index.html").write_text(
+                f'<main><section class="wrap grid">{anchor}{old_card}'
+                "</section></main>",
+                encoding="utf-8",
+            )
+            (localized_tools / "index.html").write_text(
+                f'<main><section class="wrap grid">{anchor}</section></main>',
+                encoding="utf-8",
+            )
+            urls = photo_storage_cleanup_planner.build(
+                pages,
+                app_public=False,
+            )
+            self.assertEqual(2, len(urls))
+            english = tools / f"{photo_storage_cleanup_planner.SLUG}.html"
+            chinese = (
+                localized_tools
+                / f"{photo_storage_cleanup_planner.SLUG}.html"
+            )
+            self.assertTrue(english.exists())
+            self.assertTrue(chinese.exists())
+            for index in (
+                tools / "index.html",
+                localized_tools / "index.html",
+            ):
+                index_text = index.read_text(encoding="utf-8")
+                self.assertEqual(
+                    1,
+                    index_text.count(
+                        f"{photo_storage_cleanup_planner.SLUG}.html"
+                    ),
+                )
+                self.assertNotIn("Funnels to PicClear", index_text)
+            self.assertNotIn(
+                f"id{photo_storage_cleanup_planner.APP_ID}",
+                english.read_text(encoding="utf-8"),
+            )
+            stable_mtime = 1_700_000_000_000_000_000
+            os.utime(english, ns=(stable_mtime, stable_mtime))
+            first_bytes = english.read_bytes()
+            photo_storage_cleanup_planner.build(
+                pages,
+                app_public=False,
+            )
+            self.assertEqual(first_bytes, english.read_bytes())
+            self.assertEqual(stable_mtime, english.stat().st_mtime_ns)
+
     def test_passport_print_answer_leads_with_free_private_tool(self):
         question = (
             "How can I arrange passport photos on a 4x6 print sheet without "
@@ -14301,6 +14510,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("blurry_photo_diagnostic.py", materialize_block)
         self.assertNotIn("daily_checklist_planner.py", materialize_block)
         self.assertNotIn("screen_time_block_planner.py", materialize_block)
+        self.assertNotIn("photo_storage_cleanup_planner.py", materialize_block)
         self.assertNotIn("vocabulary_habit_planner.py", materialize_block)
         availability_block = workflow.split(
             "- name: Refresh verified App Store availability once", 1
@@ -14333,6 +14543,10 @@ class GeneratorTests(unittest.TestCase):
             availability_block.index("refresh=True"),
             availability_block.index("screen_time_block_planner.py"),
         )
+        self.assertLess(
+            availability_block.index("refresh=True"),
+            availability_block.index("photo_storage_cleanup_planner.py"),
+        )
         self.assertNotIn("gen_sitemap_lastmod.py", materialize_block)
         self.assertIn("zhuyin_picture_book_club_kit.py", workflow)
         self.assertIn("zhuyin_parent_teacher_handoff_kit.py", workflow)
@@ -14347,6 +14561,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(1, workflow.count("blurry_photo_diagnostic.py"))
         self.assertEqual(1, workflow.count("daily_checklist_planner.py"))
         self.assertEqual(1, workflow.count("screen_time_block_planner.py"))
+        self.assertEqual(1, workflow.count("photo_storage_cleanup_planner.py"))
         self.assertEqual(1, workflow.count("vocabulary_habit_planner.py"))
         self.assertEqual(1, workflow.count("wordmate_language_support.py"))
         self.assertEqual(1, workflow.count("portfolio_app_finder.py"))
@@ -14369,6 +14584,10 @@ class GeneratorTests(unittest.TestCase):
         self.assertLess(
             workflow.index("refresh=True"),
             workflow.index("screen_time_block_planner.py"),
+        )
+        self.assertLess(
+            workflow.index("refresh=True"),
+            workflow.index("photo_storage_cleanup_planner.py"),
         )
         self.assertLess(
             workflow.index("refresh=True"),
@@ -14608,6 +14827,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("blurry_photo_diagnostic.py", publish)
         self.assertIn("daily_checklist_planner.py", publish)
         self.assertIn("screen_time_block_planner.py", publish)
+        self.assertIn("photo_storage_cleanup_planner.py", publish)
         self.assertIn("vocabulary_habit_planner.py", publish)
         self.assertIn("wordmate_language_support.py", publish)
         self.assertIn("portfolio_app_finder.py", publish)

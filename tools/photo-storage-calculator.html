@@ -1,7 +1,285 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>iPhone Photo Storage Calculator — Estimate Photos, Videos &amp; Cleanup Space</title><meta name="description" content="Estimate how much iPhone storage your photos, screenshots, duplicates and videos use, then plan safe cleanup steps before using a photo cleaner."><link rel="canonical" href="https://alice51849.github.io/ios-app-guide/tools/photo-storage-calculator.html"><meta property="og:type" content="website"><meta property="og:title" content="iPhone Photo Storage Calculator — Estimate Photos, Videos &amp; Cleanup Space"><meta property="og:description" content="Estimate how much iPhone storage your photos, screenshots, duplicates and videos use, then plan safe cleanup steps before using a photo cleaner."><meta property="og:url" content="https://alice51849.github.io/ios-app-guide/tools/photo-storage-calculator.html"><meta name="twitter:card" content="summary"><style>:root{--bg:#f7f7fb;--card:#fff;--ink:#161622;--muted:#5d6370;--line:#e6e7ef;--brand:#5b5ff2;--brand2:#8b5cf6;--ok:#0f8f5f;--warn:#b7791f}*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#fff,var(--bg));color:var(--ink);line-height:1.55}a{color:#3840d0}.wrap{width:min(1040px,100% - 32px);margin:auto}.top{padding:18px 0;border-bottom:1px solid var(--line);background:rgba(255,255,255,.86);backdrop-filter:blur(12px);position:sticky;top:0;z-index:3}.nav{display:flex;justify-content:space-between;gap:16px;align-items:center}.nav a{text-decoration:none;font-weight:700}.hero{padding:46px 0 24px}.eyebrow{color:var(--brand);font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem}h1{font-size:clamp(2rem,6vw,4rem);line-height:1.02;margin:.2em 0}h2{font-size:clamp(1.35rem,3vw,2rem);margin:1.2em 0 .55em}h3{margin:1em 0 .35em}p.lead{font-size:1.15rem;color:var(--muted);max-width:760px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.card{grid-column:span 12;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 8px 30px rgba(31,34,78,.06)}@media(min-width:760px){.half{grid-column:span 6}.third{grid-column:span 4}.two{grid-column:span 8}.side{grid-column:span 4}}label{display:block;font-weight:750;margin:12px 0 6px}input,select,textarea{width:100%;font:inherit;padding:12px 13px;border:1px solid #cfd2df;border-radius:13px;background:#fff}textarea{min-height:145px;resize:vertical}button,.cta{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:white!important;text-decoration:none;font-weight:850;padding:13px 18px;box-shadow:0 8px 22px rgba(91,95,242,.22);cursor:pointer}.ghost{background:#fff!important;color:#3840d0!important;border:1px solid #cfd2df;box-shadow:none}.result{background:#f2f5ff;border:1px solid #dfe4ff;border-radius:18px;padding:16px;margin-top:16px}.muted{color:var(--muted)}.pill{display:inline-block;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 10px;margin:3px;font-weight:700}.checklist li{margin:.45em 0}.footer{margin-top:40px;padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}.notice{font-size:.92rem;color:#626875}.score{font-size:3rem;font-weight:900;color:var(--brand);line-height:1}.bar{height:12px;background:#e8eaff;border-radius:99px;overflow:hidden}.bar span{display:block;height:100%;background:linear-gradient(135deg,var(--brand),var(--brand2));width:0}.ok{color:var(--ok);font-weight:800}.warn{color:var(--warn);font-weight:800}</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "PicClear", "operatingSystem": "iOS", "applicationCategory": "PhotographyApplication", "url": "https://apps.apple.com/app/id6780223070?ct=iag_lp", "installUrl": "https://apps.apple.com/app/id6780223070?ct=iag_lp", "description": "Estimate how much iPhone storage your photos, screenshots, duplicates and videos use, then plan safe cleanup steps before using a photo cleaner.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free to download; check the App Store for current pricing and unlock details."}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I estimate photo storage on iPhone?", "acceptedAnswer": {"@type": "Answer", "text": "Multiply counts by average file size and include videos, screenshots, burst shots and duplicates."}}, {"@type": "Question", "name": "Does this delete photos?", "acceptedAnswer": {"@type": "Answer", "text": "No. It only estimates space in your browser."}}, {"@type": "Question", "name": "What should I remove first?", "acceptedAnswer": {"@type": "Answer", "text": "Start with huge videos, obvious duplicates, blurry screenshots and exported files you already backed up."}}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "iOS App Guide", "item": "https://alice51849.github.io/ios-app-guide/index.html"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://alice51849.github.io/ios-app-guide/tools/index.html"}, {"@type": "ListItem", "position": 3, "name": "iPhone Photo Storage Calculator — Estimate Photos, Videos & Cleanup Space", "item": "https://alice51849.github.io/ios-app-guide/tools/photo-storage-calculator.html"}]}</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Private iPhone Photo Storage Cleanup Planner | No Upload</title>
+<meta name="description" content="Calculate only the free-space gap from storage numbers you enter, then build a reversible photo-review plan without uploading, scanning or estimating your library.">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/tools/photo-storage-calculator.html">
+<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/photo-storage-calculator.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/photo-storage-calculator.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/photo-storage-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Private iPhone photo storage cleanup planner">
+<meta property="og:description" content="Calculate only the free-space gap from storage numbers you enter, then build a reversible photo-review plan without uploading, scanning or estimating your library.">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/tools/photo-storage-calculator.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#18343a;--muted:#607479;--line:#d9e6e5;--paper:#fff;--bg:#eef7f5;--deep:#176c65;--mint:#4aa89a;--soft:#e6f5f1;--warn:#fff6da;--shadow:0 22px 60px rgba(23,76,72,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,#fff 0,var(--bg) 55%,#e0efec 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:#176c65}.wrap{width:min(1120px,calc(100% - 30px));margin:auto}.top{position:sticky;top:0;z-index:8;background:#fffffff2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}.links{display:flex;gap:15px;overflow-x:auto}
+.hero{padding:64px 0 30px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--deep);white-space:nowrap}.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.04;letter-spacing:-.035em;margin:.3em 0 .22em;white-space:nowrap;overflow-x:auto}.lead{font-size:clamp(17px,2.2vw,21px);color:var(--muted);margin:0;white-space:nowrap;overflow-x:auto}.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.planner,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}.planner{padding:clamp(20px,4vw,36px);margin:16px auto 30px}.planner h2,.card h2,.app-card h2{font-size:clamp(24px,3.6vw,34px);line-height:1.14;margin:0;white-space:nowrap;overflow-x:auto}.intro{color:var(--muted);white-space:nowrap;overflow-x:auto}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px}.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--deep);margin-bottom:6px;white-space:nowrap;overflow-x:auto}select,input,button{font:inherit}select,input[type=number]{width:100%;min-height:46px;border:1px solid #c7d9d6;border-radius:13px;background:#fff;color:var(--ink);padding:9px 11px}.toggle{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:14px;padding:11px 13px;background:#fff;font-weight:760;white-space:nowrap;overflow-x:auto}.toggle input{inline-size:20px;block-size:20px;flex:0 0 auto}.button{border:0;border-radius:999px;background:linear-gradient(135deg,var(--deep),var(--mint));color:#fff;text-decoration:none;font-weight:850;padding:11px 17px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(23,108,101,.2)}
+.results{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:11px;margin-top:22px}.result{background:var(--soft);border:1px solid #c4e0da;border-radius:17px;padding:14px;min-width:0}.result strong,.result span{display:block;white-space:nowrap;overflow-x:auto}.result strong{font-size:12px;color:#39736d;text-transform:uppercase;letter-spacing:.04em}.result span{font-size:15px;color:#28534f;font-weight:760;margin-top:5px}.note{background:var(--warn);border:1px solid #ead9a7;border-radius:16px;padding:13px 15px;margin:14px 0 0;white-space:nowrap;overflow-x:auto}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:30px}.card,.app-card{padding:clamp(20px,3.5vw,30px)}.card.wide{grid-column:1/-1}.card p,.card li,.app-card p,.faq details p,.faq summary{white-space:nowrap;overflow-x:auto}.card ul,.card ol{padding-left:22px}.card li{margin:8px 0}.source-list a{overflow-wrap:anywhere}.app-card{margin:0 auto 38px;background:linear-gradient(135deg,#fbfffe,#e3f3ef)}.app-card .button{display:inline-flex;margin-top:5px}.faq{margin-bottom:30px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+.footer{background:var(--deep);color:#effcf9;text-align:center;padding:27px 0;white-space:nowrap;overflow-x:auto}
+@media(max-width:960px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.controls,.results{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1120px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{.top,.hero,.controls,.button,.app-card,.footer{display:none!important}body{background:#fff}.planner,.card{box-shadow:none;break-inside:avoid}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Private iPhone photo storage cleanup planner","description":"Calculate only the free-space gap from storage numbers you enter, then build a reversible photo-review plan without uploading, scanning or estimating your library.","url":"https://alice51849.github.io/ios-app-guide/tools/photo-storage-calculator.html","inLanguage":"en","datePublished":"2026-07-15","dateModified":"2026-07-15","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["No photo, file, metadata, iCloud or device access","Transparent target-minus-current free-space gap","Photos storage reported separately as context","Reversible review sequence","No recoverable-space prediction, classification or deletion"],"citation":["https://support.apple.com/en-us/108429","https://support.apple.com/guide/iphone/sync-photos-videos-icloud-iph961b96c4d/ios","https://support.apple.com/guide/iphone/merge-duplicate-photos-and-videos-iph1978d9c23/ios","https://support.apple.com/guide/iphone/delete-or-hide-photos-and-videos-iphb4defbde9/ios"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"en","mainEntity":[{"@type":"Question","name":"Does this page scan my photo library?","acceptedAnswer":{"@type":"Answer","text":"No. It accepts only storage numbers and status choices you enter."}},{"@type":"Question","name":"Does the gap equal space I can recover?","acceptedAnswer":{"@type":"Answer","text":"No. It is only target free space minus current free space, never an estimate of deletable media."}},{"@type":"Question","name":"Is iCloud Photos an independent backup?","acceptedAnswer":{"@type":"Answer","text":"This planner does not treat sync alone as independent because changes and deletions can propagate across devices."}},{"@type":"Question","name":"Does Recently Deleted free space immediately?","acceptedAnswer":{"@type":"Answer","text":"Do not assume it does. Apple documents a 30-day recovery window; measure storage after reviewed changes."}}]}</script>
 <link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
 <link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
 <link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
-</head><body><header class="top"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/index.html">iOS App Guide</a><nav><a href="https://alice51849.github.io/ios-app-guide/tools/">Free tools</a> · <a href="https://alice51849.github.io/ios-app-guide/alternatives/">Alternatives</a></nav></div></header><main><section class="hero wrap"><div class="eyebrow">Free photo storage calculator</div><h1>iPhone Photo Storage Calculator</h1><p class="lead">Estimate how much space photos, screenshots, duplicates and videos are consuming before you clean your library. Nothing is uploaded or deleted.</p><p><a class="cta" href="https://apps.apple.com/app/id6780223070?ct=iag_lp" rel="nofollow noopener">Find duplicates and huge videos with PicClear →</a></p></section><section class="wrap grid"><div class="card two"><div class="grid"><label class="third">Photos count<input id="photos" type="number" value="8000" min="0"></label><label class="third">Average photo MB<input id="photoMb" type="number" value="3.2" min="0" step="0.1"></label><label class="third">Likely duplicate %<input id="dup" type="number" value="12" min="0" max="80"></label><label class="third">Videos count<input id="videos" type="number" value="240" min="0"></label><label class="third">Average video MB<input id="videoMb" type="number" value="85" min="0" step="1"></label><label class="third">Screenshots count<input id="shots" type="number" value="1200" min="0"></label></div><p><button id="calcBtn">Estimate cleanup space</button></p><div id="out" class="result"></div></div><aside class="card side"><h2>Safe cleanup order</h2><ol class="checklist"><li>Back up important originals first.</li><li>Review huge videos before deleting.</li><li>Compare duplicates visually; keep the sharpest original.</li><li>Remove screenshots, memes and exports you no longer need.</li><li>Empty Recently Deleted only when sure.</li></ol></aside></section><section class="wrap grid"><div class="card half"><h2>Why duplicates matter</h2><p>Small duplicates add up, but videos usually dominate storage. A good cleanup plan checks both instead of deleting memories blindly.</p></div><div class="card half"><h2>Where PicClear helps</h2><p>PicClear is built for finding duplicates and huge videos so you can review candidates faster on iPhone.</p></div></section></main><script>function fmt(mb){return mb>1024?(mb/1024).toFixed(1)+' GB':mb.toFixed(0)+' MB'}function calc(){let p=+photos.value||0,pm=+photoMb.value||0,d=Math.max(0,Math.min(80,+dup.value||0))/100,v=+videos.value||0,vm=+videoMb.value||0,s=+shots.value||0;let photo=p*pm,vid=v*vm,ss=s*1.2,dupMb=photo*d,total=photo+vid+ss,potential=dupMb+Math.min(vid*.35,vid)+ss*.55;out.innerHTML=`<h2>Estimated library size</h2><p><span class="pill">Total: ${fmt(total)}</span><span class="pill">Photos: ${fmt(photo)}</span><span class="pill">Videos: ${fmt(vid)}</span><span class="pill">Screenshots: ${fmt(ss)}</span></p><h3>Realistic cleanup target</h3><p><span class="pill">Duplicate candidates: ${fmt(dupMb)}</span><span class="pill">Potential first pass: ${fmt(potential)}</span></p><p class="notice">This is an estimate. iCloud Photos, HEIC compression and edited originals can change actual storage.</p>`}calcBtn.onclick=calc;calc()</script><footer class="footer"><div class="wrap">Free client-side tool. No tracking, no account, no server upload. Results are informational; verify official requirements when health, safety, documents, hiring, or work decisions matter.</div></footer></body></html>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/index.html">iOS App Guide</a><nav class="links"><a href="https://alice51849.github.io/ios-app-guide/tools/index.html">Free tools</a><a href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/photo-storage-calculator.html">繁體中文</a></nav></div></header>
+<main>
+<section class="hero wrap"><div class="eyebrow">Free · no photo access · no recovery estimate</div><h1>Private iPhone photo storage cleanup planner</h1><p class="lead">Measure the gap between current and target free space. This page never guesses average file size, duplicate rate or how much a cleanup will recover.</p><div class="badges"><span class="badge">No photos, files or metadata</span><span class="badge">No iCloud or device access</span><span class="badge">No deletion or classification</span><span class="badge">No recoverable-space prediction</span></div></section>
+<section class="planner wrap"><h2>Calculate a known storage gap</h2><p class="intro">Copy numbers you can already see in Settings. Photos storage is reported separately and is never treated as deletable or recoverable.</p>
+<form id="storage-planner"><div class="controls">
+<div class="field"><label for="current-free">Current free space (GB)</label><input id="current-free" type="number" min="0" max="2048" step="0.1" value="0" required></div>
+<div class="field"><label for="target-free">Target free space (GB)</label><input id="target-free" type="number" min="0" max="2048" step="0.1" value="0" required></div>
+<div class="field"><label for="photos-storage">Photos storage shown by iPhone (GB)</label><input id="photos-storage" type="number" min="0" max="2048" step="0.1" value="0" required></div>
+<div class="field"><label for="icloud-status">iCloud Photos status</label><select id="icloud-status"><option value="unknown">Not checked</option><option value="on-synced">On — sync appears complete</option><option value="on-syncing-or-paused">On — syncing, paused or warning</option><option value="off">Off</option></select></div>
+<div class="field"><label for="priority">First review area</label><select id="priority"><option value="general">General storage review</option><option value="duplicates">Apple Duplicates collection</option><option value="large-videos">Large videos</option><option value="screenshots">Screenshots</option></select></div>
+<label class="toggle"><input id="copy-verified" type="checkbox">I verified an independent copy of irreplaceable originals</label>
+<label class="toggle"><input id="deleted-reviewed" type="checkbox">I reviewed Recently Deleted</label>
+</div><p><button class="button" type="submit">Update private plan</button></p></form>
+<div class="results"><div class="result"><strong>Additional free-space gap</strong><span id="result-gap"></span></div><div class="result"><strong>Current free space</strong><span id="result-current"></span></div><div class="result"><strong>Target free space</strong><span id="result-target"></span></div><div class="result"><strong>Reported Photos storage</strong><span id="result-photos"></span></div><div class="result"><strong>Target status</strong><span id="result-status"></span></div></div>
+<p class="note">Gap formula: max(0, target free GB − current free GB). Values use the same GB unit you enter. The result is not a prediction of what Photos or PicClear can recover.</p><p class="note">Reported Photos storage is context only. Some items may be important, synced, optimized, shared, edited or already represented differently on device.</p><p class="note"><strong>Reversible review plan:</strong> <span id="result-plan"></span></p></section>
+<section class="wrap grid"><article class="card"><h2>Safety-first cleanup sequence</h2><ol><li>Confirm current free space and Photos storage in Settings &gt; General &gt; iPhone Storage.</li><li>Verify an independent, openable copy of irreplaceable originals before permanent deletion.</li><li>Check iCloud Photos sync status and remember changes can propagate across devices.</li><li>Review one category in a small batch; never treat a category as proof an item is disposable.</li><li>Recheck Recently Deleted and device storage before deciding on another batch.</li></ol></article><article class="card"><h2>What this planner cannot know</h2><p>It cannot read your Photos library, storage, iCloud, albums, files, metadata, favorites, duplicates, blur, video sizes or deletion results. It never identifies anything as safe to delete and cannot predict recovered capacity.</p></article><article class="card wide"><h2>Official Apple steps before any optional cleaner</h2><p>Apple documents iPhone Storage, iCloud Photos synchronization and optimization, the Duplicates collection, and the 30-day Recently Deleted window. Verify the current instructions for your iOS version.</p><ul class="source-list"><li><a href="https://support.apple.com/en-us/108429" rel="noopener">Apple: check storage on iPhone and iPad</a></li><li><a href="https://support.apple.com/guide/iphone/sync-photos-videos-icloud-iph961b96c4d/ios" rel="noopener">Apple: back up and sync photos and videos with iCloud</a></li><li><a href="https://support.apple.com/guide/iphone/merge-duplicate-photos-and-videos-iph1978d9c23/ios" rel="noopener">Apple: merge duplicate photos and videos on iPhone</a></li><li><a href="https://support.apple.com/guide/iphone/delete-or-hide-photos-and-videos-iphb4defbde9/ios" rel="noopener">Apple: delete, recover or permanently remove photos and videos</a></li></ul><p><a href="https://developer.chrome.com/docs/ai/webmcp/imperative-api" rel="noopener">Chrome WebMCP imperative API preview (subject to change)</a></p></article></section>
+<section class="wrap card faq"><h2>Photo storage cleanup questions</h2><details><summary>Does this page scan my photo library?</summary><p>No. It accepts only storage numbers and status choices you enter.</p></details><details><summary>Does the gap equal space I can recover?</summary><p>No. It is only target free space minus current free space, never an estimate of deletable media.</p></details><details><summary>Is iCloud Photos an independent backup?</summary><p>This planner does not treat sync alone as independent because changes and deletions can propagate across devices.</p></details><details><summary>Does Recently Deleted free space immediately?</summary><p>Do not assume it does. Apple documents a 30-day recovery window; measure storage after reviewed changes.</p></details></section>
+<section class="app-card wrap"><h2>Want an optional on-device library review workflow?</h2><p>PicClear Pro is optional. Its current App Store listing says scanning and previews are free, with a one-time unlock for cleaning; it groups duplicates, similar photos, screenshots, blurry photos, large videos and large photos on device for review. The listing says nothing is deleted until confirmation, Favorites can be protected, and the app works offline with no account, ads or tracking. Check the current listing for exact availability and features. This planner works without the app.</p><a class="button" href="https://apps.apple.com/app/id6780223070?ct=iag_photo_storage_en" rel="nofollow noopener">View PicClear Pro on the App Store</a></section>
+</main>
+<footer class="footer"><div class="wrap">Private arithmetic only · no photo access · no deletion · no recovery estimate</div></footer>
+<script type="application/json" id="storage-config">{"inputSchema":{"type":"object","properties":{"current_free_gb":{"type":"number","minimum":0,"maximum":2048,"description":"Current free storage shown by the device, in GB."},"target_free_gb":{"type":"number","minimum":0,"maximum":2048,"description":"User-selected target free storage, in the same GB unit."},"photos_storage_gb":{"type":"number","minimum":0,"maximum":2048,"description":"Photos storage shown by the device, for context only."},"icloud_photos_status":{"type":"string","enum":["unknown","on-synced","on-syncing-or-paused","off"]},"independent_copy_verified":{"type":"boolean"},"recently_deleted_reviewed":{"type":"boolean"},"priority":{"type":"string","enum":["general","duplicates","large-videos","screenshots"]}},"required":["current_free_gb","target_free_gb","photos_storage_gb","icloud_photos_status","independent_copy_verified","recently_deleted_reviewed","priority"],"additionalProperties":false},"labels":{"icloud":{"unknown":"Not checked","on-synced":"On — sync appears complete","on-syncing-or-paused":"On — syncing, paused or warning","off":"Off"},"priority":{"general":"General storage review","duplicates":"Apple Duplicates collection","large-videos":"Large videos","screenshots":"Screenshots"}},"icloudSteps":{"unknown":"Check Photos sync status before changing irreplaceable originals; if iCloud Photos is on, edits and deletions can sync across devices.","on-synced":"Even when iCloud Photos appears synced, changes and deletions sync across devices. Treat sync as synchronization, not the only independent copy.","on-syncing-or-paused":"Resolve the iCloud Photos syncing, paused or storage warning before destructive changes, and verify what has actually synced.","off":"With iCloud Photos reported off, verify another independent copy of irreplaceable originals before destructive changes."},"prioritySteps":{"general":"Start with Settings > General > iPhone Storage recommendations, then review Apple's Duplicates collection, videos and screenshots in small groups.","duplicates":"Open Photos > Collections > Utilities > Duplicates and review each merge; the collection may not appear when Photos has not found duplicates.","large-videos":"Review videos individually for importance and whether an independent original can be opened; duration or category does not prove a video is disposable.","screenshots":"Review the Screenshots collection in small groups and keep anything needed for records, authentication, travel, work or accessibility."},"copyYes":"Open a sample from the independent copy before permanent deletion; iCloud Photos sync alone is not treated here as an independent archive.","copyNo":"Stop before permanent deletion and create a verifiable independent copy of irreplaceable originals; iCloud Photos changes can propagate.","deletedYes":"Recheck Recently Deleted before permanently removing anything; permanent removal ends the normal recovery window.","deletedNo":"Review Recently Deleted. Apple says deleted items normally remain there for 30 days; do not empty it until you are sure and any essential originals are independently verified.","finalStep":"After one small reviewed batch, recheck iPhone Storage. Measure the actual change instead of assuming the calculated gap equals deletable content.","gapBoundary":"Gap formula: max(0, target free GB − current free GB). Values use the same GB unit you enter. The result is not a prediction of what Photos or PicClear can recover.","photosBoundary":"Reported Photos storage is context only. Some items may be important, synced, optimized, shared, edited or already represented differently on device.","scopeBoundary":"It cannot read your Photos library, storage, iCloud, albums, files, metadata, favorites, duplicates, blur, video sizes or deletion results. It never identifies anything as safe to delete and cannot predict recovered capacity.","met":"Target already met","notMet":"Gap remains","invalidInput":"Enter all three storage numbers from 0 to 2,048 GB.","checklist":["Confirm current free space and Photos storage in Settings > General > iPhone Storage.","Verify an independent, openable copy of irreplaceable originals before permanent deletion.","Check iCloud Photos sync status and remember changes can propagate across devices.","Review one category in a small batch; never treat a category as proof an item is disposable.","Recheck Recently Deleted and device storage before deciding on another batch."],"toolDescription":"Calculate only max(0, target free GB minus current free GB) from bounded self-entered numbers, report Photos storage separately, and return a reversible review plan. Never access photos, files, metadata, iCloud, accounts or device storage; never estimate recoverable capacity, classify media or delete anything.","freePlanner":{"label":"Private iPhone photo storage cleanup planner","url":"https://alice51849.github.io/ios-app-guide/tools/photo-storage-calculator.html","boundary":"Copy numbers you can already see in Settings. Photos storage is reported separately and is never treated as deletable or recoverable."},"officialSources":[{"label":"Apple: check storage on iPhone and iPad","url":"https://support.apple.com/en-us/108429"},{"label":"Apple: back up and sync photos and videos with iCloud","url":"https://support.apple.com/guide/iphone/sync-photos-videos-icloud-iph961b96c4d/ios"},{"label":"Apple: merge duplicate photos and videos on iPhone","url":"https://support.apple.com/guide/iphone/merge-duplicate-photos-and-videos-iph1978d9c23/ios"},{"label":"Apple: delete, recover or permanently remove photos and videos","url":"https://support.apple.com/guide/iphone/delete-or-hide-photos-and-videos-iphb4defbde9/ios"}],"webmcpSource":"https://developer.chrome.com/docs/ai/webmcp/imperative-api","optionalApp":{"label":"View PicClear Pro on the App Store","boundary":"PicClear Pro is optional. Its current App Store listing says scanning and previews are free, with a one-time unlock for cleaning; it groups duplicates, similar photos, screenshots, blurry photos, large videos and large photos on device for review. The listing says nothing is deleted until confirmation, Favorites can be protected, and the app works offline with no account, ads or tracking. Check the current listing for exact availability and features. This planner works without the app.","app_store_url":"https://apps.apple.com/app/id6780223070?ct=iag_photo_storage_en"}}</script>
+<script>
+(() => {
+  const config = JSON.parse(document.getElementById("storage-config").textContent);
+  const form = document.getElementById("storage-planner");
+  const fields = {
+    current_free_gb: document.getElementById("current-free"),
+    target_free_gb: document.getElementById("target-free"),
+    photos_storage_gb: document.getElementById("photos-storage"),
+    icloud_photos_status: document.getElementById("icloud-status"),
+    independent_copy_verified: document.getElementById("copy-verified"),
+    recently_deleted_reviewed: document.getElementById("deleted-reviewed"),
+    priority: document.getElementById("priority")
+  };
+  const output = {
+    gap: document.getElementById("result-gap"),
+    current: document.getElementById("result-current"),
+    target: document.getElementById("result-target"),
+    photos: document.getElementById("result-photos"),
+    status: document.getElementById("result-status"),
+    plan: document.getElementById("result-plan")
+  };
+
+  function round(value, digits = 2) {
+    const factor = 10 ** digits;
+    return Math.round((value + Number.EPSILON) * factor) / factor;
+  }
+
+  function numberValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const schema = config.inputSchema.properties[name];
+    if (typeof value !== "number" || !Number.isFinite(value)) {
+      throw new TypeError(`${name} must be a finite number.`);
+    }
+    if (value < schema.minimum || value > schema.maximum) {
+      throw new RangeError(`${name} is outside the supported range.`);
+    }
+    return value;
+  }
+
+  function enumValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const values = config.inputSchema.properties[name].enum;
+    if (typeof value !== "string" || !values.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    return value;
+  }
+
+  function booleanValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    if (typeof input[name] !== "boolean") {
+      throw new TypeError(`${name} must be a boolean.`);
+    }
+    return input[name];
+  }
+
+  function plan(input) {
+    const current = numberValue(input, "current_free_gb");
+    const target = numberValue(input, "target_free_gb");
+    const photos = numberValue(input, "photos_storage_gb");
+    const icloud = enumValue(input, "icloud_photos_status");
+    const independentCopy = booleanValue(input, "independent_copy_verified");
+    const recentlyDeleted = booleanValue(input, "recently_deleted_reviewed");
+    const priority = enumValue(input, "priority");
+    const gap = Math.max(0, target - current);
+    return {
+      selected_inputs: {
+        current_free_gb: current,
+        target_free_gb: target,
+        photos_storage_gb: photos,
+        icloud_photos_status: icloud,
+        icloud_photos_status_label: config.labels.icloud[icloud],
+        independent_copy_verified: independentCopy,
+        recently_deleted_reviewed: recentlyDeleted,
+        priority,
+        priority_label: config.labels.priority[priority]
+      },
+      free_space_gap: {
+        formula: "max(0, target_free_gb - current_free_gb)",
+        additional_free_space_gap_gb: gap,
+        target_already_met: target <= current,
+        same_gb_unit_as_entered: true,
+        is_not_recoverable_space_prediction: true
+      },
+      reported_photos_storage: {
+        photos_storage_gb: photos,
+        is_context_not_deletable_or_recoverable_capacity: true
+      },
+      reversible_review_plan: [
+        independentCopy ? config.copyYes : config.copyNo,
+        config.icloudSteps[icloud],
+        config.prioritySteps[priority],
+        recentlyDeleted ? config.deletedYes : config.deletedNo,
+        config.finalStep
+      ],
+      gap_boundary: config.gapBoundary,
+      photos_boundary: config.photosBoundary,
+      scope_boundary: config.scopeBoundary
+    };
+  }
+
+  function validateInput(input) {
+    if (input === null || typeof input !== "object" || Array.isArray(input)) {
+      throw new TypeError("WebMCP input must be an object.");
+    }
+    const allowed = new Set(Object.keys(config.inputSchema.properties));
+    for (const name of Object.keys(input)) {
+      if (!allowed.has(name)) {
+        throw new RangeError(`${name} is not a supported input.`);
+      }
+    }
+    return plan(input);
+  }
+
+  function formatGb(value) {
+    if (value > 0 && value < 0.01) return "<0.01 GB";
+    return `${round(value)} GB`;
+  }
+
+  function humanNumber(field, name) {
+    const raw = String(field.value).trim();
+    const value = raw === "" ? Number.NaN : Number(raw);
+    const schema = config.inputSchema.properties[name];
+    if (!Number.isFinite(value) ||
+        value < schema.minimum ||
+        value > schema.maximum) {
+      throw new RangeError(`${name} is outside the supported range.`);
+    }
+    return value;
+  }
+
+  function renderInvalid() {
+    output.gap.textContent = "—";
+    output.current.textContent = "—";
+    output.target.textContent = "—";
+    output.photos.textContent = "—";
+    output.status.textContent = "—";
+    output.plan.textContent = config.invalidInput;
+  }
+
+  function render() {
+    let result;
+    try {
+      result = plan({
+        current_free_gb: humanNumber(
+          fields.current_free_gb, "current_free_gb"),
+        target_free_gb: humanNumber(
+          fields.target_free_gb, "target_free_gb"),
+        photos_storage_gb: humanNumber(
+          fields.photos_storage_gb, "photos_storage_gb"),
+        icloud_photos_status: fields.icloud_photos_status.value,
+        independent_copy_verified: fields.independent_copy_verified.checked,
+        recently_deleted_reviewed: fields.recently_deleted_reviewed.checked,
+        priority: fields.priority.value
+      });
+    } catch (error) {
+      if (error instanceof TypeError || error instanceof RangeError) {
+        renderInvalid();
+        return;
+      }
+      throw error;
+    }
+    output.gap.textContent =
+      formatGb(result.free_space_gap.additional_free_space_gap_gb);
+    output.current.textContent =
+      formatGb(result.selected_inputs.current_free_gb);
+    output.target.textContent =
+      formatGb(result.selected_inputs.target_free_gb);
+    output.photos.textContent =
+      formatGb(result.reported_photos_storage.photos_storage_gb);
+    output.status.textContent =
+      result.free_space_gap.target_already_met ? config.met : config.notMet;
+    output.plan.textContent =
+      result.reversible_review_plan.join(" ");
+  }
+
+  async function registerWebMcp() {
+    if (!document.modelContext?.registerTool) return;
+    await document.modelContext.registerTool({
+      name: "plan_private_photo_storage_cleanup",
+      description: config.toolDescription,
+      inputSchema: config.inputSchema,
+      annotations: {readOnlyHint: true, untrustedContentHint: false},
+      execute: async (input) => {
+        const plan = validateInput(input);
+        const result = {
+          result_type: "private_photo_storage_cleanup_plan",
+          photos_files_metadata_icloud_device_not_accessed: true,
+          no_media_classification_or_deletion: true,
+          no_recoverable_space_prediction: true,
+          plan,
+          safety_first_checklist: config.checklist,
+          optional_free_planner: config.freePlanner,
+          official_sources: config.officialSources,
+          webmcp_preview_source: config.webmcpSource
+        };
+        if (config.optionalApp) {
+          result.optional_picclear_pro = config.optionalApp;
+        }
+        return JSON.stringify(result);
+      }
+    });
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    render();
+  });
+  for (const field of Object.values(fields)) {
+    field.addEventListener("change", render);
+  }
+  render();
+  registerWebMcp().catch((error) =>
+    console.error("WebMCP tool registration failed.", error));
+})();
+</script>
+</body>
+</html>

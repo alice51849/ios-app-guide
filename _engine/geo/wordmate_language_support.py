@@ -32,6 +32,7 @@ CONTENT_DATE = "2026-07-14"
 OFFICIAL_LISTING = "https://apps.apple.com/app/id6789917808"
 LICENSE_URL = "https://creativecommons.org/licenses/by/4.0/"
 APP_URL = appstore_url("wordmate", "iag_wordmate_language_matrix")
+WEBMCP_SOURCE = "https://developer.chrome.com/docs/ai/webmcp/imperative-api"
 
 COPY = {
     "en": {
@@ -101,6 +102,15 @@ COPY = {
             "claim is inferred from the language list."
         ),
         "source_link": "Read Wordmate's current App Store listing",
+        "webmcp_source": "Chrome WebMCP imperative API",
+        "webmcp_description": (
+            "Check whether Wordmate's verified 44-language catalogue contains a "
+            "specific language name or code. Return device-surface facts and the "
+            "source boundary without ranking languages or promising an installed voice."
+        ),
+        "webmcp_query_description": (
+            "Language name or code, such as Japanese, zh-Hant, Kannada or 泰文."
+        ),
         "app_title": "Ready to keep vocabulary close at hand?",
         "app_text": (
             "Wordmate's paid download includes all 44 languages, 14 topics, 84 units, "
@@ -191,6 +201,14 @@ COPY = {
             "每筆資料依開發者目前的 Wordmate 目錄與 Apple 即時上架頁面整理；不會從語言清單推論搜尋量、留存或學習成果。"
         ),
         "source_link": "查看 Wordmate 目前的 App Store 頁面",
+        "webmcp_source": "Chrome WebMCP imperative API",
+        "webmcp_description": (
+            "依語言名稱或代碼查詢 Wordmate 已驗證的 44 語言目錄；回傳各裝置功能與"
+            "來源限制，不替語言排名，也不保證裝置已安裝系統語音。"
+        ),
+        "webmcp_query_description": (
+            "語言名稱或代碼，例如日文、zh-Hant、Kannada 或泰文。"
+        ),
         "app_title": "準備把單字練習放進日常空檔？",
         "app_text": (
             "Wordmate 一次付費下載包含 44 種語言、14 個主題、84 個單元、主畫面互動小工具與 Apple Watch；沒有訂閱，也不需另外購買語言包。"
@@ -244,6 +262,45 @@ def records() -> list[dict[str, object]]:
             "verified_date": CONTENT_DATE,
         }
         for code, english_name, chinese_name in LANGUAGES
+    ]
+
+
+def webmcp_input_schema(locale: str) -> dict[str, object]:
+    return {
+        "type": "object",
+        "additionalProperties": False,
+        "required": ["query"],
+        "properties": {
+            "query": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80,
+                "description": COPY[locale]["webmcp_query_description"],
+            }
+        },
+    }
+
+
+def webmcp_records() -> list[dict[str, object]]:
+    return [
+        {
+            "search": f"{code} {english_name} {chinese_name}".casefold(),
+            "record": {
+                key: value
+                for key, value in record.items()
+                if key
+                not in {
+                    "source_url",
+                    "verified_date",
+                    "voice_availability_note",
+                }
+            },
+        }
+        for (code, english_name, chinese_name), record in zip(
+            LANGUAGES,
+            records(),
+            strict=True,
+        )
     ]
 
 
@@ -457,6 +514,7 @@ def structured_data(locale: str, copy: dict[str, object]) -> str:
                     "Local filtering of 44 language records",
                     "No account, submission, storage or analytics",
                     "JSON, CSV, JSON Schema and CSVW downloads",
+                    "Progressive read-only WebMCP lookup for supporting browsers",
                 ],
             },
             {
@@ -575,7 +633,7 @@ button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid rgba(
   </div>
   <p class="status" id="share-status" role="status"></p>
 </section>
-<section class="wrap card source"><h2>__SOURCE_TITLE__</h2><p>__SOURCE_TEXT__</p><p><a href="__OFFICIAL_LISTING__">__SOURCE_LINK__</a> · <a href="__LICENSE_URL__">CC BY 4.0</a></p></section>
+<section class="wrap card source"><h2>__SOURCE_TITLE__</h2><p>__SOURCE_TEXT__</p><p><a href="__OFFICIAL_LISTING__">__SOURCE_LINK__</a> · <a href="__WEBMCP_SOURCE_URL__">__WEBMCP_SOURCE__</a> · <a href="__LICENSE_URL__">CC BY 4.0</a></p></section>
 __APP_CARD__
 <section class="wrap card"><h2>__FAQ_TITLE__</h2>__FAQ__</section>
 </main>
@@ -586,11 +644,41 @@ const rows=[...document.querySelectorAll("[data-language]")];
 const count=document.getElementById("result-count");
 const status=document.getElementById("share-status");
 const countPattern=__COUNT_COPY__;
+const WEBMCP_INPUT_SCHEMA=__WEBMCP_INPUT_SCHEMA__;
+const WEBMCP_RECORDS=__WEBMCP_RECORDS__;
+const WEBMCP_TOOL_DESCRIPTION=__WEBMCP_DESCRIPTION__;
+const WORDMATE_APP_STORE_URL=__APP_STORE_URL__;
 function update(){
   const query=input.value.trim().toLocaleLowerCase();
   let shown=0;
   for(const row of rows){const visible=!query||row.dataset.search.includes(query);row.hidden=!visible;if(visible)shown++;}
   count.textContent=countPattern.replace("{shown}",String(shown)).replace("{total}",String(rows.length));
+}
+async function registerWebMcp(){
+  if(!document.modelContext?.registerTool)return;
+  await document.modelContext.registerTool({
+    name:"check_wordmate_language_support",
+    description:WEBMCP_TOOL_DESCRIPTION,
+    inputSchema:WEBMCP_INPUT_SCHEMA,
+    annotations:{readOnlyHint:true,untrustedContentHint:false},
+    execute:async(value)=>{
+      if(value===null||typeof value!=="object"||Array.isArray(value))throw new TypeError("WebMCP input must be an object.");
+      if(typeof value.query!=="string")throw new TypeError("query must be a string.");
+      const query=value.query.trim();
+      if(!query)throw new RangeError("query must not be empty.");
+      if(query.length>80)throw new RangeError("query exceeds 80 characters.");
+      const matches=WEBMCP_RECORDS.filter(item=>item.search.includes(query.toLocaleLowerCase())).map(item=>item.record);
+      return JSON.stringify({
+        result_type:"wordmate_language_support_matches",
+        verified_date:"__CONTENT_DATE__",
+        match_count:matches.length,
+        matches,
+        source_url:"__OFFICIAL_LISTING__",
+        voice_boundary:"System voice availability can vary by OS, device and installed voices.",
+        wordmate_app_store_url:WORDMATE_APP_STORE_URL||null
+      });
+    }
+  });
 }
 async function copyLink(){
   try{await navigator.clipboard.writeText("__CANONICAL__");status.textContent="__COPIED__";}
@@ -605,6 +693,7 @@ document.getElementById("clear-search").addEventListener("click",()=>{input.valu
 document.getElementById("copy-link").addEventListener("click",copyLink);
 document.getElementById("share-link").addEventListener("click",shareLink);
 update();
+registerWebMcp().catch(error=>console.error("WebMCP tool registration failed.",error));
 </script>
 </body>
 </html>
@@ -658,6 +747,8 @@ update();
         "__SOURCE_TEXT__": esc(copy["source_text"]),
         "__OFFICIAL_LISTING__": OFFICIAL_LISTING,
         "__SOURCE_LINK__": esc(copy["source_link"]),
+        "__WEBMCP_SOURCE_URL__": WEBMCP_SOURCE,
+        "__WEBMCP_SOURCE__": esc(copy["webmcp_source"]),
         "__LICENSE_URL__": LICENSE_URL,
         "__APP_CARD__": app_card,
         "__FAQ_TITLE__": esc(copy["faq_title"]),
@@ -667,6 +758,24 @@ update();
         "__COPIED__": esc(copy["copied"]),
         "__COPY_FAILED__": esc(copy["copy_failed"]),
         "__SHARE_CANCELLED__": esc(copy["share_cancelled"]),
+        "__WEBMCP_INPUT_SCHEMA__": json.dumps(
+            webmcp_input_schema(locale),
+            ensure_ascii=False,
+            separators=(",", ":"),
+        ),
+        "__WEBMCP_RECORDS__": json.dumps(
+            webmcp_records(),
+            ensure_ascii=False,
+            separators=(",", ":"),
+        ),
+        "__WEBMCP_DESCRIPTION__": json.dumps(
+            copy["webmcp_description"],
+            ensure_ascii=False,
+        ),
+        "__APP_STORE_URL__": json.dumps(
+            APP_URL if show_app_cta else "",
+        ),
+        "__CONTENT_DATE__": CONTENT_DATE,
     }
     for marker, value in replacements.items():
         page = page.replace(marker, value)

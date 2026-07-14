@@ -11336,6 +11336,18 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("wordmate-language-support.schema.json", english)
         self.assertIn("navigator.share", english)
         self.assertIn("navigator.clipboard.writeText", english)
+        self.assertIn("document.modelContext?.registerTool", english)
+        self.assertIn(
+            'name:"check_wordmate_language_support"',
+            english,
+        )
+        self.assertIn(
+            "annotations:{readOnlyHint:true,untrustedContentHint:false}",
+            english,
+        )
+        self.assertNotIn("input.value=query;", english)
+        self.assertIn(wordmate_language_support.WEBMCP_SOURCE, english)
+        self.assertNotIn("origin-trial", english.casefold())
         self.assertNotIn("fetch(", english)
         self.assertNotIn("XMLHttpRequest", english)
         self.assertNotIn("localStorage", english)
@@ -11360,12 +11372,34 @@ class GeneratorTests(unittest.TestCase):
             "language_code",
             csvw["tableSchema"]["primaryKey"],
         )
+        tool_schema = wordmate_language_support.webmcp_input_schema("en")
+        self.assertEqual(["query"], tool_schema["required"])
+        self.assertFalse(tool_schema["additionalProperties"])
+        self.assertEqual(
+            80,
+            tool_schema["properties"]["query"]["maxLength"],
+        )
+        tool_records = wordmate_language_support.webmcp_records()
+        self.assertEqual(44, len(tool_records))
+        self.assertEqual(44, len({item["search"] for item in tool_records}))
+        self.assertTrue(
+            all(
+                "source_url" not in item["record"]
+                and "verified_date" not in item["record"]
+                and "voice_availability_note" not in item["record"]
+                for item in tool_records
+            )
+        )
         inactive = wordmate_language_support.render_page(
             "en",
             show_app_cta=False,
         )
         self.assertNotIn("iag_wordmate_language_matrix", inactive)
         self.assertNotIn('class="wrap card app-card"', inactive)
+        self.assertIn(
+            'const WORDMATE_APP_STORE_URL="";',
+            inactive,
+        )
 
     def test_wordmate_language_support_answer_leads_with_free_checker(self):
         question = (

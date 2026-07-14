@@ -62,6 +62,7 @@ KEY2DATA = {
     "lumibopomofopro": "bopomofo_pro_full.json",
     "zodira": "zodira_full.json",
     "aim990": "aim990_full.json",
+    "wordmate": "wordmate_full.json",
 }
 
 SCHEMA_CAT = {

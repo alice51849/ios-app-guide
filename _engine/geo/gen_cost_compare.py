@@ -34,6 +34,7 @@ TOPICS = {
     "picclear": "photo cleanup",
     "photocream": "photo filters",
     "snapport": "passport & ID photos",
+    "wordmate": "vocabulary learning",
 }
 
 CSS = ("body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;"

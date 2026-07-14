@@ -252,6 +252,16 @@
               "language": "en"
             }
           ]
+        },
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/guides/wordmate.html",
+          "type": "text/html",
+          "title*": [
+            {
+              "value": "Wordmate: Learn 44 Languages",
+              "language": "en"
+            }
+          ]
         }
       ],
       "alternate": [
@@ -6452,6 +6462,65 @@
           "title*": [
             {
               "value": "Unblurry story poster",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": "https://alice51849.github.io/ios-app-guide/guides/wordmate.html",
+      "alternate": [
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/guides/wordmate.html",
+          "hreflang": [
+            "en",
+            "x-default"
+          ],
+          "type": "text/html"
+        }
+      ],
+      "related": [
+        {
+          "href": "https://apps.apple.com/app/id6789917808?ct=iag_linkset",
+          "type": "text/html",
+          "title*": [
+            {
+              "value": "Wordmate: Learn 44 Languages on the App Store",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/stories/wordmate.html",
+          "type": "text/html",
+          "title*": [
+            {
+              "value": "Wordmate: Learn 44 Languages visual story",
+              "language": "en"
+            }
+          ]
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/hubs/wordmate.html",
+          "type": "text/html",
+          "title*": [
+            {
+              "value": "Wordmate: Learn 44 Languages resource hub",
+              "language": "en"
+            }
+          ]
+        }
+      ],
+      "preview": [
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/stories/img/wordmate-poster.jpg",
+          "type": "image/jpeg",
+          "title*": [
+            {
+              "value": "Wordmate: Learn 44 Languages story poster",
               "language": "en"
             }
           ]

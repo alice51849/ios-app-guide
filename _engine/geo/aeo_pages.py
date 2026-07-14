@@ -40,6 +40,22 @@ REPORTS = os.path.join(HERE, "reports")
 SOV = os.path.join(REPORTS, "aeo_sov.json")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
 LOCALE_RE = re.compile(r"^[a-z]{2,3}(?:-[A-Za-z]{2,4})?$")
+CURATED_FALLBACK = {
+    "wordmate": {
+        "key": "wordmate",
+        "gap_queries": [
+            "best pay once vocabulary app for iphone with no subscription",
+            "language learning app with a Home Screen vocabulary widget",
+            "vocabulary learning app for Apple Watch",
+        ],
+        "top_competitors": [
+            ["anki", 0],
+            ["drops", 0],
+            ["memrise", 0],
+            ["quizlet", 0],
+        ],
+    },
+}
 
 # 類別 → 給人看的名詞 + schema 類別
 CAT_NOUN = {
@@ -84,6 +100,7 @@ BRAND = {
     "kid weather": "Kid Weather", "hellochinese": "HelloChinese",
     "hellochinese learn chinese": "HelloChinese", "chineseskill": "ChineseSkill",
     "chineseskill learn chinese": "ChineseSkill", "fun chinese by studycat": "Fun Chinese by Studycat",
+    "anki": "Anki", "drops": "Drops", "memrise": "Memrise", "quizlet": "Quizlet",
 }
 
 ATTRS = [  # (顯示, cta_bullets 命中關鍵詞)
@@ -98,6 +115,18 @@ ATTRS = [  # (顯示, cta_bullets 命中關鍵詞)
 
 def e(s):
     return html.escape(str(s or ""))
+
+
+def shorten(value, limit):
+    value = str(value or "").strip()
+    if len(value) <= limit:
+        return value
+    shortened = value[: limit + 1].rsplit(" ", 1)[0]
+    return shortened.rstrip(" ,:;–—-(")
+
+
+def article_for(value):
+    return "an" if str(value).lstrip()[:1].lower() in "aeiou" else "a"
 
 
 def disp(norm):
@@ -159,7 +188,7 @@ def positioning(key, noun):
             "description": f"{name} is a pay-once {noun} with no recurring subscription.",
             "intro": f"{name} is a one-time-purchase {noun} for iPhone.",
             "heading": f"Why people choose a pay-once {noun}",
-            "cta": f"Try {name} — one-time purchase on the App Store",
+            "cta": f"View {name} — one-time purchase on the App Store",
             "hub_title": f"Best no-subscription {noun} for iPhone — {name} (pay once)",
             "hub_heading": f"The pay-once {noun} for iPhone: {name}",
             "hub_section": "What you get (no subscription)",
@@ -222,6 +251,8 @@ def alternative_hub_slug(key):
 
 
 def cat_noun(key):
+    if key == "wordmate":
+        return "vocabulary learning app", "EducationalApplication"
     return CAT_NOUN.get(APPS[key].get("category", "productivity"), ("app", "MobileApplication"))
 
 
@@ -260,8 +291,8 @@ def page_shell(title, desc, canonical, schemas, body):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{e(title[:65])}</title>
-<meta name="description" content="{e(desc[:155])}">
+<title>{e(shorten(title, 70))}</title>
+<meta name="description" content="{e(shorten(desc, 155))}">
 <link rel="canonical" href="{canonical}">
 {alternative_hreflang_block(canonical)}
 {ld}
@@ -300,7 +331,7 @@ def comparison_table(key, comp_name):
         else:
             yours = "✅ Yes" if attrs[label] else "—"
         # 競品欄:中性、可辯護(對「typical apps」而非具名不實宣稱)
-        typical = "Often subscription" if "Pay once" in label else "Varies"
+        typical = "Varies; check current listing" if "Pay once" in label else "Varies"
         rows.append(f"    <tr><td>{e(shown_label)}</td><td><strong>{yours}</strong></td>"
                     f"<td>{e(typical)}</td></tr>")
     return (f'  <table>\n    <thead><tr><th>Feature</th><th>{e(a["name"])}</th>'
@@ -326,7 +357,7 @@ def faq_for(key, comp_name, gap_queries):
         qa = [
             (f"What is a good pay-once alternative to {comp_name} on iPhone?",
              f"{a['name']} is a one-time-purchase {noun} for iPhone — {a.get('sub','').replace(chr(10),' ')}. "
-             f"You unlock everything with a single payment, with no recurring subscription."),
+             "The App Store purchase includes everything, with no recurring subscription."),
             (f"Is there a {noun} with no subscription?",
              f"Yes. {a['name']} is a pay-once {noun}: buy it once and keep it. "
              f"Get it on the App Store: {url}"),
@@ -432,15 +463,17 @@ def alt_page(key, comp_norm, gap_queries):
     url = landing_url(key)
     flexible = pricing_profile(key) == "flexible"
     position = None if flexible else positioning(key, noun)
+    short_name = a["name"].split(":", 1)[0]
+    article = article_for(comp)
     if flexible:
-        title = f"{comp} alternative for iPhone — {a['name']} (one-time unlock option)"
+        title = f"{comp} alternative for iPhone — {short_name}"
         desc = (
-            f"Looking for a {comp} alternative on iPhone? {a['name']} offers a "
+            f"Looking for {article} {comp} alternative on iPhone? {a['name']} offers a "
             "one-time unlock option alongside optional subscriptions."
         )
     else:
-        title = f"{comp} alternative for iPhone — {a['name']} ({position['suffix']})"
-        desc = f"Looking for a {comp} alternative on iPhone? {position['description']}"
+        title = f"{comp} alternative for iPhone — {short_name}"
+        desc = f"Looking for {article} {comp} alternative on iPhone? {position['description']}"
     faq = faq_for(key, comp, gap_queries)
     schemas = [app_schema(key, desc), faq_schema(faq)]
     feat_li = "\n".join(f"    <li>{e(b)}</li>" for b in a.get("cta_bullets", [])) or "    <li>iOS app</li>"
@@ -505,7 +538,7 @@ def hub_page(key, gap_queries):
     else:
         title = position["hub_title"]
         desc = position["description"]
-    faq = faq_for(key, noun.split()[0], gap_queries)
+    faq = faq_for(key, f"subscription-based {noun}s", gap_queries)
     schemas = [app_schema(key, desc), faq_schema(faq)]
     feat_li = "\n".join(f"    <li>{e(b)}</li>" for b in a.get("cta_bullets", [])) or "    <li>iOS app</li>"
     faq_html = "\n".join(
@@ -658,6 +691,8 @@ def main():
         print(f"找不到 {SOV},請先跑 python geo/aeo_sov.py", file=sys.stderr); sys.exit(1)
     data = json.load(open(SOV, encoding="utf-8"))
     by_key = {r["key"]: r for r in data["results"]}
+    for key, fallback in CURATED_FALLBACK.items():
+        by_key.setdefault(key, fallback)
 
     public_keys = live_app_keys(
         APPSTORE, PAGES, refresh=not args.cached_live

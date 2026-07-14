@@ -83,6 +83,7 @@ jobs:
           cd _engine/geo
           python3 -c 'import sys; sys.path.insert(0, "../social"); from appstore_live import live_app_keys; from videogen.registry import APPSTORE; print("verified public apps:", len(live_app_keys(APPSTORE, "pages", refresh=True)))'
           python3 passport_photo_print_sheet.py
+          python3 vocabulary_habit_planner.py
       - name: Generate new answer pages (+ rebuild answers sitemap)
         run: |
           N="${{ github.event.inputs.answers || '8' }}"

@@ -52,6 +52,7 @@ KEY2DATA = {
     "lumiletterspro": "letters_pro_full.json", "lumimathpro": "math_pro_full.json",
     "lumimissionpro": "mission_pro_full.json", "lumibopomofo": "bopomofo_full.json",
     "lumibopomofopro": "bopomofo_pro_full.json",
+    "wordmate": "wordmate_full.json",
 }
 SCHEMA_CAT = {"photo-utility": "MultimediaApplication", "productivity": "BusinessApplication",
               "finance": "FinanceApplication", "health": "HealthApplication",
@@ -159,6 +160,7 @@ def render(key, c):
         f'      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">\n'
         f'        <p itemprop="text">{e(ans)}</p>\n      </div>\n    </div>'
         for q, ans in faqs)
+    final_cta = "View" if a.get("purchase_model") == "paid_upfront" else "Try"
     body = f"""  <h1>{e(c.get('title') or a['name'])}</h1>
   <p>{e(intro)}</p>
 
@@ -174,7 +176,7 @@ def render(key, c):
   <h2>FAQ</h2>
 {faq_html}
 
-  <p style="margin-top:1.5em"><a href="{e(url)}"><strong>Try {e(a['name'])} →</strong></a></p>"""
+  <p style="margin-top:1.5em"><a href="{e(url)}"><strong>{final_cta} {e(a['name'])} →</strong></a></p>"""
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>

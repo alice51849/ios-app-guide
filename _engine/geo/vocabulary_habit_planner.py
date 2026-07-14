@@ -1,0 +1,775 @@
+#!/usr/bin/env python3
+"""Generate a bilingual, local-only vocabulary habit planner."""
+
+from __future__ import annotations
+
+import html
+import json
+import os
+from pathlib import Path
+import re
+import sys
+
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
+sys.path.insert(0, str(ROOT / "social"))
+
+from appstore_live import live_app_keys  # noqa: E402
+from gen_calculator import write_tools_sitemap  # noqa: E402
+from gen_feed import feed_discovery_links  # noqa: E402
+from videogen.registry import APPSTORE, appstore_url  # noqa: E402
+
+PAGES = HERE / "pages"
+SITE = os.environ.get(
+    "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
+).rstrip("/")
+SLUG = "private-vocabulary-habit-planner"
+CONTENT_DATE = "2026-07-14"
+APP_URL = appstore_url("wordmate", "iag_vocab_planner")
+SPACING_SOURCE = "https://pubmed.ncbi.nlm.nih.gov/16719566/"
+RETRIEVAL_SOURCE = "https://pubmed.ncbi.nlm.nih.gov/16507066/"
+
+LANGUAGES = [
+    ("en", "English", "英文"),
+    ("zh-Hant", "Traditional Chinese", "繁體中文"),
+    ("zh-Hans", "Simplified Chinese", "簡體中文"),
+    ("ja", "Japanese", "日文"),
+    ("ko", "Korean", "韓文"),
+    ("de", "German", "德文"),
+    ("fr", "French", "法文"),
+    ("es", "Spanish", "西班牙文"),
+    ("it", "Italian", "義大利文"),
+    ("pt", "Portuguese", "葡萄牙文"),
+    ("nl", "Dutch", "荷蘭文"),
+    ("ru", "Russian", "俄文"),
+    ("pl", "Polish", "波蘭文"),
+    ("tr", "Turkish", "土耳其文"),
+    ("sv", "Swedish", "瑞典文"),
+    ("da", "Danish", "丹麥文"),
+    ("no", "Norwegian", "挪威文"),
+    ("fi", "Finnish", "芬蘭文"),
+    ("id", "Indonesian", "印尼文"),
+    ("ms", "Malay", "馬來文"),
+    ("vi", "Vietnamese", "越南文"),
+    ("th", "Thai", "泰文"),
+    ("hi", "Hindi", "印地文"),
+    ("ar", "Arabic", "阿拉伯文"),
+    ("he", "Hebrew", "希伯來文"),
+    ("el", "Greek", "希臘文"),
+    ("cs", "Czech", "捷克文"),
+    ("sk", "Slovak", "斯洛伐克文"),
+    ("hr", "Croatian", "克羅埃西亞文"),
+    ("hu", "Hungarian", "匈牙利文"),
+    ("ro", "Romanian", "羅馬尼亞文"),
+    ("uk", "Ukrainian", "烏克蘭文"),
+    ("ca", "Catalan", "加泰隆尼亞文"),
+    ("bn", "Bengali", "孟加拉文"),
+    ("gu", "Gujarati", "古吉拉特文"),
+    ("kn", "Kannada", "康納達文"),
+    ("ml", "Malayalam", "馬拉雅拉姆文"),
+    ("mr", "Marathi", "馬拉地文"),
+    ("or", "Odia", "歐利亞文"),
+    ("pa", "Punjabi", "旁遮普文"),
+    ("sl", "Slovenian", "斯洛維尼亞文"),
+    ("ta", "Tamil", "坦米爾文"),
+    ("te", "Telugu", "泰盧固文"),
+    ("ur", "Urdu", "烏爾都文"),
+]
+
+COPY = {
+    "en": {
+        "html_lang": "en",
+        "title": "Private Vocabulary Habit Planner | Free & Local",
+        "description": (
+            "Build a realistic vocabulary routine from your available time. "
+            "The complete plan runs locally with no account, upload, storage or analytics."
+        ),
+        "switch": "繁體中文",
+        "switch_href": f"{SITE}/zh-Hant/tools/{SLUG}.html",
+        "home": f"{SITE}/index.html",
+        "tools": f"{SITE}/tools/",
+        "eyebrow": "Free · private · evidence-informed",
+        "heading": "Private vocabulary habit planner",
+        "lead": (
+            "Turn the time you actually have into a repeatable plan for retrieval, "
+            "words in context and correction. Nothing is uploaded or saved."
+        ),
+        "privacy": "Runs in this tab · no account · no storage · no analytics",
+        "scope": "Planning aid, not a promise of words learned",
+        "builder": "Build your routine",
+        "language": "Learning language",
+        "minutes": "Minutes per session",
+        "sessions": "Sessions per week",
+        "horizon": "Planning horizon",
+        "mode": "Current study mode",
+        "goal": "Primary use",
+        "make": "Create my private plan",
+        "minutes_unit": "minutes",
+        "sessions_unit": "sessions",
+        "weeks_unit": "weeks",
+        "mode_options": {
+            "starter": "Starting a language",
+            "mixed": "Learning and reviewing",
+            "review": "Rebuilding forgotten vocabulary",
+        },
+        "goal_options": {
+            "daily": "Everyday understanding",
+            "travel": "Travel",
+            "work": "Work or study",
+            "conversation": "Conversation",
+        },
+        "result_title": "Your repeatable plan",
+        "result_intro": "This is a starting load. Adjust it using delayed recall.",
+        "weekly_time": "Weekly practice time",
+        "new_ceiling": "Starting new-card ceiling",
+        "per_session": "per session",
+        "not_target": "A ceiling, not a learning promise",
+        "session_mix": "Session mix",
+        "retrieve": "Closed-book retrieval",
+        "context": "New words in context",
+        "correct": "Correction and spoken replay",
+        "sequence": "Weekly sequence",
+        "session": "Session",
+        "focus": "Focus",
+        "steps": [
+            "Recall older words before revealing answers.",
+            "Study the small new set inside useful sentences.",
+            "Correct every miss, then say or type the answer once.",
+            "Check the material again next session and about one week later.",
+            "If delayed recall is below 80%, reduce new cards by roughly one quarter.",
+        ],
+        "roles": [
+            "Baseline retrieval + small context set",
+            "Retrieve misses + add context",
+            "Mixed recall + pronunciation",
+            "Cumulative check without hints",
+            "Useful phrases for the selected goal",
+            "Flexible catch-up; add nothing if reviews are heavy",
+            "Weekly delayed check + next-week adjustment",
+        ],
+        "repeat_note": (
+            "Repeat this sequence for the selected horizon. Longer gaps may need "
+            "longer review intervals; there is no universal perfect schedule."
+        ),
+        "copy": "Copy plan",
+        "share": "Share plan",
+        "print": "Print plan",
+        "copied": "Plan copied.",
+        "share_cancelled": "Sharing was cancelled.",
+        "copy_failed": "Copy was unavailable. Select and copy the plan below.",
+        "evidence_title": "Why the plan uses retrieval and spacing",
+        "evidence": (
+            "Retrieval practice can improve later retention, and distributed practice "
+            "generally outperforms massed repetition. The useful spacing interval changes "
+            "with the desired retention period, so this planner uses repeated checks and "
+            "adjustment instead of claiming one magic interval."
+        ),
+        "source_one": "Cepeda et al. — distributed practice meta-analysis",
+        "source_two": "Roediger & Karpicke — test-enhanced learning",
+        "privacy_title": "Privacy by construction",
+        "privacy_text": (
+            "Selections and results stay in this browser tab. The page has no account, "
+            "upload, cookies, local storage, analytics, advertising code or network request. "
+            "Reloading or closing the page clears the plan."
+        ),
+        "app_title": "Want the routine on iPhone, Home Screen and Apple Watch?",
+        "app_text": (
+            "Wordmate is optional. Its paid download includes structured vocabulary in "
+            "44 languages, natural examples, pronunciation on iPhone and iPad, an interactive "
+            "Home Screen widget, Apple Watch and separate progress for every learning language. "
+            "No subscription, in-app purchase, account, third-party ads or analytics."
+        ),
+        "app_cta": "View Wordmate on the App Store",
+        "faq_title": "Questions",
+        "faqs": [
+            (
+                "How many new words should I learn each day?",
+                "There is no universal number. Start below the planner's ceiling, then lower or raise it according to delayed recall and available review time.",
+            ),
+            (
+                "Does the planner save my choices?",
+                "No. It does not use local storage, cookies, an account or an upload. Closing or reloading the page clears the choices.",
+            ),
+            (
+                "Is an 80% recall check a scientific guarantee?",
+                "No. It is a practical adjustment trigger, not a universal target or outcome guarantee. Lower the load whenever reviews feel unstable or too heavy.",
+            ),
+        ],
+        "footer": (
+            "Free client-side planning tool. No tracking, account or server upload. "
+            "Learning outcomes vary; adjust the plan to your own delayed recall."
+        ),
+        "index_title": "Private Vocabulary Habit Planner",
+        "index_description": (
+            "Turn available time into a local-only retrieval and spaced-review routine; "
+            "copy, share or print the complete plan."
+        ),
+    },
+    "zh-Hant": {
+        "html_lang": "zh-Hant",
+        "title": "私密單字習慣規劃器｜免費、不上傳",
+        "description": (
+            "依照你真正有空的時間，建立可持續的單字複習計畫。完整結果只在瀏覽器運算，免帳號、不上傳、不儲存、無分析追蹤。"
+        ),
+        "switch": "English",
+        "switch_href": f"{SITE}/tools/{SLUG}.html",
+        "home": f"{SITE}/zh-Hant/index.html",
+        "tools": f"{SITE}/zh-Hant/tools/",
+        "eyebrow": "免費 · 私密 · 依研究原則設計",
+        "heading": "私密單字習慣規劃器",
+        "lead": "把你真正有空的時間，分配成主動回想、情境學習與訂正。所有內容都不會上傳或儲存。",
+        "privacy": "只在目前分頁運算 · 免帳號 · 不儲存 · 無分析追蹤",
+        "scope": "僅提供計畫，不保證學會固定字數",
+        "builder": "建立你的學習節奏",
+        "language": "學習語言",
+        "minutes": "每次可用時間",
+        "sessions": "每週練習次數",
+        "horizon": "規劃週期",
+        "mode": "目前學習狀態",
+        "goal": "主要用途",
+        "make": "建立我的私密計畫",
+        "minutes_unit": "分鐘",
+        "sessions_unit": "次",
+        "weeks_unit": "週",
+        "mode_options": {
+            "starter": "剛開始學習",
+            "mixed": "新字與複習並行",
+            "review": "重新找回忘記的單字",
+        },
+        "goal_options": {
+            "daily": "日常理解",
+            "travel": "旅行",
+            "work": "工作或課業",
+            "conversation": "會話",
+        },
+        "result_title": "你的可持續計畫",
+        "result_intro": "這是起始負荷，請依延遲回想結果調整。",
+        "weekly_time": "每週練習時間",
+        "new_ceiling": "每次新卡起始上限",
+        "per_session": "每次",
+        "not_target": "這是上限，不是學會保證",
+        "session_mix": "每次時間分配",
+        "retrieve": "不看答案主動回想",
+        "context": "用情境接觸新字",
+        "correct": "訂正與朗讀重播",
+        "sequence": "每週順序",
+        "session": "第",
+        "focus": "重點",
+        "steps": [
+            "先不看答案，回想之前學過的字。",
+            "只加入一小組新字，並放進實用例句。",
+            "每個錯誤都立即訂正，再說出或打出一次答案。",
+            "下次練習與約一週後，再次檢查同一批內容。",
+            "若延遲回想低於 80%，新卡量先減少約四分之一。",
+        ],
+        "roles": [
+            "基準回想＋少量情境新字",
+            "回想錯題＋補充情境",
+            "混合回想＋發音",
+            "不給提示的累積檢查",
+            "練習符合主要用途的實用詞句",
+            "彈性補課；待複習太多時不加新字",
+            "每週延遲檢查＋調整下週負荷",
+        ],
+        "repeat_note": "依照所選週期重複此順序。想記得越久，間隔通常也需調整；沒有適合所有人的唯一完美排程。",
+        "copy": "複製計畫",
+        "share": "分享計畫",
+        "print": "列印計畫",
+        "copied": "已複製計畫。",
+        "share_cancelled": "已取消分享。",
+        "copy_failed": "無法自動複製，請選取下方計畫後複製。",
+        "evidence_title": "為什麼安排主動回想與間隔練習",
+        "evidence": (
+            "主動提取記憶有助於之後保留，分散練習通常也優於集中重複。合適的間隔會隨預計保留時間改變，因此本工具採用重複檢查與調整，不宣稱存在唯一神奇間隔。"
+        ),
+        "source_one": "Cepeda 等人：分散練習統合分析",
+        "source_two": "Roediger 與 Karpicke：測驗促進學習",
+        "privacy_title": "從設計上保護隱私",
+        "privacy_text": (
+            "所有選項與結果只留在目前瀏覽器分頁。本頁沒有帳號、上傳、Cookie、local storage、分析、廣告程式或網路請求；重新載入或關閉頁面就會清除計畫。"
+        ),
+        "app_title": "想在 iPhone、主畫面與 Apple Watch 延續習慣嗎？",
+        "app_text": (
+            "Wordmate 是選用工具。一次付費下載即包含 44 種語言、自然例句、iPhone 與 iPad 發音、主畫面互動小工具、Apple Watch，以及每種學習語言的獨立進度。無訂閱、無 App 內購、免帳號，也沒有第三方廣告或分析追蹤。"
+        ),
+        "app_cta": "前往 App Store 查看 Wordmate",
+        "faq_title": "常見問題",
+        "faqs": [
+            (
+                "每天應該學幾個新單字？",
+                "沒有適合所有人的固定數字。先低於工具建議的上限，再依延遲回想與待複習量增加或降低。",
+            ),
+            (
+                "規劃器會儲存我的選項嗎？",
+                "不會。本頁不使用 local storage、Cookie、帳號或上傳；關閉或重新載入頁面就會清除選項。",
+            ),
+            (
+                "80% 回想率是科學保證嗎？",
+                "不是。它只是方便調整負荷的實用觸發點，不是通用目標或成效保證；只要複習開始不穩或太重，就應降低新字量。",
+            ),
+        ],
+        "footer": "免費瀏覽器端規劃工具。無追蹤、免帳號、不上傳伺服器。學習結果因人而異，請依自己的延遲回想持續調整。",
+        "index_title": "私密單字習慣規劃器",
+        "index_description": "依可用時間建立主動回想與間隔複習節奏；完整計畫可複製、分享或列印，全程不上傳。",
+    },
+}
+
+
+def canonical(locale: str) -> str:
+    prefix = "zh-Hant/" if locale == "zh-Hant" else ""
+    return f"{SITE}/{prefix}tools/{SLUG}.html"
+
+
+def language_options(locale: str) -> str:
+    index = 2 if locale == "zh-Hant" else 1
+    selected = "en" if locale == "zh-Hant" else "es"
+    return "\n".join(
+        f'<option value="{html.escape(code)}"'
+        f'{" selected" if code == selected else ""}>'
+        f"{html.escape(values[index])}</option>"
+        for values in LANGUAGES
+        for code in [values[0]]
+    )
+
+
+def select_options(values: list[int], unit: str, selected: int) -> str:
+    return "\n".join(
+        f'<option value="{value}"{" selected" if value == selected else ""}>'
+        f"{value} {html.escape(unit)}</option>"
+        for value in values
+    )
+
+
+def schema(locale: str, copy: dict[str, object]) -> str:
+    faq = [
+        {
+            "@type": "Question",
+            "name": question,
+            "acceptedAnswer": {"@type": "Answer", "text": answer},
+        }
+        for question, answer in copy["faqs"]
+    ]
+    data = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebApplication",
+                "name": copy["heading"],
+                "url": canonical(locale),
+                "applicationCategory": "EducationalApplication",
+                "operatingSystem": "Any modern browser",
+                "browserRequirements": "JavaScript",
+                "isAccessibleForFree": True,
+                "inLanguage": copy["html_lang"],
+                "description": copy["description"],
+                "dateModified": CONTENT_DATE,
+                "featureList": [
+                    "Local-only calculation",
+                    "Retrieval and spaced-review plan",
+                    "Copy, share and print",
+                    "No account, upload, storage or analytics",
+                ],
+            },
+            {
+                "@type": "FAQPage",
+                "inLanguage": copy["html_lang"],
+                "mainEntity": faq,
+            },
+        ],
+    }
+    return json.dumps(data, ensure_ascii=False, separators=(",", ":"))
+
+
+def render_page(locale: str, *, show_app_cta: bool) -> str:
+    copy = COPY[locale]
+    esc = html.escape
+    alternate = canonical("zh-Hant" if locale == "en" else "en")
+    mode_options = "\n".join(
+        f'<option value="{esc(key)}">{esc(value)}</option>'
+        for key, value in copy["mode_options"].items()
+    )
+    goal_options = "\n".join(
+        f'<option value="{esc(key)}">{esc(value)}</option>'
+        for key, value in copy["goal_options"].items()
+    )
+    faq_html = "\n".join(
+        f"<details><summary>{esc(question)}</summary><p>{esc(answer)}</p></details>"
+        for question, answer in copy["faqs"]
+    )
+    app_card = ""
+    if show_app_cta:
+        app_card = f"""
+<section class="card app-card no-print">
+  <div>
+    <p class="eyebrow">{esc(copy["app_title"])}</p>
+    <p>{esc(copy["app_text"])}</p>
+  </div>
+  <a class="primary one-line" href="{esc(APP_URL)}">{esc(copy["app_cta"])}</a>
+</section>"""
+    js_copy = {
+        key: copy[key]
+        for key in (
+            "weekly_time",
+            "new_ceiling",
+            "per_session",
+            "not_target",
+            "session_mix",
+            "retrieve",
+            "context",
+            "correct",
+            "sequence",
+            "session",
+            "focus",
+            "steps",
+            "roles",
+            "repeat_note",
+            "copied",
+            "share_cancelled",
+            "copy_failed",
+            "minutes_unit",
+            "sessions_unit",
+            "weeks_unit",
+        )
+    }
+    page = r"""<!doctype html>
+<html lang="__HTML_LANG__">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>__TITLE__</title>
+<meta name="description" content="__DESCRIPTION__">
+<link rel="canonical" href="__CANONICAL__">
+<link rel="alternate" hreflang="en" href="__EN_URL__">
+<link rel="alternate" hreflang="zh-Hant" href="__ZH_URL__">
+<link rel="alternate" hreflang="x-default" href="__EN_URL__">
+__FEEDS__
+<meta property="og:type" content="website">
+<meta property="og:title" content="__HEADING__">
+<meta property="og:description" content="__DESCRIPTION__">
+<meta property="og:url" content="__CANONICAL__">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">__SCHEMA__</script>
+<style>
+:root{--ink:#17201d;--muted:#596763;--line:#dce6e1;--paper:#fff;--mint:#e9f7f0;--teal:#126b57;--violet:#6c4fd3;--shadow:0 22px 70px rgba(27,68,57,.11);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 8% 2%,#e4fff3 0,transparent 31%),radial-gradient(circle at 92% 12%,#eee9ff 0,transparent 34%),#f8fbf9;color:var(--ink);line-height:1.58}
+a{color:var(--teal)}
+.wrap{width:min(1080px,calc(100% - 30px));margin:auto}
+.top{position:sticky;top:0;z-index:4;border-bottom:1px solid rgba(220,230,225,.82);background:rgba(248,251,249,.9);backdrop-filter:blur(18px)}
+.nav{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.nav a{font-weight:800;text-decoration:none;white-space:nowrap}
+.hero{padding:64px 0 30px}
+.eyebrow{margin:0 0 9px;color:var(--teal);font-size:.78rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+h1{margin:0;font-size:clamp(1.15rem,5.6vw,3.8rem);line-height:1.05;letter-spacing:-.045em;white-space:nowrap}
+.lead{max-width:760px;margin:18px 0 0;color:var(--muted);font-size:clamp(1rem,2vw,1.2rem)}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.badge{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:7px 11px;background:rgba(255,255,255,.82);font-size:.82rem;font-weight:800;white-space:nowrap}
+.layout{display:grid;gap:20px;margin-bottom:24px}
+@media(min-width:820px){.layout{grid-template-columns:minmax(300px,.8fr) minmax(430px,1.2fr);align-items:start}}
+.card{border:1px solid var(--line);border-radius:28px;background:rgba(255,255,255,.93);box-shadow:var(--shadow);padding:clamp(20px,4vw,32px)}
+.card h2{margin:0 0 8px;font-size:clamp(1.35rem,3vw,2rem);letter-spacing:-.025em}
+.field-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:24px}
+@media(min-width:540px){.field-grid{grid-template-columns:1fr 1fr}}
+label{display:block;margin:0 0 6px;font-weight:850;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+select{width:100%;min-height:48px;border:1px solid #cbd8d2;border-radius:14px;background:#fff;color:var(--ink);font:inherit;padding:10px 38px 10px 12px}
+button,.primary{min-height:48px;border:0;border-radius:999px;padding:12px 18px;background:linear-gradient(135deg,var(--teal),#178c70);color:#fff!important;font:inherit;font-weight:900;text-decoration:none;box-shadow:0 10px 28px rgba(18,107,87,.22);cursor:pointer}
+button:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid rgba(108,79,211,.4);outline-offset:3px}
+.build{width:100%;margin-top:20px}
+.one-line{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.result-card{background:linear-gradient(160deg,#fff,#f0fbf6)}
+.result-card[hidden]{display:none}
+.result-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.metric-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:20px 0}
+.metric{border:1px solid var(--line);border-radius:18px;background:#fff;padding:14px}
+.metric strong{display:block;font-size:clamp(1.3rem,4vw,2rem);line-height:1.1}
+.metric span{display:block;color:var(--muted);font-size:.82rem;margin-top:5px}
+.mix{display:grid;gap:9px;margin:14px 0 22px}
+.mix-row{display:grid;grid-template-columns:minmax(130px,1fr) 2fr 40px;align-items:center;gap:9px;font-size:.9rem}
+.mix-row span:first-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar{height:10px;border-radius:999px;background:#e5eee9;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--teal),var(--violet))}
+table{width:100%;border-collapse:collapse;margin-top:10px}
+th,td{padding:10px 8px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);white-space:nowrap}
+td:first-child{white-space:nowrap;font-weight:800}
+.checklist{padding-left:1.25rem}
+.checklist li{margin:.5rem 0}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.ghost{background:#fff;color:var(--teal)!important;border:1px solid #cbd8d2;box-shadow:none}
+.status{min-height:1.4em;margin:12px 0 0;color:var(--teal);font-weight:800}
+.wide{margin-bottom:24px}
+.research{display:grid;gap:20px}
+@media(min-width:760px){.research{grid-template-columns:1fr 1fr}}
+.research a{font-weight:800}
+.app-card{display:grid;gap:18px;align-items:center;margin-bottom:24px;background:linear-gradient(135deg,#f2edff,#e7fbf2)}
+@media(min-width:760px){.app-card{grid-template-columns:1fr auto}}
+.app-card p{margin:4px 0}
+details{border-top:1px solid var(--line);padding:14px 0}
+summary{font-weight:850;cursor:pointer}
+footer{padding:30px 0 50px;color:var(--muted);font-size:.9rem}
+@media(max-width:430px){.metric-grid{grid-template-columns:1fr}.mix-row{grid-template-columns:minmax(112px,1fr) 1.3fr 34px}.card{border-radius:22px}.nav{font-size:.88rem}}
+@media print{body{background:#fff}.no-print,.top,.builder-card,.research,.app-card,footer{display:none!important}.layout{display:block}.result-card{display:block!important;border:0;box-shadow:none;padding:0}.wrap{width:100%}h1{white-space:normal}.result-card table{font-size:11pt}}
+</style>
+</head>
+<body>
+<header class="top no-print"><div class="wrap nav"><a href="__HOME__">iOS App Guide</a><nav><a href="__TOOLS__">__TOOLS_LABEL__</a> · <a href="__SWITCH_HREF__">__SWITCH__</a></nav></div></header>
+<main>
+<section class="hero wrap">
+  <p class="eyebrow">__EYEBROW__</p>
+  <h1>__HEADING__</h1>
+  <p class="lead">__LEAD__</p>
+  <div class="badges"><span class="badge">__PRIVACY__</span><span class="badge">__SCOPE__</span></div>
+</section>
+<section class="wrap layout">
+  <form class="card builder-card no-print" id="planner">
+    <h2 class="one-line">__BUILDER__</h2>
+    <div class="field-grid">
+      <div><label for="language">__LANGUAGE__</label><select id="language">__LANGUAGE_OPTIONS__</select></div>
+      <div><label for="minutes">__MINUTES__</label><select id="minutes">__MINUTE_OPTIONS__</select></div>
+      <div><label for="sessions">__SESSIONS__</label><select id="sessions">__SESSION_OPTIONS__</select></div>
+      <div><label for="horizon">__HORIZON__</label><select id="horizon">__HORIZON_OPTIONS__</select></div>
+      <div><label for="mode">__MODE__</label><select id="mode">__MODE_OPTIONS__</select></div>
+      <div><label for="goal">__GOAL__</label><select id="goal">__GOAL_OPTIONS__</select></div>
+    </div>
+    <button class="build one-line" type="submit">__MAKE__</button>
+  </form>
+  <section class="card result-card printable" id="result" hidden aria-live="polite">
+    <div class="result-head"><div><p class="eyebrow">__RESULT_TITLE__</p><p>__RESULT_INTRO__</p></div></div>
+    <div class="metric-grid">
+      <div class="metric"><strong id="weekly-time"></strong><span>__WEEKLY_TIME__</span></div>
+      <div class="metric"><strong id="new-ceiling"></strong><span>__NEW_CEILING__ · __NOT_TARGET__</span></div>
+    </div>
+    <h2 class="one-line">__SESSION_MIX__</h2>
+    <div class="mix" id="mix"></div>
+    <h2 class="one-line">__SEQUENCE__</h2>
+    <div class="table-wrap"><table><thead><tr><th>__SESSION__</th><th>__FOCUS__</th></tr></thead><tbody id="schedule"></tbody></table></div>
+    <ol class="checklist" id="steps"></ol>
+    <p id="repeat-note"></p>
+    <div class="actions no-print">
+      <button class="ghost one-line" id="copy-plan" type="button">__COPY__</button>
+      <button class="ghost one-line" id="share-plan" type="button">__SHARE__</button>
+      <button class="ghost one-line" id="print-plan" type="button">__PRINT__</button>
+    </div>
+    <p class="status no-print" id="status" role="status"></p>
+  </section>
+</section>
+<section class="wrap card wide research">
+  <div><p class="eyebrow">__EVIDENCE_TITLE__</p><p>__EVIDENCE__</p><p><a href="__SPACING_SOURCE__">__SOURCE_ONE__</a><br><a href="__RETRIEVAL_SOURCE__">__SOURCE_TWO__</a></p></div>
+  <div><p class="eyebrow">__PRIVACY_TITLE__</p><p>__PRIVACY_TEXT__</p></div>
+</section>
+__APP_CARD__
+<section class="wrap card wide"><h2 class="one-line">__FAQ_TITLE__</h2>__FAQ_HTML__</section>
+</main>
+<footer><div class="wrap">__FOOTER__</div></footer>
+<script>
+const I18N=__JS_COPY__;
+const form=document.getElementById("planner");
+const result=document.getElementById("result");
+const statusNode=document.getElementById("status");
+let plainPlan="";
+function escapeHTML(value){return String(value).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[ch]));}
+function selectedText(id){const node=document.getElementById(id);return node.options[node.selectedIndex].text;}
+function weightsFor(mode){if(mode==="starter")return [30,45,25,.45];if(mode==="review")return [55,20,25,.32];return [45,30,25,.58];}
+function buildPlan(event){
+  if(event)event.preventDefault();
+  const language=selectedText("language");
+  const minutes=Number(document.getElementById("minutes").value);
+  const sessions=Number(document.getElementById("sessions").value);
+  const horizon=Number(document.getElementById("horizon").value);
+  const mode=document.getElementById("mode").value;
+  const goal=selectedText("goal");
+  const [retrieve,context,correct,factor]=weightsFor(mode);
+  const ceiling=Math.max(2,Math.min(24,Math.round(minutes*factor)));
+  document.getElementById("weekly-time").textContent=`${minutes*sessions} ${I18N.minutes_unit}`;
+  document.getElementById("new-ceiling").textContent=`${ceiling} ${I18N.per_session}`;
+  const mixData=[[I18N.retrieve,retrieve],[I18N.context,context],[I18N.correct,correct]];
+  document.getElementById("mix").innerHTML=mixData.map(([label,value])=>`<div class="mix-row"><span>${escapeHTML(label)}</span><span class="bar"><i style="width:${value}%"></i></span><strong>${value}%</strong></div>`).join("");
+  const rows=[];
+  for(let index=0;index<sessions;index++){
+    const role=I18N.roles[Math.min(index,I18N.roles.length-1)];
+    rows.push(`<tr><td>${escapeHTML(I18N.session)} ${index+1}</td><td>${escapeHTML(role)}</td></tr>`);
+  }
+  document.getElementById("schedule").innerHTML=rows.join("");
+  document.getElementById("steps").innerHTML=I18N.steps.map(step=>`<li>${escapeHTML(step)}</li>`).join("");
+  document.getElementById("repeat-note").textContent=`${horizon} ${I18N.weeks_unit} · ${I18N.repeat_note}`;
+  plainPlan=[
+    `${language} · ${goal}`,
+    `${I18N.weekly_time}: ${minutes*sessions} ${I18N.minutes_unit} (${sessions} ${I18N.sessions_unit})`,
+    `${I18N.new_ceiling}: ${ceiling} ${I18N.per_session} — ${I18N.not_target}`,
+    `${I18N.session_mix}: ${I18N.retrieve} ${retrieve}% · ${I18N.context} ${context}% · ${I18N.correct} ${correct}%`,
+    ...Array.from({length:sessions},(_,index)=>`${I18N.session} ${index+1}: ${I18N.roles[Math.min(index,I18N.roles.length-1)]}`),
+    ...I18N.steps.map((step,index)=>`${index+1}. ${step}`),
+    `${horizon} ${I18N.weeks_unit} · ${I18N.repeat_note}`,
+    "__CANONICAL__"
+  ].join("\n");
+  result.hidden=false;
+  statusNode.textContent="";
+}
+async function copyPlan(){
+  try{await navigator.clipboard.writeText(plainPlan);statusNode.textContent=I18N.copied;}
+  catch(error){statusNode.textContent=I18N.copy_failed;}
+}
+async function sharePlan(){
+  if(navigator.share){
+    try{await navigator.share({title:document.title,text:plainPlan,url:"__CANONICAL__"});return;}
+    catch(error){if(error&&error.name==="AbortError"){statusNode.textContent=I18N.share_cancelled;return;}}
+  }
+  await copyPlan();
+}
+form.addEventListener("submit",buildPlan);
+document.getElementById("copy-plan").addEventListener("click",copyPlan);
+document.getElementById("share-plan").addEventListener("click",sharePlan);
+document.getElementById("print-plan").addEventListener("click",()=>window.print());
+buildPlan();
+</script>
+</body>
+</html>
+"""
+    replacements = {
+        "__HTML_LANG__": esc(copy["html_lang"]),
+        "__TITLE__": esc(copy["title"]),
+        "__DESCRIPTION__": esc(copy["description"]),
+        "__CANONICAL__": canonical(locale),
+        "__EN_URL__": canonical("en"),
+        "__ZH_URL__": canonical("zh-Hant"),
+        "__FEEDS__": feed_discovery_links(),
+        "__HEADING__": esc(copy["heading"]),
+        "__SCHEMA__": schema(locale, copy),
+        "__HOME__": esc(copy["home"]),
+        "__TOOLS__": esc(copy["tools"]),
+        "__TOOLS_LABEL__": esc("免費工具" if locale == "zh-Hant" else "Free tools"),
+        "__SWITCH_HREF__": esc(copy["switch_href"]),
+        "__SWITCH__": esc(copy["switch"]),
+        "__EYEBROW__": esc(copy["eyebrow"]),
+        "__LEAD__": esc(copy["lead"]),
+        "__PRIVACY__": esc(copy["privacy"]),
+        "__SCOPE__": esc(copy["scope"]),
+        "__BUILDER__": esc(copy["builder"]),
+        "__LANGUAGE__": esc(copy["language"]),
+        "__MINUTES__": esc(copy["minutes"]),
+        "__SESSIONS__": esc(copy["sessions"]),
+        "__HORIZON__": esc(copy["horizon"]),
+        "__MODE__": esc(copy["mode"]),
+        "__GOAL__": esc(copy["goal"]),
+        "__MAKE__": esc(copy["make"]),
+        "__LANGUAGE_OPTIONS__": language_options(locale),
+        "__MINUTE_OPTIONS__": select_options(
+            [5, 10, 15, 20, 30, 45], copy["minutes_unit"], 15
+        ),
+        "__SESSION_OPTIONS__": select_options(
+            [2, 3, 4, 5, 6, 7], copy["sessions_unit"], 4
+        ),
+        "__HORIZON_OPTIONS__": select_options(
+            [2, 4, 8, 12], copy["weeks_unit"], 4
+        ),
+        "__MODE_OPTIONS__": mode_options,
+        "__GOAL_OPTIONS__": goal_options,
+        "__RESULT_TITLE__": esc(copy["result_title"]),
+        "__RESULT_INTRO__": esc(copy["result_intro"]),
+        "__WEEKLY_TIME__": esc(copy["weekly_time"]),
+        "__NEW_CEILING__": esc(copy["new_ceiling"]),
+        "__NOT_TARGET__": esc(copy["not_target"]),
+        "__SESSION_MIX__": esc(copy["session_mix"]),
+        "__SEQUENCE__": esc(copy["sequence"]),
+        "__SESSION__": esc(copy["session"]),
+        "__FOCUS__": esc(copy["focus"]),
+        "__COPY__": esc(copy["copy"]),
+        "__SHARE__": esc(copy["share"]),
+        "__PRINT__": esc(copy["print"]),
+        "__EVIDENCE_TITLE__": esc(copy["evidence_title"]),
+        "__EVIDENCE__": esc(copy["evidence"]),
+        "__SPACING_SOURCE__": SPACING_SOURCE,
+        "__RETRIEVAL_SOURCE__": RETRIEVAL_SOURCE,
+        "__SOURCE_ONE__": esc(copy["source_one"]),
+        "__SOURCE_TWO__": esc(copy["source_two"]),
+        "__PRIVACY_TITLE__": esc(copy["privacy_title"]),
+        "__PRIVACY_TEXT__": esc(copy["privacy_text"]),
+        "__APP_CARD__": app_card,
+        "__FAQ_TITLE__": esc(copy["faq_title"]),
+        "__FAQ_HTML__": faq_html,
+        "__FOOTER__": esc(copy["footer"]),
+        "__JS_COPY__": json.dumps(js_copy, ensure_ascii=False, separators=(",", ":")),
+    }
+    for marker, value in replacements.items():
+        page = page.replace(marker, value)
+    unresolved = sorted(set(re.findall(r"__[A-Z][A-Z_]+__", page)))
+    if unresolved:
+        raise ValueError(f"Unresolved template markers: {unresolved}")
+    return page
+
+
+def write_text_if_changed(path: Path, content: str) -> bool:
+    if path.exists() and path.read_text(encoding="utf-8") == content:
+        return False
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(content, encoding="utf-8")
+    return True
+
+
+def _update_one_index(path: Path, locale: str) -> bool:
+    if not path.exists():
+        return False
+    text = path.read_text(encoding="utf-8")
+    copy = COPY[locale]
+    card = (
+        f'<article class="card third" data-tool="{SLUG}">'
+        f'<h2><a href="{SLUG}.html">{html.escape(copy["index_title"])}</a></h2>'
+        f'<p>{html.escape(copy["index_description"])}</p></article>'
+    )
+    pattern = re.compile(
+        rf'<article class="card third"(?: data-tool="{re.escape(SLUG)}")?>'
+        rf'<h2><a href="{re.escape(SLUG)}\.html">.*?</article>',
+        re.S,
+    )
+    if pattern.search(text):
+        updated = pattern.sub(card, text, count=1)
+    else:
+        marker = '<section class="wrap grid">'
+        if marker not in text:
+            raise RuntimeError(f"{path} is missing its tools grid")
+        updated = text.replace(marker, marker + card, 1)
+    if updated == text:
+        return False
+    path.write_text(updated, encoding="utf-8")
+    return True
+
+
+def update_tools_indexes(pages: Path = PAGES) -> int:
+    changed = int(_update_one_index(pages / "tools" / "index.html", "en"))
+    changed += int(
+        _update_one_index(
+            pages / "zh-Hant" / "tools" / "index.html",
+            "zh-Hant",
+        )
+    )
+    return changed
+
+
+def build(pages: Path = PAGES, *, show_app_cta: bool) -> list[str]:
+    outputs = []
+    for locale in COPY:
+        relative = Path("tools") / f"{SLUG}.html"
+        if locale == "zh-Hant":
+            relative = Path(locale) / relative
+        write_text_if_changed(
+            pages / relative,
+            render_page(locale, show_app_cta=show_app_cta),
+        )
+        outputs.append(canonical(locale))
+    update_tools_indexes(pages)
+    return outputs
+
+
+def main() -> None:
+    show_app_cta = "wordmate" in live_app_keys(
+        APPSTORE,
+        str(PAGES),
+        refresh=False,
+    )
+    for output in build(show_app_cta=show_app_cta):
+        print(f"vocabulary habit planner -> {output}")
+    print(f"tools sitemap -> {write_tools_sitemap()} urls")
+
+
+if __name__ == "__main__":
+    main()

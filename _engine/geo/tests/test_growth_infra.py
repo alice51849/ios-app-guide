@@ -32,6 +32,8 @@ if GEO not in sys.path:
 
 import aeo_answers
 import aeo_answers_i18n
+import aeo_guide
+import aeo_guide_free_batch3
 import aeo_guide_i18n
 import aeo_pages
 import add_related_tools
@@ -65,6 +67,7 @@ import gen_roundups
 import gen_sitemap_lastmod
 import gen_social_previews
 import gen_smart_app_banners
+import gen_webstories
 import indexnow_submit
 import notify_rsscloud
 import notify_websub
@@ -75,6 +78,7 @@ import queries
 import refresh_primary_resource_answers
 import rsscloud_config
 import static_api_catalog
+import vocabulary_habit_planner
 import zhuyin_blending_card_generator
 import zhuyin_sentence_reading_cards
 import zhuyin_mini_reader
@@ -11088,6 +11092,16 @@ class GeneratorTests(unittest.TestCase):
             gen_smart_app_banners.FREE_RESOURCE_FIRST_META,
             page,
         )
+        translations = json.loads(
+            (Path(GEO) / "i18n_trans" / "zh-Hant.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        strings, _, _ = aeo_answers_i18n.extract_strings(page)
+        self.assertEqual(
+            [],
+            [value for value in strings if value not in translations],
+        )
         before_faq, after_faq = page.split(
             '<section class="wrap card"><h2>FAQ</h2>',
             1,
@@ -11118,6 +11132,7 @@ class GeneratorTests(unittest.TestCase):
                 encoding="utf-8",
             )
             gen_smart_app_banners.ensure_banner(answer_path, "6780575828")
+
             gen_mobile_store_ctas.ensure_mobile_cta(
                 answer_path,
                 "6780575828",
@@ -11162,6 +11177,97 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertIn("How to choose: " + question, translations)
         self.assertIn(deep_item["primary_resource_label"] + " →", translations)
+
+    def test_vocabulary_habit_planner_is_private_bilingual_and_idempotent(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            vocabulary_habit_planner.build(pages, show_app_cta=True)
+            english_path = (
+                pages / "tools" / "private-vocabulary-habit-planner.html"
+            )
+            chinese_path = (
+                pages
+                / "zh-Hant"
+                / "tools"
+                / "private-vocabulary-habit-planner.html"
+            )
+            english = english_path.read_text(encoding="utf-8")
+            chinese = chinese_path.read_text(encoding="utf-8")
+            stable_mtime = 1_700_000_000_000_000_000
+            os.utime(english_path, ns=(stable_mtime, stable_mtime))
+            first_bytes = english_path.read_bytes()
+            vocabulary_habit_planner.build(pages, show_app_cta=True)
+            self.assertEqual(first_bytes, english_path.read_bytes())
+            self.assertEqual(stable_mtime, english_path.stat().st_mtime_ns)
+
+        self.assertIn('"@type":"WebApplication"', english)
+        self.assertIn("Closed-book retrieval", english)
+        self.assertIn("A ceiling, not a learning promise", english)
+        self.assertIn("distributed practice meta-analysis", english)
+        self.assertIn("test-enhanced learning", english)
+        self.assertIn("navigator.clipboard.writeText", english)
+        self.assertIn("navigator.share", english)
+        self.assertIn("window.print()", english)
+        self.assertNotIn("fetch(", english)
+        self.assertNotIn("XMLHttpRequest", english)
+        self.assertNotIn("localStorage", english)
+        self.assertNotIn("sessionStorage", english)
+        self.assertNotIn("document.cookie", english)
+        self.assertEqual(44, english.count("<option value=") - 23)
+        self.assertIn(
+            "https://apps.apple.com/app/id6789917808?ct=iag_vocab_planner",
+            english,
+        )
+        self.assertLess(
+            english.index('id="result"'),
+            english.index('class="card app-card'),
+        )
+        self.assertIn("私密單字習慣規劃器", chinese)
+        self.assertIn("不保證學會固定字數", chinese)
+        self.assertIn("沒有適合所有人的唯一完美排程", chinese)
+        inactive = vocabulary_habit_planner.render_page(
+            "en",
+            show_app_cta=False,
+        )
+        self.assertNotIn("apps.apple.com/app/id6789917808", inactive)
+        self.assertNotIn('class="card app-card', inactive)
+
+    def test_wordmate_answer_leads_with_free_private_planner(self):
+        question = (
+            "How can I build a vocabulary study habit without uploading "
+            "my learning data?"
+        )
+        self.assertEqual(1, queries.CURATED["wordmate"].count(question))
+        content = aeo_answers.normalized_content(
+            aeo_answers.default_content(question, "wordmate"),
+            question,
+            "wordmate",
+        )
+        page = aeo_answers.render_page(question, "wordmate", content)
+        tool_url = (
+            "https://alice51849.github.io/ios-app-guide/tools/"
+            "private-vocabulary-habit-planner.html"
+        )
+        self.assertEqual(tool_url, content["primary_resource_url"])
+        self.assertEqual("2026-07-14", content["date_modified"])
+        self.assertIn("no upload, storage, account or analytics", page)
+        self.assertIn("not a promise", page)
+        self.assertLess(page.index(tool_url), page.index("id6789917808"))
+        self.assertIn("not needed for the free planner", page)
+        self.assertIn(
+            gen_smart_app_banners.FREE_RESOURCE_FIRST_META,
+            page,
+        )
+        translations = json.loads(
+            (Path(GEO) / "i18n_trans" / "zh-Hant.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        strings, _, _ = aeo_answers_i18n.extract_strings(page)
+        self.assertEqual(
+            [],
+            [value for value in strings if value not in translations],
+        )
 
     def test_primary_resource_refresh_plan_covers_every_owned_resource(self):
         expected = {
@@ -12181,6 +12287,7 @@ class GeneratorTests(unittest.TestCase):
             "lumimissionpro",
             "lumibopomofopro",
             "tripbee",
+            "wordmate",
         }
         free_with_unlock = {
             "sononote",
@@ -12655,6 +12762,47 @@ class GeneratorTests(unittest.TestCase):
 
     def test_profile_aware_roundups_and_cost_assets(self):
         self.assertTrue(set(gen_roundups.TOPICS) <= set(gen_roundups.APPS))
+        self.assertEqual(
+            "vocabulary learning", gen_roundups.TOPICS["wordmate"]
+        )
+        self.assertEqual(
+            "vocabulary learning", gen_cost_compare.TOPICS["wordmate"]
+        )
+        self.assertEqual(
+            ("vocabulary learning app", "EducationalApplication"),
+            aeo_pages.cat_noun("wordmate"),
+        )
+        self.assertEqual(
+            "pay_once",
+            aeo_pages.pricing_profile("wordmate"),
+        )
+        _, comparison = aeo_pages.alt_page(
+            "wordmate",
+            "anki",
+            aeo_pages.CURATED_FALLBACK["wordmate"]["gap_queries"],
+        )
+        self.assertIn("Looking for an Anki alternative", comparison)
+        self.assertIn("Varies; check current listing", comparison)
+        self.assertNotIn("Often subscription", comparison)
+        self.assertNotIn("Try Wordmate", comparison)
+        self.assertNotIn("unlock everything", comparison)
+        guide = aeo_guide.render(
+            "wordmate",
+            aeo_guide_free_batch3.C["wordmate"],
+        )
+        self.assertIn("View Wordmate: Learn 44 Languages", guide)
+        self.assertNotIn("Try Wordmate", guide)
+        _, hub = aeo_pages.hub_page(
+            "wordmate",
+            aeo_pages.CURATED_FALLBACK["wordmate"]["gap_queries"],
+        )
+        self.assertNotIn("alternative to vocabulary on iPhone", hub)
+        title = re.search(r"<title>([^<]+)</title>", hub).group(1)
+        self.assertFalse(title.endswith(("pay o", "Wordmat")))
+
+    def test_web_story_palettes_are_stable(self):
+        self.assertEqual(gen_webstories.PALETTES[4], gen_webstories.palette_for("aim990"))
+        self.assertEqual(gen_webstories.PALETTES[3], gen_webstories.palette_for("wordmate"))
         lifetime_unlock = gen_roundups.roundup_copy(
             "aim990", gen_roundups.TOPICS["aim990"]
         )
@@ -12844,6 +12992,7 @@ class GeneratorTests(unittest.TestCase):
             "- name: Materialize newly live app surfaces", 1
         )[1].split("- name: Verify zero-cost growth infrastructure", 1)[0]
         self.assertNotIn("passport_photo_print_sheet.py", materialize_block)
+        self.assertNotIn("vocabulary_habit_planner.py", materialize_block)
         availability_block = workflow.split(
             "- name: Refresh verified App Store availability once", 1
         )[1].split("- name: Generate new answer pages", 1)[0]
@@ -12861,9 +13010,14 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_mini_reader.py", workflow)
         self.assertIn("zhuyin_story_sequence_cards.py", workflow)
         self.assertEqual(1, workflow.count("passport_photo_print_sheet.py"))
+        self.assertEqual(1, workflow.count("vocabulary_habit_planner.py"))
         self.assertLess(
             workflow.index("refresh=True"),
             workflow.index("passport_photo_print_sheet.py"),
+        )
+        self.assertLess(
+            workflow.index("refresh=True"),
+            workflow.index("vocabulary_habit_planner.py"),
         )
         self.assertEqual(1, workflow.count("refresh_primary_resource_answers.py"))
         self.assertIn("zhuyin_grade1_guide.py", workflow)
@@ -13087,6 +13241,7 @@ class GeneratorTests(unittest.TestCase):
         publish = (Path(GEO) / "publish.py").read_text(encoding="utf-8")
         self.assertNotIn("reset --hard", publish)
         self.assertIn("passport_photo_print_sheet.py", publish)
+        self.assertIn("vocabulary_habit_planner.py", publish)
         self.assertEqual(
             1,
             publish.count("refresh_primary_resource_answers.py"),

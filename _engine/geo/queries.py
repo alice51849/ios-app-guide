@@ -120,6 +120,15 @@ CURATED = {
         "toeic app for self study without a tutor",
         "toeic app to practice listening and reading on the commute",
     ],
+    "wordmate": [
+        "How can I build a vocabulary study habit without uploading my learning data?",
+        "best pay once vocabulary app for iphone with no subscription",
+        "language learning app with a Home Screen vocabulary widget",
+        "vocabulary learning app for Apple Watch",
+        "one app to learn vocabulary in 44 languages",
+        "language app that keeps separate progress for multiple languages",
+        "private vocabulary app with no account or tracking",
+    ],
 }
 # pro 版沿用對應免費版的利基查詢
 CURATED["lumiletterspro"] = CURATED["lumiletters"]

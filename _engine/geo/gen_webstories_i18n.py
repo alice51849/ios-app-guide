@@ -31,7 +31,7 @@ KEY2DATA = {
     "lumiletterspro": "letters_pro_full.json", "lumimathpro": "math_pro_full.json",
     "lumimissionpro": "mission_pro_full.json", "lumibopomofo": "bopomofo_full.json",
     "lumibopomofopro": "bopomofo_pro_full.json", "zodira": "zodira_full.json",
-    "aim990": "aim990_full.json",
+    "aim990": "aim990_full.json", "wordmate": "wordmate_full.json",
 }
 
 
@@ -89,7 +89,7 @@ def localized_story(key, locale, d, all_locales):
     tagline = sanitize_description(key, locale, tagline)
     promo = sanitize_description(key, locale, promo)
     kws = [k.strip() for k in (d.get("keywords") or "").split(",") if k.strip()][:4]
-    pal = PALETTES[abs(hash(key)) % len(PALETTES)]
+    pal = gw.palette_for(key)
     c1 = "#%02x%02x%02x" % pal[0]
     c2 = "#%02x%02x%02x" % pal[1]
     url = appstore_url(key, "iag_story") or SITE

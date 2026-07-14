@@ -46,6 +46,7 @@ TOPICS = {
     "lumibopomofo": "kids zhuyin bopomofo",
     "mochi": "to-do list & checklist",
     "lumiweather": "family weather",
+    "wordmate": "vocabulary learning",
 }
 
 
@@ -69,6 +70,7 @@ EXTRA_COMP = {
     "lumibopomofo": ["bopomofo master", "let's zhuyin", "chinese zhuyin bopomo fun"],
     "mochi": ["todoist", "ticktick", "any.do"],
     "lumiweather": ["carrot weather", "weather line", "hello weather"],
+    "wordmate": ["anki", "drops", "memrise"],
 }
 CSS = ("body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;"
        "background:linear-gradient(180deg,#fff,#f7f7fb);color:#161622;line-height:1.62}a{color:#3840d0}"

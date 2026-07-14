@@ -29,6 +29,33 @@ PUBLISHER = "iOS App Guide"
 PALETTES = [((91, 95, 242), (139, 92, 246)), ((15, 143, 95), (5, 150, 105)),
             ((236, 72, 153), (168, 85, 247)), ((14, 165, 233), (59, 130, 246)),
             ((245, 158, 11), (239, 68, 68)), ((20, 184, 166), (6, 148, 162))]
+LEGACY_PALETTE_INDEX = {
+    "aim990": 4,
+    "cvdesk": 4,
+    "cyca": 5,
+    "gmoney": 3,
+    "hourstag": 0,
+    "lockhour": 3,
+    "lumibopomofo": 5,
+    "lumibopomofopro": 0,
+    "lumiletters": 0,
+    "lumiletterspro": 3,
+    "lumimath": 1,
+    "lumimathpro": 5,
+    "lumimission": 1,
+    "lumimissionpro": 0,
+    "lumiweather": 5,
+    "mochi": 1,
+    "photocream": 0,
+    "picclear": 2,
+    "scanto": 5,
+    "sereno": 0,
+    "snapport": 3,
+    "sononote": 0,
+    "tripbee": 3,
+    "tripplanet": 0,
+    "unblurry": 5,
+}
 
 FONT_B = "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
 FONT_BLK = "/System/Library/Fonts/Supplemental/Arial Black.ttf"
@@ -124,6 +151,15 @@ def make_logo():
     return p
 
 
+def palette_for(key):
+    palette_index = LEGACY_PALETTE_INDEX.get(key)
+    if palette_index is None:
+        palette_index = int.from_bytes(
+            hashlib.sha256(key.encode("utf-8")).digest()[:4], "big"
+        ) % len(PALETTES)
+    return PALETTES[palette_index]
+
+
 def story_html(key):
     a = APPS[key]
     e = html.escape
@@ -132,10 +168,7 @@ def story_html(key):
     kicker = (a.get("kicker") or "").strip()
     title = (a.get("title") or tagline).strip()
     bullets = a.get("cta_bullets", [])[:4]
-    palette_index = int.from_bytes(
-        hashlib.sha256(key.encode("utf-8")).digest()[:4], "big"
-    ) % len(PALETTES)
-    pal = PALETTES[palette_index]
+    pal = palette_for(key)
     make_poster(key, name, tagline, pal)
     url = appstore_url(key, "iag_story") or SITE
     canon = f"{SITE}/stories/{key}.html"

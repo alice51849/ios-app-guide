@@ -69,6 +69,7 @@ def main():
     # 1) 重建
     require([PY, os.path.join(HERE, "build_pages_i18n.py")], env=env)
     require([PY, os.path.join(HERE, "passport_photo_print_sheet.py")], env=env)
+    require([PY, os.path.join(HERE, "vocabulary_habit_planner.py")], env=env)
     require([PY, os.path.join(HERE, "gen_data_hub.py")], env=env)
     require([PY, os.path.join(HERE, "family_travel_static_api.py")], env=env)
     require([PY, os.path.join(HERE, "family_travel_observation_passport.py")], env=env)

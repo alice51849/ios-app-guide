@@ -12,14 +12,9 @@ import subprocess
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(HERE)
 PAGES = os.path.join(HERE, "pages")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide")
 PY = sys.executable
-sys.path.insert(0, os.path.join(ROOT, "social"))
-
-from appstore_live import live_app_keys  # noqa: E402
-from videogen.registry import APPSTORE  # noqa: E402
 
 
 def run(cmd, cwd=None, env=None):
@@ -71,72 +66,9 @@ def reconcile_lastmod_after_rebase(env):
 
 def main():
     env = dict(os.environ, GEO_SITE=SITE)
-    curated_slugs = [
-        (
-            "how-can-my-child-prepare-for-grade-1-bopomofo-over-the-summer-"
-            "before-school-starts"
-        ),
-        "how-can-i-check-my-child-s-zhuyin-skills-at-home-in-three-minutes",
-        (
-            "how-can-i-help-a-child-who-can-blend-zhuyin-syllables-but-"
-            "cannot-read-a-whole-sentence"
-        ),
-        (
-            "how-can-i-help-a-child-move-from-zhuyin-sentences-to-a-"
-            "short-story"
-        ),
-        (
-            "how-can-i-help-a-child-understand-and-retell-a-zhuyin-"
-            "story"
-        ),
-        "where-can-i-download-a-free-bopomofo-epub-for-e-readers",
-        (
-            "where-can-a-school-library-download-catalog-records-for-a-"
-            "bopomofo-epub"
-        ),
-        (
-            "where-can-an-oer-repository-download-metadata-for-a-"
-            "bopomofo-learning-resource"
-        ),
-        (
-            "where-can-an-open-data-catalog-harvest-a-bopomofo-"
-            "dataset-in-dcat-3"
-        ),
-        (
-            "where-can-data-tools-download-csvw-metadata-for-all-37-"
-            "bopomofo-symbols"
-        ),
-        (
-            "where-can-a-digital-repository-download-an-rfc-8493-bagit-"
-            "package-for-bopomofo-data"
-        ),
-        (
-            "where-can-a-digital-repository-download-an-ocfl-1-1-object-"
-            "for-bopomofo-data"
-        ),
-        (
-            "where-can-a-library-load-a-iiif-presentation-3-manifest-for-all-"
-            "37-bopomofo-symbols"
-        ),
-        (
-            "where-can-i-download-a-ro-crate-1-3-research-object-for-all-37-"
-            "bopomofo-symbols"
-        ),
-        (
-            "where-can-a-digital-repository-download-a-mets-2-0-and-premis-3-0-"
-            "package-for-bopomofo-data"
-        ),
-        (
-            "where-can-a-repository-harvest-an-oai-ore-resource-map-for-"
-            "bopomofo-data"
-        ),
-        (
-            "where-can-a-linked-data-client-replicate-bopomofo-as-an-ldes-1-0-"
-            "and-tree-event-stream"
-        ),
-    ]
     # 1) 重建
     require([PY, os.path.join(HERE, "build_pages_i18n.py")], env=env)
+    require([PY, os.path.join(HERE, "passport_photo_print_sheet.py")], env=env)
     require([PY, os.path.join(HERE, "gen_data_hub.py")], env=env)
     require([PY, os.path.join(HERE, "family_travel_static_api.py")], env=env)
     require([PY, os.path.join(HERE, "family_travel_observation_passport.py")], env=env)
@@ -177,35 +109,10 @@ def main():
         [PY, os.path.join(HERE, "prioritize_trip_planet_resources.py")],
         env=env,
     )
-    live = live_app_keys(APPSTORE, PAGES, refresh=False)
-    if "lumibopomofo" in live:
-        refresh_command = [
-            PY,
-            os.path.join(HERE, "aeo_answers.py"),
-            "lumibopomofo",
-            "--cached-live",
-        ]
-        for slug in curated_slugs:
-            refresh_command.extend(["--refresh-slug", slug])
-        require(refresh_command, env=env)
-        require(
-            [
-                PY,
-                os.path.join(HERE, "aeo_answers_i18n.py"),
-                *curated_slugs,
-                "--langs",
-                "zh-Hant",
-                "--trans",
-                os.path.join(HERE, "i18n_trans"),
-                "--force",
-            ],
-            env=env,
-        )
-    else:
-        print(
-            "Lumi Bopomofo is not public; stale app-linked answers "
-            "will be pruned."
-        )
+    require(
+        [PY, os.path.join(HERE, "refresh_primary_resource_answers.py")],
+        env=env,
+    )
     require(
         [
             PY,

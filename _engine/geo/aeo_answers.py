@@ -471,6 +471,9 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
         helpful_resource = (
             f'<a href="{e(primary_resource_url)}">{e(primary_resource_label)}</a>'
         )
+        resource_first_meta = (
+            '<meta name="iag-free-resource-first" content="true">'
+        )
     else:
         hero_actions = (
             f'<a class="cta" href="{url}" rel="nofollow noopener">'
@@ -478,15 +481,45 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
             f'<a class="cta ghost" href="{SITE}/tools/index.html">free tool →</a>'
         )
         helpful_resource = f'<a href="{SITE}/tools/index.html">free tool</a>'
+        resource_first_meta = ""
     special_notice = ""
     if key == "aim990":
         special_notice = " TOEIC is a registered trademark of ETS. Aim990 is an independent study aid and is not affiliated with or endorsed by ETS. No app can guarantee a TOEIC score."
+    app_links = (
+        f'<a href="{url}" rel="nofollow noopener">Get {e(name)} on the App Store</a>'
+        f'<a href="{guide_link}">{e(name)} app guide</a>'
+        f'<a href="{alt_link}">{e(name)} alternatives / guide</a>'
+    )
+    app_fit = (
+        f'<h2>Where {e(name)} fits</h2><p>{e(content["where_app_fits"])}</p>'
+        f'<p>{pills}</p><p class="notice">This page is an independent buying '
+        "guide. App Store features and prices can change, so confirm details on "
+        f'the listing before purchase.{e(special_notice)}</p>'
+    )
+    if primary_resource_url:
+        article_app_fit = ""
+        sidebar_html = (
+            '<h2>Helpful links</h2><div class="toc">'
+            f"{helpful_resource}</div>"
+        )
+        deferred_app_fit = (
+            f'<section class="wrap card">{app_fit}<div class="toc">'
+            f"{app_links}</div></section>"
+        )
+    else:
+        article_app_fit = app_fit
+        sidebar_html = (
+            '<h2>Helpful links</h2><div class="toc">'
+            f"{helpful_resource}{app_links}</div><h2>Best for</h2>"
+            f'<p class="muted">{e("; ".join(feature_list(key)))}</p>'
+        )
+        deferred_app_fit = ""
     return f'''<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(meta)}"><link rel="canonical" href="{canonical}">
 <link rel="alternate" hreflang="en" href="{canonical}">
 <link rel="alternate" hreflang="x-default" href="{canonical}">
-<meta property="og:type" content="article"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(meta)}"><meta property="og:url" content="{canonical}"><meta name="twitter:card" content="summary"><style>
+<meta property="og:type" content="article"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(meta)}"><meta property="og:url" content="{canonical}"><meta name="twitter:card" content="summary">{resource_first_meta}<style>
 {STYLE}
 </style><script type="application/ld+json">
 {j(breadcrumb)}
@@ -506,8 +539,8 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
 </head>
 <body><header class="top"><div class="wrap nav"><a href="{SITE}/index.html">iOS App Guide</a><nav><a href="{SITE}/answers/index.html">Answers</a> · <a href="{SITE}/tools/">Free tools</a> · <a href="{SITE}/alternatives/">Alternatives</a> · <a href="{SITE}/about.html">About</a></nav></div></header>
 <main><section class="hero wrap"><div class="breadcrumb"><a href="{SITE}/index.html">Home</a> / <a href="{SITE}/answers/index.html">Answers</a></div><div class="eyebrow">High-intent answer</div><h1>{e(question)}</h1><p class="lead">{e(content["lead"])}</p><p>{hero_actions}</p></section>
-<section class="wrap grid"><article class="card two answer"><h2>Short answer</h2>{paras}<h2>What to look for before choosing</h2><ul class="checklist">{look}</ul><h2>A practical decision process</h2><ol class="checklist">{steps}</ol><h2>Quick comparison</h2><table><thead><tr><th>Need</th><th>What to check</th><th>Why it matters</th></tr></thead><tbody>{comparison_rows}</tbody></table>{sources_html}<h2>Where {e(name)} fits</h2><p>{e(content["where_app_fits"])}</p><p>{pills}</p><p class="notice">This page is an independent buying guide. App Store features and prices can change, so confirm details on the listing before purchase.{e(special_notice)}</p></article><aside class="card side"><h2>Helpful links</h2><div class="toc">{helpful_resource}<a href="{url}" rel="nofollow noopener">Get {e(name)} on the App Store</a><a href="{guide_link}">{e(name)} app guide</a><a href="{alt_link}">{e(name)} alternatives / guide</a></div><h2>Best for</h2><p class="muted">{e('; '.join(feature_list(key)))}</p></aside></section>
-<section class="wrap card"><h2>FAQ</h2>{faq_html}</section></main><footer class="footer"><div class="wrap">Independent guide. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.</div></footer></body></html>'''
+<section class="wrap grid"><article class="card two answer"><h2>Short answer</h2>{paras}<h2>What to look for before choosing</h2><ul class="checklist">{look}</ul><h2>A practical decision process</h2><ol class="checklist">{steps}</ol><h2>Quick comparison</h2><table><thead><tr><th>Need</th><th>What to check</th><th>Why it matters</th></tr></thead><tbody>{comparison_rows}</tbody></table>{sources_html}{article_app_fit}</article><aside class="card side">{sidebar_html}</aside></section>
+<section class="wrap card"><h2>FAQ</h2>{faq_html}</section>{deferred_app_fit}</main><footer class="footer"><div class="wrap">Independent guide. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.</div></footer></body></html>'''
 
 
 def _coverage_rates() -> dict:

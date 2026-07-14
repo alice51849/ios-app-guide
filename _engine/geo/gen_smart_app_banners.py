@@ -27,6 +27,9 @@ SITE = os.environ.get(
 ).rstrip("/")
 BLOCK_START = "<!-- smart-app-banner:start -->"
 BLOCK_END = "<!-- smart-app-banner:end -->"
+FREE_RESOURCE_FIRST_META = (
+    '<meta name="iag-free-resource-first" content="true">'
+)
 BLOCK_RE = re.compile(
     rf"\s*{re.escape(BLOCK_START)}.*?{re.escape(BLOCK_END)}\s*",
     flags=re.DOTALL,
@@ -140,6 +143,8 @@ def build_targets(
                 ),
             ),
         )
+        if FREE_RESOURCE_FIRST_META in source:
+            continue
         app_ids = set(APP_STORE_LINK_RE.findall(source))
         if len(app_ids) != 1:
             continue
@@ -154,6 +159,8 @@ def ensure_banner(path: Path, app_id: str) -> bool:
     if "</head>" not in source:
         raise ValueError(f"Smart App Banner guide has no closing head: {path}")
     cleaned = BLOCK_RE.sub("\n", source)
+    if FREE_RESOURCE_FIRST_META in cleaned:
+        return _write_if_changed(path, cleaned)
     linkset_match = gen_linkset.DISCOVERY_RE.search(cleaned)
     social_index = cleaned.find("<!-- social-preview:start -->")
     feed_match = gen_linkset.FEED_DISCOVERY_RE.search(cleaned)

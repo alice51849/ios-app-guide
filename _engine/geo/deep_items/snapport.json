@@ -73,8 +73,9 @@
  },
  {
   "app_key": "snapport",
-  "kind": "scenario",
+  "kind": "passport_print_sheet",
   "match": [
+   "how can i arrange passport photos on a 4x6 print sheet without uploading my photo?",
    "passport photo cut guides",
    "cut guides",
    "print sheet",
@@ -83,28 +84,73 @@
    "letter size",
    "print at home"
   ],
-  "query": "passport photo cut guides print sheet app 4x6 A4 Letter pay once",
-  "lead": "Taking the picture is only half the job: many people still need a printable sheet with multiple copies and clear cut lines for pharmacy, home, A4, Letter, or 4×6 printing.",
-  "detail": "Passport and ID photos are often printed on standard photo paper, then cut to the exact final size; poor scaling at print time can ruin an otherwise good photo. {name} creates print-ready layouts for 4×6, A4, or Letter sheets with multiple copies and cut guides, after you align the face and choose the correct template. It does not replace official rules or professional judgment, but it helps avoid the common mistake of printing a correct crop at the wrong physical size.",
+  "query": "How can I arrange passport photos on a 4x6 print sheet without uploading my photo?",
+  "page_title": "Private Passport Photo Print Sheet Maker (4×6, A4 & Letter)",
+  "meta_description": "Arrange passport photos on a 4×6, A4 or Letter sheet entirely in your browser. No upload, account or analytics.",
+  "lead": "Use the free browser tool above to arrange repeated passport-photo crops on 4×6, A4 or Letter paper without uploading the source photo.",
+  "detail": "Choose the U.S. 2×2 inch, UK 35×45mm or Canada 50×70mm size, load a photo, adjust its zoom and position, then download a 300 DPI PNG. When the layout has white margin or gap space, non-overprinting cut marks stay entirely outside every photo. The photo is decoded and laid out only inside the current browser tab; the tool has no upload, account, storage or analytics.",
+  "follow_up": "Before printing, compare the selected dimensions and the original photo with the issuing authority's current rules. Print at 100% or Actual Size and measure one finished crop with a ruler. The UK requires printed photos to meet additional professional-standard rules, while Canada requires passport photos to be taken by a commercial photographer, so this independent layout cannot guarantee acceptance.",
   "bullets": [
-   "Print sheet layouts for the paper you actually use: 4×6 photo paper, A4, or Letter",
-   "Multiple copies on one sheet so you can cut extras for forms, backups, or mistakes",
-   "Cut guides that preserve the final physical photo dimensions after printing",
-   "Export to PDF or image formats so you can print at home, save to Files, or share to a print shop",
-   "No subscription, no account, and offline processing for a one-time document-photo task"
+   "A complete free workflow before any app recommendation",
+   "U.S. 2×2 inch, UK 35×45mm and Canada 50×70mm presets with official source links",
+   "4×6, A4 and Letter layouts with repeated copies and cut marks that never cover a photo",
+   "300 DPI PNG export with physical-density metadata for scale-aware print software",
+   "No upload, account, storage, tracking or analytics"
+  ],
+  "decision_steps": [
+   "Open the current official photo rules for the exact passport or application.",
+   "Choose the matching country size and the paper loaded in your printer.",
+   "Load the photo locally, then adjust zoom and position inside the crop.",
+   "Download the PNG and print at 100% or Actual Size with auto-fit disabled.",
+   "Measure one printed crop with a ruler and recheck every non-size requirement before use."
+  ],
+  "comparison_rows": [
+   {
+    "need": "A U.S. 2×2 inch photo on common 4×6 paper",
+    "check": "Choose United States and 4×6; the sheet fits six copies at 300 DPI",
+    "why": "The exact 2 inch crop is preserved only when the printer does not auto-fit the sheet"
+   },
+   {
+    "need": "A UK 35×45mm printed passport photo",
+    "check": "Use the size layout as a reference, then follow HM Passport Office's professional-standard print rules",
+    "why": "Correct dimensions alone do not satisfy the UK's printed-photo requirements"
+   },
+   {
+    "need": "A Canadian 50×70mm passport photo",
+    "check": "Use the layout only after reviewing Canada's commercial-photographer and current application requirements",
+    "why": "A self-arranged sheet does not replace Canada's photographer requirements or guarantee acceptance"
+   }
+  ],
+  "where_app_fits": "{name} is optional and is not needed for the free print-sheet maker. Its paid-upfront iPhone and iPad workflow adds photo capture, face-alignment guides, background options, more country and document templates, custom sizing, JPEG/PNG/PDF export and reusable print layouts, with on-device processing and no subscription.",
+  "primary_resource_url": "https://alice51849.github.io/ios-app-guide/tools/private-passport-photo-print-sheet-maker.html",
+  "primary_resource_label": "Open the free private print-sheet maker",
+  "date_modified": "2026-07-14",
+  "sources": [
+   {
+    "title": "U.S. Department of State — Photo Requirements",
+    "url": "https://travel.state.gov/en/passports/apply/help/photos.html"
+   },
+   {
+    "title": "GOV.UK — Get a passport photo",
+    "url": "https://www.gov.uk/photos-for-passports/photo-requirements"
+   },
+   {
+    "title": "Government of Canada — Passport photo requirements",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports/photos.html"
+   }
   ],
   "faq": [
    {
-    "q": "Can {name} make a 4×6 passport photo print sheet?",
-    "a": "Yes. {name} supports 4×6 print sheets, plus A4 and Letter layouts with multiple copies and cut guides."
+    "q": "Does the free print-sheet maker upload or save my passport photo?",
+    "a": "No. The file stays in the current browser tab and is not uploaded, stored, tracked or analysed. Closing or reloading the tab clears it."
    },
    {
     "q": "Should I let the printer auto-fit the sheet?",
-    "a": "Be careful. Auto-fit or borderless scaling can change the physical photo size. Use the exported layout at the intended scale and check the printed dimensions with a ruler."
+    "a": "No. Auto-fit, Fit to Page and some borderless modes can change the physical crop size. Print at 100% or Actual Size, then measure one crop with a ruler."
    },
    {
     "q": "Does a print sheet guarantee acceptance?",
-    "a": "No. It helps with physical size and cutting, but the photo still must meet the official rules for head size, background, expression, lighting, and recency."
+    "a": "No. The tool arranges physical dimensions only. Head size, background, expression, lighting, recency, print quality and country-specific capture rules still apply."
    }
   ]
  },

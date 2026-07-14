@@ -15,6 +15,7 @@ from videogen.registry import APPS  # noqa: E402
 # 手工精選:最自然、最可能被問、競爭最小的利基問句
 CURATED = {
     "snapport": [
+        "How can I arrange passport photos on a 4x6 print sheet without uploading my photo?",
         "best app to take passport photos at home",
         "how to make a visa photo with my iphone",
         "passport photo app without subscription",

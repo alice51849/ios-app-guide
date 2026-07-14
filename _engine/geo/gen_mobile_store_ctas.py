@@ -174,6 +174,8 @@ def ensure_mobile_cta(
     if "</body>" not in source:
         raise ValueError(f"Mobile App Store CTA page has no closing body: {path}")
     cleaned = BLOCK_RE.sub("\n", source)
+    if gen_smart_app_banners.FREE_RESOURCE_FIRST_META in cleaned:
+        return _write_if_changed(path, cleaned)
     cta = app_store_cta(cleaned, app_id)
     if cta is None:
         return _write_if_changed(path, cleaned)

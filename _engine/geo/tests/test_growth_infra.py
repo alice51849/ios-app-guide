@@ -69,8 +69,10 @@ import indexnow_submit
 import notify_rsscloud
 import notify_websub
 import outreach_scorecard
+import passport_photo_print_sheet
 import prioritize_trip_planet_resources
 import queries
+import refresh_primary_resource_answers
 import rsscloud_config
 import static_api_catalog
 import zhuyin_blending_card_generator
@@ -10996,6 +10998,226 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("How to choose: " + question, translations)
         self.assertIn(deep_item["primary_resource_label"] + " →", translations)
 
+    def test_passport_photo_print_sheet_is_private_bilingual_and_idempotent(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            passport_photo_print_sheet.build(pages, show_app_cta=True)
+            english_path = (
+                pages
+                / "tools"
+                / "private-passport-photo-print-sheet-maker.html"
+            )
+            chinese_path = (
+                pages
+                / "zh-Hant"
+                / "tools"
+                / "private-passport-photo-print-sheet-maker.html"
+            )
+            english = english_path.read_text(encoding="utf-8")
+            chinese = chinese_path.read_text(encoding="utf-8")
+            stable_mtime = 1_700_000_000_000_000_000
+            os.utime(english_path, ns=(stable_mtime, stable_mtime))
+            first_bytes = english_path.read_bytes()
+            passport_photo_print_sheet.build(pages, show_app_cta=True)
+            self.assertEqual(first_bytes, english_path.read_bytes())
+            self.assertEqual(stable_mtime, english_path.stat().st_mtime_ns)
+
+        self.assertIn('"@type": "WebApplication"', english)
+        self.assertIn("U.S. passport · 2×2 in", english)
+        self.assertIn("UK printed passport · 35×45 mm", english)
+        self.assertIn("Canada printed passport · 50×70 mm", english)
+        self.assertIn("4×6 in photo paper", english)
+        self.assertIn("A4", english)
+        self.assertIn("US Letter", english)
+        self.assertIn("pixelSafeLayout", english)
+        self.assertIn("Math.min(layout.rows,pixelRows)", english)
+        self.assertIn("drawCutMarks", english)
+        self.assertNotIn("strokeRect", english)
+        self.assertIn("full-bleed six-copy", english)
+        self.assertIn("photoLoadToken", english)
+        self.assertIn("loadToken!==photoLoadToken", english)
+        self.assertIn('id="download-sheet" type="button" disabled', english)
+        self.assertIn('id="print-sheet" type="button" disabled', english)
+        self.assertIn("setExportEnabled(false)", english)
+        self.assertIn("clearLocalImage();", english)
+        self.assertIn("setExportEnabled(true)", english)
+        self.assertIn("pngDensityChunk", english)
+        self.assertIn("pngWithDensity(blob,DPI)", english)
+        self.assertIn("passport-photo-size-guide.html", english)
+        self.assertNotIn("fetch(", english)
+        self.assertNotIn("XMLHttpRequest", english)
+        script = english.split("<script>", 1)[1]
+        self.assertNotIn("analytics", script.lower())
+        self.assertLess(
+            english.index('id="generator"'),
+            english.index('class="cta-card'),
+        )
+        self.assertIn("照片只留在目前分頁", chinese)
+        self.assertIn("相關免費資源", chinese)
+        self.assertIn("裁切標記只畫在白色留白", chinese)
+        inactive = passport_photo_print_sheet.render_page(
+            "en",
+            show_app_cta=False,
+        )
+        self.assertNotIn("apps.apple.com/app/id6780575828", inactive)
+        self.assertNotIn('class="cta-card', inactive)
+
+    def test_passport_print_answer_leads_with_free_private_tool(self):
+        question = (
+            "How can I arrange passport photos on a 4x6 print sheet without "
+            "uploading my photo?"
+        )
+        self.assertEqual(1, queries.CURATED["snapport"].count(question))
+        content = aeo_answers.normalized_content(
+            aeo_answers.default_content(question, "snapport"),
+            question,
+            "snapport",
+        )
+        page = aeo_answers.render_page(question, "snapport", content)
+        tool_url = (
+            "https://alice51849.github.io/ios-app-guide/tools/"
+            "private-passport-photo-print-sheet-maker.html"
+        )
+        self.assertEqual(tool_url, content["primary_resource_url"])
+        self.assertEqual("2026-07-14", content["date_modified"])
+        self.assertIn("no upload, account, storage or analytics", page)
+        self.assertIn("commercial photographer", page)
+        self.assertLess(page.index(tool_url), page.index("id6780575828"))
+        self.assertIn("not needed for the free print-sheet maker", page)
+        self.assertIn(
+            gen_smart_app_banners.FREE_RESOURCE_FIRST_META,
+            page,
+        )
+        before_faq, after_faq = page.split(
+            '<section class="wrap card"><h2>FAQ</h2>',
+            1,
+        )
+        direct_store_link = (
+            'href="https://apps.apple.com/app/id6780575828?ct=iag_ans"'
+        )
+        self.assertNotIn(direct_store_link, before_faq)
+        self.assertIn(direct_store_link, after_faq)
+        with tempfile.TemporaryDirectory() as directory:
+            answer_path = Path(directory) / "answer.html"
+            answer_path.write_text(
+                page.replace(
+                    "</head>",
+                    gen_smart_app_banners.banner_block("6780575828")
+                    + "</head>",
+                    1,
+                )
+                .replace(
+                    "</body>",
+                    gen_mobile_store_ctas.mobile_cta_block(
+                        "https://apps.apple.com/app/id6780575828?ct=iag_ans",
+                        "Get Snapport on the App Store",
+                    )
+                    + "</body>",
+                    1,
+                ),
+                encoding="utf-8",
+            )
+            gen_smart_app_banners.ensure_banner(answer_path, "6780575828")
+            gen_mobile_store_ctas.ensure_mobile_cta(
+                answer_path,
+                "6780575828",
+            )
+            processed = answer_path.read_text(encoding="utf-8")
+        self.assertNotIn('name="apple-itunes-app"', processed)
+        self.assertNotIn("data-mobile-store-cta", processed)
+        translations = json.loads(
+            (Path(GEO) / "i18n_trans" / "zh-Hant.json").read_text(encoding="utf-8")
+        )
+
+        def translated_strings(value, parent_key=""):
+            if isinstance(value, str):
+                if parent_key not in {
+                    "app_key",
+                    "date_modified",
+                    "kind",
+                    "match",
+                    "primary_resource_url",
+                    "url",
+                }:
+                    yield value
+            elif isinstance(value, list):
+                for child in value:
+                    yield from translated_strings(child, parent_key)
+            elif isinstance(value, dict):
+                for key, child in value.items():
+                    yield from translated_strings(child, key)
+
+        deep_item = next(
+            item
+            for item in answer_deep.DEEP_ITEMS
+            if item.get("kind") == "passport_print_sheet"
+        )
+        self.assertEqual(
+            [],
+            [
+                value
+                for value in translated_strings(deep_item)
+                if value.replace("{name}", "Snapport") not in translations
+            ],
+        )
+        self.assertIn("How to choose: " + question, translations)
+        self.assertIn(deep_item["primary_resource_label"] + " →", translations)
+
+    def test_primary_resource_refresh_plan_covers_every_owned_resource(self):
+        expected = {
+            (
+                item["app_key"],
+                item["query"],
+                aeo_answers.slugify(item["query"]),
+            )
+            for item in answer_deep.DEEP_ITEMS
+            if isinstance(item.get("primary_resource_url"), str)
+            and item["primary_resource_url"].startswith(f"{aeo_answers.SITE}/")
+        }
+        plan = set(refresh_primary_resource_answers.primary_resource_plan())
+        self.assertEqual(expected, plan)
+        self.assertGreaterEqual(len(plan), 20)
+        self.assertIn(
+            (
+                "snapport",
+                "How can I arrange passport photos on a 4x6 print sheet "
+                "without uploading my photo?",
+                "how-can-i-arrange-passport-photos-on-a-4x6-print-sheet-"
+                "without-uploading-my-photo",
+            ),
+            plan,
+        )
+
+    def test_live_primary_resource_answers_have_no_early_app_ctas(self):
+        pages = Path(GEO) / "pages"
+        live = set(
+            appstore_live.live_app_keys(
+                refresh_primary_resource_answers.APPSTORE,
+                str(pages),
+                refresh=False,
+            )
+        )
+        checked = 0
+        for app_key, _, slug in (
+            refresh_primary_resource_answers.primary_resource_plan()
+        ):
+            if app_key not in live:
+                continue
+            for locale in ("", "zh-Hant"):
+                path = pages / locale / "answers" / f"{slug}.html"
+                self.assertTrue(path.exists(), path)
+                source = path.read_text(encoding="utf-8")
+                self.assertIn(
+                    gen_smart_app_banners.FREE_RESOURCE_FIRST_META,
+                    source,
+                )
+                self.assertNotIn('name="apple-itunes-app"', source)
+                self.assertNotIn("data-mobile-store-cta", source)
+                self.assertNotIn("app-store-qr-card", source)
+                self.assertNotIn("data-app-store-share", source)
+                checked += 1
+        self.assertGreaterEqual(checked, 40)
+
     def test_answer_refresh_preserves_mtime_when_content_is_unchanged(self):
         question = "How can I help a child understand and retell a Zhuyin story?"
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(
@@ -12621,9 +12843,13 @@ class GeneratorTests(unittest.TestCase):
         materialize_block = workflow.split(
             "- name: Materialize newly live app surfaces", 1
         )[1].split("- name: Verify zero-cost growth infrastructure", 1)[0]
+        self.assertNotIn("passport_photo_print_sheet.py", materialize_block)
+        availability_block = workflow.split(
+            "- name: Refresh verified App Store availability once", 1
+        )[1].split("- name: Generate new answer pages", 1)[0]
         self.assertLess(
-            materialize_block.index("build_pages_i18n.py --cached-live"),
-            materialize_block.index("ensure_live_guides.py"),
+            availability_block.index("refresh=True"),
+            availability_block.index("passport_photo_print_sheet.py"),
         )
         self.assertNotIn("gen_sitemap_lastmod.py", materialize_block)
         self.assertIn("zhuyin_picture_book_club_kit.py", workflow)
@@ -12634,17 +12860,12 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_sentence_reading_cards.py", workflow)
         self.assertIn("zhuyin_mini_reader.py", workflow)
         self.assertIn("zhuyin_story_sequence_cards.py", workflow)
-        self.assertIn('READING_SLUG="how-can-i-help-a-child-who-can-blend-', workflow)
-        self.assertIn('--refresh-slug "$READING_SLUG"', workflow)
-        self.assertIn(
-            'MINI_READER_SLUG="how-can-i-help-a-child-move-from-zhuyin-', workflow
+        self.assertEqual(1, workflow.count("passport_photo_print_sheet.py"))
+        self.assertLess(
+            workflow.index("refresh=True"),
+            workflow.index("passport_photo_print_sheet.py"),
         )
-        self.assertIn('--refresh-slug "$MINI_READER_SLUG"', workflow)
-        self.assertIn(
-            'STORY_SEQUENCE_SLUG="how-can-i-help-a-child-understand-and-retell-',
-            workflow,
-        )
-        self.assertIn('--refresh-slug "$STORY_SEQUENCE_SLUG"', workflow)
+        self.assertEqual(1, workflow.count("refresh_primary_resource_answers.py"))
         self.assertIn("zhuyin_grade1_guide.py", workflow)
         self.assertIn("zhuyin_anki_deck.py", workflow)
         self.assertIn("zhuyin_skos_vocabulary.py", workflow)
@@ -12854,30 +13075,22 @@ class GeneratorTests(unittest.TestCase):
                 'git commit -m "Reconcile truthful sitemap lastmod after rebase"'
             ),
         )
-        self.assertIn("--refresh-slug \"$SUMMER_SLUG\"", workflow)
-        self.assertIn("--refresh-slug \"$OBSERVATION_SLUG\"", workflow)
-        self.assertIn("--refresh-slug \"$EPUB_SLUG\"", workflow)
-        self.assertIn("--refresh-slug \"$LIBRARY_SLUG\"", workflow)
-        self.assertIn("--refresh-slug \"$OER_SLUG\"", workflow)
-        self.assertIn("--refresh-slug \"$DCAT_SLUG\"", workflow)
-        self.assertIn("--refresh-slug \"$CSVW_SLUG\"", workflow)
-        self.assertIn("--refresh-slug \"$BAGIT_SLUG\"", workflow)
-        self.assertIn("--refresh-slug \"$OCFL_SLUG\"", workflow)
-        self.assertIn("--refresh-slug \"$IIIF_SLUG\"", workflow)
-        self.assertIn("--refresh-slug \"$RO_CRATE_SLUG\"", workflow)
-        self.assertIn("--refresh-slug \"$METS_PREMIS_SLUG\"", workflow)
-        self.assertIn("--refresh-slug \"$ORE_SLUG\"", workflow)
-        self.assertIn("--refresh-slug \"$LDES_SLUG\"", workflow)
-        self.assertIn("--refresh-slug \"$TRIP_SLUG\"", workflow)
-        self.assertIn('"lumibopomofo" in live_app_keys', workflow)
-        self.assertIn('"tripplanet" in live_app_keys', workflow)
+        self.assertNotIn("--refresh-slug", workflow)
         self.assertIn("aeo_answers.py --cached-live --limit 0", workflow)
-        self.assertIn("--trans i18n_trans --force", workflow)
+        refresh_script = (
+            Path(GEO) / "refresh_primary_resource_answers.py"
+        ).read_text(encoding="utf-8")
+        self.assertIn("force=True", refresh_script)
         self.assertGreaterEqual(
             workflow.count("cleanup_localized_assets.py --cached-live"), 3
         )
         publish = (Path(GEO) / "publish.py").read_text(encoding="utf-8")
         self.assertNotIn("reset --hard", publish)
+        self.assertIn("passport_photo_print_sheet.py", publish)
+        self.assertEqual(
+            1,
+            publish.count("refresh_primary_resource_answers.py"),
+        )
         self.assertIn("zhuyin_picture_book_club_kit.py", publish)
         self.assertIn("zhuyin_parent_teacher_handoff_kit.py", publish)
         self.assertIn("zhuyin_library_storytime_kit.py", publish)
@@ -12886,14 +13099,6 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_sentence_reading_cards.py", publish)
         self.assertIn("zhuyin_mini_reader.py", publish)
         self.assertIn("zhuyin_story_sequence_cards.py", publish)
-        self.assertIn(
-            "how-can-i-help-a-child-move-from-zhuyin-sentences-to-a-short-story",
-            publish.replace('"\n            "', ""),
-        )
-        self.assertIn(
-            "how-can-i-help-a-child-understand-and-retell-a-zhuyin-story",
-            publish.replace('"\n            "', ""),
-        )
         self.assertIn("zhuyin_grade1_guide.py", publish)
         self.assertIn("zhuyin_anki_deck.py", publish)
         self.assertIn("zhuyin_skos_vocabulary.py", publish)
@@ -12942,6 +13147,7 @@ class GeneratorTests(unittest.TestCase):
         publish_main = publish.split("def main():", 1)[1]
         publish_chain = (
             "build_pages_i18n.py",
+            "passport_photo_print_sheet.py",
             "gen_data_hub.py",
             "family_travel_static_api.py",
             "family_travel_observation_passport.py",
@@ -12979,6 +13185,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_oer_metadata.py",
             "zhuyin_dcat_catalog.py",
             "prioritize_trip_planet_resources.py",
+            "refresh_primary_resource_answers.py",
             "add_related_answers.py",
             "add_related_tools.py",
             "fix_en_hreflang.py",
@@ -13022,14 +13229,7 @@ class GeneratorTests(unittest.TestCase):
             publish.rindex("zhuyin_resourcesync.py"),
             publish.rindex("gen_feed.py"),
         )
-        self.assertIn("--refresh-slug", publish)
-        self.assertIn(
-            "where-can-a-linked-data-client-replicate-bopomofo-as-an-ldes-1-0-",
-            publish,
-        )
-        self.assertIn("and-tree-event-stream", publish)
-        self.assertIn("aeo_answers_i18n.py", publish)
-        self.assertIn('"lumibopomofo" in live', publish)
+        self.assertNotIn("--refresh-slug", publish)
         self.assertIn('"cleanup_localized_assets.py"', publish)
         self.assertIn('"0"', publish)
         self.assertIn("add_related_answers.py", publish)

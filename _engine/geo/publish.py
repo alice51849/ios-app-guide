@@ -71,6 +71,7 @@ def main():
     require([PY, os.path.join(HERE, "passport_photo_print_sheet.py")], env=env)
     require([PY, os.path.join(HERE, "document_scan_planner.py")], env=env)
     require([PY, os.path.join(HERE, "blurry_photo_diagnostic.py")], env=env)
+    require([PY, os.path.join(HERE, "daily_checklist_planner.py")], env=env)
     require([PY, os.path.join(HERE, "vocabulary_habit_planner.py")], env=env)
     require([PY, os.path.join(HERE, "wordmate_language_support.py")], env=env)
     require([PY, os.path.join(HERE, "portfolio_app_finder.py")], env=env)

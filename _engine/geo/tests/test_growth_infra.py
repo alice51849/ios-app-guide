@@ -12694,6 +12694,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual("CollectionPage", schema["@type"])
         self.assertEqual(page_id, schema["@id"])
         self.assertEqual(canonical, schema["url"])
+        self.assertEqual("en", schema["inLanguage"])
         item_list = schema["mainEntity"]
         self.assertEqual("ItemList", item_list["@type"])
         self.assertEqual(f"{canonical}#apps", item_list["@id"])
@@ -12727,6 +12728,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual({"@id": page_id}, app["isPartOf"])
         self.assertNotIn("?", app["@id"])
         self.assertIn(f'href="{store}"', page)
+        self.assertNotIn('rel="nofollow sponsored"', page)
         self.assertIn('type="application/atom+xml"', page)
 
         localized = gen_app_catalog.render_catalog(
@@ -12752,6 +12754,115 @@ class GeneratorTests(unittest.TestCase):
             localized_item["item"]["isPartOf"],
         )
         self.assertNotIn('type="application/atom+xml"', localized)
+
+    def test_catalog_locales_are_native_linked_and_fail_closed(self):
+        expected = {
+            "en-US": "apps/index.html",
+            "zh-Hant": "apps/zh-Hant/index.html",
+            "zh-Hans": "apps/zh-Hans/index.html",
+            "ja": "apps/ja/index.html",
+            "ko": "apps/ko/index.html",
+            "de-DE": "apps/de-DE/index.html",
+            "fr-FR": "apps/fr-FR/index.html",
+            "es-ES": "apps/es-ES/index.html",
+            "es-MX": "apps/es-MX/index.html",
+            "pt-BR": "apps/pt-BR/index.html",
+            "ar-SA": "apps/ar-SA/index.html",
+            "hi": "apps/hi/index.html",
+        }
+        self.assertEqual(
+            expected,
+            {
+                config["locale"]: config["path"]
+                for config in gen_app_catalog.L10N.values()
+            },
+        )
+        self.assertEqual(
+            expected,
+            build_pages_i18n.PORTFOLIO_CATALOG_PATHS,
+        )
+
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            with mock.patch.object(gen_app_catalog, "PAGES", str(pages)):
+                german = gen_app_catalog.render_catalog(
+                    "de-DE",
+                    {"tripbee"},
+                )
+                self.assertIn(
+                    "Ordne Flüge, Hotels, Restaurants und Aktivitäten",
+                    german,
+                )
+                self.assertNotIn("/en-US/tripbee.html", german)
+                self.assertIn('lang="de-DE"', german)
+                self.assertNotIn('dir="rtl"', german)
+                german_schema = json.loads(
+                    re.search(
+                        r'<script type="application/ld\+json">(.*?)</script>',
+                        german,
+                        flags=re.S,
+                    ).group(1)
+                )
+                self.assertEqual("de-DE", german_schema["inLanguage"])
+                self.assertEqual(
+                    f"https://apps.apple.com/app/id"
+                    f"{gen_app_catalog.APPSTORE['tripbee']}",
+                    german_schema["mainEntity"]["itemListElement"][0]["url"],
+                )
+                for code, config in gen_app_catalog.L10N.items():
+                    self.assertEqual(
+                        1,
+                        german.count(
+                            f'hreflang="{code}" '
+                            f'href="{gen_app_catalog.SITE}/{config["path"]}"'
+                        ),
+                    )
+                self.assertEqual(1, german.count('hreflang="x-default"'))
+
+                arabic = gen_app_catalog.render_catalog(
+                    "ar-SA",
+                    {"tripbee"},
+                )
+                self.assertIn('<html lang="ar-SA" dir="rtl">', arabic)
+                self.assertIn("رتّب الرحلات الجوية", arabic)
+
+                with self.assertRaisesRegex(
+                    ValueError,
+                    "Missing localized catalog summary",
+                ):
+                    gen_app_catalog.render_catalog(
+                        "de-DE",
+                        {"lumibopomofo"},
+                    )
+
+            with (
+                mock.patch.object(build_pages_i18n, "PAGES", str(pages)),
+                mock.patch.object(
+                    build_pages_i18n,
+                    "load_app_locales",
+                    return_value={
+                        "de-DE": {
+                            "name": "Lumi Bopomofo",
+                            "subtitle": "Zhuyin lernen",
+                        }
+                    },
+                ),
+            ):
+                build_pages_i18n.build_locale_index(
+                    "de-DE",
+                    ["lumibopomofo"],
+                    ["de-DE"],
+                )
+            locale_index = (pages / "de-DE/index.html").read_text(
+                encoding="utf-8"
+            )
+            self.assertIn("Alle geprüften Apps ansehen", locale_index)
+            self.assertEqual(
+                1,
+                locale_index.count(
+                    f'href="{build_pages_i18n.SITE}/apps/de-DE/index.html"'
+                ),
+            )
 
     def test_catalog_rejects_unknown_or_duplicate_live_identities(self):
         with self.assertRaisesRegex(ValueError, "Unknown live app keys"):

@@ -79,6 +79,22 @@ SCHEMA_CAT = {
 
 RTL = {"ar", "he"}
 
+PORTFOLIO_CATALOG_PATHS = {
+    "en-US": "apps/index.html",
+    "zh-Hant": "apps/zh-Hant/index.html",
+    "zh-Hans": "apps/zh-Hans/index.html",
+    "ja": "apps/ja/index.html",
+    "ko": "apps/ko/index.html",
+    "de-DE": "apps/de-DE/index.html",
+    "fr-FR": "apps/fr-FR/index.html",
+    "es-ES": "apps/es-ES/index.html",
+    "es-MX": "apps/es-MX/index.html",
+    "pt-BR": "apps/pt-BR/index.html",
+    "ar-SA": "apps/ar-SA/index.html",
+    "hi": "apps/hi/index.html",
+}
+
+
 def base_lang(locale):
     """locale (zh-Hans, pt-BR, en-GB) -> base language key for UI/templates."""
     if locale in ("zh-Hans", "zh-Hant"):
@@ -91,39 +107,48 @@ UI = {
     "en": {"what": "What is {name}?", "feat": "Key features", "price": "Pricing",
            "faq": "Frequently asked questions", "dl": "Download", "get": "Get {name} on the App Store",
            "is": "{name} is an iOS app.", "ptxt": "Free to download with a one-time purchase to unlock everything. No subscription traps.",
-           "dir_dir": "Apps directory", "dir_lead": "Structured information about each iOS app — features, pricing and FAQs."},
+           "dir_dir": "Apps directory", "dir_lead": "Structured information about each iOS app — features, pricing and FAQs.",
+           "catalog": "Browse all verified apps"},
     "zh-Hant": {"what": "{name} 是什麼?", "feat": "主要功能", "price": "價格",
                 "faq": "常見問題", "dl": "下載", "get": "在 App Store 取得 {name}",
                 "is": "{name} 是一款 iOS App。", "ptxt": "免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。",
-                "dir_dir": "App 目錄", "dir_lead": "每個 iOS App 的結構化資訊 — 功能、價格與常見問題。"},
+                "dir_dir": "App 目錄", "dir_lead": "每個 iOS App 的結構化資訊 — 功能、價格與常見問題。",
+                "catalog": "瀏覽所有已驗證 App"},
     "zh-Hans": {"what": "{name} 是什么?", "feat": "主要功能", "price": "价格",
                 "faq": "常见问题", "dl": "下载", "get": "在 App Store 获取 {name}",
                 "is": "{name} 是一款 iOS App。", "ptxt": "免费下载,一次性购买即可解锁全部功能,没有订阅陷阱。",
-                "dir_dir": "App 目录", "dir_lead": "每个 iOS App 的结构化信息 — 功能、价格与常见问题。"},
+                "dir_dir": "App 目录", "dir_lead": "每个 iOS App 的结构化信息 — 功能、价格与常见问题。",
+                "catalog": "浏览所有已验证 App"},
     "ja": {"what": "{name} とは?", "feat": "主な機能", "price": "価格",
            "faq": "よくある質問", "dl": "ダウンロード", "get": "App Store で {name} を入手",
            "is": "{name} は iOS アプリです。", "ptxt": "無料ダウンロード。1回限りの購入で全機能を永久に解除でき、定期課金はありません。",
-           "dir_dir": "アプリ一覧", "dir_lead": "各 iOS アプリの構造化情報 — 機能・価格・FAQ。"},
+           "dir_dir": "アプリ一覧", "dir_lead": "各 iOS アプリの構造化情報 — 機能・価格・FAQ。",
+           "catalog": "検証済みアプリをすべて見る"},
     "ko": {"what": "{name}이란?", "feat": "주요 기능", "price": "가격",
            "faq": "자주 묻는 질문", "dl": "다운로드", "get": "App Store에서 {name} 받기",
            "is": "{name}은(는) iOS 앱입니다.", "ptxt": "무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.",
-           "dir_dir": "앱 목록", "dir_lead": "각 iOS 앱의 구조화된 정보 — 기능, 가격, FAQ."},
+           "dir_dir": "앱 목록", "dir_lead": "각 iOS 앱의 구조화된 정보 — 기능, 가격, FAQ.",
+           "catalog": "검증된 앱 모두 보기"},
     "de": {"what": "Was ist {name}?", "feat": "Hauptfunktionen", "price": "Preis",
            "faq": "Häufige Fragen", "dl": "Download", "get": "{name} im App Store laden",
            "is": "{name} ist eine iOS-App.", "ptxt": "Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.",
-           "dir_dir": "App-Verzeichnis", "dir_lead": "Strukturierte Infos zu jeder iOS-App — Funktionen, Preis und FAQ."},
+           "dir_dir": "App-Verzeichnis", "dir_lead": "Strukturierte Infos zu jeder iOS-App — Funktionen, Preis und FAQ.",
+           "catalog": "Alle geprüften Apps ansehen"},
     "fr": {"what": "Qu'est-ce que {name} ?", "feat": "Fonctions clés", "price": "Tarif",
            "faq": "Questions fréquentes", "dl": "Télécharger", "get": "Obtenir {name} sur l'App Store",
            "is": "{name} est une app iOS.", "ptxt": "Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.",
-           "dir_dir": "Répertoire d'apps", "dir_lead": "Infos structurées sur chaque app iOS — fonctions, prix et FAQ."},
+           "dir_dir": "Répertoire d'apps", "dir_lead": "Infos structurées sur chaque app iOS — fonctions, prix et FAQ.",
+           "catalog": "Voir toutes les apps vérifiées"},
     "es": {"what": "¿Qué es {name}?", "feat": "Funciones clave", "price": "Precio",
            "faq": "Preguntas frecuentes", "dl": "Descargar", "get": "Consigue {name} en el App Store",
            "is": "{name} es una app de iOS.", "ptxt": "Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.",
-           "dir_dir": "Directorio de apps", "dir_lead": "Información estructurada de cada app iOS — funciones, precio y FAQ."},
+           "dir_dir": "Directorio de apps", "dir_lead": "Información estructurada de cada app iOS — funciones, precio y FAQ.",
+           "catalog": "Ver todas las apps verificadas"},
     "pt": {"what": "O que é {name}?", "feat": "Recursos principais", "price": "Preço",
            "faq": "Perguntas frequentes", "dl": "Baixar", "get": "Baixe {name} na App Store",
            "is": "{name} é um app iOS.", "ptxt": "Download grátis, compra única para desbloquear tudo. Sem assinatura.",
-           "dir_dir": "Diretório de apps", "dir_lead": "Informações estruturadas de cada app iOS — recursos, preço e FAQ."},
+           "dir_dir": "Diretório de apps", "dir_lead": "Informações estruturadas de cada app iOS — recursos, preço e FAQ.",
+           "catalog": "Ver todos os apps verificados"},
     "it": {"what": "Cos'è {name}?", "feat": "Funzioni principali", "price": "Prezzo",
            "faq": "Domande frequenti", "dl": "Scarica", "get": "Scarica {name} sull'App Store",
            "is": "{name} è un'app iOS.", "ptxt": "Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.",
@@ -135,7 +160,8 @@ UI = {
     "ar": {"what": "ما هو {name}؟", "feat": "الميزات الرئيسية", "price": "السعر",
            "faq": "الأسئلة الشائعة", "dl": "تنزيل", "get": "احصل على {name} من App Store",
            "is": "{name} تطبيق iOS.", "ptxt": "تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.",
-           "dir_dir": "دليل التطبيقات", "dir_lead": "معلومات منظمة عن كل تطبيق iOS — الميزات والسعر والأسئلة الشائعة."},
+           "dir_dir": "دليل التطبيقات", "dir_lead": "معلومات منظمة عن كل تطبيق iOS — الميزات والسعر والأسئلة الشائعة.",
+           "catalog": "عرض جميع التطبيقات الموثّقة"},
     "id": {"what": "Apa itu {name}?", "feat": "Fitur utama", "price": "Harga",
            "faq": "Pertanyaan umum", "dl": "Unduh", "get": "Dapatkan {name} di App Store",
            "is": "{name} adalah aplikasi iOS.", "ptxt": "Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.",
@@ -171,7 +197,8 @@ UI = {
     "hi": {"what": "{name} क्या है?", "feat": "मुख्य विशेषताएँ", "price": "कीमत",
            "faq": "अक्सर पूछे जाने वाले सवाल", "dl": "डाउनलोड", "get": "App Store पर {name} पाएँ",
            "is": "{name} एक iOS ऐप है.", "ptxt": "मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।",
-           "dir_dir": "ऐप निर्देशिका", "dir_lead": "हर iOS ऐप की संरचित जानकारी — फ़ीचर, कीमत और FAQ।"},
+           "dir_dir": "ऐप निर्देशिका", "dir_lead": "हर iOS ऐप की संरचित जानकारी — फ़ीचर, कीमत और FAQ।",
+           "catalog": "सभी सत्यापित ऐप देखें"},
 }
 
 PROFILE_PRICING = {
@@ -697,18 +724,23 @@ def build_locale_index(locale, keys, locales):
         rows.append(f'    <li><a href="{k}.html">{e(name)}</a> — {e(sub[:80])}</li>')
     items = "\n".join(rows)
     dir_attr = ' dir="rtl"' if is_rtl else ""
+    catalog_path = PORTFOLIO_CATALOG_PATHS.get(locale)
+    catalog_link = (
+        f'  <p><a href="{SITE}/{catalog_path}">{e(ui["catalog"])}</a></p>\n'
+        if catalog_path
+        else ""
+    )
     idx = f"""<!DOCTYPE html>
 <html lang="{locale}"{dir_attr}><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(ui["dir_dir"])} | iOS</title>
 <meta name="description" content="{e(ui["dir_lead"])}">
 <link rel="canonical" href="{SITE}/{locale}/index.html">
-{feed_discovery_links()}
 {directory_hreflang_block(locales)}
 </head><body><main>
   <h1>{e(ui["dir_dir"])}</h1>
   <p>{e(ui["dir_lead"])}</p>
-  <ul>
+{catalog_link}  <ul>
 {items}
   </ul>
 </main></body></html>

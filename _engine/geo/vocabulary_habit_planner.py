@@ -25,9 +25,11 @@ SITE = os.environ.get(
 ).rstrip("/")
 SLUG = "private-vocabulary-habit-planner"
 CONTENT_DATE = "2026-07-14"
+TOOL_DATE = "2026-07-15"
 APP_URL = appstore_url("wordmate", "iag_vocab_planner")
 SPACING_SOURCE = "https://pubmed.ncbi.nlm.nih.gov/16719566/"
 RETRIEVAL_SOURCE = "https://pubmed.ncbi.nlm.nih.gov/16507066/"
+WEBMCP_SOURCE = "https://developer.chrome.com/docs/ai/webmcp/imperative-api"
 
 LANGUAGES = [
     ("en", "English", "英文"),
@@ -166,6 +168,13 @@ COPY = {
         ),
         "source_one": "Cepeda et al. — distributed practice meta-analysis",
         "source_two": "Roediger & Karpicke — test-enhanced learning",
+        "webmcp_source": "Chrome WebMCP imperative API",
+        "webmcp_description": (
+            "Build a private vocabulary routine from a supported language, available "
+            "time, weekly frequency, horizon, study mode and goal. Return the same "
+            "evidence-informed starting ceiling and sequence as the visible planner, "
+            "without promising learning outcomes."
+        ),
         "privacy_title": "Privacy by construction",
         "privacy_text": (
             "Selections and results stay in this browser tab. The page has no account, "
@@ -284,6 +293,11 @@ COPY = {
         ),
         "source_one": "Cepeda 等人：分散練習統合分析",
         "source_two": "Roediger 與 Karpicke：測驗促進學習",
+        "webmcp_source": "Chrome WebMCP imperative API",
+        "webmcp_description": (
+            "依支援語言、可用時間、每週頻率、規劃週期、學習狀態與用途建立私密單字計畫；"
+            "回傳與畫面相同、依研究原則設計的起始上限與流程，但不保證學習成果。"
+        ),
         "privacy_title": "從設計上保護隱私",
         "privacy_text": (
             "所有選項與結果只留在目前瀏覽器分頁。本頁沒有帳號、上傳、Cookie、local storage、分析、廣告程式或網路請求；重新載入或關閉頁面就會清除計畫。"
@@ -340,6 +354,64 @@ def select_options(values: list[int], unit: str, selected: int) -> str:
     )
 
 
+def webmcp_languages(locale: str) -> list[dict[str, str]]:
+    name_index = 2 if locale == "zh-Hant" else 1
+    return [
+        {"code": values[0], "name": values[name_index]}
+        for values in LANGUAGES
+    ]
+
+
+def webmcp_input_schema(locale: str) -> dict[str, object]:
+    copy = COPY[locale]
+    mode_values = list(copy["mode_options"])
+    goal_values = list(copy["goal_options"])
+    return {
+        "type": "object",
+        "additionalProperties": False,
+        "required": [
+            "language_code",
+            "minutes_per_session",
+            "sessions_per_week",
+            "horizon_weeks",
+            "study_mode",
+            "primary_goal",
+        ],
+        "properties": {
+            "language_code": {
+                "type": "string",
+                "enum": [code for code, _, _ in LANGUAGES],
+                "description": copy["language"],
+            },
+            "minutes_per_session": {
+                "type": "integer",
+                "enum": [5, 10, 15, 20, 30, 45],
+                "description": copy["minutes"],
+            },
+            "sessions_per_week": {
+                "type": "integer",
+                "enum": [2, 3, 4, 5, 6, 7],
+                "description": copy["sessions"],
+            },
+            "horizon_weeks": {
+                "type": "integer",
+                "enum": [2, 4, 8, 12],
+                "description": copy["horizon"],
+            },
+            "study_mode": {
+                "type": "string",
+                "enum": mode_values,
+                "description": copy["mode"],
+            },
+            "primary_goal": {
+                "type": "string",
+                "enum": goal_values,
+                "description": copy["goal"],
+            },
+        },
+    }
+
+
 def schema(locale: str, copy: dict[str, object]) -> str:
     faq = [
         {
@@ -362,12 +434,13 @@ def schema(locale: str, copy: dict[str, object]) -> str:
                 "isAccessibleForFree": True,
                 "inLanguage": copy["html_lang"],
                 "description": copy["description"],
-                "dateModified": CONTENT_DATE,
+                "dateModified": TOOL_DATE,
                 "featureList": [
                     "Local-only calculation",
                     "Retrieval and spaced-review plan",
                     "Copy, share and print",
                     "No account, upload, storage or analytics",
+                    "Progressive read-only WebMCP planning for supporting browsers",
                 ],
             },
             {
@@ -429,6 +502,7 @@ def render_page(locale: str, *, show_app_cta: bool) -> str:
             "minutes_unit",
             "sessions_unit",
             "weeks_unit",
+            "privacy_text",
         )
     }
     page = r"""<!doctype html>
@@ -555,7 +629,7 @@ footer{padding:30px 0 50px;color:var(--muted);font-size:.9rem}
 </section>
 <section class="wrap card wide research">
   <div><p class="eyebrow">__EVIDENCE_TITLE__</p><p>__EVIDENCE__</p><p><a href="__SPACING_SOURCE__">__SOURCE_ONE__</a><br><a href="__RETRIEVAL_SOURCE__">__SOURCE_TWO__</a></p></div>
-  <div><p class="eyebrow">__PRIVACY_TITLE__</p><p>__PRIVACY_TEXT__</p></div>
+  <div><p class="eyebrow">__PRIVACY_TITLE__</p><p>__PRIVACY_TEXT__</p><p><a href="__WEBMCP_SOURCE_URL__">__WEBMCP_SOURCE__</a></p></div>
 </section>
 __APP_CARD__
 <section class="wrap card wide"><h2 class="one-line">__FAQ_TITLE__</h2>__FAQ_HTML__</section>
@@ -563,6 +637,12 @@ __APP_CARD__
 <footer><div class="wrap">__FOOTER__</div></footer>
 <script>
 const I18N=__JS_COPY__;
+const WEBMCP_INPUT_SCHEMA=__WEBMCP_INPUT_SCHEMA__;
+const WEBMCP_LANGUAGES=__WEBMCP_LANGUAGES__;
+const WEBMCP_MODE_LABELS=__WEBMCP_MODE_LABELS__;
+const WEBMCP_GOAL_LABELS=__WEBMCP_GOAL_LABELS__;
+const WEBMCP_TOOL_DESCRIPTION=__WEBMCP_DESCRIPTION__;
+const WORDMATE_APP_STORE_URL=__APP_STORE_URL__;
 const form=document.getElementById("planner");
 const result=document.getElementById("result");
 const statusNode=document.getElementById("status");
@@ -570,6 +650,63 @@ let plainPlan="";
 function escapeHTML(value){return String(value).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[ch]));}
 function selectedText(id){const node=document.getElementById(id);return node.options[node.selectedIndex].text;}
 function weightsFor(mode){if(mode==="starter")return [30,45,25,.45];if(mode==="review")return [55,20,25,.32];return [45,30,25,.58];}
+function toolValue(input,name){
+  if(!Object.prototype.hasOwnProperty.call(input,name))throw new TypeError(`${name} is required.`);
+  const value=input[name];
+  if(!WEBMCP_INPUT_SCHEMA.properties[name].enum.includes(value))throw new RangeError(`${name} is not a supported value.`);
+  return value;
+}
+async function registerWebMcp(){
+  if(!document.modelContext?.registerTool)return;
+  await document.modelContext.registerTool({
+    name:"build_private_vocabulary_habit_plan",
+    description:WEBMCP_TOOL_DESCRIPTION,
+    inputSchema:WEBMCP_INPUT_SCHEMA,
+    annotations:{readOnlyHint:true,untrustedContentHint:false},
+    execute:async(input)=>{
+      if(input===null||typeof input!=="object"||Array.isArray(input))throw new TypeError("WebMCP input must be an object.");
+      const allowed=new Set(Object.keys(WEBMCP_INPUT_SCHEMA.properties));
+      for(const name of Object.keys(input))if(!allowed.has(name))throw new RangeError(`${name} is not a supported input.`);
+      const languageCode=toolValue(input,"language_code");
+      const minutes=toolValue(input,"minutes_per_session");
+      const sessions=toolValue(input,"sessions_per_week");
+      const horizon=toolValue(input,"horizon_weeks");
+      const mode=toolValue(input,"study_mode");
+      const goal=toolValue(input,"primary_goal");
+      const language=WEBMCP_LANGUAGES.find(item=>item.code===languageCode);
+      const [retrieve,context,correct,factor]=weightsFor(mode);
+      const ceiling=Math.max(2,Math.min(24,Math.round(minutes*factor)));
+      return JSON.stringify({
+        result_type:"private_vocabulary_habit_plan",
+        language_code:languageCode,
+        language_name:language.name,
+        study_mode:mode,
+        study_mode_label:WEBMCP_MODE_LABELS[mode],
+        primary_goal:goal,
+        primary_goal_label:WEBMCP_GOAL_LABELS[goal],
+        weekly_practice_minutes:minutes*sessions,
+        sessions_per_week:sessions,
+        horizon_weeks:horizon,
+        starting_new_card_ceiling_per_session:ceiling,
+        ceiling_boundary:I18N.not_target,
+        session_mix_percent:{
+          closed_book_retrieval:retrieve,
+          new_words_in_context:context,
+          correction_and_spoken_replay:correct
+        },
+        weekly_sequence:Array.from({length:sessions},(_,index)=>({
+          session:index+1,
+          focus:I18N.roles[Math.min(index,I18N.roles.length-1)]
+        })),
+        practice_steps:I18N.steps,
+        repeat_note:I18N.repeat_note,
+        privacy_boundary:I18N.privacy_text,
+        evidence_sources:["__SPACING_SOURCE__","__RETRIEVAL_SOURCE__"],
+        wordmate_app_store_url:WORDMATE_APP_STORE_URL||null
+      });
+    }
+  });
+}
 function buildPlan(event){
   if(event)event.preventDefault();
   const language=selectedText("language");
@@ -621,6 +758,7 @@ document.getElementById("copy-plan").addEventListener("click",copyPlan);
 document.getElementById("share-plan").addEventListener("click",sharePlan);
 document.getElementById("print-plan").addEventListener("click",()=>window.print());
 buildPlan();
+registerWebMcp().catch(error=>console.error("WebMCP tool registration failed.",error));
 </script>
 </body>
 </html>
@@ -682,6 +820,8 @@ buildPlan();
         "__RETRIEVAL_SOURCE__": RETRIEVAL_SOURCE,
         "__SOURCE_ONE__": esc(copy["source_one"]),
         "__SOURCE_TWO__": esc(copy["source_two"]),
+        "__WEBMCP_SOURCE_URL__": WEBMCP_SOURCE,
+        "__WEBMCP_SOURCE__": esc(copy["webmcp_source"]),
         "__PRIVACY_TITLE__": esc(copy["privacy_title"]),
         "__PRIVACY_TEXT__": esc(copy["privacy_text"]),
         "__APP_CARD__": app_card,
@@ -689,6 +829,33 @@ buildPlan();
         "__FAQ_HTML__": faq_html,
         "__FOOTER__": esc(copy["footer"]),
         "__JS_COPY__": json.dumps(js_copy, ensure_ascii=False, separators=(",", ":")),
+        "__WEBMCP_INPUT_SCHEMA__": json.dumps(
+            webmcp_input_schema(locale),
+            ensure_ascii=False,
+            separators=(",", ":"),
+        ),
+        "__WEBMCP_LANGUAGES__": json.dumps(
+            webmcp_languages(locale),
+            ensure_ascii=False,
+            separators=(",", ":"),
+        ),
+        "__WEBMCP_MODE_LABELS__": json.dumps(
+            copy["mode_options"],
+            ensure_ascii=False,
+            separators=(",", ":"),
+        ),
+        "__WEBMCP_GOAL_LABELS__": json.dumps(
+            copy["goal_options"],
+            ensure_ascii=False,
+            separators=(",", ":"),
+        ),
+        "__WEBMCP_DESCRIPTION__": json.dumps(
+            copy["webmcp_description"],
+            ensure_ascii=False,
+        ),
+        "__APP_STORE_URL__": json.dumps(
+            APP_URL if show_app_cta else "",
+        ),
     }
     for marker, value in replacements.items():
         page = page.replace(marker, value)

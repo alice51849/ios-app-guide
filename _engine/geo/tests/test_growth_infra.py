@@ -11197,6 +11197,13 @@ class GeneratorTests(unittest.TestCase):
             )
             english = english_path.read_text(encoding="utf-8")
             chinese = chinese_path.read_text(encoding="utf-8")
+            graph = json.loads(
+                re.search(
+                    r'<script type="application/ld\+json">(.*?)</script>',
+                    english,
+                    flags=re.S,
+                ).group(1)
+            )["@graph"]
             stable_mtime = 1_700_000_000_000_000_000
             os.utime(english_path, ns=(stable_mtime, stable_mtime))
             first_bytes = english_path.read_bytes()
@@ -11212,6 +11219,16 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("navigator.clipboard.writeText", english)
         self.assertIn("navigator.share", english)
         self.assertIn("window.print()", english)
+        self.assertIn("document.modelContext?.registerTool", english)
+        self.assertIn(
+            'name:"build_private_vocabulary_habit_plan"',
+            english,
+        )
+        self.assertIn(
+            "annotations:{readOnlyHint:true,untrustedContentHint:false}",
+            english,
+        )
+        self.assertIn(vocabulary_habit_planner.WEBMCP_SOURCE, english)
         self.assertNotIn("fetch(", english)
         self.assertNotIn("XMLHttpRequest", english)
         self.assertNotIn("localStorage", english)
@@ -11229,12 +11246,48 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("私密單字習慣規劃器", chinese)
         self.assertIn("不保證學會固定字數", chinese)
         self.assertIn("沒有適合所有人的唯一完美排程", chinese)
+        web_app = next(
+            item for item in graph if item["@type"] == "WebApplication"
+        )
+        self.assertEqual(
+            vocabulary_habit_planner.TOOL_DATE,
+            web_app["dateModified"],
+        )
+        tool_schema = vocabulary_habit_planner.webmcp_input_schema("en")
+        self.assertFalse(tool_schema["additionalProperties"])
+        self.assertEqual(
+            [
+                "language_code",
+                "minutes_per_session",
+                "sessions_per_week",
+                "horizon_weeks",
+                "study_mode",
+                "primary_goal",
+            ],
+            tool_schema["required"],
+        )
+        self.assertEqual(
+            44,
+            len(tool_schema["properties"]["language_code"]["enum"]),
+        )
+        self.assertEqual(
+            [5, 10, 15, 20, 30, 45],
+            tool_schema["properties"]["minutes_per_session"]["enum"],
+        )
+        self.assertEqual(
+            44,
+            len(vocabulary_habit_planner.webmcp_languages("en")),
+        )
         inactive = vocabulary_habit_planner.render_page(
             "en",
             show_app_cta=False,
         )
         self.assertNotIn("apps.apple.com/app/id6789917808", inactive)
         self.assertNotIn('class="card app-card', inactive)
+        self.assertIn(
+            'const WORDMATE_APP_STORE_URL="";',
+            inactive,
+        )
 
     def test_wordmate_answer_leads_with_free_private_planner(self):
         question = (

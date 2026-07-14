@@ -11506,6 +11506,18 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn('id="device"', english)
         self.assertIn("navigator.share", english)
         self.assertIn("navigator.clipboard.writeText", english)
+        self.assertIn("document.modelContext?.registerTool", english)
+        self.assertIn('name:"find_verified_ios_apps"', english)
+        self.assertIn(
+            "annotations:{readOnlyHint:true,untrustedContentHint:false}",
+            english,
+        )
+        self.assertIn(
+            "alphabetical_by_app_name_not_a_ranking",
+            english,
+        )
+        self.assertIn(answer_portfolio.WEBMCP_SOURCE, english)
+        self.assertNotIn("origin-trial", english.casefold())
         self.assertNotIn("fetch(", english)
         self.assertNotIn("XMLHttpRequest", english)
         self.assertNotIn("localStorage", english)
@@ -11527,6 +11539,53 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(
             "https://apps.apple.com/app/id6780575828",
             snapport["canonical_app_store_url"],
+        )
+        tool_schema = portfolio_app_finder.webmcp_input_schema(
+            "en",
+            data["apps"],
+        )
+        self.assertFalse(tool_schema["additionalProperties"])
+        self.assertEqual(
+            ["education", "photo-utility"],
+            tool_schema["properties"]["category"]["enum"],
+        )
+        self.assertEqual(
+            ["one_time", "paid_upfront"],
+            tool_schema["properties"]["purchase_model"]["enum"],
+        )
+        self.assertEqual(
+            [
+                "no_account",
+                "no_ads",
+                "no_tracking",
+                "private_or_on_device",
+            ],
+            tool_schema["properties"]["privacy_fact"]["enum"],
+        )
+        self.assertEqual(
+            ["apple_watch", "widget"],
+            tool_schema["properties"]["device_surface"]["enum"],
+        )
+        no_capabilities = [
+            {
+                **record,
+                "capabilities": {
+                    key: False for key in record["capabilities"]
+                },
+            }
+            for record in data["apps"]
+        ]
+        minimal_tool_schema = portfolio_app_finder.webmcp_input_schema(
+            "en",
+            no_capabilities,
+        )
+        self.assertNotIn(
+            "privacy_fact",
+            minimal_tool_schema["properties"],
+        )
+        self.assertNotIn(
+            "device_surface",
+            minimal_tool_schema["properties"],
         )
 
         from jsonschema import Draft202012Validator, FormatChecker

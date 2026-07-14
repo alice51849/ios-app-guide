@@ -112,6 +112,16 @@ UI = {
         "apple_source": "Apple campaign-link guidance",
         "google_source": "Google software-app structured data",
         "schema_source": "Schema.org ItemList",
+        "webmcp_source": "Chrome WebMCP imperative API",
+        "webmcp_description": (
+            "Filter the verified live iOS app portfolio by task and published "
+            "facts. Return alphabetical matches with truthful fit text and one "
+            "attributed App Store URL per result; never treat the order as a ranking."
+        ),
+        "webmcp_query_description": (
+            "Plain-language task or feature, such as passport photo, kids math, "
+            "offline scan, travel plan or sleep."
+        ),
         "license_text": (
             "CC BY 4.0 covers this original catalogue compilation, not Apple or app trademarks."
         ),
@@ -195,6 +205,14 @@ UI = {
         "apple_source": "Apple campaign link 指南",
         "google_source": "Google 軟體 App 結構化資料",
         "schema_source": "Schema.org ItemList",
+        "webmcp_source": "Chrome WebMCP imperative API",
+        "webmcp_description": (
+            "依任務與公開事實篩選已驗證上架的 iOS App；回傳依名稱排序的符合項目、"
+            "真實適用原因及每筆一個可歸因 App Store 網址，不得把順序視為排名。"
+        ),
+        "webmcp_query_description": (
+            "以白話描述任務或功能，例如證件照、兒童數學、離線掃描、旅遊規劃或睡眠。"
+        ),
         "license_text": "CC BY 4.0 僅涵蓋這份原創目錄彙編，不涵蓋 Apple 或各 App 商標。",
         "faq_title": "常見問題",
         "index_title": "隱私優先、一次買斷 iPhone App 篩選器",
@@ -607,6 +625,7 @@ def structured_data(
                     "Alphabetical results without ranking",
                     "Verified live App Store portfolio",
                     "No account, submission, storage or analytics",
+                    "Progressive read-only WebMCP tool for supporting browsers",
                 ],
             },
             {
@@ -633,6 +652,75 @@ def category_options(locale: str, records: list[dict[str, object]]) -> str:
         "</option>"
         for category in categories
     )
+
+
+def webmcp_input_schema(
+    locale: str,
+    records: list[dict[str, object]],
+) -> dict[str, object]:
+    copy = UI[locale]
+    categories = sorted({record["category"] for record in records})
+    purchase_models = sorted(
+        {record["purchase_model"] for record in records}
+    )
+    privacy_facts = sorted(
+        {
+            key
+            for record in records
+            for key, enabled in record["capabilities"].items()
+            if enabled
+            and key
+            in {
+                "offline",
+                "no_account",
+                "no_ads",
+                "no_tracking",
+                "private_or_on_device",
+            }
+        }
+    )
+    device_surfaces = sorted(
+        {
+            key
+            for record in records
+            for key in ("widget", "apple_watch")
+            if record["capabilities"][key]
+        }
+    )
+    properties = {
+        "query": {
+            "type": "string",
+            "maxLength": 120,
+            "description": copy["webmcp_query_description"],
+        },
+        "category": {
+            "type": "string",
+            "enum": categories,
+            "description": copy["category"],
+        },
+        "purchase_model": {
+            "type": "string",
+            "enum": ["one_time", *purchase_models],
+            "description": copy["purchase"],
+        },
+    }
+    if privacy_facts:
+        properties["privacy_fact"] = {
+            "type": "string",
+            "enum": privacy_facts,
+            "description": copy["privacy"],
+        }
+    if device_surfaces:
+        properties["device_surface"] = {
+            "type": "string",
+            "enum": device_surfaces,
+            "description": copy["device"],
+        }
+    return {
+        "type": "object",
+        "additionalProperties": False,
+        "properties": properties,
+    }
 
 
 def app_cards(
@@ -776,12 +864,14 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{ou
 <section class="wrap results" id="results">__APP_CARDS__</section>
 <section class="wrap two"><article class="card"><h2>__METHOD_TITLE__</h2><ul class="list">__METHOD__</ul></article><article class="card"><h2>__BOUNDARIES_TITLE__</h2><ul class="list">__BOUNDARIES__</ul></article></section>
 <section class="wrap card"><h2>__DATA_TITLE__</h2><p>__DATA_TEXT__</p><div class="actions"><a class="download" href="__DATA_URL__" download>__DOWNLOAD_JSON__</a><a class="download" href="__SCHEMA_URL__">__DOWNLOAD_SCHEMA__</a><button id="copy" type="button">__COPY__</button><button id="share" type="button">__SHARE__</button></div><p class="status" id="share-status" role="status"></p></section>
-<section class="wrap card source"><h2>__SOURCES_TITLE__</h2><p>__SOURCES_TEXT__</p><p><a href="__APPLE_SOURCE_URL__">__APPLE_SOURCE__</a> · <a href="__GOOGLE_SOURCE_URL__">__GOOGLE_SOURCE__</a> · <a href="__SCHEMA_SOURCE_URL__">__SCHEMA_SOURCE__</a> · <a href="__LICENSE_URL__">CC BY 4.0</a></p><p>__LICENSE_TEXT__</p></section>
+<section class="wrap card source"><h2>__SOURCES_TITLE__</h2><p>__SOURCES_TEXT__</p><p><a href="__APPLE_SOURCE_URL__">__APPLE_SOURCE__</a> · <a href="__GOOGLE_SOURCE_URL__">__GOOGLE_SOURCE__</a> · <a href="__SCHEMA_SOURCE_URL__">__SCHEMA_SOURCE__</a> · <a href="__WEBMCP_SOURCE_URL__">__WEBMCP_SOURCE__</a> · <a href="__LICENSE_URL__">CC BY 4.0</a></p><p>__LICENSE_TEXT__</p></section>
 <section class="wrap card"><h2>__FAQ_TITLE__</h2>__FAQ__</section>
 </main>
 <footer><div class="wrap">__FOOTER__</div></footer>
 <script>
 const I18N=__JS_COPY__;
+const WEBMCP_INPUT_SCHEMA=__WEBMCP_INPUT_SCHEMA__;
+const WEBMCP_TOOL_DESCRIPTION=__WEBMCP_DESCRIPTION__;
 const cards=[...document.querySelectorAll("[data-app-card]")];
 const fields=["search","category","purchase","privacy","device"].map(id=>document.getElementById(id));
 const count=document.getElementById("result-count");
@@ -795,13 +885,52 @@ function update(){
   const privacy=fields[3].value;
   const device=fields[4].value;
   let shown=0;
+  const matches=[];
   for(const card of cards){
     const purchaseMatch=!purchase||(purchase==="one_time"?card.dataset.oneTime==="true":card.dataset.purchase===purchase);
     const visible=(!query||card.dataset.search.includes(query))&&(!category||card.dataset.category===category)&&purchaseMatch&&(!privacy||tokens(card.dataset.privacy).includes(privacy))&&(!device||tokens(card.dataset.device).includes(device));
-    card.hidden=!visible;if(visible)shown++;
+    card.hidden=!visible;if(visible){shown++;matches.push(card);}
   }
   count.textContent=I18N.count.replace("{shown}",String(shown)).replace("{total}",String(cards.length));
   empty.textContent=I18N.empty;empty.hidden=shown!==0;
+  return matches;
+}
+function toolText(input,name){const value=input[name];if(value===undefined)return"";if(typeof value!=="string")throw new TypeError(`${name} must be a string.`);return value;}
+function toolSelectValue(field,value,name){if(!value)return"";if(![...field.options].some(option=>option.value===value))throw new RangeError(`${name} is not a supported filter value.`);return value;}
+async function registerWebMcp(){
+  if(!document.modelContext?.registerTool)return;
+  await document.modelContext.registerTool({
+    name:"find_verified_ios_apps",
+    description:WEBMCP_TOOL_DESCRIPTION,
+    inputSchema:WEBMCP_INPUT_SCHEMA,
+    annotations:{readOnlyHint:true,untrustedContentHint:false},
+    execute:async(input={})=>{
+      if(input===null||typeof input!=="object"||Array.isArray(input))throw new TypeError("WebMCP input must be an object.");
+      const query=toolText(input,"query");
+      if(query.length>120)throw new RangeError("query exceeds 120 characters.");
+      const category=toolSelectValue(fields[1],toolText(input,"category"),"category");
+      const purchase=toolSelectValue(fields[2],toolText(input,"purchase_model"),"purchase_model");
+      const privacy=toolSelectValue(fields[3],toolText(input,"privacy_fact"),"privacy_fact");
+      const device=toolSelectValue(fields[4],toolText(input,"device_surface"),"device_surface");
+      fields[0].value=query;
+      fields[1].value=category;
+      fields[2].value=purchase;
+      fields[3].value=privacy;
+      fields[4].value=device;
+      const matches=update();
+      document.getElementById("results").scrollIntoView({block:"start"});
+      return JSON.stringify({
+        result_type:"verified_ios_app_matches",
+        ordering:"alphabetical_by_app_name_not_a_ranking",
+        match_count:matches.length,
+        matches:matches.map(card=>({
+          name:card.querySelector("h2").textContent.trim(),
+          why_it_may_fit:card.querySelector(".why").textContent.trim(),
+          app_store_url:card.querySelector(".store").href
+        }))
+      });
+    }
+  });
 }
 async function copyLink(){try{await navigator.clipboard.writeText("__CANONICAL__");shareStatus.textContent=I18N.copied;}catch(error){shareStatus.textContent=I18N.copy_failed;}}
 async function shareLink(){if(navigator.share){try{await navigator.share({title:document.title,url:"__CANONICAL__"});return;}catch(error){if(error&&error.name==="AbortError"){shareStatus.textContent=I18N.share_cancelled;return;}}}await copyLink();}
@@ -810,6 +939,7 @@ document.getElementById("clear").addEventListener("click",()=>{for(const field o
 document.getElementById("copy").addEventListener("click",copyLink);
 document.getElementById("share").addEventListener("click",shareLink);
 update();
+registerWebMcp().catch(error=>console.error("WebMCP tool registration failed.",error));
 </script>
 </body></html>
 """
@@ -881,12 +1011,23 @@ update();
         "__GOOGLE_SOURCE__": html.escape(copy["google_source"]),
         "__SCHEMA_SOURCE_URL__": answer_portfolio.SCHEMA_ITEM_LIST_SOURCE,
         "__SCHEMA_SOURCE__": html.escape(copy["schema_source"]),
+        "__WEBMCP_SOURCE_URL__": answer_portfolio.WEBMCP_SOURCE,
+        "__WEBMCP_SOURCE__": html.escape(copy["webmcp_source"]),
         "__LICENSE_URL__": LICENSE_URL,
         "__LICENSE_TEXT__": html.escape(copy["license_text"]),
         "__FAQ_TITLE__": html.escape(copy["faq_title"]),
         "__FAQ__": faq,
         "__FOOTER__": html.escape(copy["footer"]),
         "__JS_COPY__": js_copy,
+        "__WEBMCP_INPUT_SCHEMA__": json.dumps(
+            webmcp_input_schema(locale, records),
+            ensure_ascii=False,
+            separators=(",", ":"),
+        ),
+        "__WEBMCP_DESCRIPTION__": json.dumps(
+            copy["webmcp_description"],
+            ensure_ascii=False,
+        ),
     }
     for marker, value in replacements.items():
         page = page.replace(marker, value)

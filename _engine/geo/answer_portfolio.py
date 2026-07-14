@@ -16,6 +16,7 @@ GOOGLE_SCHEMA_SOURCE = (
     "structured-data/software-app"
 )
 SCHEMA_ITEM_LIST_SOURCE = "https://schema.org/ItemList"
+WEBMCP_SOURCE = "https://developer.chrome.com/docs/ai/webmcp/imperative-api"
 
 COPY = {
     "en": {
@@ -36,6 +37,7 @@ COPY = {
             "Filters use the maintained product registry: category, plain-language purpose, purchase model and explicitly stated capabilities.",
             "Results are alphabetical, not scored, sponsored or ordered by an invented popularity signal.",
             "Each result has one direct App Store link with an Apple campaign token for aggregate acquisition attribution.",
+            "Supporting browser previews can expose the same read-only filters to an AI agent through WebMCP; every other browser keeps the complete human interface.",
         ],
         "boundaries_title": "What this finder does not claim",
         "boundaries": [
@@ -43,6 +45,7 @@ COPY = {
             "Privacy filters only match facts stated in the maintained listing data; absence of a badge is not a negative claim.",
             "App Store availability, compatibility and local pricing can change, so the current listing remains the final source before purchase.",
             "Filtering runs in the browser and does not submit, save or analyse the visitor's choices.",
+            "WebMCP is a progressive preview integration, so its absence never blocks or changes the human finder.",
         ],
         "faqs": [
             (
@@ -71,6 +74,7 @@ COPY = {
             "篩選依據來自維護中的產品資料：類別、白話用途、購買模式與明確列出的功能。",
             "結果依名稱排序，不計分、不接受贊助，也不使用虛構的熱門程度。",
             "每筆結果只有一個 App Store 直連，並使用 Apple campaign token 進行彙總下載歸因。",
+            "支援中的瀏覽器預覽版可透過 WebMCP，讓 AI agent 使用相同的唯讀篩選；其他瀏覽器仍保留完整的人類操作介面。",
         ],
         "boundaries_title": "本工具不會做的宣稱",
         "boundaries": [
@@ -78,6 +82,7 @@ COPY = {
             "隱私篩選只比對維護資料中明確寫出的事實；沒有徽章不代表負面判斷。",
             "App Store 供應、相容性與當地價格可能變動，購買前仍應以目前上架頁面為準。",
             "所有篩選只在瀏覽器執行，不送出、不儲存，也不分析訪客選項。",
+            "WebMCP 是漸進式預覽整合；即使瀏覽器不支援，也不會阻擋或改變人類使用的篩選器。",
         ],
         "faqs": [
             (

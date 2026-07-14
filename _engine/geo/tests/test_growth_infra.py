@@ -43,6 +43,7 @@ import appstore_live
 import build_pages
 import build_pages_i18n
 import cleanup_localized_assets
+import document_scan_planner
 import ensure_live_guides
 import family_travel_dataset
 import family_travel_mission_cards
@@ -11173,6 +11174,99 @@ class GeneratorTests(unittest.TestCase):
             inactive,
         )
 
+    def test_document_scan_planner_is_private_bilingual_and_non_certifying(self):
+        english = document_scan_planner.render_page("en", app_public=False)
+        chinese = document_scan_planner.render_page(
+            "zh-Hant",
+            app_public=False,
+        )
+        public = document_scan_planner.render_page("en", app_public=True)
+        for page in (english, chinese):
+            self.assertIn('"@type":"WebApplication"', page)
+            self.assertIn('"dateModified":"2026-07-15"', page)
+            self.assertIn("A4 · 210×297 mm", page)
+            self.assertIn("300 ppi", page)
+            self.assertIn("400 ppi", page)
+            self.assertIn("600 ppi", page)
+            self.assertIn("document.modelContext?.registerTool", page)
+            self.assertIn('name: "plan_private_document_scan"', page)
+            self.assertIn(
+                "annotations: {readOnlyHint: true, untrustedContentHint: false}",
+                page,
+            )
+            self.assertIn("document_not_received_or_processed: true", page)
+            self.assertIn("not_ocr_or_compliance_certification: true", page)
+            self.assertIn(document_scan_planner.NARA_STANDARD, page)
+            self.assertIn(document_scan_planner.FADGI_GUIDELINES, page)
+            self.assertIn(document_scan_planner.NARA_OCR, page)
+            self.assertIn(document_scan_planner.WEBMCP_SOURCE, page)
+            self.assertNotIn('type="file"', page)
+            self.assertNotIn("fetch(", page)
+            self.assertNotIn("XMLHttpRequest", page)
+            self.assertNotIn("localStorage", page)
+            self.assertNotIn("origin-trial", page.lower())
+            self.assertNotIn("navigator.modelContext", page)
+            self.assertNotIn(f"id{document_scan_planner.APP_ID}", page)
+        self.assertIn("不估算壓縮後檔案大小", chinese)
+        self.assertIn("OCR 不一定準確", chinese)
+        self.assertIn(f"id{document_scan_planner.APP_ID}", public)
+        schema = document_scan_planner.webmcp_input_schema("en")
+        self.assertFalse(schema["additionalProperties"])
+        self.assertEqual(
+            ["a4", "a5", "us-letter", "us-legal"],
+            schema["properties"]["paper"]["enum"],
+        )
+        self.assertEqual(
+            ["everyday-text", "small-print", "fine-detail"],
+            schema["properties"]["purpose"]["enum"],
+        )
+        self.assertEqual(
+            ["grayscale", "rgb"],
+            schema["properties"]["color_mode"]["enum"],
+        )
+        self.assertEqual(1, schema["properties"]["page_count"]["minimum"])
+        self.assertEqual(100, schema["properties"]["page_count"]["maximum"])
+        self.assertLess(
+            english.index("optional_free_planner: config.freeTool"),
+            english.index("official_sources: config.officialSources"),
+        )
+        self.assertLess(
+            english.index("official_sources: config.officialSources"),
+            english.index("result.optional_scanto_pro = config.optionalApp"),
+        )
+
+    def test_document_scan_planner_builds_both_pages_and_is_idempotent(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            tools = pages / "tools"
+            tools.mkdir()
+            (tools / "index.html").write_text(
+                '<main><section class="wrap grid"></section></main>',
+                encoding="utf-8",
+            )
+            urls = document_scan_planner.build(pages, app_public=False)
+            self.assertEqual(2, len(urls))
+            english = tools / f"{document_scan_planner.SLUG}.html"
+            chinese = (
+                pages
+                / "zh-Hant"
+                / "tools"
+                / f"{document_scan_planner.SLUG}.html"
+            )
+            self.assertTrue(english.exists())
+            self.assertTrue(chinese.exists())
+            index = (tools / "index.html").read_text(encoding="utf-8")
+            self.assertEqual(
+                1,
+                index.count(f"{document_scan_planner.SLUG}.html"),
+            )
+            stable_mtime = 1_700_000_000_000_000_000
+            os.utime(english, ns=(stable_mtime, stable_mtime))
+            first_bytes = english.read_bytes()
+            document_scan_planner.build(pages, app_public=False)
+            self.assertEqual(first_bytes, english.read_bytes())
+            self.assertEqual(stable_mtime, english.stat().st_mtime_ns)
+
     def test_passport_print_answer_leads_with_free_private_tool(self):
         question = (
             "How can I arrange passport photos on a 4x6 print sheet without "
@@ -13723,6 +13817,7 @@ class GeneratorTests(unittest.TestCase):
             "- name: Materialize newly live app surfaces", 1
         )[1].split("- name: Verify zero-cost growth infrastructure", 1)[0]
         self.assertNotIn("passport_photo_print_sheet.py", materialize_block)
+        self.assertNotIn("document_scan_planner.py", materialize_block)
         self.assertNotIn("vocabulary_habit_planner.py", materialize_block)
         availability_block = workflow.split(
             "- name: Refresh verified App Store availability once", 1
@@ -13739,6 +13834,10 @@ class GeneratorTests(unittest.TestCase):
             availability_block.index("refresh=True"),
             availability_block.index("passport_photo_print_sheet.py"),
         )
+        self.assertLess(
+            availability_block.index("refresh=True"),
+            availability_block.index("document_scan_planner.py"),
+        )
         self.assertNotIn("gen_sitemap_lastmod.py", materialize_block)
         self.assertIn("zhuyin_picture_book_club_kit.py", workflow)
         self.assertIn("zhuyin_parent_teacher_handoff_kit.py", workflow)
@@ -13749,12 +13848,17 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_mini_reader.py", workflow)
         self.assertIn("zhuyin_story_sequence_cards.py", workflow)
         self.assertEqual(1, workflow.count("passport_photo_print_sheet.py"))
+        self.assertEqual(1, workflow.count("document_scan_planner.py"))
         self.assertEqual(1, workflow.count("vocabulary_habit_planner.py"))
         self.assertEqual(1, workflow.count("wordmate_language_support.py"))
         self.assertEqual(1, workflow.count("portfolio_app_finder.py"))
         self.assertLess(
             workflow.index("refresh=True"),
             workflow.index("passport_photo_print_sheet.py"),
+        )
+        self.assertLess(
+            workflow.index("refresh=True"),
+            workflow.index("document_scan_planner.py"),
         )
         self.assertLess(
             workflow.index("refresh=True"),
@@ -13990,6 +14094,7 @@ class GeneratorTests(unittest.TestCase):
         publish = (Path(GEO) / "publish.py").read_text(encoding="utf-8")
         self.assertNotIn("reset --hard", publish)
         self.assertIn("passport_photo_print_sheet.py", publish)
+        self.assertIn("document_scan_planner.py", publish)
         self.assertIn("vocabulary_habit_planner.py", publish)
         self.assertIn("wordmate_language_support.py", publish)
         self.assertIn("portfolio_app_finder.py", publish)

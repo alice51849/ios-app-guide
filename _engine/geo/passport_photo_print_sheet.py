@@ -25,6 +25,8 @@ SITE = os.environ.get(
 ).rstrip("/")
 SLUG = "private-passport-photo-print-sheet-maker"
 CONTENT_DATE = "2026-07-14"
+TOOL_DATE = "2026-07-15"
+WEBMCP_SOURCE = "https://developer.chrome.com/docs/ai/webmcp/imperative-api"
 US_SOURCE = "https://travel.state.gov/en/passports/apply/help/photos.html"
 UK_SOURCE = "https://www.gov.uk/photos-for-passports/photo-requirements"
 CANADA_SOURCE = (
@@ -175,6 +177,40 @@ COPY = {
             "official page for the exact application route before taking, editing, "
             "printing or submitting a photo."
         ),
+        "webmcp_source": (
+            "Chrome WebMCP imperative API preview (subject to change)"
+        ),
+        "webmcp_description": (
+            "Calculate a private 300 DPI passport photo print-sheet layout from "
+            "bounded dimensions without reading or processing a photo, uploading "
+            "data, scoring biometrics or predicting acceptance."
+        ),
+        "webmcp_photo_boundary": (
+            "This agent tool accepts dimensions only. It cannot receive, inspect, "
+            "upload, store or analyze a photo."
+        ),
+        "webmcp_layout_boundary": (
+            "Layout calculation only; not a biometric, compliance or acceptance check."
+        ),
+        "preset_caveats": {
+            "us": (
+                "The preset encodes the final 2×2 inch size only. Check the current "
+                "official page for pose, head size, background, lighting, recency "
+                "and digital-alteration rules."
+            ),
+            "uk": (
+                "UK printed photos must meet a professional standard, have no border "
+                "and not be cut down from a larger picture."
+            ),
+            "canada": (
+                "Canada requires passport photos to be taken in person by a commercial "
+                "photographer or studio; this preset is a dimension reference only."
+            ),
+            "custom": (
+                "Custom dimensions are user supplied and are not mapped to an official "
+                "document requirement."
+            ),
+        },
         "faq": [
             (
                 "Does my photo upload to this website?",
@@ -307,6 +343,30 @@ COPY = {
             "預設只代表最終實體尺寸。拍攝、編修、列印或送件前，"
             "務必依申請方式閱讀最新官方頁面。"
         ),
+        "webmcp_source": "Chrome WebMCP 命令式 API 預覽（規格可能變動）",
+        "webmcp_description": (
+            "只用有界尺寸計算私密的 300 DPI 護照照片列印排版；不讀取或處理照片、"
+            "不上傳資料、不評分生物特徵，也不預測是否受理。"
+        ),
+        "webmcp_photo_boundary": (
+            "此 agent 工具只接受尺寸，不能接收、檢視、上傳、儲存或分析照片。"
+        ),
+        "webmcp_layout_boundary": (
+            "只計算列印排版；不做生物特徵、規範符合性或受理檢查。"
+        ),
+        "preset_caveats": {
+            "us": (
+                "預設只編入 2×2 吋成品尺寸；姿勢、頭部比例、背景、光線、"
+                "拍攝日期與數位修改規則仍須查看最新官方頁面。"
+            ),
+            "uk": (
+                "英國紙本護照照片須達專業列印品質、無邊框，且不可由較大照片裁切。"
+            ),
+            "canada": (
+                "加拿大要求由商業攝影師或攝影工作室當面拍攝；此預設只能作尺寸參考。"
+            ),
+            "custom": "自訂尺寸由使用者提供，未對應任何官方證件規定。",
+        },
         "faq": [
             (
                 "照片會上傳到這個網站嗎？",
@@ -370,6 +430,70 @@ def _options(values: dict[str, str]) -> str:
     )
 
 
+def webmcp_input_schema(locale: str) -> dict[str, object]:
+    if locale not in COPY:
+        raise ValueError(f"unsupported locale: {locale}")
+    return {
+        "type": "object",
+        "properties": {
+            "preset": {
+                "type": "string",
+                "enum": list(COPY[locale]["preset_options"]),
+                "description": (
+                    "Final photo-size preset. custom requires both custom dimensions."
+                ),
+            },
+            "paper": {
+                "type": "string",
+                "enum": list(PAPERS),
+            },
+            "orientation": {
+                "type": "string",
+                "enum": list(COPY[locale]["orientation_options"]),
+            },
+            "margin_mm": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 20,
+            },
+            "gap_mm": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 10,
+            },
+            "custom_width_mm": {
+                "type": "number",
+                "minimum": 20,
+                "maximum": 100,
+            },
+            "custom_height_mm": {
+                "type": "number",
+                "minimum": 20,
+                "maximum": 100,
+            },
+        },
+        "required": [
+            "preset",
+            "paper",
+            "orientation",
+            "margin_mm",
+            "gap_mm",
+        ],
+        "allOf": [
+            {
+                "if": {
+                    "properties": {"preset": {"const": "custom"}},
+                    "required": ["preset"],
+                },
+                "then": {
+                    "required": ["custom_width_mm", "custom_height_mm"],
+                },
+            }
+        ],
+        "additionalProperties": False,
+    }
+
+
 def render_page(locale: str, show_app_cta: bool) -> str:
     if locale not in COPY:
         raise ValueError(f"unsupported locale: {locale}")
@@ -381,6 +505,43 @@ def render_page(locale: str, show_app_cta: bool) -> str:
     home = f"{SITE}/{home_prefix}index.html"
     tools = f"{SITE}/{home_prefix}tools/index.html"
     app_campaign = f"{APP_URL}?ct=iag_passport_print_sheet_{locale.lower()}"
+    related_resources = [
+        {
+            "label": label,
+            "url": f"{SITE}/{home_prefix}tools/{href}",
+        }
+        for label, href in t["related_links"]
+    ]
+    webmcp_config = {
+        "locale": locale,
+        "input_schema": webmcp_input_schema(locale),
+        "description": t["webmcp_description"],
+        "presets": PRESETS,
+        "papers": PAPERS,
+        "preset_labels": t["preset_options"],
+        "paper_labels": t["paper_options"],
+        "orientation_labels": t["orientation_options"],
+        "preset_caveats": t["preset_caveats"],
+        "print_checks": t["warnings"][:4],
+        "photo_boundary": t["webmcp_photo_boundary"],
+        "layout_boundary": t["webmcp_layout_boundary"],
+        "free_tool": {
+            "label": t["heading"],
+            "url": url,
+            "privacy": t["privacy"],
+            "scope": t["scope"],
+        },
+        "related_free_resources": related_resources,
+        "webmcp_source": WEBMCP_SOURCE,
+        "snapport_app_store_url": app_campaign if show_app_cta else "",
+        "snapport_label": t["app_cta"],
+        "snapport_boundary": t["app_text"],
+    }
+    webmcp_json = json.dumps(
+        webmcp_config,
+        ensure_ascii=False,
+        separators=(",", ":"),
+    ).replace("</", "<\\/")
     app_cta = ""
     if show_app_cta:
         app_cta = (
@@ -397,7 +558,7 @@ def render_page(locale: str, show_app_cta: bool) -> str:
         "url": url,
         "inLanguage": locale,
         "datePublished": CONTENT_DATE,
-        "dateModified": CONTENT_DATE,
+        "dateModified": TOOL_DATE,
         "applicationCategory": "MultimediaApplication",
         "operatingSystem": "Any",
         "browserRequirements": (
@@ -535,12 +696,13 @@ def render_page(locale: str, show_app_cta: bool) -> str:
 </div><div class="preview"><div class="canvas-shell"><canvas id="sheet" width="1200" height="1800" aria-label="{html.escape(t["heading"])}"></canvas></div></div></div></section>
 <section class="content-grid wrap"><article class="content-card warn full"><h2>{html.escape(t["warning_title"])}</h2><ul>{warnings}</ul></article><article class="content-card full"><h2>{html.escape(t["related_title"])}</h2><ul>{related}</ul></article></section>
 {app_cta}
-<section class="sources wrap"><h2>{html.escape(t["sources"])}</h2><ul>{sources}</ul><p>{html.escape(t["source_note"])}</p><div class="faq-list">{faq}</div></section>
+<section class="sources wrap"><h2>{html.escape(t["sources"])}</h2><ul>{sources}</ul><p>{html.escape(t["source_note"])}</p><p><a href="{WEBMCP_SOURCE}" rel="noopener noreferrer">{html.escape(t["webmcp_source"])}</a></p><div class="faq-list">{faq}</div></section>
 </main>
 <script>
 const COPY={copy_json};
 const PRESETS={preset_json};
 const PAPERS={paper_json};
+const WEBMCP_CONFIG={webmcp_json};
 const DPI=300;
 const MM_PER_INCH=25.4;
 const MAX_FILE_BYTES=25*1024*1024;
@@ -626,6 +788,140 @@ function pixelSafeLayout(layout){{
     rows,
     count:columns*rows
   }};
+}}
+function toolEnum(input,name){{
+  if(!Object.prototype.hasOwnProperty.call(input,name))throw new TypeError(`${{name}} is required.`);
+  const value=input[name];
+  const options=WEBMCP_CONFIG.input_schema.properties[name].enum;
+  if(typeof value!=="string"||!options.includes(value))throw new RangeError(`${{name}} is not a supported value.`);
+  return value;
+}}
+function toolNumber(input,name,required=true){{
+  if(!Object.prototype.hasOwnProperty.call(input,name)){{
+    if(required)throw new TypeError(`${{name}} is required.`);
+    return null;
+  }}
+  const value=input[name];
+  const schema=WEBMCP_CONFIG.input_schema.properties[name];
+  if(typeof value!=="number"||!Number.isFinite(value))throw new TypeError(`${{name}} must be a finite number.`);
+  if(value<schema.minimum||value>schema.maximum)throw new RangeError(`${{name}} is outside the supported range.`);
+  return value;
+}}
+function webMcpLayout(input){{
+  if(input===null||typeof input!=="object"||Array.isArray(input))throw new TypeError("WebMCP input must be an object.");
+  const allowed=new Set(Object.keys(WEBMCP_CONFIG.input_schema.properties));
+  for(const name of Object.keys(input))if(!allowed.has(name))throw new RangeError(`${{name}} is not a supported input.`);
+  const preset=toolEnum(input,"preset");
+  const paperName=toolEnum(input,"paper");
+  const orientation=toolEnum(input,"orientation");
+  const margin=toolNumber(input,"margin_mm");
+  const gap=toolNumber(input,"gap_mm");
+  const suppliedWidth=toolNumber(input,"custom_width_mm",false);
+  const suppliedHeight=toolNumber(input,"custom_height_mm",false);
+  if(preset==="custom"&&(suppliedWidth===null||suppliedHeight===null)){{
+    throw new TypeError("custom_width_mm and custom_height_mm are required for a custom preset.");
+  }}
+  const photo=preset==="custom"
+    ?{{width_mm:suppliedWidth,height_mm:suppliedHeight,source:null}}
+    :WEBMCP_CONFIG.presets[preset];
+  const paper=WEBMCP_CONFIG.papers[paperName];
+  const portrait=candidate(
+    paper.width_mm,paper.height_mm,photo.width_mm,photo.height_mm,
+    margin,gap,"portrait"
+  );
+  const landscape=candidate(
+    paper.height_mm,paper.width_mm,photo.width_mm,photo.height_mm,
+    margin,gap,"landscape"
+  );
+  const selected=orientation==="portrait"
+    ?portrait
+    :orientation==="landscape"
+      ?landscape
+      :landscape.count>portrait.count?landscape:portrait;
+  return {{preset,paperName,orientation,photo,layout:pixelSafeLayout(selected)}};
+}}
+function toolCutMarksPossible(layout){{
+  if(layout.count<1)return false;
+  const blockWidth=layout.columns*layout.photoWidthPx+(layout.columns-1)*layout.gapPx;
+  const blockHeight=layout.rows*layout.photoHeightPx+(layout.rows-1)*layout.gapPx;
+  const startX=Math.round((layout.paperWidthPx-blockWidth)/2);
+  const startY=Math.round((layout.paperHeightPx-blockHeight)/2);
+  const spaces=[
+    startX,startY,
+    layout.paperWidthPx-(startX+blockWidth),
+    layout.paperHeightPx-(startY+blockHeight),
+    layout.gapPx/2
+  ];
+  const lineWidth=Math.max(1,Math.round(DPI/300));
+  const offset=Math.ceil(lineWidth/2)+1;
+  const maxLength=mmToPx(4);
+  return spaces.some(available=>Math.floor(Math.min(maxLength,available-offset))>=2);
+}}
+async function registerWebMcp(){{
+  if(!document.modelContext?.registerTool)return;
+  await document.modelContext.registerTool({{
+    name:"plan_private_passport_photo_print_sheet",
+    description:WEBMCP_CONFIG.description,
+    inputSchema:WEBMCP_CONFIG.input_schema,
+    annotations:{{readOnlyHint:true,untrustedContentHint:false}},
+    execute:async(input)=>{{
+      const planned=webMcpLayout(input);
+      const layout=planned.layout;
+      const result={{
+        result_type:"private_passport_photo_print_sheet_plan",
+        layout_only_not_acceptance_check:true,
+        photo_not_received_or_processed:true,
+        preset:{{
+          id:planned.preset,
+          label:WEBMCP_CONFIG.preset_labels[planned.preset],
+          width_mm:planned.photo.width_mm,
+          height_mm:planned.photo.height_mm,
+          official_dimension_source:planned.photo.source||null,
+          caveat:WEBMCP_CONFIG.preset_caveats[planned.preset]
+        }},
+        paper:{{
+          id:planned.paperName,
+          label:WEBMCP_CONFIG.paper_labels[planned.paperName],
+          requested_orientation:planned.orientation,
+          requested_orientation_label:WEBMCP_CONFIG.orientation_labels[planned.orientation],
+          selected_orientation:layout.name,
+          width_mm:layout.paperWidth,
+          height_mm:layout.paperHeight,
+          width_px:layout.paperWidthPx,
+          height_px:layout.paperHeightPx,
+          dpi:DPI
+        }},
+        layout:{{
+          fits:layout.count>0,
+          copy_count:layout.count,
+          columns:layout.columns,
+          rows:layout.rows,
+          outer_margin_mm:layout.margin,
+          gap_mm:layout.gap,
+          each_photo_width_px:layout.photoWidthPx,
+          each_photo_height_px:layout.photoHeightPx,
+          cut_mark_gutter_available:toolCutMarksPossible(layout)
+        }},
+        boundaries:{{
+          layout:WEBMCP_CONFIG.layout_boundary,
+          photo:WEBMCP_CONFIG.photo_boundary
+        }},
+        print_checks:WEBMCP_CONFIG.print_checks,
+        optional_free_local_tool:WEBMCP_CONFIG.free_tool,
+        related_free_resources:WEBMCP_CONFIG.related_free_resources,
+        official_sources:planned.photo.source?[planned.photo.source]:[],
+        webmcp_preview_source:WEBMCP_CONFIG.webmcp_source
+      }};
+      if(WEBMCP_CONFIG.snapport_app_store_url){{
+        result.optional_snapport={{
+          label:WEBMCP_CONFIG.snapport_label,
+          boundary:WEBMCP_CONFIG.snapport_boundary,
+          app_store_url:WEBMCP_CONFIG.snapport_app_store_url
+        }};
+      }}
+      return JSON.stringify(result);
+    }}
+  }});
 }}
 function drawPlaceholder(x,y,width,height){{
   const gradient=context.createLinearGradient(x,y,x+width,y+height);
@@ -868,6 +1164,7 @@ document.getElementById("share-tool").addEventListener("click",async()=>{{
 }});
 window.addEventListener("beforeunload",()=>{{if(localImageURL)URL.revokeObjectURL(localImageURL);}});
 render();
+registerWebMcp().catch(error=>console.error("WebMCP tool registration failed.",error));
 </script>
 </body>
 </html>

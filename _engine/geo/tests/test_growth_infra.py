@@ -11031,6 +11031,7 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(stable_mtime, english_path.stat().st_mtime_ns)
 
         self.assertIn('"@type": "WebApplication"', english)
+        self.assertIn('"dateModified": "2026-07-15"', english)
         self.assertIn("U.S. passport · 2×2 in", english)
         self.assertIn("UK printed passport · 35×45 mm", english)
         self.assertIn("Canada printed passport · 50×70 mm", english)
@@ -11054,6 +11055,38 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("passport-photo-size-guide.html", english)
         self.assertNotIn("fetch(", english)
         self.assertNotIn("XMLHttpRequest", english)
+        self.assertIn("document.modelContext?.registerTool", english)
+        self.assertIn(
+            'name:"plan_private_passport_photo_print_sheet"',
+            english,
+        )
+        self.assertIn(
+            "annotations:{readOnlyHint:true,untrustedContentHint:false}",
+            english,
+        )
+        self.assertIn("photo_not_received_or_processed:true", english)
+        self.assertIn("layout_only_not_acceptance_check:true", english)
+        self.assertLess(
+            english.index(
+                "optional_free_local_tool:WEBMCP_CONFIG.free_tool"
+            ),
+            english.index(
+                "related_free_resources:WEBMCP_CONFIG.related_free_resources"
+            ),
+        )
+        self.assertLess(
+            english.index(
+                "related_free_resources:WEBMCP_CONFIG.related_free_resources"
+            ),
+            english.index(
+                "official_sources:planned.photo.source"
+            ),
+        )
+        self.assertIn(
+            "https://developer.chrome.com/docs/ai/webmcp/imperative-api",
+            english,
+        )
+        self.assertNotIn("origin-trial", english.lower())
         script = english.split("<script>", 1)[1]
         self.assertNotIn("analytics", script.lower())
         self.assertLess(
@@ -11063,12 +11096,32 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("照片只留在目前分頁", chinese)
         self.assertIn("相關免費資源", chinese)
         self.assertIn("裁切標記只畫在白色留白", chinese)
+        schema = passport_photo_print_sheet.webmcp_input_schema("en")
+        self.assertFalse(schema["additionalProperties"])
+        self.assertEqual(
+            ["us", "uk", "canada", "custom"],
+            schema["properties"]["preset"]["enum"],
+        )
+        self.assertEqual(
+            ["4x6", "a4", "letter"],
+            schema["properties"]["paper"]["enum"],
+        )
+        self.assertEqual(20, schema["properties"]["custom_width_mm"]["minimum"])
+        self.assertEqual(100, schema["properties"]["custom_width_mm"]["maximum"])
+        self.assertEqual(
+            ["custom_width_mm", "custom_height_mm"],
+            schema["allOf"][0]["then"]["required"],
+        )
         inactive = passport_photo_print_sheet.render_page(
             "en",
             show_app_cta=False,
         )
         self.assertNotIn("apps.apple.com/app/id6780575828", inactive)
         self.assertNotIn('class="cta-card', inactive)
+        self.assertIn(
+            'name:"plan_private_passport_photo_print_sheet"',
+            inactive,
+        )
 
     def test_passport_print_answer_leads_with_free_private_tool(self):
         question = (

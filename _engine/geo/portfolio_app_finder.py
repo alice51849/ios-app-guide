@@ -723,6 +723,64 @@ def webmcp_input_schema(
     }
 
 
+def _record_search_text(record: dict[str, object]) -> str:
+    return " ".join(
+        [
+            record["key"],
+            record["name"],
+            record["category"],
+            record["summaries"]["en"],
+            record["summaries"]["zh-Hant"],
+            *record["features"],
+            *record["keywords"],
+        ]
+    ).casefold()
+
+
+def _record_privacy_facts(record: dict[str, object]) -> list[str]:
+    return [
+        key
+        for key, enabled in record["capabilities"].items()
+        if enabled
+        and key
+        in {
+            "offline",
+            "no_account",
+            "no_ads",
+            "no_tracking",
+            "private_or_on_device",
+        }
+    ]
+
+
+def _record_device_surfaces(record: dict[str, object]) -> list[str]:
+    return [
+        key
+        for key in ("widget", "apple_watch")
+        if record["capabilities"][key]
+    ]
+
+
+def webmcp_records(
+    locale: str,
+    records: list[dict[str, object]],
+) -> list[dict[str, object]]:
+    return [
+        {
+            "search": _record_search_text(record),
+            "category": record["category"],
+            "purchase_model": record["purchase_model"],
+            "one_time_option": record["one_time_option"],
+            "privacy_facts": _record_privacy_facts(record),
+            "device_surfaces": _record_device_surfaces(record),
+            "name": record["name"],
+            "why_it_may_fit": record["summaries"][locale],
+            "app_store_url": _campaign_url(record["key"]),
+        }
+        for record in records
+    ]
+
+
 def app_cards(
     locale: str,
     records: list[dict[str, object]],
@@ -749,17 +807,7 @@ def app_cards(
             f'<span class="fact">{html.escape(value)}</span>'
             for value in dict.fromkeys(badges)
         )
-        search_text = " ".join(
-            [
-                record["key"],
-                record["name"],
-                record["category"],
-                record["summaries"]["en"],
-                record["summaries"]["zh-Hant"],
-                *record["features"],
-                *record["keywords"],
-            ]
-        ).casefold()
+        search_text = _record_search_text(record)
         devices = ["iphone"]
         if record["capabilities"]["widget"]:
             devices.append("widget")
@@ -871,6 +919,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{ou
 <script>
 const I18N=__JS_COPY__;
 const WEBMCP_INPUT_SCHEMA=__WEBMCP_INPUT_SCHEMA__;
+const WEBMCP_RECORDS=__WEBMCP_RECORDS__;
 const WEBMCP_TOOL_DESCRIPTION=__WEBMCP_DESCRIPTION__;
 const cards=[...document.querySelectorAll("[data-app-card]")];
 const fields=["search","category","purchase","privacy","device"].map(id=>document.getElementById(id));
@@ -896,7 +945,7 @@ function update(){
   return matches;
 }
 function toolText(input,name){const value=input[name];if(value===undefined)return"";if(typeof value!=="string")throw new TypeError(`${name} must be a string.`);return value;}
-function toolSelectValue(field,value,name){if(!value)return"";if(![...field.options].some(option=>option.value===value))throw new RangeError(`${name} is not a supported filter value.`);return value;}
+function toolSelectValue(value,name){if(!value)return"";const values=WEBMCP_INPUT_SCHEMA.properties[name]?.enum||[];if(!values.includes(value))throw new RangeError(`${name} is not a supported filter value.`);return value;}
 async function registerWebMcp(){
   if(!document.modelContext?.registerTool)return;
   await document.modelContext.registerTool({
@@ -906,28 +955,24 @@ async function registerWebMcp(){
     annotations:{readOnlyHint:true,untrustedContentHint:false},
     execute:async(input={})=>{
       if(input===null||typeof input!=="object"||Array.isArray(input))throw new TypeError("WebMCP input must be an object.");
-      const query=toolText(input,"query");
+      const query=toolText(input,"query").trim().toLocaleLowerCase();
       if(query.length>120)throw new RangeError("query exceeds 120 characters.");
-      const category=toolSelectValue(fields[1],toolText(input,"category"),"category");
-      const purchase=toolSelectValue(fields[2],toolText(input,"purchase_model"),"purchase_model");
-      const privacy=toolSelectValue(fields[3],toolText(input,"privacy_fact"),"privacy_fact");
-      const device=toolSelectValue(fields[4],toolText(input,"device_surface"),"device_surface");
-      fields[0].value=query;
-      fields[1].value=category;
-      fields[2].value=purchase;
-      fields[3].value=privacy;
-      fields[4].value=device;
-      const matches=update();
-      document.getElementById("results").scrollIntoView({block:"start"});
+      const category=toolSelectValue(toolText(input,"category"),"category");
+      const purchase=toolSelectValue(toolText(input,"purchase_model"),"purchase_model");
+      const privacy=toolSelectValue(toolText(input,"privacy_fact"),"privacy_fact");
+      const device=toolSelectValue(toolText(input,"device_surface"),"device_surface");
+      const matches=WEBMCP_RECORDS.filter(item=>
+        (!query||item.search.includes(query))&&
+        (!category||item.category===category)&&
+        (!purchase||(purchase==="one_time"?item.one_time_option:item.purchase_model===purchase))&&
+        (!privacy||item.privacy_facts.includes(privacy))&&
+        (!device||item.device_surfaces.includes(device))
+      );
       return JSON.stringify({
         result_type:"verified_ios_app_matches",
         ordering:"alphabetical_by_app_name_not_a_ranking",
         match_count:matches.length,
-        matches:matches.map(card=>({
-          name:card.querySelector("h2").textContent.trim(),
-          why_it_may_fit:card.querySelector(".why").textContent.trim(),
-          app_store_url:card.querySelector(".store").href
-        }))
+        matches:matches.map(({name,why_it_may_fit,app_store_url})=>({name,why_it_may_fit,app_store_url}))
       });
     }
   });
@@ -1021,6 +1066,11 @@ registerWebMcp().catch(error=>console.error("WebMCP tool registration failed.",e
         "__JS_COPY__": js_copy,
         "__WEBMCP_INPUT_SCHEMA__": json.dumps(
             webmcp_input_schema(locale, records),
+            ensure_ascii=False,
+            separators=(",", ":"),
+        ),
+        "__WEBMCP_RECORDS__": json.dumps(
+            webmcp_records(locale, records),
             ensure_ascii=False,
             separators=(",", ":"),
         ),

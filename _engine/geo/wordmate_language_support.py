@@ -29,6 +29,7 @@ SITE = os.environ.get(
 SLUG = "wordmate-44-language-support-checker"
 DATA_SLUG = "wordmate-language-support"
 CONTENT_DATE = "2026-07-14"
+TOOL_DATE = "2026-07-15"
 OFFICIAL_LISTING = "https://apps.apple.com/app/id6789917808"
 LICENSE_URL = "https://creativecommons.org/licenses/by/4.0/"
 APP_URL = appstore_url("wordmate", "iag_wordmate_language_matrix")
@@ -509,7 +510,7 @@ def structured_data(locale: str, copy: dict[str, object]) -> str:
                 "browserRequirements": "JavaScript",
                 "isAccessibleForFree": True,
                 "inLanguage": copy["html_lang"],
-                "dateModified": CONTENT_DATE,
+                "dateModified": TOOL_DATE,
                 "featureList": [
                     "Local filtering of 44 language records",
                     "No account, submission, storage or analytics",

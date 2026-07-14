@@ -22,6 +22,8 @@ from appstore_live import live_app_keys  # noqa: E402
 # 精選要在計算機下方展示的一次性付費 App(有 App Store 連結者)
 FEATURED = ["sereno", "cyca", "gmoney", "hourstag", "lockhour", "scanto",
             "picclear", "photocream", "snapport", "cvdesk", "sononote", "unblurry"]
+WEBMCP_SOURCE = "https://developer.chrome.com/docs/ai/webmcp/imperative-api"
+FINDER_URL = f"{SITE}/tools/private-pay-once-iphone-app-finder.html"
 
 CSS = ("body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;"
        "background:linear-gradient(180deg,#fff,#f4f7fc);color:#15202e;line-height:1.62}a{color:#2f47c4}"
@@ -62,6 +64,83 @@ JS = """
  ['mprice','napps','years'].forEach(function(id){var e=document.getElementById(id);if(e){e.addEventListener('input',calc);}});
  calc();
 })();
+"""
+
+
+def webmcp_input_schema():
+    return {
+        "type": "object",
+        "additionalProperties": False,
+        "required": [
+            "monthly_price_per_app",
+            "subscription_count",
+            "years",
+        ],
+        "properties": {
+            "monthly_price_per_app": {
+                "type": "number",
+                "exclusiveMinimum": 0,
+                "maximum": 1_000_000,
+                "description": (
+                    "User-entered monthly price for one app, in the user's "
+                    "chosen currency units."
+                ),
+            },
+            "subscription_count": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 10_000,
+                "description": "Number of recurring app subscriptions.",
+            },
+            "years": {
+                "type": "number",
+                "exclusiveMinimum": 0,
+                "maximum": 100,
+                "description": "How many years the subscriptions continue.",
+            },
+        },
+    }
+
+
+def webmcp_script():
+    schema = json.dumps(
+        webmcp_input_schema(),
+        ensure_ascii=False,
+        separators=(",", ":"),
+    )
+    return f"""
+(async function(){{
+ if(!document.modelContext?.registerTool)return;
+ function finiteNumber(value,name,max){{
+  if(typeof value!=='number'||!Number.isFinite(value)||value<=0||value>max)throw new RangeError(name+' is outside the supported range.');
+  return value;
+ }}
+ function roundMoney(value){{return Math.round((value+Number.EPSILON)*100)/100;}}
+ await document.modelContext.registerTool({{
+  name:'calculate_app_subscription_cost',
+  description:'Calculate recurring app-subscription cost from user-entered numbers. Also return a clearly labelled illustrative comparison using 5 currency units per pay-once app; this is not a claim about any current App Store price.',
+  inputSchema:{schema},
+  annotations:{{readOnlyHint:true,untrustedContentHint:false}},
+  execute:async(value)=>{{
+   if(value===null||typeof value!=='object'||Array.isArray(value))throw new TypeError('WebMCP input must be an object.');
+   const monthly=finiteNumber(value.monthly_price_per_app,'monthly_price_per_app',1000000);
+   const subscriptions=finiteNumber(value.subscription_count,'subscription_count',10000);
+   if(!Number.isInteger(subscriptions))throw new RangeError('subscription_count must be an integer.');
+   const years=finiteNumber(value.years,'years',100);
+   const recurring=roundMoney(monthly*12*subscriptions*years);
+   const illustrativePayOnce=roundMoney(subscriptions*5);
+   return JSON.stringify({{
+    result_type:'app_subscription_cost_calculation',
+    currency_boundary:'All numeric outputs use the same currency units supplied by the user; no exchange rate is applied.',
+    recurring_cost:recurring,
+    illustrative_pay_once_total:illustrativePayOnce,
+    illustrative_difference:roundMoney(recurring-illustrativePayOnce),
+    assumption:'The pay-once comparison uses an illustrative 5 currency units per app, not a current price claim. Verify every real price on its App Store listing.',
+    pay_once_app_finder_url:'{FINDER_URL}'
+   }});
+  }}
+ }});
+}})().catch(error=>console.error('WebMCP tool registration failed.',error));
 """
 
 
@@ -107,7 +186,9 @@ def build(live_keys=None):
     jsonld = [
         {"@context": "https://schema.org", "@type": "WebApplication", "name": "Subscription Cost Calculator",
          "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "url": canon,
-         "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "description": desc},
+         "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "description": desc,
+         "featureList": ["Local subscription-cost calculation", "No account, storage or analytics",
+                         "Progressive read-only WebMCP calculation for supporting browsers"]},
         {"@context": "https://schema.org", "@type": "FAQPage",
          "mainEntity": [{"@type": "Question", "name": q,
                          "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]},
@@ -147,12 +228,14 @@ def build(live_keys=None):
 <h2>Questions people ask</h2>
 {faq_html}
 
-<div class="footer">Made by an independent iOS developer (Cait518) whose portfolio includes one-time-purchase apps. This free calculator is provided as an honest resource. Prices shown by the calculator are your own inputs plus an illustrative estimate; verify real prices on the App Store.</div>
+<div class="footer">Made by an independent iOS developer (Cait518) whose portfolio includes one-time-purchase apps. This free calculator is provided as an honest resource. Prices shown by the calculator are your own inputs plus an illustrative estimate; verify real prices on the App Store. <a href="{esc(WEBMCP_SOURCE)}">WebMCP preview specification</a>.</div>
 </div>
-<script>{JS}</script>
+<script>{JS}{webmcp_script()}</script>
 </body></html>"""
     (PAGES / "tools").mkdir(parents=True, exist_ok=True)
-    (PAGES / "tools" / f"{slug}.html").write_text(doc, encoding="utf-8")
+    path = PAGES / "tools" / f"{slug}.html"
+    if not path.exists() or path.read_text(encoding="utf-8") != doc:
+        path.write_text(doc, encoding="utf-8")
     return canon
 
 

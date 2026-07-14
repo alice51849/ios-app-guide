@@ -11291,6 +11291,13 @@ class GeneratorTests(unittest.TestCase):
             data_path = pages / "data" / "wordmate-language-support.json"
             english = english_path.read_text(encoding="utf-8")
             chinese = chinese_path.read_text(encoding="utf-8")
+            graph = json.loads(
+                re.search(
+                    r'<script type="application/ld\+json">(.*?)</script>',
+                    english,
+                    flags=re.S,
+                ).group(1)
+            )["@graph"]
             dataset = json.loads(data_path.read_text(encoding="utf-8"))
             rows = list(
                 csv.DictReader(
@@ -11360,6 +11367,20 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertIn("Try Japanese, zh-Hant, Kannada or 泰文", english)
         self.assertIn("Wordmate 44 語言支援檢查器", chinese)
+        dataset_node = next(
+            item for item in graph if item["@type"] == "Dataset"
+        )
+        web_app_node = next(
+            item for item in graph if item["@type"] == "WebApplication"
+        )
+        self.assertEqual(
+            wordmate_language_support.CONTENT_DATE,
+            dataset_node["dateModified"],
+        )
+        self.assertEqual(
+            wordmate_language_support.TOOL_DATE,
+            web_app_node["dateModified"],
+        )
         self.assertEqual(
             "https://json-schema.org/draft/2020-12/schema",
             schema["$schema"],
@@ -11550,6 +11571,16 @@ class GeneratorTests(unittest.TestCase):
             "alphabetical_by_app_name_not_a_ranking",
             english,
         )
+        self.assertIn("const WEBMCP_RECORDS=", english)
+        self.assertIn(
+            "const matches=WEBMCP_RECORDS.filter",
+            english,
+        )
+        self.assertNotIn("fields[0].value=query;", english)
+        self.assertNotIn(
+            'document.getElementById("results").scrollIntoView',
+            english,
+        )
         self.assertIn(answer_portfolio.WEBMCP_SOURCE, english)
         self.assertNotIn("origin-trial", english.casefold())
         self.assertNotIn("fetch(", english)
@@ -11599,6 +11630,20 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(
             ["apple_watch", "widget"],
             tool_schema["properties"]["device_surface"]["enum"],
+        )
+        tool_records = portfolio_app_finder.webmcp_records(
+            "en",
+            data["apps"],
+        )
+        self.assertEqual(2, len(tool_records))
+        self.assertEqual(
+            [
+                "https://apps.apple.com/app/id6780575828"
+                "?ct=iag_finder_snapport",
+                "https://apps.apple.com/app/id6789917808"
+                "?ct=iag_finder_wordmate",
+            ],
+            [record["app_store_url"] for record in tool_records],
         )
         no_capabilities = [
             {
@@ -13301,6 +13346,15 @@ class GeneratorTests(unittest.TestCase):
                 "<main><section></section></main>", encoding="utf-8"
             )
             gen_calculator.build(set())
+            calculator_path = tools / "subscription-cost-calculator.html"
+            calculator = calculator_path.read_text(encoding="utf-8")
+            stable_mtime = 1_700_000_000_000_000_000
+            os.utime(calculator_path, ns=(stable_mtime, stable_mtime))
+            gen_calculator.build(set())
+            self.assertEqual(
+                stable_mtime,
+                calculator_path.stat().st_mtime_ns,
+            )
             self.assertTrue(gen_calculator.update_tools_index())
             self.assertFalse(gen_calculator.update_tools_index())
             count = gen_calculator.write_tools_sitemap()
@@ -13311,6 +13365,37 @@ class GeneratorTests(unittest.TestCase):
             self.assertIn("subscription-cost-calculator.html", index)
             self.assertIn("subscription-cost-calculator.html", sitemap)
             self.assertEqual(2, count)
+            self.assertIn(
+                "document.modelContext?.registerTool",
+                calculator,
+            )
+            self.assertIn(
+                "name:'calculate_app_subscription_cost'",
+                calculator,
+            )
+            self.assertIn(
+                "annotations:{readOnlyHint:true,untrustedContentHint:false}",
+                calculator,
+            )
+            self.assertIn(gen_calculator.WEBMCP_SOURCE, calculator)
+            self.assertNotIn("fetch(", calculator)
+            self.assertNotIn("localStorage", calculator)
+            self.assertNotIn("sessionStorage", calculator)
+            self.assertNotIn("origin-trial", calculator.casefold())
+            tool_schema = gen_calculator.webmcp_input_schema()
+            self.assertEqual(
+                [
+                    "monthly_price_per_app",
+                    "subscription_count",
+                    "years",
+                ],
+                tool_schema["required"],
+            )
+            self.assertFalse(tool_schema["additionalProperties"])
+            self.assertEqual(
+                "integer",
+                tool_schema["properties"]["subscription_count"]["type"],
+            )
 
     def test_redirect_pages_stay_out_of_indexes(self):
         with tempfile.TemporaryDirectory() as directory:

@@ -77,6 +77,10 @@ def main():
             "before-school-starts"
         ),
         "how-can-i-check-my-child-s-zhuyin-skills-at-home-in-three-minutes",
+        (
+            "how-can-i-help-a-child-who-can-blend-zhuyin-syllables-but-"
+            "cannot-read-a-whole-sentence"
+        ),
         "where-can-i-download-a-free-bopomofo-epub-for-e-readers",
         (
             "where-can-a-school-library-download-catalog-records-for-a-"
@@ -139,6 +143,7 @@ def main():
     require([PY, os.path.join(HERE, "zhuyin_library_storytime_kit.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_grade1_summer_calendar.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_blending_card_generator.py")], env=env)
+    require([PY, os.path.join(HERE, "zhuyin_sentence_reading_cards.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_grade1_guide.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_anki_deck.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_skos_vocabulary.py")], env=env)

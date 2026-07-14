@@ -1562,5 +1562,85 @@
         "a": "No. It is a publicly dereferenceable, internally validated static publication. It does not claim registry listing, third-party replication, certification or community endorsement."
       }
     ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "short_sentence_reading_bridge",
+    "match": [
+      "can blend zhuyin syllables but cannot read a whole sentence",
+      "free printable zhuyin short sentence reading practice",
+      "zhuyin sentence reading cards",
+      "孩子會拼注音但不會讀句子怎麼練",
+      "免費注音短句閱讀練習",
+      "注音短句閱讀卡"
+    ],
+    "query": "How can I help a child who can blend Zhuyin syllables but cannot read a whole sentence?",
+    "page_title": "Free Zhuyin Short Sentence Reading Practice | Printable Cards",
+    "meta_description": "Free Zhuyin sentence cards bridge blending to short reading: show annotations, hide them, then reread. No login, score, upload or saved profile.",
+    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-short-sentence-reading-cards.html",
+    "primary_resource_label": "Open the free Zhuyin sentence reading cards",
+    "lead": "Move from syllable blending to sentence reading with one small change at a time: read a short fully annotated line, hide its Zhuyin, then reread exactly the same words without a timer or score.",
+    "detail": "The free bilingual tool linked above provides 24 original Traditional Chinese sentences in three steps: three-character lines, six- or seven-character everyday sentences, and two-clause sentences. Every character has a checked standard Zhuyin reading; phrase gaps and punctuation create natural pause points. A learner first decodes with the annotations visible, then taps once to hide them and rereads the same sentence. Nothing is typed, uploaded, scored or saved, and the set can be printed. Taiwan's official first-stage Mandarin outcomes include using Zhuyin material to learn reading (3-I-4) and reading text accurately at an appropriate rate (5-I-1). Those outcomes support the scope, but the Ministry of Education did not design, test or endorse this independent activity.",
+    "follow_up": "Start with three cards and stop while the activity still feels calm. If the learner repeatedly hesitates on one syllable, return to listening or blending practice instead of turning the sentence into a speed test. The free cards are complete without an app.",
+    "bullets": [
+      "Twenty-four original sentences across three progressive lengths",
+      "Standard Zhuyin on every character, with phrase spacing and punctuation kept visible",
+      "One-tap hide-and-reread flow with no timer, answer button, score, level or saved progress",
+      "Mobile-friendly in the browser and printable without an account or download form",
+      "English and Traditional Chinese pages with direct Ministry of Education references"
+    ],
+    "decision_steps": [
+      "Choose the three-character level and generate only three cards.",
+      "Read one sentence aloud while pointing to each annotated character.",
+      "Let the learner decode the same sentence with Zhuyin visible.",
+      "Hide the annotations and invite one unhurried reread of exactly the same line.",
+      "Stop, repeat another day, or return to syllable blending if the sentence is not comfortable."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Still pauses on individual syllables",
+        "check": "Use listening and blending practice before adding a full sentence",
+        "why": "A sentence adds memory and meaning demands before syllable joining is comfortable"
+      },
+      {
+        "need": "Can blend but loses the whole sentence",
+        "check": "Use one short annotated sentence with visible phrase gaps",
+        "why": "The learner can focus on a complete thought without facing a long passage"
+      },
+      {
+        "need": "Relies on the annotation every time",
+        "check": "Hide Zhuyin only for a second reading of the exact same sentence",
+        "why": "The task changes one support at a time without claiming that a single reread proves mastery"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is optional and is not needed for the free sentence cards. It can reinforce listening, tracing, tones and syllable blending before sentence reading, with a one-time lifetime unlock, no ads, no subscription and no account.",
+    "sources": [
+      {
+        "title": "Free Zhuyin short sentence reading cards",
+        "url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-short-sentence-reading-cards.html"
+      },
+      {
+        "title": "CIRN Mandarin learning outcomes for the first learning stage",
+        "url": "https://cirn.k12ea.gov.tw/TWELVE/List.aspx?fid=11010"
+      },
+      {
+        "title": "Taiwan Ministry of Education Mandarin Phonetic Symbols handbook",
+        "url": "https://language.moe.gov.tw/001/Upload/Files/site_content/M0001/juyin/html_ch/index.html"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is this a reading test or level assessment?",
+        "a": "No. It has no score, timer, pass/fail result or saved progress and cannot determine reading fluency, school readiness or a learning difficulty."
+      },
+      {
+        "q": "Why hide Zhuyin only after reading the same sentence once?",
+        "a": "It removes one support while keeping the words and meaning familiar. One successful reread is still just practice, not proof of mastery."
+      },
+      {
+        "q": "Does the tool collect what a child reads?",
+        "a": "No reading response is entered or collected. Level, set and visibility choices remain only in page memory and reset when the page closes."
+      }
+    ]
   }
 ]

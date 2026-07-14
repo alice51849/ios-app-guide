@@ -70,9 +70,11 @@ import notify_rsscloud
 import notify_websub
 import outreach_scorecard
 import prioritize_trip_planet_resources
+import queries
 import rsscloud_config
 import static_api_catalog
 import zhuyin_blending_card_generator
+import zhuyin_sentence_reading_cards
 import zhuyin_grandparent_call_kit
 import zhuyin_grade1_guide
 import zhuyin_grade1_summer_calendar
@@ -9832,6 +9834,7 @@ class GeneratorTests(unittest.TestCase):
             zhuyin_library_storytime_kit,
             zhuyin_grade1_summer_calendar,
             zhuyin_blending_card_generator,
+            zhuyin_sentence_reading_cards,
         ):
             generator.build(pages)
         for filename in (
@@ -9891,7 +9894,7 @@ class GeneratorTests(unittest.TestCase):
 
             resources = zhuyin_resourcesync.discover_resources(pages)
             entries = resource_list.findall(f"{{{sitemap_ns}}}url")
-            self.assertEqual(254, len(resources))
+            self.assertEqual(256, len(resources))
             self.assertEqual(len(resources), len(entries))
             resources_by_path = {
                 resource.relative_path.as_posix(): resource
@@ -10209,6 +10212,7 @@ class GeneratorTests(unittest.TestCase):
                 zhuyin_library_storytime_kit.update_tools_index,
                 zhuyin_grade1_summer_calendar.update_tools_index,
                 zhuyin_blending_card_generator.update_tools_indexes,
+                zhuyin_sentence_reading_cards.update_tools_indexes,
                 zhuyin_anki_deck.update_tools_index,
             )
 
@@ -10562,6 +10566,113 @@ class GeneratorTests(unittest.TestCase):
                     ),
                 )
 
+    def test_zhuyin_sentence_cards_are_bilingual_private_and_non_scored(self):
+        english = zhuyin_sentence_reading_cards.render_page("en")
+        traditional = zhuyin_sentence_reading_cards.render_page("zh-Hant")
+        self.assertEqual(
+            {"short": 8, "everyday": 8, "clauses": 8},
+            {
+                level: len(sentences)
+                for level, sentences in zhuyin_sentence_reading_cards.SENTENCES.items()
+            },
+        )
+        for page in (english, traditional):
+            self.assertIn('"WebApplication", "LearningResource"', page)
+            self.assertIn('"@type": "FAQPage"', page)
+            self.assertIn('hreflang="en"', page)
+            self.assertIn('hreflang="zh-Hant"', page)
+            self.assertIn('id="level-buttons"', page)
+            self.assertIn('id="card-count"', page)
+            self.assertIn("<ruby>", page)
+            self.assertIn("window.print()", page)
+            self.assertIn("navigator.share", page)
+            self.assertIn("id6773017109", page)
+            self.assertIn("html_ch/index.html", page)
+            self.assertIn("phonetic.jsp?la=0", page)
+            self.assertIn("fid=11010", page)
+            self.assertNotIn("localStorage", page)
+            self.assertNotIn("sessionStorage", page)
+            self.assertNotIn("XMLHttpRequest", page)
+            self.assertNotIn("fetch(", page)
+            self.assertNotIn("getUserMedia", page)
+            self.assertNotIn("<input", page)
+            self.assertNotIn("dataLayer", page)
+            self.assertNotIn("gtag(", page)
+            schemas = [
+                json.loads(block)
+                for block in re.findall(
+                    r'<script type="application/ld\+json">(.*?)</script>',
+                    page,
+                    re.S,
+                )
+            ]
+            resource = next(
+                schema
+                for schema in schemas
+                if schema.get("@type") == ["WebApplication", "LearningResource"]
+            )
+            self.assertTrue(resource["isAccessibleForFree"])
+            self.assertEqual("0", resource["offers"]["price"])
+            self.assertEqual("2026-07-14", resource["datePublished"])
+            self.assertEqual("2026-07-14", resource["dateModified"])
+            main = page.split("<main>", 1)[1]
+            self.assertLess(main.index('id="generator"'), main.index("id6773017109"))
+        self.assertIn("not a reading test, level or diagnosis", english)
+        self.assertIn("not proof of mastery", english)
+        self.assertIn("Every sentence is original", english)
+        self.assertIn("不是閱讀測驗、程度分級或診斷", traditional)
+        self.assertIn("不能證明熟練度", traditional)
+        self.assertIn("所有短句皆為本站原創", traditional)
+        self.assertIn("one-time lifetime unlock", english)
+        self.assertIn("一次付費永久解鎖", traditional)
+
+    def test_zhuyin_sentence_cards_build_both_pages_and_indexes_idempotently(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale in ("", "zh-Hant"):
+                tools = pages / locale / "tools" if locale else pages / "tools"
+                tools.mkdir(parents=True)
+                (tools / "index.html").write_text(
+                    '<main><section class="wrap grid"></section></main>',
+                    encoding="utf-8",
+                )
+            first = zhuyin_sentence_reading_cards.build(pages)
+            second = zhuyin_sentence_reading_cards.build(pages)
+            self.assertEqual(first, second)
+            self.assertEqual(2, len(first))
+            for locale in ("", "zh-Hant"):
+                tools = pages / locale / "tools" if locale else pages / "tools"
+                self.assertTrue(
+                    (tools / f"{zhuyin_sentence_reading_cards.SLUG}.html").exists()
+                )
+                index = (tools / "index.html").read_text(encoding="utf-8")
+                self.assertEqual(
+                    1,
+                    index.count(f"{zhuyin_sentence_reading_cards.SLUG}.html"),
+                )
+
+    def test_zhuyin_sentence_answer_leads_with_free_reading_cards(self):
+        question = (
+            "How can I help a child who can blend Zhuyin syllables but cannot "
+            "read a whole sentence?"
+        )
+        self.assertEqual(1, queries.CURATED["lumibopomofo"].count(question))
+        content = aeo_answers.normalized_content(
+            aeo_answers.default_content(question, "lumibopomofo"),
+            question,
+            "lumibopomofo",
+        )
+        page = aeo_answers.render_page(question, "lumibopomofo", content)
+        tool_url = (
+            "https://alice51849.github.io/ios-app-guide/tools/"
+            "zhuyin-short-sentence-reading-cards.html"
+        )
+        self.assertEqual(tool_url, content["primary_resource_url"])
+        self.assertIn("24 original Traditional Chinese sentences", page)
+        self.assertIn("fid=11010", page)
+        self.assertLess(page.index(tool_url), page.index("id6773017109"))
+        self.assertIn("not needed for the free sentence cards", page)
+
     def test_grade1_summer_answer_leads_with_free_calendar(self):
         question = (
             "How can my child prepare for grade 1 Bopomofo over the summer "
@@ -10870,6 +10981,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin-readiness-check.html",
             "zhuyin-grade1-14-day-summer-calendar.html",
             "zhuyin-blending-card-generator.html",
+            "zhuyin-short-sentence-reading-cards.html",
             "zhuyin-library-storytime-kit.html",
             "zhuyin-parent-teacher-handoff-kit.html",
             "zhuyin-family-picture-book-club-kit.html",
@@ -10893,6 +11005,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(len(filenames), limit)
         self.assertEqual(len(filenames), len(selected))
         self.assertIn("zhuyin-blending-card-generator.html", selected)
+        self.assertIn("zhuyin-short-sentence-reading-cards.html", selected)
         self.assertIn("zhuyin-family-picture-book-club-kit.html", selected)
         self.assertIn("zhuyin-grandparent-video-call-kit.html", selected)
 
@@ -12172,6 +12285,9 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_library_storytime_kit.py", workflow)
         self.assertIn("zhuyin_grade1_summer_calendar.py", workflow)
         self.assertIn("zhuyin_blending_card_generator.py", workflow)
+        self.assertIn("zhuyin_sentence_reading_cards.py", workflow)
+        self.assertIn('READING_SLUG="how-can-i-help-a-child-who-can-blend-', workflow)
+        self.assertIn('--refresh-slug "$READING_SLUG"', workflow)
         self.assertIn("zhuyin_grade1_guide.py", workflow)
         self.assertIn("zhuyin_anki_deck.py", workflow)
         self.assertIn("zhuyin_skos_vocabulary.py", workflow)
@@ -12221,6 +12337,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_library_storytime_kit.py",
             "zhuyin_grade1_summer_calendar.py",
             "zhuyin_blending_card_generator.py",
+            "zhuyin_sentence_reading_cards.py",
             "zhuyin_grade1_guide.py",
             "zhuyin_anki_deck.py",
             "zhuyin_skos_vocabulary.py",
@@ -12407,6 +12524,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("zhuyin_library_storytime_kit.py", publish)
         self.assertIn("zhuyin_grade1_summer_calendar.py", publish)
         self.assertIn("zhuyin_blending_card_generator.py", publish)
+        self.assertIn("zhuyin_sentence_reading_cards.py", publish)
         self.assertIn("zhuyin_grade1_guide.py", publish)
         self.assertIn("zhuyin_anki_deck.py", publish)
         self.assertIn("zhuyin_skos_vocabulary.py", publish)
@@ -12465,6 +12583,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_library_storytime_kit.py",
             "zhuyin_grade1_summer_calendar.py",
             "zhuyin_blending_card_generator.py",
+            "zhuyin_sentence_reading_cards.py",
             "zhuyin_grade1_guide.py",
             "zhuyin_anki_deck.py",
             "zhuyin_skos_vocabulary.py",

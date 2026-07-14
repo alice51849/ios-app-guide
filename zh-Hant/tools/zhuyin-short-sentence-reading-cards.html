@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>免費注音短句閱讀卡產生器｜分級、可列印</title>
+<meta name="description" content="免費產生可列印的注音短句閱讀卡，從三字短句進到兩段句；先看逐字注音，再遮住重讀。免登入、不計分、不上傳、不建立兒童檔案。">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-short-sentence-reading-cards.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-short-sentence-reading-cards.html">
+<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/zhuyin-short-sentence-reading-cards.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/zhuyin-short-sentence-reading-cards.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="注音短句閱讀卡產生器">
+<meta property="og:description" content="免費產生可列印的注音短句閱讀卡，從三字短句進到兩段句；先看逐字注音，再遮住重讀。免登入、不計分、不上傳、不建立兒童檔案。">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-short-sentence-reading-cards.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--bg:#f3f1eb;--paper:#fffefb;--ink:#20211f;--muted:#66665f;--line:#ddd8cd;--forest:#315f50;--forest2:#4c806d;--sun:#c78a2c;--soft:#edf4f0;--shadow:0 18px 50px rgba(50,48,39,.10)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;background:radial-gradient(circle at 10% 0,#fff 0,var(--bg) 46%,#e9e5db 100%);color:var(--ink);line-height:1.65}
+a{color:#285747}.wrap{width:min(1120px,100% - 30px);margin:auto}
+.top{position:sticky;top:0;z-index:8;background:rgba(255,254,251,.9);border-bottom:1px solid rgba(221,216,205,.92);backdrop-filter:blur(14px)}
+.nav{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:18px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}.nav-links{display:flex;gap:16px;align-items:center}.nav-links a{color:var(--muted);font-size:14px}
+.hero{padding:58px 0 26px}.eyebrow{display:inline-flex;border:1px solid var(--line);background:rgba(255,255,255,.72);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:850;color:var(--forest);letter-spacing:.03em;white-space:nowrap}
+h1{font-family:ui-serif,Georgia,"Noto Serif TC",serif;font-size:clamp(34px,6.5vw,66px);line-height:1.04;letter-spacing:-.035em;margin:.28em 0 .24em;max-width:100%;white-space:nowrap;overflow-x:auto;padding-bottom:.08em}
+.lead{max-width:850px;color:var(--muted);font-size:clamp(17px,2.3vw,21px);margin:0}
+.trust{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0 0}.badge{border:1px solid #d8d3c8;background:#fff;border-radius:999px;padding:8px 12px;font-size:13px;font-weight:750;color:#3f5e52}.badge.scope{color:#695d49}
+.workspace{background:rgba(255,254,251,.97);border:1px solid var(--line);border-radius:30px;padding:clamp(18px,4vw,34px);box-shadow:var(--shadow);margin:20px auto 34px}
+.workspace h2,.content-card h2,.cta-card h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif;font-size:clamp(24px,4vw,34px);line-height:1.15;margin:0}
+.controls{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;margin:24px 0 14px;padding:18px;border-radius:22px;background:#f7f4ed;border:1px solid #e6e0d4}
+.control-label{display:block;font-size:13px;font-weight:850;color:var(--muted);margin-bottom:8px;white-space:nowrap}.seg{display:flex;flex-wrap:wrap;gap:7px}.seg button,.button,select{font:inherit;font-weight:800;border-radius:999px;white-space:nowrap}
+.seg button{border:1px solid var(--line);background:#fff;color:var(--muted);padding:9px 13px;cursor:pointer}.seg button.on{background:linear-gradient(135deg,var(--forest),var(--forest2));border-color:transparent;color:#fff;box-shadow:0 8px 18px rgba(49,95,80,.18)}
+select{border:1px solid var(--line);background:#fff;color:var(--ink);padding:9px 36px 9px 13px;min-width:92px}.level-help{color:var(--muted);margin:0 0 18px;font-size:14px}
+.actions{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0 20px}.button{border:0;background:linear-gradient(135deg,var(--forest),var(--forest2));color:#fff;padding:11px 16px;cursor:pointer;box-shadow:0 8px 20px rgba(49,95,80,.16)}.button.secondary{background:#fff;color:var(--forest);border:1px solid var(--line);box-shadow:none}
+.status{min-height:1.5em;color:var(--muted);font-size:14px;margin:0 0 14px}
+.cards{display:grid;grid-template-columns:1fr;gap:14px}.reading-card{background:linear-gradient(160deg,#fff,#fbfaf6);border:1px solid #dcd6ca;border-radius:24px;padding:18px 20px;box-shadow:0 8px 24px rgba(52,48,38,.06);break-inside:avoid;overflow:hidden}.card-head{display:flex;align-items:center;justify-content:space-between;gap:12px}.card-kicker{color:var(--muted);font-size:12px;font-weight:800;white-space:nowrap;overflow-x:auto}.toggle{border:1px solid var(--line);background:#fff;color:var(--forest);border-radius:999px;padding:7px 11px;font:inherit;font-size:12px;font-weight:850;white-space:nowrap;cursor:pointer}.toggle:focus-visible{outline:3px solid #a7c8bb;outline-offset:3px}
+.sentence{display:flex;align-items:flex-end;gap:clamp(12px,2.4vw,25px);font-family:ui-serif,Georgia,"Noto Serif TC",serif;font-size:clamp(34px,7vw,58px);font-weight:850;line-height:1.15;margin:24px 0 5px;padding:24px 0 6px;white-space:nowrap;overflow-x:auto}.phrase{display:inline-flex;align-items:flex-end;white-space:nowrap}.sentence ruby{ruby-position:over;ruby-align:center;margin:0 .035em}.sentence rt{font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif;font-size:.34em;font-weight:800;color:var(--forest);letter-spacing:.01em}.sentence.reading-hidden rt{visibility:hidden}
+.content-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px;margin:30px auto}.content-card{grid-column:span 6;background:rgba(255,254,251,.92);border:1px solid var(--line);border-radius:26px;padding:25px}.content-card.full{grid-column:span 12}.content-card p{color:var(--muted);margin:.8em 0 0}.content-card ol{margin:14px 0 0;padding-left:22px;color:var(--muted)}.content-card li{margin:.55em 0}
+.cta-card{background:linear-gradient(135deg,#254d41,#477562);color:#fff;border-radius:30px;padding:clamp(24px,5vw,40px);margin:32px auto}.cta-card p{color:#e8f0ec;max-width:820px}.cta-card .button{background:#fff;color:#244c40;box-shadow:none;text-decoration:none;display:inline-flex;margin-top:8px;white-space:nowrap}
+.sources{margin:30px auto 54px;color:var(--muted);font-size:14px}.sources h2{color:var(--ink)}.sources p{max-width:920px}.faq-list{display:grid;gap:10px}.faq-list details{border:1px solid var(--line);border-radius:18px;background:#fff;padding:13px 16px}.faq-list summary{font-weight:850;cursor:pointer}.faq-list p{margin:.6em 0 0;color:var(--muted)}
+@media(max-width:760px){.hero{padding-top:38px}.controls{grid-template-columns:1fr}.content-card{grid-column:span 12}.card-head{align-items:flex-start}.nav{align-items:flex-start;padding:13px 0}.sentence{gap:14px}}
+@media print{.top,.hero,.controls,.actions,.status,.level-help,.content-grid,.cta-card,.sources,.workspace>h2,.card-head{display:none!important}body{background:#fff}.wrap{width:100%}.workspace{border:0;box-shadow:none;padding:0;margin:0}.cards{gap:8mm}.reading-card{border:1pt solid #777;border-radius:4mm;box-shadow:none;padding:7mm;page-break-inside:avoid}.sentence{font-size:26pt;overflow:visible;margin:5mm 0}.sentence rt{visibility:visible!important}@page{size:A4 landscape;margin:11mm}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": ["WebApplication", "LearningResource"], "name": "注音短句閱讀卡產生器", "description": "免費產生可列印的注音短句閱讀卡，從三字短句進到兩段句；先看逐字注音，再遮住重讀。免登入、不計分、不上傳、不建立兒童檔案。", "url": "https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-short-sentence-reading-cards.html", "inLanguage": "zh-Hant", "datePublished": "2026-07-14", "dateModified": "2026-07-14", "applicationCategory": "EducationalApplication", "operatingSystem": "Any", "browserRequirements": "JavaScript", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "learningResourceType": "Parent-guided printable reading cards", "educationalUse": "Practice", "educationalLevel": "Beginner", "teaches": ["Reading short Traditional Chinese sentences with Zhuyin", "Phrase-by-phrase sentence decoding", "Rereading the same sentence without visible Zhuyin"], "citation": ["https://language.moe.gov.tw/001/Upload/Files/site_content/M0001/juyin/html_ch/index.html", "https://stroke-order.learningweb.moe.edu.tw/phonetic.jsp?la=0", "https://cirn.k12ea.gov.tw/TWELVE/List.aspx?fid=11010"], "author": {"@type": "Organization", "name": "iOS App Guide", "url": "https://alice51849.github.io/ios-app-guide"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh-Hant", "mainEntity": [{"@type": "Question", "name": "這個工具會計算閱讀程度或分數嗎？", "acceptedAnswer": {"@type": "Answer", "text": "不會。沒有計時、答對答錯按鈕、總分、等級或儲存進度。"}}, {"@type": "Question", "name": "遮住注音後讀出來，就代表已經熟練嗎？", "acceptedAnswer": {"@type": "Answer", "text": "不能這樣判定。它只是讓孩子重讀同一句，不能證明熟練度、流暢度或入學準備度。"}}, {"@type": "Question", "name": "句卡為什麼不放圖片？", "acceptedAnswer": {"@type": "Answer", "text": "短句活動把注意力留在國字與注音；繪本可另外用來享受故事、累積詞彙與親子對話。"}}, {"@type": "Question", "name": "閱讀資料會離開瀏覽器嗎？", "acceptedAnswer": {"@type": "Answer", "text": "不會收集閱讀反應；選擇只留在目前頁面記憶體，關閉後即重設。"}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "iOS App Guide", "item": "https://alice51849.github.io/ios-app-guide/zh-Hant/index.html"}, {"@type": "ListItem", "position": 2, "name": "免費工具", "item": "https://alice51849.github.io/ios-app-guide/zh-Hant/tools/"}, {"@type": "ListItem", "position": 3, "name": "注音短句閱讀卡產生器", "item": "https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-short-sentence-reading-cards.html"}]}</script>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/zh-Hant/index.html">iOS App Guide</a><nav class="nav-links"><a href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/">免費工具</a><a href="https://alice51849.github.io/ios-app-guide/tools/zhuyin-short-sentence-reading-cards.html">English</a></nav></div></header>
+<main>
+<section class="hero wrap">
+<div class="eyebrow">免費・原創・私密</div>
+<h1>注音短句閱讀卡產生器</h1>
+<p class="lead">孩子會拼單音，看到整句卻停住時，先讀一張完整標注注音的短句卡，再點一下遮住注音，重讀同一句；不計時，也不打分數。</p>
+<div class="trust"><span class="badge">不填姓名、免帳號、不計分、不上傳、不儲存兒童檔案</span><span class="badge scope">原創文字練習；不是閱讀測驗、程度分級或診斷</span></div>
+</section>
+<section class="workspace wrap" id="generator">
+<h2>建立一組低壓力短句</h2>
+<div class="controls">
+<div><span class="control-label">選擇句子長度</span><div class="seg" id="level-buttons" role="group" aria-label="選擇句子長度"><button type="button" class="on" data-level="short">三字短句</button><button type="button" data-level="everyday">六至七字生活句</button><button type="button" data-level="clauses">兩段式短句</button></div></div>
+<label><span class="control-label">句卡張數</span><select id="card-count"><option value="3">3</option><option value="6" selected>6</option><option value="8">8</option></select></label>
+</div>
+<p class="level-help" id="level-help">先讀熟悉的主詞與動作。每個國字都有標準注音，詞組之間保留小間距。</p>
+<div class="actions"><button class="button" id="new-set" type="button">換一組短句</button><button class="button secondary" id="toggle-all" type="button">全部遮住注音</button><button class="button secondary" id="print-cards" type="button">列印句卡</button><button class="button secondary" id="share-tool" type="button">分享工具</button></div>
+<p class="status" id="status" aria-live="polite">目前顯示注音；先讀一次，再遮住做第二次。</p>
+<div class="cards" id="cards"><article class="reading-card"><div class="card-head"><span class="card-kicker">先看注音解碼，再遮住重讀</span><button class="toggle" type="button" data-index="0" aria-pressed="false">遮住注音</button></div><p class="sentence"><span class="phrase"><ruby>小<rt>ㄒㄧㄠˇ</rt></ruby><ruby>鳥<rt>ㄋㄧㄠˇ</rt></ruby></span><span class="phrase"><ruby>飛<rt>ㄈㄟ</rt></ruby>。</span></p></article><article class="reading-card"><div class="card-head"><span class="card-kicker">先看注音解碼，再遮住重讀</span><button class="toggle" type="button" data-index="1" aria-pressed="false">遮住注音</button></div><p class="sentence"><span class="phrase"><ruby>小<rt>ㄒㄧㄠˇ</rt></ruby><ruby>狗<rt>ㄍㄡˇ</rt></ruby></span><span class="phrase"><ruby>跑<rt>ㄆㄠˇ</rt></ruby>。</span></p></article><article class="reading-card"><div class="card-head"><span class="card-kicker">先看注音解碼，再遮住重讀</span><button class="toggle" type="button" data-index="2" aria-pressed="false">遮住注音</button></div><p class="sentence"><span class="phrase"><ruby>青<rt>ㄑㄧㄥ</rt></ruby><ruby>蛙<rt>ㄨㄚ</rt></ruby></span><span class="phrase"><ruby>跳<rt>ㄊㄧㄠˋ</rt></ruby>。</span></p></article></div>
+<p class="level-help">列印時會顯示全部注音並隱藏操作按鈕。每一句保持單行；較長句卡可改用橫向列印。</p>
+</section>
+<section class="content-grid wrap">
+<article class="content-card"><h2>從拼出一個音節，走到讀完一句話</h2><p>認符號、拼音節和讀完整句子是不同步驟。這組純文字句卡一次只加一層：先讀短詞組，再讀完整句，最後遮住注音重讀同一句。</p></article>
+<article class="content-card"><h2>四步驟重讀法</h2><ol><li>大人先示範一次，手指依序指向每個有注音的國字。</li><li>孩子看著注音，按照自己的速度慢慢讀。</li><li>遮住注音，再重讀完全相同的句子。</li><li>一次幾張就好；沒有計時、目標速度或分數。</li></ol></article>
+<article class="content-card full"><h2>刻意不放猜字圖片</h2><p>短句卡把注意力留在國字與注音上，不要求孩子看圖猜字。繪本可另外用來享受故事、聊內容與累積詞彙；這裡只做短而專注的解碼練習。</p></article>
+</section>
+<section class="cta-card wrap"><h2>讀句子前，還想加強聽音與拼讀？</h2><p>Lumi 注音星球是選配的練習層，提供聽音、描寫、聲調與拼讀遊戲。一次付費永久解鎖，無廣告、無訂閱、免帳號；不使用 App 也能完整使用上方免費句卡。</p><a class="button" href="https://apps.apple.com/app/id6773017109?ct=iag_zhuyin_sentence_reading_zh-hant">家長前往 App Store 查看 Lumi 注音星球</a></section>
+<section class="sources wrap"><h2>資料來源與適用範圍</h2><ul><li><a href="https://language.moe.gov.tw/001/Upload/Files/site_content/M0001/juyin/html_ch/index.html" rel="noopener noreferrer">教育部《國語注音符號手冊》</a></li><li><a href="https://stroke-order.learningweb.moe.edu.tw/phonetic.jsp?la=0" rel="noopener noreferrer">教育部常用國字標準字體筆順學習網</a></li><li><a href="https://cirn.k12ea.gov.tw/TWELVE/List.aspx?fid=11010" rel="noopener noreferrer">CIRN 國語文第一學習階段學習重點</a></li></ul><p>官方資料只用來核對標準符號、字形，以及「利用注音讀物學習閱讀」與「正確朗讀文本」等第一學習階段目標；教育部沒有設計、測試或推薦本句卡。所有短句皆為本站原創，未重製教育部練習單、圖片、音檔或評量。</p><div class="faq-list"><details><summary>這個工具會計算閱讀程度或分數嗎？</summary><p>不會。沒有計時、答對答錯按鈕、總分、等級或儲存進度。</p></details><details><summary>遮住注音後讀出來，就代表已經熟練嗎？</summary><p>不能這樣判定。它只是讓孩子重讀同一句，不能證明熟練度、流暢度或入學準備度。</p></details><details><summary>句卡為什麼不放圖片？</summary><p>短句活動把注意力留在國字與注音；繪本可另外用來享受故事、累積詞彙與親子對話。</p></details><details><summary>閱讀資料會離開瀏覽器嗎？</summary><p>不會收集閱讀反應；選擇只留在目前頁面記憶體，關閉後即重設。</p></details></div></section>
+</main>
+<script>
+const DATA={"short": [{"phrases": [{"tokens": [{"char": "小", "reading": "ㄒㄧㄠˇ"}, {"char": "鳥", "reading": "ㄋㄧㄠˇ"}], "after": ""}, {"tokens": [{"char": "飛", "reading": "ㄈㄟ"}], "after": "。"}]}, {"phrases": [{"tokens": [{"char": "小", "reading": "ㄒㄧㄠˇ"}, {"char": "狗", "reading": "ㄍㄡˇ"}], "after": ""}, {"tokens": [{"char": "跑", "reading": "ㄆㄠˇ"}], "after": "。"}]}, {"phrases": [{"tokens": [{"char": "青", "reading": "ㄑㄧㄥ"}, {"char": "蛙", "reading": "ㄨㄚ"}], "after": ""}, {"tokens": [{"char": "跳", "reading": "ㄊㄧㄠˋ"}], "after": "。"}]}, {"phrases": [{"tokens": [{"char": "我", "reading": "ㄨㄛˇ"}], "after": ""}, {"tokens": [{"char": "喝", "reading": "ㄏㄜ"}, {"char": "水", "reading": "ㄕㄨㄟˇ"}], "after": "。"}]}, {"phrases": [{"tokens": [{"char": "花", "reading": "ㄏㄨㄚ"}, {"char": "朵", "reading": "ㄉㄨㄛˇ"}], "after": ""}, {"tokens": [{"char": "開", "reading": "ㄎㄞ"}], "after": "。"}]}, {"phrases": [{"tokens": [{"char": "大", "reading": "ㄉㄚˋ"}, {"char": "雨", "reading": "ㄩˇ"}], "after": ""}, {"tokens": [{"char": "停", "reading": "ㄊㄧㄥˊ"}], "after": "。"}]}, {"phrases": [{"tokens": [{"char": "太", "reading": "ㄊㄞˋ"}, {"char": "陽", "reading": "ㄧㄤˊ"}], "after": ""}, {"tokens": [{"char": "升", "reading": "ㄕㄥ"}], "after": "。"}]}, {"phrases": [{"tokens": [{"char": "白", "reading": "ㄅㄞˊ"}, {"char": "雲", "reading": "ㄩㄣˊ"}], "after": ""}, {"tokens": [{"char": "飄", "reading": "ㄆㄧㄠ"}], "after": "。"}]}], "everyday": [{"phrases": [{"tokens": [{"char": "雨", "reading": "ㄩˇ"}, {"char": "滴", "reading": "ㄉㄧ"}], "after": ""}, {"tokens": [{"char": "落", "reading": "ㄌㄨㄛˋ"}, {"char": "在", "reading": "ㄗㄞˋ"}], "after": ""}, {"tokens": [{"char": "屋", "reading": "ㄨ"}, {"char": "頂", "reading": "ㄉㄧㄥˇ"}, {"char": "上", "reading": "ㄕㄤˋ"}], "after": "。"}]}, {"phrases": [{"tokens": [{"char": "紅", "reading": "ㄏㄨㄥˊ"}, {"char": "花", "reading": "ㄏㄨㄚ"}], "after": ""}, {"tokens": [{"char": "開", "reading": "ㄎㄞ"}, {"char": "在", "reading": "ㄗㄞˋ"}], "after": ""}, {"tokens": [{"char": "草", "reading": "ㄘㄠˇ"}, {"char": "地", "reading": "ㄉㄧˋ"}, {"char": "上", "reading": "ㄕㄤˋ"}], "after": "。"}]}, {"phrases": [{"tokens": [{"char": "小", "reading": "ㄒㄧㄠˇ"}, {"char": "鳥", "reading": "ㄋㄧㄠˇ"}], "after": ""}, {"tokens": [{"char": "飛", "reading": "ㄈㄟ"}, {"char": "到", "reading": "ㄉㄠˋ"}], "after": ""}, {"tokens": [{"char": "屋", "reading": "ㄨ"}, {"char": "頂", "reading": "ㄉㄧㄥˇ"}, {"char": "上", "reading": "ㄕㄤˋ"}], "after": "。"}]}, {"phrases": [{"tokens": [{"char": "我", "reading": "ㄨㄛˇ"}, {"char": "用", "reading": "ㄩㄥˋ"}], "after": ""}, {"tokens": [{"char": "積", "reading": "ㄐㄧ"}, {"char": "木", "reading": "ㄇㄨˋ"}], "after": ""}, {"tokens": [{"char": "蓋", "reading": "ㄍㄞˋ"}, {"char": "高", "reading": "ㄍㄠ"}, {"char": "塔", "reading": "ㄊㄚˇ"}], "after": "。"}]}, {"phrases": [{"tokens": [{"char": "黑", "reading": "ㄏㄟ"}, {"char": "貓", "reading": "ㄇㄠ"}], "after": ""}, {"tokens": [{"char": "跳", "reading": "ㄊㄧㄠˋ"}, {"char": "過", "reading": "ㄍㄨㄛˋ"}], "after": ""}, {"tokens": [{"char": "小", "reading": "ㄒㄧㄠˇ"}, {"char": "木", "reading": "ㄇㄨˋ"}, {"char": "箱", "reading": "ㄒㄧㄤ"}], "after": "。"}]}, {"phrases": [{"tokens": [{"char": "我", "reading": "ㄨㄛˇ"}, {"char": "在", "reading": "ㄗㄞˋ"}], "after": ""}, {"tokens": [{"char": "紙", "reading": "ㄓˇ"}, {"char": "上", "reading": "ㄕㄤˋ"}], "after": ""}, {"tokens": [{"char": "畫", "reading": "ㄏㄨㄚˋ"}, {"char": "月", "reading": "ㄩㄝˋ"}, {"char": "亮", "reading": "ㄌㄧㄤˋ"}], "after": "。"}]}, {"phrases": [{"tokens": [{"char": "火", "reading": "ㄏㄨㄛˇ"}, {"char": "車", "reading": "ㄔㄜ"}], "after": ""}, {"tokens": [{"char": "穿", "reading": "ㄔㄨㄢ"}, {"char": "過", "reading": "ㄍㄨㄛˋ"}], "after": ""}, {"tokens": [{"char": "山", "reading": "ㄕㄢ"}, {"char": "洞", "reading": "ㄉㄨㄥˋ"}], "after": "。"}]}, {"phrases": [{"tokens": [{"char": "雨", "reading": "ㄩˇ"}, {"char": "後", "reading": "ㄏㄡˋ"}], "after": ""}, {"tokens": [{"char": "天", "reading": "ㄊㄧㄢ"}, {"char": "空", "reading": "ㄎㄨㄥ"}], "after": ""}, {"tokens": [{"char": "有", "reading": "ㄧㄡˇ"}, {"char": "彩", "reading": "ㄘㄞˇ"}, {"char": "虹", "reading": "ㄏㄨㄥˊ"}], "after": "。"}]}], "clauses": [{"phrases": [{"tokens": [{"char": "清", "reading": "ㄑㄧㄥ"}, {"char": "晨", "reading": "ㄔㄣˊ"}], "after": "，"}, {"tokens": [{"char": "小", "reading": "ㄒㄧㄠˇ"}, {"char": "鳥", "reading": "ㄋㄧㄠˇ"}], "after": ""}, {"tokens": [{"char": "在", "reading": "ㄗㄞˋ"}, {"char": "樹", "reading": "ㄕㄨˋ"}, {"char": "上", "reading": "ㄕㄤˋ"}], "after": ""}, {"tokens": [{"char": "唱", "reading": "ㄔㄤˋ"}, {"char": "歌", "reading": "ㄍㄜ"}], "after": "。"}]}, {"phrases": [{"tokens": [{"char": "太", "reading": "ㄊㄞˋ"}, {"char": "陽", "reading": "ㄧㄤˊ"}], "after": ""}, {"tokens": [{"char": "落", "reading": "ㄌㄨㄛˋ"}, {"char": "山", "reading": "ㄕㄢ"}], "after": "，"}, {"tokens": [{"char": "天", "reading": "ㄊㄧㄢ"}, {"char": "空", "reading": "ㄎㄨㄥ"}], "after": ""}, {"tokens": [{"char": "變", "reading": "ㄅㄧㄢˋ"}, {"char": "成", "reading": "ㄔㄥˊ"}], "after": ""}, {"tokens": [{"char": "橘", "reading": "ㄐㄩˊ"}, {"char": "紅", "reading": "ㄏㄨㄥˊ"}, {"char": "色", "reading": "ㄙㄜˋ"}], "after": "。"}]}, {"phrases": [{"tokens": [{"char": "雨", "reading": "ㄩˇ"}, {"char": "停", "reading": "ㄊㄧㄥˊ"}], "after": ""}, {"tokens": [{"char": "以", "reading": "ㄧˇ"}, {"char": "後", "reading": "ㄏㄡˋ"}], "after": "，"}, {"tokens": [{"char": "青", "reading": "ㄑㄧㄥ"}, {"char": "蛙", "reading": "ㄨㄚ"}], "after": ""}, {"tokens": [{"char": "跳", "reading": "ㄊㄧㄠˋ"}, {"char": "出", "reading": "ㄔㄨ"}], "after": ""}, {"tokens": [{"char": "水", "reading": "ㄕㄨㄟˇ"}, {"char": "池", "reading": "ㄔˊ"}], "after": "。"}]}, {"phrases": [{"tokens": [{"char": "春", "reading": "ㄔㄨㄣ"}, {"char": "風", "reading": "ㄈㄥ"}], "after": ""}, {"tokens": [{"char": "吹", "reading": "ㄔㄨㄟ"}, {"char": "來", "reading": "ㄌㄞˊ"}], "after": "，"}, {"tokens": [{"char": "花", "reading": "ㄏㄨㄚ"}, {"char": "園", "reading": "ㄩㄢˊ"}], "after": ""}, {"tokens": [{"char": "開", "reading": "ㄎㄞ"}, {"char": "滿", "reading": "ㄇㄢˇ"}], "after": ""}, {"tokens": [{"char": "紅", "reading": "ㄏㄨㄥˊ"}, {"char": "花", "reading": "ㄏㄨㄚ"}], "after": "。"}]}, {"phrases": [{"tokens": [{"char": "黑", "reading": "ㄏㄟ"}, {"char": "貓", "reading": "ㄇㄠ"}], "after": ""}, {"tokens": [{"char": "躍", "reading": "ㄩㄝˋ"}, {"char": "過", "reading": "ㄍㄨㄛˋ"}], "after": ""}, {"tokens": [{"char": "木", "reading": "ㄇㄨˋ"}, {"char": "箱", "reading": "ㄒㄧㄤ"}], "after": "，"}, {"tokens": [{"char": "穩", "reading": "ㄨㄣˇ"}, {"char": "穩", "reading": "ㄨㄣˇ"}], "after": ""}, {"tokens": [{"char": "落", "reading": "ㄌㄨㄛˋ"}, {"char": "地", "reading": "ㄉㄧˋ"}], "after": "。"}]}, {"phrases": [{"tokens": [{"char": "遠", "reading": "ㄩㄢˇ"}, {"char": "方", "reading": "ㄈㄤ"}], "after": ""}, {"tokens": [{"char": "火", "reading": "ㄏㄨㄛˇ"}, {"char": "車", "reading": "ㄔㄜ"}], "after": ""}, {"tokens": [{"char": "穿", "reading": "ㄔㄨㄢ"}, {"char": "過", "reading": "ㄍㄨㄛˋ"}], "after": ""}, {"tokens": [{"char": "綠", "reading": "ㄌㄩˋ"}, {"char": "色", "reading": "ㄙㄜˋ"}], "after": ""}, {"tokens": [{"char": "山", "reading": "ㄕㄢ"}, {"char": "洞", "reading": "ㄉㄨㄥˋ"}], "after": "。"}]}, {"phrases": [{"tokens": [{"char": "彩", "reading": "ㄘㄞˇ"}, {"char": "虹", "reading": "ㄏㄨㄥˊ"}], "after": ""}, {"tokens": [{"char": "出", "reading": "ㄔㄨ"}, {"char": "現", "reading": "ㄒㄧㄢˋ"}], "after": "，"}, {"tokens": [{"char": "大", "reading": "ㄉㄚˋ"}, {"char": "家", "reading": "ㄐㄧㄚ"}], "after": ""}, {"tokens": [{"char": "抬", "reading": "ㄊㄞˊ"}, {"char": "頭", "reading": "ㄊㄡˊ"}], "after": ""}, {"tokens": [{"char": "看", "reading": "ㄎㄢˋ"}], "after": "。"}]}, {"phrases": [{"tokens": [{"char": "小", "reading": "ㄒㄧㄠˇ"}, {"char": "鳥", "reading": "ㄋㄧㄠˇ"}], "after": ""}, {"tokens": [{"char": "飛", "reading": "ㄈㄟ"}, {"char": "過", "reading": "ㄍㄨㄛˋ"}], "after": ""}, {"tokens": [{"char": "田", "reading": "ㄊㄧㄢˊ"}, {"char": "野", "reading": "ㄧㄝˇ"}], "after": "，"}, {"tokens": [{"char": "停", "reading": "ㄊㄧㄥˊ"}, {"char": "在", "reading": "ㄗㄞˋ"}], "after": ""}, {"tokens": [{"char": "高", "reading": "ㄍㄠ"}, {"char": "樹", "reading": "ㄕㄨˋ"}, {"char": "上", "reading": "ㄕㄤˋ"}], "after": "。"}]}]};
+const COPY={"hide": "遮住注音", "show": "顯示注音", "hideAll": "全部遮住注音", "showAll": "全部顯示注音", "kicker": "先看注音解碼，再遮住重讀", "ready": "目前顯示注音；先讀一次，再遮住做第二次。", "shared": "已開啟分享選單。", "cancelled": "已取消分享。", "copied": "已複製工具連結。", "copyFailed": "無法自動複製，請使用這個連結：", "levelHelp": {"short": "先讀熟悉的主詞與動作。每個國字都有標準注音，詞組之間保留小間距。", "everyday": "接著讀六至七字的生活句；看到詞組間距就稍停一下，不需要趕速度。", "clauses": "短句讀得舒服後，再試兩段式句子；逗號就是自然停頓的位置。"}, "shareTitle": "注音短句閱讀卡產生器", "shareText": "孩子會拼單音，看到整句卻停住時，先讀一張完整標注注音的短句卡，再點一下遮住注音，重讀同一句；不計時，也不打分數。"};
+let level="short";
+let count=6;
+let batch=[];
+let hidden=new Set();
+const cards=document.getElementById("cards");
+const countSelect=document.getElementById("card-count");
+const toggleAll=document.getElementById("toggle-all");
+const status=document.getElementById("status");
+const levelHelp=document.getElementById("level-help");
+
+function shuffle(items){
+  const result=[...items];
+  for(let i=result.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [result[i],result[j]]=[result[j],result[i]];
+  }
+  return result;
+}
+
+function makeBatch(){
+  batch=shuffle(DATA[level]).slice(0,Math.min(count,DATA[level].length));
+  hidden=new Set();
+  status.textContent=COPY.ready;
+  render();
+}
+
+function sentenceHTML(item,index){
+  const isHidden=hidden.has(index);
+  const phrases=item.phrases.map(phrase=>{
+    const tokens=phrase.tokens.map(token=>`<ruby>${token.char}<rt>${token.reading}</rt></ruby>`).join("");
+    return `<span class="phrase">${tokens}${phrase.after||""}</span>`;
+  }).join("");
+  return `<article class="reading-card"><div class="card-head"><span class="card-kicker">${COPY.kicker}</span><button class="toggle" type="button" data-index="${index}" aria-pressed="${isHidden}">${isHidden?COPY.show:COPY.hide}</button></div><p class="sentence ${isHidden?"reading-hidden":""}">${phrases}</p></article>`;
+}
+
+function render(){
+  cards.innerHTML=batch.map(sentenceHTML).join("");
+  const allHidden=batch.length>0&&hidden.size===batch.length;
+  toggleAll.textContent=allHidden?COPY.showAll:COPY.hideAll;
+  levelHelp.textContent=COPY.levelHelp[level];
+}
+
+document.getElementById("level-buttons").addEventListener("click",event=>{
+  const button=event.target.closest("button[data-level]");
+  if(!button)return;
+  level=button.dataset.level;
+  document.querySelectorAll("#level-buttons button").forEach(item=>item.classList.toggle("on",item===button));
+  makeBatch();
+});
+countSelect.addEventListener("change",()=>{count=Number(countSelect.value);makeBatch();});
+document.getElementById("new-set").addEventListener("click",makeBatch);
+cards.addEventListener("click",event=>{
+  const button=event.target.closest("button[data-index]");
+  if(!button)return;
+  const index=Number(button.dataset.index);
+  hidden.has(index)?hidden.delete(index):hidden.add(index);
+  render();
+});
+toggleAll.addEventListener("click",()=>{
+  if(hidden.size===batch.length)hidden.clear();
+  else hidden=new Set(batch.map((_,index)=>index));
+  render();
+});
+document.getElementById("print-cards").addEventListener("click",()=>window.print());
+document.getElementById("share-tool").addEventListener("click",async()=>{
+  const payload={title:COPY.shareTitle,text:COPY.shareText,url:window.location.href};
+  if(navigator.share){
+    try{
+      await navigator.share(payload);
+      status.textContent=COPY.shared;
+      return;
+    }catch(error){
+      if(error&&error.name==="AbortError"){
+        status.textContent=COPY.cancelled;
+        return;
+      }
+    }
+  }
+  try{
+    await navigator.clipboard.writeText(window.location.href);
+    status.textContent=COPY.copied;
+  }catch(error){
+    status.textContent=`${COPY.copyFailed} ${window.location.href}`;
+  }
+});
+makeBatch();
+</script>
+</body>
+</html>

@@ -25,6 +25,7 @@ BOPOMOFO_TOOL_PRIORITY = {
     "zhuyin-readiness-check.html": 0,
     "zhuyin-grade1-14-day-summer-calendar.html": 1,
     "zhuyin-blending-card-generator.html": 2,
+    "zhuyin-short-sentence-reading-cards.html": 2.5,
     "zhuyin-library-storytime-kit.html": 3,
     "zhuyin-parent-teacher-handoff-kit.html": 4,
     "zhuyin-family-picture-book-club-kit.html": 5,

@@ -89,6 +89,7 @@ jobs:
           python3 aeo_answers.py --cached-live --limit "$N"
           SUMMER_SLUG="how-can-my-child-prepare-for-grade-1-bopomofo-over-the-summer-before-school-starts"
           OBSERVATION_SLUG="how-can-i-check-my-child-s-zhuyin-skills-at-home-in-three-minutes"
+          READING_SLUG="how-can-i-help-a-child-who-can-blend-zhuyin-syllables-but-cannot-read-a-whole-sentence"
           EPUB_SLUG="where-can-i-download-a-free-bopomofo-epub-for-e-readers"
           LIBRARY_SLUG="where-can-a-school-library-download-catalog-records-for-a-bopomofo-epub"
           OER_SLUG="where-can-an-oer-repository-download-metadata-for-a-bopomofo-learning-resource"
@@ -104,6 +105,7 @@ jobs:
           if python3 -c 'import sys; sys.path.insert(0, "../social"); from appstore_live import live_app_keys; from videogen.registry import APPSTORE; sys.exit(0 if "lumibopomofo" in live_app_keys(APPSTORE, "pages", refresh=False) else 1)'; then
             python3 aeo_answers.py lumibopomofo --cached-live \
               --refresh-slug "$SUMMER_SLUG" --refresh-slug "$OBSERVATION_SLUG" \
+              --refresh-slug "$READING_SLUG" \
               --refresh-slug "$EPUB_SLUG" --refresh-slug "$LIBRARY_SLUG" \
               --refresh-slug "$OER_SLUG" --refresh-slug "$DCAT_SLUG" \
               --refresh-slug "$CSVW_SLUG" --refresh-slug "$BAGIT_SLUG" \
@@ -111,6 +113,7 @@ jobs:
               --refresh-slug "$RO_CRATE_SLUG" --refresh-slug "$METS_PREMIS_SLUG" \
               --refresh-slug "$ORE_SLUG" --refresh-slug "$LDES_SLUG"
             python3 aeo_answers_i18n.py "$SUMMER_SLUG" "$OBSERVATION_SLUG" \
+              "$READING_SLUG" \
               "$EPUB_SLUG" "$LIBRARY_SLUG" "$OER_SLUG" "$DCAT_SLUG" \
               "$CSVW_SLUG" "$BAGIT_SLUG" "$OCFL_SLUG" "$IIIF_SLUG" \
               "$RO_CRATE_SLUG" "$METS_PREMIS_SLUG" "$ORE_SLUG" "$LDES_SLUG" \
@@ -148,6 +151,7 @@ jobs:
           python3 zhuyin_library_storytime_kit.py
           python3 zhuyin_grade1_summer_calendar.py
           python3 zhuyin_blending_card_generator.py
+          python3 zhuyin_sentence_reading_cards.py
           python3 zhuyin_grade1_guide.py
           python3 zhuyin_anki_deck.py
           python3 zhuyin_skos_vocabulary.py

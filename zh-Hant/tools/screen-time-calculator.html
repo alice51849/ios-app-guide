@@ -1,5 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>螢幕使用時間計算器 — 小時、天數與專注成本</title><meta name="description" content="計算手機或 App 每年花費多少小時與天數，並建立 iPhone 專注封鎖計畫。"><link rel="canonical" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/screen-time-calculator.html">
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>私密螢幕時間與 App 封鎖規劃器｜透明算式</title>
+<meta name="description" content="把自行輸入的螢幕使用模式換算為透明年度等值，並另行規劃可逆封鎖時段；完全不存取裝置資料。">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/screen-time-calculator.html">
 <link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/screen-time-calculator.html">
 <link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/es-ES/tools/screen-time-calculator.html">
 <link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/tools/screen-time-calculator.html">
@@ -10,69 +16,248 @@
 <link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/screen-time-calculator.html">
 <link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/tools/screen-time-calculator.html">
 <link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/screen-time-calculator.html">
-<meta property="og:type" content="website"><meta property="og:title" content="螢幕使用時間計算器 — 小時、天數與專注成本"><meta property="og:description" content="計算手機或 App 每年花費多少小時與天數，並建立 iPhone 專注封鎖計畫。"><meta property="og:url" content="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/screen-time-calculator.html"><meta name="twitter:card" content="summary"><style>
-:root{--bg:#f7f7fb;--card:#fff;--ink:#161622;--muted:#5d6370;--line:#e6e7ef;--brand:#5b5ff2;--brand2:#8b5cf6;--ok:#0f8f5f;--warn:#b7791f}*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#fff,var(--bg));color:var(--ink);line-height:1.55}a{color:#3840d0}.wrap{width:min(1040px,100% - 32px);margin:auto}.top{padding:18px 0;border-bottom:1px solid var(--line);background:rgba(255,255,255,.86);backdrop-filter:blur(12px);position:sticky;top:0;z-index:3}.nav{display:flex;justify-content:space-between;gap:16px;align-items:center}.nav a{text-decoration:none;font-weight:700}.hero{padding:46px 0 24px}.eyebrow{color:var(--brand);font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem}h1{font-size:clamp(2rem,6vw,4rem);line-height:1.02;margin:.2em 0}h2{font-size:clamp(1.35rem,3vw,2rem);margin:1.2em 0 .55em}h3{margin:1em 0 .35em}p.lead{font-size:1.15rem;color:var(--muted);max-width:760px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.card{grid-column:span 12;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 8px 30px rgba(31,34,78,.06)}@media(min-width:760px){.half{grid-column:span 6}.third{grid-column:span 4}.two{grid-column:span 8}.side{grid-column:span 4}}label{display:block;font-weight:750;margin:12px 0 6px}input,select,textarea{width:100%;font:inherit;padding:12px 13px;border:1px solid #cfd2df;border-radius:13px;background:#fff}textarea{min-height:170px;resize:vertical}button,.cta{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:white!important;text-decoration:none;font-weight:850;padding:13px 18px;box-shadow:0 8px 22px rgba(91,95,242,.22);cursor:pointer}.ghost{background:#fff!important;color:#3840d0!important;border:1px solid #cfd2df;box-shadow:none}.result{background:#f2f5ff;border:1px solid #dfe4ff;border-radius:18px;padding:16px;margin-top:16px}.muted{color:var(--muted)}.pill{display:inline-block;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 10px;margin:3px;font-weight:700}.checklist li{margin:.45em 0}.footer{margin-top:40px;padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}.notice{font-size:.92rem;color:#626875}.score{font-size:3rem;font-weight:900;color:var(--brand);line-height:1}.bar{height:12px;background:#e8eaff;border-radius:99px;overflow:hidden}.bar span{display:block;height:100%;background:linear-gradient(135deg,var(--brand),var(--brand2));width:0}.preview{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px;margin-top:12px}.thumb{border:1px solid var(--line);border-radius:14px;padding:8px;background:#fff}.thumb img{width:100%;height:120px;object-fit:cover;border-radius:10px}.small{font-size:.92rem}.ok{color:var(--ok);font-weight:800}.warn{color:var(--warn);font-weight:800}@media print{body{background:white}.top,.hero,.no-print,.footer{display:none!important}.wrap{width:100%;}}
-</style><script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SoftwareApplication","name":"LockHour Pro","operatingSystem":"iOS","applicationCategory":"ProductivityApplication","url":"https://apps.apple.com/app/id6780107485?ct=iag_lp","installUrl":"https://apps.apple.com/app/id6780107485?ct=iag_lp","description":"iPhone focus and app-blocking tool for intentional deep-work sessions.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Free to download; check the App Store for current pricing and unlock details."}}
-</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much time do I spend on my phone per year?","acceptedAnswer":{"@type":"Answer","text":"Multiply your daily average by the number of days per week you use it, then by 52.1429 weeks per year."}},{"@type":"Question","name":"Where is iPhone Screen Time?","acceptedAnswer":{"@type":"Answer","text":"Open Settings, then Screen Time, then See All App & Website Activity."}},{"@type":"Question","name":"Can an app blocker help focus?","acceptedAnswer":{"@type":"Answer","text":"It can help when you pair blocking with a specific focus block and a replacement task."}}]}
-</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"HowTo","name":"How to calculate annual screen time","step":[{"@type":"HowToStep","name":"Find daily average","text":"Check iPhone Screen Time for daily phone or app usage."},{"@type":"HowToStep","name":"Enter days per week","text":"Choose how often the pattern happens."},{"@type":"HowToStep","name":"Set reduction goal","text":"Calculate hours and days saved by reducing usage."}]}
-</script><script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://alice51849.github.io/ios-app-guide/#organization",
-      "name": "iOS App Guide",
-      "url": "https://alice51849.github.io/ios-app-guide"
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://alice51849.github.io/ios-app-guide/#website",
-      "url": "https://alice51849.github.io/ios-app-guide",
-      "name": "iOS App Guide",
-      "publisher": {
-        "@id": "https://alice51849.github.io/ios-app-guide/#organization"
-      }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "iOS App Guide",
-          "item": "https://alice51849.github.io/ios-app-guide/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Tools",
-          "item": "https://alice51849.github.io/ios-app-guide/tools/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Screen Time Calculator — Hours, Days & Focus Cost",
-          "item": "https://alice51849.github.io/ios-app-guide/tools/screen-time-calculator.html"
-        }
-      ]
-    }
-  ]
-}
-</script>
-</head><body><header class="top no-print"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/zh-Hant/index.html">iOS App Guide</a><nav><a href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/">免費工具</a> · <a href="https://alice51849.github.io/ios-app-guide/zh-Hant/alternatives/">替代方案</a></nav></div></header><main>
-<section class="hero wrap"><div class="eyebrow">免費螢幕使用時間計算器</div><h1>螢幕使用時間計算器</h1><p class="lead">把每日手機或 App 時間換算成年小時、流失天數與簡單專注封鎖計畫。</p><p class="no-print"><a class="cta" href="https://apps.apple.com/app/id6780107485?ct=iag_lp" rel="nofollow noopener">用 LockHour Pro 封鎖分心 App →</a></p></section>
-<section class="wrap grid"><div class="card two"><div class="grid"><label class="third">每天小時<input id="hours" type="number" min="0" step="0.1" value="3.5"></label><label class="third">每週天數<input id="days" type="number" min="1" max="7" step="1" value="7"></label><label class="third">目標：減少 %<input id="reduce" type="number" min="0" max="100" step="5" value="30"></label></div><label>你要測量什麼？<select id="mode"><option>手機螢幕時間</option><option>社群媒體 App</option><option>影片 App</option><option>遊戲</option><option>新聞或購物</option></select></label><p><button id="calcBtn">計算時間成本</button></p><div id="out" class="result"></div></div><aside class="card side"><h2>專注封鎖計劃</h2><ol class="checklist"><li>選一個反覆出現的高風險時段：早晨、工作時段、通勤或睡前。</li><li>只封鎖會破壞這段時間的 App。</li><li>用預先準備的任務替代習慣：閱讀、運動、筆記或深度工作。</li><li>每週回顧省下的時間。</li></ol><p><a href="../answers/screen-time-not-working-iphone-alternative.html">閱讀：螢幕使用時間失效？</a></p></aside></section>
-<section class="wrap grid"><div class="card half"><h2>這些數字的含義</h2><p>每天的小習慣會累加。每天一小時就是一年 365 小時：相當於九個以上的 40 小時工作週，或大約十五個完整的 24 小時。</p></div><div class="card half"><h2>LockHour Pro 什麼時候有用</h2><p>如果 Apple 螢幕使用時間太容易被忽略，專用的專注封鎖器可以為深度工作、學習、運動與睡眠作息創造有意安排的時段。</p><p><a class="cta" href="https://apps.apple.com/app/id6780107485?ct=iag_lp" rel="nofollow noopener">下載 LockHour Pro →</a></p></div></section>
-<section class="wrap card"><h2>常見問題</h2><h3>如何查看 iPhone 螢幕使用時間？</h3><p>打開設定 → 螢幕使用時間 → 查看全部 App 與網站活動，再在這裡使用每日平均或某個 App 的平均。</p><h3>所有螢幕時間都不好嗎？</h3><p>不是。工作、導航、閱讀與溝通都可能很有價值。這個計算器最適合你想減少的非必要 App。</p><h3>多少的減少目標才實際？</h3><p>從 20–30% 開始。例如，先把 3 小時的習慣減少 45–60 分鐘，再嘗試完全的數位排毒。</p></section>
-<section class="related-resources"><h2>相關資源</h2><ul><li><a href="https://alice51849.github.io/ios-app-guide/zh-Hant/guides/lockhour.html">LockHour Pro App 指南</a></li><li><a href="https://alice51849.github.io/ios-app-guide/alternatives/lockhour-free-to-start.html">LockHour Pro 無訂閱對比</a></li></ul></section>
+<meta property="og:type" content="website">
+<meta property="og:title" content="私密螢幕時間與 App 封鎖規劃器">
+<meta property="og:description" content="把自行輸入的螢幕使用模式換算為透明年度等值，並另行規劃可逆封鎖時段；完全不存取裝置資料。">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/screen-time-calculator.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#17243a;--muted:#627087;--line:#dce3ee;--paper:#fff;--bg:#eef4fb;--navy:#23466f;--blue:#4b7fb8;--soft:#e8f1fc;--warn:#fff6d9;--shadow:0 22px 60px rgba(31,61,95,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,#fff 0,var(--bg) 55%,#e0e9f4 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:#315f93}.wrap{width:min(1120px,calc(100% - 30px));margin:auto}.top{position:sticky;top:0;z-index:8;background:#fffffff2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}.links{display:flex;gap:15px;overflow-x:auto}
+.hero{padding:64px 0 30px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--navy);white-space:nowrap}.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}.hero h1{font-size:clamp(34px,6vw,62px);line-height:1.04;letter-spacing:-.035em;margin:.3em 0 .22em;white-space:nowrap;overflow-x:auto}.lead{font-size:clamp(17px,2.2vw,21px);color:var(--muted);margin:0;white-space:nowrap;overflow-x:auto}.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.planner,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}.planner{padding:clamp(20px,4vw,36px);margin:16px auto 30px}.planner h2,.card h2,.app-card h2{font-size:clamp(24px,3.6vw,34px);line-height:1.14;margin:0;white-space:nowrap;overflow-x:auto}.intro{color:var(--muted);white-space:nowrap;overflow-x:auto}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px}.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--navy);margin-bottom:6px;white-space:nowrap;overflow-x:auto}select,input,button{font:inherit}select,input[type=number]{width:100%;min-height:46px;border:1px solid #cbd6e3;border-radius:13px;background:#fff;color:var(--ink);padding:9px 11px}.toggle{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:14px;padding:11px 13px;background:#fff;font-weight:760;white-space:nowrap;overflow-x:auto}.toggle input{inline-size:20px;block-size:20px;flex:0 0 auto}.button{border:0;border-radius:999px;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;text-decoration:none;font-weight:850;padding:11px 17px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(35,70,111,.2)}
+.results{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:11px;margin-top:22px}.result{background:var(--soft);border:1px solid #cbdcf0;border-radius:17px;padding:14px;min-width:0}.result strong,.result span{display:block;white-space:nowrap;overflow-x:auto}.result strong{font-size:12px;color:#456788;text-transform:uppercase;letter-spacing:.04em}.result span{font-size:15px;color:#2e4b68;font-weight:760;margin-top:5px}.note{background:var(--warn);border:1px solid #ead9a7;border-radius:16px;padding:13px 15px;margin:14px 0 0;white-space:nowrap;overflow-x:auto}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:30px}.card,.app-card{padding:clamp(20px,3.5vw,30px)}.card.wide{grid-column:1/-1}.card p,.card li,.app-card p,.faq details p,.faq summary{white-space:nowrap;overflow-x:auto}.card ul,.card ol{padding-left:22px}.card li{margin:8px 0}.source-list a{overflow-wrap:anywhere}.app-card{margin:0 auto 38px;background:linear-gradient(135deg,#fbfdff,#e7f0fa)}.app-card .button{display:inline-flex;margin-top:5px}.faq{margin-bottom:30px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+.footer{background:var(--navy);color:#eef4fb;text-align:center;padding:27px 0;white-space:nowrap;overflow-x:auto}
+@media(max-width:960px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.controls,.results{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1120px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{.top,.hero,.controls,.button,.app-card,.footer{display:none!important}body{background:#fff}.planner,.card{box-shadow:none;break-inside:avoid}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"私密螢幕時間與 App 封鎖規劃器","description":"把自行輸入的螢幕使用模式換算為透明年度等值，並另行規劃可逆封鎖時段；完全不存取裝置資料。","url":"https://alice51849.github.io/ios-app-guide/zh-Hant/tools/screen-time-calculator.html","inLanguage":"zh-Hant","datePublished":"2026-07-15","dateModified":"2026-07-15","applicationCategory":"ProductivityApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["No Screen Time or installed-app access","Transparent annual-equivalent observed-pattern math","Separate scheduled-block math","Essential-access preflight","No saved-time, focus, health or productivity prediction"],"citation":["https://support.apple.com/guide/iphone/get-started-with-screen-time-iphbfa595995/ios","https://support.apple.com/guide/iphone/set-schedules-with-screen-time-iphb0c7313c9/ios","https://support.apple.com/guide/iphone/set-up-a-focus-iphd6288a67f/ios"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hant","mainEntity":[{"@type":"Question","name":"這個網頁會讀取我的 iPhone 螢幕使用時間嗎？","acceptedAnswer":{"@type":"Answer","text":"不會。你只會手動輸入有界數值；本頁無法存取裝置、App 或帳號。"}},{"@type":"Question","name":"排定封鎖小時等於省下時間嗎？","acceptedAnswer":{"@type":"Answer","text":"不等於。排程只是意圖；本頁不會假設封鎖真的執行或改變行為。"}},{"@type":"Question","name":"所有螢幕使用時間都不好嗎？","acceptedAnswer":{"@type":"Answer","text":"不是。本算式不會把工作、聯絡、導航、閱讀或任何用途評為好壞。"}},{"@type":"Question","name":"必要 App 應該一起封鎖嗎？","acceptedAnswer":{"@type":"Answer","text":"不應該。任何限制前都要檢查聯絡、導航、驗證、無障礙與照護存取。"}}]}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/zh-Hant/index.html">iOS App Guide</a><nav class="links"><a href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/index.html">免費工具</a><a href="https://alice51849.github.io/ios-app-guide/tools/screen-time-calculator.html">English</a></nav></div></header>
+<main>
+<section class="hero wrap"><div class="eyebrow">免費 · 本機運算 · 不存取裝置</div><h1>私密螢幕時間與 App 封鎖規劃器</h1><p class="lead">輸入你已知道的使用模式，再分開規劃保護時段；排定封鎖時間不會被宣稱為省下時間或保證專注。</p><div class="badges"><span class="badge">不讀取螢幕使用時間或 App</span><span class="badge">不存取帳號或聯絡人</span><span class="badge">不宣稱省下時間</span><span class="badge">不保證專注或健康成果</span></div></section>
+<section class="planner wrap"><h2>分開比較已觀察模式與規劃封鎖</h2><p class="intro">第一組算式把輸入模式換算成年等值；第二組只加總排定封鎖，兩者不相減，也不預測行為。</p>
+<form id="screen-planner"><div class="controls">
+<div class="field"><label for="measurement">你要衡量什麼？</label><select id="measurement"><option value="total-device">整體裝置使用</option><option value="social-media">社群媒體</option><option value="video">影音</option><option value="games">遊戲</option><option value="news-shopping">新聞或購物</option></select></div>
+<div class="field"><label for="daily-minutes">每個使用日觀察到的分鐘</label><input id="daily-minutes" type="number" min="0" max="1440" step="1" value="0"></div>
+<div class="field"><label for="days-per-week">每週觀察到的使用日數</label><input id="days-per-week" type="number" min="1" max="7" step="1" value="1"></div>
+<div class="field"><label for="block-minutes">規劃封鎖長度</label><select id="block-minutes"><option value="0">尚未選擇封鎖</option><option value="15">15 分鐘</option><option value="25">25 分鐘</option><option value="30">30 分鐘</option><option value="45">45 分鐘</option><option value="60">60 分鐘</option><option value="90">90 分鐘</option><option value="120">120 分鐘</option></select></div>
+<div class="field"><label for="block-days">每週規劃封鎖日數</label><input id="block-days" type="number" min="0" max="7" step="1" value="0"></div>
+<div class="field"><label for="block-window">封鎖時段</label><select id="block-window"><option value="custom">自訂</option><option value="morning">早晨</option><option value="work-study">工作或學習</option><option value="evening">晚間</option></select></div>
+<label class="toggle"><input id="essential-reviewed" type="checkbox">封鎖前已檢查必要存取</label>
+</div><p><button class="button" type="submit">更新透明規劃</button></p></form>
+<div class="results"><div class="result"><strong>觀察模式年度等值小時</strong><span id="result-observed-hours"></span></div><div class="result"><strong>觀察模式年度等值 24 小時天數</strong><span id="result-observed-days"></span></div><div class="result"><strong>每週排定封鎖分鐘</strong><span id="result-block-week"></span></div><div class="result"><strong>52 週排定封鎖小時</strong><span id="result-block-year"></span></div><div class="result"><strong>選定衡量項目</strong><span id="result-measurement"></span></div></div>
+<p class="note">觀察模式年度等值使用「每日分鐘 × 每週使用日 ÷ 7 × 365」；它只代表本頁輸入，不是直接讀取 iPhone 螢幕使用時間。</p><p class="note">排定封鎖小時使用「封鎖長度 × 每週封鎖日 × 52」；它只是行事曆意圖，不是省下的螢幕時間、找回的注意力、增加的專注或完成的工作。</p><p class="note"><strong>可逆啟動前檢查:</strong> <span id="result-plan"></span></p></section>
+<section class="wrap grid"><article class="card"><h2>App 封鎖前先確認五件事</h2><ol><li>可以的話先用「設定 &gt; 螢幕使用時間」核對來源模式，不要只靠猜測。</li><li>只選擇和特定保護時段無關的 App。</li><li>保留必要聯絡、導航、驗證、無障礙與照護存取。</li><li>先定義允許的替代行動，以及明確結束或復原方式。</li><li>先測試最短且實際的封鎖，檢查真實結果後再調整，不宣稱省下時間。</li></ol></article><article class="card"><h2>這個規劃器不知道什麼</h2><p>它無法讀取螢幕使用時間報告、已安裝 App、通知、聯絡人、裝置設定或執行結果。本工具只供個人規劃，不適用於兒童安全、緊急存取、醫療照護、員工監控或治療。</p></article><article class="card wide"><h2>官方功能背景，不是成果證據</h2><p>Apple 說明查看螢幕使用時間、設定排程與限制，以及用「專注模式」減少干擾；這些功能不會證明規劃封鎖一定能減少使用或提升專注。</p><ul class="source-list"><li><a href="https://support.apple.com/guide/iphone/get-started-with-screen-time-iphbfa595995/ios" rel="noopener">Apple：開始使用 iPhone 螢幕使用時間</a></li><li><a href="https://support.apple.com/guide/iphone/set-schedules-with-screen-time-iphb0c7313c9/ios" rel="noopener">Apple：在 iPhone 設定螢幕使用時間排程</a></li><li><a href="https://support.apple.com/guide/iphone/set-up-a-focus-iphd6288a67f/ios" rel="noopener">Apple：在 iPhone 設定專注模式</a></li></ul><p><a href="https://developer.chrome.com/docs/ai/webmcp/imperative-api" rel="noopener">Chrome WebMCP 命令式 API 預覽（規格可能變動）</a></p></article></section>
+<section class="wrap card faq"><h2>螢幕時間規劃常見問題</h2><details><summary>這個網頁會讀取我的 iPhone 螢幕使用時間嗎？</summary><p>不會。你只會手動輸入有界數值；本頁無法存取裝置、App 或帳號。</p></details><details><summary>排定封鎖小時等於省下時間嗎？</summary><p>不等於。排程只是意圖；本頁不會假設封鎖真的執行或改變行為。</p></details><details><summary>所有螢幕使用時間都不好嗎？</summary><p>不是。本算式不會把工作、聯絡、導航、閱讀或任何用途評為好壞。</p></details><details><summary>必要 App 應該一起封鎖嗎？</summary><p>不應該。任何限制前都要檢查聯絡、導航、驗證、無障礙與照護存取。</p></details></section>
+<section class="app-card wrap"><h2>需要選用的裝置端封鎖流程？</h2><p>LockHour Pro 是選用工具；目前 App Store 頁面說明包含選定 App 的定時封鎖與自動解鎖，以及 Quick Focus、Deep Work、Study、Sleep Wind Down、Morning Reset、Custom、小工具及 Live Activity。商店頁也標示免帳號、無廣告、無追蹤、資料留在裝置，以及一次性解鎖。供應地區與確切功能請以目前商店頁為準；本規劃器不需 App 也能使用。</p><a class="button" href="https://apps.apple.com/app/id6780107485?ct=iag_screen_plan_zh-hant" rel="nofollow noopener">在 App Store 查看 LockHour Pro</a></section>
 </main>
+<footer class="footer"><div class="wrap">只做私密規劃算式 · 不存取裝置 · 排定不等於省下</div></footer>
+<script type="application/json" id="screen-config">{"inputSchema":{"type":"object","properties":{"measurement":{"type":"string","enum":["total-device","social-media","video","games","news-shopping"]},"daily_minutes":{"type":"integer","minimum":0,"maximum":1440},"days_per_week":{"type":"integer","minimum":1,"maximum":7},"block_minutes":{"type":"integer","enum":[0,15,25,30,45,60,90,120]},"block_days_per_week":{"type":"integer","minimum":0,"maximum":7},"block_window":{"type":"string","enum":["custom","morning","work-study","evening"]},"essential_access_reviewed":{"type":"boolean"}},"required":["measurement","daily_minutes","days_per_week","block_minutes","block_days_per_week","block_window","essential_access_reviewed"],"additionalProperties":false},"labels":{"measurement":{"total-device":"整體裝置使用","social-media":"社群媒體","video":"影音","games":"遊戲","news-shopping":"新聞或購物"},"block_window":{"custom":"自訂","morning":"早晨","work-study":"工作或學習","evening":"晚間"}},"windowSteps":{"morning":["設定明確的早晨開始及結束時間，確認鬧鐘、交通、驗證與必要聯絡仍可使用。","封鎖開始前，先準備一個允許使用的第一步。"],"work-study":["選擇要封鎖的 App 前，先在本頁以外定義工作或學習成果。","保留必要聯絡、驗證、無障礙及參考工具。"],"evening":["設定明確的晚間結束點，保留緊急聯絡與照護存取。","準備允許使用的晚間活動，不要只留下空白限制。"],"custom":["在本頁以外說清楚真實情境，再設定開始、結束與退出方式。","只封鎖和該情境無關的 App，並保留必要工具。"]},"essentialYes":"第一次執行前重新核對允許清單，並使用最短且實際的測試時段，確保設定可逆。","essentialNo":"封鎖前先找出必要聯絡、導航、驗證、無障礙與照護工具，並準備可靠的退出或復原方式。","observedBoundary":"觀察模式年度等值使用「每日分鐘 × 每週使用日 ÷ 7 × 365」；它只代表本頁輸入，不是直接讀取 iPhone 螢幕使用時間。","blockBoundary":"排定封鎖小時使用「封鎖長度 × 每週封鎖日 × 52」；它只是行事曆意圖，不是省下的螢幕時間、找回的注意力、增加的專注或完成的工作。","scopeBoundary":"它無法讀取螢幕使用時間報告、已安裝 App、通知、聯絡人、裝置設定或執行結果。本工具只供個人規劃，不適用於兒童安全、緊急存取、醫療照護、員工監控或治療。","preflightChecklist":["可以的話先用「設定 > 螢幕使用時間」核對來源模式，不要只靠猜測。","只選擇和特定保護時段無關的 App。","保留必要聯絡、導航、驗證、無障礙與照護存取。","先定義允許的替代行動，以及明確結束或復原方式。","先測試最短且實際的封鎖，檢查真實結果後再調整，不宣稱省下時間。"],"toolDescription":"只用有界、自行輸入的分鐘與日數計算透明螢幕時間年度等值，並另行建立可逆 App 封鎖排程；不存取螢幕使用時間、已安裝 App、帳號、聯絡人或裝置資料，也不把規劃封鎖宣稱為省下時間、專注、健康或效率成果。","freePlanner":{"label":"私密螢幕時間與 App 封鎖規劃器","url":"https://alice51849.github.io/ios-app-guide/zh-Hant/tools/screen-time-calculator.html","boundary":"第一組算式把輸入模式換算成年等值；第二組只加總排定封鎖，兩者不相減，也不預測行為。"},"officialSources":[{"label":"Apple：開始使用 iPhone 螢幕使用時間","url":"https://support.apple.com/guide/iphone/get-started-with-screen-time-iphbfa595995/ios"},{"label":"Apple：在 iPhone 設定螢幕使用時間排程","url":"https://support.apple.com/guide/iphone/set-schedules-with-screen-time-iphb0c7313c9/ios"},{"label":"Apple：在 iPhone 設定專注模式","url":"https://support.apple.com/guide/iphone/set-up-a-focus-iphd6288a67f/ios"}],"webmcpSource":"https://developer.chrome.com/docs/ai/webmcp/imperative-api","optionalApp":{"label":"在 App Store 查看 LockHour Pro","boundary":"LockHour Pro 是選用工具；目前 App Store 頁面說明包含選定 App 的定時封鎖與自動解鎖，以及 Quick Focus、Deep Work、Study、Sleep Wind Down、Morning Reset、Custom、小工具及 Live Activity。商店頁也標示免帳號、無廣告、無追蹤、資料留在裝置，以及一次性解鎖。供應地區與確切功能請以目前商店頁為準；本規劃器不需 App 也能使用。","app_store_url":"https://apps.apple.com/app/id6780107485?ct=iag_screen_plan_zh-hant"}}</script>
 <script>
-function calc(){let h=parseFloat(hours.value)||0,d=Math.min(7,Math.max(1,parseFloat(days.value)||7)),r=Math.min(100,Math.max(0,parseFloat(reduce.value)||0));let annual=h*d*52.1429,daysYear=annual/24,workweeks=annual/40,books=annual/8,workouts=annual/.75,saved=annual*r/100,savedDays=saved/24;let dailySaved=h*r/100;out.innerHTML=`<h2>${mode.value}：你的年度成本</h2><p><span class="pill">${annual.toFixed(0)} 小時/年</span><span class="pill">${daysYear.toFixed(1)} 完整天/年</span><span class="pill">${workweeks.toFixed(1)} 個工作週</span></p><p>同樣的時間大約可以完成 <strong>${Math.floor(books)}</strong> 本 8 小時的書，或 <strong>${Math.floor(workouts)}</strong> 次 45 分鐘的鍔鍊。</p><h3>如果減少 ${r}%</h3><p><span class="pill">節省 ${saved.toFixed(0)} 小時/年</span><span class="pill">節省 ${savedDays.toFixed(1)} 天/年</span><span class="pill">${(dailySaved*60).toFixed(0)} 分鐘/天找回</span></p><h3>建議的第一個時段</h3><p>每天安排一段 <strong>${Math.max(25,Math.round(dailySaved*60/5)*5||25)} 分鐘</strong>、完全不碰${mode.value}的專注時段。持續一週有效,就再加一段。</p><p class="notice">為了最準確的輸入，請使用 iPhone 螢幕使用時間的每日平均。</p>`}calcBtn.onclick=calc;calc();
-</script><footer class="footer no-print"><div class="wrap">免費瀏覽器工具。不追蹤、不需帳號、不上傳伺服器。結果僅供參考，必要時請確認官方要求。</div></footer></body></html>
+(() => {
+  const config = JSON.parse(document.getElementById("screen-config").textContent);
+  const form = document.getElementById("screen-planner");
+  const fields = {
+    measurement: document.getElementById("measurement"),
+    daily_minutes: document.getElementById("daily-minutes"),
+    days_per_week: document.getElementById("days-per-week"),
+    block_minutes: document.getElementById("block-minutes"),
+    block_days_per_week: document.getElementById("block-days"),
+    block_window: document.getElementById("block-window"),
+    essential_access_reviewed: document.getElementById("essential-reviewed")
+  };
+  const output = {
+    observedHours: document.getElementById("result-observed-hours"),
+    observedDays: document.getElementById("result-observed-days"),
+    blockWeek: document.getElementById("result-block-week"),
+    blockYear: document.getElementById("result-block-year"),
+    measurement: document.getElementById("result-measurement"),
+    plan: document.getElementById("result-plan")
+  };
+
+  function round(value, digits = 1) {
+    const factor = 10 ** digits;
+    return Math.round(value * factor) / factor;
+  }
+
+  function enumValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const values = config.inputSchema.properties[name].enum;
+    if (typeof value !== "string" || !values.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    return value;
+  }
+
+  function integerValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const schema = config.inputSchema.properties[name];
+    if (!Number.isInteger(value)) {
+      throw new TypeError(`${name} must be an integer.`);
+    }
+    if (schema.enum && !schema.enum.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    if ((schema.minimum !== undefined && value < schema.minimum) ||
+        (schema.maximum !== undefined && value > schema.maximum)) {
+      throw new RangeError(`${name} is outside the supported range.`);
+    }
+    return value;
+  }
+
+  function booleanValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    if (typeof input[name] !== "boolean") {
+      throw new TypeError(`${name} must be a boolean.`);
+    }
+    return input[name];
+  }
+
+  function plan(input) {
+    const measurement = enumValue(input, "measurement");
+    const dailyMinutes = integerValue(input, "daily_minutes");
+    const daysPerWeek = integerValue(input, "days_per_week");
+    const blockMinutes = integerValue(input, "block_minutes");
+    const blockDays = integerValue(input, "block_days_per_week");
+    const blockWindow = enumValue(input, "block_window");
+    const essentialReviewed = booleanValue(input, "essential_access_reviewed");
+    if ((blockMinutes === 0) !== (blockDays === 0)) {
+      throw new RangeError(
+        "block_minutes and block_days_per_week must both be zero or both be positive.");
+    }
+    const annualObservedMinutes = dailyMinutes * daysPerWeek / 7 * 365;
+    const weeklyScheduledBlockMinutes = blockMinutes * blockDays;
+    const annualScheduledBlockMinutes = weeklyScheduledBlockMinutes * 52;
+    return {
+      selected_inputs: {
+        measurement,
+        measurement_label: config.labels.measurement[measurement],
+        daily_minutes: dailyMinutes,
+        days_per_week: daysPerWeek,
+        block_minutes: blockMinutes,
+        block_days_per_week: blockDays,
+        block_window: blockWindow,
+        block_window_label: config.labels.block_window[blockWindow],
+        essential_access_reviewed: essentialReviewed
+      },
+      observed_pattern_annual_equivalent: {
+        formula: "daily_minutes * days_per_week / 7 * 365",
+        minutes: round(annualObservedMinutes, 2),
+        hours: round(annualObservedMinutes / 60),
+        full_24_hour_days: round(annualObservedMinutes / 1440),
+        source_is_self_entered_not_device_reading: true
+      },
+      scheduled_block_plan: {
+        formula: "block_minutes * block_days_per_week * 52",
+        minutes_per_week: weeklyScheduledBlockMinutes,
+        minutes_across_52_weeks: annualScheduledBlockMinutes,
+        hours_across_52_weeks: round(annualScheduledBlockMinutes / 60),
+        is_not_a_saved_time_or_outcome_claim: true
+      },
+      reversible_preflight: [
+        essentialReviewed ? config.essentialYes : config.essentialNo,
+        ...config.windowSteps[blockWindow]
+      ],
+      observed_pattern_boundary: config.observedBoundary,
+      scheduled_block_boundary: config.blockBoundary,
+      scope_boundary: config.scopeBoundary
+    };
+  }
+
+  function validateInput(input) {
+    if (input === null || typeof input !== "object" || Array.isArray(input)) {
+      throw new TypeError("WebMCP input must be an object.");
+    }
+    const allowed = new Set(Object.keys(config.inputSchema.properties));
+    for (const name of Object.keys(input)) {
+      if (!allowed.has(name)) {
+        throw new RangeError(`${name} is not a supported input.`);
+      }
+    }
+    return plan(input);
+  }
+
+  function render() {
+    const result = plan({
+      measurement: fields.measurement.value,
+      daily_minutes: Number(fields.daily_minutes.value),
+      days_per_week: Number(fields.days_per_week.value),
+      block_minutes: Number(fields.block_minutes.value),
+      block_days_per_week: Number(fields.block_days_per_week.value),
+      block_window: fields.block_window.value,
+      essential_access_reviewed: fields.essential_access_reviewed.checked
+    });
+    output.observedHours.textContent =
+      String(result.observed_pattern_annual_equivalent.hours);
+    output.observedDays.textContent =
+      String(result.observed_pattern_annual_equivalent.full_24_hour_days);
+    output.blockWeek.textContent =
+      String(result.scheduled_block_plan.minutes_per_week);
+    output.blockYear.textContent =
+      String(result.scheduled_block_plan.hours_across_52_weeks);
+    output.measurement.textContent =
+      result.selected_inputs.measurement_label;
+    output.plan.textContent = result.reversible_preflight.join(" ");
+  }
+
+  async function registerWebMcp() {
+    if (!document.modelContext?.registerTool) return;
+    await document.modelContext.registerTool({
+      name: "plan_private_screen_time_block",
+      description: config.toolDescription,
+      inputSchema: config.inputSchema,
+      annotations: {readOnlyHint: true, untrustedContentHint: false},
+      execute: async (input) => {
+        const plan = validateInput(input);
+        const result = {
+          result_type: "private_screen_time_and_block_plan",
+          screen_time_apps_accounts_contacts_not_accessed: true,
+          scheduled_block_is_not_saved_time: true,
+          no_focus_health_or_productivity_prediction: true,
+          plan,
+          preflight_checklist: config.preflightChecklist,
+          optional_free_planner: config.freePlanner,
+          official_sources: config.officialSources,
+          webmcp_preview_source: config.webmcpSource
+        };
+        if (config.optionalApp) {
+          result.optional_lockhour_pro = config.optionalApp;
+        }
+        return JSON.stringify(result);
+      }
+    });
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    render();
+  });
+  for (const field of Object.values(fields)) {
+    field.addEventListener("change", render);
+  }
+  render();
+  registerWebMcp().catch((error) =>
+    console.error("WebMCP tool registration failed.", error));
+})();
+</script>
+</body>
+</html>

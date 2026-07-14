@@ -82,6 +82,7 @@ import prioritize_trip_planet_resources
 import queries
 import refresh_primary_resource_answers
 import rsscloud_config
+import screen_time_block_planner
 import static_api_catalog
 import vocabulary_habit_planner
 import wordmate_language_support
@@ -11567,6 +11568,185 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(first_bytes, english.read_bytes())
             self.assertEqual(stable_mtime, english.stat().st_mtime_ns)
 
+    def test_screen_time_block_planner_is_private_transparent_and_bounded(self):
+        english = screen_time_block_planner.render_page(
+            "en",
+            app_public=False,
+        )
+        chinese = screen_time_block_planner.render_page(
+            "zh-Hant",
+            app_public=False,
+        )
+        public = screen_time_block_planner.render_page(
+            "en",
+            app_public=True,
+        )
+        for page in (english, chinese):
+            self.assertIn('"@type":"WebApplication"', page)
+            self.assertIn('"dateModified":"2026-07-15"', page)
+            self.assertIn("document.modelContext?.registerTool", page)
+            self.assertIn(
+                'name: "plan_private_screen_time_block"',
+                page,
+            )
+            self.assertIn(
+                "annotations: {readOnlyHint: true, untrustedContentHint: false}",
+                page,
+            )
+            self.assertIn(
+                "screen_time_apps_accounts_contacts_not_accessed: true",
+                page,
+            )
+            self.assertIn(
+                "scheduled_block_is_not_saved_time: true",
+                page,
+            )
+            self.assertIn(
+                "no_focus_health_or_productivity_prediction: true",
+                page,
+            )
+            self.assertIn(screen_time_block_planner.APPLE_SCREEN_TIME, page)
+            self.assertIn(
+                screen_time_block_planner.APPLE_SCREEN_TIME_SCHEDULES,
+                page,
+            )
+            self.assertIn(screen_time_block_planner.APPLE_FOCUS, page)
+            self.assertIn(screen_time_block_planner.WEBMCP_SOURCE, page)
+            self.assertNotIn("books", page.lower())
+            self.assertNotIn("workouts", page.lower())
+            self.assertNotIn("20–30%", page)
+            self.assertNotIn("20-30%", page)
+            self.assertIn(
+                'id="daily-minutes" type="number" min="0" max="1440" '
+                'step="1" value="0"',
+                page,
+            )
+            self.assertIn(
+                'id="block-days" type="number" min="0" max="7" '
+                'step="1" value="0"',
+                page,
+            )
+            self.assertNotIn('type="file"', page)
+            self.assertNotIn("<textarea", page)
+            self.assertNotIn("FileReader", page)
+            self.assertNotIn("fetch(", page)
+            self.assertNotIn("XMLHttpRequest", page)
+            self.assertNotIn("localStorage", page)
+            self.assertNotIn("sessionStorage", page)
+            self.assertNotIn("navigator.modelContext", page)
+            self.assertNotIn("origin-trial", page.lower())
+            self.assertNotIn(f"id{screen_time_block_planner.APP_ID}", page)
+            for locale in screen_time_block_planner.ALT_LOCALES:
+                self.assertIn(f'hreflang="{locale}"', page)
+        self.assertIn("排定不等於省下", chinese)
+        self.assertIn("不存取裝置", chinese)
+        self.assertIn(f"id{screen_time_block_planner.APP_ID}", public)
+        schema = screen_time_block_planner.webmcp_input_schema("en")
+        self.assertFalse(schema["additionalProperties"])
+        self.assertEqual(
+            list(screen_time_block_planner.MEASUREMENTS),
+            schema["properties"]["measurement"]["enum"],
+        )
+        self.assertEqual(
+            1440,
+            schema["properties"]["daily_minutes"]["maximum"],
+        )
+        self.assertEqual(
+            list(screen_time_block_planner.BLOCK_MINUTES),
+            schema["properties"]["block_minutes"]["enum"],
+        )
+        self.assertEqual(
+            list(screen_time_block_planner.BLOCK_WINDOWS),
+            schema["properties"]["block_window"]["enum"],
+        )
+        self.assertEqual(
+            0,
+            schema["properties"]["block_days_per_week"]["minimum"],
+        )
+        self.assertEqual(
+            "boolean",
+            schema["properties"]["essential_access_reviewed"]["type"],
+        )
+        execute = screen_time_block_planner.SCRIPT.split(
+            "execute: async (input) => {",
+            1,
+        )[1].split("return JSON.stringify(result);", 1)[0]
+        for mutation in (
+            "textContent",
+            "innerHTML",
+            "appendChild",
+            "replaceChildren",
+            "scroll",
+            "fetch(",
+            "localStorage",
+        ):
+            self.assertNotIn(mutation, execute)
+        self.assertLess(
+            execute.index("optional_free_planner: config.freePlanner"),
+            execute.index("official_sources: config.officialSources"),
+        )
+        self.assertLess(
+            execute.index("official_sources: config.officialSources"),
+            execute.index("result.optional_lockhour_pro"),
+        )
+
+    def test_screen_time_block_planner_builds_both_pages_and_is_idempotent(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            tools = pages / "tools"
+            localized_tools = pages / "zh-Hant" / "tools"
+            tools.mkdir(parents=True)
+            localized_tools.mkdir(parents=True)
+            anchor = (
+                '<article class="card third" data-tool="'
+                'private-daily-checklist-planner"><h2><a href="'
+                'private-daily-checklist-planner.html">Daily plan</a></h2>'
+                "<p>Planner.</p></article>"
+            )
+            for index in (
+                tools / "index.html",
+                localized_tools / "index.html",
+            ):
+                index.write_text(
+                    f'<main><section class="wrap grid">{anchor}</section></main>',
+                    encoding="utf-8",
+                )
+            urls = screen_time_block_planner.build(
+                pages,
+                app_public=False,
+            )
+            self.assertEqual(2, len(urls))
+            english = tools / f"{screen_time_block_planner.SLUG}.html"
+            chinese = (
+                localized_tools
+                / f"{screen_time_block_planner.SLUG}.html"
+            )
+            self.assertTrue(english.exists())
+            self.assertTrue(chinese.exists())
+            for index in (
+                tools / "index.html",
+                localized_tools / "index.html",
+            ):
+                self.assertEqual(
+                    1,
+                    index.read_text(encoding="utf-8").count(
+                        f"{screen_time_block_planner.SLUG}.html"
+                    ),
+                )
+            self.assertNotIn(
+                f"id{screen_time_block_planner.APP_ID}",
+                english.read_text(encoding="utf-8"),
+            )
+            stable_mtime = 1_700_000_000_000_000_000
+            os.utime(english, ns=(stable_mtime, stable_mtime))
+            first_bytes = english.read_bytes()
+            screen_time_block_planner.build(
+                pages,
+                app_public=False,
+            )
+            self.assertEqual(first_bytes, english.read_bytes())
+            self.assertEqual(stable_mtime, english.stat().st_mtime_ns)
+
     def test_passport_print_answer_leads_with_free_private_tool(self):
         question = (
             "How can I arrange passport photos on a 4x6 print sheet without "
@@ -14120,6 +14300,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("document_scan_planner.py", materialize_block)
         self.assertNotIn("blurry_photo_diagnostic.py", materialize_block)
         self.assertNotIn("daily_checklist_planner.py", materialize_block)
+        self.assertNotIn("screen_time_block_planner.py", materialize_block)
         self.assertNotIn("vocabulary_habit_planner.py", materialize_block)
         availability_block = workflow.split(
             "- name: Refresh verified App Store availability once", 1
@@ -14148,6 +14329,10 @@ class GeneratorTests(unittest.TestCase):
             availability_block.index("refresh=True"),
             availability_block.index("daily_checklist_planner.py"),
         )
+        self.assertLess(
+            availability_block.index("refresh=True"),
+            availability_block.index("screen_time_block_planner.py"),
+        )
         self.assertNotIn("gen_sitemap_lastmod.py", materialize_block)
         self.assertIn("zhuyin_picture_book_club_kit.py", workflow)
         self.assertIn("zhuyin_parent_teacher_handoff_kit.py", workflow)
@@ -14161,6 +14346,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(1, workflow.count("document_scan_planner.py"))
         self.assertEqual(1, workflow.count("blurry_photo_diagnostic.py"))
         self.assertEqual(1, workflow.count("daily_checklist_planner.py"))
+        self.assertEqual(1, workflow.count("screen_time_block_planner.py"))
         self.assertEqual(1, workflow.count("vocabulary_habit_planner.py"))
         self.assertEqual(1, workflow.count("wordmate_language_support.py"))
         self.assertEqual(1, workflow.count("portfolio_app_finder.py"))
@@ -14179,6 +14365,10 @@ class GeneratorTests(unittest.TestCase):
         self.assertLess(
             workflow.index("refresh=True"),
             workflow.index("daily_checklist_planner.py"),
+        )
+        self.assertLess(
+            workflow.index("refresh=True"),
+            workflow.index("screen_time_block_planner.py"),
         )
         self.assertLess(
             workflow.index("refresh=True"),
@@ -14417,6 +14607,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("document_scan_planner.py", publish)
         self.assertIn("blurry_photo_diagnostic.py", publish)
         self.assertIn("daily_checklist_planner.py", publish)
+        self.assertIn("screen_time_block_planner.py", publish)
         self.assertIn("vocabulary_habit_planner.py", publish)
         self.assertIn("wordmate_language_support.py", publish)
         self.assertIn("portfolio_app_finder.py", publish)

@@ -25,7 +25,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GEO_SITE: https://alice51849.github.io/ios-app-guide
-      SITEMAP_LASTMOD_INTERMEDIATE_STATE: ${{ runner.temp }}/sitemap-lastmod-intermediate.json
     steps:
       - uses: actions/checkout@v5
         with:
@@ -53,11 +52,13 @@ jobs:
           ln -s "$GITHUB_WORKSPACE" _engine/geo/pages
       - name: Snapshot truthful sitemap baseline
         run: |
-          rm -f "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
+          state="$RUNNER_TEMP/sitemap-lastmod-intermediate.json"
+          rm -f "$state"
           if test -f _engine/geo/sitemap_lastmod_state.json; then
             cp _engine/geo/sitemap_lastmod_state.json \
-              "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
+              "$state"
           fi
+          echo "SITEMAP_LASTMOD_INTERMEDIATE_STATE=$state" >> "$GITHUB_ENV"
       - name: Materialize newly live app surfaces
         run: |
           cd _engine/geo

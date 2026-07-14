@@ -12033,9 +12033,10 @@ class GeneratorTests(unittest.TestCase):
             "- name: Snapshot truthful sitemap baseline", 1
         )[1].split("- name: Materialize newly live app surfaces", 1)[0]
         self.assertIn(
-            "${{ runner.temp }}/sitemap-lastmod-intermediate.json",
-            workflow,
+            '$RUNNER_TEMP/sitemap-lastmod-intermediate.json',
+            snapshot_block,
         )
+        self.assertIn("$GITHUB_ENV", snapshot_block)
         self.assertIn(
             "cp _engine/geo/sitemap_lastmod_state.json",
             snapshot_block,

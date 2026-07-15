@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>비공개 주음부호 짝맞추기 카드 생성기 | 무료 인쇄용 Zhuyin 도구</title>
+<meta name="description" content="무료로 인쇄할 수 있는 주음부호(Zhuyin) 짝맞추기 카드를 쌍의 개수와 세트 번호로 생성하세요. 인쇄하고 오려서 오프라인으로 같은 기호를 맞추는 놀이입니다. 계정 가입, 자녀 데이터 수집, 채점이 전혀 없습니다.">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/ko/tools/private-bopomofo-matching-pair-cards.html">
+<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/private-bopomofo-matching-pair-cards.html">
+<link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/es-ES/tools/private-bopomofo-matching-pair-cards.html">
+<link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/tools/private-bopomofo-matching-pair-cards.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tools/private-bopomofo-matching-pair-cards.html">
+<link rel="alternate" hreflang="fr-FR" href="https://alice51849.github.io/ios-app-guide/fr-FR/tools/private-bopomofo-matching-pair-cards.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/private-bopomofo-matching-pair-cards.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/tools/private-bopomofo-matching-pair-cards.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/private-bopomofo-matching-pair-cards.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/tools/private-bopomofo-matching-pair-cards.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/private-bopomofo-matching-pair-cards.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="비공개 주음부호 짝맞추기 카드 생성기">
+<meta property="og:description" content="무료로 인쇄할 수 있는 주음부호(Zhuyin) 짝맞추기 카드를 쌍의 개수와 세트 번호로 생성하세요. 인쇄하고 오려서 오프라인으로 같은 기호를 맞추는 놀이입니다. 계정 가입, 자녀 데이터 수집, 채점이 전혀 없습니다.">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/ko/tools/private-bopomofo-matching-pair-cards.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#21314a;--muted:#67738a;--line:#dfe5f0;--paper:#fff;--bg:#f3f6fb;--deep:#3949a3;--violet:#7566c8;--soft:#edf0ff;--warn:#fff6d8;--shadow:0 22px 60px rgba(47,57,108,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,#fff 0,var(--bg) 55%,#e9edf7 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",sans-serif;line-height:1.62}
+a{color:var(--deep)}.wrap{width:min(1120px,calc(100% - 30px));margin:auto}.top{position:sticky;top:0;z-index:8;background:#fffffff2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}.links{display:flex;gap:15px;overflow-x:auto}
+.hero{padding:64px 0 30px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--deep);white-space:nowrap}.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif",serif}.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.04;letter-spacing:-.035em;margin:.3em 0 .22em;white-space:nowrap;overflow-x:auto}.lead{font-size:clamp(17px,2.2vw,21px);color:var(--muted);margin:0;white-space:nowrap;overflow-x:auto}.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.planner,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}.planner{padding:clamp(20px,4vw,36px);margin:16px auto 30px}.planner h2,.card h2,.app-card h2{font-size:clamp(24px,3.6vw,34px);line-height:1.14;margin:0;white-space:nowrap;overflow-x:auto}.intro{color:var(--muted);white-space:nowrap;overflow-x:auto}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px}.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--deep);margin-bottom:6px;white-space:nowrap;overflow-x:auto}select,input,button{font:inherit}select,input[type=number]{width:100%;min-height:46px;border:1px solid #cad2e4;border-radius:13px;background:#fff;color:var(--ink);padding:9px 11px}.button{border:0;border-radius:999px;background:linear-gradient(135deg,var(--deep),var(--violet));color:#fff;text-decoration:none;font-weight:850;padding:11px 17px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(57,73,163,.2)}.button.ghost{background:#fff;color:var(--deep);border:1px solid var(--line);box-shadow:none}
+.note{background:var(--warn);border:1px solid #ead9a7;border-radius:16px;padding:13px 15px;margin:14px 0 0;white-space:nowrap;overflow-x:auto}
+.card-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:18px}.card-grid.large{grid-template-columns:repeat(2,minmax(0,1fr))}.print-card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;background:#fff;border:2px solid var(--line);border-radius:16px;padding:16px;min-height:110px;break-inside:avoid}.card-grid.large .print-card{min-height:170px}.print-card .card-symbol{font-size:40px;line-height:1}.card-grid.large .print-card .card-symbol{font-size:64px}.print-card .card-number{font-size:11px;font-weight:850;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;white-space:nowrap;overflow-x:auto}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:30px}.card,.app-card{padding:clamp(20px,3.5vw,30px)}.card.wide{grid-column:1/-1}.card p,.card li,.app-card p,.faq details p,.faq summary{white-space:nowrap;overflow-x:auto}.card ul,.card ol{padding-left:22px}.card li{margin:8px 0}.source-list a{overflow-wrap:anywhere}.app-card{margin:0 auto 38px;background:linear-gradient(135deg,#fff,#edf0ff)}.app-card .button{display:inline-flex;margin-top:5px}.faq{margin-bottom:30px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+.footer{background:var(--deep);color:#f4f5ff;text-align:center;padding:27px 0;white-space:nowrap;overflow-x:auto}
+@media(max-width:960px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}.card-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.card-grid.large{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){.card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.card-grid.large{grid-template-columns:1fr}}
+@media(max-width:560px){.controls{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1120px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{.top,.hero,.planner form,.planner .intro,.button,.app-card,.footer,.card,.faq{display:none!important}body{background:#fff}.planner{box-shadow:none;border:0;padding:0}.card-grid{box-shadow:none}.print-card{box-shadow:none;break-inside:avoid;border-color:#000}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"비공개 주음부호 짝맞추기 카드 생성기","description":"무료로 인쇄할 수 있는 주음부호(Zhuyin) 짝맞추기 카드를 쌍의 개수와 세트 번호로 생성하세요. 인쇄하고 오려서 오프라인으로 같은 기호를 맞추는 놀이입니다. 계정 가입, 자녀 데이터 수집, 채점이 전혀 없습니다.","url":"https://alice51849.github.io/ios-app-guide/ko/tools/private-bopomofo-matching-pair-cards.html","inLanguage":"ko","datePublished":"2026-07-15","dateModified":"2026-07-15","applicationCategory":"EducationalApplication","operatingSystem":"Any","isAccessibleForFree":true,"featureList":["자녀의 이름, 나이, 학교, 계정을 수집하지 않습니다","채점, 등급, 순위, 기억력 향상 주장이 없습니다","같은 세트 번호는 항상 같은 카드를 재현합니다","공식 필순은 대만 교육부 사이트에서 확인하세요","이 도구는 자녀를 평가, 채점, 등급 매기기, 순위, 진단하지 않으며, 이 짝맞추기 놀이가 기억력이나 다른 능력을 향상시킨다고 주장하지 않습니다. 선택한 쌍의 개수와 세트 번호를 인쇄용 카드로 바꿀 뿐입니다."],"citation":["https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html","https://stroke-order.learningweb.moe.edu.tw/phonetic.jsp?la=1","https://www.unicode.org/charts/nameslist/n_3100.html","https://www.unicode.org/charts/PDF/U3100.pdf"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"노는 방법","description":"이것은 인쇄해서 오려 쓰는 오프라인 짝맞추기 놀이입니다.","step":[{"@type":"HowToStep","position":1,"text":"카드 시트를 실제 크기로 인쇄하세요."},{"@type":"HowToStep","position":2,"text":"각 카드 테두리를 따라 잘라 개별 짝맞추기 카드를 만드세요."},{"@type":"HowToStep","position":3,"text":"자른 카드를 섞어 뒷면이 보이도록 줄지어 놓으세요."},{"@type":"HowToStep","position":4,"text":"번갈아 가며 카드 두 장을 뒤집어 같은 주음부호 기호를 찾으세요."},{"@type":"HowToStep","position":5,"text":"맞춘 짝은 따로 모으고, 모든 카드가 맞춰질 때까지 계속하세요."}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ko","mainEntity":[{"@type":"Question","name":"이 도구가 우리 아이를 채점, 순위, 진단하나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 선택한 쌍의 개수와 세트 번호를 인쇄용 짝맞추기 카드로 바꿀 뿐이며, 누구도 채점, 순위, 등급, 진단하지 않습니다."}},{"@type":"Question","name":"이 놀이를 하면 아이의 기억력이 향상되나요?","acceptedAnswer":{"@type":"Answer","text":"이 도구는 그런 주장을 하지 않습니다. 인쇄용 짝맞추기 활동을 생성할 뿐이며, 놀이의 효과는 여기서 측정되거나 약속되지 않습니다."}},{"@type":"Question","name":"같은 세트 번호는 항상 같은 카드를 만드나요?","acceptedAnswer":{"@type":"Answer","text":"예. 같은 쌍의 개수와 세트 번호는 항상 같은 선택된 기호를 같은 카드 순서로 재현하므로, 이전에 인쇄한 세트를 다시 만들 수 있습니다."}},{"@type":"Question","name":"이 페이지가 아이의 이름, 나이, 학교 등 개인정보를 수집하나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 쌍의 개수, 세트 번호, 카드 크기만 받으며, 어디로도 전송되거나 저장되지 않습니다."}},{"@type":"Question","name":"주음부호의 공식 필순이나 발음은 어디서 확인하나요?","acceptedAnswer":{"@type":"Answer","text":"이 페이지에 링크된 대만 교육부의 공식 필순 포털을 이용하세요. 이 도구는 발음, 로마자 표기, 필순 애니메이션을 제공하지 않습니다."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"무료 도구","item":"https://alice51849.github.io/ios-app-guide/ko/tools/index.html"},{"@type":"ListItem","position":2,"name":"비공개 주음부호 짝맞추기 카드 생성기","item":"https://alice51849.github.io/ios-app-guide/ko/tools/private-bopomofo-matching-pair-cards.html"}]}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/ko/index.html">iOS App Guide</a><nav class="links"><a href="https://alice51849.github.io/ios-app-guide/ko/tools/index.html">무료 도구</a><a href="https://alice51849.github.io/ios-app-guide/tools/private-bopomofo-matching-pair-cards.html">English</a></nav></div></header>
+<main>
+<section class="hero wrap"><div class="eyebrow">무료 · 계정 불필요 · 채점 없음</div><h1>비공개 주음부호 짝맞추기 카드 생성기</h1><p class="lead">포함할 기호 쌍의 개수와 생성할 세트 번호를 선택하면, 오려서 오프라인 짝맞추기 놀이를 할 수 있는 결정적인 카드 시트가 만들어집니다. 이 도구는 자녀를 채점, 순위, 평가하지 않으며, 기억력을 향상시킨다고 주장하지 않습니다.</p><div class="badges"><span class="badge">자녀의 이름, 나이, 학교, 계정을 수집하지 않습니다</span><span class="badge">채점, 등급, 순위, 기억력 향상 주장이 없습니다</span><span class="badge">같은 세트 번호는 항상 같은 카드를 재현합니다</span><span class="badge">공식 필순은 대만 교육부 사이트에서 확인하세요</span></div></section>
+<section class="planner wrap"><h2>인쇄용 짝맞추기 카드 만들기</h2><p class="intro">쌍의 개수, 세트 번호, 카드 크기를 선택하면 인쇄용 시트가 생성됩니다. 이 페이지는 자녀의 이름, 나이, 학교, 사진, 필체, 목소리 등 어떤 개인정보도 묻지 않습니다.</p>
+<form id="bopomofo-matchpair-planner"><div class="controls">
+<div class="field"><label for="pair-count">기호 쌍의 개수 (4~12)</label><input id="pair-count" type="number" min="4" max="12" step="1" value="6" required></div>
+<div class="field"><label for="set-number">세트 번호 (1~99)</label><input id="set-number" type="number" min="1" max="99" step="1" value="1" required></div>
+<div class="field"><label for="card-size">카드 크기</label><select id="card-size"><option value="compact">콤팩트 (한 장에 더 많이)</option><option value="large">큼 (자르기 더 쉬움)</option></select></div>
+</div><p><button class="button" type="submit">인쇄용 카드 생성</button> <button class="button ghost" type="button" id="print-cards">이 카드 인쇄</button></p>
+<p class="intro">같은 쌍의 개수와 세트 번호는 항상 같은 선택된 기호와 같은 카드 순서를 재현합니다. 새 세트 번호를 선택하면 다루는 기호가 순환됩니다.</p></form>
+<p id="result-summary" class="note" role="status" aria-live="polite"></p>
+<div id="card-grid" class="card-grid compact" role="list" aria-label="짝맞추기 오리기 카드"></div>
+</section>
+<section class="wrap grid"><article class="card"><h2>이 도구가 하지 않는 것</h2><p>이 도구는 자녀를 평가, 채점, 등급 매기기, 순위, 진단하지 않으며, 이 짝맞추기 놀이가 기억력이나 다른 능력을 향상시킨다고 주장하지 않습니다. 선택한 쌍의 개수와 세트 번호를 인쇄용 카드로 바꿀 뿐입니다.</p><p>이것은 무료 독립 웹 도구입니다. Lumi Bopomofo 앱이 아니며, 어떤 종류의 진단, 평가, 기억 훈련 도구도 아닙니다.</p><p>이 도구는 어떤 기호에 대해서도 발음이나 로마자 표기를 제공하지 않습니다. 이를 위해서는 대만 교육부의 공식 자료를 이용하세요.</p></article><article class="card"><h2>이 기호들의 공식 필순 확인하기</h2><p>이 도구는 필순 애니메이션을 자체적으로 재현하지 않고 교육부 공식 포털로 연결합니다.</p><p><a href="https://stroke-order.learningweb.moe.edu.tw/phonetic.jsp?la=1" rel="noopener">이 기호들의 공식 필순 확인하기</a></p></article><article class="card wide"><h2>이 카드가 생성되는 방식</h2><p>카드 선택과 순서는 무작위 셔플이나 적응형 활동이 아니라, 이 사이트가 실행하는 고정되고 문서화된 알고리즘을 따릅니다.</p><ol><li>4에서 12 사이의 쌍의 개수를 선택하면, 37개의 기본 주음부호 문자(ㄅ부터 ㄩ까지) 중 그 개수만큼이 세트 번호에 따른 고정 순환 방식으로 선택됩니다.</li><li>1에서 99 사이의 세트 번호를 선택하면, 선택되는 기호가 순환되어 서로 다른 세트가 시간이 지나면서 37개 기호 범위의 서로 다른 부분을 다루게 됩니다.</li><li>선택된 각 기호는 정확히 두 장의 카드에 나타나며, 카드 순서는 쌍의 개수와 세트 번호로부터 결정적으로 구성됩니다. 실시간 무작위 셔플이 아닙니다.</li><li>카드 크기는 인쇄 크기만 바꿀 뿐, 선택되는 기호나 순서는 바꾸지 않습니다.</li><li>카드를 인쇄해 오프라인으로 놀이하세요. 세션의 어떤 내용도 어디로도 전송되거나 이 도구에 저장되지 않습니다.</li></ol></article><article class="card wide"><h2>노는 방법</h2><p>이것은 인쇄해서 오려 쓰는 오프라인 짝맞추기 놀이입니다.</p><ol><li>카드 시트를 실제 크기로 인쇄하세요.</li><li>각 카드 테두리를 따라 잘라 개별 짝맞추기 카드를 만드세요.</li><li>자른 카드를 섞어 뒷면이 보이도록 줄지어 놓으세요.</li><li>번갈아 가며 카드 두 장을 뒤집어 같은 주음부호 기호를 찾으세요.</li><li>맞춘 짝은 따로 모으고, 모든 카드가 맞춰질 때까지 계속하세요.</li></ol></article><article class="card wide"><h2>주음부호 공식 출처</h2><p>이 사실과 링크는 이 사이트가 아니라 대만 교육부와 유니코드 컨소시엄에서 제공한 것입니다.</p><ul class="source-list"><li><a href="https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html" rel="noopener">대만 교육부 공식 주음부호 안내서</a></li><li><a href="https://stroke-order.learningweb.moe.edu.tw/phonetic.jsp?la=1" rel="noopener">대만 교육부 공식 주음부호 필순 포털</a></li><li><a href="https://www.unicode.org/charts/nameslist/n_3100.html" rel="noopener">유니코드 공식 주음부호 이름 목록</a></li><li><a href="https://www.unicode.org/charts/PDF/U3100.pdf" rel="noopener">유니코드 공식 주음부호 차트 (PDF)</a></li></ul><p>BOPOMOFO LETTER B와 같은 유니코드 문자 이름은 기호를 구분하기 위한 기술적 식별자이며, 발음 안내가 아닙니다.</p><p><a href="https://developer.chrome.com/docs/ai/webmcp/imperative-api" rel="noopener">Chrome WebMCP 명령형 API 미리보기 (변경될 수 있음)</a></p></article></section>
+<section class="wrap card faq"><h2>주음부호 짝맞추기 카드에 대한 자주 묻는 질문</h2><details><summary>이 도구가 우리 아이를 채점, 순위, 진단하나요?</summary><p>아니요. 선택한 쌍의 개수와 세트 번호를 인쇄용 짝맞추기 카드로 바꿀 뿐이며, 누구도 채점, 순위, 등급, 진단하지 않습니다.</p></details><details><summary>이 놀이를 하면 아이의 기억력이 향상되나요?</summary><p>이 도구는 그런 주장을 하지 않습니다. 인쇄용 짝맞추기 활동을 생성할 뿐이며, 놀이의 효과는 여기서 측정되거나 약속되지 않습니다.</p></details><details><summary>같은 세트 번호는 항상 같은 카드를 만드나요?</summary><p>예. 같은 쌍의 개수와 세트 번호는 항상 같은 선택된 기호를 같은 카드 순서로 재현하므로, 이전에 인쇄한 세트를 다시 만들 수 있습니다.</p></details><details><summary>이 페이지가 아이의 이름, 나이, 학교 등 개인정보를 수집하나요?</summary><p>아니요. 쌍의 개수, 세트 번호, 카드 크기만 받으며, 어디로도 전송되거나 저장되지 않습니다.</p></details><details><summary>주음부호의 공식 필순이나 발음은 어디서 확인하나요?</summary><p>이 페이지에 링크된 대만 교육부의 공식 필순 포털을 이용하세요. 이 도구는 발음, 로마자 표기, 필순 애니메이션을 제공하지 않습니다.</p></details></section>
+<section class="app-card wrap"><h2>선택적인 안내형 주음부호 앱을 찾으시나요?</h2><p>Lumi Bopomofo는 선택 사항입니다. 현재 App Store 등록 정보에는 재미있는 주음 기호·소리·조합 활동과 따라 쓰기 및 성조 게임이 설명되어 있습니다. 무료로 다운로드할 수 있으며 앱 내 일회성 구매로 잠금 해제되고, 오프라인에서 작동하며, 광고 없음, 구독 없음, 데이터 미수집으로 표시되어 있습니다. 기능은 변경될 수 있으니 결정하기 전에 현재 등록 정보를 확인하세요. 이 인쇄용 카드는 앱 없이도 완전히 작동합니다.</p><a class="button" href="https://apps.apple.com/app/id6773017109?ct=iag_bopomofo_matchpair_ko" rel="nofollow noopener">App Store에서 Lumi Bopomofo 보기</a></section>
+</main>
+<footer class="footer"><div class="wrap">비공개 세트 번호만 사용 · 자녀 데이터 없음 · 채점 없음 · 기억력 향상 주장 없음</div></footer>
+<script type="application/json" id="bopomofo-matchpair-config">{"inputSchema":{"type":"object","properties":{"pair_count":{"type":"integer","minimum":4,"maximum":12,"description":"기호 쌍의 개수 (4~12)"},"set_number":{"type":"integer","minimum":1,"maximum":99,"description":"세트 번호 (1~99)"},"card_size":{"type":"string","enum":["compact","large"],"description":"카드 크기"}},"required":["pair_count","set_number","card_size"],"additionalProperties":false},"symbols":["ㄅ","ㄆ","ㄇ","ㄈ","ㄉ","ㄊ","ㄋ","ㄌ","ㄍ","ㄎ","ㄏ","ㄐ","ㄑ","ㄒ","ㄓ","ㄔ","ㄕ","ㄖ","ㄗ","ㄘ","ㄙ","ㄚ","ㄛ","ㄜ","ㄝ","ㄞ","ㄟ","ㄠ","ㄡ","ㄢ","ㄣ","ㄤ","ㄥ","ㄦ","ㄧ","ㄨ","ㄩ"],"codePoints":{"ㄅ":"U+3105","ㄆ":"U+3106","ㄇ":"U+3107","ㄈ":"U+3108","ㄉ":"U+3109","ㄊ":"U+310A","ㄋ":"U+310B","ㄌ":"U+310C","ㄍ":"U+310D","ㄎ":"U+310E","ㄏ":"U+310F","ㄐ":"U+3110","ㄑ":"U+3111","ㄒ":"U+3112","ㄓ":"U+3113","ㄔ":"U+3114","ㄕ":"U+3115","ㄖ":"U+3116","ㄗ":"U+3117","ㄘ":"U+3118","ㄙ":"U+3119","ㄚ":"U+311A","ㄛ":"U+311B","ㄜ":"U+311C","ㄝ":"U+311D","ㄞ":"U+311E","ㄟ":"U+311F","ㄠ":"U+3120","ㄡ":"U+3121","ㄢ":"U+3122","ㄣ":"U+3123","ㄤ":"U+3124","ㄥ":"U+3125","ㄦ":"U+3126","ㄧ":"U+3127","ㄨ":"U+3128","ㄩ":"U+3129"},"unicodeNames":{"ㄅ":"BOPOMOFO LETTER B","ㄆ":"BOPOMOFO LETTER P","ㄇ":"BOPOMOFO LETTER M","ㄈ":"BOPOMOFO LETTER F","ㄉ":"BOPOMOFO LETTER D","ㄊ":"BOPOMOFO LETTER T","ㄋ":"BOPOMOFO LETTER N","ㄌ":"BOPOMOFO LETTER L","ㄍ":"BOPOMOFO LETTER G","ㄎ":"BOPOMOFO LETTER K","ㄏ":"BOPOMOFO LETTER H","ㄐ":"BOPOMOFO LETTER J","ㄑ":"BOPOMOFO LETTER Q","ㄒ":"BOPOMOFO LETTER X","ㄓ":"BOPOMOFO LETTER ZH","ㄔ":"BOPOMOFO LETTER CH","ㄕ":"BOPOMOFO LETTER SH","ㄖ":"BOPOMOFO LETTER R","ㄗ":"BOPOMOFO LETTER Z","ㄘ":"BOPOMOFO LETTER C","ㄙ":"BOPOMOFO LETTER S","ㄚ":"BOPOMOFO LETTER A","ㄛ":"BOPOMOFO LETTER O","ㄜ":"BOPOMOFO LETTER E","ㄝ":"BOPOMOFO LETTER EH","ㄞ":"BOPOMOFO LETTER AI","ㄟ":"BOPOMOFO LETTER EI","ㄠ":"BOPOMOFO LETTER AU","ㄡ":"BOPOMOFO LETTER OU","ㄢ":"BOPOMOFO LETTER AN","ㄣ":"BOPOMOFO LETTER EN","ㄤ":"BOPOMOFO LETTER ANG","ㄥ":"BOPOMOFO LETTER ENG","ㄦ":"BOPOMOFO LETTER ER","ㄧ":"BOPOMOFO LETTER I","ㄨ":"BOPOMOFO LETTER U","ㄩ":"BOPOMOFO LETTER IU"},"labels":{"card":"카드","resultCount":"생성된 카드 수"},"invalidInput":"위에 표시된 지원 범위 내에서 쌍의 개수, 세트 번호, 카드 크기를 선택하세요.","toolDescription":"쌍의 개수, 세트 번호, 카드 크기로부터 비공개적이고 결정적인 주음부호 짝맞추기 오리기 카드를 생성합니다. 자녀의 이름, 나이, 학년, 학교, 위치, 사진, 필체, 목소리, 응답 이력, 점수, 계정을 절대 받지 않습니다. 이 활동이 기억력을 향상시키거나 자녀를 평가한다고 주장하지 않습니다.","unicodeNote":"BOPOMOFO LETTER B와 같은 유니코드 문자 이름은 기호를 구분하기 위한 기술적 식별자이며, 발음 안내가 아닙니다.","officialSources":[{"label":"대만 교육부 공식 주음부호 안내서","url":"https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"},{"label":"대만 교육부 공식 주음부호 필순 포털","url":"https://stroke-order.learningweb.moe.edu.tw/phonetic.jsp?la=1"},{"label":"유니코드 공식 주음부호 이름 목록","url":"https://www.unicode.org/charts/nameslist/n_3100.html"},{"label":"유니코드 공식 주음부호 차트 (PDF)","url":"https://www.unicode.org/charts/PDF/U3100.pdf"}],"moeStrokeOrderCheck":{"label":"이 기호들의 공식 필순 확인하기","url":"https://stroke-order.learningweb.moe.edu.tw/phonetic.jsp?la=1"},"webmcpSource":"https://developer.chrome.com/docs/ai/webmcp/imperative-api","optionalApp":{"label":"App Store에서 Lumi Bopomofo 보기","boundary":"Lumi Bopomofo는 선택 사항입니다. 현재 App Store 등록 정보에는 재미있는 주음 기호·소리·조합 활동과 따라 쓰기 및 성조 게임이 설명되어 있습니다. 무료로 다운로드할 수 있으며 앱 내 일회성 구매로 잠금 해제되고, 오프라인에서 작동하며, 광고 없음, 구독 없음, 데이터 미수집으로 표시되어 있습니다. 기능은 변경될 수 있으니 결정하기 전에 현재 등록 정보를 확인하세요. 이 인쇄용 카드는 앱 없이도 완전히 작동합니다.","app_store_url":"https://apps.apple.com/app/id6773017109?ct=iag_bopomofo_matchpair_ko"}}</script>
+<script>
+(() => {
+  const config = JSON.parse(
+    document.getElementById("bopomofo-matchpair-config").textContent);
+  const form = document.getElementById("bopomofo-matchpair-planner");
+  const fields = {
+    pair_count: document.getElementById("pair-count"),
+    set_number: document.getElementById("set-number"),
+    card_size: document.getElementById("card-size")
+  };
+  const summary = document.getElementById("result-summary");
+  const grid = document.getElementById("card-grid");
+  const printButton = document.getElementById("print-cards");
+
+  const LCG_MULTIPLIER = 214013;
+  const LCG_INCREMENT = 2531011;
+  const LCG_MODULUS = 2147483648;
+
+  function nextState(state) {
+    return (state * LCG_MULTIPLIER + LCG_INCREMENT) % LCG_MODULUS;
+  }
+
+  function drawValue(state) {
+    return Math.floor(state / 65536) % 32768;
+  }
+
+  function enumValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const values = config.inputSchema.properties[name].enum;
+    if (typeof value !== "string" || !values.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    return value;
+  }
+
+  function integerValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const schema = config.inputSchema.properties[name];
+    if (typeof value !== "number" || !Number.isInteger(value)) {
+      throw new TypeError(`${name} must be an integer.`);
+    }
+    if (value < schema.minimum || value > schema.maximum) {
+      throw new RangeError(`${name} is outside the supported range.`);
+    }
+    return value;
+  }
+
+  function selectSymbols(pairCount, setNumber) {
+    const total = config.symbols.length;
+    const offset = ((setNumber - 1) * pairCount) % total;
+    const symbols = [];
+    for (let k = 0; k < pairCount; k += 1) {
+      symbols.push(config.symbols[(offset + k) % total]);
+    }
+    return symbols;
+  }
+
+  function shuffleOrder(pairCount, setNumber) {
+    const total = pairCount * 2;
+    const order = [];
+    for (let index = 0; index < total; index += 1) {
+      order.push(index % pairCount);
+    }
+    let state = pairCount * 10000 + setNumber;
+    for (let i = total - 1; i > 0; i -= 1) {
+      state = nextState(state);
+      const j = drawValue(state) % (i + 1);
+      const temp = order[i];
+      order[i] = order[j];
+      order[j] = temp;
+    }
+    return order;
+  }
+
+  function buildCards(input) {
+    const pairCount = integerValue(input, "pair_count");
+    const setNumber = integerValue(input, "set_number");
+    const cardSize = enumValue(input, "card_size");
+    const symbols = selectSymbols(pairCount, setNumber);
+    const order = shuffleOrder(pairCount, setNumber);
+    const cards = order.map((pairIndex, index) => {
+      const symbol = symbols[pairIndex];
+      return {
+        card_number: index + 1,
+        pair_index: pairIndex,
+        symbol,
+        code_point: config.codePoints[symbol],
+        unicode_name: config.unicodeNames[symbol],
+        card_size: cardSize
+      };
+    });
+    return {
+      selected_inputs: {
+        pair_count: pairCount,
+        set_number: setNumber,
+        card_size: cardSize
+      },
+      selected_symbols: symbols,
+      cards,
+      unicode_note: config.unicodeNote,
+      official_sources: config.officialSources,
+      moe_stroke_order_check: config.moeStrokeOrderCheck
+    };
+  }
+
+  function validateInput(input) {
+    if (input === null || typeof input !== "object" || Array.isArray(input)) {
+      throw new TypeError("WebMCP input must be an object.");
+    }
+    const allowed = new Set(Object.keys(config.inputSchema.properties));
+    for (const name of Object.keys(input)) {
+      if (!allowed.has(name)) {
+        throw new RangeError(`${name} is not a supported input.`);
+      }
+    }
+    for (const name of config.inputSchema.required) {
+      if (!Object.prototype.hasOwnProperty.call(input, name)) {
+        throw new TypeError(`${name} is required.`);
+      }
+    }
+    return buildCards(input);
+  }
+
+  function humanIntegerValue(field, name) {
+    const raw = String(field.value).trim();
+    const value = raw === "" ? Number.NaN : Number(raw);
+    const schema = config.inputSchema.properties[name];
+    if (!Number.isInteger(value) ||
+        value < schema.minimum ||
+        value > schema.maximum) {
+      throw new RangeError(`${name} is outside the supported range.`);
+    }
+    return value;
+  }
+
+  function renderInvalid(message) {
+    summary.textContent = message;
+    grid.replaceChildren();
+  }
+
+  function makeCardElement(card) {
+    const article = document.createElement("article");
+    article.className = "print-card";
+    article.setAttribute("role", "listitem");
+    const header = document.createElement("div");
+    header.className = "card-number";
+    header.textContent = `${config.labels.card} ${card.card_number}`;
+    const symbol = document.createElement("div");
+    symbol.className = "card-symbol";
+    symbol.textContent = card.symbol;
+    const hidden = document.createElement("span");
+    hidden.className = "visually-hidden";
+    hidden.textContent = `${card.unicode_name} (${card.code_point})`;
+    article.appendChild(header);
+    article.appendChild(symbol);
+    article.appendChild(hidden);
+    return article;
+  }
+
+  function render() {
+    let result;
+    try {
+      result = buildCards({
+        pair_count: humanIntegerValue(fields.pair_count, "pair_count"),
+        set_number: humanIntegerValue(fields.set_number, "set_number"),
+        card_size: fields.card_size.value
+      });
+    } catch (error) {
+      if (error instanceof TypeError || error instanceof RangeError) {
+        renderInvalid(config.invalidInput);
+        return;
+      }
+      throw error;
+    }
+    summary.textContent = `${config.labels.resultCount}: ${result.cards.length}`;
+    grid.className = `card-grid ${result.selected_inputs.card_size}`;
+    grid.setAttribute("role", "list");
+    const fragment = document.createDocumentFragment();
+    for (const card of result.cards) {
+      fragment.appendChild(makeCardElement(card));
+    }
+    grid.replaceChildren(fragment);
+  }
+
+  async function registerWebMcp() {
+    if (!document.modelContext?.registerTool) return;
+    await document.modelContext.registerTool({
+      name: "create_private_bopomofo_matching_pair_cards",
+      description: config.toolDescription,
+      inputSchema: config.inputSchema,
+      annotations: {readOnlyHint: true, untrustedContentHint: false},
+      execute: async (input) => {
+        const plan = validateInput(input);
+        const result = {
+          result_type: "private_bopomofo_matching_pair_cards",
+          is_not_assessment: true,
+          no_score_grade_or_diagnosis: true,
+          no_memory_improvement_claim: true,
+          no_child_data_received: true,
+          no_pronunciation_or_romanization: true,
+          plan,
+          webmcp_preview_source: config.webmcpSource
+        };
+        if (config.optionalApp) {
+          result.optional_lumibopomofo = config.optionalApp;
+        }
+        return JSON.stringify(result);
+      }
+    });
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    render();
+  });
+  for (const field of Object.values(fields)) {
+    field.addEventListener("change", render);
+  }
+  if (printButton) {
+    printButton.addEventListener("click", () => window.print());
+  }
+  render();
+  registerWebMcp().catch((error) =>
+    console.error("WebMCP tool registration failed.", error));
+})();
+</script>
+</body>
+</html>

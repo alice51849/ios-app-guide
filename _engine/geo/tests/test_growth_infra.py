@@ -16999,6 +16999,26 @@ class GeneratorTests(unittest.TestCase):
             ),
             resources,
         )
+        for locale in (
+            "zh-Hant",
+            "es-ES",
+            "pt-BR",
+            "de-DE",
+            "fr-FR",
+            "ja",
+            "ko",
+        ):
+            translations = json.loads(
+                (Path(GEO) / "i18n_trans" / f"{locale}.json").read_text(
+                    encoding="utf-8"
+                )
+            )
+            self.assertIn(
+                "Private Bopomofo symbol contrast cards", translations
+            )
+            self.assertIn(
+                "Private Bopomofo matching-pair cards", translations
+            )
 
     def test_topic_hub_has_no_fake_zero_price_and_links_script_locales(self):
         hub = gen_hubs.build_hub("lumibopomofo")

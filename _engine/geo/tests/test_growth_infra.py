@@ -10301,7 +10301,7 @@ class GeneratorTests(unittest.TestCase):
                 zhuyin_picture_book_club_kit.update_tools_index,
                 zhuyin_parent_teacher_handoff_kit.update_tools_index,
                 zhuyin_library_storytime_kit.update_tools_index,
-                zhuyin_grade1_summer_calendar.update_tools_index,
+                zhuyin_grade1_summer_calendar.update_tools_indexes,
                 zhuyin_blending_card_generator.update_tools_indexes,
                 zhuyin_sentence_reading_cards.update_tools_indexes,
                 zhuyin_anki_deck.update_tools_index,
@@ -10503,24 +10503,51 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("/zh-Hant/tools/", page)
         self.assertIn("/zh-Hant/guides/existing.html", sitemap)
 
-    def test_grade1_summer_calendar_is_bilingual_private_and_non_scored(self):
-        english = zhuyin_grade1_summer_calendar.render_page("en")
-        traditional = zhuyin_grade1_summer_calendar.render_page("zh-Hant")
-        for page in (english, traditional):
+    def test_grade1_summer_calendar_locales_have_full_parity_and_boundaries(self):
+        m = zhuyin_grade1_summer_calendar
+        self.assertEqual(9, len(m.ALT_LOCALES))
+        self.assertEqual(set(m.ALT_LOCALES), set(m.COPY))
+        self.assertEqual(set(m.ALT_LOCALES), set(m.DAYS))
+        self.assertEqual(set(m.ALT_LOCALES), set(m.RELATED_LABELS))
+        reference_keys = set(m.COPY["en"])
+        pages = {}
+        for locale in m.ALT_LOCALES:
+            self.assertEqual(reference_keys, set(m.COPY[locale]))
+            self.assertEqual(14, len(m.DAYS[locale]))
+            for day in m.DAYS[locale]:
+                self.assertEqual(
+                    {"day", "focus", "base", "stretch"}, set(day)
+                )
+            self.assertEqual(len(m.RELATED_SLUGS), len(m.RELATED_LABELS[locale]))
+            pages[locale] = m.render_page(locale, app_public=False)
+        for locale, page in pages.items():
             self.assertIn('"WebApplication", "LearningResource"', page)
             self.assertIn('"@type": "HowTo"', page)
             self.assertIn('"@type": "FAQPage"', page)
+            self.assertIn('"@type": "BreadcrumbList"', page)
+            self.assertNotIn('"offers"', page)
+            self.assertNotIn('"Offer"', page)
             self.assertIn("creativecommons.org/licenses/by/4.0/", page)
-            self.assertIn('hreflang="en"', page)
-            self.assertIn('hreflang="zh-Hant"', page)
+            for hreflang in m.ALT_LOCALES:
+                self.assertIn(f'hreflang="{hreflang}"', page)
+            self.assertIn('hreflang="x-default"', page)
+            self.assertIn('type="application/atom+xml"', page)
+            self.assertIn('type="application/rss+xml"', page)
+            self.assertIn('type="application/feed+json"', page)
             self.assertIn("html_ch/index.html", page)
             self.assertIn("phonetic.jsp?la=0", page)
-            self.assertIn("id6773017109", page)
+            self.assertNotIn(f"id{m.APP_ID}", page)
             self.assertNotIn("localStorage", page)
+            self.assertNotIn("sessionStorage", page)
             self.assertNotIn("XMLHttpRequest", page)
             self.assertNotIn("fetch(", page)
             self.assertNotIn("getUserMedia", page)
             self.assertNotIn("<input", page)
+            self.assertNotIn("<textarea", page)
+            self.assertNotIn('type="file"', page)
+            self.assertNotIn("dataLayer", page)
+            self.assertNotIn("gtag(", page)
+            self.assertEqual(14, page.count('class="day"'))
             schemas = [
                 json.loads(block)
                 for block in re.findall(
@@ -10533,18 +10560,178 @@ class GeneratorTests(unittest.TestCase):
                 schema for schema in schemas if schema.get("@type") == "HowTo"
             )
             self.assertEqual(14, len(howto["step"]))
+            resource = next(
+                schema
+                for schema in schemas
+                if schema.get("@type") == ["WebApplication", "LearningResource"]
+            )
+            self.assertTrue(resource["isAccessibleForFree"])
+            self.assertEqual(m.CONTENT_DATE, resource["datePublished"])
+            self.assertNotIn("offers", resource)
+        english, traditional = pages["en"], pages["zh-Hant"]
         self.assertIn("does not teach or assess all 37 symbols", english)
         self.assertIn("has not been evaluated in a study", english)
         self.assertIn("No completion tracking", english)
+        self.assertIn("does not set a Grade 1 prerequisite", english)
         self.assertIn("不教完或評量全部 37 個符號", traditional)
         self.assertIn("尚未經研究評估", traditional)
         self.assertIn("沒有完成度追蹤", traditional)
-        for page in (english, traditional):
-            main = page.split("<main>", 1)[1]
-            self.assertLess(
-                main.index("zhuyin-readiness-check.html"),
-                main.index("id6773017109"),
-            )
+
+    def test_grade1_summer_calendar_private_renderer_hides_app_id_public_has_unique_campaign(
+        self,
+    ):
+        m = zhuyin_grade1_summer_calendar
+        campaigns = set()
+        for locale in m.ALT_LOCALES:
+            private_page = m.render_page(locale, app_public=False)
+            public_page = m.render_page(locale, app_public=True)
+            self.assertNotIn(f"id{m.APP_ID}", private_page)
+            self.assertNotIn("apps.apple.com", private_page)
+            self.assertIn(f"id{m.APP_ID}", public_page)
+            campaign = f"iag_grade1_14day_{locale.lower()}"
+            self.assertIn(campaign, public_page)
+            campaigns.add(campaign)
+        self.assertEqual(len(m.ALT_LOCALES), len(campaigns))
+
+    def test_grade1_summer_calendar_webmcp_tool_is_strict_and_side_effect_free(self):
+        m = zhuyin_grade1_summer_calendar
+        page = m.render_page("en", app_public=True)
+        self.assertIn("document.modelContext", page)
+        self.assertIn("registerTool", page)
+        self.assertIn(
+            'name:"plan_private_zhuyin_grade1_summer_calendar_day"', page
+        )
+        self.assertIn(
+            "annotations:{readOnlyHint:true,untrustedContentHint:false}", page
+        )
+        for flag in (
+            "deterministic:true",
+            "original_activity:true",
+            "not_assessment:true",
+            "no_score_grade_rank_or_diagnosis:true",
+            "no_readiness_or_learning_outcome_claim:true",
+            "no_child_data_received:true",
+            "no_progress_saved:true",
+            "sources_not_endorsement:true",
+        ):
+            self.assertIn(flag, page)
+        schema = m.webmcp_input_schema("en")
+        self.assertFalse(schema["additionalProperties"])
+        self.assertEqual(["day", "lane"], schema["required"])
+        self.assertEqual(m.DAY_MIN, schema["properties"]["day"]["minimum"])
+        self.assertEqual(m.DAY_MAX, schema["properties"]["day"]["maximum"])
+        self.assertEqual(
+            list(m.LANE_VALUES), schema["properties"]["lane"]["enum"]
+        )
+        script = page.split(
+            '<script type="application/json" id="calendar-config">', 1
+        )[1]
+        script = script.split("<script>", 1)[1].split("</script>", 1)[0]
+        execute = script.split(
+            "execute:async function(input){", 1
+        )[1].split("return JSON.stringify(result);", 1)[0]
+        self.assertIn("validateInput(input)", execute)
+        for mutation in (
+            "textContent",
+            "innerHTML",
+            "appendChild",
+            "replaceChildren",
+            "scroll",
+            "fetch(",
+            "localStorage",
+            "sessionStorage",
+            "navigator.clipboard",
+            "document.cookie",
+            "location.href",
+            "window.open",
+            "window.print",
+            "createElement",
+        ):
+            self.assertNotIn(mutation, execute)
+
+    def test_build_day_plan_is_deterministic_and_rejects_invalid_input(self):
+        m = zhuyin_grade1_summer_calendar
+        for locale in m.ALT_LOCALES:
+            for day in (1, 7, 14):
+                for lane in m.LANE_VALUES:
+                    first = m.build_day_plan(locale, day, lane)
+                    second = m.build_day_plan(locale, day, lane)
+                    self.assertEqual(first, second)
+                    self.assertEqual(
+                        {"selected_inputs", "day_label", "focus", "instruction"},
+                        set(first),
+                    )
+                    self.assertEqual({"day", "lane"}, set(first["selected_inputs"]))
+        with self.assertRaises(TypeError):
+            m.build_day_plan(1, 1, "base")
+        with self.assertRaises(ValueError):
+            m.build_day_plan("xx-XX", 1, "base")
+        with self.assertRaises(TypeError):
+            m.build_day_plan("en", True, "base")
+        with self.assertRaises(TypeError):
+            m.build_day_plan("en", "1", "base")
+        with self.assertRaises(ValueError):
+            m.build_day_plan("en", 0, "base")
+        with self.assertRaises(ValueError):
+            m.build_day_plan("en", 15, "base")
+        with self.assertRaises(TypeError):
+            m.build_day_plan("en", 1, 3)
+        with self.assertRaises(ValueError):
+            m.build_day_plan("en", 1, "unknown")
+
+    def test_grade1_summer_calendar_builds_nine_pages_index_cards_and_answer_links(
+        self,
+    ):
+        m = zhuyin_grade1_summer_calendar
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                tools = root / "tools"
+                answers = root / "answers"
+                tools.mkdir(parents=True)
+                answers.mkdir(parents=True)
+                (tools / "index.html").write_text(
+                    '<main><section class="wrap grid"></section></main>',
+                    encoding="utf-8",
+                )
+                for slug in m.TARGET_ANSWER_SLUGS:
+                    (answers / slug).write_text(
+                        '<a class="cta" href="https://apps.apple.com/app/id'
+                        f'{m.APP_ID}?ct=test">App</a>',
+                        encoding="utf-8",
+                    )
+            outputs = m.build(pages, app_public=True)
+            self.assertEqual(9, len(outputs))
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                tools = root / "tools"
+                page_path = tools / f"{m.SLUG}.html"
+                self.assertTrue(page_path.exists())
+                page = page_path.read_text(encoding="utf-8")
+                self.assertIn(f"id{m.APP_ID}", page)
+                index = (tools / "index.html").read_text(encoding="utf-8")
+                self.assertEqual(1, index.count(f"{m.SLUG}.html"))
+                self.assertIn(f'data-tool="{m.SLUG}"', index)
+                for slug in m.TARGET_ANSWER_SLUGS:
+                    answer = (root / "answers" / slug).read_text(
+                        encoding="utf-8"
+                    )
+                    self.assertEqual(1, answer.count(m.INBOUND_LINK_CLASS))
+                    self.assertIn(m.canonical(locale), answer)
+            before = {
+                path: path.read_bytes() for path in pages.rglob("*.html")
+            }
+            m.build(pages, app_public=True)
+            after = {
+                path: path.read_bytes() for path in pages.rglob("*.html")
+            }
+            self.assertEqual(before, after)
+            m.build(pages, app_public=False)
+            private = (
+                pages / "tools" / f"{m.SLUG}.html"
+            ).read_text(encoding="utf-8")
+            self.assertNotIn(f"id{m.APP_ID}", private)
 
     def test_answer_force_refresh_overwrites_an_existing_curated_page(self):
         question = (
@@ -10564,32 +10751,6 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(slug, refreshed)
         self.assertNotEqual("stale", output)
         self.assertIn("Free 14-Day Grade 1 Zhuyin", output)
-
-    def test_grade1_summer_calendar_builds_both_pages_and_index_card(self):
-        with tempfile.TemporaryDirectory() as directory:
-            pages = Path(directory)
-            tools = pages / "tools"
-            tools.mkdir()
-            (tools / "index.html").write_text(
-                "<main><section></section></main>", encoding="utf-8"
-            )
-            urls = zhuyin_grade1_summer_calendar.build(pages)
-            self.assertEqual(2, len(urls))
-            self.assertTrue(
-                (tools / f"{zhuyin_grade1_summer_calendar.SLUG}.html").exists()
-            )
-            self.assertTrue(
-                (
-                    pages
-                    / "zh-Hant"
-                    / "tools"
-                    / f"{zhuyin_grade1_summer_calendar.SLUG}.html"
-                ).exists()
-            )
-            index = (tools / "index.html").read_text(encoding="utf-8")
-            self.assertEqual(
-                1, index.count("zhuyin-grade1-14-day-summer-calendar.html")
-            )
 
     def test_zhuyin_blending_cards_are_localized_private_and_read_only(self):
         m = zhuyin_blending_card_generator

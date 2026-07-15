@@ -71,6 +71,9 @@ RESOURCE_TITLES = {
     ("tools", "ats-resume-keyword-checker"): (
         "Private resume evidence coverage planner"
     ),
+    ("tools", "private-toeic-study-allocation-planner"): (
+        "Private TOEIC study allocation planner"
+    ),
 }
 RESOURCE_SYNC_SOURCE = "https://alice51849.github.io/.well-known/resourcesync"
 

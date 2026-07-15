@@ -91,6 +91,7 @@ jobs:
           python3 photo_storage_cleanup_planner.py
           python3 resume_evidence_planner.py
           python3 vocabulary_habit_planner.py
+          python3 toeic_study_allocation_planner.py
           python3 wordmate_language_support.py
           python3 portfolio_app_finder.py
       - name: Generate new answer pages (+ rebuild answers sitemap)

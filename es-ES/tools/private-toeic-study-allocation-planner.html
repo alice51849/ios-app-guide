@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Planificador privado de reparto de estudio TOEIC | Sin predicción de puntuación</title>
+<meta name="description" content="A partir de los días disponibles, los días de estudio por semana, los minutos por día y el énfasis deseado, calcula de forma transparente un reparto del tiempo de estudio entre escucha, lectura, repaso y práctica cronometrada, sin cuenta, sin predicción de puntuación y sin relación con ETS.">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/es-ES/tools/private-toeic-study-allocation-planner.html">
+<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/private-toeic-study-allocation-planner.html">
+<link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/es-ES/tools/private-toeic-study-allocation-planner.html">
+<link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/tools/private-toeic-study-allocation-planner.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tools/private-toeic-study-allocation-planner.html">
+<link rel="alternate" hreflang="fr-FR" href="https://alice51849.github.io/ios-app-guide/fr-FR/tools/private-toeic-study-allocation-planner.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/private-toeic-study-allocation-planner.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/tools/private-toeic-study-allocation-planner.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/private-toeic-study-allocation-planner.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/tools/private-toeic-study-allocation-planner.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/private-toeic-study-allocation-planner.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Planificador privado de reparto de estudio TOEIC">
+<meta property="og:description" content="A partir de los días disponibles, los días de estudio por semana, los minutos por día y el énfasis deseado, calcula de forma transparente un reparto del tiempo de estudio entre escucha, lectura, repaso y práctica cronometrada, sin cuenta, sin predicción de puntuación y sin relación con ETS.">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/es-ES/tools/private-toeic-study-allocation-planner.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#21314a;--muted:#67738a;--line:#dfe5f0;--paper:#fff;--bg:#f3f6fb;--deep:#3949a3;--violet:#7566c8;--soft:#edf0ff;--warn:#fff6d8;--shadow:0 22px 60px rgba(47,57,108,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,#fff 0,var(--bg) 55%,#e9edf7 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",sans-serif;line-height:1.62}
+a{color:var(--deep)}.wrap{width:min(1120px,calc(100% - 30px));margin:auto}.top{position:sticky;top:0;z-index:8;background:#fffffff2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}.links{display:flex;gap:15px;overflow-x:auto}
+.hero{padding:64px 0 30px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--deep);white-space:nowrap}.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif",serif}.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.04;letter-spacing:-.035em;margin:.3em 0 .22em;white-space:nowrap;overflow-x:auto}.lead{font-size:clamp(17px,2.2vw,21px);color:var(--muted);margin:0;white-space:nowrap;overflow-x:auto}.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.planner,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}.planner{padding:clamp(20px,4vw,36px);margin:16px auto 30px}.planner h2,.card h2,.app-card h2{font-size:clamp(24px,3.6vw,34px);line-height:1.14;margin:0;white-space:nowrap;overflow-x:auto}.intro{color:var(--muted);white-space:nowrap;overflow-x:auto}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px}.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--deep);margin-bottom:6px;white-space:nowrap;overflow-x:auto}select,input,button{font:inherit}select,input[type=number]{width:100%;min-height:46px;border:1px solid #cad2e4;border-radius:13px;background:#fff;color:var(--ink);padding:9px 11px}.toggle{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:14px;padding:11px 13px;background:#fff;font-weight:760;white-space:nowrap;overflow-x:auto}.toggle input{inline-size:20px;block-size:20px;flex:0 0 auto}.button{border:0;border-radius:999px;background:linear-gradient(135deg,var(--deep),var(--violet));color:#fff;text-decoration:none;font-weight:850;padding:11px 17px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(57,73,163,.2)}
+.results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin-top:22px}.result{background:var(--soft);border:1px solid #d7dcfa;border-radius:17px;padding:14px;min-width:0}.result strong,.result span{display:block;white-space:nowrap;overflow-x:auto}.result strong{font-size:12px;color:#5360a8;text-transform:uppercase;letter-spacing:.04em}.result span{font-size:15px;color:#3b467a;font-weight:760;margin-top:5px}.note{background:var(--warn);border:1px solid #ead9a7;border-radius:16px;padding:13px 15px;margin:14px 0 0;white-space:nowrap;overflow-x:auto}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:30px}.card,.app-card{padding:clamp(20px,3.5vw,30px)}.card.wide{grid-column:1/-1}.card p,.card li,.app-card p,.faq details p,.faq summary{white-space:nowrap;overflow-x:auto}.card ul,.card ol{padding-left:22px}.card li{margin:8px 0}.source-list a{overflow-wrap:anywhere}.app-card{margin:0 auto 38px;background:linear-gradient(135deg,#fff,#edf0ff)}.app-card .button{display:inline-flex;margin-top:5px}.faq{margin-bottom:30px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+.footer{background:var(--deep);color:#f4f5ff;text-align:center;padding:27px 0;white-space:nowrap;overflow-x:auto}
+@media(max-width:960px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.controls,.results{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1120px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{.top,.hero,.controls,.button,.app-card,.footer{display:none!important}body{background:#fff}.planner,.card{box-shadow:none;break-inside:avoid}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Planificador privado de reparto de estudio TOEIC","description":"A partir de los días disponibles, los días de estudio por semana, los minutos por día y el énfasis deseado, calcula de forma transparente un reparto del tiempo de estudio entre escucha, lectura, repaso y práctica cronometrada, sin cuenta, sin predicción de puntuación y sin relación con ETS.","url":"https://alice51849.github.io/ios-app-guide/es-ES/tools/private-toeic-study-allocation-planner.html","inLanguage":"es-ES","datePublished":"2026-07-15","dateModified":"2026-07-15","applicationCategory":"EducationApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Sin respuestas del examen, grabaciones ni documentos","Sin nombre, correo, cuenta ni fecha exacta del examen","Sin predicción de puntuación, nota ni aprobado/suspenso","Sin afiliación ni respaldo de ETS","Este planificador no predice tu puntuación TOEIC, no evalúa ni diagnostica tu nivel, no garantiza ninguna mejora y no sugiere afiliación ni respaldo de ETS. Solo convierte tus propios números acotados en un reparto editable mediante un cálculo fijo y transparente."],"citation":["https://www.iibc-global.org/english/toeic/test/lr/about/format.html","https://www.ets.org/pdfs/toeic/toeic-listening-reading-sample-test.pdf","https://www.ets.org/toeic/about/listening-reading.html"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Planificador privado de reparto de estudio TOEIC","description":"Con solo unos pocos números acotados, obtén un reparto transparente del tiempo de estudio entre escucha, lectura, repaso y práctica cronometrada. Esto es una referencia de planificación creada por este sitio, no una predicción de puntuación, un diagnóstico ni una recomendación de ETS.","step":[{"@type":"HowToStep","position":1,"text":"Confirma tus propios días disponibles, días de estudio por semana y minutos por día; esta página nunca recibe tu fecha exacta de examen."},{"@type":"HowToStep","position":2,"text":"Elige un equilibrio (equilibrado, escucha o lectura) e indica si estás listo/a para práctica cronometrada."},{"@type":"HowToStep","position":3,"text":"Usa este reparto solo como punto de partida editable y ajústalo según tus propios puntos débiles."},{"@type":"HowToStep","position":4,"text":"El examen TOEIC real tiene un formato fijo y es solo en inglés; consulta el formato oficial de IIBC y el examen de muestra oficial de ETS antes de seguir planificando."},{"@type":"HowToStep","position":5,"text":"Revisa y ajusta el reparto cada pocos días en lugar de seguirlo de forma rígida."}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"es-ES","mainEntity":[{"@type":"Question","name":"¿Esta página recibe mis respuestas del examen, grabaciones o documentos?","acceptedAnswer":{"@type":"Answer","text":"No. Solo acepta números acotados, una elección de equilibrio y un interruptor de disposición."}},{"@type":"Question","name":"¿Esto predice mi puntuación TOEIC?","acceptedAnswer":{"@type":"Answer","text":"No. Solo reparte tus propios minutos; nunca estima, evalúa ni predice ninguna puntuación o resultado de aprobado/suspenso."}},{"@type":"Question","name":"¿Aim990 está afiliada a ETS o al programa TOEIC?","acceptedAnswer":{"@type":"Answer","text":"No. TOEIC es una marca de ETS. Aim990 es una ayuda de estudio independiente y no está afiliada a ETS ni respaldada por ETS."}},{"@type":"Question","name":"¿De dónde sale el porcentaje de reparto?","acceptedAnswer":{"@type":"Answer","text":"Es la referencia de planificación propia y editable de este sitio, no una recomendación oficial de ETS ni de IIBC."}},{"@type":"Question","name":"¿Qué pasa si no estoy listo/a para la práctica cronometrada?","acceptedAnswer":{"@type":"Answer","text":"Desactiva el interruptor de disposición y esos minutos se trasladan al repaso; el total permanece igual."}}]}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/es-ES/index.html">iOS App Guide</a><nav class="links"><a href="https://alice51849.github.io/ios-app-guide/es-ES/tools/index.html">Herramientas gratis</a><a href="https://alice51849.github.io/ios-app-guide/tools/private-toeic-study-allocation-planner.html">English</a></nav></div></header>
+<main>
+<section class="hero wrap"><div class="eyebrow">Gratis · sin cuenta · sin predicción de puntuación</div><h1>Planificador privado de reparto de estudio TOEIC</h1><p class="lead">Con solo unos pocos números acotados, obtén un reparto transparente del tiempo de estudio entre escucha, lectura, repaso y práctica cronometrada. Esto es una referencia de planificación creada por este sitio, no una predicción de puntuación, un diagnóstico ni una recomendación de ETS.</p><div class="badges"><span class="badge">Sin respuestas del examen, grabaciones ni documentos</span><span class="badge">Sin nombre, correo, cuenta ni fecha exacta del examen</span><span class="badge">Sin predicción de puntuación, nota ni aprobado/suspenso</span><span class="badge">Sin afiliación ni respaldo de ETS</span></div></section>
+<section class="planner wrap"><h2>Crea tu reparto de estudio privado</h2><p class="intro">Introduce solo números dentro de los límites y opciones breves. Esta página nunca solicita respuestas del examen, grabaciones, documentos ni datos personales.</p>
+<form id="toeic-study-planner"><div class="controls">
+<div class="field"><label for="days-available">Días disponibles hasta tu fecha objetivo (1 a 30)</label><input id="days-available" type="number" min="1" max="30" step="1" value="14" required></div>
+<div class="field"><label for="study-days-per-week">Días de estudio que puedes dedicar por semana (1 a 7)</label><input id="study-days-per-week" type="number" min="1" max="7" step="1" value="5" required></div>
+<div class="field"><label for="minutes-per-study-day">Minutos que puedes dedicar cada día de estudio (10 a 120)</label><input id="minutes-per-study-day" type="number" min="10" max="120" step="1" value="30" required></div>
+<div class="field"><label for="emphasis">¿Qué equilibrio prefieres?</label><select id="emphasis"><option value="balanced">Escucha y lectura equilibradas</option><option value="listening">Énfasis en escucha</option><option value="reading">Énfasis en lectura</option></select></div>
+<label class="toggle"><input id="timed-ready" type="checkbox">Estoy listo/a para práctica cronometrada</label>
+</div><p><button class="button" type="submit">Actualizar plan privado</button></p></form>
+<div class="results"><div class="result"><strong>Sesiones de estudio planificadas</strong><span id="result-sessions"></span></div><div class="result"><strong>Minutos totales planificados</strong><span id="result-total"></span></div><div class="result"><strong>Minutos de escucha</strong><span id="result-listening"></span></div><div class="result"><strong>Minutos de lectura</strong><span id="result-reading"></span></div><div class="result"><strong>Minutos de repaso</strong><span id="result-review"></span></div><div class="result"><strong>Minutos de práctica cronometrada</strong><span id="result-timed"></span></div></div>
+<p class="note"><strong>Próximos pasos:</strong> <span id="result-plan"></span></p></section>
+<section class="wrap grid"><article class="card"><h2>Próximos pasos</h2><ol><li>Confirma tus propios días disponibles, días de estudio por semana y minutos por día; esta página nunca recibe tu fecha exacta de examen.</li><li>Elige un equilibrio (equilibrado, escucha o lectura) e indica si estás listo/a para práctica cronometrada.</li><li>Usa este reparto solo como punto de partida editable y ajústalo según tus propios puntos débiles.</li><li>El examen TOEIC real tiene un formato fijo y es solo en inglés; consulta el formato oficial de IIBC y el examen de muestra oficial de ETS antes de seguir planificando.</li><li>Revisa y ajusta el reparto cada pocos días en lugar de seguirlo de forma rígida.</li></ol></article><article class="card"><h2>Lo que este planificador no hace</h2><p>Este planificador no predice tu puntuación TOEIC, no evalúa ni diagnostica tu nivel, no garantiza ninguna mejora y no sugiere afiliación ni respaldo de ETS. Solo convierte tus propios números acotados en un reparto editable mediante un cálculo fijo y transparente.</p></article><article class="card wide"><h2>Cómo funciona la lógica de reparto de este planificador</h2><p>Este reparto es una referencia simple y editable creada por este sitio. No es una recomendación de ETS y no predice ninguna puntuación.</p><ul><li>Equilibrado: 35 % escucha, 35 % lectura, 20 % repaso, 10 % práctica cronometrada.</li><li>Énfasis en escucha: 50 % escucha, 25 % lectura, 15 % repaso, 10 % práctica cronometrada.</li><li>Énfasis en lectura: 25 % escucha, 50 % lectura, 15 % repaso, 10 % práctica cronometrada.</li><li>Si no estás listo/a para la práctica cronometrada, su parte se traslada al repaso.</li><li>Los minutos se reparten con el método del resto mayor, para que las cuatro partes sumen siempre exactamente tus minutos totales planificados.</li></ul></article><article class="card wide"><h2>Datos oficiales del formato TOEIC L&amp;R y fuentes</h2><p>Estos datos provienen de las páginas oficiales de IIBC y ETS, no de este sitio. Úsalos para comprobar cualquier plan de estudio, incluido este.</p><ul><li>El examen TOEIC Listening &amp; Reading tiene 200 preguntas que se completan en dos horas.</li><li>Escucha: unos 45 minutos para 100 preguntas.</li><li>Lectura: 75 minutos para 100 preguntas.</li><li>El examen en sí se presenta solo en inglés, y el formato es el mismo en cada convocatoria.</li></ul><ul class="source-list"><li><a href="https://www.iibc-global.org/english/toeic/test/lr/about/format.html" rel="noopener">Formato oficial del examen TOEIC L&amp;R (IIBC)</a></li><li><a href="https://www.ets.org/pdfs/toeic/toeic-listening-reading-sample-test.pdf" rel="noopener">Examen de muestra oficial TOEIC L&amp;R de ETS (PDF)</a></li><li><a href="https://www.ets.org/toeic/about/listening-reading.html" rel="noopener">Resumen oficial del programa TOEIC L&amp;R de ETS</a></li></ul><p><a href="https://developer.chrome.com/docs/ai/webmcp/imperative-api" rel="noopener">Vista previa de la API imperativa Chrome WebMCP (sujeta a cambios)</a></p></article></section>
+<section class="wrap card faq"><h2>Preguntas sobre el reparto de estudio TOEIC</h2><details><summary>¿Esta página recibe mis respuestas del examen, grabaciones o documentos?</summary><p>No. Solo acepta números acotados, una elección de equilibrio y un interruptor de disposición.</p></details><details><summary>¿Esto predice mi puntuación TOEIC?</summary><p>No. Solo reparte tus propios minutos; nunca estima, evalúa ni predice ninguna puntuación o resultado de aprobado/suspenso.</p></details><details><summary>¿Aim990 está afiliada a ETS o al programa TOEIC?</summary><p>No. TOEIC es una marca de ETS. Aim990 es una ayuda de estudio independiente y no está afiliada a ETS ni respaldada por ETS.</p></details><details><summary>¿De dónde sale el porcentaje de reparto?</summary><p>Es la referencia de planificación propia y editable de este sitio, no una recomendación oficial de ETS ni de IIBC.</p></details><details><summary>¿Qué pasa si no estoy listo/a para la práctica cronometrada?</summary><p>Desactiva el interruptor de disposición y esos minutos se trasladan al repaso; el total permanece igual.</p></details></section>
+<p class="wrap">TOEIC es una marca de ETS. Aim990 es una ayuda de estudio independiente y no está afiliada a ETS ni respaldada por ETS. Ninguna app ni plan puede garantizar una puntuación TOEIC.</p>
+<section class="app-card wrap"><h2>¿Quieres un coach TOEIC guiado opcional?</h2><p>Aim990 es opcional. Su ficha actual de App Store describe una descarga gratuita con compras integradas, un coach TOEIC Listening &amp; Reading de 30 días, un diagnóstico de nivel de 8 minutos, tareas diarias de escucha/lectura/gramática/vocabulario y simulacros de examen, además de seguimiento del progreso y puntos débiles; la etiqueta de privacidad de Apple indica que no se recopilan datos. Verifica la ficha actual antes de comprar, ya que las funciones y el precio pueden cambiar. Este planificador funciona por completo sin la app.</p><a class="button" href="https://apps.apple.com/app/id6784974530?ct=iag_toeic_allocation_es-es" rel="nofollow noopener">Ver Aim990 en la App Store</a></section>
+</main>
+<footer class="footer"><div class="wrap">Solo números privados acotados · sin documentos · sin predicción de puntuación · sin afiliación a ETS</div></footer>
+<script type="application/json" id="toeic-study-config">{"inputSchema":{"type":"object","properties":{"days_available":{"type":"integer","minimum":1,"maximum":30,"description":"Días disponibles hasta tu fecha objetivo (1 a 30)"},"study_days_per_week":{"type":"integer","minimum":1,"maximum":7,"description":"Días de estudio que puedes dedicar por semana (1 a 7)"},"minutes_per_study_day":{"type":"integer","minimum":10,"maximum":120,"description":"Minutos que puedes dedicar cada día de estudio (10 a 120)"},"emphasis":{"type":"string","enum":["balanced","listening","reading"],"description":"¿Qué equilibrio prefieres?"},"timed_practice_ready":{"type":"boolean","description":"Estoy listo/a para práctica cronometrada"}},"required":["days_available","study_days_per_week","minutes_per_study_day","emphasis","timed_practice_ready"],"additionalProperties":false},"labels":{"emphasis":{"balanced":"Escucha y lectura equilibradas","listening":"Énfasis en escucha","reading":"Énfasis en lectura"}},"nextSteps":["Confirma tus propios días disponibles, días de estudio por semana y minutos por día; esta página nunca recibe tu fecha exacta de examen.","Elige un equilibrio (equilibrado, escucha o lectura) e indica si estás listo/a para práctica cronometrada.","Usa este reparto solo como punto de partida editable y ajústalo según tus propios puntos débiles.","El examen TOEIC real tiene un formato fijo y es solo en inglés; consulta el formato oficial de IIBC y el examen de muestra oficial de ETS antes de seguir planificando.","Revisa y ajusta el reparto cada pocos días en lugar de seguirlo de forma rígida."],"boundary":"Este planificador no predice tu puntuación TOEIC, no evalúa ni diagnostica tu nivel, no garantiza ninguna mejora y no sugiere afiliación ni respaldo de ETS. Solo convierte tus propios números acotados en un reparto editable mediante un cálculo fijo y transparente.","invalidInput":"Introduce valores dentro de los rangos admitidos indicados arriba.","toolDescription":"Crea un reparto transparente del tiempo de estudio TOEIC a partir de números y opciones acotados y no sensibles. Nunca recibe respuestas del examen, grabaciones, documentos, nombres, contactos, cuentas ni fecha exacta del examen; nunca genera una predicción de puntuación, una nota de nivel, un resultado de aprobado/suspenso ni una afirmación de afiliación con ETS.","officialFormatFacts":{"total_questions":200,"total_test_minutes":120,"listening_minutes":45,"listening_questions":100,"reading_minutes":75,"reading_questions":100,"test_language":"English only","format_is_the_same_each_administration":true,"source":"https://www.iibc-global.org/english/toeic/test/lr/about/format.html"},"freePlanner":{"label":"Planificador privado de reparto de estudio TOEIC","url":"https://alice51849.github.io/ios-app-guide/es-ES/tools/private-toeic-study-allocation-planner.html","boundary":"Introduce solo números dentro de los límites y opciones breves. Esta página nunca solicita respuestas del examen, grabaciones, documentos ni datos personales."},"officialSources":[{"label":"Formato oficial del examen TOEIC L&R (IIBC)","url":"https://www.iibc-global.org/english/toeic/test/lr/about/format.html"},{"label":"Examen de muestra oficial TOEIC L&R de ETS (PDF)","url":"https://www.ets.org/pdfs/toeic/toeic-listening-reading-sample-test.pdf"},{"label":"Resumen oficial del programa TOEIC L&R de ETS","url":"https://www.ets.org/toeic/about/listening-reading.html"}],"webmcpSource":"https://developer.chrome.com/docs/ai/webmcp/imperative-api","optionalApp":{"label":"Ver Aim990 en la App Store","boundary":"Aim990 es opcional. Su ficha actual de App Store describe una descarga gratuita con compras integradas, un coach TOEIC Listening & Reading de 30 días, un diagnóstico de nivel de 8 minutos, tareas diarias de escucha/lectura/gramática/vocabulario y simulacros de examen, además de seguimiento del progreso y puntos débiles; la etiqueta de privacidad de Apple indica que no se recopilan datos. Verifica la ficha actual antes de comprar, ya que las funciones y el precio pueden cambiar. Este planificador funciona por completo sin la app.","app_store_url":"https://apps.apple.com/app/id6784974530?ct=iag_toeic_allocation_es-es"}}</script>
+<script>
+(() => {
+  const config = JSON.parse(document.getElementById("toeic-study-config").textContent);
+  const form = document.getElementById("toeic-study-planner");
+  const fields = {
+    days_available: document.getElementById("days-available"),
+    study_days_per_week: document.getElementById("study-days-per-week"),
+    minutes_per_study_day: document.getElementById("minutes-per-study-day"),
+    emphasis: document.getElementById("emphasis"),
+    timed_practice_ready: document.getElementById("timed-ready")
+  };
+  const output = {
+    sessions: document.getElementById("result-sessions"),
+    total: document.getElementById("result-total"),
+    listening: document.getElementById("result-listening"),
+    reading: document.getElementById("result-reading"),
+    review: document.getElementById("result-review"),
+    timed: document.getElementById("result-timed"),
+    plan: document.getElementById("result-plan")
+  };
+
+  const WEIGHTS = {
+    balanced: {listening: 35, reading: 35, review: 20, timed: 10},
+    listening: {listening: 50, reading: 25, review: 15, timed: 10},
+    reading: {listening: 25, reading: 50, review: 15, timed: 10}
+  };
+
+  function integerValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const schema = config.inputSchema.properties[name];
+    if (typeof value !== "number" || !Number.isInteger(value)) {
+      throw new TypeError(`${name} must be an integer.`);
+    }
+    if (value < schema.minimum || value > schema.maximum) {
+      throw new RangeError(`${name} is outside the supported range.`);
+    }
+    return value;
+  }
+
+  function enumValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const values = config.inputSchema.properties[name].enum;
+    if (typeof value !== "string" || !values.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    return value;
+  }
+
+  function booleanValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    if (typeof input[name] !== "boolean") {
+      throw new TypeError(`${name} must be a boolean.`);
+    }
+    return input[name];
+  }
+
+  function largestRemainderAllocate(total, weights) {
+    const keys = Object.keys(weights);
+    const weightSum = keys.reduce((sum, key) => sum + weights[key], 0);
+    const raw = keys.map((key) => (total * weights[key]) / weightSum);
+    const floors = raw.map(Math.floor);
+    let allocated = floors.reduce((sum, value) => sum + value, 0);
+    let remaining = total - allocated;
+    const remainders = keys
+      .map((key, index) => ({key, index, remainder: raw[index] - floors[index]}))
+      .sort((a, b) => (b.remainder - a.remainder) || (a.index - b.index));
+    const result = {};
+    keys.forEach((key, index) => { result[key] = floors[index]; });
+    for (let i = 0; i < remainders.length && remaining > 0; i += 1) {
+      result[remainders[i].key] += 1;
+      remaining -= 1;
+    }
+    return result;
+  }
+
+  function plan(input) {
+    const daysAvailable = integerValue(input, "days_available");
+    const studyDaysPerWeek = integerValue(input, "study_days_per_week");
+    const minutesPerStudyDay = integerValue(input, "minutes_per_study_day");
+    const emphasis = enumValue(input, "emphasis");
+    const timedPracticeReady = booleanValue(input, "timed_practice_ready");
+
+    const rawSessions = Math.round(
+      (daysAvailable * studyDaysPerWeek) / 7);
+    const plannedSessions = Math.min(
+      daysAvailable, Math.max(1, rawSessions));
+    const totalPlannedMinutes = plannedSessions * minutesPerStudyDay;
+
+    const baseWeights = WEIGHTS[emphasis];
+    const weights = timedPracticeReady ?
+      {...baseWeights} :
+      {
+        listening: baseWeights.listening,
+        reading: baseWeights.reading,
+        review: baseWeights.review + baseWeights.timed,
+        timed: 0
+      };
+    const minutes = weights.timed === 0 ?
+      {...largestRemainderAllocate(totalPlannedMinutes, {
+        listening: weights.listening,
+        reading: weights.reading,
+        review: weights.review
+      }), timed: 0} :
+      largestRemainderAllocate(totalPlannedMinutes, weights);
+
+    return {
+      selected_inputs: {
+        days_available: daysAvailable,
+        study_days_per_week: studyDaysPerWeek,
+        minutes_per_study_day: minutesPerStudyDay,
+        emphasis,
+        emphasis_label: config.labels.emphasis[emphasis],
+        timed_practice_ready: timedPracticeReady
+      },
+      session_math: {
+        formula:
+          "planned_sessions = clamp(round(days_available * " +
+          "study_days_per_week / 7), 1, days_available)",
+        planned_sessions: plannedSessions,
+        total_planned_minutes: totalPlannedMinutes,
+        is_duration_prediction: false
+      },
+      study_allocation_heuristic: {
+        listening_minutes: minutes.listening,
+        reading_minutes: minutes.reading,
+        review_minutes: minutes.review,
+        timed_practice_minutes: minutes.timed,
+        minutes_sum_matches_total:
+          minutes.listening + minutes.reading + minutes.review +
+            minutes.timed === totalPlannedMinutes,
+        heuristic_is_editable_and_created_by_this_site: true,
+        is_not_an_ets_recommendation: true,
+        no_score_grade_or_pass_fail_prediction: true
+      },
+      next_steps: config.nextSteps,
+      boundary: config.boundary,
+      official_format_facts: config.officialFormatFacts
+    };
+  }
+
+  function validateInput(input) {
+    if (input === null || typeof input !== "object" || Array.isArray(input)) {
+      throw new TypeError("WebMCP input must be an object.");
+    }
+    const allowed = new Set(Object.keys(config.inputSchema.properties));
+    for (const name of Object.keys(input)) {
+      if (!allowed.has(name)) {
+        throw new RangeError(`${name} is not a supported input.`);
+      }
+    }
+    return plan(input);
+  }
+
+  function humanInteger(field, name) {
+    const raw = String(field.value).trim();
+    const value = raw === "" ? Number.NaN : Number(raw);
+    const schema = config.inputSchema.properties[name];
+    if (!Number.isInteger(value) ||
+        value < schema.minimum ||
+        value > schema.maximum) {
+      throw new RangeError(`${name} is outside the supported range.`);
+    }
+    return value;
+  }
+
+  function renderInvalid(message) {
+    output.sessions.textContent = "—";
+    output.total.textContent = "—";
+    output.listening.textContent = "—";
+    output.reading.textContent = "—";
+    output.review.textContent = "—";
+    output.timed.textContent = "—";
+    output.plan.textContent = message;
+  }
+
+  function render() {
+    let result;
+    try {
+      result = plan({
+        days_available: humanInteger(
+          fields.days_available, "days_available"),
+        study_days_per_week: humanInteger(
+          fields.study_days_per_week, "study_days_per_week"),
+        minutes_per_study_day: humanInteger(
+          fields.minutes_per_study_day, "minutes_per_study_day"),
+        emphasis: fields.emphasis.value,
+        timed_practice_ready: fields.timed_practice_ready.checked
+      });
+    } catch (error) {
+      if (error instanceof TypeError || error instanceof RangeError) {
+        renderInvalid(config.invalidInput);
+        return;
+      }
+      throw error;
+    }
+    const heuristic = result.study_allocation_heuristic;
+    output.sessions.textContent =
+      String(result.session_math.planned_sessions);
+    output.total.textContent =
+      String(result.session_math.total_planned_minutes);
+    output.listening.textContent = String(heuristic.listening_minutes);
+    output.reading.textContent = String(heuristic.reading_minutes);
+    output.review.textContent = String(heuristic.review_minutes);
+    output.timed.textContent = String(heuristic.timed_practice_minutes);
+    output.plan.textContent = result.next_steps.join(" ");
+  }
+
+  async function registerWebMcp() {
+    if (!document.modelContext?.registerTool) return;
+    await document.modelContext.registerTool({
+      name: "plan_private_toeic_study_allocation",
+      description: config.toolDescription,
+      inputSchema: config.inputSchema,
+      annotations: {readOnlyHint: true, untrustedContentHint: false},
+      execute: async (input) => {
+        const plan = validateInput(input);
+        const result = {
+          result_type: "private_toeic_study_allocation_plan",
+          test_answers_recordings_documents_or_accounts_not_received: true,
+          no_score_prediction_readiness_grade_or_ets_affiliation_claim: true,
+          plan,
+          optional_free_planner: config.freePlanner,
+          official_sources: config.officialSources,
+          webmcp_preview_source: config.webmcpSource
+        };
+        if (config.optionalApp) {
+          result.optional_aim990 = config.optionalApp;
+        }
+        return JSON.stringify(result);
+      }
+    });
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    render();
+  });
+  for (const field of Object.values(fields)) {
+    field.addEventListener("change", render);
+  }
+  render();
+  registerWebMcp().catch((error) =>
+    console.error("WebMCP tool registration failed.", error));
+})();
+</script>
+</body>
+</html>

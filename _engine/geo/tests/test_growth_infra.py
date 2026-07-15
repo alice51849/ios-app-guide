@@ -7,6 +7,7 @@ import csv
 import datetime as dt
 import email.utils
 import hashlib
+import html
 import io
 import importlib.util
 import json
@@ -86,6 +87,7 @@ import resume_evidence_planner
 import rsscloud_config
 import screen_time_block_planner
 import static_api_catalog
+import toeic_study_allocation_planner
 import vocabulary_habit_planner
 import wordmate_language_support
 import zhuyin_blending_card_generator
@@ -12437,6 +12439,548 @@ class GeneratorTests(unittest.TestCase):
             inactive,
         )
 
+    def test_toeic_study_allocation_planner_is_private_transparent_and_non_predictive(
+        self,
+    ):
+        pages = {
+            locale: toeic_study_allocation_planner.render_page(
+                locale,
+                app_public=False,
+            )
+            for locale in toeic_study_allocation_planner.ALT_LOCALES
+        }
+        public = toeic_study_allocation_planner.render_page("en", app_public=True)
+        stale_intro_fragments = {
+            "en": ("resume", "job post"),
+            "es-ES": ("currículum", "oferta de empleo"),
+            "pt-BR": ("currículo", "uma vaga"),
+            "de-DE": ("Lebenslauf", "Stellenanzeige"),
+            "fr-FR": ("un CV", "offre d'emploi"),
+            "ja": ("履歴書", "求人票"),
+            "ko": ("이력서", "채용 공고"),
+            "zh-Hant": ("履歷", "職缺"),
+            "zh-Hans": ("简历", "职位信息"),
+        }
+        for locale, page in pages.items():
+            for fragment in stale_intro_fragments[locale]:
+                self.assertNotIn(
+                    fragment,
+                    toeic_study_allocation_planner.COPY[locale]["planner_intro"],
+                )
+            self.assertIn('"@type":"WebApplication"', page)
+            self.assertNotIn('"@type":"SoftwareApplication"', page)
+            self.assertIn('"@type":"HowTo"', page)
+            self.assertIn('"@type":"FAQPage"', page)
+            self.assertIn('"dateModified":"2026-07-15"', page)
+            self.assertIn("document.modelContext?.registerTool", page)
+            self.assertIn(
+                'name: "plan_private_toeic_study_allocation"',
+                page,
+            )
+            self.assertIn(
+                "annotations: {readOnlyHint: true, untrustedContentHint: false}",
+                page,
+            )
+            self.assertIn(
+                "test_answers_recordings_documents_or_accounts_not_received: "
+                "true",
+                page,
+            )
+            self.assertIn(
+                "no_score_prediction_readiness_grade_or_ets_affiliation_claim:"
+                " true",
+                page,
+            )
+            self.assertIn("is_not_an_ets_recommendation: true", page)
+            self.assertIn(
+                "heuristic_is_editable_and_created_by_this_site: true", page
+            )
+            self.assertIn("no_score_grade_or_pass_fail_prediction: true", page)
+            self.assertIn("is_duration_prediction: false", page)
+            self.assertIn(toeic_study_allocation_planner.IIBC_FORMAT, page)
+            self.assertIn(toeic_study_allocation_planner.ETS_SAMPLE_PDF, page)
+            self.assertIn(toeic_study_allocation_planner.ETS_ABOUT, page)
+            self.assertIn(toeic_study_allocation_planner.WEBMCP_SOURCE, page)
+            self.assertIn(
+                html.escape(
+                    toeic_study_allocation_planner.COPY[locale]["heading"]
+                ),
+                page,
+            )
+            self.assertIn(
+                'id="days-available" type="number" min="1" max="30" '
+                'step="1" value="14"',
+                page,
+            )
+            self.assertIn(
+                'id="study-days-per-week" type="number" min="1" max="7" '
+                'step="1" value="5"',
+                page,
+            )
+            self.assertIn(
+                'id="minutes-per-study-day" type="number" min="10" '
+                'max="120" step="1" value="30"',
+                page,
+            )
+            for hreflang in toeic_study_allocation_planner.ALT_LOCALES:
+                self.assertIn(f'hreflang="{hreflang}"', page)
+            self.assertIn('hreflang="x-default"', page)
+            for forbidden in (
+                'type="file"',
+                "<textarea",
+                "FileReader",
+                "fetch(",
+                "XMLHttpRequest",
+                "localStorage",
+                "sessionStorage",
+                "document.cookie",
+                "navigator.modelContext",
+                "origin-trial",
+                "your predicted score",
+                "your score will",
+                "you will pass",
+                "guaranteed to improve your score",
+                "affiliated with ETS.",
+            ):
+                self.assertNotIn(forbidden, page)
+            self.assertNotIn(
+                f"id{toeic_study_allocation_planner.APP_ID}",
+                page,
+            )
+        self.assertIn("不會預測你的 TOEIC 分數", pages["zh-Hant"])
+        self.assertIn(
+            toeic_study_allocation_planner.COPY["zh-Hans"]["boundary_text"],
+            pages["zh-Hans"],
+        )
+        self.assertIn(
+            toeic_study_allocation_planner.COPY["ja"]["boundary_text"],
+            pages["ja"],
+        )
+        self.assertIn(
+            toeic_study_allocation_planner.COPY["ko"]["boundary_text"],
+            pages["ko"],
+        )
+        self.assertIn(f"id{toeic_study_allocation_planner.APP_ID}", public)
+        self.assertLess(
+            public.index('id="toeic-study-planner"'),
+            public.index(
+                html.escape(
+                    toeic_study_allocation_planner.COPY["en"]["sources_title"]
+                )
+            ),
+        )
+        self.assertLess(
+            public.index(
+                html.escape(
+                    toeic_study_allocation_planner.COPY["en"]["sources_title"]
+                )
+            ),
+            public.index(
+                html.escape(
+                    toeic_study_allocation_planner.COPY["en"]["app_title"]
+                )
+            ),
+        )
+        schema = toeic_study_allocation_planner.webmcp_input_schema("en")
+        self.assertFalse(schema["additionalProperties"])
+        self.assertEqual(
+            [
+                "days_available",
+                "study_days_per_week",
+                "minutes_per_study_day",
+                "emphasis",
+                "timed_practice_ready",
+            ],
+            schema["required"],
+        )
+        self.assertEqual(1, schema["properties"]["days_available"]["minimum"])
+        self.assertEqual(30, schema["properties"]["days_available"]["maximum"])
+        self.assertEqual(
+            1, schema["properties"]["study_days_per_week"]["minimum"]
+        )
+        self.assertEqual(
+            7, schema["properties"]["study_days_per_week"]["maximum"]
+        )
+        self.assertEqual(
+            10, schema["properties"]["minutes_per_study_day"]["minimum"]
+        )
+        self.assertEqual(
+            120, schema["properties"]["minutes_per_study_day"]["maximum"]
+        )
+        self.assertEqual(
+            list(toeic_study_allocation_planner.EMPHASIS_CHOICES),
+            schema["properties"]["emphasis"]["enum"],
+        )
+        self.assertEqual(
+            "boolean", schema["properties"]["timed_practice_ready"]["type"]
+        )
+        execute = toeic_study_allocation_planner.SCRIPT.split(
+            "execute: async (input) => {",
+            1,
+        )[1].split("return JSON.stringify(result);", 1)[0]
+        for mutation in (
+            "textContent",
+            "innerHTML",
+            "appendChild",
+            "replaceChildren",
+            "scroll",
+            "fetch(",
+            "localStorage",
+            "sessionStorage",
+            "navigator.clipboard",
+            "document.cookie",
+            "location.href",
+            "window.open",
+        ):
+            self.assertNotIn(mutation, execute)
+        self.assertLess(
+            execute.index("optional_free_planner: config.freePlanner"),
+            execute.index("official_sources: config.officialSources"),
+        )
+        self.assertLess(
+            execute.index("official_sources: config.officialSources"),
+            execute.index("result.optional_aim990"),
+        )
+
+    def test_toeic_study_allocation_planner_allocation_sums_exactly(self):
+        def largest_remainder_allocate(total, weights):
+            keys = list(weights.keys())
+            weight_sum = sum(weights[key] for key in keys)
+            raw = [total * weights[key] / weight_sum for key in keys]
+            floors = [int(value) for value in raw]
+            allocated = sum(floors)
+            remaining = total - allocated
+            remainders = sorted(
+                range(len(keys)),
+                key=lambda index: (-(raw[index] - floors[index]), index),
+            )
+            result = dict(zip(keys, floors, strict=True))
+            for index in remainders:
+                if remaining <= 0:
+                    break
+                result[keys[index]] += 1
+                remaining -= 1
+            return result
+
+        weights_by_emphasis = {
+            "balanced": {
+                "listening": 35,
+                "reading": 35,
+                "review": 20,
+                "timed": 10,
+            },
+            "listening": {
+                "listening": 50,
+                "reading": 25,
+                "review": 15,
+                "timed": 10,
+            },
+            "reading": {
+                "listening": 25,
+                "reading": 50,
+                "review": 15,
+                "timed": 10,
+            },
+        }
+        for emphasis, weights in weights_by_emphasis.items():
+            self.assertEqual(100, sum(weights.values()))
+            for days_available in (1, 3, 7, 14, 21, 30):
+                for study_days_per_week in (1, 3, 5, 7):
+                    for minutes_per_study_day in (10, 25, 45, 60, 88, 120):
+                        for timed_ready in (True, False):
+                            planned_sessions = min(
+                                days_available,
+                                max(
+                                    1,
+                                    round(
+                                        days_available
+                                        * study_days_per_week
+                                        / 7
+                                    ),
+                                ),
+                            )
+                            self.assertGreaterEqual(planned_sessions, 1)
+                            self.assertLessEqual(
+                                planned_sessions, days_available
+                            )
+                            total_minutes = (
+                                planned_sessions * minutes_per_study_day
+                            )
+                            active_weights = (
+                                weights
+                                if timed_ready
+                                else {
+                                    "listening": weights["listening"],
+                                    "reading": weights["reading"],
+                                    "review": weights["review"]
+                                    + weights["timed"],
+                                }
+                            )
+                            allocation = largest_remainder_allocate(
+                                total_minutes, active_weights
+                            )
+                            if not timed_ready:
+                                allocation["timed"] = 0
+                            self.assertEqual(
+                                total_minutes,
+                                allocation["listening"]
+                                + allocation["reading"]
+                                + allocation["review"]
+                                + allocation["timed"],
+                            )
+        self.assertIn(
+            "largestRemainderAllocate",
+            toeic_study_allocation_planner.SCRIPT,
+        )
+        self.assertIn(
+            '"planned_sessions = clamp(round(days_available * " +',
+            toeic_study_allocation_planner.SCRIPT,
+        )
+        self.assertIn(
+            '"study_days_per_week / 7), 1, days_available)"',
+            toeic_study_allocation_planner.SCRIPT,
+        )
+        for emphasis, weights in weights_by_emphasis.items():
+            marker = (
+                f"{emphasis}: {{listening: {weights['listening']}, "
+                f"reading: {weights['reading']}, "
+                f"review: {weights['review']}, "
+                f"timed: {weights['timed']}}}"
+            )
+            self.assertIn(marker, toeic_study_allocation_planner.SCRIPT)
+
+    def test_toeic_study_allocation_planner_runtime_rejects_invalid_input(self):
+        script = toeic_study_allocation_planner.SCRIPT
+        self.assertIn(
+            "if (!allowed.has(name)) {", script
+        )
+        self.assertIn(
+            "throw new RangeError(`${name} is not a supported input.`);",
+            script,
+        )
+        self.assertIn(
+            'if (typeof value !== "number" || !Number.isInteger(value)) {',
+            script,
+        )
+        self.assertIn(
+            "throw new RangeError(`${name} is outside the supported "
+            "range.`);",
+            script,
+        )
+        self.assertIn(
+            'if (typeof input[name] !== "boolean") {',
+            script,
+        )
+        schema = toeic_study_allocation_planner.webmcp_input_schema("en")
+        self.assertFalse(schema["additionalProperties"])
+
+    def test_toeic_study_allocation_planner_builds_nine_locales_and_indexes(
+        self,
+    ):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale in toeic_study_allocation_planner.ALT_LOCALES:
+                tools = (
+                    pages / "tools"
+                    if locale == "en"
+                    else pages / locale / "tools"
+                )
+                tools.mkdir(parents=True)
+                (tools / "index.html").write_text(
+                    '<main><section class="wrap grid"></section></main>',
+                    encoding="utf-8",
+                )
+                answers = (
+                    pages / "answers"
+                    if locale == "en"
+                    else pages / locale / "answers"
+                )
+                answers.mkdir(parents=True)
+                cta = (
+                    '<a class="cta" href="https://apps.apple.com/app/id'
+                    f'{toeic_study_allocation_planner.APP_ID}?ct=iag_ans" '
+                    'rel="nofollow noopener">Get Aim990</a>'
+                )
+                (answers / "toeic-answer.html").write_text(
+                    f"<main><p>Study tips.</p>{cta}</main>",
+                    encoding="utf-8",
+                )
+                (answers / "unrelated-answer.html").write_text(
+                    "<main><p>No Aim990 mention here.</p></main>",
+                    encoding="utf-8",
+                )
+                (answers / "mentions-id-no-cta.html").write_text(
+                    "<main><p>Search for "
+                    f"{toeic_study_allocation_planner.APP_ID} manually, "
+                    "no anchor present.</p></main>",
+                    encoding="utf-8",
+                )
+            unsupported = pages / "th" / "answers"
+            unsupported.mkdir(parents=True)
+            (unsupported / "toeic-answer.html").write_text(
+                "<main><p>Unsupported locale.</p>"
+                '<a class="cta" href="https://apps.apple.com/app/id'
+                f'{toeic_study_allocation_planner.APP_ID}?ct=iag_ans" '
+                'rel="nofollow noopener">Get Aim990</a></main>',
+                encoding="utf-8",
+            )
+            urls = toeic_study_allocation_planner.build(
+                pages,
+                app_public=False,
+            )
+            self.assertEqual(9, len(urls))
+            for locale in toeic_study_allocation_planner.ALT_LOCALES:
+                tools = (
+                    pages / "tools"
+                    if locale == "en"
+                    else pages / locale / "tools"
+                )
+                page_path = (
+                    tools
+                    / f"{toeic_study_allocation_planner.SLUG}.html"
+                )
+                self.assertTrue(page_path.exists())
+                index = (tools / "index.html").read_text(encoding="utf-8")
+                self.assertEqual(
+                    1,
+                    index.count(
+                        f"{toeic_study_allocation_planner.SLUG}.html"
+                    ),
+                )
+                self.assertIn(
+                    html.escape(
+                        toeic_study_allocation_planner.COPY[locale][
+                            "index_title"
+                        ]
+                    ),
+                    index,
+                )
+                answers = (
+                    pages / "answers"
+                    if locale == "en"
+                    else pages / locale / "answers"
+                )
+                toeic_answer = (answers / "toeic-answer.html").read_text(
+                    encoding="utf-8"
+                )
+                self.assertEqual(
+                    1,
+                    toeic_answer.count(
+                        toeic_study_allocation_planner.INBOUND_LINK_CLASS
+                    ),
+                )
+                self.assertLess(
+                    toeic_answer.index(
+                        toeic_study_allocation_planner.INBOUND_LINK_CLASS
+                    ),
+                    toeic_answer.index(
+                        f"id{toeic_study_allocation_planner.APP_ID}"
+                    ),
+                )
+                unrelated = (answers / "unrelated-answer.html").read_text(
+                    encoding="utf-8"
+                )
+                self.assertNotIn(
+                    toeic_study_allocation_planner.INBOUND_LINK_CLASS,
+                    unrelated,
+                )
+                no_cta = (
+                    answers / "mentions-id-no-cta.html"
+                ).read_text(encoding="utf-8")
+                self.assertNotIn(
+                    toeic_study_allocation_planner.INBOUND_LINK_CLASS,
+                    no_cta,
+                )
+            unsupported_text = (
+                unsupported / "toeic-answer.html"
+            ).read_text(encoding="utf-8")
+            self.assertNotIn(
+                toeic_study_allocation_planner.INBOUND_LINK_CLASS,
+                unsupported_text,
+            )
+            english_page = (
+                pages
+                / "tools"
+                / f"{toeic_study_allocation_planner.SLUG}.html"
+            )
+            english_answer = pages / "answers" / "toeic-answer.html"
+            stable_mtime = 1_700_000_000_000_000_000
+            os.utime(english_page, ns=(stable_mtime, stable_mtime))
+            os.utime(english_answer, ns=(stable_mtime, stable_mtime))
+            page_bytes = english_page.read_bytes()
+            answer_bytes = english_answer.read_bytes()
+            toeic_study_allocation_planner.build(
+                pages,
+                app_public=False,
+            )
+            self.assertEqual(page_bytes, english_page.read_bytes())
+            self.assertEqual(answer_bytes, english_answer.read_bytes())
+            self.assertEqual(
+                stable_mtime, english_page.stat().st_mtime_ns
+            )
+            self.assertEqual(
+                stable_mtime, english_answer.stat().st_mtime_ns
+            )
+
+    def test_toeic_study_allocation_planner_live_gates_app_cta(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale in toeic_study_allocation_planner.ALT_LOCALES:
+                tools = (
+                    pages / "tools"
+                    if locale == "en"
+                    else pages / locale / "tools"
+                )
+                tools.mkdir(parents=True)
+                (tools / "index.html").write_text(
+                    '<main><section class="wrap grid"></section></main>',
+                    encoding="utf-8",
+                )
+            with mock.patch.object(
+                toeic_study_allocation_planner,
+                "live_app_keys",
+                return_value=set(),
+            ):
+                toeic_study_allocation_planner.build(pages)
+            english = (
+                pages
+                / "tools"
+                / f"{toeic_study_allocation_planner.SLUG}.html"
+            ).read_text(encoding="utf-8")
+            self.assertNotIn(
+                f"apps.apple.com/app/id"
+                f"{toeic_study_allocation_planner.APP_ID}",
+                english,
+            )
+            self.assertNotIn(
+                toeic_study_allocation_planner.COPY["en"]["app_title"],
+                english,
+            )
+            with mock.patch.object(
+                toeic_study_allocation_planner,
+                "live_app_keys",
+                return_value={toeic_study_allocation_planner.APP_KEY},
+            ):
+                toeic_study_allocation_planner.build(pages)
+            active = (
+                pages
+                / "tools"
+                / f"{toeic_study_allocation_planner.SLUG}.html"
+            ).read_text(encoding="utf-8")
+            self.assertIn(
+                f"apps.apple.com/app/id"
+                f"{toeic_study_allocation_planner.APP_ID}",
+                active,
+            )
+        self.assertNotIn(
+            f"apps.apple.com/app/id{toeic_study_allocation_planner.APP_ID}",
+            toeic_study_allocation_planner.render_page("en", app_public=False),
+        )
+        self.assertIn(
+            f"apps.apple.com/app/id{toeic_study_allocation_planner.APP_ID}",
+            toeic_study_allocation_planner.render_page("en", app_public=True),
+        )
+
     def test_wordmate_answer_leads_with_free_private_planner(self):
         question = (
             "How can I build a vocabulary study habit without uploading "
@@ -14774,6 +15318,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("screen_time_block_planner.py", materialize_block)
         self.assertNotIn("photo_storage_cleanup_planner.py", materialize_block)
         self.assertNotIn("vocabulary_habit_planner.py", materialize_block)
+        self.assertNotIn("toeic_study_allocation_planner.py", materialize_block)
         availability_block = workflow.split(
             "- name: Refresh verified App Store availability once", 1
         )[1].split("- name: Generate new answer pages", 1)[0]
@@ -14809,6 +15354,14 @@ class GeneratorTests(unittest.TestCase):
             availability_block.index("refresh=True"),
             availability_block.index("photo_storage_cleanup_planner.py"),
         )
+        self.assertLess(
+            availability_block.index("refresh=True"),
+            availability_block.index("toeic_study_allocation_planner.py"),
+        )
+        self.assertLess(
+            availability_block.index("toeic_study_allocation_planner.py"),
+            availability_block.index("wordmate_language_support.py"),
+        )
         self.assertNotIn("gen_sitemap_lastmod.py", materialize_block)
         self.assertIn("zhuyin_picture_book_club_kit.py", workflow)
         self.assertIn("zhuyin_parent_teacher_handoff_kit.py", workflow)
@@ -14825,6 +15378,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(1, workflow.count("screen_time_block_planner.py"))
         self.assertEqual(1, workflow.count("photo_storage_cleanup_planner.py"))
         self.assertEqual(1, workflow.count("vocabulary_habit_planner.py"))
+        self.assertEqual(1, workflow.count("toeic_study_allocation_planner.py"))
         self.assertEqual(1, workflow.count("wordmate_language_support.py"))
         self.assertEqual(1, workflow.count("portfolio_app_finder.py"))
         self.assertLess(
@@ -14854,6 +15408,14 @@ class GeneratorTests(unittest.TestCase):
         self.assertLess(
             workflow.index("refresh=True"),
             workflow.index("vocabulary_habit_planner.py"),
+        )
+        self.assertLess(
+            workflow.index("refresh=True"),
+            workflow.index("toeic_study_allocation_planner.py"),
+        )
+        self.assertLess(
+            workflow.index("toeic_study_allocation_planner.py"),
+            workflow.index("wordmate_language_support.py"),
         )
         self.assertLess(
             workflow.index("refresh=True"),
@@ -15092,6 +15654,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("photo_storage_cleanup_planner.py", publish)
         self.assertIn("resume_evidence_planner.py", publish)
         self.assertIn("vocabulary_habit_planner.py", publish)
+        self.assertIn("toeic_study_allocation_planner.py", publish)
         self.assertIn("wordmate_language_support.py", publish)
         self.assertIn("portfolio_app_finder.py", publish)
         self.assertEqual(
@@ -15344,6 +15907,35 @@ class GeneratorTests(unittest.TestCase):
             (
                 "ats resume keyword checker",
                 f"{gen_llms.SITE}/tools/ats-resume-keyword-checker.html",
+            ),
+            resources,
+        )
+
+    def test_llms_uses_truthful_title_for_toeic_study_allocation_planner(self):
+        with tempfile.TemporaryDirectory() as directory:
+            tools = Path(directory)
+            (tools / "private-toeic-study-allocation-planner.html").write_text(
+                "<h1>Private TOEIC study allocation planner</h1>",
+                encoding="utf-8",
+            )
+            resources = gen_llms._resource_files(
+                str(tools),
+                set(gen_llms.APPS),
+                "tools",
+            )
+        self.assertIn(
+            (
+                "Private TOEIC study allocation planner",
+                f"{gen_llms.SITE}/tools/"
+                "private-toeic-study-allocation-planner.html",
+            ),
+            resources,
+        )
+        self.assertNotIn(
+            (
+                "private toeic study allocation planner",
+                f"{gen_llms.SITE}/tools/"
+                "private-toeic-study-allocation-planner.html",
             ),
             resources,
         )

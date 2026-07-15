@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>비공개 TOEIC 학습 배분 플래너 | 점수 예측 없음</title>
+<meta name="description" content="학습 가능 일수, 주당 학습일, 하루 학습 분수, 학습 비중을 바탕으로 리스닝/리딩/복습/시간제 연습 시간을 투명하게 배분합니다. 계정 불필요, 점수 예측 없음, ETS와 제휴 없음.">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/ko/tools/private-toeic-study-allocation-planner.html">
+<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/private-toeic-study-allocation-planner.html">
+<link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/es-ES/tools/private-toeic-study-allocation-planner.html">
+<link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/tools/private-toeic-study-allocation-planner.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tools/private-toeic-study-allocation-planner.html">
+<link rel="alternate" hreflang="fr-FR" href="https://alice51849.github.io/ios-app-guide/fr-FR/tools/private-toeic-study-allocation-planner.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/private-toeic-study-allocation-planner.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/tools/private-toeic-study-allocation-planner.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/private-toeic-study-allocation-planner.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/tools/private-toeic-study-allocation-planner.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/private-toeic-study-allocation-planner.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="비공개 TOEIC 학습 배분 플래너">
+<meta property="og:description" content="학습 가능 일수, 주당 학습일, 하루 학습 분수, 학습 비중을 바탕으로 리스닝/리딩/복습/시간제 연습 시간을 투명하게 배분합니다. 계정 불필요, 점수 예측 없음, ETS와 제휴 없음.">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/ko/tools/private-toeic-study-allocation-planner.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#21314a;--muted:#67738a;--line:#dfe5f0;--paper:#fff;--bg:#f3f6fb;--deep:#3949a3;--violet:#7566c8;--soft:#edf0ff;--warn:#fff6d8;--shadow:0 22px 60px rgba(47,57,108,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,#fff 0,var(--bg) 55%,#e9edf7 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",sans-serif;line-height:1.62}
+a{color:var(--deep)}.wrap{width:min(1120px,calc(100% - 30px));margin:auto}.top{position:sticky;top:0;z-index:8;background:#fffffff2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}.links{display:flex;gap:15px;overflow-x:auto}
+.hero{padding:64px 0 30px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--deep);white-space:nowrap}.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif",serif}.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.04;letter-spacing:-.035em;margin:.3em 0 .22em;white-space:nowrap;overflow-x:auto}.lead{font-size:clamp(17px,2.2vw,21px);color:var(--muted);margin:0;white-space:nowrap;overflow-x:auto}.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.planner,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}.planner{padding:clamp(20px,4vw,36px);margin:16px auto 30px}.planner h2,.card h2,.app-card h2{font-size:clamp(24px,3.6vw,34px);line-height:1.14;margin:0;white-space:nowrap;overflow-x:auto}.intro{color:var(--muted);white-space:nowrap;overflow-x:auto}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px}.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--deep);margin-bottom:6px;white-space:nowrap;overflow-x:auto}select,input,button{font:inherit}select,input[type=number]{width:100%;min-height:46px;border:1px solid #cad2e4;border-radius:13px;background:#fff;color:var(--ink);padding:9px 11px}.toggle{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:14px;padding:11px 13px;background:#fff;font-weight:760;white-space:nowrap;overflow-x:auto}.toggle input{inline-size:20px;block-size:20px;flex:0 0 auto}.button{border:0;border-radius:999px;background:linear-gradient(135deg,var(--deep),var(--violet));color:#fff;text-decoration:none;font-weight:850;padding:11px 17px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(57,73,163,.2)}
+.results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin-top:22px}.result{background:var(--soft);border:1px solid #d7dcfa;border-radius:17px;padding:14px;min-width:0}.result strong,.result span{display:block;white-space:nowrap;overflow-x:auto}.result strong{font-size:12px;color:#5360a8;text-transform:uppercase;letter-spacing:.04em}.result span{font-size:15px;color:#3b467a;font-weight:760;margin-top:5px}.note{background:var(--warn);border:1px solid #ead9a7;border-radius:16px;padding:13px 15px;margin:14px 0 0;white-space:nowrap;overflow-x:auto}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:30px}.card,.app-card{padding:clamp(20px,3.5vw,30px)}.card.wide{grid-column:1/-1}.card p,.card li,.app-card p,.faq details p,.faq summary{white-space:nowrap;overflow-x:auto}.card ul,.card ol{padding-left:22px}.card li{margin:8px 0}.source-list a{overflow-wrap:anywhere}.app-card{margin:0 auto 38px;background:linear-gradient(135deg,#fff,#edf0ff)}.app-card .button{display:inline-flex;margin-top:5px}.faq{margin-bottom:30px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+.footer{background:var(--deep);color:#f4f5ff;text-align:center;padding:27px 0;white-space:nowrap;overflow-x:auto}
+@media(max-width:960px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.controls,.results{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1120px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{.top,.hero,.controls,.button,.app-card,.footer{display:none!important}body{background:#fff}.planner,.card{box-shadow:none;break-inside:avoid}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"비공개 TOEIC 학습 배분 플래너","description":"학습 가능 일수, 주당 학습일, 하루 학습 분수, 학습 비중을 바탕으로 리스닝/리딩/복습/시간제 연습 시간을 투명하게 배분합니다. 계정 불필요, 점수 예측 없음, ETS와 제휴 없음.","url":"https://alice51849.github.io/ios-app-guide/ko/tools/private-toeic-study-allocation-planner.html","inLanguage":"ko","datePublished":"2026-07-15","dateModified":"2026-07-15","applicationCategory":"EducationApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["정답, 녹음, 서류 전송 없음","이름, 이메일, 계정, 정확한 시험일 전송 없음","점수, 등급, 합격/불합격 예측 없음","ETS와 제휴 또는 보증 관계 없음","이 플래너는 TOEIC 점수를 예측하거나, 실력을 채점·진단하거나, 향상을 보장하거나, ETS와의 제휴나 보증 관계를 암시하지 않습니다. 본인이 입력한 제한된 숫자를 고정되고 투명한 계산식으로 수정 가능한 시간 배분으로 변환할 뿐입니다."],"citation":["https://www.iibc-global.org/english/toeic/test/lr/about/format.html","https://www.ets.org/pdfs/toeic/toeic-listening-reading-sample-test.pdf","https://www.ets.org/toeic/about/listening-reading.html"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"비공개 TOEIC 학습 배분 플래너","description":"제한된 범위의 숫자 몇 개만으로 리스닝, 리딩, 복습, 시간제 연습에 대한 학습 시간을 투명하게 배분합니다. 이는 본 사이트가 만든 학습 참고용 계산일 뿐, 점수 예측이나 진단, ETS의 권장 사항이 아닙니다.","step":[{"@type":"HowToStep","position":1,"text":"본인의 학습 가능 일수, 주당 학습일, 하루 학습 분수를 확인하세요. 이 페이지는 정확한 시험일을 받지 않습니다."},{"@type":"HowToStep","position":2,"text":"비중(균형, 리스닝 중심, 리딩 중심)과 시간제 연습 준비 여부를 선택하세요."},{"@type":"HowToStep","position":3,"text":"이 시간 배분은 수정 가능한 출발점으로만 사용하고, 본인의 취약 영역에 맞게 조정하세요."},{"@type":"HowToStep","position":4,"text":"실제 TOEIC은 형식이 고정되어 있고 영어로만 진행되므로, 계획을 세우기 전에 IIBC 공식 형식과 ETS 샘플 테스트를 확인하세요."},{"@type":"HowToStep","position":5,"text":"배분을 엄격히 따르기보다 며칠마다 다시 검토하고 조정하세요."}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ko","mainEntity":[{"@type":"Question","name":"이 페이지가 제 정답, 녹음, 서류를 받나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 범위가 제한된 숫자, 비중 선택, 준비 여부 토글만 받습니다."}},{"@type":"Question","name":"이것이 제 TOEIC 점수를 예측하나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 본인의 시간을 배분할 뿐이며, 점수나 합격 여부를 추정·채점·예측하지 않습니다."}},{"@type":"Question","name":"Aim990이 ETS나 TOEIC 프로그램과 제휴되어 있나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. TOEIC은 ETS의 상표입니다. Aim990은 독립적인 학습 보조 앱이며 ETS와 제휴하거나 보증받지 않았습니다."}},{"@type":"Question","name":"배분 비율은 어디서 나온 것인가요?","acceptedAnswer":{"@type":"Answer","text":"본 사이트가 만든 수정 가능한 참고 계산이며, ETS나 IIBC의 공식 권장 사항이 아닙니다."}},{"@type":"Question","name":"시간제 연습 준비가 안 되어 있다면요?","acceptedAnswer":{"@type":"Answer","text":"준비 여부 토글을 끄면 해당 시간이 복습으로 이동하며, 총 시간은 그대로 유지됩니다."}}]}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/ko/index.html">iOS App Guide</a><nav class="links"><a href="https://alice51849.github.io/ios-app-guide/ko/tools/index.html">무료 도구</a><a href="https://alice51849.github.io/ios-app-guide/tools/private-toeic-study-allocation-planner.html">English</a></nav></div></header>
+<main>
+<section class="hero wrap"><div class="eyebrow">무료 · 계정 불필요 · 점수 예측 없음</div><h1>비공개 TOEIC 학습 배분 플래너</h1><p class="lead">제한된 범위의 숫자 몇 개만으로 리스닝, 리딩, 복습, 시간제 연습에 대한 학습 시간을 투명하게 배분합니다. 이는 본 사이트가 만든 학습 참고용 계산일 뿐, 점수 예측이나 진단, ETS의 권장 사항이 아닙니다.</p><div class="badges"><span class="badge">정답, 녹음, 서류 전송 없음</span><span class="badge">이름, 이메일, 계정, 정확한 시험일 전송 없음</span><span class="badge">점수, 등급, 합격/불합격 예측 없음</span><span class="badge">ETS와 제휴 또는 보증 관계 없음</span></div></section>
+<section class="planner wrap"><h2>비공개 학습 배분 만들기</h2><p class="intro">범위 안의 숫자와 짧은 선택 항목만 입력하세요. 이 페이지는 시험 답안, 녹음, 문서 또는 개인정보를 요구하지 않습니다.</p>
+<form id="toeic-study-planner"><div class="controls">
+<div class="field"><label for="days-available">목표일까지 남은 학습 가능 일수(1~30)</label><input id="days-available" type="number" min="1" max="30" step="1" value="14" required></div>
+<div class="field"><label for="study-days-per-week">주당 확보 가능한 학습일 수(1~7)</label><input id="study-days-per-week" type="number" min="1" max="7" step="1" value="5" required></div>
+<div class="field"><label for="minutes-per-study-day">학습일마다 사용할 수 있는 분수(10~120)</label><input id="minutes-per-study-day" type="number" min="10" max="120" step="1" value="30" required></div>
+<div class="field"><label for="emphasis">어떤 비중을 원하시나요?</label><select id="emphasis"><option value="balanced">리스닝과 리딩 균형</option><option value="listening">리스닝 중심</option><option value="reading">리딩 중심</option></select></div>
+<label class="toggle"><input id="timed-ready" type="checkbox">시간제 연습을 포함할 준비가 되었습니다</label>
+</div><p><button class="button" type="submit">비공개 플랜 업데이트</button></p></form>
+<div class="results"><div class="result"><strong>계획된 학습 횟수</strong><span id="result-sessions"></span></div><div class="result"><strong>계획된 총 분수</strong><span id="result-total"></span></div><div class="result"><strong>리스닝 분수</strong><span id="result-listening"></span></div><div class="result"><strong>리딩 분수</strong><span id="result-reading"></span></div><div class="result"><strong>복습 분수</strong><span id="result-review"></span></div><div class="result"><strong>시간제 연습 분수</strong><span id="result-timed"></span></div></div>
+<p class="note"><strong>다음 단계:</strong> <span id="result-plan"></span></p></section>
+<section class="wrap grid"><article class="card"><h2>다음 단계</h2><ol><li>본인의 학습 가능 일수, 주당 학습일, 하루 학습 분수를 확인하세요. 이 페이지는 정확한 시험일을 받지 않습니다.</li><li>비중(균형, 리스닝 중심, 리딩 중심)과 시간제 연습 준비 여부를 선택하세요.</li><li>이 시간 배분은 수정 가능한 출발점으로만 사용하고, 본인의 취약 영역에 맞게 조정하세요.</li><li>실제 TOEIC은 형식이 고정되어 있고 영어로만 진행되므로, 계획을 세우기 전에 IIBC 공식 형식과 ETS 샘플 테스트를 확인하세요.</li><li>배분을 엄격히 따르기보다 며칠마다 다시 검토하고 조정하세요.</li></ol></article><article class="card"><h2>이 플래너가 하지 않는 것</h2><p>이 플래너는 TOEIC 점수를 예측하거나, 실력을 채점·진단하거나, 향상을 보장하거나, ETS와의 제휴나 보증 관계를 암시하지 않습니다. 본인이 입력한 제한된 숫자를 고정되고 투명한 계산식으로 수정 가능한 시간 배분으로 변환할 뿐입니다.</p></article><article class="card wide"><h2>이 플래너의 배분 계산 방식</h2><p>이 배분은 본 사이트가 만든 간단하고 수정 가능한 참고 계산입니다. ETS의 권장 사항이 아니며 점수를 예측하지도 않습니다.</p><ul><li>균형: 리스닝 35%, 리딩 35%, 복습 20%, 시간제 연습 10%.</li><li>리스닝 중심: 리스닝 50%, 리딩 25%, 복습 15%, 시간제 연습 10%.</li><li>리딩 중심: 리스닝 25%, 리딩 50%, 복습 15%, 시간제 연습 10%.</li><li>시간제 연습 준비가 안 된 경우, 해당 비중은 복습으로 이동합니다.</li><li>분수는 최대 나머지 방식으로 배분되어 네 항목의 합이 항상 계획된 총 분수와 정확히 일치합니다.</li></ul></article><article class="card wide"><h2>TOEIC L&amp;R 공식 형식 사실 및 출처</h2><p>이 사실들은 IIBC와 ETS의 공식 페이지에서 가져온 것이며, 본 사이트의 의견이 아닙니다. 이 플래너를 포함한 어떤 학습 계획도 이 사실과 대조하여 확인하세요.</p><ul><li>TOEIC Listening &amp; Reading 시험은 총 200문항으로 2시간 동안 진행됩니다.</li><li>리스닝: 약 45분, 100문항.</li><li>리딩: 75분, 100문항.</li><li>시험 자체는 영어로만 진행되며, 형식은 매회 동일합니다.</li></ul><ul class="source-list"><li><a href="https://www.iibc-global.org/english/toeic/test/lr/about/format.html" rel="noopener">IIBC 공식 TOEIC L&amp;R 시험 형식</a></li><li><a href="https://www.ets.org/pdfs/toeic/toeic-listening-reading-sample-test.pdf" rel="noopener">ETS 공식 TOEIC L&amp;R 샘플 테스트(PDF)</a></li><li><a href="https://www.ets.org/toeic/about/listening-reading.html" rel="noopener">ETS 공식 TOEIC L&amp;R 프로그램 개요</a></li></ul><p><a href="https://developer.chrome.com/docs/ai/webmcp/imperative-api" rel="noopener">Chrome WebMCP 명령형 API 프리뷰(변경될 수 있음)</a></p></article></section>
+<section class="wrap card faq"><h2>TOEIC 학습 배분 관련 질문</h2><details><summary>이 페이지가 제 정답, 녹음, 서류를 받나요?</summary><p>아니요. 범위가 제한된 숫자, 비중 선택, 준비 여부 토글만 받습니다.</p></details><details><summary>이것이 제 TOEIC 점수를 예측하나요?</summary><p>아니요. 본인의 시간을 배분할 뿐이며, 점수나 합격 여부를 추정·채점·예측하지 않습니다.</p></details><details><summary>Aim990이 ETS나 TOEIC 프로그램과 제휴되어 있나요?</summary><p>아니요. TOEIC은 ETS의 상표입니다. Aim990은 독립적인 학습 보조 앱이며 ETS와 제휴하거나 보증받지 않았습니다.</p></details><details><summary>배분 비율은 어디서 나온 것인가요?</summary><p>본 사이트가 만든 수정 가능한 참고 계산이며, ETS나 IIBC의 공식 권장 사항이 아닙니다.</p></details><details><summary>시간제 연습 준비가 안 되어 있다면요?</summary><p>준비 여부 토글을 끄면 해당 시간이 복습으로 이동하며, 총 시간은 그대로 유지됩니다.</p></details></section>
+<p class="wrap">TOEIC은 ETS의 상표입니다. Aim990은 독립적인 학습 보조 앱이며 ETS와 제휴하거나 보증받지 않았습니다. 어떤 앱이나 계획도 TOEIC 점수를 보장할 수 없습니다.</p>
+<section class="app-card wrap"><h2>가이드가 있는 TOEIC 코치 앱도 원하시나요?</h2><p>Aim990은 선택 사항입니다. 현재 App Store 등록 정보에 따르면 인앱 구매가 있는 무료 다운로드, 30일 TOEIC Listening &amp; Reading 코치, 8분 레벨 진단, 매일 리스닝/리딩/문법/어휘 및 모의고사 과제, 진행 상황 및 취약 영역 추적 기능이 있으며, Apple의 개인정보 보호 라벨에는 데이터가 수집되지 않는다고 명시되어 있습니다. 기능과 가격은 변경될 수 있으니 구매 전 현재 등록 정보를 확인하세요. 이 플래너는 앱 없이도 완전히 작동합니다.</p><a class="button" href="https://apps.apple.com/app/id6784974530?ct=iag_toeic_allocation_ko" rel="nofollow noopener">App Store에서 Aim990 보기</a></section>
+</main>
+<footer class="footer"><div class="wrap">비공개 제한 숫자만 · 서류 없음 · 점수 예측 없음 · ETS 제휴 없음</div></footer>
+<script type="application/json" id="toeic-study-config">{"inputSchema":{"type":"object","properties":{"days_available":{"type":"integer","minimum":1,"maximum":30,"description":"목표일까지 남은 학습 가능 일수(1~30)"},"study_days_per_week":{"type":"integer","minimum":1,"maximum":7,"description":"주당 확보 가능한 학습일 수(1~7)"},"minutes_per_study_day":{"type":"integer","minimum":10,"maximum":120,"description":"학습일마다 사용할 수 있는 분수(10~120)"},"emphasis":{"type":"string","enum":["balanced","listening","reading"],"description":"어떤 비중을 원하시나요?"},"timed_practice_ready":{"type":"boolean","description":"시간제 연습을 포함할 준비가 되었습니다"}},"required":["days_available","study_days_per_week","minutes_per_study_day","emphasis","timed_practice_ready"],"additionalProperties":false},"labels":{"emphasis":{"balanced":"리스닝과 리딩 균형","listening":"리스닝 중심","reading":"리딩 중심"}},"nextSteps":["본인의 학습 가능 일수, 주당 학습일, 하루 학습 분수를 확인하세요. 이 페이지는 정확한 시험일을 받지 않습니다.","비중(균형, 리스닝 중심, 리딩 중심)과 시간제 연습 준비 여부를 선택하세요.","이 시간 배분은 수정 가능한 출발점으로만 사용하고, 본인의 취약 영역에 맞게 조정하세요.","실제 TOEIC은 형식이 고정되어 있고 영어로만 진행되므로, 계획을 세우기 전에 IIBC 공식 형식과 ETS 샘플 테스트를 확인하세요.","배분을 엄격히 따르기보다 며칠마다 다시 검토하고 조정하세요."],"boundary":"이 플래너는 TOEIC 점수를 예측하거나, 실력을 채점·진단하거나, 향상을 보장하거나, ETS와의 제휴나 보증 관계를 암시하지 않습니다. 본인이 입력한 제한된 숫자를 고정되고 투명한 계산식으로 수정 가능한 시간 배분으로 변환할 뿐입니다.","invalidInput":"위에 표시된 지원 범위 내의 값을 입력하세요.","toolDescription":"범위가 제한된 비민감 숫자와 선택 항목으로 투명한 TOEIC 학습 시간 배분을 만듭니다. 정답, 녹음, 서류, 이름, 연락처, 계정, 정확한 시험일은 받지 않으며, 점수 예측, 실력 등급, 합격/불합격 결과, ETS 제휴 주장도 하지 않습니다.","officialFormatFacts":{"total_questions":200,"total_test_minutes":120,"listening_minutes":45,"listening_questions":100,"reading_minutes":75,"reading_questions":100,"test_language":"English only","format_is_the_same_each_administration":true,"source":"https://www.iibc-global.org/english/toeic/test/lr/about/format.html"},"freePlanner":{"label":"비공개 TOEIC 학습 배분 플래너","url":"https://alice51849.github.io/ios-app-guide/ko/tools/private-toeic-study-allocation-planner.html","boundary":"범위 안의 숫자와 짧은 선택 항목만 입력하세요. 이 페이지는 시험 답안, 녹음, 문서 또는 개인정보를 요구하지 않습니다."},"officialSources":[{"label":"IIBC 공식 TOEIC L&R 시험 형식","url":"https://www.iibc-global.org/english/toeic/test/lr/about/format.html"},{"label":"ETS 공식 TOEIC L&R 샘플 테스트(PDF)","url":"https://www.ets.org/pdfs/toeic/toeic-listening-reading-sample-test.pdf"},{"label":"ETS 공식 TOEIC L&R 프로그램 개요","url":"https://www.ets.org/toeic/about/listening-reading.html"}],"webmcpSource":"https://developer.chrome.com/docs/ai/webmcp/imperative-api","optionalApp":{"label":"App Store에서 Aim990 보기","boundary":"Aim990은 선택 사항입니다. 현재 App Store 등록 정보에 따르면 인앱 구매가 있는 무료 다운로드, 30일 TOEIC Listening & Reading 코치, 8분 레벨 진단, 매일 리스닝/리딩/문법/어휘 및 모의고사 과제, 진행 상황 및 취약 영역 추적 기능이 있으며, Apple의 개인정보 보호 라벨에는 데이터가 수집되지 않는다고 명시되어 있습니다. 기능과 가격은 변경될 수 있으니 구매 전 현재 등록 정보를 확인하세요. 이 플래너는 앱 없이도 완전히 작동합니다.","app_store_url":"https://apps.apple.com/app/id6784974530?ct=iag_toeic_allocation_ko"}}</script>
+<script>
+(() => {
+  const config = JSON.parse(document.getElementById("toeic-study-config").textContent);
+  const form = document.getElementById("toeic-study-planner");
+  const fields = {
+    days_available: document.getElementById("days-available"),
+    study_days_per_week: document.getElementById("study-days-per-week"),
+    minutes_per_study_day: document.getElementById("minutes-per-study-day"),
+    emphasis: document.getElementById("emphasis"),
+    timed_practice_ready: document.getElementById("timed-ready")
+  };
+  const output = {
+    sessions: document.getElementById("result-sessions"),
+    total: document.getElementById("result-total"),
+    listening: document.getElementById("result-listening"),
+    reading: document.getElementById("result-reading"),
+    review: document.getElementById("result-review"),
+    timed: document.getElementById("result-timed"),
+    plan: document.getElementById("result-plan")
+  };
+
+  const WEIGHTS = {
+    balanced: {listening: 35, reading: 35, review: 20, timed: 10},
+    listening: {listening: 50, reading: 25, review: 15, timed: 10},
+    reading: {listening: 25, reading: 50, review: 15, timed: 10}
+  };
+
+  function integerValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const schema = config.inputSchema.properties[name];
+    if (typeof value !== "number" || !Number.isInteger(value)) {
+      throw new TypeError(`${name} must be an integer.`);
+    }
+    if (value < schema.minimum || value > schema.maximum) {
+      throw new RangeError(`${name} is outside the supported range.`);
+    }
+    return value;
+  }
+
+  function enumValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const values = config.inputSchema.properties[name].enum;
+    if (typeof value !== "string" || !values.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    return value;
+  }
+
+  function booleanValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    if (typeof input[name] !== "boolean") {
+      throw new TypeError(`${name} must be a boolean.`);
+    }
+    return input[name];
+  }
+
+  function largestRemainderAllocate(total, weights) {
+    const keys = Object.keys(weights);
+    const weightSum = keys.reduce((sum, key) => sum + weights[key], 0);
+    const raw = keys.map((key) => (total * weights[key]) / weightSum);
+    const floors = raw.map(Math.floor);
+    let allocated = floors.reduce((sum, value) => sum + value, 0);
+    let remaining = total - allocated;
+    const remainders = keys
+      .map((key, index) => ({key, index, remainder: raw[index] - floors[index]}))
+      .sort((a, b) => (b.remainder - a.remainder) || (a.index - b.index));
+    const result = {};
+    keys.forEach((key, index) => { result[key] = floors[index]; });
+    for (let i = 0; i < remainders.length && remaining > 0; i += 1) {
+      result[remainders[i].key] += 1;
+      remaining -= 1;
+    }
+    return result;
+  }
+
+  function plan(input) {
+    const daysAvailable = integerValue(input, "days_available");
+    const studyDaysPerWeek = integerValue(input, "study_days_per_week");
+    const minutesPerStudyDay = integerValue(input, "minutes_per_study_day");
+    const emphasis = enumValue(input, "emphasis");
+    const timedPracticeReady = booleanValue(input, "timed_practice_ready");
+
+    const rawSessions = Math.round(
+      (daysAvailable * studyDaysPerWeek) / 7);
+    const plannedSessions = Math.min(
+      daysAvailable, Math.max(1, rawSessions));
+    const totalPlannedMinutes = plannedSessions * minutesPerStudyDay;
+
+    const baseWeights = WEIGHTS[emphasis];
+    const weights = timedPracticeReady ?
+      {...baseWeights} :
+      {
+        listening: baseWeights.listening,
+        reading: baseWeights.reading,
+        review: baseWeights.review + baseWeights.timed,
+        timed: 0
+      };
+    const minutes = weights.timed === 0 ?
+      {...largestRemainderAllocate(totalPlannedMinutes, {
+        listening: weights.listening,
+        reading: weights.reading,
+        review: weights.review
+      }), timed: 0} :
+      largestRemainderAllocate(totalPlannedMinutes, weights);
+
+    return {
+      selected_inputs: {
+        days_available: daysAvailable,
+        study_days_per_week: studyDaysPerWeek,
+        minutes_per_study_day: minutesPerStudyDay,
+        emphasis,
+        emphasis_label: config.labels.emphasis[emphasis],
+        timed_practice_ready: timedPracticeReady
+      },
+      session_math: {
+        formula:
+          "planned_sessions = clamp(round(days_available * " +
+          "study_days_per_week / 7), 1, days_available)",
+        planned_sessions: plannedSessions,
+        total_planned_minutes: totalPlannedMinutes,
+        is_duration_prediction: false
+      },
+      study_allocation_heuristic: {
+        listening_minutes: minutes.listening,
+        reading_minutes: minutes.reading,
+        review_minutes: minutes.review,
+        timed_practice_minutes: minutes.timed,
+        minutes_sum_matches_total:
+          minutes.listening + minutes.reading + minutes.review +
+            minutes.timed === totalPlannedMinutes,
+        heuristic_is_editable_and_created_by_this_site: true,
+        is_not_an_ets_recommendation: true,
+        no_score_grade_or_pass_fail_prediction: true
+      },
+      next_steps: config.nextSteps,
+      boundary: config.boundary,
+      official_format_facts: config.officialFormatFacts
+    };
+  }
+
+  function validateInput(input) {
+    if (input === null || typeof input !== "object" || Array.isArray(input)) {
+      throw new TypeError("WebMCP input must be an object.");
+    }
+    const allowed = new Set(Object.keys(config.inputSchema.properties));
+    for (const name of Object.keys(input)) {
+      if (!allowed.has(name)) {
+        throw new RangeError(`${name} is not a supported input.`);
+      }
+    }
+    return plan(input);
+  }
+
+  function humanInteger(field, name) {
+    const raw = String(field.value).trim();
+    const value = raw === "" ? Number.NaN : Number(raw);
+    const schema = config.inputSchema.properties[name];
+    if (!Number.isInteger(value) ||
+        value < schema.minimum ||
+        value > schema.maximum) {
+      throw new RangeError(`${name} is outside the supported range.`);
+    }
+    return value;
+  }
+
+  function renderInvalid(message) {
+    output.sessions.textContent = "—";
+    output.total.textContent = "—";
+    output.listening.textContent = "—";
+    output.reading.textContent = "—";
+    output.review.textContent = "—";
+    output.timed.textContent = "—";
+    output.plan.textContent = message;
+  }
+
+  function render() {
+    let result;
+    try {
+      result = plan({
+        days_available: humanInteger(
+          fields.days_available, "days_available"),
+        study_days_per_week: humanInteger(
+          fields.study_days_per_week, "study_days_per_week"),
+        minutes_per_study_day: humanInteger(
+          fields.minutes_per_study_day, "minutes_per_study_day"),
+        emphasis: fields.emphasis.value,
+        timed_practice_ready: fields.timed_practice_ready.checked
+      });
+    } catch (error) {
+      if (error instanceof TypeError || error instanceof RangeError) {
+        renderInvalid(config.invalidInput);
+        return;
+      }
+      throw error;
+    }
+    const heuristic = result.study_allocation_heuristic;
+    output.sessions.textContent =
+      String(result.session_math.planned_sessions);
+    output.total.textContent =
+      String(result.session_math.total_planned_minutes);
+    output.listening.textContent = String(heuristic.listening_minutes);
+    output.reading.textContent = String(heuristic.reading_minutes);
+    output.review.textContent = String(heuristic.review_minutes);
+    output.timed.textContent = String(heuristic.timed_practice_minutes);
+    output.plan.textContent = result.next_steps.join(" ");
+  }
+
+  async function registerWebMcp() {
+    if (!document.modelContext?.registerTool) return;
+    await document.modelContext.registerTool({
+      name: "plan_private_toeic_study_allocation",
+      description: config.toolDescription,
+      inputSchema: config.inputSchema,
+      annotations: {readOnlyHint: true, untrustedContentHint: false},
+      execute: async (input) => {
+        const plan = validateInput(input);
+        const result = {
+          result_type: "private_toeic_study_allocation_plan",
+          test_answers_recordings_documents_or_accounts_not_received: true,
+          no_score_prediction_readiness_grade_or_ets_affiliation_claim: true,
+          plan,
+          optional_free_planner: config.freePlanner,
+          official_sources: config.officialSources,
+          webmcp_preview_source: config.webmcpSource
+        };
+        if (config.optionalApp) {
+          result.optional_aim990 = config.optionalApp;
+        }
+        return JSON.stringify(result);
+      }
+    });
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    render();
+  });
+  for (const field of Object.values(fields)) {
+    field.addEventListener("change", render);
+  }
+  render();
+  registerWebMcp().catch((error) =>
+    console.error("WebMCP tool registration failed.", error));
+})();
+</script>
+</body>
+</html>

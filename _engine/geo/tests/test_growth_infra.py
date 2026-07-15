@@ -10591,27 +10591,59 @@ class GeneratorTests(unittest.TestCase):
                 1, index.count("zhuyin-grade1-14-day-summer-calendar.html")
             )
 
-    def test_zhuyin_blending_cards_are_bilingual_private_and_non_scored(self):
-        english = zhuyin_blending_card_generator.render_page("en")
-        traditional = zhuyin_blending_card_generator.render_page("zh-Hant")
-        for page in (english, traditional):
+    def test_zhuyin_blending_cards_are_localized_private_and_read_only(self):
+        m = zhuyin_blending_card_generator
+        pages = {
+            locale: m.render_page(locale, app_public=False)
+            for locale in m.ALT_LOCALES
+        }
+        public = m.render_page("en", app_public=True)
+        self.assertEqual(9, len(pages))
+        self.assertEqual(set(m.ALT_LOCALES), set(m.COPY))
+        reference_keys = set(m.COPY["en"])
+        for locale, page in pages.items():
+            self.assertEqual(reference_keys, set(m.COPY[locale]))
             self.assertIn('"WebApplication", "LearningResource"', page)
             self.assertIn('"@type": "FAQPage"', page)
-            self.assertIn('hreflang="en"', page)
-            self.assertIn('hreflang="zh-Hant"', page)
+            self.assertNotIn('"offers"', page)
+            for hreflang in m.ALT_LOCALES:
+                self.assertIn(f'hreflang="{hreflang}"', page)
             self.assertIn('id="mode-buttons"', page)
             self.assertIn('id="card-count"', page)
+            self.assertIn('id="set-number"', page)
             self.assertIn("window.print()", page)
             self.assertIn("navigator.share", page)
-            self.assertIn("id6773017109", page)
-            self.assertIn("html_ch/index.html", page)
-            self.assertIn("phonetic.jsp?la=0", page)
+            self.assertIn("document.modelContext?.registerTool", page)
+            self.assertIn(
+                'name:"create_private_deterministic_zhuyin_blending_cards"',
+                page,
+            )
+            self.assertIn(
+                "annotations:{readOnlyHint:true,untrustedContentHint:false}",
+                page,
+            )
+            self.assertIn("deterministic:true", page)
+            self.assertIn(
+                "curated_examples_not_complete_syllable_table:true", page
+            )
+            self.assertIn("is_not_assessment:true", page)
+            self.assertIn(
+                "no_score_grade_rank_or_diagnosis:true", page
+            )
+            self.assertIn("no_child_data_received:true", page)
+            self.assertIn("no_learning_outcome_claim:true", page)
+            self.assertIn(m.MOE_HANDBOOK, page)
+            self.assertIn(m.MOE_STROKE_ORDER, page)
+            self.assertIn(m.UNICODE_CHART_PDF, page)
+            self.assertNotIn(f"id{m.APP_ID}", page)
+            self.assertNotIn("Math.random", page)
             self.assertNotIn("localStorage", page)
             self.assertNotIn("sessionStorage", page)
             self.assertNotIn("XMLHttpRequest", page)
             self.assertNotIn("fetch(", page)
             self.assertNotIn("getUserMedia", page)
-            self.assertNotIn("<input", page)
+            self.assertNotIn('type="file"', page)
+            self.assertNotIn("<textarea", page)
             self.assertNotIn("dataLayer", page)
             self.assertNotIn("gtag(", page)
             schemas = [
@@ -10628,46 +10660,166 @@ class GeneratorTests(unittest.TestCase):
                 if schema.get("@type") == ["WebApplication", "LearningResource"]
             )
             self.assertTrue(resource["isAccessibleForFree"])
-            self.assertEqual("0", resource["offers"]["price"])
-            self.assertEqual("2026-07-14", resource["datePublished"])
-            self.assertEqual("2026-07-14", resource["dateModified"])
-            main = page.split("<main>", 1)[1]
-            self.assertLess(main.index('id="generator"'), main.index("id6773017109"))
-        self.assertIn("not a test or diagnosis", english)
-        self.assertIn("cannot measure mastery", english)
-        self.assertIn("No Ministry images, audio, animations or worksheets", english)
-        self.assertIn("不是測驗、診斷", traditional)
-        self.assertIn("不能衡量熟練度", traditional)
-        self.assertIn("未重製教育部圖片、音檔、動畫或練習單", traditional)
-        self.assertIn("one-time lifetime unlock", english)
-        self.assertIn("一次付費永久解鎖", traditional)
+            self.assertEqual(m.CONTENT_DATE, resource["datePublished"])
+            self.assertEqual(m.CONTENT_DATE, resource["dateModified"])
+        self.assertIn(f"id{m.APP_ID}", public)
+        self.assertIn("not a test or diagnosis", pages["en"])
+        self.assertIn("cannot measure mastery", pages["en"])
+        self.assertIn(
+            "No Ministry images, audio, animations or worksheets", pages["en"]
+        )
+        self.assertIn("不是測驗、診斷", pages["zh-Hant"])
+        self.assertIn("不能衡量熟練度", pages["zh-Hant"])
+        self.assertIn(
+            "未重製教育部圖片、音檔、動畫或練習單", pages["zh-Hant"]
+        )
+        script = pages["en"].rsplit("<script>", 1)[1].split("</script>", 1)[0]
+        execute = script.split(
+            "execute:async(input)=>{", 1
+        )[1].split("return JSON.stringify(result);", 1)[0]
+        self.assertIn("validateInput(input)", execute)
+        for mutation in (
+            "textContent",
+            "innerHTML",
+            "appendChild",
+            "replaceChildren",
+            "scroll",
+            "fetch(",
+            "localStorage",
+            "sessionStorage",
+            "navigator.clipboard",
+            "document.cookie",
+            "location.href",
+            "window.open",
+            "window.print",
+            "createElement",
+        ):
+            self.assertNotIn(mutation, execute)
 
-    def test_zhuyin_blending_cards_build_both_pages_and_indexes_idempotently(self):
+    def test_zhuyin_blending_card_sets_are_exact_and_reproducible(self):
+        m = zhuyin_blending_card_generator
+        for mode in ("two", "three"):
+            for count in m.CARD_COUNTS:
+                for set_number in (1, 2, 37, 500, 999):
+                    first = m.build_card_set(mode, count, set_number)
+                    second = m.build_card_set(mode, count, set_number)
+                    self.assertEqual(first, second)
+                    cards = first["cards"]
+                    self.assertEqual(count, len(cards))
+                    self.assertEqual(
+                        len(cards),
+                        len(
+                            {
+                                json.dumps(card, ensure_ascii=False, sort_keys=True)
+                                for card in cards
+                            }
+                        ),
+                    )
+                    for card in cards:
+                        self.assertEqual(
+                            card["blend"], "".join(card["parts"])
+                        )
+                        self.assertEqual(
+                            card["blend"],
+                            card["reading"].rstrip("ˊˇˋ˙"),
+                        )
+        for set_number in (1, 2, 37, 500, 999):
+            result = m.build_card_set("tones", 4, set_number)
+            self.assertEqual(4, len(result["cards"]))
+            for ladder in result["cards"]:
+                self.assertEqual(4, len(ladder["items"]))
+                for item in ladder["items"]:
+                    self.assertEqual(
+                        ladder["base"],
+                        item["reading"].rstrip("ˊˇˋ˙"),
+                    )
+        with self.assertRaises(TypeError):
+            m.build_card_set(1, 4, 1)
+        with self.assertRaises(ValueError):
+            m.build_card_set("unknown", 4, 1)
+        with self.assertRaises(TypeError):
+            m.build_card_set("two", True, 1)
+        with self.assertRaises(ValueError):
+            m.build_card_set("two", 6, 1)
+        with self.assertRaises(ValueError):
+            m.build_card_set("tones", 8, 1)
+        with self.assertRaises(ValueError):
+            m.build_card_set("two", 4, 0)
+        schema = m.webmcp_input_schema("en")
+        self.assertFalse(schema["additionalProperties"])
+        self.assertEqual(
+            ["mode", "card_count", "set_number"], schema["required"]
+        )
+        self.assertEqual(
+            list(m.MODE_VALUES), schema["properties"]["mode"]["enum"]
+        )
+        self.assertEqual(
+            list(m.CARD_COUNTS),
+            schema["properties"]["card_count"]["enum"],
+        )
+
+    def test_zhuyin_blending_cards_build_locales_links_and_indexes(self):
+        m = zhuyin_blending_card_generator
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)
-            for locale in ("", "zh-Hant"):
-                tools = pages / locale / "tools" if locale else pages / "tools"
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                tools = root / "tools"
+                answers = root / "answers"
                 tools.mkdir(parents=True)
+                answers.mkdir(parents=True)
                 (tools / "index.html").write_text(
                     '<main><section class="wrap grid"></section></main>',
                     encoding="utf-8",
                 )
-            first = zhuyin_blending_card_generator.build(pages)
-            second = zhuyin_blending_card_generator.build(pages)
-            self.assertEqual(first, second)
-            self.assertEqual(2, len(first))
-            for locale in ("", "zh-Hant"):
-                tools = pages / locale / "tools" if locale else pages / "tools"
+                (answers / m.TARGET_ANSWER_SLUG).write_text(
+                    '<a class="cta" href="https://apps.apple.com/app/id'
+                    f'{m.APP_ID}?ct=test">App</a>',
+                    encoding="utf-8",
+                )
+            outputs = m.build(pages, app_public=True)
+            self.assertEqual(9, len(outputs))
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                tools = root / "tools"
+                answer = (
+                    root / "answers" / m.TARGET_ANSWER_SLUG
+                ).read_text(encoding="utf-8")
+                page = (
+                    tools / f"{m.SLUG}.html"
+                ).read_text(encoding="utf-8")
                 self.assertTrue(
-                    (tools / f"{zhuyin_blending_card_generator.SLUG}.html").exists()
+                    (tools / f"{m.SLUG}.html").exists()
+                )
+                self.assertIn(f"id{m.APP_ID}", page)
+                self.assertIn(
+                    f"iag_zhuyin_blending_{locale.lower()}", page
                 )
                 index = (tools / "index.html").read_text(encoding="utf-8")
                 self.assertEqual(
                     1,
-                    index.count(
-                        f"{zhuyin_blending_card_generator.SLUG}.html"
-                    ),
+                    index.count(f"{m.SLUG}.html"),
                 )
+                self.assertIn(f'data-tool="{m.SLUG}"', index)
+                self.assertEqual(
+                    1, answer.count(m.INBOUND_LINK_CLASS)
+                )
+                self.assertIn(m.canonical(locale), answer)
+            before = {
+                path: path.read_bytes()
+                for path in pages.rglob("*.html")
+            }
+            m.build(pages, app_public=True)
+            after = {
+                path: path.read_bytes()
+                for path in pages.rglob("*.html")
+            }
+            self.assertEqual(before, after)
+            m.build(pages, app_public=False)
+            private = (
+                pages / "tools" / f"{m.SLUG}.html"
+            ).read_text(encoding="utf-8")
+            self.assertNotIn(f"id{m.APP_ID}", private)
 
     def test_zhuyin_sentence_cards_are_bilingual_private_and_non_scored(self):
         english = zhuyin_sentence_reading_cards.render_page("en")

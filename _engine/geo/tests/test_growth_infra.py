@@ -12227,158 +12227,202 @@ class GeneratorTests(unittest.TestCase):
             }
             self.assertEqual(before, after)
 
-    def test_daily_checklist_planner_is_private_bilingual_and_bounded(self):
-        english = daily_checklist_planner.render_page(
-            "en",
-            app_public=False,
+    def test_daily_checklist_planner_has_complete_native_nine_locale_copy(self):
+        m = daily_checklist_planner
+        self.assertEqual(
+            ("en", "es-ES", "pt-BR", "de-DE", "fr-FR", "ja", "ko", "zh-Hant", "zh-Hans"),
+            m.ALT_LOCALES,
         )
-        chinese = daily_checklist_planner.render_page(
-            "zh-Hant",
-            app_public=False,
+        self.assertEqual(set(m.ALT_LOCALES), set(m.COPY))
+        keys = set(m.COPY["en"])
+        for locale in m.ALT_LOCALES:
+            t = m.COPY[locale]
+            self.assertEqual(keys, set(t), locale)
+            self.assertEqual(set(m.CONTEXTS), set(t["context_options"]))
+            self.assertEqual(set(m.CONTEXTS), set(t["context_notes"]))
+            self.assertEqual(set(m.STARTING_STYLES), set(t["style_options"]))
+            self.assertEqual(set(m.STARTING_STYLES), set(t["style_steps"]))
+            self.assertEqual(set(m.REPEAT_PATTERNS), set(t["repeat_options"]))
+            self.assertEqual(set(m.REPEAT_PATTERNS), set(t["repeat_notes"]))
+            self.assertEqual(set(m.AVAILABLE_MINUTES), set(t["minutes_options"]))
+            self.assertEqual(5, len(t["review_checks"]))
+            self.assertEqual(5, len(t["source_labels"]))
+            self.assertEqual(4, len(t["faq"]))
+            self.assertEqual(5, len(t["feature_list"]))
+
+    def test_daily_checklist_planner_pages_are_private_localized_and_valid(self):
+        m = daily_checklist_planner
+        english_markers = (
+            m.COPY["en"]["planner"],
+            m.COPY["en"]["context_label"],
+            m.COPY["en"]["review_title"],
+            m.COPY["en"]["faq_title"],
         )
-        public = daily_checklist_planner.render_page(
-            "en",
-            app_public=True,
+        sources = (
+            m.APPLE_REMINDERS,
+            m.APPLE_CREATE_REMINDERS,
+            m.APPLE_WATCH_REMINDERS,
+            m.APPLE_REMINDER_DETAILS,
+            m.APPLE_LISTS_AND_TEMPLATES,
         )
-        for page in (english, chinese):
-            self.assertIn('"@type":"WebApplication"', page)
-            self.assertIn('"dateModified":"2026-07-15"', page)
-            self.assertIn("document.modelContext?.registerTool", page)
-            self.assertIn(
-                'name: "plan_private_daily_checklist"',
-                page,
-            )
-            self.assertIn(
-                "annotations: {readOnlyHint: true, untrustedContentHint: false}",
-                page,
-            )
-            self.assertIn(
-                "task_text_not_received_or_processed: true",
-                page,
-            )
-            self.assertIn(
-                "no_account_calendar_or_storage_access: true",
-                page,
-            )
-            self.assertIn(
-                "not_a_duration_or_productivity_prediction: true",
-                page,
-            )
-            self.assertIn(daily_checklist_planner.APPLE_REMINDERS, page)
-            self.assertIn(
-                daily_checklist_planner.APPLE_CREATE_REMINDERS,
-                page,
-            )
-            self.assertIn(
-                daily_checklist_planner.APPLE_WATCH_REMINDERS,
-                page,
-            )
-            self.assertIn(daily_checklist_planner.WEBMCP_SOURCE, page)
+        for locale in m.ALT_LOCALES:
+            page = m.render_page(locale)
+            self.assertIn(f'<html lang="{locale}">', page)
+            for hreflang in m.ALT_LOCALES:
+                self.assertIn(f'hreflang="{hreflang}"', page)
+            self.assertIn('hreflang="x-default"', page)
+            for source in sources:
+                self.assertIn(source, page)
+            self.assertIn('type="application/atom+xml"', page)
+            self.assertIn('type="application/rss+xml"', page)
+            self.assertIn('type="application/feed+json"', page)
+            self.assertNotIn('"offers"', page)
+            self.assertNotIn('"@type":"Offer"', page)
+            self.assertNotIn('"price":"0"', page)
+            self.assertNotIn('"rating"', page.lower())
+            self.assertNotIn(f"id{m.APP_ID}", page)
+            self.assertNotIn("apps.apple.com", page)
+            self.assertNotIn('class="app-card', page)
             self.assertNotIn('type="file"', page)
             self.assertNotIn("<textarea", page)
-            self.assertNotIn("FileReader", page)
-            self.assertNotIn("fetch(", page)
-            self.assertNotIn("XMLHttpRequest", page)
-            self.assertNotIn("localStorage", page)
-            self.assertNotIn("sessionStorage", page)
-            self.assertNotIn("navigator.modelContext", page)
-            self.assertNotIn("origin-trial", page.lower())
-            self.assertNotIn(f"id{daily_checklist_planner.APP_ID}", page)
-        self.assertIn("不輸入任務文字", chinese)
-        self.assertIn("不承諾效率", chinese)
-        self.assertIn(f"id{daily_checklist_planner.APP_ID}", public)
-        schema = daily_checklist_planner.webmcp_input_schema("en")
+            for marker in m.COPY[locale]["feature_list"]:
+                self.assertIn(html.escape(marker), page)
+            if locale != "en":
+                for marker in english_markers:
+                    self.assertNotIn(marker, page, (locale, marker))
+            schemas = [
+                json.loads(blob)
+                for blob in re.findall(
+                    r'<script type="application/ld\+json">(.*?)</script>',
+                    page,
+                    flags=re.S,
+                )
+            ]
+            web_app = next(value for value in schemas if value["@type"] == "WebApplication")
+            self.assertTrue(web_app["isAccessibleForFree"])
+            self.assertEqual(list(m.COPY[locale]["feature_list"]), web_app["featureList"])
+            self.assertNotIn("offers", web_app)
+            faq = next(value for value in schemas if value["@type"] == "FAQPage")
+            self.assertEqual(4, len(faq["mainEntity"]))
+
+    def test_daily_checklist_planner_webmcp_is_strict_shared_and_read_only(self):
+        m = daily_checklist_planner
+        schema = m.webmcp_input_schema("en")
         self.assertFalse(schema["additionalProperties"])
+        self.assertEqual(list(schema["properties"]), schema["required"])
+        self.assertEqual(list(m.CONTEXTS), schema["properties"]["context"]["enum"])
         self.assertEqual(
-            list(daily_checklist_planner.AVAILABLE_MINUTES),
+            list(m.AVAILABLE_MINUTES),
             schema["properties"]["available_minutes"]["enum"],
         )
         self.assertEqual(
-            12,
-            schema["properties"]["item_count"]["maximum"],
+            {"type": "integer", "minimum": 1, "maximum": 12},
+            schema["properties"]["item_count"],
         )
-        self.assertEqual(
-            "boolean",
-            schema["properties"]["has_carryover"]["type"],
-        )
-        execute = daily_checklist_planner.SCRIPT.split(
-            "execute: async (input) => {",
-            1,
-        )[1].split("return JSON.stringify(result);", 1)[0]
-        for mutation in (
-            "textContent",
-            "innerHTML",
-            "appendChild",
-            "replaceChildren",
-            "scroll",
-            "fetch(",
-            "localStorage",
+        self.assertEqual("boolean", schema["properties"]["has_carryover"]["type"])
+        script = m.SCRIPT
+        self.assertEqual(1, script.count("function plan(input)"))
+        self.assertIn("const result = plan({", script)
+        self.assertIn("return plan(input);", script)
+        self.assertIn("Number.isInteger(value)", script)
+        self.assertIn("Object.keys(input)", script)
+        self.assertIn("Math.floor(availableMinutes / itemCount)", script)
+        execute = script.split("execute: async (input) => {", 1)[1].split(
+            "return JSON.stringify(result);", 1
+        )[0]
+        for forbidden in (
+            "document.", "window.", "textContent", "innerHTML", "appendChild",
+            "replaceChildren", "fetch(", "XMLHttpRequest", "localStorage",
+            "sessionStorage", "cookie", "navigator.", "location", "clipboard", "print(",
         ):
-            self.assertNotIn(mutation, execute)
-        self.assertLess(
-            execute.index("optional_free_planner: config.freePlanner"),
-            execute.index("official_sources: config.officialSources"),
+            self.assertNotIn(forbidden, execute)
+        page = m.render_page("en")
+        self.assertIn('name: "plan_private_daily_checklist"', page)
+        self.assertIn(
+            "annotations: {readOnlyHint: true, untrustedContentHint: false}", page
         )
-        self.assertLess(
-            execute.index("official_sources: config.officialSources"),
-            execute.index("result.optional_mochi"),
-        )
+        self.assertIn("task_text_not_received_or_processed: true", page)
+        self.assertIn("no_account_calendar_or_storage_access: true", page)
+        self.assertIn("not_a_duration_or_productivity_prediction: true", page)
 
-    def test_daily_checklist_planner_builds_both_pages_and_is_idempotent(self):
+    def test_daily_checklist_planner_public_cta_is_explicitly_opt_in(self):
+        m = daily_checklist_planner
+        for locale in m.ALT_LOCALES:
+            private = m.render_page(locale)
+            public = m.render_page(locale, app_public=True)
+            self.assertNotIn(m.APP_ID, private)
+            self.assertNotIn("apps.apple.com", private)
+            self.assertIn(f"id{m.APP_ID}", public)
+            self.assertIn(
+                f"iag_checklist_plan_{locale.lower()}",
+                urllib.parse.unquote(public),
+            )
+        with mock.patch.object(m, "live_app_keys") as live:
+            with tempfile.TemporaryDirectory() as directory:
+                pages = Path(directory)
+                for locale in m.ALT_LOCALES:
+                    root = pages if locale == "en" else pages / locale
+                    (root / "tools").mkdir(parents=True)
+                    (root / "tools" / "index.html").write_text(
+                        '<main><section class="wrap grid"></section></main>',
+                        encoding="utf-8",
+                    )
+                m.build(pages)
+                live.assert_not_called()
+
+    def test_daily_checklist_planner_builds_nine_pages_cards_and_is_idempotent(self):
+        m = daily_checklist_planner
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)
-            tools = pages / "tools"
-            localized_tools = pages / "zh-Hant" / "tools"
-            tools.mkdir(parents=True)
-            localized_tools.mkdir(parents=True)
-            anchor = (
-                '<article class="card third"><h2><a href="'
-                'screen-time-calculator.html">Screen time</a></h2>'
-                "<p>Calculator.</p></article>"
-            )
-            for index in (
-                tools / "index.html",
-                localized_tools / "index.html",
-            ):
-                index.write_text(
-                    f'<main><section class="wrap grid">{anchor}</section></main>',
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                (root / "tools").mkdir(parents=True)
+                (root / "tools" / "index.html").write_text(
+                    '<main><section class="wrap grid"></section></main>',
                     encoding="utf-8",
                 )
-            urls = daily_checklist_planner.build(
-                pages,
-                app_public=False,
-            )
-            self.assertEqual(2, len(urls))
-            english = tools / f"{daily_checklist_planner.SLUG}.html"
-            chinese = (
-                localized_tools
-                / f"{daily_checklist_planner.SLUG}.html"
-            )
-            self.assertTrue(english.exists())
-            self.assertTrue(chinese.exists())
-            for index in (
-                tools / "index.html",
-                localized_tools / "index.html",
-            ):
-                self.assertEqual(
-                    1,
-                    index.read_text(encoding="utf-8").count(
-                        f"{daily_checklist_planner.SLUG}.html"
-                    ),
-                )
-            self.assertNotIn(
-                f"id{daily_checklist_planner.APP_ID}",
-                english.read_text(encoding="utf-8"),
-            )
-            stable_mtime = 1_700_000_000_000_000_000
-            os.utime(english, ns=(stable_mtime, stable_mtime))
-            first_bytes = english.read_bytes()
-            daily_checklist_planner.build(
-                pages,
-                app_public=False,
-            )
-            self.assertEqual(first_bytes, english.read_bytes())
-            self.assertEqual(stable_mtime, english.stat().st_mtime_ns)
+            self.assertEqual(9, len(m.build(pages)))
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                output = root / "tools" / f"{m.SLUG}.html"
+                self.assertTrue(output.exists())
+                index = (root / "tools" / "index.html").read_text(encoding="utf-8")
+                self.assertEqual(1, index.count(f"{m.SLUG}.html"))
+                self.assertIn(m.COPY[locale]["index_title"], index)
+            before = {path: path.read_bytes() for path in pages.rglob("*.html")}
+            m.build(pages)
+            after = {path: path.read_bytes() for path in pages.rglob("*.html")}
+            self.assertEqual(before, after)
+
+    def test_daily_checklist_planner_inbound_links_are_exact_and_idempotent(self):
+        m = daily_checklist_planner
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                answers = root / "answers"
+                answers.mkdir(parents=True)
+                for slug in m.TARGET_ANSWER_SLUGS:
+                    (answers / slug).write_text(
+                        '<p>original practical answer</p>'
+                        '<a class="cta" href="https://apps.apple.com/app/'
+                        f'id{m.APP_ID}?ct=existing_mochi">Mochi</a>',
+                        encoding="utf-8",
+                    )
+            self.assertEqual(18, m.insert_answer_links(pages))
+            self.assertEqual(0, m.insert_answer_links(pages))
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                for slug in m.TARGET_ANSWER_SLUGS:
+                    text = (root / "answers" / slug).read_text(encoding="utf-8")
+                    self.assertEqual(1, text.count(m.INBOUND_LINK_CLASS))
+                    self.assertLess(
+                        text.index(m.INBOUND_LINK_CLASS),
+                        text.index(f"id{m.APP_ID}?ct=existing_mochi"),
+                    )
+                    self.assertIn("original practical answer", text)
+                    self.assertIn(f"id{m.APP_ID}?ct=existing_mochi", text)
+                    self.assertIn(html.escape(m.COPY[locale]["inline_link"]), text)
 
     def test_screen_time_block_planner_is_private_transparent_and_bounded(self):
         english = screen_time_block_planner.render_page(

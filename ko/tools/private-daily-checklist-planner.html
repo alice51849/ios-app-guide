@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>비공개 일일 체크리스트 계획 | 할 일 내용 입력 없음</title>
+<meta name="description" content="할 일, 이름, 날짜, 계정이나 개인정보를 입력하지 않고 항목 수와 사용 가능 시간으로 빈 하루 구조를 만드세요.">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/ko/tools/private-daily-checklist-planner.html">
+<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/private-daily-checklist-planner.html">
+<link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/es-ES/tools/private-daily-checklist-planner.html">
+<link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/tools/private-daily-checklist-planner.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tools/private-daily-checklist-planner.html">
+<link rel="alternate" hreflang="fr-FR" href="https://alice51849.github.io/ios-app-guide/fr-FR/tools/private-daily-checklist-planner.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/private-daily-checklist-planner.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/tools/private-daily-checklist-planner.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/private-daily-checklist-planner.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/tools/private-daily-checklist-planner.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/private-daily-checklist-planner.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="비공개 일일 체크리스트 계획 도구">
+<meta property="og:description" content="할 일, 이름, 날짜, 계정이나 개인정보를 입력하지 않고 항목 수와 사용 가능 시간으로 빈 하루 구조를 만드세요.">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/ko/tools/private-daily-checklist-planner.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#263126;--muted:#667066;--line:#dfe7dc;--paper:#fff;--bg:#f4f8ef;--green:#426443;--leaf:#729d62;--peach:#f8e6d3;--soft:#ebf4e6;--warn:#fff6d9;--shadow:0 22px 60px rgba(53,78,48,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,#fff 0,var(--bg) 55%,#e5eedc 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:#46723f}.wrap{width:min(1120px,calc(100% - 30px));margin:auto}.top{position:sticky;top:0;z-index:8;background:#fffffff2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}.links{display:flex;gap:15px;overflow-x:auto}
+.hero{padding:64px 0 30px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--green);white-space:nowrap}.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}.hero h1{font-size:clamp(34px,6vw,62px);line-height:1.04;letter-spacing:-.035em;margin:.3em 0 .22em;white-space:nowrap;overflow-x:auto}.lead{font-size:clamp(17px,2.2vw,21px);color:var(--muted);margin:0;white-space:nowrap;overflow-x:auto}.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.planner,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}.planner{padding:clamp(20px,4vw,36px);margin:16px auto 30px}.planner h2,.card h2,.app-card h2{font-size:clamp(24px,3.6vw,34px);line-height:1.14;margin:0;white-space:nowrap;overflow-x:auto}.intro{color:var(--muted);white-space:nowrap;overflow-x:auto}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px}.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--green);margin-bottom:6px;white-space:nowrap;overflow-x:auto}select,input,button{font:inherit}select,input[type=number]{width:100%;min-height:46px;border:1px solid #cddac8;border-radius:13px;background:#fff;color:var(--ink);padding:9px 11px}.toggle{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:14px;padding:11px 13px;background:#fff;font-weight:760;white-space:nowrap;overflow-x:auto}.toggle input{inline-size:20px;block-size:20px;flex:0 0 auto}.button{border:0;border-radius:999px;background:linear-gradient(135deg,var(--green),var(--leaf));color:#fff;text-decoration:none;font-weight:850;padding:11px 17px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(66,100,67,.2)}
+.results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin-top:22px}.result{background:var(--soft);border:1px solid #cfe1c8;border-radius:17px;padding:14px;min-width:0}.result strong,.result span{display:block;white-space:nowrap;overflow-x:auto}.result strong{font-size:12px;color:#4f704b;text-transform:uppercase;letter-spacing:.04em}.result span{font-size:15px;color:#334732;font-weight:760;margin-top:5px}.note{background:var(--warn);border:1px solid #ead9a7;border-radius:16px;padding:13px 15px;margin:14px 0 0;white-space:nowrap;overflow-x:auto}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:30px}.card,.app-card{padding:clamp(20px,3.5vw,30px)}.card p,.card li,.app-card p,.faq details p,.faq summary{white-space:nowrap;overflow-x:auto}.card ul,.card ol{padding-left:22px}.card li{margin:8px 0}.source-list a{overflow-wrap:anywhere}.app-card{margin:0 auto 38px;background:linear-gradient(135deg,#fffdf9,var(--peach))}.app-card .button{display:inline-flex;margin-top:5px}.faq{margin-bottom:30px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+.footer{background:var(--green);color:#f2f8ef;text-align:center;padding:27px 0;white-space:nowrap;overflow-x:auto}
+@media(max-width:900px){.controls,.results{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
+@media(max-width:560px){.wrap{width:min(100% - 22px,1120px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{.top,.hero,.controls,.button,.app-card,.footer{display:none!important}body{background:#fff}.planner,.card{box-shadow:none;break-inside:avoid}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"비공개 일일 체크리스트 계획 도구","description":"할 일, 이름, 날짜, 계정이나 개인정보를 입력하지 않고 항목 수와 사용 가능 시간으로 빈 하루 구조를 만드세요.","url":"https://alice51849.github.io/ios-app-guide/ko/tools/private-daily-checklist-planner.html","inLanguage":"ko","datePublished":"2026-07-15","dateModified":"2026-07-15","applicationCategory":"ProductivityApplication","operatingSystem":"Any","isAccessibleForFree":true,"featureList":["할 일, 이름, 날짜, 계정이나 개인정보 입력 없음","제한된 입력과 투명한 정수 계산","빈 시작·다음·이후 자리 구조","업로드, 저장, cookie, 분석, 광고, 네트워크 요청 없음","생산성, 시간, 건강이나 성과 약속 없음"],"citation":["https://support.apple.com/guide/iphone/get-started-with-reminders-iphc7880ecd6/ios","https://support.apple.com/guide/iphone/create-reminders-iph88463e18/ios","https://support.apple.com/guide/watch/make-and-view-lists-apdf10efb1bf/watchos","https://support.apple.com/en-us/102484","https://support.apple.com/en-us/119953"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ko","mainEntity":[{"@type":"Question","name":"이 페이지가 내 할 일 이름을 받나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 제한된 수량과 선택만 받고 할 일, 날짜나 캘린더 내용은 받지 않습니다."}},{"@type":"Question","name":"균등 배분 시간이 소요 시간 추정인가요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 선택한 시간을 항목 수로 나눈 투명한 계산일 뿐입니다."}},{"@type":"Question","name":"왜 이후 항목을 나누나요?","acceptedAnswer":{"@type":"Answer","text":"빈 그룹은 모두 현재 시간에 들어간다고 가장하지 않으면서 항목을 보이게 합니다."}},{"@type":"Question","name":"목록 완료를 보장하나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 생산성, 건강, 심리 효과나 성과를 약속하지 않습니다."}}]}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/ko/index.html">iOS App Guide</a><nav class="links"><a href="https://alice51849.github.io/ios-app-guide/ko/tools/index.html">무료 도구</a><a href="https://alice51849.github.io/ios-app-guide/tools/private-daily-checklist-planner.html">영어</a></nav></div></header>
+<main>
+<section class="hero wrap"><div class="eyebrow">무료 · 로컬 계산 · 할 일 내용 없음</div><h1>비공개 일일 체크리스트 계획 도구</h1><p class="lead">수량과 계획 방식만 고르면 브라우저가 시간을 투명하게 나누고 다른 곳에서 채울 빈 구조를 반환합니다.</p><div class="badges"><span class="badge">할 일 이름이나 메모 입력 없음</span><span class="badge">계정이나 캘린더 접근 없음</span><span class="badge">업로드나 저장 없음</span><span class="badge">생산성 향상 약속 없음</span></div></section>
+<section class="planner wrap"><h2>오늘의 목록 구조 만들기</h2><p class="intro">균등 배분은 계획용 계산일 뿐 실제 소요 시간 예측이 아닙니다.</p>
+<form id="checklist-planner"><div class="controls">
+<div class="field"><label for="context">목록 상황</label><select id="context"><option value="mixed-day">여러 일이 섞인 날</option><option value="work-study">업무 또는 공부</option><option value="home">집</option><option value="errands">외출 용무</option><option value="routine">일과</option></select></div>
+<div class="field"><label for="available-minutes">사용 가능 시간</label><select id="available-minutes"><option value="15">15분</option><option value="30">30분</option><option value="60">60분</option><option value="120">120분</option></select></div>
+<div class="field"><label for="item-count">항목 수</label><input id="item-count" type="number" min="1" max="12" step="1" value="5"></div>
+<div class="field"><label for="starting-style">시작 순서</label><select id="starting-style"><option value="priority-first">가장 중요한 것부터</option><option value="shortest-first">실제로 짧은 것부터</option><option value="due-time-first">실제 마감부터</option></select></div>
+<div class="field"><label for="repeat-pattern">반복 주기</label><select id="repeat-pattern"><option value="none">반복 안 함</option><option value="daily">매일</option><option value="weekdays">평일</option><option value="weekly">매주</option></select></div>
+<label class="toggle"><input id="has-carryover" type="checkbox">이전에 미룬 항목이 하나 이상 있음</label>
+</div><p><button class="button" type="submit">빈 체크리스트 계획 만들기</button></p></form>
+<div class="results"><div class="result"><strong>항목당 균등 배분 시간</strong><span id="result-per-item"></span></div><div class="result"><strong>배분되지 않은 분</strong><span id="result-remainder"></span></div><div class="result"><strong>빈 목록 구조</strong><span id="result-structure"></span></div></div>
+<p class="note"><strong>시작 순서:</strong> <span id="result-setup"></span></p><p class="note"><strong>반복 결정:</strong> <span id="result-repeat"></span></p><p class="note"><strong>미룬 항목 결정:</strong> <span id="result-carryover"></span></p><p class="note" id="result-load"></p></section>
+<section class="wrap grid"><article class="card"><h2>실제 할 일을 옮기기 전 다섯 가지 확인</h2><ol><li>할 일 내용은 선택한 목록 시스템에 두고 이 페이지에는 입력하지 마세요.</li><li>긴급하게 정렬하기 전에 실제 마감을 확인하세요.</li><li>시간 안에 들어가지 않는 큰 항목은 다른 곳에서 나누세요.</li><li>실제로 그 주기로 반복하는 행동만 반복 설정하세요.</li><li>종료 시 미완료 항목을 검토하고 생각 없이 전부 넘기지 마세요.</li></ol></article><article class="card"><h2>공식 기능 배경이며 생산성 근거가 아닙니다</h2><p>Apple은 미리 알림, 목록, 날짜, 시간, 반복, 태그, 하위 항목, 템플릿과 Apple Watch 목록 동작을 설명합니다. 이는 Apple 미리 알림 기능이며 Mochi 기능이나 추천을 뜻하지 않고 생산성이나 결과를 입증하지도 않습니다.</p><ul class="source-list"><li><a href="https://support.apple.com/guide/iphone/get-started-with-reminders-iphc7880ecd6/ios" rel="noopener">Apple: iPhone에서 미리 알림 시작하기</a></li><li><a href="https://support.apple.com/guide/iphone/create-reminders-iph88463e18/ios" rel="noopener">Apple: iPhone에서 미리 알림 생성하기</a></li><li><a href="https://support.apple.com/guide/watch/make-and-view-lists-apdf10efb1bf/watchos" rel="noopener">Apple: Apple Watch에서 목록 만들고 보기</a></li><li><a href="https://support.apple.com/en-us/102484" rel="noopener">Apple 지원: 미리 알림 생성, 편집, 일정, 반복, 정리</a></li><li><a href="https://support.apple.com/en-us/119953" rel="noopener">Apple 지원: 목록, 태그, 하위 항목, 템플릿 정리</a></li></ul><p><a href="https://developer.chrome.com/docs/ai/webmcp/imperative-api" rel="noopener">Chrome WebMCP 명령형 API 미리보기(변경될 수 있음)</a></p></article></section>
+<section class="wrap card faq"><h2>목록 계획 질문</h2><details><summary>이 페이지가 내 할 일 이름을 받나요?</summary><p>아니요. 제한된 수량과 선택만 받고 할 일, 날짜나 캘린더 내용은 받지 않습니다.</p></details><details><summary>균등 배분 시간이 소요 시간 추정인가요?</summary><p>아니요. 선택한 시간을 항목 수로 나눈 투명한 계산일 뿐입니다.</p></details><details><summary>왜 이후 항목을 나누나요?</summary><p>빈 그룹은 모두 현재 시간에 들어간다고 가장하지 않으면서 항목을 보이게 합니다.</p></details><details><summary>목록 완료를 보장하나요?</summary><p>아니요. 생산성, 건강, 심리 효과나 성과를 약속하지 않습니다.</p></details></section>
+<section class="app-card wrap"><h2>실제 목록을 편안한 곳에 보관하고 싶나요?</h2><p>Mochi는 선택 사항입니다. 현재 스토어 설명에는 간단한 체크리스트, 미리 알림, 일일 계획, 습관, 일과, 메모, 장보기 목록, 위젯, Apple Watch, 100가지 외관이 기재되어 있으며 무료이고 광고가 없다고 안내합니다. 제공 여부와 정확한 기능은 현재 설명을 확인하세요. 이 계획 도구는 앱 없이 작동합니다.</p><a class="button" href="https://apps.apple.com/app/id6785004775?ct=iag_checklist_plan_ko" rel="nofollow noopener">App Store에서 Mochi 보기</a></section>
+</main>
+<footer class="footer"><div class="wrap">비공개 계획 계산만 수행 · 할 일 입력 없음 · 실제 제약에 맞게 조정</div></footer>
+<script type="application/json" id="checklist-config">{"inputSchema":{"type":"object","properties":{"context":{"type":"string","enum":["mixed-day","work-study","home","errands","routine"]},"available_minutes":{"type":"integer","enum":[15,30,60,120]},"item_count":{"type":"integer","minimum":1,"maximum":12},"starting_style":{"type":"string","enum":["priority-first","shortest-first","due-time-first"]},"repeat_pattern":{"type":"string","enum":["none","daily","weekdays","weekly"]},"has_carryover":{"type":"boolean"}},"required":["context","available_minutes","item_count","starting_style","repeat_pattern","has_carryover"],"additionalProperties":false},"labels":{"context":{"mixed-day":"여러 일이 섞인 날","work-study":"업무 또는 공부","home":"집","errands":"외출 용무","routine":"일과"},"starting_style":{"priority-first":"가장 중요한 것부터","shortest-first":"실제로 짧은 것부터","due-time-first":"실제 마감부터"},"repeat_pattern":{"none":"반복 안 함","daily":"매일","weekdays":"평일","weekly":"매주"}},"contextNotes":{"mixed-day":"항목을 옮길 때 짧은 상황 표시를 붙여 관련 없는 일이 하나의 연속 작업처럼 보이지 않게 하세요.","work-study":"결과를 만드는 일과 메시지, 정리 같은 행정 업무를 나누세요.","home":"오늘 꼭 해야 하는 일과 문제없이 옮길 수 있는 유지 관리를 나누세요.","errands":"순서를 정하기 전에 실제 방문지를 장소나 동선별로 묶으세요.","routine":"주기를 정하기 전에 실제 반복 행동과 일회성 항목을 나누세요."},"styleSteps":{"priority-first":["이 시간 안에서 가장 중요한 항목 하나를 첫 자리에 두세요.","다음 항목을 최대 두 개 놓고 나머지는 분명히 이후 그룹에 두세요."],"shortest-first":["제목만 보고 추측하지 말고 실제로 짧은 항목을 최대 두 개 찾으세요.","짧은 항목을 먼저 두고 이후 그룹 앞에 중요한 항목 하나를 보이게 두세요."],"due-time-first":["외부의 실제 마감을 확인하고 정말 시간 제한이 있는 항목만 앞에 두세요.","실제 마감이 없다면 긴급함을 만들지 말고 중요한 항목 하나를 고르세요."]},"repeatNotes":{"none":"반복을 끄고 정말 다시 필요할 때만 검토하세요.","daily":"실제로 매일 해야 하는 행동만 매일 반복으로 설정하세요.","weekdays":"주말을 의도적으로 제외할 때만 평일 반복을 사용하세요.","weekly":"검토 없이 복제하지 말고 구체적인 주간 검토 시점을 고르세요."},"carryoverYes":"미룬 항목을 하나씩 검토해 오늘 유지, 이유와 함께 이동, 삭제 중 하나를 선택하세요. 모두 자동으로 넘기지 마세요.","carryoverNo":"오늘의 빈 구조에서 시작하고 더 이상 관련 없는 이전 항목을 미리 채우지 마세요.","loadNotes":{"tight":"항목당 5분 미만입니다. 수집 목록으로 보고 비현실적인 항목은 이후 그룹으로 옮기세요.","brief":"항목당 5~14분입니다. 실제로 들어간다고 가정하기 전에 각 항목을 확인하세요.","open":"항목당 15분 이상입니다. 실제 작업 차이는 여전히 크므로 필요하면 항목 수를 바꾸세요."},"structureLabels":{"first":"시작 자리","next":"다음 자리","later":"이후 또는 선택 자리"},"resultBoundary":"선택한 시간을 정수로 나누기만 합니다. 난이도, 방해, 마감, 접근성, 실제 시간은 알 수 없습니다. 자유 입력, 할 일, 이름, 날짜, 계정, 개인정보, 업로드를 받지 않고 저장, cookie, 분석, 광고, 네트워크 요청도 사용하지 않습니다.","reviewChecklist":["할 일 내용은 선택한 목록 시스템에 두고 이 페이지에는 입력하지 마세요.","긴급하게 정렬하기 전에 실제 마감을 확인하세요.","시간 안에 들어가지 않는 큰 항목은 다른 곳에서 나누세요.","실제로 그 주기로 반복하는 행동만 반복 설정하세요.","종료 시 미완료 항목을 검토하고 생각 없이 전부 넘기지 마세요."],"toolDescription":"범위가 제한된 상황, 시간, 수량, 순서, 반복, 이월 값으로 비공개 빈 일일 목록을 만듭니다. 할 일, 이름, 날짜, 계정이나 개인정보를 받지 않고 시간이나 생산성을 예측하지 않으며 구조와 투명한 배분을 반환합니다.","freePlanner":{"label":"비공개 일일 체크리스트 계획 도구","url":"https://alice51849.github.io/ios-app-guide/ko/tools/private-daily-checklist-planner.html","boundary":"균등 배분은 계획용 계산일 뿐 실제 소요 시간 예측이 아닙니다."},"officialSources":[{"label":"Apple: iPhone에서 미리 알림 시작하기","url":"https://support.apple.com/guide/iphone/get-started-with-reminders-iphc7880ecd6/ios"},{"label":"Apple: iPhone에서 미리 알림 생성하기","url":"https://support.apple.com/guide/iphone/create-reminders-iph88463e18/ios"},{"label":"Apple: Apple Watch에서 목록 만들고 보기","url":"https://support.apple.com/guide/watch/make-and-view-lists-apdf10efb1bf/watchos"},{"label":"Apple 지원: 미리 알림 생성, 편집, 일정, 반복, 정리","url":"https://support.apple.com/en-us/102484"},{"label":"Apple 지원: 목록, 태그, 하위 항목, 템플릿 정리","url":"https://support.apple.com/en-us/119953"}],"webmcpSource":"https://developer.chrome.com/docs/ai/webmcp/imperative-api","optionalApp":{"label":"App Store에서 Mochi 보기","boundary":"Mochi는 선택 사항입니다. 현재 스토어 설명에는 간단한 체크리스트, 미리 알림, 일일 계획, 습관, 일과, 메모, 장보기 목록, 위젯, Apple Watch, 100가지 외관이 기재되어 있으며 무료이고 광고가 없다고 안내합니다. 제공 여부와 정확한 기능은 현재 설명을 확인하세요. 이 계획 도구는 앱 없이 작동합니다.","app_store_url":"https://apps.apple.com/app/id6785004775?ct=iag_checklist_plan_ko"}}</script>
+<script>
+(() => {
+  const config = JSON.parse(document.getElementById("checklist-config").textContent);
+  const form = document.getElementById("checklist-planner");
+  const fields = {
+    context: document.getElementById("context"),
+    available_minutes: document.getElementById("available-minutes"),
+    item_count: document.getElementById("item-count"),
+    starting_style: document.getElementById("starting-style"),
+    repeat_pattern: document.getElementById("repeat-pattern"),
+    has_carryover: document.getElementById("has-carryover")
+  };
+  const output = {
+    perItem: document.getElementById("result-per-item"),
+    remainder: document.getElementById("result-remainder"),
+    structure: document.getElementById("result-structure"),
+    setup: document.getElementById("result-setup"),
+    repeat: document.getElementById("result-repeat"),
+    carryover: document.getElementById("result-carryover"),
+    load: document.getElementById("result-load")
+  };
+
+  function enumValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const values = config.inputSchema.properties[name].enum;
+    if (typeof value !== "string" || !values.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    return value;
+  }
+
+  function integerValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const schema = config.inputSchema.properties[name];
+    if (!Number.isInteger(value)) {
+      throw new TypeError(`${name} must be an integer.`);
+    }
+    if (schema.enum && !schema.enum.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    if ((schema.minimum && value < schema.minimum) ||
+        (schema.maximum && value > schema.maximum)) {
+      throw new RangeError(`${name} is outside the supported range.`);
+    }
+    return value;
+  }
+
+  function booleanValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    if (typeof input[name] !== "boolean") {
+      throw new TypeError(`${name} must be a boolean.`);
+    }
+    return input[name];
+  }
+
+  function plan(input) {
+    const context = enumValue(input, "context");
+    const availableMinutes = integerValue(input, "available_minutes");
+    const itemCount = integerValue(input, "item_count");
+    const startingStyle = enumValue(input, "starting_style");
+    const repeatPattern = enumValue(input, "repeat_pattern");
+    const hasCarryover = booleanValue(input, "has_carryover");
+    const minutesPerItem = Math.floor(availableMinutes / itemCount);
+    const unallocatedMinutes = availableMinutes - minutesPerItem * itemCount;
+    const firstSlots = 1;
+    const nextSlots = Math.min(2, Math.max(0, itemCount - firstSlots));
+    const laterSlots = Math.max(0, itemCount - firstSlots - nextSlots);
+    const loadKey = minutesPerItem < 5 ? "tight" :
+      (minutesPerItem < 15 ? "brief" : "open");
+    return {
+      selected_inputs: {
+        context,
+        context_label: config.labels.context[context],
+        available_minutes: availableMinutes,
+        item_count: itemCount,
+        starting_style: startingStyle,
+        starting_style_label: config.labels.starting_style[startingStyle],
+        repeat_pattern: repeatPattern,
+        repeat_pattern_label: config.labels.repeat_pattern[repeatPattern],
+        has_carryover: hasCarryover
+      },
+      transparent_time_math: {
+        formula: "floor(available_minutes / item_count)",
+        equal_share_minutes_per_item: minutesPerItem,
+        unallocated_minutes: unallocatedMinutes,
+        is_duration_prediction: false
+      },
+      blank_list_structure: {
+        start_here_slots: firstSlots,
+        next_slots: nextSlots,
+        later_or_optional_slots: laterSlots
+      },
+      setup_sequence: [
+        config.contextNotes[context],
+        ...config.styleSteps[startingStyle]
+      ],
+      repeat_decision: config.repeatNotes[repeatPattern],
+      carryover_decision: hasCarryover ?
+        config.carryoverYes : config.carryoverNo,
+      load_boundary: config.loadNotes[loadKey],
+      planning_boundary: config.resultBoundary
+    };
+  }
+
+  function validateInput(input) {
+    if (input === null || typeof input !== "object" || Array.isArray(input)) {
+      throw new TypeError("WebMCP input must be an object.");
+    }
+    const allowed = new Set(Object.keys(config.inputSchema.properties));
+    for (const name of Object.keys(input)) {
+      if (!allowed.has(name)) {
+        throw new RangeError(`${name} is not a supported input.`);
+      }
+    }
+    return plan(input);
+  }
+
+  function render() {
+    const result = plan({
+      context: fields.context.value,
+      available_minutes: Number(fields.available_minutes.value),
+      item_count: Number(fields.item_count.value),
+      starting_style: fields.starting_style.value,
+      repeat_pattern: fields.repeat_pattern.value,
+      has_carryover: fields.has_carryover.checked
+    });
+    output.perItem.textContent =
+      String(result.transparent_time_math.equal_share_minutes_per_item);
+    output.remainder.textContent =
+      String(result.transparent_time_math.unallocated_minutes);
+    const slots = result.blank_list_structure;
+    output.structure.textContent =
+      `${config.structureLabels.first}: ${slots.start_here_slots}. ` +
+      `${config.structureLabels.next}: ${slots.next_slots}. ` +
+      `${config.structureLabels.later}: ${slots.later_or_optional_slots}.`;
+    output.setup.textContent = result.setup_sequence.join(" ");
+    output.repeat.textContent = result.repeat_decision;
+    output.carryover.textContent = result.carryover_decision;
+    output.load.textContent = `${result.load_boundary} ${result.planning_boundary}`;
+  }
+
+  async function registerWebMcp() {
+    if (!document.modelContext?.registerTool) return;
+    await document.modelContext.registerTool({
+      name: "plan_private_daily_checklist",
+      description: config.toolDescription,
+      inputSchema: config.inputSchema,
+      annotations: {readOnlyHint: true, untrustedContentHint: false},
+      execute: async (input) => {
+        const checklist = validateInput(input);
+        const result = {
+          result_type: "private_daily_checklist_plan",
+          task_text_not_received_or_processed: true,
+          no_account_calendar_or_storage_access: true,
+          not_a_duration_or_productivity_prediction: true,
+          checklist,
+          transfer_review_checklist: config.reviewChecklist,
+          optional_free_planner: config.freePlanner,
+          official_sources: config.officialSources,
+          webmcp_preview_source: config.webmcpSource
+        };
+        if (config.optionalApp) {
+          result.optional_mochi = config.optionalApp;
+        }
+        return JSON.stringify(result);
+      }
+    });
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    render();
+  });
+  for (const field of Object.values(fields)) {
+    field.addEventListener("change", render);
+  }
+  render();
+  registerWebMcp().catch((error) =>
+    console.error("WebMCP tool registration failed.", error));
+})();
+</script>
+</body>
+</html>

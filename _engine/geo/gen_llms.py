@@ -67,6 +67,11 @@ WORDMATE_LANGUAGE_DATASET = "wordmate-language-support"
 WORDMATE_LANGUAGE_TOOL = "wordmate-44-language-support-checker"
 PORTFOLIO_FINDER_DATASET = "verified-ios-app-finder-catalog"
 PORTFOLIO_FINDER_TOOL = "private-pay-once-iphone-app-finder"
+RESOURCE_TITLES = {
+    ("tools", "ats-resume-keyword-checker"): (
+        "Private resume evidence coverage planner"
+    ),
+}
 RESOURCE_SYNC_SOURCE = "https://alice51849.github.io/.well-known/resourcesync"
 
 AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "anthropic-ai",
@@ -659,7 +664,10 @@ def _resource_files(directory, live_keys, prefix):
         stem = filename[:-5]
         if stem in inactive or any(stem.startswith(key + "-") for key in inactive):
             continue
-        title = re.sub(r"[-_]", " ", stem)
+        title = RESOURCE_TITLES.get(
+            (prefix, stem),
+            re.sub(r"[-_]", " ", stem),
+        )
         rows.append((title, f"{SITE}/{prefix}/{filename}"))
     return rows
 

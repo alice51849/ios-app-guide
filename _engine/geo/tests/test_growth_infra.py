@@ -82,6 +82,7 @@ import portfolio_app_finder
 import prioritize_trip_planet_resources
 import queries
 import refresh_primary_resource_answers
+import resume_evidence_planner
 import rsscloud_config
 import screen_time_block_planner
 import static_api_catalog
@@ -11956,6 +11957,267 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(first_bytes, english.read_bytes())
             self.assertEqual(stable_mtime, english.stat().st_mtime_ns)
 
+    def test_resume_evidence_planner_is_private_transparent_and_non_predictive(self):
+        pages = {
+            locale: resume_evidence_planner.render_page(
+                locale,
+                app_public=False,
+            )
+            for locale in resume_evidence_planner.ALT_LOCALES
+        }
+        public = resume_evidence_planner.render_page("en", app_public=True)
+        for locale, page in pages.items():
+            self.assertIn('"@type":"WebApplication"', page)
+            self.assertNotIn('"@type":"SoftwareApplication"', page)
+            self.assertIn('"dateModified":"2026-07-15"', page)
+            self.assertIn("document.modelContext?.registerTool", page)
+            self.assertIn(
+                'name: "plan_private_resume_evidence_coverage"',
+                page,
+            )
+            self.assertIn(
+                "annotations: {readOnlyHint: true, untrustedContentHint: false}",
+                page,
+            )
+            self.assertIn(
+                "resume_job_post_personal_data_files_accounts_not_received: true",
+                page,
+            )
+            self.assertIn(
+                "no_ats_parse_score_ranking_or_hiring_prediction: true",
+                page,
+            )
+            self.assertIn("is_not_ats_score: true", page)
+            self.assertIn("no_target_threshold_applied: true", page)
+            self.assertIn(
+                "if (evidence > listed)",
+                page,
+            )
+            self.assertIn(
+                "if (outcomes > bullets)",
+                page,
+            )
+            self.assertIn(resume_evidence_planner.DOL_RESUME, page)
+            self.assertIn(resume_evidence_planner.UK_CV, page)
+            self.assertIn(resume_evidence_planner.EUROPASS_CV, page)
+            self.assertIn(resume_evidence_planner.WEBMCP_SOURCE, page)
+            self.assertIn(
+                resume_evidence_planner.COPY[locale]["heading"],
+                page,
+            )
+            self.assertIn(
+                'id="listed-requirements" type="number" min="0" max="100" '
+                'step="1" value="0"',
+                page,
+            )
+            self.assertIn(
+                'id="outcome-bullets" type="number" min="0" max="100" '
+                'step="1" value="0"',
+                page,
+            )
+            for hreflang in resume_evidence_planner.ALT_LOCALES:
+                self.assertIn(f'hreflang="{hreflang}"', page)
+            for forbidden in (
+                'type="file"',
+                "<textarea",
+                "FileReader",
+                "fetch(",
+                "XMLHttpRequest",
+                "localStorage",
+                "sessionStorage",
+                "navigator.modelContext",
+                "origin-trial",
+                "coverage*82",
+                "basics*4",
+                "contact*6",
+                "70%+",
+                "Email found",
+                "Load sample",
+            ):
+                self.assertNotIn(forbidden, page)
+            self.assertNotIn(
+                f"id{resume_evidence_planner.APP_ID}",
+                page,
+            )
+        self.assertIn("不接收履歷文字", pages["zh-Hant"])
+        self.assertIn("不產生 ATS 分數", pages["zh-Hant"])
+        self.assertIn("ATS 점수 없음", pages["ko"])
+        self.assertIn("ATSスコアなし", pages["ja"])
+        self.assertIn(f"id{resume_evidence_planner.APP_ID}", public)
+        self.assertLess(
+            public.index('id="resume-evidence-planner"'),
+            public.index("Official resume and CV guidance before any optional app"),
+        )
+        self.assertLess(
+            public.index("Official resume and CV guidance before any optional app"),
+            public.index("Want an optional on-device resume workflow?"),
+        )
+        schema = resume_evidence_planner.webmcp_input_schema("en")
+        self.assertFalse(schema["additionalProperties"])
+        self.assertEqual(
+            list(resume_evidence_planner.MARKET_FORMATS),
+            schema["properties"]["market_format"]["enum"],
+        )
+        self.assertEqual(
+            list(resume_evidence_planner.LAYOUT_STATUSES),
+            schema["properties"]["text_layout_review"]["enum"],
+        )
+        for name in (
+            "listed_requirements",
+            "requirements_with_truthful_evidence",
+            "experience_bullets",
+            "bullets_with_verified_outcomes",
+        ):
+            self.assertEqual("integer", schema["properties"][name]["type"])
+            self.assertEqual(0, schema["properties"][name]["minimum"])
+            self.assertEqual(100, schema["properties"][name]["maximum"])
+        self.assertEqual(
+            "boolean",
+            schema["properties"]["has_experience_section"]["type"],
+        )
+        execute = resume_evidence_planner.SCRIPT.split(
+            "execute: async (input) => {",
+            1,
+        )[1].split("return JSON.stringify(result);", 1)[0]
+        for mutation in (
+            "textContent",
+            "innerHTML",
+            "appendChild",
+            "replaceChildren",
+            "scroll",
+            "fetch(",
+            "localStorage",
+        ):
+            self.assertNotIn(mutation, execute)
+        self.assertLess(
+            execute.index("optional_free_planner: config.freePlanner"),
+            execute.index("official_sources: config.officialSources"),
+        )
+        self.assertLess(
+            execute.index("official_sources: config.officialSources"),
+            execute.index("result.optional_cv_desk"),
+        )
+
+    def test_resume_evidence_planner_builds_nine_locales_and_replaces_old_cards(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            old_card = (
+                '<article class="card third"><h2><a href="'
+                'ats-resume-keyword-checker.html">ATS Resume Checker</a></h2>'
+                "<p>Paste a job description and resume for keyword score.</p>"
+                '<p class="muted">Funnels to CV Desk</p></article>'
+            )
+            for locale in resume_evidence_planner.ALT_LOCALES:
+                tools = (
+                    pages / "tools"
+                    if locale == "en"
+                    else pages / locale / "tools"
+                )
+                tools.mkdir(parents=True)
+                (tools / "index.html").write_text(
+                    f'<main><section class="wrap grid">{old_card}</section></main>',
+                    encoding="utf-8",
+                )
+                answers = (
+                    pages / "answers"
+                    if locale == "en"
+                    else pages / locale / "answers"
+                )
+                answers.mkdir(parents=True)
+                (answers / "resume-answer.html").write_text(
+                    '<main><a class="tool" href="'
+                    f'https://example.test/{locale}/tools/'
+                    f'{resume_evidence_planner.SLUG}.html">'
+                    "Old ATS keyword score promise</a>"
+                    '<a href="not-ats-resume-keyword-checker.html">'
+                    "Keep prefixed target</a>"
+                    '<a href="other.html" data-href="'
+                    f'{resume_evidence_planner.SLUG}.html">'
+                    "Keep data attribute</a>"
+                    '<a href="redirect.html?next=/tools/'
+                    f'{resume_evidence_planner.SLUG}.html">'
+                    "Keep query reference</a></main>",
+                    encoding="utf-8",
+                )
+            other_answers = pages / "pl" / "answers"
+            other_answers.mkdir(parents=True)
+            (other_answers / "resume-answer.html").write_text(
+                '<a href="/tools/ats-resume-keyword-checker.html">'
+                "Old Polish fallback label</a>",
+                encoding="utf-8",
+            )
+            (pages / "resume-formats.html").write_text(
+                '<a href="tools/ats-resume-keyword-checker.html">'
+                "Old root label</a>",
+                encoding="utf-8",
+            )
+            urls = resume_evidence_planner.build(
+                pages,
+                app_public=False,
+            )
+            self.assertEqual(9, len(urls))
+            for locale in resume_evidence_planner.ALT_LOCALES:
+                tools = (
+                    pages / "tools"
+                    if locale == "en"
+                    else pages / locale / "tools"
+                )
+                page = tools / f"{resume_evidence_planner.SLUG}.html"
+                self.assertTrue(page.exists())
+                self.assertNotIn(
+                    f"id{resume_evidence_planner.APP_ID}",
+                    page.read_text(encoding="utf-8"),
+                )
+                index = (tools / "index.html").read_text(encoding="utf-8")
+                self.assertEqual(
+                    1,
+                    index.count(f"{resume_evidence_planner.SLUG}.html"),
+                )
+                self.assertNotIn("Funnels to CV Desk", index)
+                self.assertNotIn("keyword score", index)
+                self.assertIn(
+                    resume_evidence_planner.COPY[locale]["index_title"],
+                    index,
+                )
+                answer = (
+                    pages / "answers" / "resume-answer.html"
+                    if locale == "en"
+                    else pages / locale / "answers" / "resume-answer.html"
+                )
+                answer_text = answer.read_text(encoding="utf-8")
+                self.assertNotIn("Old ATS keyword score promise", answer_text)
+                self.assertIn(
+                    resume_evidence_planner.COPY[locale]["heading"],
+                    answer_text,
+                )
+                self.assertIn(">Keep prefixed target</a>", answer_text)
+                self.assertIn(">Keep data attribute</a>", answer_text)
+                self.assertIn(">Keep query reference</a>", answer_text)
+            for migrated in (
+                pages / "pl" / "answers" / "resume-answer.html",
+                pages / "resume-formats.html",
+            ):
+                text = migrated.read_text(encoding="utf-8")
+                self.assertIn(
+                    resume_evidence_planner.COPY["en"]["heading"],
+                    text,
+                )
+                self.assertNotIn("Old ", text)
+            english = (
+                pages
+                / "tools"
+                / f"{resume_evidence_planner.SLUG}.html"
+            )
+            stable_mtime = 1_700_000_000_000_000_000
+            os.utime(english, ns=(stable_mtime, stable_mtime))
+            first_bytes = english.read_bytes()
+            resume_evidence_planner.build(
+                pages,
+                app_public=False,
+            )
+            self.assertEqual(first_bytes, english.read_bytes())
+            self.assertEqual(stable_mtime, english.stat().st_mtime_ns)
+
     def test_passport_print_answer_leads_with_free_private_tool(self):
         question = (
             "How can I arrange passport photos on a 4x6 print sheet without "
@@ -14828,6 +15090,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("daily_checklist_planner.py", publish)
         self.assertIn("screen_time_block_planner.py", publish)
         self.assertIn("photo_storage_cleanup_planner.py", publish)
+        self.assertIn("resume_evidence_planner.py", publish)
         self.assertIn("vocabulary_habit_planner.py", publish)
         self.assertIn("wordmate_language_support.py", publish)
         self.assertIn("portfolio_app_finder.py", publish)
@@ -15057,6 +15320,33 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn(f"- [ja]({gen_llms.SITE}/ja/aim990.html)", full)
         self.assertIn(f"- [ko]({gen_llms.SITE}/ko/aim990.html)", full)
         self.assertNotIn(f"{gen_llms.SITE}/fr-FR/aim990.html", full)
+
+    def test_llms_uses_truthful_title_for_legacy_resume_tool_slug(self):
+        with tempfile.TemporaryDirectory() as directory:
+            tools = Path(directory)
+            (tools / "ats-resume-keyword-checker.html").write_text(
+                "<h1>Private resume evidence coverage planner</h1>",
+                encoding="utf-8",
+            )
+            resources = gen_llms._resource_files(
+                str(tools),
+                set(gen_llms.APPS),
+                "tools",
+            )
+        self.assertIn(
+            (
+                "Private resume evidence coverage planner",
+                f"{gen_llms.SITE}/tools/ats-resume-keyword-checker.html",
+            ),
+            resources,
+        )
+        self.assertNotIn(
+            (
+                "ats resume keyword checker",
+                f"{gen_llms.SITE}/tools/ats-resume-keyword-checker.html",
+            ),
+            resources,
+        )
 
     def test_topic_hub_has_no_fake_zero_price_and_links_script_locales(self):
         hub = gen_hubs.build_hub("lumibopomofo")

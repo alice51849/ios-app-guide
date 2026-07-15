@@ -1,5 +1,11 @@
 <!DOCTYPE html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ATS 이력서 검사기 — 무료 키워드 점수</title><meta name="description" content="채용공고와 이력서를 붙여넣고 ATS 키워드 커버리지를 브라우저에서 확인합니다."><link rel="canonical" href="https://alice51849.github.io/ios-app-guide/ko/tools/ats-resume-keyword-checker.html">
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>비공개 이력서 근거 점검표 | 업로드 없는 ATS 준비</title>
+<meta name="description" content="채용 공고, 이력서, 개인정보를 붙여 넣지 않고 실제 근거가 있는 요건 수와 이력서 구성을 점검합니다.">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/ko/tools/ats-resume-keyword-checker.html">
 <link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/ats-resume-keyword-checker.html">
 <link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/es-ES/tools/ats-resume-keyword-checker.html">
 <link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/tools/ats-resume-keyword-checker.html">
@@ -10,71 +16,294 @@
 <link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/ats-resume-keyword-checker.html">
 <link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/tools/ats-resume-keyword-checker.html">
 <link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/ats-resume-keyword-checker.html">
-<meta property="og:type" content="website"><meta property="og:title" content="ATS 이력서 검사기 — 무료 키워드 점수"><meta property="og:description" content="채용공고와 이력서를 붙여넣고 ATS 키워드 커버리지를 브라우저에서 확인합니다."><meta property="og:url" content="https://alice51849.github.io/ios-app-guide/ko/tools/ats-resume-keyword-checker.html"><meta name="twitter:card" content="summary"><style>
-:root{--bg:#f7f7fb;--card:#fff;--ink:#161622;--muted:#5d6370;--line:#e6e7ef;--brand:#5b5ff2;--brand2:#8b5cf6;--ok:#0f8f5f;--warn:#b7791f}*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#fff,var(--bg));color:var(--ink);line-height:1.55}a{color:#3840d0}.wrap{width:min(1040px,100% - 32px);margin:auto}.top{padding:18px 0;border-bottom:1px solid var(--line);background:rgba(255,255,255,.86);backdrop-filter:blur(12px);position:sticky;top:0;z-index:3}.nav{display:flex;justify-content:space-between;gap:16px;align-items:center}.nav a{text-decoration:none;font-weight:700}.hero{padding:46px 0 24px}.eyebrow{color:var(--brand);font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem}h1{font-size:clamp(2rem,6vw,4rem);line-height:1.02;margin:.2em 0}h2{font-size:clamp(1.35rem,3vw,2rem);margin:1.2em 0 .55em}h3{margin:1em 0 .35em}p.lead{font-size:1.15rem;color:var(--muted);max-width:760px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.card{grid-column:span 12;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 8px 30px rgba(31,34,78,.06)}@media(min-width:760px){.half{grid-column:span 6}.third{grid-column:span 4}.two{grid-column:span 8}.side{grid-column:span 4}}label{display:block;font-weight:750;margin:12px 0 6px}input,select,textarea{width:100%;font:inherit;padding:12px 13px;border:1px solid #cfd2df;border-radius:13px;background:#fff}textarea{min-height:170px;resize:vertical}button,.cta{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:white!important;text-decoration:none;font-weight:850;padding:13px 18px;box-shadow:0 8px 22px rgba(91,95,242,.22);cursor:pointer}.ghost{background:#fff!important;color:#3840d0!important;border:1px solid #cfd2df;box-shadow:none}.result{background:#f2f5ff;border:1px solid #dfe4ff;border-radius:18px;padding:16px;margin-top:16px}.muted{color:var(--muted)}.pill{display:inline-block;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 10px;margin:3px;font-weight:700}.checklist li{margin:.45em 0}.footer{margin-top:40px;padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}.notice{font-size:.92rem;color:#626875}.score{font-size:3rem;font-weight:900;color:var(--brand);line-height:1}.bar{height:12px;background:#e8eaff;border-radius:99px;overflow:hidden}.bar span{display:block;height:100%;background:linear-gradient(135deg,var(--brand),var(--brand2));width:0}.preview{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px;margin-top:12px}.thumb{border:1px solid var(--line);border-radius:14px;padding:8px;background:#fff}.thumb img{width:100%;height:120px;object-fit:cover;border-radius:10px}.small{font-size:.92rem}.ok{color:var(--ok);font-weight:800}.warn{color:var(--warn);font-weight:800}@media print{body{background:white}.top,.hero,.no-print,.footer{display:none!important}.wrap{width:100%;}}
-</style><script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SoftwareApplication","name":"CV Desk","operatingSystem":"iOS","applicationCategory":"BusinessApplication","url":"https://apps.apple.com/app/id6781337213?ct=iag_lp","installUrl":"https://apps.apple.com/app/id6781337213?ct=iag_lp","description":"iPhone resume builder for ATS-minded resumes, templates and exports.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Free to download; check the App Store for current pricing and unlock details."}}
-</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How can I check my resume ATS score?","acceptedAnswer":{"@type":"Answer","text":"Paste the job description and resume text to compare keyword coverage and ATS basics in your browser."}},{"@type":"Question","name":"Is an ATS resume score guaranteed?","acceptedAnswer":{"@type":"Answer","text":"No. It is an estimate based on keyword overlap and structure; each employer and ATS may differ."}},{"@type":"Question","name":"Is my resume uploaded?","acceptedAnswer":{"@type":"Answer","text":"No. The checker runs client-side and does not send your text to a server."}}]}
-</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"HowTo","name":"How to tailor a resume for ATS keywords","step":[{"@type":"HowToStep","name":"Paste both texts","text":"Add the job description and resume text."},{"@type":"HowToStep","name":"Review missing keywords","text":"Find required skills and terms missing from the resume."},{"@type":"HowToStep","name":"Edit honestly","text":"Add truthful keywords in skills and evidence-based bullets."}]}
-</script><script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://alice51849.github.io/ios-app-guide/#organization",
-      "name": "iOS App Guide",
-      "url": "https://alice51849.github.io/ios-app-guide"
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://alice51849.github.io/ios-app-guide/#website",
-      "url": "https://alice51849.github.io/ios-app-guide",
-      "name": "iOS App Guide",
-      "publisher": {
-        "@id": "https://alice51849.github.io/ios-app-guide/#organization"
-      }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "iOS App Guide",
-          "item": "https://alice51849.github.io/ios-app-guide/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Tools",
-          "item": "https://alice51849.github.io/ios-app-guide/tools/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "ATS Resume Checker — Free Keyword Match Score",
-          "item": "https://alice51849.github.io/ios-app-guide/tools/ats-resume-keyword-checker.html"
-        }
-      ]
-    }
-  ]
-}
-</script>
-</head><body><header class="top no-print"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/ko/index.html">iOS 앱 가이드</a><nav><a href="https://alice51849.github.io/ios-app-guide/ko/tools/">무료 도구</a> · <a href="https://alice51849.github.io/ios-app-guide/ko/alternatives/">대안</a></nav></div></header><main>
-<section class="hero wrap"><div class="eyebrow">무료 ATS 이력서 키워드 검사기</div><h1>ATS 이력서 검사기: 키워드 점수</h1><p class="lead">채용공고와 이력서 텍스트를 붙여넣으세요. 키워드 커버리지, 누락 용어, ATS 안전 수정 팁을 추정합니다. 업로드 없음.</p><p class="no-print"><a class="cta" href="https://apps.apple.com/app/id6781337213?ct=iag_lp" rel="nofollow noopener">ATS 중심 이력서는 CV Desk로 만들기 →</a></p></section>
-<section class="wrap grid"><div class="card half"><label>채용공고<textarea id="jd" placeholder="Paste the job post, responsibilities and requirements..."></textarea></label></div><div class="card half"><label>이력서 텍스트<textarea id="resume" placeholder="Paste the text from your resume PDF/DOC..."></textarea></label></div><div class="card two"><p><button id="checkBtn">ATS 점수 확인</button> <button class="ghost" id="sampleBtn" type="button">샘플 불러오기</button></p><div id="out" class="result">Your keyword score and missing terms will appear here.</div></div><aside class="card side"><h2>CV Desk가 더해주는 것</h2><p>이 빠른 체커는 문구 조정을 도와줍니다. CV Desk는 ATS를 고려한 구조와 내보내기로 iPhone에서 채용 담당자가 읽기 좋은 이력서를 만들도록 도와줍니다.</p><p><a href="../answers/app-to-check-my-resume-ats-score-on-iphone.html">ATS 점수 앱 가이드 읽기</a>.</p><p><a class="cta" href="https://apps.apple.com/app/id6781337213?ct=iag_lp" rel="nofollow noopener">CV Desk 받기 →</a></p></aside></section>
-<section class="wrap grid"><div class="card half"><h2>ATS에 안전한 수정</h2><ul class="checklist"><li>표준 제목을 사용하세요: 경력, 기술, 학력, 프로젝트.</li><li>직무 표현이 본인 경력과 실제로 일치할 때 그대로 반영하세요.</li><li>도구, 범위, 행동, 결과를 담은 간단한 불릿을 쓰세요.</li><li>머리글, 바닥글, 이미지, 복잡한 다단 구성에만 숨겨진 텍스트는 피하세요.</li></ul></div><div class="card half"><h2>솔직한 한계</h2><p>어느 공개 도구도 회사의 정확한 ATS 순위 공식을 알 수 없습니다. 이것을 키워드와 가독성 체크리스트로 생각하고, 직무에 맞게 수동으로 다듬으세요.</p></div></section>
-<section class="wrap card"><h2>자주 묻는 질문</h2><h3>점수가 보장되나요?</h3><p>아니요. 채용 공고와의 겹침과 ATS 기본을 추정할 뿐입니다. 채용 담당자의 판단, 경험의 질, 실제 시스템은 다릅니다.</p><h3>제 이력서가 업로드되나요?</h3><p>아니요. 텍스트 비교는 브라우저에서 실행됩니다.</p><h3>어느 정도 점수를 목표로 해야 하나요?</h3><p>정직함을 지키면서 중요 요건의 70% 이상 충족을 목표로 하세요. 면접에서 설명할 수 없는 키워드를 억지로 넣지 마세요.</p></section>
-<section class="related-resources"><h2>관련 자료</h2><ul><li><a href="https://alice51849.github.io/ios-app-guide/ko/guides/cvdesk.html">CV Desk 앱 가이드</a></li><li><a href="https://alice51849.github.io/ios-app-guide/alternatives/cvdesk-free-to-start.html">CV Desk 구독 없는 비교</a></li></ul></section>
+<meta property="og:type" content="website">
+<meta property="og:title" content="비공개 이력서 근거 점검표">
+<meta property="og:description" content="채용 공고, 이력서, 개인정보를 붙여 넣지 않고 실제 근거가 있는 요건 수와 이력서 구성을 점검합니다.">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/ko/tools/ats-resume-keyword-checker.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#21314a;--muted:#67738a;--line:#dfe5f0;--paper:#fff;--bg:#f3f6fb;--deep:#3949a3;--violet:#7566c8;--soft:#edf0ff;--warn:#fff6d8;--shadow:0 22px 60px rgba(47,57,108,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,#fff 0,var(--bg) 55%,#e9edf7 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",sans-serif;line-height:1.62}
+a{color:var(--deep)}.wrap{width:min(1120px,calc(100% - 30px));margin:auto}.top{position:sticky;top:0;z-index:8;background:#fffffff2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}.links{display:flex;gap:15px;overflow-x:auto}
+.hero{padding:64px 0 30px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--deep);white-space:nowrap}.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif",serif}.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.04;letter-spacing:-.035em;margin:.3em 0 .22em;white-space:nowrap;overflow-x:auto}.lead{font-size:clamp(17px,2.2vw,21px);color:var(--muted);margin:0;white-space:nowrap;overflow-x:auto}.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.planner,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}.planner{padding:clamp(20px,4vw,36px);margin:16px auto 30px}.planner h2,.card h2,.app-card h2{font-size:clamp(24px,3.6vw,34px);line-height:1.14;margin:0;white-space:nowrap;overflow-x:auto}.intro{color:var(--muted);white-space:nowrap;overflow-x:auto}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px}.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--deep);margin-bottom:6px;white-space:nowrap;overflow-x:auto}select,input,button{font:inherit}select,input[type=number]{width:100%;min-height:46px;border:1px solid #cad2e4;border-radius:13px;background:#fff;color:var(--ink);padding:9px 11px}.toggle{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:14px;padding:11px 13px;background:#fff;font-weight:760;white-space:nowrap;overflow-x:auto}.toggle input{inline-size:20px;block-size:20px;flex:0 0 auto}.button{border:0;border-radius:999px;background:linear-gradient(135deg,var(--deep),var(--violet));color:#fff;text-decoration:none;font-weight:850;padding:11px 17px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(57,73,163,.2)}
+.results{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin-top:22px}.result{background:var(--soft);border:1px solid #d7dcfa;border-radius:17px;padding:14px;min-width:0}.result strong,.result span{display:block;white-space:nowrap;overflow-x:auto}.result strong{font-size:12px;color:#5360a8;text-transform:uppercase;letter-spacing:.04em}.result span{font-size:15px;color:#3b467a;font-weight:760;margin-top:5px}.note{background:var(--warn);border:1px solid #ead9a7;border-radius:16px;padding:13px 15px;margin:14px 0 0;white-space:nowrap;overflow-x:auto}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:30px}.card,.app-card{padding:clamp(20px,3.5vw,30px)}.card.wide{grid-column:1/-1}.card p,.card li,.app-card p,.faq details p,.faq summary{white-space:nowrap;overflow-x:auto}.card ul,.card ol{padding-left:22px}.card li{margin:8px 0}.source-list a{overflow-wrap:anywhere}.app-card{margin:0 auto 38px;background:linear-gradient(135deg,#fff,#edf0ff)}.app-card .button{display:inline-flex;margin-top:5px}.faq{margin-bottom:30px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+.footer{background:var(--deep);color:#f4f5ff;text-align:center;padding:27px 0;white-space:nowrap;overflow-x:auto}
+@media(max-width:960px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.controls,.results{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1120px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{.top,.hero,.controls,.button,.app-card,.footer{display:none!important}body{background:#fff}.planner,.card{box-shadow:none;break-inside:avoid}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"비공개 이력서 근거 점검표","description":"채용 공고, 이력서, 개인정보를 붙여 넣지 않고 실제 근거가 있는 요건 수와 이력서 구성을 점검합니다.","url":"https://alice51849.github.io/ios-app-guide/ko/tools/ats-resume-keyword-checker.html","inLanguage":"ko","datePublished":"2026-07-15","dateModified":"2026-07-15","applicationCategory":"BusinessApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["이력서·채용 공고 본문 없음","이름·연락처·회사 정보 없음","파일·업로드·계정 없음","점수·기준선·채용 예측 없음","숫자나 비율은 회사 ATS의 읽기·순위·탈락 여부, 채용 담당자의 판단, 면접 또는 합격을 보여 주지 않습니다. 회사, 직무, 시스템마다 다르며 목표 점수나 기준선을 적용하지 않습니다."],"citation":["https://www.dol.gov/agencies/vets/programs/tap/teams-workshops/resume-essentials","https://nationalcareers.service.gov.uk/careers-advice/cv-sections","https://europass.europa.eu/en/create-europass-cv"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ko","mainEntity":[{"@type":"Question","name":"이 페이지가 이력서나 채용 공고를 받나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 범위가 제한된 숫자, 불리언, 형식 상태만 받습니다."}},{"@type":"Question","name":"근거 비율이 ATS 점수인가요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 직접 입력한 전체 수 대비 근거 수일 뿐이며 목표나 순위가 없습니다."}},{"@type":"Question","name":"요건을 뒷받침할 수 없다면 어떻게 하나요?","acceptedAnswer":{"@type":"Answer","text":"경험이나 키워드를 만들지 마세요. 근거 없음으로 두거나 사실이고 관련된 근거가 있을 때만 추가하세요."}},{"@type":"Question","name":"모든 결과가 숫자여야 하나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 정확히 설명할 수 있을 때만 숫자를 쓰고, 구체적이고 사실인 정성적 결과도 사용할 수 있습니다."}}]}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/ko/index.html">iOS App Guide</a><nav class="links"><a href="https://alice51849.github.io/ios-app-guide/ko/tools/index.html">무료 도구</a><a href="https://alice51849.github.io/ios-app-guide/tools/ats-resume-keyword-checker.html">English</a></nav></div></header>
+<main>
+<section class="hero wrap"><div class="eyebrow">무료 · 이력서 본문 없음 · ATS 점수 없음</div><h1>비공개 이력서 근거 점검표</h1><p class="lead">이 페이지 밖에서 직접 센 수만 입력해 실제 근거가 부족한 요건을 확인하세요. ATS 분석, 순위 또는 채용 예측이 아닙니다.</p><div class="badges"><span class="badge">이력서·채용 공고 본문 없음</span><span class="badge">이름·연락처·회사 정보 없음</span><span class="badge">파일·업로드·계정 없음</span><span class="badge">점수·기준선·채용 예측 없음</span></div></section>
+<section class="planner wrap"><h2>민감하지 않은 직접 집계만 입력</h2><p class="intro">현재 채용 공고는 이 페이지 밖에서 읽고 숫자만 입력하세요. 문서나 개인정보를 붙여 넣지 마세요.</p>
+<form id="resume-evidence-planner"><div class="controls">
+<div class="field"><label for="market-format">문서 형식 기준</label><select id="market-format"><option value="not-checked">확인하지 않음</option><option value="us-resume">미국식 이력서</option><option value="uk-cv">영국식 CV</option><option value="europass">Europass CV</option><option value="other">기타 시장 또는 회사 지정 형식</option></select></div>
+<div class="field"><label for="listed-requirements">직접 센 명시 요건</label><input id="listed-requirements" type="number" min="0" max="100" step="1" value="0" required></div>
+<div class="field"><label for="evidence-requirements">사실로 뒷받침한 요건</label><input id="evidence-requirements" type="number" min="0" max="100" step="1" value="0" required></div>
+<div class="field"><label for="experience-bullets">직접 센 경력 불릿</label><input id="experience-bullets" type="number" min="0" max="100" step="1" value="0" required></div>
+<div class="field"><label for="outcome-bullets">확인된 결과가 있는 불릿</label><input id="outcome-bullets" type="number" min="0" max="100" step="1" value="0" required></div>
+<div class="field"><label for="layout-review">내보낸 텍스트와 레이아웃 점검</label><select id="layout-review"><option value="not-checked">확인하지 않음</option><option value="selectable-simple">텍스트 선택 가능, 단순한 레이아웃</option><option value="needs-review">점검 필요 또는 복잡한 레이아웃</option></select></div>
+<label class="toggle"><input id="has-experience" type="checkbox">경력 섹션 있음</label>
+<label class="toggle"><input id="has-skills" type="checkbox">기술 섹션 있음</label>
+<label class="toggle"><input id="has-education" type="checkbox">학력 섹션 있음</label>
+</div><p><button class="button" type="submit">비공개 점검표 업데이트</button></p></form>
+<div class="results"><div class="result"><strong>사실로 뒷받침한 요건</strong><span id="result-requirements"></span></div><div class="result"><strong>확인된 결과가 있는 불릿</strong><span id="result-outcomes"></span></div><div class="result"><strong>표준 섹션 보유</strong><span id="result-sections"></span></div><div class="result"><strong>텍스트와 레이아웃 점검</strong><span id="result-layout"></span></div></div>
+<p class="note"><strong>다음 점검 순서:</strong> <span id="result-plan"></span></p></section>
+<section class="wrap grid"><article class="card"><h2>다음 점검 순서</h2><ol><li>현재 공고에 명시된 요건만 이 페이지 밖에서 셉니다.</li><li>각 요건을 설명할 수 있는 실제 근거와 연결하고 경험을 만들지 마세요.</li><li>확인된 경우에만 불릿에 결과를 추가하고 숫자를 만들지 마세요.</li><li>명확한 섹션 제목을 쓰고 내보낸 파일의 텍스트 선택과 단순한 읽기 순서를 확인하세요.</li><li>회사의 최신 안내와 해당 시장의 공식 문서 형식 안내를 우선하세요.</li></ol></article><article class="card"><h2>이 숫자로 증명할 수 없는 것</h2><p>숫자나 비율은 회사 ATS의 읽기·순위·탈락 여부, 채용 담당자의 판단, 면접 또는 합격을 보여 주지 않습니다. 회사, 직무, 시스템마다 다르며 목표 점수나 기준선을 적용하지 않습니다.</p></article><article class="card wide"><h2>선택형 앱보다 먼저 확인할 공식 안내</h2><p>회사의 최신 지침을 가장 먼저 따르세요. 아래 공식 공개 자료는 시장별 문서 구성 참고용이며 회사 ATS 공식을 공개하지 않습니다.</p><ul class="source-list"><li><a href="https://www.dol.gov/agencies/vets/programs/tap/teams-workshops/resume-essentials" rel="noopener">미국 노동부: Resume Essentials</a></li><li><a href="https://nationalcareers.service.gov.uk/careers-advice/cv-sections" rel="noopener">영국 National Careers Service: CV 작성법</a></li><li><a href="https://europass.europa.eu/en/create-europass-cv" rel="noopener">Europass: Europass CV 만들기</a></li></ul><p><a href="https://developer.chrome.com/docs/ai/webmcp/imperative-api" rel="noopener">Chrome WebMCP 명령형 API 미리보기</a></p></article></section>
+<section class="wrap card faq"><h2>이력서 근거 점검 질문</h2><details><summary>이 페이지가 이력서나 채용 공고를 받나요?</summary><p>아니요. 범위가 제한된 숫자, 불리언, 형식 상태만 받습니다.</p></details><details><summary>근거 비율이 ATS 점수인가요?</summary><p>아니요. 직접 입력한 전체 수 대비 근거 수일 뿐이며 목표나 순위가 없습니다.</p></details><details><summary>요건을 뒷받침할 수 없다면 어떻게 하나요?</summary><p>경험이나 키워드를 만들지 마세요. 근거 없음으로 두거나 사실이고 관련된 근거가 있을 때만 추가하세요.</p></details><details><summary>모든 결과가 숫자여야 하나요?</summary><p>아니요. 정확히 설명할 수 있을 때만 숫자를 쓰고, 구체적이고 사실인 정성적 결과도 사용할 수 있습니다.</p></details></section>
+<section class="app-card wrap"><h2>기기 내 이력서 작업 흐름을 선택해서 사용하시겠어요?</h2><p>CV Desk는 선택 사항입니다. 현재 App Store 설명에는 기기 내 ATS 추정, 템플릿, PDF·DOCX 내보내기, 무료 작성·미리보기, 구독·계정·업로드·워터마크 없는 일회성 잠금 해제가 나옵니다. ATS와 회사 판단은 다르므로 최신 설명과 회사 지침을 확인하세요. 이 점검표는 앱 없이 작동합니다.</p><a class="button" href="https://apps.apple.com/app/id6781337213?ct=iag_resume_evidence_ko" rel="nofollow noopener">App Store에서 CV Desk 보기</a></section>
 </main>
+<footer class="footer"><div class="wrap">비공개 직접 집계만 · 문서 없음 · ATS 점수 없음 · 채용 예측 없음</div></footer>
+<script type="application/json" id="resume-evidence-config">{"inputSchema":{"type":"object","properties":{"market_format":{"type":"string","enum":["not-checked","us-resume","uk-cv","europass","other"],"description":"문서 형식 기준"},"listed_requirements":{"type":"integer","minimum":0,"maximum":100,"description":"직접 센 명시 요건"},"requirements_with_truthful_evidence":{"type":"integer","minimum":0,"maximum":100,"description":"사실로 뒷받침한 요건. 근거가 있는 요건은 전체 요건 이하, 결과가 있는 불릿은 전체 경력 불릿 이하로 입력하세요."},"experience_bullets":{"type":"integer","minimum":0,"maximum":100,"description":"직접 센 경력 불릿"},"bullets_with_verified_outcomes":{"type":"integer","minimum":0,"maximum":100,"description":"확인된 결과가 있는 불릿. 근거가 있는 요건은 전체 요건 이하, 결과가 있는 불릿은 전체 경력 불릿 이하로 입력하세요."},"has_experience_section":{"type":"boolean","description":"경력 섹션 있음"},"has_skills_section":{"type":"boolean","description":"기술 섹션 있음"},"has_education_section":{"type":"boolean","description":"학력 섹션 있음"},"text_layout_review":{"type":"string","enum":["not-checked","selectable-simple","needs-review"],"description":"내보낸 텍스트와 레이아웃 점검"}},"required":["market_format","listed_requirements","requirements_with_truthful_evidence","experience_bullets","bullets_with_verified_outcomes","has_experience_section","has_skills_section","has_education_section","text_layout_review"],"additionalProperties":false},"labels":{"market":{"not-checked":"확인하지 않음","us-resume":"미국식 이력서","uk-cv":"영국식 CV","europass":"Europass CV","other":"기타 시장 또는 회사 지정 형식"},"layout":{"not-checked":"확인하지 않음","selectable-simple":"텍스트 선택 가능, 단순한 레이아웃","needs-review":"점검 필요 또는 복잡한 레이아웃"}},"nextSteps":["현재 공고에 명시된 요건만 이 페이지 밖에서 셉니다.","각 요건을 설명할 수 있는 실제 근거와 연결하고 경험을 만들지 마세요.","확인된 경우에만 불릿에 결과를 추가하고 숫자를 만들지 마세요.","명확한 섹션 제목을 쓰고 내보낸 파일의 텍스트 선택과 단순한 읽기 순서를 확인하세요.","회사의 최신 안내와 해당 시장의 공식 문서 형식 안내를 우선하세요."],"boundary":"숫자나 비율은 회사 ATS의 읽기·순위·탈락 여부, 채용 담당자의 판단, 면접 또는 합격을 보여 주지 않습니다. 회사, 직무, 시스템마다 다르며 목표 점수나 기준선을 적용하지 않습니다.","invalidInput":"0부터 100까지의 정수를 입력하세요.","relationInvalid":"근거가 있는 요건은 전체 요건 이하, 결과가 있는 불릿은 전체 경력 불릿 이하로 입력하세요.","toolDescription":"범위가 제한된 비민감 숫자와 상태만으로 투명한 이력서 근거 점검표를 만듭니다. 문서 본문, 이름, 연락처, 회사, 날짜, 파일, 계정을 받지 않으며 ATS 점수, 분석 결과, 순위 또는 채용 예측을 만들지 않습니다.","freePlanner":{"label":"비공개 이력서 근거 점검표","url":"https://alice51849.github.io/ios-app-guide/ko/tools/ats-resume-keyword-checker.html","boundary":"현재 채용 공고는 이 페이지 밖에서 읽고 숫자만 입력하세요. 문서나 개인정보를 붙여 넣지 마세요."},"officialSources":[{"label":"미국 노동부: Resume Essentials","url":"https://www.dol.gov/agencies/vets/programs/tap/teams-workshops/resume-essentials"},{"label":"영국 National Careers Service: CV 작성법","url":"https://nationalcareers.service.gov.uk/careers-advice/cv-sections"},{"label":"Europass: Europass CV 만들기","url":"https://europass.europa.eu/en/create-europass-cv"}],"webmcpSource":"https://developer.chrome.com/docs/ai/webmcp/imperative-api","optionalApp":{"label":"App Store에서 CV Desk 보기","boundary":"CV Desk는 선택 사항입니다. 현재 App Store 설명에는 기기 내 ATS 추정, 템플릿, PDF·DOCX 내보내기, 무료 작성·미리보기, 구독·계정·업로드·워터마크 없는 일회성 잠금 해제가 나옵니다. ATS와 회사 판단은 다르므로 최신 설명과 회사 지침을 확인하세요. 이 점검표는 앱 없이 작동합니다.","app_store_url":"https://apps.apple.com/app/id6781337213?ct=iag_resume_evidence_ko"}}</script>
 <script>
-const stop=new Set('a an the and or but if then with without for from into onto are is was were be been being to of in on at by as it this that these those you your we our they their i me my he she his her will can should must may about across after before during over under per each every more most less least using use used including include such role team work company candidate candidates job position responsibilities requirements required preferred plus ability experience years year strong excellent good knowledge familiar hands-on proven relevant related'.split(' '));
-const skills='javascript typescript python java swift kotlin react node sql excel tableau powerbi salesforce aws azure gcp docker kubernetes terraform linux git github ci cd api rest graphql ios android figma adobe seo sem analytics ga4 crm hubspot jira agile scrum product management project management customer success account management financial modeling machine learning data analysis data visualization statistics communication leadership stakeholder roadmap testing qa automation security privacy ocr pdf ats resume'.split(' ');
-function words(t){return (t.toLowerCase().replace(/[^a-z0-9+#.\s-]/g,' ').match(/[a-z0-9+#.][a-z0-9+#.-]{1,}/g)||[])}function countMap(arr){let m=new Map;arr.forEach(w=>m.set(w,(m.get(w)||0)+1));return m}function phrases(text){let t=' '+text.toLowerCase().replace(/[^a-z0-9+#.\s-]/g,' ').replace(/\s+/g,' ')+' ';let list=[];for(const s of skills){if(s.includes(' ')){if(t.includes(' '+s+' '))list.push(s)}else if(new RegExp('(^|\\s)'+s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'(\\s|$)').test(t))list.push(s)}return list}function topTerms(text){let arr=words(text).filter(w=>!stop.has(w)&&w.length>2&&!/^\d+$/.test(w)),m=countMap(arr);return [...m.entries()].sort((a,b)=>b[1]-a[1]).slice(0,35).map(x=>x[0])}function check(){let j=jd.value.trim(),r=resume.value.trim();if(j.length<80||r.length<80){out.innerHTML='채용 공고와 이력서를 각각 최소 몇 단락 붙여넣으세요.';return}let req=[...new Set([...phrases(j),...topTerms(j)])].slice(0,45),rw=new Set(words(r)),rt=' '+r.toLowerCase().replace(/[^a-z0-9+#.\s-]/g,' ').replace(/\s+/g,' ')+' ';let hit=[],miss=[];for(const k of req){let ok=k.includes(' ')?rt.includes(' '+k+' '):rw.has(k);(ok?hit:miss).push(k)}let coverage=req.length?hit.length/req.length:0;let basics=0,lower=r.toLowerCase();['experience','education','skills'].forEach(h=>{if(lower.includes(h))basics+=1});let contact=/[\w.+-]+@[\w.-]+\.[a-z]{2,}/i.test(r)?1:0;let score=Math.round(coverage*82+basics*4+contact*6);score=Math.max(0,Math.min(100,score));let tone=score>=75?'키워드 커버리지 우수':score>=55?'시작은 괜찮지만 더 다듬으세요':'일치도 낮음; 지원 전에 다듬기';out.innerHTML=`<div class="score">${score}%</div><div class="bar"><span style="width:${score}%"></span></div><h2>${tone}</h2><p><span class="pill">일치: ${hit.length}</span><span class="pill">누락: ${miss.length}</span><span class="pill">ATS 기본: ${basics}/3 제목</span><span class="pill">이메일 발견: ${contact?'예':'아니오'}</span></p><h3>누락되거나 약한 직무 키워드</h3><p>${miss.slice(0,22).map(x=>`<span class="pill">${x}</span>`).join('')||'<strong class="ok">주요 누락 용어가 없습니다.</strong>'}</p><h3>일치한 용어</h3><p>${hit.slice(0,24).map(x=>`<span class="pill">${x}</span>`).join('')}</p><h3>다음 수정</h3><ul class="checklist"><li>누락된 키워드는 실제 경험을 솔직하게 설명하는 곳에만 추가하세요.</li><li>채용 공고의 정확한 도구 이름을 기술/관련 불릿에 그대로 쓰세요.</li><li>서식을 단순하게 유지하고 선택 가능한 텍스트로 내보내세요.</li><li>3–5개 불릿을 행동, 도구, 범위, 측정 가능한 결과를 담도록 다시 쓰세요.</li></ul>`}checkBtn.onclick=check;sampleBtn.onclick=()=>{jd.value='Product analyst role requiring SQL, data analysis, dashboards, stakeholder communication, A/B testing, product metrics, roadmap support, and experience with Tableau or PowerBI. Candidate should work with engineering and growth teams.';resume.value='Experience: Analyst at mobile app company. Built SQL reports, tracked product metrics, created Tableau dashboards, presented insights to stakeholders, supported A/B testing, and worked with engineering on growth experiments. Skills: SQL, Tableau, data analysis, communication. Education: BS Business. email@example.com';check()};
-</script><footer class="footer no-print"><div class="wrap">브라우저에서 실행되는 무료 도구입니다. 추적, 계정, 서버 업로드가 없습니다. 결과는 참고용입니다.</div></footer></body></html>
+(() => {
+  const config = JSON.parse(document.getElementById("resume-evidence-config").textContent);
+  const form = document.getElementById("resume-evidence-planner");
+  const fields = {
+    market_format: document.getElementById("market-format"),
+    listed_requirements: document.getElementById("listed-requirements"),
+    requirements_with_truthful_evidence: document.getElementById("evidence-requirements"),
+    experience_bullets: document.getElementById("experience-bullets"),
+    bullets_with_verified_outcomes: document.getElementById("outcome-bullets"),
+    has_experience_section: document.getElementById("has-experience"),
+    has_skills_section: document.getElementById("has-skills"),
+    has_education_section: document.getElementById("has-education"),
+    text_layout_review: document.getElementById("layout-review")
+  };
+  const output = {
+    requirements: document.getElementById("result-requirements"),
+    outcomes: document.getElementById("result-outcomes"),
+    sections: document.getElementById("result-sections"),
+    layout: document.getElementById("result-layout"),
+    plan: document.getElementById("result-plan")
+  };
+
+  function integerValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const schema = config.inputSchema.properties[name];
+    if (typeof value !== "number" || !Number.isInteger(value)) {
+      throw new TypeError(`${name} must be an integer.`);
+    }
+    if (value < schema.minimum || value > schema.maximum) {
+      throw new RangeError(`${name} is outside the supported range.`);
+    }
+    return value;
+  }
+
+  function enumValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const values = config.inputSchema.properties[name].enum;
+    if (typeof value !== "string" || !values.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    return value;
+  }
+
+  function booleanValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    if (typeof input[name] !== "boolean") {
+      throw new TypeError(`${name} must be a boolean.`);
+    }
+    return input[name];
+  }
+
+  function plan(input) {
+    const market = enumValue(input, "market_format");
+    const listed = integerValue(input, "listed_requirements");
+    const evidence = integerValue(input, "requirements_with_truthful_evidence");
+    const bullets = integerValue(input, "experience_bullets");
+    const outcomes = integerValue(input, "bullets_with_verified_outcomes");
+    const experienceSection = booleanValue(input, "has_experience_section");
+    const skillsSection = booleanValue(input, "has_skills_section");
+    const educationSection = booleanValue(input, "has_education_section");
+    const layout = enumValue(input, "text_layout_review");
+    if (evidence > listed) {
+      throw new RangeError(
+        "requirements_with_truthful_evidence cannot exceed listed_requirements.");
+    }
+    if (outcomes > bullets) {
+      throw new RangeError(
+        "bullets_with_verified_outcomes cannot exceed experience_bullets.");
+    }
+    const sections = {
+      experience: experienceSection,
+      skills: skillsSection,
+      education: educationSection
+    };
+    const presentSections = Object.values(sections).filter(Boolean).length;
+    return {
+      selected_inputs: {
+        market_format: market,
+        market_format_label: config.labels.market[market],
+        listed_requirements: listed,
+        requirements_with_truthful_evidence: evidence,
+        experience_bullets: bullets,
+        bullets_with_verified_outcomes: outcomes,
+        standard_sections: sections,
+        text_layout_review: layout,
+        text_layout_review_label: config.labels.layout[layout]
+      },
+      self_counted_evidence_coverage: {
+        requirement_evidence: {
+          supported_count: evidence,
+          listed_count: listed,
+          ratio: listed === 0 ? null : evidence / listed
+        },
+        outcome_evidence: {
+          verified_outcome_bullets: outcomes,
+          experience_bullets: bullets,
+          ratio: bullets === 0 ? null : outcomes / bullets
+        },
+        standard_sections_present: presentSections,
+        standard_sections_checked: 3,
+        no_target_threshold_applied: true,
+        is_not_ats_score: true
+      },
+      evidence_gaps_for_manual_review: {
+        listed_requirements_without_truthful_evidence: listed - evidence,
+        experience_bullets_without_verified_outcome: bullets - outcomes
+      },
+      next_review_steps: config.nextSteps,
+      boundary: config.boundary
+    };
+  }
+
+  function validateInput(input) {
+    if (input === null || typeof input !== "object" || Array.isArray(input)) {
+      throw new TypeError("WebMCP input must be an object.");
+    }
+    const allowed = new Set(Object.keys(config.inputSchema.properties));
+    for (const name of Object.keys(input)) {
+      if (!allowed.has(name)) {
+        throw new RangeError(`${name} is not a supported input.`);
+      }
+    }
+    return plan(input);
+  }
+
+  function humanInteger(field, name) {
+    const raw = String(field.value).trim();
+    const value = raw === "" ? Number.NaN : Number(raw);
+    const schema = config.inputSchema.properties[name];
+    if (!Number.isInteger(value) ||
+        value < schema.minimum ||
+        value > schema.maximum) {
+      throw new RangeError(`${name} is outside the supported range.`);
+    }
+    return value;
+  }
+
+  function renderInvalid(message) {
+    output.requirements.textContent = "—";
+    output.outcomes.textContent = "—";
+    output.sections.textContent = "—";
+    output.layout.textContent = "—";
+    output.plan.textContent = message;
+  }
+
+  function render() {
+    let result;
+    try {
+      result = plan({
+        market_format: fields.market_format.value,
+        listed_requirements: humanInteger(
+          fields.listed_requirements, "listed_requirements"),
+        requirements_with_truthful_evidence: humanInteger(
+          fields.requirements_with_truthful_evidence,
+          "requirements_with_truthful_evidence"),
+        experience_bullets: humanInteger(
+          fields.experience_bullets, "experience_bullets"),
+        bullets_with_verified_outcomes: humanInteger(
+          fields.bullets_with_verified_outcomes,
+          "bullets_with_verified_outcomes"),
+        has_experience_section: fields.has_experience_section.checked,
+        has_skills_section: fields.has_skills_section.checked,
+        has_education_section: fields.has_education_section.checked,
+        text_layout_review: fields.text_layout_review.value
+      });
+    } catch (error) {
+      if (error instanceof TypeError || error instanceof RangeError) {
+        const relationError =
+          fields.requirements_with_truthful_evidence.valueAsNumber >
+            fields.listed_requirements.valueAsNumber ||
+          fields.bullets_with_verified_outcomes.valueAsNumber >
+            fields.experience_bullets.valueAsNumber;
+        renderInvalid(relationError ? config.relationInvalid : config.invalidInput);
+        return;
+      }
+      throw error;
+    }
+    const coverage = result.self_counted_evidence_coverage;
+    output.requirements.textContent =
+      `${coverage.requirement_evidence.supported_count} / ` +
+      `${coverage.requirement_evidence.listed_count}`;
+    output.outcomes.textContent =
+      `${coverage.outcome_evidence.verified_outcome_bullets} / ` +
+      `${coverage.outcome_evidence.experience_bullets}`;
+    output.sections.textContent =
+      `${coverage.standard_sections_present} / ` +
+      `${coverage.standard_sections_checked}`;
+    output.layout.textContent =
+      result.selected_inputs.text_layout_review_label;
+    output.plan.textContent = result.next_review_steps.join(" ");
+  }
+
+  async function registerWebMcp() {
+    if (!document.modelContext?.registerTool) return;
+    await document.modelContext.registerTool({
+      name: "plan_private_resume_evidence_coverage",
+      description: config.toolDescription,
+      inputSchema: config.inputSchema,
+      annotations: {readOnlyHint: true, untrustedContentHint: false},
+      execute: async (input) => {
+        const plan = validateInput(input);
+        const result = {
+          result_type: "private_resume_evidence_coverage_plan",
+          resume_job_post_personal_data_files_accounts_not_received: true,
+          no_ats_parse_score_ranking_or_hiring_prediction: true,
+          plan,
+          optional_free_planner: config.freePlanner,
+          official_sources: config.officialSources,
+          webmcp_preview_source: config.webmcpSource
+        };
+        if (config.optionalApp) {
+          result.optional_cv_desk = config.optionalApp;
+        }
+        return JSON.stringify(result);
+      }
+    });
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    render();
+  });
+  for (const field of Object.values(fields)) {
+    field.addEventListener("change", render);
+  }
+  render();
+  registerWebMcp().catch((error) =>
+    console.error("WebMCP tool registration failed.", error));
+})();
+</script>
+</body>
+</html>

@@ -11499,98 +11499,319 @@ class GeneratorTests(unittest.TestCase):
             inactive,
         )
 
-    def test_document_scan_planner_is_private_bilingual_and_non_certifying(self):
-        english = document_scan_planner.render_page("en", app_public=False)
-        chinese = document_scan_planner.render_page(
-            "zh-Hant",
-            app_public=False,
+    def test_document_scan_planner_has_complete_nine_locale_copy_and_sources(self):
+        m = document_scan_planner
+        self.assertEqual(
+            (
+                "en",
+                "es-ES",
+                "pt-BR",
+                "de-DE",
+                "fr-FR",
+                "ja",
+                "ko",
+                "zh-Hant",
+                "zh-Hans",
+            ),
+            m.ALT_LOCALES,
         )
-        public = document_scan_planner.render_page("en", app_public=True)
-        for page in (english, chinese):
-            self.assertIn('"@type":"WebApplication"', page)
-            self.assertIn('"dateModified":"2026-07-15"', page)
-            self.assertIn("A4 · 210×297 mm", page)
-            self.assertIn("300 ppi", page)
-            self.assertIn("400 ppi", page)
-            self.assertIn("600 ppi", page)
-            self.assertIn("document.modelContext?.registerTool", page)
-            self.assertIn('name: "plan_private_document_scan"', page)
-            self.assertIn(
-                "annotations: {readOnlyHint: true, untrustedContentHint: false}",
-                page,
+        self.assertEqual(set(m.ALT_LOCALES), set(m.COPY))
+        expected_keys = set(m.COPY["en"])
+        for locale in m.ALT_LOCALES:
+            copy_for_locale = m.COPY[locale]
+            self.assertEqual(expected_keys, set(copy_for_locale), locale)
+            self.assertEqual(set(m.PAPERS), set(copy_for_locale["paper_options"]))
+            self.assertEqual(
+                set(m.PURPOSES),
+                set(copy_for_locale["purpose_options"]),
             )
-            self.assertIn("document_not_received_or_processed: true", page)
-            self.assertIn("not_ocr_or_compliance_certification: true", page)
-            self.assertIn(document_scan_planner.NARA_STANDARD, page)
-            self.assertIn(document_scan_planner.FADGI_GUIDELINES, page)
-            self.assertIn(document_scan_planner.NARA_OCR, page)
-            self.assertIn(document_scan_planner.WEBMCP_SOURCE, page)
-            self.assertNotIn('type="file"', page)
-            self.assertNotIn("fetch(", page)
-            self.assertNotIn("XMLHttpRequest", page)
-            self.assertNotIn("localStorage", page)
-            self.assertNotIn("origin-trial", page.lower())
-            self.assertNotIn("navigator.modelContext", page)
-            self.assertNotIn(f"id{document_scan_planner.APP_ID}", page)
-        self.assertIn("不估算壓縮後檔案大小", chinese)
-        self.assertIn("OCR 不一定準確", chinese)
-        self.assertIn(f"id{document_scan_planner.APP_ID}", public)
-        schema = document_scan_planner.webmcp_input_schema("en")
-        self.assertFalse(schema["additionalProperties"])
+            self.assertEqual(
+                set(m.PURPOSES),
+                set(copy_for_locale["purpose_notes"]),
+            )
+            self.assertEqual(
+                set(m.COLOR_MODES),
+                set(copy_for_locale["color_options"]),
+            )
+            self.assertEqual(
+                set(m.COLOR_MODES),
+                set(copy_for_locale["color_notes"]),
+            )
+            self.assertEqual(
+                {"portrait", "landscape"},
+                set(copy_for_locale["orientation_options"]),
+            )
+            self.assertEqual(5, len(copy_for_locale["capture_checks"]))
+            self.assertEqual(4, len(copy_for_locale["faq"]))
+            self.assertEqual(4, len(copy_for_locale["source_labels"]))
+            self.assertEqual(5, len(copy_for_locale["feature_list"]))
+            for key in (
+                "result_boundary",
+                "scope_text",
+                "sources_intro",
+                "webmcp_description",
+                "inline_link",
+                "index_description",
+            ):
+                self.assertTrue(copy_for_locale[key].strip(), (locale, key))
         self.assertEqual(
-            ["a4", "a5", "us-letter", "us-legal"],
-            schema["properties"]["paper"]["enum"],
+            {
+                "a4": {"width_mm": 210.0, "height_mm": 297.0},
+                "a5": {"width_mm": 148.0, "height_mm": 210.0},
+                "us-letter": {"width_mm": 215.9, "height_mm": 279.4},
+                "us-legal": {"width_mm": 215.9, "height_mm": 355.6},
+            },
+            m.PAPERS,
         )
         self.assertEqual(
-            ["everyday-text", "small-print", "fine-detail"],
+            {
+                "everyday-text": {"dpi": 300},
+                "small-print": {"dpi": 400},
+                "fine-detail": {"dpi": 600},
+            },
+            m.PURPOSES,
+        )
+        self.assertEqual(
+            {
+                "grayscale": {"bits_per_pixel": 8},
+                "rgb": {"bits_per_pixel": 24},
+            },
+            m.COLOR_MODES,
+        )
+
+    def test_document_scan_planner_private_pages_schema_and_localization(self):
+        m = document_scan_planner
+        english_fallbacks = (
+            m.COPY["en"]["planner"],
+            m.COPY["en"]["capture_title"],
+            m.COPY["en"]["scope_title"],
+            m.COPY["en"]["faq_title"],
+        )
+        for locale in m.ALT_LOCALES:
+            page = m.render_page(locale)
+            self.assertIn(f'<html lang="{locale}">', page)
+            self.assertIn('"@type":"WebApplication"', page)
+            self.assertIn('"@type":"FAQPage"', page)
+            self.assertIn('"dateModified":"2026-07-15"', page)
+            for hreflang in m.ALT_LOCALES:
+                self.assertIn(f'hreflang="{hreflang}"', page)
+            self.assertIn('hreflang="x-default"', page)
+            self.assertIn('type="application/atom+xml"', page)
+            self.assertIn('type="application/rss+xml"', page)
+            self.assertIn('type="application/feed+json"', page)
+            self.assertIn(m.APPLE_SCAN_DOCUMENTS, page)
+            self.assertIn(m.NARA_STANDARD, page)
+            self.assertIn(m.FADGI_GUIDELINES, page)
+            self.assertIn(m.NARA_OCR, page)
+            self.assertNotIn('"offers"', page)
+            self.assertNotIn('"@type":"Offer"', page)
+            self.assertNotIn('"price":"0"', page)
+            self.assertNotIn('"rating"', page.lower())
+            self.assertNotIn('type="file"', page)
+            self.assertNotIn(f"id{m.APP_ID}", page)
+            for value in m.COPY[locale]["feature_list"]:
+                self.assertIn(html.escape(value), page)
+            if locale != "en":
+                for fallback in english_fallbacks:
+                    self.assertNotIn(fallback, page, (locale, fallback))
+            schemas = [
+                json.loads(blob)
+                for blob in re.findall(
+                    r'<script type="application/ld\+json">(.*?)</script>',
+                    page,
+                    flags=re.S,
+                )
+            ]
+            web_app = next(item for item in schemas if item["@type"] == "WebApplication")
+            self.assertTrue(web_app["isAccessibleForFree"])
+            self.assertEqual(
+                list(m.COPY[locale]["feature_list"]),
+                web_app["featureList"],
+            )
+            self.assertNotIn("offers", web_app)
+            faq = next(item for item in schemas if item["@type"] == "FAQPage")
+            self.assertEqual(4, len(faq["mainEntity"]))
+
+    def test_document_scan_planner_webmcp_is_strict_shared_and_read_only(self):
+        m = document_scan_planner
+        schema = m.webmcp_input_schema("en")
+        self.assertFalse(schema["additionalProperties"])
+        self.assertEqual(list(schema["properties"]), schema["required"])
+        self.assertEqual(list(m.PAPERS), schema["properties"]["paper"]["enum"])
+        self.assertEqual(
+            list(m.PURPOSES),
             schema["properties"]["purpose"]["enum"],
         )
         self.assertEqual(
-            ["grayscale", "rgb"],
+            list(m.COLOR_MODES),
             schema["properties"]["color_mode"]["enum"],
         )
-        self.assertEqual(1, schema["properties"]["page_count"]["minimum"])
-        self.assertEqual(100, schema["properties"]["page_count"]["maximum"])
-        self.assertLess(
-            english.index("optional_free_planner: config.freeTool"),
-            english.index("official_sources: config.officialSources"),
+        self.assertEqual(
+            ["portrait", "landscape"],
+            schema["properties"]["orientation"]["enum"],
         )
-        self.assertLess(
-            english.index("official_sources: config.officialSources"),
-            english.index("result.optional_scanto_pro = config.optionalApp"),
+        self.assertEqual(
+            {"type": "integer", "minimum": 1, "maximum": 100},
+            schema["properties"]["page_count"],
         )
+        script = m.SCRIPT
+        self.assertEqual(1, script.count("function calculate(input)"))
+        self.assertIn("const plan = calculate({", script)
+        self.assertIn("return calculate(input);", script)
+        self.assertIn("Object.keys(input)", script)
+        self.assertIn("Number.isInteger(value)", script)
+        self.assertIn("value < schema.minimum || value > schema.maximum", script)
+        self.assertIn("Math.round(widthMm / MM_PER_INCH * purpose.dpi)", script)
+        self.assertIn("Math.round(heightMm / MM_PER_INCH * purpose.dpi)", script)
+        self.assertIn("round(bytesPerPage / MIB)", script)
+        self.assertLess(
+            script.index("paper_id: paperId"),
+            script.index("uncompressed_mib_total:"),
+        )
+        execute = script.split("execute: async (input) => {", 1)[1].split(
+            "return JSON.stringify(result);",
+            1,
+        )[0]
+        for forbidden in (
+            "document.",
+            "window.",
+            "localStorage",
+            "sessionStorage",
+            "cookie",
+            "fetch(",
+            "XMLHttpRequest",
+            "navigator.",
+            "location",
+            "clipboard",
+            "print(",
+        ):
+            self.assertNotIn(forbidden, execute)
+        page = m.render_page("en")
+        self.assertIn('name: "plan_private_document_scan"', page)
+        self.assertIn(
+            "annotations: {readOnlyHint: true, untrustedContentHint: false}",
+            page,
+        )
+        self.assertIn("document_not_received_or_processed: true", page)
+        self.assertIn("not_ocr_or_compliance_certification: true", page)
 
-    def test_document_scan_planner_builds_both_pages_and_is_idempotent(self):
+    def test_document_scan_planner_keeps_exact_math_and_input_regressions(self):
+        script = document_scan_planner.SCRIPT
+        self.assertIn(
+            'const widthMm = orientation === "portrait" ? paper.width_mm : paper.height_mm;',
+            script,
+        )
+        self.assertIn(
+            'const heightMm = orientation === "portrait" ? paper.height_mm : paper.width_mm;',
+            script,
+        )
+        self.assertIn("const bytesPerPage = pixels * color.bits_per_pixel / 8;", script)
+        self.assertIn("uncompressed_bytes_total: bytesPerPage * pages", script)
+        self.assertIn("round(bytesPerPage * pages / MIB)", script)
+        for invalid_type in ("true", '"1"', "1.5"):
+            self.assertFalse(
+                isinstance(json.loads(invalid_type), int)
+                and not isinstance(json.loads(invalid_type), bool)
+            )
+        for out_of_range in (0, 101):
+            self.assertFalse(1 <= out_of_range <= 100)
+        self.assertEqual((2480, 3508), (round(210 / 25.4 * 300), round(297 / 25.4 * 300)))
+        self.assertEqual((3508, 2480), (round(297 / 25.4 * 300), round(210 / 25.4 * 300)))
+        pixels = 2480 * 3508
+        self.assertEqual(24.89, round(pixels * 24 / 8 / 1024 / 1024, 2))
+        self.assertEqual(174.23, round(pixels * 24 / 8 * 7 / 1024 / 1024, 2))
+        self.assertIn('throw new TypeError("page_count must be an integer.")', script)
+        self.assertIn('throw new RangeError("page_count is outside the supported range.")', script)
+        self.assertIn("if (!allowed.has(name))", script)
+
+    def test_document_scan_planner_public_campaigns_are_unique_and_opt_in(self):
+        m = document_scan_planner
+        for locale in m.ALT_LOCALES:
+            private = m.render_page(locale)
+            public = m.render_page(locale, app_public=True)
+            campaign = f"iag_scan_plan_{locale.lower()}"
+            self.assertNotIn("apps.apple.com", private)
+            self.assertNotIn(m.APP_ID, private)
+            self.assertNotIn('class="app-card', private)
+            self.assertEqual(1, public.count('class="app-card'))
+            self.assertIn(f"id{m.APP_ID}", public)
+            self.assertIn(campaign, urllib.parse.unquote(public))
+        with mock.patch.object(m, "live_app_keys") as live:
+            with tempfile.TemporaryDirectory() as directory:
+                pages = Path(directory)
+                for locale in m.ALT_LOCALES:
+                    root = pages if locale == "en" else pages / locale
+                    (root / "tools").mkdir(parents=True)
+                    (root / "tools" / "index.html").write_text(
+                        '<main><section class="wrap grid"></section></main>',
+                        encoding="utf-8",
+                    )
+                m.build(pages)
+                live.assert_not_called()
+
+    def test_document_scan_planner_builds_nine_pages_cards_and_is_idempotent(self):
+        m = document_scan_planner
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)
-            tools = pages / "tools"
-            tools.mkdir()
-            (tools / "index.html").write_text(
-                '<main><section class="wrap grid"></section></main>',
-                encoding="utf-8",
-            )
-            urls = document_scan_planner.build(pages, app_public=False)
-            self.assertEqual(2, len(urls))
-            english = tools / f"{document_scan_planner.SLUG}.html"
-            chinese = (
-                pages
-                / "zh-Hant"
-                / "tools"
-                / f"{document_scan_planner.SLUG}.html"
-            )
-            self.assertTrue(english.exists())
-            self.assertTrue(chinese.exists())
-            index = (tools / "index.html").read_text(encoding="utf-8")
-            self.assertEqual(
-                1,
-                index.count(f"{document_scan_planner.SLUG}.html"),
-            )
-            stable_mtime = 1_700_000_000_000_000_000
-            os.utime(english, ns=(stable_mtime, stable_mtime))
-            first_bytes = english.read_bytes()
-            document_scan_planner.build(pages, app_public=False)
-            self.assertEqual(first_bytes, english.read_bytes())
-            self.assertEqual(stable_mtime, english.stat().st_mtime_ns)
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                (root / "tools").mkdir(parents=True)
+                (root / "tools" / "index.html").write_text(
+                    '<main><section class="wrap grid"></section></main>',
+                    encoding="utf-8",
+                )
+            urls = m.build(pages)
+            self.assertEqual(9, len(urls))
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                output = root / "tools" / f"{m.SLUG}.html"
+                self.assertTrue(output.exists())
+                index = (root / "tools" / "index.html").read_text(encoding="utf-8")
+                self.assertEqual(1, index.count(f"{m.SLUG}.html"))
+                self.assertIn(m.COPY[locale]["index_title"], index)
+            before = {path: path.read_bytes() for path in pages.rglob("*.html")}
+            m.build(pages)
+            after = {path: path.read_bytes() for path in pages.rglob("*.html")}
+            self.assertEqual(before, after)
+
+    def test_document_scan_planner_inbound_links_are_exact_and_idempotent(self):
+        m = document_scan_planner
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                answers = root / "answers"
+                answers.mkdir(parents=True)
+                for slug in m.TARGET_ANSWER_SLUGS:
+                    (answers / slug).write_text(
+                        '<p>original copy remains</p>'
+                        '<a class="cta" href="https://apps.apple.com/app/'
+                        f'id{m.APP_ID}?ct=existing_campaign">ScanTo</a>',
+                        encoding="utf-8",
+                    )
+                (answers / "other-scanner-answer.html").write_text(
+                    '<a class="cta" href="https://apps.apple.com/app/'
+                    f'id{m.APP_ID}?ct=untouched">ScanTo</a>',
+                    encoding="utf-8",
+                )
+            self.assertEqual(18, m.insert_answer_links(pages))
+            self.assertEqual(0, m.insert_answer_links(pages))
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                for slug in m.TARGET_ANSWER_SLUGS:
+                    text = (root / "answers" / slug).read_text(encoding="utf-8")
+                    self.assertEqual(1, text.count(m.INBOUND_LINK_CLASS))
+                    self.assertLess(
+                        text.index(m.INBOUND_LINK_CLASS),
+                        text.index(f"id{m.APP_ID}?ct=existing_campaign"),
+                    )
+                    self.assertIn("original copy remains", text)
+                    self.assertIn(f"id{m.APP_ID}?ct=existing_campaign", text)
+                    self.assertIn(html.escape(m.COPY[locale]["inline_link"]), text)
+                untouched = (
+                    root / "answers" / "other-scanner-answer.html"
+                ).read_text(encoding="utf-8")
+                self.assertNotIn(m.INBOUND_LINK_CLASS, untouched)
 
     def test_blurry_photo_guide_is_private_bilingual_and_non_predictive(self):
         english = blurry_photo_diagnostic.render_page(

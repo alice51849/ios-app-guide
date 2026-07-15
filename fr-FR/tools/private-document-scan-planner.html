@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Planificateur privé de numérisation | ppi, pixels et limites</title>
+<meta name="description" content="Planifiez la résolution, les dimensions exactes en pixels et la taille raster non compressée sans téléverser ni lire de document.">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/fr-FR/tools/private-document-scan-planner.html">
+<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/private-document-scan-planner.html">
+<link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/es-ES/tools/private-document-scan-planner.html">
+<link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/tools/private-document-scan-planner.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tools/private-document-scan-planner.html">
+<link rel="alternate" hreflang="fr-FR" href="https://alice51849.github.io/ios-app-guide/fr-FR/tools/private-document-scan-planner.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/private-document-scan-planner.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/tools/private-document-scan-planner.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/private-document-scan-planner.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/tools/private-document-scan-planner.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/private-document-scan-planner.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Planificateur privé de numérisation de documents">
+<meta property="og:description" content="Planifiez la résolution, les dimensions exactes en pixels et la taille raster non compressée sans téléverser ni lire de document.">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/fr-FR/tools/private-document-scan-planner.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#172033;--muted:#5c6679;--line:#dce3ec;--paper:#fff;--bg:#edf3f7;--navy:#19344d;--blue:#347aa1;--mint:#e4f5ee;--warn:#fff6da;--shadow:0 22px 60px rgba(28,49,70,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,#fff 0,var(--bg) 55%,#dfe9ef 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:#1d638c}.wrap{width:min(1120px,calc(100% - 30px));margin:auto}.top{position:sticky;top:0;z-index:8;background:#fffffff2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}.links{display:flex;gap:15px;overflow-x:auto}
+.hero{padding:64px 0 30px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--navy);white-space:nowrap}.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}.hero h1{font-size:clamp(34px,6vw,62px);line-height:1.04;letter-spacing:-.035em;margin:.3em 0 .22em;white-space:nowrap;overflow-x:auto}.lead{font-size:clamp(17px,2.2vw,21px);color:var(--muted);margin:0;white-space:nowrap;overflow-x:auto}.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.planner,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}.planner{padding:clamp(20px,4vw,36px);margin:16px auto 30px}.planner h2,.card h2,.app-card h2{font-size:clamp(24px,3.6vw,34px);line-height:1.14;margin:0;white-space:nowrap;overflow-x:auto}.intro{color:var(--muted);white-space:nowrap;overflow-x:auto}
+.controls{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:22px}.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--navy);margin-bottom:6px;white-space:nowrap;overflow-x:auto}select,input,button{font:inherit}select,input{width:100%;min-height:46px;border:1px solid #cbd6e1;border-radius:13px;background:#fff;color:var(--ink);padding:9px 11px}.button{border:0;border-radius:999px;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;text-decoration:none;font-weight:850;padding:11px 17px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(25,52,77,.2)}
+.results{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:11px;margin-top:22px}.metric{background:var(--mint);border:1px solid #c4e4d7;border-radius:17px;padding:14px;min-width:0}.metric strong,.metric span{display:block;white-space:nowrap;overflow-x:auto}.metric strong{font-size:clamp(20px,3vw,29px);color:#195946}.metric span{font-size:12px;color:#3d665b;font-weight:760;margin-top:3px}.note{background:var(--warn);border:1px solid #ead9a7;border-radius:16px;padding:13px 15px;margin:16px 0 0;white-space:nowrap;overflow-x:auto}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:30px}.card,.app-card{padding:clamp(20px,3.5vw,30px)}.card.wide{grid-column:1/-1}.card p,.card li,.app-card p,.faq details p,.faq summary{white-space:nowrap;overflow-x:auto}.card ul{padding-left:22px}.card li{margin:8px 0}.source-list a{overflow-wrap:anywhere}.app-card{margin:0 auto 30px;background:linear-gradient(135deg,#f8fbff,#e8f1f6)}.app-card .button{display:inline-flex;margin-top:5px}.faq{margin-bottom:44px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+.footer{background:var(--navy);color:#eaf1f6;text-align:center;padding:27px 0;white-space:nowrap;overflow-x:auto}
+@media(max-width:900px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.controls,.results{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1120px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{.top,.hero,.controls,.app-card,.faq,.footer{display:none!important}body{background:#fff}.planner,.card{box-shadow:none;break-inside:avoid}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Planificateur privé de numérisation de documents","description":"Planifiez la résolution, les dimensions exactes en pixels et la taille raster non compressée sans téléverser ni lire de document.","url":"https://alice51849.github.io/ios-app-guide/fr-FR/tools/private-document-scan-planner.html","inLanguage":"fr-FR","datePublished":"2026-07-15","dateModified":"2026-07-15","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","isAccessibleForFree":true,"featureList":["Aucun document, fichier, caméra, texte OCR ou donnée personnelle","Profils bornés à 300, 400 et 600 ppi","Pixels exacts et MiB théoriques non compressés","Aucun téléversement, stockage, cookie, analyse, publicité ou réseau","Aucune garantie de précision, valeur juridique, accessibilité ou conformité"],"citation":["https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1236/subpart-E/section-1236.50","https://www.digitizationguidelines.gov/guidelines/","https://www.archives.gov/research/catalog/lcdrg/contribution/ocr-transcription","https://support.apple.com/en-us/108963"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"fr-FR","mainEntity":[{"@type":"Question","name":"Cette page téléverse-t-elle mon document ?","acceptedAnswer":{"@type":"Answer","text":"Non. Elle ne comporte aucun sélecteur de fichier et n'accepte ni texte ni image de document ; elle calcule seulement des réglages bornés."}},{"@type":"Question","name":"300 ppi garantissent-ils un OCR exact ?","acceptedAnswer":{"@type":"Answer","text":"Non. L'OCR dépend de la source, police, langue, mise en page, mise au point, lumière et traitement, et doit être contrôlé."}},{"@type":"Question","name":"Les MiB correspondent-ils à la taille finale du PDF ?","acceptedAnswer":{"@type":"Answer","text":"Non. C'est la charge de pixels non compressée ; compression, structure, OCR et métadonnées changent la taille finale."}},{"@type":"Question","name":"Cela satisfait-il NARA ou FADGI ?","acceptedAnswer":{"@type":"Answer","text":"Non. Leurs processus comportent des contrôles plus larges de capture, matériel, mires, qualité et archives."}}]}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/fr-FR/index.html">iOS App Guide</a><nav class="links"><a href="https://alice51849.github.io/ios-app-guide/fr-FR/tools/index.html">Outils gratuits</a><a href="https://alice51849.github.io/ios-app-guide/tools/private-document-scan-planner.html">Anglais</a></nav></div></header>
+<main>
+<section class="hero wrap"><div class="eyebrow">Gratuit · calcul local · aucun document téléversé</div><h1>Planificateur privé de numérisation de documents</h1><p class="lead">Choisissez le papier, le niveau de détail et la couleur ; le navigateur calcule seulement les pixels et les MiB théoriques sans recevoir de document.</p><div class="badges"><span class="badge">Aucune saisie de fichier ou document</span><span class="badge">Aucun OCR ni appel au cloud</span><span class="badge">Aucune estimation de taille compressée</span><span class="badge">Aucune affirmation de conformité archivistique</span></div></section>
+<section class="planner wrap" id="planner"><h2>Planifier la capture</h2><p class="intro">Les trois profils de détail sont des points de départ, pas des garanties de qualité ni des certifications officielles.</p>
+<form id="scan-planner"><div class="controls">
+<div class="field"><label for="paper">Format du papier</label><select id="paper"><option value="a4">A4 · 210×297 mm</option><option value="a5">A5 · 148×210 mm</option><option value="us-letter">US Letter · 8,5×11 in</option><option value="us-legal">US Legal · 8,5×14 in</option></select></div>
+<div class="field"><label for="purpose">Profil de détail</label><select id="purpose"><option value="everyday-text">Texte courant · 300 ppi</option><option value="small-print">Petits caractères ou marques variées · 400 ppi</option><option value="fine-detail">Traits fins ou tampons · 600 ppi</option></select></div>
+<div class="field"><label for="color-mode">Mode couleur</label><select id="color-mode"><option value="grayscale">Niveaux de gris 8 bits</option><option value="rgb">Couleur RGB 24 bits</option></select></div>
+<div class="field"><label for="orientation">Orientation</label><select id="orientation"><option value="portrait">Portrait</option><option value="landscape">Paysage</option></select></div>
+<div class="field"><label for="page-count">Nombre de pages</label><input id="page-count" type="number" min="1" max="100" step="1" value="1"></div>
+</div><button class="button" type="submit">Actualiser le plan</button></form>
+<h2>Plan de numérisation calculé</h2><div class="results" aria-live="polite">
+<div class="metric"><strong id="result-dpi"></strong><span>ppi sélectionnés</span></div>
+<div class="metric"><strong id="result-pixels"></strong><span>Pixels par page</span></div>
+<div class="metric"><strong id="result-megapixels"></strong><span>Mégapixels par page</span></div>
+<div class="metric"><strong id="result-per-page"></strong><span>MiB non compressés par page</span></div>
+<div class="metric"><strong id="result-total"></strong><span>MiB non compressés au total</span></div>
+</div><p class="note" id="profile-note"></p><p class="note">Ces MiB représentent la charge mathématique des pixels avant en-têtes, compression, texte OCR ou structure PDF. Les tailles réelles des PDF, JPEG et TIFF varient ; l&#x27;outil n&#x27;estime pas la taille compressée.</p></section>
+<section class="wrap grid">
+<article class="card"><h2>Cinq contrôles avant un lot</h2><ol><li>Gardez la page entière et tous ses bords visibles ; aplatissez les plis sans endommager l&#x27;original.</li><li>Utilisez une lumière uniforme et vérifiez reflets, ombres, doigts, flou et coins coupés.</li><li>Choisissez RGB lorsque la couleur porte une information ; sinon les niveaux de gris peuvent convenir.</li><li>Agrandissez la première page et contrôlez le plus petit texte ou signe important.</li><li>Comparez tout résultat OCR à l&#x27;image ; l&#x27;OCR n&#x27;est pas toujours exact.</li></ol></article>
+<article class="card"><h2>Ce que ce planificateur ne peut pas certifier</h2><p>Il ne reçoit ni document, image, fichier, caméra, texte OCR ou libre, nom ou donnée personnelle ; il ne numérise, améliore, inspecte, téléverse ou stocke rien et n&#x27;utilise ni cookies, analyse, publicité ou réseau. Il ne garantit ni OCR, lisibilité, qualité, valeur juridique, accessibilité, ni conformité archivistique, administrative, fiscale, médicale ou éducative. Une app mobile peut ne pas maîtriser exactement les ppi choisis. Les documents permanents, réglementés ou probatoires exigent les prescriptions et contrôles qualité actuels de l&#x27;autorité responsable.</p></article>
+<article class="card wide"><h2>Contexte officiel, pas une approbation</h2><p>NARA et FADGI concernent les archives permanentes et la numérisation aux États-Unis ; ce ne sont ni des lois locales ni une certification de cet outil. Apple décrit seulement la numérisation dans Notes et Fichiers, le réglage des coins, plusieurs pages, les emplacements d&#x27;enregistrement et les signatures avec Annoter ; aucune conclusion n&#x27;en découle sur OCR, ppi, taille, ScanTo ou approbation.</p><ul class="source-list"><li><a href="https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1236/subpart-E/section-1236.50" rel="noopener">36 CFR 1236.50 : exigences de numérisation des archives papier permanentes</a></li><li><a href="https://www.digitizationguidelines.gov/guidelines/" rel="noopener">FADGI : recommandations techniques de numérisation</a></li><li><a href="https://www.archives.gov/research/catalog/lcdrg/contribution/ocr-transcription" rel="noopener">NARA : la transcription OCR n&#x27;est pas toujours exacte</a></li><li><a href="https://support.apple.com/en-us/108963" rel="noopener">Assistance Apple : numériser dans Notes ou Fichiers et suivre les étapes documentées de modification et d&#x27;enregistrement</a></li></ul><p><a href="https://developer.chrome.com/docs/ai/webmcp/imperative-api" rel="noopener">Aperçu de l&#x27;API impérative WebMCP de Chrome (susceptible d&#x27;évoluer)</a></p></article>
+</section>
+<section class="app-card wrap"><h2>Besoin d&#x27;un flux papier vers PDF sur iPhone ?</h2><p>ScanTo Pro est un outil iPhone facultatif dont la fiche actuelle décrit la numérisation de documents, la création de PDF, la recherche OCR et la protection des documents par Face ID avec déverrouillage à vie en achat unique. Consultez la fiche en vigueur pour la disponibilité et les fonctions exactes. Ce planificateur fonctionne sans l&#x27;app.</p><a class="button" href="https://apps.apple.com/app/id6779977651?ct=iag_scan_plan_fr-fr" rel="nofollow noopener">Voir ScanTo Pro dans l&#x27;App Store</a></section>
+<section class="wrap card faq"><h2>Questions avant de numériser</h2><details><summary>Cette page téléverse-t-elle mon document ?</summary><p>Non. Elle ne comporte aucun sélecteur de fichier et n&#x27;accepte ni texte ni image de document ; elle calcule seulement des réglages bornés.</p></details><details><summary>300 ppi garantissent-ils un OCR exact ?</summary><p>Non. L&#x27;OCR dépend de la source, police, langue, mise en page, mise au point, lumière et traitement, et doit être contrôlé.</p></details><details><summary>Les MiB correspondent-ils à la taille finale du PDF ?</summary><p>Non. C&#x27;est la charge de pixels non compressée ; compression, structure, OCR et métadonnées changent la taille finale.</p></details><details><summary>Cela satisfait-il NARA ou FADGI ?</summary><p>Non. Leurs processus comportent des contrôles plus larges de capture, matériel, mires, qualité et archives.</p></details></section>
+</main>
+<footer class="footer"><div class="wrap">Calcul privé uniquement · aucun téléversement · contrôlez la première page</div></footer>
+<script type="application/json" id="scan-config">{"papers":{"a4":{"width_mm":210.0,"height_mm":297.0},"a5":{"width_mm":148.0,"height_mm":210.0},"us-letter":{"width_mm":215.9,"height_mm":279.4},"us-legal":{"width_mm":215.9,"height_mm":355.6}},"purposes":{"everyday-text":{"dpi":300},"small-print":{"dpi":400},"fine-detail":{"dpi":600}},"colorModes":{"grayscale":{"bits_per_pixel":8},"rgb":{"bits_per_pixel":24}},"inputSchema":{"type":"object","properties":{"paper":{"type":"string","enum":["a4","a5","us-letter","us-legal"]},"purpose":{"type":"string","enum":["everyday-text","small-print","fine-detail"]},"color_mode":{"type":"string","enum":["grayscale","rgb"]},"orientation":{"type":"string","enum":["portrait","landscape"]},"page_count":{"type":"integer","minimum":1,"maximum":100}},"required":["paper","purpose","color_mode","orientation","page_count"],"additionalProperties":false},"labels":{"paper":{"a4":"A4 · 210×297 mm","a5":"A5 · 148×210 mm","us-letter":"US Letter · 8,5×11 in","us-legal":"US Legal · 8,5×14 in"},"purpose":{"everyday-text":"Texte courant · 300 ppi","small-print":"Petits caractères ou marques variées · 400 ppi","fine-detail":"Traits fins ou tampons · 600 ppi"},"color":{"grayscale":"Niveaux de gris 8 bits","rgb":"Couleur RGB 24 bits"},"orientation":{"portrait":"Portrait","landscape":"Paysage"}},"purposeNotes":{"everyday-text":"Une base de 300 ppi pour un texte moderne net ; elle ne certifie ni la précision OCR ni la conformité documentaire.","small-print":"Une option de 400 ppi pour les petits caractères ou marques variées ; contrôlez la première page avant un lot.","fine-detail":"Une option de 600 ppi si les traits ou marques minuscules comptent ; elle augmente fortement la mémoire sans garantir la reconnaissance."},"colorNotes":{"grayscale":"À utiliser seulement si la couleur n'a pas de sens ; contrôlez d'abord tampons, surlignages, écriture et annotations.","rgb":"Utilisez RGB si la couleur aide à interpréter tampons, surlignages, écriture, annotations ou aspect d'origine."},"toolDescription":"Calcule un plan privé à partir d'entrées bornées de papier, détail, couleur, orientation et pages. Renvoie des pixels exacts et des limites raster non compressées sans recevoir, lire, téléverser, stocker ni traiter un document par OCR, et sans promettre précision ou conformité.","captureChecklist":["Gardez la page entière et tous ses bords visibles ; aplatissez les plis sans endommager l'original.","Utilisez une lumière uniforme et vérifiez reflets, ombres, doigts, flou et coins coupés.","Choisissez RGB lorsque la couleur porte une information ; sinon les niveaux de gris peuvent convenir.","Agrandissez la première page et contrôlez le plus petit texte ou signe important.","Comparez tout résultat OCR à l'image ; l'OCR n'est pas toujours exact."],"compressedBoundary":"Ces MiB représentent la charge mathématique des pixels avant en-têtes, compression, texte OCR ou structure PDF. Les tailles réelles des PDF, JPEG et TIFF varient ; l'outil n'estime pas la taille compressée.","complianceBoundary":"Il ne reçoit ni document, image, fichier, caméra, texte OCR ou libre, nom ou donnée personnelle ; il ne numérise, améliore, inspecte, téléverse ou stocke rien et n'utilise ni cookies, analyse, publicité ou réseau. Il ne garantit ni OCR, lisibilité, qualité, valeur juridique, accessibilité, ni conformité archivistique, administrative, fiscale, médicale ou éducative. Une app mobile peut ne pas maîtriser exactement les ppi choisis. Les documents permanents, réglementés ou probatoires exigent les prescriptions et contrôles qualité actuels de l'autorité responsable.","ocrBoundary":"Non. L'OCR dépend de la source, police, langue, mise en page, mise au point, lumière et traitement, et doit être contrôlé.","freeTool":{"label":"Planificateur privé de numérisation de documents","url":"https://alice51849.github.io/ios-app-guide/fr-FR/tools/private-document-scan-planner.html","boundary":"Les trois profils de détail sont des points de départ, pas des garanties de qualité ni des certifications officielles."},"officialSources":[{"label":"36 CFR 1236.50 : exigences de numérisation des archives papier permanentes","url":"https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1236/subpart-E/section-1236.50"},{"label":"FADGI : recommandations techniques de numérisation","url":"https://www.digitizationguidelines.gov/guidelines/"},{"label":"NARA : la transcription OCR n'est pas toujours exacte","url":"https://www.archives.gov/research/catalog/lcdrg/contribution/ocr-transcription"},{"label":"Assistance Apple : numériser dans Notes ou Fichiers et suivre les étapes documentées de modification et d'enregistrement","url":"https://support.apple.com/en-us/108963"}],"webmcpSource":"https://developer.chrome.com/docs/ai/webmcp/imperative-api","optionalApp":{"label":"Voir ScanTo Pro dans l'App Store","boundary":"ScanTo Pro est un outil iPhone facultatif dont la fiche actuelle décrit la numérisation de documents, la création de PDF, la recherche OCR et la protection des documents par Face ID avec déverrouillage à vie en achat unique. Consultez la fiche en vigueur pour la disponibilité et les fonctions exactes. Ce planificateur fonctionne sans l'app.","app_store_url":"https://apps.apple.com/app/id6779977651?ct=iag_scan_plan_fr-fr"}}</script>
+<script>
+(() => {
+  const config = JSON.parse(document.getElementById("scan-config").textContent);
+  const form = document.getElementById("scan-planner");
+  const fields = {
+    paper: document.getElementById("paper"),
+    purpose: document.getElementById("purpose"),
+    color_mode: document.getElementById("color-mode"),
+    orientation: document.getElementById("orientation"),
+    page_count: document.getElementById("page-count")
+  };
+  const output = {
+    dpi: document.getElementById("result-dpi"),
+    pixels: document.getElementById("result-pixels"),
+    megapixels: document.getElementById("result-megapixels"),
+    perPage: document.getElementById("result-per-page"),
+    total: document.getElementById("result-total"),
+    note: document.getElementById("profile-note")
+  };
+  const MM_PER_INCH = 25.4;
+  const MIB = 1024 * 1024;
+
+  function round(value, digits = 2) {
+    const factor = 10 ** digits;
+    return Math.round(value * factor) / factor;
+  }
+
+  function enumValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const values = config.inputSchema.properties[name].enum;
+    if (typeof value !== "string" || !values.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    return value;
+  }
+
+  function pageCount(input) {
+    if (!Object.prototype.hasOwnProperty.call(input, "page_count")) {
+      throw new TypeError("page_count is required.");
+    }
+    const value = input.page_count;
+    if (!Number.isInteger(value)) {
+      throw new TypeError("page_count must be an integer.");
+    }
+    const schema = config.inputSchema.properties.page_count;
+    if (value < schema.minimum || value > schema.maximum) {
+      throw new RangeError("page_count is outside the supported range.");
+    }
+    return value;
+  }
+
+  function calculate(input) {
+    const paperId = enumValue(input, "paper");
+    const purposeId = enumValue(input, "purpose");
+    const colorId = enumValue(input, "color_mode");
+    const orientation = enumValue(input, "orientation");
+    const pages = pageCount(input);
+    const paper = config.papers[paperId];
+    const purpose = config.purposes[purposeId];
+    const color = config.colorModes[colorId];
+    const widthMm = orientation === "portrait" ? paper.width_mm : paper.height_mm;
+    const heightMm = orientation === "portrait" ? paper.height_mm : paper.width_mm;
+    const widthPx = Math.round(widthMm / MM_PER_INCH * purpose.dpi);
+    const heightPx = Math.round(heightMm / MM_PER_INCH * purpose.dpi);
+    const pixels = widthPx * heightPx;
+    const bytesPerPage = pixels * color.bits_per_pixel / 8;
+    return {
+      paper_id: paperId,
+      paper_label: config.labels.paper[paperId],
+      purpose_id: purposeId,
+      purpose_label: config.labels.purpose[purposeId],
+      purpose_note: config.purposeNotes[purposeId],
+      color_mode: colorId,
+      color_label: config.labels.color[colorId],
+      color_note: config.colorNotes[colorId],
+      orientation,
+      orientation_label: config.labels.orientation[orientation],
+      page_count: pages,
+      dpi: purpose.dpi,
+      width_mm: widthMm,
+      height_mm: heightMm,
+      width_px: widthPx,
+      height_px: heightPx,
+      megapixels_per_page: round(pixels / 1000000),
+      uncompressed_bytes_per_page: bytesPerPage,
+      uncompressed_mib_per_page: round(bytesPerPage / MIB),
+      uncompressed_bytes_total: bytesPerPage * pages,
+      uncompressed_mib_total: round(bytesPerPage * pages / MIB)
+    };
+  }
+
+  function validateInput(input) {
+    if (input === null || typeof input !== "object" || Array.isArray(input)) {
+      throw new TypeError("WebMCP input must be an object.");
+    }
+    const allowed = new Set(Object.keys(config.inputSchema.properties));
+    for (const name of Object.keys(input)) {
+      if (!allowed.has(name)) {
+        throw new RangeError(`${name} is not a supported input.`);
+      }
+    }
+    return calculate(input);
+  }
+
+  function render() {
+    const plan = calculate({
+      paper: fields.paper.value,
+      purpose: fields.purpose.value,
+      color_mode: fields.color_mode.value,
+      orientation: fields.orientation.value,
+      page_count: Number(fields.page_count.value)
+    });
+    output.dpi.textContent = String(plan.dpi);
+    output.pixels.textContent = `${plan.width_px}×${plan.height_px}`;
+    output.megapixels.textContent = String(plan.megapixels_per_page);
+    output.perPage.textContent = String(plan.uncompressed_mib_per_page);
+    output.total.textContent = String(plan.uncompressed_mib_total);
+    output.note.textContent = `${plan.purpose_note} ${plan.color_note}`;
+  }
+
+  async function registerWebMcp() {
+    if (!document.modelContext?.registerTool) return;
+    await document.modelContext.registerTool({
+      name: "plan_private_document_scan",
+      description: config.toolDescription,
+      inputSchema: config.inputSchema,
+      annotations: {readOnlyHint: true, untrustedContentHint: false},
+      execute: async (input) => {
+        const plan = validateInput(input);
+        const result = {
+          result_type: "private_document_scan_plan",
+          document_not_received_or_processed: true,
+          not_ocr_or_compliance_certification: true,
+          selected_plan: plan,
+          capture_checklist: config.captureChecklist,
+          compressed_output_boundary: config.compressedBoundary,
+          compliance_boundary: config.complianceBoundary,
+          ocr_boundary: config.ocrBoundary,
+          optional_free_planner: config.freeTool,
+          official_sources: config.officialSources,
+          webmcp_preview_source: config.webmcpSource
+        };
+        if (config.optionalApp) {
+          result.optional_scanto_pro = config.optionalApp;
+        }
+        return JSON.stringify(result);
+      }
+    });
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    render();
+  });
+  for (const field of Object.values(fields)) {
+    field.addEventListener("change", render);
+  }
+  render();
+  registerWebMcp().catch((error) =>
+    console.error("WebMCP tool registration failed.", error));
+})();
+</script>
+</body>
+</html>

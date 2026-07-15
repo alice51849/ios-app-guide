@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate a bilingual, private document scan planning tool."""
+"""Generate a nine-locale, private document scan planning tool."""
 
 from __future__ import annotations
 
@@ -36,6 +36,19 @@ FADGI_GUIDELINES = "https://www.digitizationguidelines.gov/guidelines/"
 NARA_OCR = (
     "https://www.archives.gov/research/catalog/lcdrg/contribution/"
     "ocr-transcription"
+)
+APPLE_SCAN_DOCUMENTS = "https://support.apple.com/en-us/108963"
+
+ALT_LOCALES = (
+    "en",
+    "es-ES",
+    "pt-BR",
+    "de-DE",
+    "fr-FR",
+    "ja",
+    "ko",
+    "zh-Hant",
+    "zh-Hans",
 )
 
 PAPERS = {
@@ -150,21 +163,26 @@ COPY = {
         ),
         "scope_title": "What this planner cannot certify",
         "scope_text": (
-            "It does not scan, enhance, OCR, inspect or store a document. It cannot certify "
-            "legal sufficiency, preservation quality, accessibility, OCR accuracy or compliance. "
-            "Permanent, regulated or evidentiary records require the responsible authority's "
-            "current specification and quality-control process."
+            "It accepts no document, image, file, camera input, OCR text, free text, name or "
+            "personal data. It does not scan, enhance, OCR, inspect, upload or store anything, "
+            "and uses no cookies, analytics, ads or network requests. It cannot guarantee OCR, "
+            "readability, quality, legal effect, accessibility, archival, government, tax, "
+            "medical or education compliance. A chosen ppi may not be precisely controllable "
+            "in every phone scanning app. Permanent, regulated or evidentiary records require "
+            "the responsible authority's current specification and quality-control process."
         ),
         "sources_title": "Official context, not endorsement",
         "sources_intro": (
-            "The U.S. federal sources below explain why 300 ppi, grayscale versus colour and "
-            "quality review need context. Their permanent-record rules are stricter than this "
-            "personal planning tool and do not certify its output."
+            "NARA and FADGI describe U.S. permanent-record and digitization contexts, not local "
+            "law or certification of this tool. Apple Support only documents scanning in Notes "
+            "and Files, adjusting corners, multiple pages, save locations and Markup signatures; "
+            "it does not support claims about OCR, ppi, file size, ScanTo or endorsement."
         ),
         "source_labels": (
             "36 CFR 1236.50: permanent paper records digitization requirements",
             "FADGI: technical digitization guidelines",
             "NARA: OCR transcription is not always accurate",
+            "Apple Support: scan documents in Notes or Files and use documented editing and saving steps",
         ),
         "webmcp_source": (
             "Chrome WebMCP imperative API preview (subject to change)"
@@ -203,6 +221,14 @@ COPY = {
             ),
         ),
         "footer": "Private planning math only · no upload · verify the first page",
+        "feature_list": (
+            "No document, file, camera, OCR text or personal-data input",
+            "Bounded 300, 400 and 600 ppi planning profiles",
+            "Exact pixel dimensions and theoretical uncompressed MiB",
+            "No upload, storage, cookies, analytics, ads or network requests",
+            "No accuracy, legal, accessibility or compliance guarantee",
+        ),
+        "inline_link": "Plan pixels and uncompressed size first with the free private tool",
         "index_title": "Private Document Scan Planner",
         "index_description": (
             "Calculate ppi, exact pixels and uncompressed raster bounds without uploading "
@@ -215,7 +241,7 @@ COPY = {
             "不用上傳或讀取文件，即時計算掃描解析度、精確像素與透明標示的未壓縮影像容量界線。"
         ),
         "tools": "免費工具",
-        "switch": "English",
+        "switch": "英文",
         "eyebrow": "免費 · 本機運算 · 不上傳文件",
         "heading": "私密文件掃描規劃器",
         "lead": (
@@ -287,19 +313,23 @@ COPY = {
         ),
         "scope_title": "這個規劃器不能證明什麼",
         "scope_text": (
-            "它不掃描、增強、OCR、檢查或儲存文件，也無法證明法律效力、典藏品質、"
-            "無障礙、OCR 準確度或法規符合性。永久、受管制或證據文件必須遵循主管機關"
+            "本頁不接收文件、影像、檔案、相機內容、OCR 文字、自由文字、姓名或任何個資，"
+            "也不掃描、增強、OCR、檢查、上傳或儲存內容，且不用 cookie、分析、廣告或網路請求。"
+            "它不保證 OCR、可讀性、品質、法律效力、無障礙、典藏、政府、稅務、醫療或教育合規；"
+            "任意手機掃描 App 也未必能精準控制指定 ppi。永久、受管制或證據文件仍須遵循主管機關"
             "現行規格及品質控管流程。"
         ),
         "sources_title": "官方背景資料，不代表背書",
         "sources_intro": (
-            "以下美國聯邦來源說明 300 ppi、灰階或彩色及品質檢查都需要情境判斷；"
-            "永久檔案規範遠比這個個人規劃工具嚴格，也不會認證本工具結果。"
+            "NARA 與 FADGI 是美國永久檔案及數位化脈絡，不是各地法律，也不認證本工具。"
+            "Apple 支援頁只說明在備忘錄或「檔案」掃描、調整邊角、多頁、儲存位置及以「標示」"
+            "加入簽名等流程；不能據此推論 OCR、ppi、檔案大小、ScanTo 功能或 Apple 背書。"
         ),
         "source_labels": (
             "36 CFR 1236.50：永久紙本檔案數位化要求",
             "FADGI：數位化技術指引",
             "NARA：OCR 轉錄不一定準確",
+            "Apple 支援：在備忘錄或「檔案」掃描文件，以及明載的編輯與儲存步驟",
         ),
         "webmcp_source": "Chrome WebMCP 命令式 API 預覽（規格可能變動）",
         "webmcp_description": (
@@ -326,7 +356,7 @@ COPY = {
             ),
             (
                 "MiB 數值就是最後 PDF 大小嗎？",
-                "不是。那是未壓縮像素量；壓縮、頁面結構、OCR 與 metadata 都會改變實際容量。",
+                "不是。那是未壓縮像素量；壓縮、頁面結構、OCR 與中繼資料都會改變實際容量。",
             ),
             (
                 "這樣就符合 NARA 或 FADGI 嗎？",
@@ -334,8 +364,667 @@ COPY = {
             ),
         ),
         "footer": "只做私密規劃運算 · 不上傳 · 先核對第一頁",
+        "feature_list": (
+            "不輸入文件、檔案、相機內容、OCR 文字或個資",
+            "有界的 300、400 與 600 ppi 規劃選項",
+            "精確像素尺寸與理論未壓縮 MiB",
+            "不上傳、不儲存，不用 cookie、分析、廣告或網路請求",
+            "不保證準確度、法律效力、無障礙或法規符合性",
+        ),
+        "inline_link": "先用免費私密工具規劃像素與未壓縮容量",
         "index_title": "私密文件掃描規劃器",
         "index_description": "不讀取或上傳文件，即時計算 ppi、精確像素與未壓縮影像容量界線。",
+    },
+    "es-ES": {
+        "title": "Planificador privado de escaneo | ppi, píxeles y límites",
+        "description": "Planifica la resolución, las dimensiones exactas en píxeles y el tamaño raster sin comprimir sin subir ni leer documentos.",
+        "tools": "Herramientas gratuitas",
+        "switch": "Inglés",
+        "eyebrow": "Gratis · cálculo local · sin subir documentos",
+        "heading": "Planificador privado de escaneo de documentos",
+        "lead": "Elige papel, nivel de detalle y color; el navegador solo calcula píxeles y MiB teóricos sin recibir ningún documento.",
+        "badges": (
+            "Sin entrada de archivos ni documentos",
+            "Sin OCR ni solicitudes a la nube",
+            "Sin estimar tamaños comprimidos",
+            "Sin afirmar cumplimiento archivístico",
+        ),
+        "planner": "Planifica la captura",
+        "planner_intro": "Los tres perfiles de detalle son puntos de partida, no garantías de calidad ni certificaciones oficiales.",
+        "paper_label": "Tamaño del papel",
+        "paper_options": {
+            "a4": "A4 · 210×297 mm",
+            "a5": "A5 · 148×210 mm",
+            "us-letter": "Carta EE. UU. · 8,5×11 in",
+            "us-legal": "Legal EE. UU. · 8,5×14 in",
+        },
+        "purpose_label": "Perfil de detalle",
+        "purpose_options": {
+            "everyday-text": "Texto habitual · 300 ppi",
+            "small-print": "Letra pequeña o marcas mixtas · 400 ppi",
+            "fine-detail": "Líneas finas o sellos · 600 ppi",
+        },
+        "purpose_notes": {
+            "everyday-text": "Una base de 300 ppi para texto moderno claro; no certifica la precisión del OCR ni el cumplimiento documental.",
+            "small-print": "Una opción de 400 ppi para texto pequeño o marcas mixtas; revisa la primera página antes de procesar un lote.",
+            "fine-detail": "Una opción de 600 ppi cuando importan líneas o marcas diminutas; aumenta mucho la memoria y no garantiza el reconocimiento.",
+        },
+        "color_label": "Modo de color",
+        "color_options": {"grayscale": "Escala de grises de 8 bits", "rgb": "Color RGB de 24 bits"},
+        "color_notes": {
+            "grayscale": "Úsala solo si el color no aporta significado; comprueba antes sellos, resaltados, escritura y anotaciones.",
+            "rgb": "Usa RGB cuando el color ayude a interpretar sellos, resaltados, escritura, anotaciones o el aspecto original.",
+        },
+        "orientation_label": "Orientación",
+        "orientation_options": {"portrait": "Vertical", "landscape": "Horizontal"},
+        "pages_label": "Número de páginas",
+        "calculate": "Actualizar plan",
+        "result_title": "Plan de escaneo calculado",
+        "dpi": "ppi seleccionados",
+        "pixels": "Píxeles por página",
+        "megapixels": "Megapíxeles por página",
+        "per_page": "MiB sin comprimir por página",
+        "total": "MiB sin comprimir totales",
+        "result_boundary": "Estos MiB son la carga matemática de píxeles antes de cabeceras, compresión, texto OCR o estructura PDF. Los tamaños reales de PDF, JPEG y TIFF varían; no se estima el tamaño comprimido.",
+        "capture_title": "Cinco comprobaciones antes de un lote",
+        "capture_checks": (
+            "Mantén visibles la página completa y todos sus bordes; alisa los pliegues sin dañar el original.",
+            "Usa luz uniforme y busca reflejos, sombras, dedos, desenfoque y esquinas recortadas.",
+            "Elige RGB si el color contiene información; si no, puede servir la escala de grises.",
+            "Amplía la primera página y revisa el texto o la marca importante de menor tamaño.",
+            "Compara cualquier resultado OCR con la imagen; el OCR no siempre es exacto.",
+        ),
+        "scope_title": "Lo que este planificador no puede certificar",
+        "scope_text": "No recibe documentos, imágenes, archivos, cámara, texto OCR, texto libre, nombres ni datos personales; no escanea, mejora, inspecciona, sube ni almacena, y no usa cookies, analítica, anuncios ni red. No garantiza OCR, legibilidad, calidad, validez legal, accesibilidad ni cumplimiento archivístico, público, fiscal, médico o educativo. Cualquier app móvil puede no controlar con precisión los ppi elegidos. Para documentos permanentes, regulados o probatorios rigen las especificaciones y controles vigentes de la autoridad responsable.",
+        "sources_title": "Contexto oficial, no respaldo",
+        "sources_intro": "NARA y FADGI tratan registros permanentes y digitalización de EE. UU.; no son ley local ni certifican esta herramienta. Apple solo documenta escanear en Notas y Archivos, ajustar esquinas, varias páginas, ubicaciones de guardado y firmas con Marcación; no acredita afirmaciones sobre OCR, ppi, tamaño, ScanTo ni respaldo.",
+        "source_labels": (
+            "36 CFR 1236.50: requisitos de digitalización de registros permanentes en papel",
+            "FADGI: directrices técnicas de digitalización",
+            "NARA: la transcripción OCR no siempre es exacta",
+            "Soporte de Apple: escanear en Notas o Archivos y usar los pasos documentados de edición y guardado",
+        ),
+        "webmcp_source": "Vista previa de la API imperativa WebMCP de Chrome (sujeta a cambios)",
+        "webmcp_description": "Calcula un plan privado con valores acotados de papel, detalle, color, orientación y páginas. Devuelve píxeles exactos y límites raster sin comprimir sin recibir, leer, subir, guardar ni procesar por OCR documentos, y sin prometer precisión ni cumplimiento.",
+        "app_title": "¿Necesitas un flujo de papel a PDF en iPhone?",
+        "app_text": "ScanTo Pro es una herramienta opcional para iPhone cuya ficha actual describe escaneo de documentos, creación de PDF, búsqueda OCR y protección con Face ID mediante un desbloqueo vitalicio de pago único. Consulta la ficha vigente para conocer disponibilidad y funciones exactas. Este planificador funciona sin la app.",
+        "app_cta": "Ver ScanTo Pro en App Store",
+        "faq_title": "Preguntas antes de escanear",
+        "faq": (
+            ("¿Esta página sube mi documento?", "No. No tiene selector de archivos y no acepta texto ni imágenes de documentos; solo calcula ajustes acotados."),
+            ("¿300 ppi garantizan un OCR exacto?", "No. El OCR depende del original, tipografía, idioma, diseño, enfoque, luz y procesamiento, y debe comprobarse."),
+            ("¿Los MiB son el tamaño final del PDF?", "No. Son la carga de píxeles sin comprimir; la compresión, estructura, OCR y metadatos cambian el tamaño final."),
+            ("¿Cumple esto NARA o FADGI?", "No. Esos flujos incluyen captura, equipos, patrones, gestión de calidad y controles documentales más amplios."),
+        ),
+        "footer": "Solo cálculo privado · sin subidas · comprueba la primera página",
+        "feature_list": (
+            "Sin documentos, archivos, cámara, texto OCR ni datos personales",
+            "Perfiles acotados de 300, 400 y 600 ppi",
+            "Píxeles exactos y MiB teóricos sin comprimir",
+            "Sin subidas, almacenamiento, cookies, analítica, anuncios ni red",
+            "Sin garantía de precisión, validez, accesibilidad ni cumplimiento",
+        ),
+        "inline_link": "Planifica antes los píxeles y el tamaño sin comprimir con la herramienta privada gratuita",
+        "index_title": "Planificador privado de escaneo",
+        "index_description": "Calcula ppi, píxeles exactos y límites raster sin comprimir sin leer ni subir documentos.",
+    },
+    "pt-BR": {
+        "title": "Planejador privado de digitalização | ppi, pixels e limites",
+        "description": "Planeje resolução, dimensões exatas em pixels e tamanho raster não comprimido sem enviar nem ler documentos.",
+        "tools": "Ferramentas gratuitas",
+        "switch": "Inglês",
+        "eyebrow": "Grátis · cálculo local · sem envio de documentos",
+        "heading": "Planejador privado de digitalização de documentos",
+        "lead": "Escolha papel, nível de detalhe e cor; o navegador só calcula pixels e MiB teóricos, sem receber documento algum.",
+        "badges": (
+            "Sem entrada de arquivo ou documento",
+            "Sem OCR ou solicitação à nuvem",
+            "Sem estimativa de tamanho comprimido",
+            "Sem alegação de conformidade arquivística",
+        ),
+        "planner": "Planeje a captura",
+        "planner_intro": "Os três perfis de detalhe são pontos de partida, não garantias de qualidade nem certificações oficiais.",
+        "paper_label": "Tamanho do papel",
+        "paper_options": {
+            "a4": "A4 · 210×297 mm",
+            "a5": "A5 · 148×210 mm",
+            "us-letter": "Carta EUA · 8,5×11 in",
+            "us-legal": "Ofício EUA · 8,5×14 in",
+        },
+        "purpose_label": "Perfil de detalhe",
+        "purpose_options": {
+            "everyday-text": "Texto comum · 300 ppi",
+            "small-print": "Letras pequenas ou marcas variadas · 400 ppi",
+            "fine-detail": "Linhas finas ou carimbos · 600 ppi",
+        },
+        "purpose_notes": {
+            "everyday-text": "Base de 300 ppi para texto moderno nítido; não certifica precisão de OCR nem conformidade documental.",
+            "small-print": "Opção de 400 ppi para texto pequeno ou marcas variadas; confira a primeira página antes de um lote.",
+            "fine-detail": "Opção de 600 ppi para linhas ou marcas minúsculas; aumenta muito a memória e ainda não garante reconhecimento.",
+        },
+        "color_label": "Modo de cor",
+        "color_options": {"grayscale": "Tons de cinza de 8 bits", "rgb": "Cor RGB de 24 bits"},
+        "color_notes": {
+            "grayscale": "Use só quando a cor não tiver significado; confira antes carimbos, destaques, escrita e anotações.",
+            "rgb": "Use RGB quando a cor ajudar a interpretar carimbos, destaques, escrita, anotações ou a aparência original.",
+        },
+        "orientation_label": "Orientação",
+        "orientation_options": {"portrait": "Retrato", "landscape": "Paisagem"},
+        "pages_label": "Número de páginas",
+        "calculate": "Atualizar plano",
+        "result_title": "Plano de digitalização calculado",
+        "dpi": "ppi selecionados",
+        "pixels": "Pixels por página",
+        "megapixels": "Megapixels por página",
+        "per_page": "MiB não comprimidos por página",
+        "total": "MiB não comprimidos no total",
+        "result_boundary": "Esses MiB são a carga matemática de pixels antes de cabeçalhos, compressão, texto OCR ou estrutura PDF. Tamanhos reais de PDF, JPEG e TIFF variam; a ferramenta não estima tamanho comprimido.",
+        "capture_title": "Cinco verificações antes de um lote",
+        "capture_checks": (
+            "Mantenha a página inteira e todas as bordas visíveis; alise dobras sem danificar o original.",
+            "Use luz uniforme e verifique reflexos, sombras, dedos, desfoque e cantos cortados.",
+            "Escolha RGB quando a cor carregar informação; caso contrário, tons de cinza podem servir.",
+            "Amplie a primeira página e confira o menor texto ou marca importante.",
+            "Compare todo resultado de OCR com a imagem; OCR nem sempre é preciso.",
+        ),
+        "scope_title": "O que este planejador não pode certificar",
+        "scope_text": "Não recebe documento, imagem, arquivo, câmera, texto OCR, texto livre, nome nem dado pessoal; não digitaliza, melhora, inspeciona, envia ou armazena, e não usa cookies, análise, anúncios nem rede. Não garante OCR, legibilidade, qualidade, validade jurídica, acessibilidade ou conformidade arquivística, governamental, fiscal, médica ou educacional. Um app móvel pode não controlar exatamente os ppi escolhidos. Registros permanentes, regulados ou probatórios exigem a especificação e o controle de qualidade atuais da autoridade responsável.",
+        "sources_title": "Contexto oficial, não endosso",
+        "sources_intro": "NARA e FADGI tratam de registros permanentes e digitalização nos EUA; não são lei local nem certificam esta ferramenta. A Apple só documenta digitalização em Notas e Arquivos, ajuste de cantos, várias páginas, locais de salvamento e assinaturas com Marcação; isso não sustenta alegações sobre OCR, ppi, tamanho, ScanTo ou endosso.",
+        "source_labels": (
+            "36 CFR 1236.50: requisitos de digitalização de registros permanentes em papel",
+            "FADGI: diretrizes técnicas de digitalização",
+            "NARA: a transcrição por OCR nem sempre é precisa",
+            "Suporte da Apple: digitalizar em Notas ou Arquivos e usar as etapas documentadas de edição e salvamento",
+        ),
+        "webmcp_source": "Prévia da API imperativa WebMCP do Chrome (sujeita a alterações)",
+        "webmcp_description": "Calcula um plano privado com entradas limitadas de papel, detalhe, cor, orientação e páginas. Retorna pixels exatos e limites raster não comprimidos sem receber, ler, enviar, armazenar ou processar documentos por OCR, e sem prometer precisão ou conformidade.",
+        "app_title": "Precisa de um fluxo de papel para PDF no iPhone?",
+        "app_text": "ScanTo Pro é uma ferramenta opcional para iPhone cuja página atual descreve digitalização de documentos, criação de PDF, busca por OCR e proteção com Face ID, com desbloqueio vitalício em pagamento único. Consulte a página vigente para disponibilidade e recursos exatos. Este planejador funciona sem o app.",
+        "app_cta": "Ver ScanTo Pro na App Store",
+        "faq_title": "Perguntas antes de digitalizar",
+        "faq": (
+            ("Esta página envia meu documento?", "Não. Não há seletor de arquivo e ela não aceita texto nem imagem de documento; só calcula configurações limitadas."),
+            ("300 ppi garantem OCR preciso?", "Não. OCR depende do original, fonte, idioma, layout, foco, luz e processamento, e precisa ser conferido."),
+            ("Os MiB são o tamanho final do PDF?", "Não. São a carga de pixels não comprimida; compressão, estrutura, OCR e metadados mudam o tamanho final."),
+            ("Isso atende à NARA ou à FADGI?", "Não. Esses fluxos incluem captura, equipamentos, alvos, gestão de qualidade e controles documentais mais amplos."),
+        ),
+        "footer": "Apenas cálculo privado · sem envio · confira a primeira página",
+        "feature_list": (
+            "Sem documento, arquivo, câmera, texto OCR ou dado pessoal",
+            "Perfis limitados de 300, 400 e 600 ppi",
+            "Pixels exatos e MiB teóricos não comprimidos",
+            "Sem envio, armazenamento, cookies, análise, anúncios ou rede",
+            "Sem garantia de precisão, validade, acessibilidade ou conformidade",
+        ),
+        "inline_link": "Planeje primeiro os pixels e o tamanho não comprimido com a ferramenta privada grátis",
+        "index_title": "Planejador privado de digitalização",
+        "index_description": "Calcule ppi, pixels exatos e limites raster não comprimidos sem ler nem enviar documentos.",
+    },
+    "de-DE": {
+        "title": "Privater Dokumentenscan-Planer | ppi, Pixel und Grenzen",
+        "description": "Scanauflösung, exakte Pixelmaße und unkomprimierte Rastergröße planen, ohne ein Dokument hochzuladen oder auszulesen.",
+        "tools": "Kostenlose Werkzeuge",
+        "switch": "Englisch",
+        "eyebrow": "Kostenlos · lokale Berechnung · kein Dokument-Upload",
+        "heading": "Privater Planer für Dokumentenscans",
+        "lead": "Papier, Detailstufe und Farbmodus wählen; der Browser berechnet nur Pixel und theoretische MiB und erhält kein Dokument.",
+        "badges": (
+            "Keine Datei- oder Dokumenteingabe",
+            "Keine OCR- oder Cloud-Anfrage",
+            "Keine Schätzung komprimierter Größen",
+            "Keine Zusage zur Archivkonformität",
+        ),
+        "planner": "Aufnahme planen",
+        "planner_intro": "Die drei Detailprofile sind Planungsausgangspunkte, keine Qualitätsgarantien oder amtlichen Zertifizierungen.",
+        "paper_label": "Papierformat",
+        "paper_options": {
+            "a4": "A4 · 210×297 mm",
+            "a5": "A5 · 148×210 mm",
+            "us-letter": "US Letter · 8,5×11 in",
+            "us-legal": "US Legal · 8,5×14 in",
+        },
+        "purpose_label": "Detailprofil",
+        "purpose_options": {
+            "everyday-text": "Alltagstext · 300 ppi",
+            "small-print": "Kleingedrucktes oder gemischte Zeichen · 400 ppi",
+            "fine-detail": "Feine Linien oder Stempel · 600 ppi",
+        },
+        "purpose_notes": {
+            "everyday-text": "Ein 300-ppi-Ausgangswert für klaren modernen Text; er bescheinigt weder OCR-Genauigkeit noch Aktenkonformität.",
+            "small-print": "Eine 400-ppi-Option für kleine Schrift oder gemischte Zeichen; vor einem Stapel die erste Seite prüfen.",
+            "fine-detail": "Eine 600-ppi-Option für feine Linien oder winzige Zeichen; sie benötigt deutlich mehr Speicher und garantiert keine Erkennung.",
+        },
+        "color_label": "Farbmodus",
+        "color_options": {"grayscale": "8-Bit-Graustufen", "rgb": "24-Bit-RGB-Farbe"},
+        "color_notes": {
+            "grayscale": "Nur verwenden, wenn Farbe keine Bedeutung trägt; Stempel, Markierungen, Handschrift und Anmerkungen vorher prüfen.",
+            "rgb": "RGB verwenden, wenn Farbe bei Stempeln, Markierungen, Handschrift, Anmerkungen oder Originalansicht hilft.",
+        },
+        "orientation_label": "Ausrichtung",
+        "orientation_options": {"portrait": "Hochformat", "landscape": "Querformat"},
+        "pages_label": "Seitenzahl",
+        "calculate": "Plan aktualisieren",
+        "result_title": "Berechneter Scanplan",
+        "dpi": "Gewählte ppi",
+        "pixels": "Pixel je Seite",
+        "megapixels": "Megapixel je Seite",
+        "per_page": "Unkomprimierte MiB je Seite",
+        "total": "Unkomprimierte MiB insgesamt",
+        "result_boundary": "Diese MiB sind die mathematische Pixellast vor Dateiköpfen, Komprimierung, OCR-Text oder PDF-Struktur. Tatsächliche PDF-, JPEG- und TIFF-Größen variieren; eine komprimierte Dateigröße wird nicht geschätzt.",
+        "capture_title": "Fünf Prüfungen vor einem Stapel",
+        "capture_checks": (
+            "Die ganze Seite und alle Kanten sichtbar halten; Falten ohne Schaden am Original glätten.",
+            "Gleichmäßiges Licht nutzen und auf Glanz, Schatten, Finger, Unschärfe und abgeschnittene Ecken prüfen.",
+            "RGB wählen, wenn Farbe Information trägt; sonst können Graustufen geeignet sein.",
+            "Die erste Seite vergrößern und den kleinsten wichtigen Text oder das kleinste Zeichen prüfen.",
+            "Jedes OCR-Ergebnis mit dem Bild vergleichen; OCR ist nicht immer genau.",
+        ),
+        "scope_title": "Was dieser Planer nicht bescheinigen kann",
+        "scope_text": "Er nimmt keine Dokumente, Bilder, Dateien, Kameraaufnahmen, OCR- oder Freitexte, Namen oder personenbezogenen Daten an; er scannt, verbessert, prüft, lädt und speichert nichts und nutzt keine Cookies, Analysen, Werbung oder Netzwerkanfragen. Er garantiert weder OCR, Lesbarkeit, Qualität, Rechtswirkung und Barrierefreiheit noch Archiv-, Behörden-, Steuer-, Medizin- oder Bildungskonformität. Eine beliebige Scan-App kann gewählte ppi möglicherweise nicht exakt steuern. Für dauerhafte, regulierte oder beweiserhebliche Akten gelten aktuelle Vorgaben und Qualitätskontrollen der zuständigen Stelle.",
+        "sources_title": "Amtlicher Kontext, keine Empfehlung",
+        "sources_intro": "NARA und FADGI behandeln dauerhafte US-Akten und Digitalisierung; sie sind kein örtliches Recht und zertifizieren dieses Werkzeug nicht. Apple dokumentiert nur Scans in Notizen und Dateien, Eckenanpassung, mehrere Seiten, Speicherorte und Markieren-Unterschriften; daraus folgen keine Aussagen zu OCR, ppi, Dateigröße, ScanTo oder Empfehlung.",
+        "source_labels": (
+            "36 CFR 1236.50: Anforderungen zur Digitalisierung dauerhafter Papierakten",
+            "FADGI: technische Digitalisierungsrichtlinien",
+            "NARA: OCR-Transkription ist nicht immer genau",
+            "Apple Support: Dokumente in Notizen oder Dateien scannen und dokumentierte Bearbeitungs- und Speicherschritte nutzen",
+        ),
+        "webmcp_source": "Vorschau der imperativen Chrome-WebMCP-API (Änderungen vorbehalten)",
+        "webmcp_description": "Berechnet aus begrenzten Papier-, Detail-, Farb-, Ausrichtungs- und Seitenangaben einen privaten Scanplan. Gibt exakte Pixel und transparente unkomprimierte Rastergrenzen zurück, ohne Dokumente anzunehmen, zu lesen, hochzuladen, zu speichern oder per OCR zu verarbeiten und ohne Genauigkeit oder Konformität zu versprechen.",
+        "app_title": "Wird ein Papier-zu-PDF-Ablauf auf dem iPhone benötigt?",
+        "app_text": "ScanTo Pro ist ein optionales iPhone-Werkzeug. Laut aktuellem Store-Eintrag bietet es Dokumentenscans, PDF-Erstellung, OCR-Suche und Dokumentenschutz per Face ID mit einmaliger lebenslanger Freischaltung. Verfügbarkeit und genaue Funktionen bitte im aktuellen Eintrag prüfen. Dieser Planer funktioniert ohne App.",
+        "app_cta": "ScanTo Pro im App Store ansehen",
+        "faq_title": "Fragen vor dem Scannen",
+        "faq": (
+            ("Lädt diese Seite mein Dokument hoch?", "Nein. Sie hat keine Dateiauswahl und nimmt weder Dokumenttext noch Bilder an; sie berechnet nur begrenzte Einstellungen."),
+            ("Garantieren 300 ppi genaue OCR?", "Nein. OCR hängt von Vorlage, Schrift, Sprache, Layout, Fokus, Licht und Verarbeitung ab und muss geprüft werden."),
+            ("Sind die MiB meine endgültige PDF-Größe?", "Nein. Sie sind die unkomprimierte Pixellast; Komprimierung, Seitenstruktur, OCR und Metadaten ändern die Endgröße."),
+            ("Erfüllt dies NARA oder FADGI?", "Nein. Diese Abläufe umfassen weitergehende Aufnahme-, Geräte-, Testtafel-, Qualitäts- und Aktenkontrollen."),
+        ),
+        "footer": "Nur private Planungsrechnung · kein Upload · erste Seite prüfen",
+        "feature_list": (
+            "Keine Dokument-, Datei-, Kamera-, OCR-Text- oder Personendateneingabe",
+            "Begrenzte Planungsprofile mit 300, 400 und 600 ppi",
+            "Exakte Pixel und theoretische unkomprimierte MiB",
+            "Keine Uploads, Speicherung, Cookies, Analysen, Werbung oder Netzwerkanfragen",
+            "Keine Garantie für Genauigkeit, Rechtswirkung, Barrierefreiheit oder Konformität",
+        ),
+        "inline_link": "Pixel und unkomprimierte Größe zuerst mit dem kostenlosen privaten Werkzeug planen",
+        "index_title": "Privater Dokumentenscan-Planer",
+        "index_description": "ppi, exakte Pixel und unkomprimierte Rastergrenzen berechnen, ohne Dokumente zu lesen oder hochzuladen.",
+    },
+    "fr-FR": {
+        "title": "Planificateur privé de numérisation | ppi, pixels et limites",
+        "description": "Planifiez la résolution, les dimensions exactes en pixels et la taille raster non compressée sans téléverser ni lire de document.",
+        "tools": "Outils gratuits",
+        "switch": "Anglais",
+        "eyebrow": "Gratuit · calcul local · aucun document téléversé",
+        "heading": "Planificateur privé de numérisation de documents",
+        "lead": "Choisissez le papier, le niveau de détail et la couleur ; le navigateur calcule seulement les pixels et les MiB théoriques sans recevoir de document.",
+        "badges": (
+            "Aucune saisie de fichier ou document",
+            "Aucun OCR ni appel au cloud",
+            "Aucune estimation de taille compressée",
+            "Aucune affirmation de conformité archivistique",
+        ),
+        "planner": "Planifier la capture",
+        "planner_intro": "Les trois profils de détail sont des points de départ, pas des garanties de qualité ni des certifications officielles.",
+        "paper_label": "Format du papier",
+        "paper_options": {
+            "a4": "A4 · 210×297 mm",
+            "a5": "A5 · 148×210 mm",
+            "us-letter": "US Letter · 8,5×11 in",
+            "us-legal": "US Legal · 8,5×14 in",
+        },
+        "purpose_label": "Profil de détail",
+        "purpose_options": {
+            "everyday-text": "Texte courant · 300 ppi",
+            "small-print": "Petits caractères ou marques variées · 400 ppi",
+            "fine-detail": "Traits fins ou tampons · 600 ppi",
+        },
+        "purpose_notes": {
+            "everyday-text": "Une base de 300 ppi pour un texte moderne net ; elle ne certifie ni la précision OCR ni la conformité documentaire.",
+            "small-print": "Une option de 400 ppi pour les petits caractères ou marques variées ; contrôlez la première page avant un lot.",
+            "fine-detail": "Une option de 600 ppi si les traits ou marques minuscules comptent ; elle augmente fortement la mémoire sans garantir la reconnaissance.",
+        },
+        "color_label": "Mode couleur",
+        "color_options": {"grayscale": "Niveaux de gris 8 bits", "rgb": "Couleur RGB 24 bits"},
+        "color_notes": {
+            "grayscale": "À utiliser seulement si la couleur n'a pas de sens ; contrôlez d'abord tampons, surlignages, écriture et annotations.",
+            "rgb": "Utilisez RGB si la couleur aide à interpréter tampons, surlignages, écriture, annotations ou aspect d'origine.",
+        },
+        "orientation_label": "Orientation",
+        "orientation_options": {"portrait": "Portrait", "landscape": "Paysage"},
+        "pages_label": "Nombre de pages",
+        "calculate": "Actualiser le plan",
+        "result_title": "Plan de numérisation calculé",
+        "dpi": "ppi sélectionnés",
+        "pixels": "Pixels par page",
+        "megapixels": "Mégapixels par page",
+        "per_page": "MiB non compressés par page",
+        "total": "MiB non compressés au total",
+        "result_boundary": "Ces MiB représentent la charge mathématique des pixels avant en-têtes, compression, texte OCR ou structure PDF. Les tailles réelles des PDF, JPEG et TIFF varient ; l'outil n'estime pas la taille compressée.",
+        "capture_title": "Cinq contrôles avant un lot",
+        "capture_checks": (
+            "Gardez la page entière et tous ses bords visibles ; aplatissez les plis sans endommager l'original.",
+            "Utilisez une lumière uniforme et vérifiez reflets, ombres, doigts, flou et coins coupés.",
+            "Choisissez RGB lorsque la couleur porte une information ; sinon les niveaux de gris peuvent convenir.",
+            "Agrandissez la première page et contrôlez le plus petit texte ou signe important.",
+            "Comparez tout résultat OCR à l'image ; l'OCR n'est pas toujours exact.",
+        ),
+        "scope_title": "Ce que ce planificateur ne peut pas certifier",
+        "scope_text": "Il ne reçoit ni document, image, fichier, caméra, texte OCR ou libre, nom ou donnée personnelle ; il ne numérise, améliore, inspecte, téléverse ou stocke rien et n'utilise ni cookies, analyse, publicité ou réseau. Il ne garantit ni OCR, lisibilité, qualité, valeur juridique, accessibilité, ni conformité archivistique, administrative, fiscale, médicale ou éducative. Une app mobile peut ne pas maîtriser exactement les ppi choisis. Les documents permanents, réglementés ou probatoires exigent les prescriptions et contrôles qualité actuels de l'autorité responsable.",
+        "sources_title": "Contexte officiel, pas une approbation",
+        "sources_intro": "NARA et FADGI concernent les archives permanentes et la numérisation aux États-Unis ; ce ne sont ni des lois locales ni une certification de cet outil. Apple décrit seulement la numérisation dans Notes et Fichiers, le réglage des coins, plusieurs pages, les emplacements d'enregistrement et les signatures avec Annoter ; aucune conclusion n'en découle sur OCR, ppi, taille, ScanTo ou approbation.",
+        "source_labels": (
+            "36 CFR 1236.50 : exigences de numérisation des archives papier permanentes",
+            "FADGI : recommandations techniques de numérisation",
+            "NARA : la transcription OCR n'est pas toujours exacte",
+            "Assistance Apple : numériser dans Notes ou Fichiers et suivre les étapes documentées de modification et d'enregistrement",
+        ),
+        "webmcp_source": "Aperçu de l'API impérative WebMCP de Chrome (susceptible d'évoluer)",
+        "webmcp_description": "Calcule un plan privé à partir d'entrées bornées de papier, détail, couleur, orientation et pages. Renvoie des pixels exacts et des limites raster non compressées sans recevoir, lire, téléverser, stocker ni traiter un document par OCR, et sans promettre précision ou conformité.",
+        "app_title": "Besoin d'un flux papier vers PDF sur iPhone ?",
+        "app_text": "ScanTo Pro est un outil iPhone facultatif dont la fiche actuelle décrit la numérisation de documents, la création de PDF, la recherche OCR et la protection des documents par Face ID avec déverrouillage à vie en achat unique. Consultez la fiche en vigueur pour la disponibilité et les fonctions exactes. Ce planificateur fonctionne sans l'app.",
+        "app_cta": "Voir ScanTo Pro dans l'App Store",
+        "faq_title": "Questions avant de numériser",
+        "faq": (
+            ("Cette page téléverse-t-elle mon document ?", "Non. Elle ne comporte aucun sélecteur de fichier et n'accepte ni texte ni image de document ; elle calcule seulement des réglages bornés."),
+            ("300 ppi garantissent-ils un OCR exact ?", "Non. L'OCR dépend de la source, police, langue, mise en page, mise au point, lumière et traitement, et doit être contrôlé."),
+            ("Les MiB correspondent-ils à la taille finale du PDF ?", "Non. C'est la charge de pixels non compressée ; compression, structure, OCR et métadonnées changent la taille finale."),
+            ("Cela satisfait-il NARA ou FADGI ?", "Non. Leurs processus comportent des contrôles plus larges de capture, matériel, mires, qualité et archives."),
+        ),
+        "footer": "Calcul privé uniquement · aucun téléversement · contrôlez la première page",
+        "feature_list": (
+            "Aucun document, fichier, caméra, texte OCR ou donnée personnelle",
+            "Profils bornés à 300, 400 et 600 ppi",
+            "Pixels exacts et MiB théoriques non compressés",
+            "Aucun téléversement, stockage, cookie, analyse, publicité ou réseau",
+            "Aucune garantie de précision, valeur juridique, accessibilité ou conformité",
+        ),
+        "inline_link": "Planifiez d'abord les pixels et la taille non compressée avec l'outil privé gratuit",
+        "index_title": "Planificateur privé de numérisation",
+        "index_description": "Calculez ppi, pixels exacts et limites raster non compressées sans lire ni téléverser de document.",
+    },
+    "ja": {
+        "title": "非公開文書スキャンプランナー｜ppi・画素数・容量の境界",
+        "description": "文書をアップロードも読み取りもせず、スキャン解像度、正確な画素寸法、非圧縮ラスター容量を計画できます。",
+        "tools": "無料ツール",
+        "switch": "英語",
+        "eyebrow": "無料 · 端末内計算 · 文書のアップロードなし",
+        "heading": "非公開文書スキャンプランナー",
+        "lead": "用紙、細かさ、カラーモードを選ぶと、ブラウザが画素数と理論上の非圧縮 MiB だけを計算し、文書は受け取りません。",
+        "badges": (
+            "ファイルや文書の入力なし",
+            "OCR やクラウド通信なし",
+            "圧縮後サイズの推測なし",
+            "公文書保存基準への適合表明なし",
+        ),
+        "planner": "取り込みを計画",
+        "planner_intro": "3 つの細かさは計画の出発点であり、品質保証や公的認証ではありません。",
+        "paper_label": "用紙サイズ",
+        "paper_options": {
+            "a4": "A4 · 210×297 mm",
+            "a5": "A5 · 148×210 mm",
+            "us-letter": "米国レター · 8.5×11 in",
+            "us-legal": "米国リーガル · 8.5×14 in",
+        },
+        "purpose_label": "細かさ",
+        "purpose_options": {
+            "everyday-text": "一般的な文書 · 300 ppi",
+            "small-print": "小さい文字や複合した印 · 400 ppi",
+            "fine-detail": "細線や印章 · 600 ppi",
+        },
+        "purpose_notes": {
+            "everyday-text": "鮮明な現代文書を想定した 300 ppi の基準です。OCR 精度や記録管理基準への適合を証明しません。",
+            "small-print": "小さい文字や複合した印向けの 400 ppi です。まとめて処理する前に最初の 1 ページを確認してください。",
+            "fine-detail": "細線や極小の印を重視する場合の 600 ppi です。メモリ量が大幅に増え、認識結果も保証しません。",
+        },
+        "color_label": "カラーモード",
+        "color_options": {"grayscale": "8-bit グレースケール", "rgb": "24-bit RGB カラー"},
+        "color_notes": {
+            "grayscale": "色に意味がない場合だけ使用し、印章、蛍光マーカー、手書き、注記を先に確認してください。",
+            "rgb": "印章、蛍光マーカー、手書き、注記、原本の外観を読み取るうえで色が重要なら RGB を使います。",
+        },
+        "orientation_label": "向き",
+        "orientation_options": {"portrait": "縦", "landscape": "横"},
+        "pages_label": "ページ数",
+        "calculate": "計画を更新",
+        "result_title": "計算したスキャン計画",
+        "dpi": "選択した ppi",
+        "pixels": "1 ページの画素数",
+        "megapixels": "1 ページのメガピクセル",
+        "per_page": "1 ページの非圧縮 MiB",
+        "total": "全ページの非圧縮 MiB",
+        "result_boundary": "この MiB は、ファイルヘッダー、圧縮、OCR テキスト、PDF 構造を含む前の数学的な画素データ量です。実際の PDF、JPEG、TIFF の容量は異なるため、圧縮後のファイルサイズは推定しません。",
+        "capture_title": "まとめて取り込む前の 5 項目",
+        "capture_checks": (
+            "ページ全体とすべての端を画面内に収め、原本を傷めない範囲で折れを伸ばします。",
+            "均一な照明を使い、反射、影、指、ぼけ、切れた角がないか確認します。",
+            "色が情報を持つ場合は RGB を選び、それ以外はグレースケールを検討します。",
+            "最初のページを拡大し、重要な文字や印のうち最小のものを確認します。",
+            "OCR 結果は画像と照合してください。OCR は常に正確とは限りません。",
+        ),
+        "scope_title": "このプランナーが証明できないこと",
+        "scope_text": "文書、画像、ファイル、カメラ、OCR テキスト、自由記述、氏名、個人情報を受け取らず、スキャン、補正、OCR、検査、アップロード、保存を行いません。cookie、解析、広告、ネットワーク通信も使いません。OCR、可読性、品質、法的効力、アクセシビリティ、保存、公的手続、税務、医療、教育上の適合を保証せず、任意のスマートフォン用スキャン App が指定 ppi を正確に制御できるとも限りません。永久保存、規制対象、証拠用の記録には、所管機関の現行仕様と品質管理が必要です。",
+        "sources_title": "公的資料による背景説明であり、推奨ではありません",
+        "sources_intro": "NARA と FADGI は米国の永久記録とデジタル化の文脈であり、各地の法律でも本ツールの認証でもありません。Apple の資料が示すのは、メモまたはファイルでの文書スキャン、四隅の調整、複数ページ、保存先、マークアップ署名だけです。OCR、ppi、容量、ScanTo の機能、Apple の推奨は導けません。",
+        "source_labels": (
+            "36 CFR 1236.50：永久保存紙記録のデジタル化要件",
+            "FADGI：デジタル化の技術指針",
+            "NARA：OCR 文字起こしは常に正確とは限らない",
+            "Apple サポート：メモまたはファイルで文書をスキャンし、明記された編集・保存手順を使う方法",
+        ),
+        "webmcp_source": "Chrome WebMCP 命令型 API プレビュー（変更される場合があります）",
+        "webmcp_description": "範囲を限定した用紙、細かさ、色、向き、ページ数から非公開のスキャン計画を計算します。文書を受領、読取、アップロード、保存、OCR 処理せず、正確性や適合性を表明せずに、正確な画素寸法と非圧縮ラスター容量の境界を返します。",
+        "app_title": "iPhone で紙を PDF にする手順が必要ですか？",
+        "app_text": "ScanTo Pro は任意で使える iPhone ツールです。現在のストア掲載情報には、文書スキャン、PDF 作成、OCR 検索、Face ID による文書保護、買い切りの生涯ロック解除が記載されています。提供状況と正確な機能は現行の掲載情報を確認してください。この無料プランナーは App なしで使えます。",
+        "app_cta": "App Store で ScanTo Pro を見る",
+        "faq_title": "スキャン前の質問",
+        "faq": (
+            ("このページは文書をアップロードしますか？", "いいえ。ファイル選択欄はなく、文書の文字や画像を受け取りません。限定された設定だけを計算します。"),
+            ("300 ppi なら OCR は正確ですか？", "いいえ。OCR は原本、書体、言語、配置、ピント、照明、処理に左右され、確認が必要です。"),
+            ("MiB は最終 PDF のサイズですか？", "いいえ。非圧縮の画素データ量です。圧縮、ページ構造、OCR、メタデータによって最終容量は変わります。"),
+            ("NARA や FADGI の要件を満たしますか？", "いいえ。これらの工程には、取り込み、機器、テストターゲット、品質管理、記録管理が含まれます。"),
+        ),
+        "footer": "非公開の計画計算のみ · アップロードなし · 最初のページを確認",
+        "feature_list": (
+            "文書、ファイル、カメラ、OCR テキスト、個人情報の入力なし",
+            "300、400、600 ppi の限定された計画プロファイル",
+            "正確な画素寸法と理論上の非圧縮 MiB",
+            "アップロード、保存、cookie、解析、広告、ネットワーク通信なし",
+            "正確性、法的効力、アクセシビリティ、適合性の保証なし",
+        ),
+        "inline_link": "無料の非公開ツールで画素数と非圧縮容量を先に計画",
+        "index_title": "非公開文書スキャンプランナー",
+        "index_description": "文書を読み取りもアップロードもせず、ppi、正確な画素数、非圧縮ラスター容量を計算します。",
+    },
+    "ko": {
+        "title": "비공개 문서 스캔 계획 도구 | ppi, 픽셀, 용량 범위",
+        "description": "문서를 업로드하거나 읽지 않고 스캔 해상도, 정확한 픽셀 크기와 비압축 래스터 용량을 계획하세요.",
+        "tools": "무료 도구",
+        "switch": "영어",
+        "eyebrow": "무료 · 로컬 계산 · 문서 업로드 없음",
+        "heading": "비공개 문서 스캔 계획 도구",
+        "lead": "용지, 세부 수준과 색상 모드를 선택하면 브라우저가 픽셀과 이론적 비압축 MiB만 계산하며 문서를 받지 않습니다.",
+        "badges": (
+            "파일이나 문서 입력 없음",
+            "OCR 또는 클라우드 요청 없음",
+            "압축 파일 크기 추정 없음",
+            "기록 보존 규정 준수 주장 없음",
+        ),
+        "planner": "캡처 계획하기",
+        "planner_intro": "세 가지 세부 프로필은 계획의 출발점일 뿐 품질 보장이나 공식 인증이 아닙니다.",
+        "paper_label": "용지 크기",
+        "paper_options": {
+            "a4": "A4 · 210×297 mm",
+            "a5": "A5 · 148×210 mm",
+            "us-letter": "미국 레터 · 8.5×11 in",
+            "us-legal": "미국 리걸 · 8.5×14 in",
+        },
+        "purpose_label": "세부 프로필",
+        "purpose_options": {
+            "everyday-text": "일반 텍스트 · 300 ppi",
+            "small-print": "작은 글자나 혼합 표시 · 400 ppi",
+            "fine-detail": "가는 선이나 도장 · 600 ppi",
+        },
+        "purpose_notes": {
+            "everyday-text": "선명한 현대 문서용 300 ppi 계획 기준이며 OCR 정확도나 기록 규정 준수를 인증하지 않습니다.",
+            "small-print": "작은 글자나 혼합 표시용 400 ppi 옵션입니다. 여러 장을 처리하기 전에 첫 페이지를 확인하세요.",
+            "fine-detail": "가는 선이나 아주 작은 표시가 중요한 경우의 600 ppi 옵션입니다. 메모리 사용량이 크게 늘며 인식 결과를 보장하지 않습니다.",
+        },
+        "color_label": "색상 모드",
+        "color_options": {"grayscale": "8-bit 그레이스케일", "rgb": "24-bit RGB 컬러"},
+        "color_notes": {
+            "grayscale": "색상이 의미를 담지 않을 때만 사용하고 도장, 형광 표시, 손글씨와 주석을 먼저 확인하세요.",
+            "rgb": "도장, 형광 표시, 손글씨, 주석 또는 원본 외관을 해석하는 데 색상이 중요하면 RGB를 사용하세요.",
+        },
+        "orientation_label": "방향",
+        "orientation_options": {"portrait": "세로", "landscape": "가로"},
+        "pages_label": "페이지 수",
+        "calculate": "계획 업데이트",
+        "result_title": "계산된 스캔 계획",
+        "dpi": "선택한 ppi",
+        "pixels": "페이지당 픽셀",
+        "megapixels": "페이지당 메가픽셀",
+        "per_page": "페이지당 비압축 MiB",
+        "total": "전체 페이지 비압축 MiB",
+        "result_boundary": "이 MiB는 파일 헤더, 압축, OCR 텍스트 또는 PDF 구조가 추가되기 전의 수학적 픽셀 데이터량입니다. 실제 PDF, JPEG, TIFF 크기는 달라지므로 압축 후 파일 크기를 추정하지 않습니다.",
+        "capture_title": "여러 장을 처리하기 전 확인할 다섯 가지",
+        "capture_checks": (
+            "페이지 전체와 모든 가장자리가 보이게 하고 원본을 손상하지 않는 범위에서 접힌 부분을 펴세요.",
+            "고른 조명을 사용하고 반사, 그림자, 손가락, 흐림과 잘린 모서리를 확인하세요.",
+            "색상이 정보를 담으면 RGB를 선택하고 그렇지 않을 때만 그레이스케일을 고려하세요.",
+            "첫 페이지를 확대해 가장 작은 중요 글자나 표시를 확인하세요.",
+            "모든 OCR 결과를 이미지와 대조하세요. OCR은 항상 정확하지 않습니다.",
+        ),
+        "scope_title": "이 도구가 인증할 수 없는 사항",
+        "scope_text": "문서, 이미지, 파일, 카메라 입력, OCR 텍스트, 자유 입력, 이름이나 개인정보를 받지 않으며 스캔, 보정, OCR, 검사, 업로드 또는 저장을 하지 않습니다. cookie, 분석, 광고나 네트워크 요청도 사용하지 않습니다. OCR, 가독성, 품질, 법적 효력, 접근성, 기록 보존, 정부, 세무, 의료 또는 교육 규정 준수를 보장하지 않으며 임의의 휴대폰 스캔 App에서 지정 ppi를 정밀하게 제어할 수 있다고 주장하지 않습니다. 영구, 규제 또는 증거 기록에는 담당 기관의 현행 사양과 품질 관리가 필요합니다.",
+        "sources_title": "공식 배경 자료이며 보증이 아닙니다",
+        "sources_intro": "NARA와 FADGI는 미국 영구 기록과 디지털화 맥락이며 지역 법률이나 이 도구의 인증이 아닙니다. Apple 자료는 메모 또는 파일에서 스캔, 모서리 조정, 여러 페이지, 저장 위치와 마크업 서명 절차만 설명합니다. OCR, ppi, 파일 크기, ScanTo 기능이나 Apple 보증을 뜻하지 않습니다.",
+        "source_labels": (
+            "36 CFR 1236.50: 영구 종이 기록 디지털화 요건",
+            "FADGI: 기술 디지털화 지침",
+            "NARA: OCR 전사는 항상 정확하지 않음",
+            "Apple 지원: 메모 또는 파일에서 문서를 스캔하고 명시된 편집 및 저장 절차 사용",
+        ),
+        "webmcp_source": "Chrome WebMCP 명령형 API 미리보기(변경될 수 있음)",
+        "webmcp_description": "범위가 제한된 용지, 세부 수준, 색상, 방향과 페이지 수로 비공개 스캔 계획을 계산합니다. 문서를 수신, 읽기, 업로드, 저장 또는 OCR 처리하지 않고 정확도나 규정 준수를 주장하지 않으며 정확한 픽셀 크기와 비압축 래스터 범위를 반환합니다.",
+        "app_title": "iPhone에서 종이를 PDF로 만드는 과정이 필요한가요?",
+        "app_text": "ScanTo Pro는 선택적으로 사용할 수 있는 iPhone 도구입니다. 현재 스토어 설명에는 문서 스캔, PDF 생성, OCR 검색, Face ID 문서 보호와 일회성 평생 잠금 해제가 기재되어 있습니다. 제공 여부와 정확한 기능은 현재 스토어 설명을 확인하세요. 이 무료 계획 도구는 App 없이도 작동합니다.",
+        "app_cta": "App Store에서 ScanTo Pro 보기",
+        "faq_title": "스캔 전 질문",
+        "faq": (
+            ("이 페이지가 내 문서를 업로드하나요?", "아니요. 파일 선택기가 없고 문서 텍스트나 이미지를 받지 않으며 제한된 설정만 계산합니다."),
+            ("300 ppi면 OCR이 정확한가요?", "아니요. OCR은 원본, 글꼴, 언어, 배치, 초점, 조명과 처리 방식에 따라 달라지며 확인이 필요합니다."),
+            ("MiB가 최종 PDF 크기인가요?", "아니요. 비압축 픽셀 데이터량이며 압축, 페이지 구조, OCR과 메타데이터가 최종 크기를 바꿉니다."),
+            ("NARA 또는 FADGI 요건을 충족하나요?", "아니요. 해당 절차에는 캡처, 장비, 테스트 타깃, 품질 관리와 기록 통제가 더 폭넓게 포함됩니다."),
+        ),
+        "footer": "비공개 계획 계산만 수행 · 업로드 없음 · 첫 페이지 확인",
+        "feature_list": (
+            "문서, 파일, 카메라, OCR 텍스트 또는 개인정보 입력 없음",
+            "300, 400, 600 ppi로 제한된 계획 프로필",
+            "정확한 픽셀 크기와 이론적 비압축 MiB",
+            "업로드, 저장, cookie, 분석, 광고 또는 네트워크 요청 없음",
+            "정확도, 법적 효력, 접근성 또는 규정 준수 보장 없음",
+        ),
+        "inline_link": "무료 비공개 도구로 픽셀과 비압축 용량을 먼저 계획하기",
+        "index_title": "비공개 문서 스캔 계획 도구",
+        "index_description": "문서를 읽거나 업로드하지 않고 ppi, 정확한 픽셀과 비압축 래스터 용량을 계산합니다.",
+    },
+    "zh-Hans": {
+        "title": "私密文档扫描规划器｜ppi、像素与容量边界",
+        "description": "无需上传或读取文档，即可规划扫描分辨率、精确像素尺寸与未压缩栅格容量边界。",
+        "tools": "免费工具",
+        "switch": "英文",
+        "eyebrow": "免费 · 本地计算 · 不上传文档",
+        "heading": "私密文档扫描规划器",
+        "lead": "选择纸张、细节需求与色彩模式；浏览器只计算像素及理论未压缩 MiB，完全不接收文档。",
+        "badges": (
+            "不输入文件或文档",
+            "不执行 OCR 或云端请求",
+            "不猜测压缩后大小",
+            "不宣称符合档案规范",
+        ),
+        "planner": "规划扫描",
+        "planner_intro": "三种细节选项只是规划起点，不保证质量，也不是官方认证。",
+        "paper_label": "纸张尺寸",
+        "paper_options": {
+            "a4": "A4 · 210×297 mm",
+            "a5": "A5 · 148×210 mm",
+            "us-letter": "美规 Letter · 8.5×11 in",
+            "us-legal": "美规 Legal · 8.5×14 in",
+        },
+        "purpose_label": "细节需求",
+        "purpose_options": {
+            "everyday-text": "一般文字 · 300 ppi",
+            "small-print": "小字或混合标记 · 400 ppi",
+            "fine-detail": "细线或印章 · 600 ppi",
+        },
+        "purpose_notes": {
+            "everyday-text": "清晰现代文字可先按 300 ppi 规划；这不代表 OCR 准确，也不证明符合档案规范。",
+            "small-print": "小字或混合标记可选 400 ppi；批量扫描前先放大检查第一页。",
+            "fine-detail": "细线或极小标记可选 600 ppi；内存用量会大幅增加，仍不保证识别结果。",
+        },
+        "color_label": "色彩模式",
+        "color_options": {"grayscale": "8-bit 灰度", "rgb": "24-bit RGB 彩色"},
+        "color_notes": {
+            "grayscale": "只有色彩不影响内容时才用灰度；先确认印章、荧光标记、手写字与批注。",
+            "rgb": "印章、荧光标记、手写字、批注或原貌的色彩有意义时，使用 RGB 彩色。",
+        },
+        "orientation_label": "方向",
+        "orientation_options": {"portrait": "纵向", "landscape": "横向"},
+        "pages_label": "页数",
+        "calculate": "更新规划",
+        "result_title": "扫描规划结果",
+        "dpi": "选定 ppi",
+        "pixels": "每页像素",
+        "megapixels": "每页百万像素",
+        "per_page": "每页未压缩 MiB",
+        "total": "全部页面未压缩 MiB",
+        "result_boundary": "这些 MiB 是文件头、压缩、OCR 文字或 PDF 结构之前的数学像素量。实际 PDF、JPEG 与 TIFF 大小均会不同，因此本工具不估算压缩后文件大小。",
+        "capture_title": "批量扫描前先确认五件事",
+        "capture_checks": (
+            "保留整张纸和全部边缘；在不损坏原件的前提下压平折痕。",
+            "使用均匀光线，检查反光、阴影、手指、模糊及被裁掉的角落。",
+            "色彩会影响信息时使用 RGB；否则才考虑灰度。",
+            "放大第一页，检查最小但重要的文字或标记。",
+            "把 OCR 结果和原始图像逐项核对；OCR 不一定准确。",
+        ),
+        "scope_title": "这个规划器不能证明什么",
+        "scope_text": "本页不接收文档、图像、文件、相机内容、OCR 文字、自由文本、姓名或任何个人信息，也不扫描、增强、OCR、检查、上传或存储内容，且不使用 cookie、分析、广告或网络请求。它不保证 OCR、可读性、质量、法律效力、无障碍、档案、政府、税务、医疗或教育合规；任意手机扫描 App 也未必能精确控制指定 ppi。永久、受监管或证据文档仍须遵循主管机构的现行规范与质量控制流程。",
+        "sources_title": "官方背景资料，不代表背书",
+        "sources_intro": "NARA 与 FADGI 是美国永久档案及数字化语境，不是各地法律，也不认证本工具。Apple 支持页只说明在备忘录或“文件”中扫描、调整边角、多页、存储位置及用“标记”添加签名等流程；不能据此推断 OCR、ppi、文件大小、ScanTo 功能或 Apple 背书。",
+        "source_labels": (
+            "36 CFR 1236.50：永久纸质档案数字化要求",
+            "FADGI：数字化技术指南",
+            "NARA：OCR 转录不一定准确",
+            "Apple 支持：在备忘录或“文件”中扫描文档，以及明载的编辑与存储步骤",
+        ),
+        "webmcp_source": "Chrome WebMCP 命令式 API 预览（规范可能变更）",
+        "webmcp_description": "仅用有界的纸张、细节、色彩、方向与页数输入计算私密文档扫描规划，返回精确像素与透明的未压缩容量边界；不接收、读取、上传、存储或 OCR 处理文档，也不宣称准确度或规范符合性。",
+        "app_title": "需要 iPhone 纸质文档转 PDF 流程？",
+        "app_text": "ScanTo Pro 是可选的 iPhone 工具；当前商店页面说明包含文档扫描、PDF 创建、OCR 搜索及 Face ID 文档保护，并提供一次性终身解锁。供应地区与确切功能请以当前商店页面为准；这个免费规划器无需 App 也能使用。",
+        "app_cta": "在 App Store 查看 ScanTo Pro",
+        "faq_title": "扫描前常见问题",
+        "faq": (
+            ("这个网页会上传我的文档吗？", "不会。它没有文件选择器，也不接收文档文字或图像，只用有界设置计算。"),
+            ("300 ppi 能保证 OCR 准确吗？", "不能。OCR 受原件、字体、语言、版面、对焦、光线与处理方式影响，结果必须核对。"),
+            ("MiB 数值就是最终 PDF 大小吗？", "不是。那是未压缩像素量；压缩、页面结构、OCR 与元数据都会改变实际大小。"),
+            ("这样就符合 NARA 或 FADGI 吗？", "不符合。那些流程还包含采集设备、测试标靶、质量管理及档案控制等要求。"),
+        ),
+        "footer": "只做私密规划计算 · 不上传 · 先核对第一页",
+        "feature_list": (
+            "不输入文档、文件、相机内容、OCR 文字或个人信息",
+            "有界的 300、400 与 600 ppi 规划选项",
+            "精确像素尺寸与理论未压缩 MiB",
+            "不上传、不存储，不用 cookie、分析、广告或网络请求",
+            "不保证准确度、法律效力、无障碍或规范符合性",
+        ),
+        "inline_link": "先用免费私密工具规划像素与未压缩容量",
+        "index_title": "私密文档扫描规划器",
+        "index_description": "不读取或上传文档，即时计算 ppi、精确像素与未压缩栅格容量边界。",
     },
 }
 
@@ -523,7 +1212,9 @@ SCRIPT = r"""
 
 
 def canonical(locale: str) -> str:
-    prefix = "zh-Hant/" if locale == "zh-Hant" else ""
+    if locale not in ALT_LOCALES:
+        raise ValueError(f"unsupported locale: {locale}")
+    prefix = "" if locale == "en" else f"{locale}/"
     return f"{SITE}/{prefix}tools/{SLUG}.html"
 
 
@@ -573,17 +1264,29 @@ def webmcp_input_schema(locale: str) -> dict[str, object]:
     }
 
 
-def render_page(locale: str, app_public: bool) -> str:
+def render_page(locale: str, app_public: bool = False) -> str:
     if locale not in COPY:
         raise ValueError(f"unsupported locale: {locale}")
     t = COPY[locale]
     other = "zh-Hant" if locale == "en" else "en"
     url = canonical(locale)
     alternate = canonical(other)
-    prefix = "zh-Hant/" if locale == "zh-Hant" else ""
+    prefix = "" if locale == "en" else f"{locale}/"
     home = f"{SITE}/{prefix}index.html"
     tools = f"{SITE}/{prefix}tools/index.html"
-    sources = (NARA_STANDARD, FADGI_GUIDELINES, NARA_OCR)
+    alternate_links = "\n".join(
+        f'<link rel="alternate" hreflang="{item}" href="{canonical(item)}">'
+        for item in ALT_LOCALES
+    )
+    alternate_links += (
+        f'\n<link rel="alternate" hreflang="x-default" href="{canonical("en")}">'
+    )
+    sources = (
+        NARA_STANDARD,
+        FADGI_GUIDELINES,
+        NARA_OCR,
+        APPLE_SCAN_DOCUMENTS,
+    )
     source_items = "".join(
         f'<li><a href="{html.escape(source, quote=True)}" rel="noopener">'
         f"{html.escape(label)}</a></li>"
@@ -666,14 +1369,7 @@ def render_page(locale: str, app_public: bool) -> str:
         "applicationCategory": "UtilitiesApplication",
         "operatingSystem": "Any",
         "isAccessibleForFree": True,
-        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
-        "featureList": [
-            "No document or file input",
-            "300, 400 and 600 ppi planning profiles",
-            "Exact pixel dimensions",
-            "Transparent uncompressed raster size calculation",
-            "No OCR, upload, storage or analytics",
-        ],
+        "featureList": list(t["feature_list"]),
         "citation": list(sources),
     }
     faq_schema = {
@@ -697,9 +1393,7 @@ def render_page(locale: str, app_public: bool) -> str:
 <title>{html.escape(t["title"])}</title>
 <meta name="description" content="{html.escape(t["description"])}">
 <link rel="canonical" href="{url}">
-<link rel="alternate" hreflang="{locale}" href="{url}">
-<link rel="alternate" hreflang="{other}" href="{alternate}">
-<link rel="alternate" hreflang="x-default" href="{canonical("en")}">
+{alternate_links}
 <meta property="og:type" content="website">
 <meta property="og:title" content="{html.escape(t["heading"])}">
 <meta property="og:description" content="{html.escape(t["description"])}">
@@ -722,7 +1416,7 @@ def render_page(locale: str, app_public: bool) -> str:
 <div class="field"><label for="orientation">{html.escape(t["orientation_label"])}</label><select id="orientation">{options(t["orientation_options"])}</select></div>
 <div class="field"><label for="page-count">{html.escape(t["pages_label"])}</label><input id="page-count" type="number" min="1" max="100" step="1" value="1"></div>
 </div><button class="button" type="submit">{html.escape(t["calculate"])}</button></form>
-<div class="results" aria-live="polite">
+<h2>{html.escape(t["result_title"])}</h2><div class="results" aria-live="polite">
 <div class="metric"><strong id="result-dpi"></strong><span>{html.escape(t["dpi"])}</span></div>
 <div class="metric"><strong id="result-pixels"></strong><span>{html.escape(t["pixels"])}</span></div>
 <div class="metric"><strong id="result-megapixels"></strong><span>{html.escape(t["megapixels"])}</span></div>
@@ -791,29 +1485,68 @@ def write_text_if_changed(path: Path, content: str) -> bool:
     return True
 
 
-def build(pages: Path = PAGES, app_public: bool | None = None) -> list[str]:
-    if app_public is None:
-        app_public = APP_KEY in live_app_keys(APPSTORE, pages, refresh=False)
+TARGET_ANSWER_SLUGS = (
+    "best-document-scanner-app.html",
+    "best-offline-document-scanner-app-for-iphone.html",
+)
+INBOUND_LINK_CLASS = "document-scan-planner-inline-link"
+_SCANTO_CTA = re.compile(
+    r'<a\b(?=[^>]*\shref\s*=\s*(?P<q>["\'])https://apps\.apple\.com/'
+    r'(?:[^"\'?#]*/)*id'
+    + re.escape(APP_ID)
+    + r'(?:[?#][^"\']*)?(?P=q))[^>]*>',
+    re.IGNORECASE,
+)
+
+
+def insert_answer_links(pages: Path = PAGES) -> int:
+    """Insert one localized resource link before each eligible ScanTo CTA."""
+    changed = 0
+    for locale in ALT_LOCALES:
+        directory = pages / "answers" if locale == "en" else pages / locale / "answers"
+        link = (
+            f'<a class="cta ghost {INBOUND_LINK_CLASS}" '
+            f'data-document-scan-planner-link="1" href="{canonical(locale)}" '
+            f'rel="noopener">{html.escape(COPY[locale]["inline_link"])}</a> '
+        )
+        for slug in TARGET_ANSWER_SLUGS:
+            path = directory / slug
+            if not path.is_file():
+                continue
+            text = path.read_text(encoding="utf-8")
+            if INBOUND_LINK_CLASS in text:
+                continue
+            match = _SCANTO_CTA.search(text)
+            if not match:
+                continue
+            updated = text[: match.start()] + link + text[match.start() :]
+            if write_text_if_changed(path, updated):
+                changed += 1
+    return changed
+
+
+def build(pages: Path = PAGES, app_public: bool = False) -> list[str]:
     outputs = []
-    for locale in COPY:
+    for locale in ALT_LOCALES:
         relative = Path("tools") / f"{SLUG}.html"
-        if locale == "zh-Hant":
+        if locale != "en":
             relative = Path(locale) / relative
         write_text_if_changed(
             pages / relative,
             render_page(locale, app_public),
         )
         outputs.append(canonical(locale))
-    update_one_index(pages / "tools" / "index.html", "en")
-    update_one_index(
-        pages / "zh-Hant" / "tools" / "index.html",
-        "zh-Hant",
-    )
+        index = pages / "tools" / "index.html"
+        if locale != "en":
+            index = pages / locale / "tools" / "index.html"
+        update_one_index(index, locale)
+    insert_answer_links(pages)
     return outputs
 
 
 def main() -> None:
-    outputs = build()
+    app_public = APP_KEY in live_app_keys(APPSTORE, PAGES, refresh=False)
+    outputs = build(app_public=app_public)
     sitemap_count = write_tools_sitemap()
     for output in outputs:
         print(f"document scan planner -> {output}")

@@ -122,6 +122,9 @@ def main():
         [PY, os.path.join(HERE, "bopomofo_matching_pair_cards.py")], env=env
     )
     require(
+        [PY, os.path.join(HERE, "bopomofo_bingo_cards.py")], env=env
+    )
+    require(
         [PY, os.path.join(HERE, "prioritize_trip_planet_resources.py")],
         env=env,
     )

@@ -44,6 +44,7 @@ import appstore_live
 import build_pages
 import build_pages_i18n
 import blurry_photo_diagnostic
+import bopomofo_bingo_cards
 import bopomofo_matching_pair_cards
 import bopomofo_symbol_contrast_cards
 import cleanup_localized_assets
@@ -13414,6 +13415,184 @@ class GeneratorTests(unittest.TestCase):
             m.render_page("en", app_public=True),
         )
 
+    def test_bopomofo_bingo_cards_are_private_deterministic_and_read_only(
+        self,
+    ):
+        m = bopomofo_bingo_cards
+        pages = {
+            locale: m.render_page(locale, app_public=False)
+            for locale in m.ALT_LOCALES
+        }
+        public = m.render_page("en", app_public=True)
+        self.assertEqual(9, len(pages))
+        for locale, page in pages.items():
+            self.assertIn('"@type":"WebApplication"', page)
+            self.assertNotIn('"@type":"SoftwareApplication"', page)
+            self.assertNotIn('"offers"', page)
+            self.assertIn('"@type":"HowTo"', page)
+            self.assertIn('"@type":"FAQPage"', page)
+            self.assertIn(f'"dateModified":"{m.CONTENT_DATE}"', page)
+            self.assertIn("document.modelContext?.registerTool", page)
+            self.assertIn(
+                'name: "create_private_bopomofo_bingo_cards"', page
+            )
+            self.assertIn(
+                "annotations: {readOnlyHint: true, "
+                "untrustedContentHint: false}",
+                page,
+            )
+            self.assertIn("deterministic: true", page)
+            self.assertIn("is_not_assessment: true", page)
+            self.assertIn(
+                "no_score_grade_rank_or_diagnosis: true", page
+            )
+            self.assertIn("no_child_data_received: true", page)
+            self.assertIn(m.MOE_HANDBOOK, page)
+            self.assertIn(m.MOE_STROKE_ORDER, page)
+            self.assertIn(m.WEBMCP_SOURCE, page)
+            self.assertIn(html.escape(m.COPY[locale]["heading"]), page)
+            for hreflang in m.ALT_LOCALES:
+                self.assertIn(f'hreflang="{hreflang}"', page)
+            for forbidden in (
+                "Math.random",
+                "localStorage",
+                "sessionStorage",
+                "document.cookie",
+                "navigator.modelContext",
+                "fetch(",
+                "XMLHttpRequest",
+                'type="file"',
+                "<textarea",
+            ):
+                self.assertNotIn(forbidden, page)
+            self.assertNotIn(f"id{m.APP_ID}", page)
+        self.assertIn(f"id{m.APP_ID}", public)
+        execute = m.SCRIPT.split(
+            "execute: async (input) => {", 1
+        )[1].split("return JSON.stringify(result);", 1)[0]
+        self.assertIn("validateInput(input)", execute)
+        for mutation in (
+            "textContent",
+            "innerHTML",
+            "appendChild",
+            "replaceChildren",
+            "scroll",
+            "fetch(",
+            "localStorage",
+            "sessionStorage",
+            "navigator.clipboard",
+            "document.cookie",
+            "location.href",
+            "window.open",
+            "window.print",
+            "createElement",
+        ):
+            self.assertNotIn(mutation, execute)
+
+    def test_bopomofo_bingo_cards_have_exact_reproducible_layouts(self):
+        m = bopomofo_bingo_cards
+        self.assertEqual(37, len(m.SYMBOL_VALUES))
+        self.assertEqual(37, len(set(m.SYMBOL_VALUES)))
+        for grid_size in m.GRID_SIZES:
+            for set_number in (1, 2, 37, 500, 999):
+                first = m.build_bingo(grid_size, 6, set_number)
+                second = m.build_bingo(grid_size, 6, set_number)
+                self.assertEqual(first, second)
+                layouts = set()
+                for card in first["cards"]:
+                    cells = card["cells"]
+                    self.assertEqual(grid_size * grid_size, len(cells))
+                    symbols = [
+                        cell["symbol"]
+                        for cell in cells
+                        if cell["kind"] == "symbol"
+                    ]
+                    self.assertEqual(len(symbols), len(set(symbols)))
+                    self.assertTrue(set(symbols).issubset(m.SYMBOL_VALUES))
+                    if grid_size == 5:
+                        self.assertEqual({"kind": "free"}, cells[12])
+                        self.assertEqual(24, len(symbols))
+                    else:
+                        self.assertFalse(
+                            any(cell["kind"] == "free" for cell in cells)
+                        )
+                        self.assertEqual(16, len(symbols))
+                    layouts.add(
+                        tuple(
+                            (cell["kind"], cell.get("symbol"))
+                            for cell in cells
+                        )
+                    )
+                self.assertEqual(6, len(layouts))
+        with self.assertRaises(TypeError):
+            m.build_bingo(4, True, 1)
+        with self.assertRaises(ValueError):
+            m.build_bingo(3, 1, 1)
+        with self.assertRaises(ValueError):
+            m.build_bingo(4, 7, 1)
+        with self.assertRaises(ValueError):
+            m.build_bingo(4, 1, 1000)
+        schema = m.webmcp_input_schema("en")
+        self.assertFalse(schema["additionalProperties"])
+        self.assertEqual(
+            ["grid_size", "card_count", "set_number"],
+            schema["required"],
+        )
+        self.assertEqual(
+            list(m.GRID_SIZES),
+            schema["properties"]["grid_size"]["enum"],
+        )
+        self.assertNotIn("Math.random", m.SCRIPT)
+
+    def test_bopomofo_bingo_builds_nine_locales_and_inbound_links(self):
+        m = bopomofo_bingo_cards
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                tools = root / "tools"
+                answers = root / "answers"
+                tools.mkdir(parents=True)
+                answers.mkdir(parents=True)
+                (tools / "index.html").write_text(
+                    '<section class="wrap grid"></section>',
+                    encoding="utf-8",
+                )
+                (answers / m.TARGET_ANSWER_SLUG).write_text(
+                    '<a class="cta" href="https://apps.apple.com/app/id'
+                    f'{m.APP_ID}?ct=test">App</a>',
+                    encoding="utf-8",
+                )
+            outputs = m.build(pages, app_public=True)
+            self.assertEqual(9, len(outputs))
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                page = (
+                    root / "tools" / f"{m.SLUG}.html"
+                ).read_text(encoding="utf-8")
+                index = (root / "tools" / "index.html").read_text(
+                    encoding="utf-8"
+                )
+                answer = (
+                    root / "answers" / m.TARGET_ANSWER_SLUG
+                ).read_text(encoding="utf-8")
+                self.assertIn(f"id{m.APP_ID}", page)
+                self.assertIn(f'data-tool="{m.SLUG}"', index)
+                self.assertEqual(
+                    1, answer.count(m.INBOUND_LINK_CLASS)
+                )
+                self.assertIn(m.canonical(locale), answer)
+            before = {
+                path: path.read_bytes()
+                for path in pages.rglob("*.html")
+            }
+            m.build(pages, app_public=True)
+            after = {
+                path: path.read_bytes()
+                for path in pages.rglob("*.html")
+            }
+            self.assertEqual(before, after)
+
     def test_bopomofo_matching_pair_cards_is_private_transparent_and_boundary_compliant(
         self,
     ):
@@ -16281,6 +16460,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("toeic_study_allocation_planner.py", materialize_block)
         self.assertNotIn("bopomofo_symbol_contrast_cards.py", materialize_block)
         self.assertNotIn("bopomofo_matching_pair_cards.py", materialize_block)
+        self.assertNotIn("bopomofo_bingo_cards.py", materialize_block)
         availability_block = workflow.split(
             "- name: Refresh verified App Store availability once", 1
         )[1].split("- name: Generate new answer pages", 1)[0]
@@ -16338,6 +16518,10 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertLess(
             availability_block.index("bopomofo_matching_pair_cards.py"),
+            availability_block.index("bopomofo_bingo_cards.py"),
+        )
+        self.assertLess(
+            availability_block.index("bopomofo_bingo_cards.py"),
             availability_block.index("wordmate_language_support.py"),
         )
         self.assertNotIn("gen_sitemap_lastmod.py", materialize_block)
@@ -16359,6 +16543,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(1, workflow.count("toeic_study_allocation_planner.py"))
         self.assertEqual(1, workflow.count("bopomofo_symbol_contrast_cards.py"))
         self.assertEqual(1, workflow.count("bopomofo_matching_pair_cards.py"))
+        self.assertEqual(1, workflow.count("bopomofo_bingo_cards.py"))
         self.assertEqual(1, workflow.count("wordmate_language_support.py"))
         self.assertEqual(1, workflow.count("portfolio_app_finder.py"))
         self.assertLess(
@@ -16415,6 +16600,10 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertLess(
             workflow.index("bopomofo_matching_pair_cards.py"),
+            workflow.index("bopomofo_bingo_cards.py"),
+        )
+        self.assertLess(
+            workflow.index("bopomofo_bingo_cards.py"),
             workflow.index("wordmate_language_support.py"),
         )
         self.assertLess(
@@ -16657,6 +16846,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("toeic_study_allocation_planner.py", publish)
         self.assertIn("bopomofo_symbol_contrast_cards.py", publish)
         self.assertIn("bopomofo_matching_pair_cards.py", publish)
+        self.assertIn("bopomofo_bingo_cards.py", publish)
         self.assertIn("wordmate_language_support.py", publish)
         self.assertIn("portfolio_app_finder.py", publish)
         self.assertEqual(

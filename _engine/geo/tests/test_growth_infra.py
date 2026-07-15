@@ -51,6 +51,7 @@ import bopomofo_matching_pair_cards
 import bopomofo_symbol_contrast_cards
 import cleanup_localized_assets
 import daily_checklist_planner
+import cycle_privacy_planner
 import document_scan_planner
 import ensure_live_guides
 import family_travel_dataset
@@ -12423,6 +12424,127 @@ class GeneratorTests(unittest.TestCase):
                     self.assertIn("original practical answer", text)
                     self.assertIn(f"id{m.APP_ID}?ct=existing_mochi", text)
                     self.assertIn(html.escape(m.COPY[locale]["inline_link"]), text)
+
+    def test_cycle_privacy_planner_copy_pages_and_private_defaults(self):
+        m = cycle_privacy_planner
+        self.assertEqual(
+            ("en", "es-ES", "pt-BR", "de-DE", "fr-FR", "ja", "ko", "zh-Hant", "zh-Hans"),
+            m.ALT_LOCALES,
+        )
+        self.assertEqual(set(m.ALT_LOCALES), set(m.COPY))
+        keys = set(m.COPY["en"])
+        for locale in m.ALT_LOCALES:
+            t = m.COPY[locale]
+            self.assertEqual(keys, set(t), locale)
+            self.assertEqual(set(m.STORAGE), set(t["storage_options"]))
+            self.assertEqual(set(m.ACCOUNTS), set(t["account_options"]))
+            self.assertEqual(set(m.USE_CASES), set(t["use_options"]))
+            self.assertEqual(set(m.NOTIFICATIONS), set(t["notification_options"]))
+            self.assertEqual(set(m.SHARING), set(t["sharing_options"]))
+            self.assertEqual(4, len(t["faq"]))
+            self.assertEqual(5, len(t["feature_list"]))
+            page = m.render_page(locale)
+            self.assertIn(f'<html lang="{locale}">', page)
+            for hreflang in m.ALT_LOCALES:
+                self.assertIn(f'hreflang="{hreflang}"', page)
+            self.assertIn('hreflang="x-default"', page)
+            self.assertIn(m.APPLE_CYCLE_TRACKING, page)
+            self.assertIn(m.APPLE_HEALTH_PRIVACY, page)
+            self.assertIn(t["medical_boundary"], page)
+            self.assertIn(t["safety_boundary"], page)
+            self.assertNotIn(m.APP_ID, page)
+            self.assertNotIn("apps.apple.com", page)
+            self.assertNotIn('class="app-card', page)
+            self.assertNotIn("<textarea", page)
+            self.assertNotIn('type="file"', page)
+            self.assertNotIn('"offers"', page)
+            self.assertNotIn('"@type":"Offer"', page)
+            self.assertNotIn('"price":"0"', page)
+            self.assertIn('type="application/atom+xml"', page)
+            self.assertIn('type="application/rss+xml"', page)
+            self.assertIn('type="application/feed+json"', page)
+            schemas = [
+                json.loads(blob)
+                for blob in re.findall(
+                    r'<script type="application/ld\+json">(.*?)</script>', page, flags=re.S
+                )
+            ]
+            web_app = next(value for value in schemas if value["@type"] == "WebApplication")
+            self.assertTrue(web_app["isAccessibleForFree"])
+            self.assertEqual(list(t["feature_list"]), web_app["featureList"])
+            self.assertNotIn("offers", web_app)
+
+    def test_cycle_privacy_planner_webmcp_is_strict_shared_and_read_only(self):
+        m = cycle_privacy_planner
+        schema = m.webmcp_input_schema("en")
+        self.assertFalse(schema["additionalProperties"])
+        self.assertEqual(list(schema["properties"]), schema["required"])
+        self.assertEqual(list(m.STORAGE), schema["properties"]["storage_preference"]["enum"])
+        self.assertEqual(list(m.ACCOUNTS), schema["properties"]["account_preference"]["enum"])
+        self.assertEqual("boolean", schema["properties"]["screen_lock_required"]["type"])
+        script = m.SCRIPT
+        self.assertEqual(1, script.count("function calculateCyclePrivacyPlan(input)"))
+        self.assertIn("calculateCyclePrivacyPlan(visibleInput())", script)
+        self.assertIn("calculateCyclePrivacyPlan(input)", script)
+        self.assertIn("Object.keys(input)", script)
+        page = m.render_page("en")
+        self.assertIn('name: "plan_private_cycle_tracker_choice"', page)
+        self.assertIn("annotations: {readOnlyHint: true, untrustedContentHint: false}", page)
+        execute = script.split("execute: async (input) => {", 1)[1].split(
+            "return JSON.stringify(result);", 1
+        )[0]
+        for forbidden in (
+            "document.", "window.", "textContent", "innerHTML", "appendChild",
+            "replaceChildren", "fetch(", "XMLHttpRequest", "localStorage",
+            "sessionStorage", "cookie", "navigator.", "location", "clipboard", "print(",
+        ):
+            self.assertNotIn(forbidden, execute)
+        for sensitive in ("date", "symptom", "cycle_length", "sexual_activity", "pregnancy"):
+            self.assertNotIn(sensitive, schema["properties"])
+
+    def test_cycle_privacy_planner_public_build_and_inbound_are_idempotent(self):
+        m = cycle_privacy_planner
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                (root / "tools").mkdir(parents=True)
+                (root / "tools" / "index.html").write_text(
+                    '<main><section class="wrap grid"></section></main>', encoding="utf-8"
+                )
+                (root / "answers").mkdir()
+                for slug in m.TARGET_ANSWER_SLUGS:
+                    (root / "answers" / slug).write_text(
+                        '<p>original practical answer</p><a class="cta" '
+                        f'href="https://apps.apple.com/app/id{m.APP_ID}?ct=existing_cyca">Cyca</a>',
+                        encoding="utf-8",
+                    )
+            with mock.patch.object(m, "live_app_keys") as live:
+                self.assertEqual(9, len(m.build(pages)))
+                live.assert_not_called()
+            self.assertEqual(0, m.insert_answer_links(pages))
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                self.assertTrue((root / "tools" / f"{m.SLUG}.html").exists())
+                index = (root / "tools" / "index.html").read_text(encoding="utf-8")
+                self.assertEqual(1, index.count(f"{m.SLUG}.html"))
+                for slug in m.TARGET_ANSWER_SLUGS:
+                    answer = (root / "answers" / slug).read_text(encoding="utf-8")
+                    self.assertEqual(1, answer.count(m.INBOUND_LINK_CLASS))
+                    self.assertLess(answer.index(m.INBOUND_LINK_CLASS), answer.index(f"id{m.APP_ID}"))
+                    self.assertIn("original practical answer", answer)
+            before = {path: path.read_bytes() for path in pages.rglob("*.html")}
+            m.build(pages)
+            after = {path: path.read_bytes() for path in pages.rglob("*.html")}
+            self.assertEqual(before, after)
+        for locale in m.ALT_LOCALES:
+            public = m.render_page(locale, app_public=True)
+            self.assertIn(f"id{m.APP_ID}", public)
+            self.assertIn(f"iag_cycle_privacy_{locale.lower()}", urllib.parse.unquote(public))
+
+    def test_cycle_privacy_planner_is_wired_into_publish(self):
+        publish = (Path(GEO) / "publish.py").read_text(encoding="utf-8")
+        self.assertEqual(1, publish.count("cycle_privacy_planner.py"))
 
     def test_screen_time_block_planner_is_private_transparent_and_bounded(self):
         english = screen_time_block_planner.render_page(

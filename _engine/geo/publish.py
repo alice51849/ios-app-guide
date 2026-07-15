@@ -72,6 +72,7 @@ def main():
     require([PY, os.path.join(HERE, "document_scan_planner.py")], env=env)
     require([PY, os.path.join(HERE, "blurry_photo_diagnostic.py")], env=env)
     require([PY, os.path.join(HERE, "daily_checklist_planner.py")], env=env)
+    require([PY, os.path.join(HERE, "cycle_privacy_planner.py")], env=env)
     require([PY, os.path.join(HERE, "screen_time_block_planner.py")], env=env)
     require([PY, os.path.join(HERE, "photo_storage_cleanup_planner.py")], env=env)
     require([PY, os.path.join(HERE, "resume_evidence_planner.py")], env=env)

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>사진을 업로드하지 않는 프라이빗 흐린 사진 다음 단계 가이드</title>
+<meta name="description" content="사진을 업로드하지 않고 눈에 보이는 증상만 선택하면 흔들림, 초점 실패, 저조도 노이즈, 과도한 크롭, 압축된 사본에 대한 신중한 다음 단계를 확인할 수 있습니다.">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/ko/tools/blurry-photo-diagnostic.html">
+<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/blurry-photo-diagnostic.html">
+<link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/es-ES/tools/blurry-photo-diagnostic.html">
+<link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/tools/blurry-photo-diagnostic.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tools/blurry-photo-diagnostic.html">
+<link rel="alternate" hreflang="fr-FR" href="https://alice51849.github.io/ios-app-guide/fr-FR/tools/blurry-photo-diagnostic.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/blurry-photo-diagnostic.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/tools/blurry-photo-diagnostic.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/blurry-photo-diagnostic.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/tools/blurry-photo-diagnostic.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/blurry-photo-diagnostic.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="프라이빗 흐린 사진 다음 단계 가이드">
+<meta property="og:description" content="사진을 업로드하지 않고 눈에 보이는 증상만 선택하면 흔들림, 초점 실패, 저조도 노이즈, 과도한 크롭, 압축된 사본에 대한 신중한 다음 단계를 확인할 수 있습니다.">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/ko/tools/blurry-photo-diagnostic.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#202034;--muted:#636476;--line:#e4e0ec;--paper:#fff;--bg:#f7f3f7;--plum:#613d69;--rose:#b36377;--soft:#f6eaf0;--warn:#fff6d9;--shadow:0 22px 60px rgba(65,42,69,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,#fff 0,var(--bg) 52%,#eee5ed 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:#78436f}.wrap{width:min(1120px,calc(100% - 30px));margin:auto}.top{position:sticky;top:0;z-index:8;background:#fffffff2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}.links{display:flex;gap:15px;overflow-x:auto}
+.hero{padding:64px 0 30px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--plum);white-space:nowrap}.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}.hero h1{font-size:clamp(34px,6vw,62px);line-height:1.04;letter-spacing:-.035em;margin:.3em 0 .22em;white-space:nowrap;overflow-x:auto}.lead{font-size:clamp(17px,2.2vw,21px);color:var(--muted);margin:0;white-space:nowrap;overflow-x:auto}.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.planner,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}.planner{padding:clamp(20px,4vw,36px);margin:16px auto 30px}.planner h2,.card h2,.app-card h2{font-size:clamp(24px,3.6vw,34px);line-height:1.14;margin:0;white-space:nowrap;overflow-x:auto}.intro{color:var(--muted);white-space:nowrap;overflow-x:auto}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px}.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--plum);margin-bottom:6px;white-space:nowrap;overflow-x:auto}select,button{font:inherit}select{width:100%;min-height:46px;border:1px solid #d3c9d6;border-radius:13px;background:#fff;color:var(--ink);padding:9px 11px}.toggles{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}.toggle{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:14px;padding:11px 13px;background:#fff;font-weight:760;white-space:nowrap;overflow-x:auto}.toggle input{inline-size:20px;block-size:20px;flex:0 0 auto}.button{border:0;border-radius:999px;background:linear-gradient(135deg,var(--plum),var(--rose));color:#fff;text-decoration:none;font-weight:850;padding:11px 17px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(97,61,105,.2)}
+.results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin-top:22px}.result{background:var(--soft);border:1px solid #e6cad7;border-radius:17px;padding:14px;min-width:0}.result strong,.result span{display:block;white-space:nowrap;overflow-x:auto}.result strong{font-size:12px;color:#704c67;text-transform:uppercase;letter-spacing:.04em}.result span{font-size:15px;color:#3f3340;font-weight:760;margin-top:5px}.note{background:var(--warn);border:1px solid #ead9a7;border-radius:16px;padding:13px 15px;margin:14px 0 0;white-space:nowrap;overflow-x:auto}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:30px}.card,.app-card{padding:clamp(20px,3.5vw,30px)}.card.wide{grid-column:1/-1}.card p,.card li,.app-card p,.faq details p,.faq summary{white-space:nowrap;overflow-x:auto}.card ul,.card ol{padding-left:22px}.card li{margin:8px 0}.source-list a{overflow-wrap:anywhere}.app-card{margin:0 auto 38px;background:linear-gradient(135deg,#fffafb,#f2e7ef)}.app-card .button{display:inline-flex;margin-top:5px}.faq{margin-bottom:30px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+.footer{background:var(--plum);color:#f8eef5;text-align:center;padding:27px 0;white-space:nowrap;overflow-x:auto}
+@media(max-width:900px){.controls,.results{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.toggles{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1120px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{.top,.hero,.controls,.toggles,.button,.app-card,.footer{display:none!important}body{background:#fff}.planner,.card{box-shadow:none;break-inside:avoid}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"프라이빗 흐린 사진 다음 단계 가이드","description":"사진을 업로드하지 않고 눈에 보이는 증상만 선택하면 흔들림, 초점 실패, 저조도 노이즈, 과도한 크롭, 압축된 사본에 대한 신중한 다음 단계를 확인할 수 있습니다.","url":"https://alice51849.github.io/ios-app-guide/ko/tools/blurry-photo-diagnostic.html","inLanguage":"ko","datePublished":"2026-07-15","dateModified":"2026-07-15","applicationCategory":"PhotographyApplication","operatingSystem":"Any","isAccessibleForFree":true,"featureList":["이미지나 파일 입력 없음","업로드나 클라우드 호출 없음","복구 비율 계산 없음","세부 정보 복원 보장 없음","이미지가 공유 앨범, 채팅, 소셜 서비스에서 왔다면 먼저 원본을 찾아보세요. 아래 Apple의 2048픽셀 수치는 공유 앨범에 한정된 것이며 모든 공유 서비스에 자동으로 적용되지는 않습니다."],"citation":["https://support.apple.com/guide/iphone/set-up-your-shot-iph3dc593597/ios","https://support.apple.com/en-us/102514","https://support.apple.com/en-us/108916","https://helpx.adobe.com/camera-raw/using/enhance.html"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ko","mainEntity":[{"@type":"Question","name":"이 페이지가 제 사진을 보거나 업로드하나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 이미지나 파일 입력란이 없으며 사용자가 선택한 유한한 관찰만 사용합니다."}},{"@type":"Question","name":"이것은 진단이나 복구 예측인가요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 신중한 점검표만 반환하며 비율 계산, 진단, 결과 약속을 하지 않습니다."}},{"@type":"Question","name":"업스케일로 흐린 부분에 원래 무엇이 있었는지 증명할 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"그럴 수 없습니다. 픽셀을 늘리면 겉모습이 개선될 수 있지만 애매한 세부 정보는 여전히 확인되지 않은 상태로 남습니다."}},{"@type":"Question","name":"왜 원본을 먼저 찾아야 하나요?","acceptedAnswer":{"@type":"Answer","text":"크롭, 공유 사본, 반복된 내보내기는 원본보다 픽셀 수가 적거나 손상이 더 많을 수 있기 때문입니다."}}]}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/ko/index.html">iOS App Guide</a><nav class="links"><a href="https://alice51849.github.io/ios-app-guide/ko/tools/index.html">무료 도구</a><a href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/blurry-photo-diagnostic.html">繁體中文</a></nav></div></header>
+<main>
+<section class="hero wrap"><div class="eyebrow">무료 · 사진 입력 없음 · 복구 점수 없음</div><h1>프라이빗 흐린 사진 다음 단계 가이드</h1><p class="lead">이미 관찰한 상태만 선택하세요. 이 페이지는 신중한 순서를 제안하지만 사진을 전혀 받지 않으며 진단하거나 복구를 보장할 수 없습니다.</p><div class="badges"><span class="badge">이미지나 파일 입력 없음</span><span class="badge">업로드나 클라우드 호출 없음</span><span class="badge">복구 비율 계산 없음</span><span class="badge">세부 정보 복원 보장 없음</span></div></section>
+<section class="planner wrap"><h2>눈에 보이는 문제 설명</h2><p class="intro">가장 가까운 관찰을 선택하세요. 실제 사진에는 여러 원인이 겹칠 수 있으므로 결과는 진단이 아니라 시작용 점검표로 다뤄야 합니다.</p>
+<form id="blur-guide"><div class="controls">
+<div class="field"><label for="issue">주요 관찰 가능한 문제</label><select id="issue"><option value="motion">피사체나 카메라가 움직였음</option><option value="missed-focus">선명한 부분이 원하는 대상이 아님</option><option value="low-light-noise">저조도, 입자감 또는 색상 노이즈</option><option value="low-resolution-crop">이미지가 작거나 과도하게 크롭됨</option><option value="compressed-copy">채팅, 소셜, 공유 앨범에서 받은 사본</option></select></div>
+<div class="field"><label for="intended-use">예상 용도</label><select id="intended-use"><option value="casual-memory">개인 또는 가족 추억</option><option value="print">인쇄 또는 확대</option><option value="work-profile">업무, 판매 등록, 프로필용</option></select></div>
+<div class="field"><label for="important-detail">가장 중요한 세부 정보</label><select id="important-detail"><option value="overall-scene">전체 장면</option><option value="face">얼굴</option><option value="text">글자나 문구</option></select></div>
+</div><div class="toggles"><label class="toggle"><input id="used-zoom" type="checkbox">디지털 줌이나 과도한 크롭을 사용함</label><label class="toggle"><input id="lens-smudge" type="checkbox">렌즈에 얼룩이 있거나 가려졌을 가능성</label></div><button class="button" type="submit">신중한 다음 단계 생성</button></form>
+<div class="results"><div class="result"><strong>선택한 관찰</strong><span id="result-issue"></span></div><div class="result"><strong>첫 번째 조치</strong><span id="result-first"></span></div><div class="result"><strong>중요한 제한 사항</strong><span id="result-limit"></span></div></div>
+<p class="note"><strong>순서대로 진행할 다음 단계:</strong> <span id="result-steps"></span></p><p class="note"><strong>보관하기 전에 확인:</strong> <span id="result-inspect"></span></p></section>
+<section class="wrap grid"><article class="card"><h2>다음 촬영을 위한 다섯 가지 습관</h2><ol><li>사진이 흐리게 보일 때는 극세사 천으로 앞뒤 렌즈를 닦는다.</li><li>촬영 전에 원하는 피사체를 탭해 초점과 노출을 설정한다.</li><li>움직임이나 저조도가 예상되면 조명을 늘리고 휴대폰을 안정적으로 잡는다.</li><li>가능하면 과도한 디지털 줌에 의존하지 말고 피사체에 더 가까이 다가간다.</li><li>크롭, 편집, 공유 전에 손대지 않은 원본을 보관해 둔다.</li></ol></article><article class="card"><h2>공식 참고 자료이며 복구를 보장하지 않습니다</h2><p>Apple은 초점 및 노출 제어, 렌즈 점검, 공유 앨범 제한을 설명합니다. Adobe는 Enhance 기능이 하는 일을 설명합니다. 이 자료들 중 어느 것도 특정 사진이 복구 가능하다고 인증하지 않습니다.</p><ul class="source-list"><li><a href="https://support.apple.com/guide/iphone/set-up-your-shot-iph3dc593597/ios" rel="noopener">Apple: iPhone 카메라 도구로 촬영 준비하기</a></li><li><a href="https://support.apple.com/en-us/102514" rel="noopener">Apple: 사진이 흐릴 때 시도할 수 있는 단계</a></li><li><a href="https://support.apple.com/en-us/108916" rel="noopener">Apple: 공유 앨범은 사본을 업로드하고 사진을 축소함</a></li><li><a href="https://helpx.adobe.com/camera-raw/using/enhance.html" rel="noopener">Adobe: Denoise, Raw Details 및 Super Resolution</a></li></ul><p><a href="https://developer.chrome.com/docs/ai/webmcp/imperative-api" rel="noopener">Chrome WebMCP 명령형 API 프리뷰(사양은 변경될 수 있음)</a></p></article></section>
+<section class="wrap card faq"><h2>보정 전에 자주 묻는 질문</h2><details><summary>이 페이지가 제 사진을 보거나 업로드하나요?</summary><p>아니요. 이미지나 파일 입력란이 없으며 사용자가 선택한 유한한 관찰만 사용합니다.</p></details><details><summary>이것은 진단이나 복구 예측인가요?</summary><p>아니요. 신중한 점검표만 반환하며 비율 계산, 진단, 결과 약속을 하지 않습니다.</p></details><details><summary>업스케일로 흐린 부분에 원래 무엇이 있었는지 증명할 수 있나요?</summary><p>그럴 수 없습니다. 픽셀을 늘리면 겉모습이 개선될 수 있지만 애매한 세부 정보는 여전히 확인되지 않은 상태로 남습니다.</p></details><details><summary>왜 원본을 먼저 찾아야 하나요?</summary><p>크롭, 공유 사본, 반복된 내보내기는 원본보다 픽셀 수가 적거나 손상이 더 많을 수 있기 때문입니다.</p></details></section>
+<section class="app-card wrap"><h2>iPhone에서 사본을 비공개로 테스트해 보고 싶으신가요?</h2><p>Unblurry Pro는 선택 사항입니다. 현재 App Store 등록 정보에는 기기 내에서 동작하는 Auto Clear, Sharpen, Denoise, Low Light, Document, Super Resolution, 4× Upscale, Portrait &amp; Restore 모드가 설명되어 있으며, 하루 한 번 무료 저장과 일회성 잠금 해제를 제공합니다. 제공 지역과 정확한 기능은 현재 스토어 페이지를 확인하세요. 이 가이드는 앱 없이도 사용할 수 있습니다.</p><a class="button" href="https://apps.apple.com/app/id6782275018?ct=iag_blur_guide_ko" rel="nofollow noopener">App Store에서 Unblurry Pro 보기</a></section>
+</main>
+<footer class="footer"><div class="wrap">프라이빗 안내만 제공 · 사진 입력 없음 · 원본 보관</div></footer>
+<script type="application/json" id="blur-config">{"inputSchema":{"type":"object","properties":{"issue":{"type":"string","enum":["motion","missed-focus","low-light-noise","low-resolution-crop","compressed-copy"]},"intended_use":{"type":"string","enum":["casual-memory","print","work-profile"]},"important_detail":{"type":"string","enum":["overall-scene","face","text"]},"digital_zoom_or_heavy_crop":{"type":"boolean"},"possible_lens_smudge":{"type":"boolean"}},"required":["issue","intended_use","important_detail","digital_zoom_or_heavy_crop","possible_lens_smudge"],"additionalProperties":false},"labels":{"issue":{"motion":"피사체나 카메라가 움직였음","missed-focus":"선명한 부분이 원하는 대상이 아님","low-light-noise":"저조도, 입자감 또는 색상 노이즈","low-resolution-crop":"이미지가 작거나 과도하게 크롭됨","compressed-copy":"채팅, 소셜, 공유 앨범에서 받은 사본"},"intended_use":{"casual-memory":"개인 또는 가족 추억","print":"인쇄 또는 확대","work-profile":"업무, 판매 등록, 프로필용"},"important_detail":{"overall-scene":"전체 장면","face":"얼굴","text":"글자나 문구"}},"issueGuidance":{"motion":{"limitation":"움직임이 있으면 세부 정보가 여러 픽셀에 흩어집니다. 이 페이지는 이미지를 받지 않으므로 심각도를 판단할 수 없습니다.","first_action":"이 사본을 보정하기 전에 흔들림이 덜한 프레임, 라이브 포토 프레임 또는 원본 연속 촬영을 먼저 찾아보세요.","steps":["찾을 수 있는 것 중 흔들림이 가장 적은 원본 파일에서 시작한다.","노이즈가 있을 때만 가벼운 노이즈 제거를 먼저 하고, 그 다음 적당히 선명하게 한다.","가장자리가 갈라지거나 얼굴이 달라지거나 후광이 피사체보다 두드러지면 멈춘다."]},"missed-focus":{"limitation":"선명화는 촬영 당시의 초점 위치를 옮길 수 없습니다. 중요한 부분에 세부 정보가 담기지 않았다면 그대로 흐리게 남을 수 있습니다.","first_action":"앞뒤 프레임을 확인해 원하는 얼굴, 글자, 피사체가 실제로 초점이 맞은 버전을 찾아보세요.","steps":["피사체가 가장 선명한 원본 프레임을 사용한다.","적당히 선명화한 뒤 100% 배율에서 원본과 비교한다.","생성된 것처럼 보이는 눈, 글자, 질감을 복원된 사실로 취급하지 않는다."]},"low-light-noise":{"limitation":"노이즈 제거는 실제 미세한 질감까지 지울 수 있고, 강한 선명화는 입자감을 더 두드러지게 할 수 있습니다.","first_action":"원본 파일을 찾아 주요 문제가 흔들림인지 노이즈인지, 아니면 둘 다인지 먼저 확인하세요.","steps":["먼저 노이즈를 보수적으로 줄인 뒤 선명화를 더한다.","피부, 머리카락, 옷감, 어두운 그림자 부분이 밀랍처럼 되거나 얼룩덜룩해지지 않았는지 확인한다.","가장 날카로운 가장자리가 아니라 질감이 믿을 만한 결과를 남긴다."]},"low-resolution-crop":{"limitation":"업스케일은 픽셀을 추가하지만 촬영 해상도 밖에 실제로 어떤 세부 정보가 있었는지는 증명할 수 없습니다.","first_action":"작은 사본을 확대하기 전에 크롭되지 않은 원본이나 가장 큰 내보내기본을 먼저 찾아보세요.","steps":["구할 수 있는 가장 높은 해상도의 원본에서 시작한다.","목표 출력에 맞춰 한 번만 확대하고 반복해서 크기를 조정하지 않는다.","실제 화면이나 인쇄 크기, 그리고 100% 배율에서 결과를 확인한다."]},"compressed-copy":{"limitation":"공유되거나 다시 저장된 사본은 픽셀 수가 적거나 압축 손상이 있을 수 있으며 선명화가 이를 더 두드러지게 할 수 있습니다.","first_action":"메시지나 소셜 미디어 사본을 보정하기 전에 원본이나 압축이 가장 적은 사본을 먼저 요청하세요.","steps":["원본이 있다면 크기와 파일 출처를 비교한다.","보정 전에 저장과 공유를 반복하지 않는다.","가볍게 압축 손상을 줄인 뒤 가장자리와 작은 글자를 주의 깊게 확인한다."]}},"useChecks":{"casual-memory":"장면을 바꿔버리는 과도한 세부 정보보다 자연스러워 보이는 추억을 우선한다.","print":"내보내기 전에 예상 인쇄 크기와 관람 거리를 기준으로 판단한다.","work-profile":"신원, 상품, 로고, 문구는 항상 사실대로 유지하고, 애매한 보정 결과를 중요한 주장의 근거로 삼지 않는다."},"detailChecks":{"overall-scene":"직선, 나뭇잎, 옷감, 반복 무늬에 후광이나 가짜 질감이 생기지 않았는지 확인한다.","face":"눈, 치아, 헤어라인, 얼굴 비율을 손대지 않은 원본과 비교한다.","text":"중요한 글자는 모두 알려진 출처와 대조하고, 불분명한 글자는 미확인 상태로 둔다."},"zoomNote":"과도한 크롭이나 디지털 줌은 촬영된 세부 정보를 줄입니다. 가능하다면 크롭되지 않은 원본으로 돌아가세요.","smudgeNote":"렌즈를 닦으면 앞으로의 촬영에는 도움이 되지만 과거의 광학적 세부 정보는 되살릴 수 없습니다. 사진이 흐릴 때 Apple은 극세사 천 사용을 권장합니다.","preserveOriginal":"보정하거나 내보내기 전에 손대지 않은 원본을 먼저 복제하거나 보관하세요.","outputBoundary":"목표 크기에서 실제로 도움이 되는, 가장 절제된 결과를 선택하세요. 보정은 겉모습을 개선할 수 있지만 이 가이드는 역사적, 감식, 법적, 의료적, 신원 확인용 세부 정보를 검증하지 않습니다.","sourceBoundary":"이미지가 공유 앨범, 채팅, 소셜 서비스에서 왔다면 먼저 원본을 찾아보세요. 아래 Apple의 2048픽셀 수치는 공유 앨범에 한정된 것이며 모든 공유 서비스에 자동으로 적용되지는 않습니다.","preventionChecklist":["사진이 흐리게 보일 때는 극세사 천으로 앞뒤 렌즈를 닦는다.","촬영 전에 원하는 피사체를 탭해 초점과 노출을 설정한다.","움직임이나 저조도가 예상되면 조명을 늘리고 휴대폰을 안정적으로 잡는다.","가능하면 과도한 디지털 줌에 의존하지 말고 피사체에 더 가까이 다가간다.","크롭, 편집, 공유 전에 손대지 않은 원본을 보관해 둔다."],"toolDescription":"유한하고 스스로 선택한 관찰 값만으로 신중한 흐린 사진 다음 단계를 반환합니다. 사진을 받거나 검사, 업로드, 저장, 처리하지 않으며 이미지를 진단하거나 복구 비율을 계산하거나 세부 정보 복원을 보장하지도 않습니다.","freeGuide":{"label":"프라이빗 흐린 사진 다음 단계 가이드","url":"https://alice51849.github.io/ios-app-guide/ko/tools/blurry-photo-diagnostic.html","boundary":"가장 가까운 관찰을 선택하세요. 실제 사진에는 여러 원인이 겹칠 수 있으므로 결과는 진단이 아니라 시작용 점검표로 다뤄야 합니다."},"officialSources":[{"label":"Apple: iPhone 카메라 도구로 촬영 준비하기","url":"https://support.apple.com/guide/iphone/set-up-your-shot-iph3dc593597/ios"},{"label":"Apple: 사진이 흐릴 때 시도할 수 있는 단계","url":"https://support.apple.com/en-us/102514"},{"label":"Apple: 공유 앨범은 사본을 업로드하고 사진을 축소함","url":"https://support.apple.com/en-us/108916"},{"label":"Adobe: Denoise, Raw Details 및 Super Resolution","url":"https://helpx.adobe.com/camera-raw/using/enhance.html"}],"webmcpSource":"https://developer.chrome.com/docs/ai/webmcp/imperative-api","optionalApp":{"label":"App Store에서 Unblurry Pro 보기","boundary":"Unblurry Pro는 선택 사항입니다. 현재 App Store 등록 정보에는 기기 내에서 동작하는 Auto Clear, Sharpen, Denoise, Low Light, Document, Super Resolution, 4× Upscale, Portrait & Restore 모드가 설명되어 있으며, 하루 한 번 무료 저장과 일회성 잠금 해제를 제공합니다. 제공 지역과 정확한 기능은 현재 스토어 페이지를 확인하세요. 이 가이드는 앱 없이도 사용할 수 있습니다.","app_store_url":"https://apps.apple.com/app/id6782275018?ct=iag_blur_guide_ko"}}</script>
+<script>
+(() => {
+  const config = JSON.parse(document.getElementById("blur-config").textContent);
+  const form = document.getElementById("blur-guide");
+  const fields = {
+    issue: document.getElementById("issue"),
+    intended_use: document.getElementById("intended-use"),
+    important_detail: document.getElementById("important-detail"),
+    digital_zoom_or_heavy_crop: document.getElementById("used-zoom"),
+    possible_lens_smudge: document.getElementById("lens-smudge")
+  };
+  const output = {
+    issue: document.getElementById("result-issue"),
+    first: document.getElementById("result-first"),
+    limit: document.getElementById("result-limit"),
+    steps: document.getElementById("result-steps"),
+    inspect: document.getElementById("result-inspect")
+  };
+
+  function enumValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const values = config.inputSchema.properties[name].enum;
+    if (typeof value !== "string" || !values.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    return value;
+  }
+
+  function booleanValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    if (typeof input[name] !== "boolean") {
+      throw new TypeError(`${name} must be a boolean.`);
+    }
+    return input[name];
+  }
+
+  function unique(values) {
+    return [...new Set(values)];
+  }
+
+  function plan(input) {
+    const issue = enumValue(input, "issue");
+    const intendedUse = enumValue(input, "intended_use");
+    const importantDetail = enumValue(input, "important_detail");
+    const usedZoom = booleanValue(input, "digital_zoom_or_heavy_crop");
+    const lensSmudge = booleanValue(input, "possible_lens_smudge");
+    const guidance = config.issueGuidance[issue];
+    const steps = [config.preserveOriginal, guidance.first_action, ...guidance.steps];
+    if (usedZoom) steps.push(config.zoomNote);
+    if (lensSmudge) steps.push(config.smudgeNote);
+    return {
+      selected_observations: {
+        issue,
+        issue_label: config.labels.issue[issue],
+        intended_use: intendedUse,
+        intended_use_label: config.labels.intended_use[intendedUse],
+        important_detail: importantDetail,
+        important_detail_label: config.labels.important_detail[importantDetail],
+        digital_zoom_or_heavy_crop: usedZoom,
+        possible_lens_smudge: lensSmudge
+      },
+      first_action: guidance.first_action,
+      likely_limitations: guidance.limitation,
+      ordered_next_steps: unique(steps),
+      output_inspection_checklist: [
+        config.detailChecks[importantDetail],
+        config.useChecks[intendedUse],
+        config.outputBoundary
+      ],
+      source_preservation_boundary: config.sourceBoundary
+    };
+  }
+
+  function validateInput(input) {
+    if (input === null || typeof input !== "object" || Array.isArray(input)) {
+      throw new TypeError("WebMCP input must be an object.");
+    }
+    const allowed = new Set(Object.keys(config.inputSchema.properties));
+    for (const name of Object.keys(input)) {
+      if (!allowed.has(name)) {
+        throw new RangeError(`${name} is not a supported input.`);
+      }
+    }
+    return plan(input);
+  }
+
+  function render() {
+    const result = plan({
+      issue: fields.issue.value,
+      intended_use: fields.intended_use.value,
+      important_detail: fields.important_detail.value,
+      digital_zoom_or_heavy_crop: fields.digital_zoom_or_heavy_crop.checked,
+      possible_lens_smudge: fields.possible_lens_smudge.checked
+    });
+    output.issue.textContent = result.selected_observations.issue_label;
+    output.first.textContent = result.first_action;
+    output.limit.textContent = result.likely_limitations;
+    output.steps.textContent = result.ordered_next_steps
+      .map((step, index) => `${index + 1}. ${step}`).join(" ");
+    output.inspect.textContent = result.output_inspection_checklist.join(" ");
+  }
+
+  async function registerWebMcp() {
+    if (!document.modelContext?.registerTool) return;
+    await document.modelContext.registerTool({
+      name: "plan_private_blurry_photo_next_steps",
+      description: config.toolDescription,
+      inputSchema: config.inputSchema,
+      annotations: {readOnlyHint: true, untrustedContentHint: false},
+      execute: async (input) => {
+        const guide = validateInput(input);
+        const result = {
+          result_type: "private_blurry_photo_next_steps",
+          photo_not_received_or_processed: true,
+          not_a_diagnosis_or_restoration_guarantee: true,
+          no_recovery_percentage: true,
+          guide,
+          prevention_checklist: config.preventionChecklist,
+          optional_free_guide: config.freeGuide,
+          official_sources: config.officialSources,
+          webmcp_preview_source: config.webmcpSource
+        };
+        if (config.optionalApp) {
+          result.optional_unblurry_pro = config.optionalApp;
+        }
+        return JSON.stringify(result);
+      }
+    });
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    render();
+  });
+  for (const field of Object.values(fields)) {
+    field.addEventListener("change", render);
+  }
+  render();
+  registerWebMcp().catch((error) =>
+    console.error("WebMCP tool registration failed.", error));
+})();
+</script>
+</body>
+</html>

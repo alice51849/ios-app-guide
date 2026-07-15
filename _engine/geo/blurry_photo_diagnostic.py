@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate a bilingual, private blurry-photo next-step guide."""
+"""Generate a nine-locale, private blurry-photo next-step guide."""
 
 from __future__ import annotations
 
@@ -15,6 +15,7 @@ ROOT = HERE.parent
 sys.path.insert(0, str(ROOT / "social"))
 
 from appstore_live import live_app_keys  # noqa: E402
+from bopomofo_flashcards import ALT_LOCALES  # noqa: E402
 from gen_calculator import write_tools_sitemap  # noqa: E402
 from gen_feed import feed_discovery_links  # noqa: E402
 from videogen.registry import APPSTORE, appstore_url  # noqa: E402
@@ -35,6 +36,19 @@ APPLE_CAMERA_HELP = "https://support.apple.com/en-us/102514"
 APPLE_SHARED_ALBUMS = "https://support.apple.com/en-us/108916"
 ADOBE_ENHANCE = "https://helpx.adobe.com/camera-raw/using/enhance.html"
 WEBMCP_SOURCE = "https://developer.chrome.com/docs/ai/webmcp/imperative-api"
+
+TARGET_ANSWER_SLUGS = (
+    "app-to-fix-blurry-pictures-on-iphone.html",
+    "best-app-to-unblur-photos.html",
+)
+INBOUND_LINK_CLASS = "blurry-photo-diagnostic-inline-link"
+_APP_STORE_ANCHOR = re.compile(
+    r'<a\b(?=[^>]*\bhref\s*=\s*(?P<q>["\'])https://apps\.apple\.com/'
+    r'(?:[^"\'?#]*/)*id'
+    + APP_ID
+    + r'(?:[?#][^"\']*)?(?P=q))[^>]*>',
+    re.IGNORECASE,
+)
 
 ISSUES = (
     "motion",
@@ -282,6 +296,7 @@ COPY = {
             "Choose visible symptoms and get conservative next steps without uploading a "
             "photo or receiving a recovery score."
         ),
+        "inline_link": "Try the private blurry photo next-step checklist",
     },
     "zh-Hant": {
         "title": "私密模糊照片下一步指南｜不上傳照片",
@@ -455,6 +470,1727 @@ COPY = {
         "footer": "只提供私密指引 · 不輸入照片 · 保留原始檔",
         "index_title": "私密模糊照片下一步指南",
         "index_description": "只選可見狀況，不上傳照片、不評恢復分數，即可取得保守處理順序。",
+        "inline_link": "使用私密模糊照片下一步檢查清單",
+    },
+    "zh-Hans": {
+        "title": "私密模糊照片下一步指南｜不上传照片",
+        "description": (
+            "无需上传照片，只需选择可见状况，即可获得针对晃动、失焦、低光噪点、重度裁切或压缩副本的保守处理顺序。"
+        ),
+        "tools": "免费工具",
+        "switch": "繁體中文",
+        "eyebrow": "免费 · 不输入照片 · 不评估恢复百分比",
+        "heading": "私密模糊照片下一步指南",
+        "lead": (
+            "只描述你已经看到的状况；网页会给出保守的处理顺序，但完全不接收照片，也无法诊断或保证修复。"
+        ),
+        "badges": (
+            "不输入图像或文件",
+            "不上传或调用云端",
+            "不计算恢复百分比",
+            "不保证找回细节",
+        ),
+        "planner": "描述可见问题",
+        "planner_intro": (
+            "选择最接近的观察；同一张照片可能同时有多种成因，因此结果只是起始检查清单，不是诊断。"
+        ),
+        "issue_label": "主要可见问题",
+        "issue_options": {
+            "motion": "人物、物体或相机移动",
+            "missed-focus": "清晰的部位不是主体",
+            "low-light-noise": "低光、颗粒或彩色噪点",
+            "low-resolution-crop": "图片太小或重度裁切",
+            "compressed-copy": "来自聊天、社交或共享相册的副本",
+        },
+        "use_label": "预计用途",
+        "use_options": {
+            "casual-memory": "个人或家庭回忆",
+            "print": "打印或放大",
+            "work-profile": "工作、商品或个人资料",
+        },
+        "detail_label": "最重要的细节",
+        "detail_options": {
+            "overall-scene": "整体场景",
+            "face": "人脸",
+            "text": "文字或字样",
+        },
+        "zoom_label": "曾使用数码变焦或重度裁切",
+        "smudge_label": "镜头可能有污渍或被遮挡",
+        "update": "生成保守下一步",
+        "issue_guidance": {
+            "motion": {
+                "limitation": "移动会让细节分散到多个像素；本页不接收图像，因此无法判断严重程度。",
+                "first_action": "增强这份副本前，先寻找晃动较少的照片、实况照片帧或原始连拍。",
+                "steps": (
+                    "从能找到且晃动最少的未修改原始文件开始。",
+                    "只有出现噪点时才先轻度降噪，再进行适度锐化。",
+                    "如果边缘出现分裂、人脸变形或光晕比主体更明显，就停止加强。",
+                ),
+            },
+            "missed-focus": {
+                "limitation": "锐化无法移动拍摄时的对焦点；重要区域若未捕捉到细节，可能仍然模糊。",
+                "first_action": "检查前后帧，寻找目标人脸、文字或主体真正对焦的版本。",
+                "steps": (
+                    "使用主体最清晰的原始帧作为来源。",
+                    "适度锐化后，以 100% 比例与原始文件比较。",
+                    "不要把看似生成的眼睛、文字或纹理当成已找回的事实。",
+                ),
+            },
+            "low-light-noise": {
+                "limitation": "降噪可能删除真实的细腻纹理，强力锐化也可能让颗粒更明显。",
+                "first_action": "找到原始文件，先判断主要问题是模糊、噪点，还是两者都有。",
+                "steps": (
+                    "先保守降低噪点，再加上少量锐化。",
+                    "检查皮肤、头发、布料与暗部阴影是否出现蜡状或斑驳瑕疵。",
+                    "保留纹理更可信的版本，不要只选边缘最锐利的结果。",
+                ),
+            },
+            "low-resolution-crop": {
+                "limitation": "放大会增加像素，但无法证明原始分辨率之外曾经存在什么真实细节。",
+                "first_action": "放大小尺寸副本前，先寻找未裁切的原图或尺寸最大的导出版本。",
+                "steps": (
+                    "从能获取的最高分辨率原图开始。",
+                    "按目标输出只放大一次，不要重复缩放。",
+                    "以实际屏幕或打印尺寸及 100% 比例检查结果。",
+                ),
+            },
+            "compressed-copy": {
+                "limitation": "分享或重新保存的副本可能像素更少，也可能有压缩瑕疵；锐化会让瑕疵更明显。",
+                "first_action": "处理聊天软件或社交媒体副本前，先索取原始文件或压缩最少的版本。",
+                "steps": (
+                    "如有原图，先比较图片尺寸与文件来源。",
+                    "增强前避免反复保存与转发。",
+                    "轻度降低压缩瑕疵，再仔细检查边缘与小字。",
+                ),
+            },
+        },
+        "use_checks": {
+            "casual-memory": "家庭回忆应以自然为先，不要为了锐利而改变场景。",
+            "print": "导出前，以预计打印尺寸和观看距离检查结果。",
+            "work-profile": "身份、商品、标志与文字都必须真实；不可用模糊的增强细节支持重要主张。",
+        },
+        "detail_checks": {
+            "overall-scene": "检查直线、树叶、布料与重复图案是否出现光晕或虚假纹理。",
+            "face": "把眼睛、牙齿、发际线与脸部比例和未修改原图比较。",
+            "text": "每个重要字符都要与已知来源核对；不清楚的文字仍视为未确认。",
+        },
+        "zoom_note": "重度裁切或数码变焦会减少已捕捉的细节；可以的话回到未裁切原图。",
+        "smudge_note": "清洁镜头只会帮助未来拍摄，不能恢复过去的光学细节；照片模糊时 Apple 建议用超细纤维布清洁镜头。",
+        "preserve_original": "任何增强或导出前，先复制或保存完全未修改的原始文件。",
+        "output_boundary": (
+            "只保留在目标尺寸下确实有帮助、处理最少的版本。增强能改善外观，但本指南不验证历史、"
+            "鉴识、法律、医疗或身份识别细节。"
+        ),
+        "source_boundary": (
+            "图像若来自共享相册、聊天或社交服务，请先寻找原图。下方 Apple 的 2048 像素说明仅适用"
+            "于共享相册，不能自动套用到所有分享服务。"
+        ),
+        "result_issue": "已选观察",
+        "result_first": "第一步",
+        "result_limit": "重要限制",
+        "result_steps": "按顺序处理",
+        "result_inspect": "保留前检查",
+        "prevention_title": "下次拍摄前养成五个习惯",
+        "prevention": (
+            "图像模糊时，用超细纤维布清洁前后镜头。",
+            "拍照前点选目标主体，设定对焦与曝光。",
+            "可能移动或光线不足时，增加光线并稳住手机。",
+            "实际可行时靠近主体，避免依赖重度数码变焦。",
+            "裁切、编辑或分享前，保留一份未修改原始文件。",
+        ),
+        "sources_title": "官方背景资料，不代表修复保证",
+        "sources_intro": (
+            "Apple 说明对焦与曝光控制、镜头检查及共享相册限制；Adobe 说明 Enhance 功能。"
+            "这些来源都不会证明某张照片一定能修复。"
+        ),
+        "source_labels": (
+            "Apple：使用 iPhone 相机工具设定拍摄画面",
+            "Apple：照片模糊时可尝试的处理步骤",
+            "Apple：共享相册会上传副本并缩小照片",
+            "Adobe：Denoise、Raw Details 与 Super Resolution",
+        ),
+        "webmcp_source": "Chrome WebMCP 命令式 API 预览（规格可能变动）",
+        "webmcp_description": (
+            "只根据有界、自行选择的可见观察，返回保守的模糊照片下一步；不接收、检查、上传、"
+            "存储或处理照片，也不诊断图像、计算恢复百分比或保证找回细节。"
+        ),
+        "app_title": "想在 iPhone 上私密测试副本？",
+        "app_text": (
+            "Unblurry Pro 是可选工具；目前 App Store 页面说明包含设备端 Auto Clear、Sharpen、"
+            "Denoise、Low Light、Document、Super Resolution、4× Upscale 及 Portrait & Restore，"
+            "每天可免费保存一次，并提供一次性解锁。供应地区与确切功能请以当前商店页面为准；"
+            "这份指南不需要 App 也能使用。"
+        ),
+        "app_cta": "在 App Store 查看 Unblurry Pro",
+        "faq_title": "增强前常见问题",
+        "faq": (
+            (
+                "这个网页会看到或上传我的照片吗？",
+                "不会。它没有图像或文件输入，只使用你选择的有界观察。",
+            ),
+            (
+                "这是诊断或恢复预测吗？",
+                "不是。它只提供保守检查清单，不计算百分比、不诊断，也不承诺结果。",
+            ),
+            (
+                "放大能证明模糊区域原本是什么吗？",
+                "不能。增加像素可能改善外观，但不清楚的细节仍然未经确认。",
+            ),
+            (
+                "为什么要先找原图？",
+                "裁切、分享副本或反复导出可能比来源像素更少、瑕疵更多。",
+            ),
+        ),
+        "footer": "只提供私密指引 · 不输入照片 · 保留原始文件",
+        "index_title": "私密模糊照片下一步指南",
+        "index_description": "只选可见状况，不上传照片、不评恢复分数，即可获得保守处理顺序。",
+        "inline_link": "使用私密模糊照片下一步检查清单",
+    },
+    "ja":     {
+        "title": "写真をアップロードしないプライベートなブレ写真ネクストステップガイド",
+        "description": (
+            "写真をアップロードせず、目に見える症状を選ぶだけで、手ブレ、ピント外れ、暗所ノイズ、"
+            "強いトリミング、圧縮コピーに対する慎重な次の一歩を確認できます。"
+        ),
+        "tools": "無料ツール",
+        "switch": "繁體中文",
+        "eyebrow": "無料 · 写真を入力しない · 復元スコアなし",
+        "heading": "プライベートなブレ写真ネクストステップガイド",
+        "lead": (
+            "すでに見えている状態だけを選んでください。このページは慎重な手順を提案しますが、"
+            "写真を一切受け取らず、診断や修復の保証もできません。"
+        ),
+        "badges": (
+            "画像やファイルの入力なし",
+            "アップロードやクラウド呼び出しなし",
+            "復元率の算出なし",
+            "細部が戻る保証なし",
+        ),
+        "planner": "見えている問題を選ぶ",
+        "planner_intro": (
+            "最も近い観察を選んでください。実際の写真には複数の原因が重なることがあるため、"
+            "結果は診断ではなく最初のチェックリストとして扱ってください。"
+        ),
+        "issue_label": "主に見える問題",
+        "issue_options": {
+            "motion": "被写体またはカメラが動いた",
+            "missed-focus": "ピントが合っている場所が違う",
+            "low-light-noise": "暗所での粒状感や色ノイズ",
+            "low-resolution-crop": "画像が小さい、または強くトリミングされている",
+            "compressed-copy": "チャット・SNS・共有アルバムからのコピー",
+        },
+        "use_label": "想定する用途",
+        "use_options": {
+            "casual-memory": "個人や家族の思い出",
+            "print": "プリントや拡大",
+            "work-profile": "仕事、出品、プロフィール用",
+        },
+        "detail_label": "最も重要な部分",
+        "detail_options": {
+            "overall-scene": "シーン全体",
+            "face": "顔",
+            "text": "文字や表示",
+        },
+        "zoom_label": "デジタルズームまたは強いトリミングを使った",
+        "smudge_label": "レンズが汚れている、または遮られている可能性",
+        "update": "慎重な次の一歩を作成",
+        "issue_guidance": {
+            "motion": {
+                "limitation": (
+                    "動きがあると detail が複数のピクセルに広がります。画像を受け取らないため、"
+                    "このページでは深刻度を判断できません。"
+                ),
+                "first_action": (
+                    "このコピーを強調する前に、ブレの少ないフレーム、Live Photos のフレーム、"
+                    "元の連写を探してください。"
+                ),
+                "steps": (
+                    "見つけられる中で最もブレの少ない未加工のオリジナルから始める。",
+                    "ノイズがある場合のみ軽いノイズ除去を行い、その後控えめにシャープ化する。",
+                    "輪郭が割れる、顔が変わる、被写体よりハローが目立つ場合は止める。",
+                ),
+            },
+            "missed-focus": {
+                "limitation": (
+                    "シャープ化では撮影時のピント位置は動かせません。重要な部分に detail が"
+                    "写っていなければ、そのままぼやける可能性があります。"
+                ),
+                "first_action": (
+                    "前後のフレームを確認し、目的の顔・文字・被写体に実際にピントが合っている"
+                    "ものを探してください。"
+                ),
+                "steps": (
+                    "被写体が最も鮮明な元のフレームを使用する。",
+                    "控えめなシャープ化を行い、100% 表示で元画像と比較する。",
+                    "生成されたように見える目・文字・質感を、復元された事実として扱わない。",
+                ),
+            },
+            "low-light-noise": {
+                "limitation": (
+                    "ノイズ除去は本物の細かい質感まで消してしまうことがあり、強いシャープ化は"
+                    "粒状感を強調することがあります。"
+                ),
+                "first_action": (
+                    "元のファイルを見つけ、主な問題がブレなのかノイズなのか、両方なのかを確認"
+                    "する。"
+                ),
+                "steps": (
+                    "まず控えめにノイズを減らしてから、シャープ化を加える。",
+                    "肌、髪、布地、暗い影の部分がロウのようになったり斑になったりしていないか"
+                    "確認する。",
+                    "最も鋭いエッジではなく、質感が信じられる仕上がりを残す。",
+                ),
+            },
+            "low-resolution-crop": {
+                "limitation": (
+                    "アップスケールはピクセルを追加しますが、撮影解像度の外側に実際にどんな"
+                    "detail があったかを証明することはできません。"
+                ),
+                "first_action": (
+                    "小さいコピーを拡大する前に、トリミングされていない元画像や最大サイズの"
+                    "書き出しを探す。"
+                ),
+                "steps": (
+                    "入手できる最も高い解像度の元画像から始める。",
+                    "目的の出力に合わせて一度だけ拡大し、繰り返しリサイズしない。",
+                    "実際の画面や印刷サイズ、および 100% 表示で結果を確認する。",
+                ),
+            },
+            "compressed-copy": {
+                "limitation": (
+                    "共有や再保存されたコピーはピクセル数が少なかったり圧縮ノイズが含まれて"
+                    "いたりし、シャープ化でそれが目立つことがあります。"
+                ),
+                "first_action": (
+                    "メッセージや SNS のコピーを修復する前に、元のファイルまたは圧縮が最も"
+                    "少ないコピーを探す。"
+                ),
+                "steps": (
+                    "元画像がある場合はサイズとファイルの出どころを比較する。",
+                    "強調処理の前に、保存と共有を繰り返さない。",
+                    "軽い圧縮ノイズ除去を行い、輪郭と小さな文字を注意深く確認する。",
+                ),
+            },
+        },
+        "use_checks": {
+            "casual-memory": "場面を変えてしまう強すぎる detail より、自然に見える思い出を優先する。",
+            "print": "書き出す前に、想定するプリントサイズと鑑賞距離で判断する。",
+            "work-profile": (
+                "人物・商品・ロゴ・文字は必ず正確に保ち、曖昧な強調結果を重要な主張の根拠に"
+                "しない。"
+            ),
+        },
+        "detail_checks": {
+            "overall-scene": "直線、葉、布地、繰り返し模様にハローや偽の質感が出ていないか確認する。",
+            "face": "目、歯、生え際、顔のバランスを未加工の元画像と比較する。",
+            "text": "重要な文字はすべて既知の情報源と照合し、不明瞭な文字は未確認のまま扱う。",
+        },
+        "zoom_note": (
+            "強いトリミングやデジタルズームは、撮影された detail を減らします。可能であれば"
+            "トリミングされていない元画像に戻ってください。"
+        ),
+        "smudge_note": (
+            "レンズの掃除は今後の撮影には役立ちますが、過去の光学的な detail は戻せません。"
+            "写真がぼやける場合、Apple はマイクロファイバークロスの使用を推奨しています。"
+        ),
+        "preserve_original": "強調や書き出しの前に、未加工のオリジナルを複製または保管してください。",
+        "output_boundary": (
+            "目的のサイズで実際に役立つ、最も控えめな結果を選んでください。強調は見た目を"
+            "改善できますが、このガイドは歴史的、鑑識、法的、医療的、本人確認に関わる detail "
+            "を検証するものではありません。"
+        ),
+        "source_boundary": (
+            "画像が共有アルバム、チャット、SNS から来た場合は、まず元画像を探してください。"
+            "下記の Apple の 2048 ピクセルという数値は共有アルバムに特有のもので、すべての"
+            "共有サービスに自動的に当てはまるわけではありません。"
+        ),
+        "result_issue": "選択した観察",
+        "result_first": "最初の一歩",
+        "result_limit": "重要な制限",
+        "result_steps": "順序立てた次の手順",
+        "result_inspect": "保持する前に確認",
+        "prevention_title": "次回の撮影に役立つ5つの習慣",
+        "prevention": (
+            "写真がぼやけて見えるときは、前後のレンズをマイクロファイバークロスで掃除する。",
+            "撮影前に被写体をタップしてピントと露出を設定する。",
+            "動きや暗さが予想される場合は光を増やし、スマートフォンを安定させる。",
+            "可能なときは強いデジタルズームに頼らず被写体に近づく。",
+            "トリミング・編集・共有の前に、未加工のオリジナルを保管しておく。",
+        ),
+        "sources_title": "公式情報であり、修復の保証ではありません",
+        "sources_intro": (
+            "Apple はピント・露出のコントロール、レンズの確認、共有アルバムの制限について"
+            "説明しています。Adobe は Enhance 機能の内容を説明しています。これらの情報源は"
+            "特定の写真が修復できることを証明するものではありません。"
+        ),
+        "source_labels": (
+            "Apple：iPhone のカメラ機能で撮影を準備する",
+            "Apple：写真がぼやけているときに試す手順",
+            "Apple：共有アルバムはコピーをアップロードし、写真を縮小する",
+            "Adobe：Denoise、Raw Details、Super Resolution",
+        ),
+        "webmcp_source": "Chrome WebMCP 命令型 API プレビュー（仕様は変更される場合があります）",
+        "webmcp_description": (
+            "有界で自己申告された可視の観察のみから、慎重なブレ写真の次の一歩を返します。"
+            "写真を受け取る、検査する、アップロードする、保存する、処理することは一切なく、"
+            "画像を診断したり、復元率を算出したり、detail の復元を保証したりすることも"
+            "ありません。"
+        ),
+        "app_title": "iPhone でコピーをプライベートに試してみたいですか？",
+        "app_text": (
+            "Unblurry Pro はオプションのアプリです。現在の App Store の掲載情報には、"
+            "デバイス上で動作する Auto Clear、Sharpen、Denoise、Low Light、Document、"
+            "Super Resolution、4× Upscale、Portrait & Restore の各モードが記載されており、"
+            "1日1回の無料保存と一度限りの購入で全機能を解除できます。提供地域や正確な機能は"
+            "現在の掲載情報でご確認ください。このガイドはアプリなしでも利用できます。"
+        ),
+        "app_cta": "App Store で Unblurry Pro を見る",
+        "faq_title": "強調処理の前によくある質問",
+        "faq": (
+            (
+                "このページは写真を見たりアップロードしたりしますか？",
+                "いいえ。画像やファイルの入力欄はなく、あなたが選んだ有界な観察のみを使用します。",
+            ),
+            (
+                "これは診断や復元予測ですか？",
+                "いいえ。慎重なチェックリストを返すだけで、割合の算出も診断も約束もしません。",
+            ),
+            (
+                "アップスケールでブレた部分の元の内容を証明できますか？",
+                "できません。ピクセルを増やすと見た目は改善する場合がありますが、曖昧な detail "
+                "は未確認のままです。",
+            ),
+            (
+                "なぜ先に元画像を探す必要があるのですか？",
+                "トリミング、共有コピー、繰り返しの書き出しは、元よりピクセル数が少なかったり"
+                "ノイズが多かったりすることがあるためです。",
+            ),
+        ),
+        "footer": "プライベートな案内のみ · 写真の入力なし · オリジナルを保管",
+        "index_title": "プライベートなブレ写真ネクストステップガイド",
+        "index_description": (
+            "見えている症状を選ぶだけで、写真をアップロードせず、復元スコアも算出せずに"
+            "慎重な次の一歩がわかります。"
+        ),
+        "inline_link": "プライベートなブレ写真ネクストステップ・チェックリストを試す",
+    },
+    "ko":     {
+        "title": "사진을 업로드하지 않는 프라이빗 흐린 사진 다음 단계 가이드",
+        "description": (
+            "사진을 업로드하지 않고 눈에 보이는 증상만 선택하면 흔들림, 초점 실패, 저조도 노이즈, "
+            "과도한 크롭, 압축된 사본에 대한 신중한 다음 단계를 확인할 수 있습니다."
+        ),
+        "tools": "무료 도구",
+        "switch": "繁體中文",
+        "eyebrow": "무료 · 사진 입력 없음 · 복구 점수 없음",
+        "heading": "프라이빗 흐린 사진 다음 단계 가이드",
+        "lead": (
+            "이미 관찰한 상태만 선택하세요. 이 페이지는 신중한 순서를 제안하지만 사진을 전혀 "
+            "받지 않으며 진단하거나 복구를 보장할 수 없습니다."
+        ),
+        "badges": (
+            "이미지나 파일 입력 없음",
+            "업로드나 클라우드 호출 없음",
+            "복구 비율 계산 없음",
+            "세부 정보 복원 보장 없음",
+        ),
+        "planner": "눈에 보이는 문제 설명",
+        "planner_intro": (
+            "가장 가까운 관찰을 선택하세요. 실제 사진에는 여러 원인이 겹칠 수 있으므로 결과는 "
+            "진단이 아니라 시작용 점검표로 다뤄야 합니다."
+        ),
+        "issue_label": "주요 관찰 가능한 문제",
+        "issue_options": {
+            "motion": "피사체나 카메라가 움직였음",
+            "missed-focus": "선명한 부분이 원하는 대상이 아님",
+            "low-light-noise": "저조도, 입자감 또는 색상 노이즈",
+            "low-resolution-crop": "이미지가 작거나 과도하게 크롭됨",
+            "compressed-copy": "채팅, 소셜, 공유 앨범에서 받은 사본",
+        },
+        "use_label": "예상 용도",
+        "use_options": {
+            "casual-memory": "개인 또는 가족 추억",
+            "print": "인쇄 또는 확대",
+            "work-profile": "업무, 판매 등록, 프로필용",
+        },
+        "detail_label": "가장 중요한 세부 정보",
+        "detail_options": {
+            "overall-scene": "전체 장면",
+            "face": "얼굴",
+            "text": "글자나 문구",
+        },
+        "zoom_label": "디지털 줌이나 과도한 크롭을 사용함",
+        "smudge_label": "렌즈에 얼룩이 있거나 가려졌을 가능성",
+        "update": "신중한 다음 단계 생성",
+        "issue_guidance": {
+            "motion": {
+                "limitation": (
+                    "움직임이 있으면 세부 정보가 여러 픽셀에 흩어집니다. 이 페이지는 이미지를 "
+                    "받지 않으므로 심각도를 판단할 수 없습니다."
+                ),
+                "first_action": (
+                    "이 사본을 보정하기 전에 흔들림이 덜한 프레임, 라이브 포토 프레임 또는 원본 "
+                    "연속 촬영을 먼저 찾아보세요."
+                ),
+                "steps": (
+                    "찾을 수 있는 것 중 흔들림이 가장 적은 원본 파일에서 시작한다.",
+                    "노이즈가 있을 때만 가벼운 노이즈 제거를 먼저 하고, 그 다음 적당히 선명하게 한다.",
+                    "가장자리가 갈라지거나 얼굴이 달라지거나 후광이 피사체보다 두드러지면 멈춘다.",
+                ),
+            },
+            "missed-focus": {
+                "limitation": (
+                    "선명화는 촬영 당시의 초점 위치를 옮길 수 없습니다. 중요한 부분에 세부 정보가 "
+                    "담기지 않았다면 그대로 흐리게 남을 수 있습니다."
+                ),
+                "first_action": (
+                    "앞뒤 프레임을 확인해 원하는 얼굴, 글자, 피사체가 실제로 초점이 맞은 버전을 "
+                    "찾아보세요."
+                ),
+                "steps": (
+                    "피사체가 가장 선명한 원본 프레임을 사용한다.",
+                    "적당히 선명화한 뒤 100% 배율에서 원본과 비교한다.",
+                    "생성된 것처럼 보이는 눈, 글자, 질감을 복원된 사실로 취급하지 않는다.",
+                ),
+            },
+            "low-light-noise": {
+                "limitation": (
+                    "노이즈 제거는 실제 미세한 질감까지 지울 수 있고, 강한 선명화는 입자감을 "
+                    "더 두드러지게 할 수 있습니다."
+                ),
+                "first_action": (
+                    "원본 파일을 찾아 주요 문제가 흔들림인지 노이즈인지, 아니면 둘 다인지 먼저 "
+                    "확인하세요."
+                ),
+                "steps": (
+                    "먼저 노이즈를 보수적으로 줄인 뒤 선명화를 더한다.",
+                    "피부, 머리카락, 옷감, 어두운 그림자 부분이 밀랍처럼 되거나 얼룩덜룩해지지 "
+                    "않았는지 확인한다.",
+                    "가장 날카로운 가장자리가 아니라 질감이 믿을 만한 결과를 남긴다.",
+                ),
+            },
+            "low-resolution-crop": {
+                "limitation": (
+                    "업스케일은 픽셀을 추가하지만 촬영 해상도 밖에 실제로 어떤 세부 정보가 "
+                    "있었는지는 증명할 수 없습니다."
+                ),
+                "first_action": (
+                    "작은 사본을 확대하기 전에 크롭되지 않은 원본이나 가장 큰 내보내기본을 먼저 "
+                    "찾아보세요."
+                ),
+                "steps": (
+                    "구할 수 있는 가장 높은 해상도의 원본에서 시작한다.",
+                    "목표 출력에 맞춰 한 번만 확대하고 반복해서 크기를 조정하지 않는다.",
+                    "실제 화면이나 인쇄 크기, 그리고 100% 배율에서 결과를 확인한다.",
+                ),
+            },
+            "compressed-copy": {
+                "limitation": (
+                    "공유되거나 다시 저장된 사본은 픽셀 수가 적거나 압축 손상이 있을 수 있으며 "
+                    "선명화가 이를 더 두드러지게 할 수 있습니다."
+                ),
+                "first_action": (
+                    "메시지나 소셜 미디어 사본을 보정하기 전에 원본이나 압축이 가장 적은 사본을 "
+                    "먼저 요청하세요."
+                ),
+                "steps": (
+                    "원본이 있다면 크기와 파일 출처를 비교한다.",
+                    "보정 전에 저장과 공유를 반복하지 않는다.",
+                    "가볍게 압축 손상을 줄인 뒤 가장자리와 작은 글자를 주의 깊게 확인한다.",
+                ),
+            },
+        },
+        "use_checks": {
+            "casual-memory": "장면을 바꿔버리는 과도한 세부 정보보다 자연스러워 보이는 추억을 우선한다.",
+            "print": "내보내기 전에 예상 인쇄 크기와 관람 거리를 기준으로 판단한다.",
+            "work-profile": (
+                "신원, 상품, 로고, 문구는 항상 사실대로 유지하고, 애매한 보정 결과를 중요한 "
+                "주장의 근거로 삼지 않는다."
+            ),
+        },
+        "detail_checks": {
+            "overall-scene": "직선, 나뭇잎, 옷감, 반복 무늬에 후광이나 가짜 질감이 생기지 않았는지 확인한다.",
+            "face": "눈, 치아, 헤어라인, 얼굴 비율을 손대지 않은 원본과 비교한다.",
+            "text": "중요한 글자는 모두 알려진 출처와 대조하고, 불분명한 글자는 미확인 상태로 둔다.",
+        },
+        "zoom_note": (
+            "과도한 크롭이나 디지털 줌은 촬영된 세부 정보를 줄입니다. 가능하다면 크롭되지 않은 "
+            "원본으로 돌아가세요."
+        ),
+        "smudge_note": (
+            "렌즈를 닦으면 앞으로의 촬영에는 도움이 되지만 과거의 광학적 세부 정보는 되살릴 수 "
+            "없습니다. 사진이 흐릴 때 Apple은 극세사 천 사용을 권장합니다."
+        ),
+        "preserve_original": "보정하거나 내보내기 전에 손대지 않은 원본을 먼저 복제하거나 보관하세요.",
+        "output_boundary": (
+            "목표 크기에서 실제로 도움이 되는, 가장 절제된 결과를 선택하세요. 보정은 겉모습을 "
+            "개선할 수 있지만 이 가이드는 역사적, 감식, 법적, 의료적, 신원 확인용 세부 정보를 "
+            "검증하지 않습니다."
+        ),
+        "source_boundary": (
+            "이미지가 공유 앨범, 채팅, 소셜 서비스에서 왔다면 먼저 원본을 찾아보세요. 아래 "
+            "Apple의 2048픽셀 수치는 공유 앨범에 한정된 것이며 모든 공유 서비스에 자동으로 "
+            "적용되지는 않습니다."
+        ),
+        "result_issue": "선택한 관찰",
+        "result_first": "첫 번째 조치",
+        "result_limit": "중요한 제한 사항",
+        "result_steps": "순서대로 진행할 다음 단계",
+        "result_inspect": "보관하기 전에 확인",
+        "prevention_title": "다음 촬영을 위한 다섯 가지 습관",
+        "prevention": (
+            "사진이 흐리게 보일 때는 극세사 천으로 앞뒤 렌즈를 닦는다.",
+            "촬영 전에 원하는 피사체를 탭해 초점과 노출을 설정한다.",
+            "움직임이나 저조도가 예상되면 조명을 늘리고 휴대폰을 안정적으로 잡는다.",
+            "가능하면 과도한 디지털 줌에 의존하지 말고 피사체에 더 가까이 다가간다.",
+            "크롭, 편집, 공유 전에 손대지 않은 원본을 보관해 둔다.",
+        ),
+        "sources_title": "공식 참고 자료이며 복구를 보장하지 않습니다",
+        "sources_intro": (
+            "Apple은 초점 및 노출 제어, 렌즈 점검, 공유 앨범 제한을 설명합니다. Adobe는 Enhance "
+            "기능이 하는 일을 설명합니다. 이 자료들 중 어느 것도 특정 사진이 복구 가능하다고 "
+            "인증하지 않습니다."
+        ),
+        "source_labels": (
+            "Apple: iPhone 카메라 도구로 촬영 준비하기",
+            "Apple: 사진이 흐릴 때 시도할 수 있는 단계",
+            "Apple: 공유 앨범은 사본을 업로드하고 사진을 축소함",
+            "Adobe: Denoise, Raw Details 및 Super Resolution",
+        ),
+        "webmcp_source": "Chrome WebMCP 명령형 API 프리뷰(사양은 변경될 수 있음)",
+        "webmcp_description": (
+            "유한하고 스스로 선택한 관찰 값만으로 신중한 흐린 사진 다음 단계를 반환합니다. "
+            "사진을 받거나 검사, 업로드, 저장, 처리하지 않으며 이미지를 진단하거나 복구 "
+            "비율을 계산하거나 세부 정보 복원을 보장하지도 않습니다."
+        ),
+        "app_title": "iPhone에서 사본을 비공개로 테스트해 보고 싶으신가요?",
+        "app_text": (
+            "Unblurry Pro는 선택 사항입니다. 현재 App Store 등록 정보에는 기기 내에서 동작하는 "
+            "Auto Clear, Sharpen, Denoise, Low Light, Document, Super Resolution, 4× Upscale, "
+            "Portrait & Restore 모드가 설명되어 있으며, 하루 한 번 무료 저장과 일회성 잠금 해제를 "
+            "제공합니다. 제공 지역과 정확한 기능은 현재 스토어 페이지를 확인하세요. 이 가이드는 "
+            "앱 없이도 사용할 수 있습니다."
+        ),
+        "app_cta": "App Store에서 Unblurry Pro 보기",
+        "faq_title": "보정 전에 자주 묻는 질문",
+        "faq": (
+            (
+                "이 페이지가 제 사진을 보거나 업로드하나요?",
+                "아니요. 이미지나 파일 입력란이 없으며 사용자가 선택한 유한한 관찰만 사용합니다.",
+            ),
+            (
+                "이것은 진단이나 복구 예측인가요?",
+                "아니요. 신중한 점검표만 반환하며 비율 계산, 진단, 결과 약속을 하지 않습니다.",
+            ),
+            (
+                "업스케일로 흐린 부분에 원래 무엇이 있었는지 증명할 수 있나요?",
+                "그럴 수 없습니다. 픽셀을 늘리면 겉모습이 개선될 수 있지만 애매한 세부 정보는 "
+                "여전히 확인되지 않은 상태로 남습니다.",
+            ),
+            (
+                "왜 원본을 먼저 찾아야 하나요?",
+                "크롭, 공유 사본, 반복된 내보내기는 원본보다 픽셀 수가 적거나 손상이 더 많을 수 "
+                "있기 때문입니다.",
+            ),
+        ),
+        "footer": "프라이빗 안내만 제공 · 사진 입력 없음 · 원본 보관",
+        "index_title": "프라이빗 흐린 사진 다음 단계 가이드",
+        "index_description": (
+            "눈에 보이는 증상만 선택하면 사진을 업로드하거나 복구 점수를 매기지 않고도 신중한 "
+            "다음 단계를 확인할 수 있습니다."
+        ),
+        "inline_link": "프라이빗 흐린 사진 다음 단계 체크리스트 사용해 보기",
+    },
+    "es-ES":     {
+        "title": "Guía privada de próximos pasos para fotos borrosas | Sin subir fotos",
+        "description": (
+            "Elige los síntomas visibles para obtener pasos conservadores ante movimiento, "
+            "enfoque fallido, ruido con poca luz, un recorte fuerte o una copia comprimida, "
+            "sin subir ninguna foto."
+        ),
+        "tools": "Herramientas gratuitas",
+        "switch": "繁體中文",
+        "eyebrow": "Gratis · sin subir fotos · sin puntuación de recuperación",
+        "heading": "Guía privada de próximos pasos para fotos borrosas",
+        "lead": (
+            "Describe lo que ya observas. La página sugiere una secuencia prudente, pero "
+            "nunca recibe una foto y no puede diagnosticar ni prometer una restauración."
+        ),
+        "badges": (
+            "Sin entrada de imagen ni archivo",
+            "Sin subida ni petición a la nube",
+            "Sin porcentaje de recuperación",
+            "Sin garantía de detalle restaurado",
+        ),
+        "planner": "Describe el problema visible",
+        "planner_intro": (
+            "Elige la observación más parecida. Una foto real puede tener varias causas a "
+            "la vez, así que trata el resultado como una lista de comprobación inicial y "
+            "no como un diagnóstico."
+        ),
+        "issue_label": "Problema visible principal",
+        "issue_options": {
+            "motion": "El sujeto o la cámara se movieron",
+            "missed-focus": "La zona nítida no es la deseada",
+            "low-light-noise": "Poca luz, grano o ruido de color",
+            "low-resolution-crop": "Imagen pequeña o recorte fuerte",
+            "compressed-copy": "Copia de un chat, red social o álbum compartido",
+        },
+        "use_label": "Uso previsto",
+        "use_options": {
+            "casual-memory": "Recuerdo personal o familiar",
+            "print": "Impresión o ampliación",
+            "work-profile": "Trabajo, anuncio o perfil",
+        },
+        "detail_label": "Detalle más importante",
+        "detail_options": {
+            "overall-scene": "Escena general",
+            "face": "Rostro",
+            "text": "Texto o rotulación",
+        },
+        "zoom_label": "Se usó zoom digital o un recorte fuerte",
+        "smudge_label": "El objetivo podría estar sucio u obstruido",
+        "update": "Generar próximos pasos conservadores",
+        "issue_guidance": {
+            "motion": {
+                "limitation": (
+                    "El movimiento puede repartir el detalle entre varios píxeles. Esta "
+                    "página no puede saber qué tan grave es sin recibir la imagen."
+                ),
+                "first_action": (
+                    "Busca un fotograma con menos movimiento, un fotograma de Live Photo o "
+                    "la secuencia original antes de mejorar esta copia."
+                ),
+                "steps": (
+                    "Empieza por el original sin tocar que tenga menos movimiento.",
+                    "Prueba una reducción de ruido suave solo si hay ruido, y luego un "
+                    "enfoque moderado.",
+                    "Detente si los bordes se dividen, los rostros cambian o los halos se "
+                    "notan más que el sujeto.",
+                ),
+            },
+            "missed-focus": {
+                "limitation": (
+                    "El enfoque no se puede mover con el enfoque digital. Si la zona "
+                    "importante nunca recibió detalle, puede seguir borrosa."
+                ),
+                "first_action": (
+                    "Revisa los fotogramas cercanos y busca uno donde el rostro, el texto "
+                    "o el sujeto deseado esté realmente enfocado."
+                ),
+                "steps": (
+                    "Usa como fuente el fotograma original más nítido.",
+                    "Aplica un enfoque moderado y compara al 100% de zoom.",
+                    "No trates ojos, letras o texturas de aspecto generado como hechos "
+                    "recuperados.",
+                ),
+            },
+            "low-light-noise": {
+                "limitation": (
+                    "La reducción de ruido puede eliminar textura real, mientras que un "
+                    "enfoque intenso puede exagerar el grano."
+                ),
+                "first_action": (
+                    "Busca el archivo original y comprueba si el problema principal es el "
+                    "desenfoque, el ruido o ambos."
+                ),
+                "steps": (
+                    "Reduce el ruido de forma conservadora antes de añadir enfoque.",
+                    "Compara piel, cabello, tela y sombras planas en busca de artefactos "
+                    "cerosos o manchados.",
+                    "Conserva la versión con textura más creíble, no solo el borde más "
+                    "afilado.",
+                ),
+            },
+            "low-resolution-crop": {
+                "limitation": (
+                    "El aumento de tamaño añade píxeles, pero no puede demostrar qué "
+                    "detalle físico existía fuera de la resolución capturada."
+                ),
+                "first_action": (
+                    "Busca el original sin recortar o la exportación más grande antes de "
+                    "ampliar una copia pequeña."
+                ),
+                "steps": (
+                    "Empieza por el original disponible de mayor resolución.",
+                    "Amplía una sola vez para la salida deseada en lugar de redimensionar "
+                    "varias veces.",
+                    "Revisa el resultado en su tamaño real de pantalla o impresión y al "
+                    "100% de zoom.",
+                ),
+            },
+            "compressed-copy": {
+                "limitation": (
+                    "Una copia compartida o vuelta a guardar puede tener menos píxeles o "
+                    "artefactos de compresión que el enfoque puede hacer más visibles."
+                ),
+                "first_action": (
+                    "Pide el archivo original o la copia menos comprimida antes de intentar "
+                    "arreglar una copia de mensajería o redes sociales."
+                ),
+                "steps": (
+                    "Compara dimensiones y origen del archivo con el original si está "
+                    "disponible.",
+                    "Evita ciclos repetidos de guardar y compartir antes de mejorar la foto.",
+                    "Usa una reducción de artefactos suave y revisa con cuidado bordes y "
+                    "texto pequeño.",
+                ),
+            },
+        },
+        "use_checks": {
+            "casual-memory": (
+                "Prefiere un recuerdo de aspecto natural antes que un detalle agresivo que "
+                "cambie la escena."
+            ),
+            "print": (
+                "Evalúa al tamaño de impresión y distancia de visualización previstos antes "
+                "de exportar."
+            ),
+            "work-profile": (
+                "Mantén la identidad, los productos, los logotipos y el texto fieles a la "
+                "realidad; nunca uses un detalle mejorado ambiguo para una afirmación "
+                "importante."
+            ),
+        },
+        "detail_checks": {
+            "overall-scene": (
+                "Revisa bordes rectos, follaje, telas y patrones repetidos en busca de "
+                "halos o texturas falsas."
+            ),
+            "face": (
+                "Compara ojos, dientes, línea del cabello y proporciones faciales con el "
+                "original sin tocar."
+            ),
+            "text": (
+                "Compara cada carácter importante con una fuente conocida; el texto poco "
+                "claro debe seguir sin verificar."
+            ),
+        },
+        "zoom_note": (
+            "Un recorte fuerte o el zoom digital reducen el detalle capturado disponible. "
+            "Vuelve al original sin recortar cuando sea posible."
+        ),
+        "smudge_note": (
+            "Limpiar el objetivo ayuda en futuras fotos, pero no puede restaurar el detalle "
+            "óptico ya perdido. Apple recomienda un paño de microfibra cuando las fotos "
+            "salen borrosas."
+        ),
+        "preserve_original": (
+            "Duplica o conserva el original sin tocar antes de cualquier mejora o "
+            "exportación."
+        ),
+        "output_boundary": (
+            "Elige el resultado menos agresivo que ayude al tamaño previsto. La mejora "
+            "puede mejorar el aspecto, pero esta guía no verifica detalles históricos, "
+            "forenses, legales, médicos o de identificación."
+        ),
+        "source_boundary": (
+            "Si la imagen vino de un Álbum compartido, un chat o una red social, busca "
+            "primero el original. La cifra de 2048 píxeles de Apple que se indica abajo se "
+            "aplica específicamente a los Álbumes compartidos, no automáticamente a "
+            "cualquier servicio para compartir."
+        ),
+        "result_issue": "Observación seleccionada",
+        "result_first": "Primera acción",
+        "result_limit": "Limitación importante",
+        "result_steps": "Próximos pasos en orden",
+        "result_inspect": "Revisar antes de conservar",
+        "prevention_title": "Cinco hábitos de captura para la próxima vez",
+        "prevention": (
+            "Limpia el objetivo frontal y trasero con un paño de microfibra cuando las "
+            "imágenes se vean borrosas.",
+            "Toca el sujeto deseado para fijar el enfoque y la exposición antes de tomar "
+            "la foto.",
+            "Usa más luz y estabiliza el teléfono cuando sea probable el movimiento o la "
+            "poca luz.",
+            "Acércate en lugar de depender de un zoom digital fuerte cuando sea posible.",
+            "Conserva un original sin tocar antes de recortar, editar o compartir.",
+        ),
+        "sources_title": "Contexto oficial, no una garantía de restauración",
+        "sources_intro": (
+            "Apple documenta los controles de enfoque y exposición, la comprobación del "
+            "objetivo y los límites de los Álbumes compartidos. Adobe documenta lo que "
+            "hacen sus funciones Enhance. Ninguna de estas fuentes certifica que una foto "
+            "concreta se pueda recuperar."
+        ),
+        "source_labels": (
+            "Apple: usa las herramientas de la cámara del iPhone para preparar tu toma",
+            "Apple: pasos que probar cuando una foto sale borrosa",
+            "Apple: los Álbumes compartidos suben una copia y reducen las fotos",
+            "Adobe: Denoise, Raw Details y Super Resolution",
+        ),
+        "webmcp_source": "Vista previa de la API imperativa de Chrome WebMCP (sujeta a cambios)",
+        "webmcp_description": (
+            "Devuelve próximos pasos conservadores para fotos borrosas a partir de "
+            "observaciones visibles limitadas y autoinformadas. Nunca recibe, inspecciona, "
+            "sube, guarda ni procesa una foto; nunca diagnostica la imagen, calcula un "
+            "porcentaje de recuperación ni garantiza el detalle restaurado."
+        ),
+        "app_title": "¿Quieres probar una copia en privado en el iPhone?",
+        "app_text": (
+            "Unblurry Pro es opcional. Su ficha actual en la App Store describe los modos "
+            "Auto Clear, Sharpen, Denoise, Low Light, Document, Super Resolution, 4× "
+            "Upscale y Portrait & Restore en el dispositivo, con un guardado gratuito al "
+            "día y un desbloqueo único. Consulta la ficha actual para conocer la "
+            "disponibilidad y las funciones exactas. Esta guía funciona sin la app."
+        ),
+        "app_cta": "Ver Unblurry Pro en la App Store",
+        "faq_title": "Preguntas antes de mejorar la foto",
+        "faq": (
+            (
+                "¿Esta página ve o sube mi foto?",
+                "No. No tiene entrada de imagen ni de archivo y solo usa las observaciones "
+                "limitadas que eliges.",
+            ),
+            (
+                "¿Es un diagnóstico o una predicción de recuperación?",
+                "No. Devuelve una lista de comprobación prudente, no un porcentaje, "
+                "diagnóstico ni promesa.",
+            ),
+            (
+                "¿Ampliar la imagen puede demostrar qué había originalmente en una zona "
+                "borrosa?",
+                "No. Más píxeles pueden mejorar el aspecto, pero el detalle ambiguo sigue "
+                "sin verificarse.",
+            ),
+            (
+                "¿Por qué debería buscar primero el original?",
+                "Un recorte, una copia compartida o una exportación repetida pueden tener "
+                "menos píxeles o más artefactos que la fuente.",
+            ),
+        ),
+        "footer": "Solo orientación privada · sin entrada de fotos · conserva el original",
+        "index_title": "Guía privada de próximos pasos para fotos borrosas",
+        "index_description": (
+            "Elige los síntomas visibles y obtén próximos pasos conservadores sin subir "
+            "una foto ni recibir una puntuación de recuperación."
+        ),
+        "inline_link": "Prueba la lista de próximos pasos privada para fotos borrosas",
+    },
+    "pt-BR":     {
+        "title": "Guia privado de próximos passos para fotos borradas | Sem enviar fotos",
+        "description": (
+            "Escolha os sintomas visíveis para obter próximos passos conservadores para "
+            "movimento, foco errado, ruído com pouca luz, corte pesado ou cópia "
+            "comprimida, sem enviar nenhuma foto."
+        ),
+        "tools": "Ferramentas gratuitas",
+        "switch": "繁體中文",
+        "eyebrow": "Grátis · sem entrada de foto · sem pontuação de recuperação",
+        "heading": "Guia privado de próximos passos para fotos borradas",
+        "lead": (
+            "Descreva o que você já observa. A página sugere uma sequência cautelosa, mas "
+            "nunca recebe uma foto e não pode diagnosticar ou prometer restauração."
+        ),
+        "badges": (
+            "Sem entrada de imagem ou arquivo",
+            "Sem envio ou chamada à nuvem",
+            "Sem porcentagem de recuperação",
+            "Sem garantia de detalhe restaurado",
+        ),
+        "planner": "Descreva o problema visível",
+        "planner_intro": (
+            "Use a observação mais próxima. Uma foto real pode ter várias causas ao mesmo "
+            "tempo, então trate o resultado como uma lista inicial, não um diagnóstico."
+        ),
+        "issue_label": "Principal problema visível",
+        "issue_options": {
+            "motion": "O sujeito ou a câmera se moveram",
+            "missed-focus": "A área nítida não é a desejada",
+            "low-light-noise": "Pouca luz, granulação ou ruído de cor",
+            "low-resolution-crop": "Imagem pequena ou corte pesado",
+            "compressed-copy": "Cópia de chat, rede social ou álbum compartilhado",
+        },
+        "use_label": "Uso pretendido",
+        "use_options": {
+            "casual-memory": "Lembrança pessoal ou familiar",
+            "print": "Impressão ou ampliação",
+            "work-profile": "Trabalho, anúncio ou perfil",
+        },
+        "detail_label": "Detalhe mais importante",
+        "detail_options": {
+            "overall-scene": "Cena geral",
+            "face": "Rosto",
+            "text": "Texto ou letreiro",
+        },
+        "zoom_label": "Foi usado zoom digital ou corte pesado",
+        "smudge_label": "A lente pode estar suja ou obstruída",
+        "update": "Gerar próximos passos conservadores",
+        "issue_guidance": {
+            "motion": {
+                "limitation": (
+                    "O movimento pode espalhar o detalhe entre vários pixels. Esta página "
+                    "não recebe a imagem, então não pode saber a gravidade."
+                ),
+                "first_action": (
+                    "Procure um quadro com menos tremor, um quadro de Live Photo ou a "
+                    "sequência original antes de melhorar esta cópia."
+                ),
+                "steps": (
+                    "Comece pelo original sem edição com menos tremor que você conseguir "
+                    "encontrar.",
+                    "Tente uma redução de ruído leve apenas se houver ruído, depois "
+                    "nitidez moderada.",
+                    "Pare se as bordas se dividirem, os rostos mudarem ou os halos "
+                    "ficarem mais visíveis que o sujeito.",
+                ),
+            },
+            "missed-focus": {
+                "limitation": (
+                    "A nitidez não move o foco já capturado. Se a área importante nunca "
+                    "recebeu detalhe, ela pode continuar borrada."
+                ),
+                "first_action": (
+                    "Verifique os quadros próximos em busca de um em que o rosto, texto "
+                    "ou sujeito desejado esteja realmente em foco."
+                ),
+                "steps": (
+                    "Use o quadro original mais nítido como fonte.",
+                    "Aplique nitidez moderada e compare em zoom de 100%.",
+                    "Não trate olhos, letras ou texturas com aparência gerada como fatos "
+                    "recuperados.",
+                ),
+            },
+            "low-light-noise": {
+                "limitation": (
+                    "A redução de ruído pode remover textura fina real, enquanto a "
+                    "nitidez forte pode exagerar a granulação."
+                ),
+                "first_action": (
+                    "Encontre o arquivo original e verifique se o problema principal é "
+                    "o desfoque, o ruído ou ambos."
+                ),
+                "steps": (
+                    "Reduza o ruído de forma conservadora antes de adicionar nitidez.",
+                    "Compare pele, cabelo, tecido e sombras planas em busca de "
+                    "artefatos encerados ou manchados.",
+                    "Mantenha a versão com textura mais confiável, não apenas a borda "
+                    "mais nítida.",
+                ),
+            },
+            "low-resolution-crop": {
+                "limitation": (
+                    "O aumento de escala adiciona pixels, mas não pode provar qual "
+                    "detalhe físico existia fora da resolução capturada."
+                ),
+                "first_action": (
+                    "Procure o original sem corte ou a exportação maior antes de "
+                    "ampliar uma cópia pequena."
+                ),
+                "steps": (
+                    "Comece pelo original disponível de maior resolução.",
+                    "Amplie uma única vez para a saída pretendida, em vez de "
+                    "redimensionar repetidamente.",
+                    "Inspecione o resultado no tamanho real de tela ou impressão e em "
+                    "zoom de 100%.",
+                ),
+            },
+            "compressed-copy": {
+                "limitation": (
+                    "Uma cópia compartilhada ou salva novamente pode ter menos pixels "
+                    "ou artefatos de compressão que a nitidez pode tornar mais visíveis."
+                ),
+                "first_action": (
+                    "Peça o arquivo original ou a cópia menos comprimida antes de "
+                    "tentar consertar uma cópia de mensagens ou rede social."
+                ),
+                "steps": (
+                    "Compare as dimensões e a origem do arquivo com o original, se "
+                    "disponível.",
+                    "Evite ciclos repetidos de salvar e compartilhar antes de melhorar "
+                    "a foto.",
+                    "Use uma redução leve de artefatos e inspecione bordas e textos "
+                    "pequenos com cuidado.",
+                ),
+            },
+        },
+        "use_checks": {
+            "casual-memory": (
+                "Prefira uma lembrança de aparência natural a um detalhe agressivo que "
+                "muda a cena."
+            ),
+            "print": (
+                "Avalie no tamanho de impressão e distância de visualização pretendidos "
+                "antes de exportar."
+            ),
+            "work-profile": (
+                "Mantenha identidade, produtos, logotipos e texto fiéis à realidade; "
+                "nunca use um detalhe aprimorado ambíguo para uma alegação importante."
+            ),
+        },
+        "detail_checks": {
+            "overall-scene": (
+                "Verifique bordas retas, folhagem, tecidos e padrões repetidos em busca "
+                "de halos ou texturas falsas."
+            ),
+            "face": (
+                "Compare olhos, dentes, linha do cabelo e proporções faciais com o "
+                "original sem edição."
+            ),
+            "text": (
+                "Compare cada caractere importante com uma fonte conhecida; texto pouco "
+                "claro deve continuar não verificado."
+            ),
+        },
+        "zoom_note": (
+            "Corte pesado ou zoom digital reduz o detalhe capturado disponível. Volte ao "
+            "original sem corte quando possível."
+        ),
+        "smudge_note": (
+            "Limpar a lente ajuda em capturas futuras, mas não pode restaurar detalhes "
+            "ópticos do passado. A Apple recomenda um pano de microfibra quando as fotos "
+            "saem borradas."
+        ),
+        "preserve_original": (
+            "Duplique ou preserve o original sem edição antes de qualquer melhoria ou "
+            "exportação."
+        ),
+        "output_boundary": (
+            "Escolha o resultado menos agressivo que ajude no tamanho pretendido. A "
+            "melhoria pode melhorar a aparência, mas este guia não verifica detalhes "
+            "históricos, forenses, legais, médicos ou de identificação."
+        ),
+        "source_boundary": (
+            "Se a imagem veio de um Álbum Compartilhado, chat ou rede social, procure "
+            "primeiro o original. O número de 2048 pixels da Apple abaixo se aplica "
+            "especificamente a Álbuns Compartilhados, não automaticamente a qualquer "
+            "serviço de compartilhamento."
+        ),
+        "result_issue": "Observação selecionada",
+        "result_first": "Primeira ação",
+        "result_limit": "Limitação importante",
+        "result_steps": "Próximos passos em ordem",
+        "result_inspect": "Inspecionar antes de manter",
+        "prevention_title": "Cinco hábitos de captura para a próxima vez",
+        "prevention": (
+            "Limpe as lentes frontal e traseira com um pano de microfibra quando as "
+            "imagens parecerem borradas.",
+            "Toque no sujeito desejado para definir foco e exposição antes de tirar a "
+            "foto.",
+            "Use mais luz e estabilize o telefone quando movimento ou pouca luz forem "
+            "prováveis.",
+            "Aproxime-se em vez de depender de zoom digital pesado quando possível.",
+            "Mantenha um original sem edição antes de cortar, editar ou compartilhar.",
+        ),
+        "sources_title": "Contexto oficial, não uma garantia de restauração",
+        "sources_intro": (
+            "A Apple documenta controles de foco e exposição, verificação de lente e "
+            "limites de Álbuns Compartilhados. A Adobe documenta o que seus recursos "
+            "Enhance fazem. Nenhuma dessas fontes certifica que uma foto específica "
+            "pode ser recuperada."
+        ),
+        "source_labels": (
+            "Apple: use as ferramentas da câmera do iPhone para preparar sua foto",
+            "Apple: passos para tentar quando uma foto está borrada",
+            "Apple: Álbuns Compartilhados enviam uma cópia e reduzem as fotos",
+            "Adobe: Denoise, Raw Details e Super Resolution",
+        ),
+        "webmcp_source": "Prévia da API imperativa do Chrome WebMCP (sujeita a mudanças)",
+        "webmcp_description": (
+            "Retorna próximos passos conservadores para fotos borradas a partir de "
+            "observações visíveis limitadas e autorrelatadas. Nunca recebe, inspeciona, "
+            "envia, armazena ou processa uma foto; nunca diagnostica a imagem, calcula "
+            "uma porcentagem de recuperação ou garante detalhe restaurado."
+        ),
+        "app_title": "Quer testar uma cópia de forma privada no iPhone?",
+        "app_text": (
+            "O Unblurry Pro é opcional. Sua ficha atual na App Store descreve os modos "
+            "Auto Clear, Sharpen, Denoise, Low Light, Document, Super Resolution, 4× "
+            "Upscale e Portrait & Restore no dispositivo, com um salvamento gratuito por "
+            "dia e um desbloqueio único. Consulte a ficha atual para disponibilidade e "
+            "recursos exatos. Este guia funciona sem o app."
+        ),
+        "app_cta": "Ver Unblurry Pro na App Store",
+        "faq_title": "Perguntas antes de melhorar a foto",
+        "faq": (
+            (
+                "Esta página vê ou envia minha foto?",
+                "Não. Ela não tem entrada de imagem ou arquivo e usa apenas as "
+                "observações limitadas que você escolhe.",
+            ),
+            (
+                "Isso é um diagnóstico ou previsão de recuperação?",
+                "Não. Ela retorna uma lista cautelosa, não uma porcentagem, diagnóstico "
+                "ou promessa.",
+            ),
+            (
+                "Ampliar a imagem pode provar o que havia originalmente em uma área "
+                "borrada?",
+                "Não. Mais pixels podem melhorar a aparência, mas o detalhe ambíguo "
+                "permanece não verificado.",
+            ),
+            (
+                "Por que devo procurar o original primeiro?",
+                "Um corte, uma cópia compartilhada ou uma exportação repetida podem ter "
+                "menos pixels ou mais artefatos do que a fonte.",
+            ),
+        ),
+        "footer": "Apenas orientação privada · sem entrada de foto · preserve o original",
+        "index_title": "Guia privado de próximos passos para fotos borradas",
+        "index_description": (
+            "Escolha os sintomas visíveis e obtenha próximos passos conservadores sem "
+            "enviar uma foto ou receber uma pontuação de recuperação."
+        ),
+        "inline_link": "Experimente a lista de próximos passos privada para fotos borradas",
+    },
+    "de-DE":     {
+        "title": "Privater Leitfaden für nächste Schritte bei unscharfen Fotos | Kein Foto-Upload",
+        "description": (
+            "Wähle sichtbare Symptome aus, um vorsichtige nächste Schritte bei Bewegung, "
+            "verfehltem Fokus, Bildrauschen, starkem Zuschnitt oder einer komprimierten "
+            "Kopie zu erhalten, ohne ein Foto hochzuladen."
+        ),
+        "tools": "Kostenlose Tools",
+        "switch": "繁體中文",
+        "eyebrow": "Kostenlos · kein Foto-Upload · keine Wiederherstellungs-Bewertung",
+        "heading": "Privater Leitfaden für nächste Schritte bei unscharfen Fotos",
+        "lead": (
+            "Beschreibe nur, was du bereits beobachtest. Die Seite schlägt eine vorsichtige "
+            "Reihenfolge vor, empfängt aber nie ein Foto und kann weder diagnostizieren "
+            "noch eine Wiederherstellung versprechen."
+        ),
+        "badges": (
+            "Keine Bild- oder Dateieingabe",
+            "Kein Upload oder Cloud-Aufruf",
+            "Keine Wiederherstellungs-Prozentangabe",
+            "Keine Garantie für wiederhergestellte Details",
+        ),
+        "planner": "Sichtbares Problem beschreiben",
+        "planner_intro": (
+            "Wähle die naheliegendste Beobachtung. Ein echtes Foto kann mehrere Ursachen "
+            "gleichzeitig haben, daher ist das Ergebnis eine erste Checkliste und keine "
+            "Diagnose."
+        ),
+        "issue_label": "Wichtigstes sichtbares Problem",
+        "issue_options": {
+            "motion": "Motiv oder Kamera hat sich bewegt",
+            "missed-focus": "Der scharfe Bereich ist nicht der gewünschte",
+            "low-light-noise": "Schwaches Licht, Bildkörnung oder Farbrauschen",
+            "low-resolution-crop": "Kleines Bild oder starker Zuschnitt",
+            "compressed-copy": "Kopie aus Chat, sozialem Netzwerk oder geteiltem Album",
+        },
+        "use_label": "Vorgesehene Verwendung",
+        "use_options": {
+            "casual-memory": "Persönliche oder familiäre Erinnerung",
+            "print": "Druck oder Vergrößerung",
+            "work-profile": "Arbeit, Anzeige oder Profil",
+        },
+        "detail_label": "Wichtigstes Detail",
+        "detail_options": {
+            "overall-scene": "Gesamte Szene",
+            "face": "Gesicht",
+            "text": "Text oder Schriftzug",
+        },
+        "zoom_label": "Digitaler Zoom oder starker Zuschnitt wurde verwendet",
+        "smudge_label": "Das Objektiv könnte verschmutzt oder verdeckt gewesen sein",
+        "update": "Vorsichtige nächste Schritte erstellen",
+        "issue_guidance": {
+            "motion": {
+                "limitation": (
+                    "Bewegung kann Details über mehrere Pixel verteilen. Diese Seite kann "
+                    "den Schweregrad ohne Empfang des Bildes nicht beurteilen."
+                ),
+                "first_action": (
+                    "Suche vor der Bearbeitung dieser Kopie nach einem weniger verwackelten "
+                    "Bild, einem Live Photo-Einzelbild oder der ursprünglichen Serie."
+                ),
+                "steps": (
+                    "Beginne mit dem am wenigsten verwackelten unbearbeiteten Original, "
+                    "das du finden kannst.",
+                    "Versuche eine sanfte Rauschreduzierung nur bei vorhandenem Rauschen, "
+                    "danach moderate Schärfung.",
+                    "Höre auf, wenn Kanten aufreißen, Gesichter sich verändern oder Halos "
+                    "stärker auffallen als das Motiv.",
+                ),
+            },
+            "missed-focus": {
+                "limitation": (
+                    "Schärfung kann den beim Aufnehmen gesetzten Fokus nicht verschieben. "
+                    "Wenn der wichtige Bereich nie Details erhalten hat, kann er unscharf "
+                    "bleiben."
+                ),
+                "first_action": (
+                    "Prüfe benachbarte Bilder auf eines, bei dem das gewünschte Gesicht, "
+                    "der Text oder das Motiv tatsächlich scharf ist."
+                ),
+                "steps": (
+                    "Verwende das schärfste Original-Einzelbild als Quelle.",
+                    "Wende zurückhaltende Schärfung an und vergleiche bei 100 % Zoom.",
+                    "Behandle generiert wirkende Augen, Buchstaben oder Texturen nicht "
+                    "als wiederhergestellte Tatsache.",
+                ),
+            },
+            "low-light-noise": {
+                "limitation": (
+                    "Rauschreduzierung kann echte feine Textur entfernen, während starke "
+                    "Schärfung die Körnung übertreiben kann."
+                ),
+                "first_action": (
+                    "Suche die Originaldatei und prüfe, ob das Hauptproblem Unschärfe, "
+                    "Rauschen oder beides ist."
+                ),
+                "steps": (
+                    "Reduziere Rauschen zunächst zurückhaltend, bevor du Schärfe "
+                    "hinzufügst.",
+                    "Prüfe Haut, Haare, Stoff und flache Schatten auf wachsartige oder "
+                    "fleckige Artefakte.",
+                    "Behalte die Version mit glaubwürdigerer Textur, nicht nur die "
+                    "schärfste Kante.",
+                ),
+            },
+            "low-resolution-crop": {
+                "limitation": (
+                    "Hochskalieren fügt Pixel hinzu, kann aber nicht beweisen, welches "
+                    "physische Detail außerhalb der aufgenommenen Auflösung existierte."
+                ),
+                "first_action": (
+                    "Suche das unbeschnittene Original oder den größten Export, bevor du "
+                    "eine kleine Kopie vergrößerst."
+                ),
+                "steps": (
+                    "Beginne mit dem verfügbaren Original mit der höchsten Auflösung.",
+                    "Vergrößere einmal für die gewünschte Ausgabe, statt wiederholt die "
+                    "Größe zu ändern.",
+                    "Prüfe das Ergebnis in der tatsächlichen Bildschirm- oder Druckgröße "
+                    "und bei 100 % Zoom.",
+                ),
+            },
+            "compressed-copy": {
+                "limitation": (
+                    "Eine geteilte oder erneut gespeicherte Kopie kann weniger Pixel oder "
+                    "Kompressionsartefakte haben, die Schärfung deutlicher machen kann."
+                ),
+                "first_action": (
+                    "Bitte um die Originaldatei oder die am wenigsten komprimierte Kopie, "
+                    "bevor du eine Nachrichten- oder Social-Media-Kopie reparierst."
+                ),
+                "steps": (
+                    "Vergleiche Abmessungen und Dateiquelle mit dem Original, falls "
+                    "verfügbar.",
+                    "Vermeide wiederholtes Speichern und Teilen vor der Verbesserung.",
+                    "Verwende eine milde Artefaktreduzierung und prüfe dann Kanten und "
+                    "kleinen Text sorgfältig.",
+                ),
+            },
+        },
+        "use_checks": {
+            "casual-memory": (
+                "Bevorzuge eine natürlich wirkende Erinnerung gegenüber aggressiven "
+                "Details, die die Szene verändern."
+            ),
+            "print": (
+                "Beurteile das Ergebnis vor dem Export in der geplanten Druckgröße und "
+                "dem Betrachtungsabstand."
+            ),
+            "work-profile": (
+                "Halte Identität, Produkte, Logos und Schrift wahrheitsgetreu; verlasse "
+                "dich nie auf mehrdeutige verbesserte Details für eine wichtige Aussage."
+            ),
+        },
+        "detail_checks": {
+            "overall-scene": (
+                "Prüfe gerade Kanten, Laub, Stoff und wiederkehrende Muster auf Halos "
+                "oder falsche Texturen."
+            ),
+            "face": (
+                "Vergleiche Augen, Zähne, Haaransatz und Gesichtsproportionen mit dem "
+                "unbearbeiteten Original."
+            ),
+            "text": (
+                "Vergleiche jedes wichtige Zeichen mit einer bekannten Quelle; unklarer "
+                "Text bleibt unbestätigt."
+            ),
+        },
+        "zoom_note": (
+            "Starker Zuschnitt oder digitaler Zoom verringert die verfügbaren "
+            "aufgenommenen Details. Kehre nach Möglichkeit zum unbeschnittenen Original "
+            "zurück."
+        ),
+        "smudge_note": (
+            "Das Reinigen des Objektivs hilft bei künftigen Aufnahmen, kann aber "
+            "vergangene optische Details nicht wiederherstellen. Apple empfiehlt ein "
+            "Mikrofasertuch, wenn Fotos unscharf sind."
+        ),
+        "preserve_original": (
+            "Dupliziere oder sichere das unbearbeitete Original vor jeder Verbesserung "
+            "oder Exportierung."
+        ),
+        "output_boundary": (
+            "Wähle das am wenigsten aggressive Ergebnis, das bei der gewünschten Größe "
+            "hilft. Verbesserung kann das Erscheinungsbild verbessern, aber dieser "
+            "Leitfaden überprüft keine historischen, forensischen, rechtlichen, "
+            "medizinischen oder identifizierenden Details."
+        ),
+        "source_boundary": (
+            "Wenn das Bild aus einem geteilten Album, einem Chat oder einem sozialen "
+            "Dienst stammt, suche zuerst das Original. Die unten genannte 2048-Pixel-Zahl "
+            "von Apple gilt speziell für geteilte Alben, nicht automatisch für jeden "
+            "Freigabedienst."
+        ),
+        "result_issue": "Ausgewählte Beobachtung",
+        "result_first": "Erster Schritt",
+        "result_limit": "Wichtige Einschränkung",
+        "result_steps": "Nächste Schritte in Reihenfolge",
+        "result_inspect": "Vor dem Behalten prüfen",
+        "prevention_title": "Fünf Aufnahmegewohnheiten für das nächste Mal",
+        "prevention": (
+            "Reinige Front- und Rückkamera-Objektiv mit einem Mikrofasertuch, wenn "
+            "Bilder unscharf wirken.",
+            "Tippe vor der Aufnahme auf das gewünschte Motiv, um Fokus und Belichtung "
+            "festzulegen.",
+            "Nutze mehr Licht und halte das Telefon ruhig, wenn Bewegung oder wenig "
+            "Licht wahrscheinlich sind.",
+            "Gehe näher heran, statt dich auf starken digitalen Zoom zu verlassen, wenn "
+            "möglich.",
+            "Bewahre ein unbearbeitetes Original auf, bevor du zuschneidest, bearbeitest "
+            "oder teilst.",
+        ),
+        "sources_title": "Offizieller Kontext, keine Wiederherstellungsgarantie",
+        "sources_intro": (
+            "Apple dokumentiert Fokus- und Belichtungssteuerung, Objektivprüfungen und "
+            "Grenzen geteilter Alben. Adobe dokumentiert, was seine Enhance-Funktionen "
+            "tun. Keine dieser Quellen bestätigt, dass ein bestimmtes Foto "
+            "wiederherstellbar ist."
+        ),
+        "source_labels": (
+            "Apple: iPhone-Kamerawerkzeuge zur Vorbereitung deiner Aufnahme nutzen",
+            "Apple: Schritte, die bei unscharfen Fotos versucht werden können",
+            "Apple: Geteilte Alben laden eine Kopie hoch und verkleinern Fotos",
+            "Adobe: Denoise, Raw Details und Super Resolution",
+        ),
+        "webmcp_source": "Vorschau der imperativen Chrome-WebMCP-API (kann sich ändern)",
+        "webmcp_description": (
+            "Liefert vorsichtige nächste Schritte bei unscharfen Fotos ausschließlich "
+            "aus begrenzten, selbst angegebenen sichtbaren Beobachtungen. Empfängt, "
+            "prüft, lädt hoch, speichert oder verarbeitet niemals ein Foto; "
+            "diagnostiziert niemals das Bild, berechnet keinen Wiederherstellungs-"
+            "Prozentsatz und garantiert kein wiederhergestelltes Detail."
+        ),
+        "app_title": "Möchtest du eine Kopie privat auf dem iPhone testen?",
+        "app_text": (
+            "Unblurry Pro ist optional. Der aktuelle App-Store-Eintrag beschreibt die "
+            "geräteinternen Modi Auto Clear, Sharpen, Denoise, Low Light, Document, "
+            "Super Resolution, 4× Upscale und Portrait & Restore, mit einem kostenlosen "
+            "Speichern pro Tag und einer einmaligen Freischaltung. Prüfe den aktuellen "
+            "Eintrag für genaue Verfügbarkeit und Funktionen. Dieser Leitfaden "
+            "funktioniert auch ohne die App."
+        ),
+        "app_cta": "Unblurry Pro im App Store ansehen",
+        "faq_title": "Fragen vor der Verbesserung",
+        "faq": (
+            (
+                "Sieht oder lädt diese Seite mein Foto hoch?",
+                "Nein. Es gibt keine Bild- oder Dateieingabe, nur die begrenzten "
+                "Beobachtungen, die du auswählst.",
+            ),
+            (
+                "Ist das eine Diagnose oder eine Wiederherstellungsprognose?",
+                "Nein. Es liefert eine vorsichtige Checkliste, keinen Prozentsatz, keine "
+                "Diagnose und kein Versprechen.",
+            ),
+            (
+                "Kann Hochskalieren beweisen, was ursprünglich in einem unscharfen "
+                "Bereich war?",
+                "Nein. Mehr Pixel können das Erscheinungsbild verbessern, aber "
+                "mehrdeutige Details bleiben unbestätigt.",
+            ),
+            (
+                "Warum sollte ich zuerst das Original suchen?",
+                "Ein Zuschnitt, eine geteilte Kopie oder ein wiederholter Export können "
+                "weniger Pixel oder mehr Artefakte als die Quelle haben.",
+            ),
+        ),
+        "footer": "Nur private Hinweise · kein Foto-Upload · Original bewahren",
+        "index_title": "Privater Leitfaden für nächste Schritte bei unscharfen Fotos",
+        "index_description": (
+            "Wähle sichtbare Symptome aus und erhalte vorsichtige nächste Schritte, "
+            "ohne ein Foto hochzuladen oder eine Wiederherstellungs-Bewertung zu "
+            "erhalten."
+        ),
+        "inline_link": "Private Checkliste für die nächsten Schritte bei unscharfen Fotos ausprobieren",
+    },
+    "fr-FR":     {
+        "title": "Guide privé des prochaines étapes pour photos floues | Aucune photo envoyée",
+        "description": (
+            "Choisissez les symptômes visibles pour obtenir des prochaines étapes "
+            "prudentes en cas de flou de mouvement, de mise au point ratée, de bruit en "
+            "faible lumière, de recadrage important ou de copie compressée, sans envoyer "
+            "de photo."
+        ),
+        "tools": "Outils gratuits",
+        "switch": "繁體中文",
+        "eyebrow": "Gratuit · aucune photo envoyée · aucun score de récupération",
+        "heading": "Guide privé des prochaines étapes pour photos floues",
+        "lead": (
+            "Décrivez uniquement ce que vous observez déjà. La page propose une "
+            "séquence prudente, mais elle ne reçoit jamais de photo et ne peut ni "
+            "diagnostiquer ni promettre une restauration."
+        ),
+        "badges": (
+            "Aucune entrée d'image ou de fichier",
+            "Aucun envoi ni appel au cloud",
+            "Aucun pourcentage de récupération",
+            "Aucune garantie de détail restauré",
+        ),
+        "planner": "Décrivez le problème visible",
+        "planner_intro": (
+            "Choisissez l'observation la plus proche. Une vraie photo peut avoir "
+            "plusieurs causes à la fois, donc traitez le résultat comme une liste de "
+            "vérification de départ, pas un diagnostic."
+        ),
+        "issue_label": "Principal problème visible",
+        "issue_options": {
+            "motion": "Le sujet ou l'appareil photo a bougé",
+            "missed-focus": "La zone nette n'est pas la bonne",
+            "low-light-noise": "Faible luminosité, grain ou bruit de couleur",
+            "low-resolution-crop": "Image petite ou fortement recadrée",
+            "compressed-copy": "Copie provenant d'un chat, d'un réseau social ou d'un "
+            "album partagé",
+        },
+        "use_label": "Usage prévu",
+        "use_options": {
+            "casual-memory": "Souvenir personnel ou familial",
+            "print": "Impression ou agrandissement",
+            "work-profile": "Travail, annonce ou profil",
+        },
+        "detail_label": "Détail le plus important",
+        "detail_options": {
+            "overall-scene": "Scène générale",
+            "face": "Visage",
+            "text": "Texte ou lettrage",
+        },
+        "zoom_label": "Un zoom numérique ou un recadrage important a été utilisé",
+        "smudge_label": "L'objectif pourrait être sale ou obstrué",
+        "update": "Générer des prochaines étapes prudentes",
+        "issue_guidance": {
+            "motion": {
+                "limitation": (
+                    "Le mouvement peut répartir le détail sur plusieurs pixels. Cette "
+                    "page ne peut pas juger de la gravité sans recevoir l'image."
+                ),
+                "first_action": (
+                    "Cherchez une image moins floue, une image Live Photo ou la rafale "
+                    "d'origine avant d'améliorer cette copie."
+                ),
+                "steps": (
+                    "Partez de l'original non retouché le moins flou que vous puissiez "
+                    "trouver.",
+                    "Essayez une réduction de bruit légère seulement s'il y a du bruit, "
+                    "puis une netteté modérée.",
+                    "Arrêtez-vous si les contours se dédoublent, si les visages "
+                    "changent ou si les halos deviennent plus visibles que le sujet.",
+                ),
+            },
+            "missed-focus": {
+                "limitation": (
+                    "La netteté ne peut pas déplacer la mise au point déjà capturée. Si "
+                    "la zone importante n'a jamais reçu de détail, elle peut rester "
+                    "floue."
+                ),
+                "first_action": (
+                    "Vérifiez les images voisines pour en trouver une où le visage, le "
+                    "texte ou le sujet voulu est vraiment net."
+                ),
+                "steps": (
+                    "Utilisez comme source l'image originale la plus nette.",
+                    "Appliquez une netteté modérée et comparez à un zoom de 100 %.",
+                    "Ne traitez pas les yeux, lettres ou textures d'apparence générée "
+                    "comme des faits récupérés.",
+                ),
+            },
+            "low-light-noise": {
+                "limitation": (
+                    "La réduction du bruit peut supprimer une texture fine réelle, "
+                    "tandis qu'une netteté forte peut exagérer le grain."
+                ),
+                "first_action": (
+                    "Trouvez le fichier original et vérifiez si le problème principal "
+                    "est le flou, le bruit, ou les deux."
+                ),
+                "steps": (
+                    "Réduisez le bruit de façon prudente avant d'ajouter de la netteté.",
+                    "Comparez la peau, les cheveux, le tissu et les ombres plates pour "
+                    "détecter des artefacts cireux ou tachetés.",
+                    "Conservez la version dont la texture est la plus crédible, pas "
+                    "seulement le contour le plus net.",
+                ),
+            },
+            "low-resolution-crop": {
+                "limitation": (
+                    "L'agrandissement ajoute des pixels, mais ne peut pas prouver quel "
+                    "détail physique existait en dehors de la résolution capturée."
+                ),
+                "first_action": (
+                    "Cherchez l'original non recadré ou l'export le plus grand avant "
+                    "d'agrandir une petite copie."
+                ),
+                "steps": (
+                    "Partez de l'original disponible à la plus haute résolution.",
+                    "Agrandissez une seule fois pour la sortie visée plutôt que de "
+                    "redimensionner plusieurs fois.",
+                    "Vérifiez le résultat à la taille réelle d'écran ou d'impression et "
+                    "à un zoom de 100 %.",
+                ),
+            },
+            "compressed-copy": {
+                "limitation": (
+                    "Une copie partagée ou réenregistrée peut avoir moins de pixels ou "
+                    "des artefacts de compression que la netteté peut rendre plus "
+                    "visibles."
+                ),
+                "first_action": (
+                    "Demandez le fichier original ou la copie la moins compressée "
+                    "avant d'essayer de réparer une copie issue d'une messagerie ou "
+                    "d'un réseau social."
+                ),
+                "steps": (
+                    "Comparez les dimensions et l'origine du fichier avec l'original "
+                    "si disponible.",
+                    "Évitez les cycles répétés d'enregistrement et de partage avant "
+                    "l'amélioration.",
+                    "Utilisez une réduction légère des artefacts, puis vérifiez "
+                    "attentivement les contours et les petits textes.",
+                ),
+            },
+        },
+        "use_checks": {
+            "casual-memory": (
+                "Préférez un souvenir d'aspect naturel plutôt qu'un détail agressif qui "
+                "change la scène."
+            ),
+            "print": (
+                "Jugez à la taille d'impression et à la distance de visionnage prévues "
+                "avant d'exporter."
+            ),
+            "work-profile": (
+                "Gardez l'identité, les produits, les logos et le texte fidèles à la "
+                "réalité ; ne vous fiez jamais à un détail amélioré ambigu pour une "
+                "affirmation importante."
+            ),
+        },
+        "detail_checks": {
+            "overall-scene": (
+                "Vérifiez les lignes droites, le feuillage, les tissus et les motifs "
+                "répétés pour détecter des halos ou de fausses textures."
+            ),
+            "face": (
+                "Comparez les yeux, les dents, la ligne des cheveux et les proportions "
+                "du visage avec l'original non retouché."
+            ),
+            "text": (
+                "Comparez chaque caractère important à une source connue ; un texte peu "
+                "clair doit rester non vérifié."
+            ),
+        },
+        "zoom_note": (
+            "Un recadrage important ou un zoom numérique réduit le détail capturé "
+            "disponible. Revenez à l'original non recadré si possible."
+        ),
+        "smudge_note": (
+            "Nettoyer l'objectif aide pour les futures prises de vue, mais ne peut pas "
+            "restaurer un détail optique déjà perdu. Apple recommande un chiffon en "
+            "microfibre lorsque les photos sont floues."
+        ),
+        "preserve_original": (
+            "Dupliquez ou conservez l'original non retouché avant toute amélioration "
+            "ou exportation."
+        ),
+        "output_boundary": (
+            "Choisissez le résultat le moins agressif qui aide à la taille prévue. "
+            "L'amélioration peut améliorer l'apparence, mais ce guide ne vérifie pas "
+            "les détails historiques, médico-légaux, juridiques, médicaux ou "
+            "d'identification."
+        ),
+        "source_boundary": (
+            "Si l'image provient d'un album partagé, d'un chat ou d'un service social, "
+            "cherchez d'abord l'original. Le chiffre de 2048 pixels d'Apple ci-dessous "
+            "s'applique spécifiquement aux albums partagés, pas automatiquement à tout "
+            "service de partage."
+        ),
+        "result_issue": "Observation sélectionnée",
+        "result_first": "Première action",
+        "result_limit": "Limitation importante",
+        "result_steps": "Prochaines étapes dans l'ordre",
+        "result_inspect": "À vérifier avant de conserver",
+        "prevention_title": "Cinq habitudes de prise de vue pour la prochaine fois",
+        "prevention": (
+            "Nettoyez les objectifs avant et arrière avec un chiffon en microfibre "
+            "lorsque les images semblent floues.",
+            "Touchez le sujet voulu pour régler la mise au point et l'exposition avant "
+            "de prendre la photo.",
+            "Utilisez plus de lumière et stabilisez le téléphone lorsque mouvement ou "
+            "faible lumière sont probables.",
+            "Rapprochez-vous plutôt que de dépendre d'un zoom numérique important quand "
+            "c'est possible.",
+            "Conservez un original non retouché avant de recadrer, modifier ou "
+            "partager.",
+        ),
+        "sources_title": "Contexte officiel, pas une garantie de restauration",
+        "sources_intro": (
+            "Apple documente les réglages de mise au point et d'exposition, la "
+            "vérification de l'objectif et les limites des albums partagés. Adobe "
+            "documente ce que font ses fonctionnalités Enhance. Aucune de ces sources "
+            "ne certifie qu'une photo précise peut être récupérée."
+        ),
+        "source_labels": (
+            "Apple : utiliser les outils de l'appareil photo iPhone pour préparer "
+            "votre prise de vue",
+            "Apple : étapes à essayer quand une photo est floue",
+            "Apple : les albums partagés téléversent une copie et réduisent les photos",
+            "Adobe : Denoise, Raw Details et Super Resolution",
+        ),
+        "webmcp_source": "Aperçu de l'API impérative Chrome WebMCP (sujette à modification)",
+        "webmcp_description": (
+            "Renvoie des prochaines étapes prudentes pour les photos floues à partir "
+            "d'observations visibles limitées et auto-déclarées. Ne reçoit, "
+            "n'inspecte, n'envoie, ne stocke ni ne traite jamais une photo ; ne "
+            "diagnostique jamais l'image, ne calcule pas de pourcentage de "
+            "récupération et ne garantit pas de détail restauré."
+        ),
+        "app_title": "Vous voulez tester une copie en privé sur iPhone ?",
+        "app_text": (
+            "Unblurry Pro est facultatif. Sa fiche actuelle sur l'App Store décrit les "
+            "modes Auto Clear, Sharpen, Denoise, Low Light, Document, Super Resolution, "
+            "4× Upscale et Portrait & Restore fonctionnant sur l'appareil, avec un "
+            "enregistrement gratuit par jour et un déverrouillage unique. Consultez la "
+            "fiche actuelle pour la disponibilité et les fonctionnalités exactes. Ce "
+            "guide fonctionne sans l'application."
+        ),
+        "app_cta": "Voir Unblurry Pro sur l'App Store",
+        "faq_title": "Questions avant d'améliorer une photo",
+        "faq": (
+            (
+                "Cette page voit-elle ou envoie-t-elle ma photo ?",
+                "Non. Elle n'a aucune entrée d'image ou de fichier et n'utilise que les "
+                "observations limitées que vous choisissez.",
+            ),
+            (
+                "Est-ce un diagnostic ou une prédiction de récupération ?",
+                "Non. Elle renvoie une liste de vérification prudente, pas un "
+                "pourcentage, un diagnostic ou une promesse.",
+            ),
+            (
+                "L'agrandissement peut-il prouver ce qu'il y avait à l'origine dans "
+                "une zone floue ?",
+                "Non. Plus de pixels peuvent améliorer l'apparence, mais un détail "
+                "ambigu reste non vérifié.",
+            ),
+            (
+                "Pourquoi devrais-je d'abord chercher l'original ?",
+                "Un recadrage, une copie partagée ou un export répété peuvent avoir "
+                "moins de pixels ou plus d'artefacts que la source.",
+            ),
+        ),
+        "footer": (
+            "Uniquement des conseils privés · aucune photo envoyée · conservez "
+            "l'original"
+        ),
+        "index_title": "Guide privé des prochaines étapes pour photos floues",
+        "index_description": (
+            "Choisissez les symptômes visibles et obtenez des prochaines étapes "
+            "prudentes sans envoyer de photo ni recevoir de score de récupération."
+        ),
+        "inline_link": "Essayez la liste de vérification privée des prochaines étapes pour photos floues",
     },
 }
 
@@ -624,7 +2360,9 @@ SCRIPT = r"""
 
 
 def canonical(locale: str) -> str:
-    prefix = "zh-Hant/" if locale == "zh-Hant" else ""
+    if locale not in ALT_LOCALES:
+        raise ValueError(f"unsupported locale: {locale}")
+    prefix = "" if locale == "en" else f"{locale}/"
     return f"{SITE}/{prefix}tools/{SLUG}.html"
 
 
@@ -673,16 +2411,23 @@ def webmcp_input_schema(locale: str) -> dict[str, object]:
     }
 
 
-def render_page(locale: str, app_public: bool) -> str:
+def render_page(locale: str, app_public: bool = False) -> str:
     if locale not in COPY:
         raise ValueError(f"unsupported locale: {locale}")
     t = COPY[locale]
-    other = "zh-Hant" if locale == "en" else "en"
+    other = "en" if locale == "zh-Hant" else "zh-Hant"
     url = canonical(locale)
     alternate = canonical(other)
-    prefix = "zh-Hant/" if locale == "zh-Hant" else ""
+    prefix = "" if locale == "en" else f"{locale}/"
     home = f"{SITE}/{prefix}index.html"
     tools = f"{SITE}/{prefix}tools/index.html"
+    alternate_links = "\n".join(
+        f'<link rel="alternate" hreflang="{alt}" href="{canonical(alt)}">'
+        for alt in ALT_LOCALES
+    )
+    alternate_links += (
+        f'\n<link rel="alternate" hreflang="x-default" href="{canonical("en")}">'
+    )
     sources = (
         APPLE_SHOT,
         APPLE_CAMERA_HELP,
@@ -770,14 +2515,7 @@ def render_page(locale: str, app_public: bool) -> str:
         "applicationCategory": "PhotographyApplication",
         "operatingSystem": "Any",
         "isAccessibleForFree": True,
-        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
-        "featureList": [
-            "No image or file input",
-            "No upload, storage or analytics",
-            "No recovery percentage",
-            "Conservative source-preservation and inspection checklist",
-            "No diagnosis or restoration guarantee",
-        ],
+        "featureList": [*t["badges"], t["source_boundary"]],
         "citation": list(sources),
     }
     faq_schema = {
@@ -801,9 +2539,7 @@ def render_page(locale: str, app_public: bool) -> str:
 <title>{html.escape(t["title"])}</title>
 <meta name="description" content="{html.escape(t["description"])}">
 <link rel="canonical" href="{url}">
-<link rel="alternate" hreflang="{locale}" href="{url}">
-<link rel="alternate" hreflang="{other}" href="{alternate}">
-<link rel="alternate" hreflang="x-default" href="{canonical("en")}">
+{alternate_links}
 <meta property="og:type" content="website">
 <meta property="og:title" content="{html.escape(t["heading"])}">
 <meta property="og:description" content="{html.escape(t["description"])}">
@@ -884,29 +2620,60 @@ def write_text_if_changed(path: Path, content: str) -> bool:
     return True
 
 
-def build(pages: Path = PAGES, app_public: bool | None = None) -> list[str]:
-    if app_public is None:
-        app_public = APP_KEY in live_app_keys(APPSTORE, pages, refresh=False)
+def insert_answer_links(pages: Path = PAGES) -> int:
+    changed = 0
+    for slug in TARGET_ANSWER_SLUGS:
+        for locale in ALT_LOCALES:
+            directory = (
+                pages / "answers" if locale == "en" else pages / locale / "answers"
+            )
+            path = directory / slug
+            if not path.is_file():
+                continue
+            text = path.read_text(encoding="utf-8")
+            if INBOUND_LINK_CLASS in text:
+                continue
+            match = _APP_STORE_ANCHOR.search(text)
+            if not match:
+                continue
+            link = (
+                f'<a class="cta ghost {INBOUND_LINK_CLASS}" '
+                f'data-blurry-photo-diagnostic-link="1" href="{canonical(locale)}" '
+                f'rel="noopener">{html.escape(COPY[locale]["inline_link"])}</a> '
+            )
+            if write_text_if_changed(
+                path,
+                text[: match.start()] + link + text[match.start() :],
+            ):
+                changed += 1
+    return changed
+
+
+def build(pages: Path = PAGES, app_public: bool = False) -> list[str]:
     outputs = []
-    for locale in COPY:
+    for locale in ALT_LOCALES:
         relative = Path("tools") / f"{SLUG}.html"
-        if locale == "zh-Hant":
+        if locale != "en":
             relative = Path(locale) / relative
         write_text_if_changed(
             pages / relative,
             render_page(locale, app_public),
         )
         outputs.append(canonical(locale))
-    update_one_index(pages / "tools" / "index.html", "en")
-    update_one_index(
-        pages / "zh-Hant" / "tools" / "index.html",
-        "zh-Hant",
-    )
+    for locale in ALT_LOCALES:
+        index_path = (
+            pages / "tools" / "index.html"
+            if locale == "en"
+            else pages / locale / "tools" / "index.html"
+        )
+        update_one_index(index_path, locale)
+    insert_answer_links(pages)
     return outputs
 
 
 def main() -> None:
-    outputs = build()
+    app_public = APP_KEY in live_app_keys(APPSTORE, PAGES, refresh=False)
+    outputs = build(app_public=app_public)
     sitemap_count = write_tools_sitemap()
     for output in outputs:
         print(f"blurry photo guide -> {output}")

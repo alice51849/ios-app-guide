@@ -11705,7 +11705,7 @@ class GeneratorTests(unittest.TestCase):
                 pages,
                 app_public=False,
             )
-            self.assertEqual(2, len(urls))
+            self.assertEqual(9, len(urls))
             english = tools / f"{blurry_photo_diagnostic.SLUG}.html"
             chinese = (
                 localized_tools
@@ -11736,6 +11736,275 @@ class GeneratorTests(unittest.TestCase):
             )
             self.assertEqual(first_bytes, english.read_bytes())
             self.assertEqual(stable_mtime, english.stat().st_mtime_ns)
+
+    def test_blurry_photo_guide_nine_locales_have_full_copy_and_guidance_parity(
+        self,
+    ):
+        m = blurry_photo_diagnostic
+        self.assertEqual(9, len(m.ALT_LOCALES))
+        self.assertEqual(set(m.ALT_LOCALES), set(m.COPY))
+        reference_keys = set(m.COPY["en"])
+        for locale in m.ALT_LOCALES:
+            copy = m.COPY[locale]
+            self.assertEqual(reference_keys, set(copy))
+            self.assertEqual(set(m.ISSUES), set(copy["issue_options"]))
+            self.assertEqual(set(m.ISSUES), set(copy["issue_guidance"]))
+            self.assertEqual(
+                set(m.INTENDED_USES), set(copy["use_options"])
+            )
+            self.assertEqual(
+                set(m.INTENDED_USES), set(copy["use_checks"])
+            )
+            self.assertEqual(
+                set(m.IMPORTANT_DETAILS), set(copy["detail_options"])
+            )
+            self.assertEqual(
+                set(m.IMPORTANT_DETAILS), set(copy["detail_checks"])
+            )
+            for issue in m.ISSUES:
+                guidance = copy["issue_guidance"][issue]
+                self.assertEqual(
+                    {"limitation", "first_action", "steps"},
+                    set(guidance),
+                )
+                self.assertEqual(3, len(guidance["steps"]))
+            self.assertEqual(4, len(copy["badges"]))
+            self.assertEqual(5, len(copy["prevention"]))
+            self.assertEqual(4, len(copy["source_labels"]))
+            self.assertEqual(4, len(copy["faq"]))
+            self.assertTrue(copy["inline_link"])
+
+    def test_blurry_photo_guide_nine_output_files_and_index_cards(self):
+        m = blurry_photo_diagnostic
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                (root / "tools").mkdir(parents=True)
+                (root / "tools" / "index.html").write_text(
+                    '<main><section class="wrap grid"></section></main>',
+                    encoding="utf-8",
+                )
+            m.build(pages, app_public=True)
+            self.assertEqual(9, len(list(pages.rglob(f"{m.SLUG}.html"))))
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                index = (root / "tools" / "index.html").read_text(
+                    encoding="utf-8"
+                )
+                self.assertEqual(1, index.count(f"{m.SLUG}.html"))
+                self.assertEqual(1, index.count(f'data-tool="{m.SLUG}"'))
+
+    def test_blurry_photo_guide_private_default_hides_app_id_public_has_unique_campaign(
+        self,
+    ):
+        m = blurry_photo_diagnostic
+        campaigns = set()
+        for locale in m.ALT_LOCALES:
+            private_page = m.render_page(locale)
+            public_page = m.render_page(locale, True)
+            self.assertNotIn(f"id{m.APP_ID}", private_page)
+            self.assertNotIn("apps.apple.com", private_page)
+            self.assertNotIn('class="app-card', private_page)
+            self.assertIn(f"id{m.APP_ID}", public_page)
+            campaign = f"iag_blur_guide_{locale.lower()}"
+            self.assertIn(campaign, public_page)
+            campaigns.add(campaign)
+        self.assertEqual(len(m.ALT_LOCALES), len(campaigns))
+
+    def test_blurry_photo_guide_webmcp_tool_is_strict_and_side_effect_free(self):
+        m = blurry_photo_diagnostic
+        for locale in m.ALT_LOCALES:
+            page = m.render_page(locale, True)
+            self.assertIn("document.modelContext?.registerTool", page)
+            self.assertIn(
+                'name: "plan_private_blurry_photo_next_steps"', page
+            )
+            self.assertIn(
+                "annotations: {readOnlyHint: true, untrustedContentHint: false}",
+                page,
+            )
+            schema = m.webmcp_input_schema(locale)
+            self.assertFalse(schema["additionalProperties"])
+            self.assertEqual(
+                [
+                    "issue",
+                    "intended_use",
+                    "important_detail",
+                    "digital_zoom_or_heavy_crop",
+                    "possible_lens_smudge",
+                ],
+                schema["required"],
+            )
+            self.assertEqual(
+                list(m.ISSUES), schema["properties"]["issue"]["enum"]
+            )
+            self.assertEqual(
+                list(m.INTENDED_USES),
+                schema["properties"]["intended_use"]["enum"],
+            )
+            self.assertEqual(
+                list(m.IMPORTANT_DETAILS),
+                schema["properties"]["important_detail"]["enum"],
+            )
+            self.assertEqual(
+                "boolean",
+                schema["properties"]["digital_zoom_or_heavy_crop"]["type"],
+            )
+            self.assertEqual(
+                "boolean",
+                schema["properties"]["possible_lens_smudge"]["type"],
+            )
+            execute = m.SCRIPT.split(
+                "execute: async (input) => {", 1
+            )[1].split("return JSON.stringify(result);", 1)[0]
+            for mutation in (
+                "textContent",
+                "innerHTML",
+                "appendChild",
+                "replaceChildren",
+                "scroll",
+                "fetch(",
+                "localStorage",
+                "sessionStorage",
+                "navigator.clipboard",
+                "document.cookie",
+                "location.href",
+                "window.open",
+                "window.print",
+                "createElement",
+            ):
+                self.assertNotIn(mutation, execute)
+
+    def test_blurry_photo_guide_visible_and_webmcp_selection_share_plan_function(
+        self,
+    ):
+        m = blurry_photo_diagnostic
+        self.assertEqual(1, m.SCRIPT.count("function plan(input)"))
+        render_fn = m.SCRIPT.split("function render()", 1)[1].split(
+            "\n  async function registerWebMcp", 1
+        )[0]
+        execute = m.SCRIPT.split(
+            "execute: async (input) => {", 1
+        )[1].split("return JSON.stringify(result);", 1)[0]
+        self.assertIn("plan(", render_fn)
+        self.assertIn("validateInput(input)", execute)
+        self.assertIn("return plan(input);", m.SCRIPT)
+
+    def test_blurry_photo_guide_rejects_non_boolean_toggle_inputs(self):
+        m = blurry_photo_diagnostic
+        self.assertIn(
+            'if (typeof input[name] !== "boolean") {', m.SCRIPT
+        )
+        self.assertIn(
+            'throw new TypeError(`${name} must be a boolean.`);', m.SCRIPT
+        )
+
+    def test_blurry_photo_guide_rejects_invalid_locale(self):
+        m = blurry_photo_diagnostic
+        with self.assertRaises(ValueError):
+            m.canonical("xx-XX")
+        with self.assertRaises(ValueError):
+            m.render_page("xx-XX", False)
+        with self.assertRaises(ValueError):
+            m.webmcp_input_schema("xx-XX")
+
+    def test_blurry_photo_guide_json_ld_is_valid_localized_and_has_no_offer(
+        self,
+    ):
+        m = blurry_photo_diagnostic
+        for locale in m.ALT_LOCALES:
+            page = m.render_page(locale, True)
+            self.assertIn(f'hreflang="{locale}"', page)
+            for hreflang in m.ALT_LOCALES:
+                self.assertIn(f'hreflang="{hreflang}"', page)
+            self.assertIn('hreflang="x-default"', page)
+            self.assertIn('type="application/atom+xml"', page)
+            self.assertIn('type="application/rss+xml"', page)
+            self.assertIn('type="application/feed+json"', page)
+            self.assertNotIn('"offers"', page)
+            self.assertNotIn('"@type":"Offer"', page)
+            self.assertNotIn('"price":"0"', page)
+            schema_match = re.search(
+                r'<script type="application/ld\+json">(.*?)</script>',
+                page,
+                flags=re.S,
+            )
+            schema = json.loads(schema_match.group(1))
+            self.assertEqual("WebApplication", schema["@type"])
+            self.assertTrue(schema["isAccessibleForFree"])
+            self.assertNotIn("offers", schema)
+            self.assertEqual(
+                [
+                    *m.COPY[locale]["badges"],
+                    m.COPY[locale]["source_boundary"],
+                ],
+                schema["featureList"],
+            )
+            all_ld_json = re.findall(
+                r'<script type="application/ld\+json">(.*?)</script>',
+                page,
+                flags=re.S,
+            )
+            faq_schema = next(
+                json.loads(blob)
+                for blob in all_ld_json
+                if json.loads(blob).get("@type") == "FAQPage"
+            )
+            self.assertTrue(faq_schema["mainEntity"])
+
+    def test_blurry_photo_guide_inbound_links_are_idempotent_for_nine_locales(
+        self,
+    ):
+        m = blurry_photo_diagnostic
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                answers = root / "answers"
+                answers.mkdir(parents=True)
+                for slug in m.TARGET_ANSWER_SLUGS:
+                    (answers / slug).write_text(
+                        '<p>intro copy stays untouched</p>'
+                        '<a class="cta" href="https://apps.apple.'
+                        f'com/app/id{m.APP_ID}?ct=iag_ans">Get the app</a>',
+                        encoding="utf-8",
+                    )
+            first = m.insert_answer_links(pages)
+            self.assertEqual(len(m.TARGET_ANSWER_SLUGS) * 9, first)
+            second = m.insert_answer_links(pages)
+            self.assertEqual(0, second)
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                for slug in m.TARGET_ANSWER_SLUGS:
+                    text = (root / "answers" / slug).read_text(
+                        encoding="utf-8"
+                    )
+                    self.assertEqual(1, text.count(m.INBOUND_LINK_CLASS))
+                    self.assertIn(m.canonical(locale), text)
+                    self.assertIn("intro copy stays untouched", text)
+                    self.assertIn(f"id{m.APP_ID}?ct=iag_ans", text)
+
+    def test_blurry_photo_guide_repeated_build_is_byte_idempotent(self):
+        m = blurry_photo_diagnostic
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                (root / "tools").mkdir(parents=True)
+                (root / "tools" / "index.html").write_text(
+                    '<main><section class="wrap grid"></section></main>',
+                    encoding="utf-8",
+                )
+            m.build(pages, app_public=True)
+            before = {
+                path: path.read_bytes() for path in pages.rglob("*.html")
+            }
+            m.build(pages, app_public=True)
+            after = {
+                path: path.read_bytes() for path in pages.rglob("*.html")
+            }
+            self.assertEqual(before, after)
 
     def test_daily_checklist_planner_is_private_bilingual_and_bounded(self):
         english = daily_checklist_planner.render_page(

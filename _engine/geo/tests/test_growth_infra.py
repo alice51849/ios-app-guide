@@ -44,6 +44,7 @@ import appstore_live
 import build_pages
 import build_pages_i18n
 import blurry_photo_diagnostic
+import bopomofo_matching_pair_cards
 import bopomofo_symbol_contrast_cards
 import cleanup_localized_assets
 import daily_checklist_planner
@@ -13413,6 +13414,533 @@ class GeneratorTests(unittest.TestCase):
             m.render_page("en", app_public=True),
         )
 
+    def test_bopomofo_matching_pair_cards_is_private_transparent_and_boundary_compliant(
+        self,
+    ):
+        m = bopomofo_matching_pair_cards
+        pages = {
+            locale: m.render_page(locale, app_public=False)
+            for locale in m.ALT_LOCALES
+        }
+        public = m.render_page("en", app_public=True)
+        for locale, page in pages.items():
+            self.assertIn('"@type":"WebApplication"', page)
+            self.assertNotIn('"@type":"SoftwareApplication"', page)
+            self.assertIn(
+                '"applicationCategory":"EducationalApplication"', page
+            )
+            self.assertNotIn('"offers"', page)
+            self.assertIn('"@type":"HowTo"', page)
+            self.assertIn('"@type":"FAQPage"', page)
+            self.assertIn('"@type":"BreadcrumbList"', page)
+            self.assertIn(f'"dateModified":"{m.CONTENT_DATE}"', page)
+            self.assertIn("document.modelContext?.registerTool", page)
+            self.assertIn(
+                'name: "create_private_bopomofo_matching_pair_cards"',
+                page,
+            )
+            self.assertIn(
+                "annotations: {readOnlyHint: true, "
+                "untrustedContentHint: false}",
+                page,
+            )
+            self.assertIn("is_not_assessment: true", page)
+            self.assertIn("no_score_grade_or_diagnosis: true", page)
+            self.assertIn("no_memory_improvement_claim: true", page)
+            self.assertIn("no_child_data_received: true", page)
+            self.assertIn("no_pronunciation_or_romanization: true", page)
+            self.assertIn(
+                html.escape(m.COPY[locale]["no_pronunciation_note"]),
+                page,
+            )
+            self.assertIn(m.MOE_HANDBOOK, page)
+            self.assertIn(m.MOE_STROKE_ORDER, page)
+            self.assertIn(m.UNICODE_NAMES_LIST, page)
+            self.assertIn(m.UNICODE_CHART_PDF, page)
+            self.assertIn(m.WEBMCP_SOURCE, page)
+            self.assertIn(
+                html.escape(m.COPY[locale]["heading"]),
+                page,
+            )
+            for hreflang in m.ALT_LOCALES:
+                self.assertIn(f'hreflang="{hreflang}"', page)
+            self.assertIn('hreflang="x-default"', page)
+            for forbidden in (
+                'type="file"',
+                "<textarea",
+                "FileReader",
+                "fetch(",
+                "XMLHttpRequest",
+                "localStorage",
+                "sessionStorage",
+                "document.cookie",
+                "navigator.modelContext",
+                "origin-trial",
+                "Math.random",
+                "your child scored",
+                "assessment result",
+                "learning outcome",
+                "diagnoses your child",
+                "pronunciation score",
+                "memory improvement",
+                "no signup",
+                "no-signup",
+                "on-device progress",
+            ):
+                self.assertNotIn(forbidden, page)
+            self.assertNotIn(f"id{m.APP_ID}", page)
+        self.assertIn(
+            m.COPY["zh-Hant"]["boundary_text"], pages["zh-Hant"]
+        )
+        self.assertIn(
+            m.COPY["zh-Hans"]["boundary_text"], pages["zh-Hans"]
+        )
+        self.assertIn(m.COPY["ja"]["boundary_text"], pages["ja"])
+        self.assertIn(m.COPY["ko"]["boundary_text"], pages["ko"])
+        self.assertIn(f"id{m.APP_ID}", public)
+        self.assertLess(
+            public.index('id="bopomofo-matchpair-planner"'),
+            public.index(html.escape(m.COPY["en"]["sources_title"])),
+        )
+        self.assertLess(
+            public.index(html.escape(m.COPY["en"]["faq_title"])),
+            public.index(html.escape(m.COPY["en"]["app_title"])),
+        )
+        self.assertLess(
+            public.index(html.escape(m.COPY["en"]["sources_title"])),
+            public.index(html.escape(m.COPY["en"]["app_title"])),
+        )
+        execute = m.SCRIPT.split(
+            "execute: async (input) => {", 1
+        )[1].split("return JSON.stringify(result);", 1)[0]
+        for mutation in (
+            "textContent",
+            "innerHTML",
+            "appendChild",
+            "replaceChildren",
+            "scroll",
+            "fetch(",
+            "localStorage",
+            "sessionStorage",
+            "navigator.clipboard",
+            "document.cookie",
+            "location.href",
+            "window.open",
+            "window.print",
+            "createElement",
+        ):
+            self.assertNotIn(mutation, execute)
+        self.assertIn("validateInput(input)", execute)
+
+    def test_bopomofo_matching_pair_cards_exact_37_symbols_and_code_points(
+        self,
+    ):
+        m = bopomofo_matching_pair_cards
+        self.assertEqual(37, len(m.SYMBOLS))
+        self.assertEqual(
+            tuple(chr(code) for code in range(0x3105, 0x312A)),
+            m.SYMBOL_VALUES,
+        )
+        self.assertEqual(37, len(set(m.SYMBOL_VALUES)))
+        for symbol, code_point, name in m.SYMBOLS:
+            self.assertEqual(f"U+{ord(symbol):04X}", code_point)
+            self.assertTrue(name.startswith("BOPOMOFO LETTER "))
+            self.assertEqual(code_point, m.SYMBOL_CODE_POINTS[symbol])
+            self.assertEqual(name, m.SYMBOL_UNICODE_NAMES[symbol])
+        # Dialect letters after U+3129 must never be selectable.
+        self.assertNotIn(chr(0x312A), m.SYMBOL_VALUES)
+        self.assertNotIn(chr(0x3104), m.SYMBOL_VALUES)
+        for pair_count in range(m.PAIR_COUNT_MIN, m.PAIR_COUNT_MAX + 1):
+            for set_number in (1, 2, 37, 50, 99):
+                symbols = m.select_symbols(pair_count, set_number)
+                self.assertEqual(pair_count, len(symbols))
+                self.assertEqual(pair_count, len(set(symbols)))
+                for symbol in symbols:
+                    self.assertIn(symbol, m.SYMBOL_VALUES)
+
+    def test_bopomofo_matching_pair_cards_nine_locale_copy_key_parity(self):
+        m = bopomofo_matching_pair_cards
+        self.assertEqual(9, len(m.ALT_LOCALES))
+        self.assertEqual(set(m.ALT_LOCALES), set(m.COPY.keys()))
+        reference_keys = set(m.COPY["en"].keys())
+        list_keys = (
+            "faq",
+            "badges",
+            "how_it_works_list",
+            "instructions_list",
+            "source_labels",
+        )
+        reference_lengths = {
+            key: len(m.COPY["en"][key]) for key in list_keys
+        }
+        for locale in m.ALT_LOCALES:
+            entry = m.COPY[locale]
+            self.assertEqual(
+                reference_keys,
+                set(entry.keys()),
+                f"key mismatch for locale {locale}",
+            )
+            for key in list_keys:
+                self.assertEqual(
+                    reference_lengths[key],
+                    len(entry[key]),
+                    f"{key} length mismatch for locale {locale}",
+                )
+            for key, value in entry.items():
+                if isinstance(value, str):
+                    self.assertTrue(value.strip())
+                elif isinstance(value, (list, tuple)):
+                    for item in value:
+                        if isinstance(item, str):
+                            self.assertTrue(item.strip())
+
+    def test_bopomofo_matching_pair_cards_schema_strict_and_rejects_invalid(
+        self,
+    ):
+        m = bopomofo_matching_pair_cards
+        schema = m.webmcp_input_schema("en")
+        self.assertFalse(schema["additionalProperties"])
+        self.assertEqual(
+            ["pair_count", "set_number", "card_size"],
+            schema["required"],
+        )
+        self.assertEqual("integer", schema["properties"]["pair_count"]["type"])
+        self.assertEqual(4, schema["properties"]["pair_count"]["minimum"])
+        self.assertEqual(12, schema["properties"]["pair_count"]["maximum"])
+        self.assertEqual("integer", schema["properties"]["set_number"]["type"])
+        self.assertEqual(1, schema["properties"]["set_number"]["minimum"])
+        self.assertEqual(99, schema["properties"]["set_number"]["maximum"])
+        self.assertEqual(
+            list(m.CARD_SIZES),
+            schema["properties"]["card_size"]["enum"],
+        )
+        script = m.SCRIPT
+        self.assertIn(
+            "const allowed = new Set(Object.keys("
+            "config.inputSchema.properties));",
+            script,
+        )
+        self.assertIn(
+            "throw new RangeError(`${name} is not a supported input.`);",
+            script,
+        )
+        self.assertIn(
+            'if (typeof value !== "number" || !Number.isInteger(value)) {',
+            script,
+        )
+        self.assertIn(
+            "throw new RangeError(`${name} is outside the supported "
+            "range.`);",
+            script,
+        )
+        self.assertNotIn("Math.random", script)
+
+        # Strict runtime rejection: unknown fields, booleans, wrong types,
+        # and out-of-bounds values must all be rejected before any output.
+        def validate(pair_count=6, set_number=1, card_size="compact", **extra):
+            payload = {
+                "pair_count": pair_count,
+                "set_number": set_number,
+                "card_size": card_size,
+                **extra,
+            }
+            allowed = {"pair_count", "set_number", "card_size"}
+            for name in payload:
+                if name not in allowed:
+                    raise ValueError(f"{name} is not a supported input.")
+            if not isinstance(payload["pair_count"], int) or isinstance(
+                payload["pair_count"], bool
+            ):
+                raise TypeError("pair_count must be an integer.")
+            if not isinstance(payload["set_number"], int) or isinstance(
+                payload["set_number"], bool
+            ):
+                raise TypeError("set_number must be an integer.")
+            if not (
+                m.PAIR_COUNT_MIN
+                <= payload["pair_count"]
+                <= m.PAIR_COUNT_MAX
+            ):
+                raise ValueError("pair_count out of range.")
+            if not (
+                m.SET_NUMBER_MIN <= payload["set_number"] <= m.SET_NUMBER_MAX
+            ):
+                raise ValueError("set_number out of range.")
+            if payload["card_size"] not in m.CARD_SIZES:
+                raise ValueError("card_size not supported.")
+            return payload
+
+        validate()
+        with self.assertRaises(ValueError):
+            validate(extra_field="nope")
+        with self.assertRaises(TypeError):
+            validate(pair_count=True)
+        with self.assertRaises(TypeError):
+            validate(set_number=False)
+        with self.assertRaises(TypeError):
+            validate(pair_count="6")
+        with self.assertRaises(ValueError):
+            validate(pair_count=3)
+        with self.assertRaises(ValueError):
+            validate(pair_count=13)
+        with self.assertRaises(ValueError):
+            validate(set_number=0)
+        with self.assertRaises(ValueError):
+            validate(set_number=100)
+        with self.assertRaises(ValueError):
+            validate(card_size="huge")
+
+    def test_bopomofo_matching_pair_cards_deterministic_selection_and_shuffle(
+        self,
+    ):
+        m = bopomofo_matching_pair_cards
+        for pair_count in (4, 6, 7, 12):
+            for set_number in (1, 2, 17, 50, 99):
+                symbols_first = m.select_symbols(pair_count, set_number)
+                symbols_second = m.select_symbols(pair_count, set_number)
+                self.assertEqual(symbols_first, symbols_second)
+                order_first = m.shuffle_order(pair_count, set_number)
+                order_second = m.shuffle_order(pair_count, set_number)
+                self.assertEqual(order_first, order_second)
+                self.assertEqual(pair_count * 2, len(order_first))
+                counts = {}
+                for pair_index in order_first:
+                    counts[pair_index] = counts.get(pair_index, 0) + 1
+                self.assertEqual(
+                    {index: 2 for index in range(pair_count)}, counts
+                )
+                for card_size in m.CARD_SIZES:
+                    built = m.build_cards(pair_count, set_number, card_size)
+                    self.assertEqual(symbols_first, built["selected_symbols"])
+                    self.assertEqual(
+                        order_first,
+                        [card["pair_index"] for card in built["cards"]],
+                    )
+                    for card in built["cards"]:
+                        self.assertEqual(card_size, card["card_size"])
+        # Card size never changes symbol selection or card order.
+        compact = m.build_cards(6, 5, "compact")
+        large = m.build_cards(6, 5, "large")
+        self.assertEqual(compact["selected_symbols"], large["selected_symbols"])
+        self.assertEqual(
+            [c["pair_index"] for c in compact["cards"]],
+            [c["pair_index"] for c in large["cards"]],
+        )
+        # Different set numbers rotate symbol coverage.
+        self.assertNotEqual(
+            m.select_symbols(6, 1), m.select_symbols(6, 2)
+        )
+        script = m.SCRIPT
+        self.assertIn("function selectSymbols(pairCount, setNumber) {", script)
+        self.assertIn("function shuffleOrder(pairCount, setNumber) {", script)
+        self.assertIn("const LCG_MULTIPLIER = 214013;", script)
+        self.assertIn("const LCG_INCREMENT = 2531011;", script)
+        self.assertIn("const LCG_MODULUS = 2147483648;", script)
+
+    def test_bopomofo_matching_pair_cards_builds_nine_locales_and_exact_19_inbound_links(
+        self,
+    ):
+        m = bopomofo_matching_pair_cards
+        classless_cta = (
+            '<a href="https://apps.apple.com/app/id'
+            f'{m.APP_ID}?ct=iag_ans" rel="nofollow noopener">'
+            "Get Lumi Bopomofo</a>"
+        )
+        self.assertIsNotNone(
+            m._EXACT_APP_STORE_ANCHOR_PATTERN.search(classless_cta)
+        )
+        self.assertIsNone(
+            m._EXACT_APP_STORE_ANCHOR_PATTERN.search(
+                '<a data-href="https://apps.apple.com/app/id'
+                f'{m.APP_ID}">Not a link target</a>'
+            )
+        )
+        self.assertIsNone(
+            m._EXACT_APP_STORE_ANCHOR_PATTERN.search(
+                '<a href="https://apps.apple.com/app/id'
+                f'{m.APP_ID}0">Different app</a>'
+            )
+        )
+        self.assertIsNone(
+            m._CTA_ANCHOR_PATTERN.search(
+                '<a class="cta" href="https://apps.apple.com/app/id'
+                f'{m.APP_ID}0">Different app</a>'
+            )
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            cta = (
+                '<a class="cta" href="https://apps.apple.com/app/id'
+                f'{m.APP_ID}?ct=iag_ans" rel="nofollow noopener">'
+                "Get Lumi Bopomofo</a>"
+            )
+            eligible_files = []
+            for locale in m.ALT_LOCALES:
+                tools = (
+                    pages / "tools"
+                    if locale == "en"
+                    else pages / locale / "tools"
+                )
+                tools.mkdir(parents=True)
+                (tools / "index.html").write_text(
+                    '<main><section class="wrap grid"></section></main>',
+                    encoding="utf-8",
+                )
+                answers = (
+                    pages / "answers"
+                    if locale == "en"
+                    else pages / locale / "answers"
+                )
+                answers.mkdir(parents=True)
+                for slug in m.TARGET_ANSWER_SLUGS:
+                    eligible = (
+                        slug == "bopomofo-tracing-app-for-kids.html"
+                        or locale in ("en", "zh-Hant")
+                    )
+                    if not eligible:
+                        continue
+                    path = answers / slug
+                    path.write_text(
+                        f"<main><p>Guidance.</p>{cta}</main>",
+                        encoding="utf-8",
+                    )
+                    eligible_files.append(path)
+                (answers / "unrelated-answer.html").write_text(
+                    "<main><p>No Lumi Bopomofo mention here.</p></main>",
+                    encoding="utf-8",
+                )
+                (answers / "mentions-id-no-cta.html").write_text(
+                    "<main><p>Search for "
+                    f"{m.APP_ID} manually, no anchor present.</p></main>",
+                    encoding="utf-8",
+                )
+                (answers / "some-other-bopomofo-page.html").write_text(
+                    f"<main><p>Broader Bopomofo page.</p>{cta}</main>",
+                    encoding="utf-8",
+                )
+                (answers / "data-href-only.html").write_text(
+                    "<main><p>Decoy anchor.</p><a data-href="
+                    f'"https://apps.apple.com/app/id{m.APP_ID}">'
+                    "Not a real link</a></main>",
+                    encoding="utf-8",
+                )
+                (answers / "longer-app-id.html").write_text(
+                    "<main><p>Different app.</p><a class=\"cta\" href="
+                    f'"https://apps.apple.com/app/id{m.APP_ID}0">'
+                    "Different app</a></main>",
+                    encoding="utf-8",
+                )
+            self.assertEqual(19, len(eligible_files))
+            unsupported = pages / "th" / "answers"
+            unsupported.mkdir(parents=True)
+            (unsupported / "bopomofo-tracing-app-for-kids.html").write_text(
+                f"<main><p>Unsupported locale.</p>{cta}</main>",
+                encoding="utf-8",
+            )
+            urls = m.build(pages, app_public=False)
+            self.assertEqual(9, len(urls))
+            for locale in m.ALT_LOCALES:
+                tools = (
+                    pages / "tools"
+                    if locale == "en"
+                    else pages / locale / "tools"
+                )
+                page_path = tools / f"{m.SLUG}.html"
+                self.assertTrue(page_path.exists())
+                index = (tools / "index.html").read_text(encoding="utf-8")
+                self.assertEqual(1, index.count(f"{m.SLUG}.html"))
+                self.assertIn(
+                    html.escape(m.COPY[locale]["index_title"]), index
+                )
+            self.assertEqual(19, len(eligible_files))
+            for path in eligible_files:
+                text = path.read_text(encoding="utf-8")
+                self.assertEqual(1, text.count(m.INBOUND_LINK_CLASS))
+                self.assertLess(
+                    text.index(m.INBOUND_LINK_CLASS),
+                    text.index(f"id{m.APP_ID}"),
+                )
+            for locale in m.ALT_LOCALES:
+                answers = (
+                    pages / "answers"
+                    if locale == "en"
+                    else pages / locale / "answers"
+                )
+                for negative_slug in (
+                    "unrelated-answer.html",
+                    "mentions-id-no-cta.html",
+                    "some-other-bopomofo-page.html",
+                    "data-href-only.html",
+                    "longer-app-id.html",
+                ):
+                    text = (answers / negative_slug).read_text(
+                        encoding="utf-8"
+                    )
+                    self.assertNotIn(m.INBOUND_LINK_CLASS, text)
+            unsupported_text = (
+                unsupported / "bopomofo-tracing-app-for-kids.html"
+            ).read_text(encoding="utf-8")
+            self.assertNotIn(m.INBOUND_LINK_CLASS, unsupported_text)
+
+            # Idempotence: running build again inserts nothing new and
+            # preserves file bytes and mtimes exactly.
+            stable_mtime = 1_700_000_000_000_000_000
+            for path in eligible_files:
+                os.utime(path, ns=(stable_mtime, stable_mtime))
+            english_page = pages / "tools" / f"{m.SLUG}.html"
+            os.utime(english_page, ns=(stable_mtime, stable_mtime))
+            bytes_before = {path: path.read_bytes() for path in eligible_files}
+            page_bytes_before = english_page.read_bytes()
+            m.build(pages, app_public=False)
+            for path in eligible_files:
+                self.assertEqual(bytes_before[path], path.read_bytes())
+                self.assertEqual(stable_mtime, path.stat().st_mtime_ns)
+            self.assertEqual(page_bytes_before, english_page.read_bytes())
+            self.assertEqual(
+                stable_mtime, english_page.stat().st_mtime_ns
+            )
+
+    def test_bopomofo_matching_pair_cards_live_gates_app_cta(self):
+        m = bopomofo_matching_pair_cards
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale in m.ALT_LOCALES:
+                tools = (
+                    pages / "tools"
+                    if locale == "en"
+                    else pages / locale / "tools"
+                )
+                tools.mkdir(parents=True)
+                (tools / "index.html").write_text(
+                    '<main><section class="wrap grid"></section></main>',
+                    encoding="utf-8",
+                )
+            with mock.patch.object(
+                m, "live_app_keys", return_value=set()
+            ):
+                m.build(pages)
+            english = (
+                pages / "tools" / f"{m.SLUG}.html"
+            ).read_text(encoding="utf-8")
+            self.assertNotIn(f"apps.apple.com/app/id{m.APP_ID}", english)
+            self.assertNotIn(m.COPY["en"]["app_title"], english)
+            with mock.patch.object(
+                m, "live_app_keys", return_value={m.APP_KEY}
+            ):
+                m.build(pages)
+            active = (
+                pages / "tools" / f"{m.SLUG}.html"
+            ).read_text(encoding="utf-8")
+            self.assertIn(f"apps.apple.com/app/id{m.APP_ID}", active)
+        self.assertNotIn(
+            f"apps.apple.com/app/id{m.APP_ID}",
+            m.render_page("en", app_public=False),
+        )
+        self.assertIn(
+            f"apps.apple.com/app/id{m.APP_ID}",
+            m.render_page("en", app_public=True),
+        )
+
     def test_wordmate_answer_leads_with_free_private_planner(self):
         question = (
             "How can I build a vocabulary study habit without uploading "
@@ -15752,6 +16280,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("vocabulary_habit_planner.py", materialize_block)
         self.assertNotIn("toeic_study_allocation_planner.py", materialize_block)
         self.assertNotIn("bopomofo_symbol_contrast_cards.py", materialize_block)
+        self.assertNotIn("bopomofo_matching_pair_cards.py", materialize_block)
         availability_block = workflow.split(
             "- name: Refresh verified App Store availability once", 1
         )[1].split("- name: Generate new answer pages", 1)[0]
@@ -15803,6 +16332,14 @@ class GeneratorTests(unittest.TestCase):
             availability_block.index("bopomofo_symbol_contrast_cards.py"),
             availability_block.index("wordmate_language_support.py"),
         )
+        self.assertLess(
+            availability_block.index("bopomofo_symbol_contrast_cards.py"),
+            availability_block.index("bopomofo_matching_pair_cards.py"),
+        )
+        self.assertLess(
+            availability_block.index("bopomofo_matching_pair_cards.py"),
+            availability_block.index("wordmate_language_support.py"),
+        )
         self.assertNotIn("gen_sitemap_lastmod.py", materialize_block)
         self.assertIn("zhuyin_picture_book_club_kit.py", workflow)
         self.assertIn("zhuyin_parent_teacher_handoff_kit.py", workflow)
@@ -15821,6 +16358,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(1, workflow.count("vocabulary_habit_planner.py"))
         self.assertEqual(1, workflow.count("toeic_study_allocation_planner.py"))
         self.assertEqual(1, workflow.count("bopomofo_symbol_contrast_cards.py"))
+        self.assertEqual(1, workflow.count("bopomofo_matching_pair_cards.py"))
         self.assertEqual(1, workflow.count("wordmate_language_support.py"))
         self.assertEqual(1, workflow.count("portfolio_app_finder.py"))
         self.assertLess(
@@ -15869,6 +16407,14 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertLess(
             workflow.index("bopomofo_symbol_contrast_cards.py"),
+            workflow.index("wordmate_language_support.py"),
+        )
+        self.assertLess(
+            workflow.index("bopomofo_symbol_contrast_cards.py"),
+            workflow.index("bopomofo_matching_pair_cards.py"),
+        )
+        self.assertLess(
+            workflow.index("bopomofo_matching_pair_cards.py"),
             workflow.index("wordmate_language_support.py"),
         )
         self.assertLess(
@@ -16110,6 +16656,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("vocabulary_habit_planner.py", publish)
         self.assertIn("toeic_study_allocation_planner.py", publish)
         self.assertIn("bopomofo_symbol_contrast_cards.py", publish)
+        self.assertIn("bopomofo_matching_pair_cards.py", publish)
         self.assertIn("wordmate_language_support.py", publish)
         self.assertIn("portfolio_app_finder.py", publish)
         self.assertEqual(
@@ -16420,6 +16967,35 @@ class GeneratorTests(unittest.TestCase):
                 "private bopomofo symbol contrast cards",
                 f"{gen_llms.SITE}/tools/"
                 "private-bopomofo-symbol-contrast-cards.html",
+            ),
+            resources,
+        )
+
+    def test_llms_uses_truthful_title_for_bopomofo_matching_pair_cards(self):
+        with tempfile.TemporaryDirectory() as directory:
+            tools = Path(directory)
+            (tools / "private-bopomofo-matching-pair-cards.html").write_text(
+                "<h1>Private Bopomofo matching-pair cards</h1>",
+                encoding="utf-8",
+            )
+            resources = gen_llms._resource_files(
+                str(tools),
+                set(gen_llms.APPS),
+                "tools",
+            )
+        self.assertIn(
+            (
+                "Private Bopomofo matching-pair cards",
+                f"{gen_llms.SITE}/tools/"
+                "private-bopomofo-matching-pair-cards.html",
+            ),
+            resources,
+        )
+        self.assertNotIn(
+            (
+                "private bopomofo matching-pair cards",
+                f"{gen_llms.SITE}/tools/"
+                "private-bopomofo-matching-pair-cards.html",
             ),
             resources,
         )

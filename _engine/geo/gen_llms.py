@@ -77,6 +77,9 @@ RESOURCE_TITLES = {
     ("tools", "private-bopomofo-symbol-contrast-cards"): (
         "Private Bopomofo symbol contrast cards"
     ),
+    ("tools", "private-bopomofo-matching-pair-cards"): (
+        "Private Bopomofo matching-pair cards"
+    ),
 }
 RESOURCE_SYNC_SOURCE = "https://alice51849.github.io/.well-known/resourcesync"
 

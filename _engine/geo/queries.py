@@ -92,6 +92,8 @@ CURATED = {
         "chinese phonics app for children",
         "注音符號學習 app 推薦",
         "教小孩注音的 app",
+        "Where can I make free printable Bopomofo flashcards for all 37 Zhuyin symbols?",
+        "免費注音符號字卡產生器 37 個可列印",
     ],
     "zodira": [
         "best astrology app with no subscription",

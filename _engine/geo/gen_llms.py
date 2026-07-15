@@ -74,6 +74,9 @@ RESOURCE_TITLES = {
     ("tools", "private-toeic-study-allocation-planner"): (
         "Private TOEIC study allocation planner"
     ),
+    ("tools", "private-bopomofo-symbol-contrast-cards"): (
+        "Private Bopomofo symbol contrast cards"
+    ),
 }
 RESOURCE_SYNC_SOURCE = "https://alice51849.github.io/.well-known/resourcesync"
 

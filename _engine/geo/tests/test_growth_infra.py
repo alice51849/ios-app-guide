@@ -46,6 +46,7 @@ import build_pages_i18n
 import blurry_photo_diagnostic
 import bopomofo_bingo_cards
 import bopomofo_flashcards
+import bopomofo_practice_sheet
 import bopomofo_matching_pair_cards
 import bopomofo_symbol_contrast_cards
 import cleanup_localized_assets
@@ -13638,6 +13639,226 @@ class GeneratorTests(unittest.TestCase):
             m.canonical("en"), facts["primary_resource_url"]
         )
 
+    def test_bopomofo_practice_sheets_are_private_fixed_and_read_only(self):
+        m = bopomofo_practice_sheet
+        pages = {
+            locale: m.render_page(locale, app_public=False)
+            for locale in m.ALT_LOCALES
+        }
+        public = m.render_page("en", app_public=True)
+        self.assertEqual(9, len(pages))
+        for locale, page in pages.items():
+            self.assertIn('"@type":"WebApplication"', page)
+            self.assertNotIn('"@type":"SoftwareApplication"', page)
+            self.assertNotIn('"offers"', page)
+            self.assertIn('"@type":"HowTo"', page)
+            self.assertIn('"@type":"FAQPage"', page)
+            self.assertIn(f'"dateModified":"{m.CONTENT_DATE}"', page)
+            self.assertIn("document.modelContext?.registerTool", page)
+            self.assertIn(
+                'name: "create_private_bopomofo_practice_sheets"', page
+            )
+            self.assertIn(
+                "annotations: {readOnlyHint: true, "
+                "untrustedContentHint: false}",
+                page,
+            )
+            self.assertIn("deterministic: true", page)
+            self.assertIn("official_symbol_order: true", page)
+            self.assertIn("is_not_stroke_order_instruction: true", page)
+            self.assertIn("is_not_handwriting_assessment: true", page)
+            self.assertIn(
+                "no_score_grade_rank_or_diagnosis: true", page
+            )
+            self.assertIn("no_child_data_received: true", page)
+            self.assertIn("no_learning_outcome_claim: true", page)
+            self.assertIn(m.MOE_HANDBOOK, page)
+            self.assertIn(m.MOE_STROKE_ORDER, page)
+            self.assertIn(m.UNICODE_CHART_PDF, page)
+            self.assertIn(m.WEBMCP_SOURCE, page)
+            self.assertIn(html.escape(m.COPY[locale]["heading"]), page)
+            for hreflang in m.ALT_LOCALES:
+                self.assertIn(f'hreflang="{hreflang}"', page)
+            for forbidden in (
+                "Math.random",
+                "localStorage",
+                "sessionStorage",
+                "document.cookie",
+                "navigator.modelContext",
+                "fetch(",
+                "XMLHttpRequest",
+                'type="file"',
+                "<textarea",
+                "new Date",
+                'name="name"',
+                'name="date"',
+            ):
+                self.assertNotIn(forbidden, page)
+            self.assertNotIn(f"id{m.APP_ID}", page)
+        self.assertIn(f"id{m.APP_ID}", public)
+        execute = m.SCRIPT.split(
+            "execute: async (input) => {", 1
+        )[1].split("return JSON.stringify(result);", 1)[0]
+        self.assertIn("validateInput(input)", execute)
+        for mutation in (
+            "textContent",
+            "innerHTML",
+            "appendChild",
+            "replaceChildren",
+            "scroll",
+            "fetch(",
+            "localStorage",
+            "sessionStorage",
+            "navigator.clipboard",
+            "document.cookie",
+            "location.href",
+            "window.open",
+            "window.print",
+            "createElement",
+        ):
+            self.assertNotIn(mutation, execute)
+
+    def test_bopomofo_practice_sheets_use_official_order_and_fixed_pages(self):
+        m = bopomofo_practice_sheet
+        expected = tuple(
+            "ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙ"
+            "ㄧㄨㄩㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥㄦ"
+        )
+        self.assertEqual(expected, m.OFFICIAL_SYMBOLS)
+        self.assertEqual(("ㄧ", "ㄨ", "ㄩ"), m.MEDIALS)
+        result = m.build_practice_sheets(
+            list(reversed(expected)), 6, 2, 6, True
+        )
+        self.assertEqual(
+            list(expected), result["selected_inputs"]["symbols"]
+        )
+        self.assertEqual(7, len(result["pages"]))
+        self.assertEqual(
+            [6, 6, 6, 6, 6, 6, 1],
+            [len(page["rows"]) for page in result["pages"]],
+        )
+        rows = [
+            row for page in result["pages"] for row in page["rows"]
+        ]
+        self.assertEqual(37, len(rows))
+        self.assertTrue(all(row["trace_cells"] == 6 for row in rows))
+        self.assertTrue(all(row["blank_cells"] == 2 for row in rows))
+        self.assertEqual(
+            result,
+            m.build_practice_sheets(
+                list(reversed(expected)), 6, 2, 6, True
+            ),
+        )
+        with self.assertRaises(TypeError):
+            m.build_practice_sheets(tuple(expected), 4, 4, 6, True)
+        with self.assertRaises(ValueError):
+            m.build_practice_sheets([], 4, 4, 6, True)
+        with self.assertRaises(ValueError):
+            m.build_practice_sheets(["ㄅ", "ㄅ"], 4, 4, 6, True)
+        with self.assertRaises(ValueError):
+            m.build_practice_sheets(["A"], 4, 4, 6, True)
+        with self.assertRaises(ValueError):
+            m.build_practice_sheets(["ㄅ"], 3, 4, 6, True)
+        with self.assertRaises(ValueError):
+            m.build_practice_sheets(["ㄅ"], 4, 4, 7, True)
+        with self.assertRaises(TypeError):
+            m.build_practice_sheets(["ㄅ"], 4, 4, 6, 1)
+        schema = m.webmcp_input_schema("en")
+        self.assertFalse(schema["additionalProperties"])
+        self.assertEqual(
+            [
+                "symbols",
+                "trace_cells",
+                "blank_cells",
+                "rows_per_page",
+                "show_category",
+            ],
+            schema["required"],
+        )
+        self.assertTrue(
+            schema["properties"]["symbols"]["uniqueItems"]
+        )
+        self.assertEqual(
+            list(expected),
+            schema["properties"]["symbols"]["items"]["enum"],
+        )
+        self.assertIn("@page{size:A4 portrait", m.STYLE)
+        self.assertIn("break-after:page", m.STYLE)
+        self.assertIn(
+            ".worksheet-page.rows-6 .practice-row{height:40mm}", m.STYLE
+        )
+
+    def test_bopomofo_practice_sheets_build_locales_and_discovery(self):
+        m = bopomofo_practice_sheet
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                tools = root / "tools"
+                answers = root / "answers"
+                tools.mkdir(parents=True)
+                answers.mkdir(parents=True)
+                (tools / "index.html").write_text(
+                    '<section class="wrap grid"></section>',
+                    encoding="utf-8",
+                )
+                (answers / m.TARGET_ANSWER_SLUG).write_text(
+                    '<a class="cta" href="https://apps.apple.com/app/id'
+                    f'{m.APP_ID}?ct=test">App</a>',
+                    encoding="utf-8",
+                )
+            outputs = m.build(pages, app_public=True)
+            self.assertEqual(9, len(outputs))
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                page = (
+                    root / "tools" / f"{m.SLUG}.html"
+                ).read_text(encoding="utf-8")
+                index = (root / "tools" / "index.html").read_text(
+                    encoding="utf-8"
+                )
+                answer = (
+                    root / "answers" / m.TARGET_ANSWER_SLUG
+                ).read_text(encoding="utf-8")
+                self.assertIn(f"id{m.APP_ID}", page)
+                self.assertIn(
+                    f"iag_bopomofo_practice_sheet_{locale.lower()}",
+                    page,
+                )
+                self.assertIn(f'data-tool="{m.SLUG}"', index)
+                self.assertEqual(
+                    1, answer.count(m.INBOUND_LINK_CLASS)
+                )
+                self.assertIn(m.canonical(locale), answer)
+            before = {
+                path: path.read_bytes()
+                for path in pages.rglob("*.html")
+            }
+            m.build(pages, app_public=True)
+            after = {
+                path: path.read_bytes()
+                for path in pages.rglob("*.html")
+            }
+            self.assertEqual(before, after)
+        question = (
+            "Where can I make a free printable Bopomofo tracing and copy "
+            "worksheet for all 37 symbols?"
+        )
+        self.assertEqual(
+            1, queries.CURATED["lumibopomofo"].count(question)
+        )
+        self.assertIs(
+            queries.CURATED["lumibopomofopro"],
+            queries.CURATED["lumibopomofo"],
+        )
+        facts = answer_deep.deep_facts(
+            question, "lumibopomofo", "Lumi Bopomofo"
+        )
+        self.assertIsNotNone(facts)
+        self.assertEqual(
+            m.canonical("en"), facts["primary_resource_url"]
+        )
+
     def test_bopomofo_bingo_cards_are_private_deterministic_and_read_only(
         self,
     ):
@@ -16685,6 +16906,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("bopomofo_matching_pair_cards.py", materialize_block)
         self.assertNotIn("bopomofo_bingo_cards.py", materialize_block)
         self.assertNotIn("bopomofo_flashcards.py", materialize_block)
+        self.assertNotIn("bopomofo_practice_sheet.py", materialize_block)
         availability_block = workflow.split(
             "- name: Refresh verified App Store availability once", 1
         )[1].split("- name: Generate new answer pages", 1)[0]
@@ -16750,6 +16972,10 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertLess(
             availability_block.index("bopomofo_flashcards.py"),
+            availability_block.index("bopomofo_practice_sheet.py"),
+        )
+        self.assertLess(
+            availability_block.index("bopomofo_practice_sheet.py"),
             availability_block.index("wordmate_language_support.py"),
         )
         self.assertNotIn("gen_sitemap_lastmod.py", materialize_block)
@@ -16773,6 +16999,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(1, workflow.count("bopomofo_matching_pair_cards.py"))
         self.assertEqual(1, workflow.count("bopomofo_bingo_cards.py"))
         self.assertEqual(1, workflow.count("bopomofo_flashcards.py"))
+        self.assertEqual(1, workflow.count("bopomofo_practice_sheet.py"))
         self.assertEqual(1, workflow.count("wordmate_language_support.py"))
         self.assertEqual(1, workflow.count("portfolio_app_finder.py"))
         self.assertLess(
@@ -16837,6 +17064,10 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertLess(
             workflow.index("bopomofo_flashcards.py"),
+            workflow.index("bopomofo_practice_sheet.py"),
+        )
+        self.assertLess(
+            workflow.index("bopomofo_practice_sheet.py"),
             workflow.index("wordmate_language_support.py"),
         )
         self.assertLess(
@@ -17081,6 +17312,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("bopomofo_matching_pair_cards.py", publish)
         self.assertIn("bopomofo_bingo_cards.py", publish)
         self.assertIn("bopomofo_flashcards.py", publish)
+        self.assertIn("bopomofo_practice_sheet.py", publish)
         self.assertIn("wordmate_language_support.py", publish)
         self.assertIn("portfolio_app_finder.py", publish)
         self.assertEqual(

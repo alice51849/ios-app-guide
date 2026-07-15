@@ -96,6 +96,7 @@ jobs:
           python3 bopomofo_matching_pair_cards.py
           python3 bopomofo_bingo_cards.py
           python3 bopomofo_flashcards.py
+          python3 bopomofo_practice_sheet.py
           python3 wordmate_language_support.py
           python3 portfolio_app_finder.py
       - name: Generate new answer pages (+ rebuild answers sitemap)

@@ -128,6 +128,9 @@ def main():
         [PY, os.path.join(HERE, "bopomofo_flashcards.py")], env=env
     )
     require(
+        [PY, os.path.join(HERE, "bopomofo_practice_sheet.py")], env=env
+    )
+    require(
         [PY, os.path.join(HERE, "prioritize_trip_planet_resources.py")],
         env=env,
     )

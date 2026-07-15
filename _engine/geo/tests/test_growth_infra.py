@@ -12704,7 +12704,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("document.cookie", english)
         self.assertEqual(44, english.count("<option value=") - 23)
         self.assertIn(
-            "https://apps.apple.com/app/id6789917808?ct=iag_vocab_planner",
+            "https://apps.apple.com/app/id6789917808?ct=iag_vocab_planner_en",
             english,
         )
         self.assertLess(
@@ -12756,6 +12756,239 @@ class GeneratorTests(unittest.TestCase):
             'const WORDMATE_APP_STORE_URL="";',
             inactive,
         )
+
+    def test_vocabulary_habit_planner_nine_locales_have_full_copy_and_language_parity(
+        self,
+    ):
+        m = vocabulary_habit_planner
+        self.assertEqual(9, len(m.ALT_LOCALES))
+        self.assertEqual(set(m.ALT_LOCALES), set(m.COPY))
+        reference_keys = set(m.COPY["en"])
+        codes = {code for code, _, _ in m.LANGUAGES}
+        self.assertEqual(44, len(codes))
+        for locale in m.ALT_LOCALES:
+            self.assertEqual(reference_keys, set(m.COPY[locale]))
+            copy = m.COPY[locale]
+            self.assertEqual(
+                set(copy["mode_options"]), set(m.COPY["en"]["mode_options"])
+            )
+            self.assertEqual(
+                set(copy["goal_options"]), set(m.COPY["en"]["goal_options"])
+            )
+            if locale not in ("en", "zh-Hant"):
+                self.assertEqual(codes, set(m._LANGUAGE_LOCALE_NAMES[locale]))
+                for code in codes:
+                    name = m._LANGUAGE_LOCALE_NAMES[locale][code]
+                    self.assertIsInstance(name, str)
+                    self.assertTrue(name)
+            for code, english_name, zh_hant_name in m.LANGUAGES:
+                name = m.language_display_name(
+                    locale, code, english_name, zh_hant_name
+                )
+                self.assertIsInstance(name, str)
+                self.assertTrue(name)
+            self.assertEqual(
+                44, len(m.webmcp_languages(locale))
+            )
+        self.assertEqual(
+            [item["name"] for item in m.webmcp_languages("en")],
+            [english_name for _, english_name, _ in m.LANGUAGES],
+        )
+        self.assertEqual(
+            [item["name"] for item in m.webmcp_languages("zh-Hant")],
+            [zh_hant_name for _, _, zh_hant_name in m.LANGUAGES],
+        )
+
+    def test_vocabulary_habit_planner_tools_index_cards_appear_once_per_locale(self):
+        m = vocabulary_habit_planner
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                (root / "tools").mkdir(parents=True)
+                (root / "tools" / "index.html").write_text(
+                    '<main><section class="wrap grid"></section></main>',
+                    encoding="utf-8",
+                )
+            m.build(pages, show_app_cta=True)
+            self.assertEqual(9, len(list(pages.rglob(f"{m.SLUG}.html"))))
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                index = (root / "tools" / "index.html").read_text(
+                    encoding="utf-8"
+                )
+                self.assertEqual(1, index.count(f"{m.SLUG}.html"))
+                self.assertEqual(1, index.count(f'data-tool="{m.SLUG}"'))
+
+    def test_vocabulary_habit_planner_private_renderer_hides_app_id_public_has_unique_campaign(
+        self,
+    ):
+        m = vocabulary_habit_planner
+        campaigns = set()
+        for locale in m.ALT_LOCALES:
+            private_page = m.render_page(locale, show_app_cta=False)
+            self.assertEqual(private_page, m.render_page(locale))
+            public_page = m.render_page(locale, show_app_cta=True)
+            self.assertNotIn(f"id{m.APP_ID}", private_page)
+            self.assertNotIn("apps.apple.com", private_page)
+            self.assertNotIn('class="card app-card', private_page)
+            self.assertIn(f"id{m.APP_ID}", public_page)
+            campaign = f"iag_vocab_planner_{locale.lower()}"
+            self.assertIn(campaign, public_page)
+            campaigns.add(campaign)
+        self.assertEqual(len(m.ALT_LOCALES), len(campaigns))
+
+    def test_vocabulary_habit_planner_webmcp_tool_is_strict_and_side_effect_free(self):
+        m = vocabulary_habit_planner
+        for locale in m.ALT_LOCALES:
+            page = m.render_page(locale, show_app_cta=True)
+            self.assertIn("document.modelContext?.registerTool", page)
+            self.assertIn(
+                'name:"build_private_vocabulary_habit_plan"', page
+            )
+            self.assertIn(
+                "annotations:{readOnlyHint:true,untrustedContentHint:false}",
+                page,
+            )
+            schema = m.webmcp_input_schema(locale)
+            self.assertFalse(schema["additionalProperties"])
+            self.assertEqual(
+                [
+                    "language_code",
+                    "minutes_per_session",
+                    "sessions_per_week",
+                    "horizon_weeks",
+                    "study_mode",
+                    "primary_goal",
+                ],
+                schema["required"],
+            )
+            self.assertEqual(
+                44, len(schema["properties"]["language_code"]["enum"])
+            )
+            execute = page.split("execute:async(input)=>{", 1)[1].split(
+                "\n      });\n    }\n  });\n}\n", 1
+            )[0]
+            self.assertIn("throw new TypeError", execute)
+            self.assertIn("throw new RangeError", execute)
+            for mutation in (
+                "textContent",
+                "innerHTML",
+                "appendChild",
+                "fetch(",
+                "localStorage",
+                "sessionStorage",
+                "navigator.clipboard",
+                "document.cookie",
+                "location.href",
+                "window.open",
+                "window.print",
+                "createElement",
+            ):
+                self.assertNotIn(mutation, execute)
+
+    def test_vocabulary_habit_planner_visible_and_webmcp_selection_share_formula(self):
+        m = vocabulary_habit_planner
+        page = m.render_page("en", show_app_cta=True)
+        self.assertEqual(1, page.count("function weightsFor(mode)"))
+        build_plan = page.split("function buildPlan(event){", 1)[1].split(
+            "\nfunction ", 1
+        )[0]
+        execute = page.split("execute:async(input)=>{", 1)[1].split(
+            "\n      });\n    }\n  });\n}\n", 1
+        )[0]
+        self.assertIn("weightsFor(mode)", build_plan)
+        self.assertIn("weightsFor(mode)", execute)
+
+    def test_vocabulary_habit_planner_rejects_invalid_locale(self):
+        m = vocabulary_habit_planner
+        with self.assertRaises(ValueError):
+            m.canonical("xx-XX")
+        with self.assertRaises(ValueError):
+            m.render_page("xx-XX", show_app_cta=False)
+
+    def test_vocabulary_habit_planner_json_ld_is_valid_localized_and_has_no_offer(
+        self,
+    ):
+        m = vocabulary_habit_planner
+        for locale in m.ALT_LOCALES:
+            page = m.render_page(locale, show_app_cta=True)
+            for hreflang in m.ALT_LOCALES:
+                self.assertIn(f'hreflang="{hreflang}"', page)
+            self.assertIn('hreflang="x-default"', page)
+            self.assertIn('type="application/atom+xml"', page)
+            self.assertIn('type="application/rss+xml"', page)
+            self.assertIn('type="application/feed+json"', page)
+            self.assertNotIn('"offers"', page)
+            self.assertNotIn('"@type":"Offer"', page)
+            self.assertNotIn('"price":"0"', page)
+            graph = json.loads(
+                re.search(
+                    r'<script type="application/ld\+json">(.*?)</script>',
+                    page,
+                    flags=re.S,
+                ).group(1)
+            )["@graph"]
+            web_app = next(
+                item for item in graph if item["@type"] == "WebApplication"
+            )
+            self.assertTrue(web_app["isAccessibleForFree"])
+            self.assertNotIn("offers", web_app)
+            faq_page = next(
+                item for item in graph if item["@type"] == "FAQPage"
+            )
+            self.assertTrue(faq_page["mainEntity"])
+
+    def test_vocabulary_habit_planner_inbound_links_are_idempotent_for_en_and_zh_hant(
+        self,
+    ):
+        m = vocabulary_habit_planner
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale in ("en", "zh-Hant"):
+                root = pages if locale == "en" else pages / locale
+                answers = root / "answers"
+                answers.mkdir(parents=True)
+                for slug in m.TARGET_ANSWER_SLUGS:
+                    (answers / slug).write_text(
+                        '<p>intro</p><a class="cta" href="https://apps.apple.'
+                        f'com/app/id{m.APP_ID}?ct=iag_ans">App</a>',
+                        encoding="utf-8",
+                    )
+            first = m.insert_answer_links(pages)
+            self.assertEqual(len(m.TARGET_ANSWER_SLUGS) * 2, first)
+            second = m.insert_answer_links(pages)
+            self.assertEqual(0, second)
+            for locale in ("en", "zh-Hant"):
+                root = pages if locale == "en" else pages / locale
+                for slug in m.TARGET_ANSWER_SLUGS:
+                    text = (root / "answers" / slug).read_text(
+                        encoding="utf-8"
+                    )
+                    self.assertEqual(1, text.count(m.INBOUND_LINK_CLASS))
+                    self.assertIn(m.canonical(locale), text)
+                    self.assertIn(f"ct=iag_ans", text)
+
+    def test_vocabulary_habit_planner_repeated_build_is_byte_idempotent(self):
+        m = vocabulary_habit_planner
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                (root / "tools").mkdir(parents=True)
+                (root / "tools" / "index.html").write_text(
+                    '<main><section class="wrap grid"></section></main>',
+                    encoding="utf-8",
+                )
+            m.build(pages, show_app_cta=True)
+            before = {
+                path: path.read_bytes() for path in pages.rglob("*.html")
+            }
+            m.build(pages, show_app_cta=True)
+            after = {
+                path: path.read_bytes() for path in pages.rglob("*.html")
+            }
+            self.assertEqual(before, after)
 
     def test_toeic_study_allocation_planner_is_private_transparent_and_non_predictive(
         self,

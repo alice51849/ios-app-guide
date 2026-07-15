@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="fr-FR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planificateur privé d&#x27;habitudes de vocabulaire | Gratuit, sans envoi de données</title>
+<meta name="description" content="Construisez une routine de vocabulaire réaliste à partir du temps dont vous disposez réellement. Le plan complet s&#x27;exécute localement, sans compte, envoi, stockage ni analyse.">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/fr-FR/tools/private-vocabulary-habit-planner.html">
+<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/private-vocabulary-habit-planner.html">
+<link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/es-ES/tools/private-vocabulary-habit-planner.html">
+<link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/tools/private-vocabulary-habit-planner.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tools/private-vocabulary-habit-planner.html">
+<link rel="alternate" hreflang="fr-FR" href="https://alice51849.github.io/ios-app-guide/fr-FR/tools/private-vocabulary-habit-planner.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/private-vocabulary-habit-planner.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/tools/private-vocabulary-habit-planner.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/private-vocabulary-habit-planner.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/tools/private-vocabulary-habit-planner.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/private-vocabulary-habit-planner.html">
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Planificateur privé d&#x27;habitudes de vocabulaire">
+<meta property="og:description" content="Construisez une routine de vocabulaire réaliste à partir du temps dont vous disposez réellement. Le plan complet s&#x27;exécute localement, sans compte, envoi, stockage ni analyse.">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/fr-FR/tools/private-vocabulary-habit-planner.html">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"Planificateur privé d'habitudes de vocabulaire","url":"https://alice51849.github.io/ios-app-guide/fr-FR/tools/private-vocabulary-habit-planner.html","applicationCategory":"EducationalApplication","operatingSystem":"Any modern browser","browserRequirements":"JavaScript","isAccessibleForFree":true,"inLanguage":"fr-FR","description":"Construisez une routine de vocabulaire réaliste à partir du temps dont vous disposez réellement. Le plan complet s'exécute localement, sans compte, envoi, stockage ni analyse.","dateModified":"2026-07-15","featureList":["Local-only calculation","Retrieval and spaced-review plan","Copy, share and print","No account, upload, storage or analytics","Progressive read-only WebMCP planning for supporting browsers"]},{"@type":"FAQPage","inLanguage":"fr-FR","mainEntity":[{"@type":"Question","name":"Combien de nouveaux mots dois-je apprendre chaque jour ?","acceptedAnswer":{"@type":"Answer","text":"Il n'existe pas de nombre universel. Commencez en dessous du plafond proposé par le planificateur, puis ajustez-le à la hausse ou à la baisse selon le rappel différé et le temps de révision disponible."}},{"@type":"Question","name":"Le planificateur enregistre-t-il mes choix ?","acceptedAnswer":{"@type":"Answer","text":"Non. Cette page n'utilise ni stockage local, ni cookies, ni compte, ni envoi. Fermer ou recharger la page efface les choix."}},{"@type":"Question","name":"Une vérification de rappel à 80 % est-elle une garantie scientifique ?","acceptedAnswer":{"@type":"Answer","text":"Non. C'est un déclencheur pratique d'ajustement, pas un objectif universel ni une garantie de résultat. Réduisez la charge dès que les révisions semblent instables ou trop lourdes."}}]}]}</script>
+<style>
+:root{--ink:#17201d;--muted:#596763;--line:#dce6e1;--paper:#fff;--mint:#e9f7f0;--teal:#126b57;--violet:#6c4fd3;--shadow:0 22px 70px rgba(27,68,57,.11);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 8% 2%,#e4fff3 0,transparent 31%),radial-gradient(circle at 92% 12%,#eee9ff 0,transparent 34%),#f8fbf9;color:var(--ink);line-height:1.58}
+a{color:var(--teal)}
+.wrap{width:min(1080px,calc(100% - 30px));margin:auto}
+.top{position:sticky;top:0;z-index:4;border-bottom:1px solid rgba(220,230,225,.82);background:rgba(248,251,249,.9);backdrop-filter:blur(18px)}
+.nav{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.nav a{font-weight:800;text-decoration:none;white-space:nowrap}
+.hero{padding:64px 0 30px}
+.eyebrow{margin:0 0 9px;color:var(--teal);font-size:.78rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+h1{margin:0;font-size:clamp(1.15rem,5.6vw,3.8rem);line-height:1.05;letter-spacing:-.045em;white-space:nowrap}
+.lead{max-width:760px;margin:18px 0 0;color:var(--muted);font-size:clamp(1rem,2vw,1.2rem)}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.badge{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:7px 11px;background:rgba(255,255,255,.82);font-size:.82rem;font-weight:800;white-space:nowrap}
+.layout{display:grid;gap:20px;margin-bottom:24px}
+@media(min-width:820px){.layout{grid-template-columns:minmax(300px,.8fr) minmax(430px,1.2fr);align-items:start}}
+.card{border:1px solid var(--line);border-radius:28px;background:rgba(255,255,255,.93);box-shadow:var(--shadow);padding:clamp(20px,4vw,32px)}
+.card h2{margin:0 0 8px;font-size:clamp(1.35rem,3vw,2rem);letter-spacing:-.025em}
+.field-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:24px}
+@media(min-width:540px){.field-grid{grid-template-columns:1fr 1fr}}
+label{display:block;margin:0 0 6px;font-weight:850;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+select{width:100%;min-height:48px;border:1px solid #cbd8d2;border-radius:14px;background:#fff;color:var(--ink);font:inherit;padding:10px 38px 10px 12px}
+button,.primary{min-height:48px;border:0;border-radius:999px;padding:12px 18px;background:linear-gradient(135deg,var(--teal),#178c70);color:#fff!important;font:inherit;font-weight:900;text-decoration:none;box-shadow:0 10px 28px rgba(18,107,87,.22);cursor:pointer}
+button:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid rgba(108,79,211,.4);outline-offset:3px}
+.build{width:100%;margin-top:20px}
+.one-line{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.result-card{background:linear-gradient(160deg,#fff,#f0fbf6)}
+.result-card[hidden]{display:none}
+.result-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.metric-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:20px 0}
+.metric{border:1px solid var(--line);border-radius:18px;background:#fff;padding:14px}
+.metric strong{display:block;font-size:clamp(1.3rem,4vw,2rem);line-height:1.1}
+.metric span{display:block;color:var(--muted);font-size:.82rem;margin-top:5px}
+.mix{display:grid;gap:9px;margin:14px 0 22px}
+.mix-row{display:grid;grid-template-columns:minmax(130px,1fr) 2fr 40px;align-items:center;gap:9px;font-size:.9rem}
+.mix-row span:first-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar{height:10px;border-radius:999px;background:#e5eee9;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--teal),var(--violet))}
+table{width:100%;border-collapse:collapse;margin-top:10px}
+th,td{padding:10px 8px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);white-space:nowrap}
+td:first-child{white-space:nowrap;font-weight:800}
+.checklist{padding-left:1.25rem}
+.checklist li{margin:.5rem 0}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.ghost{background:#fff;color:var(--teal)!important;border:1px solid #cbd8d2;box-shadow:none}
+.status{min-height:1.4em;margin:12px 0 0;color:var(--teal);font-weight:800}
+.wide{margin-bottom:24px}
+.research{display:grid;gap:20px}
+@media(min-width:760px){.research{grid-template-columns:1fr 1fr}}
+.research a{font-weight:800}
+.app-card{display:grid;gap:18px;align-items:center;margin-bottom:24px;background:linear-gradient(135deg,#f2edff,#e7fbf2)}
+@media(min-width:760px){.app-card{grid-template-columns:1fr auto}}
+.app-card p{margin:4px 0}
+details{border-top:1px solid var(--line);padding:14px 0}
+summary{font-weight:850;cursor:pointer}
+footer{padding:30px 0 50px;color:var(--muted);font-size:.9rem}
+@media(max-width:430px){.metric-grid{grid-template-columns:1fr}.mix-row{grid-template-columns:minmax(112px,1fr) 1.3fr 34px}.card{border-radius:22px}.nav{font-size:.88rem}}
+@media print{body{background:#fff}.no-print,.top,.builder-card,.research,.app-card,footer{display:none!important}.layout{display:block}.result-card{display:block!important;border:0;box-shadow:none;padding:0}.wrap{width:100%}h1{white-space:normal}.result-card table{font-size:11pt}}
+</style>
+</head>
+<body>
+<header class="top no-print"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/fr-FR/index.html">iOS App Guide</a><nav><a href="https://alice51849.github.io/ios-app-guide/fr-FR/tools/">Outils gratuits</a> · <a href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/private-vocabulary-habit-planner.html">繁體中文</a></nav></div></header>
+<main>
+<section class="hero wrap">
+  <p class="eyebrow">Gratuit · privé · fondé sur des données probantes</p>
+  <h1>Planificateur privé d&#x27;habitudes de vocabulaire</h1>
+  <p class="lead">Transformez le temps dont vous disposez réellement en un plan répétable de rappel, de mots en contexte et de correction. Rien n&#x27;est envoyé ni enregistré.</p>
+  <div class="badges"><span class="badge">Fonctionne dans cet onglet · sans compte · sans stockage · sans analyse</span><span class="badge">Aide à la planification, pas une promesse de mots appris</span></div>
+</section>
+<section class="wrap layout">
+  <form class="card builder-card no-print" id="planner">
+    <h2 class="one-line">Créez votre routine</h2>
+    <div class="field-grid">
+      <div><label for="language">Langue apprise</label><select id="language"><option value="en" selected>Anglais</option>
+<option value="zh-Hant">Chinois traditionnel</option>
+<option value="zh-Hans">Chinois simplifié</option>
+<option value="ja">Japonais</option>
+<option value="ko">Coréen</option>
+<option value="de">Allemand</option>
+<option value="fr">Français</option>
+<option value="es">Espagnol</option>
+<option value="it">Italien</option>
+<option value="pt">Portugais</option>
+<option value="nl">Néerlandais</option>
+<option value="ru">Russe</option>
+<option value="pl">Polonais</option>
+<option value="tr">Turc</option>
+<option value="sv">Suédois</option>
+<option value="da">Danois</option>
+<option value="no">Norvégien</option>
+<option value="fi">Finnois</option>
+<option value="id">Indonésien</option>
+<option value="ms">Malais</option>
+<option value="vi">Vietnamien</option>
+<option value="th">Thaï</option>
+<option value="hi">Hindi</option>
+<option value="ar">Arabe</option>
+<option value="he">Hébreu</option>
+<option value="el">Grec</option>
+<option value="cs">Tchèque</option>
+<option value="sk">Slovaque</option>
+<option value="hr">Croate</option>
+<option value="hu">Hongrois</option>
+<option value="ro">Roumain</option>
+<option value="uk">Ukrainien</option>
+<option value="ca">Catalan</option>
+<option value="bn">Bengali</option>
+<option value="gu">Gujarati</option>
+<option value="kn">Kannada</option>
+<option value="ml">Malayalam</option>
+<option value="mr">Marathi</option>
+<option value="or">Odia</option>
+<option value="pa">Pendjabi</option>
+<option value="sl">Slovène</option>
+<option value="ta">Tamoul</option>
+<option value="te">Télougou</option>
+<option value="ur">Ourdou</option></select></div>
+      <div><label for="minutes">Minutes par séance</label><select id="minutes"><option value="5">5 minutes</option>
+<option value="10">10 minutes</option>
+<option value="15" selected>15 minutes</option>
+<option value="20">20 minutes</option>
+<option value="30">30 minutes</option>
+<option value="45">45 minutes</option></select></div>
+      <div><label for="sessions">Séances par semaine</label><select id="sessions"><option value="2">2 séances</option>
+<option value="3">3 séances</option>
+<option value="4" selected>4 séances</option>
+<option value="5">5 séances</option>
+<option value="6">6 séances</option>
+<option value="7">7 séances</option></select></div>
+      <div><label for="horizon">Horizon de planification</label><select id="horizon"><option value="2">2 semaines</option>
+<option value="4" selected>4 semaines</option>
+<option value="8">8 semaines</option>
+<option value="12">12 semaines</option></select></div>
+      <div><label for="mode">Situation d&#x27;étude actuelle</label><select id="mode"><option value="starter">Débute une langue</option>
+<option value="mixed">Apprend et révise</option>
+<option value="review">Récupère un vocabulaire oublié</option></select></div>
+      <div><label for="goal">Usage principal</label><select id="goal"><option value="daily">Compréhension quotidienne</option>
+<option value="travel">Voyage</option>
+<option value="work">Travail ou études</option>
+<option value="conversation">Conversation</option></select></div>
+    </div>
+    <button class="build one-line" type="submit">Créer mon plan privé</button>
+  </form>
+  <section class="card result-card printable" id="result" hidden aria-live="polite">
+    <div class="result-head"><div><p class="eyebrow">Votre plan répétable</p><p>Il s&#x27;agit d&#x27;une charge de départ. Ajustez-la selon votre rappel différé.</p></div></div>
+    <div class="metric-grid">
+      <div class="metric"><strong id="weekly-time"></strong><span>Temps de pratique hebdomadaire</span></div>
+      <div class="metric"><strong id="new-ceiling"></strong><span>Plafond initial de nouvelles cartes · Un plafond, pas une promesse d&#x27;apprentissage</span></div>
+    </div>
+    <h2 class="one-line">Répartition de la séance</h2>
+    <div class="mix" id="mix"></div>
+    <h2 class="one-line">Séquence hebdomadaire</h2>
+    <div class="table-wrap"><table><thead><tr><th>Séance</th><th>Objectif</th></tr></thead><tbody id="schedule"></tbody></table></div>
+    <ol class="checklist" id="steps"></ol>
+    <p id="repeat-note"></p>
+    <div class="actions no-print">
+      <button class="ghost one-line" id="copy-plan" type="button">Copier le plan</button>
+      <button class="ghost one-line" id="share-plan" type="button">Partager le plan</button>
+      <button class="ghost one-line" id="print-plan" type="button">Imprimer le plan</button>
+    </div>
+    <p class="status no-print" id="status" role="status"></p>
+  </section>
+</section>
+<section class="wrap card wide research">
+  <div><p class="eyebrow">Pourquoi le plan utilise le rappel et l&#x27;espacement</p><p>La pratique du rappel peut améliorer la rétention ultérieure, et la pratique distribuée surpasse généralement la répétition massée. L&#x27;intervalle d&#x27;espacement utile change selon la durée de rétention souhaitée ; cet outil utilise donc des vérifications et des ajustements répétés plutôt que d&#x27;affirmer l&#x27;existence d&#x27;un intervalle magique unique.</p><p><a href="https://pubmed.ncbi.nlm.nih.gov/16719566/">Cepeda et al. — méta-analyse sur la pratique distribuée</a><br><a href="https://pubmed.ncbi.nlm.nih.gov/16507066/">Roediger et Karpicke — apprentissage renforcé par les tests</a></p></div>
+  <div><p class="eyebrow">Confidentialité dès la conception</p><p>Les sélections et résultats restent dans cet onglet du navigateur. La page n&#x27;a ni compte, ni envoi, ni cookies, ni stockage local, ni analyse, ni code publicitaire, ni requête réseau. Recharger ou fermer la page efface le plan.</p><p><a href="https://developer.chrome.com/docs/ai/webmcp/imperative-api">API impérative Chrome WebMCP</a></p></div>
+</section>
+
+<section class="card app-card no-print">
+  <div>
+    <p class="eyebrow">Envie de poursuivre la routine sur iPhone, écran d&#x27;accueil et Apple Watch ?</p>
+    <p>Wordmate est optionnel. Son téléchargement payant unique inclut un vocabulaire structuré en 44 langues, des exemples naturels, la prononciation sur iPhone et iPad, un widget interactif d&#x27;écran d&#x27;accueil, Apple Watch et une progression distincte pour chaque langue apprise. Sans abonnement, sans achat intégré, sans compte, sans publicité tierce ni analyse.</p>
+  </div>
+  <a class="primary one-line" href="https://apps.apple.com/app/id6789917808?ct=iag_vocab_planner_fr-fr">Voir Wordmate sur l&#x27;App Store</a>
+</section>
+<section class="wrap card wide"><h2 class="one-line">Questions fréquentes</h2><details><summary>Combien de nouveaux mots dois-je apprendre chaque jour ?</summary><p>Il n&#x27;existe pas de nombre universel. Commencez en dessous du plafond proposé par le planificateur, puis ajustez-le à la hausse ou à la baisse selon le rappel différé et le temps de révision disponible.</p></details>
+<details><summary>Le planificateur enregistre-t-il mes choix ?</summary><p>Non. Cette page n&#x27;utilise ni stockage local, ni cookies, ni compte, ni envoi. Fermer ou recharger la page efface les choix.</p></details>
+<details><summary>Une vérification de rappel à 80 % est-elle une garantie scientifique ?</summary><p>Non. C&#x27;est un déclencheur pratique d&#x27;ajustement, pas un objectif universel ni une garantie de résultat. Réduisez la charge dès que les révisions semblent instables ou trop lourdes.</p></details></section>
+</main>
+<footer><div class="wrap">Outil de planification gratuit côté navigateur. Aucun suivi, compte ni envoi au serveur. Les résultats d&#x27;apprentissage varient ; ajustez le plan selon votre propre rappel différé.</div></footer>
+<script>
+const I18N={"weekly_time":"Temps de pratique hebdomadaire","new_ceiling":"Plafond initial de nouvelles cartes","per_session":"par séance","not_target":"Un plafond, pas une promesse d'apprentissage","session_mix":"Répartition de la séance","retrieve":"Rappel livre fermé","context":"Nouveaux mots en contexte","correct":"Correction et répétition orale","sequence":"Séquence hebdomadaire","session":"Séance","focus":"Objectif","steps":["Rappelez-vous les mots plus anciens avant de révéler les réponses.","Étudiez le petit groupe de nouveaux mots dans des phrases utiles.","Corrigez chaque erreur, puis dites ou écrivez la réponse une fois.","Revoyez le même contenu à la prochaine séance et de nouveau environ une semaine plus tard.","Si le rappel différé est inférieur à 80 %, réduisez les nouvelles cartes d'environ un quart."],"roles":["Rappel de base + petit groupe en contexte","Rappel des erreurs + ajout de contexte","Rappel mixte + prononciation","Vérification cumulative sans indice","Phrases utiles selon l'objectif choisi","Rattrapage flexible ; n'ajoutez rien si les révisions sont chargées","Vérification hebdomadaire différée + ajustement pour la semaine suivante"],"repeat_note":"Répétez cette séquence pendant l'horizon choisi. Plus vous souhaitez retenir longtemps, plus les intervalles doivent être ajustés ; il n'existe pas de calendrier parfait universel.","copied":"Plan copié.","share_cancelled":"Le partage a été annulé.","copy_failed":"La copie n'est pas disponible. Sélectionnez et copiez le plan ci-dessous.","minutes_unit":"minutes","sessions_unit":"séances","weeks_unit":"semaines","privacy_text":"Les sélections et résultats restent dans cet onglet du navigateur. La page n'a ni compte, ni envoi, ni cookies, ni stockage local, ni analyse, ni code publicitaire, ni requête réseau. Recharger ou fermer la page efface le plan."};
+const WEBMCP_INPUT_SCHEMA={"type":"object","additionalProperties":false,"required":["language_code","minutes_per_session","sessions_per_week","horizon_weeks","study_mode","primary_goal"],"properties":{"language_code":{"type":"string","enum":["en","zh-Hant","zh-Hans","ja","ko","de","fr","es","it","pt","nl","ru","pl","tr","sv","da","no","fi","id","ms","vi","th","hi","ar","he","el","cs","sk","hr","hu","ro","uk","ca","bn","gu","kn","ml","mr","or","pa","sl","ta","te","ur"],"description":"Langue apprise"},"minutes_per_session":{"type":"integer","enum":[5,10,15,20,30,45],"description":"Minutes par séance"},"sessions_per_week":{"type":"integer","enum":[2,3,4,5,6,7],"description":"Séances par semaine"},"horizon_weeks":{"type":"integer","enum":[2,4,8,12],"description":"Horizon de planification"},"study_mode":{"type":"string","enum":["starter","mixed","review"],"description":"Situation d'étude actuelle"},"primary_goal":{"type":"string","enum":["daily","travel","work","conversation"],"description":"Usage principal"}}};
+const WEBMCP_LANGUAGES=[{"code":"en","name":"Anglais"},{"code":"zh-Hant","name":"Chinois traditionnel"},{"code":"zh-Hans","name":"Chinois simplifié"},{"code":"ja","name":"Japonais"},{"code":"ko","name":"Coréen"},{"code":"de","name":"Allemand"},{"code":"fr","name":"Français"},{"code":"es","name":"Espagnol"},{"code":"it","name":"Italien"},{"code":"pt","name":"Portugais"},{"code":"nl","name":"Néerlandais"},{"code":"ru","name":"Russe"},{"code":"pl","name":"Polonais"},{"code":"tr","name":"Turc"},{"code":"sv","name":"Suédois"},{"code":"da","name":"Danois"},{"code":"no","name":"Norvégien"},{"code":"fi","name":"Finnois"},{"code":"id","name":"Indonésien"},{"code":"ms","name":"Malais"},{"code":"vi","name":"Vietnamien"},{"code":"th","name":"Thaï"},{"code":"hi","name":"Hindi"},{"code":"ar","name":"Arabe"},{"code":"he","name":"Hébreu"},{"code":"el","name":"Grec"},{"code":"cs","name":"Tchèque"},{"code":"sk","name":"Slovaque"},{"code":"hr","name":"Croate"},{"code":"hu","name":"Hongrois"},{"code":"ro","name":"Roumain"},{"code":"uk","name":"Ukrainien"},{"code":"ca","name":"Catalan"},{"code":"bn","name":"Bengali"},{"code":"gu","name":"Gujarati"},{"code":"kn","name":"Kannada"},{"code":"ml","name":"Malayalam"},{"code":"mr","name":"Marathi"},{"code":"or","name":"Odia"},{"code":"pa","name":"Pendjabi"},{"code":"sl","name":"Slovène"},{"code":"ta","name":"Tamoul"},{"code":"te","name":"Télougou"},{"code":"ur","name":"Ourdou"}];
+const WEBMCP_MODE_LABELS={"starter":"Débute une langue","mixed":"Apprend et révise","review":"Récupère un vocabulaire oublié"};
+const WEBMCP_GOAL_LABELS={"daily":"Compréhension quotidienne","travel":"Voyage","work":"Travail ou études","conversation":"Conversation"};
+const WEBMCP_TOOL_DESCRIPTION="Crée une routine privée de vocabulaire à partir d'une langue prise en charge, du temps disponible, de la fréquence hebdomadaire, de l'horizon, du mode d'étude et de l'objectif. Renvoie le même plafond initial et la même séquence fondés sur des données probantes que le planificateur visible, sans promettre de résultats d'apprentissage.";
+const WORDMATE_APP_STORE_URL="https://apps.apple.com/app/id6789917808?ct=iag_vocab_planner_fr-fr";
+const form=document.getElementById("planner");
+const result=document.getElementById("result");
+const statusNode=document.getElementById("status");
+let plainPlan="";
+function escapeHTML(value){return String(value).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[ch]));}
+function selectedText(id){const node=document.getElementById(id);return node.options[node.selectedIndex].text;}
+function weightsFor(mode){if(mode==="starter")return [30,45,25,.45];if(mode==="review")return [55,20,25,.32];return [45,30,25,.58];}
+function toolValue(input,name){
+  if(!Object.prototype.hasOwnProperty.call(input,name))throw new TypeError(`${name} is required.`);
+  const value=input[name];
+  if(!WEBMCP_INPUT_SCHEMA.properties[name].enum.includes(value))throw new RangeError(`${name} is not a supported value.`);
+  return value;
+}
+async function registerWebMcp(){
+  if(!document.modelContext?.registerTool)return;
+  await document.modelContext.registerTool({
+    name:"build_private_vocabulary_habit_plan",
+    description:WEBMCP_TOOL_DESCRIPTION,
+    inputSchema:WEBMCP_INPUT_SCHEMA,
+    annotations:{readOnlyHint:true,untrustedContentHint:false},
+    execute:async(input)=>{
+      if(input===null||typeof input!=="object"||Array.isArray(input))throw new TypeError("WebMCP input must be an object.");
+      const allowed=new Set(Object.keys(WEBMCP_INPUT_SCHEMA.properties));
+      for(const name of Object.keys(input))if(!allowed.has(name))throw new RangeError(`${name} is not a supported input.`);
+      const languageCode=toolValue(input,"language_code");
+      const minutes=toolValue(input,"minutes_per_session");
+      const sessions=toolValue(input,"sessions_per_week");
+      const horizon=toolValue(input,"horizon_weeks");
+      const mode=toolValue(input,"study_mode");
+      const goal=toolValue(input,"primary_goal");
+      const language=WEBMCP_LANGUAGES.find(item=>item.code===languageCode);
+      const [retrieve,context,correct,factor]=weightsFor(mode);
+      const ceiling=Math.max(2,Math.min(24,Math.round(minutes*factor)));
+      return JSON.stringify({
+        result_type:"private_vocabulary_habit_plan",
+        language_code:languageCode,
+        language_name:language.name,
+        study_mode:mode,
+        study_mode_label:WEBMCP_MODE_LABELS[mode],
+        primary_goal:goal,
+        primary_goal_label:WEBMCP_GOAL_LABELS[goal],
+        weekly_practice_minutes:minutes*sessions,
+        sessions_per_week:sessions,
+        horizon_weeks:horizon,
+        starting_new_card_ceiling_per_session:ceiling,
+        ceiling_boundary:I18N.not_target,
+        session_mix_percent:{
+          closed_book_retrieval:retrieve,
+          new_words_in_context:context,
+          correction_and_spoken_replay:correct
+        },
+        weekly_sequence:Array.from({length:sessions},(_,index)=>({
+          session:index+1,
+          focus:I18N.roles[Math.min(index,I18N.roles.length-1)]
+        })),
+        practice_steps:I18N.steps,
+        repeat_note:I18N.repeat_note,
+        privacy_boundary:I18N.privacy_text,
+        evidence_sources:["https://pubmed.ncbi.nlm.nih.gov/16719566/","https://pubmed.ncbi.nlm.nih.gov/16507066/"],
+        wordmate_app_store_url:WORDMATE_APP_STORE_URL||null
+      });
+    }
+  });
+}
+function buildPlan(event){
+  if(event)event.preventDefault();
+  const language=selectedText("language");
+  const minutes=Number(document.getElementById("minutes").value);
+  const sessions=Number(document.getElementById("sessions").value);
+  const horizon=Number(document.getElementById("horizon").value);
+  const mode=document.getElementById("mode").value;
+  const goal=selectedText("goal");
+  const [retrieve,context,correct,factor]=weightsFor(mode);
+  const ceiling=Math.max(2,Math.min(24,Math.round(minutes*factor)));
+  document.getElementById("weekly-time").textContent=`${minutes*sessions} ${I18N.minutes_unit}`;
+  document.getElementById("new-ceiling").textContent=`${ceiling} ${I18N.per_session}`;
+  const mixData=[[I18N.retrieve,retrieve],[I18N.context,context],[I18N.correct,correct]];
+  document.getElementById("mix").innerHTML=mixData.map(([label,value])=>`<div class="mix-row"><span>${escapeHTML(label)}</span><span class="bar"><i style="width:${value}%"></i></span><strong>${value}%</strong></div>`).join("");
+  const rows=[];
+  for(let index=0;index<sessions;index++){
+    const role=I18N.roles[Math.min(index,I18N.roles.length-1)];
+    rows.push(`<tr><td>${escapeHTML(I18N.session)} ${index+1}</td><td>${escapeHTML(role)}</td></tr>`);
+  }
+  document.getElementById("schedule").innerHTML=rows.join("");
+  document.getElementById("steps").innerHTML=I18N.steps.map(step=>`<li>${escapeHTML(step)}</li>`).join("");
+  document.getElementById("repeat-note").textContent=`${horizon} ${I18N.weeks_unit} · ${I18N.repeat_note}`;
+  plainPlan=[
+    `${language} · ${goal}`,
+    `${I18N.weekly_time}: ${minutes*sessions} ${I18N.minutes_unit} (${sessions} ${I18N.sessions_unit})`,
+    `${I18N.new_ceiling}: ${ceiling} ${I18N.per_session} — ${I18N.not_target}`,
+    `${I18N.session_mix}: ${I18N.retrieve} ${retrieve}% · ${I18N.context} ${context}% · ${I18N.correct} ${correct}%`,
+    ...Array.from({length:sessions},(_,index)=>`${I18N.session} ${index+1}: ${I18N.roles[Math.min(index,I18N.roles.length-1)]}`),
+    ...I18N.steps.map((step,index)=>`${index+1}. ${step}`),
+    `${horizon} ${I18N.weeks_unit} · ${I18N.repeat_note}`,
+    "https://alice51849.github.io/ios-app-guide/fr-FR/tools/private-vocabulary-habit-planner.html"
+  ].join("\n");
+  result.hidden=false;
+  statusNode.textContent="";
+}
+async function copyPlan(){
+  try{await navigator.clipboard.writeText(plainPlan);statusNode.textContent=I18N.copied;}
+  catch(error){statusNode.textContent=I18N.copy_failed;}
+}
+async function sharePlan(){
+  if(navigator.share){
+    try{await navigator.share({title:document.title,text:plainPlan,url:"https://alice51849.github.io/ios-app-guide/fr-FR/tools/private-vocabulary-habit-planner.html"});return;}
+    catch(error){if(error&&error.name==="AbortError"){statusNode.textContent=I18N.share_cancelled;return;}}
+  }
+  await copyPlan();
+}
+form.addEventListener("submit",buildPlan);
+document.getElementById("copy-plan").addEventListener("click",copyPlan);
+document.getElementById("share-plan").addEventListener("click",sharePlan);
+document.getElementById("print-plan").addEventListener("click",()=>window.print());
+buildPlan();
+registerWebMcp().catch(error=>console.error("WebMCP tool registration failed.",error));
+</script>
+</body>
+</html>

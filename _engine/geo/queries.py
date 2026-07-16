@@ -240,6 +240,7 @@ _MORE = {
         "morning routine app for kids with rewards",
         "chore chart app for children on iphone",
         "app to help kids build daily habits",
+        "before and after example of a calmer morning routine for kids with a reward app",
     ],
     "lumiletters": [
         "app to teach toddlers letter sounds phonics",

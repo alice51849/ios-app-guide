@@ -1129,6 +1129,56 @@ def _scenario_facts(q: str, key: str, name: str, bullets: list[str]) -> dict[str
             [{"q": "Does it work offline?", "a": f"Yes — {name} keeps your itinerary available offline while you travel."},
              {"q": "Do I need an account?", "a": "No account is required to plan a trip."},
              {"q": "Subscription?", "a": "It's a one-time purchase, not a subscription."}])
+    if (
+        key in {"lumimission", "lumimissionpro"}
+        and "before and after" in q
+        and "morning routine" in q
+    ):
+        worked = make(
+            "This is a worked example, not a customer testimonial or a promised outcome. Before setup, a family may rely on repeated spoken reminders with no shared view of what is done. After setup, the adult and child use one short mission, tap each completed action together, and let the in-app buddy acknowledge progress immediately.",
+            [
+                "Treat it as a sample workflow, not proof of a behavior change.",
+                "Start with one supported mission: meals, tooth brushing, sleep, tidy-up, or school preparation.",
+                "Keep the adult involved and use the immediate reaction as encouragement, not pressure.",
+                "No account, ads, third-party analytics, or tracking are listed for the app.",
+                "Check the current free limits and one-time unlock on the App Store.",
+            ],
+            [
+                "Before changing anything, note where the routine usually stalls.",
+                f"Choose one supported mission in {name}; custom missions require the one-time unlock.",
+                "Agree on the next small action with your child.",
+                "Tap together after each completed action so the buddy responds immediately.",
+                "After several days, review the history and simplify the routine if it still feels difficult.",
+            ],
+            f"{name} can support this shared parent-child routine with missions, immediate buddy feedback, and a parent history. It does not replace adult guidance and cannot guarantee calmer mornings or a behavior change.",
+            [
+                {
+                    "q": "Is this a real customer before-and-after story?",
+                    "a": "No. It is a worked example that shows one possible family workflow, not a customer testimonial.",
+                },
+                {
+                    "q": "Does the app guarantee calmer mornings?",
+                    "a": "No. Children respond differently, and an app cannot guarantee a behavior change. Adult guidance and a routine that fits the child still matter.",
+                },
+                {
+                    "q": "What can a family try before paying?",
+                    "a": "The current listing says meals, tooth brushing, sleep, and tidy-up missions are free; school preparation and custom missions are part of a one-time unlock. Confirm current details on the App Store.",
+                },
+            ],
+        )
+        worked["meta_description"] = (
+            "An honest, non-testimonial before-and-after example for using "
+            f"{name} in a child's morning routine, with practical steps and clear limits."
+        )
+        worked["lead"] = (
+            "A worked example, not a testimonial: replace repeated morning "
+            "reminders with one short shared mission, immediate feedback, and "
+            "an adult-led review."
+        )
+        worked["page_title"] = (
+            "A calmer kids' morning routine: an honest before-and-after example"
+        )
+        return worked
     if key in {"lumimission", "lumimissionpro"} and ("routine" in q or "morning" in q or "bedtime" in q or "chore" in q or "reward chart" in q or "brush teeth" in q or "habit" in q):
         return make(
             "Kids follow routines better when they're visual and rewarding: a simple picture checklist for morning or bedtime, with a reward for finishing, turns nagging into a game. No ads and a kid-safe design keep it stress-free.",

@@ -1,0 +1,1911 @@
+#!/usr/bin/env python3
+"""Generate a nine-locale, parent-reviewed family routine-card planner."""
+
+from __future__ import annotations
+
+import html
+import json
+import os
+import re
+import sys
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
+sys.path.insert(0, str(ROOT / "social"))
+
+from appstore_live import live_app_keys  # noqa: E402
+from gen_calculator import write_tools_sitemap  # noqa: E402
+from gen_feed import feed_discovery_links  # noqa: E402
+from videogen.registry import APPSTORE, appstore_url  # noqa: E402
+
+PAGES = HERE / "pages"
+SITE = os.environ.get(
+    "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
+).rstrip("/")
+SLUG = "private-family-routine-card-planner"
+APP_KEY = "lumimission"
+APP_ID = "6779750237"
+CONTENT_DATE = "2026-07-16"
+CDC_ROUTINES = (
+    "https://www.cdc.gov/parenting-toddlers/structure-rules/index.html"
+)
+WEBMCP_SOURCE = "https://developer.chrome.com/docs/ai/webmcp/imperative-api"
+
+CONTEXTS = ("morning", "after-school", "tidy-up", "bedtime")
+CARD_COUNTS = (3, 4, 5, 6)
+PRESENTATIONS = ("words", "icons-with-labels", "both")
+TRANSITION_CUES = ("next-only", "now-next", "safe-choice")
+ALT_LOCALES = (
+    "en",
+    "es-ES",
+    "pt-BR",
+    "de-DE",
+    "fr-FR",
+    "ja",
+    "ko",
+    "zh-Hant",
+    "zh-Hans",
+)
+CARD_ICONS = {
+    "morning": ("☀️", "👕", "🫧", "🥣", "🎒", "🚪"),
+    "after-school": ("🏠", "🎒", "🫧", "🥛", "🧩", "📌"),
+    "tidy-up": ("🧺", "🧸", "📚", "👕", "🧹", "✅"),
+    "bedtime": ("🌙", "🫧", "👕", "🪥", "📖", "💤"),
+}
+
+
+def _copy(
+    *,
+    meta: tuple[str, ...],
+    badges: tuple[str, ...],
+    planner: tuple[str, str],
+    labels: tuple[str, ...],
+    options: tuple[tuple[str, ...], ...],
+    adult_review: tuple[str, str, str],
+    results: tuple[str, ...],
+    steps: tuple[tuple[str, ...], ...],
+    cue_notes: tuple[str, ...],
+    boundary: str,
+    preflight: tuple[str, ...],
+    sources: tuple[str, str, str],
+    webmcp: tuple[str, str],
+    app: tuple[str, str, str],
+    faq: tuple[str, tuple[tuple[str, str], ...]],
+    footer: str,
+    inline: str,
+    index: tuple[str, str],
+) -> dict[str, object]:
+    (
+        title,
+        description,
+        tools,
+        switch,
+        eyebrow,
+        heading,
+        lead,
+    ) = meta
+    (
+        context_label,
+        count_label,
+        presentation_label,
+        transition_label,
+    ) = labels
+    return {
+        "title": title,
+        "description": description,
+        "tools": tools,
+        "switch": switch,
+        "eyebrow": eyebrow,
+        "heading": heading,
+        "lead": lead,
+        "badges": badges,
+        "planner": planner[0],
+        "planner_intro": planner[1],
+        "context_label": context_label,
+        "count_label": count_label,
+        "presentation_label": presentation_label,
+        "transition_label": transition_label,
+        "context_options": dict(zip(CONTEXTS, options[0], strict=True)),
+        "presentation_options": dict(
+            zip(PRESENTATIONS, options[1], strict=True)
+        ),
+        "transition_options": dict(
+            zip(TRANSITION_CUES, options[2], strict=True)
+        ),
+        "adult_review_label": adult_review[0],
+        "adult_review_yes": adult_review[1],
+        "adult_review_no": adult_review[2],
+        "update": results[0],
+        "print": results[1],
+        "card_label": results[2],
+        "skip_label": results[3],
+        "pause_card": results[4],
+        "context_steps": dict(zip(CONTEXTS, steps, strict=True)),
+        "cue_notes": dict(zip(TRANSITION_CUES, cue_notes, strict=True)),
+        "boundary": boundary,
+        "preflight_title": preflight[0],
+        "preflight_steps": preflight[1:],
+        "sources_title": sources[0],
+        "sources_intro": sources[1],
+        "source_label": sources[2],
+        "webmcp_source": webmcp[0],
+        "webmcp_description": webmcp[1],
+        "app_title": app[0],
+        "app_text": app[1],
+        "app_cta": app[2],
+        "faq_title": faq[0],
+        "faq": faq[1],
+        "footer": footer,
+        "inline_link": inline,
+        "index_title": index[0],
+        "index_description": index[1],
+    }
+
+
+COPY = {
+    "en": _copy(
+        meta=(
+            "Private Family Routine Card Planner | No Child Data",
+            "Make a parent-reviewed sequence of three to six routine cards without entering a child's name, age, schedule, school, behavior or completion record.",
+            "Free tools",
+            "繁體中文",
+            "Free · parent-facing · no child profile",
+            "Private family routine card planner",
+            "Choose a household context and card format. The page returns a removable, skippable sequence only after an adult confirms every step is suitable.",
+        ),
+        badges=(
+            "No name, age or child profile",
+            "No behavior or completion tracking",
+            "No account, upload or storage",
+            "No outcome or independence promise",
+        ),
+        planner=(
+            "Build an adult-reviewed card sequence",
+            "These cards organize household steps; they do not assess a child, prescribe care or predict behavior, sleep, health, learning or family outcomes.",
+        ),
+        labels=(
+            "Routine context",
+            "Number of cards",
+            "Card presentation",
+            "Gentle transition cue",
+        ),
+        options=(
+            (
+                "Morning",
+                "After school or care",
+                "Tidy-up",
+                "Bedtime",
+            ),
+            (
+                "Words",
+                "Large icons with labels",
+                "Icons and words",
+            ),
+            (
+                "Show the next card only",
+                "Show now and next",
+                "Offer one safe bounded choice",
+            ),
+        ),
+        adult_review=(
+            "I am the supervising adult and have checked the selected steps for this household",
+            "Adult review confirmed. Keep every card optional and change or remove anything that is unsuitable today.",
+            "Adult review is required before cards appear. Check safety, access, care guidance, household needs and the child's current cues.",
+        ),
+        results=(
+            "Create private cards",
+            "Print reviewed cards",
+            "Optional routine card",
+            "May be skipped, paused or replaced",
+            "Pause card: stop the sequence and check what the household needs now.",
+        ),
+        steps=(
+            (
+                "Use the household's usual calm start cue.",
+                "Choose clothing that the supervising adult has approved.",
+                "Complete the household's usual wash or care step with appropriate adult help.",
+                "Use the family's planned breakfast or drink step.",
+                "Let the adult check the items needed for the day.",
+                "Move to the family's agreed ready point with the supervising adult.",
+            ),
+            (
+                "Arrive at the household's agreed transition spot.",
+                "Place belongings where the supervising adult has chosen.",
+                "Use the household's usual wash or care step with appropriate help.",
+                "Take the family's planned food, drink or rest pause.",
+                "Choose the adult-approved quiet, movement or connection step.",
+                "Let the adult preview what comes next today.",
+            ),
+            (
+                "Let the adult choose one small, safe area to begin.",
+                "Return a few toys or activity items to their usual place.",
+                "Return books or learning materials to the adult-approved place.",
+                "Place clothing or soft items where the household expects them.",
+                "Let the adult handle sharp, heavy, broken or uncertain items.",
+                "Pause together and check that paths and needed items remain accessible.",
+            ),
+            (
+                "Use the household's usual calm bedtime-start cue.",
+                "Complete the usual wash or bathroom step with appropriate adult help.",
+                "Choose sleep clothing approved for the household and conditions.",
+                "Complete tooth care according to current family and professional guidance.",
+                "Choose the family's usual quiet connection, story or settling step.",
+                "End with the household's agreed sleep setting and supervising adult nearby as needed.",
+            ),
+        ),
+        cue_notes=(
+            "Keep only one next card visible; reveal another only after the adult checks the current situation.",
+            "Show the current and following card without treating either as a deadline.",
+            "Offer a choice only when both options are safe, available and acceptable to the supervising adult.",
+        ),
+        boundary=(
+            "The planner never knows the child's age, development, disability, health, sensory needs, care plan, culture, household, current state or environment. "
+            "The supervising adult must adapt, remove or stop every card as needed."
+        ),
+        preflight=(
+            "Four checks before using a card",
+            "Confirm the step is safe and suitable in the current place and moment.",
+            "Preserve access to food, water, bathroom, medicine, communication, mobility and comfort.",
+            "Use current professional care guidance where it applies; a card never overrides it.",
+            "Pause, skip or change the sequence whenever the child or household needs something different.",
+        ),
+        sources=(
+            "Official routine context, not an endorsement",
+            "CDC describes consistency and predictability as parts of household structure and says families decide which routines work best for them. That guidance does not validate this tool or guarantee an outcome.",
+            "CDC: creating consistent routines and household structure",
+        ),
+        webmcp=(
+            "Chrome imperative WebMCP API preview",
+            "Create three to six optional parent-reviewed family routine cards from bounded visible choices only. Never accept or access child names, ages, schedules, schools, locations, photos, accounts, free text, behavior or completion records; never score, diagnose, monitor or promise an outcome.",
+        ),
+        app=(
+            "Want an optional reusable parent-and-child routine layer?",
+            "Lumi Mission Planet is optional. Its current App Store listing describes parent-and-child routine missions, a parent dashboard, on-device data, no account or third-party analytics, and a free download with one-time unlock. Check the current listing for exact availability and features. These printable cards work without the app.",
+            "Parents: view Lumi Mission Planet on the App Store",
+        ),
+        faq=(
+            "Family routine card questions",
+            (
+                (
+                    "Does this page collect information about a child?",
+                    "No. It accepts only bounded household choices and never asks for a name, age, schedule, school, profile or activity record.",
+                ),
+                (
+                    "Are the cards a behavior program or care plan?",
+                    "No. They are removable household sequence prompts and do not diagnose, prescribe, monitor or promise results.",
+                ),
+                (
+                    "What if a step is not right today?",
+                    "The supervising adult should skip, replace or stop it. Every card is optional.",
+                ),
+            ),
+        ),
+        footer="Parent-reviewed sequence only · no child data · no tracking · no result promise",
+        inline="Plan private, parent-reviewed family routine cards before choosing an app",
+        index=(
+            "Private Family Routine Card Planner",
+            "Make a skippable household sequence without entering child data or tracking completion.",
+        ),
+    ),
+    "es-ES": _copy(
+        meta=(
+            "Planificador privado de tarjetas de rutina familiar | Sin datos infantiles",
+            "Crea una secuencia de tres a seis tarjetas revisada por un adulto sin introducir nombre, edad, horario, escuela, conducta ni registro de actividad del menor.",
+            "Herramientas gratuitas",
+            "English",
+            "Gratis · para adultos · sin perfil infantil",
+            "Planificador privado de tarjetas de rutina familiar",
+            "Elige un momento del hogar y el formato. La secuencia se muestra solo cuando un adulto confirma que cada paso es adecuado.",
+        ),
+        badges=(
+            "Sin nombre, edad ni perfil infantil",
+            "Sin seguimiento de conducta o actividad",
+            "Sin cuenta, envío ni almacenamiento",
+            "Sin prometer resultados o autonomía",
+        ),
+        planner=(
+            "Crea una secuencia revisada por un adulto",
+            "Las tarjetas ordenan pasos del hogar; no evalúan al menor, prescriben cuidados ni predicen conducta, sueño, salud, aprendizaje o resultados familiares.",
+        ),
+        labels=(
+            "Momento de la rutina",
+            "Número de tarjetas",
+            "Presentación",
+            "Señal de transición suave",
+        ),
+        options=(
+            ("Mañana", "Después del cole o cuidado", "Recoger", "Hora de dormir"),
+            ("Palabras", "Iconos grandes con texto", "Iconos y palabras"),
+            (
+                "Mostrar solo la siguiente tarjeta",
+                "Mostrar ahora y después",
+                "Ofrecer una opción limitada y segura",
+            ),
+        ),
+        adult_review=(
+            "Soy el adulto responsable y he comprobado que estos pasos sirven en este hogar",
+            "Revisión adulta confirmada. Cada tarjeta sigue siendo opcional; cambia o quita lo que hoy no convenga.",
+            "Hace falta revisión adulta. Comprueba seguridad, acceso, indicaciones de cuidado, necesidades del hogar y señales actuales del menor.",
+        ),
+        results=(
+            "Crear tarjetas privadas",
+            "Imprimir tarjetas revisadas",
+            "Tarjeta opcional",
+            "Se puede saltar, pausar o sustituir",
+            "Tarjeta de pausa: detén la secuencia y comprueba qué necesita ahora el hogar.",
+        ),
+        steps=(
+            (
+                "Usa la señal tranquila con la que suele empezar el día en casa.",
+                "Elige ropa aprobada por el adulto responsable.",
+                "Realiza el paso habitual de aseo o cuidado con la ayuda adulta necesaria.",
+                "Sigue el paso de desayuno o bebida previsto por la familia.",
+                "Deja que el adulto revise lo necesario para el día.",
+                "Ve con el adulto al punto acordado para estar listos.",
+            ),
+            (
+                "Llega al lugar de transición acordado en casa.",
+                "Deja las pertenencias donde haya decidido el adulto.",
+                "Realiza el paso habitual de aseo o cuidado con la ayuda necesaria.",
+                "Haz la pausa de comida, bebida o descanso prevista por la familia.",
+                "Elige el paso tranquilo, de movimiento o conexión aprobado por el adulto.",
+                "Deja que el adulto explique qué viene después hoy.",
+            ),
+            (
+                "Deja que el adulto elija una zona pequeña y segura para empezar.",
+                "Devuelve algunos juguetes o materiales a su lugar habitual.",
+                "Devuelve libros o materiales de aprendizaje al lugar aprobado.",
+                "Pon ropa u objetos blandos donde corresponde en casa.",
+                "Deja al adulto los objetos afilados, pesados, rotos o dudosos.",
+                "Pausa y comprueba con el adulto que los pasos y objetos necesarios siguen accesibles.",
+            ),
+            (
+                "Usa la señal tranquila con la que suele empezar la rutina de noche.",
+                "Realiza el aseo o baño habitual con la ayuda adulta necesaria.",
+                "Elige ropa de dormir adecuada al hogar y las condiciones.",
+                "Realiza el cuidado dental según las indicaciones familiares y profesionales vigentes.",
+                "Elige el momento habitual de calma, cuento o conexión familiar.",
+                "Termina con el entorno de sueño acordado y el adulto cerca cuando haga falta.",
+            ),
+        ),
+        cue_notes=(
+            "Deja visible solo la siguiente tarjeta y muestra otra cuando el adulto revise la situación.",
+            "Muestra la tarjeta actual y la siguiente sin convertir ninguna en un plazo.",
+            "Ofrece una elección solo si ambas opciones son seguras, posibles y aceptadas por el adulto.",
+        ),
+        boundary=(
+            "El planificador desconoce edad, desarrollo, discapacidad, salud, necesidades sensoriales, plan de cuidados, cultura, hogar, estado actual y entorno. "
+            "El adulto responsable debe adaptar, retirar o detener cualquier tarjeta."
+        ),
+        preflight=(
+            "Cuatro controles antes de usar una tarjeta",
+            "Confirma que el paso es seguro y adecuado en este lugar y momento.",
+            "Mantén el acceso a comida, agua, baño, medicación, comunicación, movilidad y comodidad.",
+            "Sigue las indicaciones profesionales vigentes cuando correspondan; una tarjeta nunca las sustituye.",
+            "Pausa, salta o cambia la secuencia cuando el menor o el hogar necesiten otra cosa.",
+        ),
+        sources=(
+            "Contexto oficial sobre rutinas, no una recomendación",
+            "Los CDC describen la coherencia y previsibilidad como partes de la estructura familiar y señalan que cada familia decide qué rutinas le funcionan. No validan esta herramienta ni garantizan resultados.",
+            "CDC: crear rutinas coherentes y estructura familiar",
+        ),
+        webmcp=(
+            "Vista previa de la API imperativa WebMCP de Chrome",
+            "Crea de tres a seis tarjetas familiares opcionales y revisadas por un adulto usando solo opciones limitadas. Nunca acepta ni accede a nombres, edades, horarios, escuelas, lugares, fotos, cuentas, texto libre, conducta o registros; nunca puntúa, diagnostica, vigila ni promete resultados.",
+        ),
+        app=(
+            "¿Quieres una capa reutilizable para adulto y menor?",
+            "Lumi Mission Planet es opcional. Su ficha actual describe misiones de rutina para usar en familia, panel para adultos, datos en el dispositivo, sin cuenta ni análisis de terceros, y descarga gratuita con desbloqueo único. Consulta la ficha vigente para disponibilidad y funciones exactas. Estas tarjetas funcionan sin la app.",
+            "Adultos: ver Lumi Mission Planet en el App Store",
+        ),
+        faq=(
+            "Preguntas sobre tarjetas de rutina",
+            (
+                (
+                    "¿La página recopila datos de un menor?",
+                    "No. Solo acepta opciones limitadas del hogar y nunca pide nombre, edad, horario, escuela, perfil o actividad.",
+                ),
+                (
+                    "¿Es un programa de conducta o plan de cuidados?",
+                    "No. Son indicaciones domésticas extraíbles; no diagnostican, prescriben, vigilan ni prometen resultados.",
+                ),
+                (
+                    "¿Qué hago si un paso no conviene hoy?",
+                    "El adulto responsable debe saltarlo, cambiarlo o detenerlo. Todas las tarjetas son opcionales.",
+                ),
+            ),
+        ),
+        footer="Solo secuencia revisada por un adulto · sin datos infantiles · sin seguimiento · sin prometer resultados",
+        inline="Planifica tarjetas familiares privadas y revisadas por un adulto antes de elegir una app",
+        index=(
+            "Planificador privado de tarjetas de rutina familiar",
+            "Crea una secuencia opcional sin introducir datos infantiles ni registrar la actividad.",
+        ),
+    ),
+    "pt-BR": _copy(
+        meta=(
+            "Planejador privado de cartões de rotina familiar | Sem dados infantis",
+            "Monte uma sequência de três a seis cartões revisada por um adulto sem informar nome, idade, horário, escola, comportamento ou conclusão da criança.",
+            "Ferramentas gratuitas",
+            "English",
+            "Grátis · para responsáveis · sem perfil infantil",
+            "Planejador privado de cartões de rotina familiar",
+            "Escolha um momento da casa e o formato. A sequência só aparece depois que um adulto confirma que cada etapa é adequada.",
+        ),
+        badges=(
+            "Sem nome, idade ou perfil infantil",
+            "Sem monitorar comportamento ou conclusão",
+            "Sem conta, envio ou armazenamento",
+            "Sem promessa de resultado ou autonomia",
+        ),
+        planner=(
+            "Monte uma sequência revisada por um adulto",
+            "Os cartões apenas organizam etapas da casa; não avaliam a criança, prescrevem cuidados ou preveem comportamento, sono, saúde, aprendizagem ou resultados familiares.",
+        ),
+        labels=(
+            "Momento da rotina",
+            "Quantidade de cartões",
+            "Apresentação",
+            "Sinal de transição gentil",
+        ),
+        options=(
+            ("Manhã", "Depois da escola ou cuidado", "Arrumação", "Hora de dormir"),
+            ("Palavras", "Ícones grandes com texto", "Ícones e palavras"),
+            (
+                "Mostrar só o próximo cartão",
+                "Mostrar agora e depois",
+                "Oferecer uma escolha limitada e segura",
+            ),
+        ),
+        adult_review=(
+            "Sou o adulto responsável e conferi se estas etapas servem para esta casa",
+            "Revisão adulta confirmada. Todo cartão continua opcional; troque ou remova o que não servir hoje.",
+            "A revisão adulta é necessária. Confira segurança, acesso, orientações de cuidado, necessidades da casa e sinais atuais da criança.",
+        ),
+        results=(
+            "Criar cartões privados",
+            "Imprimir cartões revisados",
+            "Cartão opcional",
+            "Pode pular, pausar ou substituir",
+            "Cartão de pausa: pare a sequência e confira o que a casa precisa agora.",
+        ),
+        steps=(
+            (
+                "Use o sinal tranquilo que costuma iniciar o dia em casa.",
+                "Escolha uma roupa aprovada pelo adulto responsável.",
+                "Faça a etapa habitual de higiene ou cuidado com a ajuda adulta adequada.",
+                "Siga a etapa de café da manhã ou bebida planejada pela família.",
+                "Deixe o adulto conferir os itens necessários para o dia.",
+                "Vá com o adulto até o ponto combinado de saída ou prontidão.",
+            ),
+            (
+                "Chegue ao local de transição combinado em casa.",
+                "Coloque os pertences onde o adulto escolheu.",
+                "Faça a etapa habitual de higiene ou cuidado com a ajuda necessária.",
+                "Faça a pausa de comida, bebida ou descanso planejada pela família.",
+                "Escolha a etapa tranquila, de movimento ou conexão aprovada pelo adulto.",
+                "Deixe o adulto mostrar o que vem depois hoje.",
+            ),
+            (
+                "Deixe o adulto escolher uma área pequena e segura para começar.",
+                "Guarde alguns brinquedos ou materiais no lugar habitual.",
+                "Guarde livros ou materiais de aprendizagem no local aprovado.",
+                "Coloque roupas ou itens macios onde a casa espera.",
+                "Deixe objetos cortantes, pesados, quebrados ou incertos para o adulto.",
+                "Pause e confira com o adulto se passagens e itens necessários continuam acessíveis.",
+            ),
+            (
+                "Use o sinal tranquilo que costuma iniciar a rotina de dormir.",
+                "Faça a etapa habitual de higiene ou banheiro com a ajuda adulta adequada.",
+                "Escolha roupa de dormir aprovada para a casa e as condições.",
+                "Faça o cuidado dental conforme as orientações atuais da família e profissionais.",
+                "Escolha o momento habitual de calma, história ou conexão familiar.",
+                "Termine no ambiente de sono combinado, com o adulto por perto quando necessário.",
+            ),
+        ),
+        cue_notes=(
+            "Deixe visível apenas o próximo cartão e revele outro depois que o adulto conferir a situação.",
+            "Mostre o cartão atual e o seguinte sem transformar nenhum deles em prazo.",
+            "Ofereça escolha somente quando as duas opções forem seguras, disponíveis e aceitas pelo adulto.",
+        ),
+        boundary=(
+            "O planejador não conhece idade, desenvolvimento, deficiência, saúde, necessidades sensoriais, plano de cuidado, cultura, casa, estado atual ou ambiente. "
+            "O adulto responsável deve adaptar, remover ou parar qualquer cartão."
+        ),
+        preflight=(
+            "Quatro verificações antes de usar um cartão",
+            "Confirme se a etapa é segura e adequada neste local e momento.",
+            "Preserve acesso a comida, água, banheiro, remédios, comunicação, mobilidade e conforto.",
+            "Siga orientações profissionais atuais quando aplicáveis; um cartão nunca as substitui.",
+            "Pause, pule ou mude a sequência quando a criança ou a casa precisar de algo diferente.",
+        ),
+        sources=(
+            "Contexto oficial sobre rotinas, não recomendação",
+            "O CDC descreve consistência e previsibilidade como partes da estrutura familiar e diz que cada família decide quais rotinas funcionam. Isso não valida a ferramenta nem garante resultados.",
+            "CDC: criar rotinas consistentes e estrutura familiar",
+        ),
+        webmcp=(
+            "Prévia da API imperativa WebMCP do Chrome",
+            "Cria de três a seis cartões familiares opcionais e revisados por adulto usando apenas escolhas limitadas. Nunca aceita nem acessa nomes, idades, horários, escolas, locais, fotos, contas, texto livre, comportamento ou registros; nunca pontua, diagnostica, monitora ou promete resultados.",
+        ),
+        app=(
+            "Quer uma camada reutilizável para adulto e criança?",
+            "Lumi Mission Planet é opcional. A página atual na App Store descreve missões de rotina em família, painel para responsáveis, dados no aparelho, sem conta ou análise de terceiros, e download grátis com desbloqueio único. Confira a página vigente para disponibilidade e recursos exatos. Estes cartões funcionam sem o app.",
+            "Responsáveis: ver Lumi Mission Planet na App Store",
+        ),
+        faq=(
+            "Dúvidas sobre cartões de rotina",
+            (
+                (
+                    "A página coleta dados de uma criança?",
+                    "Não. Só recebe escolhas limitadas da casa e nunca pede nome, idade, horário, escola, perfil ou atividade.",
+                ),
+                (
+                    "Isto é um programa de comportamento ou plano de cuidado?",
+                    "Não. São lembretes domésticos removíveis; não diagnosticam, prescrevem, monitoram nem prometem resultados.",
+                ),
+                (
+                    "E se uma etapa não servir hoje?",
+                    "O adulto responsável deve pular, trocar ou parar. Todos os cartões são opcionais.",
+                ),
+            ),
+        ),
+        footer="Só sequência revisada por adulto · sem dados infantis · sem monitoramento · sem promessa de resultado",
+        inline="Planeje cartões familiares privados e revisados por adulto antes de escolher um app",
+        index=(
+            "Planejador privado de cartões de rotina familiar",
+            "Monte uma sequência opcional sem informar dados infantis ou registrar conclusão.",
+        ),
+    ),
+    "de-DE": _copy(
+        meta=(
+            "Privater Familienroutine-Kartenplaner | Ohne Kinderdaten",
+            "Eine von Erwachsenen geprüfte Folge aus drei bis sechs Karten erstellen, ohne Name, Alter, Zeitplan, Schule, Verhalten oder Erledigungen eines Kindes einzugeben.",
+            "Kostenlose Werkzeuge",
+            "English",
+            "Kostenlos · für Erwachsene · kein Kinderprofil",
+            "Privater Planer für Familienroutine-Karten",
+            "Haushaltszeitpunkt und Kartenformat wählen. Die Folge erscheint erst, wenn eine erwachsene Aufsicht jede Etappe als passend bestätigt.",
+        ),
+        badges=(
+            "Kein Name, Alter oder Kinderprofil",
+            "Keine Verhaltens- oder Erledigungsprotokolle",
+            "Kein Konto, Upload oder Speichern",
+            "Kein Ergebnis- oder Selbstständigkeitsversprechen",
+        ),
+        planner=(
+            "Von Erwachsenen geprüfte Kartenfolge erstellen",
+            "Die Karten ordnen Haushaltsschritte; sie beurteilen kein Kind, verordnen keine Betreuung und sagen Verhalten, Schlaf, Gesundheit, Lernen oder Familienergebnisse nicht voraus.",
+        ),
+        labels=(
+            "Routinezeitpunkt",
+            "Kartenanzahl",
+            "Kartendarstellung",
+            "Sanfter Übergangshinweis",
+        ),
+        options=(
+            ("Morgen", "Nach Schule oder Betreuung", "Aufräumen", "Schlafengehen"),
+            ("Wörter", "Große Symbole mit Text", "Symbole und Wörter"),
+            (
+                "Nur die nächste Karte zeigen",
+                "Jetzt und danach zeigen",
+                "Eine sichere begrenzte Wahl anbieten",
+            ),
+        ),
+        adult_review=(
+            "Ich beaufsichtige als erwachsene Person und habe diese Schritte für unseren Haushalt geprüft",
+            "Prüfung bestätigt. Jede Karte bleibt optional; heute Unpassendes ändern oder entfernen.",
+            "Erwachsenenprüfung erforderlich. Sicherheit, Zugang, Betreuungshinweise, Haushaltsbedarf und aktuelle Signale des Kindes prüfen.",
+        ),
+        results=(
+            "Private Karten erstellen",
+            "Geprüfte Karten drucken",
+            "Optionale Routinekarte",
+            "Darf übersprungen, pausiert oder ersetzt werden",
+            "Pausenkarte: Folge stoppen und prüfen, was der Haushalt jetzt braucht.",
+        ),
+        steps=(
+            (
+                "Das im Haushalt übliche ruhige Startsignal verwenden.",
+                "Von der Aufsicht bestätigte Kleidung wählen.",
+                "Den üblichen Wasch- oder Betreuungsschritt mit passender Hilfe ausführen.",
+                "Den geplanten Frühstücks- oder Getränkeschritt der Familie nutzen.",
+                "Die erwachsene Person prüft die für den Tag nötigen Dinge.",
+                "Gemeinsam zum vereinbarten Bereitschaftsort gehen.",
+            ),
+            (
+                "Am vereinbarten Übergangsort im Haushalt ankommen.",
+                "Sachen am von der Aufsicht gewählten Ort ablegen.",
+                "Den üblichen Wasch- oder Betreuungsschritt mit passender Hilfe ausführen.",
+                "Die geplante Essens-, Getränke- oder Ruhepause der Familie nutzen.",
+                "Einen bestätigten Ruhe-, Bewegungs- oder Verbindungsschritt wählen.",
+                "Die erwachsene Person kündigt an, was heute als Nächstes kommt.",
+            ),
+            (
+                "Die erwachsene Person wählt einen kleinen sicheren Startbereich.",
+                "Einige Spiel- oder Beschäftigungssachen an ihren üblichen Ort zurücklegen.",
+                "Bücher oder Lernmaterial an den bestätigten Ort zurücklegen.",
+                "Kleidung oder weiche Sachen an den Haushaltsplatz legen.",
+                "Scharfe, schwere, kaputte oder unklare Dinge der erwachsenen Person überlassen.",
+                "Gemeinsam pausieren und freie Wege sowie wichtige Dinge prüfen.",
+            ),
+            (
+                "Das übliche ruhige Signal zum Beginn der Abendroutine verwenden.",
+                "Den üblichen Wasch- oder Toilettenschritt mit passender Hilfe ausführen.",
+                "Für Haushalt und Bedingungen bestätigte Schlafkleidung wählen.",
+                "Zahnpflege nach aktuellen familiären und fachlichen Hinweisen durchführen.",
+                "Den üblichen ruhigen Verbindungs-, Geschichten- oder Entspannungsschritt wählen.",
+                "Mit der vereinbarten Schlafumgebung enden; Aufsicht bleibt bei Bedarf in der Nähe.",
+            ),
+        ),
+        cue_notes=(
+            "Nur die nächste Karte sichtbar lassen; eine weitere erst nach Prüfung der Situation zeigen.",
+            "Aktuelle und folgende Karte zeigen, ohne daraus eine Frist zu machen.",
+            "Nur wählen lassen, wenn beide Möglichkeiten sicher, verfügbar und von der Aufsicht akzeptiert sind.",
+        ),
+        boundary=(
+            "Der Planer kennt Alter, Entwicklung, Behinderung, Gesundheit, sensorische Bedürfnisse, Betreuungsplan, Kultur, Haushalt, aktuellen Zustand und Umgebung nicht. "
+            "Die erwachsene Aufsicht muss jede Karte anpassen, entfernen oder stoppen."
+        ),
+        preflight=(
+            "Vier Prüfungen vor einer Karte",
+            "Bestätigen, dass der Schritt hier und jetzt sicher und passend ist.",
+            "Zugang zu Essen, Wasser, Toilette, Medizin, Kommunikation, Mobilität und Komfort erhalten.",
+            "Wo relevant aktuelle fachliche Betreuungshinweise befolgen; eine Karte ersetzt sie nie.",
+            "Folge pausieren, überspringen oder ändern, wenn Kind oder Haushalt etwas anderes brauchen.",
+        ),
+        sources=(
+            "Amtlicher Routinenkontext, keine Empfehlung",
+            "Die CDC beschreibt Beständigkeit und Vorhersehbarkeit als Teile der Haushaltsstruktur und sagt, Familien entscheiden selbst, welche Routinen passen. Das bestätigt weder dieses Werkzeug noch ein Ergebnis.",
+            "CDC: beständige Routinen und Haushaltsstruktur schaffen",
+        ),
+        webmcp=(
+            "Vorschau der imperativen Chrome-WebMCP-API",
+            "Erstellt nur aus begrenzten Auswahlwerten drei bis sechs optionale, von Erwachsenen geprüfte Routinekarten. Nimmt niemals Namen, Alter, Pläne, Schulen, Orte, Fotos, Konten, Freitext, Verhalten oder Protokolle an und greift nicht darauf zu; bewertet, diagnostiziert, überwacht und verspricht nichts.",
+        ),
+        app=(
+            "Eine optionale wiederverwendbare Ebene für Erwachsene und Kinder?",
+            "Lumi Mission Planet ist optional. Der aktuelle App-Store-Eintrag beschreibt gemeinsame Routinen, ein Eltern-Dashboard, Daten auf dem Gerät, kein Konto oder Drittanbieter-Analyse sowie kostenlosen Download mit einmaliger Freischaltung. Verfügbarkeit und genaue Funktionen im aktuellen Eintrag prüfen. Diese Karten funktionieren ohne App.",
+            "Für Erwachsene: Lumi Mission Planet im App Store",
+        ),
+        faq=(
+            "Fragen zu Routinekarten",
+            (
+                (
+                    "Sammelt die Seite Daten über ein Kind?",
+                    "Nein. Sie nimmt nur begrenzte Haushaltsauswahlen an und fragt nie nach Name, Alter, Plan, Schule, Profil oder Aktivität.",
+                ),
+                (
+                    "Ist dies ein Verhaltensprogramm oder Betreuungsplan?",
+                    "Nein. Es sind entfernbare Haushaltsimpulse; sie diagnostizieren, verordnen, überwachen und versprechen nichts.",
+                ),
+                (
+                    "Was, wenn ein Schritt heute nicht passt?",
+                    "Die erwachsene Aufsicht überspringt, ersetzt oder stoppt ihn. Jede Karte ist optional.",
+                ),
+            ),
+        ),
+        footer="Nur erwachsenengeprüfte Folge · keine Kinderdaten · kein Tracking · kein Ergebnisversprechen",
+        inline="Vor der App-Wahl private, erwachsenengeprüfte Familienroutine-Karten planen",
+        index=(
+            "Privater Familienroutine-Kartenplaner",
+            "Optionale Haushaltsfolge ohne Kinderdaten oder Erledigungsprotokoll erstellen.",
+        ),
+    ),
+    "fr-FR": _copy(
+        meta=(
+            "Planificateur privé de cartes de routine familiale | Sans données d’enfant",
+            "Créez une séquence de trois à six cartes validée par un adulte sans saisir nom, âge, emploi du temps, école, comportement ou activité de l’enfant.",
+            "Outils gratuits",
+            "English",
+            "Gratuit · destiné aux adultes · aucun profil enfant",
+            "Planificateur privé de cartes de routine familiale",
+            "Choisissez un moment du foyer et un format. La séquence apparaît seulement après confirmation par l’adulte responsable.",
+        ),
+        badges=(
+            "Aucun nom, âge ou profil enfant",
+            "Aucun suivi du comportement ou des étapes",
+            "Aucun compte, envoi ou stockage",
+            "Aucune promesse de résultat ou d’autonomie",
+        ),
+        planner=(
+            "Composer une séquence vérifiée par un adulte",
+            "Les cartes ordonnent des étapes domestiques ; elles n’évaluent pas l’enfant, ne prescrivent pas de soins et ne prédisent ni comportement, sommeil, santé, apprentissage ou résultat familial.",
+        ),
+        labels=(
+            "Moment de la routine",
+            "Nombre de cartes",
+            "Présentation",
+            "Repère de transition doux",
+        ),
+        options=(
+            ("Matin", "Après l’école ou la garde", "Rangement", "Coucher"),
+            ("Mots", "Grandes icônes avec texte", "Icônes et mots"),
+            (
+                "Montrer seulement la carte suivante",
+                "Montrer maintenant et après",
+                "Proposer un choix limité et sûr",
+            ),
+        ),
+        adult_review=(
+            "Je suis l’adulte responsable et j’ai vérifié que ces étapes conviennent à ce foyer",
+            "Vérification adulte confirmée. Chaque carte reste facultative ; modifiez ou retirez ce qui ne convient pas aujourd’hui.",
+            "Une vérification adulte est requise. Contrôlez sécurité, accès, consignes de soin, besoins du foyer et signaux actuels de l’enfant.",
+        ),
+        results=(
+            "Créer les cartes privées",
+            "Imprimer les cartes vérifiées",
+            "Carte de routine facultative",
+            "Peut être sautée, interrompue ou remplacée",
+            "Carte pause : arrêtez la séquence et vérifiez ce dont le foyer a besoin maintenant.",
+        ),
+        steps=(
+            (
+                "Utilisez le repère calme qui ouvre habituellement la journée du foyer.",
+                "Choisissez des vêtements validés par l’adulte responsable.",
+                "Effectuez l’étape habituelle de toilette ou de soin avec l’aide adulte adaptée.",
+                "Suivez l’étape de petit-déjeuner ou boisson prévue par la famille.",
+                "Laissez l’adulte vérifier les affaires nécessaires pour la journée.",
+                "Rejoignez avec l’adulte le point convenu pour être prêt.",
+            ),
+            (
+                "Rejoignez l’espace de transition convenu dans le foyer.",
+                "Posez les affaires à l’endroit choisi par l’adulte.",
+                "Effectuez l’étape habituelle de toilette ou de soin avec l’aide adaptée.",
+                "Prenez la pause repas, boisson ou repos prévue par la famille.",
+                "Choisissez l’étape calme, motrice ou relationnelle validée par l’adulte.",
+                "Laissez l’adulte annoncer ce qui vient ensuite aujourd’hui.",
+            ),
+            (
+                "Laissez l’adulte choisir une petite zone sûre pour commencer.",
+                "Rangez quelques jouets ou objets d’activité à leur place habituelle.",
+                "Rangez livres ou matériel d’apprentissage à l’endroit validé.",
+                "Placez vêtements ou objets souples à l’endroit prévu dans le foyer.",
+                "Laissez à l’adulte les objets coupants, lourds, cassés ou incertains.",
+                "Faites une pause et vérifiez ensemble que les passages et objets nécessaires restent accessibles.",
+            ),
+            (
+                "Utilisez le repère calme qui ouvre habituellement la routine du coucher.",
+                "Effectuez l’étape habituelle de toilette avec l’aide adulte adaptée.",
+                "Choisissez une tenue de nuit validée pour le foyer et les conditions.",
+                "Effectuez les soins dentaires selon les consignes familiales et professionnelles actuelles.",
+                "Choisissez le moment habituel de calme, histoire ou lien familial.",
+                "Terminez dans l’environnement de sommeil convenu, avec l’adulte à proximité si nécessaire.",
+            ),
+        ),
+        cue_notes=(
+            "Gardez seulement la prochaine carte visible ; révélez-en une autre après contrôle de la situation par l’adulte.",
+            "Montrez la carte actuelle et la suivante sans en faire des échéances.",
+            "Proposez un choix uniquement si les deux options sont sûres, disponibles et acceptées par l’adulte.",
+        ),
+        boundary=(
+            "Le planificateur ignore âge, développement, handicap, santé, besoins sensoriels, plan de soins, culture, foyer, état actuel et environnement. "
+            "L’adulte responsable doit adapter, retirer ou arrêter chaque carte."
+        ),
+        preflight=(
+            "Quatre contrôles avant une carte",
+            "Confirmez que l’étape est sûre et adaptée ici et maintenant.",
+            "Préservez l’accès à nourriture, eau, toilettes, médicaments, communication, mobilité et confort.",
+            "Suivez les consignes professionnelles actuelles lorsqu’elles s’appliquent ; une carte ne les remplace jamais.",
+            "Interrompez, sautez ou modifiez la séquence si l’enfant ou le foyer a besoin d’autre chose.",
+        ),
+        sources=(
+            "Contexte officiel sur les routines, sans recommandation",
+            "Les CDC présentent cohérence et prévisibilité comme des éléments de la structure familiale et indiquent que chaque famille choisit ses routines. Cela ne valide pas l’outil et ne garantit aucun résultat.",
+            "CDC : créer des routines cohérentes et une structure familiale",
+        ),
+        webmcp=(
+            "Aperçu de l’API WebMCP impérative de Chrome",
+            "Crée trois à six cartes familiales facultatives vérifiées par un adulte à partir de choix limités. N’accepte ni n’accède jamais aux noms, âges, horaires, écoles, lieux, photos, comptes, texte libre, comportements ou activités ; n’évalue, ne diagnostique, ne surveille et ne promet aucun résultat.",
+        ),
+        app=(
+            "Envie d’une couche réutilisable pour adulte et enfant ?",
+            "Lumi Mission Planet est facultatif. Sa fiche App Store actuelle décrit des missions de routine en famille, un tableau de bord pour adultes, des données sur l’appareil, sans compte ni analyse tierce, et un téléchargement gratuit avec déverrouillage unique. Consultez la fiche actuelle pour les fonctions et disponibilités exactes. Ces cartes fonctionnent sans l’app.",
+            "Adultes : voir Lumi Mission Planet sur l’App Store",
+        ),
+        faq=(
+            "Questions sur les cartes de routine",
+            (
+                (
+                    "La page recueille-t-elle des données sur un enfant ?",
+                    "Non. Elle reçoit seulement des choix limités du foyer et ne demande jamais nom, âge, emploi du temps, école, profil ou activité.",
+                ),
+                (
+                    "Est-ce un programme comportemental ou un plan de soins ?",
+                    "Non. Ce sont des repères domestiques amovibles ; ils ne diagnostiquent, ne prescrivent, ne surveillent et ne promettent rien.",
+                ),
+                (
+                    "Et si une étape ne convient pas aujourd’hui ?",
+                    "L’adulte responsable doit la sauter, la remplacer ou l’arrêter. Chaque carte est facultative.",
+                ),
+            ),
+        ),
+        footer="Séquence vérifiée par un adulte uniquement · aucune donnée enfant · aucun suivi · aucun résultat promis",
+        inline="Planifier des cartes familiales privées vérifiées par un adulte avant de choisir une app",
+        index=(
+            "Planificateur privé de cartes de routine familiale",
+            "Créez une séquence facultative sans saisir de données enfant ni suivre les étapes.",
+        ),
+    ),
+    "ja": _copy(
+        meta=(
+            "子どもの情報を入れない家族ルーティンカード作成",
+            "子どもの名前、年齢、予定、園や学校、行動、達成記録を入力せず、大人が確認した3〜6枚の生活カードを作ります。",
+            "無料ツール",
+            "English",
+            "無料・保護者向け・子どもプロフィールなし",
+            "プライベートな家族ルーティンカード作成",
+            "家庭の場面と表示形式を選択。見守る大人が各手順を確認した後だけ、飛ばせる順番カードを表示します。",
+        ),
+        badges=(
+            "名前・年齢・子どもプロフィール不要",
+            "行動や達成の記録なし",
+            "アカウント・送信・保存なし",
+            "成果や自立を保証しない",
+        ),
+        planner=(
+            "大人が確認したカードの流れを作る",
+            "カードは家庭の手順を並べるだけです。子どもを評価せず、ケアを指示せず、行動・睡眠・健康・学習・家庭の成果を予測しません。",
+        ),
+        labels=(
+            "生活の場面",
+            "カード枚数",
+            "カード表示",
+            "穏やかな切り替え方",
+        ),
+        options=(
+            ("朝", "帰宅後", "片づけ", "就寝前"),
+            ("文字", "大きな絵と文字", "絵と文字"),
+            (
+                "次の1枚だけ見せる",
+                "今と次を見せる",
+                "安全な2択を1つ示す",
+            ),
+        ),
+        adult_review=(
+            "見守る大人として、この家庭に合う手順か確認しました",
+            "大人の確認済みです。すべて任意です。今日に合わないカードは変更または削除してください。",
+            "大人の確認が必要です。安全、必要なアクセス、ケアの指示、家庭の事情、今の子どもの様子を確かめてください。",
+        ),
+        results=(
+            "非公開カードを作成",
+            "確認済みカードを印刷",
+            "任意の生活カード",
+            "飛ばす・休む・入れ替えることができます",
+            "休憩カード：流れを止め、家庭に今必要なことを大人が確認します。",
+        ),
+        steps=(
+            (
+                "家庭でいつも使う穏やかな朝の合図から始めます。",
+                "見守る大人が確認した服を選びます。",
+                "家庭でいつも行う洗面や身支度を、必要な大人の手助けとともに進めます。",
+                "家庭で決めた朝食または飲み物の手順に進みます。",
+                "その日に必要な持ち物を大人が確認します。",
+                "見守る大人と一緒に、家庭で決めた準備完了の場所へ移ります。",
+            ),
+            (
+                "家庭で決めた帰宅後の切り替え場所へ行きます。",
+                "持ち物を大人が決めた場所に置きます。",
+                "いつもの洗面やケアを、必要な手助けとともに進めます。",
+                "家庭で予定した食事、飲み物、休憩の時間を取ります。",
+                "大人が確認した静かな時間、体を動かす時間、ふれあいの時間から選びます。",
+                "今日この後にすることを大人が伝えます。",
+            ),
+            (
+                "大人が小さく安全な範囲を1つ選びます。",
+                "おもちゃや遊び道具を少しだけ、いつもの場所へ戻します。",
+                "本や学習用品を大人が確認した場所へ戻します。",
+                "衣類や柔らかい物を家庭で決めた場所へ置きます。",
+                "鋭い物、重い物、壊れた物、判断に迷う物は大人に任せます。",
+                "一緒に休み、通り道と必要な物が使える状態か確認します。",
+            ),
+            (
+                "家庭でいつも使う穏やかな就寝前の合図から始めます。",
+                "いつもの洗面やトイレの手順を、必要な大人の手助けとともに進めます。",
+                "家庭とその日の環境に合う寝間着を大人と選びます。",
+                "家庭と専門家の現在の案内に沿って歯のケアを行います。",
+                "家庭でいつも行う静かなふれあい、読み聞かせ、落ち着く時間から選びます。",
+                "家庭で決めた睡眠環境に整え、必要に応じて大人がそばにいます。",
+            ),
+        ),
+        cue_notes=(
+            "次の1枚だけを見せ、状況を大人が確認してから次を出します。",
+            "今のカードと次のカードを見せますが、締め切りとして扱いません。",
+            "どちらも安全で実行でき、大人が認めた場合だけ選択肢を示します。",
+        ),
+        boundary=(
+            "このツールは、年齢、発達、障害、健康、感覚面の必要、ケア計画、文化、家庭、今の状態、環境を知りません。"
+            "見守る大人がすべてのカードを調整、削除、中止してください。"
+        ),
+        preflight=(
+            "カードを使う前の4項目",
+            "今いる場所と時点で、安全かつ適切な手順か確認します。",
+            "食事、水分、トイレ、薬、連絡、移動、安心に必要なアクセスを妨げません。",
+            "必要な場面では現在の専門的なケア案内を優先し、カードで置き換えません。",
+            "子どもや家庭が別のことを必要としたら、休止、スキップ、変更します。",
+        ),
+        sources=(
+            "公的なルーティン情報（推奨を意味しません）",
+            "CDCは家庭の構造に一貫性と予測可能性が含まれると説明し、どのルーティンが合うかは家庭が決めるとしています。本ツールの有効性や成果を保証するものではありません。",
+            "CDC：一貫したルーティンと家庭の構造",
+        ),
+        webmcp=(
+            "Chrome WebMCP imperative API プレビュー",
+            "画面上の限られた選択肢だけから、大人が確認する任意の家族生活カードを3〜6枚作ります。子どもの名前、年齢、予定、園や学校、場所、写真、アカウント、自由入力、行動、達成記録を受け取らずアクセスもしません。採点、診断、監視、成果保証も行いません。",
+        ),
+        app=(
+            "親子で繰り返し使える仕組みも必要ですか？",
+            "Lumi Mission Planetは任意です。現在のApp Store掲載情報では、親子で使う生活ミッション、保護者向け画面、端末内データ、アカウントや第三者解析なし、無料ダウンロードと買い切り解除を案内しています。正確な提供状況と機能は最新の掲載情報をご確認ください。このカードはアプリなしで使えます。",
+            "保護者の方：App StoreでLumi Mission Planetを見る",
+        ),
+        faq=(
+            "家族ルーティンカードの質問",
+            (
+                (
+                    "子どもの情報を収集しますか？",
+                    "いいえ。家庭の限られた選択肢だけを受け取り、名前、年齢、予定、園や学校、プロフィール、活動は一切尋ねません。",
+                ),
+                (
+                    "行動プログラムやケア計画ですか？",
+                    "いいえ。取り外せる家庭用の順番提示であり、診断、指示、監視、成果保証は行いません。",
+                ),
+                (
+                    "今日合わない手順があったら？",
+                    "見守る大人が飛ばす、入れ替える、中止する判断をしてください。すべて任意です。",
+                ),
+            ),
+        ),
+        footer="大人が確認した順番のみ・子どもの情報なし・追跡なし・成果保証なし",
+        inline="アプリを選ぶ前に、大人が確認する非公開の家族ルーティンカードを作る",
+        index=(
+            "家族ルーティンカード作成",
+            "子どもの情報や達成記録を入力せず、飛ばせる家庭の順番カードを作ります。",
+        ),
+    ),
+    "ko": _copy(
+        meta=(
+            "아동 정보를 받지 않는 가족 루틴 카드 플래너",
+            "아이의 이름, 나이, 일정, 학교, 행동, 완료 기록을 입력하지 않고 보호자가 확인한 3~6장의 생활 카드를 만듭니다.",
+            "무료 도구",
+            "English",
+            "무료 · 보호자용 · 아동 프로필 없음",
+            "비공개 가족 루틴 카드 플래너",
+            "가정 상황과 카드 형식을 고르세요. 보호자가 모든 단계를 확인한 뒤에만 건너뛸 수 있는 순서가 표시됩니다.",
+        ),
+        badges=(
+            "이름·나이·아동 프로필 없음",
+            "행동·완료 추적 없음",
+            "계정·전송·저장 없음",
+            "결과·독립성 보장 없음",
+        ),
+        planner=(
+            "보호자가 확인한 카드 순서 만들기",
+            "카드는 집안 순서만 정리합니다. 아이를 평가하거나 돌봄을 처방하지 않으며 행동, 수면, 건강, 학습, 가족의 결과를 예측하지 않습니다.",
+        ),
+        labels=(
+            "생활 상황",
+            "카드 수",
+            "카드 표시",
+            "부드러운 전환 안내",
+        ),
+        options=(
+            ("아침", "하원·하교 후", "정리", "잠자리"),
+            ("글자", "큰 그림과 글자", "그림과 글자"),
+            (
+                "다음 카드만 보여 주기",
+                "지금과 다음을 보여 주기",
+                "안전한 제한 선택지 하나 제시",
+            ),
+        ),
+        adult_review=(
+            "보호하는 성인으로서 이 단계가 우리 집에 맞는지 확인했습니다",
+            "보호자 확인이 끝났습니다. 모든 카드는 선택 사항이며 오늘 맞지 않으면 바꾸거나 빼세요.",
+            "보호자 확인이 필요합니다. 안전, 필요한 접근, 돌봄 지침, 가정 상황, 아이의 현재 신호를 살펴보세요.",
+        ),
+        results=(
+            "비공개 카드 만들기",
+            "확인한 카드 인쇄",
+            "선택 생활 카드",
+            "건너뛰기·멈추기·바꾸기 가능",
+            "멈춤 카드: 순서를 중단하고 지금 가족에게 무엇이 필요한지 확인하세요.",
+        ),
+        steps=(
+            (
+                "가정에서 평소 사용하는 차분한 아침 시작 신호를 사용하세요.",
+                "보호자가 확인한 옷을 고르세요.",
+                "평소 씻기나 돌봄 단계를 필요한 성인 도움과 함께 진행하세요.",
+                "가족이 계획한 아침 식사나 음료 단계로 넘어가세요.",
+                "오늘 필요한 물건은 성인이 확인하세요.",
+                "보호자와 함께 가정에서 정한 준비 장소로 이동하세요.",
+            ),
+            (
+                "가정에서 정한 귀가 후 전환 장소로 가세요.",
+                "소지품을 보호자가 정한 곳에 두세요.",
+                "평소 씻기나 돌봄 단계를 필요한 도움과 함께 진행하세요.",
+                "가족이 계획한 음식, 음료, 휴식 시간을 가지세요.",
+                "보호자가 확인한 조용한 시간, 움직임, 교감 단계 중 하나를 고르세요.",
+                "오늘 다음에 할 일을 성인이 미리 알려 주세요.",
+            ),
+            (
+                "보호자가 작고 안전한 한 구역을 정해 시작하세요.",
+                "장난감이나 활동 물건 몇 개를 평소 자리로 돌려놓으세요.",
+                "책이나 학습 물건을 보호자가 확인한 장소에 두세요.",
+                "옷이나 부드러운 물건을 가정에서 정한 곳에 두세요.",
+                "날카롭거나 무겁거나 깨졌거나 판단하기 어려운 물건은 성인에게 맡기세요.",
+                "함께 멈춰 통로와 필요한 물건을 계속 이용할 수 있는지 확인하세요.",
+            ),
+            (
+                "가정에서 평소 사용하는 차분한 잠자리 시작 신호를 사용하세요.",
+                "평소 씻기나 화장실 단계를 필요한 성인 도움과 함께 진행하세요.",
+                "가정과 환경에 맞는 잠옷을 보호자와 고르세요.",
+                "가족과 전문가의 현재 안내에 따라 치아 관리를 하세요.",
+                "평소의 차분한 교감, 이야기, 안정을 위한 단계 중 하나를 고르세요.",
+                "가정에서 정한 수면 환경으로 마치고 필요하면 성인이 가까이 있으세요.",
+            ),
+        ),
+        cue_notes=(
+            "다음 카드 한 장만 보이고 보호자가 현재 상황을 확인한 뒤 다른 카드를 보여 주세요.",
+            "현재와 다음 카드를 보여 주되 어느 쪽도 마감 시간으로 취급하지 마세요.",
+            "두 선택 모두 안전하고 가능하며 보호자가 허용할 때만 선택지를 주세요.",
+        ),
+        boundary=(
+            "이 도구는 아이의 나이, 발달, 장애, 건강, 감각적 필요, 돌봄 계획, 문화, 가정, 현재 상태, 환경을 알지 못합니다. "
+            "보호자가 모든 카드를 조정하거나 빼거나 중단해야 합니다."
+        ),
+        preflight=(
+            "카드 사용 전 네 가지 확인",
+            "지금 이 장소와 순간에 안전하고 알맞은 단계인지 확인하세요.",
+            "음식, 물, 화장실, 약, 의사소통, 이동, 편안함에 필요한 접근을 막지 마세요.",
+            "해당하는 경우 현재 전문 돌봄 지침을 우선하고 카드로 대신하지 마세요.",
+            "아이 또는 가족에게 다른 것이 필요하면 순서를 멈추거나 건너뛰거나 바꾸세요.",
+        ),
+        sources=(
+            "공식 루틴 정보이며 추천을 뜻하지 않음",
+            "CDC는 일관성과 예측 가능성을 가정 구조의 일부로 설명하고 어떤 루틴이 맞는지는 각 가족이 정한다고 안내합니다. 이 도구의 효과나 결과를 보장하는 내용은 아닙니다.",
+            "CDC: 일관된 루틴과 가정 구조 만들기",
+        ),
+        webmcp=(
+            "Chrome 명령형 WebMCP API 미리보기",
+            "화면의 제한된 선택지만으로 보호자가 확인하는 선택형 가족 생활 카드 3~6장을 만듭니다. 아이 이름, 나이, 일정, 학교, 장소, 사진, 계정, 자유 입력, 행동, 완료 기록을 받거나 접근하지 않으며 채점, 진단, 감시, 결과 보장을 하지 않습니다.",
+        ),
+        app=(
+            "보호자와 아이가 반복해서 쓸 수 있는 방식도 필요하다면",
+            "Lumi Mission Planet은 선택 사항입니다. 현재 App Store 설명은 보호자와 아이가 함께 쓰는 생활 미션, 보호자 화면, 기기 내 데이터, 계정 및 제3자 분석 없음, 무료 다운로드와 일회성 잠금 해제를 안내합니다. 정확한 제공 여부와 기능은 최신 설명을 확인하세요. 이 카드는 앱 없이도 쓸 수 있습니다.",
+            "보호자: App Store에서 Lumi Mission Planet 보기",
+        ),
+        faq=(
+            "가족 루틴 카드 질문",
+            (
+                (
+                    "아이 정보를 수집하나요?",
+                    "아니요. 제한된 가정 선택지만 받고 이름, 나이, 일정, 학교, 프로필, 활동을 묻지 않습니다.",
+                ),
+                (
+                    "행동 프로그램이나 돌봄 계획인가요?",
+                    "아니요. 뺄 수 있는 가정용 순서 안내이며 진단, 처방, 감시, 결과 보장을 하지 않습니다.",
+                ),
+                (
+                    "오늘 맞지 않는 단계가 있으면 어떻게 하나요?",
+                    "보호자가 건너뛰거나 바꾸거나 중단하세요. 모든 카드는 선택 사항입니다.",
+                ),
+            ),
+        ),
+        footer="보호자가 확인한 순서만 사용 · 아동 정보 없음 · 추적 없음 · 결과 보장 없음",
+        inline="앱을 고르기 전에 보호자가 확인하는 비공개 가족 루틴 카드 계획하기",
+        index=(
+            "비공개 가족 루틴 카드 플래너",
+            "아동 정보나 완료 기록 없이 건너뛸 수 있는 가정 순서를 만듭니다.",
+        ),
+    ),
+    "zh-Hant": _copy(
+        meta=(
+            "私密家庭作息卡規劃器｜不填孩子資料",
+            "不用輸入孩子姓名、年齡、時間表、學校、行為或完成紀錄，由大人確認後建立 3–6 張家庭作息卡。",
+            "免費工具",
+            "English",
+            "免費・家長使用・不建立孩子檔案",
+            "私密家庭作息卡規劃器",
+            "選擇家庭情境與卡片形式；只有陪同大人確認每一步適合後，才顯示可跳過的順序卡。",
+        ),
+        badges=(
+            "不填姓名、年齡或孩子檔案",
+            "不追蹤行為或完成狀態",
+            "無帳號、上傳或儲存",
+            "不保證成果或獨立能力",
+        ),
+        planner=(
+            "建立由大人確認的卡片順序",
+            "卡片只整理家庭步驟；不評估孩子、不提供照護處方，也不預測行為、睡眠、健康、學習或家庭成果。",
+        ),
+        labels=(
+            "作息情境",
+            "卡片數量",
+            "卡片形式",
+            "溫和轉場提示",
+        ),
+        options=(
+            ("早晨", "放學或托育返家後", "收拾整理", "睡前"),
+            ("文字", "大圖示加文字", "圖示與文字"),
+            (
+                "只顯示下一張",
+                "顯示現在與下一張",
+                "提供一組安全的有限選擇",
+            ),
+        ),
+        adult_review=(
+            "我是陪同大人，已確認這些步驟適合目前家庭",
+            "已完成大人檢查。每張卡都只是選用；今天不適合的內容請更換或移除。",
+            "卡片出現前必須由大人檢查安全、必要使用權、照護指示、家庭需求與孩子目前訊號。",
+        ),
+        results=(
+            "建立私密卡片",
+            "列印已確認卡片",
+            "選用作息卡",
+            "可以跳過、暫停或更換",
+            "暫停卡：停止目前順序，由大人確認家庭現在真正需要什麼。",
+        ),
+        steps=(
+            (
+                "使用家中平常的溫和早晨開始提示。",
+                "選擇已由陪同大人確認的衣物。",
+                "依家庭平常方式完成清潔或照護步驟，並由大人提供適當協助。",
+                "進行家人原本規劃的早餐或飲水步驟。",
+                "由大人檢查今天需要攜帶的物品。",
+                "和陪同大人一起前往家中約定的準備位置。",
+            ),
+            (
+                "抵達家中約定的返家轉場位置。",
+                "把隨身物品放到大人選定的位置。",
+                "依平常方式完成清潔或照護步驟，並取得適當協助。",
+                "進行家人原本規劃的飲食、飲水或休息片刻。",
+                "選擇大人核准的安靜、活動或親子連結步驟。",
+                "由大人預告今天接下來的安排。",
+            ),
+            (
+                "由大人選擇一小塊安全區域開始。",
+                "把少量玩具或活動用品放回平常位置。",
+                "把書本或學習用品放回大人確認的位置。",
+                "把衣物或柔軟物品放到家中原定位置。",
+                "尖銳、沉重、破損或無法判斷的物品交給大人處理。",
+                "一起暫停，檢查走道與必要物品仍可正常使用。",
+            ),
+            (
+                "使用家中平常的溫和睡前開始提示。",
+                "依平常方式完成清潔或如廁步驟，並由大人提供適當協助。",
+                "選擇適合家庭與當下環境、已由大人確認的睡衣。",
+                "依家庭與專業人員目前指引完成牙齒照護。",
+                "選擇家中平常的安靜陪伴、故事或沉澱步驟。",
+                "回到家庭約定的睡眠環境，必要時由陪同大人在附近支持。",
+            ),
+        ),
+        cue_notes=(
+            "只讓下一張卡保持可見；大人確認當下狀況後才顯示另一張。",
+            "同時顯示目前與下一張卡，但不把任何一張當成期限。",
+            "只有兩個選項都安全、可行且大人同意時，才提供選擇。",
+        ),
+        boundary=(
+            "本規劃器不知道孩子的年齡、發展、障礙、健康、感官需求、照護計畫、文化、家庭、當下狀態或環境。"
+            "陪同大人必須視需要調整、移除或停止每一張卡。"
+        ),
+        preflight=(
+            "使用卡片前的四項檢查",
+            "確認這一步在目前地點與時刻安全且適合。",
+            "保留飲食、飲水、如廁、藥物、溝通、行動與舒適所需的使用權。",
+            "適用時遵循目前專業照護指引；卡片永遠不能取代指引。",
+            "孩子或家庭需要不同安排時，立即暫停、跳過或更換順序。",
+        ),
+        sources=(
+            "官方作息背景，並非推薦",
+            "CDC 把一致性與可預期性列為家庭結構的一部分，也說每個家庭自行決定適合的作息；這不代表 CDC 認可本工具，也不保證任何成果。",
+            "CDC：建立一致作息與家庭結構",
+        ),
+        webmcp=(
+            "Chrome imperative WebMCP API 預覽",
+            "只用畫面上的有限選項建立 3–6 張由大人確認的選用家庭作息卡；不接收或存取孩子姓名、年齡、時間表、學校、位置、照片、帳號、自由文字、行為或完成紀錄，也不評分、診斷、監看或承諾成果。",
+        ),
+        app=(
+            "需要可重複使用的親子作息層？",
+            "Lumi 任務星球是選用項目。目前 App Store 頁面描述親子共同使用的作息任務、家長後台、資料留在裝置、不需帳號或第三方分析，以及免費下載與一次性解鎖。確切功能與供應狀態請查看目前頁面；這些卡片不安裝 App 也能使用。",
+            "家長：前往 App Store 查看 Lumi 任務星球",
+        ),
+        faq=(
+            "家庭作息卡常見問題",
+            (
+                (
+                    "這個頁面會收集孩子資料嗎？",
+                    "不會。只接收有限家庭選項，完全不詢問姓名、年齡、時間表、學校、檔案或活動紀錄。",
+                ),
+                (
+                    "這是行為方案或照護計畫嗎？",
+                    "不是。這只是可移除的家庭順序提示，不診斷、不開立建議、不監看，也不承諾成果。",
+                ),
+                (
+                    "某一步今天不適合怎麼辦？",
+                    "由陪同大人直接跳過、更換或停止；每張卡都只是選用。",
+                ),
+            ),
+        ),
+        footer="只用大人確認的順序・不收孩子資料・不追蹤・不保證成果",
+        inline="選擇 App 前，先規劃由大人確認的私密家庭作息卡",
+        index=(
+            "私密家庭作息卡規劃器",
+            "不填孩子資料或完成紀錄，建立可跳過的家庭順序卡。",
+        ),
+    ),
+    "zh-Hans": _copy(
+        meta=(
+            "私密家庭作息卡规划器｜不填孩子资料",
+            "不用输入孩子姓名、年龄、时间表、学校、行为或完成记录，由成人确认后建立 3–6 张家庭作息卡。",
+            "免费工具",
+            "English",
+            "免费・家长使用・不建立孩子档案",
+            "私密家庭作息卡规划器",
+            "选择家庭情境和卡片形式；只有陪同成人确认每一步合适后，才显示可跳过的顺序卡。",
+        ),
+        badges=(
+            "不填姓名、年龄或孩子档案",
+            "不跟踪行为或完成状态",
+            "无账号、上传或存储",
+            "不保证成果或独立能力",
+        ),
+        planner=(
+            "建立由成人确认的卡片顺序",
+            "卡片只整理家庭步骤；不评估孩子、不提供照护处方，也不预测行为、睡眠、健康、学习或家庭成果。",
+        ),
+        labels=(
+            "作息情境",
+            "卡片数量",
+            "卡片形式",
+            "温和过渡提示",
+        ),
+        options=(
+            ("早晨", "放学或托育回家后", "收拾整理", "睡前"),
+            ("文字", "大图标加文字", "图标和文字"),
+            (
+                "只显示下一张",
+                "显示现在和下一张",
+                "提供一组安全的有限选择",
+            ),
+        ),
+        adult_review=(
+            "我是陪同成人，已确认这些步骤适合当前家庭",
+            "已完成成人检查。每张卡都只是可选；今天不合适的内容请更换或删除。",
+            "卡片出现前必须由成人检查安全、必要使用权、照护指引、家庭需求和孩子当前信号。",
+        ),
+        results=(
+            "建立私密卡片",
+            "打印已确认卡片",
+            "可选作息卡",
+            "可以跳过、暂停或更换",
+            "暂停卡：停止当前顺序，由成人确认家庭现在真正需要什么。",
+        ),
+        steps=(
+            (
+                "使用家中平常的温和早晨开始提示。",
+                "选择已由陪同成人确认的衣物。",
+                "按家庭平常方式完成清洁或照护步骤，并由成人提供适当帮助。",
+                "进行家人原本安排的早餐或饮水步骤。",
+                "由成人检查今天需要携带的物品。",
+                "和陪同成人一起前往家中约定的准备位置。",
+            ),
+            (
+                "到达家中约定的回家过渡位置。",
+                "把随身物品放到成人选定的位置。",
+                "按平常方式完成清洁或照护步骤，并获得适当帮助。",
+                "进行家人原本安排的饮食、饮水或休息片刻。",
+                "选择成人批准的安静、活动或亲子连接步骤。",
+                "由成人预告今天接下来的安排。",
+            ),
+            (
+                "由成人选择一小块安全区域开始。",
+                "把少量玩具或活动用品放回平常位置。",
+                "把书本或学习用品放回成人确认的位置。",
+                "把衣物或柔软物品放到家中原定位置。",
+                "尖锐、沉重、破损或无法判断的物品交给成人处理。",
+                "一起暂停，检查通道和必要物品仍可正常使用。",
+            ),
+            (
+                "使用家中平常的温和睡前开始提示。",
+                "按平常方式完成清洁或如厕步骤，并由成人提供适当帮助。",
+                "选择适合家庭和当前环境、已由成人确认的睡衣。",
+                "按家庭和专业人员当前指引完成牙齿护理。",
+                "选择家中平常的安静陪伴、故事或放松步骤。",
+                "回到家庭约定的睡眠环境，必要时由陪同成人在附近支持。",
+            ),
+        ),
+        cue_notes=(
+            "只让下一张卡保持可见；成人确认当前情况后才显示另一张。",
+            "同时显示当前和下一张卡，但不把任何一张当成期限。",
+            "只有两个选项都安全、可行且成人同意时，才提供选择。",
+        ),
+        boundary=(
+            "本规划器不知道孩子的年龄、发展、残障、健康、感官需求、照护计划、文化、家庭、当前状态或环境。"
+            "陪同成人必须按需要调整、删除或停止每一张卡。"
+        ),
+        preflight=(
+            "使用卡片前的四项检查",
+            "确认这一步在当前地点和时刻安全且合适。",
+            "保留饮食、饮水、如厕、药物、沟通、行动和舒适所需的使用权。",
+            "适用时遵循当前专业照护指引；卡片永远不能代替指引。",
+            "孩子或家庭需要不同安排时，立即暂停、跳过或更换顺序。",
+        ),
+        sources=(
+            "官方作息背景，并非推荐",
+            "CDC 把一致性和可预期性列为家庭结构的一部分，也说明每个家庭自行决定合适的作息；这不代表 CDC 认可本工具，也不保证任何成果。",
+            "CDC：建立一致作息和家庭结构",
+        ),
+        webmcp=(
+            "Chrome imperative WebMCP API 预览",
+            "只用页面上的有限选项建立 3–6 张由成人确认的可选家庭作息卡；不接收或访问孩子姓名、年龄、时间表、学校、位置、照片、账号、自由文本、行为或完成记录，也不评分、诊断、监测或承诺成果。",
+        ),
+        app=(
+            "需要可重复使用的亲子作息层？",
+            "Lumi Mission Planet 是可选项目。目前 App Store 页面描述亲子共同使用的作息任务、家长后台、数据留在设备、不需账号或第三方分析，以及免费下载和一次性解锁。具体功能和供应状态请查看当前页面；这些卡片不安装 App 也能使用。",
+            "家长：前往 App Store 查看 Lumi Mission Planet",
+        ),
+        faq=(
+            "家庭作息卡常见问题",
+            (
+                (
+                    "这个页面会收集孩子资料吗？",
+                    "不会。只接收有限家庭选项，完全不询问姓名、年龄、时间表、学校、档案或活动记录。",
+                ),
+                (
+                    "这是行为方案或照护计划吗？",
+                    "不是。这只是可删除的家庭顺序提示，不诊断、不开立建议、不监测，也不承诺成果。",
+                ),
+                (
+                    "某一步今天不合适怎么办？",
+                    "由陪同成人直接跳过、更换或停止；每张卡都只是可选。",
+                ),
+            ),
+        ),
+        footer="只用成人确认的顺序・不收孩子资料・不跟踪・不保证成果",
+        inline="选择 App 前，先规划由成人确认的私密家庭作息卡",
+        index=(
+            "私密家庭作息卡规划器",
+            "不填孩子资料或完成记录，建立可跳过的家庭顺序卡。",
+        ),
+    ),
+}
+
+
+STYLE = r"""
+:root{--ink:#253047;--muted:#697287;--line:#e4e0d9;--paper:#fffdf8;--bg:#f6f2ea;--navy:#263651;--sky:#dceef7;--mint:#dff1e7;--coral:#ef816c;--gold:#f4c96b;--shadow:0 22px 60px rgba(39,54,81,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 85% 0,#fff9df 0,var(--bg) 48%,#e7eef2 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:#325f7d}.wrap{width:min(1120px,calc(100% - 30px));margin:auto}.top{position:sticky;top:0;z-index:8;background:#263651f5;color:#fff;box-shadow:0 9px 28px rgba(26,40,62,.18)}.nav{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{color:#fff;text-decoration:none;font-weight:850;white-space:nowrap}.links{display:flex;gap:15px;overflow-x:auto}
+.hero{padding:64px 0 30px;text-align:center}.eyebrow,.badge{display:inline-flex;border:1px solid #d8e1e5;background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--navy);white-space:nowrap}.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.04;letter-spacing:-.035em;margin:.3em 0 .22em;white-space:nowrap;overflow-x:auto}.lead{font-size:clamp(17px,2.2vw,21px);color:var(--muted);margin:0;white-space:nowrap;overflow-x:auto}.badges{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:22px}
+.planner,.card,.app-card{background:rgba(255,253,248,.98);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}.planner{padding:clamp(20px,4vw,36px);margin:16px auto 30px}.planner h2,.card h2,.app-card h2{font-size:clamp(24px,3.6vw,34px);line-height:1.14;margin:0;white-space:nowrap;overflow-x:auto}.intro{color:var(--muted);white-space:nowrap;overflow-x:auto}
+.controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--navy);margin-bottom:6px;white-space:nowrap;overflow-x:auto}select,button{font:inherit}select{width:100%;min-height:46px;border:1px solid #cfd7d9;border-radius:13px;background:#fff;color:var(--ink);padding:9px 11px}.toggle{display:flex;align-items:center;gap:10px;border:1px solid #d9c9b6;border-radius:14px;padding:11px 13px;background:#fff8e8;font-weight:760;white-space:nowrap;overflow-x:auto}.toggle input{inline-size:20px;block-size:20px;flex:0 0 auto}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.button{border:0;border-radius:999px;background:linear-gradient(135deg,var(--navy),#467694);color:#fff;text-decoration:none;font-weight:850;padding:11px 17px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(38,54,81,.22)}.button.secondary{background:#fff;color:var(--navy);border:1px solid #bdcbd3;box-shadow:none}.button:disabled{cursor:not-allowed;opacity:.48}
+.review-note{background:#fff4d9;border:1px solid #ead5a2;border-radius:16px;padding:13px 15px;margin:16px 0 0;white-space:nowrap;overflow-x:auto}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin-top:22px}.routine-card{min-height:190px;border:1px solid #d9d5ca;border-radius:18px;padding:18px;background:var(--paper);display:flex;flex-direction:column;min-width:0;position:relative;overflow:hidden}.routine-card:before{content:"";position:absolute;inset:0 0 auto;height:7px;background:linear-gradient(90deg,var(--coral),var(--gold),#72a99c)}.routine-card strong,.routine-card span,.routine-card small{display:block;white-space:nowrap;overflow-x:auto}.routine-card strong{font-size:12px;color:#657084;text-transform:uppercase;letter-spacing:.05em;margin-top:6px}.routine-card .icon{font-size:34px;margin:13px 0 7px}.routine-card .step{font-weight:790}.routine-card small{margin-top:auto;padding-top:15px;color:var(--muted)}.routine-card.compact .icon{font-size:48px}.routine-card.words .icon{display:none}.cue{grid-column:1/-1;background:var(--sky);border-color:#c4dce8;min-height:auto}.pause{background:var(--mint);border-color:#c5ddcf;min-height:auto}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:30px}.card,.app-card{padding:clamp(20px,3.5vw,30px)}.card p,.card li,.app-card p,.faq details p,.faq summary{white-space:nowrap;overflow-x:auto}.card ol,.card ul{padding-left:22px}.card li{margin:8px 0}.source-list a{overflow-wrap:anywhere}.app-card{margin:0 auto 38px;background:linear-gradient(135deg,#fffdf8,#edf5f2)}.app-card .button{display:inline-flex;margin-top:5px}.faq{margin-bottom:30px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+.footer{background:var(--navy);color:#fff;text-align:center;padding:27px 0;white-space:nowrap;overflow-x:auto}
+@media(max-width:900px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}}
+@media(max-width:560px){.controls,.cards{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1120px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{.top,.hero,.controls,.actions,.app-card,.footer,.faq{display:none!important}body{background:#fff}.planner,.card{box-shadow:none}.routine-card{break-inside:avoid}.cards{grid-template-columns:repeat(2,1fr)}}
+"""
+
+
+SCRIPT = r"""
+(() => {
+  const config = JSON.parse(document.getElementById("routine-config").textContent);
+  const form = document.getElementById("routine-planner");
+  const fields = {
+    context: document.getElementById("context"),
+    card_count: document.getElementById("card-count"),
+    presentation: document.getElementById("presentation"),
+    transition_cue: document.getElementById("transition-cue"),
+    adult_reviewed: document.getElementById("adult-reviewed")
+  };
+  const cards = document.getElementById("routine-cards");
+  const reviewNote = document.getElementById("review-note");
+  const printButton = document.getElementById("print-cards");
+
+  function enumValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const values = config.inputSchema.properties[name].enum;
+    if (typeof value !== "string" || !values.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    return value;
+  }
+
+  function integerValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const rule = config.inputSchema.properties[name];
+    if (!Number.isInteger(value) || value < rule.minimum || value > rule.maximum) {
+      throw new RangeError(`${name} is outside the supported range.`);
+    }
+    return value;
+  }
+
+  function booleanValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name) ||
+        typeof input[name] !== "boolean") {
+      throw new TypeError(`${name} must be a boolean.`);
+    }
+    return input[name];
+  }
+
+  function plan(input) {
+    const context = enumValue(input, "context");
+    const cardCount = integerValue(input, "card_count");
+    const presentation = enumValue(input, "presentation");
+    const transitionCue = enumValue(input, "transition_cue");
+    const adultReviewed = booleanValue(input, "adult_reviewed");
+    const selected = {
+      context,
+      context_label: config.labels.context[context],
+      card_count: cardCount,
+      presentation,
+      presentation_label: config.labels.presentation[presentation],
+      transition_cue: transitionCue,
+      transition_cue_label: config.labels.transition[transitionCue],
+      adult_reviewed: adultReviewed
+    };
+    if (!adultReviewed) {
+      return {
+        status: "adult_review_required",
+        selected_preferences: selected,
+        cards: [],
+        transition_note: "",
+        adult_review_note: config.adultReviewNo,
+        boundary: config.boundary
+      };
+    }
+    const cards = config.contextSteps[context].slice(0, cardCount).map(
+      (text, index) => ({
+        position: index + 1,
+        icon: config.cardIcons[context][index],
+        text,
+        optional: true,
+        may_skip_pause_or_replace: true
+      })
+    );
+    return {
+      status: "adult_review_confirmed",
+      selected_preferences: selected,
+      cards,
+      transition_note: config.cueNotes[transitionCue],
+      pause_card: config.pauseCard,
+      adult_review_note: config.adultReviewYes,
+      boundary: config.boundary,
+      not_behavior_care_health_sleep_or_learning_advice: true,
+      no_outcome_or_independence_guarantee: true
+    };
+  }
+
+  function validateInput(input) {
+    if (input === null || typeof input !== "object" || Array.isArray(input)) {
+      throw new TypeError("WebMCP input must be an object.");
+    }
+    const allowed = new Set(Object.keys(config.inputSchema.properties));
+    for (const name of Object.keys(input)) {
+      if (!allowed.has(name)) {
+        throw new RangeError(`${name} is not a supported input.`);
+      }
+    }
+    return plan(input);
+  }
+
+  function cardMarkup(card, presentation) {
+    const className = presentation === "words" ? "words" :
+      presentation === "icons-with-labels" ? "compact" : "";
+    return `<article class="routine-card ${className}">` +
+      `<strong>${config.cardLabel} ${card.position}</strong>` +
+      `<span class="icon" aria-hidden="true">${card.icon}</span>` +
+      `<span class="step">${card.text}</span>` +
+      `<small>${config.skipLabel}</small></article>`;
+  }
+
+  function render() {
+    const result = plan({
+      context: fields.context.value,
+      card_count: Number(fields.card_count.value),
+      presentation: fields.presentation.value,
+      transition_cue: fields.transition_cue.value,
+      adult_reviewed: fields.adult_reviewed.checked
+    });
+    reviewNote.textContent = result.adult_review_note;
+    const confirmed = result.status === "adult_review_confirmed";
+    printButton.disabled = !confirmed;
+    if (!confirmed) {
+      cards.replaceChildren();
+      return;
+    }
+    cards.innerHTML = result.cards.map(
+      (card) => cardMarkup(card, result.selected_preferences.presentation)
+    ).join("") +
+      `<article class="routine-card cue"><strong>${config.transitionLabel}</strong>` +
+      `<span class="step">${result.transition_note}</span></article>` +
+      `<article class="routine-card pause"><span class="step">${result.pause_card}</span>` +
+      `<small>${result.boundary}</small></article>`;
+  }
+
+  async function registerWebMcp() {
+    if (!document.modelContext?.registerTool) return;
+    await document.modelContext.registerTool({
+      name: "plan_private_family_routine_cards",
+      description: config.toolDescription,
+      inputSchema: config.inputSchema,
+      annotations: {readOnlyHint: true, untrustedContentHint: false},
+      execute: async (input) => {
+        const plan = validateInput(input);
+        const result = {
+          result_type: "private_parent_reviewed_family_routine_cards",
+          child_names_ages_schedules_schools_profiles_not_received: true,
+          no_behavior_completion_location_photo_account_or_free_text: true,
+          no_upload_storage_monitoring_scoring_diagnosis_or_prediction: true,
+          plan,
+          adult_preflight: config.preflightSteps,
+          optional_free_planner: config.freePlanner,
+          official_sources: config.officialSources,
+          webmcp_preview_source: config.webmcpSource
+        };
+        if (config.optionalApp) {
+          result.optional_lumi_mission_planet = config.optionalApp;
+        }
+        return JSON.stringify(result);
+      }
+    });
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    render();
+  });
+  for (const [name, field] of Object.entries(fields)) {
+    field.addEventListener("change", () => {
+      if (name !== "adult_reviewed") {
+        fields.adult_reviewed.checked = false;
+      }
+      render();
+    });
+  }
+  printButton.addEventListener("click", () => {
+    if (fields.adult_reviewed.checked) window.print();
+  });
+  render();
+  registerWebMcp().catch((error) =>
+    console.error("WebMCP tool registration failed.", error));
+})();
+"""
+
+
+def canonical(locale: str) -> str:
+    if locale not in ALT_LOCALES:
+        raise ValueError(f"unsupported locale: {locale}")
+    prefix = "" if locale == "en" else f"{locale}/"
+    return f"{SITE}/{prefix}tools/{SLUG}.html"
+
+
+def json_script(value: dict[str, object]) -> str:
+    payload = json.dumps(value, ensure_ascii=False, separators=(",", ":"))
+    return (
+        '<script type="application/ld+json">'
+        + payload.replace("</", "<\\/")
+        + "</script>"
+    )
+
+
+def options(values: dict[str, str]) -> str:
+    return "".join(
+        f'<option value="{html.escape(key, quote=True)}">{html.escape(label)}</option>'
+        for key, label in values.items()
+    )
+
+
+def webmcp_input_schema(locale: str) -> dict[str, object]:
+    if locale not in COPY:
+        raise ValueError(f"unsupported locale: {locale}")
+    t = COPY[locale]
+    return {
+        "type": "object",
+        "properties": {
+            "context": {
+                "type": "string",
+                "enum": list(CONTEXTS),
+                "description": t["context_label"],
+            },
+            "card_count": {
+                "type": "integer",
+                "minimum": min(CARD_COUNTS),
+                "maximum": max(CARD_COUNTS),
+                "description": t["count_label"],
+            },
+            "presentation": {
+                "type": "string",
+                "enum": list(PRESENTATIONS),
+                "description": t["presentation_label"],
+            },
+            "transition_cue": {
+                "type": "string",
+                "enum": list(TRANSITION_CUES),
+                "description": t["transition_label"],
+            },
+            "adult_reviewed": {
+                "type": "boolean",
+                "description": t["adult_review_label"],
+            },
+        },
+        "required": [
+            "context",
+            "card_count",
+            "presentation",
+            "transition_cue",
+            "adult_reviewed",
+        ],
+        "additionalProperties": False,
+    }
+
+
+def render_page(locale: str, app_public: bool = False) -> str:
+    if locale not in COPY:
+        raise ValueError(f"unsupported locale: {locale}")
+    t = COPY[locale]
+    prefix = "" if locale == "en" else f"{locale}/"
+    url = canonical(locale)
+    other = "zh-Hant" if locale == "en" else "en"
+    alternate = canonical(other)
+    home = f"{SITE}/{prefix}index.html"
+    tools = f"{SITE}/{prefix}tools/index.html"
+    alternates = "\n".join(
+        f'<link rel="alternate" hreflang="{item}" href="{canonical(item)}">'
+        for item in ALT_LOCALES
+    ) + f'\n<link rel="alternate" hreflang="x-default" href="{canonical("en")}">'
+    badges = "".join(
+        f'<span class="badge">{html.escape(item)}</span>' for item in t["badges"]
+    )
+    preflight_items = "".join(
+        f"<li>{html.escape(item)}</li>" for item in t["preflight_steps"]
+    )
+    faq = "".join(
+        f"<details><summary>{html.escape(question)}</summary>"
+        f"<p>{html.escape(answer)}</p></details>"
+        for question, answer in t["faq"]
+    )
+    tracked_app_url = (
+        appstore_url(APP_KEY, f"iag_family_routine_{locale.lower()}")
+        if app_public
+        else ""
+    )
+    app_card = ""
+    if tracked_app_url:
+        app_card = (
+            '<section class="app-card wrap"><h2>'
+            f'{html.escape(t["app_title"])}</h2><p>{html.escape(t["app_text"])}</p>'
+            f'<a class="button" href="{html.escape(tracked_app_url, quote=True)}" '
+            f'rel="nofollow noopener">{html.escape(t["app_cta"])}</a></section>'
+        )
+    config = {
+        "inputSchema": webmcp_input_schema(locale),
+        "labels": {
+            "context": t["context_options"],
+            "presentation": t["presentation_options"],
+            "transition": t["transition_options"],
+        },
+        "contextSteps": t["context_steps"],
+        "cardIcons": CARD_ICONS,
+        "cueNotes": t["cue_notes"],
+        "adultReviewYes": t["adult_review_yes"],
+        "adultReviewNo": t["adult_review_no"],
+        "cardLabel": t["card_label"],
+        "skipLabel": t["skip_label"],
+        "transitionLabel": t["transition_label"],
+        "pauseCard": t["pause_card"],
+        "boundary": t["boundary"],
+        "preflightSteps": t["preflight_steps"],
+        "toolDescription": t["webmcp_description"],
+        "freePlanner": {
+            "label": t["heading"],
+            "url": url,
+            "boundary": t["planner_intro"],
+        },
+        "officialSources": [
+            {"label": t["source_label"], "url": CDC_ROUTINES}
+        ],
+        "webmcpSource": WEBMCP_SOURCE,
+        "optionalApp": (
+            {
+                "label": t["app_cta"],
+                "boundary": t["app_text"],
+                "app_store_url": tracked_app_url,
+            }
+            if tracked_app_url
+            else None
+        ),
+    }
+    config_json = json.dumps(
+        config, ensure_ascii=False, separators=(",", ":")
+    ).replace("</", "<\\/")
+    schema = {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": t["heading"],
+        "description": t["description"],
+        "url": url,
+        "inLanguage": locale,
+        "datePublished": CONTENT_DATE,
+        "dateModified": CONTENT_DATE,
+        "applicationCategory": "LifestyleApplication",
+        "operatingSystem": "Any",
+        "isAccessibleForFree": True,
+        "featureList": [t["planner"], *t["badges"]],
+        "citation": [CDC_ROUTINES],
+        "audience": {"@type": "PeopleAudience", "suggestedMinAge": 18},
+    }
+    faq_schema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": locale,
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": question,
+                "acceptedAnswer": {"@type": "Answer", "text": answer},
+            }
+            for question, answer in t["faq"]
+        ],
+    }
+    count_options = "".join(
+        f'<option value="{count}">{count}</option>' for count in CARD_COUNTS
+    )
+    return f"""<!DOCTYPE html>
+<html lang="{locale}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{html.escape(t["title"])}</title>
+<meta name="description" content="{html.escape(t["description"])}">
+<link rel="canonical" href="{url}">
+{alternates}
+<meta property="og:type" content="website">
+<meta property="og:title" content="{html.escape(t["heading"])}">
+<meta property="og:description" content="{html.escape(t["description"])}">
+<meta property="og:url" content="{url}">
+<meta name="twitter:card" content="summary">
+<style>{STYLE}</style>
+{json_script(schema)}
+{json_script(faq_schema)}
+{feed_discovery_links()}
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="{home}">iOS App Guide</a><nav class="links"><a href="{tools}">{html.escape(t["tools"])}</a><a href="{alternate}">{html.escape(t["switch"])}</a></nav></div></header>
+<main>
+<section class="hero wrap"><div class="eyebrow">{html.escape(t["eyebrow"])}</div><h1>{html.escape(t["heading"])}</h1><p class="lead">{html.escape(t["lead"])}</p><div class="badges">{badges}</div></section>
+<section class="planner wrap"><h2>{html.escape(t["planner"])}</h2><p class="intro">{html.escape(t["planner_intro"])}</p>
+<form id="routine-planner"><div class="controls">
+<div class="field"><label for="context">{html.escape(t["context_label"])}</label><select id="context">{options(t["context_options"])}</select></div>
+<div class="field"><label for="card-count">{html.escape(t["count_label"])}</label><select id="card-count">{count_options}</select></div>
+<div class="field"><label for="presentation">{html.escape(t["presentation_label"])}</label><select id="presentation">{options(t["presentation_options"])}</select></div>
+<div class="field"><label for="transition-cue">{html.escape(t["transition_label"])}</label><select id="transition-cue">{options(t["transition_options"])}</select></div>
+</div><label class="toggle"><input id="adult-reviewed" type="checkbox">{html.escape(t["adult_review_label"])}</label><div class="actions"><button class="button" type="submit">{html.escape(t["update"])}</button><button class="button secondary" id="print-cards" type="button" disabled>{html.escape(t["print"])}</button></div></form>
+<p class="review-note" id="review-note"></p><div class="cards" id="routine-cards"></div></section>
+<section class="wrap grid"><article class="card"><h2>{html.escape(t["preflight_title"])}</h2><ol>{preflight_items}</ol></article><article class="card"><h2>{html.escape(t["sources_title"])}</h2><p>{html.escape(t["sources_intro"])}</p><p><a href="{CDC_ROUTINES}" rel="noopener">{html.escape(t["source_label"])}</a></p><p><a href="{WEBMCP_SOURCE}" rel="noopener">{html.escape(t["webmcp_source"])}</a></p></article></section>
+<section class="wrap card faq"><h2>{html.escape(t["faq_title"])}</h2>{faq}</section>
+{app_card}
+</main>
+<footer class="footer"><div class="wrap">{html.escape(t["footer"])}</div></footer>
+<script type="application/json" id="routine-config">{config_json}</script>
+<script>{SCRIPT}</script>
+</body>
+</html>
+"""
+
+
+def index_card(locale: str) -> str:
+    t = COPY[locale]
+    return (
+        f'<article class="card third" data-tool="{SLUG}"><h2><a href="'
+        f'{SLUG}.html">{html.escape(t["index_title"])}</a></h2>'
+        f'<p>{html.escape(t["index_description"])}</p></article>'
+    )
+
+
+def update_one_index(path: Path, locale: str) -> bool:
+    if not path.exists():
+        return False
+    text = path.read_text(encoding="utf-8")
+    card = index_card(locale)
+    existing = re.compile(
+        rf'<article class="card third"(?: data-tool="{re.escape(SLUG)}")?>'
+        rf'<h2><a href="{re.escape(SLUG)}\.html">.*?</article>',
+        re.S,
+    )
+    updated = existing.sub("", text)
+    anchor = re.compile(
+        r'(<article class="card third" data-tool="'
+        r'private-daily-checklist-planner">.*?</article>)',
+        re.S,
+    )
+    if anchor.search(updated):
+        updated = anchor.sub(r"\1" + card, updated, count=1)
+    else:
+        marker = '<section class="wrap grid">'
+        if marker not in updated:
+            raise RuntimeError(f"{path} is missing its tools grid")
+        updated = updated.replace(marker, marker + card, 1)
+    if updated == text:
+        return False
+    path.write_text(updated, encoding="utf-8")
+    return True
+
+
+def write_text_if_changed(path: Path, content: str) -> bool:
+    if path.exists() and path.read_text(encoding="utf-8") == content:
+        return False
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(content, encoding="utf-8")
+    return True
+
+
+TARGET_ANSWER_SLUGS = (
+    "best-kids-routine-app.html",
+    "best-chore-and-routine-app-for-kids.html",
+)
+INBOUND_LINK_CLASS = "family-routine-card-planner-inline-link"
+_LUMI_MISSION_CTA = re.compile(
+    r'<a\b(?=[^>]*\shref\s*=\s*(?P<q>["\'])https://apps\.apple\.com/'
+    r'(?:[^"\'?#]*/)*id' + re.escape(APP_ID) + r'(?:[?#][^"\']*)?(?P=q))[^>]*>',
+    re.IGNORECASE,
+)
+
+
+def insert_answer_links(pages: Path = PAGES) -> int:
+    changed = 0
+    for locale in ALT_LOCALES:
+        directory = pages / "answers" if locale == "en" else pages / locale / "answers"
+        link = (
+            f'<a class="cta ghost {INBOUND_LINK_CLASS}" '
+            f'data-family-routine-card-planner-link="1" href="{canonical(locale)}" '
+            f'rel="noopener">{html.escape(COPY[locale]["inline_link"])}</a> '
+        )
+        for slug in TARGET_ANSWER_SLUGS:
+            path = directory / slug
+            if not path.is_file():
+                continue
+            text = path.read_text(encoding="utf-8")
+            if INBOUND_LINK_CLASS in text:
+                continue
+            match = _LUMI_MISSION_CTA.search(text)
+            if match and write_text_if_changed(
+                path,
+                text[: match.start()] + link + text[match.start() :],
+            ):
+                changed += 1
+    return changed
+
+
+def build(pages: Path = PAGES, app_public: bool = False) -> list[str]:
+    outputs = []
+    for locale in ALT_LOCALES:
+        root = pages if locale == "en" else pages / locale
+        write_text_if_changed(
+            root / "tools" / f"{SLUG}.html",
+            render_page(locale, app_public),
+        )
+        update_one_index(root / "tools" / "index.html", locale)
+        outputs.append(canonical(locale))
+    insert_answer_links(pages)
+    return outputs
+
+
+def main() -> None:
+    app_public = APP_KEY in live_app_keys(APPSTORE, PAGES, refresh=False)
+    outputs = build(app_public=app_public)
+    sitemap_count = write_tools_sitemap()
+    for output in outputs:
+        print(f"family routine card planner -> {output}")
+    print(f"tools sitemap -> {sitemap_count} urls")
+
+
+if __name__ == "__main__":
+    main()

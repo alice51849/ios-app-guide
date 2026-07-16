@@ -60,6 +60,7 @@ import family_travel_observation_passport
 import family_travel_opds_catalog
 import family_travel_ro_crate
 import family_travel_static_api
+import family_routine_card_planner
 import film_look_recipe_planner
 import gen_app_catalog
 import gen_app_store_qr_ctas
@@ -13170,6 +13171,229 @@ class GeneratorTests(unittest.TestCase):
             }
             self.assertEqual(before, after)
 
+    def test_family_routine_card_planner_is_private_parent_reviewed_and_read_only(self):
+        m = family_routine_card_planner
+        self.assertEqual(
+            (
+                "en",
+                "es-ES",
+                "pt-BR",
+                "de-DE",
+                "fr-FR",
+                "ja",
+                "ko",
+                "zh-Hant",
+                "zh-Hans",
+            ),
+            m.ALT_LOCALES,
+        )
+        self.assertEqual(set(m.ALT_LOCALES), set(m.COPY))
+        english_heading = m.COPY["en"]["heading"]
+        for locale in m.ALT_LOCALES:
+            private = m.render_page(locale, app_public=False)
+            public = m.render_page(locale, app_public=True)
+            schema = m.webmcp_input_schema(locale)
+            self.assertIn(m.COPY[locale]["heading"], private)
+            self.assertIn('"@type":"WebApplication"', private)
+            self.assertNotIn('"@type":"SoftwareApplication"', private)
+            self.assertIn('"dateModified":"2026-07-16"', private)
+            self.assertIn('"suggestedMinAge":18', private)
+            self.assertIn("document.modelContext?.registerTool", private)
+            self.assertIn(
+                'name: "plan_private_family_routine_cards"',
+                private,
+            )
+            self.assertIn(
+                "annotations: {readOnlyHint: true, untrustedContentHint: false}",
+                private,
+            )
+            self.assertIn(
+                "child_names_ages_schedules_schools_profiles_not_received: true",
+                private,
+            )
+            self.assertIn(
+                "no_behavior_completion_location_photo_account_or_free_text: true",
+                private,
+            )
+            self.assertIn(
+                "no_upload_storage_monitoring_scoring_diagnosis_or_prediction: true",
+                private,
+            )
+            self.assertIn(m.CDC_ROUTINES, private)
+            self.assertIn(m.WEBMCP_SOURCE, private)
+            self.assertIn(
+                '<input id="adult-reviewed" type="checkbox">',
+                private,
+            )
+            self.assertIn(
+                'id="print-cards" type="button" disabled',
+                private,
+            )
+            for forbidden in (
+                'type="file"',
+                "<textarea",
+                "FileReader",
+                "fetch(",
+                "XMLHttpRequest",
+                "localStorage",
+                "sessionStorage",
+                "navigator.modelContext",
+                "origin-trial",
+            ):
+                self.assertNotIn(forbidden.lower(), private.lower())
+            self.assertNotIn(f"id{m.APP_ID}", private)
+            self.assertIn(f"id{m.APP_ID}", public)
+            self.assertLess(
+                public.index('id="routine-planner"'),
+                public.index(m.COPY[locale]["sources_title"]),
+            )
+            self.assertLess(
+                public.index(m.COPY[locale]["sources_title"]),
+                public.index(m.COPY[locale]["app_title"]),
+            )
+            self.assertIn(
+                f'<link rel="canonical" href="{m.canonical(locale)}">',
+                private,
+            )
+            for alternate in m.ALT_LOCALES:
+                self.assertIn(
+                    f'hreflang="{alternate}" href="{m.canonical(alternate)}"',
+                    private,
+                )
+            self.assertIn(
+                f'hreflang="x-default" href="{m.canonical("en")}"',
+                private,
+            )
+            self.assertFalse(schema["additionalProperties"])
+            self.assertEqual(list(schema["properties"]), schema["required"])
+            self.assertEqual(
+                list(m.CONTEXTS),
+                schema["properties"]["context"]["enum"],
+            )
+            self.assertEqual(
+                min(m.CARD_COUNTS),
+                schema["properties"]["card_count"]["minimum"],
+            )
+            self.assertEqual(
+                max(m.CARD_COUNTS),
+                schema["properties"]["card_count"]["maximum"],
+            )
+            self.assertEqual(
+                list(m.PRESENTATIONS),
+                schema["properties"]["presentation"]["enum"],
+            )
+            self.assertEqual(
+                list(m.TRANSITION_CUES),
+                schema["properties"]["transition_cue"]["enum"],
+            )
+            self.assertEqual(
+                "boolean",
+                schema["properties"]["adult_reviewed"]["type"],
+            )
+            self.assertEqual(4, len(m.COPY[locale]["context_steps"]))
+            for steps in m.COPY[locale]["context_steps"].values():
+                self.assertEqual(6, len(steps))
+            if locale != "en":
+                self.assertNotEqual(english_heading, m.COPY[locale]["heading"])
+                self.assertNotIn(english_heading, private)
+        execute = m.SCRIPT.split(
+            "execute: async (input) => {",
+            1,
+        )[1].split("return JSON.stringify(result);", 1)[0]
+        for side_effect in (
+            "textContent",
+            "innerHTML",
+            "appendChild",
+            "replaceChildren",
+            "scroll",
+            "print(",
+            "fetch(",
+            "localStorage",
+            "sessionStorage",
+        ):
+            self.assertNotIn(side_effect, execute)
+        self.assertIn(
+            'status: "adult_review_required"',
+            m.SCRIPT,
+        )
+        self.assertIn("cards: []", m.SCRIPT)
+        self.assertIn(
+            'if (name !== "adult_reviewed") {',
+            m.SCRIPT,
+        )
+        self.assertIn(
+            "fields.adult_reviewed.checked = false;",
+            m.SCRIPT,
+        )
+        self.assertIn("printButton.disabled = !confirmed;", m.SCRIPT)
+
+    def test_family_routine_card_planner_build_and_inbound_links_are_idempotent(self):
+        m = family_routine_card_planner
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            indexes = []
+            answers = []
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                tools = root / "tools"
+                tools.mkdir(parents=True)
+                index = tools / "index.html"
+                index.write_text(
+                    '<main><section class="wrap grid">'
+                    '<article class="card third" data-tool="'
+                    'private-daily-checklist-planner"><h2><a href="'
+                    'private-daily-checklist-planner.html">Checklist</a></h2>'
+                    "<p>Planner.</p></article></section></main>",
+                    encoding="utf-8",
+                )
+                indexes.append(index)
+                answer_root = root / "answers"
+                answer_root.mkdir(parents=True)
+                for slug in m.TARGET_ANSWER_SLUGS:
+                    answer = answer_root / slug
+                    answer.write_text(
+                        '<main><a class="cta" href="'
+                        f'https://apps.apple.com/us/app/x/id{m.APP_ID}'
+                        '?pt=123&ct=test">Lumi Mission</a></main>',
+                        encoding="utf-8",
+                    )
+                    answers.append(answer)
+            urls = m.build(pages, app_public=False)
+            self.assertEqual(len(m.ALT_LOCALES), len(urls))
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                tool = root / "tools" / f"{m.SLUG}.html"
+                self.assertTrue(tool.exists())
+                self.assertNotIn(
+                    f"id{m.APP_ID}",
+                    tool.read_text(encoding="utf-8"),
+                )
+            for index in indexes:
+                self.assertEqual(
+                    1,
+                    index.read_text(encoding="utf-8").count(f"{m.SLUG}.html"),
+                )
+            for answer in answers:
+                text = answer.read_text(encoding="utf-8")
+                self.assertEqual(1, text.count(m.INBOUND_LINK_CLASS))
+                self.assertLess(
+                    text.index(m.INBOUND_LINK_CLASS),
+                    text.index(f"id{m.APP_ID}"),
+                )
+            stable_mtime = 1_700_000_000_000_000_000
+            for path in pages.rglob("*.html"):
+                os.utime(path, ns=(stable_mtime, stable_mtime))
+            before = {
+                path.relative_to(pages): (path.read_bytes(), path.stat().st_mtime_ns)
+                for path in pages.rglob("*.html")
+            }
+            m.build(pages, app_public=False)
+            after = {
+                path.relative_to(pages): (path.read_bytes(), path.stat().st_mtime_ns)
+                for path in pages.rglob("*.html")
+            }
+            self.assertEqual(before, after)
+
     def test_resume_evidence_planner_is_private_transparent_and_non_predictive(self):
         pages = {
             locale: resume_evidence_planner.render_page(
@@ -18340,6 +18564,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("screen_time_block_planner.py", materialize_block)
         self.assertNotIn("photo_storage_cleanup_planner.py", materialize_block)
         self.assertNotIn("film_look_recipe_planner.py", materialize_block)
+        self.assertNotIn("family_routine_card_planner.py", materialize_block)
         self.assertNotIn("vocabulary_habit_planner.py", materialize_block)
         self.assertNotIn("toeic_study_allocation_planner.py", materialize_block)
         self.assertNotIn("bopomofo_symbol_contrast_cards.py", materialize_block)
@@ -18385,6 +18610,10 @@ class GeneratorTests(unittest.TestCase):
         self.assertLess(
             availability_block.index("refresh=True"),
             availability_block.index("film_look_recipe_planner.py"),
+        )
+        self.assertLess(
+            availability_block.index("refresh=True"),
+            availability_block.index("family_routine_card_planner.py"),
         )
         self.assertLess(
             availability_block.index("refresh=True"),
@@ -18438,6 +18667,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(1, workflow.count("screen_time_block_planner.py"))
         self.assertEqual(1, workflow.count("photo_storage_cleanup_planner.py"))
         self.assertEqual(1, workflow.count("film_look_recipe_planner.py"))
+        self.assertEqual(1, workflow.count("family_routine_card_planner.py"))
         self.assertEqual(1, workflow.count("vocabulary_habit_planner.py"))
         self.assertEqual(1, workflow.count("toeic_study_allocation_planner.py"))
         self.assertEqual(1, workflow.count("bopomofo_symbol_contrast_cards.py"))
@@ -18474,6 +18704,10 @@ class GeneratorTests(unittest.TestCase):
         self.assertLess(
             workflow.index("refresh=True"),
             workflow.index("film_look_recipe_planner.py"),
+        )
+        self.assertLess(
+            workflow.index("refresh=True"),
+            workflow.index("family_routine_card_planner.py"),
         )
         self.assertLess(
             workflow.index("refresh=True"),
@@ -18755,6 +18989,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("screen_time_block_planner.py", publish)
         self.assertIn("photo_storage_cleanup_planner.py", publish)
         self.assertIn("film_look_recipe_planner.py", publish)
+        self.assertIn("family_routine_card_planner.py", publish)
         self.assertIn("resume_evidence_planner.py", publish)
         self.assertIn("vocabulary_habit_planner.py", publish)
         self.assertIn("toeic_study_allocation_planner.py", publish)

@@ -76,6 +76,7 @@ def main():
     require([PY, os.path.join(HERE, "screen_time_block_planner.py")], env=env)
     require([PY, os.path.join(HERE, "photo_storage_cleanup_planner.py")], env=env)
     require([PY, os.path.join(HERE, "film_look_recipe_planner.py")], env=env)
+    require([PY, os.path.join(HERE, "family_routine_card_planner.py")], env=env)
     require([PY, os.path.join(HERE, "resume_evidence_planner.py")], env=env)
     require([PY, os.path.join(HERE, "vocabulary_habit_planner.py")], env=env)
     require([PY, os.path.join(HERE, "toeic_study_allocation_planner.py")], env=env)

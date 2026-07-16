@@ -15290,9 +15290,12 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(
             1, queries.CURATED["lumibopomofo"].count(question)
         )
-        self.assertIs(
+        self.assertIsNot(
             queries.CURATED["lumibopomofopro"],
             queries.CURATED["lumibopomofo"],
+        )
+        self.assertEqual(
+            1, queries.CURATED["lumibopomofopro"].count(question)
         )
         facts = answer_deep.deep_facts(
             question, "lumibopomofo", "Lumi Bopomofo"
@@ -15510,9 +15513,12 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(
             1, queries.CURATED["lumibopomofo"].count(question)
         )
-        self.assertIs(
+        self.assertIsNot(
             queries.CURATED["lumibopomofopro"],
             queries.CURATED["lumibopomofo"],
+        )
+        self.assertEqual(
+            1, queries.CURATED["lumibopomofopro"].count(question)
         )
         facts = answer_deep.deep_facts(
             question, "lumibopomofo", "Lumi Bopomofo"

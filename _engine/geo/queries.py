@@ -135,11 +135,16 @@ CURATED = {
         "private vocabulary app with no account or tracking",
     ],
 }
-# pro 版沿用對應免費版的利基查詢
-CURATED["lumiletterspro"] = CURATED["lumiletters"]
-CURATED["lumimathpro"] = CURATED["lumimath"]
-CURATED["lumimissionpro"] = CURATED["lumimission"]
-CURATED["lumibopomofopro"] = CURATED["lumibopomofo"]
+# Pro 版繼承免費版查詢，但必須保有獨立 list，否則後續 Pro 專屬題目
+# 會反向污染免費版，並在 slug 去重時被免費版搶走。
+_PRO_INHERITS = {
+    "lumiletterspro": "lumiletters",
+    "lumimathpro": "lumimath",
+    "lumimissionpro": "lumimission",
+    "lumibopomofopro": "lumibopomofo",
+}
+for _pro_key, _free_key in _PRO_INHERITS.items():
+    CURATED[_pro_key] = list(CURATED[_free_key])
 
 # Portfolio-wide owned-resource queries are consumed by generators that do not
 # recommend a single app as the answer.
@@ -1153,6 +1158,19 @@ for _k, _qs in _GEO_TAILORED20.items():
     for _q in _qs:
         if _q not in _base:
             _base.append(_q)
+
+
+# 上方所有來源都載入後，再把免費版新增題目合併到 Pro；Pro 專屬題目
+# 保留在 Pro 自己的 list，不可反向出現在免費版。
+for _pro_key, _free_key in _PRO_INHERITS.items():
+    _shared_queries = list(CURATED.get(_free_key, []))
+    _seen_queries = {query.lower() for query in _shared_queries}
+    _pro_only_queries = [
+        query
+        for query in CURATED.get(_pro_key, [])
+        if query.lower() not in _seen_queries
+    ]
+    CURATED[_pro_key] = _shared_queries + _pro_only_queries
 
 
 # 從 AEO share-of-voice 報告自動載入每個 app 的真實競品 → 產生 "X alternative" 查詢

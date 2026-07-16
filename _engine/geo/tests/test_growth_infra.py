@@ -17787,7 +17787,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertTrue(desc)
         self.assertTrue(keywords)
         self.assertEqual(
-            ["en-US", "ja", "zh-Hant", "ko", "hi", "nl-NL"],
+            ["en-US", "ja", "zh-Hant", "ko", "hi", "nl-NL", "sk"],
             app_locales,
         )
         locales = build_pages_i18n.master_locales_for(

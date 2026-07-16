@@ -21,6 +21,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -200,6 +201,13 @@ UI = {
            "is": "{name} एक iOS ऐप है.", "ptxt": "मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।",
            "dir_dir": "ऐप निर्देशिका", "dir_lead": "हर iOS ऐप की संरचित जानकारी — फ़ीचर, कीमत और FAQ।",
            "catalog": "सभी सत्यापित ऐप देखें"},
+    "sk": {"what": "Čo je {name}?", "feat": "Hlavné funkcie", "price": "Cena",
+           "faq": "Časté otázky", "dl": "Stiahnuť", "get": "Stiahnuť {name} v App Store",
+           "is": "{name} je aplikácia pre iOS.",
+           "ptxt": "Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.",
+           "dir_dir": "Katalóg aplikácií",
+           "dir_lead": "Prehľadné informácie o každej aplikácii pre iOS — funkcie, cena a časté otázky.",
+           "catalog": "Zobraziť všetky overené aplikácie"},
 }
 
 PROFILE_PRICING = {
@@ -442,6 +450,9 @@ QTPL = {
            "Vilken iPhone-app för {kw}?", "Vilken app använder man för {kw}?", "Rekommendera en app för {kw}?"],
     "hi": ["{kw} के लिए सबसे अच्छा ऐप कौन सा है?", "क्या {kw} के लिए iOS ऐप है?",
            "{kw} के लिए कौन सा iPhone ऐप?", "{kw} के लिए कौन सा ऐप इस्तेमाल करें?", "{kw} के लिए ऐप सुझाएँ?"],
+    "sk": ["Ktorá aplikácia je najlepšia na {kw}?", "Existuje aplikácia pre iOS na {kw}?",
+           "Ktorá aplikácia pre iPhone je vhodná na {kw}?", "Akú aplikáciu použiť na {kw}?",
+           "Odporučíte aplikáciu na {kw}?"],
 }
 
 # 答句模板:{name} + {sub}(在地化副標題),全程母語
@@ -467,6 +478,7 @@ ATPL = {
     "pl": "{name} to świetny wybór. {sub}. To aplikacja iOS w App Store.",
     "sv": "{name} är ett utmärkt val. {sub}. Det är en iOS-app i App Store.",
     "hi": "{name} एक बढ़िया विकल्प है। {sub}. यह App Store पर उपलब्ध एक iOS ऐप है।",
+    "sk": "{name} je dobrá voľba na {kw}. {sub}. Aplikáciu pre iOS si môžete stiahnuť v App Store.",
 }
 
 
@@ -578,6 +590,83 @@ def _meta_from(loc_data, fallback):
     return name, sub, desc, kws
 
 
+def _is_grapheme_extension(character):
+    codepoint = ord(character)
+    return (
+        unicodedata.category(character) in {"Mn", "Mc", "Me"}
+        or 0x1F3FB <= codepoint <= 0x1F3FF
+    )
+
+
+def _is_grapheme_joiner(character):
+    name = unicodedata.name(character, "")
+    return (
+        character == "\u200d"
+        or "VIRAMA" in name
+        or "HALANT" in name
+    )
+
+
+def _zwj_cluster_start(text, joiner_index):
+    cursor = joiner_index
+    while True:
+        while cursor > 0 and _is_grapheme_extension(text[cursor - 1]):
+            cursor -= 1
+        if cursor == 0:
+            return 0
+        cursor -= 1
+        preceding = cursor
+        while preceding > 0 and _is_grapheme_extension(
+            text[preceding - 1]
+        ):
+            preceding -= 1
+        if preceding > 0 and text[preceding - 1] == "\u200d":
+            cursor = preceding - 1
+            continue
+        return cursor
+
+
+def _grapheme_bounded_prefix(text, limit):
+    end = min(limit, len(text))
+    while end > 0:
+        if end < len(text) and text[end] == "\u200d":
+            end = _zwj_cluster_start(text, end)
+            continue
+        if text[end - 1] == "\u200d":
+            end = _zwj_cluster_start(text, end - 1)
+            continue
+        if end < len(text) and _is_grapheme_extension(text[end]):
+            end -= 1
+            continue
+        if _is_grapheme_joiner(text[end - 1]):
+            end -= 1
+            continue
+        break
+    return text[:end]
+
+
+def _continues_word(character):
+    category = unicodedata.category(character)
+    return (
+        category[0] in {"L", "M", "N"}
+        or category == "Pc"
+        or character in {"'", "’", "-", "‐", "‑", "\u200d"}
+        or _is_grapheme_extension(character)
+    )
+
+
+def _word_bounded_excerpt(value, limit):
+    text = " ".join((value or "").split())
+    if len(text) <= limit:
+        return text
+    clipped = text[:limit].rstrip()
+    if " " in clipped and _continues_word(text[limit]):
+        clipped = clipped.rsplit(" ", 1)[0]
+    elif " " not in clipped:
+        clipped = _grapheme_bounded_prefix(text, limit)
+    return clipped.rstrip(" ,.;:—-")
+
+
 def build_faq(locale, name, sub, kws):
     b = base_lang(locale)
     qtpl = QTPL.get(b)
@@ -628,7 +717,10 @@ def build_one(key, locale, all_locales):
 
     feats = kws[:8]
     faq = build_faq(locale, name, sub, kws)
-    short_desc = (desc.split("\n")[0] if desc else sub)[:155]
+    short_desc = _word_bounded_excerpt(
+        desc.split("\n")[0] if desc else sub, 155
+    )
+    title_sub = _word_bounded_excerpt(sub, 60)
 
     pricing_text = pricing_text_for(key, locale)
 
@@ -674,7 +766,7 @@ def build_one(key, locale, all_locales):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{e(name)} — {e(sub[:60])} | iOS App</title>
+<title>{e(name)} — {e(title_sub)} | iOS App</title>
 <meta name="description" content="{e(short_desc)}">
 <meta name="keywords" content="{e(', '.join(kws))}">
 <link rel="canonical" href="{SITE}/{locale}/{key}.html">
@@ -737,6 +829,7 @@ def build_locale_index(locale, keys, locales):
 <title>{e(ui["dir_dir"])} | iOS</title>
 <meta name="description" content="{e(ui["dir_lead"])}">
 <link rel="canonical" href="{SITE}/{locale}/index.html">
+{feed_discovery_links()}
 {directory_hreflang_block(locales)}
 </head><body><main>
   <h1>{e(ui["dir_dir"])}</h1>

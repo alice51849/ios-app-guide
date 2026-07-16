@@ -20,14 +20,55 @@ from videogen.registry import APPS, APPSTORE
 
 
 EXPECTED_LOCALES = {
-    "mochi": {"en-US", "ja", "zh-Hant", "ko", "hi", "nl-NL"},
-    "sereno": {"en-US", "zh-Hant"},
-    "tripbee": {"en-US", "zh-Hant"},
-    "tripplanet": {"en-US", "zh-Hant"},
+    "mochi": {"en-US", "ja", "zh-Hant", "ko", "hi", "nl-NL", "sk"},
+    "sereno": {"en-US", "zh-Hant", "sk"},
+    "tripbee": {"en-US", "zh-Hant", "sk"},
+    "tripplanet": {"en-US", "zh-Hant", "sk"},
 }
 
 
 class ExternalAppLocaleTests(unittest.TestCase):
+    def test_metadata_excerpts_do_not_cut_slovak_words(self):
+        source = (
+            "Offline cestovateľské hry a balenie pre deti od 4 do 10 rokov"
+        )
+        excerpt = pages._word_bounded_excerpt(source, 60)
+        self.assertLessEqual(len(excerpt), 60)
+        self.assertTrue(source.startswith(excerpt))
+        self.assertTrue(source[len(excerpt)].isspace())
+
+    def test_metadata_excerpts_do_not_split_unicode_clusters(self):
+        thai = "ภาพถ่ายที่มืดจะดูสว่างขึ้นอย่างเป็นธรรมชาติ"
+        thai_limit = thai.index("ึ")
+        thai_excerpt = pages._word_bounded_excerpt(thai, thai_limit)
+        self.assertEqual(thai[:thai.index("ข")], thai_excerpt)
+
+        marathi = "फोटोची पार्श्वभूमी स्वच्छ आणि नैसर्गिक दिसते"
+        marathi_limit = marathi.index("्")
+        marathi_excerpt = pages._word_bounded_excerpt(
+            marathi, marathi_limit
+        )
+        self.assertEqual("फोटोची", marathi_excerpt)
+
+        family = "abc👩‍👩‍👧‍👦xyz"
+        family_excerpt = pages._word_bounded_excerpt(family, 4)
+        self.assertEqual("abc", family_excerpt)
+
+    def test_metadata_excerpts_keep_complete_words_at_safe_boundaries(self):
+        punctuation = "Mochi keeps every task easy to scan, even on busy days"
+        punctuation_limit = punctuation.index(",")
+        self.assertEqual(
+            "Mochi keeps every task easy to scan",
+            pages._word_bounded_excerpt(punctuation, punctuation_limit),
+        )
+
+        whitespace = "काम पूर्ण म्हणून चिह्नित करा"
+        whitespace_limit = whitespace.index(" ", whitespace.index("चिह्नित"))
+        self.assertEqual(
+            "काम पूर्ण म्हणून चिह्नित",
+            pages._word_bounded_excerpt(whitespace, whitespace_limit),
+        )
+
     def test_curated_guides_cover_new_live_app_buyer_languages(self):
         self.assertEqual(set(EXTERNAL_APP_LOCALES), set(EXPECTED_LOCALES))
         for key, expected in EXPECTED_LOCALES.items():
@@ -103,6 +144,25 @@ class ExternalAppLocaleTests(unittest.TestCase):
                         self.assertIn('hreflang="x-default"', content)
                         if locale != "en-US":
                             self.assertNotIn(APPS[key]["sub"], content)
+                        if locale == "sk":
+                            self.assertIn("<h2>Hlavné funkcie</h2>", content)
+                            self.assertIn("<h2>Časté otázky</h2>", content)
+                            self.assertIn("<h2>Stiahnuť</h2>", content)
+                            self.assertIn('"@type": "FAQPage"', content)
+
+    def test_slovak_directory_is_native_and_feed_discoverable(self):
+        with tempfile.TemporaryDirectory() as directory, mock.patch.object(
+            pages, "PAGES", directory
+        ):
+            pages.build_locale_index("sk", ["mochi"], ["sk"])
+            content = Path(directory, "sk", "index.html").read_text(
+                encoding="utf-8"
+            )
+        self.assertIn("<title>Katalóg aplikácií | iOS</title>", content)
+        self.assertIn("<h1>Katalóg aplikácií</h1>", content)
+        self.assertIn('type="application/atom+xml"', content)
+        self.assertIn('type="application/rss+xml"', content)
+        self.assertIn('type="application/feed+json"', content)
 
     def test_external_categories_have_specific_schema_types(self):
         self.assertEqual(

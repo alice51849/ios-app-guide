@@ -124,6 +124,27 @@ EXTERNAL_APP_LOCALES = {
                 "inpaklijst, eenvoudige taakmanager, rustige productiviteit"
             ),
         },
+        "sk": {
+            "name": "Mochi",
+            "subtitle": "Roztomilé a pokojné zoznamy úloh, ktoré je radosť dokončiť",
+            "description": (
+                "Mochi pomáha udržať každodenné úlohy jednoduché namiesto toho, "
+                "aby pridávali ďalší tlak. Zoznam vytvoríte za pár sekúnd, dnešné "
+                "priority máte prehľadne na očiach a každú splnenú položku "
+                "odškrtnete príjemným ťuknutím.\n\n"
+                "Aplikácia sa hodí na študijné plány, nákupy, domáce povinnosti, "
+                "zoznamy na balenie aj malé ciele, ktoré nepotrebujú zložitý nástroj "
+                "na správu projektov. Pokojný a útulný vzhľad zostáva príjemný aj "
+                "počas uponáhľaného dňa.\n\n"
+                "Účet nie je potrebný a reklamy tu nie sú. Základné funkcie zoznamov "
+                "úloh sú bezplatné; celý zážitok si môžete odomknúť voliteľným "
+                "jednorazovým nákupom bez predplatného."
+            ),
+            "keywords": (
+                "zoznam úloh, to do list, checklist, denné úlohy, študijný plán, "
+                "nákupný zoznam, zoznam na balenie, jednoduchý plánovač"
+            ),
+        },
     },
     "sereno": {
         "en-US": {
@@ -166,6 +187,27 @@ EXTERNAL_APP_LOCALES = {
                 "專注音效, 睡眠計時器"
             ),
         },
+        "sk": {
+            "name": "Sereno",
+            "subtitle": "Prémiové offline zvuky na spánok, sústredenie a pokoj",
+            "description": (
+                "Sereno je offline zvukový generátor na večery, keď vám stabilný "
+                "zvuk v pozadí pomáha upokojiť sa, aj na dni, keď vonkajší hluk "
+                "sťažuje sústredenie.\n\n"
+                "Vyberte si biely, ružový alebo hnedý šum, prípadne prirodzené "
+                "zvuky dažďa či oceánu. Plynulé slučky bez rušivých medzier, "
+                "prehrávanie na pozadí a časovač spánku sú praktické pri zaspávaní, "
+                "učení aj práci.\n\n"
+                "Účet, reklamy ani pripojenie na internet nepotrebujete. Základné "
+                "funkcie si vyskúšate bezplatne a celú knižnicu zvukov odomknete "
+                "jedným voliteľným nákupom bez predplatného. Sereno je nástroj na "
+                "bežný oddych a pohodu, nie zdravotnícka pomôcka ani liečba."
+            ),
+            "keywords": (
+                "biely šum, ružový šum, hnedý šum, zvuky na spánok, zvuky dažďa, "
+                "zvuky oceánu, zvuky na sústredenie, časovač spánku"
+            ),
+        },
     },
     "tripbee": {
         "en-US": {
@@ -203,6 +245,28 @@ EXTERNAL_APP_LOCALES = {
             "keywords": (
                 "旅遊行程, 行程規劃, 家庭旅行, 行李清單, 離線旅遊, "
                 "自由行, 每日行程, Apple 地圖"
+            ),
+        },
+        "sk": {
+            "name": "TripBee Pro: Trip Planner",
+            "subtitle": "Súkromný offline itinerár a plán balenia pre rodinu",
+            "description": (
+                "TripBee usporiada celú cestu do pokojného plánu deň po dni. "
+                "Pridajte lety, ubytovanie, aktivity, poznámky aj miesta, ktoré si "
+                "rodina nechce nechať ujsť, a itinerár si pozrite aj bez dátového "
+                "pripojenia v zahraničí.\n\n"
+                "Praktické rodinné zoznamy na balenie oddelia spoločné veci od "
+                "osobných potrieb každého cestovateľa. Navigácia jedným ťuknutím "
+                "cez Apple Mapy obmedzí prepisovanie adries medzi aplikáciami, keď "
+                "je čas vyraziť na ďalšiu zastávku.\n\n"
+                "Cestovné plány zostávajú v zariadení a účet nie je potrebný. "
+                "TripBee je platená aplikácia, za ktorú zaplatíte raz; nevyžaduje "
+                "opakované predplatné."
+            ),
+            "keywords": (
+                "plánovač cesty, cestovný itinerár, rodinný zoznam na balenie, "
+                "offline cestovanie, plánovač dovolenky, denný itinerár, "
+                "Apple Mapy, súkromný plánovač"
             ),
         },
     },
@@ -244,6 +308,27 @@ EXTERNAL_APP_LOCALES = {
             "keywords": (
                 "親子旅行, 兒童旅行遊戲, 車上遊戲, 飛機遊戲, 行李任務, "
                 "離線兒童遊戲, 旅行活動, 4到10歲"
+            ),
+        },
+        "sk": {
+            "name": "Lumi Trip Planet",
+            "subtitle": "Offline cestovateľské hry a balenie pre deti od 4 do 10 rokov",
+            "description": (
+                "Lumi Trip Planet mení čakanie na letisku, dlhé jazdy autom aj "
+                "pokojné chvíle v hoteli na hravé cestovateľské dobrodružstvo pre "
+                "deti vo veku od 4 do 10 rokov.\n\n"
+                "Detské hry, aktivity na balenie a objaviteľské úlohy pomáhajú "
+                "deťom zapojiť sa do cesty namiesto neustáleho pýtania, kedy už "
+                "dorazia. Aktivity fungujú offline, takže sa hodia do lietadla, "
+                "vlaku aj na cesty so slabým signálom.\n\n"
+                "Aplikácia nemá reklamy ani sociálne funkcie. Rodiny môžu začať "
+                "bezplatne a celý obsah odomknúť jedným voliteľným nákupom bez "
+                "predplatného. Nákupy aj externé odkazy chráni rodičovská brána."
+            ),
+            "keywords": (
+                "cestovanie s deťmi, hry pre deti na cesty, hry do auta, "
+                "rodinné cestovanie, balenie pre deti, offline hry pre deti, "
+                "cestovateľské aktivity, deti od 4 do 10 rokov"
             ),
         },
     },

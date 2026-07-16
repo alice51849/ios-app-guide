@@ -163,10 +163,20 @@ def main():
         env=env,
     )
     require([PY, os.path.join(HERE, "add_related_tools.py")], env=env)
-    require(
-        [PY, os.path.join(HERE, "add_related_tools.py"), "--locale", "zh-Hant"],
-        env=env,
-    )
+    for locale in (
+        "es-ES",
+        "pt-BR",
+        "de-DE",
+        "fr-FR",
+        "ja",
+        "ko",
+        "zh-Hant",
+        "zh-Hans",
+    ):
+        require(
+            [PY, os.path.join(HERE, "add_related_tools.py"), "--locale", locale],
+            env=env,
+        )
     require([PY, os.path.join(HERE, "fix_en_hreflang.py")], env=env)
     require([PY, os.path.join(HERE, "gen_image_sitemap.py")], env=env)
     require([PY, os.path.join(HERE, "gen_linkset.py")], env=env)

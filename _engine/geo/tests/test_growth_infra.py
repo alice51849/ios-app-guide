@@ -12726,22 +12726,27 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(stable_mtime, english.stat().st_mtime_ns)
 
     def test_photo_storage_planner_is_private_transparent_and_non_predictive(self):
-        english = photo_storage_cleanup_planner.render_page(
-            "en",
-            app_public=False,
-        )
-        chinese = photo_storage_cleanup_planner.render_page(
-            "zh-Hant",
-            app_public=False,
-        )
+        pages = {
+            locale: photo_storage_cleanup_planner.render_page(
+                locale,
+                app_public=False,
+            )
+            for locale in photo_storage_cleanup_planner.ALT_LOCALES
+        }
+        english = pages["en"]
+        chinese = pages["zh-Hant"]
         public = photo_storage_cleanup_planner.render_page(
             "en",
             app_public=True,
         )
-        for page in (english, chinese):
+        self.assertEqual(
+            set(photo_storage_cleanup_planner.ALT_LOCALES),
+            set(photo_storage_cleanup_planner.COPY),
+        )
+        for locale, page in pages.items():
             self.assertIn('"@type":"WebApplication"', page)
             self.assertNotIn('"@type":"SoftwareApplication"', page)
-            self.assertIn('"dateModified":"2026-07-15"', page)
+            self.assertIn('"dateModified":"2026-07-16"', page)
             self.assertIn("document.modelContext?.registerTool", page)
             self.assertIn(
                 'name: "plan_private_photo_storage_cleanup"',
@@ -12807,8 +12812,27 @@ class GeneratorTests(unittest.TestCase):
                 f"id{photo_storage_cleanup_planner.APP_ID}",
                 page,
             )
-            self.assertIn('hreflang="en"', page)
-            self.assertIn('hreflang="zh-Hant"', page)
+            self.assertIn(
+                f'<link rel="canonical" href="'
+                f'{photo_storage_cleanup_planner.canonical(locale)}">',
+                page,
+            )
+            for alternate in photo_storage_cleanup_planner.ALT_LOCALES:
+                self.assertIn(
+                    f'hreflang="{alternate}" '
+                    f'href="{photo_storage_cleanup_planner.canonical(alternate)}"',
+                    page,
+                )
+            self.assertIn(
+                f'hreflang="x-default" '
+                f'href="{photo_storage_cleanup_planner.canonical("en")}"',
+                page,
+            )
+            if locale != "en":
+                self.assertNotIn(
+                    "Private iPhone photo storage cleanup planner",
+                    page,
+                )
         self.assertIn("不估可清容量", chinese)
         self.assertIn("不存取照片", chinese)
         self.assertIn(
@@ -12823,8 +12847,19 @@ class GeneratorTests(unittest.TestCase):
             public.index("Official Apple steps before any optional cleaner"),
             public.index("Want an optional on-device library review workflow?"),
         )
-        schema = photo_storage_cleanup_planner.webmcp_input_schema("en")
+        schemas = {
+            locale: photo_storage_cleanup_planner.webmcp_input_schema(locale)
+            for locale in photo_storage_cleanup_planner.ALT_LOCALES
+        }
+        schema = schemas["en"]
         self.assertFalse(schema["additionalProperties"])
+        for localized_schema in schemas.values():
+            self.assertEqual(
+                set(schema["properties"]),
+                set(localized_schema["properties"]),
+            )
+            self.assertEqual(schema["required"], localized_schema["required"])
+            self.assertFalse(localized_schema["additionalProperties"])
         for name in (
             "current_free_gb",
             "target_free_gb",
@@ -12867,13 +12902,9 @@ class GeneratorTests(unittest.TestCase):
             execute.index("result.optional_picclear_pro"),
         )
 
-    def test_photo_storage_planner_builds_bilingual_pages_and_replaces_old_card(self):
+    def test_photo_storage_planner_builds_nine_locale_pages_and_replaces_old_card(self):
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)
-            tools = pages / "tools"
-            localized_tools = pages / "zh-Hant" / "tools"
-            tools.mkdir(parents=True)
-            localized_tools.mkdir(parents=True)
             anchor = (
                 '<article class="card third" data-tool="'
                 'screen-time-calculator"><h2><a href="'
@@ -12886,31 +12917,37 @@ class GeneratorTests(unittest.TestCase):
                 '</h2><p>Estimate cleanup space.</p>'
                 '<p class="muted">Funnels to PicClear</p></article>'
             )
-            (tools / "index.html").write_text(
-                f'<main><section class="wrap grid">{anchor}{old_card}'
-                "</section></main>",
-                encoding="utf-8",
-            )
-            (localized_tools / "index.html").write_text(
-                f'<main><section class="wrap grid">{anchor}</section></main>',
-                encoding="utf-8",
-            )
+            indexes = []
+            for locale in photo_storage_cleanup_planner.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                tools = root / "tools"
+                tools.mkdir(parents=True)
+                index = tools / "index.html"
+                index.write_text(
+                    f'<main><section class="wrap grid">{anchor}'
+                    f'{"".join((old_card,)) if locale == "en" else ""}'
+                    "</section></main>",
+                    encoding="utf-8",
+                )
+                indexes.append(index)
             urls = photo_storage_cleanup_planner.build(
                 pages,
                 app_public=False,
             )
-            self.assertEqual(2, len(urls))
-            english = tools / f"{photo_storage_cleanup_planner.SLUG}.html"
-            chinese = (
-                localized_tools
-                / f"{photo_storage_cleanup_planner.SLUG}.html"
+            self.assertEqual(
+                len(photo_storage_cleanup_planner.ALT_LOCALES),
+                len(urls),
             )
-            self.assertTrue(english.exists())
-            self.assertTrue(chinese.exists())
-            for index in (
-                tools / "index.html",
-                localized_tools / "index.html",
-            ):
+            for locale in photo_storage_cleanup_planner.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                self.assertTrue(
+                    (
+                        root
+                        / "tools"
+                        / f"{photo_storage_cleanup_planner.SLUG}.html"
+                    ).exists()
+                )
+            for index in indexes:
                 index_text = index.read_text(encoding="utf-8")
                 self.assertEqual(
                     1,
@@ -12919,6 +12956,11 @@ class GeneratorTests(unittest.TestCase):
                     ),
                 )
                 self.assertNotIn("Funnels to PicClear", index_text)
+            english = (
+                pages
+                / "tools"
+                / f"{photo_storage_cleanup_planner.SLUG}.html"
+            )
             self.assertNotIn(
                 f"id{photo_storage_cleanup_planner.APP_ID}",
                 english.read_text(encoding="utf-8"),

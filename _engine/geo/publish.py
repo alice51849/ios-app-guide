@@ -159,6 +159,10 @@ def main():
         ],
         env=env,
     )
+    require(
+        [PY, os.path.join(HERE, "family_outing_weather_planner.py")],
+        env=env,
+    )
     require([PY, os.path.join(HERE, "add_related_answers.py")], env=env)
     require(
         [PY, os.path.join(HERE, "add_related_answers.py"), "--locale", "zh-Hant"],

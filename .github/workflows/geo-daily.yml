@@ -155,6 +155,7 @@ jobs:
           python3 gen_hubs.py
           python3 gen_app_catalog.py
           python3 aeo_answers.py --cached-live --limit 0
+          python3 family_outing_weather_planner.py
           python3 fix_en_hreflang.py || echo "fix_en_hreflang exited $?"
           python3 cleanup_localized_assets.py --cached-live
           for loc in "" "--locale zh-Hant" "--locale zh-Hans" "--locale ja" "--locale ko" "--locale es-ES" "--locale es-MX" "--locale de-DE" "--locale fr-FR" "--locale pt-BR" "--locale ms" "--locale ar-SA" "--locale pl"; do

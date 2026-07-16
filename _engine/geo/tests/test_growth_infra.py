@@ -60,6 +60,7 @@ import family_travel_observation_passport
 import family_travel_opds_catalog
 import family_travel_ro_crate
 import family_travel_static_api
+import family_outing_weather_planner
 import family_routine_card_planner
 import film_look_recipe_planner
 import gen_app_catalog
@@ -12727,6 +12728,264 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(first_bytes, english.read_bytes())
             self.assertEqual(stable_mtime, english.stat().st_mtime_ns)
 
+    def test_family_outing_weather_planner_covers_official_50_locales(self):
+        m = family_outing_weather_planner
+        i18n, weather = m.load_content()
+        self.assertEqual(50, len(m.LOCALES))
+        self.assertEqual(set(m.LOCALES), set(weather))
+        self.assertEqual(
+            set(m.LOCALE_TO_LANGUAGE.values()),
+            set(i18n["custom"]),
+        )
+        self.assertEqual(34, len(i18n["phrases"]))
+        for locale in m.LOCALES:
+            copy = m.localized_copy(locale, i18n)
+            self.assertTrue(all(value.strip() for value in copy.values()))
+            if locale != "en-US":
+                self.assertIn(f"/{locale}/", m.canonical(locale))
+        self.assertNotIn("/en-US/", m.canonical("en-US"))
+        self.assertEqual("zh", m.LOCALE_TO_LANGUAGE["zh-Hant"])
+        self.assertEqual("zh-Hans", m.LOCALE_TO_LANGUAGE["zh-Hans"])
+        hot = i18n["phrases"]["Feels hot — keep kids hydrated"]
+        self.assertNotIn("hydrated", hot["he"].casefold())
+        self.assertEqual(
+            "ചൂടാണ് — കുട്ടികൾ വേണ്ടത്ര വെള്ളം കുടിക്കുന്നുവെന്ന് ഉറപ്പാക്കുക",
+            hot["ml"],
+        )
+        self.assertNotRegex(hot["te"], r"[\u0900-\u097f]")
+        self.assertEqual("Vietor", i18n["phrases"]["Wind"]["sk"])
+        windy = i18n["phrases"]["Very windy — keep little ones covered"]
+        self.assertNotIn("רוחני", windy["he"])
+        self.assertIn(m.PHRASE_KEYS["age_note"], i18n["phrases"])
+
+    def test_family_outing_weather_planner_is_local_bounded_and_cited(self):
+        m = family_outing_weather_planner
+        i18n, weather = m.load_content()
+        private_pages = {
+            locale: m.render_page(
+                locale,
+                app_public=False,
+                i18n=i18n,
+                weather=weather,
+            )
+            for locale in m.LOCALES
+        }
+        public = m.render_page(
+            "en-US",
+            app_public=True,
+            i18n=i18n,
+            weather=weather,
+        )
+        planner_description = (
+            f'{m.localized_copy("en-US", i18n)["heading"]} '
+            f'{m.localized_copy("en-US", i18n)["local_only"]}'
+        )
+        for locale, page in private_pages.items():
+            self.assertIn('"@type":"WebApplication"', page)
+            self.assertIn('"isAccessibleForFree":true', page)
+            self.assertIn(f'"dateModified":"{m.CONTENT_MODIFIED}"', page)
+            self.assertEqual(51, page.count('rel="alternate" hreflang='))
+            self.assertIn('hreflang="x-default"', page)
+            self.assertIn(
+                '<option value="unclear">',
+                page,
+            )
+            self.assertLess(
+                page.index('<option value="unclear">'),
+                page.index('<option value="clear">'),
+            )
+            self.assertIn("document.modelContext?.registerTool", page)
+            self.assertIn(
+                'name: "plan_family_outing_weather"',
+                page,
+            )
+            self.assertIn(
+                "annotations: {readOnlyHint: true, untrustedContentHint: false}",
+                page,
+            )
+            self.assertIn("no_weather_or_location_access: true", page)
+            self.assertIn("no_safety_or_medical_assessment: true", page)
+            self.assertIn('value.trim() !== ""', page)
+            self.assertIn('typeof value === "number"', page)
+            self.assertIn("form.checkValidity()", page)
+            self.assertIn("syncInputBounds()", page)
+            self.assertIn("value.temperatureC >= 40", page)
+            self.assertIn("value.windKmh >= 80", page)
+            self.assertEqual(4, page.count(" inputmode="))
+            self.assertEqual(4, page.count(" required>"))
+            for source in m.SOURCES:
+                self.assertIn(source, page)
+            for forbidden in (
+                "fetch(",
+                "XMLHttpRequest",
+                "localStorage",
+                "sessionStorage",
+                'type="file"',
+                "<textarea",
+            ):
+                self.assertNotIn(forbidden, page)
+            self.assertNotIn(f"id{m.APP_ID}", page)
+        for locale in m.RTL_LOCALES:
+            self.assertIn('dir="rtl"', private_pages[locale])
+        self.assertIn(f"id{m.APP_ID}", public)
+        self.assertIn("iag_outing_plan_en-us", urllib.parse.unquote(public))
+        self.assertIn(f'href="{m.SITE}/en-US/lumiweather.html"', public)
+        self.assertIn(
+            f'<meta name="description" content="{planner_description}">',
+            public,
+        )
+        config = json.loads(
+            re.search(
+                r'<script type="application/json" id="outing-config">'
+                r"(.*?)</script>",
+                public,
+            ).group(1)
+        )
+        self.assertIn("promotional_text", config["optionalApp"])
+        self.assertNotIn("boundary", config["optionalApp"])
+        schema = m.webmcp_input_schema()
+        self.assertFalse(schema["additionalProperties"])
+        self.assertEqual(
+            ["0-2", "3-5", "6-12"],
+            schema["properties"]["child_age"]["enum"],
+        )
+        self.assertEqual(
+            100,
+            schema["properties"]["rain_chance"]["maximum"],
+        )
+        self.assertEqual(
+            "boolean",
+            schema["properties"]["official_alert_or_poor_air"]["type"],
+        )
+        metric = schema["allOf"][0]["then"]["properties"]
+        imperial = schema["allOf"][1]["then"]["properties"]
+        self.assertEqual(
+            (-60, 60),
+            (
+                metric["feels_like_temperature"]["minimum"],
+                metric["feels_like_temperature"]["maximum"],
+            ),
+        )
+        self.assertEqual(200, metric["wind_speed"]["maximum"])
+        self.assertEqual(
+            (-76, 140),
+            (
+                imperial["feels_like_temperature"]["minimum"],
+                imperial["feels_like_temperature"]["maximum"],
+            ),
+        )
+        self.assertEqual(124.2, imperial["wind_speed"]["maximum"])
+        render = m.SCRIPT.split("function render()", 1)[1].split(
+            "async function registerWebMcp", 1
+        )[0]
+        self.assertLess(
+            render.index("result.hidden = true"),
+            render.index("plan(currentInput())"),
+        )
+        execute = m.SCRIPT.split(
+            "execute: async (input) => {",
+            1,
+        )[1].split("return JSON.stringify(response);", 1)[0]
+        for mutation in (
+            "textContent",
+            "innerHTML",
+            "appendChild",
+            "replaceChildren",
+            "fetch(",
+            "localStorage",
+        ):
+            self.assertNotIn(mutation, execute)
+
+    def test_family_outing_weather_planner_build_is_idempotent(self):
+        m = family_outing_weather_planner
+        i18n, _ = m.load_content()
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale in m.INDEX_LOCALES:
+                index = m.index_path(locale, pages)
+                index.parent.mkdir(parents=True, exist_ok=True)
+                index.write_text(
+                    '<main><section class="wrap grid"></section></main>',
+                    encoding="utf-8",
+                )
+            answer_paths = (
+                pages / "answers" / m.ANSWER_SLUGS[0],
+                pages / "de-DE" / "answers" / m.ANSWER_SLUGS[0],
+            )
+            for answer in answer_paths:
+                answer.parent.mkdir(parents=True, exist_ok=True)
+                answer.write_text(
+                    '<main><section class="wrap related-tools">'
+                    "<h2>Tools</h2><ul><li>Existing</li></ul>"
+                    "</section></main>",
+                    encoding="utf-8",
+                )
+            answer_without_section = (
+                pages / "vi" / "answers" / m.ANSWER_SLUGS[0]
+            )
+            answer_without_section.parent.mkdir(parents=True, exist_ok=True)
+            answer_without_section.write_text(
+                "<main><article>Weather answer</article></main>",
+                encoding="utf-8",
+            )
+            answer_paths += (answer_without_section,)
+            urls = m.build(pages, app_public=False)
+            self.assertEqual(50, len(urls))
+            for locale in m.LOCALES:
+                self.assertTrue((pages / m.relative_page(locale)).exists())
+            for locale in m.INDEX_LOCALES:
+                index = m.index_path(locale, pages).read_text(
+                    encoding="utf-8"
+                )
+                self.assertEqual(1, index.count(f'data-tool="{m.SLUG}"'))
+            for answer in answer_paths:
+                text = answer.read_text(encoding="utf-8")
+                self.assertEqual(1, text.count(m.INBOUND_LINK_CLASS))
+                downstream = text.replace(
+                    f'<li class="{m.INBOUND_LINK_CLASS}">',
+                    "<li>",
+                    1,
+                )
+                answer.write_text(downstream, encoding="utf-8")
+            m.update_inbound_links(pages, i18n)
+            for answer in answer_paths:
+                text = answer.read_text(encoding="utf-8")
+                locale = m.page_locale(answer, pages)
+                self.assertEqual(1, text.count(m.canonical(locale)))
+                self.assertEqual(1, text.count(m.INBOUND_LINK_CLASS))
+            before = {
+                path: (path.read_bytes(), path.stat().st_mtime_ns)
+                for path in pages.rglob("*")
+                if path.is_file()
+            }
+            m.build(pages, app_public=False)
+            after = {
+                path: (path.read_bytes(), path.stat().st_mtime_ns)
+                for path in pages.rglob("*")
+                if path.is_file()
+            }
+            self.assertEqual(before, after)
+
+    def test_family_outing_weather_planner_is_wired_after_answers(self):
+        m = family_outing_weather_planner
+        publish = (Path(GEO) / "publish.py").read_text(encoding="utf-8")
+        workflow = (
+            Path(GEO) / "pages" / ".github" / "workflows" / "geo-daily.yml"
+        ).read_text(encoding="utf-8")
+        self.assertEqual(1, publish.count(f"{m.SLUG.replace('-', '_')}.py"))
+        self.assertLess(
+            publish.index("aeo_answers.py"),
+            publish.index("family_outing_weather_planner.py"),
+        )
+        self.assertEqual(
+            1,
+            workflow.count("family_outing_weather_planner.py"),
+        )
+        self.assertLess(
+            workflow.index("refresh_primary_resource_answers.py"),
+            workflow.index("family_outing_weather_planner.py"),
+        )
+
     def test_photo_storage_planner_is_private_transparent_and_non_predictive(self):
         pages = {
             locale: photo_storage_cleanup_planner.render_page(
@@ -18993,6 +19252,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("blurry_photo_diagnostic.py", publish)
         self.assertIn("daily_checklist_planner.py", publish)
         self.assertIn("screen_time_block_planner.py", publish)
+        self.assertIn("family_outing_weather_planner.py", publish)
         self.assertIn("photo_storage_cleanup_planner.py", publish)
         self.assertIn("film_look_recipe_planner.py", publish)
         self.assertIn("family_routine_card_planner.py", publish)

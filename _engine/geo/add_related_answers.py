@@ -15,6 +15,14 @@ SITE = "https://alice51849.github.io/ios-app-guide"
 MAXN = 4
 STOP = set("a an the and or of to in for on at by as it this that these those you your with how do i my is are can app apps for iphone ios free best what when should choose vs".split())
 SEC_RE = re.compile(r'<section class="wrap related-answers">.*?</section>', re.S)
+RELATED_OVERRIDES = {
+    "how-to-build-an-aesthetic-weekly-reset-checklist-on-iphone": (
+        "how-to-make-a-daily-planning-routine-you-actually-enjoy-and-stick-to",
+        "best-aesthetic-to-do-list-app-iphone-no-subscription",
+        "iphone-lock-screen-widget-to-check-off-tasks-without-opening-app",
+        "what-do-you-get-for-free-in-mochi-to-do",
+    ),
+}
 # Localized "Related answers" heading per locale (fallback to English)
 HEADINGS = {
     "": "Related answers", "zh-Hant": "\u5ef6\u4f38\u95b1\u8b80", "zh-Hans": "\u5ef6\u4f38\u9605\u8bfb",
@@ -36,6 +44,25 @@ def get_h1(h):
 
 def tokens(slug):
     return {t for t in slug.split('-') if t and t not in STOP and not t.isdigit()}
+
+
+def related_slugs(slug, page, pages, by_app):
+    siblings = [s for s in by_app[page["app"]] if s != slug]
+    preferred = [
+        sibling
+        for sibling in RELATED_OVERRIDES.get(slug, ())
+        if sibling in pages and pages[sibling]["app"] == page["app"]
+    ]
+    if preferred:
+        return preferred[:MAXN]
+    return sorted(
+        siblings,
+        key=lambda sibling: (
+            -len(page["tok"] & pages[sibling]["tok"]),
+            len(pages[sibling]["h1"]),
+        ),
+    )[:MAXN]
+
 
 def main():
     dry = "--dry-run" in sys.argv
@@ -62,10 +89,7 @@ def main():
         by_app.setdefault(p["app"], []).append(slug)
     changed = 0
     for slug, p in pages.items():
-        sibs = [s for s in by_app[p["app"]] if s != slug]
-        # rank by shared non-stopword slug tokens, then by title length (shorter=more canonical)
-        ranked = sorted(sibs, key=lambda s: (-len(p["tok"] & pages[s]["tok"]), len(pages[s]["h1"])))
-        top = ranked[:MAXN]
+        top = related_slugs(slug, p, pages, by_app)
         if not top:
             continue
         items = "".join(

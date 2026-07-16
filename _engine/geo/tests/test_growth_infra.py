@@ -37,6 +37,7 @@ import aeo_guide
 import aeo_guide_free_batch3
 import aeo_guide_i18n
 import aeo_pages
+import add_related_answers
 import add_related_tools
 import answer_deep
 import answer_portfolio
@@ -17984,6 +17985,67 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(
                 missing, aeo_answers_i18n.localize_url(missing, "zh-Hant")
             )
+
+    def test_mochi_weekly_reset_scenario_is_truthful_and_indexable(self):
+        items = json.loads(
+            (
+                Path(GEO) / "deep_items" / "mochi.json"
+            ).read_text(encoding="utf-8")
+        )
+        question = "How to build an aesthetic weekly reset checklist on iPhone"
+        item = next(entry for entry in items if entry["query"] == question)
+        serialized = json.dumps(item, ensure_ascii=False).lower()
+
+        self.assertIn("weekly recurring reminder", serialized)
+        self.assertIn("does not automatically clear", serialized)
+        self.assertIn("not the list contents", serialized)
+        self.assertNotIn("automatically resets", serialized)
+        self.assertIn(question, queries.ALL["mochi"])
+        expected_related = (
+            "how-to-make-a-daily-planning-routine-you-actually-enjoy-and-stick-to",
+            "best-aesthetic-to-do-list-app-iphone-no-subscription",
+            "iphone-lock-screen-widget-to-check-off-tasks-without-opening-app",
+            "what-do-you-get-for-free-in-mochi-to-do",
+        )
+        slug = "how-to-build-an-aesthetic-weekly-reset-checklist-on-iphone"
+        self.assertEqual(
+            expected_related,
+            add_related_answers.RELATED_OVERRIDES[slug],
+        )
+        pages = {slug: {"app": "6785004775"}}
+        pages.update(
+            {
+                sibling: {"app": "6785004775"}
+                for sibling in expected_related
+            }
+        )
+        self.assertEqual(
+            list(expected_related),
+            add_related_answers.related_slugs(
+                slug,
+                pages[slug],
+                pages,
+                {"6785004775": list(pages)},
+            ),
+        )
+
+        facts = answer_deep.deep_facts(question, "mochi", "Mochi")
+        self.assertIsNotNone(facts)
+        self.assertIn(
+            "does not automatically clear",
+            json.dumps(facts, ensure_ascii=False).lower(),
+        )
+        page = aeo_answers.render_page(
+            question,
+            "mochi",
+            aeo_answers.default_content(question, "mochi"),
+        )
+        self.assertIn(
+            "https://apps.apple.com/app/id6785004775?ct=iag_ans",
+            page,
+        )
+        self.assertIn('"@type": "HowTo"', page)
+        self.assertIn("does not automatically clear", page)
 
     def test_multilingual_pricing_copy_uses_accurate_profiles(self):
         self.assertIn(

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>私密胶片风配方规划器｜不用上传照片</title>
+<meta name="description" content="只用有限选项安排可还原的修图顺序，不上传、不扫描、不分析也不存储任何照片。">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/zh-Hans/tools/private-film-look-recipe-planner.html">
+<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/private-film-look-recipe-planner.html">
+<link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/es-ES/tools/private-film-look-recipe-planner.html">
+<link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/tools/private-film-look-recipe-planner.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tools/private-film-look-recipe-planner.html">
+<link rel="alternate" hreflang="fr-FR" href="https://alice51849.github.io/ios-app-guide/fr-FR/tools/private-film-look-recipe-planner.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/private-film-look-recipe-planner.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/tools/private-film-look-recipe-planner.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/private-film-look-recipe-planner.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/tools/private-film-look-recipe-planner.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/private-film-look-recipe-planner.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="私密胶片风配方规划器">
+<meta property="og:description" content="只用有限选项安排可还原的修图顺序，不上传、不扫描、不分析也不存储任何照片。">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/zh-Hans/tools/private-film-look-recipe-planner.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#332b2b;--muted:#746864;--line:#e9d9d1;--paper:#fffdf9;--bg:#f8efe8;--deep:#713e32;--rose:#b86f5e;--soft:#f9e5dc;--gold:#d6a96c;--shadow:0 22px 60px rgba(91,54,45,.14)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 85% 0,#fffaf2 0,var(--bg) 52%,#efdcd2 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:var(--deep)}.wrap{width:min(1120px,calc(100% - 30px));margin:auto}.top{position:sticky;top:0;z-index:8;background:#fffdf9f2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}.links{display:flex;gap:15px;overflow-x:auto}
+.hero{padding:64px 0 30px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--deep);white-space:nowrap}.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.04;letter-spacing:-.035em;margin:.3em 0 .22em;white-space:nowrap;overflow-x:auto}.lead{font-size:clamp(17px,2.2vw,21px);color:var(--muted);margin:0;white-space:nowrap;overflow-x:auto}.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.planner,.card,.app-card{background:rgba(255,253,249,.97);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}.planner{padding:clamp(20px,4vw,36px);margin:16px auto 30px}.planner h2,.card h2,.app-card h2{font-size:clamp(24px,3.6vw,34px);line-height:1.14;margin:0;white-space:nowrap;overflow-x:auto}.intro{color:var(--muted);white-space:nowrap;overflow-x:auto}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px}.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--deep);margin-bottom:6px;white-space:nowrap;overflow-x:auto}select,button{font:inherit}select{width:100%;min-height:46px;border:1px solid #dbc6bd;border-radius:13px;background:#fff;color:var(--ink);padding:9px 11px}.toggle{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:14px;padding:11px 13px;background:#fff;font-weight:760;white-space:nowrap;overflow-x:auto}.toggle input{inline-size:20px;block-size:20px;flex:0 0 auto}.button{border:0;border-radius:999px;background:linear-gradient(135deg,var(--deep),var(--rose));color:#fff;text-decoration:none;font-weight:850;padding:11px 17px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(113,62,50,.22)}
+.results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin-top:22px}.result{background:var(--soft);border:1px solid #e5c9bd;border-radius:17px;padding:14px;min-width:0}.result strong,.result span{display:block;white-space:nowrap;overflow-x:auto}.result strong{font-size:12px;color:#7b5046;text-transform:uppercase;letter-spacing:.04em}.result span{font-size:15px;color:#4e3934;font-weight:760;margin-top:5px}.note{background:#fff4d9;border:1px solid #ead5a2;border-radius:16px;padding:13px 15px;margin:14px 0 0;white-space:nowrap;overflow-x:auto}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:30px}.card,.app-card{padding:clamp(20px,3.5vw,30px)}.card.wide{grid-column:1/-1}.card p,.card li,.app-card p,.faq details p,.faq summary{white-space:nowrap;overflow-x:auto}.card ul,.card ol{padding-left:22px}.card li{margin:8px 0}.source-list a{overflow-wrap:anywhere}.app-card{margin:0 auto 38px;background:linear-gradient(135deg,#fffdf9,#f5dfd4)}.app-card .button{display:inline-flex;margin-top:5px}.faq{margin-bottom:30px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+.footer{background:var(--deep);color:#fff7ef;text-align:center;padding:27px 0;white-space:nowrap;overflow-x:auto}
+@media(max-width:900px){.controls,.results{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.controls,.results{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1120px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{.top,.hero,.controls,.button,.app-card,.footer{display:none!important}body{background:#fff}.planner,.card{box-shadow:none;break-inside:avoid}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"私密胶片风配方规划器","description":"只用有限选项安排可还原的修图顺序，不上传、不扫描、不分析也不存储任何照片。","url":"https://alice51849.github.io/ios-app-guide/zh-Hans/tools/private-film-look-recipe-planner.html","inLanguage":"zh-Hans","datePublished":"2026-07-16","dateModified":"2026-07-16","applicationCategory":"MultimediaApplication","operatingSystem":"Any","isAccessibleForFree":true,"featureList":["建立可还原的起步配方","不接收照片、文件或元数据","不访问相机、相册或账号","不上传、不存储、不分析","不保证质量或结果"],"citation":["https://support.apple.com/guide/iphone/edit-photos-and-videos-iphb08064d57/ios","https://support.apple.com/guide/iphone/undo-and-revert-photo-edits-iph2413db0ab/ios"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hans","mainEntity":[{"@type":"Question","name":"这个页面会接收或检查我的照片吗？","acceptedAnswer":{"@type":"Answer","text":"不会。本页只接收有限选项，完全不接收照片、文件或元数据。"}},{"@type":"Question","name":"这份配方能精准还原某款胶片吗？","acceptedAnswer":{"@type":"Answer","text":"不能。它只提供起步顺序，不宣称模拟准确度或成果。"}},{"@type":"Question","name":"Apple 照片中的编辑可以恢复吗？","acceptedAnswer":{"@type":"Answer","text":"Apple 有说明如何将已编辑的照片或视频还原成原始版本；请根据当前 iOS 版本确认最新步骤。"}}]}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/zh-Hans/index.html">iOS App Guide</a><nav class="links"><a href="https://alice51849.github.io/ios-app-guide/zh-Hans/tools/index.html">免费工具</a><a href="https://alice51849.github.io/ios-app-guide/tools/private-film-look-recipe-planner.html">English</a></nav></div></header>
+<main>
+<section class="hero wrap"><div class="eyebrow">免费・不输入照片・不保证成果</div><h1>私密胶片风配方规划器</h1><p class="lead">选择想要的氛围、原始光线和输出方式；本页只提供起步顺序，不是精准预设，也不保证成片效果。</p><div class="badges"><span class="badge">不接收照片、文件或元数据</span><span class="badge">不访问相机、相册或账号</span><span class="badge">不上传、不存储、不分析</span><span class="badge">不保证质量或结果</span></div></section>
+<section class="planner wrap"><h2>建立可还原的起步配方</h2><p class="intro">建议只是定性起点；实际效果会受原图、屏幕、编辑器和最终尺寸影响。每一步都先预览，并保留原图。</p>
+<form id="film-planner"><div class="controls">
+<div class="field"><label for="mood">视觉方向</label><select id="mood"><option value="clean-film">干净胶片感</option><option value="warm-35mm">暖调 35mm</option><option value="cool-cinema">冷调电影感</option><option value="disposable-flash">一次性相机闪光感</option><option value="faded-vintage">褪色复古感</option></select></div>
+<div class="field"><label for="lighting">原图光线</label><select id="lighting"><option value="bright">明亮场景</option><option value="balanced">均衡光线</option><option value="low-light">低光场景</option></select></div>
+<div class="field"><label for="grain">颗粒偏好</label><select id="grain"><option value="none">不另加颗粒</option><option value="subtle">细腻颗粒</option><option value="visible">明显颗粒</option></select></div>
+<div class="field"><label for="color">色调方向</label><select id="color"><option value="neutral">中性</option><option value="warm">偏暖</option><option value="cool">偏冷</option></select></div>
+<div class="field"><label for="output">最终用途</label><select id="output"><option value="single">单张照片</option><option value="series">一致系列</option><option value="print">打印</option></select></div>
+<label class="toggle"><input id="keep-skin-natural" type="checkbox" checked>画面有人时保持自然肤色</label>
+</div><p><button class="button" type="submit">建立私密配方</button></p></form>
+<div class="results"><div class="result"><strong>起步方向</strong><span id="result-direction"></span></div><div class="result"><strong>调整顺序</strong><span id="result-sequence"></span></div><div class="result"><strong>一致性检查</strong><span id="result-consistency"></span></div></div>
+<p class="note"><strong>配方边界:</strong> <span id="result-boundary"></span></p></section>
+<section class="wrap grid"><article class="card"><h2>导出前的四项检查</h2><ol><li>保留未修改的原图，或确保整个编辑流程可以还原。</li><li>每次只做一个小调整，并用常规观看尺寸比较。</li><li>加入质感前先检查高光、阴影、熟悉颜色和人物。</li><li>系列照片应并排检查，修正落差后再导出。</li></ol></article><article class="card"><h2>Apple 官方编辑背景，并非推荐</h2><p>Apple 说明如何在 iPhone 编辑照片和视频，以及如何将已编辑项目还原成原始版本；请根据当前 iOS 版本确认最新步骤。</p><ul class="source-list"><li><a href="https://support.apple.com/guide/iphone/edit-photos-and-videos-iphb08064d57/ios" rel="noopener">Apple：在 iPhone 编辑照片和视频</a></li><li><a href="https://support.apple.com/guide/iphone/undo-and-revert-photo-edits-iph2413db0ab/ios" rel="noopener">Apple：撤销并还原照片编辑</a></li></ul><p><a href="https://developer.chrome.com/docs/ai/webmcp/imperative-api" rel="noopener">Chrome imperative WebMCP API 预览</a></p></article></section>
+<section class="wrap card faq"><h2>胶片风规划问题</h2><details><summary>这个页面会接收或检查我的照片吗？</summary><p>不会。本页只接收有限选项，完全不接收照片、文件或元数据。</p></details><details><summary>这份配方能精准还原某款胶片吗？</summary><p>不能。它只提供起步顺序，不宣称模拟准确度或成果。</p></details><details><summary>Apple 照片中的编辑可以恢复吗？</summary><p>Apple 有说明如何将已编辑的照片或视频还原成原始版本；请根据当前 iOS 版本确认最新步骤。</p></details></section>
+<section class="app-card wrap"><h2>想直接在设备上预览胶片风格？</h2><p>PhotoCream Pro 是可选项目。目前 App Store 页面列出 100+ 种风格、颗粒、光晕、漏光、柔光、暗角、实时预览以及光线和色彩控制，并表示全程在设备处理、不需账号也不上传。可免费下载，另提供一次性解锁。具体功能和供应状态请查看当前页面；本规划器不安装 App 也能使用。</p><a class="button" href="https://apps.apple.com/app/id6781808054?ct=iag_film_recipe_zh-hans" rel="nofollow noopener">前往 App Store 查看 PhotoCream Pro</a></section>
+</main>
+<footer class="footer"><div class="wrap">只用有限选项・不访问照片・不分析图像・不保证成果</div></footer>
+<script type="application/json" id="film-config">{"inputSchema":{"type":"object","properties":{"mood":{"type":"string","enum":["clean-film","warm-35mm","cool-cinema","disposable-flash","faded-vintage"],"description":"视觉方向"},"lighting":{"type":"string","enum":["bright","balanced","low-light"],"description":"原图光线"},"grain":{"type":"string","enum":["none","subtle","visible"],"description":"颗粒偏好"},"color":{"type":"string","enum":["neutral","warm","cool"],"description":"色调方向"},"output":{"type":"string","enum":["single","series","print"],"description":"最终用途"},"keep_skin_natural":{"type":"boolean","description":"画面有人时保持自然肤色"}},"required":["mood","lighting","grain","color","output","keep_skin_natural"],"additionalProperties":false},"labels":{"mood":{"clean-film":"干净胶片感","warm-35mm":"暖调 35mm","cool-cinema":"冷调电影感","disposable-flash":"一次性相机闪光感","faded-vintage":"褪色复古感"},"lighting":{"bright":"明亮场景","balanced":"均衡光线","low-light":"低光场景"},"grain":{"none":"不另加颗粒","subtle":"细腻颗粒","visible":"明显颗粒"},"color":{"neutral":"中性","warm":"偏暖","cool":"偏冷"},"output":{"single":"单张照片","series":"一致系列","print":"打印"}},"moodNotes":{"clean-film":"先控制过强对比、校正色彩并柔化高光；基础稳定后再加入风格效果。","warm-35mm":"以暖色中间调、适度对比和柔和高光为主；加效果前先检查橙色和肤色。","cool-cinema":"控制高光、只把阴影微微调冷，避免中性物体也变蓝。","disposable-flash":"保留直打闪光的亮度和中央清晰对比；确认人脸和文字后再加边缘暗角。","faded-vintage":"轻微抬高最暗区域、降低硬对比和饱和度，但不要洗掉重要细节。"},"lightingNotes":{"bright":"先保护明亮高光，确认最亮区域仍保留必要细节。","balanced":"先调好曝光和白平衡，再处理氛围、颗粒或装饰效果。","low-light":"不要大幅提亮阴影；用最终观看尺寸检查噪点和色块。"},"grainNotes":{"none":"不另加颗粒，改用光线、色彩和对比建立风格。","subtle":"最后才加细颗粒，并用常规尺寸检查天空、皮肤和文字。","visible":"完成基础调整后再加明显颗粒；如果干扰人脸、细节或印刷质感就减弱。"},"colorNotes":{"neutral":"先修正明显偏色，让白色和熟悉物体保持可信。","warm":"逐步加暖；导出前再次检查白色、肤色和室内灯光。","cool":"逐步降冷；避免高光和中性物体变成不自然的蓝色。"},"outputNotes":{"single":"用实际观看尺寸判断，并和保留的原图比较。","series":"先选一张基准修图，并排比较整组；修正落差，不要继续叠加效果。","print":"用预定裁切和打印尺寸预览；屏幕亮度和颗粒在纸上可能不同。"},"naturalYes":"画面有人时，每次调色前后都比较皮肤、眼睛和头发。","naturalNo":"未选择人像限制；导出前仍应检查人物和重要参考色。","boundary":"这只是一套修图顺序，不是预设、图像分析或特定胶片模拟保证。本页看不到曝光、人脸、颜色、对焦、噪点、动态范围或输出条件。","reviewSteps":["保留未修改的原图，或确保整个编辑流程可以还原。","每次只做一个小调整，并用常规观看尺寸比较。","加入质感前先检查高光、阴影、熟悉颜色和人物。","系列照片应并排检查，修正落差后再导出。"],"toolDescription":"只根据有限选项建立确定性的定性修图顺序；不接收也不访问照片、文件、元数据、相机、相册、账号或自由文本，不分析图像，也不保证结果。","freePlanner":{"label":"私密胶片风配方规划器","url":"https://alice51849.github.io/ios-app-guide/zh-Hans/tools/private-film-look-recipe-planner.html","boundary":"建议只是定性起点；实际效果会受原图、屏幕、编辑器和最终尺寸影响。每一步都先预览，并保留原图。"},"officialSources":[{"label":"Apple：在 iPhone 编辑照片和视频","url":"https://support.apple.com/guide/iphone/edit-photos-and-videos-iphb08064d57/ios"},{"label":"Apple：撤销并还原照片编辑","url":"https://support.apple.com/guide/iphone/undo-and-revert-photo-edits-iph2413db0ab/ios"}],"webmcpSource":"https://developer.chrome.com/docs/ai/webmcp/imperative-api","optionalApp":{"label":"前往 App Store 查看 PhotoCream Pro","boundary":"PhotoCream Pro 是可选项目。目前 App Store 页面列出 100+ 种风格、颗粒、光晕、漏光、柔光、暗角、实时预览以及光线和色彩控制，并表示全程在设备处理、不需账号也不上传。可免费下载，另提供一次性解锁。具体功能和供应状态请查看当前页面；本规划器不安装 App 也能使用。","app_store_url":"https://apps.apple.com/app/id6781808054?ct=iag_film_recipe_zh-hans"}}</script>
+<script>
+(() => {
+  const config = JSON.parse(document.getElementById("film-config").textContent);
+  const form = document.getElementById("film-planner");
+  const fields = {
+    mood: document.getElementById("mood"),
+    lighting: document.getElementById("lighting"),
+    grain: document.getElementById("grain"),
+    color: document.getElementById("color"),
+    output: document.getElementById("output"),
+    keep_skin_natural: document.getElementById("keep-skin-natural")
+  };
+  const output = {
+    direction: document.getElementById("result-direction"),
+    sequence: document.getElementById("result-sequence"),
+    consistency: document.getElementById("result-consistency"),
+    boundary: document.getElementById("result-boundary")
+  };
+
+  function enumValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const values = config.inputSchema.properties[name].enum;
+    if (typeof value !== "string" || !values.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    return value;
+  }
+
+  function booleanValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name) ||
+        typeof input[name] !== "boolean") {
+      throw new TypeError(`${name} must be a boolean.`);
+    }
+    return input[name];
+  }
+
+  function plan(input) {
+    const mood = enumValue(input, "mood");
+    const lighting = enumValue(input, "lighting");
+    const grain = enumValue(input, "grain");
+    const color = enumValue(input, "color");
+    const finalOutput = enumValue(input, "output");
+    const keepSkinNatural = booleanValue(input, "keep_skin_natural");
+    return {
+      selected_preferences: {
+        mood,
+        mood_label: config.labels.mood[mood],
+        lighting,
+        lighting_label: config.labels.lighting[lighting],
+        grain,
+        grain_label: config.labels.grain[grain],
+        color,
+        color_label: config.labels.color[color],
+        output: finalOutput,
+        output_label: config.labels.output[finalOutput],
+        keep_skin_natural: keepSkinNatural
+      },
+      qualitative_editing_order: [
+        config.lightingNotes[lighting],
+        config.moodNotes[mood],
+        config.colorNotes[color],
+        config.grainNotes[grain],
+        keepSkinNatural ? config.naturalYes : config.naturalNo
+      ],
+      consistency_check: config.outputNotes[finalOutput],
+      boundary: config.boundary,
+      is_not_a_preset_or_image_analysis: true,
+      no_accuracy_or_outcome_guarantee: true
+    };
+  }
+
+  function validateInput(input) {
+    if (input === null || typeof input !== "object" || Array.isArray(input)) {
+      throw new TypeError("WebMCP input must be an object.");
+    }
+    const allowed = new Set(Object.keys(config.inputSchema.properties));
+    for (const name of Object.keys(input)) {
+      if (!allowed.has(name)) {
+        throw new RangeError(`${name} is not a supported input.`);
+      }
+    }
+    return plan(input);
+  }
+
+  function render() {
+    const result = plan({
+      mood: fields.mood.value,
+      lighting: fields.lighting.value,
+      grain: fields.grain.value,
+      color: fields.color.value,
+      output: fields.output.value,
+      keep_skin_natural: fields.keep_skin_natural.checked
+    });
+    output.direction.textContent = result.selected_preferences.mood_label;
+    output.sequence.textContent = result.qualitative_editing_order.join(" ");
+    output.consistency.textContent = result.consistency_check;
+    output.boundary.textContent = result.boundary;
+  }
+
+  async function registerWebMcp() {
+    if (!document.modelContext?.registerTool) return;
+    await document.modelContext.registerTool({
+      name: "plan_private_film_look_recipe",
+      description: config.toolDescription,
+      inputSchema: config.inputSchema,
+      annotations: {readOnlyHint: true, untrustedContentHint: false},
+      execute: async (input) => {
+        const plan = validateInput(input);
+        const result = {
+          result_type: "private_film_look_recipe",
+          photos_files_metadata_camera_library_not_accessed: true,
+          no_upload_storage_or_image_analysis: true,
+          no_preset_accuracy_or_outcome_guarantee: true,
+          plan,
+          review_before_export: config.reviewSteps,
+          optional_free_planner: config.freePlanner,
+          official_sources: config.officialSources,
+          webmcp_preview_source: config.webmcpSource
+        };
+        if (config.optionalApp) {
+          result.optional_photocream_pro = config.optionalApp;
+        }
+        return JSON.stringify(result);
+      }
+    });
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    render();
+  });
+  for (const field of Object.values(fields)) {
+    field.addEventListener("change", render);
+  }
+  render();
+  registerWebMcp().catch((error) =>
+    console.error("WebMCP tool registration failed.", error));
+})();
+</script>
+</body>
+</html>

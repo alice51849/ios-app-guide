@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privater Filmlook-Rezeptplaner | Ohne Foto-Upload</title>
+<meta name="description" content="Begrenzte Stilvorlieben in eine umkehrbare Bearbeitungsfolge übersetzen, ohne Fotos hochzuladen, zu scannen, zu analysieren oder zu speichern.">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/de-DE/tools/private-film-look-recipe-planner.html">
+<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/private-film-look-recipe-planner.html">
+<link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/es-ES/tools/private-film-look-recipe-planner.html">
+<link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/tools/private-film-look-recipe-planner.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tools/private-film-look-recipe-planner.html">
+<link rel="alternate" hreflang="fr-FR" href="https://alice51849.github.io/ios-app-guide/fr-FR/tools/private-film-look-recipe-planner.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/private-film-look-recipe-planner.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/tools/private-film-look-recipe-planner.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/private-film-look-recipe-planner.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/tools/private-film-look-recipe-planner.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/private-film-look-recipe-planner.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Privater Planer für Filmlook-Rezepte">
+<meta property="og:description" content="Begrenzte Stilvorlieben in eine umkehrbare Bearbeitungsfolge übersetzen, ohne Fotos hochzuladen, zu scannen, zu analysieren oder zu speichern.">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/de-DE/tools/private-film-look-recipe-planner.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#332b2b;--muted:#746864;--line:#e9d9d1;--paper:#fffdf9;--bg:#f8efe8;--deep:#713e32;--rose:#b86f5e;--soft:#f9e5dc;--gold:#d6a96c;--shadow:0 22px 60px rgba(91,54,45,.14)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 85% 0,#fffaf2 0,var(--bg) 52%,#efdcd2 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:var(--deep)}.wrap{width:min(1120px,calc(100% - 30px));margin:auto}.top{position:sticky;top:0;z-index:8;background:#fffdf9f2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}.links{display:flex;gap:15px;overflow-x:auto}
+.hero{padding:64px 0 30px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--deep);white-space:nowrap}.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.04;letter-spacing:-.035em;margin:.3em 0 .22em;white-space:nowrap;overflow-x:auto}.lead{font-size:clamp(17px,2.2vw,21px);color:var(--muted);margin:0;white-space:nowrap;overflow-x:auto}.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.planner,.card,.app-card{background:rgba(255,253,249,.97);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}.planner{padding:clamp(20px,4vw,36px);margin:16px auto 30px}.planner h2,.card h2,.app-card h2{font-size:clamp(24px,3.6vw,34px);line-height:1.14;margin:0;white-space:nowrap;overflow-x:auto}.intro{color:var(--muted);white-space:nowrap;overflow-x:auto}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px}.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--deep);margin-bottom:6px;white-space:nowrap;overflow-x:auto}select,button{font:inherit}select{width:100%;min-height:46px;border:1px solid #dbc6bd;border-radius:13px;background:#fff;color:var(--ink);padding:9px 11px}.toggle{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:14px;padding:11px 13px;background:#fff;font-weight:760;white-space:nowrap;overflow-x:auto}.toggle input{inline-size:20px;block-size:20px;flex:0 0 auto}.button{border:0;border-radius:999px;background:linear-gradient(135deg,var(--deep),var(--rose));color:#fff;text-decoration:none;font-weight:850;padding:11px 17px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(113,62,50,.22)}
+.results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin-top:22px}.result{background:var(--soft);border:1px solid #e5c9bd;border-radius:17px;padding:14px;min-width:0}.result strong,.result span{display:block;white-space:nowrap;overflow-x:auto}.result strong{font-size:12px;color:#7b5046;text-transform:uppercase;letter-spacing:.04em}.result span{font-size:15px;color:#4e3934;font-weight:760;margin-top:5px}.note{background:#fff4d9;border:1px solid #ead5a2;border-radius:16px;padding:13px 15px;margin:14px 0 0;white-space:nowrap;overflow-x:auto}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:30px}.card,.app-card{padding:clamp(20px,3.5vw,30px)}.card.wide{grid-column:1/-1}.card p,.card li,.app-card p,.faq details p,.faq summary{white-space:nowrap;overflow-x:auto}.card ul,.card ol{padding-left:22px}.card li{margin:8px 0}.source-list a{overflow-wrap:anywhere}.app-card{margin:0 auto 38px;background:linear-gradient(135deg,#fffdf9,#f5dfd4)}.app-card .button{display:inline-flex;margin-top:5px}.faq{margin-bottom:30px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+.footer{background:var(--deep);color:#fff7ef;text-align:center;padding:27px 0;white-space:nowrap;overflow-x:auto}
+@media(max-width:900px){.controls,.results{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.controls,.results{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1120px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{.top,.hero,.controls,.button,.app-card,.footer{display:none!important}body{background:#fff}.planner,.card{box-shadow:none;break-inside:avoid}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Privater Planer für Filmlook-Rezepte","description":"Begrenzte Stilvorlieben in eine umkehrbare Bearbeitungsfolge übersetzen, ohne Fotos hochzuladen, zu scannen, zu analysieren oder zu speichern.","url":"https://alice51849.github.io/ios-app-guide/de-DE/tools/private-film-look-recipe-planner.html","inLanguage":"de-DE","datePublished":"2026-07-16","dateModified":"2026-07-16","applicationCategory":"MultimediaApplication","operatingSystem":"Any","isAccessibleForFree":true,"featureList":["Umkehrbares Startrezept erstellen","Keine Fotos, Dateien oder Metadaten","Kein Kamera-, Mediathek- oder Kontozugriff","Kein Upload, Speichern oder Analysieren","Keine Qualitäts- oder Ergebnisgarantie"],"citation":["https://support.apple.com/guide/iphone/edit-photos-and-videos-iphb08064d57/ios","https://support.apple.com/guide/iphone/undo-and-revert-photo-edits-iph2413db0ab/ios"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"de-DE","mainEntity":[{"@type":"Question","name":"Erhält oder prüft diese Seite mein Foto?","acceptedAnswer":{"@type":"Answer","text":"Nein. Sie nimmt nur begrenzte Auswahlwerte an und erhält niemals Fotos, Dateien oder Metadaten."}},{"@type":"Question","name":"Bildet das Rezept einen bestimmten Filmstock nach?","acceptedAnswer":{"@type":"Answer","text":"Nein. Es bietet nur eine Startreihenfolge und behauptet weder Genauigkeit noch Ergebnis."}},{"@type":"Question","name":"Kann ich eine Bearbeitung in Apple Fotos rückgängig machen?","acceptedAnswer":{"@type":"Answer","text":"Apple dokumentiert das Zurücksetzen bearbeiteter Fotos und Videos auf das Original; die aktuellen Schritte der eigenen iOS-Version prüfen."}}]}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/de-DE/index.html">iOS App Guide</a><nav class="links"><a href="https://alice51849.github.io/ios-app-guide/de-DE/tools/index.html">Kostenlose Werkzeuge</a><a href="https://alice51849.github.io/ios-app-guide/tools/private-film-look-recipe-planner.html">English</a></nav></div></header>
+<main>
+<section class="hero wrap"><div class="eyebrow">Kostenlos · keine Fotoeingabe · kein Ergebnisversprechen</div><h1>Privater Planer für Filmlook-Rezepte</h1><p class="lead">Bildrichtung, Ausgangslicht und Finish wählen. Die Seite liefert eine Startreihenfolge, niemals ein exaktes Preset oder garantiertes Ergebnis.</p><div class="badges"><span class="badge">Keine Fotos, Dateien oder Metadaten</span><span class="badge">Kein Kamera-, Mediathek- oder Kontozugriff</span><span class="badge">Kein Upload, Speichern oder Analysieren</span><span class="badge">Keine Qualitäts- oder Ergebnisgarantie</span></div></section>
+<section class="planner wrap"><h2>Umkehrbares Startrezept erstellen</h2><p class="intro">Die Hinweise sind qualitativ und hängen von Bild, Display, Editor und Endgröße ab. Jede Änderung prüfen und das Original bewahren.</p>
+<form id="film-planner"><div class="controls">
+<div class="field"><label for="mood">Bildrichtung</label><select id="mood"><option value="clean-film">Klarer Filmlook</option><option value="warm-35mm">Warmes 35 mm</option><option value="cool-cinema">Kühler Kinolook</option><option value="disposable-flash">Einwegblitz</option><option value="faded-vintage">Verblasster Vintage-Look</option></select></div>
+<div class="field"><label for="lighting">Ausgangslicht</label><select id="lighting"><option value="bright">Helle Szene</option><option value="balanced">Ausgeglichenes Licht</option><option value="low-light">Wenig Licht</option></select></div>
+<div class="field"><label for="grain">Kornwunsch</label><select id="grain"><option value="none">Kein Zusatzkorn</option><option value="subtle">Dezentes Korn</option><option value="visible">Sichtbares Korn</option></select></div>
+<div class="field"><label for="color">Farbrichtung</label><select id="color"><option value="neutral">Neutral</option><option value="warm">Wärmer</option><option value="cool">Kühler</option></select></div>
+<div class="field"><label for="output">Endverwendung</label><select id="output"><option value="single">Einzelbild</option><option value="series">Passende Serie</option><option value="print">Druck</option></select></div>
+<label class="toggle"><input id="keep-skin-natural" type="checkbox" checked>Hauttöne natürlich halten, falls Personen zu sehen sind</label>
+</div><p><button class="button" type="submit">Privates Rezept erstellen</button></p></form>
+<div class="results"><div class="result"><strong>Startrichtung</strong><span id="result-direction"></span></div><div class="result"><strong>Bearbeitungsfolge</strong><span id="result-sequence"></span></div><div class="result"><strong>Konsistenzprüfung</strong><span id="result-consistency"></span></div></div>
+<p class="note"><strong>Grenze des Rezepts:</strong> <span id="result-boundary"></span></p></section>
+<section class="wrap grid"><article class="card"><h2>Vier Prüfungen vor dem Export</h2><ol><li>Ein unverändertes Original oder einen umkehrbaren Bearbeitungsweg behalten.</li><li>Jeweils nur eine kleine Änderung anwenden und in normaler Anzeigegröße vergleichen.</li><li>Lichter, Schatten, vertraute Farben und Personen vor dem Hinzufügen von Textur prüfen.</li><li>Bei einer Serie alle Bilder gemeinsam vergleichen und Ausreißer vor dem Export korrigieren.</li></ol></article><article class="card"><h2>Offizieller Apple-Bearbeitungskontext, keine Empfehlung</h2><p>Apple dokumentiert die Foto- und Videobearbeitung auf dem iPhone sowie das Zurücksetzen eines bearbeiteten Objekts auf das Original. Aktuelle Schritte für die eigene iOS-Version prüfen.</p><ul class="source-list"><li><a href="https://support.apple.com/guide/iphone/edit-photos-and-videos-iphb08064d57/ios" rel="noopener">Apple: Fotos und Videos auf dem iPhone bearbeiten</a></li><li><a href="https://support.apple.com/guide/iphone/undo-and-revert-photo-edits-iph2413db0ab/ios" rel="noopener">Apple: Fotobearbeitungen widerrufen und zurücksetzen</a></li></ul><p><a href="https://developer.chrome.com/docs/ai/webmcp/imperative-api" rel="noopener">Vorschau der imperativen Chrome-WebMCP-API</a></p></article></section>
+<section class="wrap card faq"><h2>Fragen zur Filmlook-Planung</h2><details><summary>Erhält oder prüft diese Seite mein Foto?</summary><p>Nein. Sie nimmt nur begrenzte Auswahlwerte an und erhält niemals Fotos, Dateien oder Metadaten.</p></details><details><summary>Bildet das Rezept einen bestimmten Filmstock nach?</summary><p>Nein. Es bietet nur eine Startreihenfolge und behauptet weder Genauigkeit noch Ergebnis.</p></details><details><summary>Kann ich eine Bearbeitung in Apple Fotos rückgängig machen?</summary><p>Apple dokumentiert das Zurücksetzen bearbeiteter Fotos und Videos auf das Original; die aktuellen Schritte der eigenen iOS-Version prüfen.</p></details></section>
+<section class="app-card wrap"><h2>Filmlooks direkt auf dem Gerät vorab ansehen?</h2><p>PhotoCream Pro ist optional. Der aktuelle App-Store-Eintrag beschreibt über 100 Looks, Korn, Halation, Lichtlecks, Bloom, Vignette, Live-Vorschau sowie Licht- und Farbregler, die auf dem Gerät ohne Konto oder Upload arbeiten. Der Download ist kostenlos; eine einmalige Freischaltung wird angeboten. Verfügbarkeit und genaue Funktionen im aktuellen Eintrag prüfen. Dieser Planer funktioniert ohne App.</p><a class="button" href="https://apps.apple.com/app/id6781808054?ct=iag_film_recipe_de-de" rel="nofollow noopener">PhotoCream Pro im App Store ansehen</a></section>
+</main>
+<footer class="footer"><div class="wrap">Nur begrenzte Auswahl · kein Fotozugriff · keine Bildanalyse · kein Ergebnisversprechen</div></footer>
+<script type="application/json" id="film-config">{"inputSchema":{"type":"object","properties":{"mood":{"type":"string","enum":["clean-film","warm-35mm","cool-cinema","disposable-flash","faded-vintage"],"description":"Bildrichtung"},"lighting":{"type":"string","enum":["bright","balanced","low-light"],"description":"Ausgangslicht"},"grain":{"type":"string","enum":["none","subtle","visible"],"description":"Kornwunsch"},"color":{"type":"string","enum":["neutral","warm","cool"],"description":"Farbrichtung"},"output":{"type":"string","enum":["single","series","print"],"description":"Endverwendung"},"keep_skin_natural":{"type":"boolean","description":"Hauttöne natürlich halten, falls Personen zu sehen sind"}},"required":["mood","lighting","grain","color","output","keep_skin_natural"],"additionalProperties":false},"labels":{"mood":{"clean-film":"Klarer Filmlook","warm-35mm":"Warmes 35 mm","cool-cinema":"Kühler Kinolook","disposable-flash":"Einwegblitz","faded-vintage":"Verblasster Vintage-Look"},"lighting":{"bright":"Helle Szene","balanced":"Ausgeglichenes Licht","low-light":"Wenig Licht"},"grain":{"none":"Kein Zusatzkorn","subtle":"Dezentes Korn","visible":"Sichtbares Korn"},"color":{"neutral":"Neutral","warm":"Wärmer","cool":"Kühler"},"output":{"single":"Einzelbild","series":"Passende Serie","print":"Druck"}},"moodNotes":{"clean-film":"Kontrast zurückhaltend, Farbe ausgewogen und Lichter sanft halten; erst nach stabiler Basis stilisieren.","warm-35mm":"Warme Mitteltöne, moderaten Kontrast und weiche Lichter bevorzugen; Orange und Haut vor Effekten prüfen.","cool-cinema":"Lichter kontrollieren, Schatten leicht kühlen und neutrale Gegenstände nicht blau färben.","disposable-flash":"Helligkeit des Direktblitzes und klaren Mittenkontrast bewahren; Randabfall erst nach Gesichts- und Textprüfung.","faded-vintage":"Dunkelste Töne sanft anheben, harten Kontrast mindern und Farbe dämpfen, ohne wichtige Details auszuwaschen."},"lightingNotes":{"bright":"Zuerst helle Lichter schützen und prüfen, ob dort noch nützliche Details erhalten sind.","balanced":"Belichtung und Weißabgleich vor Stimmung, Korn und Ziereffekten festlegen.","low-light":"Schatten nicht aggressiv aufhellen; Rauschen und Farbflecken in Endgröße prüfen."},"grainNotes":{"none":"Zusatzkorn auslassen und den Look über Licht, Farbe und Kontrast aufbauen.","subtle":"Feines Korn zuletzt ergänzen, dann Himmel, Haut und Text in Normalgröße prüfen.","visible":"Deutliches Korn erst nach der Grundbearbeitung; bei störenden Gesichtern, Details oder Druckstrukturen reduzieren."},"colorNotes":{"neutral":"Erst einen klaren Farbstich korrigieren und Weiß sowie vertraute Objekte glaubwürdig halten.","warm":"Wärme schrittweise ergänzen und Weiß, Haut sowie Innenlicht vor dem Export prüfen.","cool":"Schrittweise kühlen, ohne Lichter und neutrale Gegenstände unnatürlich blau zu färben."},"outputNotes":{"single":"Ergebnis in tatsächlicher Anzeigegröße beurteilen und mit dem bewahrten Original vergleichen.","series":"Eine Referenzbearbeitung wählen, die ganze Reihe vergleichen und Ausreißer statt weiterer Effekte korrigieren.","print":"Vorgesehenen Ausschnitt und Druckgröße prüfen; Displayhelligkeit und Korn wirken auf Papier anders."},"naturalYes":"Bei Personen Haut, Augen und Haare vor und nach jedem Farbschritt vergleichen.","naturalNo":"Keine gesichtsbezogene Vorgabe gewählt; Personen und wichtige Referenzfarben vor dem Export trotzdem prüfen.","boundary":"Dies ist eine Bearbeitungsreihenfolge, kein Preset, keine Bildanalyse und kein Versprechen einer Filmstocksimulation. Belichtung, Gesichter, Farbe, Fokus, Rauschen, Dynamikumfang und Ausgabebedingungen sind unbekannt.","reviewSteps":["Ein unverändertes Original oder einen umkehrbaren Bearbeitungsweg behalten.","Jeweils nur eine kleine Änderung anwenden und in normaler Anzeigegröße vergleichen.","Lichter, Schatten, vertraute Farben und Personen vor dem Hinzufügen von Textur prüfen.","Bei einer Serie alle Bilder gemeinsam vergleichen und Ausreißer vor dem Export korrigieren."],"toolDescription":"Erstellt nur aus begrenzten Auswahlwerten eine deterministische qualitative Folge. Nimmt niemals Fotos, Dateien, Metadaten, Kamera, Mediathek, Konten oder Freitext an und greift nicht darauf zu; analysiert keine Bilder und garantiert kein Ergebnis.","freePlanner":{"label":"Privater Planer für Filmlook-Rezepte","url":"https://alice51849.github.io/ios-app-guide/de-DE/tools/private-film-look-recipe-planner.html","boundary":"Die Hinweise sind qualitativ und hängen von Bild, Display, Editor und Endgröße ab. Jede Änderung prüfen und das Original bewahren."},"officialSources":[{"label":"Apple: Fotos und Videos auf dem iPhone bearbeiten","url":"https://support.apple.com/guide/iphone/edit-photos-and-videos-iphb08064d57/ios"},{"label":"Apple: Fotobearbeitungen widerrufen und zurücksetzen","url":"https://support.apple.com/guide/iphone/undo-and-revert-photo-edits-iph2413db0ab/ios"}],"webmcpSource":"https://developer.chrome.com/docs/ai/webmcp/imperative-api","optionalApp":{"label":"PhotoCream Pro im App Store ansehen","boundary":"PhotoCream Pro ist optional. Der aktuelle App-Store-Eintrag beschreibt über 100 Looks, Korn, Halation, Lichtlecks, Bloom, Vignette, Live-Vorschau sowie Licht- und Farbregler, die auf dem Gerät ohne Konto oder Upload arbeiten. Der Download ist kostenlos; eine einmalige Freischaltung wird angeboten. Verfügbarkeit und genaue Funktionen im aktuellen Eintrag prüfen. Dieser Planer funktioniert ohne App.","app_store_url":"https://apps.apple.com/app/id6781808054?ct=iag_film_recipe_de-de"}}</script>
+<script>
+(() => {
+  const config = JSON.parse(document.getElementById("film-config").textContent);
+  const form = document.getElementById("film-planner");
+  const fields = {
+    mood: document.getElementById("mood"),
+    lighting: document.getElementById("lighting"),
+    grain: document.getElementById("grain"),
+    color: document.getElementById("color"),
+    output: document.getElementById("output"),
+    keep_skin_natural: document.getElementById("keep-skin-natural")
+  };
+  const output = {
+    direction: document.getElementById("result-direction"),
+    sequence: document.getElementById("result-sequence"),
+    consistency: document.getElementById("result-consistency"),
+    boundary: document.getElementById("result-boundary")
+  };
+
+  function enumValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const values = config.inputSchema.properties[name].enum;
+    if (typeof value !== "string" || !values.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    return value;
+  }
+
+  function booleanValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name) ||
+        typeof input[name] !== "boolean") {
+      throw new TypeError(`${name} must be a boolean.`);
+    }
+    return input[name];
+  }
+
+  function plan(input) {
+    const mood = enumValue(input, "mood");
+    const lighting = enumValue(input, "lighting");
+    const grain = enumValue(input, "grain");
+    const color = enumValue(input, "color");
+    const finalOutput = enumValue(input, "output");
+    const keepSkinNatural = booleanValue(input, "keep_skin_natural");
+    return {
+      selected_preferences: {
+        mood,
+        mood_label: config.labels.mood[mood],
+        lighting,
+        lighting_label: config.labels.lighting[lighting],
+        grain,
+        grain_label: config.labels.grain[grain],
+        color,
+        color_label: config.labels.color[color],
+        output: finalOutput,
+        output_label: config.labels.output[finalOutput],
+        keep_skin_natural: keepSkinNatural
+      },
+      qualitative_editing_order: [
+        config.lightingNotes[lighting],
+        config.moodNotes[mood],
+        config.colorNotes[color],
+        config.grainNotes[grain],
+        keepSkinNatural ? config.naturalYes : config.naturalNo
+      ],
+      consistency_check: config.outputNotes[finalOutput],
+      boundary: config.boundary,
+      is_not_a_preset_or_image_analysis: true,
+      no_accuracy_or_outcome_guarantee: true
+    };
+  }
+
+  function validateInput(input) {
+    if (input === null || typeof input !== "object" || Array.isArray(input)) {
+      throw new TypeError("WebMCP input must be an object.");
+    }
+    const allowed = new Set(Object.keys(config.inputSchema.properties));
+    for (const name of Object.keys(input)) {
+      if (!allowed.has(name)) {
+        throw new RangeError(`${name} is not a supported input.`);
+      }
+    }
+    return plan(input);
+  }
+
+  function render() {
+    const result = plan({
+      mood: fields.mood.value,
+      lighting: fields.lighting.value,
+      grain: fields.grain.value,
+      color: fields.color.value,
+      output: fields.output.value,
+      keep_skin_natural: fields.keep_skin_natural.checked
+    });
+    output.direction.textContent = result.selected_preferences.mood_label;
+    output.sequence.textContent = result.qualitative_editing_order.join(" ");
+    output.consistency.textContent = result.consistency_check;
+    output.boundary.textContent = result.boundary;
+  }
+
+  async function registerWebMcp() {
+    if (!document.modelContext?.registerTool) return;
+    await document.modelContext.registerTool({
+      name: "plan_private_film_look_recipe",
+      description: config.toolDescription,
+      inputSchema: config.inputSchema,
+      annotations: {readOnlyHint: true, untrustedContentHint: false},
+      execute: async (input) => {
+        const plan = validateInput(input);
+        const result = {
+          result_type: "private_film_look_recipe",
+          photos_files_metadata_camera_library_not_accessed: true,
+          no_upload_storage_or_image_analysis: true,
+          no_preset_accuracy_or_outcome_guarantee: true,
+          plan,
+          review_before_export: config.reviewSteps,
+          optional_free_planner: config.freePlanner,
+          official_sources: config.officialSources,
+          webmcp_preview_source: config.webmcpSource
+        };
+        if (config.optionalApp) {
+          result.optional_photocream_pro = config.optionalApp;
+        }
+        return JSON.stringify(result);
+      }
+    });
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    render();
+  });
+  for (const field of Object.values(fields)) {
+    field.addEventListener("change", render);
+  }
+  render();
+  registerWebMcp().catch((error) =>
+    console.error("WebMCP tool registration failed.", error));
+})();
+</script>
+</body>
+</html>

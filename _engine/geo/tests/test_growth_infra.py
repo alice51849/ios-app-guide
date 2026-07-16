@@ -60,6 +60,7 @@ import family_travel_observation_passport
 import family_travel_opds_catalog
 import family_travel_ro_crate
 import family_travel_static_api
+import film_look_recipe_planner
 import gen_app_catalog
 import gen_app_store_qr_ctas
 import gen_app_store_share_ctas
@@ -12975,6 +12976,200 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(first_bytes, english.read_bytes())
             self.assertEqual(stable_mtime, english.stat().st_mtime_ns)
 
+    def test_film_look_recipe_planner_is_private_localized_and_read_only(self):
+        m = film_look_recipe_planner
+        self.assertEqual(
+            (
+                "en",
+                "es-ES",
+                "pt-BR",
+                "de-DE",
+                "fr-FR",
+                "ja",
+                "ko",
+                "zh-Hant",
+                "zh-Hans",
+            ),
+            m.ALT_LOCALES,
+        )
+        self.assertEqual(set(m.ALT_LOCALES), set(m.COPY))
+        english_heading = m.COPY["en"]["heading"]
+        for locale in m.ALT_LOCALES:
+            private = m.render_page(locale, app_public=False)
+            public = m.render_page(locale, app_public=True)
+            schema = m.webmcp_input_schema(locale)
+            self.assertIn(m.COPY[locale]["heading"], private)
+            self.assertIn('"@type":"WebApplication"', private)
+            self.assertNotIn('"@type":"SoftwareApplication"', private)
+            self.assertIn('"dateModified":"2026-07-16"', private)
+            self.assertIn("document.modelContext?.registerTool", private)
+            self.assertIn(
+                'name: "plan_private_film_look_recipe"',
+                private,
+            )
+            self.assertIn(
+                "annotations: {readOnlyHint: true, untrustedContentHint: false}",
+                private,
+            )
+            self.assertIn(
+                "photos_files_metadata_camera_library_not_accessed: true",
+                private,
+            )
+            self.assertIn(
+                "no_upload_storage_or_image_analysis: true",
+                private,
+            )
+            self.assertIn(
+                "no_preset_accuracy_or_outcome_guarantee: true",
+                private,
+            )
+            for source in (
+                m.APPLE_EDIT_PHOTOS,
+                m.APPLE_REVERT_PHOTOS,
+                m.WEBMCP_SOURCE,
+            ):
+                self.assertIn(source, private)
+            for forbidden in (
+                'type="file"',
+                "<textarea",
+                "FileReader",
+                "fetch(",
+                "XMLHttpRequest",
+                "localStorage",
+                "sessionStorage",
+                "navigator.modelContext",
+                "origin-trial",
+            ):
+                self.assertNotIn(forbidden.lower(), private.lower())
+            self.assertNotIn(f"id{m.APP_ID}", private)
+            self.assertIn(f"id{m.APP_ID}", public)
+            self.assertLess(
+                public.index('id="film-planner"'),
+                public.index(m.COPY[locale]["sources_title"]),
+            )
+            self.assertLess(
+                public.index(m.COPY[locale]["sources_title"]),
+                public.index(m.COPY[locale]["app_title"]),
+            )
+            self.assertIn(
+                f'<link rel="canonical" href="{m.canonical(locale)}">',
+                private,
+            )
+            for alternate in m.ALT_LOCALES:
+                self.assertIn(
+                    f'hreflang="{alternate}" href="{m.canonical(alternate)}"',
+                    private,
+                )
+            self.assertIn(
+                f'hreflang="x-default" href="{m.canonical("en")}"',
+                private,
+            )
+            self.assertFalse(schema["additionalProperties"])
+            self.assertEqual(list(schema["properties"]), schema["required"])
+            self.assertEqual(list(m.MOODS), schema["properties"]["mood"]["enum"])
+            self.assertEqual(
+                list(m.LIGHTING),
+                schema["properties"]["lighting"]["enum"],
+            )
+            self.assertEqual(list(m.GRAIN), schema["properties"]["grain"]["enum"])
+            self.assertEqual(list(m.COLOR), schema["properties"]["color"]["enum"])
+            self.assertEqual(
+                list(m.OUTPUTS),
+                schema["properties"]["output"]["enum"],
+            )
+            self.assertEqual(
+                "boolean",
+                schema["properties"]["keep_skin_natural"]["type"],
+            )
+            if locale != "en":
+                self.assertNotEqual(english_heading, m.COPY[locale]["heading"])
+                self.assertNotIn(english_heading, private)
+        execute = m.SCRIPT.split(
+            "execute: async (input) => {",
+            1,
+        )[1].split("return JSON.stringify(result);", 1)[0]
+        for side_effect in (
+            "textContent",
+            "innerHTML",
+            "appendChild",
+            "replaceChildren",
+            "scroll",
+            "fetch(",
+            "localStorage",
+            "sessionStorage",
+        ):
+            self.assertNotIn(side_effect, execute)
+
+    def test_film_look_recipe_planner_build_and_inbound_links_are_idempotent(self):
+        m = film_look_recipe_planner
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            indexes = []
+            answers = []
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                tools = root / "tools"
+                tools.mkdir(parents=True)
+                index = tools / "index.html"
+                index.write_text(
+                    '<main><section class="wrap grid">'
+                    '<article class="card third" data-tool="'
+                    'photo-storage-calculator"><h2><a href="'
+                    'photo-storage-calculator.html">Storage</a></h2>'
+                    "<p>Planner.</p></article></section></main>",
+                    encoding="utf-8",
+                )
+                indexes.append(index)
+                answer_root = root / "answers"
+                answer_root.mkdir(parents=True)
+                for slug in m.TARGET_ANSWER_SLUGS_BY_LOCALE.get(
+                    locale,
+                    m.TARGET_ANSWER_SLUGS,
+                ):
+                    answer = answer_root / slug
+                    answer.write_text(
+                        '<main><a class="cta" href="'
+                        f'https://apps.apple.com/us/app/x/id{m.APP_ID}'
+                        '?pt=123&ct=test">PhotoCream</a></main>',
+                        encoding="utf-8",
+                    )
+                    answers.append(answer)
+            urls = m.build(pages, app_public=False)
+            self.assertEqual(len(m.ALT_LOCALES), len(urls))
+            for locale in m.ALT_LOCALES:
+                root = pages if locale == "en" else pages / locale
+                tool = root / "tools" / f"{m.SLUG}.html"
+                self.assertTrue(tool.exists())
+                self.assertNotIn(
+                    f"id{m.APP_ID}",
+                    tool.read_text(encoding="utf-8"),
+                )
+            for index in indexes:
+                self.assertEqual(
+                    1,
+                    index.read_text(encoding="utf-8").count(f"{m.SLUG}.html"),
+                )
+            for answer in answers:
+                text = answer.read_text(encoding="utf-8")
+                self.assertEqual(1, text.count(m.INBOUND_LINK_CLASS))
+                self.assertLess(
+                    text.index(m.INBOUND_LINK_CLASS),
+                    text.index(f"id{m.APP_ID}"),
+                )
+            stable_mtime = 1_700_000_000_000_000_000
+            for path in pages.rglob("*.html"):
+                os.utime(path, ns=(stable_mtime, stable_mtime))
+            before = {
+                path.relative_to(pages): (path.read_bytes(), path.stat().st_mtime_ns)
+                for path in pages.rglob("*.html")
+            }
+            m.build(pages, app_public=False)
+            after = {
+                path.relative_to(pages): (path.read_bytes(), path.stat().st_mtime_ns)
+                for path in pages.rglob("*.html")
+            }
+            self.assertEqual(before, after)
+
     def test_resume_evidence_planner_is_private_transparent_and_non_predictive(self):
         pages = {
             locale: resume_evidence_planner.render_page(
@@ -18144,6 +18339,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("daily_checklist_planner.py", materialize_block)
         self.assertNotIn("screen_time_block_planner.py", materialize_block)
         self.assertNotIn("photo_storage_cleanup_planner.py", materialize_block)
+        self.assertNotIn("film_look_recipe_planner.py", materialize_block)
         self.assertNotIn("vocabulary_habit_planner.py", materialize_block)
         self.assertNotIn("toeic_study_allocation_planner.py", materialize_block)
         self.assertNotIn("bopomofo_symbol_contrast_cards.py", materialize_block)
@@ -18185,6 +18381,10 @@ class GeneratorTests(unittest.TestCase):
         self.assertLess(
             availability_block.index("refresh=True"),
             availability_block.index("photo_storage_cleanup_planner.py"),
+        )
+        self.assertLess(
+            availability_block.index("refresh=True"),
+            availability_block.index("film_look_recipe_planner.py"),
         )
         self.assertLess(
             availability_block.index("refresh=True"),
@@ -18237,6 +18437,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(1, workflow.count("daily_checklist_planner.py"))
         self.assertEqual(1, workflow.count("screen_time_block_planner.py"))
         self.assertEqual(1, workflow.count("photo_storage_cleanup_planner.py"))
+        self.assertEqual(1, workflow.count("film_look_recipe_planner.py"))
         self.assertEqual(1, workflow.count("vocabulary_habit_planner.py"))
         self.assertEqual(1, workflow.count("toeic_study_allocation_planner.py"))
         self.assertEqual(1, workflow.count("bopomofo_symbol_contrast_cards.py"))
@@ -18269,6 +18470,10 @@ class GeneratorTests(unittest.TestCase):
         self.assertLess(
             workflow.index("refresh=True"),
             workflow.index("photo_storage_cleanup_planner.py"),
+        )
+        self.assertLess(
+            workflow.index("refresh=True"),
+            workflow.index("film_look_recipe_planner.py"),
         )
         self.assertLess(
             workflow.index("refresh=True"),
@@ -18549,6 +18754,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("daily_checklist_planner.py", publish)
         self.assertIn("screen_time_block_planner.py", publish)
         self.assertIn("photo_storage_cleanup_planner.py", publish)
+        self.assertIn("film_look_recipe_planner.py", publish)
         self.assertIn("resume_evidence_planner.py", publish)
         self.assertIn("vocabulary_habit_planner.py", publish)
         self.assertIn("toeic_study_allocation_planner.py", publish)

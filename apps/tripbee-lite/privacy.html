@@ -8,19 +8,19 @@
   <link rel="canonical" href="https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/privacy.html">
   <style>
     :root { color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    body { margin: 0; background: #fffcf8; color: #3f322e; }
+    body { margin: 0; background: linear-gradient(160deg, #fff, #fdfbff 50%, #f6f7ff); color: #2c2a38; }
     main { width: min(760px, calc(100% - 40px)); margin: 0 auto; padding: 60px 0 80px; }
     h1 { font-size: clamp(36px, 8vw, 56px); letter-spacing: -.04em; margin-bottom: 10px; }
-    .date { color: #806f69; }
+    .date { color: #77758c; }
     section { margin-top: 28px; }
     h2 { font-size: 21px; margin-bottom: 8px; }
     p, li { line-height: 1.65; }
-    a { color: #9c493f; font-weight: 700; }
+    a { color: #8e6be6; font-weight: 700; }
     nav { margin-top: 40px; display: flex; gap: 18px; flex-wrap: wrap; }
     @media (prefers-color-scheme: dark) {
-      body { background: #302329; color: #fff8f4; }
-      .date { color: #d9c6bf; }
-      a { color: #efb6a0; }
+      body { background: linear-gradient(160deg, #201a32, #19172a 50%, #151b2d); color: #faf7ff; }
+      .date { color: #cbc5dd; }
+      a { color: #b492f0; }
     }
   </style>
 </head>
@@ -41,7 +41,7 @@
 
     <section>
       <h2>Weather, maps, and sharing</h2>
-      <p>When you request weather or a suggested time zone, the destination needed for that request is sent directly to the Open-Meteo service. TripBee Lite does not attach an account identifier or keep a server-side copy. Opening directions hands the selected places to Apple Maps or another map app you choose. Sharing or exporting occurs only after you choose it and uses Apple's system share interface or a destination you select.</p>
+      <p>When you request weather or a suggested time zone, Apple's geocoding service receives the destination text to resolve its coordinates or time zone. For weather, TripBee Lite then sends the resolved latitude and longitude, requested dates, and time-zone setting to Open-Meteo. No account identifier is attached, and the developer does not keep a server-side copy. Opening directions hands the selected places to Apple Maps or another map app you choose. Sharing or exporting occurs only after you choose it and uses Apple's system share interface or a destination you select.</p>
     </section>
 
     <section>

@@ -74,6 +74,7 @@ def main():
     require([PY, os.path.join(HERE, "daily_checklist_planner.py")], env=env)
     require([PY, os.path.join(HERE, "cycle_privacy_planner.py")], env=env)
     require([PY, os.path.join(HERE, "screen_time_block_planner.py")], env=env)
+    require([PY, os.path.join(HERE, "hourstag_work_hours_tool.py")], env=env)
     require([PY, os.path.join(HERE, "photo_storage_cleanup_planner.py")], env=env)
     require([PY, os.path.join(HERE, "film_look_recipe_planner.py")], env=env)
     require([PY, os.path.join(HERE, "family_routine_card_planner.py")], env=env)

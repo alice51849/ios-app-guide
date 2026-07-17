@@ -1,4 +1,11 @@
-<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Calculadora de horas de trabajo para comprar</title><meta name="description" content="Convierte un precio en horas y días de trabajo usando tu salario por hora."><link rel="canonical" href="https://alice51849.github.io/ios-app-guide/ko/tools/hours-of-work-calculator.html">
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>구매 가격을 노동시간으로 환산｜개인정보 보호 계산기</title>
+<meta name="description" content="가격을 노동시간, 근무일, 저축에 필요한 근로시간으로 환산합니다. 계정·업로드·저장 없이 작동하며 금융 조언을 제공하지 않습니다.">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/ko/tools/hours-of-work-calculator.html">
 <link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/hours-of-work-calculator.html">
 <link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/hours-of-work-calculator.html">
 <link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/tools/hours-of-work-calculator.html">
@@ -10,57 +17,250 @@
 <link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/tools/hours-of-work-calculator.html">
 <link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/hours-of-work-calculator.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Calculadora de horas de trabajo para comprar">
-<meta property="og:description" content="Convierte un precio en horas y días de trabajo usando tu salario por hora.">
+<meta property="og:title" content="이 구매는 내 삶의 노동시간으로 얼마일까요?">
+<meta property="og:description" content="가격을 노동시간, 근무일, 저축에 필요한 근로시간으로 환산합니다. 계정·업로드·저장 없이 작동하며 금융 조언을 제공하지 않습니다.">
 <meta property="og:url" content="https://alice51849.github.io/ios-app-guide/ko/tools/hours-of-work-calculator.html">
-<meta name="twitter:card" content="summary"><style>
-:root{--bg:#f7f7fb;--card:#fff;--ink:#161622;--muted:#5d6370;--line:#e6e7ef;--brand:#5b5ff2;--brand2:#8b5cf6;--ok:#0f8f5f}*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#fff,var(--bg));color:var(--ink);line-height:1.55}a{color:#3840d0}.wrap{width:min(1040px,100% - 32px);margin:auto}.top{padding:18px 0;border-bottom:1px solid var(--line);background:rgba(255,255,255,.86);backdrop-filter:blur(12px);position:sticky;top:0;z-index:3}.nav{display:flex;justify-content:space-between;gap:16px;align-items:center}.nav a{text-decoration:none;font-weight:700}.hero{padding:46px 0 24px}.eyebrow{color:var(--brand);font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem}h1{font-size:clamp(2rem,6vw,4rem);line-height:1.02;margin:.2em 0}h2{font-size:clamp(1.35rem,3vw,2rem);margin:1.2em 0 .55em}p.lead{font-size:1.15rem;color:var(--muted);max-width:760px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.card{grid-column:span 12;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 8px 30px rgba(31,34,78,.06)}@media(min-width:760px){.half{grid-column:span 6}.third{grid-column:span 4}.two{grid-column:span 8}.side{grid-column:span 4}}label{display:block;font-weight:750;margin:12px 0 6px}input,select,textarea{width:100%;font:inherit;padding:12px 13px;border:1px solid #cfd2df;border-radius:13px;background:#fff}button,.cta{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:white!important;text-decoration:none;font-weight:850;padding:13px 18px;box-shadow:0 8px 22px rgba(91,95,242,.22);cursor:pointer}.ghost{background:#fff!important;color:#3840d0!important;border:1px solid #cfd2df;box-shadow:none}.result{background:#f2f5ff;border:1px solid #dfe4ff;border-radius:18px;padding:16px;margin-top:16px}.muted{color:var(--muted)}.pill{display:inline-block;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 10px;margin:3px;font-weight:700}.checklist li{margin:.45em 0}.footer{margin-top:40px;padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}.notice{font-size:.92rem;color:#626875}.print-sheet{background:#fff;color:#111;border:1px solid #ddd;padding:22px;border-radius:16px}.trace{font-size:54px;letter-spacing:8px;color:#111;margin:10px 0 20px}.trace span{color:#c9c9c9}@media print{body{background:white}.top,.hero,.no-print,.footer,.card:not(.printable){display:none!important}.printable{display:block!important;border:0;box-shadow:none}.wrap{width:100%;}.print-sheet{border:0}.trace{font-size:62px}}
-</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "ko", "mainEntity": [{"@type": "Question", "name": "구매에 필요한 노동시간 계산기", "acceptedAnswer": {"@type": "Answer", "text": "Convierte un precio en horas y días de trabajo usando tu salario por hora."}}]}</script><script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://alice51849.github.io/ios-app-guide/#organization",
-      "name": "iOS App Guide",
-      "url": "https://alice51849.github.io/ios-app-guide"
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://alice51849.github.io/ios-app-guide/#website",
-      "url": "https://alice51849.github.io/ios-app-guide",
-      "name": "iOS App Guide",
-      "publisher": {
-        "@id": "https://alice51849.github.io/ios-app-guide/#organization"
-      }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "iOS App Guide",
-          "item": "https://alice51849.github.io/ios-app-guide/ko/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Tools",
-          "item": "https://alice51849.github.io/ios-app-guide/ko/tools/index.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Calculadora de horas de trabajo para comprar",
-          "item": "https://alice51849.github.io/ios-app-guide/ko/tools/hours-of-work-calculator.html"
-        }
-      ]
+<meta name="twitter:card" content="summary">
+<meta name="apple-itunes-app" content="app-id=6754218117">
+<style>
+:root{--ink:#17231d;--muted:#667269;--line:#dce5de;--paper:#fff;--bg:#f2f7f3;--forest:#244f3b;--mint:#7bb695;--soft:#e8f4ed;--gold:#f5ead0;--shadow:0 22px 60px rgba(26,67,46,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,#fff 0,var(--bg) 55%,#e5efe8 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:#286344}.wrap{width:min(1120px,calc(100% - 30px));margin:auto}.top{position:sticky;top:0;z-index:8;background:#fffffff2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}.links{display:flex;gap:15px;overflow-x:auto}
+.hero{padding:64px 0 30px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--forest);white-space:nowrap}.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}.hero h1{font-size:clamp(34px,6vw,62px);line-height:1.04;letter-spacing:-.035em;margin:.3em 0 .22em;white-space:nowrap;overflow-x:auto}.lead{font-size:clamp(17px,2.2vw,21px);color:var(--muted);margin:0;white-space:nowrap;overflow-x:auto}.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.calculator,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}.calculator{padding:clamp(20px,4vw,36px);margin:16px auto 30px}.calculator h2,.card h2,.app-card h2{font-size:clamp(24px,3.6vw,34px);line-height:1.14;margin:0;white-space:nowrap;overflow-x:auto}.intro{color:var(--muted);white-space:nowrap;overflow-x:auto}
+.controls{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:22px}.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--forest);margin-bottom:6px;white-space:nowrap;overflow-x:auto}select,input,button{font:inherit}select,input[type=number]{width:100%;min-height:46px;border:1px solid #cbd9cf;border-radius:13px;background:#fff;color:var(--ink);padding:9px 11px}.button{border:0;border-radius:999px;background:linear-gradient(135deg,var(--forest),#4d8b68);color:#fff!important;text-decoration:none;font-weight:850;padding:12px 18px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(36,79,59,.2)}
+.results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin-top:22px}.result{background:var(--soft);border:1px solid #cbe0d2;border-radius:17px;padding:14px;min-width:0}.result strong,.result span{display:block;white-space:nowrap;overflow-x:auto}.result strong{font-size:12px;color:#426852;text-transform:uppercase;letter-spacing:.04em}.result span{font-size:17px;color:#234c38;font-weight:820;margin-top:5px}.note{background:var(--gold);border:1px solid #e8d5a6;border-radius:16px;padding:13px 15px;margin:14px 0 0;white-space:nowrap;overflow-x:auto}.decision{background:#edf6ff;border:1px solid #cddff0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:30px}.card,.app-card{padding:clamp(20px,3.5vw,30px)}.card p,.card li,.app-card p,.faq details p,.faq summary{white-space:nowrap;overflow-x:auto}.card ol{padding-left:22px}.card li{margin:8px 0}.source-list a{overflow-wrap:anywhere}.app-card{margin:0 auto 38px;background:linear-gradient(135deg,#fbfffc,#e5f3e9)}.app-card .button{display:inline-flex;margin-top:5px}.faq{margin-bottom:30px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+.footer{background:var(--forest);color:#eff8f2;text-align:center;padding:27px 0;white-space:nowrap;overflow-x:auto}
+@media(max-width:960px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.controls,.results,.grid{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1120px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"이 구매는 내 삶의 노동시간으로 얼마일까요?","description":"가격을 노동시간, 근무일, 저축에 필요한 근로시간으로 환산합니다. 계정·업로드·저장 없이 작동하며 금융 조언을 제공하지 않습니다.","url":"https://alice51849.github.io/ios-app-guide/ko/tools/hours-of-work-calculator.html","inLanguage":"ko","datePublished":"2026-07-17","dateModified":"2026-07-17","applicationCategory":"FinanceApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Local price-to-work-time calculation","Hourly and monthly take-home income modes","Entered tax and saving-rate scenarios","Need, Want and Impulse reflection prompt","No account, upload, storage or financial advice"],"citation":["https://apps.apple.com/us/app/id6754218117","https://developer.chrome.com/docs/ai/webmcp/imperative-api"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ko","mainEntity":[{"@type":"Question","name":"세전 소득과 실수령 소득 중 무엇을 쓰나요?","acceptedAnswer":{"@type":"Answer","text":"실제로 쓸 수 있는 돈에 가깝게 계산하려면 실수령 소득을 사용하세요. 계산기가 알 수 없는 비용은 직접 조정해야 합니다."}},{"@type":"Question","name":"월 소득 모드에 유급 근로시간이 필요한 이유는 무엇인가요?","acceptedAnswer":{"@type":"Answer","text":"월 소득을 현실적인 유급 근로시간으로 나눠야 시간당 가치가 나오기 때문입니다."}},{"@type":"Question","name":"시간 비용이 높으면 사지 말아야 하나요?","acceptedAnswer":{"@type":"Answer","text":"아닙니다. 이 숫자는 한 가지 기회비용만 보여 줍니다. 긴급성, 즐거움, 내구성, 대안, 전체 재정 상황도 중요합니다."}},{"@type":"Question","name":"급여나 구매 내역을 저장하나요?","acceptedAnswer":{"@type":"Answer","text":"아닙니다. 계산은 현재 페이지 안에서만 이루어지며 업로드되거나 저장되지 않습니다."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"HoursTag: Hours to Buy","operatingSystem":"iOS","applicationCategory":"FinanceApplication","url":"https://apps.apple.com/app/id6754218117","installUrl":"https://apps.apple.com/app/id6754218117","description":"무료 페이지는 임시 예시 한 건만 계산합니다. 현재 App Store 설명에 따르면 HoursTag는 기기에서 소득을 한 번 설정하고 가격을 노동시간으로 환산하며, 필요·원함·충동 태그, 목표와 위시리스트, 월별 카테고리 인사이트, 백업과 복원을 제공합니다. 계정, 추적, 광고가 없고 구독이나 숨은 업그레이드 없이 한 번 구매하는 앱이라고 명시되어 있습니다. 구매 전 최신 등록 정보를 확인하세요.","featureList":["Price-to-work-time conversion","Need, Want and Impulse tags","Goals and wishlist with progress","Monthly category insights","No account, tracking or ads","Paid download with no subscription"]}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/ko/index.html">iOS App Guide</a><nav class="links"><a href="https://alice51849.github.io/ios-app-guide/ko/tools/index.html">무료 도구</a><a href="https://alice51849.github.io/ios-app-guide/tools/hours-of-work-calculator.html">English</a></nav></div></header>
+<main>
+<section class="hero wrap"><div class="eyebrow">비공개 계산 · 투명한 공식 · AI 호출 지원</div><h1>이 구매는 내 삶의 노동시간으로 얼마일까요?</h1><p class="lead">실수령 소득으로 결제 전 가격을 노동시간으로 바꿔 보세요. 잠시 멈춰 생각하기 위한 수치일 뿐, 구매 여부를 대신 결정하지 않습니다.</p><div class="badges"><span class="badge">이 브라우저 안에서만 계산</span><span class="badge">계정·은행 연결 없음</span><span class="badge">급여나 구매 내역을 저장하지 않음</span><span class="badge">절약이나 구매 결과를 보장하지 않음</span></div></section>
+<section class="calculator wrap"><h2>실제 구매 한 건 계산하기</h2><p class="intro">시간당 또는 월 실수령 소득을 선택하세요. 월 소득 모드는 입력한 월 유급 근로시간으로 나누며, 시간당 모드에서는 해당 항목을 사용하지 않습니다.</p>
+<form id="hours-calculator"><div class="controls">
+<div class="field"><label for="income-mode">소득 입력 방식</label><select id="income-mode"><option value="hourly">시간당 실수령액</option><option value="monthly">월 실수령액</option></select></div>
+<div class="field"><label for="take-home-income">사용하는 통화로 실수령 소득 입력</label><input id="take-home-income" type="number" min="0.01" max="1000000000" step="0.01" value="25" required></div>
+<div class="field"><label for="paid-hours-month">월 유급 근로시간</label><input id="paid-hours-month" type="number" min="0.01" max="744" step="0.25" value="160" required></div>
+<div class="field"><label for="purchase-price">세전 상품 가격</label><input id="purchase-price" type="number" min="0" max="1000000000" step="0.01" value="129" required></div>
+<div class="field"><label for="tax-percent">판매세 또는 부가가치세율</label><input id="tax-percent" type="number" min="0" max="100" step="0.01" value="0" required></div>
+<div class="field"><label for="workday-hours">하루 근무시간</label><input id="workday-hours" type="number" min="0.01" max="24" step="0.25" value="8" required></div>
+<div class="field"><label for="saving-rate">실수령 소득 중 저축 비율</label><input id="saving-rate" type="number" min="0" max="100" step="0.1" value="10" required></div>
+<div class="field"><label for="decision-tag">지금 이 구매를 어떻게 분류하나요?</label><select id="decision-tag"><option value="need">필요</option><option value="want">원함</option><option value="impulse">충동</option></select></div>
+</div><p><button class="button" type="submit">시간 비용 보기</button></p></form>
+<div class="results"><div class="result"><strong>실질 시간당 실수령액</strong><span id="result-hourly"></span></div><div class="result"><strong>입력한 세율 포함 가격</strong><span id="result-total"></span></div><div class="result"><strong>노동시간</strong><span id="result-hours"></span></div><div class="result"><strong>근무일</strong><span id="result-days"></span></div><div class="result"><strong>하루 근무시간 대비 비율</strong><span id="result-workday"></span></div><div class="result"><strong>저축 비율을 반영한 필요 근로시간</strong><span id="result-saving"></span></div></div>
+<p class="note decision" id="result-decision"></p><p class="note">공식: 입력한 세율 포함 가격 ÷ 실질 시간당 실수령액. 입력값에 반영되지 않은 세금, 복리후생, 통근, 무급 노동, 돌봄 비용은 자동으로 포함되지 않습니다.</p></section>
+<section class="wrap grid"><article class="card"><h2>결과를 활용하기 전 세 가지 확인</h2><ol><li>부풀려 보일 수 있는 세전 금액보다 실수령 소득을 사용하세요.</li><li>실제 유급 근로시간을 입력하세요. 월 소득 모드는 무급 노동을 추정할 수 없습니다.</li><li>결과는 판단 기준 중 하나일 뿐 금융 조언이나 도덕적 점수가 아닙니다.</li></ol></article><article class="card"><h2>이 무료 계산기가 하지 않는 일</h2><p>은행 연결, 소득 기억, 구매 저장, 카테고리 추적, 송금, 결제 차단, 절약액 예측을 하지 않습니다. 새로고침하거나 페이지를 닫으면 현재 예시는 사라집니다.</p></article></section>
+<section class="wrap card faq"><h2>가격을 노동시간으로 환산하는 자주 묻는 질문</h2><details><summary>세전 소득과 실수령 소득 중 무엇을 쓰나요?</summary><p>실제로 쓸 수 있는 돈에 가깝게 계산하려면 실수령 소득을 사용하세요. 계산기가 알 수 없는 비용은 직접 조정해야 합니다.</p></details><details><summary>월 소득 모드에 유급 근로시간이 필요한 이유는 무엇인가요?</summary><p>월 소득을 현실적인 유급 근로시간으로 나눠야 시간당 가치가 나오기 때문입니다.</p></details><details><summary>시간 비용이 높으면 사지 말아야 하나요?</summary><p>아닙니다. 이 숫자는 한 가지 기회비용만 보여 줍니다. 긴급성, 즐거움, 내구성, 대안, 전체 재정 상황도 중요합니다.</p></details><details><summary>급여나 구매 내역을 저장하나요?</summary><p>아닙니다. 계산은 현재 페이지 안에서만 이루어지며 업로드되거나 저장되지 않습니다.</p></details></section>
+<section class="app-card wrap"><h2>모든 구매 전에 이런 멈춤을 만들고 싶나요?</h2><p>무료 페이지는 임시 예시 한 건만 계산합니다. 현재 App Store 설명에 따르면 HoursTag는 기기에서 소득을 한 번 설정하고 가격을 노동시간으로 환산하며, 필요·원함·충동 태그, 목표와 위시리스트, 월별 카테고리 인사이트, 백업과 복원을 제공합니다. 계정, 추적, 광고가 없고 구독이나 숨은 업그레이드 없이 한 번 구매하는 앱이라고 명시되어 있습니다. 구매 전 최신 등록 정보를 확인하세요.</p><a class="button" href="https://apps.apple.com/app/id6754218117?ct=iag_hours_ko" rel="nofollow noopener">App Store에서 HoursTag 보기</a></section>
+<section class="wrap card faq"><h2>현재 제품 출처와 AI 도구 사양</h2><p><a href="https://apps.apple.com/us/app/id6754218117" rel="noopener">HoursTag 미국 App Store 등록 정보</a></p><p><a href="https://developer.chrome.com/docs/ai/webmcp/imperative-api" rel="noopener">Chrome WebMCP imperative API 미리보기 사양</a></p></section>
+</main>
+<footer class="footer"><div class="wrap">비공개 로컬 계산만 제공 · 계정·은행 접근 없음 · 금융 조언 아님</div></footer>
+<script type="application/json" id="hours-config">{"inputSchema":{"type":"object","properties":{"income_mode":{"type":"string","enum":["hourly","monthly"],"description":"Whether take-home income is entered per hour or per month."},"take_home_income":{"type":"number","exclusiveMinimum":0,"maximum":1000000000,"description":"Self-entered take-home income in the user's own currency."},"paid_hours_per_month":{"type":"number","exclusiveMinimum":0,"maximum":744,"description":"Paid hours per month. Used only in monthly mode; provide a realistic positive value in hourly mode as well."},"purchase_price":{"type":"number","minimum":0,"maximum":1000000000,"description":"Purchase price before the separately entered tax rate."},"tax_percent":{"type":"number","minimum":0,"maximum":100},"workday_hours":{"type":"number","exclusiveMinimum":0,"maximum":24},"saving_rate_percent":{"type":"number","minimum":0,"maximum":100},"decision_tag":{"type":"string","enum":["need","want","impulse"]}},"required":["income_mode","take_home_income","paid_hours_per_month","purchase_price","tax_percent","workday_hours","saving_rate_percent","decision_tag"],"additionalProperties":false},"decisionPrompts":{"need":"필요: 시간 비용을 긴급성, 대안, 구매를 미뤘을 때의 영향과 함께 비교하세요.","want":"원함: 잠시 시간을 둔 뒤, 표시된 노동시간을 들일 가치가 있는지 다시 판단하세요.","impulse":"충동: 결제 화면을 닫고 상품을 다른 곳에 저장한 뒤, 감정이 가라앉으면 같은 시간 비용을 다시 확인하세요."},"savingZero":"저축 비율을 0%보다 크게 설정하면 계산됩니다","validationError":"소득과 근로시간에 0보다 큰 올바른 값을 입력하세요.","mathBoundary":"공식: 입력한 세율 포함 가격 ÷ 실질 시간당 실수령액. 입력값에 반영되지 않은 세금, 복리후생, 통근, 무급 노동, 돌봄 비용은 자동으로 포함되지 않습니다.","toolDescription":"범위가 제한된 사용자의 실수령 소득과 가격 입력으로 구매 노동시간을 계산합니다. 투명한 공식, 가정, 판단 질문을 반환하며 데이터를 저장하거나 계정에 접근하거나 구매를 권유하거나 절약을 보장하지 않습니다.","freeTool":{"label":"이 구매는 내 삶의 노동시간으로 얼마일까요?","url":"https://alice51849.github.io/ios-app-guide/ko/tools/hours-of-work-calculator.html","boundary":"은행 연결, 소득 기억, 구매 저장, 카테고리 추적, 송금, 결제 차단, 절약액 예측을 하지 않습니다. 새로고침하거나 페이지를 닫으면 현재 예시는 사라집니다."},"officialSource":{"label":"HoursTag 미국 App Store 등록 정보","url":"https://apps.apple.com/us/app/id6754218117"},"webmcpSource":"https://developer.chrome.com/docs/ai/webmcp/imperative-api","optionalApp":{"label":"App Store에서 HoursTag 보기","boundary":"무료 페이지는 임시 예시 한 건만 계산합니다. 현재 App Store 설명에 따르면 HoursTag는 기기에서 소득을 한 번 설정하고 가격을 노동시간으로 환산하며, 필요·원함·충동 태그, 목표와 위시리스트, 월별 카테고리 인사이트, 백업과 복원을 제공합니다. 계정, 추적, 광고가 없고 구독이나 숨은 업그레이드 없이 한 번 구매하는 앱이라고 명시되어 있습니다. 구매 전 최신 등록 정보를 확인하세요.","app_store_url":"https://apps.apple.com/app/id6754218117?ct=iag_hours_ko"}}</script>
+<script>
+(() => {
+  const config = JSON.parse(document.getElementById("hours-config").textContent);
+  const form = document.getElementById("hours-calculator");
+  const fields = {
+    income_mode: document.getElementById("income-mode"),
+    take_home_income: document.getElementById("take-home-income"),
+    paid_hours_per_month: document.getElementById("paid-hours-month"),
+    purchase_price: document.getElementById("purchase-price"),
+    tax_percent: document.getElementById("tax-percent"),
+    workday_hours: document.getElementById("workday-hours"),
+    saving_rate_percent: document.getElementById("saving-rate"),
+    decision_tag: document.getElementById("decision-tag")
+  };
+  const output = {
+    hourly: document.getElementById("result-hourly"),
+    total: document.getElementById("result-total"),
+    hours: document.getElementById("result-hours"),
+    days: document.getElementById("result-days"),
+    workday: document.getElementById("result-workday"),
+    saving: document.getElementById("result-saving"),
+    decision: document.getElementById("result-decision")
+  };
+
+  function round(value, digits = 2) {
+    const factor = 10 ** digits;
+    return Math.round((value + Number.EPSILON) * factor) / factor;
+  }
+
+  function enumValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
     }
-  ]
-}
+    const value = input[name];
+    const values = config.inputSchema.properties[name].enum;
+    if (typeof value !== "string" || !values.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    return value;
+  }
+
+  function numberValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const schema = config.inputSchema.properties[name];
+    if (typeof value !== "number" || !Number.isFinite(value)) {
+      throw new TypeError(`${name} must be a finite number.`);
+    }
+    if ((schema.minimum !== undefined && value < schema.minimum) ||
+        (schema.exclusiveMinimum !== undefined && value <= schema.exclusiveMinimum) ||
+        (schema.maximum !== undefined && value > schema.maximum)) {
+      throw new RangeError(`${name} is outside the supported range.`);
+    }
+    return value;
+  }
+
+  function calculate(input) {
+    if (input === null || typeof input !== "object" || Array.isArray(input)) {
+      throw new TypeError("WebMCP input must be an object.");
+    }
+    const allowed = new Set(Object.keys(config.inputSchema.properties));
+    for (const name of Object.keys(input)) {
+      if (!allowed.has(name)) {
+        throw new RangeError(`${name} is not a supported input.`);
+      }
+    }
+    const incomeMode = enumValue(input, "income_mode");
+    const takeHomeIncome = numberValue(input, "take_home_income");
+    const paidHours = numberValue(input, "paid_hours_per_month");
+    const purchasePrice = numberValue(input, "purchase_price");
+    const taxPercent = numberValue(input, "tax_percent");
+    const workdayHours = numberValue(input, "workday_hours");
+    const savingRate = numberValue(input, "saving_rate_percent");
+    const decisionTag = enumValue(input, "decision_tag");
+    const effectiveHourly = incomeMode === "hourly"
+      ? takeHomeIncome
+      : takeHomeIncome / paidHours;
+    const totalPrice = purchasePrice * (1 + taxPercent / 100);
+    const workHours = totalPrice / effectiveHourly;
+    const savingHours = savingRate > 0
+      ? workHours / (savingRate / 100)
+      : null;
+    return {
+      selected_inputs: {
+        income_mode: incomeMode,
+        take_home_income: takeHomeIncome,
+        paid_hours_per_month: incomeMode === "monthly" ? paidHours : null,
+        purchase_price: purchasePrice,
+        tax_percent: taxPercent,
+        workday_hours: workdayHours,
+        saving_rate_percent: savingRate,
+        decision_tag: decisionTag
+      },
+      calculation: {
+        effective_take_home_per_hour: round(effectiveHourly),
+        price_including_entered_tax: round(totalPrice),
+        work_hours: round(workHours),
+        work_minutes: round(workHours * 60),
+        workdays: round(workHours / workdayHours),
+        percent_of_one_workday: round(workHours / workdayHours * 100),
+        earning_hours_at_saving_rate: savingHours === null ? null : round(savingHours)
+      },
+      formulas: {
+        effective_hourly: incomeMode === "hourly"
+          ? "take_home_income"
+          : "take_home_income / paid_hours_per_month",
+        price_with_tax: "purchase_price * (1 + tax_percent / 100)",
+        work_hours: "price_with_tax / effective_hourly",
+        earning_hours_at_saving_rate:
+          "work_hours / (saving_rate_percent / 100), when saving_rate_percent > 0"
+      },
+      decision_prompt: config.decisionPrompts[decisionTag],
+      boundary: config.mathBoundary
+    };
+  }
+
+  function format(value) {
+    return new Intl.NumberFormat(undefined, {
+      maximumFractionDigits: 2
+    }).format(value);
+  }
+
+  function readForm() {
+    return {
+      income_mode: fields.income_mode.value,
+      take_home_income: Number(fields.take_home_income.value),
+      paid_hours_per_month: Number(fields.paid_hours_per_month.value),
+      purchase_price: Number(fields.purchase_price.value),
+      tax_percent: Number(fields.tax_percent.value),
+      workday_hours: Number(fields.workday_hours.value),
+      saving_rate_percent: Number(fields.saving_rate_percent.value),
+      decision_tag: fields.decision_tag.value
+    };
+  }
+
+  function render() {
+    try {
+      const result = calculate(readForm());
+      output.hourly.textContent = format(result.calculation.effective_take_home_per_hour);
+      output.total.textContent = format(result.calculation.price_including_entered_tax);
+      output.hours.textContent = format(result.calculation.work_hours);
+      output.days.textContent = format(result.calculation.workdays);
+      output.workday.textContent = `${format(result.calculation.percent_of_one_workday)}%`;
+      output.saving.textContent = result.calculation.earning_hours_at_saving_rate === null
+        ? config.savingZero
+        : format(result.calculation.earning_hours_at_saving_rate);
+      output.decision.textContent = result.decision_prompt;
+    } catch (error) {
+      if (!(error instanceof TypeError || error instanceof RangeError)) throw error;
+      for (const target of Object.values(output)) target.textContent = "—";
+      output.decision.textContent = config.validationError;
+    }
+  }
+
+  async function registerWebMcp() {
+    if (!document.modelContext?.registerTool) return;
+    await document.modelContext.registerTool({
+      name: "calculate_purchase_work_time",
+      description: config.toolDescription,
+      inputSchema: config.inputSchema,
+      annotations: {readOnlyHint: true, untrustedContentHint: false},
+      execute: async (input) => {
+        const calculation = calculate(input);
+        const result = {
+          result_type: "private_purchase_work_time_calculation",
+          local_only_calculation: true,
+          no_account_bank_or_device_access: true,
+          no_purchase_recommendation_or_savings_promise: true,
+          calculation,
+          free_tool: config.freeTool,
+          official_source: config.officialSource,
+          webmcp_preview_source: config.webmcpSource
+        };
+        if (config.optionalApp) {
+          result.optional_hourstag = config.optionalApp;
+        }
+        return JSON.stringify(result);
+      }
+    });
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    render();
+  });
+  for (const field of Object.values(fields)) {
+    field.addEventListener("change", render);
+  }
+  render();
+  registerWebMcp().catch((error) =>
+    console.error("WebMCP tool registration failed.", error));
+})();
 </script>
-</head><body><header class="top no-print"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/ko/index.html">iOS App Guide</a><nav><a href="https://alice51849.github.io/ios-app-guide/ko/tools/">무료 도구</a> · <a href="https://alice51849.github.io/ios-app-guide/ko/alternatives/">대안 앱</a></nav></div></header><main><section class="hero wrap"><h1>구매에 필요한 노동시간 계산기</h1><p class="lead">Convierte un precio en horas y días de trabajo usando tu salario por hora.</p><p><a class="cta" href="https://apps.apple.com/app/id6754218117?ct=iag_lp">Descargar en App Store: HoursTag →</a></p></section><section class="wrap grid"><div class="card half"><label>시급<input id="wageIn" type="number" step="0.01"></label><label>가격<input id="priceIn" type="number" step="0.01"></label><label>Impuesto / IVA %<input id="taxIn" type="number" value="0"></label><label>Horas por jornada<input id="dayIn" type="number" value="8"></label><p><button id="hoursBtn">労働時間を計算</button></p></div><div class="card half"><div id="hoursOut" class="result">Aquí aparecerá el coste en tiempo.</div></div></section>
-<section class="related-resources"><h2>Related resources</h2><ul><li><a href="https://alice51849.github.io/ios-app-guide/ko/guides/hourstag.html">HoursTag app guide</a></li><li><a href="https://alice51849.github.io/ios-app-guide/alternatives/hourstag-no-subscription.html">HoursTag no-subscription comparison</a></li></ul></section>
-</main><script>function money(n){return new Intl.NumberFormat("ko",{maximumFractionDigits:2}).format(n)}function calc(){let w=parseFloat(wageIn.value),p=parseFloat(priceIn.value),t=parseFloat(taxIn.value||0),d=parseFloat(dayIn.value||8);if(!(w>0&&p>=0))return;let total=p*(1+t/100),h=total/w;hoursOut.innerHTML=`<h2>Esto cuesta ${money(h)} 労働時間を計算</h2><p><span class="pill">${money(h/d)} 근무일</span><span class="pill">Precio total: ${money(total)}</span></p>`}hoursBtn.onclick=calc;</script><footer class="footer no-print"><div class="wrap">브라우저에서 실행되는 무료 도구입니다. 추적 없음, 계정 없음, 서버 업로드 없음. 결과는 참고용입니다.</div></footer></body></html>
+</body>
+</html>

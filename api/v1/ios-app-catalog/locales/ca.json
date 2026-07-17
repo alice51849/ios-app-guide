@@ -2,7 +2,7 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.1.0",
   "date_modified": "2026-07-17",
-  "content_digest": "3c3a1ff4e3c06adf0e7459b4ca1df042800d6c0346024f1286734dc4cc22c7a3",
+  "content_digest": "b26a6a616fbb32611e60f59a79198da069fac002c4e1b10d1488106434f8e343",
   "locale": "ca",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -12,17 +12,19 @@
       "key": "aim990",
       "app_store_id": "6784974530",
       "name": "Aim990",
-      "summary": "Unlock your potential with Aim990, the ultimate TOEIC(R) Listening & Reading test preparation app. Designed for learners aiming for a top score of 990",
+      "summary": "Prepara el TOEIC amb un pla diari de Listening i Reading, exercicis centrats en els punts febles i seguiment del progrés durant 30 dies.",
       "category": "education",
       "search_terms": [
         "TOEIC",
-        "test prep",
-        "English exam",
-        "study coach",
-        "listening practice",
-        "reading practice",
-        "score tracker",
-        "weak-spot drills"
+        "preparació TOEIC",
+        "examen d'anglès",
+        "pla d'estudi",
+        "comprensió oral",
+        "comprensió lectora",
+        "gramàtica anglesa",
+        "vocabulari anglès",
+        "simulacre d'examen",
+        "seguiment del progrés"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -42,8 +44,8 @@
     {
       "key": "cvdesk",
       "app_store_id": "6781337213",
-      "name": "CV Desk",
-      "summary": "Crea un CV preparat per a ATS que els sistemes de selecció puguin llegir de veritat, directament al teu iPhone. Sense compte, sense pujades i sense",
+      "name": "CV Desk: CV ATS",
+      "summary": "Crea un CV preparat per a ATS que els sistemes de selecció puguin llegir de veritat, directament al teu iPhone. Sense compte, sense pujades i sense subscripció.",
       "category": "productivity",
       "search_terms": [
         "cv",
@@ -92,8 +94,8 @@
     {
       "key": "cyca",
       "app_store_id": "6782251621",
-      "name": "Cyca",
-      "summary": "Cyca és una manera càlida i privada d'entendre el teu cicle. Registra la regla, el flux, símptomes, estat d'ànim i notes en segons, i mira la propera",
+      "name": "Cyca: Calendari Menstrual",
+      "summary": "Cyca és una manera càlida i privada d'entendre el teu cicle. Registra la regla, el flux, símptomes, estat d'ànim i notes en segons, i mira la propera menstruació, la finestra fèrtil i l'ovulació en un calendari tranquil.",
       "category": "health",
       "search_terms": [
         "calendari menstrual",
@@ -145,7 +147,7 @@
       "key": "gmoney",
       "app_store_id": "6755782939",
       "name": "G+Money",
-      "summary": "G+Money fa que controlar les despeses quotidianes sigui senzill i sense càrrega. Registra què gastes, organitza-ho per categoria, viatge o esdeveniment",
+      "summary": "G+Money fa que controlar les despeses quotidianes sigui senzill i sense càrrega. Registra què gastes, organitza-ho per categoria, viatge o esdeveniment, i veu de seguida cap on van els diners.",
       "category": "finance",
       "search_terms": [
         "despeses",
@@ -194,7 +196,7 @@
     {
       "key": "hourstag",
       "app_store_id": "6754218117",
-      "name": "HoursTag",
+      "name": "HoursTag: Hores per comprar",
       "summary": "Quant costa de debò? No en euros, sinó en hores de la teva vida.",
       "category": "finance",
       "search_terms": [
@@ -249,7 +251,7 @@
       "key": "lockhour",
       "app_store_id": "6780107485",
       "name": "LockHour Pro",
-      "summary": "Protegeix les hores en què avances de veritat. LockHour Pro t’ajuda a començar sessions de focus tranquil·les, reduir les distraccions del mòbil i",
+      "summary": "Protegeix les hores en què avances de veritat. LockHour Pro t’ajuda a començar sessions de focus tranquil·les, reduir les distraccions del mòbil i construir hàbits productius sense complicacions. Ideal per estudiar, escriure, planificar i treballar a fons.",
       "category": "productivity",
       "search_terms": [
         "bloqueig d'aplicacions",
@@ -294,7 +296,7 @@
       "key": "lumibopomofo",
       "app_store_id": "6773017109",
       "name": "Lumi Bopomofo",
-      "summary": "Una primera passa dolça cap als sons del xinès mandarí.",
+      "summary": "Una primera passa dolça cap als sons del xinès mandarí. Lumi Bopomofo converteix el Zhuyin, el sistema fonètic del mandarí, en un joc encantador de planetes per a infants de 3 a 6 anys. Les activitats breus ajuden a reconèixer símbols, sons i combinacions.",
       "category": "kids",
       "search_terms": [
         "zhuyin",
@@ -340,8 +342,8 @@
     {
       "key": "lumibopomofopro",
       "app_store_id": "6775773117",
-      "name": "Lumi Bopomofo Pro",
-      "summary": "Una primera passa dolça cap als sons del xinès mandarí.",
+      "name": "Lumi Bopomofo Pro: Zhuyin",
+      "summary": "Una primera passa dolça cap als sons del xinès mandarí. Lumi Bopomofo Pro converteix el Zhuyin, el sistema fonètic del mandarí, en un joc encantador de planetes per a infants de 3 a 6 anys. Les activitats breus ajuden a reconèixer símbols, sons i combinacions.",
       "category": "kids",
       "search_terms": [
         "zhuyin",
@@ -387,8 +389,8 @@
     {
       "key": "lumiletters",
       "app_store_id": "6778748533",
-      "name": "Lumi Letters",
-      "summary": "Una manera dolça de descobrir l’ABC en anglès. Lumi Letters Lite acompanya infants de 3 a 6 anys amb planetes adorables, joc tranquil i sons clars, ideal",
+      "name": "Lumi Letters Lite: ABC Kids",
+      "summary": "Una manera dolça de descobrir l’ABC en anglès. Lumi Letters Lite acompanya infants de 3 a 6 anys amb planetes adorables, joc tranquil i sons clars, ideal per a educació infantil i aprendre en família.",
       "category": "kids",
       "search_terms": [
         "abc",
@@ -436,8 +438,8 @@
     {
       "key": "lumiletterspro",
       "app_store_id": "6778491147",
-      "name": "Lumi Letters Pro",
-      "summary": "Una manera dolça de descobrir l’ABC en anglès. Lumi Letters Pro acompanya infants de 3 a 6 anys amb planetes adorables, joc tranquil i sons clars, ideal",
+      "name": "Lumi Letters Pro: ABC Phonics",
+      "summary": "Una manera dolça de descobrir l’ABC en anglès. Lumi Letters Pro acompanya infants de 3 a 6 anys amb planetes adorables, joc tranquil i sons clars, ideal per a educació infantil i aprendre en família.",
       "category": "kids",
       "search_terms": [
         "abc",
@@ -485,8 +487,8 @@
     {
       "key": "lumimath",
       "app_store_id": "6778269699",
-      "name": "Lumi Math Planet",
-      "summary": "Lumi Math Planet converteix les primeres matemàtiques en una aventura espacial per a infants de 3 a 6 anys. Compten, comparen, sumen i resolen petits",
+      "name": "Lumi Math Planet: Explorer",
+      "summary": "Lumi Math Planet converteix les primeres matemàtiques en una aventura espacial per a infants de 3 a 6 anys. Compten, comparen, sumen i resolen petits reptes de lògica mentre il·luminen planetes adorables.",
       "category": "kids",
       "search_terms": [
         "matemàtiques nens",
@@ -572,8 +574,8 @@
     {
       "key": "lumimathpro",
       "app_store_id": "6776958488",
-      "name": "Lumi Math Pro",
-      "summary": "Converteix el pensament matemàtic en una aventura espacial que ve de gust repetir. Lumi Math Pro ajuda infants de 3 a 6 anys a practicar comptar, sentit",
+      "name": "Lumi Math Pro: Números nens",
+      "summary": "Converteix el pensament matemàtic en una aventura espacial que ve de gust repetir. Lumi Math Pro ajuda infants de 3 a 6 anys a practicar comptar, sentit numèric, sumes, patrons, formes i lògica amb reptes curts i visuals.",
       "category": "kids",
       "search_terms": [
         "càlcul mental",
@@ -628,7 +630,7 @@
       "key": "lumimission",
       "app_store_id": "6779750237",
       "name": "Lumi Mission Planet",
-      "summary": "Converteix els hàbits diaris en petites victòries tranquil·les.",
+      "summary": "Converteix els hàbits diaris en petites victòries tranquil·les. Lumi Mission Planet ajuda infants de 3 a 6 anys a rentar-se les dents, vestir-se, endreçar joguines, preparar l’hora d’anar a dormir i col·laborar a casa. Les estrelles celebren l’esforç sense anuncis, presses ni pressió.",
       "category": "kids",
       "search_terms": [
         "taula de recompenses",
@@ -681,7 +683,7 @@
       "key": "lumimissionpro",
       "app_store_id": "6779745474",
       "name": "Lumi Mission Planet Pro",
-      "summary": "Converteix els hàbits diaris en petites victòries tranquil·les.",
+      "summary": "Converteix els hàbits diaris en petites victòries tranquil·les. Lumi Mission Planet ajuda infants de 3 a 6 anys a rentar-se les dents, vestir-se, endreçar joguines, preparar l’hora d’anar a dormir i col·laborar a casa. Les estrelles celebren l’esforç sense anuncis, presses ni pressió.",
       "category": "kids",
       "search_terms": [
         "rutina infantil",
@@ -731,7 +733,7 @@
     {
       "key": "tripplanet",
       "app_store_id": "6787193643",
-      "name": "Lumi Trip Planet",
+      "name": "Lumi Trip Planet: Viatges",
       "summary": "Converteix cada viatge familiar en una petita aventura espacial.",
       "category": "kids",
       "search_terms": [
@@ -761,7 +763,7 @@
     {
       "key": "lumiweather",
       "app_store_id": "6779552704",
-      "name": "Lumi Weather",
+      "name": "Lumi Weather: Família",
       "summary": "Abans de sortir amb un infant, Lumi Weather et dona una resposta clara i amable: avui és bon dia per jugar fora?",
       "category": "kids",
       "search_terms": [
@@ -824,8 +826,8 @@
     {
       "key": "mochi",
       "app_store_id": "6785004775",
-      "name": "Mochi",
-      "summary": "Mochi converteix la teva llista de tasques en un racó bonic, tranquil i fàcil d’estimar. Escriu el que vols fer, toca el petit cercle quan ho acabis i sent",
+      "name": "Mochi: Llista bonica",
+      "summary": "Mochi converteix la teva llista de tasques en un racó bonic, tranquil i fàcil d’estimar. Escriu el que vols fer, toca el petit cercle quan ho acabis i sent la satisfacció d’avançar sense estrès.",
       "category": "productivity",
       "search_terms": [
         "tasques",
@@ -859,8 +861,8 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream",
-      "summary": "PhotoCream Pro converteix el teu iPhone o iPad en una càmera de pel·lícula càlida i un editor de fotos elegant. Captura tons retro amb més de 100 filtres",
+      "name": "PhotoCream Pro",
+      "summary": "PhotoCream Pro converteix el teu iPhone o iPad en una càmera de pel·lícula càlida i un editor de fotos elegant. Captura tons retro amb més de 100 filtres analògics, gra realista i fuites de llum, o retoca selfies amb un acabat suau i natural.",
       "category": "photo-utility",
       "search_terms": [
         "càmera analògica",
@@ -908,7 +910,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear",
+      "name": "PicClear Pro",
       "summary": "Recupera gigabytes d’espai eliminant el que ja no necessites de la fototeca: duplicats, captures antigues, fotos borroses i vídeos grans.",
       "category": "photo-utility",
       "search_terms": [
@@ -964,7 +966,7 @@
     {
       "key": "scanto",
       "app_store_id": "6779977651",
-      "name": "ScanTo Pro",
+      "name": "ScanTo Pro: PDF i OCR",
       "summary": "L’escàner que ho fa tot al teu dispositiu, inclòs llegir el text dels documents, sense pujar res enlloc.",
       "category": "productivity",
       "search_terms": [
@@ -1000,8 +1002,8 @@
     {
       "key": "sereno",
       "app_store_id": "6788236641",
-      "name": "Sereno",
-      "summary": "Sereno converteix el teu telèfon en una màquina de so d'alta gamma per dormir, concentrar-se i calmar-se. Dotzenes de sons ajustats a mà es generen en",
+      "name": "Sereno: Sons per Dormir",
+      "summary": "Sereno converteix el teu telèfon en una màquina de so d'alta gamma per dormir, concentrar-se i calmar-se. Dotzenes de sons ajustats a mà es generen en directe al teu dispositiu i es barregen en més de 1000 paisatges sonors únics — així que la pluja mai es repeteix i l'oceà mai es repeteix, només una barreja suau i infinita que et porta durant la nit.",
       "category": "sleep-sound",
       "search_terms": [
         "soroll blanc",
@@ -1034,8 +1036,8 @@
     {
       "key": "snapport",
       "app_store_id": "6780575828",
-      "name": "Snapport",
-      "summary": "Crea fotos de passaport, visat i documents d'identitat a casa, amb calma i privadesa. Snapport ofereix plantilles de mides habituals, guies d'alineació del",
+      "name": "Snapport: Fotos Passaport",
+      "summary": "Crea fotos de passaport, visat i documents d'identitat a casa, amb calma i privadesa. Snapport ofereix plantilles de mides habituals, guies d'alineació del rostre, eines de fons i fulls preparats per imprimir, tot processat directament al teu iPhone.",
       "category": "photo-utility",
       "search_terms": [
         "foto carnet",
@@ -1139,7 +1141,7 @@
     {
       "key": "tripbee",
       "app_store_id": "6787754435",
-      "name": "TripBee Pro: Trip Planner",
+      "name": "TripBee: Planifica Viatges",
       "summary": "Planifica tots els teus viatges en una app bonica, privada i sense connexió.",
       "category": "travel",
       "search_terms": [
@@ -1174,7 +1176,7 @@
     {
       "key": "unblurry",
       "app_store_id": "6782275018",
-      "name": "Unblurry",
+      "name": "Unblurry Pro: Foto nítida",
       "summary": "Foto borrosa? Fes-la clara i nítida.",
       "category": "photo-utility",
       "search_terms": [
@@ -1232,8 +1234,8 @@
     {
       "key": "wordmate",
       "app_store_id": "6789917808",
-      "name": "Wordmate: Learn 44 Languages",
-      "summary": "Wordmate és una aplicació completa de pagament que compres directament quan la descarregues. Pagues una sola vegada i tens tota l’aplicació: 44 llengües",
+      "name": "Wordmate: Aprèn vocabulari",
+      "summary": "Wordmate és una aplicació completa de pagament que compres directament quan la descarregues. Pagues una sola vegada i tens tota l’aplicació: 44 llengües, tots els nivells d’aprenentatge, el giny interactiu i l’experiència de l’Apple Watch. No hi ha cap subscripció, pagament addicional dins l’app, ampliació de pagament ni contingut que s’hagi de comprar a part.",
       "category": "education",
       "search_terms": [
         "anglès",

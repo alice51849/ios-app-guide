@@ -2,7 +2,7 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.1.0",
   "date_modified": "2026-07-17",
-  "content_digest": "3c3a1ff4e3c06adf0e7459b4ca1df042800d6c0346024f1286734dc4cc22c7a3",
+  "content_digest": "b26a6a616fbb32611e60f59a79198da069fac002c4e1b10d1488106434f8e343",
   "locale": "he",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -11,7 +11,7 @@
     {
       "key": "aim990",
       "app_store_id": "6784974530",
-      "name": "Aim990",
+      "name": "Aim990 - הכנה ל-TOEIC",
       "summary": "האם אתה שואף לציון המושלם של 990 ב-TOEIC? עם Aim990, תוכל להשיג את המטרה שלך תוך 30 ימים בלבד!",
       "category": "education",
       "search_terms": [
@@ -44,7 +44,7 @@
     {
       "key": "cvdesk",
       "app_store_id": "6781337213",
-      "name": "CV Desk",
+      "name": "CV Desk: קורות חיים ATS",
       "summary": "צרו קורות חיים מוכנים ל-ATS שמערכות גיוס באמת יכולות לקרוא — כולו על ה-iPhone. בלי חשבון, בלי העלאות ובלי מנוי.",
       "category": "productivity",
       "search_terms": [
@@ -94,8 +94,8 @@
     {
       "key": "cyca",
       "app_store_id": "6782251621",
-      "name": "Cyca",
-      "summary": "Cyca היא דרך רגועה ופרטית להבין את המחזור שלך. רשמי וסת, עוצמת דימום, תסמינים, מצב רוח והערות בתוך שניות, וצפי בווסת הבאה, חלון הפוריות והביוץ בלוח שנה",
+      "name": "Cyca: מעקב מחזור",
+      "summary": "Cyca היא דרך רגועה ופרטית להבין את המחזור שלך. רשמי וסת, עוצמת דימום, תסמינים, מצב רוח והערות בתוך שניות, וצפי בווסת הבאה, חלון הפוריות והביוץ בלוח שנה נעים וברור.",
       "category": "health",
       "search_terms": [
         "מעקב מחזור",
@@ -196,7 +196,7 @@
     {
       "key": "hourstag",
       "app_store_id": "6754218117",
-      "name": "HoursTag",
+      "name": "HoursTag: שעות לקנייה",
       "summary": "כמה זה באמת עולה? לא רק בשקלים — אלא בשעות מהחיים שלך.",
       "category": "finance",
       "search_terms": [
@@ -301,7 +301,7 @@
       "key": "lumibopomofo",
       "app_store_id": "6773017109",
       "name": "Lumi Bopomofo",
-      "summary": "צעד ראשון משחקי אל תוך צלילי המנדרינית הסינית.",
+      "summary": "צעד ראשון משחקי אל תוך צלילי המנדרינית הסינית. Lumi Bopomofo הופכת את Zhuyin, שיטת הכתב הפונטי למנדרינית, למשחק מקסים בנושא כוכבים לילדים בגילי 3–6. פעילויות קצרות עוזרות ללומדים הצעירים לזהות סמלים, צלילים וצירופים בביטחון.",
       "category": "kids",
       "search_terms": [
         "zhuyin",
@@ -349,7 +349,7 @@
     {
       "key": "lumibopomofopro",
       "app_store_id": "6775773117",
-      "name": "Lumi Bopomofo Pro",
+      "name": "Lumi Bopomofo Pro: Zhuyin",
       "summary": "הרפתקת Zhuyin חמודה לילדים בני 3–7. Lumi Bopomofo Pro מלמד את 37 סימני Bopomofo דרך האזנה, התאמה, צלילים, טונים וכתיבה באצבע.",
       "category": "kids",
       "search_terms": [
@@ -396,7 +396,7 @@
     {
       "key": "lumiletters",
       "app_store_id": "6778748533",
-      "name": "Lumi Letters",
+      "name": "Lumi Letters Lite: ABC",
       "summary": "צעד ראשון ועדין אל האלפבית האנגלי. Lumi Letters Lite עוזרת לילדים בגילי 3–6 ללמוד עם כוכבים חמודים, משחק רגוע ותרגול אותיות ברור — לגן וללמידה בבית.",
       "category": "kids",
       "search_terms": [
@@ -444,7 +444,7 @@
     {
       "key": "lumiletterspro",
       "app_store_id": "6778491147",
-      "name": "Lumi Letters Pro",
+      "name": "Lumi Letters Pro: ABC Phonics",
       "summary": "מסע ABC עדין לילדים בני 3–6. Lumi Letters Pro מלמד שמות אותיות, צלילים, כתיבה באצבע ותרגילי פוניקס דרך כוכבים חמודים וקצב רגוע.",
       "category": "kids",
       "search_terms": [
@@ -493,7 +493,7 @@
     {
       "key": "lumimath",
       "app_store_id": "6778269699",
-      "name": "Lumi Math Planet",
+      "name": "Lumi Math Planet: Explorer",
       "summary": "Lumi Math Planet הופך חשבון מוקדם להרפתקת חלל חמימה לגילאי 3–6. הילדים סופרים, משווים, מחברים ופותרים חידות היגיון בזמן שכוכבי לכת חמודים נדלקים.",
       "category": "kids",
       "search_terms": [
@@ -579,7 +579,7 @@
     {
       "key": "lumimathpro",
       "app_store_id": "6776958488",
-      "name": "Lumi Math Pro",
+      "name": "Lumi Math Pro: מספרים",
       "summary": "הפכו חשיבה מתמטית להרפתקת חלל נעימה לילדים. Lumi Math Pro עוזר לבני 3–6 לתרגל ספירה, תחושת מספר, חיבור, תבניות, צורות והיגיון במשימות קצרות וברורות.",
       "category": "kids",
       "search_terms": [
@@ -638,7 +638,7 @@
       "key": "lumimission",
       "app_store_id": "6779750237",
       "name": "Lumi Mission Planet",
-      "summary": "הפכו את שגרת היום לניצחונות קטנים ושמחים. Lumi Mission Planet עוזר לילדים בני 3–7 לצחצח שיניים, לאכול, לסדר צעצועים, להתכונן לשינה ולגן דרך משימות חלל",
+      "summary": "הפכו את שגרת היום לניצחונות קטנים ושמחים. Lumi Mission Planet עוזר לילדים בני 3–7 לצחצח שיניים, לאכול, לסדר צעצועים, להתכונן לשינה ולגן דרך משימות חלל עדינות.",
       "category": "kids",
       "search_terms": [
         "reward chart",
@@ -702,7 +702,7 @@
       "key": "lumimissionpro",
       "app_store_id": "6779745474",
       "name": "Lumi Mission Planet Pro",
-      "summary": "הפכו את שגרת היום לניצחונות קטנים ושמחים. Lumi Mission Planet עוזר לילדים בני 3–7 לצחצח שיניים, לאכול, לסדר צעצועים, להתכונן לשינה ולגן דרך משימות חלל",
+      "summary": "הפכו את שגרת היום לניצחונות קטנים ושמחים. Lumi Mission Planet עוזר לילדים בני 3–7 לצחצח שיניים, לאכול, לסדר צעצועים, להתכונן לשינה ולגן דרך משימות חלל עדינות.",
       "category": "kids",
       "search_terms": [
         "שגרת ילדים",
@@ -762,7 +762,7 @@
     {
       "key": "tripplanet",
       "app_store_id": "6787193643",
-      "name": "Lumi Trip Planet",
+      "name": "Lumi Trip Planet: טיולים",
       "summary": "הפכו כל טיול משפחתי להרפתקה קטנטנה בחלל.",
       "category": "kids",
       "search_terms": [
@@ -795,7 +795,7 @@
     {
       "key": "lumiweather",
       "app_store_id": "6779552704",
-      "name": "Lumi Weather",
+      "name": "Lumi Weather: מזג אוויר",
       "summary": "לפני שיוצאים עם ילד קטן, Lumi Weather נותן תשובה פשוטה ונעימה: האם היום מתאים למשחק בחוץ?",
       "category": "kids",
       "search_terms": [
@@ -857,7 +857,7 @@
     {
       "key": "mochi",
       "app_store_id": "6785004775",
-      "name": "Mochi",
+      "name": "Mochi: רשימת משימות חמודה",
       "summary": "Mochi הופכת את רשימת המשימות שלך למקום חמוד, נעים ומרגיע. כותבים מה צריך לעשות, מקישים על העיגול הקטן כשמסיימים, ומרגישים איך היום נהיה ברור ומסודר יותר.",
       "category": "productivity",
       "search_terms": [
@@ -895,8 +895,8 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream",
-      "summary": "PhotoCream Pro הופך את ה-iPhone או ה-iPad למצלמת פילם חמימה ולעורך תמונות אלגנטי. צלמו מראה רטרו עם יותר מ-100 פילטרים אנלוגיים, גרעיניות עדינה ודליפות אור",
+      "name": "PhotoCream Pro",
+      "summary": "PhotoCream Pro הופך את ה-iPhone או ה-iPad למצלמת פילם חמימה ולעורך תמונות אלגנטי. צלמו מראה רטרו עם יותר מ-100 פילטרים אנלוגיים, גרעיניות עדינה ודליפות אור, ואז עדנו סלפי במראה טבעי.",
       "category": "photo-utility",
       "search_terms": [
         "עריכת תמונות",
@@ -950,7 +950,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear",
+      "name": "PicClear Pro",
       "summary": "פנו ג׳יגות של אחסון על ידי הסרת תמונות שכבר אינכם צריכים: כפילויות, צילומי מסך ישנים, תמונות מטושטשות וסרטונים גדולים.",
       "category": "photo-utility",
       "search_terms": [
@@ -1008,7 +1008,7 @@
     {
       "key": "scanto",
       "app_store_id": "6779977651",
-      "name": "ScanTo Pro",
+      "name": "ScanTo Pro: PDF ו-OCR",
       "summary": "סורק מסמכים שעושה הכול במכשיר שלך — כולל זיהוי טקסט.",
       "category": "productivity",
       "search_terms": [
@@ -1047,8 +1047,8 @@
     {
       "key": "sereno",
       "app_store_id": "6788236641",
-      "name": "Sereno",
-      "summary": "Sereno הופך את הטלפון שלך למכונת צלילים יוקרתית לשינה, ריכוז ורוגע. עשרות צלילים מכוונים ביד נוצרים בזמן אמת על המכשיר שלך ומתמזגים ליותר מ-1000 נופים",
+      "name": "Sereno: צלילי שינה",
+      "summary": "Sereno הופך את הטלפון שלך למכונת צלילים יוקרתית לשינה, ריכוז ורוגע. עשרות צלילים מכוונים ביד נוצרים בזמן אמת על המכשיר שלך ומתמזגים ליותר מ-1000 נופים קוליים ייחודיים — כך שהגשם לעולם לא חוזר על עצמו והאוקיינוס לעולם לא חוזר, רק תערובת עדינה אינסופית שמלווה אותך לאורך הלילה.",
       "category": "sleep-sound",
       "search_terms": [
         "צלילי שינה",
@@ -1081,8 +1081,8 @@
     {
       "key": "snapport",
       "app_store_id": "6780575828",
-      "name": "Snapport",
-      "summary": "צרו בבית תמונות לדרכון, ויזה ותעודות זהות בצורה רגועה ופרטית. Snapport מציעה תבניות לגדלים נפוצים, מדריכי יישור לפנים, כלי רקע ופריסות מוכנות להדפסה — הכול",
+      "name": "Snapport: תמונות פספורט",
+      "summary": "צרו בבית תמונות לדרכון, ויזה ותעודות זהות בצורה רגועה ופרטית. Snapport מציעה תבניות לגדלים נפוצים, מדריכי יישור לפנים, כלי רקע ופריסות מוכנות להדפסה — הכול בעיבוד ישיר על ה‑iPhone שלכם.",
       "category": "photo-utility",
       "search_terms": [
         "תמונת פספורט",
@@ -1187,7 +1187,7 @@
     {
       "key": "tripbee",
       "app_store_id": "6787754435",
-      "name": "TripBee Pro: Trip Planner",
+      "name": "TripBee: מתכנן טיולים",
       "summary": "תכננו כל טיול באפליקציה אחת יפה, פרטית ושעובדת גם ללא אינטרנט.",
       "category": "travel",
       "search_terms": [
@@ -1226,7 +1226,7 @@
     {
       "key": "unblurry",
       "app_store_id": "6782275018",
-      "name": "Unblurry",
+      "name": "Unblurry Pro: תמונות חדות",
       "summary": "תמונה מטושטשת? הפכו אותה לחדה וברורה.",
       "category": "photo-utility",
       "search_terms": [
@@ -1288,8 +1288,8 @@
     {
       "key": "wordmate",
       "app_store_id": "6789917808",
-      "name": "Wordmate: Learn 44 Languages",
-      "summary": "Wordmate היא אפליקציה מלאה בתשלום שקונים ישירות בעת ההורדה. משלמים פעם אחת ומקבלים את כל האפליקציה: 44 שפות, כל רמות הלימוד, הווידג׳ט האינטראקטיבי",
+      "name": "Wordmate: לימוד אוצר מילים",
+      "summary": "Wordmate היא אפליקציה מלאה בתשלום שקונים ישירות בעת ההורדה. משלמים פעם אחת ומקבלים את כל האפליקציה: 44 שפות, כל רמות הלימוד, הווידג׳ט האינטראקטיבי ו־Apple Watch. אין מנוי, אין תשלום נוסף בתוך האפליקציה, אין שדרוג בתשלום ואין תוכן שצריך לרכוש בנפרד.",
       "category": "education",
       "search_terms": [
         "אנגלית",

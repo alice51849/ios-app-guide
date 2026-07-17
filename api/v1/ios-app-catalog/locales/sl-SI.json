@@ -2,7 +2,7 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.1.0",
   "date_modified": "2026-07-17",
-  "content_digest": "3c3a1ff4e3c06adf0e7459b4ca1df042800d6c0346024f1286734dc4cc22c7a3",
+  "content_digest": "b26a6a616fbb32611e60f59a79198da069fac002c4e1b10d1488106434f8e343",
   "locale": "sl-SI",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -12,7 +12,7 @@
       "key": "aim990",
       "app_store_id": "6784974530",
       "name": "Aim990",
-      "summary": "Želite doseči vrhunski rezultat na TOEIC izpitu? Z aplikacijo Aim990 vam nudimo celovit 30-dnevni učni načrt, ki vam bo pomagal do ciljnega rezultata",
+      "summary": "Želite doseči vrhunski rezultat na TOEIC izpitu? Z aplikacijo Aim990 vam nudimo celovit 30-dnevni učni načrt, ki vam bo pomagal do ciljnega rezultata 990. Naša aplikacija je zasnovana za izboljšanje vaših sposobnosti poslušanja in branja s prilagojenimi dnevnimi nalogami, ki zajemajo vse ključne vidike izpita.",
       "category": "education",
       "search_terms": [
         "TOEIC",
@@ -43,8 +43,8 @@
     {
       "key": "cvdesk",
       "app_store_id": "6781337213",
-      "name": "CV Desk",
-      "summary": "Ustvarite ATS-prijazen življenjepis, ki ga bodo sistemi delodajalcev resnično prebrali — vse na vašem iPhone-u. Brez računa. Brez nalaganja. Brez naročnine",
+      "name": "CV Desk: ATS Življenjepis",
+      "summary": "Ustvarite ATS-prijazen življenjepis, ki ga bodo sistemi delodajalcev resnično prebrali — vse na vašem iPhone-u. Brez računa. Brez nalaganja. Brez naročnine.",
       "category": "productivity",
       "search_terms": [
         "cv",
@@ -94,7 +94,7 @@
     {
       "key": "cyca",
       "app_store_id": "6782251621",
-      "name": "Cyca",
+      "name": "Cyca: Sledilnik cikla",
       "summary": "Spoznajte Cyca — prijazen, zaseben način za razumevanje vašega cikla.",
       "category": "health",
       "search_terms": [
@@ -148,7 +148,7 @@
       "key": "gmoney",
       "app_store_id": "6755782939",
       "name": "G+Money",
-      "summary": "G+Money združuje dva nepogrešljiva orodja — izjemno hiter pretvornik valut in čudovit sledilec stroškov — zasnovan za vsakdan in potovanja. Popolnoma",
+      "summary": "G+Money združuje dva nepogrešljiva orodja — izjemno hiter pretvornik valut in čudovit sledilec stroškov — zasnovan za vsakdan in potovanja. Popolnoma brez povezave. Popolnoma zasebno.",
       "category": "finance",
       "search_terms": [
         "stroški",
@@ -199,7 +199,7 @@
     {
       "key": "hourstag",
       "app_store_id": "6754218117",
-      "name": "HoursTag",
+      "name": "HoursTag: Cena v Urah",
       "summary": "Kaj te resnično stane? Ne v evrih — v urah tvojega življenja.",
       "category": "finance",
       "search_terms": [
@@ -357,7 +357,7 @@
     {
       "key": "lumibopomofopro",
       "app_store_id": "6775773117",
-      "name": "Lumi Bopomofo Pro",
+      "name": "Lumi Bopomofo Pro: Zhuyin",
       "summary": "Pomagajte svojemu otroku vzljubiti kitajsko fonetiko skozi čudovito vesoljsko pustolovščino.",
       "category": "kids",
       "search_terms": [
@@ -406,8 +406,8 @@
     {
       "key": "lumiletters",
       "app_store_id": "6778748533",
-      "name": "Lumi Letters",
-      "summary": "Prenesite brezplačno, igrajte najprej in odklenite le, če bo vašemu otroku všeč.",
+      "name": "Lumi Letters Lite: ABC Otroci",
+      "summary": "Prenesite brezplačno, igrajte najprej in odklenite le, če bo vašemu otroku všeč. Lumi Letters Lite spremeni abecedo v sanjsko zvezdno pustolovščino. Vaš otrok ne sedi pri pouku, temveč igra igro, ki je ne bo želel odložiti. Osvetljuje planete, sledi čudovitim črkam, posluša zvoke in zbira šestindvajset ljubkih črkovnih prijateljev. Vsak zaslon, vsak glas in vsaka melodija so skrbno oblikovani za otroke od treh do sedmih let.",
       "category": "kids",
       "search_terms": [
         "abc",
@@ -457,8 +457,8 @@
     {
       "key": "lumiletterspro",
       "app_store_id": "6778491147",
-      "name": "Lumi Letters Pro",
-      "summary": "Dobrodošli v Lumi Črkah",
+      "name": "Lumi Črke Pro: ABC Fonika",
+      "summary": "Dobrodošli v Lumi Črkah V čarobnem gozdu se otroci pridružijo medvedu Lumiju, da osvojijo vseh 26 črk od \"Poznam\" do \"Znam prebrati, pisati in izgovoriti.\" To ni še ena aplikacija s karticami. To je celovito potovanje skozi foniko, skrbno zasnovano, da mladim učencem ponudi veščine dekodiranja, ki trajajo vse življenje.",
       "category": "kids",
       "search_terms": [
         "abc",
@@ -506,7 +506,7 @@
     {
       "key": "lumimath",
       "app_store_id": "6778269699",
-      "name": "Lumi Math Planet",
+      "name": "Lumi Math Planet: Raziskovalec",
       "summary": "Nekatere aplikacije učijo matematiko. Ta jo otroku priraste k srcu.",
       "category": "kids",
       "search_terms": [
@@ -588,7 +588,7 @@
     {
       "key": "lumimathpro",
       "app_store_id": "6776958488",
-      "name": "Lumi Math Pro",
+      "name": "Lumi Math Pro: Otroška Matemat",
       "summary": "Spremenite resno matematično razmišljanje v vesoljsko pustolovščino, ki je otroci ne bodo mogli odložiti.",
       "category": "kids",
       "search_terms": [
@@ -641,7 +641,7 @@
     {
       "key": "lumimission",
       "app_store_id": "6779750237",
-      "name": "Lumi Mission Planet",
+      "name": "Lumi Misija Planet: Rutine",
       "summary": "Vsakodnevne bitke za umivanje zob, pospravljanje igrač ali dokončanje obrokov so preteklost.",
       "category": "kids",
       "search_terms": [
@@ -697,7 +697,7 @@
     {
       "key": "lumimissionpro",
       "app_store_id": "6779745474",
-      "name": "Lumi Mission Planet Pro",
+      "name": "Lumi Misija Planet Pro",
       "summary": "Pripraviti majhnega otroka do umivanja zob, dokončanja obrokov ali pospravljanja igrač ne sme biti vsakodnevni boj.",
       "category": "kids",
       "search_terms": [
@@ -750,7 +750,7 @@
     {
       "key": "tripplanet",
       "app_store_id": "6787193643",
-      "name": "Lumi Trip Planet",
+      "name": "Lumi Trip Planet: World Travel",
       "summary": "Spremenite vsako družinsko potovanje v majhno vesoljsko avanturo.",
       "category": "kids",
       "search_terms": [
@@ -780,7 +780,7 @@
     {
       "key": "lumiweather",
       "app_store_id": "6779552704",
-      "name": "Lumi Weather",
+      "name": "Lumi Vreme: Družinska napoved",
       "summary": "Vsako jutro se vprašate: je prehladno, prevroče ali premokro za vašega malčka?",
       "category": "kids",
       "search_terms": [
@@ -837,8 +837,8 @@
     {
       "key": "mochi",
       "app_store_id": "6785004775",
-      "name": "Mochi",
-      "summary": "Mochi spremeni seznam opravil v ljubek, miren in prijeten prostor za vsak dan. Zapiši naloge, tapni mali krog, ko so končane, in uživaj v občutku, da se",
+      "name": "Mochi: Ljubek seznam",
+      "summary": "Mochi spremeni seznam opravil v ljubek, miren in prijeten prostor za vsak dan. Zapiši naloge, tapni mali krog, ko so končane, in uživaj v občutku, da se dan lepo ureja.",
       "category": "productivity",
       "search_terms": [
         "opravila",
@@ -873,8 +873,8 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream",
-      "summary": "PhotoCream Pro spremeni vaš telefon v vrhunski filmski fotoaparat in profesionalni foto studio. Ujemite avtentične analogne videze v realnem času, nato",
+      "name": "PhotoCream Pro",
+      "summary": "PhotoCream Pro spremeni vaš telefon v vrhunski filmski fotoaparat in profesionalni foto studio. Ujemite avtentične analogne videze v realnem času, nato pa natančno prilagodite vsak detajl — vse na napravi, brez naročnine, brez oglasov.",
       "category": "photo-utility",
       "search_terms": [
         "analogni fotoaparat",
@@ -927,7 +927,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear",
+      "name": "PicClear Pro",
       "summary": "Osvobodite gigabajte prostora z brisanjem nepotrebnih slik — duplikatov, posnetkov zaslona, zamegljenih slik in velikih videov.",
       "category": "photo-utility",
       "search_terms": [
@@ -980,7 +980,7 @@
     {
       "key": "scanto",
       "app_store_id": "6779977651",
-      "name": "ScanTo Pro",
+      "name": "ScanTo Pro: PDF skener",
       "summary": "Skenirajte PDF-je in uporabite OCR brez spleta—hitro, zasebno, brez oglasov. Enkraten nakup.",
       "category": "productivity",
       "search_terms": [
@@ -1013,7 +1013,7 @@
     {
       "key": "sereno",
       "app_store_id": "6788236641",
-      "name": "Sereno",
+      "name": "Sereno: Sleep Sounds",
       "summary": "Sereno spremeni tvoj telefon v vrhunski zvočni stroj za spanje, zbranost in umirjenost.",
       "category": "sleep-sound",
       "search_terms": [
@@ -1047,8 +1047,8 @@
     {
       "key": "snapport",
       "app_store_id": "6780575828",
-      "name": "Snapport",
-      "summary": "Ustvarite fotografije za potni list, vizum in osebne dokumente kar doma — mirno in zasebno. Snapport vam ponuja predloge običajnih velikosti, vodila za",
+      "name": "Snapport: Foto za dokumente",
+      "summary": "Ustvarite fotografije za potni list, vizum in osebne dokumente kar doma — mirno in zasebno. Snapport vam ponuja predloge običajnih velikosti, vodila za poravnavo obraza, orodja za ozadje in postavitve za tisk, vse obdelano neposredno na vašem iPhonu.",
       "category": "photo-utility",
       "search_terms": [
         "slika za potni list",
@@ -1151,7 +1151,7 @@
     {
       "key": "tripbee",
       "app_store_id": "6787754435",
-      "name": "TripBee Pro: Trip Planner",
+      "name": "TripBee: Načrtovalec poti",
       "summary": "Načrtujte vsako potovanje v eni čudoviti, zasebni aplikaciji brez povezave.",
       "category": "travel",
       "search_terms": [
@@ -1186,7 +1186,7 @@
     {
       "key": "unblurry",
       "app_store_id": "6782275018",
-      "name": "Unblurry",
+      "name": "Unblurry Pro: Jasna slika",
       "summary": "Zamegljena fotografija? Naredite jo kristalno jasno.",
       "category": "photo-utility",
       "search_terms": [
@@ -1239,8 +1239,8 @@
     {
       "key": "wordmate",
       "app_store_id": "6789917808",
-      "name": "Wordmate: Learn 44 Languages",
-      "summary": "Z aplikacijo Wordmate gradite uporabno besedišče v 44 jezikih. Skozi 14 tem in 84 preglednih enot napredujte od začetne do napredne ravni v svojem ritmu, z",
+      "name": "Wordmate: 44 jezikov",
+      "summary": "Z aplikacijo Wordmate gradite uporabno besedišče v 44 jezikih. Skozi 14 tem in 84 preglednih enot napredujte od začetne do napredne ravni v svojem ritmu, z naravnimi vzorčnimi stavki in izgovorjavo TTS.",
       "category": "education",
       "search_terms": [
         "angleščina",

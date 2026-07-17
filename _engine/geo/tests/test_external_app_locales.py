@@ -127,7 +127,11 @@ class ExternalAppLocaleTests(unittest.TestCase):
                 for locale in all_locales:
                     output = pages.build_one(key, locale, all_locales)
                     content = Path(output).read_text(encoding="utf-8")
-                    localized = localizations[locale]
+                    localized = pages.external_localized_values(
+                        key,
+                        locale,
+                        localizations,
+                    )
                     with self.subTest(key=key, locale=locale):
                         self.assertIn(f'<html lang="{locale}"', content)
                         self.assertIn(

@@ -2,7 +2,7 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.1.0",
   "date_modified": "2026-07-17",
-  "content_digest": "3c3a1ff4e3c06adf0e7459b4ca1df042800d6c0346024f1286734dc4cc22c7a3",
+  "content_digest": "b26a6a616fbb32611e60f59a79198da069fac002c4e1b10d1488106434f8e343",
   "locale": "zh-Hans",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -11,7 +11,7 @@
     {
       "key": "aim990",
       "app_store_id": "6784974530",
-      "name": "Aim990",
+      "name": "Aim990 - 托业备考助手",
       "summary": "准备托业考试从未如此轻松！Aim990为你提供30天的个性化学习计划，专注于提高你的听力和阅读能力，让你朝着990的高分目标迈进。",
       "category": "education",
       "search_terms": [
@@ -43,7 +43,7 @@
     {
       "key": "cvdesk",
       "app_store_id": "6781337213",
-      "name": "CV Desk",
+      "name": "CV Desk ATS 简历制作",
       "summary": "在你的 iPhone 上,做出一份能被企业 ATS 系统正确解析的简历 —— 无需账号、不上传、无订阅。",
       "category": "productivity",
       "search_terms": [
@@ -105,7 +105,7 @@
     {
       "key": "cyca",
       "app_store_id": "6782251621",
-      "name": "Cyca",
+      "name": "Cyca 经期周期追踪・排卵",
       "summary": "认识 Cyca：温柔、私密地理解你的经期与周期。",
       "category": "health",
       "search_terms": [
@@ -219,7 +219,7 @@
     {
       "key": "hourstag",
       "app_store_id": "6754218117",
-      "name": "HoursTag",
+      "name": "HoursTag：价格换工时",
       "summary": "这真正要花你多少？不是多少钱——是你生命中的几个小时。",
       "category": "finance",
       "search_terms": [
@@ -323,8 +323,8 @@
     {
       "key": "lumibopomofo",
       "app_store_id": "6773017109",
-      "name": "Lumi Bopomofo",
-      "summary": "带孩子轻松认识普通话的声音世界。",
+      "name": "Lumi 注音星球",
+      "summary": "带孩子轻松认识普通话的声音世界。 Lumi 注音星球是一款为 3–6 岁幼儿设计的可爱星球主题游戏，通过游戏学习注音符号（ㄅㄆㄇㄈ）以及声母、韵母和组合读音。孩子可以在短小任务中听、看、配对，逐步建立中文语音意识。",
       "category": "kids",
       "search_terms": [
         "注音",
@@ -377,8 +377,8 @@
     {
       "key": "lumibopomofopro",
       "app_store_id": "6775773117",
-      "name": "Lumi Bopomofo Pro",
-      "summary": "带孩子轻松认识普通话的声音世界。",
+      "name": "Lumi Bopomofo Pro: Zhuyin",
+      "summary": "带孩子轻松认识普通话的声音世界。 Lumi 注音星球是一款为 3–6 岁幼儿设计的可爱星球主题游戏，通过游戏学习注音符号（ㄅㄆㄇㄈ）以及声母、韵母和组合读音。孩子可以在短小任务中听、看、配对，逐步建立中文语音意识。",
       "category": "kids",
       "search_terms": [
         "注音",
@@ -439,7 +439,7 @@
     {
       "key": "lumiletters",
       "app_store_id": "6778748533",
-      "name": "Lumi Letters",
+      "name": "Lumi Letters Lite: ABC Kids",
       "summary": "温柔可爱的英语 ABC 启蒙游戏。Lumi Letters Lite 用星球闯关、描写练习和清晰发音，陪伴 3–6 岁孩子轻松认识英文字母，适合学前、幼儿园和亲子共学。",
       "category": "kids",
       "search_terms": [
@@ -506,7 +506,7 @@
     {
       "key": "lumiletterspro",
       "app_store_id": "6778491147",
-      "name": "Lumi Letters Pro",
+      "name": "Lumi Letters Pro: ABC Phonics",
       "summary": "温柔可爱的英语 ABC 启蒙游戏。Lumi Letters Pro 用星球闯关、描写练习和清晰发音，陪伴 3–6 岁孩子轻松认识英文字母，适合学前、幼儿园和亲子共学。",
       "category": "kids",
       "search_terms": [
@@ -573,7 +573,7 @@
     {
       "key": "lumimath",
       "app_store_id": "6778269699",
-      "name": "Lumi Math Planet",
+      "name": "Lumi Math Planet: Explorer",
       "summary": "让 3–6 岁孩子在温暖的星球冒险里爱上数学。Lumi Math Planet 把数数、数感、加法和逻辑题变成会发光的小宇宙，孩子答对一题，星球就更亮一点。",
       "category": "kids",
       "search_terms": [
@@ -666,7 +666,7 @@
     {
       "key": "lumimathpro",
       "app_store_id": "6776958488",
-      "name": "Lumi Math Pro",
+      "name": "Lumi 数学星球：儿童数字",
       "summary": "把高质量数学思维训练，变成孩子愿意反复玩的星球冒险。Lumi Math Pro 适合 3–6 岁孩子，在可爱的太空任务中练习数数、数感、加减、规律、图形与逻辑。",
       "category": "kids",
       "search_terms": [
@@ -740,7 +740,7 @@
       "key": "lumimission",
       "app_store_id": "6779750237",
       "name": "Lumi Mission Planet",
-      "summary": "把每天的小任务变成温柔可爱的成长游戏。",
+      "summary": "把每天的小任务变成温柔可爱的成长游戏。 Lumi Mission Planet 适合 3–6 岁孩子，用星星奖励鼓励刷牙、穿衣、整理玩具、睡前准备和简单家务。节奏平静，不催促、不打扰，让孩子在完成任务时建立自信和责任感。",
       "category": "kids",
       "search_terms": [
         "奖励表",
@@ -811,7 +811,7 @@
       "key": "lumimissionpro",
       "app_store_id": "6779745474",
       "name": "Lumi Mission Planet Pro",
-      "summary": "把每天的小任务变成温柔可爱的成长游戏。",
+      "summary": "把每天的小任务变成温柔可爱的成长游戏。 Lumi Mission Planet 适合 3–6 岁孩子，用星星奖励鼓励刷牙、穿衣、整理玩具、睡前准备和简单家务。节奏平静，不催促、不打扰，让孩子在完成任务时建立自信和责任感。",
       "category": "kids",
       "search_terms": [
         "儿童习惯养成",
@@ -880,8 +880,8 @@
     {
       "key": "tripplanet",
       "app_store_id": "6787193643",
-      "name": "Lumi Trip Planet",
-      "summary": "将每次家庭旅行变成一次小小的太空冒险。",
+      "name": "Lumi Trip Planet 环球旅行",
+      "summary": "Trip Planet 帮助您的家人将旅行时刻变成每个人都可以分享的神奇任务。创建一次旅行，选择智能任务包，然后观看您的旅程就像电影星云中的发光星座一样。每个人都会收到现实世界的小任务，而不是另一个清单：尝试一种新食物，在机场勇敢地说声谢谢，在博物馆发现三种颜色，拍一张纪念照片，或者帮忙收拾酒店行李。小任务。灿烂的笑容。",
       "category": "kids",
       "search_terms": [
         "家庭旅行",
@@ -913,7 +913,7 @@
     {
       "key": "lumiweather",
       "app_store_id": "6779552704",
-      "name": "Lumi Weather",
+      "name": "Lumi天气星球 家庭预报",
       "summary": "带孩子出门前，总会想：今天会不会太冷、太热、太晒或太湿？Lumi Weather 把复杂天气数字变成家长一眼看懂的温柔答案。",
       "category": "kids",
       "search_terms": [
@@ -984,7 +984,7 @@
     {
       "key": "mochi",
       "app_store_id": "6785004775",
-      "name": "Mochi",
+      "name": "Mochi: 可爱待办清单",
       "summary": "Mochi 是一款可爱又治愈的待办清单 App，让每天的计划变得更轻松、更有仪式感。写下任务，轻点小圆圈完成打勾，看着清单一点点变短，获得柔软又真实的成就感。",
       "category": "productivity",
       "search_terms": [
@@ -1036,7 +1036,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream",
+      "name": "PhotoCream Pro",
       "summary": "PhotoCream Pro 是您在 iPhone 和 iPad 上的终极拍摄伙伴。无论您是复古摄影爱好者还是自拍达人，这款应用都能满足您的需求。超过100种真实胶片滤镜，让每张照片都充满艺术感。即时预览功能让您在拍摄前即可看到滤镜效果，捕捉完美瞬间。",
       "category": "photo-utility",
       "search_terms": [
@@ -1096,7 +1096,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear",
+      "name": "PicClear Pro",
       "summary": "清出占空间的照片，腾出好几 GB 的存储空间——重复照片、屏幕截图、模糊照片，还有最占空间的视频。",
       "category": "photo-utility",
       "search_terms": [
@@ -1153,7 +1153,7 @@
     {
       "key": "scanto",
       "app_store_id": "6779977651",
-      "name": "ScanTo Pro",
+      "name": "ScanTo Pro: 离线PDF扫描",
       "summary": "一款连“读取文件里的文字”都在手机上完成、并且无需联网的文档扫描器。",
       "category": "productivity",
       "search_terms": [
@@ -1202,7 +1202,7 @@
     {
       "key": "sereno",
       "app_store_id": "6788236641",
-      "name": "Sereno",
+      "name": "Sereno: 睡眠之声",
       "summary": "Sereno 将您的手机变成高端的声音机器，用于睡眠、专注和宁静。数十种手工调谐的声音在您的设备上实时生成，并融合成 1000 多种独特的音景——因此雨声永不循环，海洋永不重复，只是无尽的、温柔的混合，伴您度过漫漫长夜。",
       "category": "sleep-sound",
       "search_terms": [
@@ -1249,7 +1249,7 @@
     {
       "key": "snapport",
       "app_store_id": "6780575828",
-      "name": "Snapport",
+      "name": "Snapport 证件照·护照照",
       "summary": "在家就能拍出合规的护照、签证与各国证件照——安静、私密、专业。Snapport 提供多国常用尺寸模板、人脸对齐导引、智能去背与打印排版，全部在你的 iPhone 本地处理。",
       "category": "photo-utility",
       "search_terms": [
@@ -1311,7 +1311,7 @@
       "key": "sononote",
       "app_store_id": "6782139553",
       "name": "Sono Note",
-      "summary": "自然说话，轻松收获值得骄傲的文字。",
+      "summary": "Sono Note将你随口而出的杂乱思绪转化为简洁、结构化的文字，只需几秒钟。捕捉一个想法、一场讲座、一次客户通话或快速更新，Sono Note会将其转录、整理，并呈现给你一份完成的笔记：清晰的总结、关键点、行动事项，以及一封待发送的后续邮件。通常在你放下手机之前就已完成。",
       "category": "productivity",
       "search_terms": [
         "语音转文字",
@@ -1368,7 +1368,7 @@
     {
       "key": "tripbee",
       "app_store_id": "6787754435",
-      "name": "TripBee Pro: Trip Planner",
+      "name": "TripBee: 旅行行程规划",
       "summary": "把每一次出行，都整理成好看、私密、完全离线的随身旅行计划书。",
       "category": "travel",
       "search_terms": [
@@ -1420,8 +1420,8 @@
     {
       "key": "unblurry",
       "app_store_id": "6782275018",
-      "name": "Unblurry",
-      "summary": "照片模糊了？一键变得清晰通透。",
+      "name": "Unblurry Pro：模糊变清晰",
+      "summary": "Unblurry 能在几秒内把发虚、手抖、失焦的照片变得锐利鲜活，而且全程都在你的 iPhone 上完成。无需云端、无需账号、无需等待。",
       "category": "photo-utility",
       "search_terms": [
         "去模糊",
@@ -1482,7 +1482,7 @@
     {
       "key": "wordmate",
       "app_store_id": "6789917808",
-      "name": "Wordmate: Learn 44 Languages",
+      "name": "Wordmate：44 种语言背单词",
       "summary": "把碎片时间变成真正的词汇积累。Wordmate 将 44 种语言的结构化词汇学习带到 iPhone、iPad、主屏幕交互式小组件和 Apple Watch；从手中到手腕，通勤、排队或短暂空当都能自然接续。",
       "category": "education",
       "search_terms": [

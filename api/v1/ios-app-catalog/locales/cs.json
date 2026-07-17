@@ -2,7 +2,7 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.1.0",
   "date_modified": "2026-07-17",
-  "content_digest": "3c3a1ff4e3c06adf0e7459b4ca1df042800d6c0346024f1286734dc4cc22c7a3",
+  "content_digest": "b26a6a616fbb32611e60f59a79198da069fac002c4e1b10d1488106434f8e343",
   "locale": "cs",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -11,8 +11,8 @@
     {
       "key": "aim990",
       "app_store_id": "6784974530",
-      "name": "Aim990",
-      "summary": "Připravte se na TOEIC s Aim990! Naše aplikace nabízí 30denní studijní plán, který vám pomůže dosáhnout vysněného skóre 990. Každý den se zaměříte na",
+      "name": "Aim990: TOEIC Příprava",
+      "summary": "Připravte se na TOEIC s Aim990! Naše aplikace nabízí 30denní studijní plán, který vám pomůže dosáhnout vysněného skóre 990. Každý den se zaměříte na poslech a čtení prostřednictvím strukturovaných cvičení.",
       "category": "education",
       "search_terms": [
         "TOEIC",
@@ -40,7 +40,7 @@
     {
       "key": "cvdesk",
       "app_store_id": "6781337213",
-      "name": "CV Desk",
+      "name": "CV Desk: ATS životopis",
       "summary": "Vytvořte životopis připravený pro ATS, který náborové systémy opravdu přečtou — celý přímo na iPhonu. Bez účtu, bez nahrávání a bez předplatného.",
       "category": "productivity",
       "search_terms": [
@@ -88,8 +88,8 @@
     {
       "key": "cyca",
       "app_store_id": "6782251621",
-      "name": "Cyca",
-      "summary": "Cyca je jemný a soukromý způsob, jak porozumět svému cyklu. Během chvilky zaznamenáte menstruaci, sílu krvácení, příznaky, náladu i poznámky a v klidném",
+      "name": "Cyca: Menstruační kalendář",
+      "summary": "Cyca je jemný a soukromý způsob, jak porozumět svému cyklu. Během chvilky zaznamenáte menstruaci, sílu krvácení, příznaky, náladu i poznámky a v klidném kalendáři uvidíte další menstruaci, plodné dny a ovulaci.",
       "category": "health",
       "search_terms": [
         "menstruační kalendář",
@@ -139,7 +139,7 @@
       "key": "gmoney",
       "app_store_id": "6755782939",
       "name": "G+Money",
-      "summary": "G+Money zjednodušuje osobní finance bez zbytečné složitosti. Zapisujte výdaje, třiďte je podle kategorií, cest nebo událostí a hned uvidíte, kam peníze",
+      "summary": "G+Money zjednodušuje osobní finance bez zbytečné složitosti. Zapisujte výdaje, třiďte je podle kategorií, cest nebo událostí a hned uvidíte, kam peníze odcházejí.",
       "category": "finance",
       "search_terms": [
         "výdaje",
@@ -189,7 +189,7 @@
     {
       "key": "hourstag",
       "app_store_id": "6754218117",
-      "name": "HoursTag",
+      "name": "HoursTag: Hodiny na nákup",
       "summary": "Kolik to opravdu stojí? Ne v korunách, ale v hodinách vašeho života.",
       "category": "finance",
       "search_terms": [
@@ -244,7 +244,7 @@
       "key": "lockhour",
       "app_store_id": "6780107485",
       "name": "LockHour Pro",
-      "summary": "Chraňte hodiny, kdy se vám pracuje nejlépe. LockHour Pro pomáhá spouštět klidné soustředěné bloky, omezit rušení telefonem a budovat produktivní návyky bez",
+      "summary": "Chraňte hodiny, kdy se vám pracuje nejlépe. LockHour Pro pomáhá spouštět klidné soustředěné bloky, omezit rušení telefonem a budovat produktivní návyky bez zbytečností. Hodí se pro studium, psaní, plánování i hlubokou práci.",
       "category": "productivity",
       "search_terms": [
         "blokování aplikací",
@@ -288,7 +288,7 @@
       "key": "lumibopomofo",
       "app_store_id": "6773017109",
       "name": "Lumi Bopomofo",
-      "summary": "Milý první krok ke zvukům mandarínské čínštiny.",
+      "summary": "Milý první krok ke zvukům mandarínské čínštiny. Lumi Bopomofo mění Zhuyin, fonetický systém mandarínštiny, v kouzelnou hru s planetami pro děti od 3 do 6 let. Krátké aktivity pomáhají rozpoznávat symboly, zvuky a jejich kombinace.",
       "category": "kids",
       "search_terms": [
         "zhuyin",
@@ -333,8 +333,8 @@
     {
       "key": "lumibopomofopro",
       "app_store_id": "6775773117",
-      "name": "Lumi Bopomofo Pro",
-      "summary": "Milý první krok ke zvukům mandarínské čínštiny.",
+      "name": "Lumi Bopomofo Pro: Zhuyin",
+      "summary": "Milý první krok ke zvukům mandarínské čínštiny. Lumi Bopomofo Pro mění Zhuyin, fonetický systém mandarínštiny, v kouzelnou hru s planetami pro děti od 3 do 6 let. Krátké aktivity pomáhají rozpoznávat symboly, zvuky a jejich kombinace.",
       "category": "kids",
       "search_terms": [
         "zhuyin",
@@ -380,8 +380,8 @@
     {
       "key": "lumiletters",
       "app_store_id": "6778748533",
-      "name": "Lumi Letters",
-      "summary": "Jemný začátek s anglickým ABC. Lumi Letters Lite pomáhá dětem od 3 do 6 let učit se pomocí roztomilých planet, klidné hry a jasných zvuků písmen, doma i ve",
+      "name": "Lumi Letters Lite: ABC Kids",
+      "summary": "Jemný začátek s anglickým ABC. Lumi Letters Lite pomáhá dětem od 3 do 6 let učit se pomocí roztomilých planet, klidné hry a jasných zvuků písmen, doma i ve školce.",
       "category": "kids",
       "search_terms": [
         "abc",
@@ -428,8 +428,8 @@
     {
       "key": "lumiletterspro",
       "app_store_id": "6778491147",
-      "name": "Lumi Letters Pro",
-      "summary": "Jemný začátek s anglickým ABC. Lumi Letters Pro pomáhá dětem od 3 do 6 let učit se pomocí roztomilých planet, klidné hry a jasných zvuků písmen, doma i",
+      "name": "Lumi Letters Pro: ABC Phonics",
+      "summary": "Jemný začátek s anglickým ABC. Lumi Letters Pro pomáhá dětem od 3 do 6 let učit se pomocí roztomilých planet, klidné hry a jasných zvuků písmen, doma i ve školce.",
       "category": "kids",
       "search_terms": [
         "abc",
@@ -476,8 +476,8 @@
     {
       "key": "lumimath",
       "app_store_id": "6778269699",
-      "name": "Lumi Math Planet",
-      "summary": "Lumi Math Planet mění první matematiku v milé vesmírné dobrodružství pro děti od 3 do 6 let. Děti počítají, porovnávají, sčítají a řeší logické hádanky",
+      "name": "Lumi Math Planet: Explorer",
+      "summary": "Lumi Math Planet mění první matematiku v milé vesmírné dobrodružství pro děti od 3 do 6 let. Děti počítají, porovnávají, sčítají a řeší logické hádanky, zatímco rozsvěcují malé planety.",
       "category": "kids",
       "search_terms": [
         "matematika pro děti",
@@ -556,8 +556,8 @@
     {
       "key": "lumimathpro",
       "app_store_id": "6776958488",
-      "name": "Lumi Math Pro",
-      "summary": "Proměňte matematické myšlení ve vesmírné dobrodružství, které děti baví. Lumi Math Pro pomáhá dětem od 3 do 6 let procvičovat počítání, číselný cit",
+      "name": "Lumi Math Pro: Čísla",
+      "summary": "Proměňte matematické myšlení ve vesmírné dobrodružství, které děti baví. Lumi Math Pro pomáhá dětem od 3 do 6 let procvičovat počítání, číselný cit, sčítání, vzory, tvary a logiku v krátkých přátelských úkolech.",
       "category": "kids",
       "search_terms": [
         "počítání z hlavy",
@@ -611,7 +611,7 @@
       "key": "lumimission",
       "app_store_id": "6779750237",
       "name": "Lumi Mission Planet",
-      "summary": "Proměňte každodenní úkoly v klidné malé úspěchy.",
+      "summary": "Proměňte každodenní úkoly v klidné malé úspěchy. Lumi Mission Planet pomáhá dětem od 3 do 6 let čistit si zuby, oblékat se, uklízet hračky, chystat se do postele a zvládat jednoduché domácí povinnosti. Hvězdy oceňují snahu bez reklam, spěchu a tlaku.",
       "category": "kids",
       "search_terms": [
         "odměnová tabulka",
@@ -669,7 +669,7 @@
       "key": "lumimissionpro",
       "app_store_id": "6779745474",
       "name": "Lumi Mission Planet Pro",
-      "summary": "Proměňte každodenní úkoly v klidné malé úspěchy.",
+      "summary": "Proměňte každodenní úkoly v klidné malé úspěchy. Lumi Mission Planet pomáhá dětem od 3 do 6 let čistit si zuby, oblékat se, uklízet hračky, chystat se do postele a zvládat jednoduché domácí povinnosti. Hvězdy oceňují snahu bez reklam, spěchu a tlaku.",
       "category": "kids",
       "search_terms": [
         "denní režim dětí",
@@ -723,7 +723,7 @@
     {
       "key": "tripplanet",
       "app_store_id": "6787193643",
-      "name": "Lumi Trip Planet",
+      "name": "Lumi Trip Planet: Cesty",
       "summary": "Proměňte každý rodinný výlet v malé vesmírné dobrodružství.",
       "category": "kids",
       "search_terms": [
@@ -754,7 +754,7 @@
     {
       "key": "lumiweather",
       "app_store_id": "6779552704",
-      "name": "Lumi Weather",
+      "name": "Lumi Weather: Rodina",
       "summary": "Než vyrazíte s dítětem ven, Lumi Weather nabídne klidnou odpověď: je dnes vhodné počasí na hřiště?",
       "category": "kids",
       "search_terms": [
@@ -813,8 +813,8 @@
     {
       "key": "mochi",
       "app_store_id": "6785004775",
-      "name": "Mochi",
-      "summary": "Mochi je roztomilý a uklidňující seznam úkolů pro každý den. Zapiš si, co chceš zvládnout, klepni na malé kolečko po dokončení a užij si příjemný pocit, že",
+      "name": "Mochi: Roztomilé úkoly",
+      "summary": "Mochi je roztomilý a uklidňující seznam úkolů pro každý den. Zapiš si, co chceš zvládnout, klepni na malé kolečko po dokončení a užij si příjemný pocit, že se věci posouvají.",
       "category": "productivity",
       "search_terms": [
         "úkoly",
@@ -848,8 +848,8 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream",
-      "summary": "PhotoCream Pro promění iPhone a iPad v hřejivý filmový fotoaparát a elegantní editor. Foťte s více než 100 analogovými filtry, jemným zrnem a světelnými",
+      "name": "PhotoCream Pro",
+      "summary": "PhotoCream Pro promění iPhone a iPad v hřejivý filmový fotoaparát a elegantní editor. Foťte s více než 100 analogovými filtry, jemným zrnem a světelnými úniky, nebo upravte selfie přirozeně a čistě.",
       "category": "photo-utility",
       "search_terms": [
         "analogový fotoaparát",
@@ -899,7 +899,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear",
+      "name": "PicClear Pro",
       "summary": "Získejte zpět gigabajty úložiště odstraněním fotek, které už nepotřebujete: duplikátů, starých snímků obrazovky, rozmazaných záběrů a velkých videí.",
       "category": "photo-utility",
       "search_terms": [
@@ -954,7 +954,7 @@
     {
       "key": "scanto",
       "app_store_id": "6779977651",
-      "name": "ScanTo Pro",
+      "name": "ScanTo Pro: PDF a OCR",
       "summary": "Skener dokumentů, který pracuje celý na vašem zařízení — včetně rozpoznávání textu.",
       "category": "productivity",
       "search_terms": [
@@ -989,8 +989,8 @@
     {
       "key": "sereno",
       "app_store_id": "6788236641",
-      "name": "Sereno",
-      "summary": "Sereno promění váš telefon na špičkový zvukový stroj pro spánek, soustředění a klid. Desítky pečlivě laděných zvuků jsou generovány přímo na vašem zařízení",
+      "name": "Sereno: Zvuky pro spánek",
+      "summary": "Sereno promění váš telefon na špičkový zvukový stroj pro spánek, soustředění a klid. Desítky pečlivě laděných zvuků jsou generovány přímo na vašem zařízení a mísí se do více než 1000 unikátních zvukových krajin — takže déšť se nikdy neopakuje a oceán se nikdy nezopakuje, jen nekonečná, jemná směs, která vás provází nocí.",
       "category": "sleep-sound",
       "search_terms": [
         "bílý šum",
@@ -1023,8 +1023,8 @@
     {
       "key": "snapport",
       "app_store_id": "6780575828",
-      "name": "Snapport",
-      "summary": "Vytvářejte fotografie na pas, vízum a doklady doma, v klidu a soukromí. Snapport nabízí šablony běžných rozměrů, vodítka pro zarovnání obličeje, nástroje",
+      "name": "Snapport: Pasové Fotky",
+      "summary": "Vytvářejte fotografie na pas, vízum a doklady doma, v klidu a soukromí. Snapport nabízí šablony běžných rozměrů, vodítka pro zarovnání obličeje, nástroje pro pozadí a rozvržení připravená k tisku. Vše se zpracovává přímo na vašem iPhonu.",
       "category": "photo-utility",
       "search_terms": [
         "pasová fotografie",
@@ -1124,7 +1124,7 @@
     {
       "key": "tripbee",
       "app_store_id": "6787754435",
-      "name": "TripBee Pro: Trip Planner",
+      "name": "TripBee: Plánovač cest",
       "summary": "Naplánuj každou cestu v jedné krásné a soukromé aplikaci, která funguje i offline.",
       "category": "travel",
       "search_terms": [
@@ -1160,7 +1160,7 @@
     {
       "key": "unblurry",
       "app_store_id": "6782275018",
-      "name": "Unblurry",
+      "name": "Unblurry Pro: Ostré fotky",
       "summary": "Rozmazaná fotka? Udělejte z ní čistý a ostrý snímek.",
       "category": "photo-utility",
       "search_terms": [
@@ -1218,8 +1218,8 @@
     {
       "key": "wordmate",
       "app_store_id": "6789917808",
-      "name": "Wordmate: Learn 44 Languages",
-      "summary": "Wordmate je plně vybavená placená aplikace, kterou si koupíte přímo při stažení. Zaplatíte jednou a získáte celou aplikaci: 44 jazyků, všechny studijní",
+      "name": "Wordmate: Slovní zásoba",
+      "summary": "Wordmate je plně vybavená placená aplikace, kterou si koupíte přímo při stažení. Zaplatíte jednou a získáte celou aplikaci: 44 jazyků, všechny studijní úrovně, interaktivní widget i Apple Watch. Žádné předplatné, další platby v aplikaci, placený přechod na vyšší verzi ani obsah k samostatnému dokoupení.",
       "category": "education",
       "search_terms": [
         "angličtina",

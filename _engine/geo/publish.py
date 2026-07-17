@@ -67,6 +67,10 @@ def reconcile_lastmod_after_rebase(env):
 def main():
     env = dict(os.environ, GEO_SITE=SITE)
     # 1) 重建
+    require(
+        [PY, os.path.join(HERE, "refresh_storefront_availability.py")],
+        env=env,
+    )
     require([PY, os.path.join(HERE, "build_pages_i18n.py")], env=env)
     require([PY, os.path.join(HERE, "passport_photo_print_sheet.py")], env=env)
     require([PY, os.path.join(HERE, "document_scan_planner.py")], env=env)
@@ -83,7 +87,6 @@ def main():
     require([PY, os.path.join(HERE, "toeic_study_allocation_planner.py")], env=env)
     require([PY, os.path.join(HERE, "wordmate_language_support.py")], env=env)
     require([PY, os.path.join(HERE, "portfolio_app_finder.py")], env=env)
-    require([PY, os.path.join(HERE, "portfolio_app_catalog_api.py")], env=env)
     require([PY, os.path.join(HERE, "gen_data_hub.py")], env=env)
     require([PY, os.path.join(HERE, "family_travel_static_api.py")], env=env)
     require([PY, os.path.join(HERE, "family_travel_observation_passport.py")], env=env)
@@ -193,6 +196,7 @@ def main():
     require([PY, os.path.join(HERE, "gen_social_previews.py")], env=env)
     require([PY, os.path.join(HERE, "gen_smart_app_banners.py")], env=env)
     require([PY, os.path.join(HERE, "gen_mobile_app_identity.py")], env=env)
+    require([PY, os.path.join(HERE, "portfolio_app_catalog_api.py")], env=env)
     require([PY, os.path.join(HERE, "gen_mobile_store_ctas.py")], env=env)
     require([PY, os.path.join(HERE, "gen_app_store_qr_ctas.py")], env=env)
     require([PY, os.path.join(HERE, "gen_app_store_share_ctas.py")], env=env)

@@ -4,10 +4,13 @@
 from __future__ import annotations
 
 import re
+import json
+from pathlib import Path
 
 from official_locales import OFFICIAL_LOCALE_SET
 
 
+STATE_FILE = ".appstore_storefront_state.json"
 LOCALE_STOREFRONTS = {
     "ar-SA": "sa",
     "bn-BD": "bd",
@@ -82,3 +85,39 @@ def localized_app_store_url(value: str, locale: str) -> str:
         f"https://apps.apple.com/{country}/app/"
         f"id{match.group('app_id')}"
     )
+
+
+def load_storefront_availability(pages_dir) -> dict[str, frozenset[str]]:
+    """Read the last public Apple lookup snapshot."""
+    path = Path(pages_dir) / STATE_FILE
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, TypeError, ValueError, json.JSONDecodeError):
+        return {}
+    countries = payload.get("countries")
+    if not isinstance(countries, dict):
+        return {}
+    return {
+        country: frozenset(
+            str(app_id)
+            for app_id in app_ids
+            if str(app_id).isdigit()
+        )
+        for country, app_ids in countries.items()
+        if country in set(LOCALE_STOREFRONTS.values())
+        and isinstance(app_ids, list)
+    }
+
+
+def verified_app_store_url(
+    value: str,
+    locale: str,
+    availability: dict[str, frozenset[str]],
+) -> str:
+    """Use a country URL only when Apple verified that exact storefront."""
+    localized = localized_app_store_url(value, locale)
+    app_id = APP_STORE_URL_RE.fullmatch(value.strip()).group("app_id")
+    country = LOCALE_STOREFRONTS[locale]
+    if app_id in availability.get(country, frozenset()):
+        return localized
+    return value.strip()

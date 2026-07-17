@@ -2,7 +2,7 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.1.0",
   "date_modified": "2026-07-17",
-  "content_digest": "3c3a1ff4e3c06adf0e7459b4ca1df042800d6c0346024f1286734dc4cc22c7a3",
+  "content_digest": "b26a6a616fbb32611e60f59a79198da069fac002c4e1b10d1488106434f8e343",
   "locale": "fi",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -11,8 +11,8 @@
     {
       "key": "aim990",
       "app_store_id": "6784974530",
-      "name": "Aim990",
-      "summary": "Tervetuloa Aim990:aan, innovatiiviseen sovellukseen, joka on suunniteltu auttamaan sinua saavuttamaan unelmiesi TOEIC-pisteet! 30 päivän opiskeluohjelmamme",
+      "name": "Aim990 - TOEIC Valmennus",
+      "summary": "Tervetuloa Aim990:aan, innovatiiviseen sovellukseen, joka on suunniteltu auttamaan sinua saavuttamaan unelmiesi TOEIC-pisteet! 30 päivän opiskeluohjelmamme tarjoaa sinulle päivittäiset kuuntelu- ja lukutaitoharjoitukset, jotka on räätälöity kehittämään heikkouksiasi ja maksimoimaan vahvuutesi.",
       "category": "education",
       "search_terms": [
         "TOEIC",
@@ -43,7 +43,7 @@
     {
       "key": "cvdesk",
       "app_store_id": "6781337213",
-      "name": "CV Desk",
+      "name": "CV Desk: ATS-ansioluettelo",
       "summary": "Tee ATS-yhteensopiva ansioluettelo, jonka rekrytoijien järjestelmät oikeasti lukevat — kokonaan iPhonella. Ei tiliä. Ei lähetystä. Ei tilausta.",
       "category": "productivity",
       "search_terms": [
@@ -91,8 +91,8 @@
     {
       "key": "cyca",
       "app_store_id": "6782251621",
-      "name": "Cyca",
-      "summary": "Cyca on lempeä ja yksityinen tapa ymmärtää omaa kiertoa. Kirjaa kuukautiset, vuoto, oireet, mieliala ja muistiinpanot sekunneissa ja näe seuraavat",
+      "name": "Cyca: Kuukautiskalenteri",
+      "summary": "Cyca on lempeä ja yksityinen tapa ymmärtää omaa kiertoa. Kirjaa kuukautiset, vuoto, oireet, mieliala ja muistiinpanot sekunneissa ja näe seuraavat kuukautiset, hedelmälliset päivät ja ovulaatio rauhallisessa kalenterissa.",
       "category": "health",
       "search_terms": [
         "kuukautiskalenteri",
@@ -141,7 +141,7 @@
       "key": "gmoney",
       "app_store_id": "6755782939",
       "name": "G+Money",
-      "summary": "G+Money yhdistää kaksi arjen työkalua yhdeksi — salamannopean valuuttamuuntimen ja kauniin menojen seurannan — arkeen ja matkalle. Täysin offline. Täysin",
+      "summary": "G+Money yhdistää kaksi arjen työkalua yhdeksi — salamannopean valuuttamuuntimen ja kauniin menojen seurannan — arkeen ja matkalle. Täysin offline. Täysin yksityinen.",
       "category": "finance",
       "search_terms": [
         "menot",
@@ -191,7 +191,7 @@
     {
       "key": "hourstag",
       "app_store_id": "6754218117",
-      "name": "HoursTag",
+      "name": "HoursTag: Ostotunnit",
       "summary": "Mitä se oikeasti maksaa? Ei euroina – vaan elämäsi tunteina.",
       "category": "finance",
       "search_terms": [
@@ -243,7 +243,7 @@
       "key": "lockhour",
       "app_store_id": "6780107485",
       "name": "LockHour Pro",
-      "summary": "Suojaa hetket, jolloin saat eniten aikaan. LockHour Pro auttaa aloittamaan rauhallisia keskittymissessioita, vähentämään puhelimen häiriöitä ja rakentamaan",
+      "summary": "Suojaa hetket, jolloin saat eniten aikaan. LockHour Pro auttaa aloittamaan rauhallisia keskittymissessioita, vähentämään puhelimen häiriöitä ja rakentamaan kestäviä työskentelytapoja. Sopii opiskeluun, kirjoittamiseen, suunnitteluun ja syvään työhön.",
       "category": "productivity",
       "search_terms": [
         "sovellusten esto",
@@ -290,7 +290,7 @@
       "key": "lumibopomofo",
       "app_store_id": "6773017109",
       "name": "Lumi Bopomofo",
-      "summary": "Lempeä aloitus mandariinikiinan äänteisiin.",
+      "summary": "Lempeä aloitus mandariinikiinan äänteisiin. Lumi Bopomofo muuttaa Zhuyinin, mandariinikiinan foneettisen järjestelmän, suloiseksi planeettapeliksi 3–6-vuotiaille lapsille. Lyhyet tehtävät auttavat tunnistamaan merkkejä, ääniä ja yhdistelmiä.",
       "category": "kids",
       "search_terms": [
         "zhuyin",
@@ -335,8 +335,8 @@
     {
       "key": "lumibopomofopro",
       "app_store_id": "6775773117",
-      "name": "Lumi Bopomofo Pro",
-      "summary": "Lempeä aloitus mandariinikiinan äänteisiin.",
+      "name": "Lumi Bopomofo Pro: Zhuyin",
+      "summary": "Lempeä aloitus mandariinikiinan äänteisiin. Lumi Bopomofo Pro muuttaa Zhuyinin, mandariinikiinan foneettisen järjestelmän, suloiseksi planeettapeliksi 3–6-vuotiaille lapsille. Lyhyet tehtävät auttavat tunnistamaan merkkejä, ääniä ja yhdistelmiä.",
       "category": "kids",
       "search_terms": [
         "zhuyin",
@@ -382,8 +382,8 @@
     {
       "key": "lumiletters",
       "app_store_id": "6778748533",
-      "name": "Lumi Letters",
-      "summary": "Lempeä ensikosketus englannin ABC:hen. Lumi Letters Lite auttaa 3–6-vuotiaita lapsia oppimaan söpöjen planeettojen, rauhallisen leikin ja selkeiden",
+      "name": "Lumi Letters Lite: ABC Kids",
+      "summary": "Lempeä ensikosketus englannin ABC:hen. Lumi Letters Lite auttaa 3–6-vuotiaita lapsia oppimaan söpöjen planeettojen, rauhallisen leikin ja selkeiden äänteiden avulla kotona, päiväkodissa tai esikoulussa.",
       "category": "kids",
       "search_terms": [
         "abc",
@@ -433,8 +433,8 @@
     {
       "key": "lumiletterspro",
       "app_store_id": "6778491147",
-      "name": "Lumi Letters Pro",
-      "summary": "Lempeä ensikosketus englannin ABC:hen. Lumi Letters Pro auttaa 3–6-vuotiaita lapsia oppimaan söpöjen planeettojen, rauhallisen leikin ja selkeiden",
+      "name": "Lumi Letters Pro: ABC Phonics",
+      "summary": "Lempeä ensikosketus englannin ABC:hen. Lumi Letters Pro auttaa 3–6-vuotiaita lapsia oppimaan söpöjen planeettojen, rauhallisen leikin ja selkeiden äänteiden avulla kotona, päiväkodissa tai esikoulussa.",
       "category": "kids",
       "search_terms": [
         "abc",
@@ -484,8 +484,8 @@
     {
       "key": "lumimath",
       "app_store_id": "6778269699",
-      "name": "Lumi Math Planet",
-      "summary": "Lumi Math Planet muuttaa varhaisen matematiikan lämpimäksi avaruusseikkailuksi 3–6-vuotiaille. Lapsi laskee, vertailee, yhdistelee ja ratkoo logiikkapulmia",
+      "name": "Lumi Math Planet: Explorer",
+      "summary": "Lumi Math Planet muuttaa varhaisen matematiikan lämpimäksi avaruusseikkailuksi 3–6-vuotiaille. Lapsi laskee, vertailee, yhdistelee ja ratkoo logiikkapulmia, samalla kun suloiset planeetat syttyvät.",
       "category": "kids",
       "search_terms": [
         "esikoulu",
@@ -564,8 +564,8 @@
     {
       "key": "lumimathpro",
       "app_store_id": "6776958488",
-      "name": "Lumi Math Pro",
-      "summary": "Tee matemaattisesta ajattelusta lempeä avaruusseikkailu. Lumi Math Pro auttaa 3–6-vuotiaita harjoittelemaan laskemista, lukukäsitystä, yhteenlaskua",
+      "name": "Lumi Math Pro: Numerot",
+      "summary": "Tee matemaattisesta ajattelusta lempeä avaruusseikkailu. Lumi Math Pro auttaa 3–6-vuotiaita harjoittelemaan laskemista, lukukäsitystä, yhteenlaskua, sarjoja, muotoja ja logiikkaa lyhyissä tehtävissä.",
       "category": "kids",
       "search_terms": [
         "päässälasku",
@@ -618,7 +618,7 @@
       "key": "lumimission",
       "app_store_id": "6779750237",
       "name": "Lumi Mission Planet",
-      "summary": "Tee arjen pienistä tehtävistä lempeitä onnistumisia.",
+      "summary": "Tee arjen pienistä tehtävistä lempeitä onnistumisia. Lumi Mission Planet auttaa 3–6-vuotiaita lapsia hampaiden pesussa, pukeutumisessa, tavaroiden keräämisessä, iltatoimissa ja pienissä kotitöissä. Rauhalliset tehtävät ja tähdet kannustavat yrittämään ilman mainoksia, kiirettä tai painetta.",
       "category": "kids",
       "search_terms": [
         "palkintotaulu",
@@ -675,7 +675,7 @@
       "key": "lumimissionpro",
       "app_store_id": "6779745474",
       "name": "Lumi Mission Planet Pro",
-      "summary": "Tee arjen pienistä tehtävistä lempeitä onnistumisia.",
+      "summary": "Tee arjen pienistä tehtävistä lempeitä onnistumisia. Lumi Mission Planet auttaa 3–6-vuotiaita lapsia hampaiden pesussa, pukeutumisessa, tavaroiden keräämisessä, iltatoimissa ja pienissä kotitöissä. Rauhalliset tehtävät ja tähdet kannustavat yrittämään ilman mainoksia, kiirettä tai painetta.",
       "category": "kids",
       "search_terms": [
         "lasten rutiinit",
@@ -728,7 +728,7 @@
     {
       "key": "tripplanet",
       "app_store_id": "6787193643",
-      "name": "Lumi Trip Planet",
+      "name": "Lumi Trip Planet: Matkat",
       "summary": "Muuta jokainen perheen matka pieneksi avaruusseikkailuksi.",
       "category": "kids",
       "search_terms": [
@@ -760,7 +760,7 @@
     {
       "key": "lumiweather",
       "app_store_id": "6779552704",
-      "name": "Lumi Weather",
+      "name": "Lumi Weather: Perhesää",
       "summary": "Ennen kuin lähdette ulos lapsen kanssa, Lumi Weather vastaa rauhallisesti: onko tänään hyvä päivä leikkiä ulkona?",
       "category": "kids",
       "search_terms": [
@@ -821,8 +821,8 @@
     {
       "key": "mochi",
       "app_store_id": "6785004775",
-      "name": "Mochi",
-      "summary": "Mochi tekee tehtävälistasta söpön, rauhallisen ja helposti lähestyttävän. Kirjoita päivän tehtävät, napauta pientä ympyrää kun jokin valmistuu ja nauti",
+      "name": "Mochi: Söpö tehtävälista",
+      "summary": "Mochi tekee tehtävälistasta söpön, rauhallisen ja helposti lähestyttävän. Kirjoita päivän tehtävät, napauta pientä ympyrää kun jokin valmistuu ja nauti selkeämmän päivän tuomasta hyvästä tunteesta.",
       "category": "productivity",
       "search_terms": [
         "tehtävät",
@@ -854,8 +854,8 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream",
-      "summary": "PhotoCream Pro on täydellinen kumppanisi upeiden kuvien tallentamiseen ja muokkaamiseen. Sovelluksemme tarjoaa premium-retrofilmikameran, jossa on yli",
+      "name": "PhotoCream Pro",
+      "summary": "PhotoCream Pro on täydellinen kumppanisi upeiden kuvien tallentamiseen ja muokkaamiseen. Sovelluksemme tarjoaa premium-retrofilmikameran, jossa on yli 100 aitoa analogista suodatinta ja live-esikatselu, joka antaa kuvillesi nostalgisen tunteen. Lisäksi kehittynyt valokuvaeditorimme tarjoaa ominaisuuksia kuten taajuuserottelu täydelliselle iholle, kasvojen ja kehon muotoilu sekä valo- ja värisäädöt täydellisen kuvan luomiseksi. PhotoCream Prossa ei tarvitse huolehtia tilauksista tai mainoksista, ja kaikki tietosi pysyvät laitteellasi. Koe iPhonen tai iPadin täydet mahdollisuudet PhotoCream Pron avulla.",
       "category": "photo-utility",
       "search_terms": [
         "filmikamera",
@@ -906,7 +906,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear",
+      "name": "PicClear Pro",
       "summary": "Vapauta gigatavuja poistamalla kuvat, joita et enää tarvitse: duplikaatit, vanhat kuvakaappaukset, sumeat otokset ja suuret videot.",
       "category": "photo-utility",
       "search_terms": [
@@ -961,7 +961,7 @@
     {
       "key": "scanto",
       "app_store_id": "6779977651",
-      "name": "ScanTo Pro",
+      "name": "ScanTo Pro: PDF ja OCR",
       "summary": "Asiakirjaskanneri, joka tekee kaiken laitteellasi — myös tekstintunnistuksen.",
       "category": "productivity",
       "search_terms": [
@@ -997,8 +997,8 @@
     {
       "key": "sereno",
       "app_store_id": "6788236641",
-      "name": "Sereno",
-      "summary": "Sereno muuttaa puhelimesi huippuluokan äänikoneeksi unta, keskittymistä ja rauhoittumista varten. Kymmeniä käsin viritettyjä ääniä luodaan reaaliajassa",
+      "name": "Sereno: Unen Äänet",
+      "summary": "Sereno muuttaa puhelimesi huippuluokan äänikoneeksi unta, keskittymistä ja rauhoittumista varten. Kymmeniä käsin viritettyjä ääniä luodaan reaaliajassa laitteellasi ja ne yhdistyvät yli 1000 ainutlaatuiseen äänimaisemaan — joten sade ei koskaan toistu eikä meri koskaan toista itseään, vain loputon, lempeä sekoitus, joka kantaa sinut yön läpi.",
       "category": "sleep-sound",
       "search_terms": [
         "nukkumisäänet",
@@ -1029,8 +1029,8 @@
     {
       "key": "snapport",
       "app_store_id": "6780575828",
-      "name": "Snapport",
-      "summary": "Tee passi-, viisumi- ja henkilöllisyyskuvat kotona rauhallisesti ja yksityisesti. Snapport tarjoaa yleiset kokopohjat, kasvojen kohdistusohjeet",
+      "name": "Snapport: Passikuvat",
+      "summary": "Tee passi-, viisumi- ja henkilöllisyyskuvat kotona rauhallisesti ja yksityisesti. Snapport tarjoaa yleiset kokopohjat, kasvojen kohdistusohjeet, taustatyökalut ja tulostusvalmiit asettelut. Kaikki käsitellään suoraan iPhonellasi.",
       "category": "photo-utility",
       "search_terms": [
         "passikuva",
@@ -1127,7 +1127,7 @@
     {
       "key": "tripbee",
       "app_store_id": "6787754435",
-      "name": "TripBee Pro: Trip Planner",
+      "name": "TripBee: Matkasuunnittelu",
       "summary": "Suunnittele jokainen matka yhdessä kauniissa, yksityisessä ja offline-sovelluksessa.",
       "category": "travel",
       "search_terms": [
@@ -1162,7 +1162,7 @@
     {
       "key": "unblurry",
       "app_store_id": "6782275018",
-      "name": "Unblurry",
+      "name": "Unblurry Pro: Terävät kuvat",
       "summary": "Sumea kuva? Tee siitä kirkas ja terävä.",
       "category": "photo-utility",
       "search_terms": [
@@ -1220,8 +1220,8 @@
     {
       "key": "wordmate",
       "app_store_id": "6789917808",
-      "name": "Wordmate: Learn 44 Languages",
-      "summary": "YKSI OSTO, KOKO SOVELLUS",
+      "name": "Wordmate: Opi 44 kieltä",
+      "summary": "YKSI OSTO, KOKO SOVELLUS Osta Wordmate kerran App Storesta, niin saat koko sovelluksen heti. Kaikki 44 kieltä, kaikki tasot alkeista edistyneeseen, interaktiivinen Koti-valikon widgetti ja Apple Watch sisältyvät. Ei tilauksia, sovelluksen sisäisiä ostoja eikä erikseen maksullisia ominaisuuksia.",
       "category": "education",
       "search_terms": [
         "ääntäminen",

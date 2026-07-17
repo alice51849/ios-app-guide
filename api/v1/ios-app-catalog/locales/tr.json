@@ -2,7 +2,7 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.1.0",
   "date_modified": "2026-07-17",
-  "content_digest": "3c3a1ff4e3c06adf0e7459b4ca1df042800d6c0346024f1286734dc4cc22c7a3",
+  "content_digest": "b26a6a616fbb32611e60f59a79198da069fac002c4e1b10d1488106434f8e343",
   "locale": "tr",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -11,8 +11,8 @@
     {
       "key": "aim990",
       "app_store_id": "6784974530",
-      "name": "Aim990",
-      "summary": "Aim990, TOEIC(R) dinleme ve okuma testlerine yönelik etkili bir çalışma arkadaşıdır. 30 günlük planımızla, her gün belirli bir çalışma programı ile",
+      "name": "Aim990: TOEIC Hazırlığı",
+      "summary": "Aim990, TOEIC(R) dinleme ve okuma testlerine yönelik etkili bir çalışma arkadaşıdır. 30 günlük planımızla, her gün belirli bir çalışma programı ile ilerleyerek, hedefinize ulaşmanıza yardımcı oluyoruz.",
       "category": "education",
       "search_terms": [
         "TOEIC",
@@ -44,7 +44,7 @@
     {
       "key": "cvdesk",
       "app_store_id": "6781337213",
-      "name": "CV Desk",
+      "name": "CV Desk: ATS özgeçmiş",
       "summary": "İşe alımcıların sistemlerinin gerçekten okuduğu, ATS uyumlu bir özgeçmişi tamamen iPhone'unda oluştur. Hesap yok. Yükleme yok. Abonelik yok.",
       "category": "productivity",
       "search_terms": [
@@ -95,8 +95,8 @@
     {
       "key": "cyca",
       "app_store_id": "6782251621",
-      "name": "Cyca",
-      "summary": "Cyca, döngünü anlamanın sakin ve özel bir yolu. Reglini, akışı, belirtileri, ruh hâlini ve notlarını saniyeler içinde kaydet; sonraki reglini, doğurgan",
+      "name": "Cyca: Regl Takvimi",
+      "summary": "Cyca, döngünü anlamanın sakin ve özel bir yolu. Reglini, akışı, belirtileri, ruh hâlini ve notlarını saniyeler içinde kaydet; sonraki reglini, doğurgan günleri ve yumurtlamayı huzurlu bir takvimde gör.",
       "category": "health",
       "search_terms": [
         "regl takibi",
@@ -147,7 +147,7 @@
       "key": "gmoney",
       "app_store_id": "6755782939",
       "name": "G+Money",
-      "summary": "G+Money her gün kullandığın iki aracı tek uygulamada birleştirir — şimşek hızında bir döviz çevirici ve şık bir harcama takibi — günlük hayat için de",
+      "summary": "G+Money her gün kullandığın iki aracı tek uygulamada birleştirir — şimşek hızında bir döviz çevirici ve şık bir harcama takibi — günlük hayat için de seyahat için de. Tamamen çevrimdışı. Tamamen gizli.",
       "category": "finance",
       "search_terms": [
         "harcama takibi",
@@ -198,7 +198,7 @@
     {
       "key": "hourstag",
       "app_store_id": "6754218117",
-      "name": "HoursTag",
+      "name": "HoursTag: Alış saatleri",
       "summary": "Gerçekte ne kadara mal oluyor? Lira olarak değil – hayatının saatleri olarak.",
       "category": "finance",
       "search_terms": [
@@ -253,7 +253,7 @@
       "key": "lockhour",
       "app_store_id": "6780107485",
       "name": "LockHour Pro",
-      "summary": "En değerli saatlerini koru. LockHour Pro, sakin odak oturumları başlatmana, telefon dikkat dağıtıcılarını azaltmana ve sürdürülebilir üretkenlik",
+      "summary": "En değerli saatlerini koru. LockHour Pro, sakin odak oturumları başlatmana, telefon dikkat dağıtıcılarını azaltmana ve sürdürülebilir üretkenlik alışkanlıkları kurmana yardımcı olur. Ders çalışmak, yazmak, plan yapmak ve derin çalışma için idealdir.",
       "category": "productivity",
       "search_terms": [
         "uygulama engelleyici",
@@ -298,7 +298,7 @@
       "key": "lumibopomofo",
       "app_store_id": "6773017109",
       "name": "Lumi Bopomofo",
-      "summary": "Mandarin Çincesi seslerine sevimli bir başlangıç.",
+      "summary": "Mandarin Çincesi seslerine sevimli bir başlangıç. Lumi Bopomofo, Mandarin için kullanılan Zhuyin fonetik sistemini 3–6 yaş çocuklar için gezegen temalı bir oyuna dönüştürür. Kısa etkinlikler sembolleri, sesleri ve birleşimleri tanımayı destekler.",
       "category": "kids",
       "search_terms": [
         "zhuyin",
@@ -343,8 +343,8 @@
     {
       "key": "lumibopomofopro",
       "app_store_id": "6775773117",
-      "name": "Lumi Bopomofo Pro",
-      "summary": "Mandarin Çincesi seslerine sevimli bir başlangıç.",
+      "name": "Lumi Bopomofo Pro: Zhuyin",
+      "summary": "Mandarin Çincesi seslerine sevimli bir başlangıç. Lumi Bopomofo Pro, Mandarin için kullanılan Zhuyin fonetik sistemini 3–6 yaş çocuklar için gezegen temalı bir oyuna dönüştürür. Kısa etkinlikler sembolleri, sesleri ve birleşimleri tanımayı destekler.",
       "category": "kids",
       "search_terms": [
         "zhuyin",
@@ -390,8 +390,8 @@
     {
       "key": "lumiletters",
       "app_store_id": "6778748533",
-      "name": "Lumi Letters",
-      "summary": "İngilizce ABC’ye yumuşak ve sevimli bir başlangıç. Lumi Letters Lite, 3–6 yaş çocukların tatlı gezegenler, sakin oyunlar ve net harf sesleriyle evde veya",
+      "name": "Lumi Letters Lite: ABC Kids",
+      "summary": "İngilizce ABC’ye yumuşak ve sevimli bir başlangıç. Lumi Letters Lite, 3–6 yaş çocukların tatlı gezegenler, sakin oyunlar ve net harf sesleriyle evde veya anaokulunda öğrenmesine yardımcı olur.",
       "category": "kids",
       "search_terms": [
         "abc",
@@ -440,8 +440,8 @@
     {
       "key": "lumiletterspro",
       "app_store_id": "6778491147",
-      "name": "Lumi Letters Pro",
-      "summary": "İngilizce ABC’ye yumuşak ve sevimli bir başlangıç. Lumi Letters Pro, 3–6 yaş çocukların tatlı gezegenler, sakin oyunlar ve net harf sesleriyle evde veya",
+      "name": "Lumi Letters Pro: ABC Phonics",
+      "summary": "İngilizce ABC’ye yumuşak ve sevimli bir başlangıç. Lumi Letters Pro, 3–6 yaş çocukların tatlı gezegenler, sakin oyunlar ve net harf sesleriyle evde veya anaokulunda öğrenmesine yardımcı olur.",
       "category": "kids",
       "search_terms": [
         "abc",
@@ -491,8 +491,8 @@
     {
       "key": "lumimath",
       "app_store_id": "6778269699",
-      "name": "Lumi Math Planet",
-      "summary": "Lumi Math Planet, 3–6 yaş çocuklar için erken matematiği sıcak bir uzay macerasına dönüştürür. Çocuklar sayar, karşılaştırır, toplar ve mantık",
+      "name": "Lumi Math Planet: Explorer",
+      "summary": "Lumi Math Planet, 3–6 yaş çocuklar için erken matematiği sıcak bir uzay macerasına dönüştürür. Çocuklar sayar, karşılaştırır, toplar ve mantık bulmacaları çözerken sevimli gezegenleri aydınlatır.",
       "category": "kids",
       "search_terms": [
         "okul öncesi matematik",
@@ -577,8 +577,8 @@
     {
       "key": "lumimathpro",
       "app_store_id": "6776958488",
-      "name": "Lumi Math Pro",
-      "summary": "Matematiksel düşünmeyi sıcak bir uzay macerasına dönüştürün. Lumi Math Pro, 3–6 yaş çocukların sayma, sayı hissi, toplama, örüntüler, şekiller ve mantığı",
+      "name": "Lumi Math Pro: Çocuk Sayıları",
+      "summary": "Matematiksel düşünmeyi sıcak bir uzay macerasına dönüştürün. Lumi Math Pro, 3–6 yaş çocukların sayma, sayı hissi, toplama, örüntüler, şekiller ve mantığı kısa görevlerle çalışmasına yardımcı olur.",
       "category": "kids",
       "search_terms": [
         "zihinden matematik",
@@ -634,7 +634,7 @@
       "key": "lumimission",
       "app_store_id": "6779750237",
       "name": "Lumi Mission Planet",
-      "summary": "Günlük işleri sakin ve sevimli başarılara dönüştürün.",
+      "summary": "Günlük işleri sakin ve sevimli başarılara dönüştürün. Lumi Mission Planet, 3–6 yaş çocukların diş fırçalama, giyinme, oyuncak toplama, uykuya hazırlanma ve basit ev görevlerini keyifle yapmasına yardımcı olur. Yıldızlar çabayı ödüllendirir; reklam, acele ve baskı yoktur.",
       "category": "kids",
       "search_terms": [
         "ödül tablosu",
@@ -692,7 +692,7 @@
       "key": "lumimissionpro",
       "app_store_id": "6779745474",
       "name": "Lumi Mission Planet Pro",
-      "summary": "Günlük işleri sakin ve sevimli başarılara dönüştürün.",
+      "summary": "Günlük işleri sakin ve sevimli başarılara dönüştürün. Lumi Mission Planet, 3–6 yaş çocukların diş fırçalama, giyinme, oyuncak toplama, uykuya hazırlanma ve basit ev görevlerini keyifle yapmasına yardımcı olur. Yıldızlar çabayı ödüllendirir; reklam, acele ve baskı yoktur.",
       "category": "kids",
       "search_terms": [
         "çocuk rutini",
@@ -746,7 +746,7 @@
     {
       "key": "tripplanet",
       "app_store_id": "6787193643",
-      "name": "Lumi Trip Planet",
+      "name": "Lumi Trip Planet: Seyahat",
       "summary": "Her aile gezisini küçük bir uzay macerasına dönüştürün.",
       "category": "kids",
       "search_terms": [
@@ -779,7 +779,7 @@
     {
       "key": "lumiweather",
       "app_store_id": "6779552704",
-      "name": "Lumi Weather",
+      "name": "Lumi Weather: Aile Havası",
       "summary": "Küçük bir çocukla dışarı çıkmadan önce Lumi Weather sakin bir cevap verir: bugün dışarıda oynamak için uygun mu?",
       "category": "kids",
       "search_terms": [
@@ -841,8 +841,8 @@
     {
       "key": "mochi",
       "app_store_id": "6785004775",
-      "name": "Mochi",
-      "summary": "Mochi, yapılacaklar listesini sevimli, sakin ve kullanması keyifli bir alana dönüştürür. Yapacaklarını yaz, bitirdiğinde küçük daireye dokun ve gününün",
+      "name": "Mochi: Sevimli Liste",
+      "summary": "Mochi, yapılacaklar listesini sevimli, sakin ve kullanması keyifli bir alana dönüştürür. Yapacaklarını yaz, bitirdiğinde küçük daireye dokun ve gününün adım adım düzene girdiğini hisset.",
       "category": "productivity",
       "search_terms": [
         "görevler",
@@ -876,8 +876,8 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream",
-      "summary": "PhotoCream Pro, iPhone ve iPad'inizdeki fotoğrafçılık yaratıcılığınızın yeni merkezi. Fotoğraflarınıza benzersiz bir retro cazibe katacak 100'den fazla",
+      "name": "PhotoCream Pro",
+      "summary": "PhotoCream Pro, iPhone ve iPad'inizdeki fotoğrafçılık yaratıcılığınızın yeni merkezi. Fotoğraflarınıza benzersiz bir retro cazibe katacak 100'den fazla otantik analog filtre ile fotoğraflarınızı bir üst seviyeye taşıyın. Çekim yapmadan önce sonucu görmenizi sağlayan canlı önizlemenin keyfini çıkarın.",
       "category": "photo-utility",
       "search_terms": [
         "analog kamera",
@@ -928,7 +928,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear",
+      "name": "PicClear Pro",
       "summary": "Artık gerek duymadığın öğeleri kaldırarak gigabaytlarca alan kazan: yinelenenler, eski ekran görüntüleri, bulanık kareler ve büyük videolar.",
       "category": "photo-utility",
       "search_terms": [
@@ -984,7 +984,7 @@
     {
       "key": "scanto",
       "app_store_id": "6779977651",
-      "name": "ScanTo Pro",
+      "name": "ScanTo Pro: PDF ve OCR",
       "summary": "Her şeyi cihazınızda yapan belge tarayıcı — metin tanıma dahil.",
       "category": "productivity",
       "search_terms": [
@@ -1022,8 +1022,8 @@
     {
       "key": "sereno",
       "app_store_id": "6788236641",
-      "name": "Sereno",
-      "summary": "Sereno, telefonunuzu uyku, odaklanma ve sakinlik için yüksek kaliteli bir ses makinesine dönüştürür. Cihazınızda canlı olarak üretilen ve 1000'den fazla",
+      "name": "Sereno: Uyku Sesleri",
+      "summary": "Sereno, telefonunuzu uyku, odaklanma ve sakinlik için yüksek kaliteli bir ses makinesine dönüştürür. Cihazınızda canlı olarak üretilen ve 1000'den fazla benzersiz ses manzarasına karışan onlarca el yapımı ses — böylece yağmur asla döngüye girmez ve okyanus asla tekrarlanmaz, sadece gece boyunca sizi taşıyan sonsuz, yumuşak bir karışım.",
       "category": "sleep-sound",
       "search_terms": [
         "yağmur",
@@ -1055,8 +1055,8 @@
     {
       "key": "snapport",
       "app_store_id": "6780575828",
-      "name": "Snapport",
-      "summary": "Pasaport, vize ve kimlik fotoğraflarını evde, sakin ve gizli biçimde oluşturun. Snapport; yaygın boyut şablonları, yüz hizalama kılavuzları, arka plan",
+      "name": "Snapport: Biyometrik Fotoğraf",
+      "summary": "Pasaport, vize ve kimlik fotoğraflarını evde, sakin ve gizli biçimde oluşturun. Snapport; yaygın boyut şablonları, yüz hizalama kılavuzları, arka plan araçları ve baskıya hazır sayfalar sunar; her şey iPhone'unuzda işlenir.",
       "category": "photo-utility",
       "search_terms": [
         "vesikalık fotoğraf",
@@ -1152,7 +1152,7 @@
     {
       "key": "tripbee",
       "app_store_id": "6787754435",
-      "name": "TripBee Pro: Trip Planner",
+      "name": "TripBee: Gezi Planlayıcı",
       "summary": "Her seyahatini tek bir şık, gizli ve çevrimdışı uygulamada planla.",
       "category": "travel",
       "search_terms": [
@@ -1188,7 +1188,7 @@
     {
       "key": "unblurry",
       "app_store_id": "6782275018",
-      "name": "Unblurry",
+      "name": "Unblurry Pro: Net Fotoğraf",
       "summary": "Bulanık fotoğraf mı? Kristal gibi netleştirin.",
       "category": "photo-utility",
       "search_terms": [
@@ -1247,8 +1247,8 @@
     {
       "key": "wordmate",
       "app_store_id": "6789917808",
-      "name": "Wordmate: Learn 44 Languages",
-      "summary": "Wordmate, gün içindeki kısa araları yararlı kelime pratiğine dönüştürür. Uygulamayı satın aldığınızda 44 dil, tüm düzeyler, Ana Ekran için etkileşimli araç",
+      "name": "Wordmate: 44 dil",
+      "summary": "Wordmate, gün içindeki kısa araları yararlı kelime pratiğine dönüştürür. Uygulamayı satın aldığınızda 44 dil, tüm düzeyler, Ana Ekran için etkileşimli araç takımı ve Apple Watch deneyimi birlikte gelir. Uygulamanın tamamı için bir kez ödeme yaparsınız: abonelik, uygulama içi satın alma veya ücretli yükseltme yoktur.",
       "category": "education",
       "search_terms": [
         "ingilizce öğrenme",

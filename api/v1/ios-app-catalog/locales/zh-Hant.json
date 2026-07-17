@@ -2,7 +2,7 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.1.0",
   "date_modified": "2026-07-17",
-  "content_digest": "3c3a1ff4e3c06adf0e7459b4ca1df042800d6c0346024f1286734dc4cc22c7a3",
+  "content_digest": "b26a6a616fbb32611e60f59a79198da069fac002c4e1b10d1488106434f8e343",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -11,7 +11,7 @@
     {
       "key": "aim990",
       "app_store_id": "6784974530",
-      "name": "Aim990",
+      "name": "Aim990：TOEIC考試助手",
       "summary": "在Aim990，我們知道準備TOEIC(R)考試的挑戰，因此我們設計了一個為期30天的學習計劃，幫助你高效提升聽力與閱讀能力。",
       "category": "education",
       "search_terms": [
@@ -43,7 +43,7 @@
     {
       "key": "cvdesk",
       "app_store_id": "6781337213",
-      "name": "CV Desk",
+      "name": "CV Desk ATS 履歷製作",
       "summary": "在你的 iPhone 上,做出一份「能被企業 ATS 系統正確解析」的履歷 —— 不需帳號、不上傳、無訂閱。",
       "category": "productivity",
       "search_terms": [
@@ -102,7 +102,7 @@
     {
       "key": "cyca",
       "app_store_id": "6782251621",
-      "name": "Cyca",
+      "name": "Cyca 經期週期追蹤・排卵",
       "summary": "認識 Cyca —— 溫柔又私密、最懂你身體的週期夥伴。",
       "category": "health",
       "search_terms": [
@@ -223,7 +223,7 @@
     {
       "key": "hourstag",
       "app_store_id": "6754218117",
-      "name": "HoursTag",
+      "name": "HoursTag：價格換工時",
       "summary": "這真正要花你多少？不是多少錢——是你生命中的幾個小時。",
       "category": "finance",
       "search_terms": [
@@ -331,7 +331,7 @@
     {
       "key": "lumibopomofo",
       "app_store_id": "6773017109",
-      "name": "Lumi Bopomofo",
+      "name": "Lumi注音星球",
       "summary": "Lumi 注音星球 是一款專為學齡前與低年級孩子（約 4–7 歲）設計的注音符號學習遊戲。",
       "category": "kids",
       "search_terms": [
@@ -392,7 +392,7 @@
     {
       "key": "lumibopomofopro",
       "app_store_id": "6775773117",
-      "name": "Lumi Bopomofo Pro",
+      "name": "Lumi注音星球 Pro",
       "summary": "讓孩子愛上注音, 從一場可愛的星球冒險開始.",
       "category": "kids",
       "search_terms": [
@@ -460,8 +460,8 @@
     {
       "key": "lumiletters",
       "app_store_id": "6778748533",
-      "name": "Lumi Letters",
-      "summary": "免費下載，先玩玩看，喜歡再一次解鎖。",
+      "name": "Lumi 字母星球 Lite：兒童英文ABC遊戲",
+      "summary": "免費下載，先玩玩看，喜歡再一次解鎖。 Lumi 字母星球 Lite 把學英文字母變成一場夢幻星空大冒險。孩子不是在上課，而是在玩一個捨不得放下的遊戲。點亮一顆顆星球，描出漂亮的字母，聽聲音找字母，收集二十六位可愛的字母夥伴。每一個畫面，每一句語音，每一段音樂，都是為三到七歲的孩子細心打磨的。",
       "category": "kids",
       "search_terms": [
         "abc",
@@ -532,8 +532,8 @@
     {
       "key": "lumiletterspro",
       "app_store_id": "6778491147",
-      "name": "Lumi Letters Pro",
-      "summary": "歡迎來到 Lumi 字母星球",
+      "name": "Lumi 字母星球 Pro：ABC啟蒙",
+      "summary": "歡迎來到 Lumi 字母星球 在夢幻森林裡，和小熊 Lumi 一起把 26 個字母從「會認」一路玩到「會讀、會寫、會拼」。這不是又一個閃卡 App，而是一套完整的自然發音（Phonics）啟蒙系統，由淺入深，陪孩子打好一生受用的英文解碼力。",
       "category": "kids",
       "search_terms": [
         "abc",
@@ -593,7 +593,7 @@
     {
       "key": "lumimath",
       "app_store_id": "6778269699",
-      "name": "Lumi Math Planet",
+      "name": "Lumi數學星球：探索版",
       "summary": "有些 App 教數學。這一款，讓孩子愛上數學。",
       "category": "kids",
       "search_terms": [
@@ -692,7 +692,7 @@
     {
       "key": "lumimathpro",
       "app_store_id": "6776958488",
-      "name": "Lumi Math Pro",
+      "name": "Lumi 數學星球：兒童數學",
       "summary": "把「國際數學競賽等級」的思維，變成孩子停不下來的星際冒險",
       "category": "kids",
       "search_terms": [
@@ -756,7 +756,7 @@
     {
       "key": "lumimission",
       "app_store_id": "6779750237",
-      "name": "Lumi Mission Planet",
+      "name": "Lumi 任務星球：生活習慣養成",
       "summary": "要三到七歲的孩子乖乖刷牙、吃完飯、收玩具,不該每天都像打仗。",
       "category": "kids",
       "search_terms": [
@@ -829,7 +829,7 @@
     {
       "key": "lumimissionpro",
       "app_store_id": "6779745474",
-      "name": "Lumi Mission Planet Pro",
+      "name": "Lumi 任務星球 Pro：好習慣養成遊戲",
       "summary": "要三到七歲的孩子乖乖刷牙、吃完飯、收玩具,不該每天都像打仗。",
       "category": "kids",
       "search_terms": [
@@ -903,8 +903,8 @@
     {
       "key": "tripplanet",
       "app_store_id": "6787193643",
-      "name": "Lumi Trip Planet",
-      "summary": "將每次家庭旅行變成一次小小的太空冒險。",
+      "name": "Lumi Trip Planet 環球旅行",
+      "summary": "Trip Planet 幫助您的家人將旅行時刻變成每個人都可以分享的神奇任務。創建一次旅行，選擇智慧任務包，然後觀看您的旅程就像電影星雲中的發光星座一樣。每個人都會收到現實世界的小任務，而不是另一個清單：嘗試一種新食物，在機場勇敢地說聲謝謝，在博物館發現三種顏色，拍一張紀念照片，或幫忙收拾飯店行李。小任務。燦爛的笑容。",
       "category": "kids",
       "search_terms": [
         "家庭旅行",
@@ -936,7 +936,7 @@
     {
       "key": "lumiweather",
       "app_store_id": "6779552704",
-      "name": "Lumi Weather",
+      "name": "Lumi天氣星球 親子出遊指數",
       "summary": "有些早晨，你抱著扭來扭去的孩子站在窗邊，心裡只有一個小小的擔心：今天會不會太冷、太熱、太濕，不適合帶他出門？",
       "category": "kids",
       "search_terms": [
@@ -1000,7 +1000,7 @@
     {
       "key": "mochi",
       "app_store_id": "6785004775",
-      "name": "Mochi",
+      "name": "Mochi: 可愛待辦清單",
       "summary": "Mochi 是一款可愛又療癒的待辦清單 App，讓安排生活不再只是壓力，而是一件有質感的小事。寫下任務，輕點小圓圈完成打勾，讓每一次完成都帶來舒服的成就感。",
       "category": "productivity",
       "search_terms": [
@@ -1052,7 +1052,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream",
+      "name": "PhotoCream Pro",
       "summary": "PhotoCream Pro 是您在 iPhone 和 iPad 上的終極拍攝夥伴。無論您是懷舊攝影愛好者還是自拍達人，這款應用都能滿足您的需求。超過100種真實膠片濾鏡，讓每張照片都充滿藝術感。即時預覽功能讓您在拍攝前即可看到濾鏡效果，捕捉完美瞬間。",
       "category": "photo-utility",
       "search_terms": [
@@ -1112,7 +1112,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear",
+      "name": "PicClear Pro",
       "summary": "清出佔空間的照片，騰出好幾 GB 的儲存空間——重複照片、螢幕截圖、模糊照片，還有最吃空間的影片。",
       "category": "photo-utility",
       "search_terms": [
@@ -1171,7 +1171,7 @@
     {
       "key": "scanto",
       "app_store_id": "6779977651",
-      "name": "ScanTo Pro",
+      "name": "ScanTo Pro: 離線PDF掃描",
       "summary": "一款連「讀文件裡的字」都在你手機上完成、而且永不連網的掃描器。",
       "category": "productivity",
       "search_terms": [
@@ -1219,7 +1219,7 @@
     {
       "key": "sereno",
       "app_store_id": "6788236641",
-      "name": "Sereno",
+      "name": "Sereno: 極致睡眠音效",
       "summary": "Sereno 將您的手機變成高端的睡眠、專注和寧靜的音效機。數十種精心調整的聲音在您的設備上即時生成，並融合成超過 1000 種獨特的音景——因此雨聲永不重複，海洋聲音永不重複，只是一種無盡的、柔和的混合，伴您度過整個夜晚。",
       "category": "sleep-sound",
       "search_terms": [
@@ -1266,7 +1266,7 @@
     {
       "key": "snapport",
       "app_store_id": "6780575828",
-      "name": "Snapport",
+      "name": "Snapport: 護照證件照",
       "summary": "在家製作護照、簽證與證件照——用更沉著、更私密的方式完成。Snapport 提供常用尺寸範本、臉部對齊指引、背景工具與可列印版型，所有處理都直接在你的 iPhone 上完成。",
       "category": "photo-utility",
       "search_terms": [
@@ -1330,7 +1330,7 @@
       "key": "sononote",
       "app_store_id": "6782139553",
       "name": "Sono Note",
-      "summary": "自然地說話，擁有讓你驕傲的文字。",
+      "summary": "Sono Note 將你隨意的思考方式——大聲說出來——轉化為乾淨、結構化的文字，只需幾秒鐘。捕捉一個想法、一堂課、一通客戶電話或快速更新，Sono Note 會將其轉錄、整理，並交給你一份完成的筆記：清晰的摘要、重點、你的行動項目，以及準備好發送的後續郵件。通常在你放下手機前就能完成。",
       "category": "productivity",
       "search_terms": [
         "語音轉文字",
@@ -1386,7 +1386,7 @@
     {
       "key": "tripbee",
       "app_store_id": "6787754435",
-      "name": "TripBee Pro: Trip Planner",
+      "name": "TripBee: 旅遊行程規劃",
       "summary": "把每一段旅程，都整理成漂亮、私密、完全離線的隨身計畫書。",
       "category": "travel",
       "search_terms": [
@@ -1438,8 +1438,8 @@
     {
       "key": "unblurry",
       "app_store_id": "6782275018",
-      "name": "Unblurry",
-      "summary": "照片模糊了？一鍵變得清晰透亮。",
+      "name": "Unblurry Pro：模糊變清晰",
+      "summary": "Unblurry 能在幾秒內把柔焦、手震、失焦的照片變得銳利鮮明，而且全程都在你的 iPhone 上完成。不用雲端、不用帳號、不必等待。",
       "category": "photo-utility",
       "search_terms": [
         "去模糊",
@@ -1498,7 +1498,7 @@
     {
       "key": "wordmate",
       "app_store_id": "6789917808",
-      "name": "Wordmate: Learn 44 Languages",
+      "name": "Wordmate：44 種語言背單字",
       "summary": "把零碎時間變成真正的字彙累積。Wordmate 將 44 種語言的結構化單字學習帶到 iPhone、iPad、主畫面互動小工具與 Apple Watch；從手中到手腕，通勤、排隊或短暫空檔都能自然接續。",
       "category": "education",
       "search_terms": [

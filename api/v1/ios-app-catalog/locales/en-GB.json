@@ -2,7 +2,7 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.1.0",
   "date_modified": "2026-07-17",
-  "content_digest": "3c3a1ff4e3c06adf0e7459b4ca1df042800d6c0346024f1286734dc4cc22c7a3",
+  "content_digest": "b26a6a616fbb32611e60f59a79198da069fac002c4e1b10d1488106434f8e343",
   "locale": "en-GB",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -12,7 +12,7 @@
       "key": "aim990",
       "app_store_id": "6784974530",
       "name": "Aim990",
-      "summary": "Aim990 is your ultimate partner in conquering the TOEIC Listening & Reading test. Designed with a 30-day structured study plan, our app provides daily",
+      "summary": "Aim990 is your ultimate partner in conquering the TOEIC Listening & Reading test. Designed with a 30-day structured study plan, our app provides daily Listening and Reading exercises tailored to boost your skills step by step.",
       "category": "education",
       "search_terms": [
         "TOEIC",
@@ -44,7 +44,7 @@
     {
       "key": "cvdesk",
       "app_store_id": "6781337213",
-      "name": "CV Desk",
+      "name": "CV Desk: ATS CV Builder",
       "summary": "Build an ATS-ready CV that recruiter systems can actually read — entirely on your iPhone. No account, no uploads and no subscription.",
       "category": "productivity",
       "search_terms": [
@@ -98,7 +98,7 @@
     {
       "key": "cyca",
       "app_store_id": "6782251621",
-      "name": "Cyca",
+      "name": "Cyca: Period & Cycle Tracker",
       "summary": "Meet Cyca — a calm, private way to understand your cycle.",
       "category": "health",
       "search_terms": [
@@ -153,7 +153,7 @@
       "key": "gmoney",
       "app_store_id": "6755782939",
       "name": "G+Money",
-      "summary": "G+Money is two everyday tools in one — a lightning-fast currency converter and a beautiful expense tracker — built for daily life and travel alike. Fully",
+      "summary": "G+Money is two everyday tools in one — a lightning-fast currency converter and a beautiful expense tracker — built for daily life and travel alike. Fully offline. Completely private.",
       "category": "finance",
       "search_terms": [
         "expense tracker",
@@ -204,7 +204,7 @@
     {
       "key": "hourstag",
       "app_store_id": "6754218117",
-      "name": "HoursTag",
+      "name": "HoursTag: Hours to Buy",
       "summary": "What does it really cost? Not just in pounds, but in hours of your life.",
       "category": "finance",
       "search_terms": [
@@ -257,7 +257,7 @@
       "key": "lockhour",
       "app_store_id": "6780107485",
       "name": "LockHour Pro",
-      "summary": "Protect your best hours. LockHour Pro helps you commit to calm focus sessions, reduce phone distractions and build better work habits without clutter. It",
+      "summary": "Protect your best hours. LockHour Pro helps you commit to calm focus sessions, reduce phone distractions and build better work habits without clutter. It is made for study, deep work, writing, planning and any task that deserves your full attention.",
       "category": "productivity",
       "search_terms": [
         "app blocker",
@@ -304,7 +304,7 @@
       "key": "lumibopomofo",
       "app_store_id": "6773017109",
       "name": "Lumi Bopomofo",
-      "summary": "A playful first step into Mandarin Chinese sounds.",
+      "summary": "A playful first step into Mandarin Chinese sounds. Lumi Bopomofo turns Zhuyin, the phonetic system used for Mandarin, into a charming planet-themed game for children aged 3–6. Short activities help young learners recognise symbols, sounds and combinations with confidence.",
       "category": "kids",
       "search_terms": [
         "zhuyin",
@@ -352,8 +352,8 @@
     {
       "key": "lumibopomofopro",
       "app_store_id": "6775773117",
-      "name": "Lumi Bopomofo Pro",
-      "summary": "A playful first step into Mandarin Chinese sounds.",
+      "name": "Lumi Bopomofo Pro: Zhuyin",
+      "summary": "A playful first step into Mandarin Chinese sounds. Lumi Bopomofo Pro turns Zhuyin, the phonetic system used for Mandarin, into a charming planet-themed game for children aged 3–6. Short activities help young learners recognise symbols, sounds and combinations with confidence.",
       "category": "kids",
       "search_terms": [
         "zhuyin",
@@ -401,8 +401,8 @@
     {
       "key": "lumiletters",
       "app_store_id": "6778748533",
-      "name": "Lumi Letters",
-      "summary": "A gentle first step into the English alphabet. Lumi Letters Lite helps children aged 3–6 learn with cute planets, calm play and clear letter practice for",
+      "name": "Lumi Letters Lite: ABC Kids",
+      "summary": "A gentle first step into the English alphabet. Lumi Letters Lite helps children aged 3–6 learn with cute planets, calm play and clear letter practice for nursery, reception and home learning.",
       "category": "kids",
       "search_terms": [
         "abc",
@@ -449,8 +449,8 @@
     {
       "key": "lumiletterspro",
       "app_store_id": "6778491147",
-      "name": "Lumi Letters Pro",
-      "summary": "A gentle first step into the English alphabet. Lumi Letters Pro helps children aged 3–6 learn with cute planets, calm play and clear letter practice for",
+      "name": "Lumi Letters Pro: ABC Phonics",
+      "summary": "A gentle first step into the English alphabet. Lumi Letters Pro helps children aged 3–6 learn with cute planets, calm play and clear letter practice for nursery, reception and home learning.",
       "category": "kids",
       "search_terms": [
         "abc",
@@ -497,8 +497,8 @@
     {
       "key": "lumimath",
       "app_store_id": "6778269699",
-      "name": "Lumi Math Planet",
-      "summary": "Lumi Math Planet turns early maths into a warm space adventure for children ages 3–6. Kids count, compare, add and solve logic puzzles while lighting up",
+      "name": "Lumi Math Planet: Explorer",
+      "summary": "Lumi Math Planet turns early maths into a warm space adventure for children ages 3–6. Kids count, compare, add and solve logic puzzles while lighting up cute planets at their own pace.",
       "category": "kids",
       "search_terms": [
         "preschool maths",
@@ -582,8 +582,8 @@
     {
       "key": "lumimathpro",
       "app_store_id": "6776958488",
-      "name": "Lumi Math Pro",
-      "summary": "Turn real mathematical thinking into a gentle space adventure. Lumi Math Pro helps children aged 3–6 practise counting, number sense, addition, patterns",
+      "name": "Lumi Math Pro: Kids Numbers",
+      "summary": "Turn real mathematical thinking into a gentle space adventure. Lumi Math Pro helps children aged 3–6 practise counting, number sense, addition, patterns, shapes and logic through short, playful challenges.",
       "category": "kids",
       "search_terms": [
         "mental maths",
@@ -638,7 +638,7 @@
       "key": "lumimission",
       "app_store_id": "6779750237",
       "name": "Lumi Mission Planet",
-      "summary": "Turn everyday routines into gentle wins for your child.",
+      "summary": "Turn everyday routines into gentle wins for your child. Lumi Mission Planet helps children aged 3–6 practise brushing teeth, getting dressed, tidying up, bedtime steps and small chores through calm, playful missions. Stars celebrate effort and build confidence without adverts, pressure or noisy distractions.",
       "category": "kids",
       "search_terms": [
         "reward chart",
@@ -693,7 +693,7 @@
       "key": "lumimissionpro",
       "app_store_id": "6779745474",
       "name": "Lumi Mission Planet Pro",
-      "summary": "Turn everyday routines into gentle wins for your child.",
+      "summary": "Turn everyday routines into gentle wins for your child. Lumi Mission Planet helps children aged 3–6 practise brushing teeth, getting dressed, tidying up, bedtime steps and small chores through calm, playful missions. Stars celebrate effort and build confidence without adverts, pressure or noisy distractions.",
       "category": "kids",
       "search_terms": [
         "routine chart",
@@ -747,7 +747,7 @@
     {
       "key": "tripplanet",
       "app_store_id": "6787193643",
-      "name": "Lumi Trip Planet",
+      "name": "Lumi Trip Planet: World Travel",
       "summary": "Turn every family trip into a tiny space adventure.",
       "category": "kids",
       "search_terms": [
@@ -780,7 +780,7 @@
     {
       "key": "lumiweather",
       "app_store_id": "6779552704",
-      "name": "Lumi Weather",
+      "name": "Lumi Weather: Family Forecast",
       "summary": "Before you head out with a little one, Lumi Weather gives the answer parents actually need: is today a good day to play outside?",
       "category": "kids",
       "search_terms": [
@@ -841,8 +841,8 @@
     {
       "key": "mochi",
       "app_store_id": "6785004775",
-      "name": "Mochi",
-      "summary": "Mochi makes everyday planning feel cute, calm and beautifully simple. Add your tasks, tap the little circle when something is done, and enjoy the gentle",
+      "name": "Mochi: Cute Checklist",
+      "summary": "Mochi makes everyday planning feel cute, calm and beautifully simple. Add your tasks, tap the little circle when something is done, and enjoy the gentle satisfaction of bringing order to your day.",
       "category": "productivity",
       "search_terms": [
         "to do",
@@ -877,8 +877,8 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream",
-      "summary": "Experience retro photography with PhotoCream Pro, a premium film camera app offering over 100 authentic analogue filters and live preview. Enjoy a pro",
+      "name": "PhotoCream Pro",
+      "summary": "Experience retro photography with PhotoCream Pro, a premium film camera app offering over 100 authentic analogue filters and live preview. Enjoy a pro photo editor equipped with frequency-separation skin beauty, face/body reshaping, and light/colour/curves adjustments. One-time purchase, no subscription, no ads, and fully private. Suitable for iPhone & iPad, available in 22 languages. Capture moments in classic style and edit your photos with a professional touch. Download now and transform the way you capture and edit photos!",
       "category": "photo-utility",
       "search_terms": [
         "film camera",
@@ -929,7 +929,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear",
+      "name": "PicClear Pro",
       "summary": "Free up gigabytes by clearing out the photos you don’t need: duplicates, screenshots, blurry shots and space-hungry videos.",
       "category": "photo-utility",
       "search_terms": [
@@ -987,7 +987,7 @@
     {
       "key": "scanto",
       "app_store_id": "6779977651",
-      "name": "ScanTo Pro",
+      "name": "ScanTo Pro: Offline PDF OCR",
       "summary": "A document scanner that keeps everything on your device — even OCR.",
       "category": "productivity",
       "search_terms": [
@@ -1023,8 +1023,8 @@
     {
       "key": "sereno",
       "app_store_id": "6788236641",
-      "name": "Sereno",
-      "summary": "Sereno turns your phone into a high-end sound machine for sleep, focus, and calm. Dozens of hand-tuned sounds are generated live on your device and blend",
+      "name": "Sereno: Sleep & Relax",
+      "summary": "Sereno turns your phone into a high-end sound machine for sleep, focus, and calm. Dozens of hand-tuned sounds are generated live on your device and blend into 1000+ unique soundscapes — so the rain never loops and the ocean never repeats, just an endless, gentle mix that carries you through the night.",
       "category": "sleep-sound",
       "search_terms": [
         "sleep sounds",
@@ -1058,8 +1058,8 @@
     {
       "key": "snapport",
       "app_store_id": "6780575828",
-      "name": "Snapport",
-      "summary": "Create passport, visa and ID photos at home — the calm, private way. Snapport gives you common size templates, face-alignment guides, background tools",
+      "name": "Snapport: Passport & ID",
+      "summary": "Create passport, visa and ID photos at home — the calm, private way. Snapport gives you common size templates, face-alignment guides, background tools and print-ready layouts, all processed right on your iPhone.",
       "category": "photo-utility",
       "search_terms": [
         "passport photo",
@@ -1196,7 +1196,7 @@
     {
       "key": "unblurry",
       "app_store_id": "6782275018",
-      "name": "Unblurry",
+      "name": "Unblurry Pro: Unblur & HD",
       "summary": "Blurry photo? Make it crystal clear.",
       "category": "photo-utility",
       "search_terms": [
@@ -1254,7 +1254,7 @@
       "key": "wordmate",
       "app_store_id": "6789917808",
       "name": "Wordmate: Learn 44 Languages",
-      "summary": "Vocabulary practice should fit around your day, not demand another long session. Wordmate brings structured learning in 44 languages to iPhone, iPad, an",
+      "summary": "Vocabulary practice should fit around your day, not demand another long session. Wordmate brings structured learning in 44 languages to iPhone, iPad, an interactive Home Screen widget and Apple Watch, making a train journey, queue or spare minute count.",
       "category": "education",
       "search_terms": [
         "flashcards",

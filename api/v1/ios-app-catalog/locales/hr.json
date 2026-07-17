@@ -2,7 +2,7 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.1.0",
   "date_modified": "2026-07-17",
-  "content_digest": "3c3a1ff4e3c06adf0e7459b4ca1df042800d6c0346024f1286734dc4cc22c7a3",
+  "content_digest": "b26a6a616fbb32611e60f59a79198da069fac002c4e1b10d1488106434f8e343",
   "locale": "hr",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -11,8 +11,8 @@
     {
       "key": "aim990",
       "app_store_id": "6784974530",
-      "name": "Aim990",
-      "summary": "Želite li postići najbolji rezultat na TOEIC ispitu? Aim990 je vaš idealan partner za pripremu! Naša aplikacija nudi 30-dnevni plan učenja koji je",
+      "name": "Aim990 - TOEIC priprema",
+      "summary": "Želite li postići najbolji rezultat na TOEIC ispitu? Aim990 je vaš idealan partner za pripremu! Naša aplikacija nudi 30-dnevni plan učenja koji je prilagođen vašim potrebama. Svakodnevno ćete se suočavati s izazovima u slušanju i čitanju, a uz to ćemo vam pomoći da identificirate i ojačate svoje slabosti kroz specijalizirane vježbe.",
       "category": "education",
       "search_terms": [
         "TOEIC",
@@ -45,7 +45,7 @@
     {
       "key": "cvdesk",
       "app_store_id": "6781337213",
-      "name": "CV Desk",
+      "name": "CV Desk: ATS životopis",
       "summary": "Izradi ATS životopis koji sustavi za zapošljavanje mogu stvarno pročitati — u potpunosti na iPhoneu. Bez računa, bez prijenosa datoteka i bez pretplate.",
       "category": "productivity",
       "search_terms": [
@@ -94,8 +94,8 @@
     {
       "key": "cyca",
       "app_store_id": "6782251621",
-      "name": "Cyca",
-      "summary": "Cyca je nježan i privatan način da bolje razumiješ svoj ciklus. Zabilježi menstruaciju, jačinu krvarenja, simptome, raspoloženje i bilješke u nekoliko",
+      "name": "Cyca: Menstrualni kalendar",
+      "summary": "Cyca je nježan i privatan način da bolje razumiješ svoj ciklus. Zabilježi menstruaciju, jačinu krvarenja, simptome, raspoloženje i bilješke u nekoliko sekundi, pa u mirnom kalendaru pogledaj sljedeću menstruaciju, plodne dane i ovulaciju.",
       "category": "health",
       "search_terms": [
         "menstrualni kalendar",
@@ -144,7 +144,7 @@
       "key": "gmoney",
       "app_store_id": "6755782939",
       "name": "G+Money",
-      "summary": "G+Money čini osobno praćenje novca jednostavnim i nenametljivim. Zabilježi svaki trošak, organiziraj ga po kategoriji, putovanju ili događaju i odmah",
+      "summary": "G+Money čini osobno praćenje novca jednostavnim i nenametljivim. Zabilježi svaki trošak, organiziraj ga po kategoriji, putovanju ili događaju i odmah vidi kamo novac odlazi.",
       "category": "finance",
       "search_terms": [
         "troškovi",
@@ -192,7 +192,7 @@
     {
       "key": "hourstag",
       "app_store_id": "6754218117",
-      "name": "HoursTag",
+      "name": "HoursTag: Sati za kupnju",
       "summary": "Koliko to stvarno košta? Ne u eurima, nego u satima vašeg života.",
       "category": "finance",
       "search_terms": [
@@ -243,7 +243,7 @@
       "key": "lockhour",
       "app_store_id": "6780107485",
       "name": "LockHour Pro",
-      "summary": "Zastitite svoje najbolje sate. LockHour Pro pomaze vam da se posvetite mirnim sesijama fokusa, smanjite ometanja telefonom i izgradite bolje radne navike",
+      "summary": "Zastitite svoje najbolje sate. LockHour Pro pomaze vam da se posvetite mirnim sesijama fokusa, smanjite ometanja telefonom i izgradite bolje radne navike bez nereda. Stvoren je za ucenje, duboki rad, pisanje, planiranje i svaki zadatak koji zasluzuje punu paznju.",
       "category": "productivity",
       "search_terms": [
         "blokada aplikacija",
@@ -291,7 +291,7 @@
       "key": "lumibopomofo",
       "app_store_id": "6773017109",
       "name": "Lumi Bopomofo",
-      "summary": "Razigran prvi korak u zvukove mandarinskog kineskog.",
+      "summary": "Razigran prvi korak u zvukove mandarinskog kineskog. Lumi Bopomofo pretvara Zhuyin, fonetski sustav za mandarinski, u drazesnu igru s temom planeta za djecu od 3 do 6 godina. Kratke aktivnosti pomazu malim ucenicima da s pouzdanjem prepoznaju simbole, zvukove i kombinacije.",
       "category": "kids",
       "search_terms": [
         "zhuyin",
@@ -341,8 +341,8 @@
     {
       "key": "lumibopomofopro",
       "app_store_id": "6775773117",
-      "name": "Lumi Bopomofo Pro",
-      "summary": "Slatka Zhuyin pustolovina za djecu od 3 do 7 godina. Lumi Bopomofo Pro uči svih 37 Bopomofo znakova kroz slušanje, prepoznavanje, tonove, spajanje",
+      "name": "Lumi Bopomofo Pro: Zhuyin",
+      "summary": "Slatka Zhuyin pustolovina za djecu od 3 do 7 godina. Lumi Bopomofo Pro uči svih 37 Bopomofo znakova kroz slušanje, prepoznavanje, tonove, spajanje glasova i pisanje po tragu.",
       "category": "kids",
       "search_terms": [
         "zhuyin",
@@ -387,8 +387,8 @@
     {
       "key": "lumiletters",
       "app_store_id": "6778748533",
-      "name": "Lumi Letters",
-      "summary": "Njezan prvi korak u englesku abecedu. Lumi Letters Lite pomaze djeci od 3 do 6 godina da uce uz slatke planete, smirenu igru i jasno vjezbanje slova — za",
+      "name": "Lumi Letters Lite: ABC",
+      "summary": "Njezan prvi korak u englesku abecedu. Lumi Letters Lite pomaze djeci od 3 do 6 godina da uce uz slatke planete, smirenu igru i jasno vjezbanje slova — za vrtic, predskolski i ucenje kod kuce.",
       "category": "kids",
       "search_terms": [
         "abc",
@@ -438,7 +438,7 @@
     {
       "key": "lumiletterspro",
       "app_store_id": "6778491147",
-      "name": "Lumi Letters Pro",
+      "name": "Lumi Letters Pro: ABC Phonics",
       "summary": "Nježan ABC početak za djecu od 3 do 6 godina. Lumi Letters Pro uči nazive slova, glasove, pisanje po tragu i foniku kroz slatke planete i miran ritam.",
       "category": "kids",
       "search_terms": [
@@ -485,8 +485,8 @@
     {
       "key": "lumimath",
       "app_store_id": "6778269699",
-      "name": "Lumi Math Planet",
-      "summary": "Lumi Math Planet pretvara ranu matematiku u toplu svemirsku pustolovinu za djecu od 3 do 6 godina. Djeca broje, uspoređuju, zbrajaju i rješavaju logičke",
+      "name": "Lumi Math Planet: Explorer",
+      "summary": "Lumi Math Planet pretvara ranu matematiku u toplu svemirsku pustolovinu za djecu od 3 do 6 godina. Djeca broje, uspoređuju, zbrajaju i rješavaju logičke zadatke dok slatki planeti svijetle.",
       "category": "kids",
       "search_terms": [
         "matematika za djecu",
@@ -565,8 +565,8 @@
     {
       "key": "lumimathpro",
       "app_store_id": "6776958488",
-      "name": "Lumi Math Pro",
-      "summary": "Pretvorite matematičko razmišljanje u toplu svemirsku avanturu. Lumi Math Pro pomaže djeci od 3 do 6 godina vježbati brojanje, osjećaj za brojeve",
+      "name": "Lumi Math Pro: Brojevi",
+      "summary": "Pretvorite matematičko razmišljanje u toplu svemirsku avanturu. Lumi Math Pro pomaže djeci od 3 do 6 godina vježbati brojanje, osjećaj za brojeve, zbrajanje, obrasce, oblike i logiku kroz kratke, jasne zadatke.",
       "category": "kids",
       "search_terms": [
         "računanje napamet",
@@ -619,7 +619,7 @@
       "key": "lumimission",
       "app_store_id": "6779750237",
       "name": "Lumi Mission Planet",
-      "summary": "Pretvorite svakodnevne rutine u male, vesele pobjede. Lumi Mission Planet pomaže djeci od 3 do 7 godina prati zube, jesti, pospremati igračke, spremati",
+      "summary": "Pretvorite svakodnevne rutine u male, vesele pobjede. Lumi Mission Planet pomaže djeci od 3 do 7 godina prati zube, jesti, pospremati igračke, spremati se za spavanje i školu kroz nježne svemirske misije.",
       "category": "kids",
       "search_terms": [
         "tablica nagrađivanja",
@@ -674,7 +674,7 @@
       "key": "lumimissionpro",
       "app_store_id": "6779745474",
       "name": "Lumi Mission Planet Pro",
-      "summary": "Pretvorite svakodnevne rutine u male, vesele pobjede. Lumi Mission Planet pomaže djeci od 3 do 7 godina prati zube, jesti, pospremati igračke, spremati",
+      "summary": "Pretvorite svakodnevne rutine u male, vesele pobjede. Lumi Mission Planet pomaže djeci od 3 do 7 godina prati zube, jesti, pospremati igračke, spremati se za spavanje i školu kroz nježne svemirske misije.",
       "category": "kids",
       "search_terms": [
         "dnevna rutina djece",
@@ -725,7 +725,7 @@
     {
       "key": "tripplanet",
       "app_store_id": "6787193643",
-      "name": "Lumi Trip Planet",
+      "name": "Lumi Trip Planet: Putovanja",
       "summary": "Pretvorite svako obiteljsko putovanje u malu svemirsku avanturu.",
       "category": "kids",
       "search_terms": [
@@ -756,7 +756,7 @@
     {
       "key": "lumiweather",
       "app_store_id": "6779552704",
-      "name": "Lumi Weather",
+      "name": "Lumi Weather: Obitelj",
       "summary": "Prije izlaska s djetetom Lumi Weather daje miran, jasan odgovor: je li danas dobar dan za igru vani?",
       "category": "kids",
       "search_terms": [
@@ -815,8 +815,8 @@
     {
       "key": "mochi",
       "app_store_id": "6785004775",
-      "name": "Mochi",
-      "summary": "Mochi je slatka i umirujuća aplikacija za zadatke koja planiranje dana pretvara u mali trenutak zadovoljstva. Zapiši što trebaš napraviti, dodirni kružić",
+      "name": "Mochi: Slatki zadaci",
+      "summary": "Mochi je slatka i umirujuća aplikacija za zadatke koja planiranje dana pretvara u mali trenutak zadovoljstva. Zapiši što trebaš napraviti, dodirni kružić kad završiš i uživaj u osjećaju napretka bez pritiska.",
       "category": "productivity",
       "search_terms": [
         "zadaci",
@@ -850,8 +850,8 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream",
-      "summary": "PhotoCream Pro pretvara iPhone i iPad u toplu retro kameru i profinjeni foto editor. Snimajte s više od 100 analognih filtera, nježnim zrnom i",
+      "name": "PhotoCream Pro",
+      "summary": "PhotoCream Pro pretvara iPhone i iPad u toplu retro kameru i profinjeni foto editor. Snimajte s više od 100 analognih filtera, nježnim zrnom i svjetlosnim efektima ili uredite selfie prirodno i elegantno.",
       "category": "photo-utility",
       "search_terms": [
         "analogni fotoaparat",
@@ -901,7 +901,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear",
+      "name": "PicClear Pro",
       "summary": "Oslobodi gigabajte prostora uklanjanjem fotografija koje ti više ne trebaju: duplikata, starih snimki zaslona, zamućenih kadrova i velikih videozapisa.",
       "category": "photo-utility",
       "search_terms": [
@@ -956,7 +956,7 @@
     {
       "key": "scanto",
       "app_store_id": "6779977651",
-      "name": "ScanTo Pro",
+      "name": "ScanTo Pro: PDF i OCR",
       "summary": "Skener dokumenata koji sve obavlja na uređaju — uključujući prepoznavanje teksta.",
       "category": "productivity",
       "search_terms": [
@@ -991,8 +991,8 @@
     {
       "key": "sereno",
       "app_store_id": "6788236641",
-      "name": "Sereno",
-      "summary": "Sereno pretvara vaš telefon u vrhunsku zvučnu mašinu za spavanje, fokus i smirenost. Deseci pažljivo podešenih zvukova generiraju se uživo na vašem uređaju",
+      "name": "Sereno: Zvukovi za san",
+      "summary": "Sereno pretvara vaš telefon u vrhunsku zvučnu mašinu za spavanje, fokus i smirenost. Deseci pažljivo podešenih zvukova generiraju se uživo na vašem uređaju i miješaju u više od 1000 jedinstvenih zvučnih pejzaža — tako da kiša nikad ne ponavlja, a ocean se nikad ne ponavlja, samo beskonačna, nježna mješavina koja vas nosi kroz noć.",
       "category": "sleep-sound",
       "search_terms": [
         "zvukovi za spavanje",
@@ -1025,8 +1025,8 @@
     {
       "key": "snapport",
       "app_store_id": "6780575828",
-      "name": "Snapport",
-      "summary": "Izradite fotografije za putovnicu, vizu i osobne dokumente kod kuće, mirno i privatno. Snapport nudi predloške uobičajenih dimenzija, vodiče za",
+      "name": "Snapport: Slike za Putovnicu",
+      "summary": "Izradite fotografije za putovnicu, vizu i osobne dokumente kod kuće, mirno i privatno. Snapport nudi predloške uobičajenih dimenzija, vodiče za poravnanje lica, alate za pozadinu i rasporede spremne za ispis, a obrada se odvija izravno na vašem iPhoneu.",
       "category": "photo-utility",
       "search_terms": [
         "slika za putovnicu",
@@ -1127,7 +1127,7 @@
     {
       "key": "tripbee",
       "app_store_id": "6787754435",
-      "name": "TripBee Pro: Trip Planner",
+      "name": "TripBee: Planer Putovanja",
       "summary": "Isplaniraj svako putovanje u jednoj lijepoj, privatnoj i offline aplikaciji.",
       "category": "travel",
       "search_terms": [
@@ -1163,7 +1163,7 @@
     {
       "key": "unblurry",
       "app_store_id": "6782275018",
-      "name": "Unblurry",
+      "name": "Unblurry Pro: Jasne fotke",
       "summary": "Mutna fotografija? Pretvorite je u jasnu i oštru.",
       "category": "photo-utility",
       "search_terms": [
@@ -1221,8 +1221,8 @@
     {
       "key": "wordmate",
       "app_store_id": "6789917808",
-      "name": "Wordmate: Learn 44 Languages",
-      "summary": "Wordmate je cjelovita aplikacija koja se plaća izravno pri preuzimanju. Kupujete je jednom i dobivate cijelu aplikaciju: 44 jezika, sve razine učenja",
+      "name": "Wordmate: Učite nove riječi",
+      "summary": "Wordmate je cjelovita aplikacija koja se plaća izravno pri preuzimanju. Kupujete je jednom i dobivate cijelu aplikaciju: 44 jezika, sve razine učenja, interaktivni widget i Apple Watch. Nema pretplate, dodatnih plaćanja u aplikaciji, plaćenih nadogradnji ni sadržaja koji se kupuje zasebno.",
       "category": "education",
       "search_terms": [
         "engleski",

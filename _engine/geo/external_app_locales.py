@@ -333,3 +333,77 @@ EXTERNAL_APP_LOCALES = {
         },
     },
 }
+
+
+# External-site copy only. These seven App Store records currently contain
+# English copy, so the public guides must not inherit it as localized text.
+EXTERNAL_APP_LOCALE_OVERRIDES = {
+    "aim990": {
+        "ca": {
+            "subtitle": "Pla de 30 dies per preparar el TOEIC",
+            "description": (
+                "Prepara el TOEIC amb un pla diari de Listening i Reading, "
+                "exercicis centrats en els punts febles i seguiment del progrés "
+                "durant 30 dies."
+            ),
+            "promotionalText": (
+                "Prepara el TOEIC durant 30 dies amb plans diaris, pràctica dels "
+                "punts febles i seguiment del progrés."
+            ),
+            "keywords": (
+                "TOEIC, preparació TOEIC, examen d'anglès, pla d'estudi, "
+                "comprensió oral, comprensió lectora, gramàtica anglesa, "
+                "vocabulari anglès, simulacre d'examen, seguiment del progrés"
+            ),
+        },
+        "gu-IN": {
+            "subtitle": "TOEIC માટે 30 દિવસની તૈયારી",
+            "description": (
+                "રોજિંદા Listening અને Reading પ્લાન, નબળા વિષયોની પ્રેક્ટિસ "
+                "અને પ્રોગ્રેસ ટ્રેકિંગ સાથે TOEIC ની વ્યવસ્થિત તૈયારી કરો."
+            ),
+        },
+        "kn-IN": {
+            "subtitle": "TOEICಗಾಗಿ 30 ದಿನಗಳ ಸ್ಟಡಿ ಪ್ಲಾನ್",
+            "description": (
+                "ದೈನಂದಿನ Listening, Reading ಅಭ್ಯಾಸ, ದುರ್ಬಲ ವಿಷಯಗಳ ತರಬೇತಿ "
+                "ಮತ್ತು ಪ್ರಗತಿ ಟ್ರ್ಯಾಕಿಂಗ್‌ನೊಂದಿಗೆ TOEIC ಪರೀಕ್ಷೆಗೆ ಸಿದ್ಧರಾಗಿ."
+            ),
+        },
+        "ml-IN": {
+            "subtitle": "TOEIC-ന് 30 ദിവസത്തെ സ്റ്റഡി പ്ലാൻ",
+            "description": (
+                "ദൈനംദിന Listening, Reading പരിശീലനം, ദുർബല മേഖലകളിലെ പഠനം, "
+                "പ്രോഗ്രസ് ട്രാക്കിംഗ് എന്നിവ വഴി TOEIC-നായി തയ്യാറെടുക്കൂ."
+            ),
+        },
+        "or-IN": {
+            "subtitle": "TOEIC ପାଇଁ ୩୦ ଦିନିଆ ପ୍ରସ୍ତୁତି",
+            "description": (
+                "ପ୍ରତିଦିନ Listening ଓ Reading ଅଭ୍ୟାସ, ଦୁର୍ବଳ ବିଷୟ ଉପରେ "
+                "ଧ୍ୟାନ ଏବଂ ପ୍ରୋଗ୍ରେସ୍ ଟ୍ରାକିଂ ସହିତ TOEIC ପାଇଁ ପ୍ରସ୍ତୁତ ହୁଅନ୍ତୁ।"
+            ),
+        },
+        "ta-IN": {
+            "subtitle": "TOEIC-க்கான 30 நாள் பயிற்சி",
+            "description": (
+                "தினசரி Listening, Reading பயிற்சி, பலவீனப் பகுதிகளில் கவனம் "
+                "மற்றும் முன்னேற்றக் கண்காணிப்புடன் TOEIC-க்குத் தயாராகுங்கள்."
+            ),
+        },
+        "te-IN": {
+            "subtitle": "TOEIC కోసం 30 రోజుల ప్రిపరేషన్",
+            "description": (
+                "రోజువారీ Listening, Reading ప్రాక్టీస్, బలహీనమైన అంశాలపై "
+                "దృష్టి మరియు ప్రోగ్రెస్ ట్రాకింగ్‌తో TOEICకు సిద్ధమవండి."
+            ),
+        },
+        "uk": {
+            "subtitle": "30-денний план для TOEIC",
+            "description": (
+                "Готуйтеся до TOEIC: щоденна практика Listening та Reading, "
+                "робота над слабкими темами й відстеження прогресу."
+            ),
+        },
+    },
+}

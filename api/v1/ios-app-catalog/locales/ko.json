@@ -2,7 +2,7 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.1.0",
   "date_modified": "2026-07-17",
-  "content_digest": "3c3a1ff4e3c06adf0e7459b4ca1df042800d6c0346024f1286734dc4cc22c7a3",
+  "content_digest": "b26a6a616fbb32611e60f59a79198da069fac002c4e1b10d1488106434f8e343",
   "locale": "ko",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -11,7 +11,7 @@
     {
       "key": "aim990",
       "app_store_id": "6784974530",
-      "name": "Aim990",
+      "name": "Aim990: 토익 준비의 비밀",
       "summary": "Aim990은 토익 990점을 목표로 하는 여러분의 완벽한 학습 파트너입니다. 30일의 체계적인 학습 계획을 통해 매일 리스닝과 리딩을 강화하는 프로그램을 제공합니다.",
       "category": "education",
       "search_terms": [
@@ -42,7 +42,7 @@
     {
       "key": "cvdesk",
       "app_store_id": "6781337213",
-      "name": "CV Desk",
+      "name": "CV Desk: ATS 이력서 제작",
       "summary": "채용 담당자의 ATS(지원자 추적 시스템)가 실제로 읽을 수 있는 이력서를 iPhone에서 완성하세요. 계정 불필요, 업로드 없음, 구독 없음.",
       "category": "productivity",
       "search_terms": [
@@ -101,7 +101,7 @@
     {
       "key": "cyca",
       "app_store_id": "6782251621",
-      "name": "Cyca",
+      "name": "Cyca 생리·배란일 트래커",
       "summary": "Cyca를 만나보세요 —— 당신의 몸을 다정하게 이해하는, 가장 사적인 주기 파트너.",
       "category": "health",
       "search_terms": [
@@ -216,7 +216,7 @@
     {
       "key": "hourstag",
       "app_store_id": "6754218117",
-      "name": "HoursTag",
+      "name": "HoursTag: 가격을 시간으로",
       "summary": "이거, 진짜 얼마일까요? 돈이 아니라 당신 인생의 ‘시간’으로.",
       "category": "finance",
       "search_terms": [
@@ -328,7 +328,7 @@
     {
       "key": "lumibopomofo",
       "app_store_id": "6773017109",
-      "name": "Lumi Bopomofo",
+      "name": "Lumi 보포모포",
       "summary": "Lumi 보포모포는 어린아이들이 중국어 주음(보포모포/Zhuyin) 음운 체계를 부드럽고 재미있게 배울 수 있는 앱입니다.",
       "category": "kids",
       "search_terms": [
@@ -384,7 +384,7 @@
     {
       "key": "lumibopomofopro",
       "app_store_id": "6775773117",
-      "name": "Lumi Bopomofo Pro",
+      "name": "Lumi Bopomofo Pro: Zhuyin",
       "summary": "사랑스러운 우주 모험을 통해 아이가 중국어 발음 학습을 즐겁게 시작하도록 도와주세요.",
       "category": "kids",
       "search_terms": [
@@ -441,8 +441,8 @@
     {
       "key": "lumiletters",
       "app_store_id": "6778748533",
-      "name": "Lumi Letters",
-      "summary": "무료로 받아서 먼저 놀아 보고, 마음에 들면 그때 잠금을 해제하세요.",
+      "name": "Lumi 레터 Lite: 어린이 영어 ABC",
+      "summary": "무료로 받아서 먼저 놀아 보고, 마음에 들면 그때 잠금을 해제하세요. Lumi 레터 Lite는 알파벳 배우기를 꿈같은 별하늘 대모험으로 바꿉니다. 아이는 수업을 듣는 게 아니라 멈추고 싶지 않은 게임을 즐깁니다. 행성을 밝히고, 예쁜 글자를 따라쓰고, 소리를 듣고 글자를 찾고, 스물여섯 명의 귀여운 글자 친구를 모읍니다. 모든 화면과 음성과 음악을 세 살부터 일곱 살 아이를 위해 정성껏 다듬었습니다.",
       "category": "kids",
       "search_terms": [
         "abc",
@@ -506,8 +506,8 @@
     {
       "key": "lumiletterspro",
       "app_store_id": "6778491147",
-      "name": "Lumi Letters Pro",
-      "summary": "Lumi 레터에 오신 걸 환영해요",
+      "name": "Lumi 레터 Pro: ABC 파닉스",
+      "summary": "Lumi 레터에 오신 걸 환영해요 신비한 숲에서 곰돌이 Lumi와 함께 26개의 글자를 '알아요'에서 '읽고, 쓰고, 소리낼 수 있어요'까지 놀이로 키워요. 또 하나의 플래시카드 앱이 아닙니다. 아이에게 평생 가는 '읽기 해독력'을 쉬운 순서로 길러 주는 본격 파닉스 프로그램입니다.",
       "category": "kids",
       "search_terms": [
         "abc",
@@ -561,7 +561,7 @@
     {
       "key": "lumimath",
       "app_store_id": "6778269699",
-      "name": "Lumi Math Planet",
+      "name": "Lumi 수학 행성: 체험판",
       "summary": "수학을 '가르치는' 앱은 많습니다. 이건, 아이가 수학을 '사랑하게' 만드는 앱입니다.",
       "category": "kids",
       "search_terms": [
@@ -648,7 +648,7 @@
     {
       "key": "lumimathpro",
       "app_store_id": "6776958488",
-      "name": "Lumi Math Pro",
+      "name": "Lumi 수학 행성: 아이 수학",
       "summary": "국제 대회 수준의 ‘생각하는 힘’을, 멈출 수 없는 우주 모험으로",
       "category": "kids",
       "search_terms": [
@@ -714,7 +714,7 @@
     {
       "key": "lumimission",
       "app_store_id": "6779750237",
-      "name": "Lumi Mission Planet",
+      "name": "Lumi 미션 별: 생활습관 루틴",
       "summary": "3살에서 7살 아이에게 양치하고 밥 먹고 장난감을 정리하게 하는 일이 매일 전쟁일 필요는 없습니다.",
       "category": "kids",
       "search_terms": [
@@ -780,7 +780,7 @@
     {
       "key": "lumimissionpro",
       "app_store_id": "6779745474",
-      "name": "Lumi Mission Planet Pro",
+      "name": "Lumi 미션 별 Pro: 생활습관 게임",
       "summary": "3살에서 7살 아이에게 양치하고 밥 먹고 장난감을 정리하게 하는 일이 매일 전쟁일 필요는 없습니다.",
       "category": "kids",
       "search_terms": [
@@ -845,7 +845,7 @@
     {
       "key": "tripplanet",
       "app_store_id": "6787193643",
-      "name": "Lumi Trip Planet",
+      "name": "Lumi Trip Planet 세계 여행",
       "summary": "모든 가족 여행을 작은 우주 모험으로 바꿔보세요.",
       "category": "kids",
       "search_terms": [
@@ -878,7 +878,7 @@
     {
       "key": "lumiweather",
       "app_store_id": "6779552704",
-      "name": "Lumi Weather",
+      "name": "루미 날씨 가족 외출 지수",
       "summary": "어떤 아침에는 꼼지락거리는 아이를 안고 창가에 서서 작은 걱정을 합니다. 오늘은 너무 춥거나, 너무 덥거나, 너무 젖어서 나가기 어려울까?",
       "category": "kids",
       "search_terms": [
@@ -945,7 +945,7 @@
     {
       "key": "mochi",
       "app_store_id": "6785004775",
-      "name": "Mochi",
+      "name": "Mochi: 귀여운 할 일 목록",
       "summary": "Mochi는 매일의 할 일을 귀엽고 포근하게 정리해 주는 체크리스트 앱입니다. 할 일을 적고, 끝나면 작은 동그라미를 탭하세요. 하나씩 체크할 때마다 하루가 조금 더 가벼워집니다.",
       "category": "productivity",
       "search_terms": [
@@ -994,8 +994,8 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream",
-      "summary": "PhotoCream Pro는 iPhone 및 iPad에서 최고의 촬영 파트너입니다. 레트로 사진 촬영 애호가나 셀카 마니아에게 완벽한 앱입니다. 100개 이상의 진짜 아날로그 필터로 모든 사진을 예술 작품으로 만듭니다. 라이브 프리뷰 기능으로 촬영 전에 필터 효과를 확인하고",
+      "name": "PhotoCream Pro",
+      "summary": "PhotoCream Pro는 iPhone 및 iPad에서 최고의 촬영 파트너입니다. 레트로 사진 촬영 애호가나 셀카 마니아에게 완벽한 앱입니다. 100개 이상의 진짜 아날로그 필터로 모든 사진을 예술 작품으로 만듭니다. 라이브 프리뷰 기능으로 촬영 전에 필터 효과를 확인하고 완벽한 순간을 포착하세요.",
       "category": "photo-utility",
       "search_terms": [
         "필름카메라",
@@ -1053,7 +1053,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear",
+      "name": "PicClear Pro",
       "summary": "필요 없는 사진을 정리하고 기가바이트 단위의 저장 공간을 되찾으세요 — 중복 사진, 스크린샷, 흐릿한 사진, 그리고 용량을 많이 차지하는 동영상까지.",
       "category": "photo-utility",
       "search_terms": [
@@ -1119,7 +1119,7 @@
     {
       "key": "scanto",
       "app_store_id": "6779977651",
-      "name": "ScanTo Pro",
+      "name": "ScanTo Pro: 오프라인 PDF",
       "summary": "'문서 속 글자를 읽는 것'까지 기기 안에서 끝내고, 절대 온라인이 되지 않는 스캐너.",
       "category": "productivity",
       "search_terms": [
@@ -1162,8 +1162,8 @@
     {
       "key": "sereno",
       "app_store_id": "6788236641",
-      "name": "Sereno",
-      "summary": "Sereno는 당신의 전화기를 수면, 집중, 그리고 평온을 위한 고급 사운드 머신으로 변환합니다. 수작업으로 조정된 수십 개의 사운드가 기기에서 실시간으로 생성되어 1000개 이상의 독특한 사운드스케이프로 혼합됩니다 — 비는 절대 반복되지 않고 바다는 절대 반복되지 않으며",
+      "name": "Sereno: 수면 사운드",
+      "summary": "Sereno는 당신의 전화기를 수면, 집중, 그리고 평온을 위한 고급 사운드 머신으로 변환합니다. 수작업으로 조정된 수십 개의 사운드가 기기에서 실시간으로 생성되어 1000개 이상의 독특한 사운드스케이프로 혼합됩니다 — 비는 절대 반복되지 않고 바다는 절대 반복되지 않으며, 밤새도록 당신을 운반하는 끝없는 부드러운 믹스만 있습니다.",
       "category": "sleep-sound",
       "search_terms": [
         "빗소리",
@@ -1207,7 +1207,7 @@
     {
       "key": "snapport",
       "app_store_id": "6780575828",
-      "name": "Snapport",
+      "name": "Snapport: 여권·신분증 사진",
       "summary": "여권, 비자, 신분증 사진을 집에서 차분하고 안전하게 만드세요. Snapport는 일반적인 크기 템플릿, 얼굴 정렬 가이드, 배경 도구, 인쇄용 레이아웃을 제공하며 모든 처리는 iPhone에서 바로 이루어집니다.",
       "category": "photo-utility",
       "search_terms": [
@@ -1317,7 +1317,7 @@
     {
       "key": "tripbee",
       "app_store_id": "6787754435",
-      "name": "TripBee Pro: Trip Planner",
+      "name": "TripBee: 여행 플래너",
       "summary": "여행 계획을 예쁘고, 안전하고, 완전 오프라인으로 보관하세요.",
       "category": "travel",
       "search_terms": [
@@ -1367,7 +1367,7 @@
     {
       "key": "unblurry",
       "app_store_id": "6782275018",
-      "name": "Unblurry",
+      "name": "Unblurry Pro: 흐림 보정",
       "summary": "흐릿한 사진? 선명하고 또렷하게 바꾸세요.",
       "category": "photo-utility",
       "search_terms": [
@@ -1432,8 +1432,8 @@
     {
       "key": "wordmate",
       "app_store_id": "6789917808",
-      "name": "Wordmate: Learn 44 Languages",
-      "summary": "바쁜 하루의 자투리 시간을 알찬 어휘 학습으로 바꿔 보세요. Wordmate는 44개 언어의 체계적인 학습을 iPhone, iPad, 홈 화면 인터랙티브 위젯과 Apple Watch로 이어 줍니다. 자연스러운 예문과 잘 짜인 학습 흐름으로 이동 중에도, 잠깐 기다리는",
+      "name": "Wordmate: 44개 언어 단어 학습",
+      "summary": "바쁜 하루의 자투리 시간을 알찬 어휘 학습으로 바꿔 보세요. Wordmate는 44개 언어의 체계적인 학습을 iPhone, iPad, 홈 화면 인터랙티브 위젯과 Apple Watch로 이어 줍니다. 자연스러운 예문과 잘 짜인 학습 흐름으로 이동 중에도, 잠깐 기다리는 동안에도 꾸준히 배울 수 있습니다.",
       "category": "education",
       "search_terms": [
         "영어공부",

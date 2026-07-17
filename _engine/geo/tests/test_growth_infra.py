@@ -96,6 +96,7 @@ import portfolio_app_finder
 import prioritize_trip_planet_resources
 import queries
 import refresh_primary_resource_answers
+import refresh_storefront_availability
 import resume_evidence_planner
 import rsscloud_config
 import screen_time_block_planner
@@ -17303,7 +17304,7 @@ class GeneratorTests(unittest.TestCase):
                             '<script type="application/ld+json">'
                             + json.dumps(
                                 {
-                                    "@type": "MobileApplication",
+                                    "@type": "SoftwareApplication",
                                     "@id": (
                                         "https://apps.apple.com/app/"
                                         "id6780575828"
@@ -17318,6 +17319,12 @@ class GeneratorTests(unittest.TestCase):
                         )
                     path.write_text(content, encoding="utf-8")
 
+            structured_summary = (
+                portfolio_app_catalog_api._localized_summary(
+                    pages / "en-US" / "snapport.html",
+                    "6780575828",
+                )
+            )
             urls = portfolio_app_catalog_api.build(
                 pages,
                 live_keys={"wordmate", "snapport"},
@@ -17423,15 +17430,32 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(stable_mtime, second_mtime)
         self.assertEqual(stable_feed_mtime, second_feed_mtime)
         self.assertEqual(
-            ["Snapport", "Wordmate: Learn 44 Languages"],
+            [
+                "Snapport: Passport & ID Photos",
+                "Wordmate: Learn 44 Languages",
+            ],
             [app["name"] for app in english["apps"]],
         )
         self.assertEqual(
-            "Complete first paragraph for Snapport.",
+            " ".join(
+                build_pages_i18n.external_localized_values(
+                    "snapport",
+                    "en-US",
+                )["description"].split("\n\n", 1)[0].split()
+            ),
             english["apps"][0]["summary"],
         )
         self.assertEqual(
-            "ja summary for snapport.",
+            "Complete first paragraph for Snapport.",
+            structured_summary,
+        )
+        self.assertEqual(
+            " ".join(
+                build_pages_i18n.external_localized_values(
+                    "snapport",
+                    "ja",
+                )["description"].split("\n\n", 1)[0].split()
+            ),
             japanese["apps"][0]["summary"],
         )
         self.assertEqual(
@@ -17488,6 +17512,10 @@ class GeneratorTests(unittest.TestCase):
                         "https://apps.apple.com/app/id"
                     )
                 )
+                self.assertLessEqual(
+                    item["date_modified"],
+                    portfolio_app_catalog_api._utc_timestamp(),
+                )
             self.assertLessEqual(
                 len(
                     json.dumps(feed, ensure_ascii=False).encode("utf-8")
@@ -17541,6 +17569,65 @@ class GeneratorTests(unittest.TestCase):
             feed_schema,
             format_checker=FormatChecker(),
         ).validate(english_feed)
+
+    def test_catalog_feed_timestamps_change_only_with_item_content(self):
+        timestamp = "2026-07-17T10:00:00Z"
+        later = "2026-07-17T11:00:00Z"
+        apps = [
+            {
+                "key": "snapport",
+                "app_store_id": "6780575828",
+                "name": "Snapport",
+                "summary": "Private passport photos.",
+                "search_terms": ["passport photo"],
+                "guide_url": (
+                    f"{portfolio_app_catalog_api.SITE}/en-US/snapport.html"
+                ),
+            },
+            {
+                "key": "wordmate",
+                "app_store_id": "6789917808",
+                "name": "Wordmate",
+                "summary": "Vocabulary practice.",
+                "search_terms": ["vocabulary"],
+                "guide_url": (
+                    f"{portfolio_app_catalog_api.SITE}/en-US/wordmate.html"
+                ),
+            },
+        ]
+        first = portfolio_app_catalog_api.feed_payload(
+            "en-US",
+            "Apps",
+            apps,
+            "2026-07-17",
+            "a" * 64,
+            timestamp=timestamp,
+        )
+        changed = [dict(app) for app in apps]
+        changed[0]["summary"] = "Private passport and ID photos."
+        second = portfolio_app_catalog_api.feed_payload(
+            "en-US",
+            "Apps",
+            changed,
+            "2026-07-17",
+            "b" * 64,
+            previous_items=first["items"],
+            timestamp=later,
+        )
+        self.assertEqual(later, second["items"][0]["date_modified"])
+        self.assertEqual(timestamp, second["items"][1]["date_modified"])
+        future = [dict(first["items"][1])]
+        future[0]["date_modified"] = "2026-07-18T00:00:00Z"
+        corrected = portfolio_app_catalog_api.feed_payload(
+            "en-US",
+            "Apps",
+            apps[1:],
+            "2026-07-17",
+            "c" * 64,
+            previous_items=future,
+            timestamp=later,
+        )
+        self.assertEqual(later, corrected["items"][0]["date_modified"])
 
     def test_primary_resource_refresh_plan_covers_every_owned_resource(self):
         expected = {
@@ -19641,15 +19728,23 @@ class GeneratorTests(unittest.TestCase):
         )[1].split("- name: Generate new answer pages", 1)[0]
         self.assertLess(
             availability_block.index("refresh=True"),
+            availability_block.index(
+                "refresh_storefront_availability.py"
+            ),
+        )
+        self.assertLess(
+            availability_block.index(
+                "refresh_storefront_availability.py"
+            ),
             availability_block.index("build_pages_i18n.py --cached-live"),
         )
         self.assertLess(
             availability_block.index("build_pages_i18n.py --cached-live"),
             availability_block.index("portfolio_app_finder.py"),
         )
-        self.assertLess(
-            availability_block.index("portfolio_app_finder.py"),
-            availability_block.index("portfolio_app_catalog_api.py"),
+        self.assertNotIn(
+            "portfolio_app_catalog_api.py",
+            availability_block,
         )
         self.assertLess(
             availability_block.index("refresh=True"),
@@ -19745,6 +19840,10 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(1, workflow.count("bopomofo_practice_sheet.py"))
         self.assertEqual(1, workflow.count("wordmate_language_support.py"))
         self.assertEqual(1, workflow.count("portfolio_app_finder.py"))
+        self.assertEqual(
+            1,
+            workflow.count("refresh_storefront_availability.py"),
+        )
         self.assertEqual(1, workflow.count("portfolio_app_catalog_api.py"))
         self.assertLess(
             workflow.index("refresh=True"),
@@ -19917,6 +20016,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_social_previews.py",
             "gen_smart_app_banners.py",
             "gen_mobile_app_identity.py",
+            "portfolio_app_catalog_api.py",
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",
@@ -20080,6 +20180,18 @@ class GeneratorTests(unittest.TestCase):
         self.assertLess(
             publish.index("portfolio_app_finder.py"),
             publish.index("portfolio_app_catalog_api.py"),
+        )
+        self.assertLess(
+            publish.index("refresh_storefront_availability.py"),
+            publish.index("build_pages_i18n.py"),
+        )
+        self.assertLess(
+            publish.index("gen_mobile_app_identity.py"),
+            publish.index("portfolio_app_catalog_api.py"),
+        )
+        self.assertLess(
+            publish.index("portfolio_app_catalog_api.py"),
+            publish.index("gen_mobile_store_ctas.py"),
         )
         self.assertEqual(
             1,
@@ -20295,6 +20407,17 @@ class GeneratorTests(unittest.TestCase):
     def test_localized_llms_cover_all_official_locales_without_fallback(self):
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)
+            (pages / app_store_storefronts.STATE_FILE).write_text(
+                json.dumps(
+                    {
+                        "countries": {
+                            "jp": ["6773017109"],
+                            "tw": ["6773017109"],
+                        }
+                    }
+                ),
+                encoding="utf-8",
+            )
             for locale in OFFICIAL_LOCALES:
                 localized = pages / locale / "lumibopomofo.html"
                 localized.parent.mkdir(parents=True, exist_ok=True)
@@ -20418,6 +20541,26 @@ class GeneratorTests(unittest.TestCase):
                         canonical, locale
                     ),
                 )
+        availability = {
+            "tw": frozenset({"6773017109"}),
+            "cn": frozenset(),
+        }
+        self.assertEqual(
+            expected["zh-Hant"],
+            app_store_storefronts.verified_app_store_url(
+                canonical,
+                "zh-Hant",
+                availability,
+            ),
+        )
+        self.assertEqual(
+            canonical,
+            app_store_storefronts.verified_app_store_url(
+                canonical,
+                "zh-Hans",
+                availability,
+            ),
+        )
         for invalid in (
             "https://apps.apple.com/app/id6773017109?ct=test",
             "https://apps.apple.com.evil/app/id6773017109",
@@ -20427,6 +20570,80 @@ class GeneratorTests(unittest.TestCase):
                 app_store_storefronts.localized_app_store_url(
                     invalid, "en-US"
                 )
+
+    def test_storefront_snapshot_refreshes_all_mapped_countries(self):
+        app_id = APPSTORE["lumibopomofo"]
+        with tempfile.TemporaryDirectory() as directory, mock.patch.object(
+            refresh_storefront_availability,
+            "live_app_keys",
+            return_value={"lumibopomofo"},
+        ), mock.patch.object(
+            refresh_storefront_availability,
+            "_lookup_country",
+            side_effect=lambda ids, country: (
+                set() if country == "cn" else set(ids)
+            ),
+        ):
+            snapshot = refresh_storefront_availability.refresh(
+                directory,
+                force=True,
+            )
+            payload = json.loads(
+                (
+                    Path(directory)
+                    / app_store_storefronts.STATE_FILE
+                ).read_text(encoding="utf-8")
+            )
+        self.assertEqual(
+            set(app_store_storefronts.LOCALE_STOREFRONTS.values()),
+            set(snapshot),
+        )
+        self.assertEqual(frozenset(), snapshot["cn"])
+        self.assertEqual(frozenset({app_id}), snapshot["tw"])
+        self.assertEqual(1, payload["app_count"])
+
+    def test_external_catalog_copy_is_native_for_every_live_app(self):
+        pages = Path(GEO) / "pages"
+        live = appstore_live.live_app_keys(
+            APPSTORE,
+            pages,
+            refresh=False,
+        )
+        checked = 0
+        for key in live:
+            localizations = build_pages_i18n.load_app_locales(key)
+            for locale in OFFICIAL_LOCALES:
+                values = build_pages_i18n.external_localized_values(
+                    key,
+                    locale,
+                    localizations,
+                )
+                for field in (
+                    "subtitle",
+                    "description",
+                    "promotionalText",
+                ):
+                    self.assertTrue(
+                        build_pages_i18n._is_native_copy(
+                            locale,
+                            field,
+                            values[field],
+                            localizations,
+                        ),
+                        f"{key}/{locale}/{field}",
+                    )
+                checked += 1
+        self.assertEqual(26 * 50, checked)
+        bengali = build_pages_i18n.external_localized_values(
+            "cyca",
+            "bn-BD",
+        )
+        self.assertRegex(bengali["subtitle"], r"[\u0980-\u09ff]")
+        self.assertNotIn("Period Tracker", bengali["subtitle"])
+        catalan = build_pages_i18n.external_localized_values("aim990", "ca")
+        self.assertIn("Prepara el TOEIC", catalan["description"])
+        self.assertIn("comprensió lectora", catalan["keywords"])
+        self.assertNotIn("Unlock your potential", str(catalan.values()))
 
     def test_localized_llms_reject_missing_locale_instead_of_fallback(self):
         incomplete = {
@@ -20888,6 +21105,12 @@ class GeneratorTests(unittest.TestCase):
 
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)
+            (pages / app_store_storefronts.STATE_FILE).write_text(
+                json.dumps(
+                    {"countries": {"de": ["6773017109"]}}
+                ),
+                encoding="utf-8",
+            )
             with mock.patch.object(gen_app_catalog, "PAGES", str(pages)):
                 german = gen_app_catalog.render_catalog(
                     "de-DE",
@@ -20948,6 +21171,12 @@ class GeneratorTests(unittest.TestCase):
                         "de-DE": {
                             "name": "Lumi Bopomofo",
                             "subtitle": "Zhuyin lernen",
+                            "description": (
+                                "Zhuyin spielerisch und sicher lernen."
+                            ),
+                            "promotionalText": (
+                                "Zhuyin spielerisch lernen."
+                            ),
                         }
                     },
                 ),
@@ -20961,12 +21190,119 @@ class GeneratorTests(unittest.TestCase):
                 encoding="utf-8"
             )
             self.assertIn("Alle geprüften Apps ansehen", locale_index)
+            self.assertIn("Lumi Bopomofo", locale_index)
+            self.assertIn("Zhuyin lernen", locale_index)
+            self.assertIn(
+                build_pages_i18n.pricing_text_for(
+                    "lumibopomofo",
+                    "de-DE",
+                ),
+                locale_index,
+            )
             self.assertEqual(
                 1,
                 locale_index.count(
                     f'href="{build_pages_i18n.SITE}/apps/de-DE/index.html"'
                 ),
             )
+            direct_store = (
+                "https://apps.apple.com/de/app/id6773017109"
+            )
+            self.assertEqual(
+                1,
+                locale_index.count(
+                    f'class="store-cta" href="{direct_store}"'
+                ),
+            )
+            self.assertIn(
+                '<ul class="app-list">',
+                locale_index,
+            )
+            self.assertIn(
+                "white-space:nowrap",
+                locale_index,
+            )
+            directory_schema = json.loads(
+                re.search(
+                    r'<script type="application/ld\+json" '
+                    r'data-iag="localized-install-directory">'
+                    r"(.*?)</script>",
+                    locale_index,
+                    flags=re.S,
+                ).group(1)
+            )
+            self.assertEqual("ItemList", directory_schema["@type"])
+            self.assertEqual(1, directory_schema["numberOfItems"])
+            self.assertEqual(
+                "https://schema.org/ItemListOrderAscending",
+                directory_schema["itemListOrder"],
+            )
+            listed = directory_schema["itemListElement"][0]["item"]
+            self.assertEqual("MobileApplication", listed["@type"])
+            self.assertEqual(
+                build_pages_i18n.APPSTORE["lumibopomofo"],
+                listed["identifier"],
+            )
+            self.assertEqual("Lumi Bopomofo", listed["name"])
+            self.assertEqual("Zhuyin lernen", listed["description"])
+            self.assertEqual(
+                "EducationalApplication",
+                listed["applicationCategory"],
+            )
+            canonical_store = (
+                "https://apps.apple.com/app/id6773017109"
+            )
+            self.assertEqual(canonical_store, listed["@id"])
+            self.assertEqual(canonical_store, listed["sameAs"])
+            self.assertEqual(
+                f"{build_pages_i18n.SITE}/de-DE/lumibopomofo.html",
+                listed["url"],
+            )
+            self.assertEqual(direct_store, listed["installUrl"])
+            self.assertEqual(direct_store, listed["downloadUrl"])
+            self.assertEqual(
+                {
+                    "@type": "InstallAction",
+                    "target": direct_store,
+                },
+                listed["potentialAction"],
+            )
+            self.assertNotIn("?", direct_store)
+            with mock.patch.object(
+                build_pages_i18n,
+                "load_app_locales",
+                return_value={
+                    "de-DE": {
+                        "subtitle": "Zhuyin lernen",
+                        "description": "Zhuyin spielerisch lernen.",
+                    }
+                },
+            ), self.assertRaisesRegex(
+                ValueError,
+                "Missing localized directory name",
+            ):
+                build_pages_i18n.localized_directory_records(
+                    "de-DE",
+                    ["lumibopomofo"],
+                )
+            with mock.patch.object(
+                build_pages_i18n,
+                "load_app_locales",
+                return_value={
+                    "de-DE": {
+                        "name": "Lumi Bopomofo",
+                        "description": "",
+                        "promotionalText": "",
+                    }
+                },
+            ), self.assertRaisesRegex(
+                ValueError,
+                "Non-native external description",
+            ):
+                build_pages_i18n.localized_directory_records(
+                    "de-DE",
+                    ["lumibopomofo"],
+                )
 
     def test_catalog_rejects_unknown_or_duplicate_live_identities(self):
         with self.assertRaisesRegex(ValueError, "Unknown live app keys"):

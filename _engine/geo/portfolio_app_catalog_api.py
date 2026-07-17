@@ -17,6 +17,7 @@ ROOT = HERE.parent
 sys.path.insert(0, str(ROOT / "social"))
 
 from appstore_live import live_app_keys  # noqa: E402
+import build_pages_i18n  # noqa: E402
 from family_travel_dataset import write_text_if_changed  # noqa: E402
 from official_locales import (  # noqa: E402
     OFFICIAL_LOCALES,
@@ -42,9 +43,12 @@ API_BASE = f"{SITE}/{API_PATH.as_posix()}"
 LICENSE_URL = "https://creativecommons.org/licenses/by/4.0/"
 JSON_FEED_VERSION = "https://jsonfeed.org/version/1.1"
 FEED_MAX_BYTES = 250_000
-TODAY = dt.date.today().isoformat()
+TODAY = dt.datetime.now(dt.timezone.utc).date().isoformat()
 DATE_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
 SHA256_RE = re.compile(r"[0-9a-f]{64}")
+TIMESTAMP_RE = re.compile(
+    r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z"
+)
 
 COPY = {
     "en": {
@@ -255,7 +259,7 @@ def _localized_summary(path: Path, app_id: str) -> str:
             )
             description = node.get("description")
             if (
-                "MobileApplication" in types
+                types & {"MobileApplication", "SoftwareApplication"}
                 and f"id{app_id}" in identity
                 and isinstance(description, str)
             ):
@@ -272,12 +276,32 @@ def localized_record(
     pages: Path = PAGES,
 ) -> dict[str, object]:
     path = pages / locale / f"{record['key']}.html"
-    app_id = str(record["app_store_id"])
+    localizations = build_pages_i18n.load_app_locales(str(record["key"]))
+    values = build_pages_i18n.external_localized_values(
+        str(record["key"]),
+        locale,
+        localizations,
+    )
+    summary = next(
+        (
+            " ".join(paragraph.split())
+            for paragraph in re.split(
+                r"\n\s*\n",
+                str(values["description"]),
+            )
+            if len(" ".join(paragraph.split())) >= 20
+        ),
+        "",
+    )
+    if not summary:
+        raise ValueError(
+            f"Missing localized catalog summary: {record['key']}/{locale}"
+        )
     return {
         "key": record["key"],
-        "app_store_id": app_id,
-        "name": record["name"],
-        "summary": _localized_summary(path, app_id),
+        "app_store_id": str(record["app_store_id"]),
+        "name": build_pages_i18n._single_line(values["name"]),
+        "summary": summary,
         "category": record["category"],
         "search_terms": _search_terms(path),
         "purchase_model": record["purchase_model"],
@@ -313,6 +337,7 @@ def _stable_modified(pages: Path, digest: str) -> str:
         previous.get("content_digest") == digest
         and isinstance(date, str)
         and DATE_RE.fullmatch(date)
+        and date <= TODAY
     ):
         return date
     return TODAY
@@ -343,8 +368,40 @@ def feed_payload(
     apps: list[dict[str, object]],
     modified: str,
     digest: str,
+    previous_items: list[dict[str, object]] | None = None,
+    timestamp: str | None = None,
 ) -> dict[str, object]:
-    timestamp = f"{modified}T00:00:00Z"
+    timestamp = timestamp or _utc_timestamp()
+    previous = {
+        str(item.get("id")): item
+        for item in (previous_items or [])
+        if isinstance(item, dict) and item.get("id")
+    }
+    items = []
+    for app in apps:
+        item = {
+            "id": f"https://apps.apple.com/app/id{app['app_store_id']}",
+            "url": app["guide_url"],
+            "external_url": appstore_url(
+                str(app["key"]),
+                _feed_campaign(locale),
+            ),
+            "title": app["name"],
+            "content_text": app["summary"],
+            "tags": app["search_terms"],
+            "language": locale,
+        }
+        old = previous.get(str(item["id"]))
+        old_timestamp = old.get("date_modified") if old else None
+        comparable = dict(old or {})
+        comparable.pop("date_modified", None)
+        item["date_modified"] = (
+            old_timestamp
+            if comparable == item
+            and _valid_previous_timestamp(old_timestamp, timestamp)
+            else timestamp
+        )
+        items.append(item)
     return {
         "version": JSON_FEED_VERSION,
         "title": title,
@@ -360,25 +417,35 @@ def feed_payload(
             "ordering": "alphabetical_by_app_name_not_a_ranking",
             "recordCount": len(apps),
         },
-        "items": [
-            {
-                "id": (
-                    f"https://apps.apple.com/app/id{app['app_store_id']}"
-                ),
-                "url": app["guide_url"],
-                "external_url": appstore_url(
-                    str(app["key"]),
-                    _feed_campaign(locale),
-                ),
-                "title": app["name"],
-                "content_text": app["summary"],
-                "date_modified": timestamp,
-                "tags": app["search_terms"],
-                "language": locale,
-            }
-            for app in apps
-        ],
+        "items": items,
     }
+
+
+def _utc_timestamp() -> str:
+    return (
+        dt.datetime.now(dt.timezone.utc)
+        .replace(microsecond=0)
+        .isoformat()
+        .replace("+00:00", "Z")
+    )
+
+
+def _valid_previous_timestamp(value, current: str) -> bool:
+    return (
+        isinstance(value, str)
+        and TIMESTAMP_RE.fullmatch(value) is not None
+        and value <= current
+    )
+
+
+def _previous_feed_items(pages: Path, locale: str):
+    path = pages / API_PATH / "feeds" / f"{locale}.json"
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, TypeError, ValueError, json.JSONDecodeError):
+        return []
+    items = payload.get("items")
+    return items if isinstance(items, list) else []
 
 
 def index_payload(
@@ -1102,6 +1169,7 @@ def build(
         locale: _localized_directory_title(pages, locale)
         for locale in OFFICIAL_LOCALES
     }
+    timestamp = _utc_timestamp()
     feeds = {
         locale: feed_payload(
             locale,
@@ -1109,6 +1177,8 @@ def build(
             apps,
             modified,
             digest,
+            previous_items=_previous_feed_items(pages, locale),
+            timestamp=timestamp,
         )
         for locale, apps in localized.items()
     }

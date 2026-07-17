@@ -30,7 +30,10 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 import build_pages_i18n  # noqa: E402
-from app_store_storefronts import localized_app_store_url  # noqa: E402
+from app_store_storefronts import (  # noqa: E402
+    load_storefront_availability,
+    verified_app_store_url,
+)
 from appstore_live import live_app_keys  # noqa: E402
 from aeo_pages import disp, pricing_profile  # noqa: E402
 from rsscloud_config import (  # noqa: E402
@@ -240,10 +243,14 @@ def localized_llms_discovery_lines():
     return lines
 
 
-def _localized_app_record(key, locale, pages):
+def _localized_app_record(key, locale, pages, availability):
     localizations = build_pages_i18n.load_app_locales(key)
     require_official_locale_coverage(key, localizations)
-    values = localizations[locale]
+    values = build_pages_i18n.external_localized_values(
+        key,
+        locale,
+        localizations,
+    )
     required = ("name", "subtitle", "promotionalText")
     missing = [
         field
@@ -276,7 +283,11 @@ def _localized_app_record(key, locale, pages):
             build_pages_i18n.pricing_text_for(key, locale)
         ),
         "guide": f"{SITE}/{locale}/{key}.html",
-        "store": localized_app_store_url(canonical, locale),
+        "store": verified_app_store_url(
+            canonical,
+            locale,
+            availability,
+        ),
     }
 
 
@@ -287,8 +298,9 @@ def build_localized_llms(locale, live_keys, pages=None):
     if base not in build_pages_i18n.UI:
         raise ValueError(f"Missing native llms interface copy: {locale}")
     pages = Path(pages or PAGES)
+    availability = load_storefront_availability(pages)
     records = [
-        _localized_app_record(key, locale, pages)
+        _localized_app_record(key, locale, pages, availability)
         for key in live_keys
     ]
     records.sort(key=lambda item: (item["name"].casefold(), item["key"]))

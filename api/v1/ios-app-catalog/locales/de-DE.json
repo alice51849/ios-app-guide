@@ -2,7 +2,7 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.1.0",
   "date_modified": "2026-07-17",
-  "content_digest": "3c3a1ff4e3c06adf0e7459b4ca1df042800d6c0346024f1286734dc4cc22c7a3",
+  "content_digest": "b26a6a616fbb32611e60f59a79198da069fac002c4e1b10d1488106434f8e343",
   "locale": "de-DE",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -12,7 +12,7 @@
       "key": "aim990",
       "app_store_id": "6784974530",
       "name": "Aim990",
-      "summary": "Bereite dich mit Aim990 optimal auf den TOEIC(R) Listening & Reading Test vor! Unser 30-tägiger Studienplan führt dich Schritt für Schritt zu deinem Ziel –",
+      "summary": "Bereite dich mit Aim990 optimal auf den TOEIC(R) Listening & Reading Test vor! Unser 30-tägiger Studienplan führt dich Schritt für Schritt zu deinem Ziel – dem perfekten Score von 990.",
       "category": "education",
       "search_terms": [
         "TOEIC",
@@ -41,7 +41,7 @@
     {
       "key": "cvdesk",
       "app_store_id": "6781337213",
-      "name": "CV Desk",
+      "name": "CV Desk: ATS Lebenslauf",
       "summary": "Erstelle einen ATS-sicheren Lebenslauf, den die Systeme der Personaler wirklich lesen — komplett auf deinem iPhone. Kein Konto. Kein Upload. Kein Abo.",
       "category": "productivity",
       "search_terms": [
@@ -91,7 +91,7 @@
     {
       "key": "cyca",
       "app_store_id": "6782251621",
-      "name": "Cyca",
+      "name": "Cyca: Perioden Tracker",
       "summary": "Lerne Cyca kennen – die warme, private Art, deinen Zyklus zu verstehen.",
       "category": "health",
       "search_terms": [
@@ -143,7 +143,7 @@
       "key": "gmoney",
       "app_store_id": "6755782939",
       "name": "G+Money",
-      "summary": "G+Money vereint zwei tägliche Werkzeuge in einem — einen blitzschnellen Währungsrechner und ein schönes Ausgaben-Tracking — für Alltag und Reise",
+      "summary": "G+Money vereint zwei tägliche Werkzeuge in einem — einen blitzschnellen Währungsrechner und ein schönes Ausgaben-Tracking — für Alltag und Reise. Komplett offline. Absolut privat.",
       "category": "finance",
       "search_terms": [
         "Haushaltsbuch",
@@ -191,7 +191,7 @@
     {
       "key": "hourstag",
       "app_store_id": "6754218117",
-      "name": "HoursTag",
+      "name": "HoursTag: Stunden zum Kauf",
       "summary": "Was kostet es wirklich? Nicht in Euro – in Stunden deines Lebens.",
       "category": "finance",
       "search_terms": [
@@ -242,7 +242,7 @@
       "key": "lockhour",
       "app_store_id": "6780107485",
       "name": "LockHour Pro",
-      "summary": "Mach jede Stunde bewusster. LockHour Pro hilft dir, ruhige Fokus-Sessions zu planen, Handy-Ablenkungen zu reduzieren und verlässliche Arbeitsgewohnheiten",
+      "summary": "Mach jede Stunde bewusster. LockHour Pro hilft dir, ruhige Fokus-Sessions zu planen, Handy-Ablenkungen zu reduzieren und verlässliche Arbeitsgewohnheiten aufzubauen. Ideal für Studium, Deep Work und konzentrierte Aufgaben.",
       "category": "productivity",
       "search_terms": [
         "app blocker",
@@ -288,7 +288,7 @@
       "key": "lumibopomofo",
       "app_store_id": "6773017109",
       "name": "Lumi Bopomofo",
-      "summary": "Ein sanfter Einstieg in Mandarin-Laute für kleine Entdecker.",
+      "summary": "Ein sanfter Einstieg in Mandarin-Laute für kleine Entdecker. Lumi Bopomofo macht das chinesische Zhuyin-System zu einem fröhlichen Planetenspiel für Kinder von 3 bis 6 Jahren. Kurze, klare Aufgaben helfen beim Erkennen von Zeichen, Lauten und Kombinationen.",
       "category": "kids",
       "search_terms": [
         "zhuyin",
@@ -335,7 +335,7 @@
     {
       "key": "lumibopomofopro",
       "app_store_id": "6775773117",
-      "name": "Lumi Bopomofo Pro",
+      "name": "Lumi Bopomofo Pro: Zhuyin",
       "summary": "Helfen Sie Ihrem Kind, chinesische Phonetik durch ein liebevolles Weltraumabenteuer zu entdecken.",
       "category": "kids",
       "search_terms": [
@@ -383,8 +383,8 @@
     {
       "key": "lumiletters",
       "app_store_id": "6778748533",
-      "name": "Lumi Letters",
-      "summary": "Ein sanfter Start ins englische ABC für kleine Entdecker. Lumi Letters Lite verbindet niedliche Planeten mit ruhigem, kindgerechtem Lernen für Kinder von 3",
+      "name": "Lumi Letters Lite: ABC Kids",
+      "summary": "Ein sanfter Start ins englische ABC für kleine Entdecker. Lumi Letters Lite verbindet niedliche Planeten mit ruhigem, kindgerechtem Lernen für Kinder von 3 bis 6 Jahren. Perfekt für Vorschule, Kindergarten und gemeinsame Lernzeit zu Hause.",
       "category": "kids",
       "search_terms": [
         "abc",
@@ -434,8 +434,8 @@
     {
       "key": "lumiletterspro",
       "app_store_id": "6778491147",
-      "name": "Lumi Letters Pro",
-      "summary": "Willkommen bei Lumi Letters",
+      "name": "Lumi Letters Pro: ABC Phonics",
+      "summary": "Willkommen bei Lumi Letters In einem magischen Wald begleiten Kinder Lumi den Bären, um alle 26 Buchstaben von \"Ich kenne es\" zu \"Ich kann es lesen, schreiben und aussprechen\" zu bringen. Dies ist keine weitere Karteikarten-App. Es ist eine vollständige Phonics-Reise, die jungen Lernenden die Dekodierungsfähigkeiten vermittelt, die ein Leben lang halten.",
       "category": "kids",
       "search_terms": [
         "abc",
@@ -481,7 +481,7 @@
     {
       "key": "lumimath",
       "app_store_id": "6778269699",
-      "name": "Lumi Math Planet",
+      "name": "Lumi Math Planet: Explorer",
       "summary": "Einige Apps lehren Mathematik. Diese lässt Kinder sie lieben.",
       "category": "kids",
       "search_terms": [
@@ -565,7 +565,7 @@
     {
       "key": "lumimathpro",
       "app_store_id": "6776958488",
-      "name": "Lumi Math Pro",
+      "name": "Lumi Math Pro: Kids Numbers",
       "summary": "Verwandeln Sie mathematisches Denken auf Wettbewerbsniveau in ein Weltraumabenteuer, das Kinder nicht mehr loslässt.",
       "category": "kids",
       "search_terms": [
@@ -623,7 +623,7 @@
     {
       "key": "lumimission",
       "app_store_id": "6779750237",
-      "name": "Lumi Mission Planet",
+      "name": "Lumi Mission Planet: Routinen",
       "summary": "Ein kleines Kind dazu zu bringen, die Zähne zu putzen, Mahlzeiten zu beenden oder Spielzeug aufzuräumen, sollte nicht jeden Tag ein Kampf sein.",
       "category": "kids",
       "search_terms": [
@@ -722,7 +722,7 @@
     {
       "key": "tripplanet",
       "app_store_id": "6787193643",
-      "name": "Lumi Trip Planet",
+      "name": "Lumi Trip Planet: Weltreise",
       "summary": "Verwandeln Sie jeden Familienausflug in ein kleines Weltraumabenteuer.",
       "category": "kids",
       "search_terms": [
@@ -754,7 +754,7 @@
     {
       "key": "lumiweather",
       "app_store_id": "6779552704",
-      "name": "Lumi Weather",
+      "name": "Lumi Wetter: Familienwetter",
       "summary": "Manche Morgen stehen Sie mit einem zappelnden Kleinkind am Fenster und fragen sich leise: Ist es zu kalt, zu heiß, zu nass, um heute rauszugehen?",
       "category": "kids",
       "search_terms": [
@@ -810,8 +810,8 @@
     {
       "key": "mochi",
       "app_store_id": "6785004775",
-      "name": "Mochi",
-      "summary": "Mochi ist die süße, beruhigende To-do-Liste für einen besser organisierten Alltag. Notiere Aufgaben, tippe nach dem Erledigen auf den kleinen Kreis und",
+      "name": "Mochi: Süße To-do-Liste",
+      "summary": "Mochi ist die süße, beruhigende To-do-Liste für einen besser organisierten Alltag. Notiere Aufgaben, tippe nach dem Erledigen auf den kleinen Kreis und genieße das gute Gefühl, Schritt für Schritt mehr Klarheit zu schaffen.",
       "category": "productivity",
       "search_terms": [
         "aufgaben",
@@ -844,8 +844,8 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream",
-      "summary": "PhotoCream Pro ist die ideale App für Liebhaber der Retro-Fotografie. Mit über 100 authentischen analogen Filtern können Sie Ihre Fotos in vintage",
+      "name": "PhotoCream Pro",
+      "summary": "PhotoCream Pro ist die ideale App für Liebhaber der Retro-Fotografie. Mit über 100 authentischen analogen Filtern können Sie Ihre Fotos in vintage Kunstwerke verwandeln. Die Kamera bietet eine Live-Vorschau der Filter, sodass Sie den Effekt vor der Aufnahme sehen können. Der professionelle Fotoeditor enthält fortschrittliche Werkzeuge wie Frequenztrennung für makellose Hautretusche und Optionen zur Gesichts- und Körperformung. Passen Sie Licht, Farbe und Kurven an, um das perfekte Bild zu erhalten. Ohne Abonnements oder Werbung garantiert PhotoCream Pro Ihre Privatsphäre, da nichts in die Cloud hochgeladen wird. Kompatibel mit iPhone und iPad, ist diese App perfekt für diejenigen, die ein professionelles Ergebnis mit einem Retro-Touch suchen. Erleben Sie die Magie des Vintage mit PhotoCream Pro!",
       "category": "photo-utility",
       "search_terms": [
         "Filmkamera",
@@ -897,8 +897,8 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear",
-      "summary": "Schaffe gigabyteweise Speicher frei, indem du Fotos entfernst, die du nicht brauchst – Duplikate, Screenshots, unscharfe Aufnahmen und speicherhungrige",
+      "name": "PicClear Pro",
+      "summary": "Schaffe gigabyteweise Speicher frei, indem du Fotos entfernst, die du nicht brauchst – Duplikate, Screenshots, unscharfe Aufnahmen und speicherhungrige Videos.",
       "category": "photo-utility",
       "search_terms": [
         "fotoreiniger",
@@ -953,7 +953,7 @@
     {
       "key": "scanto",
       "app_store_id": "6779977651",
-      "name": "ScanTo Pro",
+      "name": "ScanTo Pro: PDF Scanner & OCR",
       "summary": "Der Scanner, der alles auf deinem Gerät erledigt – auch das Lesen des Textes – und das beweist, indem er nie online geht.",
       "category": "productivity",
       "search_terms": [
@@ -986,8 +986,8 @@
     {
       "key": "sereno",
       "app_store_id": "6788236641",
-      "name": "Sereno",
-      "summary": "Sereno verwandelt Ihr Telefon in eine hochwertige Klangmaschine für Schlaf, Konzentration und Ruhe. Dutzende von handabgestimmten Klängen werden live auf",
+      "name": "Sereno: Schlafklänge",
+      "summary": "Sereno verwandelt Ihr Telefon in eine hochwertige Klangmaschine für Schlaf, Konzentration und Ruhe. Dutzende von handabgestimmten Klängen werden live auf Ihrem Gerät erzeugt und mischen sich zu über 1000 einzigartigen Klanglandschaften — so dass der Regen nie in Schleife läuft und das Meer sich nie wiederholt, nur ein endloser, sanfter Mix, der Sie durch die Nacht trägt.",
       "category": "sleep-sound",
       "search_terms": [
         "regen",
@@ -1019,8 +1019,8 @@
     {
       "key": "snapport",
       "app_store_id": "6780575828",
-      "name": "Snapport",
-      "summary": "Erstelle Passbilder sowie Visum- und Ausweisfotos bequem zu Hause – ruhig und privat. Snapport bietet Vorlagen für gängige Größen, Hilfslinien zur",
+      "name": "Snapport: Passbild & Ausweis",
+      "summary": "Erstelle Passbilder sowie Visum- und Ausweisfotos bequem zu Hause – ruhig und privat. Snapport bietet Vorlagen für gängige Größen, Hilfslinien zur Gesichtsausrichtung, Hintergrund-Tools und druckfertige Bögen – alles wird auf deinem iPhone verarbeitet.",
       "category": "photo-utility",
       "search_terms": [
         "passbild",
@@ -1113,7 +1113,7 @@
     {
       "key": "tripbee",
       "app_store_id": "6787754435",
-      "name": "TripBee Pro: Trip Planner",
+      "name": "TripBee: Reiseplaner",
       "summary": "Plane jede Reise in einer schönen, privaten App, die offline funktioniert.",
       "category": "travel",
       "search_terms": [
@@ -1147,7 +1147,7 @@
     {
       "key": "unblurry",
       "app_store_id": "6782275018",
-      "name": "Unblurry",
+      "name": "Unblurry Pro: Fotos schärfen",
       "summary": "Unscharfes Foto? Mach es gestochen klar.",
       "category": "photo-utility",
       "search_terms": [
@@ -1204,8 +1204,8 @@
     {
       "key": "wordmate",
       "app_store_id": "6789917808",
-      "name": "Wordmate: Learn 44 Languages",
-      "summary": "Mach aus kurzen Pausen echte Lernmomente. Wordmate verbindet strukturiertes Vokabellernen in 44 Sprachen mit iPhone, iPad, einem interaktiven",
+      "name": "Wordmate: 44 Sprachen lernen",
+      "summary": "Mach aus kurzen Pausen echte Lernmomente. Wordmate verbindet strukturiertes Vokabellernen in 44 Sprachen mit iPhone, iPad, einem interaktiven Home-Bildschirm-Widget und der Apple Watch. So bleibt dein Wortschatztraining unterwegs, beim Warten und zwischen zwei Terminen immer griffbereit.",
       "category": "education",
       "search_terms": [
         "Karteikarten",

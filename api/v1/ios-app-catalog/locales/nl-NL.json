@@ -2,7 +2,7 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.1.0",
   "date_modified": "2026-07-17",
-  "content_digest": "3c3a1ff4e3c06adf0e7459b4ca1df042800d6c0346024f1286734dc4cc22c7a3",
+  "content_digest": "b26a6a616fbb32611e60f59a79198da069fac002c4e1b10d1488106434f8e343",
   "locale": "nl-NL",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -12,7 +12,7 @@
       "key": "aim990",
       "app_store_id": "6784974530",
       "name": "Aim990",
-      "summary": "Bereid je voor op de TOEIC(R) met Aim990, jouw ultieme studiecoach! Binnen 30 dagen helpen we je om je luister- en leesvaardigheden te verbeteren met een",
+      "summary": "Bereid je voor op de TOEIC(R) met Aim990, jouw ultieme studiecoach! Binnen 30 dagen helpen we je om je luister- en leesvaardigheden te verbeteren met een gestructureerd plan dat is ontworpen om je naar de top score van 990 te leiden.",
       "category": "education",
       "search_terms": [
         "TOEIC",
@@ -45,7 +45,7 @@
     {
       "key": "cvdesk",
       "app_store_id": "6781337213",
-      "name": "CV Desk",
+      "name": "CV Desk: ATS cv-maker",
       "summary": "Maak een ATS-veilig cv dat de systemen van recruiters echt lezen — volledig op je iPhone. Geen account. Geen upload. Geen abonnement.",
       "category": "productivity",
       "search_terms": [
@@ -92,8 +92,8 @@
     {
       "key": "cyca",
       "app_store_id": "6782251621",
-      "name": "Cyca",
-      "summary": "Cyca is een warme, privé manier om je cyclus te begrijpen. Leg menstruatie, flow, symptomen, stemming en notities in seconden vast en bekijk je volgende",
+      "name": "Cyca: Menstruatiekalender",
+      "summary": "Cyca is een warme, privé manier om je cyclus te begrijpen. Leg menstruatie, flow, symptomen, stemming en notities in seconden vast en bekijk je volgende menstruatie, vruchtbare dagen en ovulatie in een rustige kalender.",
       "category": "health",
       "search_terms": [
         "menstruatiekalender",
@@ -144,7 +144,7 @@
       "key": "gmoney",
       "app_store_id": "6755782939",
       "name": "G+Money",
-      "summary": "G+Money verenigt twee dagelijkse hulpmiddelen in één — een bliksemsnelle valutaomrekenaar en een mooie uitgaven-tracker — voor het dagelijks leven én op",
+      "summary": "G+Money verenigt twee dagelijkse hulpmiddelen in één — een bliksemsnelle valutaomrekenaar en een mooie uitgaven-tracker — voor het dagelijks leven én op reis. Volledig offline. Volledig privé.",
       "category": "finance",
       "search_terms": [
         "uitgaven",
@@ -193,7 +193,7 @@
     {
       "key": "hourstag",
       "app_store_id": "6754218117",
-      "name": "HoursTag",
+      "name": "HoursTag: Uren om te kopen",
       "summary": "Wat kost het echt? Niet in euro's, maar in uren van je leven.",
       "category": "finance",
       "search_terms": [
@@ -245,7 +245,7 @@
       "key": "lockhour",
       "app_store_id": "6780107485",
       "name": "LockHour Pro",
-      "summary": "Bescherm de uren waarin je echt vooruitkomt. LockHour Pro helpt je rustige focussessies te starten, telefoonafleiding te verminderen en productieve",
+      "summary": "Bescherm de uren waarin je echt vooruitkomt. LockHour Pro helpt je rustige focussessies te starten, telefoonafleiding te verminderen en productieve gewoontes op te bouwen zonder rommel. Ideaal voor studie, diep werk, schrijven en plannen.",
       "category": "productivity",
       "search_terms": [
         "app blocker",
@@ -292,7 +292,7 @@
       "key": "lumibopomofo",
       "app_store_id": "6773017109",
       "name": "Lumi Bopomofo",
-      "summary": "Een lieve eerste stap in de klanken van Mandarijn-Chinees.",
+      "summary": "Een lieve eerste stap in de klanken van Mandarijn-Chinees. Lumi Bopomofo maakt van Zhuyin, het Chinese fonetische systeem, een charmant planetenspel voor kinderen van 3 tot 6 jaar. Korte opdrachten helpen bij het herkennen van symbolen, klanken en combinaties.",
       "category": "kids",
       "search_terms": [
         "zhuyin",
@@ -338,8 +338,8 @@
     {
       "key": "lumibopomofopro",
       "app_store_id": "6775773117",
-      "name": "Lumi Bopomofo Pro",
-      "summary": "Een lieve eerste stap in de klanken van Mandarijn-Chinees.",
+      "name": "Lumi Bopomofo Pro: Zhuyin",
+      "summary": "Een lieve eerste stap in de klanken van Mandarijn-Chinees. Lumi Bopomofo Pro maakt van Zhuyin, het Chinese fonetische systeem, een charmant planetenspel voor kinderen van 3 tot 6 jaar. Korte opdrachten helpen bij het herkennen van symbolen, klanken en combinaties.",
       "category": "kids",
       "search_terms": [
         "zhuyin",
@@ -387,8 +387,8 @@
     {
       "key": "lumiletters",
       "app_store_id": "6778748533",
-      "name": "Lumi Letters",
-      "summary": "Een zachte eerste stap in het Engelse alfabet. Lumi Letters Lite helpt kinderen van 3 tot 6 jaar leren met schattige planeten, rustige spelletjes en",
+      "name": "Lumi Letters Lite: ABC Kids",
+      "summary": "Een zachte eerste stap in het Engelse alfabet. Lumi Letters Lite helpt kinderen van 3 tot 6 jaar leren met schattige planeten, rustige spelletjes en duidelijke letterklanken voor peuters, kleuters en samen oefenen thuis.",
       "category": "kids",
       "search_terms": [
         "abc",
@@ -437,8 +437,8 @@
     {
       "key": "lumiletterspro",
       "app_store_id": "6778491147",
-      "name": "Lumi Letters Pro",
-      "summary": "Een zachte eerste stap in het Engelse alfabet. Lumi Letters Pro helpt kinderen van 3 tot 6 jaar leren met schattige planeten, rustige spelletjes en",
+      "name": "Lumi Letters Pro: ABC Phonics",
+      "summary": "Een zachte eerste stap in het Engelse alfabet. Lumi Letters Pro helpt kinderen van 3 tot 6 jaar leren met schattige planeten, rustige spelletjes en duidelijke letterklanken voor peuters, kleuters en samen oefenen thuis.",
       "category": "kids",
       "search_terms": [
         "abc",
@@ -487,8 +487,8 @@
     {
       "key": "lumimath",
       "app_store_id": "6778269699",
-      "name": "Lumi Math Planet",
-      "summary": "Lumi Math Planet maakt van eerste rekensommen een warm ruimteavontuur voor kinderen van 3–6 jaar. Kinderen tellen, vergelijken, optellen en lossen logische",
+      "name": "Lumi Math Planet: Explorer",
+      "summary": "Lumi Math Planet maakt van eerste rekensommen een warm ruimteavontuur voor kinderen van 3–6 jaar. Kinderen tellen, vergelijken, optellen en lossen logische puzzels op terwijl schattige planeten gaan stralen.",
       "category": "kids",
       "search_terms": [
         "kleuter",
@@ -572,8 +572,8 @@
     {
       "key": "lumimathpro",
       "app_store_id": "6776958488",
-      "name": "Lumi Math Pro",
-      "summary": "Maak wiskundig denken een warm ruimteavontuur. Lumi Math Pro helpt kinderen van 3–6 jaar oefenen met tellen, getalbegrip, optellen, patronen, vormen en",
+      "name": "Lumi Math Pro: Kids Numbers",
+      "summary": "Maak wiskundig denken een warm ruimteavontuur. Lumi Math Pro helpt kinderen van 3–6 jaar oefenen met tellen, getalbegrip, optellen, patronen, vormen en logica via korte, duidelijke opdrachten.",
       "category": "kids",
       "search_terms": [
         "hoofdrekenen",
@@ -625,7 +625,7 @@
       "key": "lumimission",
       "app_store_id": "6779750237",
       "name": "Lumi Mission Planet",
-      "summary": "Maak dagelijkse gewoontes rustig, duidelijk en leuk.",
+      "summary": "Maak dagelijkse gewoontes rustig, duidelijk en leuk. Lumi Mission Planet helpt kinderen van 3–6 jaar met tandenpoetsen, aankleden, opruimen, bedtijd en kleine klusjes in huis. Zachte missies en sterren belonen inzet, zodat kinderen groeien in zelfstandigheid zonder advertenties, drukte of druk.",
       "category": "kids",
       "search_terms": [
         "beloningskaart",
@@ -682,7 +682,7 @@
       "key": "lumimissionpro",
       "app_store_id": "6779745474",
       "name": "Lumi Mission Planet Pro",
-      "summary": "Maak dagelijkse gewoontes rustig, duidelijk en leuk.",
+      "summary": "Maak dagelijkse gewoontes rustig, duidelijk en leuk. Lumi Mission Planet helpt kinderen van 3–6 jaar met tandenpoetsen, aankleden, opruimen, bedtijd en kleine klusjes in huis. Zachte missies en sterren belonen inzet, zodat kinderen groeien in zelfstandigheid zonder advertenties, drukte of druk.",
       "category": "kids",
       "search_terms": [
         "routine kinderen",
@@ -735,7 +735,7 @@
     {
       "key": "tripplanet",
       "app_store_id": "6787193643",
-      "name": "Lumi Trip Planet",
+      "name": "Lumi Trip Planet: Reizen",
       "summary": "Maak van elk gezinsuitje een klein ruimteavontuur.",
       "category": "kids",
       "search_terms": [
@@ -767,7 +767,7 @@
     {
       "key": "lumiweather",
       "app_store_id": "6779552704",
-      "name": "Lumi Weather",
+      "name": "Lumi Weer: Gezinsweer",
       "summary": "Voor je met een kind naar buiten gaat, geeft Lumi Weer een zachte, duidelijke vraag terug: is dit een fijne dag om buiten te spelen?",
       "category": "kids",
       "search_terms": [
@@ -826,8 +826,8 @@
     {
       "key": "mochi",
       "app_store_id": "6785004775",
-      "name": "Mochi",
-      "summary": "Mochi maakt plannen zachter, leuker en overzichtelijker. Schrijf je taken op, tik op het kleine rondje wanneer je klaar bent en geniet van dat fijne gevoel",
+      "name": "Mochi: Schattige taken",
+      "summary": "Mochi maakt plannen zachter, leuker en overzichtelijker. Schrijf je taken op, tik op het kleine rondje wanneer je klaar bent en geniet van dat fijne gevoel dat je dag stap voor stap lichter wordt.",
       "category": "productivity",
       "search_terms": [
         "takenlijst",
@@ -859,8 +859,8 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream",
-      "summary": "PhotoCream Pro is jouw ultieme oplossing voor vintage fotografie en professionele bewerking op iPhone en iPad. Dompel jezelf onder in de wereld van",
+      "name": "PhotoCream Pro",
+      "summary": "PhotoCream Pro is jouw ultieme oplossing voor vintage fotografie en professionele bewerking op iPhone en iPad. Dompel jezelf onder in de wereld van retrofotografie met meer dan 100 authentieke analoge filters die een unieke visuele ervaring bieden. Met de live preview functie kun je direct het effect van de filters zien voordat je de foto maakt. Onze geavanceerde foto-editor stelt je in staat om elke opname te perfectioneren met krachtige tools zoals frequentiescheiding voor huidverfraaiing, gezichts- en lichaamsvormen, en gedetailleerde aanpassingen van licht, kleur en curves. Voeg tekst, kaders en korrel toe voor nog meer personalisatie van je beelden. PhotoCream Pro is een eenmalige aankoop, zonder abonnementen of advertenties, en garandeert volledige privacy zonder dat gegevens online worden geüpload. Ervaar de magie van analoge fotografie en professionele bewerking met PhotoCream Pro.",
       "category": "photo-utility",
       "search_terms": [
         "filmcamera",
@@ -908,7 +908,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear",
+      "name": "PicClear Pro",
       "summary": "Win gigabytes aan opslag terug door foto’s op te ruimen die je niet meer nodig hebt: dubbele beelden, oude screenshots, wazige opnamen en grote video’s.",
       "category": "photo-utility",
       "search_terms": [
@@ -964,7 +964,7 @@
     {
       "key": "scanto",
       "app_store_id": "6779977651",
-      "name": "ScanTo Pro",
+      "name": "ScanTo Pro: PDF & OCR",
       "summary": "De documentscanner die alles op je apparaat doet — inclusief tekstherkenning.",
       "category": "productivity",
       "search_terms": [
@@ -1001,8 +1001,8 @@
     {
       "key": "sereno",
       "app_store_id": "6788236641",
-      "name": "Sereno",
-      "summary": "Sereno verandert je telefoon in een hoogwaardige geluidsmachine voor slaap, focus en rust. Tientallen handmatig afgestemde geluiden worden live op je",
+      "name": "Sereno: Slaapliedjes",
+      "summary": "Sereno verandert je telefoon in een hoogwaardige geluidsmachine voor slaap, focus en rust. Tientallen handmatig afgestemde geluiden worden live op je apparaat gegenereerd en mengen zich tot meer dan 1000 unieke geluidslandschappen — zodat de regen nooit in een lus gaat en de oceaan nooit herhaalt, slechts een eindeloze, zachte mix die je door de nacht draagt.",
       "category": "sleep-sound",
       "search_terms": [
         "slaapgeluiden",
@@ -1034,8 +1034,8 @@
     {
       "key": "snapport",
       "app_store_id": "6780575828",
-      "name": "Snapport",
-      "summary": "Maak paspoort-, visum- en ID-foto’s thuis, rustig en privé. Snapport biedt sjablonen voor gangbare formaten, hulplijnen voor gezichtsuitlijning",
+      "name": "Snapport: Pasfoto & ID",
+      "summary": "Maak paspoort-, visum- en ID-foto’s thuis, rustig en privé. Snapport biedt sjablonen voor gangbare formaten, hulplijnen voor gezichtsuitlijning, achtergrondtools en printklare layouts. Alles wordt direct op je iPhone verwerkt.",
       "category": "photo-utility",
       "search_terms": [
         "pasfoto",
@@ -1133,7 +1133,7 @@
     {
       "key": "tripbee",
       "app_store_id": "6787754435",
-      "name": "TripBee Pro: Trip Planner",
+      "name": "TripBee: Reisplanner",
       "summary": "Plan al je reizen in één mooie, privé en offline app.",
       "category": "travel",
       "search_terms": [
@@ -1168,7 +1168,7 @@
     {
       "key": "unblurry",
       "app_store_id": "6782275018",
-      "name": "Unblurry",
+      "name": "Unblurry Pro: Scherpe foto",
       "summary": "Wazige foto? Maak hem helder en scherp.",
       "category": "photo-utility",
       "search_terms": [
@@ -1225,8 +1225,8 @@
     {
       "key": "wordmate",
       "app_store_id": "6789917808",
-      "name": "Wordmate: Learn 44 Languages",
-      "summary": "Maak van korte momenten een kans om je woordenschat uit te breiden. Wanneer je Wordmate koopt, zijn 44 talen, alle niveaus, de interactieve widget voor",
+      "name": "Wordmate: Woordenschat",
+      "summary": "Maak van korte momenten een kans om je woordenschat uit te breiden. Wanneer je Wordmate koopt, zijn 44 talen, alle niveaus, de interactieve widget voor je beginscherm en de Apple Watch-ervaring inbegrepen. Je betaalt één keer voor de volledige app: geen abonnement, in-appaankopen of betaalde upgrades.",
       "category": "education",
       "search_terms": [
         "engels",

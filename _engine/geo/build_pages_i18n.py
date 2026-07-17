@@ -28,8 +28,15 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from aeo_pages import pricing_profile  # noqa: E402
+from app_store_storefronts import (  # noqa: E402
+    load_storefront_availability,
+    verified_app_store_url,
+)
 from appstore_live import live_app_keys  # noqa: E402
-from external_app_locales import EXTERNAL_APP_LOCALES  # noqa: E402
+from external_app_locales import (  # noqa: E402
+    EXTERNAL_APP_LOCALES,
+    EXTERNAL_APP_LOCALE_OVERRIDES,
+)
 from gen_feed import feed_discovery_links  # noqa: E402
 from official_locales import (  # noqa: E402
     OFFICIAL_LOCALES,
@@ -88,6 +95,29 @@ SCHEMA_CAT = {
 }
 
 RTL = {"ar", "he", "ur"}
+NATIVE_SCRIPT_PATTERNS = {
+    "ar-SA": r"[\u0600-\u06ff]",
+    "bn-BD": r"[\u0980-\u09ff]",
+    "el": r"[\u0370-\u03ff]",
+    "gu-IN": r"[\u0a80-\u0aff]",
+    "he": r"[\u0590-\u05ff]",
+    "hi": r"[\u0900-\u097f]",
+    "ja": r"[\u3040-\u30ff\u3400-\u9fff]",
+    "kn-IN": r"[\u0c80-\u0cff]",
+    "ko": r"[\uac00-\ud7af]",
+    "ml-IN": r"[\u0d00-\u0d7f]",
+    "mr-IN": r"[\u0900-\u097f]",
+    "or-IN": r"[\u0b00-\u0b7f]",
+    "pa-IN": r"[\u0a00-\u0a7f]",
+    "ru": r"[\u0400-\u04ff]",
+    "ta-IN": r"[\u0b80-\u0bff]",
+    "te-IN": r"[\u0c00-\u0c7f]",
+    "th": r"[\u0e00-\u0e7f]",
+    "uk": r"[\u0400-\u04ff]",
+    "ur-PK": r"[\u0600-\u06ff]",
+    "zh-Hans": r"[\u3400-\u9fff]",
+    "zh-Hant": r"[\u3400-\u9fff]",
+}
 
 PORTFOLIO_CATALOG_PATHS = {
     "en-US": "apps/index.html",
@@ -1054,6 +1084,101 @@ def _word_bounded_excerpt(value, limit):
     return clipped.rstrip(" ,.;:—-")
 
 
+def _single_line(value):
+    return re.sub(r"\s+", " ", str(value or "")).strip()
+
+
+def _is_native_copy(locale, field, value, localizations):
+    text = _single_line(value)
+    if not text:
+        return False
+    if base_lang(locale) == "en":
+        return True
+    pattern = NATIVE_SCRIPT_PATTERNS.get(locale)
+    if pattern and not re.search(pattern, text):
+        return False
+    english_values = {
+        _single_line(values.get(field)).casefold()
+        for code, values in localizations.items()
+        if base_lang(code) == "en" and isinstance(values, dict)
+    }
+    return text.casefold() not in english_values
+
+
+def _first_localized_sentence(value):
+    paragraph = next(
+        (
+            _single_line(part)
+            for part in re.split(r"\n\s*\n", str(value or ""))
+            if _single_line(part)
+        ),
+        "",
+    )
+    match = re.search(r"[.!?。！？।।](?:\s|$)", paragraph)
+    if match:
+        return paragraph[: match.end()].strip()
+    if len(paragraph) <= 180:
+        return paragraph
+    return f"{_word_bounded_excerpt(paragraph, 179)}…"
+
+
+def external_localized_values(key, locale, localizations=None):
+    localizations = localizations or load_app_locales(key)
+    source = localizations.get(locale)
+    if not isinstance(source, dict):
+        raise ValueError(f"Missing external localization: {key}/{locale}")
+    values = dict(source)
+    values.update(
+        EXTERNAL_APP_LOCALE_OVERRIDES.get(key, {}).get(locale, {})
+    )
+
+    description = values.get("description")
+    if not _is_native_copy(
+        locale,
+        "description",
+        description,
+        localizations,
+    ):
+        promotional = values.get("promotionalText")
+        if _is_native_copy(
+            locale,
+            "promotionalText",
+            promotional,
+            localizations,
+        ):
+            description = promotional
+        else:
+            raise ValueError(
+                f"Non-native external description: {key}/{locale}"
+            )
+    values["description"] = description
+
+    if not _is_native_copy(
+        locale,
+        "subtitle",
+        values.get("subtitle"),
+        localizations,
+    ):
+        values["subtitle"] = _first_localized_sentence(description)
+    if not _is_native_copy(
+        locale,
+        "subtitle",
+        values.get("subtitle"),
+        localizations,
+    ):
+        raise ValueError(f"Non-native external subtitle: {key}/{locale}")
+
+    promotional = values.get("promotionalText")
+    if not _is_native_copy(
+        locale,
+        "promotionalText",
+        promotional,
+        localizations,
+    ):
+        values["promotionalText"] = _first_localized_sentence(description)
+    return values
+
+
 def build_faq(locale, name, sub, kws):
     b = base_lang(locale)
     qtpl = QTPL.get(b)
@@ -1093,7 +1218,7 @@ def directory_hreflang_block(locales):
 def build_one(key, locale, all_locales):
     a = APPS[key]
     locdata = load_app_locales(key)
-    loc = locdata.get(locale, {})
+    loc = external_localized_values(key, locale, locdata)
     name, sub, desc, kws = _meta_from(loc, a)
     desc = sanitize_description(key, locale, desc)
     url = appstore_url(key, "iag_lp") or f"{SITE}/{locale}/{key}.html"
@@ -1191,22 +1316,148 @@ def build_one(key, locale, all_locales):
     return out
 
 
+def localized_directory_records(locale, keys):
+    records = []
+    availability = load_storefront_availability(PAGES)
+    for key in keys:
+        localizations = load_app_locales(key)
+        values = external_localized_values(key, locale, localizations)
+        name = values.get("name")
+        subtitle = values.get("subtitle")
+        if not isinstance(name, str) or not name.strip():
+            raise ValueError(
+                f"Missing localized directory name: {key}/{locale}"
+            )
+        if not isinstance(subtitle, str) or not subtitle.strip():
+            raise ValueError(
+                f"Missing localized directory subtitle: {key}/{locale}"
+            )
+        canonical_store = appstore_url(key)
+        if not canonical_store:
+            raise ValueError(f"Live app has no App Store URL: {key}")
+        store_url = verified_app_store_url(
+            canonical_store,
+            locale,
+            availability,
+        )
+        records.append(
+            {
+                "key": key,
+                "app_id": APPSTORE[key],
+                "name": re.sub(r"\s+", " ", name).strip(),
+                "subtitle": re.sub(r"\s+", " ", subtitle).strip(),
+                "pricing": re.sub(
+                    r"\s+", " ", pricing_text_for(key, locale)
+                ).strip(),
+                "guide_url": f"{SITE}/{locale}/{key}.html",
+                "store_url": store_url,
+                "canonical_store": canonical_store,
+                "storefront_verified": store_url != canonical_store,
+                "category": SCHEMA_CAT.get(
+                    APPS[key].get("category", "utility"),
+                    "UtilitiesApplication",
+                ),
+            }
+        )
+    records.sort(
+        key=lambda record: (
+            record["name"].casefold(),
+            record["key"],
+        )
+    )
+    return records
+
+
+def localized_directory_schema(locale, records):
+    ui = get_ui(locale)
+    return {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "@id": f"{SITE}/{locale}/index.html#verified-apps",
+        "url": f"{SITE}/{locale}/index.html",
+        "name": ui["dir_dir"],
+        "description": ui["dir_lead"],
+        "inLanguage": locale,
+        "numberOfItems": len(records),
+        "itemListOrder": "https://schema.org/ItemListOrderAscending",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": position,
+                "item": {
+                    "@type": "MobileApplication",
+                    "@id": record["canonical_store"],
+                    "identifier": record["app_id"],
+                    "name": record["name"],
+                    "description": record["subtitle"],
+                    "operatingSystem": "iOS",
+                    "applicationCategory": record["category"],
+                    "url": record["guide_url"],
+                    "sameAs": record["canonical_store"],
+                    "installUrl": record["store_url"],
+                    "downloadUrl": record["store_url"],
+                    "potentialAction": {
+                        "@type": "InstallAction",
+                        "target": record["store_url"],
+                    },
+                },
+            }
+            for position, record in enumerate(records, start=1)
+        ],
+    }
+
+
+DIRECTORY_STYLE = """<style>
+:root{color-scheme:light;--ink:#15211d;--muted:#5a6862;--line:#dce8e2;--paper:#fff;--mint:#e8f7f0;--teal:#116a56;--shadow:0 18px 54px rgba(21,70,57,.11);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,#f2fbf7 0,#fff 36rem);color:var(--ink)}
+main{width:min(96%,980px);margin:0 auto;padding:clamp(28px,5vw,64px) 0 72px}
+h1{margin:0;font-size:clamp(2rem,6vw,4.4rem);letter-spacing:-.045em;line-height:1.02}
+h1,.intro,.catalog-link,.app-name,.app-sub,.app-price,.store-cta{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.intro{margin:16px 0 0;color:var(--muted);font-size:clamp(1rem,2vw,1.16rem)}
+.catalog-link{margin:18px 0 28px}.catalog-link a{color:var(--teal);font-weight:800}
+.app-list{display:grid;grid-template-columns:1fr;gap:12px;margin:0;padding:0;list-style:none}
+.app-card{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:clamp(14px,3vw,28px);min-height:116px;padding:clamp(18px,3vw,26px);border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.94);box-shadow:var(--shadow)}
+.app-copy{min-width:0}.app-name{display:block;color:var(--ink);font-size:clamp(1.08rem,2.4vw,1.35rem);font-weight:900;text-decoration:none}.app-name:hover{text-decoration:underline}
+.app-sub,.app-price{margin:7px 0 0;color:var(--muted)}.app-price{font-size:.92rem}.app-price strong{color:var(--ink)}
+.store-cta{display:inline-flex;align-items:center;justify-content:center;max-width:42vw;min-height:48px;padding:0 20px;border-radius:999px;background:var(--teal);color:#fff;font-weight:900;text-decoration:none;box-shadow:0 10px 24px rgba(17,106,86,.22)}
+.store-cta:focus-visible,.app-name:focus-visible{outline:3px solid #7d5cff;outline-offset:4px}
+@media(max-width:560px){main{width:min(94%,760px)}.app-card{min-height:104px;border-radius:20px}.store-cta{max-width:34vw;padding:0 15px}.app-price{font-size:.84rem}}
+@media(prefers-reduced-motion:no-preference){.app-card,.store-cta{transition:transform .18s ease,box-shadow .18s ease}.app-card:hover{transform:translateY(-2px);box-shadow:0 22px 62px rgba(21,70,57,.15)}.store-cta:hover{transform:translateY(-1px)}}
+</style>"""
+
+
 def build_locale_index(locale, keys, locales):
     ui = get_ui(locale)
     e = html.escape
     is_rtl = base_lang(locale) in RTL
-    rows = []
-    for k in keys:
-        locdata = load_app_locales(k)
-        loc = locdata.get(locale, {})
-        name = (loc.get("name") or APPS[k]["name"]).strip()
-        sub = (loc.get("subtitle") or "").strip()
-        rows.append(f'    <li><a href="{k}.html">{e(name)}</a> — {e(sub[:80])}</li>')
+    records = localized_directory_records(locale, keys)
+    rows = [
+        (
+            f'    <li class="app-card" data-app-id="{e(record["app_id"])}">'
+            '<div class="app-copy">'
+            f'<a class="app-name" href="{e(record["key"])}.html">'
+            f'{e(record["name"])}</a>'
+            f'<p class="app-sub">{e(record["subtitle"])}</p>'
+            f'<p class="app-price"><strong>{e(ui["price"])}:</strong> '
+            f'{e(record["pricing"])}</p></div>'
+            f'<a class="store-cta" href="{e(record["store_url"])}" '
+            f'aria-label="{e(ui["get"].format(name=record["name"]))}">'
+            f'{e(ui["dl"])}</a></li>'
+        )
+        for record in records
+    ]
     items = "\n".join(rows)
     dir_attr = ' dir="rtl"' if is_rtl else ""
+    schema = json.dumps(
+        localized_directory_schema(locale, records),
+        ensure_ascii=False,
+        separators=(",", ":"),
+    )
     catalog_path = PORTFOLIO_CATALOG_PATHS.get(locale)
     catalog_link = (
-        f'  <p><a href="{SITE}/{catalog_path}">{e(ui["catalog"])}</a></p>\n'
+        f'  <p class="catalog-link"><a href="{SITE}/{catalog_path}">'
+        f'{e(ui["catalog"])}</a></p>\n'
         if catalog_path
         else ""
     )
@@ -1218,10 +1469,12 @@ def build_locale_index(locale, keys, locales):
 <link rel="canonical" href="{SITE}/{locale}/index.html">
 {feed_discovery_links()}
 {directory_hreflang_block(locales)}
+<script type="application/ld+json" data-iag="localized-install-directory">{schema}</script>
+{DIRECTORY_STYLE}
 </head><body><main>
   <h1>{e(ui["dir_dir"])}</h1>
-  <p>{e(ui["dir_lead"])}</p>
-{catalog_link}  <ul>
+  <p class="intro">{e(ui["dir_lead"])}</p>
+{catalog_link}  <ul class="app-list">
 {items}
   </ul>
 </main></body></html>

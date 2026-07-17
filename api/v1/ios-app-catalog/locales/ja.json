@@ -2,7 +2,7 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.1.0",
   "date_modified": "2026-07-17",
-  "content_digest": "3c3a1ff4e3c06adf0e7459b4ca1df042800d6c0346024f1286734dc4cc22c7a3",
+  "content_digest": "b26a6a616fbb32611e60f59a79198da069fac002c4e1b10d1488106434f8e343",
   "locale": "ja",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -11,7 +11,7 @@
     {
       "key": "aim990",
       "app_store_id": "6784974530",
-      "name": "Aim990",
+      "name": "Aim990 - TOEIC対策",
       "summary": "Aim990は、TOEIC(R)リスニング＆リーディング試験のための独立した学習支援アプリです。30日間の学習プランを通じて、あなたの英語力を効果的に向上させることができます。",
       "category": "education",
       "search_terms": [
@@ -44,7 +44,7 @@
     {
       "key": "cvdesk",
       "app_store_id": "6781337213",
-      "name": "CV Desk",
+      "name": "CV Desk：ATS履歴書・職務経歴書",
       "summary": "採用担当者のATS（応募者追跡システム）が正しく読み取れる履歴書を、iPhoneだけで作成。アカウント不要、アップロードなし、サブスクなし。",
       "category": "productivity",
       "search_terms": [
@@ -104,7 +104,7 @@
     {
       "key": "cyca",
       "app_store_id": "6782251621",
-      "name": "Cyca",
+      "name": "Cyca 生理・排卵日トラッカー",
       "summary": "Cyca へようこそ —— あなたの体を、やさしく見守るプライベートな周期パートナー。",
       "category": "health",
       "search_terms": [
@@ -223,7 +223,7 @@
     {
       "key": "hourstag",
       "app_store_id": "6754218117",
-      "name": "HoursTag",
+      "name": "HoursTag: 価格を時間に",
       "summary": "それ、本当はいくら？お金ではなく、あなたの人生の「時間」で。",
       "category": "finance",
       "search_terms": [
@@ -326,7 +326,7 @@
     {
       "key": "lumibopomofo",
       "app_store_id": "6773017109",
-      "name": "Lumi Bopomofo",
+      "name": "Lumi ボポモフォ",
       "summary": "Lumi ボポモフォは、小さなお子さまが中国語の注音（ボポモフォ／Zhuyin）を、やさしく楽しく学べるアプリです。",
       "category": "kids",
       "search_terms": [
@@ -383,7 +383,7 @@
     {
       "key": "lumibopomofopro",
       "app_store_id": "6775773117",
-      "name": "Lumi Bopomofo Pro",
+      "name": "Lumi Bopomofo Pro: Zhuyin",
       "summary": "かわいい宇宙の冒険を通して、お子さまが中国語の発音学習を好きになるようサポートします。",
       "category": "kids",
       "search_terms": [
@@ -439,8 +439,8 @@
     {
       "key": "lumiletters",
       "app_store_id": "6778748533",
-      "name": "Lumi Letters",
-      "summary": "無料でダウンロードして、まず遊んでみて、気に入ったら解放してください。",
+      "name": "Lumi レター Lite：こども英語ABC",
+      "summary": "無料でダウンロードして、まず遊んでみて、気に入ったら解放してください。 Lumi レター Lite は、アルファベットの学びをゆめかわ星空の大冒険に変えます。お子さまは授業を受けるのではなく、やめたくなくなるゲームで遊びます。星をともし、きれいな文字をなぞり、音を聞いて文字を探し、二十六人のかわいい文字のなかまを集めます。すべての画面、すべての音声、すべての音楽を、三歳から七歳のお子さまのために丁寧に磨き上げました。",
       "category": "kids",
       "search_terms": [
         "abc",
@@ -502,8 +502,8 @@
     {
       "key": "lumiletterspro",
       "app_store_id": "6778491147",
-      "name": "Lumi Letters Pro",
-      "summary": "Lumi レターの世界へようこそ",
+      "name": "Lumi レター Pro：ABCフォニックス",
+      "summary": "Lumi レターの世界へようこそ ふしぎな森で、くまのLumiと一緒に、26文字を「知っている」から「読める、書ける、音にできる」まで遊びながら伸ばします。ただのフラッシュカードではありません。子どもに一生役立つ「読み解く力」を、やさしい順番で育てる本格フォニックスプログラムです。",
       "category": "kids",
       "search_terms": [
         "abc",
@@ -557,7 +557,7 @@
     {
       "key": "lumimath",
       "app_store_id": "6778269699",
-      "name": "Lumi Math Planet",
+      "name": "Lumi算数プラネット：体験版",
       "summary": "算数を「教える」アプリは、たくさんあります。これは、算数を「好きにさせる」アプリです。",
       "category": "kids",
       "search_terms": [
@@ -652,7 +652,7 @@
     {
       "key": "lumimathpro",
       "app_store_id": "6776958488",
-      "name": "Lumi Math Pro",
+      "name": "Lumi さんすうプラネット：子供の算数",
       "summary": "国際大会レベルの「考える力」を、やめられない宇宙の冒険に",
       "category": "kids",
       "search_terms": [
@@ -714,7 +714,7 @@
     {
       "key": "lumimission",
       "app_store_id": "6779750237",
-      "name": "Lumi Mission Planet",
+      "name": "Lumi ミッション星 生活習慣",
       "summary": "3歳から7歳の子に、はみがきやごはん、おかたづけを毎日すすめるのは大変なことです。",
       "category": "kids",
       "search_terms": [
@@ -773,7 +773,7 @@
     {
       "key": "lumimissionpro",
       "app_store_id": "6779745474",
-      "name": "Lumi Mission Planet Pro",
+      "name": "Lumi ミッション星 Pro 毎日の習慣",
       "summary": "3歳から7歳の子に、はみがきやごはん、おかたづけを毎日すすめるのは大変なことです。",
       "category": "kids",
       "search_terms": [
@@ -833,7 +833,7 @@
     {
       "key": "tripplanet",
       "app_store_id": "6787193643",
-      "name": "Lumi Trip Planet",
+      "name": "Lumi Trip Planet 世界の旅",
       "summary": "すべての家族旅行を小さな宇宙の冒険に変えましょう。",
       "category": "kids",
       "search_terms": [
@@ -866,7 +866,7 @@
     {
       "key": "lumiweather",
       "app_store_id": "6779552704",
-      "name": "Lumi Weather",
+      "name": "ルミのおてんき星 おでかけ指数",
       "summary": "ある朝、もぞもぞする子を抱っこして窓辺に立つと、小さな不安がよぎります。今日は寒すぎないかな、暑すぎないかな、濡れすぎて外に出せないかな——。",
       "category": "kids",
       "search_terms": [
@@ -929,7 +929,7 @@
     {
       "key": "mochi",
       "app_store_id": "6785004775",
-      "name": "Mochi",
+      "name": "Mochi: かわいいToDo",
       "summary": "Mochiは、毎日のやることをかわいく、やさしく整えるToDoリストアプリです。タスクを書いて、終わったら小さな丸をタップ。ひとつずつチェックするたびに、気持ちまでふわっと軽くなります。",
       "category": "productivity",
       "search_terms": [
@@ -973,7 +973,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream",
+      "name": "PhotoCream Pro",
       "summary": "PhotoCream Proは、iPhoneとiPadでの究極の撮影パートナーです。レトロな写真撮影やセルフィーが好きな方に最適です。100以上の本格的なアナログフィルターで、写真をアート作品に変えます。ライブプレビュー機能で、撮影前にフィルター効果を確認し、完璧な瞬間を捉えます。",
       "category": "photo-utility",
       "search_terms": [
@@ -1029,7 +1029,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear",
+      "name": "PicClear Pro",
       "summary": "不要な写真を片付けて、数GBの空き容量を取り戻しましょう——重複、スクリーンショット、ぼやけた写真、そして容量を圧迫する動画まで。",
       "category": "photo-utility",
       "search_terms": [
@@ -1086,7 +1086,7 @@
     {
       "key": "scanto",
       "app_store_id": "6779977651",
-      "name": "ScanTo Pro",
+      "name": "ScanTo Pro: オフラインPDF",
       "summary": "「書類の中の文字を読む」ことまで端末内で完結し、決してオンラインにならないスキャナー。",
       "category": "productivity",
       "search_terms": [
@@ -1128,8 +1128,8 @@
     {
       "key": "sereno",
       "app_store_id": "6788236641",
-      "name": "Sereno",
-      "summary": "Serenoは、あなたの電話を睡眠、集中、そして落ち着きのための高級サウンドマシンに変えます。手作業で調整された数十のサウンドがデバイス上でリアルタイムに生成され、1000以上のユニークなサウンドスケープにブレンドされます",
+      "name": "Sereno: スリープサウンド",
+      "summary": "Serenoは、あなたの電話を睡眠、集中、そして落ち着きのための高級サウンドマシンに変えます。手作業で調整された数十のサウンドがデバイス上でリアルタイムに生成され、1000以上のユニークなサウンドスケープにブレンドされます — 雨はループせず、海も繰り返さない、ただ夜を通してあなたを運ぶ終わりのない穏やかなミックスです。",
       "category": "sleep-sound",
       "search_terms": [
         "雨音",
@@ -1174,7 +1174,7 @@
     {
       "key": "snapport",
       "app_store_id": "6780575828",
-      "name": "Snapport",
+      "name": "Snapport: パスポート証明写真",
       "summary": "パスポート、ビザ、ID用の写真を自宅で。Snapport は、落ち着いて、プライバシーを守りながら作れる写真スタジオです。一般的なサイズテンプレート、顔位置ガイド、背景ツール、印刷用レイアウトを備え、すべて iPhone 上で処理します。",
       "category": "photo-utility",
       "search_terms": [
@@ -1282,7 +1282,7 @@
     {
       "key": "tripbee",
       "app_store_id": "6787754435",
-      "name": "TripBee Pro: Trip Planner",
+      "name": "TripBee: 旅行プランナー",
       "summary": "旅の予定を、美しく、プライベートに、完全オフラインで持ち歩ける計画書に。",
       "category": "travel",
       "search_terms": [
@@ -1328,8 +1328,8 @@
     {
       "key": "unblurry",
       "app_store_id": "6782275018",
-      "name": "Unblurry",
-      "summary": "ぼやけた写真を、くっきり鮮明に。",
+      "name": "Unblurry Pro：ぼやけ補正",
+      "summary": "Unblurry は、ピントの甘い写真、手ブレした写真、ぼやけた写真を、わずか数秒でシャープで鮮やかな一枚に変えます。処理はすべてあなたの iPhone 上で完結。クラウド不要、アカウント不要、待ち時間もありません。",
       "category": "photo-utility",
       "search_terms": [
         "ぼかし除去",
@@ -1384,7 +1384,7 @@
     {
       "key": "wordmate",
       "app_store_id": "6789917808",
-      "name": "Wordmate: Learn 44 Languages",
+      "name": "Wordmate：44言語の単語学習",
       "summary": "すきま時間を、確かな語彙力へ。Wordmateは、44言語の体系的な単語学習を、iPhoneやiPadだけでなくホーム画面のインタラクティブウィジェットとApple Watchでも続けられる語彙学習アプリです。自然な例文と整理されたレッスンで、移動中も待ち時間も学びに変わります。",
       "category": "education",
       "search_terms": [

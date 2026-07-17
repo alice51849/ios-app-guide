@@ -3275,15 +3275,43 @@ class GeneratorTests(unittest.TestCase):
                 encoding="utf-8"
             )
             self.assertIn("Bopomofo Symbols API v1", catalog)
+            self.assertIn('rel="api-catalog"', catalog)
+            self.assertIn(
+                static_api_catalog.ROOT_API_CATALOG,
+                catalog,
+            )
+            api_catalog_path = pages / ".well-known" / "api-catalog"
+            api_catalog = json.loads(
+                api_catalog_path.read_text(encoding="utf-8")
+            )
+            self.assertEqual({"linkset"}, set(api_catalog))
+            self.assertEqual(1, len(api_catalog["linkset"]))
+            self.assertEqual(
+                zhuyin_static_api.api_url().rstrip("/"),
+                api_catalog["linkset"][0]["anchor"],
+            )
+            self.assertEqual(
+                zhuyin_static_api.api_url("openapi.json"),
+                api_catalog["linkset"][0]["service-desc"][0]["href"],
+            )
+            self.assertEqual(
+                static_api_catalog.OPENAPI_MEDIA_TYPE,
+                api_catalog["linkset"][0]["service-desc"][0]["type"],
+            )
             sitemap = (pages / "sitemap_api.xml").read_text(encoding="utf-8")
             self.assertEqual(37, sitemap.count("/symbols/"))
             self.assertIn(
                 zhuyin_static_api.api_url("openapi.json"), sitemap
             )
+            self.assertIn(
+                f"{static_api_catalog.SITE}/.well-known/api-catalog",
+                sitemap,
+            )
             generated = [
                 *api.rglob("*"),
                 pages / "zh-Hant" / zhuyin_static_api.API_PATH / "index.html",
                 pages / "api" / "index.html",
+                api_catalog_path,
                 pages / "sitemap_api.xml",
             ]
             mtimes = {
@@ -3314,6 +3342,11 @@ class GeneratorTests(unittest.TestCase):
                     for item in static_api_catalog.discovered_apis(pages)
                 ],
             )
+            api_catalog = json.loads(
+                api_catalog_path.read_text(encoding="utf-8")
+            )
+            self.assertEqual(2, len(api_catalog["linkset"]))
+            static_api_catalog.validate_api_catalog_linkset(api_catalog, 2)
 
     @unittest.skipUnless(
         importlib.util.find_spec("jsonschema")

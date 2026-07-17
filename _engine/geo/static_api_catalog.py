@@ -8,6 +8,7 @@ import json
 import os
 import re
 from pathlib import Path
+from urllib.parse import urlsplit
 from xml.sax.saxutils import escape as xml_escape
 
 from family_travel_dataset import write_text_if_changed
@@ -18,6 +19,11 @@ PAGES = HERE / "pages"
 SITE = os.environ.get(
     "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
 ).rstrip("/")
+ROOT_API_CATALOG = os.environ.get(
+    "GEO_ROOT_API_CATALOG",
+    "https://alice51849.github.io/.well-known/api-catalog",
+)
+OPENAPI_MEDIA_TYPE = "application/vnd.oai.openapi+json;version=3.1"
 CONTENT_MODIFIED_RE = re.compile(
     r'<meta name="content-modified" content="(\d{4}-\d{2}-\d{2})">'
 )
@@ -97,6 +103,95 @@ def _dataset_modified(pages: Path, descriptor: dict) -> str:
     return descriptor["initial_date"]
 
 
+def _require_https_url(value: object, field: str) -> None:
+    if not isinstance(value, str):
+        raise ValueError(f"{field} must be a string")
+    parsed = urlsplit(value)
+    if parsed.scheme != "https" or not parsed.netloc:
+        raise ValueError(f"{field} must be an absolute HTTPS URL: {value!r}")
+
+
+def validate_api_catalog_linkset(document: dict, expected_apis: int) -> None:
+    if (
+        not isinstance(document, dict)
+        or set(document) != {"linkset"}
+        or not isinstance(document["linkset"], list)
+    ):
+        raise ValueError("API catalog must be an RFC 9264 JSON linkset")
+    if len(document["linkset"]) != expected_apis:
+        raise ValueError(
+            "API catalog does not match the number of discovered APIs"
+        )
+    for index, entry in enumerate(document["linkset"]):
+        if not isinstance(entry, dict) or set(entry) != {
+            "anchor",
+            "service-desc",
+            "service-doc",
+            "license",
+        }:
+            raise ValueError(f"Invalid API catalog entry at index {index}")
+        _require_https_url(entry["anchor"], f"linkset[{index}].anchor")
+        for relation in ("service-desc", "service-doc", "license"):
+            targets = entry[relation]
+            if not isinstance(targets, list) or not targets:
+                raise ValueError(
+                    f"linkset[{index}].{relation} must be a non-empty list"
+                )
+            for target_index, target in enumerate(targets):
+                if not isinstance(target, dict):
+                    raise ValueError(
+                        f"linkset[{index}].{relation}[{target_index}] "
+                        "must be an object"
+                    )
+                _require_https_url(
+                    target.get("href"),
+                    f"linkset[{index}].{relation}[{target_index}].href",
+                )
+                target_type = target.get("type")
+                if not isinstance(target_type, str) or not target_type.strip():
+                    raise ValueError(
+                        f"linkset[{index}].{relation}[{target_index}].type "
+                        "must be a string"
+                    )
+
+
+def render_api_catalog_linkset(pages: Path = PAGES) -> str:
+    descriptors = discovered_apis(pages)
+    linkset = []
+    for descriptor in descriptors:
+        docs_url = f"{SITE}/api/v1/{descriptor['slug']}/"
+        linkset.append(
+            {
+                "anchor": docs_url.rstrip("/"),
+                "service-desc": [
+                    {
+                        "href": f"{docs_url}openapi.json",
+                        "type": OPENAPI_MEDIA_TYPE,
+                    }
+                ],
+                "service-doc": [
+                    {"href": docs_url, "type": "text/html"},
+                    {
+                        "href": (
+                            f"{SITE}/zh-Hant/api/v1/"
+                            f"{descriptor['slug']}/"
+                        ),
+                        "type": "text/html",
+                    },
+                ],
+                "license": [
+                    {
+                        "href": descriptor["license"],
+                        "type": "text/html",
+                    }
+                ],
+            }
+        )
+    document = {"linkset": linkset}
+    validate_api_catalog_linkset(document, len(descriptors))
+    return json.dumps(document, ensure_ascii=False, indent=2) + "\n"
+
+
 def render_api_catalog(pages: Path = PAGES) -> str:
     descriptors = discovered_apis(pages)
     modified_dates = []
@@ -157,7 +252,7 @@ def render_api_catalog(pages: Path = PAGES) -> str:
 <title>Open APIs - free, versioned static data | Lumi Apps</title>
 <meta name="description" content="Free, versioned, read-only static APIs generated from citable open datasets.">
 <meta name="content-modified" content="{modified}">
-<link rel="canonical" href="{SITE}/api/"><script type="application/ld+json">{schema}</script>
+<link rel="canonical" href="{SITE}/api/"><link rel="api-catalog" type="application/linkset+json" href="{ROOT_API_CATALOG}"><script type="application/ld+json">{schema}</script>
 <style>body{{margin:0;background:#f5f8fc;color:#142036;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}}main{{max-width:820px;margin:auto;padding:52px 20px}}a{{color:#315fc4;font-weight:750;text-decoration:none}}article{{background:#fff;border:1px solid #dce4ef;border-radius:18px;padding:22px;margin-top:24px;box-shadow:0 12px 30px rgba(27,44,79,.05)}}h1{{font-size:clamp(30px,6vw,48px);line-height:1.1}}p{{color:#5b687d}}.tag{{font-size:13px;font-weight:700}}.links{{display:flex;flex-wrap:wrap;gap:16px}}</style></head>
 <body><main><p class="tag">OPEN DATA &middot; NO API KEYS</p><h1>Open APIs</h1><p>Stable, cacheable JSON interfaces for free reference datasets.</p>
 {''.join(cards)}</main></body></html>
@@ -197,7 +292,17 @@ def build_api_discovery(pages: Path = PAGES) -> list[str]:
             entries.append((f"{SITE}/{relative}", data_modified))
 
     root_modified = max(root_dates, default="2026-07-11")
+    well_known = pages / ".well-known"
+    well_known.mkdir(parents=True, exist_ok=True)
+    write_text_if_changed(
+        well_known / "api-catalog",
+        render_api_catalog_linkset(pages),
+    )
     entries.insert(0, (f"{SITE}/api/", root_modified))
+    entries.insert(
+        0,
+        (f"{SITE}/.well-known/api-catalog", root_modified),
+    )
     body = "\n".join(
         "  <url><loc>{url}</loc><lastmod>{modified}</lastmod></url>".format(
             url=xml_escape(url),

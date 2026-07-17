@@ -2410,9 +2410,15 @@ class GeneratorTests(unittest.TestCase):
             for subdir in ("answers", "guides", "alternatives", "tools", "data"):
                 (root / subdir).mkdir()
             page = root / "guides" / "sample-app.html"
+            catalog_feed = (
+                f"{gen_feed.SITE}/api/v1/ios-app-catalog/feeds/en-US.json"
+            )
             page.write_text(
                 "<html><head><title>Sample App Guide</title>"
                 '<meta name="description" content="A stable app guide.">'
+                '<link data-preserve="true" rel="alternate" '
+                'type="application/feed+json" '
+                f'href="{catalog_feed}">'
                 '<script type="application/ld+json">'
                 '{"dateModified":"2026-07-12"}</script></head><body></body></html>',
                 encoding="utf-8",
@@ -2426,12 +2432,20 @@ class GeneratorTests(unittest.TestCase):
             tracked = (*outputs, page)
             mtimes = {path: path.stat().st_mtime_ns for path in tracked}
             page_content = page.read_text(encoding="utf-8")
-            for media_type in (
-                "application/atom+xml",
-                "application/rss+xml",
-                "application/feed+json",
+            for media_type, filename in (
+                ("application/atom+xml", "feed.xml"),
+                ("application/rss+xml", "rss.xml"),
+                ("application/feed+json", "feed.json"),
             ):
-                self.assertEqual(1, page_content.count(f'type="{media_type}"'))
+                self.assertIn(f'type="{media_type}"', page_content)
+                self.assertEqual(
+                    1,
+                    page_content.count(
+                        f'href="{gen_feed.SITE}/{filename}"'
+                    ),
+                )
+            self.assertEqual(1, page_content.count(f'href="{catalog_feed}"'))
+            self.assertIn('data-preserve="true"', page_content)
             gen_feed.main()
             self.assertEqual(
                 mtimes,
@@ -2556,8 +2570,11 @@ class GeneratorTests(unittest.TestCase):
                 ("application/rss+xml", "rss.xml"),
                 ("application/feed+json", "feed.json"),
             ):
-                self.assertEqual(1, content.count(f'type="{media_type}"'))
-                self.assertIn(f'href="{gen_feed.SITE}/{filename}"', content)
+                self.assertIn(f'type="{media_type}"', content)
+                self.assertEqual(
+                    1,
+                    content.count(f'href="{gen_feed.SITE}/{filename}"'),
+                )
 
         discovery_pages = []
         for page in (pages / "index.html", *pages.glob("*/*.html")):
@@ -2571,8 +2588,11 @@ class GeneratorTests(unittest.TestCase):
                 ("application/rss+xml", "rss.xml"),
                 ("application/feed+json", "feed.json"),
             ):
-                self.assertEqual(1, content.count(f'type="{media_type}"'))
-                self.assertIn(f'href="{gen_feed.SITE}/{filename}"', content)
+                self.assertIn(f'type="{media_type}"', content)
+                self.assertEqual(
+                    1,
+                    content.count(f'href="{gen_feed.SITE}/{filename}"'),
+                )
 
         llms = (pages / "llms.txt").read_text(encoding="utf-8")
         llms_full = (pages / "llms-full.txt").read_text(encoding="utf-8")
@@ -17148,6 +17168,16 @@ class GeneratorTests(unittest.TestCase):
             second_feed_bytes = feed_path.read_bytes()
             second_mtime = data_path.stat().st_mtime_ns
             second_feed_mtime = feed_path.stat().st_mtime_ns
+            japanese_directory_path = pages / "ja" / "index.html"
+            self.assertTrue(
+                gen_feed.ensure_feed_discovery(japanese_directory_path)
+            )
+            self.assertFalse(
+                gen_feed.ensure_feed_discovery(japanese_directory_path)
+            )
+            japanese_directory = japanese_directory_path.read_text(
+                encoding="utf-8"
+            )
             api_catalog = (pages / "api" / "index.html").read_text(
                 encoding="utf-8"
             )
@@ -17218,6 +17248,24 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(
             "ja native app directory",
             japanese_feed["title"],
+        )
+        self.assertEqual(
+            1,
+            japanese_directory.count(
+                'data-ios-app-catalog-feed="true"'
+            ),
+        )
+        self.assertEqual(
+            1,
+            japanese_directory.count(
+                portfolio_app_catalog_api.feed_url("ja")
+            ),
+        )
+        self.assertEqual(
+            1,
+            japanese_directory.count(
+                f'href="{gen_feed.SITE}/feed.json"'
+            ),
         )
         self.assertEqual(2, len(english_feed["items"]))
         self.assertEqual(

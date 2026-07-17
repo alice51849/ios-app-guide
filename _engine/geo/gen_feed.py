@@ -47,9 +47,20 @@ DATE_MODIFIED_RE = re.compile(
     r'"dateModified"\s*:\s*"([0-9]{4}-[0-9]{2}-[0-9]{2}(?:T[^"]+)?)"'
 )
 CTA_RE = re.compile(r'<a class="cta" href="([^"]+)"')
+SITE_FEED_URLS = (
+    f"{SITE}/feed.xml",
+    f"{SITE}/rss.xml",
+    f"{SITE}/feed.json",
+)
 FEED_LINK_RE = re.compile(
-    r'<link rel="alternate" type="application/'
-    r'(?:atom\+xml|rss\+xml|feed\+json)"[^>]*>'
+    r"<link\b"
+    r"(?=[^>]*\brel=[\"']alternate[\"'])"
+    r"(?=[^>]*\btype=[\"']application/"
+    r"(?:atom\+xml|rss\+xml|feed\+json)[\"'])"
+    r"(?=[^>]*\bhref=[\"'](?:"
+    + "|".join(re.escape(url) for url in SITE_FEED_URLS)
+    + r")[\"'])[^>]*>\s*",
+    re.I,
 )
 
 

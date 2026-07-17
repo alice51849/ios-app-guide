@@ -162,6 +162,28 @@ def _localized_directory_title(pages: Path, locale: str) -> str:
     return title
 
 
+def _inject_feed_discovery(pages: Path, locale: str, title: str) -> None:
+    path = pages / locale / "index.html"
+    source = path.read_text(encoding="utf-8")
+    source = re.sub(
+        r"\s*<link\b[^>]*\bdata-ios-app-catalog-feed="
+        r'["\']true["\'][^>]*>\s*',
+        "\n",
+        source,
+        flags=re.I,
+    )
+    if "</head>" not in source:
+        raise ValueError(f"Localized app directory has no head: {path}")
+    tag = (
+        '<link rel="alternate" type="application/feed+json" '
+        f'title="{html.escape(title, quote=True)}" '
+        f'href="{feed_url(locale)}" '
+        'data-ios-app-catalog-feed="true">'
+    )
+    updated = source.replace("</head>", f"{tag}\n</head>", 1)
+    write_text_if_changed(path, updated)
+
+
 def _meta_content(path: Path, name: str) -> str:
     try:
         text = path.read_text(encoding="utf-8")
@@ -1093,6 +1115,8 @@ def build(
     index = index_payload(records, modified, digest)
     openapi = openapi_document()
     validate_artifacts(records, index, catalogs, feeds, openapi)
+    for locale, title in feed_titles.items():
+        _inject_feed_discovery(pages, locale, title)
 
     api = pages / API_PATH
     locales_dir = api / "locales"

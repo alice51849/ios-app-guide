@@ -5,7 +5,7 @@
     "title": "Verified iOS App Catalog API",
     "summary": "Match user needs to verified live iOS apps in 50 locales.",
     "description": "Read-only static catalogs with localized summaries, localized search terms, factual capabilities and directly attributable App Store links. Records are alphabetical and are not rankings.",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "license": {
       "name": "CC BY 4.0",
       "url": "https://creativecommons.org/licenses/by/4.0/"
@@ -134,6 +134,96 @@
           }
         }
       }
+    },
+    "/feeds/{locale}.json": {
+      "get": {
+        "tags": [
+          "Verified iOS apps"
+        ],
+        "summary": "Get the localized catalog as a JSON Feed 1.1 document",
+        "operationId": "getLocalizedVerifiedIosAppJsonFeed",
+        "security": [],
+        "parameters": [
+          {
+            "name": "locale",
+            "in": "path",
+            "required": true,
+            "description": "Apple App Store locale identifier.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ar-SA",
+                "bn-BD",
+                "ca",
+                "cs",
+                "da",
+                "de-DE",
+                "el",
+                "en-AU",
+                "en-CA",
+                "en-GB",
+                "en-US",
+                "es-ES",
+                "es-MX",
+                "fi",
+                "fr-CA",
+                "fr-FR",
+                "gu-IN",
+                "he",
+                "hi",
+                "hr",
+                "hu",
+                "id",
+                "it",
+                "ja",
+                "kn-IN",
+                "ko",
+                "ml-IN",
+                "mr-IN",
+                "ms",
+                "nl-NL",
+                "no",
+                "or-IN",
+                "pa-IN",
+                "pl",
+                "pt-BR",
+                "pt-PT",
+                "ro",
+                "ru",
+                "sk",
+                "sl-SI",
+                "sv",
+                "ta-IN",
+                "te-IN",
+                "th",
+                "tr",
+                "uk",
+                "ur-PK",
+                "vi",
+                "zh-Hans",
+                "zh-Hant"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Localized JSON Feed with direct App Store links.",
+            "content": {
+              "application/feed+json": {
+                "schema": {
+                  "$ref": "./feed.schema.json"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "./feed.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -143,6 +233,9 @@
       },
       "CatalogResponse": {
         "$ref": "./catalog.schema.json"
+      },
+      "FeedResponse": {
+        "$ref": "./feed.schema.json"
       }
     }
   },

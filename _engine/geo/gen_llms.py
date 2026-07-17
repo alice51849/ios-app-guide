@@ -276,12 +276,20 @@ def build_llms(comp_map, live_keys):
             "## Open static APIs (versioned, read-only, no API key)",
         ]
         for descriptor in static_apis:
+            api_directory = os.path.join(
+                API_DIR, "v1", descriptor["slug"]
+            )
             base = f"{SITE}/api/v1/{descriptor['slug']}"
             lines += [
                 f"- {descriptor['title']}: {base}/",
                 f"  - OpenAPI 3.1: {base}/openapi.json",
                 f"  - API index: {base}/index.json",
             ]
+            feed_path = descriptor.get("feed")
+            if isinstance(feed_path, str) and os.path.exists(
+                os.path.join(api_directory, feed_path)
+            ):
+                lines.append(f"  - JSON Feed 1.1: {base}/{feed_path}")
     if os.path.exists(os.path.join(TOOLS, f"{FAMILY_TRAVEL_OER}.metadata.json")):
         opds2 = f"{SITE}/opds/{FAMILY_TRAVEL_OER}.json"
         opds1 = f"{SITE}/opds/{FAMILY_TRAVEL_OER}.xml"
@@ -864,6 +872,11 @@ def build_llms_full(comp_map, live_keys):
                 f"  - OpenAPI 3.1: {base}/openapi.json",
                 f"  - API index: {base}/index.json",
             ]
+            feed_path = descriptor.get("feed")
+            if isinstance(feed_path, str) and os.path.exists(
+                os.path.join(api_directory, feed_path)
+            ):
+                lines.append(f"  - JSON Feed 1.1: {base}/{feed_path}")
             for filename in sorted(
                 name
                 for name in os.listdir(api_directory)

@@ -17053,9 +17053,16 @@ class GeneratorTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)
             for locale in OFFICIAL_LOCALES:
+                locale_directory = pages / locale
+                locale_directory.mkdir(parents=True, exist_ok=True)
+                (locale_directory / "index.html").write_text(
+                    "<html><head>"
+                    f"<title>{locale} native app directory</title>"
+                    "</head><body></body></html>",
+                    encoding="utf-8",
+                )
                 for key in ("snapport", "wordmate"):
-                    path = pages / locale / f"{key}.html"
-                    path.parent.mkdir(parents=True, exist_ok=True)
+                    path = locale_directory / f"{key}.html"
                     content = (
                         '<meta name="description" content="'
                         f"{locale} summary for {key}."
@@ -17094,6 +17101,9 @@ class GeneratorTests(unittest.TestCase):
             schema = json.loads(
                 (api / "catalog.schema.json").read_text(encoding="utf-8")
             )
+            feed_schema = json.loads(
+                (api / "feed.schema.json").read_text(encoding="utf-8")
+            )
             english = json.loads(
                 (api / "locales" / "en-US.json").read_text(
                     encoding="utf-8"
@@ -17102,14 +17112,27 @@ class GeneratorTests(unittest.TestCase):
             japanese = json.loads(
                 (api / "locales" / "ja.json").read_text(encoding="utf-8")
             )
+            english_feed = json.loads(
+                (api / "feeds" / "en-US.json").read_text(encoding="utf-8")
+            )
+            japanese_feed = json.loads(
+                (api / "feeds" / "ja.json").read_text(encoding="utf-8")
+            )
             openapi = json.loads(
                 (api / "openapi.json").read_text(encoding="utf-8")
             )
             docs = (api / "index.html").read_text(encoding="utf-8")
             data_path = api / "locales" / "en-US.json"
+            feed_path = api / "feeds" / "en-US.json"
             stable_mtime = 1_700_000_000_000_000_000
+            stable_feed_mtime = stable_mtime + 1
             os.utime(data_path, ns=(stable_mtime, stable_mtime))
+            os.utime(
+                feed_path,
+                ns=(stable_feed_mtime, stable_feed_mtime),
+            )
             first_bytes = data_path.read_bytes()
+            first_feed_bytes = feed_path.read_bytes()
             portfolio_app_catalog_api.build(
                 pages,
                 live_keys={"wordmate", "snapport"},
@@ -17118,27 +17141,49 @@ class GeneratorTests(unittest.TestCase):
                 path.stem
                 for path in (api / "locales").glob("*.json")
             }
+            feed_files = {
+                path.stem for path in (api / "feeds").glob("*.json")
+            }
             second_bytes = data_path.read_bytes()
+            second_feed_bytes = feed_path.read_bytes()
             second_mtime = data_path.stat().st_mtime_ns
+            second_feed_mtime = feed_path.stat().st_mtime_ns
             api_catalog = (pages / "api" / "index.html").read_text(
                 encoding="utf-8"
             )
+            with mock.patch.object(
+                gen_llms,
+                "API_DIR",
+                str(pages / "api"),
+            ):
+                llms = gen_llms.build_llms({}, set())
+                llms_full = gen_llms.build_llms_full({}, set())
             sitemap = (pages / "sitemap_api.xml").read_text(
                 encoding="utf-8"
             )
 
-        self.assertEqual(56, len(urls))
+        self.assertEqual(107, len(urls))
         self.assertEqual(50, index["locale_count"])
         self.assertEqual(
             list(OFFICIAL_LOCALES),
             [item["locale"] for item in index["locales"]],
         )
         self.assertEqual(
+            [
+                portfolio_app_catalog_api.feed_url(locale)
+                for locale in OFFICIAL_LOCALES
+            ],
+            [item["feed"] for item in index["locales"]],
+        )
+        self.assertEqual(
             set(OFFICIAL_LOCALES),
             locale_files,
         )
+        self.assertEqual(set(OFFICIAL_LOCALES), feed_files)
         self.assertEqual(first_bytes, second_bytes)
+        self.assertEqual(first_feed_bytes, second_feed_bytes)
         self.assertEqual(stable_mtime, second_mtime)
+        self.assertEqual(stable_feed_mtime, second_feed_mtime)
         self.assertEqual(
             ["Snapport", "Wordmate: Learn 44 Languages"],
             [app["name"] for app in english["apps"]],
@@ -17165,16 +17210,64 @@ class GeneratorTests(unittest.TestCase):
                 )
                 self.assertIn("ct=iag_api_", app["app_store_url"])
         self.assertEqual(
-            {"/index.json", "/locales/{locale}.json"},
+            portfolio_app_catalog_api.JSON_FEED_VERSION,
+            english_feed["version"],
+        )
+        self.assertEqual("en-US", english_feed["language"])
+        self.assertEqual("ja", japanese_feed["language"])
+        self.assertEqual(
+            "ja native app directory",
+            japanese_feed["title"],
+        )
+        self.assertEqual(2, len(english_feed["items"]))
+        self.assertEqual(
+            [app["summary"] for app in japanese["apps"]],
+            [item["content_text"] for item in japanese_feed["items"]],
+        )
+        for feed in (english_feed, japanese_feed):
+            for item in feed["items"]:
+                self.assertIn("ct=iag_feed_", item["external_url"])
+                self.assertTrue(
+                    item["external_url"].startswith(
+                        "https://apps.apple.com/app/id"
+                    )
+                )
+            self.assertLessEqual(
+                len(
+                    json.dumps(feed, ensure_ascii=False).encode("utf-8")
+                ),
+                portfolio_app_catalog_api.FEED_MAX_BYTES,
+            )
+        self.assertEqual(
+            {
+                "/index.json",
+                "/locales/{locale}.json",
+                "/feeds/{locale}.json",
+            },
             set(openapi["paths"]),
         )
         self.assertIn(
             "application/vnd.oai.openapi+json;version=3.1",
             docs,
         )
+        self.assertIn("application/feed+json", docs)
+        self.assertIn(
+            portfolio_app_catalog_api.feed_url("en-US"),
+            docs,
+        )
         self.assertIn("50 locales", docs)
         self.assertIn("Verified iOS App Catalog API v1", api_catalog)
+        self.assertIn(
+            portfolio_app_catalog_api.feed_url("en-US"),
+            api_catalog,
+        )
+        for machine_index in (llms, llms_full):
+            self.assertIn(
+                portfolio_app_catalog_api.feed_url("en-US"),
+                machine_index,
+            )
         self.assertEqual(50, sitemap.count("/ios-app-catalog/locales/"))
+        self.assertEqual(50, sitemap.count("/ios-app-catalog/feeds/"))
         self.assertIn(
             portfolio_app_catalog_api.api_url("openapi.json"),
             sitemap,
@@ -17187,6 +17280,11 @@ class GeneratorTests(unittest.TestCase):
             schema,
             format_checker=FormatChecker(),
         ).validate(english)
+        Draft202012Validator.check_schema(feed_schema)
+        Draft202012Validator(
+            feed_schema,
+            format_checker=FormatChecker(),
+        ).validate(english_feed)
 
     def test_primary_resource_refresh_plan_covers_every_owned_resource(self):
         expected = {

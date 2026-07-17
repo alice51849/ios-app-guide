@@ -28,7 +28,7 @@
     "https://alice51849.github.io/ios-app-guide/sitemap_api.xml": {
       "lastmod": "2026-07-17",
       "path": "sitemap_api.xml",
-      "sha256": "953301ab651a5db77a571d5d7f9dc48ce939131ec3ad3611c087b645f09ca19f"
+      "sha256": "179416fc44ad307f3edb6f6c0e00dc59ec89e902930809abeb6543035a99a712"
     },
     "https://alice51849.github.io/ios-app-guide/sitemap_apps.xml": {
       "lastmod": "2026-07-17",
@@ -177,6 +177,11 @@
     }
   },
   "urls": {
+    "https://alice51849.github.io/ios-app-guide/.well-known/api-catalog": {
+      "lastmod": "2026-07-17",
+      "path": ".well-known/api-catalog",
+      "sha256": "96537e9787ac3aa60903c8a5469b6c165761d297f6dc70683b7c0b880b52675d"
+    },
     "https://alice51849.github.io/ios-app-guide/alternatives/aim990-free-to-start.html": {
       "lastmod": "2026-07-14",
       "path": "alternatives/aim990-free-to-start.html",
@@ -7600,7 +7605,7 @@
     "https://alice51849.github.io/ios-app-guide/api/": {
       "lastmod": "2026-07-17",
       "path": "api/index.html",
-      "sha256": "d73196ed733e0326c64e21246b5b1fe2be8281249d4750cf0a27b87b41cb8f12"
+      "sha256": "1107c987e29913592ec371aa9abb5c446dbaa9bfc0c255342f16d68e7ed49d48"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/": {
       "lastmod": "2026-07-11",
@@ -7900,277 +7905,532 @@
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/index.html",
-      "sha256": "3f6fd712e28447cbe1b109a3c1ee22c5ca517a049c80564713237cc012edd0c3"
+      "sha256": "f2b160ebd4b6061cd85561f79baa126135a82b1778c73284790110a6602ba81c"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/catalog.schema.json",
-      "sha256": "84090bd5d9579b9f80021606fcf287310f3ee4abfdf905088c08f731141aa1c9"
+      "sha256": "12e96488ea009fef3cd5b8dcce1d54c8d37128daf2f72c8ec684db8c495d9889"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feed.schema.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feed.schema.json",
+      "sha256": "5f716dd4d021c6c981b890fa60693d3a32bc7349a3685b4fbf74116ad4da8691"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/ar-SA.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/ar-SA.json",
+      "sha256": "51125aabece21953620b69e394fd2196249daff56ba3872e9d3561db0daa8c06"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/bn-BD.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/bn-BD.json",
+      "sha256": "f7bf196dce633a2604af49cc7cdc679a4476bdad67e1c3406cb1cf7e9422b608"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/ca.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/ca.json",
+      "sha256": "27a9e4a5da92d9a12c0a83f2ef58b2a6db0c2e99a071f5cc756c7b1bcd8a1169"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/cs.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/cs.json",
+      "sha256": "7c4c9ef5dab8bc2ec731357f4d5717a8d8117bd7cbcd4d7f08d4e5cde52f3464"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/da.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/da.json",
+      "sha256": "c7df89a8633b5ee4d4e2655d5005219164872bb23d71699b3bd2cd3cd0edaa4f"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/de-DE.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/de-DE.json",
+      "sha256": "2e699cca1879b02eca80f86ad0448432375424c7f97859b4a3a4202bda1c5a2b"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/el.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/el.json",
+      "sha256": "3234cf7d215c67ad2092b825fc2ee7da1fe94d101caa2a53040df2559b1694b7"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/en-AU.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/en-AU.json",
+      "sha256": "c7fa7406fcc5a906e26dc50a3277848117b87f92e34a460898aa790b78a20e3f"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/en-CA.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/en-CA.json",
+      "sha256": "945be62b46e23d1b54ea3f78bb3e21c73a1ead3b12f87aab5b050fc646ddc391"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/en-GB.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/en-GB.json",
+      "sha256": "6bfb85ecebaabda7adc4ba4647a766f8b7e4f73891438bf3a9041c40b1728839"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/en-US.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/en-US.json",
+      "sha256": "211e60357d0cfc9496cb1e081670c1d9672c8f8fdca2936e2079acbc03c411cc"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/es-ES.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/es-ES.json",
+      "sha256": "d67043e00ed61e081d11a6199bf2494c546f01735608e028136a9c333e4ab53b"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/es-MX.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/es-MX.json",
+      "sha256": "6a7e04217b8680b0026808ec173d61a3bbfd9e3eb777c26e6614b37856477206"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/fi.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/fi.json",
+      "sha256": "e02c8df1a81b6413bad8649c35fb902a6e771a96d849f7f6370db14816f768d4"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/fr-CA.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/fr-CA.json",
+      "sha256": "09e3dccad0533c13bcccfcc35e5e3db9794817ffc3b289be5dc833baf0091ce4"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/fr-FR.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/fr-FR.json",
+      "sha256": "d031f0ff765b281e7836ba413428e85fb9ccf427227bc10e96c8e0ec09919b7f"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/gu-IN.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/gu-IN.json",
+      "sha256": "41bb46fdc6f328c1792b2cb01b07467019777aa881ff91c5d12b69730e2ab9d6"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/he.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/he.json",
+      "sha256": "56ddc7a5c89af1547dd7236198284417c9b9a1b64388d37af61bd5748f1f444d"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/hi.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/hi.json",
+      "sha256": "c485f892c8d8deb154a90f5cdecbdfe3168e5e2dc62ca40bdfb57918b7fee34d"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/hr.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/hr.json",
+      "sha256": "6926b6b637379a32c7e26f99d97b4242a3c62c770198f8e98ffb6f4a448f0de3"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/hu.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/hu.json",
+      "sha256": "7e69af38e0ed074311c7aef960aca80916fcad3fc16778391666b3c59f1eb858"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/id.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/id.json",
+      "sha256": "73268cb2c7e13067cde88ac7f9b3a6b8fbdb598c61665bd916eee8d8acec04b1"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/it.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/it.json",
+      "sha256": "064361093d12295009bc5fba07dd728190a75c0188e96b6da456d3e6f1ad7e94"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/ja.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/ja.json",
+      "sha256": "56ad721dda2ad88c7511b8cb9e8551fabc15c2961a83d015e1b7e0da9eff7cff"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/kn-IN.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/kn-IN.json",
+      "sha256": "a4bf2af1eefe0681235637c645cae4ad277b3dc247876477138757ee60a7b0da"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/ko.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/ko.json",
+      "sha256": "4df2b8159c839b8fe96c09c0a6d159716e399650e5e81700f6c66463adfec2ec"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/ml-IN.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/ml-IN.json",
+      "sha256": "1970e0a829f0db5a848fb757340ad4bd5869435e55a5ebfc1d66ad4d7ecde115"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/mr-IN.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/mr-IN.json",
+      "sha256": "bf6b8487b719f9fc5de6f19ccedbc536cada3a6dd690f0255252d63327a90a4e"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/ms.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/ms.json",
+      "sha256": "03db518ad0324591b12d384f6b145c71b9fa136fc3fd52eda004f32d31d3974a"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/nl-NL.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/nl-NL.json",
+      "sha256": "7670cabe5edc344dfb26932d4809b5dae4ce27f62d3a2c8e95b1d424311b2c06"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/no.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/no.json",
+      "sha256": "20374f8da5839cba269fa523b76d9bd376204859a0a1bcf562b0df28d72fbbbd"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/or-IN.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/or-IN.json",
+      "sha256": "81df8929ac420bd31eb8c9bee8a2cbb5604b0b2faa3f100b1cb0755cd3ab6735"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/pa-IN.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/pa-IN.json",
+      "sha256": "d3b9d9599aca4bc847fddec0672c00d54ca12becb09674603ed46ce434788d25"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/pl.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/pl.json",
+      "sha256": "b21cac3e45d6bd30fe45ab8ee45530df4a1b692e3edb0eafe3db89442bf74593"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/pt-BR.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/pt-BR.json",
+      "sha256": "7675f143a8dee75b9bf9b7e9db1af48aa29abb6830ab7ec493d4c161515cae29"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/pt-PT.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/pt-PT.json",
+      "sha256": "48177b9a94bc2437eb80c393993c2f4ed02d5343348e2666f4ada091e77bcaf5"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/ro.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/ro.json",
+      "sha256": "ec09eb5f2a3cf1ad7738e95db8ea31d26ad4a5e1a0781cb87b249c7706245afa"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/ru.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/ru.json",
+      "sha256": "165a5703b250795f75ff89c8f9999a8af525e97acc097f86438acff0313d5954"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/sk.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/sk.json",
+      "sha256": "0e434fcfe81bf7e4fc10bed94d27ce8ee56aecbc5ad539e8a9da50d390093298"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/sl-SI.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/sl-SI.json",
+      "sha256": "803e1345ce9eb61669d0d3867c1d851a14a7ead0dd594bc6a271d2122cea6ba5"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/sv.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/sv.json",
+      "sha256": "c0ed11f2c66452d15ce0fd2c0178b21ca74c65ae9c2c4e8ddbd15155ab2b2bdf"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/ta-IN.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/ta-IN.json",
+      "sha256": "386cd4cb59ecb6d8dc8804ecb8390945910d01523e466db31c77612e5c6c1bfd"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/te-IN.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/te-IN.json",
+      "sha256": "d946ecbf0a19d9844e8e485576bdac617bddd8e828b6628c6f9e0b086dab893f"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/th.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/th.json",
+      "sha256": "c5f55f15f96959b3a87a320ee72297d81e7ef475fee6e38f8932be0e95ac9af4"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/tr.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/tr.json",
+      "sha256": "cbb982769c3ee6e66069c7473ad3338599f754fac69bf3fd1fb77886a032eea2"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/uk.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/uk.json",
+      "sha256": "6c4c7cee8e5357179e00e2e6ab5110f164e175a90d9e69c4fc69a6f0cf2d087d"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/ur-PK.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/ur-PK.json",
+      "sha256": "7ea10a4fd600c8f52b9b518668e1b9d7f33f88afacb6163baf03028d0e4490b3"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/vi.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/vi.json",
+      "sha256": "d3063f2c420a91d27942189590a48cb819cbd65e43ff33a05f65821d315d92a0"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/zh-Hans.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/zh-Hans.json",
+      "sha256": "23adb518743d8a2ec1a6dc14a3c7c15cb24a718f149b857500ed777c810b5231"
+    },
+    "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/zh-Hant.json": {
+      "lastmod": "2026-07-17",
+      "path": "api/v1/ios-app-catalog/feeds/zh-Hant.json",
+      "sha256": "0da6da5c2635bbeefa909c29350ba600fde6c951dd62860133d3af23dbb2068b"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/index.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/index.json",
-      "sha256": "99f955cb5ffcd01fc7ff2f443ca08d153c5198a194687f73632bb8c7692ecbb8"
+      "sha256": "c5e3bc481c3fbc3dc26ed006aae1842e809f46f6e2381b75588a6b95d5fd519b"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/index.schema.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/index.schema.json",
-      "sha256": "85840ed6a175be37f25a9e1fecf7605daf4726e761c54598c397965e7582628e"
+      "sha256": "d16bf0b9e180d6222235d8b45856035b7e0c0ca09175d9463eb7239d7d8d6c5c"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ar-SA.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/ar-SA.json",
-      "sha256": "46d0a06ab731655146d274ac547d37ea57e15c395fbe7c2db5caf6451ddb8a7b"
+      "sha256": "924fb3d3cfed433e74a299f609fb79db2a1a2e046f6bc73e87859d91c33e29d1"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/bn-BD.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/bn-BD.json",
-      "sha256": "b383ae948c8085774a35bbc6a61e1a391aab3e5ee509eb5f0676b4aa2169ae48"
+      "sha256": "e41d0ed0ac02a82e001adf80276d054de1b628119c80ce047cd01a22f04721b7"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ca.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/ca.json",
-      "sha256": "8bdfde6323eab088d4fcab495fef8b28805b6c34e50e6b54de6cc9718f3da6d0"
+      "sha256": "5eb0b6416b7b71031e6ecc4acb4406ebc939329dc2bd8ad9dd11ea98c0c1cda5"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/cs.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/cs.json",
-      "sha256": "c68a0edc64e15afc83f987d090f128151691387738e0c4b56c4a77f23ee0b6f0"
+      "sha256": "ad51c630c77d3502557f859b1852b82d49e11c04d8a1935674e74dc8876719f0"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/da.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/da.json",
-      "sha256": "21ec2d7d3a6bb6bc01fc5734a6a2a085a9ab6a36723db73c5c12047346a3c8d2"
+      "sha256": "4b5393bc09d9ea5e02b9837f8dd31c44370b60c101a8be645b6d8b4b438e975d"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/de-DE.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/de-DE.json",
-      "sha256": "75548192f9666e6bbcb80a24a37cb82cf0fe25c3368c5627cb4cbe3cff44bf54"
+      "sha256": "4667e75daa633fe3b2a1c58a5f1001a9726f3a28bd9d52cc053084d88579ae5a"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/el.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/el.json",
-      "sha256": "4e4771f65d8a3ecb99e0dd3c7ba64b4972a7f4e366810808a79ca351b0b7b8b8"
+      "sha256": "7776774c7a1199e1b9429a474e2ff6be506a2dad9209c474ed144b3ca32016ad"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/en-AU.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/en-AU.json",
-      "sha256": "9267b2f877486c5692e33f1b0f127e500abb9faf3cf37c38c66a88c10d591e6b"
+      "sha256": "4d5ca4424d5cb8b96d09c8434436e14f5446df409ae42e19319cb45b3620041b"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/en-CA.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/en-CA.json",
-      "sha256": "74e964d0a63db27891de6ac194867820e35a782983e6c8b69188996a7f2e107f"
+      "sha256": "8f18b2647a1856f31e214f889edce2074dafb6531b12648a90392df49b312137"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/en-GB.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/en-GB.json",
-      "sha256": "3af445003798471dfdadb196f9a85d4a54ff2aa6cc62524e220455bd5637e6da"
+      "sha256": "b25dd59cdc711462fd2c02bd15df7036f79c524e23458a7cec71ef194babf40e"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/en-US.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/en-US.json",
-      "sha256": "87fd3cd1261c3c91a33adcbd5ee26cdd8b547ec23315242d07139856ef62f530"
+      "sha256": "a290eb1bdbad4c8af703d108683f5f478b3e2b33d79ad1e1acd63ffa27aa73b2"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/es-ES.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/es-ES.json",
-      "sha256": "44592670f47d95cdedc64bfd42b1110df457ca7625ab2012694b02f35acbb75d"
+      "sha256": "f43e9d68ae25341d53e1283c80d01a77789d7b946c732505cf4218c1147963f9"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/es-MX.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/es-MX.json",
-      "sha256": "ef6e6b0725979af51686071ecdaf13fdfb56c641b495bd595234c6b0ea760b60"
+      "sha256": "d145603bd227619c67c50a4a25c7643dd7ebe375fcbf9f342aaabb1fe02b4e88"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/fi.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/fi.json",
-      "sha256": "7e53c3d9589f90a10260136ca314ba8077a35ecaf6d09caee613a623dac334c1"
+      "sha256": "d553d4747682ee6ed8a3fbf062f50bcd9e4782f431c3d79e87baa3f2cf9993eb"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/fr-CA.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/fr-CA.json",
-      "sha256": "8bd5a906ec6f8c1662a8791b4973cf3aa39ff7ede2286ef1fcaf4e6762755d43"
+      "sha256": "8838633fb2875868c1ca2868b6b9a4a2c753fed0661f021b454635d2db356913"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/fr-FR.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/fr-FR.json",
-      "sha256": "87fe8837ddfb116d5b21a4b303589b692d3e9ba06fa360e75287cd0a7ac359f7"
+      "sha256": "5d2b80f2772bcb9e3e2fc1fafe302f5ba8a87fd2f7891f97e4bdac9cafe64d30"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/gu-IN.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/gu-IN.json",
-      "sha256": "657aa6963718f8c9f48871cbfbcaecbd4b4fffb4cfbf252f7961d62c27ea62f9"
+      "sha256": "acc8b9edfd6869a4d281e16b7433b1708b51c878c65dbe7b43f8114999f41e6b"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/he.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/he.json",
-      "sha256": "88c7c3ef4cded9777034025b5b5f0fddce5de7814e1ae832945399e1627ce23b"
+      "sha256": "166ef333bdc5167f6c18fed690b5aeb8eabdf462f214ba3176d72d9a86445e01"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/hi.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/hi.json",
-      "sha256": "4215547a8a81a6ca595e44122107deee10c03a26ad53b0b07b1438d560d19411"
+      "sha256": "c769abb37965d23317b6ab235b8b987944881fe9d663d5802ca0f5e13ad568df"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/hr.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/hr.json",
-      "sha256": "b2d51fb3c83caa14adc263b5cd1732a27fc160215e4bbaf02fde5e6dad96acd3"
+      "sha256": "ca0d29b674a57e36be0e14084a765d38aecfc7e94c6e057d3ab4a3a90777b522"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/hu.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/hu.json",
-      "sha256": "563010587308b64f54b118309bc350fc44184e62fb783e8f23612442e3f4f440"
+      "sha256": "6a1d98ec289660ccf791c1ce89d9d77812e797e041d2ff8bf55f622c30f151cf"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/id.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/id.json",
-      "sha256": "50c852b5782321e3325ef327e8f5ee8bdaa92bb9a7d273481c535f4dcbec4984"
+      "sha256": "fac6c9aa9bd0e83773fbace76a7914ddcd37eb976fbefe861f745fcb43bfa5b8"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/it.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/it.json",
-      "sha256": "998ebbcb92259941a5133d5b7de0b6aa05f18da97a041f66b653e93c22a7a3a0"
+      "sha256": "ba79d4d003f68f0e6555af3b67408316c817ebb014f1280751c33ddf7ae2695a"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ja.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/ja.json",
-      "sha256": "dbe6ad54406c0188c8260b1f58572c9320c7f3ba2d0ee334c1c3c287496d9ed7"
+      "sha256": "3284084ea4394f21824f6b682518f5c4898da1042d66cac000f63f6668f9a708"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/kn-IN.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/kn-IN.json",
-      "sha256": "e8566dafa546971a5a5f0b741d85e5f3d99b17e3dcd0f1d591331450826c25d6"
+      "sha256": "fd4685c9ff6298cc900baeee5fc8d42862ab3bca029d5db283bd78f115d6dca2"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ko.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/ko.json",
-      "sha256": "c804de304223bf1b05c818eb0b8b8076ab1b6bdc91f71852a4bf3830af170a08"
+      "sha256": "f405acc14396dff0c4cd15f2fd3288a806ff5ceec73f5c3b6bb11490aa4d7b64"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ml-IN.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/ml-IN.json",
-      "sha256": "eb1219fd4b0bbf729a47794ea695bca0d1ce2b1402d6179308f7da9aa9123090"
+      "sha256": "889819be7da1edfd90527551396fab49ce2428f9f417e7e3403aecd8b6a7417f"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/mr-IN.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/mr-IN.json",
-      "sha256": "5a2dea5304b7830da693598851acb10ad39094ceb582ff3ec16815cf39b129fb"
+      "sha256": "fc5d6421d9e2c0d78f08ad5266758af533f4b566cc540aba89d1fc4151dd709e"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ms.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/ms.json",
-      "sha256": "87064bc9d456417196c1c368ae708e607fa689b0e3e23e60d570a277c631adfe"
+      "sha256": "8762e62dd44485bd0844992578454e35e6b8c84e3f7341d019a269bbe551d58f"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/nl-NL.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/nl-NL.json",
-      "sha256": "c97a531f19646713edd8770a6d5e33e1d796a3da56f6030286b14177c5e9a46f"
+      "sha256": "fa8907bd2fe1cec3ac363fc057b2b99f55e619aa48c1405112f80f1764295860"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/no.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/no.json",
-      "sha256": "981622926f8f9a627354e3142a8eda9b026d97dba3e66af297c454cbc66e8816"
+      "sha256": "4fb9b8c661a1aeaf5fa8d08ccb13ed82563f58773360728ba21565d26ed21ce0"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/or-IN.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/or-IN.json",
-      "sha256": "40195b77473b1c78535a1cf03ea3fcb7dc070ed34138b7506211bc43ec0ee4ce"
+      "sha256": "c62d7bf1c8ea4fdedc14e7a737d3ea6853f35547738a1cd7c3bf68a6844096b6"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/pa-IN.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/pa-IN.json",
-      "sha256": "e80be636744ce482a122abee0aadf41490f68da054407a6693235bea237356e9"
+      "sha256": "eed08f3891cd0e0be345e756990a787a8662afe5a4f7223befae40235d2051b4"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/pl.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/pl.json",
-      "sha256": "ded4afc0004a600abf59bbc58a9b090d20fc019eef979ca3a0189fdb9e9dd54c"
+      "sha256": "240c6e427dbc91aa0aebf68853eab111c6c6842968bf8df1401b038084273039"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/pt-BR.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/pt-BR.json",
-      "sha256": "40da0835a062b5639c6ff873e78abc72edbe94d086bb328c186e71b5c9269024"
+      "sha256": "2e492a22715972f697d0c218ce15926f7ce478bb9f67dcaf1fe4abbf61e98b9c"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/pt-PT.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/pt-PT.json",
-      "sha256": "00e1cd0919db1bcf4e02fcb9919b3e92de11cec317609ea103c8868438cb25cc"
+      "sha256": "1baf02061feb570793ddfa7624d1ffddfc90c465e09419785096a79f126e7b98"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ro.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/ro.json",
-      "sha256": "5f9d7bc16b27973496170d49796f3092c9e202ae8b870284188c59d8658bc70a"
+      "sha256": "6083b945ff960e6adfbf281eeea889df398d3e74d6cb1f330e84ed391e47ddc9"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ru.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/ru.json",
-      "sha256": "bc36947bd85250b2d12a2265770ae94fac029b033f77abd27f4e23e6ee766c7d"
+      "sha256": "64ac8ef4d24895ccfb073e53d1a6ea0acfe5cf12d5aa53d8066f941faa8de407"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/sk.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/sk.json",
-      "sha256": "20be806850f6a4680d87c43bbf5b5c2052ef8ebc7a6f48fed03f4f67c9718885"
+      "sha256": "cb4886a32be2209e0e00ce93a557139a47f64df11fed9aa092026b2e0f5854ff"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/sl-SI.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/sl-SI.json",
-      "sha256": "9848f531cd650a9257db9142b4c6c701e0a772d18fc5eb811644040150abe23d"
+      "sha256": "d3eb017b4fa642573b290cf1e8a00fa0305ccec55cd4cd5cc52f046928e3e6a9"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/sv.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/sv.json",
-      "sha256": "ba66268fd87e59de8e8f399df5fff4eb52b5bb6c0d7acff9bc4824c7a1148a9f"
+      "sha256": "624f0aafdd28f8808b7d0f5e133bbd20f680922f5bae9cf84b485d26c8aa4c4d"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ta-IN.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/ta-IN.json",
-      "sha256": "a6a981495a9c49e184a45337382b761819f17d18c5581086eeade56ecfd2b3c9"
+      "sha256": "4cda27651b6ce996bc67b0fbd565c51a0db52e8b689f620a79a98fd53669a91d"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/te-IN.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/te-IN.json",
-      "sha256": "83b4965e21682419d251d013aaaf7344ae7b4879628cbda0065127dde9754fb6"
+      "sha256": "7a5ec91cc8c289dd1ba6718f2c66dbb759f9cfb333e39d5ea584294b6e28f230"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/th.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/th.json",
-      "sha256": "185f5e6deb18d4da958980266a30831f25375413ae4379f902b2e7164327323e"
+      "sha256": "7263914a69c9028415e0015628705810438d6c51e0f95d6aff26c7d544dc6316"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/tr.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/tr.json",
-      "sha256": "f93de1a93d2be2f62fde46784d2316d71da84bf78a317457d479aea4028bd64e"
+      "sha256": "2d335543f0713a6a7fe05b462de60f09892a82aef0572908e4b21e347035766d"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/uk.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/uk.json",
-      "sha256": "421ddeec9a153be9ed01061de91bab2e7a0298e19bcd17f45761903de183ec9b"
+      "sha256": "668453cde9d5a4e1891afbe0725a4925539d3c0955578d9ce0081a62949528d4"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ur-PK.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/ur-PK.json",
-      "sha256": "d1b1e5f1954df04781af5b9c40411a25cf8db29830fe215072086cdda3d84bda"
+      "sha256": "733083d359c2a7e206fe010e5c488444eddbf030fd4b5d1d0882a683e776fcf4"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/vi.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/vi.json",
-      "sha256": "f4a9fd7a4f5a7bb991033eeb21f1bd1fe570f5aa3f5491ac2715c68bc9a3c03c"
+      "sha256": "d77a42fdcd60ab2f412a558dd20b54dd8095973ff61a72c5a28c9a5c07b414d6"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/zh-Hans.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/zh-Hans.json",
-      "sha256": "1895d096b9736f44620103e80c3f427d49b76d77b11e3f530764cc1cb175ffd5"
+      "sha256": "5d78597b98cb173d11d7e5cac95d46f4349ea2846af827b5173136dc572221dd"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/zh-Hant.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/locales/zh-Hant.json",
-      "sha256": "cc3d1b94402f7b99139d5354b0b196e41695ef200ec1ba1810d6407753488db1"
+      "sha256": "bd34b8e8762eea75366ad57c05119079496ccc4e2e79570e917922281cb74866"
     },
     "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/openapi.json": {
       "lastmod": "2026-07-17",
       "path": "api/v1/ios-app-catalog/openapi.json",
-      "sha256": "485751f6b9c13e556d5e5cfa865c754d714bf777fc3d5dcb66120557ac753b05"
+      "sha256": "3f38e79b0bf942ed899d805861f87e2023ee0d54404484d2a1a291f7f2ee3f52"
     },
     "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/": {
       "lastmod": "2026-07-17",
@@ -46145,7 +46405,7 @@
     "https://alice51849.github.io/ios-app-guide/zh-Hant/api/v1/ios-app-catalog/": {
       "lastmod": "2026-07-17",
       "path": "zh-Hant/api/v1/ios-app-catalog/index.html",
-      "sha256": "24caf7c4c92777bbe9610e34c1fecdf98f21af6c11807a8045ad1bb41917523d"
+      "sha256": "a1c84bb1f2b387c6bc1eb354f0c63152ffbfd45da728bd5fdfa7b544cc138627"
     },
     "https://alice51849.github.io/ios-app-guide/zh-Hant/cvdesk.html": {
       "lastmod": "2026-07-17",

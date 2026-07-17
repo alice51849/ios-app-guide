@@ -1,0 +1,255 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feed.schema.json",
+  "title": "Localized verified iOS app JSON Feed",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "title",
+    "home_page_url",
+    "feed_url",
+    "language",
+    "authors",
+    "_lumi_catalog",
+    "items"
+  ],
+  "properties": {
+    "version": {
+      "const": "https://jsonfeed.org/version/1.1"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "home_page_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "feed_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "language": {
+      "enum": [
+        "ar-SA",
+        "bn-BD",
+        "ca",
+        "cs",
+        "da",
+        "de-DE",
+        "el",
+        "en-AU",
+        "en-CA",
+        "en-GB",
+        "en-US",
+        "es-ES",
+        "es-MX",
+        "fi",
+        "fr-CA",
+        "fr-FR",
+        "gu-IN",
+        "he",
+        "hi",
+        "hr",
+        "hu",
+        "id",
+        "it",
+        "ja",
+        "kn-IN",
+        "ko",
+        "ml-IN",
+        "mr-IN",
+        "ms",
+        "nl-NL",
+        "no",
+        "or-IN",
+        "pa-IN",
+        "pl",
+        "pt-BR",
+        "pt-PT",
+        "ro",
+        "ru",
+        "sk",
+        "sl-SI",
+        "sv",
+        "ta-IN",
+        "te-IN",
+        "th",
+        "tr",
+        "uk",
+        "ur-PK",
+        "vi",
+        "zh-Hans",
+        "zh-Hant"
+      ]
+    },
+    "authors": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "url"
+        ],
+        "properties": {
+          "name": {
+            "const": "Lumi Studio"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    },
+    "_lumi_catalog": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "apiVersion",
+        "dateModified",
+        "contentDigest",
+        "license",
+        "ordering",
+        "recordCount"
+      ],
+      "properties": {
+        "apiVersion": {
+          "const": "1.1.0"
+        },
+        "dateModified": {
+          "type": "string",
+          "format": "date"
+        },
+        "contentDigest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "license": {
+          "const": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        "ordering": {
+          "const": "alphabetical_by_app_name_not_a_ranking"
+        },
+        "recordCount": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "url",
+          "external_url",
+          "title",
+          "content_text",
+          "date_modified",
+          "tags",
+          "language"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://apps\\.apple\\.com/app/id[0-9]+$"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "external_url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://apps\\.apple\\.com/app/id[0-9]+"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "content_text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "date_modified": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "tags": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "language": {
+            "enum": [
+              "ar-SA",
+              "bn-BD",
+              "ca",
+              "cs",
+              "da",
+              "de-DE",
+              "el",
+              "en-AU",
+              "en-CA",
+              "en-GB",
+              "en-US",
+              "es-ES",
+              "es-MX",
+              "fi",
+              "fr-CA",
+              "fr-FR",
+              "gu-IN",
+              "he",
+              "hi",
+              "hr",
+              "hu",
+              "id",
+              "it",
+              "ja",
+              "kn-IN",
+              "ko",
+              "ml-IN",
+              "mr-IN",
+              "ms",
+              "nl-NL",
+              "no",
+              "or-IN",
+              "pa-IN",
+              "pl",
+              "pt-BR",
+              "pt-PT",
+              "ro",
+              "ru",
+              "sk",
+              "sl-SI",
+              "sv",
+              "ta-IN",
+              "te-IN",
+              "th",
+              "tr",
+              "uk",
+              "ur-PK",
+              "vi",
+              "zh-Hans",
+              "zh-Hant"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

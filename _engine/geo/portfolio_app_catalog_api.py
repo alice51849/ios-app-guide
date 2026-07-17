@@ -35,11 +35,13 @@ PAGES = HERE / "pages"
 SITE = os.environ.get(
     "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
 ).rstrip("/")
-API_VERSION = "1.0.0"
+API_VERSION = "1.1.0"
 SLUG = "ios-app-catalog"
 API_PATH = Path("api") / "v1" / SLUG
 API_BASE = f"{SITE}/{API_PATH.as_posix()}"
 LICENSE_URL = "https://creativecommons.org/licenses/by/4.0/"
+JSON_FEED_VERSION = "https://jsonfeed.org/version/1.1"
+FEED_MAX_BYTES = 250_000
 TODAY = dt.date.today().isoformat()
 DATE_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
 SHA256_RE = re.compile(r"[0-9a-f]{64}")
@@ -60,6 +62,7 @@ COPY = {
         "switch": "繁體中文",
         "finder": "Interactive app finder",
         "openapi": "OpenAPI 3.1",
+        "feed": "JSON Feed 1.1",
         "index": "API index",
         "schema": "Catalog schema",
         "locales": "Locale catalogs",
@@ -96,6 +99,7 @@ COPY = {
         "switch": "English",
         "finder": "互動式 App 篩選器",
         "openapi": "OpenAPI 3.1",
+        "feed": "JSON Feed 1.1",
         "index": "API 索引",
         "schema": "目錄 Schema",
         "locales": "各語系目錄",
@@ -124,11 +128,38 @@ def locale_url(locale: str) -> str:
     return api_url(f"locales/{locale}.json")
 
 
-def _campaign(locale: str) -> str:
-    value = f"iag_api_{locale.replace('-', '_').lower()}"
+def feed_url(locale: str) -> str:
+    return api_url(f"feeds/{locale}.json")
+
+
+def _channel_campaign(channel: str, locale: str) -> str:
+    value = f"iag_{channel}_{locale.replace('-', '_').lower()}"
     if len(value) > 30 or not re.fullmatch(r"[A-Za-z0-9_]+", value):
-        raise ValueError(f"Invalid API campaign token: {value}")
+        raise ValueError(f"Invalid catalog campaign token: {value}")
     return value
+
+
+def _campaign(locale: str) -> str:
+    return _channel_campaign("api", locale)
+
+
+def _feed_campaign(locale: str) -> str:
+    return _channel_campaign("feed", locale)
+
+
+def _localized_directory_title(pages: Path, locale: str) -> str:
+    path = pages / locale / "index.html"
+    try:
+        source = path.read_text(encoding="utf-8")
+    except OSError as error:
+        raise ValueError(f"Missing localized app directory: {path}") from error
+    match = re.search(r"<title\b[^>]*>(.*?)</title>", source, re.I | re.S)
+    if not match:
+        raise ValueError(f"Missing localized directory title: {path}")
+    title = " ".join(html.unescape(match.group(1)).split())
+    if not title or "<" in title or ">" in title:
+        raise ValueError(f"Invalid localized directory title: {path}")
+    return title
 
 
 def _meta_content(path: Path, name: str) -> str:
@@ -241,7 +272,7 @@ def localized_record(
 
 def _content_digest(localized: dict[str, list[dict[str, object]]]) -> str:
     encoded = json.dumps(
-        localized,
+        {"api_version": API_VERSION, "localized": localized},
         ensure_ascii=False,
         sort_keys=True,
         separators=(",", ":"),
@@ -284,6 +315,50 @@ def catalog_payload(
     }
 
 
+def feed_payload(
+    locale: str,
+    title: str,
+    apps: list[dict[str, object]],
+    modified: str,
+    digest: str,
+) -> dict[str, object]:
+    timestamp = f"{modified}T00:00:00Z"
+    return {
+        "version": JSON_FEED_VERSION,
+        "title": title,
+        "home_page_url": f"{SITE}/{locale}/index.html",
+        "feed_url": feed_url(locale),
+        "language": locale,
+        "authors": [{"name": "Lumi Studio", "url": f"{SITE}/about.html"}],
+        "_lumi_catalog": {
+            "apiVersion": API_VERSION,
+            "dateModified": modified,
+            "contentDigest": digest,
+            "license": LICENSE_URL,
+            "ordering": "alphabetical_by_app_name_not_a_ranking",
+            "recordCount": len(apps),
+        },
+        "items": [
+            {
+                "id": (
+                    f"https://apps.apple.com/app/id{app['app_store_id']}"
+                ),
+                "url": app["guide_url"],
+                "external_url": appstore_url(
+                    str(app["key"]),
+                    _feed_campaign(locale),
+                ),
+                "title": app["name"],
+                "content_text": app["summary"],
+                "date_modified": timestamp,
+                "tags": app["search_terms"],
+                "language": locale,
+            }
+            for app in apps
+        ],
+    }
+
+
 def index_payload(
     records: list[dict[str, object]],
     modified: str,
@@ -312,8 +387,13 @@ def index_payload(
         },
         "openapi": api_url("openapi.json"),
         "catalog_schema": api_url("catalog.schema.json"),
+        "feed_schema": api_url("feed.schema.json"),
         "locales": [
-            {"locale": locale, "url": locale_url(locale)}
+            {
+                "locale": locale,
+                "url": locale_url(locale),
+                "feed": feed_url(locale),
+            }
             for locale in OFFICIAL_LOCALES
         ],
     }
@@ -342,6 +422,7 @@ def index_schema() -> dict[str, object]:
             "documentation",
             "openapi",
             "catalog_schema",
+            "feed_schema",
             "locales",
         ],
         "properties": {
@@ -387,6 +468,7 @@ def index_schema() -> dict[str, object]:
             },
             "openapi": {"const": api_url("openapi.json")},
             "catalog_schema": {"const": api_url("catalog.schema.json")},
+            "feed_schema": {"const": api_url("feed.schema.json")},
             "locales": {
                 "type": "array",
                 "minItems": len(OFFICIAL_LOCALES),
@@ -394,10 +476,11 @@ def index_schema() -> dict[str, object]:
                 "items": {
                     "type": "object",
                     "additionalProperties": False,
-                    "required": ["locale", "url"],
+                    "required": ["locale", "url", "feed"],
                     "properties": {
                         "locale": {"enum": list(OFFICIAL_LOCALES)},
                         "url": {"type": "string", "format": "uri"},
+                        "feed": {"type": "string", "format": "uri"},
                     },
                 },
             },
@@ -511,6 +594,121 @@ def catalog_schema() -> dict[str, object]:
     }
 
 
+def feed_schema() -> dict[str, object]:
+    return {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": api_url("feed.schema.json"),
+        "title": "Localized verified iOS app JSON Feed",
+        "type": "object",
+        "additionalProperties": False,
+        "required": [
+            "version",
+            "title",
+            "home_page_url",
+            "feed_url",
+            "language",
+            "authors",
+            "_lumi_catalog",
+            "items",
+        ],
+        "properties": {
+            "version": {"const": JSON_FEED_VERSION},
+            "title": {"type": "string", "minLength": 1},
+            "home_page_url": {"type": "string", "format": "uri"},
+            "feed_url": {"type": "string", "format": "uri"},
+            "language": {"enum": list(OFFICIAL_LOCALES)},
+            "authors": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 1,
+                "items": {
+                    "type": "object",
+                    "additionalProperties": False,
+                    "required": ["name", "url"],
+                    "properties": {
+                        "name": {"const": "Lumi Studio"},
+                        "url": {"type": "string", "format": "uri"},
+                    },
+                },
+            },
+            "_lumi_catalog": {
+                "type": "object",
+                "additionalProperties": False,
+                "required": [
+                    "apiVersion",
+                    "dateModified",
+                    "contentDigest",
+                    "license",
+                    "ordering",
+                    "recordCount",
+                ],
+                "properties": {
+                    "apiVersion": {"const": API_VERSION},
+                    "dateModified": {"type": "string", "format": "date"},
+                    "contentDigest": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$",
+                    },
+                    "license": {"const": LICENSE_URL},
+                    "ordering": {
+                        "const": "alphabetical_by_app_name_not_a_ranking"
+                    },
+                    "recordCount": {"type": "integer", "minimum": 1},
+                },
+            },
+            "items": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": True,
+                "items": {
+                    "type": "object",
+                    "additionalProperties": False,
+                    "required": [
+                        "id",
+                        "url",
+                        "external_url",
+                        "title",
+                        "content_text",
+                        "date_modified",
+                        "tags",
+                        "language",
+                    ],
+                    "properties": {
+                        "id": {
+                            "type": "string",
+                            "format": "uri",
+                            "pattern": (
+                                "^https://apps\\.apple\\.com/app/id[0-9]+$"
+                            ),
+                        },
+                        "url": {"type": "string", "format": "uri"},
+                        "external_url": {
+                            "type": "string",
+                            "format": "uri",
+                            "pattern": (
+                                "^https://apps\\.apple\\.com/app/id[0-9]+"
+                            ),
+                        },
+                        "title": {"type": "string", "minLength": 1},
+                        "content_text": {"type": "string", "minLength": 1},
+                        "date_modified": {
+                            "type": "string",
+                            "format": "date-time",
+                        },
+                        "tags": {
+                            "type": "array",
+                            "minItems": 1,
+                            "uniqueItems": True,
+                            "items": {"type": "string", "minLength": 1},
+                        },
+                        "language": {"enum": list(OFFICIAL_LOCALES)},
+                    },
+                },
+            },
+        },
+    }
+
+
 def openapi_document() -> dict[str, object]:
     return {
         "openapi": "3.1.0",
@@ -592,11 +790,49 @@ def openapi_document() -> dict[str, object]:
                     },
                 }
             },
+            "/feeds/{locale}.json": {
+                "get": {
+                    "tags": ["Verified iOS apps"],
+                    "summary": (
+                        "Get the localized catalog as a JSON Feed 1.1 document"
+                    ),
+                    "operationId": "getLocalizedVerifiedIosAppJsonFeed",
+                    "security": [],
+                    "parameters": [
+                        {
+                            "name": "locale",
+                            "in": "path",
+                            "required": True,
+                            "description": "Apple App Store locale identifier.",
+                            "schema": {
+                                "type": "string",
+                                "enum": list(OFFICIAL_LOCALES),
+                            },
+                        }
+                    ],
+                    "responses": {
+                        "200": {
+                            "description": (
+                                "Localized JSON Feed with direct App Store links."
+                            ),
+                            "content": {
+                                "application/feed+json": {
+                                    "schema": {"$ref": "./feed.schema.json"}
+                                },
+                                "application/json": {
+                                    "schema": {"$ref": "./feed.schema.json"}
+                                },
+                            },
+                        }
+                    },
+                }
+            },
         },
         "components": {
             "schemas": {
                 "IndexResponse": {"$ref": "./index.schema.json"},
                 "CatalogResponse": {"$ref": "./catalog.schema.json"},
+                "FeedResponse": {"$ref": "./feed.schema.json"},
             }
         },
         "security": [],
@@ -718,12 +954,13 @@ def render_docs(
 <meta name="content-modified" content="{modified}"><link rel="canonical" href="{canonical}">
 <link rel="alternate" hreflang="en" href="{api_url()}"><link rel="alternate" hreflang="zh-Hant" href="{SITE}/zh-Hant/{API_PATH.as_posix()}/">
 <link rel="alternate" hreflang="x-default" href="{api_url()}">
+<link rel="alternate" type="application/feed+json" title="Lumi Studio · {sample_locale}" href="{feed_url(sample_locale)}">
 <link rel="service" type="application/vnd.oai.openapi+json;version=3.1" href="{api_url('openapi.json')}">
 <script type="application/ld+json">{schema}</script>
 <style>:root{{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#16211e}}*{{box-sizing:border-box}}body{{margin:0;background:radial-gradient(circle at 10% 0,#e5fff4,transparent 30%),#f7faf9;line-height:1.6}}main,footer{{width:min(1040px,calc(100% - 32px));margin:auto}}header{{border-bottom:1px solid #dbe8e2;background:#ffffffdc;backdrop-filter:blur(14px)}}nav{{width:min(1040px,calc(100% - 32px));min-height:62px;margin:auto;display:flex;align-items:center;justify-content:space-between}}a{{color:#176c57;font-weight:800;text-decoration:none}}.hero{{padding:58px 0 24px}}.eyebrow,h1,h2,h3{{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}.eyebrow{{color:#176c57;font-size:.78rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}}h1{{margin:.15em 0;font-size:clamp(1.75rem,5vw,3.7rem);line-height:1.08}}.lead{{max-width:820px;color:#5d6965;font-size:1.1rem}}.actions,.locales{{display:flex;flex-wrap:wrap;gap:10px}}.actions a,.locales a{{border:1px solid #cfe0d9;border-radius:999px;padding:9px 13px;background:#fff}}section{{margin:22px 0;padding:24px;border:1px solid #dbe8e2;border-radius:24px;background:#ffffffea;box-shadow:0 16px 42px rgba(29,73,60,.07)}}pre{{overflow:auto;border-radius:16px;background:#14201c;color:#dffbef;padding:18px}}.apps{{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}}article{{min-width:0;border:1px solid #dbe8e2;border-radius:16px;padding:15px;background:#fff}}article h3{{margin:0 0 8px;font-size:1rem}}footer{{padding:18px 0 48px;color:#64706c;font-size:.9rem}}</style></head>
 <body><header><nav><a href="{SITE}/index.html">iOS App Guide</a><a href="{alternate}">{html.escape(copy['switch'])}</a></nav></header>
 <main><div class="hero"><p class="eyebrow">{html.escape(copy['eyebrow'])}</p><h1>{html.escape(copy['title'])}</h1><p class="lead">{html.escape(copy['lead'])}</p>
-<div class="actions"><a href="{api_url('openapi.json')}">{html.escape(copy['openapi'])}</a><a href="{api_url('index.json')}">{html.escape(copy['index'])}</a><a href="{api_url('catalog.schema.json')}">{html.escape(copy['schema'])}</a><a href="{portfolio_app_finder.canonical(finder_locale)}">{html.escape(copy['finder'])}</a></div></div>
+<div class="actions"><a href="{api_url('openapi.json')}">{html.escape(copy['openapi'])}</a><a href="{feed_url(sample_locale)}">{html.escape(copy['feed'])}</a><a href="{api_url('index.json')}">{html.escape(copy['index'])}</a><a href="{api_url('catalog.schema.json')}">{html.escape(copy['schema'])}</a><a href="{portfolio_app_finder.canonical(finder_locale)}">{html.escape(copy['finder'])}</a></div></div>
 <section><h2>{html.escape(copy['usage'])}</h2><p>{html.escape(copy['usage_text'])}</p><pre><code>curl -fsSL {locale_url(sample_locale)}</code></pre></section>
 <section><h2>{html.escape(copy['locales'])}</h2><div class="locales">{locale_links}</div></section>
 <section><h2>{html.escape(copy['contract'])}</h2><p>{html.escape(copy['contract_text'])}</p></section>
@@ -736,16 +973,26 @@ def validate_artifacts(
     records: list[dict[str, object]],
     index: dict[str, object],
     catalogs: dict[str, dict[str, object]],
+    feeds: dict[str, dict[str, object]],
     openapi: dict[str, object],
 ) -> None:
     require_official_locale_coverage("ios-app-catalog-api", catalogs)
+    require_official_locale_coverage("ios-app-catalog-feeds", feeds)
     expected_keys = [str(record["key"]) for record in records]
+    expected_ids = [
+        f"https://apps.apple.com/app/id{record['app_store_id']}"
+        for record in records
+    ]
     if index["locale_count"] != len(OFFICIAL_LOCALES):
         raise ValueError("API locale count does not match official locales")
     if [item["locale"] for item in index["locales"]] != list(
         OFFICIAL_LOCALES
     ):
         raise ValueError("API index locale order drifted")
+    if [item["feed"] for item in index["locales"]] != [
+        feed_url(locale) for locale in OFFICIAL_LOCALES
+    ]:
+        raise ValueError("API index feed discovery drifted")
     if not SHA256_RE.fullmatch(str(index["content_digest"])):
         raise ValueError("API content digest must be SHA-256")
     for locale, payload in catalogs.items():
@@ -774,9 +1021,33 @@ def validate_artifacts(
                 raise ValueError(
                     f"Missing localized discovery text: {locale}/{app['key']}"
                 )
+        feed = feeds[locale]
+        if feed["language"] != locale or feed["feed_url"] != feed_url(locale):
+            raise ValueError(f"JSON Feed locale mismatch: {locale}")
+        extension = feed["_lumi_catalog"]
+        if (
+            extension["contentDigest"] != index["content_digest"]
+            or extension["recordCount"] != len(records)
+        ):
+            raise ValueError(f"JSON Feed catalog metadata mismatch: {locale}")
+        items = feed["items"]
+        if [str(item["id"]) for item in items] != expected_ids:
+            raise ValueError(f"JSON Feed app order or coverage mismatch: {locale}")
+        for app, item in zip(apps, items, strict=True):
+            if item["language"] != locale:
+                raise ValueError(f"JSON Feed item language mismatch: {locale}")
+            if item["url"] != app["guide_url"]:
+                raise ValueError(f"JSON Feed guide mismatch: {locale}")
+            if item["content_text"] != app["summary"]:
+                raise ValueError(f"JSON Feed summary mismatch: {locale}")
+            if "ct=iag_feed_" not in str(item["external_url"]):
+                raise ValueError(f"JSON Feed campaign link missing: {locale}")
+        if len(_json(feed).encode("utf-8")) > FEED_MAX_BYTES:
+            raise ValueError(f"JSON Feed exceeds size budget: {locale}")
     if set(openapi["paths"]) != {
         "/index.json",
         "/locales/{locale}.json",
+        "/feeds/{locale}.json",
     }:
         raise ValueError("OpenAPI paths do not match the static API surface")
 
@@ -805,25 +1076,48 @@ def build(
         locale: catalog_payload(locale, apps, modified, digest)
         for locale, apps in localized.items()
     }
+    feed_titles = {
+        locale: _localized_directory_title(pages, locale)
+        for locale in OFFICIAL_LOCALES
+    }
+    feeds = {
+        locale: feed_payload(
+            locale,
+            feed_titles[locale],
+            apps,
+            modified,
+            digest,
+        )
+        for locale, apps in localized.items()
+    }
     index = index_payload(records, modified, digest)
     openapi = openapi_document()
-    validate_artifacts(records, index, catalogs, openapi)
+    validate_artifacts(records, index, catalogs, feeds, openapi)
 
     api = pages / API_PATH
     locales_dir = api / "locales"
+    feeds_dir = api / "feeds"
     locales_dir.mkdir(parents=True, exist_ok=True)
+    feeds_dir.mkdir(parents=True, exist_ok=True)
     expected_files = {f"{locale}.json" for locale in OFFICIAL_LOCALES}
-    for path in locales_dir.glob("*.json"):
-        if path.name not in expected_files:
-            path.unlink()
+    for directory in (locales_dir, feeds_dir):
+        for path in directory.glob("*.json"):
+            if path.name not in expected_files:
+                path.unlink()
 
     write_text_if_changed(api / "index.json", _json(index))
     write_text_if_changed(api / "index.schema.json", _json(index_schema()))
     write_text_if_changed(api / "catalog.schema.json", _json(catalog_schema()))
+    write_text_if_changed(api / "feed.schema.json", _json(feed_schema()))
     write_text_if_changed(api / "openapi.json", _json(openapi))
     for locale, payload in catalogs.items():
         write_text_if_changed(
             locales_dir / f"{locale}.json",
+            _json(payload),
+        )
+    for locale, payload in feeds.items():
+        write_text_if_changed(
+            feeds_dir / f"{locale}.json",
             _json(payload),
         )
     write_text_if_changed(
@@ -843,8 +1137,10 @@ def build(
         api_url("index.json"),
         api_url("index.schema.json"),
         api_url("catalog.schema.json"),
+        api_url("feed.schema.json"),
         api_url("openapi.json"),
         *[locale_url(locale) for locale in OFFICIAL_LOCALES],
+        *[feed_url(locale) for locale in OFFICIAL_LOCALES],
     ]
 
 

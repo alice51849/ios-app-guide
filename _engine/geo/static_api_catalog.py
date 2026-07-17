@@ -38,6 +38,7 @@ API_DESCRIPTORS = (
             "direct App Store links through a no-key OpenAPI 3.1 interface."
         ),
         "license": "https://creativecommons.org/licenses/by/4.0/",
+        "feed": "feeds/en-US.json",
         "modified_source": "api/v1/ios-app-catalog/index.json",
         "modified_field": "date_modified",
         "initial_date": "2026-07-17",
@@ -200,10 +201,33 @@ def render_api_catalog(pages: Path = PAGES) -> str:
     for descriptor in descriptors:
         api_path = _api_path(pages, descriptor)
         docs_url = f"{SITE}/api/v1/{descriptor['slug']}/"
+        feed_path = descriptor.get("feed")
+        published_feed = (
+            feed_path
+            if isinstance(feed_path, str)
+            and (api_path / feed_path).is_file()
+            else None
+        )
         docs_modified = _page_modified(
             api_path / "index.html", descriptor["initial_date"]
         )
         modified_dates.append(docs_modified)
+        distribution: dict[str, object] | list[dict[str, object]] = {
+            "@type": "DataDownload",
+            "encodingFormat": (
+                "application/vnd.oai.openapi+json;version=3.1"
+            ),
+            "contentUrl": f"{docs_url}openapi.json",
+        }
+        if published_feed:
+            distribution = [
+                distribution,
+                {
+                    "@type": "DataDownload",
+                    "encodingFormat": "application/feed+json",
+                    "contentUrl": f"{docs_url}{published_feed}",
+                },
+            ]
         datasets.append(
             {
                 "@type": "Dataset",
@@ -211,23 +235,29 @@ def render_api_catalog(pages: Path = PAGES) -> str:
                 "description": descriptor["description"],
                 "url": docs_url,
                 "license": descriptor["license"],
-                "distribution": {
-                    "@type": "DataDownload",
-                    "encodingFormat": (
-                        "application/vnd.oai.openapi+json;version=3.1"
-                    ),
-                    "contentUrl": f"{docs_url}openapi.json",
-                },
+                "distribution": distribution,
             }
+        )
+        feed_link = (
+            '<a href="{feed}">JSON Feed 1.1 &rarr;</a>'.format(
+                feed=html.escape(
+                    f"{docs_url}{published_feed}",
+                    quote=True,
+                )
+            )
+            if published_feed
+            else ""
         )
         cards.append(
             "<article><h2>{title}</h2><p>{description}</p>"
             '<div class="links"><a href="{docs}">Documentation &rarr;</a>'
-            '<a href="{openapi}">OpenAPI JSON &rarr;</a></div></article>'.format(
+            '<a href="{openapi}">OpenAPI JSON &rarr;</a>'
+            "{feed}</div></article>".format(
                 title=html.escape(descriptor["title"]),
                 description=html.escape(descriptor["description"]),
                 docs=html.escape(docs_url, quote=True),
                 openapi=html.escape(f"{docs_url}openapi.json", quote=True),
+                feed=feed_link,
             )
         )
     modified = max(modified_dates, default="2026-07-11")

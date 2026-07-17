@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/index.schema.json",
-  "api_version": "1.0.0",
+  "api_version": "1.1.0",
   "date_modified": "2026-07-17",
-  "content_digest": "5e3127691b9470b04bf77fc17759aa4bc177e5e0796e1fc3f6138683555ae5f1",
+  "content_digest": "7a0034e4435e2c42caef0769fb1685c4e282895abc6972aac282b7bc955ec0c3",
   "name": "Verified Independent iOS App Catalog API",
   "description": "A free, read-only OpenAPI catalog for every verified live app, with localized summaries, search terms and direct App Store links in 50 locales.",
   "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -26,206 +26,257 @@
   },
   "openapi": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/openapi.json",
   "catalog_schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
+  "feed_schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feed.schema.json",
   "locales": [
     {
       "locale": "ar-SA",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ar-SA.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ar-SA.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/ar-SA.json"
     },
     {
       "locale": "bn-BD",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/bn-BD.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/bn-BD.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/bn-BD.json"
     },
     {
       "locale": "ca",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ca.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ca.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/ca.json"
     },
     {
       "locale": "cs",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/cs.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/cs.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/cs.json"
     },
     {
       "locale": "da",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/da.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/da.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/da.json"
     },
     {
       "locale": "de-DE",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/de-DE.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/de-DE.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/de-DE.json"
     },
     {
       "locale": "el",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/el.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/el.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/el.json"
     },
     {
       "locale": "en-AU",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/en-AU.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/en-AU.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/en-AU.json"
     },
     {
       "locale": "en-CA",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/en-CA.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/en-CA.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/en-CA.json"
     },
     {
       "locale": "en-GB",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/en-GB.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/en-GB.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/en-GB.json"
     },
     {
       "locale": "en-US",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/en-US.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/en-US.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/en-US.json"
     },
     {
       "locale": "es-ES",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/es-ES.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/es-ES.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/es-ES.json"
     },
     {
       "locale": "es-MX",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/es-MX.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/es-MX.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/es-MX.json"
     },
     {
       "locale": "fi",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/fi.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/fi.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/fi.json"
     },
     {
       "locale": "fr-CA",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/fr-CA.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/fr-CA.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/fr-CA.json"
     },
     {
       "locale": "fr-FR",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/fr-FR.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/fr-FR.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/fr-FR.json"
     },
     {
       "locale": "gu-IN",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/gu-IN.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/gu-IN.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/gu-IN.json"
     },
     {
       "locale": "he",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/he.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/he.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/he.json"
     },
     {
       "locale": "hi",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/hi.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/hi.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/hi.json"
     },
     {
       "locale": "hr",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/hr.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/hr.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/hr.json"
     },
     {
       "locale": "hu",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/hu.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/hu.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/hu.json"
     },
     {
       "locale": "id",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/id.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/id.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/id.json"
     },
     {
       "locale": "it",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/it.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/it.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/it.json"
     },
     {
       "locale": "ja",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ja.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ja.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/ja.json"
     },
     {
       "locale": "kn-IN",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/kn-IN.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/kn-IN.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/kn-IN.json"
     },
     {
       "locale": "ko",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ko.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ko.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/ko.json"
     },
     {
       "locale": "ml-IN",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ml-IN.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ml-IN.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/ml-IN.json"
     },
     {
       "locale": "mr-IN",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/mr-IN.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/mr-IN.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/mr-IN.json"
     },
     {
       "locale": "ms",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ms.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ms.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/ms.json"
     },
     {
       "locale": "nl-NL",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/nl-NL.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/nl-NL.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/nl-NL.json"
     },
     {
       "locale": "no",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/no.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/no.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/no.json"
     },
     {
       "locale": "or-IN",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/or-IN.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/or-IN.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/or-IN.json"
     },
     {
       "locale": "pa-IN",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/pa-IN.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/pa-IN.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/pa-IN.json"
     },
     {
       "locale": "pl",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/pl.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/pl.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/pl.json"
     },
     {
       "locale": "pt-BR",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/pt-BR.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/pt-BR.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/pt-BR.json"
     },
     {
       "locale": "pt-PT",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/pt-PT.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/pt-PT.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/pt-PT.json"
     },
     {
       "locale": "ro",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ro.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ro.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/ro.json"
     },
     {
       "locale": "ru",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ru.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ru.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/ru.json"
     },
     {
       "locale": "sk",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/sk.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/sk.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/sk.json"
     },
     {
       "locale": "sl-SI",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/sl-SI.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/sl-SI.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/sl-SI.json"
     },
     {
       "locale": "sv",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/sv.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/sv.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/sv.json"
     },
     {
       "locale": "ta-IN",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ta-IN.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ta-IN.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/ta-IN.json"
     },
     {
       "locale": "te-IN",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/te-IN.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/te-IN.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/te-IN.json"
     },
     {
       "locale": "th",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/th.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/th.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/th.json"
     },
     {
       "locale": "tr",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/tr.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/tr.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/tr.json"
     },
     {
       "locale": "uk",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/uk.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/uk.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/uk.json"
     },
     {
       "locale": "ur-PK",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ur-PK.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/ur-PK.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/ur-PK.json"
     },
     {
       "locale": "vi",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/vi.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/vi.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/vi.json"
     },
     {
       "locale": "zh-Hans",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/zh-Hans.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/zh-Hans.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/zh-Hans.json"
     },
     {
       "locale": "zh-Hant",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/zh-Hant.json"
+      "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/locales/zh-Hant.json",
+      "feed": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feeds/zh-Hant.json"
     }
   ]
 }

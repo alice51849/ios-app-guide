@@ -20,6 +20,7 @@
     "documentation",
     "openapi",
     "catalog_schema",
+    "feed_schema",
     "locales"
   ],
   "properties": {
@@ -27,7 +28,7 @@
       "const": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/index.schema.json"
     },
     "api_version": {
-      "const": "1.0.0"
+      "const": "1.1.0"
     },
     "date_modified": {
       "type": "string",
@@ -112,6 +113,9 @@
     "catalog_schema": {
       "const": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json"
     },
+    "feed_schema": {
+      "const": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feed.schema.json"
+    },
     "locales": {
       "type": "array",
       "minItems": 50,
@@ -121,7 +125,8 @@
         "additionalProperties": false,
         "required": [
           "locale",
-          "url"
+          "url",
+          "feed"
         ],
         "properties": {
           "locale": {
@@ -179,6 +184,10 @@
             ]
           },
           "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "feed": {
             "type": "string",
             "format": "uri"
           }

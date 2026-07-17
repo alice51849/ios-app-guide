@@ -41,6 +41,7 @@ import add_related_answers
 import add_related_tools
 import answer_deep
 import answer_portfolio
+import app_store_storefronts
 import appstore_live
 import build_pages
 import build_pages_i18n
@@ -453,6 +454,7 @@ class GeneratorTests(unittest.TestCase):
                 "rss.xml",
                 "feed.json",
                 "llms-full.txt",
+                "llms/index.json",
                 "apps/index.html",
             ):
                 path = pages / relative
@@ -488,6 +490,10 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(f"{site}/index.html", root["anchor"])
             self.assertEqual(
                 f"{site}/guides/lumibopomofo.html", root["item"][0]["href"]
+            )
+            self.assertIn(
+                f"{site}/llms/index.json",
+                [target["href"] for target in root["describedby"]],
             )
             self.assertEqual(
                 [{"value": "Lumi Bopomofo", "language": "en"}],
@@ -20285,6 +20291,163 @@ class GeneratorTests(unittest.TestCase):
         sereno = gen_llms.build_llms({}, {"sereno"})
         self.assertIn("### Sleep & focus", sereno)
         self.assertNotIn("### sleep-sound", sereno)
+
+    def test_localized_llms_cover_all_official_locales_without_fallback(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale in OFFICIAL_LOCALES:
+                localized = pages / locale / "lumibopomofo.html"
+                localized.parent.mkdir(parents=True, exist_ok=True)
+                localized.write_text(locale, encoding="utf-8")
+            stale = pages / "llms" / "stale.txt"
+            stale.parent.mkdir(parents=True, exist_ok=True)
+            stale.write_text("stale", encoding="utf-8")
+
+            first = gen_llms.write_localized_llms(
+                {"lumibopomofo"}, pages
+            )
+            tracked = {
+                path: path.stat().st_mtime_ns
+                for path in (
+                    pages / "llms" / "index.json",
+                    pages / "llms" / "zh-Hant.txt",
+                    pages / "llms" / "ja.txt",
+                    pages / "sitemap_llms.xml",
+                )
+            }
+            second = gen_llms.write_localized_llms(
+                {"lumibopomofo"}, pages
+            )
+
+            self.assertEqual(53, first["changed_files"])
+            self.assertEqual(0, second["changed_files"])
+            self.assertFalse(stale.exists())
+            self.assertEqual(
+                tracked,
+                {path: path.stat().st_mtime_ns for path in tracked},
+            )
+            catalogs = {
+                path.stem
+                for path in (pages / "llms").glob("*.txt")
+            }
+            self.assertEqual(set(OFFICIAL_LOCALES), catalogs)
+            index = json.loads(
+                (pages / "llms" / "index.json").read_text(
+                    encoding="utf-8"
+                )
+            )
+            self.assertEqual(50, index["locale_count"])
+            self.assertEqual(
+                list(OFFICIAL_LOCALES),
+                [item["locale"] for item in index["locales"]],
+            )
+            zh_hant = (pages / "llms" / "zh-Hant.txt").read_text(
+                encoding="utf-8"
+            )
+            self.assertIn("Lumi注音星球", zh_hant)
+            self.assertIn(
+                "https://apps.apple.com/tw/app/id6773017109",
+                zh_hant,
+            )
+            japanese = (pages / "llms" / "ja.txt").read_text(
+                encoding="utf-8"
+            )
+            self.assertIn("Lumi ボポモフォ", japanese)
+            self.assertIn(
+                "https://apps.apple.com/jp/app/id6773017109",
+                japanese,
+            )
+            sitemap = ET.parse(pages / "sitemap_llms.xml").getroot()
+            locations = [
+                node.text
+                for node in sitemap.findall(
+                    f"{{{gen_linkset.SITEMAP_NS}}}url/"
+                    f"{{{gen_linkset.SITEMAP_NS}}}loc"
+                )
+            ]
+            self.assertEqual(
+                gen_llms.localized_llms_sitemap_urls(),
+                locations,
+            )
+            lastmods = {
+                url: "2026-07-17"
+                for url in gen_llms.localized_llms_sitemap_urls()
+            }
+            (pages / "sitemap_llms.xml").write_text(
+                gen_llms.build_localized_llms_sitemap(lastmods),
+                encoding="utf-8",
+            )
+            third = gen_llms.write_localized_llms(
+                {"lumibopomofo"}, pages
+            )
+            self.assertEqual(0, third["changed_files"])
+            self.assertEqual(
+                lastmods,
+                gen_llms._existing_sitemap_lastmods(
+                    pages / "sitemap_llms.xml"
+                ),
+            )
+            with mock.patch.object(gen_llms, "PAGES", str(pages)):
+                self.assertIn(
+                    "sitemap_llms.xml",
+                    gen_llms.build_sitemap_index(),
+                )
+            self.assertIn(
+                f"{gen_llms.SITE}/llms/index.json",
+                gen_llms.build_llms({}, {"lumibopomofo"}),
+            )
+
+    def test_localized_app_storefronts_match_all_official_locales(self):
+        self.assertEqual(
+            set(OFFICIAL_LOCALES),
+            set(app_store_storefronts.LOCALE_STOREFRONTS),
+        )
+        canonical = "https://apps.apple.com/app/id6773017109"
+        expected = {
+            "zh-Hant": "https://apps.apple.com/tw/app/id6773017109",
+            "ja": "https://apps.apple.com/jp/app/id6773017109",
+            "ar-SA": "https://apps.apple.com/sa/app/id6773017109",
+            "pt-BR": "https://apps.apple.com/br/app/id6773017109",
+            "hi": "https://apps.apple.com/in/app/id6773017109",
+        }
+        for locale, url in expected.items():
+            with self.subTest(locale=locale):
+                self.assertEqual(
+                    url,
+                    app_store_storefronts.localized_app_store_url(
+                        canonical, locale
+                    ),
+                )
+        for invalid in (
+            "https://apps.apple.com/app/id6773017109?ct=test",
+            "https://apps.apple.com.evil/app/id6773017109",
+            "https://example.com/app/id6773017109",
+        ):
+            with self.subTest(invalid=invalid), self.assertRaises(ValueError):
+                app_store_storefronts.localized_app_store_url(
+                    invalid, "en-US"
+                )
+
+    def test_localized_llms_reject_missing_locale_instead_of_fallback(self):
+        incomplete = {
+            "en-US": {
+                "name": "Lumi Bopomofo",
+                "subtitle": "Learn Zhuyin",
+                "promotionalText": "Learn through play.",
+            }
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            page = Path(directory) / "en-US" / "lumibopomofo.html"
+            page.parent.mkdir(parents=True)
+            page.write_text("page", encoding="utf-8")
+            with mock.patch.object(
+                gen_llms.build_pages_i18n,
+                "load_app_locales",
+                return_value=incomplete,
+            ), self.assertRaises(ValueError):
+                gen_llms.build_localized_llms(
+                    "en-US", {"lumibopomofo"}, directory
+                )
 
     def test_llms_full_links_only_existing_localized_app_guides(self):
         with tempfile.TemporaryDirectory() as directory:

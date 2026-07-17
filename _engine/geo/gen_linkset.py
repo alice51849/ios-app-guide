@@ -239,6 +239,10 @@ def build_document(
         ("describedby", "llms-full.txt", "text/plain"),
         ("describedby", "apps/index.html", "text/html"),
     ]
+    if (pages / "llms" / "index.json").is_file():
+        root_resources.append(
+            ("describedby", "llms/index.json", "application/json")
+        )
     root_context: dict[str, object] = {
         "anchor": root_url,
         "item": [

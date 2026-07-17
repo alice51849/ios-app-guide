@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""GEO 機器可讀層生成器 — llms.txt + llms-full.txt + robots + sitemap index。
+"""GEO 機器可讀層生成器 — global + 50-locale llms catalogs and discovery。
 
 讓 LLM 爬蟲(GPTBot/ClaudeBot/PerplexityBot/Google-Extended…)最容易「讀懂並引用」你:
   • llms.txt:AI 爬蟲索引 — 已公開 app 一句話價值 + App Store 連結。
   • llms-full.txt:從真實頁面與 registry 重建的完整 crawler map,不再手動過期。
+  • llms/<locale>.txt:50 個母語 App 目錄,每款 App 直連當地 App Store。
   • robots.txt:明確歡迎各 AI bot,並列出全部 sitemap(含 alternatives/answers)。
   • sitemap_index.xml:把三張 sitemap 串成索引,讓爬蟲一次抓全。
 
@@ -14,17 +15,22 @@
     python geo/gen_llms.py --publish  # 並 git push + IndexNow
 """
 import argparse
+import html
 import json
 import os
+from pathlib import Path
 import re
 import subprocess
 import sys
 import urllib.request
+import xml.etree.ElementTree as ET
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
+import build_pages_i18n  # noqa: E402
+from app_store_storefronts import localized_app_store_url  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
 from aeo_pages import disp, pricing_profile  # noqa: E402
 from rsscloud_config import (  # noqa: E402
@@ -32,6 +38,11 @@ from rsscloud_config import (  # noqa: E402
     RSSCLOUD_WEBSUB_HUB,
 )
 from static_api_catalog import API_DESCRIPTORS  # noqa: E402
+from official_locales import (  # noqa: E402
+    OFFICIAL_LOCALES,
+    OFFICIAL_LOCALE_SET,
+    require_official_locale_coverage,
+)
 from websub_config import WEBSUB_HUBS  # noqa: E402
 
 PAGES = os.path.join(HERE, "pages")
@@ -204,6 +215,235 @@ def app_line(key, comps, live_keys):
     else:
         alt = ""
     return f"- [{a['name']}]({url}): {sub} {position}{alt}".replace("  ", " ").strip()
+
+
+def _single_line(value):
+    return re.sub(r"\s+", " ", str(value)).strip()
+
+
+def localized_llms_url(locale):
+    if locale not in OFFICIAL_LOCALE_SET:
+        raise ValueError(f"Unsupported localized llms locale: {locale!r}")
+    return f"{SITE}/llms/{locale}.txt"
+
+
+def localized_llms_discovery_lines():
+    lines = [
+        "",
+        "## Localized AI-readable app catalogs",
+        f"- Machine-readable locale index: {SITE}/llms/index.json",
+    ]
+    lines.extend(
+        f"- [{locale}]({localized_llms_url(locale)})"
+        for locale in OFFICIAL_LOCALES
+    )
+    return lines
+
+
+def _localized_app_record(key, locale, pages):
+    localizations = build_pages_i18n.load_app_locales(key)
+    require_official_locale_coverage(key, localizations)
+    values = localizations[locale]
+    required = ("name", "subtitle", "promotionalText")
+    missing = [
+        field
+        for field in required
+        if not isinstance(values.get(field), str)
+        or not values[field].strip()
+    ]
+    if missing:
+        raise ValueError(
+            f"{key}/{locale} localized llms fields missing: "
+            + ", ".join(missing)
+        )
+    guide = pages / locale / f"{key}.html"
+    if not guide.is_file():
+        raise FileNotFoundError(
+            f"Localized app guide is missing: {guide}"
+        )
+    canonical = appstore_url(key)
+    if not canonical:
+        raise ValueError(f"Live app has no App Store URL: {key}")
+    promotional = build_pages_i18n.sanitize_description(
+        key, locale, values["promotionalText"]
+    )
+    return {
+        "key": key,
+        "name": _single_line(values["name"]),
+        "subtitle": _single_line(values["subtitle"]),
+        "promotional": _single_line(promotional),
+        "pricing": _single_line(
+            build_pages_i18n.pricing_text_for(key, locale)
+        ),
+        "guide": f"{SITE}/{locale}/{key}.html",
+        "store": localized_app_store_url(canonical, locale),
+    }
+
+
+def build_localized_llms(locale, live_keys, pages=None):
+    if locale not in OFFICIAL_LOCALE_SET:
+        raise ValueError(f"Unsupported localized llms locale: {locale!r}")
+    base = build_pages_i18n.base_lang(locale)
+    if base not in build_pages_i18n.UI:
+        raise ValueError(f"Missing native llms interface copy: {locale}")
+    pages = Path(pages or PAGES)
+    records = [
+        _localized_app_record(key, locale, pages)
+        for key in live_keys
+    ]
+    records.sort(key=lambda item: (item["name"].casefold(), item["key"]))
+    ui = build_pages_i18n.get_ui(locale)
+    lines = [
+        f"# {ui['dir_dir']} — iOS App Guide",
+        "",
+        f"> {ui['dir_lead']}",
+        "",
+        f"locale: {locale}",
+        f"apps: {len(records)}",
+        "",
+    ]
+    for record in records:
+        lines.extend(
+            (
+                f"- [{record['name']}]({record['guide']}) — "
+                f"{record['subtitle']}",
+                f"  - {record['promotional']}",
+                f"  - {ui['price']}: {record['pricing']}",
+                f"  - App Store: {record['store']}",
+            )
+        )
+    lines.append("")
+    return "\n".join(lines)
+
+
+def build_localized_llms_index(live_keys):
+    return json.dumps(
+        {
+            "version": "1.0",
+            "title": "Localized AI-readable iOS app catalogs",
+            "source": SITE,
+            "ordering": "alphabetical_by_localized_app_name_not_a_ranking",
+            "app_count": len(live_keys),
+            "locale_count": len(OFFICIAL_LOCALES),
+            "locales": [
+                {
+                    "locale": locale,
+                    "url": localized_llms_url(locale),
+                    "app_count": len(live_keys),
+                }
+                for locale in OFFICIAL_LOCALES
+            ],
+        },
+        ensure_ascii=False,
+        indent=2,
+    ) + "\n"
+
+
+def localized_llms_sitemap_urls():
+    return [
+        f"{SITE}/llms.txt",
+        f"{SITE}/llms-full.txt",
+        f"{SITE}/llms/index.json",
+        *[localized_llms_url(locale) for locale in OFFICIAL_LOCALES],
+    ]
+
+
+def build_localized_llms_sitemap(lastmods=None):
+    lastmods = lastmods or {}
+    rows = []
+    for url in localized_llms_sitemap_urls():
+        lastmod = lastmods.get(url)
+        suffix = (
+            f"<lastmod>{lastmod}</lastmod>"
+            if lastmod is not None
+            else ""
+        )
+        rows.append(
+            f"  <url><loc>{html.escape(url)}</loc>{suffix}</url>"
+        )
+    rows_text = "\n".join(rows)
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f"{rows_text}\n"
+        "</urlset>\n"
+    )
+
+
+def _existing_sitemap_lastmods(path):
+    path = Path(path)
+    if not path.is_file():
+        return {}
+    namespace = "http://www.sitemaps.org/schemas/sitemap/0.9"
+    root = ET.parse(path).getroot()
+    if root.tag != f"{{{namespace}}}urlset":
+        raise ValueError(f"Invalid localized llms sitemap root: {path}")
+    lastmods = {}
+    seen = set()
+    for node in root.findall(f"{{{namespace}}}url"):
+        location = node.findtext(f"{{{namespace}}}loc")
+        if not location or location in seen:
+            raise ValueError(
+                f"Invalid localized llms sitemap location: {location!r}"
+            )
+        seen.add(location)
+        lastmod = node.findtext(f"{{{namespace}}}lastmod")
+        if lastmod is not None:
+            if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", lastmod):
+                raise ValueError(
+                    f"Invalid localized llms lastmod: {lastmod!r}"
+                )
+            lastmods[location] = lastmod
+    return lastmods
+
+
+def _write_if_changed(path, content):
+    path = Path(path)
+    if path.is_file() and path.read_text(encoding="utf-8") == content:
+        return False
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(content, encoding="utf-8")
+    return True
+
+
+def write_localized_llms(live_keys, pages=None):
+    pages = Path(pages or PAGES)
+    directory = pages / "llms"
+    directory.mkdir(parents=True, exist_ok=True)
+    expected = {f"{locale}.txt" for locale in OFFICIAL_LOCALES}
+    changed = 0
+    for stale in directory.glob("*.txt"):
+        if stale.name not in expected:
+            stale.unlink()
+            changed += 1
+    for locale in OFFICIAL_LOCALES:
+        changed += int(
+            _write_if_changed(
+                directory / f"{locale}.txt",
+                build_localized_llms(locale, live_keys, pages),
+            )
+        )
+    changed += int(
+        _write_if_changed(
+            directory / "index.json",
+            build_localized_llms_index(live_keys),
+        )
+    )
+    sitemap = pages / "sitemap_llms.xml"
+    changed += int(
+        _write_if_changed(
+            sitemap,
+            build_localized_llms_sitemap(
+                _existing_sitemap_lastmods(sitemap)
+            ),
+        )
+    )
+    return {
+        "apps": len(live_keys),
+        "locales": len(OFFICIAL_LOCALES),
+        "catalogs": len(OFFICIAL_LOCALES),
+        "changed_files": changed,
+    }
 
 
 def build_llms(comp_map, live_keys):
@@ -633,6 +873,7 @@ def build_llms(comp_map, live_keys):
             f"- Complete Resource List with SHA-256: {SITE}/resourcesync/resourcelist.xml",
             f"- Collection JSON-LD: {SITE}/resourcesync/bopomofo-collection.jsonld",
         ]
+    lines += localized_llms_discovery_lines()
     # 外部 curated 清單與資料集(GitHub;已實測會被 AI 引用的來源,讓爬蟲從站也能發現整個 repo 生態)
     ghbase = "https://github.com/alice51849"
     lines += ["", "## External curated lists & datasets (GitHub, CC0/CC BY — free to cite)"]
@@ -1249,6 +1490,7 @@ def build_llms_full(comp_map, live_keys):
         lines += ["", "## Localized catalog hubs"]
         lines.extend(f"- [{locale}]({url})" for locale, url in locale_hubs)
 
+    lines += localized_llms_discovery_lines()
     lines += ["", "## External curated lists and datasets"]
     for name, description in EXTERNAL_REPOS:
         lines.append(f"- [{name}](https://github.com/alice51849/{name}) — {description}")
@@ -1257,7 +1499,7 @@ def build_llms_full(comp_map, live_keys):
     for filename in (
         "sitemap_index.xml", "sitemap.xml", "sitemap_alternatives.xml",
         "sitemap_answers.xml", "sitemap_guides.xml", "sitemap_apps.xml",
-        "sitemap_stories.xml",
+        "sitemap_stories.xml", "sitemap_llms.xml",
         "sitemap_images.xml", "sitemap_linkset.xml", "sitemap_oembed.xml",
         "linkset.json",
         "sitemap_hubs.xml", "sitemap_tools.xml", "sitemap_data.xml",
@@ -1299,7 +1541,11 @@ def build_llms_full(comp_map, live_keys):
 
 
 def build_robots():
-    out = ["# AI assistants and search crawlers are welcome to index and cite this site.", ""]
+    out = [
+        "# AI assistants and search crawlers are welcome to index and cite this site.",
+        f"# Localized AI app catalogs: {SITE}/llms/index.json",
+        "",
+    ]
     for bot in AI_BOTS:
         out.append(f"User-agent: {bot}")
         out.append("Allow: /")
@@ -1314,6 +1560,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_images.xml",
             f"Sitemap: {SITE}/sitemap_linkset.xml",
             f"Sitemap: {SITE}/sitemap_oembed.xml",
+            f"Sitemap: {SITE}/sitemap_llms.xml",
             f"Sitemap: {SITE}/sitemap_hubs.xml",
             f"Sitemap: {SITE}/sitemap_tools.xml",
             f"Sitemap: {SITE}/sitemap_data.xml",
@@ -1348,7 +1595,7 @@ def build_sitemap_index():
     maps = ["sitemap.xml", "sitemap_alternatives.xml", "sitemap_answers.xml",
             "sitemap_guides.xml", "sitemap_apps.xml",
             "sitemap_stories.xml", "sitemap_images.xml", "sitemap_linkset.xml",
-            "sitemap_oembed.xml",
+            "sitemap_oembed.xml", "sitemap_llms.xml",
             "sitemap_hubs.xml", "sitemap_tools.xml",
             "sitemap_data.xml", "sitemap_api.xml", "sitemap_swap.xml"]
     maps.extend([
@@ -1422,17 +1669,32 @@ def main():
     live_keys = live_app_keys(
         APPSTORE, PAGES, refresh=not args.cached_live
     )
+    localized_stats = write_localized_llms(live_keys)
     open(os.path.join(PAGES, "llms.txt"), "w", encoding="utf-8").write(build_llms(comp_map, live_keys))
     open(os.path.join(PAGES, "llms-full.txt"), "w", encoding="utf-8").write(
         build_llms_full(comp_map, live_keys))
     open(os.path.join(PAGES, "robots.txt"), "w", encoding="utf-8").write(build_robots())
     open(os.path.join(PAGES, "sitemap_index.xml"), "w", encoding="utf-8").write(build_sitemap_index())
-    print(f"✓ llms.txt / llms-full.txt / robots.txt / sitemap_index.xml → {PAGES}")
+    print(
+        "✓ llms.txt / llms-full.txt / 50 localized catalogs / "
+        f"robots.txt / sitemap_index.xml → {PAGES}"
+    )
     print(f"  收錄 {len(live_keys)}/{len(APPS)} 個已公開 app；robots 歡迎 {len(AI_BOTS)} 個 AI/搜尋 bot")
+    print(
+        "  localized llms: "
+        + ", ".join(
+            f"{key}={value}" for key, value in localized_stats.items()
+        )
+    )
     if args.publish:
         publish([
             f"{SITE}/llms.txt", f"{SITE}/llms-full.txt",
             f"{SITE}/robots.txt", f"{SITE}/sitemap_index.xml",
+            f"{SITE}/llms/index.json", f"{SITE}/sitemap_llms.xml",
+            *[
+                localized_llms_url(locale)
+                for locale in OFFICIAL_LOCALES
+            ],
         ])
     else:
         print("（加 --publish 部署)")

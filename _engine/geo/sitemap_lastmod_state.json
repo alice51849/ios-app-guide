@@ -101,9 +101,14 @@
       "sha256": "d9df998ec14ff3e21a7202d603febd5d63dd22e1c469bbedecbea56c4d94f5a4"
     },
     "https://alice51849.github.io/ios-app-guide/sitemap_linkset.xml": {
-      "lastmod": "2026-07-14",
+      "lastmod": "2026-07-17",
       "path": "sitemap_linkset.xml",
-      "sha256": "9d317ea9a3396954e2cacd2ea05d9567cb8b936d5ec90a12b9927a15c01eb7ec"
+      "sha256": "2cfcda664e58870c77ee844448c085c3a5cf31043aedb3f1b61c417480e88601"
+    },
+    "https://alice51849.github.io/ios-app-guide/sitemap_llms.xml": {
+      "lastmod": "2026-07-17",
+      "path": "sitemap_llms.xml",
+      "sha256": "dc16acbe1fb86b8cb26433c0c235d83c700d9cef9a2bce9c9ee5a73468cc35eb"
     },
     "https://alice51849.github.io/ios-app-guide/sitemap_lms.xml": {
       "lastmod": "2026-07-17",
@@ -28573,9 +28578,274 @@
       "sha256": "3330c55754e6684459006f64a626c3ea3513ff8c75d7d3812f00608e9b813ce7"
     },
     "https://alice51849.github.io/ios-app-guide/linkset.json": {
-      "lastmod": "2026-07-14",
+      "lastmod": "2026-07-17",
       "path": "linkset.json",
-      "sha256": "9cb82468ecc4999b125bf5488b0b0fd2b6b96ad559f32310bb081d7c8b5d12db"
+      "sha256": "8401f625c0488c51eb880c3c897f6a03f964624996b53fa0814524c56ecde6da"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms-full.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms-full.txt",
+      "sha256": "63994a2bc813484cca149a90c6e1a763cfde134ec25a5a06402ac5ac1b96b10b"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms.txt",
+      "sha256": "19c3b0accebee147a3ba109f7489df0cd7f1b06db6d5866475cb48a64f7f46f1"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/ar-SA.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/ar-SA.txt",
+      "sha256": "ff41c53f16e7a24b429453dcab09216880591a0dc224b08376a04f0266918480"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/bn-BD.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/bn-BD.txt",
+      "sha256": "dbf06abf15656993535510e9a2ffa2e4f0edba3103a7d11ac243e1e2bbc52af1"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/ca.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/ca.txt",
+      "sha256": "b3fd476732a07153a2a20fb43491f2a72ef3e3b1c4cff8768fd612040445146c"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/cs.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/cs.txt",
+      "sha256": "fbb2d022a166db3bd43050b49fbc1c3ff5d56da6de922bac5194ae5d634a61fb"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/da.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/da.txt",
+      "sha256": "2a3e979c110bd90b6a4849dc14449db1916a6236fb94103db94145248a31914a"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/de-DE.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/de-DE.txt",
+      "sha256": "1068d26ccf4a783f229dc8088f0d07711397f109340558ea082f2e44eede5e8b"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/el.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/el.txt",
+      "sha256": "f38acdc945bc65d3f74ce8ee8e73c12113ab64edc5a11580591a81e893c9bb01"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/en-AU.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/en-AU.txt",
+      "sha256": "4b60f468084f7f5c107107ea606541581bb85bcadcc92e84c81f486e64b1d546"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/en-CA.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/en-CA.txt",
+      "sha256": "bbb399fc563169d87ff7158b574a59e428775a98edfaad8b48fb2d34f9e0b9c5"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/en-GB.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/en-GB.txt",
+      "sha256": "02fdf7b2032fb0ba3f56a9fea2a05ece586934a7bf48e49d2fdbf44c98b25e17"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/en-US.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/en-US.txt",
+      "sha256": "ef05bb2124e223c4c0f3184ea8d8fb387f2bb9371d5418c43974d863ad533fc5"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/es-ES.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/es-ES.txt",
+      "sha256": "c953b0b383ee9f5a9f8e98461214fd531b3d1f39d6d70769122949fc1c6d6338"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/es-MX.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/es-MX.txt",
+      "sha256": "cf7e4f67dae934a42b3000853d214b5fe286f9a09e0803ec30b156fc44bccee3"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/fi.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/fi.txt",
+      "sha256": "c3aeba2a4f1c92bc8fd64960ebdfaf9e8e8cd840d1d77e9d20d5054e15d3f5d6"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/fr-CA.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/fr-CA.txt",
+      "sha256": "ad7962613b1d0953e75a5f11d46cfda45e126212cbed5522657c65bad5027cba"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/fr-FR.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/fr-FR.txt",
+      "sha256": "814b4454013a0f741eccda6c7470c09982f184e3fe788009941f4b5f7b9f0e19"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/gu-IN.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/gu-IN.txt",
+      "sha256": "fa425d01601063d9c254ddd6b5757d4d4f152f038c30588a736b766389c9e718"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/he.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/he.txt",
+      "sha256": "c4f0a3192915d229032f3da9350e8936a787b4fa68a3ce188443f88534703fec"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/hi.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/hi.txt",
+      "sha256": "42151e7945825f5c0533b76cdae77334fa1e5e6ea30e44d1a628e067a6efb7c4"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/hr.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/hr.txt",
+      "sha256": "fc867e99e5d4f7c6e6ccfcf8b6326c9e483ac0c3a4a0a57b943099557b0b7c45"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/hu.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/hu.txt",
+      "sha256": "864a99d324bc8e4552b0edb63739466ad792a91dff3144db200ce57dce62e2a8"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/id.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/id.txt",
+      "sha256": "49ae4c66b805666b49099edc83791425703708af3f726f3c61a834ec5581a7be"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/index.json": {
+      "lastmod": "2026-07-17",
+      "path": "llms/index.json",
+      "sha256": "15f87b75c4c1491c307e1b653ac0a08a102c9b97241134fbaae8deb4d1ae8c1d"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/it.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/it.txt",
+      "sha256": "a863cc5ae65340c60d346575afdd5ab3e2ab7d0982a6bbff982a6ccb6db5aa22"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/ja.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/ja.txt",
+      "sha256": "e281aeea5167ca99147851489853bfe3d1d4bcd81aa498298732775bef8cdafa"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/kn-IN.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/kn-IN.txt",
+      "sha256": "ac04347e23a0838058c6c64bbdcbd433abbaccf86ed39e23935c759c46a1e586"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/ko.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/ko.txt",
+      "sha256": "9b5f722a148a27d5e841aa349981ebf990eb5a51193a5719eedab6630db714b4"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/ml-IN.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/ml-IN.txt",
+      "sha256": "461726fe9076b6d636ff5f01d4059b45dc1f881ffc8a0b16a7535609e244741e"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/mr-IN.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/mr-IN.txt",
+      "sha256": "e606bf8de16f124374ad0d90907d3166eaf183af9e87d866b65d8907fbd4bf2b"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/ms.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/ms.txt",
+      "sha256": "b90e1c69582c3e2eddf056082318a6aabda5cea2de661a80932ef5a5f6ffd42e"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/nl-NL.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/nl-NL.txt",
+      "sha256": "477f18b9d2693d56c779b3ede528d7a4748e296842304a7198588a3119cfd30a"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/no.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/no.txt",
+      "sha256": "4a56a669bac4cba052dcaa9190f293a25b6dded7f9639b4ba7562842f7f83c29"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/or-IN.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/or-IN.txt",
+      "sha256": "be3a2b964219ca88cf35dff2834ebba322925c99035ba9f515de852053a2de28"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/pa-IN.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/pa-IN.txt",
+      "sha256": "7c1d152715b872dcc024933c66141ca7098c4f27217dccebd9fa03514a030eb8"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/pl.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/pl.txt",
+      "sha256": "748c9772c601dd35e0a2dd54a6867a88a72302a37ecf86d21984a39687710858"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/pt-BR.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/pt-BR.txt",
+      "sha256": "ec6b73d1951684966c0dc0dca2acb1ec3bb1f37614339955c69c20d677e4b181"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/pt-PT.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/pt-PT.txt",
+      "sha256": "770a038e9fd0a8d26b4d64995f74136787d0cd68a656569030ba1f376c9c40e9"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/ro.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/ro.txt",
+      "sha256": "05e9f647119a642fdaa3d24f8ed015b434d968038a3d8330eff0cd45b5a56545"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/ru.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/ru.txt",
+      "sha256": "f89a474e5f8125a9b02b6ce103e5931831e8707a2845f22f76e0297e2acc852d"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/sk.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/sk.txt",
+      "sha256": "53c2bf2f1f051204387ade6cbb18bff323b23e1bc6070e5f3fefd633fcde3382"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/sl-SI.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/sl-SI.txt",
+      "sha256": "27b8630a664916c53264b0dc1e9206b6f6153eba4d5aa81f002df50c9b759af1"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/sv.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/sv.txt",
+      "sha256": "cc4c57a0489e5c78edc76cecf8c72ceec15d35b3daeb852f6c3542d4cf22ef67"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/ta-IN.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/ta-IN.txt",
+      "sha256": "5563b1394181a7602e380f589cbc47f2fa5f0aef20ef3e8aa3cd46780aa501bf"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/te-IN.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/te-IN.txt",
+      "sha256": "30900545b22da3ef9a836fcc76a2a4807b521f5b239813735dd7a2ec5d2297a2"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/th.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/th.txt",
+      "sha256": "048c7588a237fc34d6f395a554260adf02bbb6515f227c68001455e6079a8774"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/tr.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/tr.txt",
+      "sha256": "7c2f3d2a68b7734f7a5349b15823d7ed1d7e266be3f6efda92a3f94b2a37fe5c"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/uk.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/uk.txt",
+      "sha256": "2b4996392daefa83f95942a8ccc328bc03bbf594fce168c92acb73fa751c3f40"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/ur-PK.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/ur-PK.txt",
+      "sha256": "12920773c3634d3ab6a6ce0a84cd5311ae19b45e9569a7ee915f0fe903d3d5a0"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/vi.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/vi.txt",
+      "sha256": "e6090e35620b0bad8479a93247e9f18ad32c2118541d0e40c4695063fd6fd5f8"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/zh-Hans.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/zh-Hans.txt",
+      "sha256": "1ced9c1b6e7048fe3db9b8421b62e4b48546b6c9a4469c1fc34cb134bf222aa6"
+    },
+    "https://alice51849.github.io/ios-app-guide/llms/zh-Hant.txt": {
+      "lastmod": "2026-07-17",
+      "path": "llms/zh-Hant.txt",
+      "sha256": "bdb0aa689ba45c4c3f2af3aea761351a75103942cc8684dcf662e55084213365"
     },
     "https://alice51849.github.io/ios-app-guide/ml-IN/aim990.html": {
       "lastmod": "2026-07-17",

@@ -356,6 +356,7 @@ def _upgrade_node(
     )
     node["url"] = store_url
     node["installUrl"] = store_url
+    node["downloadUrl"] = store_url
     page_reference = {"@id": f"{page_url}#webpage"}
     if relation == "mainEntity":
         node["mainEntityOfPage"] = page_reference
@@ -394,6 +395,7 @@ def mobile_app_schema(
         ),
         "url": canonical_store_url(app_id),
         "installUrl": canonical_store_url(app_id),
+        "downloadUrl": canonical_store_url(app_id),
     }
     if page_url is not None:
         schema["mainEntityOfPage"] = {

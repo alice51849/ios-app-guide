@@ -1425,6 +1425,7 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(canonical, app_schema["@id"])
             self.assertEqual(canonical, app_schema["url"])
             self.assertEqual(canonical, app_schema["installUrl"])
+            self.assertEqual(canonical, app_schema["downloadUrl"])
             self.assertEqual(
                 {"@id": f"{existing_url}#webpage"},
                 app_schema["mainEntityOfPage"],
@@ -1443,7 +1444,6 @@ class GeneratorTests(unittest.TestCase):
                 "offers",
                 "aggregateRating",
                 "review",
-                "downloadUrl",
             ):
                 self.assertNotIn(unsupported, app_schema)
             webpage_schema = next(
@@ -1533,6 +1533,7 @@ class GeneratorTests(unittest.TestCase):
             )
             self.assertNotIn("inLanguage", inserted_app)
             self.assertNotIn("mainEntityOfPage", inserted_app)
+            self.assertEqual(canonical, inserted_app["downloadUrl"])
             self.assertEqual("en", inserted_webpage["inLanguage"])
             self.assertEqual(
                 {"@id": canonical},

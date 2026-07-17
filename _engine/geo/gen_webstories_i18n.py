@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""Localized Google Web Stories — 用 data/*_full.json 的多語 ASO 文案,產各語言版 Web Story。
+"""Generate strict 50-locale Web Stories and discovery indexes for live apps."""
 
-零 OpenAI、零帳號。海報沿用英文版(品牌一致),故事文字在地化。輸出 <locale>/stories/<key>.html。
-擴大非英語 Google Discover 觸及。不改 App、不改 App Store 內容。
-"""
+from __future__ import annotations
+
 import html
 import json
 import os
@@ -13,171 +11,305 @@ import sys
 import time
 from pathlib import Path
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(HERE)
-sys.path.insert(0, HERE)
-import gen_webstories as gw  # noqa: E402
-from build_pages_i18n import sanitize_description  # noqa: E402
-from gen_webstories import APPS, appstore_url, AMP_BOILER, PALETTES, SITE, PAGES, STORIES  # noqa: E402
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
+sys.path.insert(0, str(ROOT / "social"))
 
-DATA = os.path.join(ROOT, "data")
-KEY2DATA = {
-    "snapport": "snapport_full.json", "sononote": "sono_full.json", "cvdesk": "cv_full.json",
-    "picclear": "picclear_full.json", "scanto": "scanto_full.json", "cyca": "cyca_full.json",
-    "gmoney": "gmoney_full.json", "hourstag": "hourstag_full.json", "lockhour": "lockhour_full.json",
-    "unblurry": "unblurry_full.json", "photocream": "photocream_full.json",
-    "lumiletters": "letters_lite_full.json", "lumimath": "math_planet_full.json",
-    "lumimission": "mission_routines_full.json", "lumiweather": "weather_full.json",
-    "lumiletterspro": "letters_pro_full.json", "lumimathpro": "math_pro_full.json",
-    "lumimissionpro": "mission_pro_full.json", "lumibopomofo": "bopomofo_full.json",
-    "lumibopomofopro": "bopomofo_pro_full.json", "zodira": "zodira_full.json",
-    "aim990": "aim990_full.json", "wordmate": "wordmate_full.json",
-}
+from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 
+from appstore_live import live_app_keys  # noqa: E402
+from build_pages_i18n import (  # noqa: E402
+    RTL,
+    base_lang,
+    get_ui,
+    load_app_locales,
+)
+from gen_webstories import AMP_BOILER, PUBLISHER, palette_for  # noqa: E402
+from gen_mobile_app_identity import mobile_app_schema  # noqa: E402
+from official_locales import (  # noqa: E402
+    OFFICIAL_LOCALES,
+    require_official_locale_coverage,
+)
 
-def load_locales(key):
-    fn = KEY2DATA.get(key)
-    if not fn:
-        return {}
-    p = os.path.join(DATA, fn)
-    if not os.path.exists(p):
-        return {}
-    with open(p, encoding="utf-8") as f:
-        return json.load(f)
+PAGES = HERE / "pages"
+SITE = os.environ.get(
+    "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
+).rstrip("/")
+REQUIRED_FIELDS = ("name", "subtitle", "description", "keywords", "promotionalText")
+ALT_LINK_RE = re.compile(
+    r'\s*<link\s+rel=["\']alternate["\'][^>]*>\s*',
+    re.IGNORECASE,
+)
 
 
-def hreflang_block(key, locales):
-    out = [f'<link rel="alternate" hreflang="en" href="{SITE}/stories/{key}.html">']
-    for lc in locales:
-        out.append(f'<link rel="alternate" hreflang="{lc}" href="{SITE}/{lc}/stories/{key}.html">')
-    out.append(f'<link rel="alternate" hreflang="x-default" href="{SITE}/stories/{key}.html">')
-    return "\n".join(out)
+def story_url(key, locale=None):
+    prefix = f"/{locale}" if locale else ""
+    return f"{SITE}{prefix}/stories/{key}.html"
 
 
-def update_english_hreflang(key, locales):
-    path = Path(STORIES) / f"{key}.html"
-    text = path.read_text(encoding="utf-8")
-    block = hreflang_block(key, locales)
-    pattern = re.compile(
-        r'(?:\s*<link\b[^>]*\brel="alternate"[^>]*'
-        r'\bhreflang="[^"]+"[^>]*>)+',
-        re.IGNORECASE,
+def index_url(locale=None):
+    prefix = f"/{locale}" if locale else ""
+    return f"{SITE}{prefix}/stories/"
+
+
+def alternate_links(path_for_locale, root_path):
+    links = [
+        f'<link rel="alternate" hreflang="x-default" href="{SITE}{root_path}">',
+        f'<link rel="alternate" hreflang="en" href="{SITE}{root_path}">',
+    ]
+    links.extend(
+        f'<link rel="alternate" hreflang="{locale}" '
+        f'href="{SITE}/{locale}{path_for_locale(locale)}">'
+        for locale in OFFICIAL_LOCALES
     )
-    if pattern.search(text):
-        updated = pattern.sub("\n" + block, text, count=1)
-    else:
-        canonical = re.search(
-            r'<link rel="canonical" href="[^"]+">', text
-        )
-        if not canonical:
-            raise ValueError(f"Missing canonical link in {path}")
-        updated = (
-            text[: canonical.end()]
-            + "\n"
-            + block
-            + text[canonical.end() :]
-        )
-    path.write_text(updated, encoding="utf-8")
+    return "\n".join(links)
 
 
-def localized_story(key, locale, d, all_locales):
-    e = html.escape
-    a = APPS[key]
-    name = (d.get("name") or a["name"]).strip()
-    tagline = (d.get("subtitle") or "").strip()
-    promo = (d.get("promotionalText") or tagline).strip()
-    tagline = sanitize_description(key, locale, tagline)
-    promo = sanitize_description(key, locale, promo)
-    kws = [k.strip() for k in (d.get("keywords") or "").split(",") if k.strip()][:4]
-    pal = gw.palette_for(key)
-    c1 = "#%02x%02x%02x" % pal[0]
-    c2 = "#%02x%02x%02x" % pal[1]
-    url = appstore_url(key, "iag_story") or SITE
-    canon = f"{SITE}/{locale}/stories/{key}.html"
-    poster = f"{SITE}/stories/img/{key}-poster.jpg"
+def story_alternate_links(key):
+    return alternate_links(
+        lambda _locale: f"/stories/{key}.html",
+        f"/stories/{key}.html",
+    )
 
-    def grad(x, y):
-        return f"background:linear-gradient(160deg,{x},{y})"
 
-    bullets_html = "".join(f'<p class="b">{e(b)}</p>' for b in kws) or f'<p class="b">{e(tagline)}</p>'
-    pages = f'''
+def index_alternate_links():
+    return alternate_links(lambda _locale: "/stories/", "/stories/")
+
+
+def replace_alternate_links(path, links):
+    if not path.exists():
+        raise FileNotFoundError(f"Missing English Web Story surface: {path}")
+    document = ALT_LINK_RE.sub("", path.read_text(encoding="utf-8"))
+    if "</head>" not in document:
+        raise ValueError(f"Missing </head> in {path}")
+    document = document.replace("</head>", f"{links}\n</head>", 1)
+    path.write_text(document, encoding="utf-8")
+
+
+def validated_localizations(key):
+    localizations = load_app_locales(key)
+    require_official_locale_coverage(key, localizations)
+    for locale in OFFICIAL_LOCALES:
+        missing = [
+            field
+            for field in REQUIRED_FIELDS
+            if not str(localizations[locale].get(field) or "").strip()
+        ]
+        if missing:
+            raise ValueError(
+                f"{key}/{locale} has empty Web Story fields: {','.join(missing)}"
+            )
+    return localizations
+
+
+def feature_points(localization):
+    keywords = [
+        value.strip()
+        for value in re.split(r"[,，、؛]+", localization["keywords"])
+        if value.strip()
+    ]
+    return keywords[:4] or [localization["subtitle"].strip()]
+
+
+def story_html(key, locale, localization):
+    escape = html.escape
+    name = localization["name"].strip()
+    subtitle = localization["subtitle"].strip()
+    promotional_text = localization["promotionalText"].strip()
+    points = feature_points(localization)
+    ui = get_ui(locale)
+    palette = palette_for(key)
+    color1 = "#%02x%02x%02x" % palette[0]
+    color2 = "#%02x%02x%02x" % palette[1]
+    app_url = appstore_url(key, "iag_story") or SITE
+    canonical = story_url(key, locale)
+    direction = "rtl" if base_lang(locale) in RTL else "ltr"
+    app_id = APPSTORE[key]
+    identity = mobile_app_schema(
+        app_id,
+        name,
+        APPS[key].get("category", "utility"),
+        canonical,
+    )
+    identity["description"] = promotional_text
+    identity_json = json.dumps(identity, ensure_ascii=False).replace("</", "<\\/")
+
+    def gradient(start, end):
+        return f"background:linear-gradient(160deg,{start},{end})"
+
+    bullets = "".join(
+        f'<p class="bullet">{escape(point)}</p>' for point in points
+    )
+    pages = f"""
   <amp-story-page id="hook">
-    <amp-story-grid-layer template="fill"><div class="pg" style="{grad(c1, c2)}"></div></amp-story-grid-layer>
+    <amp-story-grid-layer template="fill"><div class="page" style="{gradient(color1, color2)}"></div></amp-story-grid-layer>
     <amp-story-grid-layer template="vertical" class="pad center">
-      <h1>{e(name)}</h1><p class="lead">{e(tagline)}</p>
+      <div class="kicker">iOS</div>
+      <h1>{escape(name)}</h1><p class="lead">{escape(subtitle)}</p>
     </amp-story-grid-layer>
   </amp-story-page>
   <amp-story-page id="what">
-    <amp-story-grid-layer template="fill"><div class="pg" style="{grad(c2, c1)}"></div></amp-story-grid-layer>
-    <amp-story-grid-layer template="vertical" class="pad center"><h2>{e(promo[:120])}</h2></amp-story-grid-layer>
+    <amp-story-grid-layer template="fill"><div class="page" style="{gradient(color2, color1)}"></div></amp-story-grid-layer>
+    <amp-story-grid-layer template="vertical" class="pad center">
+      <h2>{escape(subtitle)}</h2><p class="lead">{escape(promotional_text)}</p>
+    </amp-story-grid-layer>
   </amp-story-page>
-  <amp-story-page id="feat">
-    <amp-story-grid-layer template="fill"><div class="pg" style="{grad(c1, c2)}"></div></amp-story-grid-layer>
-    <amp-story-grid-layer template="vertical" class="pad">{bullets_html}</amp-story-grid-layer>
+  <amp-story-page id="features">
+    <amp-story-grid-layer template="fill"><div class="page" style="{gradient(color1, color2)}"></div></amp-story-grid-layer>
+    <amp-story-grid-layer template="vertical" class="pad">
+      <h2>{escape(ui["feat"])}</h2>{bullets}
+    </amp-story-grid-layer>
   </amp-story-page>
   <amp-story-page id="cta">
-    <amp-story-grid-layer template="fill"><div class="pg" style="{grad(c2, c1)}"></div></amp-story-grid-layer>
-    <amp-story-grid-layer template="vertical" class="pad center"><h2>{e(name)}</h2><p class="lead">App Store</p></amp-story-grid-layer>
-    <amp-story-cta-layer><a href="{e(url)}" class="cta">Get it on the App Store →</a></amp-story-cta-layer>
-  </amp-story-page>'''
-
-    css = ('h1{font:800 46px/1.1 Arial,sans-serif;color:#fff;margin:0 0 12px}'
-           'h2{font:800 32px/1.25 Arial,sans-serif;color:#fff;margin:0}'
-           '.lead{font:500 22px/1.4 Arial,sans-serif;color:#fff;opacity:.95;margin:0}'
-           '.b{font:600 22px/1.35 Arial,sans-serif;color:#fff;margin:8px 0;padding-left:20px;position:relative}'
-           '.b:before{content:"\\2713";position:absolute;left:0;font-weight:800}'
-           '.pg{width:100%;height:100%}.pad{padding:52px 40px}.center{justify-content:center;align-items:flex-start}'
-           '.cta{background:#fff;color:#111;font:800 18px Arial;padding:14px 22px;border-radius:999px;text-decoration:none}')
-    return f'''<!DOCTYPE html>
-<html amp lang="{locale}">
+    <amp-story-grid-layer template="fill"><div class="page" style="{gradient(color2, color1)}"></div></amp-story-grid-layer>
+    <amp-story-grid-layer template="vertical" class="pad center">
+      <h2>{escape(name)}</h2><p class="lead">{escape(ui["dl"])}</p>
+    </amp-story-grid-layer>
+    <amp-story-cta-layer>
+      <a href="{escape(app_url, quote=True)}" class="cta">{escape(ui["get"].format(name=name))} →</a>
+    </amp-story-cta-layer>
+  </amp-story-page>"""
+    css = (
+        'h1{font:800 46px/1.15 -apple-system,BlinkMacSystemFont,"Noto Sans",sans-serif;color:#fff;margin:0 0 12px}'
+        'h2{font:800 34px/1.25 -apple-system,BlinkMacSystemFont,"Noto Sans",sans-serif;color:#fff;margin:0 0 16px}'
+        '.lead{font:500 22px/1.45 -apple-system,BlinkMacSystemFont,"Noto Sans",sans-serif;color:#fff;opacity:.96;margin:0}'
+        '.kicker{font:800 15px/1 -apple-system,BlinkMacSystemFont,sans-serif;letter-spacing:.12em;color:#fff;opacity:.85;margin-bottom:14px}'
+        '.bullet{font:650 22px/1.4 -apple-system,BlinkMacSystemFont,"Noto Sans",sans-serif;color:#fff;margin:8px 0;padding-inline-start:24px;position:relative}'
+        '.bullet:before{content:"\\2713";position:absolute;inset-inline-start:0;font-weight:800}'
+        '.page{width:100%;height:100%}.pad{padding:52px 40px}.center{justify-content:center;align-items:flex-start}'
+        '.cta{background:#fff;color:#111;font:800 17px/1.2 -apple-system,BlinkMacSystemFont,"Noto Sans",sans-serif;padding:14px 22px;border-radius:999px;text-decoration:none}'
+    )
+    return f"""<!DOCTYPE html>
+<html amp lang="{locale}" dir="{direction}">
 <head>
 <meta charset="utf-8">
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
-<title>{e(name)}: {e(tagline)}</title>
-<link rel="canonical" href="{canon}">
-{hreflang_block(key, all_locales)}
+<title>{escape(name)}: {escape(subtitle)}</title>
+<link rel="canonical" href="{canonical}">
+{story_alternate_links(key)}
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="description" content="{e(name)} — {e(tagline)}">
+<meta name="description" content="{escape(promotional_text, quote=True)}">
+<meta name="apple-itunes-app" content="app-id={app_id}, app-argument={escape(app_url, quote=True)}">
+<script type="application/ld+json">{identity_json}</script>
 {AMP_BOILER}
 <style amp-custom>{css}</style>
 </head>
 <body>
-<amp-story standalone title="{e(name)}: {e(tagline)}" publisher="{gw.PUBLISHER}"
-  publisher-logo-src="{SITE}/stories/img/publisher-logo.jpg" poster-portrait-src="{poster}">
+<amp-story standalone title="{escape(name, quote=True)}: {escape(subtitle, quote=True)}" publisher="{PUBLISHER}"
+  publisher-logo-src="{SITE}/stories/img/publisher-logo.jpg"
+  poster-portrait-src="{SITE}/stories/img/{key}-poster.jpg">
 {pages}
 </amp-story>
 </body>
-</html>'''
+</html>"""
+
+
+def localized_index_html(locale, keys, localizations_by_key):
+    escape = html.escape
+    ui = get_ui(locale)
+    direction = "rtl" if base_lang(locale) in RTL else "ltr"
+    cards = "".join(
+        f'<a class="card" href="{story_url(key, locale)}">'
+        f'<img src="{SITE}/stories/img/{key}-poster.jpg" '
+        f'alt="{escape(localizations_by_key[key][locale]["name"], quote=True)}" loading="lazy">'
+        f'<span><strong>{escape(localizations_by_key[key][locale]["name"])}</strong>'
+        f'<small>{escape(localizations_by_key[key][locale]["subtitle"])}</small></span></a>'
+        for key in keys
+    )
+    return f"""<!DOCTYPE html>
+<html lang="{locale}" dir="{direction}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{escape(ui["dir_dir"])} — Web Stories</title>
+<meta name="description" content="{escape(ui["dir_lead"], quote=True)}">
+<link rel="canonical" href="{index_url(locale)}">
+{index_alternate_links()}
+<style>
+body{{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans",sans-serif;background:#f7f7fb;color:#17171c}}
+.wrap{{max-width:1120px;margin:auto;padding:28px 20px 44px}}h1{{font-size:clamp(1.7rem,4vw,2.5rem);margin:0 0 8px}}
+.lead{{color:#5a5a66;margin:0 0 24px;max-width:780px}}.grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:16px}}
+.card{{position:relative;border-radius:20px;overflow:hidden;text-decoration:none;aspect-ratio:3/4;display:block;box-shadow:0 8px 28px #25254a18}}
+.card img{{width:100%;height:100%;object-fit:cover}}.card span{{position:absolute;inset-inline:0;bottom:0;padding:42px 14px 14px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.78))}}
+.card strong,.card small{{display:block}}.card strong{{font-size:1rem}}.card small{{font-size:.78rem;margin-top:4px;opacity:.9}}
+</style>
+</head>
+<body><main class="wrap"><h1>{escape(ui["dir_dir"])}</h1><p class="lead">{escape(ui["dir_lead"])}</p><div class="grid">{cards}</div></main></body>
+</html>"""
+
+
+def build_sitemap(keys):
+    lastmod = time.strftime("%Y-%m-%d", time.gmtime())
+    rows = []
+    for key in keys:
+        image = f"{SITE}/stories/img/{key}-poster.jpg"
+        for locale in (None, *OFFICIAL_LOCALES):
+            rows.append(
+                f"  <url><loc>{story_url(key, locale)}</loc><lastmod>{lastmod}</lastmod>"
+                f"<image:image><image:loc>{image}</image:loc></image:image></url>"
+            )
+    for locale in (None, *OFFICIAL_LOCALES):
+        rows.append(
+            f"  <url><loc>{index_url(locale)}</loc><lastmod>{lastmod}</lastmod></url>"
+        )
+    document = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+        'xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
+        + "\n".join(rows)
+        + "\n</urlset>\n"
+    )
+    (PAGES / "sitemap_stories.xml").write_text(document, encoding="utf-8")
+
+
+def cleanup_stale_stories(keys):
+    expected = set(keys)
+    for stories_dir in PAGES.glob("*/stories"):
+        locale = stories_dir.parent.name
+        if locale not in OFFICIAL_LOCALES:
+            continue
+        for page in stories_dir.glob("*.html"):
+            if page.name != "index.html" and page.stem not in expected:
+                page.unlink()
 
 
 def main():
-    en_keys = [k for k in APPS if appstore_url(k) and os.path.exists(os.path.join(STORIES, f"{k}.html"))]
-    made = 0
-    story_urls = [f"{SITE}/stories/{k}.html" for k in en_keys]
-    expected_localized = set()
-    for key in en_keys:
-        locs = load_locales(key)
-        locales = [lc for lc in locs if lc not in ("en-US", "en-GB", "en-CA", "en-AU") and locs[lc].get("subtitle")]
-        update_english_hreflang(key, locales)
-        for lc in locales:
-            d = os.path.join(PAGES, lc, "stories")
-            os.makedirs(d, exist_ok=True)
-            open(os.path.join(d, f"{key}.html"), "w", encoding="utf-8").write(
-                localized_story(key, lc, locs[lc], locales))
-            expected_localized.add(Path(d, f"{key}.html").resolve())
-            story_urls.append(f"{SITE}/{lc}/stories/{key}.html")
-            made += 1
-    for stale in Path(PAGES).glob("*/stories/*.html"):
-        if stale.resolve() not in expected_localized:
-            stale.unlink()
-    # rebuild unified sitemap_stories (EN + localized)
-    lm = time.strftime("%Y-%m-%d", time.gmtime())
-    rows = [f'  <url><loc>{u}</loc><lastmod>{lm}</lastmod></url>' for u in story_urls]
-    xml = ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-           + "\n".join(rows) + "\n</urlset>\n")
-    open(os.path.join(PAGES, "sitemap_stories.xml"), "w", encoding="utf-8").write(xml)
-    print(f"\u2713 {made} localized web stories; sitemap_stories has {len(story_urls)} urls")
+    live_keys = live_app_keys(APPSTORE, str(PAGES), refresh=False)
+    keys = [key for key in APPS if key in live_keys and appstore_url(key)]
+    if not keys:
+        raise RuntimeError("No publicly available apps found for Web Stories")
+    localizations_by_key = {
+        key: validated_localizations(key)
+        for key in keys
+    }
+
+    cleanup_stale_stories(keys)
+    for key in keys:
+        replace_alternate_links(
+            PAGES / "stories" / f"{key}.html",
+            story_alternate_links(key),
+        )
+    replace_alternate_links(PAGES / "stories" / "index.html", index_alternate_links())
+
+    for locale in OFFICIAL_LOCALES:
+        stories_dir = PAGES / locale / "stories"
+        stories_dir.mkdir(parents=True, exist_ok=True)
+        for key in keys:
+            (stories_dir / f"{key}.html").write_text(
+                story_html(key, locale, localizations_by_key[key][locale]),
+                encoding="utf-8",
+            )
+        (stories_dir / "index.html").write_text(
+            localized_index_html(locale, keys, localizations_by_key),
+            encoding="utf-8",
+        )
+
+    build_sitemap(keys)
+    print(
+        f"✓ {len(keys) * len(OFFICIAL_LOCALES)} localized Web Stories "
+        f"+ {len(OFFICIAL_LOCALES)} locale indexes → {PAGES}"
+    )
 
 
 if __name__ == "__main__":

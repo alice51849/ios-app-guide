@@ -83,6 +83,7 @@ import gen_sitemap_lastmod
 import gen_social_previews
 import gen_smart_app_banners
 import gen_webstories
+import gen_webstories_i18n
 import indexnow_submit
 import notify_rsscloud
 import notify_websub
@@ -132,6 +133,8 @@ import zhuyin_ro_crate
 import zhuyin_skos_vocabulary
 import zhuyin_static_api
 import websub_config
+import validate_webstories
+from official_locales import OFFICIAL_LOCALES
 from videogen.registry import (  # noqa: E402
     APPS,
     APPSTORE,
@@ -18207,14 +18210,11 @@ class GeneratorTests(unittest.TestCase):
             build_pages_i18n.load_app_locales("mochi")["en-US"],
             APPS["mochi"],
         )
-        self.assertEqual("Mochi", name)
+        self.assertEqual("Mochi: Cute Checklist", name)
         self.assertTrue(sub)
         self.assertTrue(desc)
         self.assertTrue(keywords)
-        self.assertEqual(
-            ["en-US", "ja", "zh-Hant", "ko", "hi", "nl-NL", "sk"],
-            app_locales,
-        )
+        self.assertEqual(list(OFFICIAL_LOCALES), app_locales)
         locales = build_pages_i18n.master_locales_for(
             ["mochi", "snapport"]
         )
@@ -18233,6 +18233,112 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn(sub, page)
         self.assertIn("Free to download", page)
         self.assertNotIn("<meta name=\"description\" content=\"\">", page)
+
+    def test_live_webstory_data_and_ui_cover_all_official_locales(self):
+        story_keys = sorted(
+            page.stem
+            for page in (Path(build_pages_i18n.PAGES) / "stories").glob("*.html")
+            if page.name != "index.html"
+        )
+        self.assertEqual(26, len(story_keys))
+        for key in story_keys:
+            self.assertEqual(
+                list(OFFICIAL_LOCALES),
+                build_pages_i18n.all_locales_for(key),
+            )
+            gen_webstories_i18n.validated_localizations(key)
+        bases = {build_pages_i18n.base_lang(locale) for locale in OFFICIAL_LOCALES}
+        for mapping in (
+            build_pages_i18n.UI,
+            build_pages_i18n.QTPL,
+            build_pages_i18n.ATPL,
+            build_pages_i18n.PROFILE_PRICING,
+            build_pages_i18n.PAID_UPFRONT_PRICING,
+        ):
+            self.assertFalse(bases - set(mapping))
+        for base in bases:
+            self.assertIn(
+                "free_to_start",
+                build_pages_i18n.PROFILE_PRICING[base],
+            )
+
+    def test_webstory_i18n_generation_is_complete_and_idempotent(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            stories = pages / "stories"
+            stories.mkdir()
+            (stories / "mochi.html").write_text(
+                "<!doctype html><html><head></head><body></body></html>",
+                encoding="utf-8",
+            )
+            (stories / "index.html").write_text(
+                "<!doctype html><html><head></head><body></body></html>",
+                encoding="utf-8",
+            )
+            with (
+                mock.patch.object(gen_webstories_i18n, "PAGES", pages),
+                mock.patch.object(
+                    gen_webstories_i18n,
+                    "live_app_keys",
+                    return_value={"mochi"},
+                ),
+            ):
+                gen_webstories_i18n.main()
+                first = {
+                    path.relative_to(pages).as_posix(): hashlib.sha256(
+                        path.read_bytes()
+                    ).hexdigest()
+                    for path in pages.rglob("*")
+                    if path.is_file()
+                }
+                gen_webstories_i18n.main()
+                second = {
+                    path.relative_to(pages).as_posix(): hashlib.sha256(
+                        path.read_bytes()
+                    ).hexdigest()
+                    for path in pages.rglob("*")
+                    if path.is_file()
+                }
+
+            self.assertEqual(first, second)
+            self.assertEqual(
+                50,
+                sum(
+                    (pages / locale / "stories" / "mochi.html").is_file()
+                    for locale in OFFICIAL_LOCALES
+                ),
+            )
+            root_story = (stories / "mochi.html").read_text(encoding="utf-8")
+            urdu_story = (
+                pages / "ur-PK" / "stories" / "mochi.html"
+            ).read_text(encoding="utf-8")
+            self.assertEqual(52, root_story.count('hreflang="'))
+            self.assertEqual(52, urdu_story.count('hreflang="'))
+            self.assertIn('lang="ur-PK" dir="rtl"', urdu_story)
+            self.assertIn(f"app-id={APPSTORE['mochi']}", urdu_story)
+            self.assertIn("ct=iag_story", urdu_story)
+            self.assertIn('"@type": "MobileApplication"', urdu_story)
+            self.assertIn(
+                f'"downloadUrl": "https://apps.apple.com/app/id{APPSTORE["mochi"]}"',
+                urdu_story,
+            )
+            self.assertIn("App Store سے", urdu_story)
+            self.assertNotIn("Get it on the App Store", urdu_story)
+            sitemap = ET.parse(pages / "sitemap_stories.xml")
+            namespace = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+            self.assertEqual(102, len(sitemap.findall("s:url", namespace)))
+
+    def test_published_webstories_pass_complete_matrix_gate(self):
+        result = validate_webstories.validate_site()
+        self.assertEqual(
+            {
+                "apps": 26,
+                "locales": 50,
+                "localized_stories": 1300,
+                "sitemap_urls": 1377,
+            },
+            result,
+        )
 
     def test_registry_purchase_models_are_explicit_and_verified(self):
         paid_upfront = {
@@ -19273,6 +19379,7 @@ class GeneratorTests(unittest.TestCase):
             "add_related_tools.py",
             "ensure_live_guides.py",
             "gen_webstories.py",
+            "gen_webstories_i18n.py",
             "gen_image_sitemap.py",
             "gen_linkset.py",
             "gen_social_previews.py",
@@ -19282,6 +19389,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",
             "gen_guide_design.py",
+            "validate_webstories.py",
             "gen_llms.py --cached-live",
             "zhuyin_resourcesync.py",
             "gen_feed.py",
@@ -19316,6 +19424,8 @@ class GeneratorTests(unittest.TestCase):
             refresh_block.index("zhuyin_resourcesync.py"),
         )
         self.assertEqual(2, workflow.count("zhuyin_resourcesync.py"))
+        self.assertEqual(3, workflow.count("gen_webstories_i18n.py"))
+        self.assertEqual(3, workflow.count("validate_webstories.py"))
         self.assertEqual(3, workflow.count("gen_mobile_app_identity.py"))
         final_cleanup_block = workflow.split(
             "- name: Final link and availability cleanup", 1
@@ -19345,6 +19455,7 @@ class GeneratorTests(unittest.TestCase):
         stable_surface_chain = (
             "ensure_live_guides.py",
             "gen_webstories.py",
+            "gen_webstories_i18n.py",
             "gen_image_sitemap.py",
             "gen_linkset.py",
             "gen_social_previews.py",
@@ -19354,6 +19465,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",
             "gen_guide_design.py",
+            "validate_webstories.py",
             "gen_llms.py --cached-live",
             "gen_feed.py",
         )
@@ -19534,6 +19646,8 @@ class GeneratorTests(unittest.TestCase):
             "add_related_answers.py",
             "add_related_tools.py",
             "fix_en_hreflang.py",
+            "gen_webstories.py",
+            "gen_webstories_i18n.py",
             "gen_image_sitemap.py",
             "gen_linkset.py",
             "gen_social_previews.py",
@@ -19543,6 +19657,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",
             "gen_guide_design.py",
+            "validate_webstories.py",
             "gen_llms.py",
             "zhuyin_resourcesync.py",
             "gen_feed.py",

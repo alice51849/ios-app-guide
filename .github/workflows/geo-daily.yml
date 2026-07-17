@@ -65,6 +65,7 @@ jobs:
           python3 build_pages_i18n.py --cached-live
           python3 ensure_live_guides.py
           python3 gen_webstories.py
+          python3 gen_webstories_i18n.py
           python3 gen_image_sitemap.py
           python3 gen_linkset.py
           python3 gen_social_previews.py
@@ -74,6 +75,7 @@ jobs:
           python3 gen_app_store_qr_ctas.py
           python3 gen_app_store_share_ctas.py
           python3 gen_guide_design.py
+          python3 validate_webstories.py
           python3 gen_llms.py --cached-live
           python3 gen_feed.py
       - name: Verify zero-cost growth infrastructure
@@ -168,6 +170,7 @@ jobs:
           python3 cleanup_localized_assets.py --cached-live
           python3 ensure_live_guides.py
           python3 gen_webstories.py
+          python3 gen_webstories_i18n.py
           python3 gen_image_sitemap.py
           python3 gen_linkset.py
           python3 gen_social_previews.py
@@ -177,6 +180,7 @@ jobs:
           python3 gen_app_store_qr_ctas.py
           python3 gen_app_store_share_ctas.py
           python3 gen_guide_design.py
+          python3 validate_webstories.py
           python3 gen_llms.py --cached-live
           python3 zhuyin_resourcesync.py
           python3 gen_feed.py
@@ -233,6 +237,7 @@ jobs:
           python3 cleanup_localized_assets.py --cached-live
           python3 ensure_live_guides.py
           python3 gen_webstories.py
+          python3 gen_webstories_i18n.py
           python3 gen_image_sitemap.py
           python3 gen_linkset.py
           python3 gen_social_previews.py
@@ -242,6 +247,7 @@ jobs:
           python3 gen_app_store_qr_ctas.py
           python3 gen_app_store_share_ctas.py
           python3 gen_guide_design.py
+          python3 validate_webstories.py
           python3 gen_llms.py --cached-live
           python3 zhuyin_resourcesync.py
           python3 gen_feed.py

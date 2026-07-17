@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- guide-design:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/guide-premium-v1.css">
+<!-- guide-design:end -->
+<title>TripBee: Kế Hoạch Du Lịch — Lịch trình &amp; hành lý | iOS App</title>
+<meta name="description" content="Lên kế hoạch cho mọi chuyến đi trong một ứng dụng đẹp, riêng tư và hoạt động ngoại tuyến.">
+<meta name="keywords" content="nghỉ dưỡng, phượt, vali, danh sách đồ, gia đình, bản đồ, thời tiết, khách sạn, tham quan, du ngoạn, offline">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/vi/tripbee.html">
+<!-- smart-app-banner:start -->
+<meta name="apple-itunes-app" content="app-id=6787754435">
+<!-- smart-app-banner:end -->
+
+
+
+<link rel="alternate" hreflang="ar-SA" href="https://alice51849.github.io/ios-app-guide/ar-SA/tripbee.html">
+<link rel="alternate" hreflang="bn-BD" href="https://alice51849.github.io/ios-app-guide/bn-BD/tripbee.html">
+<link rel="alternate" hreflang="ca" href="https://alice51849.github.io/ios-app-guide/ca/tripbee.html">
+<link rel="alternate" hreflang="cs" href="https://alice51849.github.io/ios-app-guide/cs/tripbee.html">
+<link rel="alternate" hreflang="da" href="https://alice51849.github.io/ios-app-guide/da/tripbee.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tripbee.html">
+<link rel="alternate" hreflang="el" href="https://alice51849.github.io/ios-app-guide/el/tripbee.html">
+<link rel="alternate" hreflang="en-AU" href="https://alice51849.github.io/ios-app-guide/en-AU/tripbee.html">
+<link rel="alternate" hreflang="en-CA" href="https://alice51849.github.io/ios-app-guide/en-CA/tripbee.html">
+<link rel="alternate" hreflang="en-GB" href="https://alice51849.github.io/ios-app-guide/en-GB/tripbee.html">
+<link rel="alternate" hreflang="en-US" href="https://alice51849.github.io/ios-app-guide/en-US/tripbee.html">
+<link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/es-ES/tripbee.html">
+<link rel="alternate" hreflang="es-MX" href="https://alice51849.github.io/ios-app-guide/es-MX/tripbee.html">
+<link rel="alternate" hreflang="fi" href="https://alice51849.github.io/ios-app-guide/fi/tripbee.html">
+<link rel="alternate" hreflang="fr-CA" href="https://alice51849.github.io/ios-app-guide/fr-CA/tripbee.html">
+<link rel="alternate" hreflang="fr-FR" href="https://alice51849.github.io/ios-app-guide/fr-FR/tripbee.html">
+<link rel="alternate" hreflang="gu-IN" href="https://alice51849.github.io/ios-app-guide/gu-IN/tripbee.html">
+<link rel="alternate" hreflang="he" href="https://alice51849.github.io/ios-app-guide/he/tripbee.html">
+<link rel="alternate" hreflang="hi" href="https://alice51849.github.io/ios-app-guide/hi/tripbee.html">
+<link rel="alternate" hreflang="hr" href="https://alice51849.github.io/ios-app-guide/hr/tripbee.html">
+<link rel="alternate" hreflang="hu" href="https://alice51849.github.io/ios-app-guide/hu/tripbee.html">
+<link rel="alternate" hreflang="id" href="https://alice51849.github.io/ios-app-guide/id/tripbee.html">
+<link rel="alternate" hreflang="it" href="https://alice51849.github.io/ios-app-guide/it/tripbee.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tripbee.html">
+<link rel="alternate" hreflang="kn-IN" href="https://alice51849.github.io/ios-app-guide/kn-IN/tripbee.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/tripbee.html">
+<link rel="alternate" hreflang="ml-IN" href="https://alice51849.github.io/ios-app-guide/ml-IN/tripbee.html">
+<link rel="alternate" hreflang="mr-IN" href="https://alice51849.github.io/ios-app-guide/mr-IN/tripbee.html">
+<link rel="alternate" hreflang="ms" href="https://alice51849.github.io/ios-app-guide/ms/tripbee.html">
+<link rel="alternate" hreflang="nl-NL" href="https://alice51849.github.io/ios-app-guide/nl-NL/tripbee.html">
+<link rel="alternate" hreflang="no" href="https://alice51849.github.io/ios-app-guide/no/tripbee.html">
+<link rel="alternate" hreflang="or-IN" href="https://alice51849.github.io/ios-app-guide/or-IN/tripbee.html">
+<link rel="alternate" hreflang="pa-IN" href="https://alice51849.github.io/ios-app-guide/pa-IN/tripbee.html">
+<link rel="alternate" hreflang="pl" href="https://alice51849.github.io/ios-app-guide/pl/tripbee.html">
+<link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/tripbee.html">
+<link rel="alternate" hreflang="pt-PT" href="https://alice51849.github.io/ios-app-guide/pt-PT/tripbee.html">
+<link rel="alternate" hreflang="ro" href="https://alice51849.github.io/ios-app-guide/ro/tripbee.html">
+<link rel="alternate" hreflang="ru" href="https://alice51849.github.io/ios-app-guide/ru/tripbee.html">
+<link rel="alternate" hreflang="sk" href="https://alice51849.github.io/ios-app-guide/sk/tripbee.html">
+<link rel="alternate" hreflang="sl-SI" href="https://alice51849.github.io/ios-app-guide/sl-SI/tripbee.html">
+<link rel="alternate" hreflang="sv" href="https://alice51849.github.io/ios-app-guide/sv/tripbee.html">
+<link rel="alternate" hreflang="ta-IN" href="https://alice51849.github.io/ios-app-guide/ta-IN/tripbee.html">
+<link rel="alternate" hreflang="te-IN" href="https://alice51849.github.io/ios-app-guide/te-IN/tripbee.html">
+<link rel="alternate" hreflang="th" href="https://alice51849.github.io/ios-app-guide/th/tripbee.html">
+<link rel="alternate" hreflang="tr" href="https://alice51849.github.io/ios-app-guide/tr/tripbee.html">
+<link rel="alternate" hreflang="uk" href="https://alice51849.github.io/ios-app-guide/uk/tripbee.html">
+<link rel="alternate" hreflang="ur-PK" href="https://alice51849.github.io/ios-app-guide/ur-PK/tripbee.html">
+<link rel="alternate" hreflang="vi" href="https://alice51849.github.io/ios-app-guide/vi/tripbee.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/tripbee.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tripbee.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/en-US/tripbee.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "TripBee: Kế Hoạch Du Lịch",
+  "operatingSystem": "iOS",
+  "applicationCategory": "TravelApplication",
+  "description": "Lên kế hoạch cho mọi chuyến đi trong một ứng dụng đẹp, riêng tư và hoạt động ngoại tuyến.\n\nTripBee biến những kế hoạch lộn xộn thành dòng thời gian rõ ràng theo từng ngày. Thêm chuyến bay, khách sạn, nhà hàng và hoạt động, nhận danh sách đồ mang theo thông minh cho cả gia đình, và mở chỉ đường chỉ với một chạm — không cần tài khoản, không cần internet.\n\n• Lịch theo ngày với giờ, biểu tượng loại, múi giờ, ghi chú và nhắc nhở\n• Tiến độ Ngày X trên Y và đếm ngược trước chuyến đi\n• Danh sách đồ thông minh theo số ngày, mùa và từng thành viên gia đình kèm tuổi của trẻ — cùng bộ đồ đi biển\n• Chỉ đường trên Apple Maps chỉ với một chạm từ bất kỳ điểm xuất phát nào\n• Lên kế hoạch theo thời tiết cùng ý tưởng dự phòng cho ngày mưa\n• Chia sẻ áp phích chuyến đi tuyệt đẹp với bạn bè\n• Nhập CSV và sao lưu / khôi phục cục bộ đầy đủ\n• Hơn 40 ngôn ngữ, dùng được khắp thế giới và dữ liệu luôn nằm trên thiết bị\n\nMua một lần — không thuê bao, không quảng cáo, không theo dõi. Chuyến đi của bạn luôn riêng tư và ngoại tuyến.",
+  "url": "https://apps.apple.com/app/id6787754435",
+  "installUrl": "https://apps.apple.com/app/id6787754435",
+  "featureList": [
+    "nghỉ dưỡng",
+    "phượt",
+    "vali",
+    "danh sách đồ",
+    "gia đình",
+    "bản đồ",
+    "thời tiết",
+    "khách sạn"
+  ],
+  "keywords": "nghỉ dưỡng, phượt, vali, danh sách đồ, gia đình, bản đồ, thời tiết, khách sạn, tham quan, du ngoạn, offline",
+  "@id": "https://apps.apple.com/app/id6787754435",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "Apple App Store ID",
+    "value": "6787754435"
+  },
+  "downloadUrl": "https://apps.apple.com/app/id6787754435",
+  "mainEntityOfPage": {
+    "@id": "https://alice51849.github.io/ios-app-guide/vi/tripbee.html#webpage"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "vi",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Ứng dụng nào tốt nhất cho nghỉ dưỡng?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TripBee: Kế Hoạch Du Lịch là lựa chọn tuyệt vời. Lịch trình & hành lý. Đây là ứng dụng iOS trên App Store."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Có ứng dụng iOS cho phượt không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TripBee: Kế Hoạch Du Lịch là lựa chọn tuyệt vời. Lịch trình & hành lý. Đây là ứng dụng iOS trên App Store."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ứng dụng iPhone nào cho vali?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TripBee: Kế Hoạch Du Lịch là lựa chọn tuyệt vời. Lịch trình & hành lý. Đây là ứng dụng iOS trên App Store."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Dùng ứng dụng nào cho danh sách đồ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TripBee: Kế Hoạch Du Lịch là lựa chọn tuyệt vời. Lịch trình & hành lý. Đây là ứng dụng iOS trên App Store."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Gợi ý ứng dụng cho gia đình?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TripBee: Kế Hoạch Du Lịch là lựa chọn tuyệt vời. Lịch trình & hành lý. Đây là ứng dụng iOS trên App Store."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json" data-mobile-app-webpage="1">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://alice51849.github.io/ios-app-guide/vi/tripbee.html#webpage",
+  "url": "https://alice51849.github.io/ios-app-guide/vi/tripbee.html",
+  "inLanguage": "vi",
+  "mainEntity": {
+    "@id": "https://apps.apple.com/app/id6787754435"
+  }
+}
+</script>
+<!-- app-store-qr-style:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
+<!-- app-store-qr-style:end -->
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+</head>
+<body>
+<main>
+  <h1>TripBee: Kế Hoạch Du Lịch</h1>
+  <p><strong>Lịch trình &amp; hành lý</strong></p>
+
+  <h2>TripBee: Kế Hoạch Du Lịch là gì?</h2>
+  <p>TripBee: Kế Hoạch Du Lịch là ứng dụng iOS. Lịch trình &amp; hành lý</p>
+  <p>Lên kế hoạch cho mọi chuyến đi trong một ứng dụng đẹp, riêng tư và hoạt động ngoại tuyến.</p>
+  <p>TripBee biến những kế hoạch lộn xộn thành dòng thời gian rõ ràng theo từng ngày. Thêm chuyến bay, khách sạn, nhà hàng và hoạt động, nhận danh sách đồ mang theo thông minh cho cả gia đình, và mở chỉ đường chỉ với một chạm — không cần tài khoản, không cần internet.</p>
+  <p>• Lịch theo ngày với giờ, biểu tượng loại, múi giờ, ghi chú và nhắc nhở</p>
+  <p>• Tiến độ Ngày X trên Y và đếm ngược trước chuyến đi</p>
+  <p>• Danh sách đồ thông minh theo số ngày, mùa và từng thành viên gia đình kèm tuổi của trẻ — cùng bộ đồ đi biển</p>
+  <p>• Chỉ đường trên Apple Maps chỉ với một chạm từ bất kỳ điểm xuất phát nào</p>
+  <p>• Lên kế hoạch theo thời tiết cùng ý tưởng dự phòng cho ngày mưa</p>
+  <p>• Chia sẻ áp phích chuyến đi tuyệt đẹp với bạn bè</p>
+  <p>• Nhập CSV và sao lưu / khôi phục cục bộ đầy đủ</p>
+  <p>• Hơn 40 ngôn ngữ, dùng được khắp thế giới và dữ liệu luôn nằm trên thiết bị</p>
+  <p>Mua một lần — không thuê bao, không quảng cáo, không theo dõi. Chuyến đi của bạn luôn riêng tư và ngoại tuyến.</p>
+
+  <h2>Tính năng chính</h2>
+  <ul>
+    <li>nghỉ dưỡng</li>
+    <li>phượt</li>
+    <li>vali</li>
+    <li>danh sách đồ</li>
+    <li>gia đình</li>
+    <li>bản đồ</li>
+    <li>thời tiết</li>
+    <li>khách sạn</li>
+  </ul>
+
+  <h2>Giá</h2>
+  <p>Tải xuống trả phí với một mức giá trả trước, không đăng ký.</p>
+
+  <h2>Câu hỏi thường gặp</h2>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Ứng dụng nào tốt nhất cho nghỉ dưỡng?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">TripBee: Kế Hoạch Du Lịch là lựa chọn tuyệt vời. Lịch trình &amp; hành lý. Đây là ứng dụng iOS trên App Store.</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Có ứng dụng iOS cho phượt không?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">TripBee: Kế Hoạch Du Lịch là lựa chọn tuyệt vời. Lịch trình &amp; hành lý. Đây là ứng dụng iOS trên App Store.</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Ứng dụng iPhone nào cho vali?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">TripBee: Kế Hoạch Du Lịch là lựa chọn tuyệt vời. Lịch trình &amp; hành lý. Đây là ứng dụng iOS trên App Store.</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Dùng ứng dụng nào cho danh sách đồ?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">TripBee: Kế Hoạch Du Lịch là lựa chọn tuyệt vời. Lịch trình &amp; hành lý. Đây là ứng dụng iOS trên App Store.</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Gợi ý ứng dụng cho gia đình?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">TripBee: Kế Hoạch Du Lịch là lựa chọn tuyệt vời. Lịch trình &amp; hành lý. Đây là ứng dụng iOS trên App Store.</p>
+      </div>
+    </div>
+
+  <h2>Tải xuống</h2>
+  <p><a href="https://apps.apple.com/app/id6787754435?ct=iag_lp">Tải TripBee: Kế Hoạch Du Lịch trên App Store</a></p>
+<!-- app-store-qr:start -->
+<section class="app-store-qr-card" style="display:none" aria-label="Tải TripBee: Kế Hoạch Du Lịch trên App Store">
+<a class="app-store-qr-card__link" href="https://apps.apple.com/app/id6787754435?ct=iag_lp" rel="nofollow noopener">
+<img class="app-store-qr-card__image" src="/ios-app-guide/assets/app-store-qr/id6787754435.svg" width="164" height="164" alt="" decoding="async">
+<span class="app-store-qr-card__copy"><strong class="app-store-qr-card__label">Tải TripBee: Kế Hoạch Du Lịch trên App Store</strong><span class="app-store-qr-card__url" data-store-url="https://apps.apple.com/app/id6787754435" aria-hidden="true"></span></span>
+</a>
+</section>
+<!-- app-store-qr:end -->
+</main>
+<!-- mobile-store-cta:start -->
+<div class="mobile-store-cta" data-mobile-store-cta hidden aria-hidden="true">
+<a class="mobile-store-cta__link" href="https://apps.apple.com/app/id6787754435?ct=iag_lp" rel="nofollow noopener" tabindex="-1">Tải TripBee: Kế Hoạch Du Lịch trên App Store</a>
+</div>
+<script src="/ios-app-guide/assets/mobile-store-cta-v1.js" defer></script>
+<!-- mobile-store-cta:end -->
+<!-- app-store-share:start -->
+<script src="/ios-app-guide/assets/app-store-share-v1.js" data-app-store-share="6787754435" defer></script>
+<!-- app-store-share:end -->
+</body>
+</html>

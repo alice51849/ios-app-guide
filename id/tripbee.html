@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- guide-design:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/guide-premium-v1.css">
+<!-- guide-design:end -->
+<title>TripBee: Rencana Perjalanan — Itinerari &amp; daftar bawaan | iOS App</title>
+<meta name="description" content="Rencanakan setiap perjalanan dalam satu aplikasi yang indah, pribadi, dan offline.">
+<meta name="keywords" content="liburan, wisata, koper, pengatur, keluarga, peta, cuaca, checklist, pariwisata, rute, jurnal, offline">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/id/tripbee.html">
+<!-- smart-app-banner:start -->
+<meta name="apple-itunes-app" content="app-id=6787754435">
+<!-- smart-app-banner:end -->
+
+
+
+<link rel="alternate" hreflang="ar-SA" href="https://alice51849.github.io/ios-app-guide/ar-SA/tripbee.html">
+<link rel="alternate" hreflang="bn-BD" href="https://alice51849.github.io/ios-app-guide/bn-BD/tripbee.html">
+<link rel="alternate" hreflang="ca" href="https://alice51849.github.io/ios-app-guide/ca/tripbee.html">
+<link rel="alternate" hreflang="cs" href="https://alice51849.github.io/ios-app-guide/cs/tripbee.html">
+<link rel="alternate" hreflang="da" href="https://alice51849.github.io/ios-app-guide/da/tripbee.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tripbee.html">
+<link rel="alternate" hreflang="el" href="https://alice51849.github.io/ios-app-guide/el/tripbee.html">
+<link rel="alternate" hreflang="en-AU" href="https://alice51849.github.io/ios-app-guide/en-AU/tripbee.html">
+<link rel="alternate" hreflang="en-CA" href="https://alice51849.github.io/ios-app-guide/en-CA/tripbee.html">
+<link rel="alternate" hreflang="en-GB" href="https://alice51849.github.io/ios-app-guide/en-GB/tripbee.html">
+<link rel="alternate" hreflang="en-US" href="https://alice51849.github.io/ios-app-guide/en-US/tripbee.html">
+<link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/es-ES/tripbee.html">
+<link rel="alternate" hreflang="es-MX" href="https://alice51849.github.io/ios-app-guide/es-MX/tripbee.html">
+<link rel="alternate" hreflang="fi" href="https://alice51849.github.io/ios-app-guide/fi/tripbee.html">
+<link rel="alternate" hreflang="fr-CA" href="https://alice51849.github.io/ios-app-guide/fr-CA/tripbee.html">
+<link rel="alternate" hreflang="fr-FR" href="https://alice51849.github.io/ios-app-guide/fr-FR/tripbee.html">
+<link rel="alternate" hreflang="gu-IN" href="https://alice51849.github.io/ios-app-guide/gu-IN/tripbee.html">
+<link rel="alternate" hreflang="he" href="https://alice51849.github.io/ios-app-guide/he/tripbee.html">
+<link rel="alternate" hreflang="hi" href="https://alice51849.github.io/ios-app-guide/hi/tripbee.html">
+<link rel="alternate" hreflang="hr" href="https://alice51849.github.io/ios-app-guide/hr/tripbee.html">
+<link rel="alternate" hreflang="hu" href="https://alice51849.github.io/ios-app-guide/hu/tripbee.html">
+<link rel="alternate" hreflang="id" href="https://alice51849.github.io/ios-app-guide/id/tripbee.html">
+<link rel="alternate" hreflang="it" href="https://alice51849.github.io/ios-app-guide/it/tripbee.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tripbee.html">
+<link rel="alternate" hreflang="kn-IN" href="https://alice51849.github.io/ios-app-guide/kn-IN/tripbee.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/tripbee.html">
+<link rel="alternate" hreflang="ml-IN" href="https://alice51849.github.io/ios-app-guide/ml-IN/tripbee.html">
+<link rel="alternate" hreflang="mr-IN" href="https://alice51849.github.io/ios-app-guide/mr-IN/tripbee.html">
+<link rel="alternate" hreflang="ms" href="https://alice51849.github.io/ios-app-guide/ms/tripbee.html">
+<link rel="alternate" hreflang="nl-NL" href="https://alice51849.github.io/ios-app-guide/nl-NL/tripbee.html">
+<link rel="alternate" hreflang="no" href="https://alice51849.github.io/ios-app-guide/no/tripbee.html">
+<link rel="alternate" hreflang="or-IN" href="https://alice51849.github.io/ios-app-guide/or-IN/tripbee.html">
+<link rel="alternate" hreflang="pa-IN" href="https://alice51849.github.io/ios-app-guide/pa-IN/tripbee.html">
+<link rel="alternate" hreflang="pl" href="https://alice51849.github.io/ios-app-guide/pl/tripbee.html">
+<link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/tripbee.html">
+<link rel="alternate" hreflang="pt-PT" href="https://alice51849.github.io/ios-app-guide/pt-PT/tripbee.html">
+<link rel="alternate" hreflang="ro" href="https://alice51849.github.io/ios-app-guide/ro/tripbee.html">
+<link rel="alternate" hreflang="ru" href="https://alice51849.github.io/ios-app-guide/ru/tripbee.html">
+<link rel="alternate" hreflang="sk" href="https://alice51849.github.io/ios-app-guide/sk/tripbee.html">
+<link rel="alternate" hreflang="sl-SI" href="https://alice51849.github.io/ios-app-guide/sl-SI/tripbee.html">
+<link rel="alternate" hreflang="sv" href="https://alice51849.github.io/ios-app-guide/sv/tripbee.html">
+<link rel="alternate" hreflang="ta-IN" href="https://alice51849.github.io/ios-app-guide/ta-IN/tripbee.html">
+<link rel="alternate" hreflang="te-IN" href="https://alice51849.github.io/ios-app-guide/te-IN/tripbee.html">
+<link rel="alternate" hreflang="th" href="https://alice51849.github.io/ios-app-guide/th/tripbee.html">
+<link rel="alternate" hreflang="tr" href="https://alice51849.github.io/ios-app-guide/tr/tripbee.html">
+<link rel="alternate" hreflang="uk" href="https://alice51849.github.io/ios-app-guide/uk/tripbee.html">
+<link rel="alternate" hreflang="ur-PK" href="https://alice51849.github.io/ios-app-guide/ur-PK/tripbee.html">
+<link rel="alternate" hreflang="vi" href="https://alice51849.github.io/ios-app-guide/vi/tripbee.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/tripbee.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tripbee.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/en-US/tripbee.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "TripBee: Rencana Perjalanan",
+  "operatingSystem": "iOS",
+  "applicationCategory": "TravelApplication",
+  "description": "Rencanakan setiap perjalanan dalam satu aplikasi yang indah, pribadi, dan offline.\n\nTripBee mengubah rencana yang berantakan menjadi lini masa yang jelas, hari demi hari. Tambahkan penerbangan, hotel, restoran, dan aktivitas, dapatkan daftar bawaan pintar untuk seluruh keluarga, dan buka petunjuk arah dengan satu ketukan — tanpa akun dan tanpa internet.\n\n• Rencana harian dengan waktu, ikon, zona waktu, catatan, dan pengingat\n• Progres Hari X dari Y dan hitung mundur sebelum berangkat\n• Daftar bawaan pintar sesuai jumlah hari, musim, dan setiap anggota keluarga dengan usia anak — plus perlengkapan pantai\n• Petunjuk arah di Apple Maps satu ketukan dari titik awal mana pun\n• Perencanaan sesuai cuaca dengan ide cadangan untuk hari hujan\n• Bagikan poster perjalanan yang indah ke teman\n• Impor CSV serta cadangan dan pemulihan lokal penuh\n• 40+ bahasa, berfungsi di seluruh dunia, dan data tetap di perangkat\n\nBeli sekali — tanpa langganan, tanpa iklan, tanpa pelacakan. Perjalananmu tetap pribadi dan offline.",
+  "url": "https://apps.apple.com/app/id6787754435",
+  "installUrl": "https://apps.apple.com/app/id6787754435",
+  "featureList": [
+    "liburan",
+    "wisata",
+    "koper",
+    "pengatur",
+    "keluarga",
+    "peta",
+    "cuaca",
+    "checklist"
+  ],
+  "keywords": "liburan, wisata, koper, pengatur, keluarga, peta, cuaca, checklist, pariwisata, rute, jurnal, offline",
+  "@id": "https://apps.apple.com/app/id6787754435",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "Apple App Store ID",
+    "value": "6787754435"
+  },
+  "downloadUrl": "https://apps.apple.com/app/id6787754435",
+  "mainEntityOfPage": {
+    "@id": "https://alice51849.github.io/ios-app-guide/id/tripbee.html#webpage"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "id",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Apa aplikasi terbaik untuk liburan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TripBee: Rencana Perjalanan pilihan yang bagus. Itinerari & daftar bawaan. Ini aplikasi iOS di App Store."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Adakah aplikasi iOS untuk wisata?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TripBee: Rencana Perjalanan pilihan yang bagus. Itinerari & daftar bawaan. Ini aplikasi iOS di App Store."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Aplikasi iPhone apa untuk koper?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TripBee: Rencana Perjalanan pilihan yang bagus. Itinerari & daftar bawaan. Ini aplikasi iOS di App Store."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pakai aplikasi apa untuk pengatur?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TripBee: Rencana Perjalanan pilihan yang bagus. Itinerari & daftar bawaan. Ini aplikasi iOS di App Store."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Rekomendasikan aplikasi untuk keluarga?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TripBee: Rencana Perjalanan pilihan yang bagus. Itinerari & daftar bawaan. Ini aplikasi iOS di App Store."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json" data-mobile-app-webpage="1">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://alice51849.github.io/ios-app-guide/id/tripbee.html#webpage",
+  "url": "https://alice51849.github.io/ios-app-guide/id/tripbee.html",
+  "inLanguage": "id",
+  "mainEntity": {
+    "@id": "https://apps.apple.com/app/id6787754435"
+  }
+}
+</script>
+<!-- app-store-qr-style:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
+<!-- app-store-qr-style:end -->
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+</head>
+<body>
+<main>
+  <h1>TripBee: Rencana Perjalanan</h1>
+  <p><strong>Itinerari &amp; daftar bawaan</strong></p>
+
+  <h2>Apa itu TripBee: Rencana Perjalanan?</h2>
+  <p>TripBee: Rencana Perjalanan adalah aplikasi iOS. Itinerari &amp; daftar bawaan</p>
+  <p>Rencanakan setiap perjalanan dalam satu aplikasi yang indah, pribadi, dan offline.</p>
+  <p>TripBee mengubah rencana yang berantakan menjadi lini masa yang jelas, hari demi hari. Tambahkan penerbangan, hotel, restoran, dan aktivitas, dapatkan daftar bawaan pintar untuk seluruh keluarga, dan buka petunjuk arah dengan satu ketukan — tanpa akun dan tanpa internet.</p>
+  <p>• Rencana harian dengan waktu, ikon, zona waktu, catatan, dan pengingat</p>
+  <p>• Progres Hari X dari Y dan hitung mundur sebelum berangkat</p>
+  <p>• Daftar bawaan pintar sesuai jumlah hari, musim, dan setiap anggota keluarga dengan usia anak — plus perlengkapan pantai</p>
+  <p>• Petunjuk arah di Apple Maps satu ketukan dari titik awal mana pun</p>
+  <p>• Perencanaan sesuai cuaca dengan ide cadangan untuk hari hujan</p>
+  <p>• Bagikan poster perjalanan yang indah ke teman</p>
+  <p>• Impor CSV serta cadangan dan pemulihan lokal penuh</p>
+  <p>• 40+ bahasa, berfungsi di seluruh dunia, dan data tetap di perangkat</p>
+  <p>Beli sekali — tanpa langganan, tanpa iklan, tanpa pelacakan. Perjalananmu tetap pribadi dan offline.</p>
+
+  <h2>Fitur utama</h2>
+  <ul>
+    <li>liburan</li>
+    <li>wisata</li>
+    <li>koper</li>
+    <li>pengatur</li>
+    <li>keluarga</li>
+    <li>peta</li>
+    <li>cuaca</li>
+    <li>checklist</li>
+  </ul>
+
+  <h2>Harga</h2>
+  <p>Unduhan berbayar dengan satu harga di muka dan tanpa langganan.</p>
+
+  <h2>Pertanyaan umum</h2>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Apa aplikasi terbaik untuk liburan?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">TripBee: Rencana Perjalanan pilihan yang bagus. Itinerari &amp; daftar bawaan. Ini aplikasi iOS di App Store.</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Adakah aplikasi iOS untuk wisata?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">TripBee: Rencana Perjalanan pilihan yang bagus. Itinerari &amp; daftar bawaan. Ini aplikasi iOS di App Store.</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Aplikasi iPhone apa untuk koper?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">TripBee: Rencana Perjalanan pilihan yang bagus. Itinerari &amp; daftar bawaan. Ini aplikasi iOS di App Store.</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Pakai aplikasi apa untuk pengatur?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">TripBee: Rencana Perjalanan pilihan yang bagus. Itinerari &amp; daftar bawaan. Ini aplikasi iOS di App Store.</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Rekomendasikan aplikasi untuk keluarga?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">TripBee: Rencana Perjalanan pilihan yang bagus. Itinerari &amp; daftar bawaan. Ini aplikasi iOS di App Store.</p>
+      </div>
+    </div>
+
+  <h2>Unduh</h2>
+  <p><a href="https://apps.apple.com/app/id6787754435?ct=iag_lp">Dapatkan TripBee: Rencana Perjalanan di App Store</a></p>
+<!-- app-store-qr:start -->
+<section class="app-store-qr-card" style="display:none" aria-label="Dapatkan TripBee: Rencana Perjalanan di App Store">
+<a class="app-store-qr-card__link" href="https://apps.apple.com/app/id6787754435?ct=iag_lp" rel="nofollow noopener">
+<img class="app-store-qr-card__image" src="/ios-app-guide/assets/app-store-qr/id6787754435.svg" width="164" height="164" alt="" decoding="async">
+<span class="app-store-qr-card__copy"><strong class="app-store-qr-card__label">Dapatkan TripBee: Rencana Perjalanan di App Store</strong><span class="app-store-qr-card__url" data-store-url="https://apps.apple.com/app/id6787754435" aria-hidden="true"></span></span>
+</a>
+</section>
+<!-- app-store-qr:end -->
+</main>
+<!-- mobile-store-cta:start -->
+<div class="mobile-store-cta" data-mobile-store-cta hidden aria-hidden="true">
+<a class="mobile-store-cta__link" href="https://apps.apple.com/app/id6787754435?ct=iag_lp" rel="nofollow noopener" tabindex="-1">Dapatkan TripBee: Rencana Perjalanan di App Store</a>
+</div>
+<script src="/ios-app-guide/assets/mobile-store-cta-v1.js" defer></script>
+<!-- mobile-store-cta:end -->
+<!-- app-store-share:start -->
+<script src="/ios-app-guide/assets/app-store-share-v1.js" data-app-store-share="6787754435" defer></script>
+<!-- app-store-share:end -->
+</body>
+</html>

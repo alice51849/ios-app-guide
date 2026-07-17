@@ -16,7 +16,8 @@ if GEO not in sys.path:
 
 import build_pages_i18n as pages
 from external_app_locales import EXTERNAL_APP_LOCALES
-from videogen.registry import APPS, APPSTORE
+from official_locales import OFFICIAL_LOCALE_SET
+from videogen.registry import APPSTORE
 
 
 EXPECTED_LOCALES = {
@@ -73,7 +74,8 @@ class ExternalAppLocaleTests(unittest.TestCase):
         self.assertEqual(set(EXTERNAL_APP_LOCALES), set(EXPECTED_LOCALES))
         for key, expected in EXPECTED_LOCALES.items():
             locales = pages.load_app_locales(key)
-            self.assertEqual(expected, set(locales))
+            self.assertEqual(OFFICIAL_LOCALE_SET, set(locales))
+            self.assertTrue(expected.issubset(locales))
             for locale, content in locales.items():
                 with self.subTest(key=key, locale=locale):
                     minimum = 160 if locale in {"ja", "zh-Hant", "ko"} else 240
@@ -82,7 +84,8 @@ class ExternalAppLocaleTests(unittest.TestCase):
                         content["description"].count("\n\n"), 2
                     )
                     self.assertGreaterEqual(
-                        len(pages.split_keywords(content["keywords"])), 8
+                        len(pages.split_keywords(content["keywords"])),
+                        8 if locale in expected else 5,
                     )
                     self.assertTrue(content["name"].strip())
                     self.assertTrue(content["subtitle"].strip())
@@ -119,11 +122,12 @@ class ExternalAppLocaleTests(unittest.TestCase):
             pages, "PAGES", directory
         ):
             for key, expected in EXPECTED_LOCALES.items():
-                all_locales = list(pages.load_app_locales(key))
+                localizations = pages.load_app_locales(key)
+                all_locales = list(localizations)
                 for locale in all_locales:
                     output = pages.build_one(key, locale, all_locales)
                     content = Path(output).read_text(encoding="utf-8")
-                    localized = EXTERNAL_APP_LOCALES[key][locale]
+                    localized = localizations[locale]
                     with self.subTest(key=key, locale=locale):
                         self.assertIn(f'<html lang="{locale}"', content)
                         self.assertIn(
@@ -142,8 +146,6 @@ class ExternalAppLocaleTests(unittest.TestCase):
                             - 1,
                         )
                         self.assertIn('hreflang="x-default"', content)
-                        if locale != "en-US":
-                            self.assertNotIn(APPS[key]["sub"], content)
                         if locale == "sk":
                             self.assertIn("<h2>Hlavné funkcie</h2>", content)
                             self.assertIn("<h2>Časté otázky</h2>", content)

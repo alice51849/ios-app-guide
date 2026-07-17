@@ -8,6 +8,7 @@
 """
 import hashlib
 import html
+import json
 import os
 import sys
 from pathlib import Path
@@ -19,6 +20,7 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
+from gen_mobile_app_identity import mobile_app_schema  # noqa: E402
 
 PAGES = os.path.join(HERE, "pages")
 STORIES = os.path.join(PAGES, "stories")
@@ -172,6 +174,14 @@ def story_html(key):
     make_poster(key, name, tagline, pal)
     url = appstore_url(key, "iag_story") or SITE
     canon = f"{SITE}/stories/{key}.html"
+    identity = mobile_app_schema(
+        APPSTORE[key],
+        name,
+        a.get("category", "utility"),
+        canon,
+    )
+    identity["description"] = tagline
+    identity_json = json.dumps(identity, ensure_ascii=False).replace("</", "<\\/")
     c1 = "#%02x%02x%02x" % pal[0]
     c2 = "#%02x%02x%02x" % pal[1]
 
@@ -228,6 +238,8 @@ def story_html(key):
 <link rel="canonical" href="{canon}">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <meta name="description" content="{e(name)} — {e(tagline)}">
+<meta name="apple-itunes-app" content="app-id={APPSTORE[key]}, app-argument={e(url)}">
+<script type="application/ld+json">{identity_json}</script>
 {AMP_BOILER}
 <style amp-custom>{css}</style>
 </head>

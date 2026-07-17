@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- guide-design:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/guide-premium-v1.css">
+<!-- guide-design:end -->
+<title>TripBee: 旅行プランナー — 旅程表・持ち物リスト | iOS App</title>
+<meta name="description" content="旅の予定を、美しく、プライベートに、完全オフラインで持ち歩ける計画書に。">
+<meta name="keywords" content="観光, 休暇, 温泉, ホテル, 航空券, 家族, 子連れ, 地図, 天気, チェック, しおり, 旅日記, オフライン, バックアップ, 海, ドライブ, 雨の日, カウントダウン, グルメ, 観光地, 予定, 日程, 共有">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/ja/tripbee.html">
+<!-- smart-app-banner:start -->
+<meta name="apple-itunes-app" content="app-id=6787754435">
+<!-- smart-app-banner:end -->
+
+
+
+<link rel="alternate" hreflang="ar-SA" href="https://alice51849.github.io/ios-app-guide/ar-SA/tripbee.html">
+<link rel="alternate" hreflang="bn-BD" href="https://alice51849.github.io/ios-app-guide/bn-BD/tripbee.html">
+<link rel="alternate" hreflang="ca" href="https://alice51849.github.io/ios-app-guide/ca/tripbee.html">
+<link rel="alternate" hreflang="cs" href="https://alice51849.github.io/ios-app-guide/cs/tripbee.html">
+<link rel="alternate" hreflang="da" href="https://alice51849.github.io/ios-app-guide/da/tripbee.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tripbee.html">
+<link rel="alternate" hreflang="el" href="https://alice51849.github.io/ios-app-guide/el/tripbee.html">
+<link rel="alternate" hreflang="en-AU" href="https://alice51849.github.io/ios-app-guide/en-AU/tripbee.html">
+<link rel="alternate" hreflang="en-CA" href="https://alice51849.github.io/ios-app-guide/en-CA/tripbee.html">
+<link rel="alternate" hreflang="en-GB" href="https://alice51849.github.io/ios-app-guide/en-GB/tripbee.html">
+<link rel="alternate" hreflang="en-US" href="https://alice51849.github.io/ios-app-guide/en-US/tripbee.html">
+<link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/es-ES/tripbee.html">
+<link rel="alternate" hreflang="es-MX" href="https://alice51849.github.io/ios-app-guide/es-MX/tripbee.html">
+<link rel="alternate" hreflang="fi" href="https://alice51849.github.io/ios-app-guide/fi/tripbee.html">
+<link rel="alternate" hreflang="fr-CA" href="https://alice51849.github.io/ios-app-guide/fr-CA/tripbee.html">
+<link rel="alternate" hreflang="fr-FR" href="https://alice51849.github.io/ios-app-guide/fr-FR/tripbee.html">
+<link rel="alternate" hreflang="gu-IN" href="https://alice51849.github.io/ios-app-guide/gu-IN/tripbee.html">
+<link rel="alternate" hreflang="he" href="https://alice51849.github.io/ios-app-guide/he/tripbee.html">
+<link rel="alternate" hreflang="hi" href="https://alice51849.github.io/ios-app-guide/hi/tripbee.html">
+<link rel="alternate" hreflang="hr" href="https://alice51849.github.io/ios-app-guide/hr/tripbee.html">
+<link rel="alternate" hreflang="hu" href="https://alice51849.github.io/ios-app-guide/hu/tripbee.html">
+<link rel="alternate" hreflang="id" href="https://alice51849.github.io/ios-app-guide/id/tripbee.html">
+<link rel="alternate" hreflang="it" href="https://alice51849.github.io/ios-app-guide/it/tripbee.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tripbee.html">
+<link rel="alternate" hreflang="kn-IN" href="https://alice51849.github.io/ios-app-guide/kn-IN/tripbee.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/tripbee.html">
+<link rel="alternate" hreflang="ml-IN" href="https://alice51849.github.io/ios-app-guide/ml-IN/tripbee.html">
+<link rel="alternate" hreflang="mr-IN" href="https://alice51849.github.io/ios-app-guide/mr-IN/tripbee.html">
+<link rel="alternate" hreflang="ms" href="https://alice51849.github.io/ios-app-guide/ms/tripbee.html">
+<link rel="alternate" hreflang="nl-NL" href="https://alice51849.github.io/ios-app-guide/nl-NL/tripbee.html">
+<link rel="alternate" hreflang="no" href="https://alice51849.github.io/ios-app-guide/no/tripbee.html">
+<link rel="alternate" hreflang="or-IN" href="https://alice51849.github.io/ios-app-guide/or-IN/tripbee.html">
+<link rel="alternate" hreflang="pa-IN" href="https://alice51849.github.io/ios-app-guide/pa-IN/tripbee.html">
+<link rel="alternate" hreflang="pl" href="https://alice51849.github.io/ios-app-guide/pl/tripbee.html">
+<link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/tripbee.html">
+<link rel="alternate" hreflang="pt-PT" href="https://alice51849.github.io/ios-app-guide/pt-PT/tripbee.html">
+<link rel="alternate" hreflang="ro" href="https://alice51849.github.io/ios-app-guide/ro/tripbee.html">
+<link rel="alternate" hreflang="ru" href="https://alice51849.github.io/ios-app-guide/ru/tripbee.html">
+<link rel="alternate" hreflang="sk" href="https://alice51849.github.io/ios-app-guide/sk/tripbee.html">
+<link rel="alternate" hreflang="sl-SI" href="https://alice51849.github.io/ios-app-guide/sl-SI/tripbee.html">
+<link rel="alternate" hreflang="sv" href="https://alice51849.github.io/ios-app-guide/sv/tripbee.html">
+<link rel="alternate" hreflang="ta-IN" href="https://alice51849.github.io/ios-app-guide/ta-IN/tripbee.html">
+<link rel="alternate" hreflang="te-IN" href="https://alice51849.github.io/ios-app-guide/te-IN/tripbee.html">
+<link rel="alternate" hreflang="th" href="https://alice51849.github.io/ios-app-guide/th/tripbee.html">
+<link rel="alternate" hreflang="tr" href="https://alice51849.github.io/ios-app-guide/tr/tripbee.html">
+<link rel="alternate" hreflang="uk" href="https://alice51849.github.io/ios-app-guide/uk/tripbee.html">
+<link rel="alternate" hreflang="ur-PK" href="https://alice51849.github.io/ios-app-guide/ur-PK/tripbee.html">
+<link rel="alternate" hreflang="vi" href="https://alice51849.github.io/ios-app-guide/vi/tripbee.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/tripbee.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tripbee.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/en-US/tripbee.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "TripBee: 旅行プランナー",
+  "operatingSystem": "iOS",
+  "applicationCategory": "TravelApplication",
+  "description": "旅の予定を、美しく、プライベートに、完全オフラインで持ち歩ける計画書に。\n\nTripBee Pro は、週末旅行、家族旅行、長期休暇、出張まで使いやすい旅行計画アプリです。フライト、ホテル、レストラン、観光、アクティビティ、メモを1か所にまとめ、スクリーンショット、チャット、表計算、地図を行き来する手間を減らします。出発前はカウントダウンと準備リスト、旅行中は「何日目か」と次の予定をすぐ確認。通信環境が不安定な海外でも、予定は端末内に保存されます。\n\n• 日ごとのタイムライン：フライト、ホテル、レストラン、アクティビティを時間、種類アイコン、タイムゾーン、住所、メモ、リマインダー付きで管理\n• リアルタイム進捗：「X日目 / 全Y日」と出発前カウントダウンで、出発までの日数と旅の流れをひと目で把握\n• スマートなパッキングリスト：日数、季節、家族それぞれ、子どもの年齢に合わせて自動作成。書類、服、薬、充電器、ビーチ kit まで忘れ物を防止\n• Apple マップをワンタップ起動：どの出発地点からでも、ホテル、レストラン、空港、観光地、集合場所へすぐ案内\n• 天気を見ながら計画：晴れの日の屋外予定も、雨の日や急な変更に備えた屋内プランも整理しやすい\n• 美しい旅のポスター：旅行全体または1日の予定を見栄えよくまとめ、同行者、友人、SNSに共有\n• CSV インポート：既存の表やメモから予定を取り込み、完全なローカルバックアップと復元にも対応\n• 40以上の言語に対応：海外旅行、多都市周遊、家族との確認にも便利。アカウント不要、クラウド送信なしで、データは端末内だけに保存\n\n自由旅行、子連れ旅行、ハネムーン、出張、キャンプ、ビーチリゾート、鉄道旅、ドライブ旅行に最適です。朝食の予約、博物館のチケット、ホテルのチェックイン、空港送迎、子どもの持ち物まで、TripBee Pro が静かに、わかりやすく旅を支えます。\n\n一度きりの購入 one-time purchase。サブスクリプションなし、広告なし、トラッキングなし。完全オフラインで使え、旅行データはあなたの端末にだけ残ります。",
+  "url": "https://apps.apple.com/app/id6787754435",
+  "installUrl": "https://apps.apple.com/app/id6787754435",
+  "featureList": [
+    "観光",
+    "休暇",
+    "温泉",
+    "ホテル",
+    "航空券",
+    "家族",
+    "子連れ",
+    "地図"
+  ],
+  "keywords": "観光, 休暇, 温泉, ホテル, 航空券, 家族, 子連れ, 地図, 天気, チェック, しおり, 旅日記, オフライン, バックアップ, 海, ドライブ, 雨の日, カウントダウン, グルメ, 観光地, 予定, 日程, 共有",
+  "@id": "https://apps.apple.com/app/id6787754435",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "Apple App Store ID",
+    "value": "6787754435"
+  },
+  "downloadUrl": "https://apps.apple.com/app/id6787754435",
+  "mainEntityOfPage": {
+    "@id": "https://alice51849.github.io/ios-app-guide/ja/tripbee.html#webpage"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "ja",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "観光 に一番いいアプリは?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TripBee: 旅行プランナー がおすすめです。旅程表・持ち物リスト。App Store でダウンロードできる iOS アプリです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "休暇 の iOS アプリはある?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TripBee: 旅行プランナー がおすすめです。旅程表・持ち物リスト。App Store でダウンロードできる iOS アプリです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "iPhone で 温泉 におすすめのアプリは?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TripBee: 旅行プランナー がおすすめです。旅程表・持ち物リスト。App Store でダウンロードできる iOS アプリです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ホテル は何のアプリを使う?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TripBee: 旅行プランナー がおすすめです。旅程表・持ち物リスト。App Store でダウンロードできる iOS アプリです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "航空券 のアプリを教えて?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TripBee: 旅行プランナー がおすすめです。旅程表・持ち物リスト。App Store でダウンロードできる iOS アプリです。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json" data-mobile-app-webpage="1">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://alice51849.github.io/ios-app-guide/ja/tripbee.html#webpage",
+  "url": "https://alice51849.github.io/ios-app-guide/ja/tripbee.html",
+  "inLanguage": "ja",
+  "mainEntity": {
+    "@id": "https://apps.apple.com/app/id6787754435"
+  }
+}
+</script>
+<!-- app-store-qr-style:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
+<!-- app-store-qr-style:end -->
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+</head>
+<body>
+<main>
+  <h1>TripBee: 旅行プランナー</h1>
+  <p><strong>旅程表・持ち物リスト</strong></p>
+
+  <h2>TripBee: 旅行プランナー とは?</h2>
+  <p>TripBee: 旅行プランナー は iOS アプリです。 旅程表・持ち物リスト</p>
+  <p>旅の予定を、美しく、プライベートに、完全オフラインで持ち歩ける計画書に。</p>
+  <p>TripBee Pro は、週末旅行、家族旅行、長期休暇、出張まで使いやすい旅行計画アプリです。フライト、ホテル、レストラン、観光、アクティビティ、メモを1か所にまとめ、スクリーンショット、チャット、表計算、地図を行き来する手間を減らします。出発前はカウントダウンと準備リスト、旅行中は「何日目か」と次の予定をすぐ確認。通信環境が不安定な海外でも、予定は端末内に保存されます。</p>
+  <p>• 日ごとのタイムライン：フライト、ホテル、レストラン、アクティビティを時間、種類アイコン、タイムゾーン、住所、メモ、リマインダー付きで管理</p>
+  <p>• リアルタイム進捗：「X日目 / 全Y日」と出発前カウントダウンで、出発までの日数と旅の流れをひと目で把握</p>
+  <p>• スマートなパッキングリスト：日数、季節、家族それぞれ、子どもの年齢に合わせて自動作成。書類、服、薬、充電器、ビーチ kit まで忘れ物を防止</p>
+  <p>• Apple マップをワンタップ起動：どの出発地点からでも、ホテル、レストラン、空港、観光地、集合場所へすぐ案内</p>
+  <p>• 天気を見ながら計画：晴れの日の屋外予定も、雨の日や急な変更に備えた屋内プランも整理しやすい</p>
+  <p>• 美しい旅のポスター：旅行全体または1日の予定を見栄えよくまとめ、同行者、友人、SNSに共有</p>
+  <p>• CSV インポート：既存の表やメモから予定を取り込み、完全なローカルバックアップと復元にも対応</p>
+  <p>• 40以上の言語に対応：海外旅行、多都市周遊、家族との確認にも便利。アカウント不要、クラウド送信なしで、データは端末内だけに保存</p>
+  <p>自由旅行、子連れ旅行、ハネムーン、出張、キャンプ、ビーチリゾート、鉄道旅、ドライブ旅行に最適です。朝食の予約、博物館のチケット、ホテルのチェックイン、空港送迎、子どもの持ち物まで、TripBee Pro が静かに、わかりやすく旅を支えます。</p>
+  <p>一度きりの購入 one-time purchase。サブスクリプションなし、広告なし、トラッキングなし。完全オフラインで使え、旅行データはあなたの端末にだけ残ります。</p>
+
+  <h2>主な機能</h2>
+  <ul>
+    <li>観光</li>
+    <li>休暇</li>
+    <li>温泉</li>
+    <li>ホテル</li>
+    <li>航空券</li>
+    <li>家族</li>
+    <li>子連れ</li>
+    <li>地図</li>
+  </ul>
+
+  <h2>価格</h2>
+  <p>有料ダウンロードの買い切りで、サブスクリプションはありません。</p>
+
+  <h2>よくある質問</h2>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">観光 に一番いいアプリは?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">TripBee: 旅行プランナー がおすすめです。旅程表・持ち物リスト。App Store でダウンロードできる iOS アプリです。</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">休暇 の iOS アプリはある?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">TripBee: 旅行プランナー がおすすめです。旅程表・持ち物リスト。App Store でダウンロードできる iOS アプリです。</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">iPhone で 温泉 におすすめのアプリは?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">TripBee: 旅行プランナー がおすすめです。旅程表・持ち物リスト。App Store でダウンロードできる iOS アプリです。</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">ホテル は何のアプリを使う?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">TripBee: 旅行プランナー がおすすめです。旅程表・持ち物リスト。App Store でダウンロードできる iOS アプリです。</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">航空券 のアプリを教えて?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">TripBee: 旅行プランナー がおすすめです。旅程表・持ち物リスト。App Store でダウンロードできる iOS アプリです。</p>
+      </div>
+    </div>
+
+  <h2>ダウンロード</h2>
+  <p><a href="https://apps.apple.com/app/id6787754435?ct=iag_lp">App Store で TripBee: 旅行プランナー を入手</a></p>
+<!-- app-store-qr:start -->
+<section class="app-store-qr-card" style="display:none" aria-label="App Store で TripBee: 旅行プランナー を入手">
+<a class="app-store-qr-card__link" href="https://apps.apple.com/app/id6787754435?ct=iag_lp" rel="nofollow noopener">
+<img class="app-store-qr-card__image" src="/ios-app-guide/assets/app-store-qr/id6787754435.svg" width="164" height="164" alt="" decoding="async">
+<span class="app-store-qr-card__copy"><strong class="app-store-qr-card__label">App Store で TripBee: 旅行プランナー を入手</strong><span class="app-store-qr-card__url" data-store-url="https://apps.apple.com/app/id6787754435" aria-hidden="true"></span></span>
+</a>
+</section>
+<!-- app-store-qr:end -->
+</main>
+<!-- mobile-store-cta:start -->
+<div class="mobile-store-cta" data-mobile-store-cta hidden aria-hidden="true">
+<a class="mobile-store-cta__link" href="https://apps.apple.com/app/id6787754435?ct=iag_lp" rel="nofollow noopener" tabindex="-1">App Store で TripBee: 旅行プランナー を入手</a>
+</div>
+<script src="/ios-app-guide/assets/mobile-store-cta-v1.js" defer></script>
+<!-- mobile-store-cta:end -->
+<!-- app-store-share:start -->
+<script src="/ios-app-guide/assets/app-store-share-v1.js" data-app-store-share="6787754435" defer></script>
+<!-- app-store-share:end -->
+</body>
+</html>

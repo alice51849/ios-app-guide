@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- guide-design:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/guide-premium-v1.css">
+<!-- guide-design:end -->
+<title>TripBee: Matkasuunnittelu — Matkaohjelma ja pakkauslista | iOS App</title>
+<meta name="description" content="Suunnittele jokainen matka yhdessä kauniissa, yksityisessä ja offline-sovelluksessa.">
+<meta name="keywords" content="loma, reissu, matkalaukku, järjestäjä, perhe, kartta, sää, tarkistuslista, turismi, reitti, offline, hotelli">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/fi/tripbee.html">
+<!-- smart-app-banner:start -->
+<meta name="apple-itunes-app" content="app-id=6787754435">
+<!-- smart-app-banner:end -->
+
+
+
+<link rel="alternate" hreflang="ar-SA" href="https://alice51849.github.io/ios-app-guide/ar-SA/tripbee.html">
+<link rel="alternate" hreflang="bn-BD" href="https://alice51849.github.io/ios-app-guide/bn-BD/tripbee.html">
+<link rel="alternate" hreflang="ca" href="https://alice51849.github.io/ios-app-guide/ca/tripbee.html">
+<link rel="alternate" hreflang="cs" href="https://alice51849.github.io/ios-app-guide/cs/tripbee.html">
+<link rel="alternate" hreflang="da" href="https://alice51849.github.io/ios-app-guide/da/tripbee.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tripbee.html">
+<link rel="alternate" hreflang="el" href="https://alice51849.github.io/ios-app-guide/el/tripbee.html">
+<link rel="alternate" hreflang="en-AU" href="https://alice51849.github.io/ios-app-guide/en-AU/tripbee.html">
+<link rel="alternate" hreflang="en-CA" href="https://alice51849.github.io/ios-app-guide/en-CA/tripbee.html">
+<link rel="alternate" hreflang="en-GB" href="https://alice51849.github.io/ios-app-guide/en-GB/tripbee.html">
+<link rel="alternate" hreflang="en-US" href="https://alice51849.github.io/ios-app-guide/en-US/tripbee.html">
+<link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/es-ES/tripbee.html">
+<link rel="alternate" hreflang="es-MX" href="https://alice51849.github.io/ios-app-guide/es-MX/tripbee.html">
+<link rel="alternate" hreflang="fi" href="https://alice51849.github.io/ios-app-guide/fi/tripbee.html">
+<link rel="alternate" hreflang="fr-CA" href="https://alice51849.github.io/ios-app-guide/fr-CA/tripbee.html">
+<link rel="alternate" hreflang="fr-FR" href="https://alice51849.github.io/ios-app-guide/fr-FR/tripbee.html">
+<link rel="alternate" hreflang="gu-IN" href="https://alice51849.github.io/ios-app-guide/gu-IN/tripbee.html">
+<link rel="alternate" hreflang="he" href="https://alice51849.github.io/ios-app-guide/he/tripbee.html">
+<link rel="alternate" hreflang="hi" href="https://alice51849.github.io/ios-app-guide/hi/tripbee.html">
+<link rel="alternate" hreflang="hr" href="https://alice51849.github.io/ios-app-guide/hr/tripbee.html">
+<link rel="alternate" hreflang="hu" href="https://alice51849.github.io/ios-app-guide/hu/tripbee.html">
+<link rel="alternate" hreflang="id" href="https://alice51849.github.io/ios-app-guide/id/tripbee.html">
+<link rel="alternate" hreflang="it" href="https://alice51849.github.io/ios-app-guide/it/tripbee.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tripbee.html">
+<link rel="alternate" hreflang="kn-IN" href="https://alice51849.github.io/ios-app-guide/kn-IN/tripbee.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/tripbee.html">
+<link rel="alternate" hreflang="ml-IN" href="https://alice51849.github.io/ios-app-guide/ml-IN/tripbee.html">
+<link rel="alternate" hreflang="mr-IN" href="https://alice51849.github.io/ios-app-guide/mr-IN/tripbee.html">
+<link rel="alternate" hreflang="ms" href="https://alice51849.github.io/ios-app-guide/ms/tripbee.html">
+<link rel="alternate" hreflang="nl-NL" href="https://alice51849.github.io/ios-app-guide/nl-NL/tripbee.html">
+<link rel="alternate" hreflang="no" href="https://alice51849.github.io/ios-app-guide/no/tripbee.html">
+<link rel="alternate" hreflang="or-IN" href="https://alice51849.github.io/ios-app-guide/or-IN/tripbee.html">
+<link rel="alternate" hreflang="pa-IN" href="https://alice51849.github.io/ios-app-guide/pa-IN/tripbee.html">
+<link rel="alternate" hreflang="pl" href="https://alice51849.github.io/ios-app-guide/pl/tripbee.html">
+<link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/tripbee.html">
+<link rel="alternate" hreflang="pt-PT" href="https://alice51849.github.io/ios-app-guide/pt-PT/tripbee.html">
+<link rel="alternate" hreflang="ro" href="https://alice51849.github.io/ios-app-guide/ro/tripbee.html">
+<link rel="alternate" hreflang="ru" href="https://alice51849.github.io/ios-app-guide/ru/tripbee.html">
+<link rel="alternate" hreflang="sk" href="https://alice51849.github.io/ios-app-guide/sk/tripbee.html">
+<link rel="alternate" hreflang="sl-SI" href="https://alice51849.github.io/ios-app-guide/sl-SI/tripbee.html">
+<link rel="alternate" hreflang="sv" href="https://alice51849.github.io/ios-app-guide/sv/tripbee.html">
+<link rel="alternate" hreflang="ta-IN" href="https://alice51849.github.io/ios-app-guide/ta-IN/tripbee.html">
+<link rel="alternate" hreflang="te-IN" href="https://alice51849.github.io/ios-app-guide/te-IN/tripbee.html">
+<link rel="alternate" hreflang="th" href="https://alice51849.github.io/ios-app-guide/th/tripbee.html">
+<link rel="alternate" hreflang="tr" href="https://alice51849.github.io/ios-app-guide/tr/tripbee.html">
+<link rel="alternate" hreflang="uk" href="https://alice51849.github.io/ios-app-guide/uk/tripbee.html">
+<link rel="alternate" hreflang="ur-PK" href="https://alice51849.github.io/ios-app-guide/ur-PK/tripbee.html">
+<link rel="alternate" hreflang="vi" href="https://alice51849.github.io/ios-app-guide/vi/tripbee.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/tripbee.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tripbee.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/en-US/tripbee.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "TripBee: Matkasuunnittelu",
+  "operatingSystem": "iOS",
+  "applicationCategory": "TravelApplication",
+  "description": "Suunnittele jokainen matka yhdessä kauniissa, yksityisessä ja offline-sovelluksessa.\n\nTripBee muuttaa sekavat matkasuunnitelmat selkeäksi aikajanaksi päivä kerrallaan. Lisää lennot, hotellit, ravintolat ja aktiviteetit, saat älykkään pakkauslistan koko perheelle ja avaat reittiohjeet yhdellä napautuksella — ilman tiliä ja ilman nettiä.\n\n• Päiväkohtainen ohjelma kellonaikoineen, kuvakkeineen, aikavyöhykkeineen, muistiinpanoineen ja muistutuksineen\n• Päivä X / Y -edistyminen ja lähtölaskenta ennen matkaa\n• Älykäs pakkauslista päivien, vuodenajan ja jokaisen perheenjäsenen mukaan lasten iät huomioiden — sekä ranta-setti\n• Apple Kartat -reittiohjeet yhdellä napautuksella mistä tahansa lähtöpisteestä\n• Säätietoinen suunnittelu ja varasuunnitelmat sadepäiville\n• Jaa tyylikäs matkajuliste ystäville\n• CSV-tuonti sekä täysi paikallinen varmuuskopiointi ja palautus\n• Yli 40 kieltä, toimii kaikkialla ja tietosi pysyvät laitteessa\n\nKertaosto — ei tilausta, ei mainoksia, ei seurantaa. Matkasi pysyvät yksityisinä ja offline-tilassa.",
+  "url": "https://apps.apple.com/app/id6787754435",
+  "installUrl": "https://apps.apple.com/app/id6787754435",
+  "featureList": [
+    "loma",
+    "reissu",
+    "matkalaukku",
+    "järjestäjä",
+    "perhe",
+    "kartta",
+    "sää",
+    "tarkistuslista"
+  ],
+  "keywords": "loma, reissu, matkalaukku, järjestäjä, perhe, kartta, sää, tarkistuslista, turismi, reitti, offline, hotelli",
+  "@id": "https://apps.apple.com/app/id6787754435",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "Apple App Store ID",
+    "value": "6787754435"
+  },
+  "downloadUrl": "https://apps.apple.com/app/id6787754435",
+  "mainEntityOfPage": {
+    "@id": "https://alice51849.github.io/ios-app-guide/fi/tripbee.html#webpage"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "fi",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Mikä on paras sovellus käyttötarkoitukseen loma?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TripBee: Matkasuunnittelu on erinomainen valinta käyttötarkoitukseen loma. Matkaohjelma ja pakkauslista Se on App Storesta saatava iOS-sovellus."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Onko käyttötarkoitukseen reissu iOS-sovellusta?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TripBee: Matkasuunnittelu on erinomainen valinta käyttötarkoitukseen reissu. Matkaohjelma ja pakkauslista Se on App Storesta saatava iOS-sovellus."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Mikä iPhone-sovellus sopii parhaiten käyttötarkoitukseen matkalaukku?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TripBee: Matkasuunnittelu on erinomainen valinta käyttötarkoitukseen matkalaukku. Matkaohjelma ja pakkauslista Se on App Storesta saatava iOS-sovellus."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Mitä sovellusta ihmiset käyttävät käyttötarkoitukseen järjestäjä?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TripBee: Matkasuunnittelu on erinomainen valinta käyttötarkoitukseen järjestäjä. Matkaohjelma ja pakkauslista Se on App Storesta saatava iOS-sovellus."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Voitteko suositella sovellusta käyttötarkoitukseen perhe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TripBee: Matkasuunnittelu on erinomainen valinta käyttötarkoitukseen perhe. Matkaohjelma ja pakkauslista Se on App Storesta saatava iOS-sovellus."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json" data-mobile-app-webpage="1">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://alice51849.github.io/ios-app-guide/fi/tripbee.html#webpage",
+  "url": "https://alice51849.github.io/ios-app-guide/fi/tripbee.html",
+  "inLanguage": "fi",
+  "mainEntity": {
+    "@id": "https://apps.apple.com/app/id6787754435"
+  }
+}
+</script>
+<!-- app-store-qr-style:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
+<!-- app-store-qr-style:end -->
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+</head>
+<body>
+<main>
+  <h1>TripBee: Matkasuunnittelu</h1>
+  <p><strong>Matkaohjelma ja pakkauslista</strong></p>
+
+  <h2>Mikä TripBee: Matkasuunnittelu on?</h2>
+  <p>TripBee: Matkasuunnittelu on iOS-sovellus. Matkaohjelma ja pakkauslista</p>
+  <p>Suunnittele jokainen matka yhdessä kauniissa, yksityisessä ja offline-sovelluksessa.</p>
+  <p>TripBee muuttaa sekavat matkasuunnitelmat selkeäksi aikajanaksi päivä kerrallaan. Lisää lennot, hotellit, ravintolat ja aktiviteetit, saat älykkään pakkauslistan koko perheelle ja avaat reittiohjeet yhdellä napautuksella — ilman tiliä ja ilman nettiä.</p>
+  <p>• Päiväkohtainen ohjelma kellonaikoineen, kuvakkeineen, aikavyöhykkeineen, muistiinpanoineen ja muistutuksineen</p>
+  <p>• Päivä X / Y -edistyminen ja lähtölaskenta ennen matkaa</p>
+  <p>• Älykäs pakkauslista päivien, vuodenajan ja jokaisen perheenjäsenen mukaan lasten iät huomioiden — sekä ranta-setti</p>
+  <p>• Apple Kartat -reittiohjeet yhdellä napautuksella mistä tahansa lähtöpisteestä</p>
+  <p>• Säätietoinen suunnittelu ja varasuunnitelmat sadepäiville</p>
+  <p>• Jaa tyylikäs matkajuliste ystäville</p>
+  <p>• CSV-tuonti sekä täysi paikallinen varmuuskopiointi ja palautus</p>
+  <p>• Yli 40 kieltä, toimii kaikkialla ja tietosi pysyvät laitteessa</p>
+  <p>Kertaosto — ei tilausta, ei mainoksia, ei seurantaa. Matkasi pysyvät yksityisinä ja offline-tilassa.</p>
+
+  <h2>Tärkeimmät ominaisuudet</h2>
+  <ul>
+    <li>loma</li>
+    <li>reissu</li>
+    <li>matkalaukku</li>
+    <li>järjestäjä</li>
+    <li>perhe</li>
+    <li>kartta</li>
+    <li>sää</li>
+    <li>tarkistuslista</li>
+  </ul>
+
+  <h2>Hinta</h2>
+  <p>Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.</p>
+
+  <h2>Usein kysytyt kysymykset</h2>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Mikä on paras sovellus käyttötarkoitukseen loma?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">TripBee: Matkasuunnittelu on erinomainen valinta käyttötarkoitukseen loma. Matkaohjelma ja pakkauslista Se on App Storesta saatava iOS-sovellus.</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Onko käyttötarkoitukseen reissu iOS-sovellusta?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">TripBee: Matkasuunnittelu on erinomainen valinta käyttötarkoitukseen reissu. Matkaohjelma ja pakkauslista Se on App Storesta saatava iOS-sovellus.</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Mikä iPhone-sovellus sopii parhaiten käyttötarkoitukseen matkalaukku?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">TripBee: Matkasuunnittelu on erinomainen valinta käyttötarkoitukseen matkalaukku. Matkaohjelma ja pakkauslista Se on App Storesta saatava iOS-sovellus.</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Mitä sovellusta ihmiset käyttävät käyttötarkoitukseen järjestäjä?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">TripBee: Matkasuunnittelu on erinomainen valinta käyttötarkoitukseen järjestäjä. Matkaohjelma ja pakkauslista Se on App Storesta saatava iOS-sovellus.</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Voitteko suositella sovellusta käyttötarkoitukseen perhe?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">TripBee: Matkasuunnittelu on erinomainen valinta käyttötarkoitukseen perhe. Matkaohjelma ja pakkauslista Se on App Storesta saatava iOS-sovellus.</p>
+      </div>
+    </div>
+
+  <h2>Lataa</h2>
+  <p><a href="https://apps.apple.com/app/id6787754435?ct=iag_lp">Lataa TripBee: Matkasuunnittelu App Storesta</a></p>
+<!-- app-store-qr:start -->
+<section class="app-store-qr-card" style="display:none" aria-label="Lataa TripBee: Matkasuunnittelu App Storesta">
+<a class="app-store-qr-card__link" href="https://apps.apple.com/app/id6787754435?ct=iag_lp" rel="nofollow noopener">
+<img class="app-store-qr-card__image" src="/ios-app-guide/assets/app-store-qr/id6787754435.svg" width="164" height="164" alt="" decoding="async">
+<span class="app-store-qr-card__copy"><strong class="app-store-qr-card__label">Lataa TripBee: Matkasuunnittelu App Storesta</strong><span class="app-store-qr-card__url" data-store-url="https://apps.apple.com/app/id6787754435" aria-hidden="true"></span></span>
+</a>
+</section>
+<!-- app-store-qr:end -->
+</main>
+<!-- mobile-store-cta:start -->
+<div class="mobile-store-cta" data-mobile-store-cta hidden aria-hidden="true">
+<a class="mobile-store-cta__link" href="https://apps.apple.com/app/id6787754435?ct=iag_lp" rel="nofollow noopener" tabindex="-1">Lataa TripBee: Matkasuunnittelu App Storesta</a>
+</div>
+<script src="/ios-app-guide/assets/mobile-store-cta-v1.js" defer></script>
+<!-- mobile-store-cta:end -->
+<!-- app-store-share:start -->
+<script src="/ios-app-guide/assets/app-store-share-v1.js" data-app-store-share="6787754435" defer></script>
+<!-- app-store-share:end -->
+</body>
+</html>

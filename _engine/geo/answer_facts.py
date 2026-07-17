@@ -681,8 +681,12 @@ def _resume_facts(q: str, name: str, spec_key: str) -> dict[str, Any]:
     label = f"{s['aka']} {s['doc']}"
     p1 = (f"A {label} follows local hiring conventions: {s['rule']}. Typical length is {s['len']}. "
           f"Photo: {s['photo']}. Matching these expectations matters as much as the content.")
-    p2 = (f"{name} helps you build to the right structure on your iPhone, keep the layout ATS-readable, "
-          f"and export a clean PDF without a watermark. Tailor the wording to each job before you send it.")
+    p2 = (
+        f"{name}'s current App Store listing describes an on-device 0–100 ATS estimate "
+        "and free resume building and preview. A one-time purchase unlocks watermark-free "
+        "PDF and editable DOCX export. Tailor the wording manually, follow the employer's "
+        "file instructions, and treat the score as an editing estimate rather than a result prediction."
+    )
     return {
         "meta_description": f"How to build a {label} on iPhone: format, length ({s['len']}) and photo rules, with {name}."[:200],
         "lead": f"A {label} has its own format rules — {name} helps you match them and export a clean PDF.",
@@ -691,22 +695,30 @@ def _resume_facts(q: str, name: str, spec_key: str) -> dict[str, Any]:
             f"Correct format for a {label}: {s['rule']}.",
             f"Length: {s['len']}.",
             f"Photo: {s['photo']}.",
-            "ATS-readable layout (single column, standard fonts, no text in images).",
-            "Clean PDF export with no watermark; tailor keywords to each job posting.",
+            "Simple reading order, familiar headings, and no important text stored only in images.",
+            "Watermark-free PDF and editable DOCX export require the one-time unlock.",
         ],
         "decision_steps": [
             f"Pick a {label}-appropriate template.",
             "Fill in reverse-chronological experience with measurable results.",
             f"Apply the local photo rule ({s['photo'].split(' —')[0].split(' -')[0]}).",
-            "Mirror keywords from the target job description for ATS.",
-            "Export as PDF and check it opens cleanly on desktop.",
+            "Add only relevant terms that truthfully describe your experience.",
+            "Follow the employer's file instructions and inspect the exact export.",
         ],
-        "where_app_fits": (f"{name} is a strong fit when you need a {label} that looks right for the local market "
-                           f"and still passes automated screening."),
+        "where_app_fits": (
+            f"{name} can help you build a {label} and run an on-device ATS preflight estimate. "
+            "Employer systems vary, so the estimate cannot guarantee parsing, ranking, an interview, or an offer."
+        ),
         "faq": [
             {"q": f"Does a {label} need a photo?", "a": s["photo"] + "."},
             {"q": f"How long should a {label} be?", "a": f"Usually {s['len']}."},
-            {"q": "Will it pass ATS?", "a": f"{name} keeps the layout machine-readable; still tailor the keywords to each posting for the best match."},
+            {
+                "q": "Will it pass ATS?",
+                "a": (
+                    "No app can guarantee that. Follow the employer's instructions, keep the "
+                    "structure simple, and use the estimate only to prioritize manual edits."
+                ),
+            },
         ],
     }
 
@@ -721,11 +733,21 @@ def _resume_faq_facts(q: str, name: str) -> dict[str, Any] | None:
             "lead": lead,
             "short_answer_paragraphs": [
                 detail,
-                f"{name} helps you apply this on your iPhone: it keeps the layout ATS-readable, exports a clean PDF with no watermark, and lets you tailor each version to the job. Always adapt to the specific role and country.",
+                (
+                    f"{name}'s current App Store listing describes an on-device 0–100 ATS "
+                    "estimate, free resume building and preview, and a one-time unlock for "
+                    "watermark-free PDF and editable DOCX export. It requires no account, "
+                    "upload or subscription. Always adapt the resume manually to the role, "
+                    "country and employer instructions."
+                ),
             ],
             "what_to_look_for": look,
             "decision_steps": steps,
-            "where_app_fits": f"{name} is a strong fit when you want a resume that follows best practice and still passes automated screening.",
+            "where_app_fits": (
+                f"{name} can provide an on-device resume preflight and editing workflow. "
+                "Its ATS score is an estimate and cannot guarantee parsing, ranking, an "
+                "interview or an offer."
+            ),
             "faq": qa,
         }
 
@@ -752,16 +774,75 @@ def _resume_faq_facts(q: str, name: str) -> dict[str, Any] | None:
              {"q": "Why no photo in the US?", "a": "Anti-discrimination norms mean recruiters prefer resumes without photos."},
              {"q": "What if I apply abroad?", "a": "Follow the convention of the country where the role is based."}])
     if ("ats" in q) and ("what is" in q or "how" in q or "friendly" in q or "pass" in q or "beat" in q):
-        return faq(
-            "An ATS (Applicant Tracking System) scans and ranks resumes before a human sees them; to pass it, use a simple single-column layout, standard headings and fonts, and keywords from the job posting.",
-            "An Applicant Tracking System parses your resume into fields and ranks it against the job description, and most large employers use one. To stay readable, use a single-column layout, standard section headings (Experience, Education, Skills), common fonts, and no text inside images or tables. Then mirror the exact keywords from the posting so the system scores you as a strong match.",
-            ["Single-column, simple layout.", "Standard headings and fonts.",
-             "No text in images, columns or text boxes.", "Keywords mirrored from the job posting.", "Submit as PDF unless Word is requested."],
-            ["Start from a clean single-column template.", "Use standard section headings.",
-             f"Write it in {name} to keep it machine-readable.", "Mirror keywords from the posting.", "Export and test it parses cleanly."],
-            [{"q": "What is an ATS?", "a": "Software that scans, parses and ranks resumes before a recruiter reviews them."},
-             {"q": "How do I make my resume ATS-friendly?", "a": "Single column, standard headings/fonts, no text-in-images, and keywords from the job posting."},
-             {"q": "Does formatting matter?", "a": "Yes — complex layouts, tables and images can break ATS parsing."}])
+        result = faq(
+            (
+                "An ATS helps employers store and search applications, but systems and "
+                "configurations differ. Use a score as a preflight estimate, not a pass prediction."
+            ),
+            (
+                "UConn explains that an ATS does not automatically reject candidates and "
+                "recommends following the employer's file instructions, using simple consistent "
+                "formatting, and avoiding important information in headers, footers, tables or "
+                "graphics. It also recommends weaving relevant terms from the posting into the "
+                "resume where they accurately describe your qualifications. These steps can "
+                "reduce avoidable issues, but they cannot reproduce a specific employer's setup."
+            ),
+            [
+                "Follow the employer's requested file type first.",
+                "Use familiar headings and a simple, consistent reading order.",
+                "Keep important details out of graphics, headers, footers and text boxes.",
+                "Use only truthful, relevant terms from the job posting.",
+                "Inspect the exact exported file before submitting.",
+            ],
+            [
+                "Read the application instructions.",
+                "Check contact details and standard section headings.",
+                "Compare the posting manually and keep every claim truthful.",
+                "Reopen the export and verify selectable text and section order.",
+                "Use any score to prioritize edits, not to predict an outcome.",
+            ],
+            [
+                {
+                    "q": "Does an ATS automatically reject my resume?",
+                    "a": (
+                        "UConn says an ATS does not automatically reject candidates. "
+                        "Employers use different workflows and configurations."
+                    ),
+                },
+                {
+                    "q": "How do I make a resume easier to process?",
+                    "a": (
+                        "Follow the employer's file instructions, use familiar headings and "
+                        "a simple reading order, and keep every job-related term truthful."
+                    ),
+                },
+                {
+                    "q": "Does formatting guarantee a pass?",
+                    "a": (
+                        "No. Simple formatting may reduce avoidable parsing problems, but no "
+                        "format or score guarantees parsing, ranking, an interview or an offer."
+                    ),
+                },
+            ],
+        )
+        result["page_title"] = (
+            "Build an ATS-Conscious Resume on iPhone Without a Subscription"
+        )
+        result["meta_description"] = (
+            "Use an ATS score as a resume preflight estimate, follow employer file "
+            "instructions, and check CV Desk's current on-device features and pricing."
+        )
+        result["sources"] = [
+            {
+                "title": "UConn Center for Career Readiness: Applicant Tracking Systems",
+                "url": "https://career.uconn.edu/applicant-tracking-systems/",
+            },
+            {
+                "title": "CV Desk on the App Store",
+                "url": "https://apps.apple.com/app/id6781337213",
+            },
+        ]
+        return result
     if ("gap" in q) and ("resume" in q or "cv" in q or "employment" in q or "work" in q):
         return faq(
             "Explain an employment gap briefly and honestly — add a short 'Career Break' entry noting what you did (caregiving, study, travel) rather than hiding it.",

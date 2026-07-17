@@ -16,6 +16,12 @@ MAXN = 4
 STOP = set("a an the and or of to in for on at by as it this that these those you your with how do i my is are can app apps for iphone ios free best what when should choose vs".split())
 SEC_RE = re.compile(r'<section class="wrap related-answers">.*?</section>', re.S)
 RELATED_OVERRIDES = {
+    "app-to-check-my-resume-ats-score": (
+        "what-is-an-ats-and-how-to-make-a-resume-ats-friendly",
+        "should-i-send-my-resume-as-pdf-or-word",
+        "how-to-make-an-ats-friendly-resume-on-iphone-without-a-subscription",
+        "app-to-export-my-cv-as-a-clean-pdf",
+    ),
     "how-to-build-an-aesthetic-weekly-reset-checklist-on-iphone": (
         "how-to-make-a-daily-planning-routine-you-actually-enjoy-and-stick-to",
         "best-aesthetic-to-do-list-app-iphone-no-subscription",

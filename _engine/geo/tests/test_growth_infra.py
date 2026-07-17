@@ -18047,6 +18047,109 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn('"@type": "HowTo"', page)
         self.assertIn("does not automatically clear", page)
 
+    def test_cvdesk_ats_score_preflight_is_truthful_and_indexable(self):
+        items = json.loads(
+            (
+                Path(GEO) / "deep_items" / "cvdesk.json"
+            ).read_text(encoding="utf-8")
+        )
+        question = "app to check my resume ats score"
+        item = next(entry for entry in items if entry["query"] == question)
+        serialized = json.dumps(item, ensure_ascii=False).lower()
+
+        self.assertIn("estimate, not a verdict", serialized)
+        self.assertIn(
+            "cannot guarantee parsing, ranking, an interview or an offer",
+            serialized,
+        )
+        self.assertIn("build and preview for free", serialized)
+        self.assertIn("one-time purchase", serialized)
+        self.assertIn("no account, upload or subscription", serialized)
+        self.assertNotIn("paste a job description", serialized)
+        self.assertNotIn("missing keywords", serialized)
+        self.assertNotIn("job-match", serialized)
+        self.assertIn(question, queries.ALL["cvdesk"])
+
+        source_urls = {source["url"] for source in item["sources"]}
+        self.assertIn(
+            "https://career.uconn.edu/applicant-tracking-systems/",
+            source_urls,
+        )
+        self.assertIn(
+            "https://www.dol.gov/agencies/vets/programs/tap/teams-workshops/resume-essentials",
+            source_urls,
+        )
+        self.assertIn("https://apps.apple.com/app/id6781337213", source_urls)
+
+        expected_related = (
+            "what-is-an-ats-and-how-to-make-a-resume-ats-friendly",
+            "should-i-send-my-resume-as-pdf-or-word",
+            "how-to-make-an-ats-friendly-resume-on-iphone-without-a-subscription",
+            "app-to-export-my-cv-as-a-clean-pdf",
+        )
+        slug = "app-to-check-my-resume-ats-score"
+        self.assertEqual(
+            expected_related,
+            add_related_answers.RELATED_OVERRIDES[slug],
+        )
+        pages = {slug: {"app": "6781337213"}}
+        pages.update(
+            {
+                sibling: {"app": "6781337213"}
+                for sibling in expected_related
+            }
+        )
+        self.assertEqual(
+            list(expected_related),
+            add_related_answers.related_slugs(
+                slug,
+                pages[slug],
+                pages,
+                {"6781337213": list(pages)},
+            ),
+        )
+
+        facts = answer_deep.deep_facts(question, "cvdesk", "CV Desk")
+        self.assertIsNotNone(facts)
+        self.assertIn(
+            "estimate, not a verdict",
+            json.dumps(facts, ensure_ascii=False).lower(),
+        )
+        content = aeo_answers.default_content(question, "cvdesk")
+        self.assertEqual("", content["primary_resource_url"])
+        page = aeo_answers.render_page(question, "cvdesk", content)
+        self.assertIn(
+            "https://apps.apple.com/app/id6781337213?ct=iag_ans",
+            page,
+        )
+        self.assertIn('"@type": "HowTo"', page)
+        self.assertIn("UConn Center for Career Readiness", page)
+        self.assertNotIn("Paste a job description", page)
+
+        ats_friendly_question = (
+            "how to make an ats-friendly resume on iphone without a subscription"
+        )
+        ats_friendly = aeo_answers.default_content(
+            ats_friendly_question,
+            "cvdesk",
+        )
+        ats_friendly_text = json.dumps(
+            ats_friendly,
+            ensure_ascii=False,
+        ).lower()
+        self.assertIn("does not automatically reject", ats_friendly_text)
+        self.assertIn("preflight estimate, not a pass prediction", ats_friendly_text)
+        self.assertIn("free resume building and preview", ats_friendly_text)
+        self.assertIn("one-time unlock", ats_friendly_text)
+        self.assertNotIn("to pass it", ats_friendly_text)
+        self.assertNotIn("still passes automated screening", ats_friendly_text)
+        self.assertNotIn("test it parses cleanly", ats_friendly_text)
+        self.assertEqual("", ats_friendly["primary_resource_label"])
+        self.assertIn(
+            "https://career.uconn.edu/applicant-tracking-systems/",
+            {source["url"] for source in ats_friendly["sources"]},
+        )
+
     def test_multilingual_pricing_copy_uses_accurate_profiles(self):
         self.assertIn(
             "一次性購買",

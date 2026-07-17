@@ -259,12 +259,24 @@ def _app_store_ids(value: Any) -> set[str]:
         for item in value:
             ids.update(_app_store_ids(item))
         return ids
+    if isinstance(value, dict):
+        ids: set[str] = set()
+        for item in value.values():
+            ids.update(_app_store_ids(item))
+        return ids
     return set()
 
 
 def _node_app_store_ids(node: dict[str, Any]) -> set[str]:
     ids: set[str] = set()
-    for field in ("@id", "url", "installUrl", "downloadUrl", "sameAs"):
+    for field in (
+        "@id",
+        "url",
+        "installUrl",
+        "downloadUrl",
+        "sameAs",
+        "potentialAction",
+    ):
         ids.update(_app_store_ids(node.get(field)))
     return ids
 
@@ -303,6 +315,49 @@ def _same_as(value: Any, app_id: str) -> str | list[str] | None:
             result.append(item)
     if not result:
         return None
+    return result[0] if len(result) == 1 else result
+
+
+def _canonical_install_target(value: Any, store_url: str) -> Any:
+    if not isinstance(value, dict):
+        return store_url
+    target = dict(value)
+    if "urlTemplate" in target:
+        target["urlTemplate"] = store_url
+    elif "url" in target:
+        target["url"] = store_url
+    else:
+        target["urlTemplate"] = store_url
+    return target
+
+
+def _install_action(value: Any, app_id: str) -> dict[str, Any] | list[Any]:
+    store_url = canonical_store_url(app_id)
+    canonical = {"@type": "InstallAction", "target": store_url}
+    if value is None:
+        return canonical
+    actions = value if isinstance(value, list) else [value]
+    result: list[Any] = []
+    found = False
+    for action in actions:
+        matching_install = (
+            isinstance(action, dict)
+            and "InstallAction" in _schema_types(action)
+            and app_id in _app_store_ids(action.get("target"))
+        )
+        if not matching_install:
+            result.append(action)
+            continue
+        if found:
+            continue
+        updated = dict(action)
+        updated["target"] = _canonical_install_target(
+            action.get("target"), store_url
+        )
+        result.append(updated)
+        found = True
+    if not found:
+        result.append(canonical)
     return result[0] if len(result) == 1 else result
 
 
@@ -357,6 +412,9 @@ def _upgrade_node(
     node["url"] = store_url
     node["installUrl"] = store_url
     node["downloadUrl"] = store_url
+    node["potentialAction"] = _install_action(
+        node.get("potentialAction"), app_id
+    )
     page_reference = {"@id": f"{page_url}#webpage"}
     if relation == "mainEntity":
         node["mainEntityOfPage"] = page_reference
@@ -396,6 +454,10 @@ def mobile_app_schema(
         "url": canonical_store_url(app_id),
         "installUrl": canonical_store_url(app_id),
         "downloadUrl": canonical_store_url(app_id),
+        "potentialAction": {
+            "@type": "InstallAction",
+            "target": canonical_store_url(app_id),
+        },
     }
     if page_url is not None:
         schema["mainEntityOfPage"] = {
@@ -540,10 +602,28 @@ def ensure_mobile_identity(
             f"{len(matching_nodes)}"
         )
     if len(webpage_nodes) > 1:
-        raise ValueError(
-            f"Duplicate WebPage identities in {path}: "
-            f"{len(webpage_nodes)}"
-        )
+        page_id = f"{page_url}#webpage"
+        for webpage in webpage_nodes:
+            existing_id = webpage.get("@id")
+            existing_url = webpage.get("url")
+            identity_matches = (
+                existing_id in {None, page_url, page_id}
+                or (
+                    isinstance(existing_id, str)
+                    and _same_logical_page(existing_id, page_url, site)
+                )
+            )
+            url_matches = (
+                existing_url in {None, page_url}
+                or (
+                    isinstance(existing_url, str)
+                    and _same_logical_page(existing_url, page_url, site)
+                )
+            )
+            if not identity_matches or not url_matches:
+                raise ValueError(
+                    f"Conflicting WebPage identities in {path}"
+                )
 
     inserted = not matching_nodes
     changed_nodes: set[int] = set()

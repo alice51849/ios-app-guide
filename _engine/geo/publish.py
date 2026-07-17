@@ -196,6 +196,7 @@ def main():
     require([PY, os.path.join(HERE, "gen_social_previews.py")], env=env)
     require([PY, os.path.join(HERE, "gen_smart_app_banners.py")], env=env)
     require([PY, os.path.join(HERE, "gen_mobile_app_identity.py")], env=env)
+    require([PY, os.path.join(HERE, "gen_webmcp_install_tools.py")], env=env)
     require([PY, os.path.join(HERE, "portfolio_app_catalog_api.py")], env=env)
     require([PY, os.path.join(HERE, "gen_mobile_store_ctas.py")], env=env)
     require([PY, os.path.join(HERE, "gen_app_store_qr_ctas.py")], env=env)

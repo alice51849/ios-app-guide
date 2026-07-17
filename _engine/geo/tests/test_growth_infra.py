@@ -20016,6 +20016,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_social_previews.py",
             "gen_smart_app_banners.py",
             "gen_mobile_app_identity.py",
+            "gen_webmcp_install_tools.py",
             "portfolio_app_catalog_api.py",
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",
@@ -20059,6 +20060,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(3, workflow.count("gen_webstories_i18n.py"))
         self.assertEqual(3, workflow.count("validate_webstories.py"))
         self.assertEqual(3, workflow.count("gen_mobile_app_identity.py"))
+        self.assertEqual(3, workflow.count("gen_webmcp_install_tools.py"))
         final_cleanup_block = workflow.split(
             "- name: Final link and availability cleanup", 1
         )[1].split("- name: Commit localized pages if any", 1)[0]
@@ -20069,6 +20071,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_social_previews.py",
             "gen_smart_app_banners.py",
             "gen_mobile_app_identity.py",
+            "gen_webmcp_install_tools.py",
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",
@@ -20093,6 +20096,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_social_previews.py",
             "gen_smart_app_banners.py",
             "gen_mobile_app_identity.py",
+            "gen_webmcp_install_tools.py",
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",
@@ -20187,6 +20191,10 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertLess(
             publish.index("gen_mobile_app_identity.py"),
+            publish.index("gen_webmcp_install_tools.py"),
+        )
+        self.assertLess(
+            publish.index("gen_webmcp_install_tools.py"),
             publish.index("portfolio_app_catalog_api.py"),
         )
         self.assertLess(
@@ -20234,6 +20242,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("gen_social_previews.py", publish)
         self.assertIn("gen_smart_app_banners.py", publish)
         self.assertIn("gen_mobile_app_identity.py", publish)
+        self.assertIn("gen_webmcp_install_tools.py", publish)
         self.assertIn("gen_mobile_store_ctas.py", publish)
         self.assertIn("gen_app_store_qr_ctas.py", publish)
         self.assertIn("gen_app_store_share_ctas.py", publish)
@@ -20302,6 +20311,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_social_previews.py",
             "gen_smart_app_banners.py",
             "gen_mobile_app_identity.py",
+            "gen_webmcp_install_tools.py",
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",

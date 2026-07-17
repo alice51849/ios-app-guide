@@ -65,12 +65,66 @@ LOCALE_STOREFRONTS = {
     "zh-Hans": "cn",
     "zh-Hant": "tw",
 }
+FREE_LABELS = {
+    "ar-SA": "مجاني",
+    "bn-BD": "বিনামূল্যে",
+    "ca": "Gratis",
+    "cs": "Zdarma",
+    "da": "Gratis",
+    "de-DE": "Kostenlos",
+    "el": "Δωρεάν",
+    "en-AU": "Free",
+    "en-CA": "Free",
+    "en-GB": "Free",
+    "en-US": "Free",
+    "es-ES": "Gratis",
+    "es-MX": "Gratis",
+    "fi": "Ilmainen",
+    "fr-CA": "Gratuit",
+    "fr-FR": "Gratuit",
+    "gu-IN": "મફત",
+    "he": "בחינם",
+    "hi": "मुफ़्त",
+    "hr": "Besplatno",
+    "hu": "Ingyenes",
+    "id": "Gratis",
+    "it": "Gratis",
+    "ja": "無料",
+    "kn-IN": "ಉಚಿತ",
+    "ko": "무료",
+    "ml-IN": "സൗജന്യം",
+    "mr-IN": "मोफत",
+    "ms": "Percuma",
+    "nl-NL": "Gratis",
+    "no": "Gratis",
+    "or-IN": "ମାଗଣା",
+    "pa-IN": "ਮੁਫ਼ਤ",
+    "pl": "Bezpłatnie",
+    "pt-BR": "Grátis",
+    "pt-PT": "Grátis",
+    "ro": "Gratuit",
+    "ru": "Бесплатно",
+    "sk": "Zadarmo",
+    "sl-SI": "Brezplačno",
+    "sv": "Gratis",
+    "ta-IN": "இலவசம்",
+    "te-IN": "ఉచితం",
+    "th": "ฟรี",
+    "tr": "Ücretsiz",
+    "uk": "Безкоштовно",
+    "ur-PK": "مفت",
+    "vi": "Miễn phí",
+    "zh-Hans": "免费",
+    "zh-Hant": "免費",
+}
 APP_STORE_URL_RE = re.compile(
     r"https://apps\.apple\.com/app/id(?P<app_id>\d{9,12})"
 )
 
 if set(LOCALE_STOREFRONTS) != OFFICIAL_LOCALE_SET:
     raise RuntimeError("App Store storefront mapping must cover 50 official locales")
+if set(FREE_LABELS) != OFFICIAL_LOCALE_SET:
+    raise RuntimeError("Free labels must cover 50 official locales")
 
 
 def localized_app_store_url(value: str, locale: str) -> str:
@@ -167,6 +221,19 @@ def load_storefront_details(
             valid[str(app_id)] = record
         result[country] = valid
     return result
+
+
+def localized_storefront_detail(
+    detail: dict[str, object],
+    locale: str,
+) -> dict[str, object]:
+    """Use native copy for zero-price listings without altering Apple amounts."""
+    if locale not in OFFICIAL_LOCALE_SET:
+        raise ValueError(f"Unsupported App Store locale: {locale!r}")
+    localized = dict(detail)
+    if localized.get("price") == "0":
+        localized["formatted_price"] = FREE_LABELS[locale]
+    return localized
 
 
 def verified_app_store_url(

@@ -13,6 +13,7 @@ from app_store_storefronts import (
     LOCALE_STOREFRONTS,
     load_storefront_availability,
     load_storefront_details,
+    localized_storefront_detail,
     verified_app_store_url,
 )
 from appstore_live import live_app_keys
@@ -373,6 +374,7 @@ def generate(
                 detail is not None
                 and app_id in availability.get(country, frozenset())
             ):
+                detail = localized_storefront_detail(detail, locale)
                 payload["storefront_facts"] = detail
                 storefront_facts += 1
                 rated += int("rating_value" in detail)

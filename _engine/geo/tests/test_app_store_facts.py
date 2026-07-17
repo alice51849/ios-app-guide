@@ -75,6 +75,36 @@ def _state(
 
 
 class AppStoreFactsTests(unittest.TestCase):
+    def test_zero_price_labels_cover_every_official_locale(self):
+        self.assertEqual(
+            set(OFFICIAL_LOCALES),
+            set(app_store_storefronts.FREE_LABELS),
+        )
+        raw = {
+            "price": "0",
+            "currency": "CAD",
+            "formatted_price": "Free",
+        }
+        self.assertEqual(
+            "Gratuit",
+            app_store_storefronts.localized_storefront_detail(
+                raw,
+                "fr-CA",
+            )["formatted_price"],
+        )
+        paid = {
+            "price": "6.99",
+            "currency": "CAD",
+            "formatted_price": "$6.99",
+        }
+        self.assertEqual(
+            paid,
+            app_store_storefronts.localized_storefront_detail(
+                paid,
+                "fr-CA",
+            ),
+        )
+
     def test_generate_adds_visible_facts_and_matching_schema(self):
         key = "lumibopomofo"
         app_id = str(APPSTORE[key])
@@ -221,6 +251,12 @@ class AppStoreFactsTests(unittest.TestCase):
                 if detail is None:
                     self.assertNotIn(facts.FACT_START, source)
                     continue
+                detail = (
+                    app_store_storefronts.localized_storefront_detail(
+                        detail,
+                        locale,
+                    )
+                )
                 checked += 1
                 with self.subTest(locale=locale, app=key):
                     self.assertEqual(1, source.count(facts.FACT_START))

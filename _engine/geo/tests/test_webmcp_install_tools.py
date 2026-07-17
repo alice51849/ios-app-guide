@@ -78,7 +78,7 @@ class WebMcpInstallToolsTests(unittest.TestCase):
                                 app_id: {
                                     "price": "0",
                                     "currency": "EUR",
-                                    "formatted_price": "Gratuit",
+                                    "formatted_price": "Free",
                                 }
                             },
                         },
@@ -135,6 +135,10 @@ class WebMcpInstallToolsTests(unittest.TestCase):
                 self.assertEqual(
                     "USD" if locale == "en-US" else "EUR",
                     payload["storefront_facts"]["currency"],
+                )
+                self.assertEqual(
+                    "Free" if locale == "en-US" else "Gratuit",
+                    payload["storefront_facts"]["formatted_price"],
                 )
             asset = (
                 pages / "assets" / tools.ASSET_NAME

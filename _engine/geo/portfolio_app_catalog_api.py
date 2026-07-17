@@ -21,6 +21,7 @@ from app_store_storefronts import (  # noqa: E402
     LOCALE_STOREFRONTS,
     load_storefront_details,
     localized_app_store_url,
+    localized_storefront_detail,
 )
 import build_pages_i18n  # noqa: E402
 from family_travel_dataset import write_text_if_changed  # noqa: E402
@@ -331,7 +332,7 @@ def localized_record(
         str(record["app_store_id"])
     )
     if detail is not None:
-        storefront_facts = dict(detail)
+        storefront_facts = localized_storefront_detail(detail, locale)
         storefront_facts["storefront_url"] = localized_app_store_url(
             "https://apps.apple.com/app/"
             f"id{record['app_store_id']}",

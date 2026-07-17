@@ -14,6 +14,7 @@ from app_store_storefronts import (
     LOCALE_STOREFRONTS,
     load_storefront_availability,
     load_storefront_details,
+    localized_storefront_detail,
     verified_app_store_url,
 )
 from appstore_live import live_app_keys
@@ -331,6 +332,7 @@ def generate(
             if app_id in availability.get(country, frozenset()):
                 detail = details.get(country, {}).get(app_id)
             if detail is not None:
+                detail = localized_storefront_detail(detail, locale)
                 if store_url == canonical_store:
                     raise ValueError(
                         f"Verified facts require a storefront URL: "

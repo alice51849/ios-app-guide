@@ -648,6 +648,9 @@ def build_llms(comp_map, live_keys):
               f"- Linkset sitemap: {SITE}/sitemap_linkset.xml",
               "", "## Social preview and oEmbed discovery",
               f"- oEmbed endpoint sitemap: {SITE}/sitemap_oembed.xml",
+              "- Every live app has localized Open Graph, X Card, and "
+              "oEmbed discovery in all 50 App Store locales; each oEmbed "
+              "response includes an attributable App Store link.",
               "", "## Sitemaps",
               f"- {SITE}/sitemap.xml", f"- {SITE}/sitemap_alternatives.xml",
               f"- {SITE}/sitemap_answers.xml",
@@ -722,6 +725,11 @@ def build_llms_full(comp_map, live_keys):
         ("High-intent answers", "answers/index.html"),
         ("Comparison pages", "alternatives/index.html"),
         ("Visual stories", "stories/index.html"),
+        (
+            "50-locale Open Graph, X Card, and oEmbed endpoints "
+            "with App Store links",
+            "sitemap_oembed.xml",
+        ),
         ("Open data", "data/index.html"),
         ("Open static APIs", "api/index.html"),
         (

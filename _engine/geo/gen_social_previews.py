@@ -25,6 +25,7 @@ sys.path.insert(0, str(HERE))
 
 from appstore_live import live_app_keys  # noqa: E402
 import gen_linkset  # noqa: E402
+from official_locales import OFFICIAL_LOCALES  # noqa: E402
 from videogen.registry import APPSTORE  # noqa: E402
 
 
@@ -35,6 +36,58 @@ SITE = os.environ.get(
 CARD_SIZE = (1200, 675)
 POSTER_SIZE = (450, 600)
 SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
+OPEN_GRAPH_LOCALES = {
+    "ar-SA": "ar_SA",
+    "bn-BD": "bn_BD",
+    "ca": "ca_ES",
+    "cs": "cs_CZ",
+    "da": "da_DK",
+    "de-DE": "de_DE",
+    "el": "el_GR",
+    "en-AU": "en_AU",
+    "en-CA": "en_CA",
+    "en-GB": "en_GB",
+    "en-US": "en_US",
+    "es-ES": "es_ES",
+    "es-MX": "es_MX",
+    "fi": "fi_FI",
+    "fr-CA": "fr_CA",
+    "fr-FR": "fr_FR",
+    "gu-IN": "gu_IN",
+    "he": "he_IL",
+    "hi": "hi_IN",
+    "hr": "hr_HR",
+    "hu": "hu_HU",
+    "id": "id_ID",
+    "it": "it_IT",
+    "ja": "ja_JP",
+    "kn-IN": "kn_IN",
+    "ko": "ko_KR",
+    "ml-IN": "ml_IN",
+    "mr-IN": "mr_IN",
+    "ms": "ms_MY",
+    "nl-NL": "nl_NL",
+    "no": "no_NO",
+    "or-IN": "or_IN",
+    "pa-IN": "pa_IN",
+    "pl": "pl_PL",
+    "pt-BR": "pt_BR",
+    "pt-PT": "pt_PT",
+    "ro": "ro_RO",
+    "ru": "ru_RU",
+    "sk": "sk_SK",
+    "sl-SI": "sl_SI",
+    "sv": "sv_SE",
+    "ta-IN": "ta_IN",
+    "te-IN": "te_IN",
+    "th": "th_TH",
+    "tr": "tr_TR",
+    "uk": "uk_UA",
+    "ur-PK": "ur_PK",
+    "vi": "vi_VN",
+    "zh-Hans": "zh_CN",
+    "zh-Hant": "zh_TW",
+}
 ROBOTS_DIRECTIVE = (
     "index,follow,max-image-preview:large,"
     "max-snippet:-1,max-video-preview:-1"
@@ -191,22 +244,83 @@ def render_card(poster_path: Path) -> bytes:
     return output.getvalue()
 
 
-def oembed_url(key: str, canonical: str, site: str = SITE) -> str:
+def _campaign_store_url(store_url: str, campaign: str) -> str:
+    parsed = urllib.parse.urlparse(store_url)
+    if (
+        parsed.scheme != "https"
+        or parsed.netloc != "apps.apple.com"
+        or not re.fullmatch(r"/app/id\d+", parsed.path)
+        or not re.fullmatch(r"[a-z0-9_]{1,30}", campaign)
+    ):
+        raise ValueError(
+            f"Invalid App Store campaign target: {store_url} / {campaign}"
+        )
+    return urllib.parse.urlunparse(
+        parsed._replace(
+            query=urllib.parse.urlencode({"ct": campaign}),
+            fragment="",
+        )
+    )
+
+
+def _oembed_campaign(locale: str) -> str:
+    return f"iag_oembed_{locale.replace('-', '_').lower()}"
+
+
+def _open_graph_locale(locale: str) -> str:
+    try:
+        value = OPEN_GRAPH_LOCALES[locale]
+    except KeyError as error:
+        raise ValueError(f"Unsupported Open Graph locale: {locale}") from error
+    if not re.fullmatch(r"[a-z]{2,3}_[A-Z]{2}", value):
+        raise ValueError(f"Invalid Open Graph locale mapping: {locale}={value}")
+    return value
+
+
+def oembed_relative_path(key: str, locale: str | None = None) -> str:
+    if locale is None:
+        return f"oembed/{key}.json"
+    if locale not in OFFICIAL_LOCALES:
+        raise ValueError(f"Unsupported localized oEmbed locale: {locale}")
+    return f"oembed/{locale}/{key}.json"
+
+
+def oembed_url(
+    key: str,
+    canonical: str,
+    site: str = SITE,
+    locale: str | None = None,
+) -> str:
     query = urllib.parse.urlencode({"url": canonical, "format": "json"})
-    return f"{site}/oembed/{key}.json?{query}"
+    return f"{site}/{oembed_relative_path(key, locale)}?{query}"
 
 
-def oembed_document(title: str, image_url: str, site: str = SITE) -> dict[str, object]:
+def oembed_document(
+    title: str,
+    image_url: str,
+    canonical: str,
+    store_url: str,
+    locale: str,
+    site: str = SITE,
+) -> dict[str, object]:
     return {
         "version": "1.0",
         "type": "link",
         "title": title,
+        "author_name": "Lumi Studio",
+        "author_url": f"{site}/about.html",
         "provider_name": "iOS App Guide",
         "provider_url": f"{site}/index.html",
         "cache_age": 86400,
         "thumbnail_url": image_url,
         "thumbnail_width": CARD_SIZE[0],
         "thumbnail_height": CARD_SIZE[1],
+        "_lumi_locale": locale,
+        "_lumi_guide_url": canonical,
+        "_lumi_app_store_url": _campaign_store_url(
+            store_url,
+            _oembed_campaign(locale),
+        ),
     }
 
 
@@ -216,6 +330,7 @@ def primary_image_schema(
     canonical: str,
     image_url: str,
     image_alt: str,
+    locale: str,
 ) -> dict[str, object]:
     return {
         "@context": "https://schema.org",
@@ -224,7 +339,7 @@ def primary_image_schema(
         "url": canonical,
         "name": title,
         "description": description,
-        "inLanguage": "en",
+        "inLanguage": locale,
         "primaryImageOfPage": {
             "@type": "ImageObject",
             "@id": f"{image_url}#primaryimage",
@@ -246,16 +361,7 @@ def _json_ld(document: dict[str, object]) -> str:
 
 
 def _hero_store_url(store_url: str) -> str:
-    parsed = urllib.parse.urlparse(store_url)
-    if (
-        parsed.scheme != "https"
-        or parsed.netloc != "apps.apple.com"
-        or not re.fullmatch(r"/app/id\d+", parsed.path)
-    ):
-        raise ValueError(f"Invalid App Store hero target: {store_url}")
-    return urllib.parse.urlunparse(
-        parsed._replace(query=urllib.parse.urlencode({"ct": "iag_hero"}), fragment="")
-    )
+    return _campaign_store_url(store_url, "iag_hero")
 
 
 def hero_block(
@@ -296,12 +402,21 @@ def metadata_block(
     canonical: str,
     app_name: str,
     site: str = SITE,
+    *,
+    locale: str = "en-US",
+    endpoint_locale: str | None = None,
+    image_alt: str | None = None,
 ) -> str:
     image_url = f"{site}/social/img/{key}-share.jpg"
-    embed_url = oembed_url(key, canonical, site)
-    image_alt = f"{app_name} iOS app guide preview"
+    embed_url = oembed_url(key, canonical, site, endpoint_locale)
+    image_alt = image_alt or f"{app_name} iOS app guide preview"
     schema = primary_image_schema(
-        title, description, canonical, image_url, image_alt
+        title,
+        description,
+        canonical,
+        image_url,
+        image_alt,
+        locale,
     )
     esc = lambda value: html.escape(str(value), quote=True)
     lines = [
@@ -316,7 +431,7 @@ def metadata_block(
         f'<meta property="og:image:height" content="{CARD_SIZE[1]}">',
         f'<meta property="og:image:alt" content="{esc(image_alt)}">',
         f'<meta property="og:description" content="{esc(description)}">',
-        '<meta property="og:locale" content="en_US">',
+        f'<meta property="og:locale" content="{esc(_open_graph_locale(locale))}">',
         '<meta property="og:site_name" content="iOS App Guide">',
         f'<meta name="robots" content="{ROBOTS_DIRECTIVE}">',
         '<script type="application/ld+json" data-iag="primary-image">',
@@ -369,20 +484,45 @@ def ensure_guide(path: Path, metadata: str, hero: str) -> bool:
     return _write_text_if_changed(path, updated)
 
 
+def ensure_metadata_page(path: Path, metadata: str) -> bool:
+    source = path.read_text(encoding="utf-8")
+    if "</head>" not in source:
+        raise ValueError(f"Social preview page has no closing head: {path}")
+    cleaned = BLOCK_RE.sub("\n", source)
+    if "primaryImageOfPage" in cleaned:
+        raise ValueError(
+            f"Page already declares primaryImageOfPage outside generated block: {path}"
+        )
+    feed_match = gen_linkset.FEED_DISCOVERY_RE.search(cleaned)
+    insert_index = feed_match.start() if feed_match else cleaned.index("</head>")
+    updated = (
+        cleaned[:insert_index].rstrip()
+        + "\n"
+        + metadata
+        + "\n"
+        + cleaned[insert_index:].lstrip()
+    )
+    return _write_text_if_changed(path, updated)
+
+
 def remove_generated_guide_content(path: Path) -> bool:
     source = path.read_text(encoding="utf-8")
     cleaned = HERO_RE.sub("\n", BLOCK_RE.sub("\n", source))
     return source != cleaned and _write_text_if_changed(path, cleaned)
 
 
-def render_sitemap(keys: list[str], site: str = SITE) -> str:
+def remove_generated_metadata(path: Path) -> bool:
+    source = path.read_text(encoding="utf-8")
+    cleaned = BLOCK_RE.sub("\n", source)
+    return source != cleaned and _write_text_if_changed(path, cleaned)
+
+
+def render_sitemap(paths: list[str], site: str = SITE) -> str:
     ET.register_namespace("", SITEMAP_NS)
     root = ET.Element(f"{{{SITEMAP_NS}}}urlset")
-    for key in keys:
+    for path in paths:
         url = ET.SubElement(root, f"{{{SITEMAP_NS}}}url")
-        ET.SubElement(url, f"{{{SITEMAP_NS}}}loc").text = (
-            f"{site}/oembed/{key}.json"
-        )
+        ET.SubElement(url, f"{{{SITEMAP_NS}}}loc").text = f"{site}/{path}"
     ET.indent(root, space="  ")
     return (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -419,6 +559,14 @@ def generate(
 
     image_dir = pages / "social" / "img"
     oembed_dir = pages / "oembed"
+    oembed_paths = [
+        oembed_relative_path(record["key"]) for record in records
+    ]
+    expected_oembed_files = {
+        pages / path for path in oembed_paths
+    }
+    expected_localized_pages: set[Path] = set()
+    localized_metadata_pages = 0
     for record in records:
         key = record["key"]
         guide_path = pages / "guides" / f"{key}.html"
@@ -431,7 +579,14 @@ def generate(
             _write_text_if_changed(
                 oembed_dir / f"{key}.json",
                 json.dumps(
-                    oembed_document(title, image_url, site),
+                    oembed_document(
+                        title,
+                        image_url,
+                        record["guide"],
+                        record["store"],
+                        "en",
+                        site,
+                    ),
                     ensure_ascii=False,
                     indent=2,
                 )
@@ -452,31 +607,93 @@ def generate(
                 hero_block(key, record["name"], record["store"], site),
             )
         )
+        for locale in OFFICIAL_LOCALES:
+            canonical = f"{site}/{locale}/{key}.html"
+            localized_path = pages / locale / f"{key}.html"
+            expected_localized_pages.add(localized_path)
+            localized_title, localized_description = _guide_metadata(
+                localized_path,
+                canonical,
+            )
+            relative_oembed = oembed_relative_path(key, locale)
+            oembed_paths.append(relative_oembed)
+            expected_oembed_files.add(pages / relative_oembed)
+            changed += int(
+                _write_text_if_changed(
+                    pages / relative_oembed,
+                    json.dumps(
+                        oembed_document(
+                            localized_title,
+                            image_url,
+                            canonical,
+                            record["store"],
+                            locale,
+                            site,
+                        ),
+                        ensure_ascii=False,
+                        indent=2,
+                    )
+                    + "\n",
+                )
+            )
+            changed += int(
+                ensure_metadata_page(
+                    localized_path,
+                    metadata_block(
+                        key,
+                        localized_title,
+                        localized_description,
+                        canonical,
+                        record["name"],
+                        site,
+                        locale=locale,
+                        endpoint_locale=locale,
+                        image_alt=localized_title,
+                    ),
+                )
+            )
+            localized_metadata_pages += 1
 
     live_key_set = set(keys)
     guides_dir = pages / "guides"
     for stale in guides_dir.glob("*.html") if guides_dir.is_dir() else ():
         if stale.stem not in live_key_set:
             changed += int(remove_generated_guide_content(stale))
+    for locale in OFFICIAL_LOCALES:
+        localized_dir = pages / locale
+        for stale in (
+            localized_dir.glob("*.html")
+            if localized_dir.is_dir()
+            else ()
+        ):
+            if stale not in expected_localized_pages:
+                changed += int(remove_generated_metadata(stale))
     for stale in image_dir.glob("*-share.jpg") if image_dir.is_dir() else ():
         if stale.name.removesuffix("-share.jpg") not in live_key_set:
             stale.unlink()
             changed += 1
-    for stale in oembed_dir.glob("*.json") if oembed_dir.is_dir() else ():
-        if stale.stem not in live_key_set:
+    for stale in oembed_dir.rglob("*.json") if oembed_dir.is_dir() else ():
+        if stale not in expected_oembed_files:
             stale.unlink()
             changed += 1
+    for directory in sorted(
+        (path for path in oembed_dir.glob("*") if path.is_dir()),
+        reverse=True,
+    ):
+        if not any(directory.iterdir()):
+            directory.rmdir()
 
     changed += int(
         _write_text_if_changed(
-            pages / "sitemap_oembed.xml", render_sitemap(keys, site)
+            pages / "sitemap_oembed.xml", render_sitemap(oembed_paths, site)
         )
     )
     return {
         "apps": len(records),
         "cards": len(records),
-        "oembed": len(records),
+        "oembed": len(oembed_paths),
         "metadata_pages": len(records),
+        "localized_metadata_pages": localized_metadata_pages,
         "hero_pages": len(records),
         "changed_files": changed,
     }
@@ -494,6 +711,7 @@ def main() -> None:
         f"{result['apps']} apps, {result['cards']} cards, "
         f"{result['oembed']} oEmbed responses, "
         f"{result['metadata_pages']} metadata pages, "
+        f"{result['localized_metadata_pages']} localized metadata pages, "
         f"{result['hero_pages']} visible hero pages, "
         f"{result['changed_files']} files updated"
     )

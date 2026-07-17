@@ -610,6 +610,27 @@ class GeneratorTests(unittest.TestCase):
                 encoding="utf-8",
             )
             localized.write_text("<head></head>", encoding="utf-8")
+            localized_app_pages = {}
+            for locale in OFFICIAL_LOCALES:
+                localized_app = pages / locale / "lumibopomofo.html"
+                localized_app.parent.mkdir(parents=True, exist_ok=True)
+                localized_app.write_text(
+                    f"<head><title>{locale} Lumi Bopomofo</title>"
+                    f'<meta name="description" content="{locale} app guide.">'
+                    f'<link rel="canonical" href="{site}/{locale}/'
+                    'lumibopomofo.html">'
+                    f'<link rel="alternate" type="application/feed+json" '
+                    f'href="{site}/feed.json"></head>'
+                    f"<body><h1>{locale} Lumi Bopomofo</h1></body>",
+                    encoding="utf-8",
+                )
+                localized_app_pages[locale] = localized_app
+            stale_localized = pages / "ja" / "stale.html"
+            stale_localized.write_text(
+                "<head><!-- social-preview:start -->old"
+                "<!-- social-preview:end --></head>",
+                encoding="utf-8",
+            )
             story.write_text(
                 "<head>"
                 f'<link rel="canonical" href="{site}/stories/lumibopomofo.html">'
@@ -653,6 +674,8 @@ class GeneratorTests(unittest.TestCase):
                 guide,
                 pages / "social" / "img" / "lumibopomofo-share.jpg",
                 pages / "oembed" / "lumibopomofo.json",
+                pages / "oembed" / "ja" / "lumibopomofo.json",
+                localized_app_pages["ja"],
                 pages / "sitemap_oembed.xml",
             ]
             mtimes = {path: path.stat().st_mtime_ns for path in tracked}
@@ -662,10 +685,11 @@ class GeneratorTests(unittest.TestCase):
                 {
                     "apps": 1,
                     "cards": 1,
-                    "oembed": 1,
+                    "oembed": 51,
                     "metadata_pages": 1,
+                    "localized_metadata_pages": 50,
                     "hero_pages": 1,
-                    "changed_files": 7,
+                    "changed_files": 108,
                 },
                 first,
             )
@@ -673,6 +697,10 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(mtimes, {path: path.stat().st_mtime_ns for path in tracked})
             self.assertFalse(stale_card.exists())
             self.assertFalse(stale_oembed.exists())
+            self.assertNotIn(
+                gen_social_previews.BLOCK_START,
+                stale_localized.read_text(encoding="utf-8"),
+            )
             stale_source = stale_guide.read_text(encoding="utf-8")
             self.assertNotIn(gen_social_previews.BLOCK_START, stale_source)
             self.assertNotIn(gen_social_previews.HERO_START, stale_source)
@@ -688,6 +716,54 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual("Lumi Bopomofo — Zhuyin for Kids", embed["title"])
             self.assertEqual(1200, embed["thumbnail_width"])
             self.assertEqual(675, embed["thumbnail_height"])
+            self.assertEqual("en", embed["_lumi_locale"])
+            self.assertEqual(
+                f"{site}/guides/lumibopomofo.html",
+                embed["_lumi_guide_url"],
+            )
+            self.assertEqual(
+                "https://apps.apple.com/app/id6773017109?ct=iag_oembed_en",
+                embed["_lumi_app_store_url"],
+            )
+            localized_embed = json.loads(
+                tracked[3].read_text(encoding="utf-8")
+            )
+            self.assertEqual("ja", localized_embed["_lumi_locale"])
+            self.assertEqual(
+                f"{site}/ja/lumibopomofo.html",
+                localized_embed["_lumi_guide_url"],
+            )
+            self.assertEqual(
+                "https://apps.apple.com/app/id6773017109?ct=iag_oembed_ja",
+                localized_embed["_lumi_app_store_url"],
+            )
+            localized_source = tracked[4].read_text(encoding="utf-8")
+            self.assertEqual(
+                1,
+                localized_source.count(gen_social_previews.BLOCK_START),
+            )
+            self.assertIn(
+                'property="og:title" content="ja Lumi Bopomofo"',
+                localized_source,
+            )
+            self.assertIn(
+                'property="og:locale" content="ja_JP"',
+                localized_source,
+            )
+            self.assertIn(
+                'type="application/json+oembed"',
+                localized_source,
+            )
+            self.assertIn(
+                f"{site}/oembed/ja/lumibopomofo.json?"
+                "url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide"
+                "%2Fja%2Flumibopomofo.html&amp;format=json",
+                localized_source,
+            )
+            self.assertEqual(
+                1,
+                localized_source.count(f'href="{site}/feed.json"'),
+            )
             source = guide.read_text(encoding="utf-8")
             self.assertEqual(1, source.count(gen_social_previews.BLOCK_START))
             self.assertEqual(1, source.count('property="og:title"'))
@@ -764,12 +840,21 @@ class GeneratorTests(unittest.TestCase):
             self.assertLess(source.index('rel="linkset"'), source.index(gen_social_previews.BLOCK_START))
             self.assertLess(source.index(gen_social_previews.BLOCK_END), source.index("application/atom+xml"))
             sitemap = ET.parse(pages / "sitemap_oembed.xml").getroot()
-            self.assertEqual(
-                f"{site}/oembed/lumibopomofo.json",
-                sitemap.findtext(
+            sitemap_urls = [
+                item.text
+                for item in sitemap.findall(
                     f"{{{gen_social_previews.SITEMAP_NS}}}url/"
                     f"{{{gen_social_previews.SITEMAP_NS}}}loc"
-                ),
+                )
+            ]
+            self.assertEqual(51, len(sitemap_urls))
+            self.assertEqual(
+                f"{site}/oembed/lumibopomofo.json",
+                sitemap_urls[0],
+            )
+            self.assertIn(
+                f"{site}/oembed/ja/lumibopomofo.json",
+                sitemap_urls,
             )
             self.assertIn("sitemap_oembed.xml", gen_llms.build_robots())
             with mock.patch.object(gen_llms, "PAGES", str(pages)):
@@ -813,6 +898,123 @@ class GeneratorTests(unittest.TestCase):
                         "https://apps.apple.com/app/id123456789?ct=iag_linkset",
                     ),
                 )
+
+    def test_published_localized_social_previews_cover_every_live_app(self):
+        pages = Path(GEO) / "pages"
+        oembed_dir = pages / "oembed"
+        self.assertEqual(
+            set(OFFICIAL_LOCALES),
+            set(gen_social_previews.OPEN_GRAPH_LOCALES),
+        )
+        keys = sorted(path.stem for path in oembed_dir.glob("*.json"))
+        self.assertGreater(len(keys), 20)
+
+        sitemap = ET.parse(pages / "sitemap_oembed.xml").getroot()
+        sitemap_urls = {
+            item.text
+            for item in sitemap.findall(
+                f"{{{gen_social_previews.SITEMAP_NS}}}url/"
+                f"{{{gen_social_previews.SITEMAP_NS}}}loc"
+            )
+        }
+        expected_urls = {
+            f"{gen_social_previews.SITE}/oembed/{key}.json"
+            for key in keys
+        }
+        store_urls = set()
+        localized_count = 0
+        for locale in OFFICIAL_LOCALES:
+            for key in keys:
+                canonical = (
+                    f"{gen_social_previews.SITE}/{locale}/{key}.html"
+                )
+                page = pages / locale / f"{key}.html"
+                endpoint = oembed_dir / locale / f"{key}.json"
+                title, _ = gen_social_previews._guide_metadata(
+                    page,
+                    canonical,
+                )
+                payload = json.loads(endpoint.read_text(encoding="utf-8"))
+                self.assertEqual("1.0", payload["version"])
+                self.assertEqual("link", payload["type"])
+                self.assertNotIn("html", payload)
+                self.assertEqual(title, payload["title"])
+                self.assertEqual(locale, payload["_lumi_locale"])
+                self.assertEqual(canonical, payload["_lumi_guide_url"])
+                parsed_store = urllib.parse.urlsplit(
+                    payload["_lumi_app_store_url"]
+                )
+                self.assertEqual("https", parsed_store.scheme)
+                self.assertEqual("apps.apple.com", parsed_store.netloc)
+                self.assertRegex(parsed_store.path, r"^/app/id\d+$")
+                self.assertEqual(
+                    [
+                        gen_social_previews._oembed_campaign(locale)
+                    ],
+                    urllib.parse.parse_qs(parsed_store.query).get("ct"),
+                )
+                store_urls.add(payload["_lumi_app_store_url"])
+
+                source = page.read_text(encoding="utf-8")
+                expected_discovery = html.escape(
+                    gen_social_previews.oembed_url(
+                        key,
+                        canonical,
+                        locale=locale,
+                    ),
+                    quote=True,
+                )
+                self.assertEqual(
+                    1,
+                    source.count('type="application/json+oembed"'),
+                )
+                self.assertIn(f'href="{expected_discovery}"', source)
+                self.assertIn(
+                    f'property="og:title" content="'
+                    f'{html.escape(title, quote=True)}"',
+                    source,
+                )
+                self.assertIn(
+                    f'property="og:locale" content="'
+                    f'{gen_social_previews._open_graph_locale(locale)}"',
+                    source,
+                )
+                schemas = [
+                    json.loads(document)
+                    for document in re.findall(
+                        r'<script type="application/ld\+json" '
+                        r'data-iag="primary-image">\s*(.*?)\s*</script>',
+                        source,
+                        re.DOTALL,
+                    )
+                ]
+                self.assertEqual(1, len(schemas))
+                self.assertEqual(locale, schemas[0]["inLanguage"])
+                self.assertTrue(
+                    (
+                        pages
+                        / urllib.parse.urlsplit(
+                            payload["thumbnail_url"]
+                        ).path.removeprefix("/ios-app-guide/")
+                    ).is_file()
+                )
+                expected_url = (
+                    f"{gen_social_previews.SITE}/"
+                    f"{gen_social_previews.oembed_relative_path(key, locale)}"
+                )
+                expected_urls.add(expected_url)
+                localized_count += 1
+
+        self.assertEqual(
+            len(keys) * len(OFFICIAL_LOCALES),
+            localized_count,
+        )
+        self.assertEqual(localized_count, len(store_urls))
+        self.assertEqual(expected_urls, sitemap_urls)
+        self.assertEqual(
+            len(keys) * (len(OFFICIAL_LOCALES) + 1),
+            len(sitemap_urls),
+        )
 
     def test_smart_app_banners_cover_guides_localized_pages_and_answers(self):
         with tempfile.TemporaryDirectory() as directory:

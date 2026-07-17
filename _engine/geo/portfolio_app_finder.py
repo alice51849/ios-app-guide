@@ -36,6 +36,7 @@ SLUG = "private-pay-once-iphone-app-finder"
 DATA_SLUG = "verified-ios-app-finder-catalog"
 LICENSE_URL = "https://creativecommons.org/licenses/by/4.0/"
 CONTENT_DATE = answer_portfolio.CONTENT_DATE
+APP_CATALOG_API = f"{SITE}/api/v1/ios-app-catalog"
 
 UI = {
     "en": {
@@ -98,6 +99,7 @@ UI = {
         ),
         "download_json": "JSON catalogue",
         "download_schema": "JSON Schema",
+        "download_openapi": "50-locale OpenAPI",
         "copy": "Copy finder link",
         "share": "Share finder",
         "copied": "Finder link copied.",
@@ -193,6 +195,7 @@ UI = {
         "data_text": "可下載相同的依名稱排序 JSON 資料與 JSON Schema；目錄不包含捏造的價格、名次、評分或評論。",
         "download_json": "JSON 目錄",
         "download_schema": "JSON Schema",
+        "download_openapi": "50 語系 OpenAPI",
         "copy": "複製篩選器連結",
         "share": "分享篩選器",
         "copied": "已複製篩選器連結。",
@@ -872,6 +875,7 @@ def render_page(
 <link rel="alternate" hreflang="en" href="__EN_URL__">
 <link rel="alternate" hreflang="zh-Hant" href="__ZH_URL__">
 <link rel="alternate" hreflang="x-default" href="__EN_URL__">
+<link rel="service" type="application/vnd.oai.openapi+json;version=3.1" href="__OPENAPI_URL__">
 __FEEDS__
 <meta property="og:type" content="website">
 <meta property="og:title" content="__TITLE__">
@@ -911,7 +915,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{ou
 </section>
 <section class="wrap results" id="results">__APP_CARDS__</section>
 <section class="wrap two"><article class="card"><h2>__METHOD_TITLE__</h2><ul class="list">__METHOD__</ul></article><article class="card"><h2>__BOUNDARIES_TITLE__</h2><ul class="list">__BOUNDARIES__</ul></article></section>
-<section class="wrap card"><h2>__DATA_TITLE__</h2><p>__DATA_TEXT__</p><div class="actions"><a class="download" href="__DATA_URL__" download>__DOWNLOAD_JSON__</a><a class="download" href="__SCHEMA_URL__">__DOWNLOAD_SCHEMA__</a><button id="copy" type="button">__COPY__</button><button id="share" type="button">__SHARE__</button></div><p class="status" id="share-status" role="status"></p></section>
+<section class="wrap card"><h2>__DATA_TITLE__</h2><p>__DATA_TEXT__</p><div class="actions"><a class="download" href="__DATA_URL__" download>__DOWNLOAD_JSON__</a><a class="download" href="__SCHEMA_URL__">__DOWNLOAD_SCHEMA__</a><a class="download" href="__OPENAPI_URL__">__DOWNLOAD_OPENAPI__</a><button id="copy" type="button">__COPY__</button><button id="share" type="button">__SHARE__</button></div><p class="status" id="share-status" role="status"></p></section>
 <section class="wrap card source"><h2>__SOURCES_TITLE__</h2><p>__SOURCES_TEXT__</p><p><a href="__APPLE_SOURCE_URL__">__APPLE_SOURCE__</a> · <a href="__GOOGLE_SOURCE_URL__">__GOOGLE_SOURCE__</a> · <a href="__SCHEMA_SOURCE_URL__">__SCHEMA_SOURCE__</a> · <a href="__WEBMCP_SOURCE_URL__">__WEBMCP_SOURCE__</a> · <a href="__LICENSE_URL__">CC BY 4.0</a></p><p>__LICENSE_TEXT__</p></section>
 <section class="wrap card"><h2>__FAQ_TITLE__</h2>__FAQ__</section>
 </main>
@@ -1044,8 +1048,10 @@ registerWebMcp().catch(error=>console.error("WebMCP tool registration failed.",e
         "__DATA_TEXT__": html.escape(copy["data_text"]),
         "__DATA_URL__": data_url(".json"),
         "__SCHEMA_URL__": data_url(".schema.json"),
+        "__OPENAPI_URL__": f"{APP_CATALOG_API}/openapi.json",
         "__DOWNLOAD_JSON__": html.escape(copy["download_json"]),
         "__DOWNLOAD_SCHEMA__": html.escape(copy["download_schema"]),
+        "__DOWNLOAD_OPENAPI__": html.escape(copy["download_openapi"]),
         "__COPY__": html.escape(copy["copy"]),
         "__SHARE__": html.escape(copy["share"]),
         "__SOURCES_TITLE__": html.escape(copy["sources_title"]),

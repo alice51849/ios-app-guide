@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/index.schema.json",
+  "title": "Verified iOS App Catalog API index",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "api_version",
+    "date_modified",
+    "content_digest",
+    "name",
+    "description",
+    "license",
+    "default_locale",
+    "locale_count",
+    "record_count",
+    "ordering",
+    "availability_verification",
+    "documentation",
+    "openapi",
+    "catalog_schema",
+    "locales"
+  ],
+  "properties": {
+    "$schema": {
+      "const": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/index.schema.json"
+    },
+    "api_version": {
+      "const": "1.0.0"
+    },
+    "date_modified": {
+      "type": "string",
+      "format": "date"
+    },
+    "content_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "license": {
+      "const": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "default_locale": {
+      "const": "en-US"
+    },
+    "locale_count": {
+      "const": 50
+    },
+    "record_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "ordering": {
+      "const": "alphabetical_by_app_name_not_a_ranking"
+    },
+    "availability_verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source",
+        "markets",
+        "retirement_rule"
+      ],
+      "properties": {
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "markets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "retirement_rule": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "documentation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "en",
+        "zh-Hant"
+      ],
+      "properties": {
+        "en": {
+          "type": "string",
+          "format": "uri"
+        },
+        "zh-Hant": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "openapi": {
+      "const": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/openapi.json"
+    },
+    "catalog_schema": {
+      "const": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json"
+    },
+    "locales": {
+      "type": "array",
+      "minItems": 50,
+      "maxItems": 50,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "locale",
+          "url"
+        ],
+        "properties": {
+          "locale": {
+            "enum": [
+              "ar-SA",
+              "bn-BD",
+              "ca",
+              "cs",
+              "da",
+              "de-DE",
+              "el",
+              "en-AU",
+              "en-CA",
+              "en-GB",
+              "en-US",
+              "es-ES",
+              "es-MX",
+              "fi",
+              "fr-CA",
+              "fr-FR",
+              "gu-IN",
+              "he",
+              "hi",
+              "hr",
+              "hu",
+              "id",
+              "it",
+              "ja",
+              "kn-IN",
+              "ko",
+              "ml-IN",
+              "mr-IN",
+              "ms",
+              "nl-NL",
+              "no",
+              "or-IN",
+              "pa-IN",
+              "pl",
+              "pt-BR",
+              "pt-PT",
+              "ro",
+              "ru",
+              "sk",
+              "sl-SI",
+              "sv",
+              "ta-IN",
+              "te-IN",
+              "th",
+              "tr",
+              "uk",
+              "ur-PK",
+              "vi",
+              "zh-Hans",
+              "zh-Hant"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    }
+  }
+}

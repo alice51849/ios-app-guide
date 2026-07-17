@@ -83,6 +83,7 @@ def main():
     require([PY, os.path.join(HERE, "toeic_study_allocation_planner.py")], env=env)
     require([PY, os.path.join(HERE, "wordmate_language_support.py")], env=env)
     require([PY, os.path.join(HERE, "portfolio_app_finder.py")], env=env)
+    require([PY, os.path.join(HERE, "portfolio_app_catalog_api.py")], env=env)
     require([PY, os.path.join(HERE, "gen_data_hub.py")], env=env)
     require([PY, os.path.join(HERE, "family_travel_static_api.py")], env=env)
     require([PY, os.path.join(HERE, "family_travel_observation_passport.py")], env=env)

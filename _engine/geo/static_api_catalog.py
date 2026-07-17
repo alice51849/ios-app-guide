@@ -24,6 +24,19 @@ CONTENT_MODIFIED_RE = re.compile(
 
 API_DESCRIPTORS = (
     {
+        "slug": "ios-app-catalog",
+        "title": "Verified iOS App Catalog API v1",
+        "dataset": "Verified independent iOS app catalog in 50 locales",
+        "description": (
+            "Every verified live app with localized summaries, search terms and "
+            "direct App Store links through a no-key OpenAPI 3.1 interface."
+        ),
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "modified_source": "api/v1/ios-app-catalog/index.json",
+        "modified_field": "date_modified",
+        "initial_date": "2026-07-17",
+    },
+    {
         "slug": "family-travel-missions",
         "title": "Family Travel Missions API v1",
         "dataset": "Privacy-first family travel mission taxonomy",
@@ -74,13 +87,12 @@ def _page_modified(path: Path, fallback: str) -> str:
 def _dataset_modified(pages: Path, descriptor: dict) -> str:
     source = pages / descriptor["modified_source"]
     if source.exists():
-        value = json.loads(source.read_text(encoding="utf-8")).get(
-            "dateModified"
-        )
+        field = descriptor.get("modified_field", "dateModified")
+        value = json.loads(source.read_text(encoding="utf-8")).get(field)
         if not isinstance(value, str) or not re.fullmatch(
             r"\d{4}-\d{2}-\d{2}", value
         ):
-            raise ValueError(f"Invalid dateModified in {source}")
+            raise ValueError(f"Invalid {field} in {source}")
         return value
     return descriptor["initial_date"]
 

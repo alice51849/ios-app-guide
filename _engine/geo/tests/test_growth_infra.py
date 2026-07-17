@@ -90,6 +90,7 @@ import notify_websub
 import outreach_scorecard
 import passport_photo_print_sheet
 import photo_storage_cleanup_planner
+import portfolio_app_catalog_api
 import portfolio_app_finder
 import prioritize_trip_planet_resources
 import queries
@@ -17015,6 +17016,145 @@ class GeneratorTests(unittest.TestCase):
             answer_portfolio.APPLE_CAMPAIGN_SOURCE,
         )
 
+    def test_portfolio_app_catalog_api_covers_all_official_locales(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale in OFFICIAL_LOCALES:
+                for key in ("snapport", "wordmate"):
+                    path = pages / locale / f"{key}.html"
+                    path.parent.mkdir(parents=True, exist_ok=True)
+                    content = (
+                        '<meta name="description" content="'
+                        f"{locale} summary for {key}."
+                        '"><meta name="keywords" content="'
+                        f"{locale} term, {key} task"
+                        '">'
+                    )
+                    if locale == "en-US" and key == "snapport":
+                        content += (
+                            '<script type="application/ld+json">'
+                            + json.dumps(
+                                {
+                                    "@type": "MobileApplication",
+                                    "@id": (
+                                        "https://apps.apple.com/app/"
+                                        "id6780575828"
+                                    ),
+                                    "description": (
+                                        "Complete first paragraph for Snapport."
+                                        "\n\nA second paragraph is not the summary."
+                                    ),
+                                }
+                            )
+                            + "</script>"
+                        )
+                    path.write_text(content, encoding="utf-8")
+
+            urls = portfolio_app_catalog_api.build(
+                pages,
+                live_keys={"wordmate", "snapport"},
+            )
+            api = pages / portfolio_app_catalog_api.API_PATH
+            index = json.loads(
+                (api / "index.json").read_text(encoding="utf-8")
+            )
+            schema = json.loads(
+                (api / "catalog.schema.json").read_text(encoding="utf-8")
+            )
+            english = json.loads(
+                (api / "locales" / "en-US.json").read_text(
+                    encoding="utf-8"
+                )
+            )
+            japanese = json.loads(
+                (api / "locales" / "ja.json").read_text(encoding="utf-8")
+            )
+            openapi = json.loads(
+                (api / "openapi.json").read_text(encoding="utf-8")
+            )
+            docs = (api / "index.html").read_text(encoding="utf-8")
+            data_path = api / "locales" / "en-US.json"
+            stable_mtime = 1_700_000_000_000_000_000
+            os.utime(data_path, ns=(stable_mtime, stable_mtime))
+            first_bytes = data_path.read_bytes()
+            portfolio_app_catalog_api.build(
+                pages,
+                live_keys={"wordmate", "snapport"},
+            )
+            locale_files = {
+                path.stem
+                for path in (api / "locales").glob("*.json")
+            }
+            second_bytes = data_path.read_bytes()
+            second_mtime = data_path.stat().st_mtime_ns
+            api_catalog = (pages / "api" / "index.html").read_text(
+                encoding="utf-8"
+            )
+            sitemap = (pages / "sitemap_api.xml").read_text(
+                encoding="utf-8"
+            )
+
+        self.assertEqual(56, len(urls))
+        self.assertEqual(50, index["locale_count"])
+        self.assertEqual(
+            list(OFFICIAL_LOCALES),
+            [item["locale"] for item in index["locales"]],
+        )
+        self.assertEqual(
+            set(OFFICIAL_LOCALES),
+            locale_files,
+        )
+        self.assertEqual(first_bytes, second_bytes)
+        self.assertEqual(stable_mtime, second_mtime)
+        self.assertEqual(
+            ["Snapport", "Wordmate: Learn 44 Languages"],
+            [app["name"] for app in english["apps"]],
+        )
+        self.assertEqual(
+            "Complete first paragraph for Snapport.",
+            english["apps"][0]["summary"],
+        )
+        self.assertEqual(
+            "ja summary for snapport.",
+            japanese["apps"][0]["summary"],
+        )
+        self.assertEqual(
+            ["ja term", "snapport task"],
+            japanese["apps"][0]["search_terms"],
+        )
+        for locale in (english, japanese):
+            self.assertEqual(2, locale["record_count"])
+            for app in locale["apps"]:
+                self.assertTrue(
+                    app["app_store_url"].startswith(
+                        f"https://apps.apple.com/app/id{app['app_store_id']}?"
+                    )
+                )
+                self.assertIn("ct=iag_api_", app["app_store_url"])
+        self.assertEqual(
+            {"/index.json", "/locales/{locale}.json"},
+            set(openapi["paths"]),
+        )
+        self.assertIn(
+            "application/vnd.oai.openapi+json;version=3.1",
+            docs,
+        )
+        self.assertIn("50 locales", docs)
+        self.assertIn("Verified iOS App Catalog API v1", api_catalog)
+        self.assertEqual(50, sitemap.count("/ios-app-catalog/locales/"))
+        self.assertIn(
+            portfolio_app_catalog_api.api_url("openapi.json"),
+            sitemap,
+        )
+
+        from jsonschema import Draft202012Validator, FormatChecker
+
+        Draft202012Validator.check_schema(schema)
+        Draft202012Validator(
+            schema,
+            format_checker=FormatChecker(),
+        ).validate(english)
+
     def test_primary_resource_refresh_plan_covers_every_owned_resource(self):
         expected = {
             (
@@ -19121,6 +19261,10 @@ class GeneratorTests(unittest.TestCase):
             availability_block.index("portfolio_app_finder.py"),
         )
         self.assertLess(
+            availability_block.index("portfolio_app_finder.py"),
+            availability_block.index("portfolio_app_catalog_api.py"),
+        )
+        self.assertLess(
             availability_block.index("refresh=True"),
             availability_block.index("passport_photo_print_sheet.py"),
         )
@@ -19214,6 +19358,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(1, workflow.count("bopomofo_practice_sheet.py"))
         self.assertEqual(1, workflow.count("wordmate_language_support.py"))
         self.assertEqual(1, workflow.count("portfolio_app_finder.py"))
+        self.assertEqual(1, workflow.count("portfolio_app_catalog_api.py"))
         self.assertLess(
             workflow.index("refresh=True"),
             workflow.index("passport_photo_print_sheet.py"),
@@ -19544,6 +19689,11 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("bopomofo_practice_sheet.py", publish)
         self.assertIn("wordmate_language_support.py", publish)
         self.assertIn("portfolio_app_finder.py", publish)
+        self.assertIn("portfolio_app_catalog_api.py", publish)
+        self.assertLess(
+            publish.index("portfolio_app_finder.py"),
+            publish.index("portfolio_app_catalog_api.py"),
+        )
         self.assertEqual(
             1,
             publish.count("refresh_primary_resource_answers.py"),

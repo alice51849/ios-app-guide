@@ -105,6 +105,7 @@ jobs:
           python3 bopomofo_practice_sheet.py
           python3 wordmate_language_support.py
           python3 portfolio_app_finder.py
+          python3 portfolio_app_catalog_api.py
       - name: Generate new answer pages (+ rebuild answers sitemap)
         run: |
           N="${{ github.event.inputs.answers || '8' }}"

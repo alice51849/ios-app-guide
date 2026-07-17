@@ -202,6 +202,7 @@ def main():
     require([PY, os.path.join(HERE, "gen_app_store_qr_ctas.py")], env=env)
     require([PY, os.path.join(HERE, "gen_app_store_share_ctas.py")], env=env)
     require([PY, os.path.join(HERE, "gen_guide_design.py")], env=env)
+    require([PY, os.path.join(HERE, "gen_app_store_facts.py")], env=env)
     require([PY, os.path.join(HERE, "validate_webstories.py")], env=env)
     require([PY, os.path.join(HERE, "gen_llms.py"), "--cached-live"], env=env)
     require([PY, os.path.join(HERE, "zhuyin_resourcesync.py")], env=env)

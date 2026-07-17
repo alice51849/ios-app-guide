@@ -4,8 +4,8 @@
   "info": {
     "title": "Verified iOS App Catalog API",
     "summary": "Match user needs to verified live iOS apps in 50 locales.",
-    "description": "Read-only static catalogs with localized summaries, localized search terms, factual capabilities and directly attributable App Store links. Records are alphabetical and are not rankings.",
-    "version": "1.1.0",
+    "description": "Read-only static catalogs with localized summaries, localized search terms, verified storefront facts when available, factual capabilities and directly attributable App Store links. Records are alphabetical and are not rankings.",
+    "version": "1.2.0",
     "license": {
       "name": "CC BY 4.0",
       "url": "https://creativecommons.org/licenses/by/4.0/"
@@ -24,7 +24,7 @@
   "tags": [
     {
       "name": "Verified iOS apps",
-      "description": "Live App Store records with no fabricated price, rating or review."
+      "description": "Live App Store records with public Apple price and rating facts only when the exact storefront returned them."
     }
   ],
   "paths": {

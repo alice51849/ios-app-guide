@@ -10,7 +10,9 @@ from pathlib import Path
 import re
 
 from app_store_storefronts import (
+    LOCALE_STOREFRONTS,
     load_storefront_availability,
+    load_storefront_details,
     verified_app_store_url,
 )
 from appstore_live import live_app_keys
@@ -51,6 +53,7 @@ ASSET_SOURCE = r"""(() => {
   try {
     data = JSON.parse(node.textContent);
     const store = new URL(data.app_store_url);
+    const facts = data.storefront_facts;
     if (
       store.protocol !== "https:" ||
       store.hostname !== "apps.apple.com" ||
@@ -59,6 +62,34 @@ ASSET_SOURCE = r"""(() => {
       store.hash ||
       !/^[0-9]{9,12}$/.test(data.app_store_id)
     ) throw new TypeError("Invalid verified App Store payload.");
+    if (
+      facts !== undefined &&
+      (
+        facts === null ||
+        typeof facts !== "object" ||
+        Array.isArray(facts) ||
+        typeof facts.price !== "string" ||
+        !/^(?:0|[1-9][0-9]*)(?:\.[0-9]+)?$/.test(facts.price) ||
+        typeof facts.currency !== "string" ||
+        !/^[A-Z]{3}$/.test(facts.currency) ||
+        typeof facts.formatted_price !== "string" ||
+        !facts.formatted_price ||
+        (
+          (facts.rating_value === undefined) !==
+          (facts.rating_count === undefined)
+        ) ||
+        (
+          facts.rating_value !== undefined &&
+          (
+            typeof facts.rating_value !== "number" ||
+            facts.rating_value < 0 ||
+            facts.rating_value > 5 ||
+            !Number.isInteger(facts.rating_count) ||
+            facts.rating_count <= 0
+          )
+        )
+      )
+    ) throw new TypeError("Invalid verified App Store facts.");
   } catch (error) {
     console.error("WebMCP install data is invalid.", error);
     return;
@@ -85,6 +116,9 @@ ASSET_SOURCE = r"""(() => {
     app_store_url: data.app_store_url,
     availability_source: "Apple public storefront lookup snapshot"
   };
+  if (data.storefront_facts) {
+    result.storefront_facts = data.storefront_facts;
+  }
   async function register() {
     await document.modelContext.registerTool({
       name: "get_verified_ios_app_install_link",
@@ -187,7 +221,7 @@ def _page_data(
     return canonicals[0], descriptions[0]
 
 
-def _json_for_html(value: dict[str, str]) -> str:
+def _json_for_html(value: dict[str, object]) -> str:
     return json.dumps(
         value,
         ensure_ascii=False,
@@ -206,7 +240,7 @@ def _localized_tool_description(description: str) -> str:
 
 
 def install_block(
-    payload: dict[str, str],
+    payload: dict[str, object],
     *,
     site: str,
 ) -> str:
@@ -283,9 +317,12 @@ def generate(
         raise ValueError("WebMCP install locales must be unique official locales")
 
     availability = load_storefront_availability(pages)
+    details = load_storefront_details(pages)
     changed = 0
     localized_storefronts = 0
     fallbacks = 0
+    storefront_facts = 0
+    rated = 0
     for locale in locales:
         for key in sorted(live_keys):
             app_id = str(APPSTORE[key])
@@ -330,6 +367,15 @@ def generate(
                     description
                 ),
             }
+            country = LOCALE_STOREFRONTS[locale]
+            detail = details.get(country, {}).get(app_id)
+            if (
+                detail is not None
+                and app_id in availability.get(country, frozenset())
+            ):
+                payload["storefront_facts"] = detail
+                storefront_facts += 1
+                rated += int("rating_value" in detail)
             changed += int(
                 ensure_page_tool(path, payload, site=site)
             )
@@ -340,6 +386,8 @@ def generate(
         "pages": len(live_keys) * len(locales),
         "localized_storefronts": localized_storefronts,
         "fallbacks": fallbacks,
+        "storefront_facts": storefront_facts,
+        "rated": rated,
         "changed": changed,
         "asset_changed": int(write_asset(pages)),
     }

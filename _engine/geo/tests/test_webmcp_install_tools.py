@@ -28,7 +28,7 @@ def _page(site: str, locale: str, key: str, description: str) -> str:
     )
 
 
-def _payload(source: str) -> dict[str, str]:
+def _payload(source: str) -> dict[str, object]:
     match = re.search(
         rf'<script type="application/json" id="{tools.DATA_ID}">'
         r"(.*?)</script>",
@@ -63,7 +63,25 @@ class WebMcpInstallToolsTests(unittest.TestCase):
                         "countries": {
                             "us": [app_id],
                             "fr": [app_id],
-                        }
+                        },
+                        "details": {
+                            "us": {
+                                app_id: {
+                                    "price": "0",
+                                    "currency": "USD",
+                                    "formatted_price": "Free",
+                                    "rating_value": 5.0,
+                                    "rating_count": 1,
+                                }
+                            },
+                            "fr": {
+                                app_id: {
+                                    "price": "0",
+                                    "currency": "EUR",
+                                    "formatted_price": "Gratuit",
+                                }
+                            },
+                        },
                     }
                 ),
                 encoding="utf-8",
@@ -89,6 +107,8 @@ class WebMcpInstallToolsTests(unittest.TestCase):
                     "pages": 2,
                     "localized_storefronts": 2,
                     "fallbacks": 0,
+                    "storefront_facts": 2,
+                    "rated": 1,
                     "changed": 2,
                     "asset_changed": 1,
                 },
@@ -112,6 +132,10 @@ class WebMcpInstallToolsTests(unittest.TestCase):
                     f"{site}/{locale}/{key}.html",
                     payload["page_url"],
                 )
+                self.assertEqual(
+                    "USD" if locale == "en-US" else "EUR",
+                    payload["storefront_facts"]["currency"],
+                )
             asset = (
                 pages / "assets" / tools.ASSET_NAME
             ).read_text(encoding="utf-8")
@@ -127,6 +151,7 @@ class WebMcpInstallToolsTests(unittest.TestCase):
                 "window.location.assign(data.app_store_url)",
                 asset,
             )
+            self.assertIn("result.storefront_facts", asset)
             self.assertNotIn("fetch(", asset)
             self.assertNotIn("localStorage", asset)
 

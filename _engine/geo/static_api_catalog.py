@@ -34,8 +34,9 @@ API_DESCRIPTORS = (
         "title": "Verified iOS App Catalog API v1",
         "dataset": "Verified independent iOS app catalog in 50 locales",
         "description": (
-            "Every verified live app with localized summaries, search terms and "
-            "direct App Store links through a no-key OpenAPI 3.1 interface."
+            "Every verified live app with localized summaries, search terms, "
+            "verified storefront facts and direct App Store links through a "
+            "no-key OpenAPI 3.1 interface."
         ),
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "feed": "feeds/en-US.json",

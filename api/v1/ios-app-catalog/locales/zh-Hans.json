@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
-  "api_version": "1.1.0",
+  "api_version": "1.2.0",
   "date_modified": "2026-07-17",
-  "content_digest": "b26a6a616fbb32611e60f59a79198da069fac002c4e1b10d1488106434f8e343",
+  "content_digest": "81d4e8dc351edcc00d0dabc51274519f7aa2e997d1c783138e99cc308698115c",
   "locale": "zh-Hans",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -38,7 +38,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6784974530?ct=iag_api_zh_hans",
       "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/aim990.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费",
+        "storefront_url": "https://apps.apple.com/cn/app/id6784974530"
+      }
     },
     {
       "key": "cvdesk",
@@ -100,7 +106,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6781337213?ct=iag_api_zh_hans",
       "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/cvdesk.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费",
+        "storefront_url": "https://apps.apple.com/cn/app/id6781337213"
+      }
     },
     {
       "key": "cyca",
@@ -154,7 +166,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6782251621?ct=iag_api_zh_hans",
       "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/cyca.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费",
+        "storefront_url": "https://apps.apple.com/cn/app/id6782251621"
+      }
     },
     {
       "key": "gmoney",
@@ -214,7 +232,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6755782939?ct=iag_api_zh_hans",
       "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/gmoney.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "38",
+        "currency": "CNY",
+        "formatted_price": "¥38.00",
+        "storefront_url": "https://apps.apple.com/cn/app/id6755782939"
+      }
     },
     {
       "key": "hourstag",
@@ -273,7 +297,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6754218117?ct=iag_api_zh_hans",
       "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/hourstag.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "38",
+        "currency": "CNY",
+        "formatted_price": "¥38.00",
+        "storefront_url": "https://apps.apple.com/cn/app/id6754218117"
+      }
     },
     {
       "key": "lockhour",
@@ -318,7 +348,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6780107485?ct=iag_api_zh_hans",
       "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/lockhour.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费",
+        "storefront_url": "https://apps.apple.com/cn/app/id6780107485"
+      }
     },
     {
       "key": "lumibopomofo",
@@ -805,7 +841,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6779750237?ct=iag_api_zh_hans",
       "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/lumimission.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费",
+        "storefront_url": "https://apps.apple.com/cn/app/id6779750237"
+      }
     },
     {
       "key": "lumimissionpro",
@@ -875,7 +917,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6779745474?ct=iag_api_zh_hans",
       "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/lumimissionpro.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "38",
+        "currency": "CNY",
+        "formatted_price": "¥38.00",
+        "storefront_url": "https://apps.apple.com/cn/app/id6779745474"
+      }
     },
     {
       "key": "tripplanet",
@@ -979,7 +1027,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6779552704?ct=iag_api_zh_hans",
       "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/lumiweather.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费",
+        "storefront_url": "https://apps.apple.com/cn/app/id6779552704"
+      }
     },
     {
       "key": "mochi",
@@ -1031,7 +1085,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6785004775?ct=iag_api_zh_hans",
       "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/mochi.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费",
+        "storefront_url": "https://apps.apple.com/cn/app/id6785004775"
+      }
     },
     {
       "key": "photocream",
@@ -1091,7 +1151,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6781808054?ct=iag_api_zh_hans",
       "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/photocream.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费",
+        "storefront_url": "https://apps.apple.com/cn/app/id6781808054"
+      }
     },
     {
       "key": "picclear",
@@ -1148,7 +1214,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6780223070?ct=iag_api_zh_hans",
       "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/picclear.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费",
+        "storefront_url": "https://apps.apple.com/cn/app/id6780223070"
+      }
     },
     {
       "key": "scanto",
@@ -1197,7 +1269,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6779977651?ct=iag_api_zh_hans",
       "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/scanto.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费",
+        "storefront_url": "https://apps.apple.com/cn/app/id6779977651"
+      }
     },
     {
       "key": "sereno",
@@ -1244,7 +1322,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6788236641?ct=iag_api_zh_hans",
       "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/sereno.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费",
+        "storefront_url": "https://apps.apple.com/cn/app/id6788236641"
+      }
     },
     {
       "key": "snapport",
@@ -1305,7 +1389,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6780575828?ct=iag_api_zh_hans",
       "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/snapport.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "38",
+        "currency": "CNY",
+        "formatted_price": "¥38.00",
+        "storefront_url": "https://apps.apple.com/cn/app/id6780575828"
+      }
     },
     {
       "key": "sononote",
@@ -1363,7 +1453,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6782139553?ct=iag_api_zh_hans",
       "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/sononote.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费",
+        "storefront_url": "https://apps.apple.com/cn/app/id6782139553"
+      }
     },
     {
       "key": "tripbee",
@@ -1415,7 +1511,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6787754435?ct=iag_api_zh_hans",
       "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/tripbee.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "38",
+        "currency": "CNY",
+        "formatted_price": "¥38.00",
+        "storefront_url": "https://apps.apple.com/cn/app/id6787754435"
+      }
     },
     {
       "key": "unblurry",
@@ -1477,7 +1579,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6782275018?ct=iag_api_zh_hans",
       "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/unblurry.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费",
+        "storefront_url": "https://apps.apple.com/cn/app/id6782275018"
+      }
     },
     {
       "key": "wordmate",
@@ -1522,7 +1630,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6789917808?ct=iag_api_zh_hans",
       "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/wordmate.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "38",
+        "currency": "CNY",
+        "formatted_price": "¥38.00",
+        "storefront_url": "https://apps.apple.com/cn/app/id6789917808"
+      }
     }
   ]
 }

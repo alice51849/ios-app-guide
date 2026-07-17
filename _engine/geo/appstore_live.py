@@ -17,7 +17,7 @@ STATE_FILE = ".appstore_live_state.json"
 UA = "Mozilla/5.0 (Lumi Apps availability checker)"
 
 
-def _lookup_country(ids, country, attempts=3):
+def _lookup_country_records(ids, country, attempts=3):
     query = urllib.parse.urlencode({
         "id": ",".join(sorted(ids)),
         "country": country,
@@ -31,9 +31,9 @@ def _lookup_country(ids, country, attempts=3):
             with urllib.request.urlopen(req, timeout=30) as response:
                 payload = json.load(response)
             return {
-                str(item["trackId"])
+                str(item["trackId"]): item
                 for item in payload.get("results", [])
-                if item.get("trackId")
+                if isinstance(item, dict) and item.get("trackId")
             }
         except urllib.error.HTTPError as exc:
             if exc.code not in RETRYABLE_HTTP:
@@ -44,6 +44,10 @@ def _lookup_country(ids, country, attempts=3):
         if attempt + 1 < attempts:
             time.sleep(2 ** attempt)
     raise RuntimeError(f"App Store lookup failed for {country}: {last_error}")
+
+
+def _lookup_country(ids, country, attempts=3):
+    return set(_lookup_country_records(ids, country, attempts))
 
 
 def fetch_live_ids(ids):

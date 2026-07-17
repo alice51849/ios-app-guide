@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
-  "api_version": "1.1.0",
+  "api_version": "1.2.0",
   "date_modified": "2026-07-17",
-  "content_digest": "b26a6a616fbb32611e60f59a79198da069fac002c4e1b10d1488106434f8e343",
+  "content_digest": "81d4e8dc351edcc00d0dabc51274519f7aa2e997d1c783138e99cc308698115c",
   "locale": "mr-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -38,7 +38,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6784974530?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/aim990.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/in/app/id6784974530"
+      }
     },
     {
       "key": "cvdesk",
@@ -93,7 +99,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6781337213?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/cvdesk.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/in/app/id6781337213"
+      }
     },
     {
       "key": "cyca",
@@ -146,7 +158,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6782251621?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/cyca.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/in/app/id6782251621"
+      }
     },
     {
       "key": "gmoney",
@@ -197,7 +215,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6755782939?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/gmoney.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "499",
+        "currency": "INR",
+        "formatted_price": "₹ 499",
+        "storefront_url": "https://apps.apple.com/in/app/id6755782939"
+      }
     },
     {
       "key": "hourstag",
@@ -252,7 +276,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6754218117?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/hourstag.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "499",
+        "currency": "INR",
+        "formatted_price": "₹ 499",
+        "storefront_url": "https://apps.apple.com/in/app/id6754218117"
+      }
     },
     {
       "key": "lockhour",
@@ -306,7 +336,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6780107485?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/lockhour.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/in/app/id6780107485"
+      }
     },
     {
       "key": "lumibopomofo",
@@ -358,7 +394,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6773017109?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/lumibopomofo.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/in/app/id6773017109"
+      }
     },
     {
       "key": "lumibopomofopro",
@@ -412,7 +454,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6775773117?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/lumibopomofopro.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "999",
+        "currency": "INR",
+        "formatted_price": "₹ 999",
+        "storefront_url": "https://apps.apple.com/in/app/id6775773117"
+      }
     },
     {
       "key": "lumiletters",
@@ -464,7 +512,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6778748533?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/lumiletters.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/in/app/id6778748533"
+      }
     },
     {
       "key": "lumiletterspro",
@@ -518,7 +572,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6778491147?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/lumiletterspro.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "999",
+        "currency": "INR",
+        "formatted_price": "₹ 999",
+        "storefront_url": "https://apps.apple.com/in/app/id6778491147"
+      }
     },
     {
       "key": "lumimath",
@@ -603,7 +663,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6778269699?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/lumimath.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/in/app/id6778269699"
+      }
     },
     {
       "key": "lumimathpro",
@@ -657,7 +723,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6776958488?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/lumimathpro.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "999",
+        "currency": "INR",
+        "formatted_price": "₹ 999",
+        "storefront_url": "https://apps.apple.com/in/app/id6776958488"
+      }
     },
     {
       "key": "lumimission",
@@ -710,7 +782,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6779750237?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/lumimission.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/in/app/id6779750237"
+      }
     },
     {
       "key": "lumimissionpro",
@@ -759,7 +837,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6779745474?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/lumimissionpro.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "599",
+        "currency": "INR",
+        "formatted_price": "₹ 599",
+        "storefront_url": "https://apps.apple.com/in/app/id6779745474"
+      }
     },
     {
       "key": "tripplanet",
@@ -792,7 +876,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6787193643?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/tripplanet.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/in/app/id6787193643"
+      }
     },
     {
       "key": "lumiweather",
@@ -845,7 +935,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6779552704?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/lumiweather.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/in/app/id6779552704"
+      }
     },
     {
       "key": "mochi",
@@ -883,7 +979,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6785004775?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/mochi.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/in/app/id6785004775"
+      }
     },
     {
       "key": "photocream",
@@ -938,7 +1040,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6781808054?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/photocream.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/in/app/id6781808054"
+      }
     },
     {
       "key": "picclear",
@@ -991,7 +1099,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6780223070?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/picclear.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/in/app/id6780223070"
+      }
     },
     {
       "key": "scanto",
@@ -1024,7 +1138,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6779977651?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/scanto.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/in/app/id6779977651"
+      }
     },
     {
       "key": "sereno",
@@ -1057,7 +1177,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6788236641?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/sereno.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/in/app/id6788236641"
+      }
     },
     {
       "key": "snapport",
@@ -1109,7 +1235,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6780575828?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/snapport.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "499",
+        "currency": "INR",
+        "formatted_price": "₹ 499",
+        "storefront_url": "https://apps.apple.com/in/app/id6780575828"
+      }
     },
     {
       "key": "sononote",
@@ -1160,7 +1292,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6782139553?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/sononote.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/in/app/id6782139553"
+      }
     },
     {
       "key": "tripbee",
@@ -1197,7 +1335,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6787754435?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/tripbee.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "599",
+        "currency": "INR",
+        "formatted_price": "₹ 599",
+        "storefront_url": "https://apps.apple.com/in/app/id6787754435"
+      }
     },
     {
       "key": "unblurry",
@@ -1249,7 +1393,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6782275018?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/unblurry.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/in/app/id6782275018"
+      }
     },
     {
       "key": "wordmate",
@@ -1283,7 +1433,13 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6789917808?ct=iag_api_mr_in",
       "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/wordmate.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "599",
+        "currency": "INR",
+        "formatted_price": "₹ 599",
+        "storefront_url": "https://apps.apple.com/in/app/id6789917808"
+      }
     }
   ]
 }

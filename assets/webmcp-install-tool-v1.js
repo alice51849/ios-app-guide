@@ -8,6 +8,7 @@
   try {
     data = JSON.parse(node.textContent);
     const store = new URL(data.app_store_url);
+    const facts = data.storefront_facts;
     if (
       store.protocol !== "https:" ||
       store.hostname !== "apps.apple.com" ||
@@ -16,6 +17,34 @@
       store.hash ||
       !/^[0-9]{9,12}$/.test(data.app_store_id)
     ) throw new TypeError("Invalid verified App Store payload.");
+    if (
+      facts !== undefined &&
+      (
+        facts === null ||
+        typeof facts !== "object" ||
+        Array.isArray(facts) ||
+        typeof facts.price !== "string" ||
+        !/^(?:0|[1-9][0-9]*)(?:\.[0-9]+)?$/.test(facts.price) ||
+        typeof facts.currency !== "string" ||
+        !/^[A-Z]{3}$/.test(facts.currency) ||
+        typeof facts.formatted_price !== "string" ||
+        !facts.formatted_price ||
+        (
+          (facts.rating_value === undefined) !==
+          (facts.rating_count === undefined)
+        ) ||
+        (
+          facts.rating_value !== undefined &&
+          (
+            typeof facts.rating_value !== "number" ||
+            facts.rating_value < 0 ||
+            facts.rating_value > 5 ||
+            !Number.isInteger(facts.rating_count) ||
+            facts.rating_count <= 0
+          )
+        )
+      )
+    ) throw new TypeError("Invalid verified App Store facts.");
   } catch (error) {
     console.error("WebMCP install data is invalid.", error);
     return;
@@ -42,6 +71,9 @@
     app_store_url: data.app_store_url,
     availability_source: "Apple public storefront lookup snapshot"
   };
+  if (data.storefront_facts) {
+    result.storefront_facts = data.storefront_facts;
+  }
   async function register() {
     await document.modelContext.registerTool({
       name: "get_verified_ios_app_install_link",

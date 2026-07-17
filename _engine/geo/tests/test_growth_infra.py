@@ -17318,6 +17318,35 @@ class GeneratorTests(unittest.TestCase):
                             + "</script>"
                         )
                     path.write_text(content, encoding="utf-8")
+            (
+                pages / app_store_storefronts.STATE_FILE
+            ).write_text(
+                json.dumps(
+                    {
+                        "version": 2,
+                        "countries": {
+                            "us": ["6780575828", "6789917808"],
+                        },
+                        "details": {
+                            "us": {
+                                "6780575828": {
+                                    "price": "8.99",
+                                    "currency": "USD",
+                                    "formatted_price": "$8.99",
+                                    "rating_value": 5.0,
+                                    "rating_count": 2,
+                                },
+                                "6789917808": {
+                                    "price": "0",
+                                    "currency": "USD",
+                                    "formatted_price": "Free",
+                                },
+                            }
+                        },
+                    }
+                ),
+                encoding="utf-8",
+            )
 
             structured_summary = (
                 portfolio_app_catalog_api._localized_summary(
@@ -17449,6 +17478,20 @@ class GeneratorTests(unittest.TestCase):
             "Complete first paragraph for Snapport.",
             structured_summary,
         )
+        self.assertEqual(
+            {
+                "price": "8.99",
+                "currency": "USD",
+                "formatted_price": "$8.99",
+                "rating_value": 5.0,
+                "rating_count": 2,
+                "storefront_url": (
+                    "https://apps.apple.com/us/app/id6780575828"
+                ),
+            },
+            english["apps"][0]["storefront_facts"],
+        )
+        self.assertNotIn("storefront_facts", japanese["apps"][0])
         self.assertEqual(
             " ".join(
                 build_pages_i18n.external_localized_values(
@@ -20022,6 +20065,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",
             "gen_guide_design.py",
+            "gen_app_store_facts.py",
             "validate_webstories.py",
             "gen_llms.py --cached-live",
             "zhuyin_resourcesync.py",
@@ -20061,6 +20105,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(3, workflow.count("validate_webstories.py"))
         self.assertEqual(3, workflow.count("gen_mobile_app_identity.py"))
         self.assertEqual(3, workflow.count("gen_webmcp_install_tools.py"))
+        self.assertEqual(3, workflow.count("gen_app_store_facts.py"))
         final_cleanup_block = workflow.split(
             "- name: Final link and availability cleanup", 1
         )[1].split("- name: Commit localized pages if any", 1)[0]
@@ -20076,6 +20121,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",
             "gen_guide_design.py",
+            "gen_app_store_facts.py",
             "gen_llms.py --cached-live",
             "zhuyin_resourcesync.py",
             "gen_feed.py",
@@ -20101,6 +20147,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",
             "gen_guide_design.py",
+            "gen_app_store_facts.py",
             "validate_webstories.py",
             "gen_llms.py --cached-live",
             "gen_feed.py",
@@ -20247,6 +20294,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("gen_app_store_qr_ctas.py", publish)
         self.assertIn("gen_app_store_share_ctas.py", publish)
         self.assertIn("gen_guide_design.py", publish)
+        self.assertIn("gen_app_store_facts.py", publish)
         self.assertIn("family_travel_mission_cards.py", publish)
         self.assertIn("family_travel_observation_passport.py", publish)
         self.assertIn("family_travel_opds_catalog.py", publish)
@@ -20316,6 +20364,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",
             "gen_guide_design.py",
+            "gen_app_store_facts.py",
             "validate_webstories.py",
             "gen_llms.py",
             "zhuyin_resourcesync.py",
@@ -20589,9 +20638,20 @@ class GeneratorTests(unittest.TestCase):
             return_value={"lumibopomofo"},
         ), mock.patch.object(
             refresh_storefront_availability,
-            "_lookup_country",
+            "_lookup_country_records",
             side_effect=lambda ids, country: (
-                set() if country == "cn" else set(ids)
+                {}
+                if country == "cn"
+                else {
+                    str(value): {
+                        "price": 0.0,
+                        "currency": "TWD",
+                        "formattedPrice": "免費",
+                        "averageUserRating": 5.0,
+                        "userRatingCount": 3,
+                    }
+                    for value in ids
+                }
             ),
         ):
             snapshot = refresh_storefront_availability.refresh(
@@ -20604,6 +20664,9 @@ class GeneratorTests(unittest.TestCase):
                     / app_store_storefronts.STATE_FILE
                 ).read_text(encoding="utf-8")
             )
+            loaded_details = (
+                app_store_storefronts.load_storefront_details(directory)
+            )
         self.assertEqual(
             set(app_store_storefronts.LOCALE_STOREFRONTS.values()),
             set(snapshot),
@@ -20611,6 +20674,21 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(frozenset(), snapshot["cn"])
         self.assertEqual(frozenset({app_id}), snapshot["tw"])
         self.assertEqual(1, payload["app_count"])
+        self.assertEqual(2, payload["version"])
+        self.assertEqual(
+            {
+                "price": "0",
+                "currency": "TWD",
+                "formatted_price": "免費",
+                "rating_value": 5.0,
+                "rating_count": 3,
+            },
+            payload["details"]["tw"][str(app_id)],
+        )
+        self.assertEqual(
+            payload["details"]["tw"],
+            loaded_details["tw"],
+        )
 
     def test_external_catalog_copy_is_native_for_every_live_app(self):
         pages = Path(GEO) / "pages"

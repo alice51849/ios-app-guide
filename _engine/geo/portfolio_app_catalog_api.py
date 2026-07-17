@@ -17,6 +17,11 @@ ROOT = HERE.parent
 sys.path.insert(0, str(ROOT / "social"))
 
 from appstore_live import live_app_keys  # noqa: E402
+from app_store_storefronts import (  # noqa: E402
+    LOCALE_STOREFRONTS,
+    load_storefront_details,
+    localized_app_store_url,
+)
 import build_pages_i18n  # noqa: E402
 from family_travel_dataset import write_text_if_changed  # noqa: E402
 from official_locales import (  # noqa: E402
@@ -36,7 +41,7 @@ PAGES = HERE / "pages"
 SITE = os.environ.get(
     "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
 ).rstrip("/")
-API_VERSION = "1.1.0"
+API_VERSION = "1.2.0"
 SLUG = "ios-app-catalog"
 API_PATH = Path("api") / "v1" / SLUG
 API_BASE = f"{SITE}/{API_PATH.as_posix()}"
@@ -61,7 +66,7 @@ COPY = {
         "eyebrow": "OpenAPI 3.1 · 50 locales · no API key",
         "lead": (
             "Give an assistant a locale-specific catalog so it can match a real task "
-            "to a verified app without inventing prices, ratings or rankings."
+            "to a verified app, with exact Apple storefront facts when available."
         ),
         "switch": "繁體中文",
         "finder": "Interactive app finder",
@@ -80,9 +85,10 @@ COPY = {
         ),
         "contract": "Trust contract",
         "contract_text": (
-            "Availability is inherited from the four-market Apple lookup gate. Results "
-            "are alphabetical, never ranked, and contain no fabricated offer, price, "
-            "rating, review or outcome claim. The API accepts and stores no user data."
+            "Availability, prices and ratings come from public Apple lookup snapshots. "
+            "Missing storefront facts stay absent; results are alphabetical, never "
+            "ranked, and contain no fabricated review or outcome claim. The API accepts "
+            "and stores no user data."
         ),
         "footer": (
             "CC BY 4.0 covers the original catalog compilation, not Apple or app trademarks."
@@ -98,7 +104,7 @@ COPY = {
         "eyebrow": "OpenAPI 3.1 · 50 個 locale · 免 API 金鑰",
         "lead": (
             "讓 AI 助理依使用者所在地讀取對應目錄，以真實需求配對已驗證 App，"
-            "不捏造價格、評分或排行。"
+            "並在 Apple 有資料時取得該 storefront 的真實價格與評分。"
         ),
         "switch": "English",
         "finder": "互動式 App 篩選器",
@@ -116,8 +122,9 @@ COPY = {
         ),
         "contract": "可信度契約",
         "contract_text": (
-            "上架狀態沿用 Apple 四市場 lookup gate；結果依名稱排序、絕非排行榜，"
-            "不包含虛構的優惠、價格、評分、評論或成果宣稱，也不接收或儲存使用者資料。"
+            "上架狀態、價格與評分皆來自 Apple 公開 lookup 快照；缺少的 storefront "
+            "資料維持缺省。結果依名稱排序、絕非排行榜，不虛構評論或成果宣稱，"
+            "也不接收或儲存使用者資料。"
         ),
         "footer": "CC BY 4.0 僅涵蓋原創目錄彙編，不涵蓋 Apple 或各 App 商標。",
     },
@@ -274,6 +281,9 @@ def localized_record(
     record: dict[str, object],
     locale: str,
     pages: Path = PAGES,
+    storefront_details: (
+        dict[str, dict[str, dict[str, object]]] | None
+    ) = None,
 ) -> dict[str, object]:
     path = pages / locale / f"{record['key']}.html"
     localizations = build_pages_i18n.load_app_locales(str(record["key"]))
@@ -297,7 +307,7 @@ def localized_record(
         raise ValueError(
             f"Missing localized catalog summary: {record['key']}/{locale}"
         )
-    return {
+    localized = {
         "key": record["key"],
         "app_store_id": str(record["app_store_id"]),
         "name": build_pages_i18n._single_line(values["name"]),
@@ -314,6 +324,21 @@ def localized_record(
         "guide_url": f"{SITE}/{locale}/{record['key']}.html",
         "verified_live": True,
     }
+    if storefront_details is None:
+        storefront_details = load_storefront_details(pages)
+    country = LOCALE_STOREFRONTS[locale]
+    detail = storefront_details.get(country, {}).get(
+        str(record["app_store_id"])
+    )
+    if detail is not None:
+        storefront_facts = dict(detail)
+        storefront_facts["storefront_url"] = localized_app_store_url(
+            "https://apps.apple.com/app/"
+            f"id{record['app_store_id']}",
+            locale,
+        )
+        localized["storefront_facts"] = storefront_facts
+    return localized
 
 
 def _content_digest(localized: dict[str, list[dict[str, object]]]) -> str:
@@ -676,6 +701,55 @@ def catalog_schema() -> dict[str, object]:
                         },
                         "guide_url": {"type": "string", "format": "uri"},
                         "verified_live": {"const": True},
+                        "storefront_facts": {
+                            "type": "object",
+                            "additionalProperties": False,
+                            "required": [
+                                "price",
+                                "currency",
+                                "formatted_price",
+                                "storefront_url",
+                            ],
+                            "dependentRequired": {
+                                "rating_value": ["rating_count"],
+                                "rating_count": ["rating_value"],
+                            },
+                            "properties": {
+                                "price": {
+                                    "type": "string",
+                                    "pattern": (
+                                        "^(?:0|[1-9][0-9]*)"
+                                        "(?:\\.[0-9]+)?$"
+                                    ),
+                                },
+                                "currency": {
+                                    "type": "string",
+                                    "pattern": "^[A-Z]{3}$",
+                                },
+                                "formatted_price": {
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "maxLength": 64,
+                                },
+                                "storefront_url": {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": (
+                                        "^https://apps\\.apple\\.com/"
+                                        "[a-z]{2}/app/id[0-9]{9,12}$"
+                                    ),
+                                },
+                                "rating_value": {
+                                    "type": "number",
+                                    "minimum": 0,
+                                    "maximum": 5,
+                                },
+                                "rating_count": {
+                                    "type": "integer",
+                                    "minimum": 1,
+                                },
+                            },
+                        },
                     },
                 },
             },
@@ -809,8 +883,9 @@ def openapi_document() -> dict[str, object]:
             ),
             "description": (
                 "Read-only static catalogs with localized summaries, localized search "
-                "terms, factual capabilities and directly attributable App Store links. "
-                "Records are alphabetical and are not rankings."
+                "terms, verified storefront facts when available, factual capabilities "
+                "and directly attributable App Store links. Records are alphabetical "
+                "and are not rankings."
             ),
             "version": API_VERSION,
             "license": {"name": "CC BY 4.0", "url": LICENSE_URL},
@@ -824,7 +899,8 @@ def openapi_document() -> dict[str, object]:
             {
                 "name": "Verified iOS apps",
                 "description": (
-                    "Live App Store records with no fabricated price, rating or review."
+                    "Live App Store records with public Apple price and rating facts "
+                    "only when the exact storefront returned them."
                 ),
             }
         ],
@@ -1151,9 +1227,15 @@ def build(
     live_keys: set[str] | list[str],
 ) -> list[str]:
     records = portfolio_app_finder.catalog_records(live_keys, pages)
+    storefront_details = load_storefront_details(pages)
     localized = {
         locale: [
-            localized_record(record, locale, pages)
+            localized_record(
+                record,
+                locale,
+                pages,
+                storefront_details,
+            )
             for record in records
         ]
         for locale in OFFICIAL_LOCALES

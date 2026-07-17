@@ -20,7 +20,7 @@
       "const": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json"
     },
     "api_version": {
-      "const": "1.1.0"
+      "const": "1.2.0"
     },
     "date_modified": {
       "type": "string",
@@ -204,6 +204,53 @@
           },
           "verified_live": {
             "const": true
+          },
+          "storefront_facts": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "price",
+              "currency",
+              "formatted_price",
+              "storefront_url"
+            ],
+            "dependentRequired": {
+              "rating_value": [
+                "rating_count"
+              ],
+              "rating_count": [
+                "rating_value"
+              ]
+            },
+            "properties": {
+              "price": {
+                "type": "string",
+                "pattern": "^(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?$"
+              },
+              "currency": {
+                "type": "string",
+                "pattern": "^[A-Z]{3}$"
+              },
+              "formatted_price": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "storefront_url": {
+                "type": "string",
+                "format": "uri",
+                "pattern": "^https://apps\\.apple\\.com/[a-z]{2}/app/id[0-9]{9,12}$"
+              },
+              "rating_value": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 5
+              },
+              "rating_count": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
           }
         }
       }

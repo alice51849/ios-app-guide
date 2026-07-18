@@ -627,6 +627,12 @@ class GeneratorTests(unittest.TestCase):
                     f'<meta name="description" content="{locale} app guide.">'
                     f'<link rel="canonical" href="{site}/{locale}/'
                     'lumibopomofo.html">'
+                    f"{gen_social_previews.QR_STYLE_ANCHOR}"
+                    '<link rel="stylesheet" href="/qr.css">'
+                    "<!-- app-store-qr-style:end -->"
+                    f"{gen_social_previews.DECISION_STYLE_ANCHOR}"
+                    '<link rel="stylesheet" href="/decision.css">'
+                    "<!-- app-decision-card-style:end -->"
                     f'<link rel="alternate" type="application/feed+json" '
                     f'href="{site}/feed.json"></head>'
                     f"<body><h1>{locale} Lumi Bopomofo</h1></body>",
@@ -662,6 +668,25 @@ class GeneratorTests(unittest.TestCase):
                 path = pages / relative
                 path.parent.mkdir(parents=True, exist_ok=True)
                 path.write_text("resource", encoding="utf-8")
+            (pages / app_store_storefronts.STATE_FILE).write_text(
+                json.dumps(
+                    {
+                        "countries": {"jp": ["6773017109"]},
+                        "details": {
+                            "jp": {
+                                "6773017109": {
+                                    "price": "600",
+                                    "currency": "JPY",
+                                    "formatted_price": "¥600",
+                                    "rating_value": 4.9,
+                                    "rating_count": 12,
+                                }
+                            }
+                        },
+                    }
+                ),
+                encoding="utf-8",
+            )
             stale_card = pages / "social" / "img" / "stale-share.jpg"
             stale_oembed = pages / "oembed" / "stale.json"
             stale_card.parent.mkdir(parents=True)
@@ -742,8 +767,27 @@ class GeneratorTests(unittest.TestCase):
                 localized_embed["_lumi_guide_url"],
             )
             self.assertEqual(
-                "https://apps.apple.com/app/id6773017109?ct=iag_oembed_ja",
+                "https://apps.apple.com/jp/app/id6773017109?ct=iag_oembed_ja",
                 localized_embed["_lumi_app_store_url"],
+            )
+            self.assertEqual(
+                {
+                    "_lumi_app_store_price": "600",
+                    "_lumi_app_store_currency": "JPY",
+                    "_lumi_app_store_formatted_price": "¥600",
+                    "_lumi_app_store_rating": 4.9,
+                    "_lumi_app_store_rating_count": 12,
+                },
+                {
+                    key: localized_embed[key]
+                    for key in (
+                        "_lumi_app_store_price",
+                        "_lumi_app_store_currency",
+                        "_lumi_app_store_formatted_price",
+                        "_lumi_app_store_rating",
+                        "_lumi_app_store_rating_count",
+                    )
+                },
             )
             localized_source = tracked[4].read_text(encoding="utf-8")
             self.assertEqual(
@@ -759,6 +803,52 @@ class GeneratorTests(unittest.TestCase):
                 localized_source,
             )
             self.assertIn(
+                'property="og:description" content="App Store · ¥600 · '
+                '★ 4.9/5 · 12. ja app guide."',
+                localized_source,
+            )
+            self.assertIn(
+                'property="og:type" content="product"',
+                localized_source,
+            )
+            self.assertIn(
+                'property="product:price:amount" content="600"',
+                localized_source,
+            )
+            self.assertIn(
+                'property="product:price:currency" content="JPY"',
+                localized_source,
+            )
+            self.assertIn(
+                'name="twitter:data1" content="¥600"',
+                localized_source,
+            )
+            self.assertIn(
+                'name="twitter:data2" content="★ 4.9/5 · 12"',
+                localized_source,
+            )
+            weak_storefront = {
+                "price": "0",
+                "currency": "USD",
+                "formatted_price": "Free",
+                "rating_value": 1.0,
+                "rating_count": 1,
+            }
+            self.assertEqual(
+                "App Store · Free",
+                gen_social_previews._storefront_proof(weak_storefront),
+            )
+            weak_metadata = gen_social_previews.metadata_block(
+                "lumibopomofo",
+                "Weak rating fixture",
+                "Description",
+                f"{site}/en-US/lumibopomofo.html",
+                "Lumi Bopomofo",
+                storefront=weak_storefront,
+            )
+            self.assertIn('name="twitter:data1" content="Free"', weak_metadata)
+            self.assertNotIn('name="twitter:data2"', weak_metadata)
+            self.assertIn(
                 'type="application/json+oembed"',
                 localized_source,
             )
@@ -771,6 +861,16 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(
                 1,
                 localized_source.count(f'href="{site}/feed.json"'),
+            )
+            self.assertLess(
+                localized_source.index(gen_social_previews.BLOCK_START),
+                localized_source.index(gen_social_previews.QR_STYLE_ANCHOR),
+            )
+            self.assertLess(
+                localized_source.index(gen_social_previews.QR_STYLE_ANCHOR),
+                localized_source.index(
+                    gen_social_previews.DECISION_STYLE_ANCHOR
+                ),
             )
             source = guide.read_text(encoding="utf-8")
             self.assertEqual(1, source.count(gen_social_previews.BLOCK_START))
@@ -916,6 +1016,10 @@ class GeneratorTests(unittest.TestCase):
         )
         keys = sorted(path.stem for path in oembed_dir.glob("*.json"))
         self.assertGreater(len(keys), 20)
+        availability = app_store_storefronts.load_storefront_availability(
+            pages
+        )
+        details = app_store_storefronts.load_storefront_details(pages)
 
         sitemap = ET.parse(pages / "sitemap_oembed.xml").getroot()
         sitemap_urls = {
@@ -931,16 +1035,25 @@ class GeneratorTests(unittest.TestCase):
         }
         store_urls = set()
         localized_count = 0
+        storefront_count = 0
+        fallback_count = 0
         for locale in OFFICIAL_LOCALES:
             for key in keys:
+                app_id = str(gen_social_previews.APPSTORE[key])
                 canonical = (
                     f"{gen_social_previews.SITE}/{locale}/{key}.html"
                 )
                 page = pages / locale / f"{key}.html"
                 endpoint = oembed_dir / locale / f"{key}.json"
-                title, _ = gen_social_previews._guide_metadata(
+                title, description = gen_social_previews._guide_metadata(
                     page,
                     canonical,
+                )
+                storefront = gen_social_previews._storefront_detail(
+                    app_id,
+                    locale,
+                    availability,
+                    details,
                 )
                 payload = json.loads(endpoint.read_text(encoding="utf-8"))
                 self.assertEqual("1.0", payload["version"])
@@ -954,7 +1067,21 @@ class GeneratorTests(unittest.TestCase):
                 )
                 self.assertEqual("https", parsed_store.scheme)
                 self.assertEqual("apps.apple.com", parsed_store.netloc)
-                self.assertRegex(parsed_store.path, r"^/app/id\d+$")
+                self.assertRegex(
+                    parsed_store.path,
+                    r"^/(?:[a-z]{2}/)?app/id\d+$",
+                )
+                expected_store = (
+                    app_store_storefronts.verified_app_store_url(
+                        f"https://apps.apple.com/app/id{app_id}",
+                        locale,
+                        availability,
+                    )
+                )
+                self.assertEqual(
+                    urllib.parse.urlsplit(expected_store).path,
+                    parsed_store.path,
+                )
                 self.assertEqual(
                     [
                         gen_social_previews._oembed_campaign(locale)
@@ -987,6 +1114,63 @@ class GeneratorTests(unittest.TestCase):
                     f'{gen_social_previews._open_graph_locale(locale)}"',
                     source,
                 )
+                if storefront is None:
+                    fallback_count += 1
+                    self.assertIn(
+                        'property="og:type" content="website"',
+                        source,
+                    )
+                    self.assertNotIn(
+                        'property="product:price:amount"',
+                        source,
+                    )
+                    self.assertNotIn(
+                        "_lumi_app_store_price",
+                        payload,
+                    )
+                else:
+                    storefront_count += 1
+                    self.assertIn(
+                        'property="og:type" content="product"',
+                        source,
+                    )
+                    proof = gen_social_previews._storefront_proof(
+                        storefront
+                    )
+                    self.assertIn(
+                        f'property="og:description" content="'
+                        f'{html.escape(f"{proof}. {description}", quote=True)}"',
+                        source,
+                    )
+                    self.assertIn(
+                        f'property="product:price:amount" content="'
+                        f'{storefront["price"]}"',
+                        source,
+                    )
+                    self.assertIn(
+                        f'property="product:price:currency" content="'
+                        f'{storefront["currency"]}"',
+                        source,
+                    )
+                    self.assertEqual(
+                        storefront["price"],
+                        payload["_lumi_app_store_price"],
+                    )
+                    self.assertEqual(
+                        storefront["currency"],
+                        payload["_lumi_app_store_currency"],
+                    )
+                    self.assertEqual(
+                        storefront["formatted_price"],
+                        payload["_lumi_app_store_formatted_price"],
+                    )
+                    has_rating = (
+                        gen_social_previews._has_social_rating(storefront)
+                    )
+                    self.assertEqual(
+                        has_rating,
+                        "_lumi_app_store_rating" in payload,
+                    )
                 schemas = [
                     json.loads(document)
                     for document in re.findall(
@@ -1017,6 +1201,9 @@ class GeneratorTests(unittest.TestCase):
             len(keys) * len(OFFICIAL_LOCALES),
             localized_count,
         )
+        self.assertEqual(localized_count, storefront_count + fallback_count)
+        self.assertGreater(storefront_count, 0)
+        self.assertGreater(fallback_count, 0)
         self.assertEqual(localized_count, len(store_urls))
         self.assertEqual(expected_urls, sitemap_urls)
         self.assertEqual(

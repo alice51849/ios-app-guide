@@ -24,6 +24,13 @@ sys.path.insert(0, str(ROOT / "social"))
 sys.path.insert(0, str(HERE))
 
 from appstore_live import live_app_keys  # noqa: E402
+from app_store_storefronts import (  # noqa: E402
+    LOCALE_STOREFRONTS,
+    load_storefront_availability,
+    load_storefront_details,
+    localized_storefront_detail,
+    verified_app_store_url,
+)
 import gen_linkset  # noqa: E402
 from official_locales import OFFICIAL_LOCALES  # noqa: E402
 from videogen.registry import APPSTORE  # noqa: E402
@@ -35,6 +42,9 @@ SITE = os.environ.get(
 ).rstrip("/")
 CARD_SIZE = (1200, 675)
 POSTER_SIZE = (450, 600)
+# One vote is too noisy to promote as social proof.
+SOCIAL_RATING_MIN_VALUE = 4.0
+SOCIAL_RATING_MIN_COUNT = 2
 SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
 OPEN_GRAPH_LOCALES = {
     "ar-SA": "ar_SA",
@@ -94,6 +104,8 @@ ROBOTS_DIRECTIVE = (
 )
 BLOCK_START = "<!-- social-preview:start -->"
 BLOCK_END = "<!-- social-preview:end -->"
+QR_STYLE_ANCHOR = "<!-- app-store-qr-style:start -->"
+DECISION_STYLE_ANCHOR = "<!-- app-decision-card-style:start -->"
 BLOCK_RE = re.compile(
     rf"\s*{re.escape(BLOCK_START)}.*?{re.escape(BLOCK_END)}\s*",
     flags=re.DOTALL,
@@ -249,7 +261,7 @@ def _campaign_store_url(store_url: str, campaign: str) -> str:
     if (
         parsed.scheme != "https"
         or parsed.netloc != "apps.apple.com"
-        or not re.fullmatch(r"/app/id\d+", parsed.path)
+        or not re.fullmatch(r"/(?:[a-z]{2}/)?app/id\d+", parsed.path)
         or not re.fullmatch(r"[a-z0-9_]{1,30}", campaign)
     ):
         raise ValueError(
@@ -277,6 +289,52 @@ def _open_graph_locale(locale: str) -> str:
     return value
 
 
+def _storefront_detail(
+    app_id: str,
+    locale: str,
+    availability: dict[str, frozenset[str]],
+    details: dict[str, dict[str, dict[str, object]]],
+) -> dict[str, object] | None:
+    country = LOCALE_STOREFRONTS[locale]
+    if app_id not in availability.get(country, frozenset()):
+        return None
+    detail = details.get(country, {}).get(app_id)
+    if detail is None:
+        return None
+    return localized_storefront_detail(detail, locale)
+
+
+def _storefront_proof(storefront: dict[str, object] | None) -> str:
+    if storefront is None:
+        return ""
+    parts = ["App Store", _normalize_text(str(storefront["formatted_price"]))]
+    if _has_social_rating(storefront):
+        parts.extend(
+            (
+                f"★ {float(storefront['rating_value']):.1f}/5",
+                str(int(storefront["rating_count"])),
+            )
+        )
+    return " · ".join(parts)
+
+
+def _has_social_rating(storefront: dict[str, object]) -> bool:
+    return (
+        "rating_value" in storefront
+        and "rating_count" in storefront
+        and float(storefront["rating_value"]) >= SOCIAL_RATING_MIN_VALUE
+        and int(storefront["rating_count"]) >= SOCIAL_RATING_MIN_COUNT
+    )
+
+
+def _social_description(
+    description: str,
+    storefront: dict[str, object] | None,
+) -> str:
+    proof = _storefront_proof(storefront)
+    return f"{proof}. {description}" if proof else description
+
+
 def oembed_relative_path(key: str, locale: str | None = None) -> str:
     if locale is None:
         return f"oembed/{key}.json"
@@ -302,8 +360,10 @@ def oembed_document(
     store_url: str,
     locale: str,
     site: str = SITE,
+    *,
+    storefront: dict[str, object] | None = None,
 ) -> dict[str, object]:
-    return {
+    document: dict[str, object] = {
         "version": "1.0",
         "type": "link",
         "title": title,
@@ -322,6 +382,22 @@ def oembed_document(
             _oembed_campaign(locale),
         ),
     }
+    if storefront is not None:
+        document.update(
+            {
+                "_lumi_app_store_price": storefront["price"],
+                "_lumi_app_store_currency": storefront["currency"],
+                "_lumi_app_store_formatted_price": storefront[
+                    "formatted_price"
+                ],
+            }
+        )
+        if _has_social_rating(storefront):
+            document["_lumi_app_store_rating"] = storefront["rating_value"]
+            document["_lumi_app_store_rating_count"] = storefront[
+                "rating_count"
+            ]
+    return document
 
 
 def primary_image_schema(
@@ -406,6 +482,7 @@ def metadata_block(
     locale: str = "en-US",
     endpoint_locale: str | None = None,
     image_alt: str | None = None,
+    storefront: dict[str, object] | None = None,
 ) -> str:
     image_url = f"{site}/social/img/{key}-share.jpg"
     embed_url = oembed_url(key, canonical, site, endpoint_locale)
@@ -418,11 +495,13 @@ def metadata_block(
         image_alt,
         locale,
     )
+    social_description = _social_description(description, storefront)
+    og_type = "product" if storefront is not None else "website"
     esc = lambda value: html.escape(str(value), quote=True)
     lines = [
         BLOCK_START,
         f'<meta property="og:title" content="{esc(title)}">',
-        '<meta property="og:type" content="website">',
+        f'<meta property="og:type" content="{og_type}">',
         f'<meta property="og:url" content="{esc(canonical)}">',
         f'<meta property="og:image" content="{esc(image_url)}">',
         f'<meta property="og:image:secure_url" content="{esc(image_url)}">',
@@ -430,26 +509,78 @@ def metadata_block(
         f'<meta property="og:image:width" content="{CARD_SIZE[0]}">',
         f'<meta property="og:image:height" content="{CARD_SIZE[1]}">',
         f'<meta property="og:image:alt" content="{esc(image_alt)}">',
-        f'<meta property="og:description" content="{esc(description)}">',
+        f'<meta property="og:description" content="{esc(social_description)}">',
         f'<meta property="og:locale" content="{esc(_open_graph_locale(locale))}">',
         '<meta property="og:site_name" content="iOS App Guide">',
-        f'<meta name="robots" content="{ROBOTS_DIRECTIVE}">',
-        '<script type="application/ld+json" data-iag="primary-image">',
-        _json_ld(schema),
-        "</script>",
-        HERO_STYLE,
-        '<meta name="twitter:card" content="summary_large_image">',
-        f'<meta name="twitter:title" content="{esc(title)}">',
-        f'<meta name="twitter:description" content="{esc(description)}">',
-        f'<meta name="twitter:image" content="{esc(image_url)}">',
-        f'<meta name="twitter:image:alt" content="{esc(image_alt)}">',
-        (
-            '<link rel="alternate" type="application/json+oembed" '
-            f'href="{esc(embed_url)}" title="{esc(title)}">'
-        ),
-        BLOCK_END,
     ]
+    if storefront is not None:
+        lines.extend(
+            (
+                f'<meta property="product:price:amount" '
+                f'content="{esc(storefront["price"])}">',
+                f'<meta property="product:price:currency" '
+                f'content="{esc(storefront["currency"])}">',
+                '<meta property="product:availability" content="instock">',
+            )
+        )
+    lines.extend(
+        (
+            f'<meta name="robots" content="{ROBOTS_DIRECTIVE}">',
+            '<script type="application/ld+json" data-iag="primary-image">',
+            _json_ld(schema),
+            "</script>",
+            HERO_STYLE,
+            '<meta name="twitter:card" content="summary_large_image">',
+            f'<meta name="twitter:title" content="{esc(title)}">',
+            (
+                f'<meta name="twitter:description" '
+                f'content="{esc(social_description)}">'
+            ),
+            f'<meta name="twitter:image" content="{esc(image_url)}">',
+            f'<meta name="twitter:image:alt" content="{esc(image_alt)}">',
+        )
+    )
+    if storefront is not None:
+        lines.extend(
+            (
+                '<meta name="twitter:label1" content="App Store">',
+                f'<meta name="twitter:data1" '
+                f'content="{esc(storefront["formatted_price"])}">',
+            )
+        )
+        if _has_social_rating(storefront):
+            rating = (
+                f"★ {float(storefront['rating_value']):.1f}/5"
+                f" · {int(storefront['rating_count'])}"
+            )
+            lines.extend(
+                (
+                    '<meta name="twitter:label2" content="★">',
+                    f'<meta name="twitter:data2" content="{esc(rating)}">',
+                )
+            )
+    lines.extend(
+        (
+            (
+                '<link rel="alternate" type="application/json+oembed" '
+                f'href="{esc(embed_url)}" title="{esc(title)}">'
+            ),
+            BLOCK_END,
+        )
+    )
     return "\n".join(lines)
+
+
+def _metadata_insert_index(source: str) -> int:
+    head_index = source.index("</head>")
+    feed_match = gen_linkset.FEED_DISCOVERY_RE.search(source)
+    if feed_match:
+        head_index = min(head_index, feed_match.start())
+    for anchor in (QR_STYLE_ANCHOR, DECISION_STYLE_ANCHOR):
+        anchor_index = source.find(anchor)
+        if 0 <= anchor_index < head_index:
+            head_index = anchor_index
+    return head_index
 
 
 def ensure_guide(path: Path, metadata: str, hero: str) -> bool:
@@ -461,8 +592,7 @@ def ensure_guide(path: Path, metadata: str, hero: str) -> bool:
         raise ValueError(
             f"Guide already declares primaryImageOfPage outside generated block: {path}"
         )
-    feed_match = gen_linkset.FEED_DISCOVERY_RE.search(cleaned)
-    insert_index = feed_match.start() if feed_match else cleaned.index("</head>")
+    insert_index = _metadata_insert_index(cleaned)
     with_metadata = (
         cleaned[:insert_index].rstrip()
         + "\n"
@@ -493,8 +623,7 @@ def ensure_metadata_page(path: Path, metadata: str) -> bool:
         raise ValueError(
             f"Page already declares primaryImageOfPage outside generated block: {path}"
         )
-    feed_match = gen_linkset.FEED_DISCOVERY_RE.search(cleaned)
-    insert_index = feed_match.start() if feed_match else cleaned.index("</head>")
+    insert_index = _metadata_insert_index(cleaned)
     updated = (
         cleaned[:insert_index].rstrip()
         + "\n"
@@ -556,6 +685,8 @@ def generate(
     _, records = gen_linkset.build_document(pages, set(live_keys), site)
     keys = [record["key"] for record in records]
     changed = 0
+    availability = load_storefront_availability(pages)
+    details = load_storefront_details(pages)
 
     image_dir = pages / "social" / "img"
     oembed_dir = pages / "oembed"
@@ -608,8 +739,20 @@ def generate(
             )
         )
         for locale in OFFICIAL_LOCALES:
+            app_id = str(APPSTORE[key])
             canonical = f"{site}/{locale}/{key}.html"
             localized_path = pages / locale / f"{key}.html"
+            storefront = _storefront_detail(
+                app_id,
+                locale,
+                availability,
+                details,
+            )
+            localized_store_url = verified_app_store_url(
+                f"https://apps.apple.com/app/id{app_id}",
+                locale,
+                availability,
+            )
             expected_localized_pages.add(localized_path)
             localized_title, localized_description = _guide_metadata(
                 localized_path,
@@ -626,9 +769,10 @@ def generate(
                             localized_title,
                             image_url,
                             canonical,
-                            record["store"],
+                            localized_store_url,
                             locale,
                             site,
+                            storefront=storefront,
                         ),
                         ensure_ascii=False,
                         indent=2,
@@ -649,6 +793,7 @@ def generate(
                         locale=locale,
                         endpoint_locale=locale,
                         image_alt=localized_title,
+                        storefront=storefront,
                     ),
                 )
             )

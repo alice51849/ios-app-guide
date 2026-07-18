@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://alice51849.github.io/ios-app-guide/data/verified-ios-app-finder-catalog.schema.json",
-  "title": "Verified Independent iOS App Finder Catalogue",
+  "title": "Lumi Studio Publisher-Verified iOS App Catalogue",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -10,6 +10,7 @@
     "question",
     "date_modified",
     "license",
+    "publisher_disclosure",
     "ordering",
     "availability_verification",
     "record_count",
@@ -32,6 +33,10 @@
     "license": {
       "type": "string",
       "format": "uri"
+    },
+    "publisher_disclosure": {
+      "type": "string",
+      "minLength": 1
     },
     "ordering": {
       "const": "alphabetical_by_app_name_not_a_ranking"

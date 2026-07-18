@@ -2,8 +2,10 @@
 import tempfile
 import unittest
 from pathlib import Path
+import sys
 from unittest.mock import patch
 
+import answer_facts
 import aeo_answers_i18n
 import queries
 from answer_personas import PERSONAS, persona_meta_description
@@ -70,6 +72,26 @@ class PersonaLocaleCoverageTests(unittest.TestCase):
             )
         )
 
+    def test_social_media_query_does_not_trigger_oci_passport_facts(self):
+        query = PERSONAS["lockhour"][0]["query"]
+        self.assertIsNone(answer_facts._detect_passport(query))
+        for alias, expected in answer_facts._COUNTRY_ALIASES.items():
+            self.assertEqual(
+                expected,
+                answer_facts._detect_passport(
+                    f"{alias.strip()} passport photo requirements"
+                ),
+                alias,
+            )
+        facts = answer_facts.topic_facts(
+            query,
+            "lockhour",
+            {"name": "LockHour Pro", "cta_bullets": []},
+        )
+        self.assertIsNotNone(facts)
+        self.assertIn("social media", str(facts).lower())
+        self.assertNotIn("passport", str(facts).lower())
+
     def test_answer_localizer_covers_all_official_locales(self):
         self.assertEqual(50, len(aeo_answers_i18n.ALL_LANGS))
         self.assertEqual(
@@ -127,6 +149,111 @@ class PersonaLocaleCoverageTests(unittest.TestCase):
             ),
         )
 
+    def test_publisher_brand_is_never_translated(self):
+        self.assertEqual(
+            {"Lumi Studio": "Lumi Studio"},
+            aeo_answers_i18n.apply_locale_text_overrides(
+                {"Lumi Studio": "露米工作室"},
+                "zh-Hant",
+            ),
+        )
+
+    def test_unblurry_personas_do_not_claim_to_recreate_missing_detail(self):
+        copy = str(PERSONAS["unblurry"]).lower()
+        for claim in (
+            "recover detail",
+            "rebuild real detail",
+            "add genuine detail",
+        ):
+            self.assertNotIn(claim, copy)
+        self.assertIn("doesn't invent detail", copy)
+
+    def test_reviewed_tripbee_subtitle_overrides_translate_generic_copy(self):
+        source = "TripBee Pro: Trip Planner"
+        for locale in (
+            "el",
+            "id",
+            "ja",
+            "ml-IN",
+            "mr-IN",
+            "or-IN",
+            "pa-IN",
+            "th",
+            "ur-PK",
+        ):
+            translated = aeo_answers_i18n.apply_locale_text_overrides(
+                {source: source},
+                locale,
+            )[source]
+            self.assertTrue(translated.startswith("TripBee Pro: "))
+            self.assertNotEqual(source, translated)
+
+    def test_reviewed_target_terms_avoid_tracking_and_regional_spanish(self):
+        self.assertEqual(
+            "skriveøving",
+            aeo_answers_i18n.apply_locale_target_replacements(
+                "streksporing",
+                "no",
+            ),
+        )
+
+    def test_reviewed_asian_terms_remove_non_brand_english(self):
+        cases = (
+            ("id", "Prompt tanpa watermark dan light leak", "Petunjuk tanpa tanda air dan kebocoran cahaya"),
+            ("ms", "Pencipta travel tanpa watermark", "Pencipta kandungan pelancongan tanpa tanda air"),
+            ("vi", "Widget offline tanpa watermark", "Tiện ích ngoại tuyến tanpa hình mờ"),
+            ("zh-Hant", "最佳旅遊應用", "最佳旅遊App"),
+            ("zh-Hant", "最佳旅遊應用程式", "最佳旅遊應用程式"),
+        )
+        for locale, source, expected in cases:
+            self.assertEqual(
+                expected,
+                aeo_answers_i18n.apply_locale_target_replacements(
+                    source,
+                    locale,
+                ),
+            )
+
+    def test_japanese_tripbee_override_preserves_itinerary_categories(self):
+        source, translated = next(
+            (source, translated)
+            for source, translated in aeo_answers_i18n.LOCALE_TEXT_OVERRIDES[
+                "ja"
+            ].items()
+            if source.startswith("A good itinerary app")
+        )
+        self.assertIn("flights, hotels, activities", source)
+        self.assertIn("フライト、ホテル、アクティビティ", translated)
+        self.assertEqual(
+            "kalkering",
+            aeo_answers_i18n.apply_locale_target_replacements(
+                "streckspårning",
+                "sv",
+            ),
+        )
+        self.assertEqual(
+            "Ingen spårning",
+            aeo_answers_i18n.apply_locale_target_replacements(
+                "Ingen spårning",
+                "sv",
+            ),
+        )
+        self.assertEqual(
+            "celular",
+            aeo_answers_i18n.apply_locale_target_replacements(
+                "móvil",
+                "es-MX",
+            ),
+        )
+
+    def test_north_american_english_uses_summarize(self):
+        source = "Capture and summarise the meeting."
+        for locale in ("en-US", "en-CA"):
+            self.assertEqual(
+                "Capture and summarize the meeting.",
+                aeo_answers_i18n.english_mapping([source], locale)[source],
+            )
+
     def test_reviewed_target_terms_replace_brand_and_meaning_errors(self):
         self.assertEqual(
             "iPhone‌ನಲ್ಲಿ ಪ್ರಾಮಾಣಿಕ ಮಾರ್ಗದರ್ಶಿ",
@@ -157,6 +284,38 @@ class PersonaLocaleCoverageTests(unittest.TestCase):
             max_chars=24000,
         )
         self.assertEqual([[strings[0]], [strings[1], strings[2]]], batches)
+
+    def test_github_translation_cache_resumes_completed_batches(self):
+        with tempfile.TemporaryDirectory() as tmp, patch.object(
+            aeo_answers_i18n.subprocess,
+            "run",
+        ) as run:
+            run.return_value.stdout = "token"
+            first = aeo_answers_i18n.GithubModelsTranslator(
+                ["Hello"],
+                cache_dir=Path(tmp),
+            )
+            with patch.object(
+                first,
+                "_translate_batch",
+                return_value={"Hello": "Bonjour"},
+            ) as translate:
+                self.assertEqual(
+                    {"Hello": "Bonjour"},
+                    first.translate(["Hello"], "fr-FR"),
+                )
+                translate.assert_called_once()
+
+            second = aeo_answers_i18n.GithubModelsTranslator(
+                ["Hello"],
+                cache_dir=Path(tmp),
+            )
+            with patch.object(second, "_translate_batch") as translate:
+                self.assertEqual(
+                    {"Hello": "Bonjour"},
+                    second.translate(["Hello"], "fr-FR"),
+                )
+                translate.assert_not_called()
 
     def test_us_english_uses_local_spelling_without_changing_brands(self):
         mapping = aeo_answers_i18n.english_mapping(
@@ -214,6 +373,44 @@ class PersonaLocaleCoverageTests(unittest.TestCase):
                     if 'hreflang="' in line
                 }
                 self.assertEqual(expected, actual)
+
+    def test_deferred_refresh_allows_parallel_locale_generation(self):
+        slug = "buyer-guide"
+        source = (
+            '<html lang="en"><head>'
+            '<link rel="canonical" href="old">'
+            '<link rel="alternate" hreflang="en" href="old">'
+            '<meta property="og:url" content="old">'
+            "</head><body><h1>Hello</h1></body></html>"
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            answers = root / "answers"
+            answers.mkdir()
+            (answers / f"{slug}.html").write_text(source, encoding="utf-8")
+            argv = [
+                "aeo_answers_i18n.py",
+                slug,
+                "--langs",
+                "en-US",
+                "--trans",
+                tmp,
+                "--defer-shared-refresh",
+            ]
+            with (
+                patch.object(aeo_answers_i18n, "ROOT", root),
+                patch.object(aeo_answers_i18n, "ANSWERS", answers),
+                patch.object(sys, "argv", argv),
+                patch.object(
+                    aeo_answers_i18n,
+                    "reconcile_all_alternates",
+                ) as reconcile,
+            ):
+                self.assertEqual(0, aeo_answers_i18n.main())
+            self.assertTrue(
+                (root / "en-US" / "answers" / f"{slug}.html").exists()
+            )
+            reconcile.assert_not_called()
 
 
 if __name__ == "__main__":

@@ -41,6 +41,7 @@ import add_related_answers
 import add_related_tools
 import answer_deep
 import answer_portfolio
+from answer_personas import PERSONAS
 import app_store_storefronts
 import appstore_live
 import build_pages
@@ -17058,6 +17059,11 @@ class GeneratorTests(unittest.TestCase):
             "alphabetical_by_app_name_not_a_ranking",
             data["ordering"],
         )
+        self.assertEqual(portfolio_app_finder.CATALOG_NAME, data["name"])
+        self.assertIn("First-party catalogue", data["publisher_disclosure"])
+        self.assertNotIn("Independent", schema["title"])
+        self.assertIn("first-party portfolio finder", english)
+        self.assertIn("第一方作品集篩選器", chinese)
         self.assertEqual(2, english.count('data-app-card '))
         cards = re.findall(
             r'<article class="app-card".*?</article>',
@@ -17231,6 +17237,18 @@ class GeneratorTests(unittest.TestCase):
             if node.get("@type") == "CollectionPage"
         )["mainEntity"]
         self.assertEqual(2, item_list["numberOfItems"])
+        dataset = next(
+            node
+            for node in json_ld["@graph"]
+            if node.get("@type") == "Dataset"
+        )
+        self.assertEqual(
+            {"@type": "Organization", "name": "Lumi Studio", "url": (
+                "https://alice51849.github.io/ios-app-guide/about.html"
+            )},
+            dataset["creator"],
+        )
+        self.assertEqual(dataset["creator"], dataset["publisher"])
         self.assertTrue(
             all(
                 "position" not in item
@@ -17270,7 +17288,7 @@ class GeneratorTests(unittest.TestCase):
             ),
         )
         self.assertEqual(
-            "2026-07-15",
+            "2026-07-18",
             answer_portfolio.CONTENT_DATE,
         )
         self.assertIn(
@@ -18534,6 +18552,73 @@ class GeneratorTests(unittest.TestCase):
         ), self.assertRaises(SystemExit) as raised:
             aeo_answers_i18n.main()
         self.assertEqual(2, raised.exception.code)
+
+    def test_every_live_app_has_one_primary_persona_in_all_official_locales(self):
+        pages = Path(GEO).parents[1]
+        live = appstore_live.live_app_keys(
+            APPSTORE,
+            str(Path(GEO) / "pages"),
+            refresh=False,
+        )
+        self.assertEqual(live, set(PERSONAS))
+        for key, personas in PERSONAS.items():
+            slug = aeo_answers.slugify(personas[0]["query"])
+            root = pages / "answers" / f"{slug}.html"
+            paths = [
+                (None, root),
+                *[
+                    (
+                        locale,
+                        pages / locale / "answers" / f"{slug}.html",
+                    )
+                    for locale in OFFICIAL_LOCALES
+                ],
+            ]
+            root_text = root.read_text(encoding="utf-8")
+            root_h1 = re.search(r"<h1>(.*?)</h1>", root_text, re.S).group(1)
+            for locale, path in paths:
+                self.assertTrue(path.exists(), f"missing {key}: {path}")
+                text = path.read_text(encoding="utf-8")
+                self.assertIn(
+                    f"apps.apple.com/app/id{APPSTORE[key]}",
+                    text,
+                    f"wrong App Store owner for {key}: {path}",
+                )
+                if locale and not locale.startswith("en-"):
+                    localized_h1 = re.search(
+                        r"<h1>(.*?)</h1>",
+                        text,
+                        re.S,
+                    ).group(1)
+                    self.assertNotEqual(
+                        root_h1,
+                        localized_h1,
+                        f"English H1 fallback for {key}: {path}",
+                    )
+                if key == "lockhour":
+                    self.assertNotIn(
+                        "passport photo",
+                        text.lower(),
+                        f"cross-topic passport copy for {key}: {path}",
+                    )
+
+    def test_persona_page_discloses_first_party_publisher(self):
+        query = PERSONAS["cvdesk"][0]["query"]
+        page = aeo_answers.render_page(
+            query,
+            "cvdesk",
+            aeo_answers.normalized_content(
+                aeo_answers.default_content(query, "cvdesk"),
+                query,
+                "cvdesk",
+            ),
+        )
+        self.assertIn(
+            "publisher-authored buying guide from the app developer",
+            page,
+        )
+        self.assertNotIn("independent buying guide", page)
+        self.assertIn('"name": "Lumi Studio"', page)
 
     def test_answer_localizer_updates_jsonld_language_semantically(self):
         source = (

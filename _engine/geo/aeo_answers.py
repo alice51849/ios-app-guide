@@ -177,7 +177,7 @@ def prompt_for(question: str, key: str) -> list[dict[str, str]]:
             "faq": "3 Q&A items, concise answers",
         },
         "app_facts": facts,
-        "tone": "helpful, practical, independent, non-hype",
+        "tone": "helpful, practical, transparent, evidence-based, non-hype",
         "output_json_shape": {
             "meta_description": "string",
             "lead": "string",
@@ -274,7 +274,13 @@ def default_content(question: str, key: str) -> dict[str, Any]:
         "faq": [
             {"q": f"Is {name} a good option?", "a": f"{name} can be a good option if its current App Store features match your needs and budget."},
             {"q": "What should I verify first?", "a": "Check current pricing, privacy labels, export limits, and the exact features included in the version you plan to use."},
-            {"q": "Is this page independent?", "a": "Yes. It is a buying guide; app names and trademarks belong to their respective owners."},
+            {
+                "q": "Who publishes this page?",
+                "a": (
+                    "This buying guide is published by Lumi Studio, the app "
+                    "developer. Verify current App Store details before purchase."
+                ),
+            },
         ],
     }
     overlay = answer_facts.topic_facts(question, key, app)
@@ -435,7 +441,7 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
             "</script>"
         )
     org = {"@context": "https://schema.org", "@graph": [
-        {"@type": "Organization", "@id": f"{SITE}/#organization", "name": "iOS App Guide", "url": SITE},
+        {"@type": "Organization", "@id": f"{SITE}/#organization", "name": "Lumi Studio", "url": f"{SITE}/about.html"},
         {"@type": "WebSite", "@id": f"{SITE}/#website", "url": SITE, "name": "iOS App Guide", "publisher": {"@id": f"{SITE}/#organization"}},
     ]}
     pills = "".join(f'<span class="pill">{e(x)}</span>' for x in feature_list(key))
@@ -492,8 +498,9 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
     )
     app_fit = (
         f'<h2>Where {e(name)} fits</h2><p>{e(content["where_app_fits"])}</p>'
-        f'<p>{pills}</p><p class="notice">This page is an independent buying '
-        "guide. App Store features and prices can change, so confirm details on "
+        f'<p>{pills}</p><p class="notice">This is a publisher-authored buying '
+        "guide from the app developer. App Store features and prices can change, "
+        "so confirm details on "
         f'the listing before purchase.{e(special_notice)}</p>'
     )
     if primary_resource_url:
@@ -540,7 +547,7 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
 <body><header class="top"><div class="wrap nav"><a href="{SITE}/index.html">iOS App Guide</a><nav><a href="{SITE}/answers/index.html">Answers</a> · <a href="{SITE}/tools/">Free tools</a> · <a href="{SITE}/alternatives/">Alternatives</a> · <a href="{SITE}/about.html">About</a></nav></div></header>
 <main><section class="hero wrap"><div class="breadcrumb"><a href="{SITE}/index.html">Home</a> / <a href="{SITE}/answers/index.html">Answers</a></div><div class="eyebrow">High-intent answer</div><h1>{e(question)}</h1><p class="lead">{e(content["lead"])}</p><p>{hero_actions}</p></section>
 <section class="wrap grid"><article class="card two answer"><h2>Short answer</h2>{paras}<h2>What to look for before choosing</h2><ul class="checklist">{look}</ul><h2>A practical decision process</h2><ol class="checklist">{steps}</ol><h2>Quick comparison</h2><table><thead><tr><th>Need</th><th>What to check</th><th>Why it matters</th></tr></thead><tbody>{comparison_rows}</tbody></table>{sources_html}{article_app_fit}</article><aside class="card side">{sidebar_html}</aside></section>
-<section class="wrap card"><h2>FAQ</h2>{faq_html}</section>{deferred_app_fit}</main><footer class="footer"><div class="wrap">Independent guide. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.</div></footer></body></html>'''
+<section class="wrap card"><h2>FAQ</h2>{faq_html}</section>{deferred_app_fit}</main><footer class="footer"><div class="wrap">Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.</div></footer></body></html>'''
 
 
 def _coverage_rates() -> dict:
@@ -675,7 +682,7 @@ def regenerate_index() -> None:
 </script><script type="application/ld+json">
 {j(org)}
 </script>
-</head><body><header class="top"><div class="wrap nav"><a href="{SITE}/index.html">iOS App Guide</a><nav><a href="{SITE}/tools/">Free tools</a> · <a href="{SITE}/alternatives/">Alternatives</a> · <a href="{SITE}/about.html">About</a></nav></div></header><main><section class="hero wrap"><div class="eyebrow">Answer hub</div><h1>iOS app answer guides</h1><p class="lead">Practical, honest pages for high-intent questions: what to check, when a dedicated app helps, and which Alice iOS app fits the job.</p></section><section class="wrap"><h2>Topic guides</h2><p class="muted"><a href="{SITE}/passport-photos.html">Passport &amp; ID photo sizes by country</a> · <a href="{SITE}/resume-formats.html">Resume &amp; CV formats by country</a> · <a href="{SITE}/kids-learning.html">Kids learning apps</a> · <a href="{SITE}/photo-tools.html">iPhone photo tools</a> · <a href="{SITE}/focus-productivity.html">Focus &amp; productivity</a> · <a href="{SITE}/money-travel.html">Money &amp; travel</a> · <a href="{SITE}/sleep-wellbeing.html">Sleep &amp; wellbeing</a> · <a href="{SITE}/data/">Free open data</a></p></section><section class="wrap grid">{''.join(cards)}</section></main><footer class="footer"><div class="wrap">Independent iOS app guide.</div></footer></body></html>'''
+</head><body><header class="top"><div class="wrap nav"><a href="{SITE}/index.html">iOS App Guide</a><nav><a href="{SITE}/tools/">Free tools</a> · <a href="{SITE}/alternatives/">Alternatives</a> · <a href="{SITE}/about.html">About</a></nav></div></header><main><section class="hero wrap"><div class="eyebrow">Answer hub</div><h1>iOS app answer guides</h1><p class="lead">Practical, honest pages for high-intent questions: what to check, when a dedicated app helps, and which Alice iOS app fits the job.</p></section><section class="wrap"><h2>Topic guides</h2><p class="muted"><a href="{SITE}/passport-photos.html">Passport &amp; ID photo sizes by country</a> · <a href="{SITE}/resume-formats.html">Resume &amp; CV formats by country</a> · <a href="{SITE}/kids-learning.html">Kids learning apps</a> · <a href="{SITE}/photo-tools.html">iPhone photo tools</a> · <a href="{SITE}/focus-productivity.html">Focus &amp; productivity</a> · <a href="{SITE}/money-travel.html">Money &amp; travel</a> · <a href="{SITE}/sleep-wellbeing.html">Sleep &amp; wellbeing</a> · <a href="{SITE}/data/">Free open data</a></p></section><section class="wrap grid">{''.join(cards)}</section></main><footer class="footer"><div class="wrap">First-party iOS app guides published by Lumi Studio, the developer of every listed app.</div></footer></body></html>'''
     (ANSWERS_DIR / "index.html").write_text(html_doc, encoding="utf-8")
     print(f"INDEX {len(pages)} pages", flush=True)
 

@@ -65,6 +65,7 @@ LANG_NAMES = {
     "te-IN": "Telugu", "ur-PK": "Urdu",
 }
 BRANDS = [
+    "Lumi Studio",
     "Aim990",
     "TOEIC",
     "TOEIC L&R",
@@ -221,6 +222,7 @@ LOCALE_TEXT_OVERRIDES = {
         ),
     },
     "ml-IN": {
+        "TripBee Pro: Trip Planner": "TripBee Pro: യാത്രാ പ്ലാനർ",
         (
             "Travel creators need a repeatable film look that adds grain, "
             "halation and colour character without reducing every destination "
@@ -413,9 +415,61 @@ LOCALE_TEXT_OVERRIDES = {
             "Bopomofo Pro உருவாக்கப்பட்டுள்ளது."
         ),
     },
+    "el": {
+        "TripBee Pro: Trip Planner": "TripBee Pro: Σχεδιασμός Ταξιδιού",
+    },
+    "id": {
+        "TripBee Pro: Trip Planner": "TripBee Pro: Perencana Perjalanan",
+    },
+    "ja": {
+        "TripBee Pro: Trip Planner": "TripBee Pro: 旅行プランナー",
+        (
+            "A good itinerary app turns a messy trip into a clear day-by-day "
+            "timeline — flights, hotels, activities, restaurants and transport "
+            "— with clear type icons so you can read your day at a glance — "
+            "TripBee Pro: Trip Planner is built for this."
+        ): (
+            "優れた旅程アプリは、まとまりのない旅行計画を明確な日別タイムライン"
+            "に整理し、フライト、ホテル、アクティビティ、レストラン、交通機関"
+            "を種類別アイコンで一目で確認できるようにします — TripBee Pro: "
+            "Trip Planner はこのために作られています。"
+        ),
+    },
+    "mr-IN": {
+        "TripBee Pro: Trip Planner": "TripBee Pro: प्रवास नियोजक",
+    },
+    "or-IN": {
+        "TripBee Pro: Trip Planner": "TripBee Pro: ଯାତ୍ରା ଯୋଜନାକାରୀ",
+    },
+    "pa-IN": {
+        "TripBee Pro: Trip Planner": "TripBee Pro: ਯਾਤਰਾ ਯੋਜਨਾਕਾਰ",
+    },
+    "th": {
+        "TripBee Pro: Trip Planner": "TripBee Pro: วางแผนการเดินทาง",
+    },
+    "ur-PK": {
+        "TripBee Pro: Trip Planner": "TripBee Pro: سفر کا منصوبہ ساز",
+    },
 }
 LOCALE_TARGET_REPLACEMENTS = {
     "gu-IN": (("નિષ્ઠાવાન", "પ્રામાણિક"),),
+    "id": (
+        ("foto burst", "rentetan foto"),
+        ("light-leak", "kebocoran cahaya"),
+        ("light leak", "kebocoran cahaya"),
+        ("watermark", "tanda air"),
+        ("toolkit", "peralatan"),
+        ("grain", "bintik film"),
+        ("Tracing", "Menelusuri"),
+        ("tracing", "menelusuri"),
+        ("blending", "penggabungan"),
+        ("packing", "berkemas"),
+        ("setup", "persiapan"),
+        ("Prompt", "Petunjuk"),
+        ("prompt", "petunjuk"),
+        ("setiap review", "setiap kali mengulang"),
+        ("review singkat", "ulangan singkat"),
+    ),
     "it": (
         (
             "guida acquisto app iPhone",
@@ -445,9 +499,45 @@ LOCALE_TARGET_REPLACEMENTS = {
         ),
         ("di iphone", "di iPhone"),
         ("apple watch", "Apple Watch"),
+        ("Pencipta travel", "Pencipta kandungan pelancongan"),
+        ("pencipta travel", "pencipta kandungan pelancongan"),
+        ("yang travel", "yang melancong"),
+        ("Aplikasi travel", "Aplikasi perjalanan"),
+        ("aplikasi travel", "aplikasi perjalanan"),
+        ("aktiviti travel", "aktiviti perjalanan"),
+        ("trip keluarga", "percutian keluarga"),
+        ("pra-trip", "sebelum perjalanan"),
+        ("travel", "perjalanan"),
+        ("trip", "perjalanan"),
+        ("light-leak", "kebocoran cahaya"),
+        ("light leak", "kebocoran cahaya"),
+        ("watermark", "tanda air"),
+        ("toolkit", "kit alat"),
+        ("grain", "butiran filem"),
+        ("halation", "halasi"),
+        ("homeschool", "pendidikan di rumah"),
+        ("Tracing", "Menekap"),
+        ("tracing", "menekap"),
+        ("packing", "mengemas barang"),
+        ("Home Screen", "Skrin Utama"),
+        ("commute", "berulang-alik"),
+        ("Offline", "Luar talian"),
+        ("offline", "luar talian"),
+    ),
+    "no": (
+        ("Streksporing", "Skriveøving"),
+        ("streksporing", "skriveøving"),
     ),
     "pa-IN": (("ਆਈਫੋਨ", "iPhone"),),
     "sl-SI": (("iphonu", "iPhonu"),),
+    "sv": (
+        ("streckspårning", "kalkering"),
+        ("genom spårning och lek", "genom kalkering och lek"),
+        (
+            "ljud, toner, spårning, blandning och spel",
+            "ljud, toner, kalkering, blandning och spel",
+        ),
+    ),
     "ta-IN": (
         ("ஐபோனில்", "iPhone-ல்"),
         ("ஐபோன்", "iPhone"),
@@ -457,6 +547,20 @@ LOCALE_TARGET_REPLACEMENTS = {
         ("ఐఫోన్", "iPhone"),
     ),
     "ur-PK": (("آئی فون", "iPhone"),),
+    "vi": (
+        ("Không dấu watermark", "Không có hình mờ"),
+        ("không dấu watermark", "không có hình mờ"),
+        ("Không watermark", "Không có hình mờ"),
+        ("không watermark", "không có hình mờ"),
+        ("watermark", "hình mờ"),
+        ("halation", "hiệu ứng hào quang"),
+        ("profile", "cấu hình màu"),
+        ("portfolio", "hồ sơ năng lực"),
+        ("Widget", "Tiện ích"),
+        ("widget", "tiện ích"),
+        ("offline", "ngoại tuyến"),
+    ),
+    "es-MX": (("móvil", "celular"),),
 }
 NO_TRANSLATE_JSON_KEYS = {
     "@context",
@@ -873,7 +977,10 @@ def apply_locale_text_overrides(
     overrides = LOCALE_TEXT_OVERRIDES.get(lang, {})
     return {
         source: apply_locale_target_replacements(
-            overrides.get(source, target),
+            overrides.get(
+                source,
+                source if source in BRANDS else target,
+            ),
             lang,
         )
         for source, target in mapping.items()
@@ -883,6 +990,8 @@ def apply_locale_text_overrides(
 def apply_locale_target_replacements(text: str, lang: str) -> str:
     for original, replacement in LOCALE_TARGET_REPLACEMENTS.get(lang, ()):
         text = text.replace(original, replacement)
+    if lang == "zh-Hant":
+        text = re.sub(r"應用(?!程式|於|到)", "App", text)
     return text
 
 
@@ -892,6 +1001,9 @@ def english_mapping(strings: list[str], locale: str) -> dict[str, str]:
             ("practise", "practice"),
             ("recognise", "recognize"),
             ("recognising", "recognizing"),
+            ("summarise", "summarize"),
+            ("summarised", "summarized"),
+            ("summarising", "summarizing"),
             ("colour", "color"),
             ("travelling", "traveling"),
         ),
@@ -899,6 +1011,9 @@ def english_mapping(strings: list[str], locale: str) -> dict[str, str]:
             ("practise", "practice"),
             ("recognise", "recognize"),
             ("recognising", "recognizing"),
+            ("summarise", "summarize"),
+            ("summarised", "summarized"),
+            ("summarising", "summarizing"),
         ),
         "en-AU": (),
         "en-GB": (),
@@ -933,6 +1048,7 @@ class GithubModelsTranslator:
         self,
         all_strings: list[str],
         model: str = GITHUB_TRANSLATION_MODEL,
+        cache_dir: Path | None = None,
     ):
         token = subprocess.run(
             ["gh", "auth", "token"],
@@ -946,6 +1062,45 @@ class GithubModelsTranslator:
         self.model = model
         self.all_strings = list(dict.fromkeys(all_strings))
         self.cache: dict[str, dict[str, str]] = {}
+        self.cache_dir = cache_dir
+        if self.cache_dir is not None:
+            self.cache_dir.mkdir(parents=True, exist_ok=True)
+
+    def _cache_path(self, locale: str) -> Path | None:
+        if self.cache_dir is None:
+            return None
+        if locale not in ALL_LANGS:
+            raise ValueError(f"Unsupported cache locale: {locale}")
+        return self.cache_dir / f"{locale}.json"
+
+    def _load_locale_cache(self, locale: str) -> dict[str, str]:
+        path = self._cache_path(locale)
+        if path is None or not path.exists():
+            return {}
+        data = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(data, dict) or any(
+            not isinstance(source, str)
+            or not isinstance(target, str)
+            or not target.strip()
+            for source, target in data.items()
+        ):
+            raise ValueError(f"Invalid GitHub Models cache: {path}")
+        return data
+
+    def _save_locale_cache(
+        self,
+        locale: str,
+        mapping: dict[str, str],
+    ) -> None:
+        path = self._cache_path(locale)
+        if path is None:
+            return
+        temporary = path.with_suffix(f".json.tmp.{os.getpid()}")
+        temporary.write_text(
+            json.dumps(mapping, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        os.replace(temporary, path)
 
     def _translate_batch(
         self,
@@ -1096,9 +1251,17 @@ class GithubModelsTranslator:
 
     def translate(self, strings: list[str], locale: str) -> dict[str, str]:
         if locale not in self.cache:
-            mapping: dict[str, str] = {}
-            batches = github_translation_batches(self.all_strings)
+            mapping = self._load_locale_cache(locale)
+            missing = [
+                source for source in self.all_strings if source not in mapping
+            ]
+            batches = github_translation_batches(missing)
             for batch_number, batch in enumerate(batches, start=1):
+                print(
+                    f"GitHub Models {locale}: batch {batch_number}/"
+                    f"{len(batches)} ({len(batch)} strings)",
+                    flush=True,
+                )
                 mapping.update(
                     self._translate_batch(
                         batch,
@@ -1106,6 +1269,7 @@ class GithubModelsTranslator:
                         str(batch_number),
                     )
                 )
+                self._save_locale_cache(locale, mapping)
             require_complete_mapping(
                 self.all_strings,
                 mapping,
@@ -1277,9 +1441,25 @@ def main() -> int:
     parser.add_argument("--github-models", action="store_true", help="Use the authenticated GitHub Models inference API.")
     parser.add_argument("--github-model", default=GITHUB_TRANSLATION_MODEL, help="GitHub Models catalog model id.")
     parser.add_argument(
+        "--github-cache-dir",
+        type=Path,
+        help=(
+            "Persist completed GitHub Models translation batches by locale so "
+            "interrupted runs can resume."
+        ),
+    )
+    parser.add_argument(
         "--force",
         action="store_true",
         help="Overwrite existing localized pages after translations are complete.",
+    )
+    parser.add_argument(
+        "--defer-shared-refresh",
+        action="store_true",
+        help=(
+            "Defer shared hreflang and sitemap refresh so multiple locale "
+            "workers can generate safely in parallel."
+        ),
     )
     args = parser.parse_args()
     if sum(
@@ -1343,7 +1523,11 @@ def main() -> int:
                 )
                 source_strings.extend(strings)
     github_models = (
-        GithubModelsTranslator(source_strings, args.github_model)
+        GithubModelsTranslator(
+            source_strings,
+            args.github_model,
+            args.github_cache_dir,
+        )
         if args.github_models
         else None
     )
@@ -1440,7 +1624,7 @@ def main() -> int:
 
     print(json.dumps({"created": created, "skipped": skipped, "failed": failed}, ensure_ascii=False), flush=True)
     # 產生新 i18n 頁後自動刷新答案 sitemap(涵蓋所有 */answers/*.html),避免漏索引。
-    if created:
+    if created and not args.defer_shared_refresh:
         try:
             for slug in slugs:
                 reconcile_all_alternates(slug)

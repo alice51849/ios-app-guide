@@ -295,11 +295,33 @@ _COUNTRY_ALIASES = {
 }
 
 
+def _contains_phrase(text: str, phrase: str) -> bool:
+    phrase = phrase.strip()
+    return bool(
+        phrase
+        and re.search(
+            rf"(?<![a-z0-9]){re.escape(phrase)}(?![a-z0-9])",
+            text,
+        )
+    )
+
+
 def _detect_passport(q: str) -> str | None:
-    if not any(t in q for t in ("passport", "visa", "id photo", "id-photo", "green card", "oci")):
+    q = q.lower()
+    if not any(
+        _contains_phrase(q, term)
+        for term in (
+            "passport",
+            "visa",
+            "id photo",
+            "id-photo",
+            "green card",
+            "oci",
+        )
+    ):
         return None
     for alias, spec in _COUNTRY_ALIASES.items():
-        if alias.strip() and alias in q:
+        if _contains_phrase(q, alias):
             return spec
     return None
 

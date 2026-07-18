@@ -280,10 +280,10 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "query": "best app to fix blurry photos of kids on iphone",
             "triggers": ["blurry photos of kids", "blurry photo of my", "for parents", "of my kids", "family photos blurry"],
             "persona": "parents & families",
-            "lead": "Kids never hold still, so soft-focus and camera-shake shots are inevitable. On-device sharpening can rescue a lot of these — with the honest caveat that mild blur recovers well and severe motion blur may not fully clear.",
+            "lead": "Kids never hold still, so soft-focus and camera-shake shots are inevitable. On-device sharpening can improve many of these — with the honest caveat that mild blur responds best and severe motion blur may not fully clear.",
             "paras": [
-                "For a slightly soft photo of your child, Auto Clear and Sharpen modes can recover detail in seconds, and a before/after slider lets you see the real improvement before you save — so you keep the shot only if it genuinely looks better.",
-                "It works on-device with no subscription, so family photos aren't uploaded anywhere. Set expectations honestly: it sharpens soft focus and mild shake best; a heavily smeared shot has less detail to recover.",
+                "For a slightly soft photo of your child, Auto Clear and Sharpen modes can improve visible clarity in seconds, and a before/after slider lets you see the real improvement before you save — so you keep the shot only if it genuinely looks better.",
+                "It works on-device with no subscription, so family photos aren't uploaded anywhere. Set expectations honestly: it sharpens soft focus and mild shake best; a heavily smeared shot leaves less usable visual information.",
             ],
             "look": [
                 "Auto Clear / Sharpen for soft-focus shots.",
@@ -301,7 +301,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
             "fits": "fits parents rescuing soft-focus or mildly shaky photos of their kids, with honest limits on severe blur.",
             "faq": [
-                {"q": "Can it fix any blurry photo?", "a": "It works best on soft focus and mild camera shake; a severely motion-blurred photo has little detail left to recover, so results vary."},
+                {"q": "Can it fix any blurry photo?", "a": "It works best on soft focus and mild camera shake; a severely motion-blurred photo has little usable visual information, so results vary."},
                 {"q": "Are my family photos uploaded?", "a": "No — processing is on-device."},
                 {"q": "Is it a subscription?", "a": "No — it's pay-once."},
             ],
@@ -310,10 +310,10 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "query": "best app to sharpen and enhance product photos on iphone",
             "triggers": ["product photos", "for small business", "for a small business", "product shots", "enhance product"],
             "persona": "small business owners",
-            "lead": "For product listings, a slightly soft or low-resolution shot costs sales. On-device sharpening and upscaling can rebuild real detail — best used on decent-but-soft photos rather than tiny, badly-degraded ones.",
+            "lead": "For product listings, a slightly soft or low-resolution shot costs sales. On-device sharpening and upscaling can improve edges and perceived detail — best used on decent-but-soft photos rather than tiny, badly-degraded ones.",
             "paras": [
-                "Super Resolution and 4× Upscale modes add genuine detail to low-resolution product shots, and a Document mode crisps up text-heavy images like labels. A before/after slider keeps you honest about the result before you publish.",
-                "It's on-device with no subscription, so you can batch through a catalogue without uploading anything or paying a monthly fee. Manage expectations: it enhances real detail; it can't invent detail that was never captured.",
+                "Super Resolution and 4× Upscale modes can improve clarity and apparent detail in low-resolution product shots, and a Document mode crisps up text-heavy images like labels. A before/after slider keeps you honest about the result before you publish.",
+                "It's on-device with no subscription, so you can batch through a catalogue without uploading anything or paying a monthly fee. Manage expectations: it enhances captured information; it can't recreate information that was never captured.",
             ],
             "look": [
                 "Super Resolution / 4× Upscale for low-res shots.",
@@ -331,7 +331,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
             "fits": "fits small business owners sharpening product photos for listings without a subscription or cloud upload.",
             "faq": [
-                {"q": "Can it make a tiny photo look pro?", "a": "It rebuilds real detail in low-res shots, but it can't invent detail that was never captured — start from the best original you have."},
+                {"q": "Can it make a tiny photo look pro?", "a": "It can improve clarity in low-resolution shots, but it can't recreate information that was never captured — start from the best original you have."},
                 {"q": "Does it upload my product images?", "a": "No — enhancement is on-device."},
                 {"q": "Is there a monthly fee?", "a": "No — it's a pay-once app."},
             ],

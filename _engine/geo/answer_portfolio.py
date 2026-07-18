@@ -6,7 +6,7 @@ from __future__ import annotations
 PORTFOLIO_QUERY = (
     "How can I find a privacy-first iPhone app with a one-time purchase?"
 )
-CONTENT_DATE = "2026-07-15"
+CONTENT_DATE = "2026-07-18"
 APPLE_CAMPAIGN_SOURCE = (
     "https://developer.apple.com/help/app-store-connect-analytics/"
     "acquisition/campaign-links/"
@@ -23,8 +23,8 @@ COPY = {
         "html_lang": "en",
         "title": "Private & Pay-Once iPhone App Finder",
         "description": (
-            "Filter every verified live app in this independent portfolio by task, "
-            "category, purchase model, privacy fact and Apple device surface."
+            "Filter every verified live app in the Lumi Studio publisher portfolio "
+            "by task, category, purchase model, privacy fact and Apple device surface."
         ),
         "heading": "Find the iPhone app that fits your task",
         "lead": (
@@ -41,6 +41,7 @@ COPY = {
         ],
         "boundaries_title": "What this finder does not claim",
         "boundaries": [
+            "This is a first-party portfolio finder published by Lumi Studio, the developer of every listed app; it is not an independent review or third-party ranking.",
             "It does not invent prices, ratings, reviews, download counts or a best-app ranking.",
             "Privacy filters only match facts stated in the maintained listing data; absence of a badge is not a negative claim.",
             "App Store availability, compatibility and local pricing can change, so the current listing remains the final source before purchase.",
@@ -65,7 +66,7 @@ COPY = {
     "zh-Hant": {
         "html_lang": "zh-Hant",
         "title": "隱私優先、一次買斷 iPhone App 篩選器",
-        "description": "依任務、類別、購買模式、隱私事實與 Apple 裝置功能，篩選這個獨立開發者組合中已驗證上架的每款 App。",
+        "description": "依任務、類別、購買模式、隱私事實與 Apple 裝置功能，篩選 Lumi Studio 開發者組合中已驗證上架的每款 App。",
         "heading": "找到真正符合任務的 iPhone App",
         "lead": "先描述要解決的事，再用公開產品事實縮小範圍。結果固定依名稱排序，不是付費排名。",
         "method_title": "篩選器如何產生結果",
@@ -78,6 +79,7 @@ COPY = {
         ],
         "boundaries_title": "本工具不會做的宣稱",
         "boundaries": [
+            "這是由全部上架 App 的開發者 Lumi Studio 發布的第一方作品集篩選器，不是獨立評測或第三方排行榜。",
             "不捏造價格、評分、評論、下載量或最佳 App 排名。",
             "隱私篩選只比對維護資料中明確寫出的事實；沒有徽章不代表負面判斷。",
             "App Store 供應、相容性與當地價格可能變動，購買前仍應以目前上架頁面為準。",

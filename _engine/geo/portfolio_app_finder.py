@@ -34,6 +34,7 @@ SITE = os.environ.get(
 ).rstrip("/")
 SLUG = "private-pay-once-iphone-app-finder"
 DATA_SLUG = "verified-ios-app-finder-catalog"
+CATALOG_NAME = "Lumi Studio Publisher-Verified iOS App Catalogue"
 LICENSE_URL = "https://creativecommons.org/licenses/by/4.0/"
 CONTENT_DATE = answer_portfolio.CONTENT_DATE
 APP_CATALOG_API = f"{SITE}/api/v1/ios-app-catalog"
@@ -357,11 +358,15 @@ def catalog_records(
 
 def dataset_payload(records: list[dict[str, object]]) -> dict[str, object]:
     return {
-        "name": "Verified Independent iOS App Finder Catalogue",
+        "name": CATALOG_NAME,
         "description": answer_portfolio.COPY["en"]["description"],
         "question": answer_portfolio.PORTFOLIO_QUERY,
         "date_modified": CONTENT_DATE,
         "license": LICENSE_URL,
+        "publisher_disclosure": (
+            "First-party catalogue published by Lumi Studio, the developer of "
+            "every listed app; not an independent review or third-party ranking."
+        ),
         "ordering": "alphabetical_by_app_name_not_a_ranking",
         "availability_verification": {
             "source": "Apple iTunes Lookup API",
@@ -401,7 +406,7 @@ def dataset_schema() -> str:
     schema = {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
         "$id": data_url(".schema.json"),
-        "title": "Verified Independent iOS App Finder Catalogue",
+        "title": CATALOG_NAME,
         "type": "object",
         "additionalProperties": False,
         "required": [
@@ -410,6 +415,7 @@ def dataset_schema() -> str:
             "question",
             "date_modified",
             "license",
+            "publisher_disclosure",
             "ordering",
             "availability_verification",
             "record_count",
@@ -421,6 +427,7 @@ def dataset_schema() -> str:
             "question": {"const": answer_portfolio.PORTFOLIO_QUERY},
             "date_modified": {"type": "string", "format": "date"},
             "license": {"type": "string", "format": "uri"},
+            "publisher_disclosure": {"type": "string", "minLength": 1},
             "ordering": {
                 "const": "alphabetical_by_app_name_not_a_ranking"
             },
@@ -593,10 +600,20 @@ def structured_data(
             },
             {
                 "@type": "Dataset",
-                "name": "Verified Independent iOS App Finder Catalogue",
+                "name": CATALOG_NAME,
                 "description": copy["description"],
                 "url": canonical(locale),
                 "license": LICENSE_URL,
+                "creator": {
+                    "@type": "Organization",
+                    "name": "Lumi Studio",
+                    "url": f"{SITE}/about.html",
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Lumi Studio",
+                    "url": f"{SITE}/about.html",
+                },
                 "isAccessibleForFree": True,
                 "inLanguage": ["en", "zh-Hant"],
                 "dateModified": CONTENT_DATE,

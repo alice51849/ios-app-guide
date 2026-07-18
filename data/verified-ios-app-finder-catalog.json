@@ -1,9 +1,10 @@
 {
-  "name": "Verified Independent iOS App Finder Catalogue",
-  "description": "Filter every verified live app in this independent portfolio by task, category, purchase model, privacy fact and Apple device surface.",
+  "name": "Lumi Studio Publisher-Verified iOS App Catalogue",
+  "description": "Filter every verified live app in the Lumi Studio publisher portfolio by task, category, purchase model, privacy fact and Apple device surface.",
   "question": "How can I find a privacy-first iPhone app with a one-time purchase?",
-  "date_modified": "2026-07-15",
+  "date_modified": "2026-07-18",
   "license": "https://creativecommons.org/licenses/by/4.0/",
+  "publisher_disclosure": "First-party catalogue published by Lumi Studio, the developer of every listed app; not an independent review or third-party ranking.",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
   "availability_verification": {
     "source": "Apple iTunes Lookup API",

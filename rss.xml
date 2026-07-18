@@ -5,7 +5,7 @@
     <link>https://alice51849.github.io/ios-app-guide/</link>
     <description>Fresh independent iOS app guides, answers, free tools and open datasets.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 17 Jul 2026 20:29:23 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 00:00:00 GMT</lastBuildDate>
     <generator>iOS App Guide static syndication generator</generator>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <ttl>360</ttl>
@@ -17,6 +17,41 @@
     <atom:link href="https://rpc.rsscloud.io/websub" rel="hub"/>
     <atom:link href="https://alice51849.github.io/ios-app-guide/feed.xml" rel="alternate" type="application/atom+xml"/>
     <atom:link href="https://alice51849.github.io/ios-app-guide/feed.json" rel="alternate" type="application/feed+json"/>
+    <item>
+      <title>Free Bopomofo Anki Deck - All 37 Zhuyin Symbols</title>
+      <link>https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck.html</link>
+      <description>Download a free UTF-8 Anki import deck covering all 37 Bopomofo symbols with Pinyin, IPA, categories and Traditional Chinese examples.</description>
+      <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck.html</guid>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Free Family Travel Observation Passport</title>
+      <link>https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.html</link>
+      <description>Download a privacy-first, print-ready 14-page family travel observation passport for 12 settings, with A4 and US Letter PDFs.</description>
+      <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.html</guid>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Bopomofo SKOS Vocabulary - 37 Zhuyin Symbols as Linked Open Data</title>
+      <link>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html</link>
+      <description>Download a CC BY 4.0 SKOS vocabulary for all 37 Zhuyin symbols in JSON-LD, Turtle and N-Triples, with SHACL and DCAT/VoID metadata.</description>
+      <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html</guid>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>OER repository metadata for a Bopomofo learning resource</title>
+      <link>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html</link>
+      <description>Download schema-valid OAI-DC and offline-parsable DCMI Terms and LRMI JSON-LD metadata for two open Bopomofo EPUB editions.</description>
+      <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html</guid>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>DCAT 3 open-data catalog for Bopomofo resources</title>
+      <link>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html</link>
+      <description>Download a static W3C DCAT 3 catalog covering sixteen verified Bopomofo datasets and 80 exact distributions.</description>
+      <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html</guid>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>White Noise &amp; Sleep Sounds app: subscription cost vs one-time access (2026)</title>
       <link>https://alice51849.github.io/ios-app-guide/answers/white-noise-sleep-sounds-app-subscription-cost-vs-pay-once-2026.html</link>
@@ -339,45 +374,10 @@
       <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/aim990-share.jpg" width="1200" height="675"/>
     </item>
     <item>
-      <title>Free Bopomofo Anki Deck - All 37 Zhuyin Symbols</title>
-      <link>https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck.html</link>
-      <description>Download a free UTF-8 Anki import deck covering all 37 Bopomofo symbols with Pinyin, IPA, categories and Traditional Chinese examples.</description>
-      <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck.html</guid>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
       <title>Hours of Work Calculator | Private Price-to-Time Tool</title>
       <link>https://alice51849.github.io/ios-app-guide/tools/hours-of-work-calculator.html</link>
       <description>Convert a price into work hours, workdays and savings effort with transparent local math. No account, upload, storage or financial advice.</description>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/tools/hours-of-work-calculator.html</guid>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Free Family Travel Observation Passport</title>
-      <link>https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.html</link>
-      <description>Download a privacy-first, print-ready 14-page family travel observation passport for 12 settings, with A4 and US Letter PDFs.</description>
-      <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.html</guid>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Bopomofo SKOS Vocabulary - 37 Zhuyin Symbols as Linked Open Data</title>
-      <link>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html</link>
-      <description>Download a CC BY 4.0 SKOS vocabulary for all 37 Zhuyin symbols in JSON-LD, Turtle and N-Triples, with SHACL and DCAT/VoID metadata.</description>
-      <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html</guid>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>OER repository metadata for a Bopomofo learning resource</title>
-      <link>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html</link>
-      <description>Download schema-valid OAI-DC and offline-parsable DCMI Terms and LRMI JSON-LD metadata for two open Bopomofo EPUB editions.</description>
-      <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html</guid>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>DCAT 3 open-data catalog for Bopomofo resources</title>
-      <link>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html</link>
-      <description>Download a static W3C DCAT 3 catalog covering sixteen verified Bopomofo datasets and 80 exact distributions.</description>
-      <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html</guid>
       <pubDate>Fri, 17 Jul 2026 00:00:00 GMT</pubDate>
     </item>
     <item>

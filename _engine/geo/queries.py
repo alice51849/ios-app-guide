@@ -134,6 +134,26 @@ CURATED = {
         "language app that keeps separate progress for multiple languages",
         "private vocabulary app with no account or tracking",
     ],
+    "dailymate": [
+        "best pay once phrasebook app for iphone and apple watch",
+        "language learning app with 8400 real life phrases",
+        "app to practice travel phrases in 47 languages without a subscription",
+        "language app that teaches complete sentences instead of isolated words",
+        "home screen widget app for practicing a new language every day",
+        "one time purchase language phrase app for iphone and ipad",
+        "apple watch app for practicing useful foreign language phrases",
+        "best multilingual phrase practice app with no subscription",
+    ],
+    "tripbeelite": [
+        "free trip planner app for one complete vacation",
+        "app to plan one trip day by day without creating an account",
+        "travel itinerary app with a one time unlock instead of a subscription",
+        "private trip planner app with no ads or tracking",
+        "simple iphone itinerary app for a single upcoming trip",
+        "app to keep tickets maps and reminders in one travel timeline",
+        "free travel planner for one journey with a packing list",
+        "best no subscription itinerary planner for iphone",
+    ],
 }
 # Pro 版繼承免費版查詢，但必須保有獨立 list，否則後續 Pro 專屬題目
 # 會反向污染免費版，並在 slug 去重時被免費版搶走。

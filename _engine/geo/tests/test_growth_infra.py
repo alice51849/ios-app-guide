@@ -21675,6 +21675,36 @@ class GeneratorTests(unittest.TestCase):
         self.assertFalse(by_key["zafe"]["public"])
         self.assertEqual("", by_key["zafe"]["appstore"])
 
+    def test_new_live_apps_lead_with_curated_purchase_intent_queries(self):
+        required_phrases = {
+            "dailymate": (
+                "8400 real life phrases",
+                "47 languages",
+                "complete sentences",
+                "apple watch",
+                "one time purchase",
+            ),
+            "tripbeelite": (
+                "one complete vacation",
+                "without creating an account",
+                "one time unlock",
+                "no ads or tracking",
+                "packing list",
+            ),
+        }
+        for key, phrases in required_phrases.items():
+            with self.subTest(app=key):
+                curated = queries.CURATED[key]
+                self.assertGreaterEqual(len(curated), 8)
+                self.assertEqual(
+                    len(curated),
+                    len({question.casefold() for question in curated}),
+                )
+                self.assertEqual(curated, queries.ALL[key][: len(curated)])
+                combined = "\n".join(curated).casefold()
+                for phrase in phrases:
+                    self.assertIn(phrase, combined)
+
 
 if __name__ == "__main__":
     unittest.main()

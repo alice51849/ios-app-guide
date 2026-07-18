@@ -8,12 +8,17 @@
 """
 import hashlib
 import html
+from io import BytesIO
 import json
 import os
+import re
 import sys
+import urllib.error
+import urllib.parse
+import urllib.request
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageOps
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -59,9 +64,21 @@ LEGACY_PALETTE_INDEX = {
     "unblurry": 5,
 }
 
-FONT_B = "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
-FONT_BLK = "/System/Library/Fonts/Supplemental/Arial Black.ttf"
-FONT_R = "/System/Library/Fonts/Supplemental/Arial.ttf"
+FONT_BOLD = tuple(filter(None, (
+    os.environ.get("GEO_FONT_BOLD"),
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    "/usr/share/fonts/truetype/liberation2/LiberationSans-Bold.ttf",
+    "/System/Library/Fonts/Supplemental/Arial Black.ttf",
+    "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+)))
+FONT_REGULAR = tuple(filter(None, (
+    os.environ.get("GEO_FONT_REGULAR"),
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "/usr/share/fonts/truetype/liberation2/LiberationSans-Regular.ttf",
+    "/System/Library/Fonts/Supplemental/Arial.ttf",
+)))
+MAX_ICON_BYTES = 5 * 1024 * 1024
+APPLE_ARTWORK_HOST_RE = re.compile(r"(?:^|\.)mzstatic\.com$", re.IGNORECASE)
 
 AMP_BOILER = ('<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;'
               '-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;'
@@ -71,11 +88,116 @@ AMP_BOILER = ('<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps
               '<noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>')
 
 
-def _font(path, size):
+def _font(candidates, size):
+    for path in candidates:
+        try:
+            return ImageFont.truetype(path, size)
+        except OSError:
+            continue
+    raise RuntimeError(
+        "No scalable font is available; install DejaVu Sans or set "
+        "GEO_FONT_BOLD/GEO_FONT_REGULAR"
+    )
+
+
+def _read_limited(response, limit=MAX_ICON_BYTES):
+    payload = response.read(limit + 1)
+    if len(payload) > limit:
+        raise ValueError(f"App Store artwork response exceeds {limit} bytes")
+    return payload
+
+
+def _artwork_url(app_id):
+    lookup_url = (
+        "https://itunes.apple.com/lookup?"
+        + urllib.parse.urlencode({
+            "id": str(app_id),
+            "country": "us",
+            "entity": "software",
+        })
+    )
+    request = urllib.request.Request(
+        lookup_url,
+        headers={"User-Agent": "iOS-App-Guide/1.0"},
+    )
+    with urllib.request.urlopen(request, timeout=30) as response:
+        payload = _read_limited(response)
     try:
-        return ImageFont.truetype(path, size)
-    except OSError:
-        return ImageFont.load_default()
+        document = json.loads(payload.decode("utf-8"))
+        matches = [
+            row for row in document["results"]
+            if str(row.get("trackId")) == str(app_id)
+        ]
+        artwork = matches[0]["artworkUrl512"]
+    except (UnicodeDecodeError, json.JSONDecodeError, KeyError, IndexError, TypeError) as error:
+        raise ValueError(f"Invalid App Store lookup response for {app_id}") from error
+    parsed = urllib.parse.urlparse(artwork)
+    if (
+        parsed.scheme != "https"
+        or not parsed.hostname
+        or not APPLE_ARTWORK_HOST_RE.search(parsed.hostname)
+    ):
+        raise ValueError(f"Untrusted App Store artwork URL for {app_id}: {artwork}")
+    return artwork
+
+
+def _save_normalized_icon(source, target):
+    with Image.open(source) as image:
+        image.load()
+        if min(image.size) < 100:
+            raise ValueError(f"App icon is too small: {image.size}")
+        normalized = ImageOps.fit(
+            image.convert("RGB"),
+            (256, 256),
+            method=Image.Resampling.LANCZOS,
+        )
+    target.parent.mkdir(parents=True, exist_ok=True)
+    output = BytesIO()
+    normalized.save(
+        output,
+        "JPEG",
+        quality=90,
+        optimize=True,
+        progressive=True,
+    )
+    content = output.getvalue()
+    if not target.exists() or target.read_bytes() != content:
+        target.write_bytes(content)
+    return target
+
+
+def _validated_cached_icon(path):
+    with Image.open(path) as image:
+        image.load()
+        if image.size != (256, 256):
+            raise ValueError(f"Cached App icon has unexpected size: {image.size}")
+    return path
+
+
+def ensure_app_icon(key):
+    target = Path(IMG) / f"{key}-icon.jpg"
+    if target.exists():
+        try:
+            return _validated_cached_icon(target)
+        except (OSError, ValueError):
+            target.unlink()
+
+    try:
+        artwork = _artwork_url(APPSTORE[key])
+        request = urllib.request.Request(
+            artwork,
+            headers={"User-Agent": "iOS-App-Guide/1.0"},
+        )
+        with urllib.request.urlopen(request, timeout=30) as response:
+            payload = _read_limited(response)
+        return _save_normalized_icon(BytesIO(payload), target)
+    except (OSError, ValueError, urllib.error.URLError) as error:
+        local = Path(os.path.expanduser(APPS[key].get("icon", "")))
+        if local.is_file():
+            return _save_normalized_icon(local, target)
+        raise RuntimeError(
+            f"Unable to acquire a verified App Store icon for {key}"
+        ) from error
 
 
 def _wrap(draw, text, font, max_w):
@@ -93,7 +215,7 @@ def _wrap(draw, text, font, max_w):
     return lines
 
 
-def make_poster(key, name, tagline, pal):
+def make_poster(key, name, tagline, pal, icon_path=None):
     W, H = 720, 960
     c1, c2 = pal
     img = Image.new("RGB", (W, H), c1)
@@ -107,17 +229,33 @@ def make_poster(key, name, tagline, pal):
     img = top
     d = ImageDraw.Draw(img)
     # app icon
-    icon_path = os.path.expanduser(APPS[key].get("icon", ""))
-    if icon_path and os.path.exists(icon_path):
-        try:
-            ic = Image.open(icon_path).convert("RGB").resize((260, 260))
-            mask = Image.new("L", (260, 260), 0)
-            ImageDraw.Draw(mask).rounded_rectangle([0, 0, 260, 260], radius=58, fill=255)
-            img.paste(ic, (W // 2 - 130, 150), mask)
-        except Exception:  # noqa: BLE001
-            pass
+    icon_path = Path(icon_path) if icon_path else ensure_app_icon(key)
+    with Image.open(icon_path) as source:
+        ic = ImageOps.fit(
+            source.convert("RGB"),
+            (260, 260),
+            method=Image.Resampling.LANCZOS,
+        )
+    shadow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    ImageDraw.Draw(shadow).rounded_rectangle(
+        [W // 2 - 140, 160, W // 2 + 140, 440],
+        radius=68,
+        fill=(0, 0, 0, 105),
+    )
+    img = Image.alpha_composite(
+        img.convert("RGBA"),
+        shadow.filter(ImageFilter.GaussianBlur(18)),
+    ).convert("RGB")
+    d = ImageDraw.Draw(img)
+    mask = Image.new("L", (260, 260), 0)
+    ImageDraw.Draw(mask).rounded_rectangle(
+        [0, 0, 259, 259],
+        radius=58,
+        fill=255,
+    )
+    img.paste(ic, (W // 2 - 130, 150), mask)
     # name
-    fn = _font(FONT_BLK, 72)
+    fn = _font(FONT_BOLD, 72)
     lines = _wrap(d, name, fn, W - 100)
     y = 470
     for ln in lines:
@@ -125,13 +263,13 @@ def make_poster(key, name, tagline, pal):
         d.text(((W - w) / 2, y), ln, font=fn, fill="white")
         y += 82
     # tagline
-    ft = _font(FONT_R, 38)
+    ft = _font(FONT_REGULAR, 38)
     for ln in _wrap(d, tagline, ft, W - 120)[:3]:
         w = d.textlength(ln, font=ft)
         d.text(((W - w) / 2, y + 14), ln, font=ft, fill=(255, 255, 255))
         y += 50
     # footer
-    ff = _font(FONT_B, 34)
+    ff = _font(FONT_BOLD, 34)
     foot = "Get it on the App Store"
     w = d.textlength(foot, font=ff)
     d.text(((W - w) / 2, H - 90), foot, font=ff, fill="white")
@@ -145,7 +283,7 @@ def make_logo():
     """One shared 128x128 publisher logo."""
     img = Image.new("RGB", (128, 128), (91, 95, 242))
     d = ImageDraw.Draw(img)
-    f = _font(FONT_BLK, 74)
+    f = _font(FONT_BOLD, 74)
     d.text((30, 20), "iA", font=f, fill="white")
     os.makedirs(IMG, exist_ok=True)
     p = os.path.join(IMG, "publisher-logo.jpg")
@@ -171,7 +309,7 @@ def story_html(key):
     title = (a.get("title") or tagline).strip()
     bullets = a.get("cta_bullets", [])[:4]
     pal = palette_for(key)
-    make_poster(key, name, tagline, pal)
+    make_poster(key, name, tagline, pal, ensure_app_icon(key))
     url = appstore_url(key, "iag_story") or SITE
     canon = f"{SITE}/stories/{key}.html"
     identity = mobile_app_schema(
@@ -294,6 +432,9 @@ def main():
             stale.unlink()
     for stale in Path(IMG).glob("*-poster.jpg"):
         if stale.name.removesuffix("-poster.jpg") not in expected:
+            stale.unlink()
+    for stale in Path(IMG).glob("*-icon.jpg"):
+        if stale.name.removesuffix("-icon.jpg") not in expected:
             stale.unlink()
     for k in keys:
         open(os.path.join(STORIES, f"{k}.html"), "w", encoding="utf-8").write(story_html(k))

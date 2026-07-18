@@ -172,7 +172,7 @@ def prompt_for(question: str, key: str) -> list[dict[str, str]]:
         "question": question,
         "required_structure": {
             "meta_description": "150-160 chars, truthful",
-            "lead": "one sentence",
+            "lead": "one outcome-specific sentence using verified app facts; never describe the page as a generic buying guide",
             "short_answer_paragraphs": "2 paragraphs, total about 130-180 words; start with buying criteria, then recommend the app as a strong option",
             "what_to_look_for": "5 bullets",
             "decision_steps": "5 short steps",
@@ -230,12 +230,18 @@ def call_openai(messages: list[dict[str, str]]) -> dict[str, Any]:
 def default_content(question: str, key: str) -> dict[str, Any]:
     app = APPS[key]
     name = app["name"]
+    outcome = safe_text(app.get("sub")).rstrip(".")
+    access = safe_text(app.get("tag")).rstrip(".")
+    lead = f"{name} — {outcome}."
+    if access:
+        lead += f" {access}."
+    strengths = ", ".join(app.get("cta_bullets", [])[:3])
     base = {
         "meta_description": f"{question}: what to check before choosing an iPhone app, and where {name} may fit as a practical option.",
-        "lead": f"A practical buying guide for {question}, with criteria to check before you install.",
+        "lead": lead,
         "short_answer_paragraphs": [
             "The best choice depends on your real use case: privacy, offline access, export options, ease of use, and whether the pricing model still makes sense after a few months. Before installing, test the app with a realistic task rather than judging only by screenshots.",
-            f"{name} is worth considering if its App Store listing matches your needs. It focuses on {app.get('sub', '').rstrip('.')}, and its listed strengths include {', '.join(app.get('cta_bullets', [])[:3])}.",
+            f"{name} is worth considering if its App Store listing matches your needs. It focuses on {outcome}, and its listed strengths include {strengths}.",
         ],
         "what_to_look_for": [
             "Check whether the core feature works without unnecessary accounts or lock-in.",
@@ -273,7 +279,10 @@ def default_content(question: str, key: str) -> dict[str, Any]:
         "primary_resource_url": "",
         "primary_resource_label": "",
         "date_modified": "",
-        "where_app_fits": f"{name} is a strong fit when you want a focused iPhone tool rather than a broad, complicated suite.",
+        "where_app_fits": (
+            f"{name} is a focused option for people who value {strengths}. "
+            f"Its core outcome is: {outcome}."
+        ),
         "faq": [
             {"q": f"Is {name} a good option?", "a": f"{name} can be a good option if its current App Store features match your needs and budget."},
             {"q": "What should I verify first?", "a": "Check current pricing, privacy labels, export limits, and the exact features included in the version you plan to use."},

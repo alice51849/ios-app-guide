@@ -1,0 +1,152 @@
+.iag-decision-card {
+  display: grid;
+  grid-template-columns: clamp(5.25rem, 14vw, 7.5rem) minmax(0, 1fr);
+  gap: clamp(0.9rem, 3vw, 1.5rem);
+  inline-size: min(100%, 64rem);
+  margin-block: clamp(0.75rem, 2.5vw, 1.5rem) clamp(1.5rem, 4vw, 2.5rem);
+  margin-inline: auto;
+  padding: clamp(0.9rem, 3vw, 1.4rem);
+  overflow: hidden;
+  color: #f8fafc;
+  background:
+    radial-gradient(circle at 0 0, rgba(125, 211, 252, 0.22), transparent 42%),
+    linear-gradient(135deg, #0f172a, #312e81 58%, #581c87);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: clamp(1.1rem, 3vw, 1.75rem);
+  box-shadow: 0 22px 58px rgba(15, 23, 42, 0.24);
+  text-align: start;
+}
+
+.iag-decision-card__icon {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 1;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 22%;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.3);
+}
+
+.iag-decision-card__body {
+  display: grid;
+  min-inline-size: 0;
+  align-content: center;
+  gap: 0.55rem;
+}
+
+.iag-decision-card__title,
+.iag-decision-card__promise,
+.iag-decision-card__terms,
+.iag-decision-card__fact,
+.iag-decision-card__cta {
+  min-inline-size: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.iag-decision-card__title {
+  color: #fff;
+  font-size: clamp(1.2rem, 1rem + 1vw, 1.85rem);
+  font-weight: 850;
+  line-height: 1.1;
+}
+
+.iag-decision-card__promise,
+.iag-decision-card__terms {
+  margin: 0;
+  color: rgba(248, 250, 252, 0.84);
+  font-size: clamp(0.86rem, 0.82rem + 0.2vw, 1rem);
+  line-height: 1.35;
+}
+
+.iag-decision-card__facts {
+  display: flex;
+  min-inline-size: 0;
+  gap: 0.4rem;
+  overflow: hidden;
+}
+
+.iag-decision-card__fact {
+  flex: 0 1 auto;
+  padding: 0.28rem 0.55rem;
+  color: #eef2ff;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 720;
+}
+
+.iag-decision-card__cta {
+  display: inline-flex;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  min-block-size: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.68rem 1rem;
+  color: #111827 !important;
+  background: #fff;
+  border-radius: 999px;
+  box-shadow: 0 9px 24px rgba(0, 0, 0, 0.2);
+  font-weight: 820;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.iag-decision-card__cta:visited {
+  color: #111827 !important;
+}
+
+.iag-decision-card__cta:focus-visible {
+  outline: 3px solid #fde68a;
+  outline-offset: 4px;
+}
+
+@media (max-width: 34rem) {
+  .iag-decision-card {
+    grid-template-columns: 4.75rem minmax(0, 1fr);
+    gap: 0.8rem;
+  }
+
+  .iag-decision-card__fact:nth-child(n + 3) {
+    display: none;
+  }
+
+  .iag-decision-card__cta {
+    inline-size: 100%;
+  }
+}
+
+@media (hover: hover) {
+  .iag-decision-card__cta:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
+    transform: translateY(-1px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .iag-decision-card__cta {
+    transition: none;
+  }
+}
+
+@media print {
+  .iag-decision-card {
+    color: #000;
+    background: #fff;
+    border: 1px solid #000;
+    box-shadow: none;
+  }
+
+  .iag-decision-card__title,
+  .iag-decision-card__promise,
+  .iag-decision-card__terms {
+    color: #000;
+  }
+
+  .iag-decision-card__cta {
+    display: none;
+  }
+}

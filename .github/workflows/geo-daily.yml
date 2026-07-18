@@ -77,6 +77,7 @@ jobs:
           python3 gen_app_store_share_ctas.py
           python3 gen_publisher_disclosures.py
           python3 gen_guide_design.py
+          python3 gen_app_decision_cards.py
           python3 gen_app_store_facts.py
           python3 validate_webstories.py
           python3 gen_llms.py --cached-live
@@ -188,6 +189,7 @@ jobs:
           python3 gen_app_store_share_ctas.py
           python3 gen_publisher_disclosures.py
           python3 gen_guide_design.py
+          python3 gen_app_decision_cards.py
           python3 gen_app_store_facts.py
           python3 validate_webstories.py
           python3 gen_llms.py --cached-live
@@ -258,6 +260,7 @@ jobs:
           python3 gen_app_store_share_ctas.py
           python3 gen_publisher_disclosures.py
           python3 gen_guide_design.py
+          python3 gen_app_decision_cards.py
           python3 gen_app_store_facts.py
           python3 validate_webstories.py
           python3 gen_llms.py --cached-live

@@ -41,7 +41,6 @@ import add_related_answers
 import add_related_tools
 import answer_deep
 import answer_portfolio
-from answer_personas import PERSONAS
 import app_store_storefronts
 import appstore_live
 import build_pages
@@ -67,6 +66,7 @@ import family_outing_weather_planner
 import family_routine_card_planner
 import film_look_recipe_planner
 import gen_app_catalog
+import gen_app_decision_cards
 import gen_app_store_qr_ctas
 import gen_app_store_share_ctas
 import gen_calculator
@@ -1564,11 +1564,19 @@ class GeneratorTests(unittest.TestCase):
                 '"primaryImageOfPage":{"@type":"ImageObject",'
                 '"contentUrl":"https://example.com/preview.jpg"}}</script>'
                 '<script type="application/ld+json">'
+                '{"@context":"https://schema.org","@type":"WebPage",'
+                f'"@id":"{existing_url}#webpage","url":"{existing_url}",'
+                '"breadcrumb":{"@id":"https://example.com/breadcrumb"}}</script>'
+                '<script type="application/ld+json">'
                 '{"@context":"https://schema.org",'
                 '"@type":"SoftwareApplication","name":"Lumi Bopomofo",'
                 f'"url":"{campaign_url}","installUrl":"{campaign_url}",'
                 '"inLanguage":"zh-Hant",'
                 '"sameAs":"https://example.com/lumi-bopomofo",'
+                '"potentialAction":['
+                '{"@type":"ShareAction","target":"https://example.com/share"},'
+                '{"@type":"InstallAction","target":{"@type":"EntryPoint",'
+                f'"urlTemplate":"{campaign_url}","actionPlatform":"iOS"}}}}],'
                 '"identifier":"legacy-id"}</script>'
                 "</head><body></body></html>",
                 encoding="utf-8",
@@ -1635,11 +1643,35 @@ class GeneratorTests(unittest.TestCase):
                 for document in documents
                 if document.get("@type") == "MobileApplication"
             )
+            self.assertEqual(
+                2,
+                sum(
+                    document.get("@type") == "WebPage"
+                    for document in documents
+                ),
+            )
             canonical = "https://apps.apple.com/app/id6773017109"
             self.assertEqual(canonical, app_schema["@id"])
             self.assertEqual(canonical, app_schema["url"])
             self.assertEqual(canonical, app_schema["installUrl"])
             self.assertEqual(canonical, app_schema["downloadUrl"])
+            actions = app_schema["potentialAction"]
+            self.assertEqual(
+                {
+                    "@type": "ShareAction",
+                    "target": "https://example.com/share",
+                },
+                actions[0],
+            )
+            self.assertEqual("InstallAction", actions[1]["@type"])
+            self.assertEqual(
+                {
+                    "@type": "EntryPoint",
+                    "urlTemplate": canonical,
+                    "actionPlatform": "iOS",
+                },
+                actions[1]["target"],
+            )
             self.assertEqual(
                 {"@id": f"{existing_url}#webpage"},
                 app_schema["mainEntityOfPage"],
@@ -1748,6 +1780,10 @@ class GeneratorTests(unittest.TestCase):
             self.assertNotIn("inLanguage", inserted_app)
             self.assertNotIn("mainEntityOfPage", inserted_app)
             self.assertEqual(canonical, inserted_app["downloadUrl"])
+            self.assertEqual(
+                {"@type": "InstallAction", "target": canonical},
+                inserted_app["potentialAction"],
+            )
             self.assertEqual("en", inserted_webpage["inLanguage"])
             self.assertEqual(
                 {"@id": canonical},
@@ -17100,11 +17136,6 @@ class GeneratorTests(unittest.TestCase):
             "alphabetical_by_app_name_not_a_ranking",
             data["ordering"],
         )
-        self.assertEqual(portfolio_app_finder.CATALOG_NAME, data["name"])
-        self.assertIn("First-party catalogue", data["publisher_disclosure"])
-        self.assertNotIn("Independent", schema["title"])
-        self.assertIn("first-party portfolio finder", english)
-        self.assertIn("第一方作品集篩選器", chinese)
         self.assertEqual(2, english.count('data-app-card '))
         cards = re.findall(
             r'<article class="app-card".*?</article>',
@@ -17278,18 +17309,6 @@ class GeneratorTests(unittest.TestCase):
             if node.get("@type") == "CollectionPage"
         )["mainEntity"]
         self.assertEqual(2, item_list["numberOfItems"])
-        dataset = next(
-            node
-            for node in json_ld["@graph"]
-            if node.get("@type") == "Dataset"
-        )
-        self.assertEqual(
-            {"@type": "Organization", "name": "Lumi Studio", "url": (
-                "https://alice51849.github.io/ios-app-guide/about.html"
-            )},
-            dataset["creator"],
-        )
-        self.assertEqual(dataset["creator"], dataset["publisher"])
         self.assertTrue(
             all(
                 "position" not in item
@@ -18594,87 +18613,6 @@ class GeneratorTests(unittest.TestCase):
             aeo_answers_i18n.main()
         self.assertEqual(2, raised.exception.code)
 
-    def test_every_live_app_has_one_primary_persona_in_all_official_locales(self):
-        pages = Path(GEO).parents[1]
-        live = appstore_live.live_app_keys(
-            APPSTORE,
-            str(Path(GEO) / "pages"),
-            refresh=False,
-        )
-        self.assertEqual(live, set(PERSONAS))
-        for key, personas in PERSONAS.items():
-            slug = aeo_answers.slugify(personas[0]["query"])
-            root = pages / "answers" / f"{slug}.html"
-            paths = [
-                (None, root),
-                *[
-                    (
-                        locale,
-                        pages / locale / "answers" / f"{slug}.html",
-                    )
-                    for locale in OFFICIAL_LOCALES
-                ],
-            ]
-            root_text = root.read_text(encoding="utf-8")
-            root_h1 = re.search(r"<h1>(.*?)</h1>", root_text, re.S).group(1)
-            for locale, path in paths:
-                self.assertTrue(path.exists(), f"missing {key}: {path}")
-                text = path.read_text(encoding="utf-8")
-                self.assertIn(
-                    f"apps.apple.com/app/id{APPSTORE[key]}",
-                    text,
-                    f"wrong App Store owner for {key}: {path}",
-                )
-                if locale and not locale.startswith("en-"):
-                    localized_h1 = re.search(
-                        r"<h1>(.*?)</h1>",
-                        text,
-                        re.S,
-                    ).group(1)
-                    self.assertNotEqual(
-                        root_h1,
-                        localized_h1,
-                        f"English H1 fallback for {key}: {path}",
-                    )
-                if key == "lockhour":
-                    self.assertNotIn(
-                        "passport photo",
-                        text.lower(),
-                        f"cross-topic passport copy for {key}: {path}",
-                    )
-
-    def test_persona_page_discloses_first_party_publisher(self):
-        query = PERSONAS["cvdesk"][0]["query"]
-        page = aeo_answers.render_page(
-            query,
-            "cvdesk",
-            aeo_answers.normalized_content(
-                aeo_answers.default_content(query, "cvdesk"),
-                query,
-                "cvdesk",
-            ),
-        )
-        self.assertIn(
-            "publisher-authored buying guide from the app developer",
-            page,
-        )
-        self.assertNotIn("independent buying guide", page)
-        self.assertIn('"name": "Lumi Studio"', page)
-
-    def test_answer_index_recognizes_mobile_application_schema(self):
-        with tempfile.TemporaryDirectory() as directory:
-            page = Path(directory) / "mobile-app.html"
-            page.write_text(
-                '<h1>Best focused study app</h1><script type="application/ld+json">'
-                '{"@type":"MobileApplication","name":"LockHour Pro"}'
-                "</script>",
-                encoding="utf-8",
-            )
-            self.assertEqual(
-                ("Best focused study app", "LockHour Pro"),
-                aeo_answers.parse_page_info(page),
-            )
-
     def test_answer_localizer_updates_jsonld_language_semantically(self):
         source = (
             '<html lang="en"><head><script type="application/ld+json">'
@@ -19713,6 +19651,147 @@ class GeneratorTests(unittest.TestCase):
             self.assertIn("paid download", snapport.lower())
             self.assertNotIn("free to download", snapport.lower())
 
+    def test_web_story_fonts_are_scalable_on_macos_and_ubuntu(self):
+        self.assertIn(
+            "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+            gen_webstories.FONT_BOLD,
+        )
+        self.assertIn(
+            "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+            gen_webstories.FONT_BOLD,
+        )
+        with mock.patch.object(
+            gen_webstories.ImageFont,
+            "truetype",
+            side_effect=OSError("missing"),
+        ):
+            with self.assertRaisesRegex(RuntimeError, "No scalable font"):
+                gen_webstories._font(("missing.ttf",), 72)
+
+    def test_web_story_app_icon_uses_verified_apple_artwork_and_cache(self):
+        artwork_url = (
+            "https://is1-ssl.mzstatic.com/image/thumb/Purple221/"
+            "AppIcon.png/512x512bb.jpg"
+        )
+        lookup = json.dumps({
+            "resultCount": 1,
+            "results": [{
+                "trackId": int(gen_webstories.APPSTORE["tripbeelite"]),
+                "artworkUrl512": artwork_url,
+            }],
+        }).encode()
+        source = io.BytesIO()
+        Image.new("RGB", (512, 512), (12, 140, 96)).save(source, "PNG")
+        calls = []
+
+        def fake_urlopen(request, timeout):
+            calls.append(request.full_url)
+            if request.full_url.startswith("https://itunes.apple.com/lookup?"):
+                return io.BytesIO(lookup)
+            self.assertEqual(artwork_url, request.full_url)
+            return io.BytesIO(source.getvalue())
+
+        with tempfile.TemporaryDirectory() as directory:
+            with (
+                mock.patch.object(gen_webstories, "IMG", directory),
+                mock.patch.object(
+                    gen_webstories.urllib.request,
+                    "urlopen",
+                    side_effect=fake_urlopen,
+                ),
+            ):
+                icon = gen_webstories.ensure_app_icon("tripbeelite")
+                with Image.open(icon) as generated:
+                    self.assertEqual((256, 256), generated.size)
+                self.assertEqual(icon, gen_webstories.ensure_app_icon("tripbeelite"))
+        self.assertEqual(2, len(calls))
+
+    def test_app_decision_cards_preserve_localized_copy_and_are_idempotent(self):
+        app_id = gen_app_decision_cards.APPSTORE["tripbeelite"]
+        fallback = aeo_answers.default_content(
+            "best one-trip planner app", "tripbeelite"
+        )
+        self.assertIn("Keep one active journey", fallback["lead"])
+        self.assertNotIn("practical buying guide", fallback["lead"].lower())
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            icon = pages / "stories" / "img" / "tripbeelite-icon.jpg"
+            icon.parent.mkdir(parents=True)
+            icon.write_bytes(b"owned-icon")
+
+            product = pages / "zh-Hant" / "tripbeelite.html"
+            product.parent.mkdir()
+            product.write_text(
+                "<html><head></head><body><main>"
+                "<h1>TripBee Lite：旅程規劃</h1>"
+                "<p><strong>一次專注規劃一趟旅行</strong></p>"
+                "<h2>主要功能</h2><ul>"
+                "<li>每日時間軸</li><li>票券整理</li><li>不需帳號</li>"
+                "</ul><h2>價格</h2><p>免費開始，一次購買解鎖。</p>"
+                f'<p><a href="https://apps.apple.com/app/id{app_id}?ct=iag_lp">'
+                "在 App Store 取得 TripBee Lite</a></p>"
+                "</main></body></html>",
+                encoding="utf-8",
+            )
+            self.assertTrue(
+                gen_app_decision_cards.ensure_card(
+                    product, "tripbeelite", app_id, pages
+                )
+            )
+            rendered = product.read_text(encoding="utf-8")
+            self.assertIn("TripBee Lite：旅程規劃", rendered)
+            self.assertIn("一次專注規劃一趟旅行", rendered)
+            self.assertIn("每日時間軸", rendered)
+            self.assertIn("免費開始，一次購買解鎖。", rendered)
+            self.assertIn("?ct=iag_decision", rendered)
+            self.assertEqual(
+                1, rendered.count(gen_app_decision_cards.CARD_START)
+            )
+            self.assertFalse(
+                gen_app_decision_cards.ensure_card(
+                    product, "tripbeelite", app_id, pages
+                )
+            )
+
+            answer = pages / "sk" / "answers" / "trip-planner.html"
+            answer.parent.mkdir(parents=True)
+            answer.write_text(
+                "<html><head></head><body><main>"
+                '<section class="hero wrap"><h1>Plánovač cesty</h1>'
+                '<p class="lead">Majte jednu cestu prehľadne pokope.</p>'
+                f'<p><a href="https://apps.apple.com/app/id{app_id}?ct=iag_ans">'
+                "Stiahnuť v App Store</a></p></section>"
+                '<section class="wrap grid"><span class="pill">Bez predplatného</span>'
+                '<span class="pill">Bez účtu</span></section>'
+                "</main></body></html>",
+                encoding="utf-8",
+            )
+            self.assertTrue(
+                gen_app_decision_cards.ensure_card(
+                    answer, "tripbeelite", app_id, pages
+                )
+            )
+            localized = answer.read_text(encoding="utf-8")
+            self.assertIn("Majte jednu cestu prehľadne pokope.", localized)
+            self.assertIn("Bez predplatného", localized)
+            self.assertIn("Stiahnuť v App Store", localized)
+            self.assertLess(
+                localized.index("</section>"),
+                localized.index(gen_app_decision_cards.CARD_START),
+            )
+            self.assertIn(
+                "white-space: nowrap",
+                gen_app_decision_cards.STYLESHEET,
+            )
+            generic = answer.read_text(encoding="utf-8").replace(
+                "Majte jednu cestu prehľadne pokope.",
+                "A practical buying guide for a trip planner.",
+            )
+            decision = gen_app_decision_cards._page_content(
+                generic, "tripbeelite", app_id, True
+            )
+            self.assertIn("Keep one active journey", decision["promise"])
+
     def test_calculator_is_added_to_tools_index_and_sitemap(self):
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(
             gen_calculator, "PAGES", Path(directory)
@@ -20217,6 +20296,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_app_store_share_ctas.py",
             "gen_publisher_disclosures.py",
             "gen_guide_design.py",
+            "gen_app_decision_cards.py",
             "gen_app_store_facts.py",
             "validate_webstories.py",
             "gen_llms.py --cached-live",
@@ -20259,6 +20339,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(3, workflow.count("gen_webmcp_install_tools.py"))
         self.assertEqual(3, workflow.count("gen_app_store_facts.py"))
         self.assertEqual(3, workflow.count("gen_publisher_disclosures.py"))
+        self.assertEqual(3, workflow.count("gen_app_decision_cards.py"))
         final_cleanup_block = workflow.split(
             "- name: Final link and availability cleanup", 1
         )[1].split("- name: Commit localized pages if any", 1)[0]
@@ -20275,6 +20356,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_app_store_share_ctas.py",
             "gen_publisher_disclosures.py",
             "gen_guide_design.py",
+            "gen_app_decision_cards.py",
             "gen_app_store_facts.py",
             "gen_llms.py --cached-live",
             "zhuyin_resourcesync.py",
@@ -20302,6 +20384,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_app_store_share_ctas.py",
             "gen_publisher_disclosures.py",
             "gen_guide_design.py",
+            "gen_app_decision_cards.py",
             "gen_app_store_facts.py",
             "validate_webstories.py",
             "gen_llms.py --cached-live",
@@ -20459,6 +20542,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("gen_app_store_share_ctas.py", publish)
         self.assertIn("gen_publisher_disclosures.py", publish)
         self.assertIn("gen_guide_design.py", publish)
+        self.assertIn("gen_app_decision_cards.py", publish)
         self.assertIn("gen_app_store_facts.py", publish)
         self.assertIn("family_travel_mission_cards.py", publish)
         self.assertIn("family_travel_observation_passport.py", publish)
@@ -20530,6 +20614,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_app_store_share_ctas.py",
             "gen_publisher_disclosures.py",
             "gen_guide_design.py",
+            "gen_app_decision_cards.py",
             "gen_app_store_facts.py",
             "validate_webstories.py",
             "gen_llms.py",

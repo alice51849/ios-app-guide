@@ -17,8 +17,8 @@ from appstore_live import live_app_keys  # noqa: E402
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 import queries  # noqa: E402
 
-PAGES = os.path.join(HERE, "pages")
-REPORTS = os.path.join(HERE, "reports")
+PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
+REPORTS = os.environ.get("GEO_REPORTS", os.path.join(HERE, "reports"))
 JSON_OUT = os.path.join(REPORTS, "outreach_coverage.json")
 MD_OUT = os.path.join(REPORTS, "outreach_coverage.md")
 

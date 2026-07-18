@@ -20025,6 +20025,15 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(1, workflow.count("bopomofo_practice_sheet.py"))
         self.assertEqual(1, workflow.count("wordmate_language_support.py"))
         self.assertEqual(1, workflow.count("portfolio_app_finder.py"))
+        self.assertEqual(1, workflow.count("outreach_scorecard.py"))
+        self.assertLess(
+            workflow.index("portfolio_app_finder.py"),
+            workflow.index("outreach_scorecard.py"),
+        )
+        self.assertLess(
+            workflow.index("outreach_scorecard.py"),
+            workflow.index("aeo_answers.py --cached-live"),
+        )
         self.assertEqual(
             1,
             workflow.count("refresh_storefront_availability.py"),
@@ -20373,10 +20382,19 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("bopomofo_practice_sheet.py", publish)
         self.assertIn("wordmate_language_support.py", publish)
         self.assertIn("portfolio_app_finder.py", publish)
+        self.assertIn("outreach_scorecard.py", publish)
         self.assertIn("portfolio_app_catalog_api.py", publish)
         self.assertLess(
             publish.index("portfolio_app_finder.py"),
             publish.index("portfolio_app_catalog_api.py"),
+        )
+        self.assertLess(
+            publish.index("portfolio_app_finder.py"),
+            publish.index("outreach_scorecard.py"),
+        )
+        self.assertLess(
+            publish.index("outreach_scorecard.py"),
+            publish.index("aeo_answers.py"),
         )
         self.assertLess(
             publish.index("refresh_storefront_availability.py"),

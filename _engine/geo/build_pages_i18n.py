@@ -30,7 +30,10 @@ sys.path.insert(0, os.path.join(ROOT, "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from aeo_pages import pricing_profile  # noqa: E402
 from app_store_storefronts import (  # noqa: E402
+    LOCALE_STOREFRONTS,
     load_storefront_availability,
+    load_storefront_details,
+    localized_storefront_detail,
     verified_app_store_url,
 )
 from appstore_live import live_app_keys  # noqa: E402
@@ -1594,6 +1597,7 @@ def directory_icon_url(key):
 def localized_directory_records(locale, keys):
     records = []
     availability = load_storefront_availability(PAGES)
+    details = load_storefront_details(PAGES)
     for key in keys:
         localizations = load_app_locales(key)
         values = external_localized_values(key, locale, localizations)
@@ -1610,11 +1614,18 @@ def localized_directory_records(locale, keys):
         canonical_store = appstore_url(key)
         if not canonical_store:
             raise ValueError(f"Live app has no App Store URL: {key}")
+        app_id = str(APPSTORE[key])
         store_url = verified_app_store_url(
             canonical_store,
             locale,
             availability,
         )
+        country = LOCALE_STOREFRONTS[locale]
+        storefront = None
+        if app_id in availability.get(country, frozenset()):
+            detail = details.get(country, {}).get(app_id)
+            if detail is not None:
+                storefront = localized_storefront_detail(detail, locale)
         clean_name = re.sub(r"\s+", " ", name).strip()
         clean_subtitle = re.sub(r"\s+", " ", subtitle).strip()
         pricing = re.sub(
@@ -1624,7 +1635,7 @@ def localized_directory_records(locale, keys):
         records.append(
             {
                 "key": key,
-                "app_id": APPSTORE[key],
+                "app_id": app_id,
                 "name": clean_name,
                 "subtitle": clean_subtitle,
                 "pricing": pricing,
@@ -1640,6 +1651,7 @@ def localized_directory_records(locale, keys):
                 "store_url": store_url,
                 "canonical_store": canonical_store,
                 "storefront_verified": store_url != canonical_store,
+                "storefront": storefront,
                 "category": SCHEMA_CAT.get(
                     APPS[key].get("category", "utility"),
                     "UtilitiesApplication",
@@ -1653,6 +1665,45 @@ def localized_directory_records(locale, keys):
         )
     )
     return records
+
+
+def localized_directory_schema_item(record):
+    item = {
+        "@type": "MobileApplication",
+        "@id": record["canonical_store"],
+        "identifier": record["app_id"],
+        "name": record["name"],
+        "description": record["subtitle"],
+        "operatingSystem": "iOS",
+        "applicationCategory": record["category"],
+        "image": record["icon_url"],
+        "url": record["guide_url"],
+        "sameAs": record["canonical_store"],
+        "installUrl": record["store_url"],
+        "downloadUrl": record["store_url"],
+        "potentialAction": {
+            "@type": "InstallAction",
+            "target": record["store_url"],
+        },
+    }
+    storefront = record["storefront"]
+    if storefront is not None:
+        item["offers"] = {
+            "@type": "Offer",
+            "price": storefront["price"],
+            "priceCurrency": storefront["currency"],
+            "url": record["store_url"],
+            "availability": "https://schema.org/InStock",
+        }
+        if "rating_value" in storefront and "rating_count" in storefront:
+            item["aggregateRating"] = {
+                "@type": "AggregateRating",
+                "ratingValue": storefront["rating_value"],
+                "ratingCount": storefront["rating_count"],
+                "bestRating": 5,
+                "worstRating": 1,
+            }
+    return item
 
 
 def localized_directory_schema(locale, records):
@@ -1671,28 +1722,37 @@ def localized_directory_schema(locale, records):
             {
                 "@type": "ListItem",
                 "position": position,
-                "item": {
-                    "@type": "MobileApplication",
-                    "@id": record["canonical_store"],
-                    "identifier": record["app_id"],
-                    "name": record["name"],
-                    "description": record["subtitle"],
-                    "operatingSystem": "iOS",
-                    "applicationCategory": record["category"],
-                    "image": record["icon_url"],
-                    "url": record["guide_url"],
-                    "sameAs": record["canonical_store"],
-                    "installUrl": record["store_url"],
-                    "downloadUrl": record["store_url"],
-                    "potentialAction": {
-                        "@type": "InstallAction",
-                        "target": record["store_url"],
-                    },
-                },
+                "item": localized_directory_schema_item(record),
             }
             for position, record in enumerate(records, start=1)
         ],
     }
+
+
+def localized_directory_storefront_proof(record):
+    storefront = record["storefront"]
+    if storefront is None:
+        return ""
+    e = html.escape
+    rating = ""
+    if "rating_value" in storefront and "rating_count" in storefront:
+        rating_value = f"{float(storefront['rating_value']):.1f}"
+        rating_count = int(storefront["rating_count"])
+        rating = (
+            '<span aria-hidden="true"> · </span>'
+            '<span class="app-rating">'
+            '<span aria-hidden="true">★</span> '
+            f'<data value="{rating_value}">{rating_value}</data>/5'
+            '<span aria-hidden="true"> · </span>'
+            f'<data value="{rating_count}">{rating_count}</data>'
+            "</span>"
+        )
+    return (
+        '<p class="app-store-proof"><span>App Store</span>'
+        '<span aria-hidden="true"> · </span>'
+        f'<data value="{e(str(storefront["price"]), quote=True)}">'
+        f'{e(str(storefront["formatted_price"]))}</data>{rating}</p>'
+    )
 
 
 DIRECTORY_STYLE = """<style>
@@ -1701,7 +1761,7 @@ DIRECTORY_STYLE = """<style>
 body{margin:0;background:linear-gradient(180deg,#f2fbf7 0,#fff 36rem);color:var(--ink)}
 main{width:min(96%,980px);margin:0 auto;padding:clamp(28px,5vw,64px) 0 72px}
 h1{margin:0;font-size:clamp(2rem,6vw,4.4rem);letter-spacing:-.045em;line-height:1.02}
-h1,.intro,.catalog-link,.finder-field,.no-match,.app-name,.app-sub,.app-price,.store-cta{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+h1,.intro,.catalog-link,.finder-field,.no-match,.app-name,.app-sub,.app-price,.app-store-proof,.store-cta{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .intro{margin:16px 0 0;color:var(--muted);font-size:clamp(1rem,2vw,1.16rem)}
 .catalog-link{margin:18px 0}.catalog-link a{color:var(--teal);font-weight:800}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
@@ -1714,14 +1774,14 @@ h1,.intro,.catalog-link,.finder-field,.no-match,.app-name,.app-sub,.app-price,.s
 .finder-count{min-width:58px;color:var(--teal);font-size:.88rem;font-variant-numeric:tabular-nums;text-align:end}
 .no-match{margin:0 0 18px;padding:14px 18px;border:1px solid #eadfd1;border-radius:18px;background:#fff9ef;color:#75532d;font-weight:750}
 .app-list{display:grid;grid-template-columns:1fr;gap:12px;margin:0;padding:0;list-style:none}
-.app-card{display:grid;grid-template-columns:72px minmax(0,1fr) auto;align-items:center;gap:clamp(14px,3vw,24px);min-height:116px;padding:clamp(16px,3vw,24px);border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.94);box-shadow:var(--shadow)}
+.app-card{display:grid;grid-template-columns:72px minmax(0,1fr) auto;align-items:center;gap:clamp(14px,3vw,24px);min-height:132px;padding:clamp(16px,3vw,24px);border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.94);box-shadow:var(--shadow)}
 .app-icon{display:block;width:72px;height:72px;border:1px solid rgba(21,33,29,.08);border-radius:19px;object-fit:cover;box-shadow:0 10px 26px rgba(21,70,57,.14)}
 .app-copy{min-width:0}.app-name{display:block;color:var(--ink);font-size:clamp(1.08rem,2.4vw,1.35rem);font-weight:900;text-decoration:none}.app-name:hover{text-decoration:underline}
-.app-sub,.app-price{margin:7px 0 0;color:var(--muted)}.app-price{font-size:.92rem}.app-price strong{color:var(--ink)}
+.app-sub,.app-price,.app-store-proof{margin:7px 0 0;color:var(--muted)}.app-price{font-size:.92rem}.app-price strong{color:var(--ink)}.app-store-proof{color:#54458d;font-size:.82rem;font-weight:800;font-variant-numeric:tabular-nums}.app-store-proof data{color:inherit}
 .store-cta{display:inline-flex;align-items:center;justify-content:center;max-width:42vw;min-height:48px;padding:0 20px;border-radius:999px;background:var(--teal);color:#fff;font-weight:900;text-decoration:none;box-shadow:0 10px 24px rgba(17,106,86,.22)}
 .store-cta:focus-visible,.app-name:focus-visible{outline:3px solid #7d5cff;outline-offset:4px}
 [hidden]{display:none!important}
-@media(max-width:560px){main{width:min(94%,760px)}.finder-shell{border-radius:22px}.finder-field{gap:9px;padding:0 12px}.finder-count{min-width:50px}.app-card{grid-template-columns:58px minmax(0,1fr) auto;gap:12px;min-height:104px;border-radius:20px}.app-icon{width:58px;height:58px;border-radius:16px}.store-cta{max-width:32vw;padding:0 14px}.app-price{font-size:.84rem}}
+@media(max-width:560px){main{width:min(94%,760px)}.finder-shell{border-radius:22px}.finder-field{gap:9px;padding:0 12px}.finder-count{min-width:50px}.app-card{grid-template-columns:58px minmax(0,1fr) auto;gap:12px;min-height:120px;border-radius:20px}.app-icon{width:58px;height:58px;border-radius:16px}.store-cta{max-width:32vw;padding:0 14px}.app-price{font-size:.84rem}.app-store-proof{font-size:.76rem}}
 @media(max-width:380px){.app-card{grid-template-columns:48px minmax(0,1fr) auto;gap:9px;padding:14px 12px}.app-icon{width:48px;height:48px;border-radius:14px}.store-cta{min-height:44px;padding:0 11px}.finder-count{min-width:44px;font-size:.8rem}}
 @media(prefers-reduced-motion:no-preference){.app-card,.store-cta{transition:transform .18s ease,box-shadow .18s ease}.app-card:hover{transform:translateY(-2px);box-shadow:0 22px 62px rgba(21,70,57,.15)}.store-cta:hover{transform:translateY(-1px)}}
 </style>"""
@@ -1828,7 +1888,8 @@ def build_locale_index(locale, keys, locales):
             f'{e(record["name"])}</a>'
             f'<p class="app-sub">{e(record["subtitle"])}</p>'
             f'<p class="app-price"><strong>{e(ui["price"])}:</strong> '
-            f'{e(record["pricing"])}</p></div>'
+            f'{e(record["pricing"])}</p>'
+            f'{localized_directory_storefront_proof(record)}</div>'
             f'<a class="store-cta" href="{e(record["store_url"])}" '
             'referrerpolicy="no-referrer" '
             f'aria-label="{e(ui["get"].format(name=record["name"]))}">'

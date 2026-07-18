@@ -37,6 +37,7 @@
 .iag-decision-card__title,
 .iag-decision-card__promise,
 .iag-decision-card__terms,
+.iag-decision-card__storefront,
 .iag-decision-card__fact,
 .iag-decision-card__cta {
   min-inline-size: 0;
@@ -65,6 +66,26 @@
   min-inline-size: 0;
   gap: 0.4rem;
   overflow: hidden;
+}
+
+.iag-decision-card__storefront {
+  display: inline-flex;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.32rem 0.58rem;
+  color: #f5f3ff;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.iag-decision-card__storefront data {
+  color: inherit;
 }
 
 .iag-decision-card__fact {
@@ -142,7 +163,8 @@
 
   .iag-decision-card__title,
   .iag-decision-card__promise,
-  .iag-decision-card__terms {
+  .iag-decision-card__terms,
+  .iag-decision-card__storefront {
     color: #000;
   }
 

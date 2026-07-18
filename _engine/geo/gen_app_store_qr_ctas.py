@@ -22,6 +22,10 @@ PAGES = gen_smart_app_banners.PAGES
 SITE = gen_smart_app_banners.SITE
 HEAD_BLOCK_START = "<!-- app-store-qr-style:start -->"
 HEAD_BLOCK_END = "<!-- app-store-qr-style:end -->"
+DECISION_STYLE_ANCHOR = "<!-- app-decision-card-style:start -->"
+FEED_DISCOVERY_ANCHOR = (
+    '<link rel="alternate" type="application/atom+xml"'
+)
 HEAD_BLOCK_RE = re.compile(
     rf"\s*{re.escape(HEAD_BLOCK_START)}.*?"
     rf"{re.escape(HEAD_BLOCK_END)}\s*",
@@ -247,6 +251,10 @@ def ensure_qr_card(
         raise ValueError(f"App Store QR page is missing head or body: {path}")
     cleaned = HEAD_BLOCK_RE.sub("\n", CARD_BLOCK_RE.sub("\n", source))
     head_index = cleaned.index("</head>")
+    for anchor in (DECISION_STYLE_ANCHOR, FEED_DISCOVERY_ANCHOR):
+        anchor_index = cleaned.find(anchor)
+        if 0 <= anchor_index < head_index:
+            head_index = anchor_index
     with_style = (
         cleaned[:head_index].rstrip()
         + "\n"

@@ -1372,7 +1372,12 @@ class GeneratorTests(unittest.TestCase):
                 "https://apps.apple.com/app/id6773017109?ct=localized"
             )
             page.write_text(
-                "<head></head><body><main>"
+                "<head>"
+                f"{gen_app_store_qr_ctas.DECISION_STYLE_ANCHOR}"
+                '<link rel="stylesheet" href="/decision.css">'
+                "<!-- app-decision-card-style:end -->"
+                f"{gen_app_store_qr_ctas.FEED_DISCOVERY_ANCHOR} "
+                'href="/feed.xml"></head><body><main>'
                 f'<a class="cta" href="{app_href}">Localized label</a>'
                 "</main></body>",
                 encoding="utf-8",
@@ -1430,7 +1435,11 @@ class GeneratorTests(unittest.TestCase):
             )
             self.assertLess(
                 source.index(gen_app_store_qr_ctas.HEAD_BLOCK_START),
-                source.index("</head>"),
+                source.index(gen_app_store_qr_ctas.DECISION_STYLE_ANCHOR),
+            )
+            self.assertLess(
+                source.index(gen_app_store_qr_ctas.DECISION_STYLE_ANCHOR),
+                source.index(gen_app_store_qr_ctas.FEED_DISCOVERY_ANCHOR),
             )
             self.assertLess(
                 source.index(gen_app_store_qr_ctas.CARD_BLOCK_START),
@@ -19722,7 +19731,9 @@ class GeneratorTests(unittest.TestCase):
             product = pages / "zh-Hant" / "tripbeelite.html"
             product.parent.mkdir()
             product.write_text(
-                "<html><head></head><body><main>"
+                "<html><head>"
+                f"{gen_app_decision_cards.FEED_DISCOVERY_ANCHOR} "
+                'href="/feed.xml"></head><body><main>'
                 "<h1>TripBee Lite：旅程規劃</h1>"
                 "<p><strong>一次專注規劃一趟旅行</strong></p>"
                 "<h2>主要功能</h2><ul>"
@@ -19730,6 +19741,17 @@ class GeneratorTests(unittest.TestCase):
                 "</ul><h2>價格</h2><p>免費開始，一次購買解鎖。</p>"
                 f'<p><a href="https://apps.apple.com/app/id{app_id}?ct=iag_lp">'
                 "在 App Store 取得 TripBee Lite</a></p>"
+                "<!-- app-store-facts:start -->"
+                '<aside class="iag-store-facts"><a href="https://apps.apple.com/tw/app/'
+                f'id{app_id}"><span>App Store</span>'
+                '<span aria-hidden="true">·</span><data value="0">免費</data>'
+                '<span aria-hidden="true">·</span>'
+                '<span class="iag-store-facts__rating">'
+                '<span aria-hidden="true">★</span> '
+                '<data value="4.9">4.9</data>/5 '
+                '<span aria-hidden="true">·</span> '
+                '<data value="12">12</data></span></a></aside>'
+                "<!-- app-store-facts:end -->"
                 "</main></body></html>",
                 encoding="utf-8",
             )
@@ -19743,7 +19765,20 @@ class GeneratorTests(unittest.TestCase):
             self.assertIn("一次專注規劃一趟旅行", rendered)
             self.assertIn("每日時間軸", rendered)
             self.assertIn("免費開始，一次購買解鎖。", rendered)
+            self.assertIn(
+                'class="iag-decision-card__storefront"',
+                rendered,
+            )
+            self.assertIn('<data value="0">免費</data>', rendered)
+            self.assertIn('<data value="4.9">4.9</data>/5', rendered)
+            self.assertIn('<data value="12">12</data>', rendered)
             self.assertIn("?ct=iag_decision", rendered)
+            self.assertLess(
+                rendered.index(gen_app_decision_cards.STYLE_START),
+                rendered.index(
+                    gen_app_decision_cards.FEED_DISCOVERY_ANCHOR
+                ),
+            )
             self.assertEqual(
                 1, rendered.count(gen_app_decision_cards.CARD_START)
             )
@@ -20291,13 +20326,13 @@ class GeneratorTests(unittest.TestCase):
             "gen_mobile_app_identity.py",
             "gen_webmcp_install_tools.py",
             "portfolio_app_catalog_api.py",
+            "gen_publisher_disclosures.py",
+            "gen_guide_design.py",
+            "gen_app_store_facts.py",
+            "gen_app_decision_cards.py",
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",
-            "gen_publisher_disclosures.py",
-            "gen_guide_design.py",
-            "gen_app_decision_cards.py",
-            "gen_app_store_facts.py",
             "validate_webstories.py",
             "gen_llms.py --cached-live",
             "zhuyin_resourcesync.py",
@@ -20351,13 +20386,13 @@ class GeneratorTests(unittest.TestCase):
             "gen_smart_app_banners.py",
             "gen_mobile_app_identity.py",
             "gen_webmcp_install_tools.py",
+            "gen_publisher_disclosures.py",
+            "gen_guide_design.py",
+            "gen_app_store_facts.py",
+            "gen_app_decision_cards.py",
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",
-            "gen_publisher_disclosures.py",
-            "gen_guide_design.py",
-            "gen_app_decision_cards.py",
-            "gen_app_store_facts.py",
             "gen_llms.py --cached-live",
             "zhuyin_resourcesync.py",
             "gen_feed.py",
@@ -20379,13 +20414,13 @@ class GeneratorTests(unittest.TestCase):
             "gen_smart_app_banners.py",
             "gen_mobile_app_identity.py",
             "gen_webmcp_install_tools.py",
+            "gen_publisher_disclosures.py",
+            "gen_guide_design.py",
+            "gen_app_store_facts.py",
+            "gen_app_decision_cards.py",
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",
-            "gen_publisher_disclosures.py",
-            "gen_guide_design.py",
-            "gen_app_decision_cards.py",
-            "gen_app_store_facts.py",
             "validate_webstories.py",
             "gen_llms.py --cached-live",
             "gen_feed.py",
@@ -20609,13 +20644,13 @@ class GeneratorTests(unittest.TestCase):
             "gen_smart_app_banners.py",
             "gen_mobile_app_identity.py",
             "gen_webmcp_install_tools.py",
+            "gen_publisher_disclosures.py",
+            "gen_guide_design.py",
+            "gen_app_store_facts.py",
+            "gen_app_decision_cards.py",
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",
-            "gen_publisher_disclosures.py",
-            "gen_guide_design.py",
-            "gen_app_decision_cards.py",
-            "gen_app_store_facts.py",
             "validate_webstories.py",
             "gen_llms.py",
             "zhuyin_resourcesync.py",
@@ -21512,7 +21547,20 @@ class GeneratorTests(unittest.TestCase):
             build_pages_i18n._directory_icon_url.cache_clear()
             (pages / app_store_storefronts.STATE_FILE).write_text(
                 json.dumps(
-                    {"countries": {"de": ["6773017109"]}}
+                    {
+                        "countries": {"de": ["6773017109"]},
+                        "details": {
+                            "de": {
+                                "6773017109": {
+                                    "price": "0",
+                                    "currency": "EUR",
+                                    "formatted_price": "Free",
+                                    "rating_value": 4.9,
+                                    "rating_count": 12,
+                                }
+                            }
+                        },
+                    }
                 ),
                 encoding="utf-8",
             )
@@ -21612,6 +21660,10 @@ class GeneratorTests(unittest.TestCase):
                 ),
                 locale_index,
             )
+            self.assertIn('class="app-store-proof"', locale_index)
+            self.assertIn('<data value="0">Kostenlos</data>', locale_index)
+            self.assertIn('<data value="4.9">4.9</data>/5', locale_index)
+            self.assertIn('<data value="12">12</data>', locale_index)
             self.assertEqual(
                 1,
                 locale_index.count(
@@ -21717,6 +21769,26 @@ class GeneratorTests(unittest.TestCase):
                     "target": direct_store,
                 },
                 listed["potentialAction"],
+            )
+            self.assertEqual(
+                {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "EUR",
+                    "url": direct_store,
+                    "availability": "https://schema.org/InStock",
+                },
+                listed["offers"],
+            )
+            self.assertEqual(
+                {
+                    "@type": "AggregateRating",
+                    "ratingValue": 4.9,
+                    "ratingCount": 12,
+                    "bestRating": 5,
+                    "worstRating": 1,
+                },
+                listed["aggregateRating"],
             )
             self.assertNotIn("?", direct_store)
             with mock.patch.object(

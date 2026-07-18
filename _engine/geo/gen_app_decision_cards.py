@@ -32,6 +32,9 @@ STYLE_START = "<!-- app-decision-card-style:start -->"
 STYLE_END = "<!-- app-decision-card-style:end -->"
 CARD_START = "<!-- app-decision-card:start -->"
 CARD_END = "<!-- app-decision-card:end -->"
+FEED_DISCOVERY_ANCHOR = (
+    '<link rel="alternate" type="application/atom+xml"'
+)
 STYLE_RE = re.compile(
     rf"\s*{re.escape(STYLE_START)}.*?{re.escape(STYLE_END)}\s*",
     flags=re.DOTALL,
@@ -40,6 +43,17 @@ CARD_RE = re.compile(
     rf"\s*{re.escape(CARD_START)}.*?{re.escape(CARD_END)}\s*",
     flags=re.DOTALL,
 )
+STORE_FACT_RE = re.compile(
+    r"<!-- app-store-facts:start -->"
+    r"(?P<body>.*?)"
+    r"<!-- app-store-facts:end -->",
+    flags=re.DOTALL,
+)
+STORE_DATA_RE = re.compile(
+    r'<data\s+value="(?P<value>[^"]+)">(?P<label>.*?)</data>',
+    flags=re.DOTALL,
+)
+DECIMAL_RE = re.compile(r"(?:0|[1-9][0-9]*)(?:\.[0-9]+)?")
 HEAD_END_RE = re.compile(r"</head\s*>", flags=re.IGNORECASE)
 H1_RE = re.compile(r"<h1\b[^>]*>(.*?)</h1>", flags=re.IGNORECASE | re.DOTALL)
 TAGLINE_RE = re.compile(
@@ -118,6 +132,7 @@ STYLESHEET = """\
 .iag-decision-card__title,
 .iag-decision-card__promise,
 .iag-decision-card__terms,
+.iag-decision-card__storefront,
 .iag-decision-card__fact,
 .iag-decision-card__cta {
   min-inline-size: 0;
@@ -146,6 +161,26 @@ STYLESHEET = """\
   min-inline-size: 0;
   gap: 0.4rem;
   overflow: hidden;
+}
+
+.iag-decision-card__storefront {
+  display: inline-flex;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.32rem 0.58rem;
+  color: #f5f3ff;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.iag-decision-card__storefront data {
+  color: inherit;
 }
 
 .iag-decision-card__fact {
@@ -223,7 +258,8 @@ STYLESHEET = """\
 
   .iag-decision-card__title,
   .iag-decision-card__promise,
-  .iag-decision-card__terms {
+  .iag-decision-card__terms,
+  .iag-decision-card__storefront {
     color: #000;
   }
 
@@ -288,6 +324,50 @@ def _terms(source: str, answer: bool) -> str:
     return _plain_text(section.group(1)) if section else ""
 
 
+def _storefront_fact(source: str, answer: bool) -> dict[str, object] | None:
+    if answer:
+        return None
+    block = STORE_FACT_RE.search(source)
+    if block is None:
+        return None
+    values = [
+        (html.unescape(match.group("value")), _plain_text(match.group("label")))
+        for match in STORE_DATA_RE.finditer(block.group("body"))
+    ]
+    if len(values) not in {1, 3}:
+        raise ValueError("Malformed verified App Store facts")
+    price_value, formatted_price = values[0]
+    if (
+        DECIMAL_RE.fullmatch(price_value) is None
+        or not formatted_price
+        or len(formatted_price) > 64
+    ):
+        raise ValueError("Invalid verified App Store price")
+    result: dict[str, object] = {
+        "price_value": price_value,
+        "formatted_price": formatted_price,
+    }
+    if len(values) == 3:
+        rating_value, rating_label = values[1]
+        rating_count, count_label = values[2]
+        if (
+            DECIMAL_RE.fullmatch(rating_value) is None
+            or not rating_count.isdigit()
+            or rating_label != rating_value
+            or count_label != rating_count
+            or not 0 <= float(rating_value) <= 5
+            or int(rating_count) <= 0
+        ):
+            raise ValueError("Invalid verified App Store rating")
+        result.update(
+            {
+                "rating_value": rating_value,
+                "rating_count": int(rating_count),
+            }
+        )
+    return result
+
+
 def _page_content(source: str, key: str, app_id: str, answer: bool) -> dict[str, object]:
     heading = H1_RE.search(source)
     promise_match = LEAD_RE.search(source) if answer else TAGLINE_RE.search(source)
@@ -304,6 +384,7 @@ def _page_content(source: str, key: str, app_id: str, answer: bool) -> dict[str,
         "promise": promise,
         "facts": _facts(source, answer),
         "terms": _terms(source, answer),
+        "storefront": _storefront_fact(source, answer),
         "store_url": store_url,
         "cta": cta,
     }
@@ -334,6 +415,27 @@ def card_block(key: str, app_id: str, content: dict[str, object]) -> str:
         if content["terms"]
         else ""
     )
+    storefront = ""
+    if content["storefront"]:
+        detail = content["storefront"]
+        rating = ""
+        if "rating_value" in detail and "rating_count" in detail:
+            rating = (
+                '<span aria-hidden="true"> · </span>'
+                '<span><span aria-hidden="true">★</span> '
+                f'<data value="{esc(detail["rating_value"])}">'
+                f'{esc(detail["rating_value"])}</data>/5'
+                '<span aria-hidden="true"> · </span>'
+                f'<data value="{esc(detail["rating_count"])}">'
+                f'{esc(detail["rating_count"])}</data></span>'
+            )
+        storefront = (
+            '    <div class="iag-decision-card__storefront">'
+            "<span>App Store</span>"
+            '<span aria-hidden="true"> · </span>'
+            f'<data value="{esc(detail["price_value"])}">'
+            f'{esc(detail["formatted_price"])}</data>{rating}</div>'
+        )
     return "\n".join((
         CARD_START,
         (
@@ -356,6 +458,7 @@ def card_block(key: str, app_id: str, content: dict[str, object]) -> str:
             f'title="{esc(content["promise"])}">{esc(content["promise"])}</p>'
         ),
         f'    <div class="iag-decision-card__facts">{facts}</div>',
+        *([storefront] if storefront else []),
         f"    {terms}" if terms else "",
         (
             f'    <a class="iag-decision-card__cta" '
@@ -373,7 +476,9 @@ def _inject_style(source: str, block: str) -> str:
     match = HEAD_END_RE.search(source)
     if not match:
         raise ValueError("Decision-card target has no closing head")
-    return source[:match.start()].rstrip() + "\n" + block + "\n" + source[match.start():]
+    anchor = source.find(FEED_DISCOVERY_ANCHOR)
+    index = anchor if 0 <= anchor < match.start() else match.start()
+    return source[:index].rstrip() + "\n" + block + "\n" + source[index:].lstrip()
 
 
 def _inject_card(source: str, block: str, answer: bool) -> str:

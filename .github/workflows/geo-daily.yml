@@ -72,13 +72,13 @@ jobs:
           python3 gen_smart_app_banners.py
           python3 gen_mobile_app_identity.py
           python3 gen_webmcp_install_tools.py
+          python3 gen_publisher_disclosures.py
+          python3 gen_guide_design.py
+          python3 gen_app_store_facts.py
+          python3 gen_app_decision_cards.py
           python3 gen_mobile_store_ctas.py
           python3 gen_app_store_qr_ctas.py
           python3 gen_app_store_share_ctas.py
-          python3 gen_publisher_disclosures.py
-          python3 gen_guide_design.py
-          python3 gen_app_decision_cards.py
-          python3 gen_app_store_facts.py
           python3 validate_webstories.py
           python3 gen_llms.py --cached-live
           python3 gen_feed.py
@@ -184,13 +184,13 @@ jobs:
           python3 gen_mobile_app_identity.py
           python3 gen_webmcp_install_tools.py
           python3 portfolio_app_catalog_api.py
+          python3 gen_publisher_disclosures.py
+          python3 gen_guide_design.py
+          python3 gen_app_store_facts.py
+          python3 gen_app_decision_cards.py
           python3 gen_mobile_store_ctas.py
           python3 gen_app_store_qr_ctas.py
           python3 gen_app_store_share_ctas.py
-          python3 gen_publisher_disclosures.py
-          python3 gen_guide_design.py
-          python3 gen_app_decision_cards.py
-          python3 gen_app_store_facts.py
           python3 validate_webstories.py
           python3 gen_llms.py --cached-live
           python3 zhuyin_resourcesync.py
@@ -255,13 +255,13 @@ jobs:
           python3 gen_smart_app_banners.py
           python3 gen_mobile_app_identity.py
           python3 gen_webmcp_install_tools.py
+          python3 gen_publisher_disclosures.py
+          python3 gen_guide_design.py
+          python3 gen_app_store_facts.py
+          python3 gen_app_decision_cards.py
           python3 gen_mobile_store_ctas.py
           python3 gen_app_store_qr_ctas.py
           python3 gen_app_store_share_ctas.py
-          python3 gen_publisher_disclosures.py
-          python3 gen_guide_design.py
-          python3 gen_app_decision_cards.py
-          python3 gen_app_store_facts.py
           python3 validate_webstories.py
           python3 gen_llms.py --cached-live
           python3 zhuyin_resourcesync.py

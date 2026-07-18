@@ -2,12 +2,12 @@
 
 > Factual owned-asset coverage only. This does not pretend to measure live AI recommendations.
 
-Public apps: **28** · Average coverage: **94.6%**
+Public apps: **28** · Average coverage: **95.0%**
 
 | App | Coverage | Answers | Social languages | Alternatives | Hub / guide / story |
 |---|---:|---:|---:|---:|---|
-| DailyMate | 53.2% | 13/25 | 0 | 0 | hub / guide / story |
 | TripBee Lite | 58.8% | 17/25 | 0 | 0 | hub / guide / story |
+| DailyMate | 64.4% | 21/25 | 0 | 0 | hub / guide / story |
 | Wordmate: Learn 44 Languages | 80.0% | 25/25 | 0 | 5 | hub / guide / story |
 | Lumi Letters | 93.3% | 44/44 | 2 | 5 | hub / guide / story |
 | Lumi Math Planet | 93.3% | 43/43 | 2 | 5 | hub / guide / story |

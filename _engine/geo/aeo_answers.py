@@ -629,7 +629,12 @@ def parse_page_info(path: Path) -> tuple[str, str]:
     text = path.read_text(encoding="utf-8", errors="replace")
     hm = re.search(r"<h1>(.*?)</h1>", text, re.S)
     title = re.sub(r"<.*?>", "", hm.group(1)).strip() if hm else path.stem.replace("-", " ")
-    sm = re.search(r'"@type"\s*:\s*"SoftwareApplication".*?"name"\s*:\s*"([^"]+)"', text, re.S)
+    sm = re.search(
+        r'"@type"\s*:\s*"(?:SoftwareApplication|MobileApplication)"'
+        r'.*?"name"\s*:\s*"([^"]+)"',
+        text,
+        re.S,
+    )
     app = sm.group(1) if sm else "iOS app"
     return html.unescape(title), html.unescape(app)
 

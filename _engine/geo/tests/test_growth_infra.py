@@ -18620,6 +18620,20 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("independent buying guide", page)
         self.assertIn('"name": "Lumi Studio"', page)
 
+    def test_answer_index_recognizes_mobile_application_schema(self):
+        with tempfile.TemporaryDirectory() as directory:
+            page = Path(directory) / "mobile-app.html"
+            page.write_text(
+                '<h1>Best focused study app</h1><script type="application/ld+json">'
+                '{"@type":"MobileApplication","name":"LockHour Pro"}'
+                "</script>",
+                encoding="utf-8",
+            )
+            self.assertEqual(
+                ("Best focused study app", "LockHour Pro"),
+                aeo_answers.parse_page_info(page),
+            )
+
     def test_answer_localizer_updates_jsonld_language_semantically(self):
         source = (
             '<html lang="en"><head><script type="application/ld+json">'

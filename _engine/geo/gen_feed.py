@@ -40,6 +40,7 @@ MAX_ITEMS = 75
 REQUIRED_SUBDIRS = ("guides",)
 REQUIRED_RELATIVE_PATHS = (
     "data/zhuyin-bopomofo-dcat3-open-data-catalog.html",
+    "data/lumi-studio-publisher-search-intent-catalog.html",
 )
 RESERVED_SUBDIR_LIMITS = (("tools", 10), ("data", 3))
 FEED_TITLE = "iOS App Guide — latest answers &amp; guides"
@@ -431,7 +432,7 @@ def render_rss(items, now):
         "  <channel>\n"
         "    <title>iOS App Guide — latest answers, guides, tools &amp; data</title>\n"
         f"    <link>{SITE}/</link>\n"
-        "    <description>Fresh independent iOS app guides, answers, free tools "
+        "    <description>Fresh publisher-disclosed iOS app guides, answers, free tools "
         "and open datasets.</description>\n"
         "    <language>en</language>\n"
         f"    <lastBuildDate>{rss_date(now)}</lastBuildDate>\n"
@@ -481,7 +482,7 @@ def render_json_feed(items):
                 "home_page_url": f"{SITE}/",
                 "feed_url": f"{SITE}/feed.json",
                 "description": (
-                    "Fresh independent iOS app guides, answers, free tools "
+                    "Fresh publisher-disclosed iOS app guides, answers, free tools "
                     "and open datasets."
                 ),
                 "language": "en",

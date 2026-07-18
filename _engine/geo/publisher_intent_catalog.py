@@ -1,0 +1,840 @@
+#!/usr/bin/env python3
+"""Generate the first-party Lumi Studio publisher search-intent dataset."""
+
+from __future__ import annotations
+
+import argparse
+import csv
+from datetime import date
+import hashlib
+import html
+import io
+import json
+import os
+from pathlib import Path
+import re
+from typing import Any, Iterator
+from urllib.parse import urlencode
+
+from answer_personas import PERSONAS
+from official_locales import OFFICIAL_LOCALES
+
+
+HERE = Path(__file__).resolve().parent
+PAGES = HERE / "pages"
+SITE = os.environ.get(
+    "GEO_SITE",
+    "https://alice51849.github.io/ios-app-guide",
+).rstrip("/")
+SLUG = "lumi-studio-publisher-search-intent-catalog"
+I18N_PATH = HERE / "publisher_intent_catalog_i18n.json"
+FINDER_DATASET = "verified-ios-app-finder-catalog.json"
+LICENSE_URL = "https://creativecommons.org/licenses/by/4.0/"
+TODAY_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
+RTL_LOCALES = frozenset({"ar-SA", "he", "ur-PK"})
+EXPECTED_APP_COUNT = 26
+EXPECTED_LOCALE_COUNT = 50
+EXPECTED_RECORD_COUNT = EXPECTED_APP_COUNT * EXPECTED_LOCALE_COUNT
+
+NAME = "Lumi Studio Publisher Search Intent Catalog"
+DESCRIPTION = (
+    "A first-party catalog of who each app is designed for, the task they are "
+    "trying to complete, and the direct App Store path."
+)
+LEAD = (
+    "Publisher-authored search intents across 26 verified live iOS apps and "
+    "50 Apple locales."
+)
+DISCLOSURE = (
+    "This is first-party material published by Lumi Studio, the developer of "
+    "every listed app."
+)
+NON_MEASURED = (
+    "The queries are editorial descriptions of intended use cases, not measured "
+    "search-volume data, rankings, independent reviews, or user endorsements."
+)
+METHODOLOGY = (
+    "One primary buyer persona was selected for each verified live app. Each "
+    "query and decision context was editorially localized for the target locale "
+    "and linked to the matching full guide."
+)
+
+PURCHASE_LABELS = {
+    "paid_upfront": "Paid download",
+    "free_with_lifetime_unlock": "Free to start · lifetime unlock",
+    "free": "Free",
+    "flexible": "Flexible · check listing",
+    "neutral": "Check current listing",
+}
+
+CSV_FIELDS = (
+    "record_id",
+    "locale",
+    "app_key",
+    "app_name",
+    "app_store_id",
+    "publisher_query",
+    "decision_context",
+    "purchase_model",
+    "one_time_option",
+    "source_persona_query",
+    "canonical_guide_url",
+    "canonical_app_store_url",
+    "app_store_url",
+    "publisher_disclosure",
+    "query_origin",
+    "measured_search_volume",
+    "is_ranking",
+    "verified_live",
+)
+
+
+def write_text_if_changed(path: Path, content: str) -> bool:
+    try:
+        if path.read_text(encoding="utf-8") == content:
+            return False
+    except FileNotFoundError:
+        pass
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(content, encoding="utf-8")
+    return True
+
+
+def slugify(value: str) -> str:
+    return re.sub(
+        r"-+",
+        "-",
+        re.sub(r"[^a-z0-9]+", "-", value.lower()),
+    ).strip("-")
+
+
+def single_line(value: str) -> str:
+    value = html.unescape(re.sub(r"<[^>]+>", "", value))
+    return " ".join(value.split())
+
+
+def _extract(source: str, pattern: str, field: str) -> str:
+    match = re.search(pattern, source, flags=re.IGNORECASE | re.DOTALL)
+    if not match:
+        raise ValueError(f"Missing {field}")
+    value = single_line(match.group(1))
+    if not value:
+        raise ValueError(f"Empty {field}")
+    return value
+
+
+def _json_nodes(value: Any) -> Iterator[dict[str, Any]]:
+    if isinstance(value, dict):
+        yield value
+        for child in value.values():
+            yield from _json_nodes(child)
+    elif isinstance(value, list):
+        for child in value:
+            yield from _json_nodes(child)
+
+
+def _localized_app_name(source: str, app_id: str) -> str:
+    for raw in re.findall(
+        r'<script type="application/ld\+json">\s*(.*?)\s*</script>',
+        source,
+        flags=re.IGNORECASE | re.DOTALL,
+    ):
+        try:
+            payload = json.loads(raw)
+        except json.JSONDecodeError:
+            continue
+        for node in _json_nodes(payload):
+            node_type = node.get("@type")
+            types = (
+                {node_type}
+                if isinstance(node_type, str)
+                else set(node_type)
+                if isinstance(node_type, list)
+                else set()
+            )
+            if not types & {"MobileApplication", "SoftwareApplication"}:
+                continue
+            if f"id{app_id}" not in json.dumps(node, ensure_ascii=False):
+                continue
+            name = node.get("name")
+            if isinstance(name, str) and single_line(name):
+                return single_line(name)
+    raise ValueError(f"Missing localized app name for App Store ID {app_id}")
+
+
+def load_ui_i18n(path: Path = I18N_PATH) -> dict[str, dict[str, str]]:
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    strings = payload.get("strings")
+    localizations = payload.get("localizations")
+    if (
+        payload.get("schema_version") != 1
+        or payload.get("source_locale") != "en-US"
+        or not isinstance(strings, list)
+        or not isinstance(localizations, dict)
+    ):
+        raise ValueError("Invalid publisher intent localization document")
+    expected_locales = set(OFFICIAL_LOCALES)
+    if set(localizations) != expected_locales:
+        raise ValueError(
+            "Publisher intent locale coverage differs: "
+            f"missing={sorted(expected_locales - set(localizations))}, "
+            f"extra={sorted(set(localizations) - expected_locales)}"
+        )
+    expected_strings = set(strings)
+    for locale, mapping in localizations.items():
+        if not isinstance(mapping, dict) or set(mapping) != expected_strings:
+            raise ValueError(f"Incomplete publisher intent UI mapping: {locale}")
+        for source, target in mapping.items():
+            if (
+                not isinstance(source, str)
+                or not isinstance(target, str)
+                or not target.strip()
+                or "\n" in target
+                or "\r" in target
+            ):
+                raise ValueError(
+                    f"Invalid publisher intent UI translation: {locale}/{source}"
+                )
+    return localizations
+
+
+def campaign_token(locale: str) -> str:
+    token = f"iag_data_{locale.replace('-', '_').lower()}"
+    if len(token) > 30 or not re.fullmatch(r"[a-z0-9_]+", token):
+        raise ValueError(f"Invalid publisher intent campaign token: {token}")
+    return token
+
+
+def _app_store_url(app_id: str, locale: str) -> str:
+    return (
+        f"https://apps.apple.com/app/id{app_id}?"
+        + urlencode({"ct": campaign_token(locale)})
+    )
+
+
+def _finder_records(pages: Path) -> dict[str, dict[str, Any]]:
+    path = pages / "data" / FINDER_DATASET
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    apps = payload.get("apps")
+    if not isinstance(apps, list):
+        raise ValueError(f"Invalid finder catalog: {path}")
+    records = {
+        str(app["key"]): app
+        for app in apps
+        if isinstance(app, dict) and app.get("key")
+    }
+    expected = set(PERSONAS)
+    if set(records) != expected:
+        raise ValueError(
+            "Finder/persona app coverage differs: "
+            f"missing={sorted(expected - set(records))}, "
+            f"extra={sorted(set(records) - expected)}"
+        )
+    if len(records) != EXPECTED_APP_COUNT:
+        raise ValueError(
+            f"Expected {EXPECTED_APP_COUNT} verified apps, got {len(records)}"
+        )
+    return records
+
+
+def _page_record(
+    pages: Path,
+    locale: str,
+    key: str,
+    app: dict[str, Any],
+) -> dict[str, Any]:
+    source_query = str(PERSONAS[key][0]["query"])
+    page_slug = slugify(source_query)
+    path = pages / locale / "answers" / f"{page_slug}.html"
+    source = path.read_text(encoding="utf-8")
+    app_id = str(app["app_store_id"])
+    if f"apps.apple.com/app/id{app_id}" not in source:
+        raise ValueError(f"Wrong App Store owner in {path}")
+    canonical = _extract(
+        source,
+        r'<link rel="canonical" href="([^"]+)"',
+        "canonical URL",
+    )
+    expected_canonical = (
+        f"{SITE}/{locale}/answers/{page_slug}.html"
+    )
+    if canonical != expected_canonical:
+        raise ValueError(
+            f"Unexpected canonical in {path}: {canonical}"
+        )
+    cta_label = _extract(
+        source,
+        r'<a class="cta" href="https://apps\.apple\.com/[^"]+"[^>]*>'
+        r"(.*?)</a>",
+        "App Store CTA",
+    )
+    return {
+        "record_id": f"{locale}:{key}:{page_slug}",
+        "locale": locale,
+        "app_key": key,
+        "app_name": _localized_app_name(source, app_id),
+        "app_store_id": app_id,
+        "publisher_query": _extract(
+            source,
+            r"<h1>(.*?)</h1>",
+            "localized publisher query",
+        ),
+        "decision_context": _extract(
+            source,
+            r'<p class="lead">(.*?)</p>',
+            "localized decision context",
+        ),
+        "purchase_model": str(app["purchase_model"]),
+        "one_time_option": bool(app["one_time_option"]),
+        "source_persona_query": source_query,
+        "canonical_guide_url": canonical,
+        "canonical_app_store_url": (
+            f"https://apps.apple.com/app/id{app_id}"
+        ),
+        "app_store_url": _app_store_url(app_id, locale),
+        "app_store_cta_label": cta_label,
+        "publisher_disclosure": _extract(
+            source,
+            r'<footer class="footer"><div class="wrap">(.*?)</div></footer>',
+            "publisher disclosure",
+        ),
+        "query_origin": "publisher_authored_editorially_localized",
+        "measured_search_volume": False,
+        "is_ranking": False,
+        "verified_live": True,
+    }
+
+
+def build_records(
+    pages: Path,
+) -> tuple[list[dict[str, Any]], dict[str, dict[str, Any]]]:
+    apps = _finder_records(pages)
+    ordered_keys = sorted(
+        apps,
+        key=lambda key: (str(apps[key]["name"]).casefold(), key),
+    )
+    records = [
+        _page_record(pages, locale, key, apps[key])
+        for locale in OFFICIAL_LOCALES
+        for key in ordered_keys
+    ]
+    if len(records) != EXPECTED_RECORD_COUNT:
+        raise ValueError(
+            f"Expected {EXPECTED_RECORD_COUNT} records, got {len(records)}"
+        )
+    if len({record["record_id"] for record in records}) != len(records):
+        raise ValueError("Duplicate publisher intent record IDs")
+    return records, apps
+
+
+def _content_digest(records: list[dict[str, Any]]) -> str:
+    encoded = json.dumps(
+        records,
+        ensure_ascii=False,
+        sort_keys=True,
+        separators=(",", ":"),
+    ).encode("utf-8")
+    return hashlib.sha256(encoded).hexdigest()
+
+
+def _generation_digest(record_digest: str) -> str:
+    digest = hashlib.sha256()
+    digest.update(record_digest.encode("ascii"))
+    digest.update(I18N_PATH.read_bytes())
+    digest.update(Path(__file__).read_bytes())
+    return digest.hexdigest()
+
+
+def _stable_modified(
+    path: Path,
+    generation_digest: str,
+    today: str,
+) -> str:
+    try:
+        previous = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError, TypeError, json.JSONDecodeError):
+        return today
+    value = previous.get("dateModified")
+    if (
+        previous.get("generation_digest") == generation_digest
+        and isinstance(value, str)
+        and TODAY_RE.fullmatch(value)
+        and value <= today
+    ):
+        return value
+    return today
+
+
+def dataset_payload(
+    records: list[dict[str, Any]],
+    modified: str,
+    content_digest: str,
+    generation_digest: str,
+) -> dict[str, Any]:
+    return {
+        "$schema": f"{SITE}/data/{SLUG}.schema.json",
+        "name": NAME,
+        "description": DESCRIPTION,
+        "identifier": f"{SITE}/data/{SLUG}.json",
+        "url": f"{SITE}/data/{SLUG}.html",
+        "dateModified": modified,
+        "content_digest": content_digest,
+        "generation_digest": generation_digest,
+        "license": LICENSE_URL,
+        "creator": {
+            "@type": "Organization",
+            "name": "Lumi Studio",
+            "url": SITE,
+        },
+        "publisher_disclosure": DISCLOSURE,
+        "methodology": METHODOLOGY,
+        "query_origin": "publisher_authored_editorially_localized",
+        "measured_search_volume": False,
+        "is_ranking": False,
+        "ordering": "official_locale_order_then_alphabetical_app_name",
+        "app_count": EXPECTED_APP_COUNT,
+        "locale_count": EXPECTED_LOCALE_COUNT,
+        "record_count": len(records),
+        "locales": list(OFFICIAL_LOCALES),
+        "records": records,
+    }
+
+
+def schema_payload(
+    apps: dict[str, dict[str, Any]],
+) -> dict[str, Any]:
+    return {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": f"{SITE}/data/{SLUG}.schema.json",
+        "title": NAME,
+        "type": "object",
+        "required": [
+            "name",
+            "description",
+            "identifier",
+            "dateModified",
+            "content_digest",
+            "generation_digest",
+            "publisher_disclosure",
+            "measured_search_volume",
+            "is_ranking",
+            "app_count",
+            "locale_count",
+            "record_count",
+            "records",
+        ],
+        "properties": {
+            "name": {"const": NAME},
+            "description": {"type": "string", "minLength": 20},
+            "identifier": {"type": "string", "format": "uri"},
+            "url": {"type": "string", "format": "uri"},
+            "dateModified": {"type": "string", "format": "date"},
+            "content_digest": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$",
+            },
+            "generation_digest": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$",
+            },
+            "license": {"type": "string", "format": "uri"},
+            "creator": {"type": "object"},
+            "publisher_disclosure": {
+                "type": "string",
+                "minLength": 20,
+            },
+            "methodology": {"type": "string", "minLength": 20},
+            "query_origin": {
+                "const": "publisher_authored_editorially_localized"
+            },
+            "measured_search_volume": {"const": False},
+            "is_ranking": {"const": False},
+            "ordering": {
+                "const": "official_locale_order_then_alphabetical_app_name"
+            },
+            "app_count": {"const": EXPECTED_APP_COUNT},
+            "locale_count": {"const": EXPECTED_LOCALE_COUNT},
+            "record_count": {"const": EXPECTED_RECORD_COUNT},
+            "locales": {
+                "type": "array",
+                "items": {"enum": list(OFFICIAL_LOCALES)},
+                "minItems": EXPECTED_LOCALE_COUNT,
+                "maxItems": EXPECTED_LOCALE_COUNT,
+                "uniqueItems": True,
+            },
+            "records": {
+                "type": "array",
+                "minItems": EXPECTED_RECORD_COUNT,
+                "maxItems": EXPECTED_RECORD_COUNT,
+                "items": {
+                    "type": "object",
+                    "additionalProperties": False,
+                    "required": list(CSV_FIELDS)
+                    + ["app_store_cta_label"],
+                    "properties": {
+                        "record_id": {"type": "string", "minLength": 10},
+                        "locale": {"enum": list(OFFICIAL_LOCALES)},
+                        "app_key": {"enum": sorted(apps)},
+                        "app_name": {"type": "string", "minLength": 1},
+                        "app_store_id": {
+                            "type": "string",
+                            "pattern": "^[0-9]{9,12}$",
+                        },
+                        "publisher_query": {
+                            "type": "string",
+                            "minLength": 10,
+                        },
+                        "decision_context": {
+                            "type": "string",
+                            "minLength": 20,
+                        },
+                        "purchase_model": {
+                            "enum": sorted(
+                                {
+                                    str(app["purchase_model"])
+                                    for app in apps.values()
+                                }
+                            )
+                        },
+                        "one_time_option": {"type": "boolean"},
+                        "source_persona_query": {
+                            "type": "string",
+                            "minLength": 10,
+                        },
+                        "canonical_guide_url": {
+                            "type": "string",
+                            "format": "uri",
+                        },
+                        "canonical_app_store_url": {
+                            "type": "string",
+                            "format": "uri",
+                        },
+                        "app_store_url": {
+                            "type": "string",
+                            "format": "uri",
+                        },
+                        "app_store_cta_label": {
+                            "type": "string",
+                            "minLength": 3,
+                        },
+                        "publisher_disclosure": {
+                            "type": "string",
+                            "minLength": 20,
+                        },
+                        "query_origin": {
+                            "const": (
+                                "publisher_authored_editorially_localized"
+                            )
+                        },
+                        "measured_search_volume": {"const": False},
+                        "is_ranking": {"const": False},
+                        "verified_live": {"const": True},
+                    },
+                },
+            },
+        },
+    }
+
+
+def _csv_text(records: list[dict[str, Any]]) -> str:
+    output = io.StringIO(newline="")
+    writer = csv.DictWriter(
+        output,
+        fieldnames=CSV_FIELDS,
+        extrasaction="ignore",
+        lineterminator="\n",
+    )
+    writer.writeheader()
+    for record in records:
+        writer.writerow(
+            {
+                field: (
+                    str(record[field]).lower()
+                    if isinstance(record[field], bool)
+                    else record[field]
+                )
+                for field in CSV_FIELDS
+            }
+        )
+    return output.getvalue()
+
+
+def _alternates() -> str:
+    links = [
+        f'<link rel="alternate" hreflang="en" '
+        f'href="{SITE}/data/{SLUG}.html">'
+    ]
+    links.extend(
+        f'<link rel="alternate" hreflang="{locale}" '
+        f'href="{SITE}/{locale}/data/{SLUG}.html">'
+        for locale in OFFICIAL_LOCALES
+    )
+    links.append(
+        f'<link rel="alternate" hreflang="x-default" '
+        f'href="{SITE}/data/{SLUG}.html">'
+    )
+    return "\n".join(links)
+
+
+def _schema_org(
+    locale: str,
+    canonical: str,
+    ui: dict[str, str],
+    modified: str,
+    apps: dict[str, dict[str, Any]],
+    data_dir: Path,
+) -> dict[str, Any]:
+    formats = (
+        ("application/json", "json"),
+        ("application/x-ndjson", "jsonl"),
+        ("text/csv", "csv"),
+    )
+    return {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "@id": f"{SITE}/data/{SLUG}.html#dataset",
+        "name": ui[NAME],
+        "description": ui[DESCRIPTION],
+        "url": canonical,
+        "sameAs": f"{SITE}/data/{SLUG}.html",
+        "identifier": f"{SITE}/data/{SLUG}.json",
+        "inLanguage": locale,
+        "isAccessibleForFree": True,
+        "license": LICENSE_URL,
+        "dateModified": modified,
+        "creator": {
+            "@type": "Organization",
+            "@id": f"{SITE}/#organization",
+            "name": "Lumi Studio",
+            "url": SITE,
+        },
+        "publisher": {"@id": f"{SITE}/#organization"},
+        "includedInDataCatalog": {
+            "@type": "DataCatalog",
+            "name": "Lumi Studio Open Data",
+            "url": f"{SITE}/data/",
+        },
+        "measurementTechnique": ui[METHODOLOGY],
+        "distribution": [
+            {
+                "@type": "DataDownload",
+                "encodingFormat": mime,
+                "contentUrl": f"{SITE}/data/{SLUG}.{suffix}",
+                "contentSize": (
+                    f"{(data_dir / f'{SLUG}.{suffix}').stat().st_size} bytes"
+                ),
+            }
+            for mime, suffix in formats
+        ],
+        "about": [
+            {
+                "@type": "MobileApplication",
+                "name": str(app["name"]),
+                "operatingSystem": "iOS",
+                "identifier": {
+                    "@type": "PropertyValue",
+                    "propertyID": "App Store ID",
+                    "value": str(app["app_store_id"]),
+                },
+                "url": (
+                    "https://apps.apple.com/app/"
+                    f"id{app['app_store_id']}"
+                ),
+            }
+            for app in sorted(
+                apps.values(),
+                key=lambda app: str(app["name"]).casefold(),
+            )
+        ],
+    }
+
+
+def _page(
+    locale: str,
+    canonical: str,
+    ui: dict[str, str],
+    records: list[dict[str, Any]],
+    modified: str,
+    apps: dict[str, dict[str, Any]],
+    data_dir: Path,
+) -> str:
+    escape = html.escape
+    purchase_labels = {
+        model: ui[source]
+        for model, source in PURCHASE_LABELS.items()
+    }
+    rows = "".join(
+        "<tr>"
+        f'<td><strong>{escape(str(record["app_name"]))}</strong></td>'
+        f'<td><a href="{escape(str(record["canonical_guide_url"]), quote=True)}">'
+        f'{escape(str(record["publisher_query"]))}</a></td>'
+        f'<td>{escape(str(record["decision_context"]))}</td>'
+        f'<td>{escape(purchase_labels[str(record["purchase_model"])])}</td>'
+        f'<td><a href="{escape(str(record["canonical_guide_url"]), quote=True)}">'
+        f'{escape(ui["Guide"])}</a></td>'
+        f'<td><a rel="nofollow noopener" href="'
+        f'{escape(str(record["app_store_url"]), quote=True)}">'
+        f'{escape(str(record["app_store_cta_label"]))}</a></td>'
+        "</tr>"
+        for record in records
+    )
+    schema = json.dumps(
+        _schema_org(locale, canonical, ui, modified, apps, data_dir),
+        ensure_ascii=False,
+        separators=(",", ":"),
+    ).replace("</", "<\\/")
+    root_prefix = "" if locale == "en" else f"/{locale}"
+    direction = ' dir="rtl"' if locale in RTL_LOCALES else ""
+    return f"""<!doctype html>
+<html lang="{escape(locale)}"{direction}>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="content-modified" content="{escape(modified)}">
+<title>{escape(ui[NAME])}</title>
+<meta name="description" content="{escape(ui[DESCRIPTION], quote=True)}">
+<link rel="canonical" href="{escape(canonical, quote=True)}">
+{_alternates()}
+<meta property="og:type" content="website">
+<meta property="og:title" content="{escape(ui[NAME], quote=True)}">
+<meta property="og:description" content="{escape(ui[DESCRIPTION], quote=True)}">
+<meta property="og:url" content="{escape(canonical, quote=True)}">
+<script type="application/ld+json">{schema}</script>
+<style>
+:root{{--ink:#171b28;--sub:#596174;--line:#e2e6ee;--brand:#5546c8;--bg:#f7f8fc;--card:#fff}}
+*{{box-sizing:border-box}}
+html,body{{margin:0;min-width:100%;background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow-x:auto}}
+a{{color:var(--brand);text-decoration-thickness:1px;text-underline-offset:3px}}
+.wrap{{width:max-content;min-width:100%;padding:28px clamp(18px,4vw,54px) 64px}}
+h1,h2,p,a,span,strong,th,td{{white-space:nowrap}}
+h1{{font-size:clamp(28px,4vw,46px);line-height:1.15;margin:16px 0 8px}}
+h2{{font-size:20px;margin:0 0 10px}}
+.lead{{font-size:18px;color:var(--sub);margin:0 0 18px}}
+.crumb{{font-size:13px;color:var(--sub)}}
+.badges,.downloads{{display:flex;gap:9px;align-items:center;margin:14px 0 20px}}
+.badge,.download{{display:inline-flex;border:1px solid var(--line);border-radius:999px;background:var(--card);padding:8px 13px;font-size:13px;font-weight:650;text-decoration:none}}
+.download{{border-radius:12px;color:#fff;background:linear-gradient(135deg,#6557de,#4f41bb)}}
+.cards{{display:flex;gap:14px;margin:16px 0 22px}}
+.card{{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:17px 19px;box-shadow:0 8px 28px rgba(34,37,59,.05)}}
+.card p{{margin:4px 0;color:var(--sub)}}
+.table-wrap{{max-width:calc(100vw - 36px);overflow-x:auto;border:1px solid var(--line);border-radius:18px;background:var(--card)}}
+table{{width:max-content;min-width:100%;border-collapse:collapse;font-size:14px}}
+th,td{{text-align:start;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}}
+th{{position:sticky;top:0;background:#eeeff8;color:#4e5568;font-size:12px;text-transform:uppercase;letter-spacing:.04em}}
+tr:last-child td{{border-bottom:0}}
+.footer{{color:var(--sub);font-size:13px;margin-top:22px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<div class="crumb"><a href="{SITE}{root_prefix}/index.html">{escape(ui["Home"])}</a> · <a href="{SITE}/data/">{escape(ui["Open data"])}</a></div>
+<h1>{escape(ui[NAME])}</h1>
+<p class="lead">{escape(ui[LEAD])}</p>
+<div class="badges"><span class="badge">{escape(ui["1,300 records: 26 apps × 50 locales."])}</span><span class="badge">{escape(ui["First-party publisher catalog"])}</span><span class="badge">{escape(ui["Not measured search volume"])}</span><span class="badge">{escape(ui["Free to download"])}</span></div>
+<div class="downloads"><strong>{escape(ui["Download the complete dataset"])}</strong><a class="download" href="{SITE}/data/{SLUG}.json">JSON</a><a class="download" href="{SITE}/data/{SLUG}.jsonl">JSONL</a><a class="download" href="{SITE}/data/{SLUG}.csv">CSV</a></div>
+<div class="cards"><section class="card"><h2>{escape(ui["Methodology"])}</h2><p>{escape(ui[METHODOLOGY])}</p><p>{escape(ui["Alphabetical by app name — never a ranking."])}</p></section><section class="card"><h2>{escape(ui["What this dataset contains"])}</h2><p>{escape(ui["JSON, JSONL and CSV contain the same 1,300 records."])}</p><p>{escape(ui["Scroll horizontally to inspect every field."])}</p></section></div>
+<section class="card"><h2>{escape(ui["First-party publisher catalog"])}</h2><p>{escape(ui[DISCLOSURE])}</p><p>{escape(ui[NON_MEASURED])}</p></section>
+<div class="table-wrap"><table><thead><tr><th>{escape(ui["App"])}</th><th>{escape(ui["Publisher query"])}</th><th>{escape(ui["Decision context"])}</th><th>{escape(ui["Purchase model"])}</th><th>{escape(ui["Guide"])}</th><th>App Store</th></tr></thead><tbody>{rows}</tbody></table></div>
+<p class="footer">{escape(ui["License"])}: <a href="{LICENSE_URL}">CC BY 4.0</a> · {escape(ui["CC BY 4.0 applies to the original catalog compilation; app names and App Store marks belong to their owners."])} · {escape(ui["Updated"])} {escape(modified)}</p>
+</main>
+</body>
+</html>
+"""
+
+
+def build(pages: Path = PAGES, today: str | None = None) -> str:
+    today = today or date.today().isoformat()
+    if not TODAY_RE.fullmatch(today):
+        raise ValueError(f"Invalid build date: {today}")
+    ui_i18n = load_ui_i18n()
+    records, apps = build_records(pages)
+    content_digest = _content_digest(records)
+    generation_digest = _generation_digest(content_digest)
+    data_dir = pages / "data"
+    json_path = data_dir / f"{SLUG}.json"
+    modified = _stable_modified(json_path, generation_digest, today)
+    payload = dataset_payload(
+        records,
+        modified,
+        content_digest,
+        generation_digest,
+    )
+    write_text_if_changed(
+        json_path,
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+    )
+    write_text_if_changed(
+        data_dir / f"{SLUG}.jsonl",
+        "".join(
+            json.dumps(record, ensure_ascii=False, separators=(",", ":"))
+            + "\n"
+            for record in records
+        ),
+    )
+    write_text_if_changed(data_dir / f"{SLUG}.csv", _csv_text(records))
+    write_text_if_changed(
+        data_dir / f"{SLUG}.schema.json",
+        json.dumps(
+            schema_payload(apps),
+            ensure_ascii=False,
+            indent=2,
+        )
+        + "\n",
+    )
+
+    by_locale = {
+        locale: [
+            record for record in records if record["locale"] == locale
+        ]
+        for locale in OFFICIAL_LOCALES
+    }
+    root_ui = ui_i18n["en-US"]
+    write_text_if_changed(
+        data_dir / f"{SLUG}.html",
+        _page(
+            "en",
+            f"{SITE}/data/{SLUG}.html",
+            root_ui,
+            by_locale["en-US"],
+            modified,
+            apps,
+            data_dir,
+        ),
+    )
+    for locale in OFFICIAL_LOCALES:
+        write_text_if_changed(
+            pages / locale / "data" / f"{SLUG}.html",
+            _page(
+                locale,
+                f"{SITE}/{locale}/data/{SLUG}.html",
+                ui_i18n[locale],
+                by_locale[locale],
+                modified,
+                apps,
+                data_dir,
+            ),
+        )
+    print(
+        "PUBLISHER_INTENT_CATALOG "
+        f"apps={len(apps)} locales={len(by_locale)} "
+        f"records={len(records)} pages={len(by_locale) + 1}",
+        flush=True,
+    )
+    return SLUG
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--pages",
+        type=Path,
+        default=PAGES,
+        help="Pages repository root.",
+    )
+    parser.add_argument("--today", help="Stable test/build date.")
+    args = parser.parse_args()
+    build(args.pages.resolve(), args.today)
+
+
+if __name__ == "__main__":
+    main()

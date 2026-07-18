@@ -77,6 +77,12 @@ ZHUYIN_EPUB = "zhuyin-bopomofo-epub-reference"
 ZHUYIN_LIBRARY_CATALOG = "zhuyin-bopomofo-library-catalog-records"
 ZHUYIN_OER_METADATA = "zhuyin-bopomofo-oer-repository-metadata"
 ZHUYIN_DCAT_CATALOG = "zhuyin-bopomofo-dcat3-open-data-catalog"
+DATA_DOWNLOAD_FORMATS = (
+    ("JSON", "json"),
+    ("JSONL", "jsonl"),
+    ("CSV", "csv"),
+    ("JSON Schema", "schema.json"),
+)
 WORDMATE_LANGUAGE_DATASET = "wordmate-language-support"
 WORDMATE_LANGUAGE_TOOL = "wordmate-44-language-support-checker"
 PORTFOLIO_FINDER_DATASET = "verified-ios-app-finder-catalog"
@@ -507,9 +513,16 @@ def build_llms(comp_map, live_keys):
             for f in ds:
                 title = re.sub(r"[-_]", " ", f[:-5])
                 line = f"- [{title}]({SITE}/data/{f})"
-                json_path = os.path.join(DATA_DIR, f"{f[:-5]}.json")
-                if os.path.exists(json_path):
-                    line += f" · JSON: {SITE}/data/{f[:-5]}.json"
+                for label, suffix in DATA_DOWNLOAD_FORMATS:
+                    download = os.path.join(
+                        DATA_DIR,
+                        f"{f[:-5]}.{suffix}",
+                    )
+                    if os.path.exists(download):
+                        line += (
+                            f" · {label}: "
+                            f"{SITE}/data/{f[:-5]}.{suffix}"
+                        )
                 lines.append(line)
     lines += wordmate_language_support_lines(full=False)
     lines += portfolio_finder_lines(full=False)
@@ -1105,9 +1118,15 @@ def build_llms_full(comp_map, live_keys):
         for title, url in resources:
             lines.append(f"- [{title}]({url})")
             if prefix == "data":
-                json_path = os.path.join(directory, os.path.basename(url)[:-5] + ".json")
-                if os.path.exists(json_path):
-                    lines.append(f"  - JSON: {url[:-5]}.json")
+                for label, suffix in DATA_DOWNLOAD_FORMATS:
+                    download = os.path.join(
+                        directory,
+                        os.path.basename(url)[:-5] + f".{suffix}",
+                    )
+                    if os.path.exists(download):
+                        lines.append(
+                            f"  - {label}: {url[:-5]}.{suffix}"
+                        )
 
     static_apis = [
         descriptor

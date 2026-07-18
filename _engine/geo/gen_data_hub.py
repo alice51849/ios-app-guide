@@ -27,6 +27,8 @@ import urllib.request
 from pathlib import Path
 
 from family_travel_dataset import build as build_family_travel_dataset
+from official_locales import OFFICIAL_LOCALES
+from publisher_intent_catalog import build as build_publisher_intent_catalog
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.path.join(HERE, "pages")
@@ -1302,9 +1304,10 @@ INDEX = """<!doctype html>
 <link rel="canonical" href="{site}/data/">
 <script type="application/ld+json">{schema}</script>
 <style>
-body{{margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"PingFang TC",sans-serif;color:#1d2433;background:#f7f8fb}}
-.wrap{{max-width:820px;margin:0 auto;padding:32px 20px 64px}}
+body{{margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"PingFang TC",sans-serif;color:#1d2433;background:#f7f8fb;overflow-x:auto}}
+.wrap{{width:max-content;min-width:100%;margin:0 auto;padding:32px 20px 64px}}
 a{{color:#5b4bdb}}
+h1,h2,p,a,span{{white-space:nowrap}}
 h1{{font-size:clamp(26px,5vw,36px);margin:.1em 0}}
 .lead{{color:#5b6577;font-size:clamp(15px,3.4vw,18px)}}
 .item{{display:block;background:#fff;border:1px solid #e7ebf2;border-radius:16px;padding:18px 20px;margin:16px 0;text-decoration:none;color:inherit}}
@@ -1322,7 +1325,7 @@ h1{{font-size:clamp(26px,5vw,36px);margin:.1em 0}}
 the makers of a family of privacy-minded iOS apps.</p>
 {items}
 <p class="foot">Building on the web with AI? These datasets are clean JSON with schema.org
-metadata — free to ingest and cite. Please credit “Lumi Apps ({site})”.</p>
+metadata — free to ingest and cite. Please credit “Lumi Studio ({site})”.</p>
 </div>
 </body>
 </html>
@@ -1338,14 +1341,29 @@ def build_index(datasets):
         "@context": "https://schema.org", "@type": "DataCatalog",
         "name": "Open data — Lumi Apps",
         "description": "Free, machine-readable reference datasets (CC BY 4.0) for AI assistants, "
-                       "researchers and developers, maintained by independent iOS app makers.",
+                       "researchers and developers, with clear first-party publisher disclosure.",
         "url": f"{SITE}/data/",
-        "creator": {"@type": "Organization", "name": "Lumi Apps"},
+        "creator": {"@type": "Organization", "name": "Lumi Studio"},
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "dataset": [{"@type": "Dataset", "name": d["name"], "description": d["blurb"],
                      "url": f"{SITE}/data/{d['slug']}.html",
-                     "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json",
-                                       "contentUrl": f"{SITE}/data/{d['slug']}.json"}]}
+                     "distribution": [
+                         {
+                             "@type": "DataDownload",
+                             "encodingFormat": distribution["encodingFormat"],
+                             "contentUrl": (
+                                 f"{SITE}/data/{d['slug']}."
+                                 f"{distribution['suffix']}"
+                             ),
+                         }
+                         for distribution in d.get(
+                             "distributions",
+                             [{
+                                 "encodingFormat": "application/json",
+                                 "suffix": "json",
+                             }],
+                         )
+                     ]}
                     for d in datasets],
     }, ensure_ascii=False)
     write_text_if_changed(
@@ -1365,13 +1383,20 @@ def build_sitemap(datasets):
         )
         for dataset in datasets
     }
-    localized_modified = {
-        dataset["slug"]: page_lastmod(
-            os.path.join(PAGES, "zh-Hant", "data", f"{dataset['slug']}.html"),
-            modified[dataset["slug"]],
-        )
+    localized_entries = [
+        (dataset["slug"], locale)
         for dataset in datasets
-        if dataset.get("localized")
+        for locale in (
+            dataset.get("localized_locales")
+            or (["zh-Hant"] if dataset.get("localized") else [])
+        )
+    ]
+    localized_modified = {
+        (slug, locale): page_lastmod(
+            os.path.join(PAGES, locale, "data", f"{slug}.html"),
+            modified[slug],
+        )
+        for slug, locale in localized_entries
     }
     catalog_modified = max(
         [*modified.values(), *localized_modified.values()], default=TODAY
@@ -1383,11 +1408,10 @@ def build_sitemap(datasets):
     )
     entries.extend(
         (
-            f"{SITE}/zh-Hant/data/{dataset['slug']}.html",
-            localized_modified[dataset["slug"]],
+            f"{SITE}/{locale}/data/{slug}.html",
+            localized_modified[(slug, locale)],
         )
-        for dataset in datasets
-        if dataset.get("localized")
+        for slug, locale in localized_entries
     )
     body = "\n".join(
         f"  <url><loc>{url}</loc><lastmod>{lastmod}</lastmod></url>"
@@ -1441,6 +1465,7 @@ def main():
     if args.pages:
         PAGES = os.path.abspath(args.pages)
         DATA = os.path.join(PAGES, "data")
+    publisher_intent_slug = build_publisher_intent_catalog(Path(PAGES))
     slug = build_zhuyin_page()
     pslug = build_passport_page()
     rslug = build_cn_regions_page()
@@ -1526,6 +1551,31 @@ def main():
                  "non-ability participation modes. JSON, CSV, Schema, CSVW and DCAT included.",
         "tag": "Family travel · EN + zh-Hant · CC BY 4.0",
         "localized": True,
+    }, {
+        "slug": publisher_intent_slug,
+        "name": "Lumi Studio Publisher Search Intent Catalog",
+        "blurb": (
+            "First-party decision contexts for 26 verified live iOS apps "
+            "across all 50 Apple locales, with direct guides and attributed "
+            "App Store paths. Editorial use cases only: not measured search "
+            "volume, rankings, independent reviews, or endorsements."
+        ),
+        "tag": "1,300 records · 26 apps · 50 locales",
+        "localized_locales": list(OFFICIAL_LOCALES),
+        "distributions": [
+            {
+                "encodingFormat": "application/json",
+                "suffix": "json",
+            },
+            {
+                "encodingFormat": "application/x-ndjson",
+                "suffix": "jsonl",
+            },
+            {
+                "encodingFormat": "text/csv",
+                "suffix": "csv",
+            },
+        ],
     }]
     build_index(datasets)
     urls = build_sitemap(datasets)

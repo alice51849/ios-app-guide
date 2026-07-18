@@ -1170,10 +1170,13 @@ def build(
         relative = Path("tools") / f"{SLUG}.html"
         if locale == "zh-Hant":
             relative = Path(locale) / relative
+        page = render_page(locale, records)
         write_text_if_changed(
             pages / relative,
-            render_page(locale, records),
+            page,
         )
+        if locale == "en":
+            write_text_if_changed(pages / "find-app.html", page)
         outputs.append(canonical(locale))
     _update_one_index(pages / "tools" / "index.html", "en")
     _update_one_index(

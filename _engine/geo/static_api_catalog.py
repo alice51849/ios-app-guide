@@ -32,7 +32,7 @@ API_DESCRIPTORS = (
     {
         "slug": "ios-app-catalog",
         "title": "Verified iOS App Catalog API v1",
-        "dataset": "Verified independent iOS app catalog in 50 locales",
+        "dataset": "Publisher-verified first-party iOS app catalog in 50 locales",
         "description": (
             "Every verified live app with localized summaries, search terms, "
             "verified storefront facts and direct App Store links through a "

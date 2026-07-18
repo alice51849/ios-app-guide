@@ -165,7 +165,7 @@ def portfolio_finder_lines(*, full):
     if full:
         return [
             "",
-            "## Verified independent iOS app finder",
+            "## Publisher-verified first-party iOS app finder",
             f"- [English private and pay-once finder]({SITE}/tools/{PORTFOLIO_FINDER_TOOL}.html)",
             f"- [Traditional Chinese finder]({SITE}/zh-Hant/tools/{PORTFOLIO_FINDER_TOOL}.html)",
             f"  - Agent-readable JSON: {SITE}/data/{PORTFOLIO_FINDER_DATASET}.json",
@@ -174,7 +174,7 @@ def portfolio_finder_lines(*, full):
         ]
     return [
         "",
-        "## Verified independent iOS app finder (alphabetical, not ranked)",
+        "## Publisher-verified first-party iOS app finder (alphabetical, not ranked)",
         f"- English finder: {SITE}/tools/{PORTFOLIO_FINDER_TOOL}.html",
         f"- Traditional Chinese finder: {SITE}/zh-Hant/tools/{PORTFOLIO_FINDER_TOOL}.html",
         f"- Agent-readable JSON: {SITE}/data/{PORTFOLIO_FINDER_DATASET}.json",

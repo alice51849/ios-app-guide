@@ -17036,6 +17036,9 @@ class GeneratorTests(unittest.TestCase):
             )
             english = english_path.read_text(encoding="utf-8")
             chinese = chinese_path.read_text(encoding="utf-8")
+            legacy_finder = (pages / "find-app.html").read_text(
+                encoding="utf-8"
+            )
             data = json.loads(data_path.read_text(encoding="utf-8"))
             schema = json.loads(
                 (
@@ -17055,6 +17058,7 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(stable_mtime, data_path.stat().st_mtime_ns)
 
         self.assertEqual(2, data["record_count"])
+        self.assertEqual(english, legacy_finder)
         self.assertEqual(
             ["Snapport", "Wordmate: Learn 44 Languages"],
             [record["name"] for record in data["apps"]],
@@ -20169,6 +20173,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",
+            "gen_publisher_disclosures.py",
             "gen_guide_design.py",
             "gen_app_store_facts.py",
             "validate_webstories.py",
@@ -20211,6 +20216,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(3, workflow.count("gen_mobile_app_identity.py"))
         self.assertEqual(3, workflow.count("gen_webmcp_install_tools.py"))
         self.assertEqual(3, workflow.count("gen_app_store_facts.py"))
+        self.assertEqual(3, workflow.count("gen_publisher_disclosures.py"))
         final_cleanup_block = workflow.split(
             "- name: Final link and availability cleanup", 1
         )[1].split("- name: Commit localized pages if any", 1)[0]
@@ -20225,6 +20231,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",
+            "gen_publisher_disclosures.py",
             "gen_guide_design.py",
             "gen_app_store_facts.py",
             "gen_llms.py --cached-live",
@@ -20251,6 +20258,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",
+            "gen_publisher_disclosures.py",
             "gen_guide_design.py",
             "gen_app_store_facts.py",
             "validate_webstories.py",
@@ -20398,6 +20406,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("gen_mobile_store_ctas.py", publish)
         self.assertIn("gen_app_store_qr_ctas.py", publish)
         self.assertIn("gen_app_store_share_ctas.py", publish)
+        self.assertIn("gen_publisher_disclosures.py", publish)
         self.assertIn("gen_guide_design.py", publish)
         self.assertIn("gen_app_store_facts.py", publish)
         self.assertIn("family_travel_mission_cards.py", publish)
@@ -20468,6 +20477,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",
+            "gen_publisher_disclosures.py",
             "gen_guide_design.py",
             "gen_app_store_facts.py",
             "validate_webstories.py",
@@ -20567,6 +20577,18 @@ class GeneratorTests(unittest.TestCase):
         sereno = gen_llms.build_llms({}, {"sereno"})
         self.assertIn("### Sleep & focus", sereno)
         self.assertNotIn("### sleep-sound", sereno)
+
+    def test_portfolio_discovery_is_disclosed_as_first_party(self):
+        with mock.patch.object(gen_llms.os.path, "exists", return_value=True):
+            for full in (False, True):
+                text = "\n".join(
+                    gen_llms.portfolio_finder_lines(full=full)
+                ).lower()
+                self.assertIn("first-party", text)
+                self.assertNotIn("independent", text)
+        dataset = static_api_catalog.API_DESCRIPTORS[0]["dataset"].lower()
+        self.assertIn("first-party", dataset)
+        self.assertNotIn("independent", dataset)
 
     def test_localized_llms_cover_all_official_locales_without_fallback(self):
         with tempfile.TemporaryDirectory() as directory:

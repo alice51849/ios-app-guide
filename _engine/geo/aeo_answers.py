@@ -576,9 +576,12 @@ def question_plan(
     )
     plan: list[tuple[str, str]] = []
     seen_slugs: set[str] = set()
+    selected_keys = set(selected)
     for key in ordered:
         for q in queries.ALL.get(key, queries.CURATED.get(key, [])):
             if not is_english_answer_question(q):
+                continue
+            if queries.is_inherited_query(key, q, selected_keys):
                 continue
             slug = slugify(q)
             if slug in seen_slugs:

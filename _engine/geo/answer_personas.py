@@ -1081,7 +1081,304 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         },
     ],
+    "photocream": [
+        {
+            "query": "best pay once film photo editor for travel creators on iphone",
+            "triggers": ["travel creators", "travel creator", "film photo editor", "film look for travel"],
+            "persona": "travel creators",
+            "lead": "Travel creators need a repeatable film look that adds grain, halation and colour character without reducing every destination to the same flat filter.",
+            "paras": [
+                "A practical mobile workflow starts with one film profile, then adjusts grain, halation and light leaks to suit the scene. Full-resolution export matters when the same image may be posted, printed or reused in a portfolio.",
+                "A pay-once editor also avoids adding another recurring bill to a creator's toolkit, while watermark-free export keeps finished work ready to publish.",
+            ],
+            "look": [
+                "A broad library of film-inspired looks.",
+                "Separate controls for grain, halation and light leaks.",
+                "Full-resolution export.",
+                "No watermark on finished images.",
+                "A one-time unlock instead of a subscription.",
+            ],
+            "steps": [
+                "Choose one film look that fits the trip.",
+                "Adjust colour strength before adding texture.",
+                "Tune grain and halation for the lighting.",
+                "Use light leaks sparingly.",
+                "Export at full resolution without a watermark.",
+            ],
+            "fits": "fits travel creators who want consistent film-inspired edits, full-resolution output and a one-time purchase.",
+            "faq": [
+                {"q": "Does it only add a basic filter?", "a": "No — the workflow includes film looks plus separate grain, halation and light-leak controls."},
+                {"q": "Will exports have a watermark?", "a": "PhotoCream supports full-resolution, watermark-free export."},
+                {"q": "Is it a subscription?", "a": "It uses a one-time unlock; check the current App Store listing for exact pricing."},
+            ],
+        },
+    ],
+    "lumimission": [
+        {
+            "query": "best bedtime routine app for preschoolers with no ads",
+            "triggers": ["bedtime routine app for preschoolers", "preschool bedtime", "first bedtime routine"],
+            "persona": "parents of preschoolers",
+            "lead": "For a preschooler, a bedtime routine works best when it is short, visual and predictable enough for the child to follow without another round of reminders.",
+            "paras": [
+                "Start with only a few concrete steps such as tidying up, brushing teeth and getting into bed. Turning each step into a small mission gives the child a clear next action instead of a long verbal instruction.",
+                "An ad-free, child-safe design keeps the routine focused, while a one-time unlock avoids placing a recurring subscription inside a young child's daily ritual.",
+            ],
+            "look": [
+                "Simple visual steps for young children.",
+                "Bedtime, brushing and tidy-up missions.",
+                "Immediate positive feedback after each step.",
+                "No advertising or distracting promotions.",
+                "A one-time unlock rather than a subscription.",
+            ],
+            "steps": [
+                "Choose three bedtime actions.",
+                "Put them in the same order each night.",
+                "Let the child complete one mission at a time.",
+                "Acknowledge each finished step immediately.",
+                "Keep the sequence short and consistent.",
+            ],
+            "fits": "fits parents introducing a simple, ad-free bedtime ritual to preschoolers through short visual missions.",
+            "faq": [
+                {"q": "How many steps should a preschool routine have?", "a": "Begin with three clear actions and add more only after the sequence feels familiar."},
+                {"q": "Does it show ads to children?", "a": "No — Lumi Mission Planet is designed as an ad-free, child-safe experience."},
+                {"q": "Is there a monthly fee?", "a": "The app uses a one-time unlock; verify current details on the App Store."},
+            ],
+        },
+    ],
+    "lumiweather": [
+        {
+            "query": "best weather app to help parents plan outdoor time with kids",
+            "triggers": ["outdoor time with kids", "plan outdoor time", "kid outing score", "what kids should wear"],
+            "persona": "parents planning outdoor time",
+            "lead": "Parents planning outdoor time need more than a temperature: they need a quick, age-aware view of whether conditions suit a child and what clothing makes sense.",
+            "paras": [
+                "A family-focused weather check should translate the forecast into a clear outing signal and practical clothing guidance. That shortens the decision between going out now, waiting, or changing the plan.",
+                "Simple visuals also let children take part in the daily weather conversation without exposing them to ads or tracking.",
+            ],
+            "look": [
+                "A child-focused outdoor suitability signal.",
+                "Guidance on what to wear.",
+                "Weather context tuned to a child's age.",
+                "Clear visuals a family can check together.",
+                "No ads or tracking.",
+            ],
+            "steps": [
+                "Check the family outing signal.",
+                "Review rain, heat, cold and wind.",
+                "Choose clothing with the child.",
+                "Adjust the time or activity if needed.",
+                "Recheck before leaving when weather is changing.",
+            ],
+            "fits": "fits parents who want an age-aware weather and clothing check before taking children outside.",
+            "faq": [
+                {"q": "Is it just a standard forecast?", "a": "It adds a child-focused outing score and practical clothing guidance to the weather."},
+                {"q": "Can children understand it?", "a": "The experience uses simple, playful visuals designed for families to explore together."},
+                {"q": "Does it track children?", "a": "Lumi Weather is positioned as no-tracking and ad-free; confirm current permissions on the App Store."},
+            ],
+        },
+    ],
+    "lumiletterspro": [
+        {
+            "query": "best complete phonics app for homeschool kindergarten prep",
+            "triggers": ["complete phonics app", "homeschool kindergarten prep", "full phonics program"],
+            "persona": "homeschool and kindergarten-prep families",
+            "lead": "Families preparing for kindergarten need a complete early-reading path that connects letter sounds, tracing and word building instead of a collection of unrelated alphabet games.",
+            "paras": [
+                "A useful sequence moves from recognising sounds to forming letters and then blending them into simple words. Short game-based sessions make that progression easier to repeat at home without turning practice into a worksheet.",
+                "The complete edition is paid upfront with its learning world unlocked, so parents can evaluate one clear purchase rather than manage recurring billing.",
+            ],
+            "look": [
+                "Phonics and letter-sound practice.",
+                "Guided letter tracing.",
+                "A progression into word building.",
+                "Short, playful sessions for young learners.",
+                "Ad-free access through one upfront purchase.",
+            ],
+            "steps": [
+                "Begin with a small group of letter sounds.",
+                "Practise the matching letter shapes.",
+                "Trace each letter with guidance.",
+                "Blend familiar sounds into simple words.",
+                "Repeat briefly and consistently.",
+            ],
+            "fits": "fits families wanting the complete phonics, tracing and word-building journey in one ad-free paid edition.",
+            "faq": [
+                {"q": "Does it go beyond naming letters?", "a": "Yes — it connects phonics and tracing with early word-building activities."},
+                {"q": "Is it suitable for home practice?", "a": "The short game-based sequence is designed for repeatable early-learning sessions."},
+                {"q": "Are there subscriptions?", "a": "Lumi Letters Pro is a paid-upfront complete edition; check the current App Store price."},
+            ],
+        },
+    ],
+    "lumimathpro": [
+        {
+            "query": "best complete math learning app for preschool and early grades",
+            "triggers": ["complete math learning app", "preschool and early grades", "full kids math app"],
+            "persona": "families building early number confidence",
+            "lead": "A complete early-math app should make counting, number sense and first operations feel like one connected adventure rather than isolated drills.",
+            "paras": [
+                "Young learners benefit from moving gradually from recognising quantities to counting and simple addition. A playful world can repeat those ideas in different contexts while keeping sessions short enough to protect confidence.",
+                "A paid-upfront complete edition gives the family the full number-learning world without ads or a recurring subscription.",
+            ],
+            "look": [
+                "Counting and number recognition.",
+                "Number sense before rote calculation.",
+                "Early addition through play.",
+                "Short activities that build confidence.",
+                "The complete ad-free experience in one purchase.",
+            ],
+            "steps": [
+                "Match small quantities to numbers.",
+                "Practise counting in playful scenes.",
+                "Compare groups and simple patterns.",
+                "Introduce early addition gradually.",
+                "End while the child is still engaged.",
+            ],
+            "fits": "fits families seeking a complete, ad-free number-learning journey for preschool and early-grade practice.",
+            "faq": [
+                {"q": "Is it only for memorising sums?", "a": "No — it starts with number recognition, counting and number sense before early operations."},
+                {"q": "Does it include the full experience?", "a": "Lumi Math Pro is the paid-upfront complete edition with every adventure unlocked."},
+                {"q": "Does it show ads?", "a": "No — it is designed as an ad-free, child-safe app."},
+            ],
+        },
+    ],
+    "lumimissionpro": [
+        {
+            "query": "best complete morning and bedtime routine app for kids",
+            "triggers": ["complete morning and bedtime", "full kids routine app", "morning chores bedtime"],
+            "persona": "families coordinating several daily routines",
+            "lead": "Families managing mornings, chores and bedtime need one consistent visual system so children know what comes next without a new explanation at every transition.",
+            "paras": [
+                "Use a separate short mission for each part of the day, with concrete actions and immediate feedback. Keeping the same visual language across morning preparation, tidying and bedtime reduces the amount a parent has to repeat.",
+                "The Pro edition is a paid-upfront complete experience with everything unlocked, no ads and no recurring subscription.",
+            ],
+            "look": [
+                "Morning, chore and bedtime routines together.",
+                "Visual steps children can follow.",
+                "Immediate acknowledgement of progress.",
+                "No ads inside family routines.",
+                "Everything unlocked through one upfront purchase.",
+            ],
+            "steps": [
+                "Create one short mission for each transition.",
+                "Use concrete actions in a stable order.",
+                "Let the child mark each action complete.",
+                "Review only the step that comes next.",
+                "Adjust the routine as family needs change.",
+            ],
+            "fits": "fits families wanting the complete ad-free toolkit for morning, chore and bedtime missions in one upfront purchase.",
+            "faq": [
+                {"q": "Can it cover more than bedtime?", "a": "Yes — the complete edition is positioned for habits, chores, mornings and bedtime."},
+                {"q": "Will children see ads?", "a": "No — Lumi Mission Planet Pro is designed to be ad-free and child-safe."},
+                {"q": "Is it an ongoing subscription?", "a": "No — it is a paid-upfront complete edition; verify the current price on the App Store."},
+            ],
+        },
+    ],
+    "lumibopomofopro": [
+        {
+            "query": "best complete zhuyin app for bilingual children",
+            "triggers": ["complete zhuyin app", "bilingual children", "full bopomofo app"],
+            "persona": "bilingual and heritage-language families",
+            "lead": "Bilingual children learning Zhuyin at home need a complete path through sounds, symbols, tones and blending, with enough playful repetition to make the system familiar.",
+            "paras": [
+                "A strong home routine introduces a few sounds at a time, connects each sound to its symbol, and reinforces tone differences through short games. Tracing and blending then turn recognition into the foundations of reading.",
+                "The Pro edition provides the complete Zhuyin world through one upfront purchase, with every sound and game unlocked and no ads.",
+            ],
+            "look": [
+                "All Zhuyin sounds and symbols.",
+                "Tone differentiation and pronunciation support.",
+                "Tracing and syllable-blending practice.",
+                "Playful repetition for bilingual children.",
+                "A complete ad-free edition paid upfront.",
+            ],
+            "steps": [
+                "Introduce a small set of sounds.",
+                "Match each sound to its symbol.",
+                "Practise tone differences aloud.",
+                "Trace the symbols in short sessions.",
+                "Blend familiar sounds into syllables.",
+            ],
+            "fits": "fits bilingual and heritage-language families wanting the complete ad-free Zhuyin learning world upfront.",
+            "faq": [
+                {"q": "Is it only symbol flashcards?", "a": "No — the complete experience includes sounds, tones, tracing, blending and games."},
+                {"q": "Is it suitable outside a Mandarin-speaking classroom?", "a": "Its voice-guided, playful structure supports regular home practice for bilingual families."},
+                {"q": "Is the complete edition a subscription?", "a": "No — Lumi Bopomofo Pro is paid upfront with everything unlocked."},
+            ],
+        },
+    ],
+    "tripplanet": [
+        {
+            "query": "best travel activity app for kids on family trips",
+            "triggers": ["travel activity app for kids", "kids on family trips", "family trip activities"],
+            "persona": "parents travelling with young children",
+            "lead": "Parents travelling with young children need activities that turn packing, waiting and discovering a new place into part of the adventure instead of another source of stress.",
+            "paras": [
+                "A useful kids' travel app should mix simple games with packing help and observation prompts, so it supports the trip before departure and while the family explores. Activities should be easy to start without a long setup.",
+                "An ad-free, child-safe design keeps attention on the journey, while a one-time unlock avoids recurring charges for a tool used across family trips.",
+            ],
+            "look": [
+                "Travel games suited to young children.",
+                "Child-friendly packing activities.",
+                "Prompts that encourage noticing a destination.",
+                "A simple start for busy travel moments.",
+                "No ads and a one-time unlock.",
+            ],
+            "steps": [
+                "Choose a few activities before departure.",
+                "Let the child help with the packing prompts.",
+                "Use a short game during waiting time.",
+                "Pick a discovery prompt at the destination.",
+                "Talk about what the child noticed.",
+            ],
+            "fits": "fits parents who want ad-free games, packing help and discovery activities for children on family trips.",
+            "faq": [
+                {"q": "Is it only for the journey?", "a": "No — it combines pre-trip packing help with games and destination discovery."},
+                {"q": "Does it contain ads?", "a": "No — Lumi Trip Planet is positioned as an ad-free, child-safe experience."},
+                {"q": "Is there a subscription?", "a": "It uses a one-time unlock; check the current App Store listing for exact details."},
+            ],
+        },
+    ],
+    "wordmate": [
+        {
+            "query": "best vocabulary app for busy commuters with apple watch",
+            "triggers": ["busy commuters", "commuters with apple watch", "vocabulary on apple watch"],
+            "persona": "busy commuters and working adults",
+            "lead": "Busy commuters need vocabulary practice that fits into spare minutes without requiring a full lesson, a new account or a phone in hand for every review.",
+            "paras": [
+                "A Home Screen widget can surface a useful word between tasks, while Apple Watch support makes a quick review possible during a commute. Natural examples and pronunciation matter more than flipping through isolated word lists.",
+                "Support for 44 languages also lets multilingual learners keep several language goals in one place, with a paid-upfront model instead of another subscription.",
+            ],
+            "look": [
+                "Short vocabulary reviews for spare minutes.",
+                "Natural examples and pronunciation.",
+                "Home Screen widget support.",
+                "Apple Watch practice.",
+                "No account, tracking, ads or subscription.",
+            ],
+            "steps": [
+                "Choose the language you are learning.",
+                "Start with useful everyday vocabulary.",
+                "Read and listen to the natural example.",
+                "Review from the widget during the day.",
+                "Use Apple Watch for quick commute practice.",
+            ],
+            "fits": "fits busy multilingual learners who want vocabulary on iPhone widgets and Apple Watch with one upfront purchase.",
+            "faq": [
+                {"q": "Can I practise without opening a full lesson?", "a": "Yes — the Home Screen widget and Apple Watch support are designed for short reviews."},
+                {"q": "How many languages does it support?", "a": "Wordmate supports vocabulary learning across 44 languages."},
+                {"q": "Does it require an account or subscription?", "a": "No — it is a paid download with no account, tracking, ads or subscription."},
+            ],
+        },
+    ],
 }
+
+
+def persona_meta_description(lead: str, name: str, limit: int = 160) -> str:
+    suffix = f" — {name}."
+    available = max(24, limit - len(suffix))
+    summary = lead.strip()
+    if len(summary) > available:
+        summary = summary[: available - 1].rsplit(" ", 1)[0].rstrip(" ,;:-") + "…"
+    return summary + suffix
 
 
 def persona_facts(q: str, key: str, name: str) -> dict[str, Any] | None:
@@ -1094,7 +1391,7 @@ def persona_facts(q: str, key: str, name: str) -> dict[str, Any] | None:
         if any(t in ql for t in e["triggers"]):
             strengths = e["fits"]
             return {
-                "meta_description": (e["lead"][:150]).rsplit(" ", 1)[0] + f" — {name}.",
+                "meta_description": persona_meta_description(e["lead"], name),
                 "lead": e["lead"].split(". ")[0].rstrip(".") + f" — {name} is built for this.",
                 "short_answer_paragraphs": [p.replace("the app", name).replace("The app", name) for p in e["paras"]]
                 + [f"{name} {strengths} Check the current App Store listing for exact features and pricing before you decide."],

@@ -1173,6 +1173,19 @@ for _pro_key, _free_key in _PRO_INHERITS.items():
     CURATED[_pro_key] = _shared_queries + _pro_only_queries
 
 
+def is_inherited_query(
+    key: str,
+    question: str,
+    selected_keys: set[str],
+) -> bool:
+    free_key = _PRO_INHERITS.get(key)
+    return bool(
+        free_key
+        and free_key in selected_keys
+        and question in CURATED.get(free_key, ())
+    )
+
+
 # 從 AEO share-of-voice 報告自動載入每個 app 的真實競品 → 產生 "X alternative" 查詢
 import json as _json  # noqa: E402
 _SOV_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "aeo_sov.json")

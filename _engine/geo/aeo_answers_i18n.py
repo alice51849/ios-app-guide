@@ -8,6 +8,7 @@ import html
 import json
 import os
 import re
+import subprocess
 import sys
 import time
 import urllib.error
@@ -16,18 +17,29 @@ from urllib.parse import urlsplit, urlunsplit
 from pathlib import Path
 from typing import Any
 
+from official_locales import OFFICIAL_LOCALES
+
 
 ROOT = Path(__file__).resolve().parent / "pages"
 ANSWERS = ROOT / "answers"
 BASE_URL = "https://alice51849.github.io/ios-app-guide"
-ALL_LANGS = ["de-DE", "es-ES", "fr-FR", "ja", "ko", "pt-BR", "zh-Hans", "zh-Hant",
-             "it", "ru", "tr", "id", "vi", "th", "ar-SA", "hi", "nl-NL", "pl", "sv", "uk",
-             "ca", "hr", "cs", "da", "fi", "el", "he", "hu", "ms", "no", "pt-PT", "ro",
-             "sk", "es-MX", "bn-BD", "gu-IN", "kn-IN", "ml-IN", "mr-IN", "or-IN", "pa-IN",
-             "sl-SI", "ta-IN", "te-IN", "ur-PK"]
+OLLAMA_ENDPOINT = os.environ.get(
+    "OLLAMA_ENDPOINT", "http://127.0.0.1:11434/api/chat"
+)
+OLLAMA_MODEL = os.environ.get("OLLAMA_TRANSLATION_MODEL", "qwen3.5:4b")
+GITHUB_MODELS_ENDPOINT = (
+    "https://models.github.ai/inference/chat/completions"
+)
+GITHUB_TRANSLATION_MODEL = os.environ.get(
+    "GITHUB_TRANSLATION_MODEL", "openai/gpt-4.1"
+)
+ALL_LANGS = list(OFFICIAL_LOCALES)
+ENGLISH_LOCALES = frozenset({"en-AU", "en-CA", "en-GB", "en-US"})
 HREFLANG_ORDER = ["en"] + [lc for lc in ALL_LANGS] + ["x-default"]
 BASE_LANG = {
+    "en-AU": "en-AU", "en-CA": "en-CA", "en-GB": "en-GB", "en-US": "en-US",
     "de-DE": "de-DE", "es-ES": "es-ES", "fr-FR": "fr-FR", "ja": "ja", "ko": "ko",
+    "fr-CA": "fr-CA",
     "pt-BR": "pt-BR", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "it": "it", "ru": "ru",
     "tr": "tr", "id": "id", "vi": "vi", "th": "th", "ar-SA": "ar", "hi": "hi", "nl-NL": "nl",
     "pl": "pl", "sv": "sv", "uk": "uk", "ca": "ca", "hr": "hr", "cs": "cs", "da": "da",
@@ -37,7 +49,10 @@ BASE_LANG = {
     "te-IN": "te", "ur-PK": "ur",
 }
 LANG_NAMES = {
+    "en-AU": "Australian English", "en-CA": "Canadian English",
+    "en-GB": "British English", "en-US": "US English",
     "de-DE": "German for Germany", "es-ES": "Spanish for Spain", "fr-FR": "French for France",
+    "fr-CA": "Canadian French",
     "ja": "Japanese", "ko": "Korean", "pt-BR": "Brazilian Portuguese", "zh-Hans": "Simplified Chinese",
     "zh-Hant": "Traditional Chinese", "it": "Italian", "ru": "Russian", "tr": "Turkish",
     "id": "Indonesian", "vi": "Vietnamese", "th": "Thai", "ar-SA": "Arabic", "hi": "Hindi",
@@ -58,7 +73,391 @@ BRANDS = [
     "iPhone",
     "iOS",
     "ScanTo Pro",
+    "PhotoCream",
+    "Lumi Mission Planet",
+    "Lumi Mission Planet Pro",
+    "Lumi Weather",
+    "Lumi Letters Pro",
+    "Lumi Math Pro",
+    "Lumi Bopomofo Pro",
+    "Lumi Trip Planet",
+    "Wordmate",
 ]
+NATIVE_SCRIPT_RANGES = {
+    "ar-SA": ((0x0600, 0x06FF), (0x0750, 0x077F)),
+    "ur-PK": ((0x0600, 0x06FF), (0x0750, 0x077F)),
+    "bn-BD": ((0x0980, 0x09FF),),
+    "el": ((0x0370, 0x03FF),),
+    "he": ((0x0590, 0x05FF),),
+    "hi": ((0x0900, 0x097F),),
+    "mr-IN": ((0x0900, 0x097F),),
+    "gu-IN": ((0x0A80, 0x0AFF),),
+    "kn-IN": ((0x0C80, 0x0CFF),),
+    "ml-IN": ((0x0D00, 0x0D7F),),
+    "or-IN": ((0x0B00, 0x0B7F),),
+    "pa-IN": ((0x0A00, 0x0A7F),),
+    "ta-IN": ((0x0B80, 0x0BFF),),
+    "te-IN": ((0x0C00, 0x0C7F),),
+    "th": ((0x0E00, 0x0E7F),),
+    "ru": ((0x0400, 0x052F),),
+    "uk": ((0x0400, 0x052F),),
+    "ja": ((0x3040, 0x30FF), (0x3400, 0x9FFF)),
+    "ko": ((0xAC00, 0xD7AF),),
+    "zh-Hans": ((0x3400, 0x9FFF),),
+    "zh-Hant": ((0x3400, 0x9FFF),),
+}
+LOCALE_TEXT_OVERRIDES = {
+    "ar-SA": {
+        (
+            "Travel creators need a repeatable film look that adds grain, "
+            "halation and colour character without reducing every destination "
+            "to the same flat… — PhotoCream."
+        ): (
+            "صناع السفر يحتاجون مظهر أفلام قابل للتكرار يضيف الحبيبات والتوهج "
+            "وطابع اللون دون تحويل كل وجهة إلى نفس الفلتر المسطح… — PhotoCream."
+        ),
+        (
+            "Travel creators need a repeatable film look that adds grain, "
+            "halation and colour character without reducing every destination "
+            "to the same flat filter — PhotoCream is built for this."
+        ): (
+            "صناع السفر يحتاجون مظهر أفلام قابل للتكرار يضيف الحبيبات والتوهج "
+            "وطابع اللون دون تحويل كل وجهة إلى نفس الفلتر المسطح — PhotoCream "
+            "مصمم لهذا."
+        ),
+        (
+            "Parents planning outdoor time need more than a temperature: they "
+            "need a quick, age-aware view of whether conditions suit a child "
+            "and what… — Lumi Weather."
+        ): (
+            "الآباء الذين يخططون وقت الخارج يحتاجون أكثر من درجة الحرارة: "
+            "يحتاجون نظرة سريعة حسب العمر لمعرفة إذا كانت الظروف مناسبة للطفل "
+            "وما… — Lumi Weather."
+        ),
+        (
+            "Parents planning outdoor time need more than a temperature: they "
+            "need a quick, age-aware view of whether conditions suit a child "
+            "and what clothing makes sense — Lumi Weather is built for this."
+        ): (
+            "الآباء الذين يخططون وقت الخارج يحتاجون أكثر من درجة الحرارة: "
+            "يحتاجون نظرة سريعة حسب العمر لمعرفة إذا كانت الظروف مناسبة للطفل "
+            "وما الملابس المناسبة — Lumi Weather مصمم لهذا."
+        ),
+        (
+            "Parents travelling with young children need activities that turn "
+            "packing, waiting and discovering a new place into part of the "
+            "adventure… — Lumi Trip Planet."
+        ): (
+            "الآباء المسافرون مع أطفال صغار يحتاجون أنشطة تحول التجهيز، "
+            "الانتظار واكتشاف مكان جديد إلى جزء من المغامرة… — Lumi Trip Planet."
+        ),
+        (
+            "Parents travelling with young children need activities that turn "
+            "packing, waiting and discovering a new place into part of the "
+            "adventure instead of another source of stress — Lumi Trip Planet "
+            "is built for this."
+        ): (
+            "الآباء المسافرون مع أطفال صغار يحتاجون أنشطة تحول التجهيز، "
+            "الانتظار واكتشاف مكان جديد إلى جزء من المغامرة بدلاً من مصدر ضغط "
+            "إضافي — Lumi Trip Planet مصمم لهذا."
+        ),
+    },
+    "cs": {
+        (
+            "Travel creators need a repeatable film look that adds grain, "
+            "halation and colour character without reducing every destination "
+            "to the same flat… — PhotoCream."
+        ): (
+            "Tvůrci cestovatelského obsahu potřebují opakovatelný filmový vzhled, "
+            "který přidává zrno, halaci a barevný charakter, aniž by každou "
+            "destinaci sjednotil do stejného plochého… — PhotoCream."
+        ),
+        (
+            "Travel creators need a repeatable film look that adds grain, "
+            "halation and colour character without reducing every destination "
+            "to the same flat filter — PhotoCream is built for this."
+        ): (
+            "Tvůrci cestovatelského obsahu potřebují opakovatelný filmový vzhled, "
+            "který přidává zrno, halaci a barevný charakter, aniž by každou "
+            "destinaci sjednotil do stejného plochého filtru — PhotoCream je pro "
+            "toto vytvořen."
+        ),
+    },
+    "de-DE": {
+        (
+            "best bedtime routine app for preschoolers with no ads"
+        ): (
+            "Beste Einschlafroutine-App für Vorschulkinder ohne Werbung"
+        ),
+        (
+            "best bedtime routine app for preschoolers with no ads: "
+            "honest iPhone app buying guide"
+        ): (
+            "Beste Einschlafroutine-App für Vorschulkinder ohne Werbung: "
+            "ehrlicher iPhone-App-Kaufratgeber"
+        ),
+    },
+    "kn-IN": {
+        (
+            "Travel creators need a repeatable film look that adds grain, "
+            "halation and colour character without reducing every destination "
+            "to the same flat filter — PhotoCream is built for this."
+        ): (
+            "ಪ್ರಯಾಣದ ವಿಷಯ ರಚಿಸುವವರಿಗೆ, ಪ್ರತಿಯೊಂದು ತಾಣವನ್ನೂ ಒಂದೇ ಸಪ್ಪೆ "
+            "ಫಿಲ್ಟರ್‌ನಂತೆ ಮಾಡದೆ ಗ್ರೇನ್, ಹ್ಯಾಲೇಶನ್ ಮತ್ತು ವಿಶಿಷ್ಟ ಬಣ್ಣದ ಛಾಯೆ "
+            "ನೀಡುವ, ಮತ್ತೆ ಮತ್ತೆ ಬಳಸಬಹುದಾದ ಫಿಲ್ಮ್ ಲುಕ್ ಬೇಕಾಗುತ್ತದೆ — "
+            "PhotoCream ಇದಕ್ಕಾಗಿ ರೂಪಿಸಲಾಗಿದೆ."
+        ),
+        (
+            "Bilingual children learning Zhuyin at home need a complete path "
+            "through sounds, symbols, tones and blending, with enough playful "
+            "repetition to make the system familiar — Lumi Bopomofo Pro is "
+            "built for this."
+        ): (
+            "ಮನೆಯಲ್ಲಿ Zhuyin ಕಲಿಯುವ ದ್ವಿಭಾಷಾ ಮಕ್ಕಳಿಗೆ ಧ್ವನಿಗಳು, ಚಿಹ್ನೆಗಳು, "
+            "ಸ್ವರಛಾಯೆಗಳು ಮತ್ತು ಧ್ವನಿಗಳನ್ನು ಜೋಡಿಸುವಿಕೆ ಒಳಗೊಂಡ ಸಂಪೂರ್ಣ ಕಲಿಕಾ "
+            "ಮಾರ್ಗವೂ, ವ್ಯವಸ್ಥೆ ಪರಿಚಿತವಾಗಲು ಸಾಕಷ್ಟು ಆಟದ ಮರುಅಭ್ಯಾಸವೂ ಅಗತ್ಯ — "
+            "Lumi Bopomofo Pro ಇದಕ್ಕಾಗಿ ರೂಪಿಸಲಾಗಿದೆ."
+        ),
+    },
+    "ml-IN": {
+        (
+            "Travel creators need a repeatable film look that adds grain, "
+            "halation and colour character without reducing every destination "
+            "to the same flat filter — PhotoCream is built for this."
+        ): (
+            "യാത്രാ സൃഷ്ടാക്കൾക്ക് ആവർത്തിക്കാവുന്ന ഫിലിം ലുക്ക് ആവശ്യമാണ്; "
+            "ഓരോ സ്ഥലത്തെയും ഒരേ ഫ്ലാറ്റ് ഫിൽട്ടറായി ചുരുക്കാതെ ഗ്രെയിൻ, "
+            "ഹാലേഷൻ, നിറത്തിന്റെ സവിശേഷത എന്നിവ ചേർക്കണം — PhotoCream "
+            "ഇതിനായി രൂപകൽപ്പന ചെയ്തിരിക്കുന്നു."
+        ),
+        (
+            "Families preparing for kindergarten need a complete early-reading "
+            "path that connects letter sounds, tracing and word building "
+            "instead of a collection of unrelated alphabet games — Lumi "
+            "Letters Pro is built for this."
+        ): (
+            "കിൻഡർഗാർട്ടനായി തയ്യാറെടുക്കുന്ന കുടുംബങ്ങൾക്ക് പരസ്പരബന്ധമില്ലാത്ത "
+            "അക്ഷരമാലാ കളികളുടെ കൂട്ടത്തിന് പകരം അക്ഷരശബ്ദങ്ങൾ, എഴുത്തുപരിശീലനം, "
+            "വാക്കുനിർമാണം എന്നിവ ബന്ധിപ്പിക്കുന്ന സമഗ്രമായ പ്രാരംഭ വായനാപാത "
+            "ആവശ്യമാണ് — Lumi Letters Pro ഇതിനായി രൂപകൽപ്പന ചെയ്തിരിക്കുന്നു."
+        ),
+        (
+            "A complete early-math app should make counting, number sense and "
+            "first operations feel like one connected adventure rather than "
+            "isolated drills — Lumi Math Pro is built for this."
+        ): (
+            "സമഗ്രമായ പ്രാരംഭ ഗണിത ആപ്പ് എണ്ണൽ, സംഖ്യാബോധം, ആദ്യ കണക്കുകൂട്ടലുകൾ "
+            "എന്നിവയെ ഒറ്റപ്പെട്ട ആവർത്തന അഭ്യാസങ്ങൾക്ക് പകരം പരസ്പരം ബന്ധമുള്ള "
+            "ഒരു സാഹസികയാത്രയായി അനുഭവപ്പെടുത്തണം — Lumi Math Pro ഇതിനായി "
+            "രൂപകൽപ്പന ചെയ്തിരിക്കുന്നു."
+        ),
+        (
+            "Bilingual children learning Zhuyin at home need a complete path "
+            "through sounds, symbols, tones and blending, with enough playful "
+            "repetition to make the system familiar — Lumi Bopomofo Pro is "
+            "built for this."
+        ): (
+            "വീട്ടിൽ Zhuyin പഠിക്കുന്ന ദ്വിഭാഷാ കുട്ടികൾക്ക് ശബ്ദങ്ങൾ, ചിഹ്നങ്ങൾ, "
+            "സ്വരഭേദങ്ങൾ, ശബ്ദസംയോജനം എന്നിവയിലൂടെ സമഗ്രമായ പഠനപാതയും, ഈ "
+            "സംവിധാനം പരിചിതമാകാൻ മതിയായ കളിയോടെയുള്ള ആവർത്തനവും ആവശ്യമാണ് — "
+            "Lumi Bopomofo Pro ഇതിനായി രൂപകൽപ്പന ചെയ്തിരിക്കുന്നു."
+        ),
+        (
+            "Parents travelling with young children need activities that turn "
+            "packing, waiting and discovering a new place into part of the "
+            "adventure instead of another source of stress — Lumi Trip Planet "
+            "is built for this."
+        ): (
+            "ചെറിയ കുട്ടികളുമായി യാത്ര ചെയ്യുന്ന മാതാപിതാക്കൾക്ക് പാക്കിംഗ്, "
+            "കാത്തിരിപ്പ്, പുതിയ സ്ഥലം കണ്ടെത്തൽ എന്നിവയെ അധിക സമ്മർദമാക്കാതെ "
+            "സാഹസികയാത്രയുടെ ഭാഗമാക്കുന്ന പ്രവർത്തനങ്ങൾ വേണം — Lumi Trip Planet "
+            "ഇതിനായി രൂപകൽപ്പന ചെയ്തിരിക്കുന്നു."
+        ),
+        (
+            "Busy commuters need vocabulary practice that fits into spare "
+            "minutes without requiring a full lesson, a new account or a phone "
+            "in hand for every review — Wordmate: Learn 44 Languages is built "
+            "for this."
+        ): (
+            "തിരക്കുള്ള യാത്രക്കാർക്ക് പൂർണ്ണ പാഠമോ പുതിയ അക്കൗണ്ടോ ഓരോ "
+            "ആവർത്തനത്തിനും ഫോൺ കൈയിൽ പിടിക്കേണ്ട ആവശ്യമോ ഇല്ലാതെ, "
+            "ഒഴിഞ്ഞുകിട്ടുന്ന കുറച്ച് മിനിറ്റുകളിൽ ഒതുങ്ങുന്ന വാക്കുപരിശീലനം "
+            "വേണം — Wordmate: Learn 44 Languages ഇതിനായി രൂപകൽപ്പന "
+            "ചെയ്തിരിക്കുന്നു."
+        ),
+        (
+            "Parents planning outdoor time need more than a temperature: they "
+            "need a quick, age-aware view of whether conditions suit a child "
+            "and what clothing makes sense — Lumi Weather is built for this."
+        ): (
+            "പുറത്തേക്കുള്ള സമയം ആസൂത്രണം ചെയ്യുന്ന മാതാപിതാക്കൾക്ക് താപനില "
+            "മാത്രം പോരാ: കാലാവസ്ഥ കുട്ടിക്ക് അനുയോജ്യമാണോ, ഏത് വസ്ത്രമാണ് "
+            "ചേരുന്നത് എന്നിവ പ്രായം കണക്കിലെടുത്ത് വേഗത്തിൽ മനസ്സിലാക്കണം — "
+            "Lumi Weather ഇതിനായി രൂപകൽപ്പന ചെയ്തിരിക്കുന്നു."
+        ),
+    },
+    "no": {
+        (
+            "Travel creators need a repeatable film look that adds grain, "
+            "halation and colour character without reducing every destination "
+            "to the same flat filter — PhotoCream is built for this."
+        ): (
+            "Reiseskapere trenger et gjentakbart filmutseende som gir korn, "
+            "halering og fargepreg uten å redusere hver destinasjon til det samme "
+            "flate filteret — PhotoCream er laget for dette."
+        ),
+        (
+            "Bilingual children learning Zhuyin at home need a complete path "
+            "through sounds, symbols, tones and blending, with enough playful… "
+            "— Lumi Bopomofo Pro."
+        ): (
+            "Tospråklige barn som lærer Zhuyin hjemme trenger en komplett vei "
+            "gjennom lyder, symboler, toner og sammensetting, med nok lekne… — "
+            "Lumi Bopomofo Pro."
+        ),
+        (
+            "Bilingual children learning Zhuyin at home need a complete path "
+            "through sounds, symbols, tones and blending, with enough playful "
+            "repetition to make the system familiar — Lumi Bopomofo Pro is "
+            "built for this."
+        ): (
+            "Tospråklige barn som lærer Zhuyin hjemme trenger en komplett vei "
+            "gjennom lyder, symboler, toner og sammensetting, med nok lekne "
+            "repetisjoner til å gjøre systemet kjent — Lumi Bopomofo Pro er laget "
+            "for dette."
+        ),
+    },
+    "pt-PT": {
+        (
+            "Bilingual children learning Zhuyin at home need a complete path "
+            "through sounds, symbols, tones and blending, with enough playful… "
+            "— Lumi Bopomofo Pro."
+        ): (
+            "Crianças bilingues a aprender Zhuyin em casa precisam de um caminho "
+            "completo por sons, símbolos, tons e combinação de sons, com repetição "
+            "lúdica suficiente para tornar o sistema familiar… — Lumi Bopomofo Pro."
+        ),
+        (
+            "Bilingual children learning Zhuyin at home need a complete path "
+            "through sounds, symbols, tones and blending, with enough playful "
+            "repetition to make the system familiar — Lumi Bopomofo Pro is "
+            "built for this."
+        ): (
+            "Crianças bilingues a aprender Zhuyin em casa precisam de um caminho "
+            "completo por sons, símbolos, tons e combinação de sons, com repetição "
+            "lúdica suficiente para tornar o sistema familiar — Lumi Bopomofo Pro "
+            "foi criado para isso."
+        ),
+    },
+    "ro": {
+        (
+            "best pay once film photo editor for travel creators on iphone: "
+            "honest iPhone app buying guide"
+        ): (
+            "cel mai bun editor foto cu aspect de film și plată unică pentru "
+            "creatorii de conținut de călătorie pe iPhone: ghid onest pentru "
+            "cumpărarea unei aplicații iPhone"
+        ),
+        (
+            "For a preschooler, a bedtime routine works best when it is short, "
+            "visual and predictable enough for the child to follow without "
+            "another… — Lumi Mission Planet."
+        ): (
+            "Pentru un preșcolar, rutina de culcare funcționează cel mai bine "
+            "când este scurtă, vizuală și suficient de previzibilă astfel încât "
+            "copilul să o urmeze fără încă o… — Lumi Mission Planet."
+        ),
+        (
+            "For a preschooler, a bedtime routine works best when it is short, "
+            "visual and predictable enough for the child to follow without "
+            "another round of reminders — Lumi Mission Planet is built for this."
+        ): (
+            "Pentru un preșcolar, rutina de culcare funcționează cel mai bine "
+            "când este scurtă, vizuală și suficient de previzibilă astfel încât "
+            "copilul să o urmeze fără încă o rundă de reamintiri — Lumi Mission "
+            "Planet este creată pentru acest scop."
+        ),
+    },
+    "sl-SI": {
+        (
+            "best pay once film photo editor for travel creators on iphone: "
+            "honest iPhone app buying guide"
+        ): (
+            "najboljši urejevalnik fotografij s filmskim videzom in enkratnim "
+            "plačilom za popotniške ustvarjalce na iPhonu: pošten vodnik za "
+            "nakup aplikacije za iPhone"
+        ),
+        (
+            "Busy commuters need vocabulary practice that fits into spare "
+            "minutes without requiring a full lesson, a new account or a "
+            "phone… — Wordmate: Learn 44 Languages."
+        ): (
+            "Zaposleni, ki se vsak dan vozijo na delo, potrebujejo učenje "
+            "besedišča, ki ga lahko vključijo v proste minute, ne da bi "
+            "potrebovali celo lekcijo, nov račun ali telefon v roki… — "
+            "Wordmate: Learn 44 Languages."
+        ),
+    },
+    "ta-IN": {
+        (
+            "Bilingual children learning Zhuyin at home need a complete path "
+            "through sounds, symbols, tones and blending, with enough playful "
+            "repetition to make the system familiar — Lumi Bopomofo Pro is "
+            "built for this."
+        ): (
+            "வீட்டில் Zhuyin கற்கும் இருமொழிக் குழந்தைகளுக்கு ஒலிகள், "
+            "குறியீடுகள், தொனிகள் மற்றும் ஒலிக்கலப்பு ஆகியவற்றை உள்ளடக்கிய "
+            "முழுமையான கற்றல் பாதையும், இந்த முறையைப் பழகிக்கொள்ள போதுமான "
+            "விளையாட்டுத்தனமான மீள்பயிற்சியும் தேவை — இதற்காகவே Lumi "
+            "Bopomofo Pro உருவாக்கப்பட்டுள்ளது."
+        ),
+    },
+}
+LOCALE_TARGET_REPLACEMENTS = {
+    "gu-IN": (("નિષ્ઠાવાન", "પ્રામાણિક"),),
+    "it": (
+        (
+            "guida acquisto app iPhone",
+            "guida onesta all'acquisto di app per iPhone",
+        ),
+        (
+            "guida all’acquisto di app per iPhone",
+            "guida onesta all’acquisto di app per iPhone",
+        ),
+        (
+            "guida all'acquisto di app per iPhone",
+            "guida onesta all'acquisto di app per iPhone",
+        ),
+    ),
+    "kn-IN": (
+        ("ಐಫೋನ್", "iPhone"),
+        ("ನಿಷ್ಠ", "ಪ್ರಾಮಾಣಿಕ"),
+    ),
+    "ml-IN": (
+        ("ഐഫോണിൽ", "iPhone-ൽ"),
+        ("ഐഫോൺ", "iPhone"),
+    ),
+    "ms": (
+        (
+            "panduan beli aplikasi iPhone jujur",
+            "panduan jujur membeli aplikasi iPhone",
+        ),
+        ("di iphone", "di iPhone"),
+        ("apple watch", "Apple Watch"),
+    ),
+    "pa-IN": (("ਆਈਫੋਨ", "iPhone"),),
+    "sl-SI": (("iphonu", "iPhonu"),),
+    "ta-IN": (
+        ("ஐபோனில்", "iPhone-ல்"),
+        ("ஐபோன்", "iPhone"),
+    ),
+    "te-IN": (
+        ("ఐఫోన్‌ లో", "iPhone‌లో"),
+        ("ఐఫోన్", "iPhone"),
+    ),
+    "ur-PK": (("آئی فون", "iPhone"),),
+}
 NO_TRANSLATE_JSON_KEYS = {
     "@context",
     "@type",
@@ -322,6 +721,404 @@ def call_openai(strings: list[str], lang: str, slug: str, api_key: str) -> dict[
     raise RuntimeError(f"OpenAI translation failed for {slug} {lang}: {last_error}")
 
 
+def string_batches(strings: list[str], max_chars: int = 900) -> list[list[str]]:
+    batches: list[list[str]] = []
+    current: list[str] = []
+    size = 0
+    for source in strings:
+        if current and size + len(source) > max_chars:
+            batches.append(current)
+            current = []
+            size = 0
+        current.append(source)
+        size += len(source)
+    if current:
+        batches.append(current)
+    return batches
+
+
+def call_ollama(
+    strings: list[str], lang: str, slug: str, model: str = OLLAMA_MODEL
+) -> dict[str, str]:
+    translations: dict[str, str] = {}
+    system = (
+        "You are a native localization editor for external iOS app buying guides. "
+        "Return one strict JSON object with a 'translations' object. Each input "
+        "string must appear unchanged as a key, mapped to a fluent, culturally "
+        f"natural {LANG_NAMES[lang]} translation. Preserve brand names, Apple "
+        "product names, URLs, prices and factual caveats. Do not add claims, "
+        "ratings, guarantees or commentary."
+    )
+    for batch_number, batch in enumerate(string_batches(strings), start=1):
+        payload = {
+            "model": model,
+            "stream": False,
+            "format": "json",
+            "messages": [
+                {"role": "system", "content": system},
+                {
+                    "role": "user",
+                    "content": json.dumps(
+                        {
+                            "target_locale": lang,
+                            "slug": slug,
+                            "batch": batch_number,
+                            "strings": batch,
+                        },
+                        ensure_ascii=False,
+                    ),
+                },
+            ],
+            "options": {"temperature": 0.1, "num_ctx": 8192},
+        }
+        request = urllib.request.Request(
+            OLLAMA_ENDPOINT,
+            data=json.dumps(payload).encode("utf-8"),
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+        last_error: Exception | None = None
+        for attempt in range(3):
+            try:
+                with urllib.request.urlopen(request, timeout=300) as response:
+                    raw = response.read().decode("utf-8")
+                content = json.loads(raw)["message"]["content"]
+                parsed = json.loads(content)
+                mapped = parsed.get("translations", {})
+                if not isinstance(mapped, dict):
+                    raise ValueError("translations is not an object")
+                exact = {source: str(mapped[source]) for source in batch}
+                require_complete_mapping(batch, exact, slug, lang)
+                translations.update(exact)
+                break
+            except (
+                urllib.error.URLError,
+                TimeoutError,
+                json.JSONDecodeError,
+                KeyError,
+                ValueError,
+            ) as exc:
+                last_error = exc
+                if attempt < 2:
+                    time.sleep(2 * (attempt + 1))
+        else:
+            raise RuntimeError(
+                f"Ollama translation failed for {slug} {lang} "
+                f"batch {batch_number}: {last_error}"
+            )
+    return translations
+
+
+def require_complete_mapping(
+    strings: list[str], mapping: dict[str, str], slug: str, lang: str
+) -> None:
+    missing = [source for source in strings if source not in mapping]
+    empty = [source for source in strings if source in mapping and not mapping[source].strip()]
+    if missing or empty:
+        raise ValueError(
+            f"incomplete translation for {slug} {lang}: "
+            f"missing={len(missing)}, empty={len(empty)}"
+        )
+
+
+def require_translation_quality(
+    strings: list[str],
+    mapping: dict[str, str],
+    slug: str,
+    lang: str,
+) -> None:
+    if lang in ENGLISH_LOCALES:
+        return
+    untranslated = []
+    for source in strings:
+        target = mapping.get(source, "").strip()
+        if source.strip() != target:
+            continue
+        words = re.findall(r"[A-Za-z]+", source)
+        protected_name = any(
+            source == brand or source.startswith(f"{brand}:")
+            for brand in BRANDS
+        )
+        if len(source) >= 24 and len(words) >= 4 and not protected_name:
+            untranslated.append(source)
+    if untranslated:
+        raise ValueError(
+            f"English fallback in {slug} {lang}: {untranslated[:3]}"
+        )
+
+    ranges = NATIVE_SCRIPT_RANGES.get(lang)
+    if not ranges:
+        return
+    letters = [
+        character
+        for source in strings
+        for character in mapping[source]
+        if character.isalpha()
+    ]
+    native = sum(
+        any(start <= ord(character) <= end for start, end in ranges)
+        for character in letters
+    )
+    ratio = native / max(1, len(letters))
+    if ratio < 0.70:
+        raise ValueError(
+            f"native-script ratio too low for {slug} {lang}: {ratio:.3f}"
+        )
+
+
+def apply_locale_text_overrides(
+    mapping: dict[str, str],
+    lang: str,
+) -> dict[str, str]:
+    overrides = LOCALE_TEXT_OVERRIDES.get(lang, {})
+    return {
+        source: apply_locale_target_replacements(
+            overrides.get(source, target),
+            lang,
+        )
+        for source, target in mapping.items()
+    }
+
+
+def apply_locale_target_replacements(text: str, lang: str) -> str:
+    for original, replacement in LOCALE_TARGET_REPLACEMENTS.get(lang, ()):
+        text = text.replace(original, replacement)
+    return text
+
+
+def english_mapping(strings: list[str], locale: str) -> dict[str, str]:
+    replacements = {
+        "en-US": (
+            ("practise", "practice"),
+            ("recognise", "recognize"),
+            ("recognising", "recognizing"),
+            ("colour", "color"),
+            ("travelling", "traveling"),
+        ),
+        "en-CA": (
+            ("practise", "practice"),
+            ("recognise", "recognize"),
+            ("recognising", "recognizing"),
+        ),
+        "en-AU": (),
+        "en-GB": (),
+    }
+    spelling = dict(replacements[locale])
+
+    def replace(match: re.Match[str]) -> str:
+        value = spelling[match.group(0).lower()]
+        return value.capitalize() if match.group(0)[0].isupper() else value
+
+    pattern = (
+        r"\b(" + "|".join(map(re.escape, spelling)) + r")\b"
+        if spelling
+        else ""
+    )
+    return {
+        source: re.sub(pattern, replace, source, flags=re.IGNORECASE)
+        if pattern
+        else source
+        for source in strings
+    }
+
+
+def github_translation_batches(
+    strings: list[str], max_chars: int = 24000
+) -> list[list[str]]:
+    return string_batches(strings, max_chars=max_chars)
+
+
+class GithubModelsTranslator:
+    def __init__(
+        self,
+        all_strings: list[str],
+        model: str = GITHUB_TRANSLATION_MODEL,
+    ):
+        token = subprocess.run(
+            ["gh", "auth", "token"],
+            check=True,
+            capture_output=True,
+            text=True,
+        ).stdout.strip()
+        if not token:
+            raise RuntimeError("GitHub authentication token is unavailable")
+        self.token = token
+        self.model = model
+        self.all_strings = list(dict.fromkeys(all_strings))
+        self.cache: dict[str, dict[str, str]] = {}
+
+    def _translate_batch(
+        self,
+        strings: list[str],
+        locale: str,
+        batch_number: str,
+    ) -> dict[str, str]:
+        items = [
+            {"id": index, "text": source}
+            for index, source in enumerate(strings)
+        ]
+        system = (
+            "You are a senior native localization editor for external iOS app "
+            "buying guides. Localize for the exact target locale, using that "
+            "market's natural vocabulary and search phrasing rather than a "
+            "literal translation. Preserve app brand names, iPhone, iOS, "
+            "Home Screen, Apple Watch, App Store, URLs, prices, product facts "
+            "and all factual caveats. Outside those exact protected names, "
+            "write every ordinary word in the target language's native "
+            "terminology and script; never code-switch or retain an English "
+            "source phrase for convenience. Translate generic wording attached "
+            "to a brand, including the words 'app guide' in '<brand> app "
+            "guide'; only the brand itself is protected. Do not add claims, "
+            "ratings, guarantees or commentary. Return strict JSON with one "
+            "'translations' array. "
+            "Each result must contain the same numeric id and one non-empty "
+            "localized text. Return every id exactly once."
+        )
+        payload = {
+            "model": self.model,
+            "messages": [
+                {"role": "system", "content": system},
+                {
+                    "role": "user",
+                    "content": json.dumps(
+                        {
+                            "target_locale": locale,
+                            "target_language": LANG_NAMES[locale],
+                            "batch": batch_number,
+                            "items": items,
+                        },
+                        ensure_ascii=False,
+                    ),
+                },
+            ],
+            "temperature": 0.1,
+            "max_tokens": 32768,
+            "response_format": {"type": "json_object"},
+        }
+        request = urllib.request.Request(
+            GITHUB_MODELS_ENDPOINT,
+            data=json.dumps(payload).encode("utf-8"),
+            headers={
+                "Authorization": f"Bearer {self.token}",
+                "Accept": "application/vnd.github+json",
+                "Content-Type": "application/json",
+                "X-GitHub-Api-Version": "2026-03-10",
+            },
+            method="POST",
+        )
+        last_error: Exception | None = None
+        for attempt in range(5):
+            try:
+                with urllib.request.urlopen(request, timeout=300) as response:
+                    raw = response.read().decode("utf-8")
+            except (
+                urllib.error.URLError,
+                TimeoutError,
+            ) as exc:
+                last_error = exc
+                headers = getattr(exc, "headers", None)
+                retry_after = (
+                    int(headers.get("Retry-After", "0") or 0)
+                    if isinstance(exc, urllib.error.HTTPError)
+                    and headers is not None
+                    else 0
+                )
+                if attempt < 4:
+                    time.sleep(max(retry_after, 4 * (attempt + 1)))
+                continue
+            try:
+                content = json.loads(raw)["choices"][0]["message"]["content"]
+                parsed = json.loads(content)
+                results = parsed.get("translations")
+                if not isinstance(results, list):
+                    raise ValueError("translations is not an array")
+                by_id: dict[int, str] = {}
+                for result in results:
+                    if not isinstance(result, dict):
+                        raise ValueError("translation result is not an object")
+                    result_id = result.get("id")
+                    if isinstance(result_id, str) and result_id.isdigit():
+                        result_id = int(result_id)
+                    text = next(
+                        (
+                            result.get(key)
+                            for key in (
+                                "text",
+                                "localized_text",
+                                "translation",
+                            )
+                            if isinstance(result.get(key), str)
+                        ),
+                        None,
+                    )
+                    if not isinstance(result_id, int) or not isinstance(text, str):
+                        raise ValueError("translation result has invalid fields")
+                    if result_id in by_id:
+                        raise ValueError(f"duplicate translation id {result_id}")
+                    by_id[result_id] = text.strip()
+                expected = set(range(len(strings)))
+                if set(by_id) != expected:
+                    raise ValueError(
+                        f"translation ids differ: expected={len(expected)}, "
+                        f"actual={len(by_id)}"
+                    )
+                mapping = {
+                    source: by_id[index]
+                    for index, source in enumerate(strings)
+                }
+                require_complete_mapping(
+                    strings,
+                    mapping,
+                    "persona-batch",
+                    locale,
+                )
+                return mapping
+            except (json.JSONDecodeError, KeyError, ValueError) as exc:
+                last_error = exc
+                break
+        if len(strings) > 1:
+            midpoint = len(strings) // 2
+            left = self._translate_batch(
+                strings[:midpoint],
+                locale,
+                f"{batch_number}a",
+            )
+            right = self._translate_batch(
+                strings[midpoint:],
+                locale,
+                f"{batch_number}b",
+            )
+            return {**left, **right}
+        raise RuntimeError(
+            f"GitHub Models translation failed for {locale} "
+            f"batch {batch_number}: {last_error}"
+        )
+
+    def translate(self, strings: list[str], locale: str) -> dict[str, str]:
+        if locale not in self.cache:
+            mapping: dict[str, str] = {}
+            batches = github_translation_batches(self.all_strings)
+            for batch_number, batch in enumerate(batches, start=1):
+                mapping.update(
+                    self._translate_batch(
+                        batch,
+                        locale,
+                        str(batch_number),
+                    )
+                )
+            require_complete_mapping(
+                self.all_strings,
+                mapping,
+                "persona-pages",
+                locale,
+            )
+            self.cache[locale] = mapping
+        return {
+            source: self.cache[locale][source]
+            for source in strings
+        }
+
+
 def replace_spans(source: str, replacements: list[tuple[int, int, str]]) -> str:
     out = []
     last = 0
@@ -357,14 +1154,17 @@ def alternates_html(slug: str, current_lang: str | None = None) -> str:
     return "\n".join(lines)
 
 
-def reconcile_english_alternates(slug: str) -> bool:
-    path = ANSWERS / f"{slug}.html"
+def reconcile_alternates(
+    path: Path,
+    slug: str,
+    current_lang: str | None = None,
+) -> bool:
     if not path.exists():
         return False
     source = path.read_text(encoding="utf-8")
     updated = re.sub(
         r'(<link rel="alternate" hreflang="[^"]+" href="[^"]+">\s*)+',
-        alternates_html(slug) + "\n",
+        alternates_html(slug, current_lang) + "\n",
         source,
         count=1,
     )
@@ -372,6 +1172,23 @@ def reconcile_english_alternates(slug: str) -> bool:
         return False
     path.write_text(updated, encoding="utf-8")
     return True
+
+
+def reconcile_english_alternates(slug: str) -> bool:
+    return reconcile_alternates(ANSWERS / f"{slug}.html", slug)
+
+
+def reconcile_all_alternates(slug: str) -> int:
+    changed = int(reconcile_english_alternates(slug))
+    for lang in ALL_LANGS:
+        changed += int(
+            reconcile_alternates(
+                ROOT / lang / "answers" / f"{slug}.html",
+                slug,
+                lang,
+            )
+        )
+    return changed
 
 
 def localize_body_links(source: str, lang: str) -> str:
@@ -455,18 +1272,43 @@ def main() -> int:
     parser.add_argument("--trans", metavar="DIR", help="從全域 DIR/<lang>.json {原文:譯文}(agent 自產)組 mapping,免用 OpenAI key。字串全覆蓋才生成;缺漏寫到 DIR/_missing.<lang>.json 供補譯。")
     parser.add_argument("--allow-partial", action="store_true", help="搭配 --trans:即使有字串未譯也生成(未譯者維持原文)。預設關閉以免英文 fallback。")
     parser.add_argument("--openai", action="store_true", help="Explicitly opt in to OpenAI translation. Default requires --trans or --dump.")
+    parser.add_argument("--ollama", action="store_true", help="Use the local Ollama service for zero-cost, on-device translation.")
+    parser.add_argument("--ollama-model", default=OLLAMA_MODEL, help="Local Ollama model name.")
+    parser.add_argument("--github-models", action="store_true", help="Use the authenticated GitHub Models inference API.")
+    parser.add_argument("--github-model", default=GITHUB_TRANSLATION_MODEL, help="GitHub Models catalog model id.")
     parser.add_argument(
         "--force",
         action="store_true",
         help="Overwrite existing localized pages after translations are complete.",
     )
     args = parser.parse_args()
-    if args.openai and args.trans:
-        parser.error("--openai and --trans are mutually exclusive")
+    if sum(
+        bool(value)
+        for value in (
+            args.openai,
+            args.ollama,
+            args.github_models,
+            args.trans,
+        )
+    ) > 1:
+        parser.error(
+            "--openai, --ollama, --github-models and --trans "
+            "are mutually exclusive"
+        )
     if args.force and not args.slugs:
         parser.error("--force requires at least one explicit answer slug")
-    if not args.dump and not args.trans and not args.openai:
-        parser.error("zero-cost default: use --trans DIR or --dump DIR (or explicitly pass --openai)")
+    if (
+        not args.dump
+        and not args.trans
+        and not args.openai
+        and not args.ollama
+        and not args.github_models
+    ):
+        parser.error(
+            "use --trans DIR, --github-models, --ollama "
+            "or --dump DIR "
+            "(or explicitly pass --openai)"
+        )
 
     langs = parse_langs(args.langs)
     slugs = [Path(s).stem for s in args.slugs] if args.slugs else discover_slugs(args.limit)
@@ -491,6 +1333,20 @@ def main() -> int:
         return 0
 
     api_key = read_key() if args.openai else ""
+    source_strings: list[str] = []
+    if args.github_models:
+        for slug in slugs:
+            source_path = ANSWERS / f"{slug}.html"
+            if source_path.exists():
+                strings, _, _ = extract_strings(
+                    source_path.read_text(encoding="utf-8")
+                )
+                source_strings.extend(strings)
+    github_models = (
+        GithubModelsTranslator(source_strings, args.github_model)
+        if args.github_models
+        else None
+    )
     created = skipped = failed = 0
     # --trans:每語言載入全域字典 + 累積缺漏(供 agent 下次補譯)。
     global_maps: dict[str, dict[str, str]] = {}
@@ -521,9 +1377,13 @@ def main() -> int:
             try:
                 if args.trans:
                     strings, _, _ = extract_strings(source)
-                    gm = global_maps[lang]
-                    mapping = {s: gm[s] for s in strings if s in gm}
-                    miss = [s for s in strings if s not in gm]
+                    if lang in ENGLISH_LOCALES:
+                        mapping = {s: s for s in strings}
+                        miss = []
+                    else:
+                        gm = global_maps[lang]
+                        mapping = {s: gm[s] for s in strings if s in gm}
+                        miss = [s for s in strings if s not in gm]
                     if miss and not args.allow_partial:
                         for s in miss:
                             missing_acc[lang][s] = missing_acc[lang].get(s, 0) + 1
@@ -532,11 +1392,35 @@ def main() -> int:
                         continue
                 else:
                     strings, _, _ = extract_strings(source)
-                    mapping = call_openai(strings, lang, slug, api_key)
+                    mapping = (
+                        english_mapping(strings, lang)
+                        if lang in ENGLISH_LOCALES
+                        else (
+                            github_models.translate(strings, lang)
+                            if github_models is not None
+                            else (
+                                call_ollama(
+                                    strings,
+                                    lang,
+                                    slug,
+                                    model=args.ollama_model,
+                                )
+                                if args.ollama
+                                else call_openai(
+                                    strings,
+                                    lang,
+                                    slug,
+                                    api_key,
+                                )
+                            )
+                        )
+                    )
+                    mapping = apply_locale_text_overrides(mapping, lang)
+                    require_complete_mapping(strings, mapping, slug, lang)
+                    require_translation_quality(strings, mapping, slug, lang)
                 localized = render_localized(source, lang, slug, mapping)
                 target.parent.mkdir(parents=True, exist_ok=True)
                 target.write_text(localized, encoding="utf-8")
-                reconcile_english_alternates(slug)
                 created += 1
                 print(f"created {lang}/{slug}.html", flush=True)
             except Exception as exc:
@@ -558,6 +1442,8 @@ def main() -> int:
     # 產生新 i18n 頁後自動刷新答案 sitemap(涵蓋所有 */answers/*.html),避免漏索引。
     if created:
         try:
+            for slug in slugs:
+                reconcile_all_alternates(slug)
             import aeo_answers  # noqa
             aeo_answers.write_sitemap()
         except Exception as exc:

@@ -228,8 +228,10 @@ class PersonaLocaleCoverageTests(unittest.TestCase):
             ),
             (
                 "id",
-                "Pelacakan goresan; Widget Home Screen; white noise; timer; unlock",
-                "Menebalkan goresan; Alat mini Layar Utama; derau putih; pengatur waktu; buka kunci",
+                "Pelacakan goresan melalui pelacakan dan permainan; Widget Home "
+                "Screen; white noise; timer; unlock",
+                "Menebalkan goresan melalui menelusuri dan permainan; Alat mini "
+                "Layar Utama; derau putih; pengatur waktu; buka kunci",
             ),
             (
                 "ms",

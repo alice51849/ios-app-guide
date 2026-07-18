@@ -466,6 +466,7 @@ LOCALE_TARGET_REPLACEMENTS = {
     "id": (
         ("Pelacakan goresan", "Menebalkan goresan"),
         ("pelacakan goresan", "menebalkan goresan"),
+        ("melalui pelacakan dan permainan", "melalui menelusuri dan permainan"),
         ("foto burst", "rentetan foto"),
         ("light-leak", "kebocoran cahaya"),
         ("light leak", "kebocoran cahaya"),

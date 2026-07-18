@@ -237,7 +237,10 @@ class AppStoreFactsTests(unittest.TestCase):
             for key in APPSTORE
             if (pages / "en-US" / f"{key}.html").is_file()
         }
-        self.assertEqual(26, len(live))
+        verified = set(
+            facts.live_app_keys(APPSTORE, str(pages), refresh=False)
+        )
+        self.assertEqual(verified, live)
         checked = 0
         for locale in OFFICIAL_LOCALES:
             country = app_store_storefronts.LOCALE_STOREFRONTS[locale]

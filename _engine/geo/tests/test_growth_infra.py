@@ -8438,6 +8438,10 @@ class GeneratorTests(unittest.TestCase):
                 root,
             ), mock.patch.object(
                 aeo_answers,
+                "PAGES_ROOT",
+                root / "pages",
+            ), mock.patch.object(
+                aeo_answers,
                 "ANSWERS_DIR",
                 answers,
             ):
@@ -20550,7 +20554,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertTrue(plan)
         lookup.assert_called_once_with(
             aeo_answers.APPSTORE,
-            aeo_answers.ROOT / "pages",
+            aeo_answers.PAGES_ROOT,
             refresh=False,
         )
 
@@ -20822,7 +20826,7 @@ class GeneratorTests(unittest.TestCase):
                         f"{key}/{locale}/{field}",
                     )
                 checked += 1
-        self.assertEqual(26 * 50, checked)
+        self.assertEqual(len(live) * len(OFFICIAL_LOCALES), checked)
         bengali = build_pages_i18n.external_localized_values(
             "cyca",
             "bn-BD",

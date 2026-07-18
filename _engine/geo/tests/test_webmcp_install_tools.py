@@ -241,7 +241,10 @@ class WebMcpInstallToolsTests(unittest.TestCase):
         }
         if not live:
             self.skipTest("Generated localized app pages are unavailable")
-        self.assertEqual(26, len(live))
+        verified = set(
+            tools.live_app_keys(APPSTORE, str(pages), refresh=False)
+        )
+        self.assertEqual(verified, live)
         for locale in OFFICIAL_LOCALES:
             for key in live:
                 with self.subTest(locale=locale, app=key):

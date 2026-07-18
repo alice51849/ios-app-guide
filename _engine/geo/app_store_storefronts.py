@@ -151,13 +151,11 @@ def localized_app_store_url(value: str, locale: str) -> str:
     )
 
 
-def campaign_app_store_url(
+def validated_app_store_url(
     value: str,
-    campaign_token: str,
-    *,
-    provider_token: str | None = None,
+    expected_app_id: str | None = None,
 ) -> str:
-    """Add validated Apple campaign parameters to a direct storefront URL."""
+    """Validate a direct Apple URL and its optional campaign parameters."""
     if not isinstance(value, str):
         raise ValueError("App Store URL must be a string")
     parsed = urllib.parse.urlsplit(value.strip())
@@ -172,21 +170,22 @@ def campaign_app_store_url(
             country is not None
             and country not in set(LOCALE_STOREFRONTS.values())
         )
+        or (
+            expected_app_id is not None
+            and path.group("app_id") != expected_app_id
+        )
     ):
         raise ValueError(f"Invalid direct App Store URL: {value!r}")
-    if CAMPAIGN_TOKEN_RE.fullmatch(campaign_token) is None:
-        raise ValueError(f"Invalid App Store campaign token: {campaign_token!r}")
     try:
-        existing_parameters = urllib.parse.parse_qsl(
+        parameters = urllib.parse.parse_qsl(
             parsed.query,
             keep_blank_values=True,
             strict_parsing=True,
         )
     except ValueError as error:
         raise ValueError(f"Invalid direct App Store URL: {value!r}") from error
-    existing_provider_token = None
     seen_parameters: set[str] = set()
-    for key, parameter_value in existing_parameters:
+    for key, parameter_value in parameters:
         pattern = (
             CAMPAIGN_TOKEN_RE
             if key == "ct"
@@ -201,6 +200,26 @@ def campaign_app_store_url(
         ):
             raise ValueError(f"Invalid direct App Store URL: {value!r}")
         seen_parameters.add(key)
+    return urllib.parse.urlunsplit(parsed)
+
+
+def campaign_app_store_url(
+    value: str,
+    campaign_token: str,
+    *,
+    provider_token: str | None = None,
+) -> str:
+    """Add validated Apple campaign parameters to a direct storefront URL."""
+    parsed = urllib.parse.urlsplit(validated_app_store_url(value))
+    if CAMPAIGN_TOKEN_RE.fullmatch(campaign_token) is None:
+        raise ValueError(f"Invalid App Store campaign token: {campaign_token!r}")
+    existing_parameters = urllib.parse.parse_qsl(
+        parsed.query,
+        keep_blank_values=True,
+        strict_parsing=True,
+    )
+    existing_provider_token = None
+    for key, parameter_value in existing_parameters:
         if key == "pt":
             existing_provider_token = parameter_value
     parameters = []

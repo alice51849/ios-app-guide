@@ -10,12 +10,7 @@ from pathlib import Path
 import re
 import urllib.parse
 
-from app_store_storefronts import (
-    APP_STORE_PATH_RE,
-    CAMPAIGN_TOKEN_RE,
-    LOCALE_STOREFRONTS,
-    PROVIDER_TOKEN_RE,
-)
+from app_store_storefronts import validated_app_store_url
 import gen_mobile_store_ctas
 import gen_smart_app_banners
 from appstore_live import live_app_keys
@@ -220,37 +215,12 @@ def asset_href(site: str = SITE) -> str:
 
 
 def _validated_store_url(value: str, app_id: str) -> str:
-    parsed = urllib.parse.urlsplit(html.unescape(value))
-    path = APP_STORE_PATH_RE.fullmatch(parsed.path)
-    country = path.group("country") if path else None
-    parameters = urllib.parse.parse_qs(
-        parsed.query,
-        keep_blank_values=True,
-        strict_parsing=False,
-    )
-    if (
-        parsed.scheme != "https"
-        or parsed.netloc != "apps.apple.com"
-        or path is None
-        or path.group("app_id") != app_id
-        or parsed.fragment
-        or (
-            country is not None
-            and country not in set(LOCALE_STOREFRONTS.values())
-        )
-        or set(parameters) - {"ct", "pt"}
-        or any(len(values) != 1 for values in parameters.values())
-        or (
-            "ct" in parameters
-            and CAMPAIGN_TOKEN_RE.fullmatch(parameters["ct"][0]) is None
-        )
-        or (
-            "pt" in parameters
-            and PROVIDER_TOKEN_RE.fullmatch(parameters["pt"][0]) is None
-        )
-    ):
-        raise ValueError(f"Invalid direct App Store share URL: {value!r}")
-    return urllib.parse.urlunsplit(parsed)
+    try:
+        return validated_app_store_url(html.unescape(value), app_id)
+    except ValueError as error:
+        raise ValueError(
+            f"Invalid direct App Store share URL: {value!r}"
+        ) from error
 
 
 def share_block(

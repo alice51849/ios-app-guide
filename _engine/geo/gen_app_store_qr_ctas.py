@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import html
 import io
 from pathlib import Path
@@ -12,6 +13,7 @@ import urllib.parse
 
 import segno
 
+from app_store_storefronts import validated_app_store_url
 import gen_mobile_store_ctas
 import gen_smart_app_banners
 from appstore_live import live_app_keys
@@ -178,8 +180,16 @@ def store_url(app_id: str) -> str:
     return f"https://apps.apple.com/app/id{app_id}"
 
 
-def qr_svg(app_id: str) -> str:
-    url = store_url(app_id)
+def qr_asset_relative(app_id: str, href: str) -> Path:
+    store_url(app_id)
+    url = validated_app_store_url(href, app_id)
+    digest = hashlib.sha256(url.encode("utf-8")).hexdigest()[:20]
+    return QR_RELATIVE / f"id{app_id}-{digest}.svg"
+
+
+def qr_svg(app_id: str, href: str) -> str:
+    store_url(app_id)
+    url = validated_app_store_url(href, app_id)
     code = segno.make(url, error="m", micro=False)
     output = io.BytesIO()
     code.save(
@@ -220,19 +230,23 @@ def card_block(
     label: str,
     image_href: str,
 ) -> str:
-    canonical = store_url(app_id)
+    store_url(app_id)
+    direct_url = validated_app_store_url(href, app_id)
+    display_url = urllib.parse.urlunsplit(
+        urllib.parse.urlsplit(direct_url)._replace(query="")
+    )
     if not image_href.startswith("/") or any(
         char in image_href for char in "\"'<>"
     ):
         raise ValueError(f"Invalid App Store QR image URL: {image_href}")
     escaped_href = html.escape(href, quote=True)
     escaped_label = html.escape(label)
-    escaped_canonical = html.escape(canonical)
+    escaped_display_url = html.escape(display_url)
     return f"""{CARD_BLOCK_START}
 <section class="app-store-qr-card" style="display:none" aria-label="{escaped_label}">
 <a class="app-store-qr-card__link" href="{escaped_href}" rel="nofollow noopener">
 <img class="app-store-qr-card__image" src="{image_href}" width="164" height="164" alt="" decoding="async">
-<span class="app-store-qr-card__copy"><strong class="app-store-qr-card__label">{escaped_label}</strong><span class="app-store-qr-card__url" data-store-url="{escaped_canonical}" aria-hidden="true"></span></span>
+<span class="app-store-qr-card__copy"><strong class="app-store-qr-card__label">{escaped_label}</strong><span class="app-store-qr-card__url" data-store-url="{escaped_display_url}" aria-hidden="true"></span></span>
 </a>
 </section>
 {CARD_BLOCK_END}"""
@@ -295,17 +309,29 @@ def _write_if_changed(path: Path, content: str) -> bool:
     return True
 
 
-def sync_assets(pages: Path, app_ids: set[str]) -> int:
+def sync_assets(
+    pages: Path,
+    qr_targets: set[tuple[str, str]],
+) -> int:
     changed = int(
         _write_if_changed(pages / STYLESHEET_RELATIVE, CSS)
     )
     qr_directory = pages / QR_RELATIVE
     qr_directory.mkdir(parents=True, exist_ok=True)
-    expected = {qr_directory / f"id{app_id}.svg" for app_id in app_ids}
-    for app_id in sorted(app_ids):
+    assets: dict[Path, tuple[str, str]] = {}
+    for app_id, href in sorted(qr_targets):
+        relative = qr_asset_relative(app_id, href)
+        previous = assets.get(relative)
+        if previous is not None and previous != (app_id, href):
+            raise ValueError(f"App Store QR asset collision: {relative}")
+        assets[relative] = (app_id, href)
+    expected = {pages / relative for relative in assets}
+    for relative, (app_id, href) in sorted(
+        assets.items(), key=lambda item: str(item[0])
+    ):
         changed += int(
             _write_if_changed(
-                qr_directory / f"id{app_id}.svg", qr_svg(app_id)
+                pages / relative, qr_svg(app_id, href)
             )
         )
     for path in sorted(qr_directory.glob("id*.svg")):
@@ -346,11 +372,14 @@ def generate(
             f"App Store QR coverage mismatch: {len(app_ids)}/{app_count} apps"
         )
     stylesheet_href = _site_asset_href(site, STYLESHEET_RELATIVE)
-    changed = sync_assets(pages, app_ids)
+    qr_assets = {
+        (app_id, href) for app_id, href, _ in prepared.values()
+    }
+    changed = sync_assets(pages, qr_assets)
     installed: set[Path] = set()
     for path, (app_id, href, label) in sorted(prepared.items()):
         image_href = _site_asset_href(
-            site, QR_RELATIVE / f"id{app_id}.svg"
+            site, qr_asset_relative(app_id, href)
         )
         changed += int(
             ensure_qr_card(
@@ -371,7 +400,7 @@ def generate(
 
     return {
         "apps": len(app_ids),
-        "qr_assets": len(app_ids),
+        "qr_assets": len(qr_assets),
         "guide_pages": len(installed & guide_pages),
         "answer_pages": len(installed & answer_pages),
         "changed_files": changed,

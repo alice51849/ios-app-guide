@@ -1552,11 +1552,15 @@ class GeneratorTests(unittest.TestCase):
             fallback = root / "fallback.html"
             stale = root / "stale.html"
             stylesheet_href = "/ios-app-guide/assets/app-store-qr-v1.css"
-            image_href = (
-                "/ios-app-guide/assets/app-store-qr/id6773017109.svg"
-            )
             app_href = (
-                "https://apps.apple.com/app/id6773017109?ct=localized"
+                "https://apps.apple.com/tw/app/id6773017109"
+                "?pt=123456789&ct=localized"
+            )
+            image_href = (
+                "/ios-app-guide/"
+                + gen_app_store_qr_ctas.qr_asset_relative(
+                    "6773017109", app_href
+                ).as_posix()
             )
             page.write_text(
                 "<head>"
@@ -1635,7 +1639,7 @@ class GeneratorTests(unittest.TestCase):
             self.assertIn("Localized label", source)
             self.assertIn(image_href, source)
             self.assertIn(
-                "https://apps.apple.com/app/id6773017109", source
+                "https://apps.apple.com/tw/app/id6773017109", source
             )
             self.assertIn("display:none", source)
             self.assertIn(
@@ -1682,14 +1686,29 @@ class GeneratorTests(unittest.TestCase):
                 )
             )
 
-            svg = gen_app_store_qr_ctas.qr_svg("6773017109")
+            svg = gen_app_store_qr_ctas.qr_svg(
+                "6773017109", app_href
+            )
             self.assertTrue(svg.startswith("<svg"))
-            self.assertIn(
-                "<desc>https://apps.apple.com/app/id6773017109</desc>",
-                svg,
+            svg_root = ET.fromstring(svg)
+            self.assertEqual(
+                app_href,
+                next(
+                    node.text
+                    for node in svg_root.iter()
+                    if node.tag.endswith("desc")
+                ),
             )
             self.assertNotIn("<script", svg)
             assets = root / "assets-site"
+            second_href = (
+                "https://apps.apple.com/us/app/id6787754435"
+                "?ct=localized"
+            )
+            qr_targets = {
+                ("6773017109", app_href),
+                ("6787754435", second_href),
+            }
             stale_asset = (
                 assets
                 / gen_app_store_qr_ctas.QR_RELATIVE
@@ -1700,25 +1719,26 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(
                 4,
                 gen_app_store_qr_ctas.sync_assets(
-                    assets, {"6773017109", "6787754435"}
+                    assets, qr_targets
                 ),
             )
             asset_mtimes = {
                 path: path.stat().st_mtime_ns
-                for path in (
+                for path in {
                     assets / gen_app_store_qr_ctas.STYLESHEET_RELATIVE,
-                    assets
-                    / gen_app_store_qr_ctas.QR_RELATIVE
-                    / "id6773017109.svg",
-                    assets
-                    / gen_app_store_qr_ctas.QR_RELATIVE
-                    / "id6787754435.svg",
-                )
+                    *{
+                        assets
+                        / gen_app_store_qr_ctas.qr_asset_relative(
+                            app_id, href
+                        )
+                        for app_id, href in qr_targets
+                    },
+                }
             }
             self.assertEqual(
                 0,
                 gen_app_store_qr_ctas.sync_assets(
-                    assets, {"6773017109", "6787754435"}
+                    assets, qr_targets
                 ),
             )
             self.assertEqual(
@@ -1727,7 +1747,12 @@ class GeneratorTests(unittest.TestCase):
             )
             self.assertFalse(stale_asset.exists())
             with self.assertRaisesRegex(ValueError, "app ID"):
-                gen_app_store_qr_ctas.qr_svg("not-an-id")
+                gen_app_store_qr_ctas.qr_svg("not-an-id", app_href)
+            with self.assertRaisesRegex(ValueError, "App Store URL"):
+                gen_app_store_qr_ctas.qr_svg(
+                    "6773017109",
+                    "https://example.com/app/id6773017109",
+                )
             with self.assertRaisesRegex(ValueError, "site URL"):
                 gen_app_store_qr_ctas._site_asset_href(
                     "javascript:alert(1)", Path("asset.css")
@@ -2482,19 +2507,8 @@ class GeneratorTests(unittest.TestCase):
                 encoding="utf-8"
             ),
         )
-        app_ids = set(targets.values())
         qr_directory = pages / gen_app_store_qr_ctas.QR_RELATIVE
-        self.assertEqual(
-            {f"id{app_id}.svg" for app_id in app_ids},
-            {path.name for path in qr_directory.glob("id*.svg")},
-        )
-        for app_id in app_ids:
-            self.assertEqual(
-                gen_app_store_qr_ctas.qr_svg(app_id),
-                (qr_directory / f"id{app_id}.svg").read_text(
-                    encoding="utf-8"
-                ),
-            )
+        qr_assets: dict[Path, tuple[str, str]] = {}
         qr_stylesheet_href = gen_app_store_qr_ctas._site_asset_href(
             gen_guide_design.SITE,
             gen_app_store_qr_ctas.STYLESHEET_RELATIVE,
@@ -2510,9 +2524,14 @@ class GeneratorTests(unittest.TestCase):
             app_id = targets[path]
             cta = gen_mobile_store_ctas.app_store_cta(source, app_id)
             self.assertIsNotNone(cta)
+            relative = gen_app_store_qr_ctas.qr_asset_relative(
+                app_id, cta[0]
+            )
+            previous = qr_assets.setdefault(relative, (app_id, cta[0]))
+            self.assertEqual((app_id, cta[0]), previous)
             image_href = gen_app_store_qr_ctas._site_asset_href(
                 gen_guide_design.SITE,
-                gen_app_store_qr_ctas.QR_RELATIVE / f"id{app_id}.svg",
+                relative,
             )
             self.assertEqual(1, source.count(qr_style_block))
             self.assertEqual(
@@ -2593,6 +2612,23 @@ class GeneratorTests(unittest.TestCase):
                         share_script_href,
                         store_url=cta[0],
                     )
+                ),
+            )
+
+        self.assertEqual(
+            {pages / relative for relative in qr_assets},
+            set(qr_directory.glob("id*.svg")),
+        )
+        for relative, (_, href) in qr_assets.items():
+            svg_root = ET.fromstring(
+                (pages / relative).read_text(encoding="utf-8")
+            )
+            self.assertEqual(
+                href,
+                next(
+                    node.text
+                    for node in svg_root.iter()
+                    if node.tag.endswith("desc")
                 ),
             )
 

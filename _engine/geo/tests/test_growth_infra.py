@@ -17040,6 +17040,8 @@ class GeneratorTests(unittest.TestCase):
                 encoding="utf-8"
             )
             data = json.loads(data_path.read_text(encoding="utf-8"))
+            legacy_path = pages / "apps.json"
+            legacy = json.loads(legacy_path.read_text(encoding="utf-8"))
             schema = json.loads(
                 (
                     pages
@@ -17049,13 +17051,17 @@ class GeneratorTests(unittest.TestCase):
             )
             stable_mtime = 1_700_000_000_000_000_000
             os.utime(data_path, ns=(stable_mtime, stable_mtime))
+            os.utime(legacy_path, ns=(stable_mtime, stable_mtime))
             first_bytes = data_path.read_bytes()
+            first_legacy_bytes = legacy_path.read_bytes()
             portfolio_app_finder.build(
                 pages,
                 live_keys={"wordmate", "snapport"},
             )
             self.assertEqual(first_bytes, data_path.read_bytes())
             self.assertEqual(stable_mtime, data_path.stat().st_mtime_ns)
+            self.assertEqual(first_legacy_bytes, legacy_path.read_bytes())
+            self.assertEqual(stable_mtime, legacy_path.stat().st_mtime_ns)
 
         self.assertEqual(2, data["record_count"])
         self.assertEqual(english, legacy_finder)
@@ -17063,6 +17069,33 @@ class GeneratorTests(unittest.TestCase):
             ["Snapport", "Wordmate: Learn 44 Languages"],
             [record["name"] for record in data["apps"]],
         )
+        self.assertEqual(
+            ["Snapport", "Wordmate: Learn 44 Languages"],
+            [record["name"] for record in legacy],
+        )
+        self.assertTrue(
+            all(
+                set(record)
+                == {
+                    "name",
+                    "valueProp",
+                    "category",
+                    "attributes",
+                    "appStoreUrl",
+                    "guideUrl",
+                    "relatedUrls",
+                }
+                for record in legacy
+            )
+        )
+        self.assertEqual(
+            {
+                "https://apps.apple.com/app/id6780575828",
+                "https://apps.apple.com/app/id6789917808",
+            },
+            {record["appStoreUrl"] for record in legacy},
+        )
+        self.assertTrue(all(record["attributes"] for record in legacy))
         self.assertEqual(
             "alphabetical_by_app_name_not_a_ranking",
             data["ordering"],

@@ -386,6 +386,66 @@ def dataset_json(records: list[dict[str, object]]) -> str:
     ) + "\n"
 
 
+def legacy_apps_payload(
+    records: list[dict[str, object]],
+    pages: Path,
+) -> list[dict[str, object]]:
+    """Keep the original apps.json contract in sync with the verified catalog."""
+    output = []
+    for record in records:
+        key = str(record["key"])
+        guide_path = pages / "en-US" / f"{key}.html"
+        if not guide_path.is_file():
+            raise RuntimeError(f"Verified app is missing its English guide: {key}")
+
+        attributes = [str(record["purchase_labels"]["en"])]
+        attributes.extend(str(value) for value in record["features"])
+        for capability, enabled in record["capabilities"].items():
+            if enabled:
+                attributes.append(UI["en"]["capability_labels"][capability])
+        deduplicated_attributes = []
+        seen_attributes = set()
+        for value in attributes:
+            value = value.strip()
+            marker = value.casefold()
+            if value and marker not in seen_attributes:
+                seen_attributes.add(marker)
+                deduplicated_attributes.append(value)
+
+        related_urls = []
+        for relative in (
+            Path("guides") / f"{key}.html",
+            Path("hubs") / f"{key}.html",
+            Path("alternatives") / f"{key}-no-subscription.html",
+        ):
+            if (pages / relative).is_file():
+                related_urls.append(f"{SITE}/{relative.as_posix()}")
+
+        output.append(
+            {
+                "name": record["name"],
+                "valueProp": record["summaries"]["en"],
+                "category": record["category_labels"]["en"],
+                "attributes": deduplicated_attributes,
+                "appStoreUrl": record["canonical_app_store_url"],
+                "guideUrl": f"{SITE}/en-US/{key}.html",
+                "relatedUrls": related_urls,
+            }
+        )
+    return output
+
+
+def legacy_apps_json(
+    records: list[dict[str, object]],
+    pages: Path,
+) -> str:
+    return json.dumps(
+        legacy_apps_payload(records, pages),
+        ensure_ascii=False,
+        indent=2,
+    ) + "\n"
+
+
 def dataset_schema() -> str:
     app_required = [
         "key",
@@ -1164,6 +1224,10 @@ def build(
     write_text_if_changed(
         data_dir / f"{DATA_SLUG}.schema.json",
         dataset_schema(),
+    )
+    write_text_if_changed(
+        pages / "apps.json",
+        legacy_apps_json(records, pages),
     )
     outputs = []
     for locale in UI:

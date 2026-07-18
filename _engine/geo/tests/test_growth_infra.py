@@ -21453,9 +21453,63 @@ class GeneratorTests(unittest.TestCase):
             expected,
             build_pages_i18n.PORTFOLIO_CATALOG_PATHS,
         )
+        self.assertEqual(
+            set(build_pages_i18n.OFFICIAL_LOCALES),
+            set(build_pages_i18n.FINDER_UI),
+        )
+        for copy in build_pages_i18n.FINDER_UI.values():
+            self.assertTrue(copy["find"].strip())
+            self.assertTrue(copy["no_match"].strip())
+            self.assertNotIn("\n", copy["find"])
+            self.assertNotIn("\n", copy["no_match"])
+            self.assertLessEqual(len(copy["find"]), 60)
+            self.assertLessEqual(len(copy["no_match"]), 60)
+        dangerous = "</script><script>alert(1)</script>&"
+        safe_json = build_pages_i18n.json_for_script(
+            {"value": dangerous},
+            ensure_ascii=False,
+        )
+        self.assertNotIn("</script", safe_json.lower())
+        self.assertEqual(dangerous, json.loads(safe_json)["value"])
 
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)
+            icon = pages / "stories/img/lumibopomofo-icon.jpg"
+            icon.parent.mkdir(parents=True)
+            icon.write_bytes(b"validated icon fixture")
+            build_pages_i18n._directory_icon_url.cache_clear()
+            with (
+                mock.patch.object(build_pages_i18n, "PAGES", str(pages)),
+                mock.patch.object(
+                    gen_webstories,
+                    "ensure_app_icon",
+                    return_value=icon,
+                ) as ensure_icon,
+            ):
+                self.assertEqual(
+                    f"{build_pages_i18n.SITE}/stories/img/"
+                    "lumibopomofo-icon.jpg",
+                    build_pages_i18n.directory_icon_url("lumibopomofo"),
+                )
+                build_pages_i18n.directory_icon_url("lumibopomofo")
+                ensure_icon.assert_called_once_with("lumibopomofo")
+            unexpected_icon = pages / "stories/img/unexpected-icon.jpg"
+            unexpected_icon.write_bytes(b"wrong icon fixture")
+            build_pages_i18n._directory_icon_url.cache_clear()
+            with (
+                mock.patch.object(build_pages_i18n, "PAGES", str(pages)),
+                mock.patch.object(
+                    gen_webstories,
+                    "ensure_app_icon",
+                    return_value=unexpected_icon,
+                ),
+                self.assertRaisesRegex(
+                    ValueError,
+                    "expected path",
+                ),
+            ):
+                build_pages_i18n.directory_icon_url("lumibopomofo")
+            build_pages_i18n._directory_icon_url.cache_clear()
             (pages / app_store_storefronts.STATE_FILE).write_text(
                 json.dumps(
                     {"countries": {"de": ["6773017109"]}}
@@ -21531,6 +21585,14 @@ class GeneratorTests(unittest.TestCase):
                         }
                     },
                 ),
+                mock.patch.object(
+                    build_pages_i18n,
+                    "directory_icon_url",
+                    return_value=(
+                        f"{build_pages_i18n.SITE}/stories/img/"
+                        "lumibopomofo-icon.jpg"
+                    ),
+                ),
             ):
                 build_pages_i18n.build_locale_index(
                     "de-DE",
@@ -21566,9 +21628,42 @@ class GeneratorTests(unittest.TestCase):
                 ),
             )
             self.assertIn(
-                '<ul class="app-list">',
+                '<ul class="app-list" id="app-list">',
                 locale_index,
             )
+            self.assertIn('role="search"', locale_index)
+            self.assertIn("data-local-app-finder hidden", locale_index)
+            self.assertIn("form.hidden = false", locale_index)
+            self.assertIn("Was suchen Sie?", locale_index)
+            self.assertIn(
+                "Keine Ergebnisse. Bitte andere Begriffe versuchen.",
+                locale_index,
+            )
+            self.assertIn('id="app-search"', locale_index)
+            self.assertIn('name="q"', locale_index)
+            self.assertIn('maxlength="120"', locale_index)
+            self.assertIn('aria-live="polite"', locale_index)
+            self.assertIn(
+                'data-search="Lumi Bopomofo Zhuyin lernen '
+                "Zhuyin spielerisch lernen.",
+                locale_index,
+            )
+            self.assertIn(
+                f'src="{build_pages_i18n.SITE}/stories/img/'
+                'lumibopomofo-icon.jpg"',
+                locale_index,
+            )
+            self.assertIn('loading="lazy"', locale_index)
+            self.assertIn('alt="" width="72" height="72"', locale_index)
+            self.assertIn('referrerpolicy="no-referrer"', locale_index)
+            self.assertIn('new URL(window.location.href)', locale_index)
+            self.assertIn(".toLocaleLowerCase(locale)", locale_index)
+            self.assertIn('["ß", "ss"]', locale_index)
+            self.assertIn('["ς", "σ"]', locale_index)
+            self.assertIn(r"\u0300-\u036f", locale_index)
+            self.assertIn("window.history.replaceState", locale_index)
+            self.assertNotIn("fetch(", locale_index)
+            self.assertNotIn("localStorage", locale_index)
             self.assertIn(
                 "white-space:nowrap",
                 locale_index,
@@ -21599,6 +21694,11 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(
                 "EducationalApplication",
                 listed["applicationCategory"],
+            )
+            self.assertEqual(
+                f"{build_pages_i18n.SITE}/stories/img/"
+                "lumibopomofo-icon.jpg",
+                listed["image"],
             )
             canonical_store = (
                 "https://apps.apple.com/app/id6773017109"

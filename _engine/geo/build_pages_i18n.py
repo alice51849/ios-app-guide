@@ -22,6 +22,7 @@ import os
 import re
 import sys
 import unicodedata
+from functools import lru_cache
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -403,6 +404,212 @@ UI = {
            "dir_lead": "ہر iOS ایپ کی خصوصیات، قیمت اور اکثر پوچھے جانے والے سوالات کی منظم معلومات۔",
            "catalog": "تمام تصدیق شدہ ایپس دیکھیں"},
 }
+
+# Storefront variants use their own wording rather than a base-language fallback.
+FINDER_UI = {
+    "ar-SA": {
+        "find": "ماذا تريد أن تنجز؟",
+        "no_match": "لا نتائج. جرّب كلمات أخرى.",
+    },
+    "bn-BD": {
+        "find": "কী খুঁজছেন?",
+        "no_match": "কোনো ফল নেই। অন্য শব্দে খুঁজুন।",
+    },
+    "ca": {
+        "find": "Què necessites?",
+        "no_match": "Sense resultats. Prova amb altres paraules.",
+    },
+    "cs": {
+        "find": "Co hledáte?",
+        "no_match": "Žádné výsledky. Zkuste jiná klíčová slova.",
+    },
+    "da": {
+        "find": "Hvad leder du efter?",
+        "no_match": "Ingen resultater. Prøv andre søgeord.",
+    },
+    "de-DE": {
+        "find": "Was suchen Sie?",
+        "no_match": "Keine Ergebnisse. Bitte andere Begriffe versuchen.",
+    },
+    "el": {
+        "find": "Τι αναζητάτε;",
+        "no_match": "Δεν βρέθηκαν αποτελέσματα. Δοκιμάστε άλλες λέξεις.",
+    },
+    "en-AU": {
+        "find": "What do you need to get done?",
+        "no_match": "No matches. Try different words.",
+    },
+    "en-CA": {
+        "find": "What do you need to do?",
+        "no_match": "No matches. Try different words.",
+    },
+    "en-GB": {
+        "find": "What would you like to do?",
+        "no_match": "No matches. Try different words.",
+    },
+    "en-US": {
+        "find": "What do you need to get done?",
+        "no_match": "No matches. Try different words.",
+    },
+    "es-ES": {
+        "find": "¿Qué necesitas?",
+        "no_match": "Sin resultados. Prueba con otras palabras.",
+    },
+    "es-MX": {
+        "find": "¿Qué buscas?",
+        "no_match": "Sin resultados. Intenta con otras palabras.",
+    },
+    "fi": {
+        "find": "Mitä haet?",
+        "no_match": "Ei tuloksia. Kokeile muita hakusanoja.",
+    },
+    "fr-CA": {
+        "find": "Qu'est-ce que tu cherches ?",
+        "no_match": "Aucun résultat. Essaie d'autres mots-clés.",
+    },
+    "fr-FR": {
+        "find": "Que recherchez-vous ?",
+        "no_match": "Aucun résultat. Essayez d'autres termes.",
+    },
+    "gu-IN": {
+        "find": "શું શોધી રહ્યા છો?",
+        "no_match": "કોઈ પરિણામ નથી. બીજા શબ્દો અજમાવો.",
+    },
+    "he": {
+        "find": "מה מחפשים?",
+        "no_match": "לא נמצאו תוצאות. נסו מילים אחרות.",
+    },
+    "hi": {
+        "find": "आप क्या खोज रहे हैं?",
+        "no_match": "कोई परिणाम नहीं। दूसरे शब्द आज़माएँ।",
+    },
+    "hr": {
+        "find": "Što tražite?",
+        "no_match": "Nema rezultata. Pokušajte s drugim ključnim riječima.",
+    },
+    "hu": {
+        "find": "Mit keres?",
+        "no_match": "Nincs találat. Próbáljon más kulcsszavakat.",
+    },
+    "id": {
+        "find": "Apa yang Anda cari?",
+        "no_match": "Tidak ada hasil. Coba kata lain.",
+    },
+    "it": {
+        "find": "Cosa cerca?",
+        "no_match": "Nessun risultato. Provi con altre parole chiave.",
+    },
+    "ja": {
+        "find": "何をお探しですか？",
+        "no_match": "見つかりません。別の言葉で検索してください。",
+    },
+    "kn-IN": {
+        "find": "ನೀವು ಏನನ್ನು ಹುಡುಕುತ್ತಿದ್ದೀರಿ?",
+        "no_match": "ಫಲಿತಾಂಶಗಳಿಲ್ಲ. ಬೇರೆ ಪದ ಬಳಸಿ.",
+    },
+    "ko": {
+        "find": "무엇을 찾고 계신가요?",
+        "no_match": "검색 결과가 없어요. 다른 단어로 찾아보세요.",
+    },
+    "ml-IN": {
+        "find": "എന്താണ് തിരയുന്നത്?",
+        "no_match": "ഫലങ്ങളില്ല. മറ്റൊരു വാക്ക് പരീക്ഷിക്കൂ.",
+    },
+    "mr-IN": {
+        "find": "तुम्ही काय शोधत आहात?",
+        "no_match": "निकाल नाहीत. दुसरे शब्द वापरून पाहा.",
+    },
+    "ms": {
+        "find": "Apa yang anda cari?",
+        "no_match": "Tiada hasil. Cuba kata kunci lain.",
+    },
+    "nl-NL": {
+        "find": "Wat zoekt u?",
+        "no_match": "Geen resultaten. Probeer andere zoektermen.",
+    },
+    "no": {
+        "find": "Hva leter du etter?",
+        "no_match": "Ingen resultater. Prøv andre søkeord.",
+    },
+    "or-IN": {
+        "find": "ଆପଣ କ’ଣ ଖୋଜୁଛନ୍ତି?",
+        "no_match": "କୌଣସି ଫଳ ନାହିଁ। ଅନ୍ୟ ଶବ୍ଦ ଚେଷ୍ଟା କରନ୍ତୁ।",
+    },
+    "pa-IN": {
+        "find": "ਤੁਸੀਂ ਕੀ ਲੱਭ ਰਹੇ ਹੋ?",
+        "no_match": "ਕੋਈ ਨਤੀਜਾ ਨਹੀਂ। ਹੋਰ ਸ਼ਬਦ ਅਜ਼ਮਾਓ।",
+    },
+    "pl": {
+        "find": "Czego szukasz?",
+        "no_match": "Brak wyników. Spróbuj innych słów kluczowych.",
+    },
+    "pt-BR": {
+        "find": "O que você busca?",
+        "no_match": "Nenhum resultado encontrado. Tente outras palavras.",
+    },
+    "pt-PT": {
+        "find": "O que procura?",
+        "no_match": "Sem resultados. Experimente outras palavras.",
+    },
+    "ro": {
+        "find": "Ce căutați?",
+        "no_match": "Niciun rezultat. Încercați alte cuvinte.",
+    },
+    "ru": {
+        "find": "Что вас интересует?",
+        "no_match": "Ничего не найдено. Попробуйте другие слова.",
+    },
+    "sk": {
+        "find": "Čo hľadáte?",
+        "no_match": "Žiadne výsledky. Skúste iné kľúčové slová.",
+    },
+    "sl-SI": {
+        "find": "Kaj iščete?",
+        "no_match": "Ni rezultatov. Poskusite z drugimi besedami.",
+    },
+    "sv": {
+        "find": "Vad letar du efter?",
+        "no_match": "Inga resultat. Prova andra sökord.",
+    },
+    "ta-IN": {
+        "find": "எதைத் தேடுகிறீர்கள்?",
+        "no_match": "முடிவுகள் இல்லை. வேறு சொல் முயலுங்கள்.",
+    },
+    "te-IN": {
+        "find": "మీరు ఏమి వెతుకుతున్నారు?",
+        "no_match": "ఫలితాలు లేవు. మరో పదాన్ని ప్రయత్నించండి.",
+    },
+    "th": {
+        "find": "กำลังมองหาอะไร?",
+        "no_match": "ไม่พบผลลัพธ์ ลองใช้คำอื่น",
+    },
+    "tr": {
+        "find": "Ne arıyorsunuz?",
+        "no_match": "Sonuç bulunamadı. Farklı arama terimleri deneyin.",
+    },
+    "uk": {
+        "find": "Що ви шукаєте?",
+        "no_match": "Нічого не знайдено. Спробуйте інші слова.",
+    },
+    "ur-PK": {
+        "find": "آپ کیا تلاش کر رہے ہیں؟",
+        "no_match": "کوئی نتیجہ نہیں۔ دوسرے الفاظ آزمائیں۔",
+    },
+    "vi": {
+        "find": "Bạn đang tìm gì?",
+        "no_match": "Không có kết quả. Hãy thử từ khác.",
+    },
+    "zh-Hans": {
+        "find": "想完成什么？",
+        "no_match": "没有符合的结果，换个关键词试试。",
+    },
+    "zh-Hant": {
+        "find": "想完成什麼？",
+        "no_match": "找不到符合的結果，換個關鍵字試試。",
+    },
+}
+require_official_locale_coverage("localized-app-finder-copy", FINDER_UI)
+
 
 PROFILE_PRICING = {
     "en": {
@@ -906,6 +1113,21 @@ def get_ui(locale):
     return UI.get(b, UI["en"])
 
 
+def get_finder_ui(locale):
+    if locale not in FINDER_UI:
+        raise ValueError(f"Missing localized app finder UI: {locale}")
+    return FINDER_UI[locale]
+
+
+def json_for_script(value, **kwargs):
+    payload = json.dumps(value, **kwargs)
+    return (
+        payload.replace("&", "\\u0026")
+        .replace("<", "\\u003c")
+        .replace(">", "\\u003e")
+    )
+
+
 def pricing_text_for(key, locale):
     profile = pricing_profile(key)
     if APPS[key].get("purchase_model") == "paid_upfront":
@@ -1261,8 +1483,11 @@ def build_one(key, locale, all_locales):
         })
 
     ld = "\n".join(
-        f'<script type="application/ld+json">\n{json.dumps(s, ensure_ascii=False, indent=2)}\n</script>'
-        for s in schemas)
+        "<script type=\"application/ld+json\">\n"
+        f"{json_for_script(s, ensure_ascii=False, indent=2)}\n"
+        "</script>"
+        for s in schemas
+    )
 
     feat_li = "\n".join(f"    <li>{e(f)}</li>" for f in feats) or "    <li>iOS app</li>"
     faq_html = "\n".join(
@@ -1318,6 +1543,54 @@ def build_one(key, locale, all_locales):
     return out
 
 
+def directory_search_text(key, values, name, subtitle, pricing):
+    parts = []
+    seen = set()
+
+    def add(value):
+        candidates = value if isinstance(value, (list, tuple, set)) else [value]
+        for candidate in candidates:
+            if not isinstance(candidate, str):
+                continue
+            clean = re.sub(r"\s+", " ", candidate).strip()
+            folded = clean.casefold()
+            if clean and folded not in seen:
+                seen.add(folded)
+                parts.append(clean)
+
+    add(name)
+    add(subtitle)
+    add(values.get("promotionalText"))
+    add(values.get("keywords"))
+    add(pricing)
+    app = APPS[key]
+    for field in ("name", "sub", "tag", "search", "keywords", "cta_bullets"):
+        add(app.get(field))
+    result = " ".join(parts)
+    if not result:
+        raise ValueError(f"Missing localized directory search text: {key}")
+    return result
+
+
+@lru_cache(maxsize=None)
+def _directory_icon_url(pages_root, site, key):
+    from gen_webstories import ensure_app_icon
+
+    expected = os.path.realpath(
+        os.path.join(pages_root, "stories", "img", f"{key}-icon.jpg")
+    )
+    generated = os.path.realpath(os.fspath(ensure_app_icon(key)))
+    if generated != expected or not os.path.isfile(generated):
+        raise ValueError(
+            f"Directory icon was not generated at the expected path: {key}"
+        )
+    return f"{site}/stories/img/{key}-icon.jpg"
+
+
+def directory_icon_url(key):
+    return _directory_icon_url(os.path.realpath(PAGES), SITE, key)
+
+
 def localized_directory_records(locale, keys):
     records = []
     availability = load_storefront_availability(PAGES)
@@ -1342,15 +1615,27 @@ def localized_directory_records(locale, keys):
             locale,
             availability,
         )
+        clean_name = re.sub(r"\s+", " ", name).strip()
+        clean_subtitle = re.sub(r"\s+", " ", subtitle).strip()
+        pricing = re.sub(
+            r"\s+", " ", pricing_text_for(key, locale)
+        ).strip()
+        icon_url = directory_icon_url(key)
         records.append(
             {
                 "key": key,
                 "app_id": APPSTORE[key],
-                "name": re.sub(r"\s+", " ", name).strip(),
-                "subtitle": re.sub(r"\s+", " ", subtitle).strip(),
-                "pricing": re.sub(
-                    r"\s+", " ", pricing_text_for(key, locale)
-                ).strip(),
+                "name": clean_name,
+                "subtitle": clean_subtitle,
+                "pricing": pricing,
+                "search_text": directory_search_text(
+                    key,
+                    values,
+                    clean_name,
+                    clean_subtitle,
+                    pricing,
+                ),
+                "icon_url": icon_url,
                 "guide_url": f"{SITE}/{locale}/{key}.html",
                 "store_url": store_url,
                 "canonical_store": canonical_store,
@@ -1394,6 +1679,7 @@ def localized_directory_schema(locale, records):
                     "description": record["subtitle"],
                     "operatingSystem": "iOS",
                     "applicationCategory": record["category"],
+                    "image": record["icon_url"],
                     "url": record["guide_url"],
                     "sameAs": record["canonical_store"],
                     "installUrl": record["store_url"],
@@ -1415,28 +1701,128 @@ DIRECTORY_STYLE = """<style>
 body{margin:0;background:linear-gradient(180deg,#f2fbf7 0,#fff 36rem);color:var(--ink)}
 main{width:min(96%,980px);margin:0 auto;padding:clamp(28px,5vw,64px) 0 72px}
 h1{margin:0;font-size:clamp(2rem,6vw,4.4rem);letter-spacing:-.045em;line-height:1.02}
-h1,.intro,.catalog-link,.app-name,.app-sub,.app-price,.store-cta{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+h1,.intro,.catalog-link,.finder-field,.no-match,.app-name,.app-sub,.app-price,.store-cta{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .intro{margin:16px 0 0;color:var(--muted);font-size:clamp(1rem,2vw,1.16rem)}
-.catalog-link{margin:18px 0 28px}.catalog-link a{color:var(--teal);font-weight:800}
+.catalog-link{margin:18px 0}.catalog-link a{color:var(--teal);font-weight:800}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.finder-shell{margin:clamp(22px,4vw,34px) 0 18px;padding:8px;border:1px solid rgba(17,106,86,.2);border-radius:26px;background:rgba(255,255,255,.9);box-shadow:0 20px 58px rgba(21,70,57,.13);backdrop-filter:blur(18px)}
+.finder-field{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:12px;min-height:58px;padding:0 16px;border-radius:19px;background:linear-gradient(135deg,#f8fffb,#edf9f3)}
+.finder-icon{width:22px;height:22px;color:var(--teal)}
+.finder-field input{min-width:0;width:100%;height:54px;padding:0;border:0;outline:0;background:transparent;color:var(--ink);font:inherit;font-size:1rem;font-weight:750;text-align:start}
+.finder-field input::placeholder{color:#687771;opacity:1}
+.finder-field input:focus-visible{border-radius:12px;box-shadow:0 0 0 3px rgba(125,92,255,.42)}
+.finder-count{min-width:58px;color:var(--teal);font-size:.88rem;font-variant-numeric:tabular-nums;text-align:end}
+.no-match{margin:0 0 18px;padding:14px 18px;border:1px solid #eadfd1;border-radius:18px;background:#fff9ef;color:#75532d;font-weight:750}
 .app-list{display:grid;grid-template-columns:1fr;gap:12px;margin:0;padding:0;list-style:none}
-.app-card{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:clamp(14px,3vw,28px);min-height:116px;padding:clamp(18px,3vw,26px);border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.94);box-shadow:var(--shadow)}
+.app-card{display:grid;grid-template-columns:72px minmax(0,1fr) auto;align-items:center;gap:clamp(14px,3vw,24px);min-height:116px;padding:clamp(16px,3vw,24px);border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.94);box-shadow:var(--shadow)}
+.app-icon{display:block;width:72px;height:72px;border:1px solid rgba(21,33,29,.08);border-radius:19px;object-fit:cover;box-shadow:0 10px 26px rgba(21,70,57,.14)}
 .app-copy{min-width:0}.app-name{display:block;color:var(--ink);font-size:clamp(1.08rem,2.4vw,1.35rem);font-weight:900;text-decoration:none}.app-name:hover{text-decoration:underline}
 .app-sub,.app-price{margin:7px 0 0;color:var(--muted)}.app-price{font-size:.92rem}.app-price strong{color:var(--ink)}
 .store-cta{display:inline-flex;align-items:center;justify-content:center;max-width:42vw;min-height:48px;padding:0 20px;border-radius:999px;background:var(--teal);color:#fff;font-weight:900;text-decoration:none;box-shadow:0 10px 24px rgba(17,106,86,.22)}
 .store-cta:focus-visible,.app-name:focus-visible{outline:3px solid #7d5cff;outline-offset:4px}
-@media(max-width:560px){main{width:min(94%,760px)}.app-card{min-height:104px;border-radius:20px}.store-cta{max-width:34vw;padding:0 15px}.app-price{font-size:.84rem}}
+[hidden]{display:none!important}
+@media(max-width:560px){main{width:min(94%,760px)}.finder-shell{border-radius:22px}.finder-field{gap:9px;padding:0 12px}.finder-count{min-width:50px}.app-card{grid-template-columns:58px minmax(0,1fr) auto;gap:12px;min-height:104px;border-radius:20px}.app-icon{width:58px;height:58px;border-radius:16px}.store-cta{max-width:32vw;padding:0 14px}.app-price{font-size:.84rem}}
+@media(max-width:380px){.app-card{grid-template-columns:48px minmax(0,1fr) auto;gap:9px;padding:14px 12px}.app-icon{width:48px;height:48px;border-radius:14px}.store-cta{min-height:44px;padding:0 11px}.finder-count{min-width:44px;font-size:.8rem}}
 @media(prefers-reduced-motion:no-preference){.app-card,.store-cta{transition:transform .18s ease,box-shadow .18s ease}.app-card:hover{transform:translateY(-2px);box-shadow:0 22px 62px rgba(21,70,57,.15)}.store-cta:hover{transform:translateY(-1px)}}
 </style>"""
+
+DIRECTORY_SCRIPT = r"""<script>
+(() => {
+  const form = document.querySelector("[data-local-app-finder]");
+  const input = document.getElementById("app-search");
+  const list = document.getElementById("app-list");
+  const status = document.getElementById("app-search-status");
+  const noMatch = document.getElementById("no-app-match");
+  if (!form || !input || !list || !status || !noMatch) return;
+
+  const locale = document.documentElement.lang;
+  const cards = Array.from(list.querySelectorAll(".app-card"));
+  const substitutions = new Map([
+    ["ß", "ss"], ["ς", "σ"], ["æ", "ae"], ["œ", "oe"],
+    ["ø", "o"], ["ł", "l"], ["đ", "d"], ["ð", "d"], ["þ", "th"]
+  ]);
+  const fold = value => {
+    let result = String(value)
+      .toLocaleLowerCase(locale)
+      .normalize("NFKD")
+      .replace(/[\u0300-\u036f\u0591-\u05c7\u0640\u064b-\u065f\u0670]/g, "");
+    substitutions.forEach((replacement, source) => {
+      result = result.split(source).join(replacement);
+    });
+    return result.replace(/[^\p{L}\p{N}]+/gu, " ").trim();
+  };
+  const index = new Map(cards.map(card => [card, fold(card.dataset.search)]));
+
+  const score = (text, query) => {
+    if (!query) return 0;
+    const phrase = text.indexOf(query);
+    if (phrase >= 0) return 10000 - Math.min(phrase, 999);
+    const tokens = [...new Set(query.split(" ").filter(Boolean))];
+    let total = 0;
+    for (const token of tokens) {
+      const position = text.indexOf(token);
+      if (position < 0) return -1;
+      total += 100 - Math.min(position, 99);
+    }
+    return total;
+  };
+
+  const render = updateURL => {
+    const raw = input.value.trim().slice(0, input.maxLength);
+    const query = fold(raw);
+    const ranked = cards.map((card, order) => ({
+      card,
+      order,
+      score: score(index.get(card), query)
+    }));
+    ranked.sort((left, right) => {
+      const leftVisible = left.score >= 0;
+      const rightVisible = right.score >= 0;
+      if (leftVisible !== rightVisible) return leftVisible ? -1 : 1;
+      if (leftVisible && left.score !== right.score) return right.score - left.score;
+      return left.order - right.order;
+    });
+    let shown = 0;
+    ranked.forEach(item => {
+      item.card.hidden = item.score < 0;
+      if (!item.card.hidden) shown += 1;
+      list.appendChild(item.card);
+    });
+    status.textContent = `${shown} / ${cards.length}`;
+    noMatch.hidden = shown !== 0;
+    if (updateURL) {
+      const url = new URL(window.location.href);
+      if (query) url.searchParams.set("q", raw);
+      else url.searchParams.delete("q");
+      window.history.replaceState(null, "", `${url.pathname}${url.search}${url.hash}`);
+    }
+  };
+
+  const initial = new URL(window.location.href).searchParams.get("q") || "";
+  input.value = initial.slice(0, input.maxLength);
+  form.addEventListener("submit", event => {
+    event.preventDefault();
+    render(true);
+  });
+  input.addEventListener("input", () => render(true));
+  render(false);
+  form.hidden = false;
+})();
+</script>"""
 
 
 def build_locale_index(locale, keys, locales):
     ui = get_ui(locale)
+    finder_ui = get_finder_ui(locale)
     e = html.escape
     is_rtl = base_lang(locale) in RTL
     records = localized_directory_records(locale, keys)
     rows = [
         (
-            f'    <li class="app-card" data-app-id="{e(record["app_id"])}">'
+            f'    <li class="app-card" data-app-id="{e(record["app_id"])}" '
+            f'data-search="{e(record["search_text"], quote=True)}">'
+            f'<img class="app-icon" src="{e(record["icon_url"], quote=True)}" '
+            f'alt="" width="72" height="72" loading="lazy" decoding="async">'
             '<div class="app-copy">'
             f'<a class="app-name" href="{e(record["key"])}.html">'
             f'{e(record["name"])}</a>'
@@ -1444,6 +1830,7 @@ def build_locale_index(locale, keys, locales):
             f'<p class="app-price"><strong>{e(ui["price"])}:</strong> '
             f'{e(record["pricing"])}</p></div>'
             f'<a class="store-cta" href="{e(record["store_url"])}" '
+            'referrerpolicy="no-referrer" '
             f'aria-label="{e(ui["get"].format(name=record["name"]))}">'
             f'{e(ui["dl"])}</a></li>'
         )
@@ -1451,7 +1838,7 @@ def build_locale_index(locale, keys, locales):
     ]
     items = "\n".join(rows)
     dir_attr = ' dir="rtl"' if is_rtl else ""
-    schema = json.dumps(
+    schema = json_for_script(
         localized_directory_schema(locale, records),
         ensure_ascii=False,
         separators=(",", ":"),
@@ -1476,10 +1863,19 @@ def build_locale_index(locale, keys, locales):
 </head><body><main>
   <h1>{e(ui["dir_dir"])}</h1>
   <p class="intro">{e(ui["dir_lead"])}</p>
-{catalog_link}  <ul class="app-list">
+{catalog_link}  <form class="finder-shell" role="search" data-local-app-finder hidden>
+    <label class="sr-only" for="app-search">{e(finder_ui["find"])}</label>
+    <div class="finder-field">
+      <svg class="finder-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2" d="m20 20-4.4-4.4m2.4-5.1a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
+      <input id="app-search" name="q" type="search" maxlength="120" autocomplete="off" enterkeyhint="search" placeholder="{e(finder_ui["find"], quote=True)}" aria-controls="app-list" aria-describedby="app-search-status no-app-match">
+      <output class="finder-count" id="app-search-status" for="app-search" aria-live="polite" aria-atomic="true" dir="ltr">{len(records)} / {len(records)}</output>
+    </div>
+  </form>
+  <p class="no-match" id="no-app-match" role="status" hidden>{e(finder_ui["no_match"])}</p>
+  <ul class="app-list" id="app-list">
 {items}
   </ul>
-</main></body></html>
+</main>{DIRECTORY_SCRIPT}</body></html>
 """
     outdir = os.path.join(PAGES, locale)
     os.makedirs(outdir, exist_ok=True)

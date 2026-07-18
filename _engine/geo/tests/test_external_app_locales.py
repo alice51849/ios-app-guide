@@ -157,8 +157,16 @@ class ExternalAppLocaleTests(unittest.TestCase):
                             self.assertIn('"@type": "FAQPage"', content)
 
     def test_slovak_directory_is_native_and_feed_discoverable(self):
-        with tempfile.TemporaryDirectory() as directory, mock.patch.object(
-            pages, "PAGES", directory
+        with (
+            tempfile.TemporaryDirectory() as directory,
+            mock.patch.object(pages, "PAGES", directory),
+            mock.patch.object(
+                pages,
+                "directory_icon_url",
+                return_value=(
+                    f"{pages.SITE}/stories/img/mochi-icon.jpg"
+                ),
+            ),
         ):
             pages.build_locale_index("sk", ["mochi"], ["sk"])
             content = Path(directory, "sk", "index.html").read_text(

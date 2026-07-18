@@ -38,10 +38,10 @@ SCRIPT = """\
   const link = bar.querySelector("a");
   const source =
     document.querySelector(
-      '.hero a[href^="https://apps.apple.com/app/id"]'
+      '.hero a[href^="https://apps.apple.com/"][href*="/app/id"]'
     ) ||
     document.querySelector(
-      'main a[href^="https://apps.apple.com/app/id"]'
+      'main a[href^="https://apps.apple.com/"][href*="/app/id"]'
     );
   if (!link || !source) return;
 
@@ -125,8 +125,13 @@ def app_store_cta(source: str, app_id: str) -> tuple[str, str] | None:
         if not label:
             continue
         classes = set(attributes.get("class", "").split())
-        priority = 0 if "cta" in classes and "ghost" not in classes else 1
-        if "cta" not in classes:
+        if "iag-decision-card__cta" in classes:
+            priority = -1
+        elif "cta" in classes and "ghost" not in classes:
+            priority = 0
+        elif "cta" in classes:
+            priority = 1
+        else:
             priority = 2
         candidates.append((priority, href, label))
     if not candidates:

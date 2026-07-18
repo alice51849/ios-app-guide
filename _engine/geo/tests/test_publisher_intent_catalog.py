@@ -172,6 +172,7 @@ class PublisherIntentOutputTests(unittest.TestCase):
             ).read_text(encoding="utf-8")
         )
         cls.records = cls.payload["records"]
+        cls.availability = catalog.load_storefront_availability(cls.pages)
 
     def test_records_cover_every_app_and_locale_truthfully(self) -> None:
         self.assertEqual(
@@ -216,7 +217,12 @@ class PublisherIntentOutputTests(unittest.TestCase):
             )
             parsed = urlparse(record["app_store_url"])
             self.assertEqual("apps.apple.com", parsed.netloc)
-            self.assertEqual(f"/app/id{app_id}", parsed.path)
+            expected_store = catalog.verified_app_store_url(
+                record["canonical_app_store_url"],
+                locale,
+                self.availability,
+            )
+            self.assertEqual(urlparse(expected_store).path, parsed.path)
             self.assertEqual(
                 [catalog.campaign_token(locale)],
                 parse_qs(parsed.query).get("ct"),
@@ -346,7 +352,8 @@ class PublisherIntentOutputTests(unittest.TestCase):
                 table_body.group(1).count("<tr>"),
             )
             store_urls = re.findall(
-                r'href="(https://apps\.apple\.com/app/id[0-9]+\?ct=[^"]+)"',
+                r'href="(https://apps\.apple\.com/'
+                r'(?:[a-z]{2}/)?app/id[0-9]+\?ct=[^"]+)"',
                 table_body.group(1),
             )
             self.assertEqual(catalog.EXPECTED_APP_COUNT, len(store_urls))

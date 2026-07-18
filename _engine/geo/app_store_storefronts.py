@@ -6,6 +6,7 @@ from __future__ import annotations
 import re
 import json
 from pathlib import Path
+import urllib.parse
 
 from official_locales import OFFICIAL_LOCALE_SET
 
@@ -13,6 +14,10 @@ from official_locales import OFFICIAL_LOCALE_SET
 STATE_FILE = ".appstore_storefront_state.json"
 PRICE_RE = re.compile(r"(?:0|[1-9][0-9]*)(?:\.[0-9]+)?")
 CURRENCY_RE = re.compile(r"[A-Z]{3}")
+CAMPAIGN_TOKEN_RE = re.compile(r"[A-Za-z0-9_]{1,30}")
+PROVIDER_TOKEN_RE = re.compile(r"[A-Za-z0-9]+")
+PROMOTIONAL_RATING_MIN_VALUE = 4.0
+PROMOTIONAL_RATING_MIN_COUNT = 2
 LOCALE_STOREFRONTS = {
     "ar-SA": "sa",
     "bn-BD": "bd",
@@ -120,6 +125,9 @@ FREE_LABELS = {
 APP_STORE_URL_RE = re.compile(
     r"https://apps\.apple\.com/app/id(?P<app_id>\d{9,12})"
 )
+APP_STORE_PATH_RE = re.compile(
+    r"/(?:(?P<country>[a-z]{2})/)?app/id(?P<app_id>\d{9,12})"
+)
 
 if set(LOCALE_STOREFRONTS) != OFFICIAL_LOCALE_SET:
     raise RuntimeError("App Store storefront mapping must cover 50 official locales")
@@ -140,6 +148,90 @@ def localized_app_store_url(value: str, locale: str) -> str:
     return (
         f"https://apps.apple.com/{country}/app/"
         f"id{match.group('app_id')}"
+    )
+
+
+def campaign_app_store_url(
+    value: str,
+    campaign_token: str,
+    *,
+    provider_token: str | None = None,
+) -> str:
+    """Add validated Apple campaign parameters to a direct storefront URL."""
+    if not isinstance(value, str):
+        raise ValueError("App Store URL must be a string")
+    parsed = urllib.parse.urlsplit(value.strip())
+    path = APP_STORE_PATH_RE.fullmatch(parsed.path)
+    country = path.group("country") if path else None
+    if (
+        parsed.scheme != "https"
+        or parsed.netloc != "apps.apple.com"
+        or path is None
+        or parsed.fragment
+        or (
+            country is not None
+            and country not in set(LOCALE_STOREFRONTS.values())
+        )
+    ):
+        raise ValueError(f"Invalid direct App Store URL: {value!r}")
+    if CAMPAIGN_TOKEN_RE.fullmatch(campaign_token) is None:
+        raise ValueError(f"Invalid App Store campaign token: {campaign_token!r}")
+    try:
+        existing_parameters = urllib.parse.parse_qsl(
+            parsed.query,
+            keep_blank_values=True,
+            strict_parsing=True,
+        )
+    except ValueError as error:
+        raise ValueError(f"Invalid direct App Store URL: {value!r}") from error
+    existing_provider_token = None
+    seen_parameters: set[str] = set()
+    for key, parameter_value in existing_parameters:
+        pattern = (
+            CAMPAIGN_TOKEN_RE
+            if key == "ct"
+            else PROVIDER_TOKEN_RE
+            if key == "pt"
+            else None
+        )
+        if (
+            pattern is None
+            or key in seen_parameters
+            or pattern.fullmatch(parameter_value) is None
+        ):
+            raise ValueError(f"Invalid direct App Store URL: {value!r}")
+        seen_parameters.add(key)
+        if key == "pt":
+            existing_provider_token = parameter_value
+    parameters = []
+    effective_provider_token = (
+        provider_token
+        if provider_token is not None
+        else existing_provider_token
+    )
+    if effective_provider_token is not None:
+        if PROVIDER_TOKEN_RE.fullmatch(effective_provider_token) is None:
+            raise ValueError(
+                f"Invalid App Store provider token: {effective_provider_token!r}"
+            )
+        parameters.append(("pt", effective_provider_token))
+    parameters.append(("ct", campaign_token))
+    return urllib.parse.urlunsplit(
+        parsed._replace(query=urllib.parse.urlencode(parameters))
+    )
+
+
+def has_trusted_promotional_rating(detail: dict[str, object]) -> bool:
+    """Return whether a rating is strong enough to feature as social proof."""
+    rating_value = detail.get("rating_value")
+    rating_count = detail.get("rating_count")
+    return (
+        isinstance(rating_value, (int, float))
+        and not isinstance(rating_value, bool)
+        and float(rating_value) >= PROMOTIONAL_RATING_MIN_VALUE
+        and isinstance(rating_count, int)
+        and not isinstance(rating_count, bool)
+        and rating_count >= PROMOTIONAL_RATING_MIN_COUNT
     )
 
 

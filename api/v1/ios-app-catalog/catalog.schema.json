@@ -196,7 +196,7 @@
           "app_store_url": {
             "type": "string",
             "format": "uri",
-            "pattern": "^https://apps\\.apple\\.com/app/id[0-9]+"
+            "pattern": "^https://apps\\.apple\\.com/(?:[a-z]{2}/)?app/id[0-9]+"
           },
           "guide_url": {
             "type": "string",

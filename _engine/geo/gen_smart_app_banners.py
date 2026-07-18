@@ -56,7 +56,7 @@ APP_STORE_SHARE_BLOCK_RE = re.compile(
     flags=re.DOTALL,
 )
 APP_STORE_LINK_RE = re.compile(
-    r"https://apps\.apple\.com/app/id(\d+)",
+    r"https://apps\.apple\.com/(?:[a-z]{2}/)?app/id(\d+)",
     flags=re.IGNORECASE,
 )
 LOCALE_DIRECTORY_RE = re.compile(r"[a-z]{2,3}(?:-[A-Za-z]{2,4})?")

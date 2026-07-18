@@ -15,9 +15,13 @@ from pathlib import Path
 import re
 from typing import Any, Iterator
 import unicodedata
-from urllib.parse import urlencode
 
 from answer_personas import PERSONAS
+from app_store_storefronts import (
+    campaign_app_store_url,
+    load_storefront_availability,
+    verified_app_store_url,
+)
 from official_locales import OFFICIAL_LOCALES
 
 
@@ -281,10 +285,15 @@ def campaign_token(locale: str) -> str:
     return token
 
 
-def _app_store_url(app_id: str, locale: str) -> str:
-    return (
-        f"https://apps.apple.com/app/id{app_id}?"
-        + urlencode({"ct": campaign_token(locale)})
+def _app_store_url(
+    app_id: str,
+    locale: str,
+    availability: dict[str, frozenset[str]],
+) -> str:
+    canonical = f"https://apps.apple.com/app/id{app_id}"
+    return campaign_app_store_url(
+        verified_app_store_url(canonical, locale, availability),
+        campaign_token(locale),
     )
 
 
@@ -318,6 +327,7 @@ def _page_record(
     locale: str,
     key: str,
     app: dict[str, Any],
+    availability: dict[str, frozenset[str]],
 ) -> dict[str, Any]:
     source_query = str(PERSONAS[key][0]["query"])
     page_slug = slugify(source_query)
@@ -367,7 +377,7 @@ def _page_record(
         "canonical_app_store_url": (
             f"https://apps.apple.com/app/id{app_id}"
         ),
-        "app_store_url": _app_store_url(app_id, locale),
+        "app_store_url": _app_store_url(app_id, locale, availability),
         "app_store_cta_label": cta_label,
         "publisher_disclosure": _extract(
             source,
@@ -385,12 +395,13 @@ def build_records(
     pages: Path,
 ) -> tuple[list[dict[str, Any]], dict[str, dict[str, Any]]]:
     apps = _finder_records(pages)
+    availability = load_storefront_availability(pages)
     ordered_keys = sorted(
         apps,
         key=lambda key: (str(apps[key]["name"]).casefold(), key),
     )
     records = [
-        _page_record(pages, locale, key, apps[key])
+        _page_record(pages, locale, key, apps[key], availability)
         for locale in OFFICIAL_LOCALES
         for key in ordered_keys
     ]

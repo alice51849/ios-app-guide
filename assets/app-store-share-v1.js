@@ -3,10 +3,43 @@
 
   const script = document.querySelector("script[data-app-store-share]");
   const appId = script && script.dataset.appStoreShare;
-  if (!appId || !/^\d+$/.test(appId)) return;
+  const rawUrl = script && script.dataset.appStoreUrl;
+  if (!appId || !/^\d+$/.test(appId) || !rawUrl) return;
   if (typeof navigator.share !== "function") return;
 
-  const url = `https://apps.apple.com/app/id${appId}`;
+  let store;
+  try {
+    store = new URL(rawUrl);
+    const path = store.pathname.match(
+      /^\/(?:[a-z]{2}\/)?app\/id([0-9]{9,12})$/i
+    );
+    const parameters = [...store.searchParams.entries()];
+    if (
+      store.protocol !== "https:" ||
+      store.hostname !== "apps.apple.com" ||
+      store.username ||
+      store.password ||
+      store.port ||
+      !path ||
+      path[1] !== appId ||
+      store.hash ||
+      parameters.some(([key, value]) =>
+        key === "ct"
+          ? !/^[A-Za-z0-9_]{1,30}$/.test(value)
+          : key === "pt"
+          ? !/^[A-Za-z0-9]+$/.test(value)
+          : true
+      ) ||
+      parameters.some(
+        ([key], index) =>
+          parameters.findIndex(([candidate]) => candidate === key) !== index
+      )
+    ) throw new TypeError("Invalid direct App Store share URL.");
+  } catch (error) {
+    console.error("App Store share URL is invalid.", error);
+    return;
+  }
+  const url = store.href;
   const payload = { url };
   if (
     typeof navigator.canShare === "function" &&

@@ -2223,10 +2223,15 @@ class GeneratorTests(unittest.TestCase):
                 source,
             )
             self.assertIn(
+                'data-app-store-url="https://apps.apple.com/app/'
+                'id6773017109?ct=page"',
+                source,
+            )
+            self.assertIn(
                 'src="/ios-app-guide/assets/app-store-share-v1.js"',
                 source,
             )
-            self.assertNotIn(
+            self.assertIn(
                 "https://apps.apple.com/app/id6773017109?ct=page",
                 gen_app_store_share_ctas.BLOCK_RE.search(source).group(0),
             )
@@ -2263,7 +2268,8 @@ class GeneratorTests(unittest.TestCase):
         for feature in (
             "navigator.share",
             "navigator.canShare",
-            "https://apps.apple.com/app/id${appId}",
+            "script.dataset.appStoreUrl",
+            "(?:[a-z]{2}\\/)?app\\/id",
             'error.name !== "AbortError"',
             "MutationObserver",
             "inline-size:48px",
@@ -2547,7 +2553,9 @@ class GeneratorTests(unittest.TestCase):
                     1,
                     source.count(
                         gen_app_store_share_ctas.share_block(
-                            targets[path], share_script_href
+                            targets[path],
+                            share_script_href,
+                            store_url=cta[0],
                         )
                     ),
                 )
@@ -2558,6 +2566,10 @@ class GeneratorTests(unittest.TestCase):
         self.assertGreater(len(answer_targets), 0)
         for path in answer_targets:
             source = path.read_text(encoding="utf-8")
+            cta = gen_mobile_store_ctas.app_store_cta(
+                source, targets[path]
+            )
+            self.assertIsNotNone(cta)
             self.assertEqual(
                 1,
                 source.count(
@@ -2577,7 +2589,9 @@ class GeneratorTests(unittest.TestCase):
                 1,
                 source.count(
                     gen_app_store_share_ctas.share_block(
-                        targets[path], share_script_href
+                        targets[path],
+                        share_script_href,
+                        store_url=cta[0],
                     )
                 ),
             )
@@ -17782,12 +17796,20 @@ class GeneratorTests(unittest.TestCase):
         for locale in (english, japanese):
             self.assertEqual(2, locale["record_count"])
             for app in locale["apps"]:
-                self.assertTrue(
-                    app["app_store_url"].startswith(
-                        f"https://apps.apple.com/app/id{app['app_store_id']}?"
-                    )
-                )
                 self.assertIn("ct=iag_api_", app["app_store_url"])
+        for app in english["apps"]:
+            self.assertTrue(
+                app["app_store_url"].startswith(
+                    "https://apps.apple.com/us/app/"
+                    f"id{app['app_store_id']}?"
+                )
+            )
+        for app in japanese["apps"]:
+            self.assertTrue(
+                app["app_store_url"].startswith(
+                    f"https://apps.apple.com/app/id{app['app_store_id']}?"
+                )
+            )
         self.assertEqual(
             portfolio_app_catalog_api.JSON_FEED_VERSION,
             english_feed["version"],
@@ -17824,11 +17846,6 @@ class GeneratorTests(unittest.TestCase):
         for feed in (english_feed, japanese_feed):
             for item in feed["items"]:
                 self.assertIn("ct=iag_feed_", item["external_url"])
-                self.assertTrue(
-                    item["external_url"].startswith(
-                        "https://apps.apple.com/app/id"
-                    )
-                )
                 self.assertLessEqual(
                     item["date_modified"],
                     portfolio_app_catalog_api._utc_timestamp(),
@@ -17839,6 +17856,22 @@ class GeneratorTests(unittest.TestCase):
                 ),
                 portfolio_app_catalog_api.FEED_MAX_BYTES,
             )
+        self.assertTrue(
+            all(
+                item["external_url"].startswith(
+                    "https://apps.apple.com/us/app/id"
+                )
+                for item in english_feed["items"]
+            )
+        )
+        self.assertTrue(
+            all(
+                item["external_url"].startswith(
+                    "https://apps.apple.com/app/id"
+                )
+                for item in japanese_feed["items"]
+            )
+        )
         self.assertEqual(
             {
                 "/index.json",
@@ -19914,6 +19947,10 @@ class GeneratorTests(unittest.TestCase):
             icon = pages / "stories" / "img" / "tripbeelite-icon.jpg"
             icon.parent.mkdir(parents=True)
             icon.write_bytes(b"owned-icon")
+            availability = {
+                "tw": frozenset({app_id}),
+                "sk": frozenset({app_id}),
+            }
 
             product = pages / "zh-Hant" / "tripbeelite.html"
             product.parent.mkdir()
@@ -19944,7 +19981,11 @@ class GeneratorTests(unittest.TestCase):
             )
             self.assertTrue(
                 gen_app_decision_cards.ensure_card(
-                    product, "tripbeelite", app_id, pages
+                    product,
+                    "tripbeelite",
+                    app_id,
+                    pages,
+                    availability=availability,
                 )
             )
             rendered = product.read_text(encoding="utf-8")
@@ -19960,6 +20001,11 @@ class GeneratorTests(unittest.TestCase):
             self.assertIn('<data value="4.9">4.9</data>/5', rendered)
             self.assertIn('<data value="12">12</data>', rendered)
             self.assertIn("?ct=iag_decision", rendered)
+            self.assertIn(
+                f"https://apps.apple.com/tw/app/id{app_id}"
+                "?ct=iag_decision",
+                rendered,
+            )
             self.assertLess(
                 rendered.index(gen_app_decision_cards.STYLE_START),
                 rendered.index(
@@ -19971,7 +20017,11 @@ class GeneratorTests(unittest.TestCase):
             )
             self.assertFalse(
                 gen_app_decision_cards.ensure_card(
-                    product, "tripbeelite", app_id, pages
+                    product,
+                    "tripbeelite",
+                    app_id,
+                    pages,
+                    availability=availability,
                 )
             )
 
@@ -19990,13 +20040,22 @@ class GeneratorTests(unittest.TestCase):
             )
             self.assertTrue(
                 gen_app_decision_cards.ensure_card(
-                    answer, "tripbeelite", app_id, pages
+                    answer,
+                    "tripbeelite",
+                    app_id,
+                    pages,
+                    availability=availability,
                 )
             )
             localized = answer.read_text(encoding="utf-8")
             self.assertIn("Majte jednu cestu prehľadne pokope.", localized)
             self.assertIn("Bez predplatného", localized)
             self.assertIn("Stiahnuť v App Store", localized)
+            self.assertIn(
+                f"https://apps.apple.com/sk/app/id{app_id}"
+                "?ct=iag_decision",
+                localized,
+            )
             self.assertLess(
                 localized.index("</section>"),
                 localized.index(gen_app_decision_cards.CARD_START),
@@ -20010,9 +20069,25 @@ class GeneratorTests(unittest.TestCase):
                 "A practical buying guide for a trip planner.",
             )
             decision = gen_app_decision_cards._page_content(
-                generic, "tripbeelite", app_id, True
+                generic,
+                "tripbeelite",
+                app_id,
+                True,
+                "sk",
+                availability,
             )
             self.assertIn("Keep one active journey", decision["promise"])
+            weak = rendered.replace(
+                '<data value="4.9">4.9</data>',
+                '<data value="1.0">1.0</data>',
+            ).replace(
+                '<data value="12">12</data>',
+                '<data value="1">1</data>',
+            )
+            self.assertNotIn(
+                "rating_value",
+                gen_app_decision_cards._storefront_fact(weak, False),
+            )
 
     def test_calculator_is_added_to_tools_index_and_sitemap(self):
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(
@@ -20340,6 +20415,7 @@ class GeneratorTests(unittest.TestCase):
             workflow.count("refresh_storefront_availability.py"),
         )
         self.assertEqual(1, workflow.count("portfolio_app_catalog_api.py"))
+        self.assertEqual(1, workflow.count("publisher_intent_catalog.py"))
         self.assertLess(
             workflow.index("refresh=True"),
             workflow.index("passport_photo_print_sheet.py"),
@@ -20513,6 +20589,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_mobile_app_identity.py",
             "gen_webmcp_install_tools.py",
             "portfolio_app_catalog_api.py",
+            "publisher_intent_catalog.py",
             "gen_publisher_disclosures.py",
             "gen_guide_design.py",
             "gen_app_store_facts.py",
@@ -20689,6 +20766,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("portfolio_app_finder.py", publish)
         self.assertIn("outreach_scorecard.py", publish)
         self.assertIn("portfolio_app_catalog_api.py", publish)
+        self.assertIn("publisher_intent_catalog.py", publish)
         self.assertLess(
             publish.index("portfolio_app_finder.py"),
             publish.index("portfolio_app_catalog_api.py"),
@@ -20715,6 +20793,10 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertLess(
             publish.index("portfolio_app_catalog_api.py"),
+            publish.index("publisher_intent_catalog.py"),
+        )
+        self.assertLess(
+            publish.index("publisher_intent_catalog.py"),
             publish.index("gen_mobile_store_ctas.py"),
         )
         self.assertEqual(
@@ -21104,6 +21186,43 @@ class GeneratorTests(unittest.TestCase):
                 "zh-Hans",
                 availability,
             ),
+        )
+        campaign = app_store_storefronts.campaign_app_store_url(
+            expected["zh-Hant"],
+            "iag_api_zh_hant",
+            provider_token="123456789",
+        )
+        parsed_campaign = urllib.parse.urlsplit(campaign)
+        self.assertEqual("/tw/app/id6773017109", parsed_campaign.path)
+        self.assertEqual(
+            {
+                "pt": ["123456789"],
+                "ct": ["iag_api_zh_hant"],
+            },
+            urllib.parse.parse_qs(parsed_campaign.query),
+        )
+        replaced_campaign = app_store_storefronts.campaign_app_store_url(
+            f"{expected['zh-Hant']}?pt=123456789&ct=iag_linkset",
+            "iag_oembed_zh_hant",
+        )
+        self.assertEqual(
+            {
+                "pt": ["123456789"],
+                "ct": ["iag_oembed_zh_hant"],
+            },
+            urllib.parse.parse_qs(
+                urllib.parse.urlsplit(replaced_campaign).query
+            ),
+        )
+        self.assertTrue(
+            app_store_storefronts.has_trusted_promotional_rating(
+                {"rating_value": 4.0, "rating_count": 2}
+            )
+        )
+        self.assertFalse(
+            app_store_storefronts.has_trusted_promotional_rating(
+                {"rating_value": 5.0, "rating_count": 1}
+            )
         )
         for invalid in (
             "https://apps.apple.com/app/id6773017109?ct=test",

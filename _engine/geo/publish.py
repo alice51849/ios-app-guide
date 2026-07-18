@@ -205,6 +205,7 @@ def main():
     require([PY, os.path.join(HERE, "gen_mobile_app_identity.py")], env=env)
     require([PY, os.path.join(HERE, "gen_webmcp_install_tools.py")], env=env)
     require([PY, os.path.join(HERE, "portfolio_app_catalog_api.py")], env=env)
+    require([PY, os.path.join(HERE, "publisher_intent_catalog.py")], env=env)
     require([PY, os.path.join(HERE, "gen_publisher_disclosures.py")], env=env)
     require([PY, os.path.join(HERE, "gen_guide_design.py")], env=env)
     require([PY, os.path.join(HERE, "gen_app_store_facts.py")], env=env)

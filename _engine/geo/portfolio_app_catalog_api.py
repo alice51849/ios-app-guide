@@ -11,6 +11,7 @@ import os
 from pathlib import Path
 import re
 import sys
+import urllib.parse
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
@@ -19,9 +20,12 @@ sys.path.insert(0, str(ROOT / "social"))
 from appstore_live import live_app_keys  # noqa: E402
 from app_store_storefronts import (  # noqa: E402
     LOCALE_STOREFRONTS,
+    campaign_app_store_url,
+    load_storefront_availability,
     load_storefront_details,
     localized_app_store_url,
     localized_storefront_detail,
+    verified_app_store_url,
 )
 import build_pages_i18n  # noqa: E402
 from family_travel_dataset import write_text_if_changed  # noqa: E402
@@ -285,6 +289,7 @@ def localized_record(
     storefront_details: (
         dict[str, dict[str, dict[str, object]]] | None
     ) = None,
+    storefront_availability: dict[str, frozenset[str]] | None = None,
 ) -> dict[str, object]:
     path = pages / locale / f"{record['key']}.html"
     localizations = build_pages_i18n.load_app_locales(str(record["key"]))
@@ -308,6 +313,16 @@ def localized_record(
         raise ValueError(
             f"Missing localized catalog summary: {record['key']}/{locale}"
         )
+    canonical_store = (
+        f"https://apps.apple.com/app/id{record['app_store_id']}"
+    )
+    if storefront_availability is None:
+        storefront_availability = load_storefront_availability(pages)
+    direct_store = verified_app_store_url(
+        canonical_store,
+        locale,
+        storefront_availability,
+    )
     localized = {
         "key": record["key"],
         "app_store_id": str(record["app_store_id"]),
@@ -318,8 +333,8 @@ def localized_record(
         "purchase_model": record["purchase_model"],
         "one_time_option": record["one_time_option"],
         "capabilities": record["capabilities"],
-        "app_store_url": appstore_url(
-            str(record["key"]),
+        "app_store_url": campaign_app_store_url(
+            direct_store,
             _campaign(locale),
         ),
         "guide_url": f"{SITE}/{locale}/{record['key']}.html",
@@ -331,7 +346,11 @@ def localized_record(
     detail = storefront_details.get(country, {}).get(
         str(record["app_store_id"])
     )
-    if detail is not None:
+    if (
+        detail is not None
+        and str(record["app_store_id"])
+        in storefront_availability.get(country, frozenset())
+    ):
         storefront_facts = localized_storefront_detail(detail, locale)
         storefront_facts["storefront_url"] = localized_app_store_url(
             "https://apps.apple.com/app/"
@@ -340,6 +359,29 @@ def localized_record(
         )
         localized["storefront_facts"] = storefront_facts
     return localized
+
+
+def _retarget_app_store_campaign(
+    app: dict[str, object],
+    campaign: str,
+) -> str:
+    current = str(
+        app.get("app_store_url")
+        or f"https://apps.apple.com/app/id{app['app_store_id']}"
+    )
+    parsed = urllib.parse.urlsplit(current)
+    parameters = urllib.parse.parse_qs(parsed.query)
+    providers = parameters.get("pt", [])
+    if len(providers) > 1:
+        raise ValueError(f"Duplicate App Store provider token: {current}")
+    direct = urllib.parse.urlunsplit(
+        parsed._replace(query="", fragment="")
+    )
+    return campaign_app_store_url(
+        direct,
+        campaign,
+        provider_token=providers[0] if providers else None,
+    )
 
 
 def _content_digest(localized: dict[str, list[dict[str, object]]]) -> str:
@@ -408,8 +450,8 @@ def feed_payload(
         item = {
             "id": f"https://apps.apple.com/app/id{app['app_store_id']}",
             "url": app["guide_url"],
-            "external_url": appstore_url(
-                str(app["key"]),
+            "external_url": _retarget_app_store_campaign(
+                app,
                 _feed_campaign(locale),
             ),
             "title": app["name"],
@@ -697,7 +739,8 @@ def catalog_schema() -> dict[str, object]:
                             "type": "string",
                             "format": "uri",
                             "pattern": (
-                                "^https://apps\\.apple\\.com/app/id[0-9]+"
+                                "^https://apps\\.apple\\.com/"
+                                "(?:[a-z]{2}/)?app/id[0-9]+"
                             ),
                         },
                         "guide_url": {"type": "string", "format": "uri"},
@@ -850,7 +893,8 @@ def feed_schema() -> dict[str, object]:
                             "type": "string",
                             "format": "uri",
                             "pattern": (
-                                "^https://apps\\.apple\\.com/app/id[0-9]+"
+                                "^https://apps\\.apple\\.com/"
+                                "(?:[a-z]{2}/)?app/id[0-9]+"
                             ),
                         },
                         "title": {"type": "string", "minLength": 1},
@@ -1173,9 +1217,11 @@ def validate_artifacts(
             raise ValueError(f"App order or coverage mismatch: {locale}")
         for app in apps:
             app_id = str(app["app_store_id"])
-            if not str(app["app_store_url"]).startswith(
-                f"https://apps.apple.com/app/id{app_id}?"
-            ):
+            if re.fullmatch(
+                rf"https://apps\.apple\.com/(?:[a-z]{{2}}/)?"
+                rf"app/id{app_id}\?[^#]+",
+                str(app["app_store_url"]),
+            ) is None:
                 raise ValueError(
                     f"Missing direct App Store campaign link: {locale}/{app['key']}"
                 )
@@ -1229,6 +1275,7 @@ def build(
 ) -> list[str]:
     records = portfolio_app_finder.catalog_records(live_keys, pages)
     storefront_details = load_storefront_details(pages)
+    storefront_availability = load_storefront_availability(pages)
     localized = {
         locale: [
             localized_record(
@@ -1236,6 +1283,7 @@ def build(
                 locale,
                 pages,
                 storefront_details,
+                storefront_availability,
             )
             for record in records
         ]

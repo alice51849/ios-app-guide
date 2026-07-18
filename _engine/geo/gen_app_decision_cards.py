@@ -18,7 +18,14 @@ sys.path.insert(0, str(ROOT / "social"))
 sys.path.insert(0, str(HERE))
 
 from appstore_live import live_app_keys  # noqa: E402
+from app_store_storefronts import (  # noqa: E402
+    campaign_app_store_url,
+    has_trusted_promotional_rating,
+    load_storefront_availability,
+    verified_app_store_url,
+)
 import gen_smart_app_banners  # noqa: E402
+from official_locales import OFFICIAL_LOCALE_SET  # noqa: E402
 from videogen.registry import APPS, APPSTORE  # noqa: E402
 
 
@@ -274,27 +281,57 @@ def _plain_text(fragment: str) -> str:
     return " ".join(html.unescape(TAG_RE.sub(" ", fragment)).split())
 
 
-def _campaign_url(url: str, app_id: str) -> str:
+def _campaign_url(
+    url: str,
+    app_id: str,
+    locale: str = "en-US",
+    availability: dict[str, frozenset[str]] | None = None,
+) -> str:
     parsed = urllib.parse.urlsplit(html.unescape(url))
+    path = re.fullmatch(r"/(?:[a-z]{2}/)?app/id(\d+)", parsed.path)
     if (
         parsed.scheme != "https"
         or parsed.netloc != "apps.apple.com"
-        or parsed.path != f"/app/id{app_id}"
+        or path is None
+        or path.group(1) != app_id
+        or parsed.fragment
+        or locale not in OFFICIAL_LOCALE_SET
     ):
         raise ValueError(f"Invalid decision-card App Store URL: {url}")
-    return urllib.parse.urlunsplit(
-        parsed._replace(query=urllib.parse.urlencode({"ct": "iag_decision"}))
+    parameters = urllib.parse.parse_qs(
+        parsed.query,
+        keep_blank_values=True,
+        strict_parsing=False,
+    )
+    provider_values = parameters.get("pt", [])
+    if len(provider_values) > 1:
+        raise ValueError(f"Invalid decision-card provider token: {url}")
+    canonical = f"https://apps.apple.com/app/id{app_id}"
+    destination = verified_app_store_url(
+        canonical,
+        locale,
+        availability or {},
+    )
+    return campaign_app_store_url(
+        destination,
+        "iag_decision",
+        provider_token=provider_values[0] if provider_values else None,
     )
 
 
-def _store_link(source: str, app_id: str) -> tuple[str, str]:
+def _store_link(
+    source: str,
+    app_id: str,
+    locale: str,
+    availability: dict[str, frozenset[str]],
+) -> tuple[str, str]:
     for anchor in ANCHOR_RE.finditer(source):
         href_match = HREF_RE.search(anchor.group("attrs"))
         if not href_match:
             continue
         href = html.unescape(href_match.group("href"))
         try:
-            campaign = _campaign_url(href, app_id)
+            campaign = _campaign_url(href, app_id, locale, availability)
         except ValueError:
             continue
         label = _plain_text(anchor.group("label"))
@@ -359,21 +396,38 @@ def _storefront_fact(source: str, answer: bool) -> dict[str, object] | None:
             or int(rating_count) <= 0
         ):
             raise ValueError("Invalid verified App Store rating")
-        result.update(
-            {
-                "rating_value": rating_value,
-                "rating_count": int(rating_count),
-            }
-        )
+        candidate = {
+            "rating_value": float(rating_value),
+            "rating_count": int(rating_count),
+        }
+        if has_trusted_promotional_rating(candidate):
+            result.update(
+                {
+                    "rating_value": rating_value,
+                    "rating_count": int(rating_count),
+                }
+            )
     return result
 
 
-def _page_content(source: str, key: str, app_id: str, answer: bool) -> dict[str, object]:
+def _page_content(
+    source: str,
+    key: str,
+    app_id: str,
+    answer: bool,
+    locale: str = "en-US",
+    availability: dict[str, frozenset[str]] | None = None,
+) -> dict[str, object]:
     heading = H1_RE.search(source)
     promise_match = LEAD_RE.search(source) if answer else TAGLINE_RE.search(source)
     if not heading or not promise_match:
         raise ValueError(f"Decision-card target has no usable heading/promise for {key}")
-    store_url, cta = _store_link(source, app_id)
+    store_url, cta = _store_link(
+        source,
+        app_id,
+        locale,
+        availability or {},
+    )
     promise = _plain_text(promise_match.group(1))
     if answer and promise.lower().startswith("a practical buying guide for"):
         outcome = " ".join(str(APPS[key].get("sub", "")).split()).rstrip(".")
@@ -496,6 +550,8 @@ def ensure_card(
     app_id: str,
     pages: Path,
     site: str = SITE,
+    *,
+    availability: dict[str, frozenset[str]] | None = None,
 ) -> bool:
     source = path.read_text(encoding="utf-8")
     cleaned = CARD_RE.sub("\n", STYLE_RE.sub("\n", source))
@@ -503,7 +559,20 @@ def ensure_card(
     icon = pages / "stories" / "img" / f"{key}-icon.jpg"
     if not icon.is_file():
         raise ValueError(f"Decision-card icon is missing: {icon}")
-    content = _page_content(cleaned, key, app_id, answer)
+    locale = gen_smart_app_banners._page_language(path, pages)
+    locale = "en-US" if locale == "en" else locale
+    if locale not in OFFICIAL_LOCALE_SET:
+        raise ValueError(f"Unsupported decision-card locale: {locale}")
+    content = _page_content(
+        cleaned,
+        key,
+        app_id,
+        answer,
+        locale,
+        availability
+        if availability is not None
+        else load_storefront_availability(pages),
+    )
     updated = _inject_style(cleaned, style_block(site))
     updated = _inject_card(updated, card_block(key, app_id, content), answer)
     return _write_if_changed(path, updated)
@@ -547,11 +616,21 @@ def generate(
         elif path.stem == key and path.parent.name != "guides":
             eligible[path] = (key, str(app_id))
 
+    availability = load_storefront_availability(pages)
     changed = int(_write_if_changed(pages / ASSET_RELATIVE, STYLESHEET))
     for path, (key, app_id) in sorted(
         eligible.items(), key=lambda item: str(item[0])
     ):
-        changed += int(ensure_card(path, key, app_id, pages, site))
+        changed += int(
+            ensure_card(
+                path,
+                key,
+                app_id,
+                pages,
+                site,
+                availability=availability,
+            )
+        )
 
     managed = (
         gen_smart_app_banners._answer_pages(pages)

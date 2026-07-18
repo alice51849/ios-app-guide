@@ -26,6 +26,10 @@ sys.path.insert(0, str(HERE))
 from appstore_live import live_app_keys  # noqa: E402
 from app_store_storefronts import (  # noqa: E402
     LOCALE_STOREFRONTS,
+    PROMOTIONAL_RATING_MIN_COUNT,
+    PROMOTIONAL_RATING_MIN_VALUE,
+    campaign_app_store_url,
+    has_trusted_promotional_rating,
     load_storefront_availability,
     load_storefront_details,
     localized_storefront_detail,
@@ -43,8 +47,8 @@ SITE = os.environ.get(
 CARD_SIZE = (1200, 675)
 POSTER_SIZE = (450, 600)
 # One vote is too noisy to promote as social proof.
-SOCIAL_RATING_MIN_VALUE = 4.0
-SOCIAL_RATING_MIN_COUNT = 2
+SOCIAL_RATING_MIN_VALUE = PROMOTIONAL_RATING_MIN_VALUE
+SOCIAL_RATING_MIN_COUNT = PROMOTIONAL_RATING_MIN_COUNT
 SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
 OPEN_GRAPH_LOCALES = {
     "ar-SA": "ar_SA",
@@ -257,22 +261,7 @@ def render_card(poster_path: Path) -> bytes:
 
 
 def _campaign_store_url(store_url: str, campaign: str) -> str:
-    parsed = urllib.parse.urlparse(store_url)
-    if (
-        parsed.scheme != "https"
-        or parsed.netloc != "apps.apple.com"
-        or not re.fullmatch(r"/(?:[a-z]{2}/)?app/id\d+", parsed.path)
-        or not re.fullmatch(r"[a-z0-9_]{1,30}", campaign)
-    ):
-        raise ValueError(
-            f"Invalid App Store campaign target: {store_url} / {campaign}"
-        )
-    return urllib.parse.urlunparse(
-        parsed._replace(
-            query=urllib.parse.urlencode({"ct": campaign}),
-            fragment="",
-        )
-    )
+    return campaign_app_store_url(store_url, campaign)
 
 
 def _oembed_campaign(locale: str) -> str:
@@ -319,12 +308,7 @@ def _storefront_proof(storefront: dict[str, object] | None) -> str:
 
 
 def _has_social_rating(storefront: dict[str, object]) -> bool:
-    return (
-        "rating_value" in storefront
-        and "rating_count" in storefront
-        and float(storefront["rating_value"]) >= SOCIAL_RATING_MIN_VALUE
-        and int(storefront["rating_count"]) >= SOCIAL_RATING_MIN_COUNT
-    )
+    return has_trusted_promotional_rating(storefront)
 
 
 def _social_description(

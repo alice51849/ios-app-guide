@@ -10,6 +10,13 @@ from pathlib import Path
 import re
 import urllib.parse
 
+from app_store_storefronts import (
+    APP_STORE_PATH_RE,
+    CAMPAIGN_TOKEN_RE,
+    LOCALE_STOREFRONTS,
+    PROVIDER_TOKEN_RE,
+)
+import gen_mobile_store_ctas
 import gen_smart_app_banners
 from appstore_live import live_app_keys
 from videogen.registry import APPSTORE
@@ -76,10 +83,43 @@ SCRIPT_TEMPLATE = """\
 
   const script = document.querySelector("script[data-app-store-share]");
   const appId = script && script.dataset.appStoreShare;
-  if (!appId || !/^\\d+$/.test(appId)) return;
+  const rawUrl = script && script.dataset.appStoreUrl;
+  if (!appId || !/^\\d+$/.test(appId) || !rawUrl) return;
   if (typeof navigator.share !== "function") return;
 
-  const url = `https://apps.apple.com/app/id${appId}`;
+  let store;
+  try {
+    store = new URL(rawUrl);
+    const path = store.pathname.match(
+      /^\\/(?:[a-z]{2}\\/)?app\\/id([0-9]{9,12})$/i
+    );
+    const parameters = [...store.searchParams.entries()];
+    if (
+      store.protocol !== "https:" ||
+      store.hostname !== "apps.apple.com" ||
+      store.username ||
+      store.password ||
+      store.port ||
+      !path ||
+      path[1] !== appId ||
+      store.hash ||
+      parameters.some(([key, value]) =>
+        key === "ct"
+          ? !/^[A-Za-z0-9_]{1,30}$/.test(value)
+          : key === "pt"
+          ? !/^[A-Za-z0-9]+$/.test(value)
+          : true
+      ) ||
+      parameters.some(
+        ([key], index) =>
+          parameters.findIndex(([candidate]) => candidate === key) !== index
+      )
+    ) throw new TypeError("Invalid direct App Store share URL.");
+  } catch (error) {
+    console.error("App Store share URL is invalid.", error);
+    return;
+  }
+  const url = store.href;
   const payload = { url };
   if (
     typeof navigator.canShare === "function" &&
@@ -179,11 +219,53 @@ def asset_href(site: str = SITE) -> str:
     return f"{parsed.path.rstrip('/')}/assets/{ASSET_NAME}"
 
 
-def share_block(app_id: str, script_href: str | None = None) -> str:
+def _validated_store_url(value: str, app_id: str) -> str:
+    parsed = urllib.parse.urlsplit(html.unescape(value))
+    path = APP_STORE_PATH_RE.fullmatch(parsed.path)
+    country = path.group("country") if path else None
+    parameters = urllib.parse.parse_qs(
+        parsed.query,
+        keep_blank_values=True,
+        strict_parsing=False,
+    )
+    if (
+        parsed.scheme != "https"
+        or parsed.netloc != "apps.apple.com"
+        or path is None
+        or path.group("app_id") != app_id
+        or parsed.fragment
+        or (
+            country is not None
+            and country not in set(LOCALE_STOREFRONTS.values())
+        )
+        or set(parameters) - {"ct", "pt"}
+        or any(len(values) != 1 for values in parameters.values())
+        or (
+            "ct" in parameters
+            and CAMPAIGN_TOKEN_RE.fullmatch(parameters["ct"][0]) is None
+        )
+        or (
+            "pt" in parameters
+            and PROVIDER_TOKEN_RE.fullmatch(parameters["pt"][0]) is None
+        )
+    ):
+        raise ValueError(f"Invalid direct App Store share URL: {value!r}")
+    return urllib.parse.urlunsplit(parsed)
+
+
+def share_block(
+    app_id: str,
+    script_href: str | None = None,
+    *,
+    store_url: str | None = None,
+) -> str:
     if not re.fullmatch(r"\d+", app_id):
         raise ValueError(f"Invalid App Store share app ID: {app_id}")
     if script_href is None:
         script_href = asset_href()
+    if store_url is None:
+        store_url = f"https://apps.apple.com/app/id{app_id}"
+    store_url = _validated_store_url(store_url, app_id)
     if not script_href.startswith("/") or any(
         char in script_href for char in "\"'<>"
     ):
@@ -193,23 +275,36 @@ def share_block(app_id: str, script_href: str | None = None) -> str:
             BLOCK_START,
             (
                 f'<script src="{html.escape(script_href, quote=True)}" '
-                f'data-app-store-share="{app_id}" defer></script>'
+                f'data-app-store-share="{app_id}" '
+                f'data-app-store-url="{html.escape(store_url, quote=True)}" '
+                "defer></script>"
             ),
             BLOCK_END,
         )
     )
 
 
-def ensure_share(path: Path, app_id: str, script_href: str | None = None) -> bool:
+def ensure_share(
+    path: Path,
+    app_id: str,
+    script_href: str | None = None,
+    *,
+    store_url: str | None = None,
+) -> bool:
     source = path.read_text(encoding="utf-8")
     if "</body>" not in source:
         raise ValueError(f"App Store share page has no closing body: {path}")
+    if store_url is None:
+        cta = gen_mobile_store_ctas.app_store_cta(source, app_id)
+        if cta is None:
+            raise ValueError(f"App Store share page has no direct CTA: {path}")
+        store_url = cta[0]
     cleaned = BLOCK_RE.sub("\n", source)
     body_index = cleaned.index("</body>")
     updated = (
         cleaned[:body_index].rstrip()
         + "\n"
-        + share_block(app_id, script_href)
+        + share_block(app_id, script_href, store_url=store_url)
         + "\n"
         + cleaned[body_index:].lstrip()
     )
@@ -250,9 +345,26 @@ def generate(
     installed: set[Path] = set()
     installed_ids: set[str] = set()
     for path, app_id in sorted(share_targets.items()):
-        changed += int(ensure_share(path, app_id, script_href))
+        source = path.read_text(encoding="utf-8")
+        cta = gen_mobile_store_ctas.app_store_cta(source, app_id)
+        if cta is None:
+            raise ValueError(f"App Store share page has no direct CTA: {path}")
+        store_url = cta[0]
+        changed += int(
+            ensure_share(
+                path,
+                app_id,
+                script_href,
+                store_url=store_url,
+            )
+        )
         block = BLOCK_RE.search(path.read_text(encoding="utf-8"))
-        if block and f'data-app-store-share="{app_id}"' in block.group(0):
+        expected = share_block(
+            app_id,
+            script_href,
+            store_url=store_url,
+        )
+        if block and block.group(0).strip() == expected:
             installed.add(path)
             installed_ids.add(app_id)
 

@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-17",
-  "content_digest": "4e99db851f906d3388cafc6741d35b6875252bd66ddc4ac3c0392937f383b93c",
+  "date_modified": "2026-07-18",
+  "content_digest": "b9fa7db28aefb0f1718d576f2fe047d3d05db695f7e30b96c5a0a063376b1422",
   "locale": "pt-BR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 26,
+  "record_count": 28,
   "apps": [
     {
       "key": "aim990",
@@ -157,6 +157,47 @@
         "currency": "BRL",
         "formatted_price": "Grátis",
         "storefront_url": "https://apps.apple.com/br/app/id6782251621"
+      }
+    },
+    {
+      "key": "dailymate",
+      "app_store_id": "6790418321",
+      "name": "DailyMate: idiomas em contexto",
+      "summary": "Idioma de verdade se aprende com frases completas, não decorando palavras soltas. O DailyMate reúne 8.400 frases práticas em 47 idiomas de aprendizado, divididas em 14 temas do dia a dia e 84 situações reais. Uma única compra dá acesso ao app completo. Sem assinatura.",
+      "category": "education",
+      "search_terms": [
+        "inglês",
+        "espanhol",
+        "francês",
+        "alemão",
+        "italiano",
+        "japonês",
+        "coreano",
+        "conversação",
+        "pronúncia",
+        "viagem",
+        "falar",
+        "ouvir"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/app/id6790418321?ct=iag_api_pt_br",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/dailymate.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "79.9",
+        "currency": "BRL",
+        "formatted_price": "R$ 79,90",
+        "storefront_url": "https://apps.apple.com/br/app/id6790418321"
       }
     },
     {
@@ -1267,6 +1308,46 @@
         "currency": "BRL",
         "formatted_price": "Grátis",
         "storefront_url": "https://apps.apple.com/br/app/id6782139553"
+      }
+    },
+    {
+      "key": "tripbeelite",
+      "app_store_id": "6791299610",
+      "name": "TripBee Lite: Roteiro viagem",
+      "summary": "Dê atenção total à próxima viagem. TripBee Lite é um planejador tranquilo e refinado, criado em torno de uma única viagem ativa.",
+      "category": "travel",
+      "search_terms": [
+        "viagem",
+        "roteiro",
+        "férias",
+        "mala",
+        "planejador",
+        "passagens",
+        "lembretes",
+        "hotel",
+        "voo",
+        "checklist",
+        "offline"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6791299610?ct=iag_api_pt_br",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/tripbeelite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6791299610"
       }
     },
     {

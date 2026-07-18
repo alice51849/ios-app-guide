@@ -16,6 +16,7 @@ CURRENT_LIVE_APPS = {
     "aim990",
     "cvdesk",
     "cyca",
+    "dailymate",
     "gmoney",
     "hourstag",
     "lockhour",
@@ -36,6 +37,7 @@ CURRENT_LIVE_APPS = {
     "snapport",
     "sononote",
     "tripbee",
+    "tripbeelite",
     "tripplanet",
     "unblurry",
     "wordmate",
@@ -230,7 +232,7 @@ class PersonaLocaleCoverageTests(unittest.TestCase):
                 "id",
                 "Pelacakan goresan melalui pelacakan dan permainan; Widget Home "
                 "Screen; white noise; timer; unlock",
-                "Menebalkan goresan melalui menelusuri dan permainan; Alat mini "
+                "Menebalkan goresan melalui menelusuri dan permainan; Widget "
                 "Layar Utama; derau putih; pengatur waktu; buka kunci",
             ),
             (

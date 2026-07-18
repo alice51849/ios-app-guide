@@ -31,7 +31,7 @@ from official_locales import (  # noqa: E402
     require_official_locale_coverage,
 )
 
-PAGES = HERE / "pages"
+PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
 SITE = os.environ.get(
     "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
 ).rstrip("/")

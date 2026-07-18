@@ -20,7 +20,12 @@ from typing import Any
 from official_locales import OFFICIAL_LOCALES
 
 
-ROOT = Path(__file__).resolve().parent / "pages"
+ROOT = Path(
+    os.environ.get(
+        "GEO_PAGES",
+        Path(__file__).resolve().parent / "pages",
+    )
+).resolve()
 ANSWERS = ROOT / "answers"
 BASE_URL = "https://alice51849.github.io/ios-app-guide"
 OLLAMA_ENDPOINT = os.environ.get(
@@ -83,6 +88,8 @@ BRANDS = [
     "Lumi Bopomofo Pro",
     "Lumi Trip Planet",
     "Wordmate",
+    "DailyMate",
+    "TripBee Lite",
 ]
 NATIVE_SCRIPT_RANGES = {
     "ar-SA": ((0x0600, 0x06FF), (0x0750, 0x077F)),
@@ -461,6 +468,112 @@ LOCALE_TEXT_OVERRIDES = {
         "TripBee Pro: Trip Planner": "TripBee Pro: سفر کا منصوبہ ساز",
     },
 }
+_DAILYMATE_QUERY = (
+    "best practical language phrase app for travelers with apple watch"
+)
+_TRIPBEE_LITE_QUERY = (
+    "best simple trip planner app for one upcoming trip iphone"
+)
+_REVIEWED_NEW_APP_QUERIES = {
+    "ca": {
+        "daily": "millor app de frases útils per viatjar amb Apple Watch",
+        "trip": "millor app senzilla per planificar un viatge a l'iPhone",
+        "how": "Com triar: {query}",
+        "title": "{query}: guia honesta per triar apps per a iPhone",
+    },
+    "es-ES": {
+        "daily": "mejor app de frases útiles para viajar con Apple Watch",
+        "trip": "mejor app sencilla para planificar un viaje en iPhone",
+        "how": "Cómo elegir: {query}",
+        "title": "{query}: guía honesta para elegir apps para iPhone",
+    },
+    "es-MX": {
+        "daily": "mejor app de frases útiles para viajar con Apple Watch",
+        "trip": "mejor app sencilla para planear un viaje en iPhone",
+        "how": "Cómo elegir: {query}",
+        "title": "{query}: guía honesta para elegir apps para iPhone",
+    },
+    "fr-CA": {
+        "daily": (
+            "meilleure application de phrases utiles en voyage avec Apple Watch"
+        ),
+        "trip": (
+            "meilleure application simple pour planifier un voyage sur iPhone"
+        ),
+        "how": "Comment choisir : {query}",
+        "title": "{query} : guide d’achat transparent pour iPhone",
+    },
+    "fr-FR": {
+        "daily": (
+            "meilleure application de phrases utiles en voyage avec Apple Watch"
+        ),
+        "trip": (
+            "meilleure application simple pour planifier un voyage sur iPhone"
+        ),
+        "how": "Comment choisir : {query}",
+        "title": "{query} : guide d’achat transparent pour iPhone",
+    },
+    "it": {
+        "daily": (
+            "migliore app di frasi utili in viaggio con Apple Watch"
+        ),
+        "trip": "migliore app semplice per organizzare un viaggio su iPhone",
+        "how": "Come scegliere: {query}",
+        "title": (
+            "{query}: guida trasparente all'acquisto di app per iPhone"
+        ),
+    },
+    "pt-BR": {
+        "daily": (
+            "melhor app de frases úteis para viagens com Apple Watch"
+        ),
+        "trip": "melhor app simples para planejar uma viagem no iPhone",
+        "how": "Como escolher: {query}",
+        "title": (
+            "{query}: guia transparente para escolher apps para iPhone"
+        ),
+    },
+    "pt-PT": {
+        "daily": (
+            "melhor aplicação de frases úteis para viajar com Apple Watch"
+        ),
+        "trip": (
+            "melhor aplicação simples para planear uma viagem no iPhone"
+        ),
+        "how": "Como escolher: {query}",
+        "title": (
+            "{query}: guia transparente para escolher aplicações para iPhone"
+        ),
+    },
+    "ro": {
+        "daily": (
+            "cea mai bună aplicație cu fraze utile pentru călătorii și Apple Watch"
+        ),
+        "trip": (
+            "cea mai bună aplicație simplă pentru planificarea unei călătorii "
+            "pe iPhone"
+        ),
+        "how": "Cum alegi: {query}",
+        "title": (
+            "{query}: ghid transparent pentru alegerea aplicațiilor iPhone"
+        ),
+    },
+}
+for _locale, _copy in _REVIEWED_NEW_APP_QUERIES.items():
+    _overrides = LOCALE_TEXT_OVERRIDES.setdefault(_locale, {})
+    for _source, _target_key in (
+        (_DAILYMATE_QUERY, "daily"),
+        (_TRIPBEE_LITE_QUERY, "trip"),
+    ):
+        _query = _copy[_target_key]
+        _overrides[_source] = _query
+        _overrides[f"How to choose: {_source}"] = _copy["how"].format(
+            query=_query
+        )
+        _overrides[
+            f"{_source}: honest iPhone app buying guide"
+        ] = _copy["title"].format(query=_query)
+
 LOCALE_TARGET_REPLACEMENTS = {
     "gu-IN": (("નિષ્ઠાવાન", "પ્રામાણિક"),),
     "id": (
@@ -649,6 +762,66 @@ LOCALE_TARGET_REPLACEMENTS = {
         ("計劃", "計畫"),
     ),
 }
+_REVIEWED_TARGET_REPLACEMENTS = {
+    "da": (
+        ("familiekontent", "familieindhold"),
+        ("forudbetaling", "engangsbetaling"),
+    ),
+    "el": (
+        (
+            "8.400 πρακτικές φράσεις; 47 γλώσσες μάθησης; "
+            "Widget + Apple Watch; Πληρώστε μία φορά; Χωρίς συνδρομή",
+            "8.400 πρακτικές φράσεις, 47 γλώσσες μάθησης, "
+            "Widget + Apple Watch, Πληρώστε μία φορά, Χωρίς συνδρομή",
+        ),
+        (
+            "Ένα ολοκληρωμένο ταξίδι δωρεάν; "
+            "Ξεκλείδωμα premium μίας φοράς; Χωρίς συνδρομή; "
+            "Χωρίς λογαριασμό; Χωρίς διαφημίσεις ή παρακολούθηση",
+            "Ένα ολοκληρωμένο ταξίδι δωρεάν, "
+            "Ξεκλείδωμα premium μίας φοράς, Χωρίς συνδρομή, "
+            "Χωρίς λογαριασμό, Χωρίς διαφημίσεις ή παρακολούθηση",
+        ),
+    ),
+    "fi": (
+        ("kertalukituksen", "kerta-avauksen"),
+        ("kertalukitusta", "kerta-avausta"),
+        ("kertalukitus", "kerta-avaus"),
+    ),
+    "he": (
+        (
+            "המוציא לאור מהמתכנת",
+            "המוציא לאור מאת מפתח האפליקציה",
+        ),
+        ("לא צורכת", "שאינה מתכלה"),
+    ),
+    "id": (
+        ("Alat mini", "Widget"),
+        ("alat mini", "widget"),
+        ("non-konsumsi", "tidak habis pakai"),
+    ),
+    "ml-IN": (("ആവശ്യമാണ吗?", "ആവശ്യമാണോ?"),),
+    "ms": (
+        ("bukan penggunaan", "tidak habis guna"),
+        ("Eksport / kunci masuk", "Eksport / pergantungan vendor"),
+    ),
+    "nl-NL": (("gezinsinhoud", "familiegegevens"),),
+    "no": (
+        ("engangslåsen", "engangsopplåsingen"),
+        ("engangslås", "engangsopplåsing"),
+        ("forhåndsbetaling", "engangsbetaling"),
+    ),
+    "or-IN": (
+        ("କି subscription ଅଛି?", "କୌଣସି ସଦସ୍ୟତା ଅଛି କି?"),
+        ("subscription", "ସଦସ୍ୟତା"),
+    ),
+    "sv": (("köp i förväg", "engångsköp"),),
+}
+for _locale, _replacements in _REVIEWED_TARGET_REPLACEMENTS.items():
+    LOCALE_TARGET_REPLACEMENTS[_locale] = (
+        *LOCALE_TARGET_REPLACEMENTS.get(_locale, ()),
+        *_replacements,
+    )
 NO_TRANSLATE_JSON_KEYS = {
     "@context",
     "@type",
@@ -1688,9 +1861,9 @@ def main() -> int:
                             )
                         )
                     )
-                    mapping = apply_locale_text_overrides(mapping, lang)
-                    require_complete_mapping(strings, mapping, slug, lang)
-                    require_translation_quality(strings, mapping, slug, lang)
+                mapping = apply_locale_text_overrides(mapping, lang)
+                require_complete_mapping(strings, mapping, slug, lang)
+                require_translation_quality(strings, mapping, slug, lang)
                 localized = render_localized(source, lang, slug, mapping)
                 target.parent.mkdir(parents=True, exist_ok=True)
                 target.write_text(localized, encoding="utf-8")

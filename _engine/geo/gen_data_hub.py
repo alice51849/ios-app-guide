@@ -28,10 +28,14 @@ from pathlib import Path
 
 from family_travel_dataset import build as build_family_travel_dataset
 from official_locales import OFFICIAL_LOCALES
-from publisher_intent_catalog import build as build_publisher_intent_catalog
+from publisher_intent_catalog import (
+    EXPECTED_APP_COUNT as PUBLISHER_INTENT_APP_COUNT,
+    EXPECTED_RECORD_COUNT as PUBLISHER_INTENT_RECORD_COUNT,
+    build as build_publisher_intent_catalog,
+)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-PAGES = os.path.join(HERE, "pages")
+PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 DATA = os.path.join(PAGES, "data")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
 TODAY = _dt.date.today().isoformat()
@@ -1555,12 +1559,16 @@ def main():
         "slug": publisher_intent_slug,
         "name": "Lumi Studio Publisher Search Intent Catalog",
         "blurb": (
-            "First-party decision contexts for 26 verified live iOS apps "
+            "First-party decision contexts for "
+            f"{PUBLISHER_INTENT_APP_COUNT} verified live iOS apps "
             "across all 50 Apple locales, with direct guides and attributed "
             "App Store paths. Editorial use cases only: not measured search "
             "volume, rankings, independent reviews, or endorsements."
         ),
-        "tag": "1,300 records · 26 apps · 50 locales",
+        "tag": (
+            f"{PUBLISHER_INTENT_RECORD_COUNT:,} records · "
+            f"{PUBLISHER_INTENT_APP_COUNT} apps · 50 locales"
+        ),
         "localized_locales": list(OFFICIAL_LOCALES),
         "distributions": [
             {

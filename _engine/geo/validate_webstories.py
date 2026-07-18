@@ -22,7 +22,7 @@ from build_pages_i18n import RTL, base_lang, get_ui  # noqa: E402
 from gen_webstories_i18n import validated_localizations  # noqa: E402
 from official_locales import OFFICIAL_LOCALES  # noqa: E402
 
-PAGES = HERE / "pages"
+PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
 SITE = os.environ.get(
     "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
 ).rstrip("/")

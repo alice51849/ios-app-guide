@@ -20,7 +20,7 @@ import gen_feed  # noqa: E402
 import gen_mobile_app_identity  # noqa: E402
 from videogen.registry import APPS, APPSTORE  # noqa: E402
 
-PAGES = os.path.join(HERE, "pages")
+PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
 SITEMAP_NAME = "sitemap_apps.xml"
 SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9"

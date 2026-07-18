@@ -12,7 +12,7 @@ import os, sys, html, json, time
 from pathlib import Path
 
 HERE = Path(os.path.dirname(os.path.abspath(__file__)))
-PAGES = HERE / "pages"
+PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
 sys.path.insert(0, str(HERE.parent / "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402

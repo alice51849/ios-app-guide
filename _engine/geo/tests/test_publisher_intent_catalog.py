@@ -123,6 +123,25 @@ class PublisherIntentLocalizationTests(unittest.TestCase):
             self.assertLessEqual(len(token), 30)
             self.assertRegex(token, r"^[a-z0-9_]+$")
 
+    def test_dynamic_counts_preserve_localized_numerals(self) -> None:
+        arabic_digits = str.maketrans("0123456789,", "٠١٢٣٤٥٦٧٨٩٬")
+        record_count = f"{catalog.EXPECTED_RECORD_COUNT:,}".translate(
+            arabic_digits
+        )
+        app_count = str(catalog.EXPECTED_APP_COUNT).translate(arabic_digits)
+        self.assertEqual(
+            f"{record_count} سجل: {app_count} تطبيقًا × ٥٠ إعدادًا.",
+            catalog._replace_localized_number(
+                catalog._replace_localized_number(
+                    "١٬٣٠٠ سجل: ٢٦ تطبيقًا × ٥٠ إعدادًا.",
+                    1300,
+                    catalog.EXPECTED_RECORD_COUNT,
+                ),
+                26,
+                catalog.EXPECTED_APP_COUNT,
+            ),
+        )
+
 
 class PublisherIntentOutputTests(unittest.TestCase):
     @classmethod
@@ -155,9 +174,15 @@ class PublisherIntentOutputTests(unittest.TestCase):
         cls.records = cls.payload["records"]
 
     def test_records_cover_every_app_and_locale_truthfully(self) -> None:
-        self.assertEqual(26, self.payload["app_count"])
+        self.assertEqual(
+            catalog.EXPECTED_APP_COUNT,
+            self.payload["app_count"],
+        )
         self.assertEqual(50, self.payload["locale_count"])
-        self.assertEqual(1300, self.payload["record_count"])
+        self.assertEqual(
+            catalog.EXPECTED_RECORD_COUNT,
+            self.payload["record_count"],
+        )
         self.assertEqual(list(OFFICIAL_LOCALES), self.payload["locales"])
         self.assertFalse(self.payload["measured_search_volume"])
         self.assertFalse(self.payload["is_ranking"])
@@ -173,7 +198,7 @@ class PublisherIntentOutputTests(unittest.TestCase):
             app["key"]: str(app["app_store_id"])
             for app in finder["apps"]
         }
-        self.assertEqual(26, len(expected_ids))
+        self.assertEqual(catalog.EXPECTED_APP_COUNT, len(expected_ids))
         per_app: dict[str, set[str]] = {
             key: set() for key in expected_ids
         }
@@ -224,7 +249,7 @@ class PublisherIntentOutputTests(unittest.TestCase):
                 record["canonical_guide_url"]
             ).path.removeprefix("/ios-app-guide/")
             self.assertTrue(guide_path.is_file(), guide_path)
-        self.assertEqual(1300, len(record_ids))
+        self.assertEqual(catalog.EXPECTED_RECORD_COUNT, len(record_ids))
         for locales in per_app.values():
             self.assertEqual(set(OFFICIAL_LOCALES), locales)
 
@@ -242,7 +267,7 @@ class PublisherIntentOutputTests(unittest.TestCase):
             self.data_dir / f"{catalog.SLUG}.csv"
         ).open(encoding="utf-8", newline="") as handle:
             csv_records = list(csv.DictReader(handle))
-        self.assertEqual(1300, len(csv_records))
+        self.assertEqual(catalog.EXPECTED_RECORD_COUNT, len(csv_records))
         self.assertEqual(
             [record["record_id"] for record in self.records],
             [record["record_id"] for record in csv_records],
@@ -267,9 +292,15 @@ class PublisherIntentOutputTests(unittest.TestCase):
         properties = schema["properties"]
         self.assertEqual(False, properties["measured_search_volume"]["const"])
         self.assertEqual(False, properties["is_ranking"]["const"])
-        self.assertEqual(26, properties["app_count"]["const"])
+        self.assertEqual(
+            catalog.EXPECTED_APP_COUNT,
+            properties["app_count"]["const"],
+        )
         self.assertEqual(50, properties["locale_count"]["const"])
-        self.assertEqual(1300, properties["record_count"]["const"])
+        self.assertEqual(
+            catalog.EXPECTED_RECORD_COUNT,
+            properties["record_count"]["const"],
+        )
         record_properties = properties["records"]["items"]["properties"]
         self.assertEqual(
             False,
@@ -310,12 +341,15 @@ class PublisherIntentOutputTests(unittest.TestCase):
                 flags=re.DOTALL,
             )
             self.assertIsNotNone(table_body)
-            self.assertEqual(26, table_body.group(1).count("<tr>"))
+            self.assertEqual(
+                catalog.EXPECTED_APP_COUNT,
+                table_body.group(1).count("<tr>"),
+            )
             store_urls = re.findall(
                 r'href="(https://apps\.apple\.com/app/id[0-9]+\?ct=[^"]+)"',
                 table_body.group(1),
             )
-            self.assertEqual(26, len(store_urls))
+            self.assertEqual(catalog.EXPECTED_APP_COUNT, len(store_urls))
             expected_campaign = catalog.campaign_token(
                 "en-US" if locale == "en" else locale
             )

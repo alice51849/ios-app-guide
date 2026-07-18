@@ -14,6 +14,7 @@ import os
 from pathlib import Path
 import re
 from typing import Any, Iterator
+import unicodedata
 from urllib.parse import urlencode
 
 from answer_personas import PERSONAS
@@ -21,7 +22,7 @@ from official_locales import OFFICIAL_LOCALES
 
 
 HERE = Path(__file__).resolve().parent
-PAGES = HERE / "pages"
+PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
 SITE = os.environ.get(
     "GEO_SITE",
     "https://alice51849.github.io/ios-app-guide",
@@ -32,8 +33,10 @@ FINDER_DATASET = "verified-ios-app-finder-catalog.json"
 LICENSE_URL = "https://creativecommons.org/licenses/by/4.0/"
 TODAY_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
 RTL_LOCALES = frozenset({"ar-SA", "he", "ur-PK"})
-EXPECTED_APP_COUNT = 26
-EXPECTED_LOCALE_COUNT = 50
+BASE_APP_COUNT = 26
+BASE_RECORD_COUNT = 1300
+EXPECTED_APP_COUNT = len(PERSONAS)
+EXPECTED_LOCALE_COUNT = len(OFFICIAL_LOCALES)
 EXPECTED_RECORD_COUNT = EXPECTED_APP_COUNT * EXPECTED_LOCALE_COUNT
 
 NAME = "Lumi Studio Publisher Search Intent Catalog"
@@ -111,6 +114,79 @@ def slugify(value: str) -> str:
 def single_line(value: str) -> str:
     value = html.unescape(re.sub(r"<[^>]+>", "", value))
     return " ".join(value.split())
+
+
+def _replace_localized_number(
+    value: str,
+    old: int,
+    new: int,
+) -> str:
+    if old == new:
+        return value
+    separators = frozenset({",", ".", "'", " ", "\u00a0", "\u202f", "\u066c"})
+    spans: list[tuple[int, int]] = []
+    start: int | None = None
+    for index, char in enumerate(value):
+        if unicodedata.category(char) == "Nd":
+            if start is None:
+                start = index
+            continue
+        if start is not None and char in separators:
+            continue
+        if start is not None:
+            spans.append((start, index))
+            start = None
+    if start is not None:
+        spans.append((start, len(value)))
+
+    result = value
+    for start, end in reversed(spans):
+        span = result[start:end].rstrip("".join(separators))
+        end = start + len(span)
+        digits = [
+            char
+            for char in span
+            if unicodedata.category(char) == "Nd"
+        ]
+        normalized = "".join(
+            str(unicodedata.digit(char)) for char in digits
+        )
+        if normalized != str(old):
+            continue
+        replacement_digits = str(new)
+        if len(replacement_digits) != len(digits):
+            raise ValueError(
+                f"Count width changed from {old} to {new}; "
+                "update publisher intent localization templates"
+            )
+        digit_index = 0
+        replacement = []
+        for char in span:
+            if unicodedata.category(char) != "Nd":
+                replacement.append(char)
+                continue
+            zero = ord(char) - unicodedata.digit(char)
+            replacement.append(
+                chr(zero + int(replacement_digits[digit_index]))
+            )
+            digit_index += 1
+        result = result[:start] + "".join(replacement) + result[end:]
+    return result
+
+
+def dynamic_ui(mapping: dict[str, str]) -> dict[str, str]:
+    return {
+        source: _replace_localized_number(
+            _replace_localized_number(
+                target,
+                BASE_RECORD_COUNT,
+                EXPECTED_RECORD_COUNT,
+            ),
+            BASE_APP_COUNT,
+            EXPECTED_APP_COUNT,
+        )
+        for source, target in mapping.items()
+    }
 
 
 def _extract(source: str, pattern: str, field: str) -> str:
@@ -658,6 +734,7 @@ def _page(
     apps: dict[str, dict[str, Any]],
     data_dir: Path,
 ) -> str:
+    ui = dynamic_ui(ui)
     escape = html.escape
     purchase_labels = {
         model: ui[source]

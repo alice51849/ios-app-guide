@@ -8,6 +8,7 @@ from datetime import date, datetime, timezone
 import hashlib
 import html
 import json
+import os
 from pathlib import Path
 import re
 import subprocess
@@ -17,7 +18,7 @@ import xml.etree.ElementTree as ET
 
 
 HERE = Path(__file__).resolve().parent
-PAGES = HERE / "pages"
+PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
 SITE = "https://alice51849.github.io/ios-app-guide"
 STATE_RELATIVE_PATH = Path("_engine/geo/sitemap_lastmod_state.json")
 SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9"

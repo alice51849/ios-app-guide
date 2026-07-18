@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-17",
-  "content_digest": "4e99db851f906d3388cafc6741d35b6875252bd66ddc4ac3c0392937f383b93c",
+  "date_modified": "2026-07-18",
+  "content_digest": "b9fa7db28aefb0f1718d576f2fe047d3d05db695f7e30b96c5a0a063376b1422",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 26,
+  "record_count": 28,
   "apps": [
     {
       "key": "aim990",
@@ -182,6 +182,57 @@
         "rating_value": 5.0,
         "rating_count": 1,
         "storefront_url": "https://apps.apple.com/tw/app/id6782251621"
+      }
+    },
+    {
+      "key": "dailymate",
+      "app_store_id": "6790418321",
+      "name": "DailyMate：用句子學語言",
+      "summary": "學語言不該只背零散單字，而是要從完整句子理解真實用法。DailyMate 收錄 47 種學習語言、8,400 句實用生活會話，依 14 大主題與 84 個具體情境清楚整理。一次付費即可使用完整 App，沒有訂閱。",
+      "category": "education",
+      "search_terms": [
+        "學英文",
+        "英文口說",
+        "旅遊英文",
+        "實用短句",
+        "發音聆聽",
+        "聽力",
+        "學日文",
+        "學韓文",
+        "西班牙文",
+        "法文",
+        "德文",
+        "外語自學",
+        "初學者",
+        "每日練習",
+        "主畫面小工具",
+        "買斷",
+        "旅行用語",
+        "情境對話",
+        "語音聆聽",
+        "日常表達",
+        "例句",
+        "出國"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/app/id6790418321?ct=iag_api_zh_hant",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/dailymate.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "390",
+        "currency": "TWD",
+        "formatted_price": "$390.00",
+        "storefront_url": "https://apps.apple.com/tw/app/id6790418321"
       }
     },
     {
@@ -1555,6 +1606,45 @@
         "rating_value": 5.0,
         "rating_count": 2,
         "storefront_url": "https://apps.apple.com/tw/app/id6782139553"
+      }
+    },
+    {
+      "key": "tripbeelite",
+      "app_store_id": "6791299610",
+      "name": "TripBee Lite：旅程規劃",
+      "summary": "把注意力留給眼前這趟旅行。TripBee Lite 是一款沉著精緻的旅程規劃工具，專為清楚整理單一進行中旅程而設計。",
+      "category": "travel",
+      "search_terms": [
+        "旅程規劃",
+        "行程表",
+        "自由行",
+        "旅遊",
+        "打包清單",
+        "機票",
+        "住宿",
+        "提醒",
+        "行李",
+        "離線"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6791299610?ct=iag_api_zh_hant",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/tripbeelite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6791299610"
       }
     },
     {

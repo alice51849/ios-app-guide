@@ -16,7 +16,7 @@
     ],
     "retirement_rule": "Retire after three consecutive verified misses"
   },
-  "record_count": 26,
+  "record_count": 28,
   "apps": [
     {
       "key": "aim990",
@@ -152,6 +152,53 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
+      "verified_live": true
+    },
+    {
+      "key": "dailymate",
+      "app_store_id": "6790418321",
+      "name": "DailyMate",
+      "category": "education",
+      "category_labels": {
+        "en": "Education",
+        "zh-Hant": "學習"
+      },
+      "summaries": {
+        "en": "Practice 8,400 useful phrases in 47 languages on iPhone, iPad, a Home Screen widget and Apple Watch",
+        "zh-Hant": "學語言不該只背零散單字，而是要從完整句子理解真實用法。DailyMate 收錄 47 種學習語言、8,400 句實用生活會話，依 14 大主題與 84 個具體情境清楚整理。一次付費即可使用完整 App，沒有訂閱。"
+      },
+      "purchase_model": "paid_upfront",
+      "purchase_labels": {
+        "en": "Paid download",
+        "zh-Hant": "付費下載"
+      },
+      "one_time_option": true,
+      "features": [
+        "8,400 practical phrases",
+        "47 learning languages",
+        "Widget + Apple Watch",
+        "Pay once",
+        "No subscription"
+      ],
+      "keywords": [
+        "language phrases",
+        "travel phrases",
+        "complete sentences",
+        "language learning",
+        "home screen widget",
+        "apple watch",
+        "no subscription"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": true,
+        "apple_watch": true
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
       "verified_live": true
     },
     {
@@ -1052,6 +1099,53 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
+      "verified_live": true
+    },
+    {
+      "key": "tripbeelite",
+      "app_store_id": "6791299610",
+      "name": "TripBee Lite",
+      "category": "travel",
+      "category_labels": {
+        "en": "Travel",
+        "zh-Hant": "旅行"
+      },
+      "summaries": {
+        "en": "Give one upcoming journey your full attention. TripBee Lite is a calm, polished travel planner designed around one active trip—not a crowded archive.",
+        "zh-Hant": "把注意力留給眼前這趟旅行。TripBee Lite 是一款沉著精緻的旅程規劃工具，專為清楚整理單一進行中旅程而設計。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "One complete journey free",
+        "One-time premium unlock",
+        "No subscription",
+        "No account",
+        "No ads or tracking"
+      ],
+      "keywords": [
+        "trip planner",
+        "travel itinerary",
+        "one trip planner",
+        "daily travel timeline",
+        "packing list",
+        "offline travel",
+        "no subscription"
+      ],
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6791299610",
       "verified_live": true
     },
     {

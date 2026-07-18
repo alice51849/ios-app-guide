@@ -43,7 +43,7 @@ from official_locales import (  # noqa: E402
     require_official_locale_coverage,
 )
 
-PAGES = os.path.join(HERE, "pages")
+PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 DATA = os.path.join(ROOT, "data")
 SITE = os.environ.get(
     "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
@@ -76,6 +76,8 @@ KEY2DATA = {
     "aim990": "aim990_full.json",
     "wordmate": "wordmate_full.json",
     "mochi": "mochi_full.json",
+    "tripbeelite": "tripbeelite_full.json",
+    "dailymate": "dailymate_full.json",
     "sereno": "sereno_full.json",
     "tripbee": "tripbee_full.json",
     "tripplanet": "tripplanet_full.json",
@@ -970,7 +972,7 @@ def split_keywords(kw):
 
 
 def load_app_locales(key):
-    fn = KEY2DATA.get(key)
+    fn = KEY2DATA.get(key, f"{key}_full.json")
     stored = {}
     if fn:
         path = os.path.join(DATA, fn)

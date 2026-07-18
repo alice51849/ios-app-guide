@@ -1369,6 +1369,100 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         },
     ],
+    "tripbeelite": [
+        {
+            "query": "best simple trip planner app for one upcoming trip iphone",
+            "triggers": [
+                "one upcoming trip",
+                "one active trip",
+                "simple trip planner",
+                "occasional traveler",
+                "first trip plan",
+            ],
+            "persona": "occasional travellers planning one active journey",
+            "lead": "If you are planning one upcoming journey, a calm timeline for that trip is more useful than a crowded archive of every trip you might take someday.",
+            "paras": [
+                "Keep each day, time, place, reminder and ticket reference together in one focused itinerary. The free app saves one complete journey at a time, and you can edit or replace it whenever your plans change.",
+                "If you later need unlimited saved journeys, sharing, backup, restore or smart packing lists, one non-consumable purchase unlocks those features without a subscription.",
+            ],
+            "look": [
+                "One complete journey free with no time limit.",
+                "Clear daily timeline for flights, stays, meals and activities.",
+                "Ticket references, notes, reminders and maps beside each stop.",
+                "No account, ads, analytics or tracking.",
+                "Optional one-time unlock instead of a subscription.",
+            ],
+            "steps": [
+                "Create the one journey you are actively planning.",
+                "Add dates, flights, stays and daily activities.",
+                "Attach the ticket references and reminders you will need.",
+                "Open directions and keep the current day easy to scan.",
+                "Unlock unlimited journeys only if your planning needs grow.",
+            ],
+            "fits": "fits occasional travellers who want one uncluttered active-trip planner free, with an optional lifetime upgrade.",
+            "faq": [
+                {
+                    "q": "Can I plan a complete trip for free?",
+                    "a": "Yes — the free app saves one complete journey at a time, which you can edit or replace without a time limit.",
+                },
+                {
+                    "q": "What does the one-time unlock add?",
+                    "a": "It adds unlimited saved journeys, trip sharing, complete backup and restore, and smart packing lists.",
+                },
+                {
+                    "q": "Does it require an account or subscription?",
+                    "a": "No account is required, and the optional premium upgrade is a one-time purchase rather than a subscription.",
+                },
+            ],
+        },
+    ],
+    "dailymate": [
+        {
+            "query": "best practical language phrase app for travelers with apple watch",
+            "triggers": [
+                "practical language phrase",
+                "travel phrases with apple watch",
+                "complete sentences for travel",
+                "phrases in 47 languages",
+                "real life language phrases",
+            ],
+            "persona": "travellers learning complete phrases for real situations",
+            "lead": "Before a trip, complete phrases for real situations are more useful than isolated vocabulary you still have to assemble under pressure.",
+            "paras": [
+                "DailyMate organises 8,400 practical phrases across 47 learning languages, 14 everyday topics and 84 situations, with beginner, intermediate and advanced language inside each topic.",
+                "Listen with a matching system voice, save useful phrases and keep practising from iPhone, iPad, an interactive Home Screen widget or Apple Watch. It is one paid download with no subscription.",
+            ],
+            "look": [
+                "Complete, practical sentences instead of isolated words.",
+                "Travel-ready topics and real-life situations.",
+                "Matching system pronunciation for the selected language.",
+                "Home Screen widget and Apple Watch access.",
+                "One upfront purchase with no subscription.",
+            ],
+            "steps": [
+                "Choose the language you need for your next trip.",
+                "Open the everyday situation you expect to face.",
+                "Listen to each complete phrase with the matching voice.",
+                "Save the phrases you will need most.",
+                "Review them from the widget or Apple Watch while travelling.",
+            ],
+            "fits": "fits travellers who want complete practical phrases across many languages on iPhone, widgets and Apple Watch.",
+            "faq": [
+                {
+                    "q": "How much phrase content is included?",
+                    "a": "DailyMate includes 8,400 practical phrases across 47 learning languages, 14 topics and 84 real-life situations.",
+                },
+                {
+                    "q": "Can I review phrases without opening a full lesson?",
+                    "a": "Yes — the interactive Home Screen widget and Apple Watch companion support quick phrase review.",
+                },
+                {
+                    "q": "Is there a subscription?",
+                    "a": "No — DailyMate is a paid download with the complete experience included in one purchase.",
+                },
+            ],
+        },
+    ],
 }
 
 

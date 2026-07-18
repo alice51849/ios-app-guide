@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-17",
-  "content_digest": "4e99db851f906d3388cafc6741d35b6875252bd66ddc4ac3c0392937f383b93c",
+  "date_modified": "2026-07-18",
+  "content_digest": "b9fa7db28aefb0f1718d576f2fe047d3d05db695f7e30b96c5a0a063376b1422",
   "locale": "th",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 26,
+  "record_count": 28,
   "apps": [
     {
       "key": "aim990",
@@ -154,6 +154,48 @@
         "currency": "THB",
         "formatted_price": "ฟรี",
         "storefront_url": "https://apps.apple.com/th/app/id6782251621"
+      }
+    },
+    {
+      "key": "dailymate",
+      "app_store_id": "6790418321",
+      "name": "DailyMate: ประโยคใช้จริง",
+      "summary": "จำศัพท์ได้ แต่พอถึงเวลาพูดกลับนึกประโยคไม่ออกใช่ไหม DailyMate ช่วยให้คุณเรียน 47 ภาษาผ่านประโยคเต็ม 8,400 ประโยคที่นำไปใช้ในชีวิตจริงได้ทันที ไม่ใช่รายการคำศัพท์แยกส่วน ซื้อครั้งเดียว ใช้ได้ครบโดยไม่มีค่าสมาชิก",
+      "category": "education",
+      "search_terms": [
+        "เรียนภาษา",
+        "สนทนา",
+        "ฝึกฟัง",
+        "ออกเสียง",
+        "อังกฤษ",
+        "ญี่ปุ่น",
+        "เกาหลี",
+        "สเปน",
+        "ฝรั่งเศส",
+        "เยอรมัน",
+        "ท่องเที่ยว",
+        "มือใหม่",
+        "พูด"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/app/id6790418321?ct=iag_api_th",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/th/dailymate.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "399",
+        "currency": "THB",
+        "formatted_price": "฿399.00",
+        "storefront_url": "https://apps.apple.com/th/app/id6790418321"
       }
     },
     {
@@ -1276,6 +1318,40 @@
         "currency": "THB",
         "formatted_price": "ฟรี",
         "storefront_url": "https://apps.apple.com/th/app/id6782139553"
+      }
+    },
+    {
+      "key": "tripbeelite",
+      "app_store_id": "6791299610",
+      "name": "TripBee Lite: แผนเที่ยว",
+      "summary": "ใส่ใจทริปถัดไปได้เต็มที่ TripBee Lite คือแอปวางแผนที่เรียบสงบและประณีต ออกแบบมาเพื่อการเดินทางเดียวที่กำลังใช้งาน",
+      "category": "travel",
+      "search_terms": [
+        "วางแผนเที่ยว",
+        "ทริป",
+        "เดินทาง",
+        "ตั๋ว",
+        "เตือน"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6791299610?ct=iag_api_th",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/th/tripbeelite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6791299610"
       }
     },
     {

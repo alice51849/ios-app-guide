@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-17",
-  "content_digest": "4e99db851f906d3388cafc6741d35b6875252bd66ddc4ac3c0392937f383b93c",
+  "date_modified": "2026-07-18",
+  "content_digest": "b9fa7db28aefb0f1718d576f2fe047d3d05db695f7e30b96c5a0a063376b1422",
   "locale": "gu-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 26,
+  "record_count": 28,
   "apps": [
     {
       "key": "aim990",
@@ -162,6 +162,47 @@
         "currency": "INR",
         "formatted_price": "મફત",
         "storefront_url": "https://apps.apple.com/in/app/id6782251621"
+      }
+    },
+    {
+      "key": "dailymate",
+      "app_store_id": "6790418321",
+      "name": "DailyMate: રોજિંદાં વાક્યો",
+      "summary": "છૂટા શબ્દો ગોખવાને બદલે જીવનમાં ખરેખર બોલી શકાય એવા પૂરાં વાક્યો શીખો. DailyMateમાં 47 ભાષાઓનાં 8,400 વાક્યો પરિસ્થિતિ પ્રમાણે ગોઠવેલા છે. એક જ વાર ખરીદીથી સંપૂર્ણ એપ મળે છે; કોઈ સબ્સ્ક્રિપ્શન નથી.",
+      "category": "education",
+      "search_terms": [
+        "અંગ્રેજી શીખો",
+        "ઉચ્ચાર",
+        "સાંભળવું",
+        "પ્રવાસ",
+        "સ્પેનિશ",
+        "ફ્રેન્ચ",
+        "જર્મન",
+        "જાપાની",
+        "કોરિયન",
+        "શરૂઆત",
+        "દૈનિક અભ્યાસ",
+        "શબ્દો"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/app/id6790418321?ct=iag_api_gu_in",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/dailymate.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "1199",
+        "currency": "INR",
+        "formatted_price": "₹ 1,199",
+        "storefront_url": "https://apps.apple.com/in/app/id6790418321"
       }
     },
     {
@@ -1298,6 +1339,41 @@
         "currency": "INR",
         "formatted_price": "મફત",
         "storefront_url": "https://apps.apple.com/in/app/id6782139553"
+      }
+    },
+    {
+      "key": "tripbeelite",
+      "app_store_id": "6791299610",
+      "name": "TripBee Lite: પ્રવાસ યોજના",
+      "summary": "આગામી પ્રવાસ પર પૂરું ધ્યાન આપો. TripBee Lite એક શાંત અને સુઘડ આયોજન એપ છે, જે એક સક્રિય પ્રવાસ પર કેન્દ્રિત છે.",
+      "category": "travel",
+      "search_terms": [
+        "પ્રવાસ",
+        "યાત્રા",
+        "યોજના",
+        "સામાન",
+        "ટિકિટ",
+        "યાદ"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6791299610?ct=iag_api_gu_in",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/tripbeelite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "મફત",
+        "storefront_url": "https://apps.apple.com/in/app/id6791299610"
       }
     },
     {

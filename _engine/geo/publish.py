@@ -12,7 +12,7 @@ import subprocess
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-PAGES = os.path.join(HERE, "pages")
+PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide")
 PY = sys.executable
 
@@ -66,6 +66,12 @@ def reconcile_lastmod_after_rebase(env):
 
 def main():
     env = dict(os.environ, GEO_SITE=SITE)
+    if "--no-push" not in sys.argv:
+        branch = require(["git", "branch", "--show-current"], cwd=PAGES).strip()
+        if branch != "main":
+            raise RuntimeError(
+                f"Pages publishing requires main, found {branch or 'detached'}"
+            )
     # 1) 重建
     require(
         [PY, os.path.join(HERE, "refresh_storefront_availability.py")],
@@ -221,17 +227,15 @@ def main():
     require(["git", "-c", "user.name=alice51849",
              "-c", "user.email=alice51849@users.noreply.github.com",
              "commit", "-m", "Update multilingual GEO pages"], cwd=PAGES)
-    # 2b) 健壯 push:固定在 main;被拒就以「我方重生內容為準」rebase(-X theirs)後重試;
-    #     萬一 rebase 仍衝突,abort + 對齊遠端(絕不留下 detached/衝突壞狀態,下輪重生再推)。
+    # 2b) 健壯 push:固定在 main;被拒就安全 rebase 後重試。
     CRED = "credential.helper=!gh auth git-credential"
-    require(["git", "checkout", "main"], cwd=PAGES)
     pushed = False
     for _ in range(3):
         rc, _ = run(["git", "-c", CRED, "push", "-q", "origin", "main"], cwd=PAGES)
         if rc == 0:
             pushed = True
             break
-        rc2, _ = run(["git", "-c", CRED, "pull", "--rebase", "-X", "theirs",
+        rc2, _ = run(["git", "-c", CRED, "pull", "--rebase",
                       "-q", "origin", "main"], cwd=PAGES)
         if rc2 != 0:
             run(["git", "rebase", "--abort"], cwd=PAGES)
@@ -241,7 +245,15 @@ def main():
     if not pushed:
         raise RuntimeError("未能 push；已保留本機提交，未送出 IndexNow。")
     # 3) IndexNow:有變更才推
-    require([PY, os.path.join(HERE, "indexnow_submit.py")], env=env)
+    require(
+        [
+            PY,
+            os.path.join(HERE, "indexnow_submit.py"),
+            "--pages-dir",
+            PAGES,
+        ],
+        env=env,
+    )
     print("\n✅ GEO 發布完成")
 
 

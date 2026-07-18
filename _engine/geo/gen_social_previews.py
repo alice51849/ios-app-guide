@@ -29,7 +29,7 @@ from official_locales import OFFICIAL_LOCALES  # noqa: E402
 from videogen.registry import APPSTORE  # noqa: E402
 
 
-PAGES = HERE / "pages"
+PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
 SITE = os.environ.get(
     "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
 ).rstrip("/")

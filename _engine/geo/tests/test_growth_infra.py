@@ -18996,7 +18996,7 @@ class GeneratorTests(unittest.TestCase):
             for page in (Path(build_pages_i18n.PAGES) / "stories").glob("*.html")
             if page.name != "index.html"
         )
-        self.assertEqual(26, len(story_keys))
+        self.assertEqual(28, len(story_keys))
         for key in story_keys:
             self.assertEqual(
                 list(OFFICIAL_LOCALES),
@@ -19088,10 +19088,10 @@ class GeneratorTests(unittest.TestCase):
         result = validate_webstories.validate_site()
         self.assertEqual(
             {
-                "apps": 26,
+                "apps": 28,
                 "locales": 50,
-                "localized_stories": 1300,
-                "sitemap_urls": 1377,
+                "localized_stories": 1400,
+                "sitemap_urls": 1479,
             },
             result,
         )
@@ -19107,6 +19107,7 @@ class GeneratorTests(unittest.TestCase):
             "lumibopomofopro",
             "tripbee",
             "wordmate",
+            "dailymate",
         }
         free_with_unlock = {
             "sononote",
@@ -19128,6 +19129,7 @@ class GeneratorTests(unittest.TestCase):
             "zafe",
             "tripplanet",
             "sereno",
+            "tripbeelite",
         }
         self.assertEqual(paid_upfront | free_with_unlock, set(APPS))
         for key in paid_upfront:

@@ -30,7 +30,7 @@ sys.path.insert(0, os.path.join(ROOT, "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
 
-PAGES = os.path.join(HERE, "pages")
+PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 GUIDES = os.path.join(PAGES, "guides")
 DATA = os.path.join(ROOT, "data")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")

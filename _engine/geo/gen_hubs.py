@@ -19,7 +19,7 @@ from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
 import queries  # noqa: E402
 
-PAGES = os.path.join(HERE, "pages")
+PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 HUBS = os.path.join(PAGES, "hubs")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
 

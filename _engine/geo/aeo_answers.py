@@ -23,7 +23,10 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parent
-ANSWERS_DIR = ROOT / "pages" / "answers"
+PAGES_ROOT = Path(
+    os.environ.get("GEO_PAGES", ROOT / "pages")
+).resolve()
+ANSWERS_DIR = PAGES_ROOT / "answers"
 SITE = "https://alice51849.github.io/ios-app-guide"
 MODEL = "gpt-4o-mini"
 OPENAI_ENDPOINT = "https://api.openai.com/v1/chat/completions"
@@ -567,7 +570,7 @@ def _coverage_rates() -> dict:
 def question_plan(
     keys: list[str] | None, refresh_live: bool = True
 ) -> list[tuple[str, str]]:
-    public = live_app_keys(APPSTORE, ROOT / "pages", refresh=refresh_live)
+    public = live_app_keys(APPSTORE, PAGES_ROOT, refresh=refresh_live)
     selected = keys or [key for key in APPS if key in public]
     unknown = [k for k in selected if k not in APPS]
     if unknown:
@@ -667,7 +670,7 @@ def regenerate_index() -> None:
         f'<link rel="alternate" hreflang="en" href="{canonical}">'
     ]
     locale_pattern = re.compile(r"^[a-z]{2,3}(?:-[A-Za-z]{2,4})?$")
-    for localized in sorted((ROOT / "pages").glob("*/answers/index.html")):
+    for localized in sorted(PAGES_ROOT.glob("*/answers/index.html")):
         locale = localized.parent.parent.name
         if locale_pattern.fullmatch(locale):
             alternate_links.append(
@@ -695,7 +698,7 @@ def regenerate_index() -> None:
 def write_sitemap() -> None:
     """Rebuild sitemap_answers.xml from files that actually exist (EN + localized)."""
     import time as _time
-    pages_dir = ROOT / "pages"
+    pages_dir = PAGES_ROOT
     entries: list[tuple[str, Path]] = []
     for p in sorted(pages_dir.glob("answers/*.html")):
         if not is_redirect_page(p):

@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 from html.parser import HTMLParser
 import json
+import os
 from pathlib import Path
 import re
 from typing import Any, Iterator
@@ -17,7 +18,7 @@ from videogen.registry import APPS, APPSTORE
 
 
 HERE = Path(__file__).resolve().parent
-PAGES = HERE / "pages"
+PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
 JSON_LD_RE = re.compile(
     r"(?P<open><script\b[^>]*\btype\s*=\s*"
     r"(?:\"application/ld\+json\"|'application/ld\+json')[^>]*>)"

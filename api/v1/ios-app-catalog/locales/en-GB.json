@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-17",
-  "content_digest": "4e99db851f906d3388cafc6741d35b6875252bd66ddc4ac3c0392937f383b93c",
+  "date_modified": "2026-07-18",
+  "content_digest": "b9fa7db28aefb0f1718d576f2fe047d3d05db695f7e30b96c5a0a063376b1422",
   "locale": "en-GB",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 26,
+  "record_count": 28,
   "apps": [
     {
       "key": "aim990",
@@ -165,6 +165,46 @@
         "currency": "GBP",
         "formatted_price": "Free",
         "storefront_url": "https://apps.apple.com/gb/app/id6782251621"
+      }
+    },
+    {
+      "key": "dailymate",
+      "app_store_id": "6790418321",
+      "name": "DailyMate: Everyday Phrases",
+      "summary": "A language makes more sense in complete sentences than in lists of isolated words. DailyMate offers 8,400 useful phrases across 47 learning languages, arranged around 14 everyday topics and 84 real situations. Pay once for the complete app. No subscription.",
+      "category": "education",
+      "search_terms": [
+        "conversation",
+        "speaking",
+        "pronunciation",
+        "listening",
+        "travel",
+        "beginner",
+        "english",
+        "spanish",
+        "french",
+        "german",
+        "japanese"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/app/id6790418321?ct=iag_api_en_gb",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/dailymate.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "11.99",
+        "currency": "GBP",
+        "formatted_price": "£11.99",
+        "storefront_url": "https://apps.apple.com/gb/app/id6790418321"
       }
     },
     {
@@ -1296,6 +1336,44 @@
         "currency": "GBP",
         "formatted_price": "Free",
         "storefront_url": "https://apps.apple.com/gb/app/id6782139553"
+      }
+    },
+    {
+      "key": "tripbeelite",
+      "app_store_id": "6791299610",
+      "name": "TripBee Lite: Travel Plan",
+      "summary": "Keep the journey ahead beautifully organised. TripBee Lite is a calm, polished travel planner centred on the one active trip that matters now.",
+      "category": "travel",
+      "search_terms": [
+        "travel planner",
+        "itinerary",
+        "holiday",
+        "packing list",
+        "city break",
+        "tickets",
+        "reminders",
+        "organiser",
+        "offline"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6791299610?ct=iag_api_en_gb",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/tripbeelite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/gb/app/id6791299610"
       }
     },
     {

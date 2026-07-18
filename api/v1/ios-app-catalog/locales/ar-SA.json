@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-17",
-  "content_digest": "4e99db851f906d3388cafc6741d35b6875252bd66ddc4ac3c0392937f383b93c",
+  "date_modified": "2026-07-18",
+  "content_digest": "b9fa7db28aefb0f1718d576f2fe047d3d05db695f7e30b96c5a0a063376b1422",
   "locale": "ar-SA",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 26,
+  "record_count": 28,
   "apps": [
     {
       "key": "aim990",
@@ -165,6 +165,50 @@
         "currency": "SAR",
         "formatted_price": "مجاني",
         "storefront_url": "https://apps.apple.com/sa/app/id6782251621"
+      }
+    },
+    {
+      "key": "dailymate",
+      "app_store_id": "6790418321",
+      "name": "DailyMate: جمل يومية",
+      "summary": "لا تحفظ كلمات متفرقة لا تعرف متى تستخدمها. يقدّم DailyMate ‏8,400 جملة كاملة صيغت لمواقف الحياة، لتتعلم اللغة من خلال ما يقال فعلًا لا من خلال قوائم الكلمات. شراء واحد يفتح التجربة كاملة، بلا اشتراك.",
+      "category": "education",
+      "search_terms": [
+        "تعلم",
+        "محادثة",
+        "إنجليزية",
+        "إسبانية",
+        "فرنسية",
+        "ألمانية",
+        "يابانية",
+        "كورية",
+        "استماع",
+        "نطق",
+        "سفر",
+        "مبتدئين",
+        "تدريب",
+        "تواصل",
+        "صوت"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/app/id6790418321?ct=iag_api_ar_sa",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/dailymate.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "49.99",
+        "currency": "SAR",
+        "formatted_price": "SAR 49.99",
+        "storefront_url": "https://apps.apple.com/sa/app/id6790418321"
       }
     },
     {
@@ -1341,6 +1385,45 @@
         "currency": "SAR",
         "formatted_price": "مجاني",
         "storefront_url": "https://apps.apple.com/sa/app/id6782139553"
+      }
+    },
+    {
+      "key": "tripbeelite",
+      "app_store_id": "6791299610",
+      "name": "TripBee Lite: مخطط رحلة",
+      "summary": "امنح رحلتك القادمة كامل اهتمامك. TripBee Lite مخطط هادئ ومتقن صُمم للتركيز على رحلة نشطة واحدة.",
+      "category": "travel",
+      "search_terms": [
+        "سفر",
+        "رحلة",
+        "مخطط",
+        "حقيبة",
+        "تذاكر",
+        "تذكير",
+        "فندق",
+        "طيران",
+        "جدول",
+        "عطلة"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6791299610?ct=iag_api_ar_sa",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/tripbeelite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "SAR",
+        "formatted_price": "مجاني",
+        "storefront_url": "https://apps.apple.com/sa/app/id6791299610"
       }
     },
     {

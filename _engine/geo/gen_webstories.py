@@ -22,7 +22,7 @@ from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
 from gen_mobile_app_identity import mobile_app_schema  # noqa: E402
 
-PAGES = os.path.join(HERE, "pages")
+PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 STORIES = os.path.join(PAGES, "stories")
 IMG = os.path.join(STORIES, "img")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")

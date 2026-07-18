@@ -7,6 +7,7 @@ import argparse
 import datetime as dt
 from decimal import Decimal, InvalidOperation
 import json
+import os
 from pathlib import Path
 import sys
 
@@ -25,7 +26,7 @@ from family_travel_dataset import write_text_if_changed  # noqa: E402
 from videogen.registry import APPSTORE  # noqa: E402
 
 
-PAGES = HERE / "pages"
+PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
 MAX_AGE = dt.timedelta(hours=20)
 
 

@@ -28,7 +28,7 @@ from videogen.registry import (  # noqa: E402
     appstore_url,
 )
 
-PAGES = HERE / "pages"
+PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
 SITE = os.environ.get(
     "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
 ).rstrip("/")

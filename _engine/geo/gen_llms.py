@@ -48,7 +48,7 @@ from official_locales import (  # noqa: E402
 )
 from websub_config import WEBSUB_HUBS  # noqa: E402
 
-PAGES = os.path.join(HERE, "pages")
+PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 ALT = os.path.join(PAGES, "alternatives")
 GUIDES = os.path.join(PAGES, "guides")
 DATA_DIR = os.path.join(PAGES, "data")

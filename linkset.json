@@ -54,6 +54,16 @@
           ]
         },
         {
+          "href": "https://alice51849.github.io/ios-app-guide/guides/dailymate.html",
+          "type": "text/html",
+          "title*": [
+            {
+              "value": "DailyMate",
+              "language": "en"
+            }
+          ]
+        },
+        {
           "href": "https://alice51849.github.io/ios-app-guide/guides/gmoney.html",
           "type": "text/html",
           "title*": [
@@ -229,6 +239,16 @@
           "title*": [
             {
               "value": "TripBee Pro: Trip Planner",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/guides/tripbeelite.html",
+          "type": "text/html",
+          "title*": [
+            {
+              "value": "TripBee Lite",
               "language": "en"
             }
           ]
@@ -1702,6 +1722,65 @@
           "title*": [
             {
               "value": "Cyca story poster",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": "https://alice51849.github.io/ios-app-guide/guides/dailymate.html",
+      "alternate": [
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/guides/dailymate.html",
+          "hreflang": [
+            "en",
+            "x-default"
+          ],
+          "type": "text/html"
+        }
+      ],
+      "related": [
+        {
+          "href": "https://apps.apple.com/app/id6790418321?ct=iag_linkset",
+          "type": "text/html",
+          "title*": [
+            {
+              "value": "DailyMate on the App Store",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/stories/dailymate.html",
+          "type": "text/html",
+          "title*": [
+            {
+              "value": "DailyMate visual story",
+              "language": "en"
+            }
+          ]
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/hubs/dailymate.html",
+          "type": "text/html",
+          "title*": [
+            {
+              "value": "DailyMate resource hub",
+              "language": "en"
+            }
+          ]
+        }
+      ],
+      "preview": [
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/stories/img/dailymate-poster.jpg",
+          "type": "image/jpeg",
+          "title*": [
+            {
+              "value": "DailyMate story poster",
               "language": "en"
             }
           ]
@@ -6124,6 +6203,65 @@
           "title*": [
             {
               "value": "TripBee Pro: Trip Planner story poster",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": "https://alice51849.github.io/ios-app-guide/guides/tripbeelite.html",
+      "alternate": [
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/guides/tripbeelite.html",
+          "hreflang": [
+            "en",
+            "x-default"
+          ],
+          "type": "text/html"
+        }
+      ],
+      "related": [
+        {
+          "href": "https://apps.apple.com/app/id6791299610?ct=iag_linkset",
+          "type": "text/html",
+          "title*": [
+            {
+              "value": "TripBee Lite on the App Store",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/stories/tripbeelite.html",
+          "type": "text/html",
+          "title*": [
+            {
+              "value": "TripBee Lite visual story",
+              "language": "en"
+            }
+          ]
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/hubs/tripbeelite.html",
+          "type": "text/html",
+          "title*": [
+            {
+              "value": "TripBee Lite resource hub",
+              "language": "en"
+            }
+          ]
+        }
+      ],
+      "preview": [
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/stories/img/tripbeelite-poster.jpg",
+          "type": "image/jpeg",
+          "title*": [
+            {
+              "value": "TripBee Lite story poster",
               "language": "en"
             }
           ]

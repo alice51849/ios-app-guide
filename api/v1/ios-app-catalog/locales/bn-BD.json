@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-17",
-  "content_digest": "4e99db851f906d3388cafc6741d35b6875252bd66ddc4ac3c0392937f383b93c",
+  "date_modified": "2026-07-18",
+  "content_digest": "b9fa7db28aefb0f1718d576f2fe047d3d05db695f7e30b96c5a0a063376b1422",
   "locale": "bn-BD",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 26,
+  "record_count": 28,
   "apps": [
     {
       "key": "aim990",
@@ -145,6 +145,41 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6782251621?ct=iag_api_bn_bd",
       "guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/cyca.html",
+      "verified_live": true
+    },
+    {
+      "key": "dailymate",
+      "app_store_id": "6790418321",
+      "name": "DailyMate: জীবনের বাক্য",
+      "summary": "আলাদা আলাদা শব্দ মুখস্থ করেও ঠিক সময়ে কথা খুঁজে পান না? DailyMate শেখায় বাস্তব জীবনে বলার মতো ৮,৪০০টি পূর্ণ বাক্য। শব্দের তালিকা নয়—প্রসঙ্গসহ সম্পূর্ণ ভাষা। একবার কিনলেই পুরো অ্যাপ; কোনো সাবস্ক্রিপশন নেই।",
+      "category": "education",
+      "search_terms": [
+        "ইংরেজি শেখা",
+        "উচ্চারণ",
+        "শোনা",
+        "ভ্রমণ",
+        "জাপানি",
+        "কোরিয়ান",
+        "স্প্যানিশ",
+        "ফরাসি",
+        "জার্মান",
+        "শিক্ষানবিস",
+        "দৈনিক চর্চা",
+        "আরবি"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/app/id6790418321?ct=iag_api_bn_bd",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/dailymate.html",
       "verified_live": true
     },
     {
@@ -1172,6 +1207,35 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6782139553?ct=iag_api_bn_bd",
       "guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/sononote.html",
+      "verified_live": true
+    },
+    {
+      "key": "tripbeelite",
+      "app_store_id": "6791299610",
+      "name": "TripBee Lite: ভ্রমণ পরিকল্পনা",
+      "summary": "পরবর্তী সফরটিতেই পুরো মন দিন। TripBee Lite একটি শান্ত ও পরিপাটি পরিকল্পনাকারী, যা একটি সক্রিয় ভ্রমণকে ঘিরে তৈরি।",
+      "category": "travel",
+      "search_terms": [
+        "ভ্রমণ",
+        "সফর",
+        "পরিকল্পনা",
+        "ব্যাগ",
+        "টিকিট",
+        "ছুটি"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6791299610?ct=iag_api_bn_bd",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/tripbeelite.html",
       "verified_live": true
     },
     {

@@ -74,13 +74,13 @@
       "const": "official_locale_order_then_alphabetical_app_name"
     },
     "app_count": {
-      "const": 26
+      "const": 28
     },
     "locale_count": {
       "const": 50
     },
     "record_count": {
-      "const": 1300
+      "const": 1400
     },
     "locales": {
       "type": "array",
@@ -144,8 +144,8 @@
     },
     "records": {
       "type": "array",
-      "minItems": 1300,
-      "maxItems": 1300,
+      "minItems": 1400,
+      "maxItems": 1400,
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -234,6 +234,7 @@
               "aim990",
               "cvdesk",
               "cyca",
+              "dailymate",
               "gmoney",
               "hourstag",
               "lockhour",
@@ -254,6 +255,7 @@
               "snapport",
               "sononote",
               "tripbee",
+              "tripbeelite",
               "tripplanet",
               "unblurry",
               "wordmate"

@@ -214,6 +214,67 @@ class PersonaLocaleCoverageTests(unittest.TestCase):
                 ),
             )
 
+    def test_reviewed_asian_replacements_are_complete_and_idempotent(self):
+        cases = (
+            (
+                "zh-Hans",
+                "在无数据国家离线可用；无推送你使用云账户；Home Screen",
+                "在无移动数据的国家也能离线可用；也不会迫使你注册云账户；主屏幕",
+            ),
+            (
+                "zh-Hant",
+                "身份證保存在裝置內；Home Screen 小工具；提前退出；無數據；每日計劃",
+                "身分證儲存在裝置內；主畫面小工具；提前結束；沒有網路；每日計畫",
+            ),
+            (
+                "id",
+                "Pelacakan goresan; Widget Home Screen; white noise; timer; unlock",
+                "Menebalkan goresan; Alat mini Layar Utama; derau putih; pengatur waktu; buka kunci",
+            ),
+            (
+                "ms",
+                "ubah peluru anda; gambar letusan; mata wang rumah; Widget",
+                "ubah butiran anda; gambar rentetan; mata wang negara asal; Widjet",
+            ),
+            (
+                "th",
+                "แอป Zhuyin และเรียน Zhuyin; ลองใช้ Auto Clear แล้วตามด้วย Sharpen",
+                "แอปจู้ยิน (Zhuyin) และเรียนจู้ยิน (Zhuyin); "
+                "ลองใช้ล้างภาพอัตโนมัติ (Auto Clear) แล้วตามด้วยเพิ่มความคมชัด "
+                "(Sharpen)",
+            ),
+            (
+                "vi",
+                "Theo dõi nét; phonics; checklist; cabin",
+                "Tô nét chữ; đánh vần; danh sách kiểm tra; nhà gỗ",
+            ),
+        )
+        for locale, source, expected in cases:
+            replaced = aeo_answers_i18n.apply_locale_target_replacements(
+                source,
+                locale,
+            )
+            self.assertEqual(expected, replaced)
+            self.assertEqual(
+                replaced,
+                aeo_answers_i18n.apply_locale_target_replacements(
+                    replaced,
+                    locale,
+                ),
+            )
+
+    def test_japanese_publisher_notice_identifies_the_app_developer(self):
+        source = (
+            "Publisher-authored guide from Lumi Studio, the app developer. App "
+            "names are trademarks of their owners and are used only for "
+            "identification. For documents, health, school, and productivity "
+            "decisions, verify official requirements where relevant."
+        )
+        self.assertIn(
+            "アプリ開発者",
+            aeo_answers_i18n.LOCALE_TEXT_OVERRIDES["ja"][source],
+        )
+
     def test_japanese_tripbee_override_preserves_itinerary_categories(self):
         source, translated = next(
             (source, translated)
@@ -228,6 +289,13 @@ class PersonaLocaleCoverageTests(unittest.TestCase):
             "kalkering",
             aeo_answers_i18n.apply_locale_target_replacements(
                 "streckspårning",
+                "sv",
+            ),
+        )
+        self.assertEqual(
+            "Kalkering",
+            aeo_answers_i18n.apply_locale_target_replacements(
+                "Streckspårning",
                 "sv",
             ),
         )

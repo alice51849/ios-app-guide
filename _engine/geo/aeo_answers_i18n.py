@@ -424,6 +424,16 @@ LOCALE_TEXT_OVERRIDES = {
     "ja": {
         "TripBee Pro: Trip Planner": "TripBee Pro: 旅行プランナー",
         (
+            "Publisher-authored guide from Lumi Studio, the app developer. App "
+            "names are trademarks of their owners and are used only for "
+            "identification. For documents, health, school, and productivity "
+            "decisions, verify official requirements where relevant."
+        ): (
+            "アプリ開発者であるLumi Studioによる公式購入ガイドです。アプリ名は各"
+            "所有者の商標であり、識別のためにのみ使用しています。書類、健康、学校、"
+            "生産性に関する判断は、該当する公式要件を必ずご確認ください。"
+        ),
+        (
             "A good itinerary app turns a messy trip into a clear day-by-day "
             "timeline — flights, hotels, activities, restaurants and transport "
             "— with clear type icons so you can read your day at a glance — "
@@ -454,6 +464,8 @@ LOCALE_TEXT_OVERRIDES = {
 LOCALE_TARGET_REPLACEMENTS = {
     "gu-IN": (("નિષ્ઠાવાન", "પ્રામાણિક"),),
     "id": (
+        ("Pelacakan goresan", "Menebalkan goresan"),
+        ("pelacakan goresan", "menebalkan goresan"),
         ("foto burst", "rentetan foto"),
         ("light-leak", "kebocoran cahaya"),
         ("light leak", "kebocoran cahaya"),
@@ -469,6 +481,18 @@ LOCALE_TARGET_REPLACEMENTS = {
         ("prompt", "petunjuk"),
         ("setiap review", "setiap kali mengulang"),
         ("review singkat", "ulangan singkat"),
+        ("Home Screen", "Layar Utama"),
+        ("Widget", "Alat mini"),
+        ("widget", "alat mini"),
+        ("white noise", "derau putih"),
+        ("brown noise", "derau cokelat"),
+        ("sense angka", "pemahaman angka"),
+        ("bilingual", "dwibahasa"),
+        ("heritage", "bahasa warisan"),
+        ("outing", "aktivitas di luar"),
+        ("scene", "pemandangan"),
+        ("timer", "pengatur waktu"),
+        ("unlock", "buka kunci"),
     ),
     "it": (
         (
@@ -482,6 +506,16 @@ LOCALE_TARGET_REPLACEMENTS = {
         (
             "guida all'acquisto di app per iPhone",
             "guida onesta all'acquisto di app per iPhone",
+        ),
+    ),
+    "ja": (
+        (
+            "Lumi Studioによる出版社公式ガイド。アプリ名は各所有者の商標であり、"
+            "識別のためにのみ使用しています。書類、健康、学校、生産性に関する判断"
+            "は、該当する公式要件を必ずご確認ください。",
+            "アプリ開発者であるLumi Studioによる公式購入ガイドです。アプリ名は各"
+            "所有者の商標であり、識別のためにのみ使用しています。書類、健康、学校、"
+            "生産性に関する判断は、該当する公式要件を必ずご確認ください。",
         ),
     ),
     "kn-IN": (
@@ -523,6 +557,11 @@ LOCALE_TARGET_REPLACEMENTS = {
         ("commute", "berulang-alik"),
         ("Offline", "Luar talian"),
         ("offline", "luar talian"),
+        ("peluru anda", "butiran anda"),
+        ("gambar letusan", "gambar rentetan"),
+        ("mata wang rumah", "mata wang negara asal"),
+        ("Widget", "Widjet"),
+        ("widget", "widjet"),
     ),
     "no": (
         ("Streksporing", "Skriveøving"),
@@ -531,6 +570,7 @@ LOCALE_TARGET_REPLACEMENTS = {
     "pa-IN": (("ਆਈਫੋਨ", "iPhone"),),
     "sl-SI": (("iphonu", "iPhonu"),),
     "sv": (
+        ("Streckspårning", "Kalkering"),
         ("streckspårning", "kalkering"),
         ("genom spårning och lek", "genom kalkering och lek"),
         (
@@ -541,6 +581,27 @@ LOCALE_TARGET_REPLACEMENTS = {
     "ta-IN": (
         ("ஐபோனில்", "iPhone-ல்"),
         ("ஐபோன்", "iPhone"),
+    ),
+    "th": (
+        (
+            "โหมด Auto Clear และ Sharpen",
+            "โหมดล้างภาพอัตโนมัติ (Auto Clear) และเพิ่มความคมชัด (Sharpen)",
+        ),
+        (
+            "ลองใช้ Auto Clear แล้วตามด้วย Sharpen",
+            "ลองใช้ล้างภาพอัตโนมัติ (Auto Clear) แล้วตามด้วยเพิ่มความคมชัด (Sharpen)",
+        ),
+        (
+            "โหมด Auto Clear / Sharpen สำหรับภาพโฟกัสนุ่ม",
+            "โหมดล้างภาพอัตโนมัติ (Auto Clear) / เพิ่มความคมชัด (Sharpen) "
+            "สำหรับภาพโฟกัสนุ่ม",
+        ),
+        (
+            "แอป bopomofo ที่ดีที่สุดสำหรับเด็กเรียน zhuyin บน iPhone",
+            "แอปจู้ยิน (Bopomofo) ที่ดีที่สุดสำหรับเด็กบน iPhone",
+        ),
+        ("แอป Zhuyin", "แอปจู้ยิน (Zhuyin)"),
+        ("เรียน Zhuyin", "เรียนจู้ยิน (Zhuyin)"),
     ),
     "te-IN": (
         ("ఐఫోన్‌ లో", "iPhone‌లో"),
@@ -559,8 +620,33 @@ LOCALE_TARGET_REPLACEMENTS = {
         ("Widget", "Tiện ích"),
         ("widget", "tiện ích"),
         ("offline", "ngoại tuyến"),
+        ("Theo dõi nét", "Tô nét chữ"),
+        ("theo dõi nét", "tô nét chữ"),
+        ("phonics", "đánh vần"),
+        ("checklist", "danh sách kiểm tra"),
+        ("cabin", "nhà gỗ"),
     ),
     "es-MX": (("móvil", "celular"),),
+    "zh-Hans": (
+        ("在无数据国家离线可用", "在无移动数据的国家也能离线可用"),
+        ("无推送你使用云账户", "也不会迫使你注册云账户"),
+        (
+            "睡眠时，每月催促订阅恰恰相反",
+            "为了获得良好睡眠，每月催促你订阅恰恰与放松的目的背道而驰",
+        ),
+        ("Home Screen", "主屏幕"),
+    ),
+    "zh-Hant": (
+        ("Home Screen 小工具", "主畫面小工具"),
+        ("Home Screen", "主畫面"),
+        ("身份證", "身分證"),
+        ("提前退出", "提前結束"),
+        ("退出", "離開"),
+        ("保存在", "儲存在"),
+        ("保存", "儲存"),
+        ("無數據", "沒有網路"),
+        ("計劃", "計畫"),
+    ),
 }
 NO_TRANSLATE_JSON_KEYS = {
     "@context",
@@ -990,6 +1076,8 @@ def apply_locale_text_overrides(
 def apply_locale_target_replacements(text: str, lang: str) -> str:
     for original, replacement in LOCALE_TARGET_REPLACEMENTS.get(lang, ()):
         text = text.replace(original, replacement)
+    if lang == "th":
+        text = re.sub(r"(?<!จู้ยิน \()Zhuyin", "จู้ยิน (Zhuyin)", text)
     if lang == "zh-Hant":
         text = re.sub(r"應用(?!程式|於|到)", "App", text)
     return text

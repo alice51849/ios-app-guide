@@ -14,6 +14,12 @@ Kiadók által megadott keresési szándékok 28 ellenőrzött, élő iOS alkalm
 >
 > A lekérdezések szerkesztői leírások a tervezett használati esetekről, nem mérhető keresési mennyiségi adatok, rangsorok, független értékelések vagy felhasználói ajánlások.
 
+## Lumi Studio Kiadói Keresési Szándék Katalógus · MCP
+
+Egy első kézből származó katalógus arról, hogy az egyes alkalmazások kinek készültek, milyen feladatot próbálnak megoldani, és a közvetlen App Store útvonal.
+
+[MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/latest) · [GitHub](https://github.com/alice51849/lumi-mcp) · [MCPB](https://github.com/alice51849/lumi-mcp/releases/latest/download/lumi-app-finder.mcpb)
+
 ## Módszertan
 
 Minden ellenőrzött, élő alkalmazáshoz egy elsődleges vásárlói személyiséget választottunk ki. Minden lekérdezést és döntési kontextust szerkesztői módon lokalizáltunk a cél-lokációra, és összekapcsoltuk a megfelelő teljes útmutatóval.

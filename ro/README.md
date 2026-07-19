@@ -14,6 +14,12 @@ Intenții de căutare redactate de editori pentru 28 de aplicații iOS verificat
 >
 > Interogările sunt descrieri editoriale ale cazurilor de utilizare intenționate, nu date măsurate despre volumul căutărilor, clasamente, recenzii independente sau recomandări ale utilizatorilor.
 
+## Catalogul de intenții de căutare Lumi Studio al editorului · MCP
+
+O listă de primă parte a destinatarilor fiecărei aplicații, a sarcinii pe care încearcă să o îndeplinească și a traseului direct către App Store.
+
+[MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/latest) · [GitHub](https://github.com/alice51849/lumi-mcp) · [MCPB](https://github.com/alice51849/lumi-mcp/releases/latest/download/lumi-app-finder.mcpb)
+
 ## Metodologie
 
 Pentru fiecare aplicație verificată și activă a fost selectată o persoană cumpărător principală. Fiecare interogare și situație decizională a fost localizată editorial pentru regiunea țintă și legată de ghidul complet corespunzător.

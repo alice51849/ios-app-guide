@@ -14,6 +14,12 @@ Zamiary wyszukiwania tworzone przez wydawcę dla 28 zweryfikowanych działający
 >
 > Zapytania to redakcyjne opisy zamierzonych zastosowań, a nie dane o mierzonej liczbie wyszukiwań, rankingi, niezależne recenzje ani rekomendacje użytkowników.
 
+## Katalog zamiarów wyszukiwania wydawcy Lumi Studio · MCP
+
+Pierwotny katalog określający, dla kogo jest przeznaczona każda aplikacja, jakie zadanie ma wykonać oraz bezpośrednią ścieżkę do App Store.
+
+[MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/latest) · [GitHub](https://github.com/alice51849/lumi-mcp) · [MCPB](https://github.com/alice51849/lumi-mcp/releases/latest/download/lumi-app-finder.mcpb)
+
 ## Metodologia
 
 Dla każdej zweryfikowanej działającej aplikacji wybrano jedną główną personę kupującego. Każde zapytanie i kontekst decyzji zostały redakcyjnie dostosowane do docelowej lokalizacji i powiązane z odpowiednim pełnym przewodnikiem.

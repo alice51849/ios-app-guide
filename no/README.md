@@ -14,6 +14,12 @@ Utgiver-skapte søkeintensjoner på tvers av 28 verifiserte aktive iOS-apper og 
 >
 > Spørringene er redaksjonelle beskrivelser av tiltenkte bruksområder, ikke målte søkevolumdata, rangeringer, uavhengige anmeldelser eller brukeranbefalinger.
 
+## Lumi Studio Utgiver Søkeintensjonskatalog · MCP
+
+En førsteparts katalog over hvem hver app er laget for, oppgaven de prøver å fullføre, og den direkte App Store-stien.
+
+[MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/latest) · [GitHub](https://github.com/alice51849/lumi-mcp) · [MCPB](https://github.com/alice51849/lumi-mcp/releases/latest/download/lumi-app-finder.mcpb)
+
 ## Metodikk
 
 En primær kjøperpersona ble valgt for hver verifiserte aktive app. Hver spørring og beslutningskontekst ble redaksjonelt lokalisert for målmarkedet og koblet til den tilsvarende fullstendige guiden.

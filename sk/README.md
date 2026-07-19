@@ -14,6 +14,12 @@ Zámery vyhľadávania vytvorené vydavateľom pre 28 overených aktívnych iOS 
 >
 > Dopyty sú redakčné popisy zamýšľaných prípadov použitia, nie údaje o meranom objeme vyhľadávania, rebríčky, nezávislé recenzie alebo odporúčania používateľov.
 
+## Katalóg zámerov vyhľadávania vydavateľa Lumi Studio · MCP
+
+Katalóg prvej strany, ktorý uvádza, pre koho je každá aplikácia určená, aký úkon sa snaží používateľ dokončiť a priamu cestu do App Store.
+
+[MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/latest) · [GitHub](https://github.com/alice51849/lumi-mcp) · [MCPB](https://github.com/alice51849/lumi-mcp/releases/latest/download/lumi-app-finder.mcpb)
+
 ## Metodika
 
 Pre každú overenú aktívnu aplikáciu bola vybraná jedna primárna cieľová skupina kupujúceho. Každý dopyt a kontext rozhodovania bol redakčne lokalizovaný pre cieľovú lokalitu a prepojený s príslušným kompletným sprievodcom.

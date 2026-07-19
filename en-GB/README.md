@@ -14,6 +14,12 @@ Publisher-authored search intents across 28 verified live iOS apps and 50 Apple 
 >
 > The queries are editorial descriptions of intended use cases, not measured search-volume data, rankings, independent reviews, or user endorsements.
 
+## Lumi Studio Publisher Search Intent Catalogue · MCP
+
+A first-party catalogue of who each app is designed for, the task they are trying to complete, and the direct App Store path.
+
+[MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/latest) · [GitHub](https://github.com/alice51849/lumi-mcp) · [MCPB](https://github.com/alice51849/lumi-mcp/releases/latest/download/lumi-app-finder.mcpb)
+
 ## Methodology
 
 One primary buyer persona was selected for each verified live app. Each query and decision context was editorially localised for the target locale and linked to the matching full guide.

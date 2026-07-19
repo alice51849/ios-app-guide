@@ -14,6 +14,12 @@
 >
 > ਇਹ ਪੁੱਛਗਿੱਛਾਂ ਉਦੇਸ਼ਿਤ ਵਰਤੋਂ ਦੇ ਕੇਸਾਂ ਦੀ ਸੰਪਾਦਕੀ ਵਰਣਨਾ ਹਨ, ਨਾ ਕਿ ਮਾਪੇ ਗਏ ਖੋਜ-ਮਾਤਰਾ ਡੇਟਾ, ਰੈਂਕਿੰਗ, ਸਵਤੰਤਰ ਸਮੀਖਿਆਵਾਂ ਜਾਂ ਉਪਭੋਗਤਾ ਸਿਫਾਰਸ਼ਾਂ।
 
+## Lumi Studio ਪ੍ਰਕਾਸ਼ਕ ਖੋਜ ਇਰਾਦਾ ਕੈਟਾਲੌਗ · MCP
+
+ਇੱਕ ਪਹਿਲਾ-ਪੱਖ ਕੈਟਾਲੌਗ ਜਿਸ ਵਿੱਚ ਦਰਸਾਇਆ ਗਿਆ ਹੈ ਕਿ ਹਰ ਐਪ ਕਿਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ, ਉਹ ਕਿਹੜਾ ਕੰਮ ਪੂਰਾ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਿਹਾ ਹੈ, ਅਤੇ ਸਿੱਧਾ App Store ਪੱਥ।
+
+[MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/latest) · [GitHub](https://github.com/alice51849/lumi-mcp) · [MCPB](https://github.com/alice51849/lumi-mcp/releases/latest/download/lumi-app-finder.mcpb)
+
 ## ਵਿਧੀਵਿਧਾਨ
 
 ਹਰ ਪ੍ਰਮਾਣਿਤ ਜੀਵੰਤ ਐਪ ਲਈ ਇੱਕ ਮੁੱਖ ਖਰੀਦਦਾਰ ਪਾਤਰ ਚੁਣਿਆ ਗਿਆ। ਹਰ ਪੁੱਛਗਿੱਛ ਅਤੇ ਫੈਸਲਾ ਸੰਦਰਭ ਨੂੰ ਸੰਪਾਦਕੀ ਤੌਰ 'ਤੇ ਲਕਸ਼ਿਤ ਸਥਾਨਕ ਭਾਸ਼ਾ ਵਿੱਚ ਅਨੁਵਾਦ ਕੀਤਾ ਗਿਆ ਅਤੇ ਮਿਲਦੇ ਜੁਲਦੇ ਪੂਰੇ ਗਾਈਡ ਨਾਲ ਜੋੜਿਆ ਗਿਆ।

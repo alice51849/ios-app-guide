@@ -14,6 +14,12 @@
 >
 > 这些查询是针对预期使用场景撰写的编辑说明，并非实测搜索量数据、排名、独立评测或用户推荐。
 
+## Lumi Studio 开发者搜索意图目录 · MCP
+
+第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。
+
+[MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/latest) · [GitHub](https://github.com/alice51849/lumi-mcp) · [MCPB](https://github.com/alice51849/lumi-mcp/releases/latest/download/lumi-app-finder.mcpb)
+
 ## 方法说明
 
 每款已验证上架的 App 各选择一个主要购买者画像。每条查询和决策场景均按目标地区语言进行编辑和本地化，并链接至对应的完整指南。

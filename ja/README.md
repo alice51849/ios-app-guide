@@ -14,6 +14,12 @@ App Store での公開を確認済みの 28 個の iOS アプリと、Apple の 
 >
 > クエリは想定利用場面を編集方針に基づいて記述したものであり、実測検索ボリューム、ランキング、独立レビュー、ユーザーによる推奨ではありません。
 
+## Lumi Studio 開発元検索意図カタログ · MCP
+
+各アプリの対象ユーザー、達成したいタスク、App Store への直接の導線を、開発元が公開するカタログです。
+
+[MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/latest) · [GitHub](https://github.com/alice51849/lumi-mcp) · [MCPB](https://github.com/alice51849/lumi-mcp/releases/latest/download/lumi-app-finder.mcpb)
+
 ## 方法論
 
 App Store での公開を確認済みの各アプリから、主要な購入者ペルソナを1つ選定しました。各クエリと判断材料は対象地域向けに編集・ローカライズし、対応する詳細ガイドへリンクしています。

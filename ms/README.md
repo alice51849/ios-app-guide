@@ -14,6 +14,12 @@ Niat carian yang ditulis penerbit untuk 28 aplikasi iOS yang disahkan dan tersed
 >
 > Pertanyaan ialah penerangan editorial tentang kegunaan yang dimaksudkan, bukan data volum carian yang diukur, kedudukan, ulasan bebas atau saranan pengguna.
 
+## Katalog Niat Carian Penerbit Lumi Studio · MCP
+
+Katalog yang diterbitkan terus oleh pembangun untuk menerangkan sasaran setiap aplikasi, tugasan yang mahu diselesaikan dan akses terus ke App Store.
+
+[MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/latest) · [GitHub](https://github.com/alice51849/lumi-mcp) · [MCPB](https://github.com/alice51849/lumi-mcp/releases/latest/download/lumi-app-finder.mcpb)
+
 ## Metodologi
 
 Satu profil pembeli utama dipilih untuk setiap aplikasi yang disahkan dan tersedia. Setiap pertanyaan dan konteks keputusan disunting dan disetempatkan untuk bahasa serta rantau sasaran, kemudian dipautkan kepada panduan penuh yang sepadan.

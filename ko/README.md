@@ -14,6 +14,12 @@ App Store 제공 여부를 확인한 28개 iOS 앱과 Apple의 50개 언어·지
 >
 > 검색어는 예상 사용 사례를 편집 기준에 따라 설명한 것이며, 실제 측정된 검색량 데이터, 순위, 독립 리뷰 또는 사용자 추천이 아닙니다.
 
+## Lumi Studio 개발사 검색 의도 카탈로그 · MCP
+
+각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.
+
+[MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/latest) · [GitHub](https://github.com/alice51849/lumi-mcp) · [MCPB](https://github.com/alice51849/lumi-mcp/releases/latest/download/lumi-app-finder.mcpb)
+
 ## 방법론
 
 App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르소나 1개를 선정했습니다. 각 검색어와 의사결정 맥락은 대상 지역에 맞게 편집·현지화하고 해당 상세 가이드에 연결했습니다.

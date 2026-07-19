@@ -14,6 +14,12 @@ Her uygulamanın kimler için tasarlandığını, tamamlamaya çalıştıkları 
 >
 > Sorgular, amaçlanan kullanım durumlarının editoryal açıklamalarıdır; ölçülmüş arama hacmi verileri, sıralamalar, bağımsız incelemeler veya kullanıcı onayları değildir.
 
+## Lumi Studio Yayıncı Arama Niyeti Kataloğu · MCP
+
+Her uygulamanın kimler için tasarlandığını, tamamlamaya çalıştıkları görevi ve doğrudan App Store yolunu gösteren bir birinci taraf katalog.
+
+[MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/latest) · [GitHub](https://github.com/alice51849/lumi-mcp) · [MCPB](https://github.com/alice51849/lumi-mcp/releases/latest/download/lumi-app-finder.mcpb)
+
 ## Metodoloji
 
 Her doğrulanmış canlı uygulama için birincil bir alıcı kişilik seçildi. Her sorgu ve karar bağlamı hedef yerel için editoryal olarak yerelleştirildi ve eşleşen tam rehbere bağlandı.

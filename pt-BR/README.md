@@ -14,6 +14,12 @@ Intenções de busca redigidas pela publicadora para 28 apps iOS verificados e d
 >
 > As consultas são descrições editoriais dos usos previstos, não dados medidos de volume de busca, classificações, avaliações independentes nem recomendações de usuários.
 
+## Catálogo de intenções de busca da publicadora Lumi Studio · MCP
+
+Um catálogo publicado diretamente pela desenvolvedora que mostra para quem cada app foi criado, a tarefa que a pessoa quer concluir e o acesso direto à App Store.
+
+[MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/latest) · [GitHub](https://github.com/alice51849/lumi-mcp) · [MCPB](https://github.com/alice51849/lumi-mcp/releases/latest/download/lumi-app-finder.mcpb)
+
 ## Metodologia
 
 Foi selecionado um perfil principal de comprador para cada app verificado e disponível. Cada consulta e contexto de decisão foi adaptado editorialmente ao idioma e à região de destino e associado ao guia completo correspondente.

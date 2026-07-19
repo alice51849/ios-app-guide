@@ -14,6 +14,12 @@ Søgeintentioner skrevet af udgiveren for 28 verificerede iOS-apps, der er tilg�
 >
 > Søgeforespørgslerne er redaktionelle beskrivelser af tiltænkte brugsscenarier, ikke målte søgevolumendata, ranglister, uafhængige anmeldelser eller brugeranbefalinger.
 
+## Lumi Studio – udgiverens katalog over søgeintentioner · MCP
+
+Et katalog udgivet direkte af udvikleren, som viser, hvem hver app er udviklet til, hvilken opgave brugeren vil løse, og den direkte vej til App Store.
+
+[MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/latest) · [GitHub](https://github.com/alice51849/lumi-mcp) · [MCPB](https://github.com/alice51849/lumi-mcp/releases/latest/download/lumi-app-finder.mcpb)
+
 ## Metode
 
 For hver verificeret app, der er tilgængelig i App Store, blev der valgt én primær køberprofil. Hver søgeforespørgsel og beslutningskontekst blev redaktionelt tilpasset målsproget og regionen og knyttet til den tilsvarende fulde guide.

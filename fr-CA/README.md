@@ -14,6 +14,12 @@ Intentions de recherche rédigées par l’éditeur pour 28 apps iOS vérifiées
 >
 > Les requêtes sont des descriptions éditoriales des cas d’utilisation prévus, et non des données mesurées de volume de recherche, des classements, des avis indépendants ou des recommandations d’utilisateurs.
 
+## Catalogue des intentions de recherche de l’éditeur Lumi Studio · MCP
+
+Un catalogue publié directement par le développeur qui indique à qui chaque app est destinée, la tâche à accomplir et l’accès direct à l’App Store.
+
+[MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/latest) · [GitHub](https://github.com/alice51849/lumi-mcp) · [MCPB](https://github.com/alice51849/lumi-mcp/releases/latest/download/lumi-app-finder.mcpb)
+
 ## Méthodologie
 
 Un profil d’acheteur principal a été sélectionné pour chaque app vérifiée et disponible. Chaque requête et chaque contexte de décision ont été adaptés sur le plan éditorial à la langue et à la région cibles, puis reliés au guide complet correspondant.

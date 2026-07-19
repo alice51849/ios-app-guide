@@ -14,6 +14,12 @@ Iskalni nameni, ki jih je pripravil založnik, za 28 preverjenih aktivnih iOS ap
 >
 > Poizvedbe so uredniški opisi predvidenih primerov uporabe, ne pa podatki o obsegu iskanja, uvrstitve, neodvisne ocene ali priporočila uporabnikov.
 
+## Katalog iskalnih namenov založnika Lumi Studio · MCP
+
+Katalog prve roke, ki opisuje, za koga je vsaka aplikacija namenjena, katero nalogo poskuša uporabnik opraviti in neposredno pot do App Store.
+
+[MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/latest) · [GitHub](https://github.com/alice51849/lumi-mcp) · [MCPB](https://github.com/alice51849/lumi-mcp/releases/latest/download/lumi-app-finder.mcpb)
+
 ## Metodologija
 
 Za vsako preverjeno aktivno aplikacijo je bila izbrana ena primarna ciljna skupina kupcev. Vsaka poizvedba in kontekst odločitve sta bila uredniško lokalizirana za ciljno lokalizacijo in povezana z ustreznim celovitim vodnikom.

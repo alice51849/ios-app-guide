@@ -14,6 +14,12 @@ Vyhledávací záměry vytvořené vydavatelem napříč 28 ověřenými aktivn�
 >
 > Dotazy jsou redakční popisy zamýšlených použití, nikoli měřená data o objemu vyhledávání, žebříčky, nezávislé recenze ani uživatelská doporučení.
 
+## Katalog vyhledávacích záměrů vydavatele Lumi Studio · MCP
+
+Katalog od první strany, který uvádí, pro koho je každá aplikace určena, jaký úkol má splnit a přímou cestu do App Store.
+
+[MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/latest) · [GitHub](https://github.com/alice51849/lumi-mcp) · [MCPB](https://github.com/alice51849/lumi-mcp/releases/latest/download/lumi-app-finder.mcpb)
+
 ## Metodologie
 
 Pro každou ověřenou aktivní aplikaci byl vybrán jeden hlavní typ kupujícího. Každý dotaz a kontext rozhodování byl redakčně lokalizován pro cílovou lokalitu a propojen s odpovídajícím úplným průvodcem.

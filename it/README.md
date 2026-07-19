@@ -14,6 +14,12 @@ Intenti di ricerca redatti dall'editore per 28 app iOS verificate e disponibili 
 >
 > Le richieste di ricerca sono descrizioni editoriali degli usi previsti, non dati misurati sul volume di ricerca, classifiche, recensioni indipendenti o approvazioni degli utenti.
 
+## Catalogo degli intenti di ricerca dell'editore Lumi Studio · MCP
+
+Un catalogo pubblicato direttamente dallo sviluppatore che indica a chi è destinata ogni app, l'attività da completare e l'accesso diretto all'App Store.
+
+[MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/latest) · [GitHub](https://github.com/alice51849/lumi-mcp) · [MCPB](https://github.com/alice51849/lumi-mcp/releases/latest/download/lumi-app-finder.mcpb)
+
 ## Metodologia
 
 Per ogni app verificata e disponibile è stato selezionato un profilo principale di acquirente. Ogni richiesta di ricerca e contesto decisionale è stato adattato editorialmente alla lingua e all'area geografica di destinazione e collegato alla guida completa corrispondente.

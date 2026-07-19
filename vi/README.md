@@ -14,6 +14,12 @@ Danh mục do chính nhà phát triển công bố, cho biết từng ứng dụ
 >
 > Các truy vấn là phần mô tả biên tập về trường hợp sử dụng dự kiến, không phải dữ liệu lượng tìm kiếm đã đo, bảng xếp hạng, đánh giá độc lập hay lời chứng thực của người dùng.
 
+## Danh mục ý định tìm kiếm của nhà phát hành Lumi Studio · MCP
+
+Danh mục do chính nhà phát triển công bố, cho biết từng ứng dụng dành cho ai, nhiệm vụ họ muốn hoàn thành và lối truy cập trực tiếp đến App Store.
+
+[MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/latest) · [GitHub](https://github.com/alice51849/lumi-mcp) · [MCPB](https://github.com/alice51849/lumi-mcp/releases/latest/download/lumi-app-finder.mcpb)
+
 ## Phương pháp luận
 
 Mỗi ứng dụng đã xác minh và đang có trên App Store được chọn một hồ sơ người mua chính. Từng truy vấn và bối cảnh quyết định được biên tập, bản địa hóa theo ngôn ngữ và khu vực mục tiêu rồi liên kết với hướng dẫn đầy đủ tương ứng.

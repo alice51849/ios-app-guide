@@ -76,6 +76,32 @@ class GitHubDiscoveryOutputTests(unittest.TestCase):
             expected - {self.pages / "README.md"},
         )
 
+    def test_every_readme_exposes_the_public_mcp_distribution(self) -> None:
+        paths = [
+            self.pages / "README.md",
+            *[
+                self.pages / locale / "README.md"
+                for locale in OFFICIAL_LOCALES
+            ],
+        ]
+        for path in paths:
+            with self.subTest(path=path):
+                source = path.read_text(encoding="utf-8")
+                self.assertEqual(
+                    1,
+                    source.count(
+                        f"[MCP Registry]({discovery.MCP_REGISTRY_URL})"
+                    ),
+                )
+                self.assertEqual(
+                    1,
+                    source.count(f"[GitHub]({discovery.MCP_REPOSITORY_URL})"),
+                )
+                self.assertEqual(
+                    1,
+                    source.count(f"[MCPB]({discovery.MCP_BUNDLE_URL})"),
+                )
+
     def test_every_readme_has_complete_native_buyer_intent_rows(self) -> None:
         for locale in OFFICIAL_LOCALES:
             with self.subTest(locale=locale):

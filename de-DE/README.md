@@ -14,6 +14,12 @@ Vom Herausgeber verfasste Suchintentionen für 28 verifizierte, im App Store ver
 >
 > Die Suchanfragen sind redaktionelle Beschreibungen der vorgesehenen Anwendungsfälle und keine gemessenen Suchvolumendaten, Ranglisten, unabhängigen Bewertungen oder Nutzerempfehlungen.
 
+## Lumi Studio – Katalog der Suchintentionen des Herausgebers · MCP
+
+Ein direkt vom Entwickler veröffentlichter Katalog, der zeigt, für wen jede App entwickelt wurde, welche Aufgabe die jeweilige Person erledigen möchte und wie sie direkt zum App Store gelangt.
+
+[MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/latest) · [GitHub](https://github.com/alice51849/lumi-mcp) · [MCPB](https://github.com/alice51849/lumi-mcp/releases/latest/download/lumi-app-finder.mcpb)
+
 ## Methodik
 
 Für jede verifizierte, im App Store verfügbare App wurde eine primäre Käuferpersona ausgewählt. Jede Suchanfrage und jeder Entscheidungskontext wurde redaktionell an die Ziel-Sprachregion angepasst und mit dem passenden vollständigen Leitfaden verknüpft.

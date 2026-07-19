@@ -14,6 +14,12 @@ Intencions de cerca escrites pel publicador per a 28 apps iOS verificades i acti
 >
 > Les consultes són descripcions editorials dels casos d'ús previstos, no dades de volum de cerca mesurat, classificacions, ressenyes independents ni recomanacions d'usuaris.
 
+## Catàleg d'intencions de cerca de Lumi Studio Editor · MCP
+
+Catàleg de primera mà que mostra per a qui està dissenyada cada app, la tasca que volen completar i el camí directe a l'App Store.
+
+[MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/latest) · [GitHub](https://github.com/alice51849/lumi-mcp) · [MCPB](https://github.com/alice51849/lumi-mcp/releases/latest/download/lumi-app-finder.mcpb)
+
 ## Metodologia
 
 S'ha seleccionat un perfil principal de comprador per a cada aplicació verificada i activa. Cada consulta i situació de decisió s'ha localitzat editorialment per al local objectiu i s'ha enllaçat amb la guia completa corresponent.

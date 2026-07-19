@@ -6,10 +6,12 @@ from __future__ import annotations
 import csv
 import hashlib
 import html
+import importlib.util
 import json
 import os
 from pathlib import Path
 import re
+import subprocess
 import sys
 import unittest
 import unicodedata
@@ -321,6 +323,123 @@ class PublisherIntentOutputTests(unittest.TestCase):
             format_checker=FormatChecker(),
         ).validate(self.payload)
 
+    def test_croissant_metadata_exposes_all_locales_and_direct_store_fields(
+        self,
+    ) -> None:
+        path = self.data_dir / catalog.CROISSANT_FILENAME
+        metadata = json.loads(path.read_text(encoding="utf-8"))
+        self.assertEqual(catalog.CROISSANT_CONTEXT, metadata["@context"])
+        self.assertEqual("sc:Dataset", metadata["@type"])
+        self.assertEqual(catalog.CROISSANT_SPEC, metadata["conformsTo"])
+        self.assertEqual(set(OFFICIAL_LOCALES), set(metadata["name"]))
+        self.assertEqual(set(OFFICIAL_LOCALES), set(metadata["description"]))
+        self.assertEqual(list(OFFICIAL_LOCALES), metadata["inLanguage"])
+        self.assertFalse(metadata["isLiveDataset"])
+        self.assertTrue(metadata["isAccessibleForFree"])
+
+        distributions = {
+            item["@id"]: item for item in metadata["distribution"]
+        }
+        expected_files = {
+            f"{catalog.SLUG}.json",
+            f"{catalog.SLUG}.jsonl",
+            f"{catalog.SLUG}.csv",
+        }
+        self.assertEqual(expected_files, set(distributions))
+        for filename, distribution in distributions.items():
+            source = self.data_dir / filename
+            self.assertEqual(
+                hashlib.sha256(source.read_bytes()).hexdigest(),
+                distribution["sha256"],
+            )
+            self.assertEqual(
+                f"{source.stat().st_size} B",
+                distribution["contentSize"],
+            )
+
+        record_set = metadata["recordSet"][0]
+        self.assertEqual("publisher_intents", record_set["@id"])
+        self.assertEqual(
+            {"@id": "publisher_intents/record_id"},
+            record_set["key"],
+        )
+        expected_examples = [
+            {
+                f"publisher_intents/{field}": record[field]
+                for field in catalog.CSV_FIELDS
+            }
+            for record in self.records[:2]
+        ]
+        self.assertEqual(expected_examples, record_set["examples"])
+        self.assertNotIn(
+            "publisher_intents/app_store_cta_label",
+            record_set["examples"][0],
+        )
+        fields = {
+            field["name"]: field for field in record_set["field"]
+        }
+        self.assertEqual(set(catalog.CSV_FIELDS), set(fields))
+        self.assertEqual(
+            "sc:URL",
+            fields["app_store_url"]["dataType"],
+        )
+        self.assertEqual(
+            "https://schema.org/downloadUrl",
+            fields["app_store_url"]["equivalentProperty"],
+        )
+        for field in fields.values():
+            self.assertEqual(
+                {"@id": f"{catalog.SLUG}.csv"},
+                field["source"]["fileObject"],
+            )
+            self.assertEqual(
+                {"column": field["name"]},
+                field["source"]["extract"],
+            )
+
+    @unittest.skipUnless(
+        importlib.util.find_spec("mlcroissant"),
+        "Official Croissant validation dependency is installed in CI",
+    )
+    def test_croissant_loads_all_records_with_official_reader(self) -> None:
+        import mlcroissant
+
+        metadata_path = self.data_dir / catalog.CROISSANT_FILENAME
+        dataset = mlcroissant.Dataset(
+            jsonld=metadata_path,
+            mapping={
+                f"{catalog.SLUG}.csv": (
+                    self.data_dir / f"{catalog.SLUG}.csv"
+                ),
+            },
+        )
+        loaded = list(dataset.records(record_set="publisher_intents"))
+        self.assertEqual(catalog.EXPECTED_RECORD_COUNT, len(loaded))
+        self.assertEqual(
+            {
+                f"publisher_intents/{field}"
+                for field in catalog.CSV_FIELDS
+            },
+            set(loaded[0]),
+        )
+        validator = Path(sys.executable).with_name("mlcroissant")
+        result = subprocess.run(
+            [
+                str(validator),
+                "validate",
+                "--jsonld",
+                str(metadata_path),
+            ],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        self.assertEqual(
+            0,
+            result.returncode,
+            result.stdout + result.stderr,
+        )
+
     def test_root_and_all_localized_landings_are_complete(self) -> None:
         pages = [
             ("en", self.data_dir / f"{catalog.SLUG}.html"),
@@ -398,6 +517,7 @@ class PublisherIntentOutputTests(unittest.TestCase):
             self.assertIsNotNone(schema_match)
             schema = json.loads(html.unescape(schema_match.group(1)))
             self.assertEqual("Dataset", schema["@type"])
+            self.assertEqual(catalog.CROISSANT_SPEC, schema["conformsTo"])
             self.assertEqual("Lumi Studio", schema["creator"]["name"])
             mcp = schema["subjectOf"]
             self.assertEqual("SoftwareApplication", mcp["@type"])
@@ -416,17 +536,27 @@ class PublisherIntentOutputTests(unittest.TestCase):
                 f'href="{catalog.MCP_BUNDLE_URL}"',
                 source,
             )
-            self.assertEqual(3, len(schema["distribution"]))
+            self.assertEqual(4, len(schema["distribution"]))
             self.assertEqual(
                 {
                     "application/json",
                     "application/x-ndjson",
                     "text/csv",
+                    catalog.CROISSANT_MEDIA_TYPE,
                 },
                 {
                     distribution["encodingFormat"]
                     for distribution in schema["distribution"]
                 },
+            )
+            self.assertIn(
+                f'rel="describedby" type="application/ld+json" '
+                f'href="{catalog.CROISSANT_URL}"',
+                source,
+            )
+            self.assertIn(
+                f'href="{catalog.CROISSANT_URL}">Croissant 1.1</a>',
+                source,
             )
 
     def test_data_hub_and_sitemap_discover_every_landing(self) -> None:
@@ -434,11 +564,13 @@ class PublisherIntentOutputTests(unittest.TestCase):
         self.assertIn(catalog.NAME, index)
         self.assertIn(f"{catalog.SLUG}.jsonl", index)
         self.assertIn(f"{catalog.SLUG}.csv", index)
+        self.assertIn(catalog.CROISSANT_FILENAME, index)
         self.assertIn("white-space:nowrap", index)
         sitemap = (self.pages / "sitemap_data.xml").read_text(
             encoding="utf-8"
         )
         self.assertEqual(51, sitemap.count(f"/{catalog.SLUG}.html"))
+        self.assertIn(catalog.CROISSANT_URL, sitemap)
         feed = json.loads(
             (self.pages / "feed.json").read_text(encoding="utf-8")
         )
@@ -456,6 +588,7 @@ class PublisherIntentOutputTests(unittest.TestCase):
             self.assertIn(f"{catalog.SLUG}.jsonl", llms)
             self.assertIn(f"{catalog.SLUG}.csv", llms)
             self.assertIn(f"{catalog.SLUG}.schema.json", llms)
+            self.assertIn(catalog.CROISSANT_FILENAME, llms)
 
     def test_generated_outputs_are_content_stable(self) -> None:
         digest = hashlib.sha256(

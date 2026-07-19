@@ -29,6 +29,8 @@ from pathlib import Path
 from family_travel_dataset import build as build_family_travel_dataset
 from official_locales import OFFICIAL_LOCALES
 from publisher_intent_catalog import (
+    CROISSANT_MEDIA_TYPE as PUBLISHER_INTENT_CROISSANT_MEDIA_TYPE,
+    CROISSANT_SUFFIX as PUBLISHER_INTENT_CROISSANT_SUFFIX,
     EXPECTED_APP_COUNT as PUBLISHER_INTENT_APP_COUNT,
     EXPECTED_RECORD_COUNT as PUBLISHER_INTENT_RECORD_COUNT,
     build as build_publisher_intent_catalog,
@@ -1417,6 +1419,14 @@ def build_sitemap(datasets):
         )
         for slug, locale in localized_entries
     )
+    entries.extend(
+        (
+            f"{SITE}/data/{dataset['slug']}.{suffix}",
+            modified[dataset["slug"]],
+        )
+        for dataset in datasets
+        for suffix in dataset.get("indexed_distributions", [])
+    )
     body = "\n".join(
         f"  <url><loc>{url}</loc><lastmod>{lastmod}</lastmod></url>"
         for url, lastmod in entries
@@ -1562,14 +1572,18 @@ def main():
             "First-party decision contexts for "
             f"{PUBLISHER_INTENT_APP_COUNT} verified live iOS apps "
             "across all 50 Apple locales, with direct guides and attributed "
-            "App Store paths. Editorial use cases only: not measured search "
+            "App Store paths and MLCommons Croissant 1.1 metadata. "
+            "Editorial use cases only: not measured search "
             "volume, rankings, independent reviews, or endorsements."
         ),
         "tag": (
             f"{PUBLISHER_INTENT_RECORD_COUNT:,} records · "
-            f"{PUBLISHER_INTENT_APP_COUNT} apps · 50 locales"
+            f"{PUBLISHER_INTENT_APP_COUNT} apps · 50 locales · Croissant 1.1"
         ),
         "localized_locales": list(OFFICIAL_LOCALES),
+        "indexed_distributions": [
+            PUBLISHER_INTENT_CROISSANT_SUFFIX,
+        ],
         "distributions": [
             {
                 "encodingFormat": "application/json",
@@ -1582,6 +1596,10 @@ def main():
             {
                 "encodingFormat": "text/csv",
                 "suffix": "csv",
+            },
+            {
+                "encodingFormat": PUBLISHER_INTENT_CROISSANT_MEDIA_TYPE,
+                "suffix": PUBLISHER_INTENT_CROISSANT_SUFFIX,
             },
         ],
     }]

@@ -101,6 +101,13 @@ class GitHubDiscoveryOutputTests(unittest.TestCase):
                     1,
                     source.count(f"[MCPB]({discovery.MCP_BUNDLE_URL})"),
                 )
+                self.assertEqual(
+                    1,
+                    source.count(
+                        "[MLCommons Croissant 1.1]"
+                        f"({catalog.CROISSANT_URL})"
+                    ),
+                )
 
     def test_every_readme_has_complete_native_buyer_intent_rows(self) -> None:
         for locale in OFFICIAL_LOCALES:

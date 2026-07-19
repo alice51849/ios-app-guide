@@ -339,6 +339,10 @@ def _render_readme(
                     "CSV",
                     f"{catalog.SITE}/data/{catalog.SLUG}.csv",
                 ),
+                _markdown_link(
+                    "MLCommons Croissant 1.1",
+                    catalog.CROISSANT_URL,
+                ),
             )
         ),
         "",

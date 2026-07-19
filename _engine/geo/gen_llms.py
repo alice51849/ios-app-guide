@@ -82,6 +82,7 @@ DATA_DOWNLOAD_FORMATS = (
     ("JSONL", "jsonl"),
     ("CSV", "csv"),
     ("JSON Schema", "schema.json"),
+    ("MLCommons Croissant 1.1", "croissant.jsonld"),
 )
 WORDMATE_LANGUAGE_DATASET = "wordmate-language-support"
 WORDMATE_LANGUAGE_TOOL = "wordmate-44-language-support-checker"

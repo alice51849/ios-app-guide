@@ -45,6 +45,64 @@ MCP_BUNDLE_URL = (
     "https://github.com/alice51849/lumi-mcp/releases/latest/download/"
     "lumi-app-finder.mcpb"
 )
+CROISSANT_SPEC = "http://mlcommons.org/croissant/1.1"
+CROISSANT_SUFFIX = "croissant.jsonld"
+CROISSANT_FILENAME = f"{SLUG}.{CROISSANT_SUFFIX}"
+CROISSANT_URL = f"{SITE}/data/{CROISSANT_FILENAME}"
+CROISSANT_MEDIA_TYPE = (
+    'application/ld+json; profile="http://mlcommons.org/croissant/1.1"'
+)
+CROISSANT_CONTEXT = {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "sc": "https://schema.org/",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "dct": "http://purl.org/dc/terms/",
+    "annotation": "cr:annotation",
+    "arrayShape": "cr:arrayShape",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "containedIn": "cr:containedIn",
+    "data": {"@id": "cr:data", "@type": "@json"},
+    "dataType": {"@id": "cr:dataType", "@type": "@vocab"},
+    "description": {"@container": "@language"},
+    "equivalentProperty": "cr:equivalentProperty",
+    "examples": {"@id": "cr:examples", "@type": "@json"},
+    "excludes": "cr:excludes",
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isArray": "cr:isArray",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "name": {"@container": "@language"},
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "readLines": "cr:readLines",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sdVersion": "cr:sdVersion",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform",
+    "unArchive": "cr:unArchive",
+    "value": "cr:value",
+}
+DATASET_VERSION = "1.0.0"
+INITIAL_DATE = "2026-07-19"
 TODAY_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
 RTL_LOCALES = frozenset({"ar-SA", "he", "ur-PK"})
 BASE_APP_COUNT = 26
@@ -104,6 +162,99 @@ CSV_FIELDS = (
     "is_ranking",
     "verified_live",
 )
+
+CROISSANT_FIELD_SPECS = {
+    "record_id": (
+        "sc:Text",
+        "Stable identifier combining locale, app key and publisher query.",
+        "https://schema.org/identifier",
+    ),
+    "locale": (
+        "sc:Text",
+        "Apple App Store locale used for the localized decision context.",
+        "https://schema.org/inLanguage",
+    ),
+    "app_key": (
+        "sc:Text",
+        "Stable publisher key for the verified live iOS app.",
+        None,
+    ),
+    "app_name": (
+        "sc:Text",
+        "Localized app name shown on the matching guide.",
+        "https://schema.org/name",
+    ),
+    "app_store_id": (
+        "sc:Text",
+        "Numeric Apple App Store identifier.",
+        "https://schema.org/identifier",
+    ),
+    "publisher_query": (
+        "sc:Text",
+        "Editorially localized high-intent query for the app and persona.",
+        None,
+    ),
+    "decision_context": (
+        "sc:Text",
+        "Localized problem context explaining when the app may fit.",
+        "https://schema.org/description",
+    ),
+    "purchase_model": (
+        "sc:Text",
+        "Truthful purchase-model classification from the publisher catalog.",
+        None,
+    ),
+    "one_time_option": (
+        "sc:Boolean",
+        "Whether the catalog records a one-time purchase option.",
+        None,
+    ),
+    "source_persona_query": (
+        "sc:Text",
+        "Canonical English persona query used as the localization source.",
+        None,
+    ),
+    "canonical_guide_url": (
+        "sc:URL",
+        "Canonical localized guide that supports the decision context.",
+        "https://schema.org/url",
+    ),
+    "canonical_app_store_url": (
+        "sc:URL",
+        "Storefront-neutral canonical Apple App Store listing URL.",
+        "https://schema.org/sameAs",
+    ),
+    "app_store_url": (
+        "sc:URL",
+        "Verified locale-aware direct App Store URL with campaign attribution.",
+        "https://schema.org/downloadUrl",
+    ),
+    "publisher_disclosure": (
+        "sc:Text",
+        "First-party disclosure shown on the localized guide.",
+        None,
+    ),
+    "query_origin": (
+        "sc:Text",
+        "Provenance classification for the editorial query.",
+        None,
+    ),
+    "measured_search_volume": (
+        "sc:Boolean",
+        "Always false because these are not measured search-volume records.",
+        None,
+    ),
+    "is_ranking": (
+        "sc:Boolean",
+        "Always false because the catalog is not a ranking.",
+        None,
+    ),
+    "verified_live": (
+        "sc:Boolean",
+        "True only when the app passed the public App Store availability gate.",
+        None,
+    ),
+}
 
 
 def write_text_if_changed(path: Path, content: str) -> bool:
@@ -656,6 +807,223 @@ def _csv_text(records: list[dict[str, Any]]) -> str:
     return output.getvalue()
 
 
+def _file_sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def _croissant_file_object(
+    data_dir: Path,
+    suffix: str,
+    media_type: str,
+    description: str,
+) -> dict[str, Any]:
+    filename = f"{SLUG}.{suffix}"
+    path = data_dir / filename
+    return {
+        "@type": "cr:FileObject",
+        "@id": filename,
+        "name": filename,
+        "description": description,
+        "contentUrl": f"{SITE}/data/{filename}",
+        "contentSize": f"{path.stat().st_size} B",
+        "encodingFormat": media_type,
+        "sha256": _file_sha256(path),
+    }
+
+
+def _croissant_field(name: str) -> dict[str, Any]:
+    data_type, description, equivalent_property = CROISSANT_FIELD_SPECS[name]
+    field = {
+        "@type": "cr:Field",
+        "@id": f"publisher_intents/{name}",
+        "name": name,
+        "description": description,
+        "dataType": data_type,
+        "source": {
+            "fileObject": {"@id": f"{SLUG}.csv"},
+            "extract": {"column": name},
+        },
+    }
+    if equivalent_property:
+        field["equivalentProperty"] = equivalent_property
+    return field
+
+
+def _croissant_examples(
+    records: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    return [
+        {
+            f"publisher_intents/{field}": record[field]
+            for field in CSV_FIELDS
+        }
+        for record in records[:2]
+    ]
+
+
+def croissant_metadata(
+    records: list[dict[str, Any]],
+    ui_i18n: dict[str, dict[str, str]],
+    modified: str,
+    data_dir: Path,
+) -> dict[str, Any]:
+    dataset_url = f"{SITE}/data/{SLUG}.html"
+    localized_ui = {
+        locale: dynamic_ui(mapping)
+        for locale, mapping in ui_i18n.items()
+    }
+    distributions = [
+        _croissant_file_object(
+            data_dir,
+            "csv",
+            "text/csv",
+            "Canonical UTF-8 table loaded by the publisher_intents RecordSet.",
+        ),
+        _croissant_file_object(
+            data_dir,
+            "jsonl",
+            "application/x-ndjson",
+            "The same 1,400 records serialized as newline-delimited JSON.",
+        ),
+        _croissant_file_object(
+            data_dir,
+            "json",
+            "application/json",
+            "Dataset envelope with provenance, coverage and all 1,400 records.",
+        ),
+    ]
+    return {
+        "@context": CROISSANT_CONTEXT,
+        "@id": dataset_url,
+        "@type": "sc:Dataset",
+        "conformsTo": CROISSANT_SPEC,
+        "name": {
+            locale: localized_ui[locale][NAME]
+            for locale in OFFICIAL_LOCALES
+        },
+        "description": {
+            locale: localized_ui[locale][DESCRIPTION]
+            for locale in OFFICIAL_LOCALES
+        },
+        "license": LICENSE_URL,
+        "url": dataset_url,
+        "creator": {
+            "@id": f"{SITE}/#organization",
+            "@type": "sc:Organization",
+            "name": "Lumi Studio",
+            "url": SITE,
+        },
+        "publisher": {"@id": f"{SITE}/#organization"},
+        "datePublished": INITIAL_DATE,
+        "dateModified": modified,
+        "version": DATASET_VERSION,
+        "sdVersion": DATASET_VERSION,
+        "isLiveDataset": False,
+        "isAccessibleForFree": True,
+        "inLanguage": list(OFFICIAL_LOCALES),
+        "keywords": [
+            "iOS apps",
+            "App Store",
+            "publisher search intent",
+            "localized app discovery",
+            "mobile application recommendations",
+            "MLCommons Croissant",
+        ],
+        "identifier": f"{SITE}/data/{SLUG}.json",
+        "includedInDataCatalog": f"{SITE}/data/",
+        "isBasedOn": [
+            f"{SITE}/data/{SLUG}.json",
+            f"{SITE}/data/{SLUG}.schema.json",
+        ],
+        "conditionsOfAccess": "Open access; no account or API key required.",
+        "measurementTechnique": METHODOLOGY,
+        "citeAs": (
+            "@misc{lumi_publisher_intent_catalog_2026, "
+            "title={Lumi Studio Publisher Search Intent Catalog}, "
+            "author={Lumi Studio}, year={2026}, "
+            f"url={{{dataset_url}}}}}"
+        ),
+        "distribution": distributions,
+        "recordSet": [
+            {
+                "@type": "cr:RecordSet",
+                "@id": "publisher_intents",
+                "name": "publisher_intents",
+                "description": (
+                    "One publisher-authored localized buyer-intent record for "
+                    "each verified app and Apple locale."
+                ),
+                "dataType": "sc:Thing",
+                "key": {"@id": "publisher_intents/record_id"},
+                "examples": _croissant_examples(records),
+                "field": [
+                    _croissant_field(name)
+                    for name in CSV_FIELDS
+                ],
+            }
+        ],
+    }
+
+
+def validate_croissant_metadata(
+    metadata: dict[str, Any],
+    records: list[dict[str, Any]],
+    data_dir: Path,
+) -> None:
+    if metadata.get("@context") != CROISSANT_CONTEXT:
+        raise ValueError("Croissant metadata must use the local 1.1 context")
+    if metadata.get("@type") != "sc:Dataset":
+        raise ValueError("Croissant top-level type must be sc:Dataset")
+    if metadata.get("conformsTo") != CROISSANT_SPEC:
+        raise ValueError("Croissant metadata must conform to version 1.1")
+    if set(metadata.get("name", {})) != set(OFFICIAL_LOCALES):
+        raise ValueError("Croissant names must cover all official locales")
+    if set(metadata.get("description", {})) != set(OFFICIAL_LOCALES):
+        raise ValueError("Croissant descriptions must cover all official locales")
+    localized_values = [
+        *metadata["name"].values(),
+        *metadata["description"].values(),
+    ]
+    if any(not value.strip() or "\n" in value for value in localized_values):
+        raise ValueError("Croissant localized metadata must stay single-line")
+
+    distributions = {
+        distribution["@id"]: distribution
+        for distribution in metadata.get("distribution", [])
+    }
+    expected_files = {
+        f"{SLUG}.csv",
+        f"{SLUG}.jsonl",
+        f"{SLUG}.json",
+    }
+    if set(distributions) != expected_files:
+        raise ValueError("Croissant distributions are incomplete")
+    for filename, distribution in distributions.items():
+        path = data_dir / filename
+        if distribution["sha256"] != _file_sha256(path):
+            raise ValueError(f"Invalid Croissant checksum for {filename}")
+        if distribution["contentSize"] != f"{path.stat().st_size} B":
+            raise ValueError(f"Invalid Croissant size for {filename}")
+
+    record_sets = metadata.get("recordSet", [])
+    if len(record_sets) != 1 or record_sets[0].get("@id") != "publisher_intents":
+        raise ValueError("Croissant metadata must define publisher_intents")
+    record_set = record_sets[0]
+    if record_set.get("key") != {"@id": "publisher_intents/record_id"}:
+        raise ValueError("record_id must be the Croissant RecordSet key")
+    fields = record_set.get("field", [])
+    if [field.get("name") for field in fields] != list(CSV_FIELDS):
+        raise ValueError("Croissant fields do not match the CSV contract")
+    for field in fields:
+        name = field["name"]
+        if field["source"]["fileObject"] != {"@id": f"{SLUG}.csv"}:
+            raise ValueError(f"{name} must source the canonical CSV")
+        if field["source"]["extract"] != {"column": name}:
+            raise ValueError(f"{name} uses the wrong CSV column")
+    if record_set.get("examples") != _croissant_examples(records):
+        raise ValueError("Croissant examples must match RecordSet fields")
+
+
 def _alternates() -> str:
     links = [
         f'<link rel="alternate" hreflang="en" '
@@ -685,6 +1053,7 @@ def _schema_org(
         ("application/json", "json"),
         ("application/x-ndjson", "jsonl"),
         ("text/csv", "csv"),
+        (CROISSANT_MEDIA_TYPE, CROISSANT_SUFFIX),
     )
     return {
         "@context": "https://schema.org",
@@ -699,6 +1068,7 @@ def _schema_org(
         "isAccessibleForFree": True,
         "license": LICENSE_URL,
         "dateModified": modified,
+        "conformsTo": CROISSANT_SPEC,
         "creator": {
             "@type": "Organization",
             "@id": f"{SITE}/#organization",
@@ -808,6 +1178,7 @@ def _page(
 <meta name="description" content="{escape(ui[DESCRIPTION], quote=True)}">
 <link rel="canonical" href="{escape(canonical, quote=True)}">
 {_alternates()}
+<link rel="describedby" type="application/ld+json" href="{CROISSANT_URL}" title="MLCommons Croissant 1.1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{escape(ui[NAME], quote=True)}">
 <meta property="og:description" content="{escape(ui[DESCRIPTION], quote=True)}">
@@ -845,7 +1216,7 @@ tr:last-child td{{border-bottom:0}}
 <h1>{escape(ui[NAME])}</h1>
 <p class="lead">{escape(ui[LEAD])}</p>
 <div class="badges"><span class="badge">{escape(ui["1,300 records: 26 apps × 50 locales."])}</span><span class="badge">{escape(ui["First-party publisher catalog"])}</span><span class="badge">{escape(ui["Not measured search volume"])}</span><span class="badge">{escape(ui["Free to download"])}</span><a class="badge" href="{escape(visuals_href, quote=True)}">{escape(ui["Publisher query"])} · SVG</a></div>
-<div class="downloads"><strong>{escape(ui["Download the complete dataset"])}</strong><a class="download" href="{SITE}/data/{SLUG}.json">JSON</a><a class="download" href="{SITE}/data/{SLUG}.jsonl">JSONL</a><a class="download" href="{SITE}/data/{SLUG}.csv">CSV</a></div>
+<div class="downloads"><strong>{escape(ui["Download the complete dataset"])}</strong><a class="download" href="{SITE}/data/{SLUG}.json">JSON</a><a class="download" href="{SITE}/data/{SLUG}.jsonl">JSONL</a><a class="download" href="{SITE}/data/{SLUG}.csv">CSV</a><a class="download" href="{CROISSANT_URL}">Croissant 1.1</a></div>
 <div class="cards"><section class="card"><h2>{escape(ui["Methodology"])}</h2><p>{escape(ui[METHODOLOGY])}</p><p>{escape(ui["Alphabetical by app name — never a ranking."])}</p></section><section class="card"><h2>{escape(ui["What this dataset contains"])}</h2><p>{escape(ui["JSON, JSONL and CSV contain the same 1,300 records."])}</p><p>{escape(ui["Scroll horizontally to inspect every field."])}</p></section></div>
 <section class="card"><h2>{escape(ui["First-party publisher catalog"])}</h2><p>{escape(ui[DISCLOSURE])}</p><p>{escape(ui[NON_MEASURED])}</p></section>
 <section class="card"><h2>{escape(ui[NAME])} · MCP</h2><p>{escape(ui[DESCRIPTION])}</p><p><a href="{escape(MCP_REGISTRY_URL, quote=True)}">MCP Registry</a> · <a href="{escape(MCP_REPOSITORY_URL, quote=True)}">GitHub</a> · <a href="{escape(MCP_BUNDLE_URL, quote=True)}">MCPB</a></p></section>
@@ -895,6 +1266,17 @@ def build(pages: Path = PAGES, today: str | None = None) -> str:
             indent=2,
         )
         + "\n",
+    )
+    croissant = croissant_metadata(
+        records,
+        ui_i18n,
+        modified,
+        data_dir,
+    )
+    validate_croissant_metadata(croissant, records, data_dir)
+    write_text_if_changed(
+        data_dir / CROISSANT_FILENAME,
+        json.dumps(croissant, ensure_ascii=False, indent=2) + "\n",
     )
 
     by_locale = {

@@ -24,6 +24,7 @@ FEATURED = ["sereno", "cyca", "gmoney", "hourstag", "lockhour", "scanto",
             "picclear", "photocream", "snapport", "cvdesk", "sononote", "unblurry"]
 WEBMCP_SOURCE = "https://developer.chrome.com/docs/ai/webmcp/imperative-api"
 FINDER_URL = f"{SITE}/tools/private-pay-once-iphone-app-finder.html"
+PORTFOLIO_CALCULATOR_MARKER = "name:'calculate_recurring_app_cost'"
 
 CSS = ("body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;"
        "background:linear-gradient(180deg,#fff,#f4f7fc);color:#15202e;line-height:1.62}a{color:#2f47c4}"
@@ -168,6 +169,13 @@ def app_cards(live_keys=None):
 def build(live_keys=None):
     slug = "subscription-cost-calculator"
     canon = f"{SITE}/tools/{slug}.html"
+    path = PAGES / "tools" / f"{slug}.html"
+    if (
+        path.is_file()
+        and PORTFOLIO_CALCULATOR_MARKER
+        in path.read_text(encoding="utf-8")
+    ):
+        return canon
     title = "Subscription Cost Calculator: How Much Are Your App Subscriptions Really Costing You? (2026)"
     desc = ("Free calculator: enter your monthly app subscription price, how many apps, and how many years "
             "to see the true lifetime cost \u2014 then compare with one-time \u201cpay once\u201d apps.")
@@ -233,7 +241,6 @@ def build(live_keys=None):
 <script>{JS}{webmcp_script()}</script>
 </body></html>"""
     (PAGES / "tools").mkdir(parents=True, exist_ok=True)
-    path = PAGES / "tools" / f"{slug}.html"
     if not path.exists() or path.read_text(encoding="utf-8") != doc:
         path.write_text(doc, encoding="utf-8")
     return canon

@@ -20649,6 +20649,14 @@ class GeneratorTests(unittest.TestCase):
                     for locale in ("en", *OFFICIAL_LOCALES)
                 )
             )
+            with mock.patch.object(gen_calculator, "PAGES", pages):
+                gen_calculator.build(set())
+            self.assertEqual(
+                english,
+                (
+                    pages / "tools" / "subscription-cost-calculator.html"
+                ).read_text(encoding="utf-8"),
+            )
 
         for page in (english, traditional, arabic):
             self.assertEqual(2, page.count('class="cta"'))
@@ -20657,6 +20665,12 @@ class GeneratorTests(unittest.TestCase):
             self.assertIn("document.modelContext?.registerTool", page)
             self.assertIn("name:'calculate_recurring_app_cost'", page)
             self.assertIn("white-space:nowrap", page)
+            for media_type in (
+                "application/atom+xml",
+                "application/rss+xml",
+                "application/feed+json",
+            ):
+                self.assertIn(f'type="{media_type}"', page)
             self.assertNotIn("fetch(", page)
             self.assertNotIn("localStorage", page)
             self.assertNotIn("sessionStorage", page)
@@ -20666,7 +20680,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn('dir="rtl"', arabic)
         self.assertEqual(
             len(OFFICIAL_LOCALES) + 2,
-            english.count('rel="alternate"'),
+            english.count('rel="alternate" hreflang='),
         )
 
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(

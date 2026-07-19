@@ -30,6 +30,19 @@ SITE = os.environ.get(
 SLUG = "subscription-cost-calculator"
 I18N_PATH = HERE / "portfolio_cost_calculator_i18n.json"
 RTL_LOCALES = frozenset({"ar-SA", "he", "ur-PK"})
+FEED_DISCOVERY_LINKS = "\n".join(
+    (
+        f'<link rel="alternate" type="application/atom+xml" '
+        f'title="iOS App Guide — latest answers &amp; guides (Atom)" '
+        f'href="{SITE}/feed.xml">',
+        f'<link rel="alternate" type="application/rss+xml" '
+        f'title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" '
+        f'href="{SITE}/rss.xml">',
+        f'<link rel="alternate" type="application/feed+json" '
+        f'title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" '
+        f'href="{SITE}/feed.json">',
+    )
+)
 COPY_KEYS = frozenset(
     {
         "title",
@@ -305,6 +318,7 @@ def render_page(
 <meta property="og:url" content="{canonical(locale)}">
 <style>{CSS}</style>
 {schemas}
+{FEED_DISCOVERY_LINKS}
 </head>
 <body>
 <main class="wrap">

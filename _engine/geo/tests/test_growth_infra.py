@@ -640,6 +640,18 @@ class GeneratorTests(unittest.TestCase):
                     encoding="utf-8",
                 )
                 localized_app_pages[locale] = localized_app
+                visual = (
+                    pages
+                    / "visuals"
+                    / locale
+                    / "lumibopomofo.svg"
+                )
+                visual.parent.mkdir(parents=True, exist_ok=True)
+                visual.write_text(
+                    '<svg xmlns="http://www.w3.org/2000/svg" '
+                    'width="1200" height="630"></svg>',
+                    encoding="utf-8",
+                )
             stale_localized = pages / "ja" / "stale.html"
             stale_localized.write_text(
                 "<head><!-- social-preview:start -->old"
@@ -746,10 +758,12 @@ class GeneratorTests(unittest.TestCase):
 
             embed = json.loads(tracked[2].read_text(encoding="utf-8"))
             self.assertEqual("1.0", embed["version"])
-            self.assertEqual("link", embed["type"])
+            self.assertEqual("rich", embed["type"])
             self.assertEqual("Lumi Bopomofo — Zhuyin for Kids", embed["title"])
             self.assertEqual(1200, embed["thumbnail_width"])
             self.assertEqual(675, embed["thumbnail_height"])
+            self.assertEqual(600, embed["width"])
+            self.assertEqual(315, embed["height"])
             self.assertEqual("en", embed["_lumi_locale"])
             self.assertEqual(
                 f"{site}/guides/lumibopomofo.html",
@@ -759,6 +773,26 @@ class GeneratorTests(unittest.TestCase):
                 "https://apps.apple.com/app/id6773017109?ct=iag_oembed_en",
                 embed["_lumi_app_store_url"],
             )
+            self.assertEqual(
+                f"{site}/visuals/en-US/lumibopomofo.svg",
+                embed["_lumi_buyer_intent_image_url"],
+            )
+            self.assertIn(
+                'href="https://apps.apple.com/app/id6773017109'
+                '?ct=iag_oembed_en"',
+                embed["html"],
+            )
+            self.assertIn(
+                f'src="{site}/visuals/en-US/lumibopomofo.svg"',
+                embed["html"],
+            )
+            self.assertNotIn("<script", embed["html"])
+            with self.assertRaisesRegex(ValueError, "App Store URL"):
+                gen_social_previews.rich_oembed_html(
+                    "Unsafe",
+                    f"{site}/visuals/en-US/lumibopomofo.svg",
+                    "javascript:alert(1)",
+                )
             localized_embed = json.loads(
                 tracked[3].read_text(encoding="utf-8")
             )
@@ -770,6 +804,11 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(
                 "https://apps.apple.com/jp/app/id6773017109?ct=iag_oembed_ja",
                 localized_embed["_lumi_app_store_url"],
+            )
+            self.assertEqual("rich", localized_embed["type"])
+            self.assertEqual(
+                f"{site}/visuals/ja/lumibopomofo.svg",
+                localized_embed["_lumi_buyer_intent_image_url"],
             )
             self.assertEqual(
                 {
@@ -789,6 +828,40 @@ class GeneratorTests(unittest.TestCase):
                         "_lumi_app_store_rating_count",
                     )
                 },
+            )
+            downgraded = dict(embed)
+            for field in (
+                "html",
+                "width",
+                "height",
+                "_lumi_buyer_intent_image_url",
+            ):
+                downgraded.pop(field)
+            downgraded["type"] = "link"
+            tracked[2].write_text(
+                json.dumps(downgraded, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+            enriched = gen_social_previews.enrich_oembed_responses(
+                pages,
+                {"lumibopomofo"},
+            )
+            stable_enriched = gen_social_previews.enrich_oembed_responses(
+                pages,
+                {"lumibopomofo"},
+            )
+            self.assertEqual(
+                {
+                    "apps": 1,
+                    "oembed": 51,
+                    "changed_files": 1,
+                },
+                enriched,
+            )
+            self.assertEqual(0, stable_enriched["changed_files"])
+            self.assertEqual(
+                "rich",
+                json.loads(tracked[2].read_text(encoding="utf-8"))["type"],
             )
             localized_source = tracked[4].read_text(encoding="utf-8")
             self.assertEqual(
@@ -1058,11 +1131,18 @@ class GeneratorTests(unittest.TestCase):
                 )
                 payload = json.loads(endpoint.read_text(encoding="utf-8"))
                 self.assertEqual("1.0", payload["version"])
-                self.assertEqual("link", payload["type"])
-                self.assertNotIn("html", payload)
+                self.assertEqual("rich", payload["type"])
                 self.assertEqual(title, payload["title"])
                 self.assertEqual(locale, payload["_lumi_locale"])
                 self.assertEqual(canonical, payload["_lumi_guide_url"])
+                self.assertEqual(
+                    gen_social_previews.OEMBED_SIZE[0],
+                    payload["width"],
+                )
+                self.assertEqual(
+                    gen_social_previews.OEMBED_SIZE[1],
+                    payload["height"],
+                )
                 parsed_store = urllib.parse.urlsplit(
                     payload["_lumi_app_store_url"]
                 )
@@ -1088,6 +1168,35 @@ class GeneratorTests(unittest.TestCase):
                         gen_social_previews._oembed_campaign(locale)
                     ],
                     urllib.parse.parse_qs(parsed_store.query).get("ct"),
+                )
+                expected_visual = (
+                    gen_social_previews.buyer_intent_image_url(
+                        key,
+                        locale,
+                    )
+                )
+                self.assertEqual(
+                    expected_visual,
+                    payload["_lumi_buyer_intent_image_url"],
+                )
+                embed_html = payload["html"]
+                self.assertIn(
+                    f'src="{html.escape(expected_visual, quote=True)}"',
+                    embed_html,
+                )
+                self.assertIn(
+                    f'href="{html.escape(payload["_lumi_app_store_url"], quote=True)}"',
+                    embed_html,
+                )
+                self.assertEqual(1, embed_html.count("<img "))
+                self.assertNotIn("<script", embed_html.casefold())
+                self.assertNotRegex(
+                    embed_html.casefold(),
+                    r"\son[a-z]+=",
+                )
+                ET.fromstring(
+                    '<div xmlns="http://www.w3.org/1999/xhtml">'
+                    f"{embed_html}</div>"
                 )
                 store_urls.add(payload["_lumi_app_store_url"])
 
@@ -1188,6 +1297,14 @@ class GeneratorTests(unittest.TestCase):
                         pages
                         / urllib.parse.urlsplit(
                             payload["thumbnail_url"]
+                        ).path.removeprefix("/ios-app-guide/")
+                    ).is_file()
+                )
+                self.assertTrue(
+                    (
+                        pages
+                        / urllib.parse.urlsplit(
+                            expected_visual
                         ).path.removeprefix("/ios-app-guide/")
                     ).is_file()
                 )
@@ -20929,6 +21046,18 @@ class GeneratorTests(unittest.TestCase):
         )
         workflow_positions = [refresh_block.index(item) for item in workflow_chain]
         self.assertEqual(sorted(workflow_positions), workflow_positions)
+        self.assertEqual(
+            1,
+            workflow.count("gen_social_previews.py --oembed-only"),
+        )
+        self.assertLess(
+            refresh_block.index("publisher_intent_visuals.py"),
+            refresh_block.index("gen_social_previews.py --oembed-only"),
+        )
+        self.assertLess(
+            refresh_block.index("gen_social_previews.py --oembed-only"),
+            refresh_block.index("gen_github_discovery_readmes.py"),
+        )
         self.assertIn(
             '--state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"',
             refresh_block,
@@ -21127,8 +21256,14 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertLess(
             publish.index("publisher_intent_visuals.py"),
+            publish.index('"--oembed-only"'),
+        )
+        self.assertLess(
+            publish.index('"--oembed-only"'),
             publish.index("gen_github_discovery_readmes.py"),
         )
+        self.assertEqual(2, publish.count("gen_social_previews.py"))
+        self.assertEqual(1, publish.count('"--oembed-only"'))
         self.assertLess(
             publish.index("gen_github_discovery_readmes.py"),
             publish.index("gen_mobile_store_ctas.py"),

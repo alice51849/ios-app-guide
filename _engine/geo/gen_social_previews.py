@@ -46,6 +46,11 @@ SITE = os.environ.get(
 ).rstrip("/")
 CARD_SIZE = (1200, 675)
 POSTER_SIZE = (450, 600)
+BUYER_INTENT_SIZE = (1200, 630)
+OEMBED_SIZE = (
+    BUYER_INTENT_SIZE[0] // 2,
+    BUYER_INTENT_SIZE[1] // 2,
+)
 # One vote is too noisy to promote as social proof.
 SOCIAL_RATING_MIN_VALUE = PROMOTIONAL_RATING_MIN_VALUE
 SOCIAL_RATING_MIN_COUNT = PROMOTIONAL_RATING_MIN_COUNT
@@ -337,6 +342,85 @@ def oembed_url(
     return f"{site}/{oembed_relative_path(key, locale)}?{query}"
 
 
+def buyer_intent_image_url(
+    key: str,
+    locale: str,
+    site: str = SITE,
+) -> str:
+    if re.fullmatch(r"[a-z0-9]+", key) is None:
+        raise ValueError(f"Invalid buyer-intent app key: {key}")
+    asset_locale = "en-US" if locale == "en" else locale
+    if asset_locale not in OFFICIAL_LOCALES:
+        raise ValueError(f"Unsupported buyer-intent locale: {locale}")
+    return f"{site}/visuals/{asset_locale}/{key}.svg"
+
+
+def _available_buyer_intent_image(
+    pages: Path,
+    key: str,
+    locale: str,
+    site: str = SITE,
+) -> str | None:
+    url = buyer_intent_image_url(key, locale, site)
+    asset_locale = "en-US" if locale == "en" else locale
+    target = pages / "visuals" / asset_locale / f"{key}.svg"
+    if not target.is_file() or target.stat().st_size == 0:
+        return None
+    return url
+
+
+def rich_oembed_html(
+    title: str,
+    buyer_intent_url: str,
+    app_store_url: str,
+) -> str:
+    visual = urllib.parse.urlsplit(buyer_intent_url)
+    store = urllib.parse.urlsplit(app_store_url)
+    if visual.scheme != "https" or not visual.hostname or visual.username:
+        raise ValueError("Rich oEmbed visual URL must be public HTTPS")
+    if (
+        store.scheme != "https"
+        or store.hostname != "apps.apple.com"
+        or store.username
+    ):
+        raise ValueError("Rich oEmbed App Store URL is invalid")
+    esc = lambda value: html.escape(str(value), quote=True)
+    return (
+        f'<a href="{esc(app_store_url)}" rel="nofollow noopener">'
+        f'<img src="{esc(buyer_intent_url)}" alt="{esc(title)}" '
+        f'width="{OEMBED_SIZE[0]}" height="{OEMBED_SIZE[1]}" '
+        f'style="display:block;width:100%;height:auto;'
+        f'max-width:{OEMBED_SIZE[0]}px;'
+        'margin:0;padding:0;border:0" /></a>'
+    )
+
+
+def _enrich_oembed_document(
+    document: dict[str, object],
+    buyer_intent_url: str,
+) -> dict[str, object]:
+    title = document.get("title")
+    app_store_url = document.get("_lumi_app_store_url")
+    if not isinstance(title, str) or not title:
+        raise ValueError("Rich oEmbed response has no title")
+    if not isinstance(app_store_url, str) or not app_store_url:
+        raise ValueError("Rich oEmbed response has no App Store URL")
+    document.update(
+        {
+            "type": "rich",
+            "html": rich_oembed_html(
+                title,
+                buyer_intent_url,
+                app_store_url,
+            ),
+            "width": OEMBED_SIZE[0],
+            "height": OEMBED_SIZE[1],
+            "_lumi_buyer_intent_image_url": buyer_intent_url,
+        }
+    )
+    return document
+
+
 def oembed_document(
     title: str,
     image_url: str,
@@ -346,7 +430,12 @@ def oembed_document(
     site: str = SITE,
     *,
     storefront: dict[str, object] | None = None,
+    buyer_intent_url: str | None = None,
 ) -> dict[str, object]:
+    campaign_store_url = _campaign_store_url(
+        store_url,
+        _oembed_campaign(locale),
+    )
     document: dict[str, object] = {
         "version": "1.0",
         "type": "link",
@@ -361,10 +450,7 @@ def oembed_document(
         "thumbnail_height": CARD_SIZE[1],
         "_lumi_locale": locale,
         "_lumi_guide_url": canonical,
-        "_lumi_app_store_url": _campaign_store_url(
-            store_url,
-            _oembed_campaign(locale),
-        ),
+        "_lumi_app_store_url": campaign_store_url,
     }
     if storefront is not None:
         document.update(
@@ -381,6 +467,8 @@ def oembed_document(
             document["_lumi_app_store_rating_count"] = storefront[
                 "rating_count"
             ]
+    if buyer_intent_url is not None:
+        _enrich_oembed_document(document, buyer_intent_url)
     return document
 
 
@@ -659,6 +747,60 @@ def _write_bytes_if_changed(path: Path, content: bytes) -> bool:
     return True
 
 
+def enrich_oembed_responses(
+    pages: Path = PAGES,
+    live_keys: set[str] | None = None,
+    site: str = SITE,
+) -> dict[str, int]:
+    if live_keys is None:
+        live_keys = set(live_app_keys(APPSTORE, str(pages), refresh=False))
+    changed = 0
+    endpoint_count = 0
+    for key in sorted(live_keys):
+        for locale in ("en", *OFFICIAL_LOCALES):
+            path = pages / oembed_relative_path(
+                key,
+                None if locale == "en" else locale,
+            )
+            if not path.is_file():
+                raise ValueError(f"Rich oEmbed endpoint is missing: {path}")
+            visual_url = _available_buyer_intent_image(
+                pages,
+                key,
+                locale,
+                site,
+            )
+            if visual_url is None:
+                raise ValueError(
+                    f"Rich oEmbed buyer-intent visual is missing: "
+                    f"{locale}/{key}"
+                )
+            document = json.loads(path.read_text(encoding="utf-8"))
+            if document.get("_lumi_locale") != locale:
+                raise ValueError(
+                    f"Rich oEmbed locale mismatch: {path}: "
+                    f"{document.get('_lumi_locale')!r}"
+                )
+            _enrich_oembed_document(document, visual_url)
+            changed += int(
+                _write_text_if_changed(
+                    path,
+                    json.dumps(
+                        document,
+                        ensure_ascii=False,
+                        indent=2,
+                    )
+                    + "\n",
+                )
+            )
+            endpoint_count += 1
+    return {
+        "apps": len(live_keys),
+        "oembed": endpoint_count,
+        "changed_files": changed,
+    }
+
+
 def generate(
     pages: Path = PAGES,
     live_keys: set[str] | None = None,
@@ -701,6 +843,12 @@ def generate(
                         record["store"],
                         "en",
                         site,
+                        buyer_intent_url=_available_buyer_intent_image(
+                            pages,
+                            key,
+                            "en",
+                            site,
+                        ),
                     ),
                     ensure_ascii=False,
                     indent=2,
@@ -757,6 +905,12 @@ def generate(
                             locale,
                             site,
                             storefront=storefront,
+                            buyer_intent_url=_available_buyer_intent_image(
+                                pages,
+                                key,
+                                locale,
+                                site,
+                            ),
                         ),
                         ensure_ascii=False,
                         indent=2,
@@ -833,7 +987,20 @@ def main() -> None:
     parser.add_argument(
         "--pages", type=Path, default=PAGES, help="Alternate Pages checkout."
     )
+    parser.add_argument(
+        "--oembed-only",
+        action="store_true",
+        help="Enrich existing oEmbed responses after buyer-intent visuals.",
+    )
     args = parser.parse_args()
+    if args.oembed_only:
+        result = enrich_oembed_responses(args.pages)
+        print(
+            "Rich oEmbed: "
+            f"{result['apps']} apps, {result['oembed']} responses, "
+            f"{result['changed_files']} files updated"
+        )
+        return
     result = generate(args.pages)
     print(
         "Social previews: "

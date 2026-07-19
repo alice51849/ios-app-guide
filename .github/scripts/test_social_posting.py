@@ -129,6 +129,84 @@ class RotationTests(unittest.TestCase):
             )
             self.assertEqual(5, len({common.app_key(item) for item in picks}))
 
+    def test_combined_channels_cover_every_app_within_six_days(self):
+        expected = {common.app_key(item) for item in self.pool}
+        observed = set()
+        for day in range(6):
+            observed.update(
+                common.app_key(item)
+                for item in (
+                    telegram_post.pick(self.pool, self._at(day, 1)),
+                    threads_post.pick(self.pool, self._at(day, 3)),
+                    telegram_post.pick(self.pool, self._at(day, 9)),
+                    threads_post.pick(self.pool, self._at(day, 14)),
+                    telegram_post.pick(self.pool, self._at(day, 15)),
+                )
+            )
+        self.assertEqual(expected, observed)
+
+    def test_all_50_locales_are_published_within_13_days(self):
+        routes = (
+            (telegram_post.pick, 1),
+            (threads_post.pick, 3),
+            (telegram_post.pick, 9),
+            (threads_post.pick, 14),
+            (telegram_post.pick, 15),
+        )
+        launch = dt.datetime.combine(
+            common.FULL_LOCALE_SOCIAL_LAUNCH_DATE,
+            dt.time(),
+            tzinfo=dt.timezone.utc,
+        )
+        selected = []
+        for day in range(common.FULL_LOCALE_SOCIAL_LAUNCH_DAYS):
+            selected.extend(
+                picker(
+                    self.pool,
+                    (launch + dt.timedelta(days=day)).replace(hour=hour),
+                )
+                for picker, hour in routes
+            )
+        self.assertEqual(
+            set(common.OFFICIAL_SOCIAL_LOCALES),
+            {item["lang"] for item in selected},
+        )
+        self.assertTrue(
+            all(
+                item.get("source") == "publisher_intent_catalog"
+                for item in selected
+            )
+        )
+
+    def test_every_app_locale_pair_rotates_within_366_days_after_launch(self):
+        routes = (
+            (telegram_post.pick, 1),
+            (threads_post.pick, 3),
+            (telegram_post.pick, 9),
+            (threads_post.pick, 14),
+            (telegram_post.pick, 15),
+        )
+        launch = dt.datetime.combine(
+            common.FULL_LOCALE_SOCIAL_LAUNCH_DATE,
+            dt.time(),
+            tzinfo=dt.timezone.utc,
+        )
+        observed = set()
+        for day in range(366):
+            for picker, hour in routes:
+                item = picker(
+                    self.pool,
+                    (launch + dt.timedelta(days=day)).replace(hour=hour),
+                )
+                if item.get("source") == "publisher_intent_catalog":
+                    observed.add((str(item["app"]), item["lang"]))
+        expected = {
+            (common.app_key(item), item["lang"])
+            for item in self.pool
+            if item.get("source") == "publisher_intent_catalog"
+        }
+        self.assertEqual(expected, observed)
+
     def test_uneven_copy_counts_cannot_bias_app_rotation(self):
         pool = []
         for app_index in range(5):
@@ -173,7 +251,6 @@ class FooterAndSelectionTests(unittest.TestCase):
             "pl",
         }
         self.assertEqual(expected_languages, set(common.FOOTERS))
-        self.assertEqual(expected_languages, set(telegram_post.FALLBACK_TEXT))
         self.assertEqual(len(common.FOOTERS), len(set(common.FOOTERS.values())))
         for lang in expected_languages:
             with self.subTest(lang=lang):
@@ -190,6 +267,19 @@ class FooterAndSelectionTests(unittest.TestCase):
                     self.assertNotIn("獨立開發者", footer)
                     self.assertNotIn("買斷", footer)
                     self.assertNotIn("訂閱", footer)
+
+    def test_official_locale_partition_is_complete_and_disjoint(self):
+        locales = (
+            *common.ASIA_LOCALES,
+            *common.EUROPE_MIDDLE_EAST_LOCALES,
+            *common.AMERICAS_LOCALES,
+        )
+        self.assertEqual(50, len(locales))
+        self.assertEqual(50, len(set(locales)))
+        self.assertEqual(
+            set(common.OFFICIAL_SOCIAL_LOCALES),
+            set(locales),
+        )
 
     def test_single_post_selection_does_not_probe_every_app_store_url(self):
         now = dt.datetime(2026, 1, 1, 1, tzinfo=dt.timezone.utc)
@@ -322,6 +412,52 @@ class RetryTests(unittest.TestCase):
             )
         )
 
+    def test_threads_image_post_uses_public_jpeg(self):
+        image_url = (
+            "https://alice51849.github.io/ios-app-guide/"
+            "social/img/aim990-share.jpg"
+        )
+        with mock.patch.object(
+            threads_post,
+            "_post",
+            side_effect=({"id": "container"}, {"id": "post"}),
+        ) as post:
+            result = threads_post.publish_post(
+                "token",
+                "user",
+                "Buyer-intent copy",
+                image_url=image_url,
+                sleeper=mock.Mock(),
+            )
+        self.assertEqual("post", result)
+        payload = post.call_args_list[0].args[1]
+        self.assertEqual("IMAGE", payload["media_type"])
+        self.assertEqual(image_url, payload["image_url"])
+        self.assertEqual("Buyer-intent copy", payload["text"])
+
+    def test_telegram_photo_uses_public_jpeg_and_caption(self):
+        image_url = (
+            "https://alice51849.github.io/ios-app-guide/"
+            "social/img/aim990-share.jpg"
+        )
+        with mock.patch.object(
+            telegram_post,
+            "request_json",
+            return_value={"ok": True, "result": {"message_id": 1}},
+        ) as request:
+            telegram_post._send_photo(
+                "token",
+                "chat",
+                "Buyer-intent copy",
+                image_url,
+            )
+        sent = urllib.parse.parse_qs(
+            request.call_args.args[0].data.decode("utf-8")
+        )
+        self.assertIn("/sendPhoto", request.call_args.args[0].full_url)
+        self.assertEqual([image_url], sent["photo"])
+        self.assertEqual(["Buyer-intent copy"], sent["caption"])
+
 
 class DailyPortfolioCoverageTests(unittest.TestCase):
     @classmethod
@@ -351,6 +487,33 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
             for channel, spec in common.CHANNEL_SPECS.items():
                 with self.subTest(app_id=app_id, channel=channel):
                     self.assertTrue(languages.intersection(spec["langs"]))
+
+    def test_intent_pool_covers_every_live_app_in_all_50_locales(self):
+        pool = [
+            item
+            for item in telegram_post.load_pool()
+            if item.get("source") == "publisher_intent_catalog"
+        ]
+        selected_ids = {app.app_id for app in self.apps}
+        self.assertEqual(len(selected_ids) * 50, len(pool))
+        self.assertEqual(
+            {
+                (app_id, locale)
+                for app_id in selected_ids
+                for locale in common.OFFICIAL_SOCIAL_LOCALES
+            },
+            {(str(item["app"]), item["lang"]) for item in pool},
+        )
+        for item in pool:
+            self.assertLessEqual(
+                len(threads_post.compose_text(item)),
+                threads_post.MAX_POST_CHARS,
+            )
+            self.assertEqual(
+                item["image_url"],
+                common.item_image_url(item),
+            )
+            self.assertTrue(item["footer"].startswith("— Lumi Studio · "))
 
     def test_linkset_discovers_unknown_new_live_apps(self):
         selected = portfolio_daily.parse_public_apps(

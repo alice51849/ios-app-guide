@@ -10,11 +10,16 @@ import urllib.parse
 import urllib.request
 
 from social_post_common import (
+    AMERICAS_LOCALES,
+    ASIA_LOCALES,
+    EUROPE_MIDDLE_EAST_LOCALES,
     HTTPStatusError,
     RequestError,
     canonical_app_store_url,
+    canonical_social_image_url,
     channel_candidates,
-    footer_for,
+    item_footer,
+    item_image_url,
     request_json,
 )
 import telegram_post
@@ -54,8 +59,8 @@ def _post(url, data, *, label, retry_delays=(2, 4)):
 
 # Threads 兩個排程時段(03/14 UTC):台灣/亞洲早、歐美。各發對應時區在地語言。
 TZ_LANGS = {
-    "asia": ["zh-Hant", "ja", "ko", "zh-Hans", "ms"],                    # 03 UTC 台灣 11:00 / 亞洲
-    "west": ["en", "es", "de", "fr", "pt-BR", "ru", "ar", "pl"],         # 14 UTC 歐美
+    "asia": list(ASIA_LOCALES),  # 03 UTC 台灣 11:00 / 亞洲
+    "west": [*EUROPE_MIDDLE_EAST_LOCALES, *AMERICAS_LOCALES],  # 14 UTC 歐美
 }
 
 
@@ -81,7 +86,7 @@ def pick(pool, now=None):
 
 def compose_text(item):
     url = canonical_app_store_url(item.get("url"))
-    return f"{item['text']}\n\n{url}\n\n{footer_for(item.get('lang'))}"
+    return f"{item['text']}\n\n{url}\n\n{item_footer(item)}"
 
 
 def pick_postable(pool, now=None):
@@ -108,13 +113,32 @@ def pick_postable(pool, now=None):
 
 
 def publish_text(token, user_id, text, sleeper=time.sleep):
+    return publish_post(token, user_id, text, sleeper=sleeper)
+
+
+def publish_post(
+    token,
+    user_id,
+    text,
+    image_url=None,
+    sleeper=time.sleep,
+):
     if len(text) > MAX_POST_CHARS:
         raise ValueError(
             f"Threads post exceeds {MAX_POST_CHARS} characters: {len(text)}"
         )
+    payload = {
+        "media_type": "TEXT",
+        "text": text,
+        "access_token": token,
+    }
+    if image_url is not None:
+        image_url = canonical_social_image_url(image_url)
+        payload["media_type"] = "IMAGE"
+        payload["image_url"] = image_url
     container = _post(
         f"https://graph.threads.net/v1.0/{user_id}/threads",
-        {"media_type": "TEXT", "text": text, "access_token": token},
+        payload,
         label="Threads container",
     )
     container_id = container.get("id")
@@ -142,7 +166,12 @@ def main():
     try:
         pool = telegram_post.load_pool()
         item, text = pick_postable(pool)
-        post_id = publish_text(tok, uid, text)
+        post_id = publish_post(
+            tok,
+            uid,
+            text,
+            image_url=item_image_url(item),
+        )
         print("threads posted ok, id:", post_id, "| app:", item.get("app"))
         return 0
     except (HTTPStatusError, RequestError, ValueError, KeyError) as error:

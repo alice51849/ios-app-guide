@@ -655,6 +655,18 @@ function update(){
   for(const row of rows){const visible=!query||row.dataset.search.includes(query);row.hidden=!visible;if(visible)shown++;}
   count.textContent=countPattern.replace("{shown}",String(shown)).replace("{total}",String(rows.length));
 }
+function syncUrlFilters(){
+  const url=new URL(location.href);
+  const query=input.value.trim();
+  if(query)url.searchParams.set("q",query);else url.searchParams.delete("q");
+  history.replaceState(null,"",`${url.pathname}${url.search}${url.hash}`);
+}
+function applyUrlFilters(){
+  const query=new URLSearchParams(location.search).get("q");
+  if(query!==null)input.value=query.slice(0,80);
+  update();
+}
+function currentUrl(){return location.href;}
 async function registerWebMcp(){
   if(!document.modelContext?.registerTool)return;
   await document.modelContext.registerTool({
@@ -682,18 +694,18 @@ async function registerWebMcp(){
   });
 }
 async function copyLink(){
-  try{await navigator.clipboard.writeText("__CANONICAL__");status.textContent="__COPIED__";}
+  try{await navigator.clipboard.writeText(currentUrl());status.textContent="__COPIED__";}
   catch(error){status.textContent="__COPY_FAILED__";}
 }
 async function shareLink(){
-  if(navigator.share){try{await navigator.share({title:document.title,url:"__CANONICAL__"});return;}catch(error){if(error&&error.name==="AbortError"){status.textContent="__SHARE_CANCELLED__";return;}}}
+  if(navigator.share){try{await navigator.share({title:document.title,url:currentUrl()});return;}catch(error){if(error&&error.name==="AbortError"){status.textContent="__SHARE_CANCELLED__";return;}}}
   await copyLink();
 }
-input.addEventListener("input",update);
-document.getElementById("clear-search").addEventListener("click",()=>{input.value="";update();input.focus();});
+input.addEventListener("input",()=>{update();syncUrlFilters();});
+document.getElementById("clear-search").addEventListener("click",()=>{input.value="";update();syncUrlFilters();input.focus();});
 document.getElementById("copy-link").addEventListener("click",copyLink);
 document.getElementById("share-link").addEventListener("click",shareLink);
-update();
+applyUrlFilters();
 registerWebMcp().catch(error=>console.error("WebMCP tool registration failed.",error));
 </script>
 </body>

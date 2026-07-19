@@ -6,6 +6,7 @@ import concurrent.futures
 import datetime as _dt
 import http.client
 import json
+import math
 import re
 import sys
 import time
@@ -14,10 +15,77 @@ import urllib.parse
 import urllib.request
 
 BASE_DATE = _dt.date(2026, 1, 1)
+FULL_LOCALE_SOCIAL_LAUNCH_DATE = _dt.date(2026, 7, 19)
+FULL_LOCALE_SOCIAL_LAUNCH_DAYS = 13
 DEFAULT_UA = "Mozilla/5.0 (Lumi Apps poster)"
 DEAD_LINK_STATUSES = frozenset((404, 410))
 TRANSIENT_STATUSES = frozenset((408, 429))
 APP_STORE_PATH_RE = re.compile(r"^/app/id(\d+)$")
+SOCIAL_IMAGE_PATH_RE = re.compile(
+    r"^/ios-app-guide/social/img/([a-z0-9]+)-share\.jpg$"
+)
+
+ASIA_LOCALES = (
+    "bn-BD",
+    "en-AU",
+    "gu-IN",
+    "hi",
+    "id",
+    "ja",
+    "kn-IN",
+    "ko",
+    "ml-IN",
+    "mr-IN",
+    "ms",
+    "or-IN",
+    "pa-IN",
+    "ta-IN",
+    "te-IN",
+    "th",
+    "ur-PK",
+    "vi",
+    "zh-Hans",
+    "zh-Hant",
+)
+EUROPE_MIDDLE_EAST_LOCALES = (
+    "ar-SA",
+    "ca",
+    "cs",
+    "da",
+    "de-DE",
+    "el",
+    "en-GB",
+    "es-ES",
+    "fi",
+    "fr-FR",
+    "he",
+    "hr",
+    "hu",
+    "it",
+    "nl-NL",
+    "no",
+    "pl",
+    "pt-PT",
+    "ro",
+    "ru",
+    "sk",
+    "sl-SI",
+    "sv",
+    "tr",
+    "uk",
+)
+AMERICAS_LOCALES = (
+    "en-CA",
+    "en-US",
+    "es-MX",
+    "fr-CA",
+    "pt-BR",
+)
+OFFICIAL_SOCIAL_LOCALES = (
+    *ASIA_LOCALES,
+    *EUROPE_MIDDLE_EAST_LOCALES,
+    *AMERICAS_LOCALES,
+)
 
 FOOTERS = {
     "en": "— Lumi Apps · Independent iOS developer",
@@ -38,23 +106,23 @@ FOOTERS = {
 # Explicit offsets are stable across runners (unlike Python's randomized hash()).
 CHANNEL_SPECS = {
     "telegram:asia": {
-        "langs": ("zh-Hant", "ja", "ko", "zh-Hans", "ms"),
+        "langs": ASIA_LOCALES,
         "offset": 0,
     },
     "threads:asia": {
-        "langs": ("zh-Hant", "ja", "ko", "zh-Hans", "ms"),
+        "langs": ASIA_LOCALES,
         "offset": 29,
     },
     "telegram:eu_me": {
-        "langs": ("de", "fr", "es", "pt-BR", "ru", "ar", "pl"),
+        "langs": EUROPE_MIDDLE_EAST_LOCALES,
         "offset": 11,
     },
     "threads:west": {
-        "langs": ("en", "es", "de", "fr", "pt-BR", "ru", "ar", "pl"),
+        "langs": (*EUROPE_MIDDLE_EAST_LOCALES, *AMERICAS_LOCALES),
         "offset": 47,
     },
     "telegram:americas": {
-        "langs": ("en", "es", "pt-BR"),
+        "langs": AMERICAS_LOCALES,
         "offset": 23,
     },
 }
@@ -108,6 +176,20 @@ def footer_for(lang):
     return FOOTERS.get(lang, FOOTERS["en"])
 
 
+def item_footer(item):
+    value = item.get("footer")
+    if value is None:
+        return footer_for(item.get("lang"))
+    if (
+        not isinstance(value, str)
+        or not value.strip()
+        or "\n" in value
+        or "\r" in value
+    ):
+        raise ValueError("social post footer must be a non-empty single line")
+    return value.strip()
+
+
 def canonical_app_store_url(value):
     if not isinstance(value, str) or not value.strip():
         raise ValueError("App Store URL is missing")
@@ -122,6 +204,28 @@ def canonical_app_store_url(value):
     ):
         raise ValueError(f"Invalid canonical App Store URL: {value}")
     return f"https://apps.apple.com/app/id{match.group(1)}"
+
+
+def canonical_social_image_url(value):
+    if not isinstance(value, str) or not value.strip():
+        raise ValueError("Social image URL is missing")
+    parsed = urllib.parse.urlsplit(value.strip())
+    if (
+        parsed.scheme != "https"
+        or parsed.netloc != "alice51849.github.io"
+        or SOCIAL_IMAGE_PATH_RE.fullmatch(parsed.path) is None
+        or parsed.query
+        or parsed.fragment
+    ):
+        raise ValueError(f"Invalid social image URL: {value}")
+    return urllib.parse.urlunsplit(
+        (parsed.scheme, parsed.netloc, parsed.path, "", "")
+    )
+
+
+def item_image_url(item):
+    value = item.get("image_url")
+    return None if value is None else canonical_social_image_url(value)
 
 
 def item_key(item):
@@ -194,11 +298,93 @@ def _copy_candidates(items, channel, day, app_index, app_count):
     languages = CHANNEL_SPECS[channel]["langs"]
     localized = [item for item in items if item.get("lang") in languages]
     candidates = localized or list(items)
+    channel_index = CHANNEL_ORDER.index(channel)
+    channel_count = len(CHANNEL_ORDER)
+    current_round = (
+        day * channel_count + channel_index
+    ) // app_count
+    current_region = (
+        "asia"
+        if channel_index < 2
+        else "eu_me"
+        if channel_index < 4
+        else "americas"
+    )
+    regional_rank = 0
+    for round_index in range(current_round):
+        shift = (
+            round_index
+            if math.gcd(app_count, channel_count) != 1
+            else 0
+        )
+        position = (app_index - shift) % app_count
+        prior_channel = (
+            round_index * app_count + position
+        ) % channel_count
+        prior_region = (
+            "asia"
+            if prior_channel < 2
+            else "eu_me"
+            if prior_channel < 4
+            else "americas"
+        )
+        if prior_region == current_region:
+            regional_rank += 1
+    launch_phase = day - (
+        FULL_LOCALE_SOCIAL_LAUNCH_DATE - BASE_DATE
+    ).days
+    if 0 <= launch_phase < FULL_LOCALE_SOCIAL_LAUNCH_DAYS:
+        if current_region == "asia":
+            target_locale = ASIA_LOCALES[
+                (2 * launch_phase + channel_index) % len(ASIA_LOCALES)
+            ]
+        elif current_region == "eu_me":
+            target_locale = EUROPE_MIDDLE_EAST_LOCALES[
+                (2 * launch_phase + channel_index - 2)
+                % len(EUROPE_MIDDLE_EAST_LOCALES)
+            ]
+        else:
+            target_locale = AMERICAS_LOCALES[
+                launch_phase % len(AMERICAS_LOCALES)
+            ]
+    elif channel == "telegram:asia":
+        target_locale = ASIA_LOCALES[
+            (regional_rank + 9 * day) % len(ASIA_LOCALES)
+        ]
+    elif channel == "threads:asia":
+        target_locale = ASIA_LOCALES[
+            (regional_rank + 9 * day + 1) % len(ASIA_LOCALES)
+        ]
+    elif channel == "telegram:eu_me":
+        target_locale = EUROPE_MIDDLE_EAST_LOCALES[
+            (
+                14 * app_index
+                + regional_rank
+                + 23 * day
+            )
+            % len(EUROPE_MIDDLE_EAST_LOCALES)
+        ]
+    elif channel == "threads:west":
+        target_locale = EUROPE_MIDDLE_EAST_LOCALES[
+            (
+                14 * app_index
+                + regional_rank
+                + 23 * day
+                + 19
+            )
+            % len(EUROPE_MIDDLE_EAST_LOCALES)
+        ]
+    else:
+        target_locale = AMERICAS_LOCALES[
+            (regional_rank + day) % len(AMERICAS_LOCALES)
+        ]
+    targeted = [item for item in candidates if item.get("lang") == target_locale]
+    remaining = [item for item in candidates if item.get("lang") != target_locale]
     cycle = day // app_count
     offset = (
         cycle + app_index + CHANNEL_SPECS[channel]["offset"]
-    ) % len(candidates)
-    return candidates[offset:] + candidates[:offset]
+    ) % max(len(remaining), 1)
+    return targeted + remaining[offset:] + remaining[:offset]
 
 
 def rotated_channel_candidates(pool, channel, now=None):
@@ -241,9 +427,23 @@ def channel_candidates(pool, channel, now=None):
             "at least five live apps are required for unique daily channel picks"
         )
     app_count = len(app_ids)
+    channel_count = len(CHANNEL_ORDER)
     selected_by_channel = {
-        current: app_ids[(day + index) % app_count]
+        current: app_ids[
+            (
+                position
+                + (
+                    round_index
+                    if math.gcd(app_count, channel_count) != 1
+                    else 0
+                )
+            )
+            % app_count
+        ]
         for index, current in enumerate(CHANNEL_ORDER)
+        for round_index, position in (
+            divmod(day * channel_count + index, app_count),
+        )
     }
     selected_id = selected_by_channel[channel]
     blocked = {

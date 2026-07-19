@@ -87,6 +87,8 @@ WORDMATE_LANGUAGE_DATASET = "wordmate-language-support"
 WORDMATE_LANGUAGE_TOOL = "wordmate-44-language-support-checker"
 PORTFOLIO_FINDER_DATASET = "verified-ios-app-finder-catalog"
 PORTFOLIO_FINDER_TOOL = "private-pay-once-iphone-app-finder"
+PUBLISHER_INTENT_VISUALS = "lumi-studio-publisher-intent-visuals"
+PUBLISHER_INTENT_VISUALS_SITEMAP = "sitemap_intent_visuals.xml"
 RESOURCE_TITLES = {
     ("tools", "ats-resume-keyword-checker"): (
         "Private resume evidence coverage planner"
@@ -178,6 +180,32 @@ def portfolio_finder_lines(*, full):
     if full:
         lines.append(
             "- Ordering: alphabetical; no paid, popularity or quality ranking"
+        )
+    return lines
+
+
+def publisher_intent_visual_lines(*, full):
+    """Describe localized visual cards after their manifest exists."""
+    manifest = os.path.join(DATA_DIR, f"{PUBLISHER_INTENT_VISUALS}.json")
+    if not os.path.exists(manifest):
+        return []
+    localized = [
+        f"  - {locale}: {SITE}/{locale}/visuals/"
+        for locale in OFFICIAL_LOCALES
+    ]
+    lines = [
+        "",
+        "## Publisher-authored visual buyer-intent cards",
+        f"- English visual gallery: {SITE}/visuals/",
+        f"- Official Apple locales: {len(OFFICIAL_LOCALES)}/{len(OFFICIAL_LOCALES)}",
+        *localized,
+        f"- Image sitemap: {SITE}/{PUBLISHER_INTENT_VISUALS_SITEMAP}",
+        f"- Machine-readable manifest: {SITE}/data/{PUBLISHER_INTENT_VISUALS}.json",
+    ]
+    if full:
+        lines.append(
+            "- Every image links to a matching guide and direct App Store route; "
+            "the collection is first-party, alphabetical, and not a ranking"
         )
     return lines
 
@@ -322,6 +350,7 @@ def build_localized_llms(locale, live_keys, pages=None):
             f"- {ui['dir_dir']}: {SITE}/{locale}/tools/"
             f"{PORTFOLIO_FINDER_TOOL}.html"
         ),
+        f"- {ui['dir_dir']} · SVG: {SITE}/{locale}/visuals/",
         "",
     ]
     for record in records:
@@ -530,6 +559,7 @@ def build_llms(comp_map, live_keys):
                 lines.append(line)
     lines += wordmate_language_support_lines(full=False)
     lines += portfolio_finder_lines(full=False)
+    lines += publisher_intent_visual_lines(full=False)
     static_apis = [
         descriptor
         for descriptor in API_DESCRIPTORS
@@ -1000,6 +1030,10 @@ def build_llms_full(comp_map, live_keys):
             "with App Store links",
             "sitemap_oembed.xml",
         ),
+        (
+            "50-locale visual buyer-intent galleries",
+            "visuals/index.html",
+        ),
         ("Open data", "data/index.html"),
         ("Open static APIs", "api/index.html"),
         (
@@ -1169,6 +1203,7 @@ def build_llms_full(comp_map, live_keys):
                 lines.append(f"  - JSON Schema: {base}/{filename}")
     lines += wordmate_language_support_lines(full=True)
     lines += portfolio_finder_lines(full=True)
+    lines += publisher_intent_visual_lines(full=True)
     if os.path.exists(os.path.join(TOOLS, f"{FAMILY_TRAVEL_OER}.metadata.json")):
         opds2 = f"{SITE}/opds/{FAMILY_TRAVEL_OER}.json"
         opds1 = f"{SITE}/opds/{FAMILY_TRAVEL_OER}.xml"
@@ -1535,7 +1570,8 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_index.xml", "sitemap.xml", "sitemap_alternatives.xml",
         "sitemap_answers.xml", "sitemap_guides.xml", "sitemap_apps.xml",
         "sitemap_stories.xml", "sitemap_llms.xml",
-        "sitemap_images.xml", "sitemap_linkset.xml", "sitemap_oembed.xml",
+        "sitemap_images.xml", PUBLISHER_INTENT_VISUALS_SITEMAP,
+        "sitemap_linkset.xml", "sitemap_oembed.xml",
         "linkset.json",
         "sitemap_hubs.xml", "sitemap_tools.xml", "sitemap_data.xml",
         "sitemap_api.xml", "sitemap_swap.xml", "feed.xml", "rss.xml", "feed.json",
@@ -1593,6 +1629,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_apps.xml",
             f"Sitemap: {SITE}/sitemap_stories.xml",
             f"Sitemap: {SITE}/sitemap_images.xml",
+            f"Sitemap: {SITE}/{PUBLISHER_INTENT_VISUALS_SITEMAP}",
             f"Sitemap: {SITE}/sitemap_linkset.xml",
             f"Sitemap: {SITE}/sitemap_oembed.xml",
             f"Sitemap: {SITE}/sitemap_llms.xml",
@@ -1630,6 +1667,7 @@ def build_sitemap_index():
     maps = ["sitemap.xml", "sitemap_alternatives.xml", "sitemap_answers.xml",
             "sitemap_guides.xml", "sitemap_apps.xml",
             "sitemap_stories.xml", "sitemap_images.xml", "sitemap_linkset.xml",
+            PUBLISHER_INTENT_VISUALS_SITEMAP,
             "sitemap_oembed.xml", "sitemap_llms.xml",
             "sitemap_hubs.xml", "sitemap_tools.xml",
             "sitemap_data.xml", "sitemap_api.xml", "sitemap_swap.xml"]

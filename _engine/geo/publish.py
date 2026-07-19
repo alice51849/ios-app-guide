@@ -206,6 +206,7 @@ def main():
     require([PY, os.path.join(HERE, "gen_webmcp_install_tools.py")], env=env)
     require([PY, os.path.join(HERE, "portfolio_app_catalog_api.py")], env=env)
     require([PY, os.path.join(HERE, "publisher_intent_catalog.py")], env=env)
+    require([PY, os.path.join(HERE, "publisher_intent_visuals.py")], env=env)
     require(
         [PY, os.path.join(HERE, "gen_github_discovery_readmes.py")],
         env=env,

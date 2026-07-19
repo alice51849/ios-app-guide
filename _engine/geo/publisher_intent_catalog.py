@@ -796,6 +796,7 @@ def _page(
         separators=(",", ":"),
     ).replace("</", "<\\/")
     root_prefix = "" if locale == "en" else f"/{locale}"
+    visuals_href = f"{SITE}{root_prefix}/visuals/"
     direction = ' dir="rtl"' if locale in RTL_LOCALES else ""
     return f"""<!doctype html>
 <html lang="{escape(locale)}"{direction}>
@@ -843,7 +844,7 @@ tr:last-child td{{border-bottom:0}}
 <div class="crumb"><a href="{SITE}{root_prefix}/index.html">{escape(ui["Home"])}</a> · <a href="{SITE}/data/">{escape(ui["Open data"])}</a></div>
 <h1>{escape(ui[NAME])}</h1>
 <p class="lead">{escape(ui[LEAD])}</p>
-<div class="badges"><span class="badge">{escape(ui["1,300 records: 26 apps × 50 locales."])}</span><span class="badge">{escape(ui["First-party publisher catalog"])}</span><span class="badge">{escape(ui["Not measured search volume"])}</span><span class="badge">{escape(ui["Free to download"])}</span></div>
+<div class="badges"><span class="badge">{escape(ui["1,300 records: 26 apps × 50 locales."])}</span><span class="badge">{escape(ui["First-party publisher catalog"])}</span><span class="badge">{escape(ui["Not measured search volume"])}</span><span class="badge">{escape(ui["Free to download"])}</span><a class="badge" href="{escape(visuals_href, quote=True)}">{escape(ui["Publisher query"])} · SVG</a></div>
 <div class="downloads"><strong>{escape(ui["Download the complete dataset"])}</strong><a class="download" href="{SITE}/data/{SLUG}.json">JSON</a><a class="download" href="{SITE}/data/{SLUG}.jsonl">JSONL</a><a class="download" href="{SITE}/data/{SLUG}.csv">CSV</a></div>
 <div class="cards"><section class="card"><h2>{escape(ui["Methodology"])}</h2><p>{escape(ui[METHODOLOGY])}</p><p>{escape(ui["Alphabetical by app name — never a ranking."])}</p></section><section class="card"><h2>{escape(ui["What this dataset contains"])}</h2><p>{escape(ui["JSON, JSONL and CSV contain the same 1,300 records."])}</p><p>{escape(ui["Scroll horizontally to inspect every field."])}</p></section></div>
 <section class="card"><h2>{escape(ui["First-party publisher catalog"])}</h2><p>{escape(ui[DISCLOSURE])}</p><p>{escape(ui[NON_MEASURED])}</p></section>

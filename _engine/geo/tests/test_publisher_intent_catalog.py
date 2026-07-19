@@ -7,6 +7,7 @@ import csv
 import hashlib
 import html
 import json
+import os
 from pathlib import Path
 import re
 import sys
@@ -146,10 +147,11 @@ class PublisherIntentLocalizationTests(unittest.TestCase):
 class PublisherIntentOutputTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
-        possible_pages = [
-            GEO / "pages",
-            GEO.parents[1],
-        ]
+        possible_pages = []
+        configured = os.environ.get("GEO_PAGES")
+        if configured:
+            possible_pages.append(Path(configured))
+        possible_pages.extend((GEO / "pages", GEO.parents[1]))
         cls.pages = next(
             (
                 path
@@ -375,6 +377,13 @@ class PublisherIntentOutputTests(unittest.TestCase):
                     == [expected_campaign]
                     for url in store_urls
                 )
+            )
+            visual_locale = "" if locale == "en" else f"/{locale}"
+            self.assertEqual(
+                1,
+                source.count(
+                    f'href="{catalog.SITE}{visual_locale}/visuals/"'
+                ),
             )
             if locale in catalog.RTL_LOCALES:
                 self.assertRegex(

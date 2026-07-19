@@ -110,6 +110,7 @@ jobs:
           python3 bopomofo_practice_sheet.py
           python3 wordmate_language_support.py
           python3 portfolio_app_finder.py
+          python3 portfolio_cost_calculator.py
           python3 outreach_scorecard.py
       - name: Generate new answer pages (+ rebuild answers sitemap)
         run: |

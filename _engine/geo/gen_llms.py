@@ -88,6 +88,7 @@ WORDMATE_LANGUAGE_DATASET = "wordmate-language-support"
 WORDMATE_LANGUAGE_TOOL = "wordmate-44-language-support-checker"
 PORTFOLIO_FINDER_DATASET = "verified-ios-app-finder-catalog"
 PORTFOLIO_FINDER_TOOL = "private-pay-once-iphone-app-finder"
+PORTFOLIO_COST_TOOL = "subscription-cost-calculator"
 PUBLISHER_INTENT_VISUALS = "lumi-studio-publisher-intent-visuals"
 PUBLISHER_INTENT_VISUALS_SITEMAP = "sitemap_intent_visuals.xml"
 RESOURCE_TITLES = {
@@ -181,6 +182,32 @@ def portfolio_finder_lines(*, full):
     if full:
         lines.append(
             "- Ordering: alphabetical; no paid, popularity or quality ranking"
+        )
+    return lines
+
+
+def portfolio_cost_calculator_lines(*, full):
+    """Describe the private calculator after its English page exists."""
+    if not os.path.exists(os.path.join(TOOLS, f"{PORTFOLIO_COST_TOOL}.html")):
+        return []
+    localized = [
+        f"  - {locale}: {SITE}/{locale}/tools/{PORTFOLIO_COST_TOOL}.html"
+        for locale in OFFICIAL_LOCALES
+    ]
+    lines = [
+        "",
+        "## Private app-subscription cost calculator",
+        f"- English calculator: {SITE}/tools/{PORTFOLIO_COST_TOOL}.html",
+        f"- Official Apple locales: {len(OFFICIAL_LOCALES)}/{len(OFFICIAL_LOCALES)}",
+        *localized,
+    ]
+    if full:
+        lines.extend(
+            [
+                "- Inputs remain in the browser; no account, storage or analytics",
+                "- No third-party price is invented; the visitor supplies every cost",
+                "- Every verified live app is linked directly to its App Store listing",
+            ]
         )
     return lines
 
@@ -560,6 +587,7 @@ def build_llms(comp_map, live_keys):
                 lines.append(line)
     lines += wordmate_language_support_lines(full=False)
     lines += portfolio_finder_lines(full=False)
+    lines += portfolio_cost_calculator_lines(full=False)
     lines += publisher_intent_visual_lines(full=False)
     static_apis = [
         descriptor
@@ -1204,6 +1232,7 @@ def build_llms_full(comp_map, live_keys):
                 lines.append(f"  - JSON Schema: {base}/{filename}")
     lines += wordmate_language_support_lines(full=True)
     lines += portfolio_finder_lines(full=True)
+    lines += portfolio_cost_calculator_lines(full=True)
     lines += publisher_intent_visual_lines(full=True)
     if os.path.exists(os.path.join(TOOLS, f"{FAMILY_TRAVEL_OER}.metadata.json")):
         opds2 = f"{SITE}/opds/{FAMILY_TRAVEL_OER}.json"

@@ -1,0 +1,516 @@
+{
+  "schema_version": 1,
+  "source_locale": "en",
+  "source": {
+    "title": "App Subscription Cost Calculator",
+    "lead": "Enter your monthly price, subscriptions and years.",
+    "truth": "Your inputs stay local; no competitor prices are invented.",
+    "monthly": "Monthly price per app",
+    "subscriptions": "Number of subscriptions",
+    "years": "Years",
+    "total": "Total recurring cost",
+    "currency_note": "Use one currency for every input; no exchange rate is applied."
+  },
+  "localizations": {
+    "ar-SA": {
+      "title": "حاسبة تكلفة اشتراكات التطبيقات",
+      "lead": "أدخل السعر الشهري وعدد الاشتراكات والسنوات.",
+      "truth": "تبقى مدخلاتك على جهازك؛ ولا نختلق أسعار المنافسين.",
+      "monthly": "السعر الشهري لكل تطبيق",
+      "subscriptions": "عدد الاشتراكات",
+      "years": "عدد السنوات",
+      "total": "إجمالي التكلفة المتكررة",
+      "currency_note": "استخدم عملة واحدة لجميع المدخلات؛ لا يُطبَّق أي سعر صرف."
+    },
+    "bn-BD": {
+      "title": "অ্যাপ সাবস্ক্রিপশন খরচের ক্যালকুলেটর",
+      "lead": "আপনার মাসিক মূল্য, সাবস্ক্রিপশনের সংখ্যা ও বছরের সংখ্যা লিখুন।",
+      "truth": "আপনার তথ্য এই ডিভাইসেই থাকে; প্রতিযোগীর কোনো মূল্য বানানো হয় না।",
+      "monthly": "প্রতি অ্যাপের মাসিক মূল্য",
+      "subscriptions": "সাবস্ক্রিপশনের সংখ্যা",
+      "years": "বছর",
+      "total": "মোট পুনরাবৃত্ত খরচ",
+      "currency_note": "সব ঘরে একই মুদ্রা ব্যবহার করুন; কোনো বিনিময় হার প্রয়োগ করা হয় না।"
+    },
+    "ca": {
+      "title": "Calculadora del cost de les subscripcions d’apps",
+      "lead": "Introdueix el preu mensual, el nombre de subscripcions i els anys.",
+      "truth": "Les dades no surten del navegador; no inventem preus de la competència.",
+      "monthly": "Preu mensual per app",
+      "subscriptions": "Nombre de subscripcions",
+      "years": "Anys",
+      "total": "Cost recurrent total",
+      "currency_note": "Fes servir la mateixa moneda a tots els camps; no s’aplica cap tipus de canvi."
+    },
+    "zh-Hans": {
+      "title": "App 订阅费用计算器",
+      "lead": "输入每月价格、订阅数量和使用年数。",
+      "truth": "输入内容仅留在本机；不会编造竞品价格。",
+      "monthly": "每款 App 的月费",
+      "subscriptions": "订阅数量",
+      "years": "年数",
+      "total": "周期性费用总额",
+      "currency_note": "所有输入请使用同一种货币；本工具不换算汇率。"
+    },
+    "zh-Hant": {
+      "title": "App 訂閱費用計算器",
+      "lead": "輸入每月價格、訂閱數量與使用年數。",
+      "truth": "輸入內容只留在本機；不會捏造競品價格。",
+      "monthly": "每款 App 的月費",
+      "subscriptions": "訂閱數量",
+      "years": "年數",
+      "total": "週期性費用總額",
+      "currency_note": "所有輸入請使用同一種貨幣；本工具不換算匯率。"
+    },
+    "hr": {
+      "title": "Kalkulator troška pretplata na aplikacije",
+      "lead": "Unesite mjesečnu cijenu, broj pretplata i broj godina.",
+      "truth": "Unosi ostaju na vašem uređaju; ne izmišljamo cijene konkurenata.",
+      "monthly": "Mjesečna cijena po aplikaciji",
+      "subscriptions": "Broj pretplata",
+      "years": "Godine",
+      "total": "Ukupan ponavljajući trošak",
+      "currency_note": "Za sve unose koristite istu valutu; tečaj se ne primjenjuje."
+    },
+    "cs": {
+      "title": "Kalkulačka nákladů na předplatné aplikací",
+      "lead": "Zadejte měsíční cenu, počet předplatných a počet let.",
+      "truth": "Zadané údaje zůstávají v prohlížeči; ceny konkurence si nevymýšlíme.",
+      "monthly": "Měsíční cena za aplikaci",
+      "subscriptions": "Počet předplatných",
+      "years": "Roky",
+      "total": "Celkové opakované náklady",
+      "currency_note": "U všech údajů použijte stejnou měnu; kurz se nepřepočítává."
+    },
+    "da": {
+      "title": "Prisberegner til appabonnementer",
+      "lead": "Indtast månedspris, antal abonnementer og antal år.",
+      "truth": "Dine oplysninger bliver i browseren; vi opfinder ikke konkurrentpriser.",
+      "monthly": "Månedspris pr. app",
+      "subscriptions": "Antal abonnementer",
+      "years": "År",
+      "total": "Samlet løbende udgift",
+      "currency_note": "Brug samme valuta i alle felter; der omregnes ikke mellem valutaer."
+    },
+    "nl-NL": {
+      "title": "Kostencalculator voor appabonnementen",
+      "lead": "Vul de maandprijs, het aantal abonnementen en het aantal jaren in.",
+      "truth": "Je invoer blijft lokaal; we verzinnen geen prijzen van concurrenten.",
+      "monthly": "Maandprijs per app",
+      "subscriptions": "Aantal abonnementen",
+      "years": "Jaren",
+      "total": "Totale terugkerende kosten",
+      "currency_note": "Gebruik voor alle invoer dezelfde valuta; er wordt geen wisselkoers toegepast."
+    },
+    "en-AU": {
+      "title": "App Subscription Cost Calculator",
+      "lead": "Enter your monthly price, subscriptions and years.",
+      "truth": "Your inputs stay local; no competitor prices are invented.",
+      "monthly": "Monthly price per app",
+      "subscriptions": "Number of subscriptions",
+      "years": "Years",
+      "total": "Total recurring cost",
+      "currency_note": "Use one currency for every input; no exchange rate is applied."
+    },
+    "en-CA": {
+      "title": "App Subscription Cost Calculator",
+      "lead": "Enter your monthly price, subscriptions and years.",
+      "truth": "Your inputs stay local; no competitor prices are invented.",
+      "monthly": "Monthly price per app",
+      "subscriptions": "Number of subscriptions",
+      "years": "Years",
+      "total": "Total recurring cost",
+      "currency_note": "Use one currency for every input; no exchange rate is applied."
+    },
+    "en-GB": {
+      "title": "App Subscription Cost Calculator",
+      "lead": "Enter your monthly price, subscriptions and years.",
+      "truth": "Your inputs stay local; no competitor prices are invented.",
+      "monthly": "Monthly price per app",
+      "subscriptions": "Number of subscriptions",
+      "years": "Years",
+      "total": "Total recurring cost",
+      "currency_note": "Use one currency for every input; no exchange rate is applied."
+    },
+    "en-US": {
+      "title": "App Subscription Cost Calculator",
+      "lead": "Enter your monthly price, subscriptions and years.",
+      "truth": "Your inputs stay local; no competitor prices are invented.",
+      "monthly": "Monthly price per app",
+      "subscriptions": "Number of subscriptions",
+      "years": "Years",
+      "total": "Total recurring cost",
+      "currency_note": "Use one currency for every input; no exchange rate is applied."
+    },
+    "fi": {
+      "title": "Sovellustilausten kustannuslaskuri",
+      "lead": "Syötä kuukausihinta, tilausten määrä ja vuodet.",
+      "truth": "Syöttämäsi tiedot pysyvät selaimessa; kilpailijoiden hintoja ei keksitä.",
+      "monthly": "Kuukausihinta sovellusta kohden",
+      "subscriptions": "Tilausten määrä",
+      "years": "Vuodet",
+      "total": "Toistuvat kulut yhteensä",
+      "currency_note": "Käytä kaikissa kentissä samaa valuuttaa; valuuttakurssia ei sovelleta."
+    },
+    "fr-CA": {
+      "title": "Calculateur du coût des abonnements d’apps",
+      "lead": "Entrez le prix mensuel, le nombre d’abonnements et le nombre d’années.",
+      "truth": "Vos données restent dans le navigateur; aucun prix concurrent n’est inventé.",
+      "monthly": "Prix mensuel par app",
+      "subscriptions": "Nombre d’abonnements",
+      "years": "Années",
+      "total": "Coût récurrent total",
+      "currency_note": "Utilisez la même devise dans tous les champs; aucun taux de change n’est appliqué."
+    },
+    "fr-FR": {
+      "title": "Calculateur du coût des abonnements aux apps",
+      "lead": "Saisissez le prix mensuel, le nombre d’abonnements et le nombre d’années.",
+      "truth": "Vos données restent dans le navigateur; aucun tarif concurrent n’est inventé.",
+      "monthly": "Prix mensuel par app",
+      "subscriptions": "Nombre d’abonnements",
+      "years": "Années",
+      "total": "Coût récurrent total",
+      "currency_note": "Utilisez la même devise pour chaque saisie; aucun taux de change n’est appliqué."
+    },
+    "de-DE": {
+      "title": "Kostenrechner für App-Abos",
+      "lead": "Gib Monatspreis, Anzahl der Abos und Nutzungsjahre ein.",
+      "truth": "Deine Eingaben bleiben lokal; Preise von Mitbewerbern werden nicht erfunden.",
+      "monthly": "Monatspreis pro App",
+      "subscriptions": "Anzahl der Abos",
+      "years": "Jahre",
+      "total": "Gesamte laufende Kosten",
+      "currency_note": "Verwende überall dieselbe Währung; es wird kein Wechselkurs angewendet."
+    },
+    "el": {
+      "title": "Υπολογιστής κόστους συνδρομών εφαρμογών",
+      "lead": "Εισαγάγετε τη μηνιαία τιμή, τον αριθμό συνδρομών και τα έτη.",
+      "truth": "Τα στοιχεία μένουν στη συσκευή σας· δεν επινοούμε τιμές ανταγωνιστών.",
+      "monthly": "Μηνιαία τιμή ανά εφαρμογή",
+      "subscriptions": "Αριθμός συνδρομών",
+      "years": "Έτη",
+      "total": "Συνολικό επαναλαμβανόμενο κόστος",
+      "currency_note": "Χρησιμοποιήστε το ίδιο νόμισμα σε όλα τα πεδία· δεν εφαρμόζεται ισοτιμία."
+    },
+    "gu-IN": {
+      "title": "ઍપ સબ્સ્ક્રિપ્શન ખર્ચ કેલ્ક્યુલેટર",
+      "lead": "માસિક કિંમત, સબ્સ્ક્રિપ્શનની સંખ્યા અને વર્ષો દાખલ કરો.",
+      "truth": "તમારી માહિતી સ્થાનિક જ રહે છે; સ્પર્ધકોની કિંમતો બનાવટી રીતે ઉમેરાતી નથી.",
+      "monthly": "ઍપ દીઠ માસિક કિંમત",
+      "subscriptions": "સબ્સ્ક્રિપ્શનની સંખ્યા",
+      "years": "વર્ષ",
+      "total": "કુલ પુનરાવર્તિત ખર્ચ",
+      "currency_note": "બધી એન્ટ્રી માટે એક જ ચલણ વાપરો; કોઈ વિનિમય દર લાગુ થતો નથી."
+    },
+    "he": {
+      "title": "מחשבון עלות למינויי אפליקציות",
+      "lead": "הזינו מחיר חודשי, מספר מינויים ומספר שנים.",
+      "truth": "הנתונים נשארים בדפדפן; איננו ממציאים מחירים של מתחרים.",
+      "monthly": "מחיר חודשי לכל אפליקציה",
+      "subscriptions": "מספר המינויים",
+      "years": "שנים",
+      "total": "עלות חוזרת כוללת",
+      "currency_note": "השתמשו באותו מטבע בכל השדות; לא מתבצעת המרת מטבע."
+    },
+    "hi": {
+      "title": "ऐप सदस्यता लागत कैलकुलेटर",
+      "lead": "मासिक कीमत, सदस्यताओं की संख्या और वर्षों की संख्या दर्ज करें।",
+      "truth": "आपकी जानकारी इसी डिवाइस पर रहती है; प्रतिस्पर्धियों की कीमतें गढ़ी नहीं जातीं।",
+      "monthly": "प्रति ऐप मासिक कीमत",
+      "subscriptions": "सदस्यताओं की संख्या",
+      "years": "वर्ष",
+      "total": "कुल आवर्ती लागत",
+      "currency_note": "सभी प्रविष्टियों के लिए एक ही मुद्रा रखें; कोई विनिमय दर लागू नहीं होती।"
+    },
+    "hu": {
+      "title": "App-előfizetési költségkalkulátor",
+      "lead": "Add meg a havi díjat, az előfizetések számát és az éveket.",
+      "truth": "Az adatok helyben maradnak; nem találunk ki versenytársi árakat.",
+      "monthly": "Havi díj alkalmazásonként",
+      "subscriptions": "Előfizetések száma",
+      "years": "Évek",
+      "total": "Teljes ismétlődő költség",
+      "currency_note": "Minden mezőben ugyanazt a pénznemet használd; nincs árfolyamváltás."
+    },
+    "id": {
+      "title": "Kalkulator biaya langganan aplikasi",
+      "lead": "Masukkan harga bulanan, jumlah langganan, dan jumlah tahun.",
+      "truth": "Data Anda tetap di perangkat; kami tidak mengarang harga pesaing.",
+      "monthly": "Harga bulanan per aplikasi",
+      "subscriptions": "Jumlah langganan",
+      "years": "Tahun",
+      "total": "Total biaya berulang",
+      "currency_note": "Gunakan mata uang yang sama untuk semua isian; tidak ada konversi kurs."
+    },
+    "it": {
+      "title": "Calcolatore del costo degli abbonamenti alle app",
+      "lead": "Inserisci il prezzo mensile, il numero di abbonamenti e gli anni.",
+      "truth": "I dati restano nel browser; non inventiamo i prezzi dei concorrenti.",
+      "monthly": "Prezzo mensile per app",
+      "subscriptions": "Numero di abbonamenti",
+      "years": "Anni",
+      "total": "Costo ricorrente totale",
+      "currency_note": "Usa la stessa valuta per tutti i dati; non viene applicato alcun tasso di cambio."
+    },
+    "ja": {
+      "title": "アプリのサブスク料金計算ツール",
+      "lead": "月額、契約数、利用年数を入力してください。",
+      "truth": "入力内容は端末内だけで処理され、他社の料金を作り上げることはありません。",
+      "monthly": "アプリ1本あたりの月額",
+      "subscriptions": "サブスクの契約数",
+      "years": "利用年数",
+      "total": "継続料金の合計",
+      "currency_note": "すべて同じ通貨で入力してください。為替換算は行いません。"
+    },
+    "kn-IN": {
+      "title": "ಆ್ಯಪ್ ಚಂದಾದಾರಿಕೆ ವೆಚ್ಚದ ಲೆಕ್ಕಯಂತ್ರ",
+      "lead": "ಮಾಸಿಕ ಬೆಲೆ, ಚಂದಾದಾರಿಕೆಗಳ ಸಂಖ್ಯೆ ಮತ್ತು ವರ್ಷಗಳನ್ನು ನಮೂದಿಸಿ.",
+      "truth": "ನಿಮ್ಮ ಮಾಹಿತಿ ಸಾಧನದಲ್ಲೇ ಉಳಿಯುತ್ತದೆ; ಸ್ಪರ್ಧಿಗಳ ಬೆಲೆಗಳನ್ನು ಕಲ್ಪಿಸಿ ಸೇರಿಸುವುದಿಲ್ಲ.",
+      "monthly": "ಪ್ರತಿ ಆ್ಯಪ್‌ನ ಮಾಸಿಕ ಬೆಲೆ",
+      "subscriptions": "ಚಂದಾದಾರಿಕೆಗಳ ಸಂಖ್ಯೆ",
+      "years": "ವರ್ಷಗಳು",
+      "total": "ಒಟ್ಟು ಮರುಕಳಿಸುವ ವೆಚ್ಚ",
+      "currency_note": "ಎಲ್ಲಾ ನಮೂದುಗಳಿಗೆ ಒಂದೇ ಕರೆನ್ಸಿ ಬಳಸಿ; ವಿನಿಮಯ ದರ ಅನ್ವಯಿಸುವುದಿಲ್ಲ."
+    },
+    "ko": {
+      "title": "앱 구독 비용 계산기",
+      "lead": "월 요금, 구독 수, 이용 기간을 입력하세요.",
+      "truth": "입력값은 기기에만 남으며 경쟁 앱 가격을 임의로 만들지 않습니다.",
+      "monthly": "앱당 월 요금",
+      "subscriptions": "구독 수",
+      "years": "이용 연수",
+      "total": "총 반복 비용",
+      "currency_note": "모든 입력에 같은 통화를 사용하세요. 환율은 적용하지 않습니다."
+    },
+    "ms": {
+      "title": "Kalkulator kos langganan aplikasi",
+      "lead": "Masukkan harga bulanan, bilangan langganan dan tempoh tahun.",
+      "truth": "Input anda kekal pada peranti; kami tidak mereka-reka harga pesaing.",
+      "monthly": "Harga bulanan setiap aplikasi",
+      "subscriptions": "Bilangan langganan",
+      "years": "Tahun",
+      "total": "Jumlah kos berulang",
+      "currency_note": "Gunakan mata wang yang sama untuk semua input; tiada kadar pertukaran digunakan."
+    },
+    "ml-IN": {
+      "title": "ആപ്പ് സബ്‌സ്‌ക്രിപ്‌ഷൻ ചെലവ് കാൽക്കുലേറ്റർ",
+      "lead": "പ്രതിമാസ നിരക്ക്, സബ്‌സ്‌ക്രിപ്‌ഷനുകളുടെ എണ്ണം, വർഷങ്ങൾ എന്നിവ നൽകുക.",
+      "truth": "നിങ്ങളുടെ വിവരങ്ങൾ ഉപകരണത്തിൽ തന്നെ തുടരും; എതിരാളികളുടെ നിരക്കുകൾ കെട്ടിച്ചമയ്ക്കില്ല.",
+      "monthly": "ഓരോ ആപ്പിന്റെയും പ്രതിമാസ നിരക്ക്",
+      "subscriptions": "സബ്‌സ്‌ക്രിപ്‌ഷനുകളുടെ എണ്ണം",
+      "years": "വർഷങ്ങൾ",
+      "total": "ആകെ ആവർത്തന ചെലവ്",
+      "currency_note": "എല്ലാ ഇൻപുട്ടിനും ഒരേ കറൻസി ഉപയോഗിക്കുക; വിനിമയ നിരക്ക് പ്രയോഗിക്കില്ല."
+    },
+    "mr-IN": {
+      "title": "अॅप सदस्यता खर्च कॅल्क्युलेटर",
+      "lead": "मासिक किंमत, सदस्यतांची संख्या आणि वर्षे भरा.",
+      "truth": "तुमची माहिती याच डिव्हाइसवर राहते; स्पर्धकांच्या किंमती बनवून दाखवल्या जात नाहीत.",
+      "monthly": "प्रति अॅप मासिक किंमत",
+      "subscriptions": "सदस्यतांची संख्या",
+      "years": "वर्षे",
+      "total": "एकूण आवर्ती खर्च",
+      "currency_note": "सर्व नोंदींसाठी एकच चलन वापरा; विनिमय दर लागू केला जात नाही."
+    },
+    "no": {
+      "title": "Kostnadskalkulator for appabonnementer",
+      "lead": "Skriv inn månedspris, antall abonnementer og antall år.",
+      "truth": "Opplysningene blir i nettleseren; vi finner ikke på konkurrentpriser.",
+      "monthly": "Månedspris per app",
+      "subscriptions": "Antall abonnementer",
+      "years": "År",
+      "total": "Samlet løpende kostnad",
+      "currency_note": "Bruk samme valuta i alle felt; ingen valutakurs brukes."
+    },
+    "or-IN": {
+      "title": "ଆପ୍ ସବ୍‌ସ୍କ୍ରିପ୍ସନ୍ ଖର୍ଚ୍ଚ କ୍ୟାଲ୍‌କୁଲେଟର୍",
+      "lead": "ମାସିକ ମୂଲ୍ୟ, ସବ୍‌ସ୍କ୍ରିପ୍ସନ୍ ସଂଖ୍ୟା ଏବଂ ବର୍ଷ ଲେଖନ୍ତୁ।",
+      "truth": "ଆପଣଙ୍କ ତଥ୍ୟ ଡିଭାଇସ୍‌ରେ ରହେ; ପ୍ରତିଦ୍ୱନ୍ଦ୍ୱୀଙ୍କ ମୂଲ୍ୟ କଳ୍ପନା କରାଯାଏ ନାହିଁ।",
+      "monthly": "ପ୍ରତି ଆପ୍‌ର ମାସିକ ମୂଲ୍ୟ",
+      "subscriptions": "ସବ୍‌ସ୍କ୍ରିପ୍ସନ୍ ସଂଖ୍ୟା",
+      "years": "ବର୍ଷ",
+      "total": "ମୋଟ ପୁନରାବୃତ୍ତି ଖର୍ଚ୍ଚ",
+      "currency_note": "ସମସ୍ତ ଇନ୍‌ପୁଟ୍‌ରେ ଏକେ ମୁଦ୍ରା ବ୍ୟବହାର କରନ୍ତୁ; ବିନିମୟ ହାର ଲାଗୁ ହୁଏ ନାହିଁ।"
+    },
+    "pl": {
+      "title": "Kalkulator kosztów subskrypcji aplikacji",
+      "lead": "Wpisz miesięczną cenę, liczbę subskrypcji i liczbę lat.",
+      "truth": "Dane pozostają w przeglądarce; nie wymyślamy cen konkurencji.",
+      "monthly": "Miesięczna cena za aplikację",
+      "subscriptions": "Liczba subskrypcji",
+      "years": "Lata",
+      "total": "Łączny koszt cykliczny",
+      "currency_note": "We wszystkich polach użyj tej samej waluty; kurs wymiany nie jest stosowany."
+    },
+    "pt-BR": {
+      "title": "Calculadora de custo de assinaturas de apps",
+      "lead": "Informe o preço mensal, o número de assinaturas e os anos de uso.",
+      "truth": "Seus dados ficam no dispositivo; não inventamos preços de concorrentes.",
+      "monthly": "Preço mensal por app",
+      "subscriptions": "Número de assinaturas",
+      "years": "Anos",
+      "total": "Custo recorrente total",
+      "currency_note": "Use a mesma moeda em todos os campos; nenhuma taxa de câmbio é aplicada."
+    },
+    "pt-PT": {
+      "title": "Calculadora de custos de subscrições de apps",
+      "lead": "Indique o preço mensal, o número de subscrições e os anos de utilização.",
+      "truth": "Os dados ficam no dispositivo; não inventamos preços da concorrência.",
+      "monthly": "Preço mensal por app",
+      "subscriptions": "Número de subscrições",
+      "years": "Anos",
+      "total": "Custo recorrente total",
+      "currency_note": "Use a mesma moeda em todos os campos; não é aplicada qualquer taxa de câmbio."
+    },
+    "pa-IN": {
+      "title": "ਐਪ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਖਰਚ ਕੈਲਕੂਲੇਟਰ",
+      "lead": "ਮਹੀਨਾਵਾਰ ਕੀਮਤ, ਸਬਸਕ੍ਰਿਪਸ਼ਨਾਂ ਦੀ ਗਿਣਤੀ ਅਤੇ ਸਾਲ ਦਰਜ ਕਰੋ।",
+      "truth": "ਤੁਹਾਡੀ ਜਾਣਕਾਰੀ ਡਿਵਾਈਸ ਉੱਤੇ ਹੀ ਰਹਿੰਦੀ ਹੈ; ਮੁਕਾਬਲੇ ਵਾਲਿਆਂ ਦੀਆਂ ਕੀਮਤਾਂ ਘੜੀਆਂ ਨਹੀਂ ਜਾਂਦੀਆਂ।",
+      "monthly": "ਹਰ ਐਪ ਦੀ ਮਹੀਨਾਵਾਰ ਕੀਮਤ",
+      "subscriptions": "ਸਬਸਕ੍ਰਿਪਸ਼ਨਾਂ ਦੀ ਗਿਣਤੀ",
+      "years": "ਸਾਲ",
+      "total": "ਕੁੱਲ ਆਵਰਤੀ ਖਰਚ",
+      "currency_note": "ਸਾਰੀਆਂ ਐਂਟਰੀਆਂ ਲਈ ਇੱਕੋ ਮੁਦਰਾ ਵਰਤੋ; ਕੋਈ ਵਟਾਂਦਰਾ ਦਰ ਲਾਗੂ ਨਹੀਂ ਹੁੰਦੀ।"
+    },
+    "ro": {
+      "title": "Calculator pentru costul abonamentelor la aplicații",
+      "lead": "Introdu prețul lunar, numărul de abonamente și numărul de ani.",
+      "truth": "Datele rămân pe dispozitiv; nu inventăm prețurile concurenței.",
+      "monthly": "Preț lunar per aplicație",
+      "subscriptions": "Număr de abonamente",
+      "years": "Ani",
+      "total": "Cost recurent total",
+      "currency_note": "Folosește aceeași monedă pentru toate valorile; nu se aplică niciun curs valutar."
+    },
+    "ru": {
+      "title": "Калькулятор стоимости подписок на приложения",
+      "lead": "Укажите месячную цену, количество подписок и число лет.",
+      "truth": "Введённые данные остаются на устройстве; цены конкурентов не выдумываются.",
+      "monthly": "Месячная цена за приложение",
+      "subscriptions": "Количество подписок",
+      "years": "Годы",
+      "total": "Общая сумма регулярных расходов",
+      "currency_note": "Используйте одну валюту для всех значений; обменный курс не применяется."
+    },
+    "sk": {
+      "title": "Kalkulačka nákladov na predplatné aplikácií",
+      "lead": "Zadajte mesačnú cenu, počet predplatných a počet rokov.",
+      "truth": "Zadané údaje zostanú v prehliadači; ceny konkurencie si nevymýšľame.",
+      "monthly": "Mesačná cena za aplikáciu",
+      "subscriptions": "Počet predplatných",
+      "years": "Roky",
+      "total": "Celkové opakované náklady",
+      "currency_note": "Pri všetkých údajoch použite rovnakú menu; kurz sa neprepočítava."
+    },
+    "sl-SI": {
+      "title": "Kalkulator stroškov naročnin na aplikacije",
+      "lead": "Vnesite mesečno ceno, število naročnin in število let.",
+      "truth": "Vnosi ostanejo v brskalniku; cen konkurence si ne izmišljamo.",
+      "monthly": "Mesečna cena na aplikacijo",
+      "subscriptions": "Število naročnin",
+      "years": "Leta",
+      "total": "Skupni ponavljajoči se strošek",
+      "currency_note": "Za vse vnose uporabite isto valuto; menjalni tečaj se ne uporabi."
+    },
+    "es-MX": {
+      "title": "Calculadora del costo de suscripciones de apps",
+      "lead": "Ingresa el precio mensual, la cantidad de suscripciones y los años.",
+      "truth": "Tus datos permanecen en el dispositivo; no inventamos precios de la competencia.",
+      "monthly": "Precio mensual por app",
+      "subscriptions": "Cantidad de suscripciones",
+      "years": "Años",
+      "total": "Costo recurrente total",
+      "currency_note": "Usa la misma moneda en todos los campos; no se aplica ningún tipo de cambio."
+    },
+    "es-ES": {
+      "title": "Calculadora del coste de suscripciones de apps",
+      "lead": "Introduce el precio mensual, el número de suscripciones y los años.",
+      "truth": "Tus datos se quedan en el dispositivo; no inventamos precios de la competencia.",
+      "monthly": "Precio mensual por app",
+      "subscriptions": "Número de suscripciones",
+      "years": "Años",
+      "total": "Coste recurrente total",
+      "currency_note": "Usa la misma moneda en todos los campos; no se aplica ningún tipo de cambio."
+    },
+    "sv": {
+      "title": "Kostnadskalkylator för appabonnemang",
+      "lead": "Ange månadspris, antal abonnemang och antal år.",
+      "truth": "Dina uppgifter stannar i webbläsaren; vi hittar inte på konkurrentpriser.",
+      "monthly": "Månadspris per app",
+      "subscriptions": "Antal abonnemang",
+      "years": "År",
+      "total": "Total återkommande kostnad",
+      "currency_note": "Använd samma valuta i alla fält; ingen växelkurs tillämpas."
+    },
+    "ta-IN": {
+      "title": "ஆப் சந்தா செலவு கணிப்பான்",
+      "lead": "மாதக் கட்டணம், சந்தாக்களின் எண்ணிக்கை, ஆண்டுகள் ஆகியவற்றை உள்ளிடுங்கள்.",
+      "truth": "உங்கள் தகவல் சாதனத்திலேயே இருக்கும்; போட்டியாளர் விலைகள் கற்பனையாக சேர்க்கப்படாது.",
+      "monthly": "ஒவ்வொரு ஆப்பிற்குமான மாதக் கட்டணம்",
+      "subscriptions": "சந்தாக்களின் எண்ணிக்கை",
+      "years": "ஆண்டுகள்",
+      "total": "மொத்த தொடர் செலவு",
+      "currency_note": "அனைத்து உள்ளீடுகளுக்கும் ஒரே நாணயத்தைப் பயன்படுத்துங்கள்; மாற்று விகிதம் பயன்படுத்தப்படாது."
+    },
+    "te-IN": {
+      "title": "యాప్ సబ్‌స్క్రిప్షన్ ఖర్చు కాలిక్యులేటర్",
+      "lead": "నెలవారీ ధర, సబ్‌స్క్రిప్షన్‌ల సంఖ్య, సంవత్సరాలను నమోదు చేయండి.",
+      "truth": "మీ సమాచారం పరికరంలోనే ఉంటుంది; పోటీదారుల ధరలను కల్పించి చూపము.",
+      "monthly": "ఒక్కో యాప్ నెలవారీ ధర",
+      "subscriptions": "సబ్‌స్క్రిప్షన్‌ల సంఖ్య",
+      "years": "సంవత్సరాలు",
+      "total": "మొత్తం పునరావృత ఖర్చు",
+      "currency_note": "అన్ని ఇన్‌పుట్‌లకు ఒకే కరెన్సీ వాడండి; మారకపు రేటు వర్తించదు."
+    },
+    "th": {
+      "title": "เครื่องคำนวณค่าใช้จ่ายสมาชิกแอป",
+      "lead": "กรอกราคารายเดือน จำนวนการสมัครสมาชิก และจำนวนปี",
+      "truth": "ข้อมูลของคุณอยู่ในอุปกรณ์เท่านั้น เราไม่สร้างราคาคู่แข่งขึ้นเอง",
+      "monthly": "ราคารายเดือนต่อแอป",
+      "subscriptions": "จำนวนการสมัครสมาชิก",
+      "years": "จำนวนปี",
+      "total": "ค่าใช้จ่ายประจำทั้งหมด",
+      "currency_note": "ใช้สกุลเงินเดียวกันทุกช่อง โดยไม่มีการคำนวณอัตราแลกเปลี่ยน"
+    },
+    "tr": {
+      "title": "Uygulama aboneliği maliyet hesaplayıcı",
+      "lead": "Aylık fiyatı, abonelik sayısını ve yıl sayısını girin.",
+      "truth": "Girdileriniz cihazınızda kalır; rakip fiyatları uydurulmaz.",
+      "monthly": "Uygulama başına aylık fiyat",
+      "subscriptions": "Abonelik sayısı",
+      "years": "Yıl",
+      "total": "Toplam yinelenen maliyet",
+      "currency_note": "Tüm girişlerde aynı para birimini kullanın; döviz kuru uygulanmaz."
+    },
+    "uk": {
+      "title": "Калькулятор вартості підписок на застосунки",
+      "lead": "Введіть місячну ціну, кількість підписок і кількість років.",
+      "truth": "Дані залишаються на пристрої; ціни конкурентів не вигадуються.",
+      "monthly": "Місячна ціна за застосунок",
+      "subscriptions": "Кількість підписок",
+      "years": "Роки",
+      "total": "Загальна сума регулярних витрат",
+      "currency_note": "Використовуйте одну валюту для всіх значень; обмінний курс не застосовується."
+    },
+    "ur-PK": {
+      "title": "ایپ سبسکرپشن لاگت کیلکولیٹر",
+      "lead": "ماہانہ قیمت، سبسکرپشنز کی تعداد اور سال درج کریں۔",
+      "truth": "آپ کی معلومات اسی ڈیوائس پر رہتی ہیں؛ حریفوں کی قیمتیں فرض نہیں کی جاتیں۔",
+      "monthly": "فی ایپ ماہانہ قیمت",
+      "subscriptions": "سبسکرپشنز کی تعداد",
+      "years": "سال",
+      "total": "کل بار بار آنے والی لاگت",
+      "currency_note": "تمام اندراجات کے لیے ایک ہی کرنسی استعمال کریں؛ شرحِ مبادلہ لاگو نہیں ہوتی۔"
+    },
+    "vi": {
+      "title": "Công cụ tính chi phí đăng ký ứng dụng",
+      "lead": "Nhập giá theo tháng, số gói đăng ký và số năm sử dụng.",
+      "truth": "Dữ liệu chỉ ở trên thiết bị; chúng tôi không tự đặt giá của đối thủ.",
+      "monthly": "Giá mỗi tháng cho một ứng dụng",
+      "subscriptions": "Số gói đăng ký",
+      "years": "Số năm",
+      "total": "Tổng chi phí định kỳ",
+      "currency_note": "Dùng cùng một loại tiền tệ cho mọi dữ liệu; không áp dụng tỷ giá quy đổi."
+    }
+  }
+}

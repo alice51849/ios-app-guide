@@ -94,6 +94,7 @@ import passport_photo_print_sheet
 import photo_storage_cleanup_planner
 import portfolio_app_catalog_api
 import portfolio_app_finder
+import portfolio_cost_calculator
 import publisher_intent_catalog
 import prioritize_trip_planet_resources
 import queries
@@ -20587,6 +20588,109 @@ class GeneratorTests(unittest.TestCase):
                 tool_schema["properties"]["subscription_count"]["type"],
             )
 
+    def test_portfolio_calculator_covers_50_locales_and_every_record(self):
+        def record(key):
+            app_id = str(APPSTORE[key])
+            localized = {
+                locale: {
+                    "decision_context": f"{locale} verified task fit for {key}.",
+                    "app_store_url": (
+                        f"https://apps.apple.com/app/id{app_id}"
+                        f"?ct=cost_{locale.lower().replace('-', '_')}"
+                    ),
+                    "app_store_cta_label": portfolio_app_finder.UI[locale][
+                        "store"
+                    ],
+                }
+                for locale in OFFICIAL_LOCALES
+            }
+            return {
+                "key": key,
+                "app_store_id": app_id,
+                "name": key.title(),
+                "purchase_model": "paid_upfront",
+                "one_time_option": True,
+                "summaries": {
+                    "en": f"English verified task fit for {key}.",
+                    "zh-Hant": f"繁體中文 {key}",
+                },
+                "localized_intents": localized,
+            }
+
+        records = [record("gmoney"), record("snapport")]
+        self.assertEqual(
+            {"en", *OFFICIAL_LOCALES},
+            set(portfolio_cost_calculator.I18N),
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            outputs = portfolio_cost_calculator.build(pages, records)
+            english = (
+                pages / "tools" / "subscription-cost-calculator.html"
+            ).read_text(encoding="utf-8")
+            traditional = (
+                pages
+                / "zh-Hant"
+                / "tools"
+                / "subscription-cost-calculator.html"
+            ).read_text(encoding="utf-8")
+            arabic = (
+                pages
+                / "ar-SA"
+                / "tools"
+                / "subscription-cost-calculator.html"
+            ).read_text(encoding="utf-8")
+            self.assertEqual(len(OFFICIAL_LOCALES) + 1, len(outputs))
+            self.assertTrue(
+                all(
+                    portfolio_cost_calculator.page_path(
+                        pages, locale
+                    ).is_file()
+                    for locale in ("en", *OFFICIAL_LOCALES)
+                )
+            )
+
+        for page in (english, traditional, arabic):
+            self.assertEqual(2, page.count('class="cta"'))
+            self.assertIn(APPSTORE["gmoney"], page)
+            self.assertIn(APPSTORE["snapport"], page)
+            self.assertIn("document.modelContext?.registerTool", page)
+            self.assertIn("name:'calculate_recurring_app_cost'", page)
+            self.assertIn("white-space:nowrap", page)
+            self.assertNotIn("fetch(", page)
+            self.assertNotIn("localStorage", page)
+            self.assertNotIn("sessionStorage", page)
+            self.assertNotIn("~$5", page)
+            self.assertNotIn('value="4.99"', page)
+        self.assertIn("App 訂閱費用計算器", traditional)
+        self.assertIn('dir="rtl"', arabic)
+        self.assertEqual(
+            len(OFFICIAL_LOCALES) + 2,
+            english.count('rel="alternate"'),
+        )
+
+        with tempfile.TemporaryDirectory() as directory, mock.patch.object(
+            gen_llms, "TOOLS", directory
+        ):
+            Path(directory, "subscription-cost-calculator.html").write_text(
+                english,
+                encoding="utf-8",
+            )
+            lines = gen_llms.portfolio_cost_calculator_lines(full=True)
+        self.assertIn(
+            f"- Official Apple locales: {len(OFFICIAL_LOCALES)}/"
+            f"{len(OFFICIAL_LOCALES)}",
+            lines,
+        )
+        self.assertEqual(
+            len(OFFICIAL_LOCALES),
+            sum(
+                f"/{locale}/tools/subscription-cost-calculator.html" in line
+                for locale in OFFICIAL_LOCALES
+                for line in lines
+            ),
+        )
+
     def test_redirect_pages_stay_out_of_indexes(self):
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)
@@ -20838,9 +20942,14 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(1, workflow.count("bopomofo_practice_sheet.py"))
         self.assertEqual(1, workflow.count("wordmate_language_support.py"))
         self.assertEqual(1, workflow.count("portfolio_app_finder.py"))
+        self.assertEqual(1, workflow.count("portfolio_cost_calculator.py"))
         self.assertEqual(1, workflow.count("outreach_scorecard.py"))
         self.assertLess(
             workflow.index("portfolio_app_finder.py"),
+            workflow.index("portfolio_cost_calculator.py"),
+        )
+        self.assertLess(
+            workflow.index("portfolio_cost_calculator.py"),
             workflow.index("outreach_scorecard.py"),
         )
         self.assertLess(
@@ -21217,6 +21326,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("bopomofo_practice_sheet.py", publish)
         self.assertIn("wordmate_language_support.py", publish)
         self.assertIn("portfolio_app_finder.py", publish)
+        self.assertIn("portfolio_cost_calculator.py", publish)
         self.assertIn("outreach_scorecard.py", publish)
         self.assertIn("portfolio_app_catalog_api.py", publish)
         self.assertIn("publisher_intent_catalog.py", publish)
@@ -21228,6 +21338,10 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertLess(
             publish.index("portfolio_app_finder.py"),
+            publish.index("portfolio_cost_calculator.py"),
+        )
+        self.assertLess(
+            publish.index("portfolio_cost_calculator.py"),
             publish.index("outreach_scorecard.py"),
         )
         self.assertLess(

@@ -20452,6 +20452,7 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertEqual(1, workflow.count("portfolio_app_catalog_api.py"))
         self.assertEqual(1, workflow.count("publisher_intent_catalog.py"))
+        self.assertEqual(1, workflow.count("gen_github_discovery_readmes.py"))
         self.assertLess(
             workflow.index("refresh=True"),
             workflow.index("passport_photo_print_sheet.py"),
@@ -20626,6 +20627,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_webmcp_install_tools.py",
             "portfolio_app_catalog_api.py",
             "publisher_intent_catalog.py",
+            "gen_github_discovery_readmes.py",
             "gen_publisher_disclosures.py",
             "gen_guide_design.py",
             "gen_app_store_facts.py",
@@ -20803,6 +20805,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("outreach_scorecard.py", publish)
         self.assertIn("portfolio_app_catalog_api.py", publish)
         self.assertIn("publisher_intent_catalog.py", publish)
+        self.assertIn("gen_github_discovery_readmes.py", publish)
         self.assertLess(
             publish.index("portfolio_app_finder.py"),
             publish.index("portfolio_app_catalog_api.py"),
@@ -20833,6 +20836,10 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertLess(
             publish.index("publisher_intent_catalog.py"),
+            publish.index("gen_github_discovery_readmes.py"),
+        )
+        self.assertLess(
+            publish.index("gen_github_discovery_readmes.py"),
             publish.index("gen_mobile_store_ctas.py"),
         )
         self.assertEqual(
@@ -20949,6 +20956,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_smart_app_banners.py",
             "gen_mobile_app_identity.py",
             "gen_webmcp_install_tools.py",
+            "gen_github_discovery_readmes.py",
             "gen_publisher_disclosures.py",
             "gen_guide_design.py",
             "gen_app_store_facts.py",

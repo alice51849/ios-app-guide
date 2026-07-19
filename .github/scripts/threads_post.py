@@ -57,15 +57,23 @@ def _post(url, data, *, label, retry_delays=(2, 4)):
     )
 
 
-# Threads 兩個排程時段(03/14 UTC):台灣/亞洲早、歐美。各發對應時區在地語言。
+# Threads 四個排程時段各發對應時區語言，且同日不重複 App。
 TZ_LANGS = {
-    "asia": list(ASIA_LOCALES),  # 03 UTC 台灣 11:00 / 亞洲
-    "west": [*EUROPE_MIDDLE_EAST_LOCALES, *AMERICAS_LOCALES],  # 14 UTC 歐美
+    "asia": list(ASIA_LOCALES),
+    "eu_me2": list(EUROPE_MIDDLE_EAST_LOCALES),
+    "west": list(EUROPE_MIDDLE_EAST_LOCALES),
+    "americas": list(AMERICAS_LOCALES),
 }
 
 
 def _zone(hour_utc):
-    return "west" if 9 <= hour_utc < 21 else "asia"  # 09–21 UTC 歐美;其餘(含 03:00)亞洲
+    if 6 <= hour_utc < 9:
+        return "eu_me2"
+    if 9 <= hour_utc < 17:
+        return "west"
+    if 17 <= hour_utc < 21:
+        return "americas"
+    return "asia"
 
 
 def candidates(pool, now=None):

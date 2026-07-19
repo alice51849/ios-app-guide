@@ -98,7 +98,9 @@ class RotationTests(unittest.TestCase):
             (telegram_post.pick, 9, telegram_post.TZ_LANGS["eu_me"]),
             (telegram_post.pick, 15, telegram_post.TZ_LANGS["americas"]),
             (threads_post.pick, 3, threads_post.TZ_LANGS["asia"]),
+            (threads_post.pick, 7, threads_post.TZ_LANGS["eu_me2"]),
             (threads_post.pick, 14, threads_post.TZ_LANGS["west"]),
+            (threads_post.pick, 19, threads_post.TZ_LANGS["americas"]),
         )
         expected_ids = {common.app_key(item) for item in self.pool}
         for picker, hour, languages in routes:
@@ -124,24 +126,28 @@ class RotationTests(unittest.TestCase):
             picks = (
                 telegram_post.pick(self.pool, self._at(day, 1)),
                 threads_post.pick(self.pool, self._at(day, 3)),
+                threads_post.pick(self.pool, self._at(day, 7)),
                 telegram_post.pick(self.pool, self._at(day, 9)),
                 threads_post.pick(self.pool, self._at(day, 14)),
                 telegram_post.pick(self.pool, self._at(day, 15)),
+                threads_post.pick(self.pool, self._at(day, 19)),
             )
-            self.assertEqual(5, len({common.app_key(item) for item in picks}))
+            self.assertEqual(7, len({common.app_key(item) for item in picks}))
 
-    def test_combined_channels_cover_every_app_within_six_days(self):
+    def test_combined_channels_cover_every_app_within_four_days(self):
         expected = {common.app_key(item) for item in self.pool}
         observed = set()
-        for day in range(6):
+        for day in range(4):
             observed.update(
                 common.app_key(item)
                 for item in (
                     telegram_post.pick(self.pool, self._at(day, 1)),
                     threads_post.pick(self.pool, self._at(day, 3)),
+                    threads_post.pick(self.pool, self._at(day, 7)),
                     telegram_post.pick(self.pool, self._at(day, 9)),
                     threads_post.pick(self.pool, self._at(day, 14)),
                     telegram_post.pick(self.pool, self._at(day, 15)),
+                    threads_post.pick(self.pool, self._at(day, 19)),
                 )
             )
         self.assertEqual(expected, observed)
@@ -150,9 +156,11 @@ class RotationTests(unittest.TestCase):
         routes = (
             (telegram_post.pick, 1),
             (threads_post.pick, 3),
+            (threads_post.pick, 7),
             (telegram_post.pick, 9),
             (threads_post.pick, 14),
             (telegram_post.pick, 15),
+            (threads_post.pick, 19),
         )
         launch = dt.datetime.combine(
             common.FULL_LOCALE_SOCIAL_LAUNCH_DATE,
@@ -183,9 +191,11 @@ class RotationTests(unittest.TestCase):
         routes = (
             (telegram_post.pick, 1),
             (threads_post.pick, 3),
+            (threads_post.pick, 7),
             (telegram_post.pick, 9),
             (threads_post.pick, 14),
             (telegram_post.pick, 15),
+            (threads_post.pick, 19),
         )
         launch = dt.datetime.combine(
             common.FULL_LOCALE_SOCIAL_LAUNCH_DATE,
@@ -285,7 +295,7 @@ class RotationTests(unittest.TestCase):
 
     def test_uneven_copy_counts_cannot_bias_app_rotation(self):
         pool = []
-        for app_index in range(5):
+        for app_index in range(7):
             app_id = str(7_000_000_000 + app_index)
             for copy_index in range(30 if app_index == 0 else 1):
                 pool.append(
@@ -296,7 +306,7 @@ class RotationTests(unittest.TestCase):
                         "url": f"https://apps.apple.com/app/id{app_id}",
                     }
                 )
-        expected = {str(7_000_000_000 + index) for index in range(5)}
+        expected = {str(7_000_000_000 + index) for index in range(7)}
         for channel in common.CHANNEL_ORDER:
             picks = {
                 common.app_key(
@@ -304,7 +314,7 @@ class RotationTests(unittest.TestCase):
                         pool, channel, self._at(day, 15)
                     )[0]
                 )
-                for day in range(5)
+                for day in range(7)
             }
             self.assertEqual(expected, picks)
 
@@ -455,7 +465,7 @@ class FooterAndSelectionTests(unittest.TestCase):
                 "text": f"post {index}",
                 "url": f"https://apps.apple.com/app/id{7_000_000_000 + index}",
             }
-            for index in range(7)
+            for index in range(9)
         ]
         live_pool = common.filter_reachable_pool(
             pool,
@@ -469,7 +479,7 @@ class FooterAndSelectionTests(unittest.TestCase):
             )[0]
             for channel in common.CHANNEL_ORDER
         ]
-        self.assertEqual(5, len({common.app_key(item) for item in picks}))
+        self.assertEqual(7, len({common.app_key(item) for item in picks}))
 
     def test_url_validator_classifies_404_without_retry(self):
         opener = mock.Mock(side_effect=http_error(404))

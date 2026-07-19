@@ -118,33 +118,63 @@ CHANNEL_SPECS = {
     "telegram:asia": {
         "langs": ASIA_LOCALES,
         "offset": 0,
+        "region": "asia",
     },
     "threads:asia": {
         "langs": ASIA_LOCALES,
         "offset": 29,
+        "region": "asia",
+    },
+    "threads:eu_me2": {
+        "langs": EUROPE_MIDDLE_EAST_LOCALES,
+        "offset": 37,
+        "region": "eu_me",
     },
     "telegram:eu_me": {
         "langs": EUROPE_MIDDLE_EAST_LOCALES,
         "offset": 11,
+        "region": "eu_me",
     },
     "threads:west": {
-        "langs": (*EUROPE_MIDDLE_EAST_LOCALES, *AMERICAS_LOCALES),
+        "langs": EUROPE_MIDDLE_EAST_LOCALES,
         "offset": 47,
+        "region": "eu_me",
     },
     "telegram:americas": {
         "langs": AMERICAS_LOCALES,
         "offset": 23,
+        "region": "americas",
+    },
+    "threads:americas": {
+        "langs": AMERICAS_LOCALES,
+        "offset": 53,
+        "region": "americas",
     },
 }
 
-# This mirrors the five UTC cron times, so every later channel avoids earlier picks.
+# This mirrors the seven UTC cron times, so every channel gets a distinct App.
 CHANNEL_ORDER = (
     "telegram:asia",
     "threads:asia",
+    "threads:eu_me2",
     "telegram:eu_me",
     "threads:west",
     "telegram:americas",
+    "threads:americas",
 )
+REGION_LOCALES = {
+    "asia": ASIA_LOCALES,
+    "eu_me": EUROPE_MIDDLE_EAST_LOCALES,
+    "americas": AMERICAS_LOCALES,
+}
+REGION_CHANNELS = {
+    region: tuple(
+        channel
+        for channel in CHANNEL_ORDER
+        if CHANNEL_SPECS[channel]["region"] == region
+    )
+    for region in REGION_LOCALES
+}
 
 
 def _load_asc_growth_signals(raw=None, today=None):
@@ -399,13 +429,10 @@ def _copy_candidates(items, channel, day, app_index, app_count):
     current_round = (
         day * channel_count + channel_index
     ) // app_count
-    current_region = (
-        "asia"
-        if channel_index < 2
-        else "eu_me"
-        if channel_index < 4
-        else "americas"
-    )
+    current_region = CHANNEL_SPECS[channel]["region"]
+    region_channels = REGION_CHANNELS[current_region]
+    region_index = region_channels.index(channel)
+    region_locales = REGION_LOCALES[current_region]
     regional_rank = 0
     for round_index in range(current_round):
         shift = (
@@ -417,68 +444,25 @@ def _copy_candidates(items, channel, day, app_index, app_count):
         prior_channel = (
             round_index * app_count + position
         ) % channel_count
-        prior_region = (
-            "asia"
-            if prior_channel < 2
-            else "eu_me"
-            if prior_channel < 4
-            else "americas"
-        )
+        prior_region = CHANNEL_SPECS[
+            CHANNEL_ORDER[prior_channel]
+        ]["region"]
         if prior_region == current_region:
             regional_rank += 1
     launch_phase = day - (
         FULL_LOCALE_SOCIAL_LAUNCH_DATE - BASE_DATE
     ).days
     if 0 <= launch_phase < FULL_LOCALE_SOCIAL_LAUNCH_DAYS:
-        if current_region == "asia":
-            target_locale = ASIA_LOCALES[
-                (2 * launch_phase + channel_index) % len(ASIA_LOCALES)
-            ]
-        elif current_region == "eu_me":
-            target_locale = EUROPE_MIDDLE_EAST_LOCALES[
-                (2 * launch_phase + channel_index - 2)
-                % len(EUROPE_MIDDLE_EAST_LOCALES)
-            ]
-        else:
-            target_locale = AMERICAS_LOCALES[
-                launch_phase % len(AMERICAS_LOCALES)
-            ]
-    elif channel == "telegram:asia":
-        locales = _prioritized_locales(items, ASIA_LOCALES)
-        target_locale = locales[
-            (regional_rank + 9 * day) % len(locales)
-        ]
-    elif channel == "threads:asia":
-        locales = _prioritized_locales(items, ASIA_LOCALES)
-        target_locale = locales[
-            (regional_rank + 9 * day + 1) % len(locales)
-        ]
-    elif channel == "telegram:eu_me":
-        locales = _prioritized_locales(items, EUROPE_MIDDLE_EAST_LOCALES)
-        target_locale = locales[
+        target_locale = region_locales[
             (
-                14 * app_index
-                + regional_rank
-                + 23 * day
+                len(region_channels) * launch_phase
+                + region_index
             )
-            % len(locales)
-        ]
-    elif channel == "threads:west":
-        locales = _prioritized_locales(items, EUROPE_MIDDLE_EAST_LOCALES)
-        target_locale = locales[
-            (
-                14 * app_index
-                + regional_rank
-                + 23 * day
-                + 19
-            )
-            % len(locales)
+            % len(region_locales)
         ]
     else:
-        locales = _prioritized_locales(items, AMERICAS_LOCALES)
-        target_locale = locales[
-            (regional_rank + day) % len(locales)
-        ]
+        locales = _prioritized_locales(items, region_locales)
+        target_locale = locales[regional_rank % len(locales)]
     targeted = [item for item in candidates if item.get("lang") == target_locale]
     remaining = [item for item in candidates if item.get("lang") != target_locale]
     cycle = day // app_count
@@ -525,7 +509,8 @@ def channel_candidates(pool, channel, now=None):
     app_ids = list(groups)
     if len(app_ids) < len(CHANNEL_ORDER):
         raise ScheduleCapacityError(
-            "at least five live apps are required for unique daily channel picks"
+            f"at least {len(CHANNEL_ORDER)} live apps are required for "
+            "unique daily channel picks"
         )
     app_count = len(app_ids)
     channel_count = len(CHANNEL_ORDER)

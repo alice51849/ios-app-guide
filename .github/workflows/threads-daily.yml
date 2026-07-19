@@ -3,7 +3,9 @@ name: Threads daily post
 on:
   schedule:
     - cron: "0 3 * * *"    # 台灣 11:00
-    - cron: "0 14 * * *"   # 歐美
+    - cron: "0 7 * * *"    # 歐洲早 / 中東
+    - cron: "0 14 * * *"   # 歐洲
+    - cron: "0 19 * * *"   # 美洲
   workflow_dispatch:
 
 permissions:

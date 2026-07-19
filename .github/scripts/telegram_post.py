@@ -132,6 +132,7 @@ def _load_intent_pool(live_apps):
             {
                 "lang": locale,
                 "app": app_id,
+                "app_key": key,
                 "text": f"{query}\n{cta}",
                 "url": canonical,
                 "image_url": image_url,

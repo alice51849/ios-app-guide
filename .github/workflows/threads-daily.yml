@@ -12,6 +12,8 @@ permissions:
 jobs:
   post:
     runs-on: ubuntu-latest
+    env:
+      ASC_GROWTH_SIGNALS_B64: ${{ secrets.ASC_GROWTH_SIGNALS_B64 }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

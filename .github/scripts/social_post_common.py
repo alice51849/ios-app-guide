@@ -2,11 +2,13 @@
 # -*- coding: utf-8 -*-
 """Shared deterministic rotation, localization, and HTTP retry helpers."""
 
+import base64
 import concurrent.futures
 import datetime as _dt
 import http.client
 import json
 import math
+import os
 import re
 import sys
 import time
@@ -86,6 +88,14 @@ OFFICIAL_SOCIAL_LOCALES = (
     *EUROPE_MIDDLE_EAST_LOCALES,
     *AMERICAS_LOCALES,
 )
+ASC_SIGNAL_ACTIONS = {
+    "ACTIVATE",
+    "DOWNLOAD_CONVERT",
+    "INTENT_REFINE",
+    "PENDING",
+    "RETRY",
+    "SCALE",
+}
 
 FOOTERS = {
     "en": "— Lumi Apps · Independent iOS developer",
@@ -135,6 +145,71 @@ CHANNEL_ORDER = (
     "threads:west",
     "telegram:americas",
 )
+
+
+def _load_asc_growth_signals(raw=None, today=None):
+    if raw is None:
+        encoded = os.environ.get("ASC_GROWTH_SIGNALS_B64", "").strip()
+        if not encoded:
+            return {}, {}
+        try:
+            raw = base64.b64decode(encoded, validate=True).decode("utf-8")
+        except (ValueError, UnicodeError) as error:
+            raise ValueError(
+                "ASC_GROWTH_SIGNALS_B64 must contain valid base64 JSON"
+            ) from error
+    if not isinstance(raw, str) or not raw.strip():
+        return {}, {}
+    try:
+        document = json.loads(raw)
+    except json.JSONDecodeError as error:
+        raise ValueError("ASC growth signals must be valid JSON") from error
+    apps = document.get("apps") if isinstance(document, dict) else None
+    if (
+        not isinstance(document, dict)
+        or document.get("version") != 1
+        or not isinstance(apps, dict)
+        or document.get("app_count") != len(apps)
+    ):
+        raise ValueError("ASC growth signals have invalid coverage metadata")
+    try:
+        valid_until = _dt.date.fromisoformat(str(document["valid_until"]))
+        _dt.datetime.fromisoformat(
+            str(document["generated_at"]).replace("Z", "+00:00")
+        )
+    except (KeyError, TypeError, ValueError) as error:
+        raise ValueError("ASC growth signals have invalid timestamps") from error
+    current_day = today or _dt.datetime.now(_dt.timezone.utc).date()
+    if valid_until < current_day:
+        print(
+            "WARNING: ASC growth signals expired; using deterministic routing",
+            file=sys.stderr,
+        )
+        return {}, {}
+
+    locales_by_app = {}
+    actions_by_app = {}
+    for app, signal in apps.items():
+        locales = signal.get("locales") if isinstance(signal, dict) else None
+        action = signal.get("action") if isinstance(signal, dict) else None
+        if (
+            not isinstance(app, str)
+            or re.fullmatch(r"[a-z0-9]+", app) is None
+            or not isinstance(locales, list)
+            or len(locales) > 6
+            or len(locales) != len(set(locales))
+            or any(locale not in OFFICIAL_SOCIAL_LOCALES for locale in locales)
+            or action not in ASC_SIGNAL_ACTIONS
+        ):
+            raise ValueError(f"ASC growth signals have invalid App signal: {app!r}")
+        locales_by_app[app] = tuple(locales)
+        actions_by_app[app] = action
+    return locales_by_app, actions_by_app
+
+
+ASC_MARKET_LOCALES, ASC_GROWTH_ACTIONS = _load_asc_growth_signals()
+
+
 class RequestError(RuntimeError):
     """A request failed or returned an unusable response."""
 
@@ -263,6 +338,27 @@ def _app_groups(pool):
     return groups
 
 
+def _prioritized_locales(items, locales):
+    keys = {
+        item.get("app_key")
+        for item in items
+        if isinstance(item.get("app_key"), str)
+        and re.fullmatch(r"[a-z0-9]+", item["app_key"])
+    }
+    if len(keys) > 1:
+        raise ValueError("social App group contains multiple publisher keys")
+    app = next(iter(keys), None)
+    preferred = ASC_MARKET_LOCALES.get(app, ())
+    return tuple(
+        dict.fromkeys(
+            (
+                *(locale for locale in preferred if locale in locales),
+                *locales,
+            )
+        )
+    )
+
+
 def filter_reachable_pool(pool, validator=None, label="Social", max_workers=8):
     """Drop only confirmed-dead apps so every channel schedules the same live set."""
     validator = validate_url if validator is None else validator
@@ -348,35 +444,40 @@ def _copy_candidates(items, channel, day, app_index, app_count):
                 launch_phase % len(AMERICAS_LOCALES)
             ]
     elif channel == "telegram:asia":
-        target_locale = ASIA_LOCALES[
-            (regional_rank + 9 * day) % len(ASIA_LOCALES)
+        locales = _prioritized_locales(items, ASIA_LOCALES)
+        target_locale = locales[
+            (regional_rank + 9 * day) % len(locales)
         ]
     elif channel == "threads:asia":
-        target_locale = ASIA_LOCALES[
-            (regional_rank + 9 * day + 1) % len(ASIA_LOCALES)
+        locales = _prioritized_locales(items, ASIA_LOCALES)
+        target_locale = locales[
+            (regional_rank + 9 * day + 1) % len(locales)
         ]
     elif channel == "telegram:eu_me":
-        target_locale = EUROPE_MIDDLE_EAST_LOCALES[
+        locales = _prioritized_locales(items, EUROPE_MIDDLE_EAST_LOCALES)
+        target_locale = locales[
             (
                 14 * app_index
                 + regional_rank
                 + 23 * day
             )
-            % len(EUROPE_MIDDLE_EAST_LOCALES)
+            % len(locales)
         ]
     elif channel == "threads:west":
-        target_locale = EUROPE_MIDDLE_EAST_LOCALES[
+        locales = _prioritized_locales(items, EUROPE_MIDDLE_EAST_LOCALES)
+        target_locale = locales[
             (
                 14 * app_index
                 + regional_rank
                 + 23 * day
                 + 19
             )
-            % len(EUROPE_MIDDLE_EAST_LOCALES)
+            % len(locales)
         ]
     else:
-        target_locale = AMERICAS_LOCALES[
-            (regional_rank + day) % len(AMERICAS_LOCALES)
+        locales = _prioritized_locales(items, AMERICAS_LOCALES)
+        target_locale = locales[
+            (regional_rank + day) % len(locales)
         ]
     targeted = [item for item in candidates if item.get("lang") == target_locale]
     remaining = [item for item in candidates if item.get("lang") != target_locale]

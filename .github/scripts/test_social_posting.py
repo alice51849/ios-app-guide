@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 """Regression tests for the social posting automations."""
 
+import base64
 import datetime as dt
 import io
 import json
@@ -207,6 +208,81 @@ class RotationTests(unittest.TestCase):
         }
         self.assertEqual(expected, observed)
 
+    def test_private_asc_signal_reorders_only_post_launch_locale_cycle(self):
+        app_id = "7000000000"
+        pool = [
+            {
+                "lang": locale,
+                "app": app_id,
+                "app_key": "alpha",
+                "text": locale,
+                "url": f"https://apps.apple.com/app/id{app_id}",
+            }
+            for locale in common.ASIA_LOCALES
+        ]
+        launch_day = (
+            common.FULL_LOCALE_SOCIAL_LAUNCH_DATE - common.BASE_DATE
+        ).days
+        with mock.patch.object(
+            common,
+            "ASC_MARKET_LOCALES",
+            {"alpha": ("ko", "ja")},
+        ):
+            launch_signal = common._copy_candidates(
+                pool,
+                "telegram:asia",
+                launch_day,
+                app_index=0,
+                app_count=28,
+            )[0]["lang"]
+            post_launch_signal = [
+                (
+                    day,
+                    common._copy_candidates(
+                        pool,
+                        "telegram:asia",
+                        day,
+                        app_index=0,
+                        app_count=28,
+                    )[0]["lang"],
+                )
+                for day in range(launch_day + 13, launch_day + 200)
+            ]
+        with mock.patch.object(common, "ASC_MARKET_LOCALES", {}):
+            launch_default = common._copy_candidates(
+                pool,
+                "telegram:asia",
+                launch_day,
+                app_index=0,
+                app_count=28,
+            )[0]["lang"]
+            changed = next(
+                (
+                    day,
+                    locale,
+                    common._copy_candidates(
+                        pool,
+                        "telegram:asia",
+                        day,
+                        app_index=0,
+                        app_count=28,
+                    )[0]["lang"],
+                )
+                for day, locale in post_launch_signal
+                if locale == "ko"
+                and common._copy_candidates(
+                    pool,
+                    "telegram:asia",
+                    day,
+                    app_index=0,
+                    app_count=28,
+                )[0]["lang"]
+                != locale
+            )
+        self.assertEqual(launch_default, launch_signal)
+        self.assertEqual("ko", changed[1])
+        self.assertNotEqual(changed[1], changed[2])
+
     def test_uneven_copy_counts_cannot_bias_app_rotation(self):
         pool = []
         for app_index in range(5):
@@ -234,6 +310,72 @@ class RotationTests(unittest.TestCase):
 
 
 class FooterAndSelectionTests(unittest.TestCase):
+    def test_private_asc_signal_is_validated_without_exposing_metrics(self):
+        raw = json.dumps(
+            {
+                "version": 1,
+                "generated_at": "2026-07-19T11:26:27+00:00",
+                "valid_until": "2026-07-22",
+                "app_count": 2,
+                "apps": {
+                    "alpha": {
+                        "action": "SCALE",
+                        "locales": ["zh-Hant", "en-US"],
+                    },
+                    "beta": {
+                        "action": "DOWNLOAD_CONVERT",
+                        "locales": [],
+                    },
+                },
+            }
+        )
+        locales, actions = common._load_asc_growth_signals(
+            raw,
+            today=dt.date(2026, 7, 20),
+        )
+        self.assertEqual(
+            {"alpha": ("zh-Hant", "en-US"), "beta": ()},
+            locales,
+        )
+        self.assertEqual(
+            {"alpha": "SCALE", "beta": "DOWNLOAD_CONVERT"},
+            actions,
+        )
+        with mock.patch.dict(
+            os.environ,
+            {
+                "ASC_GROWTH_SIGNALS_B64": base64.b64encode(
+                    raw.encode("utf-8")
+                ).decode("ascii")
+            },
+            clear=False,
+        ):
+            self.assertEqual(
+                (locales, actions),
+                common._load_asc_growth_signals(
+                    today=dt.date(2026, 7, 20)
+                ),
+            )
+
+    def test_expired_private_asc_signal_keeps_deterministic_rotation(self):
+        warning = io.StringIO()
+        raw = json.dumps(
+            {
+                "version": 1,
+                "generated_at": "2026-07-15T00:00:00+00:00",
+                "valid_until": "2026-07-18",
+                "app_count": 0,
+                "apps": {},
+            }
+        )
+        with mock.patch.object(common.sys, "stderr", warning):
+            locales, actions = common._load_asc_growth_signals(
+                raw,
+                today=dt.date(2026, 7, 20),
+            )
+        self.assertEqual(({}, {}), (locales, actions))
+        self.assertIn("signals expired", warning.getvalue())
+
     def test_every_supported_language_has_its_own_footer(self):
         expected_languages = {
             "en",

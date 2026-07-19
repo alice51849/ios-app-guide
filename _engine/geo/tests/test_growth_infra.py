@@ -94,6 +94,7 @@ import passport_photo_print_sheet
 import photo_storage_cleanup_planner
 import portfolio_app_catalog_api
 import portfolio_app_finder
+import publisher_intent_catalog
 import prioritize_trip_planet_resources
 import queries
 import refresh_primary_resource_answers
@@ -17154,6 +17155,9 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("wordmate-language-support.schema.json", english)
         self.assertIn("navigator.share", english)
         self.assertIn("navigator.clipboard.writeText", english)
+        self.assertIn("navigator.clipboard.writeText(currentUrl())", english)
+        self.assertIn("applyUrlFilters();", english)
+        self.assertIn("history.replaceState", english)
         self.assertIn("document.modelContext?.registerTool", english)
         self.assertIn(
             'name:"check_wordmate_language_support"',
@@ -17566,6 +17570,131 @@ class GeneratorTests(unittest.TestCase):
             "at least one verified live app",
         ):
             portfolio_app_finder.catalog_records(set(), Path("."))
+
+    def test_portfolio_finder_localizes_all_official_markets_and_deep_links(self):
+        self.assertEqual(
+            {"en", *OFFICIAL_LOCALES},
+            set(portfolio_app_finder.UI),
+        )
+        self.assertEqual(
+            set(portfolio_app_finder.UI),
+            set(portfolio_app_finder.FINDER_COPY),
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            data = pages / "data"
+            data.mkdir(parents=True)
+            intents = []
+            for locale in OFFICIAL_LOCALES:
+                is_japanese = locale == "ja"
+                intents.append(
+                    {
+                        "locale": locale,
+                        "app_key": "snapport",
+                        "app_store_id": "6780575828",
+                        "publisher_query": (
+                            "証明写真を作る"
+                            if is_japanese
+                            else f"Passport photo task ({locale})"
+                        ),
+                        "decision_context": (
+                            "端末上で証明写真を準備します。"
+                            if is_japanese
+                            else f"Localized decision context ({locale})."
+                        ),
+                        "purchase_model": "paid_upfront",
+                        "one_time_option": True,
+                        "canonical_guide_url": (
+                            f"{portfolio_app_finder.SITE}/{locale}/"
+                            "answers/passport-photo.html"
+                        ),
+                        "app_store_url": (
+                            "https://apps.apple.com/jp/app/id6780575828"
+                            if is_japanese
+                            else "https://apps.apple.com/app/id6780575828"
+                        ),
+                        "app_store_cta_label": (
+                            "App StoreでSnapportを見る →"
+                            if is_japanese
+                            else f"View Snapport ({locale}) →"
+                        ),
+                        "verified_live": True,
+                        "is_ranking": False,
+                        "measured_search_volume": False,
+                    }
+                )
+            (
+                data
+                / f"{publisher_intent_catalog.SLUG}.json"
+            ).write_text(
+                json.dumps({"records": intents}, ensure_ascii=False),
+                encoding="utf-8",
+            )
+            base = [
+                {
+                    "key": "snapport",
+                    "app_store_id": "6780575828",
+                    "name": "Snapport",
+                    "category": "photo-utility",
+                    "category_labels": {
+                        "en": "Photo & utility",
+                        "zh-Hant": "照片與工具",
+                    },
+                    "summaries": {
+                        "en": "Make compliant passport photos.",
+                        "zh-Hant": "製作合規證件照。",
+                    },
+                    "purchase_model": "paid_upfront",
+                    "purchase_labels": {
+                        "en": "Paid download",
+                        "zh-Hant": "付費下載",
+                    },
+                    "one_time_option": True,
+                    "features": ["Pay once"],
+                    "keywords": ["passport photo"],
+                    "capabilities": {
+                        "offline": False,
+                        "no_account": False,
+                        "no_ads": False,
+                        "no_tracking": False,
+                        "private_or_on_device": True,
+                        "widget": False,
+                        "apple_watch": False,
+                    },
+                    "canonical_app_store_url": (
+                        "https://apps.apple.com/app/id6780575828"
+                    ),
+                    "verified_live": True,
+                }
+            ]
+            records = portfolio_app_finder.localized_page_records(
+                base, pages
+            )
+            japanese = portfolio_app_finder.render_page("ja", records)
+            arabic = portfolio_app_finder.render_page("ar-SA", records)
+            opensearch = portfolio_app_finder.opensearch_document("ja")
+
+        self.assertEqual(52, japanese.count("hreflang="))
+        self.assertIn('<html lang="ja">', japanese)
+        self.assertIn("証明写真を作る", japanese)
+        self.assertIn("端末上で証明写真を準備します。", japanese)
+        self.assertIn("App StoreでSnapportを見る →", japanese)
+        self.assertIn(
+            "https://apps.apple.com/jp/app/id6780575828?ct=iag_find_ja",
+            japanese,
+        )
+        self.assertIn('rel="search"', japanese)
+        self.assertIn("?q={search_term_string}", japanese)
+        self.assertIn(
+            (
+                f"{portfolio_app_finder.SITE}/data/"
+                f"{publisher_intent_catalog.SLUG}.json"
+            ),
+            japanese,
+        )
+        self.assertIn('<html lang="ar-SA" dir="rtl">', arabic)
+        self.assertIn("?q={searchTerms}", opensearch)
+        self.assertNotIn("campaign-attribution reporting", japanese)
 
     def test_portfolio_finder_covers_current_verified_live_apps(self):
         live = appstore_live.live_app_keys(
@@ -21297,12 +21426,26 @@ class GeneratorTests(unittest.TestCase):
                 "https://apps.apple.com/tw/app/id6773017109",
                 zh_hant,
             )
+            self.assertIn(
+                (
+                    f"{gen_llms.SITE}/zh-Hant/tools/"
+                    f"{gen_llms.PORTFOLIO_FINDER_TOOL}.html"
+                ),
+                zh_hant,
+            )
             japanese = (pages / "llms" / "ja.txt").read_text(
                 encoding="utf-8"
             )
             self.assertIn("Lumi ボポモフォ", japanese)
             self.assertIn(
                 "https://apps.apple.com/jp/app/id6773017109",
+                japanese,
+            )
+            self.assertIn(
+                (
+                    f"{gen_llms.SITE}/ja/tools/"
+                    f"{gen_llms.PORTFOLIO_FINDER_TOOL}.html"
+                ),
                 japanese,
             )
             sitemap = ET.parse(pages / "sitemap_llms.xml").getroot()

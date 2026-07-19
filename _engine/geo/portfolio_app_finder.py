@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate a bilingual, local-only finder for every verified live app."""
+"""Generate a 50-locale, local-only finder for every verified live app."""
 
 from __future__ import annotations
 
@@ -9,6 +9,7 @@ import os
 from pathlib import Path
 import re
 import sys
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
@@ -20,6 +21,8 @@ import gen_app_catalog  # noqa: E402
 from gen_calculator import write_tools_sitemap  # noqa: E402
 from gen_feed import feed_discovery_links  # noqa: E402
 import gen_mobile_app_identity  # noqa: E402
+from official_locales import OFFICIAL_LOCALES  # noqa: E402
+import publisher_intent_catalog  # noqa: E402
 import queries  # noqa: E402
 from videogen.registry import (  # noqa: E402
     APPS,
@@ -36,15 +39,17 @@ SLUG = "private-pay-once-iphone-app-finder"
 DATA_SLUG = "verified-ios-app-finder-catalog"
 CATALOG_NAME = "Lumi Studio Publisher-Verified iOS App Catalogue"
 LICENSE_URL = "https://creativecommons.org/licenses/by/4.0/"
-CONTENT_DATE = answer_portfolio.CONTENT_DATE
+CONTENT_DATE = "2026-07-19"
 APP_CATALOG_API = f"{SITE}/api/v1/ios-app-catalog"
+I18N_PATH = HERE / "portfolio_app_finder_i18n.json"
+RTL_LOCALES = frozenset({"ar-SA", "he", "ur-PK"})
 
 UI = {
     "en": {
         "home": f"{SITE}/index.html",
         "tools": f"{SITE}/tools/",
         "switch": "繁體中文",
-        "eyebrow": "Verified live portfolio · local-only filters",
+        "eyebrow": "Verified live apps · filters stay in your browser",
         "verified": "{count} verified live apps",
         "alphabetical": "Alphabetical · never a ranking",
         "private": "No account, storage or analytics",
@@ -53,7 +58,7 @@ UI = {
         "category": "Category",
         "purchase": "Purchase model",
         "privacy": "Privacy or offline fact",
-        "device": "Apple surface",
+        "device": "Apple device or feature",
         "all_categories": "Every category",
         "all_purchase": "Every current model",
         "one_time": "Any one-time option",
@@ -99,6 +104,7 @@ UI = {
             "The catalogue contains no invented price, rank, rating or review."
         ),
         "download_json": "JSON catalogue",
+        "download_intents": "50-locale buyer intents",
         "download_schema": "JSON Schema",
         "download_openapi": "50-locale OpenAPI",
         "copy": "Copy finder link",
@@ -106,10 +112,11 @@ UI = {
         "copied": "Finder link copied.",
         "copy_failed": "Copy is unavailable. Copy the URL from the address bar.",
         "share_cancelled": "Sharing was cancelled.",
-        "sources_title": "Specifications and attribution",
+        "sources_title": "Specifications and route labels",
         "sources_text": (
             "App availability is checked against Apple's public lookup service in "
-            "the US, Taiwan, Japan and UK. App links use Apple's campaign token. "
+            "the US, Taiwan, Japan and UK. App links use a non-personal Apple "
+            "campaign route label without claiming campaign-attribution reports. "
             "The machine graph uses ItemList and MobileApplication without fake offers or ratings."
         ),
         "apple_source": "Apple campaign-link guidance",
@@ -119,7 +126,8 @@ UI = {
         "webmcp_description": (
             "Filter the verified live iOS app portfolio by task and published "
             "facts. Return alphabetical matches with truthful fit text and one "
-            "attributed App Store URL per result; never treat the order as a ranking."
+            "direct App Store URL with a non-personal route label per result; never "
+            "treat the order as a ranking."
         ),
         "webmcp_query_description": (
             "Plain-language task or feature, such as passport photo, kids math, "
@@ -132,7 +140,7 @@ UI = {
         "index_title": "Private & Pay-Once iPhone App Finder",
         "index_description": (
             "Filter every verified live app by task, purchase model, privacy fact "
-            "and Apple device surface."
+            "and Apple device or feature."
         ),
         "footer": (
             "Free client-side finder. Results are alphabetical and factual, not a "
@@ -143,7 +151,7 @@ UI = {
         "home": f"{SITE}/zh-Hant/index.html",
         "tools": f"{SITE}/zh-Hant/tools/",
         "switch": "English",
-        "eyebrow": "已驗證上架組合 · 本機篩選",
+        "eyebrow": "已驗證上架 App · 篩選只在瀏覽器內執行",
         "verified": "{count} 款已驗證上架 App",
         "alphabetical": "依名稱排序 · 絕非排行榜",
         "private": "免帳號、不儲存、無分析",
@@ -152,7 +160,7 @@ UI = {
         "category": "類別",
         "purchase": "購買模式",
         "privacy": "隱私或離線事實",
-        "device": "Apple 使用介面",
+        "device": "Apple 裝置或功能",
         "all_categories": "全部類別",
         "all_purchase": "全部目前模式",
         "one_time": "任何一次性付費選項",
@@ -195,6 +203,7 @@ UI = {
         "data_title": "Agent 可讀的已驗證目錄",
         "data_text": "可下載相同的依名稱排序 JSON 資料與 JSON Schema；目錄不包含捏造的價格、名次、評分或評論。",
         "download_json": "JSON 目錄",
+        "download_intents": "50 語購買意圖資料",
         "download_schema": "JSON Schema",
         "download_openapi": "50 語系 OpenAPI",
         "copy": "複製篩選器連結",
@@ -202,9 +211,9 @@ UI = {
         "copied": "已複製篩選器連結。",
         "copy_failed": "無法自動複製，請從網址列複製本頁連結。",
         "share_cancelled": "已取消分享。",
-        "sources_title": "規格與歸因",
+        "sources_title": "規格與路由標記",
         "sources_text": (
-            "App 供應狀態會透過 Apple 公開 lookup service 核對美國、台灣、日本與英國；App 連結使用 Apple campaign token。機器圖譜使用 ItemList 與 MobileApplication，不加入虛假 offers 或評分。"
+            "App 供應狀態會透過 Apple 公開 lookup service 核對美國、台灣、日本與英國；App 連結使用不含個資的 Apple campaign 路由標記，但不宣稱可產生活動歸因報表。機器圖譜使用 ItemList 與 MobileApplication，不加入虛假 offers 或評分。"
         ),
         "apple_source": "Apple campaign link 指南",
         "google_source": "Google 軟體 App 結構化資料",
@@ -212,7 +221,7 @@ UI = {
         "webmcp_source": "Chrome WebMCP imperative API",
         "webmcp_description": (
             "依任務與公開事實篩選已驗證上架的 iOS App；回傳依名稱排序的符合項目、"
-            "真實適用原因及每筆一個可歸因 App Store 網址，不得把順序視為排名。"
+            "真實適用原因及每筆一個附不含個資路由標記的 App Store 直連，不得把順序視為排名。"
         ),
         "webmcp_query_description": (
             "以白話描述任務或功能，例如證件照、兒童數學、離線掃描、旅遊規劃或睡眠。"
@@ -220,15 +229,120 @@ UI = {
         "license_text": "CC BY 4.0 僅涵蓋這份原創目錄彙編，不涵蓋 Apple 或各 App 商標。",
         "faq_title": "常見問題",
         "index_title": "隱私優先、一次買斷 iPhone App 篩選器",
-        "index_description": "依任務、購買模式、隱私事實與 Apple 使用介面，篩選每款已驗證上架 App。",
+        "index_description": "依任務、購買模式、隱私事實與 Apple 裝置或功能，篩選每款已驗證上架 App。",
         "footer": "免費瀏覽器端篩選器。結果依事實與名稱排序，不是排行、推薦分數或成果保證。",
     },
 }
 
 
+def _localized_tree(value: object, mapping: dict[str, str]) -> object:
+    if isinstance(value, str):
+        translated = mapping.get(value)
+        if not isinstance(translated, str) or not translated.strip():
+            raise ValueError(f"Missing portfolio finder translation: {value!r}")
+        return translated
+    if isinstance(value, list):
+        return [_localized_tree(item, mapping) for item in value]
+    if isinstance(value, dict):
+        return {
+            key: _localized_tree(item, mapping)
+            for key, item in value.items()
+        }
+    raise TypeError(f"Unsupported portfolio finder i18n value: {type(value)}")
+
+
+def load_i18n(path: Path = I18N_PATH) -> tuple[
+    dict[str, dict[str, object]],
+    dict[str, dict[str, object]],
+]:
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if payload.get("schema_version") != 1 or payload.get("source_locale") != "en":
+        raise ValueError(f"Invalid portfolio finder i18n metadata: {path}")
+    source = payload.get("source")
+    localizations = payload.get("localizations")
+    if not isinstance(source, dict) or not isinstance(localizations, dict):
+        raise ValueError(f"Invalid portfolio finder i18n structure: {path}")
+    if set(localizations) != set(OFFICIAL_LOCALES):
+        raise ValueError(
+            "Portfolio finder i18n must cover the official 50 locales: "
+            f"missing={sorted(set(OFFICIAL_LOCALES) - set(localizations))}, "
+            f"extra={sorted(set(localizations) - set(OFFICIAL_LOCALES))}"
+        )
+
+    source_ui = source.get("ui")
+    source_answer = source.get("answer")
+    if not isinstance(source_ui, dict) or not isinstance(source_answer, dict):
+        raise ValueError(f"Invalid portfolio finder source copy: {path}")
+
+    ui: dict[str, dict[str, object]] = {"en": dict(source_ui)}
+    answers: dict[str, dict[str, object]] = {"en": dict(source_answer)}
+    for locale in OFFICIAL_LOCALES:
+        mapping = localizations.get(locale)
+        if not isinstance(mapping, dict):
+            raise ValueError(f"Invalid portfolio finder locale mapping: {locale}")
+        ui[locale] = _localized_tree(source_ui, mapping)
+        answers[locale] = _localized_tree(source_answer, mapping)
+
+    for locale, copy in ui.items():
+        prefix = "" if locale == "en" else f"{locale}/"
+        copy["home"] = f"{SITE}/{prefix}index.html"
+        copy["tools"] = f"{SITE}/tools/"
+        copy["switch"] = (
+            "繁體中文" if locale == "en" else copy["switch_english"]
+        )
+        answers[locale]["html_lang"] = locale
+    return ui, answers
+
+
+UI, FINDER_COPY = load_i18n()
+
+
 def canonical(locale: str) -> str:
-    prefix = "zh-Hant/" if locale == "zh-Hant" else ""
+    if locale != "en" and locale not in OFFICIAL_LOCALES:
+        raise ValueError(f"Unsupported portfolio finder locale: {locale}")
+    prefix = "" if locale == "en" else f"{locale}/"
     return f"{SITE}/{prefix}tools/{SLUG}.html"
+
+
+def hreflang_links() -> str:
+    links = [
+        f'<link rel="alternate" hreflang="en" href="{canonical("en")}">'
+    ]
+    links.extend(
+        f'<link rel="alternate" hreflang="{locale}" '
+        f'href="{canonical(locale)}">'
+        for locale in OFFICIAL_LOCALES
+    )
+    links.append(
+        f'<link rel="alternate" hreflang="x-default" '
+        f'href="{canonical("en")}">'
+    )
+    return "\n".join(links)
+
+
+def opensearch_relative(locale: str) -> Path:
+    relative = Path("tools") / f"{SLUG}.opensearch.xml"
+    return relative if locale == "en" else Path(locale) / relative
+
+
+def opensearch_url(locale: str) -> str:
+    return f"{SITE}/{opensearch_relative(locale).as_posix()}"
+
+
+def opensearch_document(locale: str) -> str:
+    answer = FINDER_COPY[locale]
+    template = f"{canonical(locale)}?q={{searchTerms}}"
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">\n'
+        "  <ShortName>Lumi App Finder</ShortName>\n"
+        f"  <Description>{html.escape(answer['description'])}</Description>\n"
+        f'  <Url type="text/html" template="{html.escape(template)}"/>\n'
+        f"  <Language>{html.escape(answer['html_lang'])}</Language>\n"
+        "  <InputEncoding>UTF-8</InputEncoding>\n"
+        "  <OutputEncoding>UTF-8</OutputEncoding>\n"
+        "</OpenSearchDescription>\n"
+    )
 
 
 def data_url(suffix: str) -> str:
@@ -269,6 +383,35 @@ def _campaign_url(key: str) -> str:
     if len(campaign) > 30 or not re.fullmatch(r"[A-Za-z0-9_]+", campaign):
         raise ValueError(f"Invalid finder campaign token: {campaign}")
     return appstore_url(key, campaign)
+
+
+def finder_campaign_token(locale: str) -> str:
+    token = f"iag_find_{locale.replace('-', '_').lower()}"
+    if len(token) > 30 or not re.fullmatch(r"[a-z0-9_]+", token):
+        raise ValueError(f"Invalid localized finder campaign token: {token}")
+    return token
+
+
+def localized_app_store_url(record: dict[str, object], locale: str) -> str:
+    if locale == "en":
+        return _campaign_url(str(record["key"]))
+    intent = localized_intent(record, locale)
+    parsed = urlsplit(str(intent["app_store_url"]))
+    query = [
+        (key, value)
+        for key, value in parse_qsl(parsed.query, keep_blank_values=True)
+        if key != "ct"
+    ]
+    query.append(("ct", finder_campaign_token(locale)))
+    return urlunsplit(
+        (
+            parsed.scheme,
+            parsed.netloc,
+            parsed.path,
+            urlencode(query),
+            "",
+        )
+    )
 
 
 def localized_summary(key: str, locale: str, pages: Path) -> str:
@@ -356,10 +499,111 @@ def catalog_records(
     )
 
 
+def localized_page_records(
+    records: list[dict[str, object]],
+    pages: Path,
+) -> list[dict[str, object]]:
+    path = (
+        pages
+        / "data"
+        / f"{publisher_intent_catalog.SLUG}.json"
+    )
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    intent_records = payload.get("records")
+    if not isinstance(intent_records, list):
+        raise ValueError(f"Invalid publisher intent records: {path}")
+
+    expected_keys = {str(record["key"]) for record in records}
+    by_pair: dict[tuple[str, str], dict[str, object]] = {}
+    for intent in intent_records:
+        if not isinstance(intent, dict):
+            raise ValueError(f"Invalid publisher intent record: {path}")
+        key = str(intent.get("app_key", ""))
+        locale = str(intent.get("locale", ""))
+        if key not in expected_keys:
+            continue
+        pair = (locale, key)
+        if pair in by_pair:
+            raise ValueError(f"Duplicate publisher intent pair: {pair}")
+        if locale not in OFFICIAL_LOCALES:
+            raise ValueError(f"Unexpected publisher intent locale: {locale}")
+        if (
+            not intent.get("verified_live")
+            or intent.get("is_ranking")
+            or intent.get("measured_search_volume")
+        ):
+            raise ValueError(f"Unsafe publisher intent record: {pair}")
+        by_pair[pair] = intent
+
+    expected_pairs = {
+        (locale, key)
+        for locale in OFFICIAL_LOCALES
+        for key in expected_keys
+    }
+    if set(by_pair) != expected_pairs:
+        raise ValueError(
+            "Incomplete portfolio finder intent coverage: "
+            f"missing={len(expected_pairs - set(by_pair))}, "
+            f"extra={len(set(by_pair) - expected_pairs)}"
+        )
+
+    enriched = []
+    for record in records:
+        key = str(record["key"])
+        localized = {
+            locale: by_pair[(locale, key)]
+            for locale in OFFICIAL_LOCALES
+        }
+        app_id = str(record["app_store_id"])
+        if any(
+            str(intent.get("app_store_id")) != app_id
+            or str(intent.get("purchase_model")) != record["purchase_model"]
+            or bool(intent.get("one_time_option"))
+            != bool(record["one_time_option"])
+            for intent in localized.values()
+        ):
+            raise ValueError(f"Localized finder facts differ for {key}")
+        enriched.append({**record, "localized_intents": localized})
+    return enriched
+
+
+def localized_intent(
+    record: dict[str, object],
+    locale: str,
+) -> dict[str, object]:
+    summaries = record.get("summaries")
+    if locale == "en" or (
+        not isinstance(record.get("localized_intents"), dict)
+        and isinstance(summaries, dict)
+        and locale in summaries
+    ):
+        guide_locale = "en-US" if locale == "en" else locale
+        return {
+            "publisher_query": record["name"],
+            "decision_context": summaries[locale],
+            "canonical_guide_url": (
+                f"{SITE}/{guide_locale}/{record['key']}.html"
+            ),
+            "app_store_url": _campaign_url(str(record["key"])),
+            "app_store_cta_label": UI[locale]["store"],
+        }
+    localized = record.get("localized_intents")
+    if not isinstance(localized, dict) or locale not in localized:
+        raise ValueError(
+            f"Missing localized finder intent: {locale}/{record['key']}"
+        )
+    intent = localized[locale]
+    if not isinstance(intent, dict):
+        raise ValueError(
+            f"Invalid localized finder intent: {locale}/{record['key']}"
+        )
+    return intent
+
+
 def dataset_payload(records: list[dict[str, object]]) -> dict[str, object]:
     return {
         "name": CATALOG_NAME,
-        "description": answer_portfolio.COPY["en"]["description"],
+        "description": FINDER_COPY["en"]["description"],
         "question": answer_portfolio.PORTFOLIO_QUERY,
         "date_modified": CONTENT_DATE,
         "license": LICENSE_URL,
@@ -597,26 +841,38 @@ def structured_data(
     locale: str,
     records: list[dict[str, object]],
 ) -> str:
-    copy = answer_portfolio.COPY[locale]
+    copy = FINDER_COPY[locale]
+    ui = UI[locale]
     app_items = []
     for record in records:
+        intent = localized_intent(record, locale)
+        store_url = localized_app_store_url(record, locale)
         entity = gen_mobile_app_identity.mobile_app_schema(
             record["app_store_id"],
             record["name"],
             record["category"],
         )
         entity.pop("@context")
-        entity["description"] = record["summaries"][locale]
+        entity["url"] = store_url
+        entity["installUrl"] = store_url
+        entity["downloadUrl"] = store_url
+        entity["potentialAction"] = {
+            "@type": "InstallAction",
+            "target": store_url,
+        }
+        entity["description"] = intent["decision_context"]
         entity["featureList"] = record["features"]
         entity["additionalProperty"] = [
             {
                 "@type": "PropertyValue",
-                "name": "Purchase model",
-                "value": record["purchase_labels"][locale],
+                "name": ui["purchase"],
+                "value": ui["purchase_labels"][record["purchase_model"]],
             },
             {
                 "@type": "PropertyValue",
-                "name": "Availability verification",
+                "name": ui["verified"].replace(
+                    "{count}", str(len(records))
+                ),
                 "value": "Apple lookup: US, TW, JP and GB",
             },
         ]
@@ -624,7 +880,7 @@ def structured_data(
             {
                 "@type": "ListItem",
                 "@id": f"{canonical(locale)}#app-{record['key']}",
-                "url": record["canonical_app_store_url"],
+                "url": store_url,
                 "item": entity,
             }
         )
@@ -647,6 +903,19 @@ def structured_data(
                 "url": canonical(locale),
                 "inLanguage": copy["html_lang"],
                 "dateModified": CONTENT_DATE,
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": (
+                            f"{canonical(locale)}"
+                            "?q={search_term_string}"
+                        ),
+                    },
+                    "query-input": (
+                        "required name=search_term_string"
+                    ),
+                },
                 "mainEntity": {
                     "@type": "ItemList",
                     "@id": f"{canonical(locale)}#verified-apps",
@@ -675,7 +944,7 @@ def structured_data(
                     "url": f"{SITE}/about.html",
                 },
                 "isAccessibleForFree": True,
-                "inLanguage": ["en", "zh-Hant"],
+                "inLanguage": list(OFFICIAL_LOCALES),
                 "dateModified": CONTENT_DATE,
                 "distribution": [
                     {
@@ -701,11 +970,11 @@ def structured_data(
                 "inLanguage": copy["html_lang"],
                 "dateModified": CONTENT_DATE,
                 "featureList": [
-                    "Local-only search and filtering",
-                    "Alphabetical results without ranking",
-                    "Verified live App Store portfolio",
-                    "No account, submission, storage or analytics",
-                    "Progressive read-only WebMCP tool for supporting browsers",
+                    ui["search"],
+                    ui["alphabetical"],
+                    ui["verified"].replace("{count}", str(len(records))),
+                    ui["private"],
+                    ui["webmcp_description"],
                 ],
             },
             {
@@ -803,14 +1072,25 @@ def webmcp_input_schema(
     }
 
 
-def _record_search_text(record: dict[str, object]) -> str:
+def _record_search_text(
+    record: dict[str, object],
+    locale: str,
+) -> str:
+    intent = localized_intent(record, locale)
+    copy = UI[locale]
     return " ".join(
         [
-            record["key"],
-            record["name"],
-            record["category"],
-            record["summaries"]["en"],
-            record["summaries"]["zh-Hant"],
+            str(record["key"]),
+            str(record["name"]),
+            str(record["category"]),
+            str(
+                copy["category_labels"].get(
+                    record["category"],
+                    copy["category_labels"]["other"],
+                )
+            ),
+            str(intent["publisher_query"]),
+            str(intent["decision_context"]),
             *record["features"],
             *record["keywords"],
         ]
@@ -847,15 +1127,17 @@ def webmcp_records(
 ) -> list[dict[str, object]]:
     return [
         {
-            "search": _record_search_text(record),
+            "search": _record_search_text(record, locale),
             "category": record["category"],
             "purchase_model": record["purchase_model"],
             "one_time_option": record["one_time_option"],
             "privacy_facts": _record_privacy_facts(record),
             "device_surfaces": _record_device_surfaces(record),
             "name": record["name"],
-            "why_it_may_fit": record["summaries"][locale],
-            "app_store_url": _campaign_url(record["key"]),
+            "why_it_may_fit": localized_intent(
+                record, locale
+            )["decision_context"],
+            "app_store_url": localized_app_store_url(record, locale),
         }
         for record in records
     ]
@@ -868,6 +1150,7 @@ def app_cards(
     copy = UI[locale]
     cards = []
     for record in records:
+        intent = localized_intent(record, locale)
         capabilities = [
             key
             for key, enabled in record["capabilities"].items()
@@ -877,7 +1160,7 @@ def app_cards(
             copy["category_labels"].get(
                 record["category"], copy["category_labels"]["other"]
             ),
-            record["purchase_labels"][locale],
+            copy["purchase_labels"][record["purchase_model"]],
             *[
                 copy["capability_labels"][key]
                 for key in capabilities
@@ -887,7 +1170,7 @@ def app_cards(
             f'<span class="fact">{html.escape(value)}</span>'
             for value in dict.fromkeys(badges)
         )
-        search_text = _record_search_text(record)
+        search_text = _record_search_text(record, locale)
         devices = ["iphone"]
         if record["capabilities"]["widget"]:
             devices.append("widget")
@@ -903,11 +1186,16 @@ def app_cards(
             f'data-device="{html.escape(" ".join(devices))}">'
             f'<h2>{html.escape(record["name"])}</h2>'
             f'<div class="facts">{badge_html}</div>'
+            f'<p class="intent"><strong>{html.escape(copy["intent"])}:</strong> '
+            f'{html.escape(intent["publisher_query"])}</p>'
             f'<p class="why"><strong>{html.escape(copy["why"])}:</strong> '
-            f'{html.escape(record["summaries"][locale])}</p>'
+            f'{html.escape(intent["decision_context"])}</p>'
+            f'<div class="app-actions"><a class="guide" '
+            f'href="{html.escape(intent["canonical_guide_url"])}">'
+            f'{html.escape(copy["guide"])}</a>'
             f'<a class="store" rel="nofollow noopener" '
-            f'href="{html.escape(_campaign_url(record["key"]))}">'
-            f'{html.escape(copy["store"])}</a></article>'
+            f'href="{html.escape(localized_app_store_url(record, locale))}">'
+            f'{html.escape(intent["app_store_cta_label"])}</a></div></article>'
         )
     return "\n".join(cards)
 
@@ -917,7 +1205,7 @@ def render_page(
     records: list[dict[str, object]],
 ) -> str:
     copy = UI[locale]
-    answer = answer_portfolio.COPY[locale]
+    answer = FINDER_COPY[locale]
     other_locale = "zh-Hant" if locale == "en" else "en"
     method = "".join(
         f"<li>{html.escape(item)}</li>" for item in answer["method"]
@@ -942,16 +1230,15 @@ def render_page(
         separators=(",", ":"),
     )
     page = r"""<!doctype html>
-<html lang="__HTML_LANG__">
+<html lang="__HTML_LANG__"__DIRECTION__>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>__TITLE__</title>
 <meta name="description" content="__DESCRIPTION__">
 <link rel="canonical" href="__CANONICAL__">
-<link rel="alternate" hreflang="en" href="__EN_URL__">
-<link rel="alternate" hreflang="zh-Hant" href="__ZH_URL__">
-<link rel="alternate" hreflang="x-default" href="__EN_URL__">
+__HREFLANG__
+<link rel="search" type="application/opensearchdescription+xml" title="__TITLE__" href="__OPENSEARCH_URL__">
 <link rel="service" type="application/vnd.oai.openapi+json;version=3.1" href="__OPENAPI_URL__">
 __FEEDS__
 <meta property="og:type" content="website">
@@ -968,7 +1255,7 @@ __FEEDS__
 .badges,.facts,.actions{display:flex;gap:8px;flex-wrap:wrap}.badges{margin-top:20px}.badge,.fact{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:7px 11px;background:rgba(255,255,255,.86);font-size:.8rem;font-weight:850;white-space:nowrap}.fact{padding:5px 9px;background:#f5faf7}
 .card{border:1px solid var(--line);border-radius:28px;background:rgba(255,255,255,.94);box-shadow:var(--shadow);padding:clamp(20px,4vw,32px);margin-bottom:22px}.filters{display:grid;grid-template-columns:1fr;gap:14px}@media(min-width:700px){.filters{grid-template-columns:2fr 1fr 1fr}}@media(min-width:1020px){.filters{grid-template-columns:2fr 1fr 1fr 1fr 1fr}}
 label{display:block;font-weight:850;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}input,select{width:100%;min-height:50px;margin-top:6px;border:1px solid #c8d7d0;border-radius:15px;padding:11px 38px 11px 13px;background:#fff;color:var(--ink);font:inherit}
-button,.download,.store{min-height:48px;border-radius:999px;padding:12px 18px;font:inherit;font-weight:900;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer}button,.download{border:1px solid #c8d7d0;background:#fff;color:var(--teal)}.store{display:flex;align-items:center;justify-content:center;margin-top:auto;border:0;background:linear-gradient(135deg,var(--teal),#178c70);color:#fff!important;box-shadow:0 10px 28px rgba(18,107,87,.2)}
+button,.download,.store,.guide{min-height:48px;border-radius:999px;padding:12px 18px;font:inherit;font-weight:900;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer}button,.download,.guide{border:1px solid #c8d7d0;background:#fff;color:var(--teal)}.store{display:flex;align-items:center;justify-content:center;border:0;background:linear-gradient(135deg,var(--teal),#178c70);color:#fff!important;box-shadow:0 10px 28px rgba(18,107,87,.2)}.app-actions{display:grid;gap:9px;margin-top:auto}.guide{display:flex;align-items:center;justify-content:center}
 .clear{width:100%;margin-top:14px}.status{min-height:1.4em;margin:14px 0 0;color:var(--teal);font-weight:850}.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px;margin-bottom:22px}.app-card{display:flex;flex-direction:column;gap:13px;min-width:0;border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.96);box-shadow:0 14px 40px rgba(27,68,57,.08);padding:22px}.app-card h2{margin:0;font-size:1.2rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.app-card p{margin:0;color:var(--muted)}.why strong{color:var(--ink)}[hidden]{display:none!important}
 .two{display:grid;gap:20px}@media(min-width:820px){.two{grid-template-columns:1fr 1fr}}h2.section-title,.card>h2{margin:0 0 10px;font-size:clamp(1.35rem,3vw,2rem);letter-spacing:-.025em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.list{padding-left:1.25rem}.list li{margin:.58rem 0}.actions{margin-top:18px}.source a{font-weight:850}details{border-top:1px solid var(--line);padding:14px 0}summary{font-weight:850;cursor:pointer}footer{padding:28px 0 52px;color:var(--muted);font-size:.9rem}
 button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid rgba(103,80,201,.42);outline-offset:3px}@media(max-width:520px){.card{border-radius:22px}.nav{font-size:.88rem}.results{grid-template-columns:1fr}}
@@ -992,7 +1279,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{ou
 </section>
 <section class="wrap results" id="results">__APP_CARDS__</section>
 <section class="wrap two"><article class="card"><h2>__METHOD_TITLE__</h2><ul class="list">__METHOD__</ul></article><article class="card"><h2>__BOUNDARIES_TITLE__</h2><ul class="list">__BOUNDARIES__</ul></article></section>
-<section class="wrap card"><h2>__DATA_TITLE__</h2><p>__DATA_TEXT__</p><div class="actions"><a class="download" href="__DATA_URL__" download>__DOWNLOAD_JSON__</a><a class="download" href="__SCHEMA_URL__">__DOWNLOAD_SCHEMA__</a><a class="download" href="__OPENAPI_URL__">__DOWNLOAD_OPENAPI__</a><button id="copy" type="button">__COPY__</button><button id="share" type="button">__SHARE__</button></div><p class="status" id="share-status" role="status"></p></section>
+<section class="wrap card"><h2>__DATA_TITLE__</h2><p>__DATA_TEXT__</p><div class="actions"><a class="download" href="__DATA_URL__" download>__DOWNLOAD_JSON__</a><a class="download" href="__INTENTS_URL__" download>__DOWNLOAD_INTENTS__</a><a class="download" href="__SCHEMA_URL__">__DOWNLOAD_SCHEMA__</a><a class="download" href="__OPENAPI_URL__">__DOWNLOAD_OPENAPI__</a><button id="copy" type="button">__COPY__</button><button id="share" type="button">__SHARE__</button></div><p class="status" id="share-status" role="status"></p></section>
 <section class="wrap card source"><h2>__SOURCES_TITLE__</h2><p>__SOURCES_TEXT__</p><p><a href="__APPLE_SOURCE_URL__">__APPLE_SOURCE__</a> · <a href="__GOOGLE_SOURCE_URL__">__GOOGLE_SOURCE__</a> · <a href="__SCHEMA_SOURCE_URL__">__SCHEMA_SOURCE__</a> · <a href="__WEBMCP_SOURCE_URL__">__WEBMCP_SOURCE__</a> · <a href="__LICENSE_URL__">CC BY 4.0</a></p><p>__LICENSE_TEXT__</p></section>
 <section class="wrap card"><h2>__FAQ_TITLE__</h2>__FAQ__</section>
 </main>
@@ -1025,6 +1312,22 @@ function update(){
   empty.textContent=I18N.empty;empty.hidden=shown!==0;
   return matches;
 }
+function applyUrlFilters(){
+  const params=new URLSearchParams(location.search);
+  fields[0].value=(params.get("q")||"").slice(0,120);
+  for(const [field,name] of [[fields[1],"category"],[fields[2],"purchase"],[fields[3],"privacy"],[fields[4],"device"]]){
+    const value=params.get(name)||"";
+    field.value=[...field.options].some(option=>option.value===value)?value:"";
+  }
+}
+function syncUrl(){
+  const params=new URLSearchParams();
+  const values=[["q",fields[0].value.trim()],["category",fields[1].value],["purchase",fields[2].value],["privacy",fields[3].value],["device",fields[4].value]];
+  for(const [name,value] of values)if(value)params.set(name,value);
+  const query=params.toString();
+  history.replaceState(null,"",location.pathname+(query?`?${query}`:"")+location.hash);
+}
+function currentUrl(){return location.href;}
 function toolText(input,name){const value=input[name];if(value===undefined)return"";if(typeof value!=="string")throw new TypeError(`${name} must be a string.`);return value;}
 function toolSelectValue(value,name){if(!value)return"";const values=WEBMCP_INPUT_SCHEMA.properties[name]?.enum||[];if(!values.includes(value))throw new RangeError(`${name} is not a supported filter value.`);return value;}
 async function registerWebMcp(){
@@ -1058,12 +1361,13 @@ async function registerWebMcp(){
     }
   });
 }
-async function copyLink(){try{await navigator.clipboard.writeText("__CANONICAL__");shareStatus.textContent=I18N.copied;}catch(error){shareStatus.textContent=I18N.copy_failed;}}
-async function shareLink(){if(navigator.share){try{await navigator.share({title:document.title,url:"__CANONICAL__"});return;}catch(error){if(error&&error.name==="AbortError"){shareStatus.textContent=I18N.share_cancelled;return;}}}await copyLink();}
-for(const field of fields)field.addEventListener("input",update);
-document.getElementById("clear").addEventListener("click",()=>{for(const field of fields)field.value="";update();fields[0].focus();});
+async function copyLink(){try{await navigator.clipboard.writeText(currentUrl());shareStatus.textContent=I18N.copied;}catch(error){shareStatus.textContent=I18N.copy_failed;}}
+async function shareLink(){if(navigator.share){try{await navigator.share({title:document.title,url:currentUrl()});return;}catch(error){if(error&&error.name==="AbortError"){shareStatus.textContent=I18N.share_cancelled;return;}}}await copyLink();}
+for(const field of fields)field.addEventListener("input",()=>{update();syncUrl();});
+document.getElementById("clear").addEventListener("click",()=>{for(const field of fields)field.value="";update();syncUrl();fields[0].focus();});
 document.getElementById("copy").addEventListener("click",copyLink);
 document.getElementById("share").addEventListener("click",shareLink);
+applyUrlFilters();
 update();
 registerWebMcp().catch(error=>console.error("WebMCP tool registration failed.",error));
 </script>
@@ -1071,16 +1375,17 @@ registerWebMcp().catch(error=>console.error("WebMCP tool registration failed.",e
 """
     replacements = {
         "__HTML_LANG__": html.escape(answer["html_lang"]),
+        "__DIRECTION__": ' dir="rtl"' if locale in RTL_LOCALES else "",
         "__TITLE__": html.escape(answer["title"]),
         "__DESCRIPTION__": html.escape(answer["description"]),
         "__CANONICAL__": canonical(locale),
-        "__EN_URL__": canonical("en"),
-        "__ZH_URL__": canonical("zh-Hant"),
+        "__HREFLANG__": hreflang_links(),
+        "__OPENSEARCH_URL__": opensearch_url(locale),
         "__FEEDS__": feed_discovery_links(),
         "__SCHEMA__": structured_data(locale, records),
         "__HOME__": html.escape(copy["home"]),
         "__TOOLS__": html.escape(copy["tools"]),
-        "__TOOLS_LABEL__": "免費工具" if locale == "zh-Hant" else "Free tools",
+        "__TOOLS_LABEL__": html.escape(copy["tools_label"]),
         "__SWITCH_URL__": canonical(other_locale),
         "__SWITCH__": html.escape(copy["switch"]),
         "__EYEBROW__": html.escape(copy["eyebrow"]),
@@ -1124,9 +1429,13 @@ registerWebMcp().catch(error=>console.error("WebMCP tool registration failed.",e
         "__DATA_TITLE__": html.escape(copy["data_title"]),
         "__DATA_TEXT__": html.escape(copy["data_text"]),
         "__DATA_URL__": data_url(".json"),
+        "__INTENTS_URL__": (
+            f"{SITE}/data/{publisher_intent_catalog.SLUG}.json"
+        ),
         "__SCHEMA_URL__": data_url(".schema.json"),
         "__OPENAPI_URL__": f"{APP_CATALOG_API}/openapi.json",
         "__DOWNLOAD_JSON__": html.escape(copy["download_json"]),
+        "__DOWNLOAD_INTENTS__": html.escape(copy["download_intents"]),
         "__DOWNLOAD_SCHEMA__": html.escape(copy["download_schema"]),
         "__DOWNLOAD_OPENAPI__": html.escape(copy["download_openapi"]),
         "__COPY__": html.escape(copy["copy"]),
@@ -1229,29 +1538,49 @@ def build(
         pages / "apps.json",
         legacy_apps_json(records, pages),
     )
+    expected_live = set(publisher_intent_catalog.PERSONAS)
+    if {str(key) for key in live_keys} == expected_live:
+        publisher_intent_catalog.build(pages)
+        page_records = localized_page_records(records, pages)
+        page_locales = ["en", *OFFICIAL_LOCALES]
+    else:
+        page_records = records
+        page_locales = ["en", "zh-Hant"]
+
     outputs = []
-    for locale in UI:
+    for locale in page_locales:
         relative = Path("tools") / f"{SLUG}.html"
-        if locale == "zh-Hant":
+        if locale != "en":
             relative = Path(locale) / relative
-        page = render_page(locale, records)
+        page = render_page(locale, page_records)
         write_text_if_changed(
             pages / relative,
             page,
         )
+        write_text_if_changed(
+            pages / opensearch_relative(locale),
+            opensearch_document(locale),
+        )
         if locale == "en":
             write_text_if_changed(pages / "find-app.html", page)
         outputs.append(canonical(locale))
-    _update_one_index(pages / "tools" / "index.html", "en")
-    _update_one_index(
-        pages / "zh-Hant" / "tools" / "index.html",
-        "zh-Hant",
-    )
+    for locale in page_locales:
+        index = pages / "tools" / "index.html"
+        if locale != "en":
+            index = pages / locale / "tools" / "index.html"
+        _update_one_index(index, locale)
     return outputs
 
 
 def main() -> None:
     live = live_app_keys(APPSTORE, str(PAGES), refresh=False)
+    expected = set(publisher_intent_catalog.PERSONAS)
+    if set(live) != expected:
+        raise RuntimeError(
+            "The live portfolio and 50-locale buyer-intent catalog differ: "
+            f"missing={sorted(expected - set(live))}, "
+            f"unexpected={sorted(set(live) - expected)}"
+        )
     for output in build(live_keys=live):
         print(f"portfolio app finder -> {output}")
     print(f"catalog JSON -> {data_url('.json')}")

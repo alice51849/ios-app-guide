@@ -24,7 +24,7 @@ COPY = {
         "title": "Private & Pay-Once iPhone App Finder",
         "description": (
             "Filter every verified live app in the Lumi Studio publisher portfolio "
-            "by task, category, purchase model, privacy fact and Apple device surface."
+            "by task, category, purchase model, privacy fact and Apple device or feature."
         ),
         "heading": "Find the iPhone app that fits your task",
         "lead": (
@@ -36,7 +36,7 @@ COPY = {
             "Only apps present in the latest verified App Store availability cache are included.",
             "Filters use the maintained product registry: category, plain-language purpose, purchase model and explicitly stated capabilities.",
             "Results are alphabetical, not scored, sponsored or ordered by an invented popularity signal.",
-            "Each result has one direct App Store link with an Apple campaign token for aggregate acquisition attribution.",
+            "Each result has one direct App Store link with a non-personal campaign route label. Because the Apple provider token is unavailable, this page does not claim campaign-attribution reporting.",
             "Supporting browser previews can expose the same read-only filters to an AI agent through WebMCP; every other browser keeps the complete human interface.",
         ],
         "boundaries_title": "What this finder does not claim",
@@ -66,7 +66,7 @@ COPY = {
     "zh-Hant": {
         "html_lang": "zh-Hant",
         "title": "隱私優先、一次買斷 iPhone App 篩選器",
-        "description": "依任務、類別、購買模式、隱私事實與 Apple 裝置功能，篩選 Lumi Studio 開發者組合中已驗證上架的每款 App。",
+        "description": "依任務、類別、購買模式、隱私事實與 Apple 裝置或功能，篩選 Lumi Studio 開發者組合中已驗證上架的每款 App。",
         "heading": "找到真正符合任務的 iPhone App",
         "lead": "先描述要解決的事，再用公開產品事實縮小範圍。結果固定依名稱排序，不是付費排名。",
         "method_title": "篩選器如何產生結果",
@@ -74,7 +74,7 @@ COPY = {
             "只納入最新 App Store 可用性快取已驗證上架的 App。",
             "篩選依據來自維護中的產品資料：類別、白話用途、購買模式與明確列出的功能。",
             "結果依名稱排序，不計分、不接受贊助，也不使用虛構的熱門程度。",
-            "每筆結果只有一個 App Store 直連，並使用 Apple campaign token 進行彙總下載歸因。",
+            "每筆結果只有一個 App Store 直連，並附不含個資的活動路由標記。由於目前沒有 Apple provider token，本頁不宣稱可產生活動歸因報表。",
             "支援中的瀏覽器預覽版可透過 WebMCP，讓 AI agent 使用相同的唯讀篩選；其他瀏覽器仍保留完整的人類操作介面。",
         ],
         "boundaries_title": "本工具不會做的宣稱",

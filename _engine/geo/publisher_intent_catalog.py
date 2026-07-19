@@ -22,6 +22,7 @@ from app_store_storefronts import (
     load_storefront_availability,
     verified_app_store_url,
 )
+from gen_feed import feed_discovery_links
 from official_locales import OFFICIAL_LOCALES
 
 
@@ -835,6 +836,7 @@ th{{position:sticky;top:0;background:#eeeff8;color:#4e5568;font-size:12px;text-t
 tr:last-child td{{border-bottom:0}}
 .footer{{color:var(--sub);font-size:13px;margin-top:22px}}
 </style>
+{feed_discovery_links()}
 </head>
 <body>
 <main class="wrap">

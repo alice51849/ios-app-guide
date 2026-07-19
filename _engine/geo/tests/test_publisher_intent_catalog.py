@@ -341,6 +341,15 @@ class PublisherIntentOutputTests(unittest.TestCase):
                 52,
                 len(re.findall(r'<link rel="alternate" hreflang=', source)),
             )
+            for media_type in (
+                "application/atom+xml",
+                "application/rss+xml",
+                "application/feed+json",
+            ):
+                self.assertIn(
+                    f'<link rel="alternate" type="{media_type}"',
+                    source,
+                )
             table_body = re.search(
                 r"<tbody>(.*?)</tbody>",
                 source,

@@ -162,24 +162,24 @@ def portfolio_finder_lines(*, full):
         os.path.join(DATA_DIR, f"{PORTFOLIO_FINDER_DATASET}.json")
     ):
         return []
-    if full:
-        return [
-            "",
-            "## Publisher-verified first-party iOS app finder",
-            f"- [English private and pay-once finder]({SITE}/tools/{PORTFOLIO_FINDER_TOOL}.html)",
-            f"- [Traditional Chinese finder]({SITE}/zh-Hant/tools/{PORTFOLIO_FINDER_TOOL}.html)",
-            f"  - Agent-readable JSON: {SITE}/data/{PORTFOLIO_FINDER_DATASET}.json",
-            f"  - JSON Schema: {SITE}/data/{PORTFOLIO_FINDER_DATASET}.schema.json",
-            "  - Ordering: alphabetical; no paid, popularity or quality ranking",
-        ]
-    return [
+    localized = [
+        f"  - {locale}: {SITE}/{locale}/tools/{PORTFOLIO_FINDER_TOOL}.html"
+        for locale in OFFICIAL_LOCALES
+    ]
+    lines = [
         "",
         "## Publisher-verified first-party iOS app finder (alphabetical, not ranked)",
         f"- English finder: {SITE}/tools/{PORTFOLIO_FINDER_TOOL}.html",
-        f"- Traditional Chinese finder: {SITE}/zh-Hant/tools/{PORTFOLIO_FINDER_TOOL}.html",
+        f"- Official Apple locales: {len(OFFICIAL_LOCALES)}/{len(OFFICIAL_LOCALES)}",
+        *localized,
         f"- Agent-readable JSON: {SITE}/data/{PORTFOLIO_FINDER_DATASET}.json",
         f"- JSON Schema: {SITE}/data/{PORTFOLIO_FINDER_DATASET}.schema.json",
     ]
+    if full:
+        lines.append(
+            "- Ordering: alphabetical; no paid, popularity or quality ranking"
+        )
+    return lines
 
 
 def load_competitors():
@@ -318,6 +318,10 @@ def build_localized_llms(locale, live_keys, pages=None):
         "",
         f"locale: {locale}",
         f"apps: {len(records)}",
+        (
+            f"- {ui['dir_dir']}: {SITE}/{locale}/tools/"
+            f"{PORTFOLIO_FINDER_TOOL}.html"
+        ),
         "",
     ]
     for record in records:

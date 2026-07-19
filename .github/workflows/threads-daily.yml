@@ -9,7 +9,12 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: read
   contents: read
+
+concurrency:
+  group: threads-daily-social
+  cancel-in-progress: false
 
 jobs:
   post:
@@ -21,9 +26,21 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
+      - name: Prevent duplicate UTC slot
+        id: slot
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: >-
+          python3 .github/scripts/social_slot_gate.py
+          --workflow threads-daily.yml
+          --slots 3,7,14,19
       - name: Verify social automation
-        run: python3 .github/scripts/test_social_posting.py -q
+        if: steps.slot.outputs.should_post == 'true'
+        run: |
+          python3 .github/scripts/test_social_slot_gate.py -q
+          python3 .github/scripts/test_social_posting.py -q
       - name: Post to Threads (free, no OpenAI)
+        if: steps.slot.outputs.should_post == 'true'
         env:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}

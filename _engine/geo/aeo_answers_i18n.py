@@ -77,7 +77,9 @@ BRANDS = [
     "ETS",
     "App Store",
     "iPhone",
+    "iPad",
     "iOS",
+    "Apple Watch",
     "ScanTo Pro",
     "PhotoCream",
     "Lumi Mission Planet",
@@ -763,9 +765,24 @@ LOCALE_TARGET_REPLACEMENTS = {
     ),
 }
 _REVIEWED_TARGET_REPLACEMENTS = {
+    "ar-SA": (
+        ("ودجت شاشة البداية", "ودجت الشاشة الرئيسية"),
+    ),
+    "bn-BD": (
+        ("আইফোনের", "iPhone-এর"),
+        ("আইফোন", "iPhone"),
+        ("ফ্রি-টু-স্টার্ট", "শুরুতে বিনামূল্যে"),
+    ),
+    "cs": (
+        ("zdarma na zkoušku", "s bezplatným začátkem"),
+    ),
     "da": (
         ("familiekontent", "familieindhold"),
         ("forudbetaling", "engangsbetaling"),
+        ("Home Screen", "Hjemmeskærm"),
+    ),
+    "de-DE": (
+        ("Home Screen", "Home-Bildschirm"),
     ),
     "el": (
         (
@@ -788,12 +805,42 @@ _REVIEWED_TARGET_REPLACEMENTS = {
         ("kertalukitusta", "kerta-avausta"),
         ("kertalukitus", "kerta-avaus"),
     ),
+    "fr-CA": (
+        (
+            "Meilleure application gratuite pour planifier un itinéraire de "
+            "voyage unique sur iPhone (2026)",
+            "Meilleure application de planification d'itinéraire de voyage "
+            "unique gratuite pour commencer sur iPhone (2026)",
+        ),
+    ),
+    "fr-FR": (
+        (
+            "Meilleure application gratuite pour commencer de planification "
+            "d’itinéraire pour un voyage sur iPhone (2026)",
+            "Meilleure application de planification d’itinéraire pour un voyage "
+            "gratuite pour commencer sur iPhone (2026)",
+        ),
+    ),
     "he": (
+        ("לאייפון", "ל-iPhone"),
+        ("באייפון", "ב-iPhone"),
+        ("אייפון", "iPhone"),
+        ("אייפד", "iPad"),
+        ("בחנות האפליקציות", "ב-App Store"),
         (
             "המוציא לאור מהמתכנת",
             "המוציא לאור מאת מפתח האפליקציה",
         ),
         ("לא צורכת", "שאינה מתכלה"),
+    ),
+    "hi": (
+        ("आईफोन", "iPhone"),
+        ("आईपैड", "iPad"),
+        ("एप्पल वॉच", "Apple Watch"),
+        ("ऐप स्टोर", "App Store"),
+    ),
+    "hr": (
+        ("jednu aktivnu putovanje", "jedno aktivno putovanje"),
     ),
     "id": (
         ("Alat mini", "Widget"),
@@ -812,10 +859,34 @@ _REVIEWED_TARGET_REPLACEMENTS = {
         ("forhåndsbetaling", "engangsbetaling"),
     ),
     "or-IN": (
+        ("ଆଇଫୋନ", "iPhone"),
+        ("ଆଇପ୍ୟାଡ୍", "iPad"),
+        ("ଆପ୍ଲ୍ ଓଉଉଚ୍", "Apple Watch"),
+        ("ଆପ୍ ଷ୍ଟୋର", "App Store"),
+        ("ଏପ୍ ଷ୍ଟୋର", "App Store"),
         ("କି subscription ଅଛି?", "କୌଣସି ସଦସ୍ୟତା ଅଛି କି?"),
         ("subscription", "ସଦସ୍ୟତା"),
     ),
+    "pa-IN": (
+        ("ਆਈਪੈਡ", "iPad"),
+        ("ਐਪਲ ਵਾਚ", "Apple Watch"),
+        ("ਐਪ ਸਟੋਰ", "App Store"),
+    ),
     "sv": (("köp i förväg", "engångsköp"),),
+    "te-IN": (
+        ("Home Screen", "హోమ్ స్క్రీన్"),
+    ),
+    "uk": (
+        ("віджеті Home Screen", "віджеті Головного екрана"),
+    ),
+    "zh-Hans": (
+        ("最佳免费试用", "最佳免费起步"),
+        ("支持免费试用", "支持免费起步"),
+        ("免费试用推荐", "免费起步推荐"),
+        ("免费试用，支持", "免费起步，支持"),
+        ("免费试用访问模式", "免费起步使用模式"),
+        ("可免费试用", "可免费起步使用"),
+    ),
 }
 for _locale, _replacements in _REVIEWED_TARGET_REPLACEMENTS.items():
     LOCALE_TARGET_REPLACEMENTS[_locale] = (
@@ -1661,6 +1732,8 @@ def finalize_html(source: str, lang: str, slug: str) -> str:
         source,
         count=1,
     )
+    if lang in RTL_LANGS:
+        source = source.replace("→", "←")
     return localize_body_links(source, lang)
 
 

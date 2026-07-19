@@ -26,6 +26,7 @@ import re
 import subprocess
 import sys
 import urllib.request
+from pathlib import Path
 from datetime import date
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -34,13 +35,44 @@ sys.path.insert(0, os.path.join(ROOT, "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
 
-PAGES = os.path.join(HERE, "pages")
+PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 ALT = os.path.join(PAGES, "alternatives")
 REPORTS = os.path.join(HERE, "reports")
 SOV = os.path.join(REPORTS, "aeo_sov.json")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
 LOCALE_RE = re.compile(r"^[a-z]{2,3}(?:-[A-Za-z]{2,4})?$")
 CURATED_FALLBACK = {
+    "dailymate": {
+        "key": "dailymate",
+        "gap_queries": [
+            "best travel phrasebook app for iphone and apple watch",
+            "duolingo alternative for learning practical travel phrases",
+            "language phrase app with complete sentences in 47 languages",
+            "pay once language learning app without a subscription",
+        ],
+        "top_competitors": [
+            ["duolingo", 0],
+            ["drops", 0],
+            ["memrise", 0],
+            ["pimsleur", 0],
+        ],
+    },
+    "tripbeelite": {
+        "key": "tripbeelite",
+        "gap_queries": [
+            "best free trip planner for one complete vacation",
+            "wanderlog alternative for a single trip without an account",
+            "tripit alternative with a one time unlock",
+            "simple iphone itinerary app for one upcoming trip",
+            "app to keep tickets maps and reminders in one travel timeline",
+        ],
+        "top_competitors": [
+            ["wanderlog", 0],
+            ["tripit", 0],
+            ["tripsy", 0],
+            ["lambus", 0],
+        ],
+    },
     "wordmate": {
         "key": "wordmate",
         "gap_queries": [
@@ -101,6 +133,8 @@ BRAND = {
     "hellochinese learn chinese": "HelloChinese", "chineseskill": "ChineseSkill",
     "chineseskill learn chinese": "ChineseSkill", "fun chinese by studycat": "Fun Chinese by Studycat",
     "anki": "Anki", "drops": "Drops", "memrise": "Memrise", "quizlet": "Quizlet",
+    "duolingo": "Duolingo", "pimsleur": "Pimsleur",
+    "wanderlog": "Wanderlog", "tripit": "TripIt", "tripsy": "Tripsy", "lambus": "Lambus",
 }
 
 ATTRS = [  # (顯示, cta_bullets 命中關鍵詞)
@@ -207,6 +241,28 @@ def positioning(key, noun):
             "slug": f"{key}-no-subscription",
         }
     if profile == "free_to_start":
+        if key == "tripbeelite":
+            return {
+                "suffix": "one complete journey free, then pay once",
+                "description": (
+                    f"{name} saves one complete journey for free, with a one-time "
+                    "unlock for unlimited saved journeys and additional tools."
+                ),
+                "intro": (
+                    f"{name} is a one-trip itinerary planner that saves one complete "
+                    "journey for free without a time limit."
+                ),
+                "heading": "Why people choose a one-journey-free trip planner",
+                "cta": f"Plan one journey free with {name} on the App Store",
+                "hub_title": (
+                    f"One-trip itinerary planner with one journey free — {name}"
+                ),
+                "hub_heading": (
+                    f"A one-journey-free itinerary planner for iPhone: {name}"
+                ),
+                "hub_section": "What the free journey and one-time unlock include",
+                "slug": f"{key}-free-to-start",
+            }
         return {
             "suffix": "free download, lifetime unlock",
             "description": f"{name} is free to download, with a one-time lifetime unlock and no recurring subscription.",
@@ -251,6 +307,10 @@ def alternative_hub_slug(key):
 
 
 def cat_noun(key):
+    if key == "dailymate":
+        return "travel phrasebook app", "EducationalApplication"
+    if key == "tripbeelite":
+        return "one-trip itinerary planner", "TravelApplication"
     if key == "wordmate":
         return "vocabulary learning app", "EducationalApplication"
     return CAT_NOUN.get(APPS[key].get("category", "productivity"), ("app", "MobileApplication"))
@@ -280,6 +340,19 @@ def alternative_hreflang_block(canonical):
         f'<link rel="alternate" hreflang="x-default" href="{canonical}">'
     )
     return "\n".join(lines)
+
+
+def feed_discovery_links():
+    return "\n".join(
+        (
+            f'<link rel="alternate" type="application/atom+xml" '
+            f'href="{SITE}/feed.xml">',
+            f'<link rel="alternate" type="application/rss+xml" '
+            f'href="{SITE}/rss.xml">',
+            f'<link rel="alternate" type="application/feed+json" '
+            f'href="{SITE}/feed.json">',
+        )
+    )
 
 
 def page_shell(title, desc, canonical, schemas, body):
@@ -372,14 +445,29 @@ def faq_for(key, comp_name, gap_queries):
              f"{a.get('sub', '').replace(chr(10), ' ')}."),
         ]
     elif profile == "free_to_start":
-        qa = [
-            (f"Can I try {a['name']} for free?",
-             f"Yes. {a['name']} is free to download and offers a one-time lifetime unlock, "
-             "with no recurring subscription. "
-             f"See the current App Store listing: {url}"),
-            (f"What makes {a['name']} an alternative to {comp_name}?",
-             f"{a['name']} is a free-to-start {noun} for iPhone with a one-time lifetime unlock."),
-        ]
+        if key == "tripbeelite":
+            qa = [
+                (
+                    "Can I plan one complete journey before paying?",
+                    f"Yes. {a['name']} saves one complete journey for free without "
+                    "a time limit. Its one-time unlock adds unlimited saved "
+                    f"journeys and additional tools. See the App Store: {url}",
+                ),
+                (
+                    f"What makes {a['name']} an alternative to {comp_name}?",
+                    f"{a['name']} is a one-trip itinerary planner with one complete "
+                    "journey free and a one-time unlock for unlimited saved journeys.",
+                ),
+            ]
+        else:
+            qa = [
+                (f"Can I try {a['name']} for free?",
+                 f"Yes. {a['name']} is free to download and offers a one-time lifetime unlock, "
+                 "with no recurring subscription. "
+                 f"See the current App Store listing: {url}"),
+                (f"What makes {a['name']} an alternative to {comp_name}?",
+                 f"{a['name']} is a free-to-start {noun} for iPhone with a one-time lifetime unlock."),
+            ]
     elif profile == "free":
         qa = [
             (f"Is {a['name']} free?",
@@ -584,18 +672,20 @@ def hub_page(key, gap_queries):
 def build_index(files):
     items = []
     for f in sorted(files):
-        m = re.search(r"<h1>([^<]+)</h1>", open(os.path.join(ALT, f), encoding="utf-8").read())
+        content = Path(ALT, f).read_text(encoding="utf-8")
+        m = re.search(r"<h1>([^<]+)</h1>", content)
         items.append(f'    <li><a href="{f}">{e(m.group(1) if m else f)}</a></li>')
     idx = (f'<!DOCTYPE html>\n<html lang="en"><head><meta charset="utf-8">\n'
            f'<meta name="viewport" content="width=device-width, initial-scale=1">\n'
            f'<title>iPhone app alternatives — privacy and flexible pricing</title>\n'
            f'<meta name="description" content="Independent iPhone app alternatives with privacy-first, free, pay-once and flexible unlock options.">\n'
            f'<link rel="canonical" href="{SITE}/alternatives/index.html">\n'
-           f'{alternative_hreflang_block(f"{SITE}/alternatives/index.html")}'
+           f'{alternative_hreflang_block(f"{SITE}/alternatives/index.html")}\n'
+           f'{feed_discovery_links()}\n'
            f'</head><body><main>\n'
            f'  <h1>Independent iPhone app alternatives</h1>\n  <ul>\n'
            + "\n".join(items) + "\n  </ul>\n</main></body></html>\n")
-    open(os.path.join(ALT, "index.html"), "w", encoding="utf-8").write(idx)
+    Path(ALT, "index.html").write_text(idx, encoding="utf-8")
 
 
 def write_sitemap(files):
@@ -604,7 +694,7 @@ def write_sitemap(files):
     xml = ('<?xml version="1.0" encoding="UTF-8"?>\n'
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
            + "\n".join(urls) + "\n</urlset>\n")
-    open(os.path.join(PAGES, "sitemap_alternatives.xml"), "w", encoding="utf-8").write(xml)
+    Path(PAGES, "sitemap_alternatives.xml").write_text(xml, encoding="utf-8")
 
 
 def prune_stale_pages(managed_keys, expected_files):

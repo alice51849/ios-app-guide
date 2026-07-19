@@ -656,6 +656,19 @@ def is_redirect_page(path: Path) -> bool:
     return 'http-equiv="refresh"' in head and 'name="robots" content="noindex' in head
 
 
+def feed_discovery_links() -> str:
+    return "\n".join(
+        (
+            f'<link rel="alternate" type="application/atom+xml" '
+            f'href="{SITE}/feed.xml">',
+            f'<link rel="alternate" type="application/rss+xml" '
+            f'href="{SITE}/rss.xml">',
+            f'<link rel="alternate" type="application/feed+json" '
+            f'href="{SITE}/feed.json">',
+        )
+    )
+
+
 def regenerate_index() -> None:
     pages = [
         p
@@ -692,7 +705,9 @@ def regenerate_index() -> None:
     )
     alternates = "\n".join(alternate_links)
     html_doc = f'''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>iOS App Answer Guides — High-Intent Buying Help</title><meta name="description" content="Substantive iPhone app buying guides for high-intent questions across productivity, education, finance, photo utilities, health, lifestyle, and kids apps."><link rel="canonical" href="{canonical}">
-{alternates}<meta property="og:type" content="website"><meta property="og:title" content="iOS App Answer Guides"><meta property="og:description" content="Honest buying guides and answer pages for iPhone apps."><meta property="og:url" content="{canonical}"><meta name="twitter:card" content="summary"><style>
+{alternates}
+{feed_discovery_links()}
+<meta property="og:type" content="website"><meta property="og:title" content="iOS App Answer Guides"><meta property="og:description" content="Honest buying guides and answer pages for iPhone apps."><meta property="og:url" content="{canonical}"><meta name="twitter:card" content="summary"><style>
 {STYLE}
 </style><script type="application/ld+json">
 {j(breadcrumb)}

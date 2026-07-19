@@ -6,6 +6,7 @@
 ④不捏造「排名全部 App」⑤只用 registry 既有事實。純本機、免 key。
 用法:python3 gen_roundups.py
 """
+import argparse
 import html
 import json
 import os
@@ -14,7 +15,7 @@ import sys
 from pathlib import Path
 
 HERE = Path(os.path.dirname(os.path.abspath(__file__)))
-PAGES = HERE / "pages"
+PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
 LOCALE_RE = re.compile(r"^[a-z]{2,3}(?:-[A-Za-z]{2,4})?$")
 sys.path.insert(0, str(HERE.parent / "social"))
@@ -47,6 +48,8 @@ TOPICS = {
     "mochi": "to-do list & checklist",
     "lumiweather": "family weather",
     "wordmate": "vocabulary learning",
+    "dailymate": "travel phrasebook & language phrases",
+    "tripbeelite": "one-trip itinerary planner",
 }
 
 
@@ -71,6 +74,8 @@ EXTRA_COMP = {
     "mochi": ["todoist", "ticktick", "any.do"],
     "lumiweather": ["carrot weather", "weather line", "hello weather"],
     "wordmate": ["anki", "drops", "memrise"],
+    "dailymate": ["duolingo", "drops", "memrise"],
+    "tripbeelite": ["wanderlog", "tripit", "tripsy"],
 }
 CSS = ("body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;"
        "background:linear-gradient(180deg,#fff,#f7f7fb);color:#161622;line-height:1.62}a{color:#3840d0}"
@@ -197,6 +202,31 @@ def roundup_copy(key, topic):
             f"Yes. {name} is free to start and offers a one-time unlock for "
             "complete content, with no recurring subscription."
         )
+        if key == "tripbeelite":
+            lead = (
+                "If you want to plan one complete journey before paying, this "
+                f"guide explains what to check and where {name} fits."
+            )
+            disclosure = (
+                f"We develop {name}, which saves one complete journey for free "
+                "and offers a one-time unlock for unlimited saved journeys and "
+                "additional tools without a recurring subscription."
+            )
+            fit = (
+                "Free-to-start access lets you plan, edit or replace one complete "
+                "journey without a time limit before choosing the one-time unlock "
+                "for unlimited saved journeys and additional tools."
+            )
+            access = (
+                "One complete journey is free; a one-time unlock adds unlimited "
+                "saved journeys and additional tools."
+            )
+            faq_q = "Can I plan one complete journey before paying?"
+            faq_a = (
+                f"Yes. {name} saves one complete journey for free without a time "
+                "limit. Its one-time unlock adds unlimited saved journeys and "
+                "additional tools, with no recurring subscription."
+            )
     elif profile == "flexible":
         title = f"Best {topic} app with flexible access for iPhone (2026)"
         lead = (
@@ -379,9 +409,21 @@ def build(key):
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "apps",
+        nargs="*",
+        help="Optional app keys. Defaults to every configured roundup.",
+    )
+    args = parser.parse_args()
+    selected = args.apps or list(TOPICS)
+    unknown = [key for key in selected if key not in TOPICS]
+    if unknown:
+        parser.error(f"unknown roundup app key(s): {', '.join(unknown)}")
+
     made = []
     live_keys = live_app_keys(APPSTORE, str(PAGES), refresh=False)
-    for key in TOPICS:
+    for key in selected:
         if key not in live_keys:
             topic = TOPICS[key]
             if key not in APPS:

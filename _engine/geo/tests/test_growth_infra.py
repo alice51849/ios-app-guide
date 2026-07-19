@@ -18878,6 +18878,45 @@ class GeneratorTests(unittest.TestCase):
             aeo_answers_i18n.main()
         self.assertEqual(2, raised.exception.code)
 
+    def test_answer_localizer_preserves_platform_names_and_rtl_direction(self):
+        platform_cases = {
+            "he": "אייפון אייפד בחנות האפליקציות",
+            "hi": "आईफोन आईपैड एप्पल वॉच ऐप स्टोर",
+            "or-IN": "ଆଇଫୋନ ଆଇପ୍ୟାଡ୍ ଆପ୍ଲ୍ ଓଉଉଚ୍ ଆପ୍ ଷ୍ଟୋର",
+            "pa-IN": "ਆਈਫੋਨ ਆਈਪੈਡ ਐਪਲ ਵਾਚ ਐਪ ਸਟੋਰ",
+        }
+        for locale, translated in platform_cases.items():
+            with self.subTest(locale=locale):
+                normalized = aeo_answers_i18n.apply_locale_target_replacements(
+                    translated,
+                    locale,
+                )
+                self.assertIn("iPhone", normalized)
+                self.assertIn("iPad", normalized)
+                self.assertIn("App Store", normalized)
+        self.assertEqual(
+            "iPhone-এর",
+            aeo_answers_i18n.apply_locale_target_replacements(
+                "আইফোনের",
+                "bn-BD",
+            ),
+        )
+        self.assertIn(
+            "Apple Watch",
+            aeo_answers_i18n.apply_locale_target_replacements(
+                platform_cases["hi"],
+                "hi",
+            ),
+        )
+        rtl = aeo_answers_i18n.finalize_html(
+            '<html lang="en"><body><a>Get it →</a></body></html>',
+            "he",
+            "sample",
+        )
+        self.assertIn('<html lang="he" dir="rtl">', rtl)
+        self.assertIn("Get it ←", rtl)
+        self.assertNotIn("→", rtl)
+
     def test_answer_localizer_updates_jsonld_language_semantically(self):
         source = (
             '<html lang="en"><head><script type="application/ld+json">'
@@ -19864,6 +19903,122 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("alternative to vocabulary on iPhone", hub)
         title = re.search(r"<title>([^<]+)</title>", hub).group(1)
         self.assertFalse(title.endswith(("pay o", "Wordmat")))
+
+    def test_new_live_apps_have_curated_comparison_surfaces(self):
+        expected = {
+            "dailymate": {
+                "competitors": ["duolingo", "drops", "memrise", "pimsleur"],
+                "roundup": ["duolingo", "drops", "memrise"],
+                "app_store_id": "6790418321",
+            },
+            "tripbeelite": {
+                "competitors": ["wanderlog", "tripit", "tripsy", "lambus"],
+                "roundup": ["wanderlog", "tripit", "tripsy"],
+                "app_store_id": "6791299610",
+            },
+        }
+        for key, values in expected.items():
+            with self.subTest(key=key):
+                fallback = aeo_pages.CURATED_FALLBACK[key]
+                self.assertEqual(
+                    values["competitors"],
+                    [name for name, _score in fallback["top_competitors"]],
+                )
+                self.assertEqual(
+                    values["roundup"],
+                    gen_roundups.EXTRA_COMP[key],
+                )
+                self.assertIn(key, gen_roundups.TOPICS)
+                self.assertGreaterEqual(len(fallback["gap_queries"]), 4)
+                for competitor in values["competitors"]:
+                    slug, page = aeo_pages.alt_page(
+                        key,
+                        competitor,
+                        fallback["gap_queries"],
+                    )
+                    self.assertEqual(f"{key}-vs-{competitor}", slug)
+                    self.assertIn(
+                        f"https://apps.apple.com/app/id{values['app_store_id']}",
+                        page,
+                    )
+                    self.assertIn(
+                        "Looking for "
+                        f"{aeo_pages.article_for(competitor)} "
+                        f"{aeo_pages.disp(competitor)} alternative",
+                        page,
+                    )
+                    if key == "dailymate":
+                        self.assertIn("travel phrasebook app", page)
+                        self.assertNotIn("English test-prep", page)
+                    else:
+                        self.assertIn("one complete journey", page)
+                        self.assertIn("unlimited saved journeys", page)
+        self.assertEqual(
+            ("travel phrasebook app", "EducationalApplication"),
+            aeo_pages.cat_noun("dailymate"),
+        )
+        self.assertEqual(
+            ("one-trip itinerary planner", "TravelApplication"),
+            aeo_pages.cat_noun("tripbeelite"),
+        )
+        trip_copy = gen_roundups.roundup_copy(
+            "tripbeelite",
+            gen_roundups.TOPICS["tripbeelite"],
+        )
+        self.assertIn("one complete journey", trip_copy["fit"])
+        self.assertIn("unlimited saved journeys", trip_copy["access"])
+        self.assertNotRegex(
+            trip_copy["fit"].lower(),
+            r"\bfamily\b|\blearning\b|complete-content",
+        )
+
+    def test_roundup_cli_can_generate_only_selected_apps(self):
+        argv = ["gen_roundups.py", "dailymate"]
+        with (
+            mock.patch.object(sys, "argv", argv),
+            mock.patch.object(
+                gen_roundups,
+                "live_app_keys",
+                return_value={"dailymate", "tripbeelite"},
+            ),
+            mock.patch.object(
+                gen_roundups,
+                "build",
+                return_value="daily-roundup",
+            ) as build,
+            mock.patch.object(aeo_answers, "write_sitemap"),
+        ):
+            gen_roundups.main()
+        build.assert_called_once_with("dailymate")
+
+    def test_answer_and_alternative_hubs_preserve_feed_discovery(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            alternatives = root / "alternatives"
+            alternatives.mkdir()
+            (alternatives / "sample.html").write_text(
+                "<html><body><h1>Sample alternative</h1></body></html>",
+                encoding="utf-8",
+            )
+            with mock.patch.object(aeo_pages, "ALT", str(alternatives)):
+                aeo_pages.build_index(["sample.html"])
+            alternative_index = (alternatives / "index.html").read_text(
+                encoding="utf-8",
+            )
+
+            answers = root / "answers"
+            answers.mkdir()
+            with (
+                mock.patch.object(aeo_answers, "PAGES_ROOT", root),
+                mock.patch.object(aeo_answers, "ANSWERS_DIR", answers),
+            ):
+                aeo_answers.regenerate_index()
+            answer_index = (answers / "index.html").read_text(encoding="utf-8")
+
+        for page in (alternative_index, answer_index):
+            self.assertEqual(1, page.count('type="application/atom+xml"'))
+            self.assertEqual(1, page.count('type="application/rss+xml"'))
+            self.assertEqual(1, page.count('type="application/feed+json"'))
 
     def test_web_story_palettes_are_stable(self):
         self.assertEqual(gen_webstories.PALETTES[4], gen_webstories.palette_for("aim990"))

@@ -381,6 +381,23 @@ class PublisherIntentOutputTests(unittest.TestCase):
             schema = json.loads(html.unescape(schema_match.group(1)))
             self.assertEqual("Dataset", schema["@type"])
             self.assertEqual("Lumi Studio", schema["creator"]["name"])
+            mcp = schema["subjectOf"]
+            self.assertEqual("SoftwareApplication", mcp["@type"])
+            self.assertEqual(catalog.MCP_REPOSITORY_URL, mcp["url"])
+            self.assertEqual(catalog.MCP_REGISTRY_URL, mcp["sameAs"])
+            self.assertEqual(catalog.MCP_BUNDLE_URL, mcp["downloadUrl"])
+            self.assertIn(
+                f'href="{catalog.MCP_REGISTRY_URL}"',
+                source,
+            )
+            self.assertIn(
+                f'href="{catalog.MCP_REPOSITORY_URL}"',
+                source,
+            )
+            self.assertIn(
+                f'href="{catalog.MCP_BUNDLE_URL}"',
+                source,
+            )
             self.assertEqual(3, len(schema["distribution"]))
             self.assertEqual(
                 {

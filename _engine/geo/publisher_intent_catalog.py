@@ -35,6 +35,15 @@ SLUG = "lumi-studio-publisher-search-intent-catalog"
 I18N_PATH = HERE / "publisher_intent_catalog_i18n.json"
 FINDER_DATASET = "verified-ios-app-finder-catalog.json"
 LICENSE_URL = "https://creativecommons.org/licenses/by/4.0/"
+MCP_REPOSITORY_URL = "https://github.com/alice51849/lumi-mcp"
+MCP_REGISTRY_URL = (
+    "https://registry.modelcontextprotocol.io/v0.1/servers/"
+    "io.github.alice51849%2Flumi-app-finder/versions/latest"
+)
+MCP_BUNDLE_URL = (
+    "https://github.com/alice51849/lumi-mcp/releases/latest/download/"
+    "lumi-app-finder.mcpb"
+)
 TODAY_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
 RTL_LOCALES = frozenset({"ar-SA", "he", "ur-PK"})
 BASE_APP_COUNT = 26
@@ -702,6 +711,20 @@ def _schema_org(
             "url": f"{SITE}/data/",
         },
         "measurementTechnique": ui[METHODOLOGY],
+        "subjectOf": {
+            "@type": "SoftwareApplication",
+            "@id": f"{MCP_REPOSITORY_URL}#mcp-server",
+            "name": "Lumi App Finder",
+            "description": ui[DESCRIPTION],
+            "applicationCategory": "DeveloperApplication",
+            "operatingSystem": "Node.js 20 or later",
+            "url": MCP_REPOSITORY_URL,
+            "sameAs": MCP_REGISTRY_URL,
+            "downloadUrl": MCP_BUNDLE_URL,
+            "softwareVersion": "1.0.0",
+            "isAccessibleForFree": True,
+            "author": {"@id": f"{SITE}/#organization"},
+        },
         "distribution": [
             {
                 "@type": "DataDownload",
@@ -822,6 +845,7 @@ tr:last-child td{{border-bottom:0}}
 <div class="downloads"><strong>{escape(ui["Download the complete dataset"])}</strong><a class="download" href="{SITE}/data/{SLUG}.json">JSON</a><a class="download" href="{SITE}/data/{SLUG}.jsonl">JSONL</a><a class="download" href="{SITE}/data/{SLUG}.csv">CSV</a></div>
 <div class="cards"><section class="card"><h2>{escape(ui["Methodology"])}</h2><p>{escape(ui[METHODOLOGY])}</p><p>{escape(ui["Alphabetical by app name — never a ranking."])}</p></section><section class="card"><h2>{escape(ui["What this dataset contains"])}</h2><p>{escape(ui["JSON, JSONL and CSV contain the same 1,300 records."])}</p><p>{escape(ui["Scroll horizontally to inspect every field."])}</p></section></div>
 <section class="card"><h2>{escape(ui["First-party publisher catalog"])}</h2><p>{escape(ui[DISCLOSURE])}</p><p>{escape(ui[NON_MEASURED])}</p></section>
+<section class="card"><h2>{escape(ui[NAME])} · MCP</h2><p>{escape(ui[DESCRIPTION])}</p><p><a href="{escape(MCP_REGISTRY_URL, quote=True)}">MCP Registry</a> · <a href="{escape(MCP_REPOSITORY_URL, quote=True)}">GitHub</a> · <a href="{escape(MCP_BUNDLE_URL, quote=True)}">MCPB</a></p></section>
 <div class="table-wrap"><table><thead><tr><th>{escape(ui["App"])}</th><th>{escape(ui["Publisher query"])}</th><th>{escape(ui["Decision context"])}</th><th>{escape(ui["Purchase model"])}</th><th>{escape(ui["Guide"])}</th><th>App Store</th></tr></thead><tbody>{rows}</tbody></table></div>
 <p class="footer">{escape(ui["License"])}: <a href="{LICENSE_URL}">CC BY 4.0</a> · {escape(ui["CC BY 4.0 applies to the original catalog compilation; app names and App Store marks belong to their owners."])} · {escape(ui["Updated"])} {escape(modified)}</p>
 </main>

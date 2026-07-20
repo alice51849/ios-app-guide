@@ -72,6 +72,11 @@ jobs:
           python3 gen_smart_app_banners.py
           python3 gen_mobile_app_identity.py
           python3 gen_webmcp_install_tools.py
+          python3 portfolio_app_catalog_api.py
+          python3 publisher_intent_catalog.py
+          python3 publisher_intent_visuals.py
+          python3 gen_social_previews.py --oembed-only
+          python3 gen_github_discovery_readmes.py
           python3 gen_publisher_disclosures.py
           python3 gen_guide_design.py
           python3 gen_app_store_facts.py

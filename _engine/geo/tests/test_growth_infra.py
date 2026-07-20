@@ -1165,10 +1165,8 @@ class GeneratorTests(unittest.TestCase):
                     parsed_store.path,
                 )
                 self.assertEqual(
-                    [
-                        gen_social_previews._oembed_campaign(locale)
-                    ],
-                    urllib.parse.parse_qs(parsed_store.query).get("ct"),
+                    "",
+                    parsed_store.query,
                 )
                 expected_visual = (
                     gen_social_previews.buyer_intent_image_url(

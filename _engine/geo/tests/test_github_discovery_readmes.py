@@ -4,11 +4,13 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 import re
 import sys
 import unittest
-from urllib.parse import parse_qs, urlparse
+from unittest import mock
+from urllib.parse import urlparse
 
 
 GEO = Path(__file__).resolve().parents[1]
@@ -30,6 +32,24 @@ class GitHubDiscoveryContractTests(unittest.TestCase):
         for token in tokens:
             self.assertLessEqual(len(token), 30)
             self.assertRegex(token, r"^[a-z0-9_]+$")
+
+    def test_store_url_is_clean_without_a_provider_token(self) -> None:
+        record = {
+            "locale": "ja",
+            "app_store_id": "6780575828",
+            "app_store_url": (
+                "https://apps.apple.com/jp/app/id6780575828"
+                "?ct=iag_data_ja"
+            ),
+        }
+        with mock.patch.dict(
+            os.environ,
+            {"APP_STORE_PROVIDER_TOKEN": ""},
+        ):
+            self.assertEqual(
+                "https://apps.apple.com/jp/app/id6780575828",
+                discovery.github_store_url(record),
+            )
 
 
 class GitHubDiscoveryOutputTests(unittest.TestCase):
@@ -147,7 +167,7 @@ class GitHubDiscoveryOutputTests(unittest.TestCase):
                     else:
                         self.assertIn(f"[{option}](../{option}/)", source)
 
-    def test_store_links_preserve_verified_routes_and_use_github_campaigns(
+    def test_store_links_preserve_verified_routes_and_use_valid_direct_links(
         self,
     ) -> None:
         source_by_pair = {
@@ -162,7 +182,7 @@ class GitHubDiscoveryOutputTests(unittest.TestCase):
             ).read_text(encoding="utf-8")
             urls = re.findall(
                 r"https://apps\.apple\.com/"
-                r"(?:[a-z]{2}/)?app/id[0-9]{9,12}\?[^)\s]+",
+                r"(?:[a-z]{2}/)?app/id[0-9]{9,12}(?:\?[^)\s]+)?",
                 source,
             )
             self.assertEqual(catalog.EXPECTED_APP_COUNT, len(urls))
@@ -175,13 +195,10 @@ class GitHubDiscoveryOutputTests(unittest.TestCase):
                 expected_path = urlparse(record["app_store_url"]).path
                 self.assertEqual(expected_path, parsed.path)
                 self.assertEqual(
-                    [discovery.campaign_token(locale)],
-                    parse_qs(parsed.query).get("ct"),
+                    discovery.github_store_url(record),
+                    url,
                 )
-                self.assertEqual(
-                    parse_qs(urlparse(record["app_store_url"]).query).get("pt"),
-                    parse_qs(parsed.query).get("pt"),
-                )
+                discovery.validated_app_store_url(url, app_id)
                 generic += parsed.path == f"/app/id{app_id}"
                 seen_pairs.add((locale, app_id))
         self.assertEqual(catalog.EXPECTED_RECORD_COUNT, len(seen_pairs))

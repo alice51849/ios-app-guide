@@ -284,7 +284,7 @@ class PublisherIntentVisualOutputTests(unittest.TestCase):
                 self.assertEqual("PropertyValue", purchase["@type"])
                 self.assertTrue(purchase["name"])
                 self.assertTrue(purchase["value"])
-            if asset_locale in catalog.RTL_LOCALES:
+            if locale in catalog.RTL_LOCALES:
                 self.assertIn(f'<html lang="{locale}" dir="rtl">', source)
 
     def test_image_sitemap_and_discovery_cover_every_visual(self) -> None:

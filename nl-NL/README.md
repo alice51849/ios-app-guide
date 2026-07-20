@@ -18,7 +18,7 @@ Door uitgevers opgestelde zoekintenties voor 28 geverifieerde actieve iOS-apps e
 
 Een catalogus van de eerste partij met informatie over voor wie elke app is ontworpen, welke taak ze proberen te voltooien en het directe App Store-pad.
 
-[MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/latest) · [GitHub](https://github.com/alice51849/lumi-mcp) · [MCPB](https://github.com/alice51849/lumi-mcp/releases/latest/download/lumi-app-finder.mcpb)
+[MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.alice51849%2Flumi-app-finder&limit=10) · [GitHub](https://github.com/alice51849/lumi-mcp) · [MCPB](https://github.com/alice51849/lumi-mcp/releases/latest/download/lumi-app-finder.mcpb)
 
 ## Methodologie
 

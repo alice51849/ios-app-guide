@@ -38,8 +38,8 @@ FINDER_DATASET = "verified-ios-app-finder-catalog.json"
 LICENSE_URL = "https://creativecommons.org/licenses/by/4.0/"
 MCP_REPOSITORY_URL = "https://github.com/alice51849/lumi-mcp"
 MCP_REGISTRY_URL = (
-    "https://registry.modelcontextprotocol.io/v0.1/servers/"
-    "io.github.alice51849%2Flumi-app-finder/versions/latest"
+    "https://registry.modelcontextprotocol.io/v0.1/servers"
+    "?search=io.github.alice51849%2Flumi-app-finder&limit=10"
 )
 MCP_BUNDLE_URL = (
     "https://github.com/alice51849/lumi-mcp/releases/latest/download/"

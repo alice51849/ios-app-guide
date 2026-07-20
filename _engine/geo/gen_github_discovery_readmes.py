@@ -28,15 +28,9 @@ GENERATED_MARKER = (
 QUERY_ORIGIN = "publisher_authored_editorially_localized"
 GUIDE_HOST = "alice51849.github.io"
 GUIDE_PREFIX = "/ios-app-guide/"
-MCP_REPOSITORY_URL = "https://github.com/alice51849/lumi-mcp"
-MCP_REGISTRY_URL = (
-    "https://registry.modelcontextprotocol.io/v0.1/servers/"
-    "io.github.alice51849%2Flumi-app-finder/versions/latest"
-)
-MCP_BUNDLE_URL = (
-    "https://github.com/alice51849/lumi-mcp/releases/latest/download/"
-    "lumi-app-finder.mcpb"
-)
+MCP_REPOSITORY_URL = catalog.MCP_REPOSITORY_URL
+MCP_REGISTRY_URL = catalog.MCP_REGISTRY_URL
+MCP_BUNDLE_URL = catalog.MCP_BUNDLE_URL
 TEXT_FIELDS = (
     "app_key",
     "app_name",

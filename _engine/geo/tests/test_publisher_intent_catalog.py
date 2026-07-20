@@ -514,7 +514,7 @@ class PublisherIntentOutputTests(unittest.TestCase):
             self.assertEqual(catalog.MCP_REGISTRY_URL, mcp["sameAs"])
             self.assertEqual(catalog.MCP_BUNDLE_URL, mcp["downloadUrl"])
             self.assertIn(
-                f'href="{catalog.MCP_REGISTRY_URL}"',
+                f'href="{html.escape(catalog.MCP_REGISTRY_URL, quote=True)}"',
                 source,
             )
             self.assertIn(

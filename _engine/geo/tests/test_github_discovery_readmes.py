@@ -10,7 +10,7 @@ import re
 import sys
 import unittest
 from unittest import mock
-from urllib.parse import urlparse
+from urllib.parse import parse_qs, urlparse
 
 
 GEO = Path(__file__).resolve().parents[1]
@@ -23,6 +23,19 @@ import publisher_intent_catalog as catalog
 
 
 class GitHubDiscoveryContractTests(unittest.TestCase):
+    def test_registry_url_uses_the_supported_search_endpoint(self) -> None:
+        parsed = urlparse(discovery.MCP_REGISTRY_URL)
+        self.assertEqual("https", parsed.scheme)
+        self.assertEqual("registry.modelcontextprotocol.io", parsed.netloc)
+        self.assertEqual("/v0.1/servers", parsed.path)
+        self.assertEqual(
+            {
+                "search": ["io.github.alice51849/lumi-app-finder"],
+                "limit": ["10"],
+            },
+            parse_qs(parsed.query),
+        )
+
     def test_campaign_tokens_are_unique_and_app_store_safe(self) -> None:
         tokens = [
             discovery.campaign_token(locale)

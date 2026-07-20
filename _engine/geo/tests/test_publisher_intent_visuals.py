@@ -12,7 +12,7 @@ import re
 import sys
 import tempfile
 import unittest
-from urllib.parse import parse_qs, urlparse
+from urllib.parse import urlparse
 import xml.etree.ElementTree as ET
 
 
@@ -85,8 +85,8 @@ class PublisherIntentVisualUnitTests(unittest.TestCase):
         self.assertEqual("ltr", app_name.attrib["direction"])
         store = visuals.visual_store_url(record)
         self.assertEqual(
-            ["iag_visual_ar_sa"],
-            parse_qs(urlparse(store).query)["ct"],
+            "https://apps.apple.com/sa/app/id1234567890",
+            store,
         )
 
     def test_gallery_hreflang_covers_root_and_official_locales(self) -> None:
@@ -179,11 +179,10 @@ class PublisherIntentVisualOutputTests(unittest.TestCase):
         self.assertFalse(self.manifest["is_ranking"])
         self.assertEqual(
             {
-                "name": "ct",
-                "purpose": "non_personal_route_label",
-                "provider_token_available": False,
+                "default": "clean_direct",
+                "campaign_requires": ["pt", "ct", "mt=8"],
             },
-            self.manifest["campaign_parameter"],
+            self.manifest["app_store_link_policy"],
         )
         self.assertRegex(self.manifest["content_digest"], r"^[0-9a-f]{64}$")
         self.assertRegex(self.manifest["generation_digest"], r"^[0-9a-f]{64}$")
@@ -222,11 +221,7 @@ class PublisherIntentVisualOutputTests(unittest.TestCase):
                 f"id{record['app_store_id']}",
                 parsed_store.path,
             )
-            self.assertEqual(
-                [visuals.visual_campaign_token(locale)],
-                parse_qs(parsed_store.query).get("ct"),
-            )
-            self.assertNotIn("pt", parse_qs(parsed_store.query))
+            self.assertEqual("", parsed_store.query)
             self.assertEqual(
                 visuals.gallery_url(locale),
                 record["gallery_url"],
@@ -257,11 +252,9 @@ class PublisherIntentVisualOutputTests(unittest.TestCase):
                 source.count('<link rel="alternate" hreflang='),
             )
             self.assertIn("white-space:nowrap", source)
-            asset_locale = "en-US" if locale == "en" else locale
-            expected_campaign = visuals.visual_campaign_token(asset_locale)
             store_urls = re.findall(
                 r'href="(https://apps\.apple\.com/'
-                r'(?:[a-z]{2}/)?app/id[0-9]+\?ct=[^"]+)"',
+                r'(?:[a-z]{2}/)?app/id[0-9]+)"',
                 source,
             )
             self.assertEqual(
@@ -269,11 +262,7 @@ class PublisherIntentVisualOutputTests(unittest.TestCase):
                 len(store_urls),
             )
             self.assertTrue(
-                all(
-                    parse_qs(urlparse(html.unescape(url)).query).get("ct")
-                    == [expected_campaign]
-                    for url in store_urls
-                )
+                all(not urlparse(html.unescape(url)).query for url in store_urls)
             )
             schema_match = re.search(
                 r'<script type="application/ld\+json">(.*?)</script>',

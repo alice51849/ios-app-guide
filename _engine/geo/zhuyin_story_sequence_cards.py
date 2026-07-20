@@ -29,7 +29,6 @@ MOE_HANDBOOK = (
     "juyin/html_ch/index.html"
 )
 MOE_CURRICULUM = "https://cirn.k12ea.gov.tw/TWELVE/List.aspx?fid=11010"
-APP_URL = appstore_url("lumibopomofo")
 STATIC_ORDER = (2, 0, 4, 1, 5, 3)
 
 PROMPTS = {
@@ -355,7 +354,10 @@ def render_page(locale: str) -> str:
     alternate = canonical(other_locale)
     home = f"{SITE}/index.html" if locale == "en" else f"{SITE}/zh-Hant/index.html"
     tools = f"{SITE}/tools/" if locale == "en" else f"{SITE}/zh-Hant/tools/"
-    app_campaign = f"{APP_URL}?ct=iag_zhuyin_story_sequence_{locale.lower()}"
+    app_campaign = appstore_url(
+        "lumibopomofo",
+        f"iag_zhuyin_story_sequence_{locale.lower()}",
+    )
     schema = {
         "@context": "https://schema.org",
         "@type": ["WebApplication", "LearningResource"],

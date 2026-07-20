@@ -23,6 +23,8 @@ import os
 import subprocess
 import urllib.request
 
+from app_store_storefronts import campaign_app_store_url
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.path.join(HERE, "pages")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
@@ -125,7 +127,10 @@ def build_hub():
     cards = ""
     for sub, cat, yr, _src, key, name, aid, blurb in SWAPS:
         five = yr * YEARS
-        url = f"https://apps.apple.com/app/id{aid}?ct=iag_swap"
+        url = campaign_app_store_url(
+            f"https://apps.apple.com/app/id{aid}",
+            "iag_swap",
+        )
         cards += (
             f'<div class="card"><h2>{html.escape(sub)} '
             f'<span class="cat">· {html.escape(cat)}</span></h2>'

@@ -25,6 +25,7 @@ from app_store_storefronts import (  # noqa: E402
     load_storefront_details,
     localized_app_store_url,
     localized_storefront_detail,
+    validated_app_store_url,
     verified_app_store_url,
 )
 import build_pages_i18n  # noqa: E402
@@ -1217,14 +1218,15 @@ def validate_artifacts(
             raise ValueError(f"App order or coverage mismatch: {locale}")
         for app in apps:
             app_id = str(app["app_store_id"])
-            if re.fullmatch(
-                rf"https://apps\.apple\.com/(?:[a-z]{{2}}/)?"
-                rf"app/id{app_id}\?[^#]+",
-                str(app["app_store_url"]),
-            ) is None:
-                raise ValueError(
-                    f"Missing direct App Store campaign link: {locale}/{app['key']}"
+            try:
+                validated_app_store_url(
+                    str(app["app_store_url"]),
+                    expected_app_id=app_id,
                 )
+            except ValueError as error:
+                raise ValueError(
+                    f"Invalid direct App Store link: {locale}/{app['key']}"
+                ) from error
             if not str(app["guide_url"]).startswith(f"{SITE}/{locale}/"):
                 raise ValueError(
                     f"Localized guide mismatch: {locale}/{app['key']}"
@@ -1252,8 +1254,15 @@ def validate_artifacts(
                 raise ValueError(f"JSON Feed guide mismatch: {locale}")
             if item["content_text"] != app["summary"]:
                 raise ValueError(f"JSON Feed summary mismatch: {locale}")
-            if "ct=iag_feed_" not in str(item["external_url"]):
-                raise ValueError(f"JSON Feed campaign link missing: {locale}")
+            try:
+                validated_app_store_url(
+                    str(item["external_url"]),
+                    expected_app_id=str(app["app_store_id"]),
+                )
+            except ValueError as error:
+                raise ValueError(
+                    f"JSON Feed App Store link invalid: {locale}"
+                ) from error
         if len(_json(feed).encode("utf-8")) > FEED_MAX_BYTES:
             raise ValueError(f"JSON Feed exceeds size budget: {locale}")
     if set(openapi["paths"]) != {

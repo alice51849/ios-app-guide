@@ -30,7 +30,6 @@ MOE_HANDBOOK = (
 )
 MOE_FORMS = "https://stroke-order.learningweb.moe.edu.tw/phonetic.jsp?la=0"
 MOE_CURRICULUM = "https://cirn.k12ea.gov.tw/TWELVE/List.aspx?fid=11010"
-APP_URL = appstore_url("lumibopomofo")
 
 STORIES = [
     {
@@ -499,7 +498,10 @@ def render_page(locale: str) -> str:
     alternate = canonical(other_locale)
     home = f"{SITE}/index.html" if locale == "en" else f"{SITE}/zh-Hant/index.html"
     tools = f"{SITE}/tools/" if locale == "en" else f"{SITE}/zh-Hant/tools/"
-    app_campaign = f"{APP_URL}?ct=iag_zhuyin_mini_reader_{locale.lower()}"
+    app_campaign = appstore_url(
+        "lumibopomofo",
+        f"iag_zhuyin_mini_reader_{locale.lower()}",
+    )
     schema = {
         "@context": "https://schema.org",
         "@type": ["WebApplication", "LearningResource"],

@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import re
 import json
+import os
 from pathlib import Path
 import urllib.parse
 
@@ -15,7 +16,9 @@ STATE_FILE = ".appstore_storefront_state.json"
 PRICE_RE = re.compile(r"(?:0|[1-9][0-9]*)(?:\.[0-9]+)?")
 CURRENCY_RE = re.compile(r"[A-Z]{3}")
 CAMPAIGN_TOKEN_RE = re.compile(r"[A-Za-z0-9_]{1,30}")
-PROVIDER_TOKEN_RE = re.compile(r"[A-Za-z0-9]+")
+PROVIDER_TOKEN_RE = re.compile(r"[0-9]{1,20}")
+MEDIA_TYPE = "8"
+PROVIDER_TOKEN_ENV = "APP_STORE_PROVIDER_TOKEN"
 PROMOTIONAL_RATING_MIN_VALUE = 4.0
 PROMOTIONAL_RATING_MIN_COUNT = 2
 LOCALE_STOREFRONTS = {
@@ -155,7 +158,7 @@ def validated_app_store_url(
     value: str,
     expected_app_id: str | None = None,
 ) -> str:
-    """Validate a direct Apple URL and its optional campaign parameters."""
+    """Validate a clean Apple URL or a complete Apple campaign URL."""
     if not isinstance(value, str):
         raise ValueError("App Store URL must be a string")
     parsed = urllib.parse.urlsplit(value.strip())
@@ -184,23 +187,80 @@ def validated_app_store_url(
         )
     except ValueError as error:
         raise ValueError(f"Invalid direct App Store URL: {value!r}") from error
-    seen_parameters: set[str] = set()
-    for key, parameter_value in parameters:
-        pattern = (
-            CAMPAIGN_TOKEN_RE
-            if key == "ct"
-            else PROVIDER_TOKEN_RE
-            if key == "pt"
-            else None
+    if not parameters:
+        return urllib.parse.urlunsplit(parsed._replace(query=""))
+    if (
+        [key for key, _ in parameters] != ["pt", "ct", "mt"]
+        or PROVIDER_TOKEN_RE.fullmatch(parameters[0][1]) is None
+        or CAMPAIGN_TOKEN_RE.fullmatch(parameters[1][1]) is None
+        or parameters[2][1] != MEDIA_TYPE
+    ):
+        raise ValueError(f"Invalid direct App Store URL: {value!r}")
+    return urllib.parse.urlunsplit(
+        parsed._replace(query=urllib.parse.urlencode(parameters))
+    )
+
+
+def _provider_token(value: str | None) -> str | None:
+    token = (
+        os.environ.get(PROVIDER_TOKEN_ENV, "").strip()
+        if value is None
+        else value.strip()
+    )
+    if not token:
+        return None
+    if PROVIDER_TOKEN_RE.fullmatch(token) is None:
+        raise ValueError(f"Invalid App Store provider token: {token!r}")
+    return token
+
+
+def normalize_app_store_campaign_url(
+    value: str,
+    *,
+    provider_token: str | None = None,
+) -> str:
+    """Remove partial campaign parameters or complete them with a real token."""
+    if not isinstance(value, str):
+        raise ValueError("App Store URL must be a string")
+    parsed = urllib.parse.urlsplit(value.strip())
+    direct = urllib.parse.urlunsplit(parsed._replace(query="", fragment=""))
+    validated_app_store_url(direct)
+    try:
+        parameters = urllib.parse.parse_qsl(
+            parsed.query,
+            keep_blank_values=True,
+            strict_parsing=True,
         )
-        if (
-            pattern is None
-            or key in seen_parameters
-            or pattern.fullmatch(parameter_value) is None
-        ):
+    except ValueError as error:
+        raise ValueError(f"Invalid direct App Store URL: {value!r}") from error
+    if not parameters:
+        return direct
+    if any(key not in {"pt", "ct", "mt"} for key, _ in parameters):
+        raise ValueError(f"Invalid direct App Store URL: {value!r}")
+    values: dict[str, str] = {}
+    for key, parameter_value in parameters:
+        if key in values:
             raise ValueError(f"Invalid direct App Store URL: {value!r}")
-        seen_parameters.add(key)
-    return urllib.parse.urlunsplit(parsed)
+        values[key] = parameter_value
+    campaign = values.get("ct", "")
+    if values.get("mt") not in {None, MEDIA_TYPE}:
+        raise ValueError(f"Invalid direct App Store URL: {value!r}")
+    selected_provider = (
+        provider_token if provider_token is not None else values.get("pt")
+    )
+    token = _provider_token(selected_provider)
+    if not token or not campaign:
+        return direct
+    if CAMPAIGN_TOKEN_RE.fullmatch(campaign) is None:
+        raise ValueError(f"Invalid direct App Store URL: {value!r}")
+    return urllib.parse.urlunsplit(
+        parsed._replace(
+            query=urllib.parse.urlencode(
+                (("pt", token), ("ct", campaign), ("mt", MEDIA_TYPE))
+            ),
+            fragment="",
+        )
+    )
 
 
 def campaign_app_store_url(
@@ -209,34 +269,28 @@ def campaign_app_store_url(
     *,
     provider_token: str | None = None,
 ) -> str:
-    """Add validated Apple campaign parameters to a direct storefront URL."""
-    parsed = urllib.parse.urlsplit(validated_app_store_url(value))
+    """Use a complete Apple campaign URL only when a provider token exists."""
+    parsed = urllib.parse.urlsplit(value.strip())
+    direct = urllib.parse.urlunsplit(parsed._replace(query="", fragment=""))
+    validated_app_store_url(direct)
+    existing_parameters = urllib.parse.parse_qs(parsed.query)
+    providers = existing_parameters.get("pt", [])
+    if len(providers) > 1:
+        raise ValueError(f"Duplicate App Store provider token: {value!r}")
+    token = _provider_token(
+        provider_token if provider_token is not None else providers[0] if providers else None
+    )
+    if token is None:
+        return direct
     if CAMPAIGN_TOKEN_RE.fullmatch(campaign_token) is None:
         raise ValueError(f"Invalid App Store campaign token: {campaign_token!r}")
-    existing_parameters = urllib.parse.parse_qsl(
-        parsed.query,
-        keep_blank_values=True,
-        strict_parsing=True,
-    )
-    existing_provider_token = None
-    for key, parameter_value in existing_parameters:
-        if key == "pt":
-            existing_provider_token = parameter_value
-    parameters = []
-    effective_provider_token = (
-        provider_token
-        if provider_token is not None
-        else existing_provider_token
-    )
-    if effective_provider_token is not None:
-        if PROVIDER_TOKEN_RE.fullmatch(effective_provider_token) is None:
-            raise ValueError(
-                f"Invalid App Store provider token: {effective_provider_token!r}"
-            )
-        parameters.append(("pt", effective_provider_token))
-    parameters.append(("ct", campaign_token))
     return urllib.parse.urlunsplit(
-        parsed._replace(query=urllib.parse.urlencode(parameters))
+        parsed._replace(
+            query=urllib.parse.urlencode(
+                (("pt", token), ("ct", campaign_token), ("mt", MEDIA_TYPE))
+            ),
+            fragment="",
+        )
     )
 
 

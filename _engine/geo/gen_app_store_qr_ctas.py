@@ -13,7 +13,10 @@ import urllib.parse
 
 import segno
 
-from app_store_storefronts import validated_app_store_url
+from app_store_storefronts import (
+    normalize_app_store_campaign_url,
+    validated_app_store_url,
+)
 import gen_mobile_store_ctas
 import gen_smart_app_banners
 from appstore_live import live_app_keys
@@ -182,14 +185,16 @@ def store_url(app_id: str) -> str:
 
 def qr_asset_relative(app_id: str, href: str) -> Path:
     store_url(app_id)
-    url = validated_app_store_url(href, app_id)
+    url = normalize_app_store_campaign_url(href)
+    validated_app_store_url(url, app_id)
     digest = hashlib.sha256(url.encode("utf-8")).hexdigest()[:20]
     return QR_RELATIVE / f"id{app_id}-{digest}.svg"
 
 
 def qr_svg(app_id: str, href: str) -> str:
     store_url(app_id)
-    url = validated_app_store_url(href, app_id)
+    url = normalize_app_store_campaign_url(href)
+    validated_app_store_url(url, app_id)
     code = segno.make(url, error="m", micro=False)
     output = io.BytesIO()
     code.save(
@@ -231,7 +236,8 @@ def card_block(
     image_href: str,
 ) -> str:
     store_url(app_id)
-    direct_url = validated_app_store_url(href, app_id)
+    direct_url = normalize_app_store_campaign_url(href)
+    validated_app_store_url(direct_url, app_id)
     display_url = urllib.parse.urlunsplit(
         urllib.parse.urlsplit(direct_url)._replace(query="")
     )
@@ -239,7 +245,7 @@ def card_block(
         char in image_href for char in "\"'<>"
     ):
         raise ValueError(f"Invalid App Store QR image URL: {image_href}")
-    escaped_href = html.escape(href, quote=True)
+    escaped_href = html.escape(direct_url, quote=True)
     escaped_label = html.escape(label)
     escaped_display_url = html.escape(display_url)
     return f"""{CARD_BLOCK_START}

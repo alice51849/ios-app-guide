@@ -216,6 +216,7 @@ def main():
     require([PY, os.path.join(HERE, "gen_publisher_disclosures.py")], env=env)
     require([PY, os.path.join(HERE, "gen_guide_design.py")], env=env)
     require([PY, os.path.join(HERE, "gen_app_store_facts.py")], env=env)
+    require([PY, os.path.join(HERE, "normalize_app_store_links.py")], env=env)
     require([PY, os.path.join(HERE, "gen_app_decision_cards.py")], env=env)
     require([PY, os.path.join(HERE, "gen_mobile_store_ctas.py")], env=env)
     require([PY, os.path.join(HERE, "gen_app_store_qr_ctas.py")], env=env)

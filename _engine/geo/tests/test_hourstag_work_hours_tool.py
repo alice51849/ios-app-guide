@@ -7,7 +7,6 @@ import re
 import sys
 import tempfile
 import unittest
-import urllib.parse
 
 
 GEO = Path(__file__).resolve().parents[1]
@@ -101,8 +100,8 @@ class HoursTagWorkHoursToolTests(unittest.TestCase):
         self.assertIn("never decides whether you should buy", english)
         self.assertIn("不替你決定該不該買", chinese)
 
-    def test_public_pages_use_correct_direct_app_store_campaigns(self):
-        campaigns = set()
+    def test_public_pages_use_clean_direct_app_store_links(self):
+        direct = tool.appstore_url(tool.APP_KEY)
         for locale in tool.COPY:
             page = tool.render_page(locale, app_public=True)
             self.assertIn(f"id{tool.APP_ID}", page)
@@ -110,14 +109,8 @@ class HoursTagWorkHoursToolTests(unittest.TestCase):
                 f'<meta name="apple-itunes-app" content="app-id={tool.APP_ID}">',
                 page,
             )
-            match = re.search(
-                rf"https://apps\.apple\.com/app/id{tool.APP_ID}\?ct=([^\"&]+)",
-                page,
-            )
-            self.assertIsNotNone(match)
-            campaign = urllib.parse.unquote(match.group(1))
-            self.assertRegex(campaign, r"^[A-Za-z0-9_]{1,30}$")
-            campaigns.add(campaign)
+            self.assertIn(f'href="{direct}"', page)
+            self.assertNotIn(f"id{tool.APP_ID}?", page)
             schemas = [
                 json.loads(payload)
                 for payload in re.findall(
@@ -132,7 +125,6 @@ class HoursTagWorkHoursToolTests(unittest.TestCase):
             self.assertEqual(tool.appstore_url(tool.APP_KEY), mobile["installUrl"])
             self.assertNotIn("aggregateRating", mobile)
             self.assertNotIn("offers", mobile)
-        self.assertEqual(len(tool.COPY), len(campaigns))
 
     def test_webmcp_schema_is_strict_bounded_and_side_effect_free(self):
         schema = tool.webmcp_input_schema()

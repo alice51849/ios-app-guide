@@ -226,7 +226,7 @@ CROISSANT_FIELD_SPECS = {
     ),
     "app_store_url": (
         "sc:URL",
-        "Verified locale-aware direct App Store URL with campaign attribution.",
+        "Verified locale-aware direct App Store URL.",
         "https://schema.org/downloadUrl",
     ),
     "publisher_disclosure": (

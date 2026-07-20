@@ -20,6 +20,7 @@ sys.path.insert(0, str(ROOT / "social"))
 sys.path.insert(0, str(HERE))
 
 from appstore_live import live_app_keys  # noqa: E402
+from app_store_storefronts import validated_app_store_url  # noqa: E402
 import gen_image_sitemap  # noqa: E402
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 
@@ -140,14 +141,14 @@ def _guide_context(
     _owned_path(hub_url, pages, site)
 
     store_url = appstore_url(key, "iag_linkset")
-    parsed_store = urllib.parse.urlsplit(store_url)
-    if (
-        parsed_store.scheme != "https"
-        or parsed_store.netloc != "apps.apple.com"
-        or not re.fullmatch(r"/app/id\d+", parsed_store.path)
-        or urllib.parse.parse_qs(parsed_store.query) != {"ct": ["iag_linkset"]}
-    ):
-        raise ValueError(f"Invalid App Store Linkset target for {key}: {store_url}")
+    try:
+        validated_app_store_url(store_url, APPSTORE[key])
+    except ValueError as error:
+        raise ValueError(
+            f"Invalid App Store Linkset target for {key}: {store_url}"
+        ) from error
+    if "?" in store_url and "ct=iag_linkset" not in store_url:
+        raise ValueError(f"Invalid App Store Linkset campaign for {key}: {store_url}")
 
     name = APPS[key]["name"]
     context: dict[str, object] = {

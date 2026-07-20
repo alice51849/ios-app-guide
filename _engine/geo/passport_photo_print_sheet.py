@@ -33,7 +33,6 @@ CANADA_SOURCE = (
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/"
     "canadian-passports/photos.html"
 )
-APP_URL = appstore_url("snapport")
 
 PRESETS = {
     "us": {
@@ -504,7 +503,10 @@ def render_page(locale: str, show_app_cta: bool) -> str:
     home_prefix = "" if locale == "en" else f"{locale}/"
     home = f"{SITE}/{home_prefix}index.html"
     tools = f"{SITE}/{home_prefix}tools/index.html"
-    app_campaign = f"{APP_URL}?ct=iag_passport_print_sheet_{locale.lower()}"
+    app_campaign = appstore_url(
+        "snapport",
+        f"iag_passport_print_sheet_{locale.lower()}",
+    )
     related_resources = [
         {
             "label": label,

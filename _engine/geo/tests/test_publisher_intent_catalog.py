@@ -15,7 +15,7 @@ import subprocess
 import sys
 import unittest
 import unicodedata
-from urllib.parse import parse_qs, urlparse
+from urllib.parse import urlparse
 
 
 GEO = Path(__file__).resolve().parents[1]
@@ -227,11 +227,7 @@ class PublisherIntentOutputTests(unittest.TestCase):
                 self.availability,
             )
             self.assertEqual(urlparse(expected_store).path, parsed.path)
-            self.assertEqual(
-                [catalog.campaign_token(locale)],
-                parse_qs(parsed.query).get("ct"),
-            )
-            self.assertNotIn("pt", parse_qs(parsed.query))
+            self.assertEqual("", parsed.query)
             self.assertFalse(record["measured_search_volume"])
             self.assertFalse(record["is_ranking"])
             self.assertTrue(record["verified_live"])
@@ -483,19 +479,12 @@ class PublisherIntentOutputTests(unittest.TestCase):
             )
             store_urls = re.findall(
                 r'href="(https://apps\.apple\.com/'
-                r'(?:[a-z]{2}/)?app/id[0-9]+\?ct=[^"]+)"',
+                r'(?:[a-z]{2}/)?app/id[0-9]+)"',
                 table_body.group(1),
             )
             self.assertEqual(catalog.EXPECTED_APP_COUNT, len(store_urls))
-            expected_campaign = catalog.campaign_token(
-                "en-US" if locale == "en" else locale
-            )
             self.assertTrue(
-                all(
-                    parse_qs(urlparse(url).query).get("ct")
-                    == [expected_campaign]
-                    for url in store_urls
-                )
+                all(not urlparse(url).query for url in store_urls)
             )
             visual_locale = "" if locale == "en" else f"/{locale}"
             self.assertEqual(

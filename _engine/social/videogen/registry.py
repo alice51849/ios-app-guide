@@ -7,6 +7,7 @@ strongest screenshots (self-captioned framed shots), and the opening hook + CTA 
 Hooks are pain-point / savings / before-after angles — the virality lever.
 """
 import os
+import re
 
 
 VALID_PURCHASE_MODELS = frozenset(
@@ -432,15 +433,21 @@ APPSTORE = {
 
 
 def appstore_url(key, campaign=None):
-    """Direct App Store link for an app key (empty string if unknown).
-
-    campaign: optional App Store Connect campaign token (ct=) for attribution.
-    """
+    """Direct App Store link, with attribution only when a provider token exists."""
     aid = APPSTORE.get(key)
     if not aid:
         return ""
     url = f"https://apps.apple.com/app/id{aid}"
-    return f"{url}?ct={campaign}" if campaign else url
+    if not campaign:
+        return url
+    provider = os.environ.get("APP_STORE_PROVIDER_TOKEN", "").strip()
+    if not provider:
+        return url
+    if not re.fullmatch(r"[0-9]{1,20}", provider):
+        raise ValueError(f"Invalid App Store provider token: {provider!r}")
+    if not re.fullmatch(r"[A-Za-z0-9_]{1,30}", campaign):
+        raise ValueError(f"Invalid App Store campaign token: {campaign!r}")
+    return f"{url}?pt={provider}&ct={campaign}&mt=8"
 
 
 # --- 自動偵測的新 App(由 new_app_catchup.py 維護,免手動改碼即自動納入全部宣傳)---

@@ -9,6 +9,10 @@ import re
 from pathlib import Path
 import urllib.parse
 
+from app_store_storefronts import (
+    normalize_app_store_campaign_url,
+    validated_app_store_url,
+)
 import gen_smart_app_banners
 from appstore_live import live_app_keys
 from videogen.registry import APPSTORE
@@ -121,6 +125,8 @@ def app_store_cta(source: str, app_id: str) -> tuple[str, str] | None:
         )
         if not linked_id or linked_id.group(1) != app_id:
             continue
+        href = normalize_app_store_campaign_url(href)
+        validated_app_store_url(href, app_id)
         label = _plain_label(match.group("label"))
         if not label:
             continue
@@ -156,6 +162,8 @@ def asset_href(site: str = SITE) -> str:
 def mobile_cta_block(
     href: str, label: str, script_href: str | None = None
 ) -> str:
+    href = normalize_app_store_campaign_url(html.unescape(href))
+    validated_app_store_url(href)
     if script_href is None:
         script_href = asset_href()
     if not script_href.startswith("/") or any(

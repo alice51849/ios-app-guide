@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """Google Web Stories (AMP Story) generator — 全自動、進 Google Discover。
 
-每個 App 產一個有效 AMP Story(海報 + 5 頁 + App Store CTA,帶 ct=iag_story 歸因)。
+每個 App 產一個有效 AMP Story(海報 + 5 頁 + 乾淨 App Store CTA)。
 輸出 geo/pages/stories/<key>.html + stories/img/*.jpg + stories/index.html + sitemap_stories.xml。
 純本機生成(PIL 海報 + registry 文案),不改 App、不改 App Store 內容。
 """

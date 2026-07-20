@@ -10,7 +10,10 @@ from pathlib import Path
 import re
 import urllib.parse
 
-from app_store_storefronts import validated_app_store_url
+from app_store_storefronts import (
+    normalize_app_store_campaign_url,
+    validated_app_store_url,
+)
 import gen_mobile_store_ctas
 import gen_smart_app_banners
 from appstore_live import live_app_keys
@@ -89,6 +92,7 @@ SCRIPT_TEMPLATE = """\
       /^\\/(?:[a-z]{2}\\/)?app\\/id([0-9]{9,12})$/i
     );
     const parameters = [...store.searchParams.entries()];
+    const campaign = Object.fromEntries(parameters);
     if (
       store.protocol !== "https:" ||
       store.hostname !== "apps.apple.com" ||
@@ -98,17 +102,16 @@ SCRIPT_TEMPLATE = """\
       !path ||
       path[1] !== appId ||
       store.hash ||
-      parameters.some(([key, value]) =>
-        key === "ct"
-          ? !/^[A-Za-z0-9_]{1,30}$/.test(value)
-          : key === "pt"
-          ? !/^[A-Za-z0-9]+$/.test(value)
-          : true
-      ) ||
       parameters.some(
         ([key], index) =>
           parameters.findIndex(([candidate]) => candidate === key) !== index
-      )
+      ) ||
+      (parameters.length !== 0 &&
+        (parameters.length !== 3 ||
+          parameters.map(([key]) => key).join(",") !== "pt,ct,mt" ||
+          !/^[0-9]{1,20}$/.test(campaign.pt || "") ||
+          !/^[A-Za-z0-9_]{1,30}$/.test(campaign.ct || "") ||
+          campaign.mt !== "8"))
     ) throw new TypeError("Invalid direct App Store share URL.");
   } catch (error) {
     console.error("App Store share URL is invalid.", error);
@@ -216,7 +219,8 @@ def asset_href(site: str = SITE) -> str:
 
 def _validated_store_url(value: str, app_id: str) -> str:
     try:
-        return validated_app_store_url(html.unescape(value), app_id)
+        normalized = normalize_app_store_campaign_url(html.unescape(value))
+        return validated_app_store_url(normalized, app_id)
     except ValueError as error:
         raise ValueError(
             f"Invalid direct App Store share URL: {value!r}"

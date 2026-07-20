@@ -19,6 +19,7 @@ from typing import Any
 
 from app_store_storefronts import (
     campaign_app_store_url,
+    normalize_app_store_campaign_url,
     validated_app_store_url,
 )
 from gen_feed import feed_discovery_links
@@ -79,10 +80,10 @@ def visual_campaign_token(locale: str) -> str:
 def visual_store_url(record: dict[str, Any]) -> str:
     locale = str(record["locale"])
     app_id = str(record["app_store_id"])
-    source = validated_app_store_url(
-        str(record["app_store_url"]),
-        expected_app_id=app_id,
+    source = normalize_app_store_campaign_url(
+        str(record["app_store_url"])
     )
+    validated_app_store_url(source, expected_app_id=app_id)
     return campaign_app_store_url(source, visual_campaign_token(locale))
 
 
@@ -907,10 +908,9 @@ def build(
         "publisher_authored": True,
         "measured_search_volume": False,
         "is_ranking": False,
-        "campaign_parameter": {
-            "name": "ct",
-            "purpose": "non_personal_route_label",
-            "provider_token_available": False,
+        "app_store_link_policy": {
+            "default": "clean_direct",
+            "campaign_requires": ["pt", "ct", "mt=8"],
         },
         "records": manifest_records,
     }

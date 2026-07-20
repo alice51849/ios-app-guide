@@ -80,6 +80,7 @@ import gen_linkset
 import gen_llms
 import gen_mobile_app_identity
 import gen_mobile_store_ctas
+import normalize_app_store_links
 import gen_roundups
 import gen_sitemap_lastmod
 import gen_social_previews
@@ -518,7 +519,7 @@ class GeneratorTests(unittest.TestCase):
             )
             related = [target["href"] for target in app["related"]]
             self.assertEqual(
-                "https://apps.apple.com/app/id6773017109?ct=iag_linkset",
+                "https://apps.apple.com/app/id6773017109",
                 related[0],
             )
             self.assertEqual(
@@ -771,7 +772,7 @@ class GeneratorTests(unittest.TestCase):
                 embed["_lumi_guide_url"],
             )
             self.assertEqual(
-                "https://apps.apple.com/app/id6773017109?ct=iag_oembed_en",
+                "https://apps.apple.com/app/id6773017109",
                 embed["_lumi_app_store_url"],
             )
             self.assertEqual(
@@ -779,8 +780,7 @@ class GeneratorTests(unittest.TestCase):
                 embed["_lumi_buyer_intent_image_url"],
             )
             self.assertIn(
-                'href="https://apps.apple.com/app/id6773017109'
-                '?ct=iag_oembed_en"',
+                'href="https://apps.apple.com/app/id6773017109"',
                 embed["html"],
             )
             self.assertIn(
@@ -803,7 +803,7 @@ class GeneratorTests(unittest.TestCase):
                 localized_embed["_lumi_guide_url"],
             )
             self.assertEqual(
-                "https://apps.apple.com/jp/app/id6773017109?ct=iag_oembed_ja",
+                "https://apps.apple.com/jp/app/id6773017109",
                 localized_embed["_lumi_app_store_url"],
             )
             self.assertEqual("rich", localized_embed["type"])
@@ -960,7 +960,7 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(1, source.count(gen_social_previews.HERO_START))
             self.assertEqual(1, source.count('class="iag-app-preview__image"'))
             self.assertIn(
-                'href="https://apps.apple.com/app/id6773017109?ct=iag_hero"',
+                'href="https://apps.apple.com/app/id6773017109"',
                 source,
             )
             self.assertIn(
@@ -1608,7 +1608,11 @@ class GeneratorTests(unittest.TestCase):
             generated_source = generated.group(0)
             self.assertIn("Get the app", generated_source)
             self.assertNotIn("Plain link", generated_source)
-            self.assertIn("ct=hero&amp;mt=8", generated_source)
+            self.assertIn(
+                'href="https://apps.apple.com/app/id6773017109"',
+                generated_source,
+            )
+            self.assertNotIn("?ct=", generated_source)
             self.assertIn(
                 'src="/ios-app-guide/assets/mobile-store-cta-v1.js"',
                 generated_source,
@@ -1671,9 +1675,12 @@ class GeneratorTests(unittest.TestCase):
             fallback = root / "fallback.html"
             stale = root / "stale.html"
             stylesheet_href = "/ios-app-guide/assets/app-store-qr-v1.css"
-            app_href = (
+            legacy_app_href = (
                 "https://apps.apple.com/tw/app/id6773017109"
                 "?pt=123456789&ct=localized"
+            )
+            app_href = app_store_storefronts.normalize_app_store_campaign_url(
+                legacy_app_href
             )
             image_href = (
                 "/ios-app-guide/"
@@ -1688,13 +1695,13 @@ class GeneratorTests(unittest.TestCase):
                 "<!-- app-decision-card-style:end -->"
                 f"{gen_app_store_qr_ctas.FEED_DISCOVERY_ANCHOR} "
                 'href="/feed.xml"></head><body><main>'
-                f'<a class="cta" href="{app_href}">Localized label</a>'
+                f'<a class="cta" href="{legacy_app_href}">Localized label</a>'
                 "</main></body>",
                 encoding="utf-8",
             )
             fallback.write_text(
                 "<head></head><body><div>"
-                f'<a class="cta" href="{app_href}">Fallback label</a>'
+                f'<a class="cta" href="{legacy_app_href}">Fallback label</a>'
                 "</div>"
                 f"{gen_mobile_store_ctas.BLOCK_START}"
                 "<div>Mobile CTA</div>"
@@ -1718,7 +1725,7 @@ class GeneratorTests(unittest.TestCase):
                 gen_app_store_qr_ctas.ensure_qr_card(
                     page,
                     "6773017109",
-                    app_href,
+                    legacy_app_href,
                     "Localized label",
                     stylesheet_href,
                     image_href,
@@ -1729,7 +1736,7 @@ class GeneratorTests(unittest.TestCase):
                 gen_app_store_qr_ctas.ensure_qr_card(
                     page,
                     "6773017109",
-                    app_href,
+                    legacy_app_href,
                     "Localized label",
                     stylesheet_href,
                     image_href,
@@ -1757,6 +1764,12 @@ class GeneratorTests(unittest.TestCase):
             )
             self.assertIn("Localized label", source)
             self.assertIn(image_href, source)
+            qr_block = gen_app_store_qr_ctas.CARD_BLOCK_RE.search(source).group(0)
+            self.assertIn(
+                html.escape(app_href, quote=True),
+                qr_block,
+            )
+            self.assertNotIn("?pt=123456789&amp;ct=localized\"", qr_block)
             self.assertIn(
                 "https://apps.apple.com/tw/app/id6773017109", source
             )
@@ -1772,7 +1785,7 @@ class GeneratorTests(unittest.TestCase):
                 gen_app_store_qr_ctas.ensure_qr_card(
                     fallback,
                     "6773017109",
-                    app_href,
+                    legacy_app_href,
                     "Fallback label",
                     stylesheet_href,
                     image_href,
@@ -2368,7 +2381,7 @@ class GeneratorTests(unittest.TestCase):
             )
             self.assertIn(
                 'data-app-store-url="https://apps.apple.com/app/'
-                'id6773017109?ct=page"',
+                'id6773017109"',
                 source,
             )
             self.assertIn(
@@ -2376,7 +2389,7 @@ class GeneratorTests(unittest.TestCase):
                 source,
             )
             self.assertIn(
-                "https://apps.apple.com/app/id6773017109?ct=page",
+                "https://apps.apple.com/app/id6773017109",
                 gen_app_store_share_ctas.BLOCK_RE.search(source).group(0),
             )
             self.assertTrue(gen_app_store_share_ctas.remove_share(stale))
@@ -11132,7 +11145,6 @@ class GeneratorTests(unittest.TestCase):
         )
         app_url = (
             f"https://apps.apple.com/app/id{family_travel_mission_cards.APP_ID}"
-            "?ct=iag_ans"
         )
         main = localized.split("<main>", 1)[1]
         self.assertIn(
@@ -11255,21 +11267,17 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("尚未經研究評估", traditional)
         self.assertIn("沒有完成度追蹤", traditional)
 
-    def test_grade1_summer_calendar_private_renderer_hides_app_id_public_has_unique_campaign(
+    def test_grade1_summer_calendar_private_renderer_hides_app_id_public_has_clean_link(
         self,
     ):
         m = zhuyin_grade1_summer_calendar
-        campaigns = set()
         for locale in m.ALT_LOCALES:
             private_page = m.render_page(locale, app_public=False)
             public_page = m.render_page(locale, app_public=True)
             self.assertNotIn(f"id{m.APP_ID}", private_page)
             self.assertNotIn("apps.apple.com", private_page)
             self.assertIn(f"id{m.APP_ID}", public_page)
-            campaign = f"iag_grade1_14day_{locale.lower()}"
-            self.assertIn(campaign, public_page)
-            campaigns.add(campaign)
-        self.assertEqual(len(m.ALT_LOCALES), len(campaigns))
+            self.assertNotIn("?ct=", public_page)
 
     def test_grade1_summer_calendar_webmcp_tool_is_strict_and_side_effect_free(self):
         m = zhuyin_grade1_summer_calendar
@@ -11631,9 +11639,7 @@ class GeneratorTests(unittest.TestCase):
                     (tools / f"{m.SLUG}.html").exists()
                 )
                 self.assertIn(f"id{m.APP_ID}", page)
-                self.assertIn(
-                    f"iag_zhuyin_blending_{locale.lower()}", page
-                )
+                self.assertNotIn("?ct=", page)
                 index = (tools / "index.html").read_text(encoding="utf-8")
                 self.assertEqual(
                     1,
@@ -12402,18 +12408,17 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn('throw new RangeError("page_count is outside the supported range.")', script)
         self.assertIn("if (!allowed.has(name))", script)
 
-    def test_document_scan_planner_public_campaigns_are_unique_and_opt_in(self):
+    def test_document_scan_planner_public_links_are_clean_and_opt_in(self):
         m = document_scan_planner
         for locale in m.ALT_LOCALES:
             private = m.render_page(locale)
             public = m.render_page(locale, app_public=True)
-            campaign = f"iag_scan_plan_{locale.lower()}"
             self.assertNotIn("apps.apple.com", private)
             self.assertNotIn(m.APP_ID, private)
             self.assertNotIn('class="app-card', private)
             self.assertEqual(1, public.count('class="app-card'))
             self.assertIn(f"id{m.APP_ID}", public)
-            self.assertIn(campaign, urllib.parse.unquote(public))
+            self.assertNotIn("?ct=", urllib.parse.unquote(public))
         with mock.patch.object(m, "live_app_keys") as live:
             with tempfile.TemporaryDirectory() as directory:
                 pages = Path(directory)
@@ -12694,11 +12699,10 @@ class GeneratorTests(unittest.TestCase):
                 self.assertEqual(1, index.count(f"{m.SLUG}.html"))
                 self.assertEqual(1, index.count(f'data-tool="{m.SLUG}"'))
 
-    def test_blurry_photo_guide_private_default_hides_app_id_public_has_unique_campaign(
+    def test_blurry_photo_guide_private_default_hides_app_id_public_has_clean_link(
         self,
     ):
         m = blurry_photo_diagnostic
-        campaigns = set()
         for locale in m.ALT_LOCALES:
             private_page = m.render_page(locale)
             public_page = m.render_page(locale, True)
@@ -12706,10 +12710,7 @@ class GeneratorTests(unittest.TestCase):
             self.assertNotIn("apps.apple.com", private_page)
             self.assertNotIn('class="app-card', private_page)
             self.assertIn(f"id{m.APP_ID}", public_page)
-            campaign = f"iag_blur_guide_{locale.lower()}"
-            self.assertIn(campaign, public_page)
-            campaigns.add(campaign)
-        self.assertEqual(len(m.ALT_LOCALES), len(campaigns))
+            self.assertNotIn("?ct=", public_page)
 
     def test_blurry_photo_guide_webmcp_tool_is_strict_and_side_effect_free(self):
         m = blurry_photo_diagnostic
@@ -13031,10 +13032,7 @@ class GeneratorTests(unittest.TestCase):
             self.assertNotIn(m.APP_ID, private)
             self.assertNotIn("apps.apple.com", private)
             self.assertIn(f"id{m.APP_ID}", public)
-            self.assertIn(
-                f"iag_checklist_plan_{locale.lower()}",
-                urllib.parse.unquote(public),
-            )
+            self.assertNotIn("?ct=", urllib.parse.unquote(public))
         with mock.patch.object(m, "live_app_keys") as live:
             with tempfile.TemporaryDirectory() as directory:
                 pages = Path(directory)
@@ -13217,7 +13215,7 @@ class GeneratorTests(unittest.TestCase):
         for locale in m.ALT_LOCALES:
             public = m.render_page(locale, app_public=True)
             self.assertIn(f"id{m.APP_ID}", public)
-            self.assertIn(f"iag_cycle_privacy_{locale.lower()}", urllib.parse.unquote(public))
+            self.assertNotIn("?ct=", urllib.parse.unquote(public))
 
     def test_cycle_privacy_planner_is_wired_into_publish(self):
         publish = (Path(GEO) / "publish.py").read_text(encoding="utf-8")
@@ -13502,7 +13500,7 @@ class GeneratorTests(unittest.TestCase):
         for locale in m.RTL_LOCALES:
             self.assertIn('dir="rtl"', private_pages[locale])
         self.assertIn(f"id{m.APP_ID}", public)
-        self.assertIn("iag_outing_plan_en-us", urllib.parse.unquote(public))
+        self.assertNotIn("?ct=", urllib.parse.unquote(public))
         self.assertIn(f'href="{m.SITE}/en-US/lumiweather.html"', public)
         self.assertIn(
             f'<meta name="description" content="{planner_description}">',
@@ -14629,7 +14627,7 @@ class GeneratorTests(unittest.TestCase):
             1,
         )
         direct_store_link = (
-            'href="https://apps.apple.com/app/id6780575828?ct=iag_ans"'
+            'href="https://apps.apple.com/app/id6780575828"'
         )
         self.assertNotIn(direct_store_link, before_faq)
         self.assertIn(direct_store_link, after_faq)
@@ -14754,7 +14752,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("document.cookie", english)
         self.assertEqual(44, english.count("<option value=") - 23)
         self.assertIn(
-            "https://apps.apple.com/app/id6789917808?ct=iag_vocab_planner_en",
+            "https://apps.apple.com/app/id6789917808",
             english,
         )
         self.assertLess(
@@ -14870,11 +14868,10 @@ class GeneratorTests(unittest.TestCase):
                 self.assertEqual(1, index.count(f"{m.SLUG}.html"))
                 self.assertEqual(1, index.count(f'data-tool="{m.SLUG}"'))
 
-    def test_vocabulary_habit_planner_private_renderer_hides_app_id_public_has_unique_campaign(
+    def test_vocabulary_habit_planner_private_renderer_hides_app_id_public_has_clean_link(
         self,
     ):
         m = vocabulary_habit_planner
-        campaigns = set()
         for locale in m.ALT_LOCALES:
             private_page = m.render_page(locale, show_app_cta=False)
             self.assertEqual(private_page, m.render_page(locale))
@@ -14883,10 +14880,7 @@ class GeneratorTests(unittest.TestCase):
             self.assertNotIn("apps.apple.com", private_page)
             self.assertNotIn('class="card app-card', private_page)
             self.assertIn(f"id{m.APP_ID}", public_page)
-            campaign = f"iag_vocab_planner_{locale.lower()}"
-            self.assertIn(campaign, public_page)
-            campaigns.add(campaign)
-        self.assertEqual(len(m.ALT_LOCALES), len(campaigns))
+            self.assertNotIn("?ct=", public_page)
 
     def test_vocabulary_habit_planner_webmcp_tool_is_strict_and_side_effect_free(self):
         m = vocabulary_habit_planner
@@ -16198,9 +16192,7 @@ class GeneratorTests(unittest.TestCase):
                     root / "answers" / m.TARGET_ANSWER_SLUG
                 ).read_text(encoding="utf-8")
                 self.assertIn(f"id{m.APP_ID}", page)
-                self.assertIn(
-                    f"iag_bopomofo_flashcards_{locale.lower()}", page
-                )
+                self.assertNotIn("?ct=", page)
                 self.assertIn(f'data-tool="{m.SLUG}"', index)
                 self.assertEqual(
                     1, answer.count(m.INBOUND_LINK_CLASS)
@@ -16420,10 +16412,7 @@ class GeneratorTests(unittest.TestCase):
                     root / "answers" / m.TARGET_ANSWER_SLUG
                 ).read_text(encoding="utf-8")
                 self.assertIn(f"id{m.APP_ID}", page)
-                self.assertIn(
-                    f"iag_bopomofo_practice_sheet_{locale.lower()}",
-                    page,
-                )
+                self.assertNotIn("?ct=", page)
                 self.assertIn(f'data-tool="{m.SLUG}"', index)
                 self.assertEqual(
                     1, answer.count(m.INBOUND_LINK_CLASS)
@@ -17294,8 +17283,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("sessionStorage", english)
         self.assertNotIn("document.cookie", english)
         self.assertIn(
-            "https://apps.apple.com/app/id6789917808"
-            "?ct=iag_wordmate_language_matrix",
+            "https://apps.apple.com/app/id6789917808",
             english,
         )
         self.assertIn("Try Japanese, zh-Hant, Kannada or 泰文", english)
@@ -17515,15 +17503,14 @@ class GeneratorTests(unittest.TestCase):
             all(card.count("https://apps.apple.com/app/id") == 1 for card in cards)
         )
         self.assertIn(
-            "https://apps.apple.com/app/id6780575828"
-            "?ct=iag_finder_snapport",
+            "https://apps.apple.com/app/id6780575828",
             english,
         )
         self.assertIn(
-            "https://apps.apple.com/app/id6789917808"
-            "?ct=iag_finder_wordmate",
+            "https://apps.apple.com/app/id6789917808",
             english,
         )
+        self.assertNotIn("?ct=", english)
         self.assertLess(english.index(">Snapport<"), english.index(">Wordmate:"))
         self.assertIn('id="category"', english)
         self.assertIn('id="purchase"', english)
@@ -17608,10 +17595,8 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(2, len(tool_records))
         self.assertEqual(
             [
-                "https://apps.apple.com/app/id6780575828"
-                "?ct=iag_finder_snapport",
-                "https://apps.apple.com/app/id6789917808"
-                "?ct=iag_finder_wordmate",
+                "https://apps.apple.com/app/id6780575828",
+                "https://apps.apple.com/app/id6789917808",
             ],
             [record["app_store_url"] for record in tool_records],
         )
@@ -17798,9 +17783,10 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("端末上で証明写真を準備します。", japanese)
         self.assertIn("App StoreでSnapportを見る →", japanese)
         self.assertIn(
-            "https://apps.apple.com/jp/app/id6780575828?ct=iag_find_ja",
+            "https://apps.apple.com/jp/app/id6780575828",
             japanese,
         )
+        self.assertNotIn("?ct=", japanese)
         self.assertIn('rel="search"', japanese)
         self.assertIn("?q={search_term_string}", japanese)
         self.assertIn(
@@ -18079,19 +18065,17 @@ class GeneratorTests(unittest.TestCase):
         for locale in (english, japanese):
             self.assertEqual(2, locale["record_count"])
             for app in locale["apps"]:
-                self.assertIn("ct=iag_api_", app["app_store_url"])
+                self.assertNotIn("?", app["app_store_url"])
         for app in english["apps"]:
-            self.assertTrue(
-                app["app_store_url"].startswith(
-                    "https://apps.apple.com/us/app/"
-                    f"id{app['app_store_id']}?"
-                )
+            self.assertEqual(
+                "https://apps.apple.com/us/app/"
+                f"id{app['app_store_id']}",
+                app["app_store_url"],
             )
         for app in japanese["apps"]:
-            self.assertTrue(
-                app["app_store_url"].startswith(
-                    f"https://apps.apple.com/app/id{app['app_store_id']}?"
-                )
+            self.assertEqual(
+                f"https://apps.apple.com/app/id{app['app_store_id']}",
+                app["app_store_url"],
             )
         self.assertEqual(
             portfolio_app_catalog_api.JSON_FEED_VERSION,
@@ -18128,7 +18112,7 @@ class GeneratorTests(unittest.TestCase):
         )
         for feed in (english_feed, japanese_feed):
             for item in feed["items"]:
-                self.assertIn("ct=iag_feed_", item["external_url"])
+                self.assertNotIn("?", item["external_url"])
                 self.assertLessEqual(
                     item["date_modified"],
                     portfolio_app_catalog_api._utc_timestamp(),
@@ -18401,7 +18385,7 @@ class GeneratorTests(unittest.TestCase):
             "https://alice51849.github.io/ios-app-guide/zh-Hant/tools/"
             "zhuyin-grade1-14-day-summer-calendar.html"
         )
-        app_url = "https://apps.apple.com/app/id6773017109?ct=iag_ans"
+        app_url = "https://apps.apple.com/app/id6773017109"
         main = localized.split("<main>", 1)[1]
         self.assertIn(
             "<title>免費小一入學前 14 天注音暖身日曆</title>",
@@ -18531,7 +18515,7 @@ class GeneratorTests(unittest.TestCase):
             "https://alice51849.github.io/ios-app-guide/zh-Hant/"
             "tools/zhuyin-library-storytime-kit.html"
         )
-        app_url = "https://apps.apple.com/app/id6773017109?ct=iag_ans"
+        app_url = "https://apps.apple.com/app/id6773017109"
         main = localized.split("<main>", 1)[1]
         self.assertIn("<title>免費圖書館注音親子故事時間包</title>", localized)
         self.assertLess(main.index(kit_url), main.index(app_url))
@@ -18765,7 +18749,7 @@ class GeneratorTests(unittest.TestCase):
             "https://alice51849.github.io/ios-app-guide/zh-Hant/"
             "tools/zhuyin-parent-teacher-handoff-kit.html"
         )
-        app_url = "https://apps.apple.com/app/id6773017109?ct=iag_ans"
+        app_url = "https://apps.apple.com/app/id6773017109"
         main = localized.split("<main>", 1)[1]
         self.assertIn("<title>免費注音家庭—教師交接包</title>", localized)
         self.assertLess(main.index(kit_url), main.index(app_url))
@@ -18874,7 +18858,7 @@ class GeneratorTests(unittest.TestCase):
             "https://alice51849.github.io/ios-app-guide/zh-Hant/"
             "tools/zhuyin-family-picture-book-club-kit.html"
         )
-        app_url = "https://apps.apple.com/app/id6773017109?ct=iag_ans"
+        app_url = "https://apps.apple.com/app/id6773017109"
         main = localized.split("<main>", 1)[1]
         self.assertIn("<title>免費四週家庭注音繪本共讀包</title>", localized)
         self.assertLess(main.index(kit_url), main.index(app_url))
@@ -18984,7 +18968,7 @@ class GeneratorTests(unittest.TestCase):
             "https://alice51849.github.io/ios-app-guide/zh-Hant/"
             "tools/zhuyin-grandparent-video-call-kit.html"
         )
-        app_url = "https://apps.apple.com/app/id6773017109?ct=iag_ans"
+        app_url = "https://apps.apple.com/app/id6773017109"
         main = localized.split("<main>", 1)[1]
         self.assertIn("<title>免費祖孫注音視訊遊戲包</title>", localized)
         self.assertLess(main.index(kit_url), main.index(app_url))
@@ -19370,7 +19354,7 @@ class GeneratorTests(unittest.TestCase):
             aeo_answers.default_content(question, "mochi"),
         )
         self.assertIn(
-            "https://apps.apple.com/app/id6785004775?ct=iag_ans",
+            "https://apps.apple.com/app/id6785004775",
             page,
         )
         self.assertIn('"@type": "HowTo"', page)
@@ -19448,7 +19432,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual("", content["primary_resource_url"])
         page = aeo_answers.render_page(question, "cvdesk", content)
         self.assertIn(
-            "https://apps.apple.com/app/id6781337213?ct=iag_ans",
+            "https://apps.apple.com/app/id6781337213",
             page,
         )
         self.assertIn('"@type": "HowTo"', page)
@@ -19641,7 +19625,7 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(52, urdu_story.count('hreflang="'))
             self.assertIn('lang="ur-PK" dir="rtl"', urdu_story)
             self.assertIn(f"app-id={APPSTORE['mochi']}", urdu_story)
-            self.assertIn("ct=iag_story", urdu_story)
+            self.assertNotIn("?ct=", urdu_story)
             self.assertIn('"@type": "MobileApplication"', urdu_story)
             self.assertIn(
                 f'"downloadUrl": "https://apps.apple.com/app/id{APPSTORE["mochi"]}"',
@@ -20477,11 +20461,13 @@ class GeneratorTests(unittest.TestCase):
             self.assertIn('<data value="0">免費</data>', rendered)
             self.assertIn('<data value="4.9">4.9</data>/5', rendered)
             self.assertIn('<data value="12">12</data>', rendered)
-            self.assertIn("?ct=iag_decision", rendered)
+            decision_card = gen_app_decision_cards.CARD_RE.search(
+                rendered
+            ).group(0)
+            self.assertNotIn("?ct=", decision_card)
             self.assertIn(
-                f"https://apps.apple.com/tw/app/id{app_id}"
-                "?ct=iag_decision",
-                rendered,
+                f"https://apps.apple.com/tw/app/id{app_id}",
+                decision_card,
             )
             self.assertLess(
                 rendered.index(gen_app_decision_cards.STYLE_START),
@@ -20528,10 +20514,13 @@ class GeneratorTests(unittest.TestCase):
             self.assertIn("Majte jednu cestu prehľadne pokope.", localized)
             self.assertIn("Bez predplatného", localized)
             self.assertIn("Stiahnuť v App Store", localized)
+            localized_card = gen_app_decision_cards.CARD_RE.search(
+                localized
+            ).group(0)
+            self.assertNotIn("?ct=", localized_card)
             self.assertIn(
-                f"https://apps.apple.com/sk/app/id{app_id}"
-                "?ct=iag_decision",
-                localized,
+                f"https://apps.apple.com/sk/app/id{app_id}",
+                localized_card,
             )
             self.assertLess(
                 localized.index("</section>"),
@@ -21866,6 +21855,7 @@ class GeneratorTests(unittest.TestCase):
             {
                 "pt": ["123456789"],
                 "ct": ["iag_api_zh_hant"],
+                "mt": ["8"],
             },
             urllib.parse.parse_qs(parsed_campaign.query),
         )
@@ -21877,11 +21867,52 @@ class GeneratorTests(unittest.TestCase):
             {
                 "pt": ["123456789"],
                 "ct": ["iag_oembed_zh_hant"],
+                "mt": ["8"],
             },
             urllib.parse.parse_qs(
                 urllib.parse.urlsplit(replaced_campaign).query
             ),
         )
+        with mock.patch.dict(
+            os.environ,
+            {app_store_storefronts.PROVIDER_TOKEN_ENV: ""},
+        ):
+            self.assertEqual(
+                expected["zh-Hant"],
+                app_store_storefronts.campaign_app_store_url(
+                    expected["zh-Hant"],
+                    "iag_api_zh_hant",
+                ),
+            )
+            self.assertEqual(
+                expected["zh-Hant"],
+                app_store_storefronts.normalize_app_store_campaign_url(
+                    f"{expected['zh-Hant']}?ct=iag_linkset"
+                ),
+            )
+            self.assertEqual(
+                expected["zh-Hant"],
+                app_store_storefronts.normalize_app_store_campaign_url(
+                    f"{expected['zh-Hant']}?ct="
+                    "legacy-campaign-token-that-is-too-long"
+                ),
+            )
+            normalized, changed = normalize_app_store_links.normalize_source(
+                '<a href="https://apps.apple.com/tw/app/id6773017109'
+                '?ct=iag_linkset">App Store</a>'
+            )
+            self.assertEqual(1, changed)
+            self.assertNotIn("?ct=", normalized)
+            normalize_app_store_links.assert_no_partial_campaigns(
+                normalized,
+                Path("sample.html"),
+            )
+        with self.assertRaisesRegex(ValueError, "Invalid direct App Store URL"):
+            app_store_storefronts.normalize_app_store_campaign_url(
+                f"{expected['zh-Hant']}?ct="
+                "legacy-campaign-token-that-is-too-long",
+                provider_token="123456789",
+            )
         self.assertTrue(
             app_store_storefronts.has_trusted_promotional_rating(
                 {"rating_value": 4.0, "rating_count": 2}

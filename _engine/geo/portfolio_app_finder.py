@@ -9,13 +9,13 @@ import os
 from pathlib import Path
 import re
 import sys
-from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 sys.path.insert(0, str(ROOT / "social"))
 
 import answer_portfolio  # noqa: E402
+from app_store_storefronts import campaign_app_store_url  # noqa: E402
 from appstore_live import LOOKUP_COUNTRIES, live_app_keys  # noqa: E402
 import gen_app_catalog  # noqa: E402
 from gen_calculator import write_tools_sitemap  # noqa: E402
@@ -112,11 +112,11 @@ UI = {
         "copied": "Finder link copied.",
         "copy_failed": "Copy is unavailable. Copy the URL from the address bar.",
         "share_cancelled": "Sharing was cancelled.",
-        "sources_title": "Specifications and route labels",
+        "sources_title": "Specifications and App Store link policy",
         "sources_text": (
             "App availability is checked against Apple's public lookup service in "
-            "the US, Taiwan, Japan and UK. App links use a non-personal Apple "
-            "campaign route label without claiming campaign-attribution reports. "
+            "the US, Taiwan, Japan and UK. App links stay clean unless a real "
+            "Apple provider token enables complete campaign attribution. "
             "The machine graph uses ItemList and MobileApplication without fake offers or ratings."
         ),
         "apple_source": "Apple campaign-link guidance",
@@ -126,7 +126,7 @@ UI = {
         "webmcp_description": (
             "Filter the verified live iOS app portfolio by task and published "
             "facts. Return alphabetical matches with truthful fit text and one "
-            "direct App Store URL with a non-personal route label per result; never "
+            "clean direct App Store URL per result; never "
             "treat the order as a ranking."
         ),
         "webmcp_query_description": (
@@ -211,9 +211,9 @@ UI = {
         "copied": "已複製篩選器連結。",
         "copy_failed": "無法自動複製，請從網址列複製本頁連結。",
         "share_cancelled": "已取消分享。",
-        "sources_title": "規格與路由標記",
+        "sources_title": "規格與 App Store 連結政策",
         "sources_text": (
-            "App 供應狀態會透過 Apple 公開 lookup service 核對美國、台灣、日本與英國；App 連結使用不含個資的 Apple campaign 路由標記，但不宣稱可產生活動歸因報表。機器圖譜使用 ItemList 與 MobileApplication，不加入虛假 offers 或評分。"
+            "App 供應狀態會透過 Apple 公開 lookup service 核對美國、台灣、日本與英國；沒有真實 Apple provider token 時，App 連結保持乾淨直達，不附無效活動參數。機器圖譜使用 ItemList 與 MobileApplication，不加入虛假 offers 或評分。"
         ),
         "apple_source": "Apple campaign link 指南",
         "google_source": "Google 軟體 App 結構化資料",
@@ -221,7 +221,7 @@ UI = {
         "webmcp_source": "Chrome WebMCP imperative API",
         "webmcp_description": (
             "依任務與公開事實篩選已驗證上架的 iOS App；回傳依名稱排序的符合項目、"
-            "真實適用原因及每筆一個附不含個資路由標記的 App Store 直連，不得把順序視為排名。"
+            "真實適用原因及每筆一個乾淨的 App Store 直連，不得把順序視為排名。"
         ),
         "webmcp_query_description": (
             "以白話描述任務或功能，例如證件照、兒童數學、離線掃描、旅遊規劃或睡眠。"
@@ -396,21 +396,9 @@ def localized_app_store_url(record: dict[str, object], locale: str) -> str:
     if locale == "en":
         return _campaign_url(str(record["key"]))
     intent = localized_intent(record, locale)
-    parsed = urlsplit(str(intent["app_store_url"]))
-    query = [
-        (key, value)
-        for key, value in parse_qsl(parsed.query, keep_blank_values=True)
-        if key != "ct"
-    ]
-    query.append(("ct", finder_campaign_token(locale)))
-    return urlunsplit(
-        (
-            parsed.scheme,
-            parsed.netloc,
-            parsed.path,
-            urlencode(query),
-            "",
-        )
+    return campaign_app_store_url(
+        str(intent["app_store_url"]),
+        finder_campaign_token(locale),
     )
 
 

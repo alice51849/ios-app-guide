@@ -1,0 +1,113 @@
+#!/usr/bin/env python3
+"""Normalize public App Store links to clean or fully attributable URLs."""
+
+from __future__ import annotations
+
+import argparse
+from pathlib import Path
+import re
+
+from app_store_storefronts import (
+    normalize_app_store_campaign_url,
+    validated_app_store_url,
+)
+
+
+HERE = Path(__file__).resolve().parent
+PAGES = HERE / "pages"
+TEXT_SUFFIXES = {
+    ".html",
+    ".js",
+    ".json",
+    ".mjs",
+    ".svg",
+    ".txt",
+    ".xml",
+}
+EXCLUDED_PARTS = {".git", ".github", "_engine", "node_modules"}
+APP_STORE_URL_RE = re.compile(
+    r"https://apps\.apple\.com/(?:[a-z]{2}/)?app/id\d{9,12}"
+    r"(?:\?(?:pt|ct|mt)=[A-Za-z0-9_%+-]+"
+    r"(?:(?:&|&amp;)(?:pt|ct|mt)=[A-Za-z0-9_%+-]+)*)?"
+    r"(?![?&])",
+    flags=re.IGNORECASE,
+)
+QUERY_APP_STORE_URL_RE = re.compile(
+    r"https://apps\.apple\.com/(?:[a-z]{2}/)?app/id\d{9,12}"
+    r"\?[^\"'<>\s\\]+",
+    flags=re.IGNORECASE,
+)
+
+
+def normalize_source(source: str) -> tuple[str, int]:
+    changed = 0
+
+    def replace(match: re.Match[str]) -> str:
+        nonlocal changed
+        raw = match.group(0)
+        html_encoded = "&amp;" in raw
+        normalized = normalize_app_store_campaign_url(
+            raw.replace("&amp;", "&")
+        )
+        if html_encoded:
+            normalized = normalized.replace("&", "&amp;")
+        changed += int(normalized != raw)
+        return normalized
+
+    return APP_STORE_URL_RE.sub(replace, source), changed
+
+
+def assert_no_partial_campaigns(source: str, path: Path) -> None:
+    for match in QUERY_APP_STORE_URL_RE.finditer(source):
+        url = match.group(0).replace("&amp;", "&")
+        try:
+            validated_app_store_url(url)
+        except ValueError as error:
+            raise ValueError(
+                f"Partial or invalid App Store campaign URL in {path}: {url}"
+            ) from error
+
+
+def _public_text_files(pages: Path):
+    for path in pages.rglob("*"):
+        if (
+            path.is_file()
+            and path.suffix.lower() in TEXT_SUFFIXES
+            and not EXCLUDED_PARTS.intersection(path.relative_to(pages).parts)
+        ):
+            yield path
+
+
+def normalize_tree(pages: Path = PAGES) -> dict[str, int]:
+    scanned = 0
+    changed_files = 0
+    changed_urls = 0
+    for path in _public_text_files(pages):
+        scanned += 1
+        source = path.read_text(encoding="utf-8")
+        updated, url_changes = normalize_source(source)
+        assert_no_partial_campaigns(updated, path)
+        if updated != source:
+            path.write_text(updated, encoding="utf-8")
+            changed_files += 1
+            changed_urls += url_changes
+    return {
+        "scanned": scanned,
+        "changed_files": changed_files,
+        "changed_urls": changed_urls,
+    }
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--pages", type=Path, default=PAGES)
+    args = parser.parse_args()
+    stats = normalize_tree(args.pages)
+    print(
+        "App Store links: "
+        + ", ".join(f"{key}={value}" for key, value in stats.items())
+    )
+
+
+if __name__ == "__main__":
+    main()

@@ -1109,6 +1109,7 @@ class GeneratorTests(unittest.TestCase):
             for key in keys
         }
         store_urls = set()
+        expected_store_urls = set()
         localized_count = 0
         storefront_count = 0
         fallback_count = 0
@@ -1160,6 +1161,7 @@ class GeneratorTests(unittest.TestCase):
                         availability,
                     )
                 )
+                expected_store_urls.add(expected_store)
                 self.assertEqual(
                     urllib.parse.urlsplit(expected_store).path,
                     parsed_store.path,
@@ -1321,7 +1323,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(localized_count, storefront_count + fallback_count)
         self.assertGreater(storefront_count, 0)
         self.assertGreater(fallback_count, 0)
-        self.assertEqual(localized_count, len(store_urls))
+        self.assertEqual(expected_store_urls, store_urls)
         self.assertEqual(expected_urls, sitemap_urls)
         self.assertEqual(
             len(keys) * (len(OFFICIAL_LOCALES) + 1),
@@ -21014,10 +21016,10 @@ class GeneratorTests(unittest.TestCase):
             1,
             workflow.count("refresh_storefront_availability.py"),
         )
-        self.assertEqual(1, workflow.count("portfolio_app_catalog_api.py"))
-        self.assertEqual(1, workflow.count("publisher_intent_catalog.py"))
-        self.assertEqual(1, workflow.count("publisher_intent_visuals.py"))
-        self.assertEqual(1, workflow.count("gen_github_discovery_readmes.py"))
+        self.assertEqual(2, workflow.count("portfolio_app_catalog_api.py"))
+        self.assertEqual(2, workflow.count("publisher_intent_catalog.py"))
+        self.assertEqual(2, workflow.count("publisher_intent_visuals.py"))
+        self.assertEqual(2, workflow.count("gen_github_discovery_readmes.py"))
         self.assertLess(
             workflow.index("refresh=True"),
             workflow.index("passport_photo_print_sheet.py"),
@@ -21210,7 +21212,7 @@ class GeneratorTests(unittest.TestCase):
         workflow_positions = [refresh_block.index(item) for item in workflow_chain]
         self.assertEqual(sorted(workflow_positions), workflow_positions)
         self.assertEqual(
-            1,
+            2,
             workflow.count("gen_social_previews.py --oembed-only"),
         )
         self.assertLess(

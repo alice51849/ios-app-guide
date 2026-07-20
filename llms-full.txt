@@ -2301,6 +2301,60 @@
 - Machine-readable manifest: https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-intent-visuals.json
 - Every image links to a matching guide and direct App Store route; the collection is first-party, alphabetical, and not a ranking
 
+## Verified locale-aware App Store offers
+- Schema.org OfferCatalog index: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/index.json
+- Official Apple locales: 50/50
+  - ar-SA: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld
+  - bn-BD: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/bn-BD.jsonld
+  - ca: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld
+  - cs: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld
+  - da: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld
+  - de-DE: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/de-DE.jsonld
+  - el: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld
+  - en-AU: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-AU.jsonld
+  - en-CA: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-CA.jsonld
+  - en-GB: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-GB.jsonld
+  - en-US: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld
+  - es-ES: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld
+  - es-MX: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/es-MX.jsonld
+  - fi: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fi.jsonld
+  - fr-CA: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld
+  - fr-FR: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld
+  - gu-IN: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/gu-IN.jsonld
+  - he: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld
+  - hi: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hi.jsonld
+  - hr: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld
+  - hu: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld
+  - id: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/id.jsonld
+  - it: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/it.jsonld
+  - ja: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ja.jsonld
+  - kn-IN: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/kn-IN.jsonld
+  - ko: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld
+  - ml-IN: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld
+  - mr-IN: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/mr-IN.jsonld
+  - ms: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ms.jsonld
+  - nl-NL: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/nl-NL.jsonld
+  - no: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/no.jsonld
+  - or-IN: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/or-IN.jsonld
+  - pa-IN: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/pa-IN.jsonld
+  - pl: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/pl.jsonld
+  - pt-BR: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld
+  - pt-PT: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/pt-PT.jsonld
+  - ro: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ro.jsonld
+  - ru: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ru.jsonld
+  - sk: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/sk.jsonld
+  - sl-SI: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/sl-SI.jsonld
+  - sv: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/sv.jsonld
+  - ta-IN: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld
+  - te-IN: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/te-IN.jsonld
+  - th: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/th.jsonld
+  - tr: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/tr.jsonld
+  - uk: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld
+  - ur-PK: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld
+  - vi: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld
+  - zh-Hans: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld
+  - zh-Hant: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld
+
 ## Open educational resources
 - [Family Travel Observation Passport](https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.html)
   - Traditional Chinese: https://alice51849.github.io/ios-app-guide/zh-Hant/tools/family-travel-observation-passport.html

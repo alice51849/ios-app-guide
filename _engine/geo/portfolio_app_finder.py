@@ -23,6 +23,7 @@ from gen_feed import feed_discovery_links  # noqa: E402
 import gen_mobile_app_identity  # noqa: E402
 from official_locales import OFFICIAL_LOCALES  # noqa: E402
 import publisher_intent_catalog  # noqa: E402
+import portfolio_offer_catalog  # noqa: E402
 import queries  # noqa: E402
 from videogen.registry import (  # noqa: E402
     APPS,
@@ -1228,6 +1229,7 @@ def render_page(
 __HREFLANG__
 <link rel="search" type="application/opensearchdescription+xml" title="__TITLE__" href="__OPENSEARCH_URL__">
 <link rel="service" type="application/vnd.oai.openapi+json;version=3.1" href="__OPENAPI_URL__">
+<link rel="alternate" type="application/ld+json" href="__OFFER_CATALOG_URL__">
 __FEEDS__
 <meta property="og:type" content="website">
 <meta property="og:title" content="__TITLE__">
@@ -1422,6 +1424,9 @@ registerWebMcp().catch(error=>console.error("WebMCP tool registration failed.",e
         ),
         "__SCHEMA_URL__": data_url(".schema.json"),
         "__OPENAPI_URL__": f"{APP_CATALOG_API}/openapi.json",
+        "__OFFER_CATALOG_URL__": portfolio_offer_catalog.catalog_url(
+            "en-US" if locale == "en" else locale
+        ),
         "__DOWNLOAD_JSON__": html.escape(copy["download_json"]),
         "__DOWNLOAD_INTENTS__": html.escape(copy["download_intents"]),
         "__DOWNLOAD_SCHEMA__": html.escape(copy["download_schema"]),

@@ -96,6 +96,7 @@ import photo_storage_cleanup_planner
 import portfolio_app_catalog_api
 import portfolio_app_finder
 import portfolio_cost_calculator
+import portfolio_offer_catalog
 import publisher_intent_catalog
 import prioritize_trip_planet_resources
 import queries
@@ -17796,6 +17797,13 @@ class GeneratorTests(unittest.TestCase):
             ),
             japanese,
         )
+        self.assertIn(
+            (
+                '<link rel="alternate" type="application/ld+json" '
+                f'href="{portfolio_offer_catalog.catalog_url("ja")}">'
+            ),
+            japanese,
+        )
         self.assertIn('<html lang="ar-SA" dir="rtl">', arabic)
         self.assertIn("?q={searchTerms}", opensearch)
         self.assertNotIn("campaign-attribution reporting", japanese)
@@ -21018,6 +21026,7 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertEqual(2, workflow.count("portfolio_app_catalog_api.py"))
         self.assertEqual(2, workflow.count("publisher_intent_catalog.py"))
+        self.assertEqual(2, workflow.count("portfolio_offer_catalog.py"))
         self.assertEqual(2, workflow.count("publisher_intent_visuals.py"))
         self.assertEqual(2, workflow.count("gen_github_discovery_readmes.py"))
         self.assertLess(
@@ -21194,6 +21203,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_webmcp_install_tools.py",
             "portfolio_app_catalog_api.py",
             "publisher_intent_catalog.py",
+            "portfolio_offer_catalog.py",
             "publisher_intent_visuals.py",
             "gen_github_discovery_readmes.py",
             "gen_publisher_disclosures.py",

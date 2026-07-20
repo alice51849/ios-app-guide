@@ -46,6 +46,7 @@ from official_locales import (  # noqa: E402
     OFFICIAL_LOCALE_SET,
     require_official_locale_coverage,
 )
+import portfolio_offer_catalog  # noqa: E402
 from websub_config import WEBSUB_HUBS  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
@@ -238,6 +239,25 @@ def publisher_intent_visual_lines(*, full):
     return lines
 
 
+def portfolio_offer_catalog_lines(*, full):
+    """Expose locale-aware App Store offers after their index exists."""
+    index_path = os.path.join(PAGES, portfolio_offer_catalog.INDEX_RELATIVE)
+    if not os.path.exists(index_path):
+        return []
+    lines = [
+        "",
+        "## Verified locale-aware App Store offers",
+        f"- Schema.org OfferCatalog index: {portfolio_offer_catalog.index_url()}",
+        f"- Official Apple locales: {len(OFFICIAL_LOCALES)}/{len(OFFICIAL_LOCALES)}",
+    ]
+    if full:
+        lines.extend(
+            f"  - {locale}: {portfolio_offer_catalog.catalog_url(locale)}"
+            for locale in OFFICIAL_LOCALES
+        )
+    return lines
+
+
 def load_competitors():
     out = {}
     if os.path.exists(SOV):
@@ -377,6 +397,10 @@ def build_localized_llms(locale, live_keys, pages=None):
         (
             f"- {ui['dir_dir']}: {SITE}/{locale}/tools/"
             f"{PORTFOLIO_FINDER_TOOL}.html"
+        ),
+        (
+            "- Schema.org OfferCatalog: "
+            f"{portfolio_offer_catalog.catalog_url(locale)}"
         ),
         f"- {ui['dir_dir']} · SVG: {SITE}/{locale}/visuals/",
         "",
@@ -589,6 +613,7 @@ def build_llms(comp_map, live_keys):
     lines += portfolio_finder_lines(full=False)
     lines += portfolio_cost_calculator_lines(full=False)
     lines += publisher_intent_visual_lines(full=False)
+    lines += portfolio_offer_catalog_lines(full=False)
     static_apis = [
         descriptor
         for descriptor in API_DESCRIPTORS
@@ -1234,6 +1259,7 @@ def build_llms_full(comp_map, live_keys):
     lines += portfolio_finder_lines(full=True)
     lines += portfolio_cost_calculator_lines(full=True)
     lines += publisher_intent_visual_lines(full=True)
+    lines += portfolio_offer_catalog_lines(full=True)
     if os.path.exists(os.path.join(TOOLS, f"{FAMILY_TRAVEL_OER}.metadata.json")):
         opds2 = f"{SITE}/opds/{FAMILY_TRAVEL_OER}.json"
         opds1 = f"{SITE}/opds/{FAMILY_TRAVEL_OER}.xml"
@@ -1667,6 +1693,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_tools.xml",
             f"Sitemap: {SITE}/sitemap_data.xml",
             f"Sitemap: {SITE}/sitemap_api.xml",
+            f"Sitemap: {SITE}/{portfolio_offer_catalog.SITEMAP_NAME}",
             f"Sitemap: {SITE}/sitemap_swap.xml",
             f"Sitemap: {SITE}/sitemap_opds.xml",
             f"Sitemap: {SITE}/sitemap_ro_crate.xml",
@@ -1700,7 +1727,8 @@ def build_sitemap_index():
             PUBLISHER_INTENT_VISUALS_SITEMAP,
             "sitemap_oembed.xml", "sitemap_llms.xml",
             "sitemap_hubs.xml", "sitemap_tools.xml",
-            "sitemap_data.xml", "sitemap_api.xml", "sitemap_swap.xml"]
+            "sitemap_data.xml", "sitemap_api.xml",
+            portfolio_offer_catalog.SITEMAP_NAME, "sitemap_swap.xml"]
     maps.extend([
         "sitemap_opds.xml",
         "sitemap_ro_crate.xml",

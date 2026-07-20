@@ -421,6 +421,10 @@
 - Image sitemap: https://alice51849.github.io/ios-app-guide/sitemap_intent_visuals.xml
 - Machine-readable manifest: https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-intent-visuals.json
 
+## Verified locale-aware App Store offers
+- Schema.org OfferCatalog index: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/index.json
+- Official Apple locales: 50/50
+
 ## Open static APIs (versioned, read-only, no API key)
 - Verified iOS App Catalog API v1: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/
   - OpenAPI 3.1: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/openapi.json

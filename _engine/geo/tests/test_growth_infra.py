@@ -17463,8 +17463,20 @@ class GeneratorTests(unittest.TestCase):
             data_path = (
                 pages / "data" / "verified-ios-app-finder-catalog.json"
             )
+            english_manifest_path = (
+                pages / portfolio_app_finder.manifest_relative("en")
+            )
+            chinese_manifest_path = (
+                pages / portfolio_app_finder.manifest_relative("zh-Hant")
+            )
             english = english_path.read_text(encoding="utf-8")
             chinese = chinese_path.read_text(encoding="utf-8")
+            english_manifest = json.loads(
+                english_manifest_path.read_text(encoding="utf-8")
+            )
+            chinese_manifest = json.loads(
+                chinese_manifest_path.read_text(encoding="utf-8")
+            )
             legacy_finder = (pages / "find-app.html").read_text(
                 encoding="utf-8"
             )
@@ -17481,8 +17493,16 @@ class GeneratorTests(unittest.TestCase):
             stable_mtime = 1_700_000_000_000_000_000
             os.utime(data_path, ns=(stable_mtime, stable_mtime))
             os.utime(legacy_path, ns=(stable_mtime, stable_mtime))
+            os.utime(
+                english_manifest_path,
+                ns=(stable_mtime, stable_mtime),
+            )
+            icon_path = pages / "assets" / "app-finder-icon-512.png"
+            os.utime(icon_path, ns=(stable_mtime, stable_mtime))
             first_bytes = data_path.read_bytes()
             first_legacy_bytes = legacy_path.read_bytes()
+            first_manifest_bytes = english_manifest_path.read_bytes()
+            first_icon_bytes = icon_path.read_bytes()
             portfolio_app_finder.build(
                 pages,
                 live_keys={"wordmate", "snapport"},
@@ -17491,9 +17511,83 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(stable_mtime, data_path.stat().st_mtime_ns)
             self.assertEqual(first_legacy_bytes, legacy_path.read_bytes())
             self.assertEqual(stable_mtime, legacy_path.stat().st_mtime_ns)
+            self.assertEqual(
+                first_manifest_bytes,
+                english_manifest_path.read_bytes(),
+            )
+            self.assertEqual(
+                stable_mtime,
+                english_manifest_path.stat().st_mtime_ns,
+            )
+            self.assertEqual(first_icon_bytes, icon_path.read_bytes())
+            self.assertEqual(stable_mtime, icon_path.stat().st_mtime_ns)
+            icon_sizes = {}
+            icon_alpha = {}
+            for size in (180, 192, 512):
+                path = pages / "assets" / f"app-finder-icon-{size}.png"
+                with Image.open(path).convert("RGBA") as image:
+                    icon_sizes[size] = image.size
+                    icon_alpha[size] = image.getchannel("A").getextrema()
 
         self.assertEqual(2, data["record_count"])
         self.assertEqual(english, legacy_finder)
+        self.assertEqual(
+            {
+                180: (180, 180),
+                192: (192, 192),
+                512: (512, 512),
+            },
+            icon_sizes,
+        )
+        self.assertEqual(
+            {180: (255, 255), 192: (255, 255), 512: (255, 255)},
+            icon_alpha,
+        )
+        self.assertEqual(
+            urllib.parse.urlsplit(
+                portfolio_app_finder.canonical("en")
+            ).path,
+            english_manifest["id"],
+        )
+        self.assertEqual(english_manifest["id"], english_manifest["start_url"])
+        self.assertEqual("en", english_manifest["lang"])
+        self.assertEqual("ltr", english_manifest["dir"])
+        self.assertEqual("zh-Hant", chinese_manifest["lang"])
+        self.assertEqual("ltr", chinese_manifest["dir"])
+        self.assertEqual(
+            {
+                "title": "shared_title",
+                "text": "shared_text",
+                "url": "shared_url",
+            },
+            english_manifest["share_target"]["params"],
+        )
+        self.assertEqual(
+            english_manifest["id"],
+            english_manifest["share_target"]["action"],
+        )
+        self.assertEqual("GET", english_manifest["share_target"]["method"])
+        self.assertFalse(english_manifest["prefer_related_applications"])
+        self.assertEqual(
+            {"192x192", "512x512"},
+            {icon["sizes"] for icon in english_manifest["icons"]},
+        )
+        self.assertEqual(5, len(english_manifest["shortcuts"]))
+        self.assertEqual(
+            {
+                "kids",
+                "productivity",
+                "photo-utility",
+                "travel",
+                "sleep-sound",
+            },
+            {
+                urllib.parse.parse_qs(
+                    urllib.parse.urlsplit(shortcut["url"]).query
+                )["category"][0]
+                for shortcut in english_manifest["shortcuts"]
+            },
+        )
         self.assertEqual(
             ["Snapport", "Wordmate: Learn 44 Languages"],
             [record["name"] for record in data["apps"]],
@@ -17556,6 +17650,12 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn('id="device"', english)
         self.assertIn("navigator.share", english)
         self.assertIn("navigator.clipboard.writeText", english)
+        self.assertIn('rel="manifest"', english)
+        self.assertIn('rel="apple-touch-icon"', english)
+        self.assertIn('name="theme-color"', english)
+        self.assertIn('"shared_title","shared_text","shared_url"', english)
+        self.assertIn("const receivedShare=applyUrlFilters();", english)
+        self.assertIn("if(receivedShare)syncUrl();", english)
         self.assertIn("document.modelContext?.registerTool", english)
         self.assertIn('name:"find_verified_ios_apps"', english)
         self.assertIn(
@@ -17593,6 +17693,19 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("localStorage", english)
         self.assertNotIn("sessionStorage", english)
         self.assertNotIn("document.cookie", english)
+        self.assertNotIn("route label", english)
+        self.assertNotIn(
+            portfolio_app_finder.UI["en"]["sources_text"],
+            english,
+        )
+        self.assertNotIn(
+            portfolio_app_finder.UI["en"]["webmcp_description"],
+            english,
+        )
+        self.assertIn(
+            answer_portfolio.COPY["en"]["method"][3],
+            english,
+        )
         matches = run_finder_query(
             english,
             "I need a compliant passport photo for my baby",
@@ -17836,6 +17949,12 @@ class GeneratorTests(unittest.TestCase):
             marathi = portfolio_app_finder.render_page("mr-IN", records)
             arabic = portfolio_app_finder.render_page("ar-SA", records)
             opensearch = portfolio_app_finder.opensearch_document("ja")
+            manifests = {
+                locale: json.loads(
+                    portfolio_app_finder.manifest_document(locale)
+                )
+                for locale in ["en", *OFFICIAL_LOCALES]
+            }
 
         self.assertEqual(52, japanese.count("hreflang="))
         self.assertIn('<html lang="ja">', japanese)
@@ -17866,6 +17985,37 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn('<html lang="ar-SA" dir="rtl">', arabic)
         self.assertIn("?q={searchTerms}", opensearch)
         self.assertNotIn("campaign-attribution reporting", japanese)
+        self.assertNotIn(
+            portfolio_app_finder.UI["ja"]["sources_text"],
+            japanese,
+        )
+        self.assertNotIn(
+            portfolio_app_finder.UI["ja"]["webmcp_description"],
+            japanese,
+        )
+        self.assertNotIn(
+            portfolio_app_finder.FINDER_COPY["ja"]["method"][3],
+            japanese,
+        )
+        self.assertEqual(51, len({item["id"] for item in manifests.values()}))
+        for locale, manifest in manifests.items():
+            self.assertEqual(
+                portfolio_app_finder.FINDER_COPY[locale]["html_lang"],
+                manifest["lang"],
+            )
+            self.assertEqual(
+                "rtl"
+                if locale in portfolio_app_finder.RTL_LOCALES
+                else "ltr",
+                manifest["dir"],
+            )
+            self.assertEqual(manifest["id"], manifest["start_url"])
+            self.assertTrue(
+                manifest["share_target"]["action"].endswith(
+                    "/private-pay-once-iphone-app-finder.html"
+                )
+            )
+            self.assertEqual(5, len(manifest["shortcuts"]))
         matches = run_finder_query(
             japanese,
             "子どものパスポート用の証明写真を作りたい",
@@ -21763,6 +21913,10 @@ class GeneratorTests(unittest.TestCase):
                 self.assertIn("first-party", text)
                 self.assertNotIn("independent", text)
                 for url in (
+                    (
+                        f"{gen_llms.SITE}/tools/"
+                        f"{gen_llms.PORTFOLIO_FINDER_TOOL}.webmanifest"
+                    ),
                     publisher_intent_catalog.MCP_VSCODE_INSTALL_URL,
                     publisher_intent_catalog.MCP_CURSOR_INSTALL_URL,
                     publisher_intent_catalog.MCP_BUNDLE_URL,
@@ -21831,6 +21985,14 @@ class GeneratorTests(unittest.TestCase):
                 localized = (
                     pages / "llms" / f"{locale}.txt"
                 ).read_text(encoding="utf-8")
+                self.assertIn(
+                    (
+                        f"{gen_llms.SITE}/{locale}/tools/"
+                        f"{gen_llms.PORTFOLIO_FINDER_TOOL}.webmanifest"
+                    ),
+                    localized,
+                    locale,
+                )
                 for url in (
                     publisher_intent_catalog.MCP_VSCODE_INSTALL_URL,
                     publisher_intent_catalog.MCP_CURSOR_INSTALL_URL,
@@ -21850,6 +22012,38 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(
                 list(OFFICIAL_LOCALES),
                 [item["locale"] for item in index["locales"]],
+            )
+            self.assertEqual(
+                {
+                    "name": "Lumi Finder",
+                    "start_url": (
+                        f"{gen_llms.SITE}/tools/"
+                        f"{gen_llms.PORTFOLIO_FINDER_TOOL}.html"
+                    ),
+                    "manifest": (
+                        f"{gen_llms.SITE}/tools/"
+                        f"{gen_llms.PORTFOLIO_FINDER_TOOL}.webmanifest"
+                    ),
+                    "share_target": {
+                        "method": "GET",
+                        "parameters": [
+                            "shared_title",
+                            "shared_text",
+                            "shared_url",
+                        ],
+                    },
+                },
+                index["pwa"],
+            )
+            self.assertEqual(
+                [
+                    (
+                        f"{gen_llms.SITE}/{locale}/tools/"
+                        f"{gen_llms.PORTFOLIO_FINDER_TOOL}.webmanifest"
+                    )
+                    for locale in OFFICIAL_LOCALES
+                ],
+                [item["pwa_manifest"] for item in index["locales"]],
             )
             self.assertEqual(
                 {

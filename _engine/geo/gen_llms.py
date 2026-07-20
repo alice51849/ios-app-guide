@@ -178,6 +178,14 @@ def portfolio_finder_lines(*, full):
         f"- English finder: {SITE}/tools/{PORTFOLIO_FINDER_TOOL}.html",
         f"- Official Apple locales: {len(OFFICIAL_LOCALES)}/{len(OFFICIAL_LOCALES)}",
         *localized,
+        (
+            "- Installable Web App Manifest: "
+            f"{SITE}/tools/{PORTFOLIO_FINDER_TOOL}.webmanifest"
+        ),
+        (
+            "- Share target: the installed finder accepts shared text and URLs "
+            "as browser-side search input; the finder adds no account or analytics"
+        ),
         f"- Agent-readable JSON: {SITE}/data/{PORTFOLIO_FINDER_DATASET}.json",
         f"- JSON Schema: {SITE}/data/{PORTFOLIO_FINDER_DATASET}.schema.json",
         f"- VS Code MCP installer: {publisher_intent_catalog.MCP_VSCODE_INSTALL_URL}",
@@ -425,6 +433,10 @@ def build_localized_llms(locale, live_keys, pages=None):
             f"{PORTFOLIO_FINDER_TOOL}.html"
         ),
         (
+            f"- {ui['dir_dir']} · PWA: {SITE}/{locale}/tools/"
+            f"{PORTFOLIO_FINDER_TOOL}.webmanifest"
+        ),
+        (
             "- Schema.org OfferCatalog: "
             f"{portfolio_offer_catalog.catalog_url(locale)}"
         ),
@@ -517,10 +529,31 @@ def build_localized_llms_index(live_keys):
                     ),
                 },
             },
+            "pwa": {
+                "name": "Lumi Finder",
+                "start_url": (
+                    f"{SITE}/tools/{PORTFOLIO_FINDER_TOOL}.html"
+                ),
+                "manifest": (
+                    f"{SITE}/tools/{PORTFOLIO_FINDER_TOOL}.webmanifest"
+                ),
+                "share_target": {
+                    "method": "GET",
+                    "parameters": [
+                        "shared_title",
+                        "shared_text",
+                        "shared_url",
+                    ],
+                },
+            },
             "locales": [
                 {
                     "locale": locale,
                     "url": localized_llms_url(locale),
+                    "pwa_manifest": (
+                        f"{SITE}/{locale}/tools/"
+                        f"{PORTFOLIO_FINDER_TOOL}.webmanifest"
+                    ),
                     "app_count": len(live_keys),
                 }
                 for locale in OFFICIAL_LOCALES

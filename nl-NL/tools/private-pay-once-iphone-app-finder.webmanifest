@@ -1,0 +1,105 @@
+{
+  "id": "/ios-app-guide/nl-NL/tools/private-pay-once-iphone-app-finder.html",
+  "name": "Privé iPhone-appzoeker voor eenmalige aankopen",
+  "short_name": "Lumi Finder",
+  "description": "Filter elke geverifieerde actieve app in het portfolio van Lumi Studio-uitgever op taak, categorie, aankoopmodel, privacyfeit en Apple-apparaat of functie.",
+  "lang": "nl-NL",
+  "dir": "ltr",
+  "start_url": "/ios-app-guide/nl-NL/tools/private-pay-once-iphone-app-finder.html",
+  "scope": "/ios-app-guide/",
+  "display": "standalone",
+  "background_color": "#f8fbf9",
+  "theme_color": "#126b57",
+  "categories": [
+    "education",
+    "productivity",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Kinderen & leren",
+      "short_name": "Kinderen & leren",
+      "url": "/ios-app-guide/nl-NL/tools/private-pay-once-iphone-app-finder.html?category=kids",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Productiviteit",
+      "short_name": "Productiviteit",
+      "url": "/ios-app-guide/nl-NL/tools/private-pay-once-iphone-app-finder.html?category=productivity",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Foto & hulpmiddel",
+      "short_name": "Foto & hulpmiddel",
+      "url": "/ios-app-guide/nl-NL/tools/private-pay-once-iphone-app-finder.html?category=photo-utility",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Reizen",
+      "short_name": "Reizen",
+      "url": "/ios-app-guide/nl-NL/tools/private-pay-once-iphone-app-finder.html?category=travel",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Slaap & focus",
+      "short_name": "Slaap & focus",
+      "url": "/ios-app-guide/nl-NL/tools/private-pay-once-iphone-app-finder.html?category=sleep-sound",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/ios-app-guide/nl-NL/tools/private-pay-once-iphone-app-finder.html",
+    "method": "GET",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "shared_title",
+      "text": "shared_text",
+      "url": "shared_url"
+    }
+  },
+  "prefer_related_applications": false
+}

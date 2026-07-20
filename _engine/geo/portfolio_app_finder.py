@@ -9,6 +9,7 @@ import os
 from pathlib import Path
 import re
 import sys
+from urllib.parse import urlencode, urlsplit
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
@@ -40,10 +41,19 @@ SLUG = "private-pay-once-iphone-app-finder"
 DATA_SLUG = "verified-ios-app-finder-catalog"
 CATALOG_NAME = "Lumi Studio Publisher-Verified iOS App Catalogue"
 LICENSE_URL = "https://creativecommons.org/licenses/by/4.0/"
-CONTENT_DATE = "2026-07-19"
+CONTENT_DATE = "2026-07-20"
 APP_CATALOG_API = f"{SITE}/api/v1/ios-app-catalog"
 I18N_PATH = HERE / "portfolio_app_finder_i18n.json"
 RTL_LOCALES = frozenset({"ar-SA", "he", "ur-PK"})
+PWA_ICON_SOURCE = HERE / "assets" / "app-finder"
+PWA_ICON_FILES = (
+    "app-finder-icon.svg",
+    "app-finder-icon-180.png",
+    "app-finder-icon-192.png",
+    "app-finder-icon-512.png",
+)
+PWA_THEME_COLOR = "#126b57"
+PWA_BACKGROUND_COLOR = "#f8fbf9"
 
 UI = {
     "en": {
@@ -344,6 +354,100 @@ def opensearch_document(locale: str) -> str:
         "  <OutputEncoding>UTF-8</OutputEncoding>\n"
         "</OpenSearchDescription>\n"
     )
+
+
+def manifest_relative(locale: str) -> Path:
+    relative = Path("tools") / f"{SLUG}.webmanifest"
+    return relative if locale == "en" else Path(locale) / relative
+
+
+def manifest_url(locale: str) -> str:
+    return f"{SITE}/{manifest_relative(locale).as_posix()}"
+
+
+def _site_scope() -> str:
+    site_path = urlsplit(SITE).path.rstrip("/")
+    return f"{site_path}/" if site_path else "/"
+
+
+def _pwa_asset_url(filename: str) -> str:
+    return f"{SITE}/assets/{filename}"
+
+
+def manifest_document(locale: str) -> str:
+    answer = FINDER_COPY[locale]
+    copy = UI[locale]
+    page_path = urlsplit(canonical(locale)).path
+    icon_192 = _pwa_asset_url("app-finder-icon-192.png")
+    shortcuts = []
+    for category in (
+        "kids",
+        "productivity",
+        "photo-utility",
+        "travel",
+        "sleep-sound",
+    ):
+        name = copy["category_labels"][category]
+        shortcuts.append(
+            {
+                "name": name,
+                "short_name": name,
+                "url": f"{page_path}?{urlencode({'category': category})}",
+                "icons": [
+                    {
+                        "src": icon_192,
+                        "sizes": "192x192",
+                        "type": "image/png",
+                    }
+                ],
+            }
+        )
+    payload = {
+        "id": page_path,
+        "name": answer["title"],
+        "short_name": "Lumi Finder",
+        "description": answer["description"],
+        "lang": answer["html_lang"],
+        "dir": "rtl" if locale in RTL_LOCALES else "ltr",
+        "start_url": page_path,
+        "scope": _site_scope(),
+        "display": "standalone",
+        "background_color": PWA_BACKGROUND_COLOR,
+        "theme_color": PWA_THEME_COLOR,
+        "categories": ["education", "productivity", "utilities"],
+        "icons": [
+            {
+                "src": icon_192,
+                "sizes": "192x192",
+                "type": "image/png",
+                "purpose": "any",
+            },
+            {
+                "src": _pwa_asset_url("app-finder-icon-512.png"),
+                "sizes": "512x512",
+                "type": "image/png",
+                "purpose": "any maskable",
+            },
+        ],
+        "shortcuts": shortcuts,
+        "share_target": {
+            "action": page_path,
+            "method": "GET",
+            "enctype": "application/x-www-form-urlencoded",
+            "params": {
+                "title": "shared_title",
+                "text": "shared_text",
+                "url": "shared_url",
+            },
+        },
+        "prefer_related_applications": False,
+    }
+    return json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
+
+
+def webmcp_description(locale: str) -> str:
+    copy = UI[locale]
+    return f"{copy['index_description']} {copy['footer']}"
 
 
 def data_url(suffix: str) -> str:
@@ -963,7 +1067,7 @@ def structured_data(
                     ui["alphabetical"],
                     ui["verified"].replace("{count}", str(len(records))),
                     ui["private"],
-                    ui["webmcp_description"],
+                    webmcp_description(locale),
                 ],
             },
             {
@@ -1196,8 +1300,14 @@ def render_page(
     copy = UI[locale]
     answer = FINDER_COPY[locale]
     other_locale = "zh-Hant" if locale == "en" else "en"
+    method_items = list(answer["method"])
+    if len(method_items) > 3:
+        if locale in answer_portfolio.COPY:
+            method_items[3] = answer_portfolio.COPY[locale]["method"][3]
+        else:
+            method_items.pop(3)
     method = "".join(
-        f"<li>{html.escape(item)}</li>" for item in answer["method"]
+        f"<li>{html.escape(item)}</li>" for item in method_items
     )
     boundaries = "".join(
         f"<li>{html.escape(item)}</li>" for item in answer["boundaries"]
@@ -1223,10 +1333,18 @@ def render_page(
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="__THEME_COLOR__">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Lumi Finder">
 <title>__TITLE__</title>
 <meta name="description" content="__DESCRIPTION__">
 <link rel="canonical" href="__CANONICAL__">
 __HREFLANG__
+<link rel="manifest" href="__MANIFEST_URL__">
+<link rel="icon" type="image/svg+xml" href="__ICON_SVG_URL__">
+<link rel="icon" type="image/png" sizes="192x192" href="__ICON_192_URL__">
+<link rel="apple-touch-icon" sizes="180x180" href="__ICON_180_URL__">
 <link rel="search" type="application/opensearchdescription+xml" title="__TITLE__" href="__OPENSEARCH_URL__">
 <link rel="service" type="application/vnd.oai.openapi+json;version=3.1" href="__OPENAPI_URL__">
 <link rel="alternate" type="application/ld+json" href="__OFFER_CATALOG_URL__">
@@ -1330,11 +1448,14 @@ function update(){
 }
 function applyUrlFilters(){
   const params=new URLSearchParams(location.search);
-  fields[0].value=[...(params.get("q")||"")].slice(0,120).join("");
+  const sharedNames=["shared_title","shared_text","shared_url"];
+  const queryParts=["q",...sharedNames].map(name=>(params.get(name)||"").trim()).filter(Boolean);
+  fields[0].value=[...[...new Set(queryParts)].join(" ")].slice(0,120).join("");
   for(const [field,name] of [[fields[1],"category"],[fields[2],"purchase"],[fields[3],"privacy"],[fields[4],"device"]]){
     const value=params.get(name)||"";
     field.value=[...field.options].some(option=>option.value===value)?value:"";
   }
+  return sharedNames.some(name=>params.has(name));
 }
 function syncUrl(){
   const params=new URLSearchParams();
@@ -1384,8 +1505,9 @@ for(const field of fields)field.addEventListener("input",()=>{update();syncUrl()
 document.getElementById("clear").addEventListener("click",()=>{for(const field of fields)field.value="";update();syncUrl();fields[0].focus();});
 document.getElementById("copy").addEventListener("click",copyLink);
 document.getElementById("share").addEventListener("click",shareLink);
-applyUrlFilters();
+const receivedShare=applyUrlFilters();
 update();
+if(receivedShare)syncUrl();
 registerWebMcp().catch(error=>console.error("WebMCP tool registration failed.",error));
 </script>
 </body></html>
@@ -1395,8 +1517,13 @@ registerWebMcp().catch(error=>console.error("WebMCP tool registration failed.",e
         "__DIRECTION__": ' dir="rtl"' if locale in RTL_LOCALES else "",
         "__TITLE__": html.escape(answer["title"]),
         "__DESCRIPTION__": html.escape(answer["description"]),
+        "__THEME_COLOR__": PWA_THEME_COLOR,
         "__CANONICAL__": canonical(locale),
         "__HREFLANG__": hreflang_links(),
+        "__MANIFEST_URL__": manifest_url(locale),
+        "__ICON_SVG_URL__": _pwa_asset_url("app-finder-icon.svg"),
+        "__ICON_192_URL__": _pwa_asset_url("app-finder-icon-192.png"),
+        "__ICON_180_URL__": _pwa_asset_url("app-finder-icon-180.png"),
         "__OPENSEARCH_URL__": opensearch_url(locale),
         "__FEEDS__": feed_discovery_links(),
         "__SCHEMA__": structured_data(locale, records),
@@ -1460,8 +1587,8 @@ registerWebMcp().catch(error=>console.error("WebMCP tool registration failed.",e
         "__DOWNLOAD_OPENAPI__": html.escape(copy["download_openapi"]),
         "__COPY__": html.escape(copy["copy"]),
         "__SHARE__": html.escape(copy["share"]),
-        "__SOURCES_TITLE__": html.escape(copy["sources_title"]),
-        "__SOURCES_TEXT__": html.escape(copy["sources_text"]),
+        "__SOURCES_TITLE__": html.escape(copy["apple_source"]),
+        "__SOURCES_TEXT__": html.escape(answer["boundaries"][3]),
         "__APPLE_SOURCE_URL__": answer_portfolio.APPLE_CAMPAIGN_SOURCE,
         "__APPLE_SOURCE__": html.escape(copy["apple_source"]),
         "__GOOGLE_SOURCE_URL__": answer_portfolio.GOOGLE_SCHEMA_SOURCE,
@@ -1487,7 +1614,7 @@ registerWebMcp().catch(error=>console.error("WebMCP tool registration failed.",e
             separators=(",", ":"),
         ),
         "__WEBMCP_DESCRIPTION__": json.dumps(
-            copy["webmcp_description"],
+            webmcp_description(locale),
             ensure_ascii=False,
         ),
     }
@@ -1505,6 +1632,25 @@ def write_text_if_changed(path: Path, content: str) -> bool:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
     return True
+
+
+def write_bytes_if_changed(path: Path, content: bytes) -> bool:
+    if path.exists() and path.read_bytes() == content:
+        return False
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_bytes(content)
+    return True
+
+
+def copy_pwa_icons(pages: Path) -> None:
+    for filename in PWA_ICON_FILES:
+        source = PWA_ICON_SOURCE / filename
+        if not source.is_file():
+            raise FileNotFoundError(f"Missing App Finder PWA icon: {source}")
+        write_bytes_if_changed(
+            pages / "assets" / filename,
+            source.read_bytes(),
+        )
 
 
 def _update_one_index(path: Path, locale: str) -> bool:
@@ -1567,6 +1713,7 @@ def build(
         page_records = records
         page_locales = ["en", "zh-Hant"]
 
+    copy_pwa_icons(pages)
     outputs = []
     for locale in page_locales:
         relative = Path("tools") / f"{SLUG}.html"
@@ -1580,6 +1727,10 @@ def build(
         write_text_if_changed(
             pages / opensearch_relative(locale),
             opensearch_document(locale),
+        )
+        write_text_if_changed(
+            pages / manifest_relative(locale),
+            manifest_document(locale),
         )
         if locale == "en":
             write_text_if_changed(pages / "find-app.html", page)

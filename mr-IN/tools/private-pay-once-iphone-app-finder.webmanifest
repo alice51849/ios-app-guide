@@ -1,0 +1,105 @@
+{
+  "id": "/ios-app-guide/mr-IN/tools/private-pay-once-iphone-app-finder.html",
+  "name": "खाजगी आणि एकदाच पैसे देऊन iPhone अ‍ॅप शोधक",
+  "short_name": "Lumi Finder",
+  "description": "Lumi Studio प्रकाशक पोर्टफोलिओमधील प्रत्येक प्रमाणित सक्रिय अनुप्रयोग कार्य, श्रेणी, खरेदी प्रकार, गोपनीयता माहिती आणि Apple उपकरण किंवा वैशिष्ट्यानुसार फिल्टर करा.",
+  "lang": "mr-IN",
+  "dir": "ltr",
+  "start_url": "/ios-app-guide/mr-IN/tools/private-pay-once-iphone-app-finder.html",
+  "scope": "/ios-app-guide/",
+  "display": "standalone",
+  "background_color": "#f8fbf9",
+  "theme_color": "#126b57",
+  "categories": [
+    "education",
+    "productivity",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "मुलं आणि शिक्षण",
+      "short_name": "मुलं आणि शिक्षण",
+      "url": "/ios-app-guide/mr-IN/tools/private-pay-once-iphone-app-finder.html?category=kids",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "उत्पादकता",
+      "short_name": "उत्पादकता",
+      "url": "/ios-app-guide/mr-IN/tools/private-pay-once-iphone-app-finder.html?category=productivity",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "फोटो आणि उपयुक्तता",
+      "short_name": "फोटो आणि उपयुक्तता",
+      "url": "/ios-app-guide/mr-IN/tools/private-pay-once-iphone-app-finder.html?category=photo-utility",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "प्रवास",
+      "short_name": "प्रवास",
+      "url": "/ios-app-guide/mr-IN/tools/private-pay-once-iphone-app-finder.html?category=travel",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "झोप आणि लक्ष",
+      "short_name": "झोप आणि लक्ष",
+      "url": "/ios-app-guide/mr-IN/tools/private-pay-once-iphone-app-finder.html?category=sleep-sound",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/ios-app-guide/mr-IN/tools/private-pay-once-iphone-app-finder.html",
+    "method": "GET",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "shared_title",
+      "text": "shared_text",
+      "url": "shared_url"
+    }
+  },
+  "prefer_related_applications": false
+}

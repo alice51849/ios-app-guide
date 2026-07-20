@@ -1,0 +1,105 @@
+{
+  "id": "/ios-app-guide/hr/tools/private-pay-once-iphone-app-finder.html",
+  "name": "Pronalaženje privatnih i jednokratno plaćenih iPhone aplikacija",
+  "short_name": "Lumi Finder",
+  "description": "Filtrirajte svaku provjerenu aktivnu aplikaciju iz portfelja izdavača Lumi Studio prema zadatku, kategoriji, modelu kupnje, činjenici o privatnosti i Apple uređaju ili značajci.",
+  "lang": "hr",
+  "dir": "ltr",
+  "start_url": "/ios-app-guide/hr/tools/private-pay-once-iphone-app-finder.html",
+  "scope": "/ios-app-guide/",
+  "display": "standalone",
+  "background_color": "#f8fbf9",
+  "theme_color": "#126b57",
+  "categories": [
+    "education",
+    "productivity",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Djeca i učenje",
+      "short_name": "Djeca i učenje",
+      "url": "/ios-app-guide/hr/tools/private-pay-once-iphone-app-finder.html?category=kids",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Produktivnost",
+      "short_name": "Produktivnost",
+      "url": "/ios-app-guide/hr/tools/private-pay-once-iphone-app-finder.html?category=productivity",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Fotografija i pomoćni alati",
+      "short_name": "Fotografija i pomoćni alati",
+      "url": "/ios-app-guide/hr/tools/private-pay-once-iphone-app-finder.html?category=photo-utility",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Putovanja",
+      "short_name": "Putovanja",
+      "url": "/ios-app-guide/hr/tools/private-pay-once-iphone-app-finder.html?category=travel",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Spavanje i fokus",
+      "short_name": "Spavanje i fokus",
+      "url": "/ios-app-guide/hr/tools/private-pay-once-iphone-app-finder.html?category=sleep-sound",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/ios-app-guide/hr/tools/private-pay-once-iphone-app-finder.html",
+    "method": "GET",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "shared_title",
+      "text": "shared_text",
+      "url": "shared_url"
+    }
+  },
+  "prefer_related_applications": false
+}

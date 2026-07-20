@@ -1,0 +1,105 @@
+{
+  "id": "/ios-app-guide/pl/tools/private-pay-once-iphone-app-finder.html",
+  "name": "Wyszukiwarka prywatnych aplikacji na iPhone z jednorazową opłatą",
+  "short_name": "Lumi Finder",
+  "description": "Przefiltruj każdą zweryfikowaną działającą aplikację z portfolio wydawcy Lumi Studio według zadania, kategorii, modelu zakupu, informacji o prywatności oraz urządzenia lub funkcji Apple.",
+  "lang": "pl",
+  "dir": "ltr",
+  "start_url": "/ios-app-guide/pl/tools/private-pay-once-iphone-app-finder.html",
+  "scope": "/ios-app-guide/",
+  "display": "standalone",
+  "background_color": "#f8fbf9",
+  "theme_color": "#126b57",
+  "categories": [
+    "education",
+    "productivity",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Dzieci i nauka",
+      "short_name": "Dzieci i nauka",
+      "url": "/ios-app-guide/pl/tools/private-pay-once-iphone-app-finder.html?category=kids",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Produktywność",
+      "short_name": "Produktywność",
+      "url": "/ios-app-guide/pl/tools/private-pay-once-iphone-app-finder.html?category=productivity",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Zdjęcia i narzędzia",
+      "short_name": "Zdjęcia i narzędzia",
+      "url": "/ios-app-guide/pl/tools/private-pay-once-iphone-app-finder.html?category=photo-utility",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Podróże",
+      "short_name": "Podróże",
+      "url": "/ios-app-guide/pl/tools/private-pay-once-iphone-app-finder.html?category=travel",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Sen i koncentracja",
+      "short_name": "Sen i koncentracja",
+      "url": "/ios-app-guide/pl/tools/private-pay-once-iphone-app-finder.html?category=sleep-sound",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/ios-app-guide/pl/tools/private-pay-once-iphone-app-finder.html",
+    "method": "GET",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "shared_title",
+      "text": "shared_text",
+      "url": "shared_url"
+    }
+  },
+  "prefer_related_applications": false
+}

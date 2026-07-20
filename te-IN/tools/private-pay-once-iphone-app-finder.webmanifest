@@ -1,0 +1,105 @@
+{
+  "id": "/ios-app-guide/te-IN/tools/private-pay-once-iphone-app-finder.html",
+  "name": "గోప్యత & ఒక్కసారి చెల్లించే iPhone యాప్ ఫైండర్",
+  "short_name": "Lumi Finder",
+  "description": "Lumi Studio ప్రచురణకర్త పోర్ట్‌ఫోలియోలోని ప్రతి నిర్ధారిత ప్రత్యక్ష యాప్‌ను పని, వర్గం, కొనుగోలు విధానం, గోప్యత వివరాలు మరియు Apple పరికరం లేదా లక్షణం ద్వారా ఫిల్టర్ చేయండి.",
+  "lang": "te-IN",
+  "dir": "ltr",
+  "start_url": "/ios-app-guide/te-IN/tools/private-pay-once-iphone-app-finder.html",
+  "scope": "/ios-app-guide/",
+  "display": "standalone",
+  "background_color": "#f8fbf9",
+  "theme_color": "#126b57",
+  "categories": [
+    "education",
+    "productivity",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "పిల్లలు & అభ్యాసం",
+      "short_name": "పిల్లలు & అభ్యాసం",
+      "url": "/ios-app-guide/te-IN/tools/private-pay-once-iphone-app-finder.html?category=kids",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "ఉత్పాదకత",
+      "short_name": "ఉత్పాదకత",
+      "url": "/ios-app-guide/te-IN/tools/private-pay-once-iphone-app-finder.html?category=productivity",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "ఫోటో & ఉపకరణం",
+      "short_name": "ఫోటో & ఉపకరణం",
+      "url": "/ios-app-guide/te-IN/tools/private-pay-once-iphone-app-finder.html?category=photo-utility",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "ప్రయాణం",
+      "short_name": "ప్రయాణం",
+      "url": "/ios-app-guide/te-IN/tools/private-pay-once-iphone-app-finder.html?category=travel",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "నిద్ర & దృష్టి",
+      "short_name": "నిద్ర & దృష్టి",
+      "url": "/ios-app-guide/te-IN/tools/private-pay-once-iphone-app-finder.html?category=sleep-sound",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/ios-app-guide/te-IN/tools/private-pay-once-iphone-app-finder.html",
+    "method": "GET",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "shared_title",
+      "text": "shared_text",
+      "url": "shared_url"
+    }
+  },
+  "prefer_related_applications": false
+}

@@ -15,7 +15,7 @@ from official_locales import OFFICIAL_LOCALE_SET
 STATE_FILE = ".appstore_storefront_state.json"
 PRICE_RE = re.compile(r"(?:0|[1-9][0-9]*)(?:\.[0-9]+)?")
 CURRENCY_RE = re.compile(r"[A-Z]{3}")
-CAMPAIGN_TOKEN_RE = re.compile(r"[A-Za-z0-9_]{1,30}")
+CAMPAIGN_TOKEN_RE = re.compile(r"[A-Za-z0-9_/]{1,30}")
 PROVIDER_TOKEN_RE = re.compile(r"[0-9]{1,20}")
 MEDIA_TYPE = "8"
 PROVIDER_TOKEN_ENV = "APP_STORE_PROVIDER_TOKEN"

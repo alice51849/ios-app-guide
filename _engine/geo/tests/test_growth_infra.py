@@ -21873,6 +21873,17 @@ class GeneratorTests(unittest.TestCase):
                 urllib.parse.urlsplit(replaced_campaign).query
             ),
         )
+        slashed_campaign = app_store_storefronts.campaign_app_store_url(
+            expected["zh-Hant"],
+            "iag/api_zh_hant",
+            provider_token="123456789",
+        )
+        self.assertEqual(
+            ["iag/api_zh_hant"],
+            urllib.parse.parse_qs(
+                urllib.parse.urlsplit(slashed_campaign).query
+            )["ct"],
+        )
         with mock.patch.dict(
             os.environ,
             {app_store_storefronts.PROVIDER_TOKEN_ENV: ""},
@@ -21932,6 +21943,57 @@ class GeneratorTests(unittest.TestCase):
                 app_store_storefronts.localized_app_store_url(
                     invalid, "en-US"
                 )
+
+    def test_app_store_normalizer_covers_social_payloads_and_legacy_slugs(self):
+        with tempfile.TemporaryDirectory() as directory, mock.patch.dict(
+            os.environ,
+            {app_store_storefronts.PROVIDER_TOKEN_ENV: ""},
+        ):
+            pages = Path(directory)
+            social = pages / ".github" / "scripts" / "telegram_posts.json"
+            social.parent.mkdir(parents=True)
+            social.write_text(
+                '{"url":"https://apps.apple.com/app/id6773017109'
+                '?ct=iag_tg_seasonal"}',
+                encoding="utf-8",
+            )
+            passport = pages / "tools" / "passport-photo" / "index.html"
+            passport.parent.mkdir(parents=True)
+            passport.write_text(
+                '<a href="https://apps.apple.com/us/app/'
+                'snapport-passport-id-photos/id6780575828'
+                '?ct=web-passport&mt=8">App Store</a>',
+                encoding="utf-8",
+            )
+            excluded = pages / "_engine" / "fixture.json"
+            excluded.parent.mkdir()
+            excluded.write_text(
+                '{"url":"https://apps.apple.com/app/id6773017109'
+                '?ct=fixture"}',
+                encoding="utf-8",
+            )
+
+            stats = normalize_app_store_links.normalize_tree(pages)
+
+            self.assertEqual(
+                {
+                    "scanned": 2,
+                    "changed_files": 2,
+                    "changed_urls": 2,
+                },
+                stats,
+            )
+            self.assertIn(
+                "https://apps.apple.com/app/id6773017109",
+                social.read_text(encoding="utf-8"),
+            )
+            self.assertNotIn("?ct=", social.read_text(encoding="utf-8"))
+            self.assertIn(
+                "https://apps.apple.com/us/app/id6780575828",
+                passport.read_text(encoding="utf-8"),
+            )
+            self.assertNotIn("?ct=", passport.read_text(encoding="utf-8"))
+            self.assertIn("?ct=fixture", excluded.read_text(encoding="utf-8"))
 
     def test_storefront_snapshot_refreshes_all_mapped_countries(self):
         app_id = APPSTORE["lumibopomofo"]

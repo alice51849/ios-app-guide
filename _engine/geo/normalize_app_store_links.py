@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 import re
+import urllib.parse
 
 from app_store_storefronts import (
     normalize_app_store_campaign_url,
@@ -16,24 +17,31 @@ from app_store_storefronts import (
 HERE = Path(__file__).resolve().parent
 PAGES = HERE / "pages"
 TEXT_SUFFIXES = {
+    ".csv",
     ".html",
     ".js",
     ".json",
+    ".jsonl",
+    ".jsonld",
+    ".md",
     ".mjs",
     ".svg",
     ".txt",
     ".xml",
 }
-EXCLUDED_PARTS = {".git", ".github", "_engine", "node_modules"}
+EXCLUDED_PARTS = {".git", "_engine", "node_modules"}
 APP_STORE_URL_RE = re.compile(
-    r"https://apps\.apple\.com/(?:[a-z]{2}/)?app/id\d{9,12}"
-    r"(?:\?(?:pt|ct|mt)=[A-Za-z0-9_%+-]+"
-    r"(?:(?:&|&amp;)(?:pt|ct|mt)=[A-Za-z0-9_%+-]+)*)?"
+    r"https://apps\.apple\.com/"
+    r"(?:(?P<country>[a-z]{2})/)?app/"
+    r"(?:[-A-Za-z0-9._~%]+/)?id(?P<app_id>\d{9,12})"
+    r"(?:\?(?:pt|ct|mt)=[A-Za-z0-9_/%+.-]+"
+    r"(?:(?:&|&amp;)(?:pt|ct|mt)=[A-Za-z0-9_/%+.-]+)*)?"
     r"(?![?&])",
     flags=re.IGNORECASE,
 )
 QUERY_APP_STORE_URL_RE = re.compile(
-    r"https://apps\.apple\.com/(?:[a-z]{2}/)?app/id\d{9,12}"
+    r"https://apps\.apple\.com/(?:[a-z]{2}/)?app/"
+    r"(?:[-A-Za-z0-9._~%]+/)?id\d{9,12}"
     r"\?[^\"'<>\s\\]+",
     flags=re.IGNORECASE,
 )
@@ -46,9 +54,18 @@ def normalize_source(source: str) -> tuple[str, int]:
         nonlocal changed
         raw = match.group(0)
         html_encoded = "&amp;" in raw
-        normalized = normalize_app_store_campaign_url(
-            raw.replace("&amp;", "&")
+        decoded = raw.replace("&amp;", "&")
+        parsed = urllib.parse.urlsplit(decoded)
+        country = match.group("country")
+        canonical_path = (
+            f"/{country}/app/id{match.group('app_id')}"
+            if country
+            else f"/app/id{match.group('app_id')}"
         )
+        canonical = urllib.parse.urlunsplit(
+            parsed._replace(path=canonical_path, fragment="")
+        )
+        normalized = normalize_app_store_campaign_url(canonical)
         if html_encoded:
             normalized = normalized.replace("&", "&amp;")
         changed += int(normalized != raw)

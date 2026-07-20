@@ -180,7 +180,7 @@
     "@id": "https://alice51849.github.io/ios-app-guide/#organization"
   },
   "datePublished": "2026-07-19",
-  "dateModified": "2026-07-19",
+  "dateModified": "2026-07-20",
   "version": "1.0.0",
   "sdVersion": "1.0.0",
   "isLiveDataset": false,
@@ -261,9 +261,9 @@
       "name": "lumi-studio-publisher-search-intent-catalog.csv",
       "description": "Canonical UTF-8 table loaded by the publisher_intents RecordSet.",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv",
-      "contentSize": "1703383 B",
+      "contentSize": "1680087 B",
       "encodingFormat": "text/csv",
-      "sha256": "1af60b38c340d6162222770f1bac0c1484387dddc798a62eb01356fa728226bb"
+      "sha256": "1034bd7841828857511801d5318b0d5408dec39262ffc13dfee9376b850ce1c1"
     },
     {
       "@type": "cr:FileObject",
@@ -271,9 +271,9 @@
       "name": "lumi-studio-publisher-search-intent-catalog.jsonl",
       "description": "The same 1,400 records serialized as newline-delimited JSON.",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl",
-      "contentSize": "2269895 B",
+      "contentSize": "2246599 B",
       "encodingFormat": "application/x-ndjson",
-      "sha256": "4231748d83b87873099abd0a614afbfe7d1deec079f72cb281b0ef48f04b9382"
+      "sha256": "287993d7e6ea1fe68f3c574ed25120607e754adedc67d2fc33a739b9e3bcff2d"
     },
     {
       "@type": "cr:FileObject",
@@ -281,9 +281,9 @@
       "name": "lumi-studio-publisher-search-intent-catalog.json",
       "description": "Dataset envelope with provenance, coverage and all 1,400 records.",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-      "contentSize": "2498844 B",
+      "contentSize": "2475548 B",
       "encodingFormat": "application/json",
-      "sha256": "1c225c873f6a8d155f87fae238725e0d33c25fa9b7f8ee736e20e61cc624fb57"
+      "sha256": "488b78882301b6a670eff12cba9e907758b44b1d39d68c74de59db69a085d996"
     }
   ],
   "recordSet": [
@@ -310,7 +310,7 @@
           "publisher_intents/source_persona_query": "best toeic prep app offline study plan for iphone",
           "publisher_intents/canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
           "publisher_intents/canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
-          "publisher_intents/app_store_url": "https://apps.apple.com/sa/app/id6784974530?ct=iag_data_ar_sa",
+          "publisher_intents/app_store_url": "https://apps.apple.com/sa/app/id6784974530",
           "publisher_intents/publisher_disclosure": "دليل من تأليف الناشر من لومي ستوديو، مطور التطبيق. أسماء التطبيقات علامات تجارية لأصحابها وتُستخدم فقط للتعريف. للتحقق من الوثائق، الصحة، المدرسة، وقرارات الإنتاجية، تحقق من المتطلبات الرسمية عند الاقتضاء.",
           "publisher_intents/query_origin": "publisher_authored_editorially_localized",
           "publisher_intents/measured_search_volume": false,
@@ -330,7 +330,7 @@
           "publisher_intents/source_persona_query": "best resume builder app for career changers 2026",
           "publisher_intents/canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-resume-builder-app-for-career-changers-2026.html",
           "publisher_intents/canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
-          "publisher_intents/app_store_url": "https://apps.apple.com/sa/app/id6781337213?ct=iag_data_ar_sa",
+          "publisher_intents/app_store_url": "https://apps.apple.com/sa/app/id6781337213",
           "publisher_intents/publisher_disclosure": "دليل من تأليف الناشر من لومي ستوديو، مطور التطبيق. أسماء التطبيقات علامات تجارية لأصحابها وتُستخدم فقط للتعريف. للتحقق من الوثائق، الصحة، المدرسة، وقرارات الإنتاجية، تحقق من المتطلبات الرسمية عند الاقتضاء.",
           "publisher_intents/query_origin": "publisher_authored_editorially_localized",
           "publisher_intents/measured_search_volume": false,
@@ -530,7 +530,7 @@
           "@type": "cr:Field",
           "@id": "publisher_intents/app_store_url",
           "name": "app_store_url",
-          "description": "Verified locale-aware direct App Store URL with campaign attribution.",
+          "description": "Verified locale-aware direct App Store URL.",
           "dataType": "sc:URL",
           "source": {
             "fileObject": {

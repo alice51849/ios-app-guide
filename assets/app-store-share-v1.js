@@ -14,6 +14,7 @@
       /^\/(?:[a-z]{2}\/)?app\/id([0-9]{9,12})$/i
     );
     const parameters = [...store.searchParams.entries()];
+    const campaign = Object.fromEntries(parameters);
     if (
       store.protocol !== "https:" ||
       store.hostname !== "apps.apple.com" ||
@@ -23,17 +24,16 @@
       !path ||
       path[1] !== appId ||
       store.hash ||
-      parameters.some(([key, value]) =>
-        key === "ct"
-          ? !/^[A-Za-z0-9_]{1,30}$/.test(value)
-          : key === "pt"
-          ? !/^[A-Za-z0-9]+$/.test(value)
-          : true
-      ) ||
       parameters.some(
         ([key], index) =>
           parameters.findIndex(([candidate]) => candidate === key) !== index
-      )
+      ) ||
+      (parameters.length !== 0 &&
+        (parameters.length !== 3 ||
+          parameters.map(([key]) => key).join(",") !== "pt,ct,mt" ||
+          !/^[0-9]{1,20}$/.test(campaign.pt || "") ||
+          !/^[A-Za-z0-9_]{1,30}$/.test(campaign.ct || "") ||
+          campaign.mt !== "8"))
     ) throw new TypeError("Invalid direct App Store share URL.");
   } catch (error) {
     console.error("App Store share URL is invalid.", error);

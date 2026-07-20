@@ -12,6 +12,10 @@ apps: 28
 - App 目錄 · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder.mcpb
 - App 目錄 · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.0.3
 - App 目錄 · MCP v1.0.3 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/SHA256SUMS
+- App 目錄 · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
+- App 目錄 · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
+- App 目錄 · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
+- App 目錄 · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
 
 - [Aim990：TOEIC考試助手](https://alice51849.github.io/ios-app-guide/zh-Hant/aim990.html) — 30天提升你的聽讀能力
   - 為你的TOEIC考試做好準備！Aim990提供全面的學習計劃，助你邁向990高分！

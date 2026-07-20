@@ -12,6 +12,10 @@ apps: 28
 - Alkalmazáskatalógus · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder.mcpb
 - Alkalmazáskatalógus · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.0.3
 - Alkalmazáskatalógus · MCP v1.0.3 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/SHA256SUMS
+- Alkalmazáskatalógus · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
+- Alkalmazáskatalógus · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
+- Alkalmazáskatalógus · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
+- Alkalmazáskatalógus · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
 
 - [Aim990 - TOEIC Felkészítő](https://alice51849.github.io/ios-app-guide/hu/aim990.html) — Maximális eredmény 30 nap alatt
   - Felkészültél a TOEIC-ra? Az Aim990 segít 30 nap alatt a legjobb eredmény elérésében, hirdetések nélkül!

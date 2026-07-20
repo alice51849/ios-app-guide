@@ -39,6 +39,8 @@ def _sync_mcp_distribution() -> None:
     global MCP_CHECKSUMS_URL
     global MCP_VSCODE_INSTALL_URL
     global MCP_CURSOR_INSTALL_URL
+    global MCP_CLIENT_CONFIG_URL
+    global MCP_INSTALL_COMMANDS
 
     MCP_REPOSITORY_URL = catalog.MCP_REPOSITORY_URL
     MCP_REGISTRY_URL = catalog.MCP_REGISTRY_URL
@@ -48,6 +50,8 @@ def _sync_mcp_distribution() -> None:
     MCP_CHECKSUMS_URL = catalog.MCP_CHECKSUMS_URL
     MCP_VSCODE_INSTALL_URL = catalog.MCP_VSCODE_INSTALL_URL
     MCP_CURSOR_INSTALL_URL = catalog.MCP_CURSOR_INSTALL_URL
+    MCP_CLIENT_CONFIG_URL = catalog.MCP_CLIENT_CONFIG_URL
+    MCP_INSTALL_COMMANDS = dict(catalog.MCP_INSTALL_COMMANDS)
 
 
 _sync_mcp_distribution()
@@ -321,10 +325,34 @@ def _render_readme(
                 _markdown_link("Cursor", MCP_CURSOR_INSTALL_URL),
                 _markdown_link("Claude Desktop (MCPB)", MCP_BUNDLE_URL),
                 _markdown_link("MCP Registry", MCP_REGISTRY_URL),
+                _markdown_link("MCP client config", MCP_CLIENT_CONFIG_URL),
                 _markdown_link("SHA256SUMS", MCP_CHECKSUMS_URL),
                 _markdown_link("GitHub", MCP_REPOSITORY_URL),
             )
         ),
+        "",
+        "<details>",
+        "<summary>Claude Code · Codex · Gemini CLI</summary>",
+        "",
+        "**Claude Code**",
+        "",
+        "```sh",
+        MCP_INSTALL_COMMANDS["claude_code"],
+        "```",
+        "",
+        "**Codex**",
+        "",
+        "```sh",
+        MCP_INSTALL_COMMANDS["codex"],
+        "```",
+        "",
+        "**Gemini CLI**",
+        "",
+        "```sh",
+        MCP_INSTALL_COMMANDS["gemini_cli"],
+        "```",
+        "",
+        "</details>",
         "",
         f"## {_markdown_text(ui['Methodology'])}",
         "",

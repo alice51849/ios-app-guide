@@ -12,6 +12,10 @@ apps: 28
 - Direktori aplikasi · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder.mcpb
 - Direktori aplikasi · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.0.3
 - Direktori aplikasi · MCP v1.0.3 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/SHA256SUMS
+- Direktori aplikasi · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
+- Direktori aplikasi · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
+- Direktori aplikasi · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
+- Direktori aplikasi · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
 
 - [Aim990: Persediaan TOEIC](https://alice51849.github.io/ios-app-guide/ms/aim990.html) — Capai 990 dengan Aim990!
   - Sediakan diri anda untuk mencapai skor 990 dalam TOEIC dengan Aim990! Pelajari cara yang berkesan tanpa iklan dan tanpa gangguan.

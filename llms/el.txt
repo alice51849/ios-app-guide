@@ -12,6 +12,10 @@ apps: 28
 - Κατάλογος εφαρμογών · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder.mcpb
 - Κατάλογος εφαρμογών · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.0.3
 - Κατάλογος εφαρμογών · MCP v1.0.3 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/SHA256SUMS
+- Κατάλογος εφαρμογών · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
+- Κατάλογος εφαρμογών · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
+- Κατάλογος εφαρμογών · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
+- Κατάλογος εφαρμογών · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
 
 - [Aim990 - TOEIC Προετοιμασία](https://alice51849.github.io/ios-app-guide/el/aim990.html) — Προετοιμαστείτε για 990!
   - Ετοιμαστείτε για το TOEIC με το Aim990! 30 ημέρες μελέτης για να φτάσετε στην κορυφή, χωρίς διαφημίσεις και χωρίς λογαριασμούς.

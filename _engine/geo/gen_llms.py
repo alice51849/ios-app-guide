@@ -189,6 +189,22 @@ def portfolio_finder_lines(*, full):
             "- Verified MCP distribution manifest: "
             f"{publisher_intent_catalog.MCP_DISTRIBUTION_STATE_URL}"
         ),
+        (
+            "- MCP client config: "
+            f"{publisher_intent_catalog.MCP_CLIENT_CONFIG_URL}"
+        ),
+        (
+            "- Claude Code: "
+            f"{publisher_intent_catalog.MCP_INSTALL_COMMANDS['claude_code']}"
+        ),
+        (
+            "- Codex: "
+            f"{publisher_intent_catalog.MCP_INSTALL_COMMANDS['codex']}"
+        ),
+        (
+            "- Gemini CLI: "
+            f"{publisher_intent_catalog.MCP_INSTALL_COMMANDS['gemini_cli']}"
+        ),
     ]
     if full:
         lines.append(
@@ -434,6 +450,22 @@ def build_localized_llms(locale, live_keys, pages=None):
             f"v{publisher_intent_catalog.MCP_VERSION} · SHA256SUMS: "
             f"{publisher_intent_catalog.MCP_CHECKSUMS_URL}"
         ),
+        (
+            f"- {ui['dir_dir']} · MCP client config: "
+            f"{publisher_intent_catalog.MCP_CLIENT_CONFIG_URL}"
+        ),
+        (
+            f"- {ui['dir_dir']} · Claude Code: "
+            f"{publisher_intent_catalog.MCP_INSTALL_COMMANDS['claude_code']}"
+        ),
+        (
+            f"- {ui['dir_dir']} · Codex: "
+            f"{publisher_intent_catalog.MCP_INSTALL_COMMANDS['codex']}"
+        ),
+        (
+            f"- {ui['dir_dir']} · Gemini CLI: "
+            f"{publisher_intent_catalog.MCP_INSTALL_COMMANDS['gemini_cli']}"
+        ),
         "",
     ]
     for record in records:
@@ -466,7 +498,13 @@ def build_localized_llms_index(live_keys):
                 "distribution": (
                     publisher_intent_catalog.MCP_DISTRIBUTION_STATE_URL
                 ),
+                "client_config": (
+                    publisher_intent_catalog.MCP_CLIENT_CONFIG_URL
+                ),
                 "checksums": publisher_intent_catalog.MCP_CHECKSUMS_URL,
+                "commands": dict(
+                    publisher_intent_catalog.MCP_INSTALL_COMMANDS
+                ),
                 "installers": {
                     "vscode": (
                         publisher_intent_catalog.MCP_VSCODE_INSTALL_URL

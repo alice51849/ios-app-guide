@@ -8,6 +8,7 @@ import json
 import os
 from pathlib import Path
 import re
+import shlex
 import sys
 import unittest
 from unittest import mock
@@ -101,6 +102,50 @@ class GitHubDiscoveryContractTests(unittest.TestCase):
                     validate=True,
                 )
             ),
+        )
+        self.assertEqual(
+            [
+                "claude",
+                "mcp",
+                "add",
+                "--transport",
+                "stdio",
+                "--scope",
+                "user",
+                "lumi-app-finder",
+                "--",
+                "npx",
+                "-y",
+                discovery.MCP_NPX_URL,
+            ],
+            shlex.split(discovery.MCP_INSTALL_COMMANDS["claude_code"]),
+        )
+        self.assertEqual(
+            [
+                "codex",
+                "mcp",
+                "add",
+                "lumi-app-finder",
+                "--",
+                "npx",
+                "-y",
+                discovery.MCP_NPX_URL,
+            ],
+            shlex.split(discovery.MCP_INSTALL_COMMANDS["codex"]),
+        )
+        self.assertEqual(
+            [
+                "gemini",
+                "mcp",
+                "add",
+                "--scope",
+                "user",
+                "lumi-app-finder",
+                "npx",
+                "-y",
+                discovery.MCP_NPX_URL,
+            ],
+            shlex.split(discovery.MCP_INSTALL_COMMANDS["gemini_cli"]),
         )
 
     def test_campaign_tokens_are_unique_and_app_store_safe(self) -> None:
@@ -221,11 +266,20 @@ class GitHubDiscoveryOutputTests(unittest.TestCase):
                 self.assertEqual(
                     1,
                     source.count(
+                        "[MCP client config]"
+                        f"({discovery.MCP_CLIENT_CONFIG_URL})"
+                    ),
+                )
+                self.assertEqual(
+                    1,
+                    source.count(
                         "[SHA256SUMS]"
                         f"({discovery.MCP_CHECKSUMS_URL})"
                     ),
                 )
                 self.assertIn(f"MCP v{discovery.MCP_VERSION}", source)
+                for command in discovery.MCP_INSTALL_COMMANDS.values():
+                    self.assertEqual(1, source.count(command))
                 self.assertEqual(
                     1,
                     source.count(

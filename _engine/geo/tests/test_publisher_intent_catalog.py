@@ -392,6 +392,20 @@ class PublisherIntentOutputTests(unittest.TestCase):
         self.assertEqual(catalog.MCP_NPX_URL, state["npx_url"])
         self.assertNotIn("/latest/", state["mcpb_url"])
         self.assertNotIn("/latest/", state["npx_url"])
+        client_config = json.loads(
+            (
+                self.data_dir
+                / catalog.MCP_CLIENT_CONFIG_FILENAME
+            ).read_text(encoding="utf-8")
+        )
+        self.assertEqual(
+            catalog.mcp_client_config_payload(),
+            client_config,
+        )
+        self.assertEqual(
+            ["-y", catalog.MCP_NPX_URL],
+            client_config["mcpServers"]["lumi-app-finder"]["args"],
+        )
 
     def test_json_jsonl_and_csv_have_the_same_records(self) -> None:
         jsonl_records = [
@@ -688,6 +702,12 @@ class PublisherIntentOutputTests(unittest.TestCase):
                 f'href="{catalog.MCP_CHECKSUMS_URL}"',
                 source,
             )
+            self.assertIn(
+                f'href="{catalog.MCP_CLIENT_CONFIG_URL}"',
+                source,
+            )
+            for command in catalog.MCP_INSTALL_COMMANDS.values():
+                self.assertIn(html.escape(command), source)
             self.assertEqual(4, len(schema["distribution"]))
             self.assertEqual(
                 {

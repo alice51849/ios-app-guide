@@ -12,6 +12,10 @@ apps: 28
 - ไดเรกทอรีแอป · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder.mcpb
 - ไดเรกทอรีแอป · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.0.3
 - ไดเรกทอรีแอป · MCP v1.0.3 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/SHA256SUMS
+- ไดเรกทอรีแอป · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
+- ไดเรกทอรีแอป · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
+- ไดเรกทอรีแอป · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
+- ไดเรกทอรีแอป · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
 
 - [Aim990: TOEIC Prep](https://alice51849.github.io/ios-app-guide/th/aim990.html) — เตรียมสอบ TOEIC อย่างมีประสิทธิภาพ
   - เตรียมสอบ TOEIC อย่างมีประสิทธิภาพใน 30 วัน! เริ่มต้นการเรียนรู้วันนี้เพื่อพัฒนาคะแนนของคุณ!

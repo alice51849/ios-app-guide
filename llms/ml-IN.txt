@@ -12,6 +12,10 @@ apps: 28
 - ആപ്പ് ഡയറക്ടറി · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder.mcpb
 - ആപ്പ് ഡയറക്ടറി · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.0.3
 - ആപ്പ് ഡയറക്ടറി · MCP v1.0.3 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/SHA256SUMS
+- ആപ്പ് ഡയറക്ടറി · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
+- ആപ്പ് ഡയറക്ടറി · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
+- ആപ്പ് ഡയറക്ടറി · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
+- ആപ്പ് ഡയറക്ടറി · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
 
 - [Aim990](https://alice51849.github.io/ios-app-guide/ml-IN/aim990.html) — TOEIC-ന് 30 ദിവസത്തെ സ്റ്റഡി പ്ലാൻ
   - ദൈനംദിന Listening, Reading പരിശീലനം, ദുർബല മേഖലകളിലെ പഠനം, പ്രോഗ്രസ് ട്രാക്കിംഗ് എന്നിവ വഴി TOEIC-നായി തയ്യാറെടുക്കൂ.

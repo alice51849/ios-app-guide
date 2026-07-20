@@ -12,6 +12,10 @@ apps: 28
 - Danh mục ứng dụng · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder.mcpb
 - Danh mục ứng dụng · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.0.3
 - Danh mục ứng dụng · MCP v1.0.3 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/SHA256SUMS
+- Danh mục ứng dụng · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
+- Danh mục ứng dụng · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
+- Danh mục ứng dụng · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
+- Danh mục ứng dụng · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
 
 - [Aim990](https://alice51849.github.io/ios-app-guide/vi/aim990.html) — Chinh phục TOEIC dễ dàng
   - Nâng cao trình độ tiếng Anh của bạn với Aim990! Lộ trình 30 ngày giúp bạn chinh phục TOEIC với sự tiện lợi và linh hoạt.

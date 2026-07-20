@@ -12,6 +12,10 @@ apps: 28
 - యాప్ డైరెక్టరీ · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder.mcpb
 - యాప్ డైరెక్టరీ · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.0.3
 - యాప్ డైరెక్టరీ · MCP v1.0.3 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/SHA256SUMS
+- యాప్ డైరెక్టరీ · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
+- యాప్ డైరెక్టరీ · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
+- యాప్ డైరెక్టరీ · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
+- యాప్ డైరెక్టరీ · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
 
 - [Aim990: TOEIC Coaching](https://alice51849.github.io/ios-app-guide/te-IN/aim990.html) — TOEIC కోసం 30 రోజుల ప్రిపరేషన్
   - రోజువారీ Listening, Reading ప్రాక్టీస్, బలహీనమైన అంశాలపై దృష్టి మరియు ప్రోగ్రెస్ ట్రాకింగ్‌తో TOEICకు సిద్ధమవండి.

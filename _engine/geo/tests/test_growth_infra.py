@@ -21769,6 +21769,8 @@ class GeneratorTests(unittest.TestCase):
                     publisher_intent_catalog.MCP_REGISTRY_URL,
                     publisher_intent_catalog.MCP_CHECKSUMS_URL,
                     publisher_intent_catalog.MCP_DISTRIBUTION_STATE_URL,
+                    publisher_intent_catalog.MCP_CLIENT_CONFIG_URL,
+                    *publisher_intent_catalog.MCP_INSTALL_COMMANDS.values(),
                 ):
                     self.assertIn(url.lower(), text)
         dataset = static_api_catalog.API_DESCRIPTORS[0]["dataset"].lower()
@@ -21835,6 +21837,8 @@ class GeneratorTests(unittest.TestCase):
                     publisher_intent_catalog.MCP_BUNDLE_URL,
                     publisher_intent_catalog.MCP_REGISTRY_URL,
                     publisher_intent_catalog.MCP_CHECKSUMS_URL,
+                    publisher_intent_catalog.MCP_CLIENT_CONFIG_URL,
+                    *publisher_intent_catalog.MCP_INSTALL_COMMANDS.values(),
                 ):
                     self.assertIn(url, localized, locale)
             index = json.loads(
@@ -21855,8 +21859,14 @@ class GeneratorTests(unittest.TestCase):
                     "distribution": (
                         publisher_intent_catalog.MCP_DISTRIBUTION_STATE_URL
                     ),
+                    "client_config": (
+                        publisher_intent_catalog.MCP_CLIENT_CONFIG_URL
+                    ),
                     "checksums": (
                         publisher_intent_catalog.MCP_CHECKSUMS_URL
+                    ),
+                    "commands": dict(
+                        publisher_intent_catalog.MCP_INSTALL_COMMANDS
                     ),
                     "installers": {
                         "vscode": (

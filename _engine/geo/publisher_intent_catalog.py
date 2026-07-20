@@ -53,6 +53,8 @@ MCP_DISTRIBUTION_STATE_FILENAME = "lumi-app-finder-mcp-distribution.json"
 MCP_DISTRIBUTION_STATE_URL = (
     f"{SITE}/data/{MCP_DISTRIBUTION_STATE_FILENAME}"
 )
+MCP_CLIENT_CONFIG_FILENAME = "lumi-app-finder.mcp.json"
+MCP_CLIENT_CONFIG_URL = f"{SITE}/data/{MCP_CLIENT_CONFIG_FILENAME}"
 MCP_DISTRIBUTION_STATE_KEYS = frozenset(
     {
         "schema_version",
@@ -206,6 +208,7 @@ def _configure_mcp_distribution(payload: object) -> None:
     global MCP_CHECKSUMS_URL
     global MCP_VSCODE_INSTALL_URL
     global MCP_CURSOR_INSTALL_URL
+    global MCP_INSTALL_COMMANDS
 
     state = _validated_mcp_distribution(payload)
     MCP_DISTRIBUTION = state
@@ -245,6 +248,21 @@ def _configure_mcp_distribution(payload: object) -> None:
             }
         )
     )
+    MCP_INSTALL_COMMANDS = {
+        "claude_code": (
+            "claude mcp add --transport stdio --scope user "
+            "lumi-app-finder -- npx -y "
+            f"{MCP_NPX_URL}"
+        ),
+        "codex": (
+            "codex mcp add lumi-app-finder -- npx -y "
+            f"{MCP_NPX_URL}"
+        ),
+        "gemini_cli": (
+            "gemini mcp add --scope user lumi-app-finder "
+            f"npx -y {MCP_NPX_URL}"
+        ),
+    }
 
 
 _configure_mcp_distribution(_load_mcp_distribution())
@@ -512,6 +530,18 @@ def use_frozen_mcp_distribution(
     distribution = _load_mcp_distribution(pages, required=True)
     _configure_mcp_distribution(distribution)
     return distribution
+
+
+def mcp_client_config_payload() -> dict[str, object]:
+    return {
+        "mcpServers": {
+            "lumi-app-finder": {
+                "type": "stdio",
+                "command": "npx",
+                "args": ["-y", MCP_NPX_URL],
+            }
+        }
+    }
 
 
 def _fetch_bytes(url: str, max_bytes: int) -> bytes:
@@ -1574,8 +1604,18 @@ def _page(
             ("Cursor", MCP_CURSOR_INSTALL_URL),
             ("Claude Desktop (MCPB)", MCP_BUNDLE_URL),
             ("MCP Registry", MCP_REGISTRY_URL),
+            ("MCP client config", MCP_CLIENT_CONFIG_URL),
             ("SHA256SUMS", MCP_CHECKSUMS_URL),
             ("GitHub", MCP_REPOSITORY_URL),
+        )
+    )
+    mcp_commands = "".join(
+        f"<p><strong>{escape(label)}</strong> "
+        f"<code>{escape(MCP_INSTALL_COMMANDS[key])}</code></p>"
+        for label, key in (
+            ("Claude Code", "claude_code"),
+            ("Codex", "codex"),
+            ("Gemini CLI", "gemini_cli"),
         )
     )
     return f"""<!doctype html>
@@ -1611,6 +1651,7 @@ h2{{font-size:20px;margin:0 0 10px}}
 .cards{{display:flex;gap:14px;margin:16px 0 22px}}
 .card{{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:17px 19px;box-shadow:0 8px 28px rgba(34,37,59,.05)}}
 .card p{{margin:4px 0;color:var(--sub)}}
+code{{font:12px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;background:#f0f1f7;border-radius:7px;padding:4px 7px;color:#30364a}}
 .table-wrap{{max-width:calc(100vw - 36px);overflow-x:auto;border:1px solid var(--line);border-radius:18px;background:var(--card)}}
 table{{width:max-content;min-width:100%;border-collapse:collapse;font-size:14px}}
 th,td{{text-align:start;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}}
@@ -1629,7 +1670,7 @@ tr:last-child td{{border-bottom:0}}
 <div class="downloads"><strong>{escape(ui["Download the complete dataset"])}</strong><a class="download" href="{SITE}/data/{SLUG}.json">JSON</a><a class="download" href="{SITE}/data/{SLUG}.jsonl">JSONL</a><a class="download" href="{SITE}/data/{SLUG}.csv">CSV</a><a class="download" href="{CROISSANT_URL}">Croissant 1.1</a></div>
 <div class="cards"><section class="card"><h2>{escape(ui["Methodology"])}</h2><p>{escape(ui[METHODOLOGY])}</p><p>{escape(ui["Alphabetical by app name — never a ranking."])}</p></section><section class="card"><h2>{escape(ui["What this dataset contains"])}</h2><p>{escape(ui["JSON, JSONL and CSV contain the same 1,300 records."])}</p><p>{escape(ui["Scroll horizontally to inspect every field."])}</p></section></div>
 <section class="card"><h2>{escape(ui["First-party publisher catalog"])}</h2><p>{escape(ui[DISCLOSURE])}</p><p>{escape(ui[NON_MEASURED])}</p></section>
-<section class="card"><h2>{escape(ui[NAME])} · MCP v{escape(MCP_VERSION)}</h2><p>{escape(ui[DESCRIPTION])}</p><p>{mcp_links}</p></section>
+<section class="card"><h2>{escape(ui[NAME])} · MCP v{escape(MCP_VERSION)}</h2><p>{escape(ui[DESCRIPTION])}</p><p>{mcp_links}</p>{mcp_commands}</section>
 <div class="table-wrap"><table><thead><tr><th>{escape(ui["App"])}</th><th>{escape(ui["Publisher query"])}</th><th>{escape(ui["Decision context"])}</th><th>{escape(ui["Purchase model"])}</th><th>{escape(ui["Guide"])}</th><th>App Store</th></tr></thead><tbody>{rows}</tbody></table></div>
 <p class="footer">{escape(ui["License"])}: <a href="{LICENSE_URL}">CC BY 4.0</a> · {escape(ui["CC BY 4.0 applies to the original catalog compilation; app names and App Store marks belong to their owners."])} · {escape(ui["Updated"])} {escape(modified)}</p>
 </main>
@@ -1672,6 +1713,15 @@ def build(pages: Path = PAGES, today: str | None = None) -> str:
         data_dir / f"{SLUG}.schema.json",
         json.dumps(
             schema_payload(apps),
+            ensure_ascii=False,
+            indent=2,
+        )
+        + "\n",
+    )
+    write_text_if_changed(
+        data_dir / MCP_CLIENT_CONFIG_FILENAME,
+        json.dumps(
+            mcp_client_config_payload(),
             ensure_ascii=False,
             indent=2,
         )

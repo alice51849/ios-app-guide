@@ -61,6 +61,9 @@
 <link rel="search" type="application/opensearchdescription+xml" title="Private &amp; Pay-Once iPhone App Finder" href="https://alice51849.github.io/ios-app-guide/tools/private-pay-once-iphone-app-finder.opensearch.xml">
 <link rel="service" type="application/vnd.oai.openapi+json;version=3.1" href="https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/openapi.json">
 <link rel="alternate" type="application/ld+json" href="https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld">
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Private &amp; Pay-Once iPhone App Finder">
 <meta property="og:description" content="Filter every verified live app in the Lumi Studio publisher portfolio by task, category, purchase model, privacy fact and Apple device or feature.">
@@ -80,9 +83,6 @@ button,.download,.store,.guide{min-height:48px;border-radius:999px;padding:12px 
 .two{display:grid;gap:20px}@media(min-width:820px){.two{grid-template-columns:1fr 1fr}}h2.section-title,.card>h2{margin:0 0 10px;font-size:clamp(1.35rem,3vw,2rem);letter-spacing:-.025em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.list{padding-left:1.25rem}.list li{margin:.58rem 0}.actions{margin-top:18px}.source a{font-weight:850}details{border-top:1px solid var(--line);padding:14px 0}summary{font-weight:850;cursor:pointer}footer{padding:28px 0 52px;color:var(--muted);font-size:.9rem}
 button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid rgba(103,80,201,.42);outline-offset:3px}@media(max-width:520px){.card{border-radius:22px}.nav{font-size:.88rem}.results{grid-template-columns:1fr}}
 </style>
-<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
-<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
-<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
 </head>
 <body>
 <header class="top"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/index.html">iOS App Guide</a><nav><a href="https://alice51849.github.io/ios-app-guide/tools/">Free tools</a> · <a href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/private-pay-once-iphone-app-finder.html">繁體中文</a></nav></div></header>
@@ -91,7 +91,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{ou
 <div class="badges"><span class="badge">28 verified live apps</span><span class="badge">Alphabetical · never a ranking</span><span class="badge">No account, storage or analytics</span></div></section>
 <section class="wrap card">
   <div class="filters">
-    <label>What do you need to do?<input id="search" type="search" autocomplete="off" placeholder="Try passport photo, kids math, PDF scan or sleep"></label>
+    <label>What do you need to do?<input id="search" type="search" autocomplete="off" maxlength="120" placeholder="Try passport photo, kids math, PDF scan or sleep"></label>
     <label>Category<select id="category"><option value="">Every category</option><option value="education">Education</option>
 <option value="health">Health</option>
 <option value="kids">Kids &amp; learning</option>
@@ -151,9 +151,35 @@ const fields=["search","category","purchase","privacy","device"].map(id=>documen
 const count=document.getElementById("result-count");
 const empty=document.getElementById("empty");
 const shareStatus=document.getElementById("share-status");
+const locale=document.documentElement.lang;
+const substitutions=new Map([["ß","ss"],["ς","σ"],["æ","ae"],["œ","oe"],["ø","o"],["ł","l"],["đ","d"],["ð","d"],["þ","th"]]);
+function fold(value){
+  let result=String(value).toLocaleLowerCase(locale).normalize("NFKD").replace(/([\p{Script=Latin}\p{Script=Greek}\p{Script=Hebrew}\p{Script=Arabic}])\p{M}+/gu,"$1").normalize("NFC").replace(/\u0640/g,"");
+  substitutions.forEach((replacement,source)=>{result=result.split(source).join(replacement);});
+  return result.replace(/[^\p{L}\p{M}\p{N}]+/gu," ").trim();
+}
+const SEARCH_CORPUS=WEBMCP_RECORDS.map(item=>fold(item.search));
+const segmenter=typeof Intl.Segmenter==="function"?new Intl.Segmenter(locale,{granularity:"word"}):null;
+function queryTerms(value){
+  const parts=segmenter?[...segmenter.segment(value)].filter(part=>part.isWordLike).map(part=>part.segment):value.split(" ");
+  return [...new Set(parts.map(fold).filter(token=>[...token].length>=2||/\d/u.test(token)))];
+}
+function createQueryMatcher(value){
+  const query=fold(value);
+  if(!query)return()=>true;
+  const weightedTerms=queryTerms(query).map(term=>{
+    const frequency=SEARCH_CORPUS.reduce((total,text)=>total+Number(text.includes(term)),0);
+    const weight=frequency?Math.log((SEARCH_CORPUS.length+1)/frequency)*Math.log2([...term].length+1):0;
+    return {term,weight};
+  }).filter(item=>item.weight>0);
+  if(!weightedTerms.length)return text=>fold(text).includes(query);
+  const score=text=>weightedTerms.reduce((total,item)=>total+(text.includes(item.term)?item.weight:0),0);
+  const minimum=Math.max(...SEARCH_CORPUS.map(score))*.9;
+  return text=>{const folded=fold(text);return folded.includes(query)||score(folded)>=minimum;};
+}
 function tokens(value){return value.split(" ").filter(Boolean);}
 function update(){
-  const query=fields[0].value.trim().toLocaleLowerCase();
+  const queryMatches=createQueryMatcher(fields[0].value.trim());
   const category=fields[1].value;
   const purchase=fields[2].value;
   const privacy=fields[3].value;
@@ -162,7 +188,7 @@ function update(){
   const matches=[];
   for(const card of cards){
     const purchaseMatch=!purchase||(purchase==="one_time"?card.dataset.oneTime==="true":card.dataset.purchase===purchase);
-    const visible=(!query||card.dataset.search.includes(query))&&(!category||card.dataset.category===category)&&purchaseMatch&&(!privacy||tokens(card.dataset.privacy).includes(privacy))&&(!device||tokens(card.dataset.device).includes(device));
+    const visible=queryMatches(card.dataset.search)&&(!category||card.dataset.category===category)&&purchaseMatch&&(!privacy||tokens(card.dataset.privacy).includes(privacy))&&(!device||tokens(card.dataset.device).includes(device));
     card.hidden=!visible;if(visible){shown++;matches.push(card);}
   }
   count.textContent=I18N.count.replace("{shown}",String(shown)).replace("{total}",String(cards.length));
@@ -171,7 +197,7 @@ function update(){
 }
 function applyUrlFilters(){
   const params=new URLSearchParams(location.search);
-  fields[0].value=(params.get("q")||"").slice(0,120);
+  fields[0].value=[...(params.get("q")||"")].slice(0,120).join("");
   for(const [field,name] of [[fields[1],"category"],[fields[2],"purchase"],[fields[3],"privacy"],[fields[4],"device"]]){
     const value=params.get(name)||"";
     field.value=[...field.options].some(option=>option.value===value)?value:"";
@@ -196,14 +222,15 @@ async function registerWebMcp(){
     annotations:{readOnlyHint:true,untrustedContentHint:false},
     execute:async(input={})=>{
       if(input===null||typeof input!=="object"||Array.isArray(input))throw new TypeError("WebMCP input must be an object.");
-      const query=toolText(input,"query").trim().toLocaleLowerCase();
-      if(query.length>120)throw new RangeError("query exceeds 120 characters.");
+      const query=toolText(input,"query").trim();
+      if([...query].length>120)throw new RangeError("query exceeds 120 characters.");
       const category=toolSelectValue(toolText(input,"category"),"category");
       const purchase=toolSelectValue(toolText(input,"purchase_model"),"purchase_model");
       const privacy=toolSelectValue(toolText(input,"privacy_fact"),"privacy_fact");
       const device=toolSelectValue(toolText(input,"device_surface"),"device_surface");
+      const queryMatches=createQueryMatcher(query);
       const matches=WEBMCP_RECORDS.filter(item=>
-        (!query||item.search.includes(query))&&
+        queryMatches(item.search)&&
         (!category||item.category===category)&&
         (!purchase||(purchase==="one_time"?item.one_time_option:item.purchase_model===purchase))&&
         (!privacy||item.privacy_facts.includes(privacy))&&

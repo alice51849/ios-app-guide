@@ -91,7 +91,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{ou
 <div class="badges"><span class="badge">28 doğrulanmış canlı uygulama</span><span class="badge">Alfabetik · asla sıralama değil</span><span class="badge">Hesap, depolama veya analiz yok</span></div></section>
 <section class="wrap card">
   <div class="filters">
-    <label>Ne yapmanız gerekiyor?<input id="search" type="search" autocomplete="off" placeholder="Pasaport fotoğrafı, çocuk matematiği, PDF tarama veya uyku deneyin"></label>
+    <label>Ne yapmanız gerekiyor?<input id="search" type="search" autocomplete="off" maxlength="120" placeholder="Pasaport fotoğrafı, çocuk matematiği, PDF tarama veya uyku deneyin"></label>
     <label>Kategori<select id="category"><option value="">Her kategori</option><option value="education">Eğitim</option>
 <option value="photo-utility">Fotoğraf &amp; yardımcı</option>
 <option value="finance">Para &amp; seyahat</option>
@@ -151,9 +151,35 @@ const fields=["search","category","purchase","privacy","device"].map(id=>documen
 const count=document.getElementById("result-count");
 const empty=document.getElementById("empty");
 const shareStatus=document.getElementById("share-status");
+const locale=document.documentElement.lang;
+const substitutions=new Map([["ß","ss"],["ς","σ"],["æ","ae"],["œ","oe"],["ø","o"],["ł","l"],["đ","d"],["ð","d"],["þ","th"]]);
+function fold(value){
+  let result=String(value).toLocaleLowerCase(locale).normalize("NFKD").replace(/([\p{Script=Latin}\p{Script=Greek}\p{Script=Hebrew}\p{Script=Arabic}])\p{M}+/gu,"$1").normalize("NFC").replace(/\u0640/g,"");
+  substitutions.forEach((replacement,source)=>{result=result.split(source).join(replacement);});
+  return result.replace(/[^\p{L}\p{M}\p{N}]+/gu," ").trim();
+}
+const SEARCH_CORPUS=WEBMCP_RECORDS.map(item=>fold(item.search));
+const segmenter=typeof Intl.Segmenter==="function"?new Intl.Segmenter(locale,{granularity:"word"}):null;
+function queryTerms(value){
+  const parts=segmenter?[...segmenter.segment(value)].filter(part=>part.isWordLike).map(part=>part.segment):value.split(" ");
+  return [...new Set(parts.map(fold).filter(token=>[...token].length>=2||/\d/u.test(token)))];
+}
+function createQueryMatcher(value){
+  const query=fold(value);
+  if(!query)return()=>true;
+  const weightedTerms=queryTerms(query).map(term=>{
+    const frequency=SEARCH_CORPUS.reduce((total,text)=>total+Number(text.includes(term)),0);
+    const weight=frequency?Math.log((SEARCH_CORPUS.length+1)/frequency)*Math.log2([...term].length+1):0;
+    return {term,weight};
+  }).filter(item=>item.weight>0);
+  if(!weightedTerms.length)return text=>fold(text).includes(query);
+  const score=text=>weightedTerms.reduce((total,item)=>total+(text.includes(item.term)?item.weight:0),0);
+  const minimum=Math.max(...SEARCH_CORPUS.map(score))*.9;
+  return text=>{const folded=fold(text);return folded.includes(query)||score(folded)>=minimum;};
+}
 function tokens(value){return value.split(" ").filter(Boolean);}
 function update(){
-  const query=fields[0].value.trim().toLocaleLowerCase();
+  const queryMatches=createQueryMatcher(fields[0].value.trim());
   const category=fields[1].value;
   const purchase=fields[2].value;
   const privacy=fields[3].value;
@@ -162,7 +188,7 @@ function update(){
   const matches=[];
   for(const card of cards){
     const purchaseMatch=!purchase||(purchase==="one_time"?card.dataset.oneTime==="true":card.dataset.purchase===purchase);
-    const visible=(!query||card.dataset.search.includes(query))&&(!category||card.dataset.category===category)&&purchaseMatch&&(!privacy||tokens(card.dataset.privacy).includes(privacy))&&(!device||tokens(card.dataset.device).includes(device));
+    const visible=queryMatches(card.dataset.search)&&(!category||card.dataset.category===category)&&purchaseMatch&&(!privacy||tokens(card.dataset.privacy).includes(privacy))&&(!device||tokens(card.dataset.device).includes(device));
     card.hidden=!visible;if(visible){shown++;matches.push(card);}
   }
   count.textContent=I18N.count.replace("{shown}",String(shown)).replace("{total}",String(cards.length));
@@ -171,7 +197,7 @@ function update(){
 }
 function applyUrlFilters(){
   const params=new URLSearchParams(location.search);
-  fields[0].value=(params.get("q")||"").slice(0,120);
+  fields[0].value=[...(params.get("q")||"")].slice(0,120).join("");
   for(const [field,name] of [[fields[1],"category"],[fields[2],"purchase"],[fields[3],"privacy"],[fields[4],"device"]]){
     const value=params.get(name)||"";
     field.value=[...field.options].some(option=>option.value===value)?value:"";
@@ -196,14 +222,15 @@ async function registerWebMcp(){
     annotations:{readOnlyHint:true,untrustedContentHint:false},
     execute:async(input={})=>{
       if(input===null||typeof input!=="object"||Array.isArray(input))throw new TypeError("WebMCP input must be an object.");
-      const query=toolText(input,"query").trim().toLocaleLowerCase();
-      if(query.length>120)throw new RangeError("query exceeds 120 characters.");
+      const query=toolText(input,"query").trim();
+      if([...query].length>120)throw new RangeError("query exceeds 120 characters.");
       const category=toolSelectValue(toolText(input,"category"),"category");
       const purchase=toolSelectValue(toolText(input,"purchase_model"),"purchase_model");
       const privacy=toolSelectValue(toolText(input,"privacy_fact"),"privacy_fact");
       const device=toolSelectValue(toolText(input,"device_surface"),"device_surface");
+      const queryMatches=createQueryMatcher(query);
       const matches=WEBMCP_RECORDS.filter(item=>
-        (!query||item.search.includes(query))&&
+        queryMatches(item.search)&&
         (!category||item.category===category)&&
         (!purchase||(purchase==="one_time"?item.one_time_option:item.purchase_model===purchase))&&
         (!privacy||item.privacy_facts.includes(privacy))&&

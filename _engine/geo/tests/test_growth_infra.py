@@ -151,6 +151,40 @@ from videogen.registry import (  # noqa: E402
 )
 
 
+def run_finder_query(page: str, query: str) -> list[str] | None:
+    node = shutil.which("node")
+    if node is None:
+        return None
+    script = r"""
+const fs=require("fs"),vm=require("vm");
+const input=JSON.parse(fs.readFileSync(0,"utf8"));
+const locale=input.page.match(/<html lang="([^"]+)"/)?.[1];
+const records=input.page.match(
+  /const WEBMCP_RECORDS=(.*?);\nconst WEBMCP_TOOL_DESCRIPTION=/s
+);
+const matcher=input.page.match(
+  /const locale=document\.documentElement\.lang;.*?\nfunction tokens/s
+);
+if(!locale||!records||!matcher)throw new Error("Missing generated finder matcher.");
+const source=`const document={documentElement:{lang:${JSON.stringify(locale)}}};
+const WEBMCP_RECORDS=${records[1]};
+${matcher[0].replace(/\nfunction tokens$/,"")}
+const queryMatches=createQueryMatcher(INPUT);
+RESULT=WEBMCP_RECORDS.filter(item=>queryMatches(item.search)).map(item=>item.name);`;
+const context={INPUT:input.query,Intl,RESULT:null};
+vm.runInNewContext(source,context);
+process.stdout.write(JSON.stringify(context.RESULT));
+"""
+    completed = subprocess.run(
+        [node, "-e", script],
+        input=json.dumps({"page": page, "query": query}, ensure_ascii=False),
+        text=True,
+        capture_output=True,
+        check=True,
+    )
+    return json.loads(completed.stdout)
+
+
 class AppStoreAvailabilityTests(unittest.TestCase):
     def test_new_unlisted_apps_are_omitted_and_live_apps_are_cached(self):
         with tempfile.TemporaryDirectory() as pages:
@@ -17514,6 +17548,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("?ct=", english)
         self.assertLess(english.index(">Snapport<"), english.index(">Wordmate:"))
         self.assertIn('id="category"', english)
+        self.assertIn('id="search" type="search" autocomplete="off" maxlength="120"', english)
         self.assertIn('id="purchase"', english)
         self.assertIn('id="privacy"', english)
         self.assertIn('id="device"', english)
@@ -17534,6 +17569,16 @@ class GeneratorTests(unittest.TestCase):
             "const matches=WEBMCP_RECORDS.filter",
             english,
         )
+        self.assertIn("const SEARCH_CORPUS=WEBMCP_RECORDS.map", english)
+        self.assertIn("new Intl.Segmenter", english)
+        self.assertIn("createQueryMatcher(fields[0].value.trim())", english)
+        self.assertIn("createQueryMatcher(query)", english)
+        self.assertIn("queryMatches(card.dataset.search)", english)
+        self.assertIn("queryMatches(item.search)", english)
+        self.assertNotIn("card.dataset.search.includes(query)", english)
+        self.assertNotIn("item.search.includes(query)", english)
+        self.assertIn("if([...query].length>120)", english)
+        self.assertNotIn('trim().toLocaleLowerCase()', english)
         self.assertNotIn("fields[0].value=query;", english)
         self.assertNotIn(
             'document.getElementById("results").scrollIntoView',
@@ -17546,6 +17591,12 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("localStorage", english)
         self.assertNotIn("sessionStorage", english)
         self.assertNotIn("document.cookie", english)
+        matches = run_finder_query(
+            english,
+            "I need a compliant passport photo for my baby",
+        )
+        if matches is not None:
+            self.assertEqual(["Snapport"], matches)
         self.assertIn("絕非排行榜", chinese)
         wordmate = next(
             record for record in data["apps"] if record["key"] == "wordmate"
@@ -17691,6 +17742,7 @@ class GeneratorTests(unittest.TestCase):
             intents = []
             for locale in OFFICIAL_LOCALES:
                 is_japanese = locale == "ja"
+                is_marathi = locale == "mr-IN"
                 intents.append(
                     {
                         "locale": locale,
@@ -17699,11 +17751,15 @@ class GeneratorTests(unittest.TestCase):
                         "publisher_query": (
                             "証明写真を作る"
                             if is_japanese
+                            else "मुलांसाठी सर्वोत्तम पासपोर्ट फोटो अ‍ॅप"
+                            if is_marathi
                             else f"Passport photo task ({locale})"
                         ),
                         "decision_context": (
                             "端末上で証明写真を準備します。"
                             if is_japanese
+                            else "मुलांसाठी पासपोर्ट फोटो तयार करा."
+                            if is_marathi
                             else f"Localized decision context ({locale})."
                         ),
                         "purchase_model": "paid_upfront",
@@ -17775,6 +17831,7 @@ class GeneratorTests(unittest.TestCase):
                 base, pages
             )
             japanese = portfolio_app_finder.render_page("ja", records)
+            marathi = portfolio_app_finder.render_page("mr-IN", records)
             arabic = portfolio_app_finder.render_page("ar-SA", records)
             opensearch = portfolio_app_finder.opensearch_document("ja")
 
@@ -17807,6 +17864,18 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn('<html lang="ar-SA" dir="rtl">', arabic)
         self.assertIn("?q={searchTerms}", opensearch)
         self.assertNotIn("campaign-attribution reporting", japanese)
+        matches = run_finder_query(
+            japanese,
+            "子どものパスポート用の証明写真を作りたい",
+        )
+        if matches is not None:
+            self.assertEqual(["Snapport"], matches)
+        matches = run_finder_query(
+            marathi,
+            "मला मुलांसाठी पासपोर्ट फोटो तयार करणारे अ‍ॅप हवे आहे",
+        )
+        if matches is not None:
+            self.assertEqual(["Snapport"], matches)
 
     def test_portfolio_finder_covers_current_verified_live_apps(self):
         live = appstore_live.live_app_keys(

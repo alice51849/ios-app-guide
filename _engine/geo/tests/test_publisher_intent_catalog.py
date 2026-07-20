@@ -13,8 +13,10 @@ from pathlib import Path
 import re
 import subprocess
 import sys
+import tempfile
 import unittest
 import unicodedata
+from unittest import mock
 from urllib.parse import urlparse
 
 
@@ -145,6 +147,123 @@ class PublisherIntentLocalizationTests(unittest.TestCase):
             ),
         )
 
+    def test_live_mcp_distribution_is_exact_and_hash_verified(self) -> None:
+        version = "9.8.7"
+        mcpb = b"verified mcpb"
+        npx = b"verified npx"
+        mcpb_sha256 = hashlib.sha256(mcpb).hexdigest()
+        npx_sha256 = hashlib.sha256(npx).hexdigest()
+        release_base = (
+            f"{catalog.MCP_REPOSITORY_URL}/releases/download/v{version}"
+        )
+        registry = {
+            "server": {
+                "name": catalog.MCP_SERVER_NAME,
+                "version": version,
+                "repository": {
+                    "url": catalog.MCP_REPOSITORY_URL,
+                    "source": "github",
+                },
+                "packages": [
+                    {
+                        "registryType": "mcpb",
+                        "identifier": (
+                            f"{release_base}/lumi-app-finder.mcpb"
+                        ),
+                        "fileSha256": mcpb_sha256,
+                        "transport": {"type": "stdio"},
+                    }
+                ],
+            },
+            "_meta": {
+                "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "isLatest": True,
+                }
+            },
+        }
+        checksums = (
+            f"{mcpb_sha256}  lumi-app-finder.mcpb\n"
+            f"{npx_sha256}  lumi-app-finder-npx.tgz\n"
+        ).encode("ascii")
+        responses = {
+            catalog.MCP_REGISTRY_LATEST_URL: json.dumps(
+                registry
+            ).encode("utf-8"),
+            f"{release_base}/SHA256SUMS": checksums,
+            f"{release_base}/lumi-app-finder.mcpb": mcpb,
+            f"{release_base}/lumi-app-finder-npx.tgz": npx,
+        }
+        original = dict(catalog.MCP_DISTRIBUTION)
+        self.addCleanup(catalog._configure_mcp_distribution, original)
+        with tempfile.TemporaryDirectory() as directory:
+            state_path = (
+                Path(directory)
+                / "data"
+                / catalog.MCP_DISTRIBUTION_STATE_FILENAME
+            )
+            state_path.parent.mkdir(parents=True)
+            state_path.write_text('{"truncated":', encoding="utf-8")
+            with mock.patch.object(
+                catalog,
+                "_fetch_bytes",
+                side_effect=lambda url, _limit: responses[url],
+            ) as fetch:
+                distribution = catalog.refresh_live_mcp_distribution(
+                    Path(directory)
+                )
+            self.assertEqual(4, fetch.call_count)
+            self.assertEqual(version, distribution["version"])
+            self.assertEqual(
+                f"{catalog.MCP_REGISTRY_BASE_URL}/{version}",
+                distribution["registry_url"],
+            )
+            self.assertEqual(npx_sha256, distribution["npx_sha256"])
+            self.assertEqual(version, catalog.MCP_VERSION)
+            self.assertNotIn("/latest/", catalog.MCP_NPX_URL)
+            state = json.loads(state_path.read_text(encoding="utf-8"))
+            self.assertEqual(distribution, state)
+            self.assertEqual(
+                [],
+                list(
+                    state_path.parent.glob(
+                        f".{state_path.name}.*.tmp"
+                    )
+                ),
+            )
+            responses[
+                f"{release_base}/lumi-app-finder-npx.tgz"
+            ] = b"tampered"
+            with mock.patch.object(
+                catalog,
+                "_fetch_bytes",
+                side_effect=lambda url, _limit: responses[url],
+            ):
+                with self.assertRaisesRegex(
+                    ValueError,
+                    "asset hash mismatch",
+                ):
+                    catalog.refresh_live_mcp_distribution(Path(directory))
+            self.assertEqual(
+                distribution,
+                json.loads(state_path.read_text(encoding="utf-8")),
+            )
+
+    def test_frozen_mcp_distribution_rejects_corrupt_state(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = (
+                Path(directory)
+                / "data"
+                / catalog.MCP_DISTRIBUTION_STATE_FILENAME
+            )
+            path.parent.mkdir(parents=True)
+            path.write_text('{"truncated":', encoding="utf-8")
+            with self.assertRaisesRegex(
+                ValueError,
+                "run publisher_intent_catalog.py first",
+            ):
+                catalog.use_frozen_mcp_distribution(Path(directory))
+
 
 class PublisherIntentOutputTests(unittest.TestCase):
     @classmethod
@@ -258,6 +377,21 @@ class PublisherIntentOutputTests(unittest.TestCase):
         self.assertEqual(catalog.EXPECTED_RECORD_COUNT, len(record_ids))
         for locales in per_app.values():
             self.assertEqual(set(OFFICIAL_LOCALES), locales)
+
+    def test_mcp_distribution_state_matches_exact_generated_links(self) -> None:
+        state = json.loads(
+            (
+                self.data_dir
+                / catalog.MCP_DISTRIBUTION_STATE_FILENAME
+            ).read_text(encoding="utf-8")
+        )
+        self.assertEqual(catalog.MCP_DISTRIBUTION, state)
+        self.assertEqual(catalog.MCP_VERSION, state["version"])
+        self.assertEqual(catalog.MCP_REGISTRY_URL, state["registry_url"])
+        self.assertEqual(catalog.MCP_BUNDLE_URL, state["mcpb_url"])
+        self.assertEqual(catalog.MCP_NPX_URL, state["npx_url"])
+        self.assertNotIn("/latest/", state["mcpb_url"])
+        self.assertNotIn("/latest/", state["npx_url"])
 
     def test_json_jsonl_and_csv_have_the_same_records(self) -> None:
         jsonl_records = [
@@ -513,6 +647,19 @@ class PublisherIntentOutputTests(unittest.TestCase):
             self.assertEqual(catalog.MCP_REPOSITORY_URL, mcp["url"])
             self.assertEqual(catalog.MCP_REGISTRY_URL, mcp["sameAs"])
             self.assertEqual(catalog.MCP_BUNDLE_URL, mcp["downloadUrl"])
+            self.assertEqual(catalog.MCP_NPX_URL, mcp["installUrl"])
+            self.assertEqual(catalog.MCP_VERSION, mcp["softwareVersion"])
+            self.assertEqual(
+                {
+                    "Install in VS Code": catalog.MCP_VSCODE_INSTALL_URL,
+                    "Install in Cursor": catalog.MCP_CURSOR_INSTALL_URL,
+                },
+                {
+                    action["name"]: action["target"]
+                    for action in mcp["potentialAction"]
+                    if action["@type"] == "InstallAction"
+                },
+            )
             self.assertIn(
                 f'href="{html.escape(catalog.MCP_REGISTRY_URL, quote=True)}"',
                 source,
@@ -523,6 +670,22 @@ class PublisherIntentOutputTests(unittest.TestCase):
             )
             self.assertIn(
                 f'href="{catalog.MCP_BUNDLE_URL}"',
+                source,
+            )
+            self.assertIn(
+                (
+                    f'href="{html.escape(catalog.MCP_VSCODE_INSTALL_URL, quote=True)}"'
+                ),
+                source,
+            )
+            self.assertIn(
+                (
+                    f'href="{html.escape(catalog.MCP_CURSOR_INSTALL_URL, quote=True)}"'
+                ),
+                source,
+            )
+            self.assertIn(
+                f'href="{catalog.MCP_CHECKSUMS_URL}"',
                 source,
             )
             self.assertEqual(4, len(schema["distribution"]))

@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import base64
 import csv
 from datetime import date
 import hashlib
@@ -13,8 +14,12 @@ import json
 import os
 from pathlib import Path
 import re
+import sys
+import tempfile
 from typing import Any, Iterator
 import unicodedata
+import urllib.parse
+import urllib.request
 
 from answer_personas import PERSONAS
 from app_store_storefronts import (
@@ -36,15 +41,213 @@ SLUG = "lumi-studio-publisher-search-intent-catalog"
 I18N_PATH = HERE / "publisher_intent_catalog_i18n.json"
 FINDER_DATASET = "verified-ios-app-finder-catalog.json"
 LICENSE_URL = "https://creativecommons.org/licenses/by/4.0/"
+MCP_SERVER_NAME = "io.github.alice51849/lumi-app-finder"
+MCP_SERVER_NAME_ENCODED = "io.github.alice51849%2Flumi-app-finder"
 MCP_REPOSITORY_URL = "https://github.com/alice51849/lumi-mcp"
-MCP_REGISTRY_URL = (
-    "https://registry.modelcontextprotocol.io/v0.1/servers"
-    "?search=io.github.alice51849%2Flumi-app-finder&limit=10"
+MCP_REGISTRY_BASE_URL = (
+    "https://registry.modelcontextprotocol.io/v0.1/servers/"
+    f"{MCP_SERVER_NAME_ENCODED}/versions"
 )
-MCP_BUNDLE_URL = (
-    "https://github.com/alice51849/lumi-mcp/releases/latest/download/"
-    "lumi-app-finder.mcpb"
+MCP_REGISTRY_LATEST_URL = f"{MCP_REGISTRY_BASE_URL}/latest"
+MCP_DISTRIBUTION_STATE_FILENAME = "lumi-app-finder-mcp-distribution.json"
+MCP_DISTRIBUTION_STATE_URL = (
+    f"{SITE}/data/{MCP_DISTRIBUTION_STATE_FILENAME}"
 )
+MCP_DISTRIBUTION_STATE_KEYS = frozenset(
+    {
+        "schema_version",
+        "server_name",
+        "version",
+        "registry_url",
+        "registry_latest_url",
+        "repository_url",
+        "mcpb_url",
+        "mcpb_sha256",
+        "npx_url",
+        "npx_sha256",
+        "checksums_url",
+    }
+)
+
+
+def _mcp_stdio_config(
+    npx_url: str,
+    *,
+    include_name: bool,
+) -> dict[str, object]:
+    config: dict[str, object] = {
+        "type": "stdio",
+        "command": "npx",
+        "args": ["-y", npx_url],
+    }
+    if include_name:
+        return {"name": "lumi-app-finder", **config}
+    return config
+
+
+def _compact_json(payload: object) -> str:
+    return json.dumps(payload, ensure_ascii=True, separators=(",", ":"))
+
+
+def _validated_mcp_distribution(
+    payload: object,
+) -> dict[str, object]:
+    if not isinstance(payload, dict):
+        raise ValueError("MCP distribution state must be an object")
+    if set(payload) != MCP_DISTRIBUTION_STATE_KEYS:
+        raise ValueError("MCP distribution state has unexpected fields")
+    version = payload.get("version")
+    if (
+        payload.get("schema_version") != 1
+        or payload.get("server_name") != MCP_SERVER_NAME
+        or payload.get("registry_latest_url") != MCP_REGISTRY_LATEST_URL
+        or payload.get("repository_url") != MCP_REPOSITORY_URL
+        or not isinstance(version, str)
+        or re.fullmatch(r"\d+\.\d+\.\d+", version) is None
+    ):
+        raise ValueError("MCP distribution identity is invalid")
+    release_base = f"{MCP_REPOSITORY_URL}/releases/download/v{version}"
+    expected = {
+        "registry_url": f"{MCP_REGISTRY_BASE_URL}/{version}",
+        "mcpb_url": f"{release_base}/lumi-app-finder.mcpb",
+        "npx_url": f"{release_base}/lumi-app-finder-npx.tgz",
+        "checksums_url": f"{release_base}/SHA256SUMS",
+    }
+    for field, value in expected.items():
+        if payload.get(field) != value:
+            raise ValueError(f"MCP distribution {field} is invalid")
+    for field in ("mcpb_sha256", "npx_sha256"):
+        value = payload.get(field)
+        if (
+            not isinstance(value, str)
+            or re.fullmatch(r"[0-9a-f]{64}", value) is None
+        ):
+            raise ValueError(f"MCP distribution {field} is invalid")
+    return dict(payload)
+
+
+_DEFAULT_MCP_DISTRIBUTION = _validated_mcp_distribution(
+    {
+        "schema_version": 1,
+        "server_name": MCP_SERVER_NAME,
+        "version": "1.0.3",
+        "registry_url": f"{MCP_REGISTRY_BASE_URL}/1.0.3",
+        "registry_latest_url": MCP_REGISTRY_LATEST_URL,
+        "repository_url": MCP_REPOSITORY_URL,
+        "mcpb_url": (
+            f"{MCP_REPOSITORY_URL}/releases/download/v1.0.3/"
+            "lumi-app-finder.mcpb"
+        ),
+        "mcpb_sha256": (
+            "592172803fd74c22bd4611cf91d41274f"
+            "3e9792c2e6f01897813f6558df4323d"
+        ),
+        "npx_url": (
+            f"{MCP_REPOSITORY_URL}/releases/download/v1.0.3/"
+            "lumi-app-finder-npx.tgz"
+        ),
+        "npx_sha256": (
+            "57f023eebeea659c527060743ee1159cd"
+            "caa136b09e5a8e5842fa711c3bdc513"
+        ),
+        "checksums_url": (
+            f"{MCP_REPOSITORY_URL}/releases/download/v1.0.3/"
+            "SHA256SUMS"
+        ),
+    }
+)
+
+
+def _load_mcp_distribution(
+    pages: Path = PAGES,
+    *,
+    required: bool = False,
+) -> dict[str, object]:
+    path = pages / "data" / MCP_DISTRIBUTION_STATE_FILENAME
+    if not path.is_file():
+        if required:
+            raise FileNotFoundError(
+                "Frozen MCP distribution state is missing; "
+                "run publisher_intent_catalog.py first"
+            )
+        return dict(_DEFAULT_MCP_DISTRIBUTION)
+    try:
+        return _validated_mcp_distribution(
+            json.loads(path.read_text(encoding="utf-8"))
+        )
+    except (
+        OSError,
+        UnicodeDecodeError,
+        json.JSONDecodeError,
+        ValueError,
+    ) as error:
+        if required:
+            raise ValueError(
+                "Frozen MCP distribution state is invalid; "
+                "run publisher_intent_catalog.py first"
+            ) from error
+        print(
+            "MCP_DISTRIBUTION_STATE_IGNORED "
+            f"path={path} error={type(error).__name__}",
+            file=sys.stderr,
+            flush=True,
+        )
+        return dict(_DEFAULT_MCP_DISTRIBUTION)
+
+
+def _configure_mcp_distribution(payload: object) -> None:
+    global MCP_DISTRIBUTION
+    global MCP_VERSION
+    global MCP_REGISTRY_URL
+    global MCP_BUNDLE_URL
+    global MCP_BUNDLE_SHA256
+    global MCP_NPX_URL
+    global MCP_NPX_SHA256
+    global MCP_CHECKSUMS_URL
+    global MCP_VSCODE_INSTALL_URL
+    global MCP_CURSOR_INSTALL_URL
+
+    state = _validated_mcp_distribution(payload)
+    MCP_DISTRIBUTION = state
+    MCP_VERSION = str(state["version"])
+    MCP_REGISTRY_URL = str(state["registry_url"])
+    MCP_BUNDLE_URL = str(state["mcpb_url"])
+    MCP_BUNDLE_SHA256 = str(state["mcpb_sha256"])
+    MCP_NPX_URL = str(state["npx_url"])
+    MCP_NPX_SHA256 = str(state["npx_sha256"])
+    MCP_CHECKSUMS_URL = str(state["checksums_url"])
+    vscode_uri = (
+        "vscode:mcp/install?"
+        + urllib.parse.quote(
+            _compact_json(
+                _mcp_stdio_config(MCP_NPX_URL, include_name=True)
+            ),
+            safe="",
+        )
+    )
+    MCP_VSCODE_INSTALL_URL = (
+        "https://vscode.dev/redirect?url="
+        + urllib.parse.quote(vscode_uri, safe="")
+    )
+    MCP_CURSOR_INSTALL_URL = (
+        "https://cursor.com/en/install-mcp?"
+        + urllib.parse.urlencode(
+            {
+                "name": "lumi-app-finder",
+                "config": base64.b64encode(
+                    _compact_json(
+                        _mcp_stdio_config(
+                            MCP_NPX_URL,
+                            include_name=False,
+                        )
+                    ).encode("ascii")
+                ).decode("ascii"),
+            }
+        )
+    )
+
+
+_configure_mcp_distribution(_load_mcp_distribution())
 CROISSANT_SPEC = "http://mlcommons.org/croissant/1.1"
 CROISSANT_SUFFIX = "croissant.jsonld"
 CROISSANT_FILENAME = f"{SLUG}.{CROISSANT_SUFFIX}"
@@ -266,6 +469,189 @@ def write_text_if_changed(path: Path, content: str) -> bool:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
     return True
+
+
+def write_text_if_changed_atomic(path: Path, content: str) -> bool:
+    try:
+        if path.read_text(encoding="utf-8") == content:
+            return False
+    except (FileNotFoundError, UnicodeDecodeError):
+        pass
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary: Path | None = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w",
+            encoding="utf-8",
+            dir=path.parent,
+            prefix=f".{path.name}.",
+            suffix=".tmp",
+            delete=False,
+        ) as handle:
+            temporary = Path(handle.name)
+            handle.write(content)
+            handle.flush()
+            os.fchmod(handle.fileno(), 0o644)
+            os.fsync(handle.fileno())
+        os.replace(temporary, path)
+        temporary = None
+        directory = os.open(path.parent, os.O_RDONLY)
+        try:
+            os.fsync(directory)
+        finally:
+            os.close(directory)
+    finally:
+        if temporary is not None:
+            temporary.unlink(missing_ok=True)
+    return True
+
+
+def use_frozen_mcp_distribution(
+    pages: Path = PAGES,
+) -> dict[str, object]:
+    distribution = _load_mcp_distribution(pages, required=True)
+    _configure_mcp_distribution(distribution)
+    return distribution
+
+
+def _fetch_bytes(url: str, max_bytes: int) -> bytes:
+    request = urllib.request.Request(
+        url,
+        headers={"User-Agent": "Lumi-GEO-MCP-Distribution/1.0"},
+    )
+    with urllib.request.urlopen(request, timeout=45) as response:
+        payload = response.read(max_bytes + 1)
+    if len(payload) > max_bytes:
+        raise ValueError(f"MCP distribution response is too large: {url}")
+    return payload
+
+
+def refresh_live_mcp_distribution(
+    pages: Path = PAGES,
+) -> dict[str, object]:
+    registry_payload = json.loads(
+        _fetch_bytes(MCP_REGISTRY_LATEST_URL, 256_000)
+    )
+    if not isinstance(registry_payload, dict):
+        raise ValueError("MCP Registry latest response must be an object")
+    server = registry_payload.get("server")
+    metadata = registry_payload.get("_meta")
+    if not isinstance(server, dict) or not isinstance(metadata, dict):
+        raise ValueError("MCP Registry latest response is incomplete")
+    official = metadata.get(
+        "io.modelcontextprotocol.registry/official"
+    )
+    repository = server.get("repository")
+    version = server.get("version")
+    if (
+        server.get("name") != MCP_SERVER_NAME
+        or not isinstance(version, str)
+        or re.fullmatch(r"\d+\.\d+\.\d+", version) is None
+        or not isinstance(repository, dict)
+        or repository.get("url") != MCP_REPOSITORY_URL
+        or repository.get("source") != "github"
+        or not isinstance(official, dict)
+        or official.get("status") != "active"
+        or official.get("isLatest") is not True
+    ):
+        raise ValueError("MCP Registry latest identity is invalid")
+
+    release_base = f"{MCP_REPOSITORY_URL}/releases/download/v{version}"
+    expected_mcpb_url = f"{release_base}/lumi-app-finder.mcpb"
+    packages = server.get("packages")
+    mcpb_packages = (
+        [
+            package
+            for package in packages
+            if (
+                isinstance(package, dict)
+                and package.get("registryType") == "mcpb"
+            )
+        ]
+        if isinstance(packages, list)
+        else []
+    )
+    if len(mcpb_packages) != 1:
+        raise ValueError("MCP Registry must expose exactly one MCPB package")
+    mcpb_package = mcpb_packages[0]
+    registry_mcpb_sha256 = mcpb_package.get("fileSha256")
+    if (
+        mcpb_package.get("identifier") != expected_mcpb_url
+        or not isinstance(registry_mcpb_sha256, str)
+        or re.fullmatch(r"[0-9a-f]{64}", registry_mcpb_sha256) is None
+        or mcpb_package.get("transport") != {"type": "stdio"}
+    ):
+        raise ValueError("MCP Registry MCPB package is invalid")
+
+    checksums_url = f"{release_base}/SHA256SUMS"
+    checksums_text = _fetch_bytes(checksums_url, 32_000).decode("ascii")
+    checksums: dict[str, str] = {}
+    for line in checksums_text.splitlines():
+        match = re.fullmatch(r"([0-9a-f]{64})  ([A-Za-z0-9._-]+)", line)
+        if match is None or match.group(2) in checksums:
+            raise ValueError("MCP release SHA256SUMS is invalid")
+        checksums[match.group(2)] = match.group(1)
+    required_assets = {
+        "lumi-app-finder.mcpb",
+        "lumi-app-finder-npx.tgz",
+    }
+    if not required_assets.issubset(checksums):
+        raise ValueError("MCP release SHA256SUMS is incomplete")
+    if checksums["lumi-app-finder.mcpb"] != registry_mcpb_sha256:
+        raise ValueError("MCP Registry and release MCPB hashes differ")
+
+    npx_url = f"{release_base}/lumi-app-finder-npx.tgz"
+    assets = {
+        "lumi-app-finder.mcpb": (
+            expected_mcpb_url,
+            10_000_000,
+        ),
+        "lumi-app-finder-npx.tgz": (
+            npx_url,
+            10_000_000,
+        ),
+    }
+    for filename, (url, max_bytes) in assets.items():
+        digest = hashlib.sha256(
+            _fetch_bytes(url, max_bytes)
+        ).hexdigest()
+        if digest != checksums[filename]:
+            raise ValueError(f"MCP release asset hash mismatch: {filename}")
+
+    distribution = _validated_mcp_distribution(
+        {
+            "schema_version": 1,
+            "server_name": MCP_SERVER_NAME,
+            "version": version,
+            "registry_url": f"{MCP_REGISTRY_BASE_URL}/{version}",
+            "registry_latest_url": MCP_REGISTRY_LATEST_URL,
+            "repository_url": MCP_REPOSITORY_URL,
+            "mcpb_url": expected_mcpb_url,
+            "mcpb_sha256": registry_mcpb_sha256,
+            "npx_url": npx_url,
+            "npx_sha256": checksums["lumi-app-finder-npx.tgz"],
+            "checksums_url": checksums_url,
+        }
+    )
+    state_path = pages / "data" / MCP_DISTRIBUTION_STATE_FILENAME
+    changed = write_text_if_changed_atomic(
+        state_path,
+        json.dumps(
+            distribution,
+            ensure_ascii=False,
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n",
+    )
+    _configure_mcp_distribution(distribution)
+    print(
+        "MCP_DISTRIBUTION "
+        f"version={MCP_VERSION} assets={len(assets)} "
+        f"state_changed={int(changed)}",
+        flush=True,
+    )
+    return distribution
 
 
 def slugify(value: str) -> str:
@@ -1092,9 +1478,22 @@ def _schema_org(
             "url": MCP_REPOSITORY_URL,
             "sameAs": MCP_REGISTRY_URL,
             "downloadUrl": MCP_BUNDLE_URL,
-            "softwareVersion": "1.0.0",
+            "installUrl": MCP_NPX_URL,
+            "softwareVersion": MCP_VERSION,
             "isAccessibleForFree": True,
             "author": {"@id": f"{SITE}/#organization"},
+            "potentialAction": [
+                {
+                    "@type": "InstallAction",
+                    "name": "Install in VS Code",
+                    "target": MCP_VSCODE_INSTALL_URL,
+                },
+                {
+                    "@type": "InstallAction",
+                    "name": "Install in Cursor",
+                    "target": MCP_CURSOR_INSTALL_URL,
+                },
+            ],
         },
         "distribution": [
             {
@@ -1168,6 +1567,17 @@ def _page(
     root_prefix = "" if locale == "en" else f"/{locale}"
     visuals_href = f"{SITE}{root_prefix}/visuals/"
     direction = ' dir="rtl"' if locale in RTL_LOCALES else ""
+    mcp_links = " · ".join(
+        f'<a href="{escape(url, quote=True)}">{escape(label)}</a>'
+        for label, url in (
+            ("VS Code", MCP_VSCODE_INSTALL_URL),
+            ("Cursor", MCP_CURSOR_INSTALL_URL),
+            ("Claude Desktop (MCPB)", MCP_BUNDLE_URL),
+            ("MCP Registry", MCP_REGISTRY_URL),
+            ("SHA256SUMS", MCP_CHECKSUMS_URL),
+            ("GitHub", MCP_REPOSITORY_URL),
+        )
+    )
     return f"""<!doctype html>
 <html lang="{escape(locale)}"{direction}>
 <head>
@@ -1219,7 +1629,7 @@ tr:last-child td{{border-bottom:0}}
 <div class="downloads"><strong>{escape(ui["Download the complete dataset"])}</strong><a class="download" href="{SITE}/data/{SLUG}.json">JSON</a><a class="download" href="{SITE}/data/{SLUG}.jsonl">JSONL</a><a class="download" href="{SITE}/data/{SLUG}.csv">CSV</a><a class="download" href="{CROISSANT_URL}">Croissant 1.1</a></div>
 <div class="cards"><section class="card"><h2>{escape(ui["Methodology"])}</h2><p>{escape(ui[METHODOLOGY])}</p><p>{escape(ui["Alphabetical by app name — never a ranking."])}</p></section><section class="card"><h2>{escape(ui["What this dataset contains"])}</h2><p>{escape(ui["JSON, JSONL and CSV contain the same 1,300 records."])}</p><p>{escape(ui["Scroll horizontally to inspect every field."])}</p></section></div>
 <section class="card"><h2>{escape(ui["First-party publisher catalog"])}</h2><p>{escape(ui[DISCLOSURE])}</p><p>{escape(ui[NON_MEASURED])}</p></section>
-<section class="card"><h2>{escape(ui[NAME])} · MCP</h2><p>{escape(ui[DESCRIPTION])}</p><p><a href="{escape(MCP_REGISTRY_URL, quote=True)}">MCP Registry</a> · <a href="{escape(MCP_REPOSITORY_URL, quote=True)}">GitHub</a> · <a href="{escape(MCP_BUNDLE_URL, quote=True)}">MCPB</a></p></section>
+<section class="card"><h2>{escape(ui[NAME])} · MCP v{escape(MCP_VERSION)}</h2><p>{escape(ui[DESCRIPTION])}</p><p>{mcp_links}</p></section>
 <div class="table-wrap"><table><thead><tr><th>{escape(ui["App"])}</th><th>{escape(ui["Publisher query"])}</th><th>{escape(ui["Decision context"])}</th><th>{escape(ui["Purchase model"])}</th><th>{escape(ui["Guide"])}</th><th>App Store</th></tr></thead><tbody>{rows}</tbody></table></div>
 <p class="footer">{escape(ui["License"])}: <a href="{LICENSE_URL}">CC BY 4.0</a> · {escape(ui["CC BY 4.0 applies to the original catalog compilation; app names and App Store marks belong to their owners."])} · {escape(ui["Updated"])} {escape(modified)}</p>
 </main>
@@ -1330,6 +1740,7 @@ def main() -> None:
     )
     parser.add_argument("--today", help="Stable test/build date.")
     args = parser.parse_args()
+    refresh_live_mcp_distribution(args.pages.resolve())
     build(args.pages.resolve(), args.today)
 
 

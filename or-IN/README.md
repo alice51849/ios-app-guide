@@ -14,11 +14,11 @@
 >
 > ଏହି ପ୍ରଶ୍ନଗୁଡ଼ିକ ଉଦ୍ଦେଶ୍ୟିତ ବ୍ୟବହାର କେସର ସମ୍ପାଦକୀୟ ବର୍ଣ୍ଣନା, ମାପାଯାଇଥିବା ସନ୍ଧାନ ପରିମାଣ ତଥ୍ୟ, ର୍ୟାଙ୍କିଂ, ସ୍ୱାଧୀନ ସମୀକ୍ଷା କିମ୍ବା ବ୍ୟବହାରକାରୀ ସମର୍ଥନ ନୁହେଁ।
 
-## Lumi Studio ପ୍ରକାଶକ ସନ୍ଧାନ ଉଦ୍ଦେଶ୍ୟ ସୂଚୀ · MCP
+## Lumi Studio ପ୍ରକାଶକ ସନ୍ଧାନ ଉଦ୍ଦେଶ୍ୟ ସୂଚୀ · MCP v1.0.3
 
 ପ୍ରତ୍ୟେକ ଆପ୍ କାହା ପାଇଁ ଡିଜାଇନ୍ କରାଯାଇଛି, ସେମାନେ କେଉଁ କାର୍ଯ୍ୟ ସମ୍ପୂର୍ଣ୍ଣ କରିବାକୁ ଚେଷ୍ଟା କରୁଛନ୍ତି, ଏବଂ ସିଧା App Store ପଥର ପ୍ରଥମ-ପକ୍ଷ ସୂଚୀ।
 
-[MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.alice51849%2Flumi-app-finder&limit=10) · [GitHub](https://github.com/alice51849/lumi-mcp) · [MCPB](https://github.com/alice51849/lumi-mcp/releases/latest/download/lumi-app-finder.mcpb)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.0.3%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjAuMy9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.0.3) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/SHA256SUMS) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 ## ପ୍ରଣାଳୀ
 

@@ -8,6 +8,7 @@ import datetime as dt
 import email.utils
 import hashlib
 import html
+import inspect
 import io
 import importlib.util
 import json
@@ -74,6 +75,7 @@ import gen_cost_compare
 import gen_data_hub
 import gen_feed
 import gen_guide_design
+import gen_github_discovery_readmes
 import gen_hubs
 import gen_image_sitemap
 import gen_linkset
@@ -21741,6 +21743,18 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("### sleep-sound", sereno)
 
     def test_portfolio_discovery_is_disclosed_as_first_party(self):
+        publisher_main = inspect.getsource(
+            publisher_intent_catalog.main
+        )
+        github_main = inspect.getsource(
+            gen_github_discovery_readmes.main
+        )
+        llms_main = inspect.getsource(gen_llms.main)
+        self.assertIn("refresh_live_mcp_distribution", publisher_main)
+        self.assertNotIn("refresh_live_mcp_distribution", github_main)
+        self.assertNotIn("refresh_live_mcp_distribution", llms_main)
+        self.assertIn("use_frozen_mcp_distribution", github_main)
+        self.assertIn("use_frozen_mcp_distribution", llms_main)
         with mock.patch.object(gen_llms.os.path, "exists", return_value=True):
             for full in (False, True):
                 text = "\n".join(
@@ -21748,6 +21762,15 @@ class GeneratorTests(unittest.TestCase):
                 ).lower()
                 self.assertIn("first-party", text)
                 self.assertNotIn("independent", text)
+                for url in (
+                    publisher_intent_catalog.MCP_VSCODE_INSTALL_URL,
+                    publisher_intent_catalog.MCP_CURSOR_INSTALL_URL,
+                    publisher_intent_catalog.MCP_BUNDLE_URL,
+                    publisher_intent_catalog.MCP_REGISTRY_URL,
+                    publisher_intent_catalog.MCP_CHECKSUMS_URL,
+                    publisher_intent_catalog.MCP_DISTRIBUTION_STATE_URL,
+                ):
+                    self.assertIn(url.lower(), text)
         dataset = static_api_catalog.API_DESCRIPTORS[0]["dataset"].lower()
         self.assertIn("first-party", dataset)
         self.assertNotIn("independent", dataset)
@@ -21802,6 +21825,18 @@ class GeneratorTests(unittest.TestCase):
                 for path in (pages / "llms").glob("*.txt")
             }
             self.assertEqual(set(OFFICIAL_LOCALES), catalogs)
+            for locale in OFFICIAL_LOCALES:
+                localized = (
+                    pages / "llms" / f"{locale}.txt"
+                ).read_text(encoding="utf-8")
+                for url in (
+                    publisher_intent_catalog.MCP_VSCODE_INSTALL_URL,
+                    publisher_intent_catalog.MCP_CURSOR_INSTALL_URL,
+                    publisher_intent_catalog.MCP_BUNDLE_URL,
+                    publisher_intent_catalog.MCP_REGISTRY_URL,
+                    publisher_intent_catalog.MCP_CHECKSUMS_URL,
+                ):
+                    self.assertIn(url, localized, locale)
             index = json.loads(
                 (pages / "llms" / "index.json").read_text(
                     encoding="utf-8"
@@ -21811,6 +21846,31 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(
                 list(OFFICIAL_LOCALES),
                 [item["locale"] for item in index["locales"]],
+            )
+            self.assertEqual(
+                {
+                    "name": "Lumi App Finder",
+                    "version": publisher_intent_catalog.MCP_VERSION,
+                    "registry": publisher_intent_catalog.MCP_REGISTRY_URL,
+                    "distribution": (
+                        publisher_intent_catalog.MCP_DISTRIBUTION_STATE_URL
+                    ),
+                    "checksums": (
+                        publisher_intent_catalog.MCP_CHECKSUMS_URL
+                    ),
+                    "installers": {
+                        "vscode": (
+                            publisher_intent_catalog.MCP_VSCODE_INSTALL_URL
+                        ),
+                        "cursor": (
+                            publisher_intent_catalog.MCP_CURSOR_INSTALL_URL
+                        ),
+                        "claude_desktop_mcpb": (
+                            publisher_intent_catalog.MCP_BUNDLE_URL
+                        ),
+                    },
+                },
+                index["mcp"],
             )
             zh_hant = (pages / "llms" / "zh-Hant.txt").read_text(
                 encoding="utf-8"

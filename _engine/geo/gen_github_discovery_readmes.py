@@ -28,9 +28,29 @@ GENERATED_MARKER = (
 QUERY_ORIGIN = "publisher_authored_editorially_localized"
 GUIDE_HOST = "alice51849.github.io"
 GUIDE_PREFIX = "/ios-app-guide/"
-MCP_REPOSITORY_URL = catalog.MCP_REPOSITORY_URL
-MCP_REGISTRY_URL = catalog.MCP_REGISTRY_URL
-MCP_BUNDLE_URL = catalog.MCP_BUNDLE_URL
+
+
+def _sync_mcp_distribution() -> None:
+    global MCP_REPOSITORY_URL
+    global MCP_REGISTRY_URL
+    global MCP_BUNDLE_URL
+    global MCP_NPX_URL
+    global MCP_VERSION
+    global MCP_CHECKSUMS_URL
+    global MCP_VSCODE_INSTALL_URL
+    global MCP_CURSOR_INSTALL_URL
+
+    MCP_REPOSITORY_URL = catalog.MCP_REPOSITORY_URL
+    MCP_REGISTRY_URL = catalog.MCP_REGISTRY_URL
+    MCP_BUNDLE_URL = catalog.MCP_BUNDLE_URL
+    MCP_NPX_URL = catalog.MCP_NPX_URL
+    MCP_VERSION = catalog.MCP_VERSION
+    MCP_CHECKSUMS_URL = catalog.MCP_CHECKSUMS_URL
+    MCP_VSCODE_INSTALL_URL = catalog.MCP_VSCODE_INSTALL_URL
+    MCP_CURSOR_INSTALL_URL = catalog.MCP_CURSOR_INSTALL_URL
+
+
+_sync_mcp_distribution()
 TEXT_FIELDS = (
     "app_key",
     "app_name",
@@ -291,15 +311,18 @@ def _render_readme(
         ">",
         f"> {_markdown_text(ui[catalog.NON_MEASURED])}",
         "",
-        f"## {_markdown_text(ui[catalog.NAME])} · MCP",
+        f"## {_markdown_text(ui[catalog.NAME])} · MCP v{MCP_VERSION}",
         "",
         _markdown_text(ui[catalog.DESCRIPTION]),
         "",
         " · ".join(
             (
+                _markdown_link("VS Code", MCP_VSCODE_INSTALL_URL),
+                _markdown_link("Cursor", MCP_CURSOR_INSTALL_URL),
+                _markdown_link("Claude Desktop (MCPB)", MCP_BUNDLE_URL),
                 _markdown_link("MCP Registry", MCP_REGISTRY_URL),
+                _markdown_link("SHA256SUMS", MCP_CHECKSUMS_URL),
                 _markdown_link("GitHub", MCP_REPOSITORY_URL),
-                _markdown_link("MCPB", MCP_BUNDLE_URL),
             )
         ),
         "",
@@ -441,6 +464,8 @@ def main() -> None:
         help="Pages repository root.",
     )
     args = parser.parse_args()
+    catalog.use_frozen_mcp_distribution(args.pages.resolve())
+    _sync_mcp_distribution()
     build(args.pages.resolve())
 
 

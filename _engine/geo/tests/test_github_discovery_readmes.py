@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import base64
 import json
 import os
 from pathlib import Path
@@ -10,7 +11,7 @@ import re
 import sys
 import unittest
 from unittest import mock
-from urllib.parse import parse_qs, urlparse
+from urllib.parse import parse_qs, unquote, urlparse
 
 
 GEO = Path(__file__).resolve().parents[1]
@@ -23,17 +24,83 @@ import publisher_intent_catalog as catalog
 
 
 class GitHubDiscoveryContractTests(unittest.TestCase):
-    def test_registry_url_uses_the_supported_search_endpoint(self) -> None:
+    def test_registry_url_uses_the_exact_version_endpoint(self) -> None:
         parsed = urlparse(discovery.MCP_REGISTRY_URL)
         self.assertEqual("https", parsed.scheme)
         self.assertEqual("registry.modelcontextprotocol.io", parsed.netloc)
-        self.assertEqual("/v0.1/servers", parsed.path)
         self.assertEqual(
-            {
-                "search": ["io.github.alice51849/lumi-app-finder"],
-                "limit": ["10"],
-            },
-            parse_qs(parsed.query),
+            (
+                "/v0.1/servers/io.github.alice51849%2F"
+                f"lumi-app-finder/versions/{discovery.MCP_VERSION}"
+            ),
+            parsed.path,
+        )
+        self.assertEqual("", parsed.query)
+        latest = urlparse(catalog.MCP_REGISTRY_LATEST_URL)
+        self.assertEqual(
+            (
+                "/v0.1/servers/io.github.alice51849%2F"
+                "lumi-app-finder/versions/latest"
+            ),
+            latest.path,
+        )
+
+    def test_host_installer_urls_decode_to_the_exact_stdio_package(self) -> None:
+        expected_config = {
+            "type": "stdio",
+            "command": "npx",
+            "args": ["-y", discovery.MCP_NPX_URL],
+        }
+        self.assertEqual(
+            (
+                "https://github.com/alice51849/lumi-mcp/releases/"
+                f"download/v{discovery.MCP_VERSION}/"
+                "lumi-app-finder-npx.tgz"
+            ),
+            discovery.MCP_NPX_URL,
+        )
+        self.assertNotIn("/latest/", discovery.MCP_NPX_URL)
+        self.assertNotIn("/latest/", discovery.MCP_BUNDLE_URL)
+        self.assertEqual(
+            (
+                "https://github.com/alice51849/lumi-mcp/releases/"
+                f"download/v{discovery.MCP_VERSION}/SHA256SUMS"
+            ),
+            discovery.MCP_CHECKSUMS_URL,
+        )
+
+        vscode = urlparse(discovery.MCP_VSCODE_INSTALL_URL)
+        self.assertEqual(
+            ("https", "vscode.dev", "/redirect"),
+            (vscode.scheme, vscode.netloc, vscode.path),
+        )
+        vscode_uri = parse_qs(vscode.query)["url"]
+        self.assertEqual(1, len(vscode_uri))
+        prefix = "vscode:mcp/install?"
+        self.assertTrue(vscode_uri[0].startswith(prefix))
+        vscode_config = json.loads(
+            unquote(vscode_uri[0][len(prefix):])
+        )
+        self.assertEqual(
+            {"name": "lumi-app-finder", **expected_config},
+            vscode_config,
+        )
+
+        cursor = urlparse(discovery.MCP_CURSOR_INSTALL_URL)
+        self.assertEqual(
+            ("https", "cursor.com", "/en/install-mcp"),
+            (cursor.scheme, cursor.netloc, cursor.path),
+        )
+        cursor_query = parse_qs(cursor.query)
+        self.assertEqual(["lumi-app-finder"], cursor_query["name"])
+        self.assertEqual(
+            expected_config,
+            json.loads(
+                base64.b64decode(
+                    cursor_query["config"][0],
+                    validate=True,
+                )
+            ),
         )
 
     def test_campaign_tokens_are_unique_and_app_store_safe(self) -> None:
@@ -132,8 +199,33 @@ class GitHubDiscoveryOutputTests(unittest.TestCase):
                 )
                 self.assertEqual(
                     1,
-                    source.count(f"[MCPB]({discovery.MCP_BUNDLE_URL})"),
+                    source.count(
+                        "[VS Code]"
+                        f"({discovery.MCP_VSCODE_INSTALL_URL})"
+                    ),
                 )
+                self.assertEqual(
+                    1,
+                    source.count(
+                        "[Cursor]"
+                        f"({discovery.MCP_CURSOR_INSTALL_URL})"
+                    ),
+                )
+                self.assertEqual(
+                    1,
+                    source.count(
+                        "[Claude Desktop (MCPB)]"
+                        f"({discovery.MCP_BUNDLE_URL})"
+                    ),
+                )
+                self.assertEqual(
+                    1,
+                    source.count(
+                        "[SHA256SUMS]"
+                        f"({discovery.MCP_CHECKSUMS_URL})"
+                    ),
+                )
+                self.assertIn(f"MCP v{discovery.MCP_VERSION}", source)
                 self.assertEqual(
                     1,
                     source.count(

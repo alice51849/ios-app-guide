@@ -47,6 +47,7 @@ from official_locales import (  # noqa: E402
     require_official_locale_coverage,
 )
 import portfolio_offer_catalog  # noqa: E402
+import publisher_intent_catalog  # noqa: E402
 from websub_config import WEBSUB_HUBS  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
@@ -179,6 +180,15 @@ def portfolio_finder_lines(*, full):
         *localized,
         f"- Agent-readable JSON: {SITE}/data/{PORTFOLIO_FINDER_DATASET}.json",
         f"- JSON Schema: {SITE}/data/{PORTFOLIO_FINDER_DATASET}.schema.json",
+        f"- VS Code MCP installer: {publisher_intent_catalog.MCP_VSCODE_INSTALL_URL}",
+        f"- Cursor MCP installer: {publisher_intent_catalog.MCP_CURSOR_INSTALL_URL}",
+        f"- Claude Desktop MCPB: {publisher_intent_catalog.MCP_BUNDLE_URL}",
+        f"- Official MCP Registry: {publisher_intent_catalog.MCP_REGISTRY_URL}",
+        f"- Release SHA256SUMS: {publisher_intent_catalog.MCP_CHECKSUMS_URL}",
+        (
+            "- Verified MCP distribution manifest: "
+            f"{publisher_intent_catalog.MCP_DISTRIBUTION_STATE_URL}"
+        ),
     ]
     if full:
         lines.append(
@@ -403,6 +413,27 @@ def build_localized_llms(locale, live_keys, pages=None):
             f"{portfolio_offer_catalog.catalog_url(locale)}"
         ),
         f"- {ui['dir_dir']} · SVG: {SITE}/{locale}/visuals/",
+        (
+            f"- {ui['dir_dir']} · VS Code: "
+            f"{publisher_intent_catalog.MCP_VSCODE_INSTALL_URL}"
+        ),
+        (
+            f"- {ui['dir_dir']} · Cursor: "
+            f"{publisher_intent_catalog.MCP_CURSOR_INSTALL_URL}"
+        ),
+        (
+            f"- {ui['dir_dir']} · Claude Desktop (MCPB): "
+            f"{publisher_intent_catalog.MCP_BUNDLE_URL}"
+        ),
+        (
+            f"- {ui['dir_dir']} · MCP Registry: "
+            f"{publisher_intent_catalog.MCP_REGISTRY_URL}"
+        ),
+        (
+            f"- {ui['dir_dir']} · MCP "
+            f"v{publisher_intent_catalog.MCP_VERSION} · SHA256SUMS: "
+            f"{publisher_intent_catalog.MCP_CHECKSUMS_URL}"
+        ),
         "",
     ]
     for record in records:
@@ -428,6 +459,26 @@ def build_localized_llms_index(live_keys):
             "ordering": "alphabetical_by_localized_app_name_not_a_ranking",
             "app_count": len(live_keys),
             "locale_count": len(OFFICIAL_LOCALES),
+            "mcp": {
+                "name": "Lumi App Finder",
+                "version": publisher_intent_catalog.MCP_VERSION,
+                "registry": publisher_intent_catalog.MCP_REGISTRY_URL,
+                "distribution": (
+                    publisher_intent_catalog.MCP_DISTRIBUTION_STATE_URL
+                ),
+                "checksums": publisher_intent_catalog.MCP_CHECKSUMS_URL,
+                "installers": {
+                    "vscode": (
+                        publisher_intent_catalog.MCP_VSCODE_INSTALL_URL
+                    ),
+                    "cursor": (
+                        publisher_intent_catalog.MCP_CURSOR_INSTALL_URL
+                    ),
+                    "claude_desktop_mcpb": (
+                        publisher_intent_catalog.MCP_BUNDLE_URL
+                    ),
+                },
+            },
             "locales": [
                 {
                     "locale": locale,
@@ -1796,6 +1847,7 @@ def main():
         help="Use the verified availability snapshot without refreshing it.",
     )
     args = ap.parse_args()
+    publisher_intent_catalog.use_frozen_mcp_distribution(Path(PAGES))
     comp_map = load_competitors()
     live_keys = live_app_keys(
         APPSTORE, PAGES, refresh=not args.cached_live

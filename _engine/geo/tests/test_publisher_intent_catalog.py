@@ -222,8 +222,13 @@ class PublisherIntentLocalizationTests(unittest.TestCase):
             self.assertEqual(version, catalog.MCP_VERSION)
             self.assertEqual(version, catalog.AGENT_SKILL_VERSION)
             self.assertIn(f"/tree/v{version}/", catalog.AGENT_SKILL_URL)
-            for command in catalog.AGENT_SKILL_INSTALL_COMMANDS.values():
+            for key in catalog.AGENT_SKILL_HOSTS:
+                command = catalog.AGENT_SKILL_INSTALL_COMMANDS[key]
                 self.assertIn(f"@v{version}", command)
+            self.assertIn(
+                f"/tree/v{version}/",
+                catalog.AGENT_SKILL_INSTALL_COMMANDS["vercel_skills"],
+            )
             self.assertNotIn("/latest/", catalog.MCP_NPX_URL)
             state = json.loads(state_path.read_text(encoding="utf-8"))
             self.assertEqual(distribution, state)

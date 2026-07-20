@@ -172,6 +172,7 @@ def agent_skill_install_lines(prefix=""):
             ("Cursor", "cursor"),
             ("Codex", "codex"),
             ("Gemini CLI", "gemini_cli"),
+            ("Vercel skills.sh", "vercel_skills"),
         )
     ]
 

@@ -174,7 +174,7 @@ class GitHubDiscoveryContractTests(unittest.TestCase):
             "gemini_cli": "gemini-cli",
         }
         self.assertEqual(
-            set(expected_agents),
+            {*expected_agents, "vercel_skills"},
             set(discovery.AGENT_SKILL_INSTALL_COMMANDS),
         )
         for key, agent in expected_agents.items():
@@ -183,6 +183,22 @@ class GitHubDiscoveryContractTests(unittest.TestCase):
                 expected,
                 shlex.split(discovery.AGENT_SKILL_INSTALL_COMMANDS[key]),
             )
+        self.assertEqual(
+            [
+                "npx",
+                "-y",
+                f"skills@{catalog.VERCEL_SKILLS_CLI_VERSION}",
+                "add",
+                discovery.AGENT_SKILL_URL,
+                "--skill",
+                catalog.AGENT_SKILL_NAME,
+                "-g",
+                "-y",
+            ],
+            shlex.split(
+                discovery.AGENT_SKILL_INSTALL_COMMANDS["vercel_skills"]
+            ),
+        )
 
     def test_campaign_tokens_are_unique_and_app_store_safe(self) -> None:
         tokens = [

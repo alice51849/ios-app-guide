@@ -101,6 +101,114 @@ class PersonaLocaleCoverageTests(unittest.TestCase):
             set(aeo_answers_i18n.ALL_LANGS),
         )
 
+    def test_answer_discovery_only_targets_requested_locales(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            answers = root / "answers"
+            answers.mkdir()
+            for slug in ("missing-french", "missing-japanese"):
+                (answers / f"{slug}.html").write_text(
+                    "<html><body>Guide</body></html>",
+                    encoding="utf-8",
+                )
+            french = root / "fr-FR" / "answers"
+            french.mkdir(parents=True)
+            (french / "missing-japanese.html").write_text(
+                "localized",
+                encoding="utf-8",
+            )
+            japanese = root / "ja" / "answers"
+            japanese.mkdir(parents=True)
+            (japanese / "missing-french.html").write_text(
+                "localized",
+                encoding="utf-8",
+            )
+
+            with (
+                patch.object(aeo_answers_i18n, "ROOT", root),
+                patch.object(aeo_answers_i18n, "ANSWERS", answers),
+            ):
+                self.assertEqual(
+                    ["missing-french"],
+                    aeo_answers_i18n.discover_slugs(
+                        langs=["fr-FR"],
+                    ),
+                )
+                self.assertEqual(
+                    ["missing-japanese"],
+                    aeo_answers_i18n.discover_slugs(
+                        langs=["ja"],
+                    ),
+                )
+
+    def test_curated_discovery_prioritizes_pages_that_can_progress(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            answers = root / "answers"
+            answers.mkdir()
+            (answers / "blocked.html").write_text(
+                "<html><body><h1>Blocked</h1></body></html>",
+                encoding="utf-8",
+            )
+            (answers / "ready.html").write_text(
+                "<html><body><h1>Ready</h1></body></html>",
+                encoding="utf-8",
+            )
+
+            with (
+                patch.object(aeo_answers_i18n, "ROOT", root),
+                patch.object(aeo_answers_i18n, "ANSWERS", answers),
+            ):
+                self.assertEqual(
+                    ["ready", "blocked"],
+                    aeo_answers_i18n.prioritize_translatable_slugs(
+                        ["blocked", "ready"],
+                        ["fr-FR"],
+                        {"fr-FR": {"Ready": "Prêt"}},
+                    ),
+                )
+
+    def test_curated_main_prioritizes_progress_before_applying_limit(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            answers = root / "answers"
+            answers.mkdir()
+            (answers / "blocked.html").write_text(
+                "<html><body><h1>Blocked</h1></body></html>",
+                encoding="utf-8",
+            )
+            (answers / "ready.html").write_text(
+                "<html><body><h1>Ready</h1></body></html>",
+                encoding="utf-8",
+            )
+            translations = root / "translations"
+            translations.mkdir()
+            (translations / "fr-FR.json").write_text(
+                '{"Ready": "Prêt"}',
+                encoding="utf-8",
+            )
+            argv = [
+                "aeo_answers_i18n.py",
+                "--langs",
+                "fr-FR",
+                "--trans",
+                str(translations),
+                "--limit",
+                "1",
+                "--defer-shared-refresh",
+            ]
+
+            with (
+                patch.object(aeo_answers_i18n, "ROOT", root),
+                patch.object(aeo_answers_i18n, "ANSWERS", answers),
+                patch.object(sys, "argv", argv),
+            ):
+                self.assertEqual(0, aeo_answers_i18n.main())
+
+            localized = root / "fr-FR" / "answers"
+            self.assertTrue((localized / "ready.html").exists())
+            self.assertFalse((localized / "blocked.html").exists())
+
     def test_translation_mapping_must_be_complete(self):
         with self.assertRaisesRegex(ValueError, "missing=1"):
             aeo_answers_i18n.require_complete_mapping(

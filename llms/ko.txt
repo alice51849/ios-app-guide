@@ -21,6 +21,7 @@ apps: 28
 - 앱 목록 · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent cursor
 - 앱 목록 · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent codex
 - 앱 목록 · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent gemini-cli
+- 앱 목록 · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
 - 앱 목록 · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
 - 앱 목록 · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
 - 앱 목록 · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz

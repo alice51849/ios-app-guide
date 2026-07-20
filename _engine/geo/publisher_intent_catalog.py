@@ -47,6 +47,7 @@ MCP_REPOSITORY_URL = "https://github.com/alice51849/lumi-mcp"
 AGENT_SKILL_REPOSITORY = "alice51849/lumi-mcp"
 AGENT_SKILL_NAME = "lumi-app-finder"
 AGENT_SKILL_DIRECTORY = f"skills/{AGENT_SKILL_NAME}"
+VERCEL_SKILLS_CLI_VERSION = "1.5.19"
 AGENT_SKILL_HOSTS = {
     "github_copilot": "github-copilot",
     "claude_code": "claude-code",
@@ -299,6 +300,10 @@ def _configure_mcp_distribution(payload: object) -> None:
         )
         for key, host in AGENT_SKILL_HOSTS.items()
     }
+    AGENT_SKILL_INSTALL_COMMANDS["vercel_skills"] = (
+        f"npx -y skills@{VERCEL_SKILLS_CLI_VERSION} add "
+        f"{AGENT_SKILL_URL} --skill {AGENT_SKILL_NAME} -g -y"
+    )
 
 
 _configure_mcp_distribution(_load_mcp_distribution())
@@ -1575,7 +1580,8 @@ def _schema_org(
                 "description": ui[DESCRIPTION],
                 "applicationCategory": "DeveloperApplication",
                 "operatingSystem": (
-                    "GitHub Copilot, Claude Code, Cursor, Codex, Gemini CLI"
+                    "GitHub Copilot, Claude Code, Cursor, Codex, Gemini CLI, "
+                    "Vercel Skills CLI"
                 ),
                 "url": AGENT_SKILL_URL,
                 "downloadUrl": AGENT_SKILL_URL,
@@ -1684,6 +1690,7 @@ def _page(
             ("Cursor", "cursor"),
             ("Codex", "codex"),
             ("Gemini CLI", "gemini_cli"),
+            ("Vercel skills.sh", "vercel_skills"),
         )
     )
     mcp_commands = "".join(

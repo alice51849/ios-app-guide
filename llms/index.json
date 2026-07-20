@@ -38,7 +38,8 @@
       "claude_code": "gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent claude-code",
       "cursor": "gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent cursor",
       "codex": "gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent codex",
-      "gemini_cli": "gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent gemini-cli"
+      "gemini_cli": "gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent gemini-cli",
+      "vercel_skills": "npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder --skill lumi-app-finder -g -y"
     }
   },
   "pwa": {

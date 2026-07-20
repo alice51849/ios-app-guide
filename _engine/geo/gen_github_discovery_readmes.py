@@ -346,7 +346,7 @@ def _render_readme(
         "<details>",
         (
             "<summary>Agent Skill · GitHub Copilot · Claude Code · "
-            "Cursor · Codex · Gemini CLI</summary>"
+            "Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>"
         ),
         "",
         "**Agent Skill · GitHub Copilot**",
@@ -377,6 +377,12 @@ def _render_readme(
         "",
         "```sh",
         AGENT_SKILL_INSTALL_COMMANDS["gemini_cli"],
+        "```",
+        "",
+        "**Agent Skill · Vercel skills.sh**",
+        "",
+        "```sh",
+        AGENT_SKILL_INSTALL_COMMANDS["vercel_skills"],
         "```",
         "",
         "**Claude Code**",

@@ -954,17 +954,52 @@ def localize_url(url: str, lang: str) -> str:
     )
 
 
-def discover_slugs(limit: int | None = None) -> list[str]:
+def discover_slugs(
+    limit: int | None = None,
+    langs: list[str] | None = None,
+) -> list[str]:
     english = {p.name for p in ANSWERS.glob("*.html") if p.name != "index.html"}
+    target_langs = langs or ALL_LANGS
 
-    def missing_any_lang(name: str) -> bool:
-        return any(not (ROOT / lang / "answers" / name).exists() for lang in ALL_LANGS)
+    def missing_target_lang(name: str) -> bool:
+        return any(
+            not (ROOT / lang / "answers" / name).exists()
+            for lang in target_langs
+        )
 
-    todo = sorted(n for n in english if missing_any_lang(n))
-    aim = [x for x in todo if re.search(r"(toeic|990)", x)]
-    other = [x for x in todo if x not in set(aim)]
-    ordered = [Path(x).stem for x in aim + other]
+    todo = sorted(n for n in english if missing_target_lang(n))
+    ordered = [Path(x).stem for x in todo]
     return ordered[:limit] if limit else ordered
+
+
+def prioritize_translatable_slugs(
+    slugs: list[str],
+    langs: list[str],
+    global_maps: dict[str, dict[str, str]],
+) -> list[str]:
+    progressable: list[str] = []
+    blocked: list[str] = []
+    for slug in slugs:
+        source_path = ANSWERS / f"{slug}.html"
+        if not source_path.exists():
+            blocked.append(slug)
+            continue
+        strings, _, _ = extract_strings(
+            source_path.read_text(encoding="utf-8")
+        )
+        can_progress = any(
+            not (ROOT / lang / "answers" / f"{slug}.html").exists()
+            and (
+                lang in ENGLISH_LOCALES
+                or all(
+                    source in global_maps.get(lang, {})
+                    for source in strings
+                )
+            )
+            for lang in langs
+        )
+        (progressable if can_progress else blocked).append(slug)
+    return progressable + blocked
 
 
 def parse_langs(raw: str | None) -> list[str]:
@@ -1826,7 +1861,31 @@ def main() -> int:
         )
 
     langs = parse_langs(args.langs)
-    slugs = [Path(s).stem for s in args.slugs] if args.slugs else discover_slugs(args.limit)
+    # --trans:每語言載入全域字典 + 累積缺漏(供 agent 下次補譯)。
+    global_maps: dict[str, dict[str, str]] = {}
+    missing_acc: dict[str, dict[str, int]] = {}
+    if args.trans:
+        for lang in langs:
+            gp = Path(args.trans) / f"{lang}.json"
+            global_maps[lang] = (
+                json.loads(gp.read_text(encoding="utf-8"))
+                if gp.exists()
+                else {}
+            )
+            missing_acc[lang] = {}
+
+    if args.slugs:
+        slugs = [Path(s).stem for s in args.slugs]
+    else:
+        slugs = discover_slugs(langs=langs)
+        if args.trans:
+            slugs = prioritize_translatable_slugs(
+                slugs,
+                langs,
+                global_maps,
+            )
+        if args.limit:
+            slugs = slugs[:args.limit]
 
     # --dump:輸出待譯字串(語言無關,strings 對所有語言相同),供 agent 自行翻譯。
     if args.dump:
@@ -1867,15 +1926,6 @@ def main() -> int:
         else None
     )
     created = skipped = failed = 0
-    # --trans:每語言載入全域字典 + 累積缺漏(供 agent 下次補譯)。
-    global_maps: dict[str, dict[str, str]] = {}
-    missing_acc: dict[str, dict[str, int]] = {}
-    if args.trans:
-        for lang in langs:
-            gp = Path(args.trans) / f"{lang}.json"
-            global_maps[lang] = json.loads(gp.read_text(encoding="utf-8")) if gp.exists() else {}
-            missing_acc[lang] = {}
-
     print("Slugs:", flush=True)
     for slug in slugs:
         print(f"  {slug}", flush=True)

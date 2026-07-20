@@ -128,6 +128,6 @@ JSON, JSONL dan CSV mengandungi 1,400 rekod yang sama.
 
 [Laman Utama](https://alice51849.github.io/ios-app-guide/ms/index.html) · [Data terbuka](https://alice51849.github.io/ios-app-guide/ms/data/lumi-studio-publisher-search-intent-catalog.html) · [Lesen](https://creativecommons.org/licenses/by/4.0/)
 
-Dikemas kini: 2026-07-21
+Dikemas kini: 2026-07-20
 
 CC BY 4.0 terpakai kepada kompilasi katalog asal; nama aplikasi dan tanda App Store adalah milik pemilik masing-masing.

@@ -21924,7 +21924,9 @@ class GeneratorTests(unittest.TestCase):
                     publisher_intent_catalog.MCP_CHECKSUMS_URL,
                     publisher_intent_catalog.MCP_DISTRIBUTION_STATE_URL,
                     publisher_intent_catalog.MCP_CLIENT_CONFIG_URL,
+                    publisher_intent_catalog.AGENT_SKILL_URL,
                     *publisher_intent_catalog.MCP_INSTALL_COMMANDS.values(),
+                    *publisher_intent_catalog.AGENT_SKILL_INSTALL_COMMANDS.values(),
                 ):
                     self.assertIn(url.lower(), text)
         dataset = static_api_catalog.API_DESCRIPTORS[0]["dataset"].lower()
@@ -22000,7 +22002,12 @@ class GeneratorTests(unittest.TestCase):
                     publisher_intent_catalog.MCP_REGISTRY_URL,
                     publisher_intent_catalog.MCP_CHECKSUMS_URL,
                     publisher_intent_catalog.MCP_CLIENT_CONFIG_URL,
+                    publisher_intent_catalog.AGENT_SKILL_URL,
+                    publisher_intent_catalog.agent_skill_reference_url(
+                        locale
+                    ),
                     *publisher_intent_catalog.MCP_INSTALL_COMMANDS.values(),
+                    *publisher_intent_catalog.AGENT_SKILL_INSTALL_COMMANDS.values(),
                 ):
                     self.assertIn(url, localized, locale)
             index = json.loads(
@@ -22012,6 +22019,37 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(
                 list(OFFICIAL_LOCALES),
                 [item["locale"] for item in index["locales"]],
+            )
+            self.assertEqual(
+                {
+                    "name": publisher_intent_catalog.AGENT_SKILL_NAME,
+                    "version": publisher_intent_catalog.AGENT_SKILL_VERSION,
+                    "source": publisher_intent_catalog.AGENT_SKILL_URL,
+                    "publisher": "Lumi Studio",
+                    "first_party": True,
+                    "independent_ranking": False,
+                    "offline_after_install": True,
+                    "app_count": (
+                        publisher_intent_catalog.EXPECTED_APP_COUNT
+                    ),
+                    "locale_count": 50,
+                    "commands": dict(
+                        publisher_intent_catalog.AGENT_SKILL_INSTALL_COMMANDS
+                    ),
+                },
+                index["agent_skill"],
+            )
+            self.assertEqual(
+                [
+                    publisher_intent_catalog.agent_skill_reference_url(
+                        locale
+                    )
+                    for locale in OFFICIAL_LOCALES
+                ],
+                [
+                    item["agent_skill_catalog"]
+                    for item in index["locales"]
+                ],
             )
             self.assertEqual(
                 {

@@ -162,6 +162,20 @@ def wordmate_language_support_lines(*, full):
     ]
 
 
+def agent_skill_install_lines(prefix=""):
+    return [
+        f"- {prefix}Agent Skill · {label}: "
+        f"{publisher_intent_catalog.AGENT_SKILL_INSTALL_COMMANDS[key]}"
+        for label, key in (
+            ("GitHub Copilot", "github_copilot"),
+            ("Claude Code", "claude_code"),
+            ("Cursor", "cursor"),
+            ("Codex", "codex"),
+            ("Gemini CLI", "gemini_cli"),
+        )
+    ]
+
+
 def portfolio_finder_lines(*, full):
     """Describe the finder only after its verified catalogue exists."""
     if not os.path.exists(
@@ -193,6 +207,11 @@ def portfolio_finder_lines(*, full):
         f"- Claude Desktop MCPB: {publisher_intent_catalog.MCP_BUNDLE_URL}",
         f"- Official MCP Registry: {publisher_intent_catalog.MCP_REGISTRY_URL}",
         f"- Release SHA256SUMS: {publisher_intent_catalog.MCP_CHECKSUMS_URL}",
+        (
+            "- Agent Skill source: "
+            f"{publisher_intent_catalog.AGENT_SKILL_URL}"
+        ),
+        *agent_skill_install_lines(),
         (
             "- Verified MCP distribution manifest: "
             f"{publisher_intent_catalog.MCP_DISTRIBUTION_STATE_URL}"
@@ -467,6 +486,15 @@ def build_localized_llms(locale, live_keys, pages=None):
             f"{publisher_intent_catalog.MCP_CLIENT_CONFIG_URL}"
         ),
         (
+            f"- {ui['dir_dir']} · Agent Skill: "
+            f"{publisher_intent_catalog.AGENT_SKILL_URL}"
+        ),
+        (
+            f"- {ui['dir_dir']} · Agent Skill · {locale}: "
+            f"{publisher_intent_catalog.agent_skill_reference_url(locale)}"
+        ),
+        *agent_skill_install_lines(f"{ui['dir_dir']} · "),
+        (
             f"- {ui['dir_dir']} · Claude Code: "
             f"{publisher_intent_catalog.MCP_INSTALL_COMMANDS['claude_code']}"
         ),
@@ -529,6 +557,20 @@ def build_localized_llms_index(live_keys):
                     ),
                 },
             },
+            "agent_skill": {
+                "name": publisher_intent_catalog.AGENT_SKILL_NAME,
+                "version": publisher_intent_catalog.AGENT_SKILL_VERSION,
+                "source": publisher_intent_catalog.AGENT_SKILL_URL,
+                "publisher": "Lumi Studio",
+                "first_party": True,
+                "independent_ranking": False,
+                "offline_after_install": True,
+                "app_count": publisher_intent_catalog.EXPECTED_APP_COUNT,
+                "locale_count": len(OFFICIAL_LOCALES),
+                "commands": dict(
+                    publisher_intent_catalog.AGENT_SKILL_INSTALL_COMMANDS
+                ),
+            },
             "pwa": {
                 "name": "Lumi Finder",
                 "start_url": (
@@ -553,6 +595,11 @@ def build_localized_llms_index(live_keys):
                     "pwa_manifest": (
                         f"{SITE}/{locale}/tools/"
                         f"{PORTFOLIO_FINDER_TOOL}.webmanifest"
+                    ),
+                    "agent_skill_catalog": (
+                        publisher_intent_catalog.agent_skill_reference_url(
+                            locale
+                        )
                     ),
                     "app_count": len(live_keys),
                 }

@@ -220,6 +220,10 @@ class PublisherIntentLocalizationTests(unittest.TestCase):
             )
             self.assertEqual(npx_sha256, distribution["npx_sha256"])
             self.assertEqual(version, catalog.MCP_VERSION)
+            self.assertEqual(version, catalog.AGENT_SKILL_VERSION)
+            self.assertIn(f"/tree/v{version}/", catalog.AGENT_SKILL_URL)
+            for command in catalog.AGENT_SKILL_INSTALL_COMMANDS.values():
+                self.assertIn(f"@v{version}", command)
             self.assertNotIn("/latest/", catalog.MCP_NPX_URL)
             state = json.loads(state_path.read_text(encoding="utf-8"))
             self.assertEqual(distribution, state)
@@ -656,7 +660,18 @@ class PublisherIntentOutputTests(unittest.TestCase):
             self.assertEqual("Dataset", schema["@type"])
             self.assertEqual(catalog.CROISSANT_SPEC, schema["conformsTo"])
             self.assertEqual("Lumi Studio", schema["creator"]["name"])
-            mcp = schema["subjectOf"]
+            subjects = schema["subjectOf"]
+            self.assertEqual(2, len(subjects))
+            mcp = next(
+                subject
+                for subject in subjects
+                if subject["@id"].endswith("#mcp-server")
+            )
+            skill = next(
+                subject
+                for subject in subjects
+                if subject["@id"].endswith("#agent-skill")
+            )
             self.assertEqual("SoftwareApplication", mcp["@type"])
             self.assertEqual(catalog.MCP_REPOSITORY_URL, mcp["url"])
             self.assertEqual(catalog.MCP_REGISTRY_URL, mcp["sameAs"])
@@ -673,6 +688,16 @@ class PublisherIntentOutputTests(unittest.TestCase):
                     for action in mcp["potentialAction"]
                     if action["@type"] == "InstallAction"
                 },
+            )
+            self.assertEqual("SoftwareApplication", skill["@type"])
+            self.assertEqual(catalog.AGENT_SKILL_URL, skill["url"])
+            self.assertEqual(
+                catalog.AGENT_SKILL_VERSION,
+                skill["softwareVersion"],
+            )
+            self.assertEqual(
+                catalog.AGENT_SKILL_URL,
+                skill["potentialAction"]["target"],
             )
             self.assertIn(
                 f'href="{html.escape(catalog.MCP_REGISTRY_URL, quote=True)}"',
@@ -706,7 +731,13 @@ class PublisherIntentOutputTests(unittest.TestCase):
                 f'href="{catalog.MCP_CLIENT_CONFIG_URL}"',
                 source,
             )
+            self.assertIn(
+                f'href="{catalog.AGENT_SKILL_URL}"',
+                source,
+            )
             for command in catalog.MCP_INSTALL_COMMANDS.values():
+                self.assertIn(html.escape(command), source)
+            for command in catalog.AGENT_SKILL_INSTALL_COMMANDS.values():
                 self.assertIn(html.escape(command), source)
             self.assertEqual(4, len(schema["distribution"]))
             self.assertEqual(

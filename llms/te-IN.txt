@@ -8,15 +8,22 @@ apps: 28
 - యాప్ డైరెక్టరీ · PWA: https://alice51849.github.io/ios-app-guide/te-IN/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/te-IN.jsonld
 - యాప్ డైరెక్టరీ · SVG: https://alice51849.github.io/ios-app-guide/te-IN/visuals/
-- యాప్ డైరెక్టరీ · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.0.3%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- యాప్ డైరెక్టరీ · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjAuMy9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- యాప్ డైరెక్టరీ · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder.mcpb
-- యాప్ డైరెక్టరీ · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.0.3
-- యాప్ డైరెక్టరీ · MCP v1.0.3 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/SHA256SUMS
+- యాప్ డైరెక్టరీ · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- యాప్ డైరెక్టరీ · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- యాప్ డైరెక్టరీ · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder.mcpb
+- యాప్ డైరెక్టరీ · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.0
+- యాప్ డైరెక్టరీ · MCP v1.1.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/SHA256SUMS
 - యాప్ డైరెక్టరీ · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- యాప్ డైరెక్టరీ · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
-- యాప్ డైరెక్టరీ · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
-- యాప్ డైరెక్టరీ · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
+- యాప్ డైరెక్టరీ · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder
+- యాప్ డైరెక్టరీ · Agent Skill · te-IN: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.1.0/skills/lumi-app-finder/references/te-IN.json
+- యాప్ డైరెక్టరీ · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user
+- యాప్ డైరెక్టరీ · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent claude-code
+- యాప్ డైరెక్టరీ · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent cursor
+- యాప్ డైరెక్టరీ · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent codex
+- యాప్ డైరెక్టరీ · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent gemini-cli
+- యాప్ డైరెక్టరీ · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+- యాప్ డైరెక్టరీ · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+- యాప్ డైరెక్టరీ · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
 
 - [Aim990: TOEIC Coaching](https://alice51849.github.io/ios-app-guide/te-IN/aim990.html) — TOEIC కోసం 30 రోజుల ప్రిపరేషన్
   - రోజువారీ Listening, Reading ప్రాక్టీస్, బలహీనమైన అంశాలపై దృష్టి మరియు ప్రోగ్రెస్ ట్రాకింగ్‌తో TOEICకు సిద్ధమవండి.

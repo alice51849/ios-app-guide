@@ -14,31 +14,61 @@ Vom Herausgeber verfasste Suchintentionen für 28 verifizierte, im App Store ver
 >
 > Die Suchanfragen sind redaktionelle Beschreibungen der vorgesehenen Anwendungsfälle und keine gemessenen Suchvolumendaten, Ranglisten, unabhängigen Bewertungen oder Nutzerempfehlungen.
 
-## Lumi Studio – Katalog der Suchintentionen des Herausgebers · MCP v1.0.3
+## Lumi Studio – Katalog der Suchintentionen des Herausgebers · MCP v1.1.0 · Agent Skill
 
 Ein direkt vom Entwickler veröffentlichter Katalog, der zeigt, für wen jede App entwickelt wurde, welche Aufgabe die jeweilige Person erledigen möchte und wie sie direkt zum App Store gelangt.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.0.3%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjAuMy9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.0.3) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/SHA256SUMS) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.0) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
-<summary>Claude Code · Codex · Gemini CLI</summary>
+<summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI</summary>
+
+**Agent Skill · GitHub Copilot**
+
+```sh
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user
+```
+
+**Agent Skill · Claude Code**
+
+```sh
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent claude-code
+```
+
+**Agent Skill · Cursor**
+
+```sh
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent cursor
+```
+
+**Agent Skill · Codex**
+
+```sh
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent codex
+```
+
+**Agent Skill · Gemini CLI**
+
+```sh
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent gemini-cli
+```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.0.3/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -92,6 +122,6 @@ JSON, JSONL und CSV enthalten dieselben 1.400 Einträge.
 
 [Startseite](https://alice51849.github.io/ios-app-guide/de-DE/index.html) · [Offene Daten](https://alice51849.github.io/ios-app-guide/de-DE/data/lumi-studio-publisher-search-intent-catalog.html) · [Lizenz](https://creativecommons.org/licenses/by/4.0/)
 
-Aktualisiert: 2026-07-20
+Aktualisiert: 2026-07-21
 
 CC BY 4.0 gilt für die ursprüngliche Katalogzusammenstellung; App-Namen und App Store Marken gehören ihren jeweiligen Eigentümern.

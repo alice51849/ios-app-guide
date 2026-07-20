@@ -44,6 +44,16 @@ LICENSE_URL = "https://creativecommons.org/licenses/by/4.0/"
 MCP_SERVER_NAME = "io.github.alice51849/lumi-app-finder"
 MCP_SERVER_NAME_ENCODED = "io.github.alice51849%2Flumi-app-finder"
 MCP_REPOSITORY_URL = "https://github.com/alice51849/lumi-mcp"
+AGENT_SKILL_REPOSITORY = "alice51849/lumi-mcp"
+AGENT_SKILL_NAME = "lumi-app-finder"
+AGENT_SKILL_DIRECTORY = f"skills/{AGENT_SKILL_NAME}"
+AGENT_SKILL_HOSTS = {
+    "github_copilot": "github-copilot",
+    "claude_code": "claude-code",
+    "cursor": "cursor",
+    "codex": "codex",
+    "gemini_cli": "gemini-cli",
+}
 MCP_REGISTRY_BASE_URL = (
     "https://registry.modelcontextprotocol.io/v0.1/servers/"
     f"{MCP_SERVER_NAME_ENCODED}/versions"
@@ -132,28 +142,28 @@ _DEFAULT_MCP_DISTRIBUTION = _validated_mcp_distribution(
     {
         "schema_version": 1,
         "server_name": MCP_SERVER_NAME,
-        "version": "1.0.3",
-        "registry_url": f"{MCP_REGISTRY_BASE_URL}/1.0.3",
+        "version": "1.1.0",
+        "registry_url": f"{MCP_REGISTRY_BASE_URL}/1.1.0",
         "registry_latest_url": MCP_REGISTRY_LATEST_URL,
         "repository_url": MCP_REPOSITORY_URL,
         "mcpb_url": (
-            f"{MCP_REPOSITORY_URL}/releases/download/v1.0.3/"
+            f"{MCP_REPOSITORY_URL}/releases/download/v1.1.0/"
             "lumi-app-finder.mcpb"
         ),
         "mcpb_sha256": (
-            "592172803fd74c22bd4611cf91d41274f"
-            "3e9792c2e6f01897813f6558df4323d"
+            "4ff63b9c1676c8777ff61159c97e7fc1"
+            "b88d1fe4e7c31eb89d4c53944e2c2ec8"
         ),
         "npx_url": (
-            f"{MCP_REPOSITORY_URL}/releases/download/v1.0.3/"
+            f"{MCP_REPOSITORY_URL}/releases/download/v1.1.0/"
             "lumi-app-finder-npx.tgz"
         ),
         "npx_sha256": (
-            "57f023eebeea659c527060743ee1159cd"
-            "caa136b09e5a8e5842fa711c3bdc513"
+            "12f3d99ace8ed14542705e9458a2c8183"
+            "1e596d833c09886d32ec33de277c763"
         ),
         "checksums_url": (
-            f"{MCP_REPOSITORY_URL}/releases/download/v1.0.3/"
+            f"{MCP_REPOSITORY_URL}/releases/download/v1.1.0/"
             "SHA256SUMS"
         ),
     }
@@ -209,6 +219,10 @@ def _configure_mcp_distribution(payload: object) -> None:
     global MCP_VSCODE_INSTALL_URL
     global MCP_CURSOR_INSTALL_URL
     global MCP_INSTALL_COMMANDS
+    global AGENT_SKILL_VERSION
+    global AGENT_SKILL_URL
+    global AGENT_SKILL_RAW_BASE_URL
+    global AGENT_SKILL_INSTALL_COMMANDS
 
     state = _validated_mcp_distribution(payload)
     MCP_DISTRIBUTION = state
@@ -262,6 +276,28 @@ def _configure_mcp_distribution(payload: object) -> None:
             "gemini mcp add --scope user lumi-app-finder "
             f"npx -y {MCP_NPX_URL}"
         ),
+    }
+    AGENT_SKILL_VERSION = MCP_VERSION
+    AGENT_SKILL_URL = (
+        f"{MCP_REPOSITORY_URL}/tree/v{AGENT_SKILL_VERSION}/"
+        f"{AGENT_SKILL_DIRECTORY}"
+    )
+    AGENT_SKILL_RAW_BASE_URL = (
+        "https://raw.githubusercontent.com/"
+        f"{AGENT_SKILL_REPOSITORY}/v{AGENT_SKILL_VERSION}/"
+        f"{AGENT_SKILL_DIRECTORY}/references"
+    )
+    base_skill_command = (
+        f"gh skill install {AGENT_SKILL_REPOSITORY} "
+        f"{AGENT_SKILL_NAME}@v{AGENT_SKILL_VERSION} --scope user"
+    )
+    AGENT_SKILL_INSTALL_COMMANDS = {
+        key: (
+            base_skill_command
+            if key == "github_copilot"
+            else f"{base_skill_command} --agent {host}"
+        )
+        for key, host in AGENT_SKILL_HOSTS.items()
     }
 
 
@@ -542,6 +578,12 @@ def mcp_client_config_payload() -> dict[str, object]:
             }
         }
     }
+
+
+def agent_skill_reference_url(locale: str) -> str:
+    if locale not in OFFICIAL_LOCALES:
+        raise ValueError(f"Unsupported Agent Skill locale: {locale!r}")
+    return f"{AGENT_SKILL_RAW_BASE_URL}/{locale}.json"
 
 
 def _fetch_bytes(url: str, max_bytes: int) -> bytes:
@@ -1498,33 +1540,56 @@ def _schema_org(
             "url": f"{SITE}/data/",
         },
         "measurementTechnique": ui[METHODOLOGY],
-        "subjectOf": {
-            "@type": "SoftwareApplication",
-            "@id": f"{MCP_REPOSITORY_URL}#mcp-server",
-            "name": "Lumi App Finder",
-            "description": ui[DESCRIPTION],
-            "applicationCategory": "DeveloperApplication",
-            "operatingSystem": "Node.js 20 or later",
-            "url": MCP_REPOSITORY_URL,
-            "sameAs": MCP_REGISTRY_URL,
-            "downloadUrl": MCP_BUNDLE_URL,
-            "installUrl": MCP_NPX_URL,
-            "softwareVersion": MCP_VERSION,
-            "isAccessibleForFree": True,
-            "author": {"@id": f"{SITE}/#organization"},
-            "potentialAction": [
-                {
+        "subjectOf": [
+            {
+                "@type": "SoftwareApplication",
+                "@id": f"{MCP_REPOSITORY_URL}#mcp-server",
+                "name": "Lumi App Finder",
+                "description": ui[DESCRIPTION],
+                "applicationCategory": "DeveloperApplication",
+                "operatingSystem": "Node.js 20 or later",
+                "url": MCP_REPOSITORY_URL,
+                "sameAs": MCP_REGISTRY_URL,
+                "downloadUrl": MCP_BUNDLE_URL,
+                "installUrl": MCP_NPX_URL,
+                "softwareVersion": MCP_VERSION,
+                "isAccessibleForFree": True,
+                "author": {"@id": f"{SITE}/#organization"},
+                "potentialAction": [
+                    {
+                        "@type": "InstallAction",
+                        "name": "Install in VS Code",
+                        "target": MCP_VSCODE_INSTALL_URL,
+                    },
+                    {
+                        "@type": "InstallAction",
+                        "name": "Install in Cursor",
+                        "target": MCP_CURSOR_INSTALL_URL,
+                    },
+                ],
+            },
+            {
+                "@type": "SoftwareApplication",
+                "@id": f"{AGENT_SKILL_URL}#agent-skill",
+                "name": "Lumi App Finder Agent Skill",
+                "description": ui[DESCRIPTION],
+                "applicationCategory": "DeveloperApplication",
+                "operatingSystem": (
+                    "GitHub Copilot, Claude Code, Cursor, Codex, Gemini CLI"
+                ),
+                "url": AGENT_SKILL_URL,
+                "downloadUrl": AGENT_SKILL_URL,
+                "installUrl": AGENT_SKILL_URL,
+                "softwareVersion": AGENT_SKILL_VERSION,
+                "isAccessibleForFree": True,
+                "author": {"@id": f"{SITE}/#organization"},
+                "potentialAction": {
                     "@type": "InstallAction",
-                    "name": "Install in VS Code",
-                    "target": MCP_VSCODE_INSTALL_URL,
+                    "name": "Install with GitHub CLI",
+                    "target": AGENT_SKILL_URL,
                 },
-                {
-                    "@type": "InstallAction",
-                    "name": "Install in Cursor",
-                    "target": MCP_CURSOR_INSTALL_URL,
-                },
-            ],
-        },
+            },
+        ],
         "distribution": [
             {
                 "@type": "DataDownload",
@@ -1606,7 +1671,19 @@ def _page(
             ("MCP Registry", MCP_REGISTRY_URL),
             ("MCP client config", MCP_CLIENT_CONFIG_URL),
             ("SHA256SUMS", MCP_CHECKSUMS_URL),
+            ("Agent Skill", AGENT_SKILL_URL),
             ("GitHub", MCP_REPOSITORY_URL),
+        )
+    )
+    skill_commands = "".join(
+        f"<p><strong>Agent Skill · {escape(label)}</strong> "
+        f"<code>{escape(AGENT_SKILL_INSTALL_COMMANDS[key])}</code></p>"
+        for label, key in (
+            ("GitHub Copilot", "github_copilot"),
+            ("Claude Code", "claude_code"),
+            ("Cursor", "cursor"),
+            ("Codex", "codex"),
+            ("Gemini CLI", "gemini_cli"),
         )
     )
     mcp_commands = "".join(
@@ -1670,7 +1747,7 @@ tr:last-child td{{border-bottom:0}}
 <div class="downloads"><strong>{escape(ui["Download the complete dataset"])}</strong><a class="download" href="{SITE}/data/{SLUG}.json">JSON</a><a class="download" href="{SITE}/data/{SLUG}.jsonl">JSONL</a><a class="download" href="{SITE}/data/{SLUG}.csv">CSV</a><a class="download" href="{CROISSANT_URL}">Croissant 1.1</a></div>
 <div class="cards"><section class="card"><h2>{escape(ui["Methodology"])}</h2><p>{escape(ui[METHODOLOGY])}</p><p>{escape(ui["Alphabetical by app name — never a ranking."])}</p></section><section class="card"><h2>{escape(ui["What this dataset contains"])}</h2><p>{escape(ui["JSON, JSONL and CSV contain the same 1,300 records."])}</p><p>{escape(ui["Scroll horizontally to inspect every field."])}</p></section></div>
 <section class="card"><h2>{escape(ui["First-party publisher catalog"])}</h2><p>{escape(ui[DISCLOSURE])}</p><p>{escape(ui[NON_MEASURED])}</p></section>
-<section class="card"><h2>{escape(ui[NAME])} · MCP v{escape(MCP_VERSION)}</h2><p>{escape(ui[DESCRIPTION])}</p><p>{mcp_links}</p>{mcp_commands}</section>
+<section class="card"><h2>{escape(ui[NAME])} · MCP v{escape(MCP_VERSION)} · Agent Skill</h2><p>{escape(ui[DESCRIPTION])}</p><p>{mcp_links}</p>{skill_commands}{mcp_commands}</section>
 <div class="table-wrap"><table><thead><tr><th>{escape(ui["App"])}</th><th>{escape(ui["Publisher query"])}</th><th>{escape(ui["Decision context"])}</th><th>{escape(ui["Purchase model"])}</th><th>{escape(ui["Guide"])}</th><th>App Store</th></tr></thead><tbody>{rows}</tbody></table></div>
 <p class="footer">{escape(ui["License"])}: <a href="{LICENSE_URL}">CC BY 4.0</a> · {escape(ui["CC BY 4.0 applies to the original catalog compilation; app names and App Store marks belong to their owners."])} · {escape(ui["Updated"])} {escape(modified)}</p>
 </main>

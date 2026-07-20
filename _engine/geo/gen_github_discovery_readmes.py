@@ -41,6 +41,9 @@ def _sync_mcp_distribution() -> None:
     global MCP_CURSOR_INSTALL_URL
     global MCP_CLIENT_CONFIG_URL
     global MCP_INSTALL_COMMANDS
+    global AGENT_SKILL_VERSION
+    global AGENT_SKILL_URL
+    global AGENT_SKILL_INSTALL_COMMANDS
 
     MCP_REPOSITORY_URL = catalog.MCP_REPOSITORY_URL
     MCP_REGISTRY_URL = catalog.MCP_REGISTRY_URL
@@ -52,6 +55,11 @@ def _sync_mcp_distribution() -> None:
     MCP_CURSOR_INSTALL_URL = catalog.MCP_CURSOR_INSTALL_URL
     MCP_CLIENT_CONFIG_URL = catalog.MCP_CLIENT_CONFIG_URL
     MCP_INSTALL_COMMANDS = dict(catalog.MCP_INSTALL_COMMANDS)
+    AGENT_SKILL_VERSION = catalog.AGENT_SKILL_VERSION
+    AGENT_SKILL_URL = catalog.AGENT_SKILL_URL
+    AGENT_SKILL_INSTALL_COMMANDS = dict(
+        catalog.AGENT_SKILL_INSTALL_COMMANDS
+    )
 
 
 _sync_mcp_distribution()
@@ -315,7 +323,10 @@ def _render_readme(
         ">",
         f"> {_markdown_text(ui[catalog.NON_MEASURED])}",
         "",
-        f"## {_markdown_text(ui[catalog.NAME])} · MCP v{MCP_VERSION}",
+        (
+            f"## {_markdown_text(ui[catalog.NAME])} · "
+            f"MCP v{MCP_VERSION} · Agent Skill"
+        ),
         "",
         _markdown_text(ui[catalog.DESCRIPTION]),
         "",
@@ -327,12 +338,46 @@ def _render_readme(
                 _markdown_link("MCP Registry", MCP_REGISTRY_URL),
                 _markdown_link("MCP client config", MCP_CLIENT_CONFIG_URL),
                 _markdown_link("SHA256SUMS", MCP_CHECKSUMS_URL),
+                _markdown_link("Agent Skill", AGENT_SKILL_URL),
                 _markdown_link("GitHub", MCP_REPOSITORY_URL),
             )
         ),
         "",
         "<details>",
-        "<summary>Claude Code · Codex · Gemini CLI</summary>",
+        (
+            "<summary>Agent Skill · GitHub Copilot · Claude Code · "
+            "Cursor · Codex · Gemini CLI</summary>"
+        ),
+        "",
+        "**Agent Skill · GitHub Copilot**",
+        "",
+        "```sh",
+        AGENT_SKILL_INSTALL_COMMANDS["github_copilot"],
+        "```",
+        "",
+        "**Agent Skill · Claude Code**",
+        "",
+        "```sh",
+        AGENT_SKILL_INSTALL_COMMANDS["claude_code"],
+        "```",
+        "",
+        "**Agent Skill · Cursor**",
+        "",
+        "```sh",
+        AGENT_SKILL_INSTALL_COMMANDS["cursor"],
+        "```",
+        "",
+        "**Agent Skill · Codex**",
+        "",
+        "```sh",
+        AGENT_SKILL_INSTALL_COMMANDS["codex"],
+        "```",
+        "",
+        "**Agent Skill · Gemini CLI**",
+        "",
+        "```sh",
+        AGENT_SKILL_INSTALL_COMMANDS["gemini_cli"],
+        "```",
         "",
         "**Claude Code**",
         "",

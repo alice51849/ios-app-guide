@@ -148,6 +148,42 @@ class GitHubDiscoveryContractTests(unittest.TestCase):
             shlex.split(discovery.MCP_INSTALL_COMMANDS["gemini_cli"]),
         )
 
+    def test_agent_skill_routes_are_version_pinned_for_every_host(self) -> None:
+        self.assertEqual(discovery.MCP_VERSION, discovery.AGENT_SKILL_VERSION)
+        self.assertEqual(
+            (
+                "https://github.com/alice51849/lumi-mcp/tree/"
+                f"v{discovery.MCP_VERSION}/skills/lumi-app-finder"
+            ),
+            discovery.AGENT_SKILL_URL,
+        )
+        base = [
+            "gh",
+            "skill",
+            "install",
+            "alice51849/lumi-mcp",
+            f"lumi-app-finder@v{discovery.MCP_VERSION}",
+            "--scope",
+            "user",
+        ]
+        expected_agents = {
+            "github_copilot": None,
+            "claude_code": "claude-code",
+            "cursor": "cursor",
+            "codex": "codex",
+            "gemini_cli": "gemini-cli",
+        }
+        self.assertEqual(
+            set(expected_agents),
+            set(discovery.AGENT_SKILL_INSTALL_COMMANDS),
+        )
+        for key, agent in expected_agents.items():
+            expected = base if agent is None else [*base, "--agent", agent]
+            self.assertEqual(
+                expected,
+                shlex.split(discovery.AGENT_SKILL_INSTALL_COMMANDS[key]),
+            )
+
     def test_campaign_tokens_are_unique_and_app_store_safe(self) -> None:
         tokens = [
             discovery.campaign_token(locale)
@@ -221,7 +257,7 @@ class GitHubDiscoveryOutputTests(unittest.TestCase):
             expected - {self.pages / "README.md"},
         )
 
-    def test_every_readme_exposes_the_public_mcp_distribution(self) -> None:
+    def test_every_readme_exposes_the_public_ai_distributions(self) -> None:
         paths = [
             self.pages / "README.md",
             *[
@@ -241,6 +277,12 @@ class GitHubDiscoveryOutputTests(unittest.TestCase):
                 self.assertEqual(
                     1,
                     source.count(f"[GitHub]({discovery.MCP_REPOSITORY_URL})"),
+                )
+                self.assertEqual(
+                    1,
+                    source.count(
+                        f"[Agent Skill]({discovery.AGENT_SKILL_URL})"
+                    ),
                 )
                 self.assertEqual(
                     1,
@@ -280,6 +322,9 @@ class GitHubDiscoveryOutputTests(unittest.TestCase):
                 self.assertIn(f"MCP v{discovery.MCP_VERSION}", source)
                 for command in discovery.MCP_INSTALL_COMMANDS.values():
                     self.assertEqual(1, source.count(command))
+                lines = source.splitlines()
+                for command in discovery.AGENT_SKILL_INSTALL_COMMANDS.values():
+                    self.assertEqual(1, lines.count(command))
                 self.assertEqual(
                     1,
                     source.count(

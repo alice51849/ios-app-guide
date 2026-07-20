@@ -269,10 +269,12 @@ def campaign_app_store_url(
     *,
     provider_token: str | None = None,
 ) -> str:
-    """Use a complete Apple campaign URL only when a provider token exists."""
+    """Add ct= campaign token to a direct App Store URL; pt= added when available."""
     parsed = urllib.parse.urlsplit(value.strip())
     direct = urllib.parse.urlunsplit(parsed._replace(query="", fragment=""))
     validated_app_store_url(direct)
+    if CAMPAIGN_TOKEN_RE.fullmatch(campaign_token) is None:
+        raise ValueError(f"Invalid App Store campaign token: {campaign_token!r}")
     existing_parameters = urllib.parse.parse_qs(parsed.query)
     providers = existing_parameters.get("pt", [])
     if len(providers) > 1:
@@ -280,15 +282,13 @@ def campaign_app_store_url(
     token = _provider_token(
         provider_token if provider_token is not None else providers[0] if providers else None
     )
-    if token is None:
-        return direct
-    if CAMPAIGN_TOKEN_RE.fullmatch(campaign_token) is None:
-        raise ValueError(f"Invalid App Store campaign token: {campaign_token!r}")
+    params: list[tuple[str, str]] = []
+    if token is not None:
+        params.append(("pt", token))
+    params.append(("ct", campaign_token))
     return urllib.parse.urlunsplit(
         parsed._replace(
-            query=urllib.parse.urlencode(
-                (("pt", token), ("ct", campaign_token), ("mt", MEDIA_TYPE))
-            ),
+            query=urllib.parse.urlencode(params),
             fragment="",
         )
     )
@@ -413,3 +413,4 @@ def verified_app_store_url(
     if app_id in availability.get(country, frozenset()):
         return localized
     return value.strip()
+

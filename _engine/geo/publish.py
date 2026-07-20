@@ -11,6 +11,8 @@ import os
 import subprocess
 import sys
 
+from official_locales import OFFICIAL_LOCALES
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide")
@@ -182,16 +184,7 @@ def main():
         env=env,
     )
     require([PY, os.path.join(HERE, "add_related_tools.py")], env=env)
-    for locale in (
-        "es-ES",
-        "pt-BR",
-        "de-DE",
-        "fr-FR",
-        "ja",
-        "ko",
-        "zh-Hant",
-        "zh-Hans",
-    ):
+    for locale in OFFICIAL_LOCALES:
         require(
             [PY, os.path.join(HERE, "add_related_tools.py"), "--locale", locale],
             env=env,

@@ -10,6 +10,8 @@ internal links. Idempotent; per-locale (same-locale tool pages + localized headi
 import os, re, glob, html, sys
 from pathlib import Path
 
+from official_locales import require_official_locale_coverage
+
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "pages")
 SITE = "https://alice51849.github.io/ios-app-guide"
 SEC_RE = re.compile(r'<section class="wrap related-tools">.*?</section>', re.S)
@@ -17,13 +19,58 @@ APP_ID_RE = re.compile(
     r'apps\.apple\.com/(?:[^/"\s]+/)?app/(?:[^/"\s]+/)?id(\d+)'
 )
 HEADINGS = {
-    "": "Free tools", "zh-Hant": "\u514d\u8cbb\u5de5\u5177", "zh-Hans": "\u514d\u8d39\u5de5\u5177",
-    "ja": "\u7121\u6599\u30c4\u30fc\u30eb", "ko": "\ubb34\ub8cc \ub3c4\uad6c",
-    "es-ES": "Herramientas gratis", "es-MX": "Herramientas gratis",
-    "de-DE": "Kostenlose Tools", "fr-FR": "Outils gratuits",
-    "pt-BR": "Ferramentas gratuitas", "ms": "Alat percuma",
-    "pl": "Darmowe narz\u0119dzia", "ar-SA": "\u0623\u062f\u0648\u0627\u062a \u0645\u062c\u0627\u0646\u064a\u0629",
+    "ar-SA": "\u0623\u062f\u0648\u0627\u062a \u0645\u062c\u0627\u0646\u064a\u0629",
+    "bn-BD": "\u09ac\u09bf\u09a8\u09be\u09ae\u09c2\u09b2\u09cd\u09af\u09c7\u09b0 \u099f\u09c1\u09b2",
+    "ca": "Eines gratu\xeftes",
+    "cs": "Bezplatn\xe9 n\xe1stroje",
+    "da": "Gratis v\xe6rkt\xf8jer",
+    "de-DE": "Kostenlose Tools",
+    "el": "\u0394\u03c9\u03c1\u03b5\u03ac\u03bd \u03b5\u03c1\u03b3\u03b1\u03bb\u03b5\u03af\u03b1",
+    "en-AU": "Free tools",
+    "en-CA": "Free tools",
+    "en-GB": "Free tools",
+    "en-US": "Free tools",
+    "es-ES": "Herramientas gratuitas",
+    "es-MX": "Herramientas gratuitas",
+    "fi": "Ilmaiset ty\xf6kalut",
+    "fr-CA": "Outils gratuits",
+    "fr-FR": "Outils gratuits",
+    "gu-IN": "\u0aae\u0aab\u0aa4 \u0ab8\u0abe\u0aa7\u0aa8\u0acb",
+    "he": "\u05db\u05dc\u05d9\u05dd \u05d7\u05d9\u05e0\u05de\u05d9\u05d9\u05dd",
+    "hi": "\u092e\u0941\u092b\u093c\u094d\u0924 \u091f\u0942\u0932",
+    "hr": "Besplatni alati",
+    "hu": "Ingyenes eszk\xf6z\xf6k",
+    "id": "Alat gratis",
+    "it": "Strumenti gratuiti",
+    "ja": "\u7121\u6599\u30c4\u30fc\u30eb",
+    "kn-IN": "\u0c89\u0c9a\u0cbf\u0ca4 \u0caa\u0cb0\u0cbf\u0c95\u0cb0\u0c97\u0cb3\u0cc1",
+    "ko": "\ubb34\ub8cc \ub3c4\uad6c",
+    "ml-IN": "\u0d38\u0d57\u0d1c\u0d28\u0d4d\u0d2f \u0d09\u0d2a\u0d15\u0d30\u0d23\u0d19\u0d4d\u0d19\u0d7e",
+    "mr-IN": "\u092e\u094b\u092b\u0924 \u0938\u093e\u0927\u0928\u0947",
+    "ms": "Alat percuma",
+    "nl-NL": "Gratis tools",
+    "no": "Gratis verkt\xf8y",
+    "or-IN": "\u0b2e\u0b3e\u0b17\u0b23\u0b3e \u0b09\u0b2a\u0b15\u0b30\u0b23",
+    "pa-IN": "\u0a2e\u0a41\u0a2b\u0a3c\u0a24 \u0a1f\u0a42\u0a32",
+    "pl": "Bezp\u0142atne narz\u0119dzia",
+    "pt-BR": "Ferramentas gratuitas",
+    "pt-PT": "Ferramentas gratuitas",
+    "ro": "Instrumente gratuite",
+    "ru": "\u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u044b\u0435 \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u044b",
+    "sk": "Bezplatn\xe9 n\xe1stroje",
+    "sl-SI": "Brezpla\u010dna orodja",
+    "sv": "Gratisverktyg",
+    "ta-IN": "\u0b87\u0bb2\u0bb5\u0b9a\u0b95\u0bcd \u0b95\u0bb0\u0bc1\u0bb5\u0bbf\u0b95\u0bb3\u0bcd",
+    "te-IN": "\u0c09\u0c1a\u0c3f\u0c24 \u0c38\u0c3e\u0c27\u0c28\u0c3e\u0c32\u0c41",
+    "th": "\u0e40\u0e04\u0e23\u0e37\u0e48\u0e2d\u0e07\u0e21\u0e37\u0e2d\u0e1f\u0e23\u0e35",
+    "tr": "\xdccretsiz ara\xe7lar",
+    "uk": "\u0411\u0435\u0437\u043a\u043e\u0448\u0442\u043e\u0432\u043d\u0456 \u0456\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0438",
+    "ur-PK": "\u0645\u0641\u062a \u0679\u0648\u0644\u0632",
+    "vi": "C\xf4ng c\u1ee5 mi\u1ec5n ph\xed",
+    "zh-Hans": "\u514d\u8d39\u5de5\u5177",
+    "zh-Hant": "\u514d\u8cbb\u5de5\u5177",
 }
+require_official_locale_coverage("related-tools headings", HEADINGS)
 BOPOMOFO_APP_IDS = ("6773017109", "6775773117")
 BOPOMOFO_TOOL_PRIORITY = {
     "zhuyin-readiness-check.html": 0,
@@ -86,7 +133,7 @@ def main():
             locale = sys.argv[i + 1]
     en_tools_dir = os.path.join(ROOT, "tools")
     ans_dir = os.path.join(ROOT, locale, "answers") if locale else os.path.join(ROOT, "answers")
-    heading = HEADINGS.get(locale, HEADINGS[""])
+    heading = HEADINGS[locale] if locale else "Free tools"
     # group tools by app id from the canonical EN /tools/ set
     by_app = {}
     tool_files = glob.glob(os.path.join(en_tools_dir, "*.html"))

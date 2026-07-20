@@ -18643,6 +18643,16 @@ class GeneratorTests(unittest.TestCase):
             add_related_tools.related_app_ids("6773017109", "screen-time-calculator"),
         )
 
+    def test_related_tool_headings_cover_every_official_locale(self):
+        self.assertEqual(set(OFFICIAL_LOCALES), set(add_related_tools.HEADINGS))
+        english_locales = {"en-AU", "en-CA", "en-GB", "en-US"}
+        for locale, heading in add_related_tools.HEADINGS.items():
+            self.assertTrue(heading.strip(), locale)
+            if locale not in english_locales:
+                self.assertNotEqual("Free tools", heading, locale)
+        publish_source = (Path(GEO) / "publish.py").read_text(encoding="utf-8")
+        self.assertIn("for locale in OFFICIAL_LOCALES:", publish_source)
+
     def test_multi_app_tool_is_linked_from_each_app_answer(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -20826,6 +20836,20 @@ class GeneratorTests(unittest.TestCase):
             Path(GEO) / "pages" / ".github" / "workflows" / "geo-daily.yml"
         ).read_text(encoding="utf-8")
         self.assertEqual(1, workflow.count("refresh=True"))
+        self.assertEqual(
+            2,
+            workflow.count(
+                "from official_locales import OFFICIAL_LOCALES; "
+                'print(" ".join(OFFICIAL_LOCALES))'
+            ),
+        )
+        self.assertEqual(
+            2,
+            workflow.count(
+                'python3 add_related_tools.py --locale "$locale"'
+            ),
+        )
+        self.assertNotIn("add_related_tools $loc", workflow)
         self.assertIn("build_pages_i18n.py --cached-live", workflow)
         self.assertIn("aeo_answers.py --cached-live", workflow)
         self.assertIn("aeo_pages.py --cached-live", workflow)

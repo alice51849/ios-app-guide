@@ -18643,6 +18643,35 @@ class GeneratorTests(unittest.TestCase):
             add_related_tools.related_app_ids("6773017109", "screen-time-calculator"),
         )
 
+    def test_multi_app_tool_is_linked_from_each_app_answer(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            tools = root / "tools"
+            answers = root / "answers"
+            tools.mkdir()
+            answers.mkdir()
+            (tools / "shared-tool.html").write_text(
+                '<h1>Shared tool</h1>'
+                '<a href="https://apps.apple.com/app/id111"></a>'
+                '<a href="https://apps.apple.com/tw/app/shared-tool/id222"></a>'
+                '<a href="https://apps.apple.com/app/id111"></a>',
+                encoding="utf-8",
+            )
+            for app_id in ("111", "222"):
+                (answers / f"app-{app_id}.html").write_text(
+                    f'<main><a href="https://apps.apple.com/app/id{app_id}">'
+                    "App Store</a></main>",
+                    encoding="utf-8",
+                )
+            with mock.patch.object(
+                add_related_tools, "ROOT", str(root)
+            ), mock.patch.object(sys, "argv", ["add_related_tools.py"]):
+                add_related_tools.main()
+            for app_id in ("111", "222"):
+                answer = (answers / f"app-{app_id}.html").read_text(encoding="utf-8")
+                self.assertIn("/tools/shared-tool.html", answer)
+                self.assertEqual(1, answer.count("/tools/shared-tool.html"))
+
     def test_bopomofo_tool_limit_keeps_every_same_app_tool(self):
         filenames = [
             "zhuyin-readiness-check.html",

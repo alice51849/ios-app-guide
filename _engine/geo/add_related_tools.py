@@ -8,10 +8,14 @@ users to genuinely useful free utilities (which are link/share magnets) and addi
 internal links. Idempotent; per-locale (same-locale tool pages + localized heading).
 """
 import os, re, glob, html, sys
+from pathlib import Path
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "pages")
 SITE = "https://alice51849.github.io/ios-app-guide"
 SEC_RE = re.compile(r'<section class="wrap related-tools">.*?</section>', re.S)
+APP_ID_RE = re.compile(
+    r'apps\.apple\.com/(?:[^/"\s]+/)?app/(?:[^/"\s]+/)?id(\d+)'
+)
 HEADINGS = {
     "": "Free tools", "zh-Hant": "\u514d\u8cbb\u5de5\u5177", "zh-Hans": "\u514d\u8d39\u5de5\u5177",
     "ja": "\u7121\u6599\u30c4\u30fc\u30eb", "ko": "\ubb34\ub8cc \ub3c4\uad6c",
@@ -51,8 +55,12 @@ def related_tool_limit(tools):
     return DEFAULT_TOOL_LIMIT
 
 def appid(h):
-    m = re.search(r'apps\.apple\.com/app/id(\d+)', h)
-    return m.group(1) if m else None
+    ids = appids(h)
+    return ids[0] if ids else None
+
+
+def appids(h):
+    return tuple(dict.fromkeys(APP_ID_RE.findall(h)))
 
 def get_h1(h):
     m = re.search(r'<h1[^>]*>(.*?)</h1>', h, re.S)
@@ -87,22 +95,25 @@ def main():
         slug = os.path.basename(f)[:-5]
         if slug == "index":
             continue
-        h = open(f, encoding="utf-8").read()
-        a = appid(h)
-        if not a:
+        h = Path(f).read_text(encoding="utf-8")
+        app_ids = appids(h)
+        if not app_ids:
             continue
         # link to locale tool if it exists, else EN; label from locale h1 if exists, else EN label
         loc_tool = os.path.join(ROOT, locale, "tools", f"{slug}.html") if locale else ""
         if locale and os.path.exists(loc_tool):
             url = f"{SITE}/{locale}/tools/{slug}.html"
-            lbl = get_h1(open(loc_tool, encoding="utf-8").read()) or label(slug, get_h1(h), locale)
+            lbl = get_h1(Path(loc_tool).read_text(encoding="utf-8")) or label(
+                slug, get_h1(h), locale
+            )
         else:
             url = f"{SITE}/tools/{slug}.html"
             # EN page: clean English (CJK-fallback). Locale page linking an EN-only tool:
             # use the EN h1 as-is (zhuyin tool titles are Traditional Chinese, right for zh pages).
             lbl = label(slug, get_h1(h), "") if not locale else (get_h1(h) or label(slug, None, locale))
-        for related_app_id in related_app_ids(a, slug):
-            by_app.setdefault(related_app_id, []).append((url, lbl))
+        for app_id in app_ids:
+            for related_app_id in related_app_ids(app_id, slug):
+                by_app.setdefault(related_app_id, []).append((url, lbl))
     changed = 0
     total = 0
     for f in sorted(glob.glob(os.path.join(ans_dir, "*.html"))):
@@ -110,7 +121,7 @@ def main():
         if slug == "index":
             continue
         total += 1
-        h = open(f, encoding="utf-8").read()
+        h = Path(f).read_text(encoding="utf-8")
         a = appid(h)
         if not a or a not in by_app:
             continue
@@ -133,7 +144,7 @@ def main():
             if dry and changed <= 3:
                 print(f"[{slug}] app={a} -> tools: {[u.rsplit('/',1)[1] for u, _ in tools]}")
             if not dry:
-                open(f, "w", encoding="utf-8").write(h2)
+                Path(f).write_text(h2, encoding="utf-8")
     print(f"{'DRY ' if dry else ''}locale={locale or 'en'} changed={changed} / {total} pages")
 
 if __name__ == "__main__":

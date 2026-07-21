@@ -129,6 +129,6 @@ JSON, JSONL ve CSV aynı 1.450 kaydı içerir.
 
 [Ana Sayfa](https://alice51849.github.io/ios-app-guide/tr/index.html) · [Açık veri](https://alice51849.github.io/ios-app-guide/tr/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisans](https://creativecommons.org/licenses/by/4.0/)
 
-Güncellendi: 2026-07-22
+Güncellendi: 2026-07-21
 
 CC BY 4.0, orijinal katalog derlemesine uygulanır; uygulama adları ve App Store işaretleri sahiplerine aittir.

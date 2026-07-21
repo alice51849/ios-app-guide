@@ -129,6 +129,6 @@ JSON, JSONL i CSV contenen els mateixos 1.450 registres.
 
 [Inici](https://alice51849.github.io/ios-app-guide/ca/index.html) · [Dades obertes](https://alice51849.github.io/ios-app-guide/ca/data/lumi-studio-publisher-search-intent-catalog.html) · [Llicència](https://creativecommons.org/licenses/by/4.0/)
 
-Actualitzat: 2026-07-22
+Actualitzat: 2026-07-21
 
 CC BY 4.0 s'aplica a la compilació original del catàleg; els noms d'app i les marques de l'App Store pertanyen als seus propietaris.

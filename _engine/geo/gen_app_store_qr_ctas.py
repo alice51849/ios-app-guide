@@ -25,8 +25,8 @@ from videogen.registry import APPSTORE
 
 PAGES = gen_smart_app_banners.PAGES
 SITE = gen_smart_app_banners.SITE
-HEAD_BLOCK_START = "<!-- app-store-qr-style:start -->"
-HEAD_BLOCK_END = "<!-- app-store-qr-style:end -->"
+HEAD_BLOCK_START = gen_smart_app_banners.APP_STORE_QR_STYLE_BLOCK_START
+HEAD_BLOCK_END = gen_smart_app_banners.APP_STORE_QR_STYLE_BLOCK_END
 DECISION_STYLE_ANCHOR = "<!-- app-decision-card-style:start -->"
 FEED_DISCOVERY_ANCHOR = (
     '<link rel="alternate" type="application/atom+xml"'
@@ -354,12 +354,13 @@ def generate(
 ) -> dict[str, int]:
     if live_keys is None:
         live_keys = set(live_app_keys(APPSTORE, str(pages), refresh=False))
-    targets, app_count = gen_smart_app_banners.build_targets(
+    targets, app_count = gen_smart_app_banners.build_install_targets(
         pages, set(live_keys), site
     )
     guide_pages = gen_smart_app_banners._guide_pages(pages)
     answer_pages = gen_smart_app_banners._answer_pages(pages)
-    eligible_pages = guide_pages | answer_pages
+    buyer_intent_pages = gen_smart_app_banners._buyer_intent_pages(pages)
+    eligible_pages = guide_pages | buyer_intent_pages
     qr_targets = {
         path: app_id for path, app_id in targets.items() if path in eligible_pages
     }
@@ -409,6 +410,7 @@ def generate(
         "qr_assets": len(qr_assets),
         "guide_pages": len(installed & guide_pages),
         "answer_pages": len(installed & answer_pages),
+        "buyer_intent_pages": len(installed & buyer_intent_pages),
         "changed_files": changed,
     }
 
@@ -424,7 +426,7 @@ def main() -> None:
         "Direct App Store QR cards: "
         f"{result['apps']} apps, {result['qr_assets']} QR assets, "
         f"{result['guide_pages']} guide pages, "
-        f"{result['answer_pages']} buyer-intent answer pages, "
+        f"{result['buyer_intent_pages']} single-app buyer-intent pages, "
         f"{result['changed_files']} files updated"
     )
 

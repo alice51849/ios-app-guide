@@ -606,14 +606,16 @@ def generate(
     if len(id_to_key) != len(live_keys):
         raise ValueError("Decision-card App Store IDs must be unique")
 
+    answer_pages = gen_smart_app_banners._answer_pages(pages)
+    localized_app_pages = gen_smart_app_banners._localized_app_pages(
+        pages, set(live_keys)
+    )
     eligible: dict[Path, tuple[str, str]] = {}
     for path, app_id in targets.items():
         key = id_to_key.get(str(app_id))
         if not key:
             continue
-        if path.parent.name == "answers":
-            eligible[path] = (key, str(app_id))
-        elif path.stem == key and path.parent.name != "guides":
+        if path in answer_pages or path in localized_app_pages:
             eligible[path] = (key, str(app_id))
 
     availability = load_storefront_availability(pages)
@@ -633,7 +635,7 @@ def generate(
         )
 
     managed = (
-        gen_smart_app_banners._answer_pages(pages)
+        answer_pages
         | gen_smart_app_banners._localized_app_pages(pages, set(APPSTORE))
         | gen_smart_app_banners._guide_pages(pages)
     )

@@ -206,7 +206,8 @@ def _remove_reference(value: Any, expected_id: str) -> Any:
 
 
 def _page_relation(page_url: str) -> str:
-    if "/answers/" in urlsplit(page_url).path:
+    path = urlsplit(page_url).path
+    if "/answers/" in path or "/alternatives/" in path:
         return "mentions"
     return "mainEntity"
 
@@ -724,6 +725,102 @@ def ensure_mobile_identity(
     return True, 1, inserted
 
 
+def _without_managed_install_actions(
+    value: Any, managed_ids: set[str]
+) -> Any:
+    if value is None:
+        return None
+    actions = value if isinstance(value, list) else [value]
+    remaining = [
+        action
+        for action in actions
+        if not (
+            isinstance(action, dict)
+            and "InstallAction" in _schema_types(action)
+            and bool(_app_store_ids(action) & managed_ids)
+        )
+    ]
+    if not remaining:
+        return None
+    return remaining[0] if len(remaining) == 1 else remaining
+
+
+def _sanitize_unmanaged_identity(
+    document: Any, managed_ids: set[str]
+) -> bool:
+    before = json.dumps(document, ensure_ascii=False, sort_keys=True)
+    for node in _iter_nodes(document):
+        if not set(_schema_types(node)).intersection(
+            {"SoftwareApplication", "MobileApplication"}
+        ):
+            continue
+        if not (_node_app_store_ids(node) & managed_ids):
+            continue
+        for field in ("installUrl", "downloadUrl"):
+            if _app_store_ids(node.get(field)) & managed_ids:
+                node.pop(field, None)
+        actions = _without_managed_install_actions(
+            node.get("potentialAction"), managed_ids
+        )
+        if actions is None:
+            node.pop("potentialAction", None)
+        else:
+            node["potentialAction"] = actions
+
+    store_urls = {
+        canonical_store_url(app_id) for app_id in managed_ids
+    }
+    for node in _root_nodes(document):
+        if "WebPage" not in _schema_types(node):
+            continue
+        for relation in ("mainEntity", "mentions"):
+            value = node.get(relation)
+            for store_url in store_urls:
+                value = _remove_reference(value, store_url)
+            if value is None:
+                node.pop(relation, None)
+            else:
+                node[relation] = value
+
+    after = json.dumps(document, ensure_ascii=False, sort_keys=True)
+    return before != after
+
+
+def remove_managed_identity(path: Path) -> bool:
+    source = path.read_text(encoding="utf-8")
+    cleaned = gen_smart_app_banners.MOBILE_APP_IDENTITY_BLOCK_RE.sub(
+        "\n", source
+    )
+    managed_ids = {str(app_id) for app_id in APPSTORE.values()}
+    parts: list[str] = []
+    cursor = 0
+    for match in JSON_LD_RE.finditer(cleaned):
+        parts.append(cleaned[cursor : match.start()])
+        try:
+            document = json.loads(match.group("body"))
+        except json.JSONDecodeError as error:
+            raise ValueError(f"Invalid JSON-LD in {path}: {error}") from error
+        if _sanitize_unmanaged_identity(document, managed_ids):
+            parts.extend(
+                (
+                    match.group("open"),
+                    "\n",
+                    json.dumps(document, ensure_ascii=False, indent=2),
+                    "\n",
+                    match.group("close"),
+                )
+            )
+        else:
+            parts.append(match.group(0))
+        cursor = match.end()
+    parts.append(cleaned[cursor:])
+    updated = "".join(parts)
+    if updated == source:
+        return False
+    path.write_text(updated, encoding="utf-8")
+    return True
+
+
 def generate(
     pages: Path = PAGES,
     live_keys: set[str] | None = None,
@@ -731,7 +828,7 @@ def generate(
 ) -> dict[str, int]:
     if live_keys is None:
         live_keys = set(live_app_keys(APPSTORE, str(pages), refresh=False))
-    targets, app_count = gen_smart_app_banners.build_targets(
+    targets, app_count = gen_smart_app_banners.build_install_targets(
         pages, set(live_keys), site
     )
     app_by_id = {
@@ -758,6 +855,12 @@ def generate(
         changed += int(page_changed)
         entities += page_entities
         inserted += int(page_inserted)
+    managed_pages = (
+        gen_smart_app_banners._guide_pages(pages)
+        | gen_smart_app_banners._buyer_intent_pages(pages)
+    )
+    for path in sorted(managed_pages - set(targets)):
+        changed += int(remove_managed_identity(path))
     return {
         "apps": app_count,
         "pages": len(targets),

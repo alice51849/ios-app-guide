@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Add Apple Smart App Banners to public app guides and buyer-intent answers."""
+"""Add Apple Smart App Banners to app guides and single-app buyer pages."""
 
 from __future__ import annotations
 
@@ -43,6 +43,8 @@ MOBILE_CTA_BLOCK_RE = re.compile(
 )
 APP_STORE_QR_BLOCK_START = "<!-- app-store-qr:start -->"
 APP_STORE_QR_BLOCK_END = "<!-- app-store-qr:end -->"
+APP_STORE_QR_STYLE_BLOCK_START = "<!-- app-store-qr-style:start -->"
+APP_STORE_QR_STYLE_BLOCK_END = "<!-- app-store-qr-style:end -->"
 APP_STORE_QR_BLOCK_RE = re.compile(
     rf"\s*{re.escape(APP_STORE_QR_BLOCK_START)}.*?"
     rf"{re.escape(APP_STORE_QR_BLOCK_END)}\s*",
@@ -55,12 +57,29 @@ APP_STORE_SHARE_BLOCK_RE = re.compile(
     rf"{re.escape(APP_STORE_SHARE_BLOCK_END)}\s*",
     flags=re.DOTALL,
 )
+APP_DECISION_CARD_BLOCK_RE = re.compile(
+    r"\s*<!-- app-decision-card:start -->.*?"
+    r"<!-- app-decision-card:end -->\s*",
+    flags=re.DOTALL,
+)
+MOBILE_APP_IDENTITY_BLOCK_RE = re.compile(
+    r'\s*<script\b(?=[^>]*\bdata-mobile-app-(?:identity|webpage)="1")'
+    r"[^>]*>.*?</script>\s*",
+    flags=re.IGNORECASE | re.DOTALL,
+)
 APP_STORE_LINK_RE = re.compile(
     r"https://apps\.apple\.com/(?:[a-z]{2}/)?app/id(\d+)",
     flags=re.IGNORECASE,
 )
+APP_STORE_ANCHOR_RE = re.compile(
+    r"<a\b[^>]*\bhref\s*=\s*(?P<quote>[\"'])"
+    r"https://apps\.apple\.com/(?:[a-z]{2}/)?app/id(?P<id>\d+)"
+    r"[^\"']*(?P=quote)",
+    flags=re.IGNORECASE | re.DOTALL,
+)
 LOCALE_DIRECTORY_RE = re.compile(r"[a-z]{2,3}(?:-[A-Za-z]{2,4})?")
 RESERVED_TOP_LEVEL_DIRS = {"api"}
+BUYER_INTENT_SECTIONS = ("answers", "alternatives", "hubs")
 
 
 def _app_id(store_url: str) -> str:
@@ -85,6 +104,46 @@ def banner_block(app_id: str) -> str:
             BLOCK_END,
         )
     )
+
+
+def _unmanaged_source(path: Path) -> str:
+    source = path.read_text(encoding="utf-8")
+    for pattern in (
+        APP_DECISION_CARD_BLOCK_RE,
+        MOBILE_APP_IDENTITY_BLOCK_RE,
+        APP_STORE_SHARE_BLOCK_RE,
+        APP_STORE_QR_BLOCK_RE,
+        MOBILE_CTA_BLOCK_RE,
+        BLOCK_RE,
+    ):
+        source = pattern.sub("\n", source)
+    return source
+
+
+def _add_single_app_targets(
+    targets: dict[Path, str],
+    paths: set[Path],
+    live_ids: set[str],
+) -> None:
+    for path in paths:
+        source = _unmanaged_source(path)
+        if FREE_RESOURCE_FIRST_META in source:
+            continue
+        app_ids = {
+            match.group("id") for match in APP_STORE_ANCHOR_RE.finditer(source)
+        }
+        if len(app_ids) != 1:
+            continue
+        app_id = next(iter(app_ids))
+        if app_id not in live_ids:
+            continue
+        existing = targets.get(path)
+        if existing and existing != app_id:
+            raise ValueError(
+                f"Conflicting buyer-intent app IDs for {path}: "
+                f"{existing}, {app_id}"
+            )
+        targets[path] = app_id
 
 
 def build_targets(
@@ -132,26 +191,24 @@ def build_targets(
             )
         targets[path] = app_id
 
-    live_ids = {APPSTORE[key] for key in live_keys}
-    for path in _answer_pages(pages):
-        source = APP_STORE_SHARE_BLOCK_RE.sub(
-            "\n",
-            APP_STORE_QR_BLOCK_RE.sub(
-                "\n",
-                MOBILE_CTA_BLOCK_RE.sub(
-                    "\n", BLOCK_RE.sub("\n", path.read_text(encoding="utf-8"))
-                ),
-            ),
-        )
-        if FREE_RESOURCE_FIRST_META in source:
-            continue
-        app_ids = set(APP_STORE_LINK_RE.findall(source))
-        if len(app_ids) != 1:
-            continue
-        app_id = next(iter(app_ids))
-        if app_id in live_ids:
-            targets[path] = app_id
+    _add_single_app_targets(
+        targets,
+        _answer_pages(pages),
+        {APPSTORE[key] for key in live_keys},
+    )
     return targets, len(records)
+
+
+def build_install_targets(
+    pages: Path, live_keys: set[str], site: str = SITE
+) -> tuple[dict[Path, str], int]:
+    targets, app_count = build_targets(pages, live_keys, site)
+    _add_single_app_targets(
+        targets,
+        _alternative_pages(pages) | _hub_pages(pages),
+        {APPSTORE[key] for key in live_keys},
+    )
+    return targets, app_count
 
 
 def ensure_banner(path: Path, app_id: str) -> bool:
@@ -164,15 +221,20 @@ def ensure_banner(path: Path, app_id: str) -> bool:
     linkset_match = gen_linkset.DISCOVERY_RE.search(cleaned)
     social_index = cleaned.find("<!-- social-preview:start -->")
     feed_match = gen_linkset.FEED_DISCOVERY_RE.search(cleaned)
-    insert_index = (
-        linkset_match.start()
-        if linkset_match
-        else social_index
-        if social_index >= 0
-        else feed_match.start()
-        if feed_match
-        else cleaned.index("</head>")
-    )
+    identity_match = MOBILE_APP_IDENTITY_BLOCK_RE.search(cleaned)
+    head_indices = [
+        index
+        for index in (
+            linkset_match.start() if linkset_match else -1,
+            social_index,
+            feed_match.start() if feed_match else -1,
+            identity_match.start() if identity_match else -1,
+            cleaned.find(APP_STORE_QR_STYLE_BLOCK_START),
+            cleaned.index("</head>"),
+        )
+        if index >= 0
+    ]
+    insert_index = min(head_indices)
     updated = (
         cleaned[:insert_index].rstrip()
         + "\n"
@@ -211,23 +273,44 @@ def _guide_pages(pages: Path) -> set[Path]:
     return paths
 
 
-def _answer_pages(pages: Path) -> set[Path]:
+def _section_pages(pages: Path, section: str) -> set[Path]:
+    if section not in BUYER_INTENT_SECTIONS:
+        raise ValueError(f"Unsupported buyer-intent section: {section}")
     paths = {
         path.resolve()
-        for path in (pages / "answers").glob("*.html")
+        for path in (pages / section).glob("*.html")
         if path.name != "index.html"
     }
     for child in pages.iterdir():
         if child.name == "_engine" or not child.is_dir():
             continue
-        answers = child / "answers"
-        if answers.is_dir():
+        localized_section = child / section
+        if localized_section.is_dir():
             paths.update(
                 path.resolve()
-                for path in answers.glob("*.html")
+                for path in localized_section.glob("*.html")
                 if path.name != "index.html"
             )
     return paths
+
+
+def _answer_pages(pages: Path) -> set[Path]:
+    return _section_pages(pages, "answers")
+
+
+def _alternative_pages(pages: Path) -> set[Path]:
+    return _section_pages(pages, "alternatives")
+
+
+def _hub_pages(pages: Path) -> set[Path]:
+    return _section_pages(pages, "hubs")
+
+
+def _buyer_intent_pages(pages: Path) -> set[Path]:
+    pages_by_section = (
+        _section_pages(pages, section) for section in BUYER_INTENT_SECTIONS
+    )
+    return set().union(*pages_by_section)
 
 
 def _write_if_changed(path: Path, content: str) -> bool:
@@ -239,7 +322,7 @@ def _write_if_changed(path: Path, content: str) -> bool:
 
 def _page_language(path: Path, pages: Path) -> str:
     pages_root = pages.resolve()
-    if path.parent.name in {"answers", "guides"}:
+    if path.parent.name in {"guides", *BUYER_INTENT_SECTIONS}:
         container = path.parent.parent
         return "en" if container == pages_root else container.name
     return path.parent.name
@@ -252,14 +335,15 @@ def generate(
 ) -> dict[str, int]:
     if live_keys is None:
         live_keys = set(live_app_keys(APPSTORE, str(pages), refresh=False))
-    targets, app_count = build_targets(pages, set(live_keys), site)
+    targets, app_count = build_install_targets(pages, set(live_keys), site)
     guide_pages = _guide_pages(pages)
     answer_pages = _answer_pages(pages)
+    buyer_intent_pages = _buyer_intent_pages(pages)
     changed = 0
     for path in sorted(targets):
         changed += int(ensure_banner(path, targets[path]))
 
-    for path in sorted((guide_pages | answer_pages) - set(targets)):
+    for path in sorted((guide_pages | buyer_intent_pages) - set(targets)):
         source = path.read_text(encoding="utf-8")
         if BLOCK_RE.search(source):
             changed += int(_write_if_changed(path, BLOCK_RE.sub("\n", source)))
@@ -269,6 +353,7 @@ def generate(
         "apps": app_count,
         "guide_pages": len(set(targets) & guide_pages),
         "answer_pages": len(set(targets) & answer_pages),
+        "buyer_intent_pages": len(set(targets) & buyer_intent_pages),
         "languages": len(languages),
         "changed_files": changed,
     }
@@ -284,7 +369,7 @@ def main() -> None:
     print(
         "Apple Smart App Banners: "
         f"{result['apps']} apps, {result['guide_pages']} guide pages, "
-        f"{result['answer_pages']} buyer-intent answer pages, "
+        f"{result['buyer_intent_pages']} single-app buyer-intent pages, "
         f"{result['languages']} languages, "
         f"{result['changed_files']} files updated"
     )

@@ -305,12 +305,13 @@ def generate(
 ) -> dict[str, int]:
     if live_keys is None:
         live_keys = set(live_app_keys(APPSTORE, str(pages), refresh=False))
-    targets, app_count = gen_smart_app_banners.build_targets(
+    targets, app_count = gen_smart_app_banners.build_install_targets(
         pages, set(live_keys), site
     )
     guide_pages = gen_smart_app_banners._guide_pages(pages)
     answer_pages = gen_smart_app_banners._answer_pages(pages)
-    eligible_pages = guide_pages | answer_pages
+    buyer_intent_pages = gen_smart_app_banners._buyer_intent_pages(pages)
+    eligible_pages = guide_pages | buyer_intent_pages
     share_targets = {
         path: app_id for path, app_id in targets.items() if path in eligible_pages
     }
@@ -366,6 +367,7 @@ def generate(
         "apps": len(installed_ids),
         "guide_pages": len(installed & guide_pages),
         "answer_pages": len(installed & answer_pages),
+        "buyer_intent_pages": len(installed & buyer_intent_pages),
         "languages": len(languages),
         "changed_files": changed,
     }
@@ -381,7 +383,7 @@ def main() -> None:
     print(
         "Native direct App Store sharing: "
         f"{result['apps']} apps, {result['guide_pages']} guide pages, "
-        f"{result['answer_pages']} buyer-intent answer pages, "
+        f"{result['buyer_intent_pages']} single-app buyer-intent pages, "
         f"{result['languages']} languages, "
         f"{result['changed_files']} files updated"
     )

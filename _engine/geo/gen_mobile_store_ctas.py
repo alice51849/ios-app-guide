@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Add unobtrusive mobile App Store CTAs to app guides and buyer-intent pages."""
+"""Add mobile App Store CTAs to app guides and single-app buyer pages."""
 
 from __future__ import annotations
 
@@ -193,12 +193,19 @@ def ensure_mobile_cta(
     if cta is None:
         return _write_if_changed(path, cleaned)
     href, label = cta
+    body_index = cleaned.index("</body>")
+    share_index = cleaned.find(
+        gen_smart_app_banners.APP_STORE_SHARE_BLOCK_START
+    )
+    insert_index = (
+        share_index if 0 <= share_index < body_index else body_index
+    )
     updated = (
-        cleaned[: cleaned.index("</body>")].rstrip()
+        cleaned[:insert_index].rstrip()
         + "\n"
         + mobile_cta_block(href, label, script_href)
-        + "\n</body>"
-        + cleaned[cleaned.index("</body>") + len("</body>") :]
+        + "\n"
+        + cleaned[insert_index:].lstrip()
     )
     return _write_if_changed(path, updated)
 
@@ -218,12 +225,13 @@ def generate(
 ) -> dict[str, int]:
     if live_keys is None:
         live_keys = set(live_app_keys(APPSTORE, str(pages), refresh=False))
-    targets, app_count = gen_smart_app_banners.build_targets(
+    targets, app_count = gen_smart_app_banners.build_install_targets(
         pages, set(live_keys), site
     )
     guide_pages = gen_smart_app_banners._guide_pages(pages)
     answer_pages = gen_smart_app_banners._answer_pages(pages)
-    eligible_pages = guide_pages | answer_pages
+    buyer_intent_pages = gen_smart_app_banners._buyer_intent_pages(pages)
+    eligible_pages = guide_pages | buyer_intent_pages
     mobile_targets = {
         path: app_id for path, app_id in targets.items() if path in eligible_pages
     }
@@ -257,6 +265,7 @@ def generate(
         "apps": len(installed_ids),
         "guide_pages": len(installed & guide_pages),
         "answer_pages": len(installed & answer_pages),
+        "buyer_intent_pages": len(installed & buyer_intent_pages),
         "changed_files": changed,
     }
 
@@ -271,7 +280,7 @@ def main() -> None:
     print(
         "Mobile direct App Store CTAs: "
         f"{result['apps']} apps, {result['guide_pages']} guide pages, "
-        f"{result['answer_pages']} buyer-intent answer pages, "
+        f"{result['buyer_intent_pages']} single-app buyer-intent pages, "
         f"{result['changed_files']} files updated"
     )
 

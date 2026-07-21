@@ -128,6 +128,41 @@ class PublisherIntentLocalizationTests(unittest.TestCase):
             self.assertLessEqual(len(token), 30)
             self.assertRegex(token, r"^[a-z0-9_]+$")
 
+    def test_plain_native_app_store_cta_keeps_the_verified_owner(self) -> None:
+        app_id = "6792483140"
+        source = (
+            '<meta name="description" content="تدريب أصلي يعمل بلا اتصال">'
+            f'<p><a href="https://apps.apple.com/app/id{app_id}">'
+            "احصل على Aim990 Plus من App Store</a></p>"
+        )
+        self.assertEqual(
+            "احصل على Aim990 Plus من App Store",
+            catalog._app_store_cta_label(source, app_id),
+        )
+        with self.assertRaisesRegex(ValueError, "Missing App Store CTA"):
+            catalog._app_store_cta_label(source, "6784974530")
+        self.assertEqual(
+            "تدريب أصلي يعمل بلا اتصال",
+            catalog._decision_context(source, False),
+        )
+        localized_disclosure = catalog.dynamic_ui(
+            catalog.load_ui_i18n()["ar-SA"]
+        )[catalog.DISCLOSURE]
+        self.assertEqual(
+            localized_disclosure,
+            catalog._publisher_disclosure(
+                source,
+                False,
+                localized_disclosure,
+            ),
+        )
+        with self.assertRaisesRegex(ValueError, "Missing publisher disclosure"):
+            catalog._publisher_disclosure(
+                source,
+                True,
+                localized_disclosure,
+            )
+
     def test_dynamic_counts_preserve_localized_numerals(self) -> None:
         arabic_digits = str.maketrans("0123456789,", "٠١٢٣٤٥٦٧٨٩٬")
         record_count = f"{catalog.EXPECTED_RECORD_COUNT:,}".translate(

@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-20",
-  "content_digest": "b473dcd13536dd86925ff4270d347c573872282ddbf0ed5da08bf79ac94567b6",
+  "date_modified": "2026-07-21",
+  "content_digest": "01428f62414fc0b782783755122d304ed2e653ad57f26d24eea7086bbaee7cc9",
   "locale": "ms",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 28,
+  "record_count": 29,
   "apps": [
     {
       "key": "aim990",
@@ -47,6 +47,36 @@
         "formatted_price": "Percuma",
         "storefront_url": "https://apps.apple.com/my/app/id6784974530"
       }
+    },
+    {
+      "key": "aim990plus",
+      "app_store_id": "6792483140",
+      "name": "Aim990 Plus",
+      "summary": "Bina kemahiran bahasa Inggeris dalam keadaan yang mencabar fokus: masa terhad, siri soalan yang panjang dan keperluan untuk terus teliti. Aim990 Plus direka untuk pelajar serta golongan bekerja dewasa yang mahu mengukuhkan ketahanan mendengar dan membaca pada iPhone dan iPad, bukan sekadar menjawab soalan secara rawak tanpa hala tuju.",
+      "category": "education",
+      "search_terms": [
+        "latihan mendengar",
+        "pemahaman bacaan",
+        "ujian bahasa inggeris",
+        "bank soalan",
+        "kosa kata",
+        "simulasi",
+        "ulang kaji"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ms/aim990plus.html",
+      "verified_live": true
     },
     {
       "key": "cvdesk",

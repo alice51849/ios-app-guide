@@ -647,6 +647,77 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         },
     ],
+    "aim990plus": [
+        {
+            "query": "best offline English listening and reading exam trainer for iPhone",
+            "triggers": [
+                "exam pressure trainer",
+                "English listening and reading exam",
+                "offline exam practice",
+                "timed English practice",
+            ],
+            "persona": "adult English exam learners",
+            "lead": (
+                "For adult learners preparing under time pressure, useful practice "
+                "needs original listening and reading questions, timed sets, mistake "
+                "replay and offline progress without a recurring subscription."
+            ),
+            "paras": [
+                (
+                    "A focused routine should move from a short warm-up into a timed "
+                    "pressure set, then bring every missed question back for deliberate "
+                    "review instead of repeatedly drilling material you already know."
+                ),
+                (
+                    "Aim990 Plus includes 630 original questions across seven formats, "
+                    "three mock-test lengths, dictation, vocabulary and weakness "
+                    "analysis. It is a paid download with no subscription, account, "
+                    "advertising or score guarantee."
+                ),
+            ],
+            "look": [
+                "Original listening and reading questions across multiple formats.",
+                "Timed practice plus immediate mistake replay.",
+                "Mock tests, dictation and weakness analysis.",
+                "Complete offline use with on-device progress.",
+                "Paid download with no subscription or score guarantee.",
+            ],
+            "steps": [
+                "Start with the short mixed warm-up.",
+                "Complete a timed pressure set.",
+                "Replay every missed question.",
+                "Use weakness analysis to choose the next practice area.",
+                "Use a mock test periodically to check pacing and stamina.",
+            ],
+            "fits": (
+                "fits adult English exam learners who want structured, offline "
+                "listening and reading practice under realistic time pressure."
+            ),
+            "faq": [
+                {
+                    "q": "Does Aim990 Plus require a subscription?",
+                    "a": (
+                        "No. It is a paid download and includes the complete feature "
+                        "set without an in-app purchase or recurring subscription."
+                    ),
+                },
+                {
+                    "q": "Can I practise offline?",
+                    "a": (
+                        "Yes. Questions, vocabulary, practice history and analysis "
+                        "work on the device without a developer server or account."
+                    ),
+                },
+                {
+                    "q": "Does it guarantee an exam score?",
+                    "a": (
+                        "No. It provides independent original practice and progress "
+                        "tools, but does not promise a particular score or outcome."
+                    ),
+                },
+            ],
+        },
+    ],
     "mochi": [
         {
             "query": "best simple to do list app iphone no subscription",

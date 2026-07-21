@@ -3,7 +3,7 @@
 > ข้อมูลแบบโครงสร้างของแต่ละแอป iOS — ฟีเจอร์ ราคา และ FAQ
 
 locale: th
-apps: 28
+apps: 29
 - ไดเรกทอรีแอป: https://alice51849.github.io/ios-app-guide/th/tools/private-pay-once-iphone-app-finder.html
 - ไดเรกทอรีแอป · PWA: https://alice51849.github.io/ios-app-guide/th/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/th.jsonld
@@ -26,6 +26,10 @@ apps: 28
 - ไดเรกทอรีแอป · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
 - ไดเรกทอรีแอป · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
 
+- [Aim990 Plus](https://alice51849.github.io/ios-app-guide/th/aim990plus.html) — ฟังอ่านครบ 7 พาร์ตใน 15 นาที
+  - เริ่มด้วยวอร์มอัป 8 ข้อ ต่อด้วยชุดกดดัน 20 ข้อใน 15 นาที แล้วกลับไปแก้ข้อที่พลาด ฝึกครบด้วยโจทย์แต่งใหม่ 630 ข้อ แบบทดสอบหลายระดับ และการวิเคราะห์จุดอ่อนแบบออฟไลน์
+  - ราคา: ดาวน์โหลดแบบชำระเงินครั้งเดียวล่วงหน้า ไม่มีการสมัครสมาชิก
+  - App Store: https://apps.apple.com/app/id6792483140
 - [Aim990: TOEIC Prep](https://alice51849.github.io/ios-app-guide/th/aim990.html) — เตรียมสอบ TOEIC อย่างมีประสิทธิภาพ
   - เตรียมสอบ TOEIC อย่างมีประสิทธิภาพใน 30 วัน! เริ่มต้นการเรียนรู้วันนี้เพื่อพัฒนาคะแนนของคุณ!
   - ราคา: ดาวน์โหลดฟรี ซื้อครั้งเดียวปลดล็อกทุกฟีเจอร์ ไม่มีกับดักสมัครสมาชิก

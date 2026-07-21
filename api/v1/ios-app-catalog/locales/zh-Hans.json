@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-20",
-  "content_digest": "b473dcd13536dd86925ff4270d347c573872282ddbf0ed5da08bf79ac94567b6",
+  "date_modified": "2026-07-21",
+  "content_digest": "01428f62414fc0b782783755122d304ed2e653ad57f26d24eea7086bbaee7cc9",
   "locale": "zh-Hans",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 28,
+  "record_count": 29,
   "apps": [
     {
       "key": "aim990",
@@ -45,6 +45,49 @@
         "formatted_price": "免费",
         "storefront_url": "https://apps.apple.com/cn/app/id6784974530"
       }
+    },
+    {
+      "key": "aim990plus",
+      "app_store_id": "6792483140",
+      "name": "Aim990 Plus",
+      "summary": "把零散刷题变成一套经得住时间压力的训练流程。",
+      "category": "education",
+      "search_terms": [
+        "英语听力",
+        "阅读理解",
+        "备考计划",
+        "模拟考试",
+        "错题复习",
+        "听写练习",
+        "单词记忆",
+        "词汇积累",
+        "题库刷题",
+        "考前冲刺",
+        "弱项分析",
+        "限时作答",
+        "商务英文",
+        "长难句",
+        "照片描述",
+        "对话应答",
+        "短文填空",
+        "语法测试",
+        "学习进度",
+        "离线学习"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/aim990plus.html",
+      "verified_live": true
     },
     {
       "key": "cvdesk",

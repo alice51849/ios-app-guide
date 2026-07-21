@@ -3,7 +3,7 @@
 > 각 iOS 앱의 구조화된 정보 — 기능, 가격, FAQ.
 
 locale: ko
-apps: 28
+apps: 29
 - 앱 목록: https://alice51849.github.io/ios-app-guide/ko/tools/private-pay-once-iphone-app-finder.html
 - 앱 목록 · PWA: https://alice51849.github.io/ios-app-guide/ko/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld
@@ -26,6 +26,10 @@ apps: 28
 - 앱 목록 · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
 - 앱 목록 · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
 
+- [Aim990 Plus](https://alice51849.github.io/ios-app-guide/ko/aim990plus.html) — 15분 완성 7개 영역 집중
+  - 8문제 워밍업부터 15분 20문제 압박 훈련, 오답 재도전까지 한 흐름으로 이어집니다. 창작 630문제와 단계별 모의고사, 받아쓰기, 약점 분석을 모두 오프라인에서 사용하세요.
+  - 가격: 유료 다운로드 후 한 번만 결제하며 구독은 없습니다.
+  - App Store: https://apps.apple.com/app/id6792483140
 - [Aim990: 토익 준비의 비밀](https://alice51849.github.io/ios-app-guide/ko/aim990.html) — 30일 완벽 학습 코치
   - 토익 990점을 목표로 하는 30일 학습 코치! 개인 맞춤형 학습으로 실력을 키워보세요.
   - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.

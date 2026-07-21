@@ -827,6 +827,49 @@ def _extract(source: str, pattern: str, field: str) -> str:
     return value
 
 
+def _app_store_cta_label(source: str, app_id: str) -> str:
+    return _extract(
+        source,
+        (
+            r'<a\b(?=[^>]*\bhref="https://apps\.apple\.com/'
+            r"(?:[a-z]{2}/)?app/id"
+            + re.escape(app_id)
+            + r'(?:\?[^"]*)?")[^>]*>(.*?)</a>'
+        ),
+        "App Store CTA",
+    )
+
+
+def _decision_context(source: str, answer_page: bool) -> str:
+    return _extract(
+        source,
+        (
+            r'<p class="lead">(.*?)</p>'
+            if answer_page
+            else r'<meta\s+name="description"\s+content="([^"]+)"'
+        ),
+        "localized decision context",
+    )
+
+
+def _publisher_disclosure(
+    source: str,
+    answer_page: bool,
+    localized_fallback: str,
+) -> str:
+    pattern = (
+        r'<footer class="footer"><div class="wrap">(.*?)</div></footer>'
+        if answer_page
+        else r'<footer class="footer">(.*?)</footer>'
+    )
+    if re.search(pattern, source, flags=re.IGNORECASE | re.DOTALL):
+        return _extract(source, pattern, "publisher disclosure")
+    fallback = single_line(localized_fallback)
+    if answer_page or not fallback:
+        raise ValueError("Missing publisher disclosure")
+    return fallback
+
+
 def _json_nodes(value: Any) -> Iterator[dict[str, Any]]:
     if isinstance(value, dict):
         yield value
@@ -952,10 +995,14 @@ def _page_record(
     key: str,
     app: dict[str, Any],
     availability: dict[str, frozenset[str]],
+    localized_disclosure: str,
 ) -> dict[str, Any]:
     source_query = str(PERSONAS[key][0]["query"])
     page_slug = slugify(source_query)
     path = pages / locale / "answers" / f"{page_slug}.html"
+    answer_page = path.is_file()
+    if not answer_page:
+        path = pages / locale / f"{key}.html"
     source = path.read_text(encoding="utf-8")
     app_id = str(app["app_store_id"])
     if f"apps.apple.com/app/id{app_id}" not in source:
@@ -967,17 +1014,14 @@ def _page_record(
     )
     expected_canonical = (
         f"{SITE}/{locale}/answers/{page_slug}.html"
+        if answer_page
+        else f"{SITE}/{locale}/{key}.html"
     )
     if canonical != expected_canonical:
         raise ValueError(
             f"Unexpected canonical in {path}: {canonical}"
         )
-    cta_label = _extract(
-        source,
-        r'<a class="cta" href="https://apps\.apple\.com/[^"]+"[^>]*>'
-        r"(.*?)</a>",
-        "App Store CTA",
-    )
+    cta_label = _app_store_cta_label(source, app_id)
     return {
         "record_id": f"{locale}:{key}:{page_slug}",
         "locale": locale,
@@ -986,14 +1030,10 @@ def _page_record(
         "app_store_id": app_id,
         "publisher_query": _extract(
             source,
-            r"<h1>(.*?)</h1>",
+            r"<h1>(.*?)</h1>" if answer_page else r"<title>(.*?)</title>",
             "localized publisher query",
         ),
-        "decision_context": _extract(
-            source,
-            r'<p class="lead">(.*?)</p>',
-            "localized decision context",
-        ),
+        "decision_context": _decision_context(source, answer_page),
         "purchase_model": str(app["purchase_model"]),
         "one_time_option": bool(app["one_time_option"]),
         "source_persona_query": source_query,
@@ -1003,10 +1043,10 @@ def _page_record(
         ),
         "app_store_url": _app_store_url(app_id, locale, availability),
         "app_store_cta_label": cta_label,
-        "publisher_disclosure": _extract(
+        "publisher_disclosure": _publisher_disclosure(
             source,
-            r'<footer class="footer"><div class="wrap">(.*?)</div></footer>',
-            "publisher disclosure",
+            answer_page,
+            localized_disclosure,
         ),
         "query_origin": "publisher_authored_editorially_localized",
         "measured_search_volume": False,
@@ -1020,12 +1060,23 @@ def build_records(
 ) -> tuple[list[dict[str, Any]], dict[str, dict[str, Any]]]:
     apps = _finder_records(pages)
     availability = load_storefront_availability(pages)
+    localized_ui = {
+        locale: dynamic_ui(mapping)
+        for locale, mapping in load_ui_i18n().items()
+    }
     ordered_keys = sorted(
         apps,
         key=lambda key: (str(apps[key]["name"]).casefold(), key),
     )
     records = [
-        _page_record(pages, locale, key, apps[key], availability)
+        _page_record(
+            pages,
+            locale,
+            key,
+            apps[key],
+            availability,
+            localized_ui[locale][DISCLOSURE],
+        )
         for locale in OFFICIAL_LOCALES
         for key in ordered_keys
     ]

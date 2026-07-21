@@ -4,7 +4,7 @@
 
 ಪ್ರತಿ ಆ್ಯಪ್ ಯಾರಿಗಾಗಿ ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ, ಅವರು ಪೂರ್ಣಗೊಳಿಸಲು ಯತ್ನಿಸುತ್ತಿರುವ ಕಾರ್ಯ ಮತ್ತು ನೇರ App Store ಮಾರ್ಗದ ಮೊದಲ-ಪಕ್ಷ ಕ್ಯಾಟಲಾಗ್.
 
-28 ಪರಿಶೀಲಿತ ಸಜೀವ iOS ಆ್ಯಪ್ಗಳು ಮತ್ತು 50 Apple ಸ್ಥಳೀಯತೆಗಳಾದ್ಯಂತ ಪ್ರಕಾಶಕರಿಂದ ರಚಿಸಲಾದ ಹುಡುಕಾಟ ಉದ್ದೇಶಗಳು.
+29 ಪರಿಶೀಲಿತ ಸಜೀವ iOS ಆ್ಯಪ್ಗಳು ಮತ್ತು 50 Apple ಸ್ಥಳೀಯತೆಗಳಾದ್ಯಂತ ಪ್ರಕಾಶಕರಿಂದ ರಚಿಸಲಾದ ಹುಡುಕಾಟ ಉದ್ದೇಶಗಳು.
 
 **ಸ್ಥಳೀಯತೆ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · **kn-IN** · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -90,6 +90,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | ಆ್ಯಪ್ | ಪ್ರಕಾಶಕ ಪ್ರಶ್ನೆ | ನಿರ್ಧಾರ ಸಂದರ್ಭ | ಖರೀದಿ ಮಾದರಿ | ಮಾರ್ಗದರ್ಶಕ | App Store |
 | --- | --- | --- | --- | --- | --- |
 | **Aim990** | iPhone‌ಗಾಗಿ ಅತ್ಯುತ್ತಮ ಟೋಯಿಕ್ ತಯಾರಿ ಆಫ್‌ಲೈನ್ ಅಧ್ಯಯನ ಯೋಜನೆ ಅಪ್ಲಿಕೇಶನ್ | ಭಾಗ 5 ಚಿಕ್ಕದಾಗಿದ್ದರೂ, ಅವ್ಯಕ್ತ ವಾಕ್ಯ ಪ್ರಶ್ನೆಗಳು ವ್ಯಾಕರಣ ಮತ್ತು ಶಬ್ದಕೋಶ ಸ್ವಯಂಚಾಲಿತವಾಗದಿದ್ದರೆ ಸಮಯವನ್ನು ತೆಗೆದುಕೊಳ್ಳಬಹುದು. | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [App Store ನಲ್ಲಿ Aim990 ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6784974530) |
+| **Aim990 Plus** | Aim990 Plus — ಇಂಗ್ಲಿಷ್ ಒತ್ತಡ ಅಭ್ಯಾಸ \| iOS App | Aim990 Plus ವಯಸ್ಕರು ತಮ್ಮ ಇಂಗ್ಲಿಷ್ ಕೇಳುವಿಕೆ, ಓದುವಿಕೆ ಮತ್ತು ಸಮಯ ನಿರ್ವಹಣೆಯನ್ನು ಏಕಾಗ್ರವಾಗಿ ಬೆಳೆಸಿಕೊಳ್ಳಲು ರೂಪಿಸಿದ ಒತ್ತಡ ತರಬೇತಿ ಆಪ್. ಸಣ್ಣ ಪಾಠಗಳನ್ನು ಸುಮ್ಮನೆ | ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/aim990plus.html) | [App Store ನಲ್ಲಿ Aim990 Plus ಪಡೆಯಿರಿ](https://apps.apple.com/app/id6792483140) |
 | **CV ಡೆಸ್ಕ್** | ವೃತ್ತಿ ಬದಲಾವಣೆಗಾರರಿಗಾಗಿ ಅತ್ಯುತ್ತಮ ರೆಸ್ಯೂಮ್ ನಿರ್ಮಾಪಕ ಅಪ್ಲಿಕೇಶನ್ 2026 | ನೀವು ಕ್ಷೇತ್ರಗಳನ್ನು ಬದಲಾಯಿಸುತ್ತಿದ್ದಾಗ, ರೆಸ್ಯೂಮ್ ಸಮಸ್ಯೆ ವಿಭಿನ್ನವಾಗುತ್ತದೆ: ನಿಮ್ಮ ಅನುಭವ ವಾಸ್ತವಿಕ ಆದರೆ 'ಸಂಬಂಧವಿಲ್ಲದ' ಆಗಿದ್ದು, ATS ಫಿಲ್ಟರ್‌ಗಳು ಮಾನವ ಓದಲು ಮೊದಲು ತಿರಸ್ಕರಿಸುತ್ತವೆ — CV ಡೆಸ್ಕ್ ಇದಕ್ಕಾಗಿ ನಿರ್ಮಿಸಲಾಗಿದೆ. | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-resume-builder-app-for-career-changers-2026.html) | [App Store ನಲ್ಲಿ CV ಡೆಸ್ಕ್ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6781337213) |
 | **Cyca** | ಅಕೌಂಟ್ ಅಗತ್ಯವಿಲ್ಲದ ಅತ್ಯುತ್ತಮ ಪೀರಿಯಡ್ ಟ್ರ್ಯಾಕರ್ ಅಪ್ಲಿಕೇಶನ್ iPhone | ಡೇಟಾ ಸಂವೇದನಶೀಲತೆ ಮುಖ್ಯವಾಗಿರುವ ವರ್ಗದಲ್ಲಿ, ಸರಿಯಾದ ಪೀರಿಯಡ್ ಟ್ರ್ಯಾಕರ್ ಎಲ್ಲವನ್ನೂ — ಹರಿವು, ಮನೋಭಾವ, ಲಕ್ಷಣಗಳು, ತಾಪಮಾನ, ಹತ್ತಿರತೆ — ನಿಮ್ಮ ಸಾಧನದಲ್ಲೇ ಇಡುತ್ತದೆ, ಯಾವುದೇ ಅಕೌಂಟ್ ಅಥವಾ ಕ್ಲೌಡ್ ಸಿಂಕ್ ಇಲ್ಲದೆ — Cyca ಇದಕ್ಕಾಗಿ ನಿರ್ಮಿಸಲಾಗಿದೆ. | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-period-tracker-app-no-account-required-iphone.html) | [App Store ನಲ್ಲಿ Cyca ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6782251621) |
 | **DailyMate** | ಆಪಲ್ ವಾಚ್ ಹೊಂದಿರುವ ಪ್ರಯಾಣಿಕರಿಗಾಗಿ ಅತ್ಯುತ್ತಮ ಪ್ರಾಯೋಗಿಕ ಭಾಷಾ ವಾಕ್ಯಗಳು ಅಪ್ಲಿಕೇಶನ್ | ಪ್ರಯಾಣದ ಮೊದಲು, ಒತ್ತಡದಡಿಯಲ್ಲಿ ಸಂಯೋಜಿಸಬೇಕಾಗಿರುವ ಪ್ರತ್ಯೇಕ ಪದಗಳಿಗಿಂತ ನೈಜ ಪರಿಸ್ಥಿತಿಗಳಿಗಾಗಿ ಪೂರ್ಣ ವಾಕ್ಯಗಳು ಹೆಚ್ಚು ಉಪಯುಕ್ತವಾಗಿವೆ — ಡೇಲಿಮೇಟ್ ಇದಕ್ಕಾಗಿ ನಿರ್ಮಿಸಲಾಗಿದೆ. | ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [App Store ನಲ್ಲಿ ಡೇಲಿಮೇಟ್ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6790418321) |
@@ -120,7 +121,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## ಪೂರ್ಣ ಡೇಟಾಸೆಟ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ
 
-JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 1,400 ದಾಖಲೆಗಳನ್ನು ಹೊಂದಿವೆ.
+JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 1,450 ದಾಖಲೆಗಳನ್ನು ಹೊಂದಿವೆ.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -128,6 +129,6 @@ JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 1,400 ದಾಖಲೆಗಳನ್�
 
 [ಮುಖಪುಟ](https://alice51849.github.io/ios-app-guide/kn-IN/index.html) · [ತೆರೆದ ಡೇಟಾ](https://alice51849.github.io/ios-app-guide/kn-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ಲೈಸೆನ್ಸ್](https://creativecommons.org/licenses/by/4.0/)
 
-ನವೀಕರಿಸಲಾಗಿದೆ: 2026-07-20
+ನವೀಕರಿಸಲಾಗಿದೆ: 2026-07-22
 
 CC BY 4.0 ಮೂಲ ಕ್ಯಾಟಲೋಗ್ ಸಂಗ್ರಹಣೆಗೆ ಅನ್ವಯಿಸುತ್ತದೆ; ಆ್ಯಪ್ ಹೆಸರುಗಳು ಮತ್ತು App Store ಗುರುತುಗಳು ಅವರ ಮಾಲೀಕರಿಗೆ ಸೇರಿವೆ.

@@ -4,7 +4,7 @@
 
 ପ୍ରତ୍ୟେକ ଆପ୍ କାହା ପାଇଁ ଡିଜାଇନ୍ କରାଯାଇଛି, ସେମାନେ କେଉଁ କାର୍ଯ୍ୟ ସମ୍ପୂର୍ଣ୍ଣ କରିବାକୁ ଚେଷ୍ଟା କରୁଛନ୍ତି, ଏବଂ ସିଧା App Store ପଥର ପ୍ରଥମ-ପକ୍ଷ ସୂଚୀ।
 
-ପ୍ରକାଶକ ଦ୍ୱାରା ଲେଖାଯାଇଥିବା ସନ୍ଧାନ ଉଦ୍ଦେଶ୍ୟ 28ଟି ସତ୍ୟାପିତ ସଜୀବ iOS ଆପ୍ ଏବଂ 50ଟି Apple ଅଞ୍ଚଳରେ।
+ପ୍ରକାଶକ ଦ୍ୱାରା ଲେଖାଯାଇଥିବା ସନ୍ଧାନ ଉଦ୍ଦେଶ୍ୟ 29ଟି ସତ୍ୟାପିତ ସଜୀବ iOS ଆପ୍ ଏବଂ 50ଟି Apple ଅଞ୍ଚଳରେ।
 
 **ଅଞ୍ଚଳ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · **or-IN** · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -90,6 +90,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | ଆପ୍ | ପ୍ରକାଶକ ପ୍ରଶ୍ନ | ସିଦ୍ଧାନ୍ତ ପରିପ୍ରେକ୍ଷ୍ୟ | କ୍ରୟ ମଡେଲ୍ | ଗାଇଡ୍ | App Store |
 | --- | --- | --- | --- | --- | --- |
 | **Aim990** | iPhone ପାଇଁ ସର୍ବୋତ୍ତମ TOEIC ପ୍ରସ୍ତୁତି ଆପ୍ ଅଫ୍ଲାଇନ୍ ଅଧ୍ୟୟନ ଯୋଜନା | ପାର୍ଟ 5 ଛୋଟ ଦେଖାଯାଏ, କିନ୍ତୁ ସେହି ଅଧୂରା ବାକ୍ୟ ପ୍ରଶ୍ନଗୁଡିକ ସମୟ ନଷ୍ଟ କରିପାରେ ଯଦି ବ୍ୟାକରଣ ଏବଂ ଶବ୍ଦାବଳୀ ସ୍ୱୟଂଚାଳିତ ନୁହେଁ। | ମୁକ୍ତ ଆରମ୍ଭ · ଜୀବନକାଳ ଅନଲକ୍ | [ଗାଇଡ୍](https://alice51849.github.io/ios-app-guide/or-IN/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [App Store ରୁ Aim990 ପାଆନ୍ତୁ →](https://apps.apple.com/in/app/id6784974530) |
+| **Aim990 Plus** | Aim990 Plus — ଇଂରାଜୀ ଚାପ ଅଭ୍ୟାସ \| iOS App | Aim990 Plus ବୟସ୍କମାନଙ୍କ ଇଂରାଜୀ ଶ୍ରବଣ, ପଠନ ଓ ସମୟ ପରିଚାଳନାକୁ ଏକାଗ୍ର ଭାବରେ ଉନ୍ନତ କରିବା ପାଇଁ ତିଆରି ହୋଇଥିବା ଚାପ ଅଭ୍ୟାସ ଆପ୍। କେବଳ ପାଠ ଓଲଟାଇ ଦେଖିବା ବଦଳରେ | ପୈସା ଦେଇ ଡାଉନଲୋଡ୍ | [ଗାଇଡ୍](https://alice51849.github.io/ios-app-guide/or-IN/aim990plus.html) | [App Store ରୁ Aim990 Plus ପାଆନ୍ତୁ](https://apps.apple.com/app/id6792483140) |
 | **CV Desk** | କ୍ୟାରିୟର୍ ପରିବର୍ତ୍ତନକାରୀଙ୍କ ପାଇଁ ସର୍ବୋତ୍ତମ ରେଜୁମେ ବିଲ୍ଡର୍ ଆପ୍ 2026 | ଯେତେବେଳେ ଆପଣ କ୍ଷେତ୍ର ବଦଳାଉଛନ୍ତି, ରେଜୁମେ ସମସ୍ୟା ଭିନ୍ନ: ଆପଣଙ୍କର ଅନୁଭବ ସତ୍ୟ, କିନ୍ତୁ କାଗଜରେ 'ଅସମ୍ପୃକ୍ତ', ଏବଂ ATS ଫିଲ୍ଟର୍ ଆପଣଙ୍କୁ ମାନବ ପଢ଼ିବା ପୂର୍ବରୁ ପ୍ରତିଷେଧ କରେ — CV Desk ଏହି ପାଇଁ ନିର୍ମିତ। | ମୁକ୍ତ ଆରମ୍ଭ · ଜୀବନକାଳ ଅନଲକ୍ | [ଗାଇଡ୍](https://alice51849.github.io/ios-app-guide/or-IN/answers/best-resume-builder-app-for-career-changers-2026.html) | [App Store ରୁ CV Desk ପାଆନ୍ତୁ →](https://apps.apple.com/in/app/id6781337213) |
 | **Cyca** | iPhone ପାଇଁ ସର୍ବୋତ୍ତମ ପିରିଅଡ୍ ଟ୍ରାକର୍ ଆପ୍ ଯାହାକୁ ଖାତା ଆବଶ୍ୟକ ନାହିଁ | ଏକ ଶ୍ରେଣୀ ଯେଉଁଠାରେ ତଥ୍ୟ ସଂବେଦନଶୀଳତା ସମସ୍ତ କଥା — ପ୍ରବାହ, ମନୋଭାବ, ଲକ୍ଷଣ, ତାପମାତ୍ରା, ଆନ୍ତର୍ଜ୍ଞାନ — ଆପଣଙ୍କର ଡିଭାଇସ୍ ଉପରେ ରଖିଥାଏ, କୌଣସି ଖାତା ଓ କୌଣସି କ୍ଲାଉଡ୍ ସିଙ୍କ୍ ନାହିଁ — Cyca ଏହି ପାଇଁ ନିର୍ମିତ। | ମୁକ୍ତ ଆରମ୍ଭ · ଜୀବନକାଳ ଅନଲକ୍ | [ଗାଇଡ୍](https://alice51849.github.io/ios-app-guide/or-IN/answers/best-period-tracker-app-no-account-required-iphone.html) | [App Store ରୁ Cyca ପାଆନ୍ତୁ →](https://apps.apple.com/in/app/id6782251621) |
 | **DailyMate** | ଆପଲ୍ ଓୟାଚ୍ ସହିତ ଯାତ୍ରୀଙ୍କ ପାଇଁ ସର୍ବୋତ୍ତମ ବ୍ୟବହାରିକ ଭାଷା ବାକ୍ୟାଂଶ ଆପ୍ | ଯାତ୍ରା ପୂର୍ବରୁ, ବିଚ୍ଛିନ୍ନ ଶବ୍ଦ ତୁଳନାରେ ବାସ୍ତବ ପରିସ୍ଥିତି ପାଇଁ ସମ୍ପୂର୍ଣ୍ଣ ବାକ୍ୟାଂଶ ଅଧିକ ଉପଯୋଗୀ — ଡେଲିମେଟ୍ ଏହା ପାଇଁ ତିଆରି। | ପୈସା ଦେଇ ଡାଉନଲୋଡ୍ | [ଗାଇଡ୍](https://alice51849.github.io/ios-app-guide/or-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [App Store ରୁ ଡେଲିମେଟ୍ ମିଳାନ୍ତୁ →](https://apps.apple.com/in/app/id6790418321) |
@@ -120,7 +121,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## ସମ୍ପୂର୍ଣ୍ଣ ତଥ୍ୟସେଟ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ
 
-JSON, JSONL ଏବଂ CSV ଏହି ସମସ୍ତ 1,400 ରେକର୍ଡ ସମାନ ରଖେ।
+JSON, JSONL ଏବଂ CSV ଏହି ସମସ୍ତ 1,450 ରେକର୍ଡ ସମାନ ରଖେ।
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -128,6 +129,6 @@ JSON, JSONL ଏବଂ CSV ଏହି ସମସ୍ତ 1,400 ରେକର୍ଡ ସ
 
 [ହୋମ୍](https://alice51849.github.io/ios-app-guide/or-IN/index.html) · [ଖୋଲା ତଥ୍ୟ](https://alice51849.github.io/ios-app-guide/or-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ଲାଇସେନ୍ସ](https://creativecommons.org/licenses/by/4.0/)
 
-ଅଦ୍ୟତିତ: 2026-07-20
+ଅଦ୍ୟତିତ: 2026-07-22
 
 CC BY 4.0 ମୂଳ ସୂଚୀ ସଂଗ୍ରହ ପାଇଁ ପ୍ରୟୋଗ ହୁଏ; ଆପ୍ ନାମ ଏବଂ App Store ଚିହ୍ନଗୁଡିକ ତାଙ୍କର ମାଲିକଙ୍କର ଅଟୁଟ ଅଧିକାର।

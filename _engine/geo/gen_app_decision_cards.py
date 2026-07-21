@@ -419,7 +419,11 @@ def _page_content(
     availability: dict[str, frozenset[str]] | None = None,
 ) -> dict[str, object]:
     heading = H1_RE.search(source)
-    promise_match = LEAD_RE.search(source) if answer else TAGLINE_RE.search(source)
+    promise_match = (
+        LEAD_RE.search(source)
+        if answer
+        else TAGLINE_RE.search(source) or LEAD_RE.search(source)
+    )
     if not heading or not promise_match:
         raise ValueError(f"Decision-card target has no usable heading/promise for {key}")
     store_url, cta = _store_link(
@@ -536,7 +540,11 @@ def _inject_style(source: str, block: str) -> str:
 
 
 def _inject_card(source: str, block: str, answer: bool) -> str:
-    anchor = ANSWER_HERO_RE.search(source) if answer else TAGLINE_RE.search(source)
+    anchor = (
+        ANSWER_HERO_RE.search(source)
+        if answer
+        else TAGLINE_RE.search(source) or LEAD_RE.search(source)
+    )
     if not anchor:
         anchor = H1_RE.search(source)
     if not anchor:

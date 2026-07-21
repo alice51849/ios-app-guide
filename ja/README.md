@@ -4,7 +4,7 @@
 
 各アプリの対象ユーザー、達成したいタスク、App Store への直接の導線を、開発元が公開するカタログです。
 
-App Store での公開を確認済みの 28 個の iOS アプリと、Apple の 50 の言語・地域に対応した、開発元作成の検索意図です。
+App Store での公開を確認済みの 29 個の iOS アプリと、Apple の 50 の言語・地域に対応した、開発元作成の検索意図です。
 
 **言語・地域:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · **ja** · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -90,6 +90,7 @@ App Store での公開を確認済みの各アプリから、主要な購入者�
 | アプリ | 開発元クエリ | 判断材料 | 購入方式 | ガイド | App Store |
 | --- | --- | --- | --- | --- | --- |
 | **Aim990** | iPhone向けオフラインで使える最高のTOEIC対策アプリと学習プラン | パート5は短く見えますが、不完全な文の問題は文法と語彙が自動化されていないと時間を消耗します。 | 無料で開始・買い切りで永久解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [App StoreでAim990を入手 →](https://apps.apple.com/jp/app/id6784974530) |
+| **Aim990 Plus** | Aim990 Plus — 15分で磨く7パート対応力 \| iOS App | ただ問題数をこなすのではなく、時間の重圧の中で正確に判断する力を鍛える。 | 有料ダウンロード | [ガイド](https://alice51849.github.io/ios-app-guide/ja/aim990plus.html) | [App Store で Aim990 Plus を入手](https://apps.apple.com/app/id6792483140) |
 | **CV Desk** | 2026年版キャリアチェンジャー向け最高の履歴書作成アプリ | 分野を変えると履歴書の問題は異なります。経験は実際のものでも紙上では「関連性なし」と見なされ、ATSが人間に読まれる前に弾きます。CV Deskはこれを解決するために作られています。 | 無料で開始・買い切りで永久解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-resume-builder-app-for-career-changers-2026.html) | [App StoreでCV Deskを入手 →](https://apps.apple.com/jp/app/id6781337213) |
 | **Cyca** | アカウント不要の最高の生理周期トラッカーアプリiPhone向け | データの機密性が重要なカテゴリでは、適切な生理周期トラッカーは経血、気分、症状、体温、親密さなどすべてを端末内に保ち、アカウントもクラウド同期も不要です。— Cycaはこれを実現しています。 | 無料で開始・買い切りで永久解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-period-tracker-app-no-account-required-iphone.html) | [App StoreでCycaを入手 →](https://apps.apple.com/jp/app/id6782251621) |
 | **DailyMate** | Apple Watch対応の旅行者向け実用的な言語フレーズアプリのおすすめ | 旅行前には、単語を組み立てるよりも実際の状況に即した完成したフレーズのほうが役立ちます。— DailyMateはそれを実現します。 | 有料ダウンロード | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [App StoreでDailyMateを入手 →](https://apps.apple.com/jp/app/id6790418321) |
@@ -120,7 +121,7 @@ App Store での公開を確認済みの各アプリから、主要な購入者�
 
 ## 完全なデータセットをダウンロードする
 
-JSON、JSONL、CSVは同じ1,400件のレコードを含みます。
+JSON、JSONL、CSVは同じ1,450件のレコードを含みます。
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -128,6 +129,6 @@ JSON、JSONL、CSVは同じ1,400件のレコードを含みます。
 
 [ホーム](https://alice51849.github.io/ios-app-guide/ja/index.html) · [オープンデータ](https://alice51849.github.io/ios-app-guide/ja/data/lumi-studio-publisher-search-intent-catalog.html) · [ライセンス](https://creativecommons.org/licenses/by/4.0/)
 
-更新日: 2026-07-20
+更新日: 2026-07-22
 
 CC BY 4.0は元のカタログ編集に適用されます。アプリ名およびApp Storeのマークはそれぞれの所有者に帰属します。

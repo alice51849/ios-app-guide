@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-20",
-  "content_digest": "b473dcd13536dd86925ff4270d347c573872282ddbf0ed5da08bf79ac94567b6",
+  "date_modified": "2026-07-21",
+  "content_digest": "01428f62414fc0b782783755122d304ed2e653ad57f26d24eea7086bbaee7cc9",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 28,
+  "record_count": 29,
   "apps": [
     {
       "key": "aim990",
@@ -47,6 +47,49 @@
         "rating_count": 2,
         "storefront_url": "https://apps.apple.com/tw/app/id6784974530"
       }
+    },
+    {
+      "key": "aim990plus",
+      "app_store_id": "6792483140",
+      "name": "Aim990 Plus",
+      "summary": "把零散刷題，整理成真正能承受時間壓力的備考節奏。",
+      "category": "education",
+      "search_terms": [
+        "英語聽力",
+        "閱讀理解",
+        "考試準備",
+        "模擬測驗",
+        "錯題複習",
+        "聽寫練習",
+        "背單字",
+        "字彙學習",
+        "題庫刷題",
+        "考前衝刺",
+        "弱點分析",
+        "限時作答",
+        "商務英文",
+        "長篇文章",
+        "照片描述",
+        "對話應答",
+        "短文填空",
+        "文法測驗",
+        "學習進度",
+        "離線學習"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/aim990plus.html",
+      "verified_live": true
     },
     {
       "key": "cvdesk",

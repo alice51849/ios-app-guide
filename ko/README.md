@@ -4,7 +4,7 @@
 
 각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.
 
-App Store 제공 여부를 확인한 28개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
+App Store 제공 여부를 확인한 29개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
 
 **언어·지역:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · **ko** · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -90,6 +90,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 | 앱 | 개발사 검색어 | 의사결정 맥락 | 구매 방식 | 가이드 | App Store |
 | --- | --- | --- | --- | --- | --- |
 | **Aim990** | 아이폰용 오프라인 토익 준비 앱 최고의 학습 계획 | 파트 5는 짧아 보이지만, 문장이 완성되지 않은 문제들이 문법과 어휘가 자동화되지 않으면 시간을 많이 소모할 수 있습니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [앱 스토어에서 Aim990 받기 →](https://apps.apple.com/kr/app/id6784974530) |
+| **Aim990 Plus** | Aim990 Plus — 15분 완성 7개 영역 집중 \| iOS App | 많이 푸는 데서 멈추지 않고, 제한된 시간 안에 정확히 판단하는 힘까지 기르세요. | 유료 다운로드 | [가이드](https://alice51849.github.io/ios-app-guide/ko/aim990plus.html) | [App Store에서 Aim990 Plus 받기](https://apps.apple.com/app/id6792483140) |
 | **CV Desk** | 2026년 경력 전환자를 위한 최고의 이력서 작성 앱 | 분야를 바꿀 때 이력서 문제는 다릅니다: 경험은 실제지만 서류상 '관련 없음'으로 ATS 필터가 인간 검토 전에 걸러냅니다 — CV Desk는 이를 위해 만들어졌습니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-resume-builder-app-for-career-changers-2026.html) | [앱 스토어에서 CV Desk 받기 →](https://apps.apple.com/kr/app/id6781337213) |
 | **Cyca** | 계정 없이 사용할 수 있는 최고의 생리 주기 추적 앱 아이폰용 | 데이터 민감도가 중요한 카테고리에서 올바른 생리 주기 추적기는 흐름, 기분, 증상, 온도, 친밀감 등 모든 정보를 계정 없이 기기에만 보관하며 클라우드 동기화가 없습니다 — Cyca는 이를 위해 만들어졌습니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-period-tracker-app-no-account-required-iphone.html) | [앱 스토어에서 Cyca 받기 →](https://apps.apple.com/kr/app/id6782251621) |
 | **DailyMate** | 애플 워치와 함께 여행자에게 가장 실용적인 언어 회화 앱 | 여행 전, 실제 상황에 맞는 완전한 문장이 압박 속에 조합해야 하는 단어보다 더 유용합니다 — DailyMate는 이를 위해 만들어졌습니다. | 유료 다운로드 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [App Store에서 DailyMate 받기 →](https://apps.apple.com/kr/app/id6790418321) |
@@ -120,7 +121,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 
 ## 전체 데이터셋 다운로드
 
-JSON, JSONL, CSV 모두 동일한 1,400개 기록을 포함합니다.
+JSON, JSONL, CSV 모두 동일한 1,450개 기록을 포함합니다.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -128,6 +129,6 @@ JSON, JSONL, CSV 모두 동일한 1,400개 기록을 포함합니다.
 
 [홈](https://alice51849.github.io/ios-app-guide/ko/index.html) · [오픈 데이터](https://alice51849.github.io/ios-app-guide/ko/data/lumi-studio-publisher-search-intent-catalog.html) · [라이선스](https://creativecommons.org/licenses/by/4.0/)
 
-업데이트 날짜: 2026-07-20
+업데이트 날짜: 2026-07-22
 
 CC BY 4.0은 원본 카탈로그 편집에 적용되며, 앱 이름과 App Store 마크는 각 소유자의 권리입니다.

@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-20",
-  "content_digest": "b473dcd13536dd86925ff4270d347c573872282ddbf0ed5da08bf79ac94567b6",
+  "date_modified": "2026-07-21",
+  "content_digest": "01428f62414fc0b782783755122d304ed2e653ad57f26d24eea7086bbaee7cc9",
   "locale": "bn-BD",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 28,
+  "record_count": 29,
   "apps": [
     {
       "key": "aim990",
@@ -39,6 +39,38 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6784974530",
       "guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/aim990.html",
+      "verified_live": true
+    },
+    {
+      "key": "aim990plus",
+      "app_store_id": "6792483140",
+      "name": "Aim990 Plus",
+      "summary": "Aim990 Plus প্রাপ্তবয়স্ক শিক্ষার্থীদের জন্য ইংরেজি শোনা ও পড়ার নিবিড় অনুশীলন। এর মূল ধাপগুলো সময়ের চাপের মধ্যেও মনোযোগ ধরে রাখার অভ্যাস গড়ে তোলে: প্রথমে ৮ প্রশ্নের Warm-up, এরপর ১৫ মিনিটে ২০ প্রশ্নের Pressure Set, সবশেষে Mistake Replay। প্রতিটি ধাপ পরিষ্কারভাবে সাজানো, তাই অপ্রয়োজনীয় মেনু ঘাঁটা ছাড়াই অনুশীলন শুরু করা এবং পরের সেশনের লক্ষ্য ঠিক করা যায়।",
+      "category": "education",
+      "search_terms": [
+        "ইংরেজি পরীক্ষা",
+        "শ্রবণ দক্ষতা",
+        "পঠন বোধ",
+        "মক টেস্ট",
+        "শব্দভান্ডার",
+        "ডিকটেশন",
+        "সময় ধরে প্রশ্ন",
+        "ভুল সংশোধন",
+        "কুইজ"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/aim990plus.html",
       "verified_live": true
     },
     {

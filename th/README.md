@@ -4,7 +4,7 @@
 
 แคตตาล็อกที่ผู้พัฒนาเผยแพร่โดยตรง ระบุว่าแต่ละแอปเหมาะกับใคร ต้องการทำงานใดให้เสร็จ และเข้าถึง App Store โดยตรงได้อย่างไร
 
-เจตนาการค้นหาที่ผู้พัฒนาเขียนสำหรับแอป iOS ที่ตรวจสอบแล้วและยังมีบน App Store จำนวน 28 แอป ครอบคลุมภาษาและภูมิภาค Apple 50 รายการ
+เจตนาการค้นหาที่ผู้พัฒนาเขียนสำหรับแอป iOS ที่ตรวจสอบแล้วและยังมีบน App Store จำนวน 29 แอป ครอบคลุมภาษาและภูมิภาค Apple 50 รายการ
 
 **โลเคล:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · **th** · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -90,6 +90,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | แอป | คำค้นหาของผู้เผยแพร่ | บริบทการตัดสินใจ | รูปแบบการซื้อ | คู่มือ | App Store |
 | --- | --- | --- | --- | --- | --- |
 | **Aim990** | แอปเตรียมสอบ TOEIC แบบออฟไลน์ที่ดีที่สุดพร้อมแผนการเรียนสำหรับ iPhone | ส่วนที่ 5 ดูเหมือนสั้น แต่คำถามเติมประโยคที่ไม่สมบูรณ์เหล่านี้อาจใช้เวลามากถ้าไวยากรณ์และคำศัพท์ไม่คล่อง | เริ่มใช้ฟรี · ปลดล็อกถาวร | [คู่มือ](https://alice51849.github.io/ios-app-guide/th/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [รับ Aim990 ใน App Store →](https://apps.apple.com/th/app/id6784974530) |
+| **Aim990 Plus** | Aim990 Plus — ฟังอ่านครบ 7 พาร์ตใน 15 นาที \| iOS App | ไม่ได้ฝึกแค่ให้ทำโจทย์ได้มากขึ้น แต่ฝึกให้ตัดสินใจได้แม่นยำเมื่อเวลาค่อย ๆ ลดลง | ดาวน์โหลดแบบชำระเงิน | [คู่มือ](https://alice51849.github.io/ios-app-guide/th/aim990plus.html) | [ดาวน์โหลด Aim990 Plus บน App Store](https://apps.apple.com/app/id6792483140) |
 | **CV Desk** | แอปสร้างประวัติย่อที่ดีที่สุดสำหรับผู้เปลี่ยนอาชีพปี 2026 | เมื่อคุณเปลี่ยนสาขา ปัญหาประวัติย่อจะแตกต่าง: ประสบการณ์ของคุณเป็นจริงแต่บนกระดาษดู 'ไม่เกี่ยวข้อง' และระบบ ATS กรองคุณก่อนที่คนจะอ่าน — CV Desk สร้างมาเพื่อสิ่งนี้ | เริ่มใช้ฟรี · ปลดล็อกถาวร | [คู่มือ](https://alice51849.github.io/ios-app-guide/th/answers/best-resume-builder-app-for-career-changers-2026.html) | [รับ CV Desk ใน App Store →](https://apps.apple.com/th/app/id6781337213) |
 | **Cyca** | แอปติดตามรอบเดือนที่ดีที่สุด ไม่ต้องมีบัญชีสำหรับ iPhone | ในหมวดหมู่ที่ข้อมูลมีความละเอียดอ่อนสูง แอปติดตามรอบเดือนที่เหมาะสมเก็บทุกอย่าง — ประจำเดือน อารมณ์ อาการ อุณหภูมิ ความสัมพันธ์ — ไว้ในอุปกรณ์ของคุณ ไม่มีบัญชีและไม่มีการซิงค์คลาวด์ — Cyca สร้างมาเพื่อสิ่งนี้ | เริ่มใช้ฟรี · ปลดล็อกถาวร | [คู่มือ](https://alice51849.github.io/ios-app-guide/th/answers/best-period-tracker-app-no-account-required-iphone.html) | [รับ Cyca ใน App Store →](https://apps.apple.com/th/app/id6782251621) |
 | **DailyMate** | แอปวลีภาษาที่ใช้งานได้จริงดีที่สุดสำหรับนักเดินทางที่ใช้แอปเปิลวอทช์ | ก่อนเดินทาง วลีสมบูรณ์สำหรับสถานการณ์จริงมีประโยชน์กว่าคำศัพท์แยกที่คุณต้องประกอบเองภายใต้ความกดดัน — DailyMate ถูกสร้างมาเพื่อสิ่งนี้ | ดาวน์โหลดแบบชำระเงิน | [คู่มือ](https://alice51849.github.io/ios-app-guide/th/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [ดาวน์โหลด DailyMate จาก App Store →](https://apps.apple.com/th/app/id6790418321) |
@@ -120,7 +121,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## ดาวน์โหลดชุดข้อมูลทั้งหมด
 
-ไฟล์ JSON, JSONL และ CSV มีข้อมูล 1,400 รายการเหมือนกัน
+ไฟล์ JSON, JSONL และ CSV มีข้อมูล 1,450 รายการเหมือนกัน
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -128,6 +129,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [หน้าแรก](https://alice51849.github.io/ios-app-guide/th/index.html) · [ข้อมูลเปิด](https://alice51849.github.io/ios-app-guide/th/data/lumi-studio-publisher-search-intent-catalog.html) · [ใบอนุญาต](https://creativecommons.org/licenses/by/4.0/)
 
-อัปเดตเมื่อ: 2026-07-20
+อัปเดตเมื่อ: 2026-07-22
 
 CC BY 4.0 ใช้กับการรวบรวมแคตตาล็อกต้นฉบับ; ชื่อแอปและเครื่องหมาย App Store เป็นของเจ้าของแต่ละราย

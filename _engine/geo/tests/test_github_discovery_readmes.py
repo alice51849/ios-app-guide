@@ -210,6 +210,35 @@ class GitHubDiscoveryContractTests(unittest.TestCase):
             self.assertLessEqual(len(token), 30)
             self.assertRegex(token, r"^[a-z0-9_]+$")
 
+    def test_guide_url_accepts_answer_and_matching_product_fallback(self) -> None:
+        discovery._validate_guide_url(
+            (
+                "https://alice51849.github.io/ios-app-guide/"
+                "ar-SA/answers/offline-exam-practice.html"
+            ),
+            "ar-SA",
+            "aim990plus",
+        )
+        discovery._validate_guide_url(
+            (
+                "https://alice51849.github.io/ios-app-guide/"
+                "ar-SA/aim990plus.html"
+            ),
+            "ar-SA",
+            "aim990plus",
+        )
+
+    def test_guide_url_rejects_another_apps_product_fallback(self) -> None:
+        with self.assertRaises(ValueError):
+            discovery._validate_guide_url(
+                (
+                    "https://alice51849.github.io/ios-app-guide/"
+                    "ar-SA/scanto.html"
+                ),
+                "ar-SA",
+                "aim990plus",
+            )
+
     def test_store_url_is_clean_without_a_provider_token(self) -> None:
         record = {
             "locale": "ja",
@@ -448,7 +477,10 @@ class GitHubDiscoveryOutputTests(unittest.TestCase):
             self.assertIn(f"[{locale}](./{locale}/)", source)
         for record in self.records:
             if record["locale"] == "en-US":
-                self.assertIn(record["publisher_query"], source)
+                self.assertIn(
+                    discovery._markdown_text(record["publisher_query"]),
+                    source,
+                )
 
     def test_generation_is_idempotent(self) -> None:
         self.assertEqual((), discovery.build(self.pages))

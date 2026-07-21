@@ -3,7 +3,7 @@
 > 每個 iOS App 的結構化資訊 — 功能、價格與常見問題。
 
 locale: zh-Hant
-apps: 28
+apps: 29
 - App 目錄: https://alice51849.github.io/ios-app-guide/zh-Hant/tools/private-pay-once-iphone-app-finder.html
 - App 目錄 · PWA: https://alice51849.github.io/ios-app-guide/zh-Hant/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld
@@ -26,6 +26,10 @@ apps: 28
 - App 目錄 · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
 - App 目錄 · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
 
+- [Aim990 Plus](https://alice51849.github.io/ios-app-guide/zh-Hant/aim990plus.html) — 15分鐘掌握七大題型
+  - 從 8 題暖身進入 15 分鐘限時訓練，再逐題重練答錯內容。630 道原創題、分級模擬考、聽寫與弱點分析皆可離線使用，下載後功能完整開放。
+  - 價格: 付費下載，一次付清，無需訂閱。
+  - App Store: https://apps.apple.com/app/id6792483140
 - [Aim990：TOEIC考試助手](https://alice51849.github.io/ios-app-guide/zh-Hant/aim990.html) — 30天提升你的聽讀能力
   - 為你的TOEIC考試做好準備！Aim990提供全面的學習計劃，助你邁向990高分！
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。

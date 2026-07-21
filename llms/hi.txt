@@ -3,7 +3,7 @@
 > हर iOS ऐप की संरचित जानकारी — फ़ीचर, कीमत और FAQ।
 
 locale: hi
-apps: 28
+apps: 29
 - ऐप निर्देशिका: https://alice51849.github.io/ios-app-guide/hi/tools/private-pay-once-iphone-app-finder.html
 - ऐप निर्देशिका · PWA: https://alice51849.github.io/ios-app-guide/hi/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hi.jsonld
@@ -26,6 +26,10 @@ apps: 28
 - ऐप निर्देशिका · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
 - ऐप निर्देशिका · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
 
+- [Aim990 Plus](https://alice51849.github.io/ios-app-guide/hi/aim990plus.html) — दबाव में तेज़ और सटीक जवाब
+  - पहले 8 सवालों से तैयारी करें, फिर 15 मिनट के 20 सवाल हल करें और अंत में अपनी गलतियाँ दोहराएँ—सुनने और पढ़ने का केंद्रित ऑफ़लाइन प्रशिक्षण।
+  - कीमत: एक अग्रिम कीमत वाला सशुल्क डाउनलोड, बिना किसी सदस्यता के।
+  - App Store: https://apps.apple.com/app/id6792483140
 - [Aim990: TOEIC तैयारी](https://alice51849.github.io/ios-app-guide/hi/aim990.html) — आपकी सफलता का साथी
   - Aim990 के साथ TOEIC में सफलता की ओर बढ़ें! 30 दिन की योजना, व्यक्तिगत अभ्यास, और कोई विज्ञापन नहीं।
   - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।

@@ -1367,7 +1367,7 @@ class GeneratorTests(unittest.TestCase):
             len(sitemap_urls),
         )
 
-    def test_smart_app_banners_cover_guides_localized_pages_and_answers(self):
+    def test_smart_app_banners_cover_guides_and_single_app_buyer_pages(self):
         with tempfile.TemporaryDirectory() as directory:
             workspace = Path(directory)
             pages = workspace / "site"
@@ -1381,6 +1381,15 @@ class GeneratorTests(unittest.TestCase):
             story = pages / "stories" / "lumibopomofo.html"
             poster = pages / "stories" / "img" / "lumibopomofo-poster.jpg"
             hub = pages / "hubs" / "lumibopomofo.html"
+            alternative = (
+                pages / "alternatives" / "lumibopomofo-vs-competitor.html"
+            )
+            localized_alternative = (
+                pages
+                / "zh-Hant"
+                / "alternatives"
+                / "lumibopomofo-vs-competitor.html"
+            )
             stale = pages / "fr-FR" / "guides" / "stale.html"
             answer = pages / "answers" / "best-bopomofo-app.html"
             localized_answer = (
@@ -1388,6 +1397,9 @@ class GeneratorTests(unittest.TestCase):
             )
             stale_answer = pages / "fr-FR" / "answers" / "stale.html"
             ambiguous_answer = pages / "answers" / "compare-apps.html"
+            identity_only_answer = (
+                pages / "answers" / "managed-identity-only.html"
+            )
             for path in (
                 guide,
                 localized,
@@ -1396,11 +1408,14 @@ class GeneratorTests(unittest.TestCase):
                 story,
                 poster,
                 hub,
+                alternative,
+                localized_alternative,
                 stale,
                 answer,
                 localized_answer,
                 stale_answer,
                 ambiguous_answer,
+                identity_only_answer,
             ):
                 path.parent.mkdir(parents=True, exist_ok=True)
             site = gen_smart_app_banners.SITE
@@ -1427,7 +1442,24 @@ class GeneratorTests(unittest.TestCase):
                 encoding="utf-8",
             )
             poster.write_bytes(b"poster")
-            hub.write_text("<head></head>", encoding="utf-8")
+            hub.write_text(
+                "<head></head><body>"
+                '<a href="https://apps.apple.com/app/id6773017109">'
+                "Get the app</a></body>",
+                encoding="utf-8",
+            )
+            alternative.write_text(
+                "<head></head><body>"
+                '<a href="https://apps.apple.com/app/id6773017109">'
+                "Get the app</a></body>",
+                encoding="utf-8",
+            )
+            localized_alternative.write_text(
+                "<head></head><body>"
+                '<a href="https://apps.apple.com/tw/app/id6773017109">'
+                "下載 App</a></body>",
+                encoding="utf-8",
+            )
             stale.write_text(
                 "<head>"
                 f"{gen_smart_app_banners.BLOCK_START}"
@@ -1437,7 +1469,13 @@ class GeneratorTests(unittest.TestCase):
                 encoding="utf-8",
             )
             answer.write_text(
-                "<head></head><body>"
+                "<head>"
+                '<script type="application/ld+json" '
+                'data-mobile-app-identity="1">'
+                '{"@context":"https://schema.org",'
+                '"@type":"MobileApplication",'
+                '"downloadUrl":"https://apps.apple.com/app/id6773017109"}'
+                "</script></head><body>"
                 '<a href="https://apps.apple.com/app/id6773017109?ct=iag_ans">'
                 "Get the app</a></body>",
                 encoding="utf-8",
@@ -1461,6 +1499,16 @@ class GeneratorTests(unittest.TestCase):
                 "https://apps.apple.com/app/id6773017109 "
                 "https://apps.apple.com/app/id1234567890"
                 "</body>",
+                encoding="utf-8",
+            )
+            identity_only_answer.write_text(
+                "<head>"
+                '<script type="application/ld+json" '
+                'data-mobile-app-identity="1">'
+                '{"@context":"https://schema.org",'
+                '"@type":"MobileApplication",'
+                '"downloadUrl":"https://apps.apple.com/app/id6773017109"}'
+                "</script></head><body>No source App Store link</body>",
                 encoding="utf-8",
             )
             (pages / "index.html").write_text(
@@ -1490,8 +1538,12 @@ class GeneratorTests(unittest.TestCase):
                     stale,
                     answer,
                     localized_answer,
+                    hub,
+                    alternative,
+                    localized_alternative,
                     stale_answer,
                     ambiguous_answer,
+                    identity_only_answer,
                 )
             }
             second = gen_smart_app_banners.generate(
@@ -1503,8 +1555,9 @@ class GeneratorTests(unittest.TestCase):
                     "apps": 1,
                     "guide_pages": 3,
                     "answer_pages": 2,
+                    "buyer_intent_pages": 5,
                     "languages": 2,
-                    "changed_files": 7,
+                    "changed_files": 10,
                 },
                 first,
             )
@@ -1520,8 +1573,12 @@ class GeneratorTests(unittest.TestCase):
                         stale,
                         answer,
                         localized_answer,
+                        hub,
+                        alternative,
+                        localized_alternative,
                         stale_answer,
                         ambiguous_answer,
+                        identity_only_answer,
                     )
                 },
             )
@@ -1532,6 +1589,9 @@ class GeneratorTests(unittest.TestCase):
                 localized_info,
                 answer,
                 localized_answer,
+                hub,
+                alternative,
+                localized_alternative,
             ):
                 source = path.read_text(encoding="utf-8")
                 self.assertEqual(1, source.count(banner))
@@ -1544,6 +1604,11 @@ class GeneratorTests(unittest.TestCase):
             self.assertLess(
                 source.index('rel="linkset"'),
                 source.index("<!-- social-preview:start -->"),
+            )
+            answer_source = answer.read_text(encoding="utf-8")
+            self.assertLess(
+                answer_source.index(gen_smart_app_banners.BLOCK_START),
+                answer_source.index("data-mobile-app-identity"),
             )
             self.assertNotIn(
                 gen_smart_app_banners.BLOCK_START,
@@ -1559,11 +1624,11 @@ class GeneratorTests(unittest.TestCase):
             )
             self.assertNotIn(
                 gen_smart_app_banners.BLOCK_START,
-                story.read_text(encoding="utf-8"),
+                identity_only_answer.read_text(encoding="utf-8"),
             )
             self.assertNotIn(
                 gen_smart_app_banners.BLOCK_START,
-                hub.read_text(encoding="utf-8"),
+                story.read_text(encoding="utf-8"),
             )
             self.assertNotIn(
                 gen_smart_app_banners.BLOCK_START,
@@ -1586,7 +1651,11 @@ class GeneratorTests(unittest.TestCase):
                 "Plain link</a>"
                 '<section class="hero"><a class="cta" '
                 'href="https://apps.apple.com/app/id6773017109?ct=hero&amp;mt=8">'
-                "Get the app</a></section></main></body>",
+                "Get the app</a></section></main>"
+                f"{gen_smart_app_banners.APP_STORE_SHARE_BLOCK_START}"
+                '<script data-app-store-share="6773017109"></script>'
+                f"{gen_smart_app_banners.APP_STORE_SHARE_BLOCK_END}"
+                "</body>",
                 encoding="utf-8",
             )
             ghost.write_text(
@@ -1670,6 +1739,12 @@ class GeneratorTests(unittest.TestCase):
             )
             self.assertNotIn("fetch(", gen_mobile_store_ctas.SCRIPT)
             self.assertNotIn("sendBeacon", gen_mobile_store_ctas.SCRIPT)
+            self.assertLess(
+                primary_source.index(gen_mobile_store_ctas.BLOCK_START),
+                primary_source.index(
+                    gen_smart_app_banners.APP_STORE_SHARE_BLOCK_START
+                ),
+            )
 
             self.assertIn(
                 "Localized App Store label",
@@ -2181,6 +2256,89 @@ class GeneratorTests(unittest.TestCase):
             )
             self.assertNotIn('"sameAs"', inserted_source)
             self.assertNotIn('"offers"', inserted_source)
+            self.assertTrue(
+                gen_mobile_app_identity.remove_managed_identity(missing)
+            )
+            self.assertNotIn(
+                "data-mobile-app-identity",
+                missing.read_text(encoding="utf-8"),
+            )
+            self.assertNotIn(
+                "data-mobile-app-webpage",
+                missing.read_text(encoding="utf-8"),
+            )
+            self.assertFalse(
+                gen_mobile_app_identity.remove_managed_identity(missing)
+            )
+            stale_identity = root / "stale-identity.html"
+            stale_identity.write_text(
+                '<head><script type="application/ld+json">'
+                + json.dumps(
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "MobileApplication",
+                        "@id": canonical,
+                        "url": canonical,
+                        "installUrl": canonical,
+                        "downloadUrl": canonical,
+                        "potentialAction": [
+                            {
+                                "@type": "ShareAction",
+                                "target": "https://example.com/share",
+                            },
+                            {
+                                "@type": "InstallAction",
+                                "target": canonical,
+                            },
+                        ],
+                    }
+                )
+                + '</script><script type="application/ld+json">'
+                + json.dumps(
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "WebPage",
+                        "mentions": [
+                            {"@id": canonical},
+                            {"@id": "https://example.com/related"},
+                        ],
+                    }
+                )
+                + "</script></head>",
+                encoding="utf-8",
+            )
+            self.assertTrue(
+                gen_mobile_app_identity.remove_managed_identity(
+                    stale_identity
+                )
+            )
+            stale_documents = [
+                json.loads(match.group("body"))
+                for match in gen_mobile_app_identity.JSON_LD_RE.finditer(
+                    stale_identity.read_text(encoding="utf-8")
+                )
+            ]
+            stale_app, stale_webpage = stale_documents
+            self.assertEqual("MobileApplication", stale_app["@type"])
+            self.assertEqual(canonical, stale_app["url"])
+            self.assertNotIn("installUrl", stale_app)
+            self.assertNotIn("downloadUrl", stale_app)
+            self.assertEqual(
+                {
+                    "@type": "ShareAction",
+                    "target": "https://example.com/share",
+                },
+                stale_app["potentialAction"],
+            )
+            self.assertEqual(
+                {"@id": "https://example.com/related"},
+                stale_webpage["mentions"],
+            )
+            self.assertFalse(
+                gen_mobile_app_identity.remove_managed_identity(
+                    stale_identity
+                )
+            )
             self.assertEqual(
                 (True, 1, False),
                 gen_mobile_app_identity.ensure_mobile_identity(
@@ -2647,7 +2805,7 @@ class GeneratorTests(unittest.TestCase):
                 gen_guide_design.APPSTORE, str(pages), refresh=False
             )
         )
-        targets, app_count = gen_smart_app_banners.build_targets(
+        targets, app_count = gen_smart_app_banners.build_install_targets(
             pages, live_keys, gen_guide_design.SITE
         )
         self.assertGreaterEqual(app_count, 24)
@@ -2749,10 +2907,10 @@ class GeneratorTests(unittest.TestCase):
                 )
         self.assertEqual(set(targets) & guide_pages, linked)
 
-        answer_pages = gen_smart_app_banners._answer_pages(pages)
-        answer_targets = set(targets) & answer_pages
-        self.assertGreater(len(answer_targets), 0)
-        for path in answer_targets:
+        buyer_intent_pages = gen_smart_app_banners._buyer_intent_pages(pages)
+        buyer_intent_targets = set(targets) & buyer_intent_pages
+        self.assertGreater(len(buyer_intent_targets), 0)
+        for path in buyer_intent_targets:
             source = path.read_text(encoding="utf-8")
             cta = gen_mobile_store_ctas.app_store_cta(
                 source, targets[path]
@@ -19778,7 +19936,7 @@ class GeneratorTests(unittest.TestCase):
             for page in (Path(build_pages_i18n.PAGES) / "stories").glob("*.html")
             if page.name != "index.html"
         )
-        self.assertEqual(28, len(story_keys))
+        self.assertEqual(29, len(story_keys))
         for key in story_keys:
             self.assertEqual(
                 list(OFFICIAL_LOCALES),
@@ -19870,16 +20028,17 @@ class GeneratorTests(unittest.TestCase):
         result = validate_webstories.validate_site()
         self.assertEqual(
             {
-                "apps": 28,
+                "apps": 29,
                 "locales": 50,
-                "localized_stories": 1400,
-                "sitemap_urls": 1479,
+                "localized_stories": 1450,
+                "sitemap_urls": 1530,
             },
             result,
         )
 
     def test_registry_purchase_models_are_explicit_and_verified(self):
         paid_upfront = {
+            "aim990plus",
             "snapport",
             "gmoney",
             "hourstag",
@@ -20625,6 +20784,49 @@ class GeneratorTests(unittest.TestCase):
                 self.assertEqual(icon, gen_webstories.ensure_app_icon("tripbeelite"))
         self.assertEqual(2, len(calls))
 
+    def test_app_decision_card_generation_excludes_install_only_hubs(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            app_id = gen_app_decision_cards.APPSTORE["tripbeelite"]
+            product = pages / "zh-Hant" / "tripbeelite.html"
+            answer = pages / "answers" / "trip-planner.html"
+            hub = pages / "hubs" / "tripbeelite.html"
+            for path in (product, answer, hub):
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text("<head></head><body></body>", encoding="utf-8")
+            targets = {
+                product.resolve(): app_id,
+                answer.resolve(): app_id,
+                hub.resolve(): app_id,
+            }
+            with (
+                mock.patch.object(
+                    gen_app_decision_cards.gen_smart_app_banners,
+                    "build_targets",
+                    return_value=(targets, 1),
+                ),
+                mock.patch.object(
+                    gen_app_decision_cards,
+                    "load_storefront_availability",
+                    return_value={},
+                ),
+                mock.patch.object(
+                    gen_app_decision_cards,
+                    "ensure_card",
+                    return_value=False,
+                ) as ensure_card,
+            ):
+                result = gen_app_decision_cards.generate(
+                    pages, {"tripbeelite"}
+                )
+            called_paths = {call.args[0] for call in ensure_card.call_args_list}
+            self.assertEqual(
+                {product.resolve(), answer.resolve()}, called_paths
+            )
+            self.assertNotIn(hub.resolve(), called_paths)
+            self.assertEqual(1, result["product_pages"])
+            self.assertEqual(1, result["answer_pages"])
+
     def test_app_decision_cards_preserve_localized_copy_and_are_idempotent(self):
         app_id = gen_app_decision_cards.APPSTORE["tripbeelite"]
         fallback = aeo_answers.default_content(
@@ -20783,6 +20985,37 @@ class GeneratorTests(unittest.TestCase):
                 "rating_value",
                 gen_app_decision_cards._storefront_fact(weak, False),
             )
+
+    def test_app_decision_cards_accept_native_product_leads(self):
+        app_id = gen_app_decision_cards.APPSTORE["aim990plus"]
+        source = (
+            "<html><head></head><body><main>"
+            "<h1>Aim990 Plus</h1>"
+            '<p class="lead">依照今天的弱項安排專注練習。</p>'
+            f'<a href="https://apps.apple.com/tw/app/id{app_id}">'
+            "在 App Store 購買</a></main></body></html>"
+        )
+        content = gen_app_decision_cards._page_content(
+            source,
+            "aim990plus",
+            app_id,
+            False,
+            "zh-Hant",
+            {"tw": frozenset({app_id})},
+        )
+        self.assertEqual(
+            "依照今天的弱項安排專注練習。",
+            content["promise"],
+        )
+        rendered = gen_app_decision_cards._inject_card(
+            source,
+            "<aside>decision</aside>",
+            False,
+        )
+        self.assertLess(
+            rendered.index("</p>"),
+            rendered.index("<aside>decision</aside>"),
+        )
 
     def test_calculator_is_added_to_tools_index_and_sitemap(self):
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(
@@ -22656,7 +22889,253 @@ class GeneratorTests(unittest.TestCase):
     def test_topic_hub_has_no_fake_zero_price_and_links_script_locales(self):
         hub = gen_hubs.build_hub("lumibopomofo")
         self.assertNotIn('"price":"0"', hub)
-        self.assertIn('hreflang="zh-Hant"', hub)
+        self.assertIn(
+            'hreflang="zh-Hant" '
+            'href="https://alice51849.github.io/ios-app-guide/'
+            'zh-Hant/hubs/lumibopomofo.html"',
+            hub,
+        )
+        self.assertEqual(
+            len(OFFICIAL_LOCALES) + 1,
+            hub.count('rel="alternate" hreflang='),
+        )
+
+    def test_topic_hub_reuses_native_copy_for_localized_install_pages(self):
+        app_id = gen_hubs.APPSTORE["hourstag"]
+        availability = {
+            "tw": frozenset({app_id}),
+            "sa": frozenset({app_id}),
+        }
+        hub = gen_hubs.build_localized_hub(
+            "hourstag",
+            "zh-Hant",
+            availability,
+        )
+        self.assertIn('<html lang="zh-Hant">', hub)
+        self.assertIn(
+            "<title>HoursTag：價格換工時 · 常見問題</title>",
+            hub,
+        )
+        self.assertIn(
+            '<meta name="description" '
+            'content="這真正要花你多少？不是多少錢——是你生命中的幾個小時。">',
+            hub,
+        )
+        self.assertIn("前往 App Store 查看", hub)
+        self.assertIn("https://apps.apple.com/tw/app/id6754218117", hub)
+        self.assertIn("/zh-Hant/answers/", hub)
+        self.assertIn("white-space:nowrap", hub)
+        self.assertNotIn('"price"', hub)
+        self.assertEqual(
+            len(OFFICIAL_LOCALES) + 1,
+            hub.count('rel="alternate" hreflang='),
+        )
+
+        rtl_hub = gen_hubs.build_localized_hub(
+            "hourstag",
+            "ar-SA",
+            availability,
+        )
+        self.assertIn('<html lang="ar-SA" dir="rtl">', rtl_hub)
+        self.assertIn("https://apps.apple.com/sa/app/id6754218117", rtl_hub)
+        unverified = gen_hubs.build_localized_hub(
+            "hourstag",
+            "zh-Hant",
+            {},
+        )
+        self.assertIn(
+            "https://apps.apple.com/app/id6754218117",
+            unverified,
+        )
+        self.assertNotIn(
+            "https://apps.apple.com/tw/app/id6754218117",
+            unverified,
+        )
+
+    def test_topic_hub_inputs_cover_every_live_app_and_official_locale(self):
+        live = set(
+            gen_hubs.live_app_keys(
+                gen_hubs.APPSTORE,
+                gen_hubs.PAGES,
+                refresh=False,
+            )
+        )
+        checked = 0
+        rich = 0
+        fallback = 0
+        for locale in OFFICIAL_LOCALES:
+            for key in live:
+                name, description = gen_hubs.localized_page_copy(key, locale)
+                answers = gen_hubs.localized_answer_links(
+                    key,
+                    locale,
+                    required=False,
+                )
+                self.assertTrue(name, (locale, key))
+                self.assertTrue(description, (locale, key))
+                rich += int(bool(answers))
+                fallback += int(not answers)
+                checked += 1
+        self.assertEqual(len(live) * len(OFFICIAL_LOCALES), checked)
+        self.assertEqual(checked, rich + fallback)
+
+    def test_topic_hub_falls_back_to_native_guide_for_new_live_app(self):
+        self.assertEqual(
+            [],
+            gen_hubs.localized_answer_links(
+                "aim990plus",
+                "zh-Hant",
+                required=False,
+            ),
+        )
+        hub = gen_hubs.build_localized_hub(
+            "aim990plus",
+            "zh-Hant",
+            {"tw": frozenset({gen_hubs.APPSTORE["aim990plus"]})},
+        )
+        self.assertIn(
+            "<title>Aim990 Plus · 可能適合的原因</title>",
+            hub,
+        )
+        self.assertIn("<h2>可能適合的原因</h2>", hub)
+        self.assertIn(
+            'href="https://alice51849.github.io/ios-app-guide/'
+            'zh-Hant/aim990plus.html">閱讀完整指南</a>',
+            hub,
+        )
+        self.assertIn("https://apps.apple.com/tw/app/id6792483140", hub)
+        self.assertNotIn("/zh-Hant/answers/", hub)
+
+    def test_topic_hub_rejects_answer_slug_owned_by_another_app(self):
+        collision = next(
+            question
+            for question in queries.ALL["aim990plus"]
+            if question in queries.ALL["aim990"]
+        )
+        slug = gen_hubs.slugify(collision)
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            localized = pages / "en-US" / "answers" / f"{slug}.html"
+            root = pages / "answers" / f"{slug}.html"
+            localized.parent.mkdir(parents=True)
+            root.parent.mkdir()
+            wrong_id = gen_hubs.APPSTORE["aim990"]
+            right_id = gen_hubs.APPSTORE["aim990plus"]
+            source = (
+                "<head><title>Colliding answer</title></head>"
+                f'<a class="cta" href="https://apps.apple.com/app/id{wrong_id}">'
+                "Get app</a>"
+            )
+            localized.write_text(source, encoding="utf-8")
+            root.write_text(source, encoding="utf-8")
+
+            with mock.patch.object(gen_hubs, "PAGES", str(pages)):
+                self.assertEqual(
+                    [],
+                    gen_hubs.localized_answer_links(
+                        "aim990plus",
+                        "en-US",
+                        required=False,
+                    ),
+                )
+                self.assertNotIn(
+                    f"/answers/{slug}.html",
+                    gen_hubs.build_hub("aim990plus"),
+                )
+
+                owned = (
+                    source.replace(wrong_id, right_id)
+                    + f'<a href="https://apps.apple.com/app/id{wrong_id}">'
+                    "Compare sibling</a>"
+                )
+                localized.write_text(owned, encoding="utf-8")
+                root.write_text(owned, encoding="utf-8")
+                self.assertEqual(
+                    [
+                        (
+                            f"{gen_hubs.SITE}/en-US/answers/{slug}.html",
+                            "Colliding answer",
+                        )
+                    ],
+                    gen_hubs.localized_answer_links(
+                        "aim990plus",
+                        "en-US",
+                        required=False,
+                    ),
+                )
+                self.assertIn(
+                    f"/answers/{slug}.html",
+                    gen_hubs.build_hub("aim990plus"),
+                )
+
+    def test_topic_hub_main_writes_localized_pages_and_complete_sitemap(self):
+        key = "hourstag"
+        locales = ("en-US", "zh-Hant")
+        question = queries.ALL[key][0]
+        slug = gen_hubs.slugify(question)
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale in locales:
+                localized = pages / locale
+                answers = localized / "answers"
+                answers.mkdir(parents=True)
+                (localized / f"{key}.html").write_text(
+                    "<head>"
+                    f'<meta name="description" content="{locale} description">'
+                    "</head><body>"
+                    f"<h1>{locale} HoursTag</h1>"
+                    "</body>",
+                    encoding="utf-8",
+                )
+                (answers / f"{slug}.html").write_text(
+                    f"<head><title>{locale} answer</title></head>",
+                    encoding="utf-8",
+                )
+            root_answers = pages / "answers"
+            root_answers.mkdir()
+            (root_answers / f"{slug}.html").write_text(
+                "<head><title>English answer</title></head>",
+                encoding="utf-8",
+            )
+            hubs = pages / "hubs"
+
+            with (
+                mock.patch.object(gen_hubs, "PAGES", str(pages)),
+                mock.patch.object(gen_hubs, "HUBS", str(hubs)),
+                mock.patch.object(gen_hubs, "OFFICIAL_LOCALES", locales),
+                mock.patch.object(
+                    gen_hubs,
+                    "live_app_keys",
+                    return_value={key},
+                ),
+                mock.patch("builtins.print"),
+            ):
+                gen_hubs.main()
+                generated = [
+                    hubs / f"{key}.html",
+                    *(pages / locale / "hubs" / f"{key}.html" for locale in locales),
+                    pages / "sitemap_hubs.xml",
+                ]
+                first = {path: path.read_bytes() for path in generated}
+                gen_hubs.main()
+
+            self.assertEqual(
+                first,
+                {path: path.read_bytes() for path in generated},
+            )
+            urls = re.findall(
+                r"<loc>([^<]+)</loc>",
+                (pages / "sitemap_hubs.xml").read_text(encoding="utf-8"),
+            )
+            self.assertEqual(
+                {
+                    f"{gen_hubs.SITE}/hubs/{key}.html",
+                    f"{gen_hubs.SITE}/en-US/hubs/{key}.html",
+                    f"{gen_hubs.SITE}/zh-Hant/hubs/{key}.html",
+                    f"{gen_hubs.SITE}/hubs/",
+                },
+                set(urls),
+            )
 
     def test_alternatives_use_accurate_schema_and_aim990_pricing(self):
         self.assertNotIn("offers", aeo_pages.app_schema("aim990", "Accurate copy"))

@@ -4,7 +4,7 @@
 
 Katalog prve roke, ki opisuje, za koga je vsaka aplikacija namenjena, katero nalogo poskuša uporabnik opraviti in neposredno pot do App Store.
 
-Iskalni nameni, ki jih je pripravil založnik, za 28 preverjenih aktivnih iOS aplikacij in 50 Apple lokalizacij.
+Iskalni nameni, ki jih je pripravil založnik, za 29 preverjenih aktivnih iOS aplikacij in 50 Apple lokalizacij.
 
 **Lokalizacija:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · **sl-SI** · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -90,6 +90,7 @@ Abecedno po imenu aplikacije — nikoli uvrstitev.
 | Aplikacija | Poizvedba založnika | Kontekst odločitve | Model nakupa | Vodnik | App Store |
 | --- | --- | --- | --- | --- | --- |
 | **Aim990** | najboljša aplikacija za pripravo na TOEIC brez povezave s študijskim načrtom za iPhone | Del 5 se zdi kratek, a vprašanja z nepopolnimi stavki lahko vzamejo veliko časa, če slovnica in besedišče nista samodejna. | Brezplačen začetek · doživljenjska odklenitev | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Prenesite Aim990 v App Store →](https://apps.apple.com/si/app/id6784974530) |
+| **Aim990 Plus** | Aim990 Plus — Zbranost proti uri \| iOS App | Razumevanje angleščine je le del izziva. Drugi del je ohraniti natančnost, ko se čas izteka. Aim990 Plus je intenzivna vadba poslušanja in branja za | Plačljiv prenos | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/aim990plus.html) | [Prenesite Aim990 Plus iz trgovine App Store](https://apps.apple.com/app/id6792483140) |
 | **CV Desk** | najboljša aplikacija za izdelavo življenjepisa za menjavo kariere 2026 | Ko menjate področje, je problem življenjepisa drugačen: vaše izkušnje so resnične, a na papirju 'nepovezane', ATS filtri pa vas zavrnejo, preden jih pregleda človek — CV Desk je narejen za to. | Brezplačen začetek · doživljenjska odklenitev | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-resume-builder-app-for-career-changers-2026.html) | [Prenesite CV Desk v App Store →](https://apps.apple.com/si/app/id6781337213) |
 | **Cyca** | najboljša aplikacija za sledenje menstruacije brez računa za iPhone | V kategoriji, kjer je občutljivost podatkov ključna, prava aplikacija za sledenje menstruacije hrani vse — pretok, razpoloženje, simptome, temperaturo, intimnost — na vaši napravi, brez računa in brez sinhronizacije v oblaku — Cyca je narejena za to. | Brezplačen začetek · doživljenjska odklenitev | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-period-tracker-app-no-account-required-iphone.html) | [Prenesite Cyca v App Store →](https://apps.apple.com/si/app/id6782251621) |
 | **DailyMate** | najboljša praktična aplikacija za jezikovne fraze za popotnike z Apple Watch | Pred potovanjem so celovite fraze za resnične situacije bolj uporabne kot posamezne besede, ki jih morate pod pritiskom še sestaviti — DailyMate je zasnovan prav za to. | Plačljiv prenos | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Prenesite DailyMate v App Store →](https://apps.apple.com/si/app/id6790418321) |
@@ -120,7 +121,7 @@ Abecedno po imenu aplikacije — nikoli uvrstitev.
 
 ## Prenesite celoten podatkovni niz
 
-JSON, JSONL in CSV vsebujejo enakih 1.400 zapisov.
+JSON, JSONL in CSV vsebujejo enakih 1.450 zapisov.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -128,6 +129,6 @@ JSON, JSONL in CSV vsebujejo enakih 1.400 zapisov.
 
 [Domov](https://alice51849.github.io/ios-app-guide/sl-SI/index.html) · [Odprti podatki](https://alice51849.github.io/ios-app-guide/sl-SI/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenca](https://creativecommons.org/licenses/by/4.0/)
 
-Posodobljeno: 2026-07-20
+Posodobljeno: 2026-07-22
 
 CC BY 4.0 velja za izvirno sestavo kataloga; imena aplikacij in znamke App Store pripadajo njihovim lastnikom.

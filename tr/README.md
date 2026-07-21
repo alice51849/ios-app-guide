@@ -4,7 +4,7 @@
 
 Her uygulamanın kimler için tasarlandığını, tamamlamaya çalıştıkları görevi ve doğrudan App Store yolunu gösteren bir birinci taraf katalog.
 
-28 doğrulanmış canlı iOS uygulaması ve 50 Apple yerelinde yayıncı tarafından yazılmış arama niyetleri.
+29 doğrulanmış canlı iOS uygulaması ve 50 Apple yerelinde yayıncı tarafından yazılmış arama niyetleri.
 
 **Yerel:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · **tr** · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -90,6 +90,7 @@ Uygulama adına göre alfabetik — asla bir sıralama değildir.
 | Uygulama | Yayıncı sorgusu | Karar bağlamı | Satın alma modeli | Rehber | App Store |
 | --- | --- | --- | --- | --- | --- |
 | **Aim990** | iPhone için en iyi çevrimdışı TOEIC hazırlık uygulaması çalışma planı | Bölüm 5 kısa görünebilir, ancak tamamlanmamış cümle soruları, dilbilgisi ve kelime bilgisi otomatik değilse zaman kaybettirebilir. | Başlangıçta ücretsiz · ömür boyu açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Aim990’ı App Store’dan edinin →](https://apps.apple.com/tr/app/id6784974530) |
+| **Aim990 Plus** | Aim990 Plus — Süre baskısıyla gerçek pratik \| iOS App | Aim990 Plus, sınırlı sürede İngilizce konuşmaları ve metinleri güvenle anlamak isteyen yetişkinler için hazırlanmış bir çalışma aracıdır. Yalnızca soru | Ücretli indirme | [Rehber](https://alice51849.github.io/ios-app-guide/tr/aim990plus.html) | [Aim990 Plus uygulamasını App Store'dan al](https://apps.apple.com/app/id6792483140) |
 | **CV Desk** | 2026 için kariyer değiştiricilere en iyi özgeçmiş hazırlama uygulaması | Alan değiştirirken, sorun farklıdır: deneyiminiz gerçek ama kağıt üzerinde 'ilgisiz'dir ve ATS filtreleri insan okumadan önce sizi reddeder — CV Desk bunun için tasarlandı. | Başlangıçta ücretsiz · ömür boyu açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-resume-builder-app-for-career-changers-2026.html) | [CV Desk’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6781337213) |
 | **Cyca** | hesap gerektirmeyen en iyi adet takibi uygulaması iphone | Veri hassasiyetinin tüm hikaye olduğu bir kategoride, doğru adet takip uygulaması her şeyi — akış, ruh hali, belirtiler, sıcaklık, yakınlık — cihazınızda, hesap veya bulut senkronizasyonu olmadan tutar — Cyca bunun için tasarlandı. | Başlangıçta ücretsiz · ömür boyu açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-period-tracker-app-no-account-required-iphone.html) | [Cyca'yı App Store'dan edinin →](https://apps.apple.com/tr/app/id6782251621) |
 | **DailyMate** | Apple Watch destekli, gezginler için en iyi pratik dil ifadeleri uygulaması | Seyahatten önce, gerçek durumlar için tam ifadeler, baskı altında hâlâ bir araya getirmeniz gereken tekil kelimelerden daha faydalıdır — DailyMate bunun için tasarlandı. | Ücretli indirme | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [DailyMate’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6790418321) |
@@ -120,7 +121,7 @@ Uygulama adına göre alfabetik — asla bir sıralama değildir.
 
 ## Tam veri setini indir
 
-JSON, JSONL ve CSV aynı 1.400 kaydı içerir.
+JSON, JSONL ve CSV aynı 1.450 kaydı içerir.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -128,6 +129,6 @@ JSON, JSONL ve CSV aynı 1.400 kaydı içerir.
 
 [Ana Sayfa](https://alice51849.github.io/ios-app-guide/tr/index.html) · [Açık veri](https://alice51849.github.io/ios-app-guide/tr/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisans](https://creativecommons.org/licenses/by/4.0/)
 
-Güncellendi: 2026-07-20
+Güncellendi: 2026-07-22
 
 CC BY 4.0, orijinal katalog derlemesine uygulanır; uygulama adları ve App Store işaretleri sahiplerine aittir.

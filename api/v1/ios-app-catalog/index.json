@@ -1,14 +1,14 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/index.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-20",
-  "content_digest": "b473dcd13536dd86925ff4270d347c573872282ddbf0ed5da08bf79ac94567b6",
+  "date_modified": "2026-07-21",
+  "content_digest": "01428f62414fc0b782783755122d304ed2e653ad57f26d24eea7086bbaee7cc9",
   "name": "Verified Independent iOS App Catalog API",
   "description": "A free, read-only OpenAPI catalog for every verified live app, with localized summaries, search terms and direct App Store links in 50 locales.",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "default_locale": "en-US",
   "locale_count": 50,
-  "record_count": 28,
+  "record_count": 29,
   "ordering": "alphabetical_by_app_name_not_a_ranking",
   "availability_verification": {
     "source": "Apple iTunes Lookup API",

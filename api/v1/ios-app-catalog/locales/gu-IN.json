@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-20",
-  "content_digest": "b473dcd13536dd86925ff4270d347c573872282ddbf0ed5da08bf79ac94567b6",
+  "date_modified": "2026-07-21",
+  "content_digest": "01428f62414fc0b782783755122d304ed2e653ad57f26d24eea7086bbaee7cc9",
   "locale": "gu-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 28,
+  "record_count": 29,
   "apps": [
     {
       "key": "aim990",
@@ -43,6 +43,37 @@
         "formatted_price": "મફત",
         "storefront_url": "https://apps.apple.com/in/app/id6784974530"
       }
+    },
+    {
+      "key": "aim990plus",
+      "app_store_id": "6792483140",
+      "name": "Aim990 Plus",
+      "summary": "Aim990 Plus પુખ્ત વયના શીખનારાઓ માટે અંગ્રેજી સાંભળવા અને વાંચવાની સઘન કસરત છે. તેનો મુખ્ય અભ્યાસક્રમ સમયના દબાણમાં પણ ધ્યાન ટકાવી રાખવાની ટેવ કેળવે છે: પહેલાં 8 પ્રશ્નોનું Warm-up, પછી 15 મિનિટમાં 20 પ્રશ્નોનો Pressure Set અને અંતે Mistake Replay. દરેક તબક્કો સ્પષ્ટ રીતે ગોઠવાયેલો છે, તેથી વધારાના મેનુમાં અટવાયા વગર તરત અભ્યાસ શરૂ કરી શકાય છે અને આગામી સત્રનું લક્ષ્ય નક્કી કરી શકાય છે.",
+      "category": "education",
+      "search_terms": [
+        "અંગ્રેજી પરીક્ષા",
+        "શ્રવણ કૌશલ્ય",
+        "વાંચન સમજ",
+        "મોક ટેસ્ટ",
+        "શબ્દભંડોળ",
+        "ડિક્ટેશન",
+        "સમયબદ્ધ પ્રશ્નો",
+        "ભૂલ સુધારો"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/aim990plus.html",
+      "verified_live": true
     },
     {
       "key": "cvdesk",

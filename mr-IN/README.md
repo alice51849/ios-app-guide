@@ -4,7 +4,7 @@
 
 प्रत्येक अॅप कोणासाठी डिझाइन केले आहे, ते कोणते कार्य पूर्ण करण्याचा प्रयत्न करत आहेत, आणि थेट App Store मार्ग यांचा प्रथम पक्ष निर्देशिका.
 
-28 प्रमाणित लाइव्ह iOS अॅप्स आणि 50 Apple स्थानिकांसाठी प्रकाशकांनी लिहिलेली शोध हेतू.
+29 प्रमाणित लाइव्ह iOS अॅप्स आणि 50 Apple स्थानिकांसाठी प्रकाशकांनी लिहिलेली शोध हेतू.
 
 **स्थानिक:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · **mr-IN** · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -90,6 +90,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | अॅप | प्रकाशक शोध विचारणा | निर्णय संदर्भ | खरेदी मॉडेल | मार्गदर्शक | App Store |
 | --- | --- | --- | --- | --- | --- |
 | **Aim990** | iPhone साठी सर्वोत्तम TOEIC तयारी अॅप ऑफलाइन अभ्यास योजना | भाग ५ लहान दिसतो, पण अपूर्ण वाक्यांच्या प्रश्नांमुळे वेळ जास्त लागू शकतो जर व्याकरण आणि शब्दसंग्रह आपोआप नसेल. | सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक | [मार्गदर्शक](https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [App Store वरून Aim990 मिळवा →](https://apps.apple.com/in/app/id6784974530) |
+| **Aim990 Plus** | Aim990 Plus — दडपणात जलद अचूक उत्तरे \| iOS App | Aim990 Plus हे प्रौढ शिकणाऱ्यांसाठी इंग्रजी ऐकण्याचा आणि वाचनाचा सखोल सराव देणारे अॅप आहे. वेळेचे दडपण असतानाही लक्ष टिकवण्याची सवय लागावी म्हणून त्याचा | पैसे देऊन डाउनलोड करा | [मार्गदर्शक](https://alice51849.github.io/ios-app-guide/mr-IN/aim990plus.html) | [App Store वरून Aim990 Plus मिळवा](https://apps.apple.com/app/id6792483140) |
 | **CV Desk** | करिअर बदलणाऱ्यांसाठी सर्वोत्तम रिझ्युमे बिल्डर अॅप २०२६ | जेव्हा तुम्ही क्षेत्र बदलत असता, तेव्हा रिझ्युमेची समस्या वेगळी असते: तुमचा अनुभव खरा असतो पण कागदावर 'अनसंबंधित' असतो, आणि ATS फिल्टर्स तुम्हाला मानवी वाचनापूर्वी नाकारतात — CV Desk यासाठी तयार केले आहे. | सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक | [मार्गदर्शक](https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-resume-builder-app-for-career-changers-2026.html) | [App Store वरून CV Desk मिळवा →](https://apps.apple.com/in/app/id6781337213) |
 | **Cyca** | सर्वोत्तम पाळी ट्रॅकर अॅप, खाते आवश्यक नाही, iPhone साठी | डेटा संवेदनशीलतेचा पूर्ण विचार असलेल्या श्रेणीत, योग्य पाळी ट्रॅकर सर्व काही — प्रवाह, मूड, लक्षणे, तापमान, जवळीक — तुमच्या डिव्हाइसवर ठेवतो, खाते किंवा क्लाउड सिंकशिवाय — Cyca यासाठी तयार केले आहे. | सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक | [मार्गदर्शक](https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-period-tracker-app-no-account-required-iphone.html) | [App Store वरून Cyca मिळवा →](https://apps.apple.com/in/app/id6782251621) |
 | **DailyMate** | Apple Watch सह प्रवाशांसाठी सर्वोत्तम व्यावहारिक भाषा वाक्यांश अॅप | प्रवासापूर्वी, वास्तविक परिस्थितीसाठी पूर्ण वाक्यांश वेगळ्या शब्दांपेक्षा अधिक उपयुक्त असतात — DailyMate यासाठी तयार केलेले आहे. | पैसे देऊन डाउनलोड करा | [मार्गदर्शक](https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [App Store वरून DailyMate मिळवा →](https://apps.apple.com/in/app/id6790418321) |
@@ -120,7 +121,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## पूर्ण डेटासेट डाउनलोड करा
 
-JSON, JSONL आणि CSV मध्ये समान 1,400 नोंदी आहेत.
+JSON, JSONL आणि CSV मध्ये समान 1,450 नोंदी आहेत.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -128,6 +129,6 @@ JSON, JSONL आणि CSV मध्ये समान 1,400 नोंदी आ
 
 [मुख्यपृष्ठ](https://alice51849.github.io/ios-app-guide/mr-IN/index.html) · [मुक्त डेटा](https://alice51849.github.io/ios-app-guide/mr-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [परवाना](https://creativecommons.org/licenses/by/4.0/)
 
-अपडेट केलेले: 2026-07-20
+अपडेट केलेले: 2026-07-22
 
 CC BY 4.0 मूळ निर्देशिका संकलनावर लागू होते; अॅप नावे आणि App Store चिन्हे त्यांच्या मालकांची आहेत.

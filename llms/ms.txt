@@ -3,7 +3,7 @@
 > Maklumat berstruktur setiap aplikasi iOS — ciri, harga dan FAQ.
 
 locale: ms
-apps: 28
+apps: 29
 - Direktori aplikasi: https://alice51849.github.io/ios-app-guide/ms/tools/private-pay-once-iphone-app-finder.html
 - Direktori aplikasi · PWA: https://alice51849.github.io/ios-app-guide/ms/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ms.jsonld
@@ -26,6 +26,10 @@ apps: 28
 - Direktori aplikasi · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
 - Direktori aplikasi · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
 
+- [Aim990 Plus](https://alice51849.github.io/ios-app-guide/ms/aim990plus.html) — Fokus Pantas Dalam Tekanan
+  - Bina ketahanan mendengar dan membaca melalui sesi bermasa, ulang kaji kesilapan, simulasi fleksibel serta analisis kelemahan—sepenuhnya luar talian.
+  - Harga: Muat turun berbayar dengan satu harga pendahuluan tanpa langganan.
+  - App Store: https://apps.apple.com/app/id6792483140
 - [Aim990: Persediaan TOEIC](https://alice51849.github.io/ios-app-guide/ms/aim990.html) — Capai 990 dengan Aim990!
   - Sediakan diri anda untuk mencapai skor 990 dalam TOEIC dengan Aim990! Pelajari cara yang berkesan tanpa iklan dan tanpa gangguan.
   - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.

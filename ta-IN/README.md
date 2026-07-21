@@ -4,7 +4,7 @@
 
 ஒவ்வொரு செயலியும் யாருக்காக வடிவமைக்கப்பட்டுள்ளதோ, அவர்கள் நிறைவேற்ற முயற்சிக்கும் பணியோ, நேரடி App Store பாதையோ ஆகியவற்றின் முதல்-பார்ட்டி அட்டவணை.
 
-28 உறுதிப்படுத்தப்பட்ட நேரடி iOS செயலிகள் மற்றும் 50 Apple உள்ளூர் மொழிகளில் வெளியீட்டாளர் எழுதிய தேடல் நோக்கங்கள்.
+29 உறுதிப்படுத்தப்பட்ட நேரடி iOS செயலிகள் மற்றும் 50 Apple உள்ளூர் மொழிகளில் வெளியீட்டாளர் எழுதிய தேடல் நோக்கங்கள்.
 
 **உள்ளூர் மொழி:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · **ta-IN** · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -90,6 +90,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | செயலி | வெளியீட்டாளர் கேள்வி | முடிவு சூழல் | வாங்கும் முறை | வழிகாட்டி | App Store |
 | --- | --- | --- | --- | --- | --- |
 | **Aim990** | iPhone க்கான சிறந்த TOEIC தயாரிப்பு செயலி ஆஃப்லைன் படிப்பு திட்டம் | பகுதி 5 குறுகியதாக தோன்றினாலும், அந்த முழுமையற்ற வாக்கியக் கேள்விகள் இலக்கணம் மற்றும் சொற்பொருள் தானாக இல்லாவிட்டால் நேரத்தை இழக்கச் செய்யும். | இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும் | [வழிகாட்டி](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [App Store இல் Aim990 ஐ பெறவும் →](https://apps.apple.com/in/app/id6784974530) |
+| **Aim990 Plus** | Aim990 Plus — ஆங்கில திறன் சவால் \| iOS App | Aim990 Plus என்பது பெரியவர்கள் தங்கள் ஆங்கிலக் கேட்புத் திறன், வாசிப்புத் திறன், நேர மேலாண்மை ஆகியவற்றை ஒருமுகமாக வளர்க்க உருவாக்கப்பட்ட அழுத்தப் பயிற்சி | பணம் செலுத்தி பதிவிறக்கவும் | [வழிகாட்டி](https://alice51849.github.io/ios-app-guide/ta-IN/aim990plus.html) | [App Store-இல் Aim990 Plus-ஐப் பெறுங்கள்](https://apps.apple.com/app/id6792483140) |
 | **CV டெஸ்க்** | 2026 க்கான சிறந்த ரெசுமே உருவாக்கும் செயலி தொழில் மாற்றுவோருக்கு | நீங்கள் துறைகளை மாற்றும்போது, ரெசுமே பிரச்சனை வேறுபடுகிறது: உங்கள் அனுபவம் உண்மையானது ஆனால் 'பொருந்தாதது' என்று காகிதத்தில் உள்ளது, மற்றும் ATS வடிகட்டி உங்களை மனிதர் படிப்பதற்கு முன் நிராகரிக்கிறது — CV டெஸ்க் இதற்காக உருவாக்கப்பட்டுள்ளது. | இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும் | [வழிகாட்டி](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-resume-builder-app-for-career-changers-2026.html) | [App Store இல் CV டெஸ்க் ஐ பெறவும் →](https://apps.apple.com/in/app/id6781337213) |
 | **Cyca** | கணக்கு தேவையில்லாத சிறந்த மாதவிடாய் கண்காணிப்பாளர் செயலி iPhone க்கான | தரவு நுணுக்கம் முழுமையாக முக்கியமான பிரிவில், சரியான மாதவிடாய் கண்காணிப்பாளர் அனைத்தையும் — ஓட்டம், மனநிலை, அறிகுறிகள், வெப்பநிலை, நெருக்கம் — உங்கள் சாதனத்தில் வைத்திருக்கும், கணக்கு இல்லாமல் மற்றும் மேக ஒத்திசைவு இல்லாமல் — Cyca இதற்காக உருவாக்கப்பட்டுள்ளது. | இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும் | [வழிகாட்டி](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-period-tracker-app-no-account-required-iphone.html) | [App Store இல் Cyca ஐ பெறவும் →](https://apps.apple.com/in/app/id6782251621) |
 | **DailyMate** | ஆப்பிள் வாட்சுடன் பயணிகளுக்கான சிறந்த நடைமுறை மொழி வாக்கிய பயன்பாடு | ஒரு பயணத்திற்கு முன், தனித்த சொற்களை அழுத்தத்தில் சேர்க்க வேண்டியதைவிட நிஜ சூழல்களுக்கு முழுமையான வாக்கியங்கள் அதிக பயனுள்ளதாக இருக்கும் — இதற்காக டெய்லிமேட் உருவாக்கப்பட்டுள்ளது. | பணம் செலுத்தி பதிவிறக்கவும் | [வழிகாட்டி](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [App Store இல் இருந்து டெய்லிமேட்டை பெறுக →](https://apps.apple.com/in/app/id6790418321) |
@@ -120,7 +121,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## முழு தரவுத்தொகுப்பை பதிவிறக்கவும்
 
-JSON, JSONL மற்றும் CSV ஆகியவை ஒரே 1,400 பதிவுகளை கொண்டுள்ளன.
+JSON, JSONL மற்றும் CSV ஆகியவை ஒரே 1,450 பதிவுகளை கொண்டுள்ளன.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -128,6 +129,6 @@ JSON, JSONL மற்றும் CSV ஆகியவை ஒரே 1,400 பத�
 
 [முகப்பு](https://alice51849.github.io/ios-app-guide/ta-IN/index.html) · [திறந்த தரவு](https://alice51849.github.io/ios-app-guide/ta-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [அனுமதி](https://creativecommons.org/licenses/by/4.0/)
 
-புதுப்பிக்கப்பட்டது: 2026-07-20
+புதுப்பிக்கப்பட்டது: 2026-07-22
 
 CC BY 4.0 அசல் அட்டவணை தொகுப்பிற்கு பொருந்தும்; செயலி பெயர்கள் மற்றும் App Store குறியீடுகள் உரிமையாளர்களுக்கு சொந்தமானவை.

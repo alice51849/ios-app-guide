@@ -16,7 +16,7 @@
     ],
     "retirement_rule": "Retire after three consecutive verified misses"
   },
-  "record_count": 28,
+  "record_count": 29,
   "apps": [
     {
       "key": "aim990",
@@ -62,6 +62,53 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
+      "verified_live": true
+    },
+    {
+      "key": "aim990plus",
+      "app_store_id": "6792483140",
+      "name": "Aim990 Plus",
+      "category": "education",
+      "category_labels": {
+        "en": "Education",
+        "zh-Hant": "學習"
+      },
+      "summaries": {
+        "en": "Train for clear decisions under exam pressure",
+        "zh-Hant": "把零散刷題，整理成真正能承受時間壓力的備考節奏。"
+      },
+      "purchase_model": "paid_upfront",
+      "purchase_labels": {
+        "en": "Paid download",
+        "zh-Hant": "付費下載"
+      },
+      "one_time_option": true,
+      "features": [
+        "630 original questions",
+        "Offline progress",
+        "Mock tests",
+        "Pay once",
+        "No subscription"
+      ],
+      "keywords": [
+        "english test",
+        "listening practice",
+        "reading practice",
+        "mock test",
+        "dictation",
+        "exam prep",
+        "offline study"
+      ],
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
       "verified_live": true
     },
     {

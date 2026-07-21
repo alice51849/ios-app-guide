@@ -4,7 +4,7 @@
 
 Een catalogus van de eerste partij met informatie over voor wie elke app is ontworpen, welke taak ze proberen te voltooien en het directe App Store-pad.
 
-Door uitgevers opgestelde zoekintenties voor 28 geverifieerde actieve iOS-apps en 50 Apple-regio's.
+Door uitgevers opgestelde zoekintenties voor 29 geverifieerde actieve iOS-apps en 50 Apple-regio's.
 
 **Regio:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · **nl-NL** · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -90,6 +90,7 @@ Alfabetisch op app-naam — nooit een ranglijst.
 | App | Uitgeverszoekopdracht | Beslissingscontext | Aankoopmodel | Gids | App Store |
 | --- | --- | --- | --- | --- | --- |
 | **Aim990** | beste TOEIC voorbereidingsapp offline studieplan voor iPhone | Deel 5 lijkt kort, maar die vragen met onvolledige zinnen kunnen tijd kosten als grammatica en woordenschat niet automatisch gaan. | Gratis te starten · levenslange ontgrendeling | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Download Aim990 in de App Store →](https://apps.apple.com/nl/app/id6784974530) |
+| **Aim990 Plus** | Aim990 Plus — Engels examen onder druk \| iOS App | Aim990 Plus is een complete trainingsomgeving voor volwassenen die Engelse luister- en leestaken ook onder tijdsdruk beheerst willen uitvoeren. De | Betaalde aanschaf | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/aim990plus.html) | [Download Aim990 Plus in de App Store](https://apps.apple.com/app/id6792483140) |
 | **CV Desk** | beste cv-bouwer app voor carrièreswitchers 2026 | Bij het wisselen van vakgebied is het cv-probleem anders: je ervaring is echt maar op papier 'niet-gerelateerd', en ATS-filters wijzen je af voordat een mens het leest — CV Desk is hiervoor gemaakt. | Gratis te starten · levenslange ontgrendeling | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-resume-builder-app-for-career-changers-2026.html) | [Download CV Desk in de App Store →](https://apps.apple.com/nl/app/id6781337213) |
 | **Cyca** | beste menstruatie-app zonder account vereist iPhone | In een categorie waar gegevensgevoeligheid centraal staat, houdt de juiste menstruatie-app alles bij — vloei, stemming, symptomen, temperatuur, intimiteit — op je apparaat, zonder account en zonder cloud-synchronisatie — Cyca is hiervoor gemaakt. | Gratis te starten · levenslange ontgrendeling | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-period-tracker-app-no-account-required-iphone.html) | [Download Cyca in de App Store →](https://apps.apple.com/nl/app/id6782251621) |
 | **DailyMate** | beste praktische taalzinnen-app voor reizigers met Apple Watch | Voor een reis zijn complete zinnen voor echte situaties nuttiger dan losse woorden die je onder druk nog moet samenstellen — DailyMate is hiervoor gemaakt. | Betaalde aanschaf | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Download DailyMate in de App Store →](https://apps.apple.com/nl/app/id6790418321) |
@@ -120,7 +121,7 @@ Alfabetisch op app-naam — nooit een ranglijst.
 
 ## Haal de volledige dataset binnen
 
-JSON, JSONL en CSV bevatten dezelfde 1.400 gegevensitems.
+JSON, JSONL en CSV bevatten dezelfde 1.450 gegevensitems.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -128,6 +129,6 @@ JSON, JSONL en CSV bevatten dezelfde 1.400 gegevensitems.
 
 [Startpagina](https://alice51849.github.io/ios-app-guide/nl-NL/index.html) · [Open data](https://alice51849.github.io/ios-app-guide/nl-NL/data/lumi-studio-publisher-search-intent-catalog.html) · [Licentie](https://creativecommons.org/licenses/by/4.0/)
 
-Bijgewerkt: 2026-07-20
+Bijgewerkt: 2026-07-22
 
 CC BY 4.0 is van toepassing op de originele catalogussamenstelling; app-namen en App Store-merken behoren toe aan hun eigenaren.

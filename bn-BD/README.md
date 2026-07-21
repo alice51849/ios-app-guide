@@ -4,7 +4,7 @@
 
 প্রতিটি অ্যাপ কার জন্য তৈরি, তারা কোন কাজ সম্পন্ন করতে চায়, এবং সরাসরি App Store পথের প্রথম পক্ষের ক্যাটালগ।
 
-২৮টি যাচাইকৃত লাইভ iOS অ্যাপ এবং ৫০টি Apple লোকালের প্রকাশক-লিখিত অনুসন্ধান উদ্দেশ্য।
+২৯টি যাচাইকৃত লাইভ iOS অ্যাপ এবং ৫০টি Apple লোকালের প্রকাশক-লিখিত অনুসন্ধান উদ্দেশ্য।
 
 **লোকাল:** [ar-SA](../ar-SA/) · **bn-BD** · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -90,6 +90,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | অ্যাপ | প্রকাশক প্রশ্ন | সিদ্ধান্ত প্রসঙ্গ | ক্রয় মডেল | গাইড | App Store |
 | --- | --- | --- | --- | --- | --- |
 | **Aim990** | আইফোনের জন্য সেরা TOEIC প্রস্তুতি অ্যাপ অফলাইন স্টাডি প্ল্যান | পার্ট ৫ ছোট দেখালেও, অসম্পূর্ণ বাক্যের প্রশ্নগুলি সময় নষ্ট করতে পারে যদি ব্যাকরণ ও শব্দভাণ্ডার স্বয়ংক্রিয় না হয়। | বিনামূল্যে শুরু · আজীবন আনলক | [গাইড](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [App Store থেকে Aim990 পান →](https://apps.apple.com/app/id6784974530) |
+| **Aim990 Plus** | Aim990 Plus — চাপেও দ্রুত ও নির্ভুল উত্তর \| iOS App | Aim990 Plus প্রাপ্তবয়স্ক শিক্ষার্থীদের জন্য ইংরেজি শোনা ও পড়ার নিবিড় অনুশীলন। এর মূল ধাপগুলো সময়ের চাপের মধ্যেও মনোযোগ ধরে রাখার অভ্যাস গড়ে তোলে | পেইড ডাউনলোড | [গাইড](https://alice51849.github.io/ios-app-guide/bn-BD/aim990plus.html) | [App Store থেকে Aim990 Plus ডাউনলোড করুন](https://apps.apple.com/app/id6792483140) |
 | **CV Desk** | সেরা রিজিউম বিল্ডার অ্যাপ ক্যারিয়ার পরিবর্তনকারীদের জন্য ২০২৬ | যখন আপনি ক্ষেত্র পরিবর্তন করছেন, তখন রিজিউম সমস্যা আলাদা: আপনার অভিজ্ঞতা বাস্তব কিন্তু কাগজে 'অপ্রাসঙ্গিক', এবং ATS ফিল্টার আপনাকে বাদ দেয় মানুষের পড়ার আগে — CV Desk এর জন্য তৈরি। | বিনামূল্যে শুরু · আজীবন আনলক | [গাইড](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-resume-builder-app-for-career-changers-2026.html) | [App Store থেকে CV Desk পান →](https://apps.apple.com/app/id6781337213) |
 | **Cyca** | সেরা পিরিয়ড ট্র্যাকার অ্যাপ কোনো অ্যাকাউন্ট ছাড়াই আইফোনের জন্য | একটি বিভাগ যেখানে ডেটার সংবেদনশীলতা পুরো গল্প, সঠিক পিরিয়ড ট্র্যাকার সবকিছু — প্রবাহ, মেজাজ, উপসর্গ, তাপমাত্রা, ঘনিষ্ঠতা — আপনার ডিভাইসে রাখে, কোনো অ্যাকাউন্ট বা ক্লাউড সিঙ্ক নেই — Cyca এর জন্য তৈরি। | বিনামূল্যে শুরু · আজীবন আনলক | [গাইড](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-period-tracker-app-no-account-required-iphone.html) | [App Store থেকে Cyca পান →](https://apps.apple.com/app/id6782251621) |
 | **DailyMate** | অ্যাপল ওয়াচসহ ভ্রমণকারীদের জন্য সেরা ব্যবহারিক ভাষা বাক্যাংশ অ্যাপ | একটি যাত্রার আগে, বাস্তব পরিস্থিতির জন্য সম্পূর্ণ বাক্যাংশ বিচ্ছিন্ন শব্দের চেয়ে বেশি কার্যকর — ডেইলিমেট এই জন্য তৈরি। | পেইড ডাউনলোড | [গাইড](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [অ্যাপ স্টোর থেকে ডেইলিমেট পান →](https://apps.apple.com/app/id6790418321) |
@@ -120,7 +121,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## সম্পূর্ণ ডেটাসেট ডাউনলোড করুন
 
-JSON, JSONL এবং CSV একই ১,৪০০ রেকর্ড ধারণ করে।
+JSON, JSONL এবং CSV একই ১,৪৫০ রেকর্ড ধারণ করে।
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -128,6 +129,6 @@ JSON, JSONL এবং CSV একই ১,৪০০ রেকর্ড ধার�
 
 [হোম](https://alice51849.github.io/ios-app-guide/bn-BD/index.html) · [খোলা তথ্য](https://alice51849.github.io/ios-app-guide/bn-BD/data/lumi-studio-publisher-search-intent-catalog.html) · [লাইসেন্স](https://creativecommons.org/licenses/by/4.0/)
 
-আপডেট: 2026-07-20
+আপডেট: 2026-07-22
 
 মূল ক্যাটালগ সংকলনের জন্য CC BY 4.0 প্রযোজ্য; অ্যাপ নাম ও App Store চিহ্ন তাদের মালিকদের।

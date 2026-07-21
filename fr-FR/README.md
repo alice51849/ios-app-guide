@@ -4,7 +4,7 @@
 
 Un catalogue publié directement par le développeur qui indique à qui chaque application est destinée, la tâche à accomplir et l’accès direct à l’App Store.
 
-Intentions de recherche rédigées par l’éditeur pour 28 applications iOS vérifiées et disponibles dans 50 langues et régions Apple.
+Intentions de recherche rédigées par l’éditeur pour 29 applications iOS vérifiées et disponibles dans 50 langues et régions Apple.
 
 **Région:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · **fr-FR** · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -90,6 +90,7 @@ Classement alphabétique par nom d’app — jamais un classement.
 | App | Requête de l’éditeur | Contexte de décision | Modèle d’achat | Guide | App Store |
 | --- | --- | --- | --- | --- | --- |
 | **Aim990** | meilleure application de préparation TOEIC avec plan d'étude hors ligne pour iPhone | La partie 5 semble courte, mais ces questions à phrase incomplète peuvent prendre du temps si la grammaire et le vocabulaire ne sont pas automatiques. | Gratuit au départ · déverrouillage définitif | [Guide](https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Obtenez Aim990 sur l’App Store →](https://apps.apple.com/fr/app/id6784974530) |
+| **Aim990 Plus** | Aim990 Plus — Anglais sous pression \| iOS App | Travaillez votre compréhension de l’anglais dans des conditions qui exigent attention, rythme et endurance. Aim990 Plus est conçu pour les adultes qui | Téléchargement payant | [Guide](https://alice51849.github.io/ios-app-guide/fr-FR/aim990plus.html) | [Obtenir Aim990 Plus sur l'App Store](https://apps.apple.com/app/id6792483140) |
 | **CV Desk** | meilleure application de création de CV pour reconversion professionnelle 2026 | Quand vous changez de domaine, le problème du CV est différent : votre expérience est réelle mais « non liée » sur papier, et les filtres ATS vous rejettent avant qu’un humain ne le lise — CV Desk est conçu pour cela. | Gratuit au départ · déverrouillage définitif | [Guide](https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-resume-builder-app-for-career-changers-2026.html) | [Obtenez CV Desk sur l’App Store →](https://apps.apple.com/fr/app/id6781337213) |
 | **Cyca** | meilleure application de suivi de règles sans compte requis iPhone | Dans une catégorie où la sensibilité des données est primordiale, le bon suivi de règles garde tout — flux, humeur, symptômes, température, intimité — sur votre appareil, sans compte ni synchronisation cloud — Cyca est conçu pour cela. | Gratuit au départ · déverrouillage définitif | [Guide](https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-period-tracker-app-no-account-required-iphone.html) | [Obtenez Cyca sur l’App Store →](https://apps.apple.com/fr/app/id6782251621) |
 | **DailyMate** | meilleure application de phrases utiles en voyage avec Apple Watch | Avant un voyage, des phrases complètes pour des situations réelles sont plus utiles que du vocabulaire isolé que vous devez encore assembler sous pression — DailyMate est conçu pour cela. | Téléchargement payant | [Guide](https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Obtenez DailyMate sur l’App Store →](https://apps.apple.com/fr/app/id6790418321) |
@@ -120,7 +121,7 @@ Classement alphabétique par nom d’app — jamais un classement.
 
 ## Télécharger l’ensemble complet de données
 
-Les fichiers JSON, JSONL et CSV contiennent les mêmes 1 400 enregistrements.
+Les fichiers JSON, JSONL et CSV contiennent les mêmes 1 450 enregistrements.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -128,6 +129,6 @@ Les fichiers JSON, JSONL et CSV contiennent les mêmes 1 400 enregistrements.
 
 [Accueil](https://alice51849.github.io/ios-app-guide/fr-FR/index.html) · [Données ouvertes](https://alice51849.github.io/ios-app-guide/fr-FR/data/lumi-studio-publisher-search-intent-catalog.html) · [Licence](https://creativecommons.org/licenses/by/4.0/)
 
-Mis à jour: 2026-07-20
+Mis à jour: 2026-07-22
 
 CC BY 4.0 s’applique à la compilation originale du catalogue ; les noms d’apps et les marques App Store appartiennent à leurs propriétaires.

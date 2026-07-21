@@ -14,6 +14,7 @@ from official_locales import OFFICIAL_LOCALES
 
 CURRENT_LIVE_APPS = {
     "aim990",
+    "aim990plus",
     "cvdesk",
     "cyca",
     "dailymate",

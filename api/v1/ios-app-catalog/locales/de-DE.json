@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-20",
-  "content_digest": "b473dcd13536dd86925ff4270d347c573872282ddbf0ed5da08bf79ac94567b6",
+  "date_modified": "2026-07-21",
+  "content_digest": "01428f62414fc0b782783755122d304ed2e653ad57f26d24eea7086bbaee7cc9",
   "locale": "de-DE",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 28,
+  "record_count": 29,
   "apps": [
     {
       "key": "aim990",
@@ -43,6 +43,39 @@
         "formatted_price": "Kostenlos",
         "storefront_url": "https://apps.apple.com/de/app/id6784974530"
       }
+    },
+    {
+      "key": "aim990plus",
+      "app_store_id": "6792483140",
+      "name": "Aim990 Plus",
+      "summary": "Aim990 Plus ist eine umfassende Trainingsumgebung für Erwachsene, die englische Hör- und Leseaufgaben auch unter Zeitdruck sicher bearbeiten möchten. Der klare Tagesablauf beginnt mit 8 Aufwärmfragen, führt durch ein Pressure Set mit 20 Fragen in 15 Minuten und endet mit Mistake Replay. Dort bearbeitest du genau die falsch beantworteten Fragen sofort erneut, statt Fehler nur in einer langen Ergebnisliste zu sehen.",
+      "category": "education",
+      "search_terms": [
+        "hören",
+        "lesen",
+        "wortschatz",
+        "diktat",
+        "testsimulation",
+        "zeitdruck",
+        "fehleranalyse",
+        "aussprache",
+        "grammatik",
+        "prüfung"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/aim990plus.html",
+      "verified_live": true
     },
     {
       "key": "cvdesk",

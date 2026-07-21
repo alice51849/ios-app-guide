@@ -90,14 +90,22 @@ def _single_line(value: object, field: str) -> str:
     return value
 
 
-def _validate_guide_url(value: str, locale: str) -> None:
+def _validate_guide_url(value: str, locale: str, app_key: str) -> None:
     parsed = urllib.parse.urlsplit(value)
-    expected_prefix = f"{GUIDE_PREFIX}{locale}/answers/"
+    locale_prefix = f"{GUIDE_PREFIX}{locale}/"
+    answer_prefix = f"{locale_prefix}answers/"
+    product_fallback = f"{locale_prefix}{app_key}.html"
+    has_valid_path = (
+        (
+            parsed.path.startswith(answer_prefix)
+            and parsed.path.endswith(".html")
+        )
+        or parsed.path == product_fallback
+    )
     if (
         parsed.scheme != "https"
         or parsed.netloc != GUIDE_HOST
-        or not parsed.path.startswith(expected_prefix)
-        or not parsed.path.endswith(".html")
+        or not has_valid_path
         or parsed.query
         or parsed.fragment
     ):
@@ -171,7 +179,7 @@ def validate_dataset(payload: dict[str, object]) -> list[dict[str, Any]]:
         canonical_store = f"https://apps.apple.com/app/id{app_id}"
         if record["canonical_app_store_url"] != canonical_store:
             raise ValueError(f"Wrong canonical App Store URL: {key}/{locale}")
-        _validate_guide_url(record["canonical_guide_url"], locale)
+        _validate_guide_url(record["canonical_guide_url"], locale, key)
         validated_app_store_url(record["app_store_url"], app_id)
         pairs.add(pair)
         validated.append(record)

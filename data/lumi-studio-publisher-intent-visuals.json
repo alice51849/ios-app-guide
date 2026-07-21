@@ -2,7 +2,7 @@
   "name": "Lumi Studio Publisher Intent Visuals",
   "description": "Localized first-party visual buyer-intent cards for every verified live iOS app.",
   "url": "https://alice51849.github.io/ios-app-guide/visuals/",
-  "dateModified": "2026-07-20",
+  "dateModified": "2026-07-22",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -10,12 +10,12 @@
     "url": "https://alice51849.github.io/ios-app-guide"
   },
   "source_dataset": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-  "content_digest": "328f02727ec3a01b680aaa98c385763f614f45be0925984585ca70e32df356ff",
-  "generation_digest": "f8788b0c3c438d02ee3c6069af4f721bdcd7e4d6ace53f53c9484c5f094044d9",
+  "content_digest": "ccc74cd1b48e07e473e92da8278efdf27450e158709e240f8852eb92230a2412",
+  "generation_digest": "a60a95e17e8134070b601fcabdeb25ac53c8276d3c3d63f1e22a8f9fdb909ae3",
   "ordering": "official_locale_order_then_alphabetical_app_name",
-  "app_count": 28,
+  "app_count": 29,
   "locale_count": 50,
-  "image_count": 1400,
+  "image_count": 1450,
   "gallery_count": 51,
   "publisher_authored": true,
   "measured_search_volume": false,
@@ -38,6 +38,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/sa/app/id6784974530",
       "sha256": "4510eda9509e4023aec18bd34f69e21c519c7f17857651857b8c6e92544e4359"
+    },
+    {
+      "locale": "ar-SA",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ar-SA/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ar-SA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "c75d261da0b9e96957dbd1c9d76f4eca00d9627e83f0f15a3b80dd22020559ab"
     },
     {
       "locale": "ar-SA",
@@ -321,6 +331,16 @@
     },
     {
       "locale": "bn-BD",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/bn-BD/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/bn-BD/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "ffeec6960129e635dae0616965ffb7f45fc01dde003f9056b41a510457a4d627"
+    },
+    {
+      "locale": "bn-BD",
       "app_key": "cvdesk",
       "app_store_id": "6781337213",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/bn-BD/cvdesk.svg",
@@ -598,6 +618,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/es/app/id6784974530",
       "sha256": "7148f59156bcdeb613e6d334cddc652c035eaf88064ba3b87a6d7599d88f2910"
+    },
+    {
+      "locale": "ca",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ca/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ca/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "952cccb04ca749c46dc9d93eb73c7e11081d42da5d85166db6ac78cbd3f10255"
     },
     {
       "locale": "ca",
@@ -881,6 +911,16 @@
     },
     {
       "locale": "cs",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/cs/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/cs/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "ab2d89f2b019b97124e11ae0e1a9e357f2928a34aa65bfde5cbc600bd8da9b93"
+    },
+    {
+      "locale": "cs",
       "app_key": "cvdesk",
       "app_store_id": "6781337213",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/cs/cvdesk.svg",
@@ -1158,6 +1198,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/dk/app/id6784974530",
       "sha256": "f5af90304e2a7a692ad0c643e08dc75d6c119886c823d6b83ed3577447621320"
+    },
+    {
+      "locale": "da",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/da/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/da/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "f219784557bf93f7878e8fbabc1b57e89acefee5905aa19816ebe773e4bfa996"
     },
     {
       "locale": "da",
@@ -1441,6 +1491,16 @@
     },
     {
       "locale": "de-DE",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/de-DE/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/de-DE/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "944649904b873dd9b9c3d010faf06b8e9a93407cbd7ff9df0f11d67d4518075f"
+    },
+    {
+      "locale": "de-DE",
       "app_key": "cvdesk",
       "app_store_id": "6781337213",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/de-DE/cvdesk.svg",
@@ -1718,6 +1778,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/gr/app/id6784974530",
       "sha256": "3d5d12bff5e0a3c495fb959a6217f7418ae96400809bb02c7fd39aa37f85758b"
+    },
+    {
+      "locale": "el",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/el/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/el/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "e5f55a9e2f49a429be44caa1074c60db4aec1d65144e9401d20f200392b080f9"
     },
     {
       "locale": "el",
@@ -2001,6 +2071,16 @@
     },
     {
       "locale": "en-AU",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-AU/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-AU/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "76c47c8b8408a63f5ddba7e11a26a2a425c79e354de4f73f5b4f0354c5425661"
+    },
+    {
+      "locale": "en-AU",
       "app_key": "cvdesk",
       "app_store_id": "6781337213",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-AU/cvdesk.svg",
@@ -2278,6 +2358,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6784974530",
       "sha256": "92edb45c186091bba8c8044467cb9cd924ab6cc2606c4e6f2ca6bb589e312988"
+    },
+    {
+      "locale": "en-CA",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-CA/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-CA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "7485e76dbaff353a236035ec3afe4e02dda42b8019471fea47698452891b74e0"
     },
     {
       "locale": "en-CA",
@@ -2561,6 +2651,16 @@
     },
     {
       "locale": "en-GB",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-GB/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-GB/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "19d71902c039ca201c692059861aafae9985c46e27e9e58195916c0628dc2e6d"
+    },
+    {
+      "locale": "en-GB",
       "app_key": "cvdesk",
       "app_store_id": "6781337213",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-GB/cvdesk.svg",
@@ -2838,6 +2938,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/us/app/id6784974530",
       "sha256": "78636abfea6d05fdad03933145794b8bfe9ce96dd2875a7e67cf40cf6d27bf97"
+    },
+    {
+      "locale": "en-US",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-US/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-US/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "b86fd65e799c3f441f3355db19703586fe2414c9acf54fc99e210706455a8b10"
     },
     {
       "locale": "en-US",
@@ -3121,6 +3231,16 @@
     },
     {
       "locale": "es-ES",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-ES/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-ES/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "e98883f6271dc5cb2eb095c874deb2a5858e2e9dacaa408b8b3675875b16c3d1"
+    },
+    {
+      "locale": "es-ES",
       "app_key": "cvdesk",
       "app_store_id": "6781337213",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-ES/cvdesk.svg",
@@ -3398,6 +3518,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/mx/app/id6784974530",
       "sha256": "ac3dbb8aea50893fa89693ad5d259a6a33dcb668be3ab0c241b8b8a9ed0922ce"
+    },
+    {
+      "locale": "es-MX",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-MX/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-MX/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "997b54bb3119074580c2ee1756432b0d3c28aea13827ecce9be3b955b175db62"
     },
     {
       "locale": "es-MX",
@@ -3681,6 +3811,16 @@
     },
     {
       "locale": "fi",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fi/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "e73f88dfe82208afd3f14d043ef093b9ad01c3a549bc9f03bd5f007ec55c125b"
+    },
+    {
+      "locale": "fi",
       "app_key": "cvdesk",
       "app_store_id": "6781337213",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fi/cvdesk.svg",
@@ -3958,6 +4098,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6784974530",
       "sha256": "3e49bd311ccf46909f5b294be35532c6bc5614ca76fbb8c25fa8180c725ed9e6"
+    },
+    {
+      "locale": "fr-CA",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-CA/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-CA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "e78d664fc0f1abd3ec7f46ff9af0d483dda4e2ac93097cda57abf60fcf319e3d"
     },
     {
       "locale": "fr-CA",
@@ -4241,6 +4391,16 @@
     },
     {
       "locale": "fr-FR",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-FR/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-FR/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "8f54fc0f84a9cae9a2750b6f74d780407d4dc3411dcf754297979d120a09d28a"
+    },
+    {
+      "locale": "fr-FR",
       "app_key": "cvdesk",
       "app_store_id": "6781337213",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-FR/cvdesk.svg",
@@ -4518,6 +4678,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/in/app/id6784974530",
       "sha256": "c800139b7220166128eb2a78a1a23f3ab2f907ebd015e71b4b008e2288a40ef8"
+    },
+    {
+      "locale": "gu-IN",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/gu-IN/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/gu-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "3c8a11b5ad76dfe369c786a894b9e6818baa255204ada7c69c9292c166312065"
     },
     {
       "locale": "gu-IN",
@@ -4801,6 +4971,16 @@
     },
     {
       "locale": "he",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/he/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/he/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "66bb3f15b00a9b8805926a70e63c488888aa85b7d4bac298744e3e4d25668178"
+    },
+    {
+      "locale": "he",
       "app_key": "cvdesk",
       "app_store_id": "6781337213",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/he/cvdesk.svg",
@@ -5078,6 +5258,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/in/app/id6784974530",
       "sha256": "41d3bbe1fc3479cb3754fe1bdf0343992dfb558680947fdd462604309c968c0a"
+    },
+    {
+      "locale": "hi",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hi/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "8aaa75b2f44dce926bd88e1f75c0fc4d96828002b0274f568124c69c4de86580"
     },
     {
       "locale": "hi",
@@ -5361,6 +5551,16 @@
     },
     {
       "locale": "hr",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hr/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hr/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "6ed7d2bf85715ba06e44079cc52bdefda3fe144bc285e36d2da115e7abcacd67"
+    },
+    {
+      "locale": "hr",
       "app_key": "cvdesk",
       "app_store_id": "6781337213",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hr/cvdesk.svg",
@@ -5638,6 +5838,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/hu/app/id6784974530",
       "sha256": "f4d62978836f821235bf312e0fde470103f031684c8cbbad550583fa428000a4"
+    },
+    {
+      "locale": "hu",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hu/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hu/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "1ba12eb60c5ec7e7365de03a6d0e6e3b5dfb6e45ffbb2b03f0d3f3b50db59f80"
     },
     {
       "locale": "hu",
@@ -5921,6 +6131,16 @@
     },
     {
       "locale": "id",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/id/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/id/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "22dffc270348bd1fc30317ebb8371ed6b142669df20b7f21e1ae42ca7b0c8dab"
+    },
+    {
+      "locale": "id",
       "app_key": "cvdesk",
       "app_store_id": "6781337213",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/id/cvdesk.svg",
@@ -6198,6 +6418,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/it/app/id6784974530",
       "sha256": "79f550f538374ea2874f8c6047ed56f0cc71bc63c3402ebb2cc652da72f57657"
+    },
+    {
+      "locale": "it",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/it/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/it/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "e4cfca984e9b914351213ef968aa81c15d7f73b31f4ac7c33ada780deb2b0c6b"
     },
     {
       "locale": "it",
@@ -6481,6 +6711,16 @@
     },
     {
       "locale": "ja",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ja/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ja/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "e306c967f864ef0e467dd7d5c02b4125f3d81feca60d753f1d4c19eee34bfd0d"
+    },
+    {
+      "locale": "ja",
       "app_key": "cvdesk",
       "app_store_id": "6781337213",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ja/cvdesk.svg",
@@ -6758,6 +6998,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/in/app/id6784974530",
       "sha256": "16d1fda19f642dc1209ba9ff130c4146e4ce80f3152b7c3cd2abec364034ccb0"
+    },
+    {
+      "locale": "kn-IN",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/kn-IN/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/kn-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "a626ef8f9bdb755a2bf0fbe8ad2a0feeb5f0e4e01f639253e0441bcd300e45da"
     },
     {
       "locale": "kn-IN",
@@ -7041,6 +7291,16 @@
     },
     {
       "locale": "ko",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ko/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "a3cc087064c98b0c85451d99921aff8142edf333428d93b3c6a7703e3810e3f7"
+    },
+    {
+      "locale": "ko",
       "app_key": "cvdesk",
       "app_store_id": "6781337213",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ko/cvdesk.svg",
@@ -7318,6 +7578,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/in/app/id6784974530",
       "sha256": "e83927ef0173cf87841becd73aa874f55b4b702dd5365d5b98c375b761739983"
+    },
+    {
+      "locale": "ml-IN",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ml-IN/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ml-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "56536299c52c331727d3e7d6b672f78664560757aa4775382a4a86d41e5c4460"
     },
     {
       "locale": "ml-IN",
@@ -7601,6 +7871,16 @@
     },
     {
       "locale": "mr-IN",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/mr-IN/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/mr-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "73fc44e340dc486057b0bf6a8d57e13f2c0c5a42badc836ad2592f45c2b6bfcc"
+    },
+    {
+      "locale": "mr-IN",
       "app_key": "cvdesk",
       "app_store_id": "6781337213",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/mr-IN/cvdesk.svg",
@@ -7878,6 +8158,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/my/app/id6784974530",
       "sha256": "2ebc298831de4a9df899caa744f5edac07cb898022890441860ac8060229eeab"
+    },
+    {
+      "locale": "ms",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ms/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ms/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "747e1be1be548c374c2918031a0c6bd70060b5f9580bbee7f504c3f7ba5c33bc"
     },
     {
       "locale": "ms",
@@ -8161,6 +8451,16 @@
     },
     {
       "locale": "nl-NL",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/nl-NL/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/nl-NL/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "fec6e8b35c4e350033eaff0cbba07cbe8d8af3784c6def77d22b1270e1b2c1ed"
+    },
+    {
+      "locale": "nl-NL",
       "app_key": "cvdesk",
       "app_store_id": "6781337213",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/nl-NL/cvdesk.svg",
@@ -8438,6 +8738,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/no/app/id6784974530",
       "sha256": "5c82d00cdd5c6c4c7cd03d4b88e79c991e5cb9c1174e4f839944e72642473a46"
+    },
+    {
+      "locale": "no",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/no/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/no/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "234f2ce20f8fc29334f852f6886664fca884bdb1c92d0aee81570cb7e7a095d9"
     },
     {
       "locale": "no",
@@ -8721,6 +9031,16 @@
     },
     {
       "locale": "or-IN",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/or-IN/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/or-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "bbb12c0f5b468352abb817cae14f8ecc5fc8456c93560b1c069b05619d61a485"
+    },
+    {
+      "locale": "or-IN",
       "app_key": "cvdesk",
       "app_store_id": "6781337213",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/or-IN/cvdesk.svg",
@@ -8998,6 +9318,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/in/app/id6784974530",
       "sha256": "b253ef96097275cf43f9e044a7a49ed9dbf5d28b11e6af0dd7e877e1128975d2"
+    },
+    {
+      "locale": "pa-IN",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pa-IN/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pa-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "1705e9bf2ba5ccdc8546eaf5d9370bdfc89f2d6948cb0a67c600a123121eef3c"
     },
     {
       "locale": "pa-IN",
@@ -9281,6 +9611,16 @@
     },
     {
       "locale": "pl",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pl/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pl/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "56daa9346cd18ee556d31960f7fd9044591f689bd83e8a76ec8fd1bcceca052d"
+    },
+    {
+      "locale": "pl",
       "app_key": "cvdesk",
       "app_store_id": "6781337213",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pl/cvdesk.svg",
@@ -9558,6 +9898,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/br/app/id6784974530",
       "sha256": "e437a0ef82f88f2b1f9a49686ff1dc34b1a6ced053cd7cf7d69df23e63abc5e7"
+    },
+    {
+      "locale": "pt-BR",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-BR/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-BR/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "6784b312f666cda71e5c765de9ef31fd6258cc5eb05496586217f8786f316d9a"
     },
     {
       "locale": "pt-BR",
@@ -9841,6 +10191,16 @@
     },
     {
       "locale": "pt-PT",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-PT/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-PT/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "d90a4c01076fb707c876b1896adc771cbcabaa81e9a6fd5bfd19236bdbe8b6dc"
+    },
+    {
+      "locale": "pt-PT",
       "app_key": "cvdesk",
       "app_store_id": "6781337213",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-PT/cvdesk.svg",
@@ -10118,6 +10478,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/ro/app/id6784974530",
       "sha256": "c7f4c8f959b9f578f204f1e0f0656341ada943c1870bb76be72c3bb3cfe9c078"
+    },
+    {
+      "locale": "ro",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ro/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ro/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "7f325721ea49f885f1d2b1474044b822b27442cc95d4509799efb62feb22aad9"
     },
     {
       "locale": "ro",
@@ -10401,6 +10771,16 @@
     },
     {
       "locale": "ru",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ru/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ru/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "b0f159fcdb25a556a575fcfa82518550054a114eb0d4439c704d4fab00683012"
+    },
+    {
+      "locale": "ru",
       "app_key": "cvdesk",
       "app_store_id": "6781337213",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ru/cvdesk.svg",
@@ -10678,6 +11058,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/sk/app/id6784974530",
       "sha256": "b66e85d7c6e8f1f61ffdf58ee36c73104b4a7891f27cff6f6b2f567dd90d7f9b"
+    },
+    {
+      "locale": "sk",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sk/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sk/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "62e5a678c386a6b08811501448fc619268e4a6ca4ca5f2559a5b541c95e29a4f"
     },
     {
       "locale": "sk",
@@ -10961,6 +11351,16 @@
     },
     {
       "locale": "sl-SI",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sl-SI/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sl-SI/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "a2355cc3b0327e4ed83b3a757d862ca5421970b37c77d3dc0eb14124aad2b8c8"
+    },
+    {
+      "locale": "sl-SI",
       "app_key": "cvdesk",
       "app_store_id": "6781337213",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sl-SI/cvdesk.svg",
@@ -11238,6 +11638,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/se/app/id6784974530",
       "sha256": "55b3585dc04a1a765c4698dddf1d31778e85d1af467e5d65cdf10f54191960f5"
+    },
+    {
+      "locale": "sv",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sv/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sv/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "fb8ae21ae1a451ade4c956ea2d8e7cec680485685590ee9acb3b006c0c076f6c"
     },
     {
       "locale": "sv",
@@ -11521,6 +11931,16 @@
     },
     {
       "locale": "ta-IN",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ta-IN/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ta-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "9f5f0095381011273b683505cf7636e61cd03d3bdfdfcc07a2291280cdedb5a1"
+    },
+    {
+      "locale": "ta-IN",
       "app_key": "cvdesk",
       "app_store_id": "6781337213",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ta-IN/cvdesk.svg",
@@ -11798,6 +12218,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/in/app/id6784974530",
       "sha256": "4a0cf94884112238b30287babefc6232d61af7a6777b532aa95dd2c5cdb00a4a"
+    },
+    {
+      "locale": "te-IN",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/te-IN/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/te-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "a431f1eb627d676fe9051939b118093f953d007b9df20467c5d8f61bbd3cce8d"
     },
     {
       "locale": "te-IN",
@@ -12081,6 +12511,16 @@
     },
     {
       "locale": "th",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/th/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/th/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "2ab84b3ada6fd1ea81a444f2469df1a1c9c0bb85b509ccac86095530021d4860"
+    },
+    {
+      "locale": "th",
       "app_key": "cvdesk",
       "app_store_id": "6781337213",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/th/cvdesk.svg",
@@ -12358,6 +12798,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/tr/app/id6784974530",
       "sha256": "f2601fb472f889642e991df984eb5e5044b16fe86f29b28e1971e6b8e0f0eabf"
+    },
+    {
+      "locale": "tr",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/tr/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/tr/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "8c15fefc3061e0d0ea5e6aeeaa7eee5320e6691b51bccb568406a670f3998a92"
     },
     {
       "locale": "tr",
@@ -12641,6 +13091,16 @@
     },
     {
       "locale": "uk",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/uk/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/uk/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "bacbfffede9ad6573dadc8cdab906221f5a984726c41fadd17d0dfa3d4c42898"
+    },
+    {
+      "locale": "uk",
       "app_key": "cvdesk",
       "app_store_id": "6781337213",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/uk/cvdesk.svg",
@@ -12918,6 +13378,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/pk/app/id6784974530",
       "sha256": "35b9530bc4becac62e7ad6d663a79d34af423f1efe9fee2867f5247095fb7e57"
+    },
+    {
+      "locale": "ur-PK",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ur-PK/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ur-PK/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "6ec330402cc7c35327a47bc55b569d2e00fac743a3be6de2e80381b5d1ed8e98"
     },
     {
       "locale": "ur-PK",
@@ -13201,6 +13671,16 @@
     },
     {
       "locale": "vi",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/vi/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/vi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "9c86ac567334be50fd5238d290d32b34d8a8350055bd07be358f86412c2328d7"
+    },
+    {
+      "locale": "vi",
       "app_key": "cvdesk",
       "app_store_id": "6781337213",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/vi/cvdesk.svg",
@@ -13481,6 +13961,16 @@
     },
     {
       "locale": "zh-Hans",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hans/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "3bd4c16f1a4c897f2ce345db3b3846174f0f2b03929afe76654fc6b71e2a42bf"
+    },
+    {
+      "locale": "zh-Hans",
       "app_key": "cvdesk",
       "app_store_id": "6781337213",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hans/cvdesk.svg",
@@ -13758,6 +14248,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6784974530",
       "sha256": "d8051bf14ab24149467af622d16e9db04a237bc8747a33d99e63d4a66ca71e04"
+    },
+    {
+      "locale": "zh-Hant",
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hant/aim990plus.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/aim990plus.html",
+      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "sha256": "65286324768b827201b3234742426fdef15da1de31a09a954922cd4eb060e382"
     },
     {
       "locale": "zh-Hant",

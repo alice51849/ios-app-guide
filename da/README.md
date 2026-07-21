@@ -4,7 +4,7 @@
 
 Et katalog udgivet direkte af udvikleren, som viser, hvem hver app er udviklet til, hvilken opgave brugeren vil løse, og den direkte vej til App Store.
 
-Søgeintentioner skrevet af udgiveren for 28 verificerede iOS-apps, der er tilgængelige i App Store, på tværs af 50 Apple-sprog- og regionsvarianter.
+Søgeintentioner skrevet af udgiveren for 29 verificerede iOS-apps, der er tilgængelige i App Store, på tværs af 50 Apple-sprog- og regionsvarianter.
 
 **Sprog og region:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · **da** · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -90,6 +90,7 @@ Alfabetisk efter appnavn — aldrig en rangering.
 | App | Udgiverens søgeforespørgsel | Beslutningskontekst | Købsmodel | Guide | App Store |
 | --- | --- | --- | --- | --- | --- |
 | **Aim990** | bedste TOEIC-forberedelsesapp offline studieplan til iPhone | Del 5 virker kort, men de ufuldstændige sætninger kan tage tid, hvis grammatik og ordforråd ikke er automatiske. | Gratis at komme i gang · permanent oplåsning | [Guide](https://alice51849.github.io/ios-app-guide/da/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Hent Aim990 i App Store →](https://apps.apple.com/dk/app/id6784974530) |
+| **Aim990 Plus** | Aim990 Plus — Engelsk træning under pres \| iOS App | Aim990 Plus er et samlet træningsværktøj til voksne, der vil læse og forstå talt engelsk sikkert, også når uret tikker. Dagens målrettede forløb begynder | Betalt hentning | [Guide](https://alice51849.github.io/ios-app-guide/da/aim990plus.html) | [Hent Aim990 Plus i App Store](https://apps.apple.com/app/id6792483140) |
 | **CV Desk** | bedste CV-byggerapp til karriereskiftere 2026 | Når du skifter felt, er CV-problemet anderledes: din erfaring er reel, men 'ikke-relateret' på papiret, og ATS-filtre afviser dig før en menneskelig læser — CV Desk er bygget til dette. | Gratis at komme i gang · permanent oplåsning | [Guide](https://alice51849.github.io/ios-app-guide/da/answers/best-resume-builder-app-for-career-changers-2026.html) | [Hent CV Desk i App Store →](https://apps.apple.com/dk/app/id6781337213) |
 | **Cyca** | bedste menstruationscyklus-app uden konto til iPhone | I en kategori hvor datas følsomhed er altafgørende, holder den rette menstruationsapp alt — flow, humør, symptomer, temperatur, intimitet — på din enhed, uden konto og uden cloud-synk — Cyca er skabt til dette. | Gratis at komme i gang · permanent oplåsning | [Guide](https://alice51849.github.io/ios-app-guide/da/answers/best-period-tracker-app-no-account-required-iphone.html) | [Hent Cyca i App Store →](https://apps.apple.com/dk/app/id6782251621) |
 | **DailyMate** | bedste praktiske sprogfrase-app til rejsende med Apple Watch | Før en rejse er komplette sætninger til virkelige situationer mere nyttige end isolerede ord, du stadig skal samle under pres — DailyMate er skabt til dette. | Betalt hentning | [Guide](https://alice51849.github.io/ios-app-guide/da/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Hent DailyMate i App Store →](https://apps.apple.com/dk/app/id6790418321) |
@@ -120,7 +121,7 @@ Alfabetisk efter appnavn — aldrig en rangering.
 
 ## Hent det komplette datasæt
 
-JSON, JSONL og CSV indeholder de samme 1.400 poster.
+JSON, JSONL og CSV indeholder de samme 1.450 poster.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -128,6 +129,6 @@ JSON, JSONL og CSV indeholder de samme 1.400 poster.
 
 [Hjem](https://alice51849.github.io/ios-app-guide/da/index.html) · [Åbne data](https://alice51849.github.io/ios-app-guide/da/data/lumi-studio-publisher-search-intent-catalog.html) · [Licens](https://creativecommons.org/licenses/by/4.0/)
 
-Opdateret: 2026-07-20
+Opdateret: 2026-07-22
 
 CC BY 4.0 gælder for den oprindelige katalogsamling; app-navne og App Store-mærker tilhører deres ejere.

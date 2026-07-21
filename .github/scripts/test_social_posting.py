@@ -1012,6 +1012,51 @@ class DevToGateTests(unittest.TestCase):
         ):
             self.assertEqual(1, devto_post.main())
 
+    def test_missing_api_key_preserves_queue_as_deferred(self):
+        with (
+            mock.patch.dict(os.environ, {}, clear=True),
+            mock.patch("sys.stderr", new_callable=io.StringIO) as stderr,
+        ):
+            self.assertEqual(0, devto_post.main())
+        self.assertIn("queue preserved", stderr.getvalue())
+
+    def test_rejected_api_key_preserves_queue_as_deferred(self):
+        error = common.HTTPStatusError("Dev.to profile read", 401)
+        with (
+            mock.patch.dict(os.environ, {"DEVTO_API_KEY": "expired-key"}),
+            mock.patch.object(devto_post, "me", side_effect=error),
+            mock.patch("sys.stderr", new_callable=io.StringIO) as stderr,
+        ):
+            self.assertEqual(0, devto_post.main())
+        self.assertIn("HTTP 401", stderr.getvalue())
+        self.assertIn("queue preserved", stderr.getvalue())
+
+    def test_publish_401_preserves_queue_as_deferred(self):
+        error = common.HTTPStatusError("Dev.to publish", 401)
+        with (
+            mock.patch.dict(os.environ, {"DEVTO_API_KEY": "expired-key"}),
+            mock.patch.object(
+                devto_post, "me", return_value={"username": "tester"}
+            ),
+            mock.patch.object(devto_post, "published_articles", return_value=[]),
+            mock.patch.object(
+                devto_post, "next_unpublished", return_value={"title": "Ready"}
+            ),
+            mock.patch.object(
+                devto_post, "latest_pool_publication", return_value=None
+            ),
+            mock.patch.object(
+                devto_post,
+                "next_publishable",
+                return_value={"title": "Ready", "body": "body"},
+            ),
+            mock.patch.object(devto_post, "_publish", side_effect=error),
+            mock.patch("sys.stderr", new_callable=io.StringIO) as stderr,
+        ):
+            self.assertEqual(0, devto_post.main())
+        self.assertIn("HTTP 401", stderr.getvalue())
+        self.assertIn("queue preserved", stderr.getvalue())
+
     def test_main_calculates_latest_pool_publication_once(self):
         latest = dt.datetime.now(dt.timezone.utc) - dt.timedelta(hours=1)
         with (

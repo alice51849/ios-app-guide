@@ -186,8 +186,12 @@ def _publish(key, article):
 def main():
     key = os.environ.get("DEVTO_API_KEY", "").strip()
     if not key:
-        print("missing DEVTO_API_KEY", file=sys.stderr)
-        return 1
+        print(
+            "::warning title=Dev.to authorization unavailable::"
+            "DEVTO_API_KEY is missing; queue preserved and this run is deferred.",
+            file=sys.stderr,
+        )
+        return 0
     try:
         profile = me(key)
         username = profile.get("username", "").strip()
@@ -223,6 +227,17 @@ def main():
         print("published ok:", url)
         return 0
     except HTTPStatusError as error:
+        if error.status == 401 and error.label in {
+            "Dev.to profile read",
+            "Dev.to publish",
+        }:
+            print(
+                "::warning title=Dev.to authorization unavailable::"
+                "API key rejected (HTTP 401); queue preserved and future "
+                "scheduled runs will retry.",
+                file=sys.stderr,
+            )
+            return 0
         if error.status == 403 and error.label == "Dev.to publish":
             print(
                 "Dev.to API still gated (HTTP 403 account-age anti-spam); "

@@ -134,21 +134,23 @@ class RotationTests(unittest.TestCase):
             )
             self.assertEqual(7, len({common.app_key(item) for item in picks}))
 
-    def test_combined_channels_cover_every_app_within_four_days(self):
+    def test_combined_channels_cover_every_app_in_minimum_days(self):
         expected = {common.app_key(item) for item in self.pool}
+        routes = (
+            (telegram_post.pick, 1),
+            (threads_post.pick, 3),
+            (threads_post.pick, 7),
+            (telegram_post.pick, 9),
+            (threads_post.pick, 14),
+            (telegram_post.pick, 15),
+            (threads_post.pick, 19),
+        )
+        days = (len(expected) + len(routes) - 1) // len(routes)
         observed = set()
-        for day in range(4):
+        for day in range(days):
             observed.update(
-                common.app_key(item)
-                for item in (
-                    telegram_post.pick(self.pool, self._at(day, 1)),
-                    threads_post.pick(self.pool, self._at(day, 3)),
-                    threads_post.pick(self.pool, self._at(day, 7)),
-                    telegram_post.pick(self.pool, self._at(day, 9)),
-                    threads_post.pick(self.pool, self._at(day, 14)),
-                    telegram_post.pick(self.pool, self._at(day, 15)),
-                    threads_post.pick(self.pool, self._at(day, 19)),
-                )
+                common.app_key(picker(self.pool, self._at(day, hour)))
+                for picker, hour in routes
             )
         self.assertEqual(expected, observed)
 

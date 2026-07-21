@@ -14,11 +14,11 @@ App Store 제공 여부를 확인한 28개 iOS 앱과 Apple의 50개 언어·지
 >
 > 검색어는 예상 사용 사례를 편집 기준에 따라 설명한 것이며, 실제 측정된 검색량 데이터, 순위, 독립 리뷰 또는 사용자 추천이 아닙니다.
 
-## Lumi Studio 개발사 검색 의도 카탈로그 · MCP v1.1.0 · Agent Skill
+## Lumi Studio 개발사 검색 의도 카탈로그 · MCP v1.1.2 · Agent Skill
 
 각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.0) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.2%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMi9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.2) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@ App Store 제공 여부를 확인한 28개 iOS 앱과 Apple의 50개 언어·지
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
 ```
 
 </details>

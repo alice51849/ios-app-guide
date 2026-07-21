@@ -8,23 +8,23 @@ apps: 28
 - Appoversigt · PWA: https://alice51849.github.io/ios-app-guide/da/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld
 - Appoversigt · SVG: https://alice51849.github.io/ios-app-guide/da/visuals/
-- Appoversigt · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- Appoversigt · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- Appoversigt · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder.mcpb
-- Appoversigt · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.0
-- Appoversigt · MCP v1.1.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/SHA256SUMS
+- Appoversigt · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.2%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- Appoversigt · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMi9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- Appoversigt · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder.mcpb
+- Appoversigt · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.2
+- Appoversigt · MCP v1.1.2 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/SHA256SUMS
 - Appoversigt · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- Appoversigt · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder
-- Appoversigt · Agent Skill · da: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.1.0/skills/lumi-app-finder/references/da.json
-- Appoversigt · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user
-- Appoversigt · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent claude-code
-- Appoversigt · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent cursor
-- Appoversigt · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent codex
-- Appoversigt · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.0 --scope user --agent gemini-cli
-- Appoversigt · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- Appoversigt · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
-- Appoversigt · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
-- Appoversigt · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.0/lumi-app-finder-npx.tgz
+- Appoversigt · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder
+- Appoversigt · Agent Skill · da: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.1.2/skills/lumi-app-finder/references/da.json
+- Appoversigt · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user
+- Appoversigt · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent claude-code
+- Appoversigt · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent cursor
+- Appoversigt · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent codex
+- Appoversigt · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent gemini-cli
+- Appoversigt · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- Appoversigt · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+- Appoversigt · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+- Appoversigt · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
 
 - [Aim990 - TOEIC Træner](https://alice51849.github.io/ios-app-guide/da/aim990.html) — Boost dit TOEIC score!
   - Forbered dig effektivt til TOEIC med Aim990! Ingen abonnement, ingen annoncer, ingen problemer. Tag kontrollen over din læring!

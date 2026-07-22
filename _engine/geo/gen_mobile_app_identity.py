@@ -207,6 +207,8 @@ def _remove_reference(value: Any, expected_id: str) -> Any:
 
 def _page_relation(page_url: str) -> str:
     path = urlsplit(page_url).path
+    if "/hubs/" in path:
+        return "about"
     if "/answers/" in path or "/alternatives/" in path:
         return "mentions"
     return "mainEntity"
@@ -513,10 +515,25 @@ def _upgrade_webpage(
         else:
             node["mentions"] = mentions
     else:
-        if _reference_matches(node.get("mainEntity"), store_url):
+        main_entity = _remove_reference(
+            node.get("mainEntity"),
+            store_url,
+        )
+        if main_entity is None:
             node.pop("mainEntity", None)
-        node["mentions"] = _merge_reference(
-            node.get("mentions"),
+        else:
+            node["mainEntity"] = main_entity
+        alternate_relation = "about" if relation == "mentions" else "mentions"
+        alternate_value = _remove_reference(
+            node.get(alternate_relation),
+            store_url,
+        )
+        if alternate_value is None:
+            node.pop(alternate_relation, None)
+        else:
+            node[alternate_relation] = alternate_value
+        node[relation] = _merge_reference(
+            node.get(relation),
             store_url,
         )
 

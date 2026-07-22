@@ -2449,6 +2449,34 @@ class GeneratorTests(unittest.TestCase):
                 {"@id": canonical},
                 stale_answer_relation["mentions"],
             )
+            item_list = {
+                "@type": "ItemList",
+                "@id": f"{missing_url}#resources",
+            }
+            stale_hub_relation = {
+                "@type": "WebPage",
+                "@id": f"{missing_url}#webpage",
+                "url": missing_url,
+                "mainEntity": [
+                    item_list,
+                    {"@id": canonical},
+                ],
+                "mentions": {"@id": canonical},
+            }
+            gen_mobile_app_identity._upgrade_webpage(
+                stale_hub_relation,
+                missing_url,
+                "en",
+                app_id,
+                "about",
+                site,
+            )
+            self.assertEqual(item_list, stale_hub_relation["mainEntity"])
+            self.assertEqual(
+                {"@id": canonical},
+                stale_hub_relation["about"],
+            )
+            self.assertNotIn("mentions", stale_hub_relation)
             stale_app_relation = {
                 "@type": "WebPage",
                 "@id": f"{existing_url}#webpage",
@@ -22921,8 +22949,108 @@ class GeneratorTests(unittest.TestCase):
                 "Private Bopomofo matching-pair cards", translations
             )
 
+    def assert_topic_hub_primary_image(
+        self,
+        source,
+        key,
+        canonical,
+        caption,
+    ):
+        schemas = [
+            json.loads(match.group("body"))
+            for match in gen_mobile_app_identity.JSON_LD_RE.finditer(source)
+        ]
+        collection_pages = [
+            node
+            for schema in schemas
+            for node in gen_mobile_app_identity._iter_nodes(schema)
+            if "CollectionPage"
+            in gen_mobile_app_identity._schema_types(node)
+        ]
+        self.assertEqual(1, len(collection_pages), (key, canonical))
+        collection = collection_pages[0]
+        image_url = f"{gen_hubs.SITE}/social/img/{key}-unfurl.jpg"
+        image_id = f"{image_url}#primaryimage"
+        image = collection["primaryImageOfPage"]
+        self.assertEqual(f"{canonical}#webpage", collection["@id"])
+        self.assertEqual("ImageObject", image["@type"])
+        self.assertEqual(image_id, image["@id"])
+        self.assertEqual(image_url, image["contentUrl"])
+        self.assertEqual(image_url, image["url"])
+        self.assertEqual(1200, image["width"])
+        self.assertEqual(630, image["height"])
+        self.assertEqual("image/jpeg", image["encodingFormat"])
+        self.assertEqual(caption, image["caption"])
+        self.assertEqual("Lumi Studio", image["creditText"])
+        self.assertEqual("Lumi Studio", image["creator"]["name"])
+        self.assertIs(True, image["representativeOfPage"])
+        image_reference = {"@id": image_id}
+        self.assertEqual(image_reference, collection["image"])
+        self.assertEqual(image_reference, collection["about"]["image"])
+        app_id = str(gen_hubs.APPSTORE[key])
+        app_entity_id = gen_mobile_app_identity.canonical_store_url(app_id)
+        app = collection["about"]
+        self.assertEqual("MobileApplication", app["@type"])
+        self.assertEqual(app_entity_id, app["@id"])
+        self.assertEqual(app_id, app["identifier"]["value"])
+        self.assertEqual(image_reference, app["image"])
+        self.assertNotIn("mainEntityOfPage", app)
+        self.assertEqual("ItemList", collection["mainEntity"]["@type"])
+        self.assertEqual(
+            len(collection["mainEntity"]["itemListElement"]),
+            collection["mainEntity"]["numberOfItems"],
+        )
+        self.assertGreater(collection["mainEntity"]["numberOfItems"], 0)
+        webpages = [
+            node
+            for schema in schemas
+            for node in gen_mobile_app_identity._root_nodes(schema)
+            if "WebPage" in gen_mobile_app_identity._schema_types(node)
+        ]
+        if webpages:
+            self.assertEqual(1, len(webpages))
+            self.assertEqual(
+                {"@id": app_entity_id},
+                webpages[0]["about"],
+            )
+            self.assertNotIn("mainEntity", webpages[0])
+        self.assertEqual(1, source.count('class="hub-preview__image"'))
+        preview = re.search(
+            r'<a class="hub-preview" href="([^"]+)"[^>]*>'
+            r'<img class="hub-preview__image" src="([^"]+)"',
+            source,
+        )
+        self.assertIsNotNone(preview)
+        self.assertIn(f"id{gen_hubs.APPSTORE[key]}", preview.group(1))
+        self.assertEqual(image_url, preview.group(2))
+        self.assertEqual(
+            {key},
+            set(
+                re.findall(
+                    re.escape(f"{gen_hubs.SITE}/social/img/")
+                    + r"([a-z0-9]+)-unfurl\.jpg",
+                    source,
+                )
+            ),
+        )
+        serialized = json.dumps(collection, ensure_ascii=False)
+        for forbidden in (
+            "acquireLicensePage",
+            "aggregateRating",
+            "license",
+            "offers",
+            "review",
+        ):
+            self.assertNotIn(f'"{forbidden}"', serialized)
+
     def test_topic_hub_has_no_fake_zero_price_and_links_script_locales(self):
         hub = gen_hubs.build_hub("lumibopomofo")
+        self.assert_topic_hub_primary_image(
+            hub,
+            "lumibopomofo",
+            gen_hubs.hub_url("lumibopomofo"),
+            gen_hubs.APPS["lumibopomofo"]["name"],
+        )
         self.assertNotIn('"price":"0"', hub)
         self.assertIn(
             '<meta property="og:image" content="'
@@ -22995,6 +23123,12 @@ class GeneratorTests(unittest.TestCase):
             "zh-Hant",
             availability,
         )
+        self.assert_topic_hub_primary_image(
+            hub,
+            "hourstag",
+            gen_hubs.hub_url("hourstag", "zh-Hant"),
+            "HoursTag：價格換工時",
+        )
         self.assertIn('<html lang="zh-Hant">', hub)
         self.assertIn(
             "<title>HoursTag：價格換工時 · 常見問題</title>",
@@ -23064,6 +23198,91 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn(
             "https://apps.apple.com/tw/app/id6754218117",
             unverified,
+        )
+
+    def test_topic_hub_primary_image_survives_identity_pass_idempotently(self):
+        key = "lumibopomofopro"
+        app_id = str(gen_hubs.APPSTORE[key])
+        localized_name, _ = gen_hubs.localized_page_copy(key, "zh-Hant")
+        source = gen_hubs.build_localized_hub(
+            key,
+            "zh-Hant",
+            {"tw": frozenset({app_id})},
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "hub.html"
+            path.write_text(source, encoding="utf-8")
+            self.assertEqual(
+                (True, 1, False),
+                gen_mobile_app_identity.ensure_mobile_identity(
+                    path,
+                    app_id,
+                    gen_hubs.APPS[key]["name"],
+                    "kids",
+                ),
+            )
+            first = path.read_text(encoding="utf-8")
+            self.assert_topic_hub_primary_image(
+                first,
+                key,
+                gen_hubs.hub_url(key, "zh-Hant"),
+                localized_name,
+            )
+            self.assertEqual(
+                (False, 1, False),
+                gen_mobile_app_identity.ensure_mobile_identity(
+                    path,
+                    app_id,
+                    gen_hubs.APPS[key]["name"],
+                    "kids",
+                ),
+            )
+            self.assertEqual(first, path.read_text(encoding="utf-8"))
+        self.assertEqual(
+            "about",
+            gen_mobile_app_identity._page_relation(
+                gen_hubs.hub_url(key, "zh-Hant")
+            ),
+        )
+
+    def test_published_topic_hubs_have_owned_visible_primary_images(self):
+        live = set(
+            gen_hubs.live_app_keys(
+                gen_hubs.APPSTORE,
+                gen_hubs.PAGES,
+                refresh=False,
+            )
+        )
+        checked = 0
+        for key in live:
+            root_path = Path(gen_hubs.PAGES) / "hubs" / f"{key}.html"
+            with self.subTest(key=key, locale="root"):
+                self.assert_topic_hub_primary_image(
+                    root_path.read_text(encoding="utf-8"),
+                    key,
+                    gen_hubs.hub_url(key),
+                    gen_hubs.APPS[key]["name"],
+                )
+            checked += 1
+            for locale in OFFICIAL_LOCALES:
+                name, _ = gen_hubs.localized_page_copy(key, locale)
+                path = (
+                    Path(gen_hubs.PAGES)
+                    / locale
+                    / "hubs"
+                    / f"{key}.html"
+                )
+                with self.subTest(key=key, locale=locale):
+                    self.assert_topic_hub_primary_image(
+                        path.read_text(encoding="utf-8"),
+                        key,
+                        gen_hubs.hub_url(key, locale),
+                        name,
+                    )
+                checked += 1
+        self.assertEqual(
+            len(live) * (len(OFFICIAL_LOCALES) + 1),
+            checked,
         )
 
     def test_topic_hub_inputs_cover_every_live_app_and_official_locale(self):

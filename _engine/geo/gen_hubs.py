@@ -25,6 +25,7 @@ from app_store_storefronts import (  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
 from official_locales import OFFICIAL_LOCALES, open_graph_locale  # noqa: E402
 from portfolio_app_finder import RTL_LOCALES, UI  # noqa: E402
+import gen_mobile_app_identity  # noqa: E402
 import queries  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
@@ -77,6 +78,8 @@ STYLE = (":root{--bg:#f7f7fb;--card:#fff;--ink:#161622;--muted:#5d6370;--line:#e
          "white-space:nowrap;overflow-x:auto}"
          ".cta{display:inline-block;border-radius:999px;background:linear-gradient(135deg,#5b5ff2,#8b5cf6);color:#fff!important;"
          "text-decoration:none;font-weight:800;padding:12px 20px;margin-top:8px;white-space:nowrap;max-width:100%;overflow-x:auto}"
+         ".hub-preview{display:block;margin:0 0 24px;border-radius:24px;overflow:hidden;box-shadow:0 18px 50px rgba(31,34,78,.14)}"
+         ".hub-preview__image{display:block;width:100%;height:auto}"
          ".pill{display:inline-block;border:1px solid var(--line);white-space:nowrap;"
          "background:#fff;border-radius:999px;padding:6px 12px;margin:3px;font-weight:700;text-decoration:none}"
          ".footer{margin-top:36px;padding:24px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;"
@@ -203,6 +206,53 @@ def _app_unfurl_url(key):
     return f"{SITE}/social/img/{key}-unfurl.jpg"
 
 
+def _primary_image_schema(key, caption):
+    image_url = _app_unfurl_url(key)
+    return {
+        "@type": "ImageObject",
+        "@id": f"{image_url}#primaryimage",
+        "contentUrl": image_url,
+        "url": image_url,
+        "width": 1200,
+        "height": 630,
+        "encodingFormat": "image/jpeg",
+        "caption": caption,
+        "creditText": "Lumi Studio",
+        "creator": {
+            "@type": "Organization",
+            "name": "Lumi Studio",
+            "url": SITE,
+        },
+        "representativeOfPage": True,
+    }
+
+
+def _preview_html(key, store_url, store_label, image_alt):
+    e = html.escape
+    return (
+        f'<a class="hub-preview" href="{e(store_url)}" '
+        f'aria-label="{e(store_label)}" rel="nofollow noopener">'
+        f'<img class="hub-preview__image" src="{e(_app_unfurl_url(key))}" '
+        f'width="1200" height="630" alt="{e(image_alt)}" '
+        'decoding="async" fetchpriority="high"></a>'
+    )
+
+
+def _mobile_app_schema(key, name, image_reference, store_url=None):
+    app_id = str(APPSTORE[key])
+    schema = gen_mobile_app_identity.mobile_app_schema(
+        app_id,
+        name,
+        APPS[key].get("category", "utility"),
+    )
+    schema.pop("@context")
+    schema["image"] = image_reference
+    canonical_store_url = gen_mobile_app_identity.canonical_store_url(app_id)
+    if store_url and store_url != canonical_store_url:
+        schema["sameAs"] = store_url
+    return schema
+
+
 def _social_metadata(key, title, description, canonical, image_alt, locale):
     e = html.escape
     image_url = _app_unfurl_url(key)
@@ -267,20 +317,24 @@ def build_localized_hub(key, locale, availability=None):
         f'<a href="{e(url)}">{e(resource_title)}</a>'
         for url, resource_title in resources
     )
+    primary_image = _primary_image_schema(key, name)
+    image_reference = {"@id": primary_image["@id"]}
     schema = {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
+        "@id": f"{canon}#webpage",
         "name": title,
         "description": description,
         "url": canon,
         "inLanguage": locale,
-        "about": {
-            "@type": "SoftwareApplication",
-            "name": name,
-            "operatingSystem": "iOS",
-            "applicationCategory": "MobileApplication",
-            "sameAs": store_url,
-        },
+        "primaryImageOfPage": primary_image,
+        "image": image_reference,
+        "about": _mobile_app_schema(
+            key,
+            name,
+            image_reference,
+            store_url,
+        ),
         "mainEntity": {
             "@type": "ItemList",
             "numberOfItems": len(resources),
@@ -308,7 +362,7 @@ def build_localized_hub(key, locale, availability=None):
 </head><body>
 <header class="top"><div class="wrap nav"><a href="{e(guide_url)}">{e(guide_label)}</a></div></header>
 <main class="wrap">
-<section class="hero"><h1>{e(name)}</h1><p class="lead">{e(description)}</p><a class="cta" href="{e(store_url)}" rel="nofollow noopener">{e(store_label)}</a></section>
+<section class="hero">{_preview_html(key, store_url, store_label, name)}<h1>{e(name)}</h1><p class="lead">{e(description)}</p><a class="cta" href="{e(store_url)}" rel="nofollow noopener">{e(store_label)}</a></section>
 <section class="card"><h2>{e(section_label)}</h2><div class="ll">{resources_html}</div></section>
 </main>
 <footer class="footer"><div class="wrap"><a href="{e(guide_url)}">{e(name)}</a></div></footer>
@@ -335,6 +389,9 @@ def build_hub(key):
         name,
         "en-US",
     )
+    store_label = f"Get {name} on the App Store"
+    primary_image = _primary_image_schema(key, name)
+    image_reference = {"@id": primary_image["@id"]}
 
     # answer pages (this app), existing only, with titles
     ans = []
@@ -358,6 +415,38 @@ def build_hub(key):
         if f.startswith(key + "-") and f.endswith(".html"):
             res.append((f"{SITE}/alternatives/{f}", page_title(os.path.join(PAGES, "alternatives", f), f)))
     res_html = "".join(f'<a href="{e(u)}">{e(t)}</a>' for u, t in res) or ""
+    resources = list(dict([*ans, *res]).items())
+    schema = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "@id": f"{canon}#webpage",
+        "name": f"{name} resources",
+        "description": description,
+        "url": canon,
+        "inLanguage": "en",
+        "primaryImageOfPage": primary_image,
+        "image": image_reference,
+        "about": _mobile_app_schema(
+            key,
+            name,
+            image_reference,
+        ),
+        "mainEntity": {
+            "@type": "ItemList",
+            "numberOfItems": len(resources),
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": position,
+                    "url": resource_url,
+                    "name": resource_title,
+                }
+                for position, (resource_url, resource_title) in enumerate(
+                    resources, 1
+                )
+            ],
+        },
+    }
 
     # Language pills point to app-specific localized resource hubs.
     langs_html = "".join(
@@ -374,11 +463,11 @@ def build_hub(key):
 {hreflang_links(key)}
 {social_metadata}
 <style>{STYLE}</style>
-<script type="application/ld+json">{{"@context":"https://schema.org","@type":"CollectionPage","name":"{e(name)} resources","url":"{canon}","about":{{"@type":"SoftwareApplication","name":"{e(name)}","operatingSystem":"iOS","applicationCategory":"MobileApplication"}}}}</script>
+<script type="application/ld+json">{_schema_json(schema)}</script>
 </head><body>
 <header class="top"><div class="wrap nav"><a href="{SITE}/index.html">iOS App Guide</a><a href="{SITE}/answers/">Answers</a><a href="{SITE}/stories/">Stories</a></div></header>
 <main class="wrap">
-<section class="hero"><h1>{e(name)}</h1><p class="lead">{e(sub)}</p><a class="cta" href="{e(url)}">Get {e(name)} on the App Store →</a></section>
+<section class="hero">{_preview_html(key, url, store_label, name)}<h1>{e(name)}</h1><p class="lead">{e(sub)}</p><a class="cta" href="{e(url)}">{e(store_label)} →</a></section>
 <section class="card"><h2>Answers to common questions</h2><div class="ll">{ans_html}</div></section>
 {"<section class='card'><h2>Guides, comparisons & more</h2><div class='ll'>" + res_html + "</div></section>" if res_html else ""}
 {"<section class='card'><h2>Available in your language</h2>" + langs_html + "</section>" if langs_html else ""}

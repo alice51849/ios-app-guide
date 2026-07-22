@@ -2,7 +2,7 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-07-22",
-  "content_digest": "e96c4133fa01bb137ddbf699854efa3624948cce422f8f621eb9fbbe000ff48c",
+  "content_digest": "a681d7dfa1257390455c82f1cec68792d5232dfa56794f3ffd92398df218cf07",
   "locale": "ml-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1028,9 +1028,15 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/app/id6792850916",
+      "app_store_url": "https://apps.apple.com/in/app/id6792850916",
       "guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/maskmyfile.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "സൗജന്യം",
+        "storefront_url": "https://apps.apple.com/in/app/id6792850916"
+      }
     },
     {
       "key": "mochi",
@@ -1104,9 +1110,15 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/app/id6790800323",
+      "app_store_url": "https://apps.apple.com/in/app/id6790800323",
       "guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/mochidonestamp.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "സൗജന്യം",
+        "storefront_url": "https://apps.apple.com/in/app/id6790800323"
+      }
     },
     {
       "key": "photocream",
@@ -1591,9 +1603,15 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/app/id6790467886",
+      "app_store_url": "https://apps.apple.com/in/app/id6790467886",
       "guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/wifiaid.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "599",
+        "currency": "INR",
+        "formatted_price": "₹ 599",
+        "storefront_url": "https://apps.apple.com/in/app/id6790467886"
+      }
     },
     {
       "key": "wordmate",

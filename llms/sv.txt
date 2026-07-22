@@ -8,23 +8,23 @@ apps: 29
 - Appkatalog · PWA: https://alice51849.github.io/ios-app-guide/sv/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/sv.jsonld
 - Appkatalog · SVG: https://alice51849.github.io/ios-app-guide/sv/visuals/
-- Appkatalog · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.2%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- Appkatalog · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMi9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- Appkatalog · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder.mcpb
-- Appkatalog · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.2
-- Appkatalog · MCP v1.1.2 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/SHA256SUMS
+- Appkatalog · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.3%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- Appkatalog · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMy9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- Appkatalog · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder.mcpb
+- Appkatalog · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.3
+- Appkatalog · MCP v1.1.3 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/SHA256SUMS
 - Appkatalog · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- Appkatalog · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder
-- Appkatalog · Agent Skill · sv: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.1.2/skills/lumi-app-finder/references/sv.json
-- Appkatalog · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user
-- Appkatalog · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent claude-code
-- Appkatalog · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent cursor
-- Appkatalog · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent codex
-- Appkatalog · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent gemini-cli
-- Appkatalog · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- Appkatalog · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
-- Appkatalog · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
-- Appkatalog · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+- Appkatalog · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder
+- Appkatalog · Agent Skill · sv: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.1.3/skills/lumi-app-finder/references/sv.json
+- Appkatalog · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user
+- Appkatalog · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent claude-code
+- Appkatalog · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent cursor
+- Appkatalog · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent codex
+- Appkatalog · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent gemini-cli
+- Appkatalog · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- Appkatalog · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
+- Appkatalog · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
+- Appkatalog · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
 - [Aim990 - TOEIC Coach](https://alice51849.github.io/ios-app-guide/sv/aim990.html) — Maximera din TOEIC-prep
   - Förbättra din TOEIC-poäng med Aim990! Ingen prenumeration, inga annonser – bara ren studietid!
@@ -33,7 +33,7 @@ apps: 29
 - [Aim990 Plus](https://alice51849.github.io/ios-app-guide/sv/aim990plus.html) — Engelska prov under press
   - Träna engelska med realistisk tidspress: börja med uppvärmning, fortsätt med ett tidsatt pass och repetera sedan just dina misstag.
   - Pris: Betald nedladdning till ett engångspris, utan prenumeration.
-  - App Store: https://apps.apple.com/app/id6792483140
+  - App Store: https://apps.apple.com/se/app/id6792483140
 - [CV Desk: ATS-CV-byggare](https://alice51849.github.io/ios-app-guide/sv/cvdesk.html) — CV-mall med ATS · Jobb
   - Slå rekryteringsrobotarna. ATS-poäng i mobilen, finslipa ditt CV och exportera som ATS-säker PDF eller Word. Privat, utan vattenstämpel, betala en gång.
   - Pris: Gratis nedladdning, ett engångsköp låser upp allt. Inga prenumerationsfällor.

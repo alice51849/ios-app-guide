@@ -14,11 +14,11 @@ Iskalni nameni, ki jih je pripravil založnik, za 29 preverjenih aktivnih iOS ap
 >
 > Poizvedbe so uredniški opisi predvidenih primerov uporabe, ne pa podatki o obsegu iskanja, uvrstitve, neodvisne ocene ali priporočila uporabnikov.
 
-## Katalog iskalnih namenov založnika Lumi Studio · MCP v1.1.2 · Agent Skill
+## Katalog iskalnih namenov založnika Lumi Studio · MCP v1.1.3 · Agent Skill
 
 Katalog prve roke, ki opisuje, za koga je vsaka aplikacija namenjena, katero nalogo poskuša uporabnik opraviti in neposredno pot do App Store.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.2%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMi9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.2) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.3%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMy9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.3) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@ Katalog prve roke, ki opisuje, za koga je vsaka aplikacija namenjena, katero nal
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -90,7 +90,7 @@ Abecedno po imenu aplikacije — nikoli uvrstitev.
 | Aplikacija | Poizvedba založnika | Kontekst odločitve | Model nakupa | Vodnik | App Store |
 | --- | --- | --- | --- | --- | --- |
 | **Aim990** | najboljša aplikacija za pripravo na TOEIC brez povezave s študijskim načrtom za iPhone | Del 5 se zdi kratek, a vprašanja z nepopolnimi stavki lahko vzamejo veliko časa, če slovnica in besedišče nista samodejna. | Brezplačen začetek · doživljenjska odklenitev | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Prenesite Aim990 v App Store →](https://apps.apple.com/si/app/id6784974530) |
-| **Aim990 Plus** | Aim990 Plus — Zbranost proti uri \| iOS App | Razumevanje angleščine je le del izziva. Drugi del je ohraniti natančnost, ko se čas izteka. Aim990 Plus je intenzivna vadba poslušanja in branja za | Plačljiv prenos | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/aim990plus.html) | [Prenesite Aim990 Plus iz trgovine App Store](https://apps.apple.com/app/id6792483140) |
+| **Aim990 Plus** | Aim990 Plus — Zbranost proti uri \| iOS App | Razumevanje angleščine je le del izziva. Drugi del je ohraniti natančnost, ko se čas izteka. Aim990 Plus je intenzivna vadba poslušanja in branja za | Plačljiv prenos | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/aim990plus.html) | [Prenesite Aim990 Plus iz trgovine App Store](https://apps.apple.com/si/app/id6792483140) |
 | **CV Desk** | najboljša aplikacija za izdelavo življenjepisa za menjavo kariere 2026 | Ko menjate področje, je problem življenjepisa drugačen: vaše izkušnje so resnične, a na papirju 'nepovezane', ATS filtri pa vas zavrnejo, preden jih pregleda človek — CV Desk je narejen za to. | Brezplačen začetek · doživljenjska odklenitev | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-resume-builder-app-for-career-changers-2026.html) | [Prenesite CV Desk v App Store →](https://apps.apple.com/si/app/id6781337213) |
 | **Cyca** | najboljša aplikacija za sledenje menstruacije brez računa za iPhone | V kategoriji, kjer je občutljivost podatkov ključna, prava aplikacija za sledenje menstruacije hrani vse — pretok, razpoloženje, simptome, temperaturo, intimnost — na vaši napravi, brez računa in brez sinhronizacije v oblaku — Cyca je narejena za to. | Brezplačen začetek · doživljenjska odklenitev | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-period-tracker-app-no-account-required-iphone.html) | [Prenesite Cyca v App Store →](https://apps.apple.com/si/app/id6782251621) |
 | **DailyMate** | najboljša praktična aplikacija za jezikovne fraze za popotnike z Apple Watch | Pred potovanjem so celovite fraze za resnične situacije bolj uporabne kot posamezne besede, ki jih morate pod pritiskom še sestaviti — DailyMate je zasnovan prav za to. | Plačljiv prenos | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Prenesite DailyMate v App Store →](https://apps.apple.com/si/app/id6790418321) |
@@ -129,6 +129,6 @@ JSON, JSONL in CSV vsebujejo enakih 1.450 zapisov.
 
 [Domov](https://alice51849.github.io/ios-app-guide/sl-SI/index.html) · [Odprti podatki](https://alice51849.github.io/ios-app-guide/sl-SI/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenca](https://creativecommons.org/licenses/by/4.0/)
 
-Posodobljeno: 2026-07-21
+Posodobljeno: 2026-07-22
 
 CC BY 4.0 velja za izvirno sestavo kataloga; imena aplikacij in znamke App Store pripadajo njihovim lastnikom.

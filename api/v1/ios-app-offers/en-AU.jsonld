@@ -6,7 +6,7 @@
   "name": "Lumi Studio Publisher Search Intent Catalogue",
   "description": "A first-party catalogue of who each app is designed for, the task they are trying to complete, and the direct App Store path.",
   "inLanguage": "en-AU",
-  "dateModified": "2026-07-21",
+  "dateModified": "2026-07-22",
   "numberOfItems": 29,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -79,11 +79,11 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "url": "https://apps.apple.com/app/id6792483140",
+      "url": "https://apps.apple.com/au/app/id6792483140",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-AU.jsonld#offer-aim990plus",
-        "url": "https://apps.apple.com/app/id6792483140",
+        "url": "https://apps.apple.com/au/app/id6792483140",
         "name": "Aim990 Plus",
         "description": "Get comfortable working against the clock",
         "seller": {
@@ -103,12 +103,12 @@
           "name": "Aim990 Plus",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/app/id6792483140",
-          "installUrl": "https://apps.apple.com/app/id6792483140",
-          "downloadUrl": "https://apps.apple.com/app/id6792483140",
+          "url": "https://apps.apple.com/au/app/id6792483140",
+          "installUrl": "https://apps.apple.com/au/app/id6792483140",
+          "downloadUrl": "https://apps.apple.com/au/app/id6792483140",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/app/id6792483140"
+            "target": "https://apps.apple.com/au/app/id6792483140"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/en-AU/aim990plus.html#webpage"
@@ -130,7 +130,15 @@
               "name": "one_time_option",
               "value": true
             }
-          ]
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "9.99",
+        "priceCurrency": "AUD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "AU"
         }
       }
     },

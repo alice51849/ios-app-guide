@@ -6,7 +6,7 @@
   "name": "Catálogo de intenções de pesquisa do editor Lumi Studio",
   "description": "Um catálogo publicado diretamente pelo programador que explica a quem se destina cada app, a tarefa que pretende realizar e o acesso direto à App Store.",
   "inLanguage": "pt-PT",
-  "dateModified": "2026-07-21",
+  "dateModified": "2026-07-22",
   "numberOfItems": 29,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -79,11 +79,11 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "url": "https://apps.apple.com/app/id6792483140",
+      "url": "https://apps.apple.com/pt/app/id6792483140",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/pt-PT.jsonld#offer-aim990plus",
-        "url": "https://apps.apple.com/app/id6792483140",
+        "url": "https://apps.apple.com/pt/app/id6792483140",
         "name": "Aim990 Plus",
         "description": "Treine a compreensão do inglês com sessões que exigem atenção, ritmo e resistência. Aim990 Plus destina-se a adultos que pretendem praticar de forma",
         "seller": {
@@ -103,12 +103,12 @@
           "name": "Aim990 Plus",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/app/id6792483140",
-          "installUrl": "https://apps.apple.com/app/id6792483140",
-          "downloadUrl": "https://apps.apple.com/app/id6792483140",
+          "url": "https://apps.apple.com/pt/app/id6792483140",
+          "installUrl": "https://apps.apple.com/pt/app/id6792483140",
+          "downloadUrl": "https://apps.apple.com/pt/app/id6792483140",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/app/id6792483140"
+            "target": "https://apps.apple.com/pt/app/id6792483140"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/pt-PT/aim990plus.html#webpage"
@@ -130,7 +130,15 @@
               "name": "one_time_option",
               "value": true
             }
-          ]
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "6.99",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PT"
         }
       }
     },

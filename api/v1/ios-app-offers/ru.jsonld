@@ -6,7 +6,7 @@
   "name": "Каталог намерений поиска издателя Lumi Studio",
   "description": "Каталог, созданный издателем, с информацией о целевой аудитории каждого приложения, задачах, которые оно помогает решать, и прямой ссылкой в App Store.",
   "inLanguage": "ru",
-  "dateModified": "2026-07-21",
+  "dateModified": "2026-07-22",
   "numberOfItems": 29,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -79,11 +79,11 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "url": "https://apps.apple.com/app/id6792483140",
+      "url": "https://apps.apple.com/ru/app/id6792483140",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-aim990plus",
-        "url": "https://apps.apple.com/app/id6792483140",
+        "url": "https://apps.apple.com/ru/app/id6792483140",
         "name": "Aim990 Plus",
         "description": "Aim990 Plus — тренажёр для взрослых, которым важно уверенно понимать английскую речь и текст в условиях ограниченного времени. Приложение помогает не",
         "seller": {
@@ -103,12 +103,12 @@
           "name": "Aim990 Plus",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/app/id6792483140",
-          "installUrl": "https://apps.apple.com/app/id6792483140",
-          "downloadUrl": "https://apps.apple.com/app/id6792483140",
+          "url": "https://apps.apple.com/ru/app/id6792483140",
+          "installUrl": "https://apps.apple.com/ru/app/id6792483140",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6792483140",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/app/id6792483140"
+            "target": "https://apps.apple.com/ru/app/id6792483140"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/ru/aim990plus.html#webpage"
@@ -130,7 +130,15 @@
               "name": "one_time_option",
               "value": true
             }
-          ]
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "499",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
         }
       }
     },

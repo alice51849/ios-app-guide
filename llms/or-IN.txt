@@ -8,28 +8,28 @@ apps: 29
 - ଆପ୍ ଡିରେକ୍ଟୋରି · PWA: https://alice51849.github.io/ios-app-guide/or-IN/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/or-IN.jsonld
 - ଆପ୍ ଡିରେକ୍ଟୋରି · SVG: https://alice51849.github.io/ios-app-guide/or-IN/visuals/
-- ଆପ୍ ଡିରେକ୍ଟୋରି · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.2%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMi9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder.mcpb
-- ଆପ୍ ଡିରେକ୍ଟୋରି · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.2
-- ଆପ୍ ଡିରେକ୍ଟୋରି · MCP v1.1.2 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/SHA256SUMS
+- ଆପ୍ ଡିରେକ୍ଟୋରି · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.3%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMy9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder.mcpb
+- ଆପ୍ ଡିରେକ୍ଟୋରି · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.3
+- ଆପ୍ ଡିରେକ୍ଟୋରି · MCP v1.1.3 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/SHA256SUMS
 - ଆପ୍ ଡିରେକ୍ଟୋରି · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · or-IN: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.1.2/skills/lumi-app-finder/references/or-IN.json
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent claude-code
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent cursor
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent codex
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent gemini-cli
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · or-IN: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.1.3/skills/lumi-app-finder/references/or-IN.json
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent claude-code
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent cursor
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent codex
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent gemini-cli
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
 - [Aim990 Plus](https://alice51849.github.io/ios-app-guide/or-IN/aim990plus.html) — ଇଂରାଜୀ ଚାପ ଅଭ୍ୟାସ
   - ସମୟର ଚାପ ମଧ୍ୟରେ ଶୁଣିବା ଓ ପଢ଼ିବା ଦକ୍ଷତା ବଢ଼ାନ୍ତୁ। ପ୍ରାରମ୍ଭିକ ପ୍ରସ୍ତୁତିରୁ ଭୁଲର ପୁନରଭ୍ୟାସ ପର୍ଯ୍ୟନ୍ତ ସ୍ପଷ୍ଟ କ୍ରମରେ ପ୍ରତିଦିନ ଆଗକୁ ବଢ଼ନ୍ତୁ।
   - ମୂଲ୍ୟ: ଗୋଟିଏ ଆଗୁଆ ମୂଲ୍ୟରେ ପେଡ୍ ଡାଉନଲୋଡ୍, କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
-  - App Store: https://apps.apple.com/app/id6792483140
+  - App Store: https://apps.apple.com/in/app/id6792483140
 - [Aim990: TOEIC Prep Coach](https://alice51849.github.io/ios-app-guide/or-IN/aim990.html) — TOEIC ପାଇଁ ୩୦ ଦିନିଆ ପ୍ରସ୍ତୁତି
   - ପ୍ରତିଦିନ Listening ଓ Reading ଅଭ୍ୟାସ, ଦୁର୍ବଳ ବିଷୟ ଉପରେ ଧ୍ୟାନ ଏବଂ ପ୍ରୋଗ୍ରେସ୍ ଟ୍ରାକିଂ ସହିତ TOEIC ପାଇଁ ପ୍ରସ୍ତୁତ ହୁଅନ୍ତୁ।
   - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ସବୁଦିନ ପାଇଁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।

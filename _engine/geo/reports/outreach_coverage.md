@@ -1,12 +1,12 @@
-# Zero-cost outreach coverage — 2026-07-21
+# Zero-cost outreach coverage — 2026-07-22
 
 > Factual owned-asset coverage only. This does not pretend to measure live AI recommendations.
 
-Public apps: **29** · Average coverage: **94.5%**
+Public apps: **29** · Average coverage: **95.1%**
 
 | App | Coverage | Answers | Social languages | Alternatives | Hub / guide / story |
 |---|---:|---:|---:|---:|---|
-| Aim990 Plus | 43.2% | 4/17 | 0 | 0 | hub / guide / story |
+| Aim990 Plus | 59.7% | 12/17 | 0 | 0 | hub / guide / story |
 | DailyMate | 80.0% | 25/25 | 0 | 5 | hub / guide / story |
 | TripBee Lite | 80.0% | 25/25 | 0 | 5 | hub / guide / story |
 | Wordmate: Learn 44 Languages | 80.0% | 25/25 | 0 | 5 | hub / guide / story |

@@ -6,7 +6,7 @@
   "name": "קטלוג כוונות החיפוש של Lumi Studio מפרסם",
   "description": "קטלוג רשמי המציג עבור מי מיועדת כל אפליקציה, המשימה שהיא נועדה לבצע, והמסלול הישיר ל-App Store.",
   "inLanguage": "he",
-  "dateModified": "2026-07-21",
+  "dateModified": "2026-07-22",
   "numberOfItems": 29,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -79,11 +79,11 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "url": "https://apps.apple.com/app/id6792483140",
+      "url": "https://apps.apple.com/il/app/id6792483140",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-aim990plus",
-        "url": "https://apps.apple.com/app/id6792483140",
+        "url": "https://apps.apple.com/il/app/id6792483140",
         "name": "Aim990 Plus",
         "description": "תרגול ממוקד להבנת אנגלית מדוברת וכתובה, שנבנה למבוגרים שרוצים לשפר דיוק ומהירות גם כשהשעון מתקתק. במקום לפתור עוד ועוד שאלות בלי כיוון, האפליקציה מחברת בין",
         "seller": {
@@ -103,12 +103,12 @@
           "name": "Aim990 Plus",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/app/id6792483140",
-          "installUrl": "https://apps.apple.com/app/id6792483140",
-          "downloadUrl": "https://apps.apple.com/app/id6792483140",
+          "url": "https://apps.apple.com/il/app/id6792483140",
+          "installUrl": "https://apps.apple.com/il/app/id6792483140",
+          "downloadUrl": "https://apps.apple.com/il/app/id6792483140",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/app/id6792483140"
+            "target": "https://apps.apple.com/il/app/id6792483140"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/he/aim990plus.html#webpage"
@@ -130,7 +130,15 @@
               "name": "one_time_option",
               "value": true
             }
-          ]
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "19.9",
+        "priceCurrency": "ILS",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "IL"
         }
       }
     },

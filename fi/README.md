@@ -14,11 +14,11 @@ Julkaisijan laatimat hakutarkoitukset 29 varmennetussa toimivassa iOS-sovellukse
 >
 > Kyselyt ovat toimituksellisia kuvauksia suunnitelluista käyttötapauksista, eivät mitattua hakumäärää, sijoituksia, itsenäisiä arvosteluja tai käyttäjien suosituksia.
 
-## Lumi Studio Julkaisijan Hakutarkoitusluettelo · MCP v1.1.2 · Agent Skill
+## Lumi Studio Julkaisijan Hakutarkoitusluettelo · MCP v1.1.3 · Agent Skill
 
 Ensimmäisen osapuolen luettelo siitä, kenelle kukin sovellus on suunniteltu, mitä tehtävää he pyrkivät suorittamaan ja suora App Store -polku.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.2%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMi9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.2) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.3%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMy9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.3) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@ Ensimmäisen osapuolen luettelo siitä, kenelle kukin sovellus on suunniteltu, m
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -90,7 +90,7 @@ Aakkosjärjestyksessä sovelluksen nimen mukaan — ei koskaan sijoitus.
 | Sovellus | Julkaisijan hakukysely | Päätöskonteksti | Ostomalli | Opas | App Store |
 | --- | --- | --- | --- | --- | --- |
 | **Aim990** | paras TOEIC-valmistelusovellus offline-opintosuunnitelmalla iPhonelle | Osa 5 näyttää lyhyeltä, mutta keskeneräiset lauseet voivat viedä aikaa, jos kielioppi ja sanasto eivät ole automaattisia. | Ilmainen aloitus · elinikäinen avaus | [Opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Hanki Aim990 App Storesta →](https://apps.apple.com/fi/app/id6784974530) |
-| **Aim990 Plus** | Aim990 Plus — Englantia paineen alla \| iOS App | Aim990 Plus on aikuisille suunniteltu englannin kuuntelu- ja lukuharjoittelun kokonaisuus, joka auttaa säilyttämään keskittymisen myös ajan käydessä vähiin | Maksullinen ladattavaksi | [Opas](https://alice51849.github.io/ios-app-guide/fi/aim990plus.html) | [Lataa Aim990 Plus App Storesta](https://apps.apple.com/app/id6792483140) |
+| **Aim990 Plus** | Aim990 Plus — Englantia paineen alla \| iOS App | Aim990 Plus on aikuisille suunniteltu englannin kuuntelu- ja lukuharjoittelun kokonaisuus, joka auttaa säilyttämään keskittymisen myös ajan käydessä vähiin | Maksullinen ladattavaksi | [Opas](https://alice51849.github.io/ios-app-guide/fi/aim990plus.html) | [Lataa Aim990 Plus App Storesta](https://apps.apple.com/fi/app/id6792483140) |
 | **CV Desk** | paras ansioluettelon laatijasovellus uranvaihtajille 2026 | Kun vaihdat alaa, ansioluettelon ongelma on erilainen: kokemuksesi on todellista, mutta 'ei liity alaan' paperilla, ja ATS-suodattimet hylkäävät sinut ennen kuin ihminen ehtii lukea — CV Desk on tehty tätä varten. | Ilmainen aloitus · elinikäinen avaus | [Opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-resume-builder-app-for-career-changers-2026.html) | [Hanki CV Desk App Storesta →](https://apps.apple.com/fi/app/id6781337213) |
 | **Cyca** | paras kuukautiskierron seurantasovellus ilman tiliä iPhonelle | Kategoriassa, jossa tietojen arkaluontoisuus on kaiken keskiössä, oikea kuukautiskierron seurantasovellus pitää kaiken — vuodon, mielialan, oireet, lämpötilan, läheisyyden — laitteellasi ilman tiliä tai pilvisynkronointia — Cyca on tehty tätä varten. | Ilmainen aloitus · elinikäinen avaus | [Opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-period-tracker-app-no-account-required-iphone.html) | [Hanki Cyca App Storesta →](https://apps.apple.com/fi/app/id6782251621) |
 | **DailyMate** | paras käytännöllinen kielilauseiden sovellus matkailijoille, jossa Apple Watch -tuki | Ennen matkaa täydelliset lauseet todellisiin tilanteisiin ovat hyödyllisempiä kuin irralliset sanastot, jotka pitää vielä koota paineen alla — DailyMate on tehty tätä varten. | Maksullinen ladattavaksi | [Opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Hanki DailyMate App Storesta →](https://apps.apple.com/fi/app/id6790418321) |
@@ -129,6 +129,6 @@ JSON, JSONL ja CSV sisältävät samat 1 450 tietuetta.
 
 [Etusivu](https://alice51849.github.io/ios-app-guide/fi/index.html) · [Avoin data](https://alice51849.github.io/ios-app-guide/fi/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisenssi](https://creativecommons.org/licenses/by/4.0/)
 
-Päivitetty: 2026-07-21
+Päivitetty: 2026-07-22
 
 CC BY 4.0 koskee alkuperäisen luettelon kokoamista; sovellusten nimet ja App Store -merkit kuuluvat omistajilleen.

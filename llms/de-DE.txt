@@ -8,23 +8,23 @@ apps: 29
 - App-Verzeichnis · PWA: https://alice51849.github.io/ios-app-guide/de-DE/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/de-DE.jsonld
 - App-Verzeichnis · SVG: https://alice51849.github.io/ios-app-guide/de-DE/visuals/
-- App-Verzeichnis · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.2%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- App-Verzeichnis · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMi9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- App-Verzeichnis · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder.mcpb
-- App-Verzeichnis · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.2
-- App-Verzeichnis · MCP v1.1.2 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/SHA256SUMS
+- App-Verzeichnis · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.3%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- App-Verzeichnis · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMy9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- App-Verzeichnis · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder.mcpb
+- App-Verzeichnis · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.3
+- App-Verzeichnis · MCP v1.1.3 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/SHA256SUMS
 - App-Verzeichnis · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- App-Verzeichnis · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder
-- App-Verzeichnis · Agent Skill · de-DE: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.1.2/skills/lumi-app-finder/references/de-DE.json
-- App-Verzeichnis · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user
-- App-Verzeichnis · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent claude-code
-- App-Verzeichnis · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent cursor
-- App-Verzeichnis · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent codex
-- App-Verzeichnis · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent gemini-cli
-- App-Verzeichnis · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- App-Verzeichnis · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
-- App-Verzeichnis · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
-- App-Verzeichnis · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+- App-Verzeichnis · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder
+- App-Verzeichnis · Agent Skill · de-DE: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.1.3/skills/lumi-app-finder/references/de-DE.json
+- App-Verzeichnis · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user
+- App-Verzeichnis · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent claude-code
+- App-Verzeichnis · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent cursor
+- App-Verzeichnis · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent codex
+- App-Verzeichnis · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent gemini-cli
+- App-Verzeichnis · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- App-Verzeichnis · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
+- App-Verzeichnis · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
+- App-Verzeichnis · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
 - [Aim990](https://alice51849.github.io/ios-app-guide/de-DE/aim990.html) — Dein TOEIC Coach
   - Verbessere dein TOEIC-Ergebnis mit Aim990! 30 Tage gezielte Vorbereitung ohne Werbung und ohne Abo.
@@ -33,7 +33,7 @@ apps: 29
 - [Aim990 Plus](https://alice51849.github.io/ios-app-guide/de-DE/aim990plus.html) — Englisch-Prüfung unter Druck
   - Trainiere Englisch unter realistischem Zeitdruck: kurz aufwärmen, ein fokussiertes Set mit Timer lösen und anschließend gezielt eigene Fehler wiederholen.
   - Preis: Kostenpflichtiger Download zum einmaligen Preis, ohne Abonnement.
-  - App Store: https://apps.apple.com/app/id6792483140
+  - App Store: https://apps.apple.com/de/app/id6792483140
 - [CV Desk: ATS Lebenslauf](https://alice51849.github.io/ios-app-guide/de-DE/cvdesk.html) — ATS Lebenslauf & Bewerbung
   - Überliste die Bewerbungs-Roboter. ATS-Score am Gerät prüfen, Lebenslauf optimieren, als ATS-sicheres PDF oder Word exportieren. Privat, ohne Wasserzeichen, Einmalkauf.
   - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.

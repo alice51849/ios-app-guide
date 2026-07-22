@@ -14,11 +14,11 @@
 >
 > 這些查詢是針對預期使用情境撰寫的編輯描述，並非實測搜尋量資料、排名、獨立評測或使用者推薦。
 
-## Lumi Studio 開發者搜尋意圖目錄 · MCP v1.1.2 · Agent Skill
+## Lumi Studio 開發者搜尋意圖目錄 · MCP v1.1.3 · Agent Skill
 
 第一方目錄，說明每款 App 的適合對象、想完成的任務，以及 App Store 下載入口。
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.2%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMi9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.2) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.3%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMy9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.3) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -90,7 +90,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | App | 開發者查詢 | 決策情境 | 付費模式 | 指南 | App Store |
 | --- | --- | --- | --- | --- | --- |
 | **Aim990** | iPhone 最佳 TOEIC 離線準備應用程式學習計畫 | 第 5 部分看似簡短，但不完整句子題目若文法與詞彙不熟練，會耗費大量時間。 | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [在 App Store 取得 Aim990 →](https://apps.apple.com/tw/app/id6784974530) |
-| **Aim990 Plus** | Aim990 Plus — 15分鐘掌握七大題型 \| iOS App | 把零散刷題，整理成真正能承受時間壓力的備考節奏。 | 付費下載 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/aim990plus.html) | [在 App Store 取得 Aim990 Plus](https://apps.apple.com/app/id6792483140) |
+| **Aim990 Plus** | Aim990 Plus — 15分鐘掌握七大題型 \| iOS App | 把零散刷題，整理成真正能承受時間壓力的備考節奏。 | 付費下載 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/aim990plus.html) | [在 App Store 取得 Aim990 Plus](https://apps.apple.com/tw/app/id6792483140) |
 | **CV Desk** | 2026 年最佳職涯轉換者履歷建立應用程式 | 轉換領域時，履歷問題不同：經驗真實但紙本看似「不相關」，ATS 過濾器會在人工審閱前拒絕你 — CV Desk 專為此設計。 | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-resume-builder-app-for-career-changers-2026.html) | [在 App Store 取得 CV Desk →](https://apps.apple.com/tw/app/id6781337213) |
 | **Cyca** | 最佳無需帳號的生理期追蹤應用程式 iPhone | 在資料敏感度極高的類別中，合適的生理期追蹤器會將所有資料 — 流量、心情、症狀、體溫、親密行為 — 保留在裝置上，無需帳號且無雲端同步 — Cyca 專為此設計。 | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-period-tracker-app-no-account-required-iphone.html) | [在 App Store 取得 Cyca →](https://apps.apple.com/tw/app/id6782251621) |
 | **DailyMate** | 適合旅客搭配 Apple Watch 使用的最佳實用語言短句應用程式 | 出發前，針對真實情境的完整短句比起必須在壓力下組合的零散詞彙更實用 — DailyMate 專為此打造。 | 付費下載 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [前往 App Store 下載 DailyMate →](https://apps.apple.com/tw/app/id6790418321) |
@@ -129,6 +129,6 @@ JSON、JSONL 與 CSV 格式皆包含相同的 1,450 筆紀錄。
 
 [首頁](https://alice51849.github.io/ios-app-guide/zh-Hant/index.html) · [開放資料](https://alice51849.github.io/ios-app-guide/zh-Hant/data/lumi-studio-publisher-search-intent-catalog.html) · [授權條款](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-07-21
+更新日期: 2026-07-22
 
 CC BY 4.0 適用於原始目錄彙編；App 名稱與 App Store 商標分屬其權利人。

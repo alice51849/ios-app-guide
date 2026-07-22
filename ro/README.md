@@ -14,11 +14,11 @@ Intenții de căutare redactate de editori pentru 29 de aplicații iOS verificat
 >
 > Interogările sunt descrieri editoriale ale cazurilor de utilizare intenționate, nu date măsurate despre volumul căutărilor, clasamente, recenzii independente sau recomandări ale utilizatorilor.
 
-## Catalogul de intenții de căutare Lumi Studio al editorului · MCP v1.1.2 · Agent Skill
+## Catalogul de intenții de căutare Lumi Studio al editorului · MCP v1.1.3 · Agent Skill
 
 O listă de primă parte a destinatarilor fiecărei aplicații, a sarcinii pe care încearcă să o îndeplinească și a traseului direct către App Store.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.2%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMi9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.2) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.3%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMy9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.3) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@ O listă de primă parte a destinatarilor fiecărei aplicații, a sarcinii pe ca
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -90,7 +90,7 @@ Alfabetic după numele aplicației — niciodată un clasament.
 | Aplicație | Interogare editor | Situație decizională | Model de achiziție | Ghid | App Store |
 | --- | --- | --- | --- | --- | --- |
 | **Aim990** | cea mai bună aplicație de pregătire TOEIC cu plan de studiu offline pentru iPhone | Partea 5 pare scurtă, dar întrebările cu propoziții incomplete pot consuma timp dacă gramatica și vocabularul nu sunt automate. | Început gratuit · deblocare pe viață | [Ghid](https://alice51849.github.io/ios-app-guide/ro/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Obține Aim990 din App Store →](https://apps.apple.com/ro/app/id6784974530) |
-| **Aim990 Plus** | Aim990 Plus — Încredere contra cronometru \| iOS App | Să înțelegi engleza este important; să rămâi precis când timpul se scurge este o abilitate separată. Aim990 Plus este un antrenament intensiv de | Descărcare plătită | [Ghid](https://alice51849.github.io/ios-app-guide/ro/aim990plus.html) | [Descarcă Aim990 Plus din App Store](https://apps.apple.com/app/id6792483140) |
+| **Aim990 Plus** | Aim990 Plus — Încredere contra cronometru \| iOS App | Să înțelegi engleza este important; să rămâi precis când timpul se scurge este o abilitate separată. Aim990 Plus este un antrenament intensiv de | Descărcare plătită | [Ghid](https://alice51849.github.io/ios-app-guide/ro/aim990plus.html) | [Descarcă Aim990 Plus din App Store](https://apps.apple.com/ro/app/id6792483140) |
 | **CV Desk** | cea mai bună aplicație pentru realizare CV pentru schimbători de carieră 2026 | Când schimbi domeniul, problema CV-ului este diferită: experiența ta este reală, dar pe hârtie „neconectată”, iar filtrele ATS te resping înainte ca un om să-l citească — CV Desk este creat pentru asta. | Început gratuit · deblocare pe viață | [Ghid](https://alice51849.github.io/ios-app-guide/ro/answers/best-resume-builder-app-for-career-changers-2026.html) | [Obține CV Desk din App Store →](https://apps.apple.com/ro/app/id6781337213) |
 | **Cyca** | cea mai bună aplicație de urmărire a ciclului fără cont necesar pentru iPhone | Într-o categorie unde sensibilitatea datelor este esențială, următorul ciclu păstrează totul — flux, stare de spirit, simptome, temperatură, intimitate — pe dispozitiv, fără cont și fără sincronizare în cloud — Cyca este creată pentru asta. | Început gratuit · deblocare pe viață | [Ghid](https://alice51849.github.io/ios-app-guide/ro/answers/best-period-tracker-app-no-account-required-iphone.html) | [Obține Cyca din App Store →](https://apps.apple.com/ro/app/id6782251621) |
 | **DailyMate** | cea mai bună aplicație cu fraze utile pentru călătorii și Apple Watch | Înainte de o călătorie, expresiile complete pentru situații reale sunt mai utile decât vocabularul izolat pe care trebuie să-l asamblezi sub presiune — DailyMate este creat pentru asta. | Descărcare plătită | [Ghid](https://alice51849.github.io/ios-app-guide/ro/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Obține DailyMate din App Store →](https://apps.apple.com/ro/app/id6790418321) |
@@ -129,6 +129,6 @@ JSON, JSONL și CSV conțin aceleași 1.450 de înregistrări.
 
 [Acasă](https://alice51849.github.io/ios-app-guide/ro/index.html) · [Date deschise](https://alice51849.github.io/ios-app-guide/ro/data/lumi-studio-publisher-search-intent-catalog.html) · [Licență](https://creativecommons.org/licenses/by/4.0/)
 
-Actualizat: 2026-07-21
+Actualizat: 2026-07-22
 
 CC BY 4.0 se aplică compilației originale a catalogului; numele aplicațiilor și mărcile App Store aparțin proprietarilor lor.

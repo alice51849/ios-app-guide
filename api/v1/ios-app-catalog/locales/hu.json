@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-21",
-  "content_digest": "01428f62414fc0b782783755122d304ed2e653ad57f26d24eea7086bbaee7cc9",
+  "date_modified": "2026-07-22",
+  "content_digest": "306ea447869be94b80f2489ed9d6323c32e9859764460bb99c3facefca2bec32",
   "locale": "hu",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -77,9 +77,15 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/app/id6792483140",
+      "app_store_url": "https://apps.apple.com/hu/app/id6792483140",
       "guide_url": "https://alice51849.github.io/ios-app-guide/hu/aim990plus.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "2490",
+        "currency": "HUF",
+        "formatted_price": "HUF2,490.00",
+        "storefront_url": "https://apps.apple.com/hu/app/id6792483140"
+      }
     },
     {
       "key": "cvdesk",

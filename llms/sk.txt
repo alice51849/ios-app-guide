@@ -8,23 +8,23 @@ apps: 29
 - Katalóg aplikácií · PWA: https://alice51849.github.io/ios-app-guide/sk/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/sk.jsonld
 - Katalóg aplikácií · SVG: https://alice51849.github.io/ios-app-guide/sk/visuals/
-- Katalóg aplikácií · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.2%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- Katalóg aplikácií · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMi9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- Katalóg aplikácií · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder.mcpb
-- Katalóg aplikácií · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.2
-- Katalóg aplikácií · MCP v1.1.2 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/SHA256SUMS
+- Katalóg aplikácií · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.3%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- Katalóg aplikácií · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMy9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- Katalóg aplikácií · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder.mcpb
+- Katalóg aplikácií · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.3
+- Katalóg aplikácií · MCP v1.1.3 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/SHA256SUMS
 - Katalóg aplikácií · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- Katalóg aplikácií · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder
-- Katalóg aplikácií · Agent Skill · sk: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.1.2/skills/lumi-app-finder/references/sk.json
-- Katalóg aplikácií · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user
-- Katalóg aplikácií · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent claude-code
-- Katalóg aplikácií · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent cursor
-- Katalóg aplikácií · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent codex
-- Katalóg aplikácií · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent gemini-cli
-- Katalóg aplikácií · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- Katalóg aplikácií · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
-- Katalóg aplikácií · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
-- Katalóg aplikácií · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+- Katalóg aplikácií · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder
+- Katalóg aplikácií · Agent Skill · sk: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.1.3/skills/lumi-app-finder/references/sk.json
+- Katalóg aplikácií · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user
+- Katalóg aplikácií · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent claude-code
+- Katalóg aplikácií · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent cursor
+- Katalóg aplikácií · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent codex
+- Katalóg aplikácií · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent gemini-cli
+- Katalóg aplikácií · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- Katalóg aplikácií · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
+- Katalóg aplikácií · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
+- Katalóg aplikácií · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
 - [Aim990 - TOEIC príprava](https://alice51849.github.io/ios-app-guide/sk/aim990.html) — Dosiahnite svoj cieľ 990!
   - Zlepšite svoje TOEIC skóre s Aim990! 30-dňový plán, cvičenia na slabé miesta a sledovanie pokroku bez reklám!
@@ -33,7 +33,7 @@ apps: 29
 - [Aim990 Plus](https://alice51849.github.io/ios-app-guide/sk/aim990plus.html) — Istota pod časovým tlakom
   - Trénujte počúvanie a čítanie v ostrom tempe: rozohriatie, časovaný blok a cielený návrat k chybám. Celá príprava funguje offline.
   - Cena: Platené stiahnutie za jednu cenu vopred, bez predplatného.
-  - App Store: https://apps.apple.com/app/id6792483140
+  - App Store: https://apps.apple.com/sk/app/id6792483140
 - [CV Desk: ATS životopis](https://alice51849.github.io/ios-app-guide/sk/cvdesk.html) — Životopis ATS · Práca
   - Porazte náborové roboty. ATS skóre v zariadení, vylepšite životopis a exportujte do PDF pre ATS alebo Wordu. Súkromné, bez vodoznaku, zaplatíte raz.
   - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.

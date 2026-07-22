@@ -6,7 +6,7 @@
   "name": "Lumi Studio ପ୍ରକାଶକ ସନ୍ଧାନ ଉଦ୍ଦେଶ୍ୟ ସୂଚୀ",
   "description": "ପ୍ରତ୍ୟେକ ଆପ୍ କାହା ପାଇଁ ଡିଜାଇନ୍ କରାଯାଇଛି, ସେମାନେ କେଉଁ କାର୍ଯ୍ୟ ସମ୍ପୂର୍ଣ୍ଣ କରିବାକୁ ଚେଷ୍ଟା କରୁଛନ୍ତି, ଏବଂ ସିଧା App Store ପଥର ପ୍ରଥମ-ପକ୍ଷ ସୂଚୀ।",
   "inLanguage": "or-IN",
-  "dateModified": "2026-07-21",
+  "dateModified": "2026-07-22",
   "numberOfItems": 29,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -79,11 +79,11 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "url": "https://apps.apple.com/app/id6792483140",
+      "url": "https://apps.apple.com/in/app/id6792483140",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/or-IN.jsonld#offer-aim990plus",
-        "url": "https://apps.apple.com/app/id6792483140",
+        "url": "https://apps.apple.com/in/app/id6792483140",
         "name": "Aim990 Plus",
         "description": "Aim990 Plus ବୟସ୍କମାନଙ୍କ ଇଂରାଜୀ ଶ୍ରବଣ, ପଠନ ଓ ସମୟ ପରିଚାଳନାକୁ ଏକାଗ୍ର ଭାବରେ ଉନ୍ନତ କରିବା ପାଇଁ ତିଆରି ହୋଇଥିବା ଚାପ ଅଭ୍ୟାସ ଆପ୍। କେବଳ ପାଠ ଓଲଟାଇ ଦେଖିବା ବଦଳରେ",
         "seller": {
@@ -103,12 +103,12 @@
           "name": "Aim990 Plus",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/app/id6792483140",
-          "installUrl": "https://apps.apple.com/app/id6792483140",
-          "downloadUrl": "https://apps.apple.com/app/id6792483140",
+          "url": "https://apps.apple.com/in/app/id6792483140",
+          "installUrl": "https://apps.apple.com/in/app/id6792483140",
+          "downloadUrl": "https://apps.apple.com/in/app/id6792483140",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/app/id6792483140"
+            "target": "https://apps.apple.com/in/app/id6792483140"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/or-IN/aim990plus.html#webpage"
@@ -130,7 +130,15 @@
               "name": "one_time_option",
               "value": true
             }
-          ]
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "599",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "IN"
         }
       }
     },

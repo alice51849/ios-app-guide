@@ -8,23 +8,23 @@ apps: 29
 - Imenik aplikacija · PWA: https://alice51849.github.io/ios-app-guide/hr/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld
 - Imenik aplikacija · SVG: https://alice51849.github.io/ios-app-guide/hr/visuals/
-- Imenik aplikacija · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.2%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- Imenik aplikacija · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMi9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- Imenik aplikacija · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder.mcpb
-- Imenik aplikacija · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.2
-- Imenik aplikacija · MCP v1.1.2 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/SHA256SUMS
+- Imenik aplikacija · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.3%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- Imenik aplikacija · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMy9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- Imenik aplikacija · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder.mcpb
+- Imenik aplikacija · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.3
+- Imenik aplikacija · MCP v1.1.3 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/SHA256SUMS
 - Imenik aplikacija · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- Imenik aplikacija · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder
-- Imenik aplikacija · Agent Skill · hr: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.1.2/skills/lumi-app-finder/references/hr.json
-- Imenik aplikacija · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user
-- Imenik aplikacija · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent claude-code
-- Imenik aplikacija · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent cursor
-- Imenik aplikacija · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent codex
-- Imenik aplikacija · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent gemini-cli
-- Imenik aplikacija · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- Imenik aplikacija · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
-- Imenik aplikacija · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
-- Imenik aplikacija · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+- Imenik aplikacija · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder
+- Imenik aplikacija · Agent Skill · hr: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.1.3/skills/lumi-app-finder/references/hr.json
+- Imenik aplikacija · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user
+- Imenik aplikacija · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent claude-code
+- Imenik aplikacija · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent cursor
+- Imenik aplikacija · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent codex
+- Imenik aplikacija · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent gemini-cli
+- Imenik aplikacija · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- Imenik aplikacija · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
+- Imenik aplikacija · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
+- Imenik aplikacija · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
 - [Aim990 - TOEIC priprema](https://alice51849.github.io/ios-app-guide/hr/aim990.html) — Pripremite se za 990!
   - Postignite svoj cilj s Aim990! 30 dana svakodnevnog učenja za vrhunski TOEIC rezultat bez reklama i bez stresa.
@@ -33,7 +33,7 @@ apps: 29
 - [Aim990 Plus](https://alice51849.github.io/ios-app-guide/hr/aim990plus.html) — Sigurnost pod štopericom
   - Vježbajte slušanje i čitanje u brzom ritmu: zagrijavanje, vremenski ograničen set i ciljani povratak na pogreške. Sve radi izvan mreže.
   - Cijena: Plaćeno preuzimanje po jednoj unaprijed određenoj cijeni, bez pretplate.
-  - App Store: https://apps.apple.com/app/id6792483140
+  - App Store: https://apps.apple.com/hr/app/id6792483140
 - [CV Desk: ATS životopis](https://alice51849.github.io/ios-app-guide/hr/cvdesk.html) — Životopis ATS · Posao
   - Pobijedite robote za probir. ATS rezultat na uređaju, doradite životopis i izvezite u PDF za ATS ili Word. Privatno, bez vodenog žiga, platite jednom.
   - Cijena: Preuzmite besplatno. Jednokratnom kupnjom trajno otključavate sve značajke—bez pretplate.

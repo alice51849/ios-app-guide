@@ -8,23 +8,23 @@ apps: 29
 - ਐਪ ਡਾਇਰੈਕਟਰੀ · PWA: https://alice51849.github.io/ios-app-guide/pa-IN/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/pa-IN.jsonld
 - ਐਪ ਡਾਇਰੈਕਟਰੀ · SVG: https://alice51849.github.io/ios-app-guide/pa-IN/visuals/
-- ਐਪ ਡਾਇਰੈਕਟਰੀ · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.2%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- ਐਪ ਡਾਇਰੈਕਟਰੀ · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMi9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- ਐਪ ਡਾਇਰੈਕਟਰੀ · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder.mcpb
-- ਐਪ ਡਾਇਰੈਕਟਰੀ · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.2
-- ਐਪ ਡਾਇਰੈਕਟਰੀ · MCP v1.1.2 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/SHA256SUMS
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.3%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMy9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder.mcpb
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.3
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · MCP v1.1.3 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/SHA256SUMS
 - ਐਪ ਡਾਇਰੈਕਟਰੀ · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- ਐਪ ਡਾਇਰੈਕਟਰੀ · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder
-- ਐਪ ਡਾਇਰੈਕਟਰੀ · Agent Skill · pa-IN: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.1.2/skills/lumi-app-finder/references/pa-IN.json
-- ਐਪ ਡਾਇਰੈਕਟਰੀ · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user
-- ਐਪ ਡਾਇਰੈਕਟਰੀ · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent claude-code
-- ਐਪ ਡਾਇਰੈਕਟਰੀ · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent cursor
-- ਐਪ ਡਾਇਰੈਕਟਰੀ · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent codex
-- ਐਪ ਡਾਇਰੈਕਟਰੀ · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent gemini-cli
-- ਐਪ ਡਾਇਰੈਕਟਰੀ · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- ਐਪ ਡਾਇਰੈਕਟਰੀ · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
-- ਐਪ ਡਾਇਰੈਕਟਰੀ · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
-- ਐਪ ਡਾਇਰੈਕਟਰੀ · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Agent Skill · pa-IN: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.1.3/skills/lumi-app-finder/references/pa-IN.json
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent claude-code
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent cursor
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent codex
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent gemini-cli
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
 - [Aim990](https://alice51849.github.io/ios-app-guide/pa-IN/aim990.html) — TOEIC ਸਿੱਖਣ ਦਾ ਸਾਥੀ
   - ਆਪਣੀ TOEIC ਤਿਆਰੀ ਨੂੰ ਤੇਜ਼ੀ ਨਾਲ ਵਧਾਓ! Aim990 ਨਾਲ 30 ਦਿਨਾਂ ਦੀ ਸਿੱਖਣ ਯੋਜਨਾ ਦੇ ਨਾਲ ਸ਼ੁਰੂ ਕਰੋ!
@@ -33,7 +33,7 @@ apps: 29
 - [Aim990 Plus](https://alice51849.github.io/ios-app-guide/pa-IN/aim990plus.html) — ਦਬਾਅ ਵਿੱਚ ਤੇਜ਼ ਸਹੀ ਜਵਾਬ
   - ਪਹਿਲਾਂ 8 ਸਵਾਲਾਂ ਨਾਲ ਤਿਆਰੀ ਕਰੋ, ਫਿਰ 15 ਮਿੰਟਾਂ ਵਿੱਚ 20 ਸਵਾਲਾਂ ਦਾ ਦਬਾਅ ਸੰਭਾਲੋ ਅਤੇ ਅਖੀਰ ਵਿੱਚ ਗਲਤੀਆਂ ਦੁਹਰਾਓ—ਸੁਣਨ ਤੇ ਪੜ੍ਹਨ ਦੀ ਆਫ਼ਲਾਈਨ ਸਿਖਲਾਈ।
   - ਕੀਮਤ: ਇੱਕ ਨਿਸ਼ਚਿਤ ਅਗਾਊਂ ਕੀਮਤ ਵਾਲਾ ਭੁਗਤਾਨਯੋਗ ਡਾਊਨਲੋਡ, ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
-  - App Store: https://apps.apple.com/app/id6792483140
+  - App Store: https://apps.apple.com/in/app/id6792483140
 - [CV Desk: ATS ਰੇਜ਼ਿਊ ਬਿਲਡਰ](https://alice51849.github.io/ios-app-guide/pa-IN/cvdesk.html) — ATS ਰੈਜ਼ਿਊਮੇ · CV ਬਿਲਡਰ
   - ਰੈਜ਼ਿਊਮੇ ਜਾਂਚਣ ਵਾਲੇ ਰੋਬੋਟ ਹਰਾਓ! ਫ਼ੋਨ ਉੱਤੇ ਹੀ ATS ਸਕੋਰ ਦੇਖੋ, ਸੀਵੀ ਸੁਧਾਰੋ, ਫਿਰ ATS-ਅਨੁਕੂਲ PDF ਜਾਂ ਐਡਿਟ Word ਐਕਸਪੋਰਟ ਕਰੋ। ਨਿੱਜੀ, ਵਾਟਰਮਾਰਕ ਤੋਂ ਬਿਨਾਂ, ਇੱਕ ਵਾਰ ਖਰੀਦੋ।
   - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਹਮੇਸ਼ਾਂ ਲਈ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।

@@ -14,11 +14,11 @@
 >
 > ചോദ്യങ്ങൾ ഉദ്ദേശിച്ച ഉപയോഗ കേസുകളുടെ എഡിറ്റോറിയൽ വിവരണങ്ങളാണ്, അളക്കപ്പെട്ട തിരയൽ വോളിയം ഡാറ്റ, റാങ്കിംഗുകൾ, സ്വതന്ത്ര അവലോകനങ്ങൾ അല്ലെങ്കിൽ ഉപയോക്തൃ അംഗീകാരങ്ങൾ അല്ല
 
-## Lumi Studio പ്രസാധകന്റെ തിരയൽ ഉദ്ദേശ്യ കാറ്റലോഗ് · MCP v1.1.2 · Agent Skill
+## Lumi Studio പ്രസാധകന്റെ തിരയൽ ഉദ്ദേശ്യ കാറ്റലോഗ് · MCP v1.1.3 · Agent Skill
 
 ഓരോ ആപ്പും ആരെ ലക്ഷ്യമിട്ട് രൂപകൽപ്പന ചെയ്തതാണെന്ന്, അവർ പൂർത്തിയാക്കാൻ ശ്രമിക്കുന്ന ജോലി, നേരിട്ട് App Store വഴി എത്താനുള്ള വഴി എന്നിവയുടെ ആദ്യകക്ഷി കാറ്റലോഗ്
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.2%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMi9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.2) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.3%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMy9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.3) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -90,7 +90,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | ആപ്പ് | പ്രസാധകന്റെ ചോദ്യം | തീരുമാന സാഹചര്യങ്ങൾ | വാങ്ങൽ മോഡൽ | ഗൈഡ് | App Store |
 | --- | --- | --- | --- | --- | --- |
 | **Aim990** | ഐഫോണിനുള്ള മികച്ച TOEIC പ്രിപ് ആപ്പ് ഓഫ്‌ലൈൻ പഠന പദ്ധതി | പാർട്ട് 5 ചെറുതായി തോന്നാം, പക്ഷേ അവശേഷിച്ച വാക്യ ചോദ്യങ്ങൾ സമയം മുടക്കാം, വ്യാകരണം, വാക്ക് സമ്പത്ത് സ്വയം സജ്ജമല്ലെങ്കിൽ. | സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [App Store-ൽ Aim990 നേടുക →](https://apps.apple.com/in/app/id6784974530) |
-| **Aim990 Plus** | Aim990 Plus — ഇംഗ്ലീഷ് സമ്മർദ പരിശീലനം \| iOS App | Aim990 Plus മുതിർന്നവർക്ക് ഇംഗ്ലീഷ് കേൾവി, വായന, സമയനിയന്ത്രണം എന്നിവ ഏകാഗ്രമായി മെച്ചപ്പെടുത്താൻ രൂപകൽപ്പന ചെയ്ത സമ്മർദപരിശീലന ആപ്പാണ്. പാഠങ്ങൾ വെറുതെ | പണം നൽകേണ്ട ഡൗൺലോഡ് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/aim990plus.html) | [App Store-ൽ നിന്ന് Aim990 Plus നേടൂ](https://apps.apple.com/app/id6792483140) |
+| **Aim990 Plus** | Aim990 Plus — ഇംഗ്ലീഷ് സമ്മർദ പരിശീലനം \| iOS App | Aim990 Plus മുതിർന്നവർക്ക് ഇംഗ്ലീഷ് കേൾവി, വായന, സമയനിയന്ത്രണം എന്നിവ ഏകാഗ്രമായി മെച്ചപ്പെടുത്താൻ രൂപകൽപ്പന ചെയ്ത സമ്മർദപരിശീലന ആപ്പാണ്. പാഠങ്ങൾ വെറുതെ | പണം നൽകേണ്ട ഡൗൺലോഡ് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/aim990plus.html) | [App Store-ൽ നിന്ന് Aim990 Plus നേടൂ](https://apps.apple.com/in/app/id6792483140) |
 | **CV Desk** | 2026-ലെ കരിയർ മാറ്റം ചെയ്യുന്നവർക്കുള്ള മികച്ച റിസ്യൂം ബിൽഡർ ആപ്പ് | നിങ്ങൾ മേഖല മാറ്റുമ്പോൾ, റിസ്യൂം പ്രശ്നം വ്യത്യസ്തമാണ്: നിങ്ങളുടെ അനുഭവം യഥാർത്ഥമാണ്, പക്ഷേ പേപ്പറിൽ 'അസംബന്ധിതം' ആണ്, ATS ഫിൽട്ടറുകൾ മനുഷ്യൻ വായിക്കുന്നതിന് മുമ്പ് നിരസിക്കും — CV Desk ഇതിന് നിർമ്മിച്ചിരിക്കുന്നു. | സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-resume-builder-app-for-career-changers-2026.html) | [App Store-ൽ CV Desk നേടുക →](https://apps.apple.com/in/app/id6781337213) |
 | **Cyca** | അക്കൗണ്ട് ആവശ്യമില്ലാത്ത മികച്ച പീരിയഡ് ട്രാക്കർ ആപ്പ് iPhone | ഡാറ്റാ സങ്കീർണ്ണത മുഴുവൻ കഥയായ ഒരു വിഭാഗത്തിൽ, ശരിയായ പീരിയഡ് ട്രാക്കർ എല്ലാം — ഫ്ലോ, മനോഭാവം, ലക്ഷണങ്ങൾ, താപനില, അടുപ്പം — നിങ്ങളുടെ ഉപകരണത്തിൽ തന്നെ, അക്കൗണ്ടും ക്ലൗഡ് സിങ്കും ഇല്ലാതെ — Cyca ഇതിന് നിർമ്മിച്ചിരിക്കുന്നു. | സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-period-tracker-app-no-account-required-iphone.html) | [App Store-ൽ Cyca നേടുക →](https://apps.apple.com/in/app/id6782251621) |
 | **DailyMate** | ആപ്പിൾ വാച്ച് ഉള്ള യാത്രക്കാർക്കായി മികച്ച പ്രായോഗിക ഭാഷാ വാചക ആപ്പ് | ഒരു യാത്രയ്ക്ക് മുമ്പ്, യഥാർത്ഥ സാഹചര്യങ്ങൾക്ക് പൂർണ്ണ വാചകങ്ങൾ, സമ്മർദ്ദത്തിൽ നിങ്ങൾ സ്വയം ചേർക്കേണ്ടിവരുന്ന വേർതിരിച്ച വാക്കുകളേക്കാൾ കൂടുതൽ പ്രയോജനകരമാണ് — ഡെയിലിമേറ്റ് ഇതിന് രൂപകൽപ്പന ചെയ്തതാണ്. | പണം നൽകേണ്ട ഡൗൺലോഡ് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [App Store-ൽ നിന്ന് ഡെയിലിമേറ്റ് നേടുക →](https://apps.apple.com/in/app/id6790418321) |
@@ -129,6 +129,6 @@ JSON, JSONL, CSV എന്നിവയിൽ ഒരേ 1,450 രേഖകൾ ഉ
 
 [ഹോം](https://alice51849.github.io/ios-app-guide/ml-IN/index.html) · [തുറന്ന ഡാറ്റ](https://alice51849.github.io/ios-app-guide/ml-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ലൈസൻസ്](https://creativecommons.org/licenses/by/4.0/)
 
-അപ്ഡേറ്റ് ചെയ്തത്: 2026-07-21
+അപ്ഡേറ്റ് ചെയ്തത്: 2026-07-22
 
 CC BY 4.0 യഥാർത്ഥ കാറ്റലോഗ് സംയോജനത്തിന് ബാധകമാണ്; ആപ്പ് നാമങ്ങളും App Store മാർക്കുകളും അവയുടെ ഉടമകളുടെതാണ്

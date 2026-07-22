@@ -14,11 +14,11 @@ Danh mục do chính nhà phát triển công bố, cho biết từng ứng dụ
 >
 > Các truy vấn là phần mô tả biên tập về trường hợp sử dụng dự kiến, không phải dữ liệu lượng tìm kiếm đã đo, bảng xếp hạng, đánh giá độc lập hay lời chứng thực của người dùng.
 
-## Danh mục ý định tìm kiếm của nhà phát hành Lumi Studio · MCP v1.1.2 · Agent Skill
+## Danh mục ý định tìm kiếm của nhà phát hành Lumi Studio · MCP v1.1.3 · Agent Skill
 
 Danh mục do chính nhà phát triển công bố, cho biết từng ứng dụng dành cho ai, nhiệm vụ họ muốn hoàn thành và lối truy cập trực tiếp đến App Store.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.2%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMi9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.2) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.3%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMy9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.3) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@ Danh mục do chính nhà phát triển công bố, cho biết từng ứng dụ
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -90,7 +90,7 @@ Sắp xếp theo bảng chữ cái tên ứng dụng — không phải xếp h�
 | Ứng dụng | Truy vấn của nhà phát hành | Bối cảnh quyết định | Mô hình mua hàng | Hướng dẫn | App Store |
 | --- | --- | --- | --- | --- | --- |
 | **Aim990** | ứng dụng luyện thi TOEIC tốt nhất không cần mạng với kế hoạch học cho iPhone | Phần 5 có vẻ ngắn, nhưng các câu hỏi câu chưa hoàn chỉnh có thể tốn thời gian nếu ngữ pháp và từ vựng không thành thạo. | Bắt đầu miễn phí · mở khóa vĩnh viễn | [Hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Tải Aim990 trên App Store →](https://apps.apple.com/vn/app/id6784974530) |
-| **Aim990 Plus** | Aim990 Plus — Tập trung nhanh dưới áp lực \| iOS App | Rèn khả năng sử dụng tiếng Anh trong điều kiện đòi hỏi sự tập trung cao: thời gian có hạn, chuỗi câu hỏi dài và áp lực phải giữ độ chính xác. Aim990 Plus | Tải xuống trả phí | [Hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/aim990plus.html) | [Tải Aim990 Plus trên App Store](https://apps.apple.com/app/id6792483140) |
+| **Aim990 Plus** | Aim990 Plus — Tập trung nhanh dưới áp lực \| iOS App | Rèn khả năng sử dụng tiếng Anh trong điều kiện đòi hỏi sự tập trung cao: thời gian có hạn, chuỗi câu hỏi dài và áp lực phải giữ độ chính xác. Aim990 Plus | Tải xuống trả phí | [Hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/aim990plus.html) | [Tải Aim990 Plus trên App Store](https://apps.apple.com/vn/app/id6792483140) |
 | **CV Desk** | ứng dụng tạo hồ sơ xin việc tốt nhất cho người đổi nghề 2026 | Khi bạn chuyển ngành, vấn đề hồ sơ khác: kinh nghiệm thật nhưng trên giấy tờ là 'không liên quan', và bộ lọc ATS loại bạn trước khi người đọc thấy — CV Desk được xây dựng cho điều này. | Bắt đầu miễn phí · mở khóa vĩnh viễn | [Hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-resume-builder-app-for-career-changers-2026.html) | [Tải CV Desk trên App Store →](https://apps.apple.com/vn/app/id6781337213) |
 | **Cyca** | ứng dụng theo dõi chu kỳ kinh nguyệt tốt nhất không cần tài khoản cho iPhone | Trong lĩnh vực nhạy cảm về dữ liệu, ứng dụng theo dõi chu kỳ đúng đắn giữ mọi thứ — lưu lượng, tâm trạng, triệu chứng, nhiệt độ, quan hệ — trên thiết bị của bạn, không cần tài khoản và không đồng bộ đám mây — Cyca được xây dựng cho điều này. | Bắt đầu miễn phí · mở khóa vĩnh viễn | [Hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-period-tracker-app-no-account-required-iphone.html) | [Tải Cyca trên App Store →](https://apps.apple.com/vn/app/id6782251621) |
 | **DailyMate** | ứng dụng cụm từ ngôn ngữ thực tế tốt nhất cho khách du lịch có Apple Watch | Trước chuyến đi, các cụm từ hoàn chỉnh cho tình huống thực tế hữu ích hơn từ vựng rời rạc mà bạn vẫn phải ghép lại khi áp lực — DailyMate được thiết kế cho điều này. | Tải xuống trả phí | [Hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Tải DailyMate trên App Store →](https://apps.apple.com/vn/app/id6790418321) |
@@ -129,6 +129,6 @@ JSON, JSONL và CSV chứa cùng 1.450 bản ghi.
 
 [Trang chủ](https://alice51849.github.io/ios-app-guide/vi/index.html) · [Dữ liệu mở](https://alice51849.github.io/ios-app-guide/vi/data/lumi-studio-publisher-search-intent-catalog.html) · [Giấy phép](https://creativecommons.org/licenses/by/4.0/)
 
-Cập nhật: 2026-07-21
+Cập nhật: 2026-07-22
 
 CC BY 4.0 áp dụng cho bản tổng hợp danh mục gốc; tên ứng dụng và nhãn hiệu App Store thuộc sở hữu của chủ sở hữu tương ứng.

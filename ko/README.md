@@ -14,11 +14,11 @@ App Store 제공 여부를 확인한 29개 iOS 앱과 Apple의 50개 언어·지
 >
 > 검색어는 예상 사용 사례를 편집 기준에 따라 설명한 것이며, 실제 측정된 검색량 데이터, 순위, 독립 리뷰 또는 사용자 추천이 아닙니다.
 
-## Lumi Studio 개발사 검색 의도 카탈로그 · MCP v1.1.2 · Agent Skill
+## Lumi Studio 개발사 검색 의도 카탈로그 · MCP v1.1.3 · Agent Skill
 
 각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.2%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMi9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.2) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.3%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMy9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.3) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@ App Store 제공 여부를 확인한 29개 iOS 앱과 Apple의 50개 언어·지
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -90,7 +90,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 | 앱 | 개발사 검색어 | 의사결정 맥락 | 구매 방식 | 가이드 | App Store |
 | --- | --- | --- | --- | --- | --- |
 | **Aim990** | 아이폰용 오프라인 토익 준비 앱 최고의 학습 계획 | 파트 5는 짧아 보이지만, 문장이 완성되지 않은 문제들이 문법과 어휘가 자동화되지 않으면 시간을 많이 소모할 수 있습니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [앱 스토어에서 Aim990 받기 →](https://apps.apple.com/kr/app/id6784974530) |
-| **Aim990 Plus** | Aim990 Plus — 15분 완성 7개 영역 집중 \| iOS App | 많이 푸는 데서 멈추지 않고, 제한된 시간 안에 정확히 판단하는 힘까지 기르세요. | 유료 다운로드 | [가이드](https://alice51849.github.io/ios-app-guide/ko/aim990plus.html) | [App Store에서 Aim990 Plus 받기](https://apps.apple.com/app/id6792483140) |
+| **Aim990 Plus** | Aim990 Plus — 15분 완성 7개 영역 집중 \| iOS App | 많이 푸는 데서 멈추지 않고, 제한된 시간 안에 정확히 판단하는 힘까지 기르세요. | 유료 다운로드 | [가이드](https://alice51849.github.io/ios-app-guide/ko/aim990plus.html) | [App Store에서 Aim990 Plus 받기](https://apps.apple.com/kr/app/id6792483140) |
 | **CV Desk** | 2026년 경력 전환자를 위한 최고의 이력서 작성 앱 | 분야를 바꿀 때 이력서 문제는 다릅니다: 경험은 실제지만 서류상 '관련 없음'으로 ATS 필터가 인간 검토 전에 걸러냅니다 — CV Desk는 이를 위해 만들어졌습니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-resume-builder-app-for-career-changers-2026.html) | [앱 스토어에서 CV Desk 받기 →](https://apps.apple.com/kr/app/id6781337213) |
 | **Cyca** | 계정 없이 사용할 수 있는 최고의 생리 주기 추적 앱 아이폰용 | 데이터 민감도가 중요한 카테고리에서 올바른 생리 주기 추적기는 흐름, 기분, 증상, 온도, 친밀감 등 모든 정보를 계정 없이 기기에만 보관하며 클라우드 동기화가 없습니다 — Cyca는 이를 위해 만들어졌습니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-period-tracker-app-no-account-required-iphone.html) | [앱 스토어에서 Cyca 받기 →](https://apps.apple.com/kr/app/id6782251621) |
 | **DailyMate** | 애플 워치와 함께 여행자에게 가장 실용적인 언어 회화 앱 | 여행 전, 실제 상황에 맞는 완전한 문장이 압박 속에 조합해야 하는 단어보다 더 유용합니다 — DailyMate는 이를 위해 만들어졌습니다. | 유료 다운로드 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [App Store에서 DailyMate 받기 →](https://apps.apple.com/kr/app/id6790418321) |
@@ -129,6 +129,6 @@ JSON, JSONL, CSV 모두 동일한 1,450개 기록을 포함합니다.
 
 [홈](https://alice51849.github.io/ios-app-guide/ko/index.html) · [오픈 데이터](https://alice51849.github.io/ios-app-guide/ko/data/lumi-studio-publisher-search-intent-catalog.html) · [라이선스](https://creativecommons.org/licenses/by/4.0/)
 
-업데이트 날짜: 2026-07-21
+업데이트 날짜: 2026-07-22
 
 CC BY 4.0은 원본 카탈로그 편집에 적용되며, 앱 이름과 App Store 마크는 각 소유자의 권리입니다.

@@ -14,11 +14,11 @@ Intentions de recherche rédigées par l’éditeur pour 29 apps iOS vérifiées
 >
 > Les requêtes sont des descriptions éditoriales des cas d’utilisation prévus, et non des données mesurées de volume de recherche, des classements, des avis indépendants ou des recommandations d’utilisateurs.
 
-## Catalogue des intentions de recherche de l’éditeur Lumi Studio · MCP v1.1.2 · Agent Skill
+## Catalogue des intentions de recherche de l’éditeur Lumi Studio · MCP v1.1.3 · Agent Skill
 
 Un catalogue publié directement par le développeur qui indique à qui chaque app est destinée, la tâche à accomplir et l’accès direct à l’App Store.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.2%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMi9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.2) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.3%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMy9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.3) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@ Un catalogue publié directement par le développeur qui indique à qui chaque a
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.2 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.2/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.2/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -90,7 +90,7 @@ Ordre alphabétique par nom d’app — jamais un classement.
 | App | Requête de l’éditeur | Contexte décisionnel | Modèle d’achat | Guide | App Store |
 | --- | --- | --- | --- | --- | --- |
 | **Aim990** | meilleure application de préparation TOEIC plan d'étude hors ligne pour iPhone | La partie 5 semble courte, mais ces questions à phrase incomplète peuvent prendre du temps si la grammaire et le vocabulaire ne sont pas automatiques. | Gratuit au départ · déverrouillage définitif | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Obtenez Aim990 sur l’App Store →](https://apps.apple.com/ca/app/id6784974530) |
-| **Aim990 Plus** | Aim990 Plus — Défis chronométrés d’anglais \| iOS App | Renforcez votre compréhension de l’anglais avec des séances structurées pour la réalité d’un horaire chargé. Aim990 Plus s’adresse aux adultes qui | Téléchargement payant | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/aim990plus.html) | [Obtenir Aim990 Plus sur l'App Store](https://apps.apple.com/app/id6792483140) |
+| **Aim990 Plus** | Aim990 Plus — Défis chronométrés d’anglais \| iOS App | Renforcez votre compréhension de l’anglais avec des séances structurées pour la réalité d’un horaire chargé. Aim990 Plus s’adresse aux adultes qui | Téléchargement payant | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/aim990plus.html) | [Obtenir Aim990 Plus sur l'App Store](https://apps.apple.com/ca/app/id6792483140) |
 | **CV Desk** | meilleure application de création de CV pour les reconversions professionnelles 2026 | Quand vous changez de domaine, le problème du CV est différent : votre expérience est réelle mais « non liée » sur papier, et les filtres ATS vous rejettent avant qu’un humain ne le lise — CV Desk est conçu pour cela. | Gratuit au départ · déverrouillage définitif | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-resume-builder-app-for-career-changers-2026.html) | [Obtenez CV Desk sur l’App Store →](https://apps.apple.com/ca/app/id6781337213) |
 | **Cyca** | meilleure application de suivi des règles sans compte requis iPhone | Dans une catégorie où la sensibilité des données est primordiale, le bon suivi des règles garde tout — flux, humeur, symptômes, température, intimité — sur votre appareil, sans compte ni synchronisation cloud — Cyca est conçu pour cela. | Gratuit au départ · déverrouillage définitif | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-period-tracker-app-no-account-required-iphone.html) | [Obtenez Cyca sur l’App Store →](https://apps.apple.com/ca/app/id6782251621) |
 | **DailyMate** | meilleure application de phrases utiles en voyage avec Apple Watch | Avant un voyage, des phrases complètes pour des situations réelles sont plus utiles que du vocabulaire isolé que vous devez encore assembler sous pression — DailyMate est conçu pour cela. | Téléchargement payant | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Obtenez DailyMate sur l’App Store →](https://apps.apple.com/ca/app/id6790418321) |
@@ -129,6 +129,6 @@ JSON, JSONL et CSV contiennent les mêmes 1 450 enregistrements.
 
 [Accueil](https://alice51849.github.io/ios-app-guide/fr-CA/index.html) · [Données ouvertes](https://alice51849.github.io/ios-app-guide/fr-CA/data/lumi-studio-publisher-search-intent-catalog.html) · [Licence](https://creativecommons.org/licenses/by/4.0/)
 
-Mis à jour: 2026-07-21
+Mis à jour: 2026-07-22
 
 La licence CC BY 4.0 s’applique à la compilation originale du catalogue ; les noms d’app et marques App Store appartiennent à leurs propriétaires.

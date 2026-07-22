@@ -44,9 +44,14 @@ class PortfolioOfferCatalogTests(unittest.TestCase):
         }
 
     def test_payloads_cover_every_app_and_official_locale(self):
-        self.assertEqual(50, self.index["locale_count"])
-        self.assertEqual(29, self.index["app_count"])
-        self.assertEqual(1450, self.index["offer_count"])
+        expected_app_count = len(self.apps)
+        expected_locale_count = len(OFFICIAL_LOCALES)
+        self.assertEqual(expected_locale_count, self.index["locale_count"])
+        self.assertEqual(expected_app_count, self.index["app_count"])
+        self.assertEqual(
+            expected_app_count * expected_locale_count,
+            self.index["offer_count"],
+        )
         self.assertEqual(set(OFFICIAL_LOCALES), set(self.catalogs))
         self.assertGreater(self.index["price_verified_offer_count"], 0)
         self.assertLessEqual(
@@ -59,9 +64,9 @@ class PortfolioOfferCatalogTests(unittest.TestCase):
             self.assertEqual("https://schema.org", catalog["@context"])
             self.assertEqual("OfferCatalog", catalog["@type"])
             self.assertEqual(locale, catalog["inLanguage"])
-            self.assertEqual(29, catalog["numberOfItems"])
+            self.assertEqual(expected_app_count, catalog["numberOfItems"])
             items = catalog["itemListElement"]
-            self.assertEqual(list(range(1, 30)), [
+            self.assertEqual(list(range(1, expected_app_count + 1)), [
                 item["position"] for item in items
             ])
             self.assertEqual(

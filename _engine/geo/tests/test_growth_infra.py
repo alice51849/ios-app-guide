@@ -20082,7 +20082,14 @@ class GeneratorTests(unittest.TestCase):
             for page in (Path(build_pages_i18n.PAGES) / "stories").glob("*.html")
             if page.name != "index.html"
         )
-        self.assertEqual(29, len(story_keys))
+        live_keys = set(
+            gen_webstories.live_app_keys(
+                APPSTORE,
+                build_pages_i18n.PAGES,
+                refresh=False,
+            )
+        )
+        self.assertEqual(live_keys, set(story_keys))
         for key in story_keys:
             self.assertEqual(
                 list(OFFICIAL_LOCALES),
@@ -20172,12 +20179,22 @@ class GeneratorTests(unittest.TestCase):
 
     def test_published_webstories_pass_complete_matrix_gate(self):
         result = validate_webstories.validate_site()
+        app_count = len(
+            gen_webstories.live_app_keys(
+                APPSTORE,
+                build_pages_i18n.PAGES,
+                refresh=False,
+            )
+        )
+        locale_count = len(OFFICIAL_LOCALES)
         self.assertEqual(
             {
-                "apps": 29,
-                "locales": 50,
-                "localized_stories": 1450,
-                "sitemap_urls": 1530,
+                "apps": app_count,
+                "locales": locale_count,
+                "localized_stories": app_count * locale_count,
+                "sitemap_urls": (
+                    app_count * (locale_count + 1) + locale_count + 1
+                ),
             },
             result,
         )
@@ -20195,6 +20212,7 @@ class GeneratorTests(unittest.TestCase):
             "tripbee",
             "wordmate",
             "dailymate",
+            "wifiaid",
         }
         free_with_unlock = {
             "sononote",
@@ -20217,6 +20235,8 @@ class GeneratorTests(unittest.TestCase):
             "tripplanet",
             "sereno",
             "tripbeelite",
+            "maskmyfile",
+            "mochidonestamp",
         }
         self.assertEqual(paid_upfront | free_with_unlock, set(APPS))
         for key in paid_upfront:

@@ -22890,6 +22890,20 @@ class GeneratorTests(unittest.TestCase):
         hub = gen_hubs.build_hub("lumibopomofo")
         self.assertNotIn('"price":"0"', hub)
         self.assertIn(
+            '<meta property="og:image" content="'
+            "https://alice51849.github.io/ios-app-guide/"
+            'stories/img/lumibopomofo-icon.jpg">',
+            hub,
+        )
+        self.assertIn('<meta name="twitter:card" content="summary">', hub)
+        self.assertIn(
+            '<meta name="twitter:image" content="'
+            "https://alice51849.github.io/ios-app-guide/"
+            'stories/img/lumibopomofo-icon.jpg">',
+            hub,
+        )
+        self.assertNotIn("lumibopomofo-share.jpg", hub)
+        self.assertIn(
             'hreflang="zh-Hant" '
             'href="https://alice51849.github.io/ios-app-guide/'
             'zh-Hant/hubs/lumibopomofo.html"',
@@ -22899,6 +22913,24 @@ class GeneratorTests(unittest.TestCase):
             len(OFFICIAL_LOCALES) + 1,
             hub.count('rel="alternate" hreflang='),
         )
+
+    def test_published_root_topic_hubs_preserve_feed_discovery(self):
+        root = Path(gen_hubs.PAGES) / "hubs"
+        live = set(
+            gen_hubs.live_app_keys(
+                gen_hubs.APPSTORE,
+                gen_hubs.PAGES,
+                refresh=False,
+            )
+        )
+        paths = [root / "index.html"]
+        paths.extend(root / f"{key}.html" for key in sorted(live))
+        for path in paths:
+            with self.subTest(path=path):
+                source = path.read_text(encoding="utf-8")
+                self.assertEqual(1, source.count('type="application/atom+xml"'))
+                self.assertEqual(1, source.count('type="application/rss+xml"'))
+                self.assertEqual(1, source.count('type="application/feed+json"'))
 
     def test_topic_hub_reuses_native_copy_for_localized_install_pages(self):
         app_id = gen_hubs.APPSTORE["hourstag"]
@@ -22924,6 +22956,35 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("前往 App Store 查看", hub)
         self.assertIn("https://apps.apple.com/tw/app/id6754218117", hub)
         self.assertIn("/zh-Hant/answers/", hub)
+        self.assertIn('<meta property="og:locale" content="zh_TW">', hub)
+        self.assertIn(
+            '<meta property="og:title" '
+            'content="HoursTag：價格換工時 · 常見問題">',
+            hub,
+        )
+        self.assertIn(
+            '<meta property="og:description" '
+            'content="這真正要花你多少？不是多少錢——是你生命中的幾個小時。">',
+            hub,
+        )
+        self.assertIn(
+            '<meta property="og:image" content="'
+            "https://alice51849.github.io/ios-app-guide/"
+            'stories/img/hourstag-icon.jpg">',
+            hub,
+        )
+        self.assertIn(
+            '<meta name="twitter:title" '
+            'content="HoursTag：價格換工時 · 常見問題">',
+            hub,
+        )
+        self.assertIn(
+            '<meta name="twitter:image" content="'
+            "https://alice51849.github.io/ios-app-guide/"
+            'stories/img/hourstag-icon.jpg">',
+            hub,
+        )
+        self.assertNotIn("hourstag-share.jpg", hub)
         self.assertIn("white-space:nowrap", hub)
         self.assertNotIn('"price"', hub)
         self.assertEqual(
@@ -22966,6 +23027,15 @@ class GeneratorTests(unittest.TestCase):
         for locale in OFFICIAL_LOCALES:
             for key in live:
                 name, description = gen_hubs.localized_page_copy(key, locale)
+                title = f"{name} · {gen_hubs._ui_text(locale, 'faq_title')}"
+                metadata = gen_hubs._social_metadata(
+                    key,
+                    title,
+                    description,
+                    gen_hubs.hub_url(key, locale),
+                    name,
+                    locale,
+                )
                 answers = gen_hubs.localized_answer_links(
                     key,
                     locale,
@@ -22973,6 +23043,25 @@ class GeneratorTests(unittest.TestCase):
                 )
                 self.assertTrue(name, (locale, key))
                 self.assertTrue(description, (locale, key))
+                self.assertIn(
+                    f"{gen_hubs.SITE}/stories/img/{key}-icon.jpg",
+                    metadata,
+                )
+                self.assertIn(
+                    f'<meta property="og:locale" '
+                    f'content="{gen_hubs.open_graph_locale(locale)}">',
+                    metadata,
+                )
+                self.assertIn(
+                    f'<meta name="twitter:title" '
+                    f'content="{html.escape(title)}">',
+                    metadata,
+                )
+                self.assertTrue(
+                    (Path(gen_hubs.PAGES) / "stories" / "img" / f"{key}-icon.jpg").is_file(),
+                    (locale, key),
+                )
+                self.assertNotIn("-share.jpg", metadata)
                 rich += int(bool(answers))
                 fallback += int(not answers)
                 checked += 1

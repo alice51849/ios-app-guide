@@ -23,7 +23,7 @@ from app_store_storefronts import (  # noqa: E402
     verified_app_store_url,
 )
 from appstore_live import live_app_keys  # noqa: E402
-from official_locales import OFFICIAL_LOCALES  # noqa: E402
+from official_locales import OFFICIAL_LOCALES, open_graph_locale  # noqa: E402
 from portfolio_app_finder import RTL_LOCALES, UI  # noqa: E402
 import queries  # noqa: E402
 
@@ -197,6 +197,38 @@ def _schema_json(value):
     ).replace("</", "<\\/")
 
 
+def _app_icon_url(key):
+    if key not in APPSTORE:
+        raise ValueError(f"Unknown app key: {key}")
+    return f"{SITE}/stories/img/{key}-icon.jpg"
+
+
+def _social_metadata(key, title, description, canonical, image_alt, locale):
+    e = html.escape
+    image_url = _app_icon_url(key)
+    return "\n".join(
+        (
+            '<meta property="og:type" content="website">',
+            f'<meta property="og:title" content="{e(title)}">',
+            f'<meta property="og:description" content="{e(description)}">',
+            f'<meta property="og:url" content="{e(canonical)}">',
+            f'<meta property="og:image" content="{e(image_url)}">',
+            f'<meta property="og:image:secure_url" content="{e(image_url)}">',
+            '<meta property="og:image:type" content="image/jpeg">',
+            '<meta property="og:image:width" content="256">',
+            '<meta property="og:image:height" content="256">',
+            f'<meta property="og:image:alt" content="{e(image_alt)}">',
+            f'<meta property="og:locale" content="{open_graph_locale(locale)}">',
+            '<meta property="og:site_name" content="iOS App Guide">',
+            '<meta name="twitter:card" content="summary">',
+            f'<meta name="twitter:title" content="{e(title)}">',
+            f'<meta name="twitter:description" content="{e(description)}">',
+            f'<meta name="twitter:image" content="{e(image_url)}">',
+            f'<meta name="twitter:image:alt" content="{e(image_alt)}">',
+        )
+    )
+
+
 def build_localized_hub(key, locale, availability=None):
     if locale not in OFFICIAL_LOCALES:
         raise ValueError(f"Unsupported hub locale: {locale}")
@@ -218,6 +250,14 @@ def build_localized_hub(key, locale, availability=None):
     )
     section_label = questions_label if answers else why_label
     title = f"{name} · {section_label}"
+    social_metadata = _social_metadata(
+        key,
+        title,
+        description,
+        canon,
+        name,
+        locale,
+    )
     resources = answers or [(guide_url, guide_label)]
     resources_html = "".join(
         f'<a href="{e(url)}">{e(resource_title)}</a>'
@@ -258,9 +298,7 @@ def build_localized_hub(key, locale, availability=None):
 <meta name="description" content="{e(description)}">
 <link rel="canonical" href="{canon}">
 {hreflang_links(key)}
-<meta property="og:type" content="website"><meta property="og:title" content="{e(title)}">
-<meta property="og:description" content="{e(description)}"><meta property="og:url" content="{canon}">
-<meta name="twitter:card" content="summary">
+{social_metadata}
 <style>{STYLE}</style>
 <script type="application/ld+json">{_schema_json(schema)}</script>
 </head><body>
@@ -280,6 +318,19 @@ def build_hub(key):
     sub = (a.get("sub") or a.get("tag") or "").strip()
     url = appstore_url(key, "iag_hub") or f"{SITE}/en-US/{key}.html"
     canon = hub_url(key)
+    title = f"{name}: guides, answers & alternatives | iOS App Guide"
+    description = (
+        f"Everything about {name} — {sub}. Buying guides, answers to common "
+        "questions, comparisons and the App Store link."
+    )
+    social_metadata = _social_metadata(
+        key,
+        title,
+        description,
+        canon,
+        name,
+        "en-US",
+    )
 
     # answer pages (this app), existing only, with titles
     ans = []
@@ -313,10 +364,11 @@ def build_hub(key):
 
     return f'''<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{e(name)}: guides, answers & alternatives | iOS App Guide</title>
-<meta name="description" content="Everything about {e(name)} — {e(sub)}. Buying guides, answers to common questions, comparisons and the App Store link.">
+<title>{e(title)}</title>
+<meta name="description" content="{e(description)}">
 <link rel="canonical" href="{canon}">
 {hreflang_links(key)}
+{social_metadata}
 <style>{STYLE}</style>
 <script type="application/ld+json">{{"@context":"https://schema.org","@type":"CollectionPage","name":"{e(name)} resources","url":"{canon}","about":{{"@type":"SoftwareApplication","name":"{e(name)}","operatingSystem":"iOS","applicationCategory":"MobileApplication"}}}}</script>
 </head><body>

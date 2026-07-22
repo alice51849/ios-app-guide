@@ -36,7 +36,11 @@ from app_store_storefronts import (  # noqa: E402
     verified_app_store_url,
 )
 import gen_linkset  # noqa: E402
-from official_locales import OFFICIAL_LOCALES  # noqa: E402
+from official_locales import (  # noqa: E402
+    OFFICIAL_LOCALES,
+    OPEN_GRAPH_LOCALES,
+    open_graph_locale as _open_graph_locale,
+)
 from videogen.registry import APPSTORE  # noqa: E402
 
 
@@ -55,58 +59,6 @@ OEMBED_SIZE = (
 SOCIAL_RATING_MIN_VALUE = PROMOTIONAL_RATING_MIN_VALUE
 SOCIAL_RATING_MIN_COUNT = PROMOTIONAL_RATING_MIN_COUNT
 SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
-OPEN_GRAPH_LOCALES = {
-    "ar-SA": "ar_SA",
-    "bn-BD": "bn_BD",
-    "ca": "ca_ES",
-    "cs": "cs_CZ",
-    "da": "da_DK",
-    "de-DE": "de_DE",
-    "el": "el_GR",
-    "en-AU": "en_AU",
-    "en-CA": "en_CA",
-    "en-GB": "en_GB",
-    "en-US": "en_US",
-    "es-ES": "es_ES",
-    "es-MX": "es_MX",
-    "fi": "fi_FI",
-    "fr-CA": "fr_CA",
-    "fr-FR": "fr_FR",
-    "gu-IN": "gu_IN",
-    "he": "he_IL",
-    "hi": "hi_IN",
-    "hr": "hr_HR",
-    "hu": "hu_HU",
-    "id": "id_ID",
-    "it": "it_IT",
-    "ja": "ja_JP",
-    "kn-IN": "kn_IN",
-    "ko": "ko_KR",
-    "ml-IN": "ml_IN",
-    "mr-IN": "mr_IN",
-    "ms": "ms_MY",
-    "nl-NL": "nl_NL",
-    "no": "no_NO",
-    "or-IN": "or_IN",
-    "pa-IN": "pa_IN",
-    "pl": "pl_PL",
-    "pt-BR": "pt_BR",
-    "pt-PT": "pt_PT",
-    "ro": "ro_RO",
-    "ru": "ru_RU",
-    "sk": "sk_SK",
-    "sl-SI": "sl_SI",
-    "sv": "sv_SE",
-    "ta-IN": "ta_IN",
-    "te-IN": "te_IN",
-    "th": "th_TH",
-    "tr": "tr_TR",
-    "uk": "uk_UA",
-    "ur-PK": "ur_PK",
-    "vi": "vi_VN",
-    "zh-Hans": "zh_CN",
-    "zh-Hant": "zh_TW",
-}
 ROBOTS_DIRECTIVE = (
     "index,follow,max-image-preview:large,"
     "max-snippet:-1,max-video-preview:-1"
@@ -271,16 +223,6 @@ def _campaign_store_url(store_url: str, campaign: str) -> str:
 
 def _oembed_campaign(locale: str) -> str:
     return f"iag_oembed_{locale.replace('-', '_').lower()}"
-
-
-def _open_graph_locale(locale: str) -> str:
-    try:
-        value = OPEN_GRAPH_LOCALES[locale]
-    except KeyError as error:
-        raise ValueError(f"Unsupported Open Graph locale: {locale}") from error
-    if not re.fullmatch(r"[a-z]{2,3}_[A-Z]{2}", value):
-        raise ValueError(f"Invalid Open Graph locale mapping: {locale}={value}")
-    return value
 
 
 def _storefront_detail(

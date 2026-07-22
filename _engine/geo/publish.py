@@ -100,6 +100,7 @@ def main():
     require([PY, os.path.join(HERE, "toeic_study_allocation_planner.py")], env=env)
     require([PY, os.path.join(HERE, "wordmate_language_support.py")], env=env)
     require([PY, os.path.join(HERE, "portfolio_app_finder.py")], env=env)
+    require([PY, os.path.join(HERE, "gen_hubs.py")], env=env)
     require([PY, os.path.join(HERE, "portfolio_cost_calculator.py")], env=env)
     require([PY, os.path.join(HERE, "outreach_scorecard.py")], env=env)
     require([PY, os.path.join(HERE, "gen_data_hub.py")], env=env)

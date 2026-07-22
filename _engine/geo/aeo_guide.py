@@ -29,6 +29,7 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
+from answer_personas import PERSONAS  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 GUIDES = os.path.join(PAGES, "guides")
@@ -131,6 +132,36 @@ def gen_content(key):
             '"faqs": [{"q":"high-intent question","a":"answer that names the app, 1-3 sentences"}] }. '
             "Provide exactly 5 faqs. Natural, useful, citation-worthy. No hype, no fake numbers.")
     return openai_json(SYS, user)
+
+
+def deterministic_content(key):
+    """Build a truthful guide from the reviewed persona when no guide exists."""
+    app = APPS[key]
+    entries = PERSONAS.get(key) or []
+    if not entries:
+        raise ValueError(f"Missing reviewed buyer persona for {key}")
+    persona = entries[0]
+    lead = str(persona["lead"]).strip()
+    meta = lead
+    if len(meta) > 155:
+        meta = meta[:155].rsplit(" ", 1)[0].rstrip(" ,;:-") + "…"
+    paragraphs = [str(value).strip() for value in persona.get("paras", [])]
+    intro = " ".join([lead, *paragraphs[:1]])
+    fits = str(persona["fits"]).strip()
+    why = f"{app['name']} {fits}"
+    if len(paragraphs) > 1:
+        why += f" {paragraphs[1]}"
+    return {
+        "title": persona.get(
+            "guide_title",
+            f"{app['name']}: what to check in an iPhone app",
+        ),
+        "meta": meta,
+        "intro": intro,
+        "criteria": list(persona.get("look", []))[:6],
+        "why": why,
+        "faqs": list(persona.get("faq", [])),
+    }
 
 
 def render(key, c):
@@ -238,6 +269,11 @@ def publish(urls):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("apps", nargs="*")
+    ap.add_argument(
+        "--missing",
+        action="store_true",
+        help="Generate only missing guides from reviewed local persona data.",
+    )
     ap.add_argument("--publish", action="store_true")
     args = ap.parse_args()
     live_keys = live_app_keys(APPSTORE, PAGES, refresh=False)
@@ -249,11 +285,16 @@ def main():
     os.makedirs(GUIDES, exist_ok=True)
     urls = []
     for k in keys:
+        target = os.path.join(GUIDES, f"{k}.html")
+        if args.missing and os.path.exists(target):
+            continue
         try:
-            c = gen_content(k)
+            c = deterministic_content(k) if args.missing else gen_content(k)
         except Exception as ex:  # noqa: BLE001
+            if args.missing:
+                raise
             print(f"  ! {k}: {str(ex)[:70]}"); continue
-        open(os.path.join(GUIDES, f"{k}.html"), "w", encoding="utf-8").write(render(k, c))
+        open(target, "w", encoding="utf-8").write(render(k, c))
         urls.append(f"{SITE}/guides/{k}.html")
         print(f"  ✓ {APPS[k]['name']}: {c.get('title','')[:50]}")
     write_sitemap()

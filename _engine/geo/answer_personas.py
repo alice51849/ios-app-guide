@@ -1537,6 +1537,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
     "maskmyfile": [
         {
             "query": "best on-device file redaction app for freelancers sharing client documents",
+            "guide_title": "On-device file redaction for iPhone: what to check",
             "triggers": [
                 "on-device file redaction",
                 "redact client documents",
@@ -1584,6 +1585,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
     "wifiaid": [
         {
             "query": "best wifi troubleshooting app for remote workers with connected but no internet",
+            "guide_title": "Wi-Fi troubleshooting on iPhone: what to check",
             "triggers": [
                 "wifi troubleshooting for remote workers",
                 "connected but no internet",

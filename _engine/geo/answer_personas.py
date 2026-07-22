@@ -1534,6 +1534,53 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         },
     ],
+    "wifiaid": [
+        {
+            "query": "best wifi troubleshooting app for remote workers with connected but no internet",
+            "triggers": [
+                "wifi troubleshooting for remote workers",
+                "connected but no internet",
+                "wifi connected no internet",
+                "hotel wifi not working",
+                "is one website down",
+            ],
+            "persona": "remote workers and travellers diagnosing connection failures",
+            "lead": "When Wi-Fi says connected but work still cannot get online, the useful first step is to identify whether the failure is DNS, the wider internet, instability or one destination instead of guessing.",
+            "paras": [
+                "A useful diagnostic should run independent Wi-Fi, DNS, internet, TCP and TLS checks, then separate a single-site failure from a wider outage. Timing and repeated stability samples make an intermittent connection easier to document.",
+                "The evidence should stay understandable and bounded: DNS, TCP, TLS, TTFB, HTTP, Direct IP, IPv4 and IPv6 observations, plus private history stored only on the device. It should not claim router access, Wi-Fi scanning or a guaranteed repair.",
+            ],
+            "look": [
+                "Independent Wi-Fi, DNS and internet checks.",
+                "A deeper check with timing and stability samples.",
+                "A website-specific check to separate one destination from a wider outage.",
+                "Private on-device history with no account, ads, analytics or tracking.",
+                "One upfront purchase with no subscription.",
+            ],
+            "steps": [
+                "Run the one-tap Wi-Fi, DNS and internet check.",
+                "Use Deep Check when the connection feels intermittent.",
+                "Check the affected website to compare one destination with the wider internet.",
+                "Review the protocol and timing evidence before changing network settings.",
+                "Keep the on-device result history for the next support conversation.",
+            ],
+            "fits": "fits remote workers and travellers who need evidence about a confusing connection failure before they restart equipment or contact support.",
+            "faq": [
+                {
+                    "q": "Can it tell whether one website or the wider internet is failing?",
+                    "a": "Yes — Check a Website compares a specific destination with the broader connection evidence.",
+                },
+                {
+                    "q": "Does it scan nearby Wi-Fi networks or control my router?",
+                    "a": "No — it uses bounded connection checks and does not claim Wi-Fi scanning, router access or a guaranteed repair.",
+                },
+                {
+                    "q": "Is there a subscription or tracking?",
+                    "a": "No — WiFi Aid is one upfront App Store purchase with no subscription, account, ads, analytics or tracking.",
+                },
+            ],
+        },
+    ],
 }
 
 

@@ -41,6 +41,7 @@ CURRENT_LIVE_APPS = {
     "tripbeelite",
     "tripplanet",
     "unblurry",
+    "wifiaid",
     "wordmate",
 }
 

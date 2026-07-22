@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """多語 GEO 足跡產生器 — 為每個 app × 每個語言產出「機器可讀資訊頁」(給 LLM 爬)。
 
-重用 data/<app>_full.json 內已策展的 39 語 ASO 文案(name/subtitle/description/
+重用 data/<app>_full.json 內已策展的 50 語文案(name/subtitle/description/
 keywords/promotionalText),不重譯。每頁含 Schema.org SoftwareApplication + FAQPage
 的 JSON-LD(LLM 最愛的結構化來源),並用 hreflang 互連各語版本。
 

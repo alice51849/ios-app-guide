@@ -631,6 +631,8 @@ def metadata_block(
         }
     social_description = _social_description(description, storefront)
     og_type = "product" if storefront is not None else "website"
+    app_store_id = APPSTORE.get(key)
+    twitter_card = "app" if app_store_id else "summary_large_image"
     esc = lambda value: html.escape(str(value), quote=True)
     lines = [
         BLOCK_START,
@@ -667,7 +669,7 @@ def metadata_block(
             _json_ld(schema),
             "</script>",
             HERO_STYLE,
-            '<meta name="twitter:card" content="summary_large_image">',
+            f'<meta name="twitter:card" content="{twitter_card}">',
             f'<meta name="twitter:title" content="{esc(title)}">',
             (
                 f'<meta name="twitter:description" '
@@ -677,6 +679,15 @@ def metadata_block(
             f'<meta name="twitter:image:alt" content="{esc(image_alt)}">',
         )
     )
+    if app_store_id:
+        lines.extend(
+            (
+                f'<meta name="twitter:app:name:iphone" content="{esc(app_name)}">',
+                f'<meta name="twitter:app:id:iphone" content="{esc(app_store_id)}">',
+                f'<meta name="twitter:app:name:ipad" content="{esc(app_name)}">',
+                f'<meta name="twitter:app:id:ipad" content="{esc(app_store_id)}">',
+            )
+        )
     if storefront is not None:
         lines.extend(
             (

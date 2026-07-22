@@ -1022,7 +1022,24 @@ class GeneratorTests(unittest.TestCase):
                 f'name="robots" content="{gen_social_previews.ROBOTS_DIRECTIVE}"',
                 source,
             )
-            self.assertIn('name="twitter:card" content="summary_large_image"', source)
+            self.assertIn('name="twitter:card" content="app"', source)
+            self.assertIn(
+                'name="twitter:app:name:iphone" content="Lumi Bopomofo"',
+                source,
+            )
+            self.assertIn(
+                'name="twitter:app:id:iphone" content="6773017109"',
+                source,
+            )
+            self.assertIn(
+                'name="twitter:app:name:ipad" content="Lumi Bopomofo"',
+                source,
+            )
+            self.assertIn(
+                'name="twitter:app:id:ipad" content="6773017109"',
+                source,
+            )
+            self.assertNotIn('name="twitter:app:url:', source)
             self.assertIn('type="application/json+oembed"', source)
             self.assertEqual(1, source.count(gen_social_previews.HERO_START))
             self.assertEqual(1, source.count('class="iag-app-preview__image"'))

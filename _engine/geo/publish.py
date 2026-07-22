@@ -17,6 +17,10 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide")
 PY = sys.executable
+COMMIT_TRAILERS = (
+    "\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
+    "\nCopilot-Session: b7c8e3bc-512c-4743-b32a-1ca766a33c21"
+)
 
 
 def run(cmd, cwd=None, env=None):
@@ -60,7 +64,7 @@ def reconcile_lastmod_after_rebase(env):
             "user.email=alice51849@users.noreply.github.com",
             "commit",
             "-m",
-            "Reconcile truthful sitemap lastmod after rebase",
+            "Reconcile truthful sitemap lastmod after rebase" + COMMIT_TRAILERS,
         ],
         cwd=PAGES,
     )
@@ -238,7 +242,8 @@ def main():
         return
     require(["git", "-c", "user.name=alice51849",
              "-c", "user.email=alice51849@users.noreply.github.com",
-             "commit", "-m", "Update multilingual GEO pages"], cwd=PAGES)
+             "commit", "-m", "Update multilingual GEO pages" + COMMIT_TRAILERS],
+            cwd=PAGES)
     # 2b) 健壯 push:固定在 main;被拒就安全 rebase 後重試。
     CRED = "credential.helper=!gh auth git-credential"
     pushed = False

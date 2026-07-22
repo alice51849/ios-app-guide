@@ -20,6 +20,7 @@ from app_store_storefronts import (
 import gen_mobile_store_ctas
 import gen_smart_app_banners
 from appstore_live import live_app_keys
+from official_locales import OFFICIAL_LOCALES
 from videogen.registry import APPSTORE
 
 
@@ -42,6 +43,62 @@ CARD_BLOCK_RE = gen_smart_app_banners.APP_STORE_QR_BLOCK_RE
 STYLESHEET_NAME = "app-store-qr-v1.css"
 STYLESHEET_RELATIVE = Path("assets") / STYLESHEET_NAME
 QR_RELATIVE = Path("assets") / "app-store-qr"
+BADGE_BASE_URL = (
+    "https://tools.applemediaservices.com/api/badges/"
+    "download-on-the-app-store/black"
+)
+BADGE_LOCALES = {
+    "ar-SA": "ar-sa",
+    "bn-BD": "bn-bd",
+    "ca": "ca-es",
+    "zh-Hans": "zh-cn",
+    "zh-Hant": "zh-tw",
+    "hr": "hr-hr",
+    "cs": "cs-cz",
+    "da": "da-dk",
+    "nl-NL": "nl-nl",
+    "en-AU": "en-au",
+    "en-CA": "en-ca",
+    "en-GB": "en-gb",
+    "en-US": "en-us",
+    "fi": "fi-fi",
+    "fr-CA": "fr-ca",
+    "fr-FR": "fr-fr",
+    "de-DE": "de-de",
+    "el": "el-gr",
+    "gu-IN": "gu-in",
+    "he": "he-il",
+    "hi": "hi-in",
+    "hu": "hu-hu",
+    "id": "id-id",
+    "it": "it-it",
+    "ja": "ja-jp",
+    "kn-IN": "kn-in",
+    "ko": "ko-kr",
+    "ms": "ms-my",
+    "ml-IN": "ml-in",
+    "mr-IN": "mr-in",
+    "no": "no-no",
+    "or-IN": "or-in",
+    "pl": "pl-pl",
+    "pt-BR": "pt-br",
+    "pt-PT": "pt-pt",
+    "pa-IN": "pa-in",
+    "ro": "ro-ro",
+    "ru": "ru-ru",
+    "sk": "sk-sk",
+    "sl-SI": "sl-si",
+    "es-MX": "es-mx",
+    "es-ES": "es-es",
+    "sv": "sv-se",
+    "ta-IN": "ta-in",
+    "te-IN": "te-in",
+    "th": "th-th",
+    "tr": "tr-tr",
+    "uk": "uk-ua",
+    "ur-PK": "ur-pk",
+    "vi": "vi-vn",
+}
 CSS = """\
 .app-store-qr-card {
   display: none;
@@ -95,9 +152,10 @@ CSS = """\
   .app-store-qr-card__url {
     display: block;
     max-inline-size: 100%;
-    overflow: hidden;
+    overflow-x: auto;
+    scrollbar-width: thin;
     white-space: nowrap;
-    text-overflow: ellipsis;
+    text-overflow: clip;
   }
 
   .app-store-qr-card__label {
@@ -116,6 +174,19 @@ CSS = """\
 
   .app-store-qr-card__url::before {
     content: attr(data-store-url);
+  }
+
+  .app-store-qr-card__badge-wrap {
+    display: inline-flex;
+    inline-size: max-content;
+    max-inline-size: 100%;
+    padding: 10px;
+  }
+
+  .app-store-qr-card__badge {
+    display: block;
+    inline-size: auto;
+    block-size: 40px;
   }
 
   .app-store-qr-card__link:focus-visible {
@@ -160,6 +231,14 @@ CSS = """\
     color: #333;
     font-size: 8pt;
   }
+
+  .app-store-qr-card__badge-wrap {
+    padding: 2.5mm;
+  }
+
+  .app-store-qr-card__badge {
+    block-size: 10mm;
+  }
 }
 """
 
@@ -181,6 +260,26 @@ def store_url(app_id: str) -> str:
     if not re.fullmatch(r"\d+", app_id):
         raise ValueError(f"Invalid App Store QR app ID: {app_id}")
     return f"https://apps.apple.com/app/id{app_id}"
+
+
+def page_locale(path: Path, pages: Path) -> str:
+    try:
+        relative = path.resolve().relative_to(pages.resolve())
+    except ValueError as error:
+        raise ValueError(f"App Store QR page is outside Pages root: {path}") from error
+    locale = relative.parts[0] if relative.parts else ""
+    return locale if locale in OFFICIAL_LOCALES else "en-US"
+
+
+def badge_url(locale: str) -> str:
+    if set(BADGE_LOCALES) != set(OFFICIAL_LOCALES):
+        raise ValueError("App Store badge locale mapping must cover official locales")
+    badge_locale = BADGE_LOCALES.get(locale)
+    if badge_locale is None:
+        raise ValueError(f"Unsupported App Store badge locale: {locale}")
+    if not re.fullmatch(r"[a-z]{2}(?:-[a-z]{2})?", badge_locale):
+        raise ValueError(f"Invalid App Store badge locale mapping: {badge_locale}")
+    return f"{BADGE_BASE_URL}/{badge_locale}?size=250x83"
 
 
 def qr_asset_relative(app_id: str, href: str) -> Path:
@@ -234,6 +333,7 @@ def card_block(
     href: str,
     label: str,
     image_href: str,
+    locale: str = "en-US",
 ) -> str:
     store_url(app_id)
     direct_url = normalize_app_store_campaign_url(href)
@@ -248,11 +348,12 @@ def card_block(
     escaped_href = html.escape(direct_url, quote=True)
     escaped_label = html.escape(label)
     escaped_display_url = html.escape(display_url)
+    escaped_badge_url = html.escape(badge_url(locale), quote=True)
     return f"""{CARD_BLOCK_START}
 <section class="app-store-qr-card" style="display:none" aria-label="{escaped_label}">
 <a class="app-store-qr-card__link" href="{escaped_href}" rel="nofollow noopener">
 <img class="app-store-qr-card__image" src="{image_href}" width="164" height="164" alt="" decoding="async">
-<span class="app-store-qr-card__copy"><strong class="app-store-qr-card__label">{escaped_label}</strong><span class="app-store-qr-card__url" data-store-url="{escaped_display_url}" aria-hidden="true"></span></span>
+<span class="app-store-qr-card__copy"><strong class="app-store-qr-card__label">{escaped_label}</strong><span class="app-store-qr-card__url" data-store-url="{escaped_display_url}" aria-hidden="true"></span><span class="app-store-qr-card__badge-wrap"><img class="app-store-qr-card__badge" src="{escaped_badge_url}" width="120" height="40" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span></span>
 </a>
 </section>
 {CARD_BLOCK_END}"""
@@ -265,6 +366,7 @@ def ensure_qr_card(
     label: str,
     stylesheet_href: str,
     image_href: str,
+    locale: str = "en-US",
 ) -> bool:
     source = path.read_text(encoding="utf-8")
     if "</head>" not in source or "</body>" not in source:
@@ -294,7 +396,7 @@ def ensure_qr_card(
     updated = (
         with_style[:main_index].rstrip()
         + "\n"
-        + card_block(app_id, href, label, image_href)
+        + card_block(app_id, href, label, image_href, locale)
         + "\n"
         + with_style[main_index:].lstrip()
     )
@@ -396,6 +498,7 @@ def generate(
                 label,
                 stylesheet_href,
                 image_href,
+                page_locale(path, pages),
             )
         )
         installed.add(path)

@@ -1758,8 +1758,22 @@ class GeneratorTests(unittest.TestCase):
                 'src="/ios-app-guide/assets/mobile-store-cta-v1.js"',
                 generated_source,
             )
+            self.assertIn(
+                '<span class="mobile-store-cta__label">Get the app</span>',
+                generated_source,
+            )
             self.assertIn("defer", generated_source)
             self.assertIn("white-space:nowrap", gen_mobile_store_ctas.SCRIPT)
+            self.assertNotIn(
+                "text-overflow:ellipsis", gen_mobile_store_ctas.SCRIPT
+            )
+            self.assertIn(
+                "justify-content:flex-start", gen_mobile_store_ctas.SCRIPT
+            )
+            self.assertIn(
+                ".mobile-store-cta__label{margin-inline:auto}",
+                gen_mobile_store_ctas.SCRIPT,
+            )
             self.assertIn("min-height:48px", gen_mobile_store_ctas.SCRIPT)
             self.assertIn(
                 "safe-area-inset-bottom", gen_mobile_store_ctas.SCRIPT
@@ -1911,6 +1925,18 @@ class GeneratorTests(unittest.TestCase):
             )
             self.assertIn("Localized label", source)
             self.assertIn(image_href, source)
+            self.assertIn(
+                html.escape(
+                    gen_app_store_qr_ctas.badge_url("en-US"),
+                    quote=True,
+                ),
+                source,
+            )
+            self.assertEqual(
+                1, source.count('class="app-store-qr-card__badge"')
+            )
+            self.assertIn('width="120" height="40" alt=""', source)
+            self.assertIn('referrerpolicy="no-referrer"', source)
             qr_block = gen_app_store_qr_ctas.CARD_BLOCK_RE.search(source).group(0)
             self.assertIn(
                 html.escape(app_href, quote=True),
@@ -1924,6 +1950,11 @@ class GeneratorTests(unittest.TestCase):
             self.assertIn(
                 "white-space: nowrap", gen_app_store_qr_ctas.CSS
             )
+            self.assertNotIn(
+                "text-overflow: ellipsis", gen_app_store_qr_ctas.CSS
+            )
+            self.assertIn("block-size: 40px", gen_app_store_qr_ctas.CSS)
+            self.assertIn("padding: 10px", gen_app_store_qr_ctas.CSS)
             self.assertIn("32mm", gen_app_store_qr_ctas.CSS)
             self.assertIn("@media print", gen_app_store_qr_ctas.CSS)
             self.assertNotIn("fetch(", gen_app_store_qr_ctas.CSS)
@@ -2036,6 +2067,31 @@ class GeneratorTests(unittest.TestCase):
                 gen_app_store_qr_ctas._site_asset_href(
                     "javascript:alert(1)", Path("asset.css")
                 )
+            self.assertEqual(
+                set(OFFICIAL_LOCALES),
+                set(gen_app_store_qr_ctas.BADGE_LOCALES),
+            )
+            self.assertEqual(
+                "https://tools.applemediaservices.com/api/badges/"
+                "download-on-the-app-store/black/zh-tw?size=250x83",
+                gen_app_store_qr_ctas.badge_url("zh-Hant"),
+            )
+            self.assertEqual(
+                "zh-Hant",
+                gen_app_store_qr_ctas.page_locale(
+                    root / "zh-Hant" / "hubs" / "app.html",
+                    root,
+                ),
+            )
+            self.assertEqual(
+                "en-US",
+                gen_app_store_qr_ctas.page_locale(
+                    root / "hubs" / "app.html",
+                    root,
+                ),
+            )
+            with self.assertRaisesRegex(ValueError, "Unsupported"):
+                gen_app_store_qr_ctas.badge_url("not-a-locale")
 
     def test_mobile_app_identity_is_canonical_complete_and_idempotent(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -2923,12 +2979,22 @@ class GeneratorTests(unittest.TestCase):
                 gen_guide_design.SITE,
                 relative,
             )
+            locale = gen_app_store_qr_ctas.page_locale(path, pages)
             self.assertEqual(1, source.count(qr_style_block))
             self.assertEqual(
                 1,
                 source.count(
                     gen_app_store_qr_ctas.card_block(
-                        app_id, cta[0], cta[1], image_href
+                        app_id, cta[0], cta[1], image_href, locale
+                    )
+                ),
+            )
+            self.assertEqual(
+                1,
+                source.count(
+                    html.escape(
+                        gen_app_store_qr_ctas.badge_url(locale),
+                        quote=True,
                     )
                 ),
             )

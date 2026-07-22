@@ -50,9 +50,10 @@
   .app-store-qr-card__url {
     display: block;
     max-inline-size: 100%;
-    overflow: hidden;
+    overflow-x: auto;
+    scrollbar-width: thin;
     white-space: nowrap;
-    text-overflow: ellipsis;
+    text-overflow: clip;
   }
 
   .app-store-qr-card__label {
@@ -71,6 +72,19 @@
 
   .app-store-qr-card__url::before {
     content: attr(data-store-url);
+  }
+
+  .app-store-qr-card__badge-wrap {
+    display: inline-flex;
+    inline-size: max-content;
+    max-inline-size: 100%;
+    padding: 10px;
+  }
+
+  .app-store-qr-card__badge {
+    display: block;
+    inline-size: auto;
+    block-size: 40px;
   }
 
   .app-store-qr-card__link:focus-visible {
@@ -114,5 +128,13 @@
   .app-store-qr-card__url {
     color: #333;
     font-size: 8pt;
+  }
+
+  .app-store-qr-card__badge-wrap {
+    padding: 2.5mm;
+  }
+
+  .app-store-qr-card__badge {
+    block-size: 10mm;
   }
 }

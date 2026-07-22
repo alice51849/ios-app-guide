@@ -30,6 +30,7 @@ CURRENT_LIVE_APPS = {
     "lumimission",
     "lumimissionpro",
     "lumiweather",
+    "maskmyfile",
     "mochi",
     "photocream",
     "picclear",

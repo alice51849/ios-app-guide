@@ -1534,6 +1534,53 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         },
     ],
+    "maskmyfile": [
+        {
+            "query": "best on-device file redaction app for freelancers sharing client documents",
+            "triggers": [
+                "on-device file redaction",
+                "redact client documents",
+                "hide personal data before sharing",
+                "redact pdf no subscription",
+                "redact files on iphone",
+            ],
+            "persona": "freelancers and small teams sharing client documents",
+            "lead": "Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the useful context.",
+            "paras": [
+                "A practical redaction tool should handle images, PDFs and structured text on the device, support precise manual selections, and permanently apply the chosen solid mask, placeholder, pseudonym or removal to a new copy.",
+                "Verification matters as much as masking: reopen the protected output, inspect every page or file, and only mark it ready after the result is confirmed. Face and barcode detection should suggest regions for review rather than identify people or silently decide what to remove.",
+            ],
+            "look": [
+                "On-device processing with no content upload.",
+                "Precise image and PDF selections plus searchable text matches.",
+                "Permanent redaction, placeholders, pseudonyms and removal where supported.",
+                "A reopened-output verification step before sharing.",
+                "Batch protection for up to 100 files with one lifetime unlock option.",
+            ],
+            "steps": [
+                "Import the image, PDF or structured text file you need to share.",
+                "Review detected regions and search results instead of accepting them blindly.",
+                "Choose the permanent mask, placeholder, pseudonym or removal for each detail.",
+                "Create a new protected copy without overwriting the original.",
+                "Reopen and verify the output before sending it.",
+            ],
+            "fits": "fits freelancers and small teams who need to remove private details from client files on device while keeping the remaining document useful.",
+            "faq": [
+                {
+                    "q": "Does the file get uploaded for processing?",
+                    "a": "No — processing stays on the device, with no account, advertising, tracking, analytics or content upload.",
+                },
+                {
+                    "q": "Does face detection identify people automatically?",
+                    "a": "No — face and barcode detection only mark regions for your review; they do not identify a person or decide what should be removed.",
+                },
+                {
+                    "q": "Is there a subscription?",
+                    "a": "No — Mask My File is free to start, with one purchase available to unlock unlimited verified outputs and batch processing.",
+                },
+            ],
+        },
+    ],
     "wifiaid": [
         {
             "query": "best wifi troubleshooting app for remote workers with connected but no internet",

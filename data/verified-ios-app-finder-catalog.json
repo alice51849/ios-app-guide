@@ -16,7 +16,7 @@
     ],
     "retirement_rule": "Retire after three consecutive verified misses"
   },
-  "record_count": 31,
+  "record_count": 32,
   "apps": [
     {
       "key": "aim990",
@@ -918,6 +918,47 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
+      "verified_live": true
+    },
+    {
+      "key": "mochidonestamp",
+      "app_store_id": "6790800323",
+      "name": "Mochi DoneStamp",
+      "category": "lifestyle",
+      "category_labels": {
+        "en": "Lifestyle",
+        "zh-Hant": "生活"
+      },
+      "summaries": {
+        "en": "When did you last change the sheets, water a plant, call family, back up photos, or replace a filter?",
+        "zh-Hant": "上次換床單、幫植物澆水、打電話給家人、備份照片或更換濾芯，是什麼時候？"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Free to start",
+        "One-time unlock",
+        "No subscription"
+      ],
+      "keywords": [
+        "mochi",
+        "donestamp",
+        "lifestyle"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
       "verified_live": true
     },
     {

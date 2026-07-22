@@ -2,11 +2,11 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-07-22",
-  "content_digest": "5b7ec0e2b45456f28f61524f6b7f568eb60477841d65cc99110e61c76562ebaa",
+  "content_digest": "e96c4133fa01bb137ddbf699854efa3624948cce422f8f621eb9fbbe000ff48c",
   "locale": "zh-Hans",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 31,
+  "record_count": 32,
   "apps": [
     {
       "key": "aim990",
@@ -1240,6 +1240,53 @@
         "formatted_price": "免费",
         "storefront_url": "https://apps.apple.com/cn/app/id6785004775"
       }
+    },
+    {
+      "key": "mochidonestamp",
+      "app_store_id": "6790800323",
+      "name": "Mochi DoneStamp：上次何时",
+      "summary": "上次换床单、给植物浇水、打电话给家人、备份照片或更换滤芯，是什么时候？",
+      "category": "lifestyle",
+      "search_terms": [
+        "循环提醒",
+        "经过天数",
+        "多久一次",
+        "家务管家",
+        "清洁计划",
+        "定期保养",
+        "植物浇水",
+        "换床单",
+        "滤芯更换",
+        "洗车",
+        "备份",
+        "小组件",
+        "快捷指令",
+        "历史追踪",
+        "维修",
+        "打扫",
+        "理发",
+        "牙医",
+        "护肤",
+        "洗衣",
+        "电话",
+        "车辆保养",
+        "家电维护",
+        "重复事项"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6790800323",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/mochidonestamp.html",
+      "verified_live": true
     },
     {
       "key": "photocream",

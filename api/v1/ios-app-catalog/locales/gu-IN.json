@@ -2,11 +2,11 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-07-22",
-  "content_digest": "5b7ec0e2b45456f28f61524f6b7f568eb60477841d65cc99110e61c76562ebaa",
+  "content_digest": "e96c4133fa01bb137ddbf699854efa3624948cce422f8f621eb9fbbe000ff48c",
   "locale": "gu-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 31,
+  "record_count": 32,
   "apps": [
     {
       "key": "aim990",
@@ -1093,6 +1093,43 @@
         "formatted_price": "મફત",
         "storefront_url": "https://apps.apple.com/in/app/id6785004775"
       }
+    },
+    {
+      "key": "mochidonestamp",
+      "app_store_id": "6790800323",
+      "name": "Mochi DoneStamp: છેલ્લી વાર",
+      "summary": "તમે છેલ્લી વાર ચાદર ક્યારે બદલી, છોડને પાણી ક્યારે આપ્યું, પરિવારને ફોન, ફોટાનો બૅકઅપ કે ફિલ્ટર ક્યારે બદલ્યું?",
+      "category": "lifestyle",
+      "search_terms": [
+        "જાળવણી",
+        "ટ્રૅકર",
+        "રિમાઇન્ડર",
+        "વિજેટ",
+        "ઇતિહાસ",
+        "ચક્ર",
+        "સફાઈ",
+        "ચાદર",
+        "છોડ",
+        "ત્વચા",
+        "વાળ કપાવવા",
+        "દાંતના ડોક્ટર",
+        "પરિવાર",
+        "ઘરેલુ"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6790800323",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/mochidonestamp.html",
+      "verified_live": true
     },
     {
       "key": "photocream",

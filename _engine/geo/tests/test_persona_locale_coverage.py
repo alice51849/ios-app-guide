@@ -32,6 +32,7 @@ CURRENT_LIVE_APPS = {
     "lumiweather",
     "maskmyfile",
     "mochi",
+    "mochidonestamp",
     "photocream",
     "picclear",
     "scanto",
@@ -280,6 +281,13 @@ class PersonaLocaleCoverageTests(unittest.TestCase):
         ):
             self.assertNotIn(claim, copy)
         self.assertIn("doesn't invent detail", copy)
+
+    def test_mochi_done_stamp_persona_is_not_a_todo_list(self):
+        copy = str(PERSONAS["mochidonestamp"]).lower()
+        self.assertIn("life-event memory", copy)
+        self.assertIn("actual completion", copy)
+        self.assertIn("one lifetime pro purchase", copy)
+        self.assertNotIn("project management", copy)
 
     def test_reviewed_tripbee_subtitle_overrides_translate_generic_copy(self):
         source = "TripBee Pro: Trip Planner"

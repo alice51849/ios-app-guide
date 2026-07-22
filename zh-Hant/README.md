@@ -4,7 +4,7 @@
 
 第一方目錄，說明每款 App 的適合對象、想完成的任務，以及 App Store 下載入口。
 
-由開發者撰寫的搜尋意圖，涵蓋 31 款已驗證上架的 iOS App 與 Apple 官方 50 個地區語系。
+由開發者撰寫的搜尋意圖，涵蓋 32 款已驗證上架的 iOS App 與 Apple 官方 50 個地區語系。
 
 **地區語系:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · **zh-Hant**
 
@@ -109,6 +109,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Lumi Weather** | 適合家長規劃親子戶外時間的最佳天氣 App | 家長規劃戶外時間需要的不只是溫度：需要快速、年齡適合的判斷，是否適合孩子出門及穿著建議 — Lumi Weather 就是為此設計。 | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html) | [在 App Store 取得 Lumi Weather →](https://apps.apple.com/tw/app/id6779552704) |
 | **Mask My File** | Mask My File — 分享前遮蔽個資與私密資訊 \| iOS App | 安全分享，同時保留有用的脈絡。Mask My File 會在你送出檔案前找出私密資訊，永久遮蔽後，再重新開啟並驗證輸出的新檔案，確認無誤才顯示 Private Ready。 | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/maskmyfile.html) | [在 App Store 取得 Mask My File](https://apps.apple.com/app/id6792850916) |
 | **Mochi** | iPhone 上最佳簡單待辦清單應用程式，無訂閱 | 如果大多數待辦應用程式感覺臃腫，適合你的應該是簡潔清單，附提醒、重複規則和 Apple Watch 複雜功能，且刻意不含專案管理機制 — Mochi 專為此打造。 | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [在 App Store 取得 Mochi →](https://apps.apple.com/tw/app/id6785004775) |
+| **Mochi DoneStamp：上次何時** | Mochi DoneStamp：上次何時 — 生活事件、週期與完成紀錄 \| iOS App | 上次換床單、幫植物澆水、打電話給家人、備份照片或更換濾芯，是什麼時候？ | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/mochidonestamp.html) | [在 App Store 取得 Mochi DoneStamp：上次何時](https://apps.apple.com/app/id6790800323) |
 | **PhotoCream** | iPhone 旅遊創作者最佳一次付費底片風格照片編輯 App | 旅遊創作者需要能重複使用的底片風格，能加顆粒、光暈與色彩特色，不會讓每個目的地都變成同一種平淡濾鏡 — PhotoCream 就是為此設計。 | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [在 App Store 取得 PhotoCream →](https://apps.apple.com/tw/app/id6781808054) |
 | **PicClear** | iPhone 上最佳清理重複照片釋放儲存空間應用程式 | 要快速釋放空間，先從最大效益著手：完全重複照片、幾乎相同的連拍、模糊照片和大型影片 — PicClear 幫你在 iPhone 上完成。 | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [在 App Store 取得 PicClear →](https://apps.apple.com/tw/app/id6780223070) |
 | **ScanTo Pro** | 護理人員專用最佳離線文件掃描應用程式，無雲端 | 如果你掃描病患同意書、出院文件或轉診單，掃描器必須將文件保留在裝置內，絕不上傳他人雲端 — ScanTo Pro 專為此打造。 | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [在 App Store 取得 ScanTo Pro →](https://apps.apple.com/tw/app/id6779977651) |
@@ -123,7 +124,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## 下載完整資料集
 
-JSON、JSONL 與 CSV 格式皆包含相同的 1,550 筆紀錄。
+JSON、JSONL 與 CSV 格式皆包含相同的 1,600 筆紀錄。
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 

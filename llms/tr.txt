@@ -3,7 +3,7 @@
 > Her iOS uygulaması için yapılandırılmış bilgi — özellikler, fiyat ve SSS.
 
 locale: tr
-apps: 31
+apps: 32
 - Uygulama dizini: https://alice51849.github.io/ios-app-guide/tr/tools/private-pay-once-iphone-app-finder.html
 - Uygulama dizini · PWA: https://alice51849.github.io/ios-app-guide/tr/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/tr.jsonld
@@ -102,6 +102,10 @@ apps: 31
   - Paylaşmadan önce özel bilgileri cihazında kalıcı olarak karart. Her çıktıyı yeniden aç ve doğrula, tek seferde 100 dosyaya kadar koru ve tek satın alımla ömür boyu aç.
   - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
   - App Store: https://apps.apple.com/app/id6792850916
+- [Mochi DoneStamp: En son](https://alice51849.github.io/ios-app-guide/tr/mochidonestamp.html) — En son yaptığın zamanı hatırla
+  - Yap, dokun; ne zaman yaptığını biz hatırlayalım. Ara sıra veya düzenli her olayı gizli ve çevrimdışı kaydet. Tek ödeme, asla abonelik yok.
+  - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
+  - App Store: https://apps.apple.com/app/id6790800323
 - [Mochi: Sevimli Liste](https://alice51849.github.io/ios-app-guide/tr/mochi.html) — Gününü yumuşakça planla
   - Gerçekten keyif alacağın yapılacaklar listesi. Sıcacık, sevimli ve işaretlemesi çok tatmin edici — ücretsiz, reklamsız. İşleri huzurla bitir.
   - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.

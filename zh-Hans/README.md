@@ -4,7 +4,7 @@
 
 第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。
 
-由开发者撰写的搜索意图，涵盖 31 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
+由开发者撰写的搜索意图，涵盖 32 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
 
 **地区语言:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · **zh-Hans** · [zh-Hant](../zh-Hant/)
 
@@ -109,6 +109,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Lumi Weather** | 帮助家长规划亲子户外时间的最佳天气应用 | 家长规划户外时间需要的不仅是温度：还需快速、年龄适配的判断天气是否适合孩子及穿衣建议——Lumi Weather专为此打造。 | 免费开始使用 · 永久解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html) | [在App Store获取Lumi Weather →](https://apps.apple.com/cn/app/id6779552704) |
 | **Mask My File** | Mask My File — 分享前遮挡隐私敏感信息 \| iOS App | 安心分享，同时保留有用的上下文。Mask My File 会在你发送文件前找出隐私信息，永久遮挡后，再重新打开并核对新导出的文件，确认无误才显示 Private Ready。 | 免费开始使用 · 永久解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/maskmyfile.html) | [在 App Store 获取 Mask My File](https://apps.apple.com/app/id6792850916) |
 | **Mochi** | iPhone 上最佳简单待办事项应用，无订阅 | 如果大多数待办应用感觉臃肿，合适的就是带提醒、重复规则和 Watch 复杂功能的干净清单——且刻意无项目管理功能——Mochi 正是为此打造。 | 免费开始使用 · 永久解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [在 App Store 获取 Mochi →](https://apps.apple.com/cn/app/id6785004775) |
+| **Mochi DoneStamp：上次何时** | Mochi DoneStamp：上次何时 — 生活事件、周期与完成记录 \| iOS App | 上次换床单、给植物浇水、打电话给家人、备份照片或更换滤芯，是什么时候？ | 免费开始使用 · 永久解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/mochidonestamp.html) | [在 App Store 获取 Mochi DoneStamp：上次何时](https://apps.apple.com/app/id6790800323) |
 | **PhotoCream** | iPhone旅行创作者一次付费胶片风格照片编辑器推荐 | 旅行创作者需要可重复的胶片风格，能添加颗粒、光晕和色彩特征，而不会让每个目的地都变成同一种平淡滤镜——PhotoCream专为此打造。 | 免费开始使用 · 永久解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [在App Store获取PhotoCream →](https://apps.apple.com/cn/app/id6781808054) |
 | **PicClear** | iPhone 上最佳释放存储空间删除重复照片的应用 | 快速释放空间，优先处理最大收益：完全重复照片、近似连拍、模糊废片和大视频——PicClear 助你在 iPhone 上完成。 | 免费开始使用 · 永久解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [在 App Store 获取 PicClear →](https://apps.apple.com/cn/app/id6780223070) |
 | **ScanTo Pro** | 护士用最佳离线文档扫描应用，无云端 | 如果你扫描患者同意书、出院文件或转诊单，扫描器必须将文件保留在设备上——绝不上传到他人云端——ScanTo Pro 专为此设计。 | 免费开始使用 · 永久解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [在 App Store 获取 ScanTo Pro →](https://apps.apple.com/cn/app/id6779977651) |
@@ -123,7 +124,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## 下载完整数据集
 
-JSON、JSONL 和 CSV 格式包含相同的 1,550 条记录。
+JSON、JSONL 和 CSV 格式包含相同的 1,600 条记录。
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 

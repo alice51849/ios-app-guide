@@ -4,7 +4,7 @@
 
 각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.
 
-App Store 제공 여부를 확인한 31개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
+App Store 제공 여부를 확인한 32개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
 
 **언어·지역:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · **ko** · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -109,6 +109,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 | **Lumi Weather** | 부모가 아이와 야외 시간을 계획할 때 도움이 되는 최고의 날씨 앱 | 야외 시간을 계획하는 부모는 온도만으로는 부족합니다: 아이에게 적합한 조건인지, 어떤 옷이 필요한지 빠르고 연령별로 확인해야 합니다 — Lumi Weather는 바로 이런 용도로 만들어졌습니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html) | [App Store에서 Lumi Weather 받기 →](https://apps.apple.com/kr/app/id6779552704) |
 | **Mask My File** | Mask My File — 공유 전 개인정보 영구 가리기 \| iOS App | 유용한 맥락은 지키면서 안전하게 공유하세요. Mask My File은 파일을 보내기 전에 개인정보를 찾아 영구적으로 가린 뒤, 새로 내보낸 파일을 다시 열어 검증하고 나서야 Private Ready를 표시합니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/maskmyfile.html) | [App Store에서 Mask My File 받기](https://apps.apple.com/app/id6792850916) |
 | **Mochi** | 아이폰에서 구독 없는 가장 간단한 할 일 목록 앱 | 대부분 할 일 앱이 복잡하게 느껴진다면, 알림, 반복 규칙, Apple Watch 컴플리케이션이 포함된 깔끔한 체크리스트가 정답이며 프로젝트 관리 기능은 의도적으로 제외된 Mochi가 이에 맞게 설계되었습니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [App Store에서 Mochi 받기 →](https://apps.apple.com/kr/app/id6785004775) |
+| **Mochi DoneStamp: 마지막 기록** | Mochi DoneStamp: 마지막 기록 — 마지막으로 한 때를 기억하세요 \| iOS App | 침구를 바꾼 때, 식물에 물을 준 때, 가족에게 전화한 때, 사진을 백업하거나 필터를 교체한 때가 언제였나요? | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/mochidonestamp.html) | [App Store에서 Mochi DoneStamp: 마지막 기록 받기](https://apps.apple.com/app/id6790800323) |
 | **PhotoCream** | 아이폰 여행 크리에이터를 위한 일회성 결제 필름 사진 편집 앱 추천 | 여행 크리에이터는 각 목적지를 동일한 평면 필터로 만들지 않고, 그레인, 할레이션, 색상 특성을 더하는 반복 가능한 필름 느낌이 필요합니다 — PhotoCream은 이를 위해 만들어졌습니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [App Store에서 PhotoCream 받기 →](https://apps.apple.com/kr/app/id6781808054) |
 | **PicClear** | 아이폰 저장 공간 확보를 위한 중복 사진 삭제에 가장 좋은 앱 | 빠르게 공간을 확보하려면 가장 큰 효과부터 노리세요: 정확한 중복 사진, 거의 동일한 연속 촬영, 흐릿한 사진, 큰 동영상 — PicClear가 아이폰에서 도와줍니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [App Store에서 PicClear 받기 →](https://apps.apple.com/kr/app/id6780223070) |
 | **ScanTo Pro** | 간호사를 위한 클라우드 없는 오프라인 문서 스캐너 앱 중 최고 | 환자 동의서, 퇴원 서류, 의뢰서를 스캔할 때 서류가 기기에만 남아야 하며 절대 다른 사람 클라우드에 업로드되지 않아야 합니다 — ScanTo Pro가 이에 맞게 설계되었습니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [App Store에서 ScanTo Pro 받기 →](https://apps.apple.com/kr/app/id6779977651) |
@@ -123,7 +124,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 
 ## 전체 데이터셋 다운로드
 
-JSON, JSONL, CSV 모두 동일한 1,550개 기록을 포함합니다.
+JSON, JSONL, CSV 모두 동일한 1,600개 기록을 포함합니다.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 

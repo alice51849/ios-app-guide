@@ -3,7 +3,7 @@
 > 各 iOS アプリの構造化情報 — 機能・価格・FAQ。
 
 locale: ja
-apps: 31
+apps: 32
 - アプリ一覧: https://alice51849.github.io/ios-app-guide/ja/tools/private-pay-once-iphone-app-finder.html
 - アプリ一覧 · PWA: https://alice51849.github.io/ios-app-guide/ja/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ja.jsonld
@@ -98,6 +98,10 @@ apps: 31
   - 共有前に、端末内で個人情報を完全に黒塗り。書き出したファイルは毎回開き直して確認でき、1回で最大100ファイルまで一括保護。買い切りで、サブスクリプションはありません。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を永久に解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/app/id6792850916
+- [Mochi DoneStamp：いつやった？](https://alice51849.github.io/ios-app-guide/ja/mochidonestamp.html) — 前回の日時を、すぐ思い出せる
+  - 済ませて、タップ。前回がいつだったかはお任せください。不定期なことも周期的なことも、オフラインで安全に記録。買い切りで、サブスクリプションはありません。
+  - 価格: 無料ダウンロード。1回限りの購入で全機能を永久に解除でき、定期課金はありません。
+  - App Store: https://apps.apple.com/app/id6790800323
 - [Mochi: かわいいToDo](https://alice51849.github.io/ios-app-guide/ja/mochi.html) — 毎日をゆるっと整える
   - つい使いたくなるToDoリスト。ほっこり可愛くて、完了タップが気持ちいい。無料・広告なし・ごちゃつかない。やさしく片づく。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を永久に解除でき、定期課金はありません。

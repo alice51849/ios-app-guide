@@ -2,11 +2,11 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-07-22",
-  "content_digest": "5b7ec0e2b45456f28f61524f6b7f568eb60477841d65cc99110e61c76562ebaa",
+  "content_digest": "e96c4133fa01bb137ddbf699854efa3624948cce422f8f621eb9fbbe000ff48c",
   "locale": "ko",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 31,
+  "record_count": 32,
   "apps": [
     {
       "key": "aim990",
@@ -1240,6 +1240,52 @@
         "formatted_price": "무료",
         "storefront_url": "https://apps.apple.com/kr/app/id6785004775"
       }
+    },
+    {
+      "key": "mochidonestamp",
+      "app_store_id": "6790800323",
+      "name": "Mochi DoneStamp: 마지막 기록",
+      "summary": "침구를 바꾼 때, 식물에 물을 준 때, 가족에게 전화한 때, 사진을 백업하거나 필터를 교체한 때가 언제였나요?",
+      "category": "lifestyle",
+      "search_terms": [
+        "주기 알림",
+        "반복 일정",
+        "경과일수",
+        "생활도우미",
+        "집안일",
+        "물주기",
+        "침구교체",
+        "필터교환",
+        "청소",
+        "이발",
+        "피부관리",
+        "여행",
+        "치과",
+        "세탁",
+        "정기점검",
+        "위젯",
+        "단축어",
+        "사진백업",
+        "차량정비",
+        "가전케어",
+        "리마인더",
+        "유지보수",
+        "루틴"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6790800323",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ko/mochidonestamp.html",
+      "verified_live": true
     },
     {
       "key": "photocream",

@@ -1534,6 +1534,55 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         },
     ],
+    "mochidonestamp": [
+        {
+            "query": "best last time tracker app for household maintenance without a subscription",
+            "guide_title": "Last-time tracking on iPhone: what to check",
+            "triggers": [
+                "last time tracker",
+                "when did i last",
+                "household maintenance tracker",
+                "days since tracker",
+                "recurring life event history",
+                "routine reminder no subscription",
+            ],
+            "persona": "households tracking irregular maintenance and personal routines",
+            "lead": "For chores and upkeep that do not belong on a rigid calendar, a useful tracker remembers when you actually finished and measures the next interval from that moment.",
+            "paras": [
+                "This is different from another to-do list: each tap should add an exact completion time to a durable history, while optional approximate or exact rhythms help with recurring events such as changing sheets, watering plants, replacing filters or backing up photos.",
+                "A practical tracker should also let you backdate, edit or remove an occurrence, act on local reminders, and review the interval history without requiring an account. Widgets, Siri, Shortcuts, notes, optional photos, backup and JSON export make the record easier to maintain and keep.",
+            ],
+            "look": [
+                "One-tap completion logging with a clear chronological history.",
+                "Approximate and exact rhythms recalculated from actual completion.",
+                "Backdating, editing and deletion for corrections.",
+                "Local reminders plus Home and Lock Screen widgets.",
+                "A one-time unlock, on-device core data and a complete backup option.",
+            ],
+            "steps": [
+                "Create one event for the household or personal routine you want to remember.",
+                "Choose no rhythm, an approximate rhythm or an exact rhythm based on the real need.",
+                "Tap Done when the event actually happens so the interval restarts truthfully.",
+                "Correct or backdate the occurrence if you logged it late.",
+                "Review interval history or export a backup when you need a durable record.",
+            ],
+            "fits": "fits households and individuals who need a private memory of when irregular maintenance or personal routines actually happened, without turning everything into a fixed task list.",
+            "faq": [
+                {
+                    "q": "Is Mochi DoneStamp another to-do list?",
+                    "a": "No — it is a life-event memory built around completed timestamps and interval history rather than project lists or overdue tasks.",
+                },
+                {
+                    "q": "Can the next reminder restart from when I really finished?",
+                    "a": "Yes — approximate and exact rhythms recalculate from the actual completion time, and past occurrences can be backdated or corrected.",
+                },
+                {
+                    "q": "Does it require a subscription or account?",
+                    "a": "No — one active event and unlimited history are free, while one Lifetime Pro purchase unlocks unlimited events and the complete feature set. There is no account, advertising, analytics or tracking, and core data stays on the device.",
+                },
+            ],
+        },
+    ],
     "maskmyfile": [
         {
             "query": "best on-device file redaction app for freelancers sharing client documents",

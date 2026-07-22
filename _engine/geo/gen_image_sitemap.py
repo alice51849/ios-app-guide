@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate a Google Image Sitemap for canonical Web Story posters."""
+"""Generate a Google Image Sitemap for owned story and app-preview images."""
 
 from __future__ import annotations
 
@@ -9,6 +9,8 @@ import os
 from pathlib import Path
 import urllib.parse
 import xml.etree.ElementTree as ET
+
+from official_locales import OFFICIAL_LOCALES
 
 
 HERE = Path(__file__).resolve().parent
@@ -35,6 +37,27 @@ class _StoryMetadataParser(HTMLParser):
                 self.canonicals.append(values["href"])
         if tag.lower() == "amp-story" and values.get("poster-portrait-src"):
             self.posters.append(values["poster-portrait-src"])
+
+
+class _HubMetadataParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.canonicals: list[str] = []
+        self.images: list[str] = []
+
+    def handle_starttag(
+        self, tag: str, attrs: list[tuple[str, str | None]]
+    ) -> None:
+        values = {key.lower(): value for key, value in attrs if value is not None}
+        if tag.lower() == "link" and "canonical" in values.get("rel", "").split():
+            if values.get("href"):
+                self.canonicals.append(values["href"])
+        if (
+            tag.lower() == "meta"
+            and values.get("property", "").lower() == "og:image"
+            and values.get("content")
+        ):
+            self.images.append(values["content"])
 
 
 def _absolute_url(value: str, base_url: str) -> str:
@@ -68,7 +91,12 @@ def _owned_file(url: str, pages: Path, site: str) -> Path:
     return target
 
 
-def collect(pages: Path = PAGES, site: str = SITE) -> list[tuple[str, str]]:
+def collect(
+    pages: Path = PAGES,
+    site: str = SITE,
+    *,
+    include_hubs: bool = False,
+) -> list[tuple[str, str]]:
     stories = pages / "stories"
     if not stories.is_dir():
         raise FileNotFoundError(f"Web Stories directory does not exist: {stories}")
@@ -106,6 +134,42 @@ def collect(pages: Path = PAGES, site: str = SITE) -> list[tuple[str, str]]:
         seen_pages.add(page_url)
         entries.append((page_url, image_url))
 
+    if include_hubs:
+        hub_paths = list((pages / "hubs").glob("*.html"))
+        for locale in OFFICIAL_LOCALES:
+            hub_paths.extend((pages / locale / "hubs").glob("*.html"))
+        for hub in sorted(hub_paths, key=lambda path: path.as_posix().casefold()):
+            if hub.name == "index.html":
+                continue
+            parser = _HubMetadataParser()
+            parser.feed(hub.read_text(encoding="utf-8"))
+            canonicals = list(dict.fromkeys(parser.canonicals))
+            images = list(dict.fromkeys(parser.images))
+            if len(canonicals) != 1:
+                raise ValueError(
+                    f"{hub} must declare exactly one canonical URL; found "
+                    f"{len(canonicals)}"
+                )
+            if len(images) != 1:
+                raise ValueError(
+                    f"{hub} must declare exactly one Open Graph image; found "
+                    f"{len(images)}"
+                )
+            relative = hub.relative_to(pages).as_posix()
+            expected_page = f"{site}/{relative}"
+            page_url = _absolute_url(canonicals[0], expected_page)
+            if page_url != expected_page:
+                raise ValueError(
+                    f"{hub} canonical URL does not match its published path: "
+                    f"{page_url}"
+                )
+            if page_url in seen_pages:
+                raise ValueError(f"Duplicate Image Sitemap page URL: {page_url}")
+            image_url = _absolute_url(images[0], page_url)
+            _owned_file(image_url, pages, site)
+            seen_pages.add(page_url)
+            entries.append((page_url, image_url))
+
     if not entries:
         raise ValueError("No canonical Web Story posters were found")
     return entries
@@ -135,7 +199,7 @@ def _write_if_changed(path: Path, content: str) -> bool:
 
 
 def generate(pages: Path = PAGES, site: str = SITE) -> tuple[int, bool]:
-    entries = collect(pages, site)
+    entries = collect(pages, site, include_hubs=True)
     changed = _write_if_changed(pages / "sitemap_images.xml", render(entries))
     return len(entries), changed
 
@@ -148,7 +212,7 @@ def main() -> None:
     args = parser.parse_args()
     count, changed = generate(args.pages)
     state = "updated" if changed else "unchanged"
-    print(f"Image Sitemap {state}: {count} canonical Web Story posters")
+    print(f"Image Sitemap {state}: {count} owned preview images")
 
 
 if __name__ == "__main__":

@@ -391,14 +391,27 @@ class GeneratorTests(unittest.TestCase):
             (pages / "stories" / "index.html").write_text(
                 "<html></html>", encoding="utf-8"
             )
+            unfurl = pages / "social" / "img" / "alpha-unfurl.jpg"
+            unfurl.parent.mkdir(parents=True)
+            unfurl.write_bytes(b"large-owned-preview")
+            for relative in ("hubs/alpha.html", "zh-Hant/hubs/alpha.html"):
+                hub = pages / relative
+                hub.parent.mkdir(parents=True, exist_ok=True)
+                hub.write_text(
+                    '<link rel="canonical" href="'
+                    f"{gen_image_sitemap.SITE}/{relative}\">"
+                    '<meta property="og:image" content="'
+                    f"{gen_image_sitemap.SITE}/social/img/alpha-unfurl.jpg\">",
+                    encoding="utf-8",
+                )
 
             count, changed = gen_image_sitemap.generate(pages)
             output = pages / "sitemap_images.xml"
             first_mtime = output.stat().st_mtime_ns
             second_count, second_changed = gen_image_sitemap.generate(pages)
 
-            self.assertEqual((2, True), (count, changed))
-            self.assertEqual((2, False), (second_count, second_changed))
+            self.assertEqual((4, True), (count, changed))
+            self.assertEqual((4, False), (second_count, second_changed))
             self.assertEqual(first_mtime, output.stat().st_mtime_ns)
             root = ET.parse(output).getroot()
             sitemap = f"{{{gen_image_sitemap.SITEMAP_NS}}}"
@@ -408,6 +421,8 @@ class GeneratorTests(unittest.TestCase):
                 [
                     f"{gen_image_sitemap.SITE}/stories/alpha.html",
                     f"{gen_image_sitemap.SITE}/stories/beta.html",
+                    f"{gen_image_sitemap.SITE}/hubs/alpha.html",
+                    f"{gen_image_sitemap.SITE}/zh-Hant/hubs/alpha.html",
                 ],
                 [item.findtext(f"{sitemap}loc") for item in urls],
             )
@@ -415,6 +430,8 @@ class GeneratorTests(unittest.TestCase):
                 [
                     f"{gen_image_sitemap.SITE}/stories/img/alpha-poster.jpg",
                     f"{gen_image_sitemap.SITE}/stories/img/beta-poster.jpg",
+                    f"{gen_image_sitemap.SITE}/social/img/alpha-unfurl.jpg",
+                    f"{gen_image_sitemap.SITE}/social/img/alpha-unfurl.jpg",
                 ],
                 [
                     item.find(f"{image}image").findtext(f"{image}loc")
@@ -640,8 +657,9 @@ class GeneratorTests(unittest.TestCase):
             localized = pages / "zh-Hant" / "guides" / "lumibopomofo.html"
             story = pages / "stories" / "lumibopomofo.html"
             poster = pages / "stories" / "img" / "lumibopomofo-poster.jpg"
+            icon = pages / "stories" / "img" / "lumibopomofo-icon.jpg"
             hub = pages / "hubs" / "lumibopomofo.html"
-            for path in (guide, localized, story, poster, hub):
+            for path in (guide, localized, story, poster, icon, hub):
                 path.parent.mkdir(parents=True, exist_ok=True)
             site = gen_social_previews.SITE
             guide.write_text(
@@ -705,6 +723,7 @@ class GeneratorTests(unittest.TestCase):
                 encoding="utf-8",
             )
             Image.new("RGB", (720, 960), (91, 95, 242)).save(poster, "JPEG")
+            Image.new("RGB", (256, 256), (138, 92, 246)).save(icon, "JPEG")
             hub.write_text("<head></head>", encoding="utf-8")
             (pages / "index.html").write_text(
                 f'<head><link rel="canonical" href="{site}/index.html"></head>',
@@ -740,10 +759,12 @@ class GeneratorTests(unittest.TestCase):
                 encoding="utf-8",
             )
             stale_card = pages / "social" / "img" / "stale-share.jpg"
+            stale_unfurl = pages / "social" / "img" / "stale-unfurl.jpg"
             stale_oembed = pages / "oembed" / "stale.json"
             stale_card.parent.mkdir(parents=True)
             stale_oembed.parent.mkdir(parents=True)
             stale_card.write_bytes(b"stale")
+            stale_unfurl.write_bytes(b"stale")
             stale_oembed.write_text("{}", encoding="utf-8")
             stale_guide = pages / "guides" / "stale.html"
             stale_guide.write_text(
@@ -762,6 +783,7 @@ class GeneratorTests(unittest.TestCase):
                 pages / "oembed" / "ja" / "lumibopomofo.json",
                 localized_app_pages["ja"],
                 pages / "sitemap_oembed.xml",
+                pages / "social" / "img" / "lumibopomofo-unfurl.jpg",
             ]
             mtimes = {path: path.stat().st_mtime_ns for path in tracked}
             second = gen_social_previews.generate(pages, {"lumibopomofo"})
@@ -770,17 +792,19 @@ class GeneratorTests(unittest.TestCase):
                 {
                     "apps": 1,
                     "cards": 1,
+                    "hub_cards": 1,
                     "oembed": 51,
                     "metadata_pages": 1,
                     "localized_metadata_pages": 50,
                     "hero_pages": 1,
-                    "changed_files": 108,
+                    "changed_files": 110,
                 },
                 first,
             )
             self.assertEqual(0, second["changed_files"])
             self.assertEqual(mtimes, {path: path.stat().st_mtime_ns for path in tracked})
             self.assertFalse(stale_card.exists())
+            self.assertFalse(stale_unfurl.exists())
             self.assertFalse(stale_oembed.exists())
             self.assertNotIn(
                 gen_social_previews.BLOCK_START,
@@ -794,6 +818,12 @@ class GeneratorTests(unittest.TestCase):
                 self.assertEqual(gen_social_previews.CARD_SIZE, card.size)
                 extrema = card.convert("L").getextrema()
                 self.assertGreater(extrema[1] - extrema[0], 10)
+            with Image.open(tracked[-1]) as card:
+                self.assertEqual("JPEG", card.format)
+                self.assertEqual(gen_social_previews.HUB_CARD_SIZE, card.size)
+                extrema = card.convert("L").getextrema()
+                self.assertGreater(extrema[1] - extrema[0], 10)
+            self.assertLess(tracked[-1].stat().st_size, 200_000)
 
             embed = json.loads(tracked[2].read_text(encoding="utf-8"))
             self.assertEqual("1.0", embed["version"])
@@ -1035,6 +1065,7 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(1, len(schemas))
             schema = schemas[0]
             self.assertEqual("WebPage", schema["@type"])
+            self.assertEqual("en", schema["inLanguage"])
             self.assertEqual(
                 f"{site}/guides/lumibopomofo.html#webpage", schema["@id"]
             )
@@ -1043,6 +1074,10 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(
                 f"{site}/social/img/lumibopomofo-share.jpg",
                 primary["contentUrl"],
+            )
+            self.assertEqual(
+                {"@id": "https://apps.apple.com/app/id6773017109"},
+                schema["mainEntity"],
             )
             self.assertEqual((1200, 675), (primary["width"], primary["height"]))
             self.assertEqual("image/jpeg", primary["encodingFormat"])
@@ -21649,9 +21684,9 @@ class GeneratorTests(unittest.TestCase):
             "ensure_live_guides.py",
             "gen_webstories.py",
             "gen_webstories_i18n.py",
-            "gen_image_sitemap.py",
             "gen_linkset.py",
             "gen_social_previews.py",
+            "gen_image_sitemap.py",
             "gen_smart_app_banners.py",
             "gen_mobile_app_identity.py",
             "gen_webmcp_install_tools.py",
@@ -21726,9 +21761,9 @@ class GeneratorTests(unittest.TestCase):
         )[1].split("- name: Commit localized pages if any", 1)[0]
         final_chain = (
             "cleanup_localized_assets.py --cached-live",
-            "gen_image_sitemap.py",
             "gen_linkset.py",
             "gen_social_previews.py",
+            "gen_image_sitemap.py",
             "gen_smart_app_banners.py",
             "gen_mobile_app_identity.py",
             "gen_webmcp_install_tools.py",
@@ -21754,9 +21789,9 @@ class GeneratorTests(unittest.TestCase):
             "ensure_live_guides.py",
             "gen_webstories.py",
             "gen_webstories_i18n.py",
-            "gen_image_sitemap.py",
             "gen_linkset.py",
             "gen_social_previews.py",
+            "gen_image_sitemap.py",
             "gen_smart_app_banners.py",
             "gen_mobile_app_identity.py",
             "gen_webmcp_install_tools.py",
@@ -22010,9 +22045,9 @@ class GeneratorTests(unittest.TestCase):
             "fix_en_hreflang.py",
             "gen_webstories.py",
             "gen_webstories_i18n.py",
-            "gen_image_sitemap.py",
             "gen_linkset.py",
             "gen_social_previews.py",
+            "gen_image_sitemap.py",
             "gen_smart_app_banners.py",
             "gen_mobile_app_identity.py",
             "gen_webmcp_install_tools.py",
@@ -22892,17 +22927,34 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn(
             '<meta property="og:image" content="'
             "https://alice51849.github.io/ios-app-guide/"
-            'stories/img/lumibopomofo-icon.jpg">',
+            'social/img/lumibopomofo-unfurl.jpg">',
             hub,
         )
-        self.assertIn('<meta name="twitter:card" content="summary">', hub)
+        self.assertIn(
+            '<meta name="robots" content="index,follow,'
+            'max-image-preview:large,max-snippet:-1,max-video-preview:-1">',
+            hub,
+        )
+        self.assertIn(
+            '<meta property="og:image:width" content="1200">',
+            hub,
+        )
+        self.assertIn(
+            '<meta property="og:image:height" content="630">',
+            hub,
+        )
+        self.assertIn(
+            '<meta name="twitter:card" content="summary_large_image">',
+            hub,
+        )
         self.assertIn(
             '<meta name="twitter:image" content="'
             "https://alice51849.github.io/ios-app-guide/"
-            'stories/img/lumibopomofo-icon.jpg">',
+            'social/img/lumibopomofo-unfurl.jpg">',
             hub,
         )
         self.assertNotIn("lumibopomofo-share.jpg", hub)
+        self.assertNotIn("lumibopomofo-icon.jpg", hub)
         self.assertIn(
             'hreflang="zh-Hant" '
             'href="https://alice51849.github.io/ios-app-guide/'
@@ -22970,7 +23022,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn(
             '<meta property="og:image" content="'
             "https://alice51849.github.io/ios-app-guide/"
-            'stories/img/hourstag-icon.jpg">',
+            'social/img/hourstag-unfurl.jpg">',
             hub,
         )
         self.assertIn(
@@ -22981,10 +23033,11 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn(
             '<meta name="twitter:image" content="'
             "https://alice51849.github.io/ios-app-guide/"
-            'stories/img/hourstag-icon.jpg">',
+            'social/img/hourstag-unfurl.jpg">',
             hub,
         )
         self.assertNotIn("hourstag-share.jpg", hub)
+        self.assertNotIn("hourstag-icon.jpg", hub)
         self.assertIn("white-space:nowrap", hub)
         self.assertNotIn('"price"', hub)
         self.assertEqual(
@@ -23044,9 +23097,13 @@ class GeneratorTests(unittest.TestCase):
                 self.assertTrue(name, (locale, key))
                 self.assertTrue(description, (locale, key))
                 self.assertIn(
-                    f"{gen_hubs.SITE}/stories/img/{key}-icon.jpg",
+                    f"{gen_hubs.SITE}/social/img/{key}-unfurl.jpg",
                     metadata,
                 )
+                self.assertIn("max-image-preview:large", metadata)
+                self.assertIn('content="summary_large_image"', metadata)
+                self.assertIn('content="1200"', metadata)
+                self.assertIn('content="630"', metadata)
                 self.assertIn(
                     f'<meta property="og:locale" '
                     f'content="{gen_hubs.open_graph_locale(locale)}">',
@@ -23058,7 +23115,12 @@ class GeneratorTests(unittest.TestCase):
                     metadata,
                 )
                 self.assertTrue(
-                    (Path(gen_hubs.PAGES) / "stories" / "img" / f"{key}-icon.jpg").is_file(),
+                    (
+                        Path(gen_hubs.PAGES)
+                        / "social"
+                        / "img"
+                        / f"{key}-unfurl.jpg"
+                    ).is_file(),
                     (locale, key),
                 )
                 self.assertNotIn("-share.jpg", metadata)
@@ -23067,6 +23129,30 @@ class GeneratorTests(unittest.TestCase):
                 checked += 1
         self.assertEqual(len(live) * len(OFFICIAL_LOCALES), checked)
         self.assertEqual(checked, rich + fallback)
+
+    def test_image_sitemap_covers_every_live_topic_hub_large_preview(self):
+        pages = Path(gen_hubs.PAGES)
+        live = set(
+            gen_hubs.live_app_keys(
+                gen_hubs.APPSTORE,
+                gen_hubs.PAGES,
+                refresh=False,
+            )
+        )
+        entries = dict(
+            gen_image_sitemap.collect(pages, include_hubs=True)
+        )
+        expected = {}
+        for key in live:
+            image = f"{gen_hubs.SITE}/social/img/{key}-unfurl.jpg"
+            expected[f"{gen_hubs.SITE}/hubs/{key}.html"] = image
+            for locale in OFFICIAL_LOCALES:
+                expected[
+                    f"{gen_hubs.SITE}/{locale}/hubs/{key}.html"
+                ] = image
+        self.assertEqual(len(live) * (len(OFFICIAL_LOCALES) + 1), len(expected))
+        self.assertEqual(expected, {url: entries[url] for url in expected})
+        self.assertEqual(len(live), len(set(expected.values())))
 
     def test_topic_hub_falls_back_to_native_guide_for_new_live_app(self):
         self.assertEqual(

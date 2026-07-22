@@ -942,8 +942,9 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
         commands = (
             "python3 ensure_live_guides.py",
             "python3 gen_webstories.py",
-            "python3 gen_image_sitemap.py",
             "python3 gen_linkset.py",
+            "python3 gen_social_previews.py",
+            "python3 gen_image_sitemap.py",
         )
         positions = [text.index(command) for command in commands]
         self.assertEqual(positions, sorted(positions))

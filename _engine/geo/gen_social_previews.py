@@ -51,6 +51,8 @@ SITE = os.environ.get(
 CARD_SIZE = (1200, 675)
 POSTER_SIZE = (450, 600)
 BUYER_INTENT_SIZE = (1200, 630)
+HUB_CARD_SIZE = (1200, 630)
+HUB_ICON_SIZE = (256, 256)
 OEMBED_SIZE = (
     BUYER_INTENT_SIZE[0] // 2,
     BUYER_INTENT_SIZE[1] // 2,
@@ -67,6 +69,11 @@ BLOCK_START = "<!-- social-preview:start -->"
 BLOCK_END = "<!-- social-preview:end -->"
 QR_STYLE_ANCHOR = "<!-- app-store-qr-style:start -->"
 DECISION_STYLE_ANCHOR = "<!-- app-decision-card-style:start -->"
+SMART_APP_BANNER_END = "<!-- smart-app-banner:end -->"
+LINKSET_TAG_RE = re.compile(
+    r'<link\b(?=[^>]*\brel=["\']linkset["\'])[^>]*>',
+    flags=re.IGNORECASE,
+)
 BLOCK_RE = re.compile(
     rf"\s*{re.escape(BLOCK_START)}.*?{re.escape(BLOCK_END)}\s*",
     flags=re.DOTALL,
@@ -211,6 +218,113 @@ def render_card(poster_path: Path) -> bytes:
         output,
         format="JPEG",
         quality=88,
+        optimize=True,
+        progressive=True,
+    )
+    return output.getvalue()
+
+
+def render_hub_card(icon_path: Path) -> bytes:
+    """Render a language-neutral large preview without embedding copy."""
+    with Image.open(icon_path) as source:
+        icon = ImageOps.fit(
+            source.convert("RGB"),
+            HUB_ICON_SIZE,
+            method=Image.Resampling.LANCZOS,
+        )
+
+    background = ImageOps.fit(
+        icon,
+        HUB_CARD_SIZE,
+        method=Image.Resampling.LANCZOS,
+    ).filter(ImageFilter.GaussianBlur(72))
+    canvas = background.convert("RGBA")
+
+    shade = Image.new("RGBA", HUB_CARD_SIZE, (0, 0, 0, 0))
+    shade_draw = ImageDraw.Draw(shade)
+    for y in range(HUB_CARD_SIZE[1]):
+        alpha = 92 + (68 * y // (HUB_CARD_SIZE[1] - 1))
+        shade_draw.line(
+            (0, y, HUB_CARD_SIZE[0], y),
+            fill=(4, 7, 18, alpha),
+        )
+    shade_draw.ellipse(
+        (-210, -310, 390, 290),
+        fill=(255, 255, 255, 18),
+        outline=(255, 255, 255, 34),
+        width=3,
+    )
+    shade_draw.ellipse(
+        (880, 330, 1390, 840),
+        fill=(255, 255, 255, 14),
+        outline=(255, 255, 255, 28),
+        width=3,
+    )
+    canvas = Image.alpha_composite(canvas, shade)
+
+    panel_size = 352
+    panel_x = (HUB_CARD_SIZE[0] - panel_size) // 2
+    panel_y = (HUB_CARD_SIZE[1] - panel_size) // 2
+    shadow = Image.new("RGBA", HUB_CARD_SIZE, (0, 0, 0, 0))
+    ImageDraw.Draw(shadow).rounded_rectangle(
+        (
+            panel_x - 14,
+            panel_y + 12,
+            panel_x + panel_size + 14,
+            panel_y + panel_size + 34,
+        ),
+        radius=92,
+        fill=(0, 0, 0, 165),
+    )
+    canvas = Image.alpha_composite(
+        canvas,
+        shadow.filter(ImageFilter.GaussianBlur(28)),
+    )
+
+    panel = Image.new("RGBA", HUB_CARD_SIZE, (0, 0, 0, 0))
+    ImageDraw.Draw(panel).rounded_rectangle(
+        (
+            panel_x,
+            panel_y,
+            panel_x + panel_size - 1,
+            panel_y + panel_size - 1,
+        ),
+        radius=82,
+        fill=(255, 255, 255, 36),
+        outline=(255, 255, 255, 92),
+        width=2,
+    )
+    canvas = Image.alpha_composite(canvas, panel)
+
+    icon_x = (HUB_CARD_SIZE[0] - HUB_ICON_SIZE[0]) // 2
+    icon_y = (HUB_CARD_SIZE[1] - HUB_ICON_SIZE[1]) // 2
+    icon_mask = Image.new("L", HUB_ICON_SIZE, 0)
+    ImageDraw.Draw(icon_mask).rounded_rectangle(
+        (0, 0, HUB_ICON_SIZE[0] - 1, HUB_ICON_SIZE[1] - 1),
+        radius=58,
+        fill=255,
+    )
+    canvas.paste(icon, (icon_x, icon_y), icon_mask)
+
+    icon_border = Image.new("RGBA", HUB_CARD_SIZE, (0, 0, 0, 0))
+    ImageDraw.Draw(icon_border).rounded_rectangle(
+        (
+            icon_x,
+            icon_y,
+            icon_x + HUB_ICON_SIZE[0] - 1,
+            icon_y + HUB_ICON_SIZE[1] - 1,
+        ),
+        radius=58,
+        outline=(255, 255, 255, 105),
+        width=2,
+    )
+    canvas = Image.alpha_composite(canvas, icon_border)
+
+    output = BytesIO()
+    canvas.convert("RGB").save(
+        output,
+        format="JPEG",
+        quality=90,
         optimize=True,
         progressive=True,
     )
@@ -446,7 +560,9 @@ def primary_image_schema(
 
 def _json_ld(document: dict[str, object]) -> str:
     return json.dumps(
-        document, ensure_ascii=False, separators=(",", ":")
+        document,
+        ensure_ascii=False,
+        indent=2,
     ).replace("</", "<\\/")
 
 
@@ -493,7 +609,7 @@ def metadata_block(
     app_name: str,
     site: str = SITE,
     *,
-    locale: str = "en-US",
+    locale: str = "en",
     endpoint_locale: str | None = None,
     image_alt: str | None = None,
     storefront: dict[str, object] | None = None,
@@ -509,6 +625,10 @@ def metadata_block(
         image_alt,
         locale,
     )
+    if key in APPSTORE:
+        schema["mainEntity"] = {
+            "@id": f"https://apps.apple.com/app/id{APPSTORE[key]}"
+        }
     social_description = _social_description(description, storefront)
     og_type = "product" if storefront is not None else "website"
     esc = lambda value: html.escape(str(value), quote=True)
@@ -524,7 +644,10 @@ def metadata_block(
         f'<meta property="og:image:height" content="{CARD_SIZE[1]}">',
         f'<meta property="og:image:alt" content="{esc(image_alt)}">',
         f'<meta property="og:description" content="{esc(social_description)}">',
-        f'<meta property="og:locale" content="{esc(_open_graph_locale(locale))}">',
+        (
+            f'<meta property="og:locale" '
+            f'content="{esc("en_US" if locale == "en" else _open_graph_locale(locale))}">'
+        ),
         '<meta property="og:site_name" content="iOS App Guide">',
     ]
     if storefront is not None:
@@ -587,6 +710,16 @@ def metadata_block(
 
 def _metadata_insert_index(source: str) -> int:
     head_index = source.index("</head>")
+    smart_banner_end = source.find(SMART_APP_BANNER_END)
+    if 0 <= smart_banner_end < head_index:
+        linkset = LINKSET_TAG_RE.search(
+            source,
+            smart_banner_end + len(SMART_APP_BANNER_END),
+            head_index,
+        )
+        return linkset.end() if linkset else smart_banner_end + len(
+            SMART_APP_BANNER_END
+        )
     feed_match = gen_linkset.FEED_DISCOVERY_RE.search(source)
     if feed_match:
         head_index = min(head_index, feed_match.start())
@@ -772,8 +905,15 @@ def generate(
         title, description = _guide_metadata(guide_path, record["guide"])
         poster_path = gen_linkset._owned_path(record["poster"], pages, site)
         card_path = image_dir / f"{key}-share.jpg"
+        hub_card_path = image_dir / f"{key}-unfurl.jpg"
+        icon_path = pages / "stories" / "img" / f"{key}-icon.jpg"
+        if not icon_path.is_file():
+            raise FileNotFoundError(f"Hub preview icon is missing: {icon_path}")
         image_url = f"{site}/social/img/{key}-share.jpg"
         changed += int(_write_bytes_if_changed(card_path, render_card(poster_path)))
+        changed += int(
+            _write_bytes_if_changed(hub_card_path, render_hub_card(icon_path))
+        )
         changed += int(
             _write_text_if_changed(
                 oembed_dir / f"{key}.json",
@@ -897,6 +1037,10 @@ def generate(
         if stale.name.removesuffix("-share.jpg") not in live_key_set:
             stale.unlink()
             changed += 1
+    for stale in image_dir.glob("*-unfurl.jpg") if image_dir.is_dir() else ():
+        if stale.name.removesuffix("-unfurl.jpg") not in live_key_set:
+            stale.unlink()
+            changed += 1
     for stale in oembed_dir.rglob("*.json") if oembed_dir.is_dir() else ():
         if stale not in expected_oembed_files:
             stale.unlink()
@@ -916,6 +1060,7 @@ def generate(
     return {
         "apps": len(records),
         "cards": len(records),
+        "hub_cards": len(records),
         "oembed": len(oembed_paths),
         "metadata_pages": len(records),
         "localized_metadata_pages": localized_metadata_pages,

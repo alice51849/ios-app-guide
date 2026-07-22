@@ -197,17 +197,21 @@ def _schema_json(value):
     ).replace("</", "<\\/")
 
 
-def _app_icon_url(key):
+def _app_unfurl_url(key):
     if key not in APPSTORE:
         raise ValueError(f"Unknown app key: {key}")
-    return f"{SITE}/stories/img/{key}-icon.jpg"
+    return f"{SITE}/social/img/{key}-unfurl.jpg"
 
 
 def _social_metadata(key, title, description, canonical, image_alt, locale):
     e = html.escape
-    image_url = _app_icon_url(key)
+    image_url = _app_unfurl_url(key)
     return "\n".join(
         (
+            (
+                '<meta name="robots" content="index,follow,'
+                'max-image-preview:large,max-snippet:-1,max-video-preview:-1">'
+            ),
             '<meta property="og:type" content="website">',
             f'<meta property="og:title" content="{e(title)}">',
             f'<meta property="og:description" content="{e(description)}">',
@@ -215,12 +219,12 @@ def _social_metadata(key, title, description, canonical, image_alt, locale):
             f'<meta property="og:image" content="{e(image_url)}">',
             f'<meta property="og:image:secure_url" content="{e(image_url)}">',
             '<meta property="og:image:type" content="image/jpeg">',
-            '<meta property="og:image:width" content="256">',
-            '<meta property="og:image:height" content="256">',
+            '<meta property="og:image:width" content="1200">',
+            '<meta property="og:image:height" content="630">',
             f'<meta property="og:image:alt" content="{e(image_alt)}">',
             f'<meta property="og:locale" content="{open_graph_locale(locale)}">',
             '<meta property="og:site_name" content="iOS App Guide">',
-            '<meta name="twitter:card" content="summary">',
+            '<meta name="twitter:card" content="summary_large_image">',
             f'<meta name="twitter:title" content="{e(title)}">',
             f'<meta name="twitter:description" content="{e(description)}">',
             f'<meta name="twitter:image" content="{e(image_url)}">',

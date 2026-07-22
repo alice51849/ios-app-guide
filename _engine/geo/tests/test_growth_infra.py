@@ -24336,6 +24336,34 @@ class GeneratorTests(unittest.TestCase):
         self.assertFalse(by_key["zafe"]["public"])
         self.assertEqual("", by_key["zafe"]["appstore"])
 
+    def test_scorecard_counts_dynamic_portfolio_social_coverage(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            scripts = pages / ".github" / "scripts"
+            workflows = pages / ".github" / "workflows"
+            scripts.mkdir(parents=True)
+            workflows.mkdir(parents=True)
+            (scripts / "portfolio_daily.py").write_text("", encoding="utf-8")
+            (workflows / "portfolio-daily.yml").write_text("", encoding="utf-8")
+            (pages / "apps.json").write_text(
+                json.dumps([
+                    {
+                        "appStoreUrl": (
+                            "https://apps.apple.com/app/id6792850916"
+                        )
+                    }
+                ]),
+                encoding="utf-8",
+            )
+            with mock.patch.object(
+                outreach_scorecard, "PAGES", str(pages)
+            ):
+                rows = outreach_scorecard.build_rows({"maskmyfile"})
+
+        row = next(row for row in rows if row["key"] == "maskmyfile")
+        self.assertEqual(1, row["social_posts"])
+        self.assertEqual(["zh-Hant"], row["social_languages"])
+
     def test_new_live_apps_lead_with_curated_purchase_intent_queries(self):
         required_phrases = {
             "dailymate": (

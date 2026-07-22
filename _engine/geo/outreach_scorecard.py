@@ -29,15 +29,59 @@ def slugify(question):
     ).strip("-")
 
 
-def _social_posts():
+def _portfolio_social_posts(public_keys):
+    catalog_path = os.path.join(PAGES, "apps.json")
+    required_assets = (
+        os.path.join(PAGES, ".github", "scripts", "portfolio_daily.py"),
+        os.path.join(PAGES, ".github", "workflows", "portfolio-daily.yml"),
+        catalog_path,
+    )
+    if not all(os.path.exists(path) for path in required_assets):
+        return []
+    try:
+        with open(catalog_path, encoding="utf-8") as handle:
+            catalog = json.load(handle)
+    except (OSError, json.JSONDecodeError):
+        return []
+    if not isinstance(catalog, list):
+        raise ValueError("Portfolio app catalog must be an array")
+    public_ids = {
+        str(APPSTORE[key])
+        for key in public_keys
+        if key in APPSTORE and APPSTORE[key]
+    }
+    catalog_ids = set()
+    for item in catalog:
+        if not isinstance(item, dict):
+            raise ValueError("Portfolio app catalog entries must be objects")
+        match = re.fullmatch(
+            r"https://apps\.apple\.com/app/id(\d+)",
+            str(item.get("appStoreUrl", "")),
+        )
+        if match:
+            catalog_ids.add(match.group(1))
+    return [
+        {
+            "app": app_id,
+            "lang": "zh-Hant",
+            "source": "portfolio-daily",
+        }
+        for app_id in sorted(public_ids & catalog_ids)
+    ]
+
+
+def _social_posts(public_keys):
     path = os.path.join(
         PAGES, ".github", "scripts", "telegram_posts.json"
     )
     try:
         with open(path, encoding="utf-8") as handle:
-            return json.load(handle)
+            posts = json.load(handle)
     except (OSError, json.JSONDecodeError):
-        return []
+        posts = []
+    if not isinstance(posts, list):
+        raise ValueError("Telegram post pool must be an array")
+    return posts + _portfolio_social_posts(public_keys)
 
 
 def _exists(relative):
@@ -45,7 +89,7 @@ def _exists(relative):
 
 
 def build_rows(public_keys):
-    posts = _social_posts()
+    posts = _social_posts(public_keys)
     alternatives = os.path.join(PAGES, "alternatives")
     alt_files = os.listdir(alternatives) if os.path.isdir(alternatives) else []
     rows = []

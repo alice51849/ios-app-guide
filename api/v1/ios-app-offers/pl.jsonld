@@ -7,7 +7,7 @@
   "description": "Pierwotny katalog określający, dla kogo jest przeznaczona każda aplikacja, jakie zadanie ma wykonać oraz bezpośrednią ścieżkę do App Store.",
   "inLanguage": "pl",
   "dateModified": "2026-07-22",
-  "numberOfItems": 29,
+  "numberOfItems": 32,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -1201,6 +1201,72 @@
     {
       "@type": "ListItem",
       "position": 19,
+      "url": "https://apps.apple.com/pl/app/id6792850916",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/pl.jsonld#offer-maskmyfile",
+        "url": "https://apps.apple.com/pl/app/id6792850916",
+        "name": "Mask My File",
+        "description": "Udostępniaj bezpiecznie, nie tracąc potrzebnego kontekstu. Mask My File znajduje dane osobowe, zanim wyślesz plik, trwale zaczernia wybrane fragmenty, a",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6792850916",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6792850916"
+          },
+          "name": "Mask My File",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/pl/app/id6792850916",
+          "installUrl": "https://apps.apple.com/pl/app/id6792850916",
+          "downloadUrl": "https://apps.apple.com/pl/app/id6792850916",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pl/app/id6792850916"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/pl/maskmyfile.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6792850916",
+          "inLanguage": "pl",
+          "description": "Udostępniaj bezpiecznie, nie tracąc potrzebnego kontekstu. Mask My File znajduje dane osobowe, zanim wyślesz plik, trwale zaczernia wybrane fragmenty, a",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/pl.jsonld#offer-maskmyfile"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PLN",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PL"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 20,
       "url": "https://apps.apple.com/pl/app/id6785004775",
       "item": {
         "@type": "Offer",
@@ -1266,7 +1332,73 @@
     },
     {
       "@type": "ListItem",
-      "position": 20,
+      "position": 21,
+      "url": "https://apps.apple.com/pl/app/id6790800323",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/pl.jsonld#offer-mochidonestamp",
+        "url": "https://apps.apple.com/pl/app/id6790800323",
+        "name": "Mochi DoneStamp: Ostatni raz",
+        "description": "Kiedy ostatnio zmieniono pościel, podlano roślinę, zadzwoniono do bliskich, zrobiono kopię zdjęć albo wymieniono filtr?",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6790800323",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6790800323"
+          },
+          "name": "Mochi DoneStamp: Ostatni raz",
+          "operatingSystem": "iOS",
+          "applicationCategory": "LifestyleApplication",
+          "url": "https://apps.apple.com/pl/app/id6790800323",
+          "installUrl": "https://apps.apple.com/pl/app/id6790800323",
+          "downloadUrl": "https://apps.apple.com/pl/app/id6790800323",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pl/app/id6790800323"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/pl/mochidonestamp.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6790800323",
+          "inLanguage": "pl",
+          "description": "Kiedy ostatnio zmieniono pościel, podlano roślinę, zadzwoniono do bliskich, zrobiono kopię zdjęć albo wymieniono filtr?",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/pl.jsonld#offer-mochidonestamp"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PLN",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PL"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 22,
       "url": "https://apps.apple.com/pl/app/id6781808054",
       "item": {
         "@type": "Offer",
@@ -1332,7 +1464,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 21,
+      "position": 23,
       "url": "https://apps.apple.com/pl/app/id6780223070",
       "item": {
         "@type": "Offer",
@@ -1398,7 +1530,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 22,
+      "position": 24,
       "url": "https://apps.apple.com/pl/app/id6779977651",
       "item": {
         "@type": "Offer",
@@ -1464,7 +1596,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 23,
+      "position": 25,
       "url": "https://apps.apple.com/pl/app/id6788236641",
       "item": {
         "@type": "Offer",
@@ -1530,7 +1662,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 24,
+      "position": 26,
       "url": "https://apps.apple.com/pl/app/id6780575828",
       "item": {
         "@type": "Offer",
@@ -1596,7 +1728,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 25,
+      "position": 27,
       "url": "https://apps.apple.com/pl/app/id6782139553",
       "item": {
         "@type": "Offer",
@@ -1662,7 +1794,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 26,
+      "position": 28,
       "url": "https://apps.apple.com/pl/app/id6791299610",
       "item": {
         "@type": "Offer",
@@ -1728,7 +1860,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 27,
+      "position": 29,
       "url": "https://apps.apple.com/pl/app/id6787754435",
       "item": {
         "@type": "Offer",
@@ -1794,7 +1926,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 28,
+      "position": 30,
       "url": "https://apps.apple.com/pl/app/id6782275018",
       "item": {
         "@type": "Offer",
@@ -1860,7 +1992,73 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
+      "position": 31,
+      "url": "https://apps.apple.com/pl/app/id6790467886",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/pl.jsonld#offer-wifiaid",
+        "url": "https://apps.apple.com/pl/app/id6790467886",
+        "name": "WiFi Aid",
+        "description": "Znajdź najbardziej prawdopodobną przyczynę dzięki niezależnym testom tras, DNS, TCP, TLS, czasu i stabilności. Jedna opłata z góry, bez subskrypcji, reklam",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6790467886",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6790467886"
+          },
+          "name": "WiFi Aid",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/pl/app/id6790467886",
+          "installUrl": "https://apps.apple.com/pl/app/id6790467886",
+          "downloadUrl": "https://apps.apple.com/pl/app/id6790467886",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pl/app/id6790467886"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/pl/wifiaid.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6790467886",
+          "inLanguage": "pl",
+          "description": "Znajdź najbardziej prawdopodobną przyczynę dzięki niezależnym testom tras, DNS, TCP, TLS, czasu i stabilności. Jedna opłata z góry, bez subskrypcji, reklam",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/pl.jsonld#offer-wifiaid"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "29.99",
+        "priceCurrency": "PLN",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PL"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 32,
       "url": "https://apps.apple.com/pl/app/id6789917808",
       "item": {
         "@type": "Offer",

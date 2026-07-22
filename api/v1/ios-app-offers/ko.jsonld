@@ -7,7 +7,7 @@
   "description": "각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.",
   "inLanguage": "ko",
   "dateModified": "2026-07-22",
-  "numberOfItems": 29,
+  "numberOfItems": 32,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -1201,6 +1201,72 @@
     {
       "@type": "ListItem",
       "position": 19,
+      "url": "https://apps.apple.com/kr/app/id6792850916",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-maskmyfile",
+        "url": "https://apps.apple.com/kr/app/id6792850916",
+        "name": "Mask My File",
+        "description": "유용한 맥락은 지키면서 안전하게 공유하세요. Mask My File은 파일을 보내기 전에 개인정보를 찾아 영구적으로 가린 뒤, 새로 내보낸 파일을 다시 열어 검증하고 나서야 Private Ready를 표시합니다.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6792850916",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6792850916"
+          },
+          "name": "Mask My File",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/kr/app/id6792850916",
+          "installUrl": "https://apps.apple.com/kr/app/id6792850916",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6792850916",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/kr/app/id6792850916"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/ko/maskmyfile.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6792850916",
+          "inLanguage": "ko",
+          "description": "유용한 맥락은 지키면서 안전하게 공유하세요. Mask My File은 파일을 보내기 전에 개인정보를 찾아 영구적으로 가린 뒤, 새로 내보낸 파일을 다시 열어 검증하고 나서야 Private Ready를 표시합니다.",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-maskmyfile"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "KRW",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "KR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 20,
       "url": "https://apps.apple.com/kr/app/id6785004775",
       "item": {
         "@type": "Offer",
@@ -1266,7 +1332,73 @@
     },
     {
       "@type": "ListItem",
-      "position": 20,
+      "position": 21,
+      "url": "https://apps.apple.com/kr/app/id6790800323",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-mochidonestamp",
+        "url": "https://apps.apple.com/kr/app/id6790800323",
+        "name": "Mochi DoneStamp: 마지막 기록",
+        "description": "침구를 바꾼 때, 식물에 물을 준 때, 가족에게 전화한 때, 사진을 백업하거나 필터를 교체한 때가 언제였나요?",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6790800323",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6790800323"
+          },
+          "name": "Mochi DoneStamp: 마지막 기록",
+          "operatingSystem": "iOS",
+          "applicationCategory": "LifestyleApplication",
+          "url": "https://apps.apple.com/kr/app/id6790800323",
+          "installUrl": "https://apps.apple.com/kr/app/id6790800323",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6790800323",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/kr/app/id6790800323"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/ko/mochidonestamp.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6790800323",
+          "inLanguage": "ko",
+          "description": "침구를 바꾼 때, 식물에 물을 준 때, 가족에게 전화한 때, 사진을 백업하거나 필터를 교체한 때가 언제였나요?",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-mochidonestamp"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "KRW",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "KR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 22,
       "url": "https://apps.apple.com/kr/app/id6781808054",
       "item": {
         "@type": "Offer",
@@ -1332,7 +1464,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 21,
+      "position": 23,
       "url": "https://apps.apple.com/kr/app/id6780223070",
       "item": {
         "@type": "Offer",
@@ -1398,7 +1530,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 22,
+      "position": 24,
       "url": "https://apps.apple.com/kr/app/id6779977651",
       "item": {
         "@type": "Offer",
@@ -1464,7 +1596,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 23,
+      "position": 25,
       "url": "https://apps.apple.com/kr/app/id6788236641",
       "item": {
         "@type": "Offer",
@@ -1530,7 +1662,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 24,
+      "position": 26,
       "url": "https://apps.apple.com/kr/app/id6780575828",
       "item": {
         "@type": "Offer",
@@ -1596,7 +1728,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 25,
+      "position": 27,
       "url": "https://apps.apple.com/kr/app/id6782139553",
       "item": {
         "@type": "Offer",
@@ -1662,7 +1794,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 26,
+      "position": 28,
       "url": "https://apps.apple.com/kr/app/id6791299610",
       "item": {
         "@type": "Offer",
@@ -1728,7 +1860,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 27,
+      "position": 29,
       "url": "https://apps.apple.com/kr/app/id6787754435",
       "item": {
         "@type": "Offer",
@@ -1794,7 +1926,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 28,
+      "position": 30,
       "url": "https://apps.apple.com/kr/app/id6782275018",
       "item": {
         "@type": "Offer",
@@ -1860,7 +1992,73 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
+      "position": 31,
+      "url": "https://apps.apple.com/kr/app/id6790467886",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-wifiaid",
+        "url": "https://apps.apple.com/kr/app/id6790467886",
+        "name": "WiFi Aid",
+        "description": "다중 경로와 DNS, TCP, TLS, 응답 시간, 안정성을 함께 확인해 가장 가능성 높은 원인을 찾으세요. App Store 최초 1회 결제이며 구독, 광고, 추적이 없습니다.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6790467886",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6790467886"
+          },
+          "name": "WiFi Aid",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/kr/app/id6790467886",
+          "installUrl": "https://apps.apple.com/kr/app/id6790467886",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6790467886",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/kr/app/id6790467886"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/ko/wifiaid.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6790467886",
+          "inLanguage": "ko",
+          "description": "다중 경로와 DNS, TCP, TLS, 응답 시간, 안정성을 함께 확인해 가장 가능성 높은 원인을 찾으세요. App Store 최초 1회 결제이며 구독, 광고, 추적이 없습니다.",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-wifiaid"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "9900",
+        "priceCurrency": "KRW",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "KR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 32,
       "url": "https://apps.apple.com/kr/app/id6789917808",
       "item": {
         "@type": "Offer",

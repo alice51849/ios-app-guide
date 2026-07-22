@@ -132,6 +132,6 @@ JSON、JSONL 與 CSV 格式皆包含相同的 1,600 筆紀錄。
 
 [首頁](https://alice51849.github.io/ios-app-guide/zh-Hant/index.html) · [開放資料](https://alice51849.github.io/ios-app-guide/zh-Hant/data/lumi-studio-publisher-search-intent-catalog.html) · [授權條款](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-07-23
+更新日期: 2026-07-22
 
 CC BY 4.0 適用於原始目錄彙編；App 名稱與 App Store 商標分屬其權利人。

@@ -7,7 +7,7 @@
   "description": "প্রতিটি অ্যাপ কার জন্য তৈরি, তারা কোন কাজ সম্পন্ন করতে চায়, এবং সরাসরি App Store পথের প্রথম পক্ষের ক্যাটালগ।",
   "inLanguage": "bn-BD",
   "dateModified": "2026-07-22",
-  "numberOfItems": 29,
+  "numberOfItems": 32,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -1057,6 +1057,64 @@
     {
       "@type": "ListItem",
       "position": 19,
+      "url": "https://apps.apple.com/app/id6792850916",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/bn-BD.jsonld#offer-maskmyfile",
+        "url": "https://apps.apple.com/app/id6792850916",
+        "name": "Mask My File",
+        "description": "প্রয়োজনীয় প্রসঙ্গ না হারিয়ে নিরাপদে শেয়ার করুন। Mask My File আপনি ফাইল পাঠানোর আগেই ব্যক্তিগত তথ্য খুঁজে বের করে, স্থায়ীভাবে ঢেকে দেয়, তারপর তৈরি",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6792850916",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6792850916"
+          },
+          "name": "Mask My File",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/app/id6792850916",
+          "installUrl": "https://apps.apple.com/app/id6792850916",
+          "downloadUrl": "https://apps.apple.com/app/id6792850916",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/app/id6792850916"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/bn-BD/maskmyfile.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6792850916",
+          "inLanguage": "bn-BD",
+          "description": "প্রয়োজনীয় প্রসঙ্গ না হারিয়ে নিরাপদে শেয়ার করুন। Mask My File আপনি ফাইল পাঠানোর আগেই ব্যক্তিগত তথ্য খুঁজে বের করে, স্থায়ীভাবে ঢেকে দেয়, তারপর তৈরি",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/bn-BD.jsonld#offer-maskmyfile"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 20,
       "url": "https://apps.apple.com/app/id6785004775",
       "item": {
         "@type": "Offer",
@@ -1114,7 +1172,65 @@
     },
     {
       "@type": "ListItem",
-      "position": 20,
+      "position": 21,
+      "url": "https://apps.apple.com/app/id6790800323",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/bn-BD.jsonld#offer-mochidonestamp",
+        "url": "https://apps.apple.com/app/id6790800323",
+        "name": "Mochi DoneStamp: শেষবার",
+        "description": "শেষবার বিছানার চাদর বদলেছেন, গাছে পানি দিয়েছেন, পরিবারকে ফোন করেছেন, ছবি ব্যাকআপ করেছেন বা ফিল্টার বদলেছেন কখন?",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6790800323",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6790800323"
+          },
+          "name": "Mochi DoneStamp: শেষবার",
+          "operatingSystem": "iOS",
+          "applicationCategory": "LifestyleApplication",
+          "url": "https://apps.apple.com/app/id6790800323",
+          "installUrl": "https://apps.apple.com/app/id6790800323",
+          "downloadUrl": "https://apps.apple.com/app/id6790800323",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/app/id6790800323"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/bn-BD/mochidonestamp.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6790800323",
+          "inLanguage": "bn-BD",
+          "description": "শেষবার বিছানার চাদর বদলেছেন, গাছে পানি দিয়েছেন, পরিবারকে ফোন করেছেন, ছবি ব্যাকআপ করেছেন বা ফিল্টার বদলেছেন কখন?",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/bn-BD.jsonld#offer-mochidonestamp"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 22,
       "url": "https://apps.apple.com/app/id6781808054",
       "item": {
         "@type": "Offer",
@@ -1172,7 +1288,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 21,
+      "position": 23,
       "url": "https://apps.apple.com/app/id6780223070",
       "item": {
         "@type": "Offer",
@@ -1230,7 +1346,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 22,
+      "position": 24,
       "url": "https://apps.apple.com/app/id6779977651",
       "item": {
         "@type": "Offer",
@@ -1288,7 +1404,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 23,
+      "position": 25,
       "url": "https://apps.apple.com/app/id6788236641",
       "item": {
         "@type": "Offer",
@@ -1346,7 +1462,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 24,
+      "position": 26,
       "url": "https://apps.apple.com/app/id6780575828",
       "item": {
         "@type": "Offer",
@@ -1404,7 +1520,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 25,
+      "position": 27,
       "url": "https://apps.apple.com/app/id6782139553",
       "item": {
         "@type": "Offer",
@@ -1462,7 +1578,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 26,
+      "position": 28,
       "url": "https://apps.apple.com/app/id6791299610",
       "item": {
         "@type": "Offer",
@@ -1520,7 +1636,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 27,
+      "position": 29,
       "url": "https://apps.apple.com/app/id6787754435",
       "item": {
         "@type": "Offer",
@@ -1578,7 +1694,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 28,
+      "position": 30,
       "url": "https://apps.apple.com/app/id6782275018",
       "item": {
         "@type": "Offer",
@@ -1636,7 +1752,65 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
+      "position": 31,
+      "url": "https://apps.apple.com/app/id6790467886",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/bn-BD.jsonld#offer-wifiaid",
+        "url": "https://apps.apple.com/app/id6790467886",
+        "name": "WiFi Aid",
+        "description": "স্বাধীন পথ, DNS, TCP, TLS, টাইমিং ও স্থিতিশীলতা পরীক্ষায় সংযোগ সমস্যার সম্ভাব্য কারণ খুঁজুন। একবার কিনুন—কোনো সাবস্ক্রিপশন, বিজ্ঞাপন বা ট্র্যাকিং নেই।",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6790467886",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6790467886"
+          },
+          "name": "WiFi Aid",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/app/id6790467886",
+          "installUrl": "https://apps.apple.com/app/id6790467886",
+          "downloadUrl": "https://apps.apple.com/app/id6790467886",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/app/id6790467886"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/bn-BD/wifiaid.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6790467886",
+          "inLanguage": "bn-BD",
+          "description": "স্বাধীন পথ, DNS, TCP, TLS, টাইমিং ও স্থিতিশীলতা পরীক্ষায় সংযোগ সমস্যার সম্ভাব্য কারণ খুঁজুন। একবার কিনুন—কোনো সাবস্ক্রিপশন, বিজ্ঞাপন বা ট্র্যাকিং নেই।",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/bn-BD.jsonld#offer-wifiaid"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 32,
       "url": "https://apps.apple.com/app/id6789917808",
       "item": {
         "@type": "Offer",

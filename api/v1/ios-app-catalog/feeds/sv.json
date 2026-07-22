@@ -13,10 +13,10 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-07-22",
-    "contentDigest": "306ea447869be94b80f2489ed9d6323c32e9859764460bb99c3facefca2bec32",
+    "contentDigest": "5b7ec0e2b45456f28f61524f6b7f568eb60477841d65cc99110e61c76562ebaa",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 29
+    "recordCount": 31
   },
   "items": [
     {
@@ -686,6 +686,28 @@
       "date_modified": "2026-07-20T04:04:08Z"
     },
     {
+      "id": "https://apps.apple.com/app/id6792850916",
+      "url": "https://alice51849.github.io/ios-app-guide/sv/maskmyfile.html",
+      "external_url": "https://apps.apple.com/app/id6792850916",
+      "title": "Mask My File",
+      "content_text": "Dela säkert utan att förlora det nyttiga sammanhanget. Mask My File hittar personuppgifter innan du skickar en fil, maskerar permanent det du väljer och öppnar sedan den nya filen igen för att verifiera den innan Private Ready visas.",
+      "tags": [
+        "integritet",
+        "maskera",
+        "dokument",
+        "kvitto",
+        "faktura",
+        "personnummer",
+        "metadata",
+        "anonymisera",
+        "gdpr",
+        "pdf",
+        "skärmbild"
+      ],
+      "language": "sv",
+      "date_modified": "2026-07-22T16:22:36Z"
+    },
+    {
       "id": "https://apps.apple.com/app/id6785004775",
       "url": "https://alice51849.github.io/ios-app-guide/sv/mochi.html",
       "external_url": "https://apps.apple.com/se/app/id6785004775",
@@ -1003,6 +1025,28 @@
       ],
       "language": "sv",
       "date_modified": "2026-07-20T04:04:08Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6790467886",
+      "url": "https://alice51849.github.io/ios-app-guide/sv/wifiaid.html",
+      "external_url": "https://apps.apple.com/app/id6790467886",
+      "title": "WiFi Aid",
+      "content_text": "Hitta den troligaste orsaken med oberoende tester av vägar, DNS, TCP, TLS, svarstid och stabilitet. En betalning i förskott, utan abonnemang, reklam eller spårning.",
+      "tags": [
+        "internetfel",
+        "router",
+        "felsökning",
+        "fördröjning",
+        "jitter",
+        "inloggningsportal",
+        "webbtest",
+        "anslutning",
+        "ipv4",
+        "ipv6",
+        "dns"
+      ],
+      "language": "sv",
+      "date_modified": "2026-07-22T16:22:36Z"
     },
     {
       "id": "https://apps.apple.com/app/id6789917808",

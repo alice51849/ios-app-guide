@@ -2,11 +2,11 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-07-22",
-  "content_digest": "306ea447869be94b80f2489ed9d6323c32e9859764460bb99c3facefca2bec32",
+  "content_digest": "5b7ec0e2b45456f28f61524f6b7f568eb60477841d65cc99110e61c76562ebaa",
   "locale": "hu",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 29,
+  "record_count": 31,
   "apps": [
     {
       "key": "aim990",
@@ -993,6 +993,40 @@
       }
     },
     {
+      "key": "maskmyfile",
+      "app_store_id": "6792850916",
+      "name": "Mask My File",
+      "summary": "Oszd meg biztonságosan úgy, hogy a fontos szövegkörnyezet megmarad. A Mask My File még a küldés előtt megtalálja a személyes adatokat, véglegesen kitakarja a kiválasztott részeket, majd újra megnyitja és ellenőrzi az új fájlt, mielőtt megjelenne a Private Ready jelzés.",
+      "category": "utility",
+      "search_terms": [
+        "adatvédelem",
+        "feketítés",
+        "dokumentum",
+        "igazolvány",
+        "szerződés",
+        "számla",
+        "metaadat",
+        "anonimizálás",
+        "gdpr",
+        "pdf",
+        "fénykép"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6792850916",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/hu/maskmyfile.html",
+      "verified_live": true
+    },
+    {
       "key": "mochi",
       "app_store_id": "6785004775",
       "name": "Mochi: Cuki feladatlista",
@@ -1486,6 +1520,38 @@
         "formatted_price": "Ingyenes",
         "storefront_url": "https://apps.apple.com/hu/app/id6782275018"
       }
+    },
+    {
+      "key": "wifiaid",
+      "app_store_id": "6790467886",
+      "name": "WiFi Aid",
+      "summary": "Független útvonal-, DNS-, TCP-, TLS-, időzítés- és stabilitástesztekkel derítse ki a legvalószínűbb okot. Egyszeri előrefizetés, előfizetés, reklám és követés nélkül.",
+      "category": "utility",
+      "search_terms": [
+        "internetkimaradás",
+        "router",
+        "hibaelhárítás",
+        "késleltetés",
+        "jitter",
+        "bejelentkező portál",
+        "webhelyteszt",
+        "ipv4",
+        "ping"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6790467886",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/hu/wifiaid.html",
+      "verified_live": true
     },
     {
       "key": "wordmate",

@@ -16,7 +16,7 @@
     ],
     "retirement_rule": "Retire after three consecutive verified misses"
   },
-  "record_count": 29,
+  "record_count": 31,
   "apps": [
     {
       "key": "aim990",
@@ -831,6 +831,50 @@
       "verified_live": true
     },
     {
+      "key": "maskmyfile",
+      "app_store_id": "6792850916",
+      "name": "Mask My File",
+      "category": "utility",
+      "category_labels": {
+        "en": "More",
+        "zh-Hant": "更多"
+      },
+      "summaries": {
+        "en": "Redact private details from images, PDFs, and structured text entirely on device, then reopen and verify the protected copy.",
+        "zh-Hant": "安全分享，同時保留有用的脈絡。Mask My File 會在你送出檔案前找出私密資訊，永久遮蔽後，再重新開啟並驗證輸出的新檔案，確認無誤才顯示 Private Ready。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Free to start",
+        "One-time unlock",
+        "No subscription"
+      ],
+      "keywords": [
+        "file redaction",
+        "redact pdf",
+        "hide personal data",
+        "remove metadata",
+        "batch redaction",
+        "on-device privacy"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
+      "verified_live": true
+    },
+    {
       "key": "mochi",
       "app_store_id": "6785004775",
       "name": "Mochi",
@@ -1283,6 +1327,50 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
+      "verified_live": true
+    },
+    {
+      "key": "wifiaid",
+      "app_store_id": "6790467886",
+      "name": "WiFi Aid",
+      "category": "utility",
+      "category_labels": {
+        "en": "More",
+        "zh-Hant": "更多"
+      },
+      "summaries": {
+        "en": "Find the most likely connection problem with independent path, DNS, TCP, TLS, timing and stability checks.",
+        "zh-Hant": "用多路徑、DNS、TCP、TLS、回應時間與穩定度檢查，找出最可能的連線問題。App Store 一次付費買斷，無訂閱、無廣告、無追蹤。"
+      },
+      "purchase_model": "paid_upfront",
+      "purchase_labels": {
+        "en": "Paid download",
+        "zh-Hant": "付費下載"
+      },
+      "one_time_option": true,
+      "features": [
+        "Paid download",
+        "Pay once",
+        "No subscription"
+      ],
+      "keywords": [
+        "wifi analyzer",
+        "network diagnostics",
+        "internet outage",
+        "dns test",
+        "latency test",
+        "router troubleshooting"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
       "verified_live": true
     },
     {

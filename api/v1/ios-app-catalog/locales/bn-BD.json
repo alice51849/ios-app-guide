@@ -2,11 +2,11 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-07-22",
-  "content_digest": "306ea447869be94b80f2489ed9d6323c32e9859764460bb99c3facefca2bec32",
+  "content_digest": "5b7ec0e2b45456f28f61524f6b7f568eb60477841d65cc99110e61c76562ebaa",
   "locale": "bn-BD",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 29,
+  "record_count": 31,
   "apps": [
     {
       "key": "aim990",
@@ -920,6 +920,43 @@
       "verified_live": true
     },
     {
+      "key": "maskmyfile",
+      "app_store_id": "6792850916",
+      "name": "Mask My File",
+      "summary": "প্রয়োজনীয় প্রসঙ্গ না হারিয়ে নিরাপদে শেয়ার করুন। Mask My File আপনি ফাইল পাঠানোর আগেই ব্যক্তিগত তথ্য খুঁজে বের করে, স্থায়ীভাবে ঢেকে দেয়, তারপর তৈরি হওয়া নতুন ফাইলটি আবার খুলে যাচাই করে এবং তবেই Private Ready দেখায়।",
+      "category": "utility",
+      "search_terms": [
+        "গোপনীয়তা",
+        "সুরক্ষা",
+        "নথি",
+        "ছবি",
+        "বারকোড",
+        "মেটাডেটা",
+        "মোছা",
+        "ডিভাইসে",
+        "প্রক্রিয়া",
+        "আড়াল",
+        "ব্যক্তিগত",
+        "চুক্তি",
+        "pdf",
+        "ocr"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6792850916",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/maskmyfile.html",
+      "verified_live": true
+    },
+    {
       "key": "mochi",
       "app_store_id": "6785004775",
       "name": "Mochi: মিষ্টি টাস্ক লিস্ট",
@@ -1361,6 +1398,40 @@
       },
       "app_store_url": "https://apps.apple.com/app/id6782275018",
       "guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/unblurry.html",
+      "verified_live": true
+    },
+    {
+      "key": "wifiaid",
+      "app_store_id": "6790467886",
+      "name": "WiFi Aid",
+      "summary": "স্বাধীন পথ, DNS, TCP, TLS, টাইমিং ও স্থিতিশীলতা পরীক্ষায় সংযোগ সমস্যার সম্ভাব্য কারণ খুঁজুন। একবার কিনুন—কোনো সাবস্ক্রিপশন, বিজ্ঞাপন বা ট্র্যাকিং নেই।",
+      "category": "utility",
+      "search_terms": [
+        "ওয়াইফাই সমস্যা",
+        "ইন্টারনেট চেক",
+        "DNS রাউটার",
+        "সংযোগ ত্রুটি",
+        "নেট স্লো",
+        "ল্যাটেন্সি",
+        "আইপি",
+        "পিং",
+        "TCP",
+        "TLS",
+        "IPv4"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6790467886",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/wifiaid.html",
       "verified_live": true
     },
     {

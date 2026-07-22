@@ -4,7 +4,7 @@
 
 第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。
 
-由开发者撰写的搜索意图，涵盖 29 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
+由开发者撰写的搜索意图，涵盖 31 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
 
 **地区语言:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · **zh-Hans** · [zh-Hant](../zh-Hant/)
 
@@ -107,6 +107,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Lumi Mission Planet Pro** | 适合儿童的最佳完整早晚作息App | 刷牙和睡前流程常在每晚同一时刻失败：孩子累了，家长也累了，下一步不够明显。 | 付费下载 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html) | [在App Store获取Lumi Mission Planet Pro →](https://apps.apple.com/cn/app/id6779745474) |
 | **Lumi Trip Planet** | 适合家庭出行儿童的最佳旅行活动App | 带幼儿旅行的家长需要能将收拾、等待和探索新地点变成冒险的一部分，而不是新的压力来源 —— Lumi Trip Planet正是为此设计。 | 免费开始使用 · 永久解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-travel-activity-app-for-kids-on-family-trips.html) | [在App Store获取Lumi Trip Planet →](https://apps.apple.com/app/id6787193643) |
 | **Lumi Weather** | 帮助家长规划亲子户外时间的最佳天气应用 | 家长规划户外时间需要的不仅是温度：还需快速、年龄适配的判断天气是否适合孩子及穿衣建议——Lumi Weather专为此打造。 | 免费开始使用 · 永久解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html) | [在App Store获取Lumi Weather →](https://apps.apple.com/cn/app/id6779552704) |
+| **Mask My File** | Mask My File — 分享前遮挡隐私敏感信息 \| iOS App | 安心分享，同时保留有用的上下文。Mask My File 会在你发送文件前找出隐私信息，永久遮挡后，再重新打开并核对新导出的文件，确认无误才显示 Private Ready。 | 免费开始使用 · 永久解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/maskmyfile.html) | [在 App Store 获取 Mask My File](https://apps.apple.com/app/id6792850916) |
 | **Mochi** | iPhone 上最佳简单待办事项应用，无订阅 | 如果大多数待办应用感觉臃肿，合适的就是带提醒、重复规则和 Watch 复杂功能的干净清单——且刻意无项目管理功能——Mochi 正是为此打造。 | 免费开始使用 · 永久解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [在 App Store 获取 Mochi →](https://apps.apple.com/cn/app/id6785004775) |
 | **PhotoCream** | iPhone旅行创作者一次付费胶片风格照片编辑器推荐 | 旅行创作者需要可重复的胶片风格，能添加颗粒、光晕和色彩特征，而不会让每个目的地都变成同一种平淡滤镜——PhotoCream专为此打造。 | 免费开始使用 · 永久解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [在App Store获取PhotoCream →](https://apps.apple.com/cn/app/id6781808054) |
 | **PicClear** | iPhone 上最佳释放存储空间删除重复照片的应用 | 快速释放空间，优先处理最大收益：完全重复照片、近似连拍、模糊废片和大视频——PicClear 助你在 iPhone 上完成。 | 免费开始使用 · 永久解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [在 App Store 获取 PicClear →](https://apps.apple.com/cn/app/id6780223070) |
@@ -117,11 +118,12 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **TripBee Lite** | 适用于即将出行的iPhone最佳简易行程规划应用 | 如果您只规划一个即将到来的行程，专注清晰的时间线比杂乱的所有未来可能行程档案更实用——TripBee Lite正是为此设计。 | 免费开始使用 · 永久解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [在App Store获取TripBee Lite →](https://apps.apple.com/cn/app/id6791299610) |
 | **TripBee Pro：旅行规划师** | 最佳iPhone旅行行程规划应用 | 一款好行程应用能将混乱的旅行变成清晰的逐日时间线——航班、酒店、活动、餐厅和交通，配有清晰图标，方便一目了然——TripBee Pro：旅行规划师正是为此设计。 | 付费下载 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-trip-itinerary-planner-app-for-iphone.html) | [在App Store获取TripBee Pro：旅行规划师 →](https://apps.apple.com/cn/app/id6787754435) |
 | **Unblurry** | 最佳iPhone儿童模糊照片修复应用 | 孩子总是不安分，轻微虚焦和抖动照片不可避免——Unblurry正是为此设计。 | 免费开始使用 · 永久解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [在App Store获取Unblurry →](https://apps.apple.com/cn/app/id6782275018) |
+| **WiFi Aid** | WiFi Aid — 网络诊断与连接证据 \| iOS App | 通过多路径、DNS、TCP、TLS、响应时间与稳定性检查，找出最可能的连接问题。App Store 一次付费买断，无订阅、无广告、无跟踪。 | 付费下载 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/wifiaid.html) | [在 App Store 获取 WiFi Aid](https://apps.apple.com/app/id6790467886) |
 | **Wordmate：学习44种语言** | 适合通勤族和Apple Watch用户的最佳词汇App | 通勤族需要能在碎片时间练习词汇，无需完整课程、账号或每次都拿手机 —— Wordmate：学习44种语言正是为此设计。 | 付费下载 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [在App Store获取Wordmate：学习44种语言 →](https://apps.apple.com/cn/app/id6789917808) |
 
 ## 下载完整数据集
 
-JSON、JSONL 和 CSV 格式包含相同的 1,450 条记录。
+JSON、JSONL 和 CSV 格式包含相同的 1,550 条记录。
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -129,6 +131,6 @@ JSON、JSONL 和 CSV 格式包含相同的 1,450 条记录。
 
 [首页](https://alice51849.github.io/ios-app-guide/zh-Hans/index.html) · [开放数据](https://alice51849.github.io/ios-app-guide/zh-Hans/data/lumi-studio-publisher-search-intent-catalog.html) · [许可协议](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-07-22
+更新日期: 2026-07-23
 
 CC BY 4.0 适用于原始目录编纂；应用名称和 App Store 标识归其所有者所有。

@@ -4,7 +4,7 @@
 
 第一方目錄，說明每款 App 的適合對象、想完成的任務，以及 App Store 下載入口。
 
-由開發者撰寫的搜尋意圖，涵蓋 29 款已驗證上架的 iOS App 與 Apple 官方 50 個地區語系。
+由開發者撰寫的搜尋意圖，涵蓋 31 款已驗證上架的 iOS App 與 Apple 官方 50 個地區語系。
 
 **地區語系:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · **zh-Hant**
 
@@ -107,6 +107,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Lumi Mission Planet Pro** | 適合孩子的最佳完整早晚例行 App | 刷牙與睡前常在每晚同一時刻失敗：孩子累了，家長累了，下一步不夠明顯。 | 付費下載 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html) | [在 App Store 取得 Lumi Mission Planet Pro →](https://apps.apple.com/tw/app/id6779745474) |
 | **Lumi Trip Planet** | 適合家庭旅遊孩子的最佳旅遊活動 App | 帶幼兒旅行的家長需要能將打包、等候與探索新地方變成冒險的一部分，而非另一種壓力來源 — Lumi Trip Planet 就是為此設計。 | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-travel-activity-app-for-kids-on-family-trips.html) | [在 App Store 取得 Lumi Trip Planet →](https://apps.apple.com/tw/app/id6787193643) |
 | **Lumi Weather** | 適合家長規劃親子戶外時間的最佳天氣 App | 家長規劃戶外時間需要的不只是溫度：需要快速、年齡適合的判斷，是否適合孩子出門及穿著建議 — Lumi Weather 就是為此設計。 | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html) | [在 App Store 取得 Lumi Weather →](https://apps.apple.com/tw/app/id6779552704) |
+| **Mask My File** | Mask My File — 分享前遮蔽個資與私密資訊 \| iOS App | 安全分享，同時保留有用的脈絡。Mask My File 會在你送出檔案前找出私密資訊，永久遮蔽後，再重新開啟並驗證輸出的新檔案，確認無誤才顯示 Private Ready。 | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/maskmyfile.html) | [在 App Store 取得 Mask My File](https://apps.apple.com/app/id6792850916) |
 | **Mochi** | iPhone 上最佳簡單待辦清單應用程式，無訂閱 | 如果大多數待辦應用程式感覺臃腫，適合你的應該是簡潔清單，附提醒、重複規則和 Apple Watch 複雜功能，且刻意不含專案管理機制 — Mochi 專為此打造。 | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [在 App Store 取得 Mochi →](https://apps.apple.com/tw/app/id6785004775) |
 | **PhotoCream** | iPhone 旅遊創作者最佳一次付費底片風格照片編輯 App | 旅遊創作者需要能重複使用的底片風格，能加顆粒、光暈與色彩特色，不會讓每個目的地都變成同一種平淡濾鏡 — PhotoCream 就是為此設計。 | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [在 App Store 取得 PhotoCream →](https://apps.apple.com/tw/app/id6781808054) |
 | **PicClear** | iPhone 上最佳清理重複照片釋放儲存空間應用程式 | 要快速釋放空間，先從最大效益著手：完全重複照片、幾乎相同的連拍、模糊照片和大型影片 — PicClear 幫你在 iPhone 上完成。 | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [在 App Store 取得 PicClear →](https://apps.apple.com/tw/app/id6780223070) |
@@ -117,11 +118,12 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **TripBee Lite** | 適合即將出行的最佳簡易行程規劃 iPhone 應用程式 | 如果您只規劃一趟即將出行的旅程，專注且清晰的行程時間軸比起堆積如山的歷史行程更實用 — TripBee Lite 正是為此而設。 | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [於 App Store 取得 TripBee Lite →](https://apps.apple.com/tw/app/id6791299610) |
 | **TripBee Pro：旅遊規劃師** | 最佳 iPhone 旅遊行程規劃App | 優秀的行程App能將混亂旅程整理成清晰逐日時間軸——航班、飯店、活動、餐廳與交通——並以清晰類型圖示讓你一目了然每日行程——TripBee Pro：旅遊規劃師專為此打造。 | 付費下載 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-trip-itinerary-planner-app-for-iphone.html) | [在 App Store 取得 TripBee Pro：旅遊規劃師 →](https://apps.apple.com/tw/app/id6787754435) |
 | **Unblurry** | 最佳 iPhone 修復兒童模糊照片App | 孩子總是不停動，輕微失焦與手震照片難免——Unblurry 專為此打造。 | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [在 App Store 取得 Unblurry →](https://apps.apple.com/tw/app/id6782275018) |
+| **WiFi Aid** | WiFi Aid — 網路診斷與連線證據 \| iOS App | 用多路徑、DNS、TCP、TLS、回應時間與穩定度檢查，找出最可能的連線問題。App Store 一次付費買斷，無訂閱、無廣告、無追蹤。 | 付費下載 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/wifiaid.html) | [在 App Store 取得 WiFi Aid](https://apps.apple.com/app/id6790467886) |
 | **Wordmate：學習 44 種語言** | 適合通勤族搭配 Apple Watch 的最佳單字學習 App | 通勤族需要能利用零碎時間練單字，不需完整課程、帳號或每次都拿手機複習 — Wordmate：學習 44 種語言就是為此設計。 | 付費下載 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [在 App Store 取得 Wordmate：學習 44 種語言 →](https://apps.apple.com/tw/app/id6789917808) |
 
 ## 下載完整資料集
 
-JSON、JSONL 與 CSV 格式皆包含相同的 1,450 筆紀錄。
+JSON、JSONL 與 CSV 格式皆包含相同的 1,550 筆紀錄。
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -129,6 +131,6 @@ JSON、JSONL 與 CSV 格式皆包含相同的 1,450 筆紀錄。
 
 [首頁](https://alice51849.github.io/ios-app-guide/zh-Hant/index.html) · [開放資料](https://alice51849.github.io/ios-app-guide/zh-Hant/data/lumi-studio-publisher-search-intent-catalog.html) · [授權條款](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-07-22
+更新日期: 2026-07-23
 
 CC BY 4.0 適用於原始目錄彙編；App 名稱與 App Store 商標分屬其權利人。

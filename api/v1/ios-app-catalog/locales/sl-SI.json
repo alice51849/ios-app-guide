@@ -2,11 +2,11 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-07-22",
-  "content_digest": "306ea447869be94b80f2489ed9d6323c32e9859764460bb99c3facefca2bec32",
+  "content_digest": "5b7ec0e2b45456f28f61524f6b7f568eb60477841d65cc99110e61c76562ebaa",
   "locale": "sl-SI",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 29,
+  "record_count": 31,
   "apps": [
     {
       "key": "aim990",
@@ -1011,6 +1011,40 @@
       }
     },
     {
+      "key": "maskmyfile",
+      "app_store_id": "6792850916",
+      "name": "Mask My File",
+      "summary": "Delite varno, brez izgube koristnega konteksta. Mask My File poišče osebne podatke, preden pošljete datoteko, trajno prekrije, kar izberete, nato pa novo datoteko znova odpre in preveri, preden pokaže oznako Private Ready.",
+      "category": "utility",
+      "search_terms": [
+        "zasebnost",
+        "prekrivanje",
+        "dokument",
+        "osebna",
+        "pogodba",
+        "račun",
+        "potrdilo",
+        "metapodatki",
+        "anonimizacija",
+        "gdpr",
+        "pdf"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6792850916",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/maskmyfile.html",
+      "verified_live": true
+    },
+    {
       "key": "mochi",
       "app_store_id": "6785004775",
       "name": "Mochi: Ljubek seznam",
@@ -1507,6 +1541,40 @@
         "formatted_price": "Brezplačno",
         "storefront_url": "https://apps.apple.com/si/app/id6782275018"
       }
+    },
+    {
+      "key": "wifiaid",
+      "app_store_id": "6790467886",
+      "name": "WiFi Aid",
+      "summary": "Odkrijte najverjetnejši vzrok težave z neodvisnimi preverjanji DNS, TCP, TLS, časovnih zamikov in stabilnosti. Enkratno plačilo — brez naročnine, oglasov ali sledenja.",
+      "category": "utility",
+      "search_terms": [
+        "WiFi ne deluje",
+        "DNS preveritev",
+        "internet motnje",
+        "povezava težava",
+        "TCP",
+        "TLS",
+        "IPv4",
+        "latenca",
+        "IPv6",
+        "HTTP",
+        "ping"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6790467886",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/wifiaid.html",
+      "verified_live": true
     },
     {
       "key": "wordmate",

@@ -13,10 +13,10 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-07-22",
-    "contentDigest": "306ea447869be94b80f2489ed9d6323c32e9859764460bb99c3facefca2bec32",
+    "contentDigest": "5b7ec0e2b45456f28f61524f6b7f568eb60477841d65cc99110e61c76562ebaa",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 29
+    "recordCount": 31
   },
   "items": [
     {
@@ -680,6 +680,28 @@
       "date_modified": "2026-07-20T04:04:08Z"
     },
     {
+      "id": "https://apps.apple.com/app/id6792850916",
+      "url": "https://alice51849.github.io/ios-app-guide/hu/maskmyfile.html",
+      "external_url": "https://apps.apple.com/app/id6792850916",
+      "title": "Mask My File",
+      "content_text": "Oszd meg biztonságosan úgy, hogy a fontos szövegkörnyezet megmarad. A Mask My File még a küldés előtt megtalálja a személyes adatokat, véglegesen kitakarja a kiválasztott részeket, majd újra megnyitja és ellenőrzi az új fájlt, mielőtt megjelenne a Private Ready jelzés.",
+      "tags": [
+        "adatvédelem",
+        "feketítés",
+        "dokumentum",
+        "igazolvány",
+        "szerződés",
+        "számla",
+        "metaadat",
+        "anonimizálás",
+        "gdpr",
+        "pdf",
+        "fénykép"
+      ],
+      "language": "hu",
+      "date_modified": "2026-07-22T16:22:36Z"
+    },
+    {
       "id": "https://apps.apple.com/app/id6785004775",
       "url": "https://alice51849.github.io/ios-app-guide/hu/mochi.html",
       "external_url": "https://apps.apple.com/hu/app/id6785004775",
@@ -993,6 +1015,26 @@
       ],
       "language": "hu",
       "date_modified": "2026-07-20T04:04:08Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6790467886",
+      "url": "https://alice51849.github.io/ios-app-guide/hu/wifiaid.html",
+      "external_url": "https://apps.apple.com/app/id6790467886",
+      "title": "WiFi Aid",
+      "content_text": "Független útvonal-, DNS-, TCP-, TLS-, időzítés- és stabilitástesztekkel derítse ki a legvalószínűbb okot. Egyszeri előrefizetés, előfizetés, reklám és követés nélkül.",
+      "tags": [
+        "internetkimaradás",
+        "router",
+        "hibaelhárítás",
+        "késleltetés",
+        "jitter",
+        "bejelentkező portál",
+        "webhelyteszt",
+        "ipv4",
+        "ping"
+      ],
+      "language": "hu",
+      "date_modified": "2026-07-22T16:22:36Z"
     },
     {
       "id": "https://apps.apple.com/app/id6789917808",

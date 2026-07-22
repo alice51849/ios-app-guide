@@ -13,10 +13,10 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-07-22",
-    "contentDigest": "306ea447869be94b80f2489ed9d6323c32e9859764460bb99c3facefca2bec32",
+    "contentDigest": "5b7ec0e2b45456f28f61524f6b7f568eb60477841d65cc99110e61c76562ebaa",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 29
+    "recordCount": 31
   },
   "items": [
     {
@@ -686,6 +686,27 @@
       "date_modified": "2026-07-20T04:04:08Z"
     },
     {
+      "id": "https://apps.apple.com/app/id6792850916",
+      "url": "https://alice51849.github.io/ios-app-guide/ca/maskmyfile.html",
+      "external_url": "https://apps.apple.com/app/id6792850916",
+      "title": "Mask My File",
+      "content_text": "Comparteix amb tranquil·litat sense perdre el context útil. Mask My File detecta les dades privades abans que enviïs un fitxer, oculta de manera permanent el que triïs i després torna a obrir i verifica la còpia nova abans de mostrar Private Ready.",
+      "tags": [
+        "anonimitzar",
+        "censurar",
+        "dni",
+        "passaport",
+        "informe mèdic",
+        "contracte",
+        "captura pantalla",
+        "metadades",
+        "pdf",
+        "privacitat"
+      ],
+      "language": "ca",
+      "date_modified": "2026-07-22T16:22:36Z"
+    },
+    {
       "id": "https://apps.apple.com/app/id6785004775",
       "url": "https://alice51849.github.io/ios-app-guide/ca/mochi.html",
       "external_url": "https://apps.apple.com/es/app/id6785004775",
@@ -1008,6 +1029,28 @@
       ],
       "language": "ca",
       "date_modified": "2026-07-20T04:04:08Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6790467886",
+      "url": "https://alice51849.github.io/ios-app-guide/ca/wifiaid.html",
+      "external_url": "https://apps.apple.com/app/id6790467886",
+      "title": "WiFi Aid",
+      "content_text": "Troba la causa més probable amb proves independents de rutes, DNS, TCP, TLS, temps i estabilitat. Un únic pagament inicial, sense subscripcions, anuncis ni seguiment.",
+      "tags": [
+        "avaria internet",
+        "encaminador",
+        "resolució",
+        "latència",
+        "jitter",
+        "portal captiu",
+        "prova web",
+        "connexió",
+        "ipv4",
+        "ipv6",
+        "dns"
+      ],
+      "language": "ca",
+      "date_modified": "2026-07-22T16:22:36Z"
     },
     {
       "id": "https://apps.apple.com/app/id6789917808",

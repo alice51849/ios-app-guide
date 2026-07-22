@@ -2,11 +2,11 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-07-22",
-  "content_digest": "306ea447869be94b80f2489ed9d6323c32e9859764460bb99c3facefca2bec32",
+  "content_digest": "5b7ec0e2b45456f28f61524f6b7f568eb60477841d65cc99110e61c76562ebaa",
   "locale": "ja",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 29,
+  "record_count": 31,
   "apps": [
     {
       "key": "aim990",
@@ -1122,6 +1122,51 @@
       }
     },
     {
+      "key": "maskmyfile",
+      "app_store_id": "6792850916",
+      "name": "Mask My File",
+      "summary": "大切な文脈を保ったまま、安全に共有できます。Mask My File はファイルを送る前に個人情報を見つけて恒久的に黒塗りし、書き出した新しいファイルを開き直して検証してから Private Ready を表示します。",
+      "category": "utility",
+      "search_terms": [
+        "墨消し",
+        "マスキング",
+        "塗りつぶし",
+        "隠す",
+        "秘匿化",
+        "書類",
+        "画像",
+        "写真",
+        "スクショ",
+        "身分証",
+        "免許証",
+        "マイナンバー",
+        "契約書",
+        "診断書",
+        "住所",
+        "バーコード",
+        "メタデータ削除",
+        "オフライン",
+        "ローカル処理",
+        "一括",
+        "PDF",
+        "OCR"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6792850916",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ja/maskmyfile.html",
+      "verified_live": true
+    },
+    {
       "key": "mochi",
       "app_store_id": "6785004775",
       "name": "Mochi: かわいいToDo",
@@ -1667,6 +1712,47 @@
         "formatted_price": "無料",
         "storefront_url": "https://apps.apple.com/jp/app/id6782275018"
       }
+    },
+    {
+      "key": "wifiaid",
+      "app_store_id": "6790467886",
+      "name": "WiFi Aid",
+      "summary": "複数経路、DNS、TCP、TLS、応答時間、安定性を照合し、接続不良の原因候補を明確に。App Storeで一度だけ購入。サブスク・広告・追跡なし。",
+      "category": "utility",
+      "search_terms": [
+        "インターネット障害",
+        "ルーター",
+        "接続テスト",
+        "高遅延",
+        "ジッター",
+        "サイト確認",
+        "回線トラブル",
+        "障害切り分け",
+        "ネット診断",
+        "DNSエラー",
+        "通信確認",
+        "応答時間",
+        "安定性",
+        "接続履歴",
+        "IPv4",
+        "IPv6",
+        "Ping",
+        "TLS"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6790467886",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ja/wifiaid.html",
+      "verified_live": true
     },
     {
       "key": "wordmate",

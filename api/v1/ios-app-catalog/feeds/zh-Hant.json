@@ -13,10 +13,10 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-07-22",
-    "contentDigest": "306ea447869be94b80f2489ed9d6323c32e9859764460bb99c3facefca2bec32",
+    "contentDigest": "5b7ec0e2b45456f28f61524f6b7f568eb60477841d65cc99110e61c76562ebaa",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 29
+    "recordCount": 31
   },
   "items": [
     {
@@ -881,6 +881,41 @@
       "date_modified": "2026-07-20T04:04:08Z"
     },
     {
+      "id": "https://apps.apple.com/app/id6792850916",
+      "url": "https://alice51849.github.io/ios-app-guide/zh-Hant/maskmyfile.html",
+      "external_url": "https://apps.apple.com/app/id6792850916",
+      "title": "Mask My File",
+      "content_text": "安全分享，同時保留有用的脈絡。Mask My File 會在你送出檔案前找出私密資訊，永久遮蔽後，再重新開啟並驗證輸出的新檔案，確認無誤才顯示 Private Ready。",
+      "tags": [
+        "去識別化",
+        "塗黑",
+        "抹除",
+        "消除",
+        "隱藏",
+        "隱私資料保護",
+        "檔案",
+        "文件",
+        "身分證",
+        "健保卡",
+        "照片",
+        "截圖",
+        "圖片",
+        "合約",
+        "病歷",
+        "條碼",
+        "QR碼",
+        "PDF",
+        "中繼資料",
+        "人臉區域",
+        "客戶紀錄",
+        "離線本機處理",
+        "批次作業",
+        "機密安全傳送"
+      ],
+      "language": "zh-Hant",
+      "date_modified": "2026-07-22T16:22:36Z"
+    },
+    {
       "id": "https://apps.apple.com/app/id6785004775",
       "url": "https://alice51849.github.io/ios-app-guide/zh-Hant/mochi.html",
       "external_url": "https://apps.apple.com/tw/app/id6785004775",
@@ -1290,6 +1325,39 @@
       ],
       "language": "zh-Hant",
       "date_modified": "2026-07-20T04:04:08Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6790467886",
+      "url": "https://alice51849.github.io/ios-app-guide/zh-Hant/wifiaid.html",
+      "external_url": "https://apps.apple.com/app/id6790467886",
+      "title": "WiFi Aid",
+      "content_text": "用多路徑、DNS、TCP、TLS、回應時間與穩定度檢查，找出最可能的連線問題。App Store 一次付費買斷，無訂閱、無廣告、無追蹤。",
+      "tags": [
+        "網路故障",
+        "斷線",
+        "路由器",
+        "連線測試",
+        "延遲",
+        "抖動",
+        "網站檢查",
+        "網頁登入",
+        "速度問題",
+        "排除問題",
+        "無法上網",
+        "連線品質",
+        "回應時間",
+        "本機紀錄",
+        "證據分享",
+        "連線修復",
+        "穩定度",
+        "網路狀態",
+        "IPv4",
+        "IPv6",
+        "DNS",
+        "Ping"
+      ],
+      "language": "zh-Hant",
+      "date_modified": "2026-07-22T16:22:36Z"
     },
     {
       "id": "https://apps.apple.com/app/id6789917808",

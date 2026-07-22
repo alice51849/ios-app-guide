@@ -174,6 +174,16 @@
           ]
         },
         {
+          "href": "https://alice51849.github.io/ios-app-guide/guides/maskmyfile.html",
+          "type": "text/html",
+          "title*": [
+            {
+              "value": "Mask My File",
+              "language": "en"
+            }
+          ]
+        },
+        {
           "href": "https://alice51849.github.io/ios-app-guide/guides/mochi.html",
           "type": "text/html",
           "title*": [
@@ -279,6 +289,16 @@
           "title*": [
             {
               "value": "Unblurry",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/guides/wifiaid.html",
+          "type": "text/html",
+          "title*": [
+            {
+              "value": "WiFi Aid",
               "language": "en"
             }
           ]
@@ -4687,6 +4707,65 @@
       ]
     },
     {
+      "anchor": "https://alice51849.github.io/ios-app-guide/guides/maskmyfile.html",
+      "alternate": [
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/guides/maskmyfile.html",
+          "hreflang": [
+            "en",
+            "x-default"
+          ],
+          "type": "text/html"
+        }
+      ],
+      "related": [
+        {
+          "href": "https://apps.apple.com/app/id6792850916",
+          "type": "text/html",
+          "title*": [
+            {
+              "value": "Mask My File on the App Store",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/stories/maskmyfile.html",
+          "type": "text/html",
+          "title*": [
+            {
+              "value": "Mask My File visual story",
+              "language": "en"
+            }
+          ]
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/hubs/maskmyfile.html",
+          "type": "text/html",
+          "title*": [
+            {
+              "value": "Mask My File resource hub",
+              "language": "en"
+            }
+          ]
+        }
+      ],
+      "preview": [
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/stories/img/maskmyfile-poster.jpg",
+          "type": "image/jpeg",
+          "title*": [
+            {
+              "value": "Mask My File story poster",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "anchor": "https://alice51849.github.io/ios-app-guide/guides/mochi.html",
       "alternate": [
         {
@@ -6673,6 +6752,65 @@
           "title*": [
             {
               "value": "Unblurry story poster",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": "https://alice51849.github.io/ios-app-guide/guides/wifiaid.html",
+      "alternate": [
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/guides/wifiaid.html",
+          "hreflang": [
+            "en",
+            "x-default"
+          ],
+          "type": "text/html"
+        }
+      ],
+      "related": [
+        {
+          "href": "https://apps.apple.com/app/id6790467886",
+          "type": "text/html",
+          "title*": [
+            {
+              "value": "WiFi Aid on the App Store",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/stories/wifiaid.html",
+          "type": "text/html",
+          "title*": [
+            {
+              "value": "WiFi Aid visual story",
+              "language": "en"
+            }
+          ]
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/hubs/wifiaid.html",
+          "type": "text/html",
+          "title*": [
+            {
+              "value": "WiFi Aid resource hub",
+              "language": "en"
+            }
+          ]
+        }
+      ],
+      "preview": [
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/stories/img/wifiaid-poster.jpg",
+          "type": "image/jpeg",
+          "title*": [
+            {
+              "value": "WiFi Aid story poster",
               "language": "en"
             }
           ]

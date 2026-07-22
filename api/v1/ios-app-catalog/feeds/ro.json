@@ -13,10 +13,10 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-07-22",
-    "contentDigest": "306ea447869be94b80f2489ed9d6323c32e9859764460bb99c3facefca2bec32",
+    "contentDigest": "5b7ec0e2b45456f28f61524f6b7f568eb60477841d65cc99110e61c76562ebaa",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 29
+    "recordCount": 31
   },
   "items": [
     {
@@ -680,6 +680,28 @@
       "date_modified": "2026-07-20T04:04:08Z"
     },
     {
+      "id": "https://apps.apple.com/app/id6792850916",
+      "url": "https://alice51849.github.io/ios-app-guide/ro/maskmyfile.html",
+      "external_url": "https://apps.apple.com/app/id6792850916",
+      "title": "Mask My File",
+      "content_text": "Distribuie în siguranță fără să pierzi contextul util. Mask My File găsește datele personale înainte să trimiți un fișier, acoperă definitiv ce alegi, apoi redeschide și verifică noul fișier înainte de a afișa eticheta Private Ready.",
+      "tags": [
+        "confidențialitate",
+        "cenzurare",
+        "documente",
+        "buletin",
+        "chitanță",
+        "factură",
+        "metadate",
+        "anonimizare",
+        "gdpr",
+        "pdf",
+        "poze"
+      ],
+      "language": "ro",
+      "date_modified": "2026-07-22T16:22:36Z"
+    },
+    {
       "id": "https://apps.apple.com/app/id6785004775",
       "url": "https://alice51849.github.io/ios-app-guide/ro/mochi.html",
       "external_url": "https://apps.apple.com/ro/app/id6785004775",
@@ -1000,6 +1022,28 @@
       ],
       "language": "ro",
       "date_modified": "2026-07-20T04:04:08Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6790467886",
+      "url": "https://alice51849.github.io/ios-app-guide/ro/wifiaid.html",
+      "external_url": "https://apps.apple.com/app/id6790467886",
+      "title": "WiFi Aid",
+      "content_text": "Găsește cauza cea mai probabilă prin teste independente de traseu, DNS, TCP, TLS, timpi și stabilitate. O singură plată inițială, fără abonament, reclame sau urmărire.",
+      "tags": [
+        "pană internet",
+        "router",
+        "depanare",
+        "latență",
+        "jitter",
+        "portal autentificare",
+        "test site",
+        "conexiune",
+        "ipv4",
+        "ipv6",
+        "ping"
+      ],
+      "language": "ro",
+      "date_modified": "2026-07-22T16:22:36Z"
     },
     {
       "id": "https://apps.apple.com/app/id6789917808",

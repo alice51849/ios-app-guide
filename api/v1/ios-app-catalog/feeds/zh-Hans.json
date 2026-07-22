@@ -13,10 +13,10 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-07-22",
-    "contentDigest": "306ea447869be94b80f2489ed9d6323c32e9859764460bb99c3facefca2bec32",
+    "contentDigest": "5b7ec0e2b45456f28f61524f6b7f568eb60477841d65cc99110e61c76562ebaa",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 29
+    "recordCount": 31
   },
   "items": [
     {
@@ -865,6 +865,42 @@
       "date_modified": "2026-07-20T04:04:08Z"
     },
     {
+      "id": "https://apps.apple.com/app/id6792850916",
+      "url": "https://alice51849.github.io/ios-app-guide/zh-Hans/maskmyfile.html",
+      "external_url": "https://apps.apple.com/app/id6792850916",
+      "title": "Mask My File",
+      "content_text": "安心分享，同时保留有用的上下文。Mask My File 会在你发送文件前找出隐私信息，永久遮挡后，再重新打开并核对新导出的文件，确认无误才显示 Private Ready。",
+      "tags": [
+        "脱敏",
+        "涂黑",
+        "去标识化",
+        "掩盖",
+        "抹除",
+        "擦除",
+        "文件",
+        "文档",
+        "证件",
+        "身份证",
+        "照片",
+        "截图",
+        "图片",
+        "合同",
+        "病历",
+        "条码",
+        "二维码",
+        "PDF",
+        "元数据",
+        "人脸识别区域",
+        "客户资料",
+        "数据安全保护",
+        "离线本地处理",
+        "批量转换",
+        "发票凭证"
+      ],
+      "language": "zh-Hans",
+      "date_modified": "2026-07-22T16:22:36Z"
+    },
+    {
       "id": "https://apps.apple.com/app/id6785004775",
       "url": "https://alice51849.github.io/ios-app-guide/zh-Hans/mochi.html",
       "external_url": "https://apps.apple.com/cn/app/id6785004775",
@@ -1274,6 +1310,39 @@
       ],
       "language": "zh-Hans",
       "date_modified": "2026-07-20T04:04:08Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6790467886",
+      "url": "https://alice51849.github.io/ios-app-guide/zh-Hans/wifiaid.html",
+      "external_url": "https://apps.apple.com/app/id6790467886",
+      "title": "WiFi Aid",
+      "content_text": "通过多路径、DNS、TCP、TLS、响应时间与稳定性检查，找出最可能的连接问题。App Store 一次付费买断，无订阅、无广告、无跟踪。",
+      "tags": [
+        "网络故障",
+        "断网",
+        "路由器",
+        "连接测试",
+        "延迟",
+        "抖动",
+        "网站检查",
+        "登录门户",
+        "网速问题",
+        "故障排查",
+        "无法上网",
+        "连接质量",
+        "响应时间",
+        "本地记录",
+        "证据分享",
+        "连接修复",
+        "稳定性",
+        "网络状态",
+        "IPv4",
+        "IPv6",
+        "DNS",
+        "Ping"
+      ],
+      "language": "zh-Hans",
+      "date_modified": "2026-07-22T16:22:36Z"
     },
     {
       "id": "https://apps.apple.com/app/id6789917808",

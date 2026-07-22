@@ -13,10 +13,10 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-07-22",
-    "contentDigest": "306ea447869be94b80f2489ed9d6323c32e9859764460bb99c3facefca2bec32",
+    "contentDigest": "5b7ec0e2b45456f28f61524f6b7f568eb60477841d65cc99110e61c76562ebaa",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 29
+    "recordCount": 31
   },
   "items": [
     {
@@ -809,6 +809,39 @@
       "date_modified": "2026-07-20T04:04:08Z"
     },
     {
+      "id": "https://apps.apple.com/app/id6792850916",
+      "url": "https://alice51849.github.io/ios-app-guide/ja/maskmyfile.html",
+      "external_url": "https://apps.apple.com/app/id6792850916",
+      "title": "Mask My File",
+      "content_text": "大切な文脈を保ったまま、安全に共有できます。Mask My File はファイルを送る前に個人情報を見つけて恒久的に黒塗りし、書き出した新しいファイルを開き直して検証してから Private Ready を表示します。",
+      "tags": [
+        "墨消し",
+        "マスキング",
+        "塗りつぶし",
+        "隠す",
+        "秘匿化",
+        "書類",
+        "画像",
+        "写真",
+        "スクショ",
+        "身分証",
+        "免許証",
+        "マイナンバー",
+        "契約書",
+        "診断書",
+        "住所",
+        "バーコード",
+        "メタデータ削除",
+        "オフライン",
+        "ローカル処理",
+        "一括",
+        "PDF",
+        "OCR"
+      ],
+      "language": "ja",
+      "date_modified": "2026-07-22T16:22:36Z"
+    },
+    {
       "id": "https://apps.apple.com/app/id6785004775",
       "url": "https://alice51849.github.io/ios-app-guide/ja/mochi.html",
       "external_url": "https://apps.apple.com/jp/app/id6785004775",
@@ -1174,6 +1207,35 @@
       ],
       "language": "ja",
       "date_modified": "2026-07-20T04:04:08Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6790467886",
+      "url": "https://alice51849.github.io/ios-app-guide/ja/wifiaid.html",
+      "external_url": "https://apps.apple.com/app/id6790467886",
+      "title": "WiFi Aid",
+      "content_text": "複数経路、DNS、TCP、TLS、応答時間、安定性を照合し、接続不良の原因候補を明確に。App Storeで一度だけ購入。サブスク・広告・追跡なし。",
+      "tags": [
+        "インターネット障害",
+        "ルーター",
+        "接続テスト",
+        "高遅延",
+        "ジッター",
+        "サイト確認",
+        "回線トラブル",
+        "障害切り分け",
+        "ネット診断",
+        "DNSエラー",
+        "通信確認",
+        "応答時間",
+        "安定性",
+        "接続履歴",
+        "IPv4",
+        "IPv6",
+        "Ping",
+        "TLS"
+      ],
+      "language": "ja",
+      "date_modified": "2026-07-22T16:22:36Z"
     },
     {
       "id": "https://apps.apple.com/app/id6789917808",

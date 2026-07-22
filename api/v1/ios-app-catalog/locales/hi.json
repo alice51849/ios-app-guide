@@ -2,11 +2,11 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-07-22",
-  "content_digest": "306ea447869be94b80f2489ed9d6323c32e9859764460bb99c3facefca2bec32",
+  "content_digest": "5b7ec0e2b45456f28f61524f6b7f568eb60477841d65cc99110e61c76562ebaa",
   "locale": "hi",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 29,
+  "record_count": 31,
   "apps": [
     {
       "key": "aim990",
@@ -1035,6 +1035,37 @@
       }
     },
     {
+      "key": "maskmyfile",
+      "app_store_id": "6792850916",
+      "name": "Mask My File",
+      "summary": "उपयोगी संदर्भ खोए बिना सुरक्षित रूप से साझा करें। Mask My File आपके फ़ाइल भेजने से पहले निजी विवरण ढूँढता है, आपके चुने हिस्सों को स्थायी रूप से छिपाता है, फिर नई फ़ाइल दोबारा खोलकर जाँचता है और तभी Private Ready दिखाता है।",
+      "category": "utility",
+      "search_terms": [
+        "निजी जानकारी छिपाएँ",
+        "आधार पैन छिपाना",
+        "दस्तावेज़ सुरक्षा",
+        "फोटो सेंसर",
+        "मेटाडेटा हटाना",
+        "बारकोड",
+        "ऑफलाइन",
+        "निजता"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6792850916",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/hi/maskmyfile.html",
+      "verified_live": true
+    },
+    {
       "key": "mochi",
       "app_store_id": "6785004775",
       "name": "Mochi: प्यारी टास्क लिस्ट",
@@ -1530,6 +1561,40 @@
         "formatted_price": "मुफ़्त",
         "storefront_url": "https://apps.apple.com/in/app/id6782275018"
       }
+    },
+    {
+      "key": "wifiaid",
+      "app_store_id": "6790467886",
+      "name": "WiFi Aid",
+      "summary": "स्वतंत्र पाथ, DNS, TCP, TLS, टाइमिंग और स्थिरता जाँच से सबसे संभावित कारण जानें। केवल एक बार अग्रिम भुगतान—न सदस्यता, न विज्ञापन, न ट्रैकिंग।",
+      "category": "utility",
+      "search_terms": [
+        "इंटरनेट डाउन",
+        "राउटर",
+        "समस्या समाधान",
+        "विलंब",
+        "jitter",
+        "लॉगिन पोर्टल",
+        "वेबसाइट जाँच",
+        "कनेक्शन",
+        "नेट समस्या",
+        "ipv4",
+        "ipv6"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6790467886",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/hi/wifiaid.html",
+      "verified_live": true
     },
     {
       "key": "wordmate",

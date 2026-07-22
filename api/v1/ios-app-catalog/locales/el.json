@@ -2,11 +2,11 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-07-22",
-  "content_digest": "306ea447869be94b80f2489ed9d6323c32e9859764460bb99c3facefca2bec32",
+  "content_digest": "5b7ec0e2b45456f28f61524f6b7f568eb60477841d65cc99110e61c76562ebaa",
   "locale": "el",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 29,
+  "record_count": 31,
   "apps": [
     {
       "key": "aim990",
@@ -983,6 +983,37 @@
       }
     },
     {
+      "key": "maskmyfile",
+      "app_store_id": "6792850916",
+      "name": "Mask My File",
+      "summary": "Μοιραστείτε με ασφάλεια χωρίς να χάσετε το χρήσιμο πλαίσιο. Το Mask My File εντοπίζει ιδιωτικά στοιχεία προτού στείλετε ένα αρχείο, αποκρύπτει μόνιμα ό,τι επιλέξετε και έπειτα ανοίγει ξανά και επαληθεύει το νέο αντίγραφο προτού εμφανίσει το Private Ready.",
+      "category": "utility",
+      "search_terms": [
+        "ανωνυμοποίηση",
+        "λογοκρισία",
+        "προσωπικά δεδομένα",
+        "ταυτότητα",
+        "διαβατήριο",
+        "ιατρικό αρχείο",
+        "σύμβαση",
+        "απόρρητο"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6792850916",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/el/maskmyfile.html",
+      "verified_live": true
+    },
+    {
       "key": "mochi",
       "app_store_id": "6785004775",
       "name": "Mochi: Χαριτωμένες λίστες",
@@ -1469,6 +1500,38 @@
         "formatted_price": "Δωρεάν",
         "storefront_url": "https://apps.apple.com/gr/app/id6782275018"
       }
+    },
+    {
+      "key": "wifiaid",
+      "app_store_id": "6790467886",
+      "name": "WiFi Aid",
+      "summary": "Βρείτε την πιθανότερη αιτία με ανεξάρτητους ελέγχους διαδρομών, DNS, TCP, TLS, χρόνων και σταθερότητας. Μία αρχική πληρωμή, χωρίς συνδρομή, διαφημίσεις ή παρακολούθηση.",
+      "category": "utility",
+      "search_terms": [
+        "βλάβη ίντερνετ",
+        "δρομολογητής",
+        "αντιμετώπιση",
+        "καθυστέρηση",
+        "jitter",
+        "πύλη σύνδεσης",
+        "έλεγχος ιστοτόπου",
+        "ipv4",
+        "dns"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6790467886",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/el/wifiaid.html",
+      "verified_live": true
     },
     {
       "key": "wordmate",

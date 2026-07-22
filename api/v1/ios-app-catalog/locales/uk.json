@@ -2,11 +2,11 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-07-22",
-  "content_digest": "306ea447869be94b80f2489ed9d6323c32e9859764460bb99c3facefca2bec32",
+  "content_digest": "5b7ec0e2b45456f28f61524f6b7f568eb60477841d65cc99110e61c76562ebaa",
   "locale": "uk",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 29,
+  "record_count": 31,
   "apps": [
     {
       "key": "aim990",
@@ -1002,6 +1002,40 @@
       }
     },
     {
+      "key": "maskmyfile",
+      "app_store_id": "6792850916",
+      "name": "Mask My File",
+      "summary": "Діліться безпечно, не втрачаючи потрібного контексту. Mask My File знаходить приватні дані, перш ніж ви надішлете файл, назавжди приховує лише те, що ви оберете, а потім повторно відкриває й перевіряє нову копію, перш ніж показати Private Ready.",
+      "category": "utility",
+      "search_terms": [
+        "цензура",
+        "приховати",
+        "замазати",
+        "конфіденційність",
+        "паспорт",
+        "документ",
+        "договір",
+        "квитанція",
+        "метадані",
+        "сканер",
+        "pdf"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6792850916",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/uk/maskmyfile.html",
+      "verified_live": true
+    },
+    {
       "key": "mochi",
       "app_store_id": "6785004775",
       "name": "Mochi: Милий список справ",
@@ -1497,6 +1531,40 @@
         "formatted_price": "Безкоштовно",
         "storefront_url": "https://apps.apple.com/ua/app/id6782275018"
       }
+    },
+    {
+      "key": "wifiaid",
+      "app_store_id": "6790467886",
+      "name": "WiFi Aid",
+      "summary": "Знайдіть найімовірнішу причину за допомогою незалежних перевірок маршрутів, DNS, TCP, TLS, часу відгуку та стабільності. Разова оплата, без підписки, реклами й стеження.",
+      "category": "utility",
+      "search_terms": [
+        "збій інтернету",
+        "модем",
+        "усунення проблем",
+        "затримка",
+        "джитер",
+        "портал входу",
+        "перевірка сайту",
+        "ipv4",
+        "ipv6",
+        "dns",
+        "tls"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6790467886",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/uk/wifiaid.html",
+      "verified_live": true
     },
     {
       "key": "wordmate",

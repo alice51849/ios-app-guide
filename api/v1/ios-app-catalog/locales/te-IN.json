@@ -2,11 +2,11 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-07-22",
-  "content_digest": "306ea447869be94b80f2489ed9d6323c32e9859764460bb99c3facefca2bec32",
+  "content_digest": "5b7ec0e2b45456f28f61524f6b7f568eb60477841d65cc99110e61c76562ebaa",
   "locale": "te-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 29,
+  "record_count": 31,
   "apps": [
     {
       "key": "aim990",
@@ -1016,6 +1016,36 @@
       }
     },
     {
+      "key": "maskmyfile",
+      "app_store_id": "6792850916",
+      "name": "Mask My File",
+      "summary": "ఉపయోగకరమైన సందర్భాన్ని కోల్పోకుండా సురక్షితంగా పంచుకోండి. Mask My File మీరు ఫైల్ పంపే ముందు వ్యక్తిగత వివరాలను కనుగొని, మీరు ఎంచుకున్న భాగాన్ని శాశ్వతంగా దాచి, ఆపై కొత్త ఫైల్‌ను మళ్లీ తెరిచి ధృవీకరించిన తర్వాతే Private Ready చూపిస్తుంది.",
+      "category": "utility",
+      "search_terms": [
+        "వ్యక్తిగత సమాచారం దాచు",
+        "ఆధార్ పాన్ దాచు",
+        "పత్రం భద్రత",
+        "ఫోటో సెన్సార్",
+        "మెటాడేటా తొలగింపు",
+        "గోప్యత",
+        "ఆఫ్‌లైన్"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6792850916",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/maskmyfile.html",
+      "verified_live": true
+    },
+    {
       "key": "mochi",
       "app_store_id": "6785004775",
       "name": "Mochi: క్యూట్ టాస్క్ లిస్ట్",
@@ -1505,6 +1535,43 @@
         "formatted_price": "ఉచితం",
         "storefront_url": "https://apps.apple.com/in/app/id6782275018"
       }
+    },
+    {
+      "key": "wifiaid",
+      "app_store_id": "6790467886",
+      "name": "WiFi Aid",
+      "summary": "స్వతంత్ర DNS, TCP, TLS, టైమింగ్, స్థిరత్వ పరీక్షల ద్వారా సంభావ్య కనెక్షన్ సమస్యను గుర్తించండి. ఒకే ఒక్క కొనుగోలు—చందా, ప్రకటనలు, ట్రాకింగ్ లేదు.",
+      "category": "utility",
+      "search_terms": [
+        "wifi సమస్య",
+        "నెట్",
+        "dns",
+        "ping",
+        "internet",
+        "కనెక్షన్",
+        "speed test",
+        "ఇంటర్నెట్",
+        "router",
+        "latency",
+        "ip",
+        "ttfb",
+        "వైఫై",
+        "tcp"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6790467886",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/wifiaid.html",
+      "verified_live": true
     },
     {
       "key": "wordmate",

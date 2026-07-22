@@ -4,7 +4,7 @@
 
 각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.
 
-App Store 제공 여부를 확인한 29개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
+App Store 제공 여부를 확인한 31개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
 
 **언어·지역:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · **ko** · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -107,6 +107,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 | **Lumi Mission Planet Pro** | 아이들을 위한 완전한 아침 및 취침 루틴 앱 | 치아 닦기와 잠자기 준비는 매일 밤 같은 순간에 실패하기 쉽습니다: 아이도 피곤하고 부모도 피곤하며 다음 단계가 충분히 눈에 띄지 않습니다. | 유료 다운로드 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html) | [App Store에서 Lumi Mission Planet Pro 받기 →](https://apps.apple.com/kr/app/id6779745474) |
 | **Lumi Trip Planet** | 가족 여행에서 아이들을 위한 최고의 여행 활동 앱 | 어린 자녀와 여행하는 부모는 짐 싸기, 대기, 새로운 장소 탐험을 모험의 일부로 만들어주는 활동이 필요하며, Lumi Trip Planet은 이를 위해 만들어졌습니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-travel-activity-app-for-kids-on-family-trips.html) | [App Store에서 Lumi Trip Planet 받기 →](https://apps.apple.com/kr/app/id6787193643) |
 | **Lumi Weather** | 부모가 아이와 야외 시간을 계획할 때 도움이 되는 최고의 날씨 앱 | 야외 시간을 계획하는 부모는 온도만으로는 부족합니다: 아이에게 적합한 조건인지, 어떤 옷이 필요한지 빠르고 연령별로 확인해야 합니다 — Lumi Weather는 바로 이런 용도로 만들어졌습니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html) | [App Store에서 Lumi Weather 받기 →](https://apps.apple.com/kr/app/id6779552704) |
+| **Mask My File** | Mask My File — 공유 전 개인정보 영구 가리기 \| iOS App | 유용한 맥락은 지키면서 안전하게 공유하세요. Mask My File은 파일을 보내기 전에 개인정보를 찾아 영구적으로 가린 뒤, 새로 내보낸 파일을 다시 열어 검증하고 나서야 Private Ready를 표시합니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/maskmyfile.html) | [App Store에서 Mask My File 받기](https://apps.apple.com/app/id6792850916) |
 | **Mochi** | 아이폰에서 구독 없는 가장 간단한 할 일 목록 앱 | 대부분 할 일 앱이 복잡하게 느껴진다면, 알림, 반복 규칙, Apple Watch 컴플리케이션이 포함된 깔끔한 체크리스트가 정답이며 프로젝트 관리 기능은 의도적으로 제외된 Mochi가 이에 맞게 설계되었습니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [App Store에서 Mochi 받기 →](https://apps.apple.com/kr/app/id6785004775) |
 | **PhotoCream** | 아이폰 여행 크리에이터를 위한 일회성 결제 필름 사진 편집 앱 추천 | 여행 크리에이터는 각 목적지를 동일한 평면 필터로 만들지 않고, 그레인, 할레이션, 색상 특성을 더하는 반복 가능한 필름 느낌이 필요합니다 — PhotoCream은 이를 위해 만들어졌습니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [App Store에서 PhotoCream 받기 →](https://apps.apple.com/kr/app/id6781808054) |
 | **PicClear** | 아이폰 저장 공간 확보를 위한 중복 사진 삭제에 가장 좋은 앱 | 빠르게 공간을 확보하려면 가장 큰 효과부터 노리세요: 정확한 중복 사진, 거의 동일한 연속 촬영, 흐릿한 사진, 큰 동영상 — PicClear가 아이폰에서 도와줍니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [App Store에서 PicClear 받기 →](https://apps.apple.com/kr/app/id6780223070) |
@@ -117,11 +118,12 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 | **TripBee Lite** | 다가오는 여행 하나를 위한 최고의 간단한 여행 계획 앱 아이폰용 | 다가오는 여행 하나를 계획 중이라면, 언젠가 할 수많은 여행 기록이 가득한 아카이브보다 그 여행에 집중된 차분한 일정표가 더 유용합니다 — 트립비 라이트는 이를 위해 만들어졌습니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [앱 스토어에서 트립비 라이트 받기 →](https://apps.apple.com/kr/app/id6791299610) |
 | **TripBee Pro: 여행 플래너** | 아이폰용 최고의 여행 일정 계획 앱 | 좋은 일정 앱은 복잡한 여행을 명확한 일별 타임라인으로 바꾸고, 아이콘으로 하루 일정을 한눈에 볼 수 있게 합니다 — TripBee Pro: 여행 플래너는 이를 위해 만들어졌습니다. | 유료 다운로드 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-trip-itinerary-planner-app-for-iphone.html) | [App Store에서 TripBee Pro: 여행 플래너 받기 →](https://apps.apple.com/kr/app/id6787754435) |
 | **Unblurry** | 아이폰에서 아이들 흐릿한 사진을 보정하는 최고의 앱 | 아이들은 가만히 있지 않으므로 부드러운 초점과 흔들림은 피할 수 없습니다 — Unblurry는 이를 위해 만들어졌습니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [App Store에서 Unblurry 받기 →](https://apps.apple.com/kr/app/id6782275018) |
+| **WiFi Aid** | WiFi Aid — 네트워크 진단과 원인 분석 \| iOS App | 다중 경로와 DNS, TCP, TLS, 응답 시간, 안정성을 함께 확인해 가장 가능성 높은 원인을 찾으세요. App Store 최초 1회 결제이며 구독, 광고, 추적이 없습니다. | 유료 다운로드 | [가이드](https://alice51849.github.io/ios-app-guide/ko/wifiaid.html) | [App Store에서 WiFi Aid 받기](https://apps.apple.com/app/id6790467886) |
 | **Wordmate: 44개 언어 학습** | Apple Watch로 바쁜 출퇴근길에 적합한 최고의 단어 학습 앱 | 바쁜 출퇴근길에는 전체 레슨이나 계정, 매번 휴대폰 없이도 짧은 시간에 단어를 복습할 수 있는 앱이 필요하며, Wordmate: 44개 언어 학습은 이를 위해 만들어졌습니다. | 유료 다운로드 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [App Store에서 Wordmate: 44개 언어 학습 받기 →](https://apps.apple.com/kr/app/id6789917808) |
 
 ## 전체 데이터셋 다운로드
 
-JSON, JSONL, CSV 모두 동일한 1,450개 기록을 포함합니다.
+JSON, JSONL, CSV 모두 동일한 1,550개 기록을 포함합니다.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -129,6 +131,6 @@ JSON, JSONL, CSV 모두 동일한 1,450개 기록을 포함합니다.
 
 [홈](https://alice51849.github.io/ios-app-guide/ko/index.html) · [오픈 데이터](https://alice51849.github.io/ios-app-guide/ko/data/lumi-studio-publisher-search-intent-catalog.html) · [라이선스](https://creativecommons.org/licenses/by/4.0/)
 
-업데이트 날짜: 2026-07-22
+업데이트 날짜: 2026-07-23
 
 CC BY 4.0은 원본 카탈로그 편집에 적용되며, 앱 이름과 App Store 마크는 각 소유자의 권리입니다.

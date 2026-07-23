@@ -16,6 +16,7 @@ from typing import Any
 import xml.etree.ElementTree as ET
 
 from family_travel_dataset import write_text_if_changed
+import gen_feed
 from official_locales import OFFICIAL_LOCALES
 
 
@@ -39,6 +40,7 @@ DATE_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
 TIMESTAMP_RE = re.compile(
     r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z"
 )
+ITEM_CONTENT_VERSION = 2
 
 
 def feed_relative(locale: str, feed_format: str) -> Path:
@@ -143,10 +145,17 @@ def _timestamp_after(candidate: str, previous: str) -> str:
     )
 
 
-def _record_digest(record: dict[str, Any]) -> str:
+def _record_digest(
+    record: dict[str, Any],
+    preview: dict[str, Any],
+) -> str:
     return hashlib.sha256(
         json.dumps(
-            record,
+            {
+                "item_content_version": ITEM_CONTENT_VERSION,
+                "record": record,
+                "preview": preview,
+            },
             ensure_ascii=False,
             sort_keys=True,
             separators=(",", ":"),
@@ -183,6 +192,7 @@ def _item_state(
     records: list[dict[str, Any]],
     modified: str,
     changed_timestamp: str,
+    previews: dict[str, dict[str, Any]],
 ) -> dict[str, dict[str, str]]:
     baseline = _timestamp(modified)
     changed = max(
@@ -193,7 +203,7 @@ def _item_state(
     state: dict[str, dict[str, str]] = {}
     for record in records:
         record_id = str(record["record_id"])
-        digest = _record_digest(record)
+        digest = _record_digest(record, previews[record_id])
         previous = existing.get(record_id)
         previous_meta = previous.get("_meta") if previous else None
         previous_digest = (
@@ -225,7 +235,29 @@ def _home_url(locale: str) -> str:
     return f"{SITE}/{locale}/index.html"
 
 
-def _content_html(record: dict[str, Any]) -> str:
+def _preview_images(
+    pages: Path,
+    records: list[dict[str, Any]],
+) -> dict[str, dict[str, Any]]:
+    by_app: dict[str, dict[str, Any]] = {}
+    previews: dict[str, dict[str, Any]] = {}
+    for record in records:
+        record_id = _single_line(record.get("record_id"), "record ID")
+        app_key = _single_line(record.get("app_key"), "app key")
+        if app_key not in by_app:
+            by_app[app_key] = gen_feed.app_preview_image(
+                app_key,
+                pages=pages,
+                site=SITE,
+            )
+        previews[record_id] = by_app[app_key]
+    return previews
+
+
+def _content_html(
+    record: dict[str, Any],
+    preview: dict[str, Any],
+) -> str:
     context = html.escape(
         _single_line(record["decision_context"], "decision context")
     )
@@ -235,6 +267,11 @@ def _content_html(record: dict[str, Any]) -> str:
     )
     cta = html.escape(
         _single_line(record["app_store_cta_label"], "App Store CTA")
+    )
+    image_url = html.escape(str(preview["url"]), quote=True)
+    image_alt = html.escape(
+        _single_line(record["publisher_query"], "publisher query"),
+        quote=True,
     )
     storefront = ""
     storefront_facts = record.get("storefront_facts")
@@ -260,6 +297,9 @@ def _content_html(record: dict[str, Any]) -> str:
             )
         storefront = f"<p>{' \u00b7 '.join(labels)}</p>"
     return (
+        f'<p><a href="{store_url}"><img src="{image_url}" '
+        f'alt="{image_alt}" width="{int(preview["width"])}" '
+        f'height="{int(preview["height"])}"></a></p>'
         f"<p>{context}</p>{storefront}"
         f'<p><a href="{store_url}">{cta}</a></p>'
     )
@@ -385,6 +425,7 @@ def render_atom(
     modified: str,
     context: dict[str, str],
     item_state: dict[str, dict[str, str]],
+    previews: dict[str, dict[str, Any]],
 ) -> str:
     e = html.escape
     updated = max(
@@ -394,16 +435,20 @@ def render_atom(
     urls = feed_urls(locale)
     entries = []
     for record in records:
-        content = e(_content_html(record), quote=False)
-        item_updated = item_state[str(record["record_id"])][
-            "date_modified"
-        ]
+        record_id = str(record["record_id"])
+        preview = previews[record_id]
+        content = e(_content_html(record, preview), quote=False)
+        item_updated = item_state[record_id]["date_modified"]
         entries.append(
             "  <entry>\n"
             f"    <title>{e(str(record['publisher_query']))}</title>\n"
             f"    <id>{e(str(record['decision_page_url']))}</id>\n"
             f'    <link rel="alternate" type="text/html" '
             f'href="{e(str(record["decision_page_url"]), quote=True)}"/>\n'
+            f'    <link rel="enclosure" type="{e(str(preview["mime"]), quote=True)}" '
+            f'href="{e(str(preview["url"]), quote=True)}" '
+            f'length="{int(preview["length"])}" '
+            f'title="{e(str(record["publisher_query"]), quote=True)}"/>\n'
             f'    <link rel="related" type="text/html" '
             f'href="{e(str(record["app_store_url"]), quote=True)}" '
             f'title="{e(str(record["app_store_cta_label"]), quote=True)}"/>\n'
@@ -442,6 +487,7 @@ def render_rss(
     modified: str,
     context: dict[str, str],
     item_state: dict[str, dict[str, str]],
+    previews: dict[str, dict[str, Any]],
 ) -> str:
     e = html.escape
     feed_updated = max(
@@ -452,9 +498,11 @@ def render_rss(
     urls = feed_urls(locale)
     items = []
     for record in records:
-        description = e(_content_html(record), quote=False)
+        record_id = str(record["record_id"])
+        preview = previews[record_id]
+        description = e(_content_html(record, preview), quote=False)
         item_published = _rss_item_timestamp(
-            item_state[str(record["record_id"])]["date_modified"]
+            item_state[record_id]["date_modified"]
         )
         items.append(
             "    <item>\n"
@@ -467,12 +515,26 @@ def render_rss(
             f'      <atom:link rel="related" type="text/html" '
             f'href="{e(str(record["app_store_url"]), quote=True)}" '
             f'title="{e(str(record["app_store_cta_label"]), quote=True)}"/>\n'
+            f'      <media:content url="{e(str(preview["url"]), quote=True)}" '
+            f'fileSize="{int(preview["length"])}" '
+            f'type="{e(str(preview["mime"]), quote=True)}" '
+            f'medium="image" isDefault="true" expression="full" '
+            f'width="{int(preview["width"])}" '
+            f'height="{int(preview["height"])}">\n'
+            f'        <media:title type="plain">'
+            f'{e(str(record["publisher_query"]))}</media:title>\n'
+            "      </media:content>\n"
+            f'      <media:thumbnail '
+            f'url="{e(str(preview["url"]), quote=True)}" '
+            f'width="{int(preview["width"])}" '
+            f'height="{int(preview["height"])}"/>\n'
             "    </item>"
         )
     return (
         '<?xml version="1.0" encoding="utf-8"?>\n'
         '<rss version="2.0" '
-        'xmlns:atom="http://www.w3.org/2005/Atom">\n'
+        'xmlns:atom="http://www.w3.org/2005/Atom" '
+        f'xmlns:media="{gen_feed.MEDIA_NS}">\n'
         "  <channel>\n"
         f"    <title>{e(context['title'])}</title>\n"
         f"    <link>{e(_home_url(locale))}</link>\n"
@@ -497,21 +559,34 @@ def render_json_feed(
     modified: str,
     context: dict[str, str],
     item_state: dict[str, dict[str, str]],
+    previews: dict[str, dict[str, Any]],
 ) -> str:
     urls = feed_urls(locale)
     items = []
     for record in records:
-        state = item_state[str(record["record_id"])]
+        record_id = str(record["record_id"])
+        state = item_state[record_id]
+        preview = previews[record_id]
         items.append(
             {
-                "id": str(record["record_id"]),
+                "id": record_id,
                 "url": str(record["decision_page_url"]),
                 "external_url": str(record["app_store_url"]),
                 "title": str(record["publisher_query"]),
-                "content_html": _content_html(record),
+                "content_html": _content_html(record, preview),
                 "content_text": _content_text(record),
                 "summary": str(record["decision_context"]),
                 "date_modified": state["date_modified"],
+                "image": str(preview["url"]),
+                "banner_image": str(preview["url"]),
+                "attachments": [
+                    {
+                        "url": str(preview["url"]),
+                        "mime_type": str(preview["mime"]),
+                        "title": str(record["publisher_query"]),
+                        "size_in_bytes": int(preview["length"]),
+                    }
+                ],
                 "tags": list(
                     dict.fromkeys(
                         [
@@ -573,6 +648,7 @@ def build(
     contexts: dict[str, dict[str, str]],
 ) -> list[str]:
     grouped = _group_records(records)
+    previews = _preview_images(pages, records)
     output_urls: list[str] = []
     changed_timestamp = (
         datetime.now(timezone.utc)
@@ -587,6 +663,7 @@ def build(
             grouped[locale],
             modified,
             changed_timestamp,
+            previews,
         )
         rendered = {
             "atom": render_atom(
@@ -595,6 +672,7 @@ def build(
                 modified,
                 context,
                 state,
+                previews,
             ),
             "rss": render_rss(
                 locale,
@@ -602,6 +680,7 @@ def build(
                 modified,
                 context,
                 state,
+                previews,
             ),
             "json_feed": render_json_feed(
                 locale,
@@ -609,6 +688,7 @@ def build(
                 modified,
                 context,
                 state,
+                previews,
             ),
         }
         ET.fromstring(rendered["atom"])

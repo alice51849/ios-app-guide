@@ -58,8 +58,12 @@ class AppInstallDecisionFeedTests(unittest.TestCase):
         atom_ns = "{http://www.w3.org/2005/Atom}"
         atom_link = f"{atom_ns}link"
         rss_atom_link = "{http://www.w3.org/2005/Atom}link"
+        media_ns = f"{{{app_install_decision_feeds.gen_feed.MEDIA_NS}}}"
         for locale in OFFICIAL_LOCALES:
             records = self.by_locale[locale]
+            records_by_page = {
+                record["decision_page_url"]: record for record in records
+            }
             expected_pages = {
                 record["decision_page_url"] for record in records
             }
@@ -104,6 +108,39 @@ class AppInstallDecisionFeedTests(unittest.TestCase):
                     if link.attrib.get("rel") == "related"
                 },
             )
+            for entry in atom_entries:
+                page_url = entry.find(f"{atom_ns}id").text
+                record = records_by_page[page_url]
+                image_url = (
+                    f"{app_install_decision_feeds.SITE}/social/img/"
+                    f"{record['app_key']}-share.jpg"
+                )
+                image_path = (
+                    self.pages
+                    / "social"
+                    / "img"
+                    / f"{record['app_key']}-share.jpg"
+                )
+                enclosure = entry.find(
+                    f"{atom_ns}link[@rel='enclosure']"
+                )
+                self.assertEqual(
+                    {
+                        "rel": "enclosure",
+                        "type": "image/jpeg",
+                        "href": image_url,
+                        "length": str(image_path.stat().st_size),
+                        "title": record["publisher_query"],
+                    },
+                    enclosure.attrib,
+                )
+                content_html = entry.find(f"{atom_ns}content").text
+                self.assertIn(
+                    f'<a href="{record["app_store_url"]}"><img ',
+                    content_html,
+                )
+                self.assertIn(f'src="{image_url}"', content_html)
+                self.assertIn('width="1200" height="675"', content_html)
 
             rss = ET.parse(rss_path).getroot()
             rss_items = rss.findall("./channel/item")
@@ -121,6 +158,49 @@ class AppInstallDecisionFeedTests(unittest.TestCase):
                     if link.attrib.get("rel") == "related"
                 },
             )
+            for item in rss_items:
+                page_url = item.find("link").text
+                record = records_by_page[page_url]
+                image_url = (
+                    f"{app_install_decision_feeds.SITE}/social/img/"
+                    f"{record['app_key']}-share.jpg"
+                )
+                image_path = (
+                    self.pages
+                    / "social"
+                    / "img"
+                    / f"{record['app_key']}-share.jpg"
+                )
+                media = item.find(f"{media_ns}content")
+                self.assertEqual(
+                    {
+                        "url": image_url,
+                        "fileSize": str(image_path.stat().st_size),
+                        "type": "image/jpeg",
+                        "medium": "image",
+                        "isDefault": "true",
+                        "expression": "full",
+                        "width": "1200",
+                        "height": "675",
+                    },
+                    media.attrib,
+                )
+                self.assertEqual(
+                    record["publisher_query"],
+                    media.findtext(f"{media_ns}title"),
+                )
+                self.assertEqual(
+                    {
+                        "url": image_url,
+                        "width": "1200",
+                        "height": "675",
+                    },
+                    item.find(f"{media_ns}thumbnail").attrib,
+                )
+                self.assertIn(
+                    f'href="{record["app_store_url"]}"><img ',
+                    item.find("description").text,
+                )
 
             json_feed = json.loads(json_path.read_text(encoding="utf-8"))
             self.assertEqual(
@@ -147,9 +227,35 @@ class AppInstallDecisionFeedTests(unittest.TestCase):
             for item in json_feed["items"]:
                 self.assertIn(item["external_url"], item["content_text"])
                 self.assertNotIn("\n", item["content_text"])
-                storefront_facts = records_by_id[item["id"]][
-                    "storefront_facts"
-                ]
+                record = records_by_id[item["id"]]
+                image_url = (
+                    f"{app_install_decision_feeds.SITE}/social/img/"
+                    f"{record['app_key']}-share.jpg"
+                )
+                image_path = (
+                    self.pages
+                    / "social"
+                    / "img"
+                    / f"{record['app_key']}-share.jpg"
+                )
+                self.assertEqual(image_url, item["image"])
+                self.assertEqual(image_url, item["banner_image"])
+                self.assertEqual(
+                    [
+                        {
+                            "url": image_url,
+                            "mime_type": "image/jpeg",
+                            "title": record["publisher_query"],
+                            "size_in_bytes": image_path.stat().st_size,
+                        }
+                    ],
+                    item["attachments"],
+                )
+                self.assertIn(
+                    f'<a href="{record["app_store_url"]}"><img ',
+                    item["content_html"],
+                )
+                storefront_facts = record["storefront_facts"]
                 if storefront_facts is not None:
                     formatted_price = str(
                         storefront_facts["formatted_price"]
@@ -179,11 +285,16 @@ class AppInstallDecisionFeedTests(unittest.TestCase):
         changed_records = [dict(record) for record in records]
         changed_records[0]["decision_context"] += " Updated."
         changed_at = "2099-01-02T03:04:05Z"
+        previews = app_install_decision_feeds._preview_images(
+            self.pages,
+            changed_records,
+        )
         state = app_install_decision_feeds._item_state(
             path,
             changed_records,
             self.payload["dateModified"],
             changed_at,
+            previews,
         )
         changed_id = changed_records[0]["record_id"]
         self.assertEqual(changed_at, state[changed_id]["date_modified"])
@@ -199,6 +310,7 @@ class AppInstallDecisionFeedTests(unittest.TestCase):
             changed_records,
             self.payload["dateModified"],
             "2000-01-01T00:00:00Z",
+            previews,
         )
         self.assertGreater(
             datetime.fromisoformat(
@@ -209,6 +321,22 @@ class AppInstallDecisionFeedTests(unittest.TestCase):
             ),
             datetime.fromisoformat(
                 existing_dates[changed_id].replace("Z", "+00:00")
+            ),
+        )
+
+    def test_item_digest_tracks_visual_attachment_metadata(self) -> None:
+        record = self.by_locale["en-US"][0]
+        preview = app_install_decision_feeds._preview_images(
+            self.pages,
+            [record],
+        )[record["record_id"]]
+        changed_preview = dict(preview)
+        changed_preview["length"] += 1
+        self.assertNotEqual(
+            app_install_decision_feeds._record_digest(record, preview),
+            app_install_decision_feeds._record_digest(
+                record,
+                changed_preview,
             ),
         )
 

@@ -175,35 +175,21 @@ def _has_owned_resource_cta(path):
     return bool(match and match.group(1).startswith(f"{SITE}/"))
 
 
-def _preview_image(path, url):
-    if os.path.basename(os.path.dirname(path)) != "guides":
-        return None
-    try:
-        with open(path, encoding="utf-8") as handle:
-            source = handle.read(80_000)
-    except OSError as exc:
-        raise FileNotFoundError(f"Feed guide is unreadable: {path}") from exc
-    parser = _OpenGraphImageParser()
-    parser.feed(source)
-    if not parser.images:
-        return None
-    if len(parser.images) != 1:
-        raise ValueError(f"Feed guide must have one og:image: {path}")
-
-    key = os.path.splitext(os.path.basename(path))[0]
-    expected_guide = f"{SITE}/guides/{key}.html"
-    expected_image = f"{SITE}/social/img/{key}-share.jpg"
-    if url != expected_guide:
-        raise ValueError(
-            f"Feed guide URL mismatch for {path}: {url} != {expected_guide}"
-        )
-    if parser.images[0] != expected_image:
-        raise ValueError(
-            f"Feed guide has unowned or mismatched og:image: "
-            f"{path}: {parser.images[0]}"
-        )
-
-    image_path = os.path.join(PAGES, "social", "img", f"{key}-share.jpg")
+def app_preview_image(key, pages=None, site=None):
+    if not isinstance(key, str) or re.fullmatch(
+        r"[a-z0-9][a-z0-9-]*",
+        key,
+    ) is None:
+        raise ValueError(f"Invalid feed preview app key: {key}")
+    pages_root = os.fspath(PAGES if pages is None else pages)
+    site_root = (SITE if site is None else site).rstrip("/")
+    expected_image = f"{site_root}/social/img/{key}-share.jpg"
+    image_path = os.path.join(
+        pages_root,
+        "social",
+        "img",
+        f"{key}-share.jpg",
+    )
     if not os.path.isfile(image_path) or os.path.getsize(image_path) <= 0:
         raise FileNotFoundError(f"Feed preview image is missing or empty: {image_path}")
     try:
@@ -225,6 +211,36 @@ def _preview_image(path, url):
         "height": PREVIEW_SIZE[1],
         "length": os.path.getsize(image_path),
     }
+
+
+def _preview_image(path, url):
+    if os.path.basename(os.path.dirname(path)) != "guides":
+        return None
+    try:
+        with open(path, encoding="utf-8") as handle:
+            source = handle.read(80_000)
+    except OSError as exc:
+        raise FileNotFoundError(f"Feed guide is unreadable: {path}") from exc
+    parser = _OpenGraphImageParser()
+    parser.feed(source)
+    if not parser.images:
+        return None
+    if len(parser.images) != 1:
+        raise ValueError(f"Feed guide must have one og:image: {path}")
+
+    key = os.path.splitext(os.path.basename(path))[0]
+    expected_guide = f"{SITE}/guides/{key}.html"
+    preview = app_preview_image(key)
+    if url != expected_guide:
+        raise ValueError(
+            f"Feed guide URL mismatch for {path}: {url} != {expected_guide}"
+        )
+    if parser.images[0] != preview["url"]:
+        raise ValueError(
+            f"Feed guide has unowned or mismatched og:image: "
+            f"{path}: {parser.images[0]}"
+        )
+    return preview
 
 
 def _write_if_changed(path, content):

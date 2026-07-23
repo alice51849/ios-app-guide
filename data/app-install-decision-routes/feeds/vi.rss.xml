@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>32 ứng dụng trực tiếp đã xác minh</title>
     <link>https://alice51849.github.io/ios-app-guide/vi/index.html</link>
     <description>Tài liệu này do Lumi Studio trực tiếp công bố; Lumi Studio là nhà phát triển của tất cả ứng dụng được liệt kê.</description>
     <language>vi</language>
-    <lastBuildDate>Thu, 23 Jul 2026 09:10:28 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 11:39:54 GMT</lastBuildDate>
     <generator>iOS App Guide install-decision feeds</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/vi.rss.xml"/>
     <atom:link rel="alternate" type="application/atom+xml" href="https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/vi.atom.xml"/>
@@ -14,257 +14,385 @@
       <title>Mask My File — Che dữ liệu trước khi chia sẻ | iOS App</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Chia sẻ an toàn mà vẫn giữ được bối cảnh cần thiết. Mask My File tìm ra thông tin riêng tư trước khi bạn gửi tệp, che vĩnh viễn đúng những gì bạn chọn, rồi mở lại và xác minh bản sao mới trước khi hiển thị Private Ready. BẠN CÓ THỂ LÀM GÌ • Ảnh và PDF: xem trước toàn chiều rộng, thu phóng tới 5×, kéo mượt mà và khoanh vùng thủ công chính xác. • Tệp hình ảnh: chỉ che đặc vĩnh viễn hoặc xóa bỏ. Phát hiện khuôn mặt và mã vạch chỉ đánh dấu vùng để bạn xem lại. • Văn bản, JSON, XML, HTML, CSV, TSV và RTF: tìm mọi kết quả rồi áp dụng che toàn phần, che một phần, ký tự thay thế, bút danh hoặc xóa. • Xóa siêu dữ liệu khi định dạng cho phép. Làm việc theo từng trang trong PDF hoặc bảo vệ tối đa 100 tệp cùng lúc với bản xem trước riêng, tìm kiếm giữa các tệp và khoanh vùng thủ công cho mỗi tệp. • Sắp xếp công việc gọn gàng với Phiên riêng tư, không gian dự án và Kho ký tự thay thế. DÙNG KHI THẬT SỰ CẦN Trước khi gửi đơn thuê nhà, hồ sơ y tế, giấy tờ có số căn cước hay tệp khách hàng cho đồng nghiệp, hãy giữ bối cảnh hữu ích và che vĩnh viễn những chi tiết không nên để lộ. RIÊNG TƯ NGAY TỪ THIẾT KẾ Mọi thứ được xử lý trên thiết bị của bạn. Không tài khoản, quảng cáo, theo dõi, phân tích hay tải nội dung lên. Apple Vision và Tesseract OCR tích hợp chạy cục bộ. Phát hiện khuôn mặt chỉ tạo vùng: không nhận dạng người, không tạo mẫu, không chia sẻ và không lưu dữ liệu khuôn mặt. Apple xử lý giao dịch qua StoreKit. Mask My File không dùng VPN, NetworkExtension, proxy, đường hầm, bộ lọc DNS hay định tuyến mạng. Bản gốc không bao giờ bị ghi đè; tệp làm việc tạm thời, dữ liệu Phiên riêng tư và dự án vẫn nằm trên thiết bị cho đến khi bạn xóa. MUA MỘT LẦN. DÙNG TRỌN ĐỜI. Một lần mua mở khóa vĩnh viễn kết quả đã xác minh và xử lý hàng loạt không giới hạn. Không đăng ký thuê bao. Khôi phục giao dịch bất cứ lúc nào qua App Store.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6792850916"&gt;Tải Mask My File trên App Store&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6792850916"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/maskmyfile-share.jpg" alt="Mask My File — Che dữ liệu trước khi chia sẻ | iOS App" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Chia sẻ an toàn mà vẫn giữ được bối cảnh cần thiết. Mask My File tìm ra thông tin riêng tư trước khi bạn gửi tệp, che vĩnh viễn đúng những gì bạn chọn, rồi mở lại và xác minh bản sao mới trước khi hiển thị Private Ready. BẠN CÓ THỂ LÀM GÌ • Ảnh và PDF: xem trước toàn chiều rộng, thu phóng tới 5×, kéo mượt mà và khoanh vùng thủ công chính xác. • Tệp hình ảnh: chỉ che đặc vĩnh viễn hoặc xóa bỏ. Phát hiện khuôn mặt và mã vạch chỉ đánh dấu vùng để bạn xem lại. • Văn bản, JSON, XML, HTML, CSV, TSV và RTF: tìm mọi kết quả rồi áp dụng che toàn phần, che một phần, ký tự thay thế, bút danh hoặc xóa. • Xóa siêu dữ liệu khi định dạng cho phép. Làm việc theo từng trang trong PDF hoặc bảo vệ tối đa 100 tệp cùng lúc với bản xem trước riêng, tìm kiếm giữa các tệp và khoanh vùng thủ công cho mỗi tệp. • Sắp xếp công việc gọn gàng với Phiên riêng tư, không gian dự án và Kho ký tự thay thế. DÙNG KHI THẬT SỰ CẦN Trước khi gửi đơn thuê nhà, hồ sơ y tế, giấy tờ có số căn cước hay tệp khách hàng cho đồng nghiệp, hãy giữ bối cảnh hữu ích và che vĩnh viễn những chi tiết không nên để lộ. RIÊNG TƯ NGAY TỪ THIẾT KẾ Mọi thứ được xử lý trên thiết bị của bạn. Không tài khoản, quảng cáo, theo dõi, phân tích hay tải nội dung lên. Apple Vision và Tesseract OCR tích hợp chạy cục bộ. Phát hiện khuôn mặt chỉ tạo vùng: không nhận dạng người, không tạo mẫu, không chia sẻ và không lưu dữ liệu khuôn mặt. Apple xử lý giao dịch qua StoreKit. Mask My File không dùng VPN, NetworkExtension, proxy, đường hầm, bộ lọc DNS hay định tuyến mạng. Bản gốc không bao giờ bị ghi đè; tệp làm việc tạm thời, dữ liệu Phiên riêng tư và dự án vẫn nằm trên thiết bị cho đến khi bạn xóa. MUA MỘT LẦN. DÙNG TRỌN ĐỜI. Một lần mua mở khóa vĩnh viễn kết quả đã xác minh và xử lý hàng loạt không giới hạn. Không đăng ký thuê bao. Khôi phục giao dịch bất cứ lúc nào qua App Store.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6792850916"&gt;Tải Mask My File trên App Store&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6792850916" title="Tải Mask My File trên App Store"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/maskmyfile-share.jpg" fileSize="50846" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Mask My File — Che dữ liệu trước khi chia sẻ | iOS App</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/maskmyfile-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>WiFi Aid — Chẩn đoán mạng có bằng chứng | iOS App</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Tìm nguyên nhân có khả năng nhất qua kiểm tra đường truyền, DNS, TCP, TLS, thời gian và độ ổn định. Trả trước một lần, không thuê bao, quảng cáo hay theo dõi. • Chạy kiểm tra — Kiểm tra Wi-Fi, DNS và mạng chỉ với một chạm • Kiểm tra chuyên sâu — Thêm bằng chứng và kiểm tra độ ổn định • Kiểm tra Trang web — Xem lỗi do một mục tiêu hay toàn bộ mạng internet • Bằng chứng — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Kết nối có vẻ không ổn định — Độ trễ biến động • Lịch sử kiểm tra — Hồ sơ riêng tư chỉ lưu trên thiết bị này • Apple Watch — Chạy kiểm tra • Widget · iPad — Đã kết nối · Chạy kiểm tra Không tài khoản, quảng cáo, phân tích hay theo dõi. Hồ sơ riêng tư chỉ lưu trên thiết bị này. Mua trả trước một lần trên App Store. Không thuê bao.&lt;/p&gt;&lt;p&gt;App Store · 199.000đ&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6790467886"&gt;Tải WiFi Aid trên App Store&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6790467886"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/wifiaid-share.jpg" alt="WiFi Aid — Chẩn đoán mạng có bằng chứng | iOS App" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Tìm nguyên nhân có khả năng nhất qua kiểm tra đường truyền, DNS, TCP, TLS, thời gian và độ ổn định. Trả trước một lần, không thuê bao, quảng cáo hay theo dõi. • Chạy kiểm tra — Kiểm tra Wi-Fi, DNS và mạng chỉ với một chạm • Kiểm tra chuyên sâu — Thêm bằng chứng và kiểm tra độ ổn định • Kiểm tra Trang web — Xem lỗi do một mục tiêu hay toàn bộ mạng internet • Bằng chứng — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Kết nối có vẻ không ổn định — Độ trễ biến động • Lịch sử kiểm tra — Hồ sơ riêng tư chỉ lưu trên thiết bị này • Apple Watch — Chạy kiểm tra • Widget · iPad — Đã kết nối · Chạy kiểm tra Không tài khoản, quảng cáo, phân tích hay theo dõi. Hồ sơ riêng tư chỉ lưu trên thiết bị này. Mua trả trước một lần trên App Store. Không thuê bao.&lt;/p&gt;&lt;p&gt;App Store · 199.000đ&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6790467886"&gt;Tải WiFi Aid trên App Store&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6790467886" title="Tải WiFi Aid trên App Store"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/wifiaid-share.jpg" fileSize="45900" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">WiFi Aid — Chẩn đoán mạng có bằng chứng | iOS App</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/wifiaid-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>Mochi DoneStamp: Lần cuối — Nhớ lần cuối bạn đã làm | iOS App</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Lần cuối bạn thay ga giường, tưới cây, gọi cho gia đình, sao lưu ảnh hoặc thay bộ lọc là khi nào? Mochi DoneStamp là bộ nhớ cho những sự kiện trong đời, không phải một danh sách việc cần làm khác. Khi hoàn tất, chỉ cần một lần chạm để lưu thời điểm chính xác vào lịch sử gọn gàng. Thêm nhịp gần đúng hoặc chính xác khi cần. Lần đến hạn tiếp theo luôn được tính lại từ lúc bạn thực sự hoàn tất. • Ghi bằng một lần chạm và Hoàn tác • Thêm, sửa hoặc xóa thời điểm trong quá khứ • Nhịp linh hoạt hoặc chính xác từ phút đến năm • Thông báo trên máy với Xong và Báo lại • Widget tương tác trên Màn hình chính và khóa • Siri, Phím tắt, ghi chú và ảnh tùy chọn • Thống kê khoảng cách, sao lưu đầy đủ, xuất JSON • Chế độ tối, iPad, VoiceOver và Dynamic Type Miễn phí gồm một sự kiện đang hoạt động và lịch sử không giới hạn. Mua Lifetime Pro một lần để mở sự kiện không giới hạn cùng toàn bộ tính năng. Không tài khoản, quảng cáo, phân tích hay theo dõi. Dữ liệu cốt lõi ở lại thiết bị. Không bao giờ có thuê bao.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6790800323"&gt;Tải Mochi DoneStamp: Lần cuối trên App Store&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6790800323"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/mochidonestamp-share.jpg" alt="Mochi DoneStamp: Lần cuối — Nhớ lần cuối bạn đã làm | iOS App" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Lần cuối bạn thay ga giường, tưới cây, gọi cho gia đình, sao lưu ảnh hoặc thay bộ lọc là khi nào? Mochi DoneStamp là bộ nhớ cho những sự kiện trong đời, không phải một danh sách việc cần làm khác. Khi hoàn tất, chỉ cần một lần chạm để lưu thời điểm chính xác vào lịch sử gọn gàng. Thêm nhịp gần đúng hoặc chính xác khi cần. Lần đến hạn tiếp theo luôn được tính lại từ lúc bạn thực sự hoàn tất. • Ghi bằng một lần chạm và Hoàn tác • Thêm, sửa hoặc xóa thời điểm trong quá khứ • Nhịp linh hoạt hoặc chính xác từ phút đến năm • Thông báo trên máy với Xong và Báo lại • Widget tương tác trên Màn hình chính và khóa • Siri, Phím tắt, ghi chú và ảnh tùy chọn • Thống kê khoảng cách, sao lưu đầy đủ, xuất JSON • Chế độ tối, iPad, VoiceOver và Dynamic Type Miễn phí gồm một sự kiện đang hoạt động và lịch sử không giới hạn. Mua Lifetime Pro một lần để mở sự kiện không giới hạn cùng toàn bộ tính năng. Không tài khoản, quảng cáo, phân tích hay theo dõi. Dữ liệu cốt lõi ở lại thiết bị. Không bao giờ có thuê bao.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6790800323"&gt;Tải Mochi DoneStamp: Lần cuối trên App Store&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6790800323" title="Tải Mochi DoneStamp: Lần cuối trên App Store"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/mochidonestamp-share.jpg" fileSize="48058" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Mochi DoneStamp: Lần cuối — Nhớ lần cuối bạn đã làm | iOS App</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/mochidonestamp-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng luyện thi TOEIC tốt nhất không cần mạng với kế hoạch học cho iPhone</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/aim990/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/aim990/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Phần 5 có vẻ ngắn, nhưng các câu hỏi câu chưa hoàn chỉnh có thể tốn thời gian nếu ngữ pháp và từ vựng không thành thạo.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6784974530"&gt;Tải Aim990 trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6784974530"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/aim990-share.jpg" alt="ứng dụng luyện thi TOEIC tốt nhất không cần mạng với kế hoạch học cho iPhone" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Phần 5 có vẻ ngắn, nhưng các câu hỏi câu chưa hoàn chỉnh có thể tốn thời gian nếu ngữ pháp và từ vựng không thành thạo.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6784974530"&gt;Tải Aim990 trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6784974530" title="Tải Aim990 trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/aim990-share.jpg" fileSize="51300" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng luyện thi TOEIC tốt nhất không cần mạng với kế hoạch học cho iPhone</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/aim990-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>Aim990 Plus — Tập trung nhanh dưới áp lực | iOS App</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Rèn khả năng sử dụng tiếng Anh trong điều kiện đòi hỏi sự tập trung cao: thời gian có hạn, chuỗi câu hỏi dài và áp lực phải giữ độ chính xác. Aim990 Plus được thiết kế cho người học và người đi làm trưởng thành muốn tăng sức bền nghe, đọc trên iPhone và iPad, thay vì chỉ làm từng câu rời rạc mà không có lộ trình rõ ràng. Quy trình chính bắt đầu bằng Warm-up gồm 8 câu, chuyển sang Pressure Set gồm 20 câu trong 15 phút, rồi đến Mistake Replay để làm lại ngay những câu trả lời sai. Trình tự này giúp bạn khởi động sự chú ý, duy trì nhịp độ khi áp lực tăng và kết thúc buổi học bằng hành động sửa lỗi cụ thể. Kết quả được lưu lại để bạn theo dõi tiến bộ theo thời gian. Mỗi Part từ 1 đến 7 có 90 câu hỏi, tổng cộng 630 câu hỏi nguyên bản. Có 90 ảnh khác nhau dành cho dạng bài dựa trên hình ảnh. Nội dung bao quát nhiều tình huống, cách dùng từ, hiểu hội thoại, nhận biết thông tin trực tiếp và suy luận theo ngữ cảnh mà không phụ thuộc vào kết nối mạng. Bạn có thể chọn thời lượng phù hợp với lịch cá nhân. Mini mock dành cho khoảng nghỉ ngắn, half mock phù hợp với phiên vừa phải, còn full mock giúp kiểm tra sức bền toàn diện. Điều chỉnh tốc độ cho phép tăng nhịp từng bước. Chế độ nghe chép chính tả hỗ trợ nhận ra những chi tiết dễ bỏ sót, còn giọng nói của thiết bị phát nội dung âm thanh ngay trên máy. Mistake Replay tự tập hợp câu sai để bạn không phải tìm lại thủ công. Phân tích điểm yếu cho thấy dạng nội dung nào cần được ưu tiên. Bộ 150 từ vựng thiết yếu hỗ trợ ôn tập có định hướng, kết hợp với thông tin tiến độ để bạn tự chọn trọng tâm cho phiên tiếp theo dựa trên kết quả thực tế của mình. Đây là ứng dụng tải xuống trả phí trực tiếp, với toàn bộ tính năng sẵn sàng ngay từ lần mở đầu tiên. Không có mua hàng trong ứng dụng, gói đăng ký, paywall, quảng cáo, tài khoản hay đăng nhập. Toàn bộ nội dung và tiến độ hoạt động ngoại tuyến. Ứng dụng không theo dõi, không dùng analytics và không có server; dữ liệu học tập chỉ nằm trên thiết bị của bạn. Aim990 Plus là ứng dụng luyện tập độc lập, không chính thức. TOEIC là nhãn hiệu của ETS. Ứng dụng này không liên kết, được tài trợ hay chứng thực bởi ETS.&lt;/p&gt;&lt;p&gt;App Store · 199.000đ&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6792483140"&gt;Tải Aim990 Plus trên App Store&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6792483140"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/aim990plus-share.jpg" alt="Aim990 Plus — Tập trung nhanh dưới áp lực | iOS App" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Rèn khả năng sử dụng tiếng Anh trong điều kiện đòi hỏi sự tập trung cao: thời gian có hạn, chuỗi câu hỏi dài và áp lực phải giữ độ chính xác. Aim990 Plus được thiết kế cho người học và người đi làm trưởng thành muốn tăng sức bền nghe, đọc trên iPhone và iPad, thay vì chỉ làm từng câu rời rạc mà không có lộ trình rõ ràng. Quy trình chính bắt đầu bằng Warm-up gồm 8 câu, chuyển sang Pressure Set gồm 20 câu trong 15 phút, rồi đến Mistake Replay để làm lại ngay những câu trả lời sai. Trình tự này giúp bạn khởi động sự chú ý, duy trì nhịp độ khi áp lực tăng và kết thúc buổi học bằng hành động sửa lỗi cụ thể. Kết quả được lưu lại để bạn theo dõi tiến bộ theo thời gian. Mỗi Part từ 1 đến 7 có 90 câu hỏi, tổng cộng 630 câu hỏi nguyên bản. Có 90 ảnh khác nhau dành cho dạng bài dựa trên hình ảnh. Nội dung bao quát nhiều tình huống, cách dùng từ, hiểu hội thoại, nhận biết thông tin trực tiếp và suy luận theo ngữ cảnh mà không phụ thuộc vào kết nối mạng. Bạn có thể chọn thời lượng phù hợp với lịch cá nhân. Mini mock dành cho khoảng nghỉ ngắn, half mock phù hợp với phiên vừa phải, còn full mock giúp kiểm tra sức bền toàn diện. Điều chỉnh tốc độ cho phép tăng nhịp từng bước. Chế độ nghe chép chính tả hỗ trợ nhận ra những chi tiết dễ bỏ sót, còn giọng nói của thiết bị phát nội dung âm thanh ngay trên máy. Mistake Replay tự tập hợp câu sai để bạn không phải tìm lại thủ công. Phân tích điểm yếu cho thấy dạng nội dung nào cần được ưu tiên. Bộ 150 từ vựng thiết yếu hỗ trợ ôn tập có định hướng, kết hợp với thông tin tiến độ để bạn tự chọn trọng tâm cho phiên tiếp theo dựa trên kết quả thực tế của mình. Đây là ứng dụng tải xuống trả phí trực tiếp, với toàn bộ tính năng sẵn sàng ngay từ lần mở đầu tiên. Không có mua hàng trong ứng dụng, gói đăng ký, paywall, quảng cáo, tài khoản hay đăng nhập. Toàn bộ nội dung và tiến độ hoạt động ngoại tuyến. Ứng dụng không theo dõi, không dùng analytics và không có server; dữ liệu học tập chỉ nằm trên thiết bị của bạn. Aim990 Plus là ứng dụng luyện tập độc lập, không chính thức. TOEIC là nhãn hiệu của ETS. Ứng dụng này không liên kết, được tài trợ hay chứng thực bởi ETS.&lt;/p&gt;&lt;p&gt;App Store · 199.000đ&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6792483140"&gt;Tải Aim990 Plus trên App Store&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6792483140" title="Tải Aim990 Plus trên App Store"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/aim990plus-share.jpg" fileSize="54256" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Aim990 Plus — Tập trung nhanh dưới áp lực | iOS App</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/aim990plus-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng tạo hồ sơ xin việc tốt nhất cho người đổi nghề 2026</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Khi bạn chuyển ngành, vấn đề hồ sơ khác: kinh nghiệm thật nhưng trên giấy tờ là &amp;#x27;không liên quan&amp;#x27;, và bộ lọc ATS loại bạn trước khi người đọc thấy — CV Desk được xây dựng cho điều này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6781337213"&gt;Tải CV Desk trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6781337213"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/cvdesk-share.jpg" alt="ứng dụng tạo hồ sơ xin việc tốt nhất cho người đổi nghề 2026" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Khi bạn chuyển ngành, vấn đề hồ sơ khác: kinh nghiệm thật nhưng trên giấy tờ là &amp;#x27;không liên quan&amp;#x27;, và bộ lọc ATS loại bạn trước khi người đọc thấy — CV Desk được xây dựng cho điều này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6781337213"&gt;Tải CV Desk trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6781337213" title="Tải CV Desk trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/cvdesk-share.jpg" fileSize="44353" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng tạo hồ sơ xin việc tốt nhất cho người đổi nghề 2026</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/cvdesk-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng theo dõi chu kỳ kinh nguyệt tốt nhất không cần tài khoản cho iPhone</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Trong lĩnh vực nhạy cảm về dữ liệu, ứng dụng theo dõi chu kỳ đúng đắn giữ mọi thứ — lưu lượng, tâm trạng, triệu chứng, nhiệt độ, quan hệ — trên thiết bị của bạn, không cần tài khoản và không đồng bộ đám mây — Cyca được xây dựng cho điều này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6782251621"&gt;Tải Cyca trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6782251621"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/cyca-share.jpg" alt="ứng dụng theo dõi chu kỳ kinh nguyệt tốt nhất không cần tài khoản cho iPhone" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Trong lĩnh vực nhạy cảm về dữ liệu, ứng dụng theo dõi chu kỳ đúng đắn giữ mọi thứ — lưu lượng, tâm trạng, triệu chứng, nhiệt độ, quan hệ — trên thiết bị của bạn, không cần tài khoản và không đồng bộ đám mây — Cyca được xây dựng cho điều này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6782251621"&gt;Tải Cyca trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6782251621" title="Tải Cyca trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/cyca-share.jpg" fileSize="39718" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng theo dõi chu kỳ kinh nguyệt tốt nhất không cần tài khoản cho iPhone</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/cyca-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng cụm từ ngôn ngữ thực tế tốt nhất cho khách du lịch có Apple Watch</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Trước chuyến đi, các cụm từ hoàn chỉnh cho tình huống thực tế hữu ích hơn từ vựng rời rạc mà bạn vẫn phải ghép lại khi áp lực — DailyMate được thiết kế cho điều này.&lt;/p&gt;&lt;p&gt;App Store · 399.000đ&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6790418321"&gt;Tải DailyMate trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6790418321"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/dailymate-share.jpg" alt="ứng dụng cụm từ ngôn ngữ thực tế tốt nhất cho khách du lịch có Apple Watch" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Trước chuyến đi, các cụm từ hoàn chỉnh cho tình huống thực tế hữu ích hơn từ vựng rời rạc mà bạn vẫn phải ghép lại khi áp lực — DailyMate được thiết kế cho điều này.&lt;/p&gt;&lt;p&gt;App Store · 399.000đ&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6790418321"&gt;Tải DailyMate trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6790418321" title="Tải DailyMate trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/dailymate-share.jpg" fileSize="46262" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng cụm từ ngôn ngữ thực tế tốt nhất cho khách du lịch có Apple Watch</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/dailymate-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng theo dõi ngân sách du lịch tốt nhất không đăng ký thuê bao cho iPhone</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Khi đi du lịch, bạn cần ứng dụng theo dõi ngân sách hoạt động ngoại tuyến ở nước không có dữ liệu, xử lý đa tiền tệ, không yêu cầu tài khoản — tổ chức theo chuyến để mỗi kỳ nghỉ riêng biệt — G+Money được xây dựng cho điều này.&lt;/p&gt;&lt;p&gt;App Store · 149.000đ&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6755782939"&gt;Tải G+Money trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6755782939"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/gmoney-share.jpg" alt="ứng dụng theo dõi ngân sách du lịch tốt nhất không đăng ký thuê bao cho iPhone" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Khi đi du lịch, bạn cần ứng dụng theo dõi ngân sách hoạt động ngoại tuyến ở nước không có dữ liệu, xử lý đa tiền tệ, không yêu cầu tài khoản — tổ chức theo chuyến để mỗi kỳ nghỉ riêng biệt — G+Money được xây dựng cho điều này.&lt;/p&gt;&lt;p&gt;App Store · 149.000đ&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6755782939"&gt;Tải G+Money trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6755782939" title="Tải G+Money trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/gmoney-share.jpg" fileSize="45774" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng theo dõi ngân sách du lịch tốt nhất không đăng ký thuê bao cho iPhone</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/gmoney-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng chi tiêu có ý thức tốt nhất để ngăn mua sắm bốc đồng cho iPhone</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Mua sắm bốc đồng giảm khi bạn thêm một khoảng dừng nhỏ: món hàng này thực sự tốn bao nhiêu giờ làm việc của bạn?&lt;/p&gt;&lt;p&gt;App Store · 149.000đ&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6754218117"&gt;Tải HoursTag trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6754218117"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/hourstag-share.jpg" alt="ứng dụng chi tiêu có ý thức tốt nhất để ngăn mua sắm bốc đồng cho iPhone" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Mua sắm bốc đồng giảm khi bạn thêm một khoảng dừng nhỏ: món hàng này thực sự tốn bao nhiêu giờ làm việc của bạn?&lt;/p&gt;&lt;p&gt;App Store · 149.000đ&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6754218117"&gt;Tải HoursTag trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6754218117" title="Tải HoursTag trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/hourstag-share.jpg" fileSize="45431" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng chi tiêu có ý thức tốt nhất để ngăn mua sắm bốc đồng cho iPhone</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/hourstag-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng chặn mạng xã hội tốt nhất khi học cho iPhone</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Trong kỳ thi, ý chí không phải là công cụ — mà là chặn nghiêm ngặt theo thời gian — LockHour Pro được thiết kế cho điều này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6780107485"&gt;Tải LockHour Pro trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6780107485"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/lockhour-share.jpg" alt="ứng dụng chặn mạng xã hội tốt nhất khi học cho iPhone" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Trong kỳ thi, ý chí không phải là công cụ — mà là chặn nghiêm ngặt theo thời gian — LockHour Pro được thiết kế cho điều này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6780107485"&gt;Tải LockHour Pro trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6780107485" title="Tải LockHour Pro trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/lockhour-share.jpg" fileSize="46648" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng chặn mạng xã hội tốt nhất khi học cho iPhone</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/lockhour-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng bopomofo tốt nhất cho trẻ học zhuyin trên iPhone</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Đối với trẻ mới học Zhuyin, ứng dụng nên bao phủ tất cả 37 ký hiệu qua tô nét chữ và chơi — thiết kế cho độ tuổi học đầu 4–7, không quảng cáo, không thu thập dữ liệu — Lumi Bopomofo được xây dựng cho điều này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6773017109"&gt;Tải Lumi Bopomofo trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6773017109"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/lumibopomofo-share.jpg" alt="ứng dụng bopomofo tốt nhất cho trẻ học zhuyin trên iPhone" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Đối với trẻ mới học Zhuyin, ứng dụng nên bao phủ tất cả 37 ký hiệu qua tô nét chữ và chơi — thiết kế cho độ tuổi học đầu 4–7, không quảng cáo, không thu thập dữ liệu — Lumi Bopomofo được xây dựng cho điều này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6773017109"&gt;Tải Lumi Bopomofo trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6773017109" title="Tải Lumi Bopomofo trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/lumibopomofo-share.jpg" fileSize="49916" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng bopomofo tốt nhất cho trẻ học zhuyin trên iPhone</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/lumibopomofo-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng học zhuyin đầy đủ tốt nhất cho trẻ song ngữ</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Trẻ song ngữ học Zhuyin tại nhà cần lộ trình đầy đủ qua âm, ký hiệu, thanh điệu và ghép âm, đủ lặp lại vui nhộn để làm quen hệ thống — Lumi Bopomofo Pro được xây dựng cho nhu cầu này.&lt;/p&gt;&lt;p&gt;App Store · 299.000đ&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6775773117"&gt;Tải Lumi Bopomofo Pro trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6775773117"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/lumibopomofopro-share.jpg" alt="ứng dụng học zhuyin đầy đủ tốt nhất cho trẻ song ngữ" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Trẻ song ngữ học Zhuyin tại nhà cần lộ trình đầy đủ qua âm, ký hiệu, thanh điệu và ghép âm, đủ lặp lại vui nhộn để làm quen hệ thống — Lumi Bopomofo Pro được xây dựng cho nhu cầu này.&lt;/p&gt;&lt;p&gt;App Store · 299.000đ&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6775773117"&gt;Tải Lumi Bopomofo Pro trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6775773117" title="Tải Lumi Bopomofo Pro trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/lumibopomofopro-share.jpg" fileSize="50498" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng học zhuyin đầy đủ tốt nhất cho trẻ song ngữ</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/lumibopomofopro-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng trò chơi giáo dục tốt nhất cho trẻ em không quảng cáo trên iPhone</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Với trẻ nhỏ, điều quan trọng là không quảng cáo và không thu thập dữ liệu — ứng dụng học nên dạy trong vòng lặp trò chơi không quảng cáo, không thu thập gì từ trẻ, và mở khóa một lần mà phụ huynh tin tưởng — Lumi Letters được xây dựng cho điều này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6778748533"&gt;Tải Lumi Letters trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6778748533"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/lumiletters-share.jpg" alt="ứng dụng trò chơi giáo dục tốt nhất cho trẻ em không quảng cáo trên iPhone" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Với trẻ nhỏ, điều quan trọng là không quảng cáo và không thu thập dữ liệu — ứng dụng học nên dạy trong vòng lặp trò chơi không quảng cáo, không thu thập gì từ trẻ, và mở khóa một lần mà phụ huynh tin tưởng — Lumi Letters được xây dựng cho điều này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6778748533"&gt;Tải Lumi Letters trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6778748533" title="Tải Lumi Letters trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/lumiletters-share.jpg" fileSize="42621" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng trò chơi giáo dục tốt nhất cho trẻ em không quảng cáo trên iPhone</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/lumiletters-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng học đánh vần đầy đủ tốt nhất cho chuẩn bị mẫu giáo tại nhà</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Gia đình chuẩn bị cho mẫu giáo cần lộ trình đọc sớm đầy đủ, kết nối âm chữ cái, viết nét và xây dựng từ thay vì các trò chơi bảng chữ cái rời rạc — Lumi Letters Pro được xây dựng cho nhu cầu này.&lt;/p&gt;&lt;p&gt;App Store · 299.000đ&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6778491147"&gt;Tải Lumi Letters Pro trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6778491147"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/lumiletterspro-share.jpg" alt="ứng dụng học đánh vần đầy đủ tốt nhất cho chuẩn bị mẫu giáo tại nhà" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Gia đình chuẩn bị cho mẫu giáo cần lộ trình đọc sớm đầy đủ, kết nối âm chữ cái, viết nét và xây dựng từ thay vì các trò chơi bảng chữ cái rời rạc — Lumi Letters Pro được xây dựng cho nhu cầu này.&lt;/p&gt;&lt;p&gt;App Store · 299.000đ&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6778491147"&gt;Tải Lumi Letters Pro trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6778491147" title="Tải Lumi Letters Pro trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/lumiletterspro-share.jpg" fileSize="50874" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng học đánh vần đầy đủ tốt nhất cho chuẩn bị mẫu giáo tại nhà</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/lumiletterspro-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng trò chơi toán học tốt nhất cho trẻ phát triển kỹ năng logic trên iPhone</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Ứng dụng toán học tốt nhất cho trẻ rèn luyện suy luận — mẫu, chuỗi, tư duy không gian — không chỉ luyện tính toán, và được giấu trong trò chơi trẻ muốn chơi — Lumi Math Planet được xây dựng cho điều này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6778269699"&gt;Tải Lumi Math Planet trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6778269699"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/lumimath-share.jpg" alt="ứng dụng trò chơi toán học tốt nhất cho trẻ phát triển kỹ năng logic trên iPhone" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Ứng dụng toán học tốt nhất cho trẻ rèn luyện suy luận — mẫu, chuỗi, tư duy không gian — không chỉ luyện tính toán, và được giấu trong trò chơi trẻ muốn chơi — Lumi Math Planet được xây dựng cho điều này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6778269699"&gt;Tải Lumi Math Planet trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6778269699" title="Tải Lumi Math Planet trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/lumimath-share.jpg" fileSize="43805" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng trò chơi toán học tốt nhất cho trẻ phát triển kỹ năng logic trên iPhone</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/lumimath-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng học toán đầy đủ tốt nhất cho trẻ mẫu giáo và tiểu học</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Ứng dụng toán sớm đầy đủ nên giúp việc đếm, cảm nhận số và phép toán đầu tiên thành một cuộc phiêu lưu liên kết thay vì các bài tập rời rạc — Lumi Math Pro được xây dựng cho nhu cầu này.&lt;/p&gt;&lt;p&gt;App Store · 299.000đ&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6776958488"&gt;Tải Lumi Math Pro trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6776958488"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/lumimathpro-share.jpg" alt="ứng dụng học toán đầy đủ tốt nhất cho trẻ mẫu giáo và tiểu học" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Ứng dụng toán sớm đầy đủ nên giúp việc đếm, cảm nhận số và phép toán đầu tiên thành một cuộc phiêu lưu liên kết thay vì các bài tập rời rạc — Lumi Math Pro được xây dựng cho nhu cầu này.&lt;/p&gt;&lt;p&gt;App Store · 299.000đ&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6776958488"&gt;Tải Lumi Math Pro trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6776958488" title="Tải Lumi Math Pro trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/lumimathpro-share.jpg" fileSize="50730" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng học toán đầy đủ tốt nhất cho trẻ mẫu giáo và tiểu học</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/lumimathpro-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng thói quen đi ngủ tốt nhất cho trẻ mẫu giáo không quảng cáo</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Với trẻ mẫu giáo, thói quen đi ngủ hiệu quả nhất khi ngắn gọn, trực quan và đủ dễ đoán để trẻ tự làm theo mà không cần nhắc nhở thêm — Lumi Mission Planet được xây dựng cho mục đích này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6779750237"&gt;Tải Lumi Mission Planet trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6779750237"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/lumimission-share.jpg" alt="ứng dụng thói quen đi ngủ tốt nhất cho trẻ mẫu giáo không quảng cáo" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Với trẻ mẫu giáo, thói quen đi ngủ hiệu quả nhất khi ngắn gọn, trực quan và đủ dễ đoán để trẻ tự làm theo mà không cần nhắc nhở thêm — Lumi Mission Planet được xây dựng cho mục đích này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6779750237"&gt;Tải Lumi Mission Planet trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6779750237" title="Tải Lumi Mission Planet trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/lumimission-share.jpg" fileSize="46827" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng thói quen đi ngủ tốt nhất cho trẻ mẫu giáo không quảng cáo</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/lumimission-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng thói quen sáng và tối đầy đủ tốt nhất cho trẻ em</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Đánh răng và đi ngủ thường thất bại cùng lúc mỗi tối: trẻ mệt, phụ huynh mệt và bước tiếp theo chưa đủ rõ ràng.&lt;/p&gt;&lt;p&gt;App Store · 199.000đ&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6779745474"&gt;Tải Lumi Mission Planet Pro trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6779745474"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/lumimissionpro-share.jpg" alt="ứng dụng thói quen sáng và tối đầy đủ tốt nhất cho trẻ em" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Đánh răng và đi ngủ thường thất bại cùng lúc mỗi tối: trẻ mệt, phụ huynh mệt và bước tiếp theo chưa đủ rõ ràng.&lt;/p&gt;&lt;p&gt;App Store · 199.000đ&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6779745474"&gt;Tải Lumi Mission Planet Pro trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6779745474" title="Tải Lumi Mission Planet Pro trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/lumimissionpro-share.jpg" fileSize="49506" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng thói quen sáng và tối đầy đủ tốt nhất cho trẻ em</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/lumimissionpro-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng hoạt động du lịch tốt nhất cho trẻ em khi đi cùng gia đình</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Phụ huynh đi du lịch cùng trẻ nhỏ cần hoạt động biến việc chuẩn bị hành lý, chờ đợi và khám phá nơi mới thành một phần của chuyến đi thay vì thêm căng thẳng — Lumi Trip Planet được xây dựng cho nhu cầu này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6787193643"&gt;Tải Lumi Trip Planet trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6787193643"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/tripplanet-share.jpg" alt="ứng dụng hoạt động du lịch tốt nhất cho trẻ em khi đi cùng gia đình" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Phụ huynh đi du lịch cùng trẻ nhỏ cần hoạt động biến việc chuẩn bị hành lý, chờ đợi và khám phá nơi mới thành một phần của chuyến đi thay vì thêm căng thẳng — Lumi Trip Planet được xây dựng cho nhu cầu này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6787193643"&gt;Tải Lumi Trip Planet trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6787193643" title="Tải Lumi Trip Planet trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/tripplanet-share.jpg" fileSize="48162" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng hoạt động du lịch tốt nhất cho trẻ em khi đi cùng gia đình</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/tripplanet-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng thời tiết tốt nhất giúp phụ huynh lên kế hoạch cho trẻ ra ngoài</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Phụ huynh lên kế hoạch cho trẻ ra ngoài cần nhiều hơn nhiệt độ: cần cái nhìn nhanh, phù hợp độ tuổi về điều kiện có phù hợp cho trẻ và trang phục nào hợp lý — Lumi Weather được xây dựng cho nhu cầu này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6779552704"&gt;Tải Lumi Weather trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6779552704"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/lumiweather-share.jpg" alt="ứng dụng thời tiết tốt nhất giúp phụ huynh lên kế hoạch cho trẻ ra ngoài" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Phụ huynh lên kế hoạch cho trẻ ra ngoài cần nhiều hơn nhiệt độ: cần cái nhìn nhanh, phù hợp độ tuổi về điều kiện có phù hợp cho trẻ và trang phục nào hợp lý — Lumi Weather được xây dựng cho nhu cầu này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6779552704"&gt;Tải Lumi Weather trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6779552704" title="Tải Lumi Weather trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/lumiweather-share.jpg" fileSize="46720" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng thời tiết tốt nhất giúp phụ huynh lên kế hoạch cho trẻ ra ngoài</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/lumiweather-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng danh sách việc cần làm đơn giản nhất trên iPhone không đăng ký</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Nếu hầu hết ứng dụng việc cần làm cảm thấy cồng kềnh, ứng dụng phù hợp là danh sách kiểm tra sạch sẽ với nhắc nhở, quy tắc lặp lại và hỗ trợ Watch — và không có công cụ quản lý dự án — Mochi được xây dựng cho điều này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6785004775"&gt;Tải Mochi trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6785004775"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/mochi-share.jpg" alt="ứng dụng danh sách việc cần làm đơn giản nhất trên iPhone không đăng ký" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Nếu hầu hết ứng dụng việc cần làm cảm thấy cồng kềnh, ứng dụng phù hợp là danh sách kiểm tra sạch sẽ với nhắc nhở, quy tắc lặp lại và hỗ trợ Watch — và không có công cụ quản lý dự án — Mochi được xây dựng cho điều này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6785004775"&gt;Tải Mochi trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6785004775" title="Tải Mochi trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/mochi-share.jpg" fileSize="41685" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng danh sách việc cần làm đơn giản nhất trên iPhone không đăng ký</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/mochi-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>trình chỉnh sửa ảnh phim trả phí một lần tốt nhất cho nhà sáng tạo du lịch trên iPhone</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Nhà sáng tạo du lịch cần hiệu ứng phim lặp lại, thêm hạt ảnh, hiệu ứng hào quang và màu sắc mà không làm mọi điểm đến trở nên nhạt nhòa — PhotoCream được xây dựng cho nhu cầu này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6781808054"&gt;Tải PhotoCream trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6781808054"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/photocream-share.jpg" alt="trình chỉnh sửa ảnh phim trả phí một lần tốt nhất cho nhà sáng tạo du lịch trên iPhone" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Nhà sáng tạo du lịch cần hiệu ứng phim lặp lại, thêm hạt ảnh, hiệu ứng hào quang và màu sắc mà không làm mọi điểm đến trở nên nhạt nhòa — PhotoCream được xây dựng cho nhu cầu này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6781808054"&gt;Tải PhotoCream trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6781808054" title="Tải PhotoCream trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/photocream-share.jpg" fileSize="44135" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">trình chỉnh sửa ảnh phim trả phí một lần tốt nhất cho nhà sáng tạo du lịch trên iPhone</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/photocream-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng tốt nhất để giải phóng dung lượng iPhone bằng cách xóa ảnh trùng lặp</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Để giải phóng nhanh, tập trung vào những thứ lớn nhất trước: ảnh trùng chính xác, ảnh chụp liên tiếp gần giống, ảnh mờ và video lớn — PicClear giúp bạn làm điều đó trên iPhone.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6780223070"&gt;Tải PicClear trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6780223070"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/picclear-share.jpg" alt="ứng dụng tốt nhất để giải phóng dung lượng iPhone bằng cách xóa ảnh trùng lặp" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Để giải phóng nhanh, tập trung vào những thứ lớn nhất trước: ảnh trùng chính xác, ảnh chụp liên tiếp gần giống, ảnh mờ và video lớn — PicClear giúp bạn làm điều đó trên iPhone.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6780223070"&gt;Tải PicClear trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6780223070" title="Tải PicClear trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/picclear-share.jpg" fileSize="41736" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng tốt nhất để giải phóng dung lượng iPhone bằng cách xóa ảnh trùng lặp</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/picclear-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng quét tài liệu ngoại tuyến tốt nhất không dùng đám mây cho y tá</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Nếu bạn quét mẫu đồng ý bệnh nhân, giấy tờ xuất viện hoặc giấy giới thiệu, máy quét phải giữ giấy tờ trên thiết bị — không bao giờ tải lên đám mây người khác — ScanTo Pro được xây dựng cho điều này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6779977651"&gt;Tải ScanTo Pro trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6779977651"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/scanto-share.jpg" alt="ứng dụng quét tài liệu ngoại tuyến tốt nhất không dùng đám mây cho y tá" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Nếu bạn quét mẫu đồng ý bệnh nhân, giấy tờ xuất viện hoặc giấy giới thiệu, máy quét phải giữ giấy tờ trên thiết bị — không bao giờ tải lên đám mây người khác — ScanTo Pro được xây dựng cho điều này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6779977651"&gt;Tải ScanTo Pro trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6779977651" title="Tải ScanTo Pro trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/scanto-share.jpg" fileSize="44634" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng quét tài liệu ngoại tuyến tốt nhất không dùng đám mây cho y tá</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/scanto-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng tiếng ồn trắng tốt nhất để dễ ngủ không cần đăng ký</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Đối với giấc ngủ, đăng ký hàng tháng gây phiền toái là điều ngược lại với sự thư giãn — Sereno được thiết kế cho điều này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6788236641"&gt;Tải Sereno trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6788236641"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/sereno-share.jpg" alt="ứng dụng tiếng ồn trắng tốt nhất để dễ ngủ không cần đăng ký" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Đối với giấc ngủ, đăng ký hàng tháng gây phiền toái là điều ngược lại với sự thư giãn — Sereno được thiết kế cho điều này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6788236641"&gt;Tải Sereno trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6788236641" title="Tải Sereno trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/sereno-share.jpg" fileSize="42391" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng tiếng ồn trắng tốt nhất để dễ ngủ không cần đăng ký</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/sereno-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng chụp ảnh hộ chiếu tốt nhất cho bé và trẻ nhỏ tại nhà</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Ảnh hộ chiếu bé không được có người khác trong ảnh và nền phải trơn — nhưng với trẻ nhỏ, mắt không cần mở hoàn toàn.&lt;/p&gt;&lt;p&gt;App Store · 149.000đ&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6780575828"&gt;Tải Snapport trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6780575828"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/snapport-share.jpg" alt="ứng dụng chụp ảnh hộ chiếu tốt nhất cho bé và trẻ nhỏ tại nhà" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Ảnh hộ chiếu bé không được có người khác trong ảnh và nền phải trơn — nhưng với trẻ nhỏ, mắt không cần mở hoàn toàn.&lt;/p&gt;&lt;p&gt;App Store · 149.000đ&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6780575828"&gt;Tải Snapport trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6780575828" title="Tải Snapport trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/snapport-share.jpg" fileSize="44292" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng chụp ảnh hộ chiếu tốt nhất cho bé và trẻ nhỏ tại nhà</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/snapport-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng ghi chú giọng nói tốt nhất tóm tắt cuộc họp trên iPhone</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Sau cuộc gọi bạn không muốn bản ghi thô — bạn muốn bản tóm tắt, các mục hành động và bản nháp theo dõi — Sono Note được thiết kế cho điều này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6782139553"&gt;Tải Sono Note trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6782139553"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/sononote-share.jpg" alt="ứng dụng ghi chú giọng nói tốt nhất tóm tắt cuộc họp trên iPhone" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Sau cuộc gọi bạn không muốn bản ghi thô — bạn muốn bản tóm tắt, các mục hành động và bản nháp theo dõi — Sono Note được thiết kế cho điều này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6782139553"&gt;Tải Sono Note trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6782139553" title="Tải Sono Note trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/sononote-share.jpg" fileSize="41282" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng ghi chú giọng nói tốt nhất tóm tắt cuộc họp trên iPhone</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/sononote-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng lập kế hoạch chuyến đi đơn giản tốt nhất cho một chuyến đi sắp tới trên iPhone</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Nếu bạn đang lên kế hoạch cho một hành trình sắp tới, một dòng thời gian yên tĩnh cho chuyến đi đó hữu ích hơn một kho lưu trữ đông đúc của mọi chuyến đi bạn có thể thực hiện một ngày nào đó — TripBee Lite được thiết kế cho điều này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6791299610"&gt;Tải TripBee Lite trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6791299610"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/tripbeelite-share.jpg" alt="ứng dụng lập kế hoạch chuyến đi đơn giản tốt nhất cho một chuyến đi sắp tới trên iPhone" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Nếu bạn đang lên kế hoạch cho một hành trình sắp tới, một dòng thời gian yên tĩnh cho chuyến đi đó hữu ích hơn một kho lưu trữ đông đúc của mọi chuyến đi bạn có thể thực hiện một ngày nào đó — TripBee Lite được thiết kế cho điều này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6791299610"&gt;Tải TripBee Lite trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6791299610" title="Tải TripBee Lite trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/tripbeelite-share.jpg" fileSize="48523" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng lập kế hoạch chuyến đi đơn giản tốt nhất cho một chuyến đi sắp tới trên iPhone</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/tripbeelite-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng lập kế hoạch hành trình tốt nhất cho iPhone</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Một ứng dụng lịch trình tốt biến chuyến đi lộn xộn thành dòng thời gian ngày rõ ràng — chuyến bay, khách sạn, hoạt động, nhà hàng và phương tiện — với biểu tượng loại rõ ràng để bạn có thể xem ngày của mình ngay lập tức — TripBee Pro: Trình lập kế hoạch chuyến đi được thiết kế cho điều này.&lt;/p&gt;&lt;p&gt;App Store · 199.000đ&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6787754435"&gt;Tải TripBee Pro: Trình lập kế hoạch chuyến đi trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6787754435"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/tripbee-share.jpg" alt="ứng dụng lập kế hoạch hành trình tốt nhất cho iPhone" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Một ứng dụng lịch trình tốt biến chuyến đi lộn xộn thành dòng thời gian ngày rõ ràng — chuyến bay, khách sạn, hoạt động, nhà hàng và phương tiện — với biểu tượng loại rõ ràng để bạn có thể xem ngày của mình ngay lập tức — TripBee Pro: Trình lập kế hoạch chuyến đi được thiết kế cho điều này.&lt;/p&gt;&lt;p&gt;App Store · 199.000đ&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6787754435"&gt;Tải TripBee Pro: Trình lập kế hoạch chuyến đi trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6787754435" title="Tải TripBee Pro: Trình lập kế hoạch chuyến đi trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/tripbee-share.jpg" fileSize="57411" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng lập kế hoạch hành trình tốt nhất cho iPhone</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/tripbee-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng tốt nhất để sửa ảnh mờ của trẻ em trên iPhone</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Trẻ con không bao giờ đứng yên, nên ảnh lấy nét mềm và rung máy là điều không tránh khỏi — Unblurry được thiết kế cho điều này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6782275018"&gt;Tải Unblurry trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6782275018"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/unblurry-share.jpg" alt="ứng dụng tốt nhất để sửa ảnh mờ của trẻ em trên iPhone" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Trẻ con không bao giờ đứng yên, nên ảnh lấy nét mềm và rung máy là điều không tránh khỏi — Unblurry được thiết kế cho điều này.&lt;/p&gt;&lt;p&gt;App Store · Miễn phí&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6782275018"&gt;Tải Unblurry trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6782275018" title="Tải Unblurry trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/unblurry-share.jpg" fileSize="41382" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng tốt nhất để sửa ảnh mờ của trẻ em trên iPhone</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/unblurry-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>ứng dụng học từ vựng tốt nhất cho người đi làm bận rộn có Apple Watch</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/vi/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/vi/index.html</guid>
-      <pubDate>Thu, 23 Jul 2026 09:10:28 GMT</pubDate>
-      <description>&lt;p&gt;Người đi làm bận rộn cần luyện tập từ vựng phù hợp thời gian rảnh mà không cần bài học đầy đủ, tài khoản mới hoặc cầm điện thoại cho mỗi lần ôn tập — Wordmate: Learn 44 Languages được xây dựng cho nhu cầu này.&lt;/p&gt;&lt;p&gt;App Store · 199.000đ&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6789917808"&gt;Tải Wordmate: Learn 44 Languages trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:39:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6789917808"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/wordmate-share.jpg" alt="ứng dụng học từ vựng tốt nhất cho người đi làm bận rộn có Apple Watch" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Người đi làm bận rộn cần luyện tập từ vựng phù hợp thời gian rảnh mà không cần bài học đầy đủ, tài khoản mới hoặc cầm điện thoại cho mỗi lần ôn tập — Wordmate: Learn 44 Languages được xây dựng cho nhu cầu này.&lt;/p&gt;&lt;p&gt;App Store · 199.000đ&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/vn/app/id6789917808"&gt;Tải Wordmate: Learn 44 Languages trên App Store →&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/vn/app/id6789917808" title="Tải Wordmate: Learn 44 Languages trên App Store →"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/wordmate-share.jpg" fileSize="58985" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ứng dụng học từ vựng tốt nhất cho người đi làm bận rộn có Apple Watch</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/wordmate-share.jpg" width="1200" height="675"/>
     </item>
   </channel>
 </rss>

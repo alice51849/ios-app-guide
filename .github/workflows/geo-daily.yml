@@ -90,6 +90,7 @@ jobs:
           python3 validate_webstories.py
           python3 gen_llms.py --cached-live
           python3 gen_feed.py
+          python3 live_app_guard.py --site-root pages
       - name: Verify zero-cost growth infrastructure
         run: python3 -m unittest discover -s _engine/geo/tests -p "test_*.py"
       - name: Refresh verified App Store availability once
@@ -286,6 +287,7 @@ jobs:
           python3 gen_llms.py --cached-live
           python3 zhuyin_resourcesync.py
           python3 gen_feed.py
+          python3 live_app_guard.py --site-root pages
           python3 gen_sitemap_lastmod.py
       - name: Commit localized pages if any
         run: |

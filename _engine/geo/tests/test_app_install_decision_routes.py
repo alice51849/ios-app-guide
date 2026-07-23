@@ -8,6 +8,7 @@ import os
 from pathlib import Path
 import sys
 import unittest
+import xml.etree.ElementTree as ET
 
 
 GEO = Path(__file__).resolve().parents[1]
@@ -165,10 +166,38 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
     def test_llms_discloses_decision_indexes(self) -> None:
         root = (self.pages / "llms.txt").read_text(encoding="utf-8")
         self.assertIn(app_install_decision_routes.data_url(), root)
+        self.assertIn(app_install_decision_routes.sitemap_url(), root)
         localized = (self.pages / "llms" / "ja.txt").read_text(
             encoding="utf-8"
         )
         self.assertIn(app_install_decision_routes.locale_index_url("ja"), localized)
+
+    def test_dedicated_sitemap_covers_routes_and_indexes_exactly_once(self) -> None:
+        sitemap = ET.parse(
+            self.pages / app_install_decision_routes.SITEMAP_NAME
+        ).getroot()
+        namespace = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
+        locations = [
+            node.find(f"{namespace}loc").text
+            for node in sitemap.findall(f"{namespace}url")
+        ]
+        expected = app_install_decision_routes.sitemap_entries(self.records)
+        self.assertEqual(expected, locations)
+        self.assertEqual(1600, sum("/decision/l/" in url for url in locations))
+        self.assertEqual(len(expected), len(set(locations)))
+
+    def test_sitemap_index_and_robots_register_decision_sitemap(self) -> None:
+        namespace = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
+        sitemap_index = ET.parse(self.pages / "sitemap_index.xml").getroot()
+        self.assertIn(
+            app_install_decision_routes.sitemap_url(),
+            {
+                node.find(f"{namespace}loc").text
+                for node in sitemap_index.findall(f"{namespace}sitemap")
+            },
+        )
+        robots = (self.pages / "robots.txt").read_text(encoding="utf-8")
+        self.assertIn(app_install_decision_routes.SITEMAP_NAME, robots)
 
 
 if __name__ == "__main__":

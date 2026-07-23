@@ -321,6 +321,7 @@ def app_install_decision_route_lines(*, full):
     lines = [
         "",
         "## Late-stage app install decision routes",
+        f"- Sitemap: {app_install_decision_routes.sitemap_url()}",
         f"- Aggregate JSON: {app_install_decision_routes.data_url()}",
         f"- JSON Schema: {app_install_decision_routes.schema_url()}",
         f"- Official Apple locales: {len(OFFICIAL_LOCALES)}/{len(OFFICIAL_LOCALES)}",
@@ -1825,7 +1826,7 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_stories.xml", "sitemap_llms.xml",
         "sitemap_images.xml", PUBLISHER_INTENT_VISUALS_SITEMAP,
         "sitemap_linkset.xml", "sitemap_oembed.xml",
-        "linkset.json",
+        "linkset.json", app_install_decision_routes.SITEMAP_NAME,
         "sitemap_hubs.xml", "sitemap_tools.xml", "sitemap_data.xml",
         "sitemap_api.xml", "sitemap_swap.xml", "feed.xml", "rss.xml", "feed.json",
         "sitemap_opds.xml", "sitemap_ro_crate.xml",
@@ -1886,6 +1887,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_linkset.xml",
             f"Sitemap: {SITE}/sitemap_oembed.xml",
             f"Sitemap: {SITE}/sitemap_llms.xml",
+            f"Sitemap: {SITE}/{app_install_decision_routes.SITEMAP_NAME}",
             f"Sitemap: {SITE}/sitemap_hubs.xml",
             f"Sitemap: {SITE}/sitemap_tools.xml",
             f"Sitemap: {SITE}/sitemap_data.xml",
@@ -1923,6 +1925,7 @@ def build_sitemap_index():
             "sitemap_stories.xml", "sitemap_images.xml", "sitemap_linkset.xml",
             PUBLISHER_INTENT_VISUALS_SITEMAP,
             "sitemap_oembed.xml", "sitemap_llms.xml",
+            app_install_decision_routes.SITEMAP_NAME,
             "sitemap_hubs.xml", "sitemap_tools.xml",
             "sitemap_data.xml", "sitemap_api.xml",
             portfolio_offer_catalog.SITEMAP_NAME, "sitemap_swap.xml"]

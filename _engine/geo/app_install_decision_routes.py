@@ -29,6 +29,7 @@ SITE = os.environ.get(
     "https://alice51849.github.io/ios-app-guide",
 ).rstrip("/")
 SLUG = "app-install-decision-routes"
+SITEMAP_NAME = "sitemap_app_install_decisions.xml"
 DATA_RELATIVE = Path("data") / f"{SLUG}.json"
 SCHEMA_RELATIVE = Path("data") / f"{SLUG}.schema.json"
 LOCALE_DATA_DIR = Path("data") / SLUG / "locales"
@@ -43,6 +44,10 @@ def data_url() -> str:
 
 def schema_url() -> str:
     return f"{SITE}/{SCHEMA_RELATIVE.as_posix()}"
+
+
+def sitemap_url() -> str:
+    return f"{SITE}/{SITEMAP_NAME}"
 
 
 def locale_index_relative(locale: str) -> Path:
@@ -598,6 +603,41 @@ def locale_payload(
     }
 
 
+def sitemap_entries(
+    records: list[dict[str, Any]],
+) -> list[str]:
+    page_urls = [str(record["decision_page_url"]) for record in records]
+    expected_page_count = len(OFFICIAL_LOCALES) * (
+        len(records) // len(OFFICIAL_LOCALES)
+    )
+    if len(page_urls) != expected_page_count:
+        raise ValueError(
+            "Install decision sitemap page coverage mismatch: "
+            f"{len(page_urls)} != {expected_page_count}"
+        )
+    if len(set(page_urls)) != len(page_urls):
+        raise ValueError("Install decision sitemap pages must be unique")
+    locale_urls = [locale_index_url(locale) for locale in OFFICIAL_LOCALES]
+    entries = [*page_urls, data_url(), schema_url(), *locale_urls]
+    if len(set(entries)) != len(entries):
+        raise ValueError("Install decision sitemap URLs must be unique")
+    return entries
+
+
+def render_sitemap(records: list[dict[str, Any]], modified: str) -> str:
+    entries = sitemap_entries(records)
+    body = "\n".join(
+        f"  <url><loc>{html.escape(url)}</loc><lastmod>{modified}</lastmod></url>"
+        for url in entries
+    )
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f"{body}\n"
+        "</urlset>\n"
+    )
+
+
 def _alternate_links(app_key: str, locale: str) -> str:
     links = [
         (
@@ -881,6 +921,7 @@ def llms_lines(*, full: bool) -> list[str]:
     lines = [
         "",
         "## App install decision routes",
+        f"- Sitemap: {sitemap_url()}",
         f"- Aggregate JSON: {data_url()}",
         f"- JSON Schema: {schema_url()}",
         f"- Official Apple locales: {len(OFFICIAL_LOCALES)}/{len(OFFICIAL_LOCALES)}",
@@ -915,6 +956,10 @@ def build(pages: Path = PAGES) -> list[str]:
     _write_text(
         pages / SCHEMA_RELATIVE,
         json.dumps(_schema_payload(apps), ensure_ascii=False, indent=2) + "\n",
+    )
+    _write_text(
+        pages / SITEMAP_NAME,
+        render_sitemap(records, modified),
     )
     locale_urls = []
     for locale in OFFICIAL_LOCALES:

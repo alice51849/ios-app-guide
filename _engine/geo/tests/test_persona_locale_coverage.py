@@ -310,13 +310,69 @@ class PersonaLocaleCoverageTests(unittest.TestCase):
             self.assertNotEqual(source, translated)
 
     def test_reviewed_target_terms_avoid_tracking_and_regional_spanish(self):
-        self.assertEqual(
-            "skriveøving",
-            aeo_answers_i18n.apply_locale_target_replacements(
-                "streksporing",
+        cases = (
+            ("no", "streksporing", "skriveøving"),
+            (
+                "da",
+                "gennem sporing og leg",
+                "gennem skriveøvelser og leg",
+            ),
+            (
+                "da",
+                "bogstavlyde, sporing og ordbygning",
+                "bogstavlyde, skriveøvelser og ordbygning",
+            ),
+            (
                 "no",
+                "gjennom sporing og lek",
+                "gjennom skriveøvelser og lek",
+            ),
+            (
+                "no",
+                "bokstavlyder, sporing og ordbygging",
+                "bokstavlyder, skriveøvelser og ordbygging",
+            ),
+            (
+                "sv",
+                "bokstavsljud, spårning och ordbyggande",
+                "bokstavsljud, skrivövningar och ordbyggande",
+            ),
+            (
+                "nl-NL",
+                "via traceren en spel",
+                "via overtrekken en spel",
+            ),
+            (
+                "nl-NL",
+                "klanken, traceren en woordbouw",
+                "klanken, overtrekken en woordbouw",
             ),
         )
+        for locale, source, expected in cases:
+            with self.subTest(locale=locale, source=source):
+                self.assertEqual(
+                    expected,
+                    aeo_answers_i18n.apply_locale_target_replacements(
+                        source,
+                        locale,
+                    ),
+                )
+
+        privacy_copy = (
+            ("da", "Ingen sporing"),
+            ("no", "Ingen sporing"),
+            ("sv", "Ingen spårning"),
+            ("nl-NL", "Geen tracering"),
+        )
+        for locale, source in privacy_copy:
+            with self.subTest(locale=locale, privacy=source):
+                self.assertEqual(
+                    source,
+                    aeo_answers_i18n.apply_locale_target_replacements(
+                        source,
+                        locale,
+                    ),
+                )
 
     def test_reviewed_asian_terms_remove_non_brand_english(self):
         cases = (

@@ -5,6 +5,7 @@
   "type": "object",
   "additionalProperties": false,
   "required": [
+    "$schema",
     "schema_version",
     "name",
     "description",
@@ -19,9 +20,13 @@
     "locale_count",
     "record_count",
     "locales",
+    "syndication",
     "records"
   ],
   "properties": {
+    "$schema": {
+      "const": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes.schema.json"
+    },
     "schema_version": {
       "const": 1
     },
@@ -137,6 +142,85 @@
       "maxItems": 50,
       "uniqueItems": true
     },
+    "syndication": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "formats",
+        "locale_feeds"
+      ],
+      "properties": {
+        "formats": {
+          "const": [
+            "atom",
+            "rss",
+            "json_feed"
+          ]
+        },
+        "locale_feeds": {
+          "type": "object",
+          "minProperties": 50,
+          "maxProperties": 50,
+          "propertyNames": {
+            "enum": [
+              "ar-SA",
+              "bn-BD",
+              "ca",
+              "cs",
+              "da",
+              "de-DE",
+              "el",
+              "en-AU",
+              "en-CA",
+              "en-GB",
+              "en-US",
+              "es-ES",
+              "es-MX",
+              "fi",
+              "fr-CA",
+              "fr-FR",
+              "gu-IN",
+              "he",
+              "hi",
+              "hr",
+              "hu",
+              "id",
+              "it",
+              "ja",
+              "kn-IN",
+              "ko",
+              "ml-IN",
+              "mr-IN",
+              "ms",
+              "nl-NL",
+              "no",
+              "or-IN",
+              "pa-IN",
+              "pl",
+              "pt-BR",
+              "pt-PT",
+              "ro",
+              "ru",
+              "sk",
+              "sl-SI",
+              "sv",
+              "ta-IN",
+              "te-IN",
+              "th",
+              "tr",
+              "uk",
+              "ur-PK",
+              "vi",
+              "zh-Hans",
+              "zh-Hant"
+            ]
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/feed_set"
+          }
+        }
+      }
+    },
     "records": {
       "type": "array",
       "minItems": 1600,
@@ -147,6 +231,29 @@
     }
   },
   "$defs": {
+    "feed_set": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "atom",
+        "rss",
+        "json_feed"
+      ],
+      "properties": {
+        "atom": {
+          "type": "string",
+          "format": "uri"
+        },
+        "rss": {
+          "type": "string",
+          "format": "uri"
+        },
+        "json_feed": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
     "record": {
       "type": "object",
       "additionalProperties": false,
@@ -187,7 +294,7 @@
       "properties": {
         "record_id": {
           "type": "string",
-          "minLength": 8
+          "pattern": "^[A-Za-z0-9-]+:[a-z0-9-]+$"
         },
         "locale": {
           "enum": [

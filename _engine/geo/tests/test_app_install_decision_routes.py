@@ -15,6 +15,7 @@ GEO = Path(__file__).resolve().parents[1]
 if str(GEO) not in sys.path:
     sys.path.insert(0, str(GEO))
 
+import app_install_decision_feeds
 import app_install_decision_routes
 import app_store_storefronts
 from official_locales import OFFICIAL_LOCALES
@@ -66,6 +67,10 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
             self.payload["priority_app_keys"],
         )
         self.assertEqual(list(OFFICIAL_LOCALES), self.payload["locales"])
+        self.assertEqual(
+            app_install_decision_feeds.syndication_payload(),
+            self.payload["syndication"],
+        )
 
         for locale in OFFICIAL_LOCALES:
             locale_records = self.by_locale[locale]
@@ -89,6 +94,17 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
                 ),
                 [record["app_name"] for record in remaining],
             )
+
+    def test_schema_declares_every_dataset_field(self) -> None:
+        schema = json.loads(
+            (
+                self.pages / app_install_decision_routes.SCHEMA_RELATIVE
+            ).read_text(encoding="utf-8")
+        )
+        properties = set(schema["properties"])
+        required = set(schema["required"])
+        self.assertEqual(set(self.payload), properties)
+        self.assertEqual(properties, required)
 
     def test_records_keep_direct_links_dedup_and_provenance(self) -> None:
         seen_ids: set[str] = set()
@@ -122,6 +138,27 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
                 len(set(record["badge_labels"])),
             )
 
+    def test_kids_writing_copy_uses_native_practice_terms(self) -> None:
+        expected = {
+            "da:lumibopomofo": "skriveøvelser",
+            "da:lumiletterspro": "skriveøvelser",
+            "no:lumibopomofo": "skriveøvelser",
+            "no:lumiletterspro": "skriveøvelser",
+            "sv:lumiletterspro": "skrivövningar",
+            "nl-NL:lumibopomofo": "overtrekken",
+            "nl-NL:lumiletterspro": "overtrekken",
+        }
+        records = {record["record_id"]: record for record in self.records}
+        forbidden = ("sporing", "spårning", "traceren")
+        for record_id, native_term in expected.items():
+            with self.subTest(record_id=record_id):
+                context = records[record_id]["decision_context"].casefold()
+                self.assertIn(native_term.casefold(), context)
+                self.assertFalse(
+                    any(term in context for term in forbidden),
+                    context,
+                )
+
     def test_locale_indexes_and_pages_match_dataset(self) -> None:
         for locale in OFFICIAL_LOCALES:
             payload = json.loads(
@@ -135,6 +172,10 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
             self.assertEqual(
                 list(app_install_decision_routes.PRIORITY_APPS),
                 payload["priority_app_keys"],
+            )
+            self.assertEqual(
+                app_install_decision_feeds.feed_urls(locale),
+                payload["syndication"],
             )
             self.assertEqual(
                 [record["record_id"] for record in self.by_locale[locale]],
@@ -162,6 +203,15 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
             self.assertIn(record["canonical_guide_url"], source)
             self.assertIn('id="decision-record"', source)
             self.assertIn(record["app_store_cta_label"], source)
+            self.assertIn(
+                f'<meta name="twitter:app:id:iphone" '
+                f'content="{record["app_store_id"]}">',
+                source,
+            )
+            for feed_url in app_install_decision_feeds.feed_urls(
+                record["locale"]
+            ).values():
+                self.assertIn(feed_url, source)
 
     def test_llms_discloses_decision_indexes(self) -> None:
         root = (self.pages / "llms.txt").read_text(encoding="utf-8")
@@ -184,6 +234,13 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
         expected = app_install_decision_routes.sitemap_entries(self.records)
         self.assertEqual(expected, locations)
         self.assertEqual(1600, sum("/decision/l/" in url for url in locations))
+        self.assertEqual(
+            len(OFFICIAL_LOCALES) * len(app_install_decision_feeds.FORMATS),
+            sum(
+                "/data/app-install-decision-routes/feeds/" in url
+                for url in locations
+            ),
+        )
         self.assertEqual(len(expected), len(set(locations)))
 
     def test_sitemap_index_and_robots_register_decision_sitemap(self) -> None:

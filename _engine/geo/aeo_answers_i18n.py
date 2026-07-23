@@ -780,6 +780,11 @@ _REVIEWED_TARGET_REPLACEMENTS = {
         ("familiekontent", "familieindhold"),
         ("forudbetaling", "engangsbetaling"),
         ("Home Screen", "Hjemmeskærm"),
+        ("gennem sporing og leg", "gennem skriveøvelser og leg"),
+        (
+            "bogstavlyde, sporing og ordbygning",
+            "bogstavlyde, skriveøvelser og ordbygning",
+        ),
     ),
     "de-DE": (
         ("Home Screen", "Home-Bildschirm"),
@@ -852,11 +857,23 @@ _REVIEWED_TARGET_REPLACEMENTS = {
         ("bukan penggunaan", "tidak habis guna"),
         ("Eksport / kunci masuk", "Eksport / pergantungan vendor"),
     ),
-    "nl-NL": (("gezinsinhoud", "familiegegevens"),),
+    "nl-NL": (
+        ("gezinsinhoud", "familiegegevens"),
+        ("via traceren en spel", "via overtrekken en spel"),
+        (
+            "klanken, traceren en woordbouw",
+            "klanken, overtrekken en woordbouw",
+        ),
+    ),
     "no": (
         ("engangslåsen", "engangsopplåsingen"),
         ("engangslås", "engangsopplåsing"),
         ("forhåndsbetaling", "engangsbetaling"),
+        ("gjennom sporing og lek", "gjennom skriveøvelser og lek"),
+        (
+            "bokstavlyder, sporing og ordbygging",
+            "bokstavlyder, skriveøvelser og ordbygging",
+        ),
     ),
     "or-IN": (
         ("ଆଇଫୋନ", "iPhone"),
@@ -872,7 +889,13 @@ _REVIEWED_TARGET_REPLACEMENTS = {
         ("ਐਪਲ ਵਾਚ", "Apple Watch"),
         ("ਐਪ ਸਟੋਰ", "App Store"),
     ),
-    "sv": (("köp i förväg", "engångsköp"),),
+    "sv": (
+        ("köp i förväg", "engångsköp"),
+        (
+            "bokstavsljud, spårning och ordbyggande",
+            "bokstavsljud, skrivövningar och ordbyggande",
+        ),
+    ),
     "te-IN": (
         ("Home Screen", "హోమ్ స్క్రీన్"),
     ),

@@ -4,7 +4,7 @@
 from __future__ import annotations
 
 import argparse
-from datetime import date
+from datetime import datetime, timezone
 import hashlib
 import html
 import json
@@ -14,6 +14,7 @@ import re
 from typing import Any
 from urllib.parse import urlsplit
 
+import app_install_decision_feeds
 from family_travel_dataset import write_text_if_changed
 from gen_feed import feed_discovery_links
 import gen_mobile_app_identity
@@ -307,6 +308,7 @@ def _generation_digest(content_digest: str) -> str:
     digest = hashlib.sha256()
     digest.update(content_digest.encode("ascii"))
     digest.update(Path(__file__).read_bytes())
+    digest.update(Path(app_install_decision_feeds.__file__).read_bytes())
     digest.update(portfolio_app_finder.I18N_PATH.read_bytes())
     digest.update(publisher_intent_catalog.I18N_PATH.read_bytes())
     return digest.hexdigest()
@@ -364,6 +366,7 @@ def _payload(
         "locale_count": len(OFFICIAL_LOCALES),
         "record_count": len(records),
         "locales": list(OFFICIAL_LOCALES),
+        "syndication": app_install_decision_feeds.syndication_payload(),
         "records": records,
     }
 
@@ -376,6 +379,7 @@ def _schema_payload(apps: dict[str, Any]) -> dict[str, Any]:
         "type": "object",
         "additionalProperties": False,
         "required": [
+            "$schema",
             "schema_version",
             "name",
             "description",
@@ -390,9 +394,11 @@ def _schema_payload(apps: dict[str, Any]) -> dict[str, Any]:
             "locale_count",
             "record_count",
             "locales",
+            "syndication",
             "records",
         ],
         "properties": {
+            "$schema": {"const": schema_url()},
             "schema_version": {"const": 1},
             "name": {"const": "Lumi Studio App Install Decision Routes"},
             "description": {"type": "string", "minLength": 20},
@@ -431,6 +437,27 @@ def _schema_payload(apps: dict[str, Any]) -> dict[str, Any]:
                 "maxItems": len(OFFICIAL_LOCALES),
                 "uniqueItems": True,
             },
+            "syndication": {
+                "type": "object",
+                "additionalProperties": False,
+                "required": ["formats", "locale_feeds"],
+                "properties": {
+                    "formats": {
+                        "const": list(app_install_decision_feeds.FORMATS)
+                    },
+                    "locale_feeds": {
+                        "type": "object",
+                        "minProperties": len(OFFICIAL_LOCALES),
+                        "maxProperties": len(OFFICIAL_LOCALES),
+                        "propertyNames": {
+                            "enum": list(OFFICIAL_LOCALES)
+                        },
+                        "additionalProperties": {
+                            "$ref": "#/$defs/feed_set"
+                        },
+                    },
+                },
+            },
             "records": {
                 "type": "array",
                 "minItems": len(apps) * len(OFFICIAL_LOCALES),
@@ -439,6 +466,15 @@ def _schema_payload(apps: dict[str, Any]) -> dict[str, Any]:
             },
         },
         "$defs": {
+            "feed_set": {
+                "type": "object",
+                "additionalProperties": False,
+                "required": list(app_install_decision_feeds.FORMATS),
+                "properties": {
+                    feed_format: {"type": "string", "format": "uri"}
+                    for feed_format in app_install_decision_feeds.FORMATS
+                },
+            },
             "record": {
                 "type": "object",
                 "additionalProperties": False,
@@ -477,7 +513,10 @@ def _schema_payload(apps: dict[str, Any]) -> dict[str, Any]:
                     "verified_live",
                 ],
                 "properties": {
-                    "record_id": {"type": "string", "minLength": 8},
+                    "record_id": {
+                        "type": "string",
+                        "pattern": "^[A-Za-z0-9-]+:[a-z0-9-]+$",
+                    },
                     "locale": {"enum": list(OFFICIAL_LOCALES)},
                     "app_key": {"enum": sorted(apps)},
                     "app_name": {"type": "string", "minLength": 1},
@@ -599,8 +638,34 @@ def locale_payload(
         "generation_digest": generation_digest,
         "priority_app_keys": list(PRIORITY_APPS),
         "record_count": len(records),
+        "syndication": app_install_decision_feeds.feed_urls(locale),
         "records": records,
     }
+
+
+def _feed_contexts(
+    records: list[dict[str, Any]],
+) -> dict[str, dict[str, str]]:
+    app_count = len(records) // len(OFFICIAL_LOCALES)
+    contexts: dict[str, dict[str, str]] = {}
+    for locale in OFFICIAL_LOCALES:
+        locale_records = [
+            record for record in records if record["locale"] == locale
+        ]
+        if len(locale_records) != app_count:
+            raise ValueError(
+                f"Install-decision feed context coverage mismatch: {locale}"
+            )
+        ui = portfolio_app_finder.UI[locale]
+        publisher_disclosure = str(
+            locale_records[0]["publisher_disclosure"]
+        )
+        contexts[locale] = {
+            "title": str(ui["verified"]).format(count=app_count),
+            "description": publisher_disclosure,
+            "publisher_disclosure": publisher_disclosure,
+        }
+    return contexts
 
 
 def sitemap_entries(
@@ -618,7 +683,13 @@ def sitemap_entries(
     if len(set(page_urls)) != len(page_urls):
         raise ValueError("Install decision sitemap pages must be unique")
     locale_urls = [locale_index_url(locale) for locale in OFFICIAL_LOCALES]
-    entries = [*page_urls, data_url(), schema_url(), *locale_urls]
+    entries = [
+        *page_urls,
+        data_url(),
+        schema_url(),
+        *locale_urls,
+        *app_install_decision_feeds.all_feed_urls(),
+    ]
     if len(set(entries)) != len(entries):
         raise ValueError("Install decision sitemap URLs must be unique")
     return entries
@@ -725,7 +796,11 @@ def _structured_data(record: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def render_page(record: dict[str, Any], modified: str) -> str:
+def render_page(
+    record: dict[str, Any],
+    modified: str,
+    feed_title: str,
+) -> str:
     locale = str(record["locale"])
     icon = Path("stories") / "img" / f"{record['app_key']}-icon.jpg"
     icon_url = f"{SITE}/{icon.as_posix()}" if (PAGES / icon).is_file() else ""
@@ -751,12 +826,20 @@ def render_page(record: dict[str, Any], modified: str) -> str:
 <meta property="og:description" content="{html.escape(str(record["decision_context"]), quote=True)}">
 <meta property="og:url" content="{html.escape(str(record["decision_page_url"]), quote=True)}">
 {f'<meta property="og:image" content="{html.escape(icon_url, quote=True)}">' if icon_url else ""}
+<meta name="twitter:card" content="app">
+<meta name="twitter:title" content="{html.escape(str(record["publisher_query"]), quote=True)}">
+<meta name="twitter:description" content="{html.escape(str(record["decision_context"]), quote=True)}">
+<meta name="twitter:app:name:iphone" content="{html.escape(str(record["app_name"]), quote=True)}">
+<meta name="twitter:app:id:iphone" content="{html.escape(str(record["app_store_id"]), quote=True)}">
+<meta name="twitter:app:name:ipad" content="{html.escape(str(record["app_name"]), quote=True)}">
+<meta name="twitter:app:id:ipad" content="{html.escape(str(record["app_store_id"]), quote=True)}">
 <title>{html.escape(str(record["publisher_query"]))} | {html.escape(str(record["app_name"]))}</title>
 <link rel="canonical" href="{html.escape(str(record["decision_page_url"]), quote=True)}">
 <link rel="alternate" type="application/json" href="{html.escape(str(record["locale_index_url"]), quote=True)}">
 <link rel="alternate" type="application/schema+json" href="{html.escape(schema_url(), quote=True)}">
 {_alternate_links(str(record["app_key"]), locale)}
 {feed_discovery_links()}
+{app_install_decision_feeds.discovery_links(locale, feed_title)}
 <script type="application/ld+json">{_json_script(_structured_data(record))}</script>
 <script id="decision-record" type="application/json">{_json_script(record)}</script>
 <style>
@@ -936,12 +1019,13 @@ def llms_lines(*, full: bool) -> list[str]:
 
 def build(pages: Path = PAGES) -> list[str]:
     records, apps = build_records(pages)
+    feed_contexts = _feed_contexts(records)
     content_digest = _content_digest(records)
     generation_digest = _generation_digest(content_digest)
     modified = _stable_modified(
         pages / DATA_RELATIVE,
         generation_digest,
-        date.today().isoformat(),
+        datetime.now(timezone.utc).date().isoformat(),
     )
     payload = _payload(
         records,
@@ -983,6 +1067,12 @@ def build(pages: Path = PAGES) -> list[str]:
             + "\n",
         )
         locale_urls.append(locale_index_url(locale))
+    feed_urls = app_install_decision_feeds.build(
+        pages,
+        records,
+        modified,
+        feed_contexts,
+    )
     for record in records:
         _write_text(
             pages
@@ -990,12 +1080,17 @@ def build(pages: Path = PAGES) -> list[str]:
                 str(record["app_key"]),
                 str(record["locale"]),
             ),
-            render_page(record, modified),
+            render_page(
+                record,
+                modified,
+                feed_contexts[str(record["locale"])]["title"],
+            ),
         )
     return [
         data_url(),
         schema_url(),
         *locale_urls,
+        *feed_urls,
         *(record["decision_page_url"] for record in records),
     ]
 
@@ -1008,7 +1103,9 @@ def main() -> int:
         "app install decision routes -> "
         f"{len(PRIORITY_APPS)} priority apps, "
         f"{len(OFFICIAL_LOCALES)} locales, "
-        f"{len(urls) - 2 - len(OFFICIAL_LOCALES)} pages",
+        f"{len(OFFICIAL_LOCALES) * len(app_install_decision_feeds.FORMATS)} "
+        "locale feeds, "
+        f"{len(urls) - 2 - len(OFFICIAL_LOCALES) - len(app_install_decision_feeds.all_feed_urls())} pages",
         flush=True,
     )
     return 0

@@ -3,14 +3,19 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "nl-NL",
   "dateModified": "2026-07-23",
-  "content_digest": "497ac62288da57b74ecde541fc1424745676291f9aeba8cb8146c4283835ec26",
-  "generation_digest": "d516a9df4650e6453abcaef9ace611b635d09e2ae9a45dfb7fef12273676f389",
+  "content_digest": "11ce2b8e01ab33f68f99f8640b83cc317a81adad8af69970822dc870b657ef11",
+  "generation_digest": "ff7bd574135f7c3b68c8c96177c3ba1a0671b8c11847d9644c48566647d24092",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
   "record_count": 32,
+  "syndication": {
+    "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/nl-NL.atom.xml",
+    "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/nl-NL.rss.xml",
+    "json_feed": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/nl-NL.feed.json"
+  },
   "records": [
     {
       "record_id": "nl-NL:maskmyfile",
@@ -485,7 +490,7 @@
       "priority_rank": null,
       "priority_group": "baseline_coverage",
       "publisher_query": "beste bopomofo app voor kinderen om zhuyin te leren op iPhone",
-      "decision_context": "Voor een kind dat Zhuyin voor het eerst leert, moet de app alle 37 symbolen behandelen via traceren en spel — ontworpen voor de eerste-leerperiode van 4–7 jaar, advertentievrij, zonder dataverzameling — Lumi Bopomofo is hiervoor gemaakt.",
+      "decision_context": "Voor een kind dat Zhuyin voor het eerst leert, moet de app alle 37 symbolen behandelen via overtrekken en spel — ontworpen voor de eerste-leerperiode van 4–7 jaar, advertentievrij, zonder dataverzameling — Lumi Bopomofo is hiervoor gemaakt.",
       "category": "kids",
       "category_label": "Kinderen & leren",
       "purchase_model": "free_with_lifetime_unlock",
@@ -614,7 +619,7 @@
       "priority_rank": null,
       "priority_group": "baseline_coverage",
       "publisher_query": "beste complete fonetische app voor thuisonderwijs kleuterklas",
-      "decision_context": "Gezinnen die zich voorbereiden op de kleuterklas hebben een compleet vroeg-leestraject nodig dat klanken, traceren en woordbouw verbindt in plaats van losse alfabetspelletjes — Lumi Letters Pro is hiervoor gemaakt.",
+      "decision_context": "Gezinnen die zich voorbereiden op de kleuterklas hebben een compleet vroeg-leestraject nodig dat klanken, overtrekken en woordbouw verbindt in plaats van losse alfabetspelletjes — Lumi Letters Pro is hiervoor gemaakt.",
       "category": "kids",
       "category_label": "Kinderen & leren",
       "purchase_model": "paid_upfront",

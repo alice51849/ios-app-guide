@@ -17928,6 +17928,27 @@ class GeneratorTests(unittest.TestCase):
             data["ordering"],
         )
         self.assertEqual(2, english.count('data-app-card '))
+        self.assertIn(
+            (
+                f"{portfolio_app_finder.SITE}/apps/snapport/"
+                "decision/l/en-US/index.html"
+            ),
+            english,
+        )
+        self.assertIn(
+            (
+                f"{portfolio_app_finder.SITE}/apps/wordmate/"
+                "decision/l/en-US/index.html"
+            ),
+            english,
+        )
+        self.assertIn(
+            (
+                f"{portfolio_app_finder.SITE}/apps/snapport/"
+                "decision/l/zh-Hant/index.html"
+            ),
+            chinese,
+        )
         cards = re.findall(
             r'<article class="app-card".*?</article>',
             english,
@@ -18263,6 +18284,13 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(52, japanese.count("hreflang="))
         self.assertIn('<html lang="ja">', japanese)
         self.assertIn("証明写真を作る", japanese)
+        self.assertIn(
+            (
+                f"{portfolio_app_finder.SITE}/apps/snapport/"
+                "decision/l/ja/index.html"
+            ),
+            japanese,
+        )
         self.assertIn("端末上で証明写真を準備します。", japanese)
         self.assertIn("App StoreでSnapportを見る →", japanese)
         self.assertIn(

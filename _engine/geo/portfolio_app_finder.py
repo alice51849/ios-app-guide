@@ -315,6 +315,16 @@ def canonical(locale: str) -> str:
     return f"{SITE}/{prefix}tools/{SLUG}.html"
 
 
+def install_decision_url(app_key: str, locale: str) -> str:
+    decision_locale = "en-US" if locale == "en" else locale
+    if decision_locale not in OFFICIAL_LOCALES:
+        raise ValueError(f"Unsupported portfolio finder locale: {locale}")
+    return (
+        f"{SITE}/apps/{app_key}/decision/l/"
+        f"{decision_locale}/index.html"
+    )
+
+
 def hreflang_links() -> str:
     links = [
         f'<link rel="alternate" hreflang="en" href="{canonical("en")}">'
@@ -1280,7 +1290,9 @@ def app_cards(
             f'<h2>{html.escape(record["name"])}</h2>'
             f'<div class="facts">{badge_html}</div>'
             f'<p class="intent"><strong>{html.escape(copy["intent"])}:</strong> '
-            f'{html.escape(intent["publisher_query"])}</p>'
+            f'<a class="intent-link" '
+            f'href="{html.escape(install_decision_url(str(record["key"]), locale))}">'
+            f'{html.escape(intent["publisher_query"])}</a></p>'
             f'<p class="why"><strong>{html.escape(copy["why"])}:</strong> '
             f'{html.escape(intent["decision_context"])}</p>'
             f'<div class="app-actions"><a class="guide" '
@@ -1364,7 +1376,7 @@ __FEEDS__
 .card{border:1px solid var(--line);border-radius:28px;background:rgba(255,255,255,.94);box-shadow:var(--shadow);padding:clamp(20px,4vw,32px);margin-bottom:22px}.filters{display:grid;grid-template-columns:1fr;gap:14px}@media(min-width:700px){.filters{grid-template-columns:2fr 1fr 1fr}}@media(min-width:1020px){.filters{grid-template-columns:2fr 1fr 1fr 1fr 1fr}}
 label{display:block;font-weight:850;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}input,select{width:100%;min-height:50px;margin-top:6px;border:1px solid #c8d7d0;border-radius:15px;padding:11px 38px 11px 13px;background:#fff;color:var(--ink);font:inherit}
 button,.download,.store,.guide{min-height:48px;border-radius:999px;padding:12px 18px;font:inherit;font-weight:900;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer}button,.download,.guide{border:1px solid #c8d7d0;background:#fff;color:var(--teal)}.store{display:flex;align-items:center;justify-content:center;border:0;background:linear-gradient(135deg,var(--teal),#178c70);color:#fff!important;box-shadow:0 10px 28px rgba(18,107,87,.2)}.app-actions{display:grid;gap:9px;margin-top:auto}.guide{display:flex;align-items:center;justify-content:center}
-.clear{width:100%;margin-top:14px}.status{min-height:1.4em;margin:14px 0 0;color:var(--teal);font-weight:850}.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px;margin-bottom:22px}.app-card{display:flex;flex-direction:column;gap:13px;min-width:0;border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.96);box-shadow:0 14px 40px rgba(27,68,57,.08);padding:22px}.app-card h2{margin:0;font-size:1.2rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.app-card p{margin:0;color:var(--muted)}.why strong{color:var(--ink)}[hidden]{display:none!important}
+.clear{width:100%;margin-top:14px}.status{min-height:1.4em;margin:14px 0 0;color:var(--teal);font-weight:850}.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px;margin-bottom:22px}.app-card{display:flex;flex-direction:column;gap:13px;min-width:0;border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.96);box-shadow:0 14px 40px rgba(27,68,57,.08);padding:22px}.app-card h2{margin:0;font-size:1.2rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.app-card p{margin:0;color:var(--muted)}.intent-link{color:var(--teal);font-weight:760}.why strong{color:var(--ink)}[hidden]{display:none!important}
 .two{display:grid;gap:20px}@media(min-width:820px){.two{grid-template-columns:1fr 1fr}}h2.section-title,.card>h2{margin:0 0 10px;font-size:clamp(1.35rem,3vw,2rem);letter-spacing:-.025em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.list{padding-left:1.25rem}.list li{margin:.58rem 0}.actions{margin-top:18px}.source a{font-weight:850}details{border-top:1px solid var(--line);padding:14px 0}summary{font-weight:850;cursor:pointer}footer{padding:28px 0 52px;color:var(--muted);font-size:.9rem}
 button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid rgba(103,80,201,.42);outline-offset:3px}@media(max-width:520px){.card{border-radius:22px}.nav{font-size:.88rem}.results{grid-template-columns:1fr}}
 </style>

@@ -19,6 +19,7 @@ import app_install_decision_feeds
 import app_install_decision_routes
 import app_store_storefronts
 from official_locales import OFFICIAL_LOCALES
+import portfolio_app_finder
 import publisher_intent_catalog
 
 
@@ -274,6 +275,21 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
                 record["locale"]
             ).values():
                 self.assertIn(feed_url, source)
+
+    def test_every_route_has_a_localized_finder_inbound_link(self) -> None:
+        for locale in OFFICIAL_LOCALES:
+            finder = (
+                self.pages
+                / locale
+                / "tools"
+                / f"{portfolio_app_finder.SLUG}.html"
+            ).read_text(encoding="utf-8")
+            for record in self.by_locale[locale]:
+                self.assertIn(
+                    f'href="{record["decision_page_url"]}"',
+                    finder,
+                    record["record_id"],
+                )
 
     def test_llms_discloses_decision_indexes(self) -> None:
         root = (self.pages / "llms.txt").read_text(encoding="utf-8")

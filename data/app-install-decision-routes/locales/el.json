@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "el",
   "dateModified": "2026-07-23",
-  "content_digest": "11ce2b8e01ab33f68f99f8640b83cc317a81adad8af69970822dc870b657ef11",
-  "generation_digest": "ff7bd574135f7c3b68c8c96177c3ba1a0671b8c11847d9644c48566647d24092",
+  "content_digest": "a37c734f4f3acc1c69c25be0c1e1bea42ecb46ebff08eeeaa69fe21ba259b766",
+  "generation_digest": "2f38ec261b2999f93aa8466786825fb14af4877cbe4aad1f84eb74eac9c5d93b",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -42,7 +42,8 @@
       "badge_labels": [
         "Περισσότερα",
         "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
-        "Ιδιωτικό / στη συσκευή"
+        "Ιδιωτικό / στη συσκευή",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/maskmyfile.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/el/index.html",
@@ -51,6 +52,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
       "app_store_url": "https://apps.apple.com/gr/app/id6792850916",
       "app_store_cta_label": "Αποκτήστε το Mask My File από το App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Αυτό είναι πρωτογενές υλικό που δημοσιεύεται από το Lumi Studio, τον δημιουργό κάθε καταχωρημένης εφαρμογής.",
       "source_persona_query": "best on-device file redaction app for freelancers sharing client documents",
@@ -80,7 +86,8 @@
       "device_labels": [],
       "badge_labels": [
         "Περισσότερα",
-        "Λήψη με χρέωση"
+        "Λήψη με χρέωση",
+        "App Store · 6,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/wifiaid.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/el/index.html",
@@ -89,6 +96,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
       "app_store_url": "https://apps.apple.com/gr/app/id6790467886",
       "app_store_cta_label": "Αποκτήστε το WiFi Aid από το App Store",
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Αυτό είναι πρωτογενές υλικό που δημοσιεύεται από το Lumi Studio, τον δημιουργό κάθε καταχωρημένης εφαρμογής.",
       "source_persona_query": "best wifi troubleshooting app for remote workers with connected but no internet",
@@ -118,7 +130,8 @@
       "device_labels": [],
       "badge_labels": [
         "Τρόπος ζωής",
-        "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής"
+        "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/el/index.html",
@@ -127,6 +140,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
       "app_store_url": "https://apps.apple.com/gr/app/id6790800323",
       "app_store_cta_label": "Αποκτήστε το Mochi DoneStamp: Τελευταία από το App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Αυτό είναι πρωτογενές υλικό που δημοσιεύεται από το Lumi Studio, τον δημιουργό κάθε καταχωρημένης εφαρμογής.",
       "source_persona_query": "best last time tracker app for household maintenance without a subscription",
@@ -156,7 +174,8 @@
       "device_labels": [],
       "badge_labels": [
         "Εκπαίδευση",
-        "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής"
+        "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aim990/decision/l/el/index.html",
@@ -165,6 +184,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
       "app_store_url": "https://apps.apple.com/gr/app/id6784974530",
       "app_store_cta_label": "Κατεβάστε το Aim990 από το App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best toeic prep app offline study plan for iphone",
@@ -199,7 +223,8 @@
       "badge_labels": [
         "Εκπαίδευση",
         "Λήψη με χρέωση",
-        "Εκτός σύνδεσης"
+        "Εκτός σύνδεσης",
+        "App Store · 6,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/aim990plus.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/el/index.html",
@@ -208,6 +233,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
       "app_store_url": "https://apps.apple.com/gr/app/id6792483140",
       "app_store_cta_label": "Αποκτήστε το Aim990 Plus από το App Store",
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Αυτό είναι πρωτογενές υλικό που δημοσιεύεται από το Lumi Studio, τον δημιουργό κάθε καταχωρημένης εφαρμογής.",
       "source_persona_query": "best offline English listening and reading exam trainer for iPhone",
@@ -237,7 +267,8 @@
       "device_labels": [],
       "badge_labels": [
         "Παραγωγικότητα",
-        "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής"
+        "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-resume-builder-app-for-career-changers-2026.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/el/index.html",
@@ -246,6 +277,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
       "app_store_url": "https://apps.apple.com/gr/app/id6781337213",
       "app_store_cta_label": "Κατεβάστε το CV Desk από το App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best resume builder app for career changers 2026",
@@ -280,7 +316,8 @@
       "badge_labels": [
         "Υγεία",
         "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
-        "Ιδιωτικό / στη συσκευή"
+        "Ιδιωτικό / στη συσκευή",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-period-tracker-app-no-account-required-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/el/index.html",
@@ -289,6 +326,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
       "app_store_url": "https://apps.apple.com/gr/app/id6782251621",
       "app_store_cta_label": "Κατεβάστε το Cyca από το App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best period tracker app no account required iphone",
@@ -326,7 +368,8 @@
         "Εκπαίδευση",
         "Λήψη με χρέωση",
         "Γραφικό στοιχείο",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · 12,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/el/index.html",
@@ -335,6 +378,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
       "app_store_url": "https://apps.apple.com/gr/app/id6790418321",
       "app_store_cta_label": "Κατεβάστε το DailyMate από το App Store →",
+      "storefront_facts": {
+        "price": "12.99",
+        "currency": "EUR",
+        "formatted_price": "12,99 €"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best practical language phrase app for travelers with apple watch",
@@ -372,7 +420,8 @@
         "Χρήματα & ταξίδια",
         "Λήψη με χρέωση",
         "Εκτός σύνδεσης",
-        "Χωρίς λογαριασμό"
+        "Χωρίς λογαριασμό",
+        "App Store · 5,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/el/index.html",
@@ -381,6 +430,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
       "app_store_url": "https://apps.apple.com/gr/app/id6755782939",
       "app_store_cta_label": "Κατεβάστε το G+Money από το App Store →",
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "EUR",
+        "formatted_price": "5,99 €"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best travel budget tracker app no subscription iphone",
@@ -418,7 +472,8 @@
         "Χρήματα & ταξίδια",
         "Λήψη με χρέωση",
         "Χωρίς παρακολούθηση",
-        "Ιδιωτικό / στη συσκευή"
+        "Ιδιωτικό / στη συσκευή",
+        "App Store · 5,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/el/index.html",
@@ -427,6 +482,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
       "app_store_url": "https://apps.apple.com/gr/app/id6754218117",
       "app_store_cta_label": "Κατεβάστε το HoursTag από το App Store →",
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "EUR",
+        "formatted_price": "5,99 €"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best mindful spending app to stop impulse buying iphone",
@@ -464,7 +524,8 @@
         "Παραγωγικότητα",
         "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
         "Χωρίς διαφημίσεις",
-        "Ιδιωτικό / στη συσκευή"
+        "Ιδιωτικό / στη συσκευή",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-app-to-block-social-media-while-studying-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/el/index.html",
@@ -473,6 +534,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6780107485",
       "app_store_url": "https://apps.apple.com/gr/app/id6780107485",
       "app_store_cta_label": "Κατεβάστε το LockHour Pro από το App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best app to block social media while studying iphone",
@@ -507,7 +573,8 @@
       "badge_labels": [
         "Παιδιά & μάθηση",
         "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
-        "Χωρίς διαφημίσεις"
+        "Χωρίς διαφημίσεις",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/el/index.html",
@@ -516,6 +583,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6773017109",
       "app_store_url": "https://apps.apple.com/gr/app/id6773017109",
       "app_store_cta_label": "Κατεβάστε το Lumi Bopomofo από το App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best bopomofo app for kids to learn zhuyin on iphone",
@@ -550,7 +622,8 @@
       "badge_labels": [
         "Παιδιά & μάθηση",
         "Λήψη με χρέωση",
-        "Χωρίς διαφημίσεις"
+        "Χωρίς διαφημίσεις",
+        "App Store · 9,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-complete-zhuyin-app-for-bilingual-children.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/el/index.html",
@@ -559,6 +632,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
       "app_store_url": "https://apps.apple.com/gr/app/id6775773117",
       "app_store_cta_label": "Αποκτήστε το Lumi Bopomofo Pro στο App Store →",
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "9,99 €"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best complete zhuyin app for bilingual children",
@@ -593,7 +671,8 @@
       "badge_labels": [
         "Παιδιά & μάθηση",
         "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
-        "Χωρίς διαφημίσεις"
+        "Χωρίς διαφημίσεις",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-educational-game-app-for-kids-no-ads-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/el/index.html",
@@ -602,6 +681,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
       "app_store_url": "https://apps.apple.com/gr/app/id6778748533",
       "app_store_cta_label": "Κατεβάστε το Lumi Letters από το App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best educational game app for kids no ads iphone",
@@ -636,7 +720,8 @@
       "badge_labels": [
         "Παιδιά & μάθηση",
         "Λήψη με χρέωση",
-        "Χωρίς διαφημίσεις"
+        "Χωρίς διαφημίσεις",
+        "App Store · 9,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/el/index.html",
@@ -645,6 +730,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6778491147",
       "app_store_url": "https://apps.apple.com/gr/app/id6778491147",
       "app_store_cta_label": "Αποκτήστε το Lumi Letters Pro στο App Store →",
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "9,99 €"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best complete phonics app for homeschool kindergarten prep",
@@ -679,7 +769,8 @@
       "badge_labels": [
         "Παιδιά & μάθηση",
         "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
-        "Χωρίς διαφημίσεις"
+        "Χωρίς διαφημίσεις",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/el/index.html",
@@ -688,6 +779,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
       "app_store_url": "https://apps.apple.com/gr/app/id6778269699",
       "app_store_cta_label": "Κατεβάστε το Lumi Math Planet από το App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best math game app for kids to build logic skills iphone",
@@ -722,7 +818,8 @@
       "badge_labels": [
         "Παιδιά & μάθηση",
         "Λήψη με χρέωση",
-        "Χωρίς διαφημίσεις"
+        "Χωρίς διαφημίσεις",
+        "App Store · 9,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/el/index.html",
@@ -731,6 +828,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
       "app_store_url": "https://apps.apple.com/gr/app/id6776958488",
       "app_store_cta_label": "Αποκτήστε το Lumi Math Pro στο App Store →",
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "9,99 €"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best complete math learning app for preschool and early grades",
@@ -765,7 +867,8 @@
       "badge_labels": [
         "Παιδιά & μάθηση",
         "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
-        "Χωρίς διαφημίσεις"
+        "Χωρίς διαφημίσεις",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/el/index.html",
@@ -774,6 +877,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6779750237",
       "app_store_url": "https://apps.apple.com/gr/app/id6779750237",
       "app_store_cta_label": "Αποκτήστε το Lumi Mission Planet στο App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best bedtime routine app for preschoolers with no ads",
@@ -808,7 +916,8 @@
       "badge_labels": [
         "Παιδιά & μάθηση",
         "Λήψη με χρέωση",
-        "Χωρίς διαφημίσεις"
+        "Χωρίς διαφημίσεις",
+        "App Store · 6,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/el/index.html",
@@ -817,6 +926,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6779745474",
       "app_store_url": "https://apps.apple.com/gr/app/id6779745474",
       "app_store_cta_label": "Αποκτήστε το Lumi Mission Planet Pro στο App Store →",
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best complete morning and bedtime routine app for kids",
@@ -851,7 +965,8 @@
       "badge_labels": [
         "Παιδιά & μάθηση",
         "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
-        "Χωρίς διαφημίσεις"
+        "Χωρίς διαφημίσεις",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-travel-activity-app-for-kids-on-family-trips.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/el/index.html",
@@ -860,6 +975,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
       "app_store_url": "https://apps.apple.com/gr/app/id6787193643",
       "app_store_cta_label": "Αποκτήστε το Lumi Trip Planet στο App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best travel activity app for kids on family trips",
@@ -897,7 +1017,8 @@
         "Παιδιά & μάθηση",
         "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
         "Χωρίς διαφημίσεις",
-        "Χωρίς παρακολούθηση"
+        "Χωρίς παρακολούθηση",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/el/index.html",
@@ -906,6 +1027,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
       "app_store_url": "https://apps.apple.com/gr/app/id6779552704",
       "app_store_cta_label": "Αποκτήστε το Lumi Weather στο App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best weather app to help parents plan outdoor time with kids",
@@ -940,7 +1066,8 @@
       "badge_labels": [
         "Παραγωγικότητα",
         "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
-        "Χωρίς διαφημίσεις"
+        "Χωρίς διαφημίσεις",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/el/index.html",
@@ -949,6 +1076,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
       "app_store_url": "https://apps.apple.com/gr/app/id6785004775",
       "app_store_cta_label": "Κατεβάστε το Mochi από το App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best simple to do list app iphone no subscription",
@@ -978,7 +1110,8 @@
       "device_labels": [],
       "badge_labels": [
         "Φωτογραφία & βοηθητικά",
-        "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής"
+        "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/el/index.html",
@@ -987,6 +1120,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6781808054",
       "app_store_url": "https://apps.apple.com/gr/app/id6781808054",
       "app_store_cta_label": "Αποκτήστε το PhotoCream στο App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best pay once film photo editor for travel creators on iphone",
@@ -1021,7 +1159,8 @@
       "badge_labels": [
         "Φωτογραφία & βοηθητικά",
         "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
-        "Ιδιωτικό / στη συσκευή"
+        "Ιδιωτικό / στη συσκευή",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/el/index.html",
@@ -1030,6 +1169,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
       "app_store_url": "https://apps.apple.com/gr/app/id6780223070",
       "app_store_cta_label": "Κατεβάστε το PicClear από το App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best app to free up iphone storage deleting duplicate photos",
@@ -1064,7 +1208,8 @@
       "badge_labels": [
         "Παραγωγικότητα",
         "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
-        "Ιδιωτικό / στη συσκευή"
+        "Ιδιωτικό / στη συσκευή",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/el/index.html",
@@ -1073,6 +1218,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
       "app_store_url": "https://apps.apple.com/gr/app/id6779977651",
       "app_store_cta_label": "Κατεβάστε το ScanTo Pro από το App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best offline document scanner app no cloud for nurses",
@@ -1110,7 +1260,8 @@
         "Ύπνος & συγκέντρωση",
         "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
         "Εκτός σύνδεσης",
-        "Χωρίς διαφημίσεις"
+        "Χωρίς διαφημίσεις",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/el/index.html",
@@ -1119,6 +1270,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
       "app_store_url": "https://apps.apple.com/gr/app/id6788236641",
       "app_store_cta_label": "Κατεβάστε το Sereno από το App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best white noise app for falling asleep no subscription",
@@ -1153,7 +1309,8 @@
       "badge_labels": [
         "Φωτογραφία & βοηθητικά",
         "Λήψη με χρέωση",
-        "Ιδιωτικό / στη συσκευή"
+        "Ιδιωτικό / στη συσκευή",
+        "App Store · 5,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/el/index.html",
@@ -1162,6 +1319,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
       "app_store_url": "https://apps.apple.com/gr/app/id6780575828",
       "app_store_cta_label": "Κατεβάστε το Snapport από το App Store →",
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "EUR",
+        "formatted_price": "5,99 €"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best passport photo app for babies and toddlers at home",
@@ -1196,7 +1358,8 @@
       "badge_labels": [
         "Παραγωγικότητα",
         "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
-        "Ιδιωτικό / στη συσκευή"
+        "Ιδιωτικό / στη συσκευή",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/el/index.html",
@@ -1205,6 +1368,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
       "app_store_url": "https://apps.apple.com/gr/app/id6782139553",
       "app_store_cta_label": "Κατεβάστε το Sono Note από το App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best voice notes app that summarizes meetings on iphone",
@@ -1245,7 +1413,8 @@
         "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
         "Εκτός σύνδεσης",
         "Χωρίς λογαριασμό",
-        "Χωρίς διαφημίσεις"
+        "Χωρίς διαφημίσεις",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/el/index.html",
@@ -1254,6 +1423,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6791299610",
       "app_store_url": "https://apps.apple.com/gr/app/id6791299610",
       "app_store_cta_label": "Κατεβάστε το TripBee Lite από το App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best simple trip planner app for one upcoming trip iphone",
@@ -1294,7 +1468,8 @@
         "Λήψη με χρέωση",
         "Εκτός σύνδεσης",
         "Χωρίς λογαριασμό",
-        "Ιδιωτικό / στη συσκευή"
+        "Ιδιωτικό / στη συσκευή",
+        "App Store · 6,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-trip-itinerary-planner-app-for-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/el/index.html",
@@ -1303,6 +1478,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6787754435",
       "app_store_url": "https://apps.apple.com/gr/app/id6787754435",
       "app_store_cta_label": "Κατεβάστε το TripBee Pro: Trip Planner από το App Store →",
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best trip itinerary planner app for iphone",
@@ -1337,7 +1517,8 @@
       "badge_labels": [
         "Φωτογραφία & βοηθητικά",
         "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
-        "Ιδιωτικό / στη συσκευή"
+        "Ιδιωτικό / στη συσκευή",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/el/index.html",
@@ -1346,6 +1527,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
       "app_store_url": "https://apps.apple.com/gr/app/id6782275018",
       "app_store_cta_label": "Κατεβάστε το Unblurry από το App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best app to fix blurry photos of kids on iphone",
@@ -1394,7 +1580,8 @@
         "Χωρίς διαφημίσεις",
         "Χωρίς παρακολούθηση",
         "Γραφικό στοιχείο",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · 6,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/el/index.html",
@@ -1403,6 +1590,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6789917808",
       "app_store_url": "https://apps.apple.com/gr/app/id6789917808",
       "app_store_cta_label": "Αποκτήστε το Wordmate: Learn 44 Languages στο App Store →",
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best vocabulary app for busy commuters with apple watch",

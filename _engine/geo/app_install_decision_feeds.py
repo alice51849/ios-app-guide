@@ -236,7 +236,62 @@ def _content_html(record: dict[str, Any]) -> str:
     cta = html.escape(
         _single_line(record["app_store_cta_label"], "App Store CTA")
     )
-    return f'<p>{context}</p><p><a href="{store_url}">{cta}</a></p>'
+    storefront = ""
+    storefront_facts = record.get("storefront_facts")
+    if isinstance(storefront_facts, dict):
+        labels = [
+            "App Store",
+            html.escape(
+                _single_line(
+                    storefront_facts["formatted_price"],
+                    "formatted App Store price",
+                )
+            ),
+        ]
+        if (
+            "rating_value" in storefront_facts
+            and "rating_count" in storefront_facts
+        ):
+            labels.append(
+                "\u2605 "
+                f"{float(storefront_facts['rating_value']):.1f}/5 "
+                "\u00b7 "
+                f"{int(storefront_facts['rating_count'])}"
+            )
+        storefront = f"<p>{' \u00b7 '.join(labels)}</p>"
+    return (
+        f"<p>{context}</p>{storefront}"
+        f'<p><a href="{store_url}">{cta}</a></p>'
+    )
+
+
+def _content_text(record: dict[str, Any]) -> str:
+    parts = [str(record["decision_context"])]
+    storefront_facts = record.get("storefront_facts")
+    if isinstance(storefront_facts, dict):
+        parts.extend(
+            (
+                "App Store",
+                _single_line(
+                    storefront_facts["formatted_price"],
+                    "formatted App Store price",
+                ),
+            )
+        )
+        if (
+            "rating_value" in storefront_facts
+            and "rating_count" in storefront_facts
+        ):
+            parts.append(
+                "\u2605 "
+                f"{float(storefront_facts['rating_value']):.1f}/5 "
+                "\u00b7 "
+                f"{int(storefront_facts['rating_count'])}"
+            )
+    parts.append(
+        f"{record['app_store_cta_label']}: {record['app_store_url']}"
+    )
+    return " \u00b7 ".join(parts)
 
 
 def _group_records(
@@ -454,11 +509,7 @@ def render_json_feed(
                 "external_url": str(record["app_store_url"]),
                 "title": str(record["publisher_query"]),
                 "content_html": _content_html(record),
-                "content_text": (
-                    f"{record['decision_context']} "
-                    f"{record['app_store_cta_label']}: "
-                    f"{record['app_store_url']}"
-                ),
+                "content_text": _content_text(record),
                 "summary": str(record["decision_context"]),
                 "date_modified": state["date_modified"],
                 "tags": list(

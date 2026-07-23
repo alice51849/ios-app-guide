@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "zh-Hans",
   "dateModified": "2026-07-23",
-  "content_digest": "11ce2b8e01ab33f68f99f8640b83cc317a81adad8af69970822dc870b657ef11",
-  "generation_digest": "ff7bd574135f7c3b68c8c96177c3ba1a0671b8c11847d9644c48566647d24092",
+  "content_digest": "a37c734f4f3acc1c69c25be0c1e1bea42ecb46ebff08eeeaa69fe21ba259b766",
+  "generation_digest": "2f38ec261b2999f93aa8466786825fb14af4877cbe4aad1f84eb74eac9c5d93b",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -42,7 +42,8 @@
       "badge_labels": [
         "更多",
         "免费开始使用 · 永久解锁",
-        "私密 / 设备本地"
+        "私密 / 设备本地",
+        "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/maskmyfile.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/zh-Hans/index.html",
@@ -51,6 +52,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
       "app_store_url": "https://apps.apple.com/cn/app/id6792850916",
       "app_store_cta_label": "在 App Store 获取 Mask My File",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。",
       "source_persona_query": "best on-device file redaction app for freelancers sharing client documents",
@@ -80,7 +86,8 @@
       "device_labels": [],
       "badge_labels": [
         "更多",
-        "付费下载"
+        "付费下载",
+        "App Store · ¥38.00"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/wifiaid.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/zh-Hans/index.html",
@@ -89,6 +96,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
       "app_store_url": "https://apps.apple.com/cn/app/id6790467886",
       "app_store_cta_label": "在 App Store 获取 WiFi Aid",
+      "storefront_facts": {
+        "price": "38",
+        "currency": "CNY",
+        "formatted_price": "¥38.00"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。",
       "source_persona_query": "best wifi troubleshooting app for remote workers with connected but no internet",
@@ -118,7 +130,8 @@
       "device_labels": [],
       "badge_labels": [
         "生活方式",
-        "免费开始使用 · 永久解锁"
+        "免费开始使用 · 永久解锁",
+        "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/zh-Hans/index.html",
@@ -127,6 +140,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
       "app_store_url": "https://apps.apple.com/cn/app/id6790800323",
       "app_store_cta_label": "在 App Store 获取 Mochi DoneStamp：上次何时",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。",
       "source_persona_query": "best last time tracker app for household maintenance without a subscription",
@@ -156,7 +174,8 @@
       "device_labels": [],
       "badge_labels": [
         "教育",
-        "免费开始使用 · 永久解锁"
+        "免费开始使用 · 永久解锁",
+        "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aim990/decision/l/zh-Hans/index.html",
@@ -165,6 +184,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
       "app_store_url": "https://apps.apple.com/cn/app/id6784974530",
       "app_store_cta_label": "在 App Store 获取 Aim990 →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best toeic prep app offline study plan for iphone",
@@ -199,7 +223,8 @@
       "badge_labels": [
         "教育",
         "付费下载",
-        "离线"
+        "离线",
+        "App Store · ¥38.00"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/aim990plus.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/zh-Hans/index.html",
@@ -208,6 +233,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
       "app_store_url": "https://apps.apple.com/cn/app/id6792483140",
       "app_store_cta_label": "在 App Store 获取 Aim990 Plus",
+      "storefront_facts": {
+        "price": "38",
+        "currency": "CNY",
+        "formatted_price": "¥38.00"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。",
       "source_persona_query": "best offline English listening and reading exam trainer for iPhone",
@@ -237,7 +267,8 @@
       "device_labels": [],
       "badge_labels": [
         "效率",
-        "免费开始使用 · 永久解锁"
+        "免费开始使用 · 永久解锁",
+        "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-resume-builder-app-for-career-changers-2026.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/zh-Hans/index.html",
@@ -246,6 +277,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
       "app_store_url": "https://apps.apple.com/cn/app/id6781337213",
       "app_store_cta_label": "在 App Store 获取 CV Desk →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best resume builder app for career changers 2026",
@@ -280,7 +316,8 @@
       "badge_labels": [
         "健康",
         "免费开始使用 · 永久解锁",
-        "私密 / 设备本地"
+        "私密 / 设备本地",
+        "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-period-tracker-app-no-account-required-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/zh-Hans/index.html",
@@ -289,6 +326,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
       "app_store_url": "https://apps.apple.com/cn/app/id6782251621",
       "app_store_cta_label": "在 App Store 获取 Cyca →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best period tracker app no account required iphone",
@@ -326,7 +368,8 @@
         "教育",
         "付费下载",
         "小组件",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · ¥88.00"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/zh-Hans/index.html",
@@ -335,6 +378,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
       "app_store_url": "https://apps.apple.com/cn/app/id6790418321",
       "app_store_cta_label": "在 App Store 获取 DailyMate →",
+      "storefront_facts": {
+        "price": "88",
+        "currency": "CNY",
+        "formatted_price": "¥88.00"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best practical language phrase app for travelers with apple watch",
@@ -372,7 +420,8 @@
         "理财与出行",
         "付费下载",
         "离线",
-        "无需账户"
+        "无需账户",
+        "App Store · ¥38.00"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/zh-Hans/index.html",
@@ -381,6 +430,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
       "app_store_url": "https://apps.apple.com/cn/app/id6755782939",
       "app_store_cta_label": "在 App Store 获取 G+Money →",
+      "storefront_facts": {
+        "price": "38",
+        "currency": "CNY",
+        "formatted_price": "¥38.00"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best travel budget tracker app no subscription iphone",
@@ -418,7 +472,8 @@
         "理财与出行",
         "付费下载",
         "无跟踪",
-        "私密 / 设备本地"
+        "私密 / 设备本地",
+        "App Store · ¥38.00"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/zh-Hans/index.html",
@@ -427,6 +482,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
       "app_store_url": "https://apps.apple.com/cn/app/id6754218117",
       "app_store_cta_label": "在 App Store 获取 HoursTag →",
+      "storefront_facts": {
+        "price": "38",
+        "currency": "CNY",
+        "formatted_price": "¥38.00"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best mindful spending app to stop impulse buying iphone",
@@ -464,7 +524,8 @@
         "效率",
         "免费开始使用 · 永久解锁",
         "无广告",
-        "私密 / 设备本地"
+        "私密 / 设备本地",
+        "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-app-to-block-social-media-while-studying-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/zh-Hans/index.html",
@@ -473,6 +534,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6780107485",
       "app_store_url": "https://apps.apple.com/cn/app/id6780107485",
       "app_store_cta_label": "在 App Store 获取 LockHour Pro →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best app to block social media while studying iphone",
@@ -516,6 +582,7 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6773017109",
       "app_store_url": "https://apps.apple.com/app/id6773017109",
       "app_store_cta_label": "在 App Store 获取 Lumi Bopomofo →",
+      "storefront_facts": null,
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best bopomofo app for kids to learn zhuyin on iphone",
@@ -559,6 +626,7 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
       "app_store_url": "https://apps.apple.com/app/id6775773117",
       "app_store_cta_label": "在App Store获取Lumi Bopomofo Pro →",
+      "storefront_facts": null,
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best complete zhuyin app for bilingual children",
@@ -602,6 +670,7 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
       "app_store_url": "https://apps.apple.com/app/id6778748533",
       "app_store_cta_label": "在 App Store 获取 Lumi Letters →",
+      "storefront_facts": null,
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best educational game app for kids no ads iphone",
@@ -645,6 +714,7 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6778491147",
       "app_store_url": "https://apps.apple.com/app/id6778491147",
       "app_store_cta_label": "在App Store获取Lumi Letters Pro →",
+      "storefront_facts": null,
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best complete phonics app for homeschool kindergarten prep",
@@ -688,6 +758,7 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
       "app_store_url": "https://apps.apple.com/app/id6778269699",
       "app_store_cta_label": "在 App Store 获取 Lumi Math Planet →",
+      "storefront_facts": null,
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best math game app for kids to build logic skills iphone",
@@ -731,6 +802,7 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
       "app_store_url": "https://apps.apple.com/app/id6776958488",
       "app_store_cta_label": "在App Store获取Lumi Math Pro →",
+      "storefront_facts": null,
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best complete math learning app for preschool and early grades",
@@ -765,7 +837,8 @@
       "badge_labels": [
         "儿童与学习",
         "免费开始使用 · 永久解锁",
-        "无广告"
+        "无广告",
+        "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/zh-Hans/index.html",
@@ -774,6 +847,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6779750237",
       "app_store_url": "https://apps.apple.com/cn/app/id6779750237",
       "app_store_cta_label": "在App Store获取Lumi Mission Planet →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best bedtime routine app for preschoolers with no ads",
@@ -808,7 +886,8 @@
       "badge_labels": [
         "儿童与学习",
         "付费下载",
-        "无广告"
+        "无广告",
+        "App Store · ¥38.00"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/zh-Hans/index.html",
@@ -817,6 +896,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6779745474",
       "app_store_url": "https://apps.apple.com/cn/app/id6779745474",
       "app_store_cta_label": "在App Store获取Lumi Mission Planet Pro →",
+      "storefront_facts": {
+        "price": "38",
+        "currency": "CNY",
+        "formatted_price": "¥38.00"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best complete morning and bedtime routine app for kids",
@@ -860,6 +944,7 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
       "app_store_url": "https://apps.apple.com/app/id6787193643",
       "app_store_cta_label": "在App Store获取Lumi Trip Planet →",
+      "storefront_facts": null,
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best travel activity app for kids on family trips",
@@ -897,7 +982,8 @@
         "儿童与学习",
         "免费开始使用 · 永久解锁",
         "无广告",
-        "无跟踪"
+        "无跟踪",
+        "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/zh-Hans/index.html",
@@ -906,6 +992,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
       "app_store_url": "https://apps.apple.com/cn/app/id6779552704",
       "app_store_cta_label": "在App Store获取Lumi Weather →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best weather app to help parents plan outdoor time with kids",
@@ -940,7 +1031,8 @@
       "badge_labels": [
         "效率",
         "免费开始使用 · 永久解锁",
-        "无广告"
+        "无广告",
+        "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/zh-Hans/index.html",
@@ -949,6 +1041,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
       "app_store_url": "https://apps.apple.com/cn/app/id6785004775",
       "app_store_cta_label": "在 App Store 获取 Mochi →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best simple to do list app iphone no subscription",
@@ -978,7 +1075,8 @@
       "device_labels": [],
       "badge_labels": [
         "照片与工具",
-        "免费开始使用 · 永久解锁"
+        "免费开始使用 · 永久解锁",
+        "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/zh-Hans/index.html",
@@ -987,6 +1085,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6781808054",
       "app_store_url": "https://apps.apple.com/cn/app/id6781808054",
       "app_store_cta_label": "在App Store获取PhotoCream →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best pay once film photo editor for travel creators on iphone",
@@ -1021,7 +1124,8 @@
       "badge_labels": [
         "照片与工具",
         "免费开始使用 · 永久解锁",
-        "私密 / 设备本地"
+        "私密 / 设备本地",
+        "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/zh-Hans/index.html",
@@ -1030,6 +1134,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
       "app_store_url": "https://apps.apple.com/cn/app/id6780223070",
       "app_store_cta_label": "在 App Store 获取 PicClear →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best app to free up iphone storage deleting duplicate photos",
@@ -1064,7 +1173,8 @@
       "badge_labels": [
         "效率",
         "免费开始使用 · 永久解锁",
-        "私密 / 设备本地"
+        "私密 / 设备本地",
+        "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/zh-Hans/index.html",
@@ -1073,6 +1183,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
       "app_store_url": "https://apps.apple.com/cn/app/id6779977651",
       "app_store_cta_label": "在 App Store 获取 ScanTo Pro →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best offline document scanner app no cloud for nurses",
@@ -1110,7 +1225,8 @@
         "睡眠与专注",
         "免费开始使用 · 永久解锁",
         "离线",
-        "无广告"
+        "无广告",
+        "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/zh-Hans/index.html",
@@ -1119,6 +1235,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
       "app_store_url": "https://apps.apple.com/cn/app/id6788236641",
       "app_store_cta_label": "在App Store获取Sereno →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best white noise app for falling asleep no subscription",
@@ -1153,7 +1274,8 @@
       "badge_labels": [
         "照片与工具",
         "付费下载",
-        "私密 / 设备本地"
+        "私密 / 设备本地",
+        "App Store · ¥38.00"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/zh-Hans/index.html",
@@ -1162,6 +1284,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
       "app_store_url": "https://apps.apple.com/cn/app/id6780575828",
       "app_store_cta_label": "在App Store获取Snapport →",
+      "storefront_facts": {
+        "price": "38",
+        "currency": "CNY",
+        "formatted_price": "¥38.00"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best passport photo app for babies and toddlers at home",
@@ -1196,7 +1323,8 @@
       "badge_labels": [
         "效率",
         "免费开始使用 · 永久解锁",
-        "私密 / 设备本地"
+        "私密 / 设备本地",
+        "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/zh-Hans/index.html",
@@ -1205,6 +1333,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
       "app_store_url": "https://apps.apple.com/cn/app/id6782139553",
       "app_store_cta_label": "在App Store获取Sono Note →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best voice notes app that summarizes meetings on iphone",
@@ -1245,7 +1378,8 @@
         "免费开始使用 · 永久解锁",
         "离线",
         "无需账户",
-        "无广告"
+        "无广告",
+        "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/zh-Hans/index.html",
@@ -1254,6 +1388,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6791299610",
       "app_store_url": "https://apps.apple.com/cn/app/id6791299610",
       "app_store_cta_label": "在App Store获取TripBee Lite →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best simple trip planner app for one upcoming trip iphone",
@@ -1294,7 +1433,8 @@
         "付费下载",
         "离线",
         "无需账户",
-        "私密 / 设备本地"
+        "私密 / 设备本地",
+        "App Store · ¥38.00"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-trip-itinerary-planner-app-for-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/zh-Hans/index.html",
@@ -1303,6 +1443,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6787754435",
       "app_store_url": "https://apps.apple.com/cn/app/id6787754435",
       "app_store_cta_label": "在App Store获取TripBee Pro：旅行规划师 →",
+      "storefront_facts": {
+        "price": "38",
+        "currency": "CNY",
+        "formatted_price": "¥38.00"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best trip itinerary planner app for iphone",
@@ -1337,7 +1482,8 @@
       "badge_labels": [
         "照片与工具",
         "免费开始使用 · 永久解锁",
-        "私密 / 设备本地"
+        "私密 / 设备本地",
+        "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/zh-Hans/index.html",
@@ -1346,6 +1492,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
       "app_store_url": "https://apps.apple.com/cn/app/id6782275018",
       "app_store_cta_label": "在App Store获取Unblurry →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best app to fix blurry photos of kids on iphone",
@@ -1394,7 +1545,8 @@
         "无广告",
         "无跟踪",
         "小组件",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · ¥38.00"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/zh-Hans/index.html",
@@ -1403,6 +1555,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6789917808",
       "app_store_url": "https://apps.apple.com/cn/app/id6789917808",
       "app_store_cta_label": "在App Store获取Wordmate：学习44种语言 →",
+      "storefront_facts": {
+        "price": "38",
+        "currency": "CNY",
+        "formatted_price": "¥38.00"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。",
       "source_persona_query": "best vocabulary app for busy commuters with apple watch",

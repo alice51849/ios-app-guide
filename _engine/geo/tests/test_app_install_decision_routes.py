@@ -47,6 +47,9 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
         )
         cls.records = cls.payload["records"]
         cls.apps = publisher_intent_catalog.build_records(cls.pages)[1]
+        cls.storefront_details = (
+            app_store_storefronts.load_storefront_details(cls.pages)
+        )
         cls.by_locale = {
             locale: [
                 record for record in cls.records if record["locale"] == locale
@@ -109,6 +112,8 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
     def test_records_keep_direct_links_dedup_and_provenance(self) -> None:
         seen_ids: set[str] = set()
         seen_pages: set[str] = set()
+        verified_storefront_records = 0
+        verified_rating_records = 0
         for record in self.records:
             self.assertNotIn(record["record_id"], seen_ids)
             seen_ids.add(record["record_id"])
@@ -137,6 +142,58 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
                 len(record["badge_labels"]),
                 len(set(record["badge_labels"])),
             )
+            country = app_store_storefronts.LOCALE_STOREFRONTS[
+                record["locale"]
+            ]
+            expected_facts = self.storefront_details.get(country, {}).get(
+                record["app_store_id"]
+            )
+            if expected_facts is None:
+                self.assertIsNone(record["storefront_facts"])
+                continue
+            expected_facts = (
+                app_store_storefronts.localized_storefront_detail(
+                    expected_facts,
+                    record["locale"],
+                )
+            )
+            self.assertEqual(expected_facts, record["storefront_facts"])
+            self.assertTrue(
+                any(
+                    str(expected_facts["formatted_price"]) in label
+                    for label in record["badge_labels"]
+                )
+            )
+            structured = app_install_decision_routes._structured_data(record)
+            app_entity = structured["@graph"][0]
+            self.assertEqual(
+                str(expected_facts["price"]),
+                app_entity["offers"]["price"],
+            )
+            self.assertEqual(
+                str(expected_facts["currency"]),
+                app_entity["offers"]["priceCurrency"],
+            )
+            self.assertEqual(
+                record["app_store_url"],
+                app_entity["offers"]["url"],
+            )
+            verified_storefront_records += 1
+            if "rating_value" in expected_facts:
+                self.assertEqual(
+                    float(expected_facts["rating_value"]),
+                    app_entity["aggregateRating"]["ratingValue"],
+                )
+                self.assertEqual(
+                    int(expected_facts["rating_count"]),
+                    app_entity["aggregateRating"]["ratingCount"],
+                )
+                verified_rating_records += 1
+        self.assertGreater(
+            verified_storefront_records,
+            len(self.records) * 0.95,
+        )
+        self.assertGreater(verified_rating_records, 0)
 
     def test_kids_writing_copy_uses_native_practice_terms(self) -> None:
         expected = {
@@ -203,6 +260,11 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
             self.assertIn(record["canonical_guide_url"], source)
             self.assertIn('id="decision-record"', source)
             self.assertIn(record["app_store_cta_label"], source)
+            if record["storefront_facts"] is not None:
+                self.assertIn(
+                    str(record["storefront_facts"]["formatted_price"]),
+                    source,
+                )
             self.assertIn(
                 f'<meta name="twitter:app:id:iphone" '
                 f'content="{record["app_store_id"]}">',

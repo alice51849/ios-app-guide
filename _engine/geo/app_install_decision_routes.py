@@ -15,6 +15,7 @@ from typing import Any
 from urllib.parse import urlsplit
 
 import app_install_decision_feeds
+import app_store_storefronts
 from family_travel_dataset import write_text_if_changed
 from gen_feed import feed_discovery_links
 import gen_mobile_app_identity
@@ -195,10 +196,38 @@ def _record(
     pages: Path,
     intent: dict[str, Any],
     app: dict[str, Any],
+    storefront_details: dict[str, dict[str, dict[str, object]]],
 ) -> dict[str, Any]:
     locale = str(intent["locale"])
     key = str(intent["app_key"])
     badge_labels = _badge_labels(app, locale)
+    app_store_id = str(intent["app_store_id"])
+    country = app_store_storefronts.LOCALE_STOREFRONTS[locale]
+    raw_storefront_facts = storefront_details.get(country, {}).get(
+        app_store_id
+    )
+    storefront_facts = (
+        app_store_storefronts.localized_storefront_detail(
+            raw_storefront_facts,
+            locale,
+        )
+        if raw_storefront_facts is not None
+        else None
+    )
+    if storefront_facts is not None:
+        badge_labels.append(
+            f"App Store \u00b7 {storefront_facts['formatted_price']}"
+        )
+        if (
+            "rating_value" in storefront_facts
+            and "rating_count" in storefront_facts
+        ):
+            badge_labels.append(
+                "\u2605 "
+                f"{float(storefront_facts['rating_value']):.1f}/5 "
+                "\u00b7 "
+                f"{int(storefront_facts['rating_count'])}"
+            )
     guide_url = str(intent["canonical_guide_url"])
     source_surface = _source_surface(guide_url)
     decision_context = str(intent["decision_context"])
@@ -247,10 +276,11 @@ def _record(
         "canonical_guide_url": guide_url,
         "decision_page_url": decision_page_url(key, locale),
         "locale_index_url": locale_index_url(locale),
-        "app_store_id": str(intent["app_store_id"]),
+        "app_store_id": app_store_id,
         "canonical_app_store_url": str(intent["canonical_app_store_url"]),
         "app_store_url": str(intent["app_store_url"]),
         "app_store_cta_label": str(intent["app_store_cta_label"]),
+        "storefront_facts": storefront_facts,
         "guide_cta_label": str(portfolio_app_finder.UI[locale]["guide"]),
         "publisher_disclosure": str(intent["publisher_disclosure"]),
         "source_persona_query": str(intent["source_persona_query"]),
@@ -267,6 +297,7 @@ def _record(
 
 def build_records(pages: Path = PAGES) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     intents, apps = publisher_intent_catalog.build_records(pages)
+    storefront_details = app_store_storefronts.load_storefront_details(pages)
     app_keys = sorted(
         apps,
         key=lambda key: _priority_key(apps[key]),
@@ -286,7 +317,12 @@ def build_records(pages: Path = PAGES) -> tuple[list[dict[str, Any]], dict[str, 
             f"extra={len(set(by_pair) - expected_pairs)}"
         )
     records = [
-        _record(pages, by_pair[(locale, key)], apps[key])
+        _record(
+            pages,
+            by_pair[(locale, key)],
+            apps[key],
+            storefront_details,
+        )
         for locale in OFFICIAL_LOCALES
         for key in app_keys
     ]
@@ -503,6 +539,7 @@ def _schema_payload(apps: dict[str, Any]) -> dict[str, Any]:
                     "canonical_app_store_url",
                     "app_store_url",
                     "app_store_cta_label",
+                    "storefront_facts",
                     "guide_cta_label",
                     "publisher_disclosure",
                     "source_persona_query",
@@ -593,6 +630,38 @@ def _schema_payload(apps: dict[str, Any]) -> dict[str, Any]:
                     "app_store_cta_label": {
                         "type": "string",
                         "minLength": 3,
+                    },
+                    "storefront_facts": {
+                        "type": ["object", "null"],
+                        "additionalProperties": False,
+                        "required": [
+                            "price",
+                            "currency",
+                            "formatted_price",
+                        ],
+                        "properties": {
+                            "price": {
+                                "type": "string",
+                                "pattern": r"^\d+(?:\.\d+)?$",
+                            },
+                            "currency": {
+                                "type": "string",
+                                "pattern": r"^[A-Z]{3}$",
+                            },
+                            "formatted_price": {
+                                "type": "string",
+                                "minLength": 1,
+                            },
+                            "rating_value": {
+                                "type": "number",
+                                "minimum": 0,
+                                "maximum": 5,
+                            },
+                            "rating_count": {
+                                "type": "integer",
+                                "minimum": 1,
+                            },
+                        },
                     },
                     "guide_cta_label": {
                         "type": "string",
@@ -747,6 +816,26 @@ def _structured_data(record: dict[str, Any]) -> dict[str, Any]:
         "@type": "InstallAction",
         "target": str(record["app_store_url"]),
     }
+    storefront_facts = record.get("storefront_facts")
+    if isinstance(storefront_facts, dict):
+        app["offers"] = {
+            "@type": "Offer",
+            "price": str(storefront_facts["price"]),
+            "priceCurrency": str(storefront_facts["currency"]),
+            "url": str(record["app_store_url"]),
+            "availability": "https://schema.org/InStock",
+        }
+        if (
+            "rating_value" in storefront_facts
+            and "rating_count" in storefront_facts
+        ):
+            app["aggregateRating"] = {
+                "@type": "AggregateRating",
+                "ratingValue": float(storefront_facts["rating_value"]),
+                "ratingCount": int(storefront_facts["rating_count"]),
+                "bestRating": 5,
+                "worstRating": 1,
+            }
     app["additionalProperty"] = [
         {
             "@type": "PropertyValue",

@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "zh-Hant",
   "dateModified": "2026-07-23",
-  "content_digest": "11ce2b8e01ab33f68f99f8640b83cc317a81adad8af69970822dc870b657ef11",
-  "generation_digest": "ff7bd574135f7c3b68c8c96177c3ba1a0671b8c11847d9644c48566647d24092",
+  "content_digest": "a37c734f4f3acc1c69c25be0c1e1bea42ecb46ebff08eeeaa69fe21ba259b766",
+  "generation_digest": "2f38ec261b2999f93aa8466786825fb14af4877cbe4aad1f84eb74eac9c5d93b",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -42,7 +42,8 @@
       "badge_labels": [
         "更多",
         "免費開始 · 永久解鎖",
-        "隱私優先／裝置端"
+        "隱私優先／裝置端",
+        "App Store · 免費"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/maskmyfile.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/zh-Hant/index.html",
@@ -51,6 +52,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
       "app_store_url": "https://apps.apple.com/tw/app/id6792850916",
       "app_store_cta_label": "在 App Store 取得 Mask My File",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費"
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
       "source_persona_query": "best on-device file redaction app for freelancers sharing client documents",
@@ -80,7 +86,8 @@
       "device_labels": [],
       "badge_labels": [
         "更多",
-        "付費下載"
+        "付費下載",
+        "App Store · $190.00"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/wifiaid.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/zh-Hant/index.html",
@@ -89,6 +96,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
       "app_store_url": "https://apps.apple.com/tw/app/id6790467886",
       "app_store_cta_label": "在 App Store 取得 WiFi Aid",
+      "storefront_facts": {
+        "price": "190",
+        "currency": "TWD",
+        "formatted_price": "$190.00"
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
       "source_persona_query": "best wifi troubleshooting app for remote workers with connected but no internet",
@@ -118,7 +130,8 @@
       "device_labels": [],
       "badge_labels": [
         "生活",
-        "免費開始 · 永久解鎖"
+        "免費開始 · 永久解鎖",
+        "App Store · 免費"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/zh-Hant/index.html",
@@ -127,6 +140,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
       "app_store_url": "https://apps.apple.com/tw/app/id6790800323",
       "app_store_cta_label": "在 App Store 取得 Mochi DoneStamp：上次何時",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費"
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
       "source_persona_query": "best last time tracker app for household maintenance without a subscription",
@@ -156,7 +174,9 @@
       "device_labels": [],
       "badge_labels": [
         "學習",
-        "免費開始 · 永久解鎖"
+        "免費開始 · 永久解鎖",
+        "App Store · 免費",
+        "★ 5.0/5 · 2"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aim990/decision/l/zh-Hant/index.html",
@@ -165,6 +185,13 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
       "app_store_url": "https://apps.apple.com/tw/app/id6784974530",
       "app_store_cta_label": "在 App Store 取得 Aim990 →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 2
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best toeic prep app offline study plan for iphone",
@@ -199,7 +226,8 @@
       "badge_labels": [
         "學習",
         "付費下載",
-        "離線使用"
+        "離線使用",
+        "App Store · $190.00"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/aim990plus.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/zh-Hant/index.html",
@@ -208,6 +236,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
       "app_store_url": "https://apps.apple.com/tw/app/id6792483140",
       "app_store_cta_label": "在 App Store 取得 Aim990 Plus",
+      "storefront_facts": {
+        "price": "190",
+        "currency": "TWD",
+        "formatted_price": "$190.00"
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
       "source_persona_query": "best offline English listening and reading exam trainer for iPhone",
@@ -237,7 +270,9 @@
       "device_labels": [],
       "badge_labels": [
         "效率工具",
-        "免費開始 · 永久解鎖"
+        "免費開始 · 永久解鎖",
+        "App Store · 免費",
+        "★ 5.0/5 · 2"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-resume-builder-app-for-career-changers-2026.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/zh-Hant/index.html",
@@ -246,6 +281,13 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
       "app_store_url": "https://apps.apple.com/tw/app/id6781337213",
       "app_store_cta_label": "在 App Store 取得 CV Desk →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 2
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best resume builder app for career changers 2026",
@@ -280,7 +322,9 @@
       "badge_labels": [
         "健康",
         "免費開始 · 永久解鎖",
-        "隱私優先／裝置端"
+        "隱私優先／裝置端",
+        "App Store · 免費",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-period-tracker-app-no-account-required-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/zh-Hant/index.html",
@@ -289,6 +333,13 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
       "app_store_url": "https://apps.apple.com/tw/app/id6782251621",
       "app_store_cta_label": "在 App Store 取得 Cyca →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best period tracker app no account required iphone",
@@ -326,7 +377,8 @@
         "學習",
         "付費下載",
         "主畫面小工具",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · $390.00"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/zh-Hant/index.html",
@@ -335,6 +387,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
       "app_store_url": "https://apps.apple.com/tw/app/id6790418321",
       "app_store_cta_label": "前往 App Store 下載 DailyMate →",
+      "storefront_facts": {
+        "price": "390",
+        "currency": "TWD",
+        "formatted_price": "$390.00"
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best practical language phrase app for travelers with apple watch",
@@ -372,7 +429,9 @@
         "理財與旅行",
         "付費下載",
         "離線使用",
-        "免帳號"
+        "免帳號",
+        "App Store · $150.00",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/zh-Hant/index.html",
@@ -381,6 +440,13 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
       "app_store_url": "https://apps.apple.com/tw/app/id6755782939",
       "app_store_cta_label": "在 App Store 取得 G+Money →",
+      "storefront_facts": {
+        "price": "150",
+        "currency": "TWD",
+        "formatted_price": "$150.00",
+        "rating_value": 5.0,
+        "rating_count": 1
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best travel budget tracker app no subscription iphone",
@@ -418,7 +484,9 @@
         "理財與旅行",
         "付費下載",
         "無追蹤",
-        "隱私優先／裝置端"
+        "隱私優先／裝置端",
+        "App Store · $150.00",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/zh-Hant/index.html",
@@ -427,6 +495,13 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
       "app_store_url": "https://apps.apple.com/tw/app/id6754218117",
       "app_store_cta_label": "在 App Store 取得 HoursTag →",
+      "storefront_facts": {
+        "price": "150",
+        "currency": "TWD",
+        "formatted_price": "$150.00",
+        "rating_value": 5.0,
+        "rating_count": 1
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best mindful spending app to stop impulse buying iphone",
@@ -464,7 +539,9 @@
         "效率工具",
         "免費開始 · 永久解鎖",
         "無廣告",
-        "隱私優先／裝置端"
+        "隱私優先／裝置端",
+        "App Store · 免費",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-app-to-block-social-media-while-studying-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/zh-Hant/index.html",
@@ -473,6 +550,13 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6780107485",
       "app_store_url": "https://apps.apple.com/tw/app/id6780107485",
       "app_store_cta_label": "在 App Store 取得 LockHour Pro →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best app to block social media while studying iphone",
@@ -507,7 +591,9 @@
       "badge_labels": [
         "兒童與學習",
         "免費開始 · 永久解鎖",
-        "無廣告"
+        "無廣告",
+        "App Store · 免費",
+        "★ 5.0/5 · 3"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/zh-Hant/index.html",
@@ -516,6 +602,13 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6773017109",
       "app_store_url": "https://apps.apple.com/tw/app/id6773017109",
       "app_store_cta_label": "在 App Store 取得 Lumi Bopomofo →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 3
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best bopomofo app for kids to learn zhuyin on iphone",
@@ -550,7 +643,9 @@
       "badge_labels": [
         "兒童與學習",
         "付費下載",
-        "無廣告"
+        "無廣告",
+        "App Store · $290.00",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-complete-zhuyin-app-for-bilingual-children.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/zh-Hant/index.html",
@@ -559,6 +654,13 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
       "app_store_url": "https://apps.apple.com/tw/app/id6775773117",
       "app_store_cta_label": "在 App Store 取得 Lumi Bopomofo Pro →",
+      "storefront_facts": {
+        "price": "290",
+        "currency": "TWD",
+        "formatted_price": "$290.00",
+        "rating_value": 5.0,
+        "rating_count": 1
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best complete zhuyin app for bilingual children",
@@ -593,7 +695,8 @@
       "badge_labels": [
         "兒童與學習",
         "免費開始 · 永久解鎖",
-        "無廣告"
+        "無廣告",
+        "App Store · 免費"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-educational-game-app-for-kids-no-ads-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/zh-Hant/index.html",
@@ -602,6 +705,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
       "app_store_url": "https://apps.apple.com/tw/app/id6778748533",
       "app_store_cta_label": "在 App Store 取得 Lumi Letters →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費"
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best educational game app for kids no ads iphone",
@@ -636,7 +744,8 @@
       "badge_labels": [
         "兒童與學習",
         "付費下載",
-        "無廣告"
+        "無廣告",
+        "App Store · $290.00"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/zh-Hant/index.html",
@@ -645,6 +754,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6778491147",
       "app_store_url": "https://apps.apple.com/tw/app/id6778491147",
       "app_store_cta_label": "在 App Store 取得 Lumi Letters Pro →",
+      "storefront_facts": {
+        "price": "290",
+        "currency": "TWD",
+        "formatted_price": "$290.00"
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best complete phonics app for homeschool kindergarten prep",
@@ -679,7 +793,9 @@
       "badge_labels": [
         "兒童與學習",
         "免費開始 · 永久解鎖",
-        "無廣告"
+        "無廣告",
+        "App Store · 免費",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/zh-Hant/index.html",
@@ -688,6 +804,13 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
       "app_store_url": "https://apps.apple.com/tw/app/id6778269699",
       "app_store_cta_label": "在 App Store 取得 Lumi Math Planet →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best math game app for kids to build logic skills iphone",
@@ -722,7 +845,9 @@
       "badge_labels": [
         "兒童與學習",
         "付費下載",
-        "無廣告"
+        "無廣告",
+        "App Store · $290.00",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/zh-Hant/index.html",
@@ -731,6 +856,13 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
       "app_store_url": "https://apps.apple.com/tw/app/id6776958488",
       "app_store_cta_label": "在 App Store 取得 Lumi Math Pro →",
+      "storefront_facts": {
+        "price": "290",
+        "currency": "TWD",
+        "formatted_price": "$290.00",
+        "rating_value": 5.0,
+        "rating_count": 1
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best complete math learning app for preschool and early grades",
@@ -765,7 +897,9 @@
       "badge_labels": [
         "兒童與學習",
         "免費開始 · 永久解鎖",
-        "無廣告"
+        "無廣告",
+        "App Store · 免費",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/zh-Hant/index.html",
@@ -774,6 +908,13 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6779750237",
       "app_store_url": "https://apps.apple.com/tw/app/id6779750237",
       "app_store_cta_label": "在App Store取得Lumi Mission Planet →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best bedtime routine app for preschoolers with no ads",
@@ -808,7 +949,8 @@
       "badge_labels": [
         "兒童與學習",
         "付費下載",
-        "無廣告"
+        "無廣告",
+        "App Store · $190.00"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/zh-Hant/index.html",
@@ -817,6 +959,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6779745474",
       "app_store_url": "https://apps.apple.com/tw/app/id6779745474",
       "app_store_cta_label": "在 App Store 取得 Lumi Mission Planet Pro →",
+      "storefront_facts": {
+        "price": "190",
+        "currency": "TWD",
+        "formatted_price": "$190.00"
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best complete morning and bedtime routine app for kids",
@@ -851,7 +998,9 @@
       "badge_labels": [
         "兒童與學習",
         "免費開始 · 永久解鎖",
-        "無廣告"
+        "無廣告",
+        "App Store · 免費",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-travel-activity-app-for-kids-on-family-trips.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/zh-Hant/index.html",
@@ -860,6 +1009,13 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
       "app_store_url": "https://apps.apple.com/tw/app/id6787193643",
       "app_store_cta_label": "在 App Store 取得 Lumi Trip Planet →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best travel activity app for kids on family trips",
@@ -897,7 +1053,9 @@
         "兒童與學習",
         "免費開始 · 永久解鎖",
         "無廣告",
-        "無追蹤"
+        "無追蹤",
+        "App Store · 免費",
+        "★ 5.0/5 · 2"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/zh-Hant/index.html",
@@ -906,6 +1064,13 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
       "app_store_url": "https://apps.apple.com/tw/app/id6779552704",
       "app_store_cta_label": "在 App Store 取得 Lumi Weather →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 2
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best weather app to help parents plan outdoor time with kids",
@@ -940,7 +1105,9 @@
       "badge_labels": [
         "效率工具",
         "免費開始 · 永久解鎖",
-        "無廣告"
+        "無廣告",
+        "App Store · 免費",
+        "★ 5.0/5 · 2"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/zh-Hant/index.html",
@@ -949,6 +1116,13 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
       "app_store_url": "https://apps.apple.com/tw/app/id6785004775",
       "app_store_cta_label": "在 App Store 取得 Mochi →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 2
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best simple to do list app iphone no subscription",
@@ -978,7 +1152,9 @@
       "device_labels": [],
       "badge_labels": [
         "照片與實用工具",
-        "免費開始 · 永久解鎖"
+        "免費開始 · 永久解鎖",
+        "App Store · 免費",
+        "★ 3.0/5 · 2"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/zh-Hant/index.html",
@@ -987,6 +1163,13 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6781808054",
       "app_store_url": "https://apps.apple.com/tw/app/id6781808054",
       "app_store_cta_label": "在 App Store 取得 PhotoCream →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 3.0,
+        "rating_count": 2
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best pay once film photo editor for travel creators on iphone",
@@ -1021,7 +1204,8 @@
       "badge_labels": [
         "照片與實用工具",
         "免費開始 · 永久解鎖",
-        "隱私優先／裝置端"
+        "隱私優先／裝置端",
+        "App Store · 免費"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/zh-Hant/index.html",
@@ -1030,6 +1214,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
       "app_store_url": "https://apps.apple.com/tw/app/id6780223070",
       "app_store_cta_label": "在 App Store 取得 PicClear →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費"
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best app to free up iphone storage deleting duplicate photos",
@@ -1064,7 +1253,9 @@
       "badge_labels": [
         "效率工具",
         "免費開始 · 永久解鎖",
-        "隱私優先／裝置端"
+        "隱私優先／裝置端",
+        "App Store · 免費",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/zh-Hant/index.html",
@@ -1073,6 +1264,13 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
       "app_store_url": "https://apps.apple.com/tw/app/id6779977651",
       "app_store_cta_label": "在 App Store 取得 ScanTo Pro →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best offline document scanner app no cloud for nurses",
@@ -1110,7 +1308,9 @@
         "睡眠與專注",
         "免費開始 · 永久解鎖",
         "離線使用",
-        "無廣告"
+        "無廣告",
+        "App Store · 免費",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/zh-Hant/index.html",
@@ -1119,6 +1319,13 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
       "app_store_url": "https://apps.apple.com/tw/app/id6788236641",
       "app_store_cta_label": "在 App Store 取得 Sereno →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best white noise app for falling asleep no subscription",
@@ -1153,7 +1360,8 @@
       "badge_labels": [
         "照片與實用工具",
         "付費下載",
-        "隱私優先／裝置端"
+        "隱私優先／裝置端",
+        "App Store · $150.00"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/zh-Hant/index.html",
@@ -1162,6 +1370,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
       "app_store_url": "https://apps.apple.com/tw/app/id6780575828",
       "app_store_cta_label": "在 App Store 取得 Snapport →",
+      "storefront_facts": {
+        "price": "150",
+        "currency": "TWD",
+        "formatted_price": "$150.00"
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best passport photo app for babies and toddlers at home",
@@ -1196,7 +1409,9 @@
       "badge_labels": [
         "效率工具",
         "免費開始 · 永久解鎖",
-        "隱私優先／裝置端"
+        "隱私優先／裝置端",
+        "App Store · 免費",
+        "★ 5.0/5 · 2"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/zh-Hant/index.html",
@@ -1205,6 +1420,13 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
       "app_store_url": "https://apps.apple.com/tw/app/id6782139553",
       "app_store_cta_label": "在 App Store 取得 Sono Note →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 2
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best voice notes app that summarizes meetings on iphone",
@@ -1245,7 +1467,8 @@
         "免費開始 · 永久解鎖",
         "離線使用",
         "免帳號",
-        "無廣告"
+        "無廣告",
+        "App Store · 免費"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/zh-Hant/index.html",
@@ -1254,6 +1477,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6791299610",
       "app_store_url": "https://apps.apple.com/tw/app/id6791299610",
       "app_store_cta_label": "於 App Store 取得 TripBee Lite →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費"
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best simple trip planner app for one upcoming trip iphone",
@@ -1294,7 +1522,9 @@
         "付費下載",
         "離線使用",
         "免帳號",
-        "隱私優先／裝置端"
+        "隱私優先／裝置端",
+        "App Store · $190.00",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-trip-itinerary-planner-app-for-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/zh-Hant/index.html",
@@ -1303,6 +1533,13 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6787754435",
       "app_store_url": "https://apps.apple.com/tw/app/id6787754435",
       "app_store_cta_label": "在 App Store 取得 TripBee Pro：旅遊規劃師 →",
+      "storefront_facts": {
+        "price": "190",
+        "currency": "TWD",
+        "formatted_price": "$190.00",
+        "rating_value": 5.0,
+        "rating_count": 1
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best trip itinerary planner app for iphone",
@@ -1337,7 +1574,9 @@
       "badge_labels": [
         "照片與實用工具",
         "免費開始 · 永久解鎖",
-        "隱私優先／裝置端"
+        "隱私優先／裝置端",
+        "App Store · 免費",
+        "★ 5.0/5 · 2"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/zh-Hant/index.html",
@@ -1346,6 +1585,13 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
       "app_store_url": "https://apps.apple.com/tw/app/id6782275018",
       "app_store_cta_label": "在 App Store 取得 Unblurry →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 2
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best app to fix blurry photos of kids on iphone",
@@ -1394,7 +1640,9 @@
         "無廣告",
         "無追蹤",
         "主畫面小工具",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · $190.00",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/zh-Hant/index.html",
@@ -1403,6 +1651,13 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6789917808",
       "app_store_url": "https://apps.apple.com/tw/app/id6789917808",
       "app_store_cta_label": "在 App Store 取得 Wordmate：學習 44 種語言 →",
+      "storefront_facts": {
+        "price": "190",
+        "currency": "TWD",
+        "formatted_price": "$190.00",
+        "rating_value": 5.0,
+        "rating_count": 1
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best vocabulary app for busy commuters with apple watch",

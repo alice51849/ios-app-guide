@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "sl-SI",
   "dateModified": "2026-07-23",
-  "content_digest": "11ce2b8e01ab33f68f99f8640b83cc317a81adad8af69970822dc870b657ef11",
-  "generation_digest": "ff7bd574135f7c3b68c8c96177c3ba1a0671b8c11847d9644c48566647d24092",
+  "content_digest": "a37c734f4f3acc1c69c25be0c1e1bea42ecb46ebff08eeeaa69fe21ba259b766",
+  "generation_digest": "2f38ec261b2999f93aa8466786825fb14af4877cbe4aad1f84eb74eac9c5d93b",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -42,7 +42,8 @@
       "badge_labels": [
         "Več",
         "Brezplačen začetek · doživljenjska odklenitev",
-        "Zasebno / na napravi"
+        "Zasebno / na napravi",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/maskmyfile.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/sl-SI/index.html",
@@ -51,6 +52,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
       "app_store_url": "https://apps.apple.com/si/app/id6792850916",
       "app_store_cta_label": "Prenesite Mask My File iz trgovine App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "To je gradivo prve roke, ki ga je objavil Lumi Studio, razvijalec vseh navedenih aplikacij.",
       "source_persona_query": "best on-device file redaction app for freelancers sharing client documents",
@@ -80,7 +86,8 @@
       "device_labels": [],
       "badge_labels": [
         "Več",
-        "Plačljiv prenos"
+        "Plačljiv prenos",
+        "App Store · 6,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/wifiaid.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/sl-SI/index.html",
@@ -89,6 +96,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
       "app_store_url": "https://apps.apple.com/si/app/id6790467886",
       "app_store_cta_label": "Prenesite WiFi Aid iz trgovine App Store",
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "To je gradivo prve roke, ki ga je objavil Lumi Studio, razvijalec vseh navedenih aplikacij.",
       "source_persona_query": "best wifi troubleshooting app for remote workers with connected but no internet",
@@ -118,7 +130,8 @@
       "device_labels": [],
       "badge_labels": [
         "Življenjski slog",
-        "Brezplačen začetek · doživljenjska odklenitev"
+        "Brezplačen začetek · doživljenjska odklenitev",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/sl-SI/index.html",
@@ -127,6 +140,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
       "app_store_url": "https://apps.apple.com/si/app/id6790800323",
       "app_store_cta_label": "Prenesite Mochi DoneStamp: Nazadnje iz trgovine App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "To je gradivo prve roke, ki ga je objavil Lumi Studio, razvijalec vseh navedenih aplikacij.",
       "source_persona_query": "best last time tracker app for household maintenance without a subscription",
@@ -156,7 +174,8 @@
       "device_labels": [],
       "badge_labels": [
         "Izobraževanje",
-        "Brezplačen začetek · doživljenjska odklenitev"
+        "Brezplačen začetek · doživljenjska odklenitev",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aim990/decision/l/sl-SI/index.html",
@@ -165,6 +184,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
       "app_store_url": "https://apps.apple.com/si/app/id6784974530",
       "app_store_cta_label": "Prenesite Aim990 v App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best toeic prep app offline study plan for iphone",
@@ -199,7 +223,8 @@
       "badge_labels": [
         "Izobraževanje",
         "Plačljiv prenos",
-        "Brez povezave"
+        "Brez povezave",
+        "App Store · 6,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/aim990plus.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/sl-SI/index.html",
@@ -208,6 +233,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
       "app_store_url": "https://apps.apple.com/si/app/id6792483140",
       "app_store_cta_label": "Prenesite Aim990 Plus iz trgovine App Store",
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "To je gradivo prve roke, ki ga je objavil Lumi Studio, razvijalec vseh navedenih aplikacij.",
       "source_persona_query": "best offline English listening and reading exam trainer for iPhone",
@@ -237,7 +267,8 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivnost",
-        "Brezplačen začetek · doživljenjska odklenitev"
+        "Brezplačen začetek · doživljenjska odklenitev",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-resume-builder-app-for-career-changers-2026.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/sl-SI/index.html",
@@ -246,6 +277,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
       "app_store_url": "https://apps.apple.com/si/app/id6781337213",
       "app_store_cta_label": "Prenesite CV Desk v App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best resume builder app for career changers 2026",
@@ -280,7 +316,8 @@
       "badge_labels": [
         "Zdravje",
         "Brezplačen začetek · doživljenjska odklenitev",
-        "Zasebno / na napravi"
+        "Zasebno / na napravi",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-period-tracker-app-no-account-required-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/sl-SI/index.html",
@@ -289,6 +326,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
       "app_store_url": "https://apps.apple.com/si/app/id6782251621",
       "app_store_cta_label": "Prenesite Cyca v App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best period tracker app no account required iphone",
@@ -326,7 +368,8 @@
         "Izobraževanje",
         "Plačljiv prenos",
         "Gradnik",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · 12,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/sl-SI/index.html",
@@ -335,6 +378,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
       "app_store_url": "https://apps.apple.com/si/app/id6790418321",
       "app_store_cta_label": "Prenesite DailyMate v App Store →",
+      "storefront_facts": {
+        "price": "12.99",
+        "currency": "EUR",
+        "formatted_price": "12,99 €"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best practical language phrase app for travelers with apple watch",
@@ -372,7 +420,8 @@
         "Denar in potovanja",
         "Plačljiv prenos",
         "Brez povezave",
-        "Brez računa"
+        "Brez računa",
+        "App Store · 5,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/sl-SI/index.html",
@@ -381,6 +430,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
       "app_store_url": "https://apps.apple.com/si/app/id6755782939",
       "app_store_cta_label": "Prenesite G+Money v App Store →",
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "EUR",
+        "formatted_price": "5,99 €"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best travel budget tracker app no subscription iphone",
@@ -418,7 +472,8 @@
         "Denar in potovanja",
         "Plačljiv prenos",
         "Brez sledenja",
-        "Zasebno / na napravi"
+        "Zasebno / na napravi",
+        "App Store · 5,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/sl-SI/index.html",
@@ -427,6 +482,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
       "app_store_url": "https://apps.apple.com/si/app/id6754218117",
       "app_store_cta_label": "Prenesite HoursTag v App Store →",
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "EUR",
+        "formatted_price": "5,99 €"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best mindful spending app to stop impulse buying iphone",
@@ -464,7 +524,8 @@
         "Produktivnost",
         "Brezplačen začetek · doživljenjska odklenitev",
         "Brez oglasov",
-        "Zasebno / na napravi"
+        "Zasebno / na napravi",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-app-to-block-social-media-while-studying-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/sl-SI/index.html",
@@ -473,6 +534,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6780107485",
       "app_store_url": "https://apps.apple.com/si/app/id6780107485",
       "app_store_cta_label": "Prenesite LockHour Pro iz App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best app to block social media while studying iphone",
@@ -507,7 +573,8 @@
       "badge_labels": [
         "Otroci in učenje",
         "Brezplačen začetek · doživljenjska odklenitev",
-        "Brez oglasov"
+        "Brez oglasov",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/sl-SI/index.html",
@@ -516,6 +583,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6773017109",
       "app_store_url": "https://apps.apple.com/si/app/id6773017109",
       "app_store_cta_label": "Prenesite Lumi Bopomofo iz App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best bopomofo app for kids to learn zhuyin on iphone",
@@ -550,7 +622,8 @@
       "badge_labels": [
         "Otroci in učenje",
         "Plačljiv prenos",
-        "Brez oglasov"
+        "Brez oglasov",
+        "App Store · 9,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-complete-zhuyin-app-for-bilingual-children.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/sl-SI/index.html",
@@ -559,6 +632,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
       "app_store_url": "https://apps.apple.com/si/app/id6775773117",
       "app_store_cta_label": "Pridobite Lumi Bopomofo Pro v trgovini App Store →",
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "9,99 €"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best complete zhuyin app for bilingual children",
@@ -593,7 +671,8 @@
       "badge_labels": [
         "Otroci in učenje",
         "Brezplačen začetek · doživljenjska odklenitev",
-        "Brez oglasov"
+        "Brez oglasov",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-educational-game-app-for-kids-no-ads-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/sl-SI/index.html",
@@ -602,6 +681,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
       "app_store_url": "https://apps.apple.com/si/app/id6778748533",
       "app_store_cta_label": "Prenesite Lumi Letters iz App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best educational game app for kids no ads iphone",
@@ -636,7 +720,8 @@
       "badge_labels": [
         "Otroci in učenje",
         "Plačljiv prenos",
-        "Brez oglasov"
+        "Brez oglasov",
+        "App Store · 9,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/sl-SI/index.html",
@@ -645,6 +730,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6778491147",
       "app_store_url": "https://apps.apple.com/si/app/id6778491147",
       "app_store_cta_label": "Pridobite Lumi Letters Pro v trgovini App Store →",
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "9,99 €"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best complete phonics app for homeschool kindergarten prep",
@@ -679,7 +769,8 @@
       "badge_labels": [
         "Otroci in učenje",
         "Brezplačen začetek · doživljenjska odklenitev",
-        "Brez oglasov"
+        "Brez oglasov",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/sl-SI/index.html",
@@ -688,6 +779,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
       "app_store_url": "https://apps.apple.com/si/app/id6778269699",
       "app_store_cta_label": "Prenesite Lumi Math Planet iz App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best math game app for kids to build logic skills iphone",
@@ -722,7 +818,8 @@
       "badge_labels": [
         "Otroci in učenje",
         "Plačljiv prenos",
-        "Brez oglasov"
+        "Brez oglasov",
+        "App Store · 9,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/sl-SI/index.html",
@@ -731,6 +828,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
       "app_store_url": "https://apps.apple.com/si/app/id6776958488",
       "app_store_cta_label": "Pridobite Lumi Math Pro v trgovini App Store →",
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "9,99 €"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best complete math learning app for preschool and early grades",
@@ -765,7 +867,8 @@
       "badge_labels": [
         "Otroci in učenje",
         "Brezplačen začetek · doživljenjska odklenitev",
-        "Brez oglasov"
+        "Brez oglasov",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/sl-SI/index.html",
@@ -774,6 +877,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6779750237",
       "app_store_url": "https://apps.apple.com/si/app/id6779750237",
       "app_store_cta_label": "Prenesite Lumi Mission Planet v trgovini App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best bedtime routine app for preschoolers with no ads",
@@ -808,7 +916,8 @@
       "badge_labels": [
         "Otroci in učenje",
         "Plačljiv prenos",
-        "Brez oglasov"
+        "Brez oglasov",
+        "App Store · 6,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/sl-SI/index.html",
@@ -817,6 +926,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6779745474",
       "app_store_url": "https://apps.apple.com/si/app/id6779745474",
       "app_store_cta_label": "Pridobite Lumi Mission Planet Pro v trgovini App Store →",
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best complete morning and bedtime routine app for kids",
@@ -851,7 +965,8 @@
       "badge_labels": [
         "Otroci in učenje",
         "Brezplačen začetek · doživljenjska odklenitev",
-        "Brez oglasov"
+        "Brez oglasov",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-travel-activity-app-for-kids-on-family-trips.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/sl-SI/index.html",
@@ -860,6 +975,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
       "app_store_url": "https://apps.apple.com/si/app/id6787193643",
       "app_store_cta_label": "Pridobite Lumi Trip Planet v trgovini App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best travel activity app for kids on family trips",
@@ -897,7 +1017,8 @@
         "Otroci in učenje",
         "Brezplačen začetek · doživljenjska odklenitev",
         "Brez oglasov",
-        "Brez sledenja"
+        "Brez sledenja",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/sl-SI/index.html",
@@ -906,6 +1027,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
       "app_store_url": "https://apps.apple.com/si/app/id6779552704",
       "app_store_cta_label": "Pridobite Lumi Weather v trgovini App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best weather app to help parents plan outdoor time with kids",
@@ -940,7 +1066,8 @@
       "badge_labels": [
         "Produktivnost",
         "Brezplačen začetek · doživljenjska odklenitev",
-        "Brez oglasov"
+        "Brez oglasov",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/sl-SI/index.html",
@@ -949,6 +1076,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
       "app_store_url": "https://apps.apple.com/si/app/id6785004775",
       "app_store_cta_label": "Prenesite Mochi iz App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best simple to do list app iphone no subscription",
@@ -978,7 +1110,8 @@
       "device_labels": [],
       "badge_labels": [
         "Fotografija in pripomočki",
-        "Brezplačen začetek · doživljenjska odklenitev"
+        "Brezplačen začetek · doživljenjska odklenitev",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/sl-SI/index.html",
@@ -987,6 +1120,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6781808054",
       "app_store_url": "https://apps.apple.com/si/app/id6781808054",
       "app_store_cta_label": "Pridobite PhotoCream v trgovini App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best pay once film photo editor for travel creators on iphone",
@@ -1021,7 +1159,8 @@
       "badge_labels": [
         "Fotografija in pripomočki",
         "Brezplačen začetek · doživljenjska odklenitev",
-        "Zasebno / na napravi"
+        "Zasebno / na napravi",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/sl-SI/index.html",
@@ -1030,6 +1169,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
       "app_store_url": "https://apps.apple.com/si/app/id6780223070",
       "app_store_cta_label": "Prenesite PicClear iz App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best app to free up iphone storage deleting duplicate photos",
@@ -1064,7 +1208,8 @@
       "badge_labels": [
         "Produktivnost",
         "Brezplačen začetek · doživljenjska odklenitev",
-        "Zasebno / na napravi"
+        "Zasebno / na napravi",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/sl-SI/index.html",
@@ -1073,6 +1218,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
       "app_store_url": "https://apps.apple.com/si/app/id6779977651",
       "app_store_cta_label": "Prenesite ScanTo Pro iz App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best offline document scanner app no cloud for nurses",
@@ -1110,7 +1260,8 @@
         "Spanec in osredotočenost",
         "Brezplačen začetek · doživljenjska odklenitev",
         "Brez povezave",
-        "Brez oglasov"
+        "Brez oglasov",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/sl-SI/index.html",
@@ -1119,6 +1270,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
       "app_store_url": "https://apps.apple.com/si/app/id6788236641",
       "app_store_cta_label": "Prenesite Sereno iz App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best white noise app for falling asleep no subscription",
@@ -1153,7 +1309,8 @@
       "badge_labels": [
         "Fotografija in pripomočki",
         "Plačljiv prenos",
-        "Zasebno / na napravi"
+        "Zasebno / na napravi",
+        "App Store · 5,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/sl-SI/index.html",
@@ -1162,6 +1319,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
       "app_store_url": "https://apps.apple.com/si/app/id6780575828",
       "app_store_cta_label": "Prenesite Snapport iz App Store →",
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "EUR",
+        "formatted_price": "5,99 €"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best passport photo app for babies and toddlers at home",
@@ -1196,7 +1358,8 @@
       "badge_labels": [
         "Produktivnost",
         "Brezplačen začetek · doživljenjska odklenitev",
-        "Zasebno / na napravi"
+        "Zasebno / na napravi",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/sl-SI/index.html",
@@ -1205,6 +1368,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
       "app_store_url": "https://apps.apple.com/si/app/id6782139553",
       "app_store_cta_label": "Prenesite Sono Note iz App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best voice notes app that summarizes meetings on iphone",
@@ -1245,7 +1413,8 @@
         "Brezplačen začetek · doživljenjska odklenitev",
         "Brez povezave",
         "Brez računa",
-        "Brez oglasov"
+        "Brez oglasov",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/sl-SI/index.html",
@@ -1254,6 +1423,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6791299610",
       "app_store_url": "https://apps.apple.com/si/app/id6791299610",
       "app_store_cta_label": "Prenesite TripBee Lite v App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best simple trip planner app for one upcoming trip iphone",
@@ -1294,7 +1468,8 @@
         "Plačljiv prenos",
         "Brez povezave",
         "Brez računa",
-        "Zasebno / na napravi"
+        "Zasebno / na napravi",
+        "App Store · 6,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-trip-itinerary-planner-app-for-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/sl-SI/index.html",
@@ -1303,6 +1478,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6787754435",
       "app_store_url": "https://apps.apple.com/si/app/id6787754435",
       "app_store_cta_label": "Prenesite TripBee Pro: načrtovalec potovanja iz App Store →",
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best trip itinerary planner app for iphone",
@@ -1337,7 +1517,8 @@
       "badge_labels": [
         "Fotografija in pripomočki",
         "Brezplačen začetek · doživljenjska odklenitev",
-        "Zasebno / na napravi"
+        "Zasebno / na napravi",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/sl-SI/index.html",
@@ -1346,6 +1527,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
       "app_store_url": "https://apps.apple.com/si/app/id6782275018",
       "app_store_cta_label": "Prenesite Unblurry iz App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best app to fix blurry photos of kids on iphone",
@@ -1394,7 +1580,8 @@
         "Brez oglasov",
         "Brez sledenja",
         "Gradnik",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · 6,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/sl-SI/index.html",
@@ -1403,6 +1590,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6789917808",
       "app_store_url": "https://apps.apple.com/si/app/id6789917808",
       "app_store_cta_label": "Pridobite Wordmate: Learn 44 Languages v trgovini App Store →",
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.",
       "source_persona_query": "best vocabulary app for busy commuters with apple watch",

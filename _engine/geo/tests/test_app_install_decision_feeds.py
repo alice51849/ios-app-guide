@@ -141,9 +141,21 @@ class AppInstallDecisionFeedTests(unittest.TestCase):
             self.assertFalse(
                 json_feed["_meta"]["measured_search_volume"]
             )
+            records_by_id = {
+                record["record_id"]: record for record in records
+            }
             for item in json_feed["items"]:
                 self.assertIn(item["external_url"], item["content_text"])
                 self.assertNotIn("\n", item["content_text"])
+                storefront_facts = records_by_id[item["id"]][
+                    "storefront_facts"
+                ]
+                if storefront_facts is not None:
+                    formatted_price = str(
+                        storefront_facts["formatted_price"]
+                    )
+                    self.assertIn(formatted_price, item["content_text"])
+                    self.assertIn(formatted_price, item["content_html"])
                 self.assertRegex(
                     item["_meta"]["content_digest"],
                     r"^[0-9a-f]{64}$",

@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "uk",
   "dateModified": "2026-07-23",
-  "content_digest": "11ce2b8e01ab33f68f99f8640b83cc317a81adad8af69970822dc870b657ef11",
-  "generation_digest": "ff7bd574135f7c3b68c8c96177c3ba1a0671b8c11847d9644c48566647d24092",
+  "content_digest": "a37c734f4f3acc1c69c25be0c1e1bea42ecb46ebff08eeeaa69fe21ba259b766",
+  "generation_digest": "2f38ec261b2999f93aa8466786825fb14af4877cbe4aad1f84eb74eac9c5d93b",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -42,7 +42,8 @@
       "badge_labels": [
         "Ще",
         "Безкоштовно для початку · довічне розблокування",
-        "Приватно / на пристрої"
+        "Приватно / на пристрої",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/maskmyfile.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/uk/index.html",
@@ -51,6 +52,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
       "app_store_url": "https://apps.apple.com/ua/app/id6792850916",
       "app_store_cta_label": "Завантажте Mask My File з App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.",
       "source_persona_query": "best on-device file redaction app for freelancers sharing client documents",
@@ -80,7 +86,8 @@
       "device_labels": [],
       "badge_labels": [
         "Ще",
-        "Платне завантаження"
+        "Платне завантаження",
+        "App Store · 6,99 USD"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/wifiaid.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/uk/index.html",
@@ -89,6 +96,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
       "app_store_url": "https://apps.apple.com/ua/app/id6790467886",
       "app_store_cta_label": "Завантажте WiFi Aid з App Store",
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "USD",
+        "formatted_price": "6,99 USD"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.",
       "source_persona_query": "best wifi troubleshooting app for remote workers with connected but no internet",
@@ -118,7 +130,8 @@
       "device_labels": [],
       "badge_labels": [
         "Стиль життя",
-        "Безкоштовно для початку · довічне розблокування"
+        "Безкоштовно для початку · довічне розблокування",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/uk/index.html",
@@ -127,6 +140,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
       "app_store_url": "https://apps.apple.com/ua/app/id6790800323",
       "app_store_cta_label": "Завантажте Mochi DoneStamp: Коли востаннє з App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.",
       "source_persona_query": "best last time tracker app for household maintenance without a subscription",
@@ -156,7 +174,8 @@
       "device_labels": [],
       "badge_labels": [
         "Освіта",
-        "Безкоштовно для початку · довічне розблокування"
+        "Безкоштовно для початку · довічне розблокування",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aim990/decision/l/uk/index.html",
@@ -165,6 +184,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
       "app_store_url": "https://apps.apple.com/ua/app/id6784974530",
       "app_store_cta_label": "Отримайте Aim990 в App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best toeic prep app offline study plan for iphone",
@@ -199,7 +223,8 @@
       "badge_labels": [
         "Освіта",
         "Платне завантаження",
-        "Офлайн"
+        "Офлайн",
+        "App Store · 6,99 USD"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/aim990plus.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/uk/index.html",
@@ -208,6 +233,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
       "app_store_url": "https://apps.apple.com/ua/app/id6792483140",
       "app_store_cta_label": "Завантажте Aim990 Plus з App Store",
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "USD",
+        "formatted_price": "6,99 USD"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.",
       "source_persona_query": "best offline English listening and reading exam trainer for iPhone",
@@ -237,7 +267,8 @@
       "device_labels": [],
       "badge_labels": [
         "Продуктивність",
-        "Безкоштовно для початку · довічне розблокування"
+        "Безкоштовно для початку · довічне розблокування",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-resume-builder-app-for-career-changers-2026.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/uk/index.html",
@@ -246,6 +277,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
       "app_store_url": "https://apps.apple.com/ua/app/id6781337213",
       "app_store_cta_label": "Отримайте CV Desk в App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best resume builder app for career changers 2026",
@@ -280,7 +316,8 @@
       "badge_labels": [
         "Здоров'я",
         "Безкоштовно для початку · довічне розблокування",
-        "Приватно / на пристрої"
+        "Приватно / на пристрої",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-period-tracker-app-no-account-required-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/uk/index.html",
@@ -289,6 +326,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
       "app_store_url": "https://apps.apple.com/ua/app/id6782251621",
       "app_store_cta_label": "Отримайте Cyca в App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best period tracker app no account required iphone",
@@ -326,7 +368,8 @@
         "Освіта",
         "Платне завантаження",
         "Віджет",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · 14,99 USD"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/uk/index.html",
@@ -335,6 +378,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
       "app_store_url": "https://apps.apple.com/ua/app/id6790418321",
       "app_store_cta_label": "Отримайте DailyMate в App Store →",
+      "storefront_facts": {
+        "price": "14.99",
+        "currency": "USD",
+        "formatted_price": "14,99 USD"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best practical language phrase app for travelers with apple watch",
@@ -372,7 +420,8 @@
         "Гроші та подорожі",
         "Платне завантаження",
         "Офлайн",
-        "Без облікового запису"
+        "Без облікового запису",
+        "App Store · 5,99 USD"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/uk/index.html",
@@ -381,6 +430,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
       "app_store_url": "https://apps.apple.com/ua/app/id6755782939",
       "app_store_cta_label": "Отримайте G+Money в App Store →",
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "USD",
+        "formatted_price": "5,99 USD"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best travel budget tracker app no subscription iphone",
@@ -418,7 +472,8 @@
         "Гроші та подорожі",
         "Платне завантаження",
         "Без відстеження",
-        "Приватно / на пристрої"
+        "Приватно / на пристрої",
+        "App Store · 5,99 USD"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/uk/index.html",
@@ -427,6 +482,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
       "app_store_url": "https://apps.apple.com/ua/app/id6754218117",
       "app_store_cta_label": "Отримайте HoursTag в App Store →",
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "USD",
+        "formatted_price": "5,99 USD"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best mindful spending app to stop impulse buying iphone",
@@ -464,7 +524,8 @@
         "Продуктивність",
         "Безкоштовно для початку · довічне розблокування",
         "Без реклами",
-        "Приватно / на пристрої"
+        "Приватно / на пристрої",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-app-to-block-social-media-while-studying-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/uk/index.html",
@@ -473,6 +534,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6780107485",
       "app_store_url": "https://apps.apple.com/ua/app/id6780107485",
       "app_store_cta_label": "Отримайте LockHour Pro в App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best app to block social media while studying iphone",
@@ -507,7 +573,8 @@
       "badge_labels": [
         "Діти та навчання",
         "Безкоштовно для початку · довічне розблокування",
-        "Без реклами"
+        "Без реклами",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/uk/index.html",
@@ -516,6 +583,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6773017109",
       "app_store_url": "https://apps.apple.com/ua/app/id6773017109",
       "app_store_cta_label": "Отримайте Lumi Bopomofo в App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best bopomofo app for kids to learn zhuyin on iphone",
@@ -550,7 +622,8 @@
       "badge_labels": [
         "Діти та навчання",
         "Платне завантаження",
-        "Без реклами"
+        "Без реклами",
+        "App Store · 9,99 USD"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-complete-zhuyin-app-for-bilingual-children.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/uk/index.html",
@@ -559,6 +632,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
       "app_store_url": "https://apps.apple.com/ua/app/id6775773117",
       "app_store_cta_label": "Отримати Lumi Bopomofo Pro в App Store →",
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "USD",
+        "formatted_price": "9,99 USD"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best complete zhuyin app for bilingual children",
@@ -593,7 +671,8 @@
       "badge_labels": [
         "Діти та навчання",
         "Безкоштовно для початку · довічне розблокування",
-        "Без реклами"
+        "Без реклами",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-educational-game-app-for-kids-no-ads-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/uk/index.html",
@@ -602,6 +681,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
       "app_store_url": "https://apps.apple.com/ua/app/id6778748533",
       "app_store_cta_label": "Отримайте Lumi Letters в App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best educational game app for kids no ads iphone",
@@ -636,7 +720,8 @@
       "badge_labels": [
         "Діти та навчання",
         "Платне завантаження",
-        "Без реклами"
+        "Без реклами",
+        "App Store · 9,99 USD"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/uk/index.html",
@@ -645,6 +730,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6778491147",
       "app_store_url": "https://apps.apple.com/ua/app/id6778491147",
       "app_store_cta_label": "Отримати Lumi Letters Pro в App Store →",
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "USD",
+        "formatted_price": "9,99 USD"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best complete phonics app for homeschool kindergarten prep",
@@ -679,7 +769,8 @@
       "badge_labels": [
         "Діти та навчання",
         "Безкоштовно для початку · довічне розблокування",
-        "Без реклами"
+        "Без реклами",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/uk/index.html",
@@ -688,6 +779,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
       "app_store_url": "https://apps.apple.com/ua/app/id6778269699",
       "app_store_cta_label": "Отримайте Lumi Math Planet в App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best math game app for kids to build logic skills iphone",
@@ -722,7 +818,8 @@
       "badge_labels": [
         "Діти та навчання",
         "Платне завантаження",
-        "Без реклами"
+        "Без реклами",
+        "App Store · 9,99 USD"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/uk/index.html",
@@ -731,6 +828,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
       "app_store_url": "https://apps.apple.com/ua/app/id6776958488",
       "app_store_cta_label": "Отримати Lumi Math Pro в App Store →",
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "USD",
+        "formatted_price": "9,99 USD"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best complete math learning app for preschool and early grades",
@@ -765,7 +867,8 @@
       "badge_labels": [
         "Діти та навчання",
         "Безкоштовно для початку · довічне розблокування",
-        "Без реклами"
+        "Без реклами",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/uk/index.html",
@@ -774,6 +877,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6779750237",
       "app_store_url": "https://apps.apple.com/ua/app/id6779750237",
       "app_store_cta_label": "Отримати Lumi Mission Planet у App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best bedtime routine app for preschoolers with no ads",
@@ -808,7 +916,8 @@
       "badge_labels": [
         "Діти та навчання",
         "Платне завантаження",
-        "Без реклами"
+        "Без реклами",
+        "App Store · 6,99 USD"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/uk/index.html",
@@ -817,6 +926,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6779745474",
       "app_store_url": "https://apps.apple.com/ua/app/id6779745474",
       "app_store_cta_label": "Отримати Lumi Mission Planet Pro в App Store →",
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "USD",
+        "formatted_price": "6,99 USD"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best complete morning and bedtime routine app for kids",
@@ -851,7 +965,8 @@
       "badge_labels": [
         "Діти та навчання",
         "Безкоштовно для початку · довічне розблокування",
-        "Без реклами"
+        "Без реклами",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-travel-activity-app-for-kids-on-family-trips.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/uk/index.html",
@@ -860,6 +975,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
       "app_store_url": "https://apps.apple.com/ua/app/id6787193643",
       "app_store_cta_label": "Отримати Lumi Trip Planet в App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best travel activity app for kids on family trips",
@@ -897,7 +1017,8 @@
         "Діти та навчання",
         "Безкоштовно для початку · довічне розблокування",
         "Без реклами",
-        "Без відстеження"
+        "Без відстеження",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/uk/index.html",
@@ -906,6 +1027,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
       "app_store_url": "https://apps.apple.com/ua/app/id6779552704",
       "app_store_cta_label": "Отримати Lumi Weather в App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best weather app to help parents plan outdoor time with kids",
@@ -940,7 +1066,8 @@
       "badge_labels": [
         "Продуктивність",
         "Безкоштовно для початку · довічне розблокування",
-        "Без реклами"
+        "Без реклами",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/uk/index.html",
@@ -949,6 +1076,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
       "app_store_url": "https://apps.apple.com/ua/app/id6785004775",
       "app_store_cta_label": "Отримайте Mochi в App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best simple to do list app iphone no subscription",
@@ -978,7 +1110,8 @@
       "device_labels": [],
       "badge_labels": [
         "Фото та утиліти",
-        "Безкоштовно для початку · довічне розблокування"
+        "Безкоштовно для початку · довічне розблокування",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/uk/index.html",
@@ -987,6 +1120,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6781808054",
       "app_store_url": "https://apps.apple.com/ua/app/id6781808054",
       "app_store_cta_label": "Отримати PhotoCream в App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best pay once film photo editor for travel creators on iphone",
@@ -1021,7 +1159,8 @@
       "badge_labels": [
         "Фото та утиліти",
         "Безкоштовно для початку · довічне розблокування",
-        "Приватно / на пристрої"
+        "Приватно / на пристрої",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/uk/index.html",
@@ -1030,6 +1169,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
       "app_store_url": "https://apps.apple.com/ua/app/id6780223070",
       "app_store_cta_label": "Отримайте PicClear в App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best app to free up iphone storage deleting duplicate photos",
@@ -1064,7 +1208,8 @@
       "badge_labels": [
         "Продуктивність",
         "Безкоштовно для початку · довічне розблокування",
-        "Приватно / на пристрої"
+        "Приватно / на пристрої",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/uk/index.html",
@@ -1073,6 +1218,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
       "app_store_url": "https://apps.apple.com/ua/app/id6779977651",
       "app_store_cta_label": "Отримайте ScanTo Pro в App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best offline document scanner app no cloud for nurses",
@@ -1110,7 +1260,8 @@
         "Сон та концентрація",
         "Безкоштовно для початку · довічне розблокування",
         "Офлайн",
-        "Без реклами"
+        "Без реклами",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/uk/index.html",
@@ -1119,6 +1270,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
       "app_store_url": "https://apps.apple.com/ua/app/id6788236641",
       "app_store_cta_label": "Отримайте Sereno в App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best white noise app for falling asleep no subscription",
@@ -1153,7 +1309,8 @@
       "badge_labels": [
         "Фото та утиліти",
         "Платне завантаження",
-        "Приватно / на пристрої"
+        "Приватно / на пристрої",
+        "App Store · 5,99 USD"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/uk/index.html",
@@ -1162,6 +1319,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
       "app_store_url": "https://apps.apple.com/ua/app/id6780575828",
       "app_store_cta_label": "Отримайте Snapport в App Store →",
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "USD",
+        "formatted_price": "5,99 USD"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best passport photo app for babies and toddlers at home",
@@ -1196,7 +1358,8 @@
       "badge_labels": [
         "Продуктивність",
         "Безкоштовно для початку · довічне розблокування",
-        "Приватно / на пристрої"
+        "Приватно / на пристрої",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/uk/index.html",
@@ -1205,6 +1368,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
       "app_store_url": "https://apps.apple.com/ua/app/id6782139553",
       "app_store_cta_label": "Отримайте Sono Note в App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best voice notes app that summarizes meetings on iphone",
@@ -1245,7 +1413,8 @@
         "Безкоштовно для початку · довічне розблокування",
         "Офлайн",
         "Без облікового запису",
-        "Без реклами"
+        "Без реклами",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/uk/index.html",
@@ -1254,6 +1423,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6791299610",
       "app_store_url": "https://apps.apple.com/ua/app/id6791299610",
       "app_store_cta_label": "Отримайте TripBee Lite в App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best simple trip planner app for one upcoming trip iphone",
@@ -1294,7 +1468,8 @@
         "Платне завантаження",
         "Офлайн",
         "Без облікового запису",
-        "Приватно / на пристрої"
+        "Приватно / на пристрої",
+        "App Store · 6,99 USD"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-trip-itinerary-planner-app-for-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/uk/index.html",
@@ -1303,6 +1478,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6787754435",
       "app_store_url": "https://apps.apple.com/ua/app/id6787754435",
       "app_store_cta_label": "Отримайте TripBee Pro: планувальник подорожей в App Store →",
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "USD",
+        "formatted_price": "6,99 USD"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best trip itinerary planner app for iphone",
@@ -1337,7 +1517,8 @@
       "badge_labels": [
         "Фото та утиліти",
         "Безкоштовно для початку · довічне розблокування",
-        "Приватно / на пристрої"
+        "Приватно / на пристрої",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/uk/index.html",
@@ -1346,6 +1527,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
       "app_store_url": "https://apps.apple.com/ua/app/id6782275018",
       "app_store_cta_label": "Отримайте Unblurry в App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best app to fix blurry photos of kids on iphone",
@@ -1394,7 +1580,8 @@
         "Без реклами",
         "Без відстеження",
         "Віджет",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · 6,99 USD"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/uk/index.html",
@@ -1403,6 +1590,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6789917808",
       "app_store_url": "https://apps.apple.com/ua/app/id6789917808",
       "app_store_cta_label": "Отримати Wordmate: Learn 44 Languages в App Store →",
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "USD",
+        "formatted_price": "6,99 USD"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best vocabulary app for busy commuters with apple watch",

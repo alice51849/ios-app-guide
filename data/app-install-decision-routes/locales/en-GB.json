@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "en-GB",
   "dateModified": "2026-07-23",
-  "content_digest": "11ce2b8e01ab33f68f99f8640b83cc317a81adad8af69970822dc870b657ef11",
-  "generation_digest": "ff7bd574135f7c3b68c8c96177c3ba1a0671b8c11847d9644c48566647d24092",
+  "content_digest": "a37c734f4f3acc1c69c25be0c1e1bea42ecb46ebff08eeeaa69fe21ba259b766",
+  "generation_digest": "2f38ec261b2999f93aa8466786825fb14af4877cbe4aad1f84eb74eac9c5d93b",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -42,7 +42,8 @@
       "badge_labels": [
         "More",
         "Free to start · lifetime unlock",
-        "Private / on-device"
+        "Private / on-device",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/maskmyfile.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/en-GB/index.html",
@@ -51,6 +52,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
       "app_store_url": "https://apps.apple.com/gb/app/id6792850916",
       "app_store_cta_label": "Get Mask My File on the App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best on-device file redaction app for freelancers sharing client documents",
@@ -80,7 +86,8 @@
       "device_labels": [],
       "badge_labels": [
         "More",
-        "Paid download"
+        "Paid download",
+        "App Store · £5.99"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/wifiaid.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/en-GB/index.html",
@@ -89,6 +96,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
       "app_store_url": "https://apps.apple.com/gb/app/id6790467886",
       "app_store_cta_label": "Get WiFi Aid on the App Store",
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "GBP",
+        "formatted_price": "£5.99"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best wifi troubleshooting app for remote workers with connected but no internet",
@@ -118,7 +130,8 @@
       "device_labels": [],
       "badge_labels": [
         "Lifestyle",
-        "Free to start · lifetime unlock"
+        "Free to start · lifetime unlock",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/en-GB/index.html",
@@ -127,6 +140,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
       "app_store_url": "https://apps.apple.com/gb/app/id6790800323",
       "app_store_cta_label": "Get Mochi DoneStamp: Last Time on the App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best last time tracker app for household maintenance without a subscription",
@@ -156,7 +174,8 @@
       "device_labels": [],
       "badge_labels": [
         "Education",
-        "Free to start · lifetime unlock"
+        "Free to start · lifetime unlock",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aim990/decision/l/en-GB/index.html",
@@ -165,6 +184,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
       "app_store_url": "https://apps.apple.com/gb/app/id6784974530",
       "app_store_cta_label": "Get Aim990 on the App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best toeic prep app offline study plan for iphone",
@@ -199,7 +223,8 @@
       "badge_labels": [
         "Education",
         "Paid download",
-        "Offline"
+        "Offline",
+        "App Store · £5.99"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/aim990plus.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/en-GB/index.html",
@@ -208,6 +233,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
       "app_store_url": "https://apps.apple.com/gb/app/id6792483140",
       "app_store_cta_label": "Get Aim990 Plus on the App Store",
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "GBP",
+        "formatted_price": "£5.99"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best offline English listening and reading exam trainer for iPhone",
@@ -237,7 +267,8 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · lifetime unlock"
+        "Free to start · lifetime unlock",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-resume-builder-app-for-career-changers-2026.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/en-GB/index.html",
@@ -246,6 +277,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
       "app_store_url": "https://apps.apple.com/gb/app/id6781337213",
       "app_store_cta_label": "Get CV Desk on the App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best resume builder app for career changers 2026",
@@ -280,7 +316,8 @@
       "badge_labels": [
         "Health",
         "Free to start · lifetime unlock",
-        "Private / on-device"
+        "Private / on-device",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-period-tracker-app-no-account-required-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/en-GB/index.html",
@@ -289,6 +326,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
       "app_store_url": "https://apps.apple.com/gb/app/id6782251621",
       "app_store_cta_label": "Get Cyca on the App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best period tracker app no account required iphone",
@@ -326,7 +368,8 @@
         "Education",
         "Paid download",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · £11.99"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/en-GB/index.html",
@@ -335,6 +378,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
       "app_store_url": "https://apps.apple.com/gb/app/id6790418321",
       "app_store_cta_label": "Get DailyMate on the App Store →",
+      "storefront_facts": {
+        "price": "11.99",
+        "currency": "GBP",
+        "formatted_price": "£11.99"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best practical language phrase app for travelers with apple watch",
@@ -372,7 +420,8 @@
         "Money & travel",
         "Paid download",
         "Offline",
-        "No account"
+        "No account",
+        "App Store · £4.99"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/en-GB/index.html",
@@ -381,6 +430,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
       "app_store_url": "https://apps.apple.com/gb/app/id6755782939",
       "app_store_cta_label": "Get G+Money on the App Store →",
+      "storefront_facts": {
+        "price": "4.99",
+        "currency": "GBP",
+        "formatted_price": "£4.99"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best travel budget tracker app no subscription iphone",
@@ -418,7 +472,8 @@
         "Money & travel",
         "Paid download",
         "No tracking",
-        "Private / on-device"
+        "Private / on-device",
+        "App Store · £4.99"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/en-GB/index.html",
@@ -427,6 +482,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
       "app_store_url": "https://apps.apple.com/gb/app/id6754218117",
       "app_store_cta_label": "Get HoursTag on the App Store →",
+      "storefront_facts": {
+        "price": "4.99",
+        "currency": "GBP",
+        "formatted_price": "£4.99"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best mindful spending app to stop impulse buying iphone",
@@ -464,7 +524,8 @@
         "Productivity",
         "Free to start · lifetime unlock",
         "No adverts",
-        "Private / on-device"
+        "Private / on-device",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-app-to-block-social-media-while-studying-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/en-GB/index.html",
@@ -473,6 +534,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6780107485",
       "app_store_url": "https://apps.apple.com/gb/app/id6780107485",
       "app_store_cta_label": "Get LockHour Pro on the App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best app to block social media while studying iphone",
@@ -507,7 +573,8 @@
       "badge_labels": [
         "Children & learning",
         "Free to start · lifetime unlock",
-        "No adverts"
+        "No adverts",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/en-GB/index.html",
@@ -516,6 +583,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6773017109",
       "app_store_url": "https://apps.apple.com/gb/app/id6773017109",
       "app_store_cta_label": "Get Lumi Bopomofo on the App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best bopomofo app for kids to learn zhuyin on iphone",
@@ -550,7 +622,8 @@
       "badge_labels": [
         "Children & learning",
         "Paid download",
-        "No adverts"
+        "No adverts",
+        "App Store · £8.99"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-complete-zhuyin-app-for-bilingual-children.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/en-GB/index.html",
@@ -559,6 +632,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
       "app_store_url": "https://apps.apple.com/gb/app/id6775773117",
       "app_store_cta_label": "Get Lumi Bopomofo Pro on the App Store →",
+      "storefront_facts": {
+        "price": "8.99",
+        "currency": "GBP",
+        "formatted_price": "£8.99"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best complete zhuyin app for bilingual children",
@@ -593,7 +671,8 @@
       "badge_labels": [
         "Children & learning",
         "Free to start · lifetime unlock",
-        "No adverts"
+        "No adverts",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-educational-game-app-for-kids-no-ads-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/en-GB/index.html",
@@ -602,6 +681,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
       "app_store_url": "https://apps.apple.com/gb/app/id6778748533",
       "app_store_cta_label": "Get Lumi Letters on the App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best educational game app for kids no ads iphone",
@@ -636,7 +720,8 @@
       "badge_labels": [
         "Children & learning",
         "Paid download",
-        "No adverts"
+        "No adverts",
+        "App Store · £8.99"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/en-GB/index.html",
@@ -645,6 +730,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6778491147",
       "app_store_url": "https://apps.apple.com/gb/app/id6778491147",
       "app_store_cta_label": "Get Lumi Letters Pro on the App Store →",
+      "storefront_facts": {
+        "price": "8.99",
+        "currency": "GBP",
+        "formatted_price": "£8.99"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best complete phonics app for homeschool kindergarten prep",
@@ -679,7 +769,8 @@
       "badge_labels": [
         "Children & learning",
         "Free to start · lifetime unlock",
-        "No adverts"
+        "No adverts",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/en-GB/index.html",
@@ -688,6 +779,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
       "app_store_url": "https://apps.apple.com/gb/app/id6778269699",
       "app_store_cta_label": "Get Lumi Math Planet on the App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best math game app for kids to build logic skills iphone",
@@ -722,7 +818,8 @@
       "badge_labels": [
         "Children & learning",
         "Paid download",
-        "No adverts"
+        "No adverts",
+        "App Store · £8.99"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/en-GB/index.html",
@@ -731,6 +828,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
       "app_store_url": "https://apps.apple.com/gb/app/id6776958488",
       "app_store_cta_label": "Get Lumi Math Pro on the App Store →",
+      "storefront_facts": {
+        "price": "8.99",
+        "currency": "GBP",
+        "formatted_price": "£8.99"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best complete math learning app for preschool and early grades",
@@ -765,7 +867,8 @@
       "badge_labels": [
         "Children & learning",
         "Free to start · lifetime unlock",
-        "No adverts"
+        "No adverts",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/en-GB/index.html",
@@ -774,6 +877,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6779750237",
       "app_store_url": "https://apps.apple.com/gb/app/id6779750237",
       "app_store_cta_label": "Get Lumi Mission Planet on the App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best bedtime routine app for preschoolers with no ads",
@@ -808,7 +916,8 @@
       "badge_labels": [
         "Children & learning",
         "Paid download",
-        "No adverts"
+        "No adverts",
+        "App Store · £5.99"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/en-GB/index.html",
@@ -817,6 +926,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6779745474",
       "app_store_url": "https://apps.apple.com/gb/app/id6779745474",
       "app_store_cta_label": "Get Lumi Mission Planet Pro on the App Store →",
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "GBP",
+        "formatted_price": "£5.99"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best complete morning and bedtime routine app for kids",
@@ -851,7 +965,8 @@
       "badge_labels": [
         "Children & learning",
         "Free to start · lifetime unlock",
-        "No adverts"
+        "No adverts",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-travel-activity-app-for-kids-on-family-trips.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/en-GB/index.html",
@@ -860,6 +975,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
       "app_store_url": "https://apps.apple.com/gb/app/id6787193643",
       "app_store_cta_label": "Get Lumi Trip Planet on the App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best travel activity app for kids on family trips",
@@ -897,7 +1017,8 @@
         "Children & learning",
         "Free to start · lifetime unlock",
         "No adverts",
-        "No tracking"
+        "No tracking",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/en-GB/index.html",
@@ -906,6 +1027,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
       "app_store_url": "https://apps.apple.com/gb/app/id6779552704",
       "app_store_cta_label": "Get Lumi Weather on the App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best weather app to help parents plan outdoor time with kids",
@@ -940,7 +1066,8 @@
       "badge_labels": [
         "Productivity",
         "Free to start · lifetime unlock",
-        "No adverts"
+        "No adverts",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/en-GB/index.html",
@@ -949,6 +1076,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
       "app_store_url": "https://apps.apple.com/gb/app/id6785004775",
       "app_store_cta_label": "Get Mochi on the App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best simple to do list app iphone no subscription",
@@ -978,7 +1110,8 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · lifetime unlock"
+        "Free to start · lifetime unlock",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/en-GB/index.html",
@@ -987,6 +1120,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6781808054",
       "app_store_url": "https://apps.apple.com/gb/app/id6781808054",
       "app_store_cta_label": "Get PhotoCream on the App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best pay once film photo editor for travel creators on iphone",
@@ -1021,7 +1159,8 @@
       "badge_labels": [
         "Photo & utility",
         "Free to start · lifetime unlock",
-        "Private / on-device"
+        "Private / on-device",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/en-GB/index.html",
@@ -1030,6 +1169,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
       "app_store_url": "https://apps.apple.com/gb/app/id6780223070",
       "app_store_cta_label": "Get PicClear on the App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best app to free up iphone storage deleting duplicate photos",
@@ -1064,7 +1208,8 @@
       "badge_labels": [
         "Productivity",
         "Free to start · lifetime unlock",
-        "Private / on-device"
+        "Private / on-device",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/en-GB/index.html",
@@ -1073,6 +1218,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
       "app_store_url": "https://apps.apple.com/gb/app/id6779977651",
       "app_store_cta_label": "Get ScanTo Pro on the App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best offline document scanner app no cloud for nurses",
@@ -1110,7 +1260,8 @@
         "Sleep & focus",
         "Free to start · lifetime unlock",
         "Offline",
-        "No adverts"
+        "No adverts",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/en-GB/index.html",
@@ -1119,6 +1270,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
       "app_store_url": "https://apps.apple.com/gb/app/id6788236641",
       "app_store_cta_label": "Get Sereno on the App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best white noise app for falling asleep no subscription",
@@ -1153,7 +1309,8 @@
       "badge_labels": [
         "Photo & utility",
         "Paid download",
-        "Private / on-device"
+        "Private / on-device",
+        "App Store · £4.99"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/en-GB/index.html",
@@ -1162,6 +1319,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
       "app_store_url": "https://apps.apple.com/gb/app/id6780575828",
       "app_store_cta_label": "Get Snapport on the App Store →",
+      "storefront_facts": {
+        "price": "4.99",
+        "currency": "GBP",
+        "formatted_price": "£4.99"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best passport photo app for babies and toddlers at home",
@@ -1196,7 +1358,8 @@
       "badge_labels": [
         "Productivity",
         "Free to start · lifetime unlock",
-        "Private / on-device"
+        "Private / on-device",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/en-GB/index.html",
@@ -1205,6 +1368,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
       "app_store_url": "https://apps.apple.com/gb/app/id6782139553",
       "app_store_cta_label": "Get Sono Note on the App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best voice notes app that summarizes meetings on iphone",
@@ -1245,7 +1413,8 @@
         "Free to start · lifetime unlock",
         "Offline",
         "No account",
-        "No adverts"
+        "No adverts",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/en-GB/index.html",
@@ -1254,6 +1423,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6791299610",
       "app_store_url": "https://apps.apple.com/gb/app/id6791299610",
       "app_store_cta_label": "Get TripBee Lite on the App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best simple trip planner app for one upcoming trip iphone",
@@ -1294,7 +1468,8 @@
         "Paid download",
         "Offline",
         "No account",
-        "Private / on-device"
+        "Private / on-device",
+        "App Store · £5.99"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-trip-itinerary-planner-app-for-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/en-GB/index.html",
@@ -1303,6 +1478,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6787754435",
       "app_store_url": "https://apps.apple.com/gb/app/id6787754435",
       "app_store_cta_label": "Get TripBee Pro: Trip Planner on the App Store →",
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "GBP",
+        "formatted_price": "£5.99"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best trip itinerary planner app for iphone",
@@ -1337,7 +1517,8 @@
       "badge_labels": [
         "Photo & utility",
         "Free to start · lifetime unlock",
-        "Private / on-device"
+        "Private / on-device",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/en-GB/index.html",
@@ -1346,6 +1527,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
       "app_store_url": "https://apps.apple.com/gb/app/id6782275018",
       "app_store_cta_label": "Get Unblurry on the App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best app to fix blurry photos of kids on iphone",
@@ -1394,7 +1580,8 @@
         "No adverts",
         "No tracking",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · £5.99"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/en-GB/index.html",
@@ -1403,6 +1590,11 @@
       "canonical_app_store_url": "https://apps.apple.com/app/id6789917808",
       "app_store_url": "https://apps.apple.com/gb/app/id6789917808",
       "app_store_cta_label": "Get Wordmate: Learn 44 Languages on the App Store →",
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "GBP",
+        "formatted_price": "£5.99"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best vocabulary app for busy commuters with apple watch",

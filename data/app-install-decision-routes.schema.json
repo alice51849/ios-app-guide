@@ -282,6 +282,7 @@
         "canonical_app_store_url",
         "app_store_url",
         "app_store_cta_label",
+        "storefront_facts",
         "guide_cta_label",
         "publisher_disclosure",
         "source_persona_query",
@@ -503,6 +504,41 @@
         "app_store_cta_label": {
           "type": "string",
           "minLength": 3
+        },
+        "storefront_facts": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": false,
+          "required": [
+            "price",
+            "currency",
+            "formatted_price"
+          ],
+          "properties": {
+            "price": {
+              "type": "string",
+              "pattern": "^\\d+(?:\\.\\d+)?$"
+            },
+            "currency": {
+              "type": "string",
+              "pattern": "^[A-Z]{3}$"
+            },
+            "formatted_price": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rating_value": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 5
+            },
+            "rating_count": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
         },
         "guide_cta_label": {
           "type": "string",

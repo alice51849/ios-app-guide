@@ -1,0 +1,25 @@
+---
+title: "iPhone ನಲ್ಲಿ ಮಕ್ಕಳ ಧೂಳಾದ ಫೋಟೋಗಳನ್ನು ಸರಿಪಡಿಸಲು ಉತ್ತಮ ಅಪ್ಲಿಕೇಶನ್"
+lang: "kn-IN"
+canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/kn-IN/index.html"
+modified: "2026-07-23"
+app_store_id: "6782275018"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# iPhone ನಲ್ಲಿ ಮಕ್ಕಳ ಧೂಳಾದ ಫೋಟೋಗಳನ್ನು ಸರಿಪಡಿಸಲು ಉತ್ತಮ ಅಪ್ಲಿಕೇಶನ್
+
+ಮಕ್ಕಳು ಎಂದಿಗೂ ನಿಶ್ಚಲವಾಗಿರುವುದಿಲ್ಲ, ಆದ್ದರಿಂದ ಮೃದುವಾದ ಫೋಕಸ್ ಮತ್ತು ಕ್ಯಾಮೆರಾ ಕಂಪನದ ಶಾಟ್‌ಗಳು ಅನಿವಾರ್ಯ — Unblurry ಇದಕ್ಕಾಗಿ ನಿರ್ಮಿಸಲಾಗಿದೆ.
+
+- ಫೋಟೋ ಮತ್ತು ಉಪಯೋಗ
+- ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್
+- ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
+- App Store · ಉಚಿತ
+
+[App Store ನಲ್ಲಿ Unblurry ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6782275018)
+
+[ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
+
+> ಲ್ಯೂಮಿ ಸ್ಟುಡಿಯೋದಿಂದ ಪ್ರಕಟಕ-ರಚಿಸಿದ ಮಾರ್ಗದರ್ಶಿ, ಆ್ಯಪ್ ಅಭಿವೃದ್ಧಿಪಡಿಸಿದವರು. ಆ್ಯಪ್ ಹೆಸರುಗಳು ಅವರ ಮಾಲೀಕರ ಟ್ರೇಡ್‌ಮಾರ್ಕ್‌ಗಳು ಮತ್ತು ಗುರುತಿಸಲು ಮಾತ್ರ ಬಳಸಲಾಗುತ್ತವೆ. ದಾಖಲೆಗಳು, ಆರೋಗ್ಯ, ಶಾಲೆ ಮತ್ತು ಉತ್ಪಾದಕತೆ ನಿರ್ಧಾರಗಳಿಗೆ ಸಂಬಂಧಿಸಿದ ಅಧಿಕೃತ ಅಗತ್ಯಗಳನ್ನು ಪರಿಶೀಲಿಸಿ.

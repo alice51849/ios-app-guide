@@ -1,0 +1,29 @@
+---
+title: "אפליקציית אוצר מילים למשתמשים עסוקים עם Apple Watch"
+lang: "he"
+canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/he/index.html"
+modified: "2026-07-23"
+app_store_id: "6789917808"
+verified_live: true
+purchase_model: "paid_upfront"
+publisher: "Lumi Studio"
+---
+
+# אפליקציית אוצר מילים למשתמשים עסוקים עם Apple Watch
+
+משתמשים עסוקים צריכים תרגול אוצר מילים שמתאים לדקות פנויות בלי לדרוש שיעור מלא, חשבון חדש או טלפון ביד בכל סקירה — Wordmate: Learn 44 Languages נבנתה בדיוק לזה.
+
+- חינוך
+- הורדה בתשלום
+- ללא חשבון
+- ללא פרסומות
+- ללא מעקב
+- וידג'ט
+- Apple Watch
+- App Store · ₪19.90
+
+[קבל את Wordmate: Learn 44 Languages ב-App Store →](https://apps.apple.com/il/app/id6789917808)
+
+[קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
+
+> מדריך שפורסם על ידי Lumi Studio, מפתח האפליקציה. שמות האפליקציות הם סימני מסחר של בעליהן ומשמשים לזיהוי בלבד. עבור מסמכים, בריאות, לימודים והחלטות פרודוקטיביות, יש לוודא דרישות רשמיות במידת הצורך.

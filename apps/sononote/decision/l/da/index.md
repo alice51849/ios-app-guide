@@ -1,0 +1,25 @@
+---
+title: "bedste app til stemme-noter, der opsummerer møder på iPhone"
+lang: "da"
+canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/da/index.html"
+modified: "2026-07-23"
+app_store_id: "6782139553"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# bedste app til stemme-noter, der opsummerer møder på iPhone
+
+Efter et opkald vil du ikke have en rå transskription — du vil have opsummeringen, handlingspunkterne og et udkast til opfølgning — Sono Note er skabt til dette.
+
+- Produktivitet
+- Gratis at komme i gang · permanent oplåsning
+- Privat / på enheden
+- App Store · Gratis
+
+[Hent Sono Note i App Store →](https://apps.apple.com/dk/app/id6782139553)
+
+[Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
+
+> Vejledning udarbejdet af Lumi Studio, app-udvikleren. App-navne er varemærker tilhørende deres ejere og bruges kun til identifikation. For dokumenter, sundhed, skole og produktivitetsbeslutninger, bekræft officielle krav hvor relevant.

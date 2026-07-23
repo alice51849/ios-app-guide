@@ -1,0 +1,25 @@
+---
+title: "bedste matematikspil-app til børn til at opbygge logiske færdigheder på iPhone"
+lang: "da"
+canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/da/index.html"
+modified: "2026-07-23"
+app_store_id: "6778269699"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# bedste matematikspil-app til børn til at opbygge logiske færdigheder på iPhone
+
+Den bedste børnematematikapp træner ræsonnement — mønstre, sekvenser, rumlig tænkning — ikke bare regneøvelser, og skjuler det i et spil, barnet gerne vil spille — Lumi Math Planet er lavet til dette.
+
+- Børn & læring
+- Gratis at komme i gang · permanent oplåsning
+- Ingen reklamer
+- App Store · Gratis
+
+[Hent Lumi Math Planet i App Store →](https://apps.apple.com/dk/app/id6778269699)
+
+[Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
+
+> Vejledning udarbejdet af Lumi Studio, app-udvikleren. App-navne er varemærker tilhørende deres ejere og bruges kun til identifikation. For dokumenter, sundhed, skole og produktivitetsbeslutninger, bekræft officielle krav hvor relevant.

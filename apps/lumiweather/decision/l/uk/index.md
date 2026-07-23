@@ -1,0 +1,26 @@
+---
+title: "найкращий додаток погоди для планування часу на вулиці з дітьми"
+lang: "uk"
+canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/uk/index.html"
+modified: "2026-07-23"
+app_store_id: "6779552704"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# найкращий додаток погоди для планування часу на вулиці з дітьми
+
+Батькам, які планують час на вулиці, потрібно більше, ніж температура: потрібен швидкий, віковий огляд, чи підходять умови для дитини і який одяг доречний — Lumi Weather створений для цього.
+
+- Діти та навчання
+- Безкоштовно для початку · довічне розблокування
+- Без реклами
+- Без відстеження
+- App Store · Безкоштовно
+
+[Отримати Lumi Weather в App Store →](https://apps.apple.com/ua/app/id6779552704)
+
+[Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
+
+> Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.

@@ -258,6 +258,11 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
                 f'<link rel="canonical" href="{record["decision_page_url"]}">',
                 source,
             )
+            self.assertIn(
+                '<link rel="alternate" type="text/markdown" '
+                f'href="{app_install_decision_routes.decision_markdown_url(record["app_key"], record["locale"])}">',
+                source,
+            )
             self.assertIn(record["app_store_url"], source)
             self.assertIn(record["canonical_guide_url"], source)
             self.assertIn('id="decision-record"', source)
@@ -276,6 +281,47 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
                 record["locale"]
             ).values():
                 self.assertIn(feed_url, source)
+
+    def test_every_route_has_a_localized_markdown_alternate(self) -> None:
+        sitemap = (
+            self.pages / app_install_decision_routes.SITEMAP_NAME
+        ).read_text(encoding="utf-8")
+        self.assertNotIn("/index.md", sitemap)
+        for record in self.records:
+            path = (
+                self.pages
+                / app_install_decision_routes.decision_markdown_relative(
+                    record["app_key"],
+                    record["locale"],
+                )
+            )
+            self.assertTrue(path.is_file(), path)
+            source = path.read_text(encoding="utf-8")
+            self.assertIn(
+                f'lang: {json.dumps(record["locale"], ensure_ascii=False)}',
+                source,
+            )
+            self.assertIn(record["decision_page_url"], source)
+            self.assertIn(record["app_store_url"], source)
+            self.assertIn(record["canonical_guide_url"], source)
+            self.assertIn(
+                app_install_decision_routes._markdown_text(
+                    record["publisher_query"]
+                ),
+                source,
+            )
+            self.assertIn(
+                app_install_decision_routes._markdown_text(
+                    record["decision_context"]
+                ),
+                source,
+            )
+            self.assertIn(
+                app_install_decision_routes._markdown_text(
+                    record["publisher_disclosure"]
+                ),
+                source,
+            )
 
     def test_every_route_has_localized_install_share_metadata(self) -> None:
         verified_storefronts = 0

@@ -1,0 +1,25 @@
+---
+title: "Aile gezilerinde çocuklar için en iyi seyahat aktivite uygulaması"
+lang: "tr"
+canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/tr/index.html"
+modified: "2026-07-23"
+app_store_id: "6787193643"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# Aile gezilerinde çocuklar için en iyi seyahat aktivite uygulaması
+
+Genç çocuklarla seyahat eden ebeveynler, paketleme, bekleme ve yeni bir yeri keşfetmeyi maceranın parçası yapan aktivitelere ihtiyaç duyar; aksi halde bu süreç bir stres kaynağına dönüşür — Lumi Trip Planet bunun için tasarlandı.
+
+- Çocuklar & öğrenme
+- Başlangıçta ücretsiz · ömür boyu açma
+- Reklam yok
+- App Store · Ücretsiz
+
+[Lumi Trip Planet’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6787193643)
+
+[Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-travel-activity-app-for-kids-on-family-trips.html)
+
+> Lumi Studio tarafından yayımlanan, uygulama geliştiricisi tarafından hazırlanmış rehber. Uygulama isimleri sahiplerinin ticari markalarıdır ve yalnızca tanımlama amacıyla kullanılmıştır. Belgeler, sağlık, okul ve verimlilik kararları için ilgili resmi gereksinimleri doğrulayınız.

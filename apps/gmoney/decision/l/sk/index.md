@@ -1,0 +1,26 @@
+---
+title: "najlepšia aplikácia na sledovanie cestovného rozpočtu bez predplatného pre iPhone"
+lang: "sk"
+canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/sk/index.html"
+modified: "2026-07-23"
+app_store_id: "6755782939"
+verified_live: true
+purchase_model: "paid_upfront"
+publisher: "Lumi Studio"
+---
+
+# najlepšia aplikácia na sledovanie cestovného rozpočtu bez predplatného pre iPhone
+
+Na ceste potrebujete aplikáciu na rozpočet, ktorá funguje offline v krajine bez dát, zvláda viac mien a nevyžaduje účet — usporiadanú podľa ciest, aby bol každý výlet samostatný — G+Money je na to stvorená.
+
+- Peniaze a cestovanie
+- Platené stiahnutie
+- Offline
+- Bez účtu
+- App Store · 5,99 €
+
+[Získajte G+Money v App Store →](https://apps.apple.com/sk/app/id6755782939)
+
+[Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
+
+> Sprievodca od vydavateľa Lumi Studio, vývojára aplikácie. Názvy aplikácií sú ochranné známky ich vlastníkov a používajú sa len na identifikáciu. Pri dokumentoch, zdraví, škole a rozhodnutiach o produktivite overte oficiálne požiadavky, kde je to relevantné.

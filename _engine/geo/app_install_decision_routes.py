@@ -74,6 +74,14 @@ def decision_page_url(app_key: str, locale: str) -> str:
     return f"{SITE}/{decision_page_relative(app_key, locale).as_posix()}"
 
 
+def decision_markdown_relative(app_key: str, locale: str) -> Path:
+    return decision_page_relative(app_key, locale).with_suffix(".md")
+
+
+def decision_markdown_url(app_key: str, locale: str) -> str:
+    return f"{SITE}/{decision_markdown_relative(app_key, locale).as_posix()}"
+
+
 def decision_oembed_relative(app_key: str, locale: str) -> Path:
     if locale not in OFFICIAL_LOCALES or re.fullmatch(
         r"[a-z0-9]+", app_key
@@ -1028,6 +1036,7 @@ def render_page(
 {social_metadata}
 <title>{html.escape(str(record["publisher_query"]))} | {html.escape(str(record["app_name"]))}</title>
 <link rel="canonical" href="{html.escape(str(record["decision_page_url"]), quote=True)}">
+<link rel="alternate" type="text/markdown" href="{html.escape(decision_markdown_url(str(record["app_key"]), locale), quote=True)}">
 <link rel="alternate" type="application/json" href="{html.escape(str(record["locale_index_url"]), quote=True)}">
 <link rel="alternate" type="application/schema+json" href="{html.escape(schema_url(), quote=True)}">
 {_alternate_links(str(record["app_key"]), locale)}
@@ -1191,6 +1200,45 @@ footer {{
 """
 
 
+def _markdown_text(value: Any) -> str:
+    text = " ".join(str(value).replace("\r", "\n").splitlines())
+    return re.sub(r"([\\`*_[\]<>#])", r"\\\1", text)
+
+
+def render_markdown(record: dict[str, Any], modified: str) -> str:
+    facts = "\n".join(
+        f"- {_markdown_text(label)}" for label in record["badge_labels"]
+    )
+    title = _markdown_text(record["publisher_query"])
+    description = _markdown_text(record["decision_context"])
+    app_store_label = _markdown_text(record["app_store_cta_label"])
+    guide_label = _markdown_text(record["guide_cta_label"])
+    disclosure = _markdown_text(record["publisher_disclosure"])
+    frontmatter = {
+        "title": str(record["publisher_query"]),
+        "lang": str(record["locale"]),
+        "canonical": str(record["decision_page_url"]),
+        "modified": modified,
+        "app_store_id": str(record["app_store_id"]),
+        "verified_live": bool(record["verified_live"]),
+        "purchase_model": str(record["purchase_model"]),
+        "publisher": "Lumi Studio",
+    }
+    metadata = "\n".join(
+        f"{key}: {json.dumps(value, ensure_ascii=False)}"
+        for key, value in frontmatter.items()
+    )
+    return (
+        f"---\n{metadata}\n---\n\n"
+        f"# {title}\n\n"
+        f"{description}\n\n"
+        f"{facts}\n\n"
+        f"[{app_store_label}]({record['app_store_url']})\n\n"
+        f"[{guide_label}]({record['canonical_guide_url']})\n\n"
+        f"> {disclosure}\n"
+    )
+
+
 def llms_lines(*, full: bool) -> list[str]:
     if not (PAGES / DATA_RELATIVE).is_file():
         return []
@@ -1267,6 +1315,7 @@ def build(pages: Path = PAGES) -> list[str]:
         feed_contexts,
     )
     expected_oembed_paths: set[Path] = set()
+    expected_markdown_paths: set[Path] = set()
     for record in records:
         oembed_path = pages / decision_oembed_relative(
             str(record["app_key"]),
@@ -1294,11 +1343,23 @@ def build(pages: Path = PAGES) -> list[str]:
                 feed_contexts[str(record["locale"])]["title"],
             ),
         )
+        markdown_path = pages / decision_markdown_relative(
+            str(record["app_key"]),
+            str(record["locale"]),
+        )
+        expected_markdown_paths.add(markdown_path)
+        _write_text(markdown_path, render_markdown(record, modified))
     oembed_root = pages / OEMBED_DIR
     for stale in (
         oembed_root.rglob("*.json") if oembed_root.is_dir() else ()
     ):
         if stale not in expected_oembed_paths:
+            stale.unlink()
+    apps_root = pages / "apps"
+    for stale in (
+        apps_root.glob("*/decision/l/*/index.md") if apps_root.is_dir() else ()
+    ):
+        if stale not in expected_markdown_paths:
             stale.unlink()
     for directory in sorted(
         (

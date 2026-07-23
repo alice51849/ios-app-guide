@@ -1,0 +1,24 @@
+---
+title: "лучший однократный редактор фото в стиле пленки для тревел-креаторов на iPhone"
+lang: "ru"
+canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/ru/index.html"
+modified: "2026-07-23"
+app_store_id: "6781808054"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# лучший однократный редактор фото в стиле пленки для тревел-креаторов на iPhone
+
+Тревел-креаторам нужен повторяемый пленочный стиль с зерном, галацией и цветовым характером, который не превращает каждое место в одинаковый фильтр — PhotoCream создан для этого.
+
+- Фото и инструменты
+- Бесплатно начать · пожизненная разблокировка
+- App Store · Бесплатно
+
+[Скачать PhotoCream в App Store →](https://apps.apple.com/ru/app/id6781808054)
+
+[Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
+
+> Руководство от издателя Lumi Studio, разработчика приложения. Названия приложений являются товарными знаками их владельцев и используются только для идентификации. Для документов, здоровья, учебы и продуктивности проверяйте официальные требования, если это необходимо.

@@ -1,0 +1,26 @@
+---
+title: "aplikasi derau putih terbaik untuk tidur tanpa langganan"
+lang: "id"
+canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/id/index.html"
+modified: "2026-07-23"
+app_store_id: "6788236641"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# aplikasi derau putih terbaik untuk tidur tanpa langganan
+
+Untuk tidur, langganan yang mengganggu setiap bulan bertentangan dengan ketenangan — Sereno dibuat untuk ini.
+
+- Tidur & fokus
+- Gratis untuk mulai · buka kunci permanen
+- Offline
+- Tanpa iklan
+- App Store · Gratis
+
+[Dapatkan Sereno di App Store →](https://apps.apple.com/id/app/id6788236641)
+
+[Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
+
+> Panduan yang dibuat oleh penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan hanya digunakan untuk identifikasi. Untuk dokumen, kesehatan, sekolah, dan keputusan produktivitas, verifikasi persyaratan resmi jika relevan.

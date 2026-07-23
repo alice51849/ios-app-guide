@@ -207,6 +207,7 @@ def main():
     require([PY, os.path.join(HERE, "portfolio_app_catalog_api.py")], env=env)
     require([PY, os.path.join(HERE, "publisher_intent_catalog.py")], env=env)
     require([PY, os.path.join(HERE, "publisher_intent_visuals.py")], env=env)
+    require([PY, os.path.join(HERE, "app_video_lessons.py")], env=env)
     require(
         [
             PY,

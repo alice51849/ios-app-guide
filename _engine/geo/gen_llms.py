@@ -30,6 +30,7 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 import app_install_decision_routes  # noqa: E402
+import app_video_lessons  # noqa: E402
 import build_pages_i18n  # noqa: E402
 from app_store_storefronts import (  # noqa: E402
     load_storefront_availability,
@@ -809,6 +810,7 @@ def build_llms(comp_map, live_keys):
     lines += portfolio_finder_lines(full=False)
     lines += portfolio_cost_calculator_lines(full=False)
     lines += publisher_intent_visual_lines(full=False)
+    lines += app_video_lessons.llms_lines(full=False)
     lines += portfolio_offer_catalog_lines(full=False)
     lines += app_install_decision_route_lines(full=False)
     static_apis = [
@@ -1456,6 +1458,7 @@ def build_llms_full(comp_map, live_keys):
     lines += portfolio_finder_lines(full=True)
     lines += portfolio_cost_calculator_lines(full=True)
     lines += publisher_intent_visual_lines(full=True)
+    lines += app_video_lessons.llms_lines(full=True)
     lines += portfolio_offer_catalog_lines(full=True)
     lines += app_install_decision_route_lines(full=True)
     if os.path.exists(os.path.join(TOOLS, f"{FAMILY_TRAVEL_OER}.metadata.json")):
@@ -1825,6 +1828,7 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_answers.xml", "sitemap_guides.xml", "sitemap_apps.xml",
         "sitemap_stories.xml", "sitemap_llms.xml",
         "sitemap_images.xml", PUBLISHER_INTENT_VISUALS_SITEMAP,
+        app_video_lessons.SITEMAP_NAME,
         "sitemap_linkset.xml", "sitemap_oembed.xml",
         "linkset.json", app_install_decision_routes.SITEMAP_NAME,
         "sitemap_hubs.xml", "sitemap_tools.xml", "sitemap_data.xml",
@@ -1884,6 +1888,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_stories.xml",
             f"Sitemap: {SITE}/sitemap_images.xml",
             f"Sitemap: {SITE}/{PUBLISHER_INTENT_VISUALS_SITEMAP}",
+            f"Sitemap: {SITE}/{app_video_lessons.SITEMAP_NAME}",
             f"Sitemap: {SITE}/sitemap_linkset.xml",
             f"Sitemap: {SITE}/sitemap_oembed.xml",
             f"Sitemap: {SITE}/sitemap_llms.xml",
@@ -1924,6 +1929,7 @@ def build_sitemap_index():
             "sitemap_guides.xml", "sitemap_apps.xml",
             "sitemap_stories.xml", "sitemap_images.xml", "sitemap_linkset.xml",
             PUBLISHER_INTENT_VISUALS_SITEMAP,
+            app_video_lessons.SITEMAP_NAME,
             "sitemap_oembed.xml", "sitemap_llms.xml",
             app_install_decision_routes.SITEMAP_NAME,
             "sitemap_hubs.xml", "sitemap_tools.xml",

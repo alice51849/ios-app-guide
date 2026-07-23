@@ -1,0 +1,170 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-app-video-lessons.schema.json",
+  "title": "Lumi Studio App Video Lessons",
+  "type": "object",
+  "required": [
+    "name",
+    "dateModified",
+    "app_store_link_policy",
+    "campaign_link_attribution_ready",
+    "coverage_status",
+    "portfolio_app_count",
+    "app_count",
+    "locale_count",
+    "video_count",
+    "records"
+  ],
+  "properties": {
+    "name": {
+      "const": "Lumi Studio App Video Lessons"
+    },
+    "dateModified": {
+      "type": "string",
+      "format": "date"
+    },
+    "app_store_link_policy": {
+      "enum": [
+        "attributed_direct",
+        "clean_direct_until_provider_token_available"
+      ]
+    },
+    "campaign_link_attribution_ready": {
+      "type": "boolean"
+    },
+    "coverage_status": {
+      "const": "incremental_publisher_video_archive"
+    },
+    "portfolio_app_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "app_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "locale_count": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 50
+    },
+    "video_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "record_id",
+          "locale",
+          "app_key",
+          "app_store_id",
+          "video_url",
+          "thumbnail_url",
+          "duration",
+          "published_at",
+          "page_url",
+          "app_store_url",
+          "verified_live"
+        ],
+        "properties": {
+          "record_id": {
+            "type": "string"
+          },
+          "locale": {
+            "enum": [
+              "ar-SA",
+              "bn-BD",
+              "ca",
+              "cs",
+              "da",
+              "de-DE",
+              "el",
+              "en-AU",
+              "en-CA",
+              "en-GB",
+              "en-US",
+              "es-ES",
+              "es-MX",
+              "fi",
+              "fr-CA",
+              "fr-FR",
+              "gu-IN",
+              "he",
+              "hi",
+              "hr",
+              "hu",
+              "id",
+              "it",
+              "ja",
+              "kn-IN",
+              "ko",
+              "ml-IN",
+              "mr-IN",
+              "ms",
+              "nl-NL",
+              "no",
+              "or-IN",
+              "pa-IN",
+              "pl",
+              "pt-BR",
+              "pt-PT",
+              "ro",
+              "ru",
+              "sk",
+              "sl-SI",
+              "sv",
+              "ta-IN",
+              "te-IN",
+              "th",
+              "tr",
+              "uk",
+              "ur-PK",
+              "vi",
+              "zh-Hans",
+              "zh-Hant"
+            ]
+          },
+          "app_key": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+$"
+          },
+          "app_store_id": {
+            "type": "string",
+            "pattern": "^[0-9]+$"
+          },
+          "video_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "thumbnail_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "duration": {
+            "type": "string",
+            "pattern": "^PT[0-9]+(?:\\.[0-9]+)?S$"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "page_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "app_store_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "verified_live": {
+            "const": true
+          }
+        }
+      }
+    }
+  }
+}

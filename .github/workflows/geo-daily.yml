@@ -76,6 +76,7 @@ jobs:
           python3 publisher_intent_catalog.py
           python3 portfolio_offer_catalog.py
           python3 publisher_intent_visuals.py
+          python3 app_video_lessons.py
           python3 gen_social_previews.py --oembed-only
           python3 gen_github_discovery_readmes.py
           python3 gen_publisher_disclosures.py
@@ -198,6 +199,7 @@ jobs:
           python3 publisher_intent_catalog.py
           python3 portfolio_offer_catalog.py
           python3 publisher_intent_visuals.py
+          python3 app_video_lessons.py
           python3 gen_social_previews.py --oembed-only
           python3 gen_github_discovery_readmes.py
           python3 gen_publisher_disclosures.py

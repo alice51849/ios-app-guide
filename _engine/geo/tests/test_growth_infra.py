@@ -21689,6 +21689,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(2, workflow.count("publisher_intent_catalog.py"))
         self.assertEqual(2, workflow.count("portfolio_offer_catalog.py"))
         self.assertEqual(2, workflow.count("publisher_intent_visuals.py"))
+        self.assertEqual(2, workflow.count("app_video_lessons.py"))
         self.assertEqual(2, workflow.count("gen_github_discovery_readmes.py"))
         self.assertLess(
             workflow.index("refresh=True"),
@@ -21866,6 +21867,7 @@ class GeneratorTests(unittest.TestCase):
             "publisher_intent_catalog.py",
             "portfolio_offer_catalog.py",
             "publisher_intent_visuals.py",
+            "app_video_lessons.py",
             "gen_github_discovery_readmes.py",
             "gen_publisher_disclosures.py",
             "gen_guide_design.py",
@@ -21889,6 +21891,10 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertLess(
             refresh_block.index("publisher_intent_visuals.py"),
+            refresh_block.index("app_video_lessons.py"),
+        )
+        self.assertLess(
+            refresh_block.index("app_video_lessons.py"),
             refresh_block.index("gen_social_previews.py --oembed-only"),
         )
         self.assertLess(
@@ -22062,6 +22068,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("portfolio_app_catalog_api.py", publish)
         self.assertIn("publisher_intent_catalog.py", publish)
         self.assertIn("publisher_intent_visuals.py", publish)
+        self.assertIn("app_video_lessons.py", publish)
         self.assertIn("gen_github_discovery_readmes.py", publish)
         self.assertIn("app_install_decision_routes.py", publish)
         self.assertLess(
@@ -22102,6 +22109,10 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertLess(
             publish.index("publisher_intent_visuals.py"),
+            publish.index("app_video_lessons.py"),
+        )
+        self.assertLess(
+            publish.index("app_video_lessons.py"),
             publish.index('"--oembed-only"'),
         )
         self.assertLess(
@@ -22239,6 +22250,7 @@ class GeneratorTests(unittest.TestCase):
             "portfolio_app_catalog_api.py",
             "publisher_intent_catalog.py",
             "publisher_intent_visuals.py",
+            "app_video_lessons.py",
             "gen_github_discovery_readmes.py",
             "gen_publisher_disclosures.py",
             "gen_guide_design.py",

@@ -2560,6 +2560,28 @@
 - Machine-readable manifest: https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-intent-visuals.json
 - Every image links to a matching guide and direct App Store route; the collection is first-party, alphabetical, and not a ranking
 
+## Publisher-authored app video walkthroughs
+- Gallery: https://alice51849.github.io/ios-app-guide/videos/
+- Video sitemap: https://alice51849.github.io/ios-app-guide/sitemap_video_lessons.xml
+- Machine-readable manifest: https://alice51849.github.io/ios-app-guide/data/lumi-studio-app-video-lessons.json
+- JSON Schema: https://alice51849.github.io/ios-app-guide/data/lumi-studio-app-video-lessons.schema.json
+- Current coverage: 44 videos, 19/32 verified live apps, 14/50 official Apple locales
+  - de-DE: https://alice51849.github.io/ios-app-guide/videos/de-DE/
+  - en-US: https://alice51849.github.io/ios-app-guide/videos/en-US/
+  - es-ES: https://alice51849.github.io/ios-app-guide/videos/es-ES/
+  - fr-FR: https://alice51849.github.io/ios-app-guide/videos/fr-FR/
+  - hi: https://alice51849.github.io/ios-app-guide/videos/hi/
+  - id: https://alice51849.github.io/ios-app-guide/videos/id/
+  - it: https://alice51849.github.io/ios-app-guide/videos/it/
+  - ja: https://alice51849.github.io/ios-app-guide/videos/ja/
+  - ko: https://alice51849.github.io/ios-app-guide/videos/ko/
+  - pt-BR: https://alice51849.github.io/ios-app-guide/videos/pt-BR/
+  - ru: https://alice51849.github.io/ios-app-guide/videos/ru/
+  - tr: https://alice51849.github.io/ios-app-guide/videos/tr/
+  - zh-Hans: https://alice51849.github.io/ios-app-guide/videos/zh-Hans/
+  - zh-Hant: https://alice51849.github.io/ios-app-guide/videos/zh-Hant/
+- Coverage is incremental and includes only publisher-authored walkthroughs made from real app screens
+
 ## Verified locale-aware App Store offers
 - Schema.org OfferCatalog index: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/index.json
 - Official Apple locales: 50/50
@@ -2969,6 +2991,7 @@
 - https://alice51849.github.io/ios-app-guide/sitemap_llms.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_images.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_intent_visuals.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_video_lessons.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_linkset.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_oembed.xml
 - https://alice51849.github.io/ios-app-guide/linkset.json

@@ -130,6 +130,45 @@ class IndexNowTests(unittest.TestCase):
             [endpoint for endpoint, _ in calls],
         )
 
+    def test_default_batch_covers_portfolio_in_two_requests_per_endpoint(
+        self,
+    ) -> None:
+        calls = []
+
+        def sender(endpoint: str, _payload: bytes) -> None:
+            calls.append(endpoint)
+
+        urls = [
+            f"https://example.com/apps/{number}.html"
+            for number in range(14_891)
+        ]
+        accepted = indexnow.submit_all(
+            urls,
+            "abcdefgh",
+            "https://example.com/apps",
+            endpoints=("first", "second"),
+            sender=sender,
+        )
+
+        self.assertEqual(len(urls), accepted)
+        self.assertEqual(["first", "second"] * 2, calls)
+
+    def test_endpoint_request_timeout_is_bounded(self) -> None:
+        opener = mock.Mock(return_value=Response(202))
+
+        indexnow.submit_endpoint(
+            "https://api.example",
+            b"{}",
+            opener=opener,
+            sleeper=lambda _delay: None,
+        )
+
+        self.assertEqual(
+            indexnow.REQUEST_TIMEOUT_SECONDS,
+            opener.call_args.kwargs["timeout"],
+        )
+        self.assertEqual(30, indexnow.REQUEST_TIMEOUT_SECONDS)
+
     def test_nonretryable_http_error_fails_immediately_with_body(self) -> None:
         error = urllib.error.HTTPError(
             "https://api.example",

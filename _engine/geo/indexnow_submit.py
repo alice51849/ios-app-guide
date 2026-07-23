@@ -26,6 +26,8 @@ ENDPOINTS = (
 ACCEPTED_STATUSES = {200, 202}
 RETRYABLE_STATUSES = {429, 500, 502, 503, 504}
 KEY_RE = re.compile(r"[A-Za-z0-9_-]{8,128}")
+DEFAULT_BATCH_SIZE = 10_000
+REQUEST_TIMEOUT_SECONDS = 30
 
 
 class SubmissionError(RuntimeError):
@@ -149,7 +151,10 @@ def submit_endpoint(
             },
         )
         try:
-            with opener(request, timeout=90) as response:
+            with opener(
+                request,
+                timeout=REQUEST_TIMEOUT_SECONDS,
+            ) as response:
                 body = response.read(1000).decode("utf-8", "replace").strip()
                 if response.status not in ACCEPTED_STATUSES:
                     raise SubmissionError(
@@ -198,7 +203,7 @@ def submit_all(
     key: str,
     site: str,
     *,
-    batch_size: int = 1000,
+    batch_size: int = DEFAULT_BATCH_SIZE,
     endpoints: tuple[str, ...] = ENDPOINTS,
     sender=submit_endpoint,
 ) -> int:
@@ -225,7 +230,11 @@ def main() -> None:
     parser.add_argument(
         "--key-file", type=Path, default=HERE / "indexnow_key.txt"
     )
-    parser.add_argument("--batch-size", type=int, default=1000)
+    parser.add_argument(
+        "--batch-size",
+        type=int,
+        default=DEFAULT_BATCH_SIZE,
+    )
     parser.add_argument("--limit", type=int)
     args = parser.parse_args()
 

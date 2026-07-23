@@ -32,4 +32,4 @@ jobs:
             --pages-dir . \
             --site https://alice51849.github.io/ios-app-guide \
             --key-file "$keyfile" \
-            --batch-size 1000
+            --batch-size 10000

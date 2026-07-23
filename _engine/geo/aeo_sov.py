@@ -19,6 +19,7 @@
   python geo/aeo_sov.py scanto cvdesk   # 指定 app
   python geo/aeo_sov.py --limit 3       # 只跑前 3 個 app(驗證用)
   python geo/aeo_sov.py --per-query 1   # 每問句只問 1 次(預設 1;>1 可平均更穩)
+  python geo/aeo_sov.py --queries-per-app 2  # 每款公平輪替抽樣 2 題
   OPENAI_MODEL=gpt-4o python geo/aeo_sov.py   # 換更懂利基 app 的模型
 """
 import argparse
@@ -40,8 +41,11 @@ from queries import ALL as QUERIES  # noqa: E402  (geo/queries.py)
 REPORTS = os.path.join(HERE, "reports")
 os.makedirs(REPORTS, exist_ok=True)
 JSON_OUT = os.path.join(REPORTS, "aeo_sov.json")
+CHECKPOINT_OUT = os.environ.get(
+    "AEO_SOV_CHECKPOINT",
+    os.path.expanduser("~/.growth-private/aeo-sov-checkpoint.json"),
+)
 
-OPENAI_KEY = open(os.path.expanduser("~/.openai_key")).read().strip()
 OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
 
 SYS = (
@@ -50,6 +54,38 @@ SYS = (
     "names, best first. Only list apps you genuinely believe exist on the iOS App Store. "
     "Never invent names. If unsure, list fewer apps."
 )
+
+
+def _openai_key():
+    key = os.environ.get("OPENAI_API_KEY", "").strip()
+    if key:
+        return key
+    path = os.path.expanduser("~/.openai_key")
+    try:
+        with open(path, encoding="utf-8") as handle:
+            key = handle.read().strip()
+    except FileNotFoundError as exc:
+        raise RuntimeError(f"OpenAI key not found: {path}") from exc
+    if not key:
+        raise RuntimeError(f"OpenAI key is empty: {path}")
+    return key
+
+
+def _atomic_write_json(path, payload, mode=None):
+    parent = os.path.dirname(path)
+    os.makedirs(parent, mode=0o700, exist_ok=True)
+    temporary = f"{path}.tmp.{os.getpid()}"
+    try:
+        with open(temporary, "w", encoding="utf-8") as handle:
+            json.dump(payload, handle, ensure_ascii=False, indent=2)
+            handle.flush()
+            os.fsync(handle.fileno())
+        if mode is not None:
+            os.chmod(temporary, mode)
+        os.replace(temporary, path)
+    finally:
+        if os.path.exists(temporary):
+            os.remove(temporary)
 
 
 def normalize(s):
@@ -96,7 +132,7 @@ def openai_json(system, user, max_tokens=600, retries=3):
         try:
             req = urllib.request.Request(
                 "https://api.openai.com/v1/chat/completions", data=body,
-                headers={"Authorization": f"Bearer {OPENAI_KEY}",
+                headers={"Authorization": f"Bearer {_openai_key()}",
                          "Content-Type": "application/json"})
             with urllib.request.urlopen(req, timeout=30) as r:
                 msg = json.loads(r.read().decode())["choices"][0]["message"]["content"]
@@ -115,11 +151,7 @@ def ask(query):
         'Return strict JSON: {"apps": [{"name": "App Name", "why": "short"}]}. '
         "Max 8 apps. Real App Store apps only."
     )
-    try:
-        res = openai_json(SYS, user)
-    except Exception as e:  # noqa: BLE001
-        print(f"   ! openai err: {e}", file=sys.stderr)
-        return []
+    res = openai_json(SYS, user)
     apps = res.get("apps") or []
     names = []
     for it in apps:
@@ -132,10 +164,23 @@ def ask(query):
     return names
 
 
-def run_app(key, per_query=1):
+def select_queries(queries, limit, cycle):
+    pool = list(queries)
+    if limit <= 0 or limit >= len(pool):
+        return pool, 0
+    offset = (cycle * limit) % len(pool)
+    return [pool[(offset + index) % len(pool)] for index in range(limit)], offset
+
+
+def run_app(key, per_query=1, queries_per_app=0, sample_cycle=0):
     a = APPS[key]
     al = aliases(key)
-    qs = QUERIES.get(key, [])
+    query_pool = list(QUERIES.get(key, []))
+    qs, sample_offset = select_queries(
+        query_pool,
+        queries_per_app,
+        sample_cycle,
+    )
     rows = []
     comp = Counter()           # 競品 share-of-voice(出現在前段的次數)
     comp_top = Counter()       # 競品出現在第 1 名的次數
@@ -175,6 +220,8 @@ def run_app(key, per_query=1):
         "key": key,
         "name": a["name"],
         "appstore": appstore_url(key),
+        "query_pool_size": len(query_pool),
+        "sample_offset": sample_offset,
         "queries": len(qs),
         "mentions": len(mentioned),
         "mention_rate": round(len(mentioned) / len(qs), 3) if qs else 0,
@@ -186,13 +233,18 @@ def run_app(key, per_query=1):
     }
 
 
-def write_markdown(results):
+def write_markdown(results, queries_per_app=0, sample_cycle=0):
     today = date.today().isoformat()
     md = os.path.join(REPORTS, f"aeo_sov_{today}.md")
     results_sorted = sorted(results, key=lambda r: (-r["mention_rate"], r["avg_rank_when_mentioned"] or 99))
     lines = []
     lines.append(f"# AEO Share-of-Voice 攻擊清單 — {today}")
     lines.append(f"> 模型:`{OPENAI_MODEL}`　｜　量測「有人問 AI 要用哪個 app」時你被點名的比率。")
+    if queries_per_app:
+        lines.append(
+            f"> 公平輪替抽樣:每款最多 {queries_per_app} 題,cycle={sample_cycle};"
+            "每週自動換題，完整問句池仍保留供手動全量掃描。"
+        )
     lines.append("> 曝光率低 = AI 不認識你 = 該補來源/落地頁;top_competitors = 你要寫 `[X] alternative` 頁的對象。\n")
     lines.append("## 總覽(依被推薦率排序)\n")
     lines.append("| App | 被推薦率 | 平均名次 | 缺席問句 | AI 最常推的競品(前3) |")
@@ -220,28 +272,122 @@ def write_markdown(results):
     return md
 
 
+def _checkpoint_signature(keys, per_query, queries_per_app, sample_cycle):
+    return {
+        "version": 1,
+        "model": OPENAI_MODEL,
+        "keys": keys,
+        "per_query": per_query,
+        "queries_per_app": queries_per_app,
+        "sample_cycle": sample_cycle,
+    }
+
+
+def _load_checkpoint(signature):
+    try:
+        with open(CHECKPOINT_OUT, encoding="utf-8") as handle:
+            checkpoint = json.load(handle)
+    except FileNotFoundError:
+        return {}
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(f"Invalid SoV checkpoint: {CHECKPOINT_OUT}") from exc
+    if checkpoint.get("signature") != signature:
+        return {}
+    results = checkpoint.get("results")
+    if not isinstance(results, dict):
+        raise RuntimeError(f"Invalid SoV checkpoint results: {CHECKPOINT_OUT}")
+    return results
+
+
+def _save_checkpoint(signature, results):
+    _atomic_write_json(
+        CHECKPOINT_OUT,
+        {"signature": signature, "results": results},
+        mode=0o600,
+    )
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("apps", nargs="*", help="指定 app key(預設全部)")
     ap.add_argument("--limit", type=int, default=0, help="只跑前 N 個 app")
     ap.add_argument("--per-query", type=int, default=1, help="每問句問幾次(>1 更穩、更貴)")
+    ap.add_argument(
+        "--queries-per-app",
+        type=int,
+        default=0,
+        help="每款公平輪替抽樣 N 題(0=全量)",
+    )
+    ap.add_argument(
+        "--sample-cycle",
+        type=int,
+        help="抽樣輪次(預設依目前週次自動遞增)",
+    )
     args = ap.parse_args()
+    if args.per_query < 1:
+        ap.error("--per-query must be at least 1")
+    if args.queries_per_app < 0:
+        ap.error("--queries-per-app cannot be negative")
 
     keys = args.apps or list(APPS.keys())
     keys = [k for k in keys if k in APPS]
     if args.limit:
         keys = keys[:args.limit]
+    sample_cycle = (
+        args.sample_cycle
+        if args.sample_cycle is not None
+        else date.today().toordinal() // 7
+    )
 
     print(f"== AEO Share-of-Voice｜模型 {OPENAI_MODEL}｜{len(keys)} 個 app ==\n")
-    results = []
+    if args.queries_per_app:
+        print(
+            f"公平輪替抽樣:每款最多 {args.queries_per_app} 題,"
+            f"cycle={sample_cycle}\n"
+        )
+    signature = _checkpoint_signature(
+        keys,
+        args.per_query,
+        args.queries_per_app,
+        sample_cycle,
+    )
+    results_by_key = _load_checkpoint(signature)
     for k in keys:
+        if k in results_by_key:
+            print(f"↪ 已從 checkpoint 恢復 {APPS[k]['name']} ({k})")
+            continue
         print(f"▶ {APPS[k]['name']} ({k})")
-        results.append(run_app(k, per_query=args.per_query))
+        try:
+            results_by_key[k] = run_app(
+                k,
+                per_query=args.per_query,
+                queries_per_app=args.queries_per_app,
+                sample_cycle=sample_cycle,
+            )
+        except Exception as exc:  # noqa: BLE001
+            print(
+                f"AEO_SOV_API_ERROR {type(exc).__name__}: {exc}",
+                file=sys.stderr,
+            )
+            return 75
+        _save_checkpoint(signature, results_by_key)
+    results = [results_by_key[k] for k in keys]
 
-    with open(JSON_OUT, "w", encoding="utf-8") as f:
-        json.dump({"model": OPENAI_MODEL, "date": date.today().isoformat(),
-                   "results": results}, f, ensure_ascii=False, indent=2)
-    md = write_markdown(results)
+    _atomic_write_json(
+        JSON_OUT,
+        {
+            "model": OPENAI_MODEL,
+            "date": date.today().isoformat(),
+            "queries_per_app": args.queries_per_app,
+            "sample_cycle": sample_cycle,
+            "results": results,
+        },
+    )
+    md = write_markdown(
+        results,
+        queries_per_app=args.queries_per_app,
+        sample_cycle=sample_cycle,
+    )
 
     # 趨勢追蹤:每次量測 append 一筆到 sov_history.json(同日覆蓋),讓幾週後能看出走勢
     hist_path = os.path.join(os.path.dirname(JSON_OUT), "sov_history.json")
@@ -254,10 +400,20 @@ def main():
     today = date.today().isoformat()
     hist = [h for h in hist if h.get("date") != today]
     avg = round(sum(r["mention_rate"] for r in results) / len(results), 3) if results else 0
-    hist.append({"date": today, "model": OPENAI_MODEL, "avg_mention_rate": avg,
-                 "rates": {r["key"]: round(r["mention_rate"], 3) for r in results}})
+    hist.append({
+        "date": today,
+        "model": OPENAI_MODEL,
+        "queries_per_app": args.queries_per_app,
+        "sample_cycle": sample_cycle,
+        "avg_mention_rate": avg,
+        "rates": {r["key"]: round(r["mention_rate"], 3) for r in results},
+    })
     hist.sort(key=lambda h: h.get("date", ""))
-    json.dump(hist, open(hist_path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    _atomic_write_json(hist_path, hist)
+    try:
+        os.remove(CHECKPOINT_OUT)
+    except FileNotFoundError:
+        pass
     print(f"趨勢:平均 AI 曝光率 {int(avg*100)}%(歷史 {len(hist)} 週) → {hist_path}")
 
     print("\n== 摘要 ==")
@@ -266,7 +422,8 @@ def main():
               f"缺席 {len(r['gap_queries'])} 問句  競品TOP: "
               f"{', '.join(c for c,_ in r['top_competitors'][:3]) or '—'}")
     print(f"\nJSON → {JSON_OUT}\nMarkdown 攻擊清單 → {md}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

@@ -394,8 +394,27 @@ def oembed_url(
     site: str = SITE,
     locale: str | None = None,
 ) -> str:
+    return oembed_discovery_url(
+        oembed_relative_path(key, locale),
+        canonical,
+        site,
+    )
+
+
+def oembed_discovery_url(
+    relative_path: str,
+    canonical: str,
+    site: str = SITE,
+) -> str:
+    parts = relative_path.split("/")
+    if (
+        relative_path.startswith("/")
+        or not relative_path.endswith(".json")
+        or any(part in {"", ".", ".."} for part in parts)
+    ):
+        raise ValueError(f"Invalid oEmbed endpoint path: {relative_path!r}")
     query = urllib.parse.urlencode({"url": canonical, "format": "json"})
-    return f"{site}/{oembed_relative_path(key, locale)}?{query}"
+    return f"{site}/{relative_path}?{query}"
 
 
 def buyer_intent_image_url(
@@ -411,7 +430,7 @@ def buyer_intent_image_url(
     return f"{site}/visuals/{asset_locale}/{key}.svg"
 
 
-def _available_buyer_intent_image(
+def available_buyer_intent_image(
     pages: Path,
     key: str,
     locale: str,
@@ -487,7 +506,10 @@ def oembed_document(
     *,
     storefront: dict[str, object] | None = None,
     buyer_intent_url: str | None = None,
+    source_kind: str = "guide",
 ) -> dict[str, object]:
+    if source_kind not in {"guide", "decision"}:
+        raise ValueError(f"Unsupported oEmbed source kind: {source_kind!r}")
     campaign_store_url = _campaign_store_url(
         store_url,
         _oembed_campaign(locale),
@@ -505,7 +527,7 @@ def oembed_document(
         "thumbnail_width": CARD_SIZE[0],
         "thumbnail_height": CARD_SIZE[1],
         "_lumi_locale": locale,
-        "_lumi_guide_url": canonical,
+        f"_lumi_{source_kind}_url": canonical,
         "_lumi_app_store_url": campaign_store_url,
     }
     if storefront is not None:
@@ -613,9 +635,17 @@ def metadata_block(
     endpoint_locale: str | None = None,
     image_alt: str | None = None,
     storefront: dict[str, object] | None = None,
+    include_primary_image_schema: bool = True,
+    include_hero_style: bool = True,
+    oembed_href: str | None = None,
 ) -> str:
     image_url = f"{site}/social/img/{key}-share.jpg"
-    embed_url = oembed_url(key, canonical, site, endpoint_locale)
+    embed_url = oembed_href or oembed_url(
+        key,
+        canonical,
+        site,
+        endpoint_locale,
+    )
     image_alt = image_alt or f"{app_name} iOS app guide preview"
     schema = primary_image_schema(
         title,
@@ -662,13 +692,19 @@ def metadata_block(
                 '<meta property="product:availability" content="instock">',
             )
         )
+    lines.append(f'<meta name="robots" content="{ROBOTS_DIRECTIVE}">')
+    if include_primary_image_schema:
+        lines.extend(
+            (
+                '<script type="application/ld+json" data-iag="primary-image">',
+                _json_ld(schema),
+                "</script>",
+            )
+        )
+    if include_hero_style:
+        lines.append(HERO_STYLE)
     lines.extend(
         (
-            f'<meta name="robots" content="{ROBOTS_DIRECTIVE}">',
-            '<script type="application/ld+json" data-iag="primary-image">',
-            _json_ld(schema),
-            "</script>",
-            HERO_STYLE,
             f'<meta name="twitter:card" content="{twitter_card}">',
             f'<meta name="twitter:title" content="{esc(title)}">',
             (
@@ -850,7 +886,7 @@ def enrich_oembed_responses(
             )
             if not path.is_file():
                 raise ValueError(f"Rich oEmbed endpoint is missing: {path}")
-            visual_url = _available_buyer_intent_image(
+            visual_url = available_buyer_intent_image(
                 pages,
                 key,
                 locale,
@@ -936,7 +972,7 @@ def generate(
                         record["store"],
                         "en",
                         site,
-                        buyer_intent_url=_available_buyer_intent_image(
+                        buyer_intent_url=available_buyer_intent_image(
                             pages,
                             key,
                             "en",
@@ -998,7 +1034,7 @@ def generate(
                             locale,
                             site,
                             storefront=storefront,
-                            buyer_intent_url=_available_buyer_intent_image(
+                            buyer_intent_url=available_buyer_intent_image(
                                 pages,
                                 key,
                                 locale,
@@ -1053,6 +1089,8 @@ def generate(
             stale.unlink()
             changed += 1
     for stale in oembed_dir.rglob("*.json") if oembed_dir.is_dir() else ():
+        if (oembed_dir / "decision") in stale.parents:
+            continue
         if stale not in expected_oembed_files:
             stale.unlink()
             changed += 1

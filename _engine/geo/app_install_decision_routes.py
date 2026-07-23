@@ -19,6 +19,7 @@ import app_store_storefronts
 from family_travel_dataset import write_text_if_changed
 from gen_feed import feed_discovery_links
 import gen_mobile_app_identity
+import gen_social_previews
 from official_locales import OFFICIAL_LOCALES
 import portfolio_app_finder
 import publisher_intent_catalog
@@ -35,6 +36,7 @@ SITEMAP_NAME = "sitemap_app_install_decisions.xml"
 DATA_RELATIVE = Path("data") / f"{SLUG}.json"
 SCHEMA_RELATIVE = Path("data") / f"{SLUG}.schema.json"
 LOCALE_DATA_DIR = Path("data") / SLUG / "locales"
+OEMBED_DIR = Path("oembed") / "decision"
 PRIORITY_APPS = ("maskmyfile", "wifiaid", "mochidonestamp")
 PRIORITY_RANK = {key: index + 1 for index, key in enumerate(PRIORITY_APPS)}
 TODAY_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
@@ -70,6 +72,28 @@ def decision_page_relative(app_key: str, locale: str) -> Path:
 
 def decision_page_url(app_key: str, locale: str) -> str:
     return f"{SITE}/{decision_page_relative(app_key, locale).as_posix()}"
+
+
+def decision_oembed_relative(app_key: str, locale: str) -> Path:
+    if locale not in OFFICIAL_LOCALES or re.fullmatch(
+        r"[a-z0-9]+", app_key
+    ) is None:
+        raise ValueError(
+            f"Invalid install-decision oEmbed path: {locale}/{app_key}"
+        )
+    return OEMBED_DIR / locale / f"{app_key}.json"
+
+
+def decision_oembed_endpoint_url(app_key: str, locale: str) -> str:
+    return f"{SITE}/{decision_oembed_relative(app_key, locale).as_posix()}"
+
+
+def decision_oembed_url(app_key: str, locale: str) -> str:
+    return gen_social_previews.oembed_discovery_url(
+        decision_oembed_relative(app_key, locale).as_posix(),
+        decision_page_url(app_key, locale),
+        SITE,
+    )
 
 
 def _priority_key(app: dict[str, Any]) -> tuple[int, str, str]:
@@ -275,6 +299,7 @@ def _record(
         "badge_labels": badge_labels,
         "canonical_guide_url": guide_url,
         "decision_page_url": decision_page_url(key, locale),
+        "oembed_url": decision_oembed_url(key, locale),
         "locale_index_url": locale_index_url(locale),
         "app_store_id": app_store_id,
         "canonical_app_store_url": str(intent["canonical_app_store_url"]),
@@ -345,6 +370,7 @@ def _generation_digest(content_digest: str) -> str:
     digest.update(content_digest.encode("ascii"))
     digest.update(Path(__file__).read_bytes())
     digest.update(Path(app_install_decision_feeds.__file__).read_bytes())
+    digest.update(Path(gen_social_previews.__file__).read_bytes())
     digest.update(portfolio_app_finder.I18N_PATH.read_bytes())
     digest.update(publisher_intent_catalog.I18N_PATH.read_bytes())
     return digest.hexdigest()
@@ -534,6 +560,7 @@ def _schema_payload(apps: dict[str, Any]) -> dict[str, Any]:
                     "badge_labels",
                     "canonical_guide_url",
                     "decision_page_url",
+                    "oembed_url",
                     "locale_index_url",
                     "app_store_id",
                     "canonical_app_store_url",
@@ -608,6 +635,10 @@ def _schema_payload(apps: dict[str, Any]) -> dict[str, Any]:
                         "format": "uri",
                     },
                     "decision_page_url": {
+                        "type": "string",
+                        "format": "uri",
+                    },
+                    "oembed_url": {
                         "type": "string",
                         "format": "uri",
                     },
@@ -751,9 +782,19 @@ def sitemap_entries(
         )
     if len(set(page_urls)) != len(page_urls):
         raise ValueError("Install decision sitemap pages must be unique")
+    oembed_urls = [
+        decision_oembed_endpoint_url(
+            str(record["app_key"]),
+            str(record["locale"]),
+        )
+        for record in records
+    ]
+    if len(set(oembed_urls)) != len(oembed_urls):
+        raise ValueError("Install decision oEmbed endpoints must be unique")
     locale_urls = [locale_index_url(locale) for locale in OFFICIAL_LOCALES]
     entries = [
         *page_urls,
+        *oembed_urls,
         data_url(),
         schema_url(),
         *locale_urls,
@@ -799,6 +840,51 @@ def _json_script(payload: object) -> str:
         ensure_ascii=False,
         separators=(",", ":"),
     ).replace("</", "<\\/")
+
+
+def _share_image_url(record: dict[str, Any]) -> str:
+    app_key = str(record["app_key"])
+    if re.fullmatch(r"[a-z0-9]+", app_key) is None:
+        raise ValueError(f"Invalid install-decision app key: {app_key}")
+    return f"{SITE}/social/img/{app_key}-share.jpg"
+
+
+def _oembed_document(
+    pages: Path,
+    record: dict[str, Any],
+) -> dict[str, object]:
+    app_key = str(record["app_key"])
+    locale = str(record["locale"])
+    image_path = pages / "social" / "img" / f"{app_key}-share.jpg"
+    if not image_path.is_file() or image_path.stat().st_size == 0:
+        raise FileNotFoundError(
+            f"Install-decision share image is missing: {image_path}"
+        )
+    buyer_intent_url = gen_social_previews.available_buyer_intent_image(
+        pages,
+        app_key,
+        locale,
+        SITE,
+    )
+    if buyer_intent_url is None:
+        raise FileNotFoundError(
+            f"Install-decision buyer-intent visual is missing: "
+            f"{locale}/{app_key}"
+        )
+    storefront_facts = record.get("storefront_facts")
+    return gen_social_previews.oembed_document(
+        str(record["publisher_query"]),
+        _share_image_url(record),
+        str(record["decision_page_url"]),
+        str(record["app_store_url"]),
+        locale,
+        SITE,
+        storefront=(
+            storefront_facts if isinstance(storefront_facts, dict) else None
+        ),
+        buyer_intent_url=buyer_intent_url,
+        source_kind="decision",
+    )
 
 
 def _structured_data(record: dict[str, Any]) -> dict[str, Any]:
@@ -851,6 +937,7 @@ def _structured_data(record: dict[str, Any]) -> dict[str, Any]:
             for label in record["badge_labels"]
         ],
     ]
+    image_url = _share_image_url(record)
     return {
         "@context": "https://schema.org",
         "@graph": [
@@ -865,6 +952,17 @@ def _structured_data(record: dict[str, Any]) -> dict[str, Any]:
                 "about": {"@id": str(record["canonical_app_store_url"])},
                 "isPartOf": {"@id": data_url()},
                 "mainEntity": {"@id": str(record["canonical_app_store_url"])},
+                "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "@id": f"{image_url}#primaryimage",
+                    "contentUrl": image_url,
+                    "url": image_url,
+                    "width": gen_social_previews.CARD_SIZE[0],
+                    "height": gen_social_previews.CARD_SIZE[1],
+                    "encodingFormat": "image/jpeg",
+                    "caption": str(record["publisher_query"]),
+                    "representativeOfPage": True,
+                },
             },
             {
                 "@type": "Dataset",
@@ -903,25 +1001,31 @@ def render_page(
         if icon_url
         else ""
     )
+    storefront_facts = record.get("storefront_facts")
+    social_metadata = gen_social_previews.metadata_block(
+        str(record["app_key"]),
+        str(record["publisher_query"]),
+        str(record["decision_context"]),
+        str(record["decision_page_url"]),
+        str(record["app_name"]),
+        SITE,
+        locale=locale,
+        endpoint_locale=locale,
+        image_alt=str(record["publisher_query"]),
+        storefront=(
+            storefront_facts if isinstance(storefront_facts, dict) else None
+        ),
+        include_primary_image_schema=False,
+        include_hero_style=False,
+        oembed_href=str(record["oembed_url"]),
+    )
     return f"""<!doctype html>
 <html lang="{html.escape(locale)}" dir="{dir_attr}"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="apple-itunes-app" content="app-id={html.escape(str(record["app_store_id"]), quote=True)}">
 <meta name="description" content="{html.escape(str(record["decision_context"]), quote=True)}">
 <meta name="content-modified" content="{html.escape(modified, quote=True)}">
-<meta property="og:type" content="website">
-<meta property="og:title" content="{html.escape(str(record["publisher_query"]), quote=True)}">
-<meta property="og:description" content="{html.escape(str(record["decision_context"]), quote=True)}">
-<meta property="og:url" content="{html.escape(str(record["decision_page_url"]), quote=True)}">
-{f'<meta property="og:image" content="{html.escape(icon_url, quote=True)}">' if icon_url else ""}
-<meta name="twitter:card" content="app">
-<meta name="twitter:title" content="{html.escape(str(record["publisher_query"]), quote=True)}">
-<meta name="twitter:description" content="{html.escape(str(record["decision_context"]), quote=True)}">
-<meta name="twitter:app:name:iphone" content="{html.escape(str(record["app_name"]), quote=True)}">
-<meta name="twitter:app:id:iphone" content="{html.escape(str(record["app_store_id"]), quote=True)}">
-<meta name="twitter:app:name:ipad" content="{html.escape(str(record["app_name"]), quote=True)}">
-<meta name="twitter:app:id:ipad" content="{html.escape(str(record["app_store_id"]), quote=True)}">
+{social_metadata}
 <title>{html.escape(str(record["publisher_query"]))} | {html.escape(str(record["app_name"]))}</title>
 <link rel="canonical" href="{html.escape(str(record["decision_page_url"]), quote=True)}">
 <link rel="alternate" type="application/json" href="{html.escape(str(record["locale_index_url"]), quote=True)}">
@@ -1162,7 +1266,22 @@ def build(pages: Path = PAGES) -> list[str]:
         modified,
         feed_contexts,
     )
+    expected_oembed_paths: set[Path] = set()
     for record in records:
+        oembed_path = pages / decision_oembed_relative(
+            str(record["app_key"]),
+            str(record["locale"]),
+        )
+        expected_oembed_paths.add(oembed_path)
+        _write_text(
+            oembed_path,
+            json.dumps(
+                _oembed_document(pages, record),
+                ensure_ascii=False,
+                indent=2,
+            )
+            + "\n",
+        )
         _write_text(
             pages
             / decision_page_relative(
@@ -1175,12 +1294,36 @@ def build(pages: Path = PAGES) -> list[str]:
                 feed_contexts[str(record["locale"])]["title"],
             ),
         )
+    oembed_root = pages / OEMBED_DIR
+    for stale in (
+        oembed_root.rglob("*.json") if oembed_root.is_dir() else ()
+    ):
+        if stale not in expected_oembed_paths:
+            stale.unlink()
+    for directory in sorted(
+        (
+            path
+            for path in oembed_root.rglob("*")
+            if path.is_dir()
+        ),
+        key=lambda path: len(path.parts),
+        reverse=True,
+    ):
+        if not any(directory.iterdir()):
+            directory.rmdir()
     return [
         data_url(),
         schema_url(),
         *locale_urls,
         *feed_urls,
         *(record["decision_page_url"] for record in records),
+        *(
+            decision_oembed_endpoint_url(
+                str(record["app_key"]),
+                str(record["locale"]),
+            )
+            for record in records
+        ),
     ]
 
 
@@ -1188,13 +1331,16 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.parse_args()
     urls = build()
+    decision_page_count = sum("/decision/l/" in url for url in urls)
+    oembed_count = sum("/oembed/decision/" in url for url in urls)
     print(
         "app install decision routes -> "
         f"{len(PRIORITY_APPS)} priority apps, "
         f"{len(OFFICIAL_LOCALES)} locales, "
         f"{len(OFFICIAL_LOCALES) * len(app_install_decision_feeds.FORMATS)} "
         "locale feeds, "
-        f"{len(urls) - 2 - len(OFFICIAL_LOCALES) - len(app_install_decision_feeds.all_feed_urls())} pages",
+        f"{decision_page_count} pages and "
+        f"{oembed_count} rich embeds",
         flush=True,
     )
     return 0

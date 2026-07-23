@@ -277,6 +277,7 @@
         "badge_labels",
         "canonical_guide_url",
         "decision_page_url",
+        "oembed_url",
         "locale_index_url",
         "app_store_id",
         "canonical_app_store_url",
@@ -482,6 +483,10 @@
           "format": "uri"
         },
         "decision_page_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "oembed_url": {
           "type": "string",
           "format": "uri"
         },

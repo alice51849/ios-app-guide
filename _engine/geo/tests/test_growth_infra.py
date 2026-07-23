@@ -761,11 +761,20 @@ class GeneratorTests(unittest.TestCase):
             stale_card = pages / "social" / "img" / "stale-share.jpg"
             stale_unfurl = pages / "social" / "img" / "stale-unfurl.jpg"
             stale_oembed = pages / "oembed" / "stale.json"
+            decision_oembed = (
+                pages
+                / "oembed"
+                / "decision"
+                / "ja"
+                / "lumibopomofo.json"
+            )
             stale_card.parent.mkdir(parents=True)
             stale_oembed.parent.mkdir(parents=True)
+            decision_oembed.parent.mkdir(parents=True)
             stale_card.write_bytes(b"stale")
             stale_unfurl.write_bytes(b"stale")
             stale_oembed.write_text("{}", encoding="utf-8")
+            decision_oembed.write_text("decision", encoding="utf-8")
             stale_guide = pages / "guides" / "stale.html"
             stale_guide.write_text(
                 "<head><!-- social-preview:start -->old"
@@ -806,6 +815,10 @@ class GeneratorTests(unittest.TestCase):
             self.assertFalse(stale_card.exists())
             self.assertFalse(stale_unfurl.exists())
             self.assertFalse(stale_oembed.exists())
+            self.assertEqual(
+                "decision",
+                decision_oembed.read_text(encoding="utf-8"),
+            )
             self.assertNotIn(
                 gen_social_previews.BLOCK_START,
                 stale_localized.read_text(encoding="utf-8"),

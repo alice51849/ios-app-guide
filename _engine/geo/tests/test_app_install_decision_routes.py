@@ -18,7 +18,8 @@ if str(GEO) not in sys.path:
 import app_install_decision_feeds
 import app_install_decision_routes
 import app_store_storefronts
-from official_locales import OFFICIAL_LOCALES
+import gen_social_previews
+from official_locales import OFFICIAL_LOCALES, open_graph_locale
 import portfolio_app_finder
 import publisher_intent_catalog
 
@@ -276,6 +277,142 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
             ).values():
                 self.assertIn(feed_url, source)
 
+    def test_every_route_has_localized_install_share_metadata(self) -> None:
+        verified_storefronts = 0
+        fallback_storefronts = 0
+        for record in self.records:
+            page = (
+                self.pages
+                / app_install_decision_routes.decision_page_relative(
+                    record["app_key"],
+                    record["locale"],
+                )
+            )
+            source = page.read_text(encoding="utf-8")
+            share_url = (
+                f"{app_install_decision_routes.SITE}/social/img/"
+                f"{record['app_key']}-share.jpg"
+            )
+            self.assertEqual(
+                1,
+                source.count('type="application/json+oembed"'),
+                record["record_id"],
+            )
+            self.assertIn(
+                f'href="{record["oembed_url"].replace("&", "&amp;")}"',
+                source,
+                record["record_id"],
+            )
+            self.assertIn(
+                f'property="og:locale" content="'
+                f'{open_graph_locale(record["locale"])}"',
+                source,
+                record["record_id"],
+            )
+            self.assertIn(
+                'property="og:site_name" content="iOS App Guide"',
+                source,
+                record["record_id"],
+            )
+            self.assertIn(
+                f'property="og:image" content="{share_url}"',
+                source,
+                record["record_id"],
+            )
+            self.assertIn(
+                f'property="og:image:width" content="'
+                f'{gen_social_previews.CARD_SIZE[0]}"',
+                source,
+                record["record_id"],
+            )
+            self.assertIn(
+                f'property="og:image:height" content="'
+                f'{gen_social_previews.CARD_SIZE[1]}"',
+                source,
+                record["record_id"],
+            )
+            self.assertIn(
+                f'name="twitter:image" content="{share_url}"',
+                source,
+                record["record_id"],
+            )
+            self.assertIn(
+                f'name="twitter:app:id:iphone" '
+                f'content="{record["app_store_id"]}"',
+                source,
+                record["record_id"],
+            )
+            endpoint = (
+                self.pages
+                / app_install_decision_routes.decision_oembed_relative(
+                    record["app_key"],
+                    record["locale"],
+                )
+            )
+            self.assertTrue(endpoint.is_file(), endpoint)
+            embed = json.loads(endpoint.read_text(encoding="utf-8"))
+            self.assertEqual("rich", embed["type"])
+            self.assertEqual(record["publisher_query"], embed["title"])
+            self.assertEqual(
+                record["decision_page_url"],
+                embed["_lumi_decision_url"],
+            )
+            self.assertNotIn("_lumi_guide_url", embed)
+            self.assertIn(
+                f"id{record['app_store_id']}",
+                embed["_lumi_app_store_url"],
+            )
+
+            structured = app_install_decision_routes._structured_data(record)
+            webpage = structured["@graph"][1]
+            self.assertEqual(
+                share_url,
+                webpage["primaryImageOfPage"]["contentUrl"],
+            )
+            storefront = record["storefront_facts"]
+            if storefront is None:
+                fallback_storefronts += 1
+                self.assertIn(
+                    'property="og:type" content="website"',
+                    source,
+                )
+                self.assertNotIn("product:price:amount", source)
+                self.assertNotIn('name="twitter:data1"', source)
+                continue
+            verified_storefronts += 1
+            self.assertIn(
+                'property="og:type" content="product"',
+                source,
+            )
+            self.assertIn(
+                f'property="product:price:amount" '
+                f'content="{storefront["price"]}"',
+                source,
+            )
+            self.assertIn(
+                f'property="product:price:currency" '
+                f'content="{storefront["currency"]}"',
+                source,
+            )
+            self.assertIn(
+                f'name="twitter:data1" '
+                f'content="{storefront["formatted_price"]}"',
+                source,
+            )
+        self.assertGreater(verified_storefronts, len(self.records) * 0.95)
+        self.assertGreater(fallback_storefronts, 0)
+        self.assertEqual(
+            len(self.records),
+            len(
+                list(
+                    (
+                        self.pages
+                        / app_install_decision_routes.OEMBED_DIR
+                    ).glob("*/*.json")
+                )
+            ),
+        )
+
     def test_every_route_has_a_localized_finder_inbound_link(self) -> None:
         for locale in OFFICIAL_LOCALES:
             finder = (
@@ -312,6 +449,10 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
         expected = app_install_decision_routes.sitemap_entries(self.records)
         self.assertEqual(expected, locations)
         self.assertEqual(1600, sum("/decision/l/" in url for url in locations))
+        self.assertEqual(
+            1600,
+            sum("/oembed/decision/" in url for url in locations),
+        )
         self.assertEqual(
             len(OFFICIAL_LOCALES) * len(app_install_decision_feeds.FORMATS),
             sum(

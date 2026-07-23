@@ -86,6 +86,12 @@ def read_urls(pages_dir: Path, site: str) -> list[str]:
             candidate = pages_dir / name
             if name.endswith(".xml") and candidate.is_file():
                 sitemap_paths.append(candidate)
+    localized_sitemaps = sorted(
+        path for path in pages_dir.glob("*/sitemap.xml") if path.is_file()
+    )
+    for path in localized_sitemaps:
+        if path not in sitemap_paths:
+            sitemap_paths.append(path)
     if not sitemap_paths:
         sitemap_paths = [pages_dir / "sitemap.xml"]
 

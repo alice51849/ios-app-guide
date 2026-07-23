@@ -65,6 +65,78 @@ class IndexNowTests(unittest.TestCase):
             urls,
         )
 
+    def test_reads_localized_sitemaps_even_when_not_in_index(self) -> None:
+        site = "https://example.com/apps"
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "sitemap_index.xml").write_text(
+                sitemap(f"{site}/sitemap.xml"),
+                encoding="utf-8",
+            )
+            (root / "sitemap.xml").write_text(
+                sitemap(f"{site}/root.html"),
+                encoding="utf-8",
+            )
+            localized = root / "ja"
+            localized.mkdir()
+            (localized / "sitemap.xml").write_text(
+                sitemap(f"{site}/ja/localized.html"),
+                encoding="utf-8",
+            )
+            urls = indexnow.read_urls(root, site)
+        self.assertEqual(
+            [f"{site}/root.html", f"{site}/ja/localized.html"],
+            urls,
+        )
+
+    def test_collects_registered_decision_route_sitemap_inventory(self) -> None:
+        site = "https://example.com/apps"
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            decision_urls = [
+                f"{site}/apps/app-{number}/decision/l/en-US/index.html"
+                for number in range(1600)
+            ]
+            asset_urls = [
+                f"{site}/data/app-install-decision-routes.json",
+                f"{site}/data/app-install-decision-routes.schema.json",
+                *[
+                    f"{site}/data/app-install-decision-routes/locales/"
+                    f"locale-{number}.json"
+                    for number in range(50)
+                ],
+            ]
+            (root / "sitemap_index.xml").write_text(
+                sitemap(
+                    f"{site}/sitemap.xml",
+                    f"{site}/sitemap_app_install_decisions.xml",
+                ),
+                encoding="utf-8",
+            )
+            baseline = [
+                f"{site}/existing/{number}.html" for number in range(14_891)
+            ]
+            (root / "sitemap.xml").write_text(
+                sitemap(*baseline),
+                encoding="utf-8",
+            )
+            (root / "sitemap_app_install_decisions.xml").write_text(
+                sitemap(*decision_urls, *asset_urls),
+                encoding="utf-8",
+            )
+            urls = indexnow.read_urls(root, site)
+        self.assertEqual(14_891 + 1_600 + 52, len(urls))
+        self.assertEqual(1_600, sum("/decision/l/" in url for url in urls))
+        self.assertEqual(
+            52,
+            sum(
+                "app-install-decision-routes" in url and "/decision/l/" not in url
+                for url in urls
+            ),
+        )
+        self.assertEqual(decision_urls[0], urls[14_891])
+        self.assertEqual(asset_urls[-1], urls[-1])
+
     def test_rejects_foreign_or_tracking_urls(self) -> None:
         site = "https://example.com/apps"
         for url in (

@@ -2614,6 +2614,61 @@
   - zh-Hans: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld
   - zh-Hant: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld
 
+## Late-stage app install decision routes
+- Aggregate JSON: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes.json
+- JSON Schema: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes.schema.json
+- Official Apple locales: 50/50
+  - ar-SA: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ar-SA.json
+  - bn-BD: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json
+  - ca: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ca.json
+  - cs: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/cs.json
+  - da: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json
+  - de-DE: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/de-DE.json
+  - el: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/el.json
+  - en-AU: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json
+  - en-CA: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-CA.json
+  - en-GB: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-GB.json
+  - en-US: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-US.json
+  - es-ES: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/es-ES.json
+  - es-MX: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/es-MX.json
+  - fi: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fi.json
+  - fr-CA: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fr-CA.json
+  - fr-FR: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fr-FR.json
+  - gu-IN: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/gu-IN.json
+  - he: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/he.json
+  - hi: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hi.json
+  - hr: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json
+  - hu: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json
+  - id: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/id.json
+  - it: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json
+  - ja: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ja.json
+  - kn-IN: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/kn-IN.json
+  - ko: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json
+  - ml-IN: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ml-IN.json
+  - mr-IN: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/mr-IN.json
+  - ms: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ms.json
+  - nl-NL: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/nl-NL.json
+  - no: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/no.json
+  - or-IN: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/or-IN.json
+  - pa-IN: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pa-IN.json
+  - pl: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pl.json
+  - pt-BR: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pt-BR.json
+  - pt-PT: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pt-PT.json
+  - ro: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json
+  - ru: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ru.json
+  - sk: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json
+  - sl-SI: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sl-SI.json
+  - sv: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json
+  - ta-IN: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ta-IN.json
+  - te-IN: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/te-IN.json
+  - th: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/th.json
+  - tr: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/tr.json
+  - uk: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/uk.json
+  - ur-PK: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ur-PK.json
+  - vi: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/vi.json
+  - zh-Hans: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hans.json
+  - zh-Hant: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json
+
 ## Open educational resources
 - [Family Travel Observation Passport](https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.html)
   - Traditional Chinese: https://alice51849.github.io/ios-app-guide/zh-Hant/tools/family-travel-observation-passport.html

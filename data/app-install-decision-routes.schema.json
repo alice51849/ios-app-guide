@@ -1,0 +1,433 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes.schema.json",
+  "title": "Lumi Studio App Install Decision Routes",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "name",
+    "description",
+    "identifier",
+    "dateModified",
+    "content_digest",
+    "generation_digest",
+    "publisher_disclosure",
+    "ordering",
+    "priority_app_keys",
+    "app_count",
+    "locale_count",
+    "record_count",
+    "locales",
+    "records"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "name": {
+      "const": "Lumi Studio App Install Decision Routes"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 20
+    },
+    "identifier": {
+      "type": "string",
+      "format": "uri"
+    },
+    "dateModified": {
+      "type": "string",
+      "format": "date"
+    },
+    "content_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "generation_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "publisher_disclosure": {
+      "type": "string",
+      "minLength": 20
+    },
+    "ordering": {
+      "const": "official_locale_order_then_priority_then_alphabetical_app_name"
+    },
+    "priority_app_keys": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "maskmyfile",
+          "wifiaid",
+          "mochidonestamp"
+        ]
+      },
+      "minItems": 3,
+      "maxItems": 3,
+      "uniqueItems": true
+    },
+    "app_count": {
+      "const": 32
+    },
+    "locale_count": {
+      "const": 50
+    },
+    "record_count": {
+      "const": 1600
+    },
+    "locales": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "ar-SA",
+          "bn-BD",
+          "ca",
+          "cs",
+          "da",
+          "de-DE",
+          "el",
+          "en-AU",
+          "en-CA",
+          "en-GB",
+          "en-US",
+          "es-ES",
+          "es-MX",
+          "fi",
+          "fr-CA",
+          "fr-FR",
+          "gu-IN",
+          "he",
+          "hi",
+          "hr",
+          "hu",
+          "id",
+          "it",
+          "ja",
+          "kn-IN",
+          "ko",
+          "ml-IN",
+          "mr-IN",
+          "ms",
+          "nl-NL",
+          "no",
+          "or-IN",
+          "pa-IN",
+          "pl",
+          "pt-BR",
+          "pt-PT",
+          "ro",
+          "ru",
+          "sk",
+          "sl-SI",
+          "sv",
+          "ta-IN",
+          "te-IN",
+          "th",
+          "tr",
+          "uk",
+          "ur-PK",
+          "vi",
+          "zh-Hans",
+          "zh-Hant"
+        ]
+      },
+      "minItems": 50,
+      "maxItems": 50,
+      "uniqueItems": true
+    },
+    "records": {
+      "type": "array",
+      "minItems": 1600,
+      "maxItems": 1600,
+      "items": {
+        "$ref": "#/$defs/record"
+      }
+    }
+  },
+  "$defs": {
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "locale",
+        "app_key",
+        "app_name",
+        "priority_group",
+        "publisher_query",
+        "decision_context",
+        "category",
+        "category_label",
+        "purchase_model",
+        "purchase_label",
+        "one_time_option",
+        "privacy_facts",
+        "privacy_labels",
+        "device_surfaces",
+        "device_labels",
+        "badge_labels",
+        "canonical_guide_url",
+        "decision_page_url",
+        "locale_index_url",
+        "app_store_id",
+        "canonical_app_store_url",
+        "app_store_url",
+        "app_store_cta_label",
+        "guide_cta_label",
+        "publisher_disclosure",
+        "source_persona_query",
+        "source_surface",
+        "query_origin",
+        "measured_search_volume",
+        "is_ranking",
+        "verified_live"
+      ],
+      "properties": {
+        "record_id": {
+          "type": "string",
+          "minLength": 8
+        },
+        "locale": {
+          "enum": [
+            "ar-SA",
+            "bn-BD",
+            "ca",
+            "cs",
+            "da",
+            "de-DE",
+            "el",
+            "en-AU",
+            "en-CA",
+            "en-GB",
+            "en-US",
+            "es-ES",
+            "es-MX",
+            "fi",
+            "fr-CA",
+            "fr-FR",
+            "gu-IN",
+            "he",
+            "hi",
+            "hr",
+            "hu",
+            "id",
+            "it",
+            "ja",
+            "kn-IN",
+            "ko",
+            "ml-IN",
+            "mr-IN",
+            "ms",
+            "nl-NL",
+            "no",
+            "or-IN",
+            "pa-IN",
+            "pl",
+            "pt-BR",
+            "pt-PT",
+            "ro",
+            "ru",
+            "sk",
+            "sl-SI",
+            "sv",
+            "ta-IN",
+            "te-IN",
+            "th",
+            "tr",
+            "uk",
+            "ur-PK",
+            "vi",
+            "zh-Hans",
+            "zh-Hant"
+          ]
+        },
+        "app_key": {
+          "enum": [
+            "aim990",
+            "aim990plus",
+            "cvdesk",
+            "cyca",
+            "dailymate",
+            "gmoney",
+            "hourstag",
+            "lockhour",
+            "lumibopomofo",
+            "lumibopomofopro",
+            "lumiletters",
+            "lumiletterspro",
+            "lumimath",
+            "lumimathpro",
+            "lumimission",
+            "lumimissionpro",
+            "lumiweather",
+            "maskmyfile",
+            "mochi",
+            "mochidonestamp",
+            "photocream",
+            "picclear",
+            "scanto",
+            "sereno",
+            "snapport",
+            "sononote",
+            "tripbee",
+            "tripbeelite",
+            "tripplanet",
+            "unblurry",
+            "wifiaid",
+            "wordmate"
+          ]
+        },
+        "app_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "priority_rank": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 3
+        },
+        "priority_group": {
+          "enum": [
+            "launch_boost",
+            "baseline_coverage"
+          ]
+        },
+        "publisher_query": {
+          "type": "string",
+          "minLength": 3
+        },
+        "decision_context": {
+          "type": "string",
+          "minLength": 20
+        },
+        "category": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category_label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "purchase_model": {
+          "type": "string",
+          "minLength": 1
+        },
+        "purchase_label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "one_time_option": {
+          "type": "boolean"
+        },
+        "privacy_facts": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "offline",
+              "no_account",
+              "no_ads",
+              "no_tracking",
+              "private_or_on_device"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "privacy_labels": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "device_surfaces": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "widget",
+              "apple_watch"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "device_labels": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "badge_labels": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 2
+        },
+        "canonical_guide_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "decision_page_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "locale_index_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "app_store_id": {
+          "type": "string",
+          "pattern": "^[0-9]{9,12}$"
+        },
+        "canonical_app_store_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "app_store_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "app_store_cta_label": {
+          "type": "string",
+          "minLength": 3
+        },
+        "guide_cta_label": {
+          "type": "string",
+          "minLength": 3
+        },
+        "publisher_disclosure": {
+          "type": "string",
+          "minLength": 20
+        },
+        "source_persona_query": {
+          "type": "string",
+          "minLength": 10
+        },
+        "source_surface": {
+          "enum": [
+            "answer_page",
+            "app_guide_page"
+          ]
+        },
+        "query_origin": {
+          "const": "publisher_authored_editorially_localized"
+        },
+        "measured_search_volume": {
+          "const": false
+        },
+        "is_ranking": {
+          "const": false
+        },
+        "verified_live": {
+          "const": true
+        }
+      }
+    }
+  }
+}

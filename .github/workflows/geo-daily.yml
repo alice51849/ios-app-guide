@@ -81,6 +81,7 @@ jobs:
           python3 gen_publisher_disclosures.py
           python3 gen_guide_design.py
           python3 gen_app_store_facts.py
+          python3 app_install_decision_routes.py
           python3 normalize_app_store_links.py
           python3 gen_app_decision_cards.py
           python3 gen_mobile_store_ctas.py
@@ -201,6 +202,7 @@ jobs:
           python3 gen_publisher_disclosures.py
           python3 gen_guide_design.py
           python3 gen_app_store_facts.py
+          python3 app_install_decision_routes.py
           python3 normalize_app_store_links.py
           python3 gen_app_decision_cards.py
           python3 gen_mobile_store_ctas.py
@@ -275,6 +277,7 @@ jobs:
           python3 gen_guide_design.py
           python3 gen_app_store_facts.py
           python3 normalize_app_store_links.py
+          python3 app_install_decision_routes.py
           python3 gen_app_decision_cards.py
           python3 gen_mobile_store_ctas.py
           python3 gen_app_store_qr_ctas.py

@@ -21829,6 +21829,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_publisher_disclosures.py",
             "gen_guide_design.py",
             "gen_app_store_facts.py",
+            "app_install_decision_routes.py",
             "gen_app_decision_cards.py",
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",
@@ -21886,6 +21887,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(3, workflow.count("gen_webmcp_install_tools.py"))
         self.assertEqual(3, workflow.count("gen_app_store_facts.py"))
         self.assertEqual(3, workflow.count("gen_publisher_disclosures.py"))
+        self.assertEqual(3, workflow.count("app_install_decision_routes.py"))
         self.assertEqual(3, workflow.count("gen_app_decision_cards.py"))
         final_cleanup_block = workflow.split(
             "- name: Final link and availability cleanup", 1
@@ -21901,6 +21903,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_publisher_disclosures.py",
             "gen_guide_design.py",
             "gen_app_store_facts.py",
+            "app_install_decision_routes.py",
             "gen_app_decision_cards.py",
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",
@@ -21929,6 +21932,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_publisher_disclosures.py",
             "gen_guide_design.py",
             "gen_app_store_facts.py",
+            "app_install_decision_routes.py",
             "gen_app_decision_cards.py",
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",
@@ -22018,6 +22022,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("publisher_intent_catalog.py", publish)
         self.assertIn("publisher_intent_visuals.py", publish)
         self.assertIn("gen_github_discovery_readmes.py", publish)
+        self.assertIn("app_install_decision_routes.py", publish)
         self.assertLess(
             publish.index("portfolio_app_finder.py"),
             publish.index("portfolio_app_catalog_api.py"),
@@ -22067,6 +22072,14 @@ class GeneratorTests(unittest.TestCase):
         self.assertLess(
             publish.index("gen_github_discovery_readmes.py"),
             publish.index("gen_mobile_store_ctas.py"),
+        )
+        self.assertLess(
+            publish.index("gen_app_store_facts.py"),
+            publish.index("app_install_decision_routes.py"),
+        )
+        self.assertLess(
+            publish.index("app_install_decision_routes.py"),
+            publish.index("gen_app_decision_cards.py"),
         )
         self.assertEqual(
             1,
@@ -22189,6 +22202,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_publisher_disclosures.py",
             "gen_guide_design.py",
             "gen_app_store_facts.py",
+            "app_install_decision_routes.py",
             "gen_app_decision_cards.py",
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",

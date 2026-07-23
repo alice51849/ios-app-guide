@@ -29,6 +29,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
+import app_install_decision_routes  # noqa: E402
 import build_pages_i18n  # noqa: E402
 from app_store_storefronts import (  # noqa: E402
     load_storefront_availability,
@@ -312,6 +313,26 @@ def portfolio_offer_catalog_lines(*, full):
     return lines
 
 
+def app_install_decision_route_lines(*, full):
+    """Expose late-stage install decision routes after they exist."""
+    path = os.path.join(PAGES, app_install_decision_routes.DATA_RELATIVE)
+    if not os.path.exists(path):
+        return []
+    lines = [
+        "",
+        "## Late-stage app install decision routes",
+        f"- Aggregate JSON: {app_install_decision_routes.data_url()}",
+        f"- JSON Schema: {app_install_decision_routes.schema_url()}",
+        f"- Official Apple locales: {len(OFFICIAL_LOCALES)}/{len(OFFICIAL_LOCALES)}",
+    ]
+    if full:
+        lines.extend(
+            f"  - {locale}: {app_install_decision_routes.locale_index_url(locale)}"
+            for locale in OFFICIAL_LOCALES
+        )
+    return lines
+
+
 def load_competitors():
     out = {}
     if os.path.exists(SOV):
@@ -459,6 +480,10 @@ def build_localized_llms(locale, live_keys, pages=None):
         (
             "- Schema.org OfferCatalog: "
             f"{portfolio_offer_catalog.catalog_url(locale)}"
+        ),
+        (
+            "- Install decision routes JSON: "
+            f"{app_install_decision_routes.locale_index_url(locale)}"
         ),
         f"- {ui['dir_dir']} · SVG: {SITE}/{locale}/visuals/",
         (
@@ -784,6 +809,7 @@ def build_llms(comp_map, live_keys):
     lines += portfolio_cost_calculator_lines(full=False)
     lines += publisher_intent_visual_lines(full=False)
     lines += portfolio_offer_catalog_lines(full=False)
+    lines += app_install_decision_route_lines(full=False)
     static_apis = [
         descriptor
         for descriptor in API_DESCRIPTORS
@@ -1430,6 +1456,7 @@ def build_llms_full(comp_map, live_keys):
     lines += portfolio_cost_calculator_lines(full=True)
     lines += publisher_intent_visual_lines(full=True)
     lines += portfolio_offer_catalog_lines(full=True)
+    lines += app_install_decision_route_lines(full=True)
     if os.path.exists(os.path.join(TOOLS, f"{FAMILY_TRAVEL_OER}.metadata.json")):
         opds2 = f"{SITE}/opds/{FAMILY_TRAVEL_OER}.json"
         opds1 = f"{SITE}/opds/{FAMILY_TRAVEL_OER}.xml"

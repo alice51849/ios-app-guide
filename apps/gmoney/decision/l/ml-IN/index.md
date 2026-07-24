@@ -2,7 +2,7 @@
 title: "സബ്സ്ക്രിപ്ഷൻ ഇല്ലാത്ത മികച്ച യാത്ര ബജറ്റ് ട്രാക്കർ ആപ്പ് iPhone"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/ml-IN/index.html"
-modified: "2026-07-23"
+modified: "2026-07-24"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

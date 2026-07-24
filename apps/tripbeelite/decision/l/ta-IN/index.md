@@ -2,7 +2,7 @@
 title: "ஒரு வரவிருக்கும் பயணத்திற்கான சிறந்த எளிய பயண திட்டமிடும் செயலி iPhoneக்கானது"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/ta-IN/index.html"
-modified: "2026-07-23"
+modified: "2026-07-24"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

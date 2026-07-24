@@ -2,7 +2,7 @@
 title: "legjobb szókincs alkalmazás elfoglalt ingázóknak Apple Watch-csal"
 lang: "hu"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/hu/index.html"
-modified: "2026-07-23"
+modified: "2026-07-24"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Az elfoglalt ingázóknak olyan szókincs gyakorlás kell, ami belefér a szabad
 - Nincs követés
 - Widget
 - Apple Watch
-- App Store · HUF2,490.00
+- App Store · HUF3,990.00
 
 [Szerezd be a Wordmate: Learn 44 Languages-t az App Store-ban →](https://apps.apple.com/hu/app/id6789917808)
 

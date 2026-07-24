@@ -2,7 +2,7 @@
 title: "millor app de vocabulari per a persones que fan trajectes amb Apple Watch"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/ca/index.html"
-modified: "2026-07-23"
+modified: "2026-07-24"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Les persones que fan trajectes necessiten pràctica de vocabulari que encaixi en
 - Sense seguiment
 - Widget
 - Apple Watch
-- App Store · 6,99 €
+- App Store · 9,99 €
 
 [Descarrega Wordmate: Learn 44 Languages a l'App Store →](https://apps.apple.com/es/app/id6789917808)
 

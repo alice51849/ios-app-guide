@@ -2,7 +2,7 @@
 title: "лучшее приложение для голосовых заметок с автоматическим резюме встреч на iPhone"
 lang: "ru"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/ru/index.html"
-modified: "2026-07-23"
+modified: "2026-07-24"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

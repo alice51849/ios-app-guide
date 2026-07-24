@@ -2,7 +2,7 @@
 title: "iPhone के लिए एक आगामी यात्रा के लिए सर्वश्रेष्ठ सरल यात्रा योजनाकार ऐप"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/hi/index.html"
-modified: "2026-07-23"
+modified: "2026-07-24"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

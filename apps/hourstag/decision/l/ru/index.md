@@ -2,7 +2,7 @@
 title: "лучшее приложение для осознанных трат, чтобы остановить импульсивные покупки на iPhone"
 lang: "ru"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/ru/index.html"
-modified: "2026-07-23"
+modified: "2026-07-24"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

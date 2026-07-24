@@ -2,7 +2,7 @@
 title: "தூங்குவதற்கு சிறந்த வெள்ளை சத்தம் செயலி, சந்தா தேவையில்லை"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/ta-IN/index.html"
-modified: "2026-07-23"
+modified: "2026-07-24"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

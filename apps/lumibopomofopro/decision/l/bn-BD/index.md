@@ -2,7 +2,7 @@
 title: "দ্বিভাষিক শিশুদের জন্য সেরা সম্পূর্ণ ঝুয়িন অ্যাপ"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/bn-BD/index.html"
-modified: "2026-07-23"
+modified: "2026-07-24"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"

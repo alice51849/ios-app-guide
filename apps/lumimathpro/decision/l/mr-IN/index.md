@@ -2,7 +2,7 @@
 title: "पूर्वशाळा व सुरुवातीच्या इयत्तांसाठी सर्वोत्तम संपूर्ण गणित शिक्षण अ‍ॅप"
 lang: "mr-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/mr-IN/index.html"
-modified: "2026-07-23"
+modified: "2026-07-24"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

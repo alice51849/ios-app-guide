@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Last Time — Remember when you did it | iOS App"
 lang: "en-US"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/en-US/index.html"
-modified: "2026-07-23"
+modified: "2026-07-24"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,7 @@ When did you last change the sheets, water a plant, call family, back up photos,
 - Lifestyle
 - Free to start · lifetime unlock
 - App Store · Free
+- ★ 5.0/5 · 1
 
 [Get Mochi DoneStamp: Last Time on the App Store](https://apps.apple.com/us/app/id6790800323)
 

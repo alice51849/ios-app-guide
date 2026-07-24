@@ -2,7 +2,7 @@
 title: "legjobb esti rutin alkalmazás óvodásoknak reklámok nélkül"
 lang: "hu"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/hu/index.html"
-modified: "2026-07-23"
+modified: "2026-07-24"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

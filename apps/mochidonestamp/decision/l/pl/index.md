@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Ostatni raz — Pamięta, kiedy to zrobiono | iOS App"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/pl/index.html"
-modified: "2026-07-23"
+modified: "2026-07-24"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

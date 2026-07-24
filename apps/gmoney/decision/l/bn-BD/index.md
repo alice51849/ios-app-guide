@@ -2,7 +2,7 @@
 title: "সেরা ট্রাভেল বাজেট ট্র্যাকার অ্যাপ কোনো সাবস্ক্রিপশন ছাড়াই আইফোনের জন্য"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/bn-BD/index.html"
-modified: "2026-07-23"
+modified: "2026-07-24"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

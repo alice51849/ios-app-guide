@@ -2,7 +2,7 @@
 title: "melhor app de vocabulário para utilizadores em deslocação com Apple Watch"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/pt-PT/index.html"
-modified: "2026-07-23"
+modified: "2026-07-24"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Utilizadores em deslocação precisam de prática de vocabulário que encaixe em
 - Sem rastreamento
 - Widget
 - Apple Watch
-- App Store · 6,99 €
+- App Store · 9,99 €
 
 [Obtenha Wordmate: Learn 44 Languages na App Store →](https://apps.apple.com/pt/app/id6789917808)
 

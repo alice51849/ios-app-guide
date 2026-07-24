@@ -2,7 +2,7 @@
 title: "أفضل تطبيق مفردات للمسافرين المشغولين مع Apple Watch"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/ar-SA/index.html"
-modified: "2026-07-23"
+modified: "2026-07-24"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - بدون تتبع
 - عنصر واجهة
 - Apple Watch
-- App Store · SAR 24.99
+- App Store · SAR 39.99
 
 [احصل على Wordmate: Learn 44 Languages من App Store →](https://apps.apple.com/sa/app/id6789917808)
 

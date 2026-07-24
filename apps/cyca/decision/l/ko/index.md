@@ -2,7 +2,7 @@
 title: "계정 없이 사용할 수 있는 최고의 생리 주기 추적 앱 아이폰용"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/ko/index.html"
-modified: "2026-07-23"
+modified: "2026-07-24"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

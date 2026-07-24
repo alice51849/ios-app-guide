@@ -2,7 +2,7 @@
 title: "Mask My File — ਭੇਜਣ ਤੋਂ ਪਹਿਲਾਂ ਵੇਰਵੇ ਲੁਕਾਓ | iOS App"
 lang: "pa-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/pa-IN/index.html"
-modified: "2026-07-23"
+modified: "2026-07-24"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

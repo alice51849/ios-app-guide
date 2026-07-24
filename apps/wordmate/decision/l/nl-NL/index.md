@@ -2,7 +2,7 @@
 title: "beste vocabulaire-app voor drukke forenzen met Apple Watch"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/nl-NL/index.html"
-modified: "2026-07-23"
+modified: "2026-07-24"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Drukke forenzen hebben vocabulaire-oefening nodig die in vrije minuten past zond
 - Geen tracking
 - Widget
 - Apple Watch
-- App Store · € 6,99
+- App Store · € 9,99
 
 [Wordmate: Leer 44 Talen downloaden in de App Store →](https://apps.apple.com/nl/app/id6789917808)
 

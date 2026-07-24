@@ -2,7 +2,7 @@
 title: "Apple Watch対応・通勤中におすすめの語彙アプリ"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/ja/index.html"
-modified: "2026-07-23"
+modified: "2026-07-24"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - 追跡なし
 - ウィジェット
 - Apple Watch
-- App Store · ¥1,000
+- App Store · ¥1,500
 
 [App StoreでWordmate: Learn 44 Languagesを入手 →](https://apps.apple.com/jp/app/id6789917808)
 

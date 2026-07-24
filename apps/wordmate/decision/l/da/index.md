@@ -2,7 +2,7 @@
 title: "bedste ordforrådsapp til travle pendlere med Apple Watch"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/da/index.html"
-modified: "2026-07-23"
+modified: "2026-07-24"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Travle pendlere har brug for ordforrådsøvelser, der passer ind i ledige minutt
 - Ingen sporing
 - Widget
 - Apple Watch
-- App Store · 49,00 kr
+- App Store · 79,00 kr
 
 [Hent Wordmate: Learn 44 Languages i App Store →](https://apps.apple.com/dk/app/id6789917808)
 

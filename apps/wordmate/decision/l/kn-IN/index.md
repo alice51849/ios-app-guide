@@ -2,7 +2,7 @@
 title: "Apple Watch ಹೊಂದಿರುವ ಬ್ಯುಸಿ ಪ್ರಯಾಣಿಕರಿಗೆ ಅತ್ಯುತ್ತಮ ಪದಕೋಶ ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/kn-IN/index.html"
-modified: "2026-07-23"
+modified: "2026-07-24"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - ಹಿಂಡಿಕೆ ಇಲ್ಲ
 - ವಿಜೆಟ್
 - Apple Watch
-- App Store · ₹ 599
+- App Store · ₹ 999
 
 [Wordmate: 44 ಭಾಷೆ ಕಲಿಯಿರಿ ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6789917808)
 

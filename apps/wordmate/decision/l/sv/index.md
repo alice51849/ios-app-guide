@@ -2,7 +2,7 @@
 title: "bästa vokabulärappen för upptagna pendlare med Apple Watch"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/sv/index.html"
-modified: "2026-07-23"
+modified: "2026-07-24"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Upptagna pendlare behöver vokabulärträning som passar in i lediga minuter uta
 - Ingen spårning
 - Widget
 - Apple Watch
-- App Store · 79,00 kr
+- App Store · 119,00 kr
 
 [Hämta Wordmate: Learn 44 Languages på App Store →](https://apps.apple.com/se/app/id6789917808)
 

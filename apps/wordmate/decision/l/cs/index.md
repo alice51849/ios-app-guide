@@ -2,7 +2,7 @@
 title: "nejlepší aplikace na slovní zásobu pro vytížené cestující s Apple Watch"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/cs/index.html"
-modified: "2026-07-23"
+modified: "2026-07-24"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Vytížení cestující potřebují procvičování slovní zásoby, které se v
 - Bez sledování
 - Widget
 - Apple Watch
-- App Store · 149,00 Kč
+- App Store · 249,00 Kč
 
 [Stáhněte si Wordmate: Learn 44 Languages v App Store →](https://apps.apple.com/cz/app/id6789917808)
 

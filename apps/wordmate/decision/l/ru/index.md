@@ -2,7 +2,7 @@
 title: "лучшее приложение для изучения словарного запаса для занятых пассажиров с Apple Watch"
 lang: "ru"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/ru/index.html"
-modified: "2026-07-23"
+modified: "2026-07-24"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Без отслеживания
 - Виджет
 - Apple Watch
-- App Store · 499,00 ₽
+- App Store · 799,00 ₽
 
 [Скачать Wordmate: изучение 44 языков в App Store →](https://apps.apple.com/ru/app/id6789917808)
 

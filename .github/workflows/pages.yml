@@ -39,6 +39,7 @@ jobs:
         run: |
           cp _engine/geo/notify_websub.py "$RUNNER_TEMP/notify_websub.py"
           cp _engine/geo/websub_config.py "$RUNNER_TEMP/websub_config.py"
+          cp _engine/geo/official_locales.py "$RUNNER_TEMP/official_locales.py"
           cp _engine/geo/notify_rsscloud.py "$RUNNER_TEMP/notify_rsscloud.py"
           cp _engine/geo/rsscloud_config.py "$RUNNER_TEMP/rsscloud_config.py"
           rm -rf _engine

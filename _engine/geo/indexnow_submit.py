@@ -9,6 +9,7 @@ import json
 import os
 from pathlib import Path
 import re
+import subprocess
 import time
 import urllib.error
 import urllib.parse
@@ -28,6 +29,7 @@ RETRYABLE_STATUSES = {429, 500, 502, 503, 504}
 KEY_RE = re.compile(r"[A-Za-z0-9_-]{8,128}")
 DEFAULT_BATCH_SIZE = 10_000
 REQUEST_TIMEOUT_SECONDS = 30
+PRIVATE_TOP_LEVEL_PATHS = {"_engine", ".git", ".github"}
 
 
 class SubmissionError(RuntimeError):
@@ -113,6 +115,197 @@ def read_urls(pages_dir: Path, site: str) -> list[str]:
     print(f"excluded_out_of_scope={excluded_out_of_scope}")
     if not urls:
         raise ValueError("IndexNow sitemap collection returned zero URLs")
+    return urls
+
+
+def git_change_set(
+    pages_dir: Path,
+    since: str,
+    *,
+    runner=subprocess.run,
+) -> tuple[str | None, list[Path]]:
+    if not since.strip() or any(character in since for character in "\r\n\0"):
+        raise ValueError("IndexNow git since value must be non-empty single-line text")
+    baseline_result = runner(
+        [
+            "git",
+            "-C",
+            str(pages_dir),
+            "rev-list",
+            "-1",
+            "--first-parent",
+            f"--before={since}",
+            "HEAD",
+        ],
+        check=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+    )
+    baseline = baseline_result.stdout.strip() or None
+    command = (
+        [
+            "git",
+            "-C",
+            str(pages_dir),
+            "diff",
+            "--name-only",
+            "-z",
+            "--no-renames",
+            f"{baseline}..HEAD",
+        ]
+        if baseline
+        else [
+            "git",
+            "-C",
+            str(pages_dir),
+            "ls-files",
+            "-z",
+        ]
+    )
+    result = runner(
+        command,
+        check=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+    )
+    paths: set[Path] = set()
+    for raw_path in result.stdout.split("\0"):
+        if not raw_path:
+            continue
+        path = Path(raw_path)
+        if path.is_absolute() or ".." in path.parts:
+            raise ValueError(f"Unsafe changed path from git: {raw_path}")
+        paths.add(path)
+    return baseline, sorted(paths, key=lambda path: path.as_posix())
+
+
+def git_sitemap_urls(
+    pages_dir: Path,
+    site: str,
+    ref: str,
+    *,
+    runner=subprocess.run,
+) -> list[str]:
+    if not ref or any(character in ref for character in "\r\n\0"):
+        raise ValueError("IndexNow git sitemap ref must be non-empty single-line text")
+    result = runner(
+        [
+            "git",
+            "-C",
+            str(pages_dir),
+            "grep",
+            "-h",
+            "-o",
+            r"<loc>[^<]*</loc>",
+            ref,
+            "--",
+            ":(glob)sitemap*.xml",
+            ":(glob)**/sitemap*.xml",
+        ],
+        check=False,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+    )
+    if result.returncode not in {0, 1}:
+        raise subprocess.CalledProcessError(
+            result.returncode,
+            result.args if hasattr(result, "args") else "git grep",
+            output=result.stdout,
+            stderr=result.stderr,
+        )
+    urls: set[str] = set()
+    for value in re.findall(r"<loc>([^<]+)</loc>", result.stdout):
+        url = html.unescape(value.strip())
+        if not url:
+            continue
+        try:
+            validate_public_url(url, site)
+        except ValueError:
+            if is_same_host_out_of_scope(url, site):
+                continue
+            raise
+        name = Path(urllib.parse.urlsplit(url).path).name
+        if name == "sitemap.xml" or (
+            name.startswith("sitemap_") and name.endswith(".xml")
+        ):
+            continue
+        urls.add(url)
+    return sorted(urls)
+
+
+def _relative_sitemap_urls(urls: list[str], site: str) -> dict[str, str]:
+    prefix = urllib.parse.urlsplit(site).path.rstrip("/") + "/"
+    mapped = {}
+    for url in urls:
+        path = urllib.parse.urlsplit(url).path
+        if path.startswith(prefix):
+            mapped[urllib.parse.unquote(path[len(prefix) :])] = url
+    return mapped
+
+
+def _public_path(path: Path) -> bool:
+    return bool(
+        path.parts
+        and path.parts[0] not in PRIVATE_TOP_LEVEL_PATHS
+    )
+
+
+def changed_urls(
+    pages_dir: Path,
+    site: str,
+    paths: list[Path],
+    previous_urls: list[str] | None = None,
+) -> list[str]:
+    sitemap_urls = read_urls(pages_dir, site)
+    by_relative_path = _relative_sitemap_urls(sitemap_urls, site)
+    previous_by_relative_path = _relative_sitemap_urls(
+        previous_urls or [],
+        site,
+    )
+    selected: set[str] = set()
+    for path in paths:
+        if path.is_absolute() or ".." in path.parts or not _public_path(path):
+            continue
+        relative = path.as_posix()
+        candidates = [relative]
+        if relative == "index.html":
+            candidates.append("")
+        elif relative.endswith("/index.html"):
+            candidates.append(relative[: -len("index.html")])
+        for candidate in candidates:
+            url = by_relative_path.get(candidate)
+            if url:
+                selected.add(url)
+        if (pages_dir / path).exists():
+            continue
+        for candidate in candidates:
+            previous_url = previous_by_relative_path.get(candidate)
+            if previous_url:
+                selected.add(previous_url)
+    return sorted(selected)
+
+
+def read_changed_urls(
+    pages_dir: Path,
+    site: str,
+    since: str,
+    *,
+    runner=subprocess.run,
+) -> list[str]:
+    baseline, paths = git_change_set(pages_dir, since, runner=runner)
+    previous_urls = (
+        git_sitemap_urls(pages_dir, site, baseline, runner=runner)
+        if baseline
+        else []
+    )
+    urls = changed_urls(pages_dir, site, paths, previous_urls)
+    print(
+        f"baseline={baseline or 'empty-tree'} "
+        f"changed_paths={len(paths)} changed_public_urls={len(urls)}"
+    )
     return urls
 
 
@@ -241,16 +434,30 @@ def main() -> None:
         type=int,
         default=DEFAULT_BATCH_SIZE,
     )
+    parser.add_argument(
+        "--git-since",
+        help=(
+            "Submit only public URLs whose repository paths changed since this "
+            "git date expression; omit for an explicit full refresh"
+        ),
+    )
     parser.add_argument("--limit", type=int)
     args = parser.parse_args()
 
     site = args.site.rstrip("/")
-    key = read_key(args.key_file)
-    urls = read_urls(args.pages_dir, site)
+    urls = (
+        read_changed_urls(args.pages_dir, site, args.git_since)
+        if args.git_since
+        else read_urls(args.pages_dir, site)
+    )
     if args.limit is not None:
         if args.limit <= 0:
             raise ValueError("IndexNow limit must be positive")
         urls = urls[: args.limit]
+    if not urls:
+        print("No changed public URLs; nothing to submit")
+        return
+    key = read_key(args.key_file)
     print(
         f"host={urllib.parse.urlsplit(site).netloc} "
         f"key={key[:8]}... urls={len(urls)}"

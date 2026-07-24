@@ -8,6 +8,12 @@ on:
     workflows: ["Daily GEO content"]   # 每次內容生成後即通知搜尋引擎(排程不可靠時的確定性觸發)
     types: [completed]
   workflow_dispatch:
+    inputs:
+      full_refresh:
+        description: Submit every sitemap URL instead of only changed URLs
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: read
@@ -21,15 +27,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Verify strict IndexNow delivery
         run: python3 _engine/geo/tests/test_indexnow_submit.py
-      - name: Submit all sitemap URLs to IndexNow
+      - name: Submit changed public URLs to IndexNow
         run: |
           keyfile="$(find . -maxdepth 1 -type f -name '*.txt' \
             | grep -E '/[a-f0-9]{32}\.txt$' | head -1)"
           test -n "$keyfile"
+          mode=(--git-since "25 hours ago")
+          if [[ "${{ inputs.full_refresh || false }}" == "true" ]]; then
+            mode=()
+          fi
           python3 _engine/geo/indexnow_submit.py \
             --pages-dir . \
             --site https://alice51849.github.io/ios-app-guide \
             --key-file "$keyfile" \
-            --batch-size 10000
+            --batch-size 10000 \
+            "${mode[@]}"

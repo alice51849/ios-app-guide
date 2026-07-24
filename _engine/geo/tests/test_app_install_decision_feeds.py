@@ -91,6 +91,14 @@ class AppInstallDecisionFeedTests(unittest.TestCase):
 
             atom = ET.parse(atom_path).getroot()
             atom_entries = atom.findall(f"{atom_ns}entry")
+            self.assertEqual(
+                set(app_install_decision_feeds.gen_feed.WEBSUB_HUBS),
+                {
+                    link.attrib["href"]
+                    for link in atom.findall(atom_link)
+                    if link.attrib.get("rel") == "hub"
+                },
+            )
             self.assertEqual(len(records), len(atom_entries))
             self.assertEqual(
                 expected_pages,

@@ -433,6 +433,10 @@ def render_atom(
         *(state["date_modified"] for state in item_state.values()),
     )
     urls = feed_urls(locale)
+    hub_links = "".join(
+        f'  <link rel="hub" href="{e(hub, quote=True)}"/>\n'
+        for hub in gen_feed.WEBSUB_HUBS
+    )
     entries = []
     for record in records:
         record_id = str(record["record_id"])
@@ -468,6 +472,7 @@ def render_atom(
         f"  <id>{e(urls['atom'])}</id>\n"
         f'  <link rel="self" type="application/atom+xml" '
         f'href="{e(urls["atom"], quote=True)}"/>\n'
+        f"{hub_links}"
         f'  <link rel="alternate" type="text/html" '
         f'href="{e(_home_url(locale), quote=True)}"/>\n'
         f'  <link rel="alternate" type="application/rss+xml" '

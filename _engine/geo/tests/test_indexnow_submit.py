@@ -10,6 +10,7 @@ import tempfile
 import unittest
 from unittest import mock
 import urllib.error
+from types import SimpleNamespace
 
 
 MODULE_PATH = Path(__file__).resolve().parents[1] / "indexnow_submit.py"
@@ -177,6 +178,125 @@ class IndexNowTests(unittest.TestCase):
             )
             with self.assertRaises(ValueError):
                 indexnow.read_urls(root, site)
+
+    def test_reads_net_change_set_from_first_parent_baseline(self) -> None:
+        runner = mock.Mock(
+            side_effect=[
+                SimpleNamespace(stdout="base-sha\n"),
+                SimpleNamespace(
+                    stdout=(
+                        "one.html\0"
+                        "nested/two.html\0"
+                        "one.html\0"
+                        "gone.html\0"
+                    )
+                ),
+            ]
+        )
+        baseline, paths = indexnow.git_change_set(
+            Path("/tmp/site"),
+            "25 hours ago",
+            runner=runner,
+        )
+        self.assertEqual("base-sha", baseline)
+        self.assertEqual(
+            [
+                Path("gone.html"),
+                Path("nested/two.html"),
+                Path("one.html"),
+            ],
+            paths,
+        )
+        baseline_command = runner.call_args_list[0].args[0]
+        self.assertIn("--first-parent", baseline_command)
+        self.assertIn("--before=25 hours ago", baseline_command)
+        diff_command = runner.call_args_list[1].args[0]
+        self.assertIn("base-sha..HEAD", diff_command)
+        self.assertIn("--no-renames", diff_command)
+
+    def test_changed_urls_include_only_indexed_files_and_public_deletions(
+        self,
+    ) -> None:
+        site = "https://example.com/apps"
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "nested").mkdir()
+            (root / ".well-known").mkdir()
+            (root / "one.html").write_text("one", encoding="utf-8")
+            (root / ".well-known" / "api-catalog").write_text(
+                "catalog",
+                encoding="utf-8",
+            )
+            (root / "nested" / "index.html").write_text(
+                "nested",
+                encoding="utf-8",
+            )
+            (root / "unlisted.html").write_text("private", encoding="utf-8")
+            (root / "sitemap.xml").write_text(
+                sitemap(
+                    f"{site}/.well-known/api-catalog",
+                    f"{site}/one.html",
+                    f"{site}/nested/",
+                ),
+                encoding="utf-8",
+            )
+            urls = indexnow.changed_urls(
+                root,
+                site,
+                [
+                    Path(".github/workflows/deploy.yml"),
+                    Path("_engine/private.py"),
+                    Path(".well-known/api-catalog"),
+                    Path("archive.zip"),
+                    Path("gone.jsonld"),
+                    Path("nested/index.html"),
+                    Path("one.html"),
+                    Path("styles.css"),
+                    Path("unlisted.html"),
+                ],
+                previous_urls=[
+                    f"{site}/archive.zip",
+                    f"{site}/gone.jsonld",
+                ],
+            )
+        self.assertEqual(
+            [
+                f"{site}/.well-known/api-catalog",
+                f"{site}/archive.zip",
+                f"{site}/gone.jsonld",
+                f"{site}/nested/",
+                f"{site}/one.html",
+            ],
+            urls,
+        )
+
+    def test_incremental_reader_reports_empty_public_change_set(self) -> None:
+        site = "https://example.com/apps"
+        runner = mock.Mock(
+            side_effect=[
+                SimpleNamespace(stdout="base-sha\n"),
+                SimpleNamespace(stdout="_engine/private.py\0"),
+                SimpleNamespace(
+                    stdout=f"<loc>{site}/one.html</loc>\n",
+                    stderr="",
+                    returncode=0,
+                    args=["git", "grep"],
+                ),
+            ]
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "sitemap.xml").write_text(
+                sitemap(f"{site}/one.html"),
+                encoding="utf-8",
+            )
+            urls = indexnow.read_changed_urls(
+                root,
+                site,
+                "25 hours ago",
+                runner=runner,
+            )
+        self.assertEqual([], urls)
 
     def test_submit_all_requires_every_endpoint_and_chunks_safely(self) -> None:
         calls: list[tuple[str, int]] = []

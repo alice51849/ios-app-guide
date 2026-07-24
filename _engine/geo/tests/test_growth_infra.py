@@ -3614,20 +3614,38 @@ class GeneratorTests(unittest.TestCase):
 
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            bodies = []
             for filename in notify_websub.FEED_FILES:
                 body = f"deployed {filename}".encode()
                 (root / filename).write_bytes(body)
-                bodies.append(body)
+            localized = root / notify_websub.LOCALIZED_ATOM_DIR
+            localized.mkdir(parents=True)
+            for locale in OFFICIAL_LOCALES:
+                (localized / f"{locale}.atom.xml").write_bytes(
+                    f"deployed {locale}".encode()
+                )
+            topics = notify_websub.discover_topics(root)
+            self.assertEqual(
+                len(notify_websub.FEED_FILES) + len(OFFICIAL_LOCALES),
+                len(topics),
+            )
+
+            def deployed(request, **_kwargs):
+                path = notify_websub._local_feed_path(root, request.full_url)
+                return Response(path.read_bytes())
+
             with mock.patch.object(
                 notify_websub.urllib.request,
                 "urlopen",
-                side_effect=[Response(body) for body in bodies],
+                side_effect=deployed,
             ) as urlopen:
                 notify_websub.wait_until_deployed(
-                    root, attempts=1, timeout=7
+                    root,
+                    topics=topics,
+                    attempts=1,
+                    timeout=7,
+                    workers=1,
                 )
-            self.assertEqual(len(notify_websub.TOPICS), urlopen.call_count)
+            self.assertEqual(len(topics), urlopen.call_count)
             self.assertTrue(
                 all(call.kwargs["timeout"] == 7 for call in urlopen.call_args_list)
             )
@@ -3639,14 +3657,19 @@ class GeneratorTests(unittest.TestCase):
         ) as urlopen, mock.patch.object(notify_websub.time, "sleep") as sleep:
             self.assertEqual(
                 204,
-                notify_websub.notify(attempts=2, timeout=9, delay=1),
+                notify_websub.notify(
+                    topics=topics,
+                    attempts=2,
+                    timeout=9,
+                    delay=1,
+                ),
             )
         self.assertEqual(2, urlopen.call_count)
         sleep.assert_called_once_with(1)
         request = urlopen.call_args_list[-1].args[0]
         payload = urllib.parse.parse_qs(request.data.decode("ascii"))
         self.assertEqual(["publish"], payload["hub.mode"])
-        self.assertEqual(list(notify_websub.TOPICS), payload["hub.url"])
+        self.assertEqual(list(topics), payload["hub.url"])
         self.assertEqual(
             "application/x-www-form-urlencoded; charset=utf-8",
             request.get_header("Content-type"),
@@ -3751,11 +3774,13 @@ class GeneratorTests(unittest.TestCase):
         sleep.assert_called_once_with(1)
 
     def test_pages_deploy_notifies_syndication_only_after_success(self):
+        pages_root = Path(os.environ.get("GEO_PAGES", Path(GEO) / "pages"))
         workflow = (
-            Path(GEO) / "pages" / ".github" / "workflows" / "pages.yml"
+            pages_root / ".github" / "workflows" / "pages.yml"
         ).read_text(encoding="utf-8")
         preserve = workflow.index("cp _engine/geo/notify_websub.py")
         preserve_config = workflow.index("cp _engine/geo/websub_config.py")
+        preserve_locales = workflow.index("cp _engine/geo/official_locales.py")
         preserve_rsscloud = workflow.index("cp _engine/geo/notify_rsscloud.py")
         preserve_rsscloud_config = workflow.index(
             "cp _engine/geo/rsscloud_config.py"
@@ -3769,6 +3794,7 @@ class GeneratorTests(unittest.TestCase):
         enforce = workflow.index("Enforce syndication notification results")
         self.assertLess(preserve, prune)
         self.assertLess(preserve_config, prune)
+        self.assertLess(preserve_locales, prune)
         self.assertLess(preserve_rsscloud, prune)
         self.assertLess(preserve_rsscloud_config, prune)
         self.assertLess(prune, deploy)

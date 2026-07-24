@@ -44,7 +44,9 @@ VIDEO_NS = "http://www.google.com/schemas/sitemap-video/1.1"
 TODAY_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
 KEY_RE = re.compile(r"[a-z0-9]+")
 VIDEO_PATH_RE = re.compile(r"/[a-z0-9]+\.mp4")
-SOURCE_RECORD_KEYS = frozenset(
+VIDEO_FILENAME_RE = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*\.mp4")
+SHA256_RE = re.compile(r"[0-9a-f]{64}")
+SOURCE_RECORD_REQUIRED_KEYS = frozenset(
     {
         "app_key",
         "locale",
@@ -53,6 +55,7 @@ SOURCE_RECORD_KEYS = frozenset(
         "published_on",
     }
 )
+SOURCE_RECORD_OPTIONAL_KEYS = frozenset({"width", "height", "sha256"})
 UI_STRINGS = (
     "App walkthroughs",
     "Short, publisher-authored walkthroughs of real app screens.",
@@ -116,13 +119,27 @@ def _single_line(value: object) -> str:
 def _video_url(value: object) -> str:
     url = _single_line(value)
     parsed = urllib.parse.urlsplit(url)
+    site = urllib.parse.urlsplit(SITE)
+    first_party_prefix = site.path.rstrip("/") + "/media/app-videos/"
+    first_party_filename = (
+        parsed.path.removeprefix(first_party_prefix)
+        if parsed.path.startswith(first_party_prefix)
+        else ""
+    )
+    approved_catbox = (
+        parsed.netloc == "files.catbox.moe"
+        and VIDEO_PATH_RE.fullmatch(parsed.path) is not None
+    )
+    approved_first_party = (
+        parsed.netloc == site.netloc
+        and VIDEO_FILENAME_RE.fullmatch(first_party_filename) is not None
+    )
     if (
         parsed.scheme != "https"
-        or parsed.netloc != "files.catbox.moe"
         or parsed.username
         or parsed.query
         or parsed.fragment
-        or VIDEO_PATH_RE.fullmatch(parsed.path) is None
+        or not (approved_catbox or approved_first_party)
     ):
         raise ValueError(f"Invalid public video URL: {url}")
     return url
@@ -173,7 +190,15 @@ def load_sources(path: Path = SOURCE_PATH) -> dict[str, Any]:
     urls: set[str] = set()
     normalized = []
     for source in records:
-        if not isinstance(source, dict) or set(source) != SOURCE_RECORD_KEYS:
+        if not isinstance(source, dict):
+            raise ValueError("Video lesson source record fields are invalid")
+        source_keys = set(source)
+        if (
+            not SOURCE_RECORD_REQUIRED_KEYS.issubset(source_keys)
+            or not source_keys.issubset(
+                SOURCE_RECORD_REQUIRED_KEYS | SOURCE_RECORD_OPTIONAL_KEYS
+            )
+        ):
             raise ValueError("Video lesson source record fields are invalid")
         app_key = _single_line(source["app_key"])
         locale = _single_line(source["locale"])
@@ -184,12 +209,32 @@ def load_sources(path: Path = SOURCE_PATH) -> dict[str, Any]:
             "video publication date",
         )
         duration = source["duration_seconds"]
+        width = source.get("width", profile["width"])
+        height = source.get("height", profile["height"])
+        checksum = source.get("sha256")
+        first_party = urllib.parse.urlsplit(video_url).netloc == urllib.parse.urlsplit(
+            SITE
+        ).netloc
         if (
             KEY_RE.fullmatch(app_key) is None
             or locale not in OFFICIAL_LOCALES
             or not isinstance(duration, (int, float))
             or isinstance(duration, bool)
             or not 1 <= float(duration) <= 300
+            or not isinstance(width, int)
+            or isinstance(width, bool)
+            or width <= 0
+            or not isinstance(height, int)
+            or isinstance(height, bool)
+            or height <= 0
+            or (
+                checksum is not None
+                and (
+                    not isinstance(checksum, str)
+                    or SHA256_RE.fullmatch(checksum) is None
+                )
+            )
+            or (first_party and checksum is None)
         ):
             raise ValueError(f"Invalid video lesson source: {source}")
         pair = (locale, app_key)
@@ -204,6 +249,9 @@ def load_sources(path: Path = SOURCE_PATH) -> dict[str, Any]:
                 "video_url": video_url,
                 "duration_seconds": float(duration),
                 "published_on": published_date.isoformat(),
+                "width": width,
+                "height": height,
+                **({"sha256": checksum} if checksum is not None else {}),
             }
         )
     return {
@@ -324,12 +372,17 @@ def build_records(
                 "thumbnail_url": f"{site}/social/img/{app_key}-share.jpg",
                 "encoding_format": str(profile["encoding_format"]),
                 "codec": str(profile["codec"]),
-                "width": int(profile["width"]),
-                "height": int(profile["height"]),
+                "width": int(source["width"]),
+                "height": int(source["height"]),
                 "duration": _duration_iso(float(source["duration_seconds"])),
                 "duration_seconds": float(source["duration_seconds"]),
                 "published_on": published_on,
                 "published_at": _published_at(published_on),
+                **(
+                    {"content_sha256": str(source["sha256"])}
+                    if source.get("sha256")
+                    else {}
+                ),
                 "page_url": page_url(app_key, locale, site),
                 "markdown_url": markdown_url(app_key, locale, site),
                 "hub_url": hub_url(locale, site),
@@ -558,6 +611,10 @@ def schema_payload(site: str = SITE) -> dict[str, Any]:
                             "format": "uri",
                         },
                         "verified_live": {"const": True},
+                        "content_sha256": {
+                            "type": "string",
+                            "pattern": "^[0-9a-f]{64}$",
+                        },
                     },
                 },
             },

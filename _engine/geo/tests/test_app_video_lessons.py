@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 import os
 from pathlib import Path
 import sys
@@ -27,10 +28,10 @@ class AppVideoLessonSourceTests(unittest.TestCase):
         payload = lessons.load_sources()
         records = payload["records"]
 
-        self.assertEqual(44, len(records))
-        self.assertEqual(19, len({record["app_key"] for record in records}))
+        self.assertEqual(45, len(records))
+        self.assertEqual(20, len({record["app_key"] for record in records}))
         self.assertEqual(14, len({record["locale"] for record in records}))
-        self.assertEqual(44, len({record["video_url"] for record in records}))
+        self.assertEqual(45, len({record["video_url"] for record in records}))
         self.assertEqual(
             {
                 "encoding_format": "video/mp4",
@@ -43,9 +44,48 @@ class AppVideoLessonSourceTests(unittest.TestCase):
         for record in records:
             parsed = urllib.parse.urlsplit(record["video_url"])
             self.assertEqual("https", parsed.scheme)
-            self.assertEqual("files.catbox.moe", parsed.netloc)
+            self.assertIn(
+                parsed.netloc,
+                {"files.catbox.moe", "alice51849.github.io"},
+            )
             self.assertTrue(parsed.path.endswith(".mp4"))
             self.assertGreater(record["duration_seconds"], 0)
+            self.assertGreater(record["width"], 0)
+            self.assertGreater(record["height"], 0)
+        mochi = next(record for record in records if record["app_key"] == "mochi")
+        self.assertEqual("en-US", mochi["locale"])
+        self.assertEqual(1080, mochi["width"])
+        self.assertEqual(1920, mochi["height"])
+        self.assertEqual(
+            "6f313190027c4a10d1484b9ee0b2db9dbe5bf3c8bc256ffd102a2b288b0eb68b",
+            mochi["sha256"],
+        )
+        self.assertEqual(
+            "https://alice51849.github.io/ios-app-guide/media/app-videos/"
+            "mochi-en-us.mp4",
+            mochi["video_url"],
+        )
+
+    def test_video_urls_reject_unapproved_or_nested_first_party_paths(self) -> None:
+        self.assertEqual(
+            "https://alice51849.github.io/ios-app-guide/media/app-videos/"
+            "mochi-en-us.mp4",
+            lessons._video_url(
+                "https://alice51849.github.io/ios-app-guide/media/"
+                "app-videos/mochi-en-us.mp4"
+            ),
+        )
+        for url in (
+            "https://example.com/mochi.mp4",
+            "https://alice51849.github.io/ios-app-guide/media/app-videos/"
+            "nested/mochi.mp4",
+            "https://alice51849.github.io/other/media/app-videos/mochi.mp4",
+        ):
+            with self.subTest(url=url), self.assertRaisesRegex(
+                ValueError,
+                "Invalid public video URL",
+            ):
+                lessons._video_url(url)
 
     def test_i18n_has_no_fallback_for_represented_locales(self) -> None:
         sources = lessons.load_sources()
@@ -364,6 +404,26 @@ class AppVideoLessonPublishedOutputTests(unittest.TestCase):
         self.assertTrue(
             all(record["uses_real_app_screens"] for record in self.records)
         )
+        for source in sources:
+            checksum = source.get("sha256")
+            if not checksum:
+                continue
+            output = next(
+                record
+                for record in self.records
+                if record["record_id"]
+                == f"{source['locale']}:{source['app_key']}"
+            )
+            self.assertEqual(checksum, output["content_sha256"])
+            parsed = urllib.parse.urlsplit(source["video_url"])
+            site_path = urllib.parse.urlsplit(lessons.SITE).path.rstrip("/") + "/"
+            self.assertTrue(parsed.path.startswith(site_path))
+            media_path = self.pages / parsed.path.removeprefix(site_path)
+            self.assertTrue(media_path.is_file())
+            self.assertEqual(
+                checksum,
+                hashlib.sha256(media_path.read_bytes()).hexdigest(),
+            )
 
     def test_every_video_has_a_static_player_videoobject_and_markdown(self) -> None:
         for record in self.records:

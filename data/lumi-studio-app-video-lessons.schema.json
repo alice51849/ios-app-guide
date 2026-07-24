@@ -162,6 +162,10 @@
           },
           "verified_live": {
             "const": true
+          },
+          "content_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
           }
         }
       }

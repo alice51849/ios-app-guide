@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "source_repository": "alice51849/threads-autopilot",
-  "source_document": "queue.json",
+  "source_repository": "alice51849/00_GrowthEngine",
+  "source_document": "geo/app_video_lesson_sources.json",
   "media_profile": {
     "encoding_format": "video/mp4",
     "codec": "h264",
@@ -15,6 +15,16 @@
       "video_url": "https://files.catbox.moe/zx7mup.mp4",
       "duration_seconds": 16.0,
       "published_on": "2026-07-24"
+    },
+    {
+      "app_key": "mochi",
+      "locale": "en-US",
+      "video_url": "https://alice51849.github.io/ios-app-guide/media/app-videos/mochi-en-us.mp4",
+      "duration_seconds": 8.8,
+      "published_on": "2026-07-24",
+      "width": 1080,
+      "height": 1920,
+      "sha256": "6f313190027c4a10d1484b9ee0b2db9dbe5bf3c8bc256ffd102a2b288b0eb68b"
     },
     {
       "app_key": "cyca",

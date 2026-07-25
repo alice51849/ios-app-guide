@@ -2,7 +2,7 @@
 title: "ಪ್ರೀ-ಸ್ಕೂಲ್ ಮಕ್ಕಳಿಗೆ ಜಾಹೀರಾತು ಇಲ್ಲದ ಅತ್ಯುತ್ತಮ ಮಲಗುವ ಸಮಯ ಕ್ರಮ ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/kn-IN/index.html"
-modified: "2026-07-24"
+modified: "2026-07-25"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

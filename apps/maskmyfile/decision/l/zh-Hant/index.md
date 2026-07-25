@@ -2,7 +2,7 @@
 title: "Mask My File — 分享前遮蔽個資與私密資訊 | iOS App"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/zh-Hant/index.html"
-modified: "2026-07-24"
+modified: "2026-07-25"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

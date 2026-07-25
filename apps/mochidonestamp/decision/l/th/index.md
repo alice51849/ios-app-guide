@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: ครั้งล่าสุด — จำได้ว่าทำครั้งล่าสุดเมื่อไร | iOS App"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/th/index.html"
-modified: "2026-07-24"
+modified: "2026-07-25"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

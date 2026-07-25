@@ -4,9 +4,9 @@
   "name": "Lumi Studio App Install Decision Routes",
   "description": "First-party install decision routes for every verified live iOS app and Apple locale, with a direct App Store path, purchase model, privacy facts, device surfaces and provenance.",
   "identifier": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes.json",
-  "dateModified": "2026-07-24",
-  "content_digest": "eab05487f57f0da90b89cd3acf14e6999bbda49a6d157a6654c8bfcca292bb4b",
-  "generation_digest": "25a4da2808fd1e95a4825c6db83eabdd5268a3a0fc2cb9318b2e819808853c38",
+  "dateModified": "2026-07-25",
+  "content_digest": "fb0896395026809c4e0102b75bc3bce083adf750d42ad7b32f05564963956831",
+  "generation_digest": "60ce0dcf4bc84c5cea701c498084ad25d4390af18ce038592364ab0c43177e43",
   "publisher_disclosure": "First-party decision-support material published by Lumi Studio, the developer of every listed app; not an independent ranking or measured search-volume product.",
   "ordering": "official_locale_order_then_priority_then_alphabetical_app_name",
   "priority_app_keys": [
@@ -56307,7 +56307,8 @@
         "Produtividade",
         "Grátis para começar · desbloqueio permanente",
         "Sem anúncios",
-        "App Store · Grátis"
+        "App Store · Grátis",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/pt-BR/index.html",
@@ -56320,7 +56321,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "BRL",
-        "formatted_price": "Grátis"
+        "formatted_price": "Grátis",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "Leia o guia completo",
       "publisher_disclosure": "Guia elaborado pelo editor Lumi Studio, o desenvolvedor do aplicativo. Os nomes dos aplicativos são marcas registradas de seus proprietários e são usados apenas para identificação. Para documentos, saúde, escola e decisões de produtividade, verifique os requisitos oficiais quando aplicável.",

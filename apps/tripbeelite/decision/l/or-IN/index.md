@@ -2,7 +2,7 @@
 title: "ଏକ ଆସନ୍ତା ଯାତ୍ରା ପାଇଁ ସରଳ ଟ୍ରିପ୍ ପ୍ଲାନର୍ ଆଇଫୋନ୍ ଆପ୍‌ର ସର୍ବୋତ୍ତମ"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/or-IN/index.html"
-modified: "2026-07-24"
+modified: "2026-07-25"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

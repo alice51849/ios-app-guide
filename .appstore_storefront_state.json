@@ -1,7 +1,7 @@
 {
   "version": 2,
   "source": "Apple iTunes Lookup API",
-  "checked_at": "2026-07-25T20:17:51Z",
+  "checked_at": "2026-07-25T20:48:59Z",
   "app_count": 32,
   "countries": {
     "au": [
@@ -1598,7 +1598,9 @@
       "6785004775": {
         "price": "0",
         "currency": "BRL",
-        "formatted_price": "Grátis"
+        "formatted_price": "Grátis",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "6787193643": {
         "price": "0",

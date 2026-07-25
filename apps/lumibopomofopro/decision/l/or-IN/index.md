@@ -2,7 +2,7 @@
 title: "ଦ୍ୱିଭାଷୀ ଶିଶୁମାନେ ପାଇଁ ସର୍ବୋତ୍ତମ ସମ୍ପୂର୍ଣ୍ଣ ଝୁୟିନ୍ ଆପ୍"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/or-IN/index.html"
-modified: "2026-07-24"
+modified: "2026-07-25"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"

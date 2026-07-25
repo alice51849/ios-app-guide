@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație pentru cheltuieli conștiente ca să oprești cumpărăturile impulsive pentru iPhone"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/ro/index.html"
-modified: "2026-07-24"
+modified: "2026-07-25"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

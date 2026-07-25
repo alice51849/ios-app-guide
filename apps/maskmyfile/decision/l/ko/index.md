@@ -2,7 +2,7 @@
 title: "Mask My File — 공유 전 개인정보 영구 가리기 | iOS App"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/ko/index.html"
-modified: "2026-07-24"
+modified: "2026-07-25"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "ಅಕೌಂಟ್ ಇಲ್ಲದ ಅತ್ಯುತ್ತಮ ಪ್ರಯಾಣ ಬಜೆಟ್ ಟ್ರ್ಯಾಕರ್ ಅಪ್ಲಿಕೇಶನ್ iPhone"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/kn-IN/index.html"
-modified: "2026-07-24"
+modified: "2026-07-25"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

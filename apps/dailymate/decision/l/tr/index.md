@@ -2,7 +2,7 @@
 title: "Apple Watch destekli, gezginler için en iyi pratik dil ifadeleri uygulaması"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/tr/index.html"
-modified: "2026-07-24"
+modified: "2026-07-25"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"

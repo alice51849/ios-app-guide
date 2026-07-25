@@ -2,7 +2,7 @@
 title: "2026 کے لیے کیریئر چینجرز کے لیے بہترین ریزیومے بلڈر ایپ"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/ur-PK/index.html"
-modified: "2026-07-24"
+modified: "2026-07-25"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

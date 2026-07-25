@@ -2,7 +2,7 @@
 title: "Evde anaokulu hazırlığı için en iyi tam fonetik uygulama"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/tr/index.html"
-modified: "2026-07-24"
+modified: "2026-07-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"

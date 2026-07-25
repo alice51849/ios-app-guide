@@ -2,7 +2,7 @@
 title: "iPhone के लिए सर्वश्रेष्ठ माइंडफुल खर्च ऐप जो आवेग खरीदारी रोकता है"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/hi/index.html"
-modified: "2026-07-24"
+modified: "2026-07-25"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

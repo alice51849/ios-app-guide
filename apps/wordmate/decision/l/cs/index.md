@@ -2,7 +2,7 @@
 title: "nejlepší aplikace na slovní zásobu pro vytížené cestující s Apple Watch"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/cs/index.html"
-modified: "2026-07-24"
+modified: "2026-07-25"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"

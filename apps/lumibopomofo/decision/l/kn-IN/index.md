@@ -2,7 +2,7 @@
 title: "iPhone ನಲ್ಲಿ ಮಕ್ಕಳಿಗೆ ಜುಯಿನ್ ಕಲಿಸಲು ಉತ್ತಮ ಬೋಪೊಮೊಫೋ ಆಪ್"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/kn-IN/index.html"
-modified: "2026-07-24"
+modified: "2026-07-25"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "ಆಯಾಸ ಖರೀದಿಯನ್ನು ನಿಲ್ಲಿಸಲು ಅತ್ಯುತ್ತಮ ಮನೋವೈಜ್ಞಾನಿಕ ಖರ್ಚು ಅಪ್ಲಿಕೇಶನ್ iPhone"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/kn-IN/index.html"
-modified: "2026-07-24"
+modified: "2026-07-25"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

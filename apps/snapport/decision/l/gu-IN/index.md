@@ -2,7 +2,7 @@
 title: "બાળકો અને ટોડલર્સ માટે શ્રેષ્ઠ પાસપોર્ટ ફોટો એપ ઘરમાં"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/gu-IN/index.html"
-modified: "2026-07-24"
+modified: "2026-07-25"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"

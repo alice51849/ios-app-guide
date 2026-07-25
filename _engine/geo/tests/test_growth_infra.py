@@ -17915,7 +17915,7 @@ class GeneratorTests(unittest.TestCase):
             {"192x192", "512x512"},
             {icon["sizes"] for icon in english_manifest["icons"]},
         )
-        self.assertEqual(5, len(english_manifest["shortcuts"]))
+        self.assertEqual(6, len(english_manifest["shortcuts"]))
         self.assertEqual(
             {
                 "kids",
@@ -17929,7 +17929,27 @@ class GeneratorTests(unittest.TestCase):
                     urllib.parse.urlsplit(shortcut["url"]).query
                 )["category"][0]
                 for shortcut in english_manifest["shortcuts"]
+                if "category"
+                in urllib.parse.parse_qs(
+                    urllib.parse.urlsplit(shortcut["url"]).query
+                )
             },
+        )
+        one_time_shortcut = next(
+            shortcut
+            for shortcut in english_manifest["shortcuts"]
+            if urllib.parse.parse_qs(
+                urllib.parse.urlsplit(shortcut["url"]).query
+            ).get("purchase")
+            == ["one_time"]
+        )
+        self.assertEqual(
+            portfolio_app_finder.UI["en"]["one_time"],
+            one_time_shortcut["name"],
+        )
+        self.assertIs(
+            english_manifest["shortcuts"][0],
+            one_time_shortcut,
         )
         self.assertEqual(
             ["Snapport", "Wordmate: Learn 44 Languages"],
@@ -18386,7 +18406,20 @@ class GeneratorTests(unittest.TestCase):
                     "/private-pay-once-iphone-app-finder.html"
                 )
             )
-            self.assertEqual(5, len(manifest["shortcuts"]))
+            self.assertEqual(6, len(manifest["shortcuts"]))
+            one_time_shortcut = next(
+                shortcut
+                for shortcut in manifest["shortcuts"]
+                if urllib.parse.parse_qs(
+                    urllib.parse.urlsplit(shortcut["url"]).query
+                ).get("purchase")
+                == ["one_time"]
+            )
+            self.assertEqual(
+                portfolio_app_finder.UI[locale]["one_time"],
+                one_time_shortcut["name"],
+            )
+            self.assertIs(manifest["shortcuts"][0], one_time_shortcut)
         matches = run_finder_query(
             japanese,
             "子どものパスポート用の証明写真を作りたい",

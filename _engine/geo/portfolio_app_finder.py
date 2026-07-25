@@ -389,7 +389,21 @@ def manifest_document(locale: str) -> str:
     copy = UI[locale]
     page_path = urlsplit(canonical(locale)).path
     icon_192 = _pwa_asset_url("app-finder-icon-192.png")
-    shortcuts = []
+    one_time_name = copy["one_time"]
+    shortcuts = [
+        {
+            "name": one_time_name,
+            "short_name": one_time_name,
+            "url": f"{page_path}?{urlencode({'purchase': 'one_time'})}",
+            "icons": [
+                {
+                    "src": icon_192,
+                    "sizes": "192x192",
+                    "type": "image/png",
+                }
+            ],
+        }
+    ]
     for category in (
         "kids",
         "productivity",

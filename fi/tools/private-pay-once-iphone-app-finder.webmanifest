@@ -31,6 +31,18 @@
   ],
   "shortcuts": [
     {
+      "name": "Mikä tahansa kertamaksuvaihtoehto",
+      "short_name": "Mikä tahansa kertamaksuvaihtoehto",
+      "url": "/ios-app-guide/fi/tools/private-pay-once-iphone-app-finder.html?purchase=one_time",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
       "name": "Lapset & oppiminen",
       "short_name": "Lapset & oppiminen",
       "url": "/ios-app-guide/fi/tools/private-pay-once-iphone-app-finder.html?category=kids",

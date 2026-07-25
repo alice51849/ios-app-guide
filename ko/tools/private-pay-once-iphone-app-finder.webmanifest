@@ -31,6 +31,18 @@
   ],
   "shortcuts": [
     {
+      "name": "일회성 옵션",
+      "short_name": "일회성 옵션",
+      "url": "/ios-app-guide/ko/tools/private-pay-once-iphone-app-finder.html?purchase=one_time",
+      "icons": [
+        {
+          "src": "https://alice51849.github.io/ios-app-guide/assets/app-finder-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
       "name": "어린이 & 학습",
       "short_name": "어린이 & 학습",
       "url": "/ios-app-guide/ko/tools/private-pay-once-iphone-app-finder.html?category=kids",

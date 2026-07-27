@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "sv",
-  "dateModified": "2026-07-25",
-  "content_digest": "fb0896395026809c4e0102b75bc3bce083adf750d42ad7b32f05564963956831",
-  "generation_digest": "60ce0dcf4bc84c5cea701c498084ad25d4390af18ce038592364ab0c43177e43",
+  "dateModified": "2026-07-27",
+  "content_digest": "79c3df7cb7671923558759a9775907f8cbab8934d4e65a6e705886e2a8a502e9",
+  "generation_digest": "ade0335394704d46b75dc2c6fb2124c5f57eae4ad98e63ba9f0fed35fe52b31d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 32,
+  "record_count": 33,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/sv.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/sv.rss.xml",
@@ -133,7 +133,7 @@
       "badge_labels": [
         "Livsstil",
         "Gratis att börja · livstidsupplåsning",
-        "App Store · Gratis"
+        "App Store · 39,00 kr"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/sv/index.html",
@@ -144,9 +144,9 @@
       "app_store_url": "https://apps.apple.com/se/app/id6790800323",
       "app_store_cta_label": "Hämta Mochi DoneStamp: Senast i App Store",
       "storefront_facts": {
-        "price": "0",
+        "price": "39",
         "currency": "SEK",
-        "formatted_price": "Gratis"
+        "formatted_price": "39,00 kr"
       },
       "guide_cta_label": "Läs hela guiden",
       "publisher_disclosure": "Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.",
@@ -504,6 +504,65 @@
       "publisher_disclosure": "Guide från Lumi Studio, apputvecklaren. Appnamn är varumärken som tillhör sina ägare och används endast för identifiering. För dokument, hälsa, skola och produktivitetsbeslut, kontrollera officiella krav där det är relevant.",
       "source_persona_query": "best mindful spending app to stop impulse buying iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "sv:hourstaglite",
+      "locale": "sv",
+      "app_key": "hourstaglite",
+      "app_name": "HoursTag Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "HoursTag Lite — Det verkliga priset på saker | iOS App",
+      "decision_context": "HoursTag Lite - Det verkliga priset på saker Varje köp kostar timmar av ditt liv. HoursTag Lite omvandlar priser till arbetstid – så att du spenderar med klarhet. Möt ditt värdeprisma - Tidskostnad: Ditt nettovärde per arbetstimme - Typ: Behov - Önskan - Impuls - Ditt värdemönster - Fullständig värdeanalys - Vad kostar ett mål?: Se arbetet bakom ett mål och följ dina framsteg. - Säkerhetskopiering: Inkluderar inkomst, utgifter, mål och inställningar. - Widget - Apple Watch Allt stannar på din enhet. Inget konto, ingen spårning. En betalning · Livstidsåtkomst · Ingen prenumeration Obegränsade val och ändringar Obegränsade mål och framsteg Delning, insikter och säkerhetskopior",
+      "category": "finance",
+      "category_label": "Ekonomi & resor",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Inget konto",
+        "Ingen spårning",
+        "Privat / på enheten"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Ekonomi & resor",
+        "Gratis att börja · livstidsupplåsning",
+        "Inget konto",
+        "Ingen spårning",
+        "Privat / på enheten",
+        "Widget",
+        "Apple Watch"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/hourstaglite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/sv/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/sv/hourstaglite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fhourstaglite%2Fdecision%2Fl%2Fsv%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
+      "app_store_id": "6794039979",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_cta_label": "Hämta HoursTag Lite i App Store",
+      "storefront_facts": null,
+      "guide_cta_label": "Läs hela guiden",
+      "publisher_disclosure": "Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.",
+      "source_persona_query": "best app to convert prices into work hours before buying",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

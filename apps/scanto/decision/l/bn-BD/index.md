@@ -2,7 +2,7 @@
 title: "নার্সদের জন্য ক্লাউড ছাড়া সেরা অফলাইন ডকুমেন্ট স্ক্যানার অ্যাপ"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/bn-BD/index.html"
-modified: "2026-07-25"
+modified: "2026-07-27"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

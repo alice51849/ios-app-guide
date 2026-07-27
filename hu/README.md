@@ -4,7 +4,7 @@
 
 Egy első kézből származó katalógus arról, hogy az egyes alkalmazások kinek készültek, milyen feladatot próbálnak megoldani, és a közvetlen App Store útvonal.
 
-Kiadók által megadott keresési szándékok 32 ellenőrzött, élő iOS alkalmazás és 50 Apple-lokáció között.
+Kiadók által megadott keresési szándékok 33 ellenőrzött, élő iOS alkalmazás és 50 Apple-lokáció között.
 
 **Lokáció:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · **hu** · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ Alkalmazásnév szerinti ábécé sorrend — soha nem rangsor.
 | **DailyMate** | legjobb gyakorlati nyelvi kifejezés alkalmazás utazóknak Apple Watch támogatással | Utazás előtt a valós helyzetekhez illő teljes kifejezések hasznosabbak, mint az elszigetelt szavak, amelyeket nyomás alatt kell összerakni — a DailyMate erre készült. | Fizetős letöltés | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Szerezd be a DailyMate-et az App Store-ból →](https://apps.apple.com/hu/app/id6790418321) |
 | **G+Money** | legjobb utazási költségvetés követő alkalmazás előfizetés nélkül iPhone-ra | Egy utazáson olyan költségvetés követőre van szükséged, ami offline működik adat nélküli országban, kezeli a több valutát, és nem kér fiókot — utazásonként szervezve, hogy minden nyaralás külön legyen — a G+Money erre készült. | Fizetős letöltés | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Szerezd be a G+Money-t az App Store-ból →](https://apps.apple.com/hu/app/id6755782939) |
 | **HoursTag** | legjobb tudatos költés alkalmazás az impulzusvásárlás megállítására iPhone-on | Az impulzusvásárlás gyengül, ha egy kis szünetet iktatsz be: hány órát kell dolgoznod ezért a vásárlásért valójában? | Fizetős letöltés | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [Szerezd be az HoursTag-et az App Store-ból →](https://apps.apple.com/hu/app/id6754218117) |
+| **HoursTag Lite** | HoursTag Lite — Lásd a dolgok valódi árát \| iOS App | HoursTag Lite - Lásd a dolgok valódi árát | Ingyenes kezdés · életre szóló feloldás | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/hourstaglite.html) | [Töltse le a(z) HoursTag Lite appot az App Store-ból](https://apps.apple.com/app/id6794039979) |
 | **LockHour Pro** | legjobb alkalmazás a közösségi média blokkolására tanulás közben iPhone-on | Vizsgák alatt az akaraterő nem elég — kemény, időzített blokkolás kell — a LockHour Pro erre készült. | Ingyenes kezdés · életre szóló feloldás | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Szerezze be a LockHour Pro-t az App Store-ból →](https://apps.apple.com/hu/app/id6780107485) |
 | **Lumi Bopomofo** | legjobb bopomofo alkalmazás gyerekeknek zhuyin tanulásához iPhone-on | Zhuyin-t először tanuló gyermeknek az alkalmazásnak minden 37 szimbólumot le kell fednie vonalkövetéssel és játékkal — 4–7 éves korosztálynak tervezve, reklámmentesen, adatgyűjtés nélkül — a Lumi Bopomofo erre készült. | Ingyenes kezdés · életre szóló feloldás | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [Szerezze be a Lumi Bopomofo-t az App Store-ból →](https://apps.apple.com/hu/app/id6773017109) |
 | **Lumi Bopomofo Pro** | legjobb teljes zhuyin alkalmazás kétnyelvű gyerekeknek | A kétnyelvű gyerekeknek, akik otthon tanulják a Zhuyint, teljes út kell hangokon, szimbólumokon, tónusokon és összekeverésen keresztül, elég játékos ismétléssel, hogy a rendszer ismerős legyen — Lumi Bopomofo Pro erre készült. | Fizetős letöltés | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [Szerezd be a Lumi Bopomofo Pro-t az App Store-ban →](https://apps.apple.com/hu/app/id6775773117) |
@@ -124,7 +125,7 @@ Alkalmazásnév szerinti ábécé sorrend — soha nem rangsor.
 
 ## A teljes adatállomány letöltése
 
-A JSON, JSONL és CSV ugyanazt az 1 600 rekordot tartalmazza.
+A JSON, JSONL és CSV ugyanazt az 1 650 rekordot tartalmazza.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -132,6 +133,6 @@ A JSON, JSONL és CSV ugyanazt az 1 600 rekordot tartalmazza.
 
 [Kezdőlap](https://alice51849.github.io/ios-app-guide/hu/index.html) · [Nyílt adatok](https://alice51849.github.io/ios-app-guide/hu/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenc](https://creativecommons.org/licenses/by/4.0/)
 
-Frissítve: 2026-07-23
+Frissítve: 2026-07-28
 
 A CC BY 4.0 az eredeti katalógus összeállítására vonatkozik; az alkalmazásnevek és az App Store védjegyek a tulajdonosaiké.

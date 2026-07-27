@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "hu",
-  "dateModified": "2026-07-25",
-  "content_digest": "fb0896395026809c4e0102b75bc3bce083adf750d42ad7b32f05564963956831",
-  "generation_digest": "60ce0dcf4bc84c5cea701c498084ad25d4390af18ce038592364ab0c43177e43",
+  "dateModified": "2026-07-27",
+  "content_digest": "79c3df7cb7671923558759a9775907f8cbab8934d4e65a6e705886e2a8a502e9",
+  "generation_digest": "ade0335394704d46b75dc2c6fb2124c5f57eae4ad98e63ba9f0fed35fe52b31d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 32,
+  "record_count": 33,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/hu.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/hu.rss.xml",
@@ -133,7 +133,7 @@
       "badge_labels": [
         "Életmód",
         "Ingyenes kezdés · életre szóló feloldás",
-        "App Store · Ingyenes"
+        "App Store · HUF1,490.00"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/hu/index.html",
@@ -144,9 +144,9 @@
       "app_store_url": "https://apps.apple.com/hu/app/id6790800323",
       "app_store_cta_label": "Töltse le a(z) Mochi DoneStamp: Legutóbb appot az App Store-ból",
       "storefront_facts": {
-        "price": "0",
+        "price": "1490",
         "currency": "HUF",
-        "formatted_price": "Ingyenes"
+        "formatted_price": "HUF1,490.00"
       },
       "guide_cta_label": "Olvasd el a teljes útmutatót",
       "publisher_disclosure": "Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.",
@@ -501,6 +501,65 @@
       "publisher_disclosure": "Kiadó által készített útmutató a Lumi Studio-tól, az alkalmazás fejlesztőjétől. Az alkalmazásnevek a tulajdonosaik védjegyei, és csak azonosítás céljából használjuk őket. Dokumentumok, egészségügy, iskola és hatékonyság terén hozott döntések esetén ellenőrizze a hivatalos követelményeket, ahol releváns.",
       "source_persona_query": "best mindful spending app to stop impulse buying iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "hu:hourstaglite",
+      "locale": "hu",
+      "app_key": "hourstaglite",
+      "app_name": "HoursTag Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "HoursTag Lite — Lásd a dolgok valódi árát | iOS App",
+      "decision_context": "HoursTag Lite - Lásd a dolgok valódi árát Minden vásárlás órákat vesz el az életedből. Az HoursTag Lite átalakítja az árakat munkai idővé — így világosan költhetsz. Ismerd meg az értékprizmádat - Időköltség: Nettó értéked munkaóránként - Típus: Szükség - Akar - Impulzus - Az értékmintád - Teljes értékelemzés - Mennyibe fog kerülni egy cél?: Lásd a munkát egy cél mögött — és kövesd a fejlődésed. - Biztonsági mentés & visszaállítás: Tartalmazza a jövedelmet, kiadásokat, célokat és beállításokat. - Widget - Apple Watch Minden az eszközödön marad. Nincs fiók, nincs nyomkövetés. Egyszeri fizetés · Élethosszig · Nincs előfizetés Korlátlan döntések és szerkesztések Korlátlan célok és haladás Megosztás, elemzés és mentések",
+      "category": "finance",
+      "category_label": "Pénzügy & utazás",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Nincs fiók",
+        "Nincs követés",
+        "Privát / eszközön tárolt"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Pénzügy & utazás",
+        "Ingyenes kezdés · életre szóló feloldás",
+        "Nincs fiók",
+        "Nincs követés",
+        "Privát / eszközön tárolt",
+        "Widget",
+        "Apple Watch"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/hourstaglite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/hu/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/hu/hourstaglite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fhourstaglite%2Fdecision%2Fl%2Fhu%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
+      "app_store_id": "6794039979",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_cta_label": "Töltse le a(z) HoursTag Lite appot az App Store-ból",
+      "storefront_facts": null,
+      "guide_cta_label": "Olvasd el a teljes útmutatót",
+      "publisher_disclosure": "Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.",
+      "source_persona_query": "best app to convert prices into work hours before buying",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

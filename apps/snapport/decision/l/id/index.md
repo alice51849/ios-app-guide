@@ -2,7 +2,7 @@
 title: "aplikasi foto paspor terbaik untuk bayi dan balita di rumah"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/id/index.html"
-modified: "2026-07-25"
+modified: "2026-07-27"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"

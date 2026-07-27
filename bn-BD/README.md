@@ -4,7 +4,7 @@
 
 প্রতিটি অ্যাপ কার জন্য তৈরি, তারা কোন কাজ সম্পন্ন করতে চায়, এবং সরাসরি App Store পথের প্রথম পক্ষের ক্যাটালগ।
 
-৩২টি যাচাইকৃত লাইভ iOS অ্যাপ এবং ৫০টি Apple লোকালের প্রকাশক-লিখিত অনুসন্ধান উদ্দেশ্য।
+৩৩টি যাচাইকৃত লাইভ iOS অ্যাপ এবং ৫০টি Apple লোকালের প্রকাশক-লিখিত অনুসন্ধান উদ্দেশ্য।
 
 **লোকাল:** [ar-SA](../ar-SA/) · **bn-BD** · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **DailyMate** | অ্যাপল ওয়াচসহ ভ্রমণকারীদের জন্য সেরা ব্যবহারিক ভাষা বাক্যাংশ অ্যাপ | একটি যাত্রার আগে, বাস্তব পরিস্থিতির জন্য সম্পূর্ণ বাক্যাংশ বিচ্ছিন্ন শব্দের চেয়ে বেশি কার্যকর — ডেইলিমেট এই জন্য তৈরি। | পেইড ডাউনলোড | [গাইড](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [অ্যাপ স্টোর থেকে ডেইলিমেট পান →](https://apps.apple.com/app/id6790418321) |
 | **G+Money** | সেরা ট্রাভেল বাজেট ট্র্যাকার অ্যাপ কোনো সাবস্ক্রিপশন ছাড়াই আইফোনের জন্য | একটি ট্রিপে আপনি এমন বাজেট ট্র্যাকার চান যা কোনো ডেটা ছাড়াই দেশের মধ্যে অফলাইনে কাজ করে, বহু মুদ্রা পরিচালনা করে, এবং অ্যাকাউন্ট দাবি করে না — প্রতিটি ছুটির জন্য আলাদা ট্রিপ হিসেবে সংগঠিত — G+Money এর জন্য তৈরি। | পেইড ডাউনলোড | [গাইড](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [App Store থেকে G+Money পান →](https://apps.apple.com/app/id6755782939) |
 | **HoursTag** | সেরা মনোযোগী খরচ অ্যাপ যা আবেগপ্রবণ কেনাকাটা বন্ধ করে আইফোনের জন্য | একটি ছোট বিরতি যোগ করলে আবেগপ্রবণ কেনাকাটা দুর্বল হয়: এই চেকআউট আপনার জীবনের কত ঘণ্টা নেবে? | পেইড ডাউনলোড | [গাইড](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [App Store থেকে HoursTag পান →](https://apps.apple.com/app/id6754218117) |
+| **HoursTag Lite** | HoursTag Lite — বিষয়ের আসল দাম দেখুন \| iOS App | HoursTag Lite - বিষয়ের আসল দাম দেখুন | বিনামূল্যে শুরু · আজীবন আনলক | [গাইড](https://alice51849.github.io/ios-app-guide/bn-BD/hourstaglite.html) | [App Store থেকে HoursTag Lite ডাউনলোড করুন](https://apps.apple.com/app/id6794039979) |
 | **LockHour Pro** | পড়াশোনার সময় সোশ্যাল মিডিয়া ব্লক করার সেরা অ্যাপ আইফোনের জন্য | পরীক্ষার সময় ইচ্ছাশক্তি নয় — কঠোর সময়সীমা ব্লক প্রয়োজন — লকআওয়ার প্রো এই জন্য তৈরি। | বিনামূল্যে শুরু · আজীবন আনলক | [গাইড](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-app-to-block-social-media-while-studying-iphone.html) | [App Store থেকে LockHour Pro পান →](https://apps.apple.com/app/id6780107485) |
 | **Lumi Bopomofo** | আইফোনে বাচ্চাদের জন্য বোপোমোফো শেখার সেরা অ্যাপ | যারা প্রথমবার Zhuyin শিখছে তাদের জন্য অ্যাপটি ৩৭টি প্রতীক ট্রেসিং এবং খেলার মাধ্যমে কভার করা উচিত — ৪–৭ বছর বয়সের জন্য ডিজাইন, বিজ্ঞাপন মুক্ত, কোন ডেটা সংগ্রহ করে না — Lumi Bopomofo এর জন্য তৈরি। | বিনামূল্যে শুরু · আজীবন আনলক | [গাইড](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [App Store থেকে Lumi Bopomofo পান →](https://apps.apple.com/app/id6773017109) |
 | **Lumi Bopomofo Pro** | দ্বিভাষিক শিশুদের জন্য সেরা সম্পূর্ণ ঝুয়িন অ্যাপ | বাড়িতে ঝুয়িন শেখা দ্বিভাষিক শিশুদের জন্য দরকার শব্দ, চিহ্ন, সুর ও ব্লেন্ডিংয়ের সম্পূর্ণ পথ, যথেষ্ট খেলাধুলার পুনরাবৃত্তি যাতে সিস্টেম পরিচিত হয় — Lumi Bopomofo Pro এ জন্য তৈরি। | পেইড ডাউনলোড | [গাইড](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [App Store-এ Lumi Bopomofo Pro পান →](https://apps.apple.com/app/id6775773117) |
@@ -124,7 +125,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## সম্পূর্ণ ডেটাসেট ডাউনলোড করুন
 
-JSON, JSONL এবং CSV একই ১,৬০০ রেকর্ড ধারণ করে।
+JSON, JSONL এবং CSV একই ১,৬৫০ রেকর্ড ধারণ করে।
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -132,6 +133,6 @@ JSON, JSONL এবং CSV একই ১,৬০০ রেকর্ড ধার�
 
 [হোম](https://alice51849.github.io/ios-app-guide/bn-BD/index.html) · [খোলা তথ্য](https://alice51849.github.io/ios-app-guide/bn-BD/data/lumi-studio-publisher-search-intent-catalog.html) · [লাইসেন্স](https://creativecommons.org/licenses/by/4.0/)
 
-আপডেট: 2026-07-23
+আপডেট: 2026-07-28
 
 মূল ক্যাটালগ সংকলনের জন্য CC BY 4.0 প্রযোজ্য; অ্যাপ নাম ও App Store চিহ্ন তাদের মালিকদের।

@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: 마지막 기록 — 마지막으로 한 때를 기억하세요 | iOS App"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/ko/index.html"
-modified: "2026-07-25"
+modified: "2026-07-27"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,7 @@ publisher: "Lumi Studio"
 
 - 라이프스타일
 - 무료로 시작 · 평생 잠금 해제
-- App Store · 무료
+- App Store · ￦4,400
 
 [App Store에서 Mochi DoneStamp: 마지막 기록 받기](https://apps.apple.com/kr/app/id6790800323)
 

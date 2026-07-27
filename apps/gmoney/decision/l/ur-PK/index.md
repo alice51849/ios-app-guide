@@ -2,7 +2,7 @@
 title: "iPhone کے لیے بہترین ٹریول بجٹ ٹریکر ایپ بغیر سبسکرپشن کے"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/ur-PK/index.html"
-modified: "2026-07-25"
+modified: "2026-07-27"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

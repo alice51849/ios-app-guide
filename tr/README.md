@@ -4,7 +4,7 @@
 
 Her uygulamanın kimler için tasarlandığını, tamamlamaya çalıştıkları görevi ve doğrudan App Store yolunu gösteren bir birinci taraf katalog.
 
-32 doğrulanmış canlı iOS uygulaması ve 50 Apple yerelinde yayıncı tarafından yazılmış arama niyetleri.
+33 doğrulanmış canlı iOS uygulaması ve 50 Apple yerelinde yayıncı tarafından yazılmış arama niyetleri.
 
 **Yerel:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · **tr** · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ Uygulama adına göre alfabetik — asla bir sıralama değildir.
 | **DailyMate** | Apple Watch destekli, gezginler için en iyi pratik dil ifadeleri uygulaması | Seyahatten önce, gerçek durumlar için tam ifadeler, baskı altında hâlâ bir araya getirmeniz gereken tekil kelimelerden daha faydalıdır — DailyMate bunun için tasarlandı. | Ücretli indirme | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [DailyMate’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6790418321) |
 | **G+Money** | abonelik gerektirmeyen en iyi seyahat bütçe takip uygulaması iphone | Sinyal olmayan bir ülkede çevrimdışı çalışan, birden fazla para birimini yöneten ve hesap istemeyen bir bütçe takip uygulamasına ihtiyacınız var — seyahat bazlı düzenlenmiş, böylece her tatil ayrı — G+Money bunun için tasarlandı. | Ücretli indirme | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [G+Money'i App Store'dan edinin →](https://apps.apple.com/tr/app/id6755782939) |
 | **HoursTag** | dürtüsel alışverişi durdurmak için en iyi bilinçli harcama uygulaması iphone | Dürtüsel alışveriş, küçük bir duraklama eklediğinizde zayıflar: bu ödeme aslında hayatınızdan kaç saat alacak? | Ücretli indirme | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [HoursTag'i App Store'dan edinin →](https://apps.apple.com/tr/app/id6754218117) |
+| **HoursTag Lite** | HoursTag Lite — Şeylerin gerçek bedeli \| iOS App | HoursTag Lite - Şeylerin gerçek bedeli | Başlangıçta ücretsiz · ömür boyu açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/hourstaglite.html) | [HoursTag Lite uygulamasını App Store'dan al](https://apps.apple.com/app/id6794039979) |
 | **LockHour Pro** | ders çalışırken sosyal medyayı engellemek için en iyi uygulama iphone | Sınavlarda irade gücü yeterli değildir — kesin zamanlı engelleme gerekir — LockHour Pro bunun için tasarlanmıştır. | Başlangıçta ücretsiz · ömür boyu açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-app-to-block-social-media-while-studying-iphone.html) | [LockHour Pro'yu App Store'dan edinin →](https://apps.apple.com/tr/app/id6780107485) |
 | **Lumi Bopomofo** | iPhone'da çocuklar için en iyi bopomofo uygulaması, zhuyin öğrenmek için | Zhuyin'i ilk kez öğrenen bir çocuk için, uygulama tüm 37 sembolü çizerek ve oynayarak kapsamalıdır — 4–7 yaş aralığı için tasarlanmış, reklamsız, veri toplanmayan — Lumi Bopomofo bu amaçla yapılmıştır. | Başlangıçta ücretsiz · ömür boyu açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [Lumi Bopomofo'yu App Store'dan edinin →](https://apps.apple.com/tr/app/id6773017109) |
 | **Lumi Bopomofo Pro** | İki dilli çocuklar için en iyi tam Zhuyin uygulaması | Evde Zhuyin öğrenen iki dilli çocuklar, sesler, semboller, tonlar ve harmanlamadan geçen tam bir yol ister; sistemi tanıdık kılacak kadar eğlenceli tekrar gerekir — Lumi Bopomofo Pro bunun için tasarlandı. | Ücretli indirme | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [Lumi Bopomofo Pro’yu App Store’dan edinin →](https://apps.apple.com/tr/app/id6775773117) |
@@ -124,7 +125,7 @@ Uygulama adına göre alfabetik — asla bir sıralama değildir.
 
 ## Tam veri setini indir
 
-JSON, JSONL ve CSV aynı 1.600 kaydı içerir.
+JSON, JSONL ve CSV aynı 1.650 kaydı içerir.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -132,6 +133,6 @@ JSON, JSONL ve CSV aynı 1.600 kaydı içerir.
 
 [Ana Sayfa](https://alice51849.github.io/ios-app-guide/tr/index.html) · [Açık veri](https://alice51849.github.io/ios-app-guide/tr/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisans](https://creativecommons.org/licenses/by/4.0/)
 
-Güncellendi: 2026-07-23
+Güncellendi: 2026-07-28
 
 CC BY 4.0, orijinal katalog derlemesine uygulanır; uygulama adları ve App Store işaretleri sahiplerine aittir.

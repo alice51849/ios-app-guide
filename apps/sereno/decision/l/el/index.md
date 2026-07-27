@@ -2,7 +2,7 @@
 title: "καλύτερη εφαρμογή λευκού θορύβου για να κοιμηθείτε χωρίς συνδρομή"
 lang: "el"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/el/index.html"
-modified: "2026-07-25"
+modified: "2026-07-27"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

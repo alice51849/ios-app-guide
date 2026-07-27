@@ -4,7 +4,7 @@
 
 Un catalogue publié directement par le développeur qui indique à qui chaque app est destinée, la tâche à accomplir et l’accès direct à l’App Store.
 
-Intentions de recherche rédigées par l’éditeur pour 32 apps iOS vérifiées et disponibles dans 50 langues et régions Apple.
+Intentions de recherche rédigées par l’éditeur pour 33 apps iOS vérifiées et disponibles dans 50 langues et régions Apple.
 
 **Région:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · **fr-CA** · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ Ordre alphabétique par nom d’app — jamais un classement.
 | **DailyMate** | meilleure application de phrases utiles en voyage avec Apple Watch | Avant un voyage, des phrases complètes pour des situations réelles sont plus utiles que du vocabulaire isolé que vous devez encore assembler sous pression — DailyMate est conçu pour cela. | Téléchargement payant | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Obtenez DailyMate sur l’App Store →](https://apps.apple.com/ca/app/id6790418321) |
 | **G+Money** | meilleure application de suivi de budget de voyage sans abonnement iPhone | En voyage, vous avez besoin d’un suivi de budget qui fonctionne hors ligne dans un pays sans données, gère plusieurs devises, et ne demande pas de compte — organisé par voyage pour que chaque séjour soit séparé — G+Money est conçu pour cela. | Téléchargement payant | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Obtenez G+Money sur l’App Store →](https://apps.apple.com/ca/app/id6755782939) |
 | **HoursTag** | meilleure application pour dépenses conscientes pour arrêter les achats impulsifs iPhone | Les achats impulsifs s’atténuent quand vous ajoutez une petite pause : combien d’heures de votre vie ce paiement va-t-il réellement coûter ? | Téléchargement payant | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [Obtenez HoursTag sur l’App Store →](https://apps.apple.com/ca/app/id6754218117) |
+| **HoursTag Lite** | HoursTag Lite — Le vrai prix des choses \| iOS App | HoursTag Lite - Le vrai prix des choses | Gratuit au départ · déverrouillage définitif | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/hourstaglite.html) | [Obtenir HoursTag Lite sur l'App Store](https://apps.apple.com/app/id6794039979) |
 | **LockHour Pro** | meilleure application pour bloquer les réseaux sociaux pendant les études iPhone | Pendant les examens, la volonté ne suffit pas — un blocage strict et chronométré est nécessaire — LockHour Pro est conçu pour cela. | Gratuit au départ · déverrouillage définitif | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Obtenez LockHour Pro sur l’App Store →](https://apps.apple.com/ca/app/id6780107485) |
 | **Lumi Bopomofo** | meilleure application bopomofo pour enfants pour apprendre le zhuyin sur iPhone | Pour un enfant qui apprend le Zhuyin, l’application doit couvrir les 37 symboles par le traçage et le jeu — conçue pour la tranche d’âge 4–7 ans, sans publicité, sans collecte de données — Lumi Bopomofo est conçue pour cela. | Gratuit au départ · déverrouillage définitif | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [Obtenez Lumi Bopomofo sur l’App Store →](https://apps.apple.com/ca/app/id6773017109) |
 | **Lumi Bopomofo Pro** | meilleure app zhuyin complète pour enfants bilingues | Les enfants bilingues qui apprennent Zhuyin à la maison ont besoin d’un parcours complet à travers sons, symboles, tons et assemblage, avec assez de répétition ludique pour rendre le système familier — Lumi Bopomofo Pro est conçu pour ça. | Téléchargement payant | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [Obtenez Lumi Bopomofo Pro sur l’App Store →](https://apps.apple.com/ca/app/id6775773117) |
@@ -124,7 +125,7 @@ Ordre alphabétique par nom d’app — jamais un classement.
 
 ## Télécharger l’ensemble complet des données
 
-JSON, JSONL et CSV contiennent les mêmes 1 600 enregistrements.
+JSON, JSONL et CSV contiennent les mêmes 1 650 enregistrements.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -132,6 +133,6 @@ JSON, JSONL et CSV contiennent les mêmes 1 600 enregistrements.
 
 [Accueil](https://alice51849.github.io/ios-app-guide/fr-CA/index.html) · [Données ouvertes](https://alice51849.github.io/ios-app-guide/fr-CA/data/lumi-studio-publisher-search-intent-catalog.html) · [Licence](https://creativecommons.org/licenses/by/4.0/)
 
-Mis à jour: 2026-07-23
+Mis à jour: 2026-07-28
 
 La licence CC BY 4.0 s’applique à la compilation originale du catalogue ; les noms d’app et marques App Store appartiennent à leurs propriétaires.

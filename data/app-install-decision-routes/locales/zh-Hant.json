@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "zh-Hant",
-  "dateModified": "2026-07-25",
-  "content_digest": "fb0896395026809c4e0102b75bc3bce083adf750d42ad7b32f05564963956831",
-  "generation_digest": "60ce0dcf4bc84c5cea701c498084ad25d4390af18ce038592364ab0c43177e43",
+  "dateModified": "2026-07-27",
+  "content_digest": "79c3df7cb7671923558759a9775907f8cbab8934d4e65a6e705886e2a8a502e9",
+  "generation_digest": "ade0335394704d46b75dc2c6fb2124c5f57eae4ad98e63ba9f0fed35fe52b31d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 32,
+  "record_count": 33,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/zh-Hant.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/zh-Hant.rss.xml",
@@ -133,7 +133,7 @@
       "badge_labels": [
         "生活",
         "免費開始 · 永久解鎖",
-        "App Store · 免費"
+        "App Store · $90.00"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/zh-Hant/index.html",
@@ -144,9 +144,9 @@
       "app_store_url": "https://apps.apple.com/tw/app/id6790800323",
       "app_store_cta_label": "在 App Store 取得 Mochi DoneStamp：上次何時",
       "storefront_facts": {
-        "price": "0",
+        "price": "90",
         "currency": "TWD",
-        "formatted_price": "免費"
+        "formatted_price": "$90.00"
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
@@ -516,6 +516,65 @@
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best mindful spending app to stop impulse buying iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "zh-Hant:hourstaglite",
+      "locale": "zh-Hant",
+      "app_key": "hourstaglite",
+      "app_name": "HoursTag Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "HoursTag Lite — 看見每樣東西的真實代價 | iOS App",
+      "decision_context": "HoursTag Lite - 看見每樣東西的真實代價 每一筆花費，都耗掉你生命中的工時。HoursTag Lite 把價格換算成工作時間，讓你花得清楚。 認識你的價值稜鏡 - 人生時間成本: 每工作一小時的實領價值 - 類型: 必要 - 想要 - 衝動 - 你的價值模式 - 完整價值洞察 - 這個目標要花多少時間？: 看見一個目標背後的工時，並追蹤進度。 - 備份與還原: 包含收入、花費、目標與偏好設定。 - Widget - Apple Watch 所有資料只留在你的裝置上。無需帳號，不做追蹤。 一次付費 · 永久使用 · 絕無訂閱 無限選擇與編輯 無限目標與進度 分享、洞察與備份",
+      "category": "finance",
+      "category_label": "理財與旅行",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "免費開始 · 永久解鎖",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "免帳號",
+        "無追蹤",
+        "隱私優先／裝置端"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "主畫面小工具",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "理財與旅行",
+        "免費開始 · 永久解鎖",
+        "免帳號",
+        "無追蹤",
+        "隱私優先／裝置端",
+        "主畫面小工具",
+        "Apple Watch"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/hourstaglite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/zh-Hant/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/zh-Hant/hourstaglite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fhourstaglite%2Fdecision%2Fl%2Fzh-Hant%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
+      "app_store_id": "6794039979",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_cta_label": "在 App Store 取得 HoursTag Lite",
+      "storefront_facts": null,
+      "guide_cta_label": "閱讀完整指南",
+      "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
+      "source_persona_query": "best app to convert prices into work hours before buying",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

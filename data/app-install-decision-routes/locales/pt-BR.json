@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "pt-BR",
-  "dateModified": "2026-07-25",
-  "content_digest": "fb0896395026809c4e0102b75bc3bce083adf750d42ad7b32f05564963956831",
-  "generation_digest": "60ce0dcf4bc84c5cea701c498084ad25d4390af18ce038592364ab0c43177e43",
+  "dateModified": "2026-07-27",
+  "content_digest": "79c3df7cb7671923558759a9775907f8cbab8934d4e65a6e705886e2a8a502e9",
+  "generation_digest": "ade0335394704d46b75dc2c6fb2124c5f57eae4ad98e63ba9f0fed35fe52b31d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 32,
+  "record_count": 33,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/pt-BR.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/pt-BR.rss.xml",
@@ -133,7 +133,7 @@
       "badge_labels": [
         "Estilo de vida",
         "Grátis para começar · desbloqueio permanente",
-        "App Store · Grátis"
+        "App Store · R$ 19,90"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/pt-BR/index.html",
@@ -144,9 +144,9 @@
       "app_store_url": "https://apps.apple.com/br/app/id6790800323",
       "app_store_cta_label": "Baixe Mochi DoneStamp: Última vez na App Store",
       "storefront_facts": {
-        "price": "0",
+        "price": "19.9",
         "currency": "BRL",
-        "formatted_price": "Grátis"
+        "formatted_price": "R$ 19,90"
       },
       "guide_cta_label": "Leia o guia completo",
       "publisher_disclosure": "Este conteúdo é publicado diretamente pela Lumi Studio, desenvolvedora de todos os apps apresentados.",
@@ -501,6 +501,65 @@
       "publisher_disclosure": "Guia elaborado pelo editor Lumi Studio, o desenvolvedor do aplicativo. Os nomes dos aplicativos são marcas registradas de seus proprietários e são usados apenas para identificação. Para documentos, saúde, escola e decisões de produtividade, verifique os requisitos oficiais quando aplicável.",
       "source_persona_query": "best mindful spending app to stop impulse buying iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "pt-BR:hourstaglite",
+      "locale": "pt-BR",
+      "app_key": "hourstaglite",
+      "app_name": "HoursTag Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "HoursTag Lite — O preço real das coisas | iOS App",
+      "decision_context": "HoursTag Lite - O preço real das coisas Cada compra custa horas da sua vida. O HoursTag Lite converte preços em tempo de trabalho, para você gastar com clareza. Conheça seu prisma de valor - Custo em tempo: Seu valor líquido por hora trabalhada - Tipo: Necessidade - Desejo - Impulso - Seu padrão de valor - Análise completa de valor - Quanto custa uma meta?: Veja o trabalho por trás de uma meta e acompanhe seu progresso. - Backup e restauração: Inclui renda, gastos, metas e preferências. - Widget - Apple Watch Tudo fica no seu aparelho. Sem conta, sem rastreamento. Pagamento único · Acesso vitalício · Sem assinatura Escolhas e edições ilimitadas Metas e progresso ilimitados Compartilhamento, análises e backups",
+      "category": "finance",
+      "category_label": "Dinheiro e viagem",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Sem conta",
+        "Sem rastreamento",
+        "Privado / no dispositivo"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Dinheiro e viagem",
+        "Grátis para começar · desbloqueio permanente",
+        "Sem conta",
+        "Sem rastreamento",
+        "Privado / no dispositivo",
+        "Widget",
+        "Apple Watch"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/hourstaglite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/pt-BR/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/pt-BR/hourstaglite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fhourstaglite%2Fdecision%2Fl%2Fpt-BR%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pt-BR.json",
+      "app_store_id": "6794039979",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_cta_label": "Baixe HoursTag Lite na App Store",
+      "storefront_facts": null,
+      "guide_cta_label": "Leia o guia completo",
+      "publisher_disclosure": "Este conteúdo é publicado diretamente pela Lumi Studio, desenvolvedora de todos os apps apresentados.",
+      "source_persona_query": "best app to convert prices into work hours before buying",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

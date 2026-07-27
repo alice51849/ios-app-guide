@@ -74,13 +74,13 @@
       "uniqueItems": true
     },
     "app_count": {
-      "const": 32
+      "const": 33
     },
     "locale_count": {
       "const": 50
     },
     "record_count": {
-      "const": 1600
+      "const": 1650
     },
     "locales": {
       "type": "array",
@@ -223,8 +223,8 @@
     },
     "records": {
       "type": "array",
-      "minItems": 1600,
-      "maxItems": 1600,
+      "minItems": 1650,
+      "maxItems": 1650,
       "items": {
         "$ref": "#/$defs/record"
       }
@@ -361,6 +361,7 @@
             "dailymate",
             "gmoney",
             "hourstag",
+            "hourstaglite",
             "lockhour",
             "lumibopomofo",
             "lumibopomofopro",

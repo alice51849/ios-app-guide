@@ -2,7 +2,7 @@
 title: "适合学龄前儿童且无广告的最佳睡前习惯应用"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/zh-Hans/index.html"
-modified: "2026-07-25"
+modified: "2026-07-27"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

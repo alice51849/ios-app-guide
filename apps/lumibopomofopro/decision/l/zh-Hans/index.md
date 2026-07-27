@@ -2,7 +2,7 @@
 title: "适合双语儿童的最佳完整注音App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/zh-Hans/index.html"
-modified: "2026-07-25"
+modified: "2026-07-27"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"

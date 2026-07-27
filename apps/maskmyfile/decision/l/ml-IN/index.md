@@ -2,7 +2,7 @@
 title: "Mask My File — പങ്കിടും മുൻപ് വിവരം മറയ്ക്കൂ | iOS App"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/ml-IN/index.html"
-modified: "2026-07-25"
+modified: "2026-07-27"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

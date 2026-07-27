@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "kn-IN",
-  "dateModified": "2026-07-25",
-  "content_digest": "fb0896395026809c4e0102b75bc3bce083adf750d42ad7b32f05564963956831",
-  "generation_digest": "60ce0dcf4bc84c5cea701c498084ad25d4390af18ce038592364ab0c43177e43",
+  "dateModified": "2026-07-27",
+  "content_digest": "79c3df7cb7671923558759a9775907f8cbab8934d4e65a6e705886e2a8a502e9",
+  "generation_digest": "ade0335394704d46b75dc2c6fb2124c5f57eae4ad98e63ba9f0fed35fe52b31d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 32,
+  "record_count": 33,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/kn-IN.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/kn-IN.rss.xml",
@@ -133,7 +133,7 @@
       "badge_labels": [
         "ಜೀವನಶೈಲಿ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್",
-        "App Store · ಉಚಿತ"
+        "App Store · ₹ 299"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/kn-IN/index.html",
@@ -144,9 +144,9 @@
       "app_store_url": "https://apps.apple.com/in/app/id6790800323",
       "app_store_cta_label": "App Store ನಲ್ಲಿ Mochi DoneStamp: ಕೊನೆಯ ಬಾರಿ ಪಡೆಯಿರಿ",
       "storefront_facts": {
-        "price": "0",
+        "price": "299",
         "currency": "INR",
-        "formatted_price": "ಉಚಿತ"
+        "formatted_price": "₹ 299"
       },
       "guide_cta_label": "ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ",
       "publisher_disclosure": "ಇದು ಪಟ್ಟಿಯಲ್ಲಿ ಇರುವ ಪ್ರತಿಯೊಂದು ಆ್ಯಪ್‌ನ ಅಭಿವೃದ್ಧಿಪಡಿಸಿದ Lumi Studio ಅವರಿಂದ ಪ್ರಕಟಿಸಲಾದ ಮೊದಲ-ಪಕ್ಷದ ವಸ್ತು.",
@@ -501,6 +501,65 @@
       "publisher_disclosure": "ಲ್ಯೂಮಿ ಸ್ಟುಡಿಯೋದಿಂದ ಪ್ರಕಟಕ-ರಚಿಸಿದ ಮಾರ್ಗದರ್ಶಿ, ಆ್ಯಪ್ ಅಭಿವೃದ್ಧಿಪಡಿಸಿದವರು. ಆ್ಯಪ್ ಹೆಸರುಗಳು ಅವರ ಮಾಲೀಕರ ಟ್ರೇಡ್‌ಮಾರ್ಕ್‌ಗಳು ಮತ್ತು ಗುರುತಿಸಲು ಮಾತ್ರ ಬಳಸಲಾಗುತ್ತವೆ. ದಾಖಲೆಗಳು, ಆರೋಗ್ಯ, ಶಾಲೆ ಮತ್ತು ಉತ್ಪಾದಕತೆ ನಿರ್ಧಾರಗಳಿಗೆ ಸಂಬಂಧಿಸಿದ ಅಧಿಕೃತ ಅಗತ್ಯಗಳನ್ನು ಪರಿಶೀಲಿಸಿ.",
       "source_persona_query": "best mindful spending app to stop impulse buying iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "kn-IN:hourstaglite",
+      "locale": "kn-IN",
+      "app_key": "hourstaglite",
+      "app_name": "HoursTag Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "HoursTag Lite — ವಸ್ತುಗಳ ನಿಜವಾದ ಬೆಲೆಯನ್ನು ನೋಡಿ | iOS App",
+      "decision_context": "HoursTag Lite - ವಸ್ತುಗಳ ನಿಜವಾದ ಬೆಲೆಯನ್ನು ನೋಡಿ ಪ್ರತಿಯೊಂದು ಖರೀದಿ ನಿಮ್ಮ ಜೀವನದ ಗಂಟೆಗಳನ್ನು ಖರ್ಚು ಮಾಡುತ್ತದೆ. HoursTag Lite ಬೆಲೆಯನ್ನು ಕೆಲಸದ ಸಮಯದಲ್ಲಿ ಪರಿವರ್ತಿಸುತ್ತದೆ — ಆದ್ದರಿಂದ ನೀವು ಸ್ಪಷ್ಟತೆಯೊಂದಿಗೆ ಖರ್ಚು ಮಾಡುತ್ತೀರಿ. ನಿಮ್ಮ ಮೌಲ್ಯ ಪ್ರಿಸಮ್ ನೋಡಿ - ಸಮಯದ ವೆಚ್ಚ: ಪ್ರತಿ ಕೆಲಸದ ಗಂಟೆಯ ನಿವ್ವಳ ಆದಾಯ - ಪ್ರಕಾರ: ಅವಶ್ಯಕತೆ - ಬಯಕೆ - ಆಕಸ್ಮಿಕ - ನಿಮ್ಮ ಮೌಲ್ಯ ಮಾದರಿ - ಸಂಪೂರ್ಣ ಮೌಲ್ಯ ವಿಶ್ಲೇಷಣೆ - ಗೋಲ್‌ಗೆ ವೆಚ್ಚ ಎಷ್ಟು?: ಗೋಲ್‌ ಹಿಂದೆ ಇರುವ ಕೆಲಸವನ್ನು ನೋಡಿ — ಮತ್ತು ನಿಮ್ಮ ಪ್ರಗತಿಯನ್ನು ಹಂಚಿಕೊಳ್ಳಿ. - ಬ್ಯಾಕ್‌ಅಪ್ ಮತ್ತು ಪುನಃಸ್ಥಾಪನೆ: ಆದಾಯ, ಖರ್ಚು, ಗೋಲ್‌ಗಳು ಮತ್ತು ಆಯ್ಕೆಗಳು ಒಳಗೊಂಡಿವೆ. - Widget - Apple Watch ಎಲ್ಲವೂ ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿ ಉಳಿಯುತ್ತದೆ. ಯಾವುದೇ ಖಾತೆ, ಯಾವುದೇ ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ. ಒಮ್ಮೆ ಪಾವತಿ · ಆಜೀವ ಬಳಕೆ · ಚಂದಾ ಇಲ್ಲ ಅನಿಯಮಿತ ನಿರ್ಧಾರ ಮತ್ತು ತಿದ್ದುಪಡಿ ಅನಿಯಮಿತ ಗುರಿ ಮತ್ತು ಪ್ರಗತಿ ಹಂಚಿಕೆ, ವಿಶ್ಲೇಷಣೆ ಮತ್ತು ಬ್ಯಾಕಪ್",
+      "category": "finance",
+      "category_label": "ಹಣ ಮತ್ತು ಪ್ರಯಾಣ",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "ವಿಜೆಟ್",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "ಹಣ ಮತ್ತು ಪ್ರಯಾಣ",
+        "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
+        "ವಿಜೆಟ್",
+        "Apple Watch"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/hourstaglite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/kn-IN/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/kn-IN/hourstaglite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fhourstaglite%2Fdecision%2Fl%2Fkn-IN%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/kn-IN.json",
+      "app_store_id": "6794039979",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_cta_label": "App Store ನಲ್ಲಿ HoursTag Lite ಪಡೆಯಿರಿ",
+      "storefront_facts": null,
+      "guide_cta_label": "ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ",
+      "publisher_disclosure": "ಇದು ಪಟ್ಟಿಯಲ್ಲಿ ಇರುವ ಪ್ರತಿಯೊಂದು ಆ್ಯಪ್‌ನ ಅಭಿವೃದ್ಧಿಪಡಿಸಿದ Lumi Studio ಅವರಿಂದ ಪ್ರಕಟಿಸಲಾದ ಮೊದಲ-ಪಕ್ಷದ ವಸ್ತು.",
+      "source_persona_query": "best app to convert prices into work hours before buying",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

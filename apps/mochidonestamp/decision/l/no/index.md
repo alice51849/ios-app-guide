@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Sist — Husk når du gjorde det | iOS App"
 lang: "no"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/no/index.html"
-modified: "2026-07-25"
+modified: "2026-07-27"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,7 @@ Når skiftet du sist sengetøy, vannet en plante, ringte familien, sikkerhetskop
 
 - Livsstil
 - Gratis å starte · livstidsopplåsing
-- App Store · Gratis
+- App Store · 39,00 kr
 
 [Last ned Mochi DoneStamp: Sist fra App Store](https://apps.apple.com/no/app/id6790800323)
 

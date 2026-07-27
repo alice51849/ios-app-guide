@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "he",
-  "dateModified": "2026-07-25",
-  "content_digest": "fb0896395026809c4e0102b75bc3bce083adf750d42ad7b32f05564963956831",
-  "generation_digest": "60ce0dcf4bc84c5cea701c498084ad25d4390af18ce038592364ab0c43177e43",
+  "dateModified": "2026-07-27",
+  "content_digest": "79c3df7cb7671923558759a9775907f8cbab8934d4e65a6e705886e2a8a502e9",
+  "generation_digest": "ade0335394704d46b75dc2c6fb2124c5f57eae4ad98e63ba9f0fed35fe52b31d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 32,
+  "record_count": 33,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/he.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/he.rss.xml",
@@ -133,7 +133,7 @@
       "badge_labels": [
         "אורח חיים",
         "התחלה ללא תשלום · פתיחה לכל החיים",
-        "App Store · בחינם"
+        "App Store · ₪9.90"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/he/index.html",
@@ -144,9 +144,9 @@
       "app_store_url": "https://apps.apple.com/il/app/id6790800323",
       "app_store_cta_label": "הורידו את Mochi DoneStamp: מתי לאחרונה מה-App Store",
       "storefront_facts": {
-        "price": "0",
+        "price": "9.9",
         "currency": "ILS",
-        "formatted_price": "בחינם"
+        "formatted_price": "₪9.90"
       },
       "guide_cta_label": "קרא את המדריך המלא",
       "publisher_disclosure": "זהו חומר רשמי שפורסם על ידי Lumi Studio, המפתח של כל אפליקציה ברשימה.",
@@ -501,6 +501,65 @@
       "publisher_disclosure": "מדריך שפורסם על ידי Lumi Studio, מפתח האפליקציה. שמות האפליקציות הם סימני מסחר של בעליהן ומשמשים לזיהוי בלבד. עבור מסמכים, בריאות, לימודים והחלטות פרודוקטיביות, יש לוודא דרישות רשמיות במידת הצורך.",
       "source_persona_query": "best mindful spending app to stop impulse buying iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "he:hourstaglite",
+      "locale": "he",
+      "app_key": "hourstaglite",
+      "app_name": "HoursTag Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "HoursTag Lite — ראה את המחיר האמיתי של דברים | iOS App",
+      "decision_context": "HoursTag Lite - ראה את המחיר האמיתי של דברים כל רכישה עולה שעות מחייך. HoursTag Lite הופך מחירים לזמן עבודה - כך שתוכל להוציא בבירור. הכירו את מנסרת הערך - עלות בזמן: הערך הנקי שלך לשעת עבודה - סוג: צריך - רוצה - דחף - דפוס הערך שלך - תובנות ערך מלאות - מה יעלה מטרה?: ראה את העבודה מאחורי מטרה - ועקוב אחרי ההתקדמות שלך. - גיבוי ושחזור: כולל הכנסה, הוצאות, מטרות והעדפות. - Widget - Apple Watch הכל נשאר במכשיר שלך. אין חשבון, אין מעקב. תשלום אחד · גישה לכל החיים · ללא מנוי בחירות ועריכות ללא הגבלה יעדים והתקדמות ללא הגבלה שיתוף, תובנות וגיבויים",
+      "category": "finance",
+      "category_label": "כסף ונסיעות",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "התחלה ללא תשלום · פתיחה לכל החיים",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ללא חשבון",
+        "ללא מעקב",
+        "פרטי / במכשיר"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "וידג'ט",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "כסף ונסיעות",
+        "התחלה ללא תשלום · פתיחה לכל החיים",
+        "ללא חשבון",
+        "ללא מעקב",
+        "פרטי / במכשיר",
+        "וידג'ט",
+        "Apple Watch"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/hourstaglite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/he/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/he/hourstaglite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fhourstaglite%2Fdecision%2Fl%2Fhe%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/he.json",
+      "app_store_id": "6794039979",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_cta_label": "הורידו את HoursTag Lite מה-App Store",
+      "storefront_facts": null,
+      "guide_cta_label": "קרא את המדריך המלא",
+      "publisher_disclosure": "זהו חומר רשמי שפורסם על ידי Lumi Studio, המפתח של כל אפליקציה ברשימה.",
+      "source_persona_query": "best app to convert prices into work hours before buying",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

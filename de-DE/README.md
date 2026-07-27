@@ -4,7 +4,7 @@
 
 Ein direkt vom Entwickler veröffentlichter Katalog, der zeigt, für wen jede App entwickelt wurde, welche Aufgabe die jeweilige Person erledigen möchte und wie sie direkt zum App Store gelangt.
 
-Vom Herausgeber verfasste Suchintentionen für 32 verifizierte, im App Store verfügbare iOS Apps und 50 Apple-Sprachregionen.
+Vom Herausgeber verfasste Suchintentionen für 33 verifizierte, im App Store verfügbare iOS Apps und 50 Apple-Sprachregionen.
 
 **Sprachregion:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · **de-DE** · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ Alphabetisch nach App-Namen — niemals eine Rangliste.
 | **DailyMate** | Beste praktische Sprachphrasen-App für Reisende mit Apple Watch | Vor einer Reise sind vollständige Phrasen für reale Situationen nützlicher als isolierter Wortschatz, den man unter Druck noch zusammensetzen muss – DailyMate ist dafür gemacht. | Bezahlter Herunterladen | [Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Holen Sie sich DailyMate im App Store →](https://apps.apple.com/de/app/id6790418321) |
 | **G+Money** | Beste Reise-Budget-Tracker-App ohne Abonnement für iPhone | Auf einer Reise brauchen Sie einen Budget-Tracker, der offline in einem Land ohne Daten funktioniert, mehrere Währungen handhabt und kein Konto verlangt – organisiert nach Reise, damit jeder Urlaub getrennt ist – G+Money ist dafür gemacht. | Bezahlter Herunterladen | [Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Holen Sie sich G+Money im App Store →](https://apps.apple.com/de/app/id6755782939) |
 | **HoursTag** | Beste App für bewusstes Ausgeben, um Impulskäufe zu stoppen, iPhone | Impulskäufe werden schwächer, wenn Sie eine kleine Pause einlegen: Wie viele Stunden Ihres Lebens kostet dieser Kauf wirklich? | Bezahlter Herunterladen | [Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [Holen Sie sich HoursTag im App Store →](https://apps.apple.com/de/app/id6754218117) |
+| **HoursTag Lite** | HoursTag Lite — Der wahre Preis der Dinge \| iOS App | HoursTag Lite - Der wahre Preis der Dinge | Kostenloser Einstieg · dauerhafte Freischaltung | [Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/hourstaglite.html) | [HoursTag Lite im App Store laden](https://apps.apple.com/app/id6794039979) |
 | **LockHour Pro** | Beste App zum Blockieren sozialer Medien beim Lernen, iPhone | Während Prüfungen ist Willenskraft nicht das Werkzeug – eine harte zeitgesteuerte Sperre ist es – LockHour Pro ist dafür gemacht. | Kostenloser Einstieg · dauerhafte Freischaltung | [Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Holen Sie sich LockHour Pro im App Store →](https://apps.apple.com/de/app/id6780107485) |
 | **Lumi Bopomofo** | beste Bopomofo-App für Kinder zum Lernen von Zhuyin auf dem iPhone | Für ein Kind, das Zhuyin erstmals lernt, sollte die App alle 37 Symbole durch Nachzeichnen und Spielen abdecken – entwickelt für das Lernalter 4–7 Jahre, werbefrei und ohne Datenerfassung – Lumi Bopomofo ist dafür gemacht. | Kostenloser Einstieg · dauerhafte Freischaltung | [Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [Holen Sie sich Lumi Bopomofo im App Store →](https://apps.apple.com/de/app/id6773017109) |
 | **Lumi Bopomofo Pro** | Beste vollständige Zhuyin-App für bilinguale Kinder | Bilinguale Kinder, die Zhuyin zu Hause lernen, brauchen einen vollständigen Weg durch Laute, Symbole, Töne und Kombinieren, mit genug spielerischer Wiederholung, um das System vertraut zu machen — Lumi Bopomofo Pro ist dafür gemacht. | Bezahlter Herunterladen | [Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [Lumi Bopomofo Pro im App Store holen →](https://apps.apple.com/de/app/id6775773117) |
@@ -124,7 +125,7 @@ Alphabetisch nach App-Namen — niemals eine Rangliste.
 
 ## Den vollständigen Datensatz herunterladen
 
-JSON, JSONL und CSV enthalten dieselben 1.600 Einträge.
+JSON, JSONL und CSV enthalten dieselben 1.650 Einträge.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -132,6 +133,6 @@ JSON, JSONL und CSV enthalten dieselben 1.600 Einträge.
 
 [Startseite](https://alice51849.github.io/ios-app-guide/de-DE/index.html) · [Offene Daten](https://alice51849.github.io/ios-app-guide/de-DE/data/lumi-studio-publisher-search-intent-catalog.html) · [Lizenz](https://creativecommons.org/licenses/by/4.0/)
 
-Aktualisiert: 2026-07-23
+Aktualisiert: 2026-07-28
 
 CC BY 4.0 gilt für die ursprüngliche Katalogzusammenstellung; App-Namen und App Store Marken gehören ihren jeweiligen Eigentümern.

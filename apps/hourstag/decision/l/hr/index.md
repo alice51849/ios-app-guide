@@ -2,7 +2,7 @@
 title: "najbolja aplikacija za svjesnu potrošnju za zaustavljanje impulzivne kupovine na iPhoneu"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/hr/index.html"
-modified: "2026-07-25"
+modified: "2026-07-27"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -4,7 +4,7 @@
 
 ایسا کیٹلاگ جسے ڈویلپر براہ راست شائع کرتا ہے اور جو بتاتا ہے کہ ہر ایپ کس کے لیے بنائی گئی ہے، صارف کون سا کام مکمل کرنا چاہتا ہے اور App Store تک براہ راست کیسے پہنچنا ہے۔
 
-32 تصدیق شدہ اور App Store پر دستیاب iOS ایپس اور Apple کے 50 زبان و خطہ لوکیلز کے لیے پبلشر کی تحریر کردہ سرچ انٹینٹس۔
+33 تصدیق شدہ اور App Store پر دستیاب iOS ایپس اور Apple کے 50 زبان و خطہ لوکیلز کے لیے پبلشر کی تحریر کردہ سرچ انٹینٹس۔
 
 **زبان و خطہ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · **ur-PK** · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ App Store پر دستیابی کی تصدیق شدہ ہر ایپ کے لیے ا�
 | **DailyMate** | ایپل واچ کے ساتھ مسافروں کے لیے بہترین عملی زبان کے جملوں کی ایپ | سفر سے پہلے، حقیقی حالات کے مکمل جملے تنہا الفاظ سے زیادہ مفید ہوتے ہیں جنہیں آپ کو دباؤ میں خود جوڑنا پڑتا ہے — DailyMate اسی لیے بنایا گیا ہے۔ | ادا شدہ ڈاؤن لوڈ | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [App Store سے DailyMate حاصل کریں →](https://apps.apple.com/pk/app/id6790418321) |
 | **G+Money** | iPhone کے لیے بہترین ٹریول بجٹ ٹریکر ایپ بغیر سبسکرپشن کے | سفر پر آپ کو ایسا بجٹ ٹریکر چاہیے جو بغیر ڈیٹا کے ملک میں آف لائن کام کرے، متعدد کرنسیاں سنبھالے، اور اکاؤنٹ کا مطالبہ نہ کرے — ہر چھٹی الگ منظم ہو — G+Money اسی کے لیے بنایا گیا ہے۔ | ادا شدہ ڈاؤن لوڈ | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [G+Money ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6755782939) |
 | **HoursTag** | iPhone کے لیے بہترین ذہین خرچ کرنے والی ایپ جو فوری خریداری روک سکے | جب آپ ایک چھوٹا وقفہ شامل کرتے ہیں تو فوری خریداری کمزور ہو جاتی ہے: یہ چیک آؤٹ آپ کی زندگی کے کتنے گھنٹے لے گا؟ | ادا شدہ ڈاؤن لوڈ | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [HoursTag ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6754218117) |
+| **HoursTag Lite** | HoursTag Lite — چیزوں کی اصل قیمت دیکھیں \| iOS App | HoursTag Lite - چیزوں کی اصل قیمت دیکھیں | مفت آغاز · مستقل ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/hourstaglite.html) | [App Store سے HoursTag Lite حاصل کریں](https://apps.apple.com/app/id6794039979) |
 | **LockHour Pro** | iPhone پر پڑھائی کے دوران سوشل میڈیا بلاک کرنے کے لیے بہترین ایپ | امتحانات کے دوران، حوصلہ نہیں بلکہ سخت وقت پر مبنی بلاک ضروری ہے — LockHour Pro اسی کے لیے بنایا گیا ہے۔ | مفت آغاز · مستقل ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-app-to-block-social-media-while-studying-iphone.html) | [App Store سے LockHour Pro حاصل کریں →](https://apps.apple.com/pk/app/id6780107485) |
 | **Lumi Bopomofo** | iPhone پر بچوں کے لیے بہترین بوموفو ایپ تاکہ وہ ژوئین سیکھ سکیں | جو بچہ پہلی بار ژوئین سیکھ رہا ہو، ایپ کو تمام 37 علامات کو ٹریسنگ اور کھیل کے ذریعے کور کرنا چاہیے — 4–7 سال کی پہلی سیکھنے کی عمر کے لیے، بغیر اشتہارات اور کوئی ڈیٹا جمع کیے — Lumi Bopomofo اس کے لیے بنایا گیا ہے۔ | مفت آغاز · مستقل ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [App Store سے Lumi Bopomofo حاصل کریں →](https://apps.apple.com/pk/app/id6773017109) |
 | **Lumi Bopomofo Pro** | بائی لنگوئل بچوں کے لیے بہترین مکمل ژوئین ایپ | گھر پر ژوئین سیکھنے والے بائی لنگوئل بچوں کو آوازوں، سمبلز، ٹونز اور بلینڈنگ کا مکمل راستہ چاہیے، جس میں اتنی کھیل کے انداز کی تکرار ہو کہ سسٹم مانوس ہو جائے — Lumi Bopomofo Pro اسی مقصد کے لیے بنایا گیا ہے۔ | ادا شدہ ڈاؤن لوڈ | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [Lumi Bopomofo Pro App Store پر حاصل کریں →](https://apps.apple.com/pk/app/id6775773117) |
@@ -124,7 +125,7 @@ App Store پر دستیابی کی تصدیق شدہ ہر ایپ کے لیے ا�
 
 ## مکمل ڈیٹا سیٹ ڈاؤن لوڈ کریں
 
-JSON، JSONL اور CSV میں وہی 1,600 ریکارڈز شامل ہیں۔
+JSON، JSONL اور CSV میں وہی 1,650 ریکارڈز شامل ہیں۔
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -132,6 +133,6 @@ JSON، JSONL اور CSV میں وہی 1,600 ریکارڈز شامل ہیں۔
 
 [ہوم](https://alice51849.github.io/ios-app-guide/ur-PK/index.html) · [کھلا ڈیٹا](https://alice51849.github.io/ios-app-guide/ur-PK/data/lumi-studio-publisher-search-intent-catalog.html) · [لائسنس](https://creativecommons.org/licenses/by/4.0/)
 
-اپ ڈیٹ کیا گیا: 2026-07-23
+اپ ڈیٹ کیا گیا: 2026-07-28
 
 CC BY 4.0 اصل کیٹلاگ کی تدوین پر لاگو ہوتا ہے؛ ایپس کے نام اور App Store کے نشانات ان کے مالکان کی ملکیت ہیں۔

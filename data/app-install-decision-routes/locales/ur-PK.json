@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ur-PK",
-  "dateModified": "2026-07-25",
-  "content_digest": "fb0896395026809c4e0102b75bc3bce083adf750d42ad7b32f05564963956831",
-  "generation_digest": "60ce0dcf4bc84c5cea701c498084ad25d4390af18ce038592364ab0c43177e43",
+  "dateModified": "2026-07-27",
+  "content_digest": "79c3df7cb7671923558759a9775907f8cbab8934d4e65a6e705886e2a8a502e9",
+  "generation_digest": "ade0335394704d46b75dc2c6fb2124c5f57eae4ad98e63ba9f0fed35fe52b31d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 32,
+  "record_count": 33,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ur-PK.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ur-PK.rss.xml",
@@ -133,7 +133,7 @@
       "badge_labels": [
         "طرز زندگی",
         "مفت آغاز · مستقل ان لاک",
-        "App Store · مفت"
+        "App Store · Rs 900.00"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/ur-PK/index.html",
@@ -144,9 +144,9 @@
       "app_store_url": "https://apps.apple.com/pk/app/id6790800323",
       "app_store_cta_label": "App Store سے Mochi DoneStamp: آخری بار حاصل کریں",
       "storefront_facts": {
-        "price": "0",
+        "price": "900",
         "currency": "PKR",
-        "formatted_price": "مفت"
+        "formatted_price": "Rs 900.00"
       },
       "guide_cta_label": "مکمل رہنمائی پڑھیں",
       "publisher_disclosure": "یہ مواد براہ راست Lumi Studio نے شائع کیا ہے، جو فہرست میں شامل تمام ایپس کا ڈویلپر ہے۔",
@@ -501,6 +501,65 @@
       "publisher_disclosure": "Lumi اسٹوڈیو کی طرف سے شائع کردہ رہنما، جو ایپ ڈویلپر ہے۔ ایپ کے نام ان کے مالکان کے تجارتی نشان ہیں اور صرف شناخت کے لیے استعمال ہوتے ہیں۔ دستاویزات، صحت، اسکول، اور پیداواری فیصلوں کے لیے، متعلقہ سرکاری تقاضوں کی تصدیق کریں۔",
       "source_persona_query": "best mindful spending app to stop impulse buying iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ur-PK:hourstaglite",
+      "locale": "ur-PK",
+      "app_key": "hourstaglite",
+      "app_name": "HoursTag Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "HoursTag Lite — چیزوں کی اصل قیمت دیکھیں | iOS App",
+      "decision_context": "HoursTag Lite - چیزوں کی اصل قیمت دیکھیں ہر خریداری آپ کی زندگی کے گھنٹوں کی قیمت ہے۔ HoursTag Lite قیمتوں کو کام کے وقت میں تبدیل کرتا ہے — تاکہ آپ واضح طور پر خرچ کریں۔ اپنا قدر کا منشور دیکھیں - وقت کی قیمت: فی کام کے گھنٹے کی خالص آمدنی - قسم: ضرورت - چاہت - امپلس - آپ کا قدر کا رجحان - مکمل قدر کا تجزیہ - ایک مقصد کی قیمت کیا ہوگی؟: ایک مقصد کے پیچھے کا کام دیکھیں — اور اپنی پیشرفت کو ٹریک کریں۔ - بیک اپ اور بحالی: اس میں آمدنی، خرچ، مقاصد اور ترجیحات شامل ہیں۔ - Widget - Apple Watch سب کچھ آپ کے ڈیوائس پر رہتا ہے۔ کوئی اکاؤنٹ نہیں، کوئی ٹریکنگ نہیں۔ ایک بار ادائیگی · تاحیات استعمال · کوئی سبسکرپشن نہیں لامحدود فیصلے اور ترمیم لامحدود اہداف اور پیش رفت اشتراک، تجزیہ اور بیک اپ",
+      "category": "finance",
+      "category_label": "پیسہ اور سفر",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "مفت آغاز · مستقل ان لاک",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "کوئی اکاؤنٹ نہیں",
+        "کوئی نگرانی نہیں",
+        "نجی / آلہ پر"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "وجیٹ",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "پیسہ اور سفر",
+        "مفت آغاز · مستقل ان لاک",
+        "کوئی اکاؤنٹ نہیں",
+        "کوئی نگرانی نہیں",
+        "نجی / آلہ پر",
+        "وجیٹ",
+        "Apple Watch"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/hourstaglite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ur-PK/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/ur-PK/hourstaglite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fhourstaglite%2Fdecision%2Fl%2Fur-PK%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ur-PK.json",
+      "app_store_id": "6794039979",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_cta_label": "App Store سے HoursTag Lite حاصل کریں",
+      "storefront_facts": null,
+      "guide_cta_label": "مکمل رہنمائی پڑھیں",
+      "publisher_disclosure": "یہ مواد براہ راست Lumi Studio نے شائع کیا ہے، جو فہرست میں شامل تمام ایپس کا ڈویلپر ہے۔",
+      "source_persona_query": "best app to convert prices into work hours before buying",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

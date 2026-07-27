@@ -2,7 +2,7 @@
 title: "পড়াশোনার সময় সোশ্যাল মিডিয়া ব্লক করার সেরা অ্যাপ আইফোনের জন্য"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/bn-BD/index.html"
-modified: "2026-07-25"
+modified: "2026-07-27"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

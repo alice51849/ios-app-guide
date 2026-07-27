@@ -2,7 +2,7 @@
 title: "meilleure application de planification d’itinéraire de voyage pour iPhone"
 lang: "fr-CA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/fr-CA/index.html"
-modified: "2026-07-25"
+modified: "2026-07-27"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"

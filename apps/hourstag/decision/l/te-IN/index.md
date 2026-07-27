@@ -2,7 +2,7 @@
 title: "అవసరంలేని కొనుగోళ్లను ఆపేందుకు ఉత్తమ మైండ్‌ఫుల్ ఖర్చు యాప్ iPhone కోసం"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/te-IN/index.html"
-modified: "2026-07-25"
+modified: "2026-07-27"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

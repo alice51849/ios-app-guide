@@ -2,7 +2,7 @@
 title: "migliore gioco educativo per bambini senza pubblicità su iPhone"
 lang: "it"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/it/index.html"
-modified: "2026-07-25"
+modified: "2026-07-27"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

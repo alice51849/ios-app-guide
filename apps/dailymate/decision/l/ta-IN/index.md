@@ -2,7 +2,7 @@
 title: "ஆப்பிள் வாட்சுடன் பயணிகளுக்கான சிறந்த நடைமுறை மொழி வாக்கிய பயன்பாடு"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/ta-IN/index.html"
-modified: "2026-07-25"
+modified: "2026-07-27"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "Aim990 Plus — ฟังอ่านครบ 7 พาร์ตใน 15 นาที | iOS App"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/th/index.html"
-modified: "2026-07-25"
+modified: "2026-07-27"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"

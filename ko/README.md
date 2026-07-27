@@ -4,7 +4,7 @@
 
 각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.
 
-App Store 제공 여부를 확인한 32개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
+App Store 제공 여부를 확인한 33개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
 
 **언어·지역:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · **ko** · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 | **DailyMate** | 애플 워치와 함께 여행자에게 가장 실용적인 언어 회화 앱 | 여행 전, 실제 상황에 맞는 완전한 문장이 압박 속에 조합해야 하는 단어보다 더 유용합니다 — DailyMate는 이를 위해 만들어졌습니다. | 유료 다운로드 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [App Store에서 DailyMate 받기 →](https://apps.apple.com/kr/app/id6790418321) |
 | **G+Money** | 구독 없이 사용할 수 있는 최고의 여행 예산 추적 앱 아이폰용 | 여행 중 데이터가 없는 나라에서도 작동하고, 여러 통화를 처리하며, 계정을 요구하지 않는 예산 추적기가 필요합니다 — 여행별로 정리되어 각 휴가가 분리됩니다 — G+Money는 이를 위해 만들어졌습니다. | 유료 다운로드 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [앱 스토어에서 G+Money 받기 →](https://apps.apple.com/kr/app/id6755782939) |
 | **HoursTag** | 충동구매를 막는 최고의 현명한 지출 앱 아이폰용 | 충동 쇼핑은 작은 멈춤 하나로 약해집니다: 이 결제가 실제로 당신의 인생 몇 시간에 해당하는지 생각해 보세요. | 유료 다운로드 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [앱 스토어에서 HoursTag 받기 →](https://apps.apple.com/kr/app/id6754218117) |
+| **HoursTag Lite** | HoursTag Lite — 모든 것의 진짜 가격을 보세요 \| iOS App | HoursTag Lite - 모든 것의 진짜 가격을 보세요 | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/hourstaglite.html) | [App Store에서 HoursTag Lite 받기](https://apps.apple.com/app/id6794039979) |
 | **LockHour Pro** | 공부할 때 소셜 미디어 차단용 최고의 앱 아이폰용 | 시험 기간에는 의지력이 아니라 강력한 시간 제한 차단이 필요합니다 — LockHour Pro는 이를 위해 만들어졌습니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-app-to-block-social-media-while-studying-iphone.html) | [App Store에서 LockHour Pro 받기 →](https://apps.apple.com/kr/app/id6780107485) |
 | **Lumi Bopomofo** | 아이폰에서 아이들이 주음(주음부호) 배우기에 가장 좋은 보포모포 앱 | 주음을 처음 배우는 아이에게는 37개 기호 모두를 따라 그리기와 놀이로 다루는 앱이 필요하며 4~7세 첫 학습 시기에 맞게 광고 없고 데이터 수집 없는 Lumi Bopomofo가 적합합니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [App Store에서 Lumi Bopomofo 받기 →](https://apps.apple.com/kr/app/id6773017109) |
 | **Lumi Bopomofo Pro** | 이중언어 어린이를 위한 완전한 주음부호 앱 | 집에서 주음부호를 배우는 이중언어 어린이에게는 소리, 기호, 성조, 음절 합치기를 모두 아우르는 완전한 경로와 충분한 놀이 반복이 필요합니다 — Lumi Bopomofo Pro는 이를 위해 설계되었습니다. | 유료 다운로드 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [App Store에서 Lumi Bopomofo Pro 다운로드 →](https://apps.apple.com/kr/app/id6775773117) |
@@ -124,7 +125,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 
 ## 전체 데이터셋 다운로드
 
-JSON, JSONL, CSV 모두 동일한 1,600개 기록을 포함합니다.
+JSON, JSONL, CSV 모두 동일한 1,650개 기록을 포함합니다.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -132,6 +133,6 @@ JSON, JSONL, CSV 모두 동일한 1,600개 기록을 포함합니다.
 
 [홈](https://alice51849.github.io/ios-app-guide/ko/index.html) · [오픈 데이터](https://alice51849.github.io/ios-app-guide/ko/data/lumi-studio-publisher-search-intent-catalog.html) · [라이선스](https://creativecommons.org/licenses/by/4.0/)
 
-업데이트 날짜: 2026-07-23
+업데이트 날짜: 2026-07-28
 
 CC BY 4.0은 원본 카탈로그 편집에 적용되며, 앱 이름과 App Store 마크는 각 소유자의 권리입니다.

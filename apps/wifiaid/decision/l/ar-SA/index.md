@@ -2,7 +2,7 @@
 title: "WiFi Aid — تشخيص الشبكة بالأدلة | iOS App"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/ar-SA/index.html"
-modified: "2026-07-25"
+modified: "2026-07-27"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

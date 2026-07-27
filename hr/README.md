@@ -4,7 +4,7 @@
 
 Katalog iz prve ruke o tome za koga je svaka aplikacija namijenjena, koji zadatak žele izvršiti i izravnom putu do App Storea.
 
-Namjere pretraživanja koje je napisao izdavač za 32 provjerenih aktivnih iOS aplikacija i 50 Apple lokaliteta.
+Namjere pretraživanja koje je napisao izdavač za 33 provjerenih aktivnih iOS aplikacija i 50 Apple lokaliteta.
 
 **Lokalitet:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · **hr** · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ Abecedno po nazivu aplikacije — nikada nije rangiranje.
 | **DailyMate** | najbolja praktična aplikacija za fraze na jeziku za putnike s Apple Watchom | Prije putovanja, kompletne fraze za stvarne situacije korisnije su od izoliranih riječi koje još morate sastaviti pod pritiskom — DailyMate je stvoren za to. | Plaćeno preuzimanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Preuzmite DailyMate u App Storeu →](https://apps.apple.com/hr/app/id6790418321) |
 | **G+Money** | najbolja aplikacija za praćenje putnog budžeta bez pretplate za iPhone | Na putovanju vam treba aplikacija za praćenje budžeta koja radi offline u zemlji bez podataka, podržava više valuta i ne traži račun — organizirana po putovanjima tako da je svaki odmor zaseban — G+Money je stvoren za to. | Plaćeno preuzimanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Preuzmite G+Money u App Storeu →](https://apps.apple.com/hr/app/id6755782939) |
 | **HoursTag** | najbolja aplikacija za svjesnu potrošnju za zaustavljanje impulzivne kupovine na iPhoneu | Impulzivna kupovina slabi kad dodate malu pauzu: koliko sati vašeg života će ova kupovina zapravo koštati? | Plaćeno preuzimanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [Preuzmite HoursTag u App Storeu →](https://apps.apple.com/hr/app/id6754218117) |
+| **HoursTag Lite** | HoursTag Lite — Pogledaj pravu cijenu stvari \| iOS App | HoursTag Lite - Pogledaj pravu cijenu stvari | Besplatno za početak · doživotno otključavanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/hourstaglite.html) | [Preuzmite HoursTag Lite u App Storeu](https://apps.apple.com/app/id6794039979) |
 | **LockHour Pro** | najbolja aplikacija za blokiranje društvenih mreža tijekom učenja na iPhoneu | Tijekom ispita, snaga volje nije alat — stroga vremenski ograničena blokada jest — LockHour Pro je stvoren za to. | Besplatno za početak · doživotno otključavanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Preuzmite LockHour Pro u App Storeu →](https://apps.apple.com/hr/app/id6780107485) |
 | **Lumi Bopomofo** | najbolja bopomofo aplikacija za djecu za učenje zhuyina na iPhoneu | Za dijete koje prvi put uči Zhuyin, aplikacija treba pokrivati svih 37 simbola kroz praćenje poteza i igru — dizajnirana za dob od 4 do 7 godina, bez oglasa i bez prikupljanja podataka — Lumi Bopomofo je stvorena za to. | Besplatno za početak · doživotno otključavanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [Preuzmite Lumi Bopomofo u App Storeu →](https://apps.apple.com/hr/app/id6773017109) |
 | **Lumi Bopomofo Pro** | najbolja kompletna zhuyin aplikacija za dvojezičnu djecu | Dvojezičnoj djeci koja uče Zhuyin kod kuće treba potpuni put kroz zvukove, simbole, tonove i spajanje, uz dovoljno razigranog ponavljanja da sustav postane poznat — Lumi Bopomofo Pro je napravljen za to. | Plaćeno preuzimanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [Preuzmite Lumi Bopomofo Pro na App Storeu →](https://apps.apple.com/hr/app/id6775773117) |
@@ -124,7 +125,7 @@ Abecedno po nazivu aplikacije — nikada nije rangiranje.
 
 ## Preuzmite kompletan skup podataka
 
-JSON, JSONL i CSV sadrže istih 1.600 zapisa.
+JSON, JSONL i CSV sadrže istih 1.650 zapisa.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -132,6 +133,6 @@ JSON, JSONL i CSV sadrže istih 1.600 zapisa.
 
 [Početna](https://alice51849.github.io/ios-app-guide/hr/index.html) · [Otvoreni podaci](https://alice51849.github.io/ios-app-guide/hr/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenca](https://creativecommons.org/licenses/by/4.0/)
 
-Ažurirano: 2026-07-23
+Ažurirano: 2026-07-28
 
 CC BY 4.0 primjenjuje se na izvornu kompilaciju kataloga; nazivi aplikacija i oznake App Store pripadaju njihovim vlasnicima.

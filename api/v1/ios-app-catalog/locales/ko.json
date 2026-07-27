@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-25",
-  "content_digest": "93a486d9e1e54dcaa22a11405a0c6e5c2ecb9e7393b3db606330334d6ac2f095",
+  "date_modified": "2026-07-27",
+  "content_digest": "4ef0714cb4faa5eb798198f17e95f393348ac4ed24e078abe436cd3ac3a30e94",
   "locale": "ko",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 32,
+  "record_count": 33,
   "apps": [
     {
       "key": "aim990",
@@ -400,6 +400,53 @@
         "formatted_price": "￦7,700",
         "storefront_url": "https://apps.apple.com/kr/app/id6754218117"
       }
+    },
+    {
+      "key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "name": "HoursTag Lite",
+      "summary": "HoursTag Lite - 모든 것의 진짜 가격을 보세요",
+      "category": "finance",
+      "search_terms": [
+        "절약",
+        "가계부",
+        "예산",
+        "저축",
+        "소비",
+        "돈관리",
+        "절약앱",
+        "지출관리",
+        "충동구매",
+        "저축앱",
+        "시급",
+        "근로시간",
+        "소비습관",
+        "재테크",
+        "가계",
+        "돈모으기",
+        "합리적소비",
+        "생활비",
+        "지출",
+        "절약습관",
+        "자산관리",
+        "돈",
+        "삶의 시간 비용",
+        "필요"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ko/hourstaglite.html",
+      "verified_live": true
     },
     {
       "key": "lockhour",
@@ -1293,9 +1340,9 @@
       "guide_url": "https://alice51849.github.io/ios-app-guide/ko/mochidonestamp.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "0",
+        "price": "4400",
         "currency": "KRW",
-        "formatted_price": "무료",
+        "formatted_price": "￦4,400",
         "storefront_url": "https://apps.apple.com/kr/app/id6790800323"
       }
     },

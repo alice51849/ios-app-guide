@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ja",
-  "dateModified": "2026-07-25",
-  "content_digest": "fb0896395026809c4e0102b75bc3bce083adf750d42ad7b32f05564963956831",
-  "generation_digest": "60ce0dcf4bc84c5cea701c498084ad25d4390af18ce038592364ab0c43177e43",
+  "dateModified": "2026-07-27",
+  "content_digest": "79c3df7cb7671923558759a9775907f8cbab8934d4e65a6e705886e2a8a502e9",
+  "generation_digest": "ade0335394704d46b75dc2c6fb2124c5f57eae4ad98e63ba9f0fed35fe52b31d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 32,
+  "record_count": 33,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ja.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ja.rss.xml",
@@ -133,7 +133,7 @@
       "badge_labels": [
         "ライフスタイル",
         "無料で開始・買い切りで永久解除",
-        "App Store · 無料"
+        "App Store · ¥500"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/ja/index.html",
@@ -144,9 +144,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/id6790800323",
       "app_store_cta_label": "App Store で Mochi DoneStamp：いつやった？ を入手",
       "storefront_facts": {
-        "price": "0",
+        "price": "500",
         "currency": "JPY",
-        "formatted_price": "無料"
+        "formatted_price": "¥500"
       },
       "guide_cta_label": "完全ガイドを読む",
       "publisher_disclosure": "これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。",
@@ -501,6 +501,65 @@
       "publisher_disclosure": "アプリ開発者であるLumi Studioによる公式購入ガイドです。アプリ名は各所有者の商標であり、識別のためにのみ使用しています。書類、健康、学校、生産性に関する判断は、該当する公式要件を必ずご確認ください。",
       "source_persona_query": "best mindful spending app to stop impulse buying iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ja:hourstaglite",
+      "locale": "ja",
+      "app_key": "hourstaglite",
+      "app_name": "HoursTag Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "HoursTag Lite — モノの本当の値段が見える | iOS App",
+      "decision_context": "HoursTag Lite - モノの本当の値段が見える 買い物はすべて、あなたの人生の労働時間を消費します。HoursTag Lite は価格を労働時間に変換し、納得して使えるようにします。 価値レンズを試す - 人生時間コスト: 実収入から見た仕事1時間の価値 - タイプ: 必要 - 欲しい - 衝動 - あなたの価値傾向 - すべての価値分析 - その目標に必要な労働時間は？: 目標に必要な労働時間を可視化し、進捗を追跡します。 - バックアップと復元: 収入・支出・目標・設定を含みます。 - Widget - Apple Watch すべてのデータは端末内にのみ保存されます。アカウント不要、追跡なし。 買い切り · 永久利用 · サブスクなし 判断と編集が無制限 目標と進捗が無制限 共有・分析・バックアップ",
+      "category": "finance",
+      "category_label": "お金・旅行",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "無料で開始・買い切りで永久解除",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "アカウント不要",
+        "追跡なし",
+        "プライベート／端末内"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "ウィジェット",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "お金・旅行",
+        "無料で開始・買い切りで永久解除",
+        "アカウント不要",
+        "追跡なし",
+        "プライベート／端末内",
+        "ウィジェット",
+        "Apple Watch"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/hourstaglite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ja/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/ja/hourstaglite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fhourstaglite%2Fdecision%2Fl%2Fja%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ja.json",
+      "app_store_id": "6794039979",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_cta_label": "App Store で HoursTag Lite を入手",
+      "storefront_facts": null,
+      "guide_cta_label": "完全ガイドを読む",
+      "publisher_disclosure": "これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。",
+      "source_persona_query": "best app to convert prices into work hours before buying",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

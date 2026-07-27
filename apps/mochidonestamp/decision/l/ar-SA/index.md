@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: آخر مرة — تذكّر متى فعلتها آخر مرة | iOS App"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/ar-SA/index.html"
-modified: "2026-07-25"
+modified: "2026-07-27"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,7 @@ publisher: "Lumi Studio"
 
 - أسلوب الحياة
 - بدء مجاني · فتح دائم
-- App Store · مجاني
+- App Store · SAR 12.99
 
 [احصل على Mochi DoneStamp: آخر مرة من App Store](https://apps.apple.com/sa/app/id6790800323)
 

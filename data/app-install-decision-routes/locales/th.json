@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "th",
-  "dateModified": "2026-07-25",
-  "content_digest": "fb0896395026809c4e0102b75bc3bce083adf750d42ad7b32f05564963956831",
-  "generation_digest": "60ce0dcf4bc84c5cea701c498084ad25d4390af18ce038592364ab0c43177e43",
+  "dateModified": "2026-07-27",
+  "content_digest": "79c3df7cb7671923558759a9775907f8cbab8934d4e65a6e705886e2a8a502e9",
+  "generation_digest": "ade0335394704d46b75dc2c6fb2124c5f57eae4ad98e63ba9f0fed35fe52b31d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 32,
+  "record_count": 33,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/th.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/th.rss.xml",
@@ -133,7 +133,7 @@
       "badge_labels": [
         "ไลฟ์สไตล์",
         "เริ่มใช้ฟรี · ปลดล็อกถาวร",
-        "App Store · ฟรี"
+        "App Store · ฿99.00"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/th/index.html",
@@ -144,9 +144,9 @@
       "app_store_url": "https://apps.apple.com/th/app/id6790800323",
       "app_store_cta_label": "ดาวน์โหลด Mochi DoneStamp: ครั้งล่าสุด บน App Store",
       "storefront_facts": {
-        "price": "0",
+        "price": "99",
         "currency": "THB",
-        "formatted_price": "ฟรี"
+        "formatted_price": "฿99.00"
       },
       "guide_cta_label": "อ่านคู่มือฉบับเต็ม",
       "publisher_disclosure": "เนื้อหานี้เผยแพร่โดยตรงจาก Lumi Studio ซึ่งเป็นผู้พัฒนาแอปทั้งหมดที่ระบุไว้",
@@ -501,6 +501,65 @@
       "publisher_disclosure": "คู่มือที่จัดทำโดยผู้พัฒนาแอป Lumi Studio ชื่อแอปเป็นเครื่องหมายการค้าของเจ้าของและใช้เพื่อการระบุเท่านั้น สำหรับเอกสาร สุขภาพ โรงเรียน และการตัดสินใจด้านประสิทธิภาพ โปรดตรวจสอบข้อกำหนดอย่างเป็นทางการเมื่อเกี่ยวข้อง",
       "source_persona_query": "best mindful spending app to stop impulse buying iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "th:hourstaglite",
+      "locale": "th",
+      "app_key": "hourstaglite",
+      "app_name": "HoursTag Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "HoursTag Lite — ดูราคาที่แท้จริงของสิ่งต่างๆ | iOS App",
+      "decision_context": "HoursTag Lite - ดูราคาที่แท้จริงของสิ่งต่างๆ ทุกการซื้อใช้เวลาชีวิตของคุณ HoursTag Lite เปลี่ยนราคาเป็นเวลาทำงาน - เพื่อให้คุณใช้จ่ายอย่างชัดเจน รู้จักปริซึมคุณค่าของคุณ - ต้นทุนเวลา: รายรับสุทธิต่อชั่วโมงทำงาน - ประเภท: จำเป็น - ต้องการ - กระตุ้น - รูปแบบคุณค่าของคุณ - ข้อมูลเชิงลึกฉบับเต็ม - เป้าหมายจะมีค่าใช้จ่ายเท่าไหร่?: ดูงานที่อยู่เบื้องหลังเป้าหมาย - และติดตามความก้าวหน้า - สำรองข้อมูล & กู้คืน: รวมถึงรายได้, การใช้จ่าย, เป้าหมายและการตั้งค่า - Widget - Apple Watch ทุกอย่างอยู่ในอุปกรณ์ของคุณ ไม่มีบัญชี ไม่มีการติดตาม จ่ายครั้งเดียว · ใช้ตลอดชีพ · ไม่มีสมาชิก ตัวเลือกและการแก้ไขไม่จำกัด เป้าหมายและความคืบหน้าไม่จำกัด แชร์ วิเคราะห์ และสำรองข้อมูล",
+      "category": "finance",
+      "category_label": "เงิน & การเดินทาง",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกถาวร",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ไม่มีบัญชี",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "วิดเจ็ต",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "เงิน & การเดินทาง",
+        "เริ่มใช้ฟรี · ปลดล็อกถาวร",
+        "ไม่มีบัญชี",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์",
+        "วิดเจ็ต",
+        "Apple Watch"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/hourstaglite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/th/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/th/hourstaglite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fhourstaglite%2Fdecision%2Fl%2Fth%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/th.json",
+      "app_store_id": "6794039979",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_cta_label": "ดาวน์โหลด HoursTag Lite บน App Store",
+      "storefront_facts": null,
+      "guide_cta_label": "อ่านคู่มือฉบับเต็ม",
+      "publisher_disclosure": "เนื้อหานี้เผยแพร่โดยตรงจาก Lumi Studio ซึ่งเป็นผู้พัฒนาแอปทั้งหมดที่ระบุไว้",
+      "source_persona_query": "best app to convert prices into work hours before buying",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

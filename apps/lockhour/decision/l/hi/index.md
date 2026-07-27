@@ -2,7 +2,7 @@
 title: "iPhone पर पढ़ाई करते समय सोशल मीडिया ब्लॉक करने के लिए सर्वश्रेष्ठ ऐप"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/hi/index.html"
-modified: "2026-07-25"
+modified: "2026-07-27"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

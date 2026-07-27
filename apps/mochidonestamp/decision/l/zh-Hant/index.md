@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp：上次何時 — 生活事件、週期與完成紀錄 | iOS App"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/zh-Hant/index.html"
-modified: "2026-07-25"
+modified: "2026-07-27"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,7 @@ publisher: "Lumi Studio"
 
 - 生活
 - 免費開始 · 永久解鎖
-- App Store · 免費
+- App Store · $90.00
 
 [在 App Store 取得 Mochi DoneStamp：上次何時](https://apps.apple.com/tw/app/id6790800323)
 

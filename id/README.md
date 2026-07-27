@@ -4,7 +4,7 @@
 
 Katalog yang diterbitkan langsung oleh pengembang untuk menjelaskan sasaran setiap aplikasi, tugas yang ingin diselesaikan, dan akses langsung ke App Store.
 
-Niat pencarian yang ditulis penerbit untuk 32 aplikasi iOS terverifikasi dan tersedia di App Store, dalam 50 bahasa dan wilayah Apple.
+Niat pencarian yang ditulis penerbit untuk 33 aplikasi iOS terverifikasi dan tersedia di App Store, dalam 50 bahasa dan wilayah Apple.
 
 **Wilayah:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · **id** · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ Diurutkan berdasarkan abjad nama aplikasi — bukan peringkat.
 | **DailyMate** | aplikasi frasa bahasa praktis terbaik untuk pelancong dengan Apple Watch | Sebelum perjalanan, frasa lengkap untuk situasi nyata lebih berguna daripada kosakata terpisah yang harus Anda susun saat tekanan — DailyMate dibuat untuk ini. | Unduhan berbayar | [Panduan](https://alice51849.github.io/ios-app-guide/id/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Dapatkan DailyMate di App Store →](https://apps.apple.com/id/app/id6790418321) |
 | **G+Money** | aplikasi pelacak anggaran perjalanan terbaik tanpa langganan untuk iPhone | Saat bepergian Anda butuh pelacak anggaran yang bekerja offline di negara tanpa data, menangani multi-mata uang, dan tidak meminta akun — diatur per perjalanan agar setiap liburan terpisah — G+Money dibuat untuk ini. | Unduhan berbayar | [Panduan](https://alice51849.github.io/ios-app-guide/id/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Dapatkan G+Money di App Store →](https://apps.apple.com/id/app/id6755782939) |
 | **HoursTag** | aplikasi pengelola pengeluaran sadar terbaik untuk menghentikan pembelian impulsif di iPhone | Belanja impulsif menjadi lebih lemah saat Anda menambahkan satu jeda kecil: berapa jam hidup Anda yang sebenarnya akan dihabiskan untuk pembelian ini? | Unduhan berbayar | [Panduan](https://alice51849.github.io/ios-app-guide/id/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [Dapatkan HoursTag di App Store →](https://apps.apple.com/id/app/id6754218117) |
+| **HoursTag Lite** | HoursTag Lite — Kenali prisma nilaimu \| iOS App | HoursTag Lite - Lihat harga sebenarnya dari barang | Gratis untuk mulai · buka kunci permanen | [Panduan](https://alice51849.github.io/ios-app-guide/id/hourstaglite.html) | [Dapatkan HoursTag Lite di App Store](https://apps.apple.com/app/id6794039979) |
 | **LockHour Pro** | aplikasi terbaik untuk memblokir media sosial saat belajar di iPhone | Saat ujian, kemauan bukan alatnya — blok waktu yang ketat adalah — LockHour Pro dibuat untuk ini. | Gratis untuk mulai · buka kunci permanen | [Panduan](https://alice51849.github.io/ios-app-guide/id/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Dapatkan LockHour Pro di App Store →](https://apps.apple.com/id/app/id6780107485) |
 | **Lumi Bopomofo** | aplikasi bopomofo terbaik untuk anak belajar zhuyin di iPhone | Untuk anak yang baru belajar Zhuyin, aplikasi harus mencakup semua 37 simbol melalui menelusuri dan permainan — dirancang untuk rentang belajar usia 4–7 tahun, tanpa iklan, tanpa pengumpulan data — Lumi Bopomofo dibuat untuk ini. | Gratis untuk mulai · buka kunci permanen | [Panduan](https://alice51849.github.io/ios-app-guide/id/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [Dapatkan Lumi Bopomofo di App Store →](https://apps.apple.com/id/app/id6773017109) |
 | **Lumi Bopomofo Pro** | aplikasi zhuyin lengkap terbaik untuk anak dwibahasa | Anak dwibahasa yang belajar Zhuyin di rumah butuh jalur lengkap melalui suara, simbol, nada, dan penggabungan, dengan cukup pengulangan menyenangkan agar sistem jadi akrab — Lumi Bopomofo Pro dibuat untuk ini. | Unduhan berbayar | [Panduan](https://alice51849.github.io/ios-app-guide/id/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [Dapatkan Lumi Bopomofo Pro di App Store →](https://apps.apple.com/id/app/id6775773117) |
@@ -124,7 +125,7 @@ Diurutkan berdasarkan abjad nama aplikasi — bukan peringkat.
 
 ## Unduh dataset lengkap
 
-JSON, JSONL, dan CSV memuat 1.600 catatan yang sama.
+JSON, JSONL, dan CSV memuat 1.650 catatan yang sama.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -132,6 +133,6 @@ JSON, JSONL, dan CSV memuat 1.600 catatan yang sama.
 
 [Beranda](https://alice51849.github.io/ios-app-guide/id/index.html) · [Data terbuka](https://alice51849.github.io/ios-app-guide/id/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisensi](https://creativecommons.org/licenses/by/4.0/)
 
-Diperbarui: 2026-07-23
+Diperbarui: 2026-07-28
 
 CC BY 4.0 berlaku untuk kompilasi katalog asli; nama aplikasi dan merek App Store adalah milik pemiliknya masing-masing.

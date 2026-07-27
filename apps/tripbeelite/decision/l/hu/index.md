@@ -2,7 +2,7 @@
 title: "legjobb egyszerű utiterv-tervező alkalmazás egy közelgő utazáshoz iPhone-ra"
 lang: "hu"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/hu/index.html"
-modified: "2026-07-25"
+modified: "2026-07-27"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -4,7 +4,7 @@
 
 ಪ್ರತಿ ಆ್ಯಪ್ ಯಾರಿಗಾಗಿ ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ, ಅವರು ಪೂರ್ಣಗೊಳಿಸಲು ಯತ್ನಿಸುತ್ತಿರುವ ಕಾರ್ಯ ಮತ್ತು ನೇರ App Store ಮಾರ್ಗದ ಮೊದಲ-ಪಕ್ಷ ಕ್ಯಾಟಲಾಗ್.
 
-32 ಪರಿಶೀಲಿತ ಸಜೀವ iOS ಆ್ಯಪ್ಗಳು ಮತ್ತು 50 Apple ಸ್ಥಳೀಯತೆಗಳಾದ್ಯಂತ ಪ್ರಕಾಶಕರಿಂದ ರಚಿಸಲಾದ ಹುಡುಕಾಟ ಉದ್ದೇಶಗಳು.
+33 ಪರಿಶೀಲಿತ ಸಜೀವ iOS ಆ್ಯಪ್ಗಳು ಮತ್ತು 50 Apple ಸ್ಥಳೀಯತೆಗಳಾದ್ಯಂತ ಪ್ರಕಾಶಕರಿಂದ ರಚಿಸಲಾದ ಹುಡುಕಾಟ ಉದ್ದೇಶಗಳು.
 
 **ಸ್ಥಳೀಯತೆ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · **kn-IN** · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **DailyMate** | ಆಪಲ್ ವಾಚ್ ಹೊಂದಿರುವ ಪ್ರಯಾಣಿಕರಿಗಾಗಿ ಅತ್ಯುತ್ತಮ ಪ್ರಾಯೋಗಿಕ ಭಾಷಾ ವಾಕ್ಯಗಳು ಅಪ್ಲಿಕೇಶನ್ | ಪ್ರಯಾಣದ ಮೊದಲು, ಒತ್ತಡದಡಿಯಲ್ಲಿ ಸಂಯೋಜಿಸಬೇಕಾಗಿರುವ ಪ್ರತ್ಯೇಕ ಪದಗಳಿಗಿಂತ ನೈಜ ಪರಿಸ್ಥಿತಿಗಳಿಗಾಗಿ ಪೂರ್ಣ ವಾಕ್ಯಗಳು ಹೆಚ್ಚು ಉಪಯುಕ್ತವಾಗಿವೆ — ಡೇಲಿಮೇಟ್ ಇದಕ್ಕಾಗಿ ನಿರ್ಮಿಸಲಾಗಿದೆ. | ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [App Store ನಲ್ಲಿ ಡೇಲಿಮೇಟ್ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6790418321) |
 | **G+Money** | ಅಕೌಂಟ್ ಇಲ್ಲದ ಅತ್ಯುತ್ತಮ ಪ್ರಯಾಣ ಬಜೆಟ್ ಟ್ರ್ಯಾಕರ್ ಅಪ್ಲಿಕೇಶನ್ iPhone | ಪ್ರತಿ ಹಾಲಿಡೇ ಪ್ರತ್ಯೇಕವಾಗಿರುವಂತೆ ಪ್ರಯಾಣದ ಪ್ರಕಾರ ಸಂಘಟಿತವಾಗಿರುವ, ಡೇಟಾ ಇಲ್ಲದ ದೇಶದಲ್ಲಿ ಆಫ್‌ಲೈನ್ ಕೆಲಸ ಮಾಡುವ, ಬಹು ಕರೆನ್ಸಿಗಳನ್ನು ನಿರ್ವಹಿಸುವ ಮತ್ತು ಅಕೌಂಟ್ ಬೇಡದ ಬಜೆಟ್ ಟ್ರ್ಯಾಕರ್ — G+Money ಇದಕ್ಕಾಗಿ ನಿರ್ಮಿಸಲಾಗಿದೆ. | ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [App Store ನಲ್ಲಿ G+Money ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6755782939) |
 | **HoursTag** | ಆಯಾಸ ಖರೀದಿಯನ್ನು ನಿಲ್ಲಿಸಲು ಅತ್ಯುತ್ತಮ ಮನೋವೈಜ್ಞಾನಿಕ ಖರ್ಚು ಅಪ್ಲಿಕೇಶನ್ iPhone | ಒಂದು ಸಣ್ಣ ವಿರಾಮವನ್ನು ಸೇರಿಸಿದಾಗ ತಕ್ಷಣದ ಖರೀದಿ ದುರ್ಬಲವಾಗುತ್ತದೆ: ಈ ಖರೀದಿ ನಿಮ್ಮ ಜೀವನದ ಎಷ್ಟು ಗಂಟೆಗಳ ವೆಚ್ಚ? | ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [App Store ನಲ್ಲಿ HoursTag ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6754218117) |
+| **HoursTag Lite** | HoursTag Lite — ವಸ್ತುಗಳ ನಿಜವಾದ ಬೆಲೆಯನ್ನು ನೋಡಿ \| iOS App | HoursTag Lite - ವಸ್ತುಗಳ ನಿಜವಾದ ಬೆಲೆಯನ್ನು ನೋಡಿ | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/hourstaglite.html) | [App Store ನಲ್ಲಿ HoursTag Lite ಪಡೆಯಿರಿ](https://apps.apple.com/app/id6794039979) |
 | **LockHour Pro** | ಅಧ್ಯಯನ ಮಾಡುವಾಗ ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮವನ್ನು ತಡೆಯಲು ಅತ್ಯುತ್ತಮ ಅಪ್ಲಿಕೇಶನ್ iPhone | ಪರೀಕ್ಷೆಗಳ ಸಮಯದಲ್ಲಿ, ಇಚ್ಛಾಶಕ್ತಿ ಸಾಧನವಲ್ಲ — ಕಠಿಣ ಸಮಯ ನಿಯಂತ್ರಿತ ತಡೆ ಸಾಧನ — ಲಾಕ್‌ಹವರ್ ಪ್ರೋ ಇದಕ್ಕಾಗಿ ನಿರ್ಮಿಸಲಾಗಿದೆ. | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-app-to-block-social-media-while-studying-iphone.html) | [App Store ನಲ್ಲಿ LockHour Pro ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6780107485) |
 | **Lumi Bopomofo** | iPhone ನಲ್ಲಿ ಮಕ್ಕಳಿಗೆ ಜುಯಿನ್ ಕಲಿಸಲು ಉತ್ತಮ ಬೋಪೊಮೊಫೋ ಆಪ್ | ಜುಯಿನ್ ಮೊದಲ ಬಾರಿಗೆ ಕಲಿಯುತ್ತಿರುವ ಮಕ್ಕಳಿಗೆ, ಆಪ್ 37 ಚಿಹ್ನೆಗಳನ್ನು ಟ್ರೇಸಿಂಗ್ ಮತ್ತು ಆಟದ ಮೂಲಕ ಒಳಗೊಂಡಿರಬೇಕು — 4–7 ವಯಸ್ಸಿನ ಆರಂಭಿಕ ಕಲಿಕೆ ವಿಂಡೋಗೆ ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ, ಜಾಹೀರಾತು ರಹಿತ, ಯಾವುದೇ ಡೇಟಾ ಸಂಗ್ರಹಣೆ ಇಲ್ಲ — Lumi Bopomofo ಇದಕ್ಕಾಗಿ ನಿರ್ಮಿಸಲಾಗಿದೆ. | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [App Store ನಲ್ಲಿ Lumi Bopomofo ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6773017109) |
 | **Lumi Bopomofo Pro** | ದ್ವಿಭಾಷಾ ಮಕ್ಕಳಿಗೆ ಪೂರ್ಣ Zhuyin ಅಪ್ಲಿಕೇಶನ್ | ಮನೆಯಲ್ಲಿ Zhuyin ಕಲಿಯುವ ದ್ವಿಭಾಷಾ ಮಕ್ಕಳಿಗೆ ಧ್ವನಿಗಳು, ಚಿಹ್ನೆಗಳು, ಸ್ವರಛಾಯೆಗಳು ಮತ್ತು ಧ್ವನಿಗಳನ್ನು ಜೋಡಿಸುವಿಕೆ ಒಳಗೊಂಡ ಸಂಪೂರ್ಣ ಕಲಿಕಾ ಮಾರ್ಗವೂ, ವ್ಯವಸ್ಥೆ ಪರಿಚಿತವಾಗಲು ಸಾಕಷ್ಟು ಆಟದ ಮರುಅಭ್ಯಾಸವೂ ಅಗತ್ಯ — Lumi Bopomofo Pro ಇದಕ್ಕಾಗಿ ರೂಪಿಸಲಾಗಿದೆ. | ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [Lumi Bopomofo Pro ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6775773117) |
@@ -124,7 +125,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## ಪೂರ್ಣ ಡೇಟಾಸೆಟ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ
 
-JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 1,600 ದಾಖಲೆಗಳನ್ನು ಹೊಂದಿವೆ.
+JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 1,650 ದಾಖಲೆಗಳನ್ನು ಹೊಂದಿವೆ.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -132,6 +133,6 @@ JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 1,600 ದಾಖಲೆಗಳನ್�
 
 [ಮುಖಪುಟ](https://alice51849.github.io/ios-app-guide/kn-IN/index.html) · [ತೆರೆದ ಡೇಟಾ](https://alice51849.github.io/ios-app-guide/kn-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ಲೈಸೆನ್ಸ್](https://creativecommons.org/licenses/by/4.0/)
 
-ನವೀಕರಿಸಲಾಗಿದೆ: 2026-07-23
+ನವೀಕರಿಸಲಾಗಿದೆ: 2026-07-28
 
 CC BY 4.0 ಮೂಲ ಕ್ಯಾಟಲೋಗ್ ಸಂಗ್ರಹಣೆಗೆ ಅನ್ವಯಿಸುತ್ತದೆ; ಆ್ಯಪ್ ಹೆಸರುಗಳು ಮತ್ತು App Store ಗುರುತುಗಳು ಅವರ ಮಾಲೀಕರಿಗೆ ಸೇರಿವೆ.

@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: מתי לאחרונה — זוכרים מתי עשית את זה | iOS App"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/he/index.html"
-modified: "2026-07-25"
+modified: "2026-07-27"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,7 @@ publisher: "Lumi Studio"
 
 - אורח חיים
 - התחלה ללא תשלום · פתיחה לכל החיים
-- App Store · בחינם
+- App Store · ₪9.90
 
 [הורידו את Mochi DoneStamp: מתי לאחרונה מה-App Store](https://apps.apple.com/il/app/id6790800323)
 

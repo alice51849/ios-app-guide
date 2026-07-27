@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: En son — En son yaptığın zamanı hatırla | iOS App"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/tr/index.html"
-modified: "2026-07-25"
+modified: "2026-07-27"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,7 @@ publisher: "Lumi Studio"
 
 - Yaşam tarzı
 - Başlangıçta ücretsiz · ömür boyu açma
-- App Store · Ücretsiz
+- App Store · ₺149,99
 
 [Mochi DoneStamp: En son uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6790800323)
 

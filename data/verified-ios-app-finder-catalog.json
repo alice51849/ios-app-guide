@@ -16,7 +16,7 @@
     ],
     "retirement_rule": "Retire after three consecutive verified misses"
   },
-  "record_count": 32,
+  "record_count": 33,
   "apps": [
     {
       "key": "aim990",
@@ -334,6 +334,55 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
+      "verified_live": true
+    },
+    {
+      "key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "name": "HoursTag Lite",
+      "category": "finance",
+      "category_labels": {
+        "en": "Money & travel",
+        "zh-Hant": "理財與旅行"
+      },
+      "summaries": {
+        "en": "HoursTag Lite - See the real price of things",
+        "zh-Hant": "HoursTag Lite - 看見每樣東西的真實代價"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Free to start",
+        "One-time unlock",
+        "No subscription",
+        "On-device privacy",
+        "No account",
+        "No tracking",
+        "Home Screen widget",
+        "Apple Watch"
+      ],
+      "keywords": [
+        "price in work hours",
+        "purchase cost in work hours",
+        "stop impulse buying",
+        "mindful spending before buying",
+        "need want impulse tracker",
+        "life cost calculator"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
       "verified_live": true
     },
     {

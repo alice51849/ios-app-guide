@@ -4,7 +4,7 @@
 
 En førsteparts katalog over hvem hver app er laget for, oppgaven de prøver å fullføre, og den direkte App Store-stien.
 
-Utgiver-skapte søkeintensjoner på tvers av 32 verifiserte aktive iOS-apper og 50 Apple-lokaler.
+Utgiver-skapte søkeintensjoner på tvers av 33 verifiserte aktive iOS-apper og 50 Apple-lokaler.
 
 **Lokale:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · **no** · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ Alfabetisk etter appnavn — aldri en rangering.
 | **DailyMate** | beste praktiske språkfrase-app for reisende med Apple Watch | Før en reise er komplette fraser for virkelige situasjoner mer nyttige enn isolerte ord du fortsatt må sette sammen under press – DailyMate er laget for dette. | Betalt nedlasting | [Guide](https://alice51849.github.io/ios-app-guide/no/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Skaff DailyMate i App Store →](https://apps.apple.com/no/app/id6790418321) |
 | **G+Money** | beste reisebudsjettsporerapp uten abonnement for iPhone | På en tur trenger du en budsjettsporer som fungerer offline i et land uten data, håndterer flere valutaer og ikke krever konto — organisert per tur slik at hver ferie er separat — G+Money er laget for dette. | Betalt nedlasting | [Guide](https://alice51849.github.io/ios-app-guide/no/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Få G+Money i App Store →](https://apps.apple.com/no/app/id6755782939) |
 | **HoursTag** | beste app for bevisst pengebruk for å stoppe impulskjøp iPhone | Impulsshopping blir svakere når du legger til en liten pause: hvor mange timer av livet ditt vil dette kjøpet egentlig koste? | Betalt nedlasting | [Guide](https://alice51849.github.io/ios-app-guide/no/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [Få HoursTag i App Store →](https://apps.apple.com/no/app/id6754218117) |
+| **HoursTag Lite** | HoursTag Lite — Den virkelige prisen på ting \| iOS App | HoursTag Lite - Den virkelige prisen på ting | Gratis å starte · livstidsopplåsing | [Guide](https://alice51849.github.io/ios-app-guide/no/hourstaglite.html) | [Last ned HoursTag Lite fra App Store](https://apps.apple.com/app/id6794039979) |
 | **LockHour Pro** | beste app for å blokkere sosiale medier mens du studerer iPhone | Under eksamen er ikke viljestyrke verktøyet – en hard tidsbestemt blokkering er det – LockHour Pro er laget for dette. | Gratis å starte · livstidsopplåsing | [Guide](https://alice51849.github.io/ios-app-guide/no/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Få LockHour Pro på App Store →](https://apps.apple.com/no/app/id6780107485) |
 | **Lumi Bopomofo** | beste bopomofo-app for barn som skal lære zhuyin på iPhone | For et barn som lærer Zhuyin for første gang, bør appen dekke alle 37 symboler gjennom skriveøvelser og lek — designet for 4–7 års læringsvindu, annonsefri, uten datainnsamling — Lumi Bopomofo er laget for dette. | Gratis å starte · livstidsopplåsing | [Guide](https://alice51849.github.io/ios-app-guide/no/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [Få Lumi Bopomofo på App Store →](https://apps.apple.com/no/app/id6773017109) |
 | **Lumi Bopomofo Pro** | beste komplette zhuyin-app for tospråklige barn | Tospråklige barn som lærer Zhuyin hjemme trenger en komplett vei gjennom lyder, symboler, toner og sammensetting, med nok lekne repetisjoner til å gjøre systemet kjent — Lumi Bopomofo Pro er laget for dette. | Betalt nedlasting | [Guide](https://alice51849.github.io/ios-app-guide/no/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [Få Lumi Bopomofo Pro på App Store →](https://apps.apple.com/no/app/id6775773117) |
@@ -124,7 +125,7 @@ Alfabetisk etter appnavn — aldri en rangering.
 
 ## Last ned hele datasettet
 
-JSON, JSONL og CSV inneholder de samme 1 600 postene.
+JSON, JSONL og CSV inneholder de samme 1 650 postene.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -132,6 +133,6 @@ JSON, JSONL og CSV inneholder de samme 1 600 postene.
 
 [Hjem](https://alice51849.github.io/ios-app-guide/no/index.html) · [Åpne data](https://alice51849.github.io/ios-app-guide/no/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisens](https://creativecommons.org/licenses/by/4.0/)
 
-Oppdatert: 2026-07-23
+Oppdatert: 2026-07-28
 
 CC BY 4.0 gjelder for den opprinnelige katalogsammensetningen; appnavn og App Store-merker tilhører sine eiere.

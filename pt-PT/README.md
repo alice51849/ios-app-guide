@@ -4,7 +4,7 @@
 
 Um catálogo publicado diretamente pelo programador que explica a quem se destina cada app, a tarefa que pretende realizar e o acesso direto à App Store.
 
-Intenções de pesquisa redigidas pelo editor para 32 apps iOS verificadas e disponíveis em 50 idiomas e regiões Apple.
+Intenções de pesquisa redigidas pelo editor para 33 apps iOS verificadas e disponíveis em 50 idiomas e regiões Apple.
 
 **Local:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · **pt-PT** · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ Ordem alfabética pelo nome da app — nunca uma classificação.
 | **DailyMate** | melhor aplicação de frases úteis para viajar com Apple Watch | Antes de uma viagem, frases completas para situações reais são mais úteis do que vocabulário isolado que ainda tem de montar sob pressão — o DailyMate foi criado para isso. | Descarregamento pago | [Guia](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Obtenha o DailyMate na App Store →](https://apps.apple.com/pt/app/id6790418321) |
 | **G+Money** | melhor app de controlo de orçamento de viagem sem subscrição para iPhone | Numa viagem precisa de um controlo de orçamento que funcione offline num país sem dados, suporte múltiplas moedas e não exija conta — organizado por viagem para que cada férias seja separada — o G+Money foi criado para isto. | Descarregamento pago | [Guia](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Obtenha o G+Money na App Store →](https://apps.apple.com/pt/app/id6755782939) |
 | **HoursTag** | melhor app para controlar gastos conscientes e evitar compras impulsivas iPhone | As compras impulsivas enfraquecem quando adiciona uma pequena pausa: quantas horas da sua vida esta compra realmente custa? | Descarregamento pago | [Guia](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [Obtenha o HoursTag na App Store →](https://apps.apple.com/pt/app/id6754218117) |
+| **HoursTag Lite** | HoursTag Lite — O preço real das coisas \| iOS App | HoursTag Lite - O preço real das coisas | Grátis para começar · desbloqueio permanente | [Guia](https://alice51849.github.io/ios-app-guide/pt-PT/hourstaglite.html) | [Baixe HoursTag Lite na App Store](https://apps.apple.com/app/id6794039979) |
 | **LockHour Pro** | melhor app para bloquear redes sociais enquanto estuda iPhone | Durante os exames, a força de vontade não é a ferramenta — um bloqueio temporizado rigoroso é — o LockHour Pro foi criado para isso. | Grátis para começar · desbloqueio permanente | [Guia](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Obtenha o LockHour Pro na App Store →](https://apps.apple.com/pt/app/id6780107485) |
 | **Lumi Bopomofo** | melhor app bopomofo para crianças aprenderem zhuyin no iPhone | Para uma criança a aprender Zhuyin pela primeira vez, o app deve cobrir os 37 símbolos através de traçado e jogo — desenhado para a faixa etária 4–7 anos, sem anúncios e sem recolha de dados — o Lumi Bopomofo foi criado para isso. | Grátis para começar · desbloqueio permanente | [Guia](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [Obtenha o Lumi Bopomofo na App Store →](https://apps.apple.com/pt/app/id6773017109) |
 | **Lumi Bopomofo Pro** | melhor app completo de zhuyin para crianças bilingues | Crianças bilingues a aprender Zhuyin em casa precisam de um caminho completo por sons, símbolos, tons e combinação de sons, com repetição lúdica suficiente para tornar o sistema familiar — Lumi Bopomofo Pro foi criado para isso. | Descarregamento pago | [Guia](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [Obtenha Lumi Bopomofo Pro na App Store →](https://apps.apple.com/pt/app/id6775773117) |
@@ -124,7 +125,7 @@ Ordem alfabética pelo nome da app — nunca uma classificação.
 
 ## Descarregar o conjunto de dados completo
 
-JSON, JSONL e CSV contêm os mesmos 1.600 registos.
+JSON, JSONL e CSV contêm os mesmos 1.650 registos.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -132,6 +133,6 @@ JSON, JSONL e CSV contêm os mesmos 1.600 registos.
 
 [Início](https://alice51849.github.io/ios-app-guide/pt-PT/index.html) · [Dados abertos](https://alice51849.github.io/ios-app-guide/pt-PT/data/lumi-studio-publisher-search-intent-catalog.html) · [Licença](https://creativecommons.org/licenses/by/4.0/)
 
-Atualizado: 2026-07-23
+Atualizado: 2026-07-28
 
 A licença CC BY 4.0 aplica-se à compilação original do catálogo; os nomes dos apps e marcas da App Store pertencem aos seus proprietários.

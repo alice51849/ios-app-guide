@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: ਪਿਛਲੀ ਵਾਰ — ਯਾਦ ਰੱਖੋ ਤੁਸੀਂ ਕਦੋਂ ਕੀਤਾ | iOS App"
 lang: "pa-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/pa-IN/index.html"
-modified: "2026-07-25"
+modified: "2026-07-27"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,7 @@ publisher: "Lumi Studio"
 
 - ਜੀਵਨ ਸ਼ੈਲੀ
 - ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਸਦਾ ਲਈ ਅਨਲੌਕ
-- App Store · ਮੁਫ਼ਤ
+- App Store · ₹ 299
 
 [App Store ਤੋਂ Mochi DoneStamp: ਪਿਛਲੀ ਵਾਰ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6790800323)
 

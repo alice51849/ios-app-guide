@@ -27,7 +27,7 @@
   "identifier": "LUMI-ZHUYIN-DCAT3-2026",
   "version": "1.5.0",
   "datePublished": "2026-07-11",
-  "dateModified": "2026-07-11T21:45:19Z",
+  "dateModified": "2026-07-28T00:00:00Z",
   "inLanguage": [
     "en",
     "zh-Hant"
@@ -97,7 +97,7 @@
       "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-ro-crate",
       "name": "Bopomofo RO-Crate 1.3 research object",
       "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/",
-      "dateModified": "2026-07-11"
+      "dateModified": "2026-07-28"
     },
     {
       "@type": "Dataset",
@@ -162,8 +162,8 @@
       "name": "Complete ZIP bundle",
       "encodingFormat": "application/zip",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog-dcat3-bundle.zip",
-      "contentSize": "28824 bytes",
-      "sha256": "662efcb15ccd6c4c65643fbb976551df97dd15f370036ab18b1c235a2c981707"
+      "contentSize": "28806 bytes",
+      "sha256": "b04fc470a233c945090657ce89969721138e3231985c83a0ef4fd775a744b471"
     },
     {
       "@type": "DataDownload",
@@ -171,7 +171,7 @@
       "encodingFormat": "application/ld+json",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.jsonld",
       "contentSize": "218434 bytes",
-      "sha256": "708cc4b72878f95ccd05d73d5c061ff3cf69474f50a0d7509dd2c84bc6acc6db"
+      "sha256": "fba8e5737c962dbe0b7169173a08b8b50569f2680fed6d22908cebb4fd7456e7"
     },
     {
       "@type": "DataDownload",
@@ -179,7 +179,7 @@
       "encodingFormat": "text/turtle",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.ttl",
       "contentSize": "148253 bytes",
-      "sha256": "d041106da778725be42a84d9e5b58e65d5cd00d346152e0914a2a5f61f986a2c"
+      "sha256": "c4fcbf9efa8db5da01a8c3f4a9833da84ba3c55a4e2d2cef03279921f1d655b2"
     }
   ]
 }

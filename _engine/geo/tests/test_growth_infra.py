@@ -9217,9 +9217,14 @@ class GeneratorTests(unittest.TestCase):
             answers = root / "pages" / "answers"
             answers.mkdir(parents=True)
             (answers / "sample.html").write_text(
-                '<h1>Sample answer</h1><script type="application/ld+json">'
+                '<html lang="en"><head><title>Sample answer</title>'
+                '<link rel="canonical" href="https://example.com/sample">'
+                '</head><body><main><h1>Sample answer</h1>'
+                '<p class="lead">Sample summary.</p></main>'
+                '<div class="footer">Publisher-authored guide from Lumi Studio, '
+                'the app developer.</div><script type="application/ld+json">'
                 '{"@type":"SoftwareApplication","name":"Sample App"}'
-                "</script>",
+                "</script></body></html>",
                 encoding="utf-8",
             )
             for locale in ("ja", "zh-Hant"):
@@ -9246,6 +9251,103 @@ class GeneratorTests(unittest.TestCase):
             self.assertIn('hreflang="zh-Hant"', index)
             self.assertIn('hreflang="x-default"', index)
             self.assertNotIn('hreflang="de-DE"', index)
+            self.assertIn('<html lang="en">', index)
+            self.assertIn('<body><div class="h-feed hfeed">', index)
+            self.assertIn('<h1 class="p-name site-title">', index)
+            self.assertIn(
+                'class="u-url" value="'
+                "https://alice51849.github.io/ios-app-guide/answers/index.html",
+                index,
+            )
+            self.assertIn('class="card third h-entry hentry"', index)
+            self.assertIn('class="p-name entry-title"', index)
+            self.assertIn('class="u-url u-uid" rel="bookmark"', index)
+            self.assertIn('class="muted p-summary entry-summary"', index)
+            self.assertIn(
+                'class="p-author h-card vcard" value="Lumi Studio"',
+                index,
+            )
+            self.assertIn(">Sample answer</a>", index)
+
+    def test_answer_page_emits_complete_microformats2_entry(self):
+        content = aeo_answers.default_content(
+            "best private passport photo app", "snapport"
+        )
+        page = aeo_answers.render_page(
+            "best private passport photo app",
+            "snapport",
+            content,
+        )
+        self.assertIn('<html lang="en">', page)
+        self.assertIn('<div class="h-entry hentry">', page)
+        self.assertIn("<title>best private passport photo app:", page)
+        self.assertIn('<h1 class="p-name entry-title">', page)
+        self.assertIn(
+            'class="u-url u-uid" value="'
+            "https://alice51849.github.io/ios-app-guide/answers/"
+            'best-private-passport-photo-app.html"',
+            page,
+        )
+        self.assertIn('class="lead p-summary entry-summary"', page)
+        self.assertIn(
+            '<div class="e-content entry-content"><main>',
+            page,
+        )
+        self.assertIn(
+            'class="p-author h-card vcard" value="Lumi Studio"',
+            page,
+        )
+        self.assertIn(
+            'class="p-name p-org fn org" value="Lumi Studio"',
+            page,
+        )
+
+    def test_answer_microformats_reconcile_legacy_body_and_skip_redirect(self):
+        legacy = (
+            '<!DOCTYPE html><html lang="en"><head>'
+            "<title>Legacy answer</title>"
+            '<link rel="canonical" href="https://example.com/answer">'
+            '</head><body><h1>Legacy answer</h1>'
+            '<p class="lead">Useful summary.</p>'
+            '<div class="footer"><data class="p-author h-card vcard" '
+            'value="Lumi Studio"><data class="p-name p-org fn org" '
+            'value="Lumi Studio"></data><link class="u-url url" '
+            'href="https://alice51849.github.io/ios-app-guide/about.html">'
+            "</data>Independent publisher guide.</div>"
+            "</body></html>"
+        )
+        reconciled = aeo_answers.microformat_answer_html(legacy)
+        self.assertIn('<html lang="en">', reconciled)
+        self.assertIn('<div class="h-entry hentry">', reconciled)
+        self.assertIn(
+            '<div class="e-content entry-content"><h1',
+            reconciled,
+        )
+        self.assertIn('class="lead p-summary entry-summary"', reconciled)
+        self.assertIn(
+            'class="p-author h-card vcard" value="Lumi Studio"',
+            reconciled,
+        )
+        self.assertIn(
+            '<div class="footer"><data',
+            reconciled,
+        )
+        self.assertNotIn('<link class="u-url url"', reconciled)
+        self.assertIn(
+            'class="u-url url" value="'
+            'https://alice51849.github.io/ios-app-guide/about.html"',
+            reconciled,
+        )
+        self.assertIn("Independent publisher guide.", reconciled)
+
+        redirect = (
+            '<html lang="en"><head><meta http-equiv="refresh" content="0">'
+            '<meta name="robots" content="noindex,follow"></head></html>'
+        )
+        self.assertEqual(
+            redirect,
+            aeo_answers.microformat_answer_html(redirect),
+        )
 
     def test_zhuyin_library_catalog_is_complete_verifiable_and_deterministic(self):
         with tempfile.TemporaryDirectory() as directory:

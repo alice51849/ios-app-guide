@@ -366,6 +366,257 @@ def e(s: str) -> str:
     return html.escape(s, quote=True)
 
 
+def author_microformat() -> str:
+    return (
+        '<data class="p-author h-card vcard" value="Lumi Studio">'
+        '<data class="p-name p-org fn org" value="Lumi Studio"></data>'
+        f'<data class="u-url url" value="{SITE}/about.html"></data>'
+        "</data>"
+    )
+
+
+def url_microformat(url: str, include_uid: bool = True) -> str:
+    classes = "u-url u-uid" if include_uid else "u-url"
+    return f'<data class="{classes}" value="{e(url)}"></data>'
+
+
+def _add_classes_to_first_tag(
+    document: str,
+    pattern: str,
+    classes: tuple[str, ...],
+    label: str,
+) -> str:
+    match = re.search(pattern, document, re.IGNORECASE)
+    if not match:
+        raise ValueError(f"Missing {label} while adding microformats")
+    tag = match.group(0)
+    class_match = re.search(
+        r"(\sclass=)([\"'])(.*?)\2",
+        tag,
+        re.IGNORECASE | re.DOTALL,
+    )
+    if class_match:
+        existing = class_match.group(3).split()
+        merged = existing + [name for name in classes if name not in existing]
+        rewritten = (
+            tag[:class_match.start(3)]
+            + " ".join(merged)
+            + tag[class_match.end(3):]
+        )
+    else:
+        insert_at = tag.rfind("/>")
+        if insert_at < 0:
+            insert_at = tag.rfind(">")
+        rewritten = (
+            tag[:insert_at]
+            + f' class="{" ".join(classes)}"'
+            + tag[insert_at:]
+        )
+    return document[:match.start()] + rewritten + document[match.end():]
+
+
+def _remove_classes_from_first_tag(
+    document: str,
+    pattern: str,
+    classes: tuple[str, ...],
+) -> str:
+    match = re.search(pattern, document, re.IGNORECASE)
+    if not match:
+        return document
+    tag = match.group(0)
+    class_match = re.search(
+        r"(\sclass=)([\"'])(.*?)\2",
+        tag,
+        re.IGNORECASE | re.DOTALL,
+    )
+    if not class_match:
+        return document
+    remaining = [
+        name for name in class_match.group(3).split()
+        if name not in classes
+    ]
+    if remaining:
+        rewritten = (
+            tag[:class_match.start(3)]
+            + " ".join(remaining)
+            + tag[class_match.end(3):]
+        )
+    else:
+        rewritten = tag[:class_match.start()] + tag[class_match.end():]
+    return document[:match.start()] + rewritten + document[match.end():]
+
+
+def is_redirect_html(document: str) -> bool:
+    head = document[:4096].lower()
+    return (
+        'http-equiv="refresh"' in head
+        and 'name="robots" content="noindex' in head
+    )
+
+
+def microformat_answer_html(document: str) -> str:
+    """Add a parser-compatible h-entry wrapper without changing visible copy."""
+    if is_redirect_html(document):
+        return document
+    html_tag = re.search(r"<html\b[^>]*>", document, re.IGNORECASE)
+    if not html_tag or not re.search(
+        r"\slang=[\"']en[\"']",
+        html_tag.group(0),
+        re.IGNORECASE,
+    ):
+        raise ValueError("English answer page is missing html[lang=en]")
+
+    canonical = re.search(
+        r"<link\b[^>]*\srel=[\"']canonical[\"'][^>]*>",
+        document,
+        re.IGNORECASE,
+    )
+    if not canonical:
+        raise ValueError("Missing canonical link while adding microformats")
+    href = re.search(
+        r"\shref=([\"'])(.*?)\1",
+        canonical.group(0),
+        re.IGNORECASE | re.DOTALL,
+    )
+    if not href:
+        raise ValueError("Canonical link is missing href")
+    canonical_url = html.unescape(href.group(2))
+
+    old_author = (
+        f'<a class="p-author h-card vcard u-url url" '
+        f'href="{SITE}/about.html"><span class="p-name p-org fn org">'
+        "Lumi Studio</span></a>"
+    )
+    document = document.replace(
+        f"Publisher-authored guide from {old_author}, the app developer.",
+        "Publisher-authored guide from Lumi Studio, the app developer.",
+        1,
+    )
+    document = document.replace(f"Published by {old_author}. ", "", 1)
+    document = document.replace(
+        f'<link class="u-url url" href="{SITE}/about.html">',
+        f'<data class="u-url url" value="{SITE}/about.html"></data>',
+    )
+    document = _remove_classes_from_first_tag(
+        document,
+        r"<title\b[^>]*>",
+        ("p-name", "entry-title"),
+    )
+    document = _remove_classes_from_first_tag(
+        document,
+        r"<main\b[^>]*>",
+        ("e-content", "entry-content"),
+    )
+    document = _remove_classes_from_first_tag(
+        document,
+        r"<body\b[^>]*>",
+        ("h-entry", "hentry", "e-content", "entry-content"),
+    )
+    document = _remove_classes_from_first_tag(
+        document,
+        r"<html\b[^>]*>",
+        ("h-entry", "hentry"),
+    )
+    document = _remove_classes_from_first_tag(
+        document,
+        r"<link\b[^>]*\srel=[\"']canonical[\"'][^>]*>",
+        ("u-url", "u-uid"),
+    )
+    document = _add_classes_to_first_tag(
+        document,
+        r"<h1\b[^>]*>",
+        ("p-name", "entry-title"),
+        "answer heading",
+    )
+    document = _add_classes_to_first_tag(
+        document,
+        r"<p\b(?=[^>]*\sclass=[\"'][^\"']*\blead\b)[^>]*>",
+        ("p-summary", "entry-summary"),
+        "lead paragraph",
+    )
+
+    if "p-author" not in document:
+        footer = re.search(
+            r"<(?:div|footer)\b"
+            r"(?=[^>]*\sclass=[\"'][^\"']*\bfooter\b)[^>]*>",
+            document,
+            re.IGNORECASE,
+        )
+        if not footer:
+            raise ValueError("Missing answer footer while adding author")
+        document = (
+            document[:footer.end()]
+            + author_microformat()
+            + document[footer.end():]
+        )
+
+    root_start = "<!-- answer-microformat:start -->"
+    root_end = "<!-- answer-microformat:end -->"
+    content_start = "<!-- answer-content:start -->"
+    content_end = "<!-- answer-content:end -->"
+    if root_start not in document:
+        body = re.search(r"<body\b[^>]*>", document, re.IGNORECASE)
+        body_close = document.lower().rfind("</body>")
+        if not body or body_close < body.end():
+            raise ValueError("Missing body boundary while adding microformats")
+        has_main = bool(re.search(r"<main\b[^>]*>", document, re.IGNORECASE))
+        root_open = (
+            f'{root_start}<div class="h-entry hentry">'
+            f"{url_microformat(canonical_url)}"
+        )
+        root_close = f"</div>{root_end}"
+        if has_main:
+            document = (
+                document[:body.end()]
+                + root_open
+                + document[body.end():body_close]
+                + root_close
+                + document[body_close:]
+            )
+            main = re.search(r"<main\b[^>]*>", document, re.IGNORECASE)
+            main_close = re.search(
+                r"</main>",
+                document[main.end():] if main else "",
+                re.IGNORECASE,
+            )
+            if not main or not main_close:
+                raise ValueError("Missing main boundary while adding microformats")
+            close_start = main.end() + main_close.start()
+            close_end = main.end() + main_close.end()
+            document = (
+                document[:close_end]
+                + f'</div>{content_end}'
+                + document[close_end:]
+            )
+            document = (
+                document[:main.start()]
+                + f'{content_start}<div class="e-content entry-content">'
+                + document[main.start():]
+            )
+        else:
+            document = (
+                document[:body.end()]
+                + root_open
+                + f'{content_start}<div class="e-content entry-content">'
+                + document[body.end():body_close]
+                + f"</div>{content_end}"
+                + root_close
+                + document[body_close:]
+            )
+    elif root_end not in document or content_start not in document:
+        raise ValueError("Incomplete answer microformat wrapper")
+    return document
+
+
+def reconcile_answer_microformats(path: Path) -> bool:
+    source = path.read_text(encoding="utf-8")
+    rendered = microformat_answer_html(source)
+    if rendered == source:
+        return False
+    path.write_text(rendered, encoding="utf-8")
+    return True
+
+
 def application_category(key: str) -> str:
     cat = APPS[key].get("category", "")
     return {
@@ -533,7 +784,7 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
             f'<p class="muted">{e("; ".join(feature_list(key)))}</p>'
         )
         deferred_app_fit = ""
-    return f'''<!DOCTYPE html>
+    rendered = f'''<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(meta)}"><link rel="canonical" href="{canonical}">
 <link rel="alternate" hreflang="en" href="{canonical}">
@@ -560,6 +811,7 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
 <main><section class="hero wrap"><div class="breadcrumb"><a href="{SITE}/index.html">Home</a> / <a href="{SITE}/answers/index.html">Answers</a></div><div class="eyebrow">High-intent answer</div><h1>{e(question)}</h1><p class="lead">{e(content["lead"])}</p><p>{hero_actions}</p></section>
 <section class="wrap grid"><article class="card two answer"><h2>Short answer</h2>{paras}<h2>What to look for before choosing</h2><ul class="checklist">{look}</ul><h2>A practical decision process</h2><ol class="checklist">{steps}</ol><h2>Quick comparison</h2><table><thead><tr><th>Need</th><th>What to check</th><th>Why it matters</th></tr></thead><tbody>{comparison_rows}</tbody></table>{sources_html}{article_app_fit}</article><aside class="card side">{sidebar_html}</aside></section>
 <section class="wrap card"><h2>FAQ</h2>{faq_html}</section>{deferred_app_fit}</main><footer class="footer"><div class="wrap">Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.</div></footer></body></html>'''
+    return microformat_answer_html(rendered)
 
 
 def _coverage_rates() -> dict:
@@ -639,7 +891,7 @@ def create_page(
 
 def parse_page_info(path: Path) -> tuple[str, str]:
     text = path.read_text(encoding="utf-8", errors="replace")
-    hm = re.search(r"<h1>(.*?)</h1>", text, re.S)
+    hm = re.search(r"<h1\b[^>]*>(.*?)</h1>", text, re.S | re.I)
     title = re.sub(r"<.*?>", "", hm.group(1)).strip() if hm else path.stem.replace("-", " ")
     sm = re.search(
         r'"@type"\s*:\s*"(?:SoftwareApplication|MobileApplication)"'
@@ -652,8 +904,7 @@ def parse_page_info(path: Path) -> tuple[str, str]:
 
 
 def is_redirect_page(path: Path) -> bool:
-    head = path.read_text(encoding="utf-8", errors="replace")[:4096].lower()
-    return 'http-equiv="refresh"' in head and 'name="robots" content="noindex' in head
+    return is_redirect_html(path.read_text(encoding="utf-8", errors="replace"))
 
 
 def feed_discovery_links() -> str:
@@ -675,10 +926,18 @@ def regenerate_index() -> None:
         for p in ANSWERS_DIR.glob("*.html")
         if p.name != "index.html" and not is_redirect_page(p)
     ]
+    reconciled = sum(reconcile_answer_microformats(page) for page in pages)
     cards = []
     for p in sorted(pages, key=lambda x: x.stem):
         title, app = parse_page_info(p)
-        cards.append(f'<article class="card third"><h2><a href="{SITE}/answers/{p.name}">{e(title)}</a></h2><p class="muted">Funnels to {e(app)}</p></article>')
+        cards.append(
+            '<article class="card third h-entry hentry">'
+            '<h2 class="p-name entry-title">'
+            f'<a class="u-url u-uid" rel="bookmark" '
+            f'href="{SITE}/answers/{p.name}">{e(title)}</a></h2>'
+            f'<p class="muted p-summary entry-summary">Funnels to {e(app)}</p>'
+            "</article>"
+        )
     canonical = f"{SITE}/answers/index.html"
     breadcrumb = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "iOS App Guide", "item": f"{SITE}/index.html"},
@@ -714,9 +973,12 @@ def regenerate_index() -> None:
 </script><script type="application/ld+json">
 {j(org)}
 </script>
-</head><body><header class="top"><div class="wrap nav"><a href="{SITE}/index.html">iOS App Guide</a><nav><a href="{SITE}/tools/">Free tools</a> · <a href="{SITE}/alternatives/">Alternatives</a> · <a href="{SITE}/about.html">About</a></nav></div></header><main><section class="hero wrap"><div class="eyebrow">Answer hub</div><h1>iOS app answer guides</h1><p class="lead">Practical, honest pages for high-intent questions: what to check, when a dedicated app helps, and which Alice iOS app fits the job.</p></section><section class="wrap"><h2>Topic guides</h2><p class="muted"><a href="{SITE}/passport-photos.html">Passport &amp; ID photo sizes by country</a> · <a href="{SITE}/resume-formats.html">Resume &amp; CV formats by country</a> · <a href="{SITE}/kids-learning.html">Kids learning apps</a> · <a href="{SITE}/photo-tools.html">iPhone photo tools</a> · <a href="{SITE}/focus-productivity.html">Focus &amp; productivity</a> · <a href="{SITE}/money-travel.html">Money &amp; travel</a> · <a href="{SITE}/sleep-wellbeing.html">Sleep &amp; wellbeing</a> · <a href="{SITE}/data/">Free open data</a></p></section><section class="wrap grid">{''.join(cards)}</section></main><footer class="footer"><div class="wrap">First-party iOS app guides published by Lumi Studio, the developer of every listed app.</div></footer></body></html>'''
+</head><body><div class="h-feed hfeed">{url_microformat(canonical, include_uid=False)}<header class="top"><div class="wrap nav"><a href="{SITE}/index.html">iOS App Guide</a><nav><a href="{SITE}/tools/">Free tools</a> · <a href="{SITE}/alternatives/">Alternatives</a> · <a href="{SITE}/about.html">About</a></nav></div></header><main><section class="hero wrap"><div class="eyebrow">Answer hub</div><h1 class="p-name site-title">iOS app answer guides</h1><p class="lead">Practical, honest pages for high-intent questions: what to check, when a dedicated app helps, and which Alice iOS app fits the job.</p></section><section class="wrap"><h2>Topic guides</h2><p class="muted"><a href="{SITE}/passport-photos.html">Passport &amp; ID photo sizes by country</a> · <a href="{SITE}/resume-formats.html">Resume &amp; CV formats by country</a> · <a href="{SITE}/kids-learning.html">Kids learning apps</a> · <a href="{SITE}/photo-tools.html">iPhone photo tools</a> · <a href="{SITE}/focus-productivity.html">Focus &amp; productivity</a> · <a href="{SITE}/money-travel.html">Money &amp; travel</a> · <a href="{SITE}/sleep-wellbeing.html">Sleep &amp; wellbeing</a> · <a href="{SITE}/data/">Free open data</a></p></section><section class="wrap grid">{''.join(cards)}</section></main><footer class="footer"><div class="wrap">{author_microformat()}First-party iOS app guides published by Lumi Studio, the developer of every listed app.</div></footer></div></body></html>'''
     (ANSWERS_DIR / "index.html").write_text(html_doc, encoding="utf-8")
-    print(f"INDEX {len(pages)} pages", flush=True)
+    print(
+        f"INDEX {len(pages)} pages; {reconciled} microformats reconciled",
+        flush=True,
+    )
 
 
 def write_sitemap() -> None:

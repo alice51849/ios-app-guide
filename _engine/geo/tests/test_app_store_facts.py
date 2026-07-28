@@ -174,8 +174,7 @@ class AppStoreFactsTests(unittest.TestCase):
                 },
                 schema["offers"],
             )
-            self.assertEqual(4.8, schema["aggregateRating"]["ratingValue"])
-            self.assertEqual(12, schema["aggregateRating"]["ratingCount"])
+            self.assertNotIn("aggregateRating", schema)
 
             fallback = (
                 pages / "bn-BD" / f"{key}.html"
@@ -275,11 +274,8 @@ class AppStoreFactsTests(unittest.TestCase):
                         f">{html.escape(str(detail['formatted_price']))}</data>",
                         source,
                     )
+                    self.assertNotIn("aggregateRating", schema)
                     if "rating_value" in detail:
-                        self.assertEqual(
-                            detail["rating_count"],
-                            schema["aggregateRating"]["ratingCount"],
-                        )
                         rating_value = f"{float(detail['rating_value']):.1f}"
                         self.assertIn(
                             f'value="{rating_value}">{rating_value}</data>/5',
@@ -290,8 +286,6 @@ class AppStoreFactsTests(unittest.TestCase):
                             f'{detail["rating_count"]}</data>',
                             source,
                         )
-                    else:
-                        self.assertNotIn("aggregateRating", schema)
         self.assertGreater(checked, 1200)
 
 

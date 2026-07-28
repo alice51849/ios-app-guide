@@ -24447,16 +24447,7 @@ class GeneratorTests(unittest.TestCase):
                 },
                 listed["offers"],
             )
-            self.assertEqual(
-                {
-                    "@type": "AggregateRating",
-                    "ratingValue": 4.9,
-                    "ratingCount": 12,
-                    "bestRating": 5,
-                    "worstRating": 1,
-                },
-                listed["aggregateRating"],
-            )
+            self.assertNotIn("aggregateRating", listed)
             self.assertNotIn("?", direct_store)
             with mock.patch.object(
                 build_pages_i18n,

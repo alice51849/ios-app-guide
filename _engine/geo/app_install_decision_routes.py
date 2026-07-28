@@ -919,17 +919,6 @@ def _structured_data(record: dict[str, Any]) -> dict[str, Any]:
             "url": str(record["app_store_url"]),
             "availability": "https://schema.org/InStock",
         }
-        if (
-            "rating_value" in storefront_facts
-            and "rating_count" in storefront_facts
-        ):
-            app["aggregateRating"] = {
-                "@type": "AggregateRating",
-                "ratingValue": float(storefront_facts["rating_value"]),
-                "ratingCount": int(storefront_facts["rating_count"]),
-                "bestRating": 5,
-                "worstRating": 1,
-            }
     app["additionalProperty"] = [
         {
             "@type": "PropertyValue",

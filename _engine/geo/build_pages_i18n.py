@@ -1695,14 +1695,6 @@ def localized_directory_schema_item(record):
             "url": record["store_url"],
             "availability": "https://schema.org/InStock",
         }
-        if "rating_value" in storefront and "rating_count" in storefront:
-            item["aggregateRating"] = {
-                "@type": "AggregateRating",
-                "ratingValue": storefront["rating_value"],
-                "ratingCount": storefront["rating_count"],
-                "bestRating": 5,
-                "worstRating": 1,
-            }
     return item
 
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Publish verified storefront price and rating facts on localized app pages."""
+"""Publish verified storefront price and visible rating facts on app pages."""
 
 from __future__ import annotations
 
@@ -105,20 +105,6 @@ def _offer(detail: dict[str, object], store_url: str) -> dict[str, object]:
     }
 
 
-def _aggregate_rating(
-    detail: dict[str, object],
-) -> dict[str, object] | None:
-    if "rating_value" not in detail or "rating_count" not in detail:
-        return None
-    return {
-        "@type": "AggregateRating",
-        "ratingValue": float(detail["rating_value"]),
-        "ratingCount": int(detail["rating_count"]),
-        "bestRating": 5,
-        "worstRating": 1,
-    }
-
-
 def _update_schema(
     source: str,
     path: Path,
@@ -156,14 +142,11 @@ def _update_schema(
     before = json.dumps(target, ensure_ascii=False, sort_keys=True)
     if detail is None:
         target.pop("offers", None)
-        target.pop("aggregateRating", None)
     else:
         target["offers"] = _offer(detail, store_url)
-        rating = _aggregate_rating(detail)
-        if rating is None:
-            target.pop("aggregateRating", None)
-        else:
-            target["aggregateRating"] = rating
+    # App Store ratings remain visibly attributed, but ratings aggregated from
+    # another website must not be emitted as review structured data.
+    target.pop("aggregateRating", None)
     after = json.dumps(target, ensure_ascii=False, sort_keys=True)
     if before == after:
         return source

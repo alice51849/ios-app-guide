@@ -38,6 +38,7 @@ input,select,button{font:inherit}input[type=file],input[type=number],select{widt
 <link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
 <link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
 <link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 </head>
 <body>
 <header class="top"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/index.html">iOS App Guide</a><nav class="nav-links"><a href="https://alice51849.github.io/ios-app-guide/tools/index.html">Free tools</a><a href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/private-passport-photo-print-sheet-maker.html">繁體中文</a></nav></div></header>
@@ -506,7 +507,9 @@ printButton.addEventListener("click",()=>{
   const popup=window.open("","_blank");
   if(!popup){status.textContent=COPY.popup_status;return;}
   const data=canvas.toDataURL("image/png");
-  popup.document.write(`<!DOCTYPE html><html><head><title>${COPY.heading}</title><style>@page{size:${currentLayout.paperWidth}mm ${currentLayout.paperHeight}mm;margin:0}html,body{margin:0;padding:0;width:${currentLayout.paperWidth}mm;height:${currentLayout.paperHeight}mm}img{display:block;width:${currentLayout.paperWidth}mm;height:${currentLayout.paperHeight}mm}</style></head><body><img src="${data}" alt=""></body></html>`);
+  popup.document.write(`<!DOCTYPE html><html><head><title>${COPY.heading}</title><style>@page{size:${currentLayout.paperWidth}mm ${currentLayout.paperHeight}mm;margin:0}html,body{margin:0;padding:0;width:${currentLayout.paperWidth}mm;height:${currentLayout.paperHeight}mm}img{display:block;width:${currentLayout.paperWidth}mm;height:${currentLayout.paperHeight}mm}</style>
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
+</head><body><img src="${data}" alt=""></body></html>`);
   popup.document.close();
   popup.focus();
   setTimeout(()=>popup.print(),350);

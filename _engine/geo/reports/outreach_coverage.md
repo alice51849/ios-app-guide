@@ -2,12 +2,12 @@
 
 > Factual owned-asset coverage only. This does not pretend to measure live AI recommendations.
 
-Public apps: **33** · Average coverage: **93.9%**
+Public apps: **33** · Average coverage: **94.0%**
 
 | App | Coverage | Answers | Social languages | Alternatives | Hub / guide / story |
 |---|---:|---:|---:|---:|---|
-| HoursTag Lite | 74.6% | 16/17 | 1 | 0 | hub / guide / story |
 | Aim990 Plus | 76.7% | 17/17 | 1 | 0 | hub / guide / story |
+| HoursTag Lite | 76.7% | 17/17 | 1 | 0 | hub / guide / story |
 | Mask My File | 76.7% | 17/17 | 1 | 0 | hub / guide / story |
 | Mochi DoneStamp | 76.7% | 17/17 | 1 | 0 | hub / guide / story |
 | WiFi Aid | 76.7% | 17/17 | 1 | 0 | hub / guide / story |

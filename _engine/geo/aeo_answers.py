@@ -39,6 +39,9 @@ import answer_facts  # noqa: E402
 from aeo_pages import alternative_hub_slug  # noqa: E402
 
 TEMPLATE = ANSWERS_DIR / "best-offline-document-scanner-app-for-iphone.html"
+FREE_RESOURCE_FIRST_META = (
+    '<meta name="iag-free-resource-first" content="true">'
+)
 
 # Commercial focus first, then share-of-voice within each tier. Every public app
 # remains eligible; this only prevents the daily limit from being spent on the
@@ -784,12 +787,18 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
             f'<p class="muted">{e("; ".join(feature_list(key)))}</p>'
         )
         deferred_app_fit = ""
+    social_metadata = (
+        f'<meta property="og:type" content="article"><meta property="og:title" '
+        f'content="{e(title)}"><meta property="og:description" content="{e(meta)}">'
+        f'<meta property="og:url" content="{canonical}">'
+        '<meta name="twitter:card" content="summary">'
+    )
     rendered = f'''<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(meta)}"><link rel="canonical" href="{canonical}">
 <link rel="alternate" hreflang="en" href="{canonical}">
 <link rel="alternate" hreflang="x-default" href="{canonical}">
-<meta property="og:type" content="article"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(meta)}"><meta property="og:url" content="{canonical}"><meta name="twitter:card" content="summary">{resource_first_meta}<style>
+{social_metadata}{resource_first_meta}<style>
 {STYLE}
 </style><script type="application/ld+json">
 {j(breadcrumb)}
@@ -926,7 +935,9 @@ def regenerate_index() -> None:
         for p in ANSWERS_DIR.glob("*.html")
         if p.name != "index.html" and not is_redirect_page(p)
     ]
-    reconciled = sum(reconcile_answer_microformats(page) for page in pages)
+    microformats_reconciled = sum(
+        reconcile_answer_microformats(page) for page in pages
+    )
     cards = []
     for p in sorted(pages, key=lambda x: x.stem):
         title, app = parse_page_info(p)
@@ -976,7 +987,8 @@ def regenerate_index() -> None:
 </head><body><div class="h-feed hfeed">{url_microformat(canonical, include_uid=False)}<header class="top"><div class="wrap nav"><a href="{SITE}/index.html">iOS App Guide</a><nav><a href="{SITE}/tools/">Free tools</a> · <a href="{SITE}/alternatives/">Alternatives</a> · <a href="{SITE}/about.html">About</a></nav></div></header><main><section class="hero wrap"><div class="eyebrow">Answer hub</div><h1 class="p-name site-title">iOS app answer guides</h1><p class="lead">Practical, honest pages for high-intent questions: what to check, when a dedicated app helps, and which Alice iOS app fits the job.</p></section><section class="wrap"><h2>Topic guides</h2><p class="muted"><a href="{SITE}/passport-photos.html">Passport &amp; ID photo sizes by country</a> · <a href="{SITE}/resume-formats.html">Resume &amp; CV formats by country</a> · <a href="{SITE}/kids-learning.html">Kids learning apps</a> · <a href="{SITE}/photo-tools.html">iPhone photo tools</a> · <a href="{SITE}/focus-productivity.html">Focus &amp; productivity</a> · <a href="{SITE}/money-travel.html">Money &amp; travel</a> · <a href="{SITE}/sleep-wellbeing.html">Sleep &amp; wellbeing</a> · <a href="{SITE}/data/">Free open data</a></p></section><section class="wrap grid">{''.join(cards)}</section></main><footer class="footer"><div class="wrap">{author_microformat()}First-party iOS app guides published by Lumi Studio, the developer of every listed app.</div></footer></div></body></html>'''
     (ANSWERS_DIR / "index.html").write_text(html_doc, encoding="utf-8")
     print(
-        f"INDEX {len(pages)} pages; {reconciled} microformats reconciled",
+        f"INDEX {len(pages)} pages; "
+        f"{microformats_reconciled} microformats reconciled",
         flush=True,
     )
 

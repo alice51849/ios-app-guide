@@ -57,6 +57,7 @@ APP_STORE_SHARE_BLOCK_RE = re.compile(
     rf"{re.escape(APP_STORE_SHARE_BLOCK_END)}\s*",
     flags=re.DOTALL,
 )
+ANSWER_SOCIAL_PREVIEW_START = "<!-- answer-social-preview:start -->"
 APP_DECISION_CARD_BLOCK_RE = re.compile(
     r"\s*<!-- app-decision-card:start -->.*?"
     r"<!-- app-decision-card:end -->\s*",
@@ -126,16 +127,8 @@ def _add_single_app_targets(
     live_ids: set[str],
 ) -> None:
     for path in paths:
-        source = _unmanaged_source(path)
-        if FREE_RESOURCE_FIRST_META in source:
-            continue
-        app_ids = {
-            match.group("id") for match in APP_STORE_ANCHOR_RE.finditer(source)
-        }
-        if len(app_ids) != 1:
-            continue
-        app_id = next(iter(app_ids))
-        if app_id not in live_ids:
+        app_id = single_app_id(path, live_ids)
+        if app_id is None:
             continue
         existing = targets.get(path)
         if existing and existing != app_id:
@@ -144,6 +137,19 @@ def _add_single_app_targets(
                 f"{existing}, {app_id}"
             )
         targets[path] = app_id
+
+
+def single_app_id(path: Path, live_ids: set[str]) -> str | None:
+    source = _unmanaged_source(path)
+    if FREE_RESOURCE_FIRST_META in source:
+        return None
+    app_ids = {
+        match.group("id") for match in APP_STORE_ANCHOR_RE.finditer(source)
+    }
+    if len(app_ids) != 1:
+        return None
+    app_id = next(iter(app_ids))
+    return app_id if app_id in live_ids else None
 
 
 def build_targets(
@@ -219,14 +225,17 @@ def ensure_banner(path: Path, app_id: str) -> bool:
     if FREE_RESOURCE_FIRST_META in cleaned:
         return _write_if_changed(path, cleaned)
     linkset_match = gen_linkset.DISCOVERY_RE.search(cleaned)
-    social_index = cleaned.find("<!-- social-preview:start -->")
+    social_indices = (
+        cleaned.find("<!-- social-preview:start -->"),
+        cleaned.find(ANSWER_SOCIAL_PREVIEW_START),
+    )
     feed_match = gen_linkset.FEED_DISCOVERY_RE.search(cleaned)
     identity_match = MOBILE_APP_IDENTITY_BLOCK_RE.search(cleaned)
     head_indices = [
         index
         for index in (
             linkset_match.start() if linkset_match else -1,
-            social_index,
+            *social_indices,
             feed_match.start() if feed_match else -1,
             identity_match.start() if identity_match else -1,
             cleaned.find(APP_STORE_QR_STYLE_BLOCK_START),

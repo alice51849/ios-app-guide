@@ -805,6 +805,7 @@ class GeneratorTests(unittest.TestCase):
                     "oembed": 51,
                     "metadata_pages": 1,
                     "localized_metadata_pages": 50,
+                    "answer_metadata_pages": 0,
                     "hero_pages": 1,
                     "changed_files": 110,
                 },
@@ -9181,6 +9182,9 @@ class GeneratorTests(unittest.TestCase):
             page.index("Download the free Bopomofo EPUB"),
             page.index("Get Lumi Bopomofo on the App Store"),
         )
+        self.assertNotIn(gen_social_previews.ANSWER_BLOCK_START, page)
+        self.assertNotIn('property="og:image"', page)
+        self.assertIn('name="twitter:card" content="summary"', page)
 
         mapping = json.loads(
             (
@@ -9301,6 +9305,11 @@ class GeneratorTests(unittest.TestCase):
             'class="p-name p-org fn org" value="Lumi Studio"',
             page,
         )
+        self.assertNotIn(gen_social_previews.ANSWER_BLOCK_START, page)
+        self.assertNotIn('property="og:image"', page)
+        self.assertIn('name="twitter:card" content="summary"', page)
+        self.assertNotIn('"@type": "Article"', page)
+        self.assertNotIn('"datePublished"', page)
 
     def test_answer_microformats_reconcile_legacy_body_and_skip_redirect(self):
         legacy = (
@@ -9348,6 +9357,210 @@ class GeneratorTests(unittest.TestCase):
             redirect,
             aeo_answers.microformat_answer_html(redirect),
         )
+
+    def test_answer_social_preview_reconciles_once_and_skips_unsafe_pages(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            answers = pages / "answers"
+            image = pages / "social" / "img" / "snapport-share.jpg"
+            answers.mkdir(parents=True)
+            image.parent.mkdir(parents=True)
+            Image.new("RGB", gen_social_previews.CARD_SIZE, (42, 67, 101)).save(
+                image,
+                "JPEG",
+            )
+            path = answers / "private-passport-photo.html"
+            canonical = (
+                f"{aeo_answers.SITE}/answers/private-passport-photo.html"
+            )
+            legacy = (
+                "<html lang=\"en\"><head><title>Private passport photo</title>"
+                '<meta name="description" content="A private passport photo guide.">'
+                f'<link rel="canonical" href="{canonical}">'
+                '<meta property="og:type" content="article">'
+                '<meta property="og:title" content="Old title">'
+                '<meta property="og:description" content="Old description">'
+                f'<meta property="og:url" content="{canonical}">'
+                '<meta name="twitter:card" content="summary">'
+                "<style></style></head><body><main>"
+                "<h1>Private passport photo</h1>"
+                '<a href="https://apps.apple.com/app/id'
+                f'{aeo_answers.APPSTORE["snapport"]}">Snapport</a>'
+                "</main></body></html>"
+            )
+            path.write_text(legacy, encoding="utf-8")
+            live_keys = {"snapport", "scanto"}
+            app_names = {
+                key: aeo_answers.APPS[key]["name"] for key in live_keys
+            }
+            first = gen_social_previews.reconcile_answer_metadata(
+                pages,
+                live_keys,
+                app_names,
+            )
+            second = gen_social_previews.reconcile_answer_metadata(
+                pages,
+                live_keys,
+                app_names,
+            )
+            self.assertEqual(
+                {"answer_metadata_pages": 1, "changed_files": 1},
+                first,
+            )
+            self.assertEqual(
+                {"answer_metadata_pages": 1, "changed_files": 0},
+                second,
+            )
+            self.assertTrue(
+                gen_smart_app_banners.ensure_banner(
+                    path,
+                    str(aeo_answers.APPSTORE["snapport"]),
+                )
+            )
+            source_with_banner = path.read_text(encoding="utf-8")
+            stable_mtime = path.stat().st_mtime_ns
+            stable = gen_social_previews.reconcile_answer_metadata(
+                pages,
+                live_keys,
+                app_names,
+            )
+            source = path.read_text(encoding="utf-8")
+            self.assertEqual(
+                {"answer_metadata_pages": 1, "changed_files": 0},
+                stable,
+            )
+            self.assertEqual(source_with_banner, source)
+            self.assertEqual(stable_mtime, path.stat().st_mtime_ns)
+            self.assertEqual(
+                1,
+                source.count(gen_social_previews.ANSWER_BLOCK_START),
+            )
+            self.assertEqual(1, source.count('property="og:title"'))
+            self.assertIn(
+                'property="og:title" content="Old title"',
+                source,
+            )
+            self.assertEqual(1, source.count('name="twitter:card"'))
+            self.assertIn(
+                'name="twitter:card" content="summary_large_image"',
+                source,
+            )
+            self.assertIn(
+                f"{aeo_answers.SITE}/social/img/snapport-share.jpg",
+                source,
+            )
+            self.assertLess(
+                source.index("<!-- smart-app-banner:end -->"),
+                source.index(gen_social_previews.ANSWER_BLOCK_START),
+            )
+
+            free_path = answers / "free-resource.html"
+            free_canonical = (
+                f"{aeo_answers.SITE}/answers/free-resource.html"
+            )
+            excluded = legacy.replace(canonical, free_canonical).replace(
+                "<style>",
+                f"{aeo_answers.FREE_RESOURCE_FIRST_META}<style>",
+            )
+            free_path.write_text(excluded, encoding="utf-8")
+            ambiguous_path = answers / "comparison.html"
+            ambiguous_canonical = (
+                f"{aeo_answers.SITE}/answers/comparison.html"
+            )
+            ambiguous = legacy.replace(
+                canonical,
+                ambiguous_canonical,
+            ).replace(
+                "</main>",
+                (
+                    '<a href="https://apps.apple.com/app/id'
+                    f'{aeo_answers.APPSTORE["scanto"]}">ScanTo</a></main>'
+                ),
+            )
+            ambiguous_path.write_text(ambiguous, encoding="utf-8")
+            excluded_result = gen_social_previews.reconcile_answer_metadata(
+                pages,
+                live_keys,
+                app_names,
+            )
+            self.assertEqual(
+                {"answer_metadata_pages": 1, "changed_files": 0},
+                excluded_result,
+            )
+            self.assertEqual(excluded, free_path.read_text(encoding="utf-8"))
+            self.assertEqual(
+                ambiguous,
+                ambiguous_path.read_text(encoding="utf-8"),
+            )
+
+            conflicting_path = answers / "conflicting-image.html"
+            conflicting_canonical = (
+                f"{aeo_answers.SITE}/answers/conflicting-image.html"
+            )
+            conflicting = legacy.replace(
+                canonical,
+                conflicting_canonical,
+            ).replace(
+                "<style>",
+                '<meta property="og:image" '
+                'content="https://example.com/unmanaged.jpg"><style>',
+            )
+            conflicting_path.write_text(conflicting, encoding="utf-8")
+            with self.assertRaisesRegex(
+                ValueError,
+                "unmanaged Open Graph image",
+            ):
+                gen_social_previews.reconcile_answer_metadata(
+                    pages,
+                    live_keys,
+                    app_names,
+                )
+            conflicting_path.unlink()
+
+            path.write_text(
+                source.replace(
+                    "<style>",
+                    f"{aeo_answers.FREE_RESOURCE_FIRST_META}<style>",
+                ),
+                encoding="utf-8",
+            )
+            revoked = gen_social_previews.reconcile_answer_metadata(
+                pages,
+                live_keys,
+                app_names,
+            )
+            revoked_source = path.read_text(encoding="utf-8")
+            self.assertEqual(
+                {"answer_metadata_pages": 0, "changed_files": 1},
+                revoked,
+            )
+            self.assertNotIn(
+                gen_social_previews.ANSWER_BLOCK_START,
+                revoked_source,
+            )
+            self.assertNotIn('property="og:image"', revoked_source)
+            self.assertIn(
+                'name="twitter:card" content="summary"',
+                revoked_source,
+            )
+
+    def test_answer_social_images_cover_every_live_app(self):
+        live_keys = appstore_live.live_app_keys(
+            aeo_answers.APPSTORE,
+            aeo_answers.PAGES_ROOT,
+            refresh=False,
+        )
+        self.assertGreater(len(live_keys), 20)
+        for key in live_keys:
+            url = gen_social_previews.verified_share_image_url(
+                key,
+                aeo_answers.PAGES_ROOT,
+                aeo_answers.SITE,
+            )
+            self.assertEqual(
+                f"{aeo_answers.SITE}/social/img/{key}-share.jpg",
+                url,
+            )
 
     def test_zhuyin_library_catalog_is_complete_verifiable_and_deterministic(self):
         with tempfile.TemporaryDirectory() as directory:

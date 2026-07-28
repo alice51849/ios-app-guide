@@ -36,6 +36,7 @@ from app_store_storefronts import (  # noqa: E402
     verified_app_store_url,
 )
 import gen_linkset  # noqa: E402
+import gen_smart_app_banners  # noqa: E402
 from official_locales import (  # noqa: E402
     OFFICIAL_LOCALES,
     OPEN_GRAPH_LOCALES,
@@ -76,6 +77,13 @@ LINKSET_TAG_RE = re.compile(
 )
 BLOCK_RE = re.compile(
     rf"\s*{re.escape(BLOCK_START)}.*?{re.escape(BLOCK_END)}\s*",
+    flags=re.DOTALL,
+)
+ANSWER_BLOCK_START = "<!-- answer-social-preview:start -->"
+ANSWER_BLOCK_END = "<!-- answer-social-preview:end -->"
+ANSWER_BLOCK_RE = re.compile(
+    rf"\s*{re.escape(ANSWER_BLOCK_START)}.*?"
+    rf"{re.escape(ANSWER_BLOCK_END)}\s*",
     flags=re.DOTALL,
 )
 HERO_START = "<!-- app-preview-hero:start -->"
@@ -580,6 +588,220 @@ def primary_image_schema(
     }
 
 
+def verified_share_image_url(
+    key: str,
+    pages: Path,
+    site: str = SITE,
+) -> str:
+    if key not in APPSTORE:
+        raise ValueError(f"Unknown social preview app key: {key}")
+    path = pages / "social" / "img" / f"{key}-share.jpg"
+    if not path.is_file() or path.stat().st_size == 0:
+        raise FileNotFoundError(f"Social preview image is missing: {path}")
+    with Image.open(path) as image:
+        if image.format != "JPEG" or image.size != CARD_SIZE:
+            raise ValueError(
+                f"Social preview image must be a {CARD_SIZE[0]}x"
+                f"{CARD_SIZE[1]} JPEG: {path}"
+            )
+    return f"{site}/social/img/{key}-share.jpg"
+
+
+def answer_metadata_block(
+    key: str,
+    app_name: str,
+    image_url: str,
+    site: str = SITE,
+) -> str:
+    expected_image_url = f"{site}/social/img/{key}-share.jpg"
+    if key not in APPSTORE or image_url != expected_image_url:
+        raise ValueError(f"Invalid answer social preview image: {image_url}")
+    image_alt = f"{app_name} iOS app preview"
+    esc = lambda value: html.escape(str(value), quote=True)
+    return "\n".join(
+        (
+            ANSWER_BLOCK_START,
+            f'<meta property="og:image" content="{esc(image_url)}">',
+            f'<meta property="og:image:secure_url" content="{esc(image_url)}">',
+            '<meta property="og:image:type" content="image/jpeg">',
+            f'<meta property="og:image:width" content="{CARD_SIZE[0]}">',
+            f'<meta property="og:image:height" content="{CARD_SIZE[1]}">',
+            f'<meta property="og:image:alt" content="{esc(image_alt)}">',
+            f'<meta name="robots" content="{ROBOTS_DIRECTIVE}">',
+            '<meta name="twitter:card" content="summary_large_image">',
+            f'<meta name="twitter:image" content="{esc(image_url)}">',
+            f'<meta name="twitter:image:alt" content="{esc(image_alt)}">',
+            ANSWER_BLOCK_END,
+        )
+    )
+
+
+ANSWER_OG_FIELDS = {
+    "image",
+    "image:secure_url",
+    "image:type",
+    "image:width",
+    "image:height",
+    "image:alt",
+}
+ANSWER_TWITTER_FIELDS = {"card", "image", "image:alt"}
+
+
+def _tag_attribute(tag: str, name: str) -> str | None:
+    match = re.search(
+        rf"\b{re.escape(name)}\s*=\s*([\"'])(.*?)\1",
+        tag,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    return html.unescape(match.group(2)) if match else None
+
+
+def _strip_answer_social_tags(document: str) -> str:
+    allowed_robots = {
+        token.strip().casefold() for token in ROBOTS_DIRECTIVE.split(",")
+    }
+
+    def replace(match: re.Match[str]) -> str:
+        tag = match.group(0)
+        property_name = (_tag_attribute(tag, "property") or "").casefold()
+        name = (_tag_attribute(tag, "name") or "").casefold()
+        if (
+            property_name.startswith("og:")
+            and property_name.removeprefix("og:") in ANSWER_OG_FIELDS
+        ):
+            raise ValueError(
+                "Answer page has unmanaged Open Graph image metadata"
+            )
+        if (
+            name.startswith("twitter:")
+            and name.removeprefix("twitter:") in ANSWER_TWITTER_FIELDS
+        ):
+            content = (_tag_attribute(tag, "content") or "").casefold()
+            if name == "twitter:card" and content == "summary":
+                return ""
+            raise ValueError(
+                f"Answer page has unmanaged {name} metadata"
+            )
+        if name == "robots":
+            directives = {
+                token.strip().casefold()
+                for token in (_tag_attribute(tag, "content") or "").split(",")
+                if token.strip()
+            }
+            if directives - allowed_robots:
+                raise ValueError(
+                    "Answer social preview has conflicting robots directives: "
+                    f"{sorted(directives - allowed_robots)}"
+                )
+            return ""
+        return tag
+
+    return re.sub(
+        r"<meta\b[^>]*>",
+        replace,
+        document,
+        flags=re.IGNORECASE,
+    )
+
+
+def _answer_metadata_insert_index(document: str) -> int:
+    head_end = document.lower().index("</head>")
+    banner_end = document.find(gen_smart_app_banners.BLOCK_END)
+    if 0 <= banner_end < head_end:
+        return banner_end + len(gen_smart_app_banners.BLOCK_END)
+    style_index = document.lower().find("<style", 0, head_end)
+    return style_index if style_index >= 0 else head_end
+
+
+def ensure_answer_metadata(
+    path: Path,
+    key: str,
+    app_name: str,
+    pages: Path,
+    site: str = SITE,
+) -> bool:
+    canonical = f"{site}/answers/{path.name}"
+    _guide_metadata(path, canonical)
+    source = path.read_text(encoding="utf-8")
+    image_url = verified_share_image_url(key, pages, site)
+    metadata = answer_metadata_block(
+        key,
+        app_name,
+        image_url,
+        site,
+    )
+    cleaned = ANSWER_BLOCK_RE.sub("\n", source)
+    cleaned = _strip_answer_social_tags(cleaned)
+    insert_index = _answer_metadata_insert_index(cleaned)
+    updated = (
+        cleaned[:insert_index].rstrip()
+        + "\n"
+        + metadata
+        + "\n"
+        + cleaned[insert_index:].lstrip()
+    )
+    return _write_text_if_changed(path, updated)
+
+
+def remove_answer_metadata(path: Path) -> bool:
+    source = path.read_text(encoding="utf-8")
+    if not ANSWER_BLOCK_RE.search(source):
+        return False
+    cleaned = _strip_answer_social_tags(ANSWER_BLOCK_RE.sub("\n", source))
+    has_twitter_card = any(
+        (_tag_attribute(tag, "name") or "").casefold() == "twitter:card"
+        for tag in re.findall(r"<meta\b[^>]*>", cleaned, flags=re.IGNORECASE)
+    )
+    if not has_twitter_card:
+        insert_index = _answer_metadata_insert_index(cleaned)
+        cleaned = (
+            cleaned[:insert_index].rstrip()
+            + '\n<meta name="twitter:card" content="summary">\n'
+            + cleaned[insert_index:].lstrip()
+        )
+    return _write_text_if_changed(path, cleaned)
+
+
+def reconcile_answer_metadata(
+    pages: Path,
+    live_keys: set[str],
+    app_names: dict[str, str],
+    site: str = SITE,
+) -> dict[str, int]:
+    answers = pages / "answers"
+    paths = {
+        path.resolve()
+        for path in answers.glob("*.html")
+        if path.name != "index.html"
+    } if answers.is_dir() else set()
+    id_to_key = {str(APPSTORE[key]): key for key in live_keys}
+    if len(id_to_key) != len(live_keys):
+        raise ValueError("Answer social preview App Store IDs must be unique")
+    live_ids = set(id_to_key)
+    targets: dict[Path, str] = {}
+    for path in paths:
+        app_id = gen_smart_app_banners.single_app_id(path, live_ids)
+        if app_id is not None:
+            targets[path] = id_to_key[app_id]
+    changed = 0
+    for path, key in sorted(targets.items()):
+        changed += int(
+            ensure_answer_metadata(
+                path,
+                key,
+                app_names[key],
+                pages,
+                site,
+            )
+        )
+    for path in sorted(paths - set(targets)):
+        changed += int(remove_answer_metadata(path))
+    return {
+        "answer_metadata_pages": len(targets),
+        "changed_files": changed,
+    }
+
+
 def _json_ld(document: dict[str, object]) -> str:
     return json.dumps(
         document,
@@ -946,8 +1168,10 @@ def generate(
     }
     expected_localized_pages: set[Path] = set()
     localized_metadata_pages = 0
+    app_names: dict[str, str] = {}
     for record in records:
         key = record["key"]
+        app_names[key] = record["name"]
         guide_path = pages / "guides" / f"{key}.html"
         title, description = _guide_metadata(guide_path, record["guide"])
         poster_path = gen_linkset._owned_path(record["poster"], pages, site)
@@ -1066,6 +1290,13 @@ def generate(
             )
             localized_metadata_pages += 1
 
+    answer_result = reconcile_answer_metadata(
+        pages,
+        set(keys),
+        app_names,
+        site,
+    )
+    changed += answer_result["changed_files"]
     live_key_set = set(keys)
     guides_dir = pages / "guides"
     for stale in guides_dir.glob("*.html") if guides_dir.is_dir() else ():
@@ -1113,6 +1344,7 @@ def generate(
         "oembed": len(oembed_paths),
         "metadata_pages": len(records),
         "localized_metadata_pages": localized_metadata_pages,
+        "answer_metadata_pages": answer_result["answer_metadata_pages"],
         "hero_pages": len(records),
         "changed_files": changed,
     }
@@ -1143,6 +1375,7 @@ def main() -> None:
         f"{result['apps']} apps, {result['cards']} cards, "
         f"{result['oembed']} oEmbed responses, "
         f"{result['metadata_pages']} metadata pages, "
+        f"{result['answer_metadata_pages']} answer metadata pages, "
         f"{result['localized_metadata_pages']} localized metadata pages, "
         f"{result['hero_pages']} visible hero pages, "
         f"{result['changed_files']} files updated"

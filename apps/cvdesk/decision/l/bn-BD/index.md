@@ -2,7 +2,7 @@
 title: "সেরা রিজিউম বিল্ডার অ্যাপ ক্যারিয়ার পরিবর্তনকারীদের জন্য ২০২৬"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/bn-BD/index.html"
-modified: "2026-07-27"
+modified: "2026-07-28"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

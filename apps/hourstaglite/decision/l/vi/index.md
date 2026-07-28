@@ -2,7 +2,7 @@
 title: "HoursTag Lite — Xem giá thực của mọi thứ | iOS App"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/vi/index.html"
-modified: "2026-07-27"
+modified: "2026-07-28"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,8 +20,9 @@ HoursTag Lite - Xem giá thực của mọi thứ Mỗi giao dịch tốn hàng 
 - Riêng tư / trên thiết bị
 - Tiện ích
 - Apple Watch
+- App Store · Miễn phí
 
-[Tải HoursTag Lite trên App Store](https://apps.apple.com/app/id6794039979)
+[Tải HoursTag Lite trên App Store](https://apps.apple.com/vn/app/id6794039979)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/hourstaglite.html)
 

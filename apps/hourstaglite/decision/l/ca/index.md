@@ -2,7 +2,7 @@
 title: "HoursTag Lite — Prisma de valor | iOS App"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ca/index.html"
-modified: "2026-07-27"
+modified: "2026-07-28"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,8 +20,9 @@ HoursTag Lite - Veure el preu real de les coses Cada compra costa hores de la te
 - Privat / en el dispositiu
 - Widget
 - Apple Watch
+- App Store · Gratis
 
-[Descarrega HoursTag Lite a l’App Store](https://apps.apple.com/app/id6794039979)
+[Descarrega HoursTag Lite a l’App Store](https://apps.apple.com/es/app/id6794039979)
 
 [Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/hourstaglite.html)
 

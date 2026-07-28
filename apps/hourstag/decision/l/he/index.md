@@ -2,7 +2,7 @@
 title: "האפליקציה הטובה ביותר להוצאה מודעת לעצירת קניות אימפולסיביות לאייפון"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/he/index.html"
-modified: "2026-07-27"
+modified: "2026-07-28"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

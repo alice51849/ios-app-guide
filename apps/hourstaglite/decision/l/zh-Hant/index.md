@@ -2,7 +2,7 @@
 title: "HoursTag Lite — 看見每樣東西的真實代價 | iOS App"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/zh-Hant/index.html"
-modified: "2026-07-27"
+modified: "2026-07-28"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,8 +20,9 @@ HoursTag Lite - 看見每樣東西的真實代價 每一筆花費，都耗掉你
 - 隱私優先／裝置端
 - 主畫面小工具
 - Apple Watch
+- App Store · 免費
 
-[在 App Store 取得 HoursTag Lite](https://apps.apple.com/app/id6794039979)
+[在 App Store 取得 HoursTag Lite](https://apps.apple.com/tw/app/id6794039979)
 
 [閱讀完整指南](https://alice51849.github.io/ios-app-guide/zh-Hant/hourstaglite.html)
 

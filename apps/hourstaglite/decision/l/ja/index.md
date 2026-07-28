@@ -2,7 +2,7 @@
 title: "HoursTag Lite — モノの本当の値段が見える | iOS App"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ja/index.html"
-modified: "2026-07-27"
+modified: "2026-07-28"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,8 +20,9 @@ HoursTag Lite - モノの本当の値段が見える 買い物はすべて、あ
 - プライベート／端末内
 - ウィジェット
 - Apple Watch
+- App Store · 無料
 
-[App Store で HoursTag Lite を入手](https://apps.apple.com/app/id6794039979)
+[App Store で HoursTag Lite を入手](https://apps.apple.com/jp/app/id6794039979)
 
 [完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/hourstaglite.html)
 

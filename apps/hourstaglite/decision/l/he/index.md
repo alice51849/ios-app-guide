@@ -2,7 +2,7 @@
 title: "HoursTag Lite — ראה את המחיר האמיתי של דברים | iOS App"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/he/index.html"
-modified: "2026-07-27"
+modified: "2026-07-28"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,8 +20,9 @@ HoursTag Lite - ראה את המחיר האמיתי של דברים כל רכי�
 - פרטי / במכשיר
 - וידג'ט
 - Apple Watch
+- App Store · בחינם
 
-[הורידו את HoursTag Lite מה-App Store](https://apps.apple.com/app/id6794039979)
+[הורידו את HoursTag Lite מה-App Store](https://apps.apple.com/il/app/id6794039979)
 
 [קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/hourstaglite.html)
 

@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "or-IN",
-  "dateModified": "2026-07-27",
-  "content_digest": "79c3df7cb7671923558759a9775907f8cbab8934d4e65a6e705886e2a8a502e9",
-  "generation_digest": "ade0335394704d46b75dc2c6fb2124c5f57eae4ad98e63ba9f0fed35fe52b31d",
+  "dateModified": "2026-07-28",
+  "content_digest": "53ade8ce5ef308e869e8cfcae8607ed452db56f6a016cc857a04e92dad7c6d16",
+  "generation_digest": "700fefc4317ae03b70e5d28103baf7c0dd7d93fb51fed5125fc99094a5282cd7",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -545,7 +545,8 @@
         "କୌଣସି ଟ୍ରାକିଂ ନାହିଁ",
         "ଗୋପନୀୟ / ଉପକରଣରେ",
         "ଉଇଜେଟ",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · ମାଗଣା"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/or-IN/index.html",
@@ -553,9 +554,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/or-IN.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/in/app/id6794039979",
       "app_store_cta_label": "App Store ରୁ HoursTag Lite ପାଆନ୍ତୁ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ମାଗଣା"
+      },
       "guide_cta_label": "ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ",
       "publisher_disclosure": "ଏହା Lumi Studio ଦ୍ୱାରା ପ୍ରକାଶିତ ପ୍ରଥମ-ପକ୍ଷ ସାମଗ୍ରୀ, ଯାହାରେ ସମସ୍ତ ତାଲିକାଭୁକ୍ତ ଆପ୍ସର ବିକାଶକ ଅଛନ୍ତି।",
       "source_persona_query": "best app to convert prices into work hours before buying",

@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-27",
-  "content_digest": "4ef0714cb4faa5eb798198f17e95f393348ac4ed24e078abe436cd3ac3a30e94",
+  "date_modified": "2026-07-28",
+  "content_digest": "ba6bbf639d379de1b95dc6b88ea33da2b97cf2eb28f8cdc2e16b87fc49e3abb2",
   "locale": "or-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -393,9 +393,15 @@
         "widget": true,
         "apple_watch": true
       },
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/in/app/id6794039979",
       "guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/hourstaglite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ମାଗଣା",
+        "storefront_url": "https://apps.apple.com/in/app/id6794039979"
+      }
     },
     {
       "key": "lockhour",

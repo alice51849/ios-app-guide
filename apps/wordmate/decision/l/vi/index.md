@@ -2,7 +2,7 @@
 title: "ứng dụng học từ vựng tốt nhất cho người đi làm bận rộn có Apple Watch"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/vi/index.html"
-modified: "2026-07-27"
+modified: "2026-07-28"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"

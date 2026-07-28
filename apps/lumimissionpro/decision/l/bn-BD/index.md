@@ -2,7 +2,7 @@
 title: "শিশুদের জন্য সেরা সম্পূর্ণ সকাল ও ঘুমের রুটিন অ্যাপ"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/bn-BD/index.html"
-modified: "2026-07-27"
+modified: "2026-07-28"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -1,8 +1,8 @@
 {
   "generated_on": "2026-07-27",
   "metric": "owned outreach asset coverage (not AI recommendation share-of-voice)",
-  "public_apps": 32,
-  "average_public_coverage": 0.945,
+  "public_apps": 33,
+  "average_public_coverage": 0.929,
   "rows": [
     {
       "key": "snapport",
@@ -717,6 +717,25 @@
       "appstore": "https://apps.apple.com/app/id6790800323",
       "coverage_score": 0.767,
       "answers": 17,
+      "planned_answers": 17,
+      "social_posts": 1,
+      "social_languages": [
+        "zh-Hant"
+      ],
+      "alternatives": 0,
+      "detail": true,
+      "hub": true,
+      "guide": true,
+      "story": true,
+      "catalog": true
+    },
+    {
+      "key": "hourstaglite",
+      "name": "HoursTag Lite",
+      "public": true,
+      "appstore": "https://apps.apple.com/app/id6794039979",
+      "coverage_score": 0.417,
+      "answers": 0,
       "planned_answers": 17,
       "social_posts": 1,
       "social_languages": [

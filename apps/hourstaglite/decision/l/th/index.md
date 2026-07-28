@@ -2,7 +2,7 @@
 title: "HoursTag Lite — ดูราคาที่แท้จริงของสิ่งต่างๆ | iOS App"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/th/index.html"
-modified: "2026-07-27"
+modified: "2026-07-28"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,8 +20,9 @@ HoursTag Lite - ดูราคาที่แท้จริงของสิ�
 - ส่วนตัว / บนอุปกรณ์
 - วิดเจ็ต
 - Apple Watch
+- App Store · ฟรี
 
-[ดาวน์โหลด HoursTag Lite บน App Store](https://apps.apple.com/app/id6794039979)
+[ดาวน์โหลด HoursTag Lite บน App Store](https://apps.apple.com/th/app/id6794039979)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/hourstaglite.html)
 

@@ -20,6 +20,7 @@ CURRENT_LIVE_APPS = {
     "dailymate",
     "gmoney",
     "hourstag",
+    "hourstaglite",
     "lockhour",
     "lumibopomofo",
     "lumibopomofopro",

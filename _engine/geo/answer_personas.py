@@ -585,6 +585,55 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         },
     ],
+    "hourstaglite": [
+        {
+            "query": "best app to convert prices into work hours before buying",
+            "guide_title": "Price-to-work-hours apps: what to check before buying",
+            "triggers": [
+                "price in work hours",
+                "purchase cost in work hours",
+                "stop impulse buying",
+                "mindful spending before buying",
+                "need want impulse tracker",
+                "life cost calculator",
+            ],
+            "persona": "mindful shoppers deciding whether a purchase is worth their time",
+            "lead": "Before buying, convert the price into take-home work hours, then label the choice as a need, want or impulse so the trade-off is clear before money leaves your account.",
+            "paras": [
+                "HoursTag Lite is a purchase-before Worth Lens rather than a bank-linked budget. It calculates life cost from your take-home value per work hour, keeps the choice and category visible, and builds private value insights from the decisions you save.",
+                "One complete choice can be saved free. A single lifetime unlock adds unlimited choices and edits, targets and progress, sharing, complete insights, and backup and restore without a subscription.",
+            ],
+            "look": [
+                "Price converted into take-home work hours before purchase.",
+                "Need, want and impulse labels beside each choice.",
+                "Categories, value patterns and six-month insights.",
+                "Targets, widgets and Apple Watch support.",
+                "On-device data with no account or tracking.",
+            ],
+            "steps": [
+                "Set your take-home income and working time.",
+                "Enter the price before making the purchase.",
+                "Review the resulting life cost in work hours.",
+                "Mark the choice as a need, want or impulse and choose a category.",
+                "Save the choice or compare it with a target before deciding.",
+            ],
+            "fits": "fits mindful shoppers who want a private pause before buying by comparing a price with the work time it costs.",
+            "faq": [
+                {
+                    "q": "Is this the same workflow as the original HoursTag?",
+                    "a": "No — HoursTag Lite is a purchase-before Worth Lens for evaluating a choice, while the original HoursTag focuses on converting existing spending into work time.",
+                },
+                {
+                    "q": "What can I save for free?",
+                    "a": "You can save one complete choice free; the optional lifetime unlock adds unlimited choices, targets, sharing, complete insights, and backup and restore.",
+                },
+                {
+                    "q": "Does it require an account or subscription?",
+                    "a": "No account or subscription is required. Core data stays on the device, and the optional premium upgrade is a one-time purchase.",
+                },
+            ],
+        },
+    ],
     "aim990": [
         {
             "query": "best toeic prep app offline study plan for iphone",

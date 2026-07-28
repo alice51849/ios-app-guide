@@ -4,9 +4,9 @@
   "name": "Lumi Studio App Install Decision Routes",
   "description": "First-party install decision routes for every verified live iOS app and Apple locale, with a direct App Store path, purchase model, privacy facts, device surfaces and provenance.",
   "identifier": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes.json",
-  "dateModified": "2026-07-27",
-  "content_digest": "79c3df7cb7671923558759a9775907f8cbab8934d4e65a6e705886e2a8a502e9",
-  "generation_digest": "ade0335394704d46b75dc2c6fb2124c5f57eae4ad98e63ba9f0fed35fe52b31d",
+  "dateModified": "2026-07-28",
+  "content_digest": "53ade8ce5ef308e869e8cfcae8607ed452db56f6a016cc857a04e92dad7c6d16",
+  "generation_digest": "700fefc4317ae03b70e5d28103baf7c0dd7d93fb51fed5125fc99094a5282cd7",
   "publisher_disclosure": "First-party decision-support material published by Lumi Studio, the developer of every listed app; not an independent ranking or measured search-volume product.",
   "ordering": "official_locale_order_then_priority_then_alphabetical_app_name",
   "priority_app_keys": [
@@ -857,7 +857,8 @@
         "بدون تتبع",
         "خاص / على الجهاز",
         "عنصر واجهة",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · مجاني"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ar-SA/index.html",
@@ -865,9 +866,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ar-SA.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/sa/app/id6794039979",
       "app_store_cta_label": "احصل على HoursTag Lite من App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "SAR",
+        "formatted_price": "مجاني"
+      },
       "guide_cta_label": "اقرأ الدليل الكامل",
       "publisher_disclosure": "هذه مادة ينشرها Lumi Studio مباشرةً بصفته مطور جميع التطبيقات المدرجة.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -4053,7 +4058,8 @@
         "Sense seguiment",
         "Privat / en el dispositiu",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ca/index.html",
@@ -4061,9 +4067,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ca.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/es/app/id6794039979",
       "app_store_cta_label": "Descarrega HoursTag Lite a l’App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Llegeix la guia completa",
       "publisher_disclosure": "Aquest és material de primera mà publicat per Lumi Studio, el desenvolupador de totes les apps llistades.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -5731,7 +5741,8 @@
         "Bez sledování",
         "Soukromé / v zařízení",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/cs/index.html",
@@ -5739,9 +5750,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/cs.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/cz/app/id6794039979",
       "app_store_cta_label": "Stáhněte si HoursTag Lite v App Storu",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CZK",
+        "formatted_price": "Zdarma"
+      },
       "guide_cta_label": "Přečtěte si celý průvodce",
       "publisher_disclosure": "Toto je materiál od první strany publikovaný Lumi Studio, vývojářem všech uvedených aplikací.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -7409,7 +7424,8 @@
         "Ingen sporing",
         "Privat / på enheden",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/da/index.html",
@@ -7417,9 +7433,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/dk/app/id6794039979",
       "app_store_cta_label": "Hent HoursTag Lite i App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "DKK",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Læs hele vejledningen",
       "publisher_disclosure": "Dette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -9087,7 +9107,8 @@
         "Kein Tracking",
         "Privat / auf dem Gerät",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/de-DE/index.html",
@@ -9095,9 +9116,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/de-DE.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/de/app/id6794039979",
       "app_store_cta_label": "HoursTag Lite im App Store laden",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Kostenlos"
+      },
       "guide_cta_label": "Lesen Sie den vollständigen Leitfaden",
       "publisher_disclosure": "Dieses Material wird direkt von Lumi Studio veröffentlicht, dem Entwickler aller aufgeführten Apps.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -10765,7 +10790,8 @@
         "Χωρίς παρακολούθηση",
         "Ιδιωτικό / στη συσκευή",
         "Γραφικό στοιχείο",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/el/index.html",
@@ -10773,9 +10799,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/el.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/gr/app/id6794039979",
       "app_store_cta_label": "Αποκτήστε το HoursTag Lite από το App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Αυτό είναι πρωτογενές υλικό που δημοσιεύεται από το Lumi Studio, τον δημιουργό κάθε καταχωρημένης εφαρμογής.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -12443,7 +12473,8 @@
         "No tracking",
         "Private / on-device",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/en-AU/index.html",
@@ -12451,9 +12482,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/au/app/id6794039979",
       "app_store_cta_label": "Get HoursTag Lite on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "AUD",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -14121,7 +14156,8 @@
         "No tracking",
         "Private / on-device",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/en-CA/index.html",
@@ -14129,9 +14165,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-CA.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/ca/app/id6794039979",
       "app_store_cta_label": "Get HoursTag Lite on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CAD",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -15799,7 +15839,8 @@
         "No tracking",
         "Private / on-device",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/en-GB/index.html",
@@ -15807,9 +15848,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-GB.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/gb/app/id6794039979",
       "app_store_cta_label": "Get HoursTag Lite on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -17483,7 +17528,8 @@
         "No tracking",
         "Private / on-device",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/en-US/index.html",
@@ -17491,9 +17537,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-US.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/us/app/id6794039979",
       "app_store_cta_label": "Get HoursTag Lite on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -19170,7 +19220,8 @@
         "Sin seguimiento",
         "Privado / en el dispositivo",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/es-ES/index.html",
@@ -19178,9 +19229,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/es-ES.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/es/app/id6794039979",
       "app_store_cta_label": "Consigue HoursTag Lite en el App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Lee la guía completa",
       "publisher_disclosure": "Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -20848,7 +20903,8 @@
         "Sin rastreo",
         "Privado / en el dispositivo",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/es-MX/index.html",
@@ -20856,9 +20912,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/es-MX.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/mx/app/id6794039979",
       "app_store_cta_label": "Consigue HoursTag Lite en el App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "MXN",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Lee la guía completa",
       "publisher_disclosure": "Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -22526,7 +22586,8 @@
         "Ei seurantaa",
         "Yksityinen / laitteella",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Ilmainen"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/fi/index.html",
@@ -22534,9 +22595,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fi.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/fi/app/id6794039979",
       "app_store_cta_label": "Lataa HoursTag Lite App Storesta",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen"
+      },
       "guide_cta_label": "Lue koko opas",
       "publisher_disclosure": "Tämä on Lumi Studion, jokaisen listatun sovelluksen kehittäjän, julkaisema ensimmäisen osapuolen materiaali.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -24204,7 +24269,8 @@
         "Aucun suivi",
         "Privé / sur l'appareil",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/fr-CA/index.html",
@@ -24212,9 +24278,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fr-CA.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/ca/app/id6794039979",
       "app_store_cta_label": "Obtenir HoursTag Lite sur l'App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CAD",
+        "formatted_price": "Gratuit"
+      },
       "guide_cta_label": "Lire le guide complet",
       "publisher_disclosure": "Ce contenu est publié directement par Lumi Studio, le développeur de chaque app listée.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -25882,7 +25952,8 @@
         "Sans suivi",
         "Privé / sur l’appareil",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/fr-FR/index.html",
@@ -25890,9 +25961,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fr-FR.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/fr/app/id6794039979",
       "app_store_cta_label": "Obtenir HoursTag Lite sur l'App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratuit"
+      },
       "guide_cta_label": "Lire le guide complet",
       "publisher_disclosure": "Ce contenu est publié directement par Lumi Studio, le développeur de chaque application répertoriée.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -27560,7 +27635,8 @@
         "કોઈ ટ્રેકિંગ નથી",
         "ખાનગી / ઉપકરણ પર",
         "વિજેટ",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · મફત"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/gu-IN/index.html",
@@ -27568,9 +27644,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/gu-IN.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/in/app/id6794039979",
       "app_store_cta_label": "App Store પરથી HoursTag Lite મેળવો",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "મફત"
+      },
       "guide_cta_label": "પૂર્ણ માર્ગદર્શિકા વાંચો",
       "publisher_disclosure": "આ સામગ્રી Lumi Studio દ્વારા સીધી પ્રકાશિત કરવામાં આવી છે, જે સૂચિબદ્ધ તમામ એપ્સનો વિકાસકર્તા છે.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -29238,7 +29318,8 @@
         "ללא מעקב",
         "פרטי / במכשיר",
         "וידג'ט",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · בחינם"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/he/index.html",
@@ -29246,9 +29327,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/he.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/il/app/id6794039979",
       "app_store_cta_label": "הורידו את HoursTag Lite מה-App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "ILS",
+        "formatted_price": "בחינם"
+      },
       "guide_cta_label": "קרא את המדריך המלא",
       "publisher_disclosure": "זהו חומר רשמי שפורסם על ידי Lumi Studio, המפתח של כל אפליקציה ברשימה.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -30916,7 +31001,8 @@
         "कोई ट्रैकिंग नहीं",
         "निजी / डिवाइस पर",
         "विजेट",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · मुफ़्त"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/hi/index.html",
@@ -30924,9 +31010,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hi.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/in/app/id6794039979",
       "app_store_cta_label": "App Store पर HoursTag Lite पाएँ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "मुफ़्त"
+      },
       "guide_cta_label": "पूरा मार्गदर्शक पढ़ें",
       "publisher_disclosure": "यह सामग्री सीधे Lumi Studio ने प्रकाशित की है, जो सूचीबद्ध सभी ऐप का डेवलपर है।",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -32594,7 +32684,8 @@
         "Bez praćenja",
         "Privatno / na uređaju",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Besplatno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/hr/index.html",
@@ -32602,9 +32693,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/hr/app/id6794039979",
       "app_store_cta_label": "Preuzmite HoursTag Lite u App Storeu",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno"
+      },
       "guide_cta_label": "Pročitajte cijeli vodič",
       "publisher_disclosure": "Ovo je materijal iz prve ruke koji je objavio Lumi Studio, razvojni tim svake navedene aplikacije.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -34272,7 +34367,8 @@
         "Nincs követés",
         "Privát / eszközön tárolt",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Ingyenes"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/hu/index.html",
@@ -34280,9 +34376,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/hu/app/id6794039979",
       "app_store_cta_label": "Töltse le a(z) HoursTag Lite appot az App Store-ból",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "HUF",
+        "formatted_price": "Ingyenes"
+      },
       "guide_cta_label": "Olvasd el a teljes útmutatót",
       "publisher_disclosure": "Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -35950,7 +36050,8 @@
         "Tanpa pelacakan",
         "Privat / di perangkat",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/id/index.html",
@@ -35958,9 +36059,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/id.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/id/app/id6794039979",
       "app_store_cta_label": "Dapatkan HoursTag Lite di App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "IDR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Baca panduan lengkap",
       "publisher_disclosure": "Materi ini diterbitkan langsung oleh Lumi Studio, pengembang semua aplikasi yang tercantum.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -37631,7 +37736,8 @@
         "Nessun tracciamento",
         "Privato / su dispositivo",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/it/index.html",
@@ -37639,9 +37745,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/it/app/id6794039979",
       "app_store_cta_label": "Scarica HoursTag Lite sull'App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Leggi la guida completa",
       "publisher_disclosure": "Questo contenuto è pubblicato direttamente da Lumi Studio, lo sviluppatore di tutte le app elencate.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -39312,7 +39422,8 @@
         "追跡なし",
         "プライベート／端末内",
         "ウィジェット",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · 無料"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ja/index.html",
@@ -39320,9 +39431,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ja.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/jp/app/id6794039979",
       "app_store_cta_label": "App Store で HoursTag Lite を入手",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料"
+      },
       "guide_cta_label": "完全ガイドを読む",
       "publisher_disclosure": "これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -40990,7 +41105,8 @@
         "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
         "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "ವಿಜೆಟ್",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/kn-IN/index.html",
@@ -40998,9 +41114,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/kn-IN.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/in/app/id6794039979",
       "app_store_cta_label": "App Store ನಲ್ಲಿ HoursTag Lite ಪಡೆಯಿರಿ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ಉಚಿತ"
+      },
       "guide_cta_label": "ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ",
       "publisher_disclosure": "ಇದು ಪಟ್ಟಿಯಲ್ಲಿ ಇರುವ ಪ್ರತಿಯೊಂದು ಆ್ಯಪ್‌ನ ಅಭಿವೃದ್ಧಿಪಡಿಸಿದ Lumi Studio ಅವರಿಂದ ಪ್ರಕಟಿಸಲಾದ ಮೊದಲ-ಪಕ್ಷದ ವಸ್ತು.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -42668,7 +42788,8 @@
         "추적 없음",
         "프라이빗 / 기기 내",
         "위젯",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · 무료"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ko/index.html",
@@ -42676,9 +42797,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/kr/app/id6794039979",
       "app_store_cta_label": "App Store에서 HoursTag Lite 받기",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "KRW",
+        "formatted_price": "무료"
+      },
       "guide_cta_label": "전체 안내서 읽기",
       "publisher_disclosure": "이 자료는 목록에 있는 모든 앱의 개발사 Lumi Studio가 직접 발행한 1차 자료입니다.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -44346,7 +44471,8 @@
         "ട്രാക്കിംഗ് ഇല്ല",
         "സ്വകാര്യത / ഉപകരണത്തിൽ",
         "വിഡ്ജറ്റ്",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · സൗജന്യം"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ml-IN/index.html",
@@ -44354,9 +44480,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ml-IN.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/in/app/id6794039979",
       "app_store_cta_label": "App Store-ൽ നിന്ന് HoursTag Lite നേടൂ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "സൗജന്യം"
+      },
       "guide_cta_label": "പൂർണ്ണ ഗൈഡ് വായിക്കുക",
       "publisher_disclosure": "ഇത് Lumi Studio പ്രസിദ്ധീകരിച്ച ആദ്യകക്ഷി വസ്തുവാണ്, എല്ലാ ലിസ്റ്റുചെയ്ത ആപ്പുകളുടെയും വികസകനാണ്.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -46024,7 +46154,8 @@
         "ट्रॅकिंग नाही",
         "खाजगी / उपकरणावर",
         "विजेट",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · मोफत"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/mr-IN/index.html",
@@ -46032,9 +46163,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/mr-IN.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/in/app/id6794039979",
       "app_store_cta_label": "App Store वरून HoursTag Lite मिळवा",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "मोफत"
+      },
       "guide_cta_label": "संपूर्ण मार्गदर्शक वाचा",
       "publisher_disclosure": "हे Lumi Studio कडून प्रकाशित केलेले प्रथम पक्ष साहित्य आहे, जे प्रत्येक सूचीबद्ध अॅपचे विकसक आहे.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -47702,7 +47837,8 @@
         "Tiada penjejakan",
         "Peribadi / pada peranti",
         "Widjet",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Percuma"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ms/index.html",
@@ -47710,9 +47846,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ms.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/my/app/id6794039979",
       "app_store_cta_label": "Dapatkan HoursTag Lite di App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "MYR",
+        "formatted_price": "Percuma"
+      },
       "guide_cta_label": "Baca panduan penuh",
       "publisher_disclosure": "Bahan ini diterbitkan terus oleh Lumi Studio, pembangun semua aplikasi yang disenaraikan.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -49380,7 +49520,8 @@
         "Geen tracking",
         "Privé / op apparaat",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/nl-NL/index.html",
@@ -49388,9 +49529,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/nl-NL.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/nl/app/id6794039979",
       "app_store_cta_label": "Download HoursTag Lite in de App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Lees de volledige gids",
       "publisher_disclosure": "Dit is materiaal van de eerste partij, gepubliceerd door Lumi Studio, de ontwikkelaar van elke vermelde app.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -51058,7 +51203,8 @@
         "Ingen sporing",
         "Privat / på enheten",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/no/index.html",
@@ -51066,9 +51212,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/no.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/no/app/id6794039979",
       "app_store_cta_label": "Last ned HoursTag Lite fra App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "NOK",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Les hele veiledningen",
       "publisher_disclosure": "Dette er førsteparts materiale publisert av Lumi Studio, utvikleren av hver oppført app.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -52736,7 +52886,8 @@
         "କୌଣସି ଟ୍ରାକିଂ ନାହିଁ",
         "ଗୋପନୀୟ / ଉପକରଣରେ",
         "ଉଇଜେଟ",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · ମାଗଣା"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/or-IN/index.html",
@@ -52744,9 +52895,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/or-IN.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/in/app/id6794039979",
       "app_store_cta_label": "App Store ରୁ HoursTag Lite ପାଆନ୍ତୁ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ମାଗଣା"
+      },
       "guide_cta_label": "ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ",
       "publisher_disclosure": "ଏହା Lumi Studio ଦ୍ୱାରା ପ୍ରକାଶିତ ପ୍ରଥମ-ପକ୍ଷ ସାମଗ୍ରୀ, ଯାହାରେ ସମସ୍ତ ତାଲିକାଭୁକ୍ତ ଆପ୍ସର ବିକାଶକ ଅଛନ୍ତି।",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -54414,7 +54569,8 @@
         "ਕੋਈ ਟ੍ਰੈਕਿੰਗ ਨਹੀਂ",
         "ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ",
         "ਵਿਜੈਟ",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · ਮੁਫ਼ਤ"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/pa-IN/index.html",
@@ -54422,9 +54578,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pa-IN.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/in/app/id6794039979",
       "app_store_cta_label": "App Store ਤੋਂ HoursTag Lite ਪ੍ਰਾਪਤ ਕਰੋ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ਮੁਫ਼ਤ"
+      },
       "guide_cta_label": "ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ",
       "publisher_disclosure": "ਇਹ Lumi Studio ਵੱਲੋਂ ਪ੍ਰਕਾਸ਼ਿਤ ਪਹਿਲਾ-ਪੱਖ ਸਮੱਗਰੀ ਹੈ, ਜੋ ਹਰ ਦਰਜ ਕੀਤੇ ਐਪ ਦਾ ਡਿਵੈਲਪਰ ਹੈ।",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -56092,7 +56252,8 @@
         "Bez śledzenia",
         "Prywatne / na urządzeniu",
         "Widżet",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Bezpłatnie"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/pl/index.html",
@@ -56100,9 +56261,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pl.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/pl/app/id6794039979",
       "app_store_cta_label": "Pobierz HoursTag Lite z App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "PLN",
+        "formatted_price": "Bezpłatnie"
+      },
       "guide_cta_label": "Przeczytaj pełny przewodnik",
       "publisher_disclosure": "Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -57770,7 +57935,8 @@
         "Sem rastreamento",
         "Privado / no dispositivo",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/pt-BR/index.html",
@@ -57778,9 +57944,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pt-BR.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/br/app/id6794039979",
       "app_store_cta_label": "Baixe HoursTag Lite na App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis"
+      },
       "guide_cta_label": "Leia o guia completo",
       "publisher_disclosure": "Este conteúdo é publicado diretamente pela Lumi Studio, desenvolvedora de todos os apps apresentados.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -59451,7 +59621,8 @@
         "Sem rastreamento",
         "Privado / no dispositivo",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/pt-PT/index.html",
@@ -59459,9 +59630,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pt-PT.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/pt/app/id6794039979",
       "app_store_cta_label": "Baixe HoursTag Lite na App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Grátis"
+      },
       "guide_cta_label": "Leia o guia completo",
       "publisher_disclosure": "Este conteúdo é publicado diretamente pela Lumi Studio, que desenvolve todas as apps apresentadas.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -61129,7 +61304,8 @@
         "Fără urmărire",
         "Privat / pe dispozitiv",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ro/index.html",
@@ -61137,9 +61313,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/ro/app/id6794039979",
       "app_store_cta_label": "Descarcă HoursTag Lite din App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RON",
+        "formatted_price": "Gratuit"
+      },
       "guide_cta_label": "Citește ghidul complet",
       "publisher_disclosure": "Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -62807,7 +62987,8 @@
         "Без отслеживания",
         "Лично / на устройстве",
         "Виджет",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Бесплатно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ru/index.html",
@@ -62815,9 +62996,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ru.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/ru/app/id6794039979",
       "app_store_cta_label": "Установить HoursTag Lite в App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RUB",
+        "formatted_price": "Бесплатно"
+      },
       "guide_cta_label": "Прочитать полное руководство",
       "publisher_disclosure": "Это материал, созданный Lumi Studio, разработчиком всех перечисленных приложений.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -64485,7 +64670,8 @@
         "Bez sledovania",
         "Súkromné / v zariadení",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Zadarmo"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/sk/index.html",
@@ -64493,9 +64679,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/sk/app/id6794039979",
       "app_store_cta_label": "Stiahnuť HoursTag Lite v App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Zadarmo"
+      },
       "guide_cta_label": "Prečítať celý sprievodca",
       "publisher_disclosure": "Toto je materiál prvej strany publikovaný Lumi Studio, vývojárom každej uvedenej aplikácie.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -66163,7 +66353,8 @@
         "Brez sledenja",
         "Zasebno / na napravi",
         "Gradnik",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/sl-SI/index.html",
@@ -66171,9 +66362,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sl-SI.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/si/app/id6794039979",
       "app_store_cta_label": "Prenesite HoursTag Lite iz trgovine App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "To je gradivo prve roke, ki ga je objavil Lumi Studio, razvijalec vseh navedenih aplikacij.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -67844,7 +68039,8 @@
         "Ingen spårning",
         "Privat / på enheten",
         "Widget",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/sv/index.html",
@@ -67852,9 +68048,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/se/app/id6794039979",
       "app_store_cta_label": "Hämta HoursTag Lite i App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "SEK",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Läs hela guiden",
       "publisher_disclosure": "Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -69525,7 +69725,8 @@
         "பின்தொடர்வு இல்லை",
         "தனியுரிமை / சாதனத்தில்",
         "விட்ஜெட்",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · இலவசம்"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ta-IN/index.html",
@@ -69533,9 +69734,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ta-IN.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/in/app/id6794039979",
       "app_store_cta_label": "App Store-இல் HoursTag Lite-ஐப் பெறுங்கள்",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "இலவசம்"
+      },
       "guide_cta_label": "முழு வழிகாட்டியை படிக்கவும்",
       "publisher_disclosure": "இது Lumi Studio வெளியிட்ட முதல்-பார்ட்டி தரவு, இது பட்டியலிடப்பட்ட ஒவ்வொரு செயலியின் உருவாக்குநர்.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -71203,7 +71408,8 @@
         "ట్రాకింగ్ లేదు",
         "గోప్యంగా / పరికరంలో",
         "విడ్జెట్",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/te-IN/index.html",
@@ -71211,9 +71417,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/te-IN.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/in/app/id6794039979",
       "app_store_cta_label": "App Store నుంచి HoursTag Lite పొందండి",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ఉచితం"
+      },
       "guide_cta_label": "పూర్తి మార్గదర్శకాన్ని చదవండి",
       "publisher_disclosure": "ఇది Lumi Studio ద్వారా ప్రచురించబడిన స్వంత సంస్థ పదార్థం, ప్రతి జాబితా చేయబడిన యాప్ యొక్క అభివృద్ధికర్త.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -72881,7 +73091,8 @@
         "ไม่มีการติดตาม",
         "ส่วนตัว / บนอุปกรณ์",
         "วิดเจ็ต",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/th/index.html",
@@ -72889,9 +73100,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/th.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/th/app/id6794039979",
       "app_store_cta_label": "ดาวน์โหลด HoursTag Lite บน App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี"
+      },
       "guide_cta_label": "อ่านคู่มือฉบับเต็ม",
       "publisher_disclosure": "เนื้อหานี้เผยแพร่โดยตรงจาก Lumi Studio ซึ่งเป็นผู้พัฒนาแอปทั้งหมดที่ระบุไว้",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -74559,7 +74774,8 @@
         "Takip yok",
         "Gizli / cihazda",
         "Araç takımı",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Ücretsiz"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/tr/index.html",
@@ -74567,9 +74783,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/tr.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/tr/app/id6794039979",
       "app_store_cta_label": "HoursTag Lite uygulamasını App Store'dan al",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TRY",
+        "formatted_price": "Ücretsiz"
+      },
       "guide_cta_label": "Kılavuzun tamamını oku",
       "publisher_disclosure": "Bu, listelenen her uygulamanın geliştiricisi Lumi Studio tarafından yayımlanan birinci taraf materyaldir.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -76237,7 +76457,8 @@
         "Без відстеження",
         "Приватно / на пристрої",
         "Віджет",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/uk/index.html",
@@ -76245,9 +76466,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/uk.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/ua/app/id6794039979",
       "app_store_cta_label": "Завантажте HoursTag Lite з App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -77915,7 +78140,8 @@
         "کوئی نگرانی نہیں",
         "نجی / آلہ پر",
         "وجیٹ",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · مفت"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ur-PK/index.html",
@@ -77923,9 +78149,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ur-PK.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/pk/app/id6794039979",
       "app_store_cta_label": "App Store سے HoursTag Lite حاصل کریں",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "PKR",
+        "formatted_price": "مفت"
+      },
       "guide_cta_label": "مکمل رہنمائی پڑھیں",
       "publisher_disclosure": "یہ مواد براہ راست Lumi Studio نے شائع کیا ہے، جو فہرست میں شامل تمام ایپس کا ڈویلپر ہے۔",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -79593,7 +79823,8 @@
         "Không theo dõi",
         "Riêng tư / trên thiết bị",
         "Tiện ích",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · Miễn phí"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/vi/index.html",
@@ -79601,9 +79832,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/vi.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/vn/app/id6794039979",
       "app_store_cta_label": "Tải HoursTag Lite trên App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "VND",
+        "formatted_price": "Miễn phí"
+      },
       "guide_cta_label": "Đọc toàn bộ hướng dẫn",
       "publisher_disclosure": "Tài liệu này do Lumi Studio trực tiếp công bố; Lumi Studio là nhà phát triển của tất cả ứng dụng được liệt kê.",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -81271,7 +81506,8 @@
         "无跟踪",
         "私密 / 设备本地",
         "小组件",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/zh-Hans/index.html",
@@ -81279,9 +81515,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hans.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/cn/app/id6794039979",
       "app_store_cta_label": "在 App Store 获取 HoursTag Lite",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -82929,7 +83169,8 @@
         "無追蹤",
         "隱私優先／裝置端",
         "主畫面小工具",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · 免費"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/zh-Hant/index.html",
@@ -82937,9 +83178,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/tw/app/id6794039979",
       "app_store_cta_label": "在 App Store 取得 HoursTag Lite",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費"
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
       "source_persona_query": "best app to convert prices into work hours before buying",

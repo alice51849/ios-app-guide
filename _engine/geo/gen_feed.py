@@ -325,14 +325,21 @@ def collect():
             or _has_owned_resource_cta(item[2])
         )
     ]
-    if len(required) >= MAX_ITEMS:
-        return required[:MAX_ITEMS]
+    reserved_shortfall = sum(
+        max(
+            0,
+            limit
+            - sum(f"/{subdir}/" in item[1] for item in required),
+        )
+        for subdir, limit in RESERVED_SUBDIR_LIMITS
+    )
+    selection_limit = max(MAX_ITEMS, len(required) + reserved_shortfall)
     selected = list(required)
     selected_urls = {item[1] for item in selected}
     for subdir, limit in RESERVED_SUBDIR_LIMITS:
         added = sum(f"/{subdir}/" in item[1] for item in selected)
         for item in items:
-            if len(selected) >= MAX_ITEMS or added >= limit:
+            if len(selected) >= selection_limit or added >= limit:
                 break
             if f"/{subdir}/" in item[1] and item[1] not in selected_urls:
                 selected.append(item)
@@ -340,7 +347,7 @@ def collect():
                 added += 1
     reserved_paths = tuple(f"/{subdir}/" for subdir, _ in RESERVED_SUBDIR_LIMITS)
     for item in items:
-        if len(selected) >= MAX_ITEMS:
+        if len(selected) >= selection_limit:
             break
         if (
             item[1] not in selected_urls
@@ -349,7 +356,7 @@ def collect():
             selected.append(item)
             selected_urls.add(item[1])
     for item in items:
-        if len(selected) >= MAX_ITEMS:
+        if len(selected) >= selection_limit:
             break
         if item[1] not in selected_urls:
             selected.append(item)

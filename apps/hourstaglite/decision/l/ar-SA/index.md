@@ -2,7 +2,7 @@
 title: "HoursTag Lite — شاهد السعر الحقيقي للأشياء | iOS App"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ar-SA/index.html"
-modified: "2026-07-27"
+modified: "2026-07-28"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,8 +20,9 @@ HoursTag Lite - شاهد السعر الحقيقي للأشياء كل عملي�
 - خاص / على الجهاز
 - عنصر واجهة
 - Apple Watch
+- App Store · مجاني
 
-[احصل على HoursTag Lite من App Store](https://apps.apple.com/app/id6794039979)
+[احصل على HoursTag Lite من App Store](https://apps.apple.com/sa/app/id6794039979)
 
 [اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/hourstaglite.html)
 

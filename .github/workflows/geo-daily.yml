@@ -25,6 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GEO_SITE: https://alice51849.github.io/ios-app-guide
+      STANDARD_SITE_GUIDE_CONTRACT_URL: https://raw.githubusercontent.com/alice51849/alice51849.github.io/main/standard_site_guide_contract.json
     steps:
       - uses: actions/checkout@v5
         with:
@@ -69,7 +70,6 @@ jobs:
           python3 gen_linkset.py
           python3 gen_social_previews.py
           python3 gen_image_sitemap.py
-          python3 gen_smart_app_banners.py
           python3 gen_mobile_app_identity.py
           python3 gen_webmcp_install_tools.py
           python3 portfolio_app_catalog_api.py
@@ -85,6 +85,7 @@ jobs:
           python3 app_install_decision_routes.py
           python3 normalize_app_store_links.py
           python3 gen_app_decision_cards.py
+          python3 gen_smart_app_banners.py
           python3 gen_mobile_store_ctas.py
           python3 gen_app_store_qr_ctas.py
           python3 gen_app_store_share_ctas.py
@@ -92,8 +93,22 @@ jobs:
           python3 gen_llms.py --cached-live
           python3 gen_feed.py
           python3 live_app_guard.py --site-root pages
+      - name: Reconcile verified Standard.site discovery links
+        run: |
+          python3 _engine/geo/sync_standard_site.py \
+            --site-root "$GITHUB_WORKSPACE" \
+            --contract-url "$STANDARD_SITE_GUIDE_CONTRACT_URL" \
+            --allow-initial-404 \
+            --timeout 10 \
+            --retries 3 \
+            --retry-delay 2
       - name: Verify zero-cost growth infrastructure
-        run: python3 -m unittest discover -s _engine/geo/tests -p "test_*.py"
+        run: |
+          python3 -m unittest discover -s _engine/geo/tests -p "test_*.py"
+          STANDARD_SITE_ENGINE_ROOT="$GITHUB_WORKSPACE/_engine" \
+            python3 -m unittest discover \
+              -s _engine/social/tests \
+              -p "test_standard_site.py"
       - name: Refresh verified App Store availability once
         run: |
           cd _engine/geo
@@ -192,7 +207,6 @@ jobs:
           python3 gen_linkset.py
           python3 gen_social_previews.py
           python3 gen_image_sitemap.py
-          python3 gen_smart_app_banners.py
           python3 gen_mobile_app_identity.py
           python3 gen_webmcp_install_tools.py
           python3 portfolio_app_catalog_api.py
@@ -208,6 +222,7 @@ jobs:
           python3 app_install_decision_routes.py
           python3 normalize_app_store_links.py
           python3 gen_app_decision_cards.py
+          python3 gen_smart_app_banners.py
           python3 gen_mobile_store_ctas.py
           python3 gen_app_store_qr_ctas.py
           python3 gen_app_store_share_ctas.py
@@ -217,6 +232,14 @@ jobs:
           python3 gen_feed.py
           python3 gen_sitemap_lastmod.py \
             --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
+          cd "$GITHUB_WORKSPACE"
+          python3 _engine/geo/sync_standard_site.py \
+            --site-root "$GITHUB_WORKSPACE" \
+            --contract-url "$STANDARD_SITE_GUIDE_CONTRACT_URL" \
+            --allow-initial-404 \
+            --timeout 10 \
+            --retries 3 \
+            --retry-delay 2
       - name: Commit English content first (fast, before slow localization)
         run: |
           git config user.name "github-actions[bot]"
@@ -229,6 +252,13 @@ jobs:
             git pull --rebase --autostash -X theirs
             python3 _engine/geo/gen_sitemap_lastmod.py \
               --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
+            python3 _engine/geo/sync_standard_site.py \
+              --site-root "$GITHUB_WORKSPACE" \
+              --contract-url "$STANDARD_SITE_GUIDE_CONTRACT_URL" \
+              --allow-initial-404 \
+              --timeout 10 \
+              --retries 3 \
+              --retry-delay 2
             git add -A
             if ! git diff --cached --quiet; then
               git commit -m "Reconcile truthful sitemap lastmod after rebase"
@@ -273,7 +303,6 @@ jobs:
           python3 gen_linkset.py
           python3 gen_social_previews.py
           python3 gen_image_sitemap.py
-          python3 gen_smart_app_banners.py
           python3 gen_mobile_app_identity.py
           python3 gen_webmcp_install_tools.py
           python3 gen_publisher_disclosures.py
@@ -282,6 +311,7 @@ jobs:
           python3 normalize_app_store_links.py
           python3 app_install_decision_routes.py
           python3 gen_app_decision_cards.py
+          python3 gen_smart_app_banners.py
           python3 gen_mobile_store_ctas.py
           python3 gen_app_store_qr_ctas.py
           python3 gen_app_store_share_ctas.py
@@ -291,6 +321,14 @@ jobs:
           python3 gen_feed.py
           python3 live_app_guard.py --site-root pages
           python3 gen_sitemap_lastmod.py
+          cd "$GITHUB_WORKSPACE"
+          python3 _engine/geo/sync_standard_site.py \
+            --site-root "$GITHUB_WORKSPACE" \
+            --contract-url "$STANDARD_SITE_GUIDE_CONTRACT_URL" \
+            --allow-initial-404 \
+            --timeout 10 \
+            --retries 3 \
+            --retry-delay 2
       - name: Commit localized pages if any
         run: |
           git add -A
@@ -300,6 +338,13 @@ jobs:
             git commit -m "Daily GEO content: localized answer pages"
             git pull --rebase --autostash -X theirs
             python3 _engine/geo/gen_sitemap_lastmod.py
+            python3 _engine/geo/sync_standard_site.py \
+              --site-root "$GITHUB_WORKSPACE" \
+              --contract-url "$STANDARD_SITE_GUIDE_CONTRACT_URL" \
+              --allow-initial-404 \
+              --timeout 10 \
+              --retries 3 \
+              --retry-delay 2
             git add -A
             if ! git diff --cached --quiet; then
               git commit -m "Reconcile truthful sitemap lastmod after rebase"

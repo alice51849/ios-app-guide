@@ -2,7 +2,7 @@
 title: "ਇੱਕ ਆਉਣ ਵਾਲੀ ਯਾਤਰਾ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਸਧਾਰਣ ਯਾਤਰਾ ਯੋਜਕ ਐਪ iPhone ਲਈ"
 lang: "pa-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/pa-IN/index.html"
-modified: "2026-07-27"
+modified: "2026-07-28"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

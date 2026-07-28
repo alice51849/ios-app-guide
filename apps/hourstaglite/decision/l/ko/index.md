@@ -2,7 +2,7 @@
 title: "HoursTag Lite — 모든 것의 진짜 가격을 보세요 | iOS App"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ko/index.html"
-modified: "2026-07-27"
+modified: "2026-07-28"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,8 +20,9 @@ HoursTag Lite - 모든 것의 진짜 가격을 보세요 모든 소비는 당신
 - 프라이빗 / 기기 내
 - 위젯
 - Apple Watch
+- App Store · 무료
 
-[App Store에서 HoursTag Lite 받기](https://apps.apple.com/app/id6794039979)
+[App Store에서 HoursTag Lite 받기](https://apps.apple.com/kr/app/id6794039979)
 
 [전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/hourstaglite.html)
 

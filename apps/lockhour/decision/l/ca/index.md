@@ -2,7 +2,7 @@
 title: "millor aplicació per bloquejar xarxes socials mentre estudies per a iPhone"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/ca/index.html"
-modified: "2026-07-27"
+modified: "2026-07-28"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

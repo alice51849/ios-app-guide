@@ -2,7 +2,7 @@
 title: "HoursTag Lite — Pogledaj pravu cijenu stvari | iOS App"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/hr/index.html"
-modified: "2026-07-27"
+modified: "2026-07-28"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,8 +20,9 @@ HoursTag Lite - Pogledaj pravu cijenu stvari Svaka kupovina košta sate tvog ži
 - Privatno / na uređaju
 - Widget
 - Apple Watch
+- App Store · Besplatno
 
-[Preuzmite HoursTag Lite u App Storeu](https://apps.apple.com/app/id6794039979)
+[Preuzmite HoursTag Lite u App Storeu](https://apps.apple.com/hr/app/id6794039979)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/hourstaglite.html)
 

@@ -2,7 +2,7 @@
 title: "திடீர் impulsive வாங்குதலை நிறுத்த சிறந்த மனச்சாட்சி செலவிடும் செயலி iPhone க்கான"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/ta-IN/index.html"
-modified: "2026-07-27"
+modified: "2026-07-28"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

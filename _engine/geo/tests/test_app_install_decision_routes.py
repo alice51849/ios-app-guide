@@ -494,9 +494,12 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
         ]
         expected = app_install_decision_routes.sitemap_entries(self.records)
         self.assertEqual(expected, locations)
-        self.assertEqual(1600, sum("/decision/l/" in url for url in locations))
         self.assertEqual(
-            1600,
+            len(self.records),
+            sum("/decision/l/" in url for url in locations),
+        )
+        self.assertEqual(
+            len(self.records),
             sum("/oembed/decision/" in url for url in locations),
         )
         self.assertEqual(

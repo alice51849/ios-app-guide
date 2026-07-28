@@ -2,7 +2,7 @@
 title: "legjobb offline dokumentumszkenner alkalmazás felhő nélkül ápolóknak"
 lang: "hu"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/hu/index.html"
-modified: "2026-07-27"
+modified: "2026-07-28"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

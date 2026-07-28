@@ -3455,7 +3455,7 @@ class GeneratorTests(unittest.TestCase):
             for item in rss.find("channel").findall("item")
         ]
         json_ids = [item["id"] for item in json_feed["items"]]
-        self.assertEqual(gen_feed.MAX_ITEMS, len(atom_ids))
+        self.assertEqual(len(gen_feed.collect()), len(atom_ids))
         self.assertEqual(atom_ids, rss_ids)
         self.assertEqual(atom_ids, json_ids)
         atom_entries = {
@@ -20337,6 +20337,7 @@ class GeneratorTests(unittest.TestCase):
             "tripbeelite",
             "maskmyfile",
             "mochidonestamp",
+            "hourstaglite",
         }
         self.assertEqual(paid_upfront | free_with_unlock, set(APPS))
         for key in paid_upfront:
@@ -20351,6 +20352,20 @@ class GeneratorTests(unittest.TestCase):
                 for app in APPS.values()
             )
         )
+
+    def test_hourstag_lite_registry_keeps_verified_capabilities(self):
+        capabilities = portfolio_app_finder.explicit_capabilities(
+            APPS["hourstaglite"]
+        )
+        for capability in (
+            "no_account",
+            "no_tracking",
+            "private_or_on_device",
+            "widget",
+            "apple_watch",
+        ):
+            with self.subTest(capability=capability):
+                self.assertTrue(capabilities[capability])
 
     def test_purchase_model_classifier_is_conservative(self):
         self.assertEqual(
@@ -21919,7 +21934,6 @@ class GeneratorTests(unittest.TestCase):
             "gen_linkset.py",
             "gen_social_previews.py",
             "gen_image_sitemap.py",
-            "gen_smart_app_banners.py",
             "gen_mobile_app_identity.py",
             "gen_webmcp_install_tools.py",
             "portfolio_app_catalog_api.py",
@@ -21933,6 +21947,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_app_store_facts.py",
             "app_install_decision_routes.py",
             "gen_app_decision_cards.py",
+            "gen_smart_app_banners.py",
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",
@@ -22003,7 +22018,6 @@ class GeneratorTests(unittest.TestCase):
             "gen_linkset.py",
             "gen_social_previews.py",
             "gen_image_sitemap.py",
-            "gen_smart_app_banners.py",
             "gen_mobile_app_identity.py",
             "gen_webmcp_install_tools.py",
             "gen_publisher_disclosures.py",
@@ -22011,6 +22025,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_app_store_facts.py",
             "app_install_decision_routes.py",
             "gen_app_decision_cards.py",
+            "gen_smart_app_banners.py",
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",
@@ -22032,7 +22047,6 @@ class GeneratorTests(unittest.TestCase):
             "gen_linkset.py",
             "gen_social_previews.py",
             "gen_image_sitemap.py",
-            "gen_smart_app_banners.py",
             "gen_mobile_app_identity.py",
             "gen_webmcp_install_tools.py",
             "gen_publisher_disclosures.py",
@@ -22040,6 +22054,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_app_store_facts.py",
             "app_install_decision_routes.py",
             "gen_app_decision_cards.py",
+            "gen_smart_app_banners.py",
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",
@@ -22303,7 +22318,6 @@ class GeneratorTests(unittest.TestCase):
             "gen_linkset.py",
             "gen_social_previews.py",
             "gen_image_sitemap.py",
-            "gen_smart_app_banners.py",
             "gen_mobile_app_identity.py",
             "gen_webmcp_install_tools.py",
             "portfolio_app_catalog_api.py",
@@ -22316,6 +22330,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_app_store_facts.py",
             "app_install_decision_routes.py",
             "gen_app_decision_cards.py",
+            "gen_smart_app_banners.py",
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",

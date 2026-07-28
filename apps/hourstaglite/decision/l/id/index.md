@@ -2,7 +2,7 @@
 title: "HoursTag Lite — Kenali prisma nilaimu | iOS App"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/id/index.html"
-modified: "2026-07-27"
+modified: "2026-07-28"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,8 +20,9 @@ HoursTag Lite - Lihat harga sebenarnya dari barang Setiap pembelian menghabiskan
 - Privat / di perangkat
 - Widget
 - Apple Watch
+- App Store · Gratis
 
-[Dapatkan HoursTag Lite di App Store](https://apps.apple.com/app/id6794039979)
+[Dapatkan HoursTag Lite di App Store](https://apps.apple.com/id/app/id6794039979)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/hourstaglite.html)
 

@@ -2,7 +2,7 @@
 title: "હોમસ્કૂલ કિન્ડરગાર્ટન તૈયારી માટે શ્રેષ્ઠ સંપૂર્ણ ફોનિક્સ એપ્લિકેશન"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/gu-IN/index.html"
-modified: "2026-07-27"
+modified: "2026-07-28"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"

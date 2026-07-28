@@ -2,7 +2,7 @@
 title: "കുട്ടികളുമായി പുറത്ത് പോകാൻ മാതാപിതാക്കൾക്ക് സഹായിക്കുന്ന മികച്ച കാലാവസ്ഥ ആപ്പ്"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/ml-IN/index.html"
-modified: "2026-07-27"
+modified: "2026-07-28"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

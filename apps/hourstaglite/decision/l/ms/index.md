@@ -2,7 +2,7 @@
 title: "HoursTag Lite — Lihat harga sebenar barang | iOS App"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ms/index.html"
-modified: "2026-07-27"
+modified: "2026-07-28"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,8 +20,9 @@ HoursTag Lite - Lihat harga sebenar barang Setiap pembelian memerlukan jam dari 
 - Peribadi / pada peranti
 - Widjet
 - Apple Watch
+- App Store · Percuma
 
-[Dapatkan HoursTag Lite di App Store](https://apps.apple.com/app/id6794039979)
+[Dapatkan HoursTag Lite di App Store](https://apps.apple.com/my/app/id6794039979)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/hourstaglite.html)
 

@@ -2,7 +2,7 @@
 title: "migliore app per monitorare budget di viaggio senza abbonamento per iPhone"
 lang: "it"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/it/index.html"
-modified: "2026-07-27"
+modified: "2026-07-28"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

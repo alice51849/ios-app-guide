@@ -17,6 +17,11 @@ sys.path.insert(0, str(ROOT / "social"))
 sys.path.insert(0, str(HERE))
 
 from appstore_live import live_app_keys  # noqa: E402
+from answer_app_store_links import (  # noqa: E402
+    APP_STORE_URL_RE as APP_STORE_LINK_RE,
+    direct_app_store_ids,
+    unmanaged_app_store_source,
+)
 import gen_linkset  # noqa: E402
 from videogen.registry import APPSTORE  # noqa: E402
 
@@ -68,16 +73,6 @@ MOBILE_APP_IDENTITY_BLOCK_RE = re.compile(
     r"[^>]*>.*?</script>\s*",
     flags=re.IGNORECASE | re.DOTALL,
 )
-APP_STORE_LINK_RE = re.compile(
-    r"https://apps\.apple\.com/(?:[a-z]{2}/)?app/id(\d+)",
-    flags=re.IGNORECASE,
-)
-APP_STORE_ANCHOR_RE = re.compile(
-    r"<a\b[^>]*\bhref\s*=\s*(?P<quote>[\"'])"
-    r"https://apps\.apple\.com/(?:[a-z]{2}/)?app/id(?P<id>\d+)"
-    r"[^\"']*(?P=quote)",
-    flags=re.IGNORECASE | re.DOTALL,
-)
 LOCALE_DIRECTORY_RE = re.compile(r"[a-z]{2,3}(?:-[A-Za-z]{2,4})?")
 RESERVED_TOP_LEVEL_DIRS = {"api"}
 BUYER_INTENT_SECTIONS = ("answers", "alternatives", "hubs")
@@ -108,17 +103,7 @@ def banner_block(app_id: str) -> str:
 
 
 def _unmanaged_source(path: Path) -> str:
-    source = path.read_text(encoding="utf-8")
-    for pattern in (
-        APP_DECISION_CARD_BLOCK_RE,
-        MOBILE_APP_IDENTITY_BLOCK_RE,
-        APP_STORE_SHARE_BLOCK_RE,
-        APP_STORE_QR_BLOCK_RE,
-        MOBILE_CTA_BLOCK_RE,
-        BLOCK_RE,
-    ):
-        source = pattern.sub("\n", source)
-    return source
+    return unmanaged_app_store_source(path.read_text(encoding="utf-8"))
 
 
 def _add_single_app_targets(
@@ -143,9 +128,7 @@ def single_app_id(path: Path, live_ids: set[str]) -> str | None:
     source = _unmanaged_source(path)
     if FREE_RESOURCE_FIRST_META in source:
         return None
-    app_ids = {
-        match.group("id") for match in APP_STORE_ANCHOR_RE.finditer(source)
-    }
+    app_ids = direct_app_store_ids(source, path)
     if len(app_ids) != 1:
         return None
     app_id = next(iter(app_ids))

@@ -13,6 +13,7 @@ from app_store_storefronts import (
     normalize_app_store_campaign_url,
     validated_app_store_url,
 )
+from answer_app_store_links import canonical_app_store_url
 import gen_smart_app_banners
 from appstore_live import live_app_keys
 from videogen.registry import APPSTORE
@@ -42,10 +43,10 @@ SCRIPT = """\
   const link = bar.querySelector("a");
   const source =
     document.querySelector(
-      '.hero a[href^="https://apps.apple.com/"][href*="/app/id"]'
+    '.hero a[href^="https://apps.apple.com/"][href*="/app/"][href*="/id"]'
     ) ||
     document.querySelector(
-      'main a[href^="https://apps.apple.com/"][href*="/app/id"]'
+    'main a[href^="https://apps.apple.com/"][href*="/app/"][href*="/id"]'
     );
   if (!link || !source) return;
 
@@ -122,9 +123,11 @@ def app_store_cta(source: str, app_id: str) -> tuple[str, str] | None:
     for match in ANCHOR_RE.finditer(cleaned):
         attributes = _attributes(match.group("attrs"))
         href = attributes.get("href", "")
-        linked_id = gen_smart_app_banners.APP_STORE_LINK_RE.fullmatch(
-            href.split("?", 1)[0]
-        )
+        try:
+            href = canonical_app_store_url(href)
+        except ValueError:
+            continue
+        linked_id = gen_smart_app_banners.APP_STORE_LINK_RE.match(href)
         if not linked_id or linked_id.group(1) != app_id:
             continue
         href = normalize_app_store_campaign_url(href)

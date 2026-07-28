@@ -40,6 +40,7 @@ import aeo_guide_i18n
 import aeo_pages
 import add_related_answers
 import add_related_tools
+import answer_app_store_links
 import answer_deep
 import answer_portfolio
 import app_store_storefronts
@@ -469,6 +470,454 @@ class GeneratorTests(unittest.TestCase):
             )
             with self.assertRaisesRegex(FileNotFoundError, "missing or empty"):
                 gen_image_sitemap.generate(pages)
+
+    def test_image_sitemap_includes_only_managed_single_app_answers(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            stories = pages / "stories"
+            stories.mkdir()
+            poster = stories / "poster.jpg"
+            poster.write_bytes(b"poster")
+            (stories / "story.html").write_text(
+                '<link rel="canonical" href="'
+                f'{gen_image_sitemap.SITE}/stories/story.html">'
+                '<amp-story poster-portrait-src="'
+                f'{gen_image_sitemap.SITE}/stories/poster.jpg">',
+                encoding="utf-8",
+            )
+            answers = pages / "answers"
+            answers.mkdir()
+            image = pages / "social" / "img" / "snapport-share.jpg"
+            image.parent.mkdir(parents=True)
+            Image.new(
+                "RGB",
+                gen_image_sitemap.ANSWER_IMAGE_SIZE,
+                (42, 67, 101),
+            ).save(image, "JPEG")
+            image_url = (
+                f"{gen_image_sitemap.SITE}/social/img/snapport-share.jpg"
+            )
+            block = gen_social_previews.answer_metadata_block(
+                "snapport",
+                "Snapport",
+                image_url,
+            )
+            snapport_link = (
+                '<a href="https://apps.apple.com/app/id'
+                f'{aeo_answers.APPSTORE["snapport"]}">Snapport</a>'
+            )
+
+            def document(
+                name: str,
+                *,
+                head: str = "",
+                body: str = snapport_link,
+                managed: bool = True,
+            ) -> str:
+                canonical = (
+                    f"{gen_image_sitemap.SITE}/answers/{name}.html"
+                )
+                metadata = block if managed else ""
+                return (
+                    "<html><head>"
+                    f'<link rel="canonical" href="{canonical}">'
+                    f"{head}{metadata}</head><body>{body}</body></html>"
+                )
+
+            (answers / "single-app.html").write_text(
+                document("single-app"),
+                encoding="utf-8",
+            )
+            (answers / "no-preview.html").write_text(
+                document("no-preview", managed=False),
+                encoding="utf-8",
+            )
+            (answers / "free-resource.html").write_text(
+                document(
+                    "free-resource",
+                    head=(
+                        '<meta name="iag-free-resource-first" content="true">'
+                    ),
+                ),
+                encoding="utf-8",
+            )
+            (answers / "redirect.html").write_text(
+                document(
+                    "redirect",
+                    head='<meta http-equiv="refresh" content="0">',
+                ),
+                encoding="utf-8",
+            )
+            second_link = (
+                '<a href="https://apps.apple.com/us/app/scan-to/id'
+                f'{aeo_answers.APPSTORE["scanto"]}">ScanTo</a>'
+            )
+            (answers / "comparison.html").write_text(
+                document(
+                    "comparison",
+                    body=snapport_link + second_link,
+                ),
+                encoding="utf-8",
+            )
+            (answers / "index.html").write_text(
+                document("index"),
+                encoding="utf-8",
+            )
+
+            count, changed = gen_image_sitemap.generate(pages)
+            output = pages / "sitemap_images.xml"
+            first_mtime = output.stat().st_mtime_ns
+            second_count, second_changed = gen_image_sitemap.generate(pages)
+            entries = dict(
+                gen_image_sitemap.collect(
+                    pages,
+                    include_hubs=True,
+                    include_answers=True,
+                )
+            )
+
+            self.assertEqual((2, True), (count, changed))
+            self.assertEqual((2, False), (second_count, second_changed))
+            self.assertEqual(first_mtime, output.stat().st_mtime_ns)
+            self.assertEqual(
+                {
+                    f"{gen_image_sitemap.SITE}/stories/story.html": (
+                        f"{gen_image_sitemap.SITE}/stories/poster.jpg"
+                    ),
+                    f"{gen_image_sitemap.SITE}/answers/single-app.html": image_url,
+                },
+                entries,
+            )
+
+    def test_slug_app_store_answers_reconcile_before_image_sitemap(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            stories = pages / "stories"
+            stories.mkdir()
+            (stories / "poster.jpg").write_bytes(b"poster")
+            (stories / "story.html").write_text(
+                '<link rel="canonical" href="'
+                f'{gen_image_sitemap.SITE}/stories/story.html">'
+                '<amp-story poster-portrait-src="'
+                f'{gen_image_sitemap.SITE}/stories/poster.jpg">',
+                encoding="utf-8",
+            )
+            answers = pages / "answers"
+            answers.mkdir()
+            image = pages / "social" / "img" / "snapport-share.jpg"
+            image.parent.mkdir(parents=True)
+            Image.new(
+                "RGB",
+                gen_image_sitemap.ANSWER_IMAGE_SIZE,
+                (42, 67, 101),
+            ).save(image, "JPEG")
+            snapport_id = aeo_answers.APPSTORE["snapport"]
+            scanto_id = aeo_answers.APPSTORE["scanto"]
+
+            def document(name: str, links: str) -> str:
+                canonical = (
+                    f"{gen_image_sitemap.SITE}/answers/{name}.html"
+                )
+                return (
+                    "<html><head>"
+                    f"<title>{name}</title>"
+                    f'<meta name="description" content="{name} guide.">'
+                    f'<link rel="canonical" href="{canonical}">'
+                    '<meta name="twitter:card" content="summary">'
+                    "<style></style></head>"
+                    f"<body><main>{links}</main></body></html>"
+                )
+
+            slug_only = answers / "slug-only.html"
+            slug_only.write_text(
+                document(
+                    "slug-only",
+                    '<a href="https://apps.apple.com/us/app/snapport/id'
+                    f'{snapport_id}">Snapport</a>'
+                    f"{gen_smart_app_banners.MOBILE_CTA_BLOCK_START}"
+                    '<a href="https://apps.apple.com/app/id'
+                    f'{scanto_id}">Stale ScanTo CTA</a>'
+                    f"{gen_smart_app_banners.MOBILE_CTA_BLOCK_END}",
+                ),
+                encoding="utf-8",
+            )
+            mixed = answers / "mixed-comparison.html"
+            mixed.write_text(
+                document(
+                    "mixed-comparison",
+                    '<a href="https://apps.apple.com/app/id'
+                    f'{snapport_id}">Snapport</a>'
+                    '<a href="https://apps.apple.com/us/app/scan-to/id'
+                    f'{scanto_id}">ScanTo</a>',
+                ),
+                encoding="utf-8",
+            )
+
+            result = gen_social_previews.reconcile_answer_metadata(
+                pages,
+                {"snapport", "scanto"},
+                {
+                    "snapport": "Snapport",
+                    "scanto": "ScanTo",
+                },
+            )
+            entries = dict(
+                gen_image_sitemap.collect(
+                    pages,
+                    include_answers=True,
+                )
+            )
+
+            self.assertEqual(
+                {"answer_metadata_pages": 1, "changed_files": 1},
+                result,
+            )
+            self.assertIn(
+                gen_social_previews.ANSWER_BLOCK_START,
+                slug_only.read_text(encoding="utf-8"),
+            )
+            self.assertNotIn(
+                gen_social_previews.ANSWER_BLOCK_START,
+                mixed.read_text(encoding="utf-8"),
+            )
+            self.assertEqual(
+                (
+                    f"{gen_image_sitemap.SITE}/social/img/"
+                    "snapport-share.jpg"
+                ),
+                entries[
+                    f"{gen_image_sitemap.SITE}/answers/slug-only.html"
+                ],
+            )
+            self.assertNotIn(
+                f"{gen_image_sitemap.SITE}/answers/mixed-comparison.html",
+                entries,
+            )
+
+            duplicate = answers / "duplicate-href.html"
+            duplicate.write_text(
+                document(
+                    "duplicate-href",
+                    '<a href="https://example.com/unsafe" '
+                    'href="https://apps.apple.com/app/id'
+                    f'{snapport_id}">Duplicate href</a>',
+                ),
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(
+                ValueError,
+                "duplicate anchor href attributes",
+            ):
+                gen_social_previews.reconcile_answer_metadata(
+                    pages,
+                    {"snapport", "scanto"},
+                    {
+                        "snapport": "Snapport",
+                        "scanto": "ScanTo",
+                    },
+                )
+            with self.assertRaisesRegex(
+                ValueError,
+                "duplicate anchor href attributes",
+            ):
+                gen_image_sitemap.collect(
+                    pages,
+                    include_answers=True,
+                )
+            duplicate.unlink()
+
+            for unsafe_url in (
+                (
+                    "https://apps.apple.com/app/id"
+                    f"{snapport_id}/../../app/id{scanto_id}"
+                ),
+                (
+                    "https://apps.apple.com/app/%2e%2e/"
+                    f"id{snapport_id}"
+                ),
+            ):
+                with self.assertRaisesRegex(
+                    ValueError,
+                    "Invalid direct App Store URL",
+                ):
+                    answer_app_store_links.canonical_app_store_url(unsafe_url)
+
+            unsafe = answers / "unsafe-app-store-path.html"
+            unsafe.write_text(
+                document(
+                    "unsafe-app-store-path",
+                    '<a href="https://apps.apple.com/app/id'
+                    f'{snapport_id}/../../app/id{scanto_id}">'
+                    "Unsafe path</a>",
+                ),
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(
+                ValueError,
+                "invalid direct App Store URL",
+            ):
+                gen_social_previews.reconcile_answer_metadata(
+                    pages,
+                    {"snapport", "scanto"},
+                    {
+                        "snapport": "Snapport",
+                        "scanto": "ScanTo",
+                    },
+                )
+            with self.assertRaisesRegex(
+                ValueError,
+                "invalid direct App Store URL",
+            ):
+                gen_image_sitemap.collect(
+                    pages,
+                    include_answers=True,
+                )
+
+    def test_image_sitemap_rejects_unsafe_answer_preview_metadata(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            stories = pages / "stories"
+            stories.mkdir()
+            (stories / "poster.jpg").write_bytes(b"poster")
+            (stories / "story.html").write_text(
+                '<link rel="canonical" href="'
+                f'{gen_image_sitemap.SITE}/stories/story.html">'
+                '<amp-story poster-portrait-src="'
+                f'{gen_image_sitemap.SITE}/stories/poster.jpg">',
+                encoding="utf-8",
+            )
+            answers = pages / "answers"
+            answers.mkdir()
+            image = pages / "social" / "img" / "snapport-share.jpg"
+            image.parent.mkdir(parents=True)
+            Image.new(
+                "RGB",
+                gen_image_sitemap.ANSWER_IMAGE_SIZE,
+                (42, 67, 101),
+            ).save(image, "JPEG")
+            image_url = (
+                f"{gen_image_sitemap.SITE}/social/img/snapport-share.jpg"
+            )
+            block = gen_social_previews.answer_metadata_block(
+                "snapport",
+                "Snapport",
+                image_url,
+            )
+            answer = answers / "unsafe.html"
+            canonical = (
+                f"{gen_image_sitemap.SITE}/answers/unsafe.html"
+            )
+            app_link = (
+                '<a href="https://apps.apple.com/app/id'
+                f'{aeo_answers.APPSTORE["snapport"]}">Snapport</a>'
+            )
+
+            def document(metadata: str, page_url: str = canonical) -> str:
+                return (
+                    "<html><head>"
+                    f'<link rel="canonical" href="{page_url}">'
+                    f"{metadata}</head><body>{app_link}</body></html>"
+                )
+
+            answer.write_text(
+                document(
+                    '<meta property="og:image" '
+                    'content="https://example.com/unmanaged.jpg">'
+                ),
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(ValueError, "unmanaged image metadata"):
+                gen_image_sitemap.collect(pages, include_answers=True)
+
+            answer.write_text(
+                document(
+                    block
+                    + '<meta property="og:image:url" '
+                    f'content="{image_url}">'
+                ),
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(
+                ValueError,
+                "unmanaged Answer social preview metadata",
+            ):
+                gen_image_sitemap.collect(pages, include_answers=True)
+
+            answer.write_text(
+                document(
+                    block.replace(
+                        '<meta name="twitter:image:alt" '
+                        'content="Snapport iOS app preview">',
+                        "",
+                    )
+                ),
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(ValueError, "incomplete"):
+                gen_image_sitemap.collect(pages, include_answers=True)
+
+            answer.write_text(
+                document(
+                    block,
+                    f"{gen_image_sitemap.SITE}/answers/other.html",
+                ),
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(ValueError, "published path"):
+                gen_image_sitemap.collect(pages, include_answers=True)
+
+            wrong_image_url = (
+                f"{gen_image_sitemap.SITE}/social/img/scanto-share.jpg"
+            )
+            answer.write_text(
+                document(
+                    gen_social_previews.answer_metadata_block(
+                        "scanto",
+                        "ScanTo",
+                        wrong_image_url,
+                    )
+                ),
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(
+                ValueError,
+                "does not match App Store ID",
+            ):
+                gen_image_sitemap.collect(pages, include_answers=True)
+
+            answer.write_text(
+                document(
+                    block.replace(
+                        f'content="{image_url}"',
+                        (
+                            'content="https://example.com/evil.jpg" '
+                            f'content="{image_url}"'
+                        ),
+                        1,
+                    )
+                ),
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(
+                ValueError,
+                "duplicate metadata attributes",
+            ):
+                gen_image_sitemap.collect(pages, include_answers=True)
+
+            answer.write_text(
+                document(block + '<meta property="og:image">'),
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(
+                ValueError,
+                "unmanaged Answer social preview metadata",
+            ):
+                gen_image_sitemap.collect(pages, include_answers=True)
+
+            answer.write_text(document(block), encoding="utf-8")
+            Image.new("RGB", (32, 32), (42, 67, 101)).save(image, "JPEG")
+            with self.assertRaisesRegex(ValueError, "1200x675 JPEG"):
+                gen_image_sitemap.collect(pages, include_answers=True)
 
     def test_rfc9264_linkset_covers_app_relations_and_is_idempotent(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -1709,6 +2158,7 @@ class GeneratorTests(unittest.TestCase):
             primary = root / "primary.html"
             ghost = root / "ghost.html"
             plain = root / "plain.html"
+            slug = root / "slug.html"
             stale = root / "stale.html"
             invalid = root / "invalid.html"
             primary.write_text(
@@ -1737,6 +2187,13 @@ class GeneratorTests(unittest.TestCase):
                 "<span>Fallback</span> label</a></main></body>",
                 encoding="utf-8",
             )
+            slug.write_text(
+                "<body><main><section class=\"hero\">"
+                '<a class="cta" href="https://apps.apple.com/us/app/'
+                'lumi-bopomofo/id6773017109?ct=slug&amp;mt=8">'
+                "Slug App Store link</a></section></main></body>",
+                encoding="utf-8",
+            )
             stale.write_text(
                 "<body><main>No direct link</main>"
                 f"{gen_mobile_store_ctas.BLOCK_START}"
@@ -1753,6 +2210,14 @@ class GeneratorTests(unittest.TestCase):
                         path, "6773017109"
                     )
                 )
+            self.assertTrue(
+                gen_mobile_store_ctas.ensure_mobile_cta(slug, "6773017109")
+            )
+            slug_mtime = slug.stat().st_mtime_ns
+            self.assertFalse(
+                gen_mobile_store_ctas.ensure_mobile_cta(slug, "6773017109")
+            )
+            self.assertEqual(slug_mtime, slug.stat().st_mtime_ns)
             mtimes = {
                 path: path.stat().st_mtime_ns
                 for path in (primary, ghost, plain)
@@ -1785,6 +2250,54 @@ class GeneratorTests(unittest.TestCase):
                 generated_source,
             )
             self.assertNotIn("?ct=", generated_source)
+            slug_source = slug.read_text(encoding="utf-8")
+            slug_generated = gen_mobile_store_ctas.BLOCK_RE.search(slug_source)
+            self.assertIsNotNone(slug_generated)
+            self.assertIn(
+                'href="https://apps.apple.com/us/app/id6773017109"',
+                slug_generated.group(0),
+            )
+            self.assertNotIn(
+                "/lumi-bopomofo/",
+                slug_generated.group(0),
+            )
+            self.assertIn(
+                '[href*="/app/"][href*="/id"]',
+                gen_mobile_store_ctas.SCRIPT,
+            )
+            self.assertNotIn(
+                '[href*="/app/id"]',
+                gen_mobile_store_ctas.SCRIPT,
+            )
+            self.assertEqual(
+                gen_mobile_store_ctas.SCRIPT,
+                (
+                    Path(gen_mobile_store_ctas.PAGES)
+                    / gen_mobile_store_ctas.ASSET_RELATIVE
+                ).read_text(encoding="utf-8"),
+            )
+            self.assertEqual(
+                (
+                    "https://apps.apple.com/us/app/id6773017109",
+                    "Trailing slash",
+                ),
+                gen_mobile_store_ctas.app_store_cta(
+                    '<a href="https://apps.apple.com/us/app/'
+                    'lumi-bopomofo/id6773017109/">Trailing slash</a>',
+                    "6773017109",
+                ),
+            )
+            self.assertEqual(
+                (
+                    "https://apps.apple.com/us/app/id6773017109",
+                    "Fragment",
+                ),
+                gen_mobile_store_ctas.app_store_cta(
+                    '<a href="https://apps.apple.com/us/app/'
+                    'lumi-bopomofo/id6773017109#details">Fragment</a>',
+                    "6773017109",
+                ),
+            )
             self.assertIn(
                 'src="/ios-app-guide/assets/mobile-store-cta-v1.js"',
                 generated_source,
@@ -23930,6 +24443,54 @@ class GeneratorTests(unittest.TestCase):
                 ] = image
         self.assertEqual(len(live) * (len(OFFICIAL_LOCALES) + 1), len(expected))
         self.assertEqual(expected, {url: entries[url] for url in expected})
+        self.assertEqual(len(live), len(set(expected.values())))
+
+    def test_image_sitemap_covers_every_managed_answer_large_preview(self):
+        pages = Path(gen_hubs.PAGES)
+        entries = dict(
+            gen_image_sitemap.collect(
+                pages,
+                include_answers=True,
+            )
+        )
+        prefix = f"{gen_image_sitemap.SITE}/answers/"
+        answer_entries = {
+            url: image for url, image in entries.items() if url.startswith(prefix)
+        }
+        expected = {}
+        for path in sorted((pages / "answers").glob("*.html")):
+            source = path.read_text(encoding="utf-8")
+            if gen_image_sitemap.ANSWER_BLOCK_START not in source:
+                continue
+            self.assertNotEqual("index.html", path.name)
+            self.assertEqual(
+                1,
+                source.count(gen_image_sitemap.ANSWER_BLOCK_START),
+                path,
+            )
+            self.assertEqual(
+                1,
+                source.count(gen_image_sitemap.ANSWER_BLOCK_END),
+                path,
+            )
+            block = gen_image_sitemap.ANSWER_BLOCK_RE.search(source)
+            self.assertIsNotNone(block, path)
+            images = re.findall(
+                r'<meta property="og:image" content="([^"]+)">',
+                block.group("body"),
+            )
+            self.assertEqual(1, len(images), path)
+            expected[f"{prefix}{path.name}"] = images[0]
+
+        live = set(
+            gen_hubs.live_app_keys(
+                gen_hubs.APPSTORE,
+                gen_hubs.PAGES,
+                refresh=False,
+            )
+        )
+        self.assertGreaterEqual(len(expected), 1453)
+        self.assertEqual(expected, answer_entries)
         self.assertEqual(len(live), len(set(expected.values())))
 
     def test_topic_hub_falls_back_to_native_guide_for_new_live_app(self):

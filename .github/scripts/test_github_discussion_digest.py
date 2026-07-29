@@ -289,6 +289,52 @@ class PublisherDecisionTests(unittest.TestCase):
 
 
 class GraphQLSafetyTests(unittest.TestCase):
+    @staticmethod
+    def repository_payload(permission: object) -> dict[str, object]:
+        return {
+            "repository": {
+                "id": "R_kwDORepository",
+                "nameWithOwner": digest.NAME_WITH_OWNER,
+                "visibility": "PUBLIC",
+                "isPrivate": False,
+                "isArchived": False,
+                "isDisabled": False,
+                "hasDiscussionsEnabled": True,
+                "viewerPermission": permission,
+                "discussionCategories": {
+                    "totalCount": 1,
+                    "pageInfo": {"hasNextPage": False},
+                    "nodes": [
+                        {
+                            "id": "DIC_kwDOAnnouncements",
+                            "name": digest.CATEGORY_NAME,
+                            "slug": digest.CATEGORY_SLUG,
+                            "isAnswerable": False,
+                        }
+                    ],
+                },
+                "discussions": {
+                    "totalCount": 0,
+                    "pageInfo": {"hasNextPage": False},
+                    "nodes": [],
+                },
+            },
+            "rateLimit": {"remaining": 5_000},
+        }
+
+    def test_granular_actions_token_read_repository_permission_is_valid(self):
+        client = mock.Mock()
+        client.execute.return_value = self.repository_payload("READ")
+        loaded = digest.load_repository_state(client)
+        self.assertEqual("R_kwDORepository", loaded.repository_id)
+        self.assertEqual((), loaded.managed)
+
+    def test_missing_repository_permission_fails_closed(self):
+        client = mock.Mock()
+        client.execute.return_value = self.repository_payload(None)
+        with self.assertRaisesRegex(digest.PublisherError, "viewerPermission"):
+            digest.load_repository_state(client)
+
     def test_mutation_transport_uncertainty_is_never_retried(self):
         opener = mock.Mock(side_effect=urllib.error.URLError("connection reset"))
         client = digest.GraphQLClient("workflow-token", opener=opener)

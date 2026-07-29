@@ -571,10 +571,20 @@ def load_repository_state(client: GraphQLClient) -> RepositoryState:
         or repository.get("isArchived") is not False
         or repository.get("isDisabled") is not False
         or repository.get("hasDiscussionsEnabled") is not True
-        or repository.get("viewerPermission") not in {"WRITE", "MAINTAIN", "ADMIN"}
     ):
         raise PublisherError(
-            "Repository identity, public state, Discussions state, or permission is unsafe"
+            "Repository identity, public state, or Discussions state is unsafe: "
+            f"nameWithOwner={repository.get('nameWithOwner')!r}, "
+            f"visibility={repository.get('visibility')!r}, "
+            f"isPrivate={repository.get('isPrivate')!r}, "
+            f"isArchived={repository.get('isArchived')!r}, "
+            f"isDisabled={repository.get('isDisabled')!r}, "
+            f"hasDiscussionsEnabled={repository.get('hasDiscussionsEnabled')!r}"
+        )
+    permission = repository.get("viewerPermission")
+    if permission not in {"READ", "TRIAGE", "WRITE", "MAINTAIN", "ADMIN"}:
+        raise PublisherError(
+            f"Repository viewerPermission was missing or abnormal: {permission!r}"
         )
     repository_id = _valid_node_id(repository.get("id"), label="Repository")
     categories = _connection_nodes(

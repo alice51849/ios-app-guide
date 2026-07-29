@@ -1,0 +1,143 @@
+[
+  {
+    "app_key": "aibriefpack",
+    "kind": "privacy_buyer_guide",
+    "match": [
+      "best private app to organize screenshots and documents into context before using ai"
+    ],
+    "query": "best private app to organize screenshots and documents into context before using AI",
+    "page_title": "Private AI Context Preparation on iPhone: What to Check",
+    "meta_description": "Evaluate source traceability, on-device extraction, privacy review and deliberate export before choosing an iPhone app to prepare context for AI.",
+    "lead": "A private AI-context workflow should let you assemble the complete source set, inspect what was extracted and decide what leaves the device instead of silently uploading files or removing detected details.",
+    "detail": "AI Brief accepts screenshots, PDFs, files, copied text, notes and links. Its published description says OCR, PDF reading, duplicate checks, fact extraction and privacy detection use Apple frameworks locally. Each extracted fact retains its source and confidence, while conflicts and open questions remain visible for review. Detected private details are never removed automatically: the user chooses whether to keep, replace or remove each item, and those choices are applied when exporting. The app does not promise anonymity, so the final brief still requires human review before it is shared with any AI service.",
+    "bullets": [
+      "Confirm that extraction identifies the source and confidence for each fact",
+      "Keep conflicts and open questions visible instead of flattening them into a confident summary",
+      "Require explicit keep, replace or remove choices for detected private details",
+      "Review the final brief before deliberately copying, sharing or saving it",
+      "Verify the current App Store privacy details, compatibility and purchase offer"
+    ],
+    "decision_steps": [
+      "Collect a small non-sensitive sample containing the same source types you normally use.",
+      "Check whether every extracted fact can be traced back to a source.",
+      "Review low-confidence facts, conflicts and open questions before editing the brief.",
+      "Inspect every detected private detail and choose whether to keep, replace or remove it.",
+      "Export only after the final brief accurately reflects the source material and your privacy choices."
+    ],
+    "where_app_fits": "AI Brief fits people preparing traceable, privacy-reviewed context from mixed local sources before they deliberately send it to an AI assistant. It is free to start with an optional one-time lifetime Pro unlock, with no recurring subscription, account, third-party advertising, tracking, analytics or content telemetry.",
+    "sources": [
+      {
+        "title": "AI Brief on the App Store",
+        "url": "https://apps.apple.com/app/id6791658210"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does AI Brief automatically upload my source files to an AI service?",
+        "a": "No. Its published description says OCR, PDF reading, duplicate checks, fact extraction and privacy detection use Apple frameworks locally. You review the resulting brief and explicitly choose whether and where to share it."
+      },
+      {
+        "q": "Does privacy detection guarantee anonymity?",
+        "a": "No. Detected details are never removed automatically, and AI Brief does not promise anonymity. You decide whether to keep, replace or remove each item before export."
+      },
+      {
+        "q": "Is AI Brief a subscription?",
+        "a": "No. It is free to start with one optional lifetime Pro purchase and no recurring subscription."
+      }
+    ]
+  },
+  {
+    "app_key": "aibriefpack",
+    "kind": "mixed_source_workflow",
+    "match": [
+      "organize context for ai app"
+    ],
+    "query": "best organize context for AI app",
+    "page_title": "How to Organize Mixed Sources into Reviewable AI Context",
+    "meta_description": "Turn screenshots, PDFs, files, notes and links into a source-linked brief while preserving conflicts, confidence and privacy choices.",
+    "lead": "Organizing context for AI is less about producing a fast summary and more about building a reviewable evidence packet whose facts, sources, uncertainty and privacy choices remain visible.",
+    "detail": "Begin by collecting the complete set of screenshots, PDFs, files, copied text, notes and links for one task. Processing should start only after the source set is ready, so related evidence can be reviewed together. AI Brief structures extracted facts with source references and confidence, highlights conflicts and open questions, and lets the user correct missing context. Purpose-specific templates and version history support reuse, while the Share Extension provides another deliberate intake path. The reviewed brief can then be copied, shared or saved to the destination the user chooses rather than being locked to one AI provider.",
+    "bullets": [
+      "Collect all relevant source types before processing",
+      "Preserve source references and confidence instead of keeping only summary prose",
+      "Review conflicts and open questions as first-class parts of the brief",
+      "Use templates and version history when the workflow repeats",
+      "Choose the export destination only after the brief has been reviewed"
+    ],
+    "decision_steps": [
+      "Define the question the eventual AI task needs to answer.",
+      "Import or paste every source that materially affects that question.",
+      "Review extracted facts against their source references and confidence.",
+      "Resolve conflicts where possible and leave genuinely open questions visible.",
+      "Save a reviewed version, then deliberately export it to the chosen destination."
+    ],
+    "where_app_fits": "AI Brief is designed for knowledge workers, researchers and freelancers who need to turn mixed local sources into a reusable, traceable brief before sharing it with any AI assistant. The main app and Share Extension support deliberate collection, review, history and export.",
+    "sources": [
+      {
+        "title": "AI Brief on the App Store",
+        "url": "https://apps.apple.com/app/id6791658210"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Which source types can AI Brief combine?",
+        "a": "Its published description lists screenshots, PDFs, files, copied text, notes and links."
+      },
+      {
+        "q": "Can I see where an extracted fact came from?",
+        "a": "Yes. The published workflow keeps a source and confidence with each fact so you can review it before export."
+      },
+      {
+        "q": "Do I have to send the brief to one specific AI provider?",
+        "a": "No. You review the brief first and then deliberately copy, share or save it to the destination you choose."
+      }
+    ]
+  },
+  {
+    "app_key": "aibriefpack",
+    "kind": "screenshot_to_brief_workflow",
+    "match": [
+      "turn screenshots into ai brief app"
+    ],
+    "query": "best turn screenshots into AI brief app",
+    "page_title": "Turn Screenshots into a Traceable AI Brief on iPhone",
+    "meta_description": "Use on-device OCR, source-linked facts, conflict review and explicit privacy choices to prepare screenshots for an AI brief.",
+    "lead": "Screenshots often preserve useful evidence but lose surrounding context, so a reliable screenshot-to-brief workflow must keep the image as a source, expose uncertain extraction and require review before export.",
+    "detail": "AI Brief uses on-device OCR through Apple frameworks to extract text from screenshots and can combine those images with PDFs, files, copied text, notes and links. The useful output is not an unexplained block of prose: each fact keeps its source and confidence, conflicts and open questions remain visible, and the user can correct context. Privacy detection is also review-first. AI Brief never removes detected details automatically or claims anonymity; the user chooses whether each detail is kept, replaced or removed, and the final choice is applied during export.",
+    "bullets": [
+      "Keep each screenshot attached to the facts extracted from it",
+      "Surface low-confidence OCR instead of silently treating it as certain",
+      "Compare screenshots with other files or notes when they disagree",
+      "Review detected private details one by one before export",
+      "Retain open questions when the screenshots do not provide enough context"
+    ],
+    "decision_steps": [
+      "Select the screenshots that directly support the task.",
+      "Add any PDF, note, file or link needed to restore missing context.",
+      "Review OCR text and every source-linked fact for accuracy.",
+      "Resolve conflicts and inspect each privacy detection.",
+      "Copy, share or save the brief only after the review is complete."
+    ],
+    "where_app_fits": "AI Brief fits screenshot-heavy research, client work and planning tasks where the user needs a structured, source-linked brief rather than an automatic opaque summary. Processing and privacy detection use Apple frameworks locally, and sharing remains a deliberate user action.",
+    "sources": [
+      {
+        "title": "AI Brief on the App Store",
+        "url": "https://apps.apple.com/app/id6791658210"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does AI Brief use on-device OCR for screenshots?",
+        "a": "Yes. Its published description says OCR uses Apple frameworks locally."
+      },
+      {
+        "q": "What happens when two screenshots conflict?",
+        "a": "The workflow keeps conflicts and open questions visible so you can review and correct the brief instead of hiding the disagreement."
+      },
+      {
+        "q": "Are detected private details removed automatically?",
+        "a": "No. You choose whether to keep, replace or remove each detected detail, and the choice is applied during export."
+      }
+    ]
+  }
+]

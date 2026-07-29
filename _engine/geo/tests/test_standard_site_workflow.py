@@ -2,13 +2,23 @@
 """Workflow wiring checks for Standard.site Guide reconciliation."""
 
 import hashlib
+from datetime import datetime, timezone
+import os
 from pathlib import Path
 import re
+import sys
 import unittest
 
 
 ROOT = Path(__file__).resolve().parents[3]
 WORKFLOW = ROOT / ".github/workflows/geo-daily.yml"
+os.environ.setdefault("STANDARD_SITE_ENGINE_ROOT", str(ROOT / "_engine"))
+os.environ.setdefault("GEO_PAGES", str(ROOT))
+sys.path.insert(0, str(ROOT / "_engine/social"))
+
+import gen_standard_site as generator  # noqa: E402
+
+
 MIRROR_SHA256 = {
     "_engine/social/gen_standard_site.py": (
         "2e0e0ad340cb716001bcc467c5ad396b363e2882c1eb3025606bc97998b843cf"
@@ -58,6 +68,36 @@ class StandardSiteWorkflowTests(unittest.TestCase):
             '              -p "test_standard_site.py"',
             self.source,
         )
+
+    def test_ai_brief_has_three_deployed_deep_documents(self):
+        manifest = generator.build_manifest(
+            pages=ROOT,
+            max_per_app=3,
+            now=datetime(2026, 7, 30, tzinfo=timezone.utc),
+        )
+        documents = [
+            document
+            for document in manifest["documents"]
+            if document["app_key"] == "aibriefpack"
+        ]
+        self.assertEqual(3, len(documents))
+        self.assertEqual(
+            {
+                "/answers/"
+                "best-private-app-to-organize-screenshots-and-documents-"
+                "into-context-before-using-ai.html",
+                "/answers/best-organize-context-for-ai-app.html",
+                "/answers/best-turn-screenshots-into-ai-brief-app.html",
+            },
+            {document["path"] for document in documents},
+        )
+        combined = " ".join(
+            document["text_content"] for document in documents
+        ).casefold()
+        self.assertIn("source and confidence", combined)
+        self.assertIn("never removed automatically", combined)
+        self.assertIn("does not promise anonymity", combined)
+        self.assertIn("publisher disclosure:", combined)
 
     def test_every_sync_has_timeout_retry_and_initial_404_policy(self):
         commands = re.findall(

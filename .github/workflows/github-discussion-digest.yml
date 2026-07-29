@@ -1,0 +1,37 @@
+name: Official GitHub Discussion digest
+
+on:
+  schedule:
+    - cron: "17 4 3 * *"
+  workflow_dispatch:
+    inputs:
+      bootstrap:
+        description: Create and immediately lock the single official Discussion
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  discussions: write
+
+concurrency:
+  group: official-github-discussion-digest
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Verify fail-closed Discussion publisher
+        run: python3 .github/scripts/test_github_discussion_digest.py -q -b
+      - name: Update the locked official Discussion
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          DISCUSSION_BOOTSTRAP: ${{ inputs.bootstrap && 'true' || 'false' }}
+        run: python3 .github/scripts/github_discussion_digest.py

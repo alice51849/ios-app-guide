@@ -19735,6 +19735,46 @@ class GeneratorTests(unittest.TestCase):
             plan,
         )
 
+    def test_bopomofo_trace_sheet_full_lead_has_zh_hant_translation(self):
+        source = (
+            "Make deterministic A4 Bopomofo trace-and-copy sheets for any of "
+            "the 37 official symbols, without names, uploads, saved work, "
+            "scores, or handwriting assessment."
+        )
+        translations = json.loads(
+            refresh_primary_resource_answers.TRANSLATIONS.read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual(
+            "為 37 個官方注音符號中的任一符號產生版面固定一致的 A4 描寫與"
+            "抄寫練習單,不需填寫姓名或上傳資料,也不會儲存作業、評分或進行"
+            "筆跡評量。",
+            translations[source],
+        )
+
+    def test_all_primary_resource_pages_have_complete_zh_hant_translations(self):
+        translations = json.loads(
+            refresh_primary_resource_answers.TRANSLATIONS.read_text(
+                encoding="utf-8"
+            )
+        )
+        for app_key, question, slug in (
+            refresh_primary_resource_answers.primary_resource_plan()
+        ):
+            with self.subTest(slug=slug):
+                content = aeo_answers.normalized_content(
+                    aeo_answers.default_content(question, app_key),
+                    question,
+                    app_key,
+                )
+                page = aeo_answers.render_page(question, app_key, content)
+                strings, _, _ = aeo_answers_i18n.extract_strings(page)
+                self.assertEqual(
+                    [],
+                    [string for string in strings if string not in translations],
+                )
+
     def test_live_primary_resource_answers_have_no_early_app_ctas(self):
         pages = Path(GEO) / "pages"
         live = set(

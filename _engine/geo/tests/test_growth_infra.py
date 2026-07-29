@@ -22674,7 +22674,13 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(1, workflow.count("wordmate_language_support.py"))
         self.assertEqual(1, workflow.count("portfolio_app_finder.py"))
         self.assertEqual(1, workflow.count("portfolio_cost_calculator.py"))
-        self.assertEqual(1, workflow.count("outreach_scorecard.py"))
+        self.assertEqual(2, workflow.count("outreach_scorecard.py"))
+        first_scorecard = workflow.index("outreach_scorecard.py")
+        answer_generation = workflow.index("aeo_answers.py --cached-live")
+        final_scorecard = workflow.index(
+            "outreach_scorecard.py", first_scorecard + 1
+        )
+        english_commit = workflow.index("Commit English content first")
         self.assertLess(
             workflow.index("portfolio_app_finder.py"),
             workflow.index("portfolio_cost_calculator.py"),
@@ -22684,9 +22690,11 @@ class GeneratorTests(unittest.TestCase):
             workflow.index("outreach_scorecard.py"),
         )
         self.assertLess(
-            workflow.index("outreach_scorecard.py"),
-            workflow.index("aeo_answers.py --cached-live"),
+            first_scorecard,
+            answer_generation,
         )
+        self.assertLess(answer_generation, final_scorecard)
+        self.assertLess(final_scorecard, english_commit)
         self.assertEqual(
             1,
             workflow.count("refresh_storefront_availability.py"),

@@ -233,6 +233,7 @@ jobs:
           python3 zhuyin_resourcesync.py
           python3 gen_feed.py
           python3 reconcile_answer_semantics.py
+          python3 outreach_scorecard.py
           cd "$GITHUB_WORKSPACE"
           python3 _engine/geo/sync_standard_site.py \
             --site-root "$GITHUB_WORKSPACE" \

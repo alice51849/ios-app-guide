@@ -21838,6 +21838,26 @@ class GeneratorTests(unittest.TestCase):
             r"\bfamily\b|\blearning\b|complete-content",
         )
 
+    def test_ai_brief_has_disclosed_first_party_alternative_hub(self):
+        fallback = aeo_pages.CURATED_FALLBACK["aibriefpack"]
+        self.assertEqual([], fallback["top_competitors"])
+        self.assertEqual(
+            ("context organizer for AI", "BusinessApplication"),
+            aeo_pages.cat_noun("aibriefpack"),
+        )
+        slug, page = aeo_pages.hub_page(
+            "aibriefpack",
+            fallback["gap_queries"],
+        )
+        self.assertEqual("aibriefpack-free-to-start", slug)
+        self.assertIn("one-time lifetime unlock", page)
+        self.assertIn("Publisher disclosure:", page)
+        self.assertIn(
+            "not an independent review or ranking",
+            " ".join(page.split()),
+        )
+        self.assertNotIn("Independent comparison", page)
+
     def test_roundup_cli_can_generate_only_selected_apps(self):
         argv = ["gen_roundups.py", "dailymate"]
         with (
@@ -21870,6 +21890,15 @@ class GeneratorTests(unittest.TestCase):
                 aeo_pages.build_index(["sample.html"])
             alternative_index = (alternatives / "index.html").read_text(
                 encoding="utf-8",
+            )
+            self.assertIn("Publisher disclosure:", alternative_index)
+            self.assertIn(
+                "not independent reviews or rankings",
+                alternative_index,
+            )
+            self.assertNotIn(
+                "Independent iPhone app alternatives",
+                alternative_index,
             )
 
             answers = root / "answers"

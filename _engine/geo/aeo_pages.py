@@ -87,6 +87,16 @@ CURATED_FALLBACK = {
             ["quizlet", 0],
         ],
     },
+    "aibriefpack": {
+        "key": "aibriefpack",
+        "gap_queries": [
+            "private app to organize screenshots and PDFs before using AI",
+            "AI context organizer with source tracking for prompts",
+            "on-device OCR brief app with no account",
+            "free-to-start AI brief app with a one-time unlock",
+        ],
+        "top_competitors": [],
+    },
 }
 
 # 類別 → 給人看的名詞 + schema 類別
@@ -307,6 +317,8 @@ def alternative_hub_slug(key):
 
 
 def cat_noun(key):
+    if key == "aibriefpack":
+        return "context organizer for AI", "BusinessApplication"
     if key == "dailymate":
         return "travel phrasebook app", "EducationalApplication"
     if key == "tripbeelite":
@@ -374,8 +386,10 @@ def page_shell(title, desc, canonical, schemas, body):
 <main>
 {body}
 <hr>
-<p><small>Independent comparison. App names are trademarks of their owners and are used
-for identification only.</small></p>
+<p><small><strong>Publisher disclosure:</strong> This first-party comparison is
+published by Lumi Studio, the developer of the featured app. It is not an
+independent review or ranking. Other app names are trademarks of their owners
+and are used for identification only.</small></p>
 </main>
 </body>
 </html>
@@ -677,13 +691,16 @@ def build_index(files):
         items.append(f'    <li><a href="{f}">{e(m.group(1) if m else f)}</a></li>')
     idx = (f'<!DOCTYPE html>\n<html lang="en"><head><meta charset="utf-8">\n'
            f'<meta name="viewport" content="width=device-width, initial-scale=1">\n'
-           f'<title>iPhone app alternatives — privacy and flexible pricing</title>\n'
-           f'<meta name="description" content="Independent iPhone app alternatives with privacy-first, free, pay-once and flexible unlock options.">\n'
+           f'<title>iPhone app alternatives — first-party Lumi Studio guides</title>\n'
+           f'<meta name="description" content="First-party Lumi Studio guides to privacy-focused, free, pay-once and flexible-unlock iPhone apps.">\n'
            f'<link rel="canonical" href="{SITE}/alternatives/index.html">\n'
            f'{alternative_hreflang_block(f"{SITE}/alternatives/index.html")}\n'
            f'{feed_discovery_links()}\n'
            f'</head><body><main>\n'
-           f'  <h1>Independent iPhone app alternatives</h1>\n  <ul>\n'
+           f'  <h1>iPhone app alternatives from Lumi Studio</h1>\n'
+           f'  <p><strong>Publisher disclosure:</strong> These are first-party guides '
+           f'published by Lumi Studio, the developer of every featured Lumi Studio '
+           f'app. They are not independent reviews or rankings.</p>\n  <ul>\n'
            + "\n".join(items) + "\n  </ul>\n</main></body></html>\n")
     Path(ALT, "index.html").write_text(idx, encoding="utf-8")
 

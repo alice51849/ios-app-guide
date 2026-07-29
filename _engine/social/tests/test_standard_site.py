@@ -4,13 +4,17 @@ from __future__ import annotations
 
 from copy import deepcopy
 from datetime import datetime, timezone
+from email.message import Message
+import io
 import json
 import os
 from pathlib import Path
 import shutil
 import sys
+from types import SimpleNamespace
 import unittest
 from unittest import mock
+import urllib.error
 import uuid
 
 
@@ -320,6 +324,131 @@ class StandardSiteTIDTests(unittest.TestCase):
         for value in ("url-hash-value", "1abcdefabcdef", "3abc-defghijk"):
             with self.assertRaises(ValueError):
                 publisher.decode_tid(value)
+
+
+class StandardSiteReadRetryTests(unittest.TestCase):
+    DID = "did:plc:testpublisher"
+    RKEY = "3lwafzkjqm25s"
+
+    @staticmethod
+    def http_error(
+        code: int,
+        *,
+        retry_after: str | None = None,
+        body: bytes = b'{"error":"UpstreamFailure"}',
+    ) -> urllib.error.HTTPError:
+        headers = Message()
+        if retry_after is not None:
+            headers["Retry-After"] = retry_after
+        return urllib.error.HTTPError(
+            "https://bsky.social/xrpc/test",
+            code,
+            "test error",
+            headers,
+            io.BytesIO(body),
+        )
+
+    def client(
+        self,
+        request: mock.Mock,
+        sleeps: list[float],
+    ) -> publisher.ExistingBlueskyRepoClient:
+        client = object.__new__(publisher.ExistingBlueskyRepoClient)
+        client._module = SimpleNamespace(
+            _req=request,
+            _err=lambda error: error.read().decode("utf-8"),
+        )
+        client._client = SimpleNamespace(_headers=lambda: {"Auth": "test"})
+        client.did = self.DID
+        client.pds_xrpc = "https://bsky.social/xrpc"
+        client._read_sleeper = sleeps.append
+        return client
+
+    def remote_record(self) -> dict[str, object]:
+        return {
+            "uri": (
+                f"at://{self.DID}/{publisher.DOCUMENT_COLLECTION}/{self.RKEY}"
+            ),
+            "cid": "bafyreiretrytest",
+            "value": {"$type": publisher.DOCUMENT_COLLECTION},
+        }
+
+    def test_list_records_retries_500_then_succeeds(self) -> None:
+        sleeps: list[float] = []
+        request = mock.Mock(
+            side_effect=[
+                self.http_error(500),
+                {"records": []},
+            ]
+        )
+        client = self.client(request, sleeps)
+
+        self.assertEqual([], client.list_records(publisher.DOCUMENT_COLLECTION))
+        self.assertEqual(2, request.call_count)
+        self.assertEqual([publisher.READ_RETRY_BASE_SECONDS], sleeps)
+
+    def test_get_record_honors_429_retry_after(self) -> None:
+        sleeps: list[float] = []
+        request = mock.Mock(
+            side_effect=[
+                self.http_error(429, retry_after="3"),
+                self.remote_record(),
+            ]
+        )
+        client = self.client(request, sleeps)
+
+        result = client.get_record(
+            publisher.DOCUMENT_COLLECTION, self.RKEY
+        )
+        self.assertEqual(self.remote_record(), result)
+        self.assertEqual(2, request.call_count)
+        self.assertEqual([3.0], sleeps)
+
+    def test_permanent_4xx_read_fails_without_retry(self) -> None:
+        sleeps: list[float] = []
+        request = mock.Mock(side_effect=self.http_error(403))
+        client = self.client(request, sleeps)
+
+        with self.assertRaises(urllib.error.HTTPError) as raised:
+            client.list_records(publisher.DOCUMENT_COLLECTION)
+        self.assertEqual(403, raised.exception.code)
+        raised.exception.close()
+        self.assertEqual(1, request.call_count)
+        self.assertEqual([], sleeps)
+
+    def test_transport_retries_share_a_bounded_total_wait(self) -> None:
+        sleeps: list[float] = []
+        operation = mock.Mock(
+            side_effect=urllib.error.URLError("temporarily offline")
+        )
+
+        with self.assertRaises(urllib.error.URLError):
+            publisher.read_with_retry(
+                operation,
+                sleeper=sleeps.append,
+                attempts=10,
+                base_delay=4,
+                max_delay=4,
+                max_total_wait=5,
+            )
+        self.assertEqual([4], sleeps)
+        self.assertLessEqual(sum(sleeps), 5)
+        self.assertEqual(2, operation.call_count)
+
+    def test_mutation_never_uses_read_retry(self) -> None:
+        sleeps: list[float] = []
+        request = mock.Mock(side_effect=self.http_error(500))
+        client = self.client(request, sleeps)
+
+        with self.assertRaises(urllib.error.HTTPError) as raised:
+            client.put_record(
+                publisher.DOCUMENT_COLLECTION,
+                self.RKEY,
+                {"$type": publisher.DOCUMENT_COLLECTION},
+            )
+        raised.exception.close()
+        self.assertEqual(1, request.call_count)
+        self.assertEqual([], sleeps)
 
 
 class StandardSiteSelectionTests(unittest.TestCase):

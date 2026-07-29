@@ -11,6 +11,7 @@ import argparse
 from contextlib import contextmanager
 from copy import deepcopy
 from datetime import date, datetime, timedelta, timezone
+from email.utils import parsedate_to_datetime
 import fcntl
 import hashlib
 import importlib.util
@@ -22,6 +23,7 @@ import secrets
 import sys
 import time
 from typing import Any, Callable, Iterator, Mapping, MutableMapping, Sequence
+import urllib.error
 from urllib.parse import urlencode, urlsplit
 
 from gen_standard_site import (
@@ -51,6 +53,10 @@ DEFAULT_WELL_KNOWN = PRIVATE_DIR / "site.standard.publication"
 DEFAULT_DAILY_LIMIT = int(os.environ.get("STANDARD_SITE_DAILY_LIMIT", "2"))
 LOCK_SUFFIX = ".lock"
 MAX_REMOTE_RECORDS = 5_000
+READ_RETRY_ATTEMPTS = 4
+READ_RETRY_BASE_SECONDS = 1.0
+READ_RETRY_MAX_SECONDS = 8.0
+READ_RETRY_TOTAL_WAIT_SECONDS = 20.0
 
 
 class ConfigurationError(RuntimeError):
@@ -63,6 +69,81 @@ class StateError(RuntimeError):
 
 class PublishError(RuntimeError):
     """An AT Protocol record could not be safely reconciled."""
+
+
+def _transient_read_error(error: BaseException) -> bool:
+    if isinstance(error, urllib.error.HTTPError):
+        return error.code in {408, 429} or 500 <= error.code <= 599
+    return isinstance(
+        error,
+        (urllib.error.URLError, TimeoutError, OSError),
+    )
+
+
+def _retry_after_seconds(
+    error: BaseException,
+    *,
+    now: Callable[[], datetime] = lambda: datetime.now(timezone.utc),
+) -> float | None:
+    if not isinstance(error, urllib.error.HTTPError):
+        return None
+    headers = getattr(error, "headers", None)
+    raw = headers.get("Retry-After") if headers is not None else None
+    if raw is None:
+        return None
+    try:
+        seconds = float(str(raw).strip())
+    except ValueError:
+        try:
+            retry_at = parsedate_to_datetime(str(raw))
+        except (TypeError, ValueError, OverflowError):
+            return None
+        if retry_at.tzinfo is None:
+            retry_at = retry_at.replace(tzinfo=timezone.utc)
+        seconds = (retry_at - now().astimezone(timezone.utc)).total_seconds()
+    return max(0.0, seconds)
+
+
+def read_with_retry(
+    operation: Callable[[], Any],
+    *,
+    sleeper: Callable[[float], None] = time.sleep,
+    attempts: int = READ_RETRY_ATTEMPTS,
+    base_delay: float = READ_RETRY_BASE_SECONDS,
+    max_delay: float = READ_RETRY_MAX_SECONDS,
+    max_total_wait: float = READ_RETRY_TOTAL_WAIT_SECONDS,
+    wait_budget: list[float] | None = None,
+) -> Any:
+    """Retry a pure ATProto read only, within one shared bounded wait budget."""
+    if (
+        attempts < 1
+        or base_delay < 0
+        or max_delay < 0
+        or max_total_wait < 0
+    ):
+        raise ValueError("Invalid ATProto read retry policy")
+    budget = wait_budget if wait_budget is not None else [0.0]
+    if len(budget) != 1 or budget[0] < 0:
+        raise ValueError("Invalid ATProto read retry budget")
+    for attempt in range(attempts):
+        try:
+            return operation()
+        except Exception as error:
+            if attempt + 1 >= attempts or not _transient_read_error(error):
+                raise
+            remaining = max_total_wait - budget[0]
+            if remaining <= 0:
+                raise
+            backoff = min(base_delay * (2**attempt), max_delay)
+            retry_after = _retry_after_seconds(error)
+            requested = max(backoff, retry_after or 0.0)
+            if requested <= 0 or requested > remaining:
+                raise
+            if isinstance(error, urllib.error.HTTPError):
+                error.close()
+            sleeper(requested)
+            budget[0] += requested
+    raise AssertionError("ATProto read retry loop exited unexpectedly")
 
 
 def utc_timestamp(value: datetime | None = None) -> str:
@@ -420,7 +501,14 @@ def record_hash(record: Mapping[str, object]) -> str:
 class ExistingBlueskyRepoClient:
     """Generic repo writes over the already-maintained Bluesky login helper."""
 
-    def __init__(self, handle: str, password: str, helper_path: Path) -> None:
+    def __init__(
+        self,
+        handle: str,
+        password: str,
+        helper_path: Path,
+        *,
+        read_sleeper: Callable[[float], None] = time.sleep,
+    ) -> None:
         helper_path = Path(helper_path)
         parent = str(helper_path.parent)
         module_name = "_growth_standard_site_multi_post"
@@ -450,16 +538,58 @@ class ExistingBlueskyRepoClient:
         self._client = module.Bluesky(handle, password)
         self.did = str(self._client.did)
         self.pds_xrpc = str(self._client.BASE)
+        self._read_sleeper = read_sleeper
+
+    def _read(
+        self,
+        operation: Callable[[], Any],
+        *,
+        wait_budget: list[float] | None = None,
+    ) -> Any:
+        return read_with_retry(
+            operation,
+            sleeper=self._read_sleeper,
+            wait_budget=wait_budget,
+        )
 
     def get_record(
         self, collection: str, rkey: str
     ) -> dict[str, object] | None:
-        return self._client._record(collection, rkey, missing_ok=True)
+        query = urlencode(
+            {
+                "repo": self.did,
+                "collection": collection,
+                "rkey": rkey,
+            }
+        )
+
+        def fetch() -> dict[str, object] | None:
+            try:
+                return self._module._req(
+                    f"{self.pds_xrpc}/com.atproto.repo.getRecord?{query}",
+                    headers=self._client._headers(),
+                )
+            except urllib.error.HTTPError as error:
+                if error.code == 400:
+                    detail = self._module._err(error)
+                    error.close()
+                    if '"RecordNotFound"' in detail:
+                        return None
+                    raise PublishError(
+                        f"PDS record lookup failed: HTTP 400: {detail}"
+                    ) from error
+                raise
+
+        result = self._read(fetch)
+        if result is None:
+            return None
+        return _validate_remote(result, collection, rkey)
 
     def list_records(self, collection: str) -> list[dict[str, object]]:
         records: list[dict[str, object]] = []
         cursor = ""
         seen_cursors: set[str] = set()
+        wait_budget = [0.0]
         while True:
             query: dict[str, str] = {
                 "repo": self.did,
@@ -468,10 +598,16 @@ class ExistingBlueskyRepoClient:
             }
             if cursor:
                 query["cursor"] = cursor
-            result = self._module._req(
+            url = (
                 f"{self.pds_xrpc}/com.atproto.repo.listRecords?"
-                f"{urlencode(query)}",
-                headers=self._client._headers(),
+                f"{urlencode(query)}"
+            )
+            result = self._read(
+                lambda: self._module._req(
+                    url,
+                    headers=self._client._headers(),
+                ),
+                wait_budget=wait_budget,
             )
             if not isinstance(result, Mapping) or not isinstance(
                 result.get("records"), list
@@ -501,6 +637,7 @@ class ExistingBlueskyRepoClient:
         *,
         swap_record: str | None = None,
     ) -> dict[str, object]:
+        """Make exactly one mutation attempt; callers reconcile uncertain results."""
         payload: dict[str, object] = {
             "repo": self.did,
             "collection": collection,

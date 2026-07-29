@@ -28,7 +28,7 @@ jobs:
         with:
           python-version: "3.x"
       - name: Verify social posting regressions
-        run: python3 .github/scripts/test_social_posting.py -q
+        run: python3 .github/scripts/test_social_posting.py -q -b
       - name: Publish every public app to Telegram
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -46,7 +46,7 @@ jobs:
         with:
           python-version: "3.x"
       - name: Verify social posting regressions
-        run: python3 .github/scripts/test_social_posting.py -q
+        run: python3 .github/scripts/test_social_posting.py -q -b
       - name: Publish every public app to Threads
         env:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}

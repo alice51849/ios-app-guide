@@ -37,7 +37,7 @@ jobs:
         if: steps.slot.outputs.should_post == 'true'
         run: |
           python3 .github/scripts/test_social_slot_gate.py -q
-          python3 .github/scripts/test_social_posting.py -q
+          python3 .github/scripts/test_social_posting.py -q -b
       - name: Post to Telegram channel (free, no OpenAI)
         if: steps.slot.outputs.should_post == 'true'
         env:

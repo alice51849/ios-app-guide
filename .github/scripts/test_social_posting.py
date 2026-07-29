@@ -960,7 +960,7 @@ class DevToGateTests(unittest.TestCase):
         {"title": "Second", "body": "two"},
     )
 
-    def test_workflow_serializes_publishers_and_buffers_test_output(self):
+    def test_workflow_serializes_publishers(self):
         workflow = os.path.join(
             portfolio_daily.REPO_ROOT,
             ".github",
@@ -972,7 +972,25 @@ class DevToGateTests(unittest.TestCase):
 
         self.assertIn("group: devto-publisher", text)
         self.assertIn("cancel-in-progress: false", text)
-        self.assertIn("test_social_posting.py -q -b", text)
+
+    def test_social_workflows_buffer_test_output(self):
+        for name in (
+            "devto-post.yml",
+            "portfolio-daily.yml",
+            "telegram-daily.yml",
+            "threads-daily.yml",
+        ):
+            with self.subTest(workflow=name):
+                workflow = os.path.join(
+                    portfolio_daily.REPO_ROOT,
+                    ".github",
+                    "workflows",
+                    name,
+                )
+                with open(workflow, encoding="utf-8") as workflow_file:
+                    text = workflow_file.read()
+                self.assertNotIn("test_social_posting.py -q\n", text)
+                self.assertIn("test_social_posting.py -q -b", text)
 
     def test_published_history_uses_private_authenticated_endpoint(self):
         with mock.patch.object(

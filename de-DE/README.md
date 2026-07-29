@@ -134,6 +134,6 @@ JSON, JSONL und CSV enthalten dieselben 1.700 Einträge.
 
 [Startseite](https://alice51849.github.io/ios-app-guide/de-DE/index.html) · [Offene Daten](https://alice51849.github.io/ios-app-guide/de-DE/data/lumi-studio-publisher-search-intent-catalog.html) · [Lizenz](https://creativecommons.org/licenses/by/4.0/)
 
-Aktualisiert: 2026-07-30
+Aktualisiert: 2026-07-29
 
 CC BY 4.0 gilt für die ursprüngliche Katalogzusammenstellung; App-Namen und App Store Marken gehören ihren jeweiligen Eigentümern.

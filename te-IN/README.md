@@ -134,6 +134,6 @@ JSON, JSONL మరియు CSV లో అదే 1,700 రికార్డు�
 
 [హోమ్](https://alice51849.github.io/ios-app-guide/te-IN/index.html) · [ఓపెన్ డేటా](https://alice51849.github.io/ios-app-guide/te-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [లైసెన్స్](https://creativecommons.org/licenses/by/4.0/)
 
-నవీకరించబడింది: 2026-07-30
+నవీకరించబడింది: 2026-07-29
 
 CC BY 4.0 అసలు క్యాటలాగ్ సంకలనం పై వర్తిస్తుంది; యాప్ పేర్లు మరియు App Store గుర్తులు వాటి యజమానులకు చెందుతాయి.

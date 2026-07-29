@@ -134,6 +134,6 @@ JSON、JSONL 和 CSV 格式包含相同的 1,700 条记录。
 
 [首页](https://alice51849.github.io/ios-app-guide/zh-Hans/index.html) · [开放数据](https://alice51849.github.io/ios-app-guide/zh-Hans/data/lumi-studio-publisher-search-intent-catalog.html) · [许可协议](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-07-30
+更新日期: 2026-07-29
 
 CC BY 4.0 适用于原始目录编纂；应用名称和 App Store 标识归其所有者所有。

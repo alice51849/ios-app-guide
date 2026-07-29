@@ -134,6 +134,6 @@ JSON、JSONL、CSVは同じ1,700件のレコードを含みます。
 
 [ホーム](https://alice51849.github.io/ios-app-guide/ja/index.html) · [オープンデータ](https://alice51849.github.io/ios-app-guide/ja/data/lumi-studio-publisher-search-intent-catalog.html) · [ライセンス](https://creativecommons.org/licenses/by/4.0/)
 
-更新日: 2026-07-30
+更新日: 2026-07-29
 
 CC BY 4.0は元のカタログ編集に適用されます。アプリ名およびApp Storeのマークはそれぞれの所有者に帰属します。

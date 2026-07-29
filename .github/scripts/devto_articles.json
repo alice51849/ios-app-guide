@@ -59,6 +59,16 @@
     "body": "\"Storage Almost Full\" is almost always duplicates, near-identical burst shots, and a few enormous videos — not your actual memories.\n\n**A fast cleanup pass**\n1. Find exact + near-duplicate photos and keep the best one.\n2. Sort videos by size; the biggest few usually free the most space.\n3. Clear old screenshots and blurry shots.\n\nI built **[PicClear](https://apps.apple.com/app/id6780223070)** to do this in one scan — similar-shot grouping, largest-videos view — all on-device, one-time purchase, no subscription.\n\nNo cloud upload, no account: it just cleans up locally."
   },
   {
+    "title": "Better AI answers start with traceable context, not a bigger prompt",
+    "tags": [
+      "ai",
+      "productivity",
+      "privacy",
+      "ios"
+    ],
+    "body": "A lot of disappointing AI output gets blamed on the model. In practice, the input is often the real problem: one screenshot is missing, a PDF contradicts a note, or a copied summary has quietly lost its source.\n\nA longer prompt does not fix incomplete evidence. I now prepare a small, reviewable **context packet** before asking any assistant to reason about a task.\n\n## 1. Normalize the sources\n\nStart with the actual material: screenshots, PDFs, files, copied text, notes and links. Extract the facts, but keep every fact connected to its source. Confidence should remain visible too; uncertain OCR is not the same thing as a verified sentence in a document.\n\n## 2. Surface conflicts instead of smoothing them over\n\nIf two sources disagree, preserve the conflict. If an important answer is missing, list it as an open question. A polished summary that hides uncertainty is more dangerous than a rough brief that admits what it does not know.\n\n## 3. Review privacy explicitly\n\nDetection should be a warning, not an automatic deletion pass. Removing a name, date or identifier can change the meaning of the evidence. I prefer a keep, replace or remove decision for every detected detail, followed by one final review before anything is shared with an AI service. Privacy detection is useful, but it is not a promise of anonymity.\n\n## 4. Export a reusable brief\n\nStructured headings, source references and a version history make the same reviewed context usable with different assistants. That avoids rebuilding the prompt from scratch and keeps the evidence separate from whichever model happens to process it.\n\nI turned this workflow into **[AI Brief](https://apps.apple.com/app/id6791658210)** for iPhone: on-device OCR, PDF reading, duplicate checks, fact extraction and privacy review, with explicit sharing only after review. It is free to start with one optional lifetime unlock and no subscription. The full context-preparation checklist is here: https://alice51849.github.io/ios-app-guide/guides/aibriefpack.html"
+  },
+  {
     "title": "A period tracker that stays on your device (no account, no data selling)",
     "tags": [
       "privacy",

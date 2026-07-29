@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Zuletzt — Merkt sich, wann es war | iOS App"
 lang: "de-DE"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/de-DE/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,7 @@ Wann hast du zuletzt die Bettwäsche gewechselt, Pflanzen gegossen, deine Famili
 
 - Lebensstil
 - Kostenloser Einstieg · dauerhafte Freischaltung
-- App Store · 2,99 €
+- App Store · Kostenlos
 
 [Mochi DoneStamp: Zuletzt im App Store laden](https://apps.apple.com/de/app/id6790800323)
 

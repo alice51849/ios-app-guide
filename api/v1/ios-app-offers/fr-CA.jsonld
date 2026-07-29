@@ -6,7 +6,7 @@
   "name": "Catalogue des intentions de recherche de l’éditeur Lumi Studio",
   "description": "Un catalogue publié directement par le développeur qui indique à qui chaque app est destinée, la tâche à accomplir et l’accès direct à l’App Store.",
   "inLanguage": "fr-CA",
-  "dateModified": "2026-07-28",
+  "dateModified": "2026-07-29",
   "numberOfItems": 33,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1451,9 +1451,9 @@
               "value": true
             }
           ],
-          "isAccessibleForFree": false
+          "isAccessibleForFree": true
         },
-        "price": "3.99",
+        "price": "0",
         "priceCurrency": "CAD",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

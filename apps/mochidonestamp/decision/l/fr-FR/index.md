@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp : Mémo — La date de la dernière fois | iOS App"
 lang: "fr-FR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/fr-FR/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,7 @@ Quand avez-vous changé les draps, arrosé une plante, appelé vos proches, sauv
 
 - Mode de vie
 - Gratuit au départ · déverrouillage définitif
-- App Store · 2,99 €
+- App Store · Gratuit
 
 [Obtenir Mochi DoneStamp : Mémo sur l'App Store](https://apps.apple.com/fr/app/id6790800323)
 

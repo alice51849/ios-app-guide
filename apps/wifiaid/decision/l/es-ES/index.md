@@ -2,7 +2,7 @@
 title: "WiFi Aid — Diagnóstico de red fiable | iOS App"
 lang: "es-ES"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/es-ES/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

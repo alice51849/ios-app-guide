@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp：いつやった？ — 前回の日時を、すぐ思い出せる | iOS App"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/ja/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,7 @@ publisher: "Lumi Studio"
 
 - ライフスタイル
 - 無料で開始・買い切りで永久解除
-- App Store · ¥500
+- App Store · 無料
 
 [App Store で Mochi DoneStamp：いつやった？ を入手](https://apps.apple.com/jp/app/id6790800323)
 

@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-28",
-  "content_digest": "ba6bbf639d379de1b95dc6b88ea33da2b97cf2eb28f8cdc2e16b87fc49e3abb2",
+  "date_modified": "2026-07-29",
+  "content_digest": "add5daceb3c94980869f90820ba99d4dac2c68c4d53e77b6a10d5d4137340974",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1433,9 +1433,9 @@
       "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/mochidonestamp.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "90",
+        "price": "0",
         "currency": "TWD",
-        "formatted_price": "$90.00",
+        "formatted_price": "免費",
         "storefront_url": "https://apps.apple.com/tw/app/id6790800323"
       }
     },

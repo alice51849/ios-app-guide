@@ -4,9 +4,9 @@
   "name": "Lumi Studio App Install Decision Routes",
   "description": "First-party install decision routes for every verified live iOS app and Apple locale, with a direct App Store path, purchase model, privacy facts, device surfaces and provenance.",
   "identifier": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes.json",
-  "dateModified": "2026-07-28",
-  "content_digest": "53ade8ce5ef308e869e8cfcae8607ed452db56f6a016cc857a04e92dad7c6d16",
-  "generation_digest": "af6494005286283df1235510874aa8ac2958b53f19ca2d538e16dfeac8baedd3",
+  "dateModified": "2026-07-29",
+  "content_digest": "d57d381d1ac7c798f239996f47dd24607d5cc237bb4d7bb4a2b7d504838e24ef",
+  "generation_digest": "c774d96a2aa9eeb2df04ed73b6b5cf2db61838ff06ed9a22fad0e78aa1517e66",
   "publisher_disclosure": "First-party decision-support material published by Lumi Studio, the developer of every listed app; not an independent ranking or measured search-volume product.",
   "ordering": "official_locale_order_then_priority_then_alphabetical_app_name",
   "priority_app_keys": [
@@ -445,7 +445,7 @@
       "badge_labels": [
         "أسلوب الحياة",
         "بدء مجاني · فتح دائم",
-        "App Store · SAR 12.99"
+        "App Store · مجاني"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/ar-SA/index.html",
@@ -456,9 +456,9 @@
       "app_store_url": "https://apps.apple.com/sa/app/id6790800323",
       "app_store_cta_label": "احصل على Mochi DoneStamp: آخر مرة من App Store",
       "storefront_facts": {
-        "price": "12.99",
+        "price": "0",
         "currency": "SAR",
-        "formatted_price": "SAR 12.99"
+        "formatted_price": "مجاني"
       },
       "guide_cta_label": "اقرأ الدليل الكامل",
       "publisher_disclosure": "هذه مادة ينشرها Lumi Studio مباشرةً بصفته مطور جميع التطبيقات المدرجة.",
@@ -3646,7 +3646,7 @@
       "badge_labels": [
         "Estil de vida",
         "Inici gratuït · desbloqueig de per vida",
-        "App Store · 2,99 €"
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/ca/index.html",
@@ -3657,9 +3657,9 @@
       "app_store_url": "https://apps.apple.com/es/app/id6790800323",
       "app_store_cta_label": "Descarrega Mochi DoneStamp: Última vegada a l’App Store",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "2,99 €"
+        "formatted_price": "Gratis"
       },
       "guide_cta_label": "Llegeix la guia completa",
       "publisher_disclosure": "Aquest és material de primera mà publicat per Lumi Studio, el desenvolupador de totes les apps llistades.",
@@ -5329,7 +5329,7 @@
       "badge_labels": [
         "Životní styl",
         "Zdarma na začátek · doživotní odemknutí",
-        "App Store · 79,00 Kč"
+        "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/cs/index.html",
@@ -5340,9 +5340,9 @@
       "app_store_url": "https://apps.apple.com/cz/app/id6790800323",
       "app_store_cta_label": "Stáhněte si Mochi DoneStamp: Naposledy v App Storu",
       "storefront_facts": {
-        "price": "79",
+        "price": "0",
         "currency": "CZK",
-        "formatted_price": "79,00 Kč"
+        "formatted_price": "Zdarma"
       },
       "guide_cta_label": "Přečtěte si celý průvodce",
       "publisher_disclosure": "Toto je materiál od první strany publikovaný Lumi Studio, vývojářem všech uvedených aplikací.",
@@ -7012,7 +7012,7 @@
       "badge_labels": [
         "Livsstil",
         "Gratis at komme i gang · permanent oplåsning",
-        "App Store · 29,00 kr"
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/da/index.html",
@@ -7023,9 +7023,9 @@
       "app_store_url": "https://apps.apple.com/dk/app/id6790800323",
       "app_store_cta_label": "Hent Mochi DoneStamp: Sidst i App Store",
       "storefront_facts": {
-        "price": "29",
+        "price": "0",
         "currency": "DKK",
-        "formatted_price": "29,00 kr"
+        "formatted_price": "Gratis"
       },
       "guide_cta_label": "Læs hele vejledningen",
       "publisher_disclosure": "Dette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.",
@@ -8695,7 +8695,7 @@
       "badge_labels": [
         "Lebensstil",
         "Kostenloser Einstieg · dauerhafte Freischaltung",
-        "App Store · 2,99 €"
+        "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/de-DE/index.html",
@@ -8706,9 +8706,9 @@
       "app_store_url": "https://apps.apple.com/de/app/id6790800323",
       "app_store_cta_label": "Mochi DoneStamp: Zuletzt im App Store laden",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "2,99 €"
+        "formatted_price": "Kostenlos"
       },
       "guide_cta_label": "Lesen Sie den vollständigen Leitfaden",
       "publisher_disclosure": "Dieses Material wird direkt von Lumi Studio veröffentlicht, dem Entwickler aller aufgeführten Apps.",
@@ -10378,7 +10378,7 @@
       "badge_labels": [
         "Τρόπος ζωής",
         "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
-        "App Store · 2,99 €"
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/el/index.html",
@@ -10389,9 +10389,9 @@
       "app_store_url": "https://apps.apple.com/gr/app/id6790800323",
       "app_store_cta_label": "Αποκτήστε το Mochi DoneStamp: Τελευταία από το App Store",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "2,99 €"
+        "formatted_price": "Δωρεάν"
       },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Αυτό είναι πρωτογενές υλικό που δημοσιεύεται από το Lumi Studio, τον δημιουργό κάθε καταχωρημένης εφαρμογής.",
@@ -12061,7 +12061,7 @@
       "badge_labels": [
         "Lifestyle",
         "Free to start · lifetime unlock",
-        "App Store · $4.99"
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/en-AU/index.html",
@@ -12072,9 +12072,9 @@
       "app_store_url": "https://apps.apple.com/au/app/id6790800323",
       "app_store_cta_label": "Get Mochi DoneStamp: Last Time on the App Store",
       "storefront_facts": {
-        "price": "4.99",
+        "price": "0",
         "currency": "AUD",
-        "formatted_price": "$4.99"
+        "formatted_price": "Free"
       },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
@@ -13744,7 +13744,7 @@
       "badge_labels": [
         "Lifestyle",
         "Free to start · lifetime unlock",
-        "App Store · $3.99"
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/en-CA/index.html",
@@ -13755,9 +13755,9 @@
       "app_store_url": "https://apps.apple.com/ca/app/id6790800323",
       "app_store_cta_label": "Get Mochi DoneStamp: Last Time on the App Store",
       "storefront_facts": {
-        "price": "3.99",
+        "price": "0",
         "currency": "CAD",
-        "formatted_price": "$3.99"
+        "formatted_price": "Free"
       },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
@@ -15427,7 +15427,7 @@
       "badge_labels": [
         "Lifestyle",
         "Free to start · lifetime unlock",
-        "App Store · £2.99"
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/en-GB/index.html",
@@ -15438,9 +15438,9 @@
       "app_store_url": "https://apps.apple.com/gb/app/id6790800323",
       "app_store_cta_label": "Get Mochi DoneStamp: Last Time on the App Store",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "GBP",
-        "formatted_price": "£2.99"
+        "formatted_price": "Free"
       },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
@@ -17110,7 +17110,7 @@
       "badge_labels": [
         "Lifestyle",
         "Free to start · lifetime unlock",
-        "App Store · $2.99",
+        "App Store · Free",
         "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/mochidonestamp.html",
@@ -17122,9 +17122,9 @@
       "app_store_url": "https://apps.apple.com/us/app/id6790800323",
       "app_store_cta_label": "Get Mochi DoneStamp: Last Time on the App Store",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "USD",
-        "formatted_price": "$2.99",
+        "formatted_price": "Free",
         "rating_value": 5.0,
         "rating_count": 1
       },
@@ -18808,7 +18808,7 @@
       "badge_labels": [
         "Estilo de vida",
         "Gratis para empezar · desbloqueo permanente",
-        "App Store · 2,99 €"
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/es-ES/index.html",
@@ -18819,9 +18819,9 @@
       "app_store_url": "https://apps.apple.com/es/app/id6790800323",
       "app_store_cta_label": "Consigue Mochi DoneStamp: Última vez en el App Store",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "2,99 €"
+        "formatted_price": "Gratis"
       },
       "guide_cta_label": "Lee la guía completa",
       "publisher_disclosure": "Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.",
@@ -20491,7 +20491,7 @@
       "badge_labels": [
         "Estilo de vida",
         "Gratis para empezar · desbloqueo permanente",
-        "App Store · $69.00"
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/es-MX/index.html",
@@ -20502,9 +20502,9 @@
       "app_store_url": "https://apps.apple.com/mx/app/id6790800323",
       "app_store_cta_label": "Consigue Mochi DoneStamp: Última vez en el App Store",
       "storefront_facts": {
-        "price": "69",
+        "price": "0",
         "currency": "MXN",
-        "formatted_price": "$69.00"
+        "formatted_price": "Gratis"
       },
       "guide_cta_label": "Lee la guía completa",
       "publisher_disclosure": "Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.",
@@ -22174,7 +22174,7 @@
       "badge_labels": [
         "Elämäntapa",
         "Ilmainen aloitus · elinikäinen avaus",
-        "App Store · 2,99 €"
+        "App Store · Ilmainen"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/fi/index.html",
@@ -22185,9 +22185,9 @@
       "app_store_url": "https://apps.apple.com/fi/app/id6790800323",
       "app_store_cta_label": "Lataa Mochi DoneStamp: Viimeksi App Storesta",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "2,99 €"
+        "formatted_price": "Ilmainen"
       },
       "guide_cta_label": "Lue koko opas",
       "publisher_disclosure": "Tämä on Lumi Studion, jokaisen listatun sovelluksen kehittäjän, julkaisema ensimmäisen osapuolen materiaali.",
@@ -23857,7 +23857,7 @@
       "badge_labels": [
         "Mode de vie",
         "Gratuit au départ · déverrouillage définitif",
-        "App Store · $3.99"
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/fr-CA/index.html",
@@ -23868,9 +23868,9 @@
       "app_store_url": "https://apps.apple.com/ca/app/id6790800323",
       "app_store_cta_label": "Obtenir Mochi DoneStamp : Mémo sur l'App Store",
       "storefront_facts": {
-        "price": "3.99",
+        "price": "0",
         "currency": "CAD",
-        "formatted_price": "$3.99"
+        "formatted_price": "Gratuit"
       },
       "guide_cta_label": "Lire le guide complet",
       "publisher_disclosure": "Ce contenu est publié directement par Lumi Studio, le développeur de chaque app listée.",
@@ -25540,7 +25540,7 @@
       "badge_labels": [
         "Mode de vie",
         "Gratuit au départ · déverrouillage définitif",
-        "App Store · 2,99 €"
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/fr-FR/index.html",
@@ -25551,9 +25551,9 @@
       "app_store_url": "https://apps.apple.com/fr/app/id6790800323",
       "app_store_cta_label": "Obtenir Mochi DoneStamp : Mémo sur l'App Store",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "2,99 €"
+        "formatted_price": "Gratuit"
       },
       "guide_cta_label": "Lire le guide complet",
       "publisher_disclosure": "Ce contenu est publié directement par Lumi Studio, le développeur de chaque application répertoriée.",
@@ -27223,7 +27223,7 @@
       "badge_labels": [
         "જીવનશૈલી",
         "મફત શરૂઆત · કાયમી અનલૉક",
-        "App Store · ₹ 299"
+        "App Store · મફત"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/gu-IN/index.html",
@@ -27234,9 +27234,9 @@
       "app_store_url": "https://apps.apple.com/in/app/id6790800323",
       "app_store_cta_label": "App Store પરથી Mochi DoneStamp: છેલ્લી વાર મેળવો",
       "storefront_facts": {
-        "price": "299",
+        "price": "0",
         "currency": "INR",
-        "formatted_price": "₹ 299"
+        "formatted_price": "મફત"
       },
       "guide_cta_label": "પૂર્ણ માર્ગદર્શિકા વાંચો",
       "publisher_disclosure": "આ સામગ્રી Lumi Studio દ્વારા સીધી પ્રકાશિત કરવામાં આવી છે, જે સૂચિબદ્ધ તમામ એપ્સનો વિકાસકર્તા છે.",
@@ -28906,7 +28906,7 @@
       "badge_labels": [
         "אורח חיים",
         "התחלה ללא תשלום · פתיחה לכל החיים",
-        "App Store · ₪9.90"
+        "App Store · בחינם"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/he/index.html",
@@ -28917,9 +28917,9 @@
       "app_store_url": "https://apps.apple.com/il/app/id6790800323",
       "app_store_cta_label": "הורידו את Mochi DoneStamp: מתי לאחרונה מה-App Store",
       "storefront_facts": {
-        "price": "9.9",
+        "price": "0",
         "currency": "ILS",
-        "formatted_price": "₪9.90"
+        "formatted_price": "בחינם"
       },
       "guide_cta_label": "קרא את המדריך המלא",
       "publisher_disclosure": "זהו חומר רשמי שפורסם על ידי Lumi Studio, המפתח של כל אפליקציה ברשימה.",
@@ -30589,7 +30589,7 @@
       "badge_labels": [
         "जीवनशैली",
         "मुफ़्त शुरुआत · हमेशा के लिए अनलॉक",
-        "App Store · ₹ 299"
+        "App Store · मुफ़्त"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/hi/index.html",
@@ -30600,9 +30600,9 @@
       "app_store_url": "https://apps.apple.com/in/app/id6790800323",
       "app_store_cta_label": "App Store पर Mochi DoneStamp: पिछली बार पाएँ",
       "storefront_facts": {
-        "price": "299",
+        "price": "0",
         "currency": "INR",
-        "formatted_price": "₹ 299"
+        "formatted_price": "मुफ़्त"
       },
       "guide_cta_label": "पूरा मार्गदर्शक पढ़ें",
       "publisher_disclosure": "यह सामग्री सीधे Lumi Studio ने प्रकाशित की है, जो सूचीबद्ध सभी ऐप का डेवलपर है।",
@@ -32272,7 +32272,7 @@
       "badge_labels": [
         "Životni stil",
         "Besplatno za početak · doživotno otključavanje",
-        "App Store · 2,99 €"
+        "App Store · Besplatno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/hr/index.html",
@@ -32283,9 +32283,9 @@
       "app_store_url": "https://apps.apple.com/hr/app/id6790800323",
       "app_store_cta_label": "Preuzmite Mochi DoneStamp: Zadnji put u App Storeu",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "2,99 €"
+        "formatted_price": "Besplatno"
       },
       "guide_cta_label": "Pročitajte cijeli vodič",
       "publisher_disclosure": "Ovo je materijal iz prve ruke koji je objavio Lumi Studio, razvojni tim svake navedene aplikacije.",
@@ -33955,7 +33955,7 @@
       "badge_labels": [
         "Életmód",
         "Ingyenes kezdés · életre szóló feloldás",
-        "App Store · HUF1,490.00"
+        "App Store · Ingyenes"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/hu/index.html",
@@ -33966,9 +33966,9 @@
       "app_store_url": "https://apps.apple.com/hu/app/id6790800323",
       "app_store_cta_label": "Töltse le a(z) Mochi DoneStamp: Legutóbb appot az App Store-ból",
       "storefront_facts": {
-        "price": "1490",
+        "price": "0",
         "currency": "HUF",
-        "formatted_price": "HUF1,490.00"
+        "formatted_price": "Ingyenes"
       },
       "guide_cta_label": "Olvasd el a teljes útmutatót",
       "publisher_disclosure": "Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.",
@@ -35638,7 +35638,7 @@
       "badge_labels": [
         "Gaya hidup",
         "Gratis untuk mulai · buka kunci permanen",
-        "App Store · Rp 49ribu"
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/id/index.html",
@@ -35649,9 +35649,9 @@
       "app_store_url": "https://apps.apple.com/id/app/id6790800323",
       "app_store_cta_label": "Dapatkan Mochi DoneStamp: Terakhir di App Store",
       "storefront_facts": {
-        "price": "49000",
+        "price": "0",
         "currency": "IDR",
-        "formatted_price": "Rp 49ribu"
+        "formatted_price": "Gratis"
       },
       "guide_cta_label": "Baca panduan lengkap",
       "publisher_disclosure": "Materi ini diterbitkan langsung oleh Lumi Studio, pengembang semua aplikasi yang tercantum.",
@@ -37321,7 +37321,7 @@
       "badge_labels": [
         "Stile di vita",
         "Gratis per iniziare · sblocco permanente",
-        "App Store · 2,99 €"
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/it/index.html",
@@ -37332,9 +37332,9 @@
       "app_store_url": "https://apps.apple.com/it/app/id6790800323",
       "app_store_cta_label": "Scarica Mochi DoneStamp: Ultima volta sull'App Store",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "2,99 €"
+        "formatted_price": "Gratis"
       },
       "guide_cta_label": "Leggi la guida completa",
       "publisher_disclosure": "Questo contenuto è pubblicato direttamente da Lumi Studio, lo sviluppatore di tutte le app elencate.",
@@ -39010,7 +39010,7 @@
       "badge_labels": [
         "ライフスタイル",
         "無料で開始・買い切りで永久解除",
-        "App Store · ¥500"
+        "App Store · 無料"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/ja/index.html",
@@ -39021,9 +39021,9 @@
       "app_store_url": "https://apps.apple.com/jp/app/id6790800323",
       "app_store_cta_label": "App Store で Mochi DoneStamp：いつやった？ を入手",
       "storefront_facts": {
-        "price": "500",
+        "price": "0",
         "currency": "JPY",
-        "formatted_price": "¥500"
+        "formatted_price": "無料"
       },
       "guide_cta_label": "完全ガイドを読む",
       "publisher_disclosure": "これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。",
@@ -40693,7 +40693,7 @@
       "badge_labels": [
         "ಜೀವನಶೈಲಿ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್",
-        "App Store · ₹ 299"
+        "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/kn-IN/index.html",
@@ -40704,9 +40704,9 @@
       "app_store_url": "https://apps.apple.com/in/app/id6790800323",
       "app_store_cta_label": "App Store ನಲ್ಲಿ Mochi DoneStamp: ಕೊನೆಯ ಬಾರಿ ಪಡೆಯಿರಿ",
       "storefront_facts": {
-        "price": "299",
+        "price": "0",
         "currency": "INR",
-        "formatted_price": "₹ 299"
+        "formatted_price": "ಉಚಿತ"
       },
       "guide_cta_label": "ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ",
       "publisher_disclosure": "ಇದು ಪಟ್ಟಿಯಲ್ಲಿ ಇರುವ ಪ್ರತಿಯೊಂದು ಆ್ಯಪ್‌ನ ಅಭಿವೃದ್ಧಿಪಡಿಸಿದ Lumi Studio ಅವರಿಂದ ಪ್ರಕಟಿಸಲಾದ ಮೊದಲ-ಪಕ್ಷದ ವಸ್ತು.",
@@ -42376,7 +42376,7 @@
       "badge_labels": [
         "라이프스타일",
         "무료로 시작 · 평생 잠금 해제",
-        "App Store · ￦4,400"
+        "App Store · 무료"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/ko/index.html",
@@ -42387,9 +42387,9 @@
       "app_store_url": "https://apps.apple.com/kr/app/id6790800323",
       "app_store_cta_label": "App Store에서 Mochi DoneStamp: 마지막 기록 받기",
       "storefront_facts": {
-        "price": "4400",
+        "price": "0",
         "currency": "KRW",
-        "formatted_price": "￦4,400"
+        "formatted_price": "무료"
       },
       "guide_cta_label": "전체 안내서 읽기",
       "publisher_disclosure": "이 자료는 목록에 있는 모든 앱의 개발사 Lumi Studio가 직접 발행한 1차 자료입니다.",
@@ -44059,7 +44059,7 @@
       "badge_labels": [
         "ജീവിതശൈലി",
         "സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക്",
-        "App Store · ₹ 299"
+        "App Store · സൗജന്യം"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/ml-IN/index.html",
@@ -44070,9 +44070,9 @@
       "app_store_url": "https://apps.apple.com/in/app/id6790800323",
       "app_store_cta_label": "App Store-ൽ നിന്ന് Mochi DoneStamp: അവസാനമായി നേടൂ",
       "storefront_facts": {
-        "price": "299",
+        "price": "0",
         "currency": "INR",
-        "formatted_price": "₹ 299"
+        "formatted_price": "സൗജന്യം"
       },
       "guide_cta_label": "പൂർണ്ണ ഗൈഡ് വായിക്കുക",
       "publisher_disclosure": "ഇത് Lumi Studio പ്രസിദ്ധീകരിച്ച ആദ്യകക്ഷി വസ്തുവാണ്, എല്ലാ ലിസ്റ്റുചെയ്ത ആപ്പുകളുടെയും വികസകനാണ്.",
@@ -45742,7 +45742,7 @@
       "badge_labels": [
         "जीवनशैली",
         "सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक",
-        "App Store · ₹ 299"
+        "App Store · मोफत"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/mr-IN/index.html",
@@ -45753,9 +45753,9 @@
       "app_store_url": "https://apps.apple.com/in/app/id6790800323",
       "app_store_cta_label": "App Store वरून Mochi DoneStamp: शेवटची वेळ मिळवा",
       "storefront_facts": {
-        "price": "299",
+        "price": "0",
         "currency": "INR",
-        "formatted_price": "₹ 299"
+        "formatted_price": "मोफत"
       },
       "guide_cta_label": "संपूर्ण मार्गदर्शक वाचा",
       "publisher_disclosure": "हे Lumi Studio कडून प्रकाशित केलेले प्रथम पक्ष साहित्य आहे, जे प्रत्येक सूचीबद्ध अॅपचे विकसक आहे.",
@@ -47425,7 +47425,7 @@
       "badge_labels": [
         "Gaya hidup",
         "Percuma untuk bermula · buka kunci kekal",
-        "App Store · RM14.90"
+        "App Store · Percuma"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/ms/index.html",
@@ -47436,9 +47436,9 @@
       "app_store_url": "https://apps.apple.com/my/app/id6790800323",
       "app_store_cta_label": "Dapatkan Mochi DoneStamp: Kali Terakhir di App Store",
       "storefront_facts": {
-        "price": "14.9",
+        "price": "0",
         "currency": "MYR",
-        "formatted_price": "RM14.90"
+        "formatted_price": "Percuma"
       },
       "guide_cta_label": "Baca panduan penuh",
       "publisher_disclosure": "Bahan ini diterbitkan terus oleh Lumi Studio, pembangun semua aplikasi yang disenaraikan.",
@@ -49108,7 +49108,7 @@
       "badge_labels": [
         "Leefstijl",
         "Gratis te starten · levenslange ontgrendeling",
-        "App Store · € 2,99"
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/nl-NL/index.html",
@@ -49119,9 +49119,9 @@
       "app_store_url": "https://apps.apple.com/nl/app/id6790800323",
       "app_store_cta_label": "Download Mochi DoneStamp: Laatste keer in de App Store",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "€ 2,99"
+        "formatted_price": "Gratis"
       },
       "guide_cta_label": "Lees de volledige gids",
       "publisher_disclosure": "Dit is materiaal van de eerste partij, gepubliceerd door Lumi Studio, de ontwikkelaar van elke vermelde app.",
@@ -50791,7 +50791,7 @@
       "badge_labels": [
         "Livsstil",
         "Gratis å starte · livstidsopplåsing",
-        "App Store · 39,00 kr"
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/no/index.html",
@@ -50802,9 +50802,9 @@
       "app_store_url": "https://apps.apple.com/no/app/id6790800323",
       "app_store_cta_label": "Last ned Mochi DoneStamp: Sist fra App Store",
       "storefront_facts": {
-        "price": "39",
+        "price": "0",
         "currency": "NOK",
-        "formatted_price": "39,00 kr"
+        "formatted_price": "Gratis"
       },
       "guide_cta_label": "Les hele veiledningen",
       "publisher_disclosure": "Dette er førsteparts materiale publisert av Lumi Studio, utvikleren av hver oppført app.",
@@ -52474,7 +52474,7 @@
       "badge_labels": [
         "ଜୀବନଶୈଳୀ",
         "ମୁକ୍ତ ଆରମ୍ଭ · ଜୀବନକାଳ ଅନଲକ୍",
-        "App Store · ₹ 299"
+        "App Store · ମାଗଣା"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/or-IN/index.html",
@@ -52485,9 +52485,9 @@
       "app_store_url": "https://apps.apple.com/in/app/id6790800323",
       "app_store_cta_label": "App Store ରୁ Mochi DoneStamp: ଶେଷ ଥର ପାଆନ୍ତୁ",
       "storefront_facts": {
-        "price": "299",
+        "price": "0",
         "currency": "INR",
-        "formatted_price": "₹ 299"
+        "formatted_price": "ମାଗଣା"
       },
       "guide_cta_label": "ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ",
       "publisher_disclosure": "ଏହା Lumi Studio ଦ୍ୱାରା ପ୍ରକାଶିତ ପ୍ରଥମ-ପକ୍ଷ ସାମଗ୍ରୀ, ଯାହାରେ ସମସ୍ତ ତାଲିକାଭୁକ୍ତ ଆପ୍ସର ବିକାଶକ ଅଛନ୍ତି।",
@@ -54157,7 +54157,7 @@
       "badge_labels": [
         "ਜੀਵਨ ਸ਼ੈਲੀ",
         "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਸਦਾ ਲਈ ਅਨਲੌਕ",
-        "App Store · ₹ 299"
+        "App Store · ਮੁਫ਼ਤ"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/pa-IN/index.html",
@@ -54168,9 +54168,9 @@
       "app_store_url": "https://apps.apple.com/in/app/id6790800323",
       "app_store_cta_label": "App Store ਤੋਂ Mochi DoneStamp: ਪਿਛਲੀ ਵਾਰ ਪ੍ਰਾਪਤ ਕਰੋ",
       "storefront_facts": {
-        "price": "299",
+        "price": "0",
         "currency": "INR",
-        "formatted_price": "₹ 299"
+        "formatted_price": "ਮੁਫ਼ਤ"
       },
       "guide_cta_label": "ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ",
       "publisher_disclosure": "ਇਹ Lumi Studio ਵੱਲੋਂ ਪ੍ਰਕਾਸ਼ਿਤ ਪਹਿਲਾ-ਪੱਖ ਸਮੱਗਰੀ ਹੈ, ਜੋ ਹਰ ਦਰਜ ਕੀਤੇ ਐਪ ਦਾ ਡਿਵੈਲਪਰ ਹੈ।",
@@ -55840,7 +55840,7 @@
       "badge_labels": [
         "Styl życia",
         "Darmowe na start · dożywotni dostęp",
-        "App Store · 14,99 zł"
+        "App Store · Bezpłatnie"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/pl/index.html",
@@ -55851,9 +55851,9 @@
       "app_store_url": "https://apps.apple.com/pl/app/id6790800323",
       "app_store_cta_label": "Pobierz Mochi DoneStamp: Ostatni raz z App Store",
       "storefront_facts": {
-        "price": "14.99",
+        "price": "0",
         "currency": "PLN",
-        "formatted_price": "14,99 zł"
+        "formatted_price": "Bezpłatnie"
       },
       "guide_cta_label": "Przeczytaj pełny przewodnik",
       "publisher_disclosure": "Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.",
@@ -57523,7 +57523,7 @@
       "badge_labels": [
         "Estilo de vida",
         "Grátis para começar · desbloqueio permanente",
-        "App Store · R$ 19,90"
+        "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/pt-BR/index.html",
@@ -57534,9 +57534,9 @@
       "app_store_url": "https://apps.apple.com/br/app/id6790800323",
       "app_store_cta_label": "Baixe Mochi DoneStamp: Última vez na App Store",
       "storefront_facts": {
-        "price": "19.9",
+        "price": "0",
         "currency": "BRL",
-        "formatted_price": "R$ 19,90"
+        "formatted_price": "Grátis"
       },
       "guide_cta_label": "Leia o guia completo",
       "publisher_disclosure": "Este conteúdo é publicado diretamente pela Lumi Studio, desenvolvedora de todos os apps apresentados.",
@@ -59209,7 +59209,7 @@
       "badge_labels": [
         "Estilo de vida",
         "Grátis para começar · desbloqueio permanente",
-        "App Store · 2,99 €"
+        "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/pt-PT/index.html",
@@ -59220,9 +59220,9 @@
       "app_store_url": "https://apps.apple.com/pt/app/id6790800323",
       "app_store_cta_label": "Baixe Mochi DoneStamp: Última vez na App Store",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "2,99 €"
+        "formatted_price": "Grátis"
       },
       "guide_cta_label": "Leia o guia completo",
       "publisher_disclosure": "Este conteúdo é publicado diretamente pela Lumi Studio, que desenvolve todas as apps apresentadas.",
@@ -60892,7 +60892,7 @@
       "badge_labels": [
         "Stil de viață",
         "Început gratuit · deblocare pe viață",
-        "App Store · 14,99 lei"
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/ro/index.html",
@@ -60903,9 +60903,9 @@
       "app_store_url": "https://apps.apple.com/ro/app/id6790800323",
       "app_store_cta_label": "Descarcă Mochi DoneStamp: Ultima dată din App Store",
       "storefront_facts": {
-        "price": "14.99",
+        "price": "0",
         "currency": "RON",
-        "formatted_price": "14,99 lei"
+        "formatted_price": "Gratuit"
       },
       "guide_cta_label": "Citește ghidul complet",
       "publisher_disclosure": "Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.",
@@ -62575,7 +62575,7 @@
       "badge_labels": [
         "Образ жизни",
         "Бесплатно начать · пожизненная разблокировка",
-        "App Store · 249,00 ₽"
+        "App Store · Бесплатно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/ru/index.html",
@@ -62586,9 +62586,9 @@
       "app_store_url": "https://apps.apple.com/ru/app/id6790800323",
       "app_store_cta_label": "Установить Mochi DoneStamp: Когда было в App Store",
       "storefront_facts": {
-        "price": "249",
+        "price": "0",
         "currency": "RUB",
-        "formatted_price": "249,00 ₽"
+        "formatted_price": "Бесплатно"
       },
       "guide_cta_label": "Прочитать полное руководство",
       "publisher_disclosure": "Это материал, созданный Lumi Studio, разработчиком всех перечисленных приложений.",
@@ -64258,7 +64258,7 @@
       "badge_labels": [
         "Životný štýl",
         "Zadarmo na začiatok · doživotné odomknutie",
-        "App Store · 2,99 €"
+        "App Store · Zadarmo"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/sk/index.html",
@@ -64269,9 +64269,9 @@
       "app_store_url": "https://apps.apple.com/sk/app/id6790800323",
       "app_store_cta_label": "Stiahnuť Mochi DoneStamp: Naposledy v App Store",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "2,99 €"
+        "formatted_price": "Zadarmo"
       },
       "guide_cta_label": "Prečítať celý sprievodca",
       "publisher_disclosure": "Toto je materiál prvej strany publikovaný Lumi Studio, vývojárom každej uvedenej aplikácie.",
@@ -65941,7 +65941,7 @@
       "badge_labels": [
         "Življenjski slog",
         "Brezplačen začetek · doživljenjska odklenitev",
-        "App Store · 2,99 €"
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/sl-SI/index.html",
@@ -65952,9 +65952,9 @@
       "app_store_url": "https://apps.apple.com/si/app/id6790800323",
       "app_store_cta_label": "Prenesite Mochi DoneStamp: Nazadnje iz trgovine App Store",
       "storefront_facts": {
-        "price": "2.99",
+        "price": "0",
         "currency": "EUR",
-        "formatted_price": "2,99 €"
+        "formatted_price": "Brezplačno"
       },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "To je gradivo prve roke, ki ga je objavil Lumi Studio, razvijalec vseh navedenih aplikacij.",
@@ -67624,7 +67624,7 @@
       "badge_labels": [
         "Livsstil",
         "Gratis att börja · livstidsupplåsning",
-        "App Store · 39,00 kr"
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/sv/index.html",
@@ -67635,9 +67635,9 @@
       "app_store_url": "https://apps.apple.com/se/app/id6790800323",
       "app_store_cta_label": "Hämta Mochi DoneStamp: Senast i App Store",
       "storefront_facts": {
-        "price": "39",
+        "price": "0",
         "currency": "SEK",
-        "formatted_price": "39,00 kr"
+        "formatted_price": "Gratis"
       },
       "guide_cta_label": "Läs hela guiden",
       "publisher_disclosure": "Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.",
@@ -69313,7 +69313,7 @@
       "badge_labels": [
         "வாழ்க்கை முறை",
         "இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும்",
-        "App Store · ₹ 299"
+        "App Store · இலவசம்"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/ta-IN/index.html",
@@ -69324,9 +69324,9 @@
       "app_store_url": "https://apps.apple.com/in/app/id6790800323",
       "app_store_cta_label": "App Store-இல் Mochi DoneStamp: கடைசி முறை-ஐப் பெறுங்கள்",
       "storefront_facts": {
-        "price": "299",
+        "price": "0",
         "currency": "INR",
-        "formatted_price": "₹ 299"
+        "formatted_price": "இலவசம்"
       },
       "guide_cta_label": "முழு வழிகாட்டியை படிக்கவும்",
       "publisher_disclosure": "இது Lumi Studio வெளியிட்ட முதல்-பார்ட்டி தரவு, இது பட்டியலிடப்பட்ட ஒவ்வொரு செயலியின் உருவாக்குநர்.",
@@ -70996,7 +70996,7 @@
       "badge_labels": [
         "జీవనశైలి",
         "ఉచితంగా ప్రారంభించండి · జీవితకాల అన్లాక్",
-        "App Store · ₹ 299"
+        "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/te-IN/index.html",
@@ -71007,9 +71007,9 @@
       "app_store_url": "https://apps.apple.com/in/app/id6790800323",
       "app_store_cta_label": "App Store నుంచి Mochi DoneStamp: చివరిసారి పొందండి",
       "storefront_facts": {
-        "price": "299",
+        "price": "0",
         "currency": "INR",
-        "formatted_price": "₹ 299"
+        "formatted_price": "ఉచితం"
       },
       "guide_cta_label": "పూర్తి మార్గదర్శకాన్ని చదవండి",
       "publisher_disclosure": "ఇది Lumi Studio ద్వారా ప్రచురించబడిన స్వంత సంస్థ పదార్థం, ప్రతి జాబితా చేయబడిన యాప్ యొక్క అభివృద్ధికర్త.",
@@ -72679,7 +72679,7 @@
       "badge_labels": [
         "ไลฟ์สไตล์",
         "เริ่มใช้ฟรี · ปลดล็อกถาวร",
-        "App Store · ฿99.00"
+        "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/th/index.html",
@@ -72690,9 +72690,9 @@
       "app_store_url": "https://apps.apple.com/th/app/id6790800323",
       "app_store_cta_label": "ดาวน์โหลด Mochi DoneStamp: ครั้งล่าสุด บน App Store",
       "storefront_facts": {
-        "price": "99",
+        "price": "0",
         "currency": "THB",
-        "formatted_price": "฿99.00"
+        "formatted_price": "ฟรี"
       },
       "guide_cta_label": "อ่านคู่มือฉบับเต็ม",
       "publisher_disclosure": "เนื้อหานี้เผยแพร่โดยตรงจาก Lumi Studio ซึ่งเป็นผู้พัฒนาแอปทั้งหมดที่ระบุไว้",
@@ -74362,7 +74362,7 @@
       "badge_labels": [
         "Yaşam tarzı",
         "Başlangıçta ücretsiz · ömür boyu açma",
-        "App Store · ₺149,99"
+        "App Store · Ücretsiz"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/tr/index.html",
@@ -74373,9 +74373,9 @@
       "app_store_url": "https://apps.apple.com/tr/app/id6790800323",
       "app_store_cta_label": "Mochi DoneStamp: En son uygulamasını App Store'dan al",
       "storefront_facts": {
-        "price": "149.99",
+        "price": "0",
         "currency": "TRY",
-        "formatted_price": "₺149,99"
+        "formatted_price": "Ücretsiz"
       },
       "guide_cta_label": "Kılavuzun tamamını oku",
       "publisher_disclosure": "Bu, listelenen her uygulamanın geliştiricisi Lumi Studio tarafından yayımlanan birinci taraf materyaldir.",
@@ -76045,7 +76045,7 @@
       "badge_labels": [
         "Стиль життя",
         "Безкоштовно для початку · довічне розблокування",
-        "App Store · 3,99 USD"
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/uk/index.html",
@@ -76056,9 +76056,9 @@
       "app_store_url": "https://apps.apple.com/ua/app/id6790800323",
       "app_store_cta_label": "Завантажте Mochi DoneStamp: Коли востаннє з App Store",
       "storefront_facts": {
-        "price": "3.99",
+        "price": "0",
         "currency": "USD",
-        "formatted_price": "3,99 USD"
+        "formatted_price": "Безкоштовно"
       },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.",
@@ -77728,7 +77728,7 @@
       "badge_labels": [
         "طرز زندگی",
         "مفت آغاز · مستقل ان لاک",
-        "App Store · Rs 900.00"
+        "App Store · مفت"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/ur-PK/index.html",
@@ -77739,9 +77739,9 @@
       "app_store_url": "https://apps.apple.com/pk/app/id6790800323",
       "app_store_cta_label": "App Store سے Mochi DoneStamp: آخری بار حاصل کریں",
       "storefront_facts": {
-        "price": "900",
+        "price": "0",
         "currency": "PKR",
-        "formatted_price": "Rs 900.00"
+        "formatted_price": "مفت"
       },
       "guide_cta_label": "مکمل رہنمائی پڑھیں",
       "publisher_disclosure": "یہ مواد براہ راست Lumi Studio نے شائع کیا ہے، جو فہرست میں شامل تمام ایپس کا ڈویلپر ہے۔",
@@ -79411,7 +79411,7 @@
       "badge_labels": [
         "Phong cách sống",
         "Bắt đầu miễn phí · mở khóa vĩnh viễn",
-        "App Store · 99.000đ"
+        "App Store · Miễn phí"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/vi/index.html",
@@ -79422,9 +79422,9 @@
       "app_store_url": "https://apps.apple.com/vn/app/id6790800323",
       "app_store_cta_label": "Tải Mochi DoneStamp: Lần cuối trên App Store",
       "storefront_facts": {
-        "price": "99000",
+        "price": "0",
         "currency": "VND",
-        "formatted_price": "99.000đ"
+        "formatted_price": "Miễn phí"
       },
       "guide_cta_label": "Đọc toàn bộ hướng dẫn",
       "publisher_disclosure": "Tài liệu này do Lumi Studio trực tiếp công bố; Lumi Studio là nhà phát triển của tất cả ứng dụng được liệt kê.",
@@ -81094,7 +81094,7 @@
       "badge_labels": [
         "生活方式",
         "免费开始使用 · 永久解锁",
-        "App Store · ¥22.00"
+        "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/zh-Hans/index.html",
@@ -81105,9 +81105,9 @@
       "app_store_url": "https://apps.apple.com/cn/app/id6790800323",
       "app_store_cta_label": "在 App Store 获取 Mochi DoneStamp：上次何时",
       "storefront_facts": {
-        "price": "22",
+        "price": "0",
         "currency": "CNY",
-        "formatted_price": "¥22.00"
+        "formatted_price": "免费"
       },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。",
@@ -82742,7 +82742,7 @@
       "badge_labels": [
         "生活",
         "免費開始 · 永久解鎖",
-        "App Store · $90.00"
+        "App Store · 免費"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/zh-Hant/index.html",
@@ -82753,9 +82753,9 @@
       "app_store_url": "https://apps.apple.com/tw/app/id6790800323",
       "app_store_cta_label": "在 App Store 取得 Mochi DoneStamp：上次何時",
       "storefront_facts": {
-        "price": "90",
+        "price": "0",
         "currency": "TWD",
-        "formatted_price": "$90.00"
+        "formatted_price": "免費"
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",

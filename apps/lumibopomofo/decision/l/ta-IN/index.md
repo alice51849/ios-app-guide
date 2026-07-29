@@ -2,7 +2,7 @@
 title: "iPhone-ல் குழந்தைகள் ஜூயின் கற்றுக்கொள்ள சிறந்த Bopomofo பயன்பாடு"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/ta-IN/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

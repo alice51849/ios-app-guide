@@ -2,7 +2,7 @@
 title: "beste komplette zhuyin-app for tospråklige barn"
 lang: "no"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/no/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"

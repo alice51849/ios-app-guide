@@ -6,7 +6,7 @@
   "name": "Lumi Studio Julkaisijan Hakutarkoitusluettelo",
   "description": "Ensimmäisen osapuolen luettelo siitä, kenelle kukin sovellus on suunniteltu, mitä tehtävää he pyrkivät suorittamaan ja suora App Store -polku.",
   "inLanguage": "fi",
-  "dateModified": "2026-07-28",
+  "dateModified": "2026-07-29",
   "numberOfItems": 33,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1451,9 +1451,9 @@
               "value": true
             }
           ],
-          "isAccessibleForFree": false
+          "isAccessibleForFree": true
         },
-        "price": "2.99",
+        "price": "0",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

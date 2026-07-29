@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Lần cuối — Nhớ lần cuối bạn đã làm | iOS App"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/vi/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,7 @@ Lần cuối bạn thay ga giường, tưới cây, gọi cho gia đình, sao l�
 
 - Phong cách sống
 - Bắt đầu miễn phí · mở khóa vĩnh viễn
-- App Store · 99.000đ
+- App Store · Miễn phí
 
 [Tải Mochi DoneStamp: Lần cuối trên App Store](https://apps.apple.com/vn/app/id6790800323)
 

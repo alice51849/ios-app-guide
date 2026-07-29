@@ -6,7 +6,7 @@
   "name": "Katalog Niat Pencarian Penerbit Lumi Studio",
   "description": "Katalog yang diterbitkan langsung oleh pengembang untuk menjelaskan sasaran setiap aplikasi, tugas yang ingin diselesaikan, dan akses langsung ke App Store.",
   "inLanguage": "id",
-  "dateModified": "2026-07-28",
+  "dateModified": "2026-07-29",
   "numberOfItems": 33,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1451,9 +1451,9 @@
               "value": true
             }
           ],
-          "isAccessibleForFree": false
+          "isAccessibleForFree": true
         },
-        "price": "49000",
+        "price": "0",
         "priceCurrency": "IDR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

@@ -2,7 +2,7 @@
 title: "ứng dụng bopomofo tốt nhất cho trẻ học zhuyin trên iPhone"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/vi/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

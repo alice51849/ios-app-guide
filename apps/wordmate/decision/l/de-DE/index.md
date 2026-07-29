@@ -2,7 +2,7 @@
 title: "Beste Vokabel-App für Pendler mit Apple Watch"
 lang: "de-DE"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/de-DE/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"

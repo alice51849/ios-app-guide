@@ -2,7 +2,7 @@
 title: "HoursTag Lite — 모든 것의 진짜 가격을 보세요 | iOS App"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ko/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

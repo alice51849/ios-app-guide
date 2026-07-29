@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Kali Terakhir — Ingat bila anda melakukannya | iOS App"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/ms/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,7 @@ Bilakah kali terakhir anda menukar cadar, menyiram pokok, menelefon keluarga, me
 
 - Gaya hidup
 - Percuma untuk bermula · buka kunci kekal
-- App Store · RM14.90
+- App Store · Percuma
 
 [Dapatkan Mochi DoneStamp: Kali Terakhir di App Store](https://apps.apple.com/my/app/id6790800323)
 

@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Última vegada — Recorda quan ho vas fer | iOS App"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/ca/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,7 @@ Quan va ser l’última vegada que vas canviar els llençols, regar una planta, 
 
 - Estil de vida
 - Inici gratuït · desbloqueig de per vida
-- App Store · 2,99 €
+- App Store · Gratis
 
 [Descarrega Mochi DoneStamp: Última vegada a l’App Store](https://apps.apple.com/es/app/id6790800323)
 

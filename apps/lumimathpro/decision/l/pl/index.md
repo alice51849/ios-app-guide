@@ -2,7 +2,7 @@
 title: "najlepsza kompletna aplikacja do nauki matematyki dla przedszkolaków i wczesnych klas"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/pl/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -6,7 +6,7 @@
   "name": "Lumi Studio Publisher Search Intent Catalog",
   "description": "A first-party catalog of who each app is designed for, the task they are trying to complete, and the direct App Store path.",
   "inLanguage": "en-US",
-  "dateModified": "2026-07-28",
+  "dateModified": "2026-07-29",
   "numberOfItems": 33,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1451,9 +1451,9 @@
               "value": true
             }
           ],
-          "isAccessibleForFree": false
+          "isAccessibleForFree": true
         },
-        "price": "2.99",
+        "price": "0",
         "priceCurrency": "USD",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

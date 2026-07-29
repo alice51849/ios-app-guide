@@ -6,7 +6,7 @@
   "name": "Danh mục ý định tìm kiếm của nhà phát hành Lumi Studio",
   "description": "Danh mục do chính nhà phát triển công bố, cho biết từng ứng dụng dành cho ai, nhiệm vụ họ muốn hoàn thành và lối truy cập trực tiếp đến App Store.",
   "inLanguage": "vi",
-  "dateModified": "2026-07-28",
+  "dateModified": "2026-07-29",
   "numberOfItems": 33,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1451,9 +1451,9 @@
               "value": true
             }
           ],
-          "isAccessibleForFree": false
+          "isAccessibleForFree": true
         },
-        "price": "99000",
+        "price": "0",
         "priceCurrency": "VND",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

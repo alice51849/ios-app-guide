@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Nazadnje — Zapomni si, kdaj je bilo | iOS App"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/sl-SI/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,7 @@ Kdaj ste nazadnje zamenjali posteljnino, zalili rastlino, poklicali družino, va
 
 - Življenjski slog
 - Brezplačen začetek · doživljenjska odklenitev
-- App Store · 2,99 €
+- App Store · Brezplačno
 
 [Prenesite Mochi DoneStamp: Nazadnje iz trgovine App Store](https://apps.apple.com/si/app/id6790800323)
 

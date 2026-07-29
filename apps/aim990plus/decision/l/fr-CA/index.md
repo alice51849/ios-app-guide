@@ -2,7 +2,7 @@
 title: "Aim990 Plus — Défis chronométrés d’anglais | iOS App"
 lang: "fr-CA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/fr-CA/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"

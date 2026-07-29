@@ -2,7 +2,7 @@
 title: "WiFi Aid — Diagnosis rangkaian tepat | iOS App"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/ms/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

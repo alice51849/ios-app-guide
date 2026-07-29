@@ -2,7 +2,7 @@
 title: "แอปจู้ยิน (Zhuyin) ครบวงจรสำหรับเด็กสองภาษาที่ดีที่สุด"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/th/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "Aim990 Plus — दबाव में तेज़ और सटीक जवाब | iOS App"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/hi/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"

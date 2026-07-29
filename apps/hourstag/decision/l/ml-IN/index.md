@@ -2,7 +2,7 @@
 title: "ഇംപൾസ് വാങ്ങൽ തടയാൻ മികച്ച മനഃശാസ്ത്രീയ ചെലവ് നിയന്ത്രണ ആപ്പ് iPhone"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/ml-IN/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

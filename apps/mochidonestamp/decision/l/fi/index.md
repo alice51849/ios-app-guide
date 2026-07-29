@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Viimeksi — Muista, milloin teit sen | iOS App"
 lang: "fi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/fi/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,7 @@ Milloin viimeksi vaihdoit lakanat, kastelit kasvin, soitit läheisille, varmuusk
 
 - Elämäntapa
 - Ilmainen aloitus · elinikäinen avaus
-- App Store · 2,99 €
+- App Store · Ilmainen
 
 [Lataa Mochi DoneStamp: Viimeksi App Storesta](https://apps.apple.com/fi/app/id6790800323)
 

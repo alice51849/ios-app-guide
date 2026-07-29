@@ -2,7 +2,7 @@
 title: "iPhone-ൽ യാത്രാ സൃഷ്ടാക്കൾക്കായി ഒരിക്കൽ മാത്രം പണമടച്ച് ഉപയോഗിക്കാവുന്ന മികച്ച ഫിലിം ഫോട്ടോ എഡിറ്റർ"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/ml-IN/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

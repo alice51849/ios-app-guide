@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "id",
-  "dateModified": "2026-07-28",
-  "content_digest": "53ade8ce5ef308e869e8cfcae8607ed452db56f6a016cc857a04e92dad7c6d16",
-  "generation_digest": "af6494005286283df1235510874aa8ac2958b53f19ca2d538e16dfeac8baedd3",
+  "dateModified": "2026-07-29",
+  "content_digest": "d57d381d1ac7c798f239996f47dd24607d5cc237bb4d7bb4a2b7d504838e24ef",
+  "generation_digest": "c774d96a2aa9eeb2df04ed73b6b5cf2db61838ff06ed9a22fad0e78aa1517e66",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -133,7 +133,7 @@
       "badge_labels": [
         "Gaya hidup",
         "Gratis untuk mulai · buka kunci permanen",
-        "App Store · Rp 49ribu"
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/id/index.html",
@@ -144,9 +144,9 @@
       "app_store_url": "https://apps.apple.com/id/app/id6790800323",
       "app_store_cta_label": "Dapatkan Mochi DoneStamp: Terakhir di App Store",
       "storefront_facts": {
-        "price": "49000",
+        "price": "0",
         "currency": "IDR",
-        "formatted_price": "Rp 49ribu"
+        "formatted_price": "Gratis"
       },
       "guide_cta_label": "Baca panduan lengkap",
       "publisher_disclosure": "Materi ini diterbitkan langsung oleh Lumi Studio, pengembang semua aplikasi yang tercantum.",

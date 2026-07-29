@@ -6,7 +6,7 @@
   "name": "Каталог намерений поиска издателя Lumi Studio",
   "description": "Каталог, созданный издателем, с информацией о целевой аудитории каждого приложения, задачах, которые оно помогает решать, и прямой ссылкой в App Store.",
   "inLanguage": "ru",
-  "dateModified": "2026-07-28",
+  "dateModified": "2026-07-29",
   "numberOfItems": 33,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1451,9 +1451,9 @@
               "value": true
             }
           ],
-          "isAccessibleForFree": false
+          "isAccessibleForFree": true
         },
-        "price": "249",
+        "price": "0",
         "priceCurrency": "RUB",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Última vez — Lembra-te de quando fizeste | iOS App"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/pt-PT/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,7 @@ Quando foi a última vez que mudaste os lençóis, regaste uma planta, ligaste �
 
 - Estilo de vida
 - Grátis para começar · desbloqueio permanente
-- App Store · 2,99 €
+- App Store · Grátis
 
 [Baixe Mochi DoneStamp: Última vez na App Store](https://apps.apple.com/pt/app/id6790800323)
 

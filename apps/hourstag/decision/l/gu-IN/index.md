@@ -2,7 +2,7 @@
 title: "iPhone માટે શ્રેષ્ઠ મનનશીલ ખર્ચ એપ જે તાત્કાલિક ખરીદી રોકે"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/gu-IN/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

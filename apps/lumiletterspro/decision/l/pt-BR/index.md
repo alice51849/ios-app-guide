@@ -2,7 +2,7 @@
 title: "melhor app completo de fonética para preparação de alfabetização em casa"
 lang: "pt-BR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/pt-BR/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "bedste læringsspil-app til børn uden reklamer på iPhone"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/da/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

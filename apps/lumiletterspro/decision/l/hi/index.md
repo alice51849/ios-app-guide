@@ -2,7 +2,7 @@
 title: "होमस्कूल किंडरगार्टन तैयारी के लिए सबसे अच्छा पूर्ण फोनेटिक्स ऐप"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/hi/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"

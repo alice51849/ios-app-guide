@@ -2,7 +2,7 @@
 title: "શ્રેષ્ઠ સરળ ટુ-ડુ લિસ્ટ એપ iPhone માટે, કોઈ સબ્સ્ક્રિપ્શન નહીં"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/gu-IN/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Когда было — Помнит, когда вы это сделали | iOS App"
 lang: "ru"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/ru/index.html"
-modified: "2026-07-28"
+modified: "2026-07-29"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,7 @@ publisher: "Lumi Studio"
 
 - Образ жизни
 - Бесплатно начать · пожизненная разблокировка
-- App Store · 249,00 ₽
+- App Store · Бесплатно
 
 [Установить Mochi DoneStamp: Когда было в App Store](https://apps.apple.com/ru/app/id6790800323)
 

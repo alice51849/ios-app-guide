@@ -41,7 +41,7 @@ FORMAT_VERSION = 1
 MAX_RESOURCES = 3
 MIN_RATE_LIMIT = 500
 MIN_UPDATE_INTERVAL = dt.timedelta(days=28)
-APPROVED_AUTHORS = frozenset((f"{OWNER}", "github-actions[bot]"))
+APPROVED_AUTHORS = frozenset((f"{OWNER}", "github-actions", "github-actions[bot]"))
 GRAPHQL_URL = "https://api.github.com/graphql"
 GRAPHQL_TIMEOUT = 20
 MAX_RESPONSE_BYTES = 1_000_000

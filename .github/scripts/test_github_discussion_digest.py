@@ -280,6 +280,16 @@ class PublisherDecisionTests(unittest.TestCase):
         self.assertEqual("deferred", result.action)
         update.assert_not_called()
 
+    def test_graphql_actions_bot_login_is_approved(self):
+        existing = discussion(self.rendered)
+        existing["author"] = {"login": "github-actions"}
+        metadata = digest._validate_existing(
+            existing,
+            category_id="DIC_kwDOAnnouncements",
+            require_locked=True,
+        )
+        self.assertEqual(self.rendered.digest, metadata.digest)
+
     def test_schedule_can_never_request_bootstrap(self):
         with self.assertRaisesRegex(digest.PublisherError, "workflow_dispatch"):
             digest.parse_bootstrap("schedule", "true")

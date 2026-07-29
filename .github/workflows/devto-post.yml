@@ -8,6 +8,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: devto-publisher
+  cancel-in-progress: false
+
 jobs:
   post:
     runs-on: ubuntu-latest
@@ -17,7 +21,7 @@ jobs:
         with:
           python-version: "3.x"
       - name: Verify social automation
-        run: python3 .github/scripts/test_social_posting.py -q
+        run: python3 .github/scripts/test_social_posting.py -q -b
       - name: Publish next unposted article to Dev.to
         env:
           DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}

@@ -960,6 +960,36 @@ class DevToGateTests(unittest.TestCase):
         {"title": "Second", "body": "two"},
     )
 
+    def test_workflow_serializes_publishers_and_buffers_test_output(self):
+        workflow = os.path.join(
+            portfolio_daily.REPO_ROOT,
+            ".github",
+            "workflows",
+            "devto-post.yml",
+        )
+        with open(workflow, encoding="utf-8") as workflow_file:
+            text = workflow_file.read()
+
+        self.assertIn("group: devto-publisher", text)
+        self.assertIn("cancel-in-progress: false", text)
+        self.assertIn("test_social_posting.py -q -b", text)
+
+    def test_published_history_uses_private_authenticated_endpoint(self):
+        with mock.patch.object(
+            devto_post,
+            "request_json",
+            return_value=[{"title": "Published"}],
+        ) as request_json:
+            articles = devto_post.published_articles("secret-key")
+
+        self.assertEqual([{"title": "Published"}], articles)
+        request = request_json.call_args.args[0]
+        self.assertEqual(
+            "https://dev.to/api/articles/me/published?per_page=100&page=1",
+            request.full_url,
+        )
+        self.assertEqual("secret-key", request.get_header("Api-key"))
+
     def test_72_hour_gate_across_a_month_boundary(self):
         published = (
             {
@@ -1015,26 +1045,26 @@ class DevToGateTests(unittest.TestCase):
         ):
             self.assertEqual(1, devto_post.main())
 
-    def test_missing_api_key_preserves_queue_as_deferred(self):
+    def test_missing_api_key_preserves_queue_and_fails_closed(self):
         with (
             mock.patch.dict(os.environ, {}, clear=True),
             mock.patch("sys.stderr", new_callable=io.StringIO) as stderr,
         ):
-            self.assertEqual(0, devto_post.main())
+            self.assertEqual(1, devto_post.main())
         self.assertIn("queue preserved", stderr.getvalue())
 
-    def test_rejected_api_key_preserves_queue_as_deferred(self):
+    def test_rejected_api_key_preserves_queue_and_fails_closed(self):
         error = common.HTTPStatusError("Dev.to profile read", 401)
         with (
             mock.patch.dict(os.environ, {"DEVTO_API_KEY": "expired-key"}),
             mock.patch.object(devto_post, "me", side_effect=error),
             mock.patch("sys.stderr", new_callable=io.StringIO) as stderr,
         ):
-            self.assertEqual(0, devto_post.main())
+            self.assertEqual(1, devto_post.main())
         self.assertIn("HTTP 401", stderr.getvalue())
         self.assertIn("queue preserved", stderr.getvalue())
 
-    def test_publish_401_preserves_queue_as_deferred(self):
+    def test_publish_401_preserves_queue_and_fails_closed(self):
         error = common.HTTPStatusError("Dev.to publish", 401)
         with (
             mock.patch.dict(os.environ, {"DEVTO_API_KEY": "expired-key"}),
@@ -1056,9 +1086,35 @@ class DevToGateTests(unittest.TestCase):
             mock.patch.object(devto_post, "_publish", side_effect=error),
             mock.patch("sys.stderr", new_callable=io.StringIO) as stderr,
         ):
-            self.assertEqual(0, devto_post.main())
+            self.assertEqual(1, devto_post.main())
         self.assertIn("HTTP 401", stderr.getvalue())
         self.assertIn("queue preserved", stderr.getvalue())
+
+    def test_publish_403_preserves_queue_and_fails_closed(self):
+        error = common.HTTPStatusError("Dev.to publish", 403)
+        with (
+            mock.patch.dict(os.environ, {"DEVTO_API_KEY": "test-key"}),
+            mock.patch.object(
+                devto_post, "me", return_value={"username": "tester"}
+            ),
+            mock.patch.object(devto_post, "published_articles", return_value=[]),
+            mock.patch.object(
+                devto_post, "next_unpublished", return_value={"title": "Ready"}
+            ),
+            mock.patch.object(
+                devto_post, "latest_pool_publication", return_value=None
+            ),
+            mock.patch.object(
+                devto_post,
+                "next_publishable",
+                return_value={"title": "Ready", "body": "body"},
+            ),
+            mock.patch.object(devto_post, "_publish", side_effect=error),
+            mock.patch("sys.stderr", new_callable=io.StringIO) as stderr,
+        ):
+            self.assertEqual(1, devto_post.main())
+        self.assertIn("HTTP 403", stderr.getvalue())
+        self.assertIn("did not publish", stderr.getvalue())
 
     def test_main_calculates_latest_pool_publication_once(self):
         latest = dt.datetime.now(dt.timezone.utc) - dt.timedelta(hours=1)

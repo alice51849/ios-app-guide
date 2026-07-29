@@ -38,21 +38,20 @@ def me(key):
     return data
 
 
-def published_articles(username):
+def published_articles(key):
     articles = []
     for page in range(1, 21):
         query = urllib.parse.urlencode({
-            "username": username,
             "per_page": PAGE_SIZE,
             "page": page,
         })
         req = urllib.request.Request(
-            f"https://dev.to/api/articles?{query}",
-            headers={"User-Agent": UA},
+            f"https://dev.to/api/articles/me/published?{query}",
+            headers={"api-key": key, "User-Agent": UA},
         )
         data = request_json(
             req,
-            label=f"Dev.to published articles read (page {page})",
+            label=f"Dev.to authenticated articles read (page {page})",
             timeout=25,
             attempts=3,
         )
@@ -66,10 +65,10 @@ def published_articles(username):
     raise RequestError("Dev.to article pagination exceeded 20 full pages")
 
 
-def existing_titles(username):
+def existing_titles(key):
     return {
         article.get("title", "").strip()
-        for article in published_articles(username)
+        for article in published_articles(key)
     }
 
 
@@ -187,11 +186,11 @@ def main():
     key = os.environ.get("DEVTO_API_KEY", "").strip()
     if not key:
         print(
-            "::warning title=Dev.to authorization unavailable::"
+            "::error title=Dev.to authorization unavailable::"
             "DEVTO_API_KEY is missing; queue preserved and this run is deferred.",
             file=sys.stderr,
         )
-        return 0
+        return 1
     try:
         profile = me(key)
         username = profile.get("username", "").strip()
@@ -201,7 +200,8 @@ def main():
             os.path.join(HERE, "devto_articles.json"), encoding="utf-8"
         ) as pool_file:
             pool = json.load(pool_file)
-        published = published_articles(username)
+        published = published_articles(key)
+        print(f"Dev.to authenticated history: {len(published)} articles")
         if not next_unpublished(pool, published):
             print("all pool articles already published — nothing to do.")
             return 0
@@ -232,19 +232,20 @@ def main():
             "Dev.to publish",
         }:
             print(
-                "::warning title=Dev.to authorization unavailable::"
+                "::error title=Dev.to authorization unavailable::"
                 "API key rejected (HTTP 401); queue preserved and future "
                 "scheduled runs will retry.",
                 file=sys.stderr,
             )
-            return 0
+            return 1
         if error.status == 403 and error.label == "Dev.to publish":
             print(
-                "Dev.to API still gated (HTTP 403 account-age anti-spam); "
+                "::error title=Dev.to publish blocked::"
+                "Dev.to API returned HTTP 403 (account-age anti-spam); "
                 "this run did not publish anything.",
                 file=sys.stderr,
             )
-            return 0
+            return 1
         print(f"Dev.to post failed: {error}", file=sys.stderr)
         return 1
     except (RequestError, ValueError, KeyError, json.JSONDecodeError) as error:

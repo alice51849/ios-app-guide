@@ -582,9 +582,18 @@ def load_repository_state(client: GraphQLClient) -> RepositoryState:
             f"hasDiscussionsEnabled={repository.get('hasDiscussionsEnabled')!r}"
         )
     permission = repository.get("viewerPermission")
-    if permission not in {"READ", "TRIAGE", "WRITE", "MAINTAIN", "ADMIN"}:
+    # Granular GITHUB_TOKEN permissions can make this legacy aggregate field null.
+    # Existing posts still require viewerCanUpdate; bootstrap is authorized by its
+    # single-attempt mutation and fails before creating anything if denied.
+    if permission is not None and permission not in {
+        "READ",
+        "TRIAGE",
+        "WRITE",
+        "MAINTAIN",
+        "ADMIN",
+    }:
         raise PublisherError(
-            f"Repository viewerPermission was missing or abnormal: {permission!r}"
+            f"Repository viewerPermission was abnormal: {permission!r}"
         )
     repository_id = _valid_node_id(repository.get("id"), label="Repository")
     categories = _connection_nodes(

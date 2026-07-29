@@ -329,9 +329,15 @@ class GraphQLSafetyTests(unittest.TestCase):
         self.assertEqual("R_kwDORepository", loaded.repository_id)
         self.assertEqual((), loaded.managed)
 
-    def test_missing_repository_permission_fails_closed(self):
+    def test_null_granular_actions_permission_is_valid(self):
         client = mock.Mock()
         client.execute.return_value = self.repository_payload(None)
+        loaded = digest.load_repository_state(client)
+        self.assertEqual("R_kwDORepository", loaded.repository_id)
+
+    def test_abnormal_repository_permission_fails_closed(self):
+        client = mock.Mock()
+        client.execute.return_value = self.repository_payload("OWNER")
         with self.assertRaisesRegex(digest.PublisherError, "viewerPermission"):
             digest.load_repository_state(client)
 

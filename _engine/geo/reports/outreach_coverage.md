@@ -1,12 +1,12 @@
-# Zero-cost outreach coverage — 2026-07-29
+# Zero-cost outreach coverage — 2026-07-30
 
 > Factual owned-asset coverage only. This does not pretend to measure live AI recommendations.
 
-Public apps: **34** · Average coverage: **92.4%**
+Public apps: **34** · Average coverage: **92.9%**
 
 | App | Coverage | Answers | Social languages | Alternatives | Hub / guide / story |
 |---|---:|---:|---:|---:|---|
-| AI Brief | 41.7% | 0/17 | 1 | 0 | hub / guide / story |
+| AI Brief | 58.1% | 8/17 | 1 | 0 | hub / guide / story |
 | Aim990 Plus | 76.7% | 17/17 | 1 | 0 | hub / guide / story |
 | HoursTag Lite | 76.7% | 17/17 | 1 | 0 | hub / guide / story |
 | Mask My File | 76.7% | 17/17 | 1 | 0 | hub / guide / story |

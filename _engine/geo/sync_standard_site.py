@@ -551,6 +551,37 @@ def render_html(
     return "".join(chunks)
 
 
+def preserve_managed_links(
+    original: str,
+    rendered: str,
+    *,
+    label: str,
+) -> str:
+    """Carry verified Standard.site discovery links across page regeneration."""
+    managed: dict[str, str] = {}
+    for match in LINK_TAG_RE.finditer(original):
+        raw = match.group(0)
+        relation = _managed_relation(raw)
+        if not relation:
+            continue
+        if relation in managed:
+            raise SyncError(f"Duplicate {relation} discovery link: {label}")
+        managed[relation] = raw
+    if not managed:
+        return rendered
+    publication = managed.get(PUBLICATION_COLLECTION)
+    if publication is None:
+        raise SyncError(
+            f"Standard.site document link lacks publication link: {label}"
+        )
+    return render_html(
+        rendered,
+        publication_link_tag=publication,
+        document_link_tag=managed.get(DOCUMENT_COLLECTION),
+        label=label,
+    )
+
+
 def _discover_html(site_root: Path) -> list[Path]:
     paths: list[Path] = []
     for current, directories, files in os.walk(site_root, followlinks=False):

@@ -190,6 +190,7 @@ jobs:
           python3 gen_hubs.py
           python3 gen_app_catalog.py
           python3 aeo_answers.py --cached-live --limit 0
+          python3 reconcile_answer_semantics.py --repair
           python3 family_outing_weather_planner.py
           python3 fix_en_hreflang.py || echo "fix_en_hreflang exited $?"
           python3 cleanup_localized_assets.py --cached-live
@@ -230,8 +231,7 @@ jobs:
           python3 gen_llms.py --cached-live
           python3 zhuyin_resourcesync.py
           python3 gen_feed.py
-          python3 gen_sitemap_lastmod.py \
-            --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
+          python3 reconcile_answer_semantics.py
           cd "$GITHUB_WORKSPACE"
           python3 _engine/geo/sync_standard_site.py \
             --site-root "$GITHUB_WORKSPACE" \
@@ -240,6 +240,8 @@ jobs:
             --timeout 10 \
             --retries 3 \
             --retry-delay 2
+           python3 _engine/geo/gen_sitemap_lastmod.py \
+            --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
       - name: Commit English content first (fast, before slow localization)
         run: |
           git config user.name "github-actions[bot]"
@@ -250,8 +252,6 @@ jobs:
           else
             git commit -m "Daily GEO content: new answer pages + refreshed sitemaps"
             git pull --rebase --autostash -X theirs
-            python3 _engine/geo/gen_sitemap_lastmod.py \
-              --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
             python3 _engine/geo/sync_standard_site.py \
               --site-root "$GITHUB_WORKSPACE" \
               --contract-url "$STANDARD_SITE_GUIDE_CONTRACT_URL" \
@@ -259,6 +259,9 @@ jobs:
               --timeout 10 \
               --retries 3 \
               --retry-delay 2
+             python3 _engine/geo/reconcile_answer_semantics.py
+             python3 _engine/geo/gen_sitemap_lastmod.py \
+              --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
             git add -A
             if ! git diff --cached --quiet; then
               git commit -m "Reconcile truthful sitemap lastmod after rebase"
@@ -319,8 +322,8 @@ jobs:
           python3 gen_llms.py --cached-live
           python3 zhuyin_resourcesync.py
           python3 gen_feed.py
+          python3 reconcile_answer_semantics.py
           python3 live_app_guard.py --site-root pages
-          python3 gen_sitemap_lastmod.py
           cd "$GITHUB_WORKSPACE"
           python3 _engine/geo/sync_standard_site.py \
             --site-root "$GITHUB_WORKSPACE" \
@@ -329,6 +332,7 @@ jobs:
             --timeout 10 \
             --retries 3 \
             --retry-delay 2
+           python3 _engine/geo/gen_sitemap_lastmod.py
       - name: Commit localized pages if any
         run: |
           git add -A
@@ -337,7 +341,6 @@ jobs:
           else
             git commit -m "Daily GEO content: localized answer pages"
             git pull --rebase --autostash -X theirs
-            python3 _engine/geo/gen_sitemap_lastmod.py
             python3 _engine/geo/sync_standard_site.py \
               --site-root "$GITHUB_WORKSPACE" \
               --contract-url "$STANDARD_SITE_GUIDE_CONTRACT_URL" \
@@ -345,6 +348,8 @@ jobs:
               --timeout 10 \
               --retries 3 \
               --retry-delay 2
+             python3 _engine/geo/reconcile_answer_semantics.py
+             python3 _engine/geo/gen_sitemap_lastmod.py
             git add -A
             if ! git diff --cached --quiet; then
               git commit -m "Reconcile truthful sitemap lastmod after rebase"

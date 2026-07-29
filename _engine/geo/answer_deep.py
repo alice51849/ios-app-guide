@@ -14,6 +14,7 @@ ad-free, no data collected. Consumed by answer_facts._deep_facts().
 """
 import json
 from typing import Any
+from answer_text import concise_meta
 
 DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
 [
@@ -5533,15 +5534,6 @@ for _f in sorted(_glob.glob(_os.path.join(_DEEP_DIR, "*.json"))):
             DEEP_ITEMS.extend(_extra)
     except Exception as _e:  # noqa: BLE001
         print(f"\u26a0\ufe0f deep_items load {_f}: {_e}")
-
-
-def concise_meta(text: str, limit: int = 150) -> str:
-    """Keep a complete short lead; trim only when it actually exceeds the limit."""
-    compact = " ".join(text.split())
-    if len(compact) <= limit:
-        return compact
-    shortened = compact[: limit + 1].rsplit(" ", 1)[0].rstrip(" ,;:-")
-    return shortened if shortened.endswith((".", "!", "?")) else shortened + "."
 
 
 def deep_facts(q: str, key: str, name: str) -> dict[str, Any] | None:

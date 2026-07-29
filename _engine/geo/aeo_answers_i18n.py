@@ -1081,6 +1081,25 @@ def update_json_language(obj: Any, lang: str) -> Any:
 
 def update_breadcrumb_urls(obj: Any, lang: str, slug: str) -> Any:
     if isinstance(obj, dict):
+        schema_type = obj.get("@type")
+        schema_types = (
+            set(schema_type)
+            if isinstance(schema_type, list)
+            else {schema_type}
+        )
+        if "WebPage" in schema_types:
+            canonical = page_url(slug, lang)
+            obj["@id"] = f"{canonical}#webpage"
+            obj["url"] = canonical
+        if "Article" in schema_types and "mainEntityOfPage" in obj:
+            canonical = page_url(slug, lang)
+            main_page = obj["mainEntityOfPage"]
+            if isinstance(main_page, str):
+                obj["mainEntityOfPage"] = canonical
+            elif isinstance(main_page, dict):
+                main_page["@id"] = f"{canonical}#webpage"
+                if "url" in main_page:
+                    main_page["url"] = canonical
         if obj.get("@type") == "BreadcrumbList":
             items = obj.get("itemListElement", [])
             for index, item in enumerate(items):
@@ -1103,6 +1122,42 @@ def update_breadcrumb_urls(obj: Any, lang: str, slug: str) -> Any:
         for v in obj:
             update_breadcrumb_urls(v, lang, slug)
     return obj
+
+
+JSON_LD_SCRIPT_RE = re.compile(
+    r"(?P<open><script\b[^>]*application/ld\+json[^>]*>)"
+    r"(?P<body>.*?)"
+    r"(?P<close></script>)",
+    flags=re.IGNORECASE | re.DOTALL,
+)
+
+
+def reconcile_structured_data_urls(
+    source: str,
+    lang: str,
+    slug: str,
+) -> str:
+    """Align localized page-owned JSON-LD identities with the canonical URL."""
+    def replace(match: re.Match[str]) -> str:
+        raw = match.group("body").strip()
+        try:
+            document = json.loads(raw)
+        except json.JSONDecodeError as exc:
+            raise ValueError(
+                f"Invalid localized Answer JSON-LD: {lang}/{slug}: {exc}"
+            ) from exc
+        before = json.dumps(document, ensure_ascii=False, sort_keys=True)
+        update_breadcrumb_urls(document, lang, slug)
+        after = json.dumps(document, ensure_ascii=False, sort_keys=True)
+        if before == after:
+            return match.group(0)
+        return (
+            f"{match.group('open')}\n"
+            f"{json.dumps(document, ensure_ascii=False, indent=2)}\n"
+            f"{match.group('close')}"
+        )
+
+    return JSON_LD_SCRIPT_RE.sub(replace, source)
 
 
 def extract_strings(source: str) -> tuple[list[str], list[tuple[int, int, str, str]], list[tuple[int, int, str]]]:
@@ -1768,6 +1823,27 @@ def localize_body_links(source: str, lang: str) -> str:
 RTL_LANGS = {"ar-SA", "he", "ur-PK", "fa"}
 
 
+def reconcile_microformat_url(source: str, lang: str, slug: str) -> str:
+    """Keep the hidden h-entry URL aligned with the localized canonical."""
+    if "<!-- answer-microformat:start -->" not in source:
+        return source
+    expected = html.escape(page_url(slug, lang), quote=True)
+    pattern = re.compile(
+        r'(<data class="u-url u-uid" value=")[^"]+("></data>)'
+    )
+    updated, count = pattern.subn(
+        lambda match: f"{match.group(1)}{expected}{match.group(2)}",
+        source,
+        count=1,
+    )
+    if count != 1:
+        raise ValueError(
+            f"Localized Answer microformat must contain one u-url/u-uid: "
+            f"{lang}/{slug}"
+        )
+    return updated
+
+
 def finalize_html(source: str, lang: str, slug: str) -> str:
     dir_attr = ' dir="rtl"' if lang in RTL_LANGS else ""
     source = re.sub(r'<html\s+lang="[^"]+"(?:\s+dir="[^"]+")?',
@@ -1790,6 +1866,8 @@ def finalize_html(source: str, lang: str, slug: str) -> str:
         source,
         count=1,
     )
+    source = reconcile_microformat_url(source, lang, slug)
+    source = reconcile_structured_data_urls(source, lang, slug)
     if lang in RTL_LANGS:
         source = source.replace("→", "←")
     return localize_body_links(source, lang)

@@ -36,6 +36,8 @@ from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
 import queries  # noqa: E402
 import answer_facts  # noqa: E402
+import sync_standard_site  # noqa: E402
+from answer_text import concise_meta  # noqa: E402
 from aeo_pages import alternative_hub_slug  # noqa: E402
 
 TEMPLATE = ANSWERS_DIR / "best-offline-document-scanner-app-for-iphone.html"
@@ -94,19 +96,34 @@ def key_available() -> bool:
         return False
 
 
-def extract_style() -> str:
-    candidates = [TEMPLATE, *sorted(ANSWERS_DIR.glob("*.html"))]
+def extract_style(pages_root: Path | None = None) -> str:
+    if pages_root is None:
+        answers_dir = ANSWERS_DIR
+        template = TEMPLATE
+        fallback_dir = PAGES_ROOT / "answers"
+    else:
+        answers_dir = pages_root.resolve() / "answers"
+        template = answers_dir / "best-offline-document-scanner-app-for-iphone.html"
+        fallback_dir = answers_dir
+    candidates = [template, *sorted(answers_dir.glob("*.html"))]
+    if fallback_dir != answers_dir:
+        candidates.extend(
+            [
+                fallback_dir
+                / "best-offline-document-scanner-app-for-iphone.html",
+                *sorted(fallback_dir.glob("*.html")),
+            ]
+        )
     for candidate in candidates:
         if not candidate.exists():
             continue
         text = candidate.read_text(encoding="utf-8")
-        m = re.search(r"<style>\n(.*?)\n</style>", text, re.S)
+        m = re.search(r"<style\b[^>]*>\s*(.*?)\s*</style>", text, re.S)
         if m:
             return m.group(1)
-    raise RuntimeError("Could not extract template CSS from any answer page")
-
-
-STYLE = extract_style()
+    raise RuntimeError(
+        f"Could not extract template CSS from any answer page: {answers_dir}"
+    )
 
 
 def safe_text(value: Any, default: str = "") -> str:
@@ -641,14 +658,20 @@ def feature_list(key: str) -> list[str]:
     return features[:6]
 
 
-def render_page(question: str, key: str, content: dict[str, Any]) -> str:
+def render_page(
+    question: str,
+    key: str,
+    content: dict[str, Any],
+    pages_root: Path | None = None,
+) -> str:
     app = APPS[key]
     name = app["name"]
     url = appstore_url(key, "iag_ans")
     slug = slugify(question)
     canonical = f"{SITE}/answers/{slug}.html"
     title = content.get("page_title") or f"{question}: honest iPhone app buying guide"
-    meta = content["meta_description"][:220]
+    meta = concise_meta(content["meta_description"], limit=220, hard_limit=220)
+    style = extract_style(pages_root)
     primary_resource_url = content.get("primary_resource_url", "")
     primary_resource_label = content.get("primary_resource_label", "")
     faq = content["faq"]
@@ -799,7 +822,7 @@ def render_page(question: str, key: str, content: dict[str, Any]) -> str:
 <link rel="alternate" hreflang="en" href="{canonical}">
 <link rel="alternate" hreflang="x-default" href="{canonical}">
 {social_metadata}{resource_first_meta}<style>
-{STYLE}
+{style}
 </style><script type="application/ld+json">
 {j(breadcrumb)}
 </script>
@@ -876,9 +899,15 @@ def create_page(
     question: str,
     use_openai: bool = False,
     force: bool = False,
+    pages_root: Path | None = None,
 ) -> str | None:
+    answers_dir = (
+        ANSWERS_DIR
+        if pages_root is None
+        else pages_root.resolve() / "answers"
+    )
     slug = slugify(question)
-    path = ANSWERS_DIR / f"{slug}.html"
+    path = answers_dir / f"{slug}.html"
     if path.exists() and not force:
         return None
     try:
@@ -891,7 +920,7 @@ def create_page(
     except Exception as exc:
         print(f"SKIP {slug}: {exc}", flush=True)
         return None
-    rendered = render_page(question, key, content)
+    rendered = render_page(question, key, content, pages_root=pages_root)
     if not path.exists() or path.read_text(encoding="utf-8") != rendered:
         path.write_text(rendered, encoding="utf-8")
     print(f"{'REFRESHED' if force else 'CREATED'} {slug}", flush=True)
@@ -929,10 +958,16 @@ def feed_discovery_links() -> str:
     )
 
 
-def regenerate_index() -> None:
+def regenerate_index(pages_root: Path | None = None) -> None:
+    if pages_root is None:
+        pages_root = PAGES_ROOT
+        answers_dir = ANSWERS_DIR
+    else:
+        pages_root = pages_root.resolve()
+        answers_dir = pages_root / "answers"
     pages = [
         p
-        for p in ANSWERS_DIR.glob("*.html")
+        for p in answers_dir.glob("*.html")
         if p.name != "index.html" and not is_redirect_page(p)
     ]
     microformats_reconciled = sum(
@@ -950,6 +985,9 @@ def regenerate_index() -> None:
             "</article>"
         )
     canonical = f"{SITE}/answers/index.html"
+    style = extract_style(
+        pages_root if answers_dir == pages_root / "answers" else None
+    )
     breadcrumb = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "iOS App Guide", "item": f"{SITE}/index.html"},
         {"@type": "ListItem", "position": 2, "name": "Answers", "item": canonical},
@@ -962,7 +1000,7 @@ def regenerate_index() -> None:
         f'<link rel="alternate" hreflang="en" href="{canonical}">'
     ]
     locale_pattern = re.compile(r"^[a-z]{2,3}(?:-[A-Za-z]{2,4})?$")
-    for localized in sorted(PAGES_ROOT.glob("*/answers/index.html")):
+    for localized in sorted(pages_root.glob("*/answers/index.html")):
         locale = localized.parent.parent.name
         if locale_pattern.fullmatch(locale):
             alternate_links.append(
@@ -978,14 +1016,21 @@ def regenerate_index() -> None:
 {alternates}
 {feed_discovery_links()}
 <meta property="og:type" content="website"><meta property="og:title" content="iOS App Answer Guides"><meta property="og:description" content="Honest buying guides and answer pages for iPhone apps."><meta property="og:url" content="{canonical}"><meta name="twitter:card" content="summary"><style>
-{STYLE}
+{style}
 </style><script type="application/ld+json">
 {j(breadcrumb)}
 </script><script type="application/ld+json">
 {j(org)}
 </script>
 </head><body><div class="h-feed hfeed">{url_microformat(canonical, include_uid=False)}<header class="top"><div class="wrap nav"><a href="{SITE}/index.html">iOS App Guide</a><nav><a href="{SITE}/tools/">Free tools</a> · <a href="{SITE}/alternatives/">Alternatives</a> · <a href="{SITE}/about.html">About</a></nav></div></header><main><section class="hero wrap"><div class="eyebrow">Answer hub</div><h1 class="p-name site-title">iOS app answer guides</h1><p class="lead">Practical, honest pages for high-intent questions: what to check, when a dedicated app helps, and which Alice iOS app fits the job.</p></section><section class="wrap"><h2>Topic guides</h2><p class="muted"><a href="{SITE}/passport-photos.html">Passport &amp; ID photo sizes by country</a> · <a href="{SITE}/resume-formats.html">Resume &amp; CV formats by country</a> · <a href="{SITE}/kids-learning.html">Kids learning apps</a> · <a href="{SITE}/photo-tools.html">iPhone photo tools</a> · <a href="{SITE}/focus-productivity.html">Focus &amp; productivity</a> · <a href="{SITE}/money-travel.html">Money &amp; travel</a> · <a href="{SITE}/sleep-wellbeing.html">Sleep &amp; wellbeing</a> · <a href="{SITE}/data/">Free open data</a></p></section><section class="wrap grid">{''.join(cards)}</section></main><footer class="footer"><div class="wrap">{author_microformat()}First-party iOS app guides published by Lumi Studio, the developer of every listed app.</div></footer></div></body></html>'''
-    (ANSWERS_DIR / "index.html").write_text(html_doc, encoding="utf-8")
+    index_path = answers_dir / "index.html"
+    if index_path.exists():
+        html_doc = sync_standard_site.preserve_managed_links(
+            index_path.read_text(encoding="utf-8"),
+            html_doc,
+            label=str(index_path),
+        )
+    index_path.write_text(html_doc, encoding="utf-8")
     print(
         f"INDEX {len(pages)} pages; "
         f"{microformats_reconciled} microformats reconciled",
@@ -993,10 +1038,10 @@ def regenerate_index() -> None:
     )
 
 
-def write_sitemap() -> None:
+def write_sitemap(pages_root: Path | None = None) -> None:
     """Rebuild sitemap_answers.xml from files that actually exist (EN + localized)."""
     import time as _time
-    pages_dir = PAGES_ROOT
+    pages_dir = (pages_root or PAGES_ROOT).resolve()
     entries: list[tuple[str, Path]] = []
     for p in sorted(pages_dir.glob("answers/*.html")):
         if not is_redirect_page(p):

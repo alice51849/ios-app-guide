@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import re
 from typing import Any
+from answer_text import concise_meta
 
 try:
     from answer_faqs import FAQ_GROUPS
@@ -339,7 +340,11 @@ def _passport_facts(q: str, name: str, spec_key: str) -> dict[str, Any]:
           f"and crop to the exact {s['size']} frame so it prints or uploads correctly — no photo-booth trip. "
           f"Always confirm the current official requirement before you submit.")
     return {
-        "meta_description": f"{country} {doc} photo size is {s['size']} on {s['bg']}. How to make one at home on iPhone with {name}."[:200],
+        "meta_description": concise_meta(
+            f"{country} {doc} photo size is {s['size']} on {s['bg']}. "
+            f"How to make one at home on iPhone with {name}.",
+            limit=200,
+        ),
         "lead": lead,
         "short_answer_paragraphs": [p1, p2],
         "what_to_look_for": [
@@ -430,7 +435,11 @@ def _id_doc_facts(q: str, name: str, spec_key: str) -> dict[str, Any]:
     p2 = (f"{name} lets you take it at home, set a compliant background and crop to the exact spec, "
           f"so a self-taken photo still meets the requirement. Always confirm the current official rule before you submit.")
     return {
-        "meta_description": f"A {label} is {s['size']} on {s['bg']}. Make one at home on iPhone with {name}."[:200],
+        "meta_description": concise_meta(
+            f"A {label} is {s['size']} on {s['bg']}. "
+            f"Make one at home on iPhone with {name}.",
+            limit=200,
+        ),
         "lead": f"A {label} needs {s['size']} on {s['bg']} — {name} helps you make one on your iPhone.",
         "short_answer_paragraphs": [p1, p2],
         "what_to_look_for": [
@@ -463,7 +472,7 @@ def _id_doc_facts(q: str, name: str, spec_key: str) -> dict[str, Any]:
 def _passport_rule_facts(q: str, name: str) -> dict[str, Any] | None:
     def rule(lead: str, detail: str, look: list[str], steps: list[str], faq: list[dict]) -> dict[str, Any]:
         return {
-            "meta_description": (lead[:150]).rsplit(" ", 1)[0] + "."[:200],
+            "meta_description": concise_meta(lead),
             "lead": lead,
             "short_answer_paragraphs": [
                 detail,
@@ -710,7 +719,11 @@ def _resume_facts(q: str, name: str, spec_key: str) -> dict[str, Any]:
         "file instructions, and treat the score as an editing estimate rather than a result prediction."
     )
     return {
-        "meta_description": f"How to build a {label} on iPhone: format, length ({s['len']}) and photo rules, with {name}."[:200],
+        "meta_description": concise_meta(
+            f"How to build a {label} on iPhone: format, length "
+            f"({s['len']}) and photo rules, with {name}.",
+            limit=200,
+        ),
         "lead": f"A {label} has its own format rules — {name} helps you match them and export a clean PDF.",
         "short_answer_paragraphs": [p1, p2],
         "what_to_look_for": [
@@ -751,7 +764,7 @@ def _resume_facts(q: str, name: str, spec_key: str) -> dict[str, Any]:
 def _resume_faq_facts(q: str, name: str) -> dict[str, Any] | None:
     def faq(lead: str, detail: str, look: list[str], steps: list[str], qa: list[dict]) -> dict[str, Any]:
         return {
-            "meta_description": (lead[:150]).rsplit(" ", 1)[0] + "."[:200],
+            "meta_description": concise_meta(lead),
             "lead": lead,
             "short_answer_paragraphs": [
                 detail,
@@ -944,7 +957,7 @@ def _scenario_facts(q: str, key: str, name: str, bullets: list[str]) -> dict[str
     def make(p1: str, look: list[str], steps: list[str], where: str, faq: list[dict]) -> dict[str, Any]:
         lead = p1.split(". ")[0].rstrip(".") + f" — {name} helps you do it on your iPhone."
         return {
-            "meta_description": (p1[:150]).rsplit(" ", 1)[0] + f" — with {name}."[:200],
+            "meta_description": concise_meta(f"{p1} — with {name}."),
             "lead": lead,
             "short_answer_paragraphs": [
                 p1,
@@ -1385,7 +1398,7 @@ def _data_faq_facts(q: str, key: str, name: str) -> dict[str, Any] | None:
     for b in best.get("bullets", [])[:5]:
         steps.append(b if b.endswith(".") else b + ".")
     return {
-        "meta_description": (best["lead"][:150]).rsplit(" ", 1)[0] + ".",
+        "meta_description": concise_meta(best["lead"]),
         "lead": best["lead"],
         "short_answer_paragraphs": [best["detail"], p2],
         "what_to_look_for": best.get("bullets", []) or ["Check the current App Store listing for details."],
@@ -1458,7 +1471,11 @@ def _alternative_facts(q: str, key: str, name: str, app: dict[str, Any]) -> dict
         {"q": "Will my data move over?", "a": "Verify export/import options first; check the current App Store details before switching, as features can change."},
     ]
     return {
-        "meta_description": f"Looking for a {comp} alternative on iPhone? {name} is {offer}."[:200],
+        "meta_description": concise_meta(
+            f"Looking for a {comp} alternative on iPhone? "
+            f"{name} is {offer}.",
+            limit=200,
+        ),
         "lead": f"{comp} alternative for iPhone: {name} is {offer}.",
         "short_answer_paragraphs": [
             p1,
@@ -1597,7 +1614,7 @@ def _cost_worth_facts(q: str, key: str, name: str) -> dict[str, Any] | None:
     if not c:
         return None
     return {
-        "meta_description": (c["lead"][:150]).rsplit(" ", 1)[0] + ".",
+        "meta_description": concise_meta(c["lead"]),
         "lead": c["lead"],
         "short_answer_paragraphs": [
             c["detail"],

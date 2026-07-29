@@ -43,6 +43,7 @@ import add_related_tools
 import answer_app_store_links
 import answer_deep
 import answer_portfolio
+import answer_text
 import app_store_storefronts
 import appstore_live
 import build_pages
@@ -103,6 +104,7 @@ import portfolio_offer_catalog
 import publisher_intent_catalog
 import prioritize_trip_planet_resources
 import queries
+import reconcile_answer_semantics
 import refresh_primary_resource_answers
 import refresh_storefront_availability
 import resume_evidence_planner
@@ -9736,6 +9738,7 @@ class GeneratorTests(unittest.TestCase):
             (answers / "sample.html").write_text(
                 '<html lang="en"><head><title>Sample answer</title>'
                 '<link rel="canonical" href="https://example.com/sample">'
+                "<style>\nbody{color:#111}\n</style>"
                 '</head><body><main><h1>Sample answer</h1>'
                 '<p class="lead">Sample summary.</p></main>'
                 '<div class="footer">Publisher-authored guide from Lumi Studio, '
@@ -20648,6 +20651,61 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("Get it ←", rtl)
         self.assertNotIn("→", rtl)
 
+    def test_answer_localizer_reconciles_microformat_url_to_canonical(self):
+        source = (
+            '<html lang="en"><head><link rel="canonical" '
+            'href="https://alice51849.github.io/ios-app-guide/answers/sample.html">'
+            '<meta property="og:url" '
+            'content="https://alice51849.github.io/ios-app-guide/answers/sample.html">'
+            '<script type="application/ld+json">{"@context":"https://schema.org",'
+            '"@type":"WebPage","@id":"https://alice51849.github.io/'
+            'ios-app-guide/answers/sample.html#webpage",'
+            '"url":"https://alice51849.github.io/ios-app-guide/answers/sample.html"}'
+            '</script><script type="application/ld+json">'
+            '{"@context":"https://schema.org","@type":"Article",'
+            '"mainEntityOfPage":"https://alice51849.github.io/'
+            'ios-app-guide/answers/sample.html"}</script>'
+            '</head><body><!-- answer-microformat:start -->'
+            '<div class="h-entry hentry"><data class="u-url u-uid" '
+            'value="https://alice51849.github.io/ios-app-guide/answers/sample.html">'
+            "</data></div><!-- answer-microformat:end --></body></html>"
+        )
+        localized = aeo_answers_i18n.finalize_html(
+            source,
+            "fr-FR",
+            "sample",
+        )
+        expected = (
+            "https://alice51849.github.io/ios-app-guide/"
+            "fr-FR/answers/sample.html"
+        )
+        self.assertIn(f'<link rel="canonical" href="{expected}">', localized)
+        self.assertIn(f'<data class="u-url u-uid" value="{expected}">', localized)
+        self.assertIn(f'<meta property="og:url" content="{expected}">', localized)
+        schema = json.loads(
+            re.search(
+                r'<script type="application/ld\+json">(.*?)</script>',
+                localized,
+                re.S,
+            ).group(1)
+        )
+        self.assertEqual(expected, schema["url"])
+        self.assertEqual(f"{expected}#webpage", schema["@id"])
+        article = json.loads(
+            re.findall(
+                r'<script type="application/ld\+json">(.*?)</script>',
+                localized,
+                re.S,
+            )[1]
+        )
+        self.assertEqual(expected, article["mainEntityOfPage"])
+        self.assertEqual(
+            [],
+            reconcile_answer_semantics.localized_structured_data_url_issues(
+                localized
+            ),
+        )
+
     def test_answer_localizer_updates_jsonld_language_semantically(self):
         source = (
             '<html lang="en"><head><script type="application/ld+json">'
@@ -21778,6 +21836,11 @@ class GeneratorTests(unittest.TestCase):
             with (
                 mock.patch.object(aeo_answers, "PAGES_ROOT", root),
                 mock.patch.object(aeo_answers, "ANSWERS_DIR", answers),
+                mock.patch.object(
+                    aeo_answers,
+                    "extract_style",
+                    return_value="body{color:#111}",
+                ),
             ):
                 aeo_answers.regenerate_index()
             answer_index = (answers / "index.html").read_text(encoding="utf-8")
@@ -22753,6 +22816,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_hubs.py",
             "gen_app_catalog.py",
             "aeo_answers.py --cached-live --limit 0",
+            "reconcile_answer_semantics.py --repair",
             "fix_en_hreflang.py",
             "add_related_answers.py",
             "add_related_tools.py",
@@ -22787,6 +22851,15 @@ class GeneratorTests(unittest.TestCase):
         )
         workflow_positions = [refresh_block.index(item) for item in workflow_chain]
         self.assertEqual(sorted(workflow_positions), workflow_positions)
+        self.assertEqual(5, workflow.count("reconcile_answer_semantics.py"))
+        self.assertLess(
+            refresh_block.rindex("gen_feed.py"),
+            refresh_block.rindex("reconcile_answer_semantics.py"),
+        )
+        self.assertLess(
+            refresh_block.rindex("reconcile_answer_semantics.py"),
+            refresh_block.index("gen_sitemap_lastmod.py"),
+        )
         self.assertEqual(
             2,
             workflow.count("gen_social_previews.py --oembed-only"),
@@ -22860,6 +22933,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_llms.py --cached-live",
             "zhuyin_resourcesync.py",
             "gen_feed.py",
+            "reconcile_answer_semantics.py",
             "gen_sitemap_lastmod.py",
         )
         final_positions = [final_cleanup_block.index(item) for item in final_chain]
@@ -23039,6 +23113,9 @@ class GeneratorTests(unittest.TestCase):
             1,
             publish.count("refresh_primary_resource_answers.py"),
         )
+        self.assertEqual(3, publish.count("reconcile_answer_semantics.py"))
+        self.assertEqual(1, publish.count("sync_standard_site.py"))
+        self.assertEqual(3, publish.count("sync_standard_site(env)"))
         self.assertIn("zhuyin_picture_book_club_kit.py", publish)
         self.assertIn("zhuyin_parent_teacher_handoff_kit.py", publish)
         self.assertIn("zhuyin_library_storytime_kit.py", publish)
@@ -23138,6 +23215,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_dcat_catalog.py",
             "prioritize_trip_planet_resources.py",
             "refresh_primary_resource_answers.py",
+            "reconcile_answer_semantics.py",
             "add_related_answers.py",
             "add_related_tools.py",
             "fix_en_hreflang.py",
@@ -23172,6 +23250,14 @@ class GeneratorTests(unittest.TestCase):
             publish_main.index(item) for item in publish_chain
         ]
         self.assertEqual(sorted(publish_positions), publish_positions)
+        self.assertLess(
+            publish_main.rindex("gen_feed.py"),
+            publish_main.rindex("reconcile_answer_semantics.py"),
+        )
+        self.assertLess(
+            publish_main.rindex("reconcile_answer_semantics.py"),
+            publish_main.index("gen_sitemap_lastmod.py"),
+        )
         reconcile = publish.split(
             "def reconcile_lastmod_after_rebase", 1
         )[1].split("def main():", 1)[0]
@@ -24824,6 +24910,328 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertEqual(lead, answer_deep.concise_meta(lead))
         self.assertLessEqual(len(answer_deep.concise_meta("word " * 100)), 151)
+
+    def test_answer_meta_preserves_complete_long_sentences(self):
+        lockhour = (
+            "LockHour's Sleep Wind Down mode runs a 60-minute pre-bed focus "
+            "lock that shields Social, Video, and Entertainment apps — and it "
+            "can be scheduled to activate automatically every night. The "
+            "in-session screen has no early-exit button."
+        )
+        mochi = (
+            "Mochi To-Do is a free, no-ads checklist app with 100 illustrated "
+            "skins — each with its own paper texture, fonts, and decorative "
+            "details — so your daily task list actually looks like something "
+            "you want to open."
+        )
+        passport = (
+            "Taking the picture is only half the job: many people still need "
+            "a printable sheet with multiple copies and clear cut lines for "
+            "pharmacy, home, A4, Letter, or 4×6 printing."
+        )
+        self.assertTrue(
+            answer_text.concise_meta(lockhour).endswith("every night.")
+        )
+        self.assertEqual(mochi, answer_text.concise_meta(mochi))
+        self.assertEqual(passport, answer_text.concise_meta(passport))
+        for text in (lockhour, mochi, passport):
+            self.assertFalse(
+                answer_text.is_malformed_meta(answer_text.concise_meta(text))
+            )
+        self.assertEqual(
+            (
+                "Mochi To-Do is a free, no-ads checklist app with 100 "
+                "illustrated skins — each with its own paper texture, fonts, "
+                "and decorative details."
+            ),
+            answer_text.concise_meta(mochi.replace(
+                "your daily task list actually looks like something you want to open",
+                "your",
+            )),
+        )
+
+    def test_answer_meta_does_not_finish_on_a_subordinate_comma_clause(self):
+        lead = (
+            "Trip Planet lets parents design custom missions for their child "
+            "during a trip — 'find a red door', 'try a local food', "
+            "'spot an airplane' — and as the child completes them, a progress "
+            "bar fills and a personalized reward unlocks."
+        )
+        broken = lead.split(", a progress bar", 1)[0] + "."
+        self.assertTrue(answer_text.is_malformed_meta(broken))
+        repaired = answer_text.concise_meta(lead)
+        self.assertEqual(
+            (
+                "Trip Planet lets parents design custom missions for their "
+                "child during a trip — 'find a red door', 'try a local food', "
+                "'spot an airplane'."
+            ),
+            repaired,
+        )
+        self.assertNotIn("and as the child completes them.", repaired)
+        complete = (
+            "Tone practice matters — and because English has no tones, "
+            "children need explicit practice."
+        )
+        self.assertFalse(answer_text.is_malformed_meta(complete))
+        self.assertEqual(complete, answer_text.concise_meta(complete))
+
+    def test_answer_semantic_gate_repairs_metadata_from_visible_lead(self):
+        old = (
+            "Mochi To-Do is a free, no-ads checklist app with 100 illustrated "
+            "skins — each with its own paper texture, fonts, and decorative "
+            "details — so your."
+        )
+        lead = (
+            "Mochi To-Do is a free, no-ads checklist app with 100 illustrated "
+            "skins — each with its own paper texture, fonts, and decorative "
+            "details — so your daily task list actually looks like something "
+            "you want to open."
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "answer.html"
+            path.write_text(
+                '<meta name="description" content="'
+                f'{html.escape(old, quote=True)}">'
+                '<meta property="og:description" content="'
+                f'{html.escape(old, quote=True)}">'
+                '<script type="application/ld+json">'
+                f'{{"description": {json.dumps(old, ensure_ascii=False)}}}'
+                "</script><h1>best aesthetic to-do list app</h1>"
+                f'<p class="lead">{html.escape(lead)}</p>',
+                encoding="utf-8",
+            )
+            self.assertTrue(
+                reconcile_answer_semantics.repair_page_metadata(path)
+            )
+            repaired = path.read_text(encoding="utf-8")
+            self.assertEqual(
+                lead,
+                reconcile_answer_semantics.meta_description(repaired),
+            )
+            self.assertIn(
+                f'content="{html.escape(lead, quote=True)}"',
+                repaired,
+            )
+            self.assertIn(
+                f'"description": {json.dumps(lead, ensure_ascii=False)}',
+                repaired,
+            )
+
+    def test_answer_semantic_gate_preserves_complete_localized_metadata(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "answer.html"
+            path.write_text(
+                '<meta name="description" content="'
+                "Die vorhandene Übersetzung ist ein vollständiger Satz."
+                '"><h1>Datenschutz</h1><p class="lead">'
+                "Eine längere lokalisierte Einleitung darf nicht nur deshalb "
+                "neu gekürzt werden, weil die englische Quelle beschädigt war."
+                "</p>",
+                encoding="utf-8",
+            )
+            self.assertIsNone(
+                reconcile_answer_semantics.planned_page_metadata_repair(
+                    path,
+                    english=False,
+                )
+            )
+
+    def test_answer_semantic_gate_repairs_localized_sentence_fragments(self):
+        cases = (
+            (
+                "fr-FR",
+                "Pour quitter l’ancienne app et.",
+                "Pour quitter l’ancienne app, choisissez un suivi hors ligne.",
+            ),
+            (
+                "de-DE",
+                "App-Store-Funktionen und Preise können s",
+                "App-Store-Funktionen und Preise können sich ändern.",
+            ),
+            (
+                "zh-Hant",
+                "許多家長會焦慮,好讓孩子在",
+                "許多家長會焦慮,好讓孩子在入學前熟悉注音。",
+            ),
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for locale, old, lead in cases:
+                with self.subTest(locale=locale):
+                    path = root / locale / "answers" / "answer.html"
+                    path.parent.mkdir(parents=True, exist_ok=True)
+                    path.write_text(
+                        '<meta name="description" content="'
+                        f'{html.escape(old, quote=True)}"><h1>Answer</h1>'
+                        f'<p class="lead">{html.escape(lead)}</p>',
+                        encoding="utf-8",
+                    )
+                    self.assertTrue(
+                        reconcile_answer_semantics.repair_page_metadata(
+                            path,
+                            english=False,
+                        )
+                    )
+                    self.assertEqual(
+                        lead,
+                        reconcile_answer_semantics.meta_description(
+                            path.read_text(encoding="utf-8")
+                        ),
+                    )
+
+    def test_localized_semantic_gate_accepts_native_terminal_punctuation(self):
+        self.assertFalse(
+            answer_text.is_malformed_localized_meta(
+                "यह एक पूर्ण वाक्य है।",
+                "hi",
+            )
+        )
+        self.assertFalse(
+            answer_text.is_malformed_localized_meta(
+                "یہ ایک مکمل جملہ ہے۔",
+                "ur-PK",
+            )
+        )
+
+    def test_answer_semantic_gate_detects_cross_topic_passport_content(self):
+        polluted = """
+        <h1>app to block social media before bed iPhone</h1>
+        <!-- answer-content:start -->
+        <p>India passport photo size is 51×51 mm on a plain white background.</p>
+        <!-- answer-content:end -->
+        """
+        legitimate = polluted.replace(
+            "app to block social media before bed iPhone",
+            "app to make a US citizenship photo at home",
+        )
+        self.assertTrue(
+            reconcile_answer_semantics.has_cross_topic_passport_content(
+                polluted
+            )
+        )
+        self.assertFalse(
+            reconcile_answer_semantics.has_cross_topic_passport_content(
+                legitimate
+            )
+        )
+
+    def test_cross_topic_refresh_uses_target_and_preserves_standard_site(self):
+        question = "app to block social media before bed iPhone"
+        slug = aeo_answers.slugify(question)
+        publication = (
+            "at://did:plc:kboucnzkxzmqmatvhes4xlt4/"
+            "site.standard.publication/3mrocqbkyt6mg"
+        )
+        polluted = f"""<!DOCTYPE html><html lang="en"><head>
+        <link rel="site.standard.publication" href="{publication}">
+        <style>
+        .target-checkout-style{{color:#123456}}
+        </style>
+        </head><body><h1>{question}</h1>
+        <!-- answer-content:start -->
+        <p>Passport photo crop with a 51x51 plain white background, head size,
+        visa print sheet, and ID photo requirements.</p>
+        <!-- answer-content:end -->
+        <a href="https://apps.apple.com/app/id{APPSTORE['lockhour']}">App</a>
+        </body></html>"""
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            path = pages / "answers" / f"{slug}.html"
+            path.parent.mkdir(parents=True)
+            path.write_text(polluted, encoding="utf-8")
+            with mock.patch.object(
+                aeo_answers,
+                "create_page",
+                side_effect=AssertionError("must not write through globals"),
+            ):
+                self.assertTrue(
+                    reconcile_answer_semantics.refresh_cross_topic_page(
+                        path,
+                        pages,
+                    )
+                )
+            refreshed = path.read_text(encoding="utf-8")
+            self.assertNotIn("51x51", refreshed)
+            self.assertIn(".target-checkout-style", refreshed)
+            self.assertIn(
+                f'<link rel="site.standard.publication" href="{publication}">',
+                refreshed,
+            )
+
+    def test_answer_repair_cli_does_not_read_default_checkout_at_import(self):
+        with tempfile.TemporaryDirectory() as directory:
+            env = os.environ.copy()
+            env["GEO_PAGES"] = "/does/not/exist"
+            env["PYTHONDONTWRITEBYTECODE"] = "1"
+            result = subprocess.run(
+                [
+                    sys.executable,
+                    str(Path(GEO) / "reconcile_answer_semantics.py"),
+                    "--pages",
+                    directory,
+                    "--repair",
+                ],
+                cwd=GEO,
+                env=env,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(0, result.returncode, result.stderr)
+
+    def test_answer_index_regeneration_preserves_standard_site_link(self):
+        publication = (
+            "at://did:plc:kboucnzkxzmqmatvhes4xlt4/"
+            "site.standard.publication/3mrocqbkyt6mg"
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            answers = pages / "answers"
+            answers.mkdir(parents=True)
+            sample = (
+                Path(GEO)
+                / "pages"
+                / "answers"
+                / "best-offline-document-scanner-app-for-iphone.html"
+            ).read_text(encoding="utf-8")
+            (answers / "sample.html").write_text(sample, encoding="utf-8")
+            (answers / "index.html").write_text(
+                '<html><head><link rel="site.standard.publication" '
+                f'href="{publication}"></head><body></body></html>',
+                encoding="utf-8",
+            )
+            aeo_answers.regenerate_index(pages)
+            regenerated = (answers / "index.html").read_text(
+                encoding="utf-8"
+            )
+            self.assertEqual(
+                1,
+                regenerated.count('rel="site.standard.publication"'),
+            )
+            self.assertIn(publication, regenerated)
+
+    def test_answer_semantic_gate_detects_cross_app_localized_lead(self):
+        source = f"""
+        <meta name="description" content="Passport photo print sheet">
+        <h1>passport photo print sheet</h1>
+        <p class="lead">Lumi Letters Pro is a phonics app.</p>
+        <a href="https://apps.apple.com/app/id{APPSTORE["snapport"]}">
+          Snapport
+        </a>
+        """
+        self.assertEqual(
+            ["Lumi Letters Pro"],
+            reconcile_answer_semantics.unexpected_portfolio_apps_in_lead(
+                source
+            ),
+        )
+
+    def test_published_answers_pass_semantic_integrity_gate(self):
+        self.assertEqual(
+            [],
+            reconcile_answer_semantics.audit_pages(Path(GEO) / "pages"),
+        )
 
     def test_catalog_contains_only_verified_public_apps(self):
         page = gen_app_catalog.render_catalog("en", {"lumibopomofo"})

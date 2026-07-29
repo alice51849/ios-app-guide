@@ -238,6 +238,7 @@ class PublisherDecisionTests(unittest.TestCase):
 
     def test_same_digest_is_a_zero_mutation_no_op(self):
         existing = discussion(self.rendered, source_sha=OLD_SOURCE_SHA)
+        existing["viewerCanUpdate"] = False
         with (
             mock.patch.object(
                 digest,
@@ -262,6 +263,7 @@ class PublisherDecisionTests(unittest.TestCase):
         )
         old = digest.render_digest(old_resources, OLD_SOURCE_SHA)
         existing = discussion(old, updated_at="2026-07-15T00:00:00Z")
+        existing["viewerCanUpdate"] = False
         now = dt.datetime(2026, 7, 29, tzinfo=dt.timezone.utc)
         with (
             mock.patch.object(
@@ -278,6 +280,32 @@ class PublisherDecisionTests(unittest.TestCase):
                 now=now,
             )
         self.assertEqual("deferred", result.action)
+        update.assert_not_called()
+
+    def test_due_update_fails_before_mutation_without_capability(self):
+        old_resources = digest.select_resources(
+            feed([item("/ios-app-guide/data/old.html")]),
+            html_loader=html_loader,
+        )
+        old = digest.render_digest(old_resources, OLD_SOURCE_SHA)
+        existing = discussion(old, updated_at="2026-06-01T00:00:00Z")
+        existing["viewerCanUpdate"] = False
+        now = dt.datetime(2026, 7, 29, tzinfo=dt.timezone.utc)
+        with (
+            mock.patch.object(
+                digest,
+                "load_repository_state",
+                return_value=state(existing),
+            ),
+            mock.patch.object(digest, "_update_discussion") as update,
+        ):
+            with self.assertRaisesRegex(digest.PublisherError, "cannot update"):
+                digest.publish(
+                    mock.sentinel.client,
+                    self.rendered,
+                    bootstrap=False,
+                    now=now,
+                )
         update.assert_not_called()
 
     def test_graphql_actions_bot_login_is_approved(self):

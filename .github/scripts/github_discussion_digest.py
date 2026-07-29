@@ -950,6 +950,7 @@ def publish(
         discussion,
         category_id=state.category_id,
         require_locked=True,
+        require_viewer_update=False,
     )
     url = _discussion_url(discussion.get("url"))
     if metadata.digest == rendered.digest:
@@ -980,6 +981,11 @@ def publish(
             ),
         )
 
+    _validate_existing(
+        discussion,
+        category_id=state.category_id,
+        require_locked=True,
+    )
     discussion_id = _valid_node_id(discussion.get("id"), label="Discussion")
     _update_discussion(
         client,

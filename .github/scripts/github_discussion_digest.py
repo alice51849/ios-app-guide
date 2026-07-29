@@ -101,6 +101,12 @@ query ManagedDiscussion($owner: String!, $name: String!) {
 }
 """
 
+RATE_LIMIT_QUERY = """
+query PublisherRateLimit {
+  rateLimit { remaining }
+}
+"""
+
 CREATE_DISCUSSION_MUTATION = """
 mutation CreateManagedDiscussion(
   $repositoryId: ID!
@@ -126,7 +132,6 @@ mutation CreateManagedDiscussion(
       comments { totalCount }
     }
   }
-  rateLimit { remaining }
 }
 """
 
@@ -141,7 +146,6 @@ mutation LockManagedDiscussion($id: ID!) {
       }
     }
   }
-  rateLimit { remaining }
 }
 """
 
@@ -160,7 +164,6 @@ mutation UpdateManagedDiscussion($id: ID!, $body: String!) {
       comments { totalCount }
     }
   }
-  rateLimit { remaining }
 }
 """
 
@@ -454,6 +457,42 @@ class GraphQLClient:
         variables: Mapping[str, object],
         *,
         mutation: bool,
+        mutation_reserve: int = 0,
+    ) -> dict[str, Any]:
+        if mutation:
+            if (
+                not isinstance(mutation_reserve, int)
+                or isinstance(mutation_reserve, bool)
+                or mutation_reserve < 0
+            ):
+                raise PublisherError("Mutation rate-limit reserve was invalid")
+            limit_data = self._execute_once(
+                RATE_LIMIT_QUERY,
+                {},
+                mutation=False,
+                require_rate_limit=True,
+            )
+            remaining = limit_data["rateLimit"]["remaining"]
+            required = MIN_RATE_LIMIT + 1 + mutation_reserve
+            if remaining < required:
+                raise PublisherError(
+                    "Mutation was stopped before execution because the rate-limit "
+                    f"reserve was too low ({remaining} < {required})"
+                )
+        return self._execute_once(
+            query,
+            variables,
+            mutation=mutation,
+            require_rate_limit=not mutation,
+        )
+
+    def _execute_once(
+        self,
+        query: str,
+        variables: Mapping[str, object],
+        *,
+        mutation: bool,
+        require_rate_limit: bool,
     ) -> dict[str, Any]:
         encoded = json.dumps(
             {"query": query, "variables": dict(variables)},
@@ -504,18 +543,20 @@ class GraphQLClient:
         data = payload.get("data")
         if not isinstance(data, dict):
             raise PublisherError("GraphQL data was null or malformed")
-        rate_limit = data.get("rateLimit")
-        if not isinstance(rate_limit, dict):
-            raise PublisherError("GraphQL rateLimit data was missing")
-        remaining = rate_limit.get("remaining")
-        if (
-            not isinstance(remaining, int)
-            or isinstance(remaining, bool)
-            or remaining < MIN_RATE_LIMIT
-        ):
-            raise PublisherError(
-                f"GraphQL rate limit below required floor ({remaining!r} < {MIN_RATE_LIMIT})"
-            )
+        if require_rate_limit:
+            rate_limit = data.get("rateLimit")
+            if not isinstance(rate_limit, dict):
+                raise PublisherError("GraphQL rateLimit data was missing")
+            remaining = rate_limit.get("remaining")
+            if (
+                not isinstance(remaining, int)
+                or isinstance(remaining, bool)
+                or remaining < MIN_RATE_LIMIT
+            ):
+                raise PublisherError(
+                    "GraphQL rate limit below required floor "
+                    f"({remaining!r} < {MIN_RATE_LIMIT})"
+                )
         return data
 
 
@@ -723,6 +764,7 @@ def _create_discussion(
             "body": rendered.body,
         },
         mutation=True,
+        mutation_reserve=2,
     )
     payload = data.get("createDiscussion")
     discussion = payload.get("discussion") if isinstance(payload, dict) else None

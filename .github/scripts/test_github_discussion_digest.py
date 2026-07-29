@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import copy
 import datetime as dt
+import json
 import os
 import pathlib
 import sys
@@ -289,6 +290,21 @@ class PublisherDecisionTests(unittest.TestCase):
 
 
 class GraphQLSafetyTests(unittest.TestCase):
+    class Response:
+        status = 200
+
+        def __init__(self, payload: dict[str, object]):
+            self.payload = payload
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc_value, traceback):
+            return False
+
+        def read(self, _limit: int) -> bytes:
+            return json.dumps(self.payload).encode("utf-8")
+
     @staticmethod
     def repository_payload(permission: object) -> dict[str, object]:
         return {
@@ -342,7 +358,12 @@ class GraphQLSafetyTests(unittest.TestCase):
             digest.load_repository_state(client)
 
     def test_mutation_transport_uncertainty_is_never_retried(self):
-        opener = mock.Mock(side_effect=urllib.error.URLError("connection reset"))
+        rate_limit = self.Response(
+            {"data": {"rateLimit": {"remaining": 5_000}}}
+        )
+        opener = mock.Mock(
+            side_effect=(rate_limit, urllib.error.URLError("connection reset"))
+        )
         client = digest.GraphQLClient("workflow-token", opener=opener)
         with self.assertRaisesRegex(
             digest.MutationUncertainError,
@@ -353,6 +374,25 @@ class GraphQLSafetyTests(unittest.TestCase):
                 {},
                 mutation=True,
             )
+        self.assertEqual(2, opener.call_count)
+        requests = [
+            json.loads(call.args[0].data)
+            for call in opener.call_args_list
+        ]
+        self.assertEqual(
+            1,
+            sum("mutation Test" in request["query"] for request in requests),
+        )
+
+    def test_mutation_is_not_sent_at_the_rate_limit_floor(self):
+        opener = mock.Mock(
+            return_value=self.Response(
+                {"data": {"rateLimit": {"remaining": digest.MIN_RATE_LIMIT}}}
+            )
+        )
+        client = digest.GraphQLClient("workflow-token", opener=opener)
+        with self.assertRaisesRegex(digest.PublisherError, "reserve was too low"):
+            client.execute("mutation Test { test }", {}, mutation=True)
         self.assertEqual(1, opener.call_count)
 
 

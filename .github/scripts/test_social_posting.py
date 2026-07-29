@@ -953,6 +953,21 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
             text.index("python3 -m unittest discover"),
         )
 
+    def test_geo_workflow_checks_out_latest_main_after_queue_wait(self):
+        workflow = os.path.join(
+            portfolio_daily.REPO_ROOT,
+            ".github",
+            "workflows",
+            "geo-daily.yml",
+        )
+        with open(workflow, encoding="utf-8") as workflow_file:
+            text = workflow_file.read()
+        checkout = text.split(
+            "- uses: actions/checkout@v5", 1
+        )[1].split("- uses:", 1)[0]
+        self.assertIn("ref: main", checkout)
+        self.assertIn("fetch-depth: 0", checkout)
+
 
 class DevToGateTests(unittest.TestCase):
     POOL = (

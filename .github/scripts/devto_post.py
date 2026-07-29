@@ -22,22 +22,6 @@ MIN_PUBLISH_INTERVAL = _dt.timedelta(hours=72)
 PAGE_SIZE = 100
 
 
-def me(key):
-    req = urllib.request.Request(
-        "https://dev.to/api/users/me",
-        headers={"api-key": key, "User-Agent": UA},
-    )
-    data = request_json(
-        req,
-        label="Dev.to profile read",
-        timeout=25,
-        attempts=3,
-    )
-    if not isinstance(data, dict):
-        raise RequestError("Dev.to profile read returned a non-object response")
-    return data
-
-
 def published_articles(key):
     articles = []
     for page in range(1, 21):
@@ -192,10 +176,6 @@ def main():
         )
         return 1
     try:
-        profile = me(key)
-        username = profile.get("username", "").strip()
-        if not username:
-            raise RequestError("Dev.to profile response has no username")
         with open(
             os.path.join(HERE, "devto_articles.json"), encoding="utf-8"
         ) as pool_file:
@@ -227,10 +207,10 @@ def main():
         print("published ok:", url)
         return 0
     except HTTPStatusError as error:
-        if error.status == 401 and error.label in {
-            "Dev.to profile read",
-            "Dev.to publish",
-        }:
+        if error.status == 401 and (
+            error.label == "Dev.to publish"
+            or error.label.startswith("Dev.to authenticated articles read")
+        ):
             print(
                 "::error title=Dev.to authorization unavailable::"
                 "API key rejected (HTTP 401); queue preserved and future "

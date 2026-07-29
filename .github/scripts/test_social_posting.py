@@ -1055,11 +1055,18 @@ class DevToGateTests(unittest.TestCase):
             selected = devto_post.next_publishable(pool, ())
         self.assertEqual("Ready", selected["title"])
 
-    def test_profile_read_403_is_an_explicit_failure(self):
-        error = common.HTTPStatusError("Dev.to profile read", 403)
+    def test_authenticated_history_read_403_is_an_explicit_failure(self):
+        error = common.HTTPStatusError(
+            "Dev.to authenticated articles read (page 1)",
+            403,
+        )
         with (
             mock.patch.dict(os.environ, {"DEVTO_API_KEY": "test-key"}),
-            mock.patch.object(devto_post, "me", side_effect=error),
+            mock.patch.object(
+                devto_post,
+                "published_articles",
+                side_effect=error,
+            ),
         ):
             self.assertEqual(1, devto_post.main())
 
@@ -1072,10 +1079,17 @@ class DevToGateTests(unittest.TestCase):
         self.assertIn("queue preserved", stderr.getvalue())
 
     def test_rejected_api_key_preserves_queue_and_fails_closed(self):
-        error = common.HTTPStatusError("Dev.to profile read", 401)
+        error = common.HTTPStatusError(
+            "Dev.to authenticated articles read (page 1)",
+            401,
+        )
         with (
             mock.patch.dict(os.environ, {"DEVTO_API_KEY": "expired-key"}),
-            mock.patch.object(devto_post, "me", side_effect=error),
+            mock.patch.object(
+                devto_post,
+                "published_articles",
+                side_effect=error,
+            ),
             mock.patch("sys.stderr", new_callable=io.StringIO) as stderr,
         ):
             self.assertEqual(1, devto_post.main())
@@ -1086,9 +1100,6 @@ class DevToGateTests(unittest.TestCase):
         error = common.HTTPStatusError("Dev.to publish", 401)
         with (
             mock.patch.dict(os.environ, {"DEVTO_API_KEY": "expired-key"}),
-            mock.patch.object(
-                devto_post, "me", return_value={"username": "tester"}
-            ),
             mock.patch.object(devto_post, "published_articles", return_value=[]),
             mock.patch.object(
                 devto_post, "next_unpublished", return_value={"title": "Ready"}
@@ -1112,9 +1123,6 @@ class DevToGateTests(unittest.TestCase):
         error = common.HTTPStatusError("Dev.to publish", 403)
         with (
             mock.patch.dict(os.environ, {"DEVTO_API_KEY": "test-key"}),
-            mock.patch.object(
-                devto_post, "me", return_value={"username": "tester"}
-            ),
             mock.patch.object(devto_post, "published_articles", return_value=[]),
             mock.patch.object(
                 devto_post, "next_unpublished", return_value={"title": "Ready"}
@@ -1138,9 +1146,6 @@ class DevToGateTests(unittest.TestCase):
         latest = dt.datetime.now(dt.timezone.utc) - dt.timedelta(hours=1)
         with (
             mock.patch.dict(os.environ, {"DEVTO_API_KEY": "test-key"}),
-            mock.patch.object(
-                devto_post, "me", return_value={"username": "tester"}
-            ),
             mock.patch.object(devto_post, "published_articles", return_value=[]),
             mock.patch.object(
                 devto_post, "next_unpublished", return_value={"title": "Ready"}

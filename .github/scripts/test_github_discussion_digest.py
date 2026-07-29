@@ -290,6 +290,23 @@ class PublisherDecisionTests(unittest.TestCase):
         )
         self.assertEqual(self.rendered.digest, metadata.digest)
 
+    def test_bootstrap_lock_can_validate_without_update_capability(self):
+        existing = discussion(self.rendered, locked=False)
+        existing["viewerCanUpdate"] = False
+        metadata = digest._validate_existing(
+            existing,
+            category_id="DIC_kwDOAnnouncements",
+            require_locked=False,
+            require_viewer_update=False,
+        )
+        self.assertEqual(self.rendered.digest, metadata.digest)
+        with self.assertRaisesRegex(digest.PublisherError, "cannot update"):
+            digest._validate_existing(
+                existing,
+                category_id="DIC_kwDOAnnouncements",
+                require_locked=False,
+            )
+
     def test_schedule_can_never_request_bootstrap(self):
         with self.assertRaisesRegex(digest.PublisherError, "workflow_dispatch"):
             digest.parse_bootstrap("schedule", "true")

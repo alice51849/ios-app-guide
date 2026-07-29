@@ -721,6 +721,7 @@ def _validate_existing(
     *,
     category_id: str,
     require_locked: bool,
+    require_viewer_update: bool = True,
 ) -> Metadata:
     _valid_node_id(discussion.get("id"), label="Discussion")
     if discussion.get("title") != DISCUSSION_TITLE:
@@ -728,8 +729,15 @@ def _validate_existing(
     _validate_category(discussion.get("category"), category_id)
     _discussion_url(discussion.get("url"))
     _author_login(discussion)
-    if discussion.get("viewerCanUpdate") is not True:
+    viewer_can_update = discussion.get("viewerCanUpdate")
+    if require_viewer_update and viewer_can_update is not True:
         raise PublisherError("Workflow viewer cannot update the managed Discussion")
+    if (
+        not require_viewer_update
+        and viewer_can_update is not True
+        and viewer_can_update is not False
+    ):
+        raise PublisherError("Managed Discussion viewerCanUpdate was malformed")
     if discussion.get("locked") is not require_locked:
         expected = "locked" if require_locked else "unlocked"
         raise PublisherError(f"Managed Discussion is not {expected}")
@@ -776,6 +784,7 @@ def _create_discussion(
         discussion,
         category_id=state.category_id,
         require_locked=False,
+        require_viewer_update=False,
     )
     return discussion
 
@@ -824,11 +833,13 @@ def _verify_rendered_discussion(
     *,
     rendered: RenderedDigest,
     category_id: str,
+    require_viewer_update: bool = True,
 ) -> str:
     metadata = _validate_existing(
         discussion,
         category_id=category_id,
         require_locked=True,
+        require_viewer_update=require_viewer_update,
     )
     if (
         metadata.digest != rendered.digest
@@ -891,6 +902,7 @@ def publish(
             verified.managed[0],
             rendered=rendered,
             category_id=verified.category_id,
+            require_viewer_update=False,
         )
         return PublicationResult(
             action="created-and-locked",
@@ -905,6 +917,7 @@ def publish(
             discussion,
             category_id=state.category_id,
             require_locked=False,
+            require_viewer_update=False,
         )
         expected = render_digest(rendered.resources, metadata.source_sha)
         if metadata.digest != rendered.digest or discussion.get("body") != expected.body:
@@ -924,6 +937,7 @@ def publish(
             verified.managed[0],
             rendered=expected_locked,
             category_id=verified.category_id,
+            require_viewer_update=False,
         )
         return PublicationResult(
             action="locked-existing",

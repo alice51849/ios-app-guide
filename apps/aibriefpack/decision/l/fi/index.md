@@ -19,8 +19,9 @@ Parempi konteksti. Paremmat vastaukset. Muuta näyttökuvat, tiedostot, muistiin
 - Ei mainoksia
 - Ei seurantaa
 - Yksityinen / laitteella
+- App Store · Ilmainen
 
-[Lataa AI Brief App Storesta](https://apps.apple.com/app/id6791658210)
+[Lataa AI Brief App Storesta](https://apps.apple.com/fi/app/id6791658210)
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/aibriefpack.html)
 

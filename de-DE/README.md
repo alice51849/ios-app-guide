@@ -89,7 +89,7 @@ Alphabetisch nach App-Namen — niemals eine Rangliste.
 
 | App | Suchanfrage des Herausgebers | Entscheidungskontext | Kaufmodell | Leitfaden | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — Dateien in klaren Kontext \| iOS App | Besserer Kontext. Bessere Antworten. | Kostenloser Einstieg · dauerhafte Freischaltung | [Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/aibriefpack.html) | [AI Brief im App Store laden](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — Dateien in klaren Kontext \| iOS App | Besserer Kontext. Bessere Antworten. | Kostenloser Einstieg · dauerhafte Freischaltung | [Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/aibriefpack.html) | [AI Brief im App Store laden](https://apps.apple.com/de/app/id6791658210) |
 | **Aim990** | beste TOEIC-Vorbereitungs-App mit Offline-Lernplan für iPhone | Teil 5 wirkt kurz, aber diese Lückensatzfragen können Zeit kosten, wenn Grammatik und Wortschatz nicht automatisch sitzen. | Kostenloser Einstieg · dauerhafte Freischaltung | [Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Aim990 im App Store herunterladen →](https://apps.apple.com/de/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Englisch-Prüfung unter Druck \| iOS App | Aim990 Plus ist eine umfassende Trainingsumgebung für Erwachsene, die englische Hör- und Leseaufgaben auch unter Zeitdruck sicher bearbeiten möchten. Der | Bezahlter Herunterladen | [Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/aim990plus.html) | [Aim990 Plus im App Store laden](https://apps.apple.com/de/app/id6792483140) |
 | **CV Desk** | beste Lebenslauf-App für Berufswechsler 2026 | Beim Branchenwechsel ist das Lebenslaufproblem anders: Ihre Erfahrung ist echt, aber auf dem Papier „nicht verwandt“, und ATS-Filter lehnen Sie ab, bevor ein Mensch sie liest – CV Desk ist dafür gemacht. | Kostenloser Einstieg · dauerhafte Freischaltung | [Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/answers/best-resume-builder-app-for-career-changers-2026.html) | [CV Desk im App Store herunterladen →](https://apps.apple.com/de/app/id6781337213) |
@@ -134,6 +134,6 @@ JSON, JSONL und CSV enthalten dieselben 1.700 Einträge.
 
 [Startseite](https://alice51849.github.io/ios-app-guide/de-DE/index.html) · [Offene Daten](https://alice51849.github.io/ios-app-guide/de-DE/data/lumi-studio-publisher-search-intent-catalog.html) · [Lizenz](https://creativecommons.org/licenses/by/4.0/)
 
-Aktualisiert: 2026-07-29
+Aktualisiert: 2026-07-30
 
 CC BY 4.0 gilt für die ursprüngliche Katalogzusammenstellung; App-Namen und App Store Marken gehören ihren jeweiligen Eigentümern.

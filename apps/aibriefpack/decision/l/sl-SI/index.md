@@ -19,8 +19,9 @@ Boljši kontekst. Boljši odgovori. Spremenite posnetke zaslona, datoteke, bele�
 - Brez oglasov
 - Brez sledenja
 - Zasebno / na napravi
+- App Store · Brezplačno
 
-[Prenesite AI Brief iz trgovine App Store](https://apps.apple.com/app/id6791658210)
+[Prenesite AI Brief iz trgovine App Store](https://apps.apple.com/si/app/id6791658210)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/aibriefpack.html)
 

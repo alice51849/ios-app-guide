@@ -89,7 +89,7 @@ App Store پر دستیابی کی تصدیق شدہ ہر ایپ کے لیے ا�
 
 | ایپ | پبلشر کی سرچ کوئری | فیصلہ سازی کا سیاق و سباق | خریداری کا ماڈل | گائیڈ | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — فائلوں سے واضح سیاق \| iOS App | بہتر سیاق و سباق۔ بہتر جوابات۔ | مفت آغاز · مستقل ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/aibriefpack.html) | [App Store سے AI Brief حاصل کریں](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — فائلوں سے واضح سیاق \| iOS App | بہتر سیاق و سباق۔ بہتر جوابات۔ | مفت آغاز · مستقل ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/aibriefpack.html) | [App Store سے AI Brief حاصل کریں](https://apps.apple.com/pk/app/id6791658210) |
 | **Aim990** | iPhone کے لیے بہترین TOEIC پریپ ایپ آف لائن اسٹڈی پلان | پارٹ 5 چھوٹا لگتا ہے، لیکن وہ نامکمل جملے والے سوالات وقت ضائع کر سکتے ہیں اگر گرامر اور الفاظ خودکار نہ ہوں۔ | مفت آغاز · مستقل ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Aim990 ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — سننے اور پڑھنے کی مشق \| iOS App | یہ ایپ ان بالغ افراد کے لیے بنائی گئی ہے جو وقت کے دباؤ میں انگریزی سننے اور پڑھنے کی درستگی اور رفتار بہتر کرنا چاہتے ہیں۔ بے ترتیب سوالات دہرانے کے بجائے | ادا شدہ ڈاؤن لوڈ | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/aim990plus.html) | [App Store سے Aim990 Plus حاصل کریں](https://apps.apple.com/pk/app/id6792483140) |
 | **CV ڈیسک** | 2026 کے لیے کیریئر چینجرز کے لیے بہترین ریزیومے بلڈر ایپ | جب آپ شعبہ بدل رہے ہوں، تو ریزیومے کا مسئلہ مختلف ہوتا ہے: آپ کا تجربہ حقیقی ہے لیکن کاغذ پر 'غیر متعلقہ' ہے، اور ATS فلٹر آپ کو انسان کے پڑھنے سے پہلے مسترد کر دیتے ہیں — CV ڈیسک اسی کے لیے بنایا گیا ہے۔ | مفت آغاز · مستقل ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-resume-builder-app-for-career-changers-2026.html) | [CV ڈیسک ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6781337213) |
@@ -134,6 +134,6 @@ JSON، JSONL اور CSV میں وہی 1,700 ریکارڈز شامل ہیں۔
 
 [ہوم](https://alice51849.github.io/ios-app-guide/ur-PK/index.html) · [کھلا ڈیٹا](https://alice51849.github.io/ios-app-guide/ur-PK/data/lumi-studio-publisher-search-intent-catalog.html) · [لائسنس](https://creativecommons.org/licenses/by/4.0/)
 
-اپ ڈیٹ کیا گیا: 2026-07-29
+اپ ڈیٹ کیا گیا: 2026-07-30
 
 CC BY 4.0 اصل کیٹلاگ کی تدوین پر لاگو ہوتا ہے؛ ایپس کے نام اور App Store کے نشانات ان کے مالکان کی ملکیت ہیں۔

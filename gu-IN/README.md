@@ -89,7 +89,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 | એપ | પ્રકાશક પ્રશ્ન | નિર્ણય સંદર્ભ | ખરીદી મોડેલ | માર્ગદર્શક | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — ફાઇલથી સ્પષ્ટ સંદર્ભ \| iOS App | વધુ સારી રીતે સંદર્ભિત. વધુ સારી રીતે જવાબો. | મફત શરૂઆત · કાયમી અનલૉક | [માર્ગદર્શક](https://alice51849.github.io/ios-app-guide/gu-IN/aibriefpack.html) | [App Store પરથી AI Brief મેળવો](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — ફાઇલથી સ્પષ્ટ સંદર્ભ \| iOS App | વધુ સારી રીતે સંદર્ભિત. વધુ સારી રીતે જવાબો. | મફત શરૂઆત · કાયમી અનલૉક | [માર્ગદર્શક](https://alice51849.github.io/ios-app-guide/gu-IN/aibriefpack.html) | [App Store પરથી AI Brief મેળવો](https://apps.apple.com/in/app/id6791658210) |
 | **Aim990** | iPhone માટે શ્રેષ્ઠ TOEIC તૈયારી એપ ઓફલાઇન અભ્યાસ યોજના | ભાગ 5 ટૂંકો લાગે છે, પરંતુ અધૂરી વાક્યવાળી પ્રશ્નો સમય ખાઈ શકે છે જો વ્યાકરણ અને શબ્દભંડોળ આપમેળે ન હોય. | મફત શરૂઆત · કાયમી અનલૉક | [માર્ગદર્શક](https://alice51849.github.io/ios-app-guide/gu-IN/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [App Store પર Aim990 મેળવો →](https://apps.apple.com/in/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — દબાણમાં ઝડપી સચોટ જવાબ \| iOS App | Aim990 Plus પુખ્ત વયના શીખનારાઓ માટે અંગ્રેજી સાંભળવા અને વાંચવાની સઘન કસરત છે. તેનો મુખ્ય અભ્યાસક્રમ સમયના દબાણમાં પણ ધ્યાન ટકાવી રાખવાની ટેવ કેળવે છે | ચુકવેલ ડાઉનલોડ | [માર્ગદર્શક](https://alice51849.github.io/ios-app-guide/gu-IN/aim990plus.html) | [App Store પરથી Aim990 Plus મેળવો](https://apps.apple.com/in/app/id6792483140) |
 | **CV ડેસ્ક** | કેરિયર બદલનારા માટે શ્રેષ્ઠ રિઝ્યુમે બિલ્ડર એપ 2026 | જ્યારે તમે ક્ષેત્ર બદલતા હો ત્યારે રિઝ્યુમે સમસ્યા અલગ હોય છે: તમારો અનુભવ વાસ્તવિક છે પરંતુ કાગળ પર 'અસંબંધિત' છે, અને ATS ફિલ્ટર્સ તમને માનવી વાંચ્યા પહેલા નકારી દે છે — CV ડેસ્ક આ માટે બનાવાયું છે. | મફત શરૂઆત · કાયમી અનલૉક | [માર્ગદર્શક](https://alice51849.github.io/ios-app-guide/gu-IN/answers/best-resume-builder-app-for-career-changers-2026.html) | [App Store પર CV ડેસ્ક મેળવો →](https://apps.apple.com/in/app/id6781337213) |
@@ -134,6 +134,6 @@ JSON, JSONL અને CSVમાં સમાન 1,700 રેકોર્ડ્�
 
 [હોમ](https://alice51849.github.io/ios-app-guide/gu-IN/index.html) · [ખુલ્લા ડેટા](https://alice51849.github.io/ios-app-guide/gu-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [લાઇસન્સ](https://creativecommons.org/licenses/by/4.0/)
 
-અપડેટ થયેલ: 2026-07-29
+અપડેટ થયેલ: 2026-07-30
 
 CC BY 4.0 મૂળ કેટલોગ સંકલન પર લાગુ પડે છે; એપનાં નામ અને App Store ચિહ્નો તેમના માલિકોના છે.

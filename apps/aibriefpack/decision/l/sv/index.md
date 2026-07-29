@@ -19,8 +19,9 @@ Bättre sammanhang. Bättre svar. Gör om skärmbilder, filer, anteckningar och 
 - Inga annonser
 - Ingen spårning
 - Privat / på enheten
+- App Store · Gratis
 
-[Hämta AI Brief i App Store](https://apps.apple.com/app/id6791658210)
+[Hämta AI Brief i App Store](https://apps.apple.com/se/app/id6791658210)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/aibriefpack.html)
 

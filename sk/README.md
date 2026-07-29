@@ -89,7 +89,7 @@ Abecedne podľa názvu aplikácie — nikdy nie podľa poradia.
 
 | Aplikácia | Dopyt vydavateľa | Kontext rozhodovania | Model nákupu | Sprievodca | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — Súbory na jasný kontext \| iOS App | Lepší kontext, lepšie odpovede. | Zadarmo na začiatok · doživotné odomknutie | [Sprievodca](https://alice51849.github.io/ios-app-guide/sk/aibriefpack.html) | [Stiahnuť AI Brief v App Store](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — Súbory na jasný kontext \| iOS App | Lepší kontext, lepšie odpovede. | Zadarmo na začiatok · doživotné odomknutie | [Sprievodca](https://alice51849.github.io/ios-app-guide/sk/aibriefpack.html) | [Stiahnuť AI Brief v App Store](https://apps.apple.com/sk/app/id6791658210) |
 | **Aim990** | najlepšia aplikácia na prípravu TOEIC offline študijný plán pre iPhone | Časť 5 vyzerá krátka, ale otázky s neúplnými vetami môžu zabrať veľa času, ak gramatika a slovná zásoba nie sú automatické. | Zadarmo na začiatok · doživotné odomknutie | [Sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Získajte Aim990 v App Store →](https://apps.apple.com/sk/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Istota pod časovým tlakom \| iOS App | Rozumieť angličtine je jedna vec. Zachovať si presnosť, keď ubiehajú minúty, je druhá. Aim990 Plus je intenzívny tréning počúvania a čítania pre | Platené stiahnutie | [Sprievodca](https://alice51849.github.io/ios-app-guide/sk/aim990plus.html) | [Stiahnuť Aim990 Plus v App Store](https://apps.apple.com/sk/app/id6792483140) |
 | **CV Desk** | najlepšia aplikácia na tvorbu životopisu pre zmenu kariéry 2026 | Keď meníte odbor, problém so životopisom je iný: vaše skúsenosti sú reálne, ale na papieri 'nesúvisiace' a ATS filtre vás odmietnu skôr, než človek prečíta — CV Desk je na to vytvorený. | Zadarmo na začiatok · doživotné odomknutie | [Sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-resume-builder-app-for-career-changers-2026.html) | [Získajte CV Desk v App Store →](https://apps.apple.com/sk/app/id6781337213) |
@@ -134,6 +134,6 @@ Formáty JSON, JSONL a CSV obsahujú rovnakých 1 700 záznamov.
 
 [Domov](https://alice51849.github.io/ios-app-guide/sk/index.html) · [Otvárame dáta](https://alice51849.github.io/ios-app-guide/sk/data/lumi-studio-publisher-search-intent-catalog.html) · [Licencia](https://creativecommons.org/licenses/by/4.0/)
 
-Aktualizované: 2026-07-29
+Aktualizované: 2026-07-30
 
 Na pôvodné zostavenie katalógu sa vzťahuje licencia CC BY 4.0; názvy aplikácií a značky App Store patria ich vlastníkom.

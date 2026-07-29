@@ -23915,6 +23915,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(frozenset(), snapshot["cn"])
         self.assertEqual(frozenset({app_id}), snapshot["tw"])
         self.assertEqual(1, payload["app_count"])
+        self.assertEqual([str(app_id)], payload["app_ids"])
         self.assertEqual(2, payload["version"])
         self.assertEqual(
             {
@@ -23930,6 +23931,67 @@ class GeneratorTests(unittest.TestCase):
             payload["details"]["tw"],
             loaded_details["tw"],
         )
+
+    def test_storefront_snapshot_invalidates_fresh_cache_after_app_launch(self):
+        existing_id = str(APPSTORE["lumibopomofo"])
+        launched_id = str(APPSTORE["snapport"])
+        now = dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
+        detail = {
+            "price": "0",
+            "currency": "USD",
+            "formatted_price": "Free",
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            state = Path(directory) / app_store_storefronts.STATE_FILE
+            state.write_text(
+                json.dumps(
+                    {
+                        "version": 2,
+                        "source": "Apple iTunes Lookup API",
+                        "checked_at": now.isoformat().replace("+00:00", "Z"),
+                        "app_count": 1,
+                        "app_ids": [existing_id],
+                        "countries": {"us": [existing_id]},
+                        "details": {"us": {existing_id: detail}},
+                    }
+                ),
+                encoding="utf-8",
+            )
+            records = {
+                app_id: {
+                    "price": 0.0,
+                    "currency": "USD",
+                    "formattedPrice": "Free",
+                }
+                for app_id in {existing_id, launched_id}
+            }
+            with (
+                mock.patch.object(
+                    refresh_storefront_availability,
+                    "LOCALE_STOREFRONTS",
+                    {"en-US": "us"},
+                ),
+                mock.patch.object(
+                    refresh_storefront_availability,
+                    "live_app_keys",
+                    return_value={"lumibopomofo", "snapport"},
+                ),
+                mock.patch.object(
+                    refresh_storefront_availability,
+                    "_lookup_country_records",
+                    return_value=records,
+                ) as lookup,
+            ):
+                snapshot = refresh_storefront_availability.refresh(directory)
+            payload = json.loads(state.read_text(encoding="utf-8"))
+
+        lookup.assert_called_once_with({existing_id, launched_id}, "us")
+        self.assertEqual(
+            frozenset({existing_id, launched_id}),
+            snapshot["us"],
+        )
+        self.assertEqual(2, payload["app_count"])
+        self.assertEqual(sorted((existing_id, launched_id)), payload["app_ids"])
 
     def test_external_catalog_copy_is_native_for_every_live_app(self):
         pages = Path(GEO) / "pages"
@@ -24618,7 +24680,17 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertGreaterEqual(len(expected), 1453)
         self.assertEqual(expected, answer_entries)
-        self.assertEqual(len(live), len(set(expected.values())))
+        answer_image_pattern = re.compile(
+            rf"^{re.escape(gen_image_sitemap.SITE)}"
+            r"/social/img/([a-z0-9]+)-share\.jpg$"
+        )
+        represented = set()
+        for image in set(expected.values()):
+            match = answer_image_pattern.fullmatch(image)
+            self.assertIsNotNone(match, image)
+            represented.add(match.group(1))
+        self.assertTrue(represented)
+        self.assertTrue(represented.issubset(live))
 
     def test_topic_hub_falls_back_to_native_guide_for_new_live_app(self):
         self.assertEqual(

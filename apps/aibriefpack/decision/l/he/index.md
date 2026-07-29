@@ -19,8 +19,9 @@ publisher: "Lumi Studio"
 - ללא פרסומות
 - ללא מעקב
 - פרטי / במכשיר
+- App Store · בחינם
 
-[הורידו את AI Brief מה-App Store](https://apps.apple.com/app/id6791658210)
+[הורידו את AI Brief מה-App Store](https://apps.apple.com/il/app/id6791658210)
 
 [קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/aibriefpack.html)
 

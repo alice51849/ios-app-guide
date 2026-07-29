@@ -19,8 +19,9 @@ Ngữ cảnh tốt hơn. Câu trả lời tốt hơn. Chuyển đổi ảnh ch�
 - Không quảng cáo
 - Không theo dõi
 - Riêng tư / trên thiết bị
+- App Store · Miễn phí
 
-[Tải AI Brief trên App Store](https://apps.apple.com/app/id6791658210)
+[Tải AI Brief trên App Store](https://apps.apple.com/vn/app/id6791658210)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/aibriefpack.html)
 

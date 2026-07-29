@@ -89,7 +89,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 | แอป | คำค้นหาของผู้เผยแพร่ | บริบทการตัดสินใจ | รูปแบบการซื้อ | คู่มือ | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — เปลี่ยนไฟล์เป็นบริบทชัดเจน \| iOS App | บริบทที่ดีขึ้น คำตอบที่ดีขึ้น | เริ่มใช้ฟรี · ปลดล็อกถาวร | [คู่มือ](https://alice51849.github.io/ios-app-guide/th/aibriefpack.html) | [ดาวน์โหลด AI Brief บน App Store](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — เปลี่ยนไฟล์เป็นบริบทชัดเจน \| iOS App | บริบทที่ดีขึ้น คำตอบที่ดีขึ้น | เริ่มใช้ฟรี · ปลดล็อกถาวร | [คู่มือ](https://alice51849.github.io/ios-app-guide/th/aibriefpack.html) | [ดาวน์โหลด AI Brief บน App Store](https://apps.apple.com/th/app/id6791658210) |
 | **Aim990** | แอปเตรียมสอบ TOEIC แบบออฟไลน์ที่ดีที่สุดพร้อมแผนการเรียนสำหรับ iPhone | ส่วนที่ 5 ดูเหมือนสั้น แต่คำถามเติมประโยคที่ไม่สมบูรณ์เหล่านี้อาจใช้เวลามากถ้าไวยากรณ์และคำศัพท์ไม่คล่อง | เริ่มใช้ฟรี · ปลดล็อกถาวร | [คู่มือ](https://alice51849.github.io/ios-app-guide/th/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [รับ Aim990 ใน App Store →](https://apps.apple.com/th/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — ฟังอ่านครบ 7 พาร์ตใน 15 นาที \| iOS App | ไม่ได้ฝึกแค่ให้ทำโจทย์ได้มากขึ้น แต่ฝึกให้ตัดสินใจได้แม่นยำเมื่อเวลาค่อย ๆ ลดลง | ดาวน์โหลดแบบชำระเงิน | [คู่มือ](https://alice51849.github.io/ios-app-guide/th/aim990plus.html) | [ดาวน์โหลด Aim990 Plus บน App Store](https://apps.apple.com/th/app/id6792483140) |
 | **CV Desk** | แอปสร้างประวัติย่อที่ดีที่สุดสำหรับผู้เปลี่ยนอาชีพปี 2026 | เมื่อคุณเปลี่ยนสาขา ปัญหาประวัติย่อจะแตกต่าง: ประสบการณ์ของคุณเป็นจริงแต่บนกระดาษดู 'ไม่เกี่ยวข้อง' และระบบ ATS กรองคุณก่อนที่คนจะอ่าน — CV Desk สร้างมาเพื่อสิ่งนี้ | เริ่มใช้ฟรี · ปลดล็อกถาวร | [คู่มือ](https://alice51849.github.io/ios-app-guide/th/answers/best-resume-builder-app-for-career-changers-2026.html) | [รับ CV Desk ใน App Store →](https://apps.apple.com/th/app/id6781337213) |
@@ -134,6 +134,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [หน้าแรก](https://alice51849.github.io/ios-app-guide/th/index.html) · [ข้อมูลเปิด](https://alice51849.github.io/ios-app-guide/th/data/lumi-studio-publisher-search-intent-catalog.html) · [ใบอนุญาต](https://creativecommons.org/licenses/by/4.0/)
 
-อัปเดตเมื่อ: 2026-07-29
+อัปเดตเมื่อ: 2026-07-30
 
 CC BY 4.0 ใช้กับการรวบรวมแคตตาล็อกต้นฉบับ; ชื่อแอปและเครื่องหมาย App Store เป็นของเจ้าของแต่ละราย

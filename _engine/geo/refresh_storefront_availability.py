@@ -42,10 +42,23 @@ def _read_payload(path: Path) -> dict[str, object]:
     return payload if isinstance(payload, dict) else {}
 
 
-def _is_fresh(payload: dict[str, object], now: dt.datetime) -> bool:
-    if payload.get("version") != 2 or not isinstance(
-        payload.get("details"),
-        dict,
+def _is_fresh(
+    payload: dict[str, object],
+    now: dt.datetime,
+    expected_app_ids: set[str],
+) -> bool:
+    cached_app_ids = payload.get("app_ids")
+    if (
+        payload.get("version") != 2
+        or not isinstance(payload.get("countries"), dict)
+        or not isinstance(payload.get("details"), dict)
+        or payload.get("app_count") != len(expected_app_ids)
+        or not isinstance(cached_app_ids, list)
+        or any(
+            not isinstance(app_id, str) or not app_id.isdigit()
+            for app_id in cached_app_ids
+        )
+        or set(cached_app_ids) != expected_app_ids
     ):
         return False
     value = payload.get("checked_at")
@@ -105,11 +118,11 @@ def refresh(pages=PAGES, *, force=False) -> dict[str, frozenset[str]]:
     path = pages / STATE_FILE
     previous_payload = _read_payload(path)
     now = _utc_now()
-    if not force and _is_fresh(previous_payload, now):
+    live_keys = live_app_keys(APPSTORE, pages, refresh=False)
+    app_ids = {str(APPSTORE[key]) for key in live_keys}
+    if not force and _is_fresh(previous_payload, now, app_ids):
         return load_storefront_availability(pages)
 
-    live_keys = live_app_keys(APPSTORE, pages, refresh=False)
-    app_ids = {APPSTORE[key] for key in live_keys}
     previous = load_storefront_availability(pages)
     previous_details = load_storefront_details(pages)
     countries: dict[str, list[str]] = {}
@@ -152,6 +165,7 @@ def refresh(pages=PAGES, *, force=False) -> dict[str, frozenset[str]]:
         "source": "Apple iTunes Lookup API",
         "checked_at": now.isoformat().replace("+00:00", "Z"),
         "app_count": len(app_ids),
+        "app_ids": sorted(app_ids),
         "countries": countries,
         "details": details,
     }

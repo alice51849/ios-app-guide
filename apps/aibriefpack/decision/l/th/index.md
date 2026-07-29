@@ -19,8 +19,9 @@ publisher: "Lumi Studio"
 - ไม่มีโฆษณา
 - ไม่มีการติดตาม
 - ส่วนตัว / บนอุปกรณ์
+- App Store · ฟรี
 
-[ดาวน์โหลด AI Brief บน App Store](https://apps.apple.com/app/id6791658210)
+[ดาวน์โหลด AI Brief บน App Store](https://apps.apple.com/th/app/id6791658210)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/aibriefpack.html)
 

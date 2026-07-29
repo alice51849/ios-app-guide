@@ -89,7 +89,7 @@ Alfabetisk efter appnavn — aldrig en rangering.
 
 | App | Udgiverens søgeforespørgsel | Beslutningskontekst | Købsmodel | Guide | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — Filer til klar kontekst \| iOS App | Bedre kontekst. Bedre svar. | Gratis at komme i gang · permanent oplåsning | [Guide](https://alice51849.github.io/ios-app-guide/da/aibriefpack.html) | [Hent AI Brief i App Store](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — Filer til klar kontekst \| iOS App | Bedre kontekst. Bedre svar. | Gratis at komme i gang · permanent oplåsning | [Guide](https://alice51849.github.io/ios-app-guide/da/aibriefpack.html) | [Hent AI Brief i App Store](https://apps.apple.com/dk/app/id6791658210) |
 | **Aim990** | bedste TOEIC-forberedelsesapp offline studieplan til iPhone | Del 5 virker kort, men de ufuldstændige sætninger kan tage tid, hvis grammatik og ordforråd ikke er automatiske. | Gratis at komme i gang · permanent oplåsning | [Guide](https://alice51849.github.io/ios-app-guide/da/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Hent Aim990 i App Store →](https://apps.apple.com/dk/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Engelsk træning under pres \| iOS App | Aim990 Plus er et samlet træningsværktøj til voksne, der vil læse og forstå talt engelsk sikkert, også når uret tikker. Dagens målrettede forløb begynder | Betalt hentning | [Guide](https://alice51849.github.io/ios-app-guide/da/aim990plus.html) | [Hent Aim990 Plus i App Store](https://apps.apple.com/dk/app/id6792483140) |
 | **CV Desk** | bedste CV-byggerapp til karriereskiftere 2026 | Når du skifter felt, er CV-problemet anderledes: din erfaring er reel, men 'ikke-relateret' på papiret, og ATS-filtre afviser dig før en menneskelig læser — CV Desk er bygget til dette. | Gratis at komme i gang · permanent oplåsning | [Guide](https://alice51849.github.io/ios-app-guide/da/answers/best-resume-builder-app-for-career-changers-2026.html) | [Hent CV Desk i App Store →](https://apps.apple.com/dk/app/id6781337213) |
@@ -134,6 +134,6 @@ JSON, JSONL og CSV indeholder de samme 1.700 poster.
 
 [Hjem](https://alice51849.github.io/ios-app-guide/da/index.html) · [Åbne data](https://alice51849.github.io/ios-app-guide/da/data/lumi-studio-publisher-search-intent-catalog.html) · [Licens](https://creativecommons.org/licenses/by/4.0/)
 
-Opdateret: 2026-07-29
+Opdateret: 2026-07-30
 
 CC BY 4.0 gælder for den oprindelige katalogsamling; app-navne og App Store-mærker tilhører deres ejere.

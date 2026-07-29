@@ -89,7 +89,7 @@ Alfabetic după numele aplicației — niciodată un clasament.
 
 | Aplicație | Interogare editor | Situație decizională | Model de achiziție | Ghid | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — Fișiere în context clar \| iOS App | Context mai bun. Răspunsuri mai bune. | Început gratuit · deblocare pe viață | [Ghid](https://alice51849.github.io/ios-app-guide/ro/aibriefpack.html) | [Descarcă AI Brief din App Store](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — Fișiere în context clar \| iOS App | Context mai bun. Răspunsuri mai bune. | Început gratuit · deblocare pe viață | [Ghid](https://alice51849.github.io/ios-app-guide/ro/aibriefpack.html) | [Descarcă AI Brief din App Store](https://apps.apple.com/ro/app/id6791658210) |
 | **Aim990** | cea mai bună aplicație de pregătire TOEIC cu plan de studiu offline pentru iPhone | Partea 5 pare scurtă, dar întrebările cu propoziții incomplete pot consuma timp dacă gramatica și vocabularul nu sunt automate. | Început gratuit · deblocare pe viață | [Ghid](https://alice51849.github.io/ios-app-guide/ro/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Obține Aim990 din App Store →](https://apps.apple.com/ro/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Încredere contra cronometru \| iOS App | Să înțelegi engleza este important; să rămâi precis când timpul se scurge este o abilitate separată. Aim990 Plus este un antrenament intensiv de | Descărcare plătită | [Ghid](https://alice51849.github.io/ios-app-guide/ro/aim990plus.html) | [Descarcă Aim990 Plus din App Store](https://apps.apple.com/ro/app/id6792483140) |
 | **CV Desk** | cea mai bună aplicație pentru realizare CV pentru schimbători de carieră 2026 | Când schimbi domeniul, problema CV-ului este diferită: experiența ta este reală, dar pe hârtie „neconectată”, iar filtrele ATS te resping înainte ca un om să-l citească — CV Desk este creat pentru asta. | Început gratuit · deblocare pe viață | [Ghid](https://alice51849.github.io/ios-app-guide/ro/answers/best-resume-builder-app-for-career-changers-2026.html) | [Obține CV Desk din App Store →](https://apps.apple.com/ro/app/id6781337213) |
@@ -134,6 +134,6 @@ JSON, JSONL și CSV conțin aceleași 1.700 de înregistrări.
 
 [Acasă](https://alice51849.github.io/ios-app-guide/ro/index.html) · [Date deschise](https://alice51849.github.io/ios-app-guide/ro/data/lumi-studio-publisher-search-intent-catalog.html) · [Licență](https://creativecommons.org/licenses/by/4.0/)
 
-Actualizat: 2026-07-29
+Actualizat: 2026-07-30
 
 CC BY 4.0 se aplică compilației originale a catalogului; numele aplicațiilor și mărcile App Store aparțin proprietarilor lor.

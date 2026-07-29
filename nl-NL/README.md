@@ -89,7 +89,7 @@ Alfabetisch op app-naam — nooit een ranglijst.
 
 | App | Uitgeverszoekopdracht | Beslissingscontext | Aankoopmodel | Gids | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — Bestanden naar heldere context \| iOS App | Betere context. Betere antwoorden. | Gratis te starten · levenslange ontgrendeling | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/aibriefpack.html) | [Download AI Brief in de App Store](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — Bestanden naar heldere context \| iOS App | Betere context. Betere antwoorden. | Gratis te starten · levenslange ontgrendeling | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/aibriefpack.html) | [Download AI Brief in de App Store](https://apps.apple.com/nl/app/id6791658210) |
 | **Aim990** | beste TOEIC voorbereidingsapp offline studieplan voor iPhone | Deel 5 lijkt kort, maar die vragen met onvolledige zinnen kunnen tijd kosten als grammatica en woordenschat niet automatisch gaan. | Gratis te starten · levenslange ontgrendeling | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Download Aim990 in de App Store →](https://apps.apple.com/nl/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Engels examen onder druk \| iOS App | Aim990 Plus is een complete trainingsomgeving voor volwassenen die Engelse luister- en leestaken ook onder tijdsdruk beheerst willen uitvoeren. De | Betaalde aanschaf | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/aim990plus.html) | [Download Aim990 Plus in de App Store](https://apps.apple.com/nl/app/id6792483140) |
 | **CV Desk** | beste cv-bouwer app voor carrièreswitchers 2026 | Bij het wisselen van vakgebied is het cv-probleem anders: je ervaring is echt maar op papier 'niet-gerelateerd', en ATS-filters wijzen je af voordat een mens het leest — CV Desk is hiervoor gemaakt. | Gratis te starten · levenslange ontgrendeling | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-resume-builder-app-for-career-changers-2026.html) | [Download CV Desk in de App Store →](https://apps.apple.com/nl/app/id6781337213) |
@@ -134,6 +134,6 @@ JSON, JSONL en CSV bevatten dezelfde 1.700 gegevensitems.
 
 [Startpagina](https://alice51849.github.io/ios-app-guide/nl-NL/index.html) · [Open data](https://alice51849.github.io/ios-app-guide/nl-NL/data/lumi-studio-publisher-search-intent-catalog.html) · [Licentie](https://creativecommons.org/licenses/by/4.0/)
 
-Bijgewerkt: 2026-07-29
+Bijgewerkt: 2026-07-30
 
 CC BY 4.0 is van toepassing op de originele catalogussamenstelling; app-namen en App Store-merken behoren toe aan hun eigenaren.

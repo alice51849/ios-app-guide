@@ -19,8 +19,9 @@ publisher: "Lumi Studio"
 - விளம்பரங்கள் இல்லை
 - பின்தொடர்வு இல்லை
 - தனியுரிமை / சாதனத்தில்
+- App Store · இலவசம்
 
-[App Store-இல் AI Brief-ஐப் பெறுங்கள்](https://apps.apple.com/app/id6791658210)
+[App Store-இல் AI Brief-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6791658210)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/aibriefpack.html)
 

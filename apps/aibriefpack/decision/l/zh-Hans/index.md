@@ -19,8 +19,9 @@ publisher: "Lumi Studio"
 - 无广告
 - 无跟踪
 - 私密 / 设备本地
+- App Store · 免费
 
-[在 App Store 获取 AI Brief](https://apps.apple.com/app/id6791658210)
+[在 App Store 获取 AI Brief](https://apps.apple.com/cn/app/id6791658210)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/aibriefpack.html)
 

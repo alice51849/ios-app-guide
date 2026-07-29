@@ -89,7 +89,7 @@ Aakkosjärjestyksessä sovelluksen nimen mukaan — ei koskaan sijoitus.
 
 | Sovellus | Julkaisijan hakukysely | Päätöskonteksti | Ostomalli | Opas | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — Tiedostoista selkeä konteksti \| iOS App | Parempi konteksti. Paremmat vastaukset. | Ilmainen aloitus · elinikäinen avaus | [Opas](https://alice51849.github.io/ios-app-guide/fi/aibriefpack.html) | [Lataa AI Brief App Storesta](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — Tiedostoista selkeä konteksti \| iOS App | Parempi konteksti. Paremmat vastaukset. | Ilmainen aloitus · elinikäinen avaus | [Opas](https://alice51849.github.io/ios-app-guide/fi/aibriefpack.html) | [Lataa AI Brief App Storesta](https://apps.apple.com/fi/app/id6791658210) |
 | **Aim990** | paras TOEIC-valmistelusovellus offline-opintosuunnitelmalla iPhonelle | Osa 5 näyttää lyhyeltä, mutta keskeneräiset lauseet voivat viedä aikaa, jos kielioppi ja sanasto eivät ole automaattisia. | Ilmainen aloitus · elinikäinen avaus | [Opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Hanki Aim990 App Storesta →](https://apps.apple.com/fi/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Englantia paineen alla \| iOS App | Aim990 Plus on aikuisille suunniteltu englannin kuuntelu- ja lukuharjoittelun kokonaisuus, joka auttaa säilyttämään keskittymisen myös ajan käydessä vähiin | Maksullinen ladattavaksi | [Opas](https://alice51849.github.io/ios-app-guide/fi/aim990plus.html) | [Lataa Aim990 Plus App Storesta](https://apps.apple.com/fi/app/id6792483140) |
 | **CV Desk** | paras ansioluettelon laatijasovellus uranvaihtajille 2026 | Kun vaihdat alaa, ansioluettelon ongelma on erilainen: kokemuksesi on todellista, mutta 'ei liity alaan' paperilla, ja ATS-suodattimet hylkäävät sinut ennen kuin ihminen ehtii lukea — CV Desk on tehty tätä varten. | Ilmainen aloitus · elinikäinen avaus | [Opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-resume-builder-app-for-career-changers-2026.html) | [Hanki CV Desk App Storesta →](https://apps.apple.com/fi/app/id6781337213) |
@@ -134,6 +134,6 @@ JSON, JSONL ja CSV sisältävät samat 1 700 tietuetta.
 
 [Etusivu](https://alice51849.github.io/ios-app-guide/fi/index.html) · [Avoin data](https://alice51849.github.io/ios-app-guide/fi/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisenssi](https://creativecommons.org/licenses/by/4.0/)
 
-Päivitetty: 2026-07-29
+Päivitetty: 2026-07-30
 
 CC BY 4.0 koskee alkuperäisen luettelon kokoamista; sovellusten nimet ja App Store -merkit kuuluvat omistajilleen.

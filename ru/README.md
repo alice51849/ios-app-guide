@@ -89,7 +89,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 | Приложение | Запрос издателя | Контекст принятия решения | Модель покупки | Руководство | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — Файлы в ясный контекст \| iOS App | Лучший контекст. Лучшие ответы. | Бесплатно начать · пожизненная разблокировка | [Руководство](https://alice51849.github.io/ios-app-guide/ru/aibriefpack.html) | [Установить AI Brief в App Store](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — Файлы в ясный контекст \| iOS App | Лучший контекст. Лучшие ответы. | Бесплатно начать · пожизненная разблокировка | [Руководство](https://alice51849.github.io/ios-app-guide/ru/aibriefpack.html) | [Установить AI Brief в App Store](https://apps.apple.com/ru/app/id6791658210) |
 | **Aim990** | лучшее офлайн-приложение для подготовки к TOEIC с планом занятий для iPhone | Часть 5 кажется короткой, но вопросы с неполными предложениями могут отнимать много времени, если грамматика и словарный запас не автоматизированы. | Бесплатно начать · пожизненная разблокировка | [Руководство](https://alice51849.github.io/ios-app-guide/ru/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Скачать Aim990 в App Store →](https://apps.apple.com/ru/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Практика в режиме таймера \| iOS App | Aim990 Plus — тренажёр для взрослых, которым важно уверенно понимать английскую речь и текст в условиях ограниченного времени. Приложение помогает не | Платное скачивание | [Руководство](https://alice51849.github.io/ios-app-guide/ru/aim990plus.html) | [Установить Aim990 Plus в App Store](https://apps.apple.com/ru/app/id6792483140) |
 | **CV Desk** | лучшее приложение для создания резюме для смены карьеры 2026 | При смене сферы проблема с резюме иная: ваш опыт реальный, но на бумаге «несвязанный», и фильтры ATS отбрасывают вас ещё до того, как резюме прочитает человек — CV Desk создан для этого. | Бесплатно начать · пожизненная разблокировка | [Руководство](https://alice51849.github.io/ios-app-guide/ru/answers/best-resume-builder-app-for-career-changers-2026.html) | [Скачать CV Desk в App Store →](https://apps.apple.com/ru/app/id6781337213) |
@@ -134,6 +134,6 @@ JSON, JSONL и CSV содержат одинаковые 1700 записей.
 
 [Главная](https://alice51849.github.io/ios-app-guide/ru/index.html) · [Открытые данные](https://alice51849.github.io/ios-app-guide/ru/data/lumi-studio-publisher-search-intent-catalog.html) · [Лицензия](https://creativecommons.org/licenses/by/4.0/)
 
-Обновлено: 2026-07-29
+Обновлено: 2026-07-30
 
 CC BY 4.0 применяется к исходному составлению каталога; названия приложений и знаки App Store принадлежат их владельцам.

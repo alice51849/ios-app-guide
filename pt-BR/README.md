@@ -89,7 +89,7 @@ Ordem alfabética pelo nome do app — nunca uma posição.
 
 | App | Consulta do editor | Contexto de decisão | Modelo de compra | Guia | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — Arquivos em contexto claro \| iOS App | Melhor contexto. Melhores respostas. | Grátis para começar · desbloqueio permanente | [Guia](https://alice51849.github.io/ios-app-guide/pt-BR/aibriefpack.html) | [Baixe AI Brief na App Store](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — Arquivos em contexto claro \| iOS App | Melhor contexto. Melhores respostas. | Grátis para começar · desbloqueio permanente | [Guia](https://alice51849.github.io/ios-app-guide/pt-BR/aibriefpack.html) | [Baixe AI Brief na App Store](https://apps.apple.com/br/app/id6791658210) |
 | **Aim990** | melhor app de preparação para TOEIC com plano de estudo offline para iPhone | A Parte 5 parece curta, mas essas perguntas de frases incompletas podem consumir tempo se gramática e vocabulário não forem automáticos. | Grátis para começar · desbloqueio permanente | [Guia](https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Obtenha o Aim990 na App Store →](https://apps.apple.com/br/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Inglês sob pressão \| iOS App | Desenvolva a compreensão do inglês com sessões que trabalham foco, ritmo e resistência. Aim990 Plus foi criado para adultos que querem praticar com | Baixa paga | [Guia](https://alice51849.github.io/ios-app-guide/pt-BR/aim990plus.html) | [Baixe Aim990 Plus na App Store](https://apps.apple.com/br/app/id6792483140) |
 | **CV Desk** | melhor app construtor de currículo para quem muda de carreira 2026 | Quando você muda de área, o problema do currículo é diferente: sua experiência é real, mas 'não relacionada' no papel, e os filtros ATS rejeitam você antes que um humano leia — o CV Desk foi criado para isso. | Grátis para começar · desbloqueio permanente | [Guia](https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-resume-builder-app-for-career-changers-2026.html) | [Obtenha o CV Desk na App Store →](https://apps.apple.com/br/app/id6781337213) |
@@ -134,6 +134,6 @@ JSON, JSONL e CSV contêm os mesmos 1.700 registros.
 
 [Início](https://alice51849.github.io/ios-app-guide/pt-BR/index.html) · [Dados abertos](https://alice51849.github.io/ios-app-guide/pt-BR/data/lumi-studio-publisher-search-intent-catalog.html) · [Licença](https://creativecommons.org/licenses/by/4.0/)
 
-Atualizado: 2026-07-29
+Atualizado: 2026-07-30
 
 A licença CC BY 4.0 se aplica à compilação original do catálogo; nomes de apps e marcas da App Store pertencem aos seus proprietários.

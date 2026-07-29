@@ -19,8 +19,9 @@ publisher: "Lumi Studio"
 - 広告なし
 - 追跡なし
 - プライベート／端末内
+- App Store · 無料
 
-[App Store で AI Brief を入手](https://apps.apple.com/app/id6791658210)
+[App Store で AI Brief を入手](https://apps.apple.com/jp/app/id6791658210)
 
 [完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/aibriefpack.html)
 

@@ -89,7 +89,7 @@ Alphabetical by app name — never a ranking.
 
 | App | Publisher query | Decision context | Purchase model | Guide | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — Files to Clear Context \| iOS App | Better context. Better answers. | Free to start · lifetime unlock | [Guide](https://alice51849.github.io/ios-app-guide/en-AU/aibriefpack.html) | [Get AI Brief on the App Store](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — Files to Clear Context \| iOS App | Better context. Better answers. | Free to start · lifetime unlock | [Guide](https://alice51849.github.io/ios-app-guide/en-AU/aibriefpack.html) | [Get AI Brief on the App Store](https://apps.apple.com/au/app/id6791658210) |
 | **Aim990** | best toeic prep app offline study plan for iphone | Part 5 looks short, but those incomplete-sentence questions can drain time if grammar and vocabulary are not automatic. | Free to start · lifetime unlock | [Guide](https://alice51849.github.io/ios-app-guide/en-AU/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Get Aim990 on the App Store →](https://apps.apple.com/au/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — English Exam Practice Offline \| iOS App | Get comfortable working against the clock | Paid download | [Guide](https://alice51849.github.io/ios-app-guide/en-AU/aim990plus.html) | [Get Aim990 Plus on the App Store](https://apps.apple.com/au/app/id6792483140) |
 | **CV Desk** | best resume builder app for career changers 2026 | When you're switching fields, the resume problem is different: your experience is real but 'unrelated' on paper, and ATS filters reject you before a human reads it — CV Desk is built for this. | Free to start · lifetime unlock | [Guide](https://alice51849.github.io/ios-app-guide/en-AU/answers/best-resume-builder-app-for-career-changers-2026.html) | [Get CV Desk on the App Store →](https://apps.apple.com/au/app/id6781337213) |
@@ -134,6 +134,6 @@ JSON, JSONL and CSV contain the same 1,700 records.
 
 [Home](https://alice51849.github.io/ios-app-guide/en-AU/index.html) · [Open data](https://alice51849.github.io/ios-app-guide/en-AU/data/lumi-studio-publisher-search-intent-catalog.html) · [Licence](https://creativecommons.org/licenses/by/4.0/)
 
-Updated: 2026-07-29
+Updated: 2026-07-30
 
 CC BY 4.0 applies to the original catalogue compilation; app names and App Store marks belong to their owners.

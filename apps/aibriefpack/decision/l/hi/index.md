@@ -19,8 +19,9 @@ publisher: "Lumi Studio"
 - कोई विज्ञापन नहीं
 - कोई ट्रैकिंग नहीं
 - निजी / डिवाइस पर
+- App Store · मुफ़्त
 
-[App Store पर AI Brief पाएँ](https://apps.apple.com/app/id6791658210)
+[App Store पर AI Brief पाएँ](https://apps.apple.com/in/app/id6791658210)
 
 [पूरा मार्गदर्शक पढ़ें](https://alice51849.github.io/ios-app-guide/hi/aibriefpack.html)
 

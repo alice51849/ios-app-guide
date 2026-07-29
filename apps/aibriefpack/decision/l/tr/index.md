@@ -19,8 +19,9 @@ Daha iyi bağlam, daha iyi yanıtlar. Ekran görüntülerini, dosyaları, notlar
 - Reklam yok
 - Takip yok
 - Gizli / cihazda
+- App Store · Ücretsiz
 
-[AI Brief uygulamasını App Store'dan al](https://apps.apple.com/app/id6791658210)
+[AI Brief uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6791658210)
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/aibriefpack.html)
 

@@ -19,8 +19,9 @@ Besserer Kontext. Bessere Antworten. Mache aus Screenshots, Dateien, Notizen und
 - Keine Werbung
 - Kein Tracking
 - Privat / auf dem Gerät
+- App Store · Kostenlos
 
-[AI Brief im App Store laden](https://apps.apple.com/app/id6791658210)
+[AI Brief im App Store laden](https://apps.apple.com/de/app/id6791658210)
 
 [Lesen Sie den vollständigen Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/aibriefpack.html)
 

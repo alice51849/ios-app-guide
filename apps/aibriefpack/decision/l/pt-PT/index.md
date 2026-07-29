@@ -19,8 +19,9 @@ Melhor contexto. Melhores respostas. Transforma capturas de ecrã, ficheiros, no
 - Sem anúncios
 - Sem rastreamento
 - Privado / no dispositivo
+- App Store · Grátis
 
-[Baixe AI Brief na App Store](https://apps.apple.com/app/id6791658210)
+[Baixe AI Brief na App Store](https://apps.apple.com/pt/app/id6791658210)
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/aibriefpack.html)
 

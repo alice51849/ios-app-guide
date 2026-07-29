@@ -19,8 +19,9 @@ publisher: "Lumi Studio"
 - 광고 없음
 - 추적 없음
 - 프라이빗 / 기기 내
+- App Store · 무료
 
-[App Store에서 AI Brief 받기](https://apps.apple.com/app/id6791658210)
+[App Store에서 AI Brief 받기](https://apps.apple.com/kr/app/id6791658210)
 
 [전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/aibriefpack.html)
 

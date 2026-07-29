@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "hu",
   "dateModified": "2026-07-29",
-  "content_digest": "ce81cb5c54e836e7dbec69752119d8338a4a03b239bf0eed3dfb5aa7b203e5ca",
-  "generation_digest": "1ab27a2a7524338a55f3b9a83b64c879c2759180c92d8c3c5dee63f79626ef3b",
+  "content_digest": "40f1fef3cf0a637dc1010463cbb853b82ebef0ada3346e1cd7fb4321114111af",
+  "generation_digest": "c15e37d2647a1e5ac95e11849810c08843b16111a9b5939e0d87defcbd5318b7",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -191,7 +191,8 @@
         "Nincs fiók",
         "Nincs reklám",
         "Nincs követés",
-        "Privát / eszközön tárolt"
+        "Privát / eszközön tárolt",
+        "App Store · Ingyenes"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/hu/index.html",
@@ -199,9 +200,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/hu/app/id6791658210",
       "app_store_cta_label": "Töltse le a(z) AI Brief appot az App Store-ból",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "HUF",
+        "formatted_price": "Ingyenes"
+      },
       "guide_cta_label": "Olvasd el a teljes útmutatót",
       "publisher_disclosure": "Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",

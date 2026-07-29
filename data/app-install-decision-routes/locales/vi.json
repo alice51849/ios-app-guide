@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "vi",
   "dateModified": "2026-07-29",
-  "content_digest": "ce81cb5c54e836e7dbec69752119d8338a4a03b239bf0eed3dfb5aa7b203e5ca",
-  "generation_digest": "1ab27a2a7524338a55f3b9a83b64c879c2759180c92d8c3c5dee63f79626ef3b",
+  "content_digest": "40f1fef3cf0a637dc1010463cbb853b82ebef0ada3346e1cd7fb4321114111af",
+  "generation_digest": "c15e37d2647a1e5ac95e11849810c08843b16111a9b5939e0d87defcbd5318b7",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -191,7 +191,8 @@
         "Không tài khoản",
         "Không quảng cáo",
         "Không theo dõi",
-        "Riêng tư / trên thiết bị"
+        "Riêng tư / trên thiết bị",
+        "App Store · Miễn phí"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/vi/index.html",
@@ -199,9 +200,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/vi.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/vn/app/id6791658210",
       "app_store_cta_label": "Tải AI Brief trên App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "VND",
+        "formatted_price": "Miễn phí"
+      },
       "guide_cta_label": "Đọc toàn bộ hướng dẫn",
       "publisher_disclosure": "Tài liệu này do Lumi Studio trực tiếp công bố; Lumi Studio là nhà phát triển của tất cả ứng dụng được liệt kê.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",

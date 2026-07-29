@@ -19,8 +19,9 @@ Konteks yang lebih baik. Jawapan yang lebih baik. Ubah tangkapan skrin, fail, no
 - Tiada iklan
 - Tiada penjejakan
 - Peribadi / pada peranti
+- App Store · Percuma
 
-[Dapatkan AI Brief di App Store](https://apps.apple.com/app/id6791658210)
+[Dapatkan AI Brief di App Store](https://apps.apple.com/my/app/id6791658210)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/aibriefpack.html)
 

@@ -5,7 +5,7 @@ from __future__ import annotations
 
 import argparse
 from collections.abc import Iterable
-from datetime import date
+from datetime import datetime, timezone
 import hashlib
 import html
 import json
@@ -801,7 +801,7 @@ def build(
     today: str | None = None,
     site: str = SITE,
 ) -> dict[str, int]:
-    today = today or date.today().isoformat()
+    today = today or datetime.now(timezone.utc).date().isoformat()
     if TODAY_RE.fullmatch(today) is None:
         raise ValueError(f"Invalid build date: {today}")
     records, apps = catalog.build_records(pages)

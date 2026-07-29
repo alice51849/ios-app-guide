@@ -89,7 +89,7 @@ Abecedno po nazivu aplikacije — nikada nije rangiranje.
 
 | Aplikacija | Upit izdavača | Kontekst odluke | Model kupnje | Vodič | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — Datoteke u jasnom kontekstu \| iOS App | Bolji kontekst. Bolji odgovori. | Besplatno za početak · doživotno otključavanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/aibriefpack.html) | [Preuzmite AI Brief u App Storeu](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — Datoteke u jasnom kontekstu \| iOS App | Bolji kontekst. Bolji odgovori. | Besplatno za početak · doživotno otključavanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/aibriefpack.html) | [Preuzmite AI Brief u App Storeu](https://apps.apple.com/hr/app/id6791658210) |
 | **Aim990** | najbolja TOEIC pripremna aplikacija za iPhone s offline planom učenja | Dio 5 izgleda kratak, ali pitanja s nepotpunim rečenicama mogu oduzeti vrijeme ako gramatika i vokabular nisu automatski. | Besplatno za početak · doživotno otključavanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Preuzmite Aim990 u App Storeu →](https://apps.apple.com/hr/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Sigurnost pod štopericom \| iOS App | Razumjeti engleski nije isto što i ostati precizan dok vrijeme istječe. Aim990 Plus intenzivan je trening slušanja i čitanja za odrasle, osmišljen za | Plaćeno preuzimanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/aim990plus.html) | [Preuzmite Aim990 Plus u App Storeu](https://apps.apple.com/hr/app/id6792483140) |
 | **CV Desk** | najbolja aplikacija za izradu životopisa za promjenu karijere 2026 | Kada mijenjate područje rada, problem s životopisom je drugačiji: vaše iskustvo je stvarno, ali na papiru 'nepovezano', a ATS filteri vas odbacuju prije nego što ga čovjek pročita — CV Desk je napravljen za to. | Besplatno za početak · doživotno otključavanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-resume-builder-app-for-career-changers-2026.html) | [Preuzmite CV Desk u App Storeu →](https://apps.apple.com/hr/app/id6781337213) |
@@ -134,6 +134,6 @@ JSON, JSONL i CSV sadrže istih 1.700 zapisa.
 
 [Početna](https://alice51849.github.io/ios-app-guide/hr/index.html) · [Otvoreni podaci](https://alice51849.github.io/ios-app-guide/hr/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenca](https://creativecommons.org/licenses/by/4.0/)
 
-Ažurirano: 2026-07-29
+Ažurirano: 2026-07-30
 
 CC BY 4.0 primjenjuje se na izvornu kompilaciju kataloga; nazivi aplikacija i oznake App Store pripadaju njihovim vlasnicima.

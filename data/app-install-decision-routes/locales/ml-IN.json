@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ml-IN",
   "dateModified": "2026-07-29",
-  "content_digest": "ce81cb5c54e836e7dbec69752119d8338a4a03b239bf0eed3dfb5aa7b203e5ca",
-  "generation_digest": "1ab27a2a7524338a55f3b9a83b64c879c2759180c92d8c3c5dee63f79626ef3b",
+  "content_digest": "40f1fef3cf0a637dc1010463cbb853b82ebef0ada3346e1cd7fb4321114111af",
+  "generation_digest": "c15e37d2647a1e5ac95e11849810c08843b16111a9b5939e0d87defcbd5318b7",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -191,7 +191,8 @@
         "അക്കൗണ്ട് ഇല്ല",
         "വ്യാപനങ്ങൾ ഇല്ല",
         "ട്രാക്കിംഗ് ഇല്ല",
-        "സ്വകാര്യത / ഉപകരണത്തിൽ"
+        "സ്വകാര്യത / ഉപകരണത്തിൽ",
+        "App Store · സൗജന്യം"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/ml-IN/index.html",
@@ -199,9 +200,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ml-IN.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/in/app/id6791658210",
       "app_store_cta_label": "App Store-ൽ നിന്ന് AI Brief നേടൂ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "സൗജന്യം"
+      },
       "guide_cta_label": "പൂർണ്ണ ഗൈഡ് വായിക്കുക",
       "publisher_disclosure": "ഇത് Lumi Studio പ്രസിദ്ധീകരിച്ച ആദ്യകക്ഷി വസ്തുവാണ്, എല്ലാ ലിസ്റ്റുചെയ്ത ആപ്പുകളുടെയും വികസകനാണ്.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",

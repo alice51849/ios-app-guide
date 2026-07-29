@@ -89,7 +89,7 @@ Alkalmazásnév szerinti ábécé sorrend — soha nem rangsor.
 
 | Alkalmazás | Kiadói lekérdezés | Döntési kontextus | Vásárlási modell | Útmutató | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — Fájlokból tiszta kontextus \| iOS App | Jobb kontextus. Jobb válaszok. | Ingyenes kezdés · életre szóló feloldás | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/aibriefpack.html) | [Töltse le a(z) AI Brief appot az App Store-ból](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — Fájlokból tiszta kontextus \| iOS App | Jobb kontextus. Jobb válaszok. | Ingyenes kezdés · életre szóló feloldás | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/aibriefpack.html) | [Töltse le a(z) AI Brief appot az App Store-ból](https://apps.apple.com/hu/app/id6791658210) |
 | **Aim990** | legjobb TOEIC felkészítő alkalmazás offline tanulási terv iPhone-ra | Az 5. rész rövidnek tűnik, de az hiányos mondatos kérdések időt rabolhatnak, ha a nyelvtan és a szókincs nem automatikus. | Ingyenes kezdés · életre szóló feloldás | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Szerezd be az Aim990-et az App Store-ból →](https://apps.apple.com/hu/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Magabiztosság időnyomásban \| iOS App | Az angoltudás mellett arra is szükség van, hogy az idő szorításában is pontosan dönts. Az Aim990 Plus felnőtteknek készült, intenzív hallásértési és | Fizetős letöltés | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/aim990plus.html) | [Töltse le a(z) Aim990 Plus appot az App Store-ból](https://apps.apple.com/hu/app/id6792483140) |
 | **CV Desk** | legjobb önéletrajz készítő alkalmazás karrierváltóknak 2026 | Amikor területet váltasz, az önéletrajz problémája más: a tapasztalat valós, de papíron 'nem kapcsolódó', és az ATS szűrők elutasítanak, mielőtt egy ember elolvasná — a CV Desk erre készült. | Ingyenes kezdés · életre szóló feloldás | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/answers/best-resume-builder-app-for-career-changers-2026.html) | [Szerezd be a CV Desk-et az App Store-ból →](https://apps.apple.com/hu/app/id6781337213) |
@@ -134,6 +134,6 @@ A JSON, JSONL és CSV ugyanazt az 1 700 rekordot tartalmazza.
 
 [Kezdőlap](https://alice51849.github.io/ios-app-guide/hu/index.html) · [Nyílt adatok](https://alice51849.github.io/ios-app-guide/hu/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenc](https://creativecommons.org/licenses/by/4.0/)
 
-Frissítve: 2026-07-29
+Frissítve: 2026-07-30
 
 A CC BY 4.0 az eredeti katalógus összeállítására vonatkozik; az alkalmazásnevek és az App Store védjegyek a tulajdonosaiké.

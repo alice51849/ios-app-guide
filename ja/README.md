@@ -89,7 +89,7 @@ App Store での公開を確認済みの各アプリから、主要な購入者�
 
 | アプリ | 開発元クエリ | 判断材料 | 購入方式 | ガイド | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — 資料を明確な文脈に整理 \| iOS App | より良いコンテキスト。より良い回答。 スクリーンショット、ファイル、メモ、ドキュメントを、ひとつの明確な AI 要約にまとめます。 | 無料で開始・買い切りで永久解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/aibriefpack.html) | [App Store で AI Brief を入手](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — 資料を明確な文脈に整理 \| iOS App | より良いコンテキスト。より良い回答。 スクリーンショット、ファイル、メモ、ドキュメントを、ひとつの明確な AI 要約にまとめます。 | 無料で開始・買い切りで永久解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/aibriefpack.html) | [App Store で AI Brief を入手](https://apps.apple.com/jp/app/id6791658210) |
 | **Aim990** | iPhone向けオフラインで使える最高のTOEIC対策アプリと学習プラン | パート5は短く見えますが、不完全な文の問題は文法と語彙が自動化されていないと時間を消耗します。 | 無料で開始・買い切りで永久解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [App StoreでAim990を入手 →](https://apps.apple.com/jp/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — 15分で磨く7パート対応力 \| iOS App | ただ問題数をこなすのではなく、時間の重圧の中で正確に判断する力を鍛える。 | 有料ダウンロード | [ガイド](https://alice51849.github.io/ios-app-guide/ja/aim990plus.html) | [App Store で Aim990 Plus を入手](https://apps.apple.com/jp/app/id6792483140) |
 | **CV Desk** | 2026年版キャリアチェンジャー向け最高の履歴書作成アプリ | 分野を変えると履歴書の問題は異なります。経験は実際のものでも紙上では「関連性なし」と見なされ、ATSが人間に読まれる前に弾きます。CV Deskはこれを解決するために作られています。 | 無料で開始・買い切りで永久解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-resume-builder-app-for-career-changers-2026.html) | [App StoreでCV Deskを入手 →](https://apps.apple.com/jp/app/id6781337213) |
@@ -134,6 +134,6 @@ JSON、JSONL、CSVは同じ1,700件のレコードを含みます。
 
 [ホーム](https://alice51849.github.io/ios-app-guide/ja/index.html) · [オープンデータ](https://alice51849.github.io/ios-app-guide/ja/data/lumi-studio-publisher-search-intent-catalog.html) · [ライセンス](https://creativecommons.org/licenses/by/4.0/)
 
-更新日: 2026-07-29
+更新日: 2026-07-30
 
 CC BY 4.0は元のカタログ編集に適用されます。アプリ名およびApp Storeのマークはそれぞれの所有者に帰属します。

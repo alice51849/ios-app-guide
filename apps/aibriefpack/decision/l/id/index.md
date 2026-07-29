@@ -19,8 +19,9 @@ Konteks lebih baik. Jawaban lebih baik. Ubah gambar layar, file, catatan, dan do
 - Tanpa iklan
 - Tanpa pelacakan
 - Privat / di perangkat
+- App Store · Gratis
 
-[Dapatkan AI Brief di App Store](https://apps.apple.com/app/id6791658210)
+[Dapatkan AI Brief di App Store](https://apps.apple.com/id/app/id6791658210)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/aibriefpack.html)
 

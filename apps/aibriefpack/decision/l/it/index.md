@@ -19,8 +19,9 @@ Un contesto migliore, risposte migliori. Trasforma screenshot, file, note e docu
 - Nessuna pubblicità
 - Nessun tracciamento
 - Privato / su dispositivo
+- App Store · Gratis
 
-[Scarica AI Brief sull'App Store](https://apps.apple.com/app/id6791658210)
+[Scarica AI Brief sull'App Store](https://apps.apple.com/it/app/id6791658210)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/aibriefpack.html)
 

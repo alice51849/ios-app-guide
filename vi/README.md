@@ -89,7 +89,7 @@ Sắp xếp theo bảng chữ cái tên ứng dụng — không phải xếp h�
 
 | Ứng dụng | Truy vấn của nhà phát hành | Bối cảnh quyết định | Mô hình mua hàng | Hướng dẫn | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — Tệp thành ngữ cảnh rõ ràng \| iOS App | Ngữ cảnh tốt hơn. Câu trả lời tốt hơn. | Bắt đầu miễn phí · mở khóa vĩnh viễn | [Hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/aibriefpack.html) | [Tải AI Brief trên App Store](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — Tệp thành ngữ cảnh rõ ràng \| iOS App | Ngữ cảnh tốt hơn. Câu trả lời tốt hơn. | Bắt đầu miễn phí · mở khóa vĩnh viễn | [Hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/aibriefpack.html) | [Tải AI Brief trên App Store](https://apps.apple.com/vn/app/id6791658210) |
 | **Aim990** | ứng dụng luyện thi TOEIC tốt nhất không cần mạng với kế hoạch học cho iPhone | Phần 5 có vẻ ngắn, nhưng các câu hỏi câu chưa hoàn chỉnh có thể tốn thời gian nếu ngữ pháp và từ vựng không thành thạo. | Bắt đầu miễn phí · mở khóa vĩnh viễn | [Hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Tải Aim990 trên App Store →](https://apps.apple.com/vn/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Tập trung nhanh dưới áp lực \| iOS App | Rèn khả năng sử dụng tiếng Anh trong điều kiện đòi hỏi sự tập trung cao: thời gian có hạn, chuỗi câu hỏi dài và áp lực phải giữ độ chính xác. Aim990 Plus | Tải xuống trả phí | [Hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/aim990plus.html) | [Tải Aim990 Plus trên App Store](https://apps.apple.com/vn/app/id6792483140) |
 | **CV Desk** | ứng dụng tạo hồ sơ xin việc tốt nhất cho người đổi nghề 2026 | Khi bạn chuyển ngành, vấn đề hồ sơ khác: kinh nghiệm thật nhưng trên giấy tờ là 'không liên quan', và bộ lọc ATS loại bạn trước khi người đọc thấy — CV Desk được xây dựng cho điều này. | Bắt đầu miễn phí · mở khóa vĩnh viễn | [Hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-resume-builder-app-for-career-changers-2026.html) | [Tải CV Desk trên App Store →](https://apps.apple.com/vn/app/id6781337213) |
@@ -134,6 +134,6 @@ JSON, JSONL và CSV chứa cùng 1.700 bản ghi.
 
 [Trang chủ](https://alice51849.github.io/ios-app-guide/vi/index.html) · [Dữ liệu mở](https://alice51849.github.io/ios-app-guide/vi/data/lumi-studio-publisher-search-intent-catalog.html) · [Giấy phép](https://creativecommons.org/licenses/by/4.0/)
 
-Cập nhật: 2026-07-29
+Cập nhật: 2026-07-30
 
 CC BY 4.0 áp dụng cho bản tổng hợp danh mục gốc; tên ứng dụng và nhãn hiệu App Store thuộc sở hữu của chủ sở hữu tương ứng.

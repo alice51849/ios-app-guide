@@ -19,8 +19,9 @@ Lepší kontext, lepšie odpovede. Zobraziť snímok obrazovky, súbory, poznám
 - Bez reklám
 - Bez sledovania
 - Súkromné / v zariadení
+- App Store · Zadarmo
 
-[Stiahnuť AI Brief v App Store](https://apps.apple.com/app/id6791658210)
+[Stiahnuť AI Brief v App Store](https://apps.apple.com/sk/app/id6791658210)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/aibriefpack.html)
 

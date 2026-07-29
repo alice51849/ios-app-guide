@@ -2,7 +2,7 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-07-29",
-  "content_digest": "04433d8917f7bcff32aa174a257f9b42fea35b0169c90aa2042288c5f867d1df",
+  "content_digest": "cd2a71274b3bd5d3e00d6772cc5657280358d26d2762401c04e2999f54bac130",
   "locale": "uk",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -37,9 +37,15 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/ua/app/id6791658210",
       "guide_url": "https://alice51849.github.io/ios-app-guide/uk/aibriefpack.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно",
+        "storefront_url": "https://apps.apple.com/ua/app/id6791658210"
+      }
     },
     {
       "key": "aim990",

@@ -13,11 +13,11 @@
     {
       "@type": "ListItem",
       "position": 1,
-      "url": "https://apps.apple.com/app/id6791658210",
+      "url": "https://apps.apple.com/in/app/id6791658210",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/te-IN.jsonld#offer-aibriefpack",
-        "url": "https://apps.apple.com/app/id6791658210",
+        "url": "https://apps.apple.com/in/app/id6791658210",
         "name": "AI Brief",
         "description": "మెరుగైన సందర్భం. మెరుగైన సమాధానాలు.",
         "seller": {
@@ -37,12 +37,12 @@
           "name": "AI Brief",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
-          "url": "https://apps.apple.com/app/id6791658210",
-          "installUrl": "https://apps.apple.com/app/id6791658210",
-          "downloadUrl": "https://apps.apple.com/app/id6791658210",
+          "url": "https://apps.apple.com/in/app/id6791658210",
+          "installUrl": "https://apps.apple.com/in/app/id6791658210",
+          "downloadUrl": "https://apps.apple.com/in/app/id6791658210",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/app/id6791658210"
+            "target": "https://apps.apple.com/in/app/id6791658210"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/te-IN/aibriefpack.html#webpage"
@@ -64,7 +64,15 @@
               "name": "one_time_option",
               "value": true
             }
-          ]
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "IN"
         }
       }
     },

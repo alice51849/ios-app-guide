@@ -89,7 +89,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 | ಆ್ಯಪ್ | ಪ್ರಕಾಶಕ ಪ್ರಶ್ನೆ | ನಿರ್ಧಾರ ಸಂದರ್ಭ | ಖರೀದಿ ಮಾದರಿ | ಮಾರ್ಗದರ್ಶಕ | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — ಫೈಲ್‌ನಿಂದ ಸ್ಪಷ್ಟ ಸಂದರ್ಭ \| iOS App | ಉತ್ತಮ ಸಂದರ್ಭ. ಉತ್ತಮ ಉತ್ತರಗಳು. | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/aibriefpack.html) | [App Store ನಲ್ಲಿ AI Brief ಪಡೆಯಿರಿ](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — ಫೈಲ್‌ನಿಂದ ಸ್ಪಷ್ಟ ಸಂದರ್ಭ \| iOS App | ಉತ್ತಮ ಸಂದರ್ಭ. ಉತ್ತಮ ಉತ್ತರಗಳು. | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/aibriefpack.html) | [App Store ನಲ್ಲಿ AI Brief ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6791658210) |
 | **Aim990** | iPhone‌ಗಾಗಿ ಅತ್ಯುತ್ತಮ ಟೋಯಿಕ್ ತಯಾರಿ ಆಫ್‌ಲೈನ್ ಅಧ್ಯಯನ ಯೋಜನೆ ಅಪ್ಲಿಕೇಶನ್ | ಭಾಗ 5 ಚಿಕ್ಕದಾಗಿದ್ದರೂ, ಅವ್ಯಕ್ತ ವಾಕ್ಯ ಪ್ರಶ್ನೆಗಳು ವ್ಯಾಕರಣ ಮತ್ತು ಶಬ್ದಕೋಶ ಸ್ವಯಂಚಾಲಿತವಾಗದಿದ್ದರೆ ಸಮಯವನ್ನು ತೆಗೆದುಕೊಳ್ಳಬಹುದು. | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [App Store ನಲ್ಲಿ Aim990 ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — ಇಂಗ್ಲಿಷ್ ಒತ್ತಡ ಅಭ್ಯಾಸ \| iOS App | Aim990 Plus ವಯಸ್ಕರು ತಮ್ಮ ಇಂಗ್ಲಿಷ್ ಕೇಳುವಿಕೆ, ಓದುವಿಕೆ ಮತ್ತು ಸಮಯ ನಿರ್ವಹಣೆಯನ್ನು ಏಕಾಗ್ರವಾಗಿ ಬೆಳೆಸಿಕೊಳ್ಳಲು ರೂಪಿಸಿದ ಒತ್ತಡ ತರಬೇತಿ ಆಪ್. ಸಣ್ಣ ಪಾಠಗಳನ್ನು ಸುಮ್ಮನೆ | ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/aim990plus.html) | [App Store ನಲ್ಲಿ Aim990 Plus ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6792483140) |
 | **CV ಡೆಸ್ಕ್** | ವೃತ್ತಿ ಬದಲಾವಣೆಗಾರರಿಗಾಗಿ ಅತ್ಯುತ್ತಮ ರೆಸ್ಯೂಮ್ ನಿರ್ಮಾಪಕ ಅಪ್ಲಿಕೇಶನ್ 2026 | ನೀವು ಕ್ಷೇತ್ರಗಳನ್ನು ಬದಲಾಯಿಸುತ್ತಿದ್ದಾಗ, ರೆಸ್ಯೂಮ್ ಸಮಸ್ಯೆ ವಿಭಿನ್ನವಾಗುತ್ತದೆ: ನಿಮ್ಮ ಅನುಭವ ವಾಸ್ತವಿಕ ಆದರೆ 'ಸಂಬಂಧವಿಲ್ಲದ' ಆಗಿದ್ದು, ATS ಫಿಲ್ಟರ್‌ಗಳು ಮಾನವ ಓದಲು ಮೊದಲು ತಿರಸ್ಕರಿಸುತ್ತವೆ — CV ಡೆಸ್ಕ್ ಇದಕ್ಕಾಗಿ ನಿರ್ಮಿಸಲಾಗಿದೆ. | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-resume-builder-app-for-career-changers-2026.html) | [App Store ನಲ್ಲಿ CV ಡೆಸ್ಕ್ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6781337213) |
@@ -134,6 +134,6 @@ JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 1,700 ದಾಖಲೆಗಳನ್�
 
 [ಮುಖಪುಟ](https://alice51849.github.io/ios-app-guide/kn-IN/index.html) · [ತೆರೆದ ಡೇಟಾ](https://alice51849.github.io/ios-app-guide/kn-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ಲೈಸೆನ್ಸ್](https://creativecommons.org/licenses/by/4.0/)
 
-ನವೀಕರಿಸಲಾಗಿದೆ: 2026-07-29
+ನವೀಕರಿಸಲಾಗಿದೆ: 2026-07-30
 
 CC BY 4.0 ಮೂಲ ಕ್ಯಾಟಲೋಗ್ ಸಂಗ್ರಹಣೆಗೆ ಅನ್ವಯಿಸುತ್ತದೆ; ಆ್ಯಪ್ ಹೆಸರುಗಳು ಮತ್ತು App Store ಗುರುತುಗಳು ಅವರ ಮಾಲೀಕರಿಗೆ ಸೇರಿವೆ.

@@ -89,7 +89,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 | אפליקציה | שאילתת מפרסם | הקשר החלטה | מודל רכישה | מדריך | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — מקבצים להקשר ברור \| iOS App | הקשר טוב יותר. תשובות טובות יותר. | התחלה ללא תשלום · פתיחה לכל החיים | [מדריך](https://alice51849.github.io/ios-app-guide/he/aibriefpack.html) | [הורידו את AI Brief מה-App Store](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — מקבצים להקשר ברור \| iOS App | הקשר טוב יותר. תשובות טובות יותר. | התחלה ללא תשלום · פתיחה לכל החיים | [מדריך](https://alice51849.github.io/ios-app-guide/he/aibriefpack.html) | [הורידו את AI Brief מה-App Store](https://apps.apple.com/il/app/id6791658210) |
 | **Aim990** | האפליקציה הטובה ביותר להכנה למבחן TOEIC עם תוכנית לימוד לא מקוונת לאייפון | חלק 5 נראה קצר, אך שאלות המשפטים החסרים יכולות לגזול זמן אם הדקדוק ואוצר המילים אינם אוטומטיים. | התחלה ללא תשלום · פתיחה לכל החיים | [מדריך](https://alice51849.github.io/ios-app-guide/he/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [קבל את Aim990 ב-App Store →](https://apps.apple.com/il/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — אימון שמיעה וקריאה בלחץ \| iOS App | תרגול ממוקד להבנת אנגלית מדוברת וכתובה, שנבנה למבוגרים שרוצים לשפר דיוק ומהירות גם כשהשעון מתקתק. במקום לפתור עוד ועוד שאלות בלי כיוון, האפליקציה מחברת בין | הורדה בתשלום | [מדריך](https://alice51849.github.io/ios-app-guide/he/aim990plus.html) | [הורידו את Aim990 Plus מה-App Store](https://apps.apple.com/il/app/id6792483140) |
 | **CV Desk** | האפליקציה הטובה ביותר לבניית קורות חיים למחליפים מקצועיים 2026 | כשאתה משנה תחום, הבעיה בקורות החיים שונה: הניסיון שלך אמיתי אך 'לא רלוונטי' על הנייר, ומסנני ATS דוחים אותך לפני שאדם קורא אותם — CV Desk נבנה למטרה זו. | התחלה ללא תשלום · פתיחה לכל החיים | [מדריך](https://alice51849.github.io/ios-app-guide/he/answers/best-resume-builder-app-for-career-changers-2026.html) | [קבל את CV Desk ב-App Store →](https://apps.apple.com/il/app/id6781337213) |
@@ -134,6 +134,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [בית](https://alice51849.github.io/ios-app-guide/he/index.html) · [נתונים פתוחים](https://alice51849.github.io/ios-app-guide/he/data/lumi-studio-publisher-search-intent-catalog.html) · [רישיון](https://creativecommons.org/licenses/by/4.0/)
 
-עודכן: 2026-07-29
+עודכן: 2026-07-30
 
 רישיון CC BY 4.0 חל על הרכב הקטלוג המקורי; שמות האפליקציות וסימני App Store שייכים לבעליהם.

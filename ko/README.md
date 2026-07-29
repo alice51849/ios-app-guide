@@ -89,7 +89,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 
 | 앱 | 개발사 검색어 | 의사결정 맥락 | 구매 방식 | 가이드 | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — 파일을 명확한 맥락으로 \| iOS App | 더 나은 맥락, 더 나은 답변. 스크린샷, 파일, 메모, 문서를 하나의 명확한 AI 브리프로 정리하세요. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/aibriefpack.html) | [App Store에서 AI Brief 받기](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — 파일을 명확한 맥락으로 \| iOS App | 더 나은 맥락, 더 나은 답변. 스크린샷, 파일, 메모, 문서를 하나의 명확한 AI 브리프로 정리하세요. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/aibriefpack.html) | [App Store에서 AI Brief 받기](https://apps.apple.com/kr/app/id6791658210) |
 | **Aim990** | 아이폰용 오프라인 토익 준비 앱 최고의 학습 계획 | 파트 5는 짧아 보이지만, 문장이 완성되지 않은 문제들이 문법과 어휘가 자동화되지 않으면 시간을 많이 소모할 수 있습니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [앱 스토어에서 Aim990 받기 →](https://apps.apple.com/kr/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — 15분 완성 7개 영역 집중 \| iOS App | 많이 푸는 데서 멈추지 않고, 제한된 시간 안에 정확히 판단하는 힘까지 기르세요. | 유료 다운로드 | [가이드](https://alice51849.github.io/ios-app-guide/ko/aim990plus.html) | [App Store에서 Aim990 Plus 받기](https://apps.apple.com/kr/app/id6792483140) |
 | **CV Desk** | 2026년 경력 전환자를 위한 최고의 이력서 작성 앱 | 분야를 바꿀 때 이력서 문제는 다릅니다: 경험은 실제지만 서류상 '관련 없음'으로 ATS 필터가 인간 검토 전에 걸러냅니다 — CV Desk는 이를 위해 만들어졌습니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-resume-builder-app-for-career-changers-2026.html) | [앱 스토어에서 CV Desk 받기 →](https://apps.apple.com/kr/app/id6781337213) |
@@ -134,6 +134,6 @@ JSON, JSONL, CSV 모두 동일한 1,700개 기록을 포함합니다.
 
 [홈](https://alice51849.github.io/ios-app-guide/ko/index.html) · [오픈 데이터](https://alice51849.github.io/ios-app-guide/ko/data/lumi-studio-publisher-search-intent-catalog.html) · [라이선스](https://creativecommons.org/licenses/by/4.0/)
 
-업데이트 날짜: 2026-07-29
+업데이트 날짜: 2026-07-30
 
 CC BY 4.0은 원본 카탈로그 편집에 적용되며, 앱 이름과 App Store 마크는 각 소유자의 권리입니다.

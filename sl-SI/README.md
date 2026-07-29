@@ -89,7 +89,7 @@ Abecedno po imenu aplikacije — nikoli uvrstitev.
 
 | Aplikacija | Poizvedba založnika | Kontekst odločitve | Model nakupa | Vodnik | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — Datoteke v jasen kontekst \| iOS App | Boljši kontekst. Boljši odgovori. | Brezplačen začetek · doživljenjska odklenitev | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/aibriefpack.html) | [Prenesite AI Brief iz trgovine App Store](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — Datoteke v jasen kontekst \| iOS App | Boljši kontekst. Boljši odgovori. | Brezplačen začetek · doživljenjska odklenitev | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/aibriefpack.html) | [Prenesite AI Brief iz trgovine App Store](https://apps.apple.com/si/app/id6791658210) |
 | **Aim990** | najboljša aplikacija za pripravo na TOEIC brez povezave s študijskim načrtom za iPhone | Del 5 se zdi kratek, a vprašanja z nepopolnimi stavki lahko vzamejo veliko časa, če slovnica in besedišče nista samodejna. | Brezplačen začetek · doživljenjska odklenitev | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Prenesite Aim990 v App Store →](https://apps.apple.com/si/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Zbranost proti uri \| iOS App | Razumevanje angleščine je le del izziva. Drugi del je ohraniti natančnost, ko se čas izteka. Aim990 Plus je intenzivna vadba poslušanja in branja za | Plačljiv prenos | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/aim990plus.html) | [Prenesite Aim990 Plus iz trgovine App Store](https://apps.apple.com/si/app/id6792483140) |
 | **CV Desk** | najboljša aplikacija za izdelavo življenjepisa za menjavo kariere 2026 | Ko menjate področje, je problem življenjepisa drugačen: vaše izkušnje so resnične, a na papirju 'nepovezane', ATS filtri pa vas zavrnejo, preden jih pregleda človek — CV Desk je narejen za to. | Brezplačen začetek · doživljenjska odklenitev | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-resume-builder-app-for-career-changers-2026.html) | [Prenesite CV Desk v App Store →](https://apps.apple.com/si/app/id6781337213) |
@@ -134,6 +134,6 @@ JSON, JSONL in CSV vsebujejo enakih 1.700 zapisov.
 
 [Domov](https://alice51849.github.io/ios-app-guide/sl-SI/index.html) · [Odprti podatki](https://alice51849.github.io/ios-app-guide/sl-SI/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenca](https://creativecommons.org/licenses/by/4.0/)
 
-Posodobljeno: 2026-07-29
+Posodobljeno: 2026-07-30
 
 CC BY 4.0 velja za izvirno sestavo kataloga; imena aplikacij in znamke App Store pripadajo njihovim lastnikom.

@@ -19,8 +19,9 @@ publisher: "Lumi Studio"
 - ಜಾಹೀರಾತುಗಳಿಲ್ಲ
 - ಹಿಂಡಿಕೆ ಇಲ್ಲ
 - ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
+- App Store · ಉಚಿತ
 
-[App Store ನಲ್ಲಿ AI Brief ಪಡೆಯಿರಿ](https://apps.apple.com/app/id6791658210)
+[App Store ನಲ್ಲಿ AI Brief ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6791658210)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/aibriefpack.html)
 

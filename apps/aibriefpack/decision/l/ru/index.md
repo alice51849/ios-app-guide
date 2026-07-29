@@ -19,8 +19,9 @@ publisher: "Lumi Studio"
 - Без рекламы
 - Без отслеживания
 - Лично / на устройстве
+- App Store · Бесплатно
 
-[Установить AI Brief в App Store](https://apps.apple.com/app/id6791658210)
+[Установить AI Brief в App Store](https://apps.apple.com/ru/app/id6791658210)
 
 [Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/aibriefpack.html)
 

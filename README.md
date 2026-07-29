@@ -89,7 +89,7 @@ Alphabetical by app name — never a ranking.
 
 | App | Publisher query | Decision context | Purchase model | Guide | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — Files to Clear Context \| iOS App | Better context. Better answers. | Free to start · lifetime unlock | [Guide](https://alice51849.github.io/ios-app-guide/en-US/aibriefpack.html) | [Get AI Brief on the App Store](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — Files to Clear Context \| iOS App | Better context. Better answers. | Free to start · lifetime unlock | [Guide](https://alice51849.github.io/ios-app-guide/en-US/aibriefpack.html) | [Get AI Brief on the App Store](https://apps.apple.com/us/app/id6791658210) |
 | **Aim990** | best toeic prep app offline study plan for iphone | Part 5 looks short, but those incomplete-sentence questions can drain time if grammar and vocabulary are not automatic. | Free to start · lifetime unlock | [Guide](https://alice51849.github.io/ios-app-guide/en-US/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Get Aim990 on the App Store →](https://apps.apple.com/us/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Offline Exam Pressure Trainer \| iOS App | Train for clear decisions under exam pressure | Paid download | [Guide](https://alice51849.github.io/ios-app-guide/en-US/aim990plus.html) | [Get Aim990 Plus on the App Store](https://apps.apple.com/us/app/id6792483140) |
 | **CV Desk** | best resume builder app for career changers 2026 | When you're switching fields, the resume problem is different: your experience is real but 'unrelated' on paper, and ATS filters reject you before a human reads it — CV Desk is built for this. | Free to start · lifetime unlock | [Guide](https://alice51849.github.io/ios-app-guide/en-US/answers/best-resume-builder-app-for-career-changers-2026.html) | [Get CV Desk on the App Store →](https://apps.apple.com/us/app/id6781337213) |
@@ -134,6 +134,6 @@ JSON, JSONL and CSV contain the same 1,700 records.
 
 [Home](https://alice51849.github.io/ios-app-guide/index.html) · [Open data](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.html) · [License](https://creativecommons.org/licenses/by/4.0/)
 
-Updated: 2026-07-29
+Updated: 2026-07-30
 
 CC BY 4.0 applies to the original catalog compilation; app names and App Store marks belong to their owners.

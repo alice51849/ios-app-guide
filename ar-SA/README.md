@@ -89,7 +89,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 | التطبيق | استعلام الناشر | سياق القرار | نموذج الشراء | الدليل | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — حوّل الملفات إلى سياق واضح \| iOS App | سياق أفضل. إجابات أفضل. | بدء مجاني · فتح دائم | [الدليل](https://alice51849.github.io/ios-app-guide/ar-SA/aibriefpack.html) | [احصل على AI Brief من App Store](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — حوّل الملفات إلى سياق واضح \| iOS App | سياق أفضل. إجابات أفضل. | بدء مجاني · فتح دائم | [الدليل](https://alice51849.github.io/ios-app-guide/ar-SA/aibriefpack.html) | [احصل على AI Brief من App Store](https://apps.apple.com/sa/app/id6791658210) |
 | **Aim990** | أفضل تطبيق تحضير TOEIC مع خطة دراسة بدون اتصال للآيفون | يبدو الجزء 5 قصيرًا، لكن أسئلة الجمل الناقصة يمكن أن تستغرق وقتًا إذا لم تكن القواعد والمفردات تلقائية. | بدء مجاني · فتح دائم | [الدليل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [احصل على Aim990 من App Store →](https://apps.apple.com/sa/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — تدريب الاستماع والقراءة \| iOS App | تدرّب على فهم الإنجليزية المسموعة والمقروءة في بيئة مصممة للبالغين الذين يريدون بناء الدقة والسرعة تحت ضغط الوقت. يجمع التطبيق بين جلسات قصيرة واضحة | تحميل مدفوع | [الدليل](https://alice51849.github.io/ios-app-guide/ar-SA/aim990plus.html) | [احصل على Aim990 Plus من App Store](https://apps.apple.com/sa/app/id6792483140) |
 | **CV Desk** | أفضل تطبيق لبناء السيرة الذاتية لمن يغيرون المهنة 2026 | عند تغيير المجالات، مشكلة السيرة الذاتية مختلفة: خبرتك حقيقية لكنها 'غير ذات صلة' على الورق، وأنظمة ATS ترفضك قبل أن يقرأها إنسان — CV Desk مصمم لهذا. | بدء مجاني · فتح دائم | [الدليل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-resume-builder-app-for-career-changers-2026.html) | [احصل على CV Desk من App Store →](https://apps.apple.com/sa/app/id6781337213) |
@@ -134,6 +134,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [الرئيسية](https://alice51849.github.io/ios-app-guide/ar-SA/index.html) · [بيانات مفتوحة](https://alice51849.github.io/ios-app-guide/ar-SA/data/lumi-studio-publisher-search-intent-catalog.html) · [الرخصة](https://creativecommons.org/licenses/by/4.0/)
 
-آخر تحديث: 2026-07-29
+آخر تحديث: 2026-07-30
 
 تطبق CC BY 4.0 على تجميع الكتالوج الأصلي؛ أسماء التطبيقات وعلامات App Store ملك لأصحابها.

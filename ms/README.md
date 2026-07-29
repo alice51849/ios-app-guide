@@ -89,7 +89,7 @@ Mengikut abjad mengikut nama aplikasi — bukan kedudukan.
 
 | Aplikasi | Pertanyaan penerbit | Konteks keputusan | Model pembelian | Panduan | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — Fail jadi konteks yang jelas \| iOS App | Konteks yang lebih baik. Jawapan yang lebih baik. | Percuma untuk bermula · buka kunci kekal | [Panduan](https://alice51849.github.io/ios-app-guide/ms/aibriefpack.html) | [Dapatkan AI Brief di App Store](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — Fail jadi konteks yang jelas \| iOS App | Konteks yang lebih baik. Jawapan yang lebih baik. | Percuma untuk bermula · buka kunci kekal | [Panduan](https://alice51849.github.io/ios-app-guide/ms/aibriefpack.html) | [Dapatkan AI Brief di App Store](https://apps.apple.com/my/app/id6791658210) |
 | **Aim990** | aplikasi persediaan TOEIC terbaik dengan pelan belajar luar talian untuk iPhone | Bahagian 5 nampak pendek, tetapi soalan ayat tidak lengkap boleh mengambil masa jika tatabahasa dan perbendaharaan kata tidak automatik. | Percuma untuk bermula · buka kunci kekal | [Panduan](https://alice51849.github.io/ios-app-guide/ms/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Dapatkan Aim990 di App Store →](https://apps.apple.com/my/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Fokus Pantas Dalam Tekanan \| iOS App | Bina kemahiran bahasa Inggeris dalam keadaan yang mencabar fokus: masa terhad, siri soalan yang panjang dan keperluan untuk terus teliti. Aim990 Plus | Muat turun berbayar | [Panduan](https://alice51849.github.io/ios-app-guide/ms/aim990plus.html) | [Dapatkan Aim990 Plus di App Store](https://apps.apple.com/my/app/id6792483140) |
 | **CV Desk** | aplikasi pembina resume terbaik untuk penukar kerjaya 2026 | Apabila anda menukar bidang, masalah resume berbeza: pengalaman anda nyata tetapi 'tidak berkaitan' di atas kertas, dan penapis ATS menolak anda sebelum manusia membacanya — CV Desk dibina untuk ini. | Percuma untuk bermula · buka kunci kekal | [Panduan](https://alice51849.github.io/ios-app-guide/ms/answers/best-resume-builder-app-for-career-changers-2026.html) | [Dapatkan CV Desk di App Store →](https://apps.apple.com/my/app/id6781337213) |
@@ -134,6 +134,6 @@ JSON, JSONL dan CSV mengandungi 1,700 rekod yang sama.
 
 [Laman Utama](https://alice51849.github.io/ios-app-guide/ms/index.html) · [Data terbuka](https://alice51849.github.io/ios-app-guide/ms/data/lumi-studio-publisher-search-intent-catalog.html) · [Lesen](https://creativecommons.org/licenses/by/4.0/)
 
-Dikemas kini: 2026-07-29
+Dikemas kini: 2026-07-30
 
 CC BY 4.0 terpakai kepada kompilasi katalog asal; nama aplikasi dan tanda App Store adalah milik pemilik masing-masing.

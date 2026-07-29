@@ -5,8 +5,8 @@
   "description": "First-party install decision routes for every verified live iOS app and Apple locale, with a direct App Store path, purchase model, privacy facts, device surfaces and provenance.",
   "identifier": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes.json",
   "dateModified": "2026-07-29",
-  "content_digest": "ce81cb5c54e836e7dbec69752119d8338a4a03b239bf0eed3dfb5aa7b203e5ca",
-  "generation_digest": "1ab27a2a7524338a55f3b9a83b64c879c2759180c92d8c3c5dee63f79626ef3b",
+  "content_digest": "40f1fef3cf0a637dc1010463cbb853b82ebef0ada3346e1cd7fb4321114111af",
+  "generation_digest": "c15e37d2647a1e5ac95e11849810c08843b16111a9b5939e0d87defcbd5318b7",
   "publisher_disclosure": "First-party decision-support material published by Lumi Studio, the developer of every listed app; not an independent ranking or measured search-volume product.",
   "ordering": "official_locale_order_then_priority_then_alphabetical_app_name",
   "priority_app_keys": [
@@ -503,7 +503,8 @@
         "بدون حساب",
         "بدون إعلانات",
         "بدون تتبع",
-        "خاص / على الجهاز"
+        "خاص / على الجهاز",
+        "App Store · مجاني"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/ar-SA/index.html",
@@ -511,9 +512,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ar-SA.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/sa/app/id6791658210",
       "app_store_cta_label": "احصل على AI Brief من App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "SAR",
+        "formatted_price": "مجاني"
+      },
       "guide_cta_label": "اقرأ الدليل الكامل",
       "publisher_disclosure": "هذه مادة ينشرها Lumi Studio مباشرةً بصفته مطور جميع التطبيقات المدرجة.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -3812,7 +3817,8 @@
         "Sense compte",
         "Sense anuncis",
         "Sense seguiment",
-        "Privat / en el dispositiu"
+        "Privat / en el dispositiu",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/ca/index.html",
@@ -3820,9 +3826,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ca.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/es/app/id6791658210",
       "app_store_cta_label": "Descarrega AI Brief a l’App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Llegeix la guia completa",
       "publisher_disclosure": "Aquest és material de primera mà publicat per Lumi Studio, el desenvolupador de totes les apps llistades.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -5549,7 +5559,8 @@
         "Bez účtu",
         "Bez reklam",
         "Bez sledování",
-        "Soukromé / v zařízení"
+        "Soukromé / v zařízení",
+        "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/cs/index.html",
@@ -5557,9 +5568,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/cs.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/cz/app/id6791658210",
       "app_store_cta_label": "Stáhněte si AI Brief v App Storu",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CZK",
+        "formatted_price": "Zdarma"
+      },
       "guide_cta_label": "Přečtěte si celý průvodce",
       "publisher_disclosure": "Toto je materiál od první strany publikovaný Lumi Studio, vývojářem všech uvedených aplikací.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -7286,7 +7301,8 @@
         "Ingen konto",
         "Ingen reklamer",
         "Ingen sporing",
-        "Privat / på enheden"
+        "Privat / på enheden",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/da/index.html",
@@ -7294,9 +7310,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/dk/app/id6791658210",
       "app_store_cta_label": "Hent AI Brief i App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "DKK",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Læs hele vejledningen",
       "publisher_disclosure": "Dette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -9023,7 +9043,8 @@
         "Kein Konto",
         "Keine Werbung",
         "Kein Tracking",
-        "Privat / auf dem Gerät"
+        "Privat / auf dem Gerät",
+        "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/de-DE/index.html",
@@ -9031,9 +9052,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/de-DE.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/de/app/id6791658210",
       "app_store_cta_label": "AI Brief im App Store laden",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Kostenlos"
+      },
       "guide_cta_label": "Lesen Sie den vollständigen Leitfaden",
       "publisher_disclosure": "Dieses Material wird direkt von Lumi Studio veröffentlicht, dem Entwickler aller aufgeführten Apps.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -10760,7 +10785,8 @@
         "Χωρίς λογαριασμό",
         "Χωρίς διαφημίσεις",
         "Χωρίς παρακολούθηση",
-        "Ιδιωτικό / στη συσκευή"
+        "Ιδιωτικό / στη συσκευή",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/el/index.html",
@@ -10768,9 +10794,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/el.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/gr/app/id6791658210",
       "app_store_cta_label": "Αποκτήστε το AI Brief από το App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Αυτό είναι πρωτογενές υλικό που δημοσιεύεται από το Lumi Studio, τον δημιουργό κάθε καταχωρημένης εφαρμογής.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -12497,7 +12527,8 @@
         "No account",
         "No ads",
         "No tracking",
-        "Private / on-device"
+        "Private / on-device",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/en-AU/index.html",
@@ -12505,9 +12536,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/au/app/id6791658210",
       "app_store_cta_label": "Get AI Brief on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "AUD",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -14234,7 +14269,8 @@
         "No account",
         "No ads",
         "No tracking",
-        "Private / on-device"
+        "Private / on-device",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/en-CA/index.html",
@@ -14242,9 +14278,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-CA.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/ca/app/id6791658210",
       "app_store_cta_label": "Get AI Brief on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CAD",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -15971,7 +16011,8 @@
         "No account",
         "No adverts",
         "No tracking",
-        "Private / on-device"
+        "Private / on-device",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/en-GB/index.html",
@@ -15979,9 +16020,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-GB.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/gb/app/id6791658210",
       "app_store_cta_label": "Get AI Brief on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -17711,7 +17756,8 @@
         "No account",
         "No ads",
         "No tracking",
-        "Private / on-device"
+        "Private / on-device",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/en-US/index.html",
@@ -17719,9 +17765,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-US.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/us/app/id6791658210",
       "app_store_cta_label": "Get AI Brief on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -19460,7 +19510,8 @@
         "Sin cuenta",
         "Sin anuncios",
         "Sin seguimiento",
-        "Privado / en el dispositivo"
+        "Privado / en el dispositivo",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/es-ES/index.html",
@@ -19468,9 +19519,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/es-ES.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/es/app/id6791658210",
       "app_store_cta_label": "Consigue AI Brief en el App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Lee la guía completa",
       "publisher_disclosure": "Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -21197,7 +21252,8 @@
         "Sin cuenta",
         "Sin anuncios",
         "Sin rastreo",
-        "Privado / en el dispositivo"
+        "Privado / en el dispositivo",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/es-MX/index.html",
@@ -21205,9 +21261,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/es-MX.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/mx/app/id6791658210",
       "app_store_cta_label": "Consigue AI Brief en el App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "MXN",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Lee la guía completa",
       "publisher_disclosure": "Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -22934,7 +22994,8 @@
         "Ei tiliä",
         "Ei mainoksia",
         "Ei seurantaa",
-        "Yksityinen / laitteella"
+        "Yksityinen / laitteella",
+        "App Store · Ilmainen"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/fi/index.html",
@@ -22942,9 +23003,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fi.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/fi/app/id6791658210",
       "app_store_cta_label": "Lataa AI Brief App Storesta",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen"
+      },
       "guide_cta_label": "Lue koko opas",
       "publisher_disclosure": "Tämä on Lumi Studion, jokaisen listatun sovelluksen kehittäjän, julkaisema ensimmäisen osapuolen materiaali.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -24671,7 +24736,8 @@
         "Aucun compte",
         "Aucune publicité",
         "Aucun suivi",
-        "Privé / sur l'appareil"
+        "Privé / sur l'appareil",
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/fr-CA/index.html",
@@ -24679,9 +24745,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fr-CA.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/ca/app/id6791658210",
       "app_store_cta_label": "Obtenir AI Brief sur l'App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CAD",
+        "formatted_price": "Gratuit"
+      },
       "guide_cta_label": "Lire le guide complet",
       "publisher_disclosure": "Ce contenu est publié directement par Lumi Studio, le développeur de chaque app listée.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -26408,7 +26478,8 @@
         "Sans compte",
         "Sans publicité",
         "Sans suivi",
-        "Privé / sur l’appareil"
+        "Privé / sur l’appareil",
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/fr-FR/index.html",
@@ -26416,9 +26487,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fr-FR.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/fr/app/id6791658210",
       "app_store_cta_label": "Obtenir AI Brief sur l'App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratuit"
+      },
       "guide_cta_label": "Lire le guide complet",
       "publisher_disclosure": "Ce contenu est publié directement par Lumi Studio, le développeur de chaque application répertoriée.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -28145,7 +28220,8 @@
         "કોઈ ખાતું નથી",
         "કોઈ જાહેરાત નથી",
         "કોઈ ટ્રેકિંગ નથી",
-        "ખાનગી / ઉપકરણ પર"
+        "ખાનગી / ઉપકરણ પર",
+        "App Store · મફત"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/gu-IN/index.html",
@@ -28153,9 +28229,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/gu-IN.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/in/app/id6791658210",
       "app_store_cta_label": "App Store પરથી AI Brief મેળવો",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "મફત"
+      },
       "guide_cta_label": "પૂર્ણ માર્ગદર્શિકા વાંચો",
       "publisher_disclosure": "આ સામગ્રી Lumi Studio દ્વારા સીધી પ્રકાશિત કરવામાં આવી છે, જે સૂચિબદ્ધ તમામ એપ્સનો વિકાસકર્તા છે.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -29882,7 +29962,8 @@
         "ללא חשבון",
         "ללא פרסומות",
         "ללא מעקב",
-        "פרטי / במכשיר"
+        "פרטי / במכשיר",
+        "App Store · בחינם"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/he/index.html",
@@ -29890,9 +29971,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/he.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/il/app/id6791658210",
       "app_store_cta_label": "הורידו את AI Brief מה-App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "ILS",
+        "formatted_price": "בחינם"
+      },
       "guide_cta_label": "קרא את המדריך המלא",
       "publisher_disclosure": "זהו חומר רשמי שפורסם על ידי Lumi Studio, המפתח של כל אפליקציה ברשימה.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -31619,7 +31704,8 @@
         "कोई खाता नहीं",
         "कोई विज्ञापन नहीं",
         "कोई ट्रैकिंग नहीं",
-        "निजी / डिवाइस पर"
+        "निजी / डिवाइस पर",
+        "App Store · मुफ़्त"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/hi/index.html",
@@ -31627,9 +31713,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hi.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/in/app/id6791658210",
       "app_store_cta_label": "App Store पर AI Brief पाएँ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "मुफ़्त"
+      },
       "guide_cta_label": "पूरा मार्गदर्शक पढ़ें",
       "publisher_disclosure": "यह सामग्री सीधे Lumi Studio ने प्रकाशित की है, जो सूचीबद्ध सभी ऐप का डेवलपर है।",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -33356,7 +33446,8 @@
         "Bez računa",
         "Bez oglasa",
         "Bez praćenja",
-        "Privatno / na uređaju"
+        "Privatno / na uređaju",
+        "App Store · Besplatno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/hr/index.html",
@@ -33364,9 +33455,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/hr/app/id6791658210",
       "app_store_cta_label": "Preuzmite AI Brief u App Storeu",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno"
+      },
       "guide_cta_label": "Pročitajte cijeli vodič",
       "publisher_disclosure": "Ovo je materijal iz prve ruke koji je objavio Lumi Studio, razvojni tim svake navedene aplikacije.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -35093,7 +35188,8 @@
         "Nincs fiók",
         "Nincs reklám",
         "Nincs követés",
-        "Privát / eszközön tárolt"
+        "Privát / eszközön tárolt",
+        "App Store · Ingyenes"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/hu/index.html",
@@ -35101,9 +35197,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/hu/app/id6791658210",
       "app_store_cta_label": "Töltse le a(z) AI Brief appot az App Store-ból",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "HUF",
+        "formatted_price": "Ingyenes"
+      },
       "guide_cta_label": "Olvasd el a teljes útmutatót",
       "publisher_disclosure": "Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -36830,7 +36930,8 @@
         "Tanpa akun",
         "Tanpa iklan",
         "Tanpa pelacakan",
-        "Privat / di perangkat"
+        "Privat / di perangkat",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/id/index.html",
@@ -36838,9 +36939,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/id.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/id/app/id6791658210",
       "app_store_cta_label": "Dapatkan AI Brief di App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "IDR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Baca panduan lengkap",
       "publisher_disclosure": "Materi ini diterbitkan langsung oleh Lumi Studio, pengembang semua aplikasi yang tercantum.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -38567,7 +38672,8 @@
         "Nessun account",
         "Nessuna pubblicità",
         "Nessun tracciamento",
-        "Privato / su dispositivo"
+        "Privato / su dispositivo",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/it/index.html",
@@ -38575,9 +38681,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/it/app/id6791658210",
       "app_store_cta_label": "Scarica AI Brief sull'App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Leggi la guida completa",
       "publisher_disclosure": "Questo contenuto è pubblicato direttamente da Lumi Studio, lo sviluppatore di tutte le app elencate.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -40310,7 +40420,8 @@
         "アカウント不要",
         "広告なし",
         "追跡なし",
-        "プライベート／端末内"
+        "プライベート／端末内",
+        "App Store · 無料"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/ja/index.html",
@@ -40318,9 +40429,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ja.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/jp/app/id6791658210",
       "app_store_cta_label": "App Store で AI Brief を入手",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料"
+      },
       "guide_cta_label": "完全ガイドを読む",
       "publisher_disclosure": "これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -42047,7 +42162,8 @@
         "ಖಾತೆ ಇಲ್ಲ",
         "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
         "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
-        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
+        "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/kn-IN/index.html",
@@ -42055,9 +42171,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/kn-IN.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/in/app/id6791658210",
       "app_store_cta_label": "App Store ನಲ್ಲಿ AI Brief ಪಡೆಯಿರಿ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ಉಚಿತ"
+      },
       "guide_cta_label": "ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ",
       "publisher_disclosure": "ಇದು ಪಟ್ಟಿಯಲ್ಲಿ ಇರುವ ಪ್ರತಿಯೊಂದು ಆ್ಯಪ್‌ನ ಅಭಿವೃದ್ಧಿಪಡಿಸಿದ Lumi Studio ಅವರಿಂದ ಪ್ರಕಟಿಸಲಾದ ಮೊದಲ-ಪಕ್ಷದ ವಸ್ತು.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -43784,7 +43904,8 @@
         "계정 없음",
         "광고 없음",
         "추적 없음",
-        "프라이빗 / 기기 내"
+        "프라이빗 / 기기 내",
+        "App Store · 무료"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/ko/index.html",
@@ -43792,9 +43913,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/kr/app/id6791658210",
       "app_store_cta_label": "App Store에서 AI Brief 받기",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "KRW",
+        "formatted_price": "무료"
+      },
       "guide_cta_label": "전체 안내서 읽기",
       "publisher_disclosure": "이 자료는 목록에 있는 모든 앱의 개발사 Lumi Studio가 직접 발행한 1차 자료입니다.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -45521,7 +45646,8 @@
         "അക്കൗണ്ട് ഇല്ല",
         "വ്യാപനങ്ങൾ ഇല്ല",
         "ട്രാക്കിംഗ് ഇല്ല",
-        "സ്വകാര്യത / ഉപകരണത്തിൽ"
+        "സ്വകാര്യത / ഉപകരണത്തിൽ",
+        "App Store · സൗജന്യം"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/ml-IN/index.html",
@@ -45529,9 +45655,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ml-IN.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/in/app/id6791658210",
       "app_store_cta_label": "App Store-ൽ നിന്ന് AI Brief നേടൂ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "സൗജന്യം"
+      },
       "guide_cta_label": "പൂർണ്ണ ഗൈഡ് വായിക്കുക",
       "publisher_disclosure": "ഇത് Lumi Studio പ്രസിദ്ധീകരിച്ച ആദ്യകക്ഷി വസ്തുവാണ്, എല്ലാ ലിസ്റ്റുചെയ്ത ആപ്പുകളുടെയും വികസകനാണ്.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -47258,7 +47388,8 @@
         "खाते नाही",
         "जाहिराती नाहीत",
         "ट्रॅकिंग नाही",
-        "खाजगी / उपकरणावर"
+        "खाजगी / उपकरणावर",
+        "App Store · मोफत"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/mr-IN/index.html",
@@ -47266,9 +47397,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/mr-IN.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/in/app/id6791658210",
       "app_store_cta_label": "App Store वरून AI Brief मिळवा",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "मोफत"
+      },
       "guide_cta_label": "संपूर्ण मार्गदर्शक वाचा",
       "publisher_disclosure": "हे Lumi Studio कडून प्रकाशित केलेले प्रथम पक्ष साहित्य आहे, जे प्रत्येक सूचीबद्ध अॅपचे विकसक आहे.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -48995,7 +49130,8 @@
         "Tiada akaun",
         "Tiada iklan",
         "Tiada penjejakan",
-        "Peribadi / pada peranti"
+        "Peribadi / pada peranti",
+        "App Store · Percuma"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/ms/index.html",
@@ -49003,9 +49139,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ms.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/my/app/id6791658210",
       "app_store_cta_label": "Dapatkan AI Brief di App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "MYR",
+        "formatted_price": "Percuma"
+      },
       "guide_cta_label": "Baca panduan penuh",
       "publisher_disclosure": "Bahan ini diterbitkan terus oleh Lumi Studio, pembangun semua aplikasi yang disenaraikan.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -50732,7 +50872,8 @@
         "Geen account",
         "Geen advertenties",
         "Geen tracking",
-        "Privé / op apparaat"
+        "Privé / op apparaat",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/nl-NL/index.html",
@@ -50740,9 +50881,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/nl-NL.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/nl/app/id6791658210",
       "app_store_cta_label": "Download AI Brief in de App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Lees de volledige gids",
       "publisher_disclosure": "Dit is materiaal van de eerste partij, gepubliceerd door Lumi Studio, de ontwikkelaar van elke vermelde app.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -52469,7 +52614,8 @@
         "Ingen konto",
         "Ingen annonser",
         "Ingen sporing",
-        "Privat / på enheten"
+        "Privat / på enheten",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/no/index.html",
@@ -52477,9 +52623,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/no.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/no/app/id6791658210",
       "app_store_cta_label": "Last ned AI Brief fra App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "NOK",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Les hele veiledningen",
       "publisher_disclosure": "Dette er førsteparts materiale publisert av Lumi Studio, utvikleren av hver oppført app.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -54206,7 +54356,8 @@
         "କୌଣସି ଖାତା ନାହିଁ",
         "କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ",
         "କୌଣସି ଟ୍ରାକିଂ ନାହିଁ",
-        "ଗୋପନୀୟ / ଉପକରଣରେ"
+        "ଗୋପନୀୟ / ଉପକରଣରେ",
+        "App Store · ମାଗଣା"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/or-IN/index.html",
@@ -54214,9 +54365,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/or-IN.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/in/app/id6791658210",
       "app_store_cta_label": "App Store ରୁ AI Brief ପାଆନ୍ତୁ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ମାଗଣା"
+      },
       "guide_cta_label": "ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ",
       "publisher_disclosure": "ଏହା Lumi Studio ଦ୍ୱାରା ପ୍ରକାଶିତ ପ୍ରଥମ-ପକ୍ଷ ସାମଗ୍ରୀ, ଯାହାରେ ସମସ୍ତ ତାଲିକାଭୁକ୍ତ ଆପ୍ସର ବିକାଶକ ଅଛନ୍ତି।",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -55943,7 +56098,8 @@
         "ਕੋਈ ਖਾਤਾ ਨਹੀਂ",
         "ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ",
         "ਕੋਈ ਟ੍ਰੈਕਿੰਗ ਨਹੀਂ",
-        "ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ"
+        "ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ",
+        "App Store · ਮੁਫ਼ਤ"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/pa-IN/index.html",
@@ -55951,9 +56107,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pa-IN.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/in/app/id6791658210",
       "app_store_cta_label": "App Store ਤੋਂ AI Brief ਪ੍ਰਾਪਤ ਕਰੋ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ਮੁਫ਼ਤ"
+      },
       "guide_cta_label": "ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ",
       "publisher_disclosure": "ਇਹ Lumi Studio ਵੱਲੋਂ ਪ੍ਰਕਾਸ਼ਿਤ ਪਹਿਲਾ-ਪੱਖ ਸਮੱਗਰੀ ਹੈ, ਜੋ ਹਰ ਦਰਜ ਕੀਤੇ ਐਪ ਦਾ ਡਿਵੈਲਪਰ ਹੈ।",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -57680,7 +57840,8 @@
         "Bez konta",
         "Bez reklam",
         "Bez śledzenia",
-        "Prywatne / na urządzeniu"
+        "Prywatne / na urządzeniu",
+        "App Store · Bezpłatnie"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/pl/index.html",
@@ -57688,9 +57849,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pl.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/pl/app/id6791658210",
       "app_store_cta_label": "Pobierz AI Brief z App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "PLN",
+        "formatted_price": "Bezpłatnie"
+      },
       "guide_cta_label": "Przeczytaj pełny przewodnik",
       "publisher_disclosure": "Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -59417,7 +59582,8 @@
         "Sem conta",
         "Sem anúncios",
         "Sem rastreamento",
-        "Privado / no dispositivo"
+        "Privado / no dispositivo",
+        "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/pt-BR/index.html",
@@ -59425,9 +59591,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pt-BR.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/br/app/id6791658210",
       "app_store_cta_label": "Baixe AI Brief na App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis"
+      },
       "guide_cta_label": "Leia o guia completo",
       "publisher_disclosure": "Este conteúdo é publicado diretamente pela Lumi Studio, desenvolvedora de todos os apps apresentados.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -61157,7 +61327,8 @@
         "Sem conta",
         "Sem anúncios",
         "Sem rastreamento",
-        "Privado / no dispositivo"
+        "Privado / no dispositivo",
+        "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/pt-PT/index.html",
@@ -61165,9 +61336,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pt-PT.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/pt/app/id6791658210",
       "app_store_cta_label": "Baixe AI Brief na App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Grátis"
+      },
       "guide_cta_label": "Leia o guia completo",
       "publisher_disclosure": "Este conteúdo é publicado diretamente pela Lumi Studio, que desenvolve todas as apps apresentadas.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -62894,7 +63069,8 @@
         "Fără cont",
         "Fără reclame",
         "Fără urmărire",
-        "Privat / pe dispozitiv"
+        "Privat / pe dispozitiv",
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/ro/index.html",
@@ -62902,9 +63078,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/ro/app/id6791658210",
       "app_store_cta_label": "Descarcă AI Brief din App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RON",
+        "formatted_price": "Gratuit"
+      },
       "guide_cta_label": "Citește ghidul complet",
       "publisher_disclosure": "Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -64631,7 +64811,8 @@
         "Без учётной записи",
         "Без рекламы",
         "Без отслеживания",
-        "Лично / на устройстве"
+        "Лично / на устройстве",
+        "App Store · Бесплатно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/ru/index.html",
@@ -64639,9 +64820,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ru.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/ru/app/id6791658210",
       "app_store_cta_label": "Установить AI Brief в App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RUB",
+        "formatted_price": "Бесплатно"
+      },
       "guide_cta_label": "Прочитать полное руководство",
       "publisher_disclosure": "Это материал, созданный Lumi Studio, разработчиком всех перечисленных приложений.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -66368,7 +66553,8 @@
         "Bez účtu",
         "Bez reklám",
         "Bez sledovania",
-        "Súkromné / v zariadení"
+        "Súkromné / v zariadení",
+        "App Store · Zadarmo"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/sk/index.html",
@@ -66376,9 +66562,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/sk/app/id6791658210",
       "app_store_cta_label": "Stiahnuť AI Brief v App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Zadarmo"
+      },
       "guide_cta_label": "Prečítať celý sprievodca",
       "publisher_disclosure": "Toto je materiál prvej strany publikovaný Lumi Studio, vývojárom každej uvedenej aplikácie.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -68105,7 +68295,8 @@
         "Brez računa",
         "Brez oglasov",
         "Brez sledenja",
-        "Zasebno / na napravi"
+        "Zasebno / na napravi",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/sl-SI/index.html",
@@ -68113,9 +68304,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sl-SI.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/si/app/id6791658210",
       "app_store_cta_label": "Prenesite AI Brief iz trgovine App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "To je gradivo prve roke, ki ga je objavil Lumi Studio, razvijalec vseh navedenih aplikacij.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -69842,7 +70037,8 @@
         "Inget konto",
         "Inga annonser",
         "Ingen spårning",
-        "Privat / på enheten"
+        "Privat / på enheten",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/sv/index.html",
@@ -69850,9 +70046,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/se/app/id6791658210",
       "app_store_cta_label": "Hämta AI Brief i App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "SEK",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Läs hela guiden",
       "publisher_disclosure": "Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -71585,7 +71785,8 @@
         "கணக்கு இல்லை",
         "விளம்பரங்கள் இல்லை",
         "பின்தொடர்வு இல்லை",
-        "தனியுரிமை / சாதனத்தில்"
+        "தனியுரிமை / சாதனத்தில்",
+        "App Store · இலவசம்"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/ta-IN/index.html",
@@ -71593,9 +71794,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ta-IN.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/in/app/id6791658210",
       "app_store_cta_label": "App Store-இல் AI Brief-ஐப் பெறுங்கள்",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "இலவசம்"
+      },
       "guide_cta_label": "முழு வழிகாட்டியை படிக்கவும்",
       "publisher_disclosure": "இது Lumi Studio வெளியிட்ட முதல்-பார்ட்டி தரவு, இது பட்டியலிடப்பட்ட ஒவ்வொரு செயலியின் உருவாக்குநர்.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -73322,7 +73527,8 @@
         "ఖాతా అవసరం లేదు",
         "ప్రకటనలు లేవు",
         "ట్రాకింగ్ లేదు",
-        "గోప్యంగా / పరికరంలో"
+        "గోప్యంగా / పరికరంలో",
+        "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/te-IN/index.html",
@@ -73330,9 +73536,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/te-IN.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/in/app/id6791658210",
       "app_store_cta_label": "App Store నుంచి AI Brief పొందండి",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ఉచితం"
+      },
       "guide_cta_label": "పూర్తి మార్గదర్శకాన్ని చదవండి",
       "publisher_disclosure": "ఇది Lumi Studio ద్వారా ప్రచురించబడిన స్వంత సంస్థ పదార్థం, ప్రతి జాబితా చేయబడిన యాప్ యొక్క అభివృద్ధికర్త.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -75059,7 +75269,8 @@
         "ไม่มีบัญชี",
         "ไม่มีโฆษณา",
         "ไม่มีการติดตาม",
-        "ส่วนตัว / บนอุปกรณ์"
+        "ส่วนตัว / บนอุปกรณ์",
+        "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/th/index.html",
@@ -75067,9 +75278,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/th.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/th/app/id6791658210",
       "app_store_cta_label": "ดาวน์โหลด AI Brief บน App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี"
+      },
       "guide_cta_label": "อ่านคู่มือฉบับเต็ม",
       "publisher_disclosure": "เนื้อหานี้เผยแพร่โดยตรงจาก Lumi Studio ซึ่งเป็นผู้พัฒนาแอปทั้งหมดที่ระบุไว้",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -76796,7 +77011,8 @@
         "Hesap yok",
         "Reklam yok",
         "Takip yok",
-        "Gizli / cihazda"
+        "Gizli / cihazda",
+        "App Store · Ücretsiz"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/tr/index.html",
@@ -76804,9 +77020,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/tr.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/tr/app/id6791658210",
       "app_store_cta_label": "AI Brief uygulamasını App Store'dan al",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TRY",
+        "formatted_price": "Ücretsiz"
+      },
       "guide_cta_label": "Kılavuzun tamamını oku",
       "publisher_disclosure": "Bu, listelenen her uygulamanın geliştiricisi Lumi Studio tarafından yayımlanan birinci taraf materyaldir.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -78533,7 +78753,8 @@
         "Без облікового запису",
         "Без реклами",
         "Без відстеження",
-        "Приватно / на пристрої"
+        "Приватно / на пристрої",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/uk/index.html",
@@ -78541,9 +78762,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/uk.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/ua/app/id6791658210",
       "app_store_cta_label": "Завантажте AI Brief з App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -80270,7 +80495,8 @@
         "کوئی اکاؤنٹ نہیں",
         "کوئی اشتہار نہیں",
         "کوئی نگرانی نہیں",
-        "نجی / آلہ پر"
+        "نجی / آلہ پر",
+        "App Store · مفت"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/ur-PK/index.html",
@@ -80278,9 +80504,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ur-PK.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/pk/app/id6791658210",
       "app_store_cta_label": "App Store سے AI Brief حاصل کریں",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "PKR",
+        "formatted_price": "مفت"
+      },
       "guide_cta_label": "مکمل رہنمائی پڑھیں",
       "publisher_disclosure": "یہ مواد براہ راست Lumi Studio نے شائع کیا ہے، جو فہرست میں شامل تمام ایپس کا ڈویلپر ہے۔",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -82007,7 +82237,8 @@
         "Không tài khoản",
         "Không quảng cáo",
         "Không theo dõi",
-        "Riêng tư / trên thiết bị"
+        "Riêng tư / trên thiết bị",
+        "App Store · Miễn phí"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/vi/index.html",
@@ -82015,9 +82246,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/vi.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/vn/app/id6791658210",
       "app_store_cta_label": "Tải AI Brief trên App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "VND",
+        "formatted_price": "Miễn phí"
+      },
       "guide_cta_label": "Đọc toàn bộ hướng dẫn",
       "publisher_disclosure": "Tài liệu này do Lumi Studio trực tiếp công bố; Lumi Studio là nhà phát triển của tất cả ứng dụng được liệt kê.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -83744,7 +83979,8 @@
         "无需账户",
         "无广告",
         "无跟踪",
-        "私密 / 设备本地"
+        "私密 / 设备本地",
+        "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/zh-Hans/index.html",
@@ -83752,9 +83988,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hans.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/cn/app/id6791658210",
       "app_store_cta_label": "在 App Store 获取 AI Brief",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -85446,7 +85686,8 @@
         "免帳號",
         "無廣告",
         "無追蹤",
-        "隱私優先／裝置端"
+        "隱私優先／裝置端",
+        "App Store · 免費"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/zh-Hant/index.html",
@@ -85454,9 +85695,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/tw/app/id6791658210",
       "app_store_cta_label": "在 App Store 取得 AI Brief",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費"
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",

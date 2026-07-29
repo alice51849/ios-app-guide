@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "en-AU",
   "dateModified": "2026-07-29",
-  "content_digest": "ce81cb5c54e836e7dbec69752119d8338a4a03b239bf0eed3dfb5aa7b203e5ca",
-  "generation_digest": "1ab27a2a7524338a55f3b9a83b64c879c2759180c92d8c3c5dee63f79626ef3b",
+  "content_digest": "40f1fef3cf0a637dc1010463cbb853b82ebef0ada3346e1cd7fb4321114111af",
+  "generation_digest": "c15e37d2647a1e5ac95e11849810c08843b16111a9b5939e0d87defcbd5318b7",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -191,7 +191,8 @@
         "No account",
         "No ads",
         "No tracking",
-        "Private / on-device"
+        "Private / on-device",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/en-AU/index.html",
@@ -199,9 +200,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/au/app/id6791658210",
       "app_store_cta_label": "Get AI Brief on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "AUD",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",

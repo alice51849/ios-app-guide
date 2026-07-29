@@ -19,8 +19,9 @@ Bolji kontekst. Bolji odgovori. Pretvorite snimke zaslona, datoteke, bilješke i
 - Bez oglasa
 - Bez praćenja
 - Privatno / na uređaju
+- App Store · Besplatno
 
-[Preuzmite AI Brief u App Storeu](https://apps.apple.com/app/id6791658210)
+[Preuzmite AI Brief u App Storeu](https://apps.apple.com/hr/app/id6791658210)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/aibriefpack.html)
 

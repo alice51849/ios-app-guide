@@ -89,7 +89,7 @@ Uygulama adına göre alfabetik — asla bir sıralama değildir.
 
 | Uygulama | Yayıncı sorgusu | Karar bağlamı | Satın alma modeli | Rehber | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — Dosyadan net bağlama \| iOS App | Daha iyi bağlam, daha iyi yanıtlar. | Başlangıçta ücretsiz · ömür boyu açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/aibriefpack.html) | [AI Brief uygulamasını App Store'dan al](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — Dosyadan net bağlama \| iOS App | Daha iyi bağlam, daha iyi yanıtlar. | Başlangıçta ücretsiz · ömür boyu açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/aibriefpack.html) | [AI Brief uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6791658210) |
 | **Aim990** | iPhone için en iyi çevrimdışı TOEIC hazırlık uygulaması çalışma planı | Bölüm 5 kısa görünebilir, ancak tamamlanmamış cümle soruları, dilbilgisi ve kelime bilgisi otomatik değilse zaman kaybettirebilir. | Başlangıçta ücretsiz · ömür boyu açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Aim990’ı App Store’dan edinin →](https://apps.apple.com/tr/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Süre baskısıyla gerçek pratik \| iOS App | Aim990 Plus, sınırlı sürede İngilizce konuşmaları ve metinleri güvenle anlamak isteyen yetişkinler için hazırlanmış bir çalışma aracıdır. Yalnızca soru | Ücretli indirme | [Rehber](https://alice51849.github.io/ios-app-guide/tr/aim990plus.html) | [Aim990 Plus uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6792483140) |
 | **CV Desk** | 2026 için kariyer değiştiricilere en iyi özgeçmiş hazırlama uygulaması | Alan değiştirirken, sorun farklıdır: deneyiminiz gerçek ama kağıt üzerinde 'ilgisiz'dir ve ATS filtreleri insan okumadan önce sizi reddeder — CV Desk bunun için tasarlandı. | Başlangıçta ücretsiz · ömür boyu açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-resume-builder-app-for-career-changers-2026.html) | [CV Desk’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6781337213) |
@@ -134,6 +134,6 @@ JSON, JSONL ve CSV aynı 1.700 kaydı içerir.
 
 [Ana Sayfa](https://alice51849.github.io/ios-app-guide/tr/index.html) · [Açık veri](https://alice51849.github.io/ios-app-guide/tr/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisans](https://creativecommons.org/licenses/by/4.0/)
 
-Güncellendi: 2026-07-29
+Güncellendi: 2026-07-30
 
 CC BY 4.0, orijinal katalog derlemesine uygulanır; uygulama adları ve App Store işaretleri sahiplerine aittir.

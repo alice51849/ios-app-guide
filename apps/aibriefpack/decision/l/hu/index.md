@@ -19,8 +19,9 @@ Jobb kontextus. Jobb válaszok. Alakíts képernyőfotókat, fájlokat, jegyzete
 - Nincs reklám
 - Nincs követés
 - Privát / eszközön tárolt
+- App Store · Ingyenes
 
-[Töltse le a(z) AI Brief appot az App Store-ból](https://apps.apple.com/app/id6791658210)
+[Töltse le a(z) AI Brief appot az App Store-ból](https://apps.apple.com/hu/app/id6791658210)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/aibriefpack.html)
 

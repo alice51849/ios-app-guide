@@ -89,7 +89,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 | App | 開發者查詢 | 決策情境 | 付費模式 | 指南 | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — 把資料整理成清晰脈絡 \| iOS App | 更完整的內容脈絡，更好的回答。 將截圖、檔案、筆記與文件整合成一份可供 AI 使用的清楚摘要。 | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/aibriefpack.html) | [在 App Store 取得 AI Brief](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — 把資料整理成清晰脈絡 \| iOS App | 更完整的內容脈絡，更好的回答。 將截圖、檔案、筆記與文件整合成一份可供 AI 使用的清楚摘要。 | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/aibriefpack.html) | [在 App Store 取得 AI Brief](https://apps.apple.com/tw/app/id6791658210) |
 | **Aim990** | iPhone 最佳 TOEIC 離線準備應用程式學習計畫 | 第 5 部分看似簡短，但不完整句子題目若文法與詞彙不熟練，會耗費大量時間。 | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [在 App Store 取得 Aim990 →](https://apps.apple.com/tw/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — 15分鐘掌握七大題型 \| iOS App | 把零散刷題，整理成真正能承受時間壓力的備考節奏。 | 付費下載 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/aim990plus.html) | [在 App Store 取得 Aim990 Plus](https://apps.apple.com/tw/app/id6792483140) |
 | **CV Desk** | 2026 年最佳職涯轉換者履歷建立應用程式 | 轉換領域時，履歷問題不同：經驗真實但紙本看似「不相關」，ATS 過濾器會在人工審閱前拒絕你 — CV Desk 專為此設計。 | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-resume-builder-app-for-career-changers-2026.html) | [在 App Store 取得 CV Desk →](https://apps.apple.com/tw/app/id6781337213) |
@@ -134,6 +134,6 @@ JSON、JSONL 與 CSV 格式皆包含相同的 1,700 筆紀錄。
 
 [首頁](https://alice51849.github.io/ios-app-guide/zh-Hant/index.html) · [開放資料](https://alice51849.github.io/ios-app-guide/zh-Hant/data/lumi-studio-publisher-search-intent-catalog.html) · [授權條款](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-07-29
+更新日期: 2026-07-30
 
 CC BY 4.0 適用於原始目錄彙編；App 名稱與 App Store 商標分屬其權利人。

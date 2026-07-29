@@ -19,8 +19,9 @@ Better context. Better answers. Transform screenshots, files, notes and document
 - No ads
 - No tracking
 - Private / on-device
+- App Store · Free
 
-[Get AI Brief on the App Store](https://apps.apple.com/app/id6791658210)
+[Get AI Brief on the App Store](https://apps.apple.com/au/app/id6791658210)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-AU/aibriefpack.html)
 

@@ -89,7 +89,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 | செயலி | வெளியீட்டாளர் கேள்வி | முடிவு சூழல் | வாங்கும் முறை | வழிகாட்டி | App Store |
 | --- | --- | --- | --- | --- | --- |
-| **AI Brief** | AI Brief — கோப்பிலிருந்து தெளிவான சூழல் \| iOS App | சிறந்த சூழல், சிறந்த பதில்கள். | இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும் | [வழிகாட்டி](https://alice51849.github.io/ios-app-guide/ta-IN/aibriefpack.html) | [App Store-இல் AI Brief-ஐப் பெறுங்கள்](https://apps.apple.com/app/id6791658210) |
+| **AI Brief** | AI Brief — கோப்பிலிருந்து தெளிவான சூழல் \| iOS App | சிறந்த சூழல், சிறந்த பதில்கள். | இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும் | [வழிகாட்டி](https://alice51849.github.io/ios-app-guide/ta-IN/aibriefpack.html) | [App Store-இல் AI Brief-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6791658210) |
 | **Aim990** | iPhone க்கான சிறந்த TOEIC தயாரிப்பு செயலி ஆஃப்லைன் படிப்பு திட்டம் | பகுதி 5 குறுகியதாக தோன்றினாலும், அந்த முழுமையற்ற வாக்கியக் கேள்விகள் இலக்கணம் மற்றும் சொற்பொருள் தானாக இல்லாவிட்டால் நேரத்தை இழக்கச் செய்யும். | இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும் | [வழிகாட்டி](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [App Store இல் Aim990 ஐ பெறவும் →](https://apps.apple.com/in/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — ஆங்கில திறன் சவால் \| iOS App | Aim990 Plus என்பது பெரியவர்கள் தங்கள் ஆங்கிலக் கேட்புத் திறன், வாசிப்புத் திறன், நேர மேலாண்மை ஆகியவற்றை ஒருமுகமாக வளர்க்க உருவாக்கப்பட்ட அழுத்தப் பயிற்சி | பணம் செலுத்தி பதிவிறக்கவும் | [வழிகாட்டி](https://alice51849.github.io/ios-app-guide/ta-IN/aim990plus.html) | [App Store-இல் Aim990 Plus-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6792483140) |
 | **CV டெஸ்க்** | 2026 க்கான சிறந்த ரெசுமே உருவாக்கும் செயலி தொழில் மாற்றுவோருக்கு | நீங்கள் துறைகளை மாற்றும்போது, ரெசுமே பிரச்சனை வேறுபடுகிறது: உங்கள் அனுபவம் உண்மையானது ஆனால் 'பொருந்தாதது' என்று காகிதத்தில் உள்ளது, மற்றும் ATS வடிகட்டி உங்களை மனிதர் படிப்பதற்கு முன் நிராகரிக்கிறது — CV டெஸ்க் இதற்காக உருவாக்கப்பட்டுள்ளது. | இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும் | [வழிகாட்டி](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-resume-builder-app-for-career-changers-2026.html) | [App Store இல் CV டெஸ்க் ஐ பெறவும் →](https://apps.apple.com/in/app/id6781337213) |
@@ -134,6 +134,6 @@ JSON, JSONL மற்றும் CSV ஆகியவை ஒரே 1,700 பத�
 
 [முகப்பு](https://alice51849.github.io/ios-app-guide/ta-IN/index.html) · [திறந்த தரவு](https://alice51849.github.io/ios-app-guide/ta-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [அனுமதி](https://creativecommons.org/licenses/by/4.0/)
 
-புதுப்பிக்கப்பட்டது: 2026-07-29
+புதுப்பிக்கப்பட்டது: 2026-07-30
 
 CC BY 4.0 அசல் அட்டவணை தொகுப்பிற்கு பொருந்தும்; செயலி பெயர்கள் மற்றும் App Store குறியீடுகள் உரிமையாளர்களுக்கு சொந்தமானவை.

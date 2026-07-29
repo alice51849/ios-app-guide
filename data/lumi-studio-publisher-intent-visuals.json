@@ -2,7 +2,7 @@
   "name": "Lumi Studio Publisher Intent Visuals",
   "description": "Localized first-party visual buyer-intent cards for every verified live iOS app.",
   "url": "https://alice51849.github.io/ios-app-guide/visuals/",
-  "dateModified": "2026-07-28",
+  "dateModified": "2026-07-29",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -10,12 +10,12 @@
     "url": "https://alice51849.github.io/ios-app-guide"
   },
   "source_dataset": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-  "content_digest": "4069dcc7f33e8182e118fcf6e7931d3ce996b66267c0062120454685e0c14011",
-  "generation_digest": "4ffd522b00121102e1860d88efbaaf6f0660dd3decc62f914a19ee07e6a536a4",
+  "content_digest": "b675f34718a70e4a7ad756fe17c17271b4d0f49557a2e55b35cbb0643c96a511",
+  "generation_digest": "939e3c9d11ea91d1fd4835673b45236b1e232eef5a338f1293ca536dbe9f933d",
   "ordering": "official_locale_order_then_alphabetical_app_name",
-  "app_count": 33,
+  "app_count": 34,
   "locale_count": 50,
-  "image_count": 1650,
+  "image_count": 1700,
   "gallery_count": 51,
   "publisher_authored": true,
   "measured_search_volume": false,
@@ -29,6 +29,16 @@
     ]
   },
   "records": [
+    {
+      "locale": "ar-SA",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ar-SA/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ar-SA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "2f38a5aba88985d3c8990bb2e3cab68033e9fac314547442c8108184e5a08046"
+    },
     {
       "locale": "ar-SA",
       "app_key": "aim990",
@@ -358,6 +368,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/sa/app/id6789917808",
       "sha256": "18c6249bf1249a0d4ccbeee438a5be4a130653e18b2d8935e896b86d60c288fa"
+    },
+    {
+      "locale": "bn-BD",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/bn-BD/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/bn-BD/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "b8f346c9e394e9879599e6d0c895a25effda60b663b6570cb739495224261678"
     },
     {
       "locale": "bn-BD",
@@ -691,6 +711,16 @@
     },
     {
       "locale": "ca",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ca/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ca/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "f6a3995d8775e4b20b7c4dd19d0bd280ee669eea403a7d21ae7bfdf3b2ff654a"
+    },
+    {
+      "locale": "ca",
       "app_key": "aim990",
       "app_store_id": "6784974530",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ca/aim990.svg",
@@ -1018,6 +1048,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/es/app/id6789917808",
       "sha256": "7141014ab8a8ccb08168af0c541a9e088113d7b0f4e5638c3007e555bf64171e"
+    },
+    {
+      "locale": "cs",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/cs/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/cs/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "b57352d8f8ac9c82d35517a3b5dbfaf72298fe9d2165c8a4f24d383f9d892f5a"
     },
     {
       "locale": "cs",
@@ -1351,6 +1391,16 @@
     },
     {
       "locale": "da",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/da/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/da/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "3e775970b50b1fa82847df038b05b4a4d0e94a29698d9609768018cfbc9e3f66"
+    },
+    {
+      "locale": "da",
       "app_key": "aim990",
       "app_store_id": "6784974530",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/da/aim990.svg",
@@ -1678,6 +1728,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/dk/app/id6789917808",
       "sha256": "f53178b439890e605422a33f3f39316126542e2b11e7d1009bc7d7dfa46acfe5"
+    },
+    {
+      "locale": "de-DE",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/de-DE/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/de-DE/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "d0a8329de5fff363fa0280ca16530c78c59f85d577cf68c910798ec2fb6a24a4"
     },
     {
       "locale": "de-DE",
@@ -2011,6 +2071,16 @@
     },
     {
       "locale": "el",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/el/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/el/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "161e51c95d1d66844b5d73f1a61c2b475e48e1b0aa37b6e35f18683ee5415fe2"
+    },
+    {
+      "locale": "el",
       "app_key": "aim990",
       "app_store_id": "6784974530",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/el/aim990.svg",
@@ -2338,6 +2408,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/gr/app/id6789917808",
       "sha256": "cd8d55c4a39446aec84faaf1fdc97b37ff96862e498a9bdb6aae9c363adf41b7"
+    },
+    {
+      "locale": "en-AU",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-AU/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-AU/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "6250be33da2241c062bdf04cc1a28ed0e745025b3a2a40a9baba73e7e7fec383"
     },
     {
       "locale": "en-AU",
@@ -2671,6 +2751,16 @@
     },
     {
       "locale": "en-CA",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-CA/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-CA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "fcd21fdc70760f40f7600203e1ab602363f9ce12b7d902a6f2686376811112cb"
+    },
+    {
+      "locale": "en-CA",
       "app_key": "aim990",
       "app_store_id": "6784974530",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-CA/aim990.svg",
@@ -2998,6 +3088,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6789917808",
       "sha256": "c18f960fc3377af00bc6555a2e73e752794c5256681435207ef782676a8e14af"
+    },
+    {
+      "locale": "en-GB",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-GB/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-GB/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "fa5803b651985988f9d02b7c658edf84bb59994c90a880d20549cddd4243a670"
     },
     {
       "locale": "en-GB",
@@ -3331,6 +3431,16 @@
     },
     {
       "locale": "en-US",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-US/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-US/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "6f085a6f1f0b863b8d135c0ddaf86944827e4c5223f9885fd3cf06765f60ef86"
+    },
+    {
+      "locale": "en-US",
       "app_key": "aim990",
       "app_store_id": "6784974530",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-US/aim990.svg",
@@ -3658,6 +3768,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/us/app/id6789917808",
       "sha256": "c942bbcc135134768bf1be9159ed5051ffdbdc83471a9dda402028ff4b1c485e"
+    },
+    {
+      "locale": "es-ES",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-ES/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-ES/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "2b30057ddaef0c07d18aaf7e66756be52a675a0d03345079caab4561d2150fd8"
     },
     {
       "locale": "es-ES",
@@ -3991,6 +4111,16 @@
     },
     {
       "locale": "es-MX",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-MX/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-MX/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "0cf26e2d99f627ec4b5b3fb2a3ebbfb5c08a48c8b4f261194062ac4d7e8ad204"
+    },
+    {
+      "locale": "es-MX",
       "app_key": "aim990",
       "app_store_id": "6784974530",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-MX/aim990.svg",
@@ -4318,6 +4448,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/mx/app/id6789917808",
       "sha256": "d62e2b3df24208e71c04135f50793877828848babf38b83fa854accdf39ee0b2"
+    },
+    {
+      "locale": "fi",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fi/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "7b47cd77af5051de09b1465a53368d7792d2c4f79bb6aca8ac49bef0a7e524c0"
     },
     {
       "locale": "fi",
@@ -4651,6 +4791,16 @@
     },
     {
       "locale": "fr-CA",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-CA/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-CA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "e52c167cb3c3f696beaf888b289118633c0704b8620cf6fdfc8dfa30dc5c1837"
+    },
+    {
+      "locale": "fr-CA",
       "app_key": "aim990",
       "app_store_id": "6784974530",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-CA/aim990.svg",
@@ -4978,6 +5128,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6789917808",
       "sha256": "eae866041975d23cb9ed1c77513fbe1b9f5c6cc756dbba7d7cc19c966b16a801"
+    },
+    {
+      "locale": "fr-FR",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-FR/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-FR/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "101daeb4088eb121656b6c625b4e5ee83236bf87a4d5a3641981cbbc5322f679"
     },
     {
       "locale": "fr-FR",
@@ -5311,6 +5471,16 @@
     },
     {
       "locale": "gu-IN",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/gu-IN/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/gu-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "27ce9a66cfc532187fa2fd4e4f660048d723cc55504799142a31fd40046cec3a"
+    },
+    {
+      "locale": "gu-IN",
       "app_key": "aim990",
       "app_store_id": "6784974530",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/gu-IN/aim990.svg",
@@ -5638,6 +5808,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/in/app/id6789917808",
       "sha256": "46314d03b21fb1106231dc3fae5ffd11ccdde1112ccfdbc29256f7a33a72755b"
+    },
+    {
+      "locale": "he",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/he/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/he/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "e97ccb747e066482c218c37f201fb414b3b1ec1744ba9e7458fff1d75f2710a1"
     },
     {
       "locale": "he",
@@ -5971,6 +6151,16 @@
     },
     {
       "locale": "hi",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hi/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "ede2c3c35f898cbdf66b3a84ab5409233b26a80600761faf8cd3bdf27059b58d"
+    },
+    {
+      "locale": "hi",
       "app_key": "aim990",
       "app_store_id": "6784974530",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hi/aim990.svg",
@@ -6298,6 +6488,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/in/app/id6789917808",
       "sha256": "077f6d0e6d1c3050209f65f09003d35a0116444e5dc83a885c2a8bd6f14b2a64"
+    },
+    {
+      "locale": "hr",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hr/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hr/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "00a96aa76d16d90c5b8d0db45338834933685dc09caa7eb5120f57205558c9d4"
     },
     {
       "locale": "hr",
@@ -6631,6 +6831,16 @@
     },
     {
       "locale": "hu",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hu/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hu/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "90f03b3e11d7d648a14ea4ddb3723accb55a3c7481a6b141b5f0bac2825da579"
+    },
+    {
+      "locale": "hu",
       "app_key": "aim990",
       "app_store_id": "6784974530",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hu/aim990.svg",
@@ -6958,6 +7168,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/hu/app/id6789917808",
       "sha256": "4b2c908d70776b22dc7f72848a2c63ed1066e4f01cfd2f701bc91786df519882"
+    },
+    {
+      "locale": "id",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/id/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/id/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "e5d6eaff2947e2a6deee4c7c5be478c7b38528deedfbbef82159d16a665a03f9"
     },
     {
       "locale": "id",
@@ -7291,6 +7511,16 @@
     },
     {
       "locale": "it",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/it/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/it/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "cd3bd1d45292a583125a59a1135f0d72e096040507469ab7e1d6ca8c6aad8272"
+    },
+    {
+      "locale": "it",
       "app_key": "aim990",
       "app_store_id": "6784974530",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/it/aim990.svg",
@@ -7618,6 +7848,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/it/app/id6789917808",
       "sha256": "aea384a552a813d1f285e2b18b7ade57c75cd607f2d266c629b38f00d0a7ce54"
+    },
+    {
+      "locale": "ja",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ja/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ja/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "3fd61909e5295ae1db5a15b30cfeb0113bdbc7bb2fe8e0d8ea9f26b68b91c008"
     },
     {
       "locale": "ja",
@@ -7951,6 +8191,16 @@
     },
     {
       "locale": "kn-IN",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/kn-IN/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/kn-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "476fe0ec55f46ca116b8a4429508a5119a3a2e7ad4c827e6c2f9eefd48acd2af"
+    },
+    {
+      "locale": "kn-IN",
       "app_key": "aim990",
       "app_store_id": "6784974530",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/kn-IN/aim990.svg",
@@ -8278,6 +8528,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/in/app/id6789917808",
       "sha256": "8ddffcdc82384dc3bde4640e764864f41b84a962f3ea3b4d29af0709196bc445"
+    },
+    {
+      "locale": "ko",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ko/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "9ad61870d7add9ea23ba92c458535cdbfdae838fc3b3203c4506d5380cb1ccff"
     },
     {
       "locale": "ko",
@@ -8611,6 +8871,16 @@
     },
     {
       "locale": "ml-IN",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ml-IN/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ml-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "e7c4a59013d44e70053f2fda298e62ffd036569ffc064d179fedf00750bf93ca"
+    },
+    {
+      "locale": "ml-IN",
       "app_key": "aim990",
       "app_store_id": "6784974530",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ml-IN/aim990.svg",
@@ -8938,6 +9208,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/in/app/id6789917808",
       "sha256": "fa0404c13871acf5d962fc808d95d831e79c014df83f9d4cefa2af848dfc534b"
+    },
+    {
+      "locale": "mr-IN",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/mr-IN/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/mr-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "e6897d87e461582d10ca284e83c93d58314f55e96be1cf435243170dc43e064d"
     },
     {
       "locale": "mr-IN",
@@ -9271,6 +9551,16 @@
     },
     {
       "locale": "ms",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ms/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ms/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "72daf3e38365c34c85ba08802c4155596acd863375978f06a564e691e1479c45"
+    },
+    {
+      "locale": "ms",
       "app_key": "aim990",
       "app_store_id": "6784974530",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ms/aim990.svg",
@@ -9598,6 +9888,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/my/app/id6789917808",
       "sha256": "20eda25962c0f800b36adb8e152c8a445112b5852c03cabac57cebd5730b186d"
+    },
+    {
+      "locale": "nl-NL",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/nl-NL/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/nl-NL/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "3bbd202c7159b8872e23a434ef272674c6289e26484ba1a1b91af5f2d894b6a1"
     },
     {
       "locale": "nl-NL",
@@ -9931,6 +10231,16 @@
     },
     {
       "locale": "no",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/no/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/no/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "d43569005378cfe59539ced38abde905e58cad4a51f3d77d979c48422a72aad9"
+    },
+    {
+      "locale": "no",
       "app_key": "aim990",
       "app_store_id": "6784974530",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/no/aim990.svg",
@@ -10258,6 +10568,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/no/app/id6789917808",
       "sha256": "8640ff6e8d2785cc75d82677725d74e072bc371b8721b4a916c48e5b407e75c8"
+    },
+    {
+      "locale": "or-IN",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/or-IN/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/or-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "dac129d6e01d6cdf9b6f9fd9e88ae0b6a71e40198b9b6982ad6f2674910a4d1b"
     },
     {
       "locale": "or-IN",
@@ -10591,6 +10911,16 @@
     },
     {
       "locale": "pa-IN",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pa-IN/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pa-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "5947f3e0ecf5911c35a854d8887014ef6c6606f8a9d122c46da831d285a8ea1d"
+    },
+    {
+      "locale": "pa-IN",
       "app_key": "aim990",
       "app_store_id": "6784974530",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pa-IN/aim990.svg",
@@ -10918,6 +11248,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/in/app/id6789917808",
       "sha256": "eacb671c08a28581d1f20705ac45b97c3ef2fedc0f73cfb3855f6626244ae31b"
+    },
+    {
+      "locale": "pl",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pl/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pl/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "41d4b41fc8a84ab7673d909b245ef3f5b3b12b3df611449c2319e9cd7998be56"
     },
     {
       "locale": "pl",
@@ -11251,6 +11591,16 @@
     },
     {
       "locale": "pt-BR",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-BR/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-BR/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "5c84274431f0eac1862a0a69783b72cca8c07aed515c24804eb1799895807ed0"
+    },
+    {
+      "locale": "pt-BR",
       "app_key": "aim990",
       "app_store_id": "6784974530",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-BR/aim990.svg",
@@ -11578,6 +11928,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/br/app/id6789917808",
       "sha256": "f6edb0c7578826e0acbdbb6deb4c6d8301b2354faccb8503bd5422c9374f2bcc"
+    },
+    {
+      "locale": "pt-PT",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-PT/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-PT/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "0b6f22335c4328a051155b725efb46a7660aae0e0e27a9ceb55036d99050d003"
     },
     {
       "locale": "pt-PT",
@@ -11911,6 +12271,16 @@
     },
     {
       "locale": "ro",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ro/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ro/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "f3ab5dc86f2dd2a767fda9fa98d24f938f89cf33ddcd54f5f1c714287545ba58"
+    },
+    {
+      "locale": "ro",
       "app_key": "aim990",
       "app_store_id": "6784974530",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ro/aim990.svg",
@@ -12238,6 +12608,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/ro/app/id6789917808",
       "sha256": "a12bd68431d438d0dbe9f8034b7cfab96b558c19af04f37930116d5b7943b3f6"
+    },
+    {
+      "locale": "ru",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ru/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ru/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "588607e7c7f4c79fb5d5000bfcfb8b704ccf18ba3f17dc30874a37b5a2c41481"
     },
     {
       "locale": "ru",
@@ -12571,6 +12951,16 @@
     },
     {
       "locale": "sk",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sk/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sk/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "4e279ee9447e0ed232d9029b32742c7de64e684ab76f7cac9f28e382464288fe"
+    },
+    {
+      "locale": "sk",
       "app_key": "aim990",
       "app_store_id": "6784974530",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sk/aim990.svg",
@@ -12898,6 +13288,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/sk/app/id6789917808",
       "sha256": "1aca55f9ca82395610a5089b5848bbcd37ae49f966188d62e6067a5f9633d714"
+    },
+    {
+      "locale": "sl-SI",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sl-SI/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sl-SI/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "374acbeb4ca334682753e1ad34e88357480c387cd9c301d5fe7ccecfe58093ea"
     },
     {
       "locale": "sl-SI",
@@ -13231,6 +13631,16 @@
     },
     {
       "locale": "sv",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sv/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sv/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "62a984d53186365ba69c06acf578709147adf8bd482a8b28b86dec3cba8f0417"
+    },
+    {
+      "locale": "sv",
       "app_key": "aim990",
       "app_store_id": "6784974530",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sv/aim990.svg",
@@ -13558,6 +13968,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/se/app/id6789917808",
       "sha256": "b528c269c3c8383e0bc9957969658417c191ec8edd0afd9b3658da1db4d99d90"
+    },
+    {
+      "locale": "ta-IN",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ta-IN/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ta-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "ff9506714e9cd368a2e3636ac4cec7723174592a79c33c7842260af7b7a03565"
     },
     {
       "locale": "ta-IN",
@@ -13891,6 +14311,16 @@
     },
     {
       "locale": "te-IN",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/te-IN/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/te-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "36f4bcfe4565ee168b11c2a287632705a58f98c1e22fb4e075545d9a548902a4"
+    },
+    {
+      "locale": "te-IN",
       "app_key": "aim990",
       "app_store_id": "6784974530",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/te-IN/aim990.svg",
@@ -14218,6 +14648,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/in/app/id6789917808",
       "sha256": "420d236956f64e3952e72ee0142e3071024605e982800d1823e5d93f054ba66d"
+    },
+    {
+      "locale": "th",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/th/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/th/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "7f5991df14a13ecc95ca9f2cc99ab877cc9bf456919bff5e7d9b71fed3263c95"
     },
     {
       "locale": "th",
@@ -14551,6 +14991,16 @@
     },
     {
       "locale": "tr",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/tr/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/tr/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "dd4f4b35165aee98f084961c0947710e8f8140532ed1d49ff33e07deb1b3e6f6"
+    },
+    {
+      "locale": "tr",
       "app_key": "aim990",
       "app_store_id": "6784974530",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/tr/aim990.svg",
@@ -14878,6 +15328,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/tr/app/id6789917808",
       "sha256": "6daf91628836bb7418deea8bb1708ba660fdbea347bd9c3eaaac88968a5da4d7"
+    },
+    {
+      "locale": "uk",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/uk/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/uk/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "cc0b2d047e0c4eb0a51692fc0512a3eb0565322031d7d4d70d471e398336e98d"
     },
     {
       "locale": "uk",
@@ -15211,6 +15671,16 @@
     },
     {
       "locale": "ur-PK",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ur-PK/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ur-PK/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "a436fa783da27c6a5c40ea33d0ca558016d71f17e5715604362a913046c53c2d"
+    },
+    {
+      "locale": "ur-PK",
       "app_key": "aim990",
       "app_store_id": "6784974530",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ur-PK/aim990.svg",
@@ -15538,6 +16008,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/pk/app/id6789917808",
       "sha256": "25049d15dd4decb1dc0b7d709cc1e6ab6c485c521841971fd81b87fbce1b63ec"
+    },
+    {
+      "locale": "vi",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/vi/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/vi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "21556a3404acd4439a3692e79d9ed30003ee1d383ac3031a0ac846a7575906fa"
     },
     {
       "locale": "vi",
@@ -15871,6 +16351,16 @@
     },
     {
       "locale": "zh-Hans",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hans/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "4fbb530b771f6a3145adab6795a150910a2a96db8c1d2a37e35a87fb40af16af"
+    },
+    {
+      "locale": "zh-Hans",
       "app_key": "aim990",
       "app_store_id": "6784974530",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hans/aim990.svg",
@@ -16198,6 +16688,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/cn/app/id6789917808",
       "sha256": "fd17812b6a6ca3958ba17474ae3f03df24c5c910d7b722bed4ce70892d311a2d"
+    },
+    {
+      "locale": "zh-Hant",
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hant/aibriefpack.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/aibriefpack.html",
+      "app_store_url": "https://apps.apple.com/app/id6791658210",
+      "sha256": "855bb0a486655a3b72a87c861503a5ea9dae4fca65744afcc20b640a15f106e8"
     },
     {
       "locale": "zh-Hant",

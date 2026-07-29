@@ -4,7 +4,7 @@
 
 En førsteparts katalog over hvem hver app er laget for, oppgaven de prøver å fullføre, og den direkte App Store-stien.
 
-Utgiver-skapte søkeintensjoner på tvers av 33 verifiserte aktive iOS-apper og 50 Apple-lokaler.
+Utgiver-skapte søkeintensjoner på tvers av 34 verifiserte aktive iOS-apper og 50 Apple-lokaler.
 
 **Lokale:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · **no** · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -89,6 +89,7 @@ Alfabetisk etter appnavn — aldri en rangering.
 
 | App | Utgiver-spørring | Beslutningskontekst | Kjøpsmodell | Guide | App Store |
 | --- | --- | --- | --- | --- | --- |
+| **AI Brief** | AI Brief — Filer til tydelig kontekst \| iOS App | Bedre kontekst. Bedre svar. | Gratis å starte · livstidsopplåsing | [Guide](https://alice51849.github.io/ios-app-guide/no/aibriefpack.html) | [Last ned AI Brief fra App Store](https://apps.apple.com/app/id6791658210) |
 | **Aim990** | beste TOEIC-forberedelsesapp offline studieplan for iPhone | Del 5 virker kort, men spørsmål med ufullstendige setninger kan ta tid hvis grammatikk og ordforråd ikke sitter automatisk. | Gratis å starte · livstidsopplåsing | [Guide](https://alice51849.github.io/ios-app-guide/no/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Få Aim990 i App Store →](https://apps.apple.com/no/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Engelsk trening under press \| iOS App | Aim990 Plus er et komplett treningsverktøy for voksne som vil forstå lest og muntlig engelsk også når tiden er knapp. Dagens tydelige løype starter med 8 | Betalt nedlasting | [Guide](https://alice51849.github.io/ios-app-guide/no/aim990plus.html) | [Last ned Aim990 Plus fra App Store](https://apps.apple.com/no/app/id6792483140) |
 | **CV Desk** | beste CV-byggerapp for karrierebytter 2026 | Når du bytter felt, er CV-problemet annerledes: erfaringen din er ekte, men 'irrelevant' på papiret, og ATS-filtre avviser deg før et menneske leser den — CV Desk er laget for dette. | Gratis å starte · livstidsopplåsing | [Guide](https://alice51849.github.io/ios-app-guide/no/answers/best-resume-builder-app-for-career-changers-2026.html) | [Få CV Desk i App Store →](https://apps.apple.com/no/app/id6781337213) |
@@ -125,7 +126,7 @@ Alfabetisk etter appnavn — aldri en rangering.
 
 ## Last ned hele datasettet
 
-JSON, JSONL og CSV inneholder de samme 1 650 postene.
+JSON, JSONL og CSV inneholder de samme 1 700 postene.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -133,6 +134,6 @@ JSON, JSONL og CSV inneholder de samme 1 650 postene.
 
 [Hjem](https://alice51849.github.io/ios-app-guide/no/index.html) · [Åpne data](https://alice51849.github.io/ios-app-guide/no/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisens](https://creativecommons.org/licenses/by/4.0/)
 
-Oppdatert: 2026-07-28
+Oppdatert: 2026-07-29
 
 CC BY 4.0 gjelder for den opprinnelige katalogsammensetningen; appnavn og App Store-merker tilhører sine eiere.

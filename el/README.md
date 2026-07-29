@@ -4,7 +4,7 @@
 
 Ένας πρωτογενής κατάλογος που δείχνει για ποιον προορίζεται κάθε εφαρμογή, το έργο που προσπαθεί να ολοκληρώσει και την άμεση διαδρομή στο App Store.
 
-Προθέσεις αναζήτησης που έχουν συνταχθεί από τον εκδότη για 33 επαληθευμένες ενεργές εφαρμογές iOS και 50 Apple τοπικές γλώσσες.
+Προθέσεις αναζήτησης που έχουν συνταχθεί από τον εκδότη για 34 επαληθευμένες ενεργές εφαρμογές iOS και 50 Apple τοπικές γλώσσες.
 
 **Τοπική γλώσσα:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · **el** · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -89,6 +89,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 | Εφαρμογή | Ερώτηση εκδότη | Πλαίσιο απόφασης | Μοντέλο αγοράς | Οδηγός | App Store |
 | --- | --- | --- | --- | --- | --- |
+| **AI Brief** | AI Brief — Αρχεία σε σαφές πλαίσιο \| iOS App | Καλύτερο πλαίσιο. Καλύτερες απαντήσεις. | Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/aibriefpack.html) | [Αποκτήστε το AI Brief από το App Store](https://apps.apple.com/app/id6791658210) |
 | **Aim990** | η καλύτερη εφαρμογή προετοιμασίας TOEIC με πρόγραμμα μελέτης εκτός σύνδεσης για iPhone | Το Μέρος 5 φαίνεται σύντομο, αλλά οι ερωτήσεις με ελλιπείς προτάσεις μπορούν να καταναλώσουν χρόνο αν η γραμματική και το λεξιλόγιο δεν είναι αυτόματα. | Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Κατεβάστε το Aim990 από το App Store →](https://apps.apple.com/gr/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Εξάσκηση με χρονόμετρο \| iOS App | Το Aim990 Plus είναι ένα εργαλείο εξάσκησης για ενήλικες που θέλουν να κατανοούν με σιγουριά τον προφορικό και γραπτό αγγλικό λόγο όταν ο χρόνος είναι | Λήψη με χρέωση | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/aim990plus.html) | [Αποκτήστε το Aim990 Plus από το App Store](https://apps.apple.com/gr/app/id6792483140) |
 | **CV Desk** | η καλύτερη εφαρμογή δημιουργίας βιογραφικού για αλλαγή καριέρας 2026 | Όταν αλλάζετε πεδίο, το πρόβλημα με το βιογραφικό είναι διαφορετικό: η εμπειρία σας είναι πραγματική αλλά «άσχετη» στο χαρτί, και τα φίλτρα ATS σας απορρίπτουν πριν το διαβάσει άνθρωπος — το CV Desk είναι φτιαγμένο γι’ αυτό. | Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/answers/best-resume-builder-app-for-career-changers-2026.html) | [Κατεβάστε το CV Desk από το App Store →](https://apps.apple.com/gr/app/id6781337213) |
@@ -125,7 +126,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## Κατεβάστε το πλήρες σύνολο δεδομένων
 
-Τα αρχεία JSON, JSONL και CSV περιέχουν τις ίδιες 1.650 εγγραφές.
+Τα αρχεία JSON, JSONL και CSV περιέχουν τις ίδιες 1.700 εγγραφές.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -133,6 +134,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [Αρχική](https://alice51849.github.io/ios-app-guide/el/index.html) · [Ανοιχτά δεδομένα](https://alice51849.github.io/ios-app-guide/el/data/lumi-studio-publisher-search-intent-catalog.html) · [Άδεια](https://creativecommons.org/licenses/by/4.0/)
 
-Ενημερώθηκε: 2026-07-28
+Ενημερώθηκε: 2026-07-29
 
 Η άδεια CC BY 4.0 ισχύει για τη σύνθεση του αρχικού καταλόγου· τα ονόματα εφαρμογών και τα σήματα του App Store ανήκουν στους ιδιοκτήτες τους.

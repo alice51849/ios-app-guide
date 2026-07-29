@@ -7,12 +7,70 @@
   "description": "ପ୍ରତ୍ୟେକ ଆପ୍ କାହା ପାଇଁ ଡିଜାଇନ୍ କରାଯାଇଛି, ସେମାନେ କେଉଁ କାର୍ଯ୍ୟ ସମ୍ପୂର୍ଣ୍ଣ କରିବାକୁ ଚେଷ୍ଟା କରୁଛନ୍ତି, ଏବଂ ସିଧା App Store ପଥର ପ୍ରଥମ-ପକ୍ଷ ସୂଚୀ।",
   "inLanguage": "or-IN",
   "dateModified": "2026-07-29",
-  "numberOfItems": 33,
+  "numberOfItems": 34,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
       "@type": "ListItem",
       "position": 1,
+      "url": "https://apps.apple.com/app/id6791658210",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/or-IN.jsonld#offer-aibriefpack",
+        "url": "https://apps.apple.com/app/id6791658210",
+        "name": "AI Brief",
+        "description": "ଉନ୍ନତ ପ୍ରସଙ୍ଗ। ଉନ୍ନତ ଉତ୍ତର।",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6791658210",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6791658210"
+          },
+          "name": "AI Brief",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/app/id6791658210",
+          "installUrl": "https://apps.apple.com/app/id6791658210",
+          "downloadUrl": "https://apps.apple.com/app/id6791658210",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/app/id6791658210"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/or-IN/aibriefpack.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6791658210",
+          "inLanguage": "or-IN",
+          "description": "ଉନ୍ନତ ପ୍ରସଙ୍ଗ। ଉନ୍ନତ ଉତ୍ତର।",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/or-IN.jsonld#offer-aibriefpack"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
       "url": "https://apps.apple.com/in/app/id6784974530",
       "item": {
         "@type": "Offer",
@@ -78,7 +136,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 2,
+      "position": 3,
       "url": "https://apps.apple.com/in/app/id6792483140",
       "item": {
         "@type": "Offer",
@@ -144,7 +202,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 3,
+      "position": 4,
       "url": "https://apps.apple.com/in/app/id6781337213",
       "item": {
         "@type": "Offer",
@@ -210,7 +268,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 4,
+      "position": 5,
       "url": "https://apps.apple.com/in/app/id6782251621",
       "item": {
         "@type": "Offer",
@@ -276,7 +334,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 5,
+      "position": 6,
       "url": "https://apps.apple.com/in/app/id6790418321",
       "item": {
         "@type": "Offer",
@@ -342,7 +400,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 6,
+      "position": 7,
       "url": "https://apps.apple.com/in/app/id6755782939",
       "item": {
         "@type": "Offer",
@@ -408,7 +466,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 7,
+      "position": 8,
       "url": "https://apps.apple.com/in/app/id6754218117",
       "item": {
         "@type": "Offer",
@@ -474,7 +532,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 8,
+      "position": 9,
       "url": "https://apps.apple.com/in/app/id6794039979",
       "item": {
         "@type": "Offer",
@@ -540,7 +598,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 9,
+      "position": 10,
       "url": "https://apps.apple.com/in/app/id6780107485",
       "item": {
         "@type": "Offer",
@@ -606,7 +664,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 10,
+      "position": 11,
       "url": "https://apps.apple.com/in/app/id6773017109",
       "item": {
         "@type": "Offer",
@@ -672,7 +730,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 11,
+      "position": 12,
       "url": "https://apps.apple.com/in/app/id6775773117",
       "item": {
         "@type": "Offer",
@@ -738,7 +796,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 12,
+      "position": 13,
       "url": "https://apps.apple.com/in/app/id6778748533",
       "item": {
         "@type": "Offer",
@@ -804,7 +862,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 13,
+      "position": 14,
       "url": "https://apps.apple.com/in/app/id6778491147",
       "item": {
         "@type": "Offer",
@@ -870,7 +928,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 14,
+      "position": 15,
       "url": "https://apps.apple.com/in/app/id6778269699",
       "item": {
         "@type": "Offer",
@@ -936,7 +994,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 15,
+      "position": 16,
       "url": "https://apps.apple.com/in/app/id6776958488",
       "item": {
         "@type": "Offer",
@@ -1002,7 +1060,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 16,
+      "position": 17,
       "url": "https://apps.apple.com/in/app/id6779750237",
       "item": {
         "@type": "Offer",
@@ -1068,7 +1126,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 17,
+      "position": 18,
       "url": "https://apps.apple.com/in/app/id6779745474",
       "item": {
         "@type": "Offer",
@@ -1134,7 +1192,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 18,
+      "position": 19,
       "url": "https://apps.apple.com/in/app/id6787193643",
       "item": {
         "@type": "Offer",
@@ -1200,7 +1258,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 19,
+      "position": 20,
       "url": "https://apps.apple.com/in/app/id6779552704",
       "item": {
         "@type": "Offer",
@@ -1266,7 +1324,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 20,
+      "position": 21,
       "url": "https://apps.apple.com/in/app/id6792850916",
       "item": {
         "@type": "Offer",
@@ -1332,7 +1390,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 21,
+      "position": 22,
       "url": "https://apps.apple.com/in/app/id6785004775",
       "item": {
         "@type": "Offer",
@@ -1398,7 +1456,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 22,
+      "position": 23,
       "url": "https://apps.apple.com/in/app/id6790800323",
       "item": {
         "@type": "Offer",
@@ -1464,7 +1522,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 23,
+      "position": 24,
       "url": "https://apps.apple.com/in/app/id6781808054",
       "item": {
         "@type": "Offer",
@@ -1530,7 +1588,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 24,
+      "position": 25,
       "url": "https://apps.apple.com/in/app/id6780223070",
       "item": {
         "@type": "Offer",
@@ -1596,7 +1654,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 25,
+      "position": 26,
       "url": "https://apps.apple.com/in/app/id6779977651",
       "item": {
         "@type": "Offer",
@@ -1662,7 +1720,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 26,
+      "position": 27,
       "url": "https://apps.apple.com/in/app/id6788236641",
       "item": {
         "@type": "Offer",
@@ -1728,7 +1786,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 27,
+      "position": 28,
       "url": "https://apps.apple.com/in/app/id6780575828",
       "item": {
         "@type": "Offer",
@@ -1794,7 +1852,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 28,
+      "position": 29,
       "url": "https://apps.apple.com/in/app/id6782139553",
       "item": {
         "@type": "Offer",
@@ -1860,7 +1918,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
+      "position": 30,
       "url": "https://apps.apple.com/in/app/id6791299610",
       "item": {
         "@type": "Offer",
@@ -1926,7 +1984,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 30,
+      "position": 31,
       "url": "https://apps.apple.com/in/app/id6787754435",
       "item": {
         "@type": "Offer",
@@ -1992,7 +2050,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 31,
+      "position": 32,
       "url": "https://apps.apple.com/in/app/id6782275018",
       "item": {
         "@type": "Offer",
@@ -2058,7 +2116,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 32,
+      "position": 33,
       "url": "https://apps.apple.com/in/app/id6790467886",
       "item": {
         "@type": "Offer",
@@ -2124,7 +2182,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 33,
+      "position": 34,
       "url": "https://apps.apple.com/in/app/id6789917808",
       "item": {
         "@type": "Offer",

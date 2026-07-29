@@ -3,7 +3,7 @@
 > हर iOS ऐप की संरचित जानकारी — फ़ीचर, कीमत और FAQ।
 
 locale: hi
-apps: 33
+apps: 34
 - ऐप निर्देशिका: https://alice51849.github.io/ios-app-guide/hi/tools/private-pay-once-iphone-app-finder.html
 - ऐप निर्देशिका · PWA: https://alice51849.github.io/ios-app-guide/hi/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hi.jsonld
@@ -27,6 +27,10 @@ apps: 33
 - ऐप निर्देशिका · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - ऐप निर्देशिका · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [AI Brief](https://alice51849.github.io/ios-app-guide/hi/aibriefpack.html) — फ़ाइलों से साफ़ संदर्भ
+  - स्क्रीनशॉट, दस्तावेज और नोट्स एक साथ लाएं। तथ्यों को रखें। निजी विवरणों की समीक्षा करें। एक स्पष्ट संक्षिप्त पत्र कॉपी करें।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/app/id6791658210
 - [Aim990 Plus](https://alice51849.github.io/ios-app-guide/hi/aim990plus.html) — दबाव में तेज़ और सटीक जवाब
   - पहले 8 सवालों से तैयारी करें, फिर 15 मिनट के 20 सवाल हल करें और अंत में अपनी गलतियाँ दोहराएँ—सुनने और पढ़ने का केंद्रित ऑफ़लाइन प्रशिक्षण।
   - कीमत: एक अग्रिम कीमत वाला सशुल्क डाउनलोड, बिना किसी सदस्यता के।

@@ -4,7 +4,7 @@
 
 Katalog od první strany, který uvádí, pro koho je každá aplikace určena, jaký úkol má splnit a přímou cestu do App Store.
 
-Vyhledávací záměry vytvořené vydavatelem napříč 33 ověřenými aktivními iOS aplikacemi a 50 Apple lokalitami.
+Vyhledávací záměry vytvořené vydavatelem napříč 34 ověřenými aktivními iOS aplikacemi a 50 Apple lokalitami.
 
 **Lokalita:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · **cs** · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -89,6 +89,7 @@ Abecedně podle názvu aplikace — nikdy žebříček.
 
 | Aplikace | Dotaz vydavatele | Kontext rozhodování | Model nákupu | Průvodce | App Store |
 | --- | --- | --- | --- | --- | --- |
+| **AI Brief** | AI Brief — Soubory v jasném kontextu \| iOS App | Lepší kontext. Lepší odpovědi. | Zdarma na začátek · doživotní odemknutí | [Průvodce](https://alice51849.github.io/ios-app-guide/cs/aibriefpack.html) | [Stáhněte si AI Brief v App Storu](https://apps.apple.com/app/id6791658210) |
 | **Aim990** | nejlepší aplikace na přípravu TOEIC offline studijní plán pro iPhone | Část 5 vypadá krátká, ale otázky s neúplnými větami mohou zabrat čas, pokud gramatika a slovní zásoba nejsou automatické. | Zdarma na začátek · doživotní odemknutí | [Průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Získejte Aim990 v App Store →](https://apps.apple.com/cz/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Jistota pod časovým tlakem \| iOS App | Když běží čas, nestačí angličtině jen rozumět. Je potřeba udržet pozornost, rychle se rozhodovat a nenechat se rozhodit jednou chybnou odpovědí. Aim990 | Placené stažení | [Průvodce](https://alice51849.github.io/ios-app-guide/cs/aim990plus.html) | [Stáhněte si Aim990 Plus v App Storu](https://apps.apple.com/cz/app/id6792483140) |
 | **CV Desk** | nejlepší aplikace na tvorbu životopisu pro změnu kariéry 2026 | Při změně oboru je problém s životopisem jiný: vaše zkušenosti jsou skutečné, ale na papíře „nesouvisející“ a ATS filtry vás odmítají dříve, než to přečte člověk — CV Desk je na to připraven. | Zdarma na začátek · doživotní odemknutí | [Průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-resume-builder-app-for-career-changers-2026.html) | [Získejte CV Desk v App Store →](https://apps.apple.com/cz/app/id6781337213) |
@@ -125,7 +126,7 @@ Abecedně podle názvu aplikace — nikdy žebříček.
 
 ## Stáhnout celý dataset
 
-JSON, JSONL a CSV obsahují stejných 1 650 záznamů.
+JSON, JSONL a CSV obsahují stejných 1 700 záznamů.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -133,6 +134,6 @@ JSON, JSONL a CSV obsahují stejných 1 650 záznamů.
 
 [Domů](https://alice51849.github.io/ios-app-guide/cs/index.html) · [Otevřená data](https://alice51849.github.io/ios-app-guide/cs/data/lumi-studio-publisher-search-intent-catalog.html) · [Licence](https://creativecommons.org/licenses/by/4.0/)
 
-Aktualizováno: 2026-07-28
+Aktualizováno: 2026-07-29
 
 CC BY 4.0 platí pro původní sestavení katalogu; názvy aplikací a značky App Store patří jejich vlastníkům.

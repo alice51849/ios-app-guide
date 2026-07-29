@@ -180,7 +180,7 @@
     "@id": "https://alice51849.github.io/ios-app-guide/#organization"
   },
   "datePublished": "2026-07-19",
-  "dateModified": "2026-07-28",
+  "dateModified": "2026-07-29",
   "version": "1.0.0",
   "sdVersion": "1.0.0",
   "isLiveDataset": false,
@@ -261,9 +261,9 @@
       "name": "lumi-studio-publisher-search-intent-catalog.csv",
       "description": "Canonical UTF-8 table loaded by the publisher_intents RecordSet.",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv",
-      "contentSize": "1884910 B",
+      "contentSize": "1920526 B",
       "encodingFormat": "text/csv",
-      "sha256": "d20b1013deba8b35ce599b1d42d7e20c0001109f7f2888e8bc110aaa99c16012"
+      "sha256": "b4e6c974623c0313f3e4f8b28fb9fe5d40aef35933cecdec45e8a9edb5ddc4c7"
     },
     {
       "@type": "cr:FileObject",
@@ -271,9 +271,9 @@
       "name": "lumi-studio-publisher-search-intent-catalog.jsonl",
       "description": "The same 1,400 records serialized as newline-delimited JSON.",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl",
-      "contentSize": "2552572 B",
+      "contentSize": "2608116 B",
       "encodingFormat": "application/x-ndjson",
-      "sha256": "a7aac537e3631ebf877ee923e6354319d33e29e7a961402406989cdc1185c2a7"
+      "sha256": "919407684ea4fae90f4052390a796c03890b14e51dd9a57b5d677d0a9a50da54"
     },
     {
       "@type": "cr:FileObject",
@@ -281,9 +281,9 @@
       "name": "lumi-studio-publisher-search-intent-catalog.json",
       "description": "Dataset envelope with provenance, coverage and all 1,400 records.",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-      "contentSize": "2822021 B",
+      "contentSize": "2885665 B",
       "encodingFormat": "application/json",
-      "sha256": "40dd44fce74486ba81196c8c4304721efb93be4e9e0ebb6f52aae9289b3ab64e"
+      "sha256": "155edb26f90b5dd79a4035efc26d002aeabc1d5f34bcdcc127b1d6500dc76d59"
     }
   ],
   "recordSet": [
@@ -297,6 +297,26 @@
         "@id": "publisher_intents/record_id"
       },
       "examples": [
+        {
+          "publisher_intents/record_id": "ar-SA:aibriefpack:best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai",
+          "publisher_intents/locale": "ar-SA",
+          "publisher_intents/app_key": "aibriefpack",
+          "publisher_intents/app_name": "AI Brief",
+          "publisher_intents/app_store_id": "6791658210",
+          "publisher_intents/publisher_query": "AI Brief — حوّل الملفات إلى سياق واضح | iOS App",
+          "publisher_intents/decision_context": "سياق أفضل. إجابات أفضل.",
+          "publisher_intents/purchase_model": "free_with_lifetime_unlock",
+          "publisher_intents/one_time_option": true,
+          "publisher_intents/source_persona_query": "best private app to organize screenshots and documents into context before using AI",
+          "publisher_intents/canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/aibriefpack.html",
+          "publisher_intents/canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
+          "publisher_intents/app_store_url": "https://apps.apple.com/app/id6791658210",
+          "publisher_intents/publisher_disclosure": "هذه مادة ينشرها Lumi Studio مباشرةً بصفته مطور جميع التطبيقات المدرجة.",
+          "publisher_intents/query_origin": "publisher_authored_editorially_localized",
+          "publisher_intents/measured_search_volume": false,
+          "publisher_intents/is_ranking": false,
+          "publisher_intents/verified_live": true
+        },
         {
           "publisher_intents/record_id": "ar-SA:aim990:best-toeic-prep-app-offline-study-plan-for-iphone",
           "publisher_intents/locale": "ar-SA",
@@ -312,26 +332,6 @@
           "publisher_intents/canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
           "publisher_intents/app_store_url": "https://apps.apple.com/sa/app/id6784974530",
           "publisher_intents/publisher_disclosure": "دليل من تأليف الناشر من لومي ستوديو، مطور التطبيق. أسماء التطبيقات علامات تجارية لأصحابها وتُستخدم فقط للتعريف. للتحقق من الوثائق، الصحة، المدرسة، وقرارات الإنتاجية، تحقق من المتطلبات الرسمية عند الاقتضاء.",
-          "publisher_intents/query_origin": "publisher_authored_editorially_localized",
-          "publisher_intents/measured_search_volume": false,
-          "publisher_intents/is_ranking": false,
-          "publisher_intents/verified_live": true
-        },
-        {
-          "publisher_intents/record_id": "ar-SA:aim990plus:best-offline-english-listening-and-reading-exam-trainer-for-iphone",
-          "publisher_intents/locale": "ar-SA",
-          "publisher_intents/app_key": "aim990plus",
-          "publisher_intents/app_name": "Aim990 Plus",
-          "publisher_intents/app_store_id": "6792483140",
-          "publisher_intents/publisher_query": "Aim990 Plus — تدريب الاستماع والقراءة | iOS App",
-          "publisher_intents/decision_context": "تدرّب على فهم الإنجليزية المسموعة والمقروءة في بيئة مصممة للبالغين الذين يريدون بناء الدقة والسرعة تحت ضغط الوقت. يجمع التطبيق بين جلسات قصيرة واضحة",
-          "publisher_intents/purchase_model": "paid_upfront",
-          "publisher_intents/one_time_option": true,
-          "publisher_intents/source_persona_query": "best offline English listening and reading exam trainer for iPhone",
-          "publisher_intents/canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/aim990plus.html",
-          "publisher_intents/canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
-          "publisher_intents/app_store_url": "https://apps.apple.com/sa/app/id6792483140",
-          "publisher_intents/publisher_disclosure": "هذه مادة ينشرها Lumi Studio مباشرةً بصفته مطور جميع التطبيقات المدرجة.",
           "publisher_intents/query_origin": "publisher_authored_editorially_localized",
           "publisher_intents/measured_search_volume": false,
           "publisher_intents/is_ranking": false,

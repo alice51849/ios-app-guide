@@ -4,7 +4,7 @@
 
 Каталог першої сторони, що описує, для кого призначений кожен додаток, яке завдання він допомагає виконати, і прямий шлях до App Store.
 
-Наміри пошуку, створені видавцем, охоплюють 33 перевірених активних iOS-додатків і 50 локалей Apple.
+Наміри пошуку, створені видавцем, охоплюють 34 перевірених активних iOS-додатків і 50 локалей Apple.
 
 **Локаль:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · **uk** · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -89,6 +89,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 | Додаток | Запит видавця | Контекст прийняття рішення | Модель покупки | Путівник | App Store |
 | --- | --- | --- | --- | --- | --- |
+| **AI Brief** | AI Brief — Файли в чіткий контекст \| iOS App | Кращий контекст. Кращі відповіді. | Безкоштовно для початку · довічне розблокування | [Путівник](https://alice51849.github.io/ios-app-guide/uk/aibriefpack.html) | [Завантажте AI Brief з App Store](https://apps.apple.com/app/id6791658210) |
 | **Aim990** | кращий додаток для підготовки до TOEIC офлайн з планом навчання для iPhone | Частина 5 здається короткою, але питання з неповними реченнями можуть забирати час, якщо граматика та словниковий запас не автоматичні. | Безкоштовно для початку · довічне розблокування | [Путівник](https://alice51849.github.io/ios-app-guide/uk/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Отримайте Aim990 в App Store →](https://apps.apple.com/ua/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Практика в режимі таймера \| iOS App | Aim990 Plus — тренажер для дорослих, яким важливо впевнено розуміти англійське мовлення й тексти в умовах обмеженого часу. Застосунок допомагає не просто | Платне завантаження | [Путівник](https://alice51849.github.io/ios-app-guide/uk/aim990plus.html) | [Завантажте Aim990 Plus з App Store](https://apps.apple.com/ua/app/id6792483140) |
 | **CV Desk** | кращий додаток для створення резюме для змін кар’єри 2026 | Коли ви змінюєте сферу, проблема резюме інша: ваш досвід реальний, але на папері «нерелевантний», і фільтри ATS відкидають вас раніше, ніж це побачить людина — CV Desk створений саме для цього. | Безкоштовно для початку · довічне розблокування | [Путівник](https://alice51849.github.io/ios-app-guide/uk/answers/best-resume-builder-app-for-career-changers-2026.html) | [Отримайте CV Desk в App Store →](https://apps.apple.com/ua/app/id6781337213) |
@@ -125,7 +126,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## Завантажити повний набір даних
 
-JSON, JSONL і CSV містять однакові 1 650 записів.
+JSON, JSONL і CSV містять однакові 1 700 записів.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -133,6 +134,6 @@ JSON, JSONL і CSV містять однакові 1 650 записів.
 
 [Головна](https://alice51849.github.io/ios-app-guide/uk/index.html) · [Відкриті дані](https://alice51849.github.io/ios-app-guide/uk/data/lumi-studio-publisher-search-intent-catalog.html) · [Ліцензія](https://creativecommons.org/licenses/by/4.0/)
 
-Оновлено: 2026-07-28
+Оновлено: 2026-07-29
 
 CC BY 4.0 застосовується до оригінального складання каталогу; назви додатків і знаки App Store належать їх власникам.

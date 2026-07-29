@@ -3,7 +3,7 @@
 > 各 iOS アプリの構造化情報 — 機能・価格・FAQ。
 
 locale: ja
-apps: 33
+apps: 34
 - アプリ一覧: https://alice51849.github.io/ios-app-guide/ja/tools/private-pay-once-iphone-app-finder.html
 - アプリ一覧 · PWA: https://alice51849.github.io/ios-app-guide/ja/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ja.jsonld
@@ -27,6 +27,10 @@ apps: 33
 - アプリ一覧 · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - アプリ一覧 · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [AI Brief](https://alice51849.github.io/ios-app-guide/ja/aibriefpack.html) — 資料を明確な文脈に整理
+  - スクリーンショット、ドキュメント、メモをひとつに。事実はそのまま。機密情報も確認。ひとつの明確な要約をコピー。
+  - 価格: 無料ダウンロード。1回限りの購入で全機能を永久に解除でき、定期課金はありません。
+  - App Store: https://apps.apple.com/app/id6791658210
 - [Aim990 - TOEIC対策](https://alice51849.github.io/ios-app-guide/ja/aim990.html) — 990点を目指す学習アプリ
   - 30日間でTOEICスコア990を目指そう！実践的な学習プランで、効率的に力を伸ばせます。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を永久に解除でき、定期課金はありません。

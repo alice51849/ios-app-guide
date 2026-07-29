@@ -4,7 +4,7 @@
 
 第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。
 
-由开发者撰写的搜索意图，涵盖 33 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
+由开发者撰写的搜索意图，涵盖 34 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
 
 **地区语言:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · **zh-Hans** · [zh-Hant](../zh-Hant/)
 
@@ -89,6 +89,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 | App | 开发者查询 | 决策情境 | 付费模式 | 指南 | App Store |
 | --- | --- | --- | --- | --- | --- |
+| **AI Brief** | AI Brief — 把资料整理成清晰上下文 \| iOS App | 更好的背景，更优的回答。 将截图、文件、笔记和文档转化为一份清晰的 AI 就绪摘要。 | 免费开始使用 · 永久解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/aibriefpack.html) | [在 App Store 获取 AI Brief](https://apps.apple.com/app/id6791658210) |
 | **Aim990** | 适用于 iPhone 的最佳离线 TOEIC 备考应用及学习计划 | 第5部分看似简短，但不完整句子题目若语法和词汇不熟练会耗费大量时间。 | 免费开始使用 · 永久解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [在 App Store 获取 Aim990 →](https://apps.apple.com/cn/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — 15分钟攻克七大题型 \| iOS App | 把零散刷题变成一套经得住时间压力的训练流程。 | 付费下载 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/aim990plus.html) | [在 App Store 获取 Aim990 Plus](https://apps.apple.com/cn/app/id6792483140) |
 | **CV Desk** | 2026 年最佳职业转型简历制作应用 | 转行时，简历问题不同：经验真实但纸面“无关”，ATS 过滤在人工阅读前就拒绝——CV Desk 专为此设计。 | 免费开始使用 · 永久解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-resume-builder-app-for-career-changers-2026.html) | [在 App Store 获取 CV Desk →](https://apps.apple.com/cn/app/id6781337213) |
@@ -125,7 +126,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## 下载完整数据集
 
-JSON、JSONL 和 CSV 格式包含相同的 1,650 条记录。
+JSON、JSONL 和 CSV 格式包含相同的 1,700 条记录。
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -133,6 +134,6 @@ JSON、JSONL 和 CSV 格式包含相同的 1,650 条记录。
 
 [首页](https://alice51849.github.io/ios-app-guide/zh-Hans/index.html) · [开放数据](https://alice51849.github.io/ios-app-guide/zh-Hans/data/lumi-studio-publisher-search-intent-catalog.html) · [许可协议](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-07-28
+更新日期: 2026-07-29
 
 CC BY 4.0 适用于原始目录编纂；应用名称和 App Store 标识归其所有者所有。

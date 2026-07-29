@@ -4,7 +4,7 @@
 
 ਇੱਕ ਪਹਿਲਾ-ਪੱਖ ਕੈਟਾਲੌਗ ਜਿਸ ਵਿੱਚ ਦਰਸਾਇਆ ਗਿਆ ਹੈ ਕਿ ਹਰ ਐਪ ਕਿਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ, ਉਹ ਕਿਹੜਾ ਕੰਮ ਪੂਰਾ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਿਹਾ ਹੈ, ਅਤੇ ਸਿੱਧਾ App Store ਪੱਥ।
 
-33 ਪ੍ਰਮਾਣਿਤ ਜੀਵੰਤ iOS ਐਪਸ ਅਤੇ 50 Apple ਸਥਾਨਕ ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ ਪ੍ਰਕਾਸ਼ਕ-ਲਿਖੇ ਖੋਜ ਇਰਾਦੇ।
+34 ਪ੍ਰਮਾਣਿਤ ਜੀਵੰਤ iOS ਐਪਸ ਅਤੇ 50 Apple ਸਥਾਨਕ ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ ਪ੍ਰਕਾਸ਼ਕ-ਲਿਖੇ ਖੋਜ ਇਰਾਦੇ।
 
 **ਸਥਾਨਕ ਭਾਸ਼ਾ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · **pa-IN** · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -89,6 +89,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 | ਐਪ | ਪ੍ਰਕਾਸ਼ਕ ਪੁੱਛਗਿੱਛ | ਫੈਸਲਾ ਸੰਦਰਭ | ਖਰੀਦ ਮਾਡਲ | ਗਾਈਡ | App Store |
 | --- | --- | --- | --- | --- | --- |
+| **AI Brief** | AI Brief — ਫਾਈਲਾਂ ਤੋਂ ਸਪਸ਼ਟ ਸੰਦਰਭ \| iOS App | ਬਿਹਤਰ ਸੰਦਰਭ। ਬਿਹਤਰ ਜਵਾਬ। | ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਸਦਾ ਲਈ ਅਨਲੌਕ | [ਗਾਈਡ](https://alice51849.github.io/ios-app-guide/pa-IN/aibriefpack.html) | [App Store ਤੋਂ AI Brief ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/app/id6791658210) |
 | **Aim990** | iPhone ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ TOEIC ਤਿਆਰੀ ਐਪ ਆਫਲਾਈਨ ਅਧਿਐਨ ਯੋਜਨਾ | ਭਾਗ 5 ਛੋਟਾ ਲੱਗਦਾ ਹੈ, ਪਰ ਉਹ ਅਧੂਰੇ ਵਾਕ ਪ੍ਰਸ਼ਨ ਸਮਾਂ ਖਰਚ ਕਰ ਸਕਦੇ ਹਨ ਜੇ ਵਿਆਕਰਨ ਅਤੇ ਸ਼ਬਦਾਵਲੀ ਸਵੈਚਲਿਤ ਨਾ ਹੋਵੇ। | ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਸਦਾ ਲਈ ਅਨਲੌਕ | [ਗਾਈਡ](https://alice51849.github.io/ios-app-guide/pa-IN/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [App Store ਤੋਂ Aim990 ਪ੍ਰਾਪਤ ਕਰੋ →](https://apps.apple.com/in/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — ਦਬਾਅ ਵਿੱਚ ਤੇਜ਼ ਸਹੀ ਜਵਾਬ \| iOS App | Aim990 Plus ਬਾਲਗ ਸਿੱਖਿਆਰਥੀਆਂ ਲਈ ਅੰਗਰੇਜ਼ੀ ਸੁਣਨ ਅਤੇ ਪੜ੍ਹਨ ਦੀ ਡੂੰਘੀ ਕਸਰਤ ਹੈ। ਇਸ ਦਾ ਮੁੱਖ ਕ੍ਰਮ ਸਮੇਂ ਦੇ ਦਬਾਅ ਹੇਠ ਵੀ ਧਿਆਨ ਬਣਾਈ ਰੱਖਣ ਦੀ ਆਦਤ ਪਾਉਂਦਾ ਹੈ: ਪਹਿਲਾਂ 8 | ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ | [ਗਾਈਡ](https://alice51849.github.io/ios-app-guide/pa-IN/aim990plus.html) | [App Store ਤੋਂ Aim990 Plus ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6792483140) |
 | **CV ਡੈਸਕ** | 2026 ਲਈ ਕਰੀਅਰ ਬਦਲਣ ਵਾਲਿਆਂ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਰੇਜ਼ੂਮੇ ਬਿਲਡਰ ਐਪ | ਜਦੋਂ ਤੁਸੀਂ ਖੇਤਰ ਬਦਲ ਰਹੇ ਹੋ, ਤਾਂ ਰੇਜ਼ੂਮੇ ਸਮੱਸਿਆ ਵੱਖਰੀ ਹੁੰਦੀ ਹੈ: ਤੁਹਾਡਾ ਅਨੁਭਵ ਅਸਲੀ ਹੈ ਪਰ ਕਾਗਜ਼ 'ਤੇ 'ਅਣਸੰਬੰਧਿਤ' ਹੈ, ਅਤੇ ATS ਫਿਲਟਰ ਤੁਹਾਨੂੰ ਮਨੁੱਖੀ ਪੜ੍ਹਨ ਤੋਂ ਪਹਿਲਾਂ ਰੱਦ ਕਰ ਦਿੰਦੇ ਹਨ — CV ਡੈਸਕ ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ। | ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਸਦਾ ਲਈ ਅਨਲੌਕ | [ਗਾਈਡ](https://alice51849.github.io/ios-app-guide/pa-IN/answers/best-resume-builder-app-for-career-changers-2026.html) | [App Store ਤੋਂ CV ਡੈਸਕ ਪ੍ਰਾਪਤ ਕਰੋ →](https://apps.apple.com/in/app/id6781337213) |
@@ -125,7 +126,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## ਪੂਰਾ ਡੇਟਾਸੈੱਟ ਡਾਊਨਲੋਡ ਕਰੋ
 
-JSON, JSONL ਅਤੇ CSV ਵਿੱਚ ਉਹੀ 1,650 ਰਿਕਾਰਡ ਹਨ।
+JSON, JSONL ਅਤੇ CSV ਵਿੱਚ ਉਹੀ 1,700 ਰਿਕਾਰਡ ਹਨ।
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -133,6 +134,6 @@ JSON, JSONL ਅਤੇ CSV ਵਿੱਚ ਉਹੀ 1,650 ਰਿਕਾਰਡ ਹਨ
 
 [ਮੁੱਖ ਪੰਨਾ](https://alice51849.github.io/ios-app-guide/pa-IN/index.html) · [ਖੁੱਲਾ ਡੇਟਾ](https://alice51849.github.io/ios-app-guide/pa-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ਲਾਇਸੈਂਸ](https://creativecommons.org/licenses/by/4.0/)
 
-ਅਪਡੇਟ ਕੀਤਾ ਗਿਆ: 2026-07-28
+ਅਪਡੇਟ ਕੀਤਾ ਗਿਆ: 2026-07-29
 
 CC BY 4.0 ਮੂਲ ਕੈਟਾਲੌਗ ਸੰਕਲਨ 'ਤੇ ਲਾਗੂ ਹੁੰਦਾ ਹੈ; ਐਪ ਨਾਮ ਅਤੇ App Store ਨਿਸ਼ਾਨ ਆਪਣੇ ਮਾਲਕਾਂ ਦੇ ਹਨ।

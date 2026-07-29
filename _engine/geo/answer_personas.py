@@ -1728,6 +1728,55 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         },
     ],
+    "aibriefpack": [
+        {
+            "query": "best private app to organize screenshots and documents into context before using AI",
+            "guide_title": "Private AI context preparation on iPhone: what to check",
+            "triggers": [
+                "organize context for AI",
+                "turn screenshots into AI brief",
+                "summarize PDF and notes before AI",
+                "private OCR brief app",
+                "AI prompt context organizer",
+                "source tracking for AI prompts",
+            ],
+            "persona": "knowledge workers, researchers and freelancers preparing mixed sources for an AI assistant",
+            "lead": "When screenshots, PDFs, notes, files and links contain the evidence for an AI task, a useful context builder should turn them into one reviewable brief without silently uploading, deleting or inventing details.",
+            "paras": [
+                "A reliable workflow should combine mixed sources, use on-device OCR and PDF reading, and keep each extracted fact connected to its source and confidence so conflicts and open questions remain visible before export.",
+                "Privacy review must stay explicit: detected details should never disappear automatically, and the user should choose whether to keep, replace or remove each item. Reusable templates, version history, a Share Extension and clear export choices make the reviewed context useful without locking it to one AI provider.",
+            ],
+            "look": [
+                "Mixed-source import for screenshots, PDFs, files, copied text, notes and links.",
+                "On-device extraction with source references, confidence and conflict review.",
+                "Explicit keep, replace or remove choices for detected private details.",
+                "Structured briefs with templates, version history and Share Extension intake.",
+                "A free entry point with one lifetime Pro unlock and no subscription, account, ads or tracking.",
+            ],
+            "steps": [
+                "Collect the relevant sources through import, paste or the Share Extension.",
+                "Start processing only after the complete source set is ready.",
+                "Review every extracted fact, source, confidence, conflict and open question.",
+                "Choose whether to keep, replace or remove each detected private detail.",
+                "Review the final brief, then deliberately copy, share or save it to the destination you choose.",
+            ],
+            "fits": "fits people who need to prepare traceable, privacy-reviewed context from mixed local sources before they deliberately send it to any AI assistant.",
+            "faq": [
+                {
+                    "q": "Does AI Brief send my files to an AI service automatically?",
+                    "a": "No — OCR, PDF reading, duplicate checks, fact extraction and privacy detection use Apple frameworks on device. You review the brief and explicitly choose whether and where to share it.",
+                },
+                {
+                    "q": "Does privacy detection guarantee anonymity?",
+                    "a": "No — detected details are never removed automatically, and AI Brief does not promise anonymity. You decide whether to keep, replace or remove each item before export.",
+                },
+                {
+                    "q": "Is AI Brief a subscription?",
+                    "a": "No — it is free to start, with one optional lifetime Pro purchase and no recurring subscription. It also has no account, third-party advertising, tracking, analytics or content telemetry.",
+                },
+            ],
+        },
+    ],
 }
 
 

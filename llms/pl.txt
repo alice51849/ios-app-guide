@@ -3,7 +3,7 @@
 > Uporządkowane informacje o każdej aplikacji iOS — funkcje, cena i FAQ.
 
 locale: pl
-apps: 33
+apps: 34
 - Katalog aplikacji: https://alice51849.github.io/ios-app-guide/pl/tools/private-pay-once-iphone-app-finder.html
 - Katalog aplikacji · PWA: https://alice51849.github.io/ios-app-guide/pl/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/pl.jsonld
@@ -27,6 +27,10 @@ apps: 33
 - Katalog aplikacji · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - Katalog aplikacji · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [AI Brief](https://alice51849.github.io/ios-app-guide/pl/aibriefpack.html) — Pliki w jasny kontekst
+  - Zbierz razem zrzuty ekranu, dokumenty i notatki. Zachowaj fakty. Przejrzyj prywatne szczegóły. Skopiuj jeden przejrzysty brief.
+  - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
+  - App Store: https://apps.apple.com/app/id6791658210
 - [Aim990 - Twój coach TOEIC](https://alice51849.github.io/ios-app-guide/pl/aim990.html) — Zdobądź wymarzone 990!
   - Zwiększ swoje szanse na zdobycie 990 punktów w TOEIC! Praktykuj z Aim990 bez reklam i bez konta!
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.

@@ -4,7 +4,7 @@
 
 Un catalogue publié directement par le développeur qui indique à qui chaque app est destinée, la tâche à accomplir et l’accès direct à l’App Store.
 
-Intentions de recherche rédigées par l’éditeur pour 33 apps iOS vérifiées et disponibles dans 50 langues et régions Apple.
+Intentions de recherche rédigées par l’éditeur pour 34 apps iOS vérifiées et disponibles dans 50 langues et régions Apple.
 
 **Région:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · **fr-CA** · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -89,6 +89,7 @@ Ordre alphabétique par nom d’app — jamais un classement.
 
 | App | Requête de l’éditeur | Contexte décisionnel | Modèle d’achat | Guide | App Store |
 | --- | --- | --- | --- | --- | --- |
+| **AI Brief** | AI Brief — Des fichiers au contexte clair \| iOS App | Un meilleur contexte. De meilleures réponses. | Gratuit au départ · déverrouillage définitif | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/aibriefpack.html) | [Obtenir AI Brief sur l'App Store](https://apps.apple.com/app/id6791658210) |
 | **Aim990** | meilleure application de préparation TOEIC plan d'étude hors ligne pour iPhone | La partie 5 semble courte, mais ces questions à phrase incomplète peuvent prendre du temps si la grammaire et le vocabulaire ne sont pas automatiques. | Gratuit au départ · déverrouillage définitif | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Obtenez Aim990 sur l’App Store →](https://apps.apple.com/ca/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Défis chronométrés d’anglais \| iOS App | Renforcez votre compréhension de l’anglais avec des séances structurées pour la réalité d’un horaire chargé. Aim990 Plus s’adresse aux adultes qui | Téléchargement payant | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/aim990plus.html) | [Obtenir Aim990 Plus sur l'App Store](https://apps.apple.com/ca/app/id6792483140) |
 | **CV Desk** | meilleure application de création de CV pour les reconversions professionnelles 2026 | Quand vous changez de domaine, le problème du CV est différent : votre expérience est réelle mais « non liée » sur papier, et les filtres ATS vous rejettent avant qu’un humain ne le lise — CV Desk est conçu pour cela. | Gratuit au départ · déverrouillage définitif | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-resume-builder-app-for-career-changers-2026.html) | [Obtenez CV Desk sur l’App Store →](https://apps.apple.com/ca/app/id6781337213) |
@@ -125,7 +126,7 @@ Ordre alphabétique par nom d’app — jamais un classement.
 
 ## Télécharger l’ensemble complet des données
 
-JSON, JSONL et CSV contiennent les mêmes 1 650 enregistrements.
+JSON, JSONL et CSV contiennent les mêmes 1 700 enregistrements.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -133,6 +134,6 @@ JSON, JSONL et CSV contiennent les mêmes 1 650 enregistrements.
 
 [Accueil](https://alice51849.github.io/ios-app-guide/fr-CA/index.html) · [Données ouvertes](https://alice51849.github.io/ios-app-guide/fr-CA/data/lumi-studio-publisher-search-intent-catalog.html) · [Licence](https://creativecommons.org/licenses/by/4.0/)
 
-Mis à jour: 2026-07-28
+Mis à jour: 2026-07-29
 
 La licence CC BY 4.0 s’applique à la compilation originale du catalogue ; les noms d’app et marques App Store appartiennent à leurs propriétaires.

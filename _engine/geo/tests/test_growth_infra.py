@@ -21264,6 +21264,7 @@ class GeneratorTests(unittest.TestCase):
             "maskmyfile",
             "mochidonestamp",
             "hourstaglite",
+            "aibriefpack",
         }
         self.assertEqual(paid_upfront | free_with_unlock, set(APPS))
         for key in paid_upfront:

@@ -4,7 +4,7 @@
 
 Katalog iz prve ruke o tome za koga je svaka aplikacija namijenjena, koji zadatak žele izvršiti i izravnom putu do App Storea.
 
-Namjere pretraživanja koje je napisao izdavač za 33 provjerenih aktivnih iOS aplikacija i 50 Apple lokaliteta.
+Namjere pretraživanja koje je napisao izdavač za 34 provjerenih aktivnih iOS aplikacija i 50 Apple lokaliteta.
 
 **Lokalitet:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · **hr** · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -89,6 +89,7 @@ Abecedno po nazivu aplikacije — nikada nije rangiranje.
 
 | Aplikacija | Upit izdavača | Kontekst odluke | Model kupnje | Vodič | App Store |
 | --- | --- | --- | --- | --- | --- |
+| **AI Brief** | AI Brief — Datoteke u jasnom kontekstu \| iOS App | Bolji kontekst. Bolji odgovori. | Besplatno za početak · doživotno otključavanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/aibriefpack.html) | [Preuzmite AI Brief u App Storeu](https://apps.apple.com/app/id6791658210) |
 | **Aim990** | najbolja TOEIC pripremna aplikacija za iPhone s offline planom učenja | Dio 5 izgleda kratak, ali pitanja s nepotpunim rečenicama mogu oduzeti vrijeme ako gramatika i vokabular nisu automatski. | Besplatno za početak · doživotno otključavanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Preuzmite Aim990 u App Storeu →](https://apps.apple.com/hr/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Sigurnost pod štopericom \| iOS App | Razumjeti engleski nije isto što i ostati precizan dok vrijeme istječe. Aim990 Plus intenzivan je trening slušanja i čitanja za odrasle, osmišljen za | Plaćeno preuzimanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/aim990plus.html) | [Preuzmite Aim990 Plus u App Storeu](https://apps.apple.com/hr/app/id6792483140) |
 | **CV Desk** | najbolja aplikacija za izradu životopisa za promjenu karijere 2026 | Kada mijenjate područje rada, problem s životopisom je drugačiji: vaše iskustvo je stvarno, ali na papiru 'nepovezano', a ATS filteri vas odbacuju prije nego što ga čovjek pročita — CV Desk je napravljen za to. | Besplatno za početak · doživotno otključavanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-resume-builder-app-for-career-changers-2026.html) | [Preuzmite CV Desk u App Storeu →](https://apps.apple.com/hr/app/id6781337213) |
@@ -125,7 +126,7 @@ Abecedno po nazivu aplikacije — nikada nije rangiranje.
 
 ## Preuzmite kompletan skup podataka
 
-JSON, JSONL i CSV sadrže istih 1.650 zapisa.
+JSON, JSONL i CSV sadrže istih 1.700 zapisa.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -133,6 +134,6 @@ JSON, JSONL i CSV sadrže istih 1.650 zapisa.
 
 [Početna](https://alice51849.github.io/ios-app-guide/hr/index.html) · [Otvoreni podaci](https://alice51849.github.io/ios-app-guide/hr/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenca](https://creativecommons.org/licenses/by/4.0/)
 
-Ažurirano: 2026-07-28
+Ažurirano: 2026-07-29
 
 CC BY 4.0 primjenjuje se na izvornu kompilaciju kataloga; nazivi aplikacija i oznake App Store pripadaju njihovim vlasnicima.

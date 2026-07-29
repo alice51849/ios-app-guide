@@ -3,7 +3,7 @@
 > દરેક iOS ઍપની સુવિધાઓ, કિંમત અને વારંવાર પૂછાતા પ્રશ્નોની સુવ્યવસ્થિત માહિતી.
 
 locale: gu-IN
-apps: 33
+apps: 34
 - ઍપ ડિરેક્ટરી: https://alice51849.github.io/ios-app-guide/gu-IN/tools/private-pay-once-iphone-app-finder.html
 - ઍપ ડિરેક્ટરી · PWA: https://alice51849.github.io/ios-app-guide/gu-IN/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/gu-IN.jsonld
@@ -27,6 +27,10 @@ apps: 33
 - ઍપ ડિરેક્ટરી · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - ઍપ ડિરેક્ટરી · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [AI Brief](https://alice51849.github.io/ios-app-guide/gu-IN/aibriefpack.html) — ફાઇલથી સ્પષ્ટ સંદર્ભ
+  - સ્ક્રીનશૉટ્સ, દસ્તાવેજો અને નોંધો એકસાથે લાવો. હકીકતો રાખો. ખાનગી વિગતો તપાસો. એક સ્પષ્ટ સંક્ષિપ્ત કૉપિ કરો.
+  - કિંમત: મફતમાં ડાઉનલોડ કરો. એક વખતની ખરીદીથી તમામ સુવિધાઓ કાયમ માટે અનલૉક કરો—કોઈ સબ્સ્ક્રિપ્શન નહીં.
+  - App Store: https://apps.apple.com/app/id6791658210
 - [Aim990 Plus](https://alice51849.github.io/ios-app-guide/gu-IN/aim990plus.html) — દબાણમાં ઝડપી સચોટ જવાબ
   - પહેલાં 8 પ્રશ્નોથી તૈયારી, પછી 15 મિનિટમાં 20 પ્રશ્નોનું દબાણ અને અંતે ભૂલોનું પુનરાવર્તન—સાંભળવા તથા વાંચવાની કેન્દ્રિત ઑફલાઇન તાલીમ.
   - કિંમત: એક નિશ્ચિત આગોતરી કિંમતે પેઇડ ડાઉનલોડ, કોઈ સબ્સ્ક્રિપ્શન નહીં.

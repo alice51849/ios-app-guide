@@ -74,13 +74,13 @@
       "uniqueItems": true
     },
     "app_count": {
-      "const": 33
+      "const": 34
     },
     "locale_count": {
       "const": 50
     },
     "record_count": {
-      "const": 1650
+      "const": 1700
     },
     "locales": {
       "type": "array",
@@ -223,8 +223,8 @@
     },
     "records": {
       "type": "array",
-      "minItems": 1650,
-      "maxItems": 1650,
+      "minItems": 1700,
+      "maxItems": 1700,
       "items": {
         "$ref": "#/$defs/record"
       }
@@ -354,6 +354,7 @@
         },
         "app_key": {
           "enum": [
+            "aibriefpack",
             "aim990",
             "aim990plus",
             "cvdesk",

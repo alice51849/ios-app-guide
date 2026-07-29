@@ -16,8 +16,56 @@
     ],
     "retirement_rule": "Retire after three consecutive verified misses"
   },
-  "record_count": 33,
+  "record_count": 34,
   "apps": [
+    {
+      "key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "name": "AI Brief",
+      "category": "productivity",
+      "category_labels": {
+        "en": "Productivity",
+        "zh-Hant": "效率工具"
+      },
+      "summaries": {
+        "en": "Better context. Better answers.",
+        "zh-Hant": "更完整的內容脈絡，更好的回答。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Free to start",
+        "One-time unlock",
+        "No subscription",
+        "On-device",
+        "No account",
+        "No ads",
+        "No tracking"
+      ],
+      "keywords": [
+        "organize context for AI",
+        "turn screenshots into AI brief",
+        "summarize PDF and notes before AI",
+        "private OCR brief app",
+        "AI prompt context organizer",
+        "source tracking for AI prompts"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
+      "verified_live": true
+    },
     {
       "key": "aim990",
       "app_store_id": "6784974530",

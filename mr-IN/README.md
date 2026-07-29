@@ -4,7 +4,7 @@
 
 प्रत्येक अॅप कोणासाठी डिझाइन केले आहे, ते कोणते कार्य पूर्ण करण्याचा प्रयत्न करत आहेत, आणि थेट App Store मार्ग यांचा प्रथम पक्ष निर्देशिका.
 
-33 प्रमाणित लाइव्ह iOS अॅप्स आणि 50 Apple स्थानिकांसाठी प्रकाशकांनी लिहिलेली शोध हेतू.
+34 प्रमाणित लाइव्ह iOS अॅप्स आणि 50 Apple स्थानिकांसाठी प्रकाशकांनी लिहिलेली शोध हेतू.
 
 **स्थानिक:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · **mr-IN** · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -89,6 +89,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 | अॅप | प्रकाशक शोध विचारणा | निर्णय संदर्भ | खरेदी मॉडेल | मार्गदर्शक | App Store |
 | --- | --- | --- | --- | --- | --- |
+| **AI Brief** | AI Brief — फाइलमधून स्पष्ट संदर्भ \| iOS App | चांगल्या संदर्भात, चांगल्या उत्तरे. | सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक | [मार्गदर्शक](https://alice51849.github.io/ios-app-guide/mr-IN/aibriefpack.html) | [App Store वरून AI Brief मिळवा](https://apps.apple.com/app/id6791658210) |
 | **Aim990** | iPhone साठी सर्वोत्तम TOEIC तयारी अॅप ऑफलाइन अभ्यास योजना | भाग ५ लहान दिसतो, पण अपूर्ण वाक्यांच्या प्रश्नांमुळे वेळ जास्त लागू शकतो जर व्याकरण आणि शब्दसंग्रह आपोआप नसेल. | सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक | [मार्गदर्शक](https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [App Store वरून Aim990 मिळवा →](https://apps.apple.com/in/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — दडपणात जलद अचूक उत्तरे \| iOS App | Aim990 Plus हे प्रौढ शिकणाऱ्यांसाठी इंग्रजी ऐकण्याचा आणि वाचनाचा सखोल सराव देणारे अॅप आहे. वेळेचे दडपण असतानाही लक्ष टिकवण्याची सवय लागावी म्हणून त्याचा | पैसे देऊन डाउनलोड करा | [मार्गदर्शक](https://alice51849.github.io/ios-app-guide/mr-IN/aim990plus.html) | [App Store वरून Aim990 Plus मिळवा](https://apps.apple.com/in/app/id6792483140) |
 | **CV Desk** | करिअर बदलणाऱ्यांसाठी सर्वोत्तम रिझ्युमे बिल्डर अॅप २०२६ | जेव्हा तुम्ही क्षेत्र बदलत असता, तेव्हा रिझ्युमेची समस्या वेगळी असते: तुमचा अनुभव खरा असतो पण कागदावर 'अनसंबंधित' असतो, आणि ATS फिल्टर्स तुम्हाला मानवी वाचनापूर्वी नाकारतात — CV Desk यासाठी तयार केले आहे. | सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक | [मार्गदर्शक](https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-resume-builder-app-for-career-changers-2026.html) | [App Store वरून CV Desk मिळवा →](https://apps.apple.com/in/app/id6781337213) |
@@ -125,7 +126,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## पूर्ण डेटासेट डाउनलोड करा
 
-JSON, JSONL आणि CSV मध्ये समान 1,650 नोंदी आहेत.
+JSON, JSONL आणि CSV मध्ये समान 1,700 नोंदी आहेत.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -133,6 +134,6 @@ JSON, JSONL आणि CSV मध्ये समान 1,650 नोंदी आ
 
 [मुख्यपृष्ठ](https://alice51849.github.io/ios-app-guide/mr-IN/index.html) · [मुक्त डेटा](https://alice51849.github.io/ios-app-guide/mr-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [परवाना](https://creativecommons.org/licenses/by/4.0/)
 
-अपडेट केलेले: 2026-07-28
+अपडेट केलेले: 2026-07-29
 
 CC BY 4.0 मूळ निर्देशिका संकलनावर लागू होते; अॅप नावे आणि App Store चिन्हे त्यांच्या मालकांची आहेत.

@@ -4,7 +4,7 @@
 
 En förstapartsöversikt över vem varje app är avsedd för, uppgiften de försöker slutföra och den direkta App Store-sökvägen.
 
-Utgivarens sökintentioner för 33 verifierade aktiva iOS-appar och 50 Apple-lokaler.
+Utgivarens sökintentioner för 34 verifierade aktiva iOS-appar och 50 Apple-lokaler.
 
 **Lokal:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · **sv** · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -89,6 +89,7 @@ Alfabetisk ordning efter appnamn – aldrig en rankning.
 
 | App | Utgivaresökfråga | Beslutskontext | Köpalternativ | Guide | App Store |
 | --- | --- | --- | --- | --- | --- |
+| **AI Brief** | AI Brief — Filer till tydlig kontext \| iOS App | Bättre sammanhang. Bättre svar. | Gratis att börja · livstidsupplåsning | [Guide](https://alice51849.github.io/ios-app-guide/sv/aibriefpack.html) | [Hämta AI Brief i App Store](https://apps.apple.com/app/id6791658210) |
 | **Aim990** | bästa TOEIC-förberedelseappen offline studieplan för iPhone | Del 5 ser kort ut, men de ofullständiga meningarna kan ta tid om grammatik och ordförråd inte sitter automatiskt. | Gratis att börja · livstidsupplåsning | [Guide](https://alice51849.github.io/ios-app-guide/sv/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Hämta Aim990 på App Store →](https://apps.apple.com/se/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Engelska prov under press \| iOS App | Aim990 Plus är en komplett träningsmiljö för vuxna som vill bli säkrare på att lyssna och läsa engelska när tiden är knapp. Dagens fokuserade flöde | Betald nedladdning | [Guide](https://alice51849.github.io/ios-app-guide/sv/aim990plus.html) | [Hämta Aim990 Plus i App Store](https://apps.apple.com/se/app/id6792483140) |
 | **CV Desk** | bästa CV-byggarappen för karriärbytare 2026 | När du byter bransch är CV-problemet annorlunda: din erfarenhet är verklig men 'orelaterad' på papper, och ATS-filter avvisar dig innan en människa läser det — CV Desk är byggd för detta. | Gratis att börja · livstidsupplåsning | [Guide](https://alice51849.github.io/ios-app-guide/sv/answers/best-resume-builder-app-for-career-changers-2026.html) | [Hämta CV Desk på App Store →](https://apps.apple.com/se/app/id6781337213) |
@@ -125,7 +126,7 @@ Alfabetisk ordning efter appnamn – aldrig en rankning.
 
 ## Ladda ner hela datasetet
 
-JSON, JSONL och CSV innehåller samma 1 650 poster.
+JSON, JSONL och CSV innehåller samma 1 700 poster.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -133,6 +134,6 @@ JSON, JSONL och CSV innehåller samma 1 650 poster.
 
 [Hem](https://alice51849.github.io/ios-app-guide/sv/index.html) · [Öppna data](https://alice51849.github.io/ios-app-guide/sv/data/lumi-studio-publisher-search-intent-catalog.html) · [Licens](https://creativecommons.org/licenses/by/4.0/)
 
-Uppdaterad: 2026-07-28
+Uppdaterad: 2026-07-29
 
 CC BY 4.0 gäller för den ursprungliga katalogsammanställningen; appnamn och App Store-märken tillhör sina respektive ägare.

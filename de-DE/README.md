@@ -4,7 +4,7 @@
 
 Ein direkt vom Entwickler veröffentlichter Katalog, der zeigt, für wen jede App entwickelt wurde, welche Aufgabe die jeweilige Person erledigen möchte und wie sie direkt zum App Store gelangt.
 
-Vom Herausgeber verfasste Suchintentionen für 33 verifizierte, im App Store verfügbare iOS Apps und 50 Apple-Sprachregionen.
+Vom Herausgeber verfasste Suchintentionen für 34 verifizierte, im App Store verfügbare iOS Apps und 50 Apple-Sprachregionen.
 
 **Sprachregion:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · **de-DE** · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -89,6 +89,7 @@ Alphabetisch nach App-Namen — niemals eine Rangliste.
 
 | App | Suchanfrage des Herausgebers | Entscheidungskontext | Kaufmodell | Leitfaden | App Store |
 | --- | --- | --- | --- | --- | --- |
+| **AI Brief** | AI Brief — Dateien in klaren Kontext \| iOS App | Besserer Kontext. Bessere Antworten. | Kostenloser Einstieg · dauerhafte Freischaltung | [Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/aibriefpack.html) | [AI Brief im App Store laden](https://apps.apple.com/app/id6791658210) |
 | **Aim990** | beste TOEIC-Vorbereitungs-App mit Offline-Lernplan für iPhone | Teil 5 wirkt kurz, aber diese Lückensatzfragen können Zeit kosten, wenn Grammatik und Wortschatz nicht automatisch sitzen. | Kostenloser Einstieg · dauerhafte Freischaltung | [Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Aim990 im App Store herunterladen →](https://apps.apple.com/de/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Englisch-Prüfung unter Druck \| iOS App | Aim990 Plus ist eine umfassende Trainingsumgebung für Erwachsene, die englische Hör- und Leseaufgaben auch unter Zeitdruck sicher bearbeiten möchten. Der | Bezahlter Herunterladen | [Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/aim990plus.html) | [Aim990 Plus im App Store laden](https://apps.apple.com/de/app/id6792483140) |
 | **CV Desk** | beste Lebenslauf-App für Berufswechsler 2026 | Beim Branchenwechsel ist das Lebenslaufproblem anders: Ihre Erfahrung ist echt, aber auf dem Papier „nicht verwandt“, und ATS-Filter lehnen Sie ab, bevor ein Mensch sie liest – CV Desk ist dafür gemacht. | Kostenloser Einstieg · dauerhafte Freischaltung | [Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/answers/best-resume-builder-app-for-career-changers-2026.html) | [CV Desk im App Store herunterladen →](https://apps.apple.com/de/app/id6781337213) |
@@ -125,7 +126,7 @@ Alphabetisch nach App-Namen — niemals eine Rangliste.
 
 ## Den vollständigen Datensatz herunterladen
 
-JSON, JSONL und CSV enthalten dieselben 1.650 Einträge.
+JSON, JSONL und CSV enthalten dieselben 1.700 Einträge.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -133,6 +134,6 @@ JSON, JSONL und CSV enthalten dieselben 1.650 Einträge.
 
 [Startseite](https://alice51849.github.io/ios-app-guide/de-DE/index.html) · [Offene Daten](https://alice51849.github.io/ios-app-guide/de-DE/data/lumi-studio-publisher-search-intent-catalog.html) · [Lizenz](https://creativecommons.org/licenses/by/4.0/)
 
-Aktualisiert: 2026-07-28
+Aktualisiert: 2026-07-29
 
 CC BY 4.0 gilt für die ursprüngliche Katalogzusammenstellung; App-Namen und App Store Marken gehören ihren jeweiligen Eigentümern.

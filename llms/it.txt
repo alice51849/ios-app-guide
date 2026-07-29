@@ -3,7 +3,7 @@
 > Informazioni strutturate su ogni app iOS — funzioni, prezzo e FAQ.
 
 locale: it
-apps: 33
+apps: 34
 - Elenco app: https://alice51849.github.io/ios-app-guide/it/tools/private-pay-once-iphone-app-finder.html
 - Elenco app · PWA: https://alice51849.github.io/ios-app-guide/it/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/it.jsonld
@@ -27,6 +27,10 @@ apps: 33
 - Elenco app · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - Elenco app · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [AI Brief](https://alice51849.github.io/ios-app-guide/it/aibriefpack.html) — Dai file a un contesto chiaro
+  - Riunisci schermate, documenti e note. Mantieni i fatti. Rivedi i dettagli privati. Copia un riepilogo chiaro.
+  - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
+  - App Store: https://apps.apple.com/app/id6791658210
 - [Aim990 - Preparazione TOEIC](https://alice51849.github.io/ios-app-guide/it/aim990.html) — Il tuo coach personale
   - Migliora il tuo punteggio TOEIC con Aim990! Un coach di studio di 30 giorni per ascolto e lettura, senza abbonamenti e senza pubblicità.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.

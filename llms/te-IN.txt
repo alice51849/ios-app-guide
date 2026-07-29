@@ -3,7 +3,7 @@
 > ప్రతి iOS యాప్ ఫీచర్లు, ధరలు మరియు తరచుగా అడిగే ప్రశ్నలపై క్రమబద్ధమైన సమాచారం.
 
 locale: te-IN
-apps: 33
+apps: 34
 - యాప్ డైరెక్టరీ: https://alice51849.github.io/ios-app-guide/te-IN/tools/private-pay-once-iphone-app-finder.html
 - యాప్ డైరెక్టరీ · PWA: https://alice51849.github.io/ios-app-guide/te-IN/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/te-IN.jsonld
@@ -27,6 +27,10 @@ apps: 33
 - యాప్ డైరెక్టరీ · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - యాప్ డైరెక్టరీ · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [AI Brief](https://alice51849.github.io/ios-app-guide/te-IN/aibriefpack.html) — ఫైళ్ల నుంచి స్పష్టమైన సందర్భం
+  - స్క్రీన్‌షాట్‌లు, డాక్యుమెంట్‌లు, నోట్‌లను ఒకచోట చేర్చండి. వాస్తవాలను ఉంచండి. ప్రైవేట్ వివరాలను సమీక్షించండి. ఒక స్పష్టమైన బ్రీఫ్‌ను కాపీ చేయండి.
+  - ధర: ఉచితంగా డౌన్‌లోడ్ చేసుకోండి. ఒకసారి కొనుగోలుతో అన్ని ఫీచర్లను శాశ్వతంగా అన్‌లాక్ చేసుకోండి—సబ్‌స్క్రిప్షన్ లేదు.
+  - App Store: https://apps.apple.com/app/id6791658210
 - [Aim990 Plus](https://alice51849.github.io/ios-app-guide/te-IN/aim990plus.html) — ఆంగ్ల ఒత్తిడి సాధన
   - సమయ ఒత్తిడిలో వినే, చదివే నైపుణ్యాలను పెంచుకోండి. సన్నాహక దశ నుంచి తప్పుల పునఃసాధన వరకు స్పష్టమైన క్రమంలో ప్రతిరోజూ ముందుకు సాగండి.
   - ధర: ఒకే ముందస్తు ధరతో చెల్లింపు డౌన్‌లోడ్, సబ్‌స్క్రిప్షన్ లేదు.

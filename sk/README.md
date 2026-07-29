@@ -4,7 +4,7 @@
 
 Katalóg prvej strany, ktorý uvádza, pre koho je každá aplikácia určená, aký úkon sa snaží používateľ dokončiť a priamu cestu do App Store.
 
-Zámery vyhľadávania vytvorené vydavateľom pre 33 overených aktívnych iOS aplikácií a 50 lokalít Apple.
+Zámery vyhľadávania vytvorené vydavateľom pre 34 overených aktívnych iOS aplikácií a 50 lokalít Apple.
 
 **Lokalita:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · **sk** · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -89,6 +89,7 @@ Abecedne podľa názvu aplikácie — nikdy nie podľa poradia.
 
 | Aplikácia | Dopyt vydavateľa | Kontext rozhodovania | Model nákupu | Sprievodca | App Store |
 | --- | --- | --- | --- | --- | --- |
+| **AI Brief** | AI Brief — Súbory na jasný kontext \| iOS App | Lepší kontext, lepšie odpovede. | Zadarmo na začiatok · doživotné odomknutie | [Sprievodca](https://alice51849.github.io/ios-app-guide/sk/aibriefpack.html) | [Stiahnuť AI Brief v App Store](https://apps.apple.com/app/id6791658210) |
 | **Aim990** | najlepšia aplikácia na prípravu TOEIC offline študijný plán pre iPhone | Časť 5 vyzerá krátka, ale otázky s neúplnými vetami môžu zabrať veľa času, ak gramatika a slovná zásoba nie sú automatické. | Zadarmo na začiatok · doživotné odomknutie | [Sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Získajte Aim990 v App Store →](https://apps.apple.com/sk/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Istota pod časovým tlakom \| iOS App | Rozumieť angličtine je jedna vec. Zachovať si presnosť, keď ubiehajú minúty, je druhá. Aim990 Plus je intenzívny tréning počúvania a čítania pre | Platené stiahnutie | [Sprievodca](https://alice51849.github.io/ios-app-guide/sk/aim990plus.html) | [Stiahnuť Aim990 Plus v App Store](https://apps.apple.com/sk/app/id6792483140) |
 | **CV Desk** | najlepšia aplikácia na tvorbu životopisu pre zmenu kariéry 2026 | Keď meníte odbor, problém so životopisom je iný: vaše skúsenosti sú reálne, ale na papieri 'nesúvisiace' a ATS filtre vás odmietnu skôr, než človek prečíta — CV Desk je na to vytvorený. | Zadarmo na začiatok · doživotné odomknutie | [Sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-resume-builder-app-for-career-changers-2026.html) | [Získajte CV Desk v App Store →](https://apps.apple.com/sk/app/id6781337213) |
@@ -125,7 +126,7 @@ Abecedne podľa názvu aplikácie — nikdy nie podľa poradia.
 
 ## Stiahnite si kompletný súbor údajov
 
-Formáty JSON, JSONL a CSV obsahujú rovnakých 1 650 záznamov.
+Formáty JSON, JSONL a CSV obsahujú rovnakých 1 700 záznamov.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -133,6 +134,6 @@ Formáty JSON, JSONL a CSV obsahujú rovnakých 1 650 záznamov.
 
 [Domov](https://alice51849.github.io/ios-app-guide/sk/index.html) · [Otvárame dáta](https://alice51849.github.io/ios-app-guide/sk/data/lumi-studio-publisher-search-intent-catalog.html) · [Licencia](https://creativecommons.org/licenses/by/4.0/)
 
-Aktualizované: 2026-07-28
+Aktualizované: 2026-07-29
 
 Na pôvodné zostavenie katalógu sa vzťahuje licencia CC BY 4.0; názvy aplikácií a značky App Store patria ich vlastníkom.

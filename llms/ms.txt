@@ -3,7 +3,7 @@
 > Maklumat berstruktur setiap aplikasi iOS — ciri, harga dan FAQ.
 
 locale: ms
-apps: 33
+apps: 34
 - Direktori aplikasi: https://alice51849.github.io/ios-app-guide/ms/tools/private-pay-once-iphone-app-finder.html
 - Direktori aplikasi · PWA: https://alice51849.github.io/ios-app-guide/ms/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ms.jsonld
@@ -27,6 +27,10 @@ apps: 33
 - Direktori aplikasi · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - Direktori aplikasi · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [AI Brief](https://alice51849.github.io/ios-app-guide/ms/aibriefpack.html) — Fail jadi konteks yang jelas
+  - Kumpulkan tangkapan skrin, dokumen dan nota. Simpan faktanya. Semak butiran peribadi. Salin satu taklimat yang jelas.
+  - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.
+  - App Store: https://apps.apple.com/app/id6791658210
 - [Aim990 Plus](https://alice51849.github.io/ios-app-guide/ms/aim990plus.html) — Fokus Pantas Dalam Tekanan
   - Bina ketahanan mendengar dan membaca melalui sesi bermasa, ulang kaji kesilapan, simulasi fleksibel serta analisis kelemahan—sepenuhnya luar talian.
   - Harga: Muat turun berbayar dengan satu harga pendahuluan tanpa langganan.

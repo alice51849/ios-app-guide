@@ -3,7 +3,7 @@
 > Informació estructurada sobre les funcions, el preu i les preguntes freqüents de cada app per a iOS.
 
 locale: ca
-apps: 33
+apps: 34
 - Directori d’apps: https://alice51849.github.io/ios-app-guide/ca/tools/private-pay-once-iphone-app-finder.html
 - Directori d’apps · PWA: https://alice51849.github.io/ios-app-guide/ca/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld
@@ -27,6 +27,10 @@ apps: 33
 - Directori d’apps · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - Directori d’apps · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [AI Brief](https://alice51849.github.io/ios-app-guide/ca/aibriefpack.html) — Fitxers a context clar
+  - Agrupa captures de pantalla, documents i notes. Conserva els fets. Revisa els detalls privats. Copia un resum clar.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions per sempre, sense subscripció.
+  - App Store: https://apps.apple.com/app/id6791658210
 - [Aim990](https://alice51849.github.io/ios-app-guide/ca/aim990.html) — Pla de 30 dies per preparar el TOEIC
   - Prepara el TOEIC durant 30 dies amb plans diaris, pràctica dels punts febles i seguiment del progrés.
   - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions per sempre, sense subscripció.

@@ -4,7 +4,7 @@
 
 Um catálogo publicado diretamente pelo programador que explica a quem se destina cada app, a tarefa que pretende realizar e o acesso direto à App Store.
 
-Intenções de pesquisa redigidas pelo editor para 33 apps iOS verificadas e disponíveis em 50 idiomas e regiões Apple.
+Intenções de pesquisa redigidas pelo editor para 34 apps iOS verificadas e disponíveis em 50 idiomas e regiões Apple.
 
 **Local:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · **pt-PT** · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -89,6 +89,7 @@ Ordem alfabética pelo nome da app — nunca uma classificação.
 
 | App | Consulta do editor | Contexto de decisão | Modelo de compra | Guia | App Store |
 | --- | --- | --- | --- | --- | --- |
+| **AI Brief** | AI Brief — Ficheiros em contexto claro \| iOS App | Melhor contexto. Melhores respostas. | Grátis para começar · desbloqueio permanente | [Guia](https://alice51849.github.io/ios-app-guide/pt-PT/aibriefpack.html) | [Baixe AI Brief na App Store](https://apps.apple.com/app/id6791658210) |
 | **Aim990** | melhor app de preparação TOEIC plano de estudo offline para iPhone | A Parte 5 parece curta, mas as perguntas de frases incompletas podem consumir tempo se gramática e vocabulário não forem automáticos. | Grátis para começar · desbloqueio permanente | [Guia](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Obtenha o Aim990 na App Store →](https://apps.apple.com/pt/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Inglês contra o relógio \| iOS App | Treine a compreensão do inglês com sessões que exigem atenção, ritmo e resistência. Aim990 Plus destina-se a adultos que pretendem praticar de forma | Descarregamento pago | [Guia](https://alice51849.github.io/ios-app-guide/pt-PT/aim990plus.html) | [Baixe Aim990 Plus na App Store](https://apps.apple.com/pt/app/id6792483140) |
 | **CV Desk** | melhor app construtor de currículos para quem muda de carreira 2026 | Ao mudar de área, o problema do currículo é diferente: a sua experiência é real mas 'não relacionada' no papel, e os filtros ATS rejeitam-no antes de um humano ler — o CV Desk foi criado para isto. | Grátis para começar · desbloqueio permanente | [Guia](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-resume-builder-app-for-career-changers-2026.html) | [Obtenha o CV Desk na App Store →](https://apps.apple.com/pt/app/id6781337213) |
@@ -125,7 +126,7 @@ Ordem alfabética pelo nome da app — nunca uma classificação.
 
 ## Descarregar o conjunto de dados completo
 
-JSON, JSONL e CSV contêm os mesmos 1.650 registos.
+JSON, JSONL e CSV contêm os mesmos 1.700 registos.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -133,6 +134,6 @@ JSON, JSONL e CSV contêm os mesmos 1.650 registos.
 
 [Início](https://alice51849.github.io/ios-app-guide/pt-PT/index.html) · [Dados abertos](https://alice51849.github.io/ios-app-guide/pt-PT/data/lumi-studio-publisher-search-intent-catalog.html) · [Licença](https://creativecommons.org/licenses/by/4.0/)
 
-Atualizado: 2026-07-28
+Atualizado: 2026-07-29
 
 A licença CC BY 4.0 aplica-se à compilação original do catálogo; os nomes dos apps e marcas da App Store pertencem aos seus proprietários.

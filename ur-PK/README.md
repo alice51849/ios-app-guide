@@ -4,7 +4,7 @@
 
 ایسا کیٹلاگ جسے ڈویلپر براہ راست شائع کرتا ہے اور جو بتاتا ہے کہ ہر ایپ کس کے لیے بنائی گئی ہے، صارف کون سا کام مکمل کرنا چاہتا ہے اور App Store تک براہ راست کیسے پہنچنا ہے۔
 
-33 تصدیق شدہ اور App Store پر دستیاب iOS ایپس اور Apple کے 50 زبان و خطہ لوکیلز کے لیے پبلشر کی تحریر کردہ سرچ انٹینٹس۔
+34 تصدیق شدہ اور App Store پر دستیاب iOS ایپس اور Apple کے 50 زبان و خطہ لوکیلز کے لیے پبلشر کی تحریر کردہ سرچ انٹینٹس۔
 
 **زبان و خطہ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · **ur-PK** · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -89,6 +89,7 @@ App Store پر دستیابی کی تصدیق شدہ ہر ایپ کے لیے ا�
 
 | ایپ | پبلشر کی سرچ کوئری | فیصلہ سازی کا سیاق و سباق | خریداری کا ماڈل | گائیڈ | App Store |
 | --- | --- | --- | --- | --- | --- |
+| **AI Brief** | AI Brief — فائلوں سے واضح سیاق \| iOS App | بہتر سیاق و سباق۔ بہتر جوابات۔ | مفت آغاز · مستقل ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/aibriefpack.html) | [App Store سے AI Brief حاصل کریں](https://apps.apple.com/app/id6791658210) |
 | **Aim990** | iPhone کے لیے بہترین TOEIC پریپ ایپ آف لائن اسٹڈی پلان | پارٹ 5 چھوٹا لگتا ہے، لیکن وہ نامکمل جملے والے سوالات وقت ضائع کر سکتے ہیں اگر گرامر اور الفاظ خودکار نہ ہوں۔ | مفت آغاز · مستقل ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Aim990 ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — سننے اور پڑھنے کی مشق \| iOS App | یہ ایپ ان بالغ افراد کے لیے بنائی گئی ہے جو وقت کے دباؤ میں انگریزی سننے اور پڑھنے کی درستگی اور رفتار بہتر کرنا چاہتے ہیں۔ بے ترتیب سوالات دہرانے کے بجائے | ادا شدہ ڈاؤن لوڈ | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/aim990plus.html) | [App Store سے Aim990 Plus حاصل کریں](https://apps.apple.com/pk/app/id6792483140) |
 | **CV ڈیسک** | 2026 کے لیے کیریئر چینجرز کے لیے بہترین ریزیومے بلڈر ایپ | جب آپ شعبہ بدل رہے ہوں، تو ریزیومے کا مسئلہ مختلف ہوتا ہے: آپ کا تجربہ حقیقی ہے لیکن کاغذ پر 'غیر متعلقہ' ہے، اور ATS فلٹر آپ کو انسان کے پڑھنے سے پہلے مسترد کر دیتے ہیں — CV ڈیسک اسی کے لیے بنایا گیا ہے۔ | مفت آغاز · مستقل ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-resume-builder-app-for-career-changers-2026.html) | [CV ڈیسک ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6781337213) |
@@ -125,7 +126,7 @@ App Store پر دستیابی کی تصدیق شدہ ہر ایپ کے لیے ا�
 
 ## مکمل ڈیٹا سیٹ ڈاؤن لوڈ کریں
 
-JSON، JSONL اور CSV میں وہی 1,650 ریکارڈز شامل ہیں۔
+JSON، JSONL اور CSV میں وہی 1,700 ریکارڈز شامل ہیں۔
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -133,6 +134,6 @@ JSON، JSONL اور CSV میں وہی 1,650 ریکارڈز شامل ہیں۔
 
 [ہوم](https://alice51849.github.io/ios-app-guide/ur-PK/index.html) · [کھلا ڈیٹا](https://alice51849.github.io/ios-app-guide/ur-PK/data/lumi-studio-publisher-search-intent-catalog.html) · [لائسنس](https://creativecommons.org/licenses/by/4.0/)
 
-اپ ڈیٹ کیا گیا: 2026-07-28
+اپ ڈیٹ کیا گیا: 2026-07-29
 
 CC BY 4.0 اصل کیٹلاگ کی تدوین پر لاگو ہوتا ہے؛ ایپس کے نام اور App Store کے نشانات ان کے مالکان کی ملکیت ہیں۔

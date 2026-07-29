@@ -13,6 +13,7 @@ from official_locales import OFFICIAL_LOCALES
 
 
 CURRENT_LIVE_APPS = {
+    "aibriefpack",
     "aim990",
     "aim990plus",
     "cvdesk",
@@ -289,6 +290,14 @@ class PersonaLocaleCoverageTests(unittest.TestCase):
         self.assertIn("actual completion", copy)
         self.assertIn("one lifetime pro purchase", copy)
         self.assertNotIn("project management", copy)
+
+    def test_ai_brief_persona_preserves_review_and_privacy_boundaries(self):
+        copy = str(PERSONAS["aibriefpack"]).lower()
+        self.assertIn("source and confidence", copy)
+        self.assertIn("never removed automatically", copy)
+        self.assertIn("does not promise anonymity", copy)
+        self.assertIn("one optional lifetime pro purchase", copy)
+        self.assertNotIn("sends my files to an ai service automatically?': 'yes", copy)
 
     def test_reviewed_tripbee_subtitle_overrides_translate_generic_copy(self):
         source = "TripBee Pro: Trip Planner"

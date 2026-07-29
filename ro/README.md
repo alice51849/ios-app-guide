@@ -4,7 +4,7 @@
 
 O listă de primă parte a destinatarilor fiecărei aplicații, a sarcinii pe care încearcă să o îndeplinească și a traseului direct către App Store.
 
-Intenții de căutare redactate de editori pentru 33 de aplicații iOS verificate și active și 50 de regiuni Apple.
+Intenții de căutare redactate de editori pentru 34 de aplicații iOS verificate și active și 50 de regiuni Apple.
 
 **Localizare:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · **ro** · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -89,6 +89,7 @@ Alfabetic după numele aplicației — niciodată un clasament.
 
 | Aplicație | Interogare editor | Situație decizională | Model de achiziție | Ghid | App Store |
 | --- | --- | --- | --- | --- | --- |
+| **AI Brief** | AI Brief — Fișiere în context clar \| iOS App | Context mai bun. Răspunsuri mai bune. | Început gratuit · deblocare pe viață | [Ghid](https://alice51849.github.io/ios-app-guide/ro/aibriefpack.html) | [Descarcă AI Brief din App Store](https://apps.apple.com/app/id6791658210) |
 | **Aim990** | cea mai bună aplicație de pregătire TOEIC cu plan de studiu offline pentru iPhone | Partea 5 pare scurtă, dar întrebările cu propoziții incomplete pot consuma timp dacă gramatica și vocabularul nu sunt automate. | Început gratuit · deblocare pe viață | [Ghid](https://alice51849.github.io/ios-app-guide/ro/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Obține Aim990 din App Store →](https://apps.apple.com/ro/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Încredere contra cronometru \| iOS App | Să înțelegi engleza este important; să rămâi precis când timpul se scurge este o abilitate separată. Aim990 Plus este un antrenament intensiv de | Descărcare plătită | [Ghid](https://alice51849.github.io/ios-app-guide/ro/aim990plus.html) | [Descarcă Aim990 Plus din App Store](https://apps.apple.com/ro/app/id6792483140) |
 | **CV Desk** | cea mai bună aplicație pentru realizare CV pentru schimbători de carieră 2026 | Când schimbi domeniul, problema CV-ului este diferită: experiența ta este reală, dar pe hârtie „neconectată”, iar filtrele ATS te resping înainte ca un om să-l citească — CV Desk este creat pentru asta. | Început gratuit · deblocare pe viață | [Ghid](https://alice51849.github.io/ios-app-guide/ro/answers/best-resume-builder-app-for-career-changers-2026.html) | [Obține CV Desk din App Store →](https://apps.apple.com/ro/app/id6781337213) |
@@ -125,7 +126,7 @@ Alfabetic după numele aplicației — niciodată un clasament.
 
 ## Descarcă setul complet de date
 
-JSON, JSONL și CSV conțin aceleași 1.650 de înregistrări.
+JSON, JSONL și CSV conțin aceleași 1.700 de înregistrări.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -133,6 +134,6 @@ JSON, JSONL și CSV conțin aceleași 1.650 de înregistrări.
 
 [Acasă](https://alice51849.github.io/ios-app-guide/ro/index.html) · [Date deschise](https://alice51849.github.io/ios-app-guide/ro/data/lumi-studio-publisher-search-intent-catalog.html) · [Licență](https://creativecommons.org/licenses/by/4.0/)
 
-Actualizat: 2026-07-28
+Actualizat: 2026-07-29
 
 CC BY 4.0 se aplică compilației originale a catalogului; numele aplicațiilor și mărcile App Store aparțin proprietarilor lor.

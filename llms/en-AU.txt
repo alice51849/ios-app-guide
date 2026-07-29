@@ -3,7 +3,7 @@
 > Structured information about each iOS app — features, pricing and FAQs.
 
 locale: en-AU
-apps: 33
+apps: 34
 - Apps directory: https://alice51849.github.io/ios-app-guide/en-AU/tools/private-pay-once-iphone-app-finder.html
 - Apps directory · PWA: https://alice51849.github.io/ios-app-guide/en-AU/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-AU.jsonld
@@ -27,6 +27,10 @@ apps: 33
 - Apps directory · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - Apps directory · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [AI Brief](https://alice51849.github.io/ios-app-guide/en-AU/aibriefpack.html) — Files to Clear Context
+  - Bring screenshots, documents, and notes together. Keep the facts. Review private details. Copy one clear brief.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/app/id6791658210
 - [Aim990](https://alice51849.github.io/ios-app-guide/en-AU/aim990.html) — Master TOEIC Listening & Reading
   - Unlock your potential with Aim990! A 30-day study plan designed to boost your TOEIC Listening and Reading skills.
   - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.

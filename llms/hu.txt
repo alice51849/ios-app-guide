@@ -3,7 +3,7 @@
 > Áttekinthető információk minden iOS-alkalmazás funkcióiról, áráról és gyakori kérdéseiről.
 
 locale: hu
-apps: 33
+apps: 34
 - Alkalmazáskatalógus: https://alice51849.github.io/ios-app-guide/hu/tools/private-pay-once-iphone-app-finder.html
 - Alkalmazáskatalógus · PWA: https://alice51849.github.io/ios-app-guide/hu/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld
@@ -27,6 +27,10 @@ apps: 33
 - Alkalmazáskatalógus · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - Alkalmazáskatalógus · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [AI Brief](https://alice51849.github.io/ios-app-guide/hu/aibriefpack.html) — Fájlokból tiszta kontextus
+  - Gyűjtsd össze a képernyőfotókat, dokumentumokat és jegyzeteket. Tarts meg a tényeket. Nézd át a privát adatokat. Másolj ki egy áttekinthető összefoglalót.
+  - Ár: Töltse le ingyen. Egyetlen vásárlással végleg feloldhat minden funkciót—előfizetés nélkül.
+  - App Store: https://apps.apple.com/app/id6791658210
 - [Aim990 - TOEIC Felkészítő](https://alice51849.github.io/ios-app-guide/hu/aim990.html) — Maximális eredmény 30 nap alatt
   - Felkészültél a TOEIC-ra? Az Aim990 segít 30 nap alatt a legjobb eredmény elérésében, hirdetések nélkül!
   - Ár: Töltse le ingyen. Egyetlen vásárlással végleg feloldhat minden funkciót—előfizetés nélkül.

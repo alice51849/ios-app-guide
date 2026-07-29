@@ -4,7 +4,7 @@
 
 Ensimmäisen osapuolen luettelo siitä, kenelle kukin sovellus on suunniteltu, mitä tehtävää he pyrkivät suorittamaan ja suora App Store -polku.
 
-Julkaisijan laatimat hakutarkoitukset 33 varmennetussa toimivassa iOS-sovelluksessa ja 50 Apple-lokaalissa.
+Julkaisijan laatimat hakutarkoitukset 34 varmennetussa toimivassa iOS-sovelluksessa ja 50 Apple-lokaalissa.
 
 **Lokaali:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · **fi** · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -89,6 +89,7 @@ Aakkosjärjestyksessä sovelluksen nimen mukaan — ei koskaan sijoitus.
 
 | Sovellus | Julkaisijan hakukysely | Päätöskonteksti | Ostomalli | Opas | App Store |
 | --- | --- | --- | --- | --- | --- |
+| **AI Brief** | AI Brief — Tiedostoista selkeä konteksti \| iOS App | Parempi konteksti. Paremmat vastaukset. | Ilmainen aloitus · elinikäinen avaus | [Opas](https://alice51849.github.io/ios-app-guide/fi/aibriefpack.html) | [Lataa AI Brief App Storesta](https://apps.apple.com/app/id6791658210) |
 | **Aim990** | paras TOEIC-valmistelusovellus offline-opintosuunnitelmalla iPhonelle | Osa 5 näyttää lyhyeltä, mutta keskeneräiset lauseet voivat viedä aikaa, jos kielioppi ja sanasto eivät ole automaattisia. | Ilmainen aloitus · elinikäinen avaus | [Opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Hanki Aim990 App Storesta →](https://apps.apple.com/fi/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — Englantia paineen alla \| iOS App | Aim990 Plus on aikuisille suunniteltu englannin kuuntelu- ja lukuharjoittelun kokonaisuus, joka auttaa säilyttämään keskittymisen myös ajan käydessä vähiin | Maksullinen ladattavaksi | [Opas](https://alice51849.github.io/ios-app-guide/fi/aim990plus.html) | [Lataa Aim990 Plus App Storesta](https://apps.apple.com/fi/app/id6792483140) |
 | **CV Desk** | paras ansioluettelon laatijasovellus uranvaihtajille 2026 | Kun vaihdat alaa, ansioluettelon ongelma on erilainen: kokemuksesi on todellista, mutta 'ei liity alaan' paperilla, ja ATS-suodattimet hylkäävät sinut ennen kuin ihminen ehtii lukea — CV Desk on tehty tätä varten. | Ilmainen aloitus · elinikäinen avaus | [Opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-resume-builder-app-for-career-changers-2026.html) | [Hanki CV Desk App Storesta →](https://apps.apple.com/fi/app/id6781337213) |
@@ -125,7 +126,7 @@ Aakkosjärjestyksessä sovelluksen nimen mukaan — ei koskaan sijoitus.
 
 ## Lataa koko tietoaineisto
 
-JSON, JSONL ja CSV sisältävät samat 1 650 tietuetta.
+JSON, JSONL ja CSV sisältävät samat 1 700 tietuetta.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -133,6 +134,6 @@ JSON, JSONL ja CSV sisältävät samat 1 650 tietuetta.
 
 [Etusivu](https://alice51849.github.io/ios-app-guide/fi/index.html) · [Avoin data](https://alice51849.github.io/ios-app-guide/fi/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisenssi](https://creativecommons.org/licenses/by/4.0/)
 
-Päivitetty: 2026-07-28
+Päivitetty: 2026-07-29
 
 CC BY 4.0 koskee alkuperäisen luettelon kokoamista; sovellusten nimet ja App Store -merkit kuuluvat omistajilleen.

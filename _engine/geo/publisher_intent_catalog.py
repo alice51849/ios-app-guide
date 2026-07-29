@@ -840,8 +840,12 @@ def _app_store_cta_label(source: str, app_id: str) -> str:
     )
 
 
-def _decision_context(source: str, answer_page: bool) -> str:
-    return _extract(
+def _decision_context(
+    source: str,
+    answer_page: bool,
+    app_id: str | None = None,
+) -> str:
+    context = _extract(
         source,
         (
             r'<p class="lead">(.*?)</p>'
@@ -850,6 +854,9 @@ def _decision_context(source: str, answer_page: bool) -> str:
         ),
         "localized decision context",
     )
+    if answer_page or len(context) >= 20 or app_id is None:
+        return context
+    return _localized_app_description(source, app_id)
 
 
 def _publisher_disclosure(
@@ -878,6 +885,44 @@ def _json_nodes(value: Any) -> Iterator[dict[str, Any]]:
     elif isinstance(value, list):
         for child in value:
             yield from _json_nodes(child)
+
+
+def _localized_app_description(source: str, app_id: str) -> str:
+    for raw in re.findall(
+        r'<script type="application/ld\+json">\s*(.*?)\s*</script>',
+        source,
+        flags=re.IGNORECASE | re.DOTALL,
+    ):
+        try:
+            payload = json.loads(raw)
+        except json.JSONDecodeError:
+            continue
+        for node in _json_nodes(payload):
+            node_type = node.get("@type")
+            types = (
+                {node_type}
+                if isinstance(node_type, str)
+                else set(node_type)
+                if isinstance(node_type, list)
+                else set()
+            )
+            description = node.get("description")
+            if (
+                types & {"MobileApplication", "SoftwareApplication"}
+                and f"id{app_id}" in json.dumps(node, ensure_ascii=False)
+                and isinstance(description, str)
+            ):
+                parts = []
+                for paragraph in re.split(r"\n\s*\n", description):
+                    value = single_line(paragraph)
+                    if value:
+                        parts.append(value)
+                    context = " ".join(parts)
+                    if len(context) >= 20:
+                        return context
+    raise ValueError(
+        f"Localized app description is too short for App Store ID {app_id}"
+    )
 
 
 def _localized_app_name(source: str, app_id: str) -> str:
@@ -1033,7 +1078,7 @@ def _page_record(
             r"<h1>(.*?)</h1>" if answer_page else r"<title>(.*?)</title>",
             "localized publisher query",
         ),
-        "decision_context": _decision_context(source, answer_page),
+        "decision_context": _decision_context(source, answer_page, app_id),
         "purchase_model": str(app["purchase_model"]),
         "one_time_option": bool(app["one_time_option"]),
         "source_persona_query": source_query,

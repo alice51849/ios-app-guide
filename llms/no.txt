@@ -3,7 +3,7 @@
 > Strukturert informasjon om funksjoner, priser og vanlige spørsmål for hver iOS-app.
 
 locale: no
-apps: 33
+apps: 34
 - Appkatalog: https://alice51849.github.io/ios-app-guide/no/tools/private-pay-once-iphone-app-finder.html
 - Appkatalog · PWA: https://alice51849.github.io/ios-app-guide/no/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/no.jsonld
@@ -27,6 +27,10 @@ apps: 33
 - Appkatalog · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - Appkatalog · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [AI Brief](https://alice51849.github.io/ios-app-guide/no/aibriefpack.html) — Filer til tydelig kontekst
+  - Samle skjermbilder, dokumenter og notater. Behold fakta. Gå gjennom private opplysninger. Kopier én tydelig oppsummering.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner permanent—uten abonnement.
+  - App Store: https://apps.apple.com/app/id6791658210
 - [Aim990 - TOEIC Trener](https://alice51849.github.io/ios-app-guide/no/aim990.html) — Forbedre dine TOEIC-ferdigheter
   - Nå kan du forberede deg til TOEIC-testen med Aim990! Få skreddersydde studieplaner og nå ditt mål uten annonser eller abonnement.
   - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner permanent—uten abonnement.

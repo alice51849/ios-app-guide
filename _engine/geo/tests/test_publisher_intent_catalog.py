@@ -163,6 +163,29 @@ class PublisherIntentLocalizationTests(unittest.TestCase):
                 localized_disclosure,
             )
 
+    def test_short_meta_uses_the_localized_app_description(self) -> None:
+        app_id = "6791658210"
+        source = (
+            '<meta name="description" content="短い説明。">'
+            '<script type="application/ld+json">'
+            + json.dumps(
+                {
+                    "@type": "SoftwareApplication",
+                    "url": f"https://apps.apple.com/app/id{app_id}",
+                    "description": (
+                        "短い説明。\n\n"
+                        "複数の資料を確認できる一つの明確な文脈に整理します。"
+                    ),
+                },
+                ensure_ascii=False,
+            )
+            + "</script>"
+        )
+        self.assertEqual(
+            "短い説明。 複数の資料を確認できる一つの明確な文脈に整理します。",
+            catalog._decision_context(source, False, app_id),
+        )
+
     def test_dynamic_counts_preserve_localized_numerals(self) -> None:
         arabic_digits = str.maketrans("0123456789,", "٠١٢٣٤٥٦٧٨٩٬")
         record_count = f"{catalog.EXPECTED_RECORD_COUNT:,}".translate(

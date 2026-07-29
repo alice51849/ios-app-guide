@@ -31,7 +31,7 @@ async function render() {
   document.documentElement.lang = locale;
   document.documentElement.dir = ["ar-SA", "he", "ur-PK"].includes(locale) ? "rtl" : "ltr";
   document.getElementById("page-title").textContent =
-    page === "marketing" ? "AI BriefPack" : pageContent.title;
+    page === "marketing" ? "AI Brief" : pageContent.title;
   document.getElementById("page-lead").textContent = pageContent.lead;
 
   const grid = document.getElementById("feature-grid");
@@ -68,4 +68,4 @@ async function render() {
   document.getElementById("privacy-link").textContent = content.privacyLabel;
 }
 
-render().catch((error) => console.error("AI BriefPack localization failed", error));
+render().catch((error) => console.error("AI Brief localization failed", error));

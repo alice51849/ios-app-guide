@@ -4,7 +4,7 @@
 
 O listă de primă parte a destinatarilor fiecărei aplicații, a sarcinii pe care încearcă să o îndeplinească și a traseului direct către App Store.
 
-Intenții de căutare redactate de editori pentru 34 de aplicații iOS verificate și active și 50 de regiuni Apple.
+Intenții de căutare redactate de editori pentru 35 de aplicații iOS verificate și active și 50 de regiuni Apple.
 
 **Localizare:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · **ro** · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ Alfabetic după numele aplicației — niciodată un clasament.
 | **Cyca** | cea mai bună aplicație de urmărire a ciclului fără cont necesar pentru iPhone | Într-o categorie unde sensibilitatea datelor este esențială, următorul ciclu păstrează totul — flux, stare de spirit, simptome, temperatură, intimitate — pe dispozitiv, fără cont și fără sincronizare în cloud — Cyca este creată pentru asta. | Început gratuit · deblocare pe viață | [Ghid](https://alice51849.github.io/ios-app-guide/ro/answers/best-period-tracker-app-no-account-required-iphone.html) | [Obține Cyca din App Store →](https://apps.apple.com/ro/app/id6782251621) |
 | **DailyMate** | cea mai bună aplicație cu fraze utile pentru călătorii și Apple Watch | Înainte de o călătorie, expresiile complete pentru situații reale sunt mai utile decât vocabularul izolat pe care trebuie să-l asamblezi sub presiune — DailyMate este creat pentru asta. | Descărcare plătită | [Ghid](https://alice51849.github.io/ios-app-guide/ro/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Obține DailyMate din App Store →](https://apps.apple.com/ro/app/id6790418321) |
 | **G+Money** | cea mai bună aplicație de urmărire buget de călătorie fără abonament pentru iPhone | Într-o călătorie ai nevoie de un tracker de buget care să funcționeze offline într-o țară fără date, să gestioneze mai multe valute și să nu ceară cont — organizat pe călătorii ca fiecare vacanță să fie separată — G+Money este creat pentru asta. | Descărcare plătită | [Ghid](https://alice51849.github.io/ios-app-guide/ro/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Obține G+Money din App Store →](https://apps.apple.com/ro/app/id6755782939) |
+| **G+Money Lite** | G+Money Lite — Cheltuieli, buget & valută \| iOS App | G+Money Lite — Converter de valută și tracker de cheltuieli inteligent pentru călătorii | Început gratuit · deblocare pe viață | [Ghid](https://alice51849.github.io/ios-app-guide/ro/gmoneylite.html) | [Descarcă G+Money Lite din App Store](https://apps.apple.com/ro/app/id6793436548) |
 | **HoursTag** | cea mai bună aplicație pentru cheltuieli conștiente ca să oprești cumpărăturile impulsive pentru iPhone | Cumpărăturile impulsive devin mai slabe când adaugi o mică pauză: câte ore din viața ta va costa de fapt această achiziție? | Descărcare plătită | [Ghid](https://alice51849.github.io/ios-app-guide/ro/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [Obține HoursTag din App Store →](https://apps.apple.com/ro/app/id6754218117) |
 | **HoursTag Lite** | HoursTag Lite — Descoperă prisma valorii \| iOS App | HoursTag Lite - Vezi adevărata valoare a lucrurilor | Început gratuit · deblocare pe viață | [Ghid](https://alice51849.github.io/ios-app-guide/ro/hourstaglite.html) | [Descarcă HoursTag Lite din App Store](https://apps.apple.com/ro/app/id6794039979) |
 | **LockHour Pro** | cea mai bună aplicație pentru blocarea rețelelor sociale în timpul studiului pentru iPhone | În timpul examenelor, voința nu este instrumentul — un blocaj ferm temporizat este — LockHour Pro este creat pentru asta. | Început gratuit · deblocare pe viață | [Ghid](https://alice51849.github.io/ios-app-guide/ro/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Descarcă LockHour Pro din App Store →](https://apps.apple.com/ro/app/id6780107485) |
@@ -126,7 +127,7 @@ Alfabetic după numele aplicației — niciodată un clasament.
 
 ## Descarcă setul complet de date
 
-JSON, JSONL și CSV conțin aceleași 1.700 de înregistrări.
+JSON, JSONL și CSV conțin aceleași 1.750 de înregistrări.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -134,6 +135,6 @@ JSON, JSONL și CSV conțin aceleași 1.700 de înregistrări.
 
 [Acasă](https://alice51849.github.io/ios-app-guide/ro/index.html) · [Date deschise](https://alice51849.github.io/ios-app-guide/ro/data/lumi-studio-publisher-search-intent-catalog.html) · [Licență](https://creativecommons.org/licenses/by/4.0/)
 
-Actualizat: 2026-07-29
+Actualizat: 2026-07-30
 
 CC BY 4.0 se aplică compilației originale a catalogului; numele aplicațiilor și mărcile App Store aparțin proprietarilor lor.

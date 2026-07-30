@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ja",
-  "dateModified": "2026-07-29",
-  "content_digest": "40f1fef3cf0a637dc1010463cbb853b82ebef0ada3346e1cd7fb4321114111af",
-  "generation_digest": "c15e37d2647a1e5ac95e11849810c08843b16111a9b5939e0d87defcbd5318b7",
+  "dateModified": "2026-07-30",
+  "content_digest": "15da0881b813653d283fe78ba4c16f0f9d1b43256b64b43cef08cab84c1dc45c",
+  "generation_digest": "0754104518b2116918910b0ea2e50f210f4474a166396a647550fc29b12d2972",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 34,
+  "record_count": 35,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ja.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ja.rss.xml",
@@ -507,6 +507,73 @@
       "publisher_disclosure": "アプリ開発者であるLumi Studioによる公式購入ガイドです。アプリ名は各所有者の商標であり、識別のためにのみ使用しています。書類、健康、学校、生産性に関する判断は、該当する公式要件を必ずご確認ください。",
       "source_persona_query": "best travel budget tracker app no subscription iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ja:gmoneylite",
+      "locale": "ja",
+      "app_key": "gmoneylite",
+      "app_name": "G+Money Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "G+Money Lite — 家計簿・予算・節約・為替換算 | iOS App",
+      "decision_context": "G+Money Lite — かしこい旅行両替＆家計簿 旅のお金を、もっとシンプルに 現地通貨で記録すれば、すぐに自国通貨に換算 — オンラインでもオフラインでも。 換算 • 自動または手動レート: 最新レートを自動取得することも、手動設定することもできます。オフラインでも動作します。 • アプリを開いたときに最新レートを取得します（約6時間ごと）。オフラインでも保存済みレートで使えます。 • 仲値の参考レートです。カードや現金とは異なる場合があります。 支出リスト • 1日の上限: 任意。各日が予算に対してどうかを表示します。 • カテゴリ別 · 旅程 · フィルター · 記録 • バックアップと復元: 支出・レート・カテゴリ・設定を含みます。 • Widget · Apple Watch すべてのデータは端末内にのみ保存。アカウント不要・追跡なし。レートは公開の為替サービスを使用します。 無料：為替・予算・基本集計 · 旅行1件 · 支出3件 買い切り · 永久利用 · サブスクなし 支出と旅行を無制限で永久に利用できます。",
+      "category": "finance",
+      "category_label": "お金・旅行",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "無料で開始・買い切りで永久解除",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "オフライン",
+        "アカウント不要",
+        "追跡なし",
+        "プライベート／端末内"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "ウィジェット",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "お金・旅行",
+        "無料で開始・買い切りで永久解除",
+        "オフライン",
+        "アカウント不要",
+        "追跡なし",
+        "プライベート／端末内",
+        "ウィジェット",
+        "Apple Watch",
+        "App Store · 無料"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/gmoneylite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/ja/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/ja/gmoneylite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fgmoneylite%2Fdecision%2Fl%2Fja%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ja.json",
+      "app_store_id": "6793436548",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
+      "app_store_url": "https://apps.apple.com/jp/app/id6793436548",
+      "app_store_cta_label": "App Store で G+Money Lite を入手",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料"
+      },
+      "guide_cta_label": "完全ガイドを読む",
+      "publisher_disclosure": "これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。",
+      "source_persona_query": "best free travel expense tracker with currency conversion for iphone",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

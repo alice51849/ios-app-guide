@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-29",
-  "content_digest": "cd2a71274b3bd5d3e00d6772cc5657280358d26d2762401c04e2999f54bac130",
+  "date_modified": "2026-07-30",
+  "content_digest": "e477229e5e10e5e7495c39b5b537e7b18cc4853bf893b82c75820eaf6baf23d4",
   "locale": "ko",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 34,
+  "record_count": 35,
   "apps": [
     {
       "key": "aibriefpack",
@@ -385,6 +385,58 @@
         "currency": "KRW",
         "formatted_price": "￦7,700",
         "storefront_url": "https://apps.apple.com/kr/app/id6755782939"
+      }
+    },
+    {
+      "key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "name": "G+Money Lite",
+      "summary": "G+Money Lite — 스마트 여행 환율 가계부",
+      "category": "finance",
+      "search_terms": [
+        "지출관리",
+        "용돈기입장",
+        "환율계산기",
+        "통화변환",
+        "여행경비",
+        "소비",
+        "가계부앱",
+        "돈관리",
+        "절약",
+        "지출",
+        "외화",
+        "환전",
+        "재테크",
+        "생활비",
+        "여행가계부",
+        "경비",
+        "소비관리",
+        "환율변환",
+        "오프라인",
+        "엔화환율",
+        "달러환율",
+        "유로환율",
+        "저축"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/kr/app/id6793436548",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ko/gmoneylite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "KRW",
+        "formatted_price": "무료",
+        "storefront_url": "https://apps.apple.com/kr/app/id6793436548"
       }
     },
     {

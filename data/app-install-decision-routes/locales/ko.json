@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ko",
-  "dateModified": "2026-07-29",
-  "content_digest": "40f1fef3cf0a637dc1010463cbb853b82ebef0ada3346e1cd7fb4321114111af",
-  "generation_digest": "c15e37d2647a1e5ac95e11849810c08843b16111a9b5939e0d87defcbd5318b7",
+  "dateModified": "2026-07-30",
+  "content_digest": "15da0881b813653d283fe78ba4c16f0f9d1b43256b64b43cef08cab84c1dc45c",
+  "generation_digest": "0754104518b2116918910b0ea2e50f210f4474a166396a647550fc29b12d2972",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 34,
+  "record_count": 35,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ko.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ko.rss.xml",
@@ -507,6 +507,73 @@
       "publisher_disclosure": "루미 스튜디오에서 제공하는 개발자 작성 가이드입니다. 앱 이름은 각 소유자의 상표이며 식별 목적으로만 사용됩니다. 문서, 건강, 학교, 생산성 관련 결정 시 공식 요구 사항을 반드시 확인하세요.",
       "source_persona_query": "best travel budget tracker app no subscription iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ko:gmoneylite",
+      "locale": "ko",
+      "app_key": "gmoneylite",
+      "app_name": "G+Money Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "G+Money Lite — 여행 가계부·예산·환율 | iOS App",
+      "decision_context": "G+Money Lite — 스마트 여행 환율 가계부 여행 경비, 이제 간단하게 현지 통화로 기록하면 자국 통화로 바로 환산 — 온라인이든 오프라인이든. 환산 • 자동 또는 수동 환율: 최신 환율을 자동으로 가져오거나 직접 설정할 수 있습니다. 오프라인에서도 작동합니다. • 앱을 열 때 최신 환율을 가져옵니다(약 6시간마다). 오프라인에서는 저장된 환율을 사용합니다. • 중간 참고 환율입니다. 카드·현금과 다를 수 있습니다. 지출 목록 • 하루 예산: 선택. 매일 예산 대비 지출을 확인하세요. • 분류별 · 여행 · 필터 · 기록 • 백업 및 복원: 지출, 환율, 분류, 설정을 포함합니다. • Widget · Apple Watch 모든 데이터는 기기에만 저장됩니다. 계정 없음, 추적 없음. 환율은 공개 환율 서비스를 사용합니다. 무료: 환율·예산·기본 요약 · 여행 1개 · 지출 3건 일회성 결제 · 평생 이용 · 구독 없음 지출과 여행을 평생 무제한으로 잠금 해제하세요.",
+      "category": "finance",
+      "category_label": "금융 & 여행",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "오프라인",
+        "계정 없음",
+        "추적 없음",
+        "프라이빗 / 기기 내"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "위젯",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "금융 & 여행",
+        "무료로 시작 · 평생 잠금 해제",
+        "오프라인",
+        "계정 없음",
+        "추적 없음",
+        "프라이빗 / 기기 내",
+        "위젯",
+        "Apple Watch",
+        "App Store · 무료"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/gmoneylite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/ko/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/ko/gmoneylite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fgmoneylite%2Fdecision%2Fl%2Fko%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
+      "app_store_id": "6793436548",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
+      "app_store_url": "https://apps.apple.com/kr/app/id6793436548",
+      "app_store_cta_label": "App Store에서 G+Money Lite 받기",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "KRW",
+        "formatted_price": "무료"
+      },
+      "guide_cta_label": "전체 안내서 읽기",
+      "publisher_disclosure": "이 자료는 목록에 있는 모든 앱의 개발사 Lumi Studio가 직접 발행한 1차 자료입니다.",
+      "source_persona_query": "best free travel expense tracker with currency conversion for iphone",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

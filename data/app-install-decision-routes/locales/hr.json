@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "hr",
-  "dateModified": "2026-07-29",
-  "content_digest": "40f1fef3cf0a637dc1010463cbb853b82ebef0ada3346e1cd7fb4321114111af",
-  "generation_digest": "c15e37d2647a1e5ac95e11849810c08843b16111a9b5939e0d87defcbd5318b7",
+  "dateModified": "2026-07-30",
+  "content_digest": "15da0881b813653d283fe78ba4c16f0f9d1b43256b64b43cef08cab84c1dc45c",
+  "generation_digest": "0754104518b2116918910b0ea2e50f210f4474a166396a647550fc29b12d2972",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 34,
+  "record_count": 35,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/hr.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/hr.rss.xml",
@@ -507,6 +507,73 @@
       "publisher_disclosure": "Vodič koji je napisao izdavač Lumi Studio, programer aplikacije. Nazivi aplikacija su zaštićeni znakovi njihovih vlasnika i koriste se samo za identifikaciju. Za dokumente, zdravlje, školu i odluke o produktivnosti provjerite službene zahtjeve gdje je to relevantno.",
       "source_persona_query": "best travel budget tracker app no subscription iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "hr:gmoneylite",
+      "locale": "hr",
+      "app_key": "gmoneylite",
+      "app_name": "G+Money Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "G+Money Lite — Troškovi, budžet i valute | iOS App",
+      "decision_context": "G+Money Lite — Pametan putni konverter valuta i praćenje troškova Putni novac, pojednostavljen Zabilježite svaku kupnju u lokalnoj valuti i odmah je vidite u svojoj domaćoj valuti — online ili offline. Konvertiraj • Živi ili ručni tečajevi: Možemo automatski preuzeti najnovije tečajeve, ili ih možete postaviti sami. Uvijek radi offline. • Preuzmite najnovije tečajeve kada otvorite aplikaciju (otprilike svaka 6 sati). Uvijek radi offline s vašim spremljenim tečajevima. • Referentni tečaj na srednjem tržištu. Kartice i gotovina mogu se razlikovati. Troškovi • Dnevni limit: Opcionalno. Vidite kako svaki dan prati protiv njega. • Po kategoriji · Putovanja · Filtri · Zapisnici • Sigurnosna kopija i obnova: Uključuje troškove, tečajeve, kategorije i postavke. • Widget · Apple Watch Sve ostaje na vašem uređaju. Nema računa, nema praćenja. Tečajevi koriste javnu uslugu tečaja. Besplatno: tečajevi, budžet, pregled · 1 putovanje · 3 troška Jedno plaćanje · Doživotni pristup · Bez pretplate Zauvijek otključajte neograničene troškove i putovanja.",
+      "category": "finance",
+      "category_label": "Novac i putovanja",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Besplatno za početak · doživotno otključavanje",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Izvan mreže",
+        "Bez računa",
+        "Bez praćenja",
+        "Privatno / na uređaju"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Novac i putovanja",
+        "Besplatno za početak · doživotno otključavanje",
+        "Izvan mreže",
+        "Bez računa",
+        "Bez praćenja",
+        "Privatno / na uređaju",
+        "Widget",
+        "Apple Watch",
+        "App Store · Besplatno"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/gmoneylite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/hr/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/hr/gmoneylite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fgmoneylite%2Fdecision%2Fl%2Fhr%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
+      "app_store_id": "6793436548",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
+      "app_store_url": "https://apps.apple.com/hr/app/id6793436548",
+      "app_store_cta_label": "Preuzmite G+Money Lite u App Storeu",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno"
+      },
+      "guide_cta_label": "Pročitajte cijeli vodič",
+      "publisher_disclosure": "Ovo je materijal iz prve ruke koji je objavio Lumi Studio, razvojni tim svake navedene aplikacije.",
+      "source_persona_query": "best free travel expense tracker with currency conversion for iphone",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

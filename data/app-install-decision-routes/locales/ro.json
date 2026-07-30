@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ro",
-  "dateModified": "2026-07-29",
-  "content_digest": "40f1fef3cf0a637dc1010463cbb853b82ebef0ada3346e1cd7fb4321114111af",
-  "generation_digest": "c15e37d2647a1e5ac95e11849810c08843b16111a9b5939e0d87defcbd5318b7",
+  "dateModified": "2026-07-30",
+  "content_digest": "15da0881b813653d283fe78ba4c16f0f9d1b43256b64b43cef08cab84c1dc45c",
+  "generation_digest": "0754104518b2116918910b0ea2e50f210f4474a166396a647550fc29b12d2972",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 34,
+  "record_count": 35,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ro.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ro.rss.xml",
@@ -507,6 +507,73 @@
       "publisher_disclosure": "Ghid realizat de editor de către Lumi Studio, dezvoltatorul aplicației. Numele aplicațiilor sunt mărci comerciale ale proprietarilor lor și sunt folosite doar pentru identificare. Pentru documente, sănătate, școală și decizii legate de productivitate, verificați cerințele oficiale acolo unde este cazul.",
       "source_persona_query": "best travel budget tracker app no subscription iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ro:gmoneylite",
+      "locale": "ro",
+      "app_key": "gmoneylite",
+      "app_name": "G+Money Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "G+Money Lite — Cheltuieli, buget & valută | iOS App",
+      "decision_context": "G+Money Lite — Converter de valută și tracker de cheltuieli inteligent pentru călătorii Bani de călătorie, simplu Înregistrează fiecare achiziție în valuta locală și vezi-o instantaneu în valuta ta de acasă — online sau offline. Conversie • Cursuri live sau manuale: Putem obține cele mai recente cursuri automat, sau le poți seta tu. Funcționează întotdeauna offline. • Obține cele mai recente cursuri când deschizi aplicația (aproximativ la fiecare 6 ore). Funcționează întotdeauna offline cu cursurile tale salvate. • Curs de referință mediu. Cardurile și numerarul pot diferi. Cheltuieli • Limită zilnică: Opțional. Vezi cum se urmărește fiecare zi în raport cu aceasta. • Pe categorie · Călătorii · Filtre · Înregistrări • Backup & restaurare: Include cheltuieli, cursuri, categorii și setări. • Widget · Apple Watch Totul rămâne pe dispozitivul tău. Fără cont, fără urmărire. Cursurile folosesc un serviciu public de cursuri de schimb. Gratuit: cursuri, buget, rezumat · 1 călătorie · 3 cheltuieli O singură plată · Acces pe viață · Fără abonament Deblochează pe viață cheltuieli și călătorii nelimitate.",
+      "category": "finance",
+      "category_label": "Bani & călătorii",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Început gratuit · deblocare pe viață",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Fără cont",
+        "Fără urmărire",
+        "Privat / pe dispozitiv"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Bani & călătorii",
+        "Început gratuit · deblocare pe viață",
+        "Offline",
+        "Fără cont",
+        "Fără urmărire",
+        "Privat / pe dispozitiv",
+        "Widget",
+        "Apple Watch",
+        "App Store · Gratuit"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/gmoneylite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/ro/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/ro/gmoneylite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fgmoneylite%2Fdecision%2Fl%2Fro%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
+      "app_store_id": "6793436548",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
+      "app_store_url": "https://apps.apple.com/ro/app/id6793436548",
+      "app_store_cta_label": "Descarcă G+Money Lite din App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RON",
+        "formatted_price": "Gratuit"
+      },
+      "guide_cta_label": "Citește ghidul complet",
+      "publisher_disclosure": "Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.",
+      "source_persona_query": "best free travel expense tracker with currency conversion for iphone",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

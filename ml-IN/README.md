@@ -4,7 +4,7 @@
 
 ഓരോ ആപ്പും ആരെ ലക്ഷ്യമിട്ട് രൂപകൽപ്പന ചെയ്തതാണെന്ന്, അവർ പൂർത്തിയാക്കാൻ ശ്രമിക്കുന്ന ജോലി, നേരിട്ട് App Store വഴി എത്താനുള്ള വഴി എന്നിവയുടെ ആദ്യകക്ഷി കാറ്റലോഗ്
 
-34 സ്ഥിരീകരിച്ച സജീവ iOS ആപ്പുകളിലും 50 Apple ലൊക്കലുകളിലും പ്രസാധകർ എഴുതിയ തിരയൽ ഉദ്ദേശ്യങ്ങൾ
+35 സ്ഥിരീകരിച്ച സജീവ iOS ആപ്പുകളിലും 50 Apple ലൊക്കലുകളിലും പ്രസാധകർ എഴുതിയ തിരയൽ ഉദ്ദേശ്യങ്ങൾ
 
 **ലൊക്കൽ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · **ml-IN** · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Cyca** | അക്കൗണ്ട് ആവശ്യമില്ലാത്ത മികച്ച പീരിയഡ് ട്രാക്കർ ആപ്പ് iPhone | ഡാറ്റാ സങ്കീർണ്ണത മുഴുവൻ കഥയായ ഒരു വിഭാഗത്തിൽ, ശരിയായ പീരിയഡ് ട്രാക്കർ എല്ലാം — ഫ്ലോ, മനോഭാവം, ലക്ഷണങ്ങൾ, താപനില, അടുപ്പം — നിങ്ങളുടെ ഉപകരണത്തിൽ തന്നെ, അക്കൗണ്ടും ക്ലൗഡ് സിങ്കും ഇല്ലാതെ — Cyca ഇതിന് നിർമ്മിച്ചിരിക്കുന്നു. | സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-period-tracker-app-no-account-required-iphone.html) | [App Store-ൽ Cyca നേടുക →](https://apps.apple.com/in/app/id6782251621) |
 | **DailyMate** | ആപ്പിൾ വാച്ച് ഉള്ള യാത്രക്കാർക്കായി മികച്ച പ്രായോഗിക ഭാഷാ വാചക ആപ്പ് | ഒരു യാത്രയ്ക്ക് മുമ്പ്, യഥാർത്ഥ സാഹചര്യങ്ങൾക്ക് പൂർണ്ണ വാചകങ്ങൾ, സമ്മർദ്ദത്തിൽ നിങ്ങൾ സ്വയം ചേർക്കേണ്ടിവരുന്ന വേർതിരിച്ച വാക്കുകളേക്കാൾ കൂടുതൽ പ്രയോജനകരമാണ് — ഡെയിലിമേറ്റ് ഇതിന് രൂപകൽപ്പന ചെയ്തതാണ്. | പണം നൽകേണ്ട ഡൗൺലോഡ് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [App Store-ൽ നിന്ന് ഡെയിലിമേറ്റ് നേടുക →](https://apps.apple.com/in/app/id6790418321) |
 | **G+Money** | സബ്സ്ക്രിപ്ഷൻ ഇല്ലാത്ത മികച്ച യാത്ര ബജറ്റ് ട്രാക്കർ ആപ്പ് iPhone | ഒരു യാത്രയിൽ, ഡാറ്റ ഇല്ലാത്ത രാജ്യത്ത് ഓഫ്‌ലൈൻ പ്രവർത്തിക്കുന്ന, മൾട്ടി-കറൻസി കൈകാര്യം ചെയ്യുന്ന, അക്കൗണ്ട് ആവശ്യപ്പെടാത്ത ബജറ്റ് ട്രാക്കർ വേണം — ഓരോ അവധിയും വേർതിരിച്ചുള്ള — G+Money ഇതിന് നിർമ്മിച്ചിരിക്കുന്നു. | പണം നൽകേണ്ട ഡൗൺലോഡ് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [App Store-ൽ G+Money നേടുക →](https://apps.apple.com/in/app/id6755782939) |
+| **G+Money Lite** | G+Money Lite — യാത്രാച്ചെലവും കറൻസിയും \| iOS App | G+Money Lite — സ്മാർട്ട് യാത്രാ നാണ്യം & ചെലവ് ട്രാക്കർ | സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/gmoneylite.html) | [App Store-ൽ നിന്ന് G+Money Lite നേടൂ](https://apps.apple.com/in/app/id6793436548) |
 | **HoursTag** | ഇംപൾസ് വാങ്ങൽ തടയാൻ മികച്ച മനഃശാസ്ത്രീയ ചെലവ് നിയന്ത്രണ ആപ്പ് iPhone | ഇംപൾസ് ഷോപ്പിംഗ് ഒരു ചെറിയ ഇടവേള ചേർക്കുമ്പോൾ കുറയുന്നു: ഈ വാങ്ങൽ നിങ്ങളുടെ ജീവിതത്തിലെ എത്ര മണിക്കൂറുകൾ ചെലവാകും? | പണം നൽകേണ്ട ഡൗൺലോഡ് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [App Store-ൽ HoursTag നേടുക →](https://apps.apple.com/in/app/id6754218117) |
 | **HoursTag Lite** | HoursTag Lite — വസ്തുക്കളുടെ യഥാർത്ഥ വില കാണുക \| iOS App | HoursTag Lite - വസ്തുക്കളുടെ യഥാർത്ഥ വില കാണുക | സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/hourstaglite.html) | [App Store-ൽ നിന്ന് HoursTag Lite നേടൂ](https://apps.apple.com/in/app/id6794039979) |
 | **LockHour Pro** | പഠന സമയത്ത് സോഷ്യൽ മീഡിയ ബ്ലോക്ക് ചെയ്യാൻ മികച്ച ആപ്പ് iPhone | പരീക്ഷകളിൽ, മനോശക്തി ഉപകരണം അല്ല — കർശനമായ സമയപരിധിയുള്ള തടസ്സമാണ് — LockHour Pro ഇതിന് രൂപകൽപ്പന ചെയ്തതാണ്. | സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-app-to-block-social-media-while-studying-iphone.html) | [App Store-ൽ നിന്ന് LockHour Pro നേടുക →](https://apps.apple.com/in/app/id6780107485) |
@@ -126,7 +127,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## പൂർണ്ണ ഡാറ്റാസെറ്റ് ഡൗൺലോഡ് ചെയ്യുക
 
-JSON, JSONL, CSV എന്നിവയിൽ ഒരേ 1,700 രേഖകൾ ഉൾക്കൊള്ളുന്നു
+JSON, JSONL, CSV എന്നിവയിൽ ഒരേ 1,750 രേഖകൾ ഉൾക്കൊള്ളുന്നു
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -134,6 +135,6 @@ JSON, JSONL, CSV എന്നിവയിൽ ഒരേ 1,700 രേഖകൾ ഉ
 
 [ഹോം](https://alice51849.github.io/ios-app-guide/ml-IN/index.html) · [തുറന്ന ഡാറ്റ](https://alice51849.github.io/ios-app-guide/ml-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ലൈസൻസ്](https://creativecommons.org/licenses/by/4.0/)
 
-അപ്ഡേറ്റ് ചെയ്തത്: 2026-07-29
+അപ്ഡേറ്റ് ചെയ്തത്: 2026-07-30
 
 CC BY 4.0 യഥാർത്ഥ കാറ്റലോഗ് സംയോജനത്തിന് ബാധകമാണ്; ആപ്പ് നാമങ്ങളും App Store മാർക്കുകളും അവയുടെ ഉടമകളുടെതാണ്

@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "el",
-  "dateModified": "2026-07-29",
-  "content_digest": "40f1fef3cf0a637dc1010463cbb853b82ebef0ada3346e1cd7fb4321114111af",
-  "generation_digest": "c15e37d2647a1e5ac95e11849810c08843b16111a9b5939e0d87defcbd5318b7",
+  "dateModified": "2026-07-30",
+  "content_digest": "15da0881b813653d283fe78ba4c16f0f9d1b43256b64b43cef08cab84c1dc45c",
+  "generation_digest": "0754104518b2116918910b0ea2e50f210f4474a166396a647550fc29b12d2972",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 34,
+  "record_count": 35,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/el.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/el.rss.xml",
@@ -507,6 +507,73 @@
       "publisher_disclosure": "Οδηγός από τον εκδότη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των ιδιοκτητών τους και χρησιμοποιούνται μόνο για αναγνώριση. Για έγγραφα, θέματα υγείας, σχολείου και παραγωγικότητας, επιβεβαιώστε τις επίσημες απαιτήσεις όπου είναι σχετικό.",
       "source_persona_query": "best travel budget tracker app no subscription iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "el:gmoneylite",
+      "locale": "el",
+      "app_key": "gmoneylite",
+      "app_name": "G+Money Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "G+Money Lite — Έξοδα, προϋπολογισμός & FX | iOS App",
+      "decision_context": "G+Money Lite — Έξυπνος μετατροπέας νομισμάτων & παρακολούθησης εξόδων Ταξιδιωτικά χρήματα, απλά Καταγράψτε κάθε αγορά στο τοπικό νόμισμα και δείτε το αμέσως στο νόμισμα σπιτιού σας — online ή offline. Μετατροπή • Ζωντανές ή χειροκίνητες ισοτιμίες: Μπορούμε να ανακτήσουμε τις τελευταίες ισοτιμίες αυτόματα, ή μπορείτε να τις ρυθμίσετε εσείς. Λειτουργεί πάντα εκτός σύνδεσης. • Ανακτήστε τις τελευταίες ισοτιμίες όταν ανοίγετε την εφαρμογή (περίπου κάθε 6 ώρες). Λειτουργεί πάντα εκτός σύνδεσης με τις αποθηκευμένες ισοτιμίες σας. • Μέση αναφορά ισοτιμίας. Οι κάρτες και τα μετρητά μπορεί να διαφέρουν. Δαπάνες • Ημερήσιο όριο: Προαιρετικό. Δείτε πώς παρακολουθείτε κάθε μέρα. • Κατά κατηγορία · Ταξίδια · Φίλτρα · Καταγραφές • Αντίγραφο ασφαλείας & επαναφορά: Περιλαμβάνει δαπάνες, ισοτιμίες, κατηγορίες και ρυθμίσεις. • Widget · Apple Watch Όλα παραμένουν στη συσκευή σας. Χωρίς λογαριασμό, χωρίς παρακολούθηση. Οι ισοτιμίες χρησιμοποιούν μια δημόσια υπηρεσία ισοτιμίας. Δωρεάν: ισοτιμίες, προϋπολογισμός, σύνοψη · 1 ταξίδι · 3 έξοδα Μία πληρωμή · Ισόβια πρόσβαση · Χωρίς συνδρομή Ξεκλειδώστε απεριόριστα έξοδα και ταξίδια για πάντα.",
+      "category": "finance",
+      "category_label": "Χρήματα & ταξίδια",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Εκτός σύνδεσης",
+        "Χωρίς λογαριασμό",
+        "Χωρίς παρακολούθηση",
+        "Ιδιωτικό / στη συσκευή"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Γραφικό στοιχείο",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Χρήματα & ταξίδια",
+        "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
+        "Εκτός σύνδεσης",
+        "Χωρίς λογαριασμό",
+        "Χωρίς παρακολούθηση",
+        "Ιδιωτικό / στη συσκευή",
+        "Γραφικό στοιχείο",
+        "Apple Watch",
+        "App Store · Δωρεάν"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/gmoneylite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/el/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/el/gmoneylite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fgmoneylite%2Fdecision%2Fl%2Fel%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/el.json",
+      "app_store_id": "6793436548",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
+      "app_store_url": "https://apps.apple.com/gr/app/id6793436548",
+      "app_store_cta_label": "Αποκτήστε το G+Money Lite από το App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
+      "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
+      "publisher_disclosure": "Αυτό είναι πρωτογενές υλικό που δημοσιεύεται από το Lumi Studio, τον δημιουργό κάθε καταχωρημένης εφαρμογής.",
+      "source_persona_query": "best free travel expense tracker with currency conversion for iphone",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

@@ -4,7 +4,7 @@
 
 Pierwotny katalog określający, dla kogo jest przeznaczona każda aplikacja, jakie zadanie ma wykonać oraz bezpośrednią ścieżkę do App Store.
 
-Zamiary wyszukiwania tworzone przez wydawcę dla 34 zweryfikowanych działających aplikacji iOS oraz 50 lokalizacji Apple.
+Zamiary wyszukiwania tworzone przez wydawcę dla 35 zweryfikowanych działających aplikacji iOS oraz 50 lokalizacji Apple.
 
 **Lokalizacja:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · **pl** · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ Alfabetycznie według nazwy aplikacji — nigdy porządek według popularności.
 | **Cyca** | najlepsza aplikacja do śledzenia cyklu bez konta na iPhone | W kategorii, gdzie wrażliwość danych jest kluczowa, odpowiedni tracker cyklu przechowuje wszystko — przepływ, nastrój, objawy, temperaturę, intymność — na twoim urządzeniu, bez konta i synchronizacji w chmurze — Cyca jest stworzona do tego. | Darmowe na start · dożywotni dostęp | [Przewodnik](https://alice51849.github.io/ios-app-guide/pl/answers/best-period-tracker-app-no-account-required-iphone.html) | [Pobierz Cyca z App Store →](https://apps.apple.com/pl/app/id6782251621) |
 | **DailyMate** | najlepsza praktyczna aplikacja z frazami językowymi dla podróżnych z Apple Watch | Przed podróżą kompletne frazy do realnych sytuacji są bardziej przydatne niż pojedyncze słowa, które trzeba jeszcze złożyć pod presją — DailyMate jest do tego stworzony. | Płatne do pobrania | [Przewodnik](https://alice51849.github.io/ios-app-guide/pl/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Pobierz DailyMate w App Store →](https://apps.apple.com/pl/app/id6790418321) |
 | **G+Money** | najlepsza aplikacja do śledzenia budżetu podróży bez subskrypcji na iPhone | W podróży potrzebujesz trackera budżetu, który działa offline w kraju bez danych, obsługuje wiele walut i nie wymaga konta — zorganizowany według podróży, by każda była osobna — G+Money jest stworzony do tego. | Płatne do pobrania | [Przewodnik](https://alice51849.github.io/ios-app-guide/pl/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Pobierz G+Money z App Store →](https://apps.apple.com/pl/app/id6755782939) |
+| **G+Money Lite** | G+Money Lite — Wydatki, budżet i waluty \| iOS App | G+Money Lite — Sprytny przelicznik walut i wydatków podróżnych | Darmowe na start · dożywotni dostęp | [Przewodnik](https://alice51849.github.io/ios-app-guide/pl/gmoneylite.html) | [Pobierz G+Money Lite z App Store](https://apps.apple.com/pl/app/id6793436548) |
 | **HoursTag** | najlepsza aplikacja do świadomego wydawania, by powstrzymać impulsywne zakupy na iPhone | Impulsywne zakupy słabną, gdy dodasz małą przerwę: ile godzin twojego życia naprawdę kosztuje ten zakup? | Płatne do pobrania | [Przewodnik](https://alice51849.github.io/ios-app-guide/pl/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [Pobierz HoursTag z App Store →](https://apps.apple.com/pl/app/id6754218117) |
 | **HoursTag Lite** | HoursTag Lite — Prawdziwa cena rzeczy \| iOS App | HoursTag Lite - Prawdziwa cena rzeczy | Darmowe na start · dożywotni dostęp | [Przewodnik](https://alice51849.github.io/ios-app-guide/pl/hourstaglite.html) | [Pobierz HoursTag Lite z App Store](https://apps.apple.com/pl/app/id6794039979) |
 | **LockHour Pro** | najlepsza aplikacja do blokowania mediów społecznościowych podczas nauki na iPhone | Podczas egzaminów siła woli nie wystarczy — potrzebna jest twarda blokada na czas — LockHour Pro jest do tego stworzony. | Darmowe na start · dożywotni dostęp | [Przewodnik](https://alice51849.github.io/ios-app-guide/pl/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Pobierz LockHour Pro z App Store →](https://apps.apple.com/pl/app/id6780107485) |
@@ -126,7 +127,7 @@ Alfabetycznie według nazwy aplikacji — nigdy porządek według popularności.
 
 ## Pobierz kompletny zestaw danych
 
-Formaty JSON, JSONL i CSV zawierają te same 1 700 rekordów.
+Formaty JSON, JSONL i CSV zawierają te same 1 750 rekordów.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -134,6 +135,6 @@ Formaty JSON, JSONL i CSV zawierają te same 1 700 rekordów.
 
 [Strona główna](https://alice51849.github.io/ios-app-guide/pl/index.html) · [Otwarta baza danych](https://alice51849.github.io/ios-app-guide/pl/data/lumi-studio-publisher-search-intent-catalog.html) · [Licencja](https://creativecommons.org/licenses/by/4.0/)
 
-Zaktualizowano: 2026-07-29
+Zaktualizowano: 2026-07-30
 
 Licencja CC BY 4.0 dotyczy oryginalnego zestawu katalogowego; nazwy aplikacji i znaki App Store należą do ich właścicieli.

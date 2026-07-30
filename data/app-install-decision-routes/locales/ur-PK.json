@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ur-PK",
-  "dateModified": "2026-07-29",
-  "content_digest": "40f1fef3cf0a637dc1010463cbb853b82ebef0ada3346e1cd7fb4321114111af",
-  "generation_digest": "c15e37d2647a1e5ac95e11849810c08843b16111a9b5939e0d87defcbd5318b7",
+  "dateModified": "2026-07-30",
+  "content_digest": "15da0881b813653d283fe78ba4c16f0f9d1b43256b64b43cef08cab84c1dc45c",
+  "generation_digest": "0754104518b2116918910b0ea2e50f210f4474a166396a647550fc29b12d2972",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 34,
+  "record_count": 35,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ur-PK.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ur-PK.rss.xml",
@@ -507,6 +507,73 @@
       "publisher_disclosure": "Lumi اسٹوڈیو کی طرف سے شائع کردہ رہنما، جو ایپ ڈویلپر ہے۔ ایپ کے نام ان کے مالکان کے تجارتی نشان ہیں اور صرف شناخت کے لیے استعمال ہوتے ہیں۔ دستاویزات، صحت، اسکول، اور پیداواری فیصلوں کے لیے، متعلقہ سرکاری تقاضوں کی تصدیق کریں۔",
       "source_persona_query": "best travel budget tracker app no subscription iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ur-PK:gmoneylite",
+      "locale": "ur-PK",
+      "app_key": "gmoneylite",
+      "app_name": "G+Money Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "G+Money Lite — سفری خرچ اور کرنسی | iOS App",
+      "decision_context": "G+Money Lite — سمارٹ سفر کرنسی اور خرچ ٹریکر سفر کا پیسہ، آسان بنایا گیا ہر خریداری کو مقامی کرنسی میں لاگ کریں اور اسے فوری طور پر اپنی گھریلو کرنسی میں دیکھیں — آن لائن یا آف۔ تبدیل کریں • لائیو یا دستی شرحیں: ہم تازہ ترین شرحیں خودکار طور پر حاصل کر سکتے ہیں، یا آپ انہیں خود سیٹ کر سکتے ہیں۔ یہ ہمیشہ آف لائن کام کرتا ہے۔ • ایپ کھولنے پر تازہ ترین شرحیں حاصل کریں (تقریباً ہر 6 گھنٹے میں)۔ ہمیشہ آپ کی محفوظ کردہ شرحوں کے ساتھ آف لائن کام کرتا ہے۔ • درمیانی مارکیٹ کا حوالہ شرح۔ کارڈز اور نقد میں فرق ہو سکتا ہے۔ خرچ • روزانہ کی حد: اختیاری۔ دیکھیں کہ ہر دن اس کے خلاف کیسے ٹریک کرتا ہے۔ • زمرے کے لحاظ سے · سفر · فلٹرز · ریکارڈز • بیک اپ اور بحالی: اخراجات، شرحیں، زمرے اور سیٹنگز شامل ہیں۔ • Widget · Apple Watch سب کچھ آپ کے ڈیوائس پر رہتا ہے۔ کوئی اکاؤنٹ نہیں، کوئی ٹریکنگ نہیں۔ شرحیں عوامی ایکسچینج ریٹ سروس کا استعمال کرتی ہیں۔ مفت: شرح، بجٹ، خلاصہ · 1 سفر · 3 اخراجات ایک بار ادائیگی · تاحیات استعمال · کوئی سبسکرپشن نہیں لامحدود اخراجات اور سفر ہمیشہ کے لیے ان لاک کریں۔",
+      "category": "finance",
+      "category_label": "پیسہ اور سفر",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "مفت آغاز · مستقل ان لاک",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "آف لائن",
+        "کوئی اکاؤنٹ نہیں",
+        "کوئی نگرانی نہیں",
+        "نجی / آلہ پر"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "وجیٹ",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "پیسہ اور سفر",
+        "مفت آغاز · مستقل ان لاک",
+        "آف لائن",
+        "کوئی اکاؤنٹ نہیں",
+        "کوئی نگرانی نہیں",
+        "نجی / آلہ پر",
+        "وجیٹ",
+        "Apple Watch",
+        "App Store · مفت"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/gmoneylite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/ur-PK/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/ur-PK/gmoneylite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fgmoneylite%2Fdecision%2Fl%2Fur-PK%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ur-PK.json",
+      "app_store_id": "6793436548",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
+      "app_store_url": "https://apps.apple.com/pk/app/id6793436548",
+      "app_store_cta_label": "App Store سے G+Money Lite حاصل کریں",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "PKR",
+        "formatted_price": "مفت"
+      },
+      "guide_cta_label": "مکمل رہنمائی پڑھیں",
+      "publisher_disclosure": "یہ مواد براہ راست Lumi Studio نے شائع کیا ہے، جو فہرست میں شامل تمام ایپس کا ڈویلپر ہے۔",
+      "source_persona_query": "best free travel expense tracker with currency conversion for iphone",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

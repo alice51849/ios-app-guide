@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ms",
-  "dateModified": "2026-07-29",
-  "content_digest": "40f1fef3cf0a637dc1010463cbb853b82ebef0ada3346e1cd7fb4321114111af",
-  "generation_digest": "c15e37d2647a1e5ac95e11849810c08843b16111a9b5939e0d87defcbd5318b7",
+  "dateModified": "2026-07-30",
+  "content_digest": "15da0881b813653d283fe78ba4c16f0f9d1b43256b64b43cef08cab84c1dc45c",
+  "generation_digest": "0754104518b2116918910b0ea2e50f210f4474a166396a647550fc29b12d2972",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 34,
+  "record_count": 35,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ms.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ms.rss.xml",
@@ -507,6 +507,73 @@
       "publisher_disclosure": "Panduan yang ditulis oleh penerbit dari Lumi Studio, pembangun aplikasi. Nama aplikasi adalah tanda dagangan pemiliknya dan digunakan hanya untuk pengenalan. Untuk dokumen, kesihatan, sekolah, dan keputusan produktiviti, sahkan keperluan rasmi jika berkaitan.",
       "source_persona_query": "best travel budget tracker app no subscription iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ms:gmoneylite",
+      "locale": "ms",
+      "app_key": "gmoneylite",
+      "app_name": "G+Money Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "G+Money Lite — Bajet, perbelanjaan & kurs | iOS App",
+      "decision_context": "G+Money Lite — Penukar mata wang perjalanan pintar & pengesan perbelanjaan Wang perjalanan, dibuat mudah Catat setiap pembelian dalam mata wang tempatan dan lihat dengan serta-merta dalam mata wang rumah anda — dalam talian atau luar talian. Tukar • Kadar langsung atau manual: Kami boleh mengambil kadar terkini secara automatik, atau anda boleh menetapkannya sendiri. Ia sentiasa berfungsi tanpa talian. • Ambil kadar terkini apabila anda membuka aplikasi (kira-kira setiap 6 jam). Sentiasa berfungsi tanpa talian dengan kadar yang disimpan. • Kadar rujukan pasaran tengah. Kad dan tunai mungkin berbeza. Perbelanjaan • Had harian: Pilihan. Lihat bagaimana setiap hari berbanding dengannya. • Mengikut kategori · Perjalanan · Penapis · Rekod • Sandi & pemulihan: Termasuk perbelanjaan, kadar, kategori dan tetapan. • Widget · Apple Watch Semua data kekal di peranti anda. Tiada akaun, tiada penjejakan. Kadar menggunakan perkhidmatan kadar pertukaran awam. Percuma: kadar, bajet, ringkasan · 1 perjalanan · 3 perbelanjaan Sekali bayar · Akses seumur hidup · Tiada langganan Buka perbelanjaan dan perjalanan tanpa had selamanya.",
+      "category": "finance",
+      "category_label": "Wang & perjalanan",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Percuma untuk bermula · buka kunci kekal",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Luar talian",
+        "Tiada akaun",
+        "Tiada penjejakan",
+        "Peribadi / pada peranti"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widjet",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Wang & perjalanan",
+        "Percuma untuk bermula · buka kunci kekal",
+        "Luar talian",
+        "Tiada akaun",
+        "Tiada penjejakan",
+        "Peribadi / pada peranti",
+        "Widjet",
+        "Apple Watch",
+        "App Store · Percuma"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/gmoneylite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/ms/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/ms/gmoneylite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fgmoneylite%2Fdecision%2Fl%2Fms%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ms.json",
+      "app_store_id": "6793436548",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
+      "app_store_url": "https://apps.apple.com/my/app/id6793436548",
+      "app_store_cta_label": "Dapatkan G+Money Lite di App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "MYR",
+        "formatted_price": "Percuma"
+      },
+      "guide_cta_label": "Baca panduan penuh",
+      "publisher_disclosure": "Bahan ini diterbitkan terus oleh Lumi Studio, pembangun semua aplikasi yang disenaraikan.",
+      "source_persona_query": "best free travel expense tracker with currency conversion for iphone",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

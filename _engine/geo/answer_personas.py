@@ -523,6 +523,55 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         },
     ],
+    "gmoneylite": [
+        {
+            "query": "best free travel expense tracker with currency conversion for iphone",
+            "guide_title": "Free travel expense trackers with currency conversion: what to check",
+            "triggers": [
+                "free travel expense tracker",
+                "travel expenses with currency conversion",
+                "track spending in local currency",
+                "travel budget in home currency",
+                "offline trip expense tracker",
+                "travel money app no subscription",
+            ],
+            "persona": "travellers testing a private multi-currency budget before unlocking unlimited trips",
+            "lead": "For a short trip, a useful free-to-start tracker should let you log a few local-currency expenses, see home-currency totals, and test a budget before deciding whether unlimited trips are worth one lifetime unlock.",
+            "paras": [
+                "G+Money Lite includes one trip and up to three expenses free, together with rates, a budget, category statistics, and a summary. Enter each purchase in the local currency and see it in your home currency using a live, saved, or manually set rate; saved rates keep the workflow usable offline.",
+                "If you need more entries or trips, one lifetime purchase removes those limits. There is no subscription, account, or tracking, and the App also supports a Home Screen widget and Apple Watch.",
+            ],
+            "look": [
+                "A useful free allowance that includes one trip and three expenses.",
+                "Local-currency entry with immediate home-currency totals.",
+                "Budget, category statistics, and summary available before purchase.",
+                "Saved or manual exchange rates for offline use.",
+                "One lifetime unlock with no subscription, account, or tracking.",
+            ],
+            "steps": [
+                "Set your home currency and create the free trip.",
+                "Choose a live, saved, or manual rate for the local currency.",
+                "Log up to three expenses while testing the workflow.",
+                "Review the budget, category statistics, and home-currency summary.",
+                "Unlock unlimited expenses and trips once only if the free allowance fits your travel workflow.",
+            ],
+            "fits": "fits travellers who want to test a private local-to-home-currency expense workflow free, then remove trip and entry limits with one lifetime purchase.",
+            "faq": [
+                {
+                    "q": "What can I use without paying?",
+                    "a": "You can use rates, a budget, category statistics, and a summary for one trip with up to three expenses.",
+                },
+                {
+                    "q": "Will it still work without data abroad?",
+                    "a": "Yes — saved or manually set rates keep expense entry and conversion available offline. An internet connection is needed only when fetching updated public exchange rates.",
+                },
+                {
+                    "q": "Is the full version a subscription?",
+                    "a": "No — one optional lifetime purchase unlocks unlimited expenses and trips.",
+                },
+            ],
+        },
+    ],
     "hourstag": [
         {
             "query": "best mindful spending app to stop impulse buying iphone",

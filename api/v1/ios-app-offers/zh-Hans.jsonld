@@ -6,8 +6,8 @@
   "name": "Lumi Studio 开发者搜索意图目录",
   "description": "第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。",
   "inLanguage": "zh-Hans",
-  "dateModified": "2026-07-29",
-  "numberOfItems": 34,
+  "dateModified": "2026-07-30",
+  "numberOfItems": 35,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -475,6 +475,72 @@
     {
       "@type": "ListItem",
       "position": 8,
+      "url": "https://apps.apple.com/cn/app/id6793436548",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-gmoneylite",
+        "url": "https://apps.apple.com/cn/app/id6793436548",
+        "name": "G+Money Lite",
+        "description": "G+Money Lite — 聪明的旅行汇率记账",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6793436548",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6793436548"
+          },
+          "name": "G+Money Lite",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/cn/app/id6793436548",
+          "installUrl": "https://apps.apple.com/cn/app/id6793436548",
+          "downloadUrl": "https://apps.apple.com/cn/app/id6793436548",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/cn/app/id6793436548"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/zh-Hans/gmoneylite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6793436548",
+          "inLanguage": "zh-Hans",
+          "description": "G+Money Lite — 聪明的旅行汇率记账",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-gmoneylite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CNY",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CN"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
       "url": "https://apps.apple.com/cn/app/id6754218117",
       "item": {
         "@type": "Offer",
@@ -540,7 +606,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 9,
+      "position": 10,
       "url": "https://apps.apple.com/cn/app/id6794039979",
       "item": {
         "@type": "Offer",
@@ -606,7 +672,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 10,
+      "position": 11,
       "url": "https://apps.apple.com/cn/app/id6780107485",
       "item": {
         "@type": "Offer",
@@ -672,7 +738,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 11,
+      "position": 12,
       "url": "https://apps.apple.com/app/id6773017109",
       "item": {
         "@type": "Offer",
@@ -730,7 +796,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 12,
+      "position": 13,
       "url": "https://apps.apple.com/app/id6775773117",
       "item": {
         "@type": "Offer",
@@ -788,7 +854,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 13,
+      "position": 14,
       "url": "https://apps.apple.com/app/id6778748533",
       "item": {
         "@type": "Offer",
@@ -846,7 +912,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 14,
+      "position": 15,
       "url": "https://apps.apple.com/app/id6778491147",
       "item": {
         "@type": "Offer",
@@ -904,7 +970,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 15,
+      "position": 16,
       "url": "https://apps.apple.com/app/id6778269699",
       "item": {
         "@type": "Offer",
@@ -962,7 +1028,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 16,
+      "position": 17,
       "url": "https://apps.apple.com/app/id6776958488",
       "item": {
         "@type": "Offer",
@@ -1020,7 +1086,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 17,
+      "position": 18,
       "url": "https://apps.apple.com/cn/app/id6779750237",
       "item": {
         "@type": "Offer",
@@ -1086,7 +1152,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 18,
+      "position": 19,
       "url": "https://apps.apple.com/cn/app/id6779745474",
       "item": {
         "@type": "Offer",
@@ -1152,7 +1218,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 19,
+      "position": 20,
       "url": "https://apps.apple.com/app/id6787193643",
       "item": {
         "@type": "Offer",
@@ -1210,7 +1276,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 20,
+      "position": 21,
       "url": "https://apps.apple.com/cn/app/id6779552704",
       "item": {
         "@type": "Offer",
@@ -1276,7 +1342,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 21,
+      "position": 22,
       "url": "https://apps.apple.com/cn/app/id6792850916",
       "item": {
         "@type": "Offer",
@@ -1342,7 +1408,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 22,
+      "position": 23,
       "url": "https://apps.apple.com/cn/app/id6785004775",
       "item": {
         "@type": "Offer",
@@ -1408,7 +1474,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 23,
+      "position": 24,
       "url": "https://apps.apple.com/cn/app/id6790800323",
       "item": {
         "@type": "Offer",
@@ -1474,7 +1540,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 24,
+      "position": 25,
       "url": "https://apps.apple.com/cn/app/id6781808054",
       "item": {
         "@type": "Offer",
@@ -1540,7 +1606,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 25,
+      "position": 26,
       "url": "https://apps.apple.com/cn/app/id6780223070",
       "item": {
         "@type": "Offer",
@@ -1606,7 +1672,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 26,
+      "position": 27,
       "url": "https://apps.apple.com/cn/app/id6779977651",
       "item": {
         "@type": "Offer",
@@ -1672,7 +1738,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 27,
+      "position": 28,
       "url": "https://apps.apple.com/cn/app/id6788236641",
       "item": {
         "@type": "Offer",
@@ -1738,7 +1804,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 28,
+      "position": 29,
       "url": "https://apps.apple.com/cn/app/id6780575828",
       "item": {
         "@type": "Offer",
@@ -1804,7 +1870,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
+      "position": 30,
       "url": "https://apps.apple.com/cn/app/id6782139553",
       "item": {
         "@type": "Offer",
@@ -1870,7 +1936,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 30,
+      "position": 31,
       "url": "https://apps.apple.com/cn/app/id6791299610",
       "item": {
         "@type": "Offer",
@@ -1936,7 +2002,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 31,
+      "position": 32,
       "url": "https://apps.apple.com/cn/app/id6787754435",
       "item": {
         "@type": "Offer",
@@ -2002,7 +2068,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 32,
+      "position": 33,
       "url": "https://apps.apple.com/cn/app/id6782275018",
       "item": {
         "@type": "Offer",
@@ -2068,7 +2134,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 33,
+      "position": 34,
       "url": "https://apps.apple.com/cn/app/id6790467886",
       "item": {
         "@type": "Offer",
@@ -2134,7 +2200,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 34,
+      "position": 35,
       "url": "https://apps.apple.com/cn/app/id6789917808",
       "item": {
         "@type": "Offer",

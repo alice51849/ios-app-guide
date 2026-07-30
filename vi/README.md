@@ -4,7 +4,7 @@
 
 Danh mục do chính nhà phát triển công bố, cho biết từng ứng dụng dành cho ai, nhiệm vụ họ muốn hoàn thành và lối truy cập trực tiếp đến App Store.
 
-Ý định tìm kiếm do nhà phát hành biên soạn cho 34 ứng dụng iOS đã xác minh và đang có trên App Store, thuộc 50 ngôn ngữ và khu vực Apple.
+Ý định tìm kiếm do nhà phát hành biên soạn cho 35 ứng dụng iOS đã xác minh và đang có trên App Store, thuộc 50 ngôn ngữ và khu vực Apple.
 
 **Vùng:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · **vi** · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ Sắp xếp theo bảng chữ cái tên ứng dụng — không phải xếp h�
 | **Cyca** | ứng dụng theo dõi chu kỳ kinh nguyệt tốt nhất không cần tài khoản cho iPhone | Trong lĩnh vực nhạy cảm về dữ liệu, ứng dụng theo dõi chu kỳ đúng đắn giữ mọi thứ — lưu lượng, tâm trạng, triệu chứng, nhiệt độ, quan hệ — trên thiết bị của bạn, không cần tài khoản và không đồng bộ đám mây — Cyca được xây dựng cho điều này. | Bắt đầu miễn phí · mở khóa vĩnh viễn | [Hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-period-tracker-app-no-account-required-iphone.html) | [Tải Cyca trên App Store →](https://apps.apple.com/vn/app/id6782251621) |
 | **DailyMate** | ứng dụng cụm từ ngôn ngữ thực tế tốt nhất cho khách du lịch có Apple Watch | Trước chuyến đi, các cụm từ hoàn chỉnh cho tình huống thực tế hữu ích hơn từ vựng rời rạc mà bạn vẫn phải ghép lại khi áp lực — DailyMate được thiết kế cho điều này. | Tải xuống trả phí | [Hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Tải DailyMate trên App Store →](https://apps.apple.com/vn/app/id6790418321) |
 | **G+Money** | ứng dụng theo dõi ngân sách du lịch tốt nhất không đăng ký thuê bao cho iPhone | Khi đi du lịch, bạn cần ứng dụng theo dõi ngân sách hoạt động ngoại tuyến ở nước không có dữ liệu, xử lý đa tiền tệ, không yêu cầu tài khoản — tổ chức theo chuyến để mỗi kỳ nghỉ riêng biệt — G+Money được xây dựng cho điều này. | Tải xuống trả phí | [Hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Tải G+Money trên App Store →](https://apps.apple.com/vn/app/id6755782939) |
+| **G+Money Lite** | G+Money Lite — Chi tiêu, ngân sách & tiền tệ \| iOS App | G+Money Lite — Theo dõi chi phí và chuyển đổi tiền tệ thông minh | Bắt đầu miễn phí · mở khóa vĩnh viễn | [Hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/gmoneylite.html) | [Tải G+Money Lite trên App Store](https://apps.apple.com/vn/app/id6793436548) |
 | **HoursTag** | ứng dụng chi tiêu có ý thức tốt nhất để ngăn mua sắm bốc đồng cho iPhone | Mua sắm bốc đồng giảm khi bạn thêm một khoảng dừng nhỏ: món hàng này thực sự tốn bao nhiêu giờ làm việc của bạn? | Tải xuống trả phí | [Hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [Tải HoursTag trên App Store →](https://apps.apple.com/vn/app/id6754218117) |
 | **HoursTag Lite** | HoursTag Lite — Xem giá thực của mọi thứ \| iOS App | HoursTag Lite - Xem giá thực của mọi thứ | Bắt đầu miễn phí · mở khóa vĩnh viễn | [Hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/hourstaglite.html) | [Tải HoursTag Lite trên App Store](https://apps.apple.com/vn/app/id6794039979) |
 | **LockHour Pro** | ứng dụng chặn mạng xã hội tốt nhất khi học cho iPhone | Trong kỳ thi, ý chí không phải là công cụ — mà là chặn nghiêm ngặt theo thời gian — LockHour Pro được thiết kế cho điều này. | Bắt đầu miễn phí · mở khóa vĩnh viễn | [Hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Tải LockHour Pro trên App Store →](https://apps.apple.com/vn/app/id6780107485) |
@@ -126,7 +127,7 @@ Sắp xếp theo bảng chữ cái tên ứng dụng — không phải xếp h�
 
 ## Tải xuống toàn bộ dữ liệu
 
-JSON, JSONL và CSV chứa cùng 1.700 bản ghi.
+JSON, JSONL và CSV chứa cùng 1.750 bản ghi.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -134,6 +135,6 @@ JSON, JSONL và CSV chứa cùng 1.700 bản ghi.
 
 [Trang chủ](https://alice51849.github.io/ios-app-guide/vi/index.html) · [Dữ liệu mở](https://alice51849.github.io/ios-app-guide/vi/data/lumi-studio-publisher-search-intent-catalog.html) · [Giấy phép](https://creativecommons.org/licenses/by/4.0/)
 
-Cập nhật: 2026-07-29
+Cập nhật: 2026-07-30
 
 CC BY 4.0 áp dụng cho bản tổng hợp danh mục gốc; tên ứng dụng và nhãn hiệu App Store thuộc sở hữu của chủ sở hữu tương ứng.

@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "th",
-  "dateModified": "2026-07-29",
-  "content_digest": "40f1fef3cf0a637dc1010463cbb853b82ebef0ada3346e1cd7fb4321114111af",
-  "generation_digest": "c15e37d2647a1e5ac95e11849810c08843b16111a9b5939e0d87defcbd5318b7",
+  "dateModified": "2026-07-30",
+  "content_digest": "15da0881b813653d283fe78ba4c16f0f9d1b43256b64b43cef08cab84c1dc45c",
+  "generation_digest": "0754104518b2116918910b0ea2e50f210f4474a166396a647550fc29b12d2972",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 34,
+  "record_count": 35,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/th.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/th.rss.xml",
@@ -507,6 +507,73 @@
       "publisher_disclosure": "คู่มือที่จัดทำโดยผู้พัฒนาแอป Lumi Studio ชื่อแอปเป็นเครื่องหมายการค้าของเจ้าของและใช้เพื่อการระบุเท่านั้น สำหรับเอกสาร สุขภาพ โรงเรียน และการตัดสินใจด้านประสิทธิภาพ โปรดตรวจสอบข้อกำหนดอย่างเป็นทางการเมื่อเกี่ยวข้อง",
       "source_persona_query": "best travel budget tracker app no subscription iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "th:gmoneylite",
+      "locale": "th",
+      "app_key": "gmoneylite",
+      "app_name": "G+Money Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "G+Money Lite — งบ บันทึกรายจ่าย แลกเงิน | iOS App",
+      "decision_context": "G+Money Lite — เครื่องมือแปลงสกุลเงินและติดตามค่าใช้จ่ายที่ชาญฉลาด เงินเดินทางที่ทำให้เรียบง่าย บันทึกการซื้อแต่ละครั้งในสกุลเงินท้องถิ่นและดูทันทีในสกุลเงินบ้านของคุณ — ออนไลน์หรือออฟไลน์. แปลง • อัตราแบบสดหรือด้วยมือ: เราสามารถดึงอัตราล่าสุดโดยอัตโนมัติ, หรือคุณสามารถตั้งค่าเอง. มันใช้งานได้เสมอแบบออฟไลน์. • ดึงอัตราล่าสุดเมื่อคุณเปิดแอป (ประมาณทุก 6 ชั่วโมง). ใช้งานได้เสมอแบบออฟไลน์ด้วยอัตราที่บันทึกไว้. • อัตราอ้างอิงกลาง. บัตรและเงินสดอาจแตกต่างกัน. การใช้จ่าย • งบประมาณรายวัน: ไม่บังคับ. ดูว่าทุกวันติดตามได้อย่างไร. • ตามหมวดหมู่ · ทริป · ตัวกรอง · บันทึก • สำรองข้อมูล & กู้คืน: รวมถึงค่าใช้จ่าย, อัตรา, หมวดหมู่และการตั้งค่า. • Widget · Apple Watch ทุกอย่างอยู่ในอุปกรณ์ของคุณ. ไม่มีบัญชี, ไม่มีการติดตาม. อัตราใช้บริการอัตราแลกเปลี่ยนสาธารณะ. ฟรี: อัตราแลกเปลี่ยน งบ สรุป · 1 ทริป · 3 รายการ จ่ายครั้งเดียว · ใช้ตลอดชีพ · ไม่มีสมาชิก ปลดล็อกรายจ่ายและทริปไม่จำกัดตลอดชีพ",
+      "category": "finance",
+      "category_label": "เงิน & การเดินทาง",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกถาวร",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ออฟไลน์",
+        "ไม่มีบัญชี",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "วิดเจ็ต",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "เงิน & การเดินทาง",
+        "เริ่มใช้ฟรี · ปลดล็อกถาวร",
+        "ออฟไลน์",
+        "ไม่มีบัญชี",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์",
+        "วิดเจ็ต",
+        "Apple Watch",
+        "App Store · ฟรี"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/gmoneylite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/th/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/th/gmoneylite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fgmoneylite%2Fdecision%2Fl%2Fth%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/th.json",
+      "app_store_id": "6793436548",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
+      "app_store_url": "https://apps.apple.com/th/app/id6793436548",
+      "app_store_cta_label": "ดาวน์โหลด G+Money Lite บน App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี"
+      },
+      "guide_cta_label": "อ่านคู่มือฉบับเต็ม",
+      "publisher_disclosure": "เนื้อหานี้เผยแพร่โดยตรงจาก Lumi Studio ซึ่งเป็นผู้พัฒนาแอปทั้งหมดที่ระบุไว้",
+      "source_persona_query": "best free travel expense tracker with currency conversion for iphone",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

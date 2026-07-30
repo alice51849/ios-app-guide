@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "sv",
-  "dateModified": "2026-07-29",
-  "content_digest": "40f1fef3cf0a637dc1010463cbb853b82ebef0ada3346e1cd7fb4321114111af",
-  "generation_digest": "c15e37d2647a1e5ac95e11849810c08843b16111a9b5939e0d87defcbd5318b7",
+  "dateModified": "2026-07-30",
+  "content_digest": "15da0881b813653d283fe78ba4c16f0f9d1b43256b64b43cef08cab84c1dc45c",
+  "generation_digest": "0754104518b2116918910b0ea2e50f210f4474a166396a647550fc29b12d2972",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 34,
+  "record_count": 35,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/sv.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/sv.rss.xml",
@@ -510,6 +510,73 @@
       "publisher_disclosure": "Guide från Lumi Studio, apputvecklaren. Appnamn är varumärken som tillhör sina ägare och används endast för identifiering. För dokument, hälsa, skola och produktivitetsbeslut, kontrollera officiella krav där det är relevant.",
       "source_persona_query": "best travel budget tracker app no subscription iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "sv:gmoneylite",
+      "locale": "sv",
+      "app_key": "gmoneylite",
+      "app_name": "G+Money Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "G+Money Lite — Budget, utgifter & valuta | iOS App",
+      "decision_context": "G+Money Lite — Smart resevaluta- & utgiftsspårare Reskassan, enkelt Registrera varje köp i lokal valuta och se det direkt i din egen valuta – online eller offline. Växla • Live- eller manuella kurser: Vi hämtar de senaste kurserna automatiskt, eller ange dem själv. Fungerar alltid offline. • Hämtar de senaste kurserna när du öppnar appen (ungefär var 6:e timme). Fungerar offline med dina sparade kurser. • Mittkurs som referens. Kort och kontanter kan skilja sig. Utgifter • Dagsbudget: Valfritt. Se hur varje dag ligger mot budgeten. • Per kategori · Resor · Filter · Poster • Säkerhetskopiera & återställ: Inkluderar utgifter, kurser, kategorier och inställningar. • Widget · Apple Watch Allt stannar på din enhet. Inget konto, ingen spårning. Kurser via en offentlig växelkurstjänst. Gratis: kurser, budget, översikt · 1 resa · 3 utgifter En betalning · Livstidsåtkomst · Ingen prenumeration Lås upp obegränsade utgifter och resor för alltid.",
+      "category": "finance",
+      "category_label": "Ekonomi & resor",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Inget konto",
+        "Ingen spårning",
+        "Privat / på enheten"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Ekonomi & resor",
+        "Gratis att börja · livstidsupplåsning",
+        "Offline",
+        "Inget konto",
+        "Ingen spårning",
+        "Privat / på enheten",
+        "Widget",
+        "Apple Watch",
+        "App Store · Gratis"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/gmoneylite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/sv/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/sv/gmoneylite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fgmoneylite%2Fdecision%2Fl%2Fsv%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
+      "app_store_id": "6793436548",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
+      "app_store_url": "https://apps.apple.com/se/app/id6793436548",
+      "app_store_cta_label": "Hämta G+Money Lite i App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "SEK",
+        "formatted_price": "Gratis"
+      },
+      "guide_cta_label": "Läs hela guiden",
+      "publisher_disclosure": "Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.",
+      "source_persona_query": "best free travel expense tracker with currency conversion for iphone",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

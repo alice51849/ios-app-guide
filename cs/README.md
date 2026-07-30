@@ -4,7 +4,7 @@
 
 Katalog od první strany, který uvádí, pro koho je každá aplikace určena, jaký úkol má splnit a přímou cestu do App Store.
 
-Vyhledávací záměry vytvořené vydavatelem napříč 34 ověřenými aktivními iOS aplikacemi a 50 Apple lokalitami.
+Vyhledávací záměry vytvořené vydavatelem napříč 35 ověřenými aktivními iOS aplikacemi a 50 Apple lokalitami.
 
 **Lokalita:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · **cs** · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ Abecedně podle názvu aplikace — nikdy žebříček.
 | **Cyca** | nejlepší aplikace na sledování menstruace bez nutnosti účtu pro iPhone | V kategorii, kde je citlivost dat zásadní, správná aplikace na sledování menstruace uchovává vše — průtok, náladu, příznaky, teplotu, intimitu — přímo ve vašem zařízení, bez účtu a bez synchronizace v cloudu — Cyca je na to navržena. | Zdarma na začátek · doživotní odemknutí | [Průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-period-tracker-app-no-account-required-iphone.html) | [Získejte Cyca v App Store →](https://apps.apple.com/cz/app/id6782251621) |
 | **DailyMate** | nejlepší praktická aplikace s frázemi pro cestovatele s Apple Watch | Před cestou jsou kompletní fráze pro reálné situace užitečnější než izolovaná slovíčka, která si musíte složit pod tlakem — DailyMate je na to stavěný. | Placené stažení | [Průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Stáhněte si DailyMate v App Store →](https://apps.apple.com/cz/app/id6790418321) |
 | **G+Money** | nejlepší aplikace na sledování cestovního rozpočtu bez předplatného pro iPhone | Na cestě potřebujete rozpočtovou aplikaci, která funguje offline v zemi bez dat, zvládá více měn a nevyžaduje účet — organizovanou podle cest, aby každá dovolená byla samostatná — G+Money je na to navržena. | Placené stažení | [Průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Získejte G+Money v App Store →](https://apps.apple.com/cz/app/id6755782939) |
+| **G+Money Lite** | G+Money Lite — Výdaje, rozpočet a měny \| iOS App | G+Money Lite — Chytrý převodník měn a sledovač výdajů | Zdarma na začátek · doživotní odemknutí | [Průvodce](https://alice51849.github.io/ios-app-guide/cs/gmoneylite.html) | [Stáhněte si G+Money Lite v App Storu](https://apps.apple.com/cz/app/id6793436548) |
 | **HoursTag** | nejlepší aplikace pro uvědomělé utrácení, která pomáhá zastavit impulzivní nákupy na iPhone | Impulzivní nakupování slábne, když přidáte malou pauzu: kolik hodin vašeho života tento nákup skutečně stojí? | Placené stažení | [Průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [Získejte HoursTag v App Store →](https://apps.apple.com/cz/app/id6754218117) |
 | **HoursTag Lite** | HoursTag Lite — Uvidíte skutečnou cenu věcí \| iOS App | HoursTag Lite - Uvidíte skutečnou cenu věcí | Zdarma na začátek · doživotní odemknutí | [Průvodce](https://alice51849.github.io/ios-app-guide/cs/hourstaglite.html) | [Stáhněte si HoursTag Lite v App Storu](https://apps.apple.com/cz/app/id6794039979) |
 | **LockHour Pro** | nejlepší aplikace na blokování sociálních sítí při studiu pro iPhone | Během zkoušek není vůle nástrojem — je to tvrdá časová blokace — LockHour Pro je na to navržen. | Zdarma na začátek · doživotní odemknutí | [Průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Stáhněte LockHour Pro v App Store →](https://apps.apple.com/cz/app/id6780107485) |
@@ -126,7 +127,7 @@ Abecedně podle názvu aplikace — nikdy žebříček.
 
 ## Stáhnout celý dataset
 
-JSON, JSONL a CSV obsahují stejných 1 700 záznamů.
+JSON, JSONL a CSV obsahují stejných 1 750 záznamů.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -134,6 +135,6 @@ JSON, JSONL a CSV obsahují stejných 1 700 záznamů.
 
 [Domů](https://alice51849.github.io/ios-app-guide/cs/index.html) · [Otevřená data](https://alice51849.github.io/ios-app-guide/cs/data/lumi-studio-publisher-search-intent-catalog.html) · [Licence](https://creativecommons.org/licenses/by/4.0/)
 
-Aktualizováno: 2026-07-29
+Aktualizováno: 2026-07-30
 
 CC BY 4.0 platí pro původní sestavení katalogu; názvy aplikací a značky App Store patří jejich vlastníkům.

@@ -16,7 +16,7 @@
     ],
     "retirement_rule": "Retire after three consecutive verified misses"
   },
-  "record_count": 34,
+  "record_count": 35,
   "apps": [
     {
       "key": "aibriefpack",
@@ -338,6 +338,56 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
+      "verified_live": true
+    },
+    {
+      "key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "name": "G+Money Lite",
+      "category": "finance",
+      "category_labels": {
+        "en": "Money & travel",
+        "zh-Hant": "理財與旅行"
+      },
+      "summaries": {
+        "en": "G+Money Lite — Smart travel currency & expense tracker",
+        "zh-Hant": "G+Money Lite — 聰明的旅行匯率記帳"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "1 trip and 3 expenses free",
+        "One-time lifetime unlock",
+        "No subscription",
+        "Offline with saved rates",
+        "Private on-device storage",
+        "No account",
+        "No tracking",
+        "Home Screen widget",
+        "Apple Watch"
+      ],
+      "keywords": [
+        "free travel expense tracker",
+        "travel expenses with currency conversion",
+        "track spending in local currency",
+        "travel budget in home currency",
+        "offline trip expense tracker",
+        "travel money app no subscription"
+      ],
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
       "verified_live": true
     },
     {

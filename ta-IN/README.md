@@ -4,7 +4,7 @@
 
 ஒவ்வொரு செயலியும் யாருக்காக வடிவமைக்கப்பட்டுள்ளதோ, அவர்கள் நிறைவேற்ற முயற்சிக்கும் பணியோ, நேரடி App Store பாதையோ ஆகியவற்றின் முதல்-பார்ட்டி அட்டவணை.
 
-34 உறுதிப்படுத்தப்பட்ட நேரடி iOS செயலிகள் மற்றும் 50 Apple உள்ளூர் மொழிகளில் வெளியீட்டாளர் எழுதிய தேடல் நோக்கங்கள்.
+35 உறுதிப்படுத்தப்பட்ட நேரடி iOS செயலிகள் மற்றும் 50 Apple உள்ளூர் மொழிகளில் வெளியீட்டாளர் எழுதிய தேடல் நோக்கங்கள்.
 
 **உள்ளூர் மொழி:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · **ta-IN** · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Cyca** | கணக்கு தேவையில்லாத சிறந்த மாதவிடாய் கண்காணிப்பாளர் செயலி iPhone க்கான | தரவு நுணுக்கம் முழுமையாக முக்கியமான பிரிவில், சரியான மாதவிடாய் கண்காணிப்பாளர் அனைத்தையும் — ஓட்டம், மனநிலை, அறிகுறிகள், வெப்பநிலை, நெருக்கம் — உங்கள் சாதனத்தில் வைத்திருக்கும், கணக்கு இல்லாமல் மற்றும் மேக ஒத்திசைவு இல்லாமல் — Cyca இதற்காக உருவாக்கப்பட்டுள்ளது. | இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும் | [வழிகாட்டி](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-period-tracker-app-no-account-required-iphone.html) | [App Store இல் Cyca ஐ பெறவும் →](https://apps.apple.com/in/app/id6782251621) |
 | **DailyMate** | ஆப்பிள் வாட்சுடன் பயணிகளுக்கான சிறந்த நடைமுறை மொழி வாக்கிய பயன்பாடு | ஒரு பயணத்திற்கு முன், தனித்த சொற்களை அழுத்தத்தில் சேர்க்க வேண்டியதைவிட நிஜ சூழல்களுக்கு முழுமையான வாக்கியங்கள் அதிக பயனுள்ளதாக இருக்கும் — இதற்காக டெய்லிமேட் உருவாக்கப்பட்டுள்ளது. | பணம் செலுத்தி பதிவிறக்கவும் | [வழிகாட்டி](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [App Store இல் இருந்து டெய்லிமேட்டை பெறுக →](https://apps.apple.com/in/app/id6790418321) |
 | **G+Money** | சந்தா இல்லாத சிறந்த பயண பட்ஜெட் கண்காணிப்பாளர் செயலி iPhone க்கான | ஒரு பயணத்தில், தரவு இல்லாத நாட்டில் ஆஃப்லைனில் வேலை செய்யும், பல நாணயங்களை கையாளும், கணக்கு கேட்காத பட்ஜெட் கண்காணிப்பாளர் தேவை — பயண வாரியாக ஒழுங்குபடுத்தப்பட்டு ஒவ்வொரு விடுமுறையும் தனித்தனியாக இருக்கும் — G+Money இதற்காக உருவாக்கப்பட்டுள்ளது. | பணம் செலுத்தி பதிவிறக்கவும் | [வழிகாட்டி](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [App Store இல் G+Money ஐ பெறவும் →](https://apps.apple.com/in/app/id6755782939) |
+| **G+Money Lite** | G+Money Lite — பயணச் செலவும் நாணயமும் \| iOS App | G+Money Lite — சிறந்த பயண நாணய மற்றும் செலவுகளை கண்காணிப்பான் | இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும் | [வழிகாட்டி](https://alice51849.github.io/ios-app-guide/ta-IN/gmoneylite.html) | [App Store-இல் G+Money Lite-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6793436548) |
 | **HoursTag** | திடீர் impulsive வாங்குதலை நிறுத்த சிறந்த மனச்சாட்சி செலவிடும் செயலி iPhone க்கான | ஒரு சிறிய இடைவெளி சேர்க்கும்போது திடீர் impulsive வாங்குதல் பலவீனமாகிறது: இந்த வாங்குதல் உங்கள் வாழ்க்கையின் எத்தனை மணி நேரத்தை எடுத்துக் கொள்கிறது? | பணம் செலுத்தி பதிவிறக்கவும் | [வழிகாட்டி](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [App Store இல் HoursTag ஐ பெறவும் →](https://apps.apple.com/in/app/id6754218117) |
 | **HoursTag Lite** | HoursTag Lite — மதிப்புப் பட்டகம் \| iOS App | HoursTag Lite - விஷயங்களின் உண்மையான விலையைப் பாருங்கள் | இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும் | [வழிகாட்டி](https://alice51849.github.io/ios-app-guide/ta-IN/hourstaglite.html) | [App Store-இல் HoursTag Lite-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6794039979) |
 | **LockHour Pro** | படிப்பதற்குப் போது சமூக ஊடகங்களை தடுக்கும் சிறந்த செயலி iPhone க்கான | பரீட்சைகளின் போது, மனச்சக்தி கருவி அல்ல — கடுமையான நேரமிடப்பட்ட தடுப்பு தான் — LockHour Pro இதற்காக உருவாக்கப்பட்டது. | இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும் | [வழிகாட்டி](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-app-to-block-social-media-while-studying-iphone.html) | [App Store-இல் LockHour Pro பெறவும் →](https://apps.apple.com/in/app/id6780107485) |
@@ -126,7 +127,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## முழு தரவுத்தொகுப்பை பதிவிறக்கவும்
 
-JSON, JSONL மற்றும் CSV ஆகியவை ஒரே 1,700 பதிவுகளை கொண்டுள்ளன.
+JSON, JSONL மற்றும் CSV ஆகியவை ஒரே 1,750 பதிவுகளை கொண்டுள்ளன.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -134,6 +135,6 @@ JSON, JSONL மற்றும் CSV ஆகியவை ஒரே 1,700 பத�
 
 [முகப்பு](https://alice51849.github.io/ios-app-guide/ta-IN/index.html) · [திறந்த தரவு](https://alice51849.github.io/ios-app-guide/ta-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [அனுமதி](https://creativecommons.org/licenses/by/4.0/)
 
-புதுப்பிக்கப்பட்டது: 2026-07-29
+புதுப்பிக்கப்பட்டது: 2026-07-30
 
 CC BY 4.0 அசல் அட்டவணை தொகுப்பிற்கு பொருந்தும்; செயலி பெயர்கள் மற்றும் App Store குறியீடுகள் உரிமையாளர்களுக்கு சொந்தமானவை.

@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "nl-NL",
-  "dateModified": "2026-07-29",
-  "content_digest": "40f1fef3cf0a637dc1010463cbb853b82ebef0ada3346e1cd7fb4321114111af",
-  "generation_digest": "c15e37d2647a1e5ac95e11849810c08843b16111a9b5939e0d87defcbd5318b7",
+  "dateModified": "2026-07-30",
+  "content_digest": "15da0881b813653d283fe78ba4c16f0f9d1b43256b64b43cef08cab84c1dc45c",
+  "generation_digest": "0754104518b2116918910b0ea2e50f210f4474a166396a647550fc29b12d2972",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 34,
+  "record_count": 35,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/nl-NL.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/nl-NL.rss.xml",
@@ -507,6 +507,73 @@
       "publisher_disclosure": "Gids van de uitgever Lumi Studio, de ontwikkelaar van de app. App-namen zijn handelsmerken van hun eigenaren en worden alleen gebruikt ter identificatie. Controleer officiële vereisten waar relevant voor documenten, gezondheid, school en productiviteitsbeslissingen.",
       "source_persona_query": "best travel budget tracker app no subscription iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "nl-NL:gmoneylite",
+      "locale": "nl-NL",
+      "app_key": "gmoneylite",
+      "app_name": "G+Money Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "G+Money Lite — Budget, uitgaven & valuta | iOS App",
+      "decision_context": "G+Money Lite — Slimme reisvaluta- & uitgaventracker Reisgeld, simpel gemaakt Leg elke aankoop vast in de lokale valuta en zie het meteen in je eigen valuta – online of offline. Omrekenen • Live of handmatige koersen: We halen de nieuwste koersen automatisch op, of stel ze zelf in. Werkt altijd offline. • Haalt de nieuwste koersen op bij het openen van de app (ongeveer elke 6 uur). Werkt offline met je opgeslagen koersen. • Indicatieve middenkoers. Kaarten en contant geld kunnen afwijken. Uitgaven • Dagbudget: Optioneel. Zie hoe elke dag tegenover het budget staat. • Per categorie · Reizen · Filters · Items • Back-up en herstel: Bevat uitgaven, koersen, categorieën en instellingen. • Widget · Apple Watch Alles blijft op je apparaat. Geen account, geen tracking. Koersen via een openbare wisselkoersdienst. Gratis: koersen, budget, overzicht · 1 reis · 3 uitgaven Eenmalige betaling · Levenslang · Geen abonnement Ontgrendel voorgoed onbeperkte uitgaven en reizen.",
+      "category": "finance",
+      "category_label": "Geld & reizen",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Gratis te starten · levenslange ontgrendeling",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Geen account",
+        "Geen tracking",
+        "Privé / op apparaat"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Geld & reizen",
+        "Gratis te starten · levenslange ontgrendeling",
+        "Offline",
+        "Geen account",
+        "Geen tracking",
+        "Privé / op apparaat",
+        "Widget",
+        "Apple Watch",
+        "App Store · Gratis"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/gmoneylite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/nl-NL/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/nl-NL/gmoneylite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fgmoneylite%2Fdecision%2Fl%2Fnl-NL%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/nl-NL.json",
+      "app_store_id": "6793436548",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
+      "app_store_url": "https://apps.apple.com/nl/app/id6793436548",
+      "app_store_cta_label": "Download G+Money Lite in de App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
+      "guide_cta_label": "Lees de volledige gids",
+      "publisher_disclosure": "Dit is materiaal van de eerste partij, gepubliceerd door Lumi Studio, de ontwikkelaar van elke vermelde app.",
+      "source_persona_query": "best free travel expense tracker with currency conversion for iphone",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

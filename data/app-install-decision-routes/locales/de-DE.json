@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "de-DE",
-  "dateModified": "2026-07-29",
-  "content_digest": "40f1fef3cf0a637dc1010463cbb853b82ebef0ada3346e1cd7fb4321114111af",
-  "generation_digest": "c15e37d2647a1e5ac95e11849810c08843b16111a9b5939e0d87defcbd5318b7",
+  "dateModified": "2026-07-30",
+  "content_digest": "15da0881b813653d283fe78ba4c16f0f9d1b43256b64b43cef08cab84c1dc45c",
+  "generation_digest": "0754104518b2116918910b0ea2e50f210f4474a166396a647550fc29b12d2972",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 34,
+  "record_count": 35,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/de-DE.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/de-DE.rss.xml",
@@ -507,6 +507,73 @@
       "publisher_disclosure": "Vom Herausgeber verfasster Leitfaden von Lumi Studio, dem Entwickler der App. App-Namen sind Marken ihrer Eigentümer und werden nur zur Identifikation verwendet. Für Dokumente, Gesundheit, Schule und Produktivitätsentscheidungen prüfen Sie gegebenenfalls offizielle Anforderungen.",
       "source_persona_query": "best travel budget tracker app no subscription iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "de-DE:gmoneylite",
+      "locale": "de-DE",
+      "app_key": "gmoneylite",
+      "app_name": "G+Money Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "G+Money Lite — Budget, Ausgaben & Währung | iOS App",
+      "decision_context": "G+Money Lite — Cleverer Reise-Währungsrechner & Ausgaben-Tracker Reisegeld, ganz einfach Erfasse jeden Einkauf in der lokalen Währung und sieh ihn sofort in deiner Heimatwährung – online oder offline. Umrechnen • Live- oder manuelle Kurse: Wir holen die neuesten Kurse automatisch, oder du legst sie selbst fest. Funktioniert immer offline. • Holt die neuesten Kurse beim Öffnen der App (etwa alle 6 Stunden). Funktioniert offline mit deinen gespeicherten Kursen. • Mittelkurs als Referenz. Karten und Bargeld können abweichen. Ausgaben • Tagesbudget: Optional. Sieh, wie jeder Tag im Budget liegt. • Nach Kategorie · Reisen · Filter · Einträge • Sichern & Wiederherstellen: Enthält Ausgaben, Kurse, Kategorien und Einstellungen. • Widget · Apple Watch Alles bleibt auf deinem Gerät. Kein Konto, kein Tracking. Kurse über einen öffentlichen Wechselkurs-Dienst. Kostenlos: Kurse, Budget, Übersicht · 1 Reise · 3 Ausgaben Einmal zahlen · Dauerhaft nutzen · Kein Abo Ausgaben und Reisen dauerhaft unbegrenzt freischalten.",
+      "category": "finance",
+      "category_label": "Geld & Reisen",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Kostenloser Einstieg · dauerhafte Freischaltung",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Kein Konto",
+        "Kein Tracking",
+        "Privat / auf dem Gerät"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Geld & Reisen",
+        "Kostenloser Einstieg · dauerhafte Freischaltung",
+        "Offline",
+        "Kein Konto",
+        "Kein Tracking",
+        "Privat / auf dem Gerät",
+        "Widget",
+        "Apple Watch",
+        "App Store · Kostenlos"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/gmoneylite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/de-DE/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/de-DE/gmoneylite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fgmoneylite%2Fdecision%2Fl%2Fde-DE%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/de-DE.json",
+      "app_store_id": "6793436548",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
+      "app_store_url": "https://apps.apple.com/de/app/id6793436548",
+      "app_store_cta_label": "G+Money Lite im App Store laden",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Kostenlos"
+      },
+      "guide_cta_label": "Lesen Sie den vollständigen Leitfaden",
+      "publisher_disclosure": "Dieses Material wird direkt von Lumi Studio veröffentlicht, dem Entwickler aller aufgeführten Apps.",
+      "source_persona_query": "best free travel expense tracker with currency conversion for iphone",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

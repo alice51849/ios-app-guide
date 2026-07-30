@@ -4,7 +4,7 @@
 
 Katalog iz prve ruke o tome za koga je svaka aplikacija namijenjena, koji zadatak žele izvršiti i izravnom putu do App Storea.
 
-Namjere pretraživanja koje je napisao izdavač za 34 provjerenih aktivnih iOS aplikacija i 50 Apple lokaliteta.
+Namjere pretraživanja koje je napisao izdavač za 35 provjerenih aktivnih iOS aplikacija i 50 Apple lokaliteta.
 
 **Lokalitet:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · **hr** · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ Abecedno po nazivu aplikacije — nikada nije rangiranje.
 | **Cyca** | najbolja aplikacija za praćenje menstruacije bez potrebe za računom za iPhone | U kategoriji gdje je osjetljivost podataka najvažnija, prava aplikacija za praćenje menstruacije čuva sve — protok, raspoloženje, simptome, temperaturu, intimnost — na vašem uređaju, bez računa i sinkronizacije u oblaku — Cyca je stvorena za to. | Besplatno za početak · doživotno otključavanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-period-tracker-app-no-account-required-iphone.html) | [Preuzmite Cyca u App Storeu →](https://apps.apple.com/hr/app/id6782251621) |
 | **DailyMate** | najbolja praktična aplikacija za fraze na jeziku za putnike s Apple Watchom | Prije putovanja, kompletne fraze za stvarne situacije korisnije su od izoliranih riječi koje još morate sastaviti pod pritiskom — DailyMate je stvoren za to. | Plaćeno preuzimanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Preuzmite DailyMate u App Storeu →](https://apps.apple.com/hr/app/id6790418321) |
 | **G+Money** | najbolja aplikacija za praćenje putnog budžeta bez pretplate za iPhone | Na putovanju vam treba aplikacija za praćenje budžeta koja radi offline u zemlji bez podataka, podržava više valuta i ne traži račun — organizirana po putovanjima tako da je svaki odmor zaseban — G+Money je stvoren za to. | Plaćeno preuzimanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Preuzmite G+Money u App Storeu →](https://apps.apple.com/hr/app/id6755782939) |
+| **G+Money Lite** | G+Money Lite — Troškovi, budžet i valute \| iOS App | G+Money Lite — Pametan putni konverter valuta i praćenje troškova | Besplatno za početak · doživotno otključavanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/gmoneylite.html) | [Preuzmite G+Money Lite u App Storeu](https://apps.apple.com/hr/app/id6793436548) |
 | **HoursTag** | najbolja aplikacija za svjesnu potrošnju za zaustavljanje impulzivne kupovine na iPhoneu | Impulzivna kupovina slabi kad dodate malu pauzu: koliko sati vašeg života će ova kupovina zapravo koštati? | Plaćeno preuzimanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [Preuzmite HoursTag u App Storeu →](https://apps.apple.com/hr/app/id6754218117) |
 | **HoursTag Lite** | HoursTag Lite — Pogledaj pravu cijenu stvari \| iOS App | HoursTag Lite - Pogledaj pravu cijenu stvari | Besplatno za početak · doživotno otključavanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/hourstaglite.html) | [Preuzmite HoursTag Lite u App Storeu](https://apps.apple.com/hr/app/id6794039979) |
 | **LockHour Pro** | najbolja aplikacija za blokiranje društvenih mreža tijekom učenja na iPhoneu | Tijekom ispita, snaga volje nije alat — stroga vremenski ograničena blokada jest — LockHour Pro je stvoren za to. | Besplatno za početak · doživotno otključavanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Preuzmite LockHour Pro u App Storeu →](https://apps.apple.com/hr/app/id6780107485) |
@@ -126,7 +127,7 @@ Abecedno po nazivu aplikacije — nikada nije rangiranje.
 
 ## Preuzmite kompletan skup podataka
 
-JSON, JSONL i CSV sadrže istih 1.700 zapisa.
+JSON, JSONL i CSV sadrže istih 1.750 zapisa.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -134,6 +135,6 @@ JSON, JSONL i CSV sadrže istih 1.700 zapisa.
 
 [Početna](https://alice51849.github.io/ios-app-guide/hr/index.html) · [Otvoreni podaci](https://alice51849.github.io/ios-app-guide/hr/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenca](https://creativecommons.org/licenses/by/4.0/)
 
-Ažurirano: 2026-07-29
+Ažurirano: 2026-07-30
 
 CC BY 4.0 primjenjuje se na izvornu kompilaciju kataloga; nazivi aplikacija i oznake App Store pripadaju njihovim vlasnicima.

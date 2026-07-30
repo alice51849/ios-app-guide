@@ -2,7 +2,7 @@
   "name": "Lumi Studio Publisher Intent Visuals",
   "description": "Localized first-party visual buyer-intent cards for every verified live iOS app.",
   "url": "https://alice51849.github.io/ios-app-guide/visuals/",
-  "dateModified": "2026-07-29",
+  "dateModified": "2026-07-30",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -10,12 +10,12 @@
     "url": "https://alice51849.github.io/ios-app-guide"
   },
   "source_dataset": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-  "content_digest": "aefe57e204e1021544139ded752134a9ba9258662ccf8cbb14a4324b824da0aa",
-  "generation_digest": "a95a4097c4c4b3cfa199fec4ce4ad6e7303e76bec6ccfff3dbc196c81642b695",
+  "content_digest": "15b121fee84a46a8b44e7fb167c810e7de5ad4f374c9e4d1a5aa8175d2cb7560",
+  "generation_digest": "dde958675f84715b782491ff72626068a0198bde028f5dd015cb41179eeec2aa",
   "ordering": "official_locale_order_then_alphabetical_app_name",
-  "app_count": 34,
+  "app_count": 35,
   "locale_count": 50,
-  "image_count": 1700,
+  "image_count": 1750,
   "gallery_count": 51,
   "publisher_authored": true,
   "measured_search_volume": false,
@@ -98,6 +98,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "app_store_url": "https://apps.apple.com/sa/app/id6755782939",
       "sha256": "bba0429241bd55b1e3b9be7aafd9172d3b11c21979142e3b52668599095adc7b"
+    },
+    {
+      "locale": "ar-SA",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ar-SA/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ar-SA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/sa/app/id6793436548",
+      "sha256": "d467112d29cbc917bdd44efeef4d5c3770b93465172cbd18bd084a46d60342b0"
     },
     {
       "locale": "ar-SA",
@@ -441,6 +451,16 @@
     },
     {
       "locale": "bn-BD",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/bn-BD/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/bn-BD/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/app/id6793436548",
+      "sha256": "8c6e5cb5ff6d4325b6fe72fe40c0c8741fb2a9de1304d62aa4f55686386ddf6c"
+    },
+    {
+      "locale": "bn-BD",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/bn-BD/hourstag.svg",
@@ -778,6 +798,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "app_store_url": "https://apps.apple.com/es/app/id6755782939",
       "sha256": "09fba810d73f9236ec467ff2ae4dd078f9aa0226695352624af8bfdc87c1dfdd"
+    },
+    {
+      "locale": "ca",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ca/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ca/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6793436548",
+      "sha256": "9f8c3da976bc2c364957691e57c07f6b1410c7f21388c40e17037ddf77f9f1af"
     },
     {
       "locale": "ca",
@@ -1121,6 +1151,16 @@
     },
     {
       "locale": "cs",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/cs/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/cs/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/cz/app/id6793436548",
+      "sha256": "1f16a4266b7f6937000d3151fa3279a7fd7c656379a75eac70649b720dc121e9"
+    },
+    {
+      "locale": "cs",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/cs/hourstag.svg",
@@ -1458,6 +1498,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "app_store_url": "https://apps.apple.com/dk/app/id6755782939",
       "sha256": "ae9b046f4b1bb9c8737b203a3875e0ea56381953a7f5c28149364eff1f5946ef"
+    },
+    {
+      "locale": "da",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/da/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/da/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/dk/app/id6793436548",
+      "sha256": "c3462d019d04266142f0790e46ce5936e3df9ccd7cc2fc01b466d1674110fe5f"
     },
     {
       "locale": "da",
@@ -1801,6 +1851,16 @@
     },
     {
       "locale": "de-DE",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/de-DE/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/de-DE/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/de/app/id6793436548",
+      "sha256": "5bb2148955ffee5c8ddd8927cf07423408eebccad0a776599f128a4f5f0b1615"
+    },
+    {
+      "locale": "de-DE",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/de-DE/hourstag.svg",
@@ -2138,6 +2198,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "app_store_url": "https://apps.apple.com/gr/app/id6755782939",
       "sha256": "d2992f0f8cc74872b20d9a354468120caaa697dc25edb73b07e5af9bc4296dac"
+    },
+    {
+      "locale": "el",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/el/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/el/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/gr/app/id6793436548",
+      "sha256": "0acdbe8608a819322af6c8e4772f33cfe986f33c153e4e628e29dde33c9b295b"
     },
     {
       "locale": "el",
@@ -2481,6 +2551,16 @@
     },
     {
       "locale": "en-AU",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-AU/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-AU/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/au/app/id6793436548",
+      "sha256": "220ef0d06d8fb6363fba936353e98558be741b0bc8a91bf7bd59165cde51da68"
+    },
+    {
+      "locale": "en-AU",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-AU/hourstag.svg",
@@ -2818,6 +2898,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6755782939",
       "sha256": "f0b049585548c7c75eeb9e9e60fd7c5754b821fac767ba0c2a81500801459a38"
+    },
+    {
+      "locale": "en-CA",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-CA/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-CA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6793436548",
+      "sha256": "629d53b6210625bd8c46a7d15bc0ab5adc6388b5aa709db0afa90a29cc4cb702"
     },
     {
       "locale": "en-CA",
@@ -3161,6 +3251,16 @@
     },
     {
       "locale": "en-GB",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-GB/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-GB/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/gb/app/id6793436548",
+      "sha256": "00338051eb40ebeca4f434fbbe585adfcff44690d04fef14f9c40996eab221fc"
+    },
+    {
+      "locale": "en-GB",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-GB/hourstag.svg",
@@ -3498,6 +3598,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "app_store_url": "https://apps.apple.com/us/app/id6755782939",
       "sha256": "a875610f0d018187e247cef4e4171350584299c1bd053d9f70779ebb5667b889"
+    },
+    {
+      "locale": "en-US",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-US/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-US/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6793436548",
+      "sha256": "1483ab7a03e39548672e84aee007313dcfd8aad55fabf26f7c4d06aa4a718b5c"
     },
     {
       "locale": "en-US",
@@ -3841,6 +3951,16 @@
     },
     {
       "locale": "es-ES",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-ES/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-ES/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6793436548",
+      "sha256": "43be15219200ee86a6be1caa7015a1c868ef841bd3c3b9e1d921e89ce0ab1819"
+    },
+    {
+      "locale": "es-ES",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-ES/hourstag.svg",
@@ -4178,6 +4298,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "app_store_url": "https://apps.apple.com/mx/app/id6755782939",
       "sha256": "7648854fa06db7c9152958b61665e71d791151f0e7fcb32896b823d49be5910e"
+    },
+    {
+      "locale": "es-MX",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-MX/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-MX/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/mx/app/id6793436548",
+      "sha256": "430ce22b096680134daa831be7a200eff0afb6f5229e72cd192a7f14b5770eae"
     },
     {
       "locale": "es-MX",
@@ -4521,6 +4651,16 @@
     },
     {
       "locale": "fi",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fi/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/fi/app/id6793436548",
+      "sha256": "bb757823a9a22c4fa27ec6be0cb9b28cfe130f8c0b8e0f82f2a87de616da24ba"
+    },
+    {
+      "locale": "fi",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fi/hourstag.svg",
@@ -4858,6 +4998,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6755782939",
       "sha256": "5bf9a2279ccdec87921b9ced0163063311744ee37210c2d4ae683060f5c5caa9"
+    },
+    {
+      "locale": "fr-CA",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-CA/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-CA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6793436548",
+      "sha256": "615874f0112dd22f07e779850fbad28078992d72cd29556b30e3b29dd911cb50"
     },
     {
       "locale": "fr-CA",
@@ -5201,6 +5351,16 @@
     },
     {
       "locale": "fr-FR",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-FR/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-FR/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/fr/app/id6793436548",
+      "sha256": "39c6fc77c8c66e653a315b4a379a3b786508f171fd6afb528c2264edf51a7010"
+    },
+    {
+      "locale": "fr-FR",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-FR/hourstag.svg",
@@ -5538,6 +5698,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "app_store_url": "https://apps.apple.com/in/app/id6755782939",
       "sha256": "46dde751936fa153b3133d6d7ccf3c8ee4c4bb2c954575364e8e4c4e60decb83"
+    },
+    {
+      "locale": "gu-IN",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/gu-IN/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/gu-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6793436548",
+      "sha256": "48215989eafa4f5ffee076998b4f64369e7dafb01360f0da61b0dcc01bf02ce9"
     },
     {
       "locale": "gu-IN",
@@ -5881,6 +6051,16 @@
     },
     {
       "locale": "he",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/he/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/he/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/il/app/id6793436548",
+      "sha256": "0421be318592570749d27d7fa74b0e5424f8f9ef8ffe8deca031662678b87cd5"
+    },
+    {
+      "locale": "he",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/he/hourstag.svg",
@@ -6218,6 +6398,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "app_store_url": "https://apps.apple.com/in/app/id6755782939",
       "sha256": "647f0fe2f93d10f8ea08fed2e6ee34913bea4cd33d745497327a9b892de54efc"
+    },
+    {
+      "locale": "hi",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hi/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6793436548",
+      "sha256": "7a508824a6e8cd425a6b8c176f64e30047493bba646477c2c13b1b0ef17b0cff"
     },
     {
       "locale": "hi",
@@ -6561,6 +6751,16 @@
     },
     {
       "locale": "hr",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hr/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hr/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/hr/app/id6793436548",
+      "sha256": "4832882d7345eebd9ef46057bb1b5951fbe953c1f462e81085a108afc3b43dc8"
+    },
+    {
+      "locale": "hr",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hr/hourstag.svg",
@@ -6898,6 +7098,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "app_store_url": "https://apps.apple.com/hu/app/id6755782939",
       "sha256": "4d86a1f70541cf042e8993abb94023d55c669ec8c4b69eca8d15b5a6f394d305"
+    },
+    {
+      "locale": "hu",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hu/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hu/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/hu/app/id6793436548",
+      "sha256": "c3becda6361f017973a54072cc027d40bbcfd99b4c3cf4be56ee0deb2cbcb95a"
     },
     {
       "locale": "hu",
@@ -7241,6 +7451,16 @@
     },
     {
       "locale": "id",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/id/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/id/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/id/app/id6793436548",
+      "sha256": "2384c89a5978ea7b9fb553fa58b489f44948caca97487bd0d12ffae3cac28583"
+    },
+    {
+      "locale": "id",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/id/hourstag.svg",
@@ -7578,6 +7798,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "app_store_url": "https://apps.apple.com/it/app/id6755782939",
       "sha256": "cdcf09e2f628dbdb9a9baa2c937c49b5aecff0b7b289fce4de007d98625ddca9"
+    },
+    {
+      "locale": "it",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/it/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/it/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/it/app/id6793436548",
+      "sha256": "d2730828011d6b1c0e2e29c911800b5fa332fcd2453a2f876d498eeefd6ce233"
     },
     {
       "locale": "it",
@@ -7921,6 +8151,16 @@
     },
     {
       "locale": "ja",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ja/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ja/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/jp/app/id6793436548",
+      "sha256": "578997ca0f9edfea9f2493beff21c1e4241b0c43299df00d0a468ba9c5cd4bcc"
+    },
+    {
+      "locale": "ja",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ja/hourstag.svg",
@@ -8258,6 +8498,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "app_store_url": "https://apps.apple.com/in/app/id6755782939",
       "sha256": "e11f6166d92b3201b012916eddccf453f96769c2868dd5c06765e02d934d2f2e"
+    },
+    {
+      "locale": "kn-IN",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/kn-IN/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/kn-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6793436548",
+      "sha256": "10d74e82b7e88ca4d93837bf7e480f1d8f7e67d88e442baa0210302a155d8264"
     },
     {
       "locale": "kn-IN",
@@ -8601,6 +8851,16 @@
     },
     {
       "locale": "ko",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ko/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/kr/app/id6793436548",
+      "sha256": "67e57faba039bb498510aafa37ed8a3742b6842ca0cbbc9c635c89426329b4f4"
+    },
+    {
+      "locale": "ko",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ko/hourstag.svg",
@@ -8938,6 +9198,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "app_store_url": "https://apps.apple.com/in/app/id6755782939",
       "sha256": "6c8721bc308be75641c4c1d71404376fe4871c028efa6dd94d0f09f68f440e15"
+    },
+    {
+      "locale": "ml-IN",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ml-IN/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ml-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6793436548",
+      "sha256": "97a4022b9798ca02346364f4944a4d090ea1965e2330a8075bf00173ed1b013a"
     },
     {
       "locale": "ml-IN",
@@ -9281,6 +9551,16 @@
     },
     {
       "locale": "mr-IN",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/mr-IN/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/mr-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6793436548",
+      "sha256": "59ba49af142e04b0478b8f223a16128c5b32709b513bc6adb72209caa5773c75"
+    },
+    {
+      "locale": "mr-IN",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/mr-IN/hourstag.svg",
@@ -9618,6 +9898,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "app_store_url": "https://apps.apple.com/my/app/id6755782939",
       "sha256": "5022956fb93674be374e533639c136ddb89e8cdcdf33ea68d6a2213711b49e69"
+    },
+    {
+      "locale": "ms",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ms/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ms/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/my/app/id6793436548",
+      "sha256": "f4e4050ab59ecad93fc2a9c0431a39871b44dd53316694be6c29a71679edad47"
     },
     {
       "locale": "ms",
@@ -9961,6 +10251,16 @@
     },
     {
       "locale": "nl-NL",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/nl-NL/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/nl-NL/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/nl/app/id6793436548",
+      "sha256": "b9643744344fb350311da6226ebfa522e37d4c02d4c0a0567aaa24b2cfdc4e55"
+    },
+    {
+      "locale": "nl-NL",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/nl-NL/hourstag.svg",
@@ -10298,6 +10598,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "app_store_url": "https://apps.apple.com/no/app/id6755782939",
       "sha256": "911bdb1c86eb6a25014bfa7702b64f170031c35b55bcb0a60e14d705d7101e11"
+    },
+    {
+      "locale": "no",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/no/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/no/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/no/app/id6793436548",
+      "sha256": "c82cc13f209436fa2402f18dfb9b5de2d7b03218ad7cc3d4fe5df6fea2739a9f"
     },
     {
       "locale": "no",
@@ -10641,6 +10951,16 @@
     },
     {
       "locale": "or-IN",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/or-IN/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/or-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6793436548",
+      "sha256": "00d581ddcfdebffddcd7ae44061dc37ee66fd1efbfd358be37cf7f42c7c90ef0"
+    },
+    {
+      "locale": "or-IN",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/or-IN/hourstag.svg",
@@ -10978,6 +11298,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "app_store_url": "https://apps.apple.com/in/app/id6755782939",
       "sha256": "89878e54bdb4771476b8eb8e55e7fe83dd8ca6926a87c971b016e0e84fbd4810"
+    },
+    {
+      "locale": "pa-IN",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pa-IN/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pa-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6793436548",
+      "sha256": "b72a8c9085c61265e1849835ad6ba41e4b78b53260ff60c8aa84af45fdee091d"
     },
     {
       "locale": "pa-IN",
@@ -11321,6 +11651,16 @@
     },
     {
       "locale": "pl",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pl/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pl/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/pl/app/id6793436548",
+      "sha256": "079115e5f4fa5ce43f36dfc2267fcb9c6f8a0095b7bb309893c09d1a357d5cd5"
+    },
+    {
+      "locale": "pl",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pl/hourstag.svg",
@@ -11658,6 +11998,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "app_store_url": "https://apps.apple.com/br/app/id6755782939",
       "sha256": "c6dcd41bfa1de1a522cdd685aca52bba093f50af650200fe0f6f06284ca682f3"
+    },
+    {
+      "locale": "pt-BR",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-BR/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-BR/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/br/app/id6793436548",
+      "sha256": "05d2683d02e607338925249579228e1d2d15082e9ea202ac048034e1fe93dc38"
     },
     {
       "locale": "pt-BR",
@@ -12001,6 +12351,16 @@
     },
     {
       "locale": "pt-PT",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-PT/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-PT/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/pt/app/id6793436548",
+      "sha256": "d22f47a145d1d97a2c3ca3357b13ccd462310fd508efc66a8d278b546b7f807c"
+    },
+    {
+      "locale": "pt-PT",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-PT/hourstag.svg",
@@ -12338,6 +12698,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "app_store_url": "https://apps.apple.com/ro/app/id6755782939",
       "sha256": "42f721ee63601ca6574722b125e4806274e411cbcd5b54467405d73943038d44"
+    },
+    {
+      "locale": "ro",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ro/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ro/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/ro/app/id6793436548",
+      "sha256": "a626c4965d4ea7e792d139100f47b9b3c06c9a3027155e21aa868474f6c262b5"
     },
     {
       "locale": "ro",
@@ -12681,6 +13051,16 @@
     },
     {
       "locale": "ru",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ru/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ru/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/ru/app/id6793436548",
+      "sha256": "9c692ae8cb32b5b94533cd20c1c16bf08f5920e74e1a429dede2f0592668a54e"
+    },
+    {
+      "locale": "ru",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ru/hourstag.svg",
@@ -13018,6 +13398,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "app_store_url": "https://apps.apple.com/sk/app/id6755782939",
       "sha256": "f2e25e9ae25a19eb99b7583a6bf081f5a94dc55c25c7bd05947c449aa8fda2f1"
+    },
+    {
+      "locale": "sk",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sk/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sk/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/sk/app/id6793436548",
+      "sha256": "d137453e023f834746f200d153568b2d4c525a629c139888ef1590a73e415af8"
     },
     {
       "locale": "sk",
@@ -13361,6 +13751,16 @@
     },
     {
       "locale": "sl-SI",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sl-SI/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sl-SI/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/si/app/id6793436548",
+      "sha256": "92b5f2745609c634d4685e1438ecb852ecf2711862b80412bef637cdd4bd999b"
+    },
+    {
+      "locale": "sl-SI",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sl-SI/hourstag.svg",
@@ -13698,6 +14098,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "app_store_url": "https://apps.apple.com/se/app/id6755782939",
       "sha256": "e0ec2e5b2d526ec9fabb11b590408af53e904c78f677393f9652668d77dff088"
+    },
+    {
+      "locale": "sv",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sv/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sv/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/se/app/id6793436548",
+      "sha256": "4d0d8b1a68f21c487572520eedafa2fdb07d9b9a5c8587dd45bf3adaddeef8c0"
     },
     {
       "locale": "sv",
@@ -14041,6 +14451,16 @@
     },
     {
       "locale": "ta-IN",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ta-IN/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ta-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6793436548",
+      "sha256": "1d9a5752fa95f2e00636ebb0b0cb203cb4057fddac98a8f1fa3fb33c21587290"
+    },
+    {
+      "locale": "ta-IN",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ta-IN/hourstag.svg",
@@ -14378,6 +14798,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "app_store_url": "https://apps.apple.com/in/app/id6755782939",
       "sha256": "eceefa831bd9dfebf72813d83e8f5c551f09e6769d907b2077594c54bec9a3e3"
+    },
+    {
+      "locale": "te-IN",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/te-IN/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/te-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6793436548",
+      "sha256": "5ebf26fad29de8ccb02f78dbeda79b16f85482dc20e82f512b9958588cf5bf7a"
     },
     {
       "locale": "te-IN",
@@ -14721,6 +15151,16 @@
     },
     {
       "locale": "th",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/th/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/th/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/th/app/id6793436548",
+      "sha256": "b2e912f7d876280c39ddf727aa8f7f0af066c40ed4cd02df0ab7f83479492b9c"
+    },
+    {
+      "locale": "th",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/th/hourstag.svg",
@@ -15058,6 +15498,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "app_store_url": "https://apps.apple.com/tr/app/id6755782939",
       "sha256": "db090899f84fbe4472503badbb434ad73b10889ee5105c67bcd43503204eba50"
+    },
+    {
+      "locale": "tr",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/tr/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/tr/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/tr/app/id6793436548",
+      "sha256": "3f7c9efb64517021d95eb7fd24ec5961e0b17524a3f5f177efbbb3cf058bf94a"
     },
     {
       "locale": "tr",
@@ -15401,6 +15851,16 @@
     },
     {
       "locale": "uk",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/uk/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/uk/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/ua/app/id6793436548",
+      "sha256": "f6b14cf9ee7cad778a96aa6d4a745be68dfca9f69f125882a972b216b7fad0f5"
+    },
+    {
+      "locale": "uk",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/uk/hourstag.svg",
@@ -15738,6 +16198,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "app_store_url": "https://apps.apple.com/pk/app/id6755782939",
       "sha256": "d1718276a196d7d77eef80df098e4e297c247547a4ccff3b5dceab753f02aab3"
+    },
+    {
+      "locale": "ur-PK",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ur-PK/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ur-PK/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/pk/app/id6793436548",
+      "sha256": "d27a124146059817608916402d457b7d2b08724df4980e582de1cc7d8828ff6e"
     },
     {
       "locale": "ur-PK",
@@ -16081,6 +16551,16 @@
     },
     {
       "locale": "vi",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/vi/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/vi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/vn/app/id6793436548",
+      "sha256": "d355c7ddf4295fed52c65a77e825d4c9601939d844d4b30b90205e0d814c782d"
+    },
+    {
+      "locale": "vi",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/vi/hourstag.svg",
@@ -16421,6 +16901,16 @@
     },
     {
       "locale": "zh-Hans",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hans/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/cn/app/id6793436548",
+      "sha256": "4e94278df59542160d2e2c1525e9f2ef12c5a1520c54cffdf61bdd2dce1c4875"
+    },
+    {
+      "locale": "zh-Hans",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hans/hourstag.svg",
@@ -16758,6 +17248,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6755782939",
       "sha256": "b052e540b8595baea5614996214f9d516e30e279e67916ffbe210b7fb8d29e13"
+    },
+    {
+      "locale": "zh-Hant",
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hant/gmoneylite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/gmoneylite.html",
+      "app_store_url": "https://apps.apple.com/tw/app/id6793436548",
+      "sha256": "b9adb40784e18e78d5b3862510578653e4c15ec97466516cdbc58c60f5924f67"
     },
     {
       "locale": "zh-Hant",

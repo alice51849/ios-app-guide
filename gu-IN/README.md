@@ -4,7 +4,7 @@
 
 વિકાસકર્તા દ્વારા સીધો પ્રકાશિત કેટલોગ, જે દરેક એપ કોના માટે બનાવાઈ છે, વપરાશકર્તા કયું કામ પૂર્ણ કરવા માંગે છે અને App Store સુધીનો સીધો માર્ગ શું છે તે સમજાવે છે.
 
-34 ચકાસાયેલ અને App Store પર ઉપલબ્ધ iOS એપ્સ તથા Appleનાં 50 ભાષા-પ્રદેશ માટે પ્રકાશક દ્વારા લખાયેલા શોધ ઇરાદા.
+35 ચકાસાયેલ અને App Store પર ઉપલબ્ધ iOS એપ્સ તથા Appleનાં 50 ભાષા-પ્રદેશ માટે પ્રકાશક દ્વારા લખાયેલા શોધ ઇરાદા.
 
 **ભાષા-પ્રદેશ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · **gu-IN** · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Cyca** | iPhone માટે શ્રેષ્ઠ પીરિયડ ટ્રેકર એપ કોઈ ખાતા વગર | જ્યાં ડેટા સંવેદનશીલતા મુખ્ય છે, ત્યાં યોગ્ય પીરિયડ ટ્રેકર બધું — પ્રવાહ, મૂડ, લક્ષણો, તાપમાન, નજીકપણું — તમારા ડિવાઇસ પર રાખે છે, કોઈ ખાતું કે ક્લાઉડ સિંક વગર — Cyca આ માટે બનાવાયું છે. | મફત શરૂઆત · કાયમી અનલૉક | [માર્ગદર્શક](https://alice51849.github.io/ios-app-guide/gu-IN/answers/best-period-tracker-app-no-account-required-iphone.html) | [App Store પર Cyca મેળવો →](https://apps.apple.com/in/app/id6782251621) |
 | **DailyMate** | એપલ વોચ સાથે મુસાફરો માટે શ્રેષ્ઠ વ્યવહારુ ભાષા વાક્ય એપ | પ્રવાસ પહેલાં, વાસ્તવિક પરિસ્થિતિઓ માટે સંપૂર્ણ વાક્યો અલગ શબ્દકોશ કરતા વધુ ઉપયોગી હોય છે — ડેઇલીમેટ આ માટે બનાવવામાં આવ્યું છે. | ચુકવેલ ડાઉનલોડ | [માર્ગદર્શક](https://alice51849.github.io/ios-app-guide/gu-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [App Store પર ડેઇલીમેટ મેળવો →](https://apps.apple.com/in/app/id6790418321) |
 | **G+Money** | iPhone માટે શ્રેષ્ઠ પ્રવાસ બજેટ ટ્રેકર એપ કોઈ સબ્સ્ક્રિપ્શન વગર | પ્રવાસ દરમિયાન તમને એવી બજેટ ટ્રેકર જોઈએ જે ડેટા વગરના દેશમાં ઓફલાઇન કામ કરે, બહુચલણીઓ સંભાળે અને ખાતું માંગતું ન હોય — દરેક રજાને અલગ રાખે — G+Money આ માટે બનાવાયું છે. | ચુકવેલ ડાઉનલોડ | [માર્ગદર્શક](https://alice51849.github.io/ios-app-guide/gu-IN/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [App Store પર G+Money મેળવો →](https://apps.apple.com/in/app/id6755782939) |
+| **G+Money Lite** | G+Money Lite — પ્રવાસ ખર્ચ અને ચલણ \| iOS App | G+Money Lite — સ્માર્ટ મુસાફરી ચલણ અને ખર્ચ ટ્રેકર | મફત શરૂઆત · કાયમી અનલૉક | [માર્ગદર્શક](https://alice51849.github.io/ios-app-guide/gu-IN/gmoneylite.html) | [App Store પરથી G+Money Lite મેળવો](https://apps.apple.com/in/app/id6793436548) |
 | **HoursTag** | iPhone માટે શ્રેષ્ઠ મનનશીલ ખર્ચ એપ જે તાત્કાલિક ખરીદી રોકે | તાત્કાલિક ખરીદી નબળી પડે છે જ્યારે તમે એક નાનું વિરામ ઉમેરો: આ ચેકઆઉટ તમારા જીવનના કેટલા કલાક ખર્ચશે? | ચુકવેલ ડાઉનલોડ | [માર્ગદર્શક](https://alice51849.github.io/ios-app-guide/gu-IN/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [App Store પર HoursTag મેળવો →](https://apps.apple.com/in/app/id6754218117) |
 | **HoursTag Lite** | HoursTag Lite — વસ્તુઓની વાસ્તવિક કિંમત જુઓ \| iOS App | HoursTag Lite - વસ્તુઓની વાસ્તવિક કિંમત જુઓ | મફત શરૂઆત · કાયમી અનલૉક | [માર્ગદર્શક](https://alice51849.github.io/ios-app-guide/gu-IN/hourstaglite.html) | [App Store પરથી HoursTag Lite મેળવો](https://apps.apple.com/in/app/id6794039979) |
 | **LockHour Pro** | iPhone પર અભ્યાસ દરમિયાન સોશિયલ મીડિયા બ્લોક કરવા માટે શ્રેષ્ઠ એપ | પરીક્ષાઓ દરમિયાન, ઇચ્છાશક્તિ સાધન નથી — કડક સમયબદ્ધ બ્લોક છે — LockHour Pro આ માટે બનાવવામાં આવ્યું છે. | મફત શરૂઆત · કાયમી અનલૉક | [માર્ગદર્શક](https://alice51849.github.io/ios-app-guide/gu-IN/answers/best-app-to-block-social-media-while-studying-iphone.html) | [App Store પર LockHour Pro મેળવો →](https://apps.apple.com/in/app/id6780107485) |
@@ -126,7 +127,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## પૂર્ણ ડેટાસેટ ડાઉનલોડ કરો
 
-JSON, JSONL અને CSVમાં સમાન 1,700 રેકોર્ડ્સ છે.
+JSON, JSONL અને CSVમાં સમાન 1,750 રેકોર્ડ્સ છે.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -134,6 +135,6 @@ JSON, JSONL અને CSVમાં સમાન 1,700 રેકોર્ડ્�
 
 [હોમ](https://alice51849.github.io/ios-app-guide/gu-IN/index.html) · [ખુલ્લા ડેટા](https://alice51849.github.io/ios-app-guide/gu-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [લાઇસન્સ](https://creativecommons.org/licenses/by/4.0/)
 
-અપડેટ થયેલ: 2026-07-29
+અપડેટ થયેલ: 2026-07-30
 
 CC BY 4.0 મૂળ કેટલોગ સંકલન પર લાગુ પડે છે; એપનાં નામ અને App Store ચિહ્નો તેમના માલિકોના છે.

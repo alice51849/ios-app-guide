@@ -4,7 +4,7 @@
 
 Ensimmäisen osapuolen luettelo siitä, kenelle kukin sovellus on suunniteltu, mitä tehtävää he pyrkivät suorittamaan ja suora App Store -polku.
 
-Julkaisijan laatimat hakutarkoitukset 34 varmennetussa toimivassa iOS-sovelluksessa ja 50 Apple-lokaalissa.
+Julkaisijan laatimat hakutarkoitukset 35 varmennetussa toimivassa iOS-sovelluksessa ja 50 Apple-lokaalissa.
 
 **Lokaali:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · **fi** · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ Aakkosjärjestyksessä sovelluksen nimen mukaan — ei koskaan sijoitus.
 | **Cyca** | paras kuukautiskierron seurantasovellus ilman tiliä iPhonelle | Kategoriassa, jossa tietojen arkaluontoisuus on kaiken keskiössä, oikea kuukautiskierron seurantasovellus pitää kaiken — vuodon, mielialan, oireet, lämpötilan, läheisyyden — laitteellasi ilman tiliä tai pilvisynkronointia — Cyca on tehty tätä varten. | Ilmainen aloitus · elinikäinen avaus | [Opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-period-tracker-app-no-account-required-iphone.html) | [Hanki Cyca App Storesta →](https://apps.apple.com/fi/app/id6782251621) |
 | **DailyMate** | paras käytännöllinen kielilauseiden sovellus matkailijoille, jossa Apple Watch -tuki | Ennen matkaa täydelliset lauseet todellisiin tilanteisiin ovat hyödyllisempiä kuin irralliset sanastot, jotka pitää vielä koota paineen alla — DailyMate on tehty tätä varten. | Maksullinen ladattavaksi | [Opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Hanki DailyMate App Storesta →](https://apps.apple.com/fi/app/id6790418321) |
 | **G+Money** | paras matkabudjetin seurantasovellus ilman tilausta iPhonelle | Matkalla tarvitset budjettiseurannan, joka toimii offline-tilassa maassa ilman dataa, käsittelee useita valuuttoja ja ei vaadi tiliä — järjestetty matkoittain, jotta jokainen loma on erillinen — G+Money on tehty tätä varten. | Maksullinen ladattavaksi | [Opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Hanki G+Money App Storesta →](https://apps.apple.com/fi/app/id6755782939) |
+| **G+Money Lite** | G+Money Lite — Budjetti, menot & valuutta \| iOS App | G+Money Lite — Älykäs matkavaluutta- & kululaskuri | Ilmainen aloitus · elinikäinen avaus | [Opas](https://alice51849.github.io/ios-app-guide/fi/gmoneylite.html) | [Lataa G+Money Lite App Storesta](https://apps.apple.com/fi/app/id6793436548) |
 | **HoursTag** | paras tietoisen kulutuksen sovellus impulssiostojen hillitsemiseen iPhonella | Impulssiostokset heikkenevät, kun lisäät pienen tauon: kuinka monta tuntia elämästäsi tämä ostos oikeasti maksaa? | Maksullinen ladattavaksi | [Opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [Hanki HoursTag App Storesta →](https://apps.apple.com/fi/app/id6754218117) |
 | **HoursTag Lite** | HoursTag Lite — Asioiden todellinen hinta \| iOS App | HoursTag Lite - Asioiden todellinen hinta | Ilmainen aloitus · elinikäinen avaus | [Opas](https://alice51849.github.io/ios-app-guide/fi/hourstaglite.html) | [Lataa HoursTag Lite App Storesta](https://apps.apple.com/fi/app/id6794039979) |
 | **LockHour Pro** | paras sovellus sosiaalisen median estoon opiskelun ajaksi iPhonella | Kokeissa tahdonvoima ei riitä — tarvitaan tiukka ajoitettu esto — LockHour Pro on tehty tätä varten. | Ilmainen aloitus · elinikäinen avaus | [Opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Hanki LockHour Pro App Storesta →](https://apps.apple.com/fi/app/id6780107485) |
@@ -126,7 +127,7 @@ Aakkosjärjestyksessä sovelluksen nimen mukaan — ei koskaan sijoitus.
 
 ## Lataa koko tietoaineisto
 
-JSON, JSONL ja CSV sisältävät samat 1 700 tietuetta.
+JSON, JSONL ja CSV sisältävät samat 1 750 tietuetta.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -134,6 +135,6 @@ JSON, JSONL ja CSV sisältävät samat 1 700 tietuetta.
 
 [Etusivu](https://alice51849.github.io/ios-app-guide/fi/index.html) · [Avoin data](https://alice51849.github.io/ios-app-guide/fi/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisenssi](https://creativecommons.org/licenses/by/4.0/)
 
-Päivitetty: 2026-07-29
+Päivitetty: 2026-07-30
 
 CC BY 4.0 koskee alkuperäisen luettelon kokoamista; sovellusten nimet ja App Store -merkit kuuluvat omistajilleen.

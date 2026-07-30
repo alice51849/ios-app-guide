@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-29",
-  "content_digest": "cd2a71274b3bd5d3e00d6772cc5657280358d26d2762401c04e2999f54bac130",
+  "date_modified": "2026-07-30",
+  "content_digest": "e477229e5e10e5e7495c39b5b537e7b18cc4853bf893b82c75820eaf6baf23d4",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 34,
+  "record_count": 35,
   "apps": [
     {
       "key": "aibriefpack",
@@ -401,6 +401,58 @@
         "rating_value": 5.0,
         "rating_count": 1,
         "storefront_url": "https://apps.apple.com/tw/app/id6755782939"
+      }
+    },
+    {
+      "key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "name": "G+Money Lite",
+      "summary": "G+Money Lite — 聰明的旅行匯率記帳",
+      "category": "finance",
+      "search_terms": [
+        "記帳app",
+        "理財",
+        "記帳軟體",
+        "開銷",
+        "花費",
+        "帳本",
+        "消費記錄",
+        "旅遊記帳",
+        "貨幣換算",
+        "外幣",
+        "個人理財",
+        "預算管理",
+        "簿記",
+        "開支",
+        "換匯",
+        "記帳本",
+        "消費追蹤",
+        "匯率換算",
+        "匯率換算器",
+        "生活記帳",
+        "出國花費",
+        "離線記帳",
+        "自訂匯率"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/tw/app/id6793436548",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/gmoneylite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6793436548"
       }
     },
     {
@@ -2083,6 +2135,8 @@
         "price": "190",
         "currency": "TWD",
         "formatted_price": "$190.00",
+        "rating_value": 5.0,
+        "rating_count": 1,
         "storefront_url": "https://apps.apple.com/tw/app/id6790467886"
       }
     },

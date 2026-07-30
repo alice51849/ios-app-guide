@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "uk",
-  "dateModified": "2026-07-29",
-  "content_digest": "40f1fef3cf0a637dc1010463cbb853b82ebef0ada3346e1cd7fb4321114111af",
-  "generation_digest": "c15e37d2647a1e5ac95e11849810c08843b16111a9b5939e0d87defcbd5318b7",
+  "dateModified": "2026-07-30",
+  "content_digest": "15da0881b813653d283fe78ba4c16f0f9d1b43256b64b43cef08cab84c1dc45c",
+  "generation_digest": "0754104518b2116918910b0ea2e50f210f4474a166396a647550fc29b12d2972",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 34,
+  "record_count": 35,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/uk.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/uk.rss.xml",
@@ -507,6 +507,73 @@
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best travel budget tracker app no subscription iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "uk:gmoneylite",
+      "locale": "uk",
+      "app_key": "gmoneylite",
+      "app_name": "G+Money Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "G+Money Lite — Витрати, бюджет і валюта | iOS App",
+      "decision_context": "G+Money Lite — Розумний конвертер валют для подорожей та трекер витрат Гроші для подорожей, просто Записуйте кожну покупку в місцевій валюті та миттєво бачте її в своїй домашній валюті — онлайн або офлайн. Конвертувати • Живі або ручні курси: Ми можемо автоматично отримувати останні курси, або ви можете встановити їх самі. Завжди працює офлайн. • Отримуйте останні курси при відкритті програми (приблизно кожні 6 годин). Завжди працює офлайн з вашими збереженими курсами. • Середній ринковий курс. Картки та готівка можуть відрізнятися. Витрати • Щоденний ліміт: Додатково. Дивіться, як кожен день відстежується відносно нього. • За категорією · Поїздки · Фільтри · Записи • Резервне копіювання та відновлення: Включає витрати, курси, категорії та налаштування. • Widget · Apple Watch Усе залишається на вашому пристрої. Немає облікового запису, немає відстеження. Курси використовують публічний сервіс обміну валют. Безкоштовно: курси, бюджет, підсумок · 1 поїздка · 3 витрати Один платіж · Назавжди · Без підписки Розблокуйте назавжди необмежені витрати й поїздки.",
+      "category": "finance",
+      "category_label": "Гроші та подорожі",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Безкоштовно для початку · довічне розблокування",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Офлайн",
+        "Без облікового запису",
+        "Без відстеження",
+        "Приватно / на пристрої"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Віджет",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Гроші та подорожі",
+        "Безкоштовно для початку · довічне розблокування",
+        "Офлайн",
+        "Без облікового запису",
+        "Без відстеження",
+        "Приватно / на пристрої",
+        "Віджет",
+        "Apple Watch",
+        "App Store · Безкоштовно"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/gmoneylite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/uk/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/uk/gmoneylite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fgmoneylite%2Fdecision%2Fl%2Fuk%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/uk.json",
+      "app_store_id": "6793436548",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
+      "app_store_url": "https://apps.apple.com/ua/app/id6793436548",
+      "app_store_cta_label": "Завантажте G+Money Lite з App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
+      "guide_cta_label": "Прочитати повний довідник",
+      "publisher_disclosure": "Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.",
+      "source_persona_query": "best free travel expense tracker with currency conversion for iphone",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

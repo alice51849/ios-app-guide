@@ -21264,6 +21264,7 @@ class GeneratorTests(unittest.TestCase):
             "maskmyfile",
             "mochidonestamp",
             "hourstaglite",
+            "gmoneylite",
             "aibriefpack",
         }
         self.assertEqual(paid_upfront | free_with_unlock, set(APPS))
@@ -21283,6 +21284,20 @@ class GeneratorTests(unittest.TestCase):
     def test_hourstag_lite_registry_keeps_verified_capabilities(self):
         capabilities = portfolio_app_finder.explicit_capabilities(
             APPS["hourstaglite"]
+        )
+        for capability in (
+            "no_account",
+            "no_tracking",
+            "private_or_on_device",
+            "widget",
+            "apple_watch",
+        ):
+            with self.subTest(capability=capability):
+                self.assertTrue(capabilities[capability])
+
+    def test_gmoney_lite_registry_keeps_verified_capabilities(self):
+        capabilities = portfolio_app_finder.explicit_capabilities(
+            APPS["gmoneylite"]
         )
         for capability in (
             "no_account",
@@ -22570,6 +22585,15 @@ class GeneratorTests(unittest.TestCase):
         materialize_block = workflow.split(
             "- name: Materialize newly live app surfaces", 1
         )[1].split("- name: Verify zero-cost growth infrastructure", 1)[0]
+        self.assertEqual(1, materialize_block.count("aeo_guide.py --missing"))
+        self.assertLess(
+            materialize_block.index("build_pages_i18n.py --cached-live"),
+            materialize_block.index("aeo_guide.py --missing"),
+        )
+        self.assertLess(
+            materialize_block.index("aeo_guide.py --missing"),
+            materialize_block.index("ensure_live_guides.py"),
+        )
         self.assertNotIn("passport_photo_print_sheet.py", materialize_block)
         self.assertNotIn("document_scan_planner.py", materialize_block)
         self.assertNotIn("blurry_photo_diagnostic.py", materialize_block)

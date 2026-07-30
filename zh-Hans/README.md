@@ -4,7 +4,7 @@
 
 第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。
 
-由开发者撰写的搜索意图，涵盖 34 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
+由开发者撰写的搜索意图，涵盖 35 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
 
 **地区语言:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · **zh-Hans** · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Cyca** | 无需账户的最佳经期追踪应用 iPhone | 在数据敏感度极高的类别中，合适的经期追踪应用将所有内容——流量、情绪、症状、体温、亲密行为——保存在设备上，无账户，无云同步——Cyca 专为此设计。 | 免费开始使用 · 永久解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-period-tracker-app-no-account-required-iphone.html) | [在 App Store 获取 Cyca →](https://apps.apple.com/cn/app/id6782251621) |
 | **DailyMate** | 适用于配备 Apple Watch 旅行者的最佳实用语言短语应用 | 旅行前，针对真实场景的完整短语比需要在压力下拼凑的零散词汇更实用——DailyMate 正是为此而设计。 | 付费下载 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [在 App Store 获取 DailyMate →](https://apps.apple.com/cn/app/id6790418321) |
 | **G+Money** | 无需订阅的最佳旅行预算追踪应用 iPhone | 旅行时你需要一个在无移动数据的国家也能离线可用、支持多币种且不要求账户的预算追踪器——按旅行分类，确保每次假期独立——G+Money 专为此设计。 | 付费下载 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [在 App Store 获取 G+Money →](https://apps.apple.com/cn/app/id6755782939) |
+| **G+Money Lite** | G+Money Lite — 旅行记账・预算・汇率 \| iOS App | G+Money Lite — 聪明的旅行汇率记账 | 免费开始使用 · 永久解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/gmoneylite.html) | [在 App Store 获取 G+Money Lite](https://apps.apple.com/cn/app/id6793436548) |
 | **HoursTag** | 防止冲动购物的最佳理性消费应用 iPhone | 冲动购物因增加一小段停顿而减弱：这笔消费实际上会花费你多少小时的生命？ | 付费下载 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [在 App Store 获取 HoursTag →](https://apps.apple.com/cn/app/id6754218117) |
 | **HoursTag Lite** | HoursTag Lite — 看见每样东西的真实代价 \| iOS App | HoursTag Lite - 看见每样东西的真实代价 | 免费开始使用 · 永久解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/hourstaglite.html) | [在 App Store 获取 HoursTag Lite](https://apps.apple.com/cn/app/id6794039979) |
 | **LockHour Pro** | 学习时阻断社交媒体的最佳应用 iPhone | 考试期间，意志力不是工具——硬性定时屏蔽才是——LockHour Pro专为此设计。 | 免费开始使用 · 永久解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-app-to-block-social-media-while-studying-iphone.html) | [在 App Store 获取 LockHour Pro →](https://apps.apple.com/cn/app/id6780107485) |
@@ -126,7 +127,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## 下载完整数据集
 
-JSON、JSONL 和 CSV 格式包含相同的 1,700 条记录。
+JSON、JSONL 和 CSV 格式包含相同的 1,750 条记录。
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -134,6 +135,6 @@ JSON、JSONL 和 CSV 格式包含相同的 1,700 条记录。
 
 [首页](https://alice51849.github.io/ios-app-guide/zh-Hans/index.html) · [开放数据](https://alice51849.github.io/ios-app-guide/zh-Hans/data/lumi-studio-publisher-search-intent-catalog.html) · [许可协议](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-07-29
+更新日期: 2026-07-30
 
 CC BY 4.0 适用于原始目录编纂；应用名称和 App Store 标识归其所有者所有。

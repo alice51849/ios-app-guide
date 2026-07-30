@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "cs",
-  "dateModified": "2026-07-29",
-  "content_digest": "40f1fef3cf0a637dc1010463cbb853b82ebef0ada3346e1cd7fb4321114111af",
-  "generation_digest": "c15e37d2647a1e5ac95e11849810c08843b16111a9b5939e0d87defcbd5318b7",
+  "dateModified": "2026-07-30",
+  "content_digest": "15da0881b813653d283fe78ba4c16f0f9d1b43256b64b43cef08cab84c1dc45c",
+  "generation_digest": "0754104518b2116918910b0ea2e50f210f4474a166396a647550fc29b12d2972",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 34,
+  "record_count": 35,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/cs.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/cs.rss.xml",
@@ -507,6 +507,73 @@
       "publisher_disclosure": "Průvodce vytvořený vydavatelem Lumi Studio, vývojářem aplikace. Názvy aplikací jsou ochranné známky jejich vlastníků a používají se pouze pro identifikaci. U dokumentů, zdravotních, školních a pracovních rozhodnutí ověřte oficiální požadavky, pokud jsou relevantní.",
       "source_persona_query": "best travel budget tracker app no subscription iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "cs:gmoneylite",
+      "locale": "cs",
+      "app_key": "gmoneylite",
+      "app_name": "G+Money Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "G+Money Lite — Výdaje, rozpočet a měny | iOS App",
+      "decision_context": "G+Money Lite — Chytrý převodník měn a sledovač výdajů Cestovní peníze, jednoduše Zaznamenejte každý nákup v místní měně a ihned jej uvidíte ve své domácí měně — online nebo offline. Převést • Živé nebo manuální kurzy: Můžeme automaticky získat nejnovější kurzy, nebo si je můžete nastavit sami. Vždy funguje offline. • Získejte nejnovější kurzy při otevření aplikace (přibližně každých 6 hodin). Vždy funguje offline s vašimi uloženými kurzy. • Referenční středový kurz. Karty a hotovost se mohou lišit. Výdaje • Denní limit: Volitelné. Sledujte, jak se každý den držíte limitu. • Podle kategorie · Cesty · Filtry · Záznamy • Záloha a obnova: Zahrnuje výdaje, kurzy, kategorie a nastavení. • Widget · Apple Watch Všechno zůstává na vašem zařízení. Žádný účet, žádné sledování. Kurzy používají veřejnou službu směnných kurzů. Zdarma: kurzy, rozpočet, přehled · 1 cesta · 3 výdaje Jedna platba · Doživotní přístup · Bez předplatného Odemkněte navždy neomezené výdaje a cesty.",
+      "category": "finance",
+      "category_label": "Finance a cestování",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Zdarma na začátek · doživotní odemknutí",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Bez účtu",
+        "Bez sledování",
+        "Soukromé / v zařízení"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Finance a cestování",
+        "Zdarma na začátek · doživotní odemknutí",
+        "Offline",
+        "Bez účtu",
+        "Bez sledování",
+        "Soukromé / v zařízení",
+        "Widget",
+        "Apple Watch",
+        "App Store · Zdarma"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/gmoneylite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/cs/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/cs/gmoneylite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fgmoneylite%2Fdecision%2Fl%2Fcs%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/cs.json",
+      "app_store_id": "6793436548",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
+      "app_store_url": "https://apps.apple.com/cz/app/id6793436548",
+      "app_store_cta_label": "Stáhněte si G+Money Lite v App Storu",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CZK",
+        "formatted_price": "Zdarma"
+      },
+      "guide_cta_label": "Přečtěte si celý průvodce",
+      "publisher_disclosure": "Toto je materiál od první strany publikovaný Lumi Studio, vývojářem všech uvedených aplikací.",
+      "source_persona_query": "best free travel expense tracker with currency conversion for iphone",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

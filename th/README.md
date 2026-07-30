@@ -4,7 +4,7 @@
 
 แคตตาล็อกที่ผู้พัฒนาเผยแพร่โดยตรง ระบุว่าแต่ละแอปเหมาะกับใคร ต้องการทำงานใดให้เสร็จ และเข้าถึง App Store โดยตรงได้อย่างไร
 
-เจตนาการค้นหาที่ผู้พัฒนาเขียนสำหรับแอป iOS ที่ตรวจสอบแล้วและยังมีบน App Store จำนวน 34 แอป ครอบคลุมภาษาและภูมิภาค Apple 50 รายการ
+เจตนาการค้นหาที่ผู้พัฒนาเขียนสำหรับแอป iOS ที่ตรวจสอบแล้วและยังมีบน App Store จำนวน 35 แอป ครอบคลุมภาษาและภูมิภาค Apple 50 รายการ
 
 **โลเคล:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · **th** · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Cyca** | แอปติดตามรอบเดือนที่ดีที่สุด ไม่ต้องมีบัญชีสำหรับ iPhone | ในหมวดหมู่ที่ข้อมูลมีความละเอียดอ่อนสูง แอปติดตามรอบเดือนที่เหมาะสมเก็บทุกอย่าง — ประจำเดือน อารมณ์ อาการ อุณหภูมิ ความสัมพันธ์ — ไว้ในอุปกรณ์ของคุณ ไม่มีบัญชีและไม่มีการซิงค์คลาวด์ — Cyca สร้างมาเพื่อสิ่งนี้ | เริ่มใช้ฟรี · ปลดล็อกถาวร | [คู่มือ](https://alice51849.github.io/ios-app-guide/th/answers/best-period-tracker-app-no-account-required-iphone.html) | [รับ Cyca ใน App Store →](https://apps.apple.com/th/app/id6782251621) |
 | **DailyMate** | แอปวลีภาษาที่ใช้งานได้จริงดีที่สุดสำหรับนักเดินทางที่ใช้แอปเปิลวอทช์ | ก่อนเดินทาง วลีสมบูรณ์สำหรับสถานการณ์จริงมีประโยชน์กว่าคำศัพท์แยกที่คุณต้องประกอบเองภายใต้ความกดดัน — DailyMate ถูกสร้างมาเพื่อสิ่งนี้ | ดาวน์โหลดแบบชำระเงิน | [คู่มือ](https://alice51849.github.io/ios-app-guide/th/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [ดาวน์โหลด DailyMate จาก App Store →](https://apps.apple.com/th/app/id6790418321) |
 | **G+Money** | แอปติดตามงบประมาณการเดินทางที่ดีที่สุด ไม่มีการสมัครสมาชิกสำหรับ iPhone | เมื่อเดินทาง คุณต้องการแอปติดตามงบประมาณที่ใช้งานออฟไลน์ในประเทศที่ไม่มีข้อมูล รองรับหลายสกุลเงิน และไม่ต้องมีบัญชี จัดระเบียบตามทริปเพื่อแยกวันหยุดแต่ละทริป — G+Money สร้างมาเพื่อสิ่งนี้ | ดาวน์โหลดแบบชำระเงิน | [คู่มือ](https://alice51849.github.io/ios-app-guide/th/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [รับ G+Money ใน App Store →](https://apps.apple.com/th/app/id6755782939) |
+| **G+Money Lite** | G+Money Lite — งบ บันทึกรายจ่าย แลกเงิน \| iOS App | G+Money Lite — เครื่องมือแปลงสกุลเงินและติดตามค่าใช้จ่ายที่ชาญฉลาด | เริ่มใช้ฟรี · ปลดล็อกถาวร | [คู่มือ](https://alice51849.github.io/ios-app-guide/th/gmoneylite.html) | [ดาวน์โหลด G+Money Lite บน App Store](https://apps.apple.com/th/app/id6793436548) |
 | **HoursTag** | แอปช่วยใช้จ่ายอย่างมีสติที่ดีที่สุดเพื่อหยุดการซื้อโดยไม่คิดสำหรับ iPhone | การช็อปปิ้งโดยไม่คิดจะลดลงเมื่อคุณเพิ่มช่วงหยุดเล็กๆ: การซื้อครั้งนี้จะใช้เวลาทำงานของคุณกี่ชั่วโมง? | ดาวน์โหลดแบบชำระเงิน | [คู่มือ](https://alice51849.github.io/ios-app-guide/th/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [รับ HoursTag ใน App Store →](https://apps.apple.com/th/app/id6754218117) |
 | **HoursTag Lite** | HoursTag Lite — ดูราคาที่แท้จริงของสิ่งต่างๆ \| iOS App | HoursTag Lite - ดูราคาที่แท้จริงของสิ่งต่างๆ | เริ่มใช้ฟรี · ปลดล็อกถาวร | [คู่มือ](https://alice51849.github.io/ios-app-guide/th/hourstaglite.html) | [ดาวน์โหลด HoursTag Lite บน App Store](https://apps.apple.com/th/app/id6794039979) |
 | **LockHour Pro** | แอปบล็อกโซเชียลมีเดียที่ดีที่สุดขณะเรียนสำหรับ iPhone | ในช่วงสอบ ความตั้งใจไม่ใช่เครื่องมือ — แต่การบล็อกแบบเข้มงวดตามเวลาคือสิ่งที่จำเป็น — LockHour Pro ถูกสร้างมาเพื่อสิ่งนี้ | เริ่มใช้ฟรี · ปลดล็อกถาวร | [คู่มือ](https://alice51849.github.io/ios-app-guide/th/answers/best-app-to-block-social-media-while-studying-iphone.html) | [ดาวน์โหลด LockHour Pro ใน App Store →](https://apps.apple.com/th/app/id6780107485) |
@@ -126,7 +127,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## ดาวน์โหลดชุดข้อมูลทั้งหมด
 
-ไฟล์ JSON, JSONL และ CSV มีข้อมูล 1,700 รายการเหมือนกัน
+ไฟล์ JSON, JSONL และ CSV มีข้อมูล 1,750 รายการเหมือนกัน
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -134,6 +135,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [หน้าแรก](https://alice51849.github.io/ios-app-guide/th/index.html) · [ข้อมูลเปิด](https://alice51849.github.io/ios-app-guide/th/data/lumi-studio-publisher-search-intent-catalog.html) · [ใบอนุญาต](https://creativecommons.org/licenses/by/4.0/)
 
-อัปเดตเมื่อ: 2026-07-29
+อัปเดตเมื่อ: 2026-07-30
 
 CC BY 4.0 ใช้กับการรวบรวมแคตตาล็อกต้นฉบับ; ชื่อแอปและเครื่องหมาย App Store เป็นของเจ้าของแต่ละราย

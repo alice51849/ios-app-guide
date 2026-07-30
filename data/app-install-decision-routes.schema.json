@@ -74,13 +74,13 @@
       "uniqueItems": true
     },
     "app_count": {
-      "const": 34
+      "const": 35
     },
     "locale_count": {
       "const": 50
     },
     "record_count": {
-      "const": 1700
+      "const": 1750
     },
     "locales": {
       "type": "array",
@@ -223,8 +223,8 @@
     },
     "records": {
       "type": "array",
-      "minItems": 1700,
-      "maxItems": 1700,
+      "minItems": 1750,
+      "maxItems": 1750,
       "items": {
         "$ref": "#/$defs/record"
       }
@@ -361,6 +361,7 @@
             "cyca",
             "dailymate",
             "gmoney",
+            "gmoneylite",
             "hourstag",
             "hourstaglite",
             "lockhour",

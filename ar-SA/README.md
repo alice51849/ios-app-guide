@@ -4,7 +4,7 @@
 
 كتالوج ينشره المطور مباشرةً ويوضح الفئة التي صُمم لها كل تطبيق، والمهمة التي تريد إنجازها، والمسار المباشر إلى App Store.
 
-نوايا بحث كتبها الناشر لـ 34 تطبيق iOS تم التحقق من توفرها و50 إعدادًا لغويًا وإقليميًا من Apple.
+نوايا بحث كتبها الناشر لـ 35 تطبيق iOS تم التحقق من توفرها و50 إعدادًا لغويًا وإقليميًا من Apple.
 
 **الإعداد اللغوي والإقليمي:** **ar-SA** · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Cyca** | أفضل تطبيق تتبع الدورة الشهرية بدون حساب للآيفون | في فئة حيث حساسية البيانات هي القصة كلها، يحافظ متتبع الدورة الصحيح على كل شيء — التدفق، المزاج، الأعراض، الحرارة، العلاقة الحميمة — على جهازك، بدون حساب وبدون مزامنة سحابية — Cyca مصمم لهذا. | بدء مجاني · فتح دائم | [الدليل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-period-tracker-app-no-account-required-iphone.html) | [احصل على Cyca من App Store →](https://apps.apple.com/sa/app/id6782251621) |
 | **DailyMate** | أفضل تطبيق لعبارات اللغة العملية للمسافرين مع Apple Watch | قبل السفر، العبارات الكاملة للمواقف الواقعية أكثر فائدة من المفردات المنفصلة التي تحتاج لتركيبها تحت الضغط — تم تصميم DailyMate لهذا الغرض. | تحميل مدفوع | [الدليل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [احصل على DailyMate من App Store →](https://apps.apple.com/sa/app/id6790418321) |
 | **G+Money** | أفضل تطبيق تتبع ميزانية السفر بدون اشتراك للآيفون | في رحلة تحتاج إلى متتبع ميزانية يعمل بدون اتصال في بلد بدون بيانات، يتعامل مع عملات متعددة، ولا يطلب حساب — منظم حسب الرحلة بحيث كل عطلة منفصلة — G+Money مصمم لهذا. | تحميل مدفوع | [الدليل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [احصل على G+Money من App Store →](https://apps.apple.com/sa/app/id6755782939) |
+| **G+Money Lite** | G+Money Lite — مصاريف وميزانية وعملات \| iOS App | G+Money Lite — متتبع ذكي للعملات والسفر | بدء مجاني · فتح دائم | [الدليل](https://alice51849.github.io/ios-app-guide/ar-SA/gmoneylite.html) | [احصل على G+Money Lite من App Store](https://apps.apple.com/sa/app/id6793436548) |
 | **HoursTag** | أفضل تطبيق للإنفاق الواعي لإيقاف الشراء الاندفاعي للآيفون | يضعف التسوق الاندفاعي عندما تضيف توقفًا صغيرًا: كم عدد ساعات حياتك التي سيكلفها هذا الشراء فعليًا؟ | تحميل مدفوع | [الدليل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [احصل على HoursTag من App Store →](https://apps.apple.com/sa/app/id6754218117) |
 | **HoursTag Lite** | HoursTag Lite — شاهد السعر الحقيقي للأشياء \| iOS App | HoursTag Lite - شاهد السعر الحقيقي للأشياء | بدء مجاني · فتح دائم | [الدليل](https://alice51849.github.io/ios-app-guide/ar-SA/hourstaglite.html) | [احصل على HoursTag Lite من App Store](https://apps.apple.com/sa/app/id6794039979) |
 | **LockHour Pro** | أفضل تطبيق لحظر وسائل التواصل الاجتماعي أثناء الدراسة للآيفون | أثناء الامتحانات، الإرادة ليست الأداة — الحظر الصارم المحدد زمنياً هو الأداة — LockHour Pro مصمم لهذا. | بدء مجاني · فتح دائم | [الدليل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-app-to-block-social-media-while-studying-iphone.html) | [احصل على LockHour Pro من متجر التطبيقات →](https://apps.apple.com/sa/app/id6780107485) |
@@ -126,7 +127,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## تحميل مجموعة البيانات الكاملة
 
-تحتوي ملفات JSON وJSONL وCSV على نفس ١٬٧٠٠ سجل.
+تحتوي ملفات JSON وJSONL وCSV على نفس ١٬٧٥٠ سجل.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -134,6 +135,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [الرئيسية](https://alice51849.github.io/ios-app-guide/ar-SA/index.html) · [بيانات مفتوحة](https://alice51849.github.io/ios-app-guide/ar-SA/data/lumi-studio-publisher-search-intent-catalog.html) · [الرخصة](https://creativecommons.org/licenses/by/4.0/)
 
-آخر تحديث: 2026-07-29
+آخر تحديث: 2026-07-30
 
 تطبق CC BY 4.0 على تجميع الكتالوج الأصلي؛ أسماء التطبيقات وعلامات App Store ملك لأصحابها.

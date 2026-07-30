@@ -4,7 +4,7 @@
 
 Katalog yang diterbitkan terus oleh pembangun untuk menerangkan sasaran setiap aplikasi, tugasan yang mahu diselesaikan dan akses terus ke App Store.
 
-Niat carian yang ditulis penerbit untuk 34 aplikasi iOS yang disahkan dan tersedia di App Store, merentas 50 bahasa dan rantau Apple.
+Niat carian yang ditulis penerbit untuk 35 aplikasi iOS yang disahkan dan tersedia di App Store, merentas 50 bahasa dan rantau Apple.
 
 **Wilayah:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · **ms** · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ Mengikut abjad mengikut nama aplikasi — bukan kedudukan.
 | **Cyca** | aplikasi penjejak haid terbaik tanpa akaun diperlukan iPhone | Dalam kategori di mana kepekaan data adalah perkara utama, penjejak haid yang betul menyimpan semuanya — aliran, mood, simptom, suhu, keintiman — di dalam peranti anda, tanpa akaun dan tanpa penyelarasan awan — Cyca dibina untuk ini. | Percuma untuk bermula · buka kunci kekal | [Panduan](https://alice51849.github.io/ios-app-guide/ms/answers/best-period-tracker-app-no-account-required-iphone.html) | [Dapatkan Cyca di App Store →](https://apps.apple.com/my/app/id6782251621) |
 | **DailyMate** | aplikasi frasa bahasa praktikal terbaik untuk pelancong dengan Apple Watch | Sebelum perjalanan, frasa lengkap untuk situasi sebenar lebih berguna daripada kosa kata terpencil yang masih perlu anda susun di bawah tekanan — DailyMate dibina untuk ini. | Muat turun berbayar | [Panduan](https://alice51849.github.io/ios-app-guide/ms/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Dapatkan DailyMate di App Store →](https://apps.apple.com/my/app/id6790418321) |
 | **G+Money** | aplikasi penjejak bajet perjalanan terbaik tanpa langganan iPhone | Dalam perjalanan anda perlukan penjejak bajet yang berfungsi luar talian di negara tanpa data, mengendalikan pelbagai mata wang, dan tidak memerlukan akaun — diatur mengikut perjalanan supaya setiap percutian berasingan — G+Money dibina untuk ini. | Muat turun berbayar | [Panduan](https://alice51849.github.io/ios-app-guide/ms/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Dapatkan G+Money di App Store →](https://apps.apple.com/my/app/id6755782939) |
+| **G+Money Lite** | G+Money Lite — Bajet, perbelanjaan & kurs \| iOS App | G+Money Lite — Penukar mata wang perjalanan pintar & pengesan perbelanjaan | Percuma untuk bermula · buka kunci kekal | [Panduan](https://alice51849.github.io/ios-app-guide/ms/gmoneylite.html) | [Dapatkan G+Money Lite di App Store](https://apps.apple.com/my/app/id6793436548) |
 | **HoursTag** | aplikasi perbelanjaan berhemah terbaik untuk hentikan pembelian impuls iPhone | Pembelian impuls menjadi kurang kuat apabila anda menambah satu jeda kecil: berapa jam hidup anda yang akan dibelanjakan untuk pembelian ini? | Muat turun berbayar | [Panduan](https://alice51849.github.io/ios-app-guide/ms/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [Dapatkan HoursTag di App Store →](https://apps.apple.com/my/app/id6754218117) |
 | **HoursTag Lite** | HoursTag Lite — Lihat harga sebenar barang \| iOS App | HoursTag Lite - Lihat harga sebenar barang | Percuma untuk bermula · buka kunci kekal | [Panduan](https://alice51849.github.io/ios-app-guide/ms/hourstaglite.html) | [Dapatkan HoursTag Lite di App Store](https://apps.apple.com/my/app/id6794039979) |
 | **LockHour Pro** | aplikasi terbaik untuk menyekat media sosial semasa belajar iPhone | Semasa peperiksaan, kekuatan kehendak bukan alatnya — sekatan masa keras adalah — LockHour Pro dibina untuk ini. | Percuma untuk bermula · buka kunci kekal | [Panduan](https://alice51849.github.io/ios-app-guide/ms/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Dapatkan LockHour Pro di App Store →](https://apps.apple.com/my/app/id6780107485) |
@@ -126,7 +127,7 @@ Mengikut abjad mengikut nama aplikasi — bukan kedudukan.
 
 ## Muat turun set data lengkap
 
-JSON, JSONL dan CSV mengandungi 1,700 rekod yang sama.
+JSON, JSONL dan CSV mengandungi 1,750 rekod yang sama.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -134,6 +135,6 @@ JSON, JSONL dan CSV mengandungi 1,700 rekod yang sama.
 
 [Laman Utama](https://alice51849.github.io/ios-app-guide/ms/index.html) · [Data terbuka](https://alice51849.github.io/ios-app-guide/ms/data/lumi-studio-publisher-search-intent-catalog.html) · [Lesen](https://creativecommons.org/licenses/by/4.0/)
 
-Dikemas kini: 2026-07-29
+Dikemas kini: 2026-07-30
 
 CC BY 4.0 terpakai kepada kompilasi katalog asal; nama aplikasi dan tanda App Store adalah milik pemilik masing-masing.

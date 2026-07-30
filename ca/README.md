@@ -4,7 +4,7 @@
 
 Catàleg de primera mà que mostra per a qui està dissenyada cada app, la tasca que volen completar i el camí directe a l'App Store.
 
-Intencions de cerca escrites pel publicador per a 34 apps iOS verificades i actives en 50 locals d'Apple.
+Intencions de cerca escrites pel publicador per a 35 apps iOS verificades i actives en 50 locals d'Apple.
 
 **Local:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · **ca** · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ Alfabètic per nom d'app — mai és un rànquing.
 | **Cyca** | millor aplicació per controlar el cicle sense compte per a iPhone | En una categoria on la sensibilitat de dades és clau, el control adequat manté tot — flux, estat d'ànim, símptomes, temperatura, intimitat — al teu dispositiu, sense compte ni sincronització al núvol — Cyca està creat per això. | Inici gratuït · desbloqueig de per vida | [Guia](https://alice51849.github.io/ios-app-guide/ca/answers/best-period-tracker-app-no-account-required-iphone.html) | [Descarrega Cyca a l'App Store →](https://apps.apple.com/es/app/id6782251621) |
 | **DailyMate** | millor app de frases útils per viatjar amb Apple Watch | Abans d'un viatge, les frases completes per a situacions reals són més útils que el vocabulari aïllat que encara has d'assemblar sota pressió — DailyMate està dissenyat per això. | Descarrega de pagament | [Guia](https://alice51849.github.io/ios-app-guide/ca/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Descarrega DailyMate a l'App Store →](https://apps.apple.com/es/app/id6790418321) |
 | **G+Money** | millor aplicació per controlar pressupost de viatge sense subscripció per a iPhone | En un viatge necessites un control de pressupost que funcioni offline en un país sense dades, gestioni diverses monedes i no demani compte — organitzat per viatge perquè cada vacances siguin separades — G+Money està creat per això. | Descarrega de pagament | [Guia](https://alice51849.github.io/ios-app-guide/ca/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Descarrega G+Money a l'App Store →](https://apps.apple.com/es/app/id6755782939) |
+| **G+Money Lite** | G+Money Lite — Despeses, pressupost i canvi \| iOS App | G+Money Lite — Conversor de moneda de viatge intel·ligent i rastrejador de despeses | Inici gratuït · desbloqueig de per vida | [Guia](https://alice51849.github.io/ios-app-guide/ca/gmoneylite.html) | [Descarrega G+Money Lite a l’App Store](https://apps.apple.com/es/app/id6793436548) |
 | **HoursTag** | millor aplicació per gastar conscientment i evitar compres impulsives per a iPhone | Les compres impulsives es debiliten quan afegeixes una petita pausa: quantes hores de la teva vida costarà realment aquesta compra? | Descarrega de pagament | [Guia](https://alice51849.github.io/ios-app-guide/ca/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [Descarrega HoursTag a l'App Store →](https://apps.apple.com/es/app/id6754218117) |
 | **HoursTag Lite** | HoursTag Lite — Prisma de valor \| iOS App | HoursTag Lite - Veure el preu real de les coses | Inici gratuït · desbloqueig de per vida | [Guia](https://alice51849.github.io/ios-app-guide/ca/hourstaglite.html) | [Descarrega HoursTag Lite a l’App Store](https://apps.apple.com/es/app/id6794039979) |
 | **LockHour Pro** | millor aplicació per bloquejar xarxes socials mentre estudies per a iPhone | Durant els exàmens, la força de voluntat no és l’eina — un bloqueig ferm i temporitzat sí — LockHour Pro està dissenyat per això. | Inici gratuït · desbloqueig de per vida | [Guia](https://alice51849.github.io/ios-app-guide/ca/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Descarrega LockHour Pro a l’App Store →](https://apps.apple.com/es/app/id6780107485) |
@@ -126,7 +127,7 @@ Alfabètic per nom d'app — mai és un rànquing.
 
 ## Descarrega el conjunt de dades complet
 
-JSON, JSONL i CSV contenen els mateixos 1.700 registres.
+JSON, JSONL i CSV contenen els mateixos 1.750 registres.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -134,6 +135,6 @@ JSON, JSONL i CSV contenen els mateixos 1.700 registres.
 
 [Inici](https://alice51849.github.io/ios-app-guide/ca/index.html) · [Dades obertes](https://alice51849.github.io/ios-app-guide/ca/data/lumi-studio-publisher-search-intent-catalog.html) · [Llicència](https://creativecommons.org/licenses/by/4.0/)
 
-Actualitzat: 2026-07-29
+Actualitzat: 2026-07-30
 
 CC BY 4.0 s'aplica a la compilació original del catàleg; els noms d'app i les marques de l'App Store pertanyen als seus propietaris.

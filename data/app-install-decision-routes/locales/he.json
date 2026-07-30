@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "he",
-  "dateModified": "2026-07-29",
-  "content_digest": "40f1fef3cf0a637dc1010463cbb853b82ebef0ada3346e1cd7fb4321114111af",
-  "generation_digest": "c15e37d2647a1e5ac95e11849810c08843b16111a9b5939e0d87defcbd5318b7",
+  "dateModified": "2026-07-30",
+  "content_digest": "15da0881b813653d283fe78ba4c16f0f9d1b43256b64b43cef08cab84c1dc45c",
+  "generation_digest": "0754104518b2116918910b0ea2e50f210f4474a166396a647550fc29b12d2972",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 34,
+  "record_count": 35,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/he.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/he.rss.xml",
@@ -507,6 +507,73 @@
       "publisher_disclosure": "מדריך שפורסם על ידי Lumi Studio, מפתח האפליקציה. שמות האפליקציות הם סימני מסחר של בעליהן ומשמשים לזיהוי בלבד. עבור מסמכים, בריאות, לימודים והחלטות פרודוקטיביות, יש לוודא דרישות רשמיות במידת הצורך.",
       "source_persona_query": "best travel budget tracker app no subscription iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "he:gmoneylite",
+      "locale": "he",
+      "app_key": "gmoneylite",
+      "app_name": "G+Money Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "G+Money Lite — הוצאות, תקציב והמרת מטבע | iOS App",
+      "decision_context": "G+Money Lite — מעקב חכם אחרי מטבעות והוצאות בזמן נסיעות כסף לנסיעות, פשוט רשום כל רכישה במטבע המקומי וראה את זה מיד במטבע הבית שלך — באינטרנט או לא. המרה • שערים חיים או ידניים: אנחנו יכולים להביא את השערים האחרונים באופן אוטומטי, או שאתה יכול לקבוע אותם בעצמך. זה תמיד עובד במצב לא מקוון. • קבל את השערים האחרונים כשאתה פותח את האפליקציה (כמעט כל 6 שעות). תמיד עובד במצב לא מקוון עם השערים ששמרת. • שער חליפין ממוצע. כרטיסים ומזומן עשויים להיות שונים. הוצאות • תקציב יומי: אופציונלי. ראה איך כל יום מתנהל מול זה. • לפי קטגוריה · נסיעות · מסננים · רשומות • גיבוי ושחזור: כולל הוצאות, שערים, קטגוריות והגדרות. • Widget · Apple Watch הכל נשאר במכשיר שלך. אין חשבון, אין מעקב. שערים משתמשים בשירות ציבורי של שערי חליפין. חינם: שערים, תקציב וסיכום · נסיעה אחת · 3 הוצאות תשלום אחד · גישה לכל החיים · ללא מנוי פתחו הוצאות ונסיעות ללא הגבלה לתמיד.",
+      "category": "finance",
+      "category_label": "כסף ונסיעות",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "התחלה ללא תשלום · פתיחה לכל החיים",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "לא מקוון",
+        "ללא חשבון",
+        "ללא מעקב",
+        "פרטי / במכשיר"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "וידג'ט",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "כסף ונסיעות",
+        "התחלה ללא תשלום · פתיחה לכל החיים",
+        "לא מקוון",
+        "ללא חשבון",
+        "ללא מעקב",
+        "פרטי / במכשיר",
+        "וידג'ט",
+        "Apple Watch",
+        "App Store · בחינם"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/gmoneylite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/he/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/he/gmoneylite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fgmoneylite%2Fdecision%2Fl%2Fhe%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/he.json",
+      "app_store_id": "6793436548",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
+      "app_store_url": "https://apps.apple.com/il/app/id6793436548",
+      "app_store_cta_label": "הורידו את G+Money Lite מה-App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "ILS",
+        "formatted_price": "בחינם"
+      },
+      "guide_cta_label": "קרא את המדריך המלא",
+      "publisher_disclosure": "זהו חומר רשמי שפורסם על ידי Lumi Studio, המפתח של כל אפליקציה ברשימה.",
+      "source_persona_query": "best free travel expense tracker with currency conversion for iphone",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

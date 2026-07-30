@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "fi",
-  "dateModified": "2026-07-29",
-  "content_digest": "40f1fef3cf0a637dc1010463cbb853b82ebef0ada3346e1cd7fb4321114111af",
-  "generation_digest": "c15e37d2647a1e5ac95e11849810c08843b16111a9b5939e0d87defcbd5318b7",
+  "dateModified": "2026-07-30",
+  "content_digest": "15da0881b813653d283fe78ba4c16f0f9d1b43256b64b43cef08cab84c1dc45c",
+  "generation_digest": "0754104518b2116918910b0ea2e50f210f4474a166396a647550fc29b12d2972",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 34,
+  "record_count": 35,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/fi.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/fi.rss.xml",
@@ -507,6 +507,73 @@
       "publisher_disclosure": "Lumi Studion julkaisijan laatima opas, sovelluksen kehittäjältä. Sovellusten nimet ovat niiden omistajien tavaramerkkejä ja niitä käytetään vain tunnistamiseen. Tarkista viralliset vaatimukset asiakirjojen, terveyden, koulun ja tuottavuuden päätöksissä tarpeen mukaan.",
       "source_persona_query": "best travel budget tracker app no subscription iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "fi:gmoneylite",
+      "locale": "fi",
+      "app_key": "gmoneylite",
+      "app_name": "G+Money Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "G+Money Lite — Budjetti, menot & valuutta | iOS App",
+      "decision_context": "G+Money Lite — Älykäs matkavaluutta- & kululaskuri Matkaraha, helposti Kirjaa jokainen osto paikallisessa valuutassa ja näe se heti omassa valuutassasi – verkossa tai offline. Muunna • Live- tai manuaaliset kurssit: Haemme uusimmat kurssit automaattisesti, tai aseta ne itse. Toimii aina offline. • Hakee uusimmat kurssit, kun avaat sovelluksen (noin 6 tunnin välein). Toimii offline-tilassa tallennetuilla kursseilla. • Keskikurssi viitteenä. Kortit ja käteinen voivat poiketa. Kulut • Päiväbudjetti: Valinnainen. Näe, miten kukin päivä on budjettiin nähden. • Luokittain · Matkat · Suodattimet · Merkinnät • Varmuuskopio & palautus: Sisältää kulut, kurssit, luokat ja asetukset. • Widget · Apple Watch Kaikki pysyy laitteellasi. Ei tiliä, ei seurantaa. Kurssit julkisesta valuuttapalvelusta. Ilmainen: kurssit, budjetti, yhteenveto · 1 matka · 3 kulua Yksi maksu · Elinikäinen käyttö · Ei tilausta Avaa rajattomat kulut ja matkat pysyvästi.",
+      "category": "finance",
+      "category_label": "Raha & matkailu",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Ilmainen aloitus · elinikäinen avaus",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Ei tiliä",
+        "Ei seurantaa",
+        "Yksityinen / laitteella"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Raha & matkailu",
+        "Ilmainen aloitus · elinikäinen avaus",
+        "Offline",
+        "Ei tiliä",
+        "Ei seurantaa",
+        "Yksityinen / laitteella",
+        "Widget",
+        "Apple Watch",
+        "App Store · Ilmainen"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/gmoneylite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/fi/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/fi/gmoneylite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fgmoneylite%2Fdecision%2Fl%2Ffi%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fi.json",
+      "app_store_id": "6793436548",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
+      "app_store_url": "https://apps.apple.com/fi/app/id6793436548",
+      "app_store_cta_label": "Lataa G+Money Lite App Storesta",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen"
+      },
+      "guide_cta_label": "Lue koko opas",
+      "publisher_disclosure": "Tämä on Lumi Studion, jokaisen listatun sovelluksen kehittäjän, julkaisema ensimmäisen osapuolen materiaali.",
+      "source_persona_query": "best free travel expense tracker with currency conversion for iphone",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

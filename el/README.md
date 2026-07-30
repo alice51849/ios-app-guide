@@ -4,7 +4,7 @@
 
 Ένας πρωτογενής κατάλογος που δείχνει για ποιον προορίζεται κάθε εφαρμογή, το έργο που προσπαθεί να ολοκληρώσει και την άμεση διαδρομή στο App Store.
 
-Προθέσεις αναζήτησης που έχουν συνταχθεί από τον εκδότη για 34 επαληθευμένες ενεργές εφαρμογές iOS και 50 Apple τοπικές γλώσσες.
+Προθέσεις αναζήτησης που έχουν συνταχθεί από τον εκδότη για 35 επαληθευμένες ενεργές εφαρμογές iOS και 50 Apple τοπικές γλώσσες.
 
 **Τοπική γλώσσα:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · **el** · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -96,6 +96,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Cyca** | καλύτερη εφαρμογή παρακολούθησης περιόδου χωρίς λογαριασμό για iPhone | Σε μια κατηγορία όπου η ευαισθησία των δεδομένων είναι το παν, η σωστή εφαρμογή παρακολούθησης περιόδου κρατά όλα — ροή, διάθεση, συμπτώματα, θερμοκρασία, οικειότητα — στη συσκευή σας, χωρίς λογαριασμό και χωρίς συγχρονισμό στο cloud — το Cyca είναι φτιαγμένο γι’ αυτό. | Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/answers/best-period-tracker-app-no-account-required-iphone.html) | [Κατεβάστε το Cyca από το App Store →](https://apps.apple.com/gr/app/id6782251621) |
 | **DailyMate** | η καλύτερη πρακτική εφαρμογή φράσεων γλωσσών για ταξιδιώτες με Apple Watch | Πριν από ένα ταξίδι, οι πλήρεις φράσεις για πραγματικές καταστάσεις είναι πιο χρήσιμες από απομονωμένο λεξιλόγιο που πρέπει ακόμα να συνθέσετε υπό πίεση — το DailyMate είναι φτιαγμένο γι’ αυτό. | Λήψη με χρέωση | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Κατεβάστε το DailyMate από το App Store →](https://apps.apple.com/gr/app/id6790418321) |
 | **G+Money** | καλύτερη εφαρμογή παρακολούθησης προϋπολογισμού ταξιδιού χωρίς συνδρομή για iPhone | Σε ένα ταξίδι χρειάζεστε έναν προϋπολογισμό που λειτουργεί εκτός σύνδεσης σε χώρα χωρίς δεδομένα, διαχειρίζεται πολλαπλά νομίσματα και δεν απαιτεί λογαριασμό — οργανωμένο ανά ταξίδι ώστε κάθε διακοπές να είναι ξεχωριστές — το G+Money είναι φτιαγμένο γι’ αυτό. | Λήψη με χρέωση | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Κατεβάστε το G+Money από το App Store →](https://apps.apple.com/gr/app/id6755782939) |
+| **G+Money Lite** | G+Money Lite — Έξοδα, προϋπολογισμός & FX \| iOS App | G+Money Lite — Έξυπνος μετατροπέας νομισμάτων & παρακολούθησης εξόδων | Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/gmoneylite.html) | [Αποκτήστε το G+Money Lite από το App Store](https://apps.apple.com/gr/app/id6793436548) |
 | **HoursTag** | καλύτερη εφαρμογή για συνειδητή δαπάνη για να σταματήσετε τις παρορμητικές αγορές iPhone | Οι παρορμητικές αγορές γίνονται πιο αδύναμες όταν προσθέτετε μια μικρή παύση: πόσες ώρες από τη ζωή σας θα κοστίσει πραγματικά αυτή η αγορά; | Λήψη με χρέωση | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [Κατεβάστε το HoursTag από το App Store →](https://apps.apple.com/gr/app/id6754218117) |
 | **HoursTag Lite** | HoursTag Lite — Γνωρίστε το πρίσμα αξίας σας \| iOS App | HoursTag Lite - Δείτε την πραγματική τιμή των πραγμάτων | Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/hourstaglite.html) | [Αποκτήστε το HoursTag Lite από το App Store](https://apps.apple.com/gr/app/id6794039979) |
 | **LockHour Pro** | καλύτερη εφαρμογή για αποκλεισμό κοινωνικών δικτύων κατά τη μελέτη iPhone | Κατά τη διάρκεια εξετάσεων, η θέληση δεν αρκεί — χρειάζεται αυστηρό χρονικό μπλοκάρισμα — το LockHour Pro είναι φτιαγμένο γι’ αυτό. | Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Κατεβάστε το LockHour Pro από το App Store →](https://apps.apple.com/gr/app/id6780107485) |
@@ -126,7 +127,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## Κατεβάστε το πλήρες σύνολο δεδομένων
 
-Τα αρχεία JSON, JSONL και CSV περιέχουν τις ίδιες 1.700 εγγραφές.
+Τα αρχεία JSON, JSONL και CSV περιέχουν τις ίδιες 1.750 εγγραφές.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -134,6 +135,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [Αρχική](https://alice51849.github.io/ios-app-guide/el/index.html) · [Ανοιχτά δεδομένα](https://alice51849.github.io/ios-app-guide/el/data/lumi-studio-publisher-search-intent-catalog.html) · [Άδεια](https://creativecommons.org/licenses/by/4.0/)
 
-Ενημερώθηκε: 2026-07-29
+Ενημερώθηκε: 2026-07-30
 
 Η άδεια CC BY 4.0 ισχύει για τη σύνθεση του αρχικού καταλόγου· τα ονόματα εφαρμογών και τα σήματα του App Store ανήκουν στους ιδιοκτήτες τους.

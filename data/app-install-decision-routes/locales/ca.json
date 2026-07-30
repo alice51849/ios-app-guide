@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ca",
-  "dateModified": "2026-07-29",
-  "content_digest": "40f1fef3cf0a637dc1010463cbb853b82ebef0ada3346e1cd7fb4321114111af",
-  "generation_digest": "c15e37d2647a1e5ac95e11849810c08843b16111a9b5939e0d87defcbd5318b7",
+  "dateModified": "2026-07-30",
+  "content_digest": "15da0881b813653d283fe78ba4c16f0f9d1b43256b64b43cef08cab84c1dc45c",
+  "generation_digest": "0754104518b2116918910b0ea2e50f210f4474a166396a647550fc29b12d2972",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 34,
+  "record_count": 35,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ca.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ca.rss.xml",
@@ -507,6 +507,73 @@
       "publisher_disclosure": "Guia creada per l'editor de Lumi Studio, el desenvolupador de l'aplicació. Els noms de les aplicacions són marques comercials dels seus propietaris i s'utilitzen només per a la identificació. Per a documents, salut, escola i decisions de productivitat, verifiqueu els requisits oficials quan sigui pertinent.",
       "source_persona_query": "best travel budget tracker app no subscription iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ca:gmoneylite",
+      "locale": "ca",
+      "app_key": "gmoneylite",
+      "app_name": "G+Money Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "G+Money Lite — Despeses, pressupost i canvi | iOS App",
+      "decision_context": "G+Money Lite — Conversor de moneda de viatge intel·ligent i rastrejador de despeses Dinero de viatge, fet senzill Registra cada compra en la moneda local i veuràs-ho instantàniament en la teva moneda d'inici — en línia o fora de línia. Converteix • Tipus en viu o manuals: Podem obtenir els tipus més recents automàticament, o tu mateix els pots establir. Sempre funciona sense connexió. • Obté els tipus més recents quan obris l'aplicació (aproximadament cada 6 hores). Sempre funciona sense connexió amb els teus tipus desats. • Tipus de referència del mercat mitjà. Les targetes i efectiu poden diferir. Despeses • Límit diari: Opcional. Veure com cada dia es compara amb això. • Per categoria · Viatges · Filtres · Registres • Còpia de seguretat i restauració: Inclou despeses, tipus, categories i configuracions. • Widget · Apple Watch Tot es queda al teu dispositiu. Sense compte, sense seguiment. Els tipus utilitzen un servei públic de tipus de canvi. Gratis: canvi, pressupost i resum · 1 viatge · 3 despeses Un sol pagament · Accés de per vida · Sense subscripció Desbloqueja per sempre despeses i viatges il·limitats.",
+      "category": "finance",
+      "category_label": "Diners i viatges",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Inici gratuït · desbloqueig de per vida",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Fora de línia",
+        "Sense compte",
+        "Sense seguiment",
+        "Privat / en el dispositiu"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Diners i viatges",
+        "Inici gratuït · desbloqueig de per vida",
+        "Fora de línia",
+        "Sense compte",
+        "Sense seguiment",
+        "Privat / en el dispositiu",
+        "Widget",
+        "Apple Watch",
+        "App Store · Gratis"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/gmoneylite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/ca/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/ca/gmoneylite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fgmoneylite%2Fdecision%2Fl%2Fca%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ca.json",
+      "app_store_id": "6793436548",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
+      "app_store_url": "https://apps.apple.com/es/app/id6793436548",
+      "app_store_cta_label": "Descarrega G+Money Lite a l’App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
+      "guide_cta_label": "Llegeix la guia completa",
+      "publisher_disclosure": "Aquest és material de primera mà publicat per Lumi Studio, el desenvolupador de totes les apps llistades.",
+      "source_persona_query": "best free travel expense tracker with currency conversion for iphone",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

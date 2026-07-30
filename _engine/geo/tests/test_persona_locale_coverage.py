@@ -20,6 +20,7 @@ CURRENT_LIVE_APPS = {
     "cyca",
     "dailymate",
     "gmoney",
+    "gmoneylite",
     "hourstag",
     "hourstaglite",
     "lockhour",
@@ -298,6 +299,14 @@ class PersonaLocaleCoverageTests(unittest.TestCase):
         self.assertIn("does not promise anonymity", copy)
         self.assertIn("one optional lifetime pro purchase", copy)
         self.assertNotIn("sends my files to an ai service automatically?': 'yes", copy)
+
+    def test_gmoney_lite_persona_preserves_free_and_purchase_boundaries(self):
+        copy = str(PERSONAS["gmoneylite"]).lower()
+        self.assertIn("one trip and up to three expenses free", copy)
+        self.assertIn("category statistics", copy)
+        self.assertIn("one optional lifetime purchase", copy)
+        self.assertIn("internet connection is needed only when fetching", copy)
+        self.assertNotIn("subscription unlock", copy)
 
     def test_reviewed_tripbee_subtitle_overrides_translate_generic_copy(self):
         source = "TripBee Pro: Trip Planner"

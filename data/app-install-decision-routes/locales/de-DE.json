@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "de-DE",
   "dateModified": "2026-07-30",
-  "content_digest": "ca7685c8e4642441a7133d68173c16c8fbac5fc3a49a9b8672672f686f342273",
-  "generation_digest": "af4abcbe9d53c2ed074550551055a330e326239d65647ec85bb4ceae92dcc88d",
+  "content_digest": "0b15293abb2c5ec6d6144d1d777a31f8b084f71c03eae293ffb3b5bee4c50d57",
+  "generation_digest": "04722298ebefab5ca0a8d806bb3912759ad908c7da75d6837886e74b60ae6c7d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -580,59 +580,6 @@
       "verified_live": true
     },
     {
-      "record_id": "de-DE:hourstag",
-      "locale": "de-DE",
-      "app_key": "hourstag",
-      "app_name": "HoursTag: Stunden zum Kauf",
-      "priority_rank": null,
-      "priority_group": "baseline_coverage",
-      "publisher_query": "HoursTag: Stunden zum Kauf — Sparen, Budget & Ausgaben | iOS App",
-      "decision_context": "Was kostet es wirklich? Nicht in Euro – in Stunden deines Lebens.",
-      "category": "finance",
-      "category_label": "Geld & Reisen",
-      "purchase_model": "paid_upfront",
-      "purchase_label": "Kostenpflichtiger Download",
-      "one_time_option": true,
-      "privacy_facts": [
-        "no_tracking",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "Kein Tracking",
-        "Privat / auf dem Gerät"
-      ],
-      "device_surfaces": [],
-      "device_labels": [],
-      "badge_labels": [
-        "Geld & Reisen",
-        "Kostenpflichtiger Download",
-        "Kein Tracking",
-        "Privat / auf dem Gerät",
-        "App Store · 5,99 €"
-      ],
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/hourstag.html",
-      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/de-DE/index.html",
-      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/de-DE/hourstag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fhourstag%2Fdecision%2Fl%2Fde-DE%2Findex.html&format=json",
-      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/de-DE.json",
-      "app_store_id": "6754218117",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
-      "app_store_url": "https://apps.apple.com/de/app/id6754218117",
-      "app_store_cta_label": "HoursTag: Stunden zum Kauf im App Store laden",
-      "storefront_facts": {
-        "price": "5.99",
-        "currency": "EUR",
-        "formatted_price": "5,99 €"
-      },
-      "guide_cta_label": "Lesen Sie den vollständigen Leitfaden",
-      "publisher_disclosure": "Dieses Material wird direkt von Lumi Studio veröffentlicht, dem Entwickler aller aufgeführten Apps.",
-      "source_persona_query": "best app to track where my money goes and save more",
-      "source_surface": "app_guide_page",
-      "query_origin": "publisher_authored_editorially_localized",
-      "measured_search_volume": false,
-      "is_ranking": false,
-      "verified_live": true
-    },
-    {
       "record_id": "de-DE:hourstaglite",
       "locale": "de-DE",
       "app_key": "hourstaglite",
@@ -690,6 +637,59 @@
       "guide_cta_label": "Lesen Sie den vollständigen Leitfaden",
       "publisher_disclosure": "Dieses Material wird direkt von Lumi Studio veröffentlicht, dem Entwickler aller aufgeführten Apps.",
       "source_persona_query": "best app to convert prices into work hours before buying",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "de-DE:hourstag",
+      "locale": "de-DE",
+      "app_key": "hourstag",
+      "app_name": "HoursTag: Stunden zum Kauf",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "HoursTag: Stunden zum Kauf — Sparen, Budget & Ausgaben | iOS App",
+      "decision_context": "Was kostet es wirklich? Nicht in Euro – in Stunden deines Lebens.",
+      "category": "finance",
+      "category_label": "Geld & Reisen",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "Kostenpflichtiger Download",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Kein Tracking",
+        "Privat / auf dem Gerät"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Geld & Reisen",
+        "Kostenpflichtiger Download",
+        "Kein Tracking",
+        "Privat / auf dem Gerät",
+        "App Store · 5,99 €"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/hourstag.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/de-DE/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/de-DE/hourstag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fhourstag%2Fdecision%2Fl%2Fde-DE%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/de-DE.json",
+      "app_store_id": "6754218117",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
+      "app_store_url": "https://apps.apple.com/de/app/id6754218117",
+      "app_store_cta_label": "HoursTag: Stunden zum Kauf im App Store laden",
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "EUR",
+        "formatted_price": "5,99 €"
+      },
+      "guide_cta_label": "Lesen Sie den vollständigen Leitfaden",
+      "publisher_disclosure": "Dieses Material wird direkt von Lumi Studio veröffentlicht, dem Entwickler aller aufgeführten Apps.",
+      "source_persona_query": "best app to track where my money goes and save more",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,

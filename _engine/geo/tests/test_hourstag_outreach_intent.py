@@ -42,6 +42,9 @@ class HoursTagOutreachIntentTests(unittest.TestCase):
             "work hours tracker app for freelancers",
             "before buying",
             "before you buy",
+            "see if a purchase is worth",
+            "turns a price into work time",
+            "how many hours of work does this cost app",
         ):
             self.assertNotIn(mismatched_intent, corpus)
         self.assertIn(
@@ -51,6 +54,28 @@ class HoursTagOutreachIntentTests(unittest.TestCase):
         self.assertIn(
             "app that shows purchases in hours of work",
             corpus,
+        )
+        self.assertIn(
+            "app to review completed purchases in hours of work",
+            corpus,
+        )
+        self.assertIn(
+            "app to review how many work hours i spent this month",
+            corpus,
+        )
+
+    def test_original_purchase_before_answer_slugs_are_retired(self):
+        expected = {
+            "app-to-see-how-many-hours-of-work-a-purchase-costs",
+            "app-to-see-if-a-purchase-is-worth-my-hours-of-work",
+            "how-many-hours-of-work-does-this-cost-app",
+            "mindful-spending-app-that-turns-a-price-into-work-time",
+            "money-mindset-app-to-think-before-you-spend",
+            "spending-tracker-to-curb-impulse-buying-iphone",
+        }
+        self.assertLessEqual(
+            expected,
+            set(cleanup_localized_assets.RETIRED_ANSWER_REDIRECTS),
         )
 
     def test_original_and_lite_personas_remain_distinct(self):
@@ -351,6 +376,60 @@ class HoursTagOutreachIntentTests(unittest.TestCase):
         self.assertIn('"numberOfItems":1', topic)
         self.assertEqual(1, topic.count("/zh-Hant/hourstag.html"))
         self.assertIn(retired_slug, untouched)
+
+    def test_retired_public_listings_are_removed_instead_of_relabelled(self):
+        destination_slug = (
+            "best-app-to-track-where-my-money-goes-and-save-more"
+        )
+        retired_slug = "money-mindset-app-to-think-before-you-spend"
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            (pages / "answers").mkdir()
+            (pages / "answers" / f"{destination_slug}.html").write_text(
+                "current",
+                encoding="utf-8",
+            )
+            retired_url = (
+                f"{cleanup_localized_assets.SITE}/answers/"
+                f"{retired_slug}.html"
+            )
+            current_url = (
+                f"{cleanup_localized_assets.SITE}/answers/"
+                f"{destination_slug}.html"
+            )
+            listing = pages / "listing.html"
+            listing.write_text(
+                '<article class="card h-entry">'
+                f'<a href="{retired_url}">Misleading card</a></article>'
+                f'<article class="card h-entry"><a href="{current_url}">'
+                "Current card</a></article>"
+                f'<ul><li><a href="{retired_url}">Misleading item</a></li>'
+                f'<li><a href="{current_url}">Current item</a></li></ul>'
+                f'<div><a href="{retired_url}">Misleading link</a></div>',
+                encoding="utf-8",
+            )
+            sitemap = pages / "sitemap.xml"
+            sitemap.write_text(
+                "<urlset>"
+                f"<url><loc>{retired_url}</loc></url>"
+                f"<url><loc>{current_url}</loc></url>"
+                "</urlset>",
+                encoding="utf-8",
+            )
+
+            changed = (
+                cleanup_localized_assets.reconcile_retired_answer_references(
+                    pages
+                )
+            )
+            rendered_listing = listing.read_text(encoding="utf-8")
+            rendered_sitemap = sitemap.read_text(encoding="utf-8")
+
+        self.assertEqual(2, changed)
+        self.assertNotIn("Misleading", rendered_listing)
+        self.assertEqual(2, rendered_listing.count(current_url))
+        self.assertNotIn(retired_slug, rendered_sitemap)
+        self.assertEqual(1, rendered_sitemap.count(current_url))
 
 
 if __name__ == "__main__":

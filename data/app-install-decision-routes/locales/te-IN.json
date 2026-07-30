@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "te-IN",
   "dateModified": "2026-07-30",
-  "content_digest": "ca7685c8e4642441a7133d68173c16c8fbac5fc3a49a9b8672672f686f342273",
-  "generation_digest": "af4abcbe9d53c2ed074550551055a330e326239d65647ec85bb4ceae92dcc88d",
+  "content_digest": "0b15293abb2c5ec6d6144d1d777a31f8b084f71c03eae293ffb3b5bee4c50d57",
+  "generation_digest": "04722298ebefab5ca0a8d806bb3912759ad908c7da75d6837886e74b60ae6c7d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -580,59 +580,6 @@
       "verified_live": true
     },
     {
-      "record_id": "te-IN:hourstag",
-      "locale": "te-IN",
-      "app_key": "hourstag",
-      "app_name": "HoursTag: కొనుగోలు సమయం",
-      "priority_rank": null,
-      "priority_group": "baseline_coverage",
-      "publisher_query": "HoursTag: కొనుగోలు సమయం — మీరు నిజంగా ఎంత ఖర్చు చేస్తున్నారు? | iOS App",
-      "decision_context": "మీరు నిజంగా ఎంత ఖర్చు చేస్తున్నారు? డాలర్లలో కాదు — మీ జీవితంలో గంటల్లో.",
-      "category": "finance",
-      "category_label": "డబ్బు & ప్రయాణం",
-      "purchase_model": "paid_upfront",
-      "purchase_label": "చెల్లింపు డౌన్లోడ్",
-      "one_time_option": true,
-      "privacy_facts": [
-        "no_tracking",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "ట్రాకింగ్ లేదు",
-        "గోప్యంగా / పరికరంలో"
-      ],
-      "device_surfaces": [],
-      "device_labels": [],
-      "badge_labels": [
-        "డబ్బు & ప్రయాణం",
-        "చెల్లింపు డౌన్లోడ్",
-        "ట్రాకింగ్ లేదు",
-        "గోప్యంగా / పరికరంలో",
-        "App Store · ₹ 499"
-      ],
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/hourstag.html",
-      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/te-IN/index.html",
-      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/te-IN/hourstag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fhourstag%2Fdecision%2Fl%2Fte-IN%2Findex.html&format=json",
-      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/te-IN.json",
-      "app_store_id": "6754218117",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
-      "app_store_url": "https://apps.apple.com/in/app/id6754218117",
-      "app_store_cta_label": "App Store నుంచి HoursTag: కొనుగోలు సమయం పొందండి",
-      "storefront_facts": {
-        "price": "499",
-        "currency": "INR",
-        "formatted_price": "₹ 499"
-      },
-      "guide_cta_label": "పూర్తి మార్గదర్శకాన్ని చదవండి",
-      "publisher_disclosure": "ఇది Lumi Studio ద్వారా ప్రచురించబడిన స్వంత సంస్థ పదార్థం, ప్రతి జాబితా చేయబడిన యాప్ యొక్క అభివృద్ధికర్త.",
-      "source_persona_query": "best app to track where my money goes and save more",
-      "source_surface": "app_guide_page",
-      "query_origin": "publisher_authored_editorially_localized",
-      "measured_search_volume": false,
-      "is_ranking": false,
-      "verified_live": true
-    },
-    {
       "record_id": "te-IN:hourstaglite",
       "locale": "te-IN",
       "app_key": "hourstaglite",
@@ -690,6 +637,59 @@
       "guide_cta_label": "పూర్తి మార్గదర్శకాన్ని చదవండి",
       "publisher_disclosure": "ఇది Lumi Studio ద్వారా ప్రచురించబడిన స్వంత సంస్థ పదార్థం, ప్రతి జాబితా చేయబడిన యాప్ యొక్క అభివృద్ధికర్త.",
       "source_persona_query": "best app to convert prices into work hours before buying",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "te-IN:hourstag",
+      "locale": "te-IN",
+      "app_key": "hourstag",
+      "app_name": "HoursTag: కొనుగోలు సమయం",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "HoursTag: కొనుగోలు సమయం — మీరు నిజంగా ఎంత ఖర్చు చేస్తున్నారు? | iOS App",
+      "decision_context": "మీరు నిజంగా ఎంత ఖర్చు చేస్తున్నారు? డాలర్లలో కాదు — మీ జీవితంలో గంటల్లో.",
+      "category": "finance",
+      "category_label": "డబ్బు & ప్రయాణం",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "చెల్లింపు డౌన్లోడ్",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "డబ్బు & ప్రయాణం",
+        "చెల్లింపు డౌన్లోడ్",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో",
+        "App Store · ₹ 499"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/hourstag.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/te-IN/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/te-IN/hourstag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fhourstag%2Fdecision%2Fl%2Fte-IN%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/te-IN.json",
+      "app_store_id": "6754218117",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
+      "app_store_url": "https://apps.apple.com/in/app/id6754218117",
+      "app_store_cta_label": "App Store నుంచి HoursTag: కొనుగోలు సమయం పొందండి",
+      "storefront_facts": {
+        "price": "499",
+        "currency": "INR",
+        "formatted_price": "₹ 499"
+      },
+      "guide_cta_label": "పూర్తి మార్గదర్శకాన్ని చదవండి",
+      "publisher_disclosure": "ఇది Lumi Studio ద్వారా ప్రచురించబడిన స్వంత సంస్థ పదార్థం, ప్రతి జాబితా చేయబడిన యాప్ యొక్క అభివృద్ధికర్త.",
+      "source_persona_query": "best app to track where my money goes and save more",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,

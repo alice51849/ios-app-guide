@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "el",
   "dateModified": "2026-07-30",
-  "content_digest": "ca7685c8e4642441a7133d68173c16c8fbac5fc3a49a9b8672672f686f342273",
-  "generation_digest": "af4abcbe9d53c2ed074550551055a330e326239d65647ec85bb4ceae92dcc88d",
+  "content_digest": "0b15293abb2c5ec6d6144d1d777a31f8b084f71c03eae293ffb3b5bee4c50d57",
+  "generation_digest": "04722298ebefab5ca0a8d806bb3912759ad908c7da75d6837886e74b60ae6c7d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -580,59 +580,6 @@
       "verified_live": true
     },
     {
-      "record_id": "el:hourstag",
-      "locale": "el",
-      "app_key": "hourstag",
-      "app_name": "HoursTag: Ώρες αγοράς",
-      "priority_rank": null,
-      "priority_group": "baseline_coverage",
-      "publisher_query": "HoursTag: Ώρες αγοράς — Έξοδα, αποταμίευση & budget | iOS App",
-      "decision_context": "Πόσο κοστίζει πραγματικά; Όχι σε ευρώ, αλλά σε ώρες από τη ζωή σου.",
-      "category": "finance",
-      "category_label": "Χρήματα & ταξίδια",
-      "purchase_model": "paid_upfront",
-      "purchase_label": "Λήψη με χρέωση",
-      "one_time_option": true,
-      "privacy_facts": [
-        "no_tracking",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "Χωρίς παρακολούθηση",
-        "Ιδιωτικό / στη συσκευή"
-      ],
-      "device_surfaces": [],
-      "device_labels": [],
-      "badge_labels": [
-        "Χρήματα & ταξίδια",
-        "Λήψη με χρέωση",
-        "Χωρίς παρακολούθηση",
-        "Ιδιωτικό / στη συσκευή",
-        "App Store · 5,99 €"
-      ],
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/hourstag.html",
-      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/el/index.html",
-      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/el/hourstag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fhourstag%2Fdecision%2Fl%2Fel%2Findex.html&format=json",
-      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/el.json",
-      "app_store_id": "6754218117",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
-      "app_store_url": "https://apps.apple.com/gr/app/id6754218117",
-      "app_store_cta_label": "Αποκτήστε το HoursTag: Ώρες αγοράς από το App Store",
-      "storefront_facts": {
-        "price": "5.99",
-        "currency": "EUR",
-        "formatted_price": "5,99 €"
-      },
-      "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
-      "publisher_disclosure": "Αυτό είναι πρωτογενές υλικό που δημοσιεύεται από το Lumi Studio, τον δημιουργό κάθε καταχωρημένης εφαρμογής.",
-      "source_persona_query": "best app to track where my money goes and save more",
-      "source_surface": "app_guide_page",
-      "query_origin": "publisher_authored_editorially_localized",
-      "measured_search_volume": false,
-      "is_ranking": false,
-      "verified_live": true
-    },
-    {
       "record_id": "el:hourstaglite",
       "locale": "el",
       "app_key": "hourstaglite",
@@ -690,6 +637,59 @@
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Αυτό είναι πρωτογενές υλικό που δημοσιεύεται από το Lumi Studio, τον δημιουργό κάθε καταχωρημένης εφαρμογής.",
       "source_persona_query": "best app to convert prices into work hours before buying",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "el:hourstag",
+      "locale": "el",
+      "app_key": "hourstag",
+      "app_name": "HoursTag: Ώρες αγοράς",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "HoursTag: Ώρες αγοράς — Έξοδα, αποταμίευση & budget | iOS App",
+      "decision_context": "Πόσο κοστίζει πραγματικά; Όχι σε ευρώ, αλλά σε ώρες από τη ζωή σου.",
+      "category": "finance",
+      "category_label": "Χρήματα & ταξίδια",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "Λήψη με χρέωση",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Χωρίς παρακολούθηση",
+        "Ιδιωτικό / στη συσκευή"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Χρήματα & ταξίδια",
+        "Λήψη με χρέωση",
+        "Χωρίς παρακολούθηση",
+        "Ιδιωτικό / στη συσκευή",
+        "App Store · 5,99 €"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/hourstag.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/el/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/el/hourstag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fhourstag%2Fdecision%2Fl%2Fel%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/el.json",
+      "app_store_id": "6754218117",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
+      "app_store_url": "https://apps.apple.com/gr/app/id6754218117",
+      "app_store_cta_label": "Αποκτήστε το HoursTag: Ώρες αγοράς από το App Store",
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "EUR",
+        "formatted_price": "5,99 €"
+      },
+      "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
+      "publisher_disclosure": "Αυτό είναι πρωτογενές υλικό που δημοσιεύεται από το Lumi Studio, τον δημιουργό κάθε καταχωρημένης εφαρμογής.",
+      "source_persona_query": "best app to track where my money goes and save more",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,

@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "sk",
   "dateModified": "2026-07-30",
-  "content_digest": "ca7685c8e4642441a7133d68173c16c8fbac5fc3a49a9b8672672f686f342273",
-  "generation_digest": "af4abcbe9d53c2ed074550551055a330e326239d65647ec85bb4ceae92dcc88d",
+  "content_digest": "0b15293abb2c5ec6d6144d1d777a31f8b084f71c03eae293ffb3b5bee4c50d57",
+  "generation_digest": "04722298ebefab5ca0a8d806bb3912759ad908c7da75d6837886e74b60ae6c7d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -580,59 +580,6 @@
       "verified_live": true
     },
     {
-      "record_id": "sk:hourstag",
-      "locale": "sk",
-      "app_key": "hourstag",
-      "app_name": "HoursTag: Hodiny na nákup",
-      "priority_rank": null,
-      "priority_group": "baseline_coverage",
-      "publisher_query": "HoursTag: Hodiny na nákup — Rozpočet, výdavky a úspory | iOS App",
-      "decision_context": "Koľko to naozaj stojí? Nie v eurách, ale v hodinách vášho života.",
-      "category": "finance",
-      "category_label": "Peniaze a cestovanie",
-      "purchase_model": "paid_upfront",
-      "purchase_label": "Platené stiahnutie",
-      "one_time_option": true,
-      "privacy_facts": [
-        "no_tracking",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "Bez sledovania",
-        "Súkromné / v zariadení"
-      ],
-      "device_surfaces": [],
-      "device_labels": [],
-      "badge_labels": [
-        "Peniaze a cestovanie",
-        "Platené stiahnutie",
-        "Bez sledovania",
-        "Súkromné / v zariadení",
-        "App Store · 5,99 €"
-      ],
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/hourstag.html",
-      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/sk/index.html",
-      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/sk/hourstag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fhourstag%2Fdecision%2Fl%2Fsk%2Findex.html&format=json",
-      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
-      "app_store_id": "6754218117",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
-      "app_store_url": "https://apps.apple.com/sk/app/id6754218117",
-      "app_store_cta_label": "Stiahnuť HoursTag: Hodiny na nákup v App Store",
-      "storefront_facts": {
-        "price": "5.99",
-        "currency": "EUR",
-        "formatted_price": "5,99 €"
-      },
-      "guide_cta_label": "Prečítať celý sprievodca",
-      "publisher_disclosure": "Toto je materiál prvej strany publikovaný Lumi Studio, vývojárom každej uvedenej aplikácie.",
-      "source_persona_query": "best app to track where my money goes and save more",
-      "source_surface": "app_guide_page",
-      "query_origin": "publisher_authored_editorially_localized",
-      "measured_search_volume": false,
-      "is_ranking": false,
-      "verified_live": true
-    },
-    {
       "record_id": "sk:hourstaglite",
       "locale": "sk",
       "app_key": "hourstaglite",
@@ -690,6 +637,59 @@
       "guide_cta_label": "Prečítať celý sprievodca",
       "publisher_disclosure": "Toto je materiál prvej strany publikovaný Lumi Studio, vývojárom každej uvedenej aplikácie.",
       "source_persona_query": "best app to convert prices into work hours before buying",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "sk:hourstag",
+      "locale": "sk",
+      "app_key": "hourstag",
+      "app_name": "HoursTag: Hodiny na nákup",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "HoursTag: Hodiny na nákup — Rozpočet, výdavky a úspory | iOS App",
+      "decision_context": "Koľko to naozaj stojí? Nie v eurách, ale v hodinách vášho života.",
+      "category": "finance",
+      "category_label": "Peniaze a cestovanie",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "Platené stiahnutie",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Bez sledovania",
+        "Súkromné / v zariadení"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Peniaze a cestovanie",
+        "Platené stiahnutie",
+        "Bez sledovania",
+        "Súkromné / v zariadení",
+        "App Store · 5,99 €"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/hourstag.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/sk/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/sk/hourstag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fhourstag%2Fdecision%2Fl%2Fsk%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
+      "app_store_id": "6754218117",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
+      "app_store_url": "https://apps.apple.com/sk/app/id6754218117",
+      "app_store_cta_label": "Stiahnuť HoursTag: Hodiny na nákup v App Store",
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "EUR",
+        "formatted_price": "5,99 €"
+      },
+      "guide_cta_label": "Prečítať celý sprievodca",
+      "publisher_disclosure": "Toto je materiál prvej strany publikovaný Lumi Studio, vývojárom každej uvedenej aplikácie.",
+      "source_persona_query": "best app to track where my money goes and save more",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,

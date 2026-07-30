@@ -226,7 +226,7 @@ _MORE = {
     ],
     "hourstag": [
         "app that shows purchases in hours of work",
-        "how many hours of work does this cost app",
+        "app to review how many work hours I spent this month",
         "simple private expense awareness app no subscription",
     ],
     "lockhour": [
@@ -320,10 +320,10 @@ _TAILORED = {
         "app to log expenses in seconds without making an account",
         "offline expense tracker for travelers with no subscription",
     ],
-    # —— 花費換算工時:心態/克制衝動 ——
+    # —— 已完成花費換算工時:回顧/改善 ——
     "hourstag": [
-        "app to see if a purchase is worth my hours of work",
-        "mindful spending app that turns a price into work time",
+        "app to review completed purchases in hours of work",
+        "mindful spending tracker that reviews money and work time",
     ],
     # —— 專注/擋 app:競品 ——
     "lockhour": [

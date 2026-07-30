@@ -105,9 +105,12 @@ def decision_oembed_url(app_key: str, locale: str) -> str:
     )
 
 
-def _priority_key(app: dict[str, Any]) -> tuple[int, str, str]:
+def _priority_key(
+    app: dict[str, Any],
+    localized_name: str | None = None,
+) -> tuple[int, str, str]:
     key = str(app["key"])
-    name = str(app["name"]).casefold()
+    name = str(localized_name or app["name"]).casefold()
     return (PRIORITY_RANK.get(key, len(PRIORITY_APPS) + 1), name, key)
 
 
@@ -335,10 +338,7 @@ def _record(
 def build_records(pages: Path = PAGES) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     intents, apps = publisher_intent_catalog.build_records(pages)
     storefront_details = app_store_storefronts.load_storefront_details(pages)
-    app_keys = sorted(
-        apps,
-        key=lambda key: _priority_key(apps[key]),
-    )
+    app_keys = sorted(apps)
     by_pair = {
         (str(intent["locale"]), str(intent["app_key"])): intent for intent in intents
     }
@@ -361,7 +361,13 @@ def build_records(pages: Path = PAGES) -> tuple[list[dict[str, Any]], dict[str, 
             storefront_details,
         )
         for locale in OFFICIAL_LOCALES
-        for key in app_keys
+        for key in sorted(
+            app_keys,
+            key=lambda candidate: _priority_key(
+                apps[candidate],
+                str(by_pair[(locale, candidate)]["app_name"]),
+            ),
+        )
     ]
     return records, apps
 

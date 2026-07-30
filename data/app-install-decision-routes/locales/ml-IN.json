@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ml-IN",
   "dateModified": "2026-07-30",
-  "content_digest": "ca7685c8e4642441a7133d68173c16c8fbac5fc3a49a9b8672672f686f342273",
-  "generation_digest": "af4abcbe9d53c2ed074550551055a330e326239d65647ec85bb4ceae92dcc88d",
+  "content_digest": "0b15293abb2c5ec6d6144d1d777a31f8b084f71c03eae293ffb3b5bee4c50d57",
+  "generation_digest": "04722298ebefab5ca0a8d806bb3912759ad908c7da75d6837886e74b60ae6c7d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -580,59 +580,6 @@
       "verified_live": true
     },
     {
-      "record_id": "ml-IN:hourstag",
-      "locale": "ml-IN",
-      "app_key": "hourstag",
-      "app_name": "HoursTag: സമയം വാങ്ങുക",
-      "priority_rank": null,
-      "priority_group": "baseline_coverage",
-      "publisher_query": "HoursTag: സമയം വാങ്ങുക — വില എത്രയെന്ന് അറിയാമോ? | iOS App",
-      "decision_context": "വില എത്രയെന്ന് അറിയാമോ? ഡോളറുകളിൽ അല്ല, നിങ്ങളുടെ ജീവിതത്തിലെ മണിക്കൂറുകളിൽ.",
-      "category": "finance",
-      "category_label": "പണം & യാത്ര",
-      "purchase_model": "paid_upfront",
-      "purchase_label": "പണം നൽകേണ്ട ഡൗൺലോഡ്",
-      "one_time_option": true,
-      "privacy_facts": [
-        "no_tracking",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "ട്രാക്കിംഗ് ഇല്ല",
-        "സ്വകാര്യത / ഉപകരണത്തിൽ"
-      ],
-      "device_surfaces": [],
-      "device_labels": [],
-      "badge_labels": [
-        "പണം & യാത്ര",
-        "പണം നൽകേണ്ട ഡൗൺലോഡ്",
-        "ട്രാക്കിംഗ് ഇല്ല",
-        "സ്വകാര്യത / ഉപകരണത്തിൽ",
-        "App Store · ₹ 499"
-      ],
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/hourstag.html",
-      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/ml-IN/index.html",
-      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/ml-IN/hourstag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fhourstag%2Fdecision%2Fl%2Fml-IN%2Findex.html&format=json",
-      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ml-IN.json",
-      "app_store_id": "6754218117",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
-      "app_store_url": "https://apps.apple.com/in/app/id6754218117",
-      "app_store_cta_label": "App Store-ൽ നിന്ന് HoursTag: സമയം വാങ്ങുക നേടൂ",
-      "storefront_facts": {
-        "price": "499",
-        "currency": "INR",
-        "formatted_price": "₹ 499"
-      },
-      "guide_cta_label": "പൂർണ്ണ ഗൈഡ് വായിക്കുക",
-      "publisher_disclosure": "ഇത് Lumi Studio പ്രസിദ്ധീകരിച്ച ആദ്യകക്ഷി വസ്തുവാണ്, എല്ലാ ലിസ്റ്റുചെയ്ത ആപ്പുകളുടെയും വികസകനാണ്.",
-      "source_persona_query": "best app to track where my money goes and save more",
-      "source_surface": "app_guide_page",
-      "query_origin": "publisher_authored_editorially_localized",
-      "measured_search_volume": false,
-      "is_ranking": false,
-      "verified_live": true
-    },
-    {
       "record_id": "ml-IN:hourstaglite",
       "locale": "ml-IN",
       "app_key": "hourstaglite",
@@ -690,6 +637,59 @@
       "guide_cta_label": "പൂർണ്ണ ഗൈഡ് വായിക്കുക",
       "publisher_disclosure": "ഇത് Lumi Studio പ്രസിദ്ധീകരിച്ച ആദ്യകക്ഷി വസ്തുവാണ്, എല്ലാ ലിസ്റ്റുചെയ്ത ആപ്പുകളുടെയും വികസകനാണ്.",
       "source_persona_query": "best app to convert prices into work hours before buying",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ml-IN:hourstag",
+      "locale": "ml-IN",
+      "app_key": "hourstag",
+      "app_name": "HoursTag: സമയം വാങ്ങുക",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "HoursTag: സമയം വാങ്ങുക — വില എത്രയെന്ന് അറിയാമോ? | iOS App",
+      "decision_context": "വില എത്രയെന്ന് അറിയാമോ? ഡോളറുകളിൽ അല്ല, നിങ്ങളുടെ ജീവിതത്തിലെ മണിക്കൂറുകളിൽ.",
+      "category": "finance",
+      "category_label": "പണം & യാത്ര",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "പണം നൽകേണ്ട ഡൗൺലോഡ്",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ട്രാക്കിംഗ് ഇല്ല",
+        "സ്വകാര്യത / ഉപകരണത്തിൽ"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "പണം & യാത്ര",
+        "പണം നൽകേണ്ട ഡൗൺലോഡ്",
+        "ട്രാക്കിംഗ് ഇല്ല",
+        "സ്വകാര്യത / ഉപകരണത്തിൽ",
+        "App Store · ₹ 499"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/hourstag.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/ml-IN/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/ml-IN/hourstag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fhourstag%2Fdecision%2Fl%2Fml-IN%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ml-IN.json",
+      "app_store_id": "6754218117",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
+      "app_store_url": "https://apps.apple.com/in/app/id6754218117",
+      "app_store_cta_label": "App Store-ൽ നിന്ന് HoursTag: സമയം വാങ്ങുക നേടൂ",
+      "storefront_facts": {
+        "price": "499",
+        "currency": "INR",
+        "formatted_price": "₹ 499"
+      },
+      "guide_cta_label": "പൂർണ്ണ ഗൈഡ് വായിക്കുക",
+      "publisher_disclosure": "ഇത് Lumi Studio പ്രസിദ്ധീകരിച്ച ആദ്യകക്ഷി വസ്തുവാണ്, എല്ലാ ലിസ്റ്റുചെയ്ത ആപ്പുകളുടെയും വികസകനാണ്.",
+      "source_persona_query": "best app to track where my money goes and save more",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,

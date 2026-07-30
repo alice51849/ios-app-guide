@@ -96,7 +96,11 @@ RETIRED_ANSWER_REDIRECTS = {
         "best-app-to-track-where-my-money-goes-and-save-more",
     "app-that-converts-a-price-to-hours-of-work-before-buying":
         "best-app-to-track-where-my-money-goes-and-save-more",
+    "app-to-see-how-many-hours-of-work-a-purchase-costs":
+        "best-app-to-track-where-my-money-goes-and-save-more",
     "app-to-see-how-many-hours-of-work-a-purchase-costs-before-buying-in-taiwan-or-korea":
+        "best-app-to-track-where-my-money-goes-and-save-more",
+    "app-to-see-if-a-purchase-is-worth-my-hours-of-work":
         "best-app-to-track-where-my-money-goes-and-save-more",
     "best-mindful-spending-app-to-stop-impulse-buying-iphone":
         "best-app-to-track-where-my-money-goes-and-save-more",
@@ -108,19 +112,40 @@ RETIRED_ANSWER_REDIRECTS = {
         "best-app-to-track-where-my-money-goes-and-save-more",
     "how-to-do-a-no-spend-challenge-and-actually-stick-to-it":
         "best-app-to-track-where-my-money-goes-and-save-more",
+    "how-many-hours-of-work-does-this-cost-app":
+        "best-app-to-track-where-my-money-goes-and-save-more",
     "impulse-shopping-blocker-that-shows-the-time-cost-of-a-purchase-pay-once-private":
         "best-app-to-track-where-my-money-goes-and-save-more",
     "simple-timesheet-app-to-log-work-hours":
+        "best-app-to-track-where-my-money-goes-and-save-more",
+    "mindful-spending-app-that-turns-a-price-into-work-time":
+        "best-app-to-track-where-my-money-goes-and-save-more",
+    "money-mindset-app-to-think-before-you-spend":
+        "best-app-to-track-where-my-money-goes-and-save-more",
+    "spending-tracker-to-curb-impulse-buying-iphone":
         "best-app-to-track-where-my-money-goes-and-save-more",
     "what-is-the-true-cost-of-a-purchase-in-hours-of-work":
         "best-app-to-track-where-my-money-goes-and-save-more",
 }
 HOURSTAG_GUIDE_PATH = Path("guides") / "hourstag.html"
+RETIRED_ANSWER_SLUG_PATTERN = "|".join(
+    re.escape(slug) for slug in RETIRED_ANSWER_REDIRECTS
+)
 RETIRED_ANSWER_PATH_RE = re.compile(
     r"/(?:(?P<locale>[a-z]{2,3}(?:-[A-Za-z]{2,4})?)/)?answers/"
     r"(?P<slug>"
-    + "|".join(re.escape(slug) for slug in RETIRED_ANSWER_REDIRECTS)
+    + RETIRED_ANSWER_SLUG_PATTERN
     + r")\.html"
+)
+RETIRED_ANSWER_REFERENCE_PATTERN = (
+    r"/(?:[a-z]{2,3}(?:-[A-Za-z]{2,4})?/)?answers/(?:"
+    + RETIRED_ANSWER_SLUG_PATTERN
+    + r")\.html"
+)
+RETIRED_ANSWER_HREF_PATTERN = (
+    r"\bhref\s*=\s*[\"'][^\"']*"
+    + RETIRED_ANSWER_REFERENCE_PATTERN
+    + r"(?:[?#][^\"']*)?[\"']"
 )
 PUBLIC_TEXT_SUFFIXES = {
     ".csv",
@@ -267,6 +292,43 @@ def replace_retired_answer_slugs(text: str, pages: Path = PAGES) -> str:
     return RETIRED_ANSWER_PATH_RE.sub(repl, text)
 
 
+def remove_retired_html_entries(text: str) -> str:
+    h_entry = re.compile(
+        r"<article\b(?=[^>]*\b(?:h-entry|hentry)\b)[^>]*>"
+        r"(?:(?!</article>).)*?"
+        + RETIRED_ANSWER_HREF_PATTERN
+        + r"(?:(?!</article>).)*?</article>\s*",
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    list_item = re.compile(
+        r"<li\b[^>]*>(?:(?!</li>).)*?"
+        + RETIRED_ANSWER_HREF_PATTERN
+        + r"(?:(?!</li>).)*?</li>\s*",
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    anchor = re.compile(
+        r"<a\b(?=[^>]*"
+        + RETIRED_ANSWER_HREF_PATTERN
+        + r")[^>]*>.*?</a>\s*",
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    for pattern in (h_entry, list_item, anchor):
+        text = pattern.sub("", text)
+    return text
+
+
+def remove_retired_xml_entries(text: str) -> str:
+    for tag in ("url", "item", "entry"):
+        pattern = re.compile(
+            rf"<{tag}\b[^>]*>(?:(?!</{tag}>).)*?"
+            + RETIRED_ANSWER_REFERENCE_PATTERN
+            + rf"(?:(?!</{tag}>).)*?</{tag}>\s*",
+            flags=re.IGNORECASE | re.DOTALL,
+        )
+        text = pattern.sub("", text)
+    return text
+
+
 def dedupe_json_ld_item_lists(text: str) -> str:
     def sanitize_script(match: re.Match[str]) -> str:
         block = match.group(0)
@@ -347,7 +409,12 @@ def reconcile_retired_answer_references(pages: Path) -> int:
             original = path.read_text(encoding="utf-8")
         except (OSError, UnicodeDecodeError):
             continue
-        updated = replace_retired_answer_slugs(original, pages)
+        updated = original
+        if path.suffix == ".html":
+            updated = remove_retired_html_entries(updated)
+        elif path.suffix == ".xml":
+            updated = remove_retired_xml_entries(updated)
+        updated = replace_retired_answer_slugs(updated, pages)
         if updated != original and path.suffix == ".html":
             updated = dedupe_json_ld_item_lists(updated)
         if updated == original:

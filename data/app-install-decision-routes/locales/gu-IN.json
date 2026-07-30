@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "gu-IN",
   "dateModified": "2026-07-30",
-  "content_digest": "ca7685c8e4642441a7133d68173c16c8fbac5fc3a49a9b8672672f686f342273",
-  "generation_digest": "af4abcbe9d53c2ed074550551055a330e326239d65647ec85bb4ceae92dcc88d",
+  "content_digest": "0b15293abb2c5ec6d6144d1d777a31f8b084f71c03eae293ffb3b5bee4c50d57",
+  "generation_digest": "04722298ebefab5ca0a8d806bb3912759ad908c7da75d6837886e74b60ae6c7d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -580,59 +580,6 @@
       "verified_live": true
     },
     {
-      "record_id": "gu-IN:hourstag",
-      "locale": "gu-IN",
-      "app_key": "hourstag",
-      "app_name": "HoursTag: સમયથી ખરીદી",
-      "priority_rank": null,
-      "priority_group": "baseline_coverage",
-      "publisher_query": "HoursTag: સમયથી ખરીદી — ખરેખર કિંમત શું છે? | iOS App",
-      "decision_context": "ખરેખર કિંમત શું છે? ડોલરમાં નહીં, પરંતુ તમારા જીવનના કલાકોમાં.",
-      "category": "finance",
-      "category_label": "પૈસા અને મુસાફરી",
-      "purchase_model": "paid_upfront",
-      "purchase_label": "ચુકવેલ ડાઉનલોડ",
-      "one_time_option": true,
-      "privacy_facts": [
-        "no_tracking",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "કોઈ ટ્રેકિંગ નથી",
-        "ખાનગી / ઉપકરણ પર"
-      ],
-      "device_surfaces": [],
-      "device_labels": [],
-      "badge_labels": [
-        "પૈસા અને મુસાફરી",
-        "ચુકવેલ ડાઉનલોડ",
-        "કોઈ ટ્રેકિંગ નથી",
-        "ખાનગી / ઉપકરણ પર",
-        "App Store · ₹ 499"
-      ],
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/hourstag.html",
-      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/gu-IN/index.html",
-      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/gu-IN/hourstag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fhourstag%2Fdecision%2Fl%2Fgu-IN%2Findex.html&format=json",
-      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/gu-IN.json",
-      "app_store_id": "6754218117",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
-      "app_store_url": "https://apps.apple.com/in/app/id6754218117",
-      "app_store_cta_label": "App Store પરથી HoursTag: સમયથી ખરીદી મેળવો",
-      "storefront_facts": {
-        "price": "499",
-        "currency": "INR",
-        "formatted_price": "₹ 499"
-      },
-      "guide_cta_label": "પૂર્ણ માર્ગદર્શિકા વાંચો",
-      "publisher_disclosure": "આ સામગ્રી Lumi Studio દ્વારા સીધી પ્રકાશિત કરવામાં આવી છે, જે સૂચિબદ્ધ તમામ એપ્સનો વિકાસકર્તા છે.",
-      "source_persona_query": "best app to track where my money goes and save more",
-      "source_surface": "app_guide_page",
-      "query_origin": "publisher_authored_editorially_localized",
-      "measured_search_volume": false,
-      "is_ranking": false,
-      "verified_live": true
-    },
-    {
       "record_id": "gu-IN:hourstaglite",
       "locale": "gu-IN",
       "app_key": "hourstaglite",
@@ -690,6 +637,59 @@
       "guide_cta_label": "પૂર્ણ માર્ગદર્શિકા વાંચો",
       "publisher_disclosure": "આ સામગ્રી Lumi Studio દ્વારા સીધી પ્રકાશિત કરવામાં આવી છે, જે સૂચિબદ્ધ તમામ એપ્સનો વિકાસકર્તા છે.",
       "source_persona_query": "best app to convert prices into work hours before buying",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "gu-IN:hourstag",
+      "locale": "gu-IN",
+      "app_key": "hourstag",
+      "app_name": "HoursTag: સમયથી ખરીદી",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "HoursTag: સમયથી ખરીદી — ખરેખર કિંમત શું છે? | iOS App",
+      "decision_context": "ખરેખર કિંમત શું છે? ડોલરમાં નહીં, પરંતુ તમારા જીવનના કલાકોમાં.",
+      "category": "finance",
+      "category_label": "પૈસા અને મુસાફરી",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "ચુકવેલ ડાઉનલોડ",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "કોઈ ટ્રેકિંગ નથી",
+        "ખાનગી / ઉપકરણ પર"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "પૈસા અને મુસાફરી",
+        "ચુકવેલ ડાઉનલોડ",
+        "કોઈ ટ્રેકિંગ નથી",
+        "ખાનગી / ઉપકરણ પર",
+        "App Store · ₹ 499"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/hourstag.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/gu-IN/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/gu-IN/hourstag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fhourstag%2Fdecision%2Fl%2Fgu-IN%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/gu-IN.json",
+      "app_store_id": "6754218117",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
+      "app_store_url": "https://apps.apple.com/in/app/id6754218117",
+      "app_store_cta_label": "App Store પરથી HoursTag: સમયથી ખરીદી મેળવો",
+      "storefront_facts": {
+        "price": "499",
+        "currency": "INR",
+        "formatted_price": "₹ 499"
+      },
+      "guide_cta_label": "પૂર્ણ માર્ગદર્શિકા વાંચો",
+      "publisher_disclosure": "આ સામગ્રી Lumi Studio દ્વારા સીધી પ્રકાશિત કરવામાં આવી છે, જે સૂચિબદ્ધ તમામ એપ્સનો વિકાસકર્તા છે.",
+      "source_persona_query": "best app to track where my money goes and save more",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,

@@ -557,8 +557,18 @@ class PublisherIntentOutputTests(unittest.TestCase):
             f"{catalog.SLUG}.csv",
         }
         self.assertEqual(expected_files, set(distributions))
+        record_count_label = f"{catalog.EXPECTED_RECORD_COUNT:,} records"
         for filename, distribution in distributions.items():
             source = self.data_dir / filename
+            if filename.endswith((".json", ".jsonl")):
+                self.assertIn(
+                    record_count_label,
+                    distribution["description"],
+                )
+                self.assertNotIn(
+                    "1,400 records",
+                    distribution["description"],
+                )
             self.assertEqual(
                 hashlib.sha256(source.read_bytes()).hexdigest(),
                 distribution["sha256"],

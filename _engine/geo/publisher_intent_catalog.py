@@ -1442,13 +1442,19 @@ def croissant_metadata(
             data_dir,
             "jsonl",
             "application/x-ndjson",
-            "The same 1,400 records serialized as newline-delimited JSON.",
+            (
+                f"The same {EXPECTED_RECORD_COUNT:,} records serialized "
+                "as newline-delimited JSON."
+            ),
         ),
         _croissant_file_object(
             data_dir,
             "json",
             "application/json",
-            "Dataset envelope with provenance, coverage and all 1,400 records.",
+            (
+                "Dataset envelope with provenance, coverage and all "
+                f"{EXPECTED_RECORD_COUNT:,} records."
+            ),
         ),
     ]
     return {

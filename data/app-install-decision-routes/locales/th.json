@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "th",
   "dateModified": "2026-07-30",
-  "content_digest": "ca7685c8e4642441a7133d68173c16c8fbac5fc3a49a9b8672672f686f342273",
-  "generation_digest": "af4abcbe9d53c2ed074550551055a330e326239d65647ec85bb4ceae92dcc88d",
+  "content_digest": "0b15293abb2c5ec6d6144d1d777a31f8b084f71c03eae293ffb3b5bee4c50d57",
+  "generation_digest": "04722298ebefab5ca0a8d806bb3912759ad908c7da75d6837886e74b60ae6c7d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -580,59 +580,6 @@
       "verified_live": true
     },
     {
-      "record_id": "th:hourstag",
-      "locale": "th",
-      "app_key": "hourstag",
-      "app_name": "HoursTag: ชั่วโมงเพื่อซื้อ",
-      "priority_rank": null,
-      "priority_group": "baseline_coverage",
-      "publisher_query": "HoursTag: ชั่วโมงเพื่อซื้อ — งบ ประหยัด ออมเงิน | iOS App",
-      "decision_context": "ของชิ้นนี้แพงแค่ไหนจริง ๆ? ไม่ใช่แค่เงิน แต่เป็นชั่วโมงชีวิตของคุณ",
-      "category": "finance",
-      "category_label": "เงิน & การเดินทาง",
-      "purchase_model": "paid_upfront",
-      "purchase_label": "ดาวน์โหลดแบบชำระเงิน",
-      "one_time_option": true,
-      "privacy_facts": [
-        "no_tracking",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "ไม่มีการติดตาม",
-        "ส่วนตัว / บนอุปกรณ์"
-      ],
-      "device_surfaces": [],
-      "device_labels": [],
-      "badge_labels": [
-        "เงิน & การเดินทาง",
-        "ดาวน์โหลดแบบชำระเงิน",
-        "ไม่มีการติดตาม",
-        "ส่วนตัว / บนอุปกรณ์",
-        "App Store · ฿199.00"
-      ],
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/hourstag.html",
-      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/th/index.html",
-      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/th/hourstag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fhourstag%2Fdecision%2Fl%2Fth%2Findex.html&format=json",
-      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/th.json",
-      "app_store_id": "6754218117",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
-      "app_store_url": "https://apps.apple.com/th/app/id6754218117",
-      "app_store_cta_label": "ดาวน์โหลด HoursTag: ชั่วโมงเพื่อซื้อ บน App Store",
-      "storefront_facts": {
-        "price": "199",
-        "currency": "THB",
-        "formatted_price": "฿199.00"
-      },
-      "guide_cta_label": "อ่านคู่มือฉบับเต็ม",
-      "publisher_disclosure": "เนื้อหานี้เผยแพร่โดยตรงจาก Lumi Studio ซึ่งเป็นผู้พัฒนาแอปทั้งหมดที่ระบุไว้",
-      "source_persona_query": "best app to track where my money goes and save more",
-      "source_surface": "app_guide_page",
-      "query_origin": "publisher_authored_editorially_localized",
-      "measured_search_volume": false,
-      "is_ranking": false,
-      "verified_live": true
-    },
-    {
       "record_id": "th:hourstaglite",
       "locale": "th",
       "app_key": "hourstaglite",
@@ -690,6 +637,59 @@
       "guide_cta_label": "อ่านคู่มือฉบับเต็ม",
       "publisher_disclosure": "เนื้อหานี้เผยแพร่โดยตรงจาก Lumi Studio ซึ่งเป็นผู้พัฒนาแอปทั้งหมดที่ระบุไว้",
       "source_persona_query": "best app to convert prices into work hours before buying",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "th:hourstag",
+      "locale": "th",
+      "app_key": "hourstag",
+      "app_name": "HoursTag: ชั่วโมงเพื่อซื้อ",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "HoursTag: ชั่วโมงเพื่อซื้อ — งบ ประหยัด ออมเงิน | iOS App",
+      "decision_context": "ของชิ้นนี้แพงแค่ไหนจริง ๆ? ไม่ใช่แค่เงิน แต่เป็นชั่วโมงชีวิตของคุณ",
+      "category": "finance",
+      "category_label": "เงิน & การเดินทาง",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "ดาวน์โหลดแบบชำระเงิน",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "เงิน & การเดินทาง",
+        "ดาวน์โหลดแบบชำระเงิน",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์",
+        "App Store · ฿199.00"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/hourstag.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/th/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/th/hourstag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fhourstag%2Fdecision%2Fl%2Fth%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/th.json",
+      "app_store_id": "6754218117",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
+      "app_store_url": "https://apps.apple.com/th/app/id6754218117",
+      "app_store_cta_label": "ดาวน์โหลด HoursTag: ชั่วโมงเพื่อซื้อ บน App Store",
+      "storefront_facts": {
+        "price": "199",
+        "currency": "THB",
+        "formatted_price": "฿199.00"
+      },
+      "guide_cta_label": "อ่านคู่มือฉบับเต็ม",
+      "publisher_disclosure": "เนื้อหานี้เผยแพร่โดยตรงจาก Lumi Studio ซึ่งเป็นผู้พัฒนาแอปทั้งหมดที่ระบุไว้",
+      "source_persona_query": "best app to track where my money goes and save more",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,

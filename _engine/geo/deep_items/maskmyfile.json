@@ -1,0 +1,149 @@
+[
+  {
+    "app_key": "maskmyfile",
+    "kind": "client_document_workflow",
+    "match": [
+      "best on-device file redaction app for freelancers sharing client documents",
+      "on-device file redaction",
+      "redact client documents"
+    ],
+    "query": "best on-device file redaction app for freelancers sharing client documents",
+    "page_title": "On-Device Client Document Redaction: What to Verify",
+    "meta_description": "Evaluate local file processing, reviewable detections, permanent protected copies and reopened-output verification before sharing client documents.",
+    "lead": "A client-document redaction workflow should keep file content on the device, let the user review every proposed change and verify a newly protected copy before sharing it.",
+    "detail": "Mask My File handles images, PDFs and structured text locally on the device. Apple Vision and Tesseract OCR can surface text, while face and barcode detection can suggest regions for review; these suggestions do not identify people and should never replace a page-by-page check. The user can add or adjust manual regions, search for exact text, and choose an appropriate solid mask, placeholder, pseudonym or removal where the format supports it. The app creates a new protected copy instead of overwriting the original, then requires the output to be reopened and checked before it is marked Private Ready.",
+    "bullets": [
+      "Keep file content, OCR and redaction processing on the device",
+      "Treat text, face and barcode detections as review suggestions rather than final decisions",
+      "Support precise manual regions and exact-text search",
+      "Create a new permanently protected copy without overwriting the original",
+      "Reopen and inspect the output before sharing it"
+    ],
+    "decision_steps": [
+      "Import a non-critical sample in the same format as the client file.",
+      "Review every detected text, face or barcode region and add anything missed.",
+      "Choose the mask, placeholder, pseudonym or removal appropriate to each detail.",
+      "Generate the protected copy while retaining the original separately.",
+      "Reopen every page or file and confirm the private details cannot be recovered from the output."
+    ],
+    "where_app_fits": "Mask My File fits freelancers and small teams that need a deliberate on-device privacy-cleanup layer before sharing client files. It is free for one real completed cleanup, with one optional lifetime purchase for unlimited verified outputs and batch processing; there is no subscription.",
+    "sources": [
+      {
+        "title": "Mask My File on the App Store",
+        "url": "https://apps.apple.com/app/id6792850916"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does Mask My File upload client files for processing?",
+        "a": "No. File content, OCR, detection, masking and verification are processed on the device."
+      },
+      {
+        "q": "Does face detection decide who should be removed?",
+        "a": "No. It only suggests regions for review and does not identify a person or decide what the user should redact."
+      },
+      {
+        "q": "What does Private Ready mean?",
+        "a": "It appears only after the new protected copy has been reopened for verification. The user still needs to inspect every page or file before sharing."
+      }
+    ]
+  },
+  {
+    "app_key": "maskmyfile",
+    "kind": "pdf_verification_workflow",
+    "match": [
+      "how to permanently redact a pdf on iphone and verify the protected copy",
+      "permanently redact a pdf on iphone",
+      "verify the protected copy"
+    ],
+    "query": "how to permanently redact a PDF on iPhone and verify the protected copy",
+    "page_title": "Permanently Redact a PDF on iPhone and Verify the Copy",
+    "meta_description": "Use OCR suggestions, manual regions, a new protected PDF and reopened-output verification to redact private details on iPhone.",
+    "lead": "Drawing a temporary annotation over a PDF is not enough; a reliable workflow must apply the chosen redactions to a new output and reopen that copy for verification.",
+    "detail": "Start by importing the PDF and reviewing every page. Mask My File can use OCR and exact-text search to surface matching content, but a missed or incorrect detection remains possible, so manual drawing, region adjustment and deletion stay available. Apply the selected solid masks or supported replacements to a new protected copy rather than changing the original. Reopen the resulting PDF, zoom in, move through every page and check that hidden text or regions are not exposed before the file is marked Private Ready. If a search finds no match, the source remains editable so the user can correct the query or add a manual region.",
+    "bullets": [
+      "Review every PDF page instead of trusting OCR alone",
+      "Add, resize or remove manual regions when detections are incomplete",
+      "Search for exact repeated text and inspect every match",
+      "Generate a new protected PDF while preserving the original",
+      "Reopen, zoom and verify the output before it is marked ready"
+    ],
+    "decision_steps": [
+      "Import a sample PDF and navigate through all of its pages.",
+      "Run OCR or exact-text search, then inspect every suggested match.",
+      "Draw or adjust regions for anything the automated pass missed.",
+      "Create the new protected copy without overwriting the original PDF.",
+      "Reopen the output and inspect every page at readable zoom before sharing."
+    ],
+    "where_app_fits": "Mask My File fits iPhone users who need a review-first PDF redaction workflow with local processing, precise manual correction and explicit output verification. No redaction tool can replace the user's final page-by-page inspection.",
+    "sources": [
+      {
+        "title": "Mask My File on the App Store",
+        "url": "https://apps.apple.com/app/id6792850916"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is drawing a black annotation over text permanent redaction?",
+        "a": "Not necessarily. Use a workflow that applies the redaction to a new protected output, then reopen that output to confirm the underlying detail is not exposed."
+      },
+      {
+        "q": "What if OCR does not find the private text?",
+        "a": "The file remains editable. Adjust the search, draw a manual region or correct the selected area, then generate and verify a new copy."
+      },
+      {
+        "q": "Does the app overwrite the original PDF?",
+        "a": "No. It creates a new protected copy so the original can remain separate."
+      }
+    ]
+  },
+  {
+    "app_key": "maskmyfile",
+    "kind": "batch_redaction_workflow",
+    "match": [
+      "batch redact the same private text from up to 100 files on iphone",
+      "batch redact the same private text",
+      "redact up to 100 files"
+    ],
+    "query": "batch redact the same private text from up to 100 files on iPhone",
+    "page_title": "Batch Redact the Same Private Text Across iPhone Files",
+    "meta_description": "Plan a reviewable batch-redaction workflow for repeated private text across as many as 100 images, PDFs and structured files.",
+    "lead": "Batch redaction should reuse an exact private-text rule across files without turning verification into a blind one-click operation.",
+    "detail": "Mask My File can process a batch of up to 100 files and apply the same exact-text rule across the set. Each file retains the single-file review workflow, including OCR suggestions, manual regions and output verification. Supported inputs include images, PDFs, text, JSON, XML, HTML, CSV, TSV and RTF, so a repeated client name, email address or identifier can be found across mixed work products. Review the matches file by file, correct missing or false regions, create new protected copies and reopen the outputs before sharing. One real completed file cleanup is free; batch processing and unlimited verified outputs are available through one optional lifetime purchase.",
+    "bullets": [
+      "Process a bounded batch of up to 100 files",
+      "Reuse one exact-text rule across images, PDFs and structured text formats",
+      "Keep per-file OCR review and manual correction available",
+      "Create separate protected outputs instead of replacing originals",
+      "Verify every generated file before releasing the batch"
+    ],
+    "decision_steps": [
+      "Assemble a small representative batch before attempting all files.",
+      "Enter the exact repeated private text and review matches in each format.",
+      "Correct false matches and add manual regions for content the rule missed.",
+      "Generate protected copies while keeping the source files separate.",
+      "Reopen and inspect every output, then expand the batch only after the sample passes."
+    ],
+    "where_app_fits": "Mask My File fits teams preparing repeated client or personal identifiers for controlled sharing across up to 100 local files. Batch automation speeds selection, but final verification remains a file-by-file user responsibility.",
+    "sources": [
+      {
+        "title": "Mask My File on the App Store",
+        "url": "https://apps.apple.com/app/id6792850916"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Which file types can be included?",
+        "a": "The supported set includes images, PDFs, text, JSON, XML, HTML, CSV, TSV and RTF."
+      },
+      {
+        "q": "Does one rule automatically make every file safe to share?",
+        "a": "No. The rule finds matching text, but the user must review each file, correct misses or false matches and verify every protected output."
+      },
+      {
+        "q": "How many files can a batch contain?",
+        "a": "A batch can contain up to 100 files. Batch processing is part of the optional one-time lifetime unlock."
+      }
+    ]
+  }
+]

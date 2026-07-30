@@ -134,6 +134,41 @@ class StandardSiteWorkflowTests(unittest.TestCase):
         self.assertIn("one optional lifetime purchase", combined)
         self.assertIn("publisher disclosure:", combined)
 
+    def test_mask_my_file_has_three_deployed_deep_documents(self):
+        manifest = generator.build_manifest(
+            pages=ROOT,
+            max_per_app=3,
+            now=datetime(2026, 7, 30, tzinfo=timezone.utc),
+        )
+        documents = [
+            document
+            for document in manifest["documents"]
+            if document["app_key"] == "maskmyfile"
+        ]
+        self.assertEqual(3, len(documents))
+        self.assertEqual(
+            {
+                "/answers/"
+                "best-on-device-file-redaction-app-for-freelancers-sharing-"
+                "client-documents.html",
+                "/answers/"
+                "how-to-permanently-redact-a-pdf-on-iphone-and-verify-the-"
+                "protected-copy.html",
+                "/answers/"
+                "batch-redact-the-same-private-text-from-up-to-100-files-on-"
+                "iphone.html",
+            },
+            {document["path"] for document in documents},
+        )
+        combined = " ".join(
+            document["text_content"] for document in documents
+        ).casefold()
+        self.assertIn("processed on the device", combined)
+        self.assertIn("new protected copy", combined)
+        self.assertIn("up to 100 files", combined)
+        self.assertIn("one optional lifetime purchase", combined)
+        self.assertIn("publisher disclosure:", combined)
+
     def test_every_sync_has_timeout_retry_and_initial_404_policy(self):
         commands = re.findall(
             r"python3 _engine/geo/sync_standard_site\.py \\\n"

@@ -241,6 +241,128 @@ class StandardSiteWorkflowTests(unittest.TestCase):
                 document["text_content"].casefold(),
             )
 
+    def test_wifi_aid_has_three_deployed_deep_documents(self):
+        manifest = generator.build_manifest(
+            pages=ROOT,
+            max_per_app=3,
+            now=datetime(2026, 7, 30, tzinfo=timezone.utc),
+        )
+        documents = [
+            document
+            for document in manifest["documents"]
+            if document["app_key"] == "wifiaid"
+        ]
+        self.assertEqual(3, len(documents))
+        self.assertEqual(
+            {
+                "/answers/"
+                "how-to-troubleshoot-wi-fi-connected-but-no-internet-on-"
+                "iphone.html",
+                "/answers/"
+                "how-to-tell-if-one-website-is-down-or-my-whole-internet-"
+                "connection-on-iphone.html",
+                "/answers/"
+                "how-to-document-intermittent-internet-problems-on-iphone-"
+                "for-isp-support.html",
+            },
+            {document["path"] for document in documents},
+        )
+        by_path = {
+            document["path"]: document["text_content"].casefold()
+            for document in documents
+        }
+        connected = by_path[
+            "/answers/"
+            "how-to-troubleshoot-wi-fi-connected-but-no-internet-on-"
+            "iphone.html"
+        ]
+        self.assertIn("most likely explanation with confidence", connected)
+        self.assertIn(
+            "bounded tcp stability samples with variation",
+            connected,
+        )
+        self.assertIn("numeric-ip tcp observation only", connected)
+        self.assertIn("not a packet capture", connected)
+        self.assertIn("no iap, subscription, trial", connected)
+
+        destination = by_path[
+            "/answers/"
+            "how-to-tell-if-one-website-is-down-or-my-whole-internet-"
+            "connection-on-iphone.html"
+        ]
+        self.assertIn("dns, tcp, tls, ttfb and http", destination)
+        self.assertIn(
+            "only a bounded numeric-ip tcp observation",
+            destination,
+        )
+        self.assertIn("does not inspect the server", destination)
+        self.assertIn("prove the site is globally down", destination)
+
+        intermittent = by_path[
+            "/answers/"
+            "how-to-document-intermittent-internet-problems-on-iphone-"
+            "for-isp-support.html"
+        ]
+        self.assertIn("bounded series of tcp samples", intermittent)
+        self.assertIn("not icmp packet-loss measurement", intermittent)
+        self.assertIn("not packet loss or rssi", intermittent)
+        self.assertIn("numeric-ip tcp direct ip", intermittent)
+        self.assertIn("private history stored on the device", intermittent)
+        index = (ROOT / "answers/index.html").read_text(encoding="utf-8")
+        sitemap = (ROOT / "sitemap_answers.xml").read_text(encoding="utf-8")
+        self.assertIn(
+            'title="iOS App Guide — latest answers &amp; guides (Atom)"',
+            index,
+        )
+        for document in documents:
+            path = document["path"]
+            html = (ROOT / path.removeprefix("/")).read_text(encoding="utf-8")
+            self.assertIn(path, index)
+            self.assertEqual(
+                1,
+                sitemap.count(
+                    f"https://alice51849.github.io/ios-app-guide{path}"
+                ),
+            )
+            self.assertIn(
+                "publisher disclosure:",
+                document["text_content"].casefold(),
+            )
+            self.assertIn(
+                f'<link rel="canonical" href="'
+                f'https://alice51849.github.io/ios-app-guide{path}">',
+                html,
+            )
+            self.assertIn('content="app-id=6790467886"', html)
+            self.assertIn(
+                'href="https://apps.apple.com/app/id6790467886"',
+                html,
+            )
+            self.assertIn(
+                '<a class="cta" '
+                'href="https://apps.apple.com/app/id6790467886" '
+                'rel="nofollow noopener">'
+                "Get WiFi Aid on the App Store →</a>",
+                html,
+            )
+            self.assertIn(
+                "This is a publisher-authored buying guide from the app "
+                "developer.",
+                html,
+            )
+            self.assertNotIn(
+                "Try WiFi Aid on a real example first",
+                html,
+            )
+            self.assertIn(
+                "paid download with no free trial",
+                html,
+            )
+            self.assertNotIn(
+                "alternatives/wifiaid-no-subscription.html",
+                html,
+            )
+
     def test_every_sync_has_timeout_retry_and_initial_404_policy(self):
         commands = re.findall(
             r"python3 _engine/geo/sync_standard_site\.py \\\n"

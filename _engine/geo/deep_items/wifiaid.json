@@ -1,0 +1,203 @@
+[
+  {
+    "app_key": "wifiaid",
+    "kind": "connected_no_internet_diagnosis",
+    "match": [
+      "how to troubleshoot wi-fi connected but no internet on iphone",
+      "wifi connected but no internet",
+      "iphone connected without internet"
+    ],
+    "query": "how to troubleshoot wi-fi connected but no internet on iphone",
+    "page_title": "Troubleshoot Wi-Fi Connected but No Internet on iPhone",
+    "meta_description": "Use layered DNS, TCP, TLS, HTTP, IP-version and timing observations to narrow down an iPhone connection failure without claiming a guaranteed repair.",
+    "lead": "When an iPhone shows Wi-Fi as connected but pages still fail, first separate the local link, name resolution, wider internet path and destination response instead of restarting everything at random.",
+    "detail": "WiFi Aid's Run a Check combines independent Wi-Fi, DNS and internet observations, while Deep Check adds TCP, TLS, TTFB, HTTP, IPv4, IPv6, timing and bounded TCP stability samples with variation. The result identifies the most likely explanation with confidence rather than declaring certainty. Direct IP is a numeric-IP TCP observation only; it is not a packet capture, router inspection or proof that every service works. Use the evidence to choose the next safe action, then rerun the check after changing one thing so the comparison remains understandable.",
+    "follow_up": "Check the current App Store listing before buying; WiFi Aid is a paid download with no free trial. After purchase, run the same check on a real incident and compare only one change at a time.",
+    "bullets": [
+      "Separate a connected Wi-Fi link from DNS and wider internet reachability",
+      "Review TCP, TLS, TTFB, HTTP, IPv4 and IPv6 observations independently",
+      "Treat Direct IP as a numeric-IP TCP check, not a complete internet test",
+      "Read the most likely explanation and confidence instead of a guaranteed diagnosis",
+      "Avoid claims of Wi-Fi scanning, router control, packet capture or automatic repair"
+    ],
+    "decision_steps": [
+      "Run the one-tap Wi-Fi, DNS and internet check before changing settings.",
+      "Open Deep Check when the first observations do not explain the failure.",
+      "Compare DNS, TCP, TLS, HTTP and IP-version evidence for the failed layer.",
+      "Apply one relevant troubleshooting action rather than changing everything at once.",
+      "Rerun the same checks and compare the new result with the private on-device history."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Find the failing layer",
+        "check": "Compare Wi-Fi, DNS, TCP, TLS, TTFB, HTTP, IPv4 and IPv6 observations",
+        "why": "A connected Wi-Fi indicator alone does not show which later layer failed"
+      },
+      {
+        "need": "Interpret Direct IP",
+        "check": "Treat it only as a numeric-IP TCP observation",
+        "why": "It does not prove DNS, TLS, HTTP or every destination works"
+      },
+      {
+        "need": "Act on the result",
+        "check": "Use the most likely explanation and confidence, then change one thing",
+        "why": "A bounded comparison is more useful than a claim of guaranteed repair"
+      }
+    ],
+    "where_app_fits": "WiFi Aid fits people who need bounded evidence before restarting equipment or contacting support. It is a US$5.99 paid download in the U.S. storefront, with every feature available from first launch and no IAP, subscription, trial, account, ads, analytics or tracking. Local price and availability can change.",
+    "sources": [
+      {
+        "title": "WiFi Aid on the App Store",
+        "url": "https://apps.apple.com/app/id6790467886"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can it guarantee that it will repair my internet connection?",
+        "a": "No. It presents independent observations, the most likely explanation and confidence so you can choose a relevant next step."
+      },
+      {
+        "q": "Does Direct IP bypass everything and prove the internet works?",
+        "a": "No. Direct IP is a bounded numeric-IP TCP observation. It does not prove that DNS, TLS, HTTP or every destination works."
+      },
+      {
+        "q": "Does it scan nearby Wi-Fi networks or control my router?",
+        "a": "No. It does not claim Wi-Fi scanning, router access, packet capture, VPN or Network Extension control."
+      }
+    ]
+  },
+  {
+    "app_key": "wifiaid",
+    "kind": "single_site_or_connection",
+    "match": [
+      "how to tell if one website is down or my whole internet connection on iphone",
+      "is one website down",
+      "website or internet outage"
+    ],
+    "query": "how to tell if one website is down or my whole internet connection on iphone",
+    "page_title": "Tell Whether One Website or the Wider Connection Is Failing",
+    "meta_description": "Compare one website with broader DNS, TCP, TLS, HTTP and IP-version evidence on iPhone without overstating what a single check proves.",
+    "lead": "A page that will not load can reflect one destination, DNS, TLS, an IP-version path or the wider connection, so a useful test compares layers instead of labeling every failure an internet outage.",
+    "detail": "WiFi Aid's Check a Website examines a specific destination beside the broader connection evidence. Compare its DNS result, TCP connection, TLS negotiation, TTFB and HTTP response with independent internet, IPv4 and IPv6 observations. Direct IP adds only a bounded numeric-IP TCP observation; it does not inspect the server, capture packets or prove the site is globally down. The app reports the most likely interpretation with confidence; confirm important outages through the website operator or another independent source.",
+    "follow_up": "Check the current App Store listing before buying; WiFi Aid is a paid download with no free trial. After purchase, compare a real failing destination with the broader connection evidence before drawing a conclusion.",
+    "bullets": [
+      "Check one destination beside independent wider-connection observations",
+      "Distinguish DNS, TCP, TLS, TTFB and HTTP stages",
+      "Compare IPv4 and IPv6 path evidence when the results differ",
+      "Use numeric-IP TCP only as a bounded supporting observation",
+      "Avoid claiming that one iPhone check proves a global website outage"
+    ],
+    "decision_steps": [
+      "Run the broader connection check to establish a comparison.",
+      "Use Check a Website for the destination that is failing.",
+      "Compare DNS, TCP, TLS, TTFB and HTTP results with the broader evidence.",
+      "Check whether IPv4 and IPv6 observations point to different paths.",
+      "Confirm a consequential site outage with the operator or another independent source."
+    ],
+    "comparison_rows": [
+      {
+        "need": "One destination or wider connection",
+        "check": "Run the broader check, then Check a Website for the failing destination",
+        "why": "The comparison helps avoid labeling every failed page a full internet outage"
+      },
+      {
+        "need": "Locate the stage",
+        "check": "Compare DNS, TCP, TLS, TTFB, HTTP, IPv4 and IPv6 observations",
+        "why": "Different stages can fail even when other destinations still work"
+      },
+      {
+        "need": "Confirm a broad outage",
+        "check": "Use the operator or another independent source",
+        "why": "One bounded iPhone observation cannot prove a website is down globally"
+      }
+    ],
+    "where_app_fits": "WiFi Aid fits remote workers and travellers who need to decide whether to troubleshoot their connection or wait for one destination. It is a US$5.99 paid download in the U.S. storefront; all features are open from first launch, with no IAP, subscription, account, ads, analytics or tracking. Local price and availability can change.",
+    "sources": [
+      {
+        "title": "WiFi Aid on the App Store",
+        "url": "https://apps.apple.com/app/id6790467886"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can one failed website test prove that the site is down for everyone?",
+        "a": "No. It helps compare that destination with the broader connection, but a global outage needs confirmation from the operator or another independent source."
+      },
+      {
+        "q": "What layers can explain why only one site fails?",
+        "a": "The evidence can distinguish DNS, TCP, TLS, TTFB, HTTP and IPv4 or IPv6 observations."
+      },
+      {
+        "q": "Does the app inspect the website's server?",
+        "a": "No. It makes bounded connection observations from the iPhone and does not claim server access or packet capture."
+      }
+    ]
+  },
+  {
+    "app_key": "wifiaid",
+    "kind": "intermittent_isp_evidence",
+    "match": [
+      "how to document intermittent internet problems on iphone for isp support",
+      "document intermittent internet problems",
+      "internet evidence for isp support"
+    ],
+    "query": "how to document intermittent internet problems on iphone for isp support",
+    "page_title": "Document Intermittent Internet Problems for ISP Support",
+    "meta_description": "Collect bounded TCP stability samples, protocol timing and private on-device history on iPhone without mislabeling them as packet loss, RSSI or a speed test.",
+    "lead": "Intermittent failures are easier to discuss with support when each result has a time, protocol stage and repeatable context instead of a vague claim that the Wi-Fi sometimes feels slow.",
+    "detail": "Run WiFi Aid's Deep Check when the problem is happening and again when the connection appears healthy. Its stability result uses a bounded series of TCP samples and variation; it is not ICMP packet-loss measurement, Wi-Fi RSSI, channel congestion or a complete speed test. Keep the DNS, TCP, TLS, TTFB, HTTP, numeric-IP TCP Direct IP, IPv4 and IPv6 observations in the private history stored on the device. Note what you were doing and the affected destination separately, then use the repeated evidence to ask the ISP a focused question without claiming that the app can see router logs, other devices or the provider's network.",
+    "follow_up": "Check the current App Store listing before buying; WiFi Aid is a paid download with no free trial. After purchase, collect the same bounded observations during a failure and a healthy period before contacting support.",
+    "bullets": [
+      "Capture a Deep Check while the intermittent problem is visible",
+      "Repeat the same bounded checks during a healthy period",
+      "Keep protocol timing and IP-version observations in private on-device history",
+      "Describe stability as bounded TCP samples and variation, not packet loss or RSSI",
+      "Avoid claims about router logs, channel congestion, mesh topology or other devices"
+    ],
+    "decision_steps": [
+      "Record the time, affected task and destination outside the diagnostic result.",
+      "Run Deep Check during the failure without repeatedly changing settings.",
+      "Repeat the same check after the connection appears healthy.",
+      "Compare DNS, TCP, TLS, TTFB, HTTP, numeric-IP TCP Direct IP and IP-version observations.",
+      "Use the dated on-device history to ask the ISP about the specific repeated layer or timing change."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Comparable incidents",
+        "check": "Repeat the same Deep Check during a failure and a healthy period",
+        "why": "Consistent observations are easier to discuss than changing tests each time"
+      },
+      {
+        "need": "Understand stability",
+        "check": "Read it as bounded TCP samples and variation",
+        "why": "It is not ICMP packet loss, RSSI, channel congestion or a complete speed test"
+      },
+      {
+        "need": "Respect visibility limits",
+        "check": "Use only the on-device protocol evidence and history",
+        "why": "The app cannot see router logs, other-device bandwidth or the provider's network"
+      }
+    ],
+    "where_app_fits": "WiFi Aid fits people who need understandable evidence for a support conversation, not a packet sniffer or router administration tool. It is a US$5.99 paid download in the U.S. storefront with no IAP, subscription, trial, account, ads, analytics or tracking, and its diagnostic history stays on the device. Local price and availability can change.",
+    "sources": [
+      {
+        "title": "WiFi Aid on the App Store",
+        "url": "https://apps.apple.com/app/id6790467886"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does the stability result measure packet loss?",
+        "a": "No. It summarizes a bounded series of TCP samples and their variation; it is not an ICMP packet-loss measurement."
+      },
+      {
+        "q": "Can it measure Wi-Fi signal strength or channel congestion?",
+        "a": "No. It does not claim RSSI, nearby-network scanning, channel congestion or complete mesh-topology visibility."
+      },
+      {
+        "q": "Where is the diagnostic history stored?",
+        "a": "The private check history is stored only on the device, with no account, analytics or tracking."
+      }
+    ]
+  }
+]

@@ -25385,6 +25385,41 @@ class GeneratorTests(unittest.TestCase):
             )
             self.assertIn(publication, regenerated)
 
+    def test_answer_alternative_link_uses_requested_pages_root(self):
+        question = (
+            "how to troubleshoot wi-fi connected but no internet on iphone"
+        )
+        content = aeo_answers.default_content(question, "wifiaid")
+        relative = "alternatives/wifiaid-no-subscription.html"
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            answers = pages / "answers"
+            answers.mkdir(parents=True)
+            (answers / "template.html").write_text(
+                "<html><head><style>body { color: black; }</style></head>"
+                "<body></body></html>",
+                encoding="utf-8",
+            )
+
+            without_alternative = aeo_answers.render_page(
+                question,
+                "wifiaid",
+                content,
+                pages_root=pages,
+            )
+            self.assertNotIn(relative, without_alternative)
+
+            alternative = pages / relative
+            alternative.parent.mkdir(parents=True)
+            alternative.write_text("<html></html>", encoding="utf-8")
+            with_alternative = aeo_answers.render_page(
+                question,
+                "wifiaid",
+                content,
+                pages_root=pages,
+            )
+            self.assertIn(relative, with_alternative)
+
     def test_answer_semantic_gate_detects_cross_app_localized_lead(self):
         source = f"""
         <meta name="description" content="Passport photo print sheet">

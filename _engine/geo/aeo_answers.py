@@ -664,6 +664,9 @@ def render_page(
     content: dict[str, Any],
     pages_root: Path | None = None,
 ) -> str:
+    effective_pages_root = (
+        PAGES_ROOT if pages_root is None else pages_root.resolve()
+    )
     app = APPS[key]
     name = app["name"]
     url = appstore_url(key, "iag_ans")
@@ -671,7 +674,7 @@ def render_page(
     canonical = f"{SITE}/answers/{slug}.html"
     title = content.get("page_title") or f"{question}: honest iPhone app buying guide"
     meta = concise_meta(content["meta_description"], limit=220, hard_limit=220)
-    style = extract_style(pages_root)
+    style = extract_style(effective_pages_root)
     primary_resource_url = content.get("primary_resource_url", "")
     primary_resource_label = content.get("primary_resource_label", "")
     faq = content["faq"]
@@ -757,7 +760,8 @@ def render_page(
         for item in faq
     )
     guide_link = f"{SITE}/guides/{key}.html"
-    alt_link = f"{SITE}/alternatives/{alternative_hub_slug(key)}.html"
+    alt_slug = alternative_hub_slug(key)
+    alt_link = f"{SITE}/alternatives/{alt_slug}.html"
     if primary_resource_url:
         hero_actions = (
             f'<a class="cta" href="{e(primary_resource_url)}">'
@@ -780,10 +784,17 @@ def render_page(
     special_notice = ""
     if key == "aim990":
         special_notice = " TOEIC is a registered trademark of ETS. Aim990 is an independent study aid and is not affiliated with or endorsed by ETS. No app can guarantee a TOEIC score."
+    alt_app_link = ""
+    if (
+        effective_pages_root / "alternatives" / f"{alt_slug}.html"
+    ).is_file():
+        alt_app_link = (
+            f'<a href="{alt_link}">{e(name)} alternatives / guide</a>'
+        )
     app_links = (
         f'<a href="{url}" rel="nofollow noopener">Get {e(name)} on the App Store</a>'
         f'<a href="{guide_link}">{e(name)} app guide</a>'
-        f'<a href="{alt_link}">{e(name)} alternatives / guide</a>'
+        f"{alt_app_link}"
     )
     app_fit = (
         f'<h2>Where {e(name)} fits</h2><p>{e(content["where_app_fits"])}</p>'
@@ -949,11 +960,14 @@ def feed_discovery_links() -> str:
     return "\n".join(
         (
             f'<link rel="alternate" type="application/atom+xml" '
+            f'title="iOS App Guide — latest answers &amp; guides (Atom)" '
             f'href="{SITE}/feed.xml">',
             f'<link rel="alternate" type="application/rss+xml" '
+            f'title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" '
             f'href="{SITE}/rss.xml">',
             f'<link rel="alternate" type="application/feed+json" '
-            f'href="{SITE}/feed.json">',
+            f'title="iOS App Guide — latest answers &amp; guides '
+            f'(JSON Feed 1.1)" href="{SITE}/feed.json">',
         )
     )
 

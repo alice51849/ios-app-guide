@@ -1,0 +1,148 @@
+[
+  {
+    "app_key": "gmoneylite",
+    "kind": "free_trial_workflow",
+    "match": [
+      "best free travel expense tracker with currency conversion for iphone",
+      "free travel expense tracker with currency conversion"
+    ],
+    "query": "best free travel expense tracker with currency conversion for iphone",
+    "page_title": "Free Travel Expense Tracking with Currency Conversion: What to Test",
+    "meta_description": "Test local-to-home currency entry, a real travel budget and useful statistics before choosing a free-to-start iPhone expense tracker.",
+    "lead": "A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.",
+    "detail": "G+Money Lite lets you create one trip and save up to three expenses free. For each purchase, enter the amount in the local currency, preview the home-currency conversion, and check the day's remaining budget or overage before saving. Rates, the trip budget, category statistics and the summary remain available in the free tier, so the test covers the actual decision workflow. If the allowance fits, one optional lifetime purchase unlocks unlimited trips and expenses; there is no recurring subscription, account or tracking.",
+    "bullets": [
+      "One trip and up to three saved expenses are included free",
+      "Enter the amount in local currency and review the home-currency conversion before saving",
+      "Preview the day's remaining budget or overage while the purchase is still actionable",
+      "Use rates, the budget, category statistics and the trip summary before purchase",
+      "Choose one optional lifetime unlock only if the tested workflow fits"
+    ],
+    "decision_steps": [
+      "Set the home currency and create the included trip.",
+      "Choose the local currency and an appropriate live, saved or manual rate.",
+      "Enter a realistic purchase and inspect its home-currency amount.",
+      "Check the remaining daily budget or overage, then save up to three expenses.",
+      "Review the category statistics and summary before deciding whether to unlock unlimited use."
+    ],
+    "where_app_fits": "G+Money Lite fits travellers who want to test a private multi-currency budget with one trip and three saved expenses free, then remove the limits with one optional lifetime purchase. It requires no subscription, account or tracking.",
+    "sources": [
+      {
+        "title": "G+Money Lite on the App Store",
+        "url": "https://apps.apple.com/app/id6793436548"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What can I use in G+Money Lite without paying?",
+        "a": "You can create one trip, save up to three expenses, use rates and a budget, and review category statistics and the trip summary."
+      },
+      {
+        "q": "Can I see whether a purchase exceeds today's budget before saving it?",
+        "a": "Yes. The workflow previews the home-currency conversion and the day's remaining budget or overage before the expense is saved."
+      },
+      {
+        "q": "Is the full version a subscription?",
+        "a": "No. One optional lifetime purchase unlocks unlimited trips and expenses; there is no recurring subscription."
+      }
+    ]
+  },
+  {
+    "app_key": "gmoneylite",
+    "kind": "offline_rate_workflow",
+    "match": [
+      "travel expense tracker with saved or manual exchange rates offline",
+      "saved or manual exchange rates offline",
+      "offline travel expense conversion"
+    ],
+    "query": "travel expense tracker with saved or manual exchange rates offline",
+    "page_title": "Offline Travel Expense Conversion with Saved or Manual Rates",
+    "meta_description": "Plan an offline travel-expense workflow using saved or manual exchange rates, local-currency entry and home-currency totals.",
+    "lead": "Offline travel tracking is useful only when an unavailable rate service does not block expense entry or hide the home-currency estimate.",
+    "detail": "G+Money Lite supports saved and manually set exchange rates, so a traveller can keep logging local-currency purchases and viewing home-currency estimates without mobile data. Fetch updated public exchange rates while connected, save the rate needed for the trip, and switch to a manual rate when a card statement, cash exchange or planning scenario calls for a different value. The budget, category statistics and summary continue to work with the selected rate. Internet access is needed only to fetch updated public exchange rates, and converted totals should be treated as planning estimates because a bank or card issuer may use a different rate or fee.",
+    "bullets": [
+      "Fetch and save the trip's public exchange rate before losing connectivity",
+      "Use a saved or manually set rate when mobile data is unavailable",
+      "Enter purchases in local currency and keep a home-currency planning total",
+      "Continue reviewing the budget, categories and summary offline",
+      "Verify final card charges separately because issuer rates and fees can differ"
+    ],
+    "decision_steps": [
+      "While connected, fetch the public rate for the destination currency.",
+      "Save that rate or enter the manual rate you intend to use.",
+      "Turn off mobile data and enter a realistic local-currency expense.",
+      "Confirm that the home-currency estimate, budget and summary remain usable.",
+      "Compare important totals with receipts or the final card statement after the trip."
+    ],
+    "where_app_fits": "G+Money Lite fits travellers who need a no-account, on-device expense log that can continue with saved or manual exchange rates when roaming or Wi-Fi is unavailable. Updated public rates still require an internet connection.",
+    "sources": [
+      {
+        "title": "G+Money Lite on the App Store",
+        "url": "https://apps.apple.com/app/id6793436548"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can G+Money Lite convert expenses without an internet connection?",
+        "a": "Yes. A saved or manually set exchange rate keeps local-to-home-currency conversion available offline."
+      },
+      {
+        "q": "When does the app need internet access?",
+        "a": "An internet connection is needed only when fetching updated public exchange rates."
+      },
+      {
+        "q": "Will the converted total exactly match my card statement?",
+        "a": "Not necessarily. Treat it as a planning estimate because a bank or card issuer may apply a different rate, date or fee."
+      }
+    ]
+  },
+  {
+    "app_key": "gmoneylite",
+    "kind": "unlock_decision",
+    "match": [
+      "travel budget app with category statistics and one-time lifetime unlock",
+      "category statistics and one-time lifetime unlock",
+      "travel budget lifetime unlock"
+    ],
+    "query": "travel budget app with category statistics and one-time lifetime unlock",
+    "page_title": "Travel Budget Statistics Before a One-Time Lifetime Unlock",
+    "meta_description": "Evaluate a travel budget, free category statistics and visible premium workflows before choosing a one-time lifetime unlock.",
+    "lead": "A fair travel-budget unlock decision should expose the real budget and category analysis before payment, while gating only the actions that exceed the free allowance.",
+    "detail": "G+Money Lite includes the trip budget, category statistics, rates and summary for one trip with up to three saved expenses. Category statistics remain available in the free tier rather than being hidden behind the purchase. Filters, custom categories, editing, additional trips and expenses, backup and export stay visible so the user can understand the complete workflow; actions beyond the free allowance require the lifetime unlock. One optional lifetime purchase unlocks full use without creating a subscription, account or tracking relationship.",
+    "bullets": [
+      "Evaluate the budget and category statistics with the included trip and expenses",
+      "Keep category statistics available in the free tier",
+      "Show filters, custom categories, editing, backup and export instead of hiding them",
+      "Gate additional saved trips, expenses and other premium actions at the point of use",
+      "Use one optional lifetime purchase rather than a recurring subscription"
+    ],
+    "decision_steps": [
+      "Create the included trip and set a realistic daily budget.",
+      "Save expenses in different categories until the free allowance is reached.",
+      "Review the category statistics, summary and remaining-budget preview.",
+      "Inspect the visible editing, custom-category, backup and export workflows.",
+      "Unlock once only if those full workflows justify removing the trip and expense limits."
+    ],
+    "where_app_fits": "G+Money Lite fits travellers who want meaningful budget and category analysis before paying, with premium actions remaining visible and a single lifetime unlock available when the free limits are reached.",
+    "sources": [
+      {
+        "title": "G+Money Lite on the App Store",
+        "url": "https://apps.apple.com/app/id6793436548"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Are category statistics locked in the free version?",
+        "a": "No. Category statistics, rates, the budget and the summary remain available for the included trip and up to three saved expenses."
+      },
+      {
+        "q": "What happens when I reach the free allowance?",
+        "a": "The full workflows remain visible, but saving additional trips or expenses and using other premium actions requires the optional lifetime unlock."
+      },
+      {
+        "q": "Does the lifetime unlock create an account or subscription?",
+        "a": "No. It is a one-time purchase with no recurring subscription, account or tracking."
+      }
+    ]
+  }
+]

@@ -99,6 +99,41 @@ class StandardSiteWorkflowTests(unittest.TestCase):
         self.assertIn("does not promise anonymity", combined)
         self.assertIn("publisher disclosure:", combined)
 
+    def test_gmoney_lite_has_three_deployed_deep_documents(self):
+        manifest = generator.build_manifest(
+            pages=ROOT,
+            max_per_app=3,
+            now=datetime(2026, 7, 30, tzinfo=timezone.utc),
+        )
+        documents = [
+            document
+            for document in manifest["documents"]
+            if document["app_key"] == "gmoneylite"
+        ]
+        self.assertEqual(3, len(documents))
+        self.assertEqual(
+            {
+                "/answers/"
+                "best-free-travel-expense-tracker-with-currency-conversion-"
+                "for-iphone.html",
+                "/answers/"
+                "travel-expense-tracker-with-saved-or-manual-exchange-rates-"
+                "offline.html",
+                "/answers/"
+                "travel-budget-app-with-category-statistics-and-one-time-"
+                "lifetime-unlock.html",
+            },
+            {document["path"] for document in documents},
+        )
+        combined = " ".join(
+            document["text_content"] for document in documents
+        ).casefold()
+        self.assertIn("one trip and up to three saved expenses", combined)
+        self.assertIn("saved or manually set exchange rate", combined)
+        self.assertIn("category statistics remain available", combined)
+        self.assertIn("one optional lifetime purchase", combined)
+        self.assertIn("publisher disclosure:", combined)
+
     def test_every_sync_has_timeout_retry_and_initial_404_policy(self):
         commands = re.findall(
             r"python3 _engine/geo/sync_standard_site\.py \\\n"

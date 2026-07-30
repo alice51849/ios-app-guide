@@ -27,7 +27,7 @@
   "identifier": "LUMI-ZHUYIN-DCAT3-2026",
   "version": "1.5.0",
   "datePublished": "2026-07-11",
-  "dateModified": "2026-07-29T00:00:00Z",
+  "dateModified": "2026-07-30T00:00:00Z",
   "inLanguage": [
     "en",
     "zh-Hant"
@@ -97,7 +97,7 @@
       "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-ro-crate",
       "name": "Bopomofo RO-Crate 1.3 research object",
       "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/",
-      "dateModified": "2026-07-29"
+      "dateModified": "2026-07-30"
     },
     {
       "@type": "Dataset",
@@ -162,8 +162,8 @@
       "name": "Complete ZIP bundle",
       "encodingFormat": "application/zip",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog-dcat3-bundle.zip",
-      "contentSize": "28815 bytes",
-      "sha256": "8421715e0e0637e79c6968bc5042ee70e8d6be22b448b863c846c4cf558252b6"
+      "contentSize": "28811 bytes",
+      "sha256": "08ec3a130f4e2fcb4c374cad744feb1c51f635cc57402ca6638e0d4042735354"
     },
     {
       "@type": "DataDownload",
@@ -171,7 +171,7 @@
       "encodingFormat": "application/ld+json",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.jsonld",
       "contentSize": "218434 bytes",
-      "sha256": "dc5d1d9d4de5859697b5d83bf36ae2478ab79b1197ade0cd806e676834729d2b"
+      "sha256": "23a43269a348a3f8c638447f915cab299fd47364b367b2aad02ef72b1c4624e3"
     },
     {
       "@type": "DataDownload",
@@ -179,7 +179,7 @@
       "encodingFormat": "text/turtle",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.ttl",
       "contentSize": "148253 bytes",
-      "sha256": "d7bb94347cdb9ee3253ae7a12b989b7d9ec2b0d98f17e2366c26b3e07f47faf1"
+      "sha256": "9235ddc4fddd022287f0efa14f2947881ba4d3aae6db0df02f1562799b483ac5"
     }
   ]
 }

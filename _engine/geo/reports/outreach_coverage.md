@@ -2,16 +2,16 @@
 
 > Factual owned-asset coverage only. This does not pretend to measure live AI recommendations.
 
-Public apps: **34** · Average coverage: **92.9%**
+Public apps: **34** · Average coverage: **93.5%**
 
 | App | Coverage | Answers | Social languages | Alternatives | Hub / guide / story |
 |---|---:|---:|---:|---:|---|
-| AI Brief | 58.1% | 8/17 | 1 | 0 | hub / guide / story |
 | Aim990 Plus | 76.7% | 17/17 | 1 | 0 | hub / guide / story |
 | HoursTag Lite | 76.7% | 17/17 | 1 | 0 | hub / guide / story |
 | Mask My File | 76.7% | 17/17 | 1 | 0 | hub / guide / story |
 | Mochi DoneStamp | 76.7% | 17/17 | 1 | 0 | hub / guide / story |
 | WiFi Aid | 76.7% | 17/17 | 1 | 0 | hub / guide / story |
+| AI Brief | 79.6% | 16/17 | 1 | 1 | hub / guide / story |
 | DailyMate | 86.7% | 25/25 | 1 | 5 | hub / guide / story |
 | TripBee Lite | 86.7% | 25/25 | 1 | 5 | hub / guide / story |
 | Wordmate: Learn 44 Languages | 86.7% | 25/25 | 1 | 5 | hub / guide / story |

@@ -12,7 +12,7 @@ Public apps: **35** · Average coverage: **93.1%**
 | Mask My File | 76.7% | 19/19 | 1 | 0 | hub / guide / story |
 | Mochi DoneStamp | 76.7% | 17/17 | 1 | 0 | hub / guide / story |
 | WiFi Aid | 76.7% | 20/20 | 1 | 0 | hub / guide / story |
-| AI Brief | 79.6% | 16/17 | 1 | 1 | hub / guide / story |
+| AI Brief | 81.7% | 17/17 | 1 | 1 | hub / guide / story |
 | DailyMate | 86.7% | 25/25 | 1 | 5 | hub / guide / story |
 | TripBee Lite | 86.7% | 25/25 | 1 | 5 | hub / guide / story |
 | Wordmate: Learn 44 Languages | 86.7% | 25/25 | 1 | 5 | hub / guide / story |

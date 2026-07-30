@@ -2,10 +2,11 @@
 
 > Factual owned-asset coverage only. This does not pretend to measure live AI recommendations.
 
-Public apps: **34** · Average coverage: **93.5%**
+Public apps: **35** · Average coverage: **92.6%**
 
 | App | Coverage | Answers | Social languages | Alternatives | Hub / guide / story |
 |---|---:|---:|---:|---:|---|
+| G+Money Lite | 61.9% | 11/19 | 1 | 0 | hub / guide / story |
 | Aim990 Plus | 76.7% | 17/17 | 1 | 0 | hub / guide / story |
 | HoursTag Lite | 76.7% | 17/17 | 1 | 0 | hub / guide / story |
 | Mask My File | 76.7% | 17/17 | 1 | 0 | hub / guide / story |

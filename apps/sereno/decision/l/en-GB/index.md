@@ -2,7 +2,7 @@
 title: "best white noise app for falling asleep no subscription"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/en-GB/index.html"
-modified: "2026-07-29"
+modified: "2026-07-30"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

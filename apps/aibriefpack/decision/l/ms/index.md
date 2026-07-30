@@ -2,7 +2,7 @@
 title: "AI Brief — Fail jadi konteks yang jelas | iOS App"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/ms/index.html"
-modified: "2026-07-29"
+modified: "2026-07-30"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

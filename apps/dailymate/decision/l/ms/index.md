@@ -2,7 +2,7 @@
 title: "aplikasi frasa bahasa praktikal terbaik untuk pelancong dengan Apple Watch"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/ms/index.html"
-modified: "2026-07-29"
+modified: "2026-07-30"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"

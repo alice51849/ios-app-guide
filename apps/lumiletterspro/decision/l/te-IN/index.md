@@ -2,7 +2,7 @@
 title: "హోంస్కూల్ కిండర్‌గార్టెన్ ప్రిప్‌కు పూర్తి ఫోనిక్స్ యాప్‌లో ఉత్తమం"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/te-IN/index.html"
-modified: "2026-07-29"
+modified: "2026-07-30"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"

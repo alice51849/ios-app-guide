@@ -2,7 +2,7 @@
 title: "बच्चों और शिशुओं के लिए घर पर सबसे अच्छा पासपोर्ट फोटो ऐप"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/hi/index.html"
-modified: "2026-07-29"
+modified: "2026-07-30"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"

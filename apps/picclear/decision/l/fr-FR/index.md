@@ -2,7 +2,7 @@
 title: "meilleure application pour libérer de l’espace iPhone en supprimant les photos en double"
 lang: "fr-FR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/fr-FR/index.html"
-modified: "2026-07-29"
+modified: "2026-07-30"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

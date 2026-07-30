@@ -2,7 +2,7 @@
 title: "द्विभाषिक मुलांसाठी सर्वोत्तम संपूर्ण झुयिन अ‍ॅप"
 lang: "mr-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/mr-IN/index.html"
-modified: "2026-07-29"
+modified: "2026-07-30"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"

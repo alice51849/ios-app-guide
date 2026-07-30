@@ -2,7 +2,7 @@
 title: "ఒక రాబోయే ప్రయాణానికి ఉత్తమ సులభమైన ట్రిప్ ప్లానర్ యాప్ iPhone కోసం"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/te-IN/index.html"
-modified: "2026-07-29"
+modified: "2026-07-30"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

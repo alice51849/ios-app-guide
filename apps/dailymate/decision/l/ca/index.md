@@ -2,7 +2,7 @@
 title: "millor app de frases útils per viatjar amb Apple Watch"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/ca/index.html"
-modified: "2026-07-29"
+modified: "2026-07-30"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"

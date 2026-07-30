@@ -2,7 +2,7 @@
 title: "iPhone-ൽ മീറ്റിംഗുകൾ സംഗ്രഹിക്കുന്ന മികച്ച വോയ്സ് നോട്ട്സ് ആപ്പ്"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/ml-IN/index.html"
-modified: "2026-07-29"
+modified: "2026-07-30"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

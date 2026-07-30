@@ -2,7 +2,7 @@
 title: "WiFi Aid — Точная диагностика сети | iOS App"
 lang: "ru"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/ru/index.html"
-modified: "2026-07-29"
+modified: "2026-07-30"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

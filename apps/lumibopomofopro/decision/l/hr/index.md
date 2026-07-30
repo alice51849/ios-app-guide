@@ -2,7 +2,7 @@
 title: "najbolja kompletna zhuyin aplikacija za dvojezičnu djecu"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/hr/index.html"
-modified: "2026-07-29"
+modified: "2026-07-30"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "najlepsza aplikacja do świadomego wydawania, by powstrzymać impulsywne zakupy na iPhone"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/pl/index.html"
-modified: "2026-07-29"
+modified: "2026-07-30"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

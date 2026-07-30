@@ -2,7 +2,7 @@
 title: "AI Brief — 資料を明確な文脈に整理 | iOS App"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/ja/index.html"
-modified: "2026-07-29"
+modified: "2026-07-30"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

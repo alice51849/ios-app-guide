@@ -2,7 +2,7 @@
 title: "iPhone-এ বাচ্চাদের ঝাপসা ছবি ঠিক করার সেরা অ্যাপ"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/bn-BD/index.html"
-modified: "2026-07-29"
+modified: "2026-07-30"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

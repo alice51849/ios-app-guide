@@ -2,7 +2,7 @@
 title: "أفضل تطبيق فونكس كامل للتحضير لرياض الأطفال في التعليم المنزلي"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/ar-SA/index.html"
-modified: "2026-07-29"
+modified: "2026-07-30"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "แอปติดตามงบประมาณการเดินทางที่ดีที่สุด ไม่มีการสมัครสมาชิกสำหรับ iPhone"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/th/index.html"
-modified: "2026-07-29"
+modified: "2026-07-30"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

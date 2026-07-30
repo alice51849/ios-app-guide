@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Naposledy — Pamatuje si, kdy to bylo | iOS App"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/cs/index.html"
-modified: "2026-07-29"
+modified: "2026-07-30"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

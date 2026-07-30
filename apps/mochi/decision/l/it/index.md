@@ -2,7 +2,7 @@
 title: "migliore app lista cose da fare semplice su iPhone senza abbonamento"
 lang: "it"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/it/index.html"
-modified: "2026-07-29"
+modified: "2026-07-30"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

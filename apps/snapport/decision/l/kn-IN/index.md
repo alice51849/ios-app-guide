@@ -2,7 +2,7 @@
 title: "ಮಕ್ಕಳು ಮತ್ತು ಬಾಲಕರಿಗೆ ಮನೆಮೇಲೆ ಉತ್ತಮ ಪಾಸ್‌ಪೋರ್ಟ್ ಫೋಟೋ ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/kn-IN/index.html"
-modified: "2026-07-29"
+modified: "2026-07-30"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"

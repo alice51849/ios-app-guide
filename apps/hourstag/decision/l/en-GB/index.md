@@ -2,7 +2,7 @@
 title: "best mindful spending app to stop impulse buying iphone"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/en-GB/index.html"
-modified: "2026-07-29"
+modified: "2026-07-30"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

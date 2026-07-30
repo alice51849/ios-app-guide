@@ -169,6 +169,78 @@ class StandardSiteWorkflowTests(unittest.TestCase):
         self.assertIn("one optional lifetime purchase", combined)
         self.assertIn("publisher disclosure:", combined)
 
+    def test_tripbee_lite_has_three_deployed_deep_documents(self):
+        manifest = generator.build_manifest(
+            pages=ROOT,
+            max_per_app=3,
+            now=datetime(2026, 7, 30, tzinfo=timezone.utc),
+        )
+        documents = [
+            document
+            for document in manifest["documents"]
+            if document["app_key"] == "tripbeelite"
+        ]
+        self.assertEqual(3, len(documents))
+        self.assertEqual(
+            {
+                "/answers/"
+                "best-simple-trip-planner-app-for-one-upcoming-trip-iphone"
+                ".html",
+                "/answers/"
+                "free-travel-planner-for-one-journey-with-a-packing-list"
+                ".html",
+                "/answers/"
+                "travel-itinerary-app-with-a-one-time-unlock-instead-of-a-"
+                "subscription.html",
+            },
+            {document["path"] for document in documents},
+        )
+        by_path = {
+            document["path"]: document["text_content"].casefold()
+            for document in documents
+        }
+        one_trip = by_path[
+            "/answers/"
+            "best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html"
+        ]
+        self.assertIn("one complete journey", one_trip)
+        self.assertIn("without a time limit", one_trip)
+        self.assertIn("edited or replaced", one_trip)
+        self.assertIn(
+            "no account and has no ads, analytics or tracking",
+            one_trip,
+        )
+
+        packing = by_path[
+            "/answers/"
+            "free-travel-planner-for-one-journey-with-a-packing-list.html"
+        ]
+        self.assertIn("packing workflow remains visible", packing)
+        self.assertIn("requires the optional lifetime unlock", packing)
+        self.assertIn("sharing, backup and restore", packing)
+
+        sharing = by_path[
+            "/answers/"
+            "travel-itinerary-app-with-a-one-time-unlock-instead-of-a-"
+            "subscription.html"
+        ]
+        self.assertIn("interactive single-day switch", sharing)
+        self.assertIn("offline content and compact controls", sharing)
+        self.assertIn("zip containing the html", sharing)
+        self.assertIn(
+            "other supported destinations receive the original html",
+            sharing,
+        )
+        self.assertIn(
+            "does not claim real-time collaborative itinerary editing",
+            sharing,
+        )
+        for document in documents:
+            self.assertIn(
+                "publisher disclosure:",
+                document["text_content"].casefold(),
+            )
+
     def test_every_sync_has_timeout_retry_and_initial_404_policy(self):
         commands = re.findall(
             r"python3 _engine/geo/sync_standard_site\.py \\\n"

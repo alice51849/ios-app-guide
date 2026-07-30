@@ -1,5 +1,5 @@
 ---
-title: "ứng dụng chi tiêu có ý thức tốt nhất để ngăn mua sắm bốc đồng cho iPhone"
+title: "HoursTag: Giờ để mua — Tiết kiệm & quản lý chi tiêu | iOS App"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/vi/index.html"
 modified: "2026-07-30"
@@ -9,9 +9,9 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# ứng dụng chi tiêu có ý thức tốt nhất để ngăn mua sắm bốc đồng cho iPhone
+# HoursTag: Giờ để mua — Tiết kiệm & quản lý chi tiêu | iOS App
 
-Mua sắm bốc đồng giảm khi bạn thêm một khoảng dừng nhỏ: món hàng này thực sự tốn bao nhiêu giờ làm việc của bạn?
+Món đó thật sự tốn bao nhiêu? Không chỉ bằng tiền, mà bằng giờ đời bạn.
 
 - Tiền & du lịch
 - Tải xuống trả phí
@@ -19,8 +19,8 @@ Mua sắm bốc đồng giảm khi bạn thêm một khoảng dừng nhỏ: món
 - Riêng tư / trên thiết bị
 - App Store · 149.000đ
 
-[Tải HoursTag trên App Store →](https://apps.apple.com/vn/app/id6754218117)
+[Tải HoursTag: Giờ để mua trên App Store](https://apps.apple.com/vn/app/id6754218117)
 
-[Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html)
+[Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/hourstag.html)
 
-> Hướng dẫn do nhà xuất bản Lumi Studio, nhà phát triển ứng dụng, biên soạn. Tên ứng dụng là nhãn hiệu của chủ sở hữu và chỉ được sử dụng để nhận diện. Đối với tài liệu, sức khỏe, trường học và các quyết định về năng suất, hãy xác minh các yêu cầu chính thức khi cần thiết.
+> Tài liệu này do Lumi Studio trực tiếp công bố; Lumi Studio là nhà phát triển của tất cả ứng dụng được liệt kê.

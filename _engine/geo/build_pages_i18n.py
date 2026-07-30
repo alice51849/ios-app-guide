@@ -1146,9 +1146,48 @@ def pricing_text_for(key, locale):
     )
 
 
+HOURSTAG_WEB_DESCRIPTION_OVERRIDES = {
+    "en-AU": (
+        "What does it really cost? Not just in dollars, but in hours of your life.\n\n"
+        "HoursTag helps you manually record completed expenses and converts each "
+        "logged amount into the work time it took to earn. Set your pay once, log "
+        "what you spent, and review the real hours behind your history.\n\n"
+        "• Tag spending as Need, Want or Impulse\n"
+        "• Track goals and wish lists in real work hours\n"
+        "• Review category insights and a clear monthly breakdown\n"
+        "• No account, no ads, no tracking\n\n"
+        "One-time purchase. Spend your time on purpose."
+    ),
+    "en-CA": (
+        "What does it really cost? Not just in dollars, but in hours of your life.\n\n"
+        "HoursTag helps you manually record completed expenses and converts each "
+        "logged amount into the work time it took to earn. Set your pay once, log "
+        "what you spent, and review the real hours behind your history.\n\n"
+        "• Tag spending as Need, Want or Impulse\n"
+        "• Track goals and wish lists in real work hours\n"
+        "• Review category insights and a clear monthly breakdown\n"
+        "• No account, no ads, no tracking\n\n"
+        "One-time purchase. Spend your time on purpose."
+    ),
+    "en-GB": (
+        "What does it really cost? Not just in pounds, but in hours of your life.\n\n"
+        "HoursTag helps you manually record completed expenses and converts each "
+        "logged amount into the work time it took to earn. Set your pay once, log "
+        "what you spent, and review the real hours behind your history.\n\n"
+        "• Tag spending as Need, Want or Impulse\n"
+        "• Track goals and wish lists in real work hours\n"
+        "• Review category insights and a clear monthly breakdown\n"
+        "• No account, no ads, no tracking\n\n"
+        "One-time purchase. Spend your time on purpose."
+    ),
+}
+
+
 def sanitize_description(key, locale, description):
     if not description:
         return description
+    if key == "hourstag" and locale in HOURSTAG_WEB_DESCRIPTION_OVERRIDES:
+        return HOURSTAG_WEB_DESCRIPTION_OVERRIDES[locale]
     model = APPS[key].get("purchase_model")
     if model == "paid_upfront":
         false_markers = (

@@ -97,8 +97,8 @@ App Store での公開を確認済みの各アプリから、主要な購入者�
 | **DailyMate** | Apple Watch対応の旅行者向け実用的な言語フレーズアプリのおすすめ | 旅行前には、単語を組み立てるよりも実際の状況に即した完成したフレーズのほうが役立ちます。— DailyMateはそれを実現します。 | 有料ダウンロード | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [App StoreでDailyMateを入手 →](https://apps.apple.com/jp/app/id6790418321) |
 | **G+Money** | サブスクリプション不要の最高の旅行予算管理アプリiPhone向け | 旅行中はデータ通信なしで使え、多通貨対応でアカウント不要の予算管理が必要です。旅行ごとに整理される—G+Moneyはこれを実現しています。 | 有料ダウンロード | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [App StoreでG+Moneyを入手 →](https://apps.apple.com/jp/app/id6755782939) |
 | **G+Money Lite** | G+Money Lite — 家計簿・予算・節約・為替換算 \| iOS App | G+Money Lite — かしこい旅行両替＆家計簿 | 無料で開始・買い切りで永久解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/gmoneylite.html) | [App Store で G+Money Lite を入手](https://apps.apple.com/jp/app/id6793436548) |
-| **HoursTag** | 衝動買い防止のための最高のマインドフル支出アプリiPhone向け | 衝動買いは一呼吸置くことで弱まります：この購入は実際にあなたの人生の何時間分の労働に相当するか？ | 有料ダウンロード | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [App StoreでHoursTagを入手 →](https://apps.apple.com/jp/app/id6754218117) |
 | **HoursTag Lite** | HoursTag Lite — モノの本当の値段が見える \| iOS App | HoursTag Lite - モノの本当の値段が見える | 無料で開始・買い切りで永久解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/hourstaglite.html) | [App Store で HoursTag Lite を入手](https://apps.apple.com/jp/app/id6794039979) |
+| **HoursTag: 価格を時間に** | HoursTag: 価格を時間に — 節約・家計簿・予算・貯金 \| iOS App | それ、本当はいくら？お金ではなく、あなたの人生の「時間」で。 | 有料ダウンロード | [ガイド](https://alice51849.github.io/ios-app-guide/ja/hourstag.html) | [App Store で HoursTag: 価格を時間に を入手](https://apps.apple.com/jp/app/id6754218117) |
 | **LockHour Pro** | 勉強中にソーシャルメディアをブロックする最高のアプリiPhone向け | 試験中は意志力ではなく、強制的な時間制限ブロックが必要です。— LockHour Proはそれを実現します。 | 無料で開始・買い切りで永久解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-app-to-block-social-media-while-studying-iphone.html) | [App StoreでLockHour Proを入手 →](https://apps.apple.com/jp/app/id6780107485) |
 | **Lumi Bopomofo** | iPhoneで子供が注音符号（ボポモフォ）を学ぶためのおすすめアプリ | 注音符号を初めて学ぶ子供向けに、37の記号すべてをトレースと遊びでカバーし、4〜7歳の初学期に合わせて広告なし、データ収集なしで設計されたLumi Bopomofoが最適です。 | 無料で開始・買い切りで永久解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [App StoreでLumi Bopomofoを入手 →](https://apps.apple.com/jp/app/id6773017109) |
 | **Lumi Bopomofo Pro** | バイリンガル児童向けおすすめ完全注音アプリ | 自宅で注音を学ぶバイリンガル児童には、音・シンボル・声調・ブレンドを遊びながら繰り返し学べる完全な道筋が必要です — Lumi Bopomofo Proはそのために作られています。 | 有料ダウンロード | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [App StoreでLumi Bopomofo Proを入手 →](https://apps.apple.com/jp/app/id6775773117) |
@@ -135,6 +135,6 @@ JSON、JSONL、CSVは同じ1,750件のレコードを含みます。
 
 [ホーム](https://alice51849.github.io/ios-app-guide/ja/index.html) · [オープンデータ](https://alice51849.github.io/ios-app-guide/ja/data/lumi-studio-publisher-search-intent-catalog.html) · [ライセンス](https://creativecommons.org/licenses/by/4.0/)
 
-更新日: 2026-07-30
+更新日: 2026-07-31
 
 CC BY 4.0は元のカタログ編集に適用されます。アプリ名およびApp Storeのマークはそれぞれの所有者に帰属します。

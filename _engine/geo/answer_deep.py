@@ -2904,40 +2904,6 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   ]
  },
  {
-  "app_key": "hourstag",
-  "kind": "scenario",
-  "query": "App to see how many hours of work a purchase costs before buying in Taiwan or Korea",
-  "match": [
-   "hours of work a purchase costs",
-   "how many hours work to buy this",
-   "convert price to work hours before buying",
-   "time cost of purchase app"
-  ],
-  "lead": "The most effective pause before a purchase is seeing its price as hours of your life — a NT$1,500 or ₩60,000 buy becomes 'X hours of work', which interrupts the impulse.",
-  "detail": "Budgets are easy to ignore; time is not. {name} converts any price into hours-of-work using your hourly wage, so a tempting buy is reframed as the hours you'd trade for it — a visceral nudge that creates real hesitation. Set your wage once and check any price in seconds; a goals screen also tracks savings targets in hours rather than money, making them feel earned. It's pay-once with no account and no bank linking, so it stays simple and private wherever you are.",
-  "bullets": [
-   "Converts any price into hours-of-work at your wage",
-   "A visceral pause that plain budgets don't create",
-   "Goals tracked in hours, so savings feel earned",
-   "No account, no bank linking — private and simple",
-   "Pay-once, no subscription"
-  ],
-  "faq": [
-   {
-    "q": "How does seeing hours help me spend less?",
-    "a": "Reframing a price as hours of your life makes the true cost concrete, which interrupts impulse buying more effectively than a dollar figure."
-   },
-   {
-    "q": "Do I need to connect my bank?",
-    "a": "No — you just set your hourly wage; {name} has no bank linking and no account."
-   },
-   {
-    "q": "Is it a subscription?",
-    "a": "No — {name} is pay-once."
-   }
-  ]
- },
- {
   "app_key": "scanto",
   "kind": "scenario",
   "query": "How to scan receipts and invoices to PDF for filing taxes without a cloud account",
@@ -4468,74 +4434,6 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   ]
  },
  {
-  "app_key": "hourstag",
-  "kind": "scenario",
-  "query": "How to do a no-spend challenge and actually stick to it",
-  "match": [
-   "how to do a no-spend challenge",
-   "stick to no spend challenge",
-   "no spend month app",
-   "low buy challenge help"
-  ],
-  "lead": "A no-spend challenge sticks better when every temptation is reframed by its real cost — seeing a want as hours of your life makes it far easier to skip.",
-  "detail": "No-spend or low-buy challenges fail when a purchase feels small in the moment. Reframing the price as hours of work makes the cost concrete: a want becomes 'that's half a day of my life,' which is easier to walk away from. {name} converts any price into hours-of-work at your wage, and tracks savings goals in hours so your progress during the challenge feels earned. It's pay-once with no account and no bank linking, so it stays simple. Pair it with a clear challenge rule (e.g. no non-essentials for 30 days).",
-  "bullets": [
-   "Reframes each temptation as hours of your life",
-   "Makes skipping a purchase easier during the challenge",
-   "Tracks savings goals in hours — progress feels earned",
-   "No account, no bank linking; pay-once",
-   "Works alongside any no-spend or low-buy rule"
-  ],
-  "faq": [
-   {
-    "q": "How does it help a no-spend challenge?",
-    "a": "By showing each temptation as hours of work, {name} makes the true cost real enough to skip it more easily."
-   },
-   {
-    "q": "Do I connect my bank?",
-    "a": "No — you set your wage; there's no bank linking or account."
-   },
-   {
-    "q": "Subscription?",
-    "a": "No — {name} is pay-once."
-   }
-  ]
- },
- {
-  "app_key": "hourstag",
-  "kind": "faq",
-  "query": "What is the true cost of a purchase in hours of work",
-  "match": [
-   "true cost of a purchase in hours",
-   "how many hours of work does something cost",
-   "price in hours of work calculator",
-   "cost in time not money app"
-  ],
-  "lead": "The true cost of a purchase is the time you traded to earn it — dividing the price by your after-tax hourly wage shows how many hours of work it really costs.",
-  "detail": "Money hides the real trade-off; time makes it obvious. Divide a price by your effective hourly wage and a $120 gadget becomes, say, six hours of your life. {name} does this instantly for any price using your wage, so you can weigh a purchase in hours before buying, and it tracks savings goals in hours too. It's a simple pay-once tool with no account and no bank linking — just the reframe that makes spending decisions clearer.",
-  "bullets": [
-   "True cost = price ÷ your effective hourly wage",
-   "Turns any price into hours of your life",
-   "Weigh purchases in time before you buy",
-   "Also tracks savings goals in hours",
-   "Pay-once, no account, no bank linking"
-  ],
-  "faq": [
-   {
-    "q": "How do I calculate cost in hours?",
-    "a": "Divide the price by your after-tax hourly wage; {name} does it instantly for any price once you set your wage."
-   },
-   {
-    "q": "Does it need my bank?",
-    "a": "No — just your hourly wage; there's no bank linking or account."
-   },
-   {
-    "q": "Is it pay-once?",
-    "a": "Yes — no subscription."
-   }
-  ]
- },
- {
   "app_key": "lumibopomofo",
   "kind": "faq",
   "query": "How do you type Chinese using Zhuyin Bopomofo on an iPhone",
@@ -5347,74 +5245,6 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    {
     "q": "Can I get both digital and printed?",
     "a": "Yes — {name} gives a digital file to upload and a print-ready sheet for physical copies."
-   }
-  ]
- },
- {
-  "app_key": "hourstag",
-  "kind": "faq",
-  "query": "How do I calculate my real hourly wage to judge whether something is worth buying?",
-  "match": [
-   "calculate my real hourly wage",
-   "real hourly wage to judge",
-   "real hourly wage",
-   "wage to judge whether something is worth buying"
-  ],
-  "lead": "Your paycheck's hourly rate isn't what you actually earn per hour of your life. The idea comes from the book Your Money or Your Life: your real hourly wage is lower once you count the time and money the job really takes.",
-  "detail": "To get your real hourly wage: take your monthly take-home pay, subtract work-related costs (commute, meals out, work clothes, childcare), then divide by ALL the hours the job consumes — scheduled hours plus commuting, getting ready, and unpaid overtime. That number is usually well below your headline rate. {name} lets you set this real hourly value once, and then every price you enter is shown as the hours of life it costs — so a purchase decision becomes 'is this worth X hours?' rather than an abstract number. It's a one-time purchase, no subscription, and stays on your device.",
-  "bullets": [
-   "Real wage = (take-home pay - work costs) / all work-related hours",
-   "Count commute, prep and unpaid overtime, not just scheduled hours",
-   "The real number is usually lower than your headline rate",
-   "{name} applies it so prices show as hours of your life",
-   "Pay-once, on-device, no account"
-  ],
-  "faq": [
-   {
-    "q": "Why is my real hourly wage lower than my pay rate?",
-    "a": "Because the job costs time (commute, prep, overtime) and money (transport, meals) that your headline rate ignores. Dividing take-home pay by all those hours gives the real figure."
-   },
-   {
-    "q": "Do I have to recalculate every time?",
-    "a": "No — set your real hourly value once in {name} and every price is converted to hours automatically."
-   },
-   {
-    "q": "Is this a subscription?",
-    "a": "No, {name} is a one-time purchase and works on-device."
-   }
-  ]
- },
- {
-  "app_key": "hourstag",
-  "kind": "scenario",
-  "query": "How to decide if a big purchase like a new phone or a vacation is worth the work hours",
-  "match": [
-   "big purchase like a new phone or a vacation is worth the work hours",
-   "new phone or a vacation",
-   "worth the work hours",
-   "big purchase"
-  ],
-  "lead": "For a big-ticket buy, the sticker price doesn't tell you much. Turning it into 'days or weeks of my working life' makes the decision suddenly clear.",
-  "detail": "Take the price of the phone, the trip, or the gadget and divide it by your real hourly wage — now it's hours, or days, of your life. A $1,200 phone at a $15 real hourly wage is 80 hours: two working weeks. Framed that way, some purchases feel obviously worth it and others don't. {name} does this instantly: enter the price and see the hours, so you can sit with the trade-off before you buy. It's pay-once with no subscription, and nothing leaves your device.",
-  "bullets": [
-   "Divide the price by your real hourly wage to get hours",
-   "Big buys become 'days or weeks of my life' — much clearer",
-   "Some purchases feel worth it, others suddenly don't",
-   "{name} shows the hours instantly as you type a price",
-   "Pay-once, private, on-device"
-  ],
-  "faq": [
-   {
-    "q": "Does this work for one-off big purchases?",
-    "a": "Yes — that's where it helps most. Seeing a big price as weeks of your life makes the trade-off concrete."
-   },
-   {
-    "q": "Can I compare two options?",
-    "a": "Enter each price in {name} and compare them in hours instead of dollars."
-   },
-   {
-    "q": "Is my income data private?",
-    "a": "Yes — {name} keeps everything on your device with no account."
    }
   ]
  },

@@ -1,5 +1,5 @@
 ---
-title: "האפליקציה הטובה ביותר להוצאה מודעת לעצירת קניות אימפולסיביות לאייפון"
+title: "HoursTag: שעות לקנייה — תקציב, חיסכון והוצאות | iOS App"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/he/index.html"
 modified: "2026-07-30"
@@ -9,9 +9,9 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# האפליקציה הטובה ביותר להוצאה מודעת לעצירת קניות אימפולסיביות לאייפון
+# HoursTag: שעות לקנייה — תקציב, חיסכון והוצאות | iOS App
 
-קניות אימפולסיביות נחלשות כשאתה מוסיף הפסקה קטנה אחת: כמה שעות מחייך תעלה הקנייה הזו בפועל?
+כמה זה באמת עולה? לא רק בשקלים — אלא בשעות מהחיים שלך.
 
 - כסף ונסיעות
 - הורדה בתשלום
@@ -19,8 +19,8 @@ publisher: "Lumi Studio"
 - פרטי / במכשיר
 - App Store · ₪17.90
 
-[קבל את HoursTag ב-App Store →](https://apps.apple.com/il/app/id6754218117)
+[הורידו את HoursTag: שעות לקנייה מה-App Store](https://apps.apple.com/il/app/id6754218117)
 
-[קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html)
+[קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/hourstag.html)
 
-> מדריך שפורסם על ידי Lumi Studio, מפתח האפליקציה. שמות האפליקציות הם סימני מסחר של בעליהן ומשמשים לזיהוי בלבד. עבור מסמכים, בריאות, לימודים והחלטות פרודוקטיביות, יש לוודא דרישות רשמיות במידת הצורך.
+> זהו חומר רשמי שפורסם על ידי Lumi Studio, המפתח של כל אפליקציה ברשימה.

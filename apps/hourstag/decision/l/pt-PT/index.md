@@ -1,5 +1,5 @@
 ---
-title: "melhor app para controlar gastos conscientes e evitar compras impulsivas iPhone"
+title: "HoursTag: Horas para comprar — Poupança, gastos e orçamento | iOS App"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/pt-PT/index.html"
 modified: "2026-07-30"
@@ -9,9 +9,9 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# melhor app para controlar gastos conscientes e evitar compras impulsivas iPhone
+# HoursTag: Horas para comprar — Poupança, gastos e orçamento | iOS App
 
-As compras impulsivas enfraquecem quando adiciona uma pequena pausa: quantas horas da sua vida esta compra realmente custa?
+Quanto custa realmente? Não apenas em euros, mas em horas da sua vida.
 
 - Dinheiro e viagens
 - Descarregamento pago
@@ -19,8 +19,8 @@ As compras impulsivas enfraquecem quando adiciona uma pequena pausa: quantas hor
 - Privado / no dispositivo
 - App Store · 5,99 €
 
-[Obtenha o HoursTag na App Store →](https://apps.apple.com/pt/app/id6754218117)
+[Baixe HoursTag: Horas para comprar na App Store](https://apps.apple.com/pt/app/id6754218117)
 
-[Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html)
+[Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/hourstag.html)
 
-> Guia elaborado pelo editor Lumi Studio, o desenvolvedor da aplicação. Os nomes das aplicações são marcas registadas dos seus proprietários e são usados apenas para identificação. Para documentos, saúde, escola e decisões de produtividade, verifique os requisitos oficiais quando aplicável.
+> Este conteúdo é publicado diretamente pela Lumi Studio, que desenvolve todas as apps apresentadas.

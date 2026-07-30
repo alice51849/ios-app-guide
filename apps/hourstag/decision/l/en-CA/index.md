@@ -1,5 +1,5 @@
 ---
-title: "best mindful spending app to stop impulse buying iphone"
+title: "HoursTag: Hours to Buy — Budget, Spending & Savings | iOS App"
 lang: "en-CA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/en-CA/index.html"
 modified: "2026-07-30"
@@ -9,9 +9,9 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# best mindful spending app to stop impulse buying iphone
+# HoursTag: Hours to Buy — Budget, Spending & Savings | iOS App
 
-Impulse shopping gets weaker when you add one small pause: how many hours of your life will this checkout actually cost?
+What does it really cost? Not just in dollars, but in hours of your life.
 
 - Money & travel
 - Paid download
@@ -19,8 +19,8 @@ Impulse shopping gets weaker when you add one small pause: how many hours of you
 - Private / on-device
 - App Store · $6.99
 
-[Get HoursTag on the App Store →](https://apps.apple.com/ca/app/id6754218117)
+[Get HoursTag: Hours to Buy on the App Store](https://apps.apple.com/ca/app/id6754218117)
 
-[Read the full guide](https://alice51849.github.io/ios-app-guide/en-CA/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html)
+[Read the full guide](https://alice51849.github.io/ios-app-guide/en-CA/hourstag.html)
 
-> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.
+> This is first-party material published by Lumi Studio, the developer of every listed app.

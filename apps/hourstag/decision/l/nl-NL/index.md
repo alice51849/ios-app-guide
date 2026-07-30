@@ -1,5 +1,5 @@
 ---
-title: "beste app voor bewust uitgeven om impulsaankopen te stoppen iPhone"
+title: "HoursTag: Uren om te kopen — Budget, uitgaven & sparen | iOS App"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/nl-NL/index.html"
 modified: "2026-07-30"
@@ -9,9 +9,9 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# beste app voor bewust uitgeven om impulsaankopen te stoppen iPhone
+# HoursTag: Uren om te kopen — Budget, uitgaven & sparen | iOS App
 
-Impulsaankopen worden minder als je één kleine pauze toevoegt: hoeveel uren van je leven kost deze aankoop eigenlijk?
+Wat kost het echt? Niet in euro's, maar in uren van je leven.
 
 - Geld & reizen
 - Betaalde aanschaf
@@ -19,8 +19,8 @@ Impulsaankopen worden minder als je één kleine pauze toevoegt: hoeveel uren va
 - Privé / op apparaat
 - App Store · € 5,99
 
-[Download HoursTag in de App Store →](https://apps.apple.com/nl/app/id6754218117)
+[Download HoursTag: Uren om te kopen in de App Store](https://apps.apple.com/nl/app/id6754218117)
 
-[Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html)
+[Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/hourstag.html)
 
-> Gids van de uitgever Lumi Studio, de ontwikkelaar van de app. App-namen zijn handelsmerken van hun eigenaren en worden alleen gebruikt ter identificatie. Controleer officiële vereisten waar relevant voor documenten, gezondheid, school en productiviteitsbeslissingen.
+> Dit is materiaal van de eerste partij, gepubliceerd door Lumi Studio, de ontwikkelaar van elke vermelde app.

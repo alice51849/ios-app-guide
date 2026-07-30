@@ -969,6 +969,40 @@ def _scenario_facts(q: str, key: str, name: str, bullets: list[str]) -> dict[str
             "faq": faq,
         }
 
+    def hourstag_spending() -> dict[str, Any]:
+        return make(
+            "To understand where your money went, record each completed expense and convert it into the work time required to earn that amount. Reviewing money and time together makes category patterns concrete without bank syncing.",
+            [
+                "Manual expense records converted into work hours.",
+                "Hourly or monthly income setup using your own numbers.",
+                "Spending history with categories and time-based breakdowns.",
+                "Goals and wishlist progress expressed in work time.",
+                "On-device data, no account, and a one-time purchase.",
+            ],
+            [
+                "Set your hourly or monthly take-home income.",
+                f"Log a completed expense in {name}.",
+                "Choose its category and Need, Want, or Impulse tag.",
+                "Review history and breakdowns in both money and work time.",
+                "Track a goal to see the work time behind future progress.",
+            ],
+            f"{name} fits when you want to record and review existing spending as work time, with history and goals rather than bank syncing.",
+            [
+                {
+                    "q": "Does it import transactions from my bank?",
+                    "a": f"No. You enter expenses yourself, and {name} keeps the records on your device without an account.",
+                },
+                {
+                    "q": "Is it a checkout blocker?",
+                    "a": f"No. {name} records and reframes spending; it does not block stores, cards, or purchases.",
+                },
+                {
+                    "q": "Is it a subscription?",
+                    "a": "No. It is a one-time purchase.",
+                },
+            ],
+        )
+
     if key == "scanto" and "receipt" in q and "scan" in q:
         return make(
             "To keep receipts for taxes, scan each one to a clear PDF, run OCR so amounts and dates become searchable text, and file them by category. On-device scanning keeps financial data private.",
@@ -1123,7 +1157,7 @@ def _scenario_facts(q: str, key: str, name: str, bullets: list[str]) -> dict[str
             [{"q": "Does it work offline?", "a": f"Yes — {name} works offline and keeps your birth data private."},
              {"q": "Western and Chinese astrology?", "a": "Yes — it covers Western charts plus BaZi and Zi Wei."},
              {"q": "Subscription?", "a": "It's a one-time purchase, not a subscription."}])
-    if key in {"gmoney", "hourstag"} and ("budget" in q or "expense" in q or "spending" in q or "currency" in q or "travel money" in q or "trip budget" in q) and ("app" in q or "track" in q or "log" in q or "convert" in q):
+    if key == "gmoney" and ("budget" in q or "expense" in q or "spending" in q or "currency" in q or "travel money" in q or "trip budget" in q) and ("app" in q or "track" in q or "log" in q or "convert" in q):
         return make(
             "For travel money, the fastest tools log an expense and convert the currency in one tap, work offline abroad, and need no account — so you can capture spending in the moment without a data connection.",
             ["One-tap expense logging with currency conversion.", "Works offline while travelling.",
@@ -1134,6 +1168,17 @@ def _scenario_facts(q: str, key: str, name: str, bullets: list[str]) -> dict[str
             [{"q": "Does it work offline?", "a": f"Yes — {name} logs and converts offline while you travel."},
              {"q": "Do I need an account?", "a": "No account is required."},
              {"q": "Multiple currencies?", "a": "Yes — it converts and totals across currencies."}])
+    if key == "hourstag" and (
+        "budget" in q
+        or "expense" in q
+        or "spending" in q
+    ) and (
+        "app" in q
+        or "track" in q
+        or "log" in q
+        or "convert" in q
+    ):
+        return hourstag_spending()
     if key == "mochi" and ("to do" in q or "to-do" in q or "todo" in q or "checklist" in q or "task" in q or "planner" in q) and ("app" in q or "list" in q or "daily" in q or "free" in q or "cute" in q or "aesthetic" in q):
         return make(
             "A checklist app you'll actually keep using should be simple and pleasant — quick to add tasks, satisfying to tick off, free of clutter and nagging upsells, and free to use with no account.",
@@ -1224,16 +1269,7 @@ def _scenario_facts(q: str, key: str, name: str, bullets: list[str]) -> dict[str
              {"q": "Can it upscale a small photo?", "a": "Yes — it enhances detail and resolution for crisper avatars."},
              {"q": "Is it private?", "a": "Processing is on device."}])
     if key == "hourstag" and ("hours of work" in q or "hours of your life" in q or ("price" in q and "hours" in q) or ("cost" in q and "hours" in q) or "worth the hours" in q or "mindful spending" in q):
-        return make(
-            "Turning a price into hours of your own work makes spending feel real: instead of '$60', you see 'four hours of my life'. That reframing helps you pause before impulse buys and decide if something is truly worth it.",
-            ["Converts any price into hours of work.", "Uses your real hourly pay.",
-             "Makes impulse buys easy to reconsider.", "Simple, private, no bank linking needed.", "A pay-once tool with no subscription."],
-            ["Set your hourly pay once.", f"Enter a price in {name}.",
-             "See it as hours of your life.", "Decide if it's worth those hours.", "Use it before any impulse buy."],
-            f"{name} fits when you want a calmer, more mindful relationship with spending rather than another bank-syncing budget app.",
-            [{"q": "How does it work?", "a": f"{name} converts a price into the hours of work it costs you, based on your hourly pay."},
-             {"q": "Does it link my bank?", "a": "No — it's a simple, private tool; you don't need to connect any accounts."},
-             {"q": "Subscription?", "a": "It's a one-time purchase."}])
+        return hourstag_spending()
     if key == "tripbee" and ("itinerary" in q or "trip planner" in q or "plan a trip" in q or "plan a day" in q or "travel planner" in q or "trip schedule" in q):
         return make(
             "A good trip planner lets you build a day-by-day itinerary — flights, hotels, and things to do — in one place, and ideally works offline so you can check your plan abroad without data. Keeping it on device also keeps your travel plans private.",

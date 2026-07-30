@@ -1,5 +1,5 @@
 ---
-title: "iPhone کے لیے بہترین ذہین خرچ کرنے والی ایپ جو فوری خریداری روک سکے"
+title: "HoursTag: وقت کی قیمت — حقیقی قیمت کیا ہے؟ ڈالرز میں نہیں — زندگی کے گھنٹوں میں۔ | iOS App"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/ur-PK/index.html"
 modified: "2026-07-30"
@@ -9,9 +9,9 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# iPhone کے لیے بہترین ذہین خرچ کرنے والی ایپ جو فوری خریداری روک سکے
+# HoursTag: وقت کی قیمت — حقیقی قیمت کیا ہے؟ ڈالرز میں نہیں — زندگی کے گھنٹوں میں۔ | iOS App
 
-جب آپ ایک چھوٹا وقفہ شامل کرتے ہیں تو فوری خریداری کمزور ہو جاتی ہے: یہ چیک آؤٹ آپ کی زندگی کے کتنے گھنٹے لے گا؟
+حقیقی قیمت کیا ہے؟ ڈالرز میں نہیں — زندگی کے گھنٹوں میں۔
 
 - پیسہ اور سفر
 - ادا شدہ ڈاؤن لوڈ
@@ -19,8 +19,8 @@ publisher: "Lumi Studio"
 - نجی / آلہ پر
 - App Store · Rs 1,300.00
 
-[HoursTag ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6754218117)
+[App Store سے HoursTag: وقت کی قیمت حاصل کریں](https://apps.apple.com/pk/app/id6754218117)
 
-[مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html)
+[مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/hourstag.html)
 
-> Lumi اسٹوڈیو کی طرف سے شائع کردہ رہنما، جو ایپ ڈویلپر ہے۔ ایپ کے نام ان کے مالکان کے تجارتی نشان ہیں اور صرف شناخت کے لیے استعمال ہوتے ہیں۔ دستاویزات، صحت، اسکول، اور پیداواری فیصلوں کے لیے، متعلقہ سرکاری تقاضوں کی تصدیق کریں۔
+> یہ مواد براہ راست Lumi Studio نے شائع کیا ہے، جو فہرست میں شامل تمام ایپس کا ڈویلپر ہے۔

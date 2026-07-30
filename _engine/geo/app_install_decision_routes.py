@@ -39,6 +39,7 @@ LOCALE_DATA_DIR = Path("data") / SLUG / "locales"
 OEMBED_DIR = Path("oembed") / "decision"
 PRIORITY_APPS = ("maskmyfile", "wifiaid", "mochidonestamp")
 PRIORITY_RANK = {key: index + 1 for index, key in enumerate(PRIORITY_APPS)}
+INTENT_CONTEXT_ONLY_KEYS = {"hourstag"}
 TODAY_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
 
 
@@ -263,7 +264,10 @@ def _record(
     guide_url = str(intent["canonical_guide_url"])
     source_surface = _source_surface(guide_url)
     decision_context = str(intent["decision_context"])
-    if source_surface == "app_guide_page":
+    if (
+        source_surface == "app_guide_page"
+        and key not in INTENT_CONTEXT_ONLY_KEYS
+    ):
         decision_context = _long_guide_description(
             _guide_page_path(pages, guide_url),
             str(intent["app_store_id"]),

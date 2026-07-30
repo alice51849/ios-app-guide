@@ -3,7 +3,7 @@
 import os
 import sys
 
-GEO = os.path.expanduser("~/00_GrowthEngine/geo")
+GEO = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, GEO)
 from aeo_guide import (  # noqa: E402
     render, write_sitemap, publish, GUIDES, SITE, APPS, APPSTORE, PAGES,
@@ -75,21 +75,21 @@ C = {
   ],
  },
  "hourstag": {
-  "title": "Mindful Spending Apps for iPhone: How to Choose",
-  "meta": "See what purchases really cost \u2014 in hours of your life \u2014 on iPhone. Private, no tracking, pay once. How to choose a money-mindset app.",
-  "intro": "A budget tells you what you can afford; it rarely changes how a purchase feels. Translating prices into hours of your life makes the trade-off concrete \u2014 a useful nudge a plain expense tracker can't give you.",
+  "title": "Expense Awareness Apps for iPhone: How to Choose",
+  "meta": "Log completed spending, translate it into work hours, and review patterns on iPhone. Private, no bank sync, no tracking, pay once.",
+  "intro": "A category total shows how much you spent, but not how much working time that money represents. Translating completed expenses into hours of your life makes past spending patterns easier to understand and improve.",
   "criteria": [
-   "Converts any price into hours of your life based on your real take-home pay",
-   "Quick to log so the nudge happens before you buy, not after",
-   "A clear view of your spending in time, not just numbers",
+   "Quick manual logging for expenses that have already happened",
+   "Converts each logged amount into work hours using your real take-home pay",
+   "Need, Want and Impulse tags for reviewing spending patterns",
+   "History, category breakdowns, goals and wishlists in one workflow",
    "Private by design \u2014 your income and spending aren't tracked or sold",
-   "Simple enough to use every day without setup fatigue",
-   "A one-time price rather than a subscription to think clearly about money",
+   "A one-time price rather than a recurring fee to review your own records",
   ],
-  "why": "HoursTag shows what everything really costs in hours of your life, helping you decide before you spend \u2014 private, with no tracking, for a one-time purchase.",
+  "why": "HoursTag lets you record completed expenses, convert them into work hours, and review history, categories and goals \u2014 private, with no bank sync or tracking, for a one-time purchase.",
   "faqs": [
-   {"q": "How can I stop impulse spending?", "a": "Reframe the price as time. HoursTag converts any purchase into hours of your life based on your pay, which makes the trade-off concrete before you buy."},
-   {"q": "Is this just another budgeting app?", "a": "No \u2014 HoursTag focuses on the mindset: it shows cost in hours, not just a category total."},
+   {"q": "How can I understand where my money went?", "a": "Log a completed expense in HoursTag. It converts the amount into work hours and keeps the record in your history for later review."},
+   {"q": "Is this just another budgeting app?", "a": "HoursTag focuses on reviewing actual spending in money and work time, with Need, Want and Impulse tags, category breakdowns and goals."},
    {"q": "Does it track or sell my income data?", "a": "HoursTag is private by design with no tracking."},
    {"q": "Do I need to link my bank?", "a": "No \u2014 HoursTag works from your own numbers, no account linking required."},
    {"q": "Is it a subscription?", "a": "No. HoursTag is a one-time purchase."},

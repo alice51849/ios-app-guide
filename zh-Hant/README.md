@@ -97,8 +97,8 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **DailyMate** | 適合旅客搭配 Apple Watch 使用的最佳實用語言短句應用程式 | 出發前，針對真實情境的完整短句比起必須在壓力下組合的零散詞彙更實用 — DailyMate 專為此打造。 | 付費下載 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [前往 App Store 下載 DailyMate →](https://apps.apple.com/tw/app/id6790418321) |
 | **G+Money** | 最佳無訂閱旅遊預算追蹤應用程式 iPhone | 旅途中你需要一款能在無資料國家離線使用、支援多貨幣且不需帳號的預算追蹤器 — 按旅程分類讓每次假期獨立 — G+Money 專為此設計。 | 付費下載 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [在 App Store 取得 G+Money →](https://apps.apple.com/tw/app/id6755782939) |
 | **G+Money Lite** | G+Money Lite — 旅行記帳・預算・匯率 \| iOS App | G+Money Lite — 聰明的旅行匯率記帳 | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/gmoneylite.html) | [在 App Store 取得 G+Money Lite](https://apps.apple.com/tw/app/id6793436548) |
-| **HoursTag** | 最佳防止衝動購物的理性消費應用程式 iPhone | 衝動購物會因多一個停頓而減弱：這筆結帳實際花費你多少工作時數？ | 付費下載 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html) | [在 App Store 取得 HoursTag →](https://apps.apple.com/tw/app/id6754218117) |
 | **HoursTag Lite** | HoursTag Lite — 看見每樣東西的真實代價 \| iOS App | HoursTag Lite - 看見每樣東西的真實代價 | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/hourstaglite.html) | [在 App Store 取得 HoursTag Lite](https://apps.apple.com/tw/app/id6794039979) |
+| **HoursTag：價格換工時** | HoursTag：價格換工時 — 預算、記帳、省錢與儲蓄 \| iOS App | 這真正要花你多少？不是多少錢——是你生命中的幾個小時。 | 付費下載 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/hourstag.html) | [在 App Store 取得 HoursTag：價格換工時](https://apps.apple.com/tw/app/id6754218117) |
 | **LockHour Pro** | 最佳學習時封鎖社群媒體應用程式 iPhone | 考試期間，意志力不是工具——嚴格的定時封鎖才是——LockHour Pro 專為此設計。 | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-app-to-block-social-media-while-studying-iphone.html) | [在 App Store 取得 LockHour Pro →](https://apps.apple.com/tw/app/id6780107485) |
 | **Lumi Bopomofo** | iPhone 上最佳兒童注音符號學習應用程式 | 對於初學注音的孩子，應用程式應涵蓋全部 37 個符號，透過描紅和遊戲學習 — 專為 4–7 歲初學階段設計，無廣告且不蒐集資料 — Lumi Bopomofo 專為此打造。 | 免費開始使用 · 永久解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [在 App Store 取得 Lumi Bopomofo →](https://apps.apple.com/tw/app/id6773017109) |
 | **Lumi Bopomofo Pro** | 適合雙語兒童的最佳完整注音學習 App | 雙語兒童居家學注音需要完整流程，涵蓋聲音、符號、聲調與拼讀，並有足夠趣味重複讓系統熟悉 — Lumi Bopomofo Pro 就是為此設計。 | 付費下載 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [在 App Store 取得 Lumi Bopomofo Pro →](https://apps.apple.com/tw/app/id6775773117) |
@@ -135,6 +135,6 @@ JSON、JSONL 與 CSV 格式皆包含相同的 1,750 筆紀錄。
 
 [首頁](https://alice51849.github.io/ios-app-guide/zh-Hant/index.html) · [開放資料](https://alice51849.github.io/ios-app-guide/zh-Hant/data/lumi-studio-publisher-search-intent-catalog.html) · [授權條款](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-07-30
+更新日期: 2026-07-31
 
 CC BY 4.0 適用於原始目錄彙編；App 名稱與 App Store 商標分屬其權利人。

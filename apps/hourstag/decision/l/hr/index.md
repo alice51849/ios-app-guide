@@ -1,5 +1,5 @@
 ---
-title: "najbolja aplikacija za svjesnu potrošnju za zaustavljanje impulzivne kupovine na iPhoneu"
+title: "HoursTag: Sati za kupnju — Budžet, troškovi i ušteda | iOS App"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/hr/index.html"
 modified: "2026-07-30"
@@ -9,9 +9,9 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# najbolja aplikacija za svjesnu potrošnju za zaustavljanje impulzivne kupovine na iPhoneu
+# HoursTag: Sati za kupnju — Budžet, troškovi i ušteda | iOS App
 
-Impulzivna kupovina slabi kad dodate malu pauzu: koliko sati vašeg života će ova kupovina zapravo koštati?
+Koliko to stvarno košta? Ne u eurima, nego u satima vašeg života.
 
 - Novac i putovanja
 - Plaćeno preuzimanje
@@ -19,8 +19,8 @@ Impulzivna kupovina slabi kad dodate malu pauzu: koliko sati vašeg života će 
 - Privatno / na uređaju
 - App Store · 5,99 €
 
-[Preuzmite HoursTag u App Storeu →](https://apps.apple.com/hr/app/id6754218117)
+[Preuzmite HoursTag: Sati za kupnju u App Storeu](https://apps.apple.com/hr/app/id6754218117)
 
-[Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html)
+[Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/hourstag.html)
 
-> Vodič koji je napisao izdavač Lumi Studio, programer aplikacije. Nazivi aplikacija su zaštićeni znakovi njihovih vlasnika i koriste se samo za identifikaciju. Za dokumente, zdravlje, školu i odluke o produktivnosti provjerite službene zahtjeve gdje je to relevantno.
+> Ovo je materijal iz prve ruke koji je objavio Lumi Studio, razvojni tim svake navedene aplikacije.

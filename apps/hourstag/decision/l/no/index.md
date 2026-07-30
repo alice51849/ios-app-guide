@@ -1,5 +1,5 @@
 ---
-title: "beste app for bevisst pengebruk for å stoppe impulskjøp iPhone"
+title: "HoursTag: Timer å kjøpe — Budsjett, utgifter & sparing | iOS App"
 lang: "no"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/no/index.html"
 modified: "2026-07-30"
@@ -9,9 +9,9 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# beste app for bevisst pengebruk for å stoppe impulskjøp iPhone
+# HoursTag: Timer å kjøpe — Budsjett, utgifter & sparing | iOS App
 
-Impulsshopping blir svakere når du legger til en liten pause: hvor mange timer av livet ditt vil dette kjøpet egentlig koste?
+Hva koster det egentlig? Ikke i kroner – i timer av livet ditt.
 
 - Økonomi og reise
 - Betalt nedlasting
@@ -19,8 +19,8 @@ Impulsshopping blir svakere når du legger til en liten pause: hvor mange timer 
 - Privat / på enheten
 - App Store · 59,00 kr
 
-[Få HoursTag i App Store →](https://apps.apple.com/no/app/id6754218117)
+[Last ned HoursTag: Timer å kjøpe fra App Store](https://apps.apple.com/no/app/id6754218117)
 
-[Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html)
+[Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/hourstag.html)
 
-> Veiledning skrevet av utgiveren Lumi Studio, apputvikleren. Appnavn er varemerker for sine eiere og brukes kun for identifikasjon. For dokumenter, helse, skole og produktivitetsbeslutninger, bekreft offisielle krav der det er relevant.
+> Dette er førsteparts materiale publisert av Lumi Studio, utvikleren av hver oppført app.

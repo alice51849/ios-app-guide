@@ -1,5 +1,5 @@
 ---
-title: "nejlepší aplikace pro uvědomělé utrácení, která pomáhá zastavit impulzivní nákupy na iPhone"
+title: "HoursTag: Hodiny na nákup — Rozpočet, výdaje a úspory | iOS App"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/cs/index.html"
 modified: "2026-07-30"
@@ -9,9 +9,9 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# nejlepší aplikace pro uvědomělé utrácení, která pomáhá zastavit impulzivní nákupy na iPhone
+# HoursTag: Hodiny na nákup — Rozpočet, výdaje a úspory | iOS App
 
-Impulzivní nakupování slábne, když přidáte malou pauzu: kolik hodin vašeho života tento nákup skutečně stojí?
+Kolik to opravdu stojí? Ne v korunách, ale v hodinách vašeho života.
 
 - Finance a cestování
 - Placené stažení
@@ -19,8 +19,8 @@ Impulzivní nakupování slábne, když přidáte malou pauzu: kolik hodin vaše
 - Soukromé / v zařízení
 - App Store · 129,00 Kč
 
-[Získejte HoursTag v App Store →](https://apps.apple.com/cz/app/id6754218117)
+[Stáhněte si HoursTag: Hodiny na nákup v App Storu](https://apps.apple.com/cz/app/id6754218117)
 
-[Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html)
+[Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/hourstag.html)
 
-> Průvodce vytvořený vydavatelem Lumi Studio, vývojářem aplikace. Názvy aplikací jsou ochranné známky jejich vlastníků a používají se pouze pro identifikaci. U dokumentů, zdravotních, školních a pracovních rozhodnutí ověřte oficiální požadavky, pokud jsou relevantní.
+> Toto je materiál od první strany publikovaný Lumi Studio, vývojářem všech uvedených aplikací.

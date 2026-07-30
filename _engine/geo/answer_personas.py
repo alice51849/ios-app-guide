@@ -574,36 +574,6 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
     ],
     "hourstag": [
         {
-            "query": "best mindful spending app to stop impulse buying iphone",
-            "triggers": ["impulse buying", "stop impulse", "mindful spending", "spend less money", "think before buying"],
-            "persona": "people curbing impulse spending",
-            "lead": "The most effective anti-impulse trick isn't a budget — it's reframing a price as hours of your life. A $70 dinner becomes '2.3 hours of work', which creates a real pause before you tap buy.",
-            "paras": [
-                "Set your hourly wage once, and every price converts into hours-of-work. Seeing the true cost in time, not dollars, is a visceral nudge that interrupts the impulse — more effective than a spreadsheet you never open.",
-                "It's a simple pay-once tool: no account, no subscription, just a mindset shift you carry into every purchase decision.",
-            ],
-            "look": [
-                "Converts any price into hours-of-work.",
-                "Set your hourly wage once.",
-                "Visceral pause before impulse buys.",
-                "Simple and fast to check in the moment.",
-                "Pay-once, no account.",
-            ],
-            "steps": [
-                "Enter your hourly wage once.",
-                "Before buying, type the price.",
-                "See it as hours of your life.",
-                "Decide if it's worth that many hours.",
-                "Walk away or buy — deliberately.",
-            ],
-            "fits": "fits anyone who wants a gut-level pause before impulse purchases by seeing price as time.",
-            "faq": [
-                {"q": "How does it stop impulse buying?", "a": "By reframing price as hours of your life, it makes the true cost feel real enough to pause the impulse."},
-                {"q": "Do I need to link a bank?", "a": "No — you just enter your wage; there's no account or bank link."},
-                {"q": "Subscription?", "a": "No — pay-once."},
-            ],
-        },
-        {
             "query": "best app to track where my money goes and save more",
             "triggers": ["save more", "building savings", "savings habit", "young professionals", "where my money goes"],
             "persona": "people building savings habits",

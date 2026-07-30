@@ -1,5 +1,5 @@
 ---
-title: "衝動買い防止のための最高のマインドフル支出アプリiPhone向け"
+title: "HoursTag: 価格を時間に — 節約・家計簿・予算・貯金 | iOS App"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/ja/index.html"
 modified: "2026-07-30"
@@ -9,9 +9,9 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# 衝動買い防止のための最高のマインドフル支出アプリiPhone向け
+# HoursTag: 価格を時間に — 節約・家計簿・予算・貯金 | iOS App
 
-衝動買いは一呼吸置くことで弱まります：この購入は実際にあなたの人生の何時間分の労働に相当するか？
+それ、本当はいくら？お金ではなく、あなたの人生の「時間」で。
 
 - お金・旅行
 - 有料ダウンロード
@@ -19,8 +19,8 @@ publisher: "Lumi Studio"
 - プライベート／端末内
 - App Store · ¥800
 
-[App StoreでHoursTagを入手 →](https://apps.apple.com/jp/app/id6754218117)
+[App Store で HoursTag: 価格を時間に を入手](https://apps.apple.com/jp/app/id6754218117)
 
-[完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html)
+[完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/hourstag.html)
 
-> アプリ開発者であるLumi Studioによる公式購入ガイドです。アプリ名は各所有者の商標であり、識別のためにのみ使用しています。書類、健康、学校、生産性に関する判断は、該当する公式要件を必ずご確認ください。
+> これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。

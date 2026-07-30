@@ -48,8 +48,8 @@ CURATED = {
         "easy expense tracker app for iphone",
     ],
     "hourstag": [
-        "best work hours tracker app for freelancers",
-        "simple timesheet app to log work hours",
+        "best app to track where my money goes and save more",
+        "how many hours a year do my subscriptions actually cost me",
     ],
     "lockhour": [
         "best app to limit screen time and stay focused",
@@ -227,8 +227,6 @@ _MORE = {
     "hourstag": [
         "app that shows purchases in hours of work",
         "how many hours of work does this cost app",
-        "spending tracker to curb impulse buying iphone",
-        "money mindset app to think before you spend",
         "simple private expense awareness app no subscription",
     ],
     "lockhour": [
@@ -926,8 +924,8 @@ for _k, _qs in _GEO_TAILORED13.items():
 
 # 2026-07-07 平行 worker 整合(app-scenarios):填補 hourstag/zafe/tripbee/lumimission 場景缺口。
 _GEO_TAILORED14 = {
-    "hourstag": ["app that converts a price to hours of work before buying",
-                 "app to see how many hours of work a purchase costs"],
+    "hourstag": ["app that shows purchases in hours of work",
+                 "simple private expense awareness app no subscription"],
     "zafe": ["app to move private photos out of the iphone camera roll",
              "app to move sensitive photos into a locked vault"],
     "tripbee": ["offline day by day trip itinerary planner for iphone",

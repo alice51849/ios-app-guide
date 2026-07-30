@@ -18,6 +18,6 @@ publisher: "Lumi Studio"
 
 [App StoreでHoursTagを入手 →](https://apps.apple.com/jp/app/id6754218117)
 
-[アプリガイドを開く](https://alice51849.github.io/ios-app-guide/ja/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html)
+[アプリガイドを開く](https://alice51849.github.io/ios-app-guide/ja/hourstag.html)
 
 > アプリ開発者であるLumi Studioによる公式購入ガイドです。アプリ名は各所有者の商標であり、識別のためにのみ使用しています。書類、健康、学校、生産性に関する判断は、該当する公式要件を必ずご確認ください。

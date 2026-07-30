@@ -18,6 +18,6 @@ publisher: "Lumi Studio"
 
 [在 App Store 取得 HoursTag →](https://apps.apple.com/tw/app/id6754218117)
 
-[開啟 App 指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html)
+[開啟 App 指南](https://alice51849.github.io/ios-app-guide/zh-Hant/hourstag.html)
 
 > 由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。

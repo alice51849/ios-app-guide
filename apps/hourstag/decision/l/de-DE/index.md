@@ -1,5 +1,5 @@
 ---
-title: "Beste App für bewusstes Ausgeben, um Impulskäufe zu stoppen, iPhone"
+title: "HoursTag: Stunden zum Kauf — Sparen, Budget & Ausgaben | iOS App"
 lang: "de-DE"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/de-DE/index.html"
 modified: "2026-07-30"
@@ -9,9 +9,9 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# Beste App für bewusstes Ausgeben, um Impulskäufe zu stoppen, iPhone
+# HoursTag: Stunden zum Kauf — Sparen, Budget & Ausgaben | iOS App
 
-Impulskäufe werden schwächer, wenn Sie eine kleine Pause einlegen: Wie viele Stunden Ihres Lebens kostet dieser Kauf wirklich?
+Was kostet es wirklich? Nicht in Euro – in Stunden deines Lebens.
 
 - Geld & Reisen
 - Kostenpflichtiger Download
@@ -19,8 +19,8 @@ Impulskäufe werden schwächer, wenn Sie eine kleine Pause einlegen: Wie viele S
 - Privat / auf dem Gerät
 - App Store · 5,99 €
 
-[Holen Sie sich HoursTag im App Store →](https://apps.apple.com/de/app/id6754218117)
+[HoursTag: Stunden zum Kauf im App Store laden](https://apps.apple.com/de/app/id6754218117)
 
-[Lesen Sie den vollständigen Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html)
+[Lesen Sie den vollständigen Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/hourstag.html)
 
-> Vom Herausgeber verfasster Leitfaden von Lumi Studio, dem Entwickler der App. App-Namen sind Marken ihrer Eigentümer und werden nur zur Identifikation verwendet. Für Dokumente, Gesundheit, Schule und Produktivitätsentscheidungen prüfen Sie gegebenenfalls offizielle Anforderungen.
+> Dieses Material wird direkt von Lumi Studio veröffentlicht, dem Entwickler aller aufgeführten Apps.

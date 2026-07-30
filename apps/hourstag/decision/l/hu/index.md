@@ -1,5 +1,5 @@
 ---
-title: "legjobb tudatos költés alkalmazás az impulzusvásárlás megállítására iPhone-on"
+title: "HoursTag: Órák a vásárláshoz — Költségvetés & spórolás | iOS App"
 lang: "hu"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/hu/index.html"
 modified: "2026-07-30"
@@ -9,9 +9,9 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# legjobb tudatos költés alkalmazás az impulzusvásárlás megállítására iPhone-on
+# HoursTag: Órák a vásárláshoz — Költségvetés & spórolás | iOS App
 
-Az impulzusvásárlás gyengül, ha egy kis szünetet iktatsz be: hány órát kell dolgoznod ezért a vásárlásért valójában?
+Mennyibe kerül valójában? Nem forintban, hanem az életed óráiban.
 
 - Pénzügy & utazás
 - Fizetős letöltés
@@ -19,8 +19,8 @@ Az impulzusvásárlás gyengül, ha egy kis szünetet iktatsz be: hány órát k
 - Privát / eszközön tárolt
 - App Store · HUF1,990.00
 
-[Szerezd be az HoursTag-et az App Store-ból →](https://apps.apple.com/hu/app/id6754218117)
+[Töltse le a(z) HoursTag: Órák a vásárláshoz appot az App Store-ból](https://apps.apple.com/hu/app/id6754218117)
 
-[Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html)
+[Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/hourstag.html)
 
-> Kiadó által készített útmutató a Lumi Studio-tól, az alkalmazás fejlesztőjétől. Az alkalmazásnevek a tulajdonosaik védjegyei, és csak azonosítás céljából használjuk őket. Dokumentumok, egészségügy, iskola és hatékonyság terén hozott döntések esetén ellenőrizze a hivatalos követelményeket, ahol releváns.
+> Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.

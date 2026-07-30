@@ -78,6 +78,17 @@ RESERVED_TOP_LEVEL_DIRS = {"api"}
 BUYER_INTENT_SECTIONS = ("answers", "alternatives", "hubs")
 
 
+def _is_noindex_redirect(path: Path) -> bool:
+    head = path.read_text(encoding="utf-8", errors="replace")[:4096].lower()
+    return 'http-equiv="refresh"' in head and bool(
+        re.search(
+            r'<meta\b[^>]*\bname=["\']robots["\'][^>]*'
+            r'\bcontent=["\'][^"\']*\bnoindex\b',
+            head,
+        )
+    )
+
+
 def _app_id(store_url: str) -> str:
     parsed = urllib.parse.urlsplit(store_url)
     match = re.fullmatch(r"/app/id(\d+)", parsed.path)
@@ -185,6 +196,11 @@ def build_targets(
         _answer_pages(pages),
         {APPSTORE[key] for key in live_keys},
     )
+    targets = {
+        path: app_id
+        for path, app_id in targets.items()
+        if not _is_noindex_redirect(path)
+    }
     return targets, len(records)
 
 
@@ -197,7 +213,11 @@ def build_install_targets(
         _alternative_pages(pages) | _hub_pages(pages),
         {APPSTORE[key] for key in live_keys},
     )
-    return targets, app_count
+    return {
+        path: app_id
+        for path, app_id in targets.items()
+        if not _is_noindex_redirect(path)
+    }, app_count
 
 
 def ensure_banner(path: Path, app_id: str) -> bool:

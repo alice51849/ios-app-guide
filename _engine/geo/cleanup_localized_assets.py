@@ -22,7 +22,7 @@ from videogen.registry import APPS, APPSTORE  # noqa: E402
 from aeo_pages import pricing_profile  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
 from build_pages_i18n import pricing_text_for  # noqa: E402
-from gen_roundups import TOPICS, legacy_slug  # noqa: E402
+from gen_roundups import TOPICS, legacy_slug, redirect_page  # noqa: E402
 
 PAGES = HERE / "pages"
 SITE = os.environ.get(
@@ -91,6 +91,46 @@ for _key in APPS:
         _legacy = f"{_key}-{_suffix}"
         if _legacy != _current:
             LEGACY_ALT_SLUGS[_legacy] = _current
+RETIRED_ANSWER_REDIRECTS = {
+    "app-to-convert-a-shopping-price-into-hours-of-work-before-buying-pay-once-no-subscription":
+        "best-app-to-track-where-my-money-goes-and-save-more",
+    "app-that-converts-a-price-to-hours-of-work-before-buying":
+        "best-app-to-track-where-my-money-goes-and-save-more",
+    "app-to-see-how-many-hours-of-work-a-purchase-costs-before-buying-in-taiwan-or-korea":
+        "best-app-to-track-where-my-money-goes-and-save-more",
+    "best-mindful-spending-app-to-stop-impulse-buying-iphone":
+        "best-app-to-track-where-my-money-goes-and-save-more",
+    "best-work-hours-tracker-app-for-freelancers":
+        "best-app-to-track-where-my-money-goes-and-save-more",
+    "how-do-i-calculate-my-real-hourly-wage-to-judge-whether-something-is-worth-buying":
+        "best-app-to-track-where-my-money-goes-and-save-more",
+    "how-to-decide-if-a-big-purchase-like-a-new-phone-or-a-vacation-is-worth-the-work-hours":
+        "best-app-to-track-where-my-money-goes-and-save-more",
+    "how-to-do-a-no-spend-challenge-and-actually-stick-to-it":
+        "best-app-to-track-where-my-money-goes-and-save-more",
+    "impulse-shopping-blocker-that-shows-the-time-cost-of-a-purchase-pay-once-private":
+        "best-app-to-track-where-my-money-goes-and-save-more",
+    "simple-timesheet-app-to-log-work-hours":
+        "best-app-to-track-where-my-money-goes-and-save-more",
+    "what-is-the-true-cost-of-a-purchase-in-hours-of-work":
+        "best-app-to-track-where-my-money-goes-and-save-more",
+}
+HOURSTAG_GUIDE_PATH = Path("guides") / "hourstag.html"
+RETIRED_ANSWER_PATH_RE = re.compile(
+    r"/(?:(?P<locale>[a-z]{2,3}(?:-[A-Za-z]{2,4})?)/)?answers/"
+    r"(?P<slug>"
+    + "|".join(re.escape(slug) for slug in RETIRED_ANSWER_REDIRECTS)
+    + r")\.html"
+)
+PUBLIC_TEXT_SUFFIXES = {
+    ".csv",
+    ".html",
+    ".json",
+    ".jsonl",
+    ".jsonld",
+    ".md",
+    ".xml",
+}
 ACCURATE_LEGACY_PROFILES = {"pay_once"}
 PAID_UPFRONT_KEYS = {
     key
@@ -209,10 +249,165 @@ def app_key_for_alternative(filename: str) -> str | None:
     )
 
 
-def replace_legacy_slugs(text: str) -> str:
+def replace_retired_answer_slugs(text: str, pages: Path = PAGES) -> str:
+    def repl(match: re.Match[str]) -> str:
+        locale = match.group("locale")
+        replacement = RETIRED_ANSWER_REDIRECTS[match.group("slug")]
+        if locale:
+            locale_dir = pages / locale
+            localized_answer = (
+                locale_dir / "answers" / f"{replacement}.html"
+            )
+            if localized_answer.exists():
+                return f"/{locale}/answers/{replacement}.html"
+            if (locale_dir / "hourstag.html").exists():
+                return f"/{locale}/hourstag.html"
+        return f"/answers/{replacement}.html"
+
+    return RETIRED_ANSWER_PATH_RE.sub(repl, text)
+
+
+def dedupe_json_ld_item_lists(text: str) -> str:
+    def sanitize_script(match: re.Match[str]) -> str:
+        block = match.group(0)
+        start = block.find(">") + 1
+        end = block.rfind("</script>")
+        try:
+            payload = json.loads(block[start:end])
+        except (TypeError, ValueError, json.JSONDecodeError):
+            return block
+        changed = False
+
+        def identity(item: object) -> str | None:
+            if not isinstance(item, dict):
+                return None
+            target = item.get("url")
+            nested = item.get("item")
+            if not target and isinstance(nested, str):
+                target = nested
+            elif not target and isinstance(nested, dict):
+                target = nested.get("@id") or nested.get("url")
+            return str(target) if target else None
+
+        def visit(value: object) -> None:
+            nonlocal changed
+            if isinstance(value, dict):
+                elements = value.get("itemListElement")
+                if isinstance(elements, list):
+                    seen: set[str] = set()
+                    kept = []
+                    for item in elements:
+                        key = identity(item)
+                        if key and key in seen:
+                            changed = True
+                            continue
+                        if key:
+                            seen.add(key)
+                        kept.append(item)
+                    if len(kept) != len(elements):
+                        value["itemListElement"] = kept
+                        if "numberOfItems" in value:
+                            value["numberOfItems"] = len(kept)
+                        for position, item in enumerate(kept, 1):
+                            if isinstance(item, dict) and "position" in item:
+                                item["position"] = position
+                for item in value.values():
+                    visit(item)
+            elif isinstance(value, list):
+                for item in value:
+                    visit(item)
+
+        visit(payload)
+        if not changed:
+            return block
+        return (
+            block[:start]
+            + json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
+            + block[end:]
+        )
+
+    return JSON_LD_SCRIPT_RE.sub(sanitize_script, text)
+
+
+def replace_legacy_slugs(text: str, pages: Path = PAGES) -> str:
     for old, new in LEGACY_ALT_SLUGS.items():
         text = text.replace(f"/alternatives/{old}.html", f"/alternatives/{new}.html")
-    return text
+    return replace_retired_answer_slugs(text, pages)
+
+
+def reconcile_retired_answer_references(pages: Path) -> int:
+    changed = 0
+    for path in pages.rglob("*"):
+        if not path.is_file() or path.suffix not in PUBLIC_TEXT_SUFFIXES:
+            continue
+        relative = path.relative_to(pages)
+        if relative.parts[0] in {".git", "_engine"}:
+            continue
+        try:
+            original = path.read_text(encoding="utf-8")
+        except (OSError, UnicodeDecodeError):
+            continue
+        updated = replace_retired_answer_slugs(original, pages)
+        if updated != original and path.suffix == ".html":
+            updated = dedupe_json_ld_item_lists(updated)
+        if updated == original:
+            continue
+        path.write_text(updated, encoding="utf-8")
+        changed += 1
+    return changed
+
+
+def reconcile_retired_answer_redirects(
+    pages: Path,
+    locales: list[Path],
+) -> int:
+    root_answers = pages / "answers"
+    changed = 0
+    for old, new in RETIRED_ANSWER_REDIRECTS.items():
+        root_target = root_answers / f"{new}.html"
+        if not root_target.exists():
+            continue
+        roots = [(root_answers, f"{SITE}/answers/{new}.html")]
+        for locale_dir in locales:
+            localized_target = locale_dir / "answers" / f"{new}.html"
+            localized_app = locale_dir / "hourstag.html"
+            if localized_target.exists():
+                destination = (
+                    f"{SITE}/{locale_dir.name}/answers/{new}.html"
+                )
+            elif localized_app.exists():
+                destination = f"{SITE}/{locale_dir.name}/hourstag.html"
+            else:
+                destination = f"{SITE}/answers/{new}.html"
+            roots.append((locale_dir / "answers", destination))
+        for answers, destination in roots:
+            old_page = answers / f"{old}.html"
+            if not old_page.exists():
+                continue
+            rendered = redirect_page(destination)
+            if old_page.read_text(encoding="utf-8") == rendered:
+                continue
+            old_page.write_text(rendered, encoding="utf-8")
+            changed += 1
+    return changed
+
+
+def reconcile_hourstag_guide_redirects(
+    pages: Path,
+    locales: list[Path],
+) -> int:
+    destination = f"{SITE}/{HOURSTAG_GUIDE_PATH.as_posix()}"
+    changed = 0
+    for locale_dir in locales:
+        guide = locale_dir / HOURSTAG_GUIDE_PATH
+        if not guide.exists():
+            continue
+        rendered = redirect_page(destination)
+        if guide.read_text(encoding="utf-8") == rendered:
+            continue
+        guide.write_text(rendered, encoding="utf-8")
+        changed += 1
+    return changed
 
 
 def sanitize_known_aim990_claims(text: str, locale: str) -> tuple[str, int]:
@@ -305,7 +500,10 @@ def repair_root_alternative_urls(text: str, root_alternatives: Path) -> str:
         target = root_alternatives / match.group(1)
         return match.group(0) if target.exists() else f"{SITE}/alternatives/index.html"
 
-    return root_pattern.sub(repl, replace_legacy_slugs(text))
+    return root_pattern.sub(
+        repl,
+        replace_legacy_slugs(text, root_alternatives.parent),
+    )
 
 
 def repair_localized_internal_urls(text: str, locale_dir: Path) -> str:
@@ -563,7 +761,7 @@ def rewrite_html_links(
     locale_names: set[str],
 ) -> bool:
     original = path.read_text(encoding="utf-8")
-    updated = replace_legacy_slugs(original)
+    updated = replace_legacy_slugs(original, pages)
     updated, _ = sanitize_known_aim990_claims(updated, locale)
     updated, _ = sanitize_aim990_optional_claims(updated, locale)
     updated = scrub_inaccurate_paid_app_offers(updated)
@@ -603,7 +801,7 @@ def rewrite_root_html_links(
     path: Path, pages: Path, locale_names: set[str]
 ) -> bool:
     original = path.read_text(encoding="utf-8")
-    updated = replace_legacy_slugs(original)
+    updated = replace_legacy_slugs(original, pages)
     updated = repair_root_alternative_urls(updated, pages / "alternatives")
     updated, _ = sanitize_known_aim990_claims(updated, "en-US")
     updated, _ = sanitize_aim990_optional_claims(updated, "en-US")
@@ -766,7 +964,7 @@ def prune_apps_json(path: Path, inactive_ids: set[str]) -> bool:
     markers = {f"/id{app_id}" for app_id in inactive_ids}
     def rewrite(value: object) -> object:
         if isinstance(value, str):
-            return replace_legacy_slugs(value)
+            return replace_legacy_slugs(value, path.parent)
         if isinstance(value, list):
             return [rewrite(item) for item in value]
         if isinstance(value, dict):
@@ -868,6 +1066,9 @@ def cleanup(pages: Path, live_keys: set[str]) -> dict[str, int]:
         "removed_unlisted_answers": 0,
         "removed_orphan_answers": 0,
         "removed_stale_roundups": 0,
+        "redirected_retired_answers": 0,
+        "redirected_hourstag_guides": 0,
+        "rewritten_retired_references": 0,
         "rewritten_html": 0,
         "updated_indexes": 0,
         "removed_sitemap_urls": 0,
@@ -912,6 +1113,12 @@ def cleanup(pages: Path, live_keys: set[str]) -> dict[str, int]:
             ):
                 page.unlink()
                 stats["removed_unlisted_answers"] += 1
+    stats["redirected_retired_answers"] = (
+        reconcile_retired_answer_redirects(pages, locales)
+    )
+    stats["redirected_hourstag_guides"] = (
+        reconcile_hourstag_guide_redirects(pages, locales)
+    )
 
     for locale_dir in locales:
         alt_dir = locale_dir / "alternatives"
@@ -992,6 +1199,9 @@ def cleanup(pages: Path, live_keys: set[str]) -> dict[str, int]:
             stats["removed_sitemap_urls"] += remove_missing_sitemap_urls(
                 sitemap, pages, locale_names
             )
+    stats["rewritten_retired_references"] = (
+        reconcile_retired_answer_references(pages)
+    )
     return stats
 
 

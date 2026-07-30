@@ -1,5 +1,5 @@
 ---
-title: "cea mai bună aplicație pentru cheltuieli conștiente ca să oprești cumpărăturile impulsive pentru iPhone"
+title: "HoursTag: Ore pentru cumpărat — Buget, cheltuieli & economii | iOS App"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/ro/index.html"
 modified: "2026-07-30"
@@ -9,9 +9,9 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# cea mai bună aplicație pentru cheltuieli conștiente ca să oprești cumpărăturile impulsive pentru iPhone
+# HoursTag: Ore pentru cumpărat — Buget, cheltuieli & economii | iOS App
 
-Cumpărăturile impulsive devin mai slabe când adaugi o mică pauză: câte ore din viața ta va costa de fapt această achiziție?
+Cât costă cu adevărat? Nu în lei, ci în ore din viața ta.
 
 - Bani & călătorii
 - Descărcare plătită
@@ -19,8 +19,8 @@ Cumpărăturile impulsive devin mai slabe când adaugi o mică pauză: câte ore
 - Privat / pe dispozitiv
 - App Store · 29,99 lei
 
-[Obține HoursTag din App Store →](https://apps.apple.com/ro/app/id6754218117)
+[Descarcă HoursTag: Ore pentru cumpărat din App Store](https://apps.apple.com/ro/app/id6754218117)
 
-[Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html)
+[Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/hourstag.html)
 
-> Ghid realizat de editor de către Lumi Studio, dezvoltatorul aplicației. Numele aplicațiilor sunt mărci comerciale ale proprietarilor lor și sunt folosite doar pentru identificare. Pentru documente, sănătate, școală și decizii legate de productivitate, verificați cerințele oficiale acolo unde este cazul.
+> Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.

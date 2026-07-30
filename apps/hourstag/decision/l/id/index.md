@@ -1,5 +1,5 @@
 ---
-title: "aplikasi pengelola pengeluaran sadar terbaik untuk menghentikan pembelian impulsif di iPhone"
+title: "HoursTag: Jam untuk Membeli — Anggaran, belanja & tabungan | iOS App"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/id/index.html"
 modified: "2026-07-30"
@@ -9,9 +9,9 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# aplikasi pengelola pengeluaran sadar terbaik untuk menghentikan pembelian impulsif di iPhone
+# HoursTag: Jam untuk Membeli — Anggaran, belanja & tabungan | iOS App
 
-Belanja impulsif menjadi lebih lemah saat Anda menambahkan satu jeda kecil: berapa jam hidup Anda yang sebenarnya akan dihabiskan untuk pembelian ini?
+Berapa biaya sebenarnya? Bukan hanya rupiah, tapi jam hidup yang kamu tukarkan.
 
 - Uang & perjalanan
 - Unduhan berbayar
@@ -19,8 +19,8 @@ Belanja impulsif menjadi lebih lemah saat Anda menambahkan satu jeda kecil: bera
 - Privat / di perangkat
 - App Store · Rp 89ribu
 
-[Dapatkan HoursTag di App Store →](https://apps.apple.com/id/app/id6754218117)
+[Dapatkan HoursTag: Jam untuk Membeli di App Store](https://apps.apple.com/id/app/id6754218117)
 
-[Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-mindful-spending-app-to-stop-impulse-buying-iphone.html)
+[Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/hourstag.html)
 
-> Panduan yang dibuat oleh penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan hanya digunakan untuk identifikasi. Untuk dokumen, kesehatan, sekolah, dan keputusan produktivitas, verifikasi persyaratan resmi jika relevan.
+> Materi ini diterbitkan langsung oleh Lumi Studio, pengembang semua aplikasi yang tercantum.

@@ -65,6 +65,7 @@ jobs:
         run: |
           cd _engine/geo
           python3 build_pages_i18n.py --cached-live
+          python3 cleanup_localized_assets.py --cached-live
           python3 aeo_guide.py --missing
           python3 ensure_live_guides.py
           python3 gen_webstories.py

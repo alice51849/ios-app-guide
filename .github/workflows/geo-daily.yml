@@ -65,7 +65,6 @@ jobs:
         run: |
           cd _engine/geo
           python3 build_pages_i18n.py --cached-live
-          python3 cleanup_localized_assets.py --cached-live
           python3 aeo_guide.py --missing
           python3 ensure_live_guides.py
           python3 gen_webstories.py
@@ -88,6 +87,7 @@ jobs:
           python3 app_install_decision_routes.py
           python3 normalize_app_store_links.py
           python3 gen_app_decision_cards.py
+          python3 cleanup_localized_assets.py --cached-live
           python3 gen_smart_app_banners.py
           python3 gen_mobile_store_ctas.py
           python3 gen_app_store_qr_ctas.py

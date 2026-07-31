@@ -181,9 +181,19 @@ class HoursTagOutreachIntentTests(unittest.TestCase):
             ),
         )
         self.assertLess(
+            materialization.index("python3 gen_app_decision_cards.py"),
             materialization.index(
                 "python3 cleanup_localized_assets.py --cached-live"
             ),
+        )
+        self.assertLess(
+            materialization.index(
+                "python3 cleanup_localized_assets.py --cached-live"
+            ),
+            materialization.index("python3 gen_smart_app_banners.py"),
+        )
+        self.assertLess(
+            materialization.index("python3 gen_smart_app_banners.py"),
             materialization.index("python3 gen_mobile_store_ctas.py"),
         )
 

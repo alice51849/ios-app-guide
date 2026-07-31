@@ -2,7 +2,7 @@
 title: "HoursTag: Jam untuk Membeli — Anggaran, belanja & tabungan | iOS App"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/id/index.html"
-modified: "2026-07-30"
+modified: "2026-07-31"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

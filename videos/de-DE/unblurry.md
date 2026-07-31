@@ -2,7 +2,7 @@
 title: "Beste App zur Verbesserung unscharfer Kinderfotos auf dem iPhone"
 lang: "de-DE"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/de-DE/unblurry.html"
-modified: "2026-07-24"
+modified: "2026-07-31"
 video_url: "https://files.catbox.moe/m4nly0.mp4"
 duration: "PT16S"
 app_store_id: "6782275018"

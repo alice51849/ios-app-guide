@@ -6,7 +6,7 @@
   "name": "Lumi Studio प्रकाशक शोध हेतू निर्देशिका",
   "description": "प्रत्येक अॅप कोणासाठी डिझाइन केले आहे, ते कोणते कार्य पूर्ण करण्याचा प्रयत्न करत आहेत, आणि थेट App Store मार्ग यांचा प्रथम पक्ष निर्देशिका.",
   "inLanguage": "mr-IN",
-  "dateModified": "2026-07-30",
+  "dateModified": "2026-07-31",
   "numberOfItems": 35,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -541,72 +541,6 @@
     {
       "@type": "ListItem",
       "position": 9,
-      "url": "https://apps.apple.com/in/app/id6754218117",
-      "item": {
-        "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/mr-IN.jsonld#offer-hourstag",
-        "url": "https://apps.apple.com/in/app/id6754218117",
-        "name": "HoursTag",
-        "description": "आवेग खरेदी कमी होते जेव्हा तुम्ही एक छोटा विराम देता: हा खरेदी किती तास तुमच्या आयुष्यात खर्च करेल?",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
-        },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6754218117",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6754218117"
-          },
-          "name": "HoursTag",
-          "operatingSystem": "iOS",
-          "applicationCategory": "FinanceApplication",
-          "url": "https://apps.apple.com/in/app/id6754218117",
-          "installUrl": "https://apps.apple.com/in/app/id6754218117",
-          "downloadUrl": "https://apps.apple.com/in/app/id6754218117",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/in/app/id6754218117"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/mr-IN/hourstag.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6754218117",
-          "inLanguage": "mr-IN",
-          "description": "आवेग खरेदी कमी होते जेव्हा तुम्ही एक छोटा विराम देता: हा खरेदी किती तास तुमच्या आयुष्यात खर्च करेल?",
-          "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/mr-IN.jsonld#offer-hourstag"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "paid_upfront"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ],
-          "isAccessibleForFree": false
-        },
-        "price": "499",
-        "priceCurrency": "INR",
-        "availability": "https://schema.org/InStock",
-        "eligibleRegion": {
-          "@type": "Country",
-          "identifier": "IN"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 10,
       "url": "https://apps.apple.com/in/app/id6794039979",
       "item": {
         "@type": "Offer",
@@ -662,6 +596,72 @@
           "isAccessibleForFree": true
         },
         "price": "0",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "IN"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "url": "https://apps.apple.com/in/app/id6754218117",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/mr-IN.jsonld#offer-hourstag",
+        "url": "https://apps.apple.com/in/app/id6754218117",
+        "name": "HoursTag: खरेदी वेळेची किंमत",
+        "description": "तुमच्या आयुष्याची खरी किंमत काय आहे?",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6754218117",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6754218117"
+          },
+          "name": "HoursTag: खरेदी वेळेची किंमत",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/in/app/id6754218117",
+          "installUrl": "https://apps.apple.com/in/app/id6754218117",
+          "downloadUrl": "https://apps.apple.com/in/app/id6754218117",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/in/app/id6754218117"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/mr-IN/hourstag.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6754218117",
+          "inLanguage": "mr-IN",
+          "description": "तुमच्या आयुष्याची खरी किंमत काय आहे?",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/mr-IN.jsonld#offer-hourstag"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "499",
         "priceCurrency": "INR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

@@ -2,7 +2,7 @@
 title: "پری اسکول اور ابتدائی جماعتوں کے لیے بہترین مکمل میتھ لرننگ ایپ"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/ur-PK/index.html"
-modified: "2026-07-30"
+modified: "2026-07-31"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

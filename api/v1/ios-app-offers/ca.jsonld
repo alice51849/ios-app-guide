@@ -6,7 +6,7 @@
   "name": "Catàleg d'intencions de cerca de Lumi Studio Editor",
   "description": "Catàleg de primera mà que mostra per a qui està dissenyada cada app, la tasca que volen completar i el camí directe a l'App Store.",
   "inLanguage": "ca",
-  "dateModified": "2026-07-30",
+  "dateModified": "2026-07-31",
   "numberOfItems": 35,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -541,72 +541,6 @@
     {
       "@type": "ListItem",
       "position": 9,
-      "url": "https://apps.apple.com/es/app/id6754218117",
-      "item": {
-        "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-hourstag",
-        "url": "https://apps.apple.com/es/app/id6754218117",
-        "name": "HoursTag",
-        "description": "Les compres impulsives es debiliten quan afegeixes una petita pausa: quantes hores de la teva vida costarà realment aquesta compra?",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
-        },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6754218117",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6754218117"
-          },
-          "name": "HoursTag",
-          "operatingSystem": "iOS",
-          "applicationCategory": "FinanceApplication",
-          "url": "https://apps.apple.com/es/app/id6754218117",
-          "installUrl": "https://apps.apple.com/es/app/id6754218117",
-          "downloadUrl": "https://apps.apple.com/es/app/id6754218117",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/es/app/id6754218117"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ca/hourstag.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6754218117",
-          "inLanguage": "ca",
-          "description": "Les compres impulsives es debiliten quan afegeixes una petita pausa: quantes hores de la teva vida costarà realment aquesta compra?",
-          "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-hourstag"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "paid_upfront"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ],
-          "isAccessibleForFree": false
-        },
-        "price": "5.99",
-        "priceCurrency": "EUR",
-        "availability": "https://schema.org/InStock",
-        "eligibleRegion": {
-          "@type": "Country",
-          "identifier": "ES"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 10,
       "url": "https://apps.apple.com/es/app/id6794039979",
       "item": {
         "@type": "Offer",
@@ -662,6 +596,72 @@
           "isAccessibleForFree": true
         },
         "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "ES"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "url": "https://apps.apple.com/es/app/id6754218117",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-hourstag",
+        "url": "https://apps.apple.com/es/app/id6754218117",
+        "name": "HoursTag: Hores per comprar",
+        "description": "Quant costa de debò? No en euros, sinó en hores de la teva vida.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6754218117",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6754218117"
+          },
+          "name": "HoursTag: Hores per comprar",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/es/app/id6754218117",
+          "installUrl": "https://apps.apple.com/es/app/id6754218117",
+          "downloadUrl": "https://apps.apple.com/es/app/id6754218117",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/es/app/id6754218117"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/ca/hourstag.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6754218117",
+          "inLanguage": "ca",
+          "description": "Quant costa de debò? No en euros, sinó en hores de la teva vida.",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-hourstag"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "5.99",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

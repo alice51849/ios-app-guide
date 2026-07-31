@@ -6,7 +6,7 @@
   "name": "Lumi Studio প্রকাশক অনুসন্ধান উদ্দেশ্য ক্যাটালগ",
   "description": "প্রতিটি অ্যাপ কার জন্য তৈরি, তারা কোন কাজ সম্পন্ন করতে চায়, এবং সরাসরি App Store পথের প্রথম পক্ষের ক্যাটালগ।",
   "inLanguage": "bn-BD",
-  "dateModified": "2026-07-30",
+  "dateModified": "2026-07-31",
   "numberOfItems": 35,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -477,64 +477,6 @@
     {
       "@type": "ListItem",
       "position": 9,
-      "url": "https://apps.apple.com/app/id6754218117",
-      "item": {
-        "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/bn-BD.jsonld#offer-hourstag",
-        "url": "https://apps.apple.com/app/id6754218117",
-        "name": "HoursTag",
-        "description": "একটি ছোট বিরতি যোগ করলে আবেগপ্রবণ কেনাকাটা দুর্বল হয়: এই চেকআউট আপনার জীবনের কত ঘণ্টা নেবে?",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
-        },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6754218117",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6754218117"
-          },
-          "name": "HoursTag",
-          "operatingSystem": "iOS",
-          "applicationCategory": "FinanceApplication",
-          "url": "https://apps.apple.com/app/id6754218117",
-          "installUrl": "https://apps.apple.com/app/id6754218117",
-          "downloadUrl": "https://apps.apple.com/app/id6754218117",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/app/id6754218117"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/bn-BD/hourstag.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6754218117",
-          "inLanguage": "bn-BD",
-          "description": "একটি ছোট বিরতি যোগ করলে আবেগপ্রবণ কেনাকাটা দুর্বল হয়: এই চেকআউট আপনার জীবনের কত ঘণ্টা নেবে?",
-          "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/bn-BD.jsonld#offer-hourstag"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "paid_upfront"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ]
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 10,
       "url": "https://apps.apple.com/app/id6794039979",
       "item": {
         "@type": "Offer",
@@ -580,6 +522,64 @@
               "@type": "PropertyValue",
               "name": "purchase_model",
               "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "url": "https://apps.apple.com/app/id6754218117",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/bn-BD.jsonld#offer-hourstag",
+        "url": "https://apps.apple.com/app/id6754218117",
+        "name": "HoursTag: সময়ে কেনাকাটা",
+        "description": "আসল খরচ কত? ডলারে নয় — আপনার জীবনের ঘন্টায়।",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6754218117",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6754218117"
+          },
+          "name": "HoursTag: সময়ে কেনাকাটা",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/app/id6754218117",
+          "installUrl": "https://apps.apple.com/app/id6754218117",
+          "downloadUrl": "https://apps.apple.com/app/id6754218117",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/app/id6754218117"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/bn-BD/hourstag.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6754218117",
+          "inLanguage": "bn-BD",
+          "description": "আসল খরচ কত? ডলারে নয় — আপনার জীবনের ঘন্টায়।",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/bn-BD.jsonld#offer-hourstag"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
             },
             {
               "@type": "PropertyValue",

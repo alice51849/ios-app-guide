@@ -1,4 +1,4 @@
-# Zero-cost outreach coverage — 2026-07-30
+# Zero-cost outreach coverage — 2026-07-31
 
 > Factual owned-asset coverage only. This does not pretend to measure live AI recommendations.
 
@@ -29,7 +29,7 @@ Public apps: **35** · Average coverage: **93.1%**
 | CV Desk | 100.0% | 92/92 | 5 | 5 | hub / guide / story |
 | Cyca | 100.0% | 50/50 | 6 | 5 | hub / guide / story |
 | G+Money | 100.0% | 51/51 | 4 | 5 | hub / guide / story |
-| HoursTag | 100.0% | 48/48 | 3 | 5 | hub / guide / story |
+| HoursTag | 100.0% | 34/34 | 3 | 5 | hub / guide / story |
 | LockHour Pro | 100.0% | 48/48 | 6 | 5 | hub / guide / story |
 | Lumi Letters Pro | 100.0% | 52/52 | 3 | 5 | hub / guide / story |
 | Lumi Math Pro | 100.0% | 49/49 | 3 | 5 | hub / guide / story |

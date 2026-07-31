@@ -2,7 +2,7 @@
 title: "ഉറങ്ങാൻ സഹായിക്കുന്ന മികച്ച വൈറ്റ് നോയിസ് ആപ്പ്, സബ്സ്ക്രിപ്ഷൻ ഇല്ലാതെ"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/ml-IN/index.html"
-modified: "2026-07-30"
+modified: "2026-07-31"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

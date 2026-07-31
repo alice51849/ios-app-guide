@@ -2,7 +2,7 @@
 title: "アカウント不要の最高の生理周期トラッカーアプリiPhone向け"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ja/cyca.html"
-modified: "2026-07-24"
+modified: "2026-07-31"
 video_url: "https://files.catbox.moe/vew5n7.mp4"
 duration: "PT16S"
 app_store_id: "6782251621"

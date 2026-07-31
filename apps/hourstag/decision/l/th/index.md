@@ -2,7 +2,7 @@
 title: "HoursTag: ชั่วโมงเพื่อซื้อ — งบ ประหยัด ออมเงิน | iOS App"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/th/index.html"
-modified: "2026-07-30"
+modified: "2026-07-31"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

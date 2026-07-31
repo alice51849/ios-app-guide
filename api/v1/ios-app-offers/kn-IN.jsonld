@@ -6,7 +6,7 @@
   "name": "Lumi Studio ಪ್ರಕಾಶಕರ ಹುಡುಕಾಟ ಉದ್ದೇಶ ಕ್ಯಾಟಲಾಗ್",
   "description": "ಪ್ರತಿ ಆ್ಯಪ್ ಯಾರಿಗಾಗಿ ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ, ಅವರು ಪೂರ್ಣಗೊಳಿಸಲು ಯತ್ನಿಸುತ್ತಿರುವ ಕಾರ್ಯ ಮತ್ತು ನೇರ App Store ಮಾರ್ಗದ ಮೊದಲ-ಪಕ್ಷ ಕ್ಯಾಟಲಾಗ್.",
   "inLanguage": "kn-IN",
-  "dateModified": "2026-07-30",
+  "dateModified": "2026-07-31",
   "numberOfItems": 35,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -541,72 +541,6 @@
     {
       "@type": "ListItem",
       "position": 9,
-      "url": "https://apps.apple.com/in/app/id6754218117",
-      "item": {
-        "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/kn-IN.jsonld#offer-hourstag",
-        "url": "https://apps.apple.com/in/app/id6754218117",
-        "name": "HoursTag",
-        "description": "ಒಂದು ಸಣ್ಣ ವಿರಾಮವನ್ನು ಸೇರಿಸಿದಾಗ ತಕ್ಷಣದ ಖರೀದಿ ದುರ್ಬಲವಾಗುತ್ತದೆ: ಈ ಖರೀದಿ ನಿಮ್ಮ ಜೀವನದ ಎಷ್ಟು ಗಂಟೆಗಳ ವೆಚ್ಚ?",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
-        },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6754218117",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6754218117"
-          },
-          "name": "HoursTag",
-          "operatingSystem": "iOS",
-          "applicationCategory": "FinanceApplication",
-          "url": "https://apps.apple.com/in/app/id6754218117",
-          "installUrl": "https://apps.apple.com/in/app/id6754218117",
-          "downloadUrl": "https://apps.apple.com/in/app/id6754218117",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/in/app/id6754218117"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/kn-IN/hourstag.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6754218117",
-          "inLanguage": "kn-IN",
-          "description": "ಒಂದು ಸಣ್ಣ ವಿರಾಮವನ್ನು ಸೇರಿಸಿದಾಗ ತಕ್ಷಣದ ಖರೀದಿ ದುರ್ಬಲವಾಗುತ್ತದೆ: ಈ ಖರೀದಿ ನಿಮ್ಮ ಜೀವನದ ಎಷ್ಟು ಗಂಟೆಗಳ ವೆಚ್ಚ?",
-          "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/kn-IN.jsonld#offer-hourstag"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "paid_upfront"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ],
-          "isAccessibleForFree": false
-        },
-        "price": "499",
-        "priceCurrency": "INR",
-        "availability": "https://schema.org/InStock",
-        "eligibleRegion": {
-          "@type": "Country",
-          "identifier": "IN"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 10,
       "url": "https://apps.apple.com/in/app/id6794039979",
       "item": {
         "@type": "Offer",
@@ -662,6 +596,72 @@
           "isAccessibleForFree": true
         },
         "price": "0",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "IN"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "url": "https://apps.apple.com/in/app/id6754218117",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/kn-IN.jsonld#offer-hourstag",
+        "url": "https://apps.apple.com/in/app/id6754218117",
+        "name": "HoursTag: ಖರೀದಿ ಸಮಯ",
+        "description": "ನಿಜವಾದ ಬೆಲೆ ಏನು? ಡಾಲರ್‌ನಲ್ಲಿ ಅಲ್ಲ — ನಿಮ್ಮ ಜೀವನದ ಗಂಟೆಗಳಲ್ಲಿ.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6754218117",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6754218117"
+          },
+          "name": "HoursTag: ಖರೀದಿ ಸಮಯ",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/in/app/id6754218117",
+          "installUrl": "https://apps.apple.com/in/app/id6754218117",
+          "downloadUrl": "https://apps.apple.com/in/app/id6754218117",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/in/app/id6754218117"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/kn-IN/hourstag.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6754218117",
+          "inLanguage": "kn-IN",
+          "description": "ನಿಜವಾದ ಬೆಲೆ ಏನು? ಡಾಲರ್‌ನಲ್ಲಿ ಅಲ್ಲ — ನಿಮ್ಮ ಜೀವನದ ಗಂಟೆಗಳಲ್ಲಿ.",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/kn-IN.jsonld#offer-hourstag"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "499",
         "priceCurrency": "INR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

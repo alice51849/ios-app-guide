@@ -2,7 +2,7 @@
 title: "HoursTag: खरीदने के घंटे — यह सच में कितना महंगा है? | iOS App"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/hi/index.html"
-modified: "2026-07-30"
+modified: "2026-07-31"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

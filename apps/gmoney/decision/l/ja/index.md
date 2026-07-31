@@ -2,7 +2,7 @@
 title: "サブスクリプション不要の最高の旅行予算管理アプリiPhone向け"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/ja/index.html"
-modified: "2026-07-30"
+modified: "2026-07-31"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

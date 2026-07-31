@@ -6,7 +6,7 @@
   "name": "Catalogue des intentions de recherche de l’éditeur Lumi Studio",
   "description": "Un catalogue publié directement par le développeur qui indique à qui chaque app est destinée, la tâche à accomplir et l’accès direct à l’App Store.",
   "inLanguage": "fr-CA",
-  "dateModified": "2026-07-30",
+  "dateModified": "2026-07-31",
   "numberOfItems": 35,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -546,8 +546,8 @@
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-hourstag",
         "url": "https://apps.apple.com/ca/app/id6754218117",
-        "name": "HoursTag",
-        "description": "Les achats impulsifs s’atténuent quand vous ajoutez une petite pause : combien d’heures de votre vie ce paiement va-t-il réellement coûter ?",
+        "name": "HoursTag : Heures d’achat",
+        "description": "Ça coûte vraiment combien? Pas seulement en dollars, mais en heures de votre vie.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -562,7 +562,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6754218117"
           },
-          "name": "HoursTag",
+          "name": "HoursTag : Heures d’achat",
           "operatingSystem": "iOS",
           "applicationCategory": "FinanceApplication",
           "url": "https://apps.apple.com/ca/app/id6754218117",
@@ -577,7 +577,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6754218117",
           "inLanguage": "fr-CA",
-          "description": "Les achats impulsifs s’atténuent quand vous ajoutez une petite pause : combien d’heures de votre vie ce paiement va-t-il réellement coûter ?",
+          "description": "Ça coûte vraiment combien? Pas seulement en dollars, mais en heures de votre vie.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-hourstag"
           },

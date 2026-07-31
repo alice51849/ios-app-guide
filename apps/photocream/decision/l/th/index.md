@@ -2,7 +2,7 @@
 title: "แอปแต่งภาพฟิล์มแบบจ่ายครั้งเดียวที่ดีที่สุดสำหรับนักสร้างคอนเทนต์ท่องเที่ยวบน iPhone"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/th/index.html"
-modified: "2026-07-30"
+modified: "2026-07-31"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

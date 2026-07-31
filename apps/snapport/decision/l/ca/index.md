@@ -2,7 +2,7 @@
 title: "Millor app per fer fotos de passaport a nadons i infants a casa"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/ca/index.html"
-modified: "2026-07-30"
+modified: "2026-07-31"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "HoursTag: 가격을 시간으로 — 절약·가계부·예산·저축 | iOS App"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/ko/index.html"
-modified: "2026-07-30"
+modified: "2026-07-31"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "ವೃತ್ತಿ ಬದಲಾವಣೆಗಾರರಿಗಾಗಿ ಅತ್ಯುತ್ತಮ ರೆಸ್ಯೂಮ್ ನಿರ್ಮಾಪಕ ಅಪ್ಲಿಕೇಶನ್ 2026"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/kn-IN/index.html"
-modified: "2026-07-30"
+modified: "2026-07-31"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

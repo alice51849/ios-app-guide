@@ -27,7 +27,7 @@
   "identifier": "LUMI-ZHUYIN-DCAT3-2026",
   "version": "1.5.0",
   "datePublished": "2026-07-11",
-  "dateModified": "2026-07-30T00:00:00Z",
+  "dateModified": "2026-07-31T00:00:00Z",
   "inLanguage": [
     "en",
     "zh-Hant"
@@ -97,7 +97,7 @@
       "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-ro-crate",
       "name": "Bopomofo RO-Crate 1.3 research object",
       "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/",
-      "dateModified": "2026-07-30"
+      "dateModified": "2026-07-31"
     },
     {
       "@type": "Dataset",
@@ -162,8 +162,8 @@
       "name": "Complete ZIP bundle",
       "encodingFormat": "application/zip",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog-dcat3-bundle.zip",
-      "contentSize": "28811 bytes",
-      "sha256": "08ec3a130f4e2fcb4c374cad744feb1c51f635cc57402ca6638e0d4042735354"
+      "contentSize": "28801 bytes",
+      "sha256": "9c617d9a9b4bce5a9503a4faa8979e73917d27826e19c00c1237f8ee0c80cc7e"
     },
     {
       "@type": "DataDownload",
@@ -171,7 +171,7 @@
       "encodingFormat": "application/ld+json",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.jsonld",
       "contentSize": "218434 bytes",
-      "sha256": "23a43269a348a3f8c638447f915cab299fd47364b367b2aad02ef72b1c4624e3"
+      "sha256": "a5cc201bb744222b69b62b3f614032f8ef45164c67f2fd0c673f066ed208950b"
     },
     {
       "@type": "DataDownload",
@@ -179,7 +179,7 @@
       "encodingFormat": "text/turtle",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.ttl",
       "contentSize": "148253 bytes",
-      "sha256": "9235ddc4fddd022287f0efa14f2947881ba4d3aae6db0df02f1562799b483ac5"
+      "sha256": "b304d34dcfe8abb10dc5e5a2d0aa691720e249604dcc190959d11639a704f48b"
     }
   ]
 }

@@ -2,7 +2,7 @@
 title: "구독 없이 사용할 수 있는 최고의 여행 예산 추적 앱 아이폰용"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ko/gmoney.html"
-modified: "2026-07-24"
+modified: "2026-07-31"
 video_url: "https://files.catbox.moe/3xucog.mp4"
 duration: "PT16.2S"
 app_store_id: "6755782939"

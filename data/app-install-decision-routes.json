@@ -4,9 +4,9 @@
   "name": "Lumi Studio App Install Decision Routes",
   "description": "First-party install decision routes for every verified live iOS app and Apple locale, with a direct App Store path, purchase model, privacy facts, device surfaces and provenance.",
   "identifier": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes.json",
-  "dateModified": "2026-07-30",
-  "content_digest": "0b15293abb2c5ec6d6144d1d777a31f8b084f71c03eae293ffb3b5bee4c50d57",
-  "generation_digest": "04722298ebefab5ca0a8d806bb3912759ad908c7da75d6837886e74b60ae6c7d",
+  "dateModified": "2026-07-31",
+  "content_digest": "5d6e72e34e1a5ae6b0e476af7c3c983adb6dad74d15c81af516d92c3708c8387",
+  "generation_digest": "7e95f33012d4525af7b778fc21c4e517a23438a64648fc0b5b18b29f1b6edfca",
   "publisher_disclosure": "First-party decision-support material published by Lumi Studio, the developer of every listed app; not an independent ranking or measured search-volume product.",
   "ordering": "official_locale_order_then_priority_then_alphabetical_app_name",
   "priority_app_keys": [
@@ -42993,7 +42993,8 @@
         "無料で開始・買い切りで永久解除",
         "広告なし",
         "追跡なし",
-        "App Store · 無料"
+        "App Store · 無料",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/ja/index.html",
@@ -43006,7 +43007,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "JPY",
-        "formatted_price": "無料"
+        "formatted_price": "無料",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "完全ガイドを読む",
       "publisher_disclosure": "アプリ開発者であるLumi Studioによる公式購入ガイドです。アプリ名は各所有者の商標であり、識別のためにのみ使用しています。書類、健康、学校、生産性に関する判断は、該当する公式要件を必ずご確認ください。",

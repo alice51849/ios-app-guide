@@ -19,7 +19,7 @@ Quant costa de debò? No en euros, sinó en hores de la teva vida.
 - Privat / en el dispositiu
 - App Store · 5,99 €
 
-[Descarrega HoursTag: Hores per comprar a l’App Store](https://apps.apple.com/es/app/id6754218117)
+[Get HoursTag: Hores per comprar on the App Store](https://apps.apple.com/es/app/id6754218117)
 
 [Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/hourstag.html)
 

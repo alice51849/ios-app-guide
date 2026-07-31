@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: ಖರೀದಿ ಸಮಯ — ನಿಜವಾದ ಬೆಲೆ ಏನು? | iOS App"
+title: "HoursTag: ಖರೀದಿ ಸಮಯ — Budget, Savings & Spending | iOS App"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/kn-IN/index.html"
 modified: "2026-07-31"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: ಖರೀದಿ ಸಮಯ — ನಿಜವಾದ ಬೆಲೆ ಏನು? | iOS App
+# HoursTag: ಖರೀದಿ ಸಮಯ — Budget, Savings & Spending | iOS App
 
 ನಿಜವಾದ ಬೆಲೆ ಏನು? ಡಾಲರ್‌ನಲ್ಲಿ ಅಲ್ಲ — ನಿಮ್ಮ ಜೀವನದ ಗಂಟೆಗಳಲ್ಲಿ.
 
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
 - App Store · ₹ 499
 
-[App Store ನಲ್ಲಿ HoursTag: ಖರೀದಿ ಸಮಯ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6754218117)
+[Get HoursTag: ಖರೀದಿ ಸಮಯ on the App Store](https://apps.apple.com/in/app/id6754218117)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/hourstag.html)
 

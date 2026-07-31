@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: ਘੰਟਿਆਂ ਦੀ ਕੀਮਤ — ਅਸਲ ਕੀਮਤ ਕੀ ਹੈ? | iOS App"
+title: "HoursTag: ਘੰਟਿਆਂ ਦੀ ਕੀਮਤ — Budget, Savings & Spending | iOS App"
 lang: "pa-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/pa-IN/index.html"
 modified: "2026-07-31"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: ਘੰਟਿਆਂ ਦੀ ਕੀਮਤ — ਅਸਲ ਕੀਮਤ ਕੀ ਹੈ? | iOS App
+# HoursTag: ਘੰਟਿਆਂ ਦੀ ਕੀਮਤ — Budget, Savings & Spending | iOS App
 
 ਅਸਲ ਕੀਮਤ ਕੀ ਹੈ? ਡਾਲਰਾਂ ਵਿੱਚ ਨਹੀਂ — ਤੁਹਾਡੇ ਜੀਵਨ ਦੇ ਘੰਟਿਆਂ ਵਿੱਚ।
 
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ
 - App Store · ₹ 499
 
-[App Store ਤੋਂ HoursTag: ਘੰਟਿਆਂ ਦੀ ਕੀਮਤ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6754218117)
+[Get HoursTag: ਘੰਟਿਆਂ ਦੀ ਕੀਮਤ on the App Store](https://apps.apple.com/in/app/id6754218117)
 
 [ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://alice51849.github.io/ios-app-guide/pa-IN/hourstag.html)
 

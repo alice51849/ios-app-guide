@@ -19,7 +19,7 @@ Mitä se oikeasti maksaa? Ei euroina – vaan elämäsi tunteina.
 - Yksityinen / laitteella
 - App Store · 5,99 €
 
-[Lataa HoursTag: Ostotunnit App Storesta](https://apps.apple.com/fi/app/id6754218117)
+[Get HoursTag: Ostotunnit on the App Store](https://apps.apple.com/fi/app/id6754218117)
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/hourstag.html)
 

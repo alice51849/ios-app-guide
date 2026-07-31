@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: সময়ে কেনাকাটা — আসল খরচ কত? | iOS App"
+title: "HoursTag: সময়ে কেনাকাটা — Budget, Savings & Spending | iOS App"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/bn-BD/index.html"
 modified: "2026-07-31"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: সময়ে কেনাকাটা — আসল খরচ কত? | iOS App
+# HoursTag: সময়ে কেনাকাটা — Budget, Savings & Spending | iOS App
 
 আসল খরচ কত? ডলারে নয় — আপনার জীবনের ঘন্টায়।
 
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - কোনও ট্র্যাকিং নেই
 - গোপনীয় / ডিভাইসে
 
-[App Store থেকে HoursTag: সময়ে কেনাকাটা ডাউনলোড করুন](https://apps.apple.com/app/id6754218117)
+[Get HoursTag: সময়ে কেনাকাটা on the App Store](https://apps.apple.com/app/id6754218117)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/hourstag.html)
 

@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: కొనుగోలు సమయం — మీరు నిజంగా ఎంత ఖర్చు చేస్తున్నారు? | iOS App"
+title: "HoursTag: కొనుగోలు సమయం — Budget, Savings & Spending | iOS App"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/te-IN/index.html"
 modified: "2026-07-31"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: కొనుగోలు సమయం — మీరు నిజంగా ఎంత ఖర్చు చేస్తున్నారు? | iOS App
+# HoursTag: కొనుగోలు సమయం — Budget, Savings & Spending | iOS App
 
 మీరు నిజంగా ఎంత ఖర్చు చేస్తున్నారు? డాలర్లలో కాదు — మీ జీవితంలో గంటల్లో.
 
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - గోప్యంగా / పరికరంలో
 - App Store · ₹ 499
 
-[App Store నుంచి HoursTag: కొనుగోలు సమయం పొందండి](https://apps.apple.com/in/app/id6754218117)
+[Get HoursTag: కొనుగోలు సమయం on the App Store](https://apps.apple.com/in/app/id6754218117)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/hourstag.html)
 

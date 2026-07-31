@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: நேரத்தை வாங்க — உண்மையில் எவ்வளவு செலவாகிறது? | iOS App"
+title: "HoursTag: நேரத்தை வாங்க — Budget, Savings & Spending | iOS App"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/ta-IN/index.html"
 modified: "2026-07-31"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: நேரத்தை வாங்க — உண்மையில் எவ்வளவு செலவாகிறது? | iOS App
+# HoursTag: நேரத்தை வாங்க — Budget, Savings & Spending | iOS App
 
 உண்மையில் எவ்வளவு செலவாகிறது? பணத்தில் அல்ல, உங்கள் வாழ்க்கையின் நேரத்தில்.
 
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - தனியுரிமை / சாதனத்தில்
 - App Store · ₹ 499
 
-[App Store-இல் HoursTag: நேரத்தை வாங்க-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6754218117)
+[Get HoursTag: நேரத்தை வாங்க on the App Store](https://apps.apple.com/in/app/id6754218117)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/hourstag.html)
 

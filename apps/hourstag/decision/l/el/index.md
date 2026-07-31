@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - Ιδιωτικό / στη συσκευή
 - App Store · 5,99 €
 
-[Αποκτήστε το HoursTag: Ώρες αγοράς από το App Store](https://apps.apple.com/gr/app/id6754218117)
+[Get HoursTag: Ώρες αγοράς on the App Store](https://apps.apple.com/gr/app/id6754218117)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/hourstag.html)
 

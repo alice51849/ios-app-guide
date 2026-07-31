@@ -19,7 +19,7 @@ Koľko to naozaj stojí? Nie v eurách, ale v hodinách vášho života.
 - Súkromné / v zariadení
 - App Store · 5,99 €
 
-[Stiahnuť HoursTag: Hodiny na nákup v App Store](https://apps.apple.com/sk/app/id6754218117)
+[Get HoursTag: Hodiny na nákup on the App Store](https://apps.apple.com/sk/app/id6754218117)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/hourstag.html)
 

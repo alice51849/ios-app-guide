@@ -19,7 +19,7 @@ Kaj te resnično stane? Ne v evrih — v urah tvojega življenja.
 - Zasebno / na napravi
 - App Store · 5,99 €
 
-[Prenesite HoursTag: Cena v Urah iz trgovine App Store](https://apps.apple.com/si/app/id6754218117)
+[Get HoursTag: Cena v Urah on the App Store](https://apps.apple.com/si/app/id6754218117)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/hourstag.html)
 

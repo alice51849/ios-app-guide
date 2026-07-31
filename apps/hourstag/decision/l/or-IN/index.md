@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: ଘଣ୍ଟାରେ କିଣନ୍ତୁ — ଆପଣଙ୍କ ଜୀବନର ଘଣ୍ଟାରେ ମୂଲ୍ୟ କେତେ? | iOS App"
+title: "HoursTag: ଘଣ୍ଟାରେ କିଣନ୍ତୁ — Budget, Savings & Spending | iOS App"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/or-IN/index.html"
 modified: "2026-07-31"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: ଘଣ୍ଟାରେ କିଣନ୍ତୁ — ଆପଣଙ୍କ ଜୀବନର ଘଣ୍ଟାରେ ମୂଲ୍ୟ କେତେ? | iOS App
+# HoursTag: ଘଣ୍ଟାରେ କିଣନ୍ତୁ — Budget, Savings & Spending | iOS App
 
 ଆପଣଙ୍କ ଜୀବନର ଘଣ୍ଟାରେ ମୂଲ୍ୟ କେତେ?
 
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ₹ 499
 
-[App Store ରୁ HoursTag: ଘଣ୍ଟାରେ କିଣନ୍ତୁ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6754218117)
+[Get HoursTag: ଘଣ୍ଟାରେ କିଣନ୍ତୁ on the App Store](https://apps.apple.com/in/app/id6754218117)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/hourstag.html)
 

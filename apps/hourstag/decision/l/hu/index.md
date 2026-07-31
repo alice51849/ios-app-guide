@@ -19,7 +19,7 @@ Mennyibe kerül valójában? Nem forintban, hanem az életed óráiban.
 - Privát / eszközön tárolt
 - App Store · HUF1,990.00
 
-[Töltse le a(z) HoursTag: Órák a vásárláshoz appot az App Store-ból](https://apps.apple.com/hu/app/id6754218117)
+[Get HoursTag: Órák a vásárláshoz on the App Store](https://apps.apple.com/hu/app/id6754218117)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/hourstag.html)
 

@@ -1,5 +1,5 @@
 ---
-title: "HoursTag Lite — See the real price of things | iOS App"
+title: "HoursTag Lite — HoursTag Lite - See the real price of things Every purchase | iOS App"
 lang: "en-US"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/en-US/index.html"
 modified: "2026-07-31"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag Lite — See the real price of things | iOS App
+# HoursTag Lite — HoursTag Lite - See the real price of things Every purchase | iOS App
 
-HoursTag Lite - See the real price of things Every purchase costs hours of your life. HoursTag Lite turns prices into work time — so you spend with clarity. Meet your Worth Lens - Life cost: Your take-home value per work hour - Type: Need - Want - Impulse - Your value pattern - Complete value insights - What will a goal cost?: See the work behind a goal — and track your progress. - Backup & restore: Includes income, spending, goals and preferences. - Widget - Apple Watch Everything stays on your device. No account, no tracking. One payment · Lifetime access · No subscription Unlimited choices and edits Unlimited targets and progress Sharing, insights and backups
+HoursTag Lite - See the real price of things Every purchase costs hours of your life. Hou
 
 - Money & travel
 - Free to start · lifetime unlock

@@ -204,6 +204,7 @@ jobs:
           for locale in $(python3 -c 'from official_locales import OFFICIAL_LOCALES; print(" ".join(OFFICIAL_LOCALES))'); do
             python3 add_related_tools.py --locale "$locale"
           done
+          python3 cleanup_localized_assets.py --cached-live
           python3 ensure_live_guides.py
           python3 gen_webstories.py
           python3 gen_webstories_i18n.py
@@ -303,6 +304,7 @@ jobs:
       - name: Final link and availability cleanup
         run: |
           cd _engine/geo
+          python3 cleanup_localized_assets.py --cached-live
           python3 ensure_live_guides.py
           python3 gen_webstories.py
           python3 gen_webstories_i18n.py

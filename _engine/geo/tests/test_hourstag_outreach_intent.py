@@ -168,34 +168,13 @@ class HoursTagOutreachIntentTests(unittest.TestCase):
         workflow = (
             GEO.parents[1] / ".github" / "workflows" / "geo-daily.yml"
         ).read_text(encoding="utf-8")
-        materialization = workflow.split(
-            "      - name: Reconcile verified Standard.site discovery links",
-            1,
-        )[0]
-        self.assertLess(
-            materialization.index(
-                "python3 build_pages_i18n.py --cached-live"
-            ),
-            materialization.index(
-                "python3 cleanup_localized_assets.py --cached-live"
-            ),
+        sequence = (
+            "          python3 gen_app_decision_cards.py\n"
+            "          python3 cleanup_localized_assets.py --cached-live\n"
+            "          python3 gen_smart_app_banners.py\n"
+            "          python3 gen_mobile_store_ctas.py"
         )
-        self.assertLess(
-            materialization.index("python3 gen_app_decision_cards.py"),
-            materialization.index(
-                "python3 cleanup_localized_assets.py --cached-live"
-            ),
-        )
-        self.assertLess(
-            materialization.index(
-                "python3 cleanup_localized_assets.py --cached-live"
-            ),
-            materialization.index("python3 gen_smart_app_banners.py"),
-        )
-        self.assertLess(
-            materialization.index("python3 gen_smart_app_banners.py"),
-            materialization.index("python3 gen_mobile_store_ctas.py"),
-        )
+        self.assertEqual(3, workflow.count(sequence))
 
     def test_retired_mismatched_pages_redirect_to_existing_spending_workflow(self):
         destination_slug = (

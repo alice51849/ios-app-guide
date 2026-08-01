@@ -410,7 +410,7 @@
 - Supported positioning: Pay once · No subscription · Offline; Pay once; No subscription; Private; Offline; No account
 - Canonical app guide: https://alice51849.github.io/ios-app-guide/en-US/tripbee.html
 - Topic hub: https://alice51849.github.io/ios-app-guide/hubs/tripbee.html
-- Comparison context: Wanderlog, Tripit
+- Comparison context: Wanderlog, TripIt
 - Comparison: [tripbee no subscription](https://alice51849.github.io/ios-app-guide/alternatives/tripbee-no-subscription.html)
 - Comparison: [tripbee vs roadtrippers](https://alice51849.github.io/ios-app-guide/alternatives/tripbee-vs-roadtrippers.html)
 - Comparison: [tripbee vs sygic travel](https://alice51849.github.io/ios-app-guide/alternatives/tripbee-vs-sygic-travel.html)
@@ -757,6 +757,12 @@
 - [wordmate vs quizlet](https://alice51849.github.io/ios-app-guide/alternatives/wordmate-vs-quizlet.html)
 
 ## Open static APIs
+- [Verified iOS App Catalog API v1](https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/)
+  - OpenAPI 3.1: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/openapi.json
+  - API index: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/index.json
+  - JSON Schema: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json
+  - JSON Schema: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feed.schema.json
+  - JSON Schema: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/index.schema.json
 - [Family Travel Missions API v1](https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/)
   - OpenAPI 3.1: https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/openapi.json
   - API index: https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/index.json
@@ -4615,3 +4621,28 @@
 - https://alice51849.github.io/ios-app-guide/sitemap_vs_lus.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_seasonal_lus.xml
 - https://alice51849.github.io/ios-app-guide/sitemap_reviews_lus.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_bestfor_kby.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_workflow_kby.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_vs_kby.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_seasonal_kby.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_reviews_kby.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_bestfor_ybb.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_workflow_ybb.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_vs_ybb.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_seasonal_ybb.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_reviews_ybb.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_bestfor_dan.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_workflow_dan.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_vs_dan.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_seasonal_dan.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_reviews_dan.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_bestfor_bsc.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_workflow_bsc.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_vs_bsc.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_seasonal_bsc.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_reviews_bsc.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_bestfor_hif.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_workflow_hif.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_vs_hif.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_seasonal_hif.xml
+- https://alice51849.github.io/ios-app-guide/sitemap_reviews_hif.xml

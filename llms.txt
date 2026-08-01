@@ -51,7 +51,7 @@
 - [Wordmate: Learn 44 Languages](https://apps.apple.com/app/id6789917808): Learn useful vocabulary in 44 languages with natural examples, a Home Screen widget and Apple Watch. Paid once. No subscription.
 
 ### Travel
-- [TripBee Pro: Trip Planner](https://apps.apple.com/app/id6787754435): Private offline day-by-day trip planner with smart family packing lists and one-tap Apple Maps directions. Paid once. No subscription. A pay-once alternative to Wanderlog and Tripit.
+- [TripBee Pro: Trip Planner](https://apps.apple.com/app/id6787754435): Private offline day-by-day trip planner with smart family packing lists and one-tap Apple Maps directions. Paid once. No subscription. A pay-once alternative to Wanderlog and TripIt.
 - [TripBee Lite](https://apps.apple.com/app/id6791299610): Give one upcoming journey your full attention. TripBee Lite is a calm, polished travel pla. Free to start. One-time unlock. No subscription.
 
 ### Sleep & focus
@@ -265,6 +265,9 @@
 - [zhuyin bopomofo](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.html) · JSON: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json
 
 ## Open static APIs (versioned, read-only, no API key)
+- Verified iOS App Catalog API v1: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/
+  - OpenAPI 3.1: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/openapi.json
+  - API index: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/index.json
 - Family Travel Missions API v1: https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/
   - OpenAPI 3.1: https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/openapi.json
   - API index: https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/index.json

@@ -6,10 +6,10 @@
   const link = bar.querySelector("a");
   const source =
     document.querySelector(
-    '.hero a[href^="https://apps.apple.com/"][href*="/app/"][href*="/id"]'
+      '.hero a[href^="https://apps.apple.com/"][href*="/app/id"]'
     ) ||
     document.querySelector(
-    'main a[href^="https://apps.apple.com/"][href*="/app/"][href*="/id"]'
+      'main a[href^="https://apps.apple.com/"][href*="/app/id"]'
     );
   if (!link || !source) return;
 

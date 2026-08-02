@@ -36,14 +36,9 @@ from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
 import queries  # noqa: E402
 import answer_facts  # noqa: E402
-import sync_standard_site  # noqa: E402
-from answer_text import concise_meta  # noqa: E402
 from aeo_pages import alternative_hub_slug  # noqa: E402
 
 TEMPLATE = ANSWERS_DIR / "best-offline-document-scanner-app-for-iphone.html"
-FREE_RESOURCE_FIRST_META = (
-    '<meta name="iag-free-resource-first" content="true">'
-)
 
 # Commercial focus first, then share-of-voice within each tier. Every public app
 # remains eligible; this only prevents the daily limit from being spent on the
@@ -96,34 +91,19 @@ def key_available() -> bool:
         return False
 
 
-def extract_style(pages_root: Path | None = None) -> str:
-    if pages_root is None:
-        answers_dir = ANSWERS_DIR
-        template = TEMPLATE
-        fallback_dir = PAGES_ROOT / "answers"
-    else:
-        answers_dir = pages_root.resolve() / "answers"
-        template = answers_dir / "best-offline-document-scanner-app-for-iphone.html"
-        fallback_dir = answers_dir
-    candidates = [template, *sorted(answers_dir.glob("*.html"))]
-    if fallback_dir != answers_dir:
-        candidates.extend(
-            [
-                fallback_dir
-                / "best-offline-document-scanner-app-for-iphone.html",
-                *sorted(fallback_dir.glob("*.html")),
-            ]
-        )
+def extract_style() -> str:
+    candidates = [TEMPLATE, *sorted(ANSWERS_DIR.glob("*.html"))]
     for candidate in candidates:
         if not candidate.exists():
             continue
         text = candidate.read_text(encoding="utf-8")
-        m = re.search(r"<style\b[^>]*>\s*(.*?)\s*</style>", text, re.S)
+        m = re.search(r"<style>\n(.*?)\n</style>", text, re.S)
         if m:
             return m.group(1)
-    raise RuntimeError(
-        f"Could not extract template CSS from any answer page: {answers_dir}"
-    )
+    raise RuntimeError("Could not extract template CSS from any answer page")
+
+
+STYLE = extract_style()
 
 
 def safe_text(value: Any, default: str = "") -> str:
@@ -386,257 +366,6 @@ def e(s: str) -> str:
     return html.escape(s, quote=True)
 
 
-def author_microformat() -> str:
-    return (
-        '<data class="p-author h-card vcard" value="Lumi Studio">'
-        '<data class="p-name p-org fn org" value="Lumi Studio"></data>'
-        f'<data class="u-url url" value="{SITE}/about.html"></data>'
-        "</data>"
-    )
-
-
-def url_microformat(url: str, include_uid: bool = True) -> str:
-    classes = "u-url u-uid" if include_uid else "u-url"
-    return f'<data class="{classes}" value="{e(url)}"></data>'
-
-
-def _add_classes_to_first_tag(
-    document: str,
-    pattern: str,
-    classes: tuple[str, ...],
-    label: str,
-) -> str:
-    match = re.search(pattern, document, re.IGNORECASE)
-    if not match:
-        raise ValueError(f"Missing {label} while adding microformats")
-    tag = match.group(0)
-    class_match = re.search(
-        r"(\sclass=)([\"'])(.*?)\2",
-        tag,
-        re.IGNORECASE | re.DOTALL,
-    )
-    if class_match:
-        existing = class_match.group(3).split()
-        merged = existing + [name for name in classes if name not in existing]
-        rewritten = (
-            tag[:class_match.start(3)]
-            + " ".join(merged)
-            + tag[class_match.end(3):]
-        )
-    else:
-        insert_at = tag.rfind("/>")
-        if insert_at < 0:
-            insert_at = tag.rfind(">")
-        rewritten = (
-            tag[:insert_at]
-            + f' class="{" ".join(classes)}"'
-            + tag[insert_at:]
-        )
-    return document[:match.start()] + rewritten + document[match.end():]
-
-
-def _remove_classes_from_first_tag(
-    document: str,
-    pattern: str,
-    classes: tuple[str, ...],
-) -> str:
-    match = re.search(pattern, document, re.IGNORECASE)
-    if not match:
-        return document
-    tag = match.group(0)
-    class_match = re.search(
-        r"(\sclass=)([\"'])(.*?)\2",
-        tag,
-        re.IGNORECASE | re.DOTALL,
-    )
-    if not class_match:
-        return document
-    remaining = [
-        name for name in class_match.group(3).split()
-        if name not in classes
-    ]
-    if remaining:
-        rewritten = (
-            tag[:class_match.start(3)]
-            + " ".join(remaining)
-            + tag[class_match.end(3):]
-        )
-    else:
-        rewritten = tag[:class_match.start()] + tag[class_match.end():]
-    return document[:match.start()] + rewritten + document[match.end():]
-
-
-def is_redirect_html(document: str) -> bool:
-    head = document[:4096].lower()
-    return (
-        'http-equiv="refresh"' in head
-        and 'name="robots" content="noindex' in head
-    )
-
-
-def microformat_answer_html(document: str) -> str:
-    """Add a parser-compatible h-entry wrapper without changing visible copy."""
-    if is_redirect_html(document):
-        return document
-    html_tag = re.search(r"<html\b[^>]*>", document, re.IGNORECASE)
-    if not html_tag or not re.search(
-        r"\slang=[\"']en[\"']",
-        html_tag.group(0),
-        re.IGNORECASE,
-    ):
-        raise ValueError("English answer page is missing html[lang=en]")
-
-    canonical = re.search(
-        r"<link\b[^>]*\srel=[\"']canonical[\"'][^>]*>",
-        document,
-        re.IGNORECASE,
-    )
-    if not canonical:
-        raise ValueError("Missing canonical link while adding microformats")
-    href = re.search(
-        r"\shref=([\"'])(.*?)\1",
-        canonical.group(0),
-        re.IGNORECASE | re.DOTALL,
-    )
-    if not href:
-        raise ValueError("Canonical link is missing href")
-    canonical_url = html.unescape(href.group(2))
-
-    old_author = (
-        f'<a class="p-author h-card vcard u-url url" '
-        f'href="{SITE}/about.html"><span class="p-name p-org fn org">'
-        "Lumi Studio</span></a>"
-    )
-    document = document.replace(
-        f"Publisher-authored guide from {old_author}, the app developer.",
-        "Publisher-authored guide from Lumi Studio, the app developer.",
-        1,
-    )
-    document = document.replace(f"Published by {old_author}. ", "", 1)
-    document = document.replace(
-        f'<link class="u-url url" href="{SITE}/about.html">',
-        f'<data class="u-url url" value="{SITE}/about.html"></data>',
-    )
-    document = _remove_classes_from_first_tag(
-        document,
-        r"<title\b[^>]*>",
-        ("p-name", "entry-title"),
-    )
-    document = _remove_classes_from_first_tag(
-        document,
-        r"<main\b[^>]*>",
-        ("e-content", "entry-content"),
-    )
-    document = _remove_classes_from_first_tag(
-        document,
-        r"<body\b[^>]*>",
-        ("h-entry", "hentry", "e-content", "entry-content"),
-    )
-    document = _remove_classes_from_first_tag(
-        document,
-        r"<html\b[^>]*>",
-        ("h-entry", "hentry"),
-    )
-    document = _remove_classes_from_first_tag(
-        document,
-        r"<link\b[^>]*\srel=[\"']canonical[\"'][^>]*>",
-        ("u-url", "u-uid"),
-    )
-    document = _add_classes_to_first_tag(
-        document,
-        r"<h1\b[^>]*>",
-        ("p-name", "entry-title"),
-        "answer heading",
-    )
-    document = _add_classes_to_first_tag(
-        document,
-        r"<p\b(?=[^>]*\sclass=[\"'][^\"']*\blead\b)[^>]*>",
-        ("p-summary", "entry-summary"),
-        "lead paragraph",
-    )
-
-    if "p-author" not in document:
-        footer = re.search(
-            r"<(?:div|footer)\b"
-            r"(?=[^>]*\sclass=[\"'][^\"']*\bfooter\b)[^>]*>",
-            document,
-            re.IGNORECASE,
-        )
-        if not footer:
-            raise ValueError("Missing answer footer while adding author")
-        document = (
-            document[:footer.end()]
-            + author_microformat()
-            + document[footer.end():]
-        )
-
-    root_start = "<!-- answer-microformat:start -->"
-    root_end = "<!-- answer-microformat:end -->"
-    content_start = "<!-- answer-content:start -->"
-    content_end = "<!-- answer-content:end -->"
-    if root_start not in document:
-        body = re.search(r"<body\b[^>]*>", document, re.IGNORECASE)
-        body_close = document.lower().rfind("</body>")
-        if not body or body_close < body.end():
-            raise ValueError("Missing body boundary while adding microformats")
-        has_main = bool(re.search(r"<main\b[^>]*>", document, re.IGNORECASE))
-        root_open = (
-            f'{root_start}<div class="h-entry hentry">'
-            f"{url_microformat(canonical_url)}"
-        )
-        root_close = f"</div>{root_end}"
-        if has_main:
-            document = (
-                document[:body.end()]
-                + root_open
-                + document[body.end():body_close]
-                + root_close
-                + document[body_close:]
-            )
-            main = re.search(r"<main\b[^>]*>", document, re.IGNORECASE)
-            main_close = re.search(
-                r"</main>",
-                document[main.end():] if main else "",
-                re.IGNORECASE,
-            )
-            if not main or not main_close:
-                raise ValueError("Missing main boundary while adding microformats")
-            close_start = main.end() + main_close.start()
-            close_end = main.end() + main_close.end()
-            document = (
-                document[:close_end]
-                + f'</div>{content_end}'
-                + document[close_end:]
-            )
-            document = (
-                document[:main.start()]
-                + f'{content_start}<div class="e-content entry-content">'
-                + document[main.start():]
-            )
-        else:
-            document = (
-                document[:body.end()]
-                + root_open
-                + f'{content_start}<div class="e-content entry-content">'
-                + document[body.end():body_close]
-                + f"</div>{content_end}"
-                + root_close
-                + document[body_close:]
-            )
-    elif root_end not in document or content_start not in document:
-        raise ValueError("Incomplete answer microformat wrapper")
-    return document
-
-
-def reconcile_answer_microformats(path: Path) -> bool:
-    source = path.read_text(encoding="utf-8")
-    rendered = microformat_answer_html(source)
-    if rendered == source:
-        return False
-    path.write_text(rendered, encoding="utf-8")
-    return True
-
-
 def application_category(key: str) -> str:
     cat = APPS[key].get("category", "")
     return {
@@ -658,23 +387,14 @@ def feature_list(key: str) -> list[str]:
     return features[:6]
 
 
-def render_page(
-    question: str,
-    key: str,
-    content: dict[str, Any],
-    pages_root: Path | None = None,
-) -> str:
-    effective_pages_root = (
-        PAGES_ROOT if pages_root is None else pages_root.resolve()
-    )
+def render_page(question: str, key: str, content: dict[str, Any]) -> str:
     app = APPS[key]
     name = app["name"]
     url = appstore_url(key, "iag_ans")
     slug = slugify(question)
     canonical = f"{SITE}/answers/{slug}.html"
     title = content.get("page_title") or f"{question}: honest iPhone app buying guide"
-    meta = concise_meta(content["meta_description"], limit=220, hard_limit=220)
-    style = extract_style(effective_pages_root)
+    meta = content["meta_description"][:220]
     primary_resource_url = content.get("primary_resource_url", "")
     primary_resource_label = content.get("primary_resource_label", "")
     faq = content["faq"]
@@ -760,8 +480,7 @@ def render_page(
         for item in faq
     )
     guide_link = f"{SITE}/guides/{key}.html"
-    alt_slug = alternative_hub_slug(key)
-    alt_link = f"{SITE}/alternatives/{alt_slug}.html"
+    alt_link = f"{SITE}/alternatives/{alternative_hub_slug(key)}.html"
     if primary_resource_url:
         hero_actions = (
             f'<a class="cta" href="{e(primary_resource_url)}">'
@@ -784,17 +503,10 @@ def render_page(
     special_notice = ""
     if key == "aim990":
         special_notice = " TOEIC is a registered trademark of ETS. Aim990 is an independent study aid and is not affiliated with or endorsed by ETS. No app can guarantee a TOEIC score."
-    alt_app_link = ""
-    if (
-        effective_pages_root / "alternatives" / f"{alt_slug}.html"
-    ).is_file():
-        alt_app_link = (
-            f'<a href="{alt_link}">{e(name)} alternatives / guide</a>'
-        )
     app_links = (
         f'<a href="{url}" rel="nofollow noopener">Get {e(name)} on the App Store</a>'
         f'<a href="{guide_link}">{e(name)} app guide</a>'
-        f"{alt_app_link}"
+        f'<a href="{alt_link}">{e(name)} alternatives / guide</a>'
     )
     app_fit = (
         f'<h2>Where {e(name)} fits</h2><p>{e(content["where_app_fits"])}</p>'
@@ -821,19 +533,13 @@ def render_page(
             f'<p class="muted">{e("; ".join(feature_list(key)))}</p>'
         )
         deferred_app_fit = ""
-    social_metadata = (
-        f'<meta property="og:type" content="article"><meta property="og:title" '
-        f'content="{e(title)}"><meta property="og:description" content="{e(meta)}">'
-        f'<meta property="og:url" content="{canonical}">'
-        '<meta name="twitter:card" content="summary">'
-    )
-    rendered = f'''<!DOCTYPE html>
+    return f'''<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(meta)}"><link rel="canonical" href="{canonical}">
 <link rel="alternate" hreflang="en" href="{canonical}">
 <link rel="alternate" hreflang="x-default" href="{canonical}">
-{social_metadata}{resource_first_meta}<style>
-{style}
+<meta property="og:type" content="article"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(meta)}"><meta property="og:url" content="{canonical}"><meta name="twitter:card" content="summary">{resource_first_meta}<style>
+{STYLE}
 </style><script type="application/ld+json">
 {j(breadcrumb)}
 </script>
@@ -854,7 +560,6 @@ def render_page(
 <main><section class="hero wrap"><div class="breadcrumb"><a href="{SITE}/index.html">Home</a> / <a href="{SITE}/answers/index.html">Answers</a></div><div class="eyebrow">High-intent answer</div><h1>{e(question)}</h1><p class="lead">{e(content["lead"])}</p><p>{hero_actions}</p></section>
 <section class="wrap grid"><article class="card two answer"><h2>Short answer</h2>{paras}<h2>What to look for before choosing</h2><ul class="checklist">{look}</ul><h2>A practical decision process</h2><ol class="checklist">{steps}</ol><h2>Quick comparison</h2><table><thead><tr><th>Need</th><th>What to check</th><th>Why it matters</th></tr></thead><tbody>{comparison_rows}</tbody></table>{sources_html}{article_app_fit}</article><aside class="card side">{sidebar_html}</aside></section>
 <section class="wrap card"><h2>FAQ</h2>{faq_html}</section>{deferred_app_fit}</main><footer class="footer"><div class="wrap">Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.</div></footer></body></html>'''
-    return microformat_answer_html(rendered)
 
 
 def _coverage_rates() -> dict:
@@ -910,15 +615,9 @@ def create_page(
     question: str,
     use_openai: bool = False,
     force: bool = False,
-    pages_root: Path | None = None,
 ) -> str | None:
-    answers_dir = (
-        ANSWERS_DIR
-        if pages_root is None
-        else pages_root.resolve() / "answers"
-    )
     slug = slugify(question)
-    path = answers_dir / f"{slug}.html"
+    path = ANSWERS_DIR / f"{slug}.html"
     if path.exists() and not force:
         return None
     try:
@@ -931,7 +630,7 @@ def create_page(
     except Exception as exc:
         print(f"SKIP {slug}: {exc}", flush=True)
         return None
-    rendered = render_page(question, key, content, pages_root=pages_root)
+    rendered = render_page(question, key, content)
     if not path.exists() or path.read_text(encoding="utf-8") != rendered:
         path.write_text(rendered, encoding="utf-8")
     print(f"{'REFRESHED' if force else 'CREATED'} {slug}", flush=True)
@@ -940,7 +639,7 @@ def create_page(
 
 def parse_page_info(path: Path) -> tuple[str, str]:
     text = path.read_text(encoding="utf-8", errors="replace")
-    hm = re.search(r"<h1\b[^>]*>(.*?)</h1>", text, re.S | re.I)
+    hm = re.search(r"<h1[^>]*>(.*?)</h1>", text, re.S)
     title = re.sub(r"<.*?>", "", hm.group(1)).strip() if hm else path.stem.replace("-", " ")
     sm = re.search(
         r'"@type"\s*:\s*"(?:SoftwareApplication|MobileApplication)"'
@@ -953,55 +652,34 @@ def parse_page_info(path: Path) -> tuple[str, str]:
 
 
 def is_redirect_page(path: Path) -> bool:
-    return is_redirect_html(path.read_text(encoding="utf-8", errors="replace"))
+    head = path.read_text(encoding="utf-8", errors="replace")[:4096].lower()
+    return 'http-equiv="refresh"' in head and 'name="robots" content="noindex' in head
 
 
 def feed_discovery_links() -> str:
     return "\n".join(
         (
             f'<link rel="alternate" type="application/atom+xml" '
-            f'title="iOS App Guide — latest answers &amp; guides (Atom)" '
             f'href="{SITE}/feed.xml">',
             f'<link rel="alternate" type="application/rss+xml" '
-            f'title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" '
             f'href="{SITE}/rss.xml">',
             f'<link rel="alternate" type="application/feed+json" '
-            f'title="iOS App Guide — latest answers &amp; guides '
-            f'(JSON Feed 1.1)" href="{SITE}/feed.json">',
+            f'href="{SITE}/feed.json">',
         )
     )
 
 
-def regenerate_index(pages_root: Path | None = None) -> None:
-    if pages_root is None:
-        pages_root = PAGES_ROOT
-        answers_dir = ANSWERS_DIR
-    else:
-        pages_root = pages_root.resolve()
-        answers_dir = pages_root / "answers"
+def regenerate_index() -> None:
     pages = [
         p
-        for p in answers_dir.glob("*.html")
+        for p in ANSWERS_DIR.glob("*.html")
         if p.name != "index.html" and not is_redirect_page(p)
     ]
-    microformats_reconciled = sum(
-        reconcile_answer_microformats(page) for page in pages
-    )
     cards = []
     for p in sorted(pages, key=lambda x: x.stem):
         title, app = parse_page_info(p)
-        cards.append(
-            '<article class="card third h-entry hentry">'
-            '<h2 class="p-name entry-title">'
-            f'<a class="u-url u-uid" rel="bookmark" '
-            f'href="{SITE}/answers/{p.name}">{e(title)}</a></h2>'
-            f'<p class="muted p-summary entry-summary">Funnels to {e(app)}</p>'
-            "</article>"
-        )
+        cards.append(f'<article class="card third"><h2><a href="{SITE}/answers/{p.name}">{e(title)}</a></h2><p class="muted">Funnels to {e(app)}</p></article>')
     canonical = f"{SITE}/answers/index.html"
-    style = extract_style(
-        pages_root if answers_dir == pages_root / "answers" else None
-    )
     breadcrumb = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "iOS App Guide", "item": f"{SITE}/index.html"},
         {"@type": "ListItem", "position": 2, "name": "Answers", "item": canonical},
@@ -1014,7 +692,7 @@ def regenerate_index(pages_root: Path | None = None) -> None:
         f'<link rel="alternate" hreflang="en" href="{canonical}">'
     ]
     locale_pattern = re.compile(r"^[a-z]{2,3}(?:-[A-Za-z]{2,4})?$")
-    for localized in sorted(pages_root.glob("*/answers/index.html")):
+    for localized in sorted(PAGES_ROOT.glob("*/answers/index.html")):
         locale = localized.parent.parent.name
         if locale_pattern.fullmatch(locale):
             alternate_links.append(
@@ -1030,32 +708,21 @@ def regenerate_index(pages_root: Path | None = None) -> None:
 {alternates}
 {feed_discovery_links()}
 <meta property="og:type" content="website"><meta property="og:title" content="iOS App Answer Guides"><meta property="og:description" content="Honest buying guides and answer pages for iPhone apps."><meta property="og:url" content="{canonical}"><meta name="twitter:card" content="summary"><style>
-{style}
+{STYLE}
 </style><script type="application/ld+json">
 {j(breadcrumb)}
 </script><script type="application/ld+json">
 {j(org)}
 </script>
-</head><body><div class="h-feed hfeed">{url_microformat(canonical, include_uid=False)}<header class="top"><div class="wrap nav"><a href="{SITE}/index.html">iOS App Guide</a><nav><a href="{SITE}/tools/">Free tools</a> · <a href="{SITE}/alternatives/">Alternatives</a> · <a href="{SITE}/about.html">About</a></nav></div></header><main><section class="hero wrap"><div class="eyebrow">Answer hub</div><h1 class="p-name site-title">iOS app answer guides</h1><p class="lead">Practical, honest pages for high-intent questions: what to check, when a dedicated app helps, and which Alice iOS app fits the job.</p></section><section class="wrap"><h2>Topic guides</h2><p class="muted"><a href="{SITE}/passport-photos.html">Passport &amp; ID photo sizes by country</a> · <a href="{SITE}/resume-formats.html">Resume &amp; CV formats by country</a> · <a href="{SITE}/kids-learning.html">Kids learning apps</a> · <a href="{SITE}/photo-tools.html">iPhone photo tools</a> · <a href="{SITE}/focus-productivity.html">Focus &amp; productivity</a> · <a href="{SITE}/money-travel.html">Money &amp; travel</a> · <a href="{SITE}/sleep-wellbeing.html">Sleep &amp; wellbeing</a> · <a href="{SITE}/data/">Free open data</a></p></section><section class="wrap grid">{''.join(cards)}</section></main><footer class="footer"><div class="wrap">{author_microformat()}First-party iOS app guides published by Lumi Studio, the developer of every listed app.</div></footer></div></body></html>'''
-    index_path = answers_dir / "index.html"
-    if index_path.exists():
-        html_doc = sync_standard_site.preserve_managed_links(
-            index_path.read_text(encoding="utf-8"),
-            html_doc,
-            label=str(index_path),
-        )
-    index_path.write_text(html_doc, encoding="utf-8")
-    print(
-        f"INDEX {len(pages)} pages; "
-        f"{microformats_reconciled} microformats reconciled",
-        flush=True,
-    )
+</head><body><header class="top"><div class="wrap nav"><a href="{SITE}/index.html">iOS App Guide</a><nav><a href="{SITE}/tools/">Free tools</a> · <a href="{SITE}/alternatives/">Alternatives</a> · <a href="{SITE}/about.html">About</a></nav></div></header><main><section class="hero wrap"><div class="eyebrow">Answer hub</div><h1>iOS app answer guides</h1><p class="lead">Practical, honest pages for high-intent questions: what to check, when a dedicated app helps, and which Alice iOS app fits the job.</p></section><section class="wrap"><h2>Topic guides</h2><p class="muted"><a href="{SITE}/passport-photos.html">Passport &amp; ID photo sizes by country</a> · <a href="{SITE}/resume-formats.html">Resume &amp; CV formats by country</a> · <a href="{SITE}/kids-learning.html">Kids learning apps</a> · <a href="{SITE}/photo-tools.html">iPhone photo tools</a> · <a href="{SITE}/focus-productivity.html">Focus &amp; productivity</a> · <a href="{SITE}/money-travel.html">Money &amp; travel</a> · <a href="{SITE}/sleep-wellbeing.html">Sleep &amp; wellbeing</a> · <a href="{SITE}/data/">Free open data</a></p></section><section class="wrap grid">{''.join(cards)}</section></main><footer class="footer"><div class="wrap">First-party iOS app guides published by Lumi Studio, the developer of every listed app.</div></footer></body></html>'''
+    (ANSWERS_DIR / "index.html").write_text(html_doc, encoding="utf-8")
+    print(f"INDEX {len(pages)} pages", flush=True)
 
 
-def write_sitemap(pages_root: Path | None = None) -> None:
+def write_sitemap() -> None:
     """Rebuild sitemap_answers.xml from files that actually exist (EN + localized)."""
     import time as _time
-    pages_dir = (pages_root or PAGES_ROOT).resolve()
+    pages_dir = PAGES_ROOT
     entries: list[tuple[str, Path]] = []
     for p in sorted(pages_dir.glob("answers/*.html")):
         if not is_redirect_page(p):

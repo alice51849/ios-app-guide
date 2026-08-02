@@ -848,7 +848,7 @@ def _decision_context(
     context = _extract(
         source,
         (
-            r'<p class="lead">(.*?)</p>'
+            r'<p class="lead[^"]*">(.*?)</p>'
             if answer_page
             else r'<meta\s+name="description"\s+content="([^"]+)"'
         ),
@@ -865,7 +865,7 @@ def _publisher_disclosure(
     localized_fallback: str,
 ) -> str:
     pattern = (
-        r'<footer class="footer"><div class="wrap">(.*?)</div></footer>'
+        r'<footer class="footer">(?:.*?)<div class="wrap">(.*?)</div></footer>'
         if answer_page
         else r'<footer class="footer">(.*?)</footer>'
     )
@@ -1075,7 +1075,7 @@ def _page_record(
         "app_store_id": app_id,
         "publisher_query": _extract(
             source,
-            r"<h1>(.*?)</h1>" if answer_page else r"<title>(.*?)</title>",
+            r"<h1[^>]*>(.*?)</h1>" if answer_page else r"<title>(.*?)</title>",
             "localized publisher query",
         ),
         "decision_context": _decision_context(source, answer_page, app_id),

@@ -2,7 +2,7 @@
 title: "G+Money Lite — Kiadások, költségvetés & FX | iOS App"
 lang: "hu"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/hu/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,11 +16,6 @@ G+Money Lite — Okos utazási pénznem- és költségkövető Utazási pénz, e
 - Pénzügy & utazás
 - Ingyenes kezdés · életre szóló feloldás
 - Offline
-- Nincs fiók
-- Nincs követés
-- Privát / eszközön tárolt
-- Widget
-- Apple Watch
 - App Store · Ingyenes
 
 [Töltse le a(z) G+Money Lite appot az App Store-ból](https://apps.apple.com/hu/app/id6793436548)

@@ -2,7 +2,7 @@
 title: "아이폰에서 논리력 향상을 위한 어린이용 수학 게임 앱 중 최고"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ko/lumimath.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 video_url: "https://files.catbox.moe/zmjvl6.mp4"
 duration: "PT16S"
 app_store_id: "6778269699"

@@ -1,24 +1,24 @@
 ---
-title: "WiFi Aid — تشخيص الشبكة بالأدلة | iOS App"
+title: "best wifi troubleshooting app for remote workers with connected but no internet"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/ar-SA/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid — تشخيص الشبكة بالأدلة | iOS App
+# best wifi troubleshooting app for remote workers with connected but no internet
 
-اعثر على السبب الأرجح عبر فحوص مستقلة للمسارات وDNS وTCP وTLS والتوقيت والثبات. دفعة مقدمة واحدة، بلا اشتراك أو إعلانات أو تتبع. • إجراء فحص — فحص Wi-Fi وDNS والإنترنت بنقرة • فحص عميق — أدلة إضافية وعينات استقرار • فحص موقع — اكتشف ما إذا كانت وجهة واحدة أو الإنترنت يفشل • الأدلة — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • الاتصال يبدو غير مستقر — التباين • سجل الفحوصات — سجلات خاصة تُحفظ على هذا الجهاز فقط • Apple Watch — إجراء فحص • Widget · iPad — متصل · إجراء فحص لا حسابات، ولا إعلانات، ولا تتبع. سجلات خاصة تُحفظ على هذا الجهاز فقط. شراء واحد مقدمًا عبر App Store. بلا اشتراك.
+When Wi-Fi says connected but work still cannot get online, the useful first step is to identify whether the failure is DNS, the wider internet, instability or one destination instead of guessing — WiFi Aid is built for this.
 
-- المزيد
+- الصورة والأدوات
 - تحميل مدفوع
 - App Store · SAR 24.99
 
-[احصل على WiFi Aid من App Store](https://apps.apple.com/sa/app/id6790467886)
+[Get WiFi Aid on the App Store →](https://apps.apple.com/sa/app/id6790467886)
 
-[اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/wifiaid.html)
+[اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html)
 
-> هذه مادة ينشرها Lumi Studio مباشرةً بصفته مطور جميع التطبيقات المدرجة.
+> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

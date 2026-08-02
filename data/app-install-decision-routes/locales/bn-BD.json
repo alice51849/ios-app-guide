@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "bn-BD",
-  "dateModified": "2026-07-31",
-  "content_digest": "d25fe9a1e078b3c0c14af98cbedf0273117830c2e9a4b4d0f3b9906385ab48e2",
-  "generation_digest": "e1d80cb6ea88329d88881233d28cead0c2c1140eaa12f67295589794b128e1e4",
+  "dateModified": "2026-08-02",
+  "content_digest": "e5bfe67ce45753740357eeca269b9d35c0540b62ea2875b9d353bd43f3b5580a",
+  "generation_digest": "fba7106f0739bc21b7780395db7e34437f3398d54d36d80e4aa52f98445f0433",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -26,8 +26,8 @@
       "priority_group": "launch_boost",
       "publisher_query": "Mask My File — শেয়ারের আগে গোপন তথ্য ঢাকুন | iOS App",
       "decision_context": "প্রয়োজনীয় প্রসঙ্গ না হারিয়ে নিরাপদে শেয়ার করুন। Mask My File আপনি ফাইল পাঠানোর আগেই ব্যক্তিগত তথ্য খুঁজে বের করে, স্থায়ীভাবে ঢেকে দেয়, তারপর তৈরি হওয়া নতুন ফাইলটি আবার খুলে যাচাই করে এবং তবেই Private Ready দেখায়। আপনি যা করতে পারেন • ছবি ও PDF: পূর্ণ-প্রস্থ প্রিভিউ, 5× পর্যন্ত জুম, টেনে সরানো এবং নিখুঁত ম্যানুয়াল নির্বাচন। • ভিজ্যুয়াল ফাইল: স্থায়ী নিরেট ঢাকা বা শুধু মুছে ফেলা। মুখ ও বারকোড শনাক্তকরণ কেবল আপনার পর্যালোচনার জন্য অংশ চিহ্নিত করে। • টেক্সট, JSON, XML, HTML, CSV, TSV ও RTF: প্রতিটি মিল খুঁজুন, তারপর তারকা দিয়ে পূর্ণ ঢাকা, আংশিক ঢাকা, স্থানধারক, ছদ্মনাম বা মুছে ফেলা প্রয়োগ করুন। • প্রয়োজনে মেটাডেটা সরান। PDF-এ পৃষ্ঠা ধরে ধরে কাজ করুন, বা 100টি পর্যন্ত ফাইলে—প্রতিটি ফাইলের আলাদা প্রিভিউ, ফাইলের মধ্যে খোঁজ এবং ফাইলপ্রতি ম্যানুয়াল নির্বাচনসহ। • প্রাইভেট সেশন, প্রজেক্ট ওয়ার্কস্পেস ও স্থানধারক ভল্ট দিয়ে কাজ গুছিয়ে রাখুন। যখন জরুরি তখন ব্যবহার করুন ভাড়ার আবেদন পাঠানোর আগে, চিকিৎসা নথি শেয়ার করার আগে, বা কোনো সহকর্মীকে গ্রাহকের ফাইল দেওয়ার আগে—ব্যক্তিগত তথ্য স্থায়ীভাবে ঢেকে রেখে প্রয়োজনীয় প্রসঙ্গ ধরে রাখুন। ডিজাইনেই গোপনীয়তা সবকিছু আপনার ডিভাইসেই প্রক্রিয়া হয়। কোনো অ্যাকাউন্ট, বিজ্ঞাপন, ট্র্যাকিং, বিশ্লেষণ বা কনটেন্ট আপলোড নেই। Apple Vision এবং অন্তর্ভুক্ত Tesseract OCR ডিভাইসেই চলে। মুখ শনাক্তকরণ কেবল অংশ তৈরি করে: এটি কাউকে শনাক্ত করে না, টেমপ্লেট বানায় না, মুখের ডেটা শেয়ার বা সংরক্ষণ করে না। কেনাকাটা Apple তার StoreKit দিয়ে পরিচালনা করে। Mask My File কোনো VPN, NetworkExtension, প্রক্সি, টানেল, DNS ফিল্টার বা নেটওয়ার্ক রাউটিং ব্যবহার করে না। মূল ফাইল কখনো ওভাররাইট হয় না; অস্থায়ী ওয়ার্কস্পেস ফাইল, প্রাইভেট সেশন ডেটা এবং প্রজেক্ট আপনি না মোছা পর্যন্ত ডিভাইসেই থাকে। একবার কিনুন, আজীবন ব্যবহার করুন শুধুমাত্র একবার পেমেন্ট করে আজীবন ব্যবহার করার সুযোগ পান, যার মাধ্যমে আপনি সীমাহীন যাচাইকৃত আউটপুট এবং ব্যাচ প্রসেসিং করতে পারবেন। কোনো সাবস্ক্রিপশন নেই। App Store থেকে খুব সহজেই আপনার কেনাকাটা পুনরুদ্ধার করতে পারবেন।",
-      "category": "utility",
-      "category_label": "আরও",
+      "category": "photo-utility",
+      "category_label": "ছবি ও ইউটিলিটি",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "বিনামূল্যে শুরু · আজীবন আনলক",
       "one_time_option": true,
@@ -40,7 +40,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "আরও",
+        "ছবি ও ইউটিলিটি",
         "বিনামূল্যে শুরু · আজীবন আনলক",
         "গোপনীয় / ডিভাইসে"
       ],
@@ -71,8 +71,8 @@
       "priority_group": "launch_boost",
       "publisher_query": "WiFi Aid — নেটওয়ার্ক পরীক্ষা ও প্রমাণ | iOS App",
       "decision_context": "স্বাধীন পথ, DNS, TCP, TLS, টাইমিং ও স্থিতিশীলতা পরীক্ষায় সংযোগ সমস্যার সম্ভাব্য কারণ খুঁজুন। একবার কিনুন—কোনো সাবস্ক্রিপশন, বিজ্ঞাপন বা ট্র্যাকিং নেই। • চেক চালান — এক ট্যাপে Wi-Fi, DNS ও ইন্টারনেট পরীক্ষা • ডিপ চেক — আরো প্রমাণ ও স্থিতিশীলতার নমুনা • ওয়েবসাইট চেক করুন — একটি নির্দিষ্ট গন্তব্য নাকি সামগ্রিক ইন্টারনেট ব্যর্থ হচ্ছে তা দেখুন • প্রমাণ — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • সংযোগ অস্থির মনে হচ্ছে — ভ্যারিয়েশন • চেক ইতিহাস — শুধুমাত্র এই ডিভাইসে সংরক্ষিত ব্যক্তিগত রেকর্ড • Apple Watch — চেক চালান • Widget · iPad — সংযুক্ত · চেক চালান কোনো অ্যাকাউন্ট, বিজ্ঞাপন, অ্যানালিটিক্স বা ট্র্যাকিং নেই। ব্যক্তিগত রেকর্ড শুধুমাত্র এই ডিভাইসে সংরক্ষিত। App Store-এ একবার পেমেন্ট। কোনো সাবস্ক্রিপশন নেই।",
-      "category": "utility",
-      "category_label": "আরও",
+      "category": "photo-utility",
+      "category_label": "ছবি ও ইউটিলিটি",
       "purchase_model": "paid_upfront",
       "purchase_label": "পেইড ডাউনলোড",
       "one_time_option": true,
@@ -81,7 +81,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "আরও",
+        "ছবি ও ইউটিলিটি",
         "পেইড ডাউনলোড"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/wifiaid.html",
@@ -157,15 +157,9 @@
       "purchase_label": "বিনামূল্যে শুরু · আজীবন আনলক",
       "one_time_option": true,
       "privacy_facts": [
-        "no_account",
-        "no_ads",
-        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
-        "কোনও অ্যাকাউন্ট নেই",
-        "কোনও বিজ্ঞাপন নেই",
-        "কোনও ট্র্যাকিং নেই",
         "গোপনীয় / ডিভাইসে"
       ],
       "device_surfaces": [],
@@ -173,9 +167,6 @@
       "badge_labels": [
         "উৎপাদনশীলতা",
         "বিনামূল্যে শুরু · আজীবন আনলক",
-        "কোনও অ্যাকাউন্ট নেই",
-        "কোনও বিজ্ঞাপন নেই",
-        "কোনও ট্র্যাকিং নেই",
         "গোপনীয় / ডিভাইসে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/aibriefpack.html",
@@ -245,23 +236,18 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "Aim990 Plus — চাপেও দ্রুত ও নির্ভুল উত্তর | iOS App",
       "decision_context": "Aim990 Plus প্রাপ্তবয়স্ক শিক্ষার্থীদের জন্য ইংরেজি শোনা ও পড়ার নিবিড় অনুশীলন। এর মূল ধাপগুলো সময়ের চাপের মধ্যেও মনোযোগ ধরে রাখার অভ্যাস গড়ে তোলে: প্রথমে ৮ প্রশ্নের Warm-up, এরপর ১৫ মিনিটে ২০ প্রশ্নের Pressure Set, সবশেষে Mistake Replay। প্রতিটি ধাপ পরিষ্কারভাবে সাজানো, তাই অপ্রয়োজনীয় মেনু ঘাঁটা ছাড়াই অনুশীলন শুরু করা এবং পরের সেশনের লক্ষ্য ঠিক করা যায়। অ্যাপটিতে মোট ৬৩০টি সম্পূর্ণ মৌলিক প্রশ্ন রয়েছে। Part 1 থেকে Part 7—প্রতিটি অংশে ৯০টি প্রশ্ন এবং ছবিভিত্তিক অনুশীলনের জন্য ৯০টি আলাদা ছবি আছে। প্রশ্নগুলো শুনে অর্থ ধরতে, লিখিত তথ্য দ্রুত বুঝতে, প্রসঙ্গ থেকে সঠিক উত্তর বেছে নিতে এবং দীর্ঘ সেশনেও মনোযোগ অটুট রাখতে সহায়তা করে। কোনো প্রশ্নই আনুষ্ঠানিক পরীক্ষার উপকরণ নকল করে তৈরি নয়। হাতে থাকা সময় অনুযায়ী mini, half অথবা full mock বেছে নিন। ছোট সেশন প্রতিদিনের অভ্যাস ধরে রাখে, আর বড় সেশন দীর্ঘ সময় মনোযোগ ও সঠিক সময় বণ্টনের অনুশীলন করায়। ১৫০ শব্দের সংগ্রহ, ডিকটেশন, অডিওর গতি নিয়ন্ত্রণ এবং ডিভাইসের কণ্ঠস্বর—সব মিলিয়ে উচ্চারণ, বাক্যের ছন্দ ও দ্রুত কথ্য ইংরেজির সঙ্গে পরিচিত হতে সাহায্য করে। Mistake Replay ভুল হওয়া প্রশ্নগুলো আবার সামনে আনে, যাতে শুধু ফল দেখে থেমে না গিয়ে ভুলের কারণ নিয়ে কাজ করা যায়। দুর্বলতা বিশ্লেষণে অংশ, প্রশ্নের ধরন ও পারফরম্যান্স অনুযায়ী কোন জায়গায় বেশি মনোযোগ দরকার তা দেখা যায়। অগ্রগতির পাতায় সম্পন্ন সেশন, নির্ভুলতা এবং অনুশীলনের পরিবর্তন সংরক্ষিত থাকে। এগুলো শেখার নির্দেশক; অ্যাপ কোনো নির্দিষ্ট নম্বর বা ফল নিশ্চিত করে না। Aim990 Plus iPhone ও iPad—দুই ধরনের ডিভাইসেই ব্যবহারের উপযোগী। সরাসরি ডাউনলোডের সঙ্গেই সব সুবিধা অন্তর্ভুক্ত থাকে। অ্যাপের ভেতরে কেনাকাটা, সদস্যতা, পেওয়াল বা বিজ্ঞাপন নেই। কোনো অ্যাকাউন্ট, লগইন বা ব্যক্তিগত পরিচয় দেওয়ার প্রয়োজন হয় না। প্রশ্ন ও অগ্রগতি আপনার ডিভাইসেই থাকে; ট্র্যাকিং, অ্যানালিটিক্স কিংবা বাইরের সার্ভার ব্যবহার করা হয় না। ইন্টারনেট সংযোগ ছাড়াই পুরো অনুশীলন চালানো যায়। Aim990 Plus একটি স্বাধীন ও অনানুষ্ঠানিক শিক্ষাসহায়ক অ্যাপ; এটি ETS-এর সঙ্গে যুক্ত, পৃষ্ঠপোষিত বা অনুমোদিত নয়। TOEIC, ETS-এর ট্রেডমার্ক।",
-      "category": "education",
-      "category_label": "শিক্ষা",
+      "category": "kids",
+      "category_label": "শিশু ও শেখা",
       "purchase_model": "paid_upfront",
       "purchase_label": "পেইড ডাউনলোড",
       "one_time_option": true,
-      "privacy_facts": [
-        "offline"
-      ],
-      "privacy_labels": [
-        "অফলাইন"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "শিক্ষা",
-        "পেইড ডাউনলোড",
-        "অফলাইন"
+        "শিশু ও শেখা",
+        "পেইড ডাউনলোড"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/aim990plus.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/bn-BD/index.html",
@@ -375,25 +361,22 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "অ্যাপল ওয়াচসহ ভ্রমণকারীদের জন্য সেরা ব্যবহারিক ভাষা বাক্যাংশ অ্যাপ",
       "decision_context": "একটি যাত্রার আগে, বাস্তব পরিস্থিতির জন্য সম্পূর্ণ বাক্যাংশ বিচ্ছিন্ন শব্দের চেয়ে বেশি কার্যকর — ডেইলিমেট এই জন্য তৈরি।",
-      "category": "education",
-      "category_label": "শিক্ষা",
+      "category": "kids",
+      "category_label": "শিশু ও শেখা",
       "purchase_model": "paid_upfront",
       "purchase_label": "পেইড ডাউনলোড",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
       "device_surfaces": [
-        "widget",
         "apple_watch"
       ],
       "device_labels": [
-        "উইজেট",
         "Apple Watch"
       ],
       "badge_labels": [
-        "শিক্ষা",
+        "শিশু ও শেখা",
         "পেইড ডাউনলোড",
-        "উইজেট",
         "Apple Watch"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
@@ -477,34 +460,17 @@
       "purchase_label": "বিনামূল্যে শুরু · আজীবন আনলক",
       "one_time_option": true,
       "privacy_facts": [
-        "offline",
-        "no_account",
-        "no_tracking",
-        "private_or_on_device"
+        "offline"
       ],
       "privacy_labels": [
-        "অফলাইন",
-        "কোনও অ্যাকাউন্ট নেই",
-        "কোনও ট্র্যাকিং নেই",
-        "গোপনীয় / ডিভাইসে"
+        "অফলাইন"
       ],
-      "device_surfaces": [
-        "widget",
-        "apple_watch"
-      ],
-      "device_labels": [
-        "উইজেট",
-        "Apple Watch"
-      ],
+      "device_surfaces": [],
+      "device_labels": [],
       "badge_labels": [
         "অর্থ ও ভ্রমণ",
         "বিনামূল্যে শুরু · আজীবন আনলক",
-        "অফলাইন",
-        "কোনও অ্যাকাউন্ট নেই",
-        "কোনও ট্র্যাকিং নেই",
-        "গোপনীয় / ডিভাইসে",
-        "উইজেট",
-        "Apple Watch"
+        "অফলাইন"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/gmoneylite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/bn-BD/index.html",
@@ -538,32 +504,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "বিনামূল্যে শুরু · আজীবন আনলক",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account",
-        "no_tracking",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "কোনও অ্যাকাউন্ট নেই",
-        "কোনও ট্র্যাকিং নেই",
-        "গোপনীয় / ডিভাইসে"
-      ],
-      "device_surfaces": [
-        "widget",
-        "apple_watch"
-      ],
-      "device_labels": [
-        "উইজেট",
-        "Apple Watch"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
       "badge_labels": [
         "অর্থ ও ভ্রমণ",
-        "বিনামূল্যে শুরু · আজীবন আনলক",
-        "কোনও অ্যাকাউন্ট নেই",
-        "কোনও ট্র্যাকিং নেই",
-        "গোপনীয় / ডিভাইসে",
-        "উইজেট",
-        "Apple Watch"
+        "বিনামূল্যে শুরু · আজীবন আনলক"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/bn-BD/index.html",
@@ -590,7 +537,7 @@
       "app_name": "HoursTag: সময়ে কেনাকাটা",
       "priority_rank": null,
       "priority_group": "baseline_coverage",
-      "publisher_query": "HoursTag: সময়ে কেনাকাটা — Budget, Savings & Spending | iOS App",
+      "publisher_query": "HoursTag: সময়ে কেনাকাটা — আসল খরচ কত? | iOS App",
       "decision_context": "আসল খরচ কত? ডলারে নয় — আপনার জীবনের ঘন্টায়।",
       "category": "finance",
       "category_label": "অর্থ ও ভ্রমণ",
@@ -620,7 +567,7 @@
       "app_store_id": "6754218117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
       "app_store_url": "https://apps.apple.com/app/id6754218117",
-      "app_store_cta_label": "Get HoursTag: সময়ে কেনাকাটা on the App Store",
+      "app_store_cta_label": "App Store থেকে HoursTag: সময়ে কেনাকাটা ডাউনলোড করুন",
       "storefront_facts": null,
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।",
@@ -1459,24 +1406,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "বিনামূল্যে শুরু · আজীবন আনলক",
       "one_time_option": true,
-      "privacy_facts": [
-        "offline",
-        "no_account",
-        "no_ads"
-      ],
-      "privacy_labels": [
-        "অফলাইন",
-        "কোনও অ্যাকাউন্ট নেই",
-        "কোনও বিজ্ঞাপন নেই"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ভ্রমণ",
-        "বিনামূল্যে শুরু · আজীবন আনলক",
-        "অফলাইন",
-        "কোনও অ্যাকাউন্ট নেই",
-        "কোনও বিজ্ঞাপন নেই"
+        "বিনামূল্যে শুরু · আজীবন আনলক"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/bn-BD/index.html",

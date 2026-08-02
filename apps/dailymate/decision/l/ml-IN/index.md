@@ -2,7 +2,7 @@
 title: "ആപ്പിൾ വാച്ച് ഉള്ള യാത്രക്കാർക്കായി മികച്ച പ്രായോഗിക ഭാഷാ വാചക ആപ്പ്"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/ml-IN/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -13,9 +13,8 @@ publisher: "Lumi Studio"
 
 ഒരു യാത്രയ്ക്ക് മുമ്പ്, യഥാർത്ഥ സാഹചര്യങ്ങൾക്ക് പൂർണ്ണ വാചകങ്ങൾ, സമ്മർദ്ദത്തിൽ നിങ്ങൾ സ്വയം ചേർക്കേണ്ടിവരുന്ന വേർതിരിച്ച വാക്കുകളേക്കാൾ കൂടുതൽ പ്രയോജനകരമാണ് — ഡെയിലിമേറ്റ് ഇതിന് രൂപകൽപ്പന ചെയ്തതാണ്.
 
-- വിദ്യാഭ്യാസം
+- കുട്ടികൾ & പഠനം
 - പണം നൽകേണ്ട ഡൗൺലോഡ്
-- വിഡ്ജറ്റ്
 - Apple Watch
 - App Store · ₹ 1,199
 

@@ -2,7 +2,7 @@
 title: "G+Money Lite — യാത്രാച്ചെലവും കറൻസിയും | iOS App"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/ml-IN/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,11 +16,6 @@ G+Money Lite — സ്മാർട്ട് യാത്രാ നാണ്യ�
 - പണം & യാത്ര
 - സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക്
 - ഓഫ്‌ലൈൻ
-- അക്കൗണ്ട് ഇല്ല
-- ട്രാക്കിംഗ് ഇല്ല
-- സ്വകാര്യത / ഉപകരണത്തിൽ
-- വിഡ്ജറ്റ്
-- Apple Watch
 - App Store · സൗജന്യം
 
 [App Store-ൽ നിന്ന് G+Money Lite നേടൂ](https://apps.apple.com/in/app/id6793436548)

@@ -2,7 +2,7 @@
 title: "AI Brief — Fișiere în context clar | iOS App"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/ro/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,6 @@ Context mai bun. Răspunsuri mai bune. Transformă capturile de ecran, fișierel
 
 - Productivitate
 - Început gratuit · deblocare pe viață
-- Fără cont
-- Fără reclame
-- Fără urmărire
 - Privat / pe dispozitiv
 - App Store · Gratuit
 

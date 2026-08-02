@@ -2,7 +2,7 @@
 title: "అకౌంట్ లేకుండా ఉత్తమ ట్రావెల్ బడ్జెట్ ట్రాకర్ యాప్ iPhone కోసం"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/te-IN/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

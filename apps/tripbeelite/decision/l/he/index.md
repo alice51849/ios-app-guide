@@ -2,7 +2,7 @@
 title: "האפליקציה הטובה ביותר לתכנון טיול פשוט לטיול אחד קרוב לאייפון"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/he/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,6 @@ publisher: "Lumi Studio"
 
 - נסיעות
 - התחלה ללא תשלום · פתיחה לכל החיים
-- לא מקוון
-- ללא חשבון
-- ללא פרסומות
 - App Store · בחינם
 
 [קבלו את TripBee Lite ב-App Store →](https://apps.apple.com/il/app/id6791299610)

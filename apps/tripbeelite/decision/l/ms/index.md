@@ -2,7 +2,7 @@
 title: "aplikasi perancang perjalanan mudah terbaik untuk satu perjalanan akan datang iPhone"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/ms/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,6 @@ Jika anda merancang satu perjalanan akan datang, garis masa yang tenang untuk pe
 
 - Perjalanan
 - Percuma untuk bermula · buka kunci kekal
-- Luar talian
-- Tiada akaun
-- Tiada iklan
 - App Store · Percuma
 
 [Dapatkan TripBee Lite di App Store →](https://apps.apple.com/my/app/id6791299610)

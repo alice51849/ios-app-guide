@@ -1,25 +1,24 @@
 ---
-title: "Aim990 Plus — Inglês contra o relógio | iOS App"
+title: "best offline English listening and reading exam trainer for iPhone"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/pt-PT/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# Aim990 Plus — Inglês contra o relógio | iOS App
+# best offline English listening and reading exam trainer for iPhone
 
-Treine a compreensão do inglês com sessões que exigem atenção, ritmo e resistência. Aim990 Plus destina-se a adultos que pretendem praticar de forma rigorosa no iPhone ou iPad, em casa, nos transportes ou durante uma pausa do dia. O percurso principal é simples e bem definido. Comece com um Warm-up de 8 perguntas, avance para um Pressure Set de 20 perguntas a realizar em 15 minutos e termine no Mistake Replay, onde pode rever cada erro e hesitação. Esta sequência ajuda a gerir o tempo sem reduzir o estudo a uma corrida e sem promessas de classificações ou resultados. Encontre 630 perguntas originais organizadas em 7 partes de 90 perguntas cada, além de 90 fotografias diferentes. Alterne compreensão oral, leitura, ditado e treino de velocidade. Uma seleção de 150 palavras permite consolidar o vocabulário, enquanto a voz do dispositivo proporciona outra forma de ouvir sem descarregar conteúdos adicionais. Escolha uma simulação mini, de meia duração ou completa consoante a sua disponibilidade. A análise dos pontos fracos identifica os tipos de exercício que deve retomar, e o acompanhamento do progresso apresenta a sua regularidade de forma clara. Aproveite uma viagem curta para praticar ou reserve uma sessão mais longa para trabalhar a concentração. Todas as funcionalidades estão incluídas na descarga. Não existem subscrições, compras na aplicação, publicidade ou barreiras de pagamento. Também não é necessário criar uma conta. A aplicação funciona totalmente offline, sem servidores, rastreio ou ferramentas de análise; os dados de estudo permanecem no seu dispositivo. Aim990 Plus é uma aplicação independente e não oficial, sem afiliação nem aprovação da ETS. TOEIC é uma marca registada da ETS.
+Aim990 Plus — Build calm, accurate decisions under time with 630 original questions, focused pressure sets, mistake replay, mocks, dictation, and offline progress. Paid download · Pay once · No subscription.
 
-- Educação
+- Crianças e aprendizagem
 - Descarregamento pago
-- Offline
 - App Store · 6,99 €
 
-[Baixe Aim990 Plus na App Store](https://apps.apple.com/pt/app/id6792483140)
+[Get Aim990 Plus on the App Store →](https://apps.apple.com/pt/app/id6792483140)
 
-[Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/aim990plus.html)
+[Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html)
 
-> Este conteúdo é publicado diretamente pela Lumi Studio, que desenvolve todas as apps apresentadas.
+> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

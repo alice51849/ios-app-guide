@@ -2,7 +2,7 @@
 title: "ఇంట్లో బిడ్డల మరియు చిన్నపిల్లల కోసం ఉత్తమ పాస్‌పోర్ట్ ఫోటో యాప్"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/te-IN/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "ứng dụng lập kế hoạch chuyến đi đơn giản tốt nhất cho một chuyến đi sắp tới trên iPhone"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/vi/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,6 @@ Nếu bạn đang lên kế hoạch cho một hành trình sắp tới, một d�
 
 - Du lịch
 - Bắt đầu miễn phí · mở khóa vĩnh viễn
-- Ngoại tuyến
-- Không tài khoản
-- Không quảng cáo
 - App Store · Miễn phí
 
 [Tải TripBee Lite trên App Store →](https://apps.apple.com/vn/app/id6791299610)

@@ -40,25 +40,21 @@
       "features": [
         "Free to start",
         "One-time unlock",
-        "No subscription",
-        "On-device",
-        "No account",
-        "No ads",
-        "No tracking"
+        "No subscription"
       ],
       "keywords": [
-        "organize context for AI",
-        "turn screenshots into AI brief",
-        "summarize PDF and notes before AI",
-        "private OCR brief app",
-        "AI prompt context organizer",
-        "source tracking for AI prompts"
+        "organize context for ai",
+        "turn screenshots into ai brief",
+        "summarize pdf and notes before ai",
+        "private ocr brief app",
+        "ai prompt context organizer",
+        "source tracking for ai prompts"
       ],
       "capabilities": {
         "offline": false,
-        "no_account": true,
-        "no_ads": true,
-        "no_tracking": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
         "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
@@ -116,10 +112,10 @@
       "key": "aim990plus",
       "app_store_id": "6792483140",
       "name": "Aim990 Plus",
-      "category": "education",
+      "category": "kids",
       "category_labels": {
-        "en": "Education",
-        "zh-Hant": "學習"
+        "en": "Kids & learning",
+        "zh-Hant": "兒童與學習"
       },
       "summaries": {
         "en": "Train for clear decisions under exam pressure",
@@ -132,23 +128,17 @@
       },
       "one_time_option": true,
       "features": [
-        "630 original questions",
-        "Offline progress",
-        "Mock tests",
+        "Paid download",
         "Pay once",
         "No subscription"
       ],
       "keywords": [
-        "english test",
-        "listening practice",
-        "reading practice",
-        "mock test",
-        "dictation",
-        "exam prep",
-        "offline study"
+        "aim",
+        "plus",
+        "education"
       ],
       "capabilities": {
-        "offline": true,
+        "offline": false,
         "no_account": false,
         "no_ads": false,
         "no_tracking": false,
@@ -253,13 +243,13 @@
       "key": "dailymate",
       "app_store_id": "6790418321",
       "name": "DailyMate",
-      "category": "education",
+      "category": "kids",
       "category_labels": {
-        "en": "Education",
-        "zh-Hant": "學習"
+        "en": "Kids & learning",
+        "zh-Hant": "兒童與學習"
       },
       "summaries": {
-        "en": "Practice 8,400 useful phrases in 47 languages on iPhone, iPad, a Home Screen widget and Apple Watch",
+        "en": "Learn a language in the form you actually use it: complete sentences, not isolated vocabul",
         "zh-Hant": "學語言不該只背零散單字，而是要從完整句子理解真實用法。DailyMate 收錄 47 種學習語言、8,400 句實用生活會話，依 14 大主題與 84 個具體情境清楚整理。一次付費即可使用完整 App，沒有訂閱。"
       },
       "purchase_model": "paid_upfront",
@@ -269,20 +259,17 @@
       },
       "one_time_option": true,
       "features": [
-        "8,400 practical phrases",
-        "47 learning languages",
-        "Widget + Apple Watch",
+        "Paid download",
         "Pay once",
         "No subscription"
       ],
       "keywords": [
-        "language phrases",
-        "travel phrases",
-        "complete sentences",
-        "language learning",
-        "home screen widget",
-        "apple watch",
-        "no subscription"
+        "practical language phrase",
+        "travel phrases with apple watch",
+        "complete sentences for travel",
+        "phrases in 47 languages",
+        "real life language phrases",
+        "best practical language phrase app for travelers with apple watch"
       ],
       "capabilities": {
         "offline": false,
@@ -290,7 +277,7 @@
         "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
-        "widget": true,
+        "widget": false,
         "apple_watch": true
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
@@ -360,15 +347,9 @@
       },
       "one_time_option": true,
       "features": [
-        "1 trip and 3 expenses free",
-        "One-time lifetime unlock",
-        "No subscription",
-        "Offline with saved rates",
-        "Private on-device storage",
-        "No account",
-        "No tracking",
-        "Home Screen widget",
-        "Apple Watch"
+        "Free to start",
+        "One-time unlock",
+        "No subscription"
       ],
       "keywords": [
         "free travel expense tracker",
@@ -380,12 +361,12 @@
       ],
       "capabilities": {
         "offline": true,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
       "verified_live": true
@@ -456,12 +437,7 @@
       "features": [
         "Free to start",
         "One-time unlock",
-        "No subscription",
-        "On-device privacy",
-        "No account",
-        "No tracking",
-        "Home Screen widget",
-        "Apple Watch"
+        "No subscription"
       ],
       "keywords": [
         "price in work hours",
@@ -473,12 +449,12 @@
       ],
       "capabilities": {
         "offline": false,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
       "verified_live": true
@@ -981,13 +957,13 @@
       "key": "maskmyfile",
       "app_store_id": "6792850916",
       "name": "Mask My File",
-      "category": "utility",
+      "category": "photo-utility",
       "category_labels": {
-        "en": "More",
-        "zh-Hant": "更多"
+        "en": "Photo & utility",
+        "zh-Hant": "照片與實用工具"
       },
       "summaries": {
-        "en": "Redact private details from images, PDFs, and structured text entirely on device, then reopen and verify the protected copy.",
+        "en": "Share safely without losing the context people actually need. Mask My File finds private d",
         "zh-Hant": "安全分享，同時保留有用的脈絡。Mask My File 會在你送出檔案前找出私密資訊，永久遮蔽後，再重新開啟並驗證輸出的新檔案，確認無誤才顯示 Private Ready。"
       },
       "purchase_model": "free_with_lifetime_unlock",
@@ -1002,12 +978,9 @@
         "No subscription"
       ],
       "keywords": [
-        "file redaction",
-        "redact pdf",
-        "hide personal data",
-        "remove metadata",
-        "batch redaction",
-        "on-device privacy"
+        "mask",
+        "file",
+        "utilities"
       ],
       "capabilities": {
         "offline": false,
@@ -1093,11 +1066,11 @@
       ],
       "keywords": [
         "last time tracker",
+        "when did i last",
+        "household maintenance tracker",
         "days since tracker",
-        "household maintenance",
-        "recurring reminders",
-        "life event log",
-        "routine history"
+        "recurring life event history",
+        "routine reminder no subscription"
       ],
       "capabilities": {
         "offline": false,
@@ -1403,25 +1376,22 @@
       },
       "one_time_option": true,
       "features": [
-        "One complete journey free",
-        "One-time premium unlock",
-        "No subscription",
-        "No account",
-        "No ads or tracking"
+        "Free to start",
+        "One-time unlock",
+        "No subscription"
       ],
       "keywords": [
-        "trip planner",
-        "travel itinerary",
-        "one trip planner",
-        "daily travel timeline",
-        "packing list",
-        "offline travel",
-        "no subscription"
+        "one upcoming trip",
+        "one active trip",
+        "simple trip planner",
+        "occasional traveler",
+        "first trip plan",
+        "best simple trip planner app for one upcoming trip iphone"
       ],
       "capabilities": {
-        "offline": true,
-        "no_account": true,
-        "no_ads": true,
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
         "widget": false,
@@ -1524,13 +1494,13 @@
       "key": "wifiaid",
       "app_store_id": "6790467886",
       "name": "WiFi Aid",
-      "category": "utility",
+      "category": "photo-utility",
       "category_labels": {
-        "en": "More",
-        "zh-Hant": "更多"
+        "en": "Photo & utility",
+        "zh-Hant": "照片與實用工具"
       },
       "summaries": {
-        "en": "Find the most likely connection problem with independent path, DNS, TCP, TLS, timing and stability checks.",
+        "en": "Find the most likely connection problem with independent path, DNS, TCP, TLS, timing and s",
         "zh-Hant": "用多路徑、DNS、TCP、TLS、回應時間與穩定度檢查，找出最可能的連線問題。App Store 一次付費買斷，無訂閱、無廣告、無追蹤。"
       },
       "purchase_model": "paid_upfront",
@@ -1545,12 +1515,9 @@
         "No subscription"
       ],
       "keywords": [
-        "wifi analyzer",
-        "network diagnostics",
-        "internet outage",
-        "dns test",
-        "latency test",
-        "router troubleshooting"
+        "wifi",
+        "aid",
+        "utilities"
       ],
       "capabilities": {
         "offline": false,

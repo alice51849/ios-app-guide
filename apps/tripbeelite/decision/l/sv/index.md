@@ -2,7 +2,7 @@
 title: "bästa enkla reseplaneraren för en kommande resa på iPhone"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/sv/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,6 @@ Om du planerar en kommande resa är en lugn tidslinje för just den resan mer an
 
 - Resor
 - Gratis att börja · livstidsupplåsning
-- Offline
-- Inget konto
-- Inga annonser
 - App Store · Gratis
 
 [Hämta TripBee Lite i App Store →](https://apps.apple.com/se/app/id6791299610)

@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "da",
-  "dateModified": "2026-07-31",
-  "content_digest": "d25fe9a1e078b3c0c14af98cbedf0273117830c2e9a4b4d0f3b9906385ab48e2",
-  "generation_digest": "e1d80cb6ea88329d88881233d28cead0c2c1140eaa12f67295589794b128e1e4",
+  "dateModified": "2026-08-02",
+  "content_digest": "e5bfe67ce45753740357eeca269b9d35c0540b62ea2875b9d353bd43f3b5580a",
+  "generation_digest": "fba7106f0739bc21b7780395db7e34437f3398d54d36d80e4aa52f98445f0433",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -26,8 +26,8 @@
       "priority_group": "launch_boost",
       "publisher_query": "Mask My File — Skjul data før du deler | iOS App",
       "decision_context": "Del trygt uden at miste den nyttige sammenhæng. Mask My File finder private oplysninger, før du sender en fil, tildækker permanent det, du vælger, og åbner og verificerer derefter den nye kopi, før Private Ready vises. DET KAN DU GØRE • Billeder og PDF: forhåndsvisning i fuld bredde, zoom op til 5×, blødt træk og præcis manuel markering. • Visuelle filer: permanent tildækning med en uigennemsigtig blok eller fjernelse. Ansigts- og stregkodegenkendelse markerer kun områder, du selv gennemgår. • Tekst, JSON, XML, HTML, CSV, TSV og RTF: søg hver forekomst, og brug fuld maske, delvis maske, pladsholder, pseudonym eller fjernelse. • Fjern metadata, hvor formatet tillader det. Arbejd side for side i PDF, eller behandl op til 100 filer med individuel forhåndsvisning, søgning på tværs af filer og manuel markering for hver fil. NÅR DET VIRKELIG GÆLDER Før du sender en boligansøgning, deler et lægedokument eller giver en kundesag videre til en kollega, så bevar den nødvendige sammenhæng og skjul for altid de detaljer, andre ikke skal se. PRIVAT FRA BUNDEN Alt behandles på din enhed. Ingen konto, reklamer, sporing, analyse eller upload af indhold. Apple Vision og den indbyggede Tesseract OCR kører lokalt. Ansigtsgenkendelse opretter kun områder: den identificerer ingen, opretter ingen skabelon og deler eller gemmer ikke ansigtsdata. Apple håndterer køb med StoreKit. Mask My File bruger ikke VPN, NetworkExtension, proxy, tunnel, DNS-filter eller netværksrouting. Originaler overskrives aldrig. KØB ÉN GANG. BRUG DET FOR ALTID. Ét livstidskøb låser op for ubegrænsede verificerede filer og batchbehandling. Ingen abonnementer. Gendan dit køb via App Store.",
-      "category": "utility",
-      "category_label": "Mere",
+      "category": "photo-utility",
+      "category_label": "Foto & værktøj",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Gratis at komme i gang · permanent oplåsning",
       "one_time_option": true,
@@ -40,7 +40,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "Mere",
+        "Foto & værktøj",
         "Gratis at komme i gang · permanent oplåsning",
         "Privat / på enheden",
         "App Store · Gratis"
@@ -76,8 +76,8 @@
       "priority_group": "launch_boost",
       "publisher_query": "WiFi Aid — Netværksdiagnose med beviser | iOS App",
       "decision_context": "Find den mest sandsynlige årsag med uafhængige test af ruter, DNS, TCP, TLS, svartid og stabilitet. Én forudbetaling, intet abonnement, reklamer eller sporing. • Start Test — Wi-Fi, DNS og internet med ét tryk • Deep Check — Flere beviser og stabilitet • Tjek Website — Se om siden eller nettet er problemet • Beviser — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Ustabil forbindelse — Variation • Testhistorik — Dine data forbliver på denne enhed • Apple Watch — Start Test • Widget · iPad — Forbundet · Start Test Ingen konto, reklamer eller sporing. Dine data forbliver på denne enhed. Ét engangskøb i App Store. Intet abonnement.",
-      "category": "utility",
-      "category_label": "Mere",
+      "category": "photo-utility",
+      "category_label": "Foto & værktøj",
       "purchase_model": "paid_upfront",
       "purchase_label": "Betalt download",
       "one_time_option": true,
@@ -86,7 +86,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "Mere",
+        "Foto & værktøj",
         "Betalt download",
         "App Store · 49,00 kr"
       ],
@@ -172,15 +172,9 @@
       "purchase_label": "Gratis at komme i gang · permanent oplåsning",
       "one_time_option": true,
       "privacy_facts": [
-        "no_account",
-        "no_ads",
-        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
-        "Ingen konto",
-        "Ingen reklamer",
-        "Ingen sporing",
         "Privat / på enheden"
       ],
       "device_surfaces": [],
@@ -188,9 +182,6 @@
       "badge_labels": [
         "Produktivitet",
         "Gratis at komme i gang · permanent oplåsning",
-        "Ingen konto",
-        "Ingen reklamer",
-        "Ingen sporing",
         "Privat / på enheden",
         "App Store · Gratis"
       ],
@@ -270,23 +261,18 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "Aim990 Plus — Engelsk træning under pres | iOS App",
       "decision_context": "Aim990 Plus er et samlet træningsværktøj til voksne, der vil læse og forstå talt engelsk sikkert, også når uret tikker. Dagens målrettede forløb begynder med 8 opvarmningsopgaver, fortsætter med et Pressure Set på 20 opgaver på 15 minutter og slutter med Mistake Replay. Her møder du straks de opgaver igen, som du svarede forkert på, så hver fejl bliver til konkret træning. Indholdet rummer 630 originale opgaver. Del 1–7 har hver 90 opgaver, og billedtræningen bruger 90 forskellige fotografier. Du kan arbejde med lytteforståelse, læseforståelse, diktat og et ordforråd på 150 ord. Justerbar afspilningshastighed og enhedens egen talefunktion gør det lettere at øve udtale, lytte efter detaljer og gradvist sætte tempoet op. Når du vil træne længere, kan du vælge en mini-, halv- eller fuld prøve. Tidsstyringen giver en realistisk udfordring, men appen lover ikke et bestemt resultat. Svaghedsanalysen viser, hvilke dele og opgavetyper der kræver ekstra opmærksomhed. Dine fremskridt gemmes lokalt, så du kan følge udviklingen uden at oprette en konto. Alt indhold er med i den betalte download og er åbent fra første start. Der er ingen køb i appen, abonnementer, betalingsmur, annoncer eller login. Hele træningen fungerer offline. Ingen oplysninger sendes til en server, og appen bruger hverken sporing eller analyseværktøjer. Din historik og dine fremskridt bliver på din egen enhed. TOEIC er et varemærke tilhørende ETS. Aim990 Plus er et uofficielt, uafhængigt træningsværktøj og er hverken godkendt af eller tilknyttet ETS.",
-      "category": "education",
-      "category_label": "Uddannelse",
+      "category": "kids",
+      "category_label": "Børn & læring",
       "purchase_model": "paid_upfront",
       "purchase_label": "Betalt download",
       "one_time_option": true,
-      "privacy_facts": [
-        "offline"
-      ],
-      "privacy_labels": [
-        "Offline"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "Uddannelse",
+        "Børn & læring",
         "Betalt download",
-        "Offline",
         "App Store · 49,00 kr"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/aim990plus.html",
@@ -415,25 +401,22 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "bedste praktiske sprogfrase-app til rejsende med Apple Watch",
       "decision_context": "Før en rejse er komplette sætninger til virkelige situationer mere nyttige end isolerede ord, du stadig skal samle under pres — DailyMate er skabt til dette.",
-      "category": "education",
-      "category_label": "Uddannelse",
+      "category": "kids",
+      "category_label": "Børn & læring",
       "purchase_model": "paid_upfront",
       "purchase_label": "Betalt download",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
       "device_surfaces": [
-        "widget",
         "apple_watch"
       ],
       "device_labels": [
-        "Widget",
         "Apple Watch"
       ],
       "badge_labels": [
-        "Uddannelse",
+        "Børn & læring",
         "Betalt download",
-        "Widget",
         "Apple Watch",
         "App Store · 99,00 kr"
       ],
@@ -527,34 +510,17 @@
       "purchase_label": "Gratis at komme i gang · permanent oplåsning",
       "one_time_option": true,
       "privacy_facts": [
-        "offline",
-        "no_account",
-        "no_tracking",
-        "private_or_on_device"
+        "offline"
       ],
       "privacy_labels": [
-        "Offline",
-        "Ingen konto",
-        "Ingen sporing",
-        "Privat / på enheden"
+        "Offline"
       ],
-      "device_surfaces": [
-        "widget",
-        "apple_watch"
-      ],
-      "device_labels": [
-        "Widget",
-        "Apple Watch"
-      ],
+      "device_surfaces": [],
+      "device_labels": [],
       "badge_labels": [
         "Penge & rejse",
         "Gratis at komme i gang · permanent oplåsning",
         "Offline",
-        "Ingen konto",
-        "Ingen sporing",
-        "Privat / på enheden",
-        "Widget",
-        "Apple Watch",
         "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/gmoneylite.html",
@@ -593,32 +559,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Gratis at komme i gang · permanent oplåsning",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account",
-        "no_tracking",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "Ingen konto",
-        "Ingen sporing",
-        "Privat / på enheden"
-      ],
-      "device_surfaces": [
-        "widget",
-        "apple_watch"
-      ],
-      "device_labels": [
-        "Widget",
-        "Apple Watch"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
       "badge_labels": [
         "Penge & rejse",
         "Gratis at komme i gang · permanent oplåsning",
-        "Ingen konto",
-        "Ingen sporing",
-        "Privat / på enheden",
-        "Widget",
-        "Apple Watch",
         "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/hourstaglite.html",
@@ -681,7 +628,7 @@
       "app_store_id": "6754218117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
       "app_store_url": "https://apps.apple.com/dk/app/id6754218117",
-      "app_store_cta_label": "Get HoursTag: Timer at købe on the App Store",
+      "app_store_cta_label": "Hent HoursTag: Timer at købe i App Store",
       "storefront_facts": {
         "price": "39",
         "currency": "DKK",
@@ -1614,24 +1561,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Gratis at komme i gang · permanent oplåsning",
       "one_time_option": true,
-      "privacy_facts": [
-        "offline",
-        "no_account",
-        "no_ads"
-      ],
-      "privacy_labels": [
-        "Offline",
-        "Ingen konto",
-        "Ingen reklamer"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Rejse",
         "Gratis at komme i gang · permanent oplåsning",
-        "Offline",
-        "Ingen konto",
-        "Ingen reklamer",
         "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",

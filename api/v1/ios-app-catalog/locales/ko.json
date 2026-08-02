@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-31",
-  "content_digest": "741556b580f83a270aa348b18ea5e42602cbe0a1c169fe9115da666dbf860cdb",
+  "date_modified": "2026-08-02",
+  "content_digest": "8f14ab5dd69dc7ba96582d9414c5670e0f832e1998ad3b3ee53a697c7a258fbb",
   "locale": "ko",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -40,9 +40,9 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
-        "no_ads": true,
-        "no_tracking": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
         "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
@@ -99,7 +99,7 @@
       "app_store_id": "6792483140",
       "name": "Aim990 Plus",
       "summary": "많이 푸는 데서 멈추지 않고, 제한된 시간 안에 정확히 판단하는 힘까지 기르세요.",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "듣기",
         "독해",
@@ -127,7 +127,7 @@
       "purchase_model": "paid_upfront",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
+        "offline": false,
         "no_account": false,
         "no_ads": false,
         "no_tracking": false,
@@ -280,7 +280,7 @@
       "app_store_id": "6790418321",
       "name": "DailyMate: 문장으로 배우는 언어",
       "summary": "낱말을 따로 외우는 대신, 실제 상황에서 그대로 쓸 수 있는 완전한 문장으로 언어를 익혀 보세요. DailyMate는 47개 학습 언어의 실용 문장 8,400개를 14가지 생활 주제와 84가지 구체적인 상황으로 정리했습니다. 한 번 구매하면 전체 앱을 이용할 수 있으며 구독은 없습니다.",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "영어회화",
         "영어공부",
@@ -312,7 +312,7 @@
         "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
-        "widget": true,
+        "widget": false,
         "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/kr/app/id6790418321",
@@ -422,12 +422,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": true,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/kr/app/id6793436548",
       "guide_url": "https://alice51849.github.io/ios-app-guide/ko/gmoneylite.html",
@@ -538,12 +538,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/kr/app/id6794039979",
       "guide_url": "https://alice51849.github.io/ios-app-guide/ko/hourstaglite.html",
@@ -1298,7 +1298,7 @@
       "app_store_id": "6792850916",
       "name": "Mask My File",
       "summary": "유용한 맥락은 지키면서 안전하게 공유하세요. Mask My File은 파일을 보내기 전에 개인정보를 찾아 영구적으로 가린 뒤, 새로 내보낸 파일을 다시 열어 검증하고 나서야 Private Ready를 표시합니다.",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "마스킹",
         "지우기",
@@ -1832,9 +1832,9 @@
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
-        "no_account": true,
-        "no_ads": true,
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
         "widget": false,
@@ -1982,7 +1982,7 @@
       "app_store_id": "6790467886",
       "name": "WiFi Aid",
       "summary": "다중 경로와 DNS, TCP, TLS, 응답 시간, 안정성을 함께 확인해 가장 가능성 높은 원인을 찾으세요. App Store 최초 1회 결제이며 구독, 광고, 추적이 없습니다.",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "인터넷장애",
         "공유기",

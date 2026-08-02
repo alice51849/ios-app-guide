@@ -1,24 +1,24 @@
 ---
-title: "WiFi Aid — Diagnóstico de rede fiável | iOS App"
+title: "best wifi troubleshooting app for remote workers with connected but no internet"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/pt-PT/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid — Diagnóstico de rede fiável | iOS App
+# best wifi troubleshooting app for remote workers with connected but no internet
 
-Encontre a causa mais provável com testes independentes de rotas, DNS, TCP, TLS, tempos e estabilidade. Uma compra inicial, sem subscrição, anúncios ou rastreio. • Fazer um Teste — Testes de Wi-Fi e DNS num só toque • Teste Profundo — Mais provas e estabilidade da rede • Testar um Site — Verifique se um site ou a internet estão a falhar • Provas — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • A ligação parece instável — Flutuação • Histórico — Registos privados apenas neste dispositivo • Apple Watch — Fazer um Teste • Widget · iPad — Ligado · Fazer um Teste Sem conta, anúncios ou rastreio. Registos privados apenas neste dispositivo. Uma compra inicial na App Store. Sem subscrição.
+When Wi-Fi says connected but work still cannot get online, the useful first step is to identify whether the failure is DNS, the wider internet, instability or one destination instead of guessing — WiFi Aid is built for this.
 
-- Mais
+- Fotografia e utilidade
 - Descarregamento pago
 - App Store · 6,99 €
 
-[Baixe WiFi Aid na App Store](https://apps.apple.com/pt/app/id6790467886)
+[Get WiFi Aid on the App Store →](https://apps.apple.com/pt/app/id6790467886)
 
-[Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/wifiaid.html)
+[Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html)
 
-> Este conteúdo é publicado diretamente pela Lumi Studio, que desenvolve todas as apps apresentadas.
+> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

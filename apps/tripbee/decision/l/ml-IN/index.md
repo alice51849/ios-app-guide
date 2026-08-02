@@ -2,7 +2,7 @@
 title: "iPhone-ക്കുള്ള മികച്ച യാത്രാ യാത്രാമാർഗ്ഗം പ്ലാനർ ആപ്പ്"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/ml-IN/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"

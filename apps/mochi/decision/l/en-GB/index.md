@@ -2,7 +2,7 @@
 title: "best simple to do list app iphone no subscription"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/en-GB/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "nl-NL",
-  "dateModified": "2026-07-31",
-  "content_digest": "d25fe9a1e078b3c0c14af98cbedf0273117830c2e9a4b4d0f3b9906385ab48e2",
-  "generation_digest": "e1d80cb6ea88329d88881233d28cead0c2c1140eaa12f67295589794b128e1e4",
+  "dateModified": "2026-08-02",
+  "content_digest": "e5bfe67ce45753740357eeca269b9d35c0540b62ea2875b9d353bd43f3b5580a",
+  "generation_digest": "fba7106f0739bc21b7780395db7e34437f3398d54d36d80e4aa52f98445f0433",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -26,8 +26,8 @@
       "priority_group": "launch_boost",
       "publisher_query": "Mask My File — Verberg gegevens vóór delen | iOS App",
       "decision_context": "Deel veilig zonder de nuttige context te verliezen. Mask My File vindt privégegevens voordat u een bestand verstuurt, maakt permanent onleesbaar wat u kiest en opent en verifieert daarna de nieuwe kopie voordat Private Ready verschijnt. WAT U KUNT DOEN • Afbeeldingen en PDF: voorbeeld op volledige breedte, zoom tot 5×, vloeiend slepen en nauwkeurige handmatige selectie. • Visuele bestanden: permanent afdekken met een dekkend blok of verwijderen. Gezichts- en streepjescodedetectie markeert alleen gebieden die u zelf beoordeelt. • Tekst, JSON, XML, HTML, CSV, TSV en RTF: doorzoek elke overeenkomst en gebruik een volledig masker, gedeeltelijk masker, tijdelijke aanduiding, pseudoniem of verwijdering. • Verwijder metadata waar de indeling dat toelaat. Werk pagina voor pagina in PDF of verwerk tot 100 bestanden met een eigen voorbeeld, zoeken over bestanden heen en handmatige selectie per bestand. WANNEER HET ECHT TELT Voordat u een huuraanvraag verstuurt, een medisch document deelt of een klantdossier aan een collega geeft, behoudt u de nodige context en verbergt u voorgoed de details die anderen niet hoeven te zien. PRIVÉ DOOR ONTWERP Alles wordt op uw apparaat verwerkt. Geen account, advertenties, tracking, analyse of upload van inhoud. Apple Vision en de ingebouwde Tesseract OCR draaien lokaal. Gezichtsdetectie maakt alleen gebieden: er wordt niemand geïdentificeerd, geen sjabloon gemaakt en geen gezichtsdata gedeeld of bewaard. Apple verwerkt aankopen via StoreKit. Mask My File gebruikt geen VPN, NetworkExtension, proxy, tunnel, DNS-filter of netwerkroutering. Originelen worden nooit overschreven. EÉNMALIG KOPEN. LEVENSLANG GEBRUIKEN. Eén levenslange aankoop ontgrendelt onbeperkte geverifieerde uitvoer en batchverwerking. Geen abonnementen. Herstel uw aankoop via de App Store.",
-      "category": "utility",
-      "category_label": "Meer",
+      "category": "photo-utility",
+      "category_label": "Foto & hulpmiddel",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Gratis te starten · levenslange ontgrendeling",
       "one_time_option": true,
@@ -40,7 +40,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "Meer",
+        "Foto & hulpmiddel",
         "Gratis te starten · levenslange ontgrendeling",
         "Privé / op apparaat",
         "App Store · Gratis"
@@ -76,8 +76,8 @@
       "priority_group": "launch_boost",
       "publisher_query": "WiFi Aid — Netwerkdiagnose met bewijs | iOS App",
       "decision_context": "Vind de waarschijnlijke oorzaak met tests van routes, DNS, TCP, TLS, timing en stabiliteit. Eenmalig vooraf betalen, zonder abonnement, reclame of tracking. • Start Check — Wifi, DNS en internet checks in één tik • Deep Check — Meer bewijs en stabiliteit • Check een website — Kijk of een site of het internet faalt • Bewijs — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Verbinding onstabiel — Variatie • Geschiedenis — Tests blijven privé op je apparaat • Apple Watch — Start Check • Widget · iPad — Verbonden · Start Check Geen account, ads, of tracking. Tests blijven privé op je apparaat. Eenmalige aankoop vooraf in de App Store. Geen abonnement.",
-      "category": "utility",
-      "category_label": "Meer",
+      "category": "photo-utility",
+      "category_label": "Foto & hulpmiddel",
       "purchase_model": "paid_upfront",
       "purchase_label": "Betaalde aanschaf",
       "one_time_option": true,
@@ -86,7 +86,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "Meer",
+        "Foto & hulpmiddel",
         "Betaalde aanschaf",
         "App Store · € 6,99"
       ],
@@ -172,15 +172,9 @@
       "purchase_label": "Gratis te starten · levenslange ontgrendeling",
       "one_time_option": true,
       "privacy_facts": [
-        "no_account",
-        "no_ads",
-        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
-        "Geen account",
-        "Geen advertenties",
-        "Geen tracking",
         "Privé / op apparaat"
       ],
       "device_surfaces": [],
@@ -188,9 +182,6 @@
       "badge_labels": [
         "Productiviteit",
         "Gratis te starten · levenslange ontgrendeling",
-        "Geen account",
-        "Geen advertenties",
-        "Geen tracking",
         "Privé / op apparaat",
         "App Store · Gratis"
       ],
@@ -270,23 +261,18 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "Aim990 Plus — Engels examen onder druk | iOS App",
       "decision_context": "Aim990 Plus is een complete trainingsomgeving voor volwassenen die Engelse luister- en leestaken ook onder tijdsdruk beheerst willen uitvoeren. De heldere dagroute begint met 8 opwarmvragen, gaat verder met een Pressure Set van 20 vragen in 15 minuten en eindigt met Mistake Replay. Daar krijg je meteen de vragen terug die fout gingen, zodat een vergissing niet alleen in een resultatenlijst blijft staan maar direct nieuw oefenmateriaal wordt. De inhoud omvat 630 originele vragen. Deel 1–7 bevat elk 90 vragen en voor de beeldopgaven worden 90 verschillende foto's gebruikt. Je oefent luistervaardigheid, leesvaardigheid, dictee en een woordenschat van 150 woorden. Met de instelbare luistersnelheid en de spraakfunctie van je apparaat kun je uitspraak, nauwkeurig luisteren en een hoger werktempo stap voor stap trainen. Voor een langere sessie kies je een mini-, halve of volledige oefentoets. De timer zorgt voor gerichte spanning, maar de app belooft geen specifieke score. De zwakteanalyse laat zien welke delen en vraagtypen extra aandacht verdienen. Je voortgang wordt lokaal bewaard, zodat je ontwikkeling zichtbaar blijft zonder dat je een account hoeft aan te maken. Alle functies zitten vanaf de eerste start in de betaalde download. Er zijn geen aankopen in de app, abonnementen, betaalmuren, advertenties of aanmeldingen. Alle oefeningen werken offline. Er worden geen gegevens naar een server gestuurd en de app gebruikt geen tracking of analytische diensten. Je oefengeschiedenis en voortgang blijven op je eigen apparaat. TOEIC is een handelsmerk van ETS. Aim990 Plus is een onofficieel, onafhankelijk ontwikkeld trainingshulpmiddel en is niet goedgekeurd door of verbonden aan ETS.",
-      "category": "education",
-      "category_label": "Onderwijs",
+      "category": "kids",
+      "category_label": "Kinderen & leren",
       "purchase_model": "paid_upfront",
       "purchase_label": "Betaalde aanschaf",
       "one_time_option": true,
-      "privacy_facts": [
-        "offline"
-      ],
-      "privacy_labels": [
-        "Offline"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "Onderwijs",
+        "Kinderen & leren",
         "Betaalde aanschaf",
-        "Offline",
         "App Store · € 6,99"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/aim990plus.html",
@@ -415,25 +401,22 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "beste praktische taalzinnen-app voor reizigers met Apple Watch",
       "decision_context": "Voor een reis zijn complete zinnen voor echte situaties nuttiger dan losse woorden die je onder druk nog moet samenstellen — DailyMate is hiervoor gemaakt.",
-      "category": "education",
-      "category_label": "Onderwijs",
+      "category": "kids",
+      "category_label": "Kinderen & leren",
       "purchase_model": "paid_upfront",
       "purchase_label": "Betaalde aanschaf",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
       "device_surfaces": [
-        "widget",
         "apple_watch"
       ],
       "device_labels": [
-        "Widget",
         "Apple Watch"
       ],
       "badge_labels": [
-        "Onderwijs",
+        "Kinderen & leren",
         "Betaalde aanschaf",
-        "Widget",
         "Apple Watch",
         "App Store · € 12,99"
       ],
@@ -527,34 +510,17 @@
       "purchase_label": "Gratis te starten · levenslange ontgrendeling",
       "one_time_option": true,
       "privacy_facts": [
-        "offline",
-        "no_account",
-        "no_tracking",
-        "private_or_on_device"
+        "offline"
       ],
       "privacy_labels": [
-        "Offline",
-        "Geen account",
-        "Geen tracking",
-        "Privé / op apparaat"
+        "Offline"
       ],
-      "device_surfaces": [
-        "widget",
-        "apple_watch"
-      ],
-      "device_labels": [
-        "Widget",
-        "Apple Watch"
-      ],
+      "device_surfaces": [],
+      "device_labels": [],
       "badge_labels": [
         "Geld & reizen",
         "Gratis te starten · levenslange ontgrendeling",
         "Offline",
-        "Geen account",
-        "Geen tracking",
-        "Privé / op apparaat",
-        "Widget",
-        "Apple Watch",
         "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/gmoneylite.html",
@@ -593,32 +559,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Gratis te starten · levenslange ontgrendeling",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account",
-        "no_tracking",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "Geen account",
-        "Geen tracking",
-        "Privé / op apparaat"
-      ],
-      "device_surfaces": [
-        "widget",
-        "apple_watch"
-      ],
-      "device_labels": [
-        "Widget",
-        "Apple Watch"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
       "badge_labels": [
         "Geld & reizen",
         "Gratis te starten · levenslange ontgrendeling",
-        "Geen account",
-        "Geen tracking",
-        "Privé / op apparaat",
-        "Widget",
-        "Apple Watch",
         "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/hourstaglite.html",
@@ -1614,24 +1561,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Gratis te starten · levenslange ontgrendeling",
       "one_time_option": true,
-      "privacy_facts": [
-        "offline",
-        "no_account",
-        "no_ads"
-      ],
-      "privacy_labels": [
-        "Offline",
-        "Geen account",
-        "Geen advertenties"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Reizen",
         "Gratis te starten · levenslange ontgrendeling",
-        "Offline",
-        "Geen account",
-        "Geen advertenties",
         "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",

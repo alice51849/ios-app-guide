@@ -1,25 +1,25 @@
 ---
-title: "Mask My File — 共有前に個人情報を黒塗り | iOS App"
+title: "best on-device file redaction app for freelancers sharing client documents"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/ja/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# Mask My File — 共有前に個人情報を黒塗り | iOS App
+# best on-device file redaction app for freelancers sharing client documents
 
-大切な文脈を保ったまま、安全に共有できます。Mask My File はファイルを送る前に個人情報を見つけて恒久的に黒塗りし、書き出した新しいファイルを開き直して検証してから Private Ready を表示します。 主な機能 • 画像と PDF：全幅プレビュー、最大 5× ズーム、ドラッグ、そして手動での正確な範囲選択。 • 画像などの視覚ファイル：恒久的な塗りつぶし（黒塗り）または削除のみ。顔とバーコードの検出は、確認用の領域を示すだけです。 • テキスト、JSON、XML、HTML、CSV、TSV、RTF：一致箇所をすべて検索し、アスタリスクで全体マスク・部分マスク・プレースホルダー・仮名化・削除を適用。 • 必要に応じてメタデータを削除。PDF はページ単位で、バッチは最大100ファイルまで対応し、個別プレビュー・ファイル横断検索・ファイルごとの手動選択ができます。 • プライベートセッション、プロジェクトワークスペース、プレースホルダー保管庫で作業を整理。 こんなときに 賃貸の申込書を送るとき、診断書を共有するとき、顧客ファイルを同僚に渡すとき——個人情報を恒久的に黒塗りしながら、必要な文脈はそのまま残せます。 プライバシーを最優先に設計 すべては端末内で処理されます。アカウント、広告、トラッキング、分析、コンテンツのアップロードは一切ありません。Apple Vision と組み込みの Tesseract OCR はローカルで動作します。顔検出は領域を作るだけで、個人を特定せず、テンプレートも作らず、顔データを共有も保持もしません。購入は Apple の StoreKit が処理します。Mask My File は VPN、NetworkExtension、プロキシ、トンネル、DNS フィルター、ネットワークルーティングを使用しません。オリジナルが上書きされることはなく、一時作業ファイル、プライベートセッションのデータ、プロジェクトは削除するまで端末内に残ります。 買い切りで、ずっと使えます 一度購入してロックを解除するだけで、出力ファイルの検証と一括処理を無制限に利用できます。サブスクリプションはありません。購入履歴は App Store からいつでも復元できます。
+Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the useful context — Mask My File is built for this.
 
-- その他
+- 写真・ユーティリティ
 - 無料で開始・買い切りで永久解除
 - プライベート／端末内
 - App Store · 無料
 
-[App Store で Mask My File を入手](https://apps.apple.com/jp/app/id6792850916)
+[Get Mask My File on the App Store →](https://apps.apple.com/jp/app/id6792850916)
 
-[完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/maskmyfile.html)
+[完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html)
 
-> これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。
+> アプリ開発者であるLumi Studioが自ら作成したガイドです。アプリ名は各所有者の商標であり、識別目的でのみ使用されています。文書、健康、学校、生産性に関する決定を下す際は、必要に応じて関連機関の正式な要件をご確認ください。

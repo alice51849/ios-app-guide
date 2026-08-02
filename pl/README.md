@@ -135,6 +135,6 @@ Formaty JSON, JSONL i CSV zawierają te same 1 750 rekordów.
 
 [Strona główna](https://alice51849.github.io/ios-app-guide/pl/index.html) · [Otwarta baza danych](https://alice51849.github.io/ios-app-guide/pl/data/lumi-studio-publisher-search-intent-catalog.html) · [Licencja](https://creativecommons.org/licenses/by/4.0/)
 
-Zaktualizowano: 2026-07-31
+Zaktualizowano: 2026-08-02
 
 Licencja CC BY 4.0 dotyczy oryginalnego zestawu katalogowego; nazwy aplikacji i znaki App Store należą do ich właścicieli.

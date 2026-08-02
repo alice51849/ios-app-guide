@@ -2,7 +2,7 @@
 title: "WiFi Aid — Diagnostika siete s dôkazmi | iOS App"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/sk/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -13,7 +13,7 @@ publisher: "Lumi Studio"
 
 Nájdite najpravdepodobnejšiu príčinu pomocou nezávislých testov trás, DNS, TCP, TLS, odozvy a stability. Jedna platba vopred, bez predplatného, reklám a sledovania. • Spustiť — Wi-Fi, DNS a internet jedným ťuknutím • Deep Check — Viac dôkazov a stabilita • Test Stránky — Zistite, či je problém stránka alebo celá sieť • Dôkazy — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Pripojenie je nestabilné — Kolísanie (Jitter) • História — Údaje sú uložené iba na tomto zariadení • Apple Watch — Spustiť • Widget · iPad — Připojeno · Spustiť Žiadne účty, reklamy alebo sledovanie. Údaje sú uložené iba na tomto zariadení. Jeden nákup vopred v App Store. Bez predplatného.
 
-- Viac
+- Fotografia a nástroje
 - Platené stiahnutie
 - App Store · 6,99 €
 

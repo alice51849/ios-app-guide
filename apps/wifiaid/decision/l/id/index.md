@@ -1,24 +1,24 @@
 ---
-title: "WiFi Aid — Diagnosis jaringan berbukti | iOS App"
+title: "best wifi troubleshooting app for remote workers with connected but no internet"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/id/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid — Diagnosis jaringan berbukti | iOS App
+# best wifi troubleshooting app for remote workers with connected but no internet
 
-Temukan penyebab paling mungkin lewat pemeriksaan jalur, DNS, TCP, TLS, waktu, dan kestabilan. Sekali bayar di muka, tanpa langganan, iklan, atau pelacakan. • Jalankan Cek — Cek Wi-Fi, DNS, dan internet dalam satu ketukan • Cek Mendalam — Bukti tambahan dan tes kestabilan • Cek Situs Web — Lihat apakah hanya satu tujuan atau internet luas yang gagal • Bukti — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Koneksi terlihat tak stabil — Jitter • Riwayat Cek — Catatan privat yang disimpan hanya di HP ini • Apple Watch — Jalankan Cek • Widget · iPad — Terhubung · Jalankan Cek Tanpa akun, iklan, analitik, atau pelacakan. Catatan privat yang disimpan hanya di HP ini. Sekali beli di muka melalui App Store. Tanpa langganan.
+When Wi-Fi says connected but work still cannot get online, the useful first step is to identify whether the failure is DNS, the wider internet, instability or one destination instead of guessing — WiFi Aid is built for this.
 
-- Lainnya
+- Foto & utilitas
 - Unduhan berbayar
 - App Store · Rp 99ribu
 
-[Dapatkan WiFi Aid di App Store](https://apps.apple.com/id/app/id6790467886)
+[Get WiFi Aid on the App Store →](https://apps.apple.com/id/app/id6790467886)
 
-[Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/wifiaid.html)
+[Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html)
 
-> Materi ini diterbitkan langsung oleh Lumi Studio, pengembang semua aplikasi yang tercantum.
+> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

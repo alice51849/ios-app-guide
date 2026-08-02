@@ -1,17 +1,17 @@
 ---
-title: "HoursTag: Giờ để mua — Tiết kiệm & quản lý chi tiêu | iOS App"
+title: "best app to track where my money goes and save more"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/vi/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: Giờ để mua — Tiết kiệm & quản lý chi tiêu | iOS App
+# best app to track where my money goes and save more
 
-Món đó thật sự tốn bao nhiêu? Không chỉ bằng tiền, mà bằng giờ đời bạn.
+If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something — HoursTag is built for this.
 
 - Tiền & du lịch
 - Tải xuống trả phí
@@ -19,8 +19,8 @@ Món đó thật sự tốn bao nhiêu? Không chỉ bằng tiền, mà bằng g
 - Riêng tư / trên thiết bị
 - App Store · 149.000đ
 
-[Tải HoursTag: Giờ để mua trên App Store](https://apps.apple.com/vn/app/id6754218117)
+[Get HoursTag on the App Store →](https://apps.apple.com/vn/app/id6754218117)
 
-[Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/hourstag.html)
+[Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-app-to-track-where-my-money-goes-and-save-more.html)
 
-> Tài liệu này do Lumi Studio trực tiếp công bố; Lumi Studio là nhà phát triển của tất cả ứng dụng được liệt kê.
+> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

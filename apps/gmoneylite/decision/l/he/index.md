@@ -2,7 +2,7 @@
 title: "G+Money Lite — הוצאות, תקציב והמרת מטבע | iOS App"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/he/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,11 +16,6 @@ G+Money Lite — מעקב חכם אחרי מטבעות והוצאות בזמן �
 - כסף ונסיעות
 - התחלה ללא תשלום · פתיחה לכל החיים
 - לא מקוון
-- ללא חשבון
-- ללא מעקב
-- פרטי / במכשיר
-- וידג'ט
-- Apple Watch
 - App Store · בחינם
 
 [הורידו את G+Money Lite מה-App Store](https://apps.apple.com/il/app/id6793436548)

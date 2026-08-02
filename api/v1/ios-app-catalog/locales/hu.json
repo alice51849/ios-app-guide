@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-31",
-  "content_digest": "741556b580f83a270aa348b18ea5e42602cbe0a1c169fe9115da666dbf860cdb",
+  "date_modified": "2026-08-02",
+  "content_digest": "8f14ab5dd69dc7ba96582d9414c5670e0f832e1998ad3b3ee53a697c7a258fbb",
   "locale": "hu",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -31,9 +31,9 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
-        "no_ads": true,
-        "no_tracking": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
         "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
@@ -92,7 +92,7 @@
       "app_store_id": "6792483140",
       "name": "Aim990 Plus",
       "summary": "Az angoltudás mellett arra is szükség van, hogy az idő szorításában is pontosan dönts. Az Aim990 Plus felnőtteknek készült, intenzív hallásértési és olvasási gyakorló iPhone-ra és iPadre. A fő edzés tudatosan felépített: 8 bemelegítő kérdéssel indít, ezt követi a 20 feladatos, 15 perces Pressure Set, végül a Mistake Replay kizárólag azokhoz a válaszokhoz vezet vissza, amelyek bizonytalanságot okoztak.",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "vizsga",
         "hallásértés",
@@ -109,7 +109,7 @@
       "purchase_model": "paid_upfront",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
+        "offline": false,
         "no_account": false,
         "no_ads": false,
         "no_tracking": false,
@@ -242,7 +242,7 @@
       "app_store_id": "6790418321",
       "name": "DailyMate: Mondatok az élethez",
       "summary": "Ne különálló szavakat magolj. A DailyMate 8 400 teljes mondatot ad utazáshoz, munkához, éttermi helyzetekhez, vásárláshoz, egészséghez és társasági élethez — úgy, ahogy azokat valóban használják. Egyszer fizetsz, előfizetés nélkül.",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "angol",
         "beszélgetés",
@@ -265,7 +265,7 @@
         "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
-        "widget": true,
+        "widget": false,
         "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/hu/app/id6790418321",
@@ -354,12 +354,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": true,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/hu/app/id6793436548",
       "guide_url": "https://alice51849.github.io/ios-app-guide/hu/gmoneylite.html",
@@ -452,12 +452,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/hu/app/id6794039979",
       "guide_url": "https://alice51849.github.io/ios-app-guide/hu/hourstaglite.html",
@@ -1113,7 +1113,7 @@
       "app_store_id": "6792850916",
       "name": "Mask My File",
       "summary": "Oszd meg biztonságosan úgy, hogy a fontos szövegkörnyezet megmarad. A Mask My File még a küldés előtt megtalálja a személyes adatokat, véglegesen kitakarja a kiválasztott részeket, majd újra megnyitja és ellenőrzi az új fájlt, mielőtt megjelenne a Private Ready jelzés.",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "adatvédelem",
         "feketítés",
@@ -1561,9 +1561,9 @@
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
-        "no_account": true,
-        "no_ads": true,
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
         "widget": false,
@@ -1688,7 +1688,7 @@
       "app_store_id": "6790467886",
       "name": "WiFi Aid",
       "summary": "Független útvonal-, DNS-, TCP-, TLS-, időzítés- és stabilitástesztekkel derítse ki a legvalószínűbb okot. Egyszeri előrefizetés, előfizetés, reklám és követés nélkül.",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "internetkimaradás",
         "router",

@@ -2,7 +2,7 @@
 title: "najlepšia praktická aplikácia na jazykové frázy pre cestovateľov s Apple Watch"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/sk/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -13,9 +13,8 @@ publisher: "Lumi Studio"
 
 Pred cestou sú kompletné frázy pre reálne situácie užitočnejšie ako izolovaná slovná zásoba, ktorú si musíte pod tlakom ešte zložiť — DailyMate je na to stavaný.
 
-- Vzdelávanie
+- Deti a učenie
 - Platené stiahnutie
-- Widget
 - Apple Watch
 - App Store · 12,99 €
 

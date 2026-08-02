@@ -2,7 +2,7 @@
 title: "ஆப்பிள் வாட்சுடன் பயணிகளுக்கான சிறந்த நடைமுறை மொழி வாக்கிய பயன்பாடு"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/ta-IN/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -13,9 +13,8 @@ publisher: "Lumi Studio"
 
 ஒரு பயணத்திற்கு முன், தனித்த சொற்களை அழுத்தத்தில் சேர்க்க வேண்டியதைவிட நிஜ சூழல்களுக்கு முழுமையான வாக்கியங்கள் அதிக பயனுள்ளதாக இருக்கும் — இதற்காக டெய்லிமேட் உருவாக்கப்பட்டுள்ளது.
 
-- கல்வி
+- குழந்தைகள் & கற்றல்
 - பணம் செலுத்தி பதிவிறக்கவும்
-- விட்ஜெட்
 - Apple Watch
 - App Store · ₹ 1,199
 

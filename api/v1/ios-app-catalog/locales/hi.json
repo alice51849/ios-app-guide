@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-31",
-  "content_digest": "741556b580f83a270aa348b18ea5e42602cbe0a1c169fe9115da666dbf860cdb",
+  "date_modified": "2026-08-02",
+  "content_digest": "8f14ab5dd69dc7ba96582d9414c5670e0f832e1998ad3b3ee53a697c7a258fbb",
   "locale": "hi",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -32,9 +32,9 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
-        "no_ads": true,
-        "no_tracking": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
         "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
@@ -92,7 +92,7 @@
       "app_store_id": "6792483140",
       "name": "Aim990 Plus",
       "summary": "Aim990 Plus वयस्क शिक्षार्थियों के लिए अंग्रेज़ी सुनने और पढ़ने का गहन अभ्यास है। इसका मुख्य क्रम वास्तविक समय-दबाव में ध्यान बनाए रखने के लिए बनाया गया है: पहले 8 सवालों का Warm-up, फिर 15 मिनट में 20 सवालों का Pressure Set और अंत में Mistake Replay। हर चरण स्पष्ट है, इसलिए आप बिना उलझे अभ्यास शुरू कर सकते हैं और तुरंत समझ सकते हैं कि अगली बार किस हिस्से पर काम करना है।",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "अंग्रेजी परीक्षा",
         "श्रवण कौशल",
@@ -107,7 +107,7 @@
       "purchase_model": "paid_upfront",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
+        "offline": false,
         "no_account": false,
         "no_ads": false,
         "no_tracking": false,
@@ -245,7 +245,7 @@
       "app_store_id": "6790418321",
       "name": "DailyMate: रोज़मर्रा के वाक्य",
       "summary": "अलग-अलग शब्द याद होना काफी नहीं, सही मौके पर पूरा वाक्य चाहिए। DailyMate में 47 भाषाओं के 8,400 ऐसे पूरे वाक्य हैं जिन्हें रोज़मर्रा की स्थितियों में सचमुच इस्तेमाल किया जा सकता है। एक बार खरीदें और पूरा ऐप पाएँ; कोई सदस्यता नहीं।",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "अंग्रेज़ी सीखें",
         "उच्चारण",
@@ -268,7 +268,7 @@
         "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
-        "widget": true,
+        "widget": false,
         "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/in/app/id6790418321",
@@ -363,12 +363,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": true,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/in/app/id6793436548",
       "guide_url": "https://alice51849.github.io/ios-app-guide/hi/gmoneylite.html",
@@ -466,12 +466,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/in/app/id6794039979",
       "guide_url": "https://alice51849.github.io/ios-app-guide/hi/hourstaglite.html",
@@ -1160,7 +1160,7 @@
       "app_store_id": "6792850916",
       "name": "Mask My File",
       "summary": "उपयोगी संदर्भ खोए बिना सुरक्षित रूप से साझा करें। Mask My File आपके फ़ाइल भेजने से पहले निजी विवरण ढूँढता है, आपके चुने हिस्सों को स्थायी रूप से छिपाता है, फिर नई फ़ाइल दोबारा खोलकर जाँचता है और तभी Private Ready दिखाता है।",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "निजी जानकारी छिपाएँ",
         "आधार पैन छिपाना",
@@ -1605,9 +1605,9 @@
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
-        "no_account": true,
-        "no_ads": true,
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
         "widget": false,
@@ -1736,7 +1736,7 @@
       "app_store_id": "6790467886",
       "name": "WiFi Aid",
       "summary": "स्वतंत्र पाथ, DNS, TCP, TLS, टाइमिंग और स्थिरता जाँच से सबसे संभावित कारण जानें। केवल एक बार अग्रिम भुगतान—न सदस्यता, न विज्ञापन, न ट्रैकिंग।",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "इंटरनेट डाउन",
         "राउटर",

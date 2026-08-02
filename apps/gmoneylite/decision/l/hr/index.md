@@ -2,7 +2,7 @@
 title: "G+Money Lite — Troškovi, budžet i valute | iOS App"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/hr/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,11 +16,6 @@ G+Money Lite — Pametan putni konverter valuta i praćenje troškova Putni nova
 - Novac i putovanja
 - Besplatno za početak · doživotno otključavanje
 - Izvan mreže
-- Bez računa
-- Bez praćenja
-- Privatno / na uređaju
-- Widget
-- Apple Watch
 - App Store · Besplatno
 
 [Preuzmite G+Money Lite u App Storeu](https://apps.apple.com/hr/app/id6793436548)

@@ -2,7 +2,7 @@
 title: "G+Money Lite — Gastos, presupuesto y divisas | iOS App"
 lang: "es-MX"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/es-MX/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,11 +16,6 @@ G+Money Lite — Conversor de divisas y gastos de viaje El dinero del viaje, fá
 - Dinero y viajes
 - Gratis para empezar · desbloqueo permanente
 - Sin conexión
-- Sin cuenta
-- Sin rastreo
-- Privado / en el dispositivo
-- Widget
-- Apple Watch
 - App Store · Gratis
 
 [Consigue G+Money Lite en el App Store](https://apps.apple.com/mx/app/id6793436548)

@@ -2,7 +2,7 @@
 title: "лучшее полное приложение для изучения математики для дошкольников и младших классов"
 lang: "ru"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/ru/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

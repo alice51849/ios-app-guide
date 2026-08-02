@@ -2,7 +2,7 @@
 title: "лучшее практическое приложение с фразами для путешественников с Apple Watch"
 lang: "ru"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/ru/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -13,9 +13,8 @@ publisher: "Lumi Studio"
 
 Перед поездкой полные фразы для реальных ситуаций полезнее, чем отдельные слова, которые нужно собирать под давлением — DailyMate создан именно для этого.
 
-- Образование
+- Дети и обучение
 - Платное скачивание
-- Виджет
 - Apple Watch
 - App Store · 999,00 ₽
 

@@ -2,7 +2,7 @@
 title: "millor aplicació per controlar pressupost de viatge sense subscripció per a iPhone"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/ca/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

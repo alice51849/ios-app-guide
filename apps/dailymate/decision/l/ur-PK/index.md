@@ -2,7 +2,7 @@
 title: "ایپل واچ کے ساتھ مسافروں کے لیے بہترین عملی زبان کے جملوں کی ایپ"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/ur-PK/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -13,9 +13,8 @@ publisher: "Lumi Studio"
 
 سفر سے پہلے، حقیقی حالات کے مکمل جملے تنہا الفاظ سے زیادہ مفید ہوتے ہیں جنہیں آپ کو دباؤ میں خود جوڑنا پڑتا ہے — DailyMate اسی لیے بنایا گیا ہے۔
 
-- تعلیم
+- بچے اور سیکھنا
 - ادا شدہ ڈاؤن لوڈ
-- وجیٹ
 - Apple Watch
 - App Store · Rs 3,500.00
 

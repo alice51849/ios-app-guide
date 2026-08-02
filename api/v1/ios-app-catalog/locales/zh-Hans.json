@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-31",
-  "content_digest": "741556b580f83a270aa348b18ea5e42602cbe0a1c169fe9115da666dbf860cdb",
+  "date_modified": "2026-08-02",
+  "content_digest": "8f14ab5dd69dc7ba96582d9414c5670e0f832e1998ad3b3ee53a697c7a258fbb",
   "locale": "zh-Hans",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -42,9 +42,9 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
-        "no_ads": true,
-        "no_tracking": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
         "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
@@ -102,7 +102,7 @@
       "app_store_id": "6792483140",
       "name": "Aim990 Plus",
       "summary": "把零散刷题变成一套经得住时间压力的训练流程。",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "英语听力",
         "阅读理解",
@@ -128,7 +128,7 @@
       "purchase_model": "paid_upfront",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
+        "offline": false,
         "no_account": false,
         "no_ads": false,
         "no_tracking": false,
@@ -279,7 +279,7 @@
       "app_store_id": "6790418321",
       "name": "DailyMate：用句子学语言",
       "summary": "学语言不该只背零散单词，而要从完整句子理解真实用法。DailyMate 收录 47 种学习语言、8,400 句实用生活会话，按照 14 大主题与 84 个具体场景清晰整理。一次付费即可使用完整 App，没有订阅。",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "学英语",
         "英语口语",
@@ -312,7 +312,7 @@
         "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
-        "widget": true,
+        "widget": false,
         "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/cn/app/id6790418321",
@@ -426,12 +426,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": true,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/cn/app/id6793436548",
       "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/gmoneylite.html",
@@ -544,12 +544,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/cn/app/id6794039979",
       "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/hourstaglite.html",
@@ -1296,7 +1296,7 @@
       "app_store_id": "6792850916",
       "name": "Mask My File",
       "summary": "安心分享，同时保留有用的上下文。Mask My File 会在你发送文件前找出隐私信息，永久遮挡后，再重新打开并核对新导出的文件，确认无误才显示 Private Ready。",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "脱敏",
         "涂黑",
@@ -1845,9 +1845,9 @@
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
-        "no_account": true,
-        "no_ads": true,
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
         "widget": false,
@@ -1994,7 +1994,7 @@
       "app_store_id": "6790467886",
       "name": "WiFi Aid",
       "summary": "通过多路径、DNS、TCP、TLS、响应时间与稳定性检查，找出最可能的连接问题。App Store 一次付费买断，无订阅、无广告、无跟踪。",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "网络故障",
         "断网",

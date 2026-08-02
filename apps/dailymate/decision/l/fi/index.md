@@ -2,7 +2,7 @@
 title: "paras käytännöllinen kielilauseiden sovellus matkailijoille, jossa Apple Watch -tuki"
 lang: "fi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/fi/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -13,9 +13,8 @@ publisher: "Lumi Studio"
 
 Ennen matkaa täydelliset lauseet todellisiin tilanteisiin ovat hyödyllisempiä kuin irralliset sanastot, jotka pitää vielä koota paineen alla — DailyMate on tehty tätä varten.
 
-- Koulutus
+- Lapset & oppiminen
 - Maksullinen lataus
-- Widget
 - Apple Watch
 - App Store · 12,99 €
 

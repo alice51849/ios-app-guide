@@ -2,7 +2,7 @@
 title: "애플 워치와 함께 여행자에게 가장 실용적인 언어 회화 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/ko/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -13,9 +13,8 @@ publisher: "Lumi Studio"
 
 여행 전, 실제 상황에 맞는 완전한 문장이 압박 속에 조합해야 하는 단어보다 더 유용합니다 — DailyMate는 이를 위해 만들어졌습니다.
 
-- 교육
+- 어린이 & 학습
 - 유료 다운로드
-- 위젯
 - Apple Watch
 - App Store · ￦19,000
 

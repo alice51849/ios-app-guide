@@ -2,7 +2,7 @@
 title: "beste praktiske språkfrase-app for reisende med Apple Watch"
 lang: "no"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/no/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -13,9 +13,8 @@ publisher: "Lumi Studio"
 
 Før en reise er komplette fraser for virkelige situasjoner mer nyttige enn isolerte ord du fortsatt må sette sammen under press – DailyMate er laget for dette.
 
-- Utdanning
+- Barn og læring
 - Betalt nedlasting
-- Widget
 - Apple Watch
 - App Store · 149,00 kr
 

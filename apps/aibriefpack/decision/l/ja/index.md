@@ -1,28 +1,25 @@
 ---
-title: "AI Brief — 資料を明確な文脈に整理 | iOS App"
+title: "best private app to organize screenshots and documents into context before using AI"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/ja/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# AI Brief — 資料を明確な文脈に整理 | iOS App
+# best private app to organize screenshots and documents into context before using AI
 
-より良いコンテキスト。より良い回答。 スクリーンショット、ファイル、メモ、ドキュメントを、ひとつの明確な AI 要約にまとめます。 完全なコンテキストを届ける • スクリーンショット、PDF、ファイル、コピーしたテキスト、メモ、リンクを追加できます。最終的な要約に残す内容は自由に選べます。 • OCR、PDF 読み取り、重複チェック、事実に基づく抽出、プライバシー検出はすべて Apple のフレームワークをローカルで利用します。 • 上記から一つ以上のソースを選択してください。処理は続行された場合にのみ開始されます。 AI がそれらを見る前に事実を確認する • すべての事実にソースと信頼度が保持されます。コンテキストが必要な項目を修正してください。 • 事実、矛盾、および未解決の質問を検出する • AIに提供する前に、すべての事実、ソース、信頼度を確認してください。 プライバシー保護 • 検出した詳細は自動的に削除されません。エクスポート前に各項目を選択、置換、または削除してください。 • 各検出項目は保持・置換・削除を選べます。AI Brief は匿名性を保証しません。 • 置換と削除はエクスポート時に適用されます。 あらゆる AI アシスタント向けのクリーンなコンテキスト • 構造化見出しとソース準備フォーマット • コンテキストは一度作成すれば、いつでも再利用できます。 • AI 要約をコピー • バージョン履歴 • 専用テンプレート コンテキストはプライベートに保たれます • AI Brief は第三者広告、トラッキング、分析、コンテンツテレメトリを含みません。 • AIサービスに送信する前に概要を確認してください。
+AI Brief — Organize screenshots, PDFs, files, notes, and links into a traceable brief before sharing with any AI. Free to start · One-time unlock · No subscription.
 
 - 生産性
 - 無料で開始・買い切りで永久解除
-- アカウント不要
-- 広告なし
-- 追跡なし
 - プライベート／端末内
 - App Store · 無料
 
-[App Store で AI Brief を入手](https://apps.apple.com/jp/app/id6791658210)
+[Get AI Brief on the App Store →](https://apps.apple.com/jp/app/id6791658210)
 
-[完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/aibriefpack.html)
+[完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html)
 
-> これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。
+> アプリ開発者であるLumi Studioが自ら作成したガイドです。アプリ名は各所有者の商標であり、識別目的でのみ使用されています。文書、健康、学校、生産性に関する決定を下す際は、必要に応じて関連機関の正式な要件をご確認ください。

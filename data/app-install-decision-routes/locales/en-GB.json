@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "en-GB",
-  "dateModified": "2026-07-31",
-  "content_digest": "d25fe9a1e078b3c0c14af98cbedf0273117830c2e9a4b4d0f3b9906385ab48e2",
-  "generation_digest": "e1d80cb6ea88329d88881233d28cead0c2c1140eaa12f67295589794b128e1e4",
+  "dateModified": "2026-08-02",
+  "content_digest": "e5bfe67ce45753740357eeca269b9d35c0540b62ea2875b9d353bd43f3b5580a",
+  "generation_digest": "fba7106f0739bc21b7780395db7e34437f3398d54d36d80e4aa52f98445f0433",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -26,8 +26,8 @@
       "priority_group": "launch_boost",
       "publisher_query": "Mask My File — Black out data before sharing | iOS App",
       "decision_context": "Share safely without losing the context people genuinely need. Mask My File finds private details before you send a file, permanently hides only what you choose, then reopens and verifies the new copy before it shows Private Ready. WHAT YOU CAN DO • Images and PDFs: full-width preview, up to 5× zoom, smooth drag, and precise manual selections. • Visual files: permanent solid redaction or removal only. Face and barcode detection simply mark regions for you to review. • Text, JSON, XML, HTML, CSV, TSV and RTF: search every match, then apply a full mask, a partial mask, a placeholder, a pseudonym, or removal. • Remove metadata where the format allows. Work page by page in PDFs, or protect up to 100 files at once with individual previews, cross-file search, and per-file manual selections. • Keep everything organised with Private Session, project workspaces and Placeholder Vault. USE IT WHEN IT MATTERS Before you send a tenancy application, an NHS letter, a payslip showing your National Insurance number, or a client file to a colleague, keep the useful context while permanently hiding the details they do not need. PRIVATE BY DESIGN Everything is processed on your device. There is no account, advertising, tracking, analytics or content upload. Apple Vision and the embedded Tesseract OCR engine run locally. Face detection creates regions only: it does not identify a person, build a template, share face data or retain it. Apple handles purchases with StoreKit. Mask My File does not use a VPN, NetworkExtension, proxy, tunnel, DNS filter or network routing. Originals are never overwritten; temporary workspace files, Private Session data and projects stay on the device until you delete them. BUY ONCE. USE IT FOR LIFE. A single purchase unlocks unlimited verified outputs and batch processing for good. No subscriptions. Restore your purchase at any time through the App Store.",
-      "category": "utility",
-      "category_label": "More",
+      "category": "photo-utility",
+      "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
@@ -40,7 +40,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "More",
+        "Photo & utility",
         "Free to start · lifetime unlock",
         "Private / on-device",
         "App Store · Free"
@@ -76,8 +76,8 @@
       "priority_group": "launch_boost",
       "publisher_query": "WiFi Aid — Network Diagnosis & Evidence | iOS App",
       "decision_context": "Find the most likely connection fault with independent path, DNS, TCP, TLS, timing and stability checks. One upfront payment—no subscription, adverts or tracking. • Run a Check — Wi-Fi, DNS and internet checks in one tap • Deep Check — More evidence and stability samples • Check a Website — See whether one destination or the wider internet is failing • Evidence — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Connection looks unstable — Variation • Check History — Private records stored only on this device • Apple Watch — Run a Check • Widget · iPad — Connected · Run a Check No account, adverts, analytics or tracking. Private records stored only on this device. One upfront App Store purchase. No subscription.",
-      "category": "utility",
-      "category_label": "More",
+      "category": "photo-utility",
+      "category_label": "Photo & utility",
       "purchase_model": "paid_upfront",
       "purchase_label": "Paid download",
       "one_time_option": true,
@@ -86,7 +86,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "More",
+        "Photo & utility",
         "Paid download",
         "App Store · £5.99"
       ],
@@ -172,15 +172,9 @@
       "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [
-        "no_account",
-        "no_ads",
-        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
-        "No account",
-        "No adverts",
-        "No tracking",
         "Private / on-device"
       ],
       "device_surfaces": [],
@@ -188,9 +182,6 @@
       "badge_labels": [
         "Productivity",
         "Free to start · lifetime unlock",
-        "No account",
-        "No adverts",
-        "No tracking",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -270,23 +261,18 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "Aim990 Plus — Timed English Revision Drills | iOS App",
       "decision_context": "Build a dependable routine under time pressure Aim990 Plus is an independent listening and reading trainer for committed adult learners. Each session follows a clear loop: start with an 8-question mixed Warm-up, tackle a 20-question Pressure Set in 15 minutes, then return to errors through Mistake Replay. Original material across every part The app contains 630 original questions, organised as 90 items in each of Parts 1–7, including 90 different photographs. The material was created for this app and is not described as official exam content. Revise with purpose Select mini, half or full mock formats for progressively longer sessions. Dictation helps you notice missed detail, while speed drills develop quicker decisions against the clock. Device speech adds flexible audio work, and a collection of 150 vocabulary entries supports regular language review. Know what to revisit Weakness analytics reveal areas that need more attention without making score promises. Progress and profile views give you a useful record of completed work. Mistake Replay then turns that insight into action by bringing missed questions back for another attempt. Private, complete and offline Aim990 Plus works offline on iPhone and iPad. It has no login, server, adverts, tracking or analytics. A single paid download includes the entire experience, with no in-app purchases, subscriptions or paywalls. Aim990 Plus is an independent study tool for adult learners. TOEIC is a trade mark of ETS. Aim990 Plus is not affiliated with, endorsed by or approved by ETS.",
-      "category": "education",
-      "category_label": "Education",
+      "category": "kids",
+      "category_label": "Children & learning",
       "purchase_model": "paid_upfront",
       "purchase_label": "Paid download",
       "one_time_option": true,
-      "privacy_facts": [
-        "offline"
-      ],
-      "privacy_labels": [
-        "Offline"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "Education",
+        "Children & learning",
         "Paid download",
-        "Offline",
         "App Store · £5.99"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/aim990plus.html",
@@ -415,25 +401,22 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "best practical language phrase app for travelers with apple watch",
       "decision_context": "Before a trip, complete phrases for real situations are more useful than isolated vocabulary you still have to assemble under pressure — DailyMate is built for this.",
-      "category": "education",
-      "category_label": "Education",
+      "category": "kids",
+      "category_label": "Children & learning",
       "purchase_model": "paid_upfront",
       "purchase_label": "Paid download",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
       "device_surfaces": [
-        "widget",
         "apple_watch"
       ],
       "device_labels": [
-        "Widget",
         "Apple Watch"
       ],
       "badge_labels": [
-        "Education",
+        "Children & learning",
         "Paid download",
-        "Widget",
         "Apple Watch",
         "App Store · £11.99"
       ],
@@ -527,34 +510,17 @@
       "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [
-        "offline",
-        "no_account",
-        "no_tracking",
-        "private_or_on_device"
+        "offline"
       ],
       "privacy_labels": [
-        "Offline",
-        "No account",
-        "No tracking",
-        "Private / on-device"
+        "Offline"
       ],
-      "device_surfaces": [
-        "widget",
-        "apple_watch"
-      ],
-      "device_labels": [
-        "Widget",
-        "Apple Watch"
-      ],
+      "device_surfaces": [],
+      "device_labels": [],
       "badge_labels": [
         "Money & travel",
         "Free to start · lifetime unlock",
         "Offline",
-        "No account",
-        "No tracking",
-        "Private / on-device",
-        "Widget",
-        "Apple Watch",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/gmoneylite.html",
@@ -593,32 +559,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account",
-        "no_tracking",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "No account",
-        "No tracking",
-        "Private / on-device"
-      ],
-      "device_surfaces": [
-        "widget",
-        "apple_watch"
-      ],
-      "device_labels": [
-        "Widget",
-        "Apple Watch"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
       "badge_labels": [
         "Money & travel",
         "Free to start · lifetime unlock",
-        "No account",
-        "No tracking",
-        "Private / on-device",
-        "Widget",
-        "Apple Watch",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/hourstaglite.html",
@@ -1614,24 +1561,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
-      "privacy_facts": [
-        "offline",
-        "no_account",
-        "no_ads"
-      ],
-      "privacy_labels": [
-        "Offline",
-        "No account",
-        "No adverts"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Travel",
         "Free to start · lifetime unlock",
-        "Offline",
-        "No account",
-        "No adverts",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",

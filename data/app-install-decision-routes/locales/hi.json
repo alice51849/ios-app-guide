@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "hi",
-  "dateModified": "2026-07-31",
-  "content_digest": "d25fe9a1e078b3c0c14af98cbedf0273117830c2e9a4b4d0f3b9906385ab48e2",
-  "generation_digest": "e1d80cb6ea88329d88881233d28cead0c2c1140eaa12f67295589794b128e1e4",
+  "dateModified": "2026-08-02",
+  "content_digest": "e5bfe67ce45753740357eeca269b9d35c0540b62ea2875b9d353bd43f3b5580a",
+  "generation_digest": "fba7106f0739bc21b7780395db7e34437f3398d54d36d80e4aa52f98445f0433",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -26,8 +26,8 @@
       "priority_group": "launch_boost",
       "publisher_query": "Mask My File — भेजने से पहले विवरण छिपाएँ | iOS App",
       "decision_context": "उपयोगी संदर्भ खोए बिना सुरक्षित रूप से साझा करें। Mask My File आपके फ़ाइल भेजने से पहले निजी विवरण ढूँढता है, आपके चुने हिस्सों को स्थायी रूप से छिपाता है, फिर नई फ़ाइल दोबारा खोलकर जाँचता है और तभी Private Ready दिखाता है। आप क्या कर सकते हैं • छवियाँ और PDF: पूरी चौड़ाई में पूर्वावलोकन, 5× तक ज़ूम, आसानी से खींचें और हाथ से सटीक चयन करें। • दृश्य फ़ाइलें: केवल स्थायी ठोस छिपाव या पूरी तरह हटाना। चेहरा और बारकोड पहचान सिर्फ़ आपकी समीक्षा के लिए क्षेत्र बनाती है। • टेक्स्ट, JSON, XML, HTML, CSV, TSV और RTF: हर मिलान खोजें और पूर्ण मास्क, आंशिक मास्क, प्लेसहोल्डर, छद्म नाम या हटाने में से चुनें। • जहाँ प्रारूप अनुमति दे वहाँ मेटाडेटा हटाएँ। PDF में पेज-दर-पेज काम करें, या एक बैच में 100 फ़ाइलों तक—हर फ़ाइल का अलग पूर्वावलोकन, फ़ाइलों में टेक्स्ट खोज और हाथ से चयन के साथ। • हर आउटपुट दोबारा खुलकर जाँचा जाता है; तभी वह Private Ready बनता है। जब सबसे ज़रूरी हो तब किराये का आवेदन भेजने, मेडिकल दस्तावेज़ साझा करने या किसी सहकर्मी को ग्राहक फ़ाइल देने से पहले—ज़रूरी संदर्भ बनाए रखें और निजी विवरण हमेशा के लिए छिपाएँ। डिज़ाइन से ही निजी सब कुछ आपके डिवाइस पर होता है। कोई खाता, विज्ञापन, ट्रैकिंग, विश्लेषण या अपलोड नहीं। Apple Vision और साथ दिया गया Tesseract OCR स्थानीय रूप से चलते हैं। चेहरा पहचान केवल क्षेत्र बनाती है: यह किसी की पहचान नहीं करती, कोई टेम्पलेट नहीं बनाती, न चेहरा डेटा साझा करती है और न रखती है। खरीद Apple StoreKit से होती है। मूल फ़ाइल कभी नहीं बदली जाती। एक बार खरीदें, जीवन भर उपयोग करें एक बार की खरीद असीमित सत्यापित आउटपुट और बैच प्रोसेसिंग खोल देती है। कोई सदस्यता नहीं। App Store से कभी भी पुनर्स्थापित करें।",
-      "category": "utility",
-      "category_label": "और अधिक",
+      "category": "photo-utility",
+      "category_label": "फोटो और उपयोगिता",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "मुफ़्त शुरुआत · हमेशा के लिए अनलॉक",
       "one_time_option": true,
@@ -40,7 +40,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "और अधिक",
+        "फोटो और उपयोगिता",
         "मुफ़्त शुरुआत · हमेशा के लिए अनलॉक",
         "निजी / डिवाइस पर",
         "App Store · मुफ़्त"
@@ -76,8 +76,8 @@
       "priority_group": "launch_boost",
       "publisher_query": "WiFi Aid — सबूत के साथ नेटवर्क जाँच | iOS App",
       "decision_context": "स्वतंत्र पाथ, DNS, TCP, TLS, टाइमिंग और स्थिरता जाँच से सबसे संभावित कारण जानें। केवल एक बार अग्रिम भुगतान—न सदस्यता, न विज्ञापन, न ट्रैकिंग। • जाँच चलाएं — एक टैप में वाई-फाई, डीएनएस और इंटरनेट की जाँच करें • गहरी जाँच — अधिक सबूत और स्थिरता परीक्षण • वेबसाइट जाँचें — देखें कि क्या एक गंतव्य या पूरा इंटरनेट विफल हो रहा है • सबूत — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • कनेक्शन अस्थिर लग रहा है — जिटर • जाँच इतिहास — केवल इस डिवाइस पर संग्रहीत निजी रिकॉर्ड • Apple Watch — जाँच चलाएं • Widget · iPad — कनेक्टेड · जाँच चलाएं कोई खाता, विज्ञापन, विश्लेषण या ट्रैकिंग नहीं. केवल इस डिवाइस पर संग्रहीत निजी रिकॉर्ड. App Store पर केवल एक बार अग्रिम खरीद। कोई सदस्यता नहीं।",
-      "category": "utility",
-      "category_label": "और अधिक",
+      "category": "photo-utility",
+      "category_label": "फोटो और उपयोगिता",
       "purchase_model": "paid_upfront",
       "purchase_label": "भुगतान किया गया डाउनलोड",
       "one_time_option": true,
@@ -86,7 +86,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "और अधिक",
+        "फोटो और उपयोगिता",
         "भुगतान किया गया डाउनलोड",
         "App Store · ₹ 599"
       ],
@@ -172,15 +172,9 @@
       "purchase_label": "मुफ़्त शुरुआत · हमेशा के लिए अनलॉक",
       "one_time_option": true,
       "privacy_facts": [
-        "no_account",
-        "no_ads",
-        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
-        "कोई खाता नहीं",
-        "कोई विज्ञापन नहीं",
-        "कोई ट्रैकिंग नहीं",
         "निजी / डिवाइस पर"
       ],
       "device_surfaces": [],
@@ -188,9 +182,6 @@
       "badge_labels": [
         "उत्पादकता",
         "मुफ़्त शुरुआत · हमेशा के लिए अनलॉक",
-        "कोई खाता नहीं",
-        "कोई विज्ञापन नहीं",
-        "कोई ट्रैकिंग नहीं",
         "निजी / डिवाइस पर",
         "App Store · मुफ़्त"
       ],
@@ -270,23 +261,18 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "Aim990 Plus — दबाव में तेज़ और सटीक जवाब | iOS App",
       "decision_context": "Aim990 Plus वयस्क शिक्षार्थियों के लिए अंग्रेज़ी सुनने और पढ़ने का गहन अभ्यास है। इसका मुख्य क्रम वास्तविक समय-दबाव में ध्यान बनाए रखने के लिए बनाया गया है: पहले 8 सवालों का Warm-up, फिर 15 मिनट में 20 सवालों का Pressure Set और अंत में Mistake Replay। हर चरण स्पष्ट है, इसलिए आप बिना उलझे अभ्यास शुरू कर सकते हैं और तुरंत समझ सकते हैं कि अगली बार किस हिस्से पर काम करना है। ऐप में कुल 630 मौलिक सवाल हैं। Part 1 से Part 7 तक प्रत्येक भाग में 90 प्रश्न हैं और चित्र-आधारित अभ्यास के लिए 90 अलग तस्वीरें शामिल हैं। सामग्री सुनकर सही अर्थ पहचानने, लिखित सूचना को जल्दी समझने, संदर्भ से उत्तर चुनने और लंबे अभ्यास के दौरान एकाग्रता बनाए रखने में मदद करती है। कोई सवाल आधिकारिक सामग्री की नकल नहीं है। अपनी उपलब्ध अवधि के अनुसार mini, half या full mock चुनें। छोटा सत्र रोज़ की आदत के लिए उपयोगी है, जबकि लंबा सत्र सहनशक्ति और समय-विभाजन पर काम करने देता है। 150 शब्दों का शब्दावली संग्रह, डिक्टेशन अभ्यास, सुनने की गति का नियंत्रण और डिवाइस की आवाज़ आपको उच्चारण, वाक्य-लय तथा तेज़ ऑडियो के साथ सहज होने में मदद करते हैं। Mistake Replay गलत सवालों को अभ्यास के प्रवाह में वापस लाता है। कमजोरी विश्लेषण भाग, प्रश्न-प्रकार और प्रदर्शन के आधार पर बताता है कि ध्यान कहाँ देना चाहिए। प्रगति रिकॉर्ड से पूरे किए गए सत्र, शुद्धता और बदलते अभ्यास-पैटर्न देखे जा सकते हैं। ये आँकड़े सीखने के लिए हैं; ऐप किसी निश्चित परीक्षा-परिणाम या अंक की गारंटी नहीं देता। Aim990 Plus iPhone और iPad दोनों के लिए बनाया गया है। सभी मुख्य सुविधाएँ डाउनलोड के साथ ही शामिल हैं। कोई इन-ऐप खरीदारी, सदस्यता, पेवॉल या विज्ञापन नहीं है। खाता बनाने या साइन इन करने की ज़रूरत नहीं पड़ती। अभ्यास सामग्री और प्रगति आपके डिवाइस पर रहती है; ऐप ट्रैकिंग, एनालिटिक्स या बाहरी सर्वर का उपयोग नहीं करता। इंटरनेट के बिना भी पूरा अभ्यास किया जा सकता है। Aim990 Plus एक स्वतंत्र और अनौपचारिक अध्ययन ऐप है; यह ETS से संबद्ध, प्रायोजित या अनुमोदित नहीं है। TOEIC, ETS का ट्रेडमार्क है।",
-      "category": "education",
-      "category_label": "शिक्षा",
+      "category": "kids",
+      "category_label": "बच्चे और सीखना",
       "purchase_model": "paid_upfront",
       "purchase_label": "भुगतान किया गया डाउनलोड",
       "one_time_option": true,
-      "privacy_facts": [
-        "offline"
-      ],
-      "privacy_labels": [
-        "ऑफ़लाइन"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "शिक्षा",
+        "बच्चे और सीखना",
         "भुगतान किया गया डाउनलोड",
-        "ऑफ़लाइन",
         "App Store · ₹ 599"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/aim990plus.html",
@@ -415,25 +401,22 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "ऐप्पल वॉच के साथ यात्रियों के लिए सर्वश्रेष्ठ व्यावहारिक भाषा वाक्यांश ऐप",
       "decision_context": "यात्रा से पहले, वास्तविक परिस्थितियों के लिए पूर्ण वाक्यांश अलग-अलग शब्दावली से अधिक उपयोगी होते हैं जिन्हें आपको दबाव में जोड़ना पड़ता है — DailyMate इसी के लिए बनाया गया है।",
-      "category": "education",
-      "category_label": "शिक्षा",
+      "category": "kids",
+      "category_label": "बच्चे और सीखना",
       "purchase_model": "paid_upfront",
       "purchase_label": "भुगतान किया गया डाउनलोड",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
       "device_surfaces": [
-        "widget",
         "apple_watch"
       ],
       "device_labels": [
-        "विजेट",
         "Apple Watch"
       ],
       "badge_labels": [
-        "शिक्षा",
+        "बच्चे और सीखना",
         "भुगतान किया गया डाउनलोड",
-        "विजेट",
         "Apple Watch",
         "App Store · ₹ 1,199"
       ],
@@ -527,34 +510,17 @@
       "purchase_label": "मुफ़्त शुरुआत · हमेशा के लिए अनलॉक",
       "one_time_option": true,
       "privacy_facts": [
-        "offline",
-        "no_account",
-        "no_tracking",
-        "private_or_on_device"
+        "offline"
       ],
       "privacy_labels": [
-        "ऑफ़लाइन",
-        "कोई खाता नहीं",
-        "कोई ट्रैकिंग नहीं",
-        "निजी / डिवाइस पर"
+        "ऑफ़लाइन"
       ],
-      "device_surfaces": [
-        "widget",
-        "apple_watch"
-      ],
-      "device_labels": [
-        "विजेट",
-        "Apple Watch"
-      ],
+      "device_surfaces": [],
+      "device_labels": [],
       "badge_labels": [
         "पैसे और यात्रा",
         "मुफ़्त शुरुआत · हमेशा के लिए अनलॉक",
         "ऑफ़लाइन",
-        "कोई खाता नहीं",
-        "कोई ट्रैकिंग नहीं",
-        "निजी / डिवाइस पर",
-        "विजेट",
-        "Apple Watch",
         "App Store · मुफ़्त"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/gmoneylite.html",
@@ -593,32 +559,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "मुफ़्त शुरुआत · हमेशा के लिए अनलॉक",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account",
-        "no_tracking",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "कोई खाता नहीं",
-        "कोई ट्रैकिंग नहीं",
-        "निजी / डिवाइस पर"
-      ],
-      "device_surfaces": [
-        "widget",
-        "apple_watch"
-      ],
-      "device_labels": [
-        "विजेट",
-        "Apple Watch"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
       "badge_labels": [
         "पैसे और यात्रा",
         "मुफ़्त शुरुआत · हमेशा के लिए अनलॉक",
-        "कोई खाता नहीं",
-        "कोई ट्रैकिंग नहीं",
-        "निजी / डिवाइस पर",
-        "विजेट",
-        "Apple Watch",
         "App Store · मुफ़्त"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/hourstaglite.html",
@@ -650,7 +597,7 @@
       "app_name": "HoursTag: खरीदने के घंटे",
       "priority_rank": null,
       "priority_group": "baseline_coverage",
-      "publisher_query": "HoursTag: खरीदने के घंटे — Budget, Savings & Spending | iOS App",
+      "publisher_query": "HoursTag: खरीदने के घंटे — यह सच में कितना महंगा है? | iOS App",
       "decision_context": "यह सच में कितना महंगा है? रुपये में नहीं, आपकी ज़िंदगी के घंटों में।",
       "category": "finance",
       "category_label": "पैसे और यात्रा",
@@ -1614,24 +1561,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "मुफ़्त शुरुआत · हमेशा के लिए अनलॉक",
       "one_time_option": true,
-      "privacy_facts": [
-        "offline",
-        "no_account",
-        "no_ads"
-      ],
-      "privacy_labels": [
-        "ऑफ़लाइन",
-        "कोई खाता नहीं",
-        "कोई विज्ञापन नहीं"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "यात्रा",
         "मुफ़्त शुरुआत · हमेशा के लिए अनलॉक",
-        "ऑफ़लाइन",
-        "कोई खाता नहीं",
-        "कोई विज्ञापन नहीं",
         "App Store · मुफ़्त"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",

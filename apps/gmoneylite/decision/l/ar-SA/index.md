@@ -1,30 +1,25 @@
 ---
-title: "G+Money Lite — مصاريف وميزانية وعملات | iOS App"
+title: "best free travel expense tracker with currency conversion for iphone"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/ar-SA/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# G+Money Lite — مصاريف وميزانية وعملات | iOS App
+# best free travel expense tracker with currency conversion for iphone
 
-G+Money Lite — متتبع ذكي للعملات والسفر أموال السفر، ببساطة سجل كل عملية شراء بالعملة المحلية وشاهدها على الفور بعملتك المحلية - سواء على الإنترنت أو بدون. تحويل • أسعار حية أو يدوية: يمكننا الحصول على أحدث الأسعار تلقائياً، أو يمكنك تعيينها بنفسك. يعمل دائماً بدون اتصال. • احصل على أحدث الأسعار عند فتح التطبيق (حوالي كل 6 ساعات). يعمل دائماً بدون اتصال بالإنترنت مع أسعارك المحفوظة. • سعر مرجعي في السوق المتوسطة. قد تختلف البطاقات والنقد. الإنفاق • الحد اليومي: اختياري. انظر كيف تتعقب كل يوم مقارنة به. • حسب الفئة · رحلات · مرشحات · سجلات • نسخ احتياطي واستعادة: يشمل النفقات والأسعار والفئات والإعدادات. • Widget · Apple Watch كل شيء يبقى على جهازك. لا حساب، لا تتبع. الأسعار تستخدم خدمة سعر صرف عامة. مجاناً: أسعار الصرف والميزانية والملخص · رحلة واحدة · 3 نفقات دفعة واحدة · استخدام مدى الحياة · بلا اشتراك افتح نفقات ورحلات بلا حدود مدى الحياة.
+A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.
 
 - المال والسفر
 - بدء مجاني · فتح دائم
 - دون اتصال
-- بدون حساب
-- بدون تتبع
-- خاص / على الجهاز
-- عنصر واجهة
-- Apple Watch
 - App Store · مجاني
 
-[احصل على G+Money Lite من App Store](https://apps.apple.com/sa/app/id6793436548)
+[Get G+Money Lite on the App Store →](https://apps.apple.com/sa/app/id6793436548)
 
-[اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/gmoneylite.html)
+[اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html)
 
-> هذه مادة ينشرها Lumi Studio مباشرةً بصفته مطور جميع التطبيقات المدرجة.
+> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

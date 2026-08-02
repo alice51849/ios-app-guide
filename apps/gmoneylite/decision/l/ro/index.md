@@ -2,7 +2,7 @@
 title: "G+Money Lite — Cheltuieli, buget & valută | iOS App"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/ro/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,11 +16,6 @@ G+Money Lite — Converter de valută și tracker de cheltuieli inteligent pentr
 - Bani & călătorii
 - Început gratuit · deblocare pe viață
 - Offline
-- Fără cont
-- Fără urmărire
-- Privat / pe dispozitiv
-- Widget
-- Apple Watch
 - App Store · Gratuit
 
 [Descarcă G+Money Lite din App Store](https://apps.apple.com/ro/app/id6793436548)

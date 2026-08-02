@@ -2,7 +2,7 @@
 title: "أفضل تطبيق تخطيط رحلة بسيط لرحلة قادمة واحدة على iPhone"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/ar-SA/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,6 @@ publisher: "Lumi Studio"
 
 - السفر
 - بدء مجاني · فتح دائم
-- دون اتصال
-- بدون حساب
-- بدون إعلانات
 - App Store · مجاني
 
 [احصل على TripBee Lite من App Store →](https://apps.apple.com/sa/app/id6791299610)

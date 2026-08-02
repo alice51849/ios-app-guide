@@ -2,7 +2,7 @@
 title: "AI Brief — ഫയലുകൾ, വ്യക്തമായ സന്ദർഭം | iOS App"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/ml-IN/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,6 @@ publisher: "Lumi Studio"
 
 - ഉത്പാദനക്ഷമത
 - സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക്
-- അക്കൗണ്ട് ഇല്ല
-- വ്യാപനങ്ങൾ ഇല്ല
-- ട്രാക്കിംഗ് ഇല്ല
 - സ്വകാര്യത / ഉപകരണത്തിൽ
 - App Store · സൗജന്യം
 

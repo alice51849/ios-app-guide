@@ -2,7 +2,7 @@
 title: "ಆಪಲ್ ವಾಚ್ ಹೊಂದಿರುವ ಪ್ರಯಾಣಿಕರಿಗಾಗಿ ಅತ್ಯುತ್ತಮ ಪ್ರಾಯೋಗಿಕ ಭಾಷಾ ವಾಕ್ಯಗಳು ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/kn-IN/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -13,9 +13,8 @@ publisher: "Lumi Studio"
 
 ಪ್ರಯಾಣದ ಮೊದಲು, ಒತ್ತಡದಡಿಯಲ್ಲಿ ಸಂಯೋಜಿಸಬೇಕಾಗಿರುವ ಪ್ರತ್ಯೇಕ ಪದಗಳಿಗಿಂತ ನೈಜ ಪರಿಸ್ಥಿತಿಗಳಿಗಾಗಿ ಪೂರ್ಣ ವಾಕ್ಯಗಳು ಹೆಚ್ಚು ಉಪಯುಕ್ತವಾಗಿವೆ — ಡೇಲಿಮೇಟ್ ಇದಕ್ಕಾಗಿ ನಿರ್ಮಿಸಲಾಗಿದೆ.
 
-- ಶಿಕ್ಷಣ
+- ಮಕ್ಕಳು ಮತ್ತು ಕಲಿಕೆ
 - ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್
-- ವಿಜೆಟ್
 - Apple Watch
 - App Store · ₹ 1,199
 

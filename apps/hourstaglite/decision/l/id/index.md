@@ -1,29 +1,24 @@
 ---
-title: "HoursTag Lite — Kenali prisma nilaimu | iOS App"
+title: "best app to convert prices into work hours before buying"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/id/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag Lite — Kenali prisma nilaimu | iOS App
+# best app to convert prices into work hours before buying
 
-HoursTag Lite - Lihat harga sebenarnya dari barang Setiap pembelian menghabiskan jam hidupmu. HoursTag Lite mengubah harga menjadi waktu kerja — sehingga kamu berbelanja dengan jelas. Kenali prisma nilaimu - Biaya waktu: Nilai bersihmu per jam kerja - Tipe: Perlu - Ingin - Impulsif - Pola nilaimu - Wawasan nilai lengkap - Apa biaya sebuah tujuan?: Lihat kerja di balik sebuah tujuan — dan lacak kemajuanmu. - Cadangan & pemulihan: Termasuk pendapatan, pengeluaran, tujuan, dan preferensi. - Widget - Apple Watch Semua tetap di perangkatmu. Tidak ada akun, tidak ada pelacakan. Sekali bayar · Akses seumur hidup · Tanpa langganan Pilihan dan edit tanpa batas Target dan progres tanpa batas Berbagi, wawasan, dan cadangan
+HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription.
 
 - Uang & perjalanan
 - Gratis untuk mulai · buka kunci permanen
-- Tanpa akun
-- Tanpa pelacakan
-- Privat / di perangkat
-- Widget
-- Apple Watch
 - App Store · Gratis
 
-[Dapatkan HoursTag Lite di App Store](https://apps.apple.com/id/app/id6794039979)
+[Get HoursTag Lite on the App Store →](https://apps.apple.com/id/app/id6794039979)
 
-[Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/hourstaglite.html)
+[Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-app-to-convert-prices-into-work-hours-before-buying.html)
 
-> Materi ini diterbitkan langsung oleh Lumi Studio, pengembang semua aplikasi yang tercantum.
+> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

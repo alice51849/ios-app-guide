@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație cu fraze utile pentru călătorii și Apple Watch"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/ro/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -13,9 +13,8 @@ publisher: "Lumi Studio"
 
 Înainte de o călătorie, expresiile complete pentru situații reale sunt mai utile decât vocabularul izolat pe care trebuie să-l asamblezi sub presiune — DailyMate este creat pentru asta.
 
-- Educație
+- Copii & învățare
 - Descărcare plătită
-- Widget
 - Apple Watch
 - App Store · 69,99 lei
 

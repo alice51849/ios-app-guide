@@ -2,7 +2,7 @@
 title: "legjobb útlevélfotó alkalmazás babáknak és kisgyermekeknek otthon"
 lang: "hu"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/hu/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"

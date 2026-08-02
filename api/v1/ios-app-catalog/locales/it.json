@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-31",
-  "content_digest": "741556b580f83a270aa348b18ea5e42602cbe0a1c169fe9115da666dbf860cdb",
+  "date_modified": "2026-08-02",
+  "content_digest": "8f14ab5dd69dc7ba96582d9414c5670e0f832e1998ad3b3ee53a697c7a258fbb",
   "locale": "it",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -31,9 +31,9 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
-        "no_ads": true,
-        "no_tracking": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
         "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
@@ -92,7 +92,7 @@
       "app_store_id": "6792483140",
       "name": "Aim990 Plus",
       "summary": "Allena la comprensione dell’inglese con sessioni che richiedono concentrazione, ritmo e continuità. Aim990 Plus è pensata per gli adulti che desiderano esercitarsi seriamente su iPhone o iPad, a casa, in viaggio o durante una pausa della giornata.",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "comprensione orale",
         "lettura",
@@ -108,7 +108,7 @@
       "purchase_model": "paid_upfront",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
+        "offline": false,
         "no_account": false,
         "no_ads": false,
         "no_tracking": false,
@@ -237,8 +237,6 @@
         "price": "0",
         "currency": "EUR",
         "formatted_price": "Gratis",
-        "rating_value": 5.0,
-        "rating_count": 1,
         "storefront_url": "https://apps.apple.com/it/app/id6782251621"
       }
     },
@@ -247,7 +245,7 @@
       "app_store_id": "6790418321",
       "name": "DailyMate: lingue in contesto",
       "summary": "Una lingua si impara meglio attraverso frasi complete, non con elenchi di parole isolate. DailyMate raccoglie 8.400 frasi pratiche in 47 lingue di studio, suddivise in 14 temi quotidiani e 84 situazioni concrete. Un solo acquisto include l’intera app. Nessun abbonamento.",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "inglese",
         "spagnolo",
@@ -269,7 +267,7 @@
         "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
-        "widget": true,
+        "widget": false,
         "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/it/app/id6790418321",
@@ -361,12 +359,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": true,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/it/app/id6793436548",
       "guide_url": "https://alice51849.github.io/ios-app-guide/it/gmoneylite.html",
@@ -457,12 +455,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/it/app/id6794039979",
       "guide_url": "https://alice51849.github.io/ios-app-guide/it/hourstaglite.html",
@@ -1104,7 +1102,7 @@
       "app_store_id": "6792850916",
       "name": "Mask My File",
       "summary": "Condividi senza esporre più del necessario. Mask My File individua i dati personali prima che tu invii un file, oscura in modo permanente ciò che scegli, poi riapre e verifica il nuovo file prima di mostrare Private Ready.",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "riservatezza",
         "oscurare",
@@ -1554,9 +1552,9 @@
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
-        "no_account": true,
-        "no_ads": true,
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
         "widget": false,
@@ -1680,7 +1678,7 @@
       "app_store_id": "6790467886",
       "name": "WiFi Aid",
       "summary": "Trova la causa probabile con verifiche indipendenti di percorsi, DNS, TCP, TLS, tempi e stabilità. Un acquisto iniziale, senza abbonamenti, pubblicità o tracciamento.",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "guasto internet",
         "router",

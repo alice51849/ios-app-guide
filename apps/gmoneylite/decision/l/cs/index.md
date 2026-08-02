@@ -2,7 +2,7 @@
 title: "G+Money Lite — Výdaje, rozpočet a měny | iOS App"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/cs/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,11 +16,6 @@ G+Money Lite — Chytrý převodník měn a sledovač výdajů Cestovní peníze
 - Finance a cestování
 - Zdarma na začátek · doživotní odemknutí
 - Offline
-- Bez účtu
-- Bez sledování
-- Soukromé / v zařízení
-- Widget
-- Apple Watch
 - App Store · Zdarma
 
 [Stáhněte si G+Money Lite v App Storu](https://apps.apple.com/cz/app/id6793436548)

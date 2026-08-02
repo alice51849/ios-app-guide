@@ -2,7 +2,7 @@
 title: "iPhone के लिए एक आगामी यात्रा के लिए सर्वश्रेष्ठ सरल यात्रा योजनाकार ऐप"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/hi/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,6 @@ publisher: "Lumi Studio"
 
 - यात्रा
 - मुफ़्त शुरुआत · हमेशा के लिए अनलॉक
-- ऑफ़लाइन
-- कोई खाता नहीं
-- कोई विज्ञापन नहीं
 - App Store · मुफ़्त
 
 [App Store पर TripBee Lite प्राप्त करें →](https://apps.apple.com/in/app/id6791299610)

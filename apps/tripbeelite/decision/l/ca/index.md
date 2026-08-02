@@ -2,7 +2,7 @@
 title: "millor app senzilla per planificar un viatge a l'iPhone"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/ca/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,6 @@ Si planifiques un viatge proper, una línia de temps tranquil·la per a aquest v
 
 - Viatges
 - Inici gratuït · desbloqueig de per vida
-- Fora de línia
-- Sense compte
-- Sense anuncis
 - App Store · Gratis
 
 [Descarrega TripBee Lite a l’App Store →](https://apps.apple.com/es/app/id6791299610)

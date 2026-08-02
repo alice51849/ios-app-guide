@@ -2,7 +2,7 @@
 title: "G+Money Lite — Έξοδα, προϋπολογισμός & FX | iOS App"
 lang: "el"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/el/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,11 +16,6 @@ G+Money Lite — Έξυπνος μετατροπέας νομισμάτων & π
 - Χρήματα & ταξίδια
 - Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής
 - Εκτός σύνδεσης
-- Χωρίς λογαριασμό
-- Χωρίς παρακολούθηση
-- Ιδιωτικό / στη συσκευή
-- Γραφικό στοιχείο
-- Apple Watch
 - App Store · Δωρεάν
 
 [Αποκτήστε το G+Money Lite από το App Store](https://apps.apple.com/gr/app/id6793436548)

@@ -1,25 +1,25 @@
 ---
-title: "Mask My File — ปกปิดข้อมูลส่วนตัวก่อนแชร์ | iOS App"
+title: "best on-device file redaction app for freelancers sharing client documents"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/th/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# Mask My File — ปกปิดข้อมูลส่วนตัวก่อนแชร์ | iOS App
+# best on-device file redaction app for freelancers sharing client documents
 
-แชร์ได้อย่างปลอดภัยโดยไม่สูญเสียบริบทที่จำเป็น Mask My File ค้นหาข้อมูลส่วนตัวก่อนที่คุณจะส่งไฟล์ ปิดบังอย่างถาวร แล้วเปิดไฟล์ที่ส่งออกใหม่ขึ้นมาตรวจสอบก่อนแสดงสถานะ Private Ready สิ่งที่ทำได้ • รูปภาพและ PDF: ดูตัวอย่างแบบเต็มความกว้าง ซูมสูงสุด 5× ลากเลื่อน และเลือกพื้นที่เองอย่างแม่นยำ • ไฟล์ภาพ: ปิดบังทึบอย่างถาวรหรือลบออกเท่านั้น การตรวจจับใบหน้าและบาร์โค้ดเพียงระบุพื้นที่ไว้ให้คุณตรวจสอบ • ข้อความ, JSON, XML, HTML, CSV, TSV และ RTF: ค้นหาทุกรายการที่ตรงกัน แล้วใช้เครื่องหมายดอกจันเพื่อปิดทั้งหมด ปิดบางส่วน ใส่ตัวแทน ใช้นามแฝง หรือลบออก • ลบเมทาดาทาเมื่อจำเป็น ทำงานทีละหน้าใน PDF หรือครอบคลุมไฟล์สูงสุด 100 ไฟล์ พร้อมดูตัวอย่างแยกไฟล์ ค้นหาข้ามไฟล์ และเลือกพื้นที่เองในแต่ละไฟล์ • จัดระเบียบงานด้วยเซสชันส่วนตัว พื้นที่ทำงานโปรเจกต์ และคลังตัวแทนข้อความ ใช้ในจังหวะสำคัญ ก่อนส่งใบสมัครเช่าที่พัก แชร์เอกสารทางการแพทย์ หรือส่งไฟล์ลูกค้าให้เพื่อนร่วมงาน ให้ปกป้องข้อมูลส่วนตัวอย่างถาวรพร้อมกับเก็บบริบทที่จำเป็นเอาไว้ ออกแบบมาเพื่อความเป็นส่วนตัว ทุกอย่างประมวลผลบนเครื่องของคุณ ไม่มีบัญชี โฆษณา การติดตาม การวิเคราะห์ หรือการอัปโหลดเนื้อหา Apple Vision และ Tesseract OCR ที่ฝังมาทำงานภายในเครื่อง การตรวจจับใบหน้าสร้างเพียงพื้นที่เท่านั้น ไม่ระบุตัวบุคคล ไม่สร้างเทมเพลต ไม่แชร์หรือเก็บข้อมูลใบหน้า การซื้อจัดการโดย Apple ผ่าน StoreKit Mask My File ไม่ใช้ VPN, NetworkExtension, พร็อกซี, อุโมงค์, ตัวกรอง DNS หรือการกำหนดเส้นทางเครือข่าย ไฟล์ต้นฉบับจะไม่ถูกเขียนทับ ไฟล์พื้นที่ทำงานชั่วคราว ข้อมูลเซสชันส่วนตัว และโปรเจกต์จะอยู่ในเครื่องจนกว่าคุณจะลบ จ่ายครั้งเดียว ใช้ได้ตลอดชีพ ปลดล็อกเพียงครั้งเดียวเพื่อใช้งานตลอดชีพ คุณจะสามารถตรวจสอบไฟล์ที่ส่งออกและประมวลผลแบบชุดได้ไม่จำกัด โดยไม่มีการสมัครสมาชิกรายเดือน และสามารถกู้คืนการซื้อได้ตลอดเวลาผ่าน App Store
+Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the useful context — Mask My File is built for this.
 
-- เพิ่มเติม
+- รูปภาพ & เครื่องมือ
 - เริ่มใช้ฟรี · ปลดล็อกถาวร
 - ส่วนตัว / บนอุปกรณ์
 - App Store · ฟรี
 
-[ดาวน์โหลด Mask My File บน App Store](https://apps.apple.com/th/app/id6792850916)
+[Get Mask My File on the App Store →](https://apps.apple.com/th/app/id6792850916)
 
-[อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/maskmyfile.html)
+[อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html)
 
-> เนื้อหานี้เผยแพร่โดยตรงจาก Lumi Studio ซึ่งเป็นผู้พัฒนาแอปทั้งหมดที่ระบุไว้
+> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

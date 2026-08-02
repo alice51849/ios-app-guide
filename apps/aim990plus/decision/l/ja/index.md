@@ -1,25 +1,24 @@
 ---
-title: "Aim990 Plus — 15分で磨く7パート対応力 | iOS App"
+title: "best offline English listening and reading exam trainer for iPhone"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/ja/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# Aim990 Plus — 15分で磨く7パート対応力 | iOS App
+# best offline English listening and reading exam trainer for iPhone
 
-ただ問題数をこなすのではなく、時間の重圧の中で正確に判断する力を鍛える。 Aim990 Plusは、英語のリスニングとリーディングに本気で取り組む社会人・成人学習者のための、独立した試験対策アプリです。学習の軸は、Warm-up、Pressure Set、Mistake Replayの3段階。まずはリスニングとリーディングを組み合わせた8問で頭を英語モードへ切り替え、次に20問を15分で解く演習で判断速度と時間配分を磨きます。終了後は間違えた問題をそのまま解き直し、気づきを次の演習へつなげられます。 【630問すべてオリジナル】 Part 1〜7に各90問、合計630問を収録しています。写真描写には90枚の異なる写真を用意し、同じ画像の使い回しで問題数を増やしていません。写真描写、応答、会話、説明文、短文穴埋め、長文穴埋め、読解まで、7つの形式を偏りなく練習できます。収録問題はすべて独自制作で、公式問題や過去問題を名乗るものではありません。 【空き時間にも、本番を意識した日にも】 短時間なら8問のWarm-up、集中してテンポを整えたい日は15分のPressure Set、持久力を確認したい日はmini・half・fullの3種類のmockを選べます。通勤前の数分、昼休み、まとまった学習時間など、その日の予定に合わせて負荷を変えられます。タイマーと進捗表示はペースの把握を助けますが、得点や成果を保証するものではありません。 【間違いを放置しない設計】 Mistake Replayでは、直前に間違えた問題へすぐ戻れます。正解済みの問題を漫然と繰り返さず、理解が曖昧な箇所に時間を使えます。Weakness Analyticsはパート別の結果を整理し、次に優先すべき領域を見つける手掛かりを示します。進捗とプロフィールでは演習履歴を確認でき、自分の記録を基準に学習計画を組み立てられます。 【聞き取りと語彙を、演習につなげる】 Dictationでは、聞こえた内容を一語ずつ確かめながら書き取れます。Speed Drillsでは再生速度を変え、要点を逃さず捉える練習ができます。端末の音声読み上げにも対応し、利用できる声はiOSの設定に従います。厳選した150語の語彙リストは単独でも復習でき、問題演習と組み合わせて定着を図れます。読解では情報の位置を素早く見極め、文脈を取り、制限時間内に選ぶ流れを繰り返します。 【買い切りで、最初から全機能】 Aim990 PlusはiPhoneとiPad向けの独立アプリです。ダウンロード後はすべての機能を利用でき、アプリ内課金、サブスクリプション、ペイウォール、広告はありません。アカウント登録やログインも不要です。問題、語彙、履歴、分析は端末内で動作し、オフラインで利用できます。サーバー通信、ユーザー追跡、アクセス解析も行いません。 TOEICはEducational Testing Service（ETS）の商標です。Aim990 Plusは独立した非公式の学習ツールであり、ETSとの提携、承認、後援または協力関係はありません。
+Aim990 Plus — Build calm, accurate decisions under time with 630 original questions, focused pressure sets, mistake replay, mocks, dictation, and offline progress. Paid download · Pay once · No subscription.
 
-- 教育
+- 子ども・学習
 - 有料ダウンロード
-- オフライン
 - App Store · ¥1,000
 
-[App Store で Aim990 Plus を入手](https://apps.apple.com/jp/app/id6792483140)
+[Get Aim990 Plus on the App Store →](https://apps.apple.com/jp/app/id6792483140)
 
-[完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/aim990plus.html)
+[完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html)
 
-> これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。
+> アプリ開発者であるLumi Studioが自ら作成したガイドです。アプリ名は各所有者の商標であり、識別目的でのみ使用されています。文書、健康、学校、生産性に関する決定を下す際は、必要に応じて関連機関の正式な要件をご確認ください。

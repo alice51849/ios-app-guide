@@ -1,25 +1,25 @@
 ---
-title: "Mask My File — تنقيح الملفات قبل مشاركتها | iOS App"
+title: "best on-device file redaction app for freelancers sharing client documents"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/ar-SA/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# Mask My File — تنقيح الملفات قبل مشاركتها | iOS App
+# best on-device file redaction app for freelancers sharing client documents
 
-شارك بأمان دون فقدان السياق المفيد. يعثر Mask My File على بياناتك الخاصة قبل إرسال الملف، ويحجبها نهائياً، ثم يعيد فتح الملف الناتج ويتحقق منه قبل أن يعرض حالة Private Ready. ما الذي يمكنك فعله • الصور وملفات PDF: معاينة بعرض كامل، وتكبير حتى 5×، وسحب، وتحديد يدوي دقيق. • الملفات المرئية: حجب صلب دائم أو إزالة فقط. يكتشف التطبيق الوجوه والباركود ليحدد مناطق تراجعها أنت وحدك. • النصوص وJSON وXML وHTML وCSV وTSV وRTF: ابحث في كل تطابق، ثم استخدم النجمة لإخفاء كامل أو جزئي، أو نص بديل، أو اسم مستعار، أو للإزالة. • أزل البيانات الوصفية عند الحاجة. اعمل صفحة بصفحة في ملفات PDF، أو عبر ما يصل إلى 100 ملف مع معاينة لكل ملف وبحث بين الملفات وتحديد يدوي لكل ملف. • نظّم عملك عبر الجلسة الخاصة، ومساحات عمل المشاريع، وخزنة النصوص البديلة. استخدمه عندما يهمّ الأمر قبل إرسال طلب إيجار، أو مشاركة مستند طبي، أو تسليم ملف عميل إلى زميل، احتفظ بالسياق المفيد مع حجب بياناتك الخاصة نهائياً. خصوصية بحكم التصميم تتم كل المعالجة على جهازك. لا حساب ولا إعلانات ولا تتبّع ولا تحليلات ولا رفع لأي محتوى. يعمل Apple Vision وTesseract OCR المدمج محلياً. اكتشاف الوجه ينشئ مناطق فقط: فهو لا يحدد هوية أحد، ولا ينشئ نموذجاً، ولا يشارك بيانات الوجه أو يحتفظ بها. تتولى Apple عمليات الشراء عبر StoreKit. لا يستخدم Mask My File شبكة VPN أو NetworkExtension أو وكيلاً أو نفقاً أو مرشّح DNS أو أي توجيه للشبكة. لا يُكتب فوق الملفات الأصلية أبداً؛ وتبقى ملفات مساحة العمل المؤقتة وبيانات الجلسة الخاصة والمشاريع على الجهاز حتى تحذفها. شراء لمرة واحدة، واستخدام مدى الحياة افتح التطبيق مرة واحدة لمدى الحياة واستمتع بعمليات لا محدودة من التحقق من المخرجات والمعالجة الدفعية. لا توجد أي اشتراكات، ويمكنك استعادة مشترياتك في أي وقت عبر متجر App Store.
+Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the useful context — Mask My File is built for this.
 
-- المزيد
+- الصورة والأدوات
 - بدء مجاني · فتح دائم
 - خاص / على الجهاز
 - App Store · مجاني
 
-[احصل على Mask My File من App Store](https://apps.apple.com/sa/app/id6792850916)
+[Get Mask My File on the App Store →](https://apps.apple.com/sa/app/id6792850916)
 
-[اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/maskmyfile.html)
+[اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html)
 
-> هذه مادة ينشرها Lumi Studio مباشرةً بصفته مطور جميع التطبيقات المدرجة.
+> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

@@ -2,7 +2,7 @@
 title: "mejor app para fotos de pasaporte de bebés y niños pequeños en casa"
 lang: "es-MX"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/es-MX/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"

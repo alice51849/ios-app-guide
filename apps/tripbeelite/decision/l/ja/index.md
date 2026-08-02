@@ -2,7 +2,7 @@
 title: "iPhone向けのシンプルで使いやすい、次の旅行に最適な旅行プランナーアプリ"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/ja/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,6 @@ publisher: "Lumi Studio"
 
 - 旅行
 - 無料で開始・買い切りで永久解除
-- オフライン
-- アカウント不要
-- 広告なし
 - App Store · 無料
 
 [App StoreでTripBee Liteを入手 →](https://apps.apple.com/jp/app/id6791299610)

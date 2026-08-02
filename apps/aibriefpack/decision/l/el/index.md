@@ -2,7 +2,7 @@
 title: "AI Brief — Αρχεία σε σαφές πλαίσιο | iOS App"
 lang: "el"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/el/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,6 @@ publisher: "Lumi Studio"
 
 - Παραγωγικότητα
 - Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής
-- Χωρίς λογαριασμό
-- Χωρίς διαφημίσεις
-- Χωρίς παρακολούθηση
 - Ιδιωτικό / στη συσκευή
 - App Store · Δωρεάν
 

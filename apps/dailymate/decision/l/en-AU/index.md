@@ -2,7 +2,7 @@
 title: "best practical language phrase app for travelers with apple watch"
 lang: "en-AU"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/en-AU/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -13,9 +13,8 @@ publisher: "Lumi Studio"
 
 Before a trip, complete phrases for real situations are more useful than isolated vocabulary you still have to assemble under pressure — DailyMate is built for this.
 
-- Education
+- Kids & learning
 - Paid download
-- Widget
 - Apple Watch
 - App Store · $19.99
 

@@ -2,7 +2,7 @@
 title: "AI Brief — கோப்பிலிருந்து தெளிவான சூழல் | iOS App"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/ta-IN/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,6 @@ publisher: "Lumi Studio"
 
 - தயாரிப்பு திறன்
 - இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும்
-- கணக்கு இல்லை
-- விளம்பரங்கள் இல்லை
-- பின்தொடர்வு இல்லை
 - தனியுரிமை / சாதனத்தில்
 - App Store · இலவசம்
 

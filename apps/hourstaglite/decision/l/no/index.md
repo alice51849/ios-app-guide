@@ -2,7 +2,7 @@
 title: "HoursTag Lite — Den virkelige prisen på ting | iOS App"
 lang: "no"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/no/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,11 +15,6 @@ HoursTag Lite - Den virkelige prisen på ting Hvert kjøp koster timer av livet 
 
 - Økonomi og reise
 - Gratis å starte · livstidsopplåsing
-- Ingen konto
-- Ingen sporing
-- Privat / på enheten
-- Widget
-- Apple Watch
 - App Store · Gratis
 
 [Last ned HoursTag Lite fra App Store](https://apps.apple.com/no/app/id6794039979)

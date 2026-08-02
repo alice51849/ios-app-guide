@@ -1,8 +1,8 @@
 ---
-title: "HoursTag: 価格を時間に — 節約・家計簿・予算・貯金 | iOS App"
+title: "best app to track where my money goes and save more"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ja/hourstag.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 video_url: "https://files.catbox.moe/e2vnm9.mp4"
 duration: "PT16S"
 app_store_id: "6754218117"
@@ -10,14 +10,14 @@ verified_live: true
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: 価格を時間に — 節約・家計簿・予算・貯金 | iOS App
+# best app to track where my money goes and save more
 
-それ、本当はいくら？お金ではなく、あなたの人生の「時間」で。
+If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something — HoursTag is built for this.
 
 [動画を見る](https://files.catbox.moe/e2vnm9.mp4)
 
-[App Store で HoursTag: 価格を時間に を入手](https://apps.apple.com/jp/app/id6754218117)
+[App StoreでHoursTagを入手 →](https://apps.apple.com/jp/app/id6754218117)
 
-[アプリガイドを開く](https://alice51849.github.io/ios-app-guide/ja/hourstag.html)
+[アプリガイドを開く](https://alice51849.github.io/ios-app-guide/ja/answers/best-app-to-track-where-my-money-goes-and-save-more.html)
 
-> これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。
+> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

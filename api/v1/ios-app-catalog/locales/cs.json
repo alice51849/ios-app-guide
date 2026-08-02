@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-31",
-  "content_digest": "741556b580f83a270aa348b18ea5e42602cbe0a1c169fe9115da666dbf860cdb",
+  "date_modified": "2026-08-02",
+  "content_digest": "8f14ab5dd69dc7ba96582d9414c5670e0f832e1998ad3b3ee53a697c7a258fbb",
   "locale": "cs",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -32,9 +32,9 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
-        "no_ads": true,
-        "no_tracking": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
         "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
@@ -89,7 +89,7 @@
       "app_store_id": "6792483140",
       "name": "Aim990 Plus",
       "summary": "Když běží čas, nestačí angličtině jen rozumět. Je potřeba udržet pozornost, rychle se rozhodovat a nenechat se rozhodit jednou chybnou odpovědí. Aim990 Plus je intenzivní poslechový a čtenářský trénink pro dospělé na iPhonu a iPadu. Každá hlavní lekce má jasný spád: 8 zahřívacích otázek, Pressure Set s 20 úlohami na 15 minut a nakonec Mistake Replay, kde se vrátíte přesně k tomu, co vám uniklo.",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "zkouška",
         "poslech",
@@ -108,7 +108,7 @@
       "purchase_model": "paid_upfront",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
+        "offline": false,
         "no_account": false,
         "no_ads": false,
         "no_tracking": false,
@@ -241,7 +241,7 @@
       "app_store_id": "6790418321",
       "name": "DailyMate: Věty pro život",
       "summary": "Neuč se nazpaměť izolovaná slovíčka. DailyMate nabízí 8 400 celých vět, které přirozeně využiješ na cestách, v práci, restauraci, při nakupování, péči o zdraví i setkávání s lidmi. Zaplatíš jednou, bez předplatného.",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "angličtina",
         "konverzace",
@@ -261,7 +261,7 @@
         "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
-        "widget": true,
+        "widget": false,
         "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/cz/app/id6790418321",
@@ -352,12 +352,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": true,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/cz/app/id6793436548",
       "guide_url": "https://alice51849.github.io/ios-app-guide/cs/gmoneylite.html",
@@ -451,12 +451,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/cz/app/id6794039979",
       "guide_url": "https://alice51849.github.io/ios-app-guide/cs/hourstaglite.html",
@@ -1109,7 +1109,7 @@
       "app_store_id": "6792850916",
       "name": "Mask My File",
       "summary": "Sdílejte bezpečně a přitom zachovejte užitečný kontext. Mask My File najde soukromé údaje dřív, než soubor odešlete, trvale začerní to, co vyberete, a poté novou kopii znovu otevře a ověří, než zobrazí Private Ready.",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "anonymizace",
         "cenzura",
@@ -1559,9 +1559,9 @@
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
-        "no_account": true,
-        "no_ads": true,
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
         "widget": false,
@@ -1688,7 +1688,7 @@
       "app_store_id": "6790467886",
       "name": "WiFi Aid",
       "summary": "Najděte nejpravděpodobnější příčinu pomocí nezávislých testů tras, DNS, TCP, TLS, odezvy a stability. Jedna platba předem, bez předplatného, reklam a sledování.",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "výpadek internetu",
         "router",

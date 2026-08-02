@@ -2,7 +2,7 @@
 title: "最佳iPhone儿童模糊照片修复应用"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/zh-Hans/unblurry.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 video_url: "https://files.catbox.moe/zsq203.mp4"
 duration: "PT16S"
 app_store_id: "6782275018"

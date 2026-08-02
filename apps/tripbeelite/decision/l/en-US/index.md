@@ -2,7 +2,7 @@
 title: "best simple trip planner app for one upcoming trip iphone"
 lang: "en-US"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/en-US/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,6 @@ If you are planning one upcoming journey, a calm timeline for that trip is more 
 
 - Travel
 - Free to start · lifetime unlock
-- Offline
-- No account
-- No ads
 - App Store · Free
 
 [Get TripBee Lite on the App Store →](https://apps.apple.com/us/app/id6791299610)

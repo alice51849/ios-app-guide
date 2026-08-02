@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ro",
-  "dateModified": "2026-07-31",
-  "content_digest": "d25fe9a1e078b3c0c14af98cbedf0273117830c2e9a4b4d0f3b9906385ab48e2",
-  "generation_digest": "e1d80cb6ea88329d88881233d28cead0c2c1140eaa12f67295589794b128e1e4",
+  "dateModified": "2026-08-02",
+  "content_digest": "e5bfe67ce45753740357eeca269b9d35c0540b62ea2875b9d353bd43f3b5580a",
+  "generation_digest": "fba7106f0739bc21b7780395db7e34437f3398d54d36d80e4aa52f98445f0433",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -26,8 +26,8 @@
       "priority_group": "launch_boost",
       "publisher_query": "Mask My File — Ascunde datele private | iOS App",
       "decision_context": "Distribuie în siguranță fără să pierzi contextul util. Mask My File găsește datele personale înainte să trimiți un fișier, acoperă definitiv ce alegi, apoi redeschide și verifică noul fișier înainte de a afișa eticheta Private Ready. CE POȚI FACE • Imagini și PDF: previzualizare pe toată lățimea, zoom până la 5×, glisare fluidă și selecții manuale precise. • Fișiere vizuale: acoperire compactă permanentă sau eliminare. Detectarea fețelor și a codurilor de bare marchează doar zonele de verificat. • Text, JSON, XML, HTML, CSV, TSV și RTF: caută fiecare potrivire, apoi aplică mască completă, mască parțială, substituent, pseudonim sau eliminare. • Elimină metadatele acolo unde formatul permite. Lucrează pagină cu pagină în PDF sau procesează până la 100 de fișiere, fiecare cu previzualizare proprie, căutare între fișiere și selecții manuale. • Ține totul ordonat cu sesiunea privată, spațiile de proiect și seiful substituenților. FOLOSEȘTE-L CÂND CONTEAZĂ Înainte să trimiți o cerere de închiriere, să distribui un document medical sau să dai fișa unui client unui coleg, păstrează contextul necesar și ascunde definitiv detaliile confidențiale. CONFIDENȚIAL PRIN CONCEPȚIE Totul este procesat pe dispozitivul tău. Fără cont, reclame, urmărire, analiză sau încărcare de conținut. Apple Vision și motorul Tesseract OCR integrat rulează local. Detectarea feței creează doar zone: nu identifică o persoană, nu creează un șablon, nu distribuie și nu păstrează date faciale. Apple gestionează cumpărăturile prin StoreKit. Mask My File nu folosește VPN, NetworkExtension, proxy, tunel, filtru DNS sau rutare de rețea. Originalele nu sunt niciodată suprascrise; fișierele temporare de lucru, datele sesiunii private și proiectele rămân pe dispozitiv până le ștergi. PLĂTEȘTI O DATĂ. E AL TĂU PE VIAȚĂ. O singură achiziție pe viață deblochează rezultate verificate nelimitate și procesare în lot. Fără abonamente. Restaurează achiziția din App Store.",
-      "category": "utility",
-      "category_label": "Mai mult",
+      "category": "photo-utility",
+      "category_label": "Fotografie & utilitate",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Început gratuit · deblocare pe viață",
       "one_time_option": true,
@@ -40,7 +40,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "Mai mult",
+        "Fotografie & utilitate",
         "Început gratuit · deblocare pe viață",
         "Privat / pe dispozitiv",
         "App Store · Gratuit"
@@ -76,8 +76,8 @@
       "priority_group": "launch_boost",
       "publisher_query": "WiFi Aid — Diagnoză de rețea cu dovezi | iOS App",
       "decision_context": "Găsește cauza cea mai probabilă prin teste independente de traseu, DNS, TCP, TLS, timpi și stabilitate. O singură plată inițială, fără abonament, reclame sau urmărire. • Rulează un Test — Verificări Wi-Fi și DNS cu o atingere • Test Profund — Mai multe dovezi și mostre de stabilitate • Test Website — Vezi dacă un site sau întregul internet pică • Dovezi — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Conexiune instabilă — Variație • Istoric Teste — Înregistrări private doar pe acest dispozitiv • Apple Watch — Rulează un Test • Widget · iPad — Conectat · Rulează un Test Fără cont, reclame sau urmărire. Înregistrări private doar pe acest dispozitiv. O singură achiziție inițială în App Store. Fără abonament.",
-      "category": "utility",
-      "category_label": "Mai mult",
+      "category": "photo-utility",
+      "category_label": "Fotografie & utilitate",
       "purchase_model": "paid_upfront",
       "purchase_label": "Descărcare plătită",
       "one_time_option": true,
@@ -86,7 +86,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "Mai mult",
+        "Fotografie & utilitate",
         "Descărcare plătită",
         "App Store · 29,99 lei"
       ],
@@ -172,15 +172,9 @@
       "purchase_label": "Început gratuit · deblocare pe viață",
       "one_time_option": true,
       "privacy_facts": [
-        "no_account",
-        "no_ads",
-        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
-        "Fără cont",
-        "Fără reclame",
-        "Fără urmărire",
         "Privat / pe dispozitiv"
       ],
       "device_surfaces": [],
@@ -188,9 +182,6 @@
       "badge_labels": [
         "Productivitate",
         "Început gratuit · deblocare pe viață",
-        "Fără cont",
-        "Fără reclame",
-        "Fără urmărire",
         "Privat / pe dispozitiv",
         "App Store · Gratuit"
       ],
@@ -270,23 +261,18 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "Aim990 Plus — Încredere contra cronometru | iOS App",
       "decision_context": "Să înțelegi engleza este important; să rămâi precis când timpul se scurge este o abilitate separată. Aim990 Plus este un antrenament intensiv de ascultare și citire pentru adulți, creat pentru iPhone și iPad. Sesiunea principală are un ritm clar: începi cu 8 întrebări de încălzire, continui cu Pressure Set — 20 de întrebări în 15 minute — apoi intri în Mistake Replay, unde revii exact la răspunsurile care ți-au creat dificultăți. Conținutul include 630 de întrebări originale. Fiecare dintre părțile 1–7 conține exact 90 de întrebări, în total 630, iar exercițiile vizuale folosesc 90 de fotografii distincte. Nu repeți mecanic aceleași exemple, ci exersezi identificarea detaliilor, intenției vorbitorului, reformulărilor și variantelor plauzibile care pot induce în eroare. Alege formatul potrivit pentru timpul disponibil: • mini mock pentru o sesiune scurtă și concentrată; • half mock pentru o verificare intermediară mai amplă; • full mock pentru rezistență și gestionarea timpului; • module separate de ascultare, citire, dictare și viteză; • o colecție de 150 de cuvinte pentru recapitulare; • analiza punctelor slabe și urmărirea progresului. Dictarea te ajută să surprinzi terminațiile, legăturile dintre cuvinte și vorbirea rapidă. Antrenamentul de viteză susține decizii mai prompte. Analiza arată ce tipuri de exerciții merită reluate, iar Mistake Replay transformă fiecare eroare într-un pas concret de studiu. Sunetul poate utiliza vocea disponibilă pe dispozitiv, astfel încât setările de redare rămân sub controlul tău. Aplicația funcționează integral offline — acasă, în tren, la bibliotecă sau fără semnal. Nu cere cont ori autentificare și nu conține reclame, achiziții în aplicație, abonament sau paywall. Nu folosește urmărire, analytics și nici server pentru colectarea rezultatelor. Descărcarea cu plată include toate funcțiile, disponibile chiar de la prima deschidere. Aim990 Plus nu promite un anumit punctaj. Oferă un cadru ordonat pentru ritm, concentrare și învățare conștientă din propriile greșeli. TOEIC este o marcă comercială a ETS. Aim990 Plus este o aplicație independentă, neoficială; nu este afiliată, sponsorizată sau aprobată de ETS.",
-      "category": "education",
-      "category_label": "Educație",
+      "category": "kids",
+      "category_label": "Copii & învățare",
       "purchase_model": "paid_upfront",
       "purchase_label": "Descărcare plătită",
       "one_time_option": true,
-      "privacy_facts": [
-        "offline"
-      ],
-      "privacy_labels": [
-        "Offline"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "Educație",
+        "Copii & învățare",
         "Descărcare plătită",
-        "Offline",
         "App Store · 29,99 lei"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/aim990plus.html",
@@ -415,25 +401,22 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "cea mai bună aplicație cu fraze utile pentru călătorii și Apple Watch",
       "decision_context": "Înainte de o călătorie, expresiile complete pentru situații reale sunt mai utile decât vocabularul izolat pe care trebuie să-l asamblezi sub presiune — DailyMate este creat pentru asta.",
-      "category": "education",
-      "category_label": "Educație",
+      "category": "kids",
+      "category_label": "Copii & învățare",
       "purchase_model": "paid_upfront",
       "purchase_label": "Descărcare plătită",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
       "device_surfaces": [
-        "widget",
         "apple_watch"
       ],
       "device_labels": [
-        "Widget",
         "Apple Watch"
       ],
       "badge_labels": [
-        "Educație",
+        "Copii & învățare",
         "Descărcare plătită",
-        "Widget",
         "Apple Watch",
         "App Store · 69,99 lei"
       ],
@@ -527,34 +510,17 @@
       "purchase_label": "Început gratuit · deblocare pe viață",
       "one_time_option": true,
       "privacy_facts": [
-        "offline",
-        "no_account",
-        "no_tracking",
-        "private_or_on_device"
+        "offline"
       ],
       "privacy_labels": [
-        "Offline",
-        "Fără cont",
-        "Fără urmărire",
-        "Privat / pe dispozitiv"
+        "Offline"
       ],
-      "device_surfaces": [
-        "widget",
-        "apple_watch"
-      ],
-      "device_labels": [
-        "Widget",
-        "Apple Watch"
-      ],
+      "device_surfaces": [],
+      "device_labels": [],
       "badge_labels": [
         "Bani & călătorii",
         "Început gratuit · deblocare pe viață",
         "Offline",
-        "Fără cont",
-        "Fără urmărire",
-        "Privat / pe dispozitiv",
-        "Widget",
-        "Apple Watch",
         "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/gmoneylite.html",
@@ -593,32 +559,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Început gratuit · deblocare pe viață",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account",
-        "no_tracking",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "Fără cont",
-        "Fără urmărire",
-        "Privat / pe dispozitiv"
-      ],
-      "device_surfaces": [
-        "widget",
-        "apple_watch"
-      ],
-      "device_labels": [
-        "Widget",
-        "Apple Watch"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
       "badge_labels": [
         "Bani & călătorii",
         "Început gratuit · deblocare pe viață",
-        "Fără cont",
-        "Fără urmărire",
-        "Privat / pe dispozitiv",
-        "Widget",
-        "Apple Watch",
         "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/hourstaglite.html",
@@ -681,7 +628,7 @@
       "app_store_id": "6754218117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
       "app_store_url": "https://apps.apple.com/ro/app/id6754218117",
-      "app_store_cta_label": "Get HoursTag: Ore pentru cumpărat on the App Store",
+      "app_store_cta_label": "Descarcă HoursTag: Ore pentru cumpărat din App Store",
       "storefront_facts": {
         "price": "29.99",
         "currency": "RON",
@@ -1614,24 +1561,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Început gratuit · deblocare pe viață",
       "one_time_option": true,
-      "privacy_facts": [
-        "offline",
-        "no_account",
-        "no_ads"
-      ],
-      "privacy_labels": [
-        "Offline",
-        "Fără cont",
-        "Fără reclame"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Călătorii",
         "Început gratuit · deblocare pe viață",
-        "Offline",
-        "Fără cont",
-        "Fără reclame",
         "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",

@@ -2,7 +2,7 @@
 title: "아이폰에서 회의 내용을 요약하는 최고의 음성 메모 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ko/sononote.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 video_url: "https://files.catbox.moe/xpoyjw.mp4"
 duration: "PT16S"
 app_store_id: "6782139553"

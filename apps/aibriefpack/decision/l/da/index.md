@@ -2,7 +2,7 @@
 title: "AI Brief — Filer til klar kontekst | iOS App"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/da/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,6 @@ Bedre kontekst. Bedre svar. Omdan skærmbilleder, filer, noter og dokumenter til
 
 - Produktivitet
 - Gratis at komme i gang · permanent oplåsning
-- Ingen konto
-- Ingen reklamer
-- Ingen sporing
 - Privat / på enheden
 - App Store · Gratis
 

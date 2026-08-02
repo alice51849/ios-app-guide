@@ -2,7 +2,7 @@
 title: "millor app de frases útils per viatjar amb Apple Watch"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/ca/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -13,9 +13,8 @@ publisher: "Lumi Studio"
 
 Abans d'un viatge, les frases completes per a situacions reals són més útils que el vocabulari aïllat que encara has d'assemblar sota pressió — DailyMate està dissenyat per això.
 
-- Educació
+- Infants i aprenentatge
 - Descàrrega de pagament
-- Widget
 - Apple Watch
 - App Store · 12,99 €
 

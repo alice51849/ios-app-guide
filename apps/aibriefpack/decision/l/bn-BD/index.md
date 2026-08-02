@@ -2,7 +2,7 @@
 title: "AI Brief — ফাইল থেকে স্পষ্ট প্রেক্ষাপট | iOS App"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/bn-BD/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,6 @@ publisher: "Lumi Studio"
 
 - উৎপাদনশীলতা
 - বিনামূল্যে শুরু · আজীবন আনলক
-- কোনও অ্যাকাউন্ট নেই
-- কোনও বিজ্ঞাপন নেই
-- কোনও ট্র্যাকিং নেই
 - গোপনীয় / ডিভাইসে
 
 [App Store থেকে AI Brief ডাউনলোড করুন](https://apps.apple.com/app/id6791658210)

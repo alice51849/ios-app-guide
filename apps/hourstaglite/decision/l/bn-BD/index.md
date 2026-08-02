@@ -2,7 +2,7 @@
 title: "HoursTag Lite — বিষয়ের আসল দাম দেখুন | iOS App"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/bn-BD/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,11 +15,6 @@ HoursTag Lite - বিষয়ের আসল দাম দেখুন প্
 
 - অর্থ ও ভ্রমণ
 - বিনামূল্যে শুরু · আজীবন আনলক
-- কোনও অ্যাকাউন্ট নেই
-- কোনও ট্র্যাকিং নেই
-- গোপনীয় / ডিভাইসে
-- উইজেট
-- Apple Watch
 
 [App Store থেকে HoursTag Lite ডাউনলোড করুন](https://apps.apple.com/app/id6794039979)
 

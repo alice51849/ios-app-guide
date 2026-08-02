@@ -2,7 +2,7 @@
 title: "najlepšia jednoduchá aplikácia na plánovanie jednej nadchádzajúcej cesty pre iPhone"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/sk/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,6 @@ Ak plánujete jednu nadchádzajúcu cestu, pokojný časový plán pre túto ces
 
 - Cestovanie
 - Zadarmo na začiatok · doživotné odomknutie
-- Offline
-- Bez účtu
-- Bez reklám
 - App Store · Zadarmo
 
 [Stiahnite si TripBee Lite v App Store →](https://apps.apple.com/sk/app/id6791299610)

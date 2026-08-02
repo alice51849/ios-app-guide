@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-31",
-  "content_digest": "741556b580f83a270aa348b18ea5e42602cbe0a1c169fe9115da666dbf860cdb",
+  "date_modified": "2026-08-02",
+  "content_digest": "8f14ab5dd69dc7ba96582d9414c5670e0f832e1998ad3b3ee53a697c7a258fbb",
   "locale": "de-DE",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -31,9 +31,9 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
-        "no_ads": true,
-        "no_tracking": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
         "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
@@ -89,7 +89,7 @@
       "app_store_id": "6792483140",
       "name": "Aim990 Plus",
       "summary": "Aim990 Plus ist eine umfassende Trainingsumgebung für Erwachsene, die englische Hör- und Leseaufgaben auch unter Zeitdruck sicher bearbeiten möchten. Der klare Tagesablauf beginnt mit 8 Aufwärmfragen, führt durch ein Pressure Set mit 20 Fragen in 15 Minuten und endet mit Mistake Replay. Dort bearbeitest du genau die falsch beantworteten Fragen sofort erneut, statt Fehler nur in einer langen Ergebnisliste zu sehen.",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "hören",
         "lesen",
@@ -105,7 +105,7 @@
       "purchase_model": "paid_upfront",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
+        "offline": false,
         "no_account": false,
         "no_ads": false,
         "no_tracking": false,
@@ -241,7 +241,7 @@
       "app_store_id": "6790418321",
       "name": "DailyMate: Sprachen im Alltag",
       "summary": "Sprachen lernt man in ganzen Sätzen, nicht als Sammlung einzelner Vokabeln. DailyMate bietet 8.400 praxisnahe Sätze in 47 Lernsprachen, klar gegliedert in 14 Alltagsthemen und 84 konkrete Situationen. Einmal kaufen, vollständig nutzen. Kein Abo.",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "Englisch lernen",
         "Spanisch",
@@ -261,7 +261,7 @@
         "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
-        "widget": true,
+        "widget": false,
         "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/de/app/id6790418321",
@@ -349,12 +349,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": true,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/de/app/id6793436548",
       "guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/gmoneylite.html",
@@ -444,12 +444,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/de/app/id6794039979",
       "guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/hourstaglite.html",
@@ -1101,7 +1101,7 @@
       "app_store_id": "6792850916",
       "name": "Mask My File",
       "summary": "Teile sicher, ohne den nützlichen Zusammenhang zu verlieren. Mask My File findet private Daten, bevor du eine Datei sendest, schwärzt dauerhaft, was du auswählst, und öffnet und prüft anschließend die neue Kopie erneut, bevor Private Ready erscheint.",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "anonymisieren",
         "schwärzen",
@@ -1543,9 +1543,9 @@
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
-        "no_account": true,
-        "no_ads": true,
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
         "widget": false,
@@ -1669,7 +1669,7 @@
       "app_store_id": "6790467886",
       "name": "WiFi Aid",
       "summary": "Erkennt die wahrscheinlichste Störung anhand unabhängiger Pfade, DNS, TCP, TLS, Laufzeit und Stabilität. Einmal vorab bezahlen – kein Abo, keine Werbung, kein Tracking.",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "internetstörung",
         "router",

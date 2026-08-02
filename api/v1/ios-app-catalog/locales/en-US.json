@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-31",
-  "content_digest": "741556b580f83a270aa348b18ea5e42602cbe0a1c169fe9115da666dbf860cdb",
+  "date_modified": "2026-08-02",
+  "content_digest": "8f14ab5dd69dc7ba96582d9414c5670e0f832e1998ad3b3ee53a697c7a258fbb",
   "locale": "en-US",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -33,9 +33,9 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
-        "no_ads": true,
-        "no_tracking": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
         "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
@@ -92,7 +92,7 @@
       "app_store_id": "6792483140",
       "name": "Aim990 Plus",
       "summary": "Train for clear decisions under exam pressure",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "english",
         "listening",
@@ -110,7 +110,7 @@
       "purchase_model": "paid_upfront",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
+        "offline": false,
         "no_account": false,
         "no_ads": false,
         "no_tracking": false,
@@ -257,7 +257,7 @@
       "app_store_id": "6790418321",
       "name": "DailyMate: Language Phrases",
       "summary": "Learn a language in the form you actually use it: complete sentences, not isolated vocabulary. DailyMate brings together 8,400 practical phrases across 47 learning languages, 14 everyday topics, and 84 real-life situations. One purchase. No subscription.",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "conversation",
         "speaking",
@@ -279,7 +279,7 @@
         "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
-        "widget": true,
+        "widget": false,
         "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/us/app/id6790418321",
@@ -369,12 +369,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": true,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/us/app/id6793436548",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-US/gmoneylite.html",
@@ -464,12 +464,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/us/app/id6794039979",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-US/hourstaglite.html",
@@ -1131,7 +1131,7 @@
       "app_store_id": "6792850916",
       "name": "Mask My File",
       "summary": "Share safely without losing the context people actually need. Mask My File finds private details before you send a file, permanently hides only what you choose, then reopens and verifies the new copy before showing Private Ready.",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "anonymize",
         "censor",
@@ -1593,9 +1593,9 @@
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
-        "no_account": true,
-        "no_ads": true,
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
         "widget": false,
@@ -1720,7 +1720,7 @@
       "app_store_id": "6790467886",
       "name": "WiFi Aid",
       "summary": "Find the most likely connection problem with independent path, DNS, TCP, TLS, timing and stability checks. Pay once upfront—no subscription, ads or tracking.",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "internet",
         "outage",

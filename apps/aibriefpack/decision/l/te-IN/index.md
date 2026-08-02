@@ -2,7 +2,7 @@
 title: "AI Brief — ఫైళ్ల నుంచి స్పష్టమైన సందర్భం | iOS App"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/te-IN/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,6 @@ publisher: "Lumi Studio"
 
 - ఉత్పాదకత
 - ఉచితంగా ప్రారంభించండి · జీవితకాల అన్లాక్
-- ఖాతా అవసరం లేదు
-- ప్రకటనలు లేవు
-- ట్రాకింగ్ లేదు
 - గోప్యంగా / పరికరంలో
 - App Store · ఉచితం
 

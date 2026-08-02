@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "he",
-  "dateModified": "2026-07-31",
-  "content_digest": "d25fe9a1e078b3c0c14af98cbedf0273117830c2e9a4b4d0f3b9906385ab48e2",
-  "generation_digest": "e1d80cb6ea88329d88881233d28cead0c2c1140eaa12f67295589794b128e1e4",
+  "dateModified": "2026-08-02",
+  "content_digest": "e5bfe67ce45753740357eeca269b9d35c0540b62ea2875b9d353bd43f3b5580a",
+  "generation_digest": "fba7106f0739bc21b7780395db7e34437f3398d54d36d80e4aa52f98445f0433",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -26,8 +26,8 @@
       "priority_group": "launch_boost",
       "publisher_query": "Mask My File — השחרת מידע לפני שיתוף | iOS App",
       "decision_context": "שתפו בבטחה בלי לאבד את ההקשר החשוב. Mask My File מאתר פרטים פרטיים לפני שליחת הקובץ, מסתיר אותם לצמיתות, ואז פותח מחדש את הקובץ שנוצר ומאמת אותו לפני הצגת הסטטוס Private Ready. מה אפשר לעשות • תמונות וקובצי PDF: תצוגה מקדימה ברוחב מלא, זום עד 5×, גרירה ובחירה ידנית מדויקת. • קבצים חזותיים: השחרה אטומה קבועה או הסרה בלבד. זיהוי פנים וברקוד רק מסמן אזורים לבדיקה שלכם. • טקסט, JSON, XML, HTML, CSV, TSV ו-RTF: חיפוש כל התאמה, ואז שימוש בכוכביות למסכה מלאה, מסכה חלקית, מציין מיקום, שם בדוי או הסרה. • הסירו מטא-נתונים לפי הצורך. עבדו עמוד-אחר-עמוד בקובצי PDF, או על פני עד 100 קבצים עם תצוגה מקדימה לכל קובץ, חיפוש חוצה-קבצים ובחירה ידנית לכל קובץ. • ארגנו את העבודה עם מפגש פרטי, מרחבי עבודה של פרויקטים וכספת מצייני מיקום. השתמשו בו כשזה חשוב לפני שליחת בקשת שכירות, שיתוף מסמך רפואי או העברת קובץ לקוח לעמית, שמרו על ההקשר החשוב תוך הסתרה קבועה של פרטים פרטיים. פרטיות מתוכננת מראש כל העיבוד מתבצע במכשיר שלכם. אין חשבון, פרסום, מעקב, ניתוח או העלאת תוכן. Apple Vision ו-Tesseract OCR המובנה פועלים מקומית. זיהוי פנים יוצר אזורים בלבד: הוא אינו מזהה אדם, אינו יוצר תבנית, ואינו משתף או שומר נתוני פנים. Apple מטפלת ברכישות באמצעות StoreKit. היישום Mask My File אינו משתמש ב-VPN, ב-NetworkExtension, בשרת מתווך, במנהרה, במסנן DNS או בניתוב רשת. הקבצים המקוריים לעולם אינם נדרסים; קובצי מרחב עבודה זמניים, נתוני מפגש פרטי ופרויקטים נשארים במכשיר עד שתמחקו אותם. רכישה חד-פעמית לכל החיים פתיחה חד-פעמית לכל החיים המעניקה גישה בלתי מוגבלת לאימות קבצים ולעיבוד באצווה. אין מנויים. תמיד אפשר לשחזר את הרכישה דרך App Store.",
-      "category": "utility",
-      "category_label": "עוד",
+      "category": "photo-utility",
+      "category_label": "צילום וכלי עזר",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "התחלה ללא תשלום · פתיחה לכל החיים",
       "one_time_option": true,
@@ -40,7 +40,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "עוד",
+        "צילום וכלי עזר",
         "התחלה ללא תשלום · פתיחה לכל החיים",
         "פרטי / במכשיר",
         "App Store · בחינם"
@@ -76,8 +76,8 @@
       "priority_group": "launch_boost",
       "publisher_query": "WiFi Aid — אבחון רשת מבוסס ראיות | iOS App",
       "decision_context": "מצאו את הסיבה הסבירה ביותר בעזרת בדיקות בלתי תלויות של נתיבים, DNS,‏ TCP,‏ TLS, תזמון ויציבות. תשלום מראש פעם אחת, ללא מינוי, פרסומות או מעקב. • הפעל בדיקה — בדיקות Wi-Fi, DNS ואינטרנט בקליק • בדיקה עמוקה — עוד נתונים ודגימות יציבות • בדיקת אתר — ראה האם יעד אחד או האינטרנט כולו כשל • הוכחות — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • החיבור נראה לא יציב — שינוי בהשהיה • היסטוריית בדיקות — רשומות פרטיות נשמרות רק על מכשיר זה • Apple Watch — הפעל בדיקה • Widget · iPad — מחובר · הפעל בדיקה ללא חשבון, פרסומות, או מעקב. רשומות פרטיות נשמרות רק על מכשיר זה. רכישה אחת מראש ב-App Store. ללא מינוי.",
-      "category": "utility",
-      "category_label": "עוד",
+      "category": "photo-utility",
+      "category_label": "צילום וכלי עזר",
       "purchase_model": "paid_upfront",
       "purchase_label": "הורדה בתשלום",
       "one_time_option": true,
@@ -86,7 +86,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "עוד",
+        "צילום וכלי עזר",
         "הורדה בתשלום",
         "App Store · ₪19.90"
       ],
@@ -172,15 +172,9 @@
       "purchase_label": "התחלה ללא תשלום · פתיחה לכל החיים",
       "one_time_option": true,
       "privacy_facts": [
-        "no_account",
-        "no_ads",
-        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
-        "ללא חשבון",
-        "ללא פרסומות",
-        "ללא מעקב",
         "פרטי / במכשיר"
       ],
       "device_surfaces": [],
@@ -188,9 +182,6 @@
       "badge_labels": [
         "פרודוקטיביות",
         "התחלה ללא תשלום · פתיחה לכל החיים",
-        "ללא חשבון",
-        "ללא פרסומות",
-        "ללא מעקב",
         "פרטי / במכשיר",
         "App Store · בחינם"
       ],
@@ -270,23 +261,18 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "Aim990 Plus — אימון שמיעה וקריאה בלחץ | iOS App",
       "decision_context": "תרגול ממוקד להבנת אנגלית מדוברת וכתובה, שנבנה למבוגרים שרוצים לשפר דיוק ומהירות גם כשהשעון מתקתק. במקום לפתור עוד ועוד שאלות בלי כיוון, האפליקציה מחברת בין מפגשים קצרים, סימולציות ארוכות ומשוב שמראה במה כדאי להתמקד בהמשך. כל מסלול מתחיל בחימום של 8 שאלות שמכניס לקצב. משם עוברים למקבץ הלחץ: 20 שאלות בתוך 15 דקות. בסיום נפתחת החזרה על טעויות, שמרכזת את המקומות שבהם טעית ומאפשרת להבין מה השתבש לפני ניסיון נוסף. המאגר כולל 630 שאלות מקוריות, המחולקות באופן שווה בין חלקים 1 עד 7, עם 90 שאלות בכל חלק. בחלק הראשון יש 90 תמונות שונות, כך שהאימון נשען על הבחנה בפרטים והתאמת תיאור למצב ולא על שינון של תבנית קבועה. פעילויות השמיעה והקריאה מציעות מגוון הקשרים ורמת לחץ שעולה בהדרגה. אפשר לבחור סימולציה קטנה, חצי סימולציה או סימולציה מלאה, בהתאם לזמן הזמין ולמטרה של אותו יום. ניתוח נקודות החולשה חושף דפוסים חוזרים; מצב הכתבה מחדד את הקשר בין צליל לכתיב; ובקרת המהירות מאפשרת להאט כדי לזהות פרטים ואז להתקרב לקצב טבעי. ניתן להשתמש בקולות המכשיר המותקנים לצורך השמעה, בלי לשלוח את הטקסט לשירות חיצוני. מאגר של 150 מילים מסייע לבנות חזרות ממוקדות. אפשר לסמן מילים שדורשות תשומת לב, לעקוב אחר מה שכבר הושלם ולבחור את הצעד הבא מתוך נתוני ההתקדמות. אזור הפרופיל מרכז את הפעילות שנשמרה במכשיר, והמדדים עוזרים לתכנן למידה בלי להבטיח תוצאה או ציון מסוים. האפליקציה נרכשת בהורדה וכל היכולות כלולות מהרגע הראשון. אין רכישות בתוך האפליקציה, מנויים, מסך תשלום או פרסומות. אין צורך לפתוח חשבון או להתחבר. כל התוכן פועל במצב לא מקוון, וההתקדמות נשמרת במכשיר בלבד; אין שרתים, מעקב או כלי ניתוח שאוספים את הפעילות שלך. הודעת סימן מסחר: TOEIC הוא סימן מסחר של ETS. ‏Aim990 Plus הוא יישום עצמאי ולא רשמי, שאינו קשור ל־ETS ואינו מאושר על ידיה.",
-      "category": "education",
-      "category_label": "חינוך",
+      "category": "kids",
+      "category_label": "ילדים ולמידה",
       "purchase_model": "paid_upfront",
       "purchase_label": "הורדה בתשלום",
       "one_time_option": true,
-      "privacy_facts": [
-        "offline"
-      ],
-      "privacy_labels": [
-        "לא מקוון"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "חינוך",
+        "ילדים ולמידה",
         "הורדה בתשלום",
-        "לא מקוון",
         "App Store · ₪19.90"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/aim990plus.html",
@@ -415,25 +401,22 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "האפליקציה הטובה ביותר לביטויים שימושיים בשפות למטיילים עם Apple Watch",
       "decision_context": "לפני טיול, ביטויים מלאים למצבים אמיתיים שימושיים יותר ממילים מבודדות שעדיין צריך להרכיב בלחץ — DailyMate נבנתה לכך.",
-      "category": "education",
-      "category_label": "חינוך",
+      "category": "kids",
+      "category_label": "ילדים ולמידה",
       "purchase_model": "paid_upfront",
       "purchase_label": "הורדה בתשלום",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
       "device_surfaces": [
-        "widget",
         "apple_watch"
       ],
       "device_labels": [
-        "וידג'ט",
         "Apple Watch"
       ],
       "badge_labels": [
-        "חינוך",
+        "ילדים ולמידה",
         "הורדה בתשלום",
-        "וידג'ט",
         "Apple Watch",
         "App Store · ₪39.90"
       ],
@@ -527,34 +510,17 @@
       "purchase_label": "התחלה ללא תשלום · פתיחה לכל החיים",
       "one_time_option": true,
       "privacy_facts": [
-        "offline",
-        "no_account",
-        "no_tracking",
-        "private_or_on_device"
+        "offline"
       ],
       "privacy_labels": [
-        "לא מקוון",
-        "ללא חשבון",
-        "ללא מעקב",
-        "פרטי / במכשיר"
+        "לא מקוון"
       ],
-      "device_surfaces": [
-        "widget",
-        "apple_watch"
-      ],
-      "device_labels": [
-        "וידג'ט",
-        "Apple Watch"
-      ],
+      "device_surfaces": [],
+      "device_labels": [],
       "badge_labels": [
         "כסף ונסיעות",
         "התחלה ללא תשלום · פתיחה לכל החיים",
         "לא מקוון",
-        "ללא חשבון",
-        "ללא מעקב",
-        "פרטי / במכשיר",
-        "וידג'ט",
-        "Apple Watch",
         "App Store · בחינם"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/gmoneylite.html",
@@ -593,32 +559,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "התחלה ללא תשלום · פתיחה לכל החיים",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account",
-        "no_tracking",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "ללא חשבון",
-        "ללא מעקב",
-        "פרטי / במכשיר"
-      ],
-      "device_surfaces": [
-        "widget",
-        "apple_watch"
-      ],
-      "device_labels": [
-        "וידג'ט",
-        "Apple Watch"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
       "badge_labels": [
         "כסף ונסיעות",
         "התחלה ללא תשלום · פתיחה לכל החיים",
-        "ללא חשבון",
-        "ללא מעקב",
-        "פרטי / במכשיר",
-        "וידג'ט",
-        "Apple Watch",
         "App Store · בחינם"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/hourstaglite.html",
@@ -681,7 +628,7 @@
       "app_store_id": "6754218117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
       "app_store_url": "https://apps.apple.com/il/app/id6754218117",
-      "app_store_cta_label": "Get HoursTag: שעות לקנייה on the App Store",
+      "app_store_cta_label": "הורידו את HoursTag: שעות לקנייה מה-App Store",
       "storefront_facts": {
         "price": "17.9",
         "currency": "ILS",
@@ -1614,24 +1561,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "התחלה ללא תשלום · פתיחה לכל החיים",
       "one_time_option": true,
-      "privacy_facts": [
-        "offline",
-        "no_account",
-        "no_ads"
-      ],
-      "privacy_labels": [
-        "לא מקוון",
-        "ללא חשבון",
-        "ללא פרסומות"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "נסיעות",
         "התחלה ללא תשלום · פתיחה לכל החיים",
-        "לא מקוון",
-        "ללא חשבון",
-        "ללא פרסומות",
         "App Store · בחינם"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",

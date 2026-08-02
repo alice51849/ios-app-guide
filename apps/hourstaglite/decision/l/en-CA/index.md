@@ -2,7 +2,7 @@
 title: "HoursTag Lite — See the real price of things | iOS App"
 lang: "en-CA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/en-CA/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,11 +15,6 @@ HoursTag Lite - See the real price of things Every purchase costs hours of your 
 
 - Money & travel
 - Free to start · lifetime unlock
-- No account
-- No tracking
-- Private / on-device
-- Widget
-- Apple Watch
 - App Store · Free
 
 [Get HoursTag Lite on the App Store](https://apps.apple.com/ca/app/id6794039979)

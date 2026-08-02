@@ -2,7 +2,7 @@
 title: "AI Brief — ಫೈಲ್‌ನಿಂದ ಸ್ಪಷ್ಟ ಸಂದರ್ಭ | iOS App"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/kn-IN/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,6 @@ publisher: "Lumi Studio"
 
 - ಉತ್ಪಾದಕತೆ
 - ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್
-- ಖಾತೆ ಇಲ್ಲ
-- ಜಾಹೀರಾತುಗಳಿಲ್ಲ
-- ಹಿಂಡಿಕೆ ಇಲ್ಲ
 - ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
 - App Store · ಉಚಿತ
 

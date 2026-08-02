@@ -2,7 +2,7 @@
 title: "millor app de vocabulari per a persones que fan trajectes amb Apple Watch"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/ca/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"

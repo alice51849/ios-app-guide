@@ -135,6 +135,6 @@ JSON, JSONL și CSV conțin aceleași 1.750 de înregistrări.
 
 [Acasă](https://alice51849.github.io/ios-app-guide/ro/index.html) · [Date deschise](https://alice51849.github.io/ios-app-guide/ro/data/lumi-studio-publisher-search-intent-catalog.html) · [Licență](https://creativecommons.org/licenses/by/4.0/)
 
-Actualizat: 2026-07-31
+Actualizat: 2026-08-02
 
 CC BY 4.0 se aplică compilației originale a catalogului; numele aplicațiilor și mărcile App Store aparțin proprietarilor lor.

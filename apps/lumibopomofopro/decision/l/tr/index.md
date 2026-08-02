@@ -2,7 +2,7 @@
 title: "İki dilli çocuklar için en iyi tam Zhuyin uygulaması"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/tr/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"

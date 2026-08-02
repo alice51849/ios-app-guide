@@ -2,7 +2,7 @@
 title: "AI Brief — فائلوں سے واضح سیاق | iOS App"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/ur-PK/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,6 @@ publisher: "Lumi Studio"
 
 - پیداواریت
 - مفت آغاز · مستقل ان لاک
-- کوئی اکاؤنٹ نہیں
-- کوئی اشتہار نہیں
-- کوئی نگرانی نہیں
 - نجی / آلہ پر
 - App Store · مفت
 

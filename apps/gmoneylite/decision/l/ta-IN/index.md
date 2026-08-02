@@ -2,7 +2,7 @@
 title: "G+Money Lite — பயணச் செலவும் நாணயமும் | iOS App"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/ta-IN/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,11 +16,6 @@ G+Money Lite — சிறந்த பயண நாணய மற்றும்
 - பணம் & பயணம்
 - இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும்
 - ஆஃப்லைன்
-- கணக்கு இல்லை
-- பின்தொடர்வு இல்லை
-- தனியுரிமை / சாதனத்தில்
-- விட்ஜெட்
-- Apple Watch
 - App Store · இலவசம்
 
 [App Store-இல் G+Money Lite-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6793436548)

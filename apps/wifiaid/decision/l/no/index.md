@@ -2,7 +2,7 @@
 title: "WiFi Aid — Nettverksdiagnose med bevis | iOS App"
 lang: "no"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/no/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -13,7 +13,7 @@ publisher: "Lumi Studio"
 
 Finn den mest sannsynlige årsaken med uavhengige tester av ruter, DNS, TCP, TLS, svartid og stabilitet. Én forhåndsbetaling, uten abonnement, reklame eller sporing. • Start Test — Wi-Fi, DNS og internett med ett trykk • Deep Check — Mer bevis og stabilitet • Sjekk Nettside — Se om problemet er en side eller nettet • Beviser — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Ustabil tilkobling — Variation • Testhistorikk — Dine data lagres kun på denne enheten • Apple Watch — Start Test • Widget · iPad — Tilkoblet · Start Test Ingen konto, annonser eller sporing. Dine data lagres kun på denne enheten. Ett engangskjøp i App Store. Ingen abonnement.
 
-- Mer
+- Foto og verktøy
 - Betalt nedlasting
 - App Store · 79,00 kr
 

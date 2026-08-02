@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "zh-Hans",
-  "dateModified": "2026-07-31",
-  "content_digest": "d25fe9a1e078b3c0c14af98cbedf0273117830c2e9a4b4d0f3b9906385ab48e2",
-  "generation_digest": "e1d80cb6ea88329d88881233d28cead0c2c1140eaa12f67295589794b128e1e4",
+  "dateModified": "2026-08-02",
+  "content_digest": "e5bfe67ce45753740357eeca269b9d35c0540b62ea2875b9d353bd43f3b5580a",
+  "generation_digest": "fba7106f0739bc21b7780395db7e34437f3398d54d36d80e4aa52f98445f0433",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -26,8 +26,8 @@
       "priority_group": "launch_boost",
       "publisher_query": "Mask My File — 分享前遮挡隐私敏感信息 | iOS App",
       "decision_context": "安心分享，同时保留有用的上下文。Mask My File 会在你发送文件前找出隐私信息，永久遮挡后，再重新打开并核对新导出的文件，确认无误才显示 Private Ready。 主要功能 • 图片与 PDF：满屏预览、最高 5× 缩放、跟手拖动，还可手动精确框选。 • 视觉文件：仅提供永久实心遮挡或直接移除；人脸与条码检测只标出供你复核的区域。 • 文本、JSON、XML、HTML、CSV、TSV 与 RTF：逐项搜索每个匹配结果，并用星号套用完整遮罩、部分遮罩、占位符、化名或移除。 • 按需移除元数据。PDF 可逐页处理；批量一次最多 100 个文件，每个文件都能单独预览、跨文件搜索文字并手动框选。 • 用私密会话、项目工作区与占位符保管库，让工作井井有条。 在关键时刻放心使用 无论是提交租房申请、分享医疗文档，还是把客户文件交给同事，都能在永久遮挡隐私信息的同时，保留必要的上下文。 隐私优先设计 所有处理都在你的设备上完成，没有账户、广告、跟踪、分析，也不会上传任何内容。Apple Vision 与内置的 Tesseract OCR 均在本地运行。人脸检测只会生成区域，不识别身份、不创建模板，也不分享或保留任何人脸数据。购买由 Apple 通过 StoreKit 处理。Mask My File 不使用 VPN、NetworkExtension、代理服务器、隧道、DNS 过滤或任何网络路由。原始文件永不被覆盖；临时工作区文件、私密会话数据与项目都会留在设备上，直到你自行删除。 一次买断，终身使用 只需一次付费解锁，即可永久获得无限次的核验输出与批量处理功能。没有订阅制度，日后随时可通过 App Store 恢复购买。",
-      "category": "utility",
-      "category_label": "更多",
+      "category": "photo-utility",
+      "category_label": "照片与工具",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免费开始使用 · 永久解锁",
       "one_time_option": true,
@@ -40,7 +40,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "更多",
+        "照片与工具",
         "免费开始使用 · 永久解锁",
         "私密 / 设备本地",
         "App Store · 免费"
@@ -76,8 +76,8 @@
       "priority_group": "launch_boost",
       "publisher_query": "WiFi Aid — 网络诊断与连接证据 | iOS App",
       "decision_context": "通过多路径、DNS、TCP、TLS、响应时间与稳定性检查，找出最可能的连接问题。App Store 一次付费买断，无订阅、无广告、无跟踪。 • 运行检查 — 一键检查 Wi-Fi、DNS 和网络连接 • 深度检查 — 更多证据与稳定性测试 • 网站检查 — 查看是单一目标或整体网络失败 • 证据 — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • 连接似乎不稳定 — 抖动变化 • 检查记录 — 仅存本机的隐私记录 • Apple Watch — 运行检查 • Widget · iPad — 已连接 · 运行检查 免账号，无广告、分析或追踪. 仅存本机的隐私记录. App Store 一次付费买断，绝无订阅。",
-      "category": "utility",
-      "category_label": "更多",
+      "category": "photo-utility",
+      "category_label": "照片与工具",
       "purchase_model": "paid_upfront",
       "purchase_label": "付费下载",
       "one_time_option": true,
@@ -86,7 +86,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "更多",
+        "照片与工具",
         "付费下载",
         "App Store · ¥38.00"
       ],
@@ -172,15 +172,9 @@
       "purchase_label": "免费开始使用 · 永久解锁",
       "one_time_option": true,
       "privacy_facts": [
-        "no_account",
-        "no_ads",
-        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
-        "无需账户",
-        "无广告",
-        "无跟踪",
         "私密 / 设备本地"
       ],
       "device_surfaces": [],
@@ -188,9 +182,6 @@
       "badge_labels": [
         "效率",
         "免费开始使用 · 永久解锁",
-        "无需账户",
-        "无广告",
-        "无跟踪",
         "私密 / 设备本地",
         "App Store · 免费"
       ],
@@ -270,23 +261,18 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "Aim990 Plus — 15分钟攻克七大题型 | iOS App",
       "decision_context": "把零散刷题变成一套经得住时间压力的训练流程。 Aim990 Plus 面向认真备考的成人学习者，专注英语听力与阅读的限时作答能力。它不是让你漫无目的地堆题量，而是用清晰的三步循环安排每次练习：先做 Warm-up，用8道听力与阅读混合题快速进入状态；再进入 Pressure Set，在15分钟内完成20道题，练习判断、取舍与节奏控制；最后打开 Mistake Replay，重新面对刚才答错的内容，把失误真正转化为下一轮的训练重点。 【630道原创题，覆盖七大题型】 Part 1–7各有90道题，合计630道原创练习。其中照片描述题配有90张不同照片，不用重复画面凑数量。内容同时覆盖听力理解、对话与独白、句子填空、篇章填空和阅读理解，让短时训练也能保持题型均衡。所有内容均为独立创作，不冒充官方试题或历年真题。 【按状态选择合适强度】 时间少时，可以完成一组8题热身；需要进入考试节奏时，选择20题、15分钟的压力训练；想检验耐力时，可使用 mini、half 或 full mock。不同长度的模考适合通勤前、午休或完整复习时段。计时与进度提示帮助你观察节奏，但不会给出任何分数承诺。 【让错题成为下一步】 Mistake Replay 集中呈现失误，减少在已掌握内容上反复消耗时间。Weakness Analytics 按题型整理表现，帮助你看清哪些部分需要更多练习。进度与个人资料页面保留训练记录，让复习安排建立在自己的实际表现上，而不是泛泛的学习建议。 【听得更清楚，读得更稳】 Dictation 将听力内容拆成可专注处理的听写练习；Speed Drills 用速度变化训练抓取关键信息的能力；设备语音功能可辅助朗读相关文字。150条精选词汇可独立复习，也能和题目训练互相配合。阅读部分则通过限时题组持续练习定位信息、理解语境与控制答题时间。 【一次下载，完整使用】 Aim990 Plus 是独立的 iPhone 与 iPad 应用。下载后全部功能均已包含，没有应用内购买、订阅、付费墙或广告，也不要求注册或登录。题目、词汇、训练记录与分析均在设备上运行，可离线使用；应用不连接服务器，不进行用户追踪，也不使用分析服务。设备语音的实际声音与可用情况取决于系统设置。 “TOEIC”是 Educational Testing Service（ETS）的商标。Aim990 Plus 是独立、非官方的学习工具，与 ETS 不存在隶属、认可、赞助或合作关系。",
-      "category": "education",
-      "category_label": "教育",
+      "category": "kids",
+      "category_label": "儿童与学习",
       "purchase_model": "paid_upfront",
       "purchase_label": "付费下载",
       "one_time_option": true,
-      "privacy_facts": [
-        "offline"
-      ],
-      "privacy_labels": [
-        "离线"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "教育",
+        "儿童与学习",
         "付费下载",
-        "离线",
         "App Store · ¥38.00"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/aim990plus.html",
@@ -415,25 +401,22 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "适用于配备 Apple Watch 旅行者的最佳实用语言短语应用",
       "decision_context": "旅行前，针对真实场景的完整短语比需要在压力下拼凑的零散词汇更实用——DailyMate 正是为此而设计。",
-      "category": "education",
-      "category_label": "教育",
+      "category": "kids",
+      "category_label": "儿童与学习",
       "purchase_model": "paid_upfront",
       "purchase_label": "付费下载",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
       "device_surfaces": [
-        "widget",
         "apple_watch"
       ],
       "device_labels": [
-        "小组件",
         "Apple Watch"
       ],
       "badge_labels": [
-        "教育",
+        "儿童与学习",
         "付费下载",
-        "小组件",
         "Apple Watch",
         "App Store · ¥88.00"
       ],
@@ -527,34 +510,17 @@
       "purchase_label": "免费开始使用 · 永久解锁",
       "one_time_option": true,
       "privacy_facts": [
-        "offline",
-        "no_account",
-        "no_tracking",
-        "private_or_on_device"
+        "offline"
       ],
       "privacy_labels": [
-        "离线",
-        "无需账户",
-        "无跟踪",
-        "私密 / 设备本地"
+        "离线"
       ],
-      "device_surfaces": [
-        "widget",
-        "apple_watch"
-      ],
-      "device_labels": [
-        "小组件",
-        "Apple Watch"
-      ],
+      "device_surfaces": [],
+      "device_labels": [],
       "badge_labels": [
         "理财与出行",
         "免费开始使用 · 永久解锁",
         "离线",
-        "无需账户",
-        "无跟踪",
-        "私密 / 设备本地",
-        "小组件",
-        "Apple Watch",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/gmoneylite.html",
@@ -593,32 +559,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免费开始使用 · 永久解锁",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account",
-        "no_tracking",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "无需账户",
-        "无跟踪",
-        "私密 / 设备本地"
-      ],
-      "device_surfaces": [
-        "widget",
-        "apple_watch"
-      ],
-      "device_labels": [
-        "小组件",
-        "Apple Watch"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
       "badge_labels": [
         "理财与出行",
         "免费开始使用 · 永久解锁",
-        "无需账户",
-        "无跟踪",
-        "私密 / 设备本地",
-        "小组件",
-        "Apple Watch",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/hourstaglite.html",
@@ -1579,24 +1526,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免费开始使用 · 永久解锁",
       "one_time_option": true,
-      "privacy_facts": [
-        "offline",
-        "no_account",
-        "no_ads"
-      ],
-      "privacy_labels": [
-        "离线",
-        "无需账户",
-        "无广告"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "出行",
         "免费开始使用 · 永久解锁",
-        "离线",
-        "无需账户",
-        "无广告",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",

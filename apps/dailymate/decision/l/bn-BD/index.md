@@ -2,7 +2,7 @@
 title: "অ্যাপল ওয়াচসহ ভ্রমণকারীদের জন্য সেরা ব্যবহারিক ভাষা বাক্যাংশ অ্যাপ"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/bn-BD/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -13,9 +13,8 @@ publisher: "Lumi Studio"
 
 একটি যাত্রার আগে, বাস্তব পরিস্থিতির জন্য সম্পূর্ণ বাক্যাংশ বিচ্ছিন্ন শব্দের চেয়ে বেশি কার্যকর — ডেইলিমেট এই জন্য তৈরি।
 
-- শিক্ষা
+- শিশু ও শেখা
 - পেইড ডাউনলোড
-- উইজেট
 - Apple Watch
 
 [অ্যাপ স্টোর থেকে ডেইলিমেট পান →](https://apps.apple.com/app/id6790418321)

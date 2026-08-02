@@ -2,7 +2,7 @@
 title: "best complete morning and bedtime routine app for kids"
 lang: "en-AU"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/en-AU/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"

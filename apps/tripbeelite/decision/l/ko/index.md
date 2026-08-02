@@ -2,7 +2,7 @@
 title: "다가오는 여행 하나를 위한 최고의 간단한 여행 계획 앱 아이폰용"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/ko/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,6 @@ publisher: "Lumi Studio"
 
 - 여행
 - 무료로 시작 · 평생 잠금 해제
-- 오프라인
-- 계정 없음
-- 광고 없음
 - App Store · 무료
 
 [앱 스토어에서 트립비 라이트 받기 →](https://apps.apple.com/kr/app/id6791299610)

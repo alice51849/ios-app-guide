@@ -1,30 +1,25 @@
 ---
-title: "G+Money Lite — Bajet, perbelanjaan & kurs | iOS App"
+title: "best free travel expense tracker with currency conversion for iphone"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/ms/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# G+Money Lite — Bajet, perbelanjaan & kurs | iOS App
+# best free travel expense tracker with currency conversion for iphone
 
-G+Money Lite — Penukar mata wang perjalanan pintar & pengesan perbelanjaan Wang perjalanan, dibuat mudah Catat setiap pembelian dalam mata wang tempatan dan lihat dengan serta-merta dalam mata wang rumah anda — dalam talian atau luar talian. Tukar • Kadar langsung atau manual: Kami boleh mengambil kadar terkini secara automatik, atau anda boleh menetapkannya sendiri. Ia sentiasa berfungsi tanpa talian. • Ambil kadar terkini apabila anda membuka aplikasi (kira-kira setiap 6 jam). Sentiasa berfungsi tanpa talian dengan kadar yang disimpan. • Kadar rujukan pasaran tengah. Kad dan tunai mungkin berbeza. Perbelanjaan • Had harian: Pilihan. Lihat bagaimana setiap hari berbanding dengannya. • Mengikut kategori · Perjalanan · Penapis · Rekod • Sandi & pemulihan: Termasuk perbelanjaan, kadar, kategori dan tetapan. • Widget · Apple Watch Semua data kekal di peranti anda. Tiada akaun, tiada penjejakan. Kadar menggunakan perkhidmatan kadar pertukaran awam. Percuma: kadar, bajet, ringkasan · 1 perjalanan · 3 perbelanjaan Sekali bayar · Akses seumur hidup · Tiada langganan Buka perbelanjaan dan perjalanan tanpa had selamanya.
+A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.
 
 - Wang & perjalanan
 - Percuma untuk bermula · buka kunci kekal
 - Luar talian
-- Tiada akaun
-- Tiada penjejakan
-- Peribadi / pada peranti
-- Widjet
-- Apple Watch
 - App Store · Percuma
 
-[Dapatkan G+Money Lite di App Store](https://apps.apple.com/my/app/id6793436548)
+[Get G+Money Lite on the App Store →](https://apps.apple.com/my/app/id6793436548)
 
-[Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/gmoneylite.html)
+[Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html)
 
-> Bahan ini diterbitkan terus oleh Lumi Studio, pembangun semua aplikasi yang disenaraikan.
+> Panduan ini diterbitkan oleh Lumi Studio, pembangun app ini. Nama app ialah tanda dagangan pemilik masing-masing dan digunakan untuk tujuan pengenalan sahaja. Untuk keputusan berkaitan dokumen, kesihatan, sekolah dan produktiviti, sila sahkan keperluan rasmi yang berkenaan.

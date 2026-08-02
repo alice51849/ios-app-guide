@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "sl-SI",
-  "dateModified": "2026-07-31",
-  "content_digest": "d25fe9a1e078b3c0c14af98cbedf0273117830c2e9a4b4d0f3b9906385ab48e2",
-  "generation_digest": "e1d80cb6ea88329d88881233d28cead0c2c1140eaa12f67295589794b128e1e4",
+  "dateModified": "2026-08-02",
+  "content_digest": "e5bfe67ce45753740357eeca269b9d35c0540b62ea2875b9d353bd43f3b5580a",
+  "generation_digest": "fba7106f0739bc21b7780395db7e34437f3398d54d36d80e4aa52f98445f0433",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -26,8 +26,8 @@
       "priority_group": "launch_boost",
       "publisher_query": "Mask My File — Skrijte podatke pred deljenjem | iOS App",
       "decision_context": "Delite varno, brez izgube koristnega konteksta. Mask My File poišče osebne podatke, preden pošljete datoteko, trajno prekrije, kar izberete, nato pa novo datoteko znova odpre in preveri, preden pokaže oznako Private Ready. KAJ ZMORETE • Slike in PDF: predogled po celotni širini, povečava do 5×, tekoče vlečenje in natančni ročni izbori. • Vizualne datoteke: trajno, polno prekritje ali odstranitev. Zaznavanje obrazov in črtnih kod označi le območja za pregled. • Besedilo, JSON, XML, HTML, CSV, TSV in RTF: poiščite vsako ujemanje in uporabite polno masko, delno masko, ograjeno mesto, psevdonim ali odstranitev. • Odstranite metapodatke, kjer oblika to dopušča. Delajte stran za stranjo v PDF-ju ali obdelajte do 100 datotek z lastnimi predogledi, iskanjem po datotekah in ročnimi izbori za vsako. • Naj bo vse urejeno z zasebno sejo, projektnimi prostori in trezorjem ograjenih mest. UPORABITE, KO JE POMEMBNO Preden pošljete najemno vlogo, delite zdravniški izvid ali izročite kartico stranke sodelavcu, ohranite potreben kontekst in zaupne podrobnosti trajno skrijte. ZASEBNO PO ZASNOVI Vse se obdela v vaši napravi. Brez računa, oglasov, sledenja, analitike ali nalaganja vsebine. Apple Vision in vgrajeni Tesseract OCR delujeta lokalno. Zaznavanje obraza ustvari le območja: ne prepozna osebe, ne ustvari predloge, ne deli in ne hrani podatkov o obrazu. Nakupe upravlja Apple prek StoreKit. Mask My File ne uporablja VPN, NetworkExtension, posrednika, predora, filtra DNS ali omrežnega usmerjanja. Izvirniki se nikoli ne prepišejo; začasne delovne datoteke, podatki zasebne seje in projekti ostanejo v napravi, dokler jih ne izbrišete. PLAČATE ENKRAT. VAŠE ZA VEDNO. En sam doživljenjski nakup odklene neomejene preverjene rezultate in paketno obdelavo. Brez naročnin. Nakup obnovite prek App Store.",
-      "category": "utility",
-      "category_label": "Več",
+      "category": "photo-utility",
+      "category_label": "Fotografija in pripomočki",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Brezplačen začetek · doživljenjska odklenitev",
       "one_time_option": true,
@@ -40,7 +40,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "Več",
+        "Fotografija in pripomočki",
         "Brezplačen začetek · doživljenjska odklenitev",
         "Zasebno / na napravi",
         "App Store · Brezplačno"
@@ -76,8 +76,8 @@
       "priority_group": "launch_boost",
       "publisher_query": "WiFi Aid — Diagnoza omrežja in dokazi | iOS App",
       "decision_context": "Odkrijte najverjetnejši vzrok težave z neodvisnimi preverjanji DNS, TCP, TLS, časovnih zamikov in stabilnosti. Enkratno plačilo — brez naročnine, oglasov ali sledenja. • Hitra preveritev — WiFi, DNS in internetni pregled z enim dotikom • Poglobljena preveritev — Več dokazov in vzorcev stabilnosti • Preveri spletno stran — Ali odpove ena destinacija ali celotni internet • Dokazi — DNS · TCP · TLS · TTFB · HTTP · Neposredni IP · IPv4 · IPv6 • Povezava se zdi nestabilna — Nihanje • Zgodovina preveritev — Zasebni zapisi, shranjeni samo na tej napravi • Apple Watch — Hitra preveritev • Widget · iPad — Povezano · Hitra preveritev Brez računa, oglasov, analitike ali sledenja. Zasebni zapisi, shranjeni samo na tej napravi. Enkratni nakup v App Store. Brez naročnine.",
-      "category": "utility",
-      "category_label": "Več",
+      "category": "photo-utility",
+      "category_label": "Fotografija in pripomočki",
       "purchase_model": "paid_upfront",
       "purchase_label": "Plačljiv prenos",
       "one_time_option": true,
@@ -86,7 +86,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "Več",
+        "Fotografija in pripomočki",
         "Plačljiv prenos",
         "App Store · 6,99 €"
       ],
@@ -172,15 +172,9 @@
       "purchase_label": "Brezplačen začetek · doživljenjska odklenitev",
       "one_time_option": true,
       "privacy_facts": [
-        "no_account",
-        "no_ads",
-        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
-        "Brez računa",
-        "Brez oglasov",
-        "Brez sledenja",
         "Zasebno / na napravi"
       ],
       "device_surfaces": [],
@@ -188,9 +182,6 @@
       "badge_labels": [
         "Produktivnost",
         "Brezplačen začetek · doživljenjska odklenitev",
-        "Brez računa",
-        "Brez oglasov",
-        "Brez sledenja",
         "Zasebno / na napravi",
         "App Store · Brezplačno"
       ],
@@ -270,23 +261,18 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "Aim990 Plus — Zbranost proti uri | iOS App",
       "decision_context": "Razumevanje angleščine je le del izziva. Drugi del je ohraniti natančnost, ko se čas izteka. Aim990 Plus je intenzivna vadba poslušanja in branja za odrasle na napravah iPhone in iPad. Glavna vadba ima jasen potek: 8 vprašanj za ogrevanje, nato Pressure Set z 20 nalogami in omejitvijo 15 minut, na koncu pa Mistake Replay, kjer se vrnete samo k odgovorom, ki so vam povzročili težave. Vsebina obsega 630 izvirnih vprašanj. Vsak od delov 1–7 vsebuje natanko 90 vprašanj, skupaj 630, slikovne naloge pa uporabljajo 90 različnih fotografij. Tako se ne učite zaporedja ponavljajočih se primerov, temveč prepoznavate podrobnosti, namen govorca, parafraze in prepričljive napačne možnosti. Obseg prilagodite času in zbranosti: • mini mock za kratko, osredotočeno vadbo; • half mock za temeljitejše vmesno preverjanje; • full mock za vzdržljivost in razporejanje časa; • ločene vaje poslušanja, branja, nareka in hitrosti; • zbirko 150 besed za sistematično utrjevanje besedišča; • analizo šibkih področij in pregleden napredek. Narek pomaga ujeti končnice, povezani govor in hitro izgovorjene besede. Vadba hitrosti spodbuja odločnejše odgovarjanje. Analiza šibkosti pokaže, kateri vrsti nalog je smiselno nameniti naslednjo vadbo, Mistake Replay pa vsako napako spremeni v konkreten korak ponavljanja. Zvok lahko uporabi glas, ki je na voljo v napravi, zato nastavitve govora ostanejo pod vašim nadzorom. Aplikacija v celoti deluje brez povezave — doma, na vlaku, v knjižnici ali tam, kjer ni signala. Ne zahteva računa ali prijave. Ne vsebuje oglasov, nakupov v aplikaciji, naročnine ali paywalla. Ne uporablja sledenja, analitike ali strežnika za zbiranje rezultatov. Plačljivi prenos vključuje vse funkcije, ki so na voljo že ob prvem zagonu. Aim990 Plus ne zagotavlja določenega števila točk. Ponuja urejeno okolje za razvoj tempa, zbranosti in premišljeno učenje iz lastnih napak. TOEIC je blagovna znamka družbe ETS. Aim990 Plus je neodvisna, neuradna aplikacija; ni povezana z družbo ETS in je družba ETS ne sponzorira ali podpira.",
-      "category": "education",
-      "category_label": "Izobraževanje",
+      "category": "kids",
+      "category_label": "Otroci in učenje",
       "purchase_model": "paid_upfront",
       "purchase_label": "Plačljiv prenos",
       "one_time_option": true,
-      "privacy_facts": [
-        "offline"
-      ],
-      "privacy_labels": [
-        "Brez povezave"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "Izobraževanje",
+        "Otroci in učenje",
         "Plačljiv prenos",
-        "Brez povezave",
         "App Store · 6,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/aim990plus.html",
@@ -415,25 +401,22 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "najboljša praktična aplikacija za jezikovne fraze za popotnike z Apple Watch",
       "decision_context": "Pred potovanjem so celovite fraze za resnične situacije bolj uporabne kot posamezne besede, ki jih morate pod pritiskom še sestaviti — DailyMate je zasnovan prav za to.",
-      "category": "education",
-      "category_label": "Izobraževanje",
+      "category": "kids",
+      "category_label": "Otroci in učenje",
       "purchase_model": "paid_upfront",
       "purchase_label": "Plačljiv prenos",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
       "device_surfaces": [
-        "widget",
         "apple_watch"
       ],
       "device_labels": [
-        "Gradnik",
         "Apple Watch"
       ],
       "badge_labels": [
-        "Izobraževanje",
+        "Otroci in učenje",
         "Plačljiv prenos",
-        "Gradnik",
         "Apple Watch",
         "App Store · 12,99 €"
       ],
@@ -527,34 +510,17 @@
       "purchase_label": "Brezplačen začetek · doživljenjska odklenitev",
       "one_time_option": true,
       "privacy_facts": [
-        "offline",
-        "no_account",
-        "no_tracking",
-        "private_or_on_device"
+        "offline"
       ],
       "privacy_labels": [
-        "Brez povezave",
-        "Brez računa",
-        "Brez sledenja",
-        "Zasebno / na napravi"
+        "Brez povezave"
       ],
-      "device_surfaces": [
-        "widget",
-        "apple_watch"
-      ],
-      "device_labels": [
-        "Gradnik",
-        "Apple Watch"
-      ],
+      "device_surfaces": [],
+      "device_labels": [],
       "badge_labels": [
         "Denar in potovanja",
         "Brezplačen začetek · doživljenjska odklenitev",
         "Brez povezave",
-        "Brez računa",
-        "Brez sledenja",
-        "Zasebno / na napravi",
-        "Gradnik",
-        "Apple Watch",
         "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/gmoneylite.html",
@@ -593,32 +559,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Brezplačen začetek · doživljenjska odklenitev",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account",
-        "no_tracking",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "Brez računa",
-        "Brez sledenja",
-        "Zasebno / na napravi"
-      ],
-      "device_surfaces": [
-        "widget",
-        "apple_watch"
-      ],
-      "device_labels": [
-        "Gradnik",
-        "Apple Watch"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
       "badge_labels": [
         "Denar in potovanja",
         "Brezplačen začetek · doživljenjska odklenitev",
-        "Brez računa",
-        "Brez sledenja",
-        "Zasebno / na napravi",
-        "Gradnik",
-        "Apple Watch",
         "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/hourstaglite.html",
@@ -681,7 +628,7 @@
       "app_store_id": "6754218117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
       "app_store_url": "https://apps.apple.com/si/app/id6754218117",
-      "app_store_cta_label": "Get HoursTag: Cena v Urah on the App Store",
+      "app_store_cta_label": "Prenesite HoursTag: Cena v Urah iz trgovine App Store",
       "storefront_facts": {
         "price": "5.99",
         "currency": "EUR",
@@ -1614,24 +1561,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Brezplačen začetek · doživljenjska odklenitev",
       "one_time_option": true,
-      "privacy_facts": [
-        "offline",
-        "no_account",
-        "no_ads"
-      ],
-      "privacy_labels": [
-        "Brez povezave",
-        "Brez računa",
-        "Brez oglasov"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Potovanja",
         "Brezplačen začetek · doživljenjska odklenitev",
-        "Brez povezave",
-        "Brez računa",
-        "Brez oglasov",
         "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",

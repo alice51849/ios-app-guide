@@ -2,7 +2,7 @@
 title: "G+Money Lite — Расходы, бюджет и валюта | iOS App"
 lang: "ru"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/ru/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,11 +16,6 @@ G+Money Lite — Умный трекер валюты и расходов для
 - Финансы и путешествия
 - Бесплатно начать · пожизненная разблокировка
 - Автономно
-- Без учётной записи
-- Без отслеживания
-- Лично / на устройстве
-- Виджет
-- Apple Watch
 - App Store · Бесплатно
 
 [Установить G+Money Lite в App Store](https://apps.apple.com/ru/app/id6793436548)

@@ -2,7 +2,7 @@
 title: "G+Money Lite — ప్రయాణ ఖర్చులు, కరెన్సీ | iOS App"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/te-IN/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,11 +16,6 @@ G+Money Lite — స్మార్ట్ ట్రావెల్ కరెన�
 - డబ్బు & ప్రయాణం
 - ఉచితంగా ప్రారంభించండి · జీవితకాల అన్లాక్
 - ఆఫ్‌లైన్
-- ఖాతా అవసరం లేదు
-- ట్రాకింగ్ లేదు
-- గోప్యంగా / పరికరంలో
-- విడ్జెట్
-- Apple Watch
 - App Store · ఉచితం
 
 [App Store నుంచి G+Money Lite పొందండి](https://apps.apple.com/in/app/id6793436548)

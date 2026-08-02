@@ -1,24 +1,24 @@
 ---
-title: "WiFi Aid — Kanıta dayalı ağ tanısı | iOS App"
+title: "best wifi troubleshooting app for remote workers with connected but no internet"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/tr/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid — Kanıta dayalı ağ tanısı | iOS App
+# best wifi troubleshooting app for remote workers with connected but no internet
 
-Bağımsız yol, DNS, TCP, TLS, süre ve kararlılık kontrolleriyle en olası nedeni bulun. Baştan tek ödeme; abonelik, reklam ve takip yok. • Test Yap — Tek dokunuşla Wi-Fi ve DNS testleri • Derin Test — Daha fazla kanıt ve ağ kararlılığı • Site Test Et — Bir hedefin mi yoksa tüm internetin mi çöktüğünü görün • Kanıtlar — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Bağlantı kararsız görünüyor — Dalgalanma • Geçmiş — Sadece bu cihazda tutulan özel kayıtlar • Apple Watch — Test Yap • Widget · iPad — Bağlı · Test Yap Hesap, reklam veya izleme yok. Sadece bu cihazda tutulan özel kayıtlar. App Store’da baştan tek ödeme. Abonelik yok.
+When Wi-Fi says connected but work still cannot get online, the useful first step is to identify whether the failure is DNS, the wider internet, instability or one destination instead of guessing — WiFi Aid is built for this.
 
-- Daha fazla
+- Fotoğraf & yardımcı
 - Ücretli indirme
 - App Store · ₺299,99
 
-[WiFi Aid uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6790467886)
+[Get WiFi Aid on the App Store →](https://apps.apple.com/tr/app/id6790467886)
 
-[Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/wifiaid.html)
+[Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html)
 
-> Bu, listelenen her uygulamanın geliştiricisi Lumi Studio tarafından yayımlanan birinci taraf materyaldir.
+> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

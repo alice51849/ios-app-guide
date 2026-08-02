@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "hu",
-  "dateModified": "2026-07-31",
-  "content_digest": "d25fe9a1e078b3c0c14af98cbedf0273117830c2e9a4b4d0f3b9906385ab48e2",
-  "generation_digest": "e1d80cb6ea88329d88881233d28cead0c2c1140eaa12f67295589794b128e1e4",
+  "dateModified": "2026-08-02",
+  "content_digest": "e5bfe67ce45753740357eeca269b9d35c0540b62ea2875b9d353bd43f3b5580a",
+  "generation_digest": "fba7106f0739bc21b7780395db7e34437f3398d54d36d80e4aa52f98445f0433",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -26,8 +26,8 @@
       "priority_group": "launch_boost",
       "publisher_query": "Mask My File — Kitakarás megosztás előtt | iOS App",
       "decision_context": "Oszd meg biztonságosan úgy, hogy a fontos szövegkörnyezet megmarad. A Mask My File még a küldés előtt megtalálja a személyes adatokat, véglegesen kitakarja a kiválasztott részeket, majd újra megnyitja és ellenőrzi az új fájlt, mielőtt megjelenne a Private Ready jelzés. AMIT MEGTEHETSZ • Képek és PDF-ek: teljes szélességű előnézet, akár 5× nagyítás, folyamatos húzás és pontos, kézi kijelölés. • Vizuális fájlok: végleges, tömör kitakarás vagy eltávolítás. Az arc- és vonalkód-felismerés csak ellenőrizendő területeket jelöl ki. • Szöveg, JSON, XML, HTML, CSV, TSV és RTF: minden találat megkeresése, majd teljes maszk, részleges maszk, helyőrző, álnév vagy eltávolítás. • Metaadatok törlése, ahol a formátum engedi. PDF-ben oldalról oldalra dolgozhatsz, vagy akár 100 fájlt kezelhetsz külön előnézettel, fájlok közötti kereséssel és fájlonkénti kézi kijelöléssel. • Tartsd rendben a munkát privát munkamenettel, projekt-munkaterekkel és a helyőrzők tárával. AMIKOR IGAZÁN SZÁMÍT Mielőtt bérleti kérelmet küldesz, orvosi leletet osztasz meg, vagy ügyféladatot adsz át egy kollégának, őrizd meg a szükséges szövegkörnyezetet, a bizalmas részleteket viszont véglegesen rejtsd el. ALAPBÓL BIZALMAS Minden feldolgozás a készülékeden történik. Nincs fiók, hirdetés, követés, elemzés vagy tartalomfeltöltés. Az Apple Vision és a beépített Tesseract OCR helyben fut. Az arcfelismerés kizárólag területeket hoz létre: nem azonosít személyt, nem készít sablont, nem oszt meg és nem tárol arcadatokat. A vásárlásokat az Apple kezeli a StoreKit segítségével. A Mask My File nem használ VPN-t, NetworkExtension-t, proxyt, alagutat, DNS-szűrőt vagy hálózati átirányítást. Az eredeti fájlok soha nem íródnak felül; az ideiglenes munkaterületi fájlok, a privát munkamenet adatai és a projektek addig maradnak a készüléken, amíg te nem törlöd őket. EGYSZER FIZETSZ, ÖRÖKRE A TIÉD Egyetlen, élethosszig szóló vásárlás korlátlan ellenőrzött kimenetet és kötegelt feldolgozást old fel. Nincs előfizetés. A vásárlás bármikor visszaállítható az App Store-ban.",
-      "category": "utility",
-      "category_label": "Továbbiak",
+      "category": "photo-utility",
+      "category_label": "Fotó & segédprogram",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
       "one_time_option": true,
@@ -40,7 +40,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "Továbbiak",
+        "Fotó & segédprogram",
         "Ingyenes kezdés · életre szóló feloldás",
         "Privát / eszközön tárolt",
         "App Store · Ingyenes"
@@ -76,8 +76,8 @@
       "priority_group": "launch_boost",
       "publisher_query": "WiFi Aid — Hálózatdiagnosztika tényekkel | iOS App",
       "decision_context": "Független útvonal-, DNS-, TCP-, TLS-, időzítés- és stabilitástesztekkel derítse ki a legvalószínűbb okot. Egyszeri előrefizetés, előfizetés, reklám és követés nélkül. • Teszt Indítása — Wi-Fi, DNS és internet egyetlen érintéssel • Deep Check — Több bizonyíték és stabilitás • Weboldal Teszt — Tudd meg, hogy a weboldal vagy a net rossz • Bizonyíték — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • A kapcsolat instabil — Ingadozás • Teszt Előzmények — Az adatokat csak az eszköz tárolja • Apple Watch — Teszt Indítása • Widget · iPad — Kapcsolódva · Teszt Indítása Nincs fiók, hirdetés vagy követés. Az adatokat csak az eszköz tárolja. Egyetlen előzetes vásárlás az App Store-ban. Nincs előfizetés.",
-      "category": "utility",
-      "category_label": "Továbbiak",
+      "category": "photo-utility",
+      "category_label": "Fotó & segédprogram",
       "purchase_model": "paid_upfront",
       "purchase_label": "Fizetős letöltés",
       "one_time_option": true,
@@ -86,7 +86,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "Továbbiak",
+        "Fotó & segédprogram",
         "Fizetős letöltés",
         "App Store · HUF2,490.00"
       ],
@@ -172,15 +172,9 @@
       "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
       "one_time_option": true,
       "privacy_facts": [
-        "no_account",
-        "no_ads",
-        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
-        "Nincs fiók",
-        "Nincs reklám",
-        "Nincs követés",
         "Privát / eszközön tárolt"
       ],
       "device_surfaces": [],
@@ -188,9 +182,6 @@
       "badge_labels": [
         "Produktivitás",
         "Ingyenes kezdés · életre szóló feloldás",
-        "Nincs fiók",
-        "Nincs reklám",
-        "Nincs követés",
         "Privát / eszközön tárolt",
         "App Store · Ingyenes"
       ],
@@ -270,23 +261,18 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "Aim990 Plus — Magabiztosság időnyomásban | iOS App",
       "decision_context": "Az angoltudás mellett arra is szükség van, hogy az idő szorításában is pontosan dönts. Az Aim990 Plus felnőtteknek készült, intenzív hallásértési és olvasási gyakorló iPhone-ra és iPadre. A fő edzés tudatosan felépített: 8 bemelegítő kérdéssel indít, ezt követi a 20 feladatos, 15 perces Pressure Set, végül a Mistake Replay kizárólag azokhoz a válaszokhoz vezet vissza, amelyek bizonytalanságot okoztak. A tartalom 630 eredeti kérdésből áll. Az 1–7. részek mindegyike pontosan 90 kérdést tartalmaz, összesen 630-at, a képes feladatokban pedig 90 különböző fotó jelenik meg. Nem ugyanazoknak a példáknak a körforgását kapod: részleteket, beszélői szándékot, átfogalmazást és megtévesztő válaszlehetőségeket tanulsz felismerni. Igazítsd a gyakorlást a napodhoz: • mini mock egy rövid, összpontosított menethez; • half mock alaposabb részpróbához; • full mock az állóképesség és az időbeosztás fejlesztéséhez; • külön hallásértés, olvasás, tollbamondás és sebességgyakorlat; • 150 szavas, rendszerezett szókincsmodul; • gyenge területek elemzése és áttekinthető haladáskövetés. A tollbamondás segít meghallani a szóvégeket, az összeolvadó hangokat és a gyors beszédet. A sebességgyakorlat a határozottabb reagálást támogatja. A gyengeségelemzés megmutatja, mely feladattípusra érdemes legközelebb időt szánni, a Mistake Replay pedig azonnali ismétléssé alakítja a hibát. A hanganyag használhatja az eszköz beszédhangját, így a beszéd beállításai nálad maradnak. Minden funkció offline elérhető, akár vonaton, könyvtárban vagy térerő nélkül is. Nincs fiók, bejelentkezés, reklám, alkalmazáson belüli vásárlás, előfizetés vagy fizetőfal. Nincs követés, analitika és eredményeket gyűjtő szerver sem. A fizetős letöltés minden funkciót tartalmaz, amelyek már az első indítástól elérhetők. Az Aim990 Plus nem ígér meghatározott pontszámot. Strukturált teret ad a tempó, a koncentráció és a hibákból való tudatos tanulás fejlesztéséhez. A TOEIC az ETS védjegye. Az Aim990 Plus független, nem hivatalos alkalmazás; nem áll kapcsolatban az ETS-szel, és az ETS nem szponzorálja vagy hagyta jóvá.",
-      "category": "education",
-      "category_label": "Oktatás",
+      "category": "kids",
+      "category_label": "Gyerekek & tanulás",
       "purchase_model": "paid_upfront",
       "purchase_label": "Fizetős letöltés",
       "one_time_option": true,
-      "privacy_facts": [
-        "offline"
-      ],
-      "privacy_labels": [
-        "Offline"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "Oktatás",
+        "Gyerekek & tanulás",
         "Fizetős letöltés",
-        "Offline",
         "App Store · HUF2,490.00"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/aim990plus.html",
@@ -415,25 +401,22 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "legjobb gyakorlati nyelvi kifejezés alkalmazás utazóknak Apple Watch támogatással",
       "decision_context": "Utazás előtt a valós helyzetekhez illő teljes kifejezések hasznosabbak, mint az elszigetelt szavak, amelyeket nyomás alatt kell összerakni — a DailyMate erre készült.",
-      "category": "education",
-      "category_label": "Oktatás",
+      "category": "kids",
+      "category_label": "Gyerekek & tanulás",
       "purchase_model": "paid_upfront",
       "purchase_label": "Fizetős letöltés",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
       "device_surfaces": [
-        "widget",
         "apple_watch"
       ],
       "device_labels": [
-        "Widget",
         "Apple Watch"
       ],
       "badge_labels": [
-        "Oktatás",
+        "Gyerekek & tanulás",
         "Fizetős letöltés",
-        "Widget",
         "Apple Watch",
         "App Store · HUF4,990.00"
       ],
@@ -527,34 +510,17 @@
       "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
       "one_time_option": true,
       "privacy_facts": [
-        "offline",
-        "no_account",
-        "no_tracking",
-        "private_or_on_device"
+        "offline"
       ],
       "privacy_labels": [
-        "Offline",
-        "Nincs fiók",
-        "Nincs követés",
-        "Privát / eszközön tárolt"
+        "Offline"
       ],
-      "device_surfaces": [
-        "widget",
-        "apple_watch"
-      ],
-      "device_labels": [
-        "Widget",
-        "Apple Watch"
-      ],
+      "device_surfaces": [],
+      "device_labels": [],
       "badge_labels": [
         "Pénzügy & utazás",
         "Ingyenes kezdés · életre szóló feloldás",
         "Offline",
-        "Nincs fiók",
-        "Nincs követés",
-        "Privát / eszközön tárolt",
-        "Widget",
-        "Apple Watch",
         "App Store · Ingyenes"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/gmoneylite.html",
@@ -593,32 +559,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account",
-        "no_tracking",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "Nincs fiók",
-        "Nincs követés",
-        "Privát / eszközön tárolt"
-      ],
-      "device_surfaces": [
-        "widget",
-        "apple_watch"
-      ],
-      "device_labels": [
-        "Widget",
-        "Apple Watch"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
       "badge_labels": [
         "Pénzügy & utazás",
         "Ingyenes kezdés · életre szóló feloldás",
-        "Nincs fiók",
-        "Nincs követés",
-        "Privát / eszközön tárolt",
-        "Widget",
-        "Apple Watch",
         "App Store · Ingyenes"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/hourstaglite.html",
@@ -681,7 +628,7 @@
       "app_store_id": "6754218117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
       "app_store_url": "https://apps.apple.com/hu/app/id6754218117",
-      "app_store_cta_label": "Get HoursTag: Órák a vásárláshoz on the App Store",
+      "app_store_cta_label": "Töltse le a(z) HoursTag: Órák a vásárláshoz appot az App Store-ból",
       "storefront_facts": {
         "price": "1990",
         "currency": "HUF",
@@ -1614,24 +1561,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
       "one_time_option": true,
-      "privacy_facts": [
-        "offline",
-        "no_account",
-        "no_ads"
-      ],
-      "privacy_labels": [
-        "Offline",
-        "Nincs fiók",
-        "Nincs reklám"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Utazás",
         "Ingyenes kezdés · életre szóló feloldás",
-        "Offline",
-        "Nincs fiók",
-        "Nincs reklám",
         "App Store · Ingyenes"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",

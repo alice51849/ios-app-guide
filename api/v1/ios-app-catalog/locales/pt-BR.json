@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-31",
-  "content_digest": "741556b580f83a270aa348b18ea5e42602cbe0a1c169fe9115da666dbf860cdb",
+  "date_modified": "2026-08-02",
+  "content_digest": "8f14ab5dd69dc7ba96582d9414c5670e0f832e1998ad3b3ee53a697c7a258fbb",
   "locale": "pt-BR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -31,9 +31,9 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
-        "no_ads": true,
-        "no_tracking": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
         "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
@@ -92,7 +92,7 @@
       "app_store_id": "6792483140",
       "name": "Aim990 Plus",
       "summary": "Desenvolva a compreensão do inglês com sessões que trabalham foco, ritmo e resistência. Aim990 Plus foi criado para adultos que querem praticar com seriedade no iPhone ou iPad, seja no transporte, no intervalo do trabalho ou em casa.",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "compreensão auditiva",
         "leitura",
@@ -108,7 +108,7 @@
       "purchase_model": "paid_upfront",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
+        "offline": false,
         "no_account": false,
         "no_ads": false,
         "no_tracking": false,
@@ -243,7 +243,7 @@
       "app_store_id": "6790418321",
       "name": "DailyMate: idiomas em contexto",
       "summary": "Idioma de verdade se aprende com frases completas, não decorando palavras soltas. O DailyMate reúne 8.400 frases práticas em 47 idiomas de aprendizado, divididas em 14 temas do dia a dia e 84 situações reais. Uma única compra dá acesso ao app completo. Sem assinatura.",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "inglês",
         "espanhol",
@@ -266,7 +266,7 @@
         "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
-        "widget": true,
+        "widget": false,
         "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/br/app/id6790418321",
@@ -355,12 +355,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": true,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/br/app/id6793436548",
       "guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/gmoneylite.html",
@@ -450,12 +450,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/br/app/id6794039979",
       "guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/hourstaglite.html",
@@ -1113,7 +1113,7 @@
       "app_store_id": "6792850916",
       "name": "Mask My File",
       "summary": "Compartilhe com segurança sem perder o contexto útil. O Mask My File encontra dados pessoais antes de você enviar um arquivo, tarja em definitivo o que você escolher e depois reabre e verifica o novo arquivo antes de mostrar o selo Private Ready.",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "privacidade",
         "tarjar",
@@ -1571,9 +1571,9 @@
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
-        "no_account": true,
-        "no_ads": true,
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
         "widget": false,
@@ -1699,7 +1699,7 @@
       "app_store_id": "6790467886",
       "name": "WiFi Aid",
       "summary": "Encontre a causa mais provável com testes independentes de rotas, DNS, TCP, TLS, tempos e estabilidade. Uma compra antecipada, sem assinatura, anúncios ou rastreamento.",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "internet caiu",
         "roteador",

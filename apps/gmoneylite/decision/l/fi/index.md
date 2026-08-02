@@ -2,7 +2,7 @@
 title: "G+Money Lite — Budjetti, menot & valuutta | iOS App"
 lang: "fi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/fi/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,11 +16,6 @@ G+Money Lite — Älykäs matkavaluutta- & kululaskuri Matkaraha, helposti Kirja
 - Raha & matkailu
 - Ilmainen aloitus · elinikäinen avaus
 - Offline
-- Ei tiliä
-- Ei seurantaa
-- Yksityinen / laitteella
-- Widget
-- Apple Watch
 - App Store · Ilmainen
 
 [Lataa G+Money Lite App Storesta](https://apps.apple.com/fi/app/id6793436548)

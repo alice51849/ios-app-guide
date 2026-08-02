@@ -2,7 +2,7 @@
 title: "AI Brief — फाइलमधून स्पष्ट संदर्भ | iOS App"
 lang: "mr-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/mr-IN/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,6 @@ publisher: "Lumi Studio"
 
 - उत्पादकता
 - सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक
-- खाते नाही
-- जाहिराती नाहीत
-- ट्रॅकिंग नाही
 - खाजगी / उपकरणावर
 - App Store · मोफत
 

@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-31",
-  "content_digest": "741556b580f83a270aa348b18ea5e42602cbe0a1c169fe9115da666dbf860cdb",
+  "date_modified": "2026-08-02",
+  "content_digest": "8f14ab5dd69dc7ba96582d9414c5670e0f832e1998ad3b3ee53a697c7a258fbb",
   "locale": "ro",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -31,9 +31,9 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
-        "no_ads": true,
-        "no_tracking": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
         "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
@@ -93,7 +93,7 @@
       "app_store_id": "6792483140",
       "name": "Aim990 Plus",
       "summary": "Să înțelegi engleza este important; să rămâi precis când timpul se scurge este o abilitate separată. Aim990 Plus este un antrenament intensiv de ascultare și citire pentru adulți, creat pentru iPhone și iPad. Sesiunea principală are un ritm clar: începi cu 8 întrebări de încălzire, continui cu Pressure Set — 20 de întrebări în 15 minute — apoi intri în Mistake Replay, unde revii exact la răspunsurile care ți-au creat dificultăți.",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "examen",
         "ascultare",
@@ -111,7 +111,7 @@
       "purchase_model": "paid_upfront",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
+        "offline": false,
         "no_account": false,
         "no_ads": false,
         "no_tracking": false,
@@ -245,7 +245,7 @@
       "app_store_id": "6790418321",
       "name": "DailyMate: Fraze pentru viață",
       "summary": "Nu mai memora cuvinte izolate. Cu DailyMate înveți 8.400 de fraze complete, firești în călătorii, la serviciu, la restaurant, la cumpărături, în discuții despre sănătate și în viața socială. Plătești o singură dată, fără abonament.",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "engleză",
         "conversație",
@@ -266,7 +266,7 @@
         "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
-        "widget": true,
+        "widget": false,
         "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/ro/app/id6790418321",
@@ -357,12 +357,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": true,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/ro/app/id6793436548",
       "guide_url": "https://alice51849.github.io/ios-app-guide/ro/gmoneylite.html",
@@ -455,12 +455,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/ro/app/id6794039979",
       "guide_url": "https://alice51849.github.io/ios-app-guide/ro/hourstaglite.html",
@@ -1113,7 +1113,7 @@
       "app_store_id": "6792850916",
       "name": "Mask My File",
       "summary": "Distribuie în siguranță fără să pierzi contextul util. Mask My File găsește datele personale înainte să trimiți un fișier, acoperă definitiv ce alegi, apoi redeschide și verifică noul fișier înainte de a afișa eticheta Private Ready.",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "confidențialitate",
         "cenzurare",
@@ -1569,9 +1569,9 @@
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
-        "no_account": true,
-        "no_ads": true,
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
         "widget": false,
@@ -1696,7 +1696,7 @@
       "app_store_id": "6790467886",
       "name": "WiFi Aid",
       "summary": "Găsește cauza cea mai probabilă prin teste independente de traseu, DNS, TCP, TLS, timpi și stabilitate. O singură plată inițială, fără abonament, reclame sau urmărire.",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "pană internet",
         "router",

@@ -2,7 +2,7 @@
 title: "G+Money Lite — ਯਾਤਰਾ ਖਰਚ ਤੇ ਮੁਦਰਾ | iOS App"
 lang: "pa-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/pa-IN/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,11 +16,6 @@ G+Money Lite — ਸਮਾਰਟ ਯਾਤਰਾ ਮੁਦਰਾ ਅਤੇ ਖ�
 - ਪੈਸਾ ਅਤੇ ਯਾਤਰਾ
 - ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਸਦਾ ਲਈ ਅਨਲੌਕ
 - ਆਫਲਾਈਨ
-- ਕੋਈ ਖਾਤਾ ਨਹੀਂ
-- ਕੋਈ ਟ੍ਰੈਕਿੰਗ ਨਹੀਂ
-- ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ
-- ਵਿਜੈਟ
-- Apple Watch
 - App Store · ਮੁਫ਼ਤ
 
 [App Store ਤੋਂ G+Money Lite ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6793436548)

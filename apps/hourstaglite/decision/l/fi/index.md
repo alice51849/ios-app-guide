@@ -2,7 +2,7 @@
 title: "HoursTag Lite — Asioiden todellinen hinta | iOS App"
 lang: "fi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/fi/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,11 +15,6 @@ HoursTag Lite - Asioiden todellinen hinta Jokainen ostos maksaa tunteja elämäs
 
 - Raha & matkailu
 - Ilmainen aloitus · elinikäinen avaus
-- Ei tiliä
-- Ei seurantaa
-- Yksityinen / laitteella
-- Widget
-- Apple Watch
 - App Store · Ilmainen
 
 [Lataa HoursTag Lite App Storesta](https://apps.apple.com/fi/app/id6794039979)

@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-31",
-  "content_digest": "741556b580f83a270aa348b18ea5e42602cbe0a1c169fe9115da666dbf860cdb",
+  "date_modified": "2026-08-02",
+  "content_digest": "8f14ab5dd69dc7ba96582d9414c5670e0f832e1998ad3b3ee53a697c7a258fbb",
   "locale": "te-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -31,9 +31,9 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
-        "no_ads": true,
-        "no_tracking": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
         "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
@@ -92,7 +92,7 @@
       "app_store_id": "6792483140",
       "name": "Aim990 Plus",
       "summary": "Aim990 Plus అనేది పెద్దలు తమ ఆంగ్ల శ్రవణం, పఠనం, సమయ నిర్వహణను ఏకాగ్రతతో మెరుగుపరచుకోవడానికి రూపొందించిన ఒత్తిడి సాధన యాప్. పాఠాలను ఊరికే తిరగేయడం కాకుండా, నిర్ణీత సమయంలో ప్రశ్నను అర్థం చేసుకొని అత్యంత సరైన సమాధానాన్ని ఎంచుకునే అలవాటుకు ఇది ప్రాధాన్యం ఇస్తుంది. ప్రతి సెషన్ స్పష్టమైన మూడు దశల్లో సాగుతుంది: 8 ప్రశ్నల Warm-up మనసును సిద్ధం చేస్తుంది, 15 నిమిషాల్లో 20 ప్రశ్నల Pressure Set వేగాన్ని, కచ్చితత్వాన్ని పరీక్షిస్తుంది, ఆ తర్వాత Mistake Replay తప్పుగా సమాధానమిచ్చిన ప్రశ్నలను మళ్లీ పరిష్కరించే అవకాశం ఇస్తుంది. ఈ క్రమం తప్పును నమోదు చేయడంతో ఆగదు; ఏ సంకేతాన్ని గమనించలేదు, ఏ పదం అయోమయం కలిగించింది, ఎక్కడ ఎక్కువ సమయం పట్టింది అనే విషయాలను గుర్తించి తదుపరి ప్రయత్నాన్ని మెరుగుపరచడంలో సహాయపడుతుంది. యాప్‌లో 630 సొంతంగా రూపొందించిన ప్రశ్నలు ఉన్నాయి. భాగం 1 నుంచి 7 వరకు ఒక్కో భాగంలో 90 ప్రశ్నల సమతుల్య సమాహారం ఉంది; చిత్ర ఆధారిత ప్రశ్నల కోసం ఒకదానికొకటి భిన్నమైన 90 ఫోటోలు ఉన్నాయి. ఒకే చిత్రం లేదా వాక్యాన్ని పదేపదే చూపకుండా, విభిన్న సందర్భాలు, సంభాషణ ఉద్దేశాలు, పఠన రూపాలను ఎదుర్కోవచ్చు. శ్రవణ ప్రశ్నల కోసం పరికరంలో అందుబాటులో ఉన్న స్వరాన్ని ఉపయోగించవచ్చు. వేగ నియంత్రణతో మొదట వివరాలను జాగ్రత్తగా గ్రహించి, తరువాత సహజ వేగానికి తిరిగి రావచ్చు. శ్రుతలేఖన సాధన విన్న పదాలు, పదబంధాలను కచ్చితంగా పట్టుకునే సామర్థ్యాన్ని పెంచుతుంది. పఠన సాధన చిన్న పేరా, సంభాషణ, ప్రకటన, సమాచార పత్రం నుంచి ప్రధాన భావాన్ని, అవసరమైన వివరాన్ని వేగంగా గుర్తించడంలో తోడ్పడుతుంది. 150 ముఖ్య పదాల సమాహారం అర్థాన్ని గుర్తుంచుకోవడానికి, ప్రశ్న సందర్భంలో ఉపయోగించడానికి ఉపయోగపడుతుంది. అందుబాటులో ఉన్న సమయాన్ని బట్టి mini, half లేదా full mock ఎంచుకోవచ్చు. ఫలితం వచ్చిన తర్వాత భాగాల వారీ కచ్చితత్వం, సమాధాన సమయం, బలహీన అంశాలు, మళ్లీ సాధన చేయాల్సిన విషయాలను ఒకే చోట చూడవచ్చు. పురోగతి నమోదు గత సెషన్‌లతో పోల్చుకోవడానికి సహాయపడుతుంది; ఎలాంటి స్కోరుకు హామీ ఇవ్వకుండా మీ స్వంత సాధన ధోరణిని మాత్రమే చూపుతుంది. Aim990 Plus నేరుగా చెల్లించి డౌన్‌లోడ్ చేసుకునే సంపూర్ణ యాప్. అదనపు యాప్‌లో కొనుగోళ్లు, సభ్యత్వం, పేవాల్ లేదా ప్రకటనలు లేవు; మొదటిసారి తెరిచినప్పటి నుంచే అన్ని సాధనలు, విశ్లేషణలు అందుబాటులో ఉంటాయి. ఖాతా సృష్టించాల్సిన అవసరం లేదు, సర్వర్ అనుసంధానం కూడా అవసరం లేదు. ప్రశ్నలు, సమాధానాలు, పదసంపద, పురోగతి పరికరంలోనే ఉంటాయి కాబట్టి ఇంటర్నెట్ లేకుండానే సాధన చేయవచ్చు. వినియోగాన్ని అనుసరించే tracking లేదా analytics లేవు; వ్యక్తిగత అభ్యాస సమాచారం ఏ బాహ్య సేవకూ పంపబడదు. TOEIC అనేది Educational Testing Service (ETS)కు చెందిన నమోదిత వ్యాపార చిహ్నం. Aim990 Plus స్వతంత్రమైన, అధికారికం కాని అభ్యాస యాప్; ETS లేదా దాని అనుబంధ సంస్థలతో దీనికి ఎలాంటి సంబంధం, ఆమోదం లేదా ప్రాయోజకత్వం లేదు.",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "శ్రవణపరీక్ష",
         "పఠననైపుణ్యం",
@@ -107,7 +107,7 @@
       "purchase_model": "paid_upfront",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
+        "offline": false,
         "no_account": false,
         "no_ads": false,
         "no_tracking": false,
@@ -251,7 +251,7 @@
       "app_store_id": "6790418321",
       "name": "DailyMate: రోజువారీ వాక్యాలు",
       "summary": "ఒక్కో పదాన్ని విడిగా గుర్తుపెట్టుకున్నా మాట్లాడేటప్పుడు పూర్తి వాక్యం వెంటనే రాకపోవచ్చు. DailyMateలో నిజ జీవితంలో నేరుగా ఉపయోగించగల 47 భాషల 8,400 పూర్తి వాక్యాలు ఉన్నాయి. ఒక్కసారి కొనుగోలు చేస్తే పూర్తి యాప్ మీది; చందా లేదు.",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "ఇంగ్లీష్ నేర్చుకోండి",
         "ఉచ్చారణ",
@@ -273,7 +273,7 @@
         "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
-        "widget": true,
+        "widget": false,
         "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/in/app/id6790418321",
@@ -368,12 +368,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": true,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/in/app/id6793436548",
       "guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/gmoneylite.html",
@@ -468,12 +468,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/in/app/id6794039979",
       "guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/hourstaglite.html",
@@ -1137,7 +1137,7 @@
       "app_store_id": "6792850916",
       "name": "Mask My File",
       "summary": "ఉపయోగకరమైన సందర్భాన్ని కోల్పోకుండా సురక్షితంగా పంచుకోండి. Mask My File మీరు ఫైల్ పంపే ముందు వ్యక్తిగత వివరాలను కనుగొని, మీరు ఎంచుకున్న భాగాన్ని శాశ్వతంగా దాచి, ఆపై కొత్త ఫైల్‌ను మళ్లీ తెరిచి ధృవీకరించిన తర్వాతే Private Ready చూపిస్తుంది.",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "వ్యక్తిగత సమాచారం దాచు",
         "ఆధార్ పాన్ దాచు",
@@ -1578,9 +1578,9 @@
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
-        "no_account": true,
-        "no_ads": true,
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
         "widget": false,
@@ -1704,7 +1704,7 @@
       "app_store_id": "6790467886",
       "name": "WiFi Aid",
       "summary": "స్వతంత్ర DNS, TCP, TLS, టైమింగ్, స్థిరత్వ పరీక్షల ద్వారా సంభావ్య కనెక్షన్ సమస్యను గుర్తించండి. ఒకే ఒక్క కొనుగోలు—చందా, ప్రకటనలు, ట్రాకింగ్ లేదు.",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "wifi సమస్య",
         "నెట్",

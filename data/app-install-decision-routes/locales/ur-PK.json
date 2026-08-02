@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ur-PK",
-  "dateModified": "2026-07-31",
-  "content_digest": "d25fe9a1e078b3c0c14af98cbedf0273117830c2e9a4b4d0f3b9906385ab48e2",
-  "generation_digest": "e1d80cb6ea88329d88881233d28cead0c2c1140eaa12f67295589794b128e1e4",
+  "dateModified": "2026-08-02",
+  "content_digest": "e5bfe67ce45753740357eeca269b9d35c0540b62ea2875b9d353bd43f3b5580a",
+  "generation_digest": "fba7106f0739bc21b7780395db7e34437f3398d54d36d80e4aa52f98445f0433",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -26,8 +26,8 @@
       "priority_group": "launch_boost",
       "publisher_query": "Mask My File — شیئر سے پہلے نجی ڈیٹا چھپائیں | iOS App",
       "decision_context": "مفید سیاق کھوئے بغیر محفوظ طریقے سے شیئر کریں۔ Mask My File فائل بھیجنے سے پہلے نجی تفصیلات ڈھونڈتا ہے، انہیں ہمیشہ کے لیے چھپاتا ہے، پھر تیار فائل دوبارہ کھول کر جانچتا ہے اور تب Private Ready دکھاتا ہے۔ آپ کیا کر سکتے ہیں • تصاویر اور PDF: پوری چوڑائی کا پیش منظر، 5× تک زوم، گھسیٹنا، اور درست دستی انتخاب۔ • بصری فائلیں: ہمیشہ کے لیے ٹھوس چھپائی یا صرف ہٹانا۔ چہرے اور بارکوڈ کی شناخت صرف جائزے کے لیے حصے نشان زد کرتی ہے۔ • متن، JSON، XML، HTML، CSV، TSV اور RTF: ہر مماثلت تلاش کریں، پھر ستارے سے مکمل چھپائی، جزوی چھپائی، جگہ نشان، فرضی نام یا ہٹانا لاگو کریں۔ • ضرورت پر میٹا ڈیٹا ہٹائیں۔ PDF میں صفحہ بہ صفحہ کام کریں، یا 100 فائلوں تک—ہر فائل کا الگ پیش منظر، فائلوں کے درمیان تلاش، اور فی فائل دستی انتخاب کے ساتھ۔ • نجی سیشن، پروجیکٹ ورک اسپیس اور جگہ نشان والٹ سے اپنا کام منظم رکھیں۔ جب یہ اہم ہو تب استعمال کریں کرائے کی درخواست بھیجنے، طبی دستاویز شیئر کرنے، یا گاہک کی فائل ساتھی کو دینے سے پہلے—نجی تفصیلات ہمیشہ کے لیے چھپاتے ہوئے مفید سیاق برقرار رکھیں۔ بنیادی ڈیزائن میں پرائیویسی سب کچھ آپ کے آلے پر پروسیس ہوتا ہے۔ کوئی اکاؤنٹ، اشتہار، ٹریکنگ، تجزیہ یا مواد اپ لوڈ نہیں۔ Apple Vision اور شامل Tesseract OCR مقامی طور پر چلتے ہیں۔ چہرے کی شناخت صرف حصے بناتی ہے: یہ کسی شخص کی شناخت نہیں کرتی، ٹیمپلیٹ نہیں بناتی، اور چہرے کا ڈیٹا نہ شیئر کرتی ہے نہ محفوظ رکھتی ہے۔ خریداری Apple اپنے StoreKit سے سنبھالتا ہے۔ Mask My File کوئی VPN، NetworkExtension، پراکسی، ٹنل، DNS فلٹر یا نیٹ ورک روٹنگ استعمال نہیں کرتا۔ اصل فائلیں کبھی اوور رائٹ نہیں ہوتیں؛ عارضی ورک اسپیس فائلیں، نجی سیشن ڈیٹا اور پروجیکٹ اُس وقت تک آلے پر رہتے ہیں جب تک آپ انہیں حذف نہ کریں۔ ایک بار خریدیں، زندگی بھر استعمال کریں صرف ایک بار کی ادائیگی سے تاحیات رسائی حاصل کریں، اور لامحدود تصدیق شدہ آؤٹ پٹ اور بیچ پروسیسنگ کا فائدہ اٹھائیں۔ کوئی سبسکرپشن نہیں ہے۔ آپ App Store کے ذریعے کسی بھی وقت اپنی خریداری بحال کر سکتے ہیں۔",
-      "category": "utility",
-      "category_label": "مزید",
+      "category": "photo-utility",
+      "category_label": "تصویر اور سہولت",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "مفت آغاز · مستقل ان لاک",
       "one_time_option": true,
@@ -40,7 +40,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "مزید",
+        "تصویر اور سہولت",
         "مفت آغاز · مستقل ان لاک",
         "نجی / آلہ پر",
         "App Store · مفت"
@@ -76,8 +76,8 @@
       "priority_group": "launch_boost",
       "publisher_query": "WiFi Aid — نیٹ ورک تشخیص اور ثبوت | iOS App",
       "decision_context": "آزادانہ راستے، DNS، TCP، TLS، وقت اور استحکام کی جانچ سے کنکشن کا سب سے ممکنہ مسئلہ دریافت کریں۔ ایک بار ادائیگی — کوئی سبسکرپشن، اشتہار یا ٹریکنگ نہیں۔ • چیک چلائیں — ایک ٹیپ میں وائی فائی، DNS اور انٹرنیٹ کی جانچ • گہری جانچ — زیادہ ثبوت اور استحکام کے نمونے • ویب سائٹ جانچیں — کیا ایک منزل ناکام ہے یا پورا انٹرنیٹ • ثبوت — DNS · TCP · TLS · TTFB · HTTP · براہ راست IP · IPv4 · IPv6 • کنکشن غیر مستحکم لگتا ہے — تغیر • تاریخ — صرف اس ڈیوائس پر محفوظ نجی ریکارڈ • Apple Watch — چیک چلائیں • Widget · iPad — مربوط · چیک چلائیں کوئی اکاؤنٹ، اشتہار، تجزیہ یا ٹریکنگ نہیں۔ نجی ریکارڈ صرف اس ڈیوائس پر محفوظ۔ App Store پر ایک بار ادائیگی۔ کوئی سبسکرپشن نہیں۔",
-      "category": "utility",
-      "category_label": "مزید",
+      "category": "photo-utility",
+      "category_label": "تصویر اور سہولت",
       "purchase_model": "paid_upfront",
       "purchase_label": "ادا شدہ ڈاؤن لوڈ",
       "one_time_option": true,
@@ -86,7 +86,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "مزید",
+        "تصویر اور سہولت",
         "ادا شدہ ڈاؤن لوڈ",
         "App Store · Rs 1,700.00"
       ],
@@ -172,15 +172,9 @@
       "purchase_label": "مفت آغاز · مستقل ان لاک",
       "one_time_option": true,
       "privacy_facts": [
-        "no_account",
-        "no_ads",
-        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
-        "کوئی اکاؤنٹ نہیں",
-        "کوئی اشتہار نہیں",
-        "کوئی نگرانی نہیں",
         "نجی / آلہ پر"
       ],
       "device_surfaces": [],
@@ -188,9 +182,6 @@
       "badge_labels": [
         "پیداواریت",
         "مفت آغاز · مستقل ان لاک",
-        "کوئی اکاؤنٹ نہیں",
-        "کوئی اشتہار نہیں",
-        "کوئی نگرانی نہیں",
         "نجی / آلہ پر",
         "App Store · مفت"
       ],
@@ -270,23 +261,18 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "Aim990 Plus — سننے اور پڑھنے کی مشق | iOS App",
       "decision_context": "یہ ایپ ان بالغ افراد کے لیے بنائی گئی ہے جو وقت کے دباؤ میں انگریزی سننے اور پڑھنے کی درستگی اور رفتار بہتر کرنا چاہتے ہیں۔ بے ترتیب سوالات دہرانے کے بجائے مختصر نشستیں، طویل فرضی امتحانات اور واضح کارکردگی کا جائزہ آپ کو بتاتا ہے کہ اگلی توجہ کہاں دینی ہے۔ ہر مرکزی سلسلہ 8 سوالات کے وارم اپ سے شروع ہوتا ہے تاکہ ذہن فوراً کام کی رفتار پکڑ لے۔ اس کے بعد پریشر سیٹ آتا ہے، جس میں 15 منٹ کے اندر 20 سوالات حل کرنے ہوتے ہیں۔ اختتام پر غلطیوں کی دہرائی انہی مقامات کو سامنے لاتی ہے جہاں جواب درست نہیں تھا، تاکہ اگلی کوشش سے پہلے وجہ سمجھ کر سیکھا جا سکے۔ مواد میں 630 اصل سوالات ہیں، جو حصہ 1 سے حصہ 7 تک یکساں طور پر تقسیم ہیں، یعنی ہر حصے میں 90 سوالات۔ پہلے حصے میں 90 الگ تصاویر شامل ہیں، اس لیے مشق ایک ہی نمونہ یاد کرنے کے بجائے منظر کی باریکیاں دیکھنے اور درست بیان پہچاننے پر مرکوز رہتی ہے۔ سننے اور پڑھنے کی سرگرمیاں مختلف عملی حالات اور بتدریج بڑھتے دباؤ کا احاطہ کرتی ہیں۔ اپنے دستیاب وقت کے مطابق مختصر، نصف یا مکمل فرضی امتحان منتخب کریں۔ کمزور پہلوؤں کا تجزیہ بار بار ہونے والی غلطیوں کے انداز نمایاں کرتا ہے؛ املا کی سرگرمی آواز اور تحریر کا تعلق مضبوط کرتی ہے؛ جبکہ رفتار کا اختیار پہلے آہستہ سن کر تفصیل سمجھنے اور پھر قدرتی رفتار تک پہنچنے میں مدد دیتا ہے۔ آواز چلانے کے لیے آلے میں نصب آوازیں استعمال کی جا سکتی ہیں، اور متن کسی بیرونی خدمت کو نہیں بھیجا جاتا۔ 150 منتخب الفاظ کا ذخیرہ بامقصد دہرائی کے لیے موجود ہے۔ مشکل الفاظ پر توجہ دیں، مکمل کیے گئے کام کو دیکھیں اور پیش رفت کی بنیاد پر اگلا قدم چنیں۔ پروفائل میں اسی آلے پر محفوظ سرگرمی کا خلاصہ ملتا ہے۔ کارکردگی کے اشارے بہتر منصوبہ بندی میں مدد دیتے ہیں، مگر کسی مخصوص نمبر یا نتیجے کی ضمانت نہیں دیتے۔ ایپ براہ راست خرید کر ڈاؤن لوڈ کی جاتی ہے اور تمام خصوصیات پہلے ہی دن سے شامل ہیں۔ ایپ کے اندر کوئی خریداری، رکنیت، ادائیگی کی دیوار یا اشتہار نہیں۔ اکاؤنٹ بنانے یا لاگ ان کرنے کی ضرورت بھی نہیں۔ تمام مواد آف لائن چلتا ہے اور پیش رفت صرف آپ کے آلے پر محفوظ رہتی ہے؛ کوئی سرور، نگرانی یا تجزیاتی نظام آپ کی سرگرمی جمع نہیں کرتا۔ ٹریڈ مارک اطلاع: TOEIC، ETS کا ٹریڈ مارک ہے۔ Aim990 Plus ایک آزاد اور غیر سرکاری ایپ ہے؛ اس کا ETS سے کوئی تعلق نہیں اور نہ ہی اسے ETS کی توثیق حاصل ہے۔",
-      "category": "education",
-      "category_label": "تعلیم",
+      "category": "kids",
+      "category_label": "بچے اور سیکھنا",
       "purchase_model": "paid_upfront",
       "purchase_label": "ادا شدہ ڈاؤن لوڈ",
       "one_time_option": true,
-      "privacy_facts": [
-        "offline"
-      ],
-      "privacy_labels": [
-        "آف لائن"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "تعلیم",
+        "بچے اور سیکھنا",
         "ادا شدہ ڈاؤن لوڈ",
-        "آف لائن",
         "App Store · Rs 1,700.00"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/aim990plus.html",
@@ -415,25 +401,22 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "ایپل واچ کے ساتھ مسافروں کے لیے بہترین عملی زبان کے جملوں کی ایپ",
       "decision_context": "سفر سے پہلے، حقیقی حالات کے مکمل جملے تنہا الفاظ سے زیادہ مفید ہوتے ہیں جنہیں آپ کو دباؤ میں خود جوڑنا پڑتا ہے — DailyMate اسی لیے بنایا گیا ہے۔",
-      "category": "education",
-      "category_label": "تعلیم",
+      "category": "kids",
+      "category_label": "بچے اور سیکھنا",
       "purchase_model": "paid_upfront",
       "purchase_label": "ادا شدہ ڈاؤن لوڈ",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
       "device_surfaces": [
-        "widget",
         "apple_watch"
       ],
       "device_labels": [
-        "وجیٹ",
         "Apple Watch"
       ],
       "badge_labels": [
-        "تعلیم",
+        "بچے اور سیکھنا",
         "ادا شدہ ڈاؤن لوڈ",
-        "وجیٹ",
         "Apple Watch",
         "App Store · Rs 3,500.00"
       ],
@@ -527,34 +510,17 @@
       "purchase_label": "مفت آغاز · مستقل ان لاک",
       "one_time_option": true,
       "privacy_facts": [
-        "offline",
-        "no_account",
-        "no_tracking",
-        "private_or_on_device"
+        "offline"
       ],
       "privacy_labels": [
-        "آف لائن",
-        "کوئی اکاؤنٹ نہیں",
-        "کوئی نگرانی نہیں",
-        "نجی / آلہ پر"
+        "آف لائن"
       ],
-      "device_surfaces": [
-        "widget",
-        "apple_watch"
-      ],
-      "device_labels": [
-        "وجیٹ",
-        "Apple Watch"
-      ],
+      "device_surfaces": [],
+      "device_labels": [],
       "badge_labels": [
         "پیسہ اور سفر",
         "مفت آغاز · مستقل ان لاک",
         "آف لائن",
-        "کوئی اکاؤنٹ نہیں",
-        "کوئی نگرانی نہیں",
-        "نجی / آلہ پر",
-        "وجیٹ",
-        "Apple Watch",
         "App Store · مفت"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/gmoneylite.html",
@@ -593,32 +559,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "مفت آغاز · مستقل ان لاک",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account",
-        "no_tracking",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "کوئی اکاؤنٹ نہیں",
-        "کوئی نگرانی نہیں",
-        "نجی / آلہ پر"
-      ],
-      "device_surfaces": [
-        "widget",
-        "apple_watch"
-      ],
-      "device_labels": [
-        "وجیٹ",
-        "Apple Watch"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
       "badge_labels": [
         "پیسہ اور سفر",
         "مفت آغاز · مستقل ان لاک",
-        "کوئی اکاؤنٹ نہیں",
-        "کوئی نگرانی نہیں",
-        "نجی / آلہ پر",
-        "وجیٹ",
-        "Apple Watch",
         "App Store · مفت"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/hourstaglite.html",
@@ -650,7 +597,7 @@
       "app_name": "HoursTag: وقت کی قیمت",
       "priority_rank": null,
       "priority_group": "baseline_coverage",
-      "publisher_query": "HoursTag: وقت کی قیمت — Budget, Savings & Spending | iOS App",
+      "publisher_query": "HoursTag: وقت کی قیمت — حقیقی قیمت کیا ہے؟ ڈالرز میں نہیں — زندگی کے گھنٹوں میں۔ | iOS App",
       "decision_context": "حقیقی قیمت کیا ہے؟ ڈالرز میں نہیں — زندگی کے گھنٹوں میں۔",
       "category": "finance",
       "category_label": "پیسہ اور سفر",
@@ -681,7 +628,7 @@
       "app_store_id": "6754218117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
       "app_store_url": "https://apps.apple.com/pk/app/id6754218117",
-      "app_store_cta_label": "Get HoursTag: وقت کی قیمت on the App Store",
+      "app_store_cta_label": "App Store سے HoursTag: وقت کی قیمت حاصل کریں",
       "storefront_facts": {
         "price": "1300",
         "currency": "PKR",
@@ -1614,24 +1561,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "مفت آغاز · مستقل ان لاک",
       "one_time_option": true,
-      "privacy_facts": [
-        "offline",
-        "no_account",
-        "no_ads"
-      ],
-      "privacy_labels": [
-        "آف لائن",
-        "کوئی اکاؤنٹ نہیں",
-        "کوئی اشتہار نہیں"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "سفر",
         "مفت آغاز · مستقل ان لاک",
-        "آف لائن",
-        "کوئی اکاؤنٹ نہیں",
-        "کوئی اشتہار نہیں",
         "App Store · مفت"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",

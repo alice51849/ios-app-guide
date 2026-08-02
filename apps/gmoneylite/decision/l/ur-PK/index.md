@@ -2,7 +2,7 @@
 title: "G+Money Lite — سفری خرچ اور کرنسی | iOS App"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/ur-PK/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,11 +16,6 @@ G+Money Lite — سمارٹ سفر کرنسی اور خرچ ٹریکر سفر ک
 - پیسہ اور سفر
 - مفت آغاز · مستقل ان لاک
 - آف لائن
-- کوئی اکاؤنٹ نہیں
-- کوئی نگرانی نہیں
-- نجی / آلہ پر
-- وجیٹ
-- Apple Watch
 - App Store · مفت
 
 [App Store سے G+Money Lite حاصل کریں](https://apps.apple.com/pk/app/id6793436548)

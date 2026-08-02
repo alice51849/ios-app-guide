@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "sk",
-  "dateModified": "2026-07-31",
-  "content_digest": "d25fe9a1e078b3c0c14af98cbedf0273117830c2e9a4b4d0f3b9906385ab48e2",
-  "generation_digest": "e1d80cb6ea88329d88881233d28cead0c2c1140eaa12f67295589794b128e1e4",
+  "dateModified": "2026-08-02",
+  "content_digest": "e5bfe67ce45753740357eeca269b9d35c0540b62ea2875b9d353bd43f3b5580a",
+  "generation_digest": "fba7106f0739bc21b7780395db7e34437f3398d54d36d80e4aa52f98445f0433",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -26,8 +26,8 @@
       "priority_group": "launch_boost",
       "publisher_query": "Mask My File — Skryte údaje pred zdieľaním | iOS App",
       "decision_context": "Zdieľajte bezpečne bez straty užitočného kontextu. Mask My File nájde osobné údaje skôr, než súbor odošlete, natrvalo začierni to, čo vyberiete, a potom nový súbor znovu otvorí a overí, než zobrazí štítok Private Ready. ČO DOKÁŽETE • Obrázky a PDF: náhľad na celú šírku, priblíženie až 5×, plynulé ťahanie a presné ručné výbery. • Vizuálne súbory: trvalé, plné začiernenie alebo odstránenie. Rozpoznávanie tvárí a čiarových kódov označí len oblasti na kontrolu. • Text, JSON, XML, HTML, CSV, TSV a RTF: prehľadajte každú zhodu a použite úplnú masku, čiastočnú masku, zástupný text, pseudonym alebo odstránenie. • Odstráňte metaúdaje tam, kde to formát dovoľuje. Pracujte stranu po strane v PDF alebo spracujte až 100 súborov s vlastnými náhľadmi, vyhľadávaním naprieč súbormi a ručnými výbermi pre každý z nich. • Udržte poriadok pomocou súkromnej relácie, priestorov projektov a trezoru zástupných textov. POUŽITE HO, KEĎ NA TOM ZÁLEŽÍ Skôr než pošlete žiadosť o prenájom, zdieľate lekársku správu alebo odovzdáte kartu klienta kolegovi, zachovajte potrebný kontext a dôverné údaje natrvalo skryte. SÚKROMIE OD ZÁKLADU Všetko sa spracúva vo vašom zariadení. Žiadny účet, reklamy, sledovanie, analytika ani nahrávanie obsahu. Apple Vision a vstavaný Tesseract OCR bežia lokálne. Rozpoznávanie tváre vytvára iba oblasti: neidentifikuje osobu, nevytvára šablónu, nezdieľa ani neuchováva údaje o tvári. Nákupy spravuje Apple cez StoreKit. Mask My File nepoužíva VPN, NetworkExtension, proxy, tunel, DNS filter ani sieťové smerovanie. Originály sa nikdy neprepíšu; dočasné pracovné súbory, údaje súkromnej relácie a projekty zostávajú v zariadení, kým ich neodstránite. ZAPLAŤTE RAZ. MÁTE HO NAVŽDY. Jediný doživotný nákup odomkne neobmedzené overené výstupy a dávkové spracovanie. Žiadne predplatné. Nákup obnovíte cez App Store.",
-      "category": "utility",
-      "category_label": "Viac",
+      "category": "photo-utility",
+      "category_label": "Fotografia a nástroje",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Zadarmo na začiatok · doživotné odomknutie",
       "one_time_option": true,
@@ -40,7 +40,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "Viac",
+        "Fotografia a nástroje",
         "Zadarmo na začiatok · doživotné odomknutie",
         "Súkromné / v zariadení",
         "App Store · Zadarmo"
@@ -76,8 +76,8 @@
       "priority_group": "launch_boost",
       "publisher_query": "WiFi Aid — Diagnostika siete s dôkazmi | iOS App",
       "decision_context": "Nájdite najpravdepodobnejšiu príčinu pomocou nezávislých testov trás, DNS, TCP, TLS, odozvy a stability. Jedna platba vopred, bez predplatného, reklám a sledovania. • Spustiť — Wi-Fi, DNS a internet jedným ťuknutím • Deep Check — Viac dôkazov a stabilita • Test Stránky — Zistite, či je problém stránka alebo celá sieť • Dôkazy — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Pripojenie je nestabilné — Kolísanie (Jitter) • História — Údaje sú uložené iba na tomto zariadení • Apple Watch — Spustiť • Widget · iPad — Připojeno · Spustiť Žiadne účty, reklamy alebo sledovanie. Údaje sú uložené iba na tomto zariadení. Jeden nákup vopred v App Store. Bez predplatného.",
-      "category": "utility",
-      "category_label": "Viac",
+      "category": "photo-utility",
+      "category_label": "Fotografia a nástroje",
       "purchase_model": "paid_upfront",
       "purchase_label": "Platené stiahnutie",
       "one_time_option": true,
@@ -86,7 +86,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "Viac",
+        "Fotografia a nástroje",
         "Platené stiahnutie",
         "App Store · 6,99 €"
       ],
@@ -172,15 +172,9 @@
       "purchase_label": "Zadarmo na začiatok · doživotné odomknutie",
       "one_time_option": true,
       "privacy_facts": [
-        "no_account",
-        "no_ads",
-        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
-        "Bez účtu",
-        "Bez reklám",
-        "Bez sledovania",
         "Súkromné / v zariadení"
       ],
       "device_surfaces": [],
@@ -188,9 +182,6 @@
       "badge_labels": [
         "Produktivita",
         "Zadarmo na začiatok · doživotné odomknutie",
-        "Bez účtu",
-        "Bez reklám",
-        "Bez sledovania",
         "Súkromné / v zariadení",
         "App Store · Zadarmo"
       ],
@@ -270,23 +261,18 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "Aim990 Plus — Istota pod časovým tlakom | iOS App",
       "decision_context": "Rozumieť angličtine je jedna vec. Zachovať si presnosť, keď ubiehajú minúty, je druhá. Aim990 Plus je intenzívny tréning počúvania a čítania pre dospelých na iPhone a iPad. Hlavná relácia má premyslený rytmus: najprv 8 zahrievacích otázok, potom Pressure Set s 20 úlohami a limitom 15 minút a napokon Mistake Replay, kde sa vrátite iba k odpovediam, ktoré vás zdržali alebo zmiatli. K dispozícii je 630 pôvodných otázok. Každá z častí 1–7 obsahuje presne 90 otázok, spolu 630, a obrazové úlohy pracujú s 90 rôznymi fotografiami. Obsah tak nevedie k mechanickému zapamätaniu, ale k rozpoznávaniu detailov, zámeru hovoriaceho, parafráz a presvedčivých nesprávnych možností. Vyberte si rozsah podľa času a energie: • mini mock na krátke sústredené precvičenie; • half mock na dôkladnejšiu priebežnú kontrolu; • full mock na vytrvalosť a rozdelenie času; • samostatné počúvanie, čítanie, diktát a rýchlostný tréning; • 150 slov na systematické upevňovanie slovnej zásoby; • analýzu slabých oblastí a prehľad postupu. Diktát vás prinúti zachytiť koncovky, spájanie slov aj rýchlu reč. Rýchlostný tréning pomáha reagovať bez zbytočného vracania sa. Analýza slabín ukáže, ktorý typ úloh si zaslúži ďalšiu reláciu, a Mistake Replay zmení omyl na konkrétny plán opakovania. Zvuk môže využívať hlas priamo v zariadení, takže nastavenie reči zostáva vo vašich rukách. Všetko funguje offline — doma, vo vlaku aj na mieste bez signálu. Aplikácia nevyžaduje účet ani prihlásenie. Neobsahuje reklamy, nákupy v aplikácii, predplatné ani paywall. Nepoužíva sledovanie, analytiku či server na ukladanie výsledkov. Platené stiahnutie zahŕňa všetky funkcie, dostupné hneď od prvého spustenia. Aim990 Plus nesľubuje konkrétny počet bodov. Poskytuje poctivé, usporiadané prostredie na tréning tempa, pozornosti a poučenie sa z vlastných chýb. TOEIC je ochranná známka spoločnosti ETS. Aim990 Plus je nezávislá neoficiálna aplikácia; nie je prepojená so spoločnosťou ETS, sponzorovaná ani schválená spoločnosťou ETS.",
-      "category": "education",
-      "category_label": "Vzdelávanie",
+      "category": "kids",
+      "category_label": "Deti a učenie",
       "purchase_model": "paid_upfront",
       "purchase_label": "Platené stiahnutie",
       "one_time_option": true,
-      "privacy_facts": [
-        "offline"
-      ],
-      "privacy_labels": [
-        "Offline"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "Vzdelávanie",
+        "Deti a učenie",
         "Platené stiahnutie",
-        "Offline",
         "App Store · 6,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/aim990plus.html",
@@ -415,25 +401,22 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "najlepšia praktická aplikácia na jazykové frázy pre cestovateľov s Apple Watch",
       "decision_context": "Pred cestou sú kompletné frázy pre reálne situácie užitočnejšie ako izolovaná slovná zásoba, ktorú si musíte pod tlakom ešte zložiť — DailyMate je na to stavaný.",
-      "category": "education",
-      "category_label": "Vzdelávanie",
+      "category": "kids",
+      "category_label": "Deti a učenie",
       "purchase_model": "paid_upfront",
       "purchase_label": "Platené stiahnutie",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
       "device_surfaces": [
-        "widget",
         "apple_watch"
       ],
       "device_labels": [
-        "Widget",
         "Apple Watch"
       ],
       "badge_labels": [
-        "Vzdelávanie",
+        "Deti a učenie",
         "Platené stiahnutie",
-        "Widget",
         "Apple Watch",
         "App Store · 12,99 €"
       ],
@@ -527,34 +510,17 @@
       "purchase_label": "Zadarmo na začiatok · doživotné odomknutie",
       "one_time_option": true,
       "privacy_facts": [
-        "offline",
-        "no_account",
-        "no_tracking",
-        "private_or_on_device"
+        "offline"
       ],
       "privacy_labels": [
-        "Offline",
-        "Bez účtu",
-        "Bez sledovania",
-        "Súkromné / v zariadení"
+        "Offline"
       ],
-      "device_surfaces": [
-        "widget",
-        "apple_watch"
-      ],
-      "device_labels": [
-        "Widget",
-        "Apple Watch"
-      ],
+      "device_surfaces": [],
+      "device_labels": [],
       "badge_labels": [
         "Peniaze a cestovanie",
         "Zadarmo na začiatok · doživotné odomknutie",
         "Offline",
-        "Bez účtu",
-        "Bez sledovania",
-        "Súkromné / v zariadení",
-        "Widget",
-        "Apple Watch",
         "App Store · Zadarmo"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/gmoneylite.html",
@@ -593,32 +559,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Zadarmo na začiatok · doživotné odomknutie",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account",
-        "no_tracking",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "Bez účtu",
-        "Bez sledovania",
-        "Súkromné / v zariadení"
-      ],
-      "device_surfaces": [
-        "widget",
-        "apple_watch"
-      ],
-      "device_labels": [
-        "Widget",
-        "Apple Watch"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
       "badge_labels": [
         "Peniaze a cestovanie",
         "Zadarmo na začiatok · doživotné odomknutie",
-        "Bez účtu",
-        "Bez sledovania",
-        "Súkromné / v zariadení",
-        "Widget",
-        "Apple Watch",
         "App Store · Zadarmo"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/hourstaglite.html",
@@ -681,7 +628,7 @@
       "app_store_id": "6754218117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
       "app_store_url": "https://apps.apple.com/sk/app/id6754218117",
-      "app_store_cta_label": "Get HoursTag: Hodiny na nákup on the App Store",
+      "app_store_cta_label": "Stiahnuť HoursTag: Hodiny na nákup v App Store",
       "storefront_facts": {
         "price": "5.99",
         "currency": "EUR",
@@ -1614,24 +1561,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Zadarmo na začiatok · doživotné odomknutie",
       "one_time_option": true,
-      "privacy_facts": [
-        "offline",
-        "no_account",
-        "no_ads"
-      ],
-      "privacy_labels": [
-        "Offline",
-        "Bez účtu",
-        "Bez reklám"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Cestovanie",
         "Zadarmo na začiatok · doživotné odomknutie",
-        "Offline",
-        "Bez účtu",
-        "Bez reklám",
         "App Store · Zadarmo"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",

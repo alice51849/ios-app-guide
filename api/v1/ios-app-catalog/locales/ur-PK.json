@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-31",
-  "content_digest": "741556b580f83a270aa348b18ea5e42602cbe0a1c169fe9115da666dbf860cdb",
+  "date_modified": "2026-08-02",
+  "content_digest": "8f14ab5dd69dc7ba96582d9414c5670e0f832e1998ad3b3ee53a697c7a258fbb",
   "locale": "ur-PK",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -34,9 +34,9 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
-        "no_ads": true,
-        "no_tracking": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
         "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
@@ -94,7 +94,7 @@
       "app_store_id": "6792483140",
       "name": "Aim990 Plus",
       "summary": "یہ ایپ ان بالغ افراد کے لیے بنائی گئی ہے جو وقت کے دباؤ میں انگریزی سننے اور پڑھنے کی درستگی اور رفتار بہتر کرنا چاہتے ہیں۔ بے ترتیب سوالات دہرانے کے بجائے مختصر نشستیں، طویل فرضی امتحانات اور واضح کارکردگی کا جائزہ آپ کو بتاتا ہے کہ اگلی توجہ کہاں دینی ہے۔",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "انگریزی",
         "الفاظ",
@@ -116,7 +116,7 @@
       "purchase_model": "paid_upfront",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
+        "offline": false,
         "no_account": false,
         "no_ads": false,
         "no_tracking": false,
@@ -259,7 +259,7 @@
       "app_store_id": "6790418321",
       "name": "DailyMate: روزمرہ جملے",
       "summary": "الگ الگ الفاظ یاد ہوں تب بھی گفتگو کے وقت پورا جملہ نہیں ملتا۔ DailyMate میں 47 زبانوں کے 8,400 مکمل جملے ہیں جو روزمرہ زندگی میں واقعی کام آتے ہیں۔ ایک بار خریدنے پر پوری ایپ ملتی ہے؛ کوئی رکنیت نہیں۔",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "انگریزی سیکھیں",
         "تلفظ",
@@ -283,7 +283,7 @@
         "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
-        "widget": true,
+        "widget": false,
         "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/pk/app/id6790418321",
@@ -376,12 +376,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": true,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/pk/app/id6793436548",
       "guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/gmoneylite.html",
@@ -479,12 +479,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/pk/app/id6794039979",
       "guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/hourstaglite.html",
@@ -1150,7 +1150,7 @@
       "app_store_id": "6792850916",
       "name": "Mask My File",
       "summary": "مفید سیاق کھوئے بغیر محفوظ طریقے سے شیئر کریں۔ Mask My File فائل بھیجنے سے پہلے نجی تفصیلات ڈھونڈتا ہے، انہیں ہمیشہ کے لیے چھپاتا ہے، پھر تیار فائل دوبارہ کھول کر جانچتا ہے اور تب Private Ready دکھاتا ہے۔",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "سنسر",
         "پوشیدہ",
@@ -1614,9 +1614,9 @@
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
-        "no_account": true,
-        "no_ads": true,
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
         "widget": false,
@@ -1742,7 +1742,7 @@
       "app_store_id": "6790467886",
       "name": "WiFi Aid",
       "summary": "آزادانہ راستے، DNS، TCP، TLS، وقت اور استحکام کی جانچ سے کنکشن کا سب سے ممکنہ مسئلہ دریافت کریں۔ ایک بار ادائیگی — کوئی سبسکرپشن، اشتہار یا ٹریکنگ نہیں۔",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "وائی فائی جانچ",
         "انٹرنیٹ چیک",

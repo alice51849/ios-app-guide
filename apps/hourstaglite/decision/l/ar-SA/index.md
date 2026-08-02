@@ -1,29 +1,24 @@
 ---
-title: "HoursTag Lite — شاهد السعر الحقيقي للأشياء | iOS App"
+title: "best app to convert prices into work hours before buying"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ar-SA/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag Lite — شاهد السعر الحقيقي للأشياء | iOS App
+# best app to convert prices into work hours before buying
 
-HoursTag Lite - شاهد السعر الحقيقي للأشياء كل عملية شراء تكلف ساعات من حياتك. HoursTag Lite يحول الأسعار إلى وقت عمل - لذا أنفق بوضوح. اكتشف منظور قيمتك - التكلفة من وقتك: صافي قيمة كل ساعة عمل - نوع: احتياج - رغبة - اندفاع - نمط قيمتك - تحليل القيمة الكامل - ما تكلفة الهدف؟: شاهد العمل وراء الهدف - وتتبع تقدمك. - نسخ احتياطي واستعادة: يشمل الدخل، المصروفات، الأهداف والتفضيلات. - Widget - Apple Watch كل شيء يبقى على جهازك. لا حساب، لا تتبع. دفعة واحدة · استخدام مدى الحياة · بلا اشتراك قرارات وتعديلات بلا حدود أهداف وتقدم بلا حدود مشاركة وتحليلات ونسخ احتياطي
+HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription.
 
 - المال والسفر
 - بدء مجاني · فتح دائم
-- بدون حساب
-- بدون تتبع
-- خاص / على الجهاز
-- عنصر واجهة
-- Apple Watch
 - App Store · مجاني
 
-[احصل على HoursTag Lite من App Store](https://apps.apple.com/sa/app/id6794039979)
+[Get HoursTag Lite on the App Store →](https://apps.apple.com/sa/app/id6794039979)
 
-[اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/hourstaglite.html)
+[اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-app-to-convert-prices-into-work-hours-before-buying.html)
 
-> هذه مادة ينشرها Lumi Studio مباشرةً بصفته مطور جميع التطبيقات المدرجة.
+> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

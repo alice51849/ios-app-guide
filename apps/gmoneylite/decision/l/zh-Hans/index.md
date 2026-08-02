@@ -2,7 +2,7 @@
 title: "G+Money Lite — 旅行记账・预算・汇率 | iOS App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/zh-Hans/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,11 +16,6 @@ G+Money Lite — 聪明的旅行汇率记账 旅行记账，从此简单 用当�
 - 理财与出行
 - 免费开始使用 · 永久解锁
 - 离线
-- 无需账户
-- 无跟踪
-- 私密 / 设备本地
-- 小组件
-- Apple Watch
 - App Store · 免费
 
 [在 App Store 获取 G+Money Lite](https://apps.apple.com/cn/app/id6793436548)

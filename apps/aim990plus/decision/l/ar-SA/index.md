@@ -1,25 +1,24 @@
 ---
-title: "Aim990 Plus — تدريب الاستماع والقراءة | iOS App"
+title: "best offline English listening and reading exam trainer for iPhone"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/ar-SA/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# Aim990 Plus — تدريب الاستماع والقراءة | iOS App
+# best offline English listening and reading exam trainer for iPhone
 
-تدرّب على فهم الإنجليزية المسموعة والمقروءة في بيئة مصممة للبالغين الذين يريدون بناء الدقة والسرعة تحت ضغط الوقت. يجمع التطبيق بين جلسات قصيرة واضحة ومحاكاة أطول، لتعرف ما الذي يحتاج إلى مراجعة بدل تكرار الأسئلة عشوائيًا. ابدأ بإحماء من 8 أسئلة لتنشيط التركيز، ثم انتقل إلى مجموعة الضغط: 20 سؤالًا خلال 15 دقيقة. بعد الانتهاء، تقودك ميزة إعادة الأخطاء مباشرة إلى المواضع التي أخفقت فيها، حتى تراجع سبب الخطأ وتثبت الفهم قبل المحاولة التالية. يضم المحتوى 630 سؤالًا أصليًا، بواقع 90 سؤالًا في كل جزء من الأجزاء 1 إلى 7. يتضمن الجزء الأول 90 صورة مختلفة، لتتدرّب على ملاحظة التفاصيل وربط الوصف بالمشهد بدل حفظ نمط واحد. وتغطي الأنشطة مواقف متنوعة في الاستماع والقراءة مع تدرج عملي في السرعة والضغط. اختر ما يناسب وقتك من الاختبارات التجريبية المصغرة أو النصفية أو الكاملة. راقب أنماط الخطأ عبر تحليل نقاط الضعف، ودرّب الأذن بالاستماع والإملاء، واضبط سرعة التشغيل لتلتقط التفاصيل ثم اقترب تدريجيًا من الإيقاع الطبيعي. ويمكنك استخدام أصوات الجهاز المثبتة لديك للتدريب الصوتي دون إرسال النصوص إلى خدمة خارجية. تضم قائمة المفردات 150 كلمة منتقاة للمراجعة المركزة. سجّل الكلمات التي تحتاج إلى تثبيت، وارجع إلى التقدم لمعرفة ما أنجزته وما بقي عليك. تعرض صفحة الملف الشخصي ملخصًا محليًا لنشاطك، بينما تساعدك مؤشرات الأداء على اتخاذ قرار المراجعة التالية دون وعود بدرجة محددة. التطبيق مدفوع عند التنزيل وجميع وظائفه مشمولة من البداية. لا توجد مشتريات داخل التطبيق، ولا اشتراكات، ولا شاشة دفع، ولا إعلانات. لا تحتاج إلى إنشاء حساب أو تسجيل الدخول. يعمل المحتوى دون اتصال، وتبقى بيانات التقدم على جهازك؛ فلا توجد خوادم أو أدوات تتبع أو تحليلات تجمع نشاطك. إشعار العلامة التجارية: TOEIC علامة تجارية مملوكة لـ ETS. تطبيق Aim990 Plus مستقل وغير رسمي، ولا يرتبط بـ ETS ولا يحظى بتأييدها.
+Aim990 Plus — Build calm, accurate decisions under time with 630 original questions, focused pressure sets, mistake replay, mocks, dictation, and offline progress. Paid download · Pay once · No subscription.
 
-- التعليم
+- الأطفال والتعلم
 - تحميل مدفوع
-- دون اتصال
 - App Store · SAR 24.99
 
-[احصل على Aim990 Plus من App Store](https://apps.apple.com/sa/app/id6792483140)
+[Get Aim990 Plus on the App Store →](https://apps.apple.com/sa/app/id6792483140)
 
-[اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/aim990plus.html)
+[اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html)
 
-> هذه مادة ينشرها Lumi Studio مباشرةً بصفته مطور جميع التطبيقات المدرجة.
+> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

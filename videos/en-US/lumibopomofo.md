@@ -2,7 +2,7 @@
 title: "best bopomofo app for kids to learn zhuyin on iphone"
 lang: "en-US"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/en-US/lumibopomofo.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 video_url: "https://files.catbox.moe/zx7mup.mp4"
 duration: "PT16S"
 app_store_id: "6773017109"

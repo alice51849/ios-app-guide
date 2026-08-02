@@ -1,24 +1,24 @@
 ---
-title: "Mochi DoneStamp: Terakhir — Ingat kapan Anda melakukannya | iOS App"
+title: "best last time tracker app for household maintenance without a subscription"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/id/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# Mochi DoneStamp: Terakhir — Ingat kapan Anda melakukannya | iOS App
+# best last time tracker app for household maintenance without a subscription
 
-Kapan terakhir Anda mengganti seprai, menyiram tanaman, menelepon keluarga, mencadangkan foto, atau mengganti filter? Mochi DoneStamp adalah pengingat kejadian hidup, bukan daftar tugas biasa. Setelah selesai, satu ketukan menyimpan waktu tepatnya dalam riwayat yang tenang. Tambahkan ritme perkiraan atau tepat bila perlu. Jadwal berikutnya selalu dihitung ulang dari waktu Anda benar-benar menyelesaikannya. • Catat sekali ketuk dan Urungkan • Tambah, ubah, atau hapus waktu lampau • Ritme fleksibel dan tepat dari menit hingga tahun • Pengingat lokal dengan Selesai dan Tunda • Widget interaktif Layar Utama dan Layar Terkunci • Siri, Pintasan, catatan dan foto opsional • Statistik jeda, cadangan lengkap, dan ekspor JSON • Mode Gelap, iPad, VoiceOver, dan Dynamic Type Gratis mencakup satu kejadian aktif dengan riwayat tanpa batas. Beli Lifetime Pro sekali untuk membuka kejadian tanpa batas dan semua fitur. Tanpa akun, iklan, analitik, atau pelacakan. Data utama tetap di perangkat. Tidak ada langganan.
+For chores and upkeep that do not belong on a rigid calendar, a useful tracker remembers when you actually finished and measures the next interval from that moment — Mochi DoneStamp is built for this.
 
 - Gaya hidup
 - Gratis untuk mulai · buka kunci permanen
 - App Store · Gratis
 
-[Dapatkan Mochi DoneStamp: Terakhir di App Store](https://apps.apple.com/id/app/id6790800323)
+[Get Mochi DoneStamp on the App Store →](https://apps.apple.com/id/app/id6790800323)
 
-[Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/mochidonestamp.html)
+[Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html)
 
-> Materi ini diterbitkan langsung oleh Lumi Studio, pengembang semua aplikasi yang tercantum.
+> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

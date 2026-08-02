@@ -2,7 +2,7 @@
 title: "legjobb egyszerű utiterv-tervező alkalmazás egy közelgő utazáshoz iPhone-ra"
 lang: "hu"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/hu/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,6 @@ Ha egy közelgő utazást tervezel, egy nyugodt idővonal az adott útra hasznos
 
 - Utazás
 - Ingyenes kezdés · életre szóló feloldás
-- Offline
-- Nincs fiók
-- Nincs reklám
 - App Store · Ingyenes
 
 [Szerezd be a TripBee Lite-ot az App Store-ból →](https://apps.apple.com/hu/app/id6791299610)

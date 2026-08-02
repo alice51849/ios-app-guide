@@ -2,7 +2,7 @@
 title: "HoursTag Lite — Prawdziwa cena rzeczy | iOS App"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/pl/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,11 +15,6 @@ HoursTag Lite - Prawdziwa cena rzeczy Każdy zakup kosztuje godziny Twojego życ
 
 - Finanse i podróże
 - Darmowe na start · dożywotni dostęp
-- Bez konta
-- Bez śledzenia
-- Prywatne / na urządzeniu
-- Widżet
-- Apple Watch
 - App Store · Bezpłatnie
 
 [Pobierz HoursTag Lite z App Store](https://apps.apple.com/pl/app/id6794039979)

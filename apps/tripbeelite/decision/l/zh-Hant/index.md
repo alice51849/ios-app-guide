@@ -2,7 +2,7 @@
 title: "適合即將出行的最佳簡易行程規劃 iPhone 應用程式"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/zh-Hant/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,6 @@ publisher: "Lumi Studio"
 
 - 旅行
 - 免費開始 · 永久解鎖
-- 離線使用
-- 免帳號
-- 無廣告
 - App Store · 免費
 
 [於 App Store 取得 TripBee Lite →](https://apps.apple.com/tw/app/id6791299610)

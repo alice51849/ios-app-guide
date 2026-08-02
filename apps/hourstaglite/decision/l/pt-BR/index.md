@@ -1,29 +1,24 @@
 ---
-title: "HoursTag Lite — O preço real das coisas | iOS App"
+title: "best app to convert prices into work hours before buying"
 lang: "pt-BR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/pt-BR/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag Lite — O preço real das coisas | iOS App
+# best app to convert prices into work hours before buying
 
-HoursTag Lite - O preço real das coisas Cada compra custa horas da sua vida. O HoursTag Lite converte preços em tempo de trabalho, para você gastar com clareza. Conheça seu prisma de valor - Custo em tempo: Seu valor líquido por hora trabalhada - Tipo: Necessidade - Desejo - Impulso - Seu padrão de valor - Análise completa de valor - Quanto custa uma meta?: Veja o trabalho por trás de uma meta e acompanhe seu progresso. - Backup e restauração: Inclui renda, gastos, metas e preferências. - Widget - Apple Watch Tudo fica no seu aparelho. Sem conta, sem rastreamento. Pagamento único · Acesso vitalício · Sem assinatura Escolhas e edições ilimitadas Metas e progresso ilimitados Compartilhamento, análises e backups
+HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription.
 
 - Dinheiro e viagem
 - Grátis para começar · desbloqueio permanente
-- Sem conta
-- Sem rastreamento
-- Privado / no dispositivo
-- Widget
-- Apple Watch
 - App Store · Grátis
 
-[Baixe HoursTag Lite na App Store](https://apps.apple.com/br/app/id6794039979)
+[Get HoursTag Lite on the App Store →](https://apps.apple.com/br/app/id6794039979)
 
-[Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-BR/hourstaglite.html)
+[Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-app-to-convert-prices-into-work-hours-before-buying.html)
 
-> Este conteúdo é publicado diretamente pela Lumi Studio, desenvolvedora de todos os apps apresentados.
+> Guia publicado pela Lumi Studio, desenvolvedora do app. Os nomes dos apps são marcas registradas de seus respectivos proprietários e são usados apenas para fins de identificação. Para decisões sobre documentos, saúde, escola e produtividade, verifique os requisitos oficiais correspondentes quando aplicável.

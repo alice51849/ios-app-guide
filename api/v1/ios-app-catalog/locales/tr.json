@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-31",
-  "content_digest": "741556b580f83a270aa348b18ea5e42602cbe0a1c169fe9115da666dbf860cdb",
+  "date_modified": "2026-08-02",
+  "content_digest": "8f14ab5dd69dc7ba96582d9414c5670e0f832e1998ad3b3ee53a697c7a258fbb",
   "locale": "tr",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -32,9 +32,9 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
-        "no_ads": true,
-        "no_tracking": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
         "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
@@ -93,7 +93,7 @@
       "app_store_id": "6792483140",
       "name": "Aim990 Plus",
       "summary": "Aim990 Plus, sınırlı sürede İngilizce konuşmaları ve metinleri güvenle anlamak isteyen yetişkinler için hazırlanmış bir çalışma aracıdır. Yalnızca soru çözmek yerine dikkatinizi korumanıza, belirlenen tempoda karar vermenize ve her hatayı bir sonraki çalışmanın hedefli malzemesine dönüştürmenize yardımcı olur.",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "ingilizce",
         "dinleme",
@@ -113,7 +113,7 @@
       "purchase_model": "paid_upfront",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
+        "offline": false,
         "no_account": false,
         "no_ads": false,
         "no_tracking": false,
@@ -250,7 +250,7 @@
       "app_store_id": "6790418321",
       "name": "DailyMate: Günlük Cümleler",
       "summary": "Tek tek kelime ezberlemeyi bırakın. DailyMate; seyahat, iş, restoran, alışveriş, sağlık ve sosyal yaşamda doğal biçimde kullanılan 8.400 tam cümle sunar. Bir kez ödeme yaparsınız, abonelik yoktur.",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "İngilizce",
         "konuşma",
@@ -271,7 +271,7 @@
         "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
-        "widget": true,
+        "widget": false,
         "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/tr/app/id6790418321",
@@ -363,12 +363,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": true,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/tr/app/id6793436548",
       "guide_url": "https://alice51849.github.io/ios-app-guide/tr/gmoneylite.html",
@@ -462,12 +462,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/tr/app/id6794039979",
       "guide_url": "https://alice51849.github.io/ios-app-guide/tr/hourstaglite.html",
@@ -1139,7 +1139,7 @@
       "app_store_id": "6792850916",
       "name": "Mask My File",
       "summary": "Yararlı bağlamı yitirmeden güvenle paylaş. Mask My File, sen bir dosyayı göndermeden önce özel ayrıntıları bulur, yalnızca senin seçtiklerini kalıcı olarak gizler, ardından Private Ready'i göstermeden önce yeni kopyayı yeniden açıp doğrular.",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "sansür",
         "karartma",
@@ -1593,9 +1593,9 @@
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
-        "no_account": true,
-        "no_ads": true,
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
         "widget": false,
@@ -1723,7 +1723,7 @@
       "app_store_id": "6790467886",
       "name": "WiFi Aid",
       "summary": "Bağımsız yol, DNS, TCP, TLS, süre ve kararlılık kontrolleriyle en olası nedeni bulun. Baştan tek ödeme; abonelik, reklam ve takip yok.",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "internet arızası",
         "modem",

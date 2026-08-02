@@ -2,7 +2,7 @@
 title: "HoursTag: Ore pentru cumpărat — Buget, cheltuieli & economii | iOS App"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/ro/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ Cât costă cu adevărat? Nu în lei, ci în ore din viața ta.
 - Privat / pe dispozitiv
 - App Store · 29,99 lei
 
-[Get HoursTag: Ore pentru cumpărat on the App Store](https://apps.apple.com/ro/app/id6754218117)
+[Descarcă HoursTag: Ore pentru cumpărat din App Store](https://apps.apple.com/ro/app/id6754218117)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/hourstag.html)
 

@@ -2,7 +2,7 @@
 title: "G+Money Lite — Витрати, бюджет і валюта | iOS App"
 lang: "uk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/uk/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,11 +16,6 @@ G+Money Lite — Розумний конвертер валют для подо�
 - Гроші та подорожі
 - Безкоштовно для початку · довічне розблокування
 - Офлайн
-- Без облікового запису
-- Без відстеження
-- Приватно / на пристрої
-- Віджет
-- Apple Watch
 - App Store · Безкоштовно
 
 [Завантажте G+Money Lite з App Store](https://apps.apple.com/ua/app/id6793436548)

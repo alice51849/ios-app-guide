@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-07-31",
-  "content_digest": "741556b580f83a270aa348b18ea5e42602cbe0a1c169fe9115da666dbf860cdb",
+  "date_modified": "2026-08-02",
+  "content_digest": "8f14ab5dd69dc7ba96582d9414c5670e0f832e1998ad3b3ee53a697c7a258fbb",
   "locale": "hr",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -30,9 +30,9 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
-        "no_ads": true,
-        "no_tracking": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
         "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
@@ -92,7 +92,7 @@
       "app_store_id": "6792483140",
       "name": "Aim990 Plus",
       "summary": "Razumjeti engleski nije isto što i ostati precizan dok vrijeme istječe. Aim990 Plus intenzivan je trening slušanja i čitanja za odrasle, osmišljen za iPhone i iPad. Glavna sesija ima jasan ritam: počinje s 8 pitanja za zagrijavanje, nastavlja se blokom Pressure Set s 20 pitanja u 15 minuta, a završava načinom Mistake Replay, u kojem se vraćate upravo na odgovore koji su vas usporili ili zbunili.",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "ispit",
         "slušanje",
@@ -110,7 +110,7 @@
       "purchase_model": "paid_upfront",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
+        "offline": false,
         "no_account": false,
         "no_ads": false,
         "no_tracking": false,
@@ -243,7 +243,7 @@
       "app_store_id": "6790418321",
       "name": "DailyMate: Rečenice za život",
       "summary": "Nemoj učiti napamet izdvojene riječi. DailyMate donosi 8.400 cjelovitih rečenica koje prirodno koristiš na putovanju, poslu, u restoranu, kupnji, razgovorima o zdravlju i druženju. Plaćaš jednom, bez pretplate.",
-      "category": "education",
+      "category": "kids",
       "search_terms": [
         "engleski",
         "razgovor",
@@ -265,7 +265,7 @@
         "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
-        "widget": true,
+        "widget": false,
         "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/hr/app/id6790418321",
@@ -353,12 +353,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": true,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/hr/app/id6793436548",
       "guide_url": "https://alice51849.github.io/ios-app-guide/hr/gmoneylite.html",
@@ -447,12 +447,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/hr/app/id6794039979",
       "guide_url": "https://alice51849.github.io/ios-app-guide/hr/hourstaglite.html",
@@ -1108,7 +1108,7 @@
       "app_store_id": "6792850916",
       "name": "Mask My File",
       "summary": "Dijelite bez brige i zadržite koristan kontekst. Mask My File pronalazi privatne podatke prije nego što pošaljete datoteku, trajno prekriva ono što odaberete, a zatim ponovno otvara i provjerava novu kopiju prije nego što prikaže Private Ready.",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "anonimizacija",
         "cenzura",
@@ -1562,9 +1562,9 @@
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
       "capabilities": {
-        "offline": true,
-        "no_account": true,
-        "no_ads": true,
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
         "widget": false,
@@ -1691,7 +1691,7 @@
       "app_store_id": "6790467886",
       "name": "WiFi Aid",
       "summary": "Pronađite najvjerojatniji uzrok neovisnim provjerama putanja, DNS-a, TCP-a, TLS-a, vremena i stabilnosti. Jedno plaćanje unaprijed, bez pretplate, oglasa i praćenja.",
-      "category": "utility",
+      "category": "photo-utility",
       "search_terms": [
         "prekid interneta",
         "usmjerivač",

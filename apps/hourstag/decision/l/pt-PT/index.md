@@ -1,17 +1,17 @@
 ---
-title: "HoursTag: Horas para comprar — Poupança, gastos e orçamento | iOS App"
+title: "best app to track where my money goes and save more"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/pt-PT/index.html"
-modified: "2026-07-31"
+modified: "2026-08-02"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: Horas para comprar — Poupança, gastos e orçamento | iOS App
+# best app to track where my money goes and save more
 
-Quanto custa realmente? Não apenas em euros, mas em horas da sua vida.
+If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something — HoursTag is built for this.
 
 - Dinheiro e viagens
 - Descarregamento pago
@@ -19,8 +19,8 @@ Quanto custa realmente? Não apenas em euros, mas em horas da sua vida.
 - Privado / no dispositivo
 - App Store · 5,99 €
 
-[Baixe HoursTag: Horas para comprar na App Store](https://apps.apple.com/pt/app/id6754218117)
+[Get HoursTag on the App Store →](https://apps.apple.com/pt/app/id6754218117)
 
-[Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/hourstag.html)
+[Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-app-to-track-where-my-money-goes-and-save-more.html)
 
-> Este conteúdo é publicado diretamente pela Lumi Studio, que desenvolve todas as apps apresentadas.
+> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

@@ -319,6 +319,13 @@ CANDIDATE_POOL = [
     ("khw","کھوار / Khowar (Chitral, Pakistan)","Rs 500","Rs 1,500","دستاویز","← App Guide واپس","App Store ار ڈاؤن لوڈ →","سوال","جائزہ:","✅ جم","⚠️ جم نو","کا بچے","نو","ڈویلپر و نوٹ۔"),
     ("bcc","جنوبی بلوچی / Southern Balochi (Makran)","Rs 500","Rs 1,500","دستاویز","← واتر App Guide","App Store ءَ چہ ڈاؤن لوڈ →","سوال","جائزہ:","✅ شر","⚠️ شر نہ اِنت","کئی ءِ واستہ","نہ اِنت","ڈویلپر ءِ ہبر۔"),
     ("bft","بلتی / Balti (Pakistan)","Rs 500","Rs 1,500","دستاویز","← App Guide واپس","App Store نس ڈاؤن لوڈ →","سوال","جائزہ:","✅ لیاقمو","⚠️ ٹھیک مید","سو لا","مید","ڈویلپر نوٹ۔"),
+    # Group: Nepal/India hills + Iran residual (round 166+)
+    ("thq","कठरिया थारू / Kathoriya Tharu (Nepal)","NPR 130","NPR 390","kagat","← App Guide ma pheri","App Store bata download →","Prasna","Samiksha:","✅ Ramro","⚠️ Ramro nai","Kasko lagi","Nai","Developer ko kura."),
+    ("the","चितवनिया थारू / Chitwania Tharu (Nepal)","NPR 130","NPR 390","kagat","← App Guide ma pheri","App Store bata download →","Prasna","Samiksha:","✅ Ramro","⚠️ Ramro nai","Kasko lagi","Nai","Developer ko kura."),
+    ("kfr","कच्छी / Kachhi (Gujarat, India)","₹99","₹299","kagad","← App Guide te pachha","App Store thi download →","Sawal","Samiksha:","✅ Saru","⚠️ Saru nai","Kena vaste","Nai","Developer ni vaat."),
+    ("gvr","गुरुङ / Gurung (Nepal)","NPR 130","NPR 390","kagat","← App Guide ma pheri","App Store bata download →","Prasna","Samiksha:","✅ Chhyaba","⚠️ Chhyaba are","Su lai","Are","Developer ko kura."),
+    ("lif","लिम्बू / Limbu (Nepal/India)","NPR 130","NPR 390","kagat","← App Guide ma pheri","App Store bata download →","Prasna","Samiksha:","✅ Nuba","⚠️ Nuba men","Hatlai","Men","Developer ko kura."),
+    ("sck","सादरी / Sadri-Oraon (Jharkhand, India)","₹99","₹299","kagaj","← App Guide me wapas","App Store se download →","Sawal","Samiksha:","✅ Badhiya","⚠️ Thik nai","Kekar lagin","Nai","Developer ke baat."),
 ]
 
 B="body{font-family:system-ui,sans-serif;max-width:720px;margin:2rem auto;padding:0 1rem;color:#222}h1{font-size:1.5rem;line-height:1.8}h2{font-size:1.1rem;margin-top:2rem}.item{border:1px solid #e5e7eb;border-radius:10px;padding:1rem;margin:.8rem 0}.item h3{margin:0 0 .3rem;font-size:1rem}.dl{display:inline-block;background:#007aff;color:#fff;padding:.55rem 1.2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:.9rem;margin:.5rem 0}.faq{border:1px solid #e8e8e8;border-radius:6px;padding:.75rem 1rem;margin:.75rem 0}.faq summary{cursor:pointer;font-size:.95rem}.faq p{margin:.5rem 0 0;color:#444;font-size:.9rem}"

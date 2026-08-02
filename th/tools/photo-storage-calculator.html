@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>เครื่องมือวางแผนล้างพื้นที่รูปภาพ iPhone แบบส่วนตัว | ไม่อัปโหลด</title>
+<meta name="description" content="คำนวณเฉพาะช่องว่างพื้นที่ว่างจากตัวเลขที่คุณกรอก แล้ววางแผนตรวจรูปภาพแบบย้อนกลับได้ โดยไม่อัปโหลด ไม่สแกน และไม่ประมาณคลังภาพ">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/th/tools/photo-storage-calculator.html">
+<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/photo-storage-calculator.html">
+<link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/es-ES/tools/photo-storage-calculator.html">
+<link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/tools/photo-storage-calculator.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tools/photo-storage-calculator.html">
+<link rel="alternate" hreflang="fr-FR" href="https://alice51849.github.io/ios-app-guide/fr-FR/tools/photo-storage-calculator.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/photo-storage-calculator.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/tools/photo-storage-calculator.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/photo-storage-calculator.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/tools/photo-storage-calculator.html">
+<link rel="alternate" hreflang="vi" href="https://alice51849.github.io/ios-app-guide/vi/tools/photo-storage-calculator.html">
+<link rel="alternate" hreflang="th" href="https://alice51849.github.io/ios-app-guide/th/tools/photo-storage-calculator.html">
+<link rel="alternate" hreflang="id" href="https://alice51849.github.io/ios-app-guide/id/tools/photo-storage-calculator.html">
+<link rel="alternate" hreflang="tr" href="https://alice51849.github.io/ios-app-guide/tr/tools/photo-storage-calculator.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/photo-storage-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="เครื่องมือวางแผนล้างพื้นที่รูปภาพ iPhone แบบส่วนตัว">
+<meta property="og:description" content="คำนวณเฉพาะช่องว่างพื้นที่ว่างจากตัวเลขที่คุณกรอก แล้ววางแผนตรวจรูปภาพแบบย้อนกลับได้ โดยไม่อัปโหลด ไม่สแกน และไม่ประมาณคลังภาพ">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/th/tools/photo-storage-calculator.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#18343a;--muted:#607479;--line:#d9e6e5;--paper:#fff;--bg:#eef7f5;--deep:#176c65;--mint:#4aa89a;--soft:#e6f5f1;--warn:#fff6da;--shadow:0 22px 60px rgba(23,76,72,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,#fff 0,var(--bg) 55%,#e0efec 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:#176c65}.wrap{width:min(1120px,calc(100% - 30px));margin:auto}.top{position:sticky;top:0;z-index:8;background:#fffffff2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}.links{display:flex;gap:15px;overflow-x:auto}
+.hero{padding:64px 0 30px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--deep);white-space:nowrap}.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.04;letter-spacing:-.035em;margin:.3em 0 .22em;white-space:nowrap;overflow-x:auto}.lead{font-size:clamp(17px,2.2vw,21px);color:var(--muted);margin:0;white-space:nowrap;overflow-x:auto}.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.planner,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}.planner{padding:clamp(20px,4vw,36px);margin:16px auto 30px}.planner h2,.card h2,.app-card h2{font-size:clamp(24px,3.6vw,34px);line-height:1.14;margin:0;white-space:nowrap;overflow-x:auto}.intro{color:var(--muted);white-space:nowrap;overflow-x:auto}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px}.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--deep);margin-bottom:6px;white-space:nowrap;overflow-x:auto}select,input,button{font:inherit}select,input[type=number]{width:100%;min-height:46px;border:1px solid #c7d9d6;border-radius:13px;background:#fff;color:var(--ink);padding:9px 11px}.toggle{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:14px;padding:11px 13px;background:#fff;font-weight:760;white-space:nowrap;overflow-x:auto}.toggle input{inline-size:20px;block-size:20px;flex:0 0 auto}.button{border:0;border-radius:999px;background:linear-gradient(135deg,var(--deep),var(--mint));color:#fff;text-decoration:none;font-weight:850;padding:11px 17px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(23,108,101,.2)}
+.results{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:11px;margin-top:22px}.result{background:var(--soft);border:1px solid #c4e0da;border-radius:17px;padding:14px;min-width:0}.result strong,.result span{display:block;white-space:nowrap;overflow-x:auto}.result strong{font-size:12px;color:#39736d;text-transform:uppercase;letter-spacing:.04em}.result span{font-size:15px;color:#28534f;font-weight:760;margin-top:5px}.note{background:var(--warn);border:1px solid #ead9a7;border-radius:16px;padding:13px 15px;margin:14px 0 0;white-space:nowrap;overflow-x:auto}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:30px}.card,.app-card{padding:clamp(20px,3.5vw,30px)}.card.wide{grid-column:1/-1}.card p,.card li,.app-card p,.faq details p,.faq summary{white-space:nowrap;overflow-x:auto}.card ul,.card ol{padding-left:22px}.card li{margin:8px 0}.source-list a{overflow-wrap:anywhere}.app-card{margin:0 auto 38px;background:linear-gradient(135deg,#fbfffe,#e3f3ef)}.app-card .button{display:inline-flex;margin-top:5px}.faq{margin-bottom:30px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+.footer{background:var(--deep);color:#effcf9;text-align:center;padding:27px 0;white-space:nowrap;overflow-x:auto}
+@media(max-width:960px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.controls,.results{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1120px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{.top,.hero,.controls,.button,.app-card,.footer{display:none!important}body{background:#fff}.planner,.card{box-shadow:none;break-inside:avoid}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"เครื่องมือวางแผนล้างพื้นที่รูปภาพ iPhone แบบส่วนตัว","description":"คำนวณเฉพาะช่องว่างพื้นที่ว่างจากตัวเลขที่คุณกรอก แล้ววางแผนตรวจรูปภาพแบบย้อนกลับได้ โดยไม่อัปโหลด ไม่สแกน และไม่ประมาณคลังภาพ","url":"https://alice51849.github.io/ios-app-guide/th/tools/photo-storage-calculator.html","inLanguage":"th","datePublished":"2026-07-16","dateModified":"2026-07-16","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["คำนวณช่องว่างพื้นที่ที่ทราบ","ไม่มีรูป ไฟล์ หรือเมทาดาทา","ไม่เข้าถึง iCloud หรืออุปกรณ์","ไม่ลบหรือจัดประเภท","ไม่ทำนายพื้นที่ที่กู้คืนได้"],"citation":["https://support.apple.com/en-us/108429","https://support.apple.com/guide/iphone/sync-photos-videos-icloud-iph961b96c4d/ios","https://support.apple.com/guide/iphone/merge-duplicate-photos-and-videos-iph1978d9c23/ios","https://support.apple.com/guide/iphone/delete-or-hide-photos-and-videos-iphb4defbde9/ios"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"th","mainEntity":[{"@type":"Question","name":"หน้านี้สแกนคลังรูปของฉันไหม?","acceptedAnswer":{"@type":"Answer","text":"ไม่ มันรับเฉพาะตัวเลขพื้นที่และสถานะที่คุณกรอก"}},{"@type":"Question","name":"ช่องว่างเท่ากับพื้นที่ที่ฉันกู้คืนได้ไหม?","acceptedAnswer":{"@type":"Answer","text":"ไม่ มันคือพื้นที่ว่างเป้าหมายลบปัจจุบันเท่านั้น ไม่ใช่การประมาณสื่อที่ลบได้"}},{"@type":"Question","name":"รูปภาพ iCloud เป็นข้อมูลสำรองอิสระไหม?","acceptedAnswer":{"@type":"Answer","text":"เครื่องมือนี้ไม่ถือว่าการซิงก์อย่างเดียวเป็นอิสระ เพราะการเปลี่ยนแปลงและการลบกระจายไปทุกอุปกรณ์ได้"}},{"@type":"Question","name":"'เพิ่งลบ' คืนพื้นที่ทันทีไหม?","acceptedAnswer":{"@type":"Answer","text":"อย่าสมมติเช่นนั้น Apple ระบุช่วงกู้คืน 30 วัน วัดพื้นที่หลังการเปลี่ยนแปลงที่ตรวจแล้ว"}}]}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/th/index.html">iOS App Guide</a><nav class="links"><a href="https://alice51849.github.io/ios-app-guide/th/tools/index.html">เครื่องมือฟรี</a><a href="https://alice51849.github.io/ios-app-guide/tools/photo-storage-calculator.html">English</a></nav></div></header>
+<main>
+<section class="hero wrap"><div class="eyebrow">ฟรี · ไม่เข้าถึงรูปภาพ · ไม่ประมาณพื้นที่คืน</div><h1>เครื่องมือวางแผนล้างพื้นที่รูปภาพ iPhone แบบส่วนตัว</h1><p class="lead">วัดช่องว่างระหว่างพื้นที่ว่างปัจจุบันกับเป้าหมาย หน้านี้ไม่เดาขนาดไฟล์เฉลี่ย อัตราภาพซ้ำ หรือปริมาณที่การล้างจะคืนมา</p><div class="badges"><span class="badge">ไม่มีรูป ไฟล์ หรือเมทาดาทา</span><span class="badge">ไม่เข้าถึง iCloud หรืออุปกรณ์</span><span class="badge">ไม่ลบหรือจัดประเภท</span><span class="badge">ไม่ทำนายพื้นที่ที่กู้คืนได้</span></div></section>
+<section class="planner wrap"><h2>คำนวณช่องว่างพื้นที่ที่ทราบ</h2><p class="intro">คัดลอกตัวเลขที่เห็นได้ในการตั้งค่า พื้นที่ของรูปภาพถูกรายงานแยก และไม่ถูกถือว่าเป็นสิ่งที่ลบได้หรือกู้คืนได้</p>
+<form id="storage-planner"><div class="controls">
+<div class="field"><label for="current-free">พื้นที่ว่างปัจจุบัน (GB)</label><input id="current-free" type="number" min="0" max="2048" step="0.1" value="0" required></div>
+<div class="field"><label for="target-free">พื้นที่ว่างเป้าหมาย (GB)</label><input id="target-free" type="number" min="0" max="2048" step="0.1" value="0" required></div>
+<div class="field"><label for="photos-storage">พื้นที่รูปภาพที่ iPhone แสดง (GB)</label><input id="photos-storage" type="number" min="0" max="2048" step="0.1" value="0" required></div>
+<div class="field"><label for="icloud-status">สถานะรูปภาพ iCloud</label><select id="icloud-status"><option value="unknown">ยังไม่ได้ตรวจ</option><option value="on-synced">เปิด — ซิงก์ดูเหมือนเสร็จ</option><option value="on-syncing-or-paused">เปิด — กำลังซิงก์ หยุดชั่วคราว หรือมีคำเตือน</option><option value="off">ปิด</option></select></div>
+<div class="field"><label for="priority">พื้นที่ตรวจอันดับแรก</label><select id="priority"><option value="general">ตรวจพื้นที่ทั่วไป</option><option value="duplicates">คอลเลกชันรายการซ้ำของ Apple</option><option value="large-videos">วิดีโอขนาดใหญ่</option><option value="screenshots">ภาพหน้าจอ</option></select></div>
+<label class="toggle"><input id="copy-verified" type="checkbox">ฉันยืนยันสำเนาอิสระของต้นฉบับที่ทดแทนไม่ได้แล้ว</label>
+<label class="toggle"><input id="deleted-reviewed" type="checkbox">ฉันตรวจ &#x27;เพิ่งลบ&#x27; แล้ว</label>
+</div><p><button class="button" type="submit">อัปเดตแผนส่วนตัว</button></p></form>
+<div class="results"><div class="result"><strong>ช่องว่างพื้นที่ว่างที่ยังขาด</strong><span id="result-gap"></span></div><div class="result"><strong>พื้นที่ว่างปัจจุบัน</strong><span id="result-current"></span></div><div class="result"><strong>พื้นที่ว่างเป้าหมาย</strong><span id="result-target"></span></div><div class="result"><strong>พื้นที่รูปภาพที่รายงาน</strong><span id="result-photos"></span></div><div class="result"><strong>สถานะเป้าหมาย</strong><span id="result-status"></span></div></div>
+<p class="note">สูตร: max(0, GB ว่างเป้าหมาย − GB ว่างปัจจุบัน) ใช้หน่วย GB เดียวกับที่กรอก ผลลัพธ์ไม่ใช่การทำนายว่ารูปภาพหรือ PicClear จะคืนพื้นที่ได้เท่าไร</p><p class="note">พื้นที่รูปภาพที่รายงานเป็นบริบทเท่านั้น บางรายการอาจสำคัญ ซิงก์แล้ว ถูกปรับให้เหมาะสม แชร์อยู่ แก้ไขแล้ว หรือแสดงต่างออกไปบนอุปกรณ์</p><p class="note"><strong>แผนตรวจแบบย้อนกลับได้:</strong> <span id="result-plan"></span></p></section>
+<section class="wrap grid"><article class="card"><h2>ลำดับการล้างที่ปลอดภัยก่อน</h2><ol><li>ยืนยันพื้นที่ว่างปัจจุบันและพื้นที่รูปภาพใน การตั้งค่า &gt; ทั่วไป &gt; พื้นที่จัดเก็บ iPhone</li><li>ยืนยันสำเนาอิสระที่เปิดได้ของต้นฉบับที่ทดแทนไม่ได้ก่อนลบถาวร</li><li>ตรวจสถานะซิงก์รูปภาพ iCloud และจำไว้ว่าการเปลี่ยนแปลงกระจายไปทุกอุปกรณ์ได้</li><li>ตรวจทีละหมวดเป็นชุดเล็ก อย่าใช้หมวดหมู่เป็นข้อพิสูจน์ว่ารายการทิ้งได้</li><li>ตรวจ &#x27;เพิ่งลบ&#x27; และพื้นที่อุปกรณ์อีกครั้งก่อนตัดสินใจชุดถัดไป</li></ol></article><article class="card"><h2>สิ่งที่เครื่องมือนี้ไม่มีทางรู้</h2><p>มันอ่านคลังรูปภาพ พื้นที่ iCloud อัลบั้ม ไฟล์ เมทาดาทา รายการโปรด รายการซ้ำ ความเบลอ ขนาดวิดีโอ หรือผลการลบไม่ได้ มันไม่เคยระบุว่าสิ่งใดปลอดภัยที่จะลบ และทำนายพื้นที่ที่กู้คืนได้ไม่ได้</p></article><article class="card wide"><h2>ขั้นตอนอย่างเป็นทางการของ Apple ก่อนใช้ตัวล้างเสริมใด ๆ</h2><p>Apple อธิบายพื้นที่จัดเก็บ iPhone การซิงก์และปรับให้เหมาะสมของรูปภาพ iCloud คอลเลกชันรายการซ้ำ และช่วง 30 วันของ &#x27;เพิ่งลบ&#x27; โปรดตรวจคำแนะนำปัจจุบันของ iOS รุ่นที่ใช้</p><ul class="source-list"><li><a href="https://support.apple.com/en-us/108429" rel="noopener">Apple: ตรวจพื้นที่จัดเก็บบน iPhone และ iPad</a></li><li><a href="https://support.apple.com/guide/iphone/sync-photos-videos-icloud-iph961b96c4d/ios" rel="noopener">Apple: สำรองและซิงก์รูปภาพวิดีโอด้วย iCloud</a></li><li><a href="https://support.apple.com/guide/iphone/merge-duplicate-photos-and-videos-iph1978d9c23/ios" rel="noopener">Apple: รวมรูปและวิดีโอที่ซ้ำบน iPhone</a></li><li><a href="https://support.apple.com/guide/iphone/delete-or-hide-photos-and-videos-iphb4defbde9/ios" rel="noopener">Apple: ลบ กู้คืน หรือลบรูปและวิดีโอถาวร</a></li></ul><p><a href="https://developer.chrome.com/docs/ai/webmcp/imperative-api" rel="noopener">ตัวอย่าง API เชิงคำสั่ง Chrome WebMCP (อาจเปลี่ยนแปลง)</a></p></article></section>
+<section class="wrap card faq"><h2>คำถามเรื่องการล้างพื้นที่รูปภาพ</h2><details><summary>หน้านี้สแกนคลังรูปของฉันไหม?</summary><p>ไม่ มันรับเฉพาะตัวเลขพื้นที่และสถานะที่คุณกรอก</p></details><details><summary>ช่องว่างเท่ากับพื้นที่ที่ฉันกู้คืนได้ไหม?</summary><p>ไม่ มันคือพื้นที่ว่างเป้าหมายลบปัจจุบันเท่านั้น ไม่ใช่การประมาณสื่อที่ลบได้</p></details><details><summary>รูปภาพ iCloud เป็นข้อมูลสำรองอิสระไหม?</summary><p>เครื่องมือนี้ไม่ถือว่าการซิงก์อย่างเดียวเป็นอิสระ เพราะการเปลี่ยนแปลงและการลบกระจายไปทุกอุปกรณ์ได้</p></details><details><summary>&#x27;เพิ่งลบ&#x27; คืนพื้นที่ทันทีไหม?</summary><p>อย่าสมมติเช่นนั้น Apple ระบุช่วงกู้คืน 30 วัน วัดพื้นที่หลังการเปลี่ยนแปลงที่ตรวจแล้ว</p></details></section>
+<section class="app-card wrap"><h2>อยากได้เวิร์กโฟลว์ตรวจคลังภาพเสริมบนอุปกรณ์ไหม?</h2><p>PicClear Pro เป็นตัวเลือกเสริม หน้า App Store ปัจจุบันระบุว่าการสแกนและพรีวิวฟรี ปลดล็อกครั้งเดียวเพื่อล้าง แอปจัดกลุ่มภาพซ้ำ ภาพคล้าย ภาพหน้าจอ ภาพเบลอ วิดีโอใหญ่ และภาพใหญ่บนอุปกรณ์เพื่อให้ตรวจ หน้ายังระบุว่าไม่ลบจนกว่าจะยืนยัน ปกป้องรายการโปรดได้ ทำงานออฟไลน์ ไม่มีบัญชี โฆษณา หรือการติดตาม โปรดตรวจหน้าปัจจุบันสำหรับฟีเจอร์ที่แน่นอน เครื่องมือนี้ใช้ได้โดยไม่ต้องมีแอป</p><a class="button" href="https://apps.apple.com/app/id6780223070" rel="nofollow noopener">ดู PicClear Pro บน App Store</a></section>
+</main>
+<footer class="footer"><div class="wrap">เป็นเพียงเลขคณิตส่วนตัว · ไม่เข้าถึงรูป · ไม่ลบ · ไม่ประมาณการกู้คืน</div></footer>
+<script type="application/json" id="storage-config">{"inputSchema":{"type":"object","properties":{"current_free_gb":{"type":"number","minimum":0,"maximum":2048,"description":"พื้นที่ว่างปัจจุบัน (GB)"},"target_free_gb":{"type":"number","minimum":0,"maximum":2048,"description":"พื้นที่ว่างเป้าหมาย (GB)"},"photos_storage_gb":{"type":"number","minimum":0,"maximum":2048,"description":"พื้นที่รูปภาพที่ iPhone แสดง (GB)"},"icloud_photos_status":{"type":"string","enum":["unknown","on-synced","on-syncing-or-paused","off"]},"independent_copy_verified":{"type":"boolean"},"recently_deleted_reviewed":{"type":"boolean"},"priority":{"type":"string","enum":["general","duplicates","large-videos","screenshots"]}},"required":["current_free_gb","target_free_gb","photos_storage_gb","icloud_photos_status","independent_copy_verified","recently_deleted_reviewed","priority"],"additionalProperties":false},"labels":{"icloud":{"unknown":"ยังไม่ได้ตรวจ","on-synced":"เปิด — ซิงก์ดูเหมือนเสร็จ","on-syncing-or-paused":"เปิด — กำลังซิงก์ หยุดชั่วคราว หรือมีคำเตือน","off":"ปิด"},"priority":{"general":"ตรวจพื้นที่ทั่วไป","duplicates":"คอลเลกชันรายการซ้ำของ Apple","large-videos":"วิดีโอขนาดใหญ่","screenshots":"ภาพหน้าจอ"}},"icloudSteps":{"unknown":"ตรวจสถานะซิงก์รูปภาพก่อนแก้ไขต้นฉบับที่ทดแทนไม่ได้ หากรูปภาพ iCloud เปิดอยู่ การแก้ไขและการลบอาจซิงก์ไปทุกอุปกรณ์","on-synced":"แม้รูปภาพ iCloud ดูซิงก์เสร็จ การเปลี่ยนแปลงและการลบยังกระจายไปทุกอุปกรณ์ ให้ถือการซิงก์เป็นการซิงก์ ไม่ใช่สำเนาอิสระเพียงชุดเดียว","on-syncing-or-paused":"แก้คำเตือนการซิงก์ หยุดชั่วคราว หรือพื้นที่ไม่พอของรูปภาพ iCloud ก่อนการเปลี่ยนแปลงเชิงทำลาย และยืนยันสิ่งที่ซิงก์แล้วจริง","off":"เมื่อรูปภาพ iCloud ปิดอยู่ ให้ยืนยันสำเนาอิสระอีกชุดของต้นฉบับที่ทดแทนไม่ได้ก่อนการเปลี่ยนแปลงเชิงทำลาย"},"prioritySteps":{"general":"เริ่มจากคำแนะนำใน การตั้งค่า > ทั่วไป > พื้นที่จัดเก็บ iPhone แล้วตรวจคอลเลกชันรายการซ้ำของ Apple วิดีโอ และภาพหน้าจอทีละกลุ่มเล็ก ๆ","duplicates":"เปิด รูปภาพ > คอลเลกชัน > ยูทิลิตี้ > รายการซ้ำ และตรวจการรวมทีละรายการ คอลเลกชันอาจไม่แสดงถ้ารูปภาพยังไม่พบรายการซ้ำ","large-videos":"ตรวจวิดีโอทีละรายการว่าสำคัญหรือไม่ และเปิดต้นฉบับอิสระได้หรือไม่ ความยาวหรือหมวดหมู่ไม่ได้พิสูจน์ว่าวิดีโอทิ้งได้","screenshots":"ตรวจคอลเลกชันภาพหน้าจอทีละกลุ่มเล็ก และเก็บสิ่งที่จำเป็นสำหรับหลักฐาน การยืนยันตัวตน การเดินทาง งาน หรือการช่วยการเข้าถึง"},"copyYes":"เปิดตัวอย่างจากสำเนาอิสระก่อนลบถาวร การซิงก์รูปภาพ iCloud อย่างเดียวไม่ถูกนับที่นี่ว่าเป็นคลังอิสระ","copyNo":"หยุดก่อนลบถาวร และสร้างสำเนาอิสระที่ตรวจสอบได้ของต้นฉบับที่ทดแทนไม่ได้ การเปลี่ยนแปลงในรูปภาพ iCloud อาจกระจายต่อ","deletedYes":"ตรวจ 'เพิ่งลบ' อีกครั้งก่อนลบสิ่งใดถาวร การลบถาวรทำให้หมดช่วงกู้คืนตามปกติ","deletedNo":"ตรวจ 'เพิ่งลบ' Apple ระบุว่ารายการที่ลบมักอยู่ที่นั่น 30 วัน อย่าล้างจนกว่าจะแน่ใจและต้นฉบับสำคัญได้รับการยืนยันแยกต่างหาก","finalStep":"หลังตรวจครบหนึ่งชุดเล็ก ให้ตรวจพื้นที่ iPhone อีกครั้ง วัดการเปลี่ยนแปลงจริงแทนการสมมติว่าช่องว่างที่คำนวณเท่ากับเนื้อหาที่ลบได้","gapBoundary":"สูตร: max(0, GB ว่างเป้าหมาย − GB ว่างปัจจุบัน) ใช้หน่วย GB เดียวกับที่กรอก ผลลัพธ์ไม่ใช่การทำนายว่ารูปภาพหรือ PicClear จะคืนพื้นที่ได้เท่าไร","photosBoundary":"พื้นที่รูปภาพที่รายงานเป็นบริบทเท่านั้น บางรายการอาจสำคัญ ซิงก์แล้ว ถูกปรับให้เหมาะสม แชร์อยู่ แก้ไขแล้ว หรือแสดงต่างออกไปบนอุปกรณ์","scopeBoundary":"มันอ่านคลังรูปภาพ พื้นที่ iCloud อัลบั้ม ไฟล์ เมทาดาทา รายการโปรด รายการซ้ำ ความเบลอ ขนาดวิดีโอ หรือผลการลบไม่ได้ มันไม่เคยระบุว่าสิ่งใดปลอดภัยที่จะลบ และทำนายพื้นที่ที่กู้คืนได้ไม่ได้","met":"ถึงเป้าหมายแล้ว","notMet":"ยังขาดอยู่","invalidInput":"กรอกตัวเลขพื้นที่ทั้งสามค่า ตั้งแต่ 0 ถึง 2,048 GB","checklist":["ยืนยันพื้นที่ว่างปัจจุบันและพื้นที่รูปภาพใน การตั้งค่า > ทั่วไป > พื้นที่จัดเก็บ iPhone","ยืนยันสำเนาอิสระที่เปิดได้ของต้นฉบับที่ทดแทนไม่ได้ก่อนลบถาวร","ตรวจสถานะซิงก์รูปภาพ iCloud และจำไว้ว่าการเปลี่ยนแปลงกระจายไปทุกอุปกรณ์ได้","ตรวจทีละหมวดเป็นชุดเล็ก อย่าใช้หมวดหมู่เป็นข้อพิสูจน์ว่ารายการทิ้งได้","ตรวจ 'เพิ่งลบ' และพื้นที่อุปกรณ์อีกครั้งก่อนตัดสินใจชุดถัดไป"],"toolDescription":"คำนวณเพียง max(0, GB ว่างเป้าหมาย ลบ GB ว่างปัจจุบัน) จากตัวเลขที่กรอกเองแบบมีขอบเขต รายงานพื้นที่รูปภาพแยก และให้แผนตรวจแบบย้อนกลับได้ ไม่เข้าถึงรูป ไฟล์ เมทาดาทา iCloud บัญชี หรือพื้นที่อุปกรณ์ ไม่ประมาณพื้นที่กู้คืน ไม่จัดประเภทสื่อ และไม่ลบสิ่งใด","freePlanner":{"label":"เครื่องมือวางแผนล้างพื้นที่รูปภาพ iPhone แบบส่วนตัว","url":"https://alice51849.github.io/ios-app-guide/th/tools/photo-storage-calculator.html","boundary":"คัดลอกตัวเลขที่เห็นได้ในการตั้งค่า พื้นที่ของรูปภาพถูกรายงานแยก และไม่ถูกถือว่าเป็นสิ่งที่ลบได้หรือกู้คืนได้"},"officialSources":[{"label":"Apple: ตรวจพื้นที่จัดเก็บบน iPhone และ iPad","url":"https://support.apple.com/en-us/108429"},{"label":"Apple: สำรองและซิงก์รูปภาพวิดีโอด้วย iCloud","url":"https://support.apple.com/guide/iphone/sync-photos-videos-icloud-iph961b96c4d/ios"},{"label":"Apple: รวมรูปและวิดีโอที่ซ้ำบน iPhone","url":"https://support.apple.com/guide/iphone/merge-duplicate-photos-and-videos-iph1978d9c23/ios"},{"label":"Apple: ลบ กู้คืน หรือลบรูปและวิดีโอถาวร","url":"https://support.apple.com/guide/iphone/delete-or-hide-photos-and-videos-iphb4defbde9/ios"}],"webmcpSource":"https://developer.chrome.com/docs/ai/webmcp/imperative-api","optionalApp":{"label":"ดู PicClear Pro บน App Store","boundary":"PicClear Pro เป็นตัวเลือกเสริม หน้า App Store ปัจจุบันระบุว่าการสแกนและพรีวิวฟรี ปลดล็อกครั้งเดียวเพื่อล้าง แอปจัดกลุ่มภาพซ้ำ ภาพคล้าย ภาพหน้าจอ ภาพเบลอ วิดีโอใหญ่ และภาพใหญ่บนอุปกรณ์เพื่อให้ตรวจ หน้ายังระบุว่าไม่ลบจนกว่าจะยืนยัน ปกป้องรายการโปรดได้ ทำงานออฟไลน์ ไม่มีบัญชี โฆษณา หรือการติดตาม โปรดตรวจหน้าปัจจุบันสำหรับฟีเจอร์ที่แน่นอน เครื่องมือนี้ใช้ได้โดยไม่ต้องมีแอป","app_store_url":"https://apps.apple.com/app/id6780223070"}}</script>
+<script>
+(() => {
+  const config = JSON.parse(document.getElementById("storage-config").textContent);
+  const form = document.getElementById("storage-planner");
+  const fields = {
+    current_free_gb: document.getElementById("current-free"),
+    target_free_gb: document.getElementById("target-free"),
+    photos_storage_gb: document.getElementById("photos-storage"),
+    icloud_photos_status: document.getElementById("icloud-status"),
+    independent_copy_verified: document.getElementById("copy-verified"),
+    recently_deleted_reviewed: document.getElementById("deleted-reviewed"),
+    priority: document.getElementById("priority")
+  };
+  const output = {
+    gap: document.getElementById("result-gap"),
+    current: document.getElementById("result-current"),
+    target: document.getElementById("result-target"),
+    photos: document.getElementById("result-photos"),
+    status: document.getElementById("result-status"),
+    plan: document.getElementById("result-plan")
+  };
+
+  function round(value, digits = 2) {
+    const factor = 10 ** digits;
+    return Math.round((value + Number.EPSILON) * factor) / factor;
+  }
+
+  function numberValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const schema = config.inputSchema.properties[name];
+    if (typeof value !== "number" || !Number.isFinite(value)) {
+      throw new TypeError(`${name} must be a finite number.`);
+    }
+    if (value < schema.minimum || value > schema.maximum) {
+      throw new RangeError(`${name} is outside the supported range.`);
+    }
+    return value;
+  }
+
+  function enumValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const values = config.inputSchema.properties[name].enum;
+    if (typeof value !== "string" || !values.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    return value;
+  }
+
+  function booleanValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    if (typeof input[name] !== "boolean") {
+      throw new TypeError(`${name} must be a boolean.`);
+    }
+    return input[name];
+  }
+
+  function plan(input) {
+    const current = numberValue(input, "current_free_gb");
+    const target = numberValue(input, "target_free_gb");
+    const photos = numberValue(input, "photos_storage_gb");
+    const icloud = enumValue(input, "icloud_photos_status");
+    const independentCopy = booleanValue(input, "independent_copy_verified");
+    const recentlyDeleted = booleanValue(input, "recently_deleted_reviewed");
+    const priority = enumValue(input, "priority");
+    const gap = Math.max(0, target - current);
+    return {
+      selected_inputs: {
+        current_free_gb: current,
+        target_free_gb: target,
+        photos_storage_gb: photos,
+        icloud_photos_status: icloud,
+        icloud_photos_status_label: config.labels.icloud[icloud],
+        independent_copy_verified: independentCopy,
+        recently_deleted_reviewed: recentlyDeleted,
+        priority,
+        priority_label: config.labels.priority[priority]
+      },
+      free_space_gap: {
+        formula: "max(0, target_free_gb - current_free_gb)",
+        additional_free_space_gap_gb: gap,
+        target_already_met: target <= current,
+        same_gb_unit_as_entered: true,
+        is_not_recoverable_space_prediction: true
+      },
+      reported_photos_storage: {
+        photos_storage_gb: photos,
+        is_context_not_deletable_or_recoverable_capacity: true
+      },
+      reversible_review_plan: [
+        independentCopy ? config.copyYes : config.copyNo,
+        config.icloudSteps[icloud],
+        config.prioritySteps[priority],
+        recentlyDeleted ? config.deletedYes : config.deletedNo,
+        config.finalStep
+      ],
+      gap_boundary: config.gapBoundary,
+      photos_boundary: config.photosBoundary,
+      scope_boundary: config.scopeBoundary
+    };
+  }
+
+  function validateInput(input) {
+    if (input === null || typeof input !== "object" || Array.isArray(input)) {
+      throw new TypeError("WebMCP input must be an object.");
+    }
+    const allowed = new Set(Object.keys(config.inputSchema.properties));
+    for (const name of Object.keys(input)) {
+      if (!allowed.has(name)) {
+        throw new RangeError(`${name} is not a supported input.`);
+      }
+    }
+    return plan(input);
+  }
+
+  function formatGb(value) {
+    if (value > 0 && value < 0.01) return "<0.01 GB";
+    return `${round(value)} GB`;
+  }
+
+  function humanNumber(field, name) {
+    const raw = String(field.value).trim();
+    const value = raw === "" ? Number.NaN : Number(raw);
+    const schema = config.inputSchema.properties[name];
+    if (!Number.isFinite(value) ||
+        value < schema.minimum ||
+        value > schema.maximum) {
+      throw new RangeError(`${name} is outside the supported range.`);
+    }
+    return value;
+  }
+
+  function renderInvalid() {
+    output.gap.textContent = "—";
+    output.current.textContent = "—";
+    output.target.textContent = "—";
+    output.photos.textContent = "—";
+    output.status.textContent = "—";
+    output.plan.textContent = config.invalidInput;
+  }
+
+  function render() {
+    let result;
+    try {
+      result = plan({
+        current_free_gb: humanNumber(
+          fields.current_free_gb, "current_free_gb"),
+        target_free_gb: humanNumber(
+          fields.target_free_gb, "target_free_gb"),
+        photos_storage_gb: humanNumber(
+          fields.photos_storage_gb, "photos_storage_gb"),
+        icloud_photos_status: fields.icloud_photos_status.value,
+        independent_copy_verified: fields.independent_copy_verified.checked,
+        recently_deleted_reviewed: fields.recently_deleted_reviewed.checked,
+        priority: fields.priority.value
+      });
+    } catch (error) {
+      if (error instanceof TypeError || error instanceof RangeError) {
+        renderInvalid();
+        return;
+      }
+      throw error;
+    }
+    output.gap.textContent =
+      formatGb(result.free_space_gap.additional_free_space_gap_gb);
+    output.current.textContent =
+      formatGb(result.selected_inputs.current_free_gb);
+    output.target.textContent =
+      formatGb(result.selected_inputs.target_free_gb);
+    output.photos.textContent =
+      formatGb(result.reported_photos_storage.photos_storage_gb);
+    output.status.textContent =
+      result.free_space_gap.target_already_met ? config.met : config.notMet;
+    output.plan.textContent =
+      result.reversible_review_plan.join(" ");
+  }
+
+  async function registerWebMcp() {
+    if (!document.modelContext?.registerTool) return;
+    await document.modelContext.registerTool({
+      name: "plan_private_photo_storage_cleanup",
+      description: config.toolDescription,
+      inputSchema: config.inputSchema,
+      annotations: {readOnlyHint: true, untrustedContentHint: false},
+      execute: async (input) => {
+        const plan = validateInput(input);
+        const result = {
+          result_type: "private_photo_storage_cleanup_plan",
+          photos_files_metadata_icloud_device_not_accessed: true,
+          no_media_classification_or_deletion: true,
+          no_recoverable_space_prediction: true,
+          plan,
+          safety_first_checklist: config.checklist,
+          optional_free_planner: config.freePlanner,
+          official_sources: config.officialSources,
+          webmcp_preview_source: config.webmcpSource
+        };
+        if (config.optionalApp) {
+          result.optional_picclear_pro = config.optionalApp;
+        }
+        return JSON.stringify(result);
+      }
+    });
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    render();
+  });
+  for (const field of Object.values(fields)) {
+    field.addEventListener("change", render);
+  }
+  render();
+  registerWebMcp().catch((error) =>
+    console.error("WebMCP tool registration failed.", error));
+})();
+</script>
+</body>
+</html>

@@ -3,255 +3,99 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- guide-design:start -->
-<link rel="stylesheet" href="/ios-app-guide/assets/guide-premium-v1.css">
-<!-- guide-design:end -->
-<title>Lumi Weather: കുടുംബ കാലാവസ്ഥ — കാലാവസ്ഥ പ്രവചനം മഴ | iOS App</title>
+<title>Lumi Weather: കുടുംബ കാലാവസ്ഥ — പുറത്തുപോകാൻ ഉത്തമ സമയങ്ങൾ | iOS App</title>
 <meta name="description" content="ഒരു രാവിലെ, ജനാലക്കൽ നിൽക്കുന്ന കുഞ്ഞിനെ നോക്കി നിങ്ങൾ ചിന്തിക്കുന്നു: ഇന്ന് പുറത്ത് പോകാൻ തണുപ്പോ, ചൂടോ, മഴയോ?">
-<meta name="keywords" content="കാലാവസ്ഥ, കാലാവസ്ഥ പ്രവചനം, weather, weather forecast, ഇന്നത്തെ കാലാവസ്ഥ, മഴ, മഴ റഡാർ, യുവി സൂചിക, താപനില, കാലാവസ്ഥ വിജറ്റ്, weather app, forecast, hourly weather, കാറ്റ്, കൊടുങ്കാറ്റ്, rain, UV index, കുട്ടികളുമായി പുറത്ത്, എന്ത് ധരിക്കണം, കാലാവസ്ഥ കുടുംബം, കുട്ടികൾ, വേദന, പോഷാക്ക്, കൂടിയുള്ള, സുരക്ഷിതം, ഉത്തമം, സൂര്യൻ">
+<meta name="keywords" content="കുട്ടികൾ, കാലാവസ്ഥ, വേദന, പോഷാക്ക്, കൂടിയുള്ള, സുരക്ഷിതം, വേദന, ഉത്തമം, മഴ, സൂര്യൻ, കാറ്റ്, കുട്ടികൾ">
 <link rel="canonical" href="https://alice51849.github.io/ios-app-guide/ml-IN/lumiweather.html">
-<!-- smart-app-banner:start -->
-<meta name="apple-itunes-app" content="app-id=6779552704">
-<!-- smart-app-banner:end -->
-<!-- social-preview:start -->
-<meta property="og:title" content="Lumi Weather: കുടുംബ കാലാവസ്ഥ — കാലാവസ്ഥ പ്രവചനം മഴ | iOS App">
-<meta property="og:type" content="product">
-<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/ml-IN/lumiweather.html">
-<meta property="og:image" content="https://alice51849.github.io/ios-app-guide/social/img/lumiweather-share.jpg">
-<meta property="og:image:secure_url" content="https://alice51849.github.io/ios-app-guide/social/img/lumiweather-share.jpg">
-<meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="675">
-<meta property="og:image:alt" content="Lumi Weather: കുടുംബ കാലാവസ്ഥ — കാലാവസ്ഥ പ്രവചനം മഴ | iOS App">
-<meta property="og:description" content="App Store · സൗജന്യം. ഒരു രാവിലെ, ജനാലക്കൽ നിൽക്കുന്ന കുഞ്ഞിനെ നോക്കി നിങ്ങൾ ചിന്തിക്കുന്നു: ഇന്ന് പുറത്ത് പോകാൻ തണുപ്പോ, ചൂടോ, മഴയോ?">
-<meta property="og:locale" content="ml_IN">
-<meta property="og:site_name" content="iOS App Guide">
-<meta property="product:price:amount" content="0">
-<meta property="product:price:currency" content="INR">
-<meta property="product:availability" content="instock">
-<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-<script type="application/ld+json" data-iag="primary-image">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://alice51849.github.io/ios-app-guide/ml-IN/lumiweather.html#webpage",
-  "url": "https://alice51849.github.io/ios-app-guide/ml-IN/lumiweather.html",
-  "name": "Lumi Weather: കുടുംബ കാലാവസ്ഥ — കാലാവസ്ഥ പ്രവചനം മഴ | iOS App",
-  "description": "ഒരു രാവിലെ, ജനാലക്കൽ നിൽക്കുന്ന കുഞ്ഞിനെ നോക്കി നിങ്ങൾ ചിന്തിക്കുന്നു: ഇന്ന് പുറത്ത് പോകാൻ തണുപ്പോ, ചൂടോ, മഴയോ?",
-  "inLanguage": "ml-IN",
-  "primaryImageOfPage": {
-    "@type": "ImageObject",
-    "@id": "https://alice51849.github.io/ios-app-guide/social/img/lumiweather-share.jpg#primaryimage",
-    "contentUrl": "https://alice51849.github.io/ios-app-guide/social/img/lumiweather-share.jpg",
-    "url": "https://alice51849.github.io/ios-app-guide/social/img/lumiweather-share.jpg",
-    "width": 1200,
-    "height": 675,
-    "encodingFormat": "image/jpeg",
-    "caption": "Lumi Weather: കുടുംബ കാലാവസ്ഥ — കാലാവസ്ഥ പ്രവചനം മഴ | iOS App",
-    "representativeOfPage": true
-  },
-  "mainEntity": {
-    "@id": "https://apps.apple.com/app/id6779552704"
-  }
-}
-</script>
-<style>
-.iag-app-preview{margin:clamp(1rem,3vw,1.5rem) 0 clamp(1.5rem,4vw,2.25rem)}
-.iag-app-preview__link{display:block;position:relative;width:100%;max-width:1200px;margin:0 auto;overflow:hidden;border-radius:clamp(14px,2.2vw,24px);background:#0b1020;box-shadow:0 18px 50px rgba(15,23,42,.22);line-height:0}
-.iag-app-preview__link::after{content:"";position:absolute;inset:0;border:1px solid rgba(255,255,255,.28);border-radius:inherit;pointer-events:none}
-.iag-app-preview__link:focus-visible{outline:3px solid #2563eb;outline-offset:4px}
-.iag-app-preview__image{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
-@media(hover:hover){.iag-app-preview__link:hover{box-shadow:0 22px 60px rgba(15,23,42,.3)}}
-</style>
-<meta name="twitter:card" content="app">
-<meta name="twitter:title" content="Lumi Weather: കുടുംബ കാലാവസ്ഥ — കാലാവസ്ഥ പ്രവചനം മഴ | iOS App">
-<meta name="twitter:description" content="App Store · സൗജന്യം. ഒരു രാവിലെ, ജനാലക്കൽ നിൽക്കുന്ന കുഞ്ഞിനെ നോക്കി നിങ്ങൾ ചിന്തിക്കുന്നു: ഇന്ന് പുറത്ത് പോകാൻ തണുപ്പോ, ചൂടോ, മഴയോ?">
-<meta name="twitter:image" content="https://alice51849.github.io/ios-app-guide/social/img/lumiweather-share.jpg">
-<meta name="twitter:image:alt" content="Lumi Weather: കുടുംബ കാലാവസ്ഥ — കാലാവസ്ഥ പ്രവചനം മഴ | iOS App">
-<meta name="twitter:app:name:iphone" content="Lumi Weather">
-<meta name="twitter:app:id:iphone" content="6779552704">
-<meta name="twitter:app:name:ipad" content="Lumi Weather">
-<meta name="twitter:app:id:ipad" content="6779552704">
-<meta name="twitter:label1" content="App Store">
-<meta name="twitter:data1" content="സൗജന്യം">
-<link rel="alternate" type="application/json+oembed" href="https://alice51849.github.io/ios-app-guide/oembed/ml-IN/lumiweather.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fml-IN%2Flumiweather.html&amp;format=json" title="Lumi Weather: കുടുംബ കാലാവസ്ഥ — കാലാവസ്ഥ പ്രവചനം മഴ | iOS App">
-<!-- social-preview:end -->
-<!-- app-store-qr-style:start -->
-<link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
-<!-- app-store-qr-style:end -->
-<!-- app-decision-card-style:start -->
-<link rel="stylesheet" href="/ios-app-guide/assets/app-decision-card-v1.css">
-<!-- app-decision-card-style:end -->
 <link rel="alternate" hreflang="ar-SA" href="https://alice51849.github.io/ios-app-guide/ar-SA/lumiweather.html">
-<link rel="alternate" hreflang="bn-BD" href="https://alice51849.github.io/ios-app-guide/bn-BD/lumiweather.html">
 <link rel="alternate" hreflang="ca" href="https://alice51849.github.io/ios-app-guide/ca/lumiweather.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/lumiweather.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/lumiweather.html">
+<link rel="alternate" hreflang="hr" href="https://alice51849.github.io/ios-app-guide/hr/lumiweather.html">
 <link rel="alternate" hreflang="cs" href="https://alice51849.github.io/ios-app-guide/cs/lumiweather.html">
 <link rel="alternate" hreflang="da" href="https://alice51849.github.io/ios-app-guide/da/lumiweather.html">
-<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/lumiweather.html">
-<link rel="alternate" hreflang="el" href="https://alice51849.github.io/ios-app-guide/el/lumiweather.html">
+<link rel="alternate" hreflang="nl-NL" href="https://alice51849.github.io/ios-app-guide/nl-NL/lumiweather.html">
 <link rel="alternate" hreflang="en-AU" href="https://alice51849.github.io/ios-app-guide/en-AU/lumiweather.html">
 <link rel="alternate" hreflang="en-CA" href="https://alice51849.github.io/ios-app-guide/en-CA/lumiweather.html">
 <link rel="alternate" hreflang="en-GB" href="https://alice51849.github.io/ios-app-guide/en-GB/lumiweather.html">
 <link rel="alternate" hreflang="en-US" href="https://alice51849.github.io/ios-app-guide/en-US/lumiweather.html">
-<link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/es-ES/lumiweather.html">
-<link rel="alternate" hreflang="es-MX" href="https://alice51849.github.io/ios-app-guide/es-MX/lumiweather.html">
 <link rel="alternate" hreflang="fi" href="https://alice51849.github.io/ios-app-guide/fi/lumiweather.html">
-<link rel="alternate" hreflang="fr-CA" href="https://alice51849.github.io/ios-app-guide/fr-CA/lumiweather.html">
 <link rel="alternate" hreflang="fr-FR" href="https://alice51849.github.io/ios-app-guide/fr-FR/lumiweather.html">
-<link rel="alternate" hreflang="gu-IN" href="https://alice51849.github.io/ios-app-guide/gu-IN/lumiweather.html">
+<link rel="alternate" hreflang="fr-CA" href="https://alice51849.github.io/ios-app-guide/fr-CA/lumiweather.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/lumiweather.html">
+<link rel="alternate" hreflang="el" href="https://alice51849.github.io/ios-app-guide/el/lumiweather.html">
 <link rel="alternate" hreflang="he" href="https://alice51849.github.io/ios-app-guide/he/lumiweather.html">
 <link rel="alternate" hreflang="hi" href="https://alice51849.github.io/ios-app-guide/hi/lumiweather.html">
-<link rel="alternate" hreflang="hr" href="https://alice51849.github.io/ios-app-guide/hr/lumiweather.html">
 <link rel="alternate" hreflang="hu" href="https://alice51849.github.io/ios-app-guide/hu/lumiweather.html">
 <link rel="alternate" hreflang="id" href="https://alice51849.github.io/ios-app-guide/id/lumiweather.html">
 <link rel="alternate" hreflang="it" href="https://alice51849.github.io/ios-app-guide/it/lumiweather.html">
 <link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/lumiweather.html">
-<link rel="alternate" hreflang="kn-IN" href="https://alice51849.github.io/ios-app-guide/kn-IN/lumiweather.html">
 <link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/lumiweather.html">
-<link rel="alternate" hreflang="ml-IN" href="https://alice51849.github.io/ios-app-guide/ml-IN/lumiweather.html">
-<link rel="alternate" hreflang="mr-IN" href="https://alice51849.github.io/ios-app-guide/mr-IN/lumiweather.html">
 <link rel="alternate" hreflang="ms" href="https://alice51849.github.io/ios-app-guide/ms/lumiweather.html">
-<link rel="alternate" hreflang="nl-NL" href="https://alice51849.github.io/ios-app-guide/nl-NL/lumiweather.html">
 <link rel="alternate" hreflang="no" href="https://alice51849.github.io/ios-app-guide/no/lumiweather.html">
-<link rel="alternate" hreflang="or-IN" href="https://alice51849.github.io/ios-app-guide/or-IN/lumiweather.html">
-<link rel="alternate" hreflang="pa-IN" href="https://alice51849.github.io/ios-app-guide/pa-IN/lumiweather.html">
 <link rel="alternate" hreflang="pl" href="https://alice51849.github.io/ios-app-guide/pl/lumiweather.html">
 <link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/lumiweather.html">
 <link rel="alternate" hreflang="pt-PT" href="https://alice51849.github.io/ios-app-guide/pt-PT/lumiweather.html">
 <link rel="alternate" hreflang="ro" href="https://alice51849.github.io/ios-app-guide/ro/lumiweather.html">
 <link rel="alternate" hreflang="ru" href="https://alice51849.github.io/ios-app-guide/ru/lumiweather.html">
 <link rel="alternate" hreflang="sk" href="https://alice51849.github.io/ios-app-guide/sk/lumiweather.html">
-<link rel="alternate" hreflang="sl-SI" href="https://alice51849.github.io/ios-app-guide/sl-SI/lumiweather.html">
+<link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/es-ES/lumiweather.html">
+<link rel="alternate" hreflang="es-MX" href="https://alice51849.github.io/ios-app-guide/es-MX/lumiweather.html">
 <link rel="alternate" hreflang="sv" href="https://alice51849.github.io/ios-app-guide/sv/lumiweather.html">
-<link rel="alternate" hreflang="ta-IN" href="https://alice51849.github.io/ios-app-guide/ta-IN/lumiweather.html">
-<link rel="alternate" hreflang="te-IN" href="https://alice51849.github.io/ios-app-guide/te-IN/lumiweather.html">
 <link rel="alternate" hreflang="th" href="https://alice51849.github.io/ios-app-guide/th/lumiweather.html">
 <link rel="alternate" hreflang="tr" href="https://alice51849.github.io/ios-app-guide/tr/lumiweather.html">
 <link rel="alternate" hreflang="uk" href="https://alice51849.github.io/ios-app-guide/uk/lumiweather.html">
-<link rel="alternate" hreflang="ur-PK" href="https://alice51849.github.io/ios-app-guide/ur-PK/lumiweather.html">
 <link rel="alternate" hreflang="vi" href="https://alice51849.github.io/ios-app-guide/vi/lumiweather.html">
-<link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/lumiweather.html">
-<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/lumiweather.html">
+<link rel="alternate" hreflang="bn-BD" href="https://alice51849.github.io/ios-app-guide/bn-BD/lumiweather.html">
+<link rel="alternate" hreflang="gu-IN" href="https://alice51849.github.io/ios-app-guide/gu-IN/lumiweather.html">
+<link rel="alternate" hreflang="kn-IN" href="https://alice51849.github.io/ios-app-guide/kn-IN/lumiweather.html">
+<link rel="alternate" hreflang="ml-IN" href="https://alice51849.github.io/ios-app-guide/ml-IN/lumiweather.html">
+<link rel="alternate" hreflang="mr-IN" href="https://alice51849.github.io/ios-app-guide/mr-IN/lumiweather.html">
+<link rel="alternate" hreflang="or-IN" href="https://alice51849.github.io/ios-app-guide/or-IN/lumiweather.html">
+<link rel="alternate" hreflang="pa-IN" href="https://alice51849.github.io/ios-app-guide/pa-IN/lumiweather.html">
+<link rel="alternate" hreflang="sl-SI" href="https://alice51849.github.io/ios-app-guide/sl-SI/lumiweather.html">
+<link rel="alternate" hreflang="ta-IN" href="https://alice51849.github.io/ios-app-guide/ta-IN/lumiweather.html">
+<link rel="alternate" hreflang="te-IN" href="https://alice51849.github.io/ios-app-guide/te-IN/lumiweather.html">
+<link rel="alternate" hreflang="ur-PK" href="https://alice51849.github.io/ios-app-guide/ur-PK/lumiweather.html">
 <link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/en-US/lumiweather.html">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "MobileApplication",
+  "@type": "SoftwareApplication",
   "name": "Lumi Weather: കുടുംബ കാലാവസ്ഥ",
   "operatingSystem": "iOS",
   "applicationCategory": "EducationalApplication",
+  "inLanguage": "ml-IN",
   "description": "ഒരു രാവിലെ, ജനാലക്കൽ നിൽക്കുന്ന കുഞ്ഞിനെ നോക്കി നിങ്ങൾ ചിന്തിക്കുന്നു: ഇന്ന് പുറത്ത് പോകാൻ തണുപ്പോ, ചൂടോ, മഴയോ?\n\nLumi Weather ആ നിമിഷത്തിനായി തന്നെ.\n\nനമ്പറുകളുടെ മതിൽ ഒരു മൃദുവായ ഉത്തരം ആക്കുന്നു. ഒരു നോട്ടം മതി, ഇന്ന് നിങ്ങളുടെ കുഞ്ഞിന് പാർക്കിൽ ഓടാനുള്ള ദിനമോ, വീട്ടിൽ സുഖമായി ഇരിക്കാനുള്ള ദിനമോ എന്ന് അറിയാൻ. Lumi എന്ന ചെറിയ കഥാപാത്രം, ആകാശം എന്ത് ചെയ്യുന്നു എന്നതനുസരിച്ച് വേഷം ധരിക്കുന്നു.\n\nഒരു വിശ്വസനീയ സ്കോർ\nLumi, അനുഭവിക്കുന്ന താപനില, UV, മഴ സാധ്യത, കാറ്റ് എന്നിവ ചേർത്ത്, നിങ്ങളുടെ കുഞ്ഞിന്റെ പ്രായത്തിന് അനുയോജ്യമായി നിർണ്ണയിക്കുന്നു. വ്യക്തമായ ഔട്ടിംഗ് സ്കോർ, ലളിതമായ ഭാഷയിൽ വിധി. ഒരു തവണ ടാപ്പ് ചെയ്താൽ എല്ലാ കാര്യങ്ങളും വിശദീകരിക്കുന്നു. മറഞ്ഞ ഗണിതം ഒന്നുമില്ല, വിശ്വാസം മാത്രമാണ്.\n\nപാലകരുടെ മുഖത്ത് പുഞ്ചിരി വരുത്തുന്ന നിമിഷം\nLumi, പുറത്ത് പോകാൻ ഏറ്റവും നല്ല സമയം കണ്ടെത്തുന്നു, അതിനാൽ നിങ്ങൾക്ക് മനോഹരമായ മണിക്കൂറുകൾ നഷ്ടമാകില്ല. കാലാവസ്ഥയും, കുഞ്ഞിന്റെ പ്രായവും അനുസരിച്ച് മാറുന്ന വസ്ത്രങ്ങളുടെ ലിസ്റ്റും, ഓരോ ദിവസവും പുതിയ കളി ആശയങ്ങളും നൽകുന്നു.\n\nജീവനുള്ള ചെറിയ ലോകം\nസൂര്യോദയം പ്രകാശിക്കുന്നു, മഴ മൃദുവായി തട്ടുന്നു, മഞ്ഞ് വീഴുന്നു, രാത്രിയിൽ നക്ഷത്രങ്ങൾ. Lumi, കുട്ടികൾക്ക് വായിക്കാനാവാത്തവർക്കും നിമിഷത്തിൽ ദിനം മനസ്സിലാക്കാൻ സഹായിക്കുന്നു. സാധാരണ കൂടുതൽ വിലയുള്ള ആപ്പുകളിൽ മാത്രം കാണുന്ന വിശദാംശം.\n\nപരിപാലിക്കുന്നവർക്കായി\nLumi Weather, മാതാപിതാക്കൾക്കും, രക്ഷിതാക്കൾക്കും. കുഞ്ഞിന്റെ പ്രായം കുറയുമ്പോൾ കൂടുതൽ സൂക്ഷ്മമായി നിർദ്ദേശിക്കുന്നു. നിങ്ങളുടെ പ്രഭാതം, സമയം, മനസ്സമാധാനം മാനിക്കുന്നു.\n\nസ്വതന്ത്രമായി ആരംഭിച്ച്, ഒരു അൺലോക്ക്, നിങ്ങളുടെ സ്വന്തം\nപൂർണ്ണ Today അനുഭവം ദിവസവും സൗജന്യമാണ്: ഔട്ടിംഗ് സ്കോർ, വേഷം Lumi, ടിപ്പുകൾ, ഓർമ്മപ്പെടുത്തലുകൾ. നിങ്ങൾക്ക് ഇഷ്ടമായാൽ, ഒരു അൺലോക്ക്, മണിക്കൂറും ആഴ്ച്ചയും പ്രവചനം, റെഡി ലിസ്റ്റ്, പല സ്ഥലങ്ങളും, ഹോം സ്ക്രീൻ വിഡ്ജറ്റും. സബ്‌സ്ക്രിപ്ഷനുകൾ, പരസ്യങ്ങൾ, ട്രാക്കിംഗ് ഒന്നുമില്ല. എല്ലാം നിങ്ങളുടെ ഉപകരണത്തിൽ. ലൊക്കേഷൻ, പ്രാദേശിക കാലാവസ്ഥയ്ക്ക് മാത്രം ഉപയോഗിക്കുന്നു, അപ്ലോഡ് ചെയ്യുകയോ വിൽക്കുകയോ ചെയ്യില്ല. കാലാവസ്ഥാ ഡാറ്റ Apple WeatherKit നൽകുന്നു.\n\nഇംഗ്ലീഷ്, പരമ്പരാഗത ചൈനീസ്, ജാപ്പനീസ്, കൊറിയൻ ഭാഷകളിൽ ലഭ്യമാണ്.\n\nLumiയുടെ നിർദ്ദേശങ്ങൾ കുടുംബങ്ങൾക്ക് കരുതലുള്ള മാർഗ്ഗനിർദ്ദേശം മാത്രം, യഥാർത്ഥ സാഹചര്യങ്ങളുടെ ഉറപ്പല്ല. നിങ്ങളുടെ കുഞ്ഞിനെ നിങ്ങളുടെ കണ്ണുകൾ വിശ്വസിക്കുക.",
   "url": "https://apps.apple.com/app/id6779552704",
   "installUrl": "https://apps.apple.com/app/id6779552704",
-  "featureList": [
-    "കാലാവസ്ഥ",
-    "കാലാവസ്ഥ പ്രവചനം",
-    "weather",
-    "weather forecast",
-    "ഇന്നത്തെ കാലാവസ്ഥ",
-    "മഴ",
-    "മഴ റഡാർ",
-    "യുവി സൂചിക"
-  ],
-  "keywords": "കാലാവസ്ഥ, കാലാവസ്ഥ പ്രവചനം, weather, weather forecast, ഇന്നത്തെ കാലാവസ്ഥ, മഴ, മഴ റഡാർ, യുവി സൂചിക, താപനില, കാലാവസ്ഥ വിജറ്റ്, weather app, forecast, hourly weather, കാറ്റ്, കൊടുങ്കാറ്റ്, rain, UV index, കുട്ടികളുമായി പുറത്ത്, എന്ത് ധരിക്കണം, കാലാവസ്ഥ കുടുംബം, കുട്ടികൾ, വേദന, പോഷാക്ക്, കൂടിയുള്ള, സുരക്ഷിതം, ഉത്തമം, സൂര്യൻ",
-  "@id": "https://apps.apple.com/app/id6779552704",
-  "identifier": {
-    "@type": "PropertyValue",
-    "propertyID": "Apple App Store ID",
-    "value": "6779552704"
-  },
-  "downloadUrl": "https://apps.apple.com/app/id6779552704",
-  "potentialAction": {
-    "@type": "InstallAction",
-    "target": "https://apps.apple.com/app/id6779552704"
-  },
-  "mainEntityOfPage": {
-    "@id": "https://alice51849.github.io/ios-app-guide/ml-IN/lumiweather.html#webpage"
-  },
   "offers": {
     "@type": "Offer",
     "price": "0",
-    "priceCurrency": "INR",
-    "url": "https://apps.apple.com/in/app/id6779552704",
-    "availability": "https://schema.org/InStock"
-  }
+    "priceCurrency": "USD",
+    "description": "Free to download with a one-time in-app purchase to unlock all features"
+  },
+  "featureList": [
+    "കുട്ടികൾ",
+    "കാലാവസ്ഥ",
+    "വേദന",
+    "പോഷാക്ക്",
+    "കൂടിയുള്ള",
+    "സുരക്ഷിതം",
+    "വേദന",
+    "ഉത്തമം"
+  ],
+  "keywords": "കുട്ടികൾ, കാലാവസ്ഥ, വേദന, പോഷാക്ക്, കൂടിയുള്ള, സുരക്ഷിതം, വേദന, ഉത്തമം, മഴ, സൂര്യൻ, കാറ്റ്, കുട്ടികൾ"
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "inLanguage": "ml-IN",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "കാലാവസ്ഥ-ന് ഏറ്റവും മികച്ച ആപ്പ് ഏതാണ്?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Lumi Weather: കുടുംബ കാലാവസ്ഥ കാലാവസ്ഥ-ന് മികച്ച തിരഞ്ഞെടുപ്പാണ്. കാലാവസ്ഥ പ്രവചനം മഴ App Store-ൽ ലഭ്യമായ ഒരു iOS ആപ്പാണിത്."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "കാലാവസ്ഥ പ്രവചനം-ന് iOS ആപ്പ് ഉണ്ടോ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Lumi Weather: കുടുംബ കാലാവസ്ഥ കാലാവസ്ഥ പ്രവചനം-ന് മികച്ച തിരഞ്ഞെടുപ്പാണ്. കാലാവസ്ഥ പ്രവചനം മഴ App Store-ൽ ലഭ്യമായ ഒരു iOS ആപ്പാണിത്."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "iPhone-ൽ weather-ന് ഏത് ആപ്പാണ് മികച്ചത്?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Lumi Weather: കുടുംബ കാലാവസ്ഥ weather-ന് മികച്ച തിരഞ്ഞെടുപ്പാണ്. കാലാവസ്ഥ പ്രവചനം മഴ App Store-ൽ ലഭ്യമായ ഒരു iOS ആപ്പാണിത്."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "weather forecast-ന് ആളുകൾ ഏത് ആപ്പാണ് ഉപയോഗിക്കുന്നത്?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Lumi Weather: കുടുംബ കാലാവസ്ഥ weather forecast-ന് മികച്ച തിരഞ്ഞെടുപ്പാണ്. കാലാവസ്ഥ പ്രവചനം മഴ App Store-ൽ ലഭ്യമായ ഒരു iOS ആപ്പാണിത്."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "ഇന്നത്തെ കാലാവസ്ഥ-ന് ഒരു ആപ്പ് ശുപാർശ ചെയ്യാമോ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Lumi Weather: കുടുംബ കാലാവസ്ഥ ഇന്നത്തെ കാലാവസ്ഥ-ന് മികച്ച തിരഞ്ഞെടുപ്പാണ്. കാലാവസ്ഥ പ്രവചനം മഴ App Store-ൽ ലഭ്യമായ ഒരു iOS ആപ്പാണിത്."
-      }
-    }
-  ]
-}
-</script>
-<!-- app-store-facts-style:start -->
-<link rel="stylesheet" href="https://alice51849.github.io/ios-app-guide/assets/app-store-facts-v1.css">
-<!-- app-store-facts-style:end -->
-<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
-<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
-<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
 </head>
 <body>
 <main>
   <h1>Lumi Weather: കുടുംബ കാലാവസ്ഥ</h1>
-  <p><strong>കാലാവസ്ഥ പ്രവചനം മഴ</strong></p>
-<!-- app-decision-card:start -->
-<aside class="iag-decision-card" data-app-id="6779552704" aria-label="Lumi Weather: കുടുംബ കാലാവസ്ഥ">
-  <img class="iag-decision-card__icon" src="/ios-app-guide/stories/img/lumiweather-icon.jpg" alt="" width="256" height="256" loading="eager" decoding="async" fetchpriority="high">
-  <div class="iag-decision-card__body">
-    <strong class="iag-decision-card__title" title="Lumi Weather: കുടുംബ കാലാവസ്ഥ">Lumi Weather: കുടുംബ കാലാവസ്ഥ</strong>
-    <p class="iag-decision-card__promise" title="കാലാവസ്ഥ പ്രവചനം മഴ">കാലാവസ്ഥ പ്രവചനം മഴ</p>
-    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="കാലാവസ്ഥ">കാലാവസ്ഥ</span><span class="iag-decision-card__fact" title="കാലാവസ്ഥ പ്രവചനം">കാലാവസ്ഥ പ്രവചനം</span><span class="iag-decision-card__fact" title="weather">weather</span><span class="iag-decision-card__fact" title="weather forecast">weather forecast</span></div>
-    <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="0">സൗജന്യം</data></div>
-    <p class="iag-decision-card__terms" title="സൗജന്യമായി ഡൗൺലോഡ് ചെയ്യൂ. ഒറ്റത്തവണ വാങ്ങിയാൽ എല്ലാ ഫീച്ചറുകളും എന്നേക്കുമായി അൺലോക്ക് ചെയ്യാം—സബ്സ്ക്രിപ്ഷൻ ഇല്ല.">സൗജന്യമായി ഡൗൺലോഡ് ചെയ്യൂ. ഒറ്റത്തവണ വാങ്ങിയാൽ എല്ലാ ഫീച്ചറുകളും എന്നേക്കുമായി അൺലോക്ക് ചെയ്യാം—സബ്സ്ക്രിപ്ഷൻ ഇല്ല.</p>
-    <a class="iag-decision-card__cta" href="https://apps.apple.com/in/app/id6779552704" rel="nofollow noopener" aria-label="App Store-ൽ നിന്ന് Lumi Weather: കുടുംബ കാലാവസ്ഥ നേടൂ" title="App Store-ൽ നിന്ന് Lumi Weather: കുടുംബ കാലാവസ്ഥ നേടൂ">App Store-ൽ നിന്ന് Lumi Weather: കുടുംബ കാലാവസ്ഥ നേടൂ</a>
-  </div>
-</aside>
-<!-- app-decision-card:end -->
-<h2>Lumi Weather: കുടുംബ കാലാവസ്ഥ എന്താണ്?</h2>
-  <p>Lumi Weather: കുടുംബ കാലാവസ്ഥ ഒരു iOS ആപ്പാണ്. കാലാവസ്ഥ പ്രവചനം മഴ</p>
+  <p><strong>പുറത്തുപോകാൻ ഉത്തമ സമയങ്ങൾ</strong></p>
+
+  <h2>What is Lumi Weather: കുടുംബ കാലാവസ്ഥ?</h2>
+  <p>Lumi Weather: കുടുംബ കാലാവസ്ഥ is an iOS app. പുറത്തുപോകാൻ ഉത്തമ സമയങ്ങൾ</p>
   <p>ഒരു രാവിലെ, ജനാലക്കൽ നിൽക്കുന്ന കുഞ്ഞിനെ നോക്കി നിങ്ങൾ ചിന്തിക്കുന്നു: ഇന്ന് പുറത്ത് പോകാൻ തണുപ്പോ, ചൂടോ, മഴയോ?</p>
   <p>Lumi Weather ആ നിമിഷത്തിനായി തന്നെ.</p>
   <p>നമ്പറുകളുടെ മതിൽ ഒരു മൃദുവായ ഉത്തരം ആക്കുന്നു. ഒരു നോട്ടം മതി, ഇന്ന് നിങ്ങളുടെ കുഞ്ഞിന് പാർക്കിൽ ഓടാനുള്ള ദിനമോ, വീട്ടിൽ സുഖമായി ഇരിക്കാനുള്ള ദിനമോ എന്ന് അറിയാൻ. Lumi എന്ന ചെറിയ കഥാപാത്രം, ആകാശം എന്ത് ചെയ്യുന്നു എന്നതനുസരിച്ച് വേഷം ധരിക്കുന്നു.</p>
@@ -268,83 +112,23 @@
   <p>ഇംഗ്ലീഷ്, പരമ്പരാഗത ചൈനീസ്, ജാപ്പനീസ്, കൊറിയൻ ഭാഷകളിൽ ലഭ്യമാണ്.</p>
   <p>Lumiയുടെ നിർദ്ദേശങ്ങൾ കുടുംബങ്ങൾക്ക് കരുതലുള്ള മാർഗ്ഗനിർദ്ദേശം മാത്രം, യഥാർത്ഥ സാഹചര്യങ്ങളുടെ ഉറപ്പല്ല. നിങ്ങളുടെ കുഞ്ഞിനെ നിങ്ങളുടെ കണ്ണുകൾ വിശ്വസിക്കുക.</p>
 
-  <h2>പ്രധാന സവിശേഷതകൾ</h2>
+  <h2>Key features</h2>
   <ul>
+    <li>കുട്ടികൾ</li>
     <li>കാലാവസ്ഥ</li>
-    <li>കാലാവസ്ഥ പ്രവചനം</li>
-    <li>weather</li>
-    <li>weather forecast</li>
-    <li>ഇന്നത്തെ കാലാവസ്ഥ</li>
-    <li>മഴ</li>
-    <li>മഴ റഡാർ</li>
-    <li>യുവി സൂചിക</li>
+    <li>വേദന</li>
+    <li>പോഷാക്ക്</li>
+    <li>കൂടിയുള്ള</li>
+    <li>സുരക്ഷിതം</li>
+    <li>വേദന</li>
+    <li>ഉത്തമം</li>
   </ul>
 
-  <h2>വില</h2>
-  <p>സൗജന്യമായി ഡൗൺലോഡ് ചെയ്യൂ. ഒറ്റത്തവണ വാങ്ങിയാൽ എല്ലാ ഫീച്ചറുകളും എന്നേക്കുമായി അൺലോക്ക് ചെയ്യാം—സബ്സ്ക്രിപ്ഷൻ ഇല്ല.</p>
+  <h2>Pricing</h2>
+  <p>Free to download with a one-time purchase to unlock everything. No subscription traps.</p>
 
-  <h2>പതിവ് ചോദ്യങ്ങൾ</h2>
-    <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">കാലാവസ്ഥ-ന് ഏറ്റവും മികച്ച ആപ്പ് ഏതാണ്?</h3>
-      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">Lumi Weather: കുടുംബ കാലാവസ്ഥ കാലാവസ്ഥ-ന് മികച്ച തിരഞ്ഞെടുപ്പാണ്. കാലാവസ്ഥ പ്രവചനം മഴ App Store-ൽ ലഭ്യമായ ഒരു iOS ആപ്പാണിത്.</p>
-      </div>
-    </div>
-    <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">കാലാവസ്ഥ പ്രവചനം-ന് iOS ആപ്പ് ഉണ്ടോ?</h3>
-      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">Lumi Weather: കുടുംബ കാലാവസ്ഥ കാലാവസ്ഥ പ്രവചനം-ന് മികച്ച തിരഞ്ഞെടുപ്പാണ്. കാലാവസ്ഥ പ്രവചനം മഴ App Store-ൽ ലഭ്യമായ ഒരു iOS ആപ്പാണിത്.</p>
-      </div>
-    </div>
-    <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">iPhone-ൽ weather-ന് ഏത് ആപ്പാണ് മികച്ചത്?</h3>
-      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">Lumi Weather: കുടുംബ കാലാവസ്ഥ weather-ന് മികച്ച തിരഞ്ഞെടുപ്പാണ്. കാലാവസ്ഥ പ്രവചനം മഴ App Store-ൽ ലഭ്യമായ ഒരു iOS ആപ്പാണിത്.</p>
-      </div>
-    </div>
-    <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">weather forecast-ന് ആളുകൾ ഏത് ആപ്പാണ് ഉപയോഗിക്കുന്നത്?</h3>
-      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">Lumi Weather: കുടുംബ കാലാവസ്ഥ weather forecast-ന് മികച്ച തിരഞ്ഞെടുപ്പാണ്. കാലാവസ്ഥ പ്രവചനം മഴ App Store-ൽ ലഭ്യമായ ഒരു iOS ആപ്പാണിത്.</p>
-      </div>
-    </div>
-    <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">ഇന്നത്തെ കാലാവസ്ഥ-ന് ഒരു ആപ്പ് ശുപാർശ ചെയ്യാമോ?</h3>
-      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">Lumi Weather: കുടുംബ കാലാവസ്ഥ ഇന്നത്തെ കാലാവസ്ഥ-ന് മികച്ച തിരഞ്ഞെടുപ്പാണ്. കാലാവസ്ഥ പ്രവചനം മഴ App Store-ൽ ലഭ്യമായ ഒരു iOS ആപ്പാണിത്.</p>
-      </div>
-    </div>
-
-  <h2>ഡൗൺലോഡ്</h2>
-  <p><a href="https://apps.apple.com/app/id6779552704">App Store-ൽ നിന്ന് Lumi Weather: കുടുംബ കാലാവസ്ഥ നേടൂ</a></p>
-<!-- app-store-facts:start -->
-<aside class="iag-store-facts" aria-label="App Store">
-<a class="iag-store-facts__link" href="https://apps.apple.com/in/app/id6779552704" rel="nofollow noopener">
-<span>App Store</span><span aria-hidden="true">&middot;</span><data value="0">സൗജന്യം</data>
-</a>
-</aside>
-<!-- app-store-facts:end -->
-<!-- app-store-qr:start -->
-<section class="app-store-qr-card" style="display:none" aria-label="App Store-ൽ നിന്ന് Lumi Weather: കുടുംബ കാലാവസ്ഥ നേടൂ">
-<a class="app-store-qr-card__link" href="https://apps.apple.com/in/app/id6779552704" rel="nofollow noopener">
-<img class="app-store-qr-card__image" src="/ios-app-guide/assets/app-store-qr/id6779552704-919db3781259dc67bf8c.svg" width="164" height="164" alt="" decoding="async">
-<span class="app-store-qr-card__copy"><strong class="app-store-qr-card__label">App Store-ൽ നിന്ന് Lumi Weather: കുടുംബ കാലാവസ്ഥ നേടൂ</strong><span class="app-store-qr-card__url" data-store-url="https://apps.apple.com/in/app/id6779552704" aria-hidden="true"></span><span class="app-store-qr-card__badge-wrap"><img class="app-store-qr-card__badge" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ml-in?size=250x83" width="120" height="40" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span></span>
-</a>
-</section>
-<!-- app-store-qr:end -->
+  <h2>Download</h2>
+  <p><a href="https://apps.apple.com/app/id6779552704">Get Lumi Weather: കുടുംബ കാലാവസ്ഥ on the App Store</a></p>
 </main>
-<!-- webmcp-install-tool:start -->
-<script type="application/json" id="iag-webmcp-install-data">{"app_store_id":"6779552704","app_name":"Lumi Weather","page_language":"ml-IN","page_url":"https://alice51849.github.io/ios-app-guide/ml-IN/lumiweather.html","app_store_url":"https://apps.apple.com/in/app/id6779552704","localized_description":"ഒരു രാവിലെ, ജനാലക്കൽ നിൽക്കുന്ന കുഞ്ഞിനെ നോക്കി നിങ്ങൾ ചിന്തിക്കുന്നു: ഇന്ന് പുറത്ത് പോകാൻ തണുപ്പോ, ചൂടോ, മഴയോ?","storefront_facts":{"price":"0","currency":"INR","formatted_price":"സൗജന്യം"}}</script>
-<script src="https://alice51849.github.io/ios-app-guide/assets/webmcp-install-tool-v1.js" data-webmcp-install="iag-webmcp-install-data" defer></script>
-<!-- webmcp-install-tool:end -->
-<!-- mobile-store-cta:start -->
-<div class="mobile-store-cta" data-mobile-store-cta hidden aria-hidden="true">
-<a class="mobile-store-cta__link" href="https://apps.apple.com/in/app/id6779552704" rel="nofollow noopener" tabindex="-1"><span class="mobile-store-cta__label">App Store-ൽ നിന്ന് Lumi Weather: കുടുംബ കാലാവസ്ഥ നേടൂ</span></a>
-</div>
-<script src="/ios-app-guide/assets/mobile-store-cta-v1.js" defer></script>
-<!-- mobile-store-cta:end -->
-<!-- app-store-share:start -->
-<script src="/ios-app-guide/assets/app-store-share-v1.js" data-app-store-share="6779552704" data-app-store-url="https://apps.apple.com/in/app/id6779552704" defer></script>
-<!-- app-store-share:end -->
 </body>
 </html>

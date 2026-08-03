@@ -1,8 +1,8 @@
 {
-  "generated_on": "2026-07-31",
+  "generated_on": "2026-08-03",
   "metric": "owned outreach asset coverage (not AI recommendation share-of-voice)",
   "public_apps": 35,
-  "average_public_coverage": 0.931,
+  "average_public_coverage": 0.914,
   "rows": [
     {
       "key": "snapport",
@@ -620,8 +620,8 @@
       "name": "TripBee Lite",
       "public": true,
       "appstore": "https://apps.apple.com/app/id6791299610",
-      "coverage_score": 0.867,
-      "answers": 25,
+      "coverage_score": 0.643,
+      "answers": 9,
       "planned_answers": 25,
       "social_posts": 1,
       "social_languages": [
@@ -639,8 +639,8 @@
       "name": "DailyMate",
       "public": true,
       "appstore": "https://apps.apple.com/app/id6790418321",
-      "coverage_score": 0.867,
-      "answers": 25,
+      "coverage_score": 0.643,
+      "answers": 9,
       "planned_answers": 25,
       "social_posts": 1,
       "social_languages": [
@@ -654,89 +654,13 @@
       "catalog": true
     },
     {
-      "key": "aim990plus",
-      "name": "Aim990 Plus",
-      "public": true,
-      "appstore": "https://apps.apple.com/app/id6792483140",
-      "coverage_score": 0.767,
-      "answers": 17,
-      "planned_answers": 17,
-      "social_posts": 1,
-      "social_languages": [
-        "zh-Hant"
-      ],
-      "alternatives": 0,
-      "detail": true,
-      "hub": true,
-      "guide": true,
-      "story": true,
-      "catalog": true
-    },
-    {
       "key": "wifiaid",
       "name": "WiFi Aid",
       "public": true,
       "appstore": "https://apps.apple.com/app/id6790467886",
       "coverage_score": 0.767,
-      "answers": 20,
-      "planned_answers": 20,
-      "social_posts": 1,
-      "social_languages": [
-        "zh-Hant"
-      ],
-      "alternatives": 0,
-      "detail": true,
-      "hub": true,
-      "guide": true,
-      "story": true,
-      "catalog": true
-    },
-    {
-      "key": "maskmyfile",
-      "name": "Mask My File",
-      "public": true,
-      "appstore": "https://apps.apple.com/app/id6792850916",
-      "coverage_score": 0.767,
-      "answers": 19,
-      "planned_answers": 19,
-      "social_posts": 1,
-      "social_languages": [
-        "zh-Hant"
-      ],
-      "alternatives": 0,
-      "detail": true,
-      "hub": true,
-      "guide": true,
-      "story": true,
-      "catalog": true
-    },
-    {
-      "key": "mochidonestamp",
-      "name": "Mochi DoneStamp",
-      "public": true,
-      "appstore": "https://apps.apple.com/app/id6790800323",
-      "coverage_score": 0.767,
-      "answers": 17,
-      "planned_answers": 17,
-      "social_posts": 1,
-      "social_languages": [
-        "zh-Hant"
-      ],
-      "alternatives": 0,
-      "detail": true,
-      "hub": true,
-      "guide": true,
-      "story": true,
-      "catalog": true
-    },
-    {
-      "key": "hourstaglite",
-      "name": "HoursTag Lite",
-      "public": true,
-      "appstore": "https://apps.apple.com/app/id6794039979",
-      "coverage_score": 0.767,
-      "answers": 17,
-      "planned_answers": 17,
+      "answers": 16,
+      "planned_answers": 16,
       "social_posts": 1,
       "social_languages": [
         "zh-Hant"
@@ -768,6 +692,25 @@
       "catalog": true
     },
     {
+      "key": "mochidonestamp",
+      "name": "Mochi DoneStamp",
+      "public": true,
+      "appstore": "https://apps.apple.com/app/id6790800323",
+      "coverage_score": 0.602,
+      "answers": 9,
+      "planned_answers": 17,
+      "social_posts": 1,
+      "social_languages": [
+        "zh-Hant"
+      ],
+      "alternatives": 0,
+      "detail": true,
+      "hub": true,
+      "guide": true,
+      "story": true,
+      "catalog": true
+    },
+    {
       "key": "aibriefpack",
       "name": "AI Brief",
       "public": true,
@@ -780,6 +723,63 @@
         "zh-Hant"
       ],
       "alternatives": 1,
+      "detail": true,
+      "hub": true,
+      "guide": true,
+      "story": true,
+      "catalog": true
+    },
+    {
+      "key": "hourstaglite",
+      "name": "HoursTag Lite",
+      "public": true,
+      "appstore": "https://apps.apple.com/app/id6794039979",
+      "coverage_score": 0.767,
+      "answers": 17,
+      "planned_answers": 17,
+      "social_posts": 1,
+      "social_languages": [
+        "zh-Hant"
+      ],
+      "alternatives": 0,
+      "detail": true,
+      "hub": true,
+      "guide": true,
+      "story": true,
+      "catalog": true
+    },
+    {
+      "key": "maskmyfile",
+      "name": "Mask My File",
+      "public": true,
+      "appstore": "https://apps.apple.com/app/id6792850916",
+      "coverage_score": 0.767,
+      "answers": 15,
+      "planned_answers": 15,
+      "social_posts": 1,
+      "social_languages": [
+        "zh-Hant"
+      ],
+      "alternatives": 0,
+      "detail": true,
+      "hub": true,
+      "guide": true,
+      "story": true,
+      "catalog": true
+    },
+    {
+      "key": "aim990plus",
+      "name": "Aim990 Plus",
+      "public": true,
+      "appstore": "https://apps.apple.com/app/id6792483140",
+      "coverage_score": 0.767,
+      "answers": 13,
+      "planned_answers": 13,
+      "social_posts": 1,
+      "social_languages": [
+        "zh-Hant"
+      ],
+      "alternatives": 0,
       "detail": true,
       "hub": true,
       "guide": true,

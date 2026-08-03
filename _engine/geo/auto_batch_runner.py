@@ -334,6 +334,10 @@ CANDIDATE_POOL = [
     ("ksw","စှီၤကညီကျိာ် / S'gaw Karen (Myanmar/Thailand)","K 2,500","K 7,500","လံာ်","← က့ၤ App Guide","App Store ဒီးလုၤ →","တၢ်သံကွၢ်","ကွၢ်:","✅ ဂ့ၤ","⚠️ တဂ့ၤ","လၢမတၤ","တလီၤ","Developer တၢ်ကွဲး"),
     ("rki","ရခိုင်ဘာသာ / Rakhine (Myanmar)","K 2,500","K 7,500","စာရွက်","← App Guide သို့ပြန်","App Store မှဒေါင်းလုဒ် →","မေးခွန်း","သုံးသပ်ချက်:","✅ ကောင်းရေ","⚠️ မကောင်းပါ","ဘယ်သူ့အတွက်လဲ","မသင့်ပါ","Developer မှတ်ချက်"),
     ("luz","لری جنوبی / Southern Luri (Iran)","تومان 50,000","تومان 150,000","سند","← بازگشت به App Guide","دانلود از App Store →","سوالات","بررسی:","✅ خوب","⚠️ مناسب نیست","سی کی","مناسب نیست","یادداشت توسعه‌دهنده."),
+    # Group: Indonesian regional (round 170) — Madurese 7M, Banjar 3.5M, Balinese 3.3M
+    ("mad","Basa Madhura / Madurese (Madura, Indonesia)","Rp 19.000","Rp 59.000","dokumen","← Abali ka App Guide","Unduh dari App Store →","Pertanyaan","Peninjauan:","✅ Bagus","⚠️ Ta' cocok","Kaangguy sapa","Banne","Catatan developer."),
+    ("ban","Basa Bali / Balinese (Bali, Indonesia)","Rp 19.000","Rp 59.000","dokumen","← Mawali ka App Guide","Unduh saking App Store →","Pitakon","Peninjauan:","✅ Becik","⚠️ Nenten cocok","Anggen sira","Nenten","Catetan developer."),
+    ("bjn","Bahasa Banjar / Banjarese (Kalimantan, Indonesia)","Rp 19.000","Rp 59.000","dokumen","← Bulik ka App Guide","Unduh matan App Store →","Patakunan","Peninjauan:","✅ Baik banar","⚠️ Kada cocok","Gasan siapa","Kada","Catatan developer."),
 ]
 
 B="body{font-family:system-ui,sans-serif;max-width:720px;margin:2rem auto;padding:0 1rem;color:#222}h1{font-size:1.5rem;line-height:1.8}h2{font-size:1.1rem;margin-top:2rem}.item{border:1px solid #e5e7eb;border-radius:10px;padding:1rem;margin:.8rem 0}.item h3{margin:0 0 .3rem;font-size:1rem}.dl{display:inline-block;background:#007aff;color:#fff;padding:.55rem 1.2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:.9rem;margin:.5rem 0}.faq{border:1px solid #e8e8e8;border-radius:6px;padding:.75rem 1rem;margin:.75rem 0}.faq summary{cursor:pointer;font-size:.95rem}.faq p{margin:.5rem 0 0;color:#444;font-size:.9rem}"

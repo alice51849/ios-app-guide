@@ -21,6 +21,12 @@
       "offline travel",
       "vacation planner",
       "trip organizer"
+    ],
+    "shots_dir": "~/00_GrowthEngine/social/assets/tripbee",
+    "shots": [
+      "01",
+      "02",
+      "03"
     ]
   },
   "sereno": {
@@ -47,6 +53,12 @@
       "tinnitus",
       "ocean",
       "meditation"
+    ],
+    "shots_dir": "~/00_GrowthEngine/social/assets/sereno",
+    "shots": [
+      "01",
+      "02",
+      "03"
     ]
   },
   "wordmate": {
@@ -76,6 +88,12 @@
       "pronunciation",
       "example sentences",
       "no subscription"
+    ],
+    "shots_dir": "~/00_GrowthEngine/social/assets/wordmate",
+    "shots": [
+      "01",
+      "02",
+      "03"
     ]
   },
   "tripbeelite": {
@@ -99,7 +117,13 @@
       "first trip plan",
       "best simple trip planner app for one upcoming trip iphone"
     ],
-    "keyword_source": "reviewed_persona"
+    "keyword_source": "reviewed_persona",
+    "shots_dir": "~/00_GrowthEngine/social/assets/tripbeelite",
+    "shots": [
+      "01",
+      "02",
+      "03"
+    ]
   },
   "dailymate": {
     "appstore_id": "6790418321",
@@ -122,7 +146,13 @@
       "real life language phrases",
       "best practical language phrase app for travelers with apple watch"
     ],
-    "keyword_source": "reviewed_persona"
+    "keyword_source": "reviewed_persona",
+    "shots_dir": "~/00_GrowthEngine/social/assets/dailymate",
+    "shots": [
+      "01",
+      "02",
+      "03"
+    ]
   },
   "wifiaid": {
     "appstore_id": "6790467886",
@@ -141,6 +171,12 @@
       "wifi",
       "aid",
       "utilities"
+    ],
+    "shots_dir": "~/00_GrowthEngine/social/assets/wifiaid",
+    "shots": [
+      "01",
+      "02",
+      "03"
     ]
   },
   "gmoneylite": {
@@ -164,7 +200,13 @@
       "offline trip expense tracker",
       "travel money app no subscription"
     ],
-    "keyword_source": "reviewed_persona"
+    "keyword_source": "reviewed_persona",
+    "shots_dir": "~/00_GrowthEngine/social/assets/gmoneylite",
+    "shots": [
+      "01",
+      "02",
+      "03"
+    ]
   },
   "mochidonestamp": {
     "appstore_id": "6790800323",
@@ -187,7 +229,13 @@
       "recurring life event history",
       "routine reminder no subscription"
     ],
-    "keyword_source": "reviewed_persona"
+    "keyword_source": "reviewed_persona",
+    "shots_dir": "~/00_GrowthEngine/social/assets/mochidonestamp",
+    "shots": [
+      "01",
+      "02",
+      "03"
+    ]
   },
   "aibriefpack": {
     "appstore_id": "6791658210",
@@ -210,7 +258,13 @@
       "ai prompt context organizer",
       "source tracking for ai prompts"
     ],
-    "keyword_source": "reviewed_persona"
+    "keyword_source": "reviewed_persona",
+    "shots_dir": "~/00_GrowthEngine/social/assets/aibriefpack",
+    "shots": [
+      "01",
+      "02",
+      "03"
+    ]
   },
   "hourstaglite": {
     "appstore_id": "6794039979",
@@ -233,7 +287,11 @@
       "need want impulse tracker",
       "life cost calculator"
     ],
-    "keyword_source": "reviewed_persona"
+    "keyword_source": "reviewed_persona",
+    "shots_dir": "~/00_GrowthEngine/social/assets/hourstaglite",
+    "shots": [
+      "01"
+    ]
   },
   "maskmyfile": {
     "appstore_id": "6792850916",
@@ -252,6 +310,12 @@
       "mask",
       "file",
       "utilities"
+    ],
+    "shots_dir": "~/00_GrowthEngine/social/assets/maskmyfile",
+    "shots": [
+      "01",
+      "02",
+      "03"
     ]
   },
   "aim990plus": {
@@ -271,6 +335,12 @@
       "aim",
       "plus",
       "education"
+    ],
+    "shots_dir": "~/00_GrowthEngine/social/assets/aim990plus",
+    "shots": [
+      "01",
+      "02",
+      "03"
     ]
   }
 }

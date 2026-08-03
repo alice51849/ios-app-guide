@@ -88,8 +88,8 @@ APPS = {
     ),
     "picclear": dict(
         name="PicClear", search="PicClear", category="photo-utility",
-        icon="~/12_PicClear/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
-        shots_dir="~/12_PicClear/fastlane/screenshots", locale="en-US",
+        icon="~/12_PicClearPro/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+        shots_dir="~/12_PicClearPro/fastlane/screenshots", locale="en-US",
         shots=["iphone_01_home", "iphone_02_duplicates", "iphone_04_largevideos"],
         kicker="PHONE STORAGE",
         title="Your storage is\nfull of junk",
@@ -174,7 +174,7 @@ APPS = {
     ),
     "unblurry": dict(
         name="Unblurry", search="Unblurry", category="photo-utility",
-        icon="~/20_Unblurry/Unblurry/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+        icon="~/21_UnblurryPro/Unblurry/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
         shots_dir="~/00_GrowthEngine/social/assets/unblurry", locale="",
         shots=["01", "02", "03"],
         kicker="PHOTO RESCUE",
@@ -188,7 +188,7 @@ APPS = {
     ),
     "photocream": dict(
         name="PhotoCream", search="PhotoCream", category="photo-utility",
-        icon="~/17_PhotoCream/Photocream/Resources/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
+        icon="~/17_PhotoCreamPro/Photocream/Resources/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
         shots_dir="~/00_GrowthEngine/social/assets/photocream", locale="",
         shots=["01", "04", "06"],
         kicker="FILM LOOK",
@@ -337,7 +337,7 @@ APPS = {
     ),
     "zodira": dict(
         name="Zodira", search="Zodira", category="lifestyle",
-        icon="~/21_Astrea/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+        icon="~/22_Zodira/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
         shots_dir="~/00_GrowthEngine/social/assets/zodira", locale="",
         shots=["01", "02", "03"],
         kicker="COSMIC CLARITY",
@@ -351,7 +351,7 @@ APPS = {
     ),
     "aim990": dict(
         name="Aim990", search="Aim990", category="education",
-        icon="~/Aim990/Aim990/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+        icon="~/30_Aim990/Aim990/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
         shots_dir="~/00_GrowthEngine/social/assets/aim990", locale="",
         shots=["01", "02", "03"],
         kicker="TOEIC SPRINT",
@@ -365,7 +365,7 @@ APPS = {
     ),
     "mochi": dict(
         name="Mochi", search="Mochi Checklist", category="productivity",
-        icon="~/20_MochiTodo/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png", shots_dir="~/00_GrowthEngine/social/assets/mochi", locale="", shots=["01", "02", "03"],
+        icon="~/20_Mochi/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png", shots_dir="~/00_GrowthEngine/social/assets/mochi", locale="", shots=["01", "02", "03"],
         kicker="COZY TO-DO",
         title="The to-do list that\nfeels good to finish",
         sub="Cute, cozy checklists with a satisfying tap to complete — free, no ads",
@@ -377,7 +377,7 @@ APPS = {
     ),
     "zafe": dict(
         name="Zafe", search="Zafe Photo Vault", category="photo-utility",
-        icon="~/Zafe/Zafe/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png", shots_dir="~/00_GrowthEngine/social/assets/zafe", locale="", shots=["01", "02", "03"],
+        icon="~/31_Zafe/Zafe/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png", shots_dir="~/00_GrowthEngine/social/assets/zafe", locale="", shots=["01", "02", "03"],
         kicker="PRIVATE VAULT",
         title="Hide your private\nphotos for good",
         sub="Lock private photos & videos behind Face ID — everything stays on your iPhone",
@@ -389,7 +389,7 @@ APPS = {
     ),
     "tripplanet": dict(
         name="Lumi Trip Planet", search="Lumi Trip Planet", category="kids",
-        icon="~/22_TripPlanet/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png", shots_dir="~/00_GrowthEngine/social/assets/tripplanet", locale="", shots=["01", "02", "03"],
+        icon="~/23_LumiTripPlanet/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png", shots_dir="~/00_GrowthEngine/social/assets/tripplanet", locale="", shots=["01", "02", "03"],
         kicker="AGES 4–10",
         title="Turn every trip into\na kid's adventure",
         sub="Fun travel games, packing help & discovery for little explorers",
@@ -455,14 +455,17 @@ _AUTO_PATH = os.path.join(os.path.dirname(__file__), "registry_auto.json")
 if os.path.exists(_AUTO_PATH):
     try:
         import json as _json
-        for _k, _v in _json.load(open(_AUTO_PATH, encoding="utf-8")).items():
+        with open(_AUTO_PATH, encoding="utf-8") as _handle:
+            _automatic_apps = _json.load(_handle)
+        for _k, _v in _automatic_apps.items():
             if _k in APPS:
                 continue
             APPSTORE.setdefault(_k, _v["appstore_id"])
             APPS[_k] = dict(
                 name=_v["name"], search=_v.get("search", _v["name"]),
                 category=_v.get("category", "other"),
-                icon="", shots_dir="", locale="", shots=[],
+                icon=_v.get("icon", ""), shots_dir=_v.get("shots_dir", ""),
+                locale=_v.get("locale", ""), shots=_v.get("shots", []),
                 kicker=_v.get("kicker", ""), title=_v.get("title", _v["name"]),
                 sub=_v.get("sub", ""),
                 tag=_v.get("tag", "See App Store for current details"),

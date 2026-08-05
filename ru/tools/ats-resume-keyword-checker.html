@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Приватный планировщик покрытия резюме доказательствами | Подготовка к ATS, без загрузок</title>
+<meta name="description" content="Считайте требования вакансии, подкреплённые честными доказательствами, и проверяйте разделы резюме — не вставляя объявление, резюме, имя, работодателя или контакты.">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/ru/tools/ats-resume-keyword-checker.html">
+<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/ats-resume-keyword-checker.html">
+<link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/es-ES/tools/ats-resume-keyword-checker.html">
+<link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/tools/ats-resume-keyword-checker.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tools/ats-resume-keyword-checker.html">
+<link rel="alternate" hreflang="fr-FR" href="https://alice51849.github.io/ios-app-guide/fr-FR/tools/ats-resume-keyword-checker.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/ats-resume-keyword-checker.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/tools/ats-resume-keyword-checker.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/ats-resume-keyword-checker.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/tools/ats-resume-keyword-checker.html">
+<link rel="alternate" hreflang="vi" href="https://alice51849.github.io/ios-app-guide/vi/tools/ats-resume-keyword-checker.html">
+<link rel="alternate" hreflang="th" href="https://alice51849.github.io/ios-app-guide/th/tools/ats-resume-keyword-checker.html">
+<link rel="alternate" hreflang="id" href="https://alice51849.github.io/ios-app-guide/id/tools/ats-resume-keyword-checker.html">
+<link rel="alternate" hreflang="tr" href="https://alice51849.github.io/ios-app-guide/tr/tools/ats-resume-keyword-checker.html">
+<link rel="alternate" hreflang="hi" href="https://alice51849.github.io/ios-app-guide/hi/tools/ats-resume-keyword-checker.html">
+<link rel="alternate" hreflang="ms" href="https://alice51849.github.io/ios-app-guide/ms/tools/ats-resume-keyword-checker.html">
+<link rel="alternate" hreflang="ru" href="https://alice51849.github.io/ios-app-guide/ru/tools/ats-resume-keyword-checker.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/ats-resume-keyword-checker.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Приватный планировщик покрытия резюме доказательствами">
+<meta property="og:description" content="Считайте требования вакансии, подкреплённые честными доказательствами, и проверяйте разделы резюме — не вставляя объявление, резюме, имя, работодателя или контакты.">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/ru/tools/ats-resume-keyword-checker.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#21314a;--muted:#67738a;--line:#dfe5f0;--paper:#fff;--bg:#f3f6fb;--deep:#3949a3;--violet:#7566c8;--soft:#edf0ff;--warn:#fff6d8;--shadow:0 22px 60px rgba(47,57,108,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,#fff 0,var(--bg) 55%,#e9edf7 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",sans-serif;line-height:1.62}
+a{color:var(--deep)}.wrap{width:min(1120px,calc(100% - 30px));margin:auto}.top{position:sticky;top:0;z-index:8;background:#fffffff2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}.links{display:flex;gap:15px;overflow-x:auto}
+.hero{padding:64px 0 30px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--deep);white-space:nowrap}.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif",serif}.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.04;letter-spacing:-.035em;margin:.3em 0 .22em;white-space:nowrap;overflow-x:auto}.lead{font-size:clamp(17px,2.2vw,21px);color:var(--muted);margin:0;white-space:nowrap;overflow-x:auto}.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.planner,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}.planner{padding:clamp(20px,4vw,36px);margin:16px auto 30px}.planner h2,.card h2,.app-card h2{font-size:clamp(24px,3.6vw,34px);line-height:1.14;margin:0;white-space:nowrap;overflow-x:auto}.intro{color:var(--muted);white-space:nowrap;overflow-x:auto}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px}.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--deep);margin-bottom:6px;white-space:nowrap;overflow-x:auto}select,input,button{font:inherit}select,input[type=number]{width:100%;min-height:46px;border:1px solid #cad2e4;border-radius:13px;background:#fff;color:var(--ink);padding:9px 11px}.toggle{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:14px;padding:11px 13px;background:#fff;font-weight:760;white-space:nowrap;overflow-x:auto}.toggle input{inline-size:20px;block-size:20px;flex:0 0 auto}.button{border:0;border-radius:999px;background:linear-gradient(135deg,var(--deep),var(--violet));color:#fff;text-decoration:none;font-weight:850;padding:11px 17px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(57,73,163,.2)}
+.results{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin-top:22px}.result{background:var(--soft);border:1px solid #d7dcfa;border-radius:17px;padding:14px;min-width:0}.result strong,.result span{display:block;white-space:nowrap;overflow-x:auto}.result strong{font-size:12px;color:#5360a8;text-transform:uppercase;letter-spacing:.04em}.result span{font-size:15px;color:#3b467a;font-weight:760;margin-top:5px}.note{background:var(--warn);border:1px solid #ead9a7;border-radius:16px;padding:13px 15px;margin:14px 0 0;white-space:nowrap;overflow-x:auto}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:30px}.card,.app-card{padding:clamp(20px,3.5vw,30px)}.card.wide{grid-column:1/-1}.card p,.card li,.app-card p,.faq details p,.faq summary{white-space:nowrap;overflow-x:auto}.card ul,.card ol{padding-left:22px}.card li{margin:8px 0}.source-list a{overflow-wrap:anywhere}.app-card{margin:0 auto 38px;background:linear-gradient(135deg,#fff,#edf0ff)}.app-card .button{display:inline-flex;margin-top:5px}.faq{margin-bottom:30px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+.footer{background:var(--deep);color:#f4f5ff;text-align:center;padding:27px 0;white-space:nowrap;overflow-x:auto}
+@media(max-width:960px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.controls,.results{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1120px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{.top,.hero,.controls,.button,.app-card,.footer{display:none!important}body{background:#fff}.planner,.card{box-shadow:none;break-inside:avoid}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Приватный планировщик покрытия резюме доказательствами","description":"Считайте требования вакансии, подкреплённые честными доказательствами, и проверяйте разделы резюме — не вставляя объявление, резюме, имя, работодателя или контакты.","url":"https://alice51849.github.io/ios-app-guide/ru/tools/ats-resume-keyword-checker.html","inLanguage":"ru","datePublished":"2026-07-15","dateModified":"2026-07-15","applicationCategory":"BusinessApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Без текста резюме и объявления","Без имён, контактов и работодателей","Без файлов, загрузок и аккаунтов","Без баллов, порогов и прогнозов найма","Подсчёт или доля не могут показать, распарсит ли, отранжирует ли или отклонит ли резюме ATS работодателя, согласится ли рекрутер и превратится ли отклик в собеседование или оффер. Работодатели, роли и системы различаются. Целевой порог не применяется."],"citation":["https://www.dol.gov/agencies/vets/programs/tap/teams-workshops/resume-essentials","https://nationalcareers.service.gov.uk/careers-advice/cv-sections","https://europass.europa.eu/en/create-europass-cv"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Принимает ли страница моё резюме или описание вакансии?","acceptedAnswer":{"@type":"Answer","text":"Нет. Она принимает только ограниченные подсчёты, значения да/нет и выборы статуса формата."}},{"@type":"Question","name":"Является ли доля доказательств ATS-баллом?","acceptedAnswer":{"@type":"Answer","text":"Нет. Это лишь подкреплённое число, делённое на подсчитанный вами итог; без цели и рейтинга."}},{"@type":"Question","name":"Что делать, если требование нечем подкрепить?","acceptedAnswer":{"@type":"Answer","text":"Не выдумывайте опыт или ключевые слова. Оставьте его неподкреплённым или добавьте доказательство, только если оно честно и уместно."}},{"@type":"Question","name":"Каждый результат должен быть числом?","acceptedAnswer":{"@type":"Answer","text":"Нет. Используйте число, только если оно верно и защитимо; конкретный честный качественный результат тоже полезен."}}]}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/ru/index.html">iOS App Guide</a><nav class="links"><a href="https://alice51849.github.io/ios-app-guide/ru/tools/index.html">Бесплатные инструменты</a><a href="https://alice51849.github.io/ios-app-guide/tools/ats-resume-keyword-checker.html">English</a></nav></div></header>
+<main>
+<section class="hero wrap"><div class="eyebrow">Бесплатно · без текста резюме · без ATS-балла</div><h1>Приватный планировщик покрытия резюме доказательствами</h1><p class="lead">По подсчётам, сделанным вне этой страницы, увидьте, какие требования всё ещё требуют честной поддержки. Это не анализ ATS, не рейтинг и не прогноз найма.</p><div class="badges"><span class="badge">Без текста резюме и объявления</span><span class="badge">Без имён, контактов и работодателей</span><span class="badge">Без файлов, загрузок и аккаунтов</span><span class="badge">Без баллов, порогов и прогнозов найма</span></div></section>
+<section class="planner wrap"><h2>Записывайте только нечувствительные самоподсчёты</h2><p class="intro">Читайте актуальное объявление вне этой страницы. Вводите только числа; никогда не вставляйте документы или личные детали.</p>
+<form id="resume-evidence-planner"><div class="controls">
+<div class="field"><label for="market-format">Контекст формата</label><select id="market-format"><option value="not-checked">Не проверено</option><option value="us-resume">Резюме в стиле США</option><option value="uk-cv">CV Великобритании</option><option value="europass">CV Europass</option><option value="other">Другой рынок или формат</option></select></div>
+<div class="field"><label for="listed-requirements">Подсчитанные явные требования</label><input id="listed-requirements" type="number" min="0" max="100" step="1" value="0" required></div>
+<div class="field"><label for="evidence-requirements">Требования с честными доказательствами</label><input id="evidence-requirements" type="number" min="0" max="100" step="1" value="0" required></div>
+<div class="field"><label for="experience-bullets">Подсчитанные пункты опыта</label><input id="experience-bullets" type="number" min="0" max="100" step="1" value="0" required></div>
+<div class="field"><label for="outcome-bullets">Пункты с проверенными результатами</label><input id="outcome-bullets" type="number" min="0" max="100" step="1" value="0" required></div>
+<div class="field"><label for="layout-review">Проверка экспортированного текста и вёрстки</label><select id="layout-review"><option value="not-checked">Не проверено</option><option value="selectable-simple">Текст выделяется, вёрстка простая</option><option value="needs-review">Нужна проверка или вёрстка сложная</option></select></div>
+<label class="toggle"><input id="has-experience" type="checkbox">Раздел опыта есть</label>
+<label class="toggle"><input id="has-skills" type="checkbox">Раздел навыков есть</label>
+<label class="toggle"><input id="has-education" type="checkbox">Раздел образования есть</label>
+</div><p><button class="button" type="submit">Обновить приватный чек-лист</button></p></form>
+<div class="results"><div class="result"><strong>Честно подкреплённые требования</strong><span id="result-requirements"></span></div><div class="result"><strong>Пункты с проверенными результатами</strong><span id="result-outcomes"></span></div><div class="result"><strong>Имеющиеся стандартные разделы</strong><span id="result-sections"></span></div><div class="result"><strong>Проверка текста и вёрстки</strong><span id="result-layout"></span></div></div>
+<p class="note"><strong>Следующий порядок проверки:</strong> <span id="result-plan"></span></p></section>
+<section class="wrap grid"><article class="card"><h2>Следующий порядок проверки</h2><ol><li>Считайте только явные требования актуального объявления — вне этой страницы.</li><li>Связывайте каждое подкреплённое требование с честным доказательством, которое можете объяснить; никогда не выдумывайте опыт.</li><li>Добавляйте результат в пункт только если он проверен; не выдумывайте числа.</li><li>Используйте чёткие заголовки разделов; проверьте, что в экспортированном файле текст выделяется и порядок чтения прост.</li><li>Следуйте актуальным инструкциям работодателя и официальному руководству по формату вашего рынка.</li></ol></article><article class="card"><h2>Чего эти подсчёты не доказывают</h2><p>Подсчёт или доля не могут показать, распарсит ли, отранжирует ли или отклонит ли резюме ATS работодателя, согласится ли рекрутер и превратится ли отклик в собеседование или оффер. Работодатели, роли и системы различаются. Целевой порог не применяется.</p></article><article class="card wide"><h2>Официальные руководства по резюме до любого необязательного приложения</h2><p>Сначала используйте актуальные инструкции работодателя. Эти официальные публичные источники дают структуру по рынкам; ни один не раскрывает формулу ATS какого-либо работодателя.</p><ul class="source-list"><li><a href="https://www.dol.gov/agencies/vets/programs/tap/teams-workshops/resume-essentials" rel="noopener">Министерство труда США: Resume Essentials</a></li><li><a href="https://nationalcareers.service.gov.uk/careers-advice/cv-sections" rel="noopener">National Careers Service (Великобритания): как написать CV</a></li><li><a href="https://europass.europa.eu/en/create-europass-cv" rel="noopener">Europass: создайте своё CV Europass</a></li></ul><p><a href="https://developer.chrome.com/docs/ai/webmcp/imperative-api" rel="noopener">Предварительная версия императивного API Chrome WebMCP (может меняться)</a></p></article></section>
+<section class="wrap card faq"><h2>Вопросы о покрытии резюме доказательствами</h2><details><summary>Принимает ли страница моё резюме или описание вакансии?</summary><p>Нет. Она принимает только ограниченные подсчёты, значения да/нет и выборы статуса формата.</p></details><details><summary>Является ли доля доказательств ATS-баллом?</summary><p>Нет. Это лишь подкреплённое число, делённое на подсчитанный вами итог; без цели и рейтинга.</p></details><details><summary>Что делать, если требование нечем подкрепить?</summary><p>Не выдумывайте опыт или ключевые слова. Оставьте его неподкреплённым или добавьте доказательство, только если оно честно и уместно.</p></details><details><summary>Каждый результат должен быть числом?</summary><p>Нет. Используйте число, только если оно верно и защитимо; конкретный честный качественный результат тоже полезен.</p></details></section>
+<section class="app-card wrap"><h2>Нужен поток резюме на устройстве (по желанию)?</h2><p>CV Desk — по желанию. Текущая страница App Store описывает оценку ATS на устройстве, шаблоны, экспорт PDF и DOCX, бесплатное создание и предпросмотр, разовую разблокировку без подписки, аккаунтов, загрузок и водяных знаков. Поведение ATS и решения работодателей изменчивы; проверьте актуальную страницу и инструкции работодателя. Планировщик работает и без приложения.</p><a class="button" href="https://apps.apple.com/app/id6781337213" rel="nofollow noopener">Открыть CV Desk в App Store</a></section>
+</main>
+<footer class="footer"><div class="wrap">Только приватные самоподсчёты · без документов · без ATS-балла · без прогнозов найма</div></footer>
+<script type="application/json" id="resume-evidence-config">{"inputSchema":{"type":"object","properties":{"market_format":{"type":"string","enum":["not-checked","us-resume","uk-cv","europass","other"],"description":"Контекст формата"},"listed_requirements":{"type":"integer","minimum":0,"maximum":100,"description":"Подсчитанные явные требования"},"requirements_with_truthful_evidence":{"type":"integer","minimum":0,"maximum":100,"description":"Требования с честными доказательствами. Подкреплённые требования не могут превышать общее число требований; пункты с проверенными результатами — общее число пунктов опыта."},"experience_bullets":{"type":"integer","minimum":0,"maximum":100,"description":"Подсчитанные пункты опыта"},"bullets_with_verified_outcomes":{"type":"integer","minimum":0,"maximum":100,"description":"Пункты с проверенными результатами. Подкреплённые требования не могут превышать общее число требований; пункты с проверенными результатами — общее число пунктов опыта."},"has_experience_section":{"type":"boolean","description":"Раздел опыта есть"},"has_skills_section":{"type":"boolean","description":"Раздел навыков есть"},"has_education_section":{"type":"boolean","description":"Раздел образования есть"},"text_layout_review":{"type":"string","enum":["not-checked","selectable-simple","needs-review"],"description":"Проверка экспортированного текста и вёрстки"}},"required":["market_format","listed_requirements","requirements_with_truthful_evidence","experience_bullets","bullets_with_verified_outcomes","has_experience_section","has_skills_section","has_education_section","text_layout_review"],"additionalProperties":false},"labels":{"market":{"not-checked":"Не проверено","us-resume":"Резюме в стиле США","uk-cv":"CV Великобритании","europass":"CV Europass","other":"Другой рынок или формат"},"layout":{"not-checked":"Не проверено","selectable-simple":"Текст выделяется, вёрстка простая","needs-review":"Нужна проверка или вёрстка сложная"}},"nextSteps":["Считайте только явные требования актуального объявления — вне этой страницы.","Связывайте каждое подкреплённое требование с честным доказательством, которое можете объяснить; никогда не выдумывайте опыт.","Добавляйте результат в пункт только если он проверен; не выдумывайте числа.","Используйте чёткие заголовки разделов; проверьте, что в экспортированном файле текст выделяется и порядок чтения прост.","Следуйте актуальным инструкциям работодателя и официальному руководству по формату вашего рынка."],"boundary":"Подсчёт или доля не могут показать, распарсит ли, отранжирует ли или отклонит ли резюме ATS работодателя, согласится ли рекрутер и превратится ли отклик в собеседование или оффер. Работодатели, роли и системы различаются. Целевой порог не применяется.","invalidInput":"Введите целые числа от 0 до 100.","relationInvalid":"Подкреплённые требования не могут превышать общее число требований; пункты с проверенными результатами — общее число пунктов опыта.","toolDescription":"Строит прозрачный чек-лист покрытия резюме доказательствами из ограниченных нечувствительных самоподсчётов и выборов статуса. Никогда не принимает текст резюме, текст объявления, имена, контакты, работодателей, даты, файлы или аккаунты; не выдаёт ATS-балл, результат парсинга, рейтинг, вероятность найма или рекомендации.","freePlanner":{"label":"Приватный планировщик покрытия резюме доказательствами","url":"https://alice51849.github.io/ios-app-guide/ru/tools/ats-resume-keyword-checker.html","boundary":"Читайте актуальное объявление вне этой страницы. Вводите только числа; никогда не вставляйте документы или личные детали."},"officialSources":[{"label":"Министерство труда США: Resume Essentials","url":"https://www.dol.gov/agencies/vets/programs/tap/teams-workshops/resume-essentials"},{"label":"National Careers Service (Великобритания): как написать CV","url":"https://nationalcareers.service.gov.uk/careers-advice/cv-sections"},{"label":"Europass: создайте своё CV Europass","url":"https://europass.europa.eu/en/create-europass-cv"}],"webmcpSource":"https://developer.chrome.com/docs/ai/webmcp/imperative-api","optionalApp":{"label":"Открыть CV Desk в App Store","boundary":"CV Desk — по желанию. Текущая страница App Store описывает оценку ATS на устройстве, шаблоны, экспорт PDF и DOCX, бесплатное создание и предпросмотр, разовую разблокировку без подписки, аккаунтов, загрузок и водяных знаков. Поведение ATS и решения работодателей изменчивы; проверьте актуальную страницу и инструкции работодателя. Планировщик работает и без приложения.","app_store_url":"https://apps.apple.com/app/id6781337213"}}</script>
+<script>
+(() => {
+  const config = JSON.parse(document.getElementById("resume-evidence-config").textContent);
+  const form = document.getElementById("resume-evidence-planner");
+  const fields = {
+    market_format: document.getElementById("market-format"),
+    listed_requirements: document.getElementById("listed-requirements"),
+    requirements_with_truthful_evidence: document.getElementById("evidence-requirements"),
+    experience_bullets: document.getElementById("experience-bullets"),
+    bullets_with_verified_outcomes: document.getElementById("outcome-bullets"),
+    has_experience_section: document.getElementById("has-experience"),
+    has_skills_section: document.getElementById("has-skills"),
+    has_education_section: document.getElementById("has-education"),
+    text_layout_review: document.getElementById("layout-review")
+  };
+  const output = {
+    requirements: document.getElementById("result-requirements"),
+    outcomes: document.getElementById("result-outcomes"),
+    sections: document.getElementById("result-sections"),
+    layout: document.getElementById("result-layout"),
+    plan: document.getElementById("result-plan")
+  };
+
+  function integerValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const schema = config.inputSchema.properties[name];
+    if (typeof value !== "number" || !Number.isInteger(value)) {
+      throw new TypeError(`${name} must be an integer.`);
+    }
+    if (value < schema.minimum || value > schema.maximum) {
+      throw new RangeError(`${name} is outside the supported range.`);
+    }
+    return value;
+  }
+
+  function enumValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const values = config.inputSchema.properties[name].enum;
+    if (typeof value !== "string" || !values.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    return value;
+  }
+
+  function booleanValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    if (typeof input[name] !== "boolean") {
+      throw new TypeError(`${name} must be a boolean.`);
+    }
+    return input[name];
+  }
+
+  function plan(input) {
+    const market = enumValue(input, "market_format");
+    const listed = integerValue(input, "listed_requirements");
+    const evidence = integerValue(input, "requirements_with_truthful_evidence");
+    const bullets = integerValue(input, "experience_bullets");
+    const outcomes = integerValue(input, "bullets_with_verified_outcomes");
+    const experienceSection = booleanValue(input, "has_experience_section");
+    const skillsSection = booleanValue(input, "has_skills_section");
+    const educationSection = booleanValue(input, "has_education_section");
+    const layout = enumValue(input, "text_layout_review");
+    if (evidence > listed) {
+      throw new RangeError(
+        "requirements_with_truthful_evidence cannot exceed listed_requirements.");
+    }
+    if (outcomes > bullets) {
+      throw new RangeError(
+        "bullets_with_verified_outcomes cannot exceed experience_bullets.");
+    }
+    const sections = {
+      experience: experienceSection,
+      skills: skillsSection,
+      education: educationSection
+    };
+    const presentSections = Object.values(sections).filter(Boolean).length;
+    return {
+      selected_inputs: {
+        market_format: market,
+        market_format_label: config.labels.market[market],
+        listed_requirements: listed,
+        requirements_with_truthful_evidence: evidence,
+        experience_bullets: bullets,
+        bullets_with_verified_outcomes: outcomes,
+        standard_sections: sections,
+        text_layout_review: layout,
+        text_layout_review_label: config.labels.layout[layout]
+      },
+      self_counted_evidence_coverage: {
+        requirement_evidence: {
+          supported_count: evidence,
+          listed_count: listed,
+          ratio: listed === 0 ? null : evidence / listed
+        },
+        outcome_evidence: {
+          verified_outcome_bullets: outcomes,
+          experience_bullets: bullets,
+          ratio: bullets === 0 ? null : outcomes / bullets
+        },
+        standard_sections_present: presentSections,
+        standard_sections_checked: 3,
+        no_target_threshold_applied: true,
+        is_not_ats_score: true
+      },
+      evidence_gaps_for_manual_review: {
+        listed_requirements_without_truthful_evidence: listed - evidence,
+        experience_bullets_without_verified_outcome: bullets - outcomes
+      },
+      next_review_steps: config.nextSteps,
+      boundary: config.boundary
+    };
+  }
+
+  function validateInput(input) {
+    if (input === null || typeof input !== "object" || Array.isArray(input)) {
+      throw new TypeError("WebMCP input must be an object.");
+    }
+    const allowed = new Set(Object.keys(config.inputSchema.properties));
+    for (const name of Object.keys(input)) {
+      if (!allowed.has(name)) {
+        throw new RangeError(`${name} is not a supported input.`);
+      }
+    }
+    return plan(input);
+  }
+
+  function humanInteger(field, name) {
+    const raw = String(field.value).trim();
+    const value = raw === "" ? Number.NaN : Number(raw);
+    const schema = config.inputSchema.properties[name];
+    if (!Number.isInteger(value) ||
+        value < schema.minimum ||
+        value > schema.maximum) {
+      throw new RangeError(`${name} is outside the supported range.`);
+    }
+    return value;
+  }
+
+  function renderInvalid(message) {
+    output.requirements.textContent = "—";
+    output.outcomes.textContent = "—";
+    output.sections.textContent = "—";
+    output.layout.textContent = "—";
+    output.plan.textContent = message;
+  }
+
+  function render() {
+    let result;
+    try {
+      result = plan({
+        market_format: fields.market_format.value,
+        listed_requirements: humanInteger(
+          fields.listed_requirements, "listed_requirements"),
+        requirements_with_truthful_evidence: humanInteger(
+          fields.requirements_with_truthful_evidence,
+          "requirements_with_truthful_evidence"),
+        experience_bullets: humanInteger(
+          fields.experience_bullets, "experience_bullets"),
+        bullets_with_verified_outcomes: humanInteger(
+          fields.bullets_with_verified_outcomes,
+          "bullets_with_verified_outcomes"),
+        has_experience_section: fields.has_experience_section.checked,
+        has_skills_section: fields.has_skills_section.checked,
+        has_education_section: fields.has_education_section.checked,
+        text_layout_review: fields.text_layout_review.value
+      });
+    } catch (error) {
+      if (error instanceof TypeError || error instanceof RangeError) {
+        const relationError =
+          fields.requirements_with_truthful_evidence.valueAsNumber >
+            fields.listed_requirements.valueAsNumber ||
+          fields.bullets_with_verified_outcomes.valueAsNumber >
+            fields.experience_bullets.valueAsNumber;
+        renderInvalid(relationError ? config.relationInvalid : config.invalidInput);
+        return;
+      }
+      throw error;
+    }
+    const coverage = result.self_counted_evidence_coverage;
+    output.requirements.textContent =
+      `${coverage.requirement_evidence.supported_count} / ` +
+      `${coverage.requirement_evidence.listed_count}`;
+    output.outcomes.textContent =
+      `${coverage.outcome_evidence.verified_outcome_bullets} / ` +
+      `${coverage.outcome_evidence.experience_bullets}`;
+    output.sections.textContent =
+      `${coverage.standard_sections_present} / ` +
+      `${coverage.standard_sections_checked}`;
+    output.layout.textContent =
+      result.selected_inputs.text_layout_review_label;
+    output.plan.textContent = result.next_review_steps.join(" ");
+  }
+
+  async function registerWebMcp() {
+    if (!document.modelContext?.registerTool) return;
+    await document.modelContext.registerTool({
+      name: "plan_private_resume_evidence_coverage",
+      description: config.toolDescription,
+      inputSchema: config.inputSchema,
+      annotations: {readOnlyHint: true, untrustedContentHint: false},
+      execute: async (input) => {
+        const plan = validateInput(input);
+        const result = {
+          result_type: "private_resume_evidence_coverage_plan",
+          resume_job_post_personal_data_files_accounts_not_received: true,
+          no_ats_parse_score_ranking_or_hiring_prediction: true,
+          plan,
+          optional_free_planner: config.freePlanner,
+          official_sources: config.officialSources,
+          webmcp_preview_source: config.webmcpSource
+        };
+        if (config.optionalApp) {
+          result.optional_cv_desk = config.optionalApp;
+        }
+        return JSON.stringify(result);
+      }
+    });
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    render();
+  });
+  for (const field of Object.values(fields)) {
+    field.addEventListener("change", render);
+  }
+  render();
+  registerWebMcp().catch((error) =>
+    console.error("WebMCP tool registration failed.", error));
+})();
+</script>
+</body>
+</html>

@@ -1693,6 +1693,10 @@ def update_one_index(path: Path, locale: str) -> bool:
     else:
         marker = '<section class="wrap grid">'
         if marker not in updated:
+            # Lite-generated hub (vi/th/id/tr/hi/ms/ru) uses a different
+            # structure and is rebuilt by gen_tools_index_lite; skip.
+            if '<div class="grid">' in updated:
+                return False
             raise RuntimeError(f"{path} is missing its tools grid")
         updated = updated.replace(marker, marker + card, 1)
     if updated == text:

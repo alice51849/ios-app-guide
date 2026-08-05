@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>कार्य-घंटा कैलकुलेटर | निजी क़ीमत-से-समय उपकरण</title>
+<meta name="description" content="पारदर्शी स्थानीय गणित से किसी क़ीमत को कार्य-घंटों, कार्य-दिवसों और बचत-प्रयास में बदलें। कोई खाता, अपलोड, संग्रहण या वित्तीय सलाह नहीं।">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/hi/tools/hours-of-work-calculator.html">
+<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/hours-of-work-calculator.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/hours-of-work-calculator.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/tools/hours-of-work-calculator.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/hours-of-work-calculator.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/tools/hours-of-work-calculator.html">
+<link rel="alternate" hreflang="fr-FR" href="https://alice51849.github.io/ios-app-guide/fr-FR/tools/hours-of-work-calculator.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tools/hours-of-work-calculator.html">
+<link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/es-ES/tools/hours-of-work-calculator.html">
+<link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/tools/hours-of-work-calculator.html">
+<link rel="alternate" hreflang="vi" href="https://alice51849.github.io/ios-app-guide/vi/tools/hours-of-work-calculator.html">
+<link rel="alternate" hreflang="th" href="https://alice51849.github.io/ios-app-guide/th/tools/hours-of-work-calculator.html">
+<link rel="alternate" hreflang="id" href="https://alice51849.github.io/ios-app-guide/id/tools/hours-of-work-calculator.html">
+<link rel="alternate" hreflang="tr" href="https://alice51849.github.io/ios-app-guide/tr/tools/hours-of-work-calculator.html">
+<link rel="alternate" hreflang="hi" href="https://alice51849.github.io/ios-app-guide/hi/tools/hours-of-work-calculator.html">
+<link rel="alternate" hreflang="ms" href="https://alice51849.github.io/ios-app-guide/ms/tools/hours-of-work-calculator.html">
+<link rel="alternate" hreflang="ru" href="https://alice51849.github.io/ios-app-guide/ru/tools/hours-of-work-calculator.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/hours-of-work-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="यह ख़रीदारी आपके जीवन के कितने घंटे लेती है?">
+<meta property="og:description" content="पारदर्शी स्थानीय गणित से किसी क़ीमत को कार्य-घंटों, कार्य-दिवसों और बचत-प्रयास में बदलें। कोई खाता, अपलोड, संग्रहण या वित्तीय सलाह नहीं।">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/hi/tools/hours-of-work-calculator.html">
+<meta name="twitter:card" content="summary">
+<meta name="apple-itunes-app" content="app-id=6754218117">
+<style>
+:root{--ink:#17231d;--muted:#667269;--line:#dce5de;--paper:#fff;--bg:#f2f7f3;--forest:#244f3b;--mint:#7bb695;--soft:#e8f4ed;--gold:#f5ead0;--shadow:0 22px 60px rgba(26,67,46,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,#fff 0,var(--bg) 55%,#e5efe8 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:#286344}.wrap{width:min(1120px,calc(100% - 30px));margin:auto}.top{position:sticky;top:0;z-index:8;background:#fffffff2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}.links{display:flex;gap:15px;overflow-x:auto}
+.hero{padding:64px 0 30px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--forest);white-space:nowrap}.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}.hero h1{font-size:clamp(34px,6vw,62px);line-height:1.04;letter-spacing:-.035em;margin:.3em 0 .22em;white-space:nowrap;overflow-x:auto}.lead{font-size:clamp(17px,2.2vw,21px);color:var(--muted);margin:0;white-space:nowrap;overflow-x:auto}.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.calculator,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}.calculator{padding:clamp(20px,4vw,36px);margin:16px auto 30px}.calculator h2,.card h2,.app-card h2{font-size:clamp(24px,3.6vw,34px);line-height:1.14;margin:0;white-space:nowrap;overflow-x:auto}.intro{color:var(--muted);white-space:nowrap;overflow-x:auto}
+.controls{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:22px}.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--forest);margin-bottom:6px;white-space:nowrap;overflow-x:auto}select,input,button{font:inherit}select,input[type=number]{width:100%;min-height:46px;border:1px solid #cbd9cf;border-radius:13px;background:#fff;color:var(--ink);padding:9px 11px}.button{border:0;border-radius:999px;background:linear-gradient(135deg,var(--forest),#4d8b68);color:#fff!important;text-decoration:none;font-weight:850;padding:12px 18px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(36,79,59,.2)}
+.results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin-top:22px}.result{background:var(--soft);border:1px solid #cbe0d2;border-radius:17px;padding:14px;min-width:0}.result strong,.result span{display:block;white-space:nowrap;overflow-x:auto}.result strong{font-size:12px;color:#426852;text-transform:uppercase;letter-spacing:.04em}.result span{font-size:17px;color:#234c38;font-weight:820;margin-top:5px}.note{background:var(--gold);border:1px solid #e8d5a6;border-radius:16px;padding:13px 15px;margin:14px 0 0;white-space:nowrap;overflow-x:auto}.decision{background:#edf6ff;border:1px solid #cddff0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:30px}.card,.app-card{padding:clamp(20px,3.5vw,30px)}.card p,.card li,.app-card p,.faq details p,.faq summary{white-space:nowrap;overflow-x:auto}.card ol{padding-left:22px}.card li{margin:8px 0}.source-list a{overflow-wrap:anywhere}.app-card{margin:0 auto 38px;background:linear-gradient(135deg,#fbfffc,#e5f3e9)}.app-card .button{display:inline-flex;margin-top:5px}.faq{margin-bottom:30px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+.footer{background:var(--forest);color:#eff8f2;text-align:center;padding:27px 0;white-space:nowrap;overflow-x:auto}
+@media(max-width:960px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.controls,.results,.grid{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1120px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"यह ख़रीदारी आपके जीवन के कितने घंटे लेती है?","description":"पारदर्शी स्थानीय गणित से किसी क़ीमत को कार्य-घंटों, कार्य-दिवसों और बचत-प्रयास में बदलें। कोई खाता, अपलोड, संग्रहण या वित्तीय सलाह नहीं।","url":"https://alice51849.github.io/ios-app-guide/hi/tools/hours-of-work-calculator.html","inLanguage":"hi","datePublished":"2026-07-17","dateModified":"2026-07-17","applicationCategory":"FinanceApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Local price-to-work-time calculation","Hourly and monthly take-home income modes","Entered tax and saving-rate scenarios","Need, Want and Impulse reflection prompt","No account, upload, storage or financial advice"],"citation":["https://apps.apple.com/us/app/id6754218117","https://developer.chrome.com/docs/ai/webmcp/imperative-api"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"hi","mainEntity":[{"@type":"Question","name":"सकल या हाथ-में आय, कौन-सी उपयोग करूँ?","acceptedAnswer":{"@type":"Answer","text":"जो पैसा आप सचमुच ख़र्च कर सकते हैं उसके निकट परिणाम के लिए हाथ-में आय उपयोग करें। जिन लागतों को कैलकुलेटर नहीं जान सकता, उन्हें स्वयं समायोजित करें।"}},{"@type":"Question","name":"मासिक मोड सशुल्क घंटे क्यों पूछता है?","acceptedAnswer":{"@type":"Answer","text":"मासिक आय तब तक घंटेवार अर्थ नहीं रखती जब तक उसे यथार्थ सशुल्क कार्य-घंटों से भाग न दिया जाए।"}},{"@type":"Question","name":"क्या उच्च समय-लागत का मतलब है कि न ख़रीदूँ?","acceptedAnswer":{"@type":"Answer","text":"नहीं। संख्या केवल एक संतुलन दिखाती है; तात्कालिकता, आनंद, टिकाऊपन, विकल्प और आपकी समग्र वित्तीय स्थिति अब भी मायने रखती है।"}},{"@type":"Question","name":"क्या यह पृष्ठ मेरा वेतन या ख़रीद दर्ज करता है?","acceptedAnswer":{"@type":"Answer","text":"नहीं। गणना केवल वर्तमान पृष्ठ पर रहती है; न अपलोड होती है न सहेजी जाती है।"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"HoursTag: Hours to Buy","operatingSystem":"iOS","applicationCategory":"FinanceApplication","url":"https://apps.apple.com/app/id6754218117","installUrl":"https://apps.apple.com/app/id6754218117","description":"मुफ़्त पृष्ठ एक अस्थायी उदाहरण से चलता है। HoursTag का वर्तमान App Store पृष्ठ ऑन-डिवाइस फ़्लो बताता है: आय एक बार सेट करें, क़ीमतें कार्य-समय में बदलें, ज़रूरत/इच्छा/आवेग टैग करें, लक्ष्य और विशलिस्ट ट्रैक करें, मासिक श्रेणी-इनसाइट देखें, बैकअप-रीस्टोर उपयोग करें। पृष्ठ यह भी बताता है: कोई खाता, ट्रैकिंग या विज्ञापन नहीं, एक-बार सशुल्क डाउनलोड, कोई सदस्यता या छिपा अपग्रेड नहीं। ख़रीदने से पहले वर्तमान पृष्ठ जाँचें।","featureList":["Price-to-work-time conversion","Need, Want and Impulse tags","Goals and wishlist with progress","Monthly category insights","No account, tracking or ads","Paid download with no subscription"]}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/hi/index.html">iOS App Guide</a><nav class="links"><a href="https://alice51849.github.io/ios-app-guide/hi/tools/index.html">मुफ़्त उपकरण</a><a href="https://alice51849.github.io/ios-app-guide/tools/hours-of-work-calculator.html">English</a></nav></div></header>
+<main>
+<section class="hero wrap"><div class="eyebrow">निजी कैलकुलेटर · पारदर्शी गणित · AI बुला सकता है</div><h1>यह ख़रीदारी आपके जीवन के कितने घंटे लेती है?</h1><p class="lead">भुगतान से पहले क़ीमत को अपनी हाथ-में-आने वाली आय से कार्य-समय में बदलें। परिणाम केवल एक ठहराव देता है; यह कभी तय नहीं करता कि आपको ख़रीदना चाहिए या नहीं।</p><div class="badges"><span class="badge">केवल इसी ब्राउज़र में चलता है</span><span class="badge">कोई खाता या बैंक लिंक नहीं</span><span class="badge">कोई वेतन या ख़रीद रिकॉर्ड नहीं</span><span class="badge">कोई ख़रीद या बचत वादा नहीं</span></div></section>
+<section class="calculator wrap"><h2>एक ईमानदार उदाहरण गणना करें</h2><p class="intro">घंटेवार या मासिक हाथ-में आय चुनें। मासिक मोड आय को आपके दर्ज सशुल्क घंटों से भाग देता है; घंटेवार मोड उस फ़ील्ड को अनदेखा करता है।</p>
+<form id="hours-calculator"><div class="controls">
+<div class="field"><label for="income-mode">आय स्वरूप</label><select id="income-mode"><option value="hourly">प्रति घंटा हाथ-में</option><option value="monthly">प्रति माह हाथ-में</option></select></div>
+<div class="field"><label for="take-home-income">आपकी मुद्रा में हाथ-में आय</label><input id="take-home-income" type="number" min="0.01" max="1000000000" step="0.01" value="25" required></div>
+<div class="field"><label for="paid-hours-month">मासिक सशुल्क कार्य-घंटे</label><input id="paid-hours-month" type="number" min="0.01" max="744" step="0.25" value="160" required></div>
+<div class="field"><label for="purchase-price">कर-पूर्व उत्पाद क़ीमत</label><input id="purchase-price" type="number" min="0" max="1000000000" step="0.01" value="129" required></div>
+<div class="field"><label for="tax-percent">बिक्री कर या VAT प्रतिशत</label><input id="tax-percent" type="number" min="0" max="100" step="0.01" value="0" required></div>
+<div class="field"><label for="workday-hours">एक कार्य-दिवस के घंटे</label><input id="workday-hours" type="number" min="0.01" max="24" step="0.25" value="8" required></div>
+<div class="field"><label for="saving-rate">अलग रखी हाथ-में आय का प्रतिशत</label><input id="saving-rate" type="number" min="0" max="100" step="0.1" value="10" required></div>
+<div class="field"><label for="decision-tag">अभी आप इसे कैसे टैग करेंगे?</label><select id="decision-tag"><option value="need">ज़रूरत</option><option value="want">इच्छा</option><option value="impulse">आवेग</option></select></div>
+</div><p><button class="button" type="submit">समय-लागत दिखाएँ</button></p></form>
+<div class="results"><div class="result"><strong>प्रति घंटा प्रभावी हाथ-में</strong><span id="result-hourly"></span></div><div class="result"><strong>दर्ज कर-सहित क़ीमत</strong><span id="result-total"></span></div><div class="result"><strong>कार्य-घंटे</strong><span id="result-hours"></span></div><div class="result"><strong>कार्य-दिवस</strong><span id="result-days"></span></div><div class="result"><strong>एक कार्य-दिवस का प्रतिशत</strong><span id="result-workday"></span></div><div class="result"><strong>आपकी बचत-दर पर कमाने के घंटे</strong><span id="result-saving"></span></div></div>
+<p class="note decision" id="result-decision"></p><p class="note">सूत्र: दर्ज कर-सहित क़ीमत ÷ प्रति घंटा प्रभावी हाथ-में मान। इसमें वे कर, लाभ, आवागमन, अवैतनिक काम या देखभाल लागतें शामिल नहीं जो आपके दर्ज अंकों में नहीं झलकतीं।</p></section>
+<section class="wrap grid"><article class="card"><h2>परिणाम को उपयोगी मानने से पहले तीन जाँचें</h2><ol><li>फुलाए गए सकल अंक के बजाय हाथ-में आय उपयोग करें।</li><li>यथार्थ सशुल्क घंटे दर्ज करें; मासिक मोड अवैतनिक काम नहीं घटा सकता।</li><li>परिणाम को एक निर्णय-लेंस मानें; वित्तीय सलाह या नैतिक अंक नहीं।</li></ol></article><article class="card"><h2>यह मुफ़्त कैलकुलेटर क्या नहीं करता</h2><p>यह बैंक से नहीं जुड़ता, आपकी आय याद नहीं रखता, ख़रीद दर्ज नहीं करता, श्रेणियाँ ट्रैक नहीं करता, पैसा नहीं भेजता, भुगतान नहीं रोकता, बचत का अनुमान नहीं लगाता। पृष्ठ रीफ़्रेश या बंद करने से वर्तमान उदाहरण मिट जाता है।</p></article></section>
+<section class="wrap card faq"><h2>कार्य-समय गणना प्रश्न</h2><details><summary>सकल या हाथ-में आय, कौन-सी उपयोग करूँ?</summary><p>जो पैसा आप सचमुच ख़र्च कर सकते हैं उसके निकट परिणाम के लिए हाथ-में आय उपयोग करें। जिन लागतों को कैलकुलेटर नहीं जान सकता, उन्हें स्वयं समायोजित करें।</p></details><details><summary>मासिक मोड सशुल्क घंटे क्यों पूछता है?</summary><p>मासिक आय तब तक घंटेवार अर्थ नहीं रखती जब तक उसे यथार्थ सशुल्क कार्य-घंटों से भाग न दिया जाए।</p></details><details><summary>क्या उच्च समय-लागत का मतलब है कि न ख़रीदूँ?</summary><p>नहीं। संख्या केवल एक संतुलन दिखाती है; तात्कालिकता, आनंद, टिकाऊपन, विकल्प और आपकी समग्र वित्तीय स्थिति अब भी मायने रखती है।</p></details><details><summary>क्या यह पृष्ठ मेरा वेतन या ख़रीद दर्ज करता है?</summary><p>नहीं। गणना केवल वर्तमान पृष्ठ पर रहती है; न अपलोड होती है न सहेजी जाती है।</p></details></section>
+<section class="app-card wrap"><h2>क्या हर ख़रीद पर यह ठहराव चाहिए?</h2><p>मुफ़्त पृष्ठ एक अस्थायी उदाहरण से चलता है। HoursTag का वर्तमान App Store पृष्ठ ऑन-डिवाइस फ़्लो बताता है: आय एक बार सेट करें, क़ीमतें कार्य-समय में बदलें, ज़रूरत/इच्छा/आवेग टैग करें, लक्ष्य और विशलिस्ट ट्रैक करें, मासिक श्रेणी-इनसाइट देखें, बैकअप-रीस्टोर उपयोग करें। पृष्ठ यह भी बताता है: कोई खाता, ट्रैकिंग या विज्ञापन नहीं, एक-बार सशुल्क डाउनलोड, कोई सदस्यता या छिपा अपग्रेड नहीं। ख़रीदने से पहले वर्तमान पृष्ठ जाँचें।</p><a class="button" href="https://apps.apple.com/app/id6754218117" rel="nofollow noopener">App Store पर HoursTag देखें</a></section>
+<section class="wrap card faq"><h2>वर्तमान उत्पाद स्रोत और AI उपकरण विनिर्देश</h2><p><a href="https://apps.apple.com/us/app/id6754218117" rel="noopener">HoursTag अमेरिकी App Store पृष्ठ</a></p><p><a href="https://developer.chrome.com/docs/ai/webmcp/imperative-api" rel="noopener">Chrome WebMCP अनिवार्य API पूर्वावलोकन</a></p></section>
+</main>
+<footer class="footer"><div class="wrap">केवल निजी स्थानीय गणित · कोई खाता या बैंक पहुँच नहीं · वित्तीय सलाह नहीं</div></footer>
+<script type="application/json" id="hours-config">{"inputSchema":{"type":"object","properties":{"income_mode":{"type":"string","enum":["hourly","monthly"],"description":"Whether take-home income is entered per hour or per month."},"take_home_income":{"type":"number","exclusiveMinimum":0,"maximum":1000000000,"description":"Self-entered take-home income in the user's own currency."},"paid_hours_per_month":{"type":"number","exclusiveMinimum":0,"maximum":744,"description":"Paid hours per month. Used only in monthly mode; provide a realistic positive value in hourly mode as well."},"purchase_price":{"type":"number","minimum":0,"maximum":1000000000,"description":"Purchase price before the separately entered tax rate."},"tax_percent":{"type":"number","minimum":0,"maximum":100},"workday_hours":{"type":"number","exclusiveMinimum":0,"maximum":24},"saving_rate_percent":{"type":"number","minimum":0,"maximum":100},"decision_tag":{"type":"string","enum":["need","want","impulse"]}},"required":["income_mode","take_home_income","paid_hours_per_month","purchase_price","tax_percent","workday_hours","saving_rate_percent","decision_tag"],"additionalProperties":false},"decisionPrompts":{"need":"ज़रूरत: समय-लागत की तुलना तात्कालिकता, उपलब्ध विकल्पों और प्रतीक्षा के परिणाम से करें।","want":"इच्छा: एक ठहराव-अवधि के बाद तय करें कि यह दिखाए गए कार्य-समय के लायक़ है या नहीं।","impulse":"आवेग: भुगतान से बाहर निकलें, उत्पाद कहीं और सहेजें और भावनात्मक शिखर बीतने के बाद उसी समय-लागत को दोबारा देखें।"},"savingZero":"गणना के लिए बचत-दर 0% से ऊपर रखें","validationError":"मान्य, धनात्मक आय और कार्य-घंटे मान दर्ज करें।","mathBoundary":"सूत्र: दर्ज कर-सहित क़ीमत ÷ प्रति घंटा प्रभावी हाथ-में मान। इसमें वे कर, लाभ, आवागमन, अवैतनिक काम या देखभाल लागतें शामिल नहीं जो आपके दर्ज अंकों में नहीं झलकतीं।","toolDescription":"सीमित, स्वयं-दर्ज हाथ-में आय और क़ीमत डेटा से किसी ख़रीद की कार्य-समय लागत की गणना करता है। डेटा सहेजे बिना, खातों तक पहुँचे बिना, ख़रीद सुझाए बिना या बचत का वादा किए बिना पारदर्शी सूत्र, मान्यताएँ और एक निर्णय-प्रश्न लौटाता है।","freeTool":{"label":"यह ख़रीदारी आपके जीवन के कितने घंटे लेती है?","url":"https://alice51849.github.io/ios-app-guide/hi/tools/hours-of-work-calculator.html","boundary":"यह बैंक से नहीं जुड़ता, आपकी आय याद नहीं रखता, ख़रीद दर्ज नहीं करता, श्रेणियाँ ट्रैक नहीं करता, पैसा नहीं भेजता, भुगतान नहीं रोकता, बचत का अनुमान नहीं लगाता। पृष्ठ रीफ़्रेश या बंद करने से वर्तमान उदाहरण मिट जाता है।"},"officialSource":{"label":"HoursTag अमेरिकी App Store पृष्ठ","url":"https://apps.apple.com/us/app/id6754218117"},"webmcpSource":"https://developer.chrome.com/docs/ai/webmcp/imperative-api","optionalApp":{"label":"App Store पर HoursTag देखें","boundary":"मुफ़्त पृष्ठ एक अस्थायी उदाहरण से चलता है। HoursTag का वर्तमान App Store पृष्ठ ऑन-डिवाइस फ़्लो बताता है: आय एक बार सेट करें, क़ीमतें कार्य-समय में बदलें, ज़रूरत/इच्छा/आवेग टैग करें, लक्ष्य और विशलिस्ट ट्रैक करें, मासिक श्रेणी-इनसाइट देखें, बैकअप-रीस्टोर उपयोग करें। पृष्ठ यह भी बताता है: कोई खाता, ट्रैकिंग या विज्ञापन नहीं, एक-बार सशुल्क डाउनलोड, कोई सदस्यता या छिपा अपग्रेड नहीं। ख़रीदने से पहले वर्तमान पृष्ठ जाँचें।","app_store_url":"https://apps.apple.com/app/id6754218117"}}</script>
+<script>
+(() => {
+  const config = JSON.parse(document.getElementById("hours-config").textContent);
+  const form = document.getElementById("hours-calculator");
+  const fields = {
+    income_mode: document.getElementById("income-mode"),
+    take_home_income: document.getElementById("take-home-income"),
+    paid_hours_per_month: document.getElementById("paid-hours-month"),
+    purchase_price: document.getElementById("purchase-price"),
+    tax_percent: document.getElementById("tax-percent"),
+    workday_hours: document.getElementById("workday-hours"),
+    saving_rate_percent: document.getElementById("saving-rate"),
+    decision_tag: document.getElementById("decision-tag")
+  };
+  const output = {
+    hourly: document.getElementById("result-hourly"),
+    total: document.getElementById("result-total"),
+    hours: document.getElementById("result-hours"),
+    days: document.getElementById("result-days"),
+    workday: document.getElementById("result-workday"),
+    saving: document.getElementById("result-saving"),
+    decision: document.getElementById("result-decision")
+  };
+
+  function round(value, digits = 2) {
+    const factor = 10 ** digits;
+    return Math.round((value + Number.EPSILON) * factor) / factor;
+  }
+
+  function enumValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const values = config.inputSchema.properties[name].enum;
+    if (typeof value !== "string" || !values.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    return value;
+  }
+
+  function numberValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const schema = config.inputSchema.properties[name];
+    if (typeof value !== "number" || !Number.isFinite(value)) {
+      throw new TypeError(`${name} must be a finite number.`);
+    }
+    if ((schema.minimum !== undefined && value < schema.minimum) ||
+        (schema.exclusiveMinimum !== undefined && value <= schema.exclusiveMinimum) ||
+        (schema.maximum !== undefined && value > schema.maximum)) {
+      throw new RangeError(`${name} is outside the supported range.`);
+    }
+    return value;
+  }
+
+  function calculate(input) {
+    if (input === null || typeof input !== "object" || Array.isArray(input)) {
+      throw new TypeError("WebMCP input must be an object.");
+    }
+    const allowed = new Set(Object.keys(config.inputSchema.properties));
+    for (const name of Object.keys(input)) {
+      if (!allowed.has(name)) {
+        throw new RangeError(`${name} is not a supported input.`);
+      }
+    }
+    const incomeMode = enumValue(input, "income_mode");
+    const takeHomeIncome = numberValue(input, "take_home_income");
+    const paidHours = numberValue(input, "paid_hours_per_month");
+    const purchasePrice = numberValue(input, "purchase_price");
+    const taxPercent = numberValue(input, "tax_percent");
+    const workdayHours = numberValue(input, "workday_hours");
+    const savingRate = numberValue(input, "saving_rate_percent");
+    const decisionTag = enumValue(input, "decision_tag");
+    const effectiveHourly = incomeMode === "hourly"
+      ? takeHomeIncome
+      : takeHomeIncome / paidHours;
+    const totalPrice = purchasePrice * (1 + taxPercent / 100);
+    const workHours = totalPrice / effectiveHourly;
+    const savingHours = savingRate > 0
+      ? workHours / (savingRate / 100)
+      : null;
+    return {
+      selected_inputs: {
+        income_mode: incomeMode,
+        take_home_income: takeHomeIncome,
+        paid_hours_per_month: incomeMode === "monthly" ? paidHours : null,
+        purchase_price: purchasePrice,
+        tax_percent: taxPercent,
+        workday_hours: workdayHours,
+        saving_rate_percent: savingRate,
+        decision_tag: decisionTag
+      },
+      calculation: {
+        effective_take_home_per_hour: round(effectiveHourly),
+        price_including_entered_tax: round(totalPrice),
+        work_hours: round(workHours),
+        work_minutes: round(workHours * 60),
+        workdays: round(workHours / workdayHours),
+        percent_of_one_workday: round(workHours / workdayHours * 100),
+        earning_hours_at_saving_rate: savingHours === null ? null : round(savingHours)
+      },
+      formulas: {
+        effective_hourly: incomeMode === "hourly"
+          ? "take_home_income"
+          : "take_home_income / paid_hours_per_month",
+        price_with_tax: "purchase_price * (1 + tax_percent / 100)",
+        work_hours: "price_with_tax / effective_hourly",
+        earning_hours_at_saving_rate:
+          "work_hours / (saving_rate_percent / 100), when saving_rate_percent > 0"
+      },
+      decision_prompt: config.decisionPrompts[decisionTag],
+      boundary: config.mathBoundary
+    };
+  }
+
+  function format(value) {
+    return new Intl.NumberFormat(undefined, {
+      maximumFractionDigits: 2
+    }).format(value);
+  }
+
+  function readForm() {
+    return {
+      income_mode: fields.income_mode.value,
+      take_home_income: Number(fields.take_home_income.value),
+      paid_hours_per_month: Number(fields.paid_hours_per_month.value),
+      purchase_price: Number(fields.purchase_price.value),
+      tax_percent: Number(fields.tax_percent.value),
+      workday_hours: Number(fields.workday_hours.value),
+      saving_rate_percent: Number(fields.saving_rate_percent.value),
+      decision_tag: fields.decision_tag.value
+    };
+  }
+
+  function render() {
+    try {
+      const result = calculate(readForm());
+      output.hourly.textContent = format(result.calculation.effective_take_home_per_hour);
+      output.total.textContent = format(result.calculation.price_including_entered_tax);
+      output.hours.textContent = format(result.calculation.work_hours);
+      output.days.textContent = format(result.calculation.workdays);
+      output.workday.textContent = `${format(result.calculation.percent_of_one_workday)}%`;
+      output.saving.textContent = result.calculation.earning_hours_at_saving_rate === null
+        ? config.savingZero
+        : format(result.calculation.earning_hours_at_saving_rate);
+      output.decision.textContent = result.decision_prompt;
+    } catch (error) {
+      if (!(error instanceof TypeError || error instanceof RangeError)) throw error;
+      for (const target of Object.values(output)) target.textContent = "—";
+      output.decision.textContent = config.validationError;
+    }
+  }
+
+  async function registerWebMcp() {
+    if (!document.modelContext?.registerTool) return;
+    await document.modelContext.registerTool({
+      name: "calculate_purchase_work_time",
+      description: config.toolDescription,
+      inputSchema: config.inputSchema,
+      annotations: {readOnlyHint: true, untrustedContentHint: false},
+      execute: async (input) => {
+        const calculation = calculate(input);
+        const result = {
+          result_type: "private_purchase_work_time_calculation",
+          local_only_calculation: true,
+          no_account_bank_or_device_access: true,
+          no_purchase_recommendation_or_savings_promise: true,
+          calculation,
+          free_tool: config.freeTool,
+          official_source: config.officialSource,
+          webmcp_preview_source: config.webmcpSource
+        };
+        if (config.optionalApp) {
+          result.optional_hourstag = config.optionalApp;
+        }
+        return JSON.stringify(result);
+      }
+    });
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    render();
+  });
+  for (const field of Object.values(fields)) {
+    field.addEventListener("change", render);
+  }
+  render();
+  registerWebMcp().catch((error) =>
+    console.error("WebMCP tool registration failed.", error));
+})();
+</script>
+</body>
+</html>

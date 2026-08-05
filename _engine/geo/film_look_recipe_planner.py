@@ -58,6 +58,10 @@ ALT_LOCALES = (
     "ko",
     "zh-Hant",
     "zh-Hans",
+    "vi",
+    "th",
+    "id",
+    "tr",
 )
 
 
@@ -1331,6 +1335,530 @@ COPY = {
             "不用上传或分析照片，按风格偏好获得可还原的修图顺序。",
         ),
     ),
+    "vi": _copy(
+        meta=(
+            "Trình lập công thức phong cách phim riêng tư | Không tải ảnh lên",
+            "Biến các tùy chọn phong cách có giới hạn thành thứ tự chỉnh sửa có thể hoàn tác mà không tải lên, quét, phân tích hay lưu trữ ảnh.",
+            "Công cụ miễn phí",
+            "English",
+            "Miễn phí · không nhập ảnh · không hứa kết quả",
+            "Trình lập công thức phong cách phim riêng tư",
+            "Chọn hướng hình ảnh, điều kiện ánh sáng và tùy chọn hoàn thiện. Trang trả về một thứ tự khởi đầu, không bao giờ là preset chính xác hay kết quả đảm bảo.",
+        ),
+        badges=(
+            "Không ảnh, tệp hay siêu dữ liệu",
+            "Không truy cập máy ảnh, thư viện hay tài khoản",
+            "Không tải lên, lưu trữ hay phân tích",
+            "Không đảm bảo chất lượng hay kết quả",
+        ),
+        planner=(
+            "Tạo công thức khởi đầu có thể hoàn tác",
+            "Gợi ý mang tính định tính và phụ thuộc vào ảnh gốc, màn hình, trình chỉnh sửa và kích thước cuối. Xem trước từng thay đổi và giữ một bản gốc.",
+        ),
+        labels=(
+            "Hướng hình ảnh",
+            "Ánh sáng nguồn",
+            "Tùy chọn hạt",
+            "Hướng màu",
+            "Mục đích cuối",
+        ),
+        options=(
+            (
+                "Phim trong trẻo",
+                "35mm ấm",
+                "Điện ảnh lạnh",
+                "Flash máy ảnh dùng một lần",
+                "Cổ điển phai màu",
+            ),
+            ("Cảnh sáng", "Ánh sáng cân bằng", "Thiếu sáng"),
+            ("Không thêm hạt", "Hạt nhẹ", "Hạt rõ"),
+            ("Trung tính", "Ấm hơn", "Lạnh hơn"),
+            ("Ảnh đơn", "Chuỗi đồng bộ", "In ấn"),
+        ),
+        natural=(
+            "Giữ tông da tự nhiên khi có người",
+            "Nếu có người, so sánh da, mắt và tóc trước và sau mỗi bước chỉnh màu.",
+            "Không chọn tùy chọn riêng cho khuôn mặt; vẫn kiểm tra người và các tham chiếu màu quan trọng trước khi xuất.",
+        ),
+        results=(
+            "Tạo công thức riêng tư",
+            "Hướng khởi đầu",
+            "Thứ tự điều chỉnh",
+            "Kiểm tra tính nhất quán",
+            "Giới hạn công thức",
+        ),
+        notes=(
+            (
+                "Giữ tương phản vừa phải, màu cân bằng và vùng sáng dịu; chỉ thêm phong cách sau khi nền trông ổn định.",
+                "Ưu tiên tông trung ấm, tương phản vừa và vùng sáng mềm; để ý cam và da trước khi thêm hiệu ứng.",
+                "Giữ vùng sáng có kiểm soát, làm vùng tối hơi lạnh và tránh biến vật trung tính thành xanh.",
+                "Giữ độ sáng flash trực tiếp và tương phản trung tâm sắc nét; chỉ thêm mờ viền sau khi kiểm tra mặt và chữ.",
+                "Nâng nhẹ tông tối nhất, giảm tương phản gắt và làm dịu màu mà không làm mất chi tiết quan trọng.",
+            ),
+            (
+                "Bảo vệ vùng sáng trước và đánh giá xem vùng sáng nhất còn giữ chi tiết hữu ích không.",
+                "Đặt phơi sáng và cân bằng trắng trước khi thêm tâm trạng, hạt hay hiệu ứng trang trí.",
+                "Tránh nâng vùng tối quá mạnh; kiểm tra nhiễu và đốm màu ở kích thước xem cuối.",
+            ),
+            (
+                "Tắt hạt thêm và dùng ánh sáng, màu và tương phản để tạo phong cách.",
+                "Thêm hạt mịn gần cuối, rồi kiểm tra bầu trời mịn, da và chữ ở kích thước bình thường.",
+                "Chỉ dùng hạt có chủ đích sau khi chỉnh nền; giảm nếu mặt, chi tiết nhỏ hay kết cấu in gây rối.",
+            ),
+            (
+                "Sửa ám màu rõ ràng trước, rồi giữ vùng trắng và vật quen thuộc trông đáng tin.",
+                "Thêm ấm từ từ và kiểm lại vùng trắng, da và ánh sáng trong nhà trước khi xuất.",
+                "Làm lạnh ảnh từ từ; giữ vùng sáng và vật trung tính không bị xanh không tự nhiên.",
+            ),
+            (
+                "Đánh giá kết quả ở kích thước xem thực tế và so với bản gốc đã giữ.",
+                "Chọn một bản chỉnh tham chiếu, so sánh toàn chuỗi và sửa các ảnh lệch thay vì chồng thêm hiệu ứng.",
+                "Xem trước khung cắt và kích thước in dự định; độ sáng màn hình và hạt thêm có thể khác trên giấy.",
+            ),
+        ),
+        boundary=(
+            "Đây là thứ tự chỉnh sửa, không phải preset, phân tích ảnh hay lời hứa khớp với loại phim. "
+            "Nó không thể thấy phơi sáng, khuôn mặt, màu, lấy nét, nhiễu, dải tương phản hay điều kiện đầu ra."
+        ),
+        review=(
+            "Bốn điều cần kiểm trước khi xuất",
+            "Giữ một bản gốc chưa chạm vào hoặc một lộ trình chỉnh sửa có thể hoàn tác.",
+            "Áp dụng một thay đổi nhỏ mỗi lần và so sánh ở kích thước xem bình thường.",
+            "Kiểm tra vùng sáng, vùng tối, màu quen thuộc và người trước khi thêm kết cấu.",
+            "Với một chuỗi, so sánh tất cả khung cùng nhau và sửa ảnh lệch trước khi xuất.",
+        ),
+        sources=(
+            "Bối cảnh chỉnh sửa chính thức của Apple, không phải sự chứng thực",
+            "Apple ghi lại cách chỉnh sửa ảnh và video trên iPhone và cách hoàn nguyên mục đã chỉnh về bản gốc. Hãy xem các bước hiện tại cho phiên bản iOS của bạn.",
+            "Apple: chỉnh sửa ảnh và video trên iPhone",
+            "Apple: hoàn tác và hoàn nguyên chỉnh sửa ảnh trên iPhone",
+        ),
+        webmcp=(
+            "Bản xem trước API mệnh lệnh WebMCP của Chrome",
+            "Tạo thứ tự chỉnh sửa định tính xác định chỉ từ các lựa chọn phong cách có giới hạn. Không bao giờ nhận hay truy cập ảnh, tệp, siêu dữ liệu, máy ảnh, thư viện, tài khoản hay văn bản tự do; không bao giờ phân tích ảnh hay đảm bảo kết quả.",
+        ),
+        app=(
+            "Muốn xem trước phong cách phim ngay trên thiết bị?",
+            "PhotoCream Pro là tùy chọn. Trang App Store hiện tại mô tả hơn 100 phong cách, hạt, halation, light leak, bloom, vignette, xem trước trực tiếp và điều khiển sáng/màu, xử lý trên thiết bị mà không cần tài khoản hay tải lên. Tải miễn phí kèm mở khóa một lần. Hãy xem trang hiện tại để biết tình trạng và tính năng chính xác. Trình lập kế hoạch này hoạt động mà không cần app.",
+            "Xem PhotoCream Pro trên App Store",
+        ),
+        faq=(
+            "Câu hỏi về lập phong cách phim",
+            (
+                (
+                    "Trang này có nhận hay xem ảnh của tôi không?",
+                    "Không. Nó chỉ nhận các lựa chọn phong cách có giới hạn và không bao giờ nhận ảnh, tệp hay siêu dữ liệu.",
+                ),
+                (
+                    "Công thức này có tái tạo đúng một loại phim cụ thể không?",
+                    "Không. Nó đưa ra một thứ tự khởi đầu và không tuyên bố về độ chính xác hay kết quả.",
+                ),
+                (
+                    "Tôi có thể hoàn tác chỉnh sửa trong Apple Photos không?",
+                    "Apple ghi lại cách hoàn nguyên ảnh hoặc video đã chỉnh về bản gốc; hãy xác nhận các bước hiện tại cho phiên bản iOS của bạn.",
+                ),
+            ),
+        ),
+        footer="Chỉ tùy chọn có giới hạn · không truy cập ảnh · không phân tích ảnh · không hứa kết quả",
+        inline="Lập công thức phong cách phim riêng tư trước khi chọn trình chỉnh sửa",
+        index=(
+            "Trình lập công thức phong cách phim riêng tư",
+            "Chọn một hướng phim và nhận thứ tự chỉnh sửa có thể hoàn tác mà không tải lên hay phân tích ảnh.",
+        ),
+    ),
+    "th": _copy(
+        meta=(
+            "ตัววางแผนสูตรลุคฟิล์มแบบส่วนตัว | ไม่อัปโหลดรูป",
+            "เปลี่ยนความชอบด้านสไตล์ที่มีขอบเขตให้เป็นลำดับการแก้ไขที่ย้อนกลับได้ โดยไม่อัปโหลด สแกน วิเคราะห์ หรือจัดเก็บรูป",
+            "เครื่องมือฟรี",
+            "English",
+            "ฟรี · ไม่ป้อนรูป · ไม่รับประกันผล",
+            "ตัววางแผนสูตรลุคฟิล์มแบบส่วนตัว",
+            "เลือกทิศทางภาพ สภาพแสง และความชอบการเก็บงาน หน้าเว็บจะคืนลำดับเริ่มต้น ไม่ใช่พรีเซ็ตที่แน่นอนหรือผลลัพธ์ที่รับประกัน",
+        ),
+        badges=(
+            "ไม่มีรูป ไฟล์ หรือเมทาดาทา",
+            "ไม่เข้าถึงกล้อง คลังภาพ หรือบัญชี",
+            "ไม่อัปโหลด จัดเก็บ หรือวิเคราะห์",
+            "ไม่รับประกันคุณภาพหรือผลลัพธ์",
+        ),
+        planner=(
+            "สร้างสูตรเริ่มต้นที่ย้อนกลับได้",
+            "คำแนะนำเป็นเชิงคุณภาพและขึ้นกับภาพต้นฉบับ จอแสดงผล โปรแกรมแก้ไข และขนาดสุดท้าย ดูตัวอย่างทุกการเปลี่ยนแปลงและเก็บต้นฉบับไว้",
+        ),
+        labels=(
+            "ทิศทางภาพ",
+            "แสงต้นฉบับ",
+            "ความชอบเรื่องเกรน",
+            "ทิศทางสี",
+            "การใช้งานสุดท้าย",
+        ),
+        options=(
+            (
+                "ฟิล์มสะอาด",
+                "35mm โทนอุ่น",
+                "ซินีมาโทนเย็น",
+                "แฟลชกล้องใช้แล้วทิ้ง",
+                "วินเทจสีจาง",
+            ),
+            ("ฉากสว่าง", "แสงสมดุล", "แสงน้อย"),
+            ("ไม่เพิ่มเกรน", "เกรนบาง", "เกรนชัด"),
+            ("เป็นกลาง", "อุ่นขึ้น", "เย็นขึ้น"),
+            ("รูปเดียว", "ชุดที่เข้ากัน", "พิมพ์"),
+        ),
+        natural=(
+            "รักษาโทนผิวให้เป็นธรรมชาติเมื่อมีคน",
+            "หากมีคน ให้เปรียบเทียบผิว ตา และผมก่อนและหลังทุกขั้นตอนปรับสี",
+            "ไม่ได้เลือกความชอบเฉพาะใบหน้า แต่ยังควรตรวจคนและการอ้างอิงสีสำคัญก่อนส่งออก",
+        ),
+        results=(
+            "สร้างสูตรส่วนตัว",
+            "ทิศทางเริ่มต้น",
+            "ลำดับการปรับ",
+            "ตรวจความสม่ำเสมอ",
+            "ขอบเขตของสูตร",
+        ),
+        notes=(
+            (
+                "คุมคอนทราสต์ให้พอดี สีสมดุล และไฮไลต์นุ่มนวล เพิ่มสไตล์หลังจากฐานดูนิ่งแล้ว",
+                "เน้นมิดโทนอุ่น คอนทราสต์ปานกลาง และไฮไลต์นุ่ม ระวังสีส้มและผิวก่อนเพิ่มเอฟเฟกต์",
+                "คุมไฮไลต์ ทำเงาให้เย็นเล็กน้อย และเลี่ยงทำวัตถุเป็นกลางให้กลายเป็นน้ำเงิน",
+                "คงความสว่างของแฟลชตรงและคอนทราสต์กลางภาพให้คม เพิ่มขอบมืดหลังตรวจใบหน้าและตัวอักษร",
+                "ยกโทนมืดที่สุดเบา ๆ ลดคอนทราสต์แข็ง และลดความจัดของสีโดยไม่ทำให้รายละเอียดสำคัญจาง",
+            ),
+            (
+                "ปกป้องไฮไลต์สว่างก่อนและดูว่าพื้นที่สว่างที่สุดยังคงรายละเอียดที่ใช้ได้หรือไม่",
+                "ตั้งค่าแสงและไวต์บาลานซ์ก่อนอารมณ์ เกรน หรือเอฟเฟกต์ตกแต่ง",
+                "อย่ายกเงาแรงเกินไป ตรวจนอยส์และรอยด่างสีที่ขนาดดูสุดท้าย",
+            ),
+            (
+                "ปิดการเพิ่มเกรนและใช้แสง สี และคอนทราสต์สร้างลุค",
+                "เพิ่มเกรนละเอียดช่วงท้าย แล้วตรวจท้องฟ้าเรียบ ผิว และตัวอักษรที่ขนาดปกติ",
+                "ใช้เกรนโดยตั้งใจหลังแก้ฐานเท่านั้น ลดลงหากใบหน้า รายละเอียดเล็ก หรือพื้นผิวงานพิมพ์ดูรบกวน",
+            ),
+            (
+                "แก้ฟุ้งสีที่ชัดเจนก่อน แล้วรักษาสีขาวและวัตถุคุ้นเคยให้ดูน่าเชื่อ",
+                "เพิ่มความอุ่นทีละน้อยและตรวจสีขาว ผิว และแสงในอาคารก่อนส่งออก",
+                "ทำภาพให้เย็นทีละน้อย รักษาไฮไลต์และวัตถุเป็นกลางไม่ให้ฟ้าผิดธรรมชาติ",
+            ),
+            (
+                "ตัดสินผลที่ขนาดดูจริงและเทียบกับต้นฉบับที่เก็บไว้",
+                "เลือกงานอ้างอิงหนึ่งชิ้น เทียบทั้งชุด และแก้ตัวที่ผิดแทนการซ้อนเอฟเฟกต์เพิ่ม",
+                "ดูตัวอย่างการครอบตัดและขนาดพิมพ์ที่ตั้งใจ ความสว่างจอและเกรนที่เพิ่มอาจดูต่างบนกระดาษ",
+            ),
+        ),
+        boundary=(
+            "นี่คือลำดับการแก้ไข ไม่ใช่พรีเซ็ต การวิเคราะห์ภาพ หรือคำสัญญาว่าจะเข้ากับฟิล์มชนิดใด "
+            "มันมองไม่เห็นแสง ใบหน้า สี โฟกัส นอยส์ ช่วงไดนามิก หรือสภาพผลลัพธ์"
+        ),
+        review=(
+            "สี่ข้อควรตรวจก่อนส่งออก",
+            "เก็บต้นฉบับที่ไม่แตะต้องหรือเส้นทางการแก้ไขที่ย้อนกลับได้",
+            "ปรับทีละการเปลี่ยนแปลงเล็กและเทียบที่ขนาดดูปกติ",
+            "ตรวจไฮไลต์ เงา สีที่คุ้นเคย และคนก่อนเพิ่มพื้นผิว",
+            "สำหรับชุดภาพ ให้เทียบทุกเฟรมพร้อมกันและแก้ตัวที่ผิดก่อนส่งออก",
+        ),
+        sources=(
+            "บริบทการแก้ไขทางการของ Apple ไม่ใช่การรับรอง",
+            "Apple บันทึกการแก้ไขรูปและวิดีโอบน iPhone และการย้อนรายการที่แก้แล้วกลับเป็นต้นฉบับ โปรดดูขั้นตอนปัจจุบันสำหรับ iOS ของคุณ",
+            "Apple: แก้ไขรูปและวิดีโอบน iPhone",
+            "Apple: เลิกทำและย้อนการแก้ไขรูปบน iPhone",
+        ),
+        webmcp=(
+            "ตัวอย่าง API เชิงคำสั่ง WebMCP ของ Chrome",
+            "สร้างลำดับการแก้ไขเชิงคุณภาพแบบกำหนดแน่นอนจากตัวเลือกสไตล์ที่มีขอบเขตเท่านั้น ไม่รับหรือเข้าถึงรูป ไฟล์ เมทาดาทา กล้อง คลังภาพ บัญชี หรือข้อความอิสระ ไม่วิเคราะห์ภาพหรือรับประกันผล",
+        ),
+        app=(
+            "อยากดูตัวอย่างลุคฟิล์มบนเครื่องโดยตรงไหม?",
+            "PhotoCream Pro เป็นทางเลือก หน้า App Store ปัจจุบันอธิบายลุคมากกว่า 100 แบบ เกรน halation light leak bloom vignette ตัวอย่างสด และการควบคุมแสง/สี ประมวลผลบนเครื่องโดยไม่ต้องมีบัญชีหรืออัปโหลด ดาวน์โหลดฟรีพร้อมปลดล็อกครั้งเดียว โปรดดูหน้าปัจจุบันเพื่อความพร้อมและฟีเจอร์ที่แน่นอน ตัววางแผนนี้ทำงานได้โดยไม่ต้องใช้แอป",
+            "ดู PhotoCream Pro บน App Store",
+        ),
+        faq=(
+            "คำถามเกี่ยวกับการวางแผนลุคฟิล์ม",
+            (
+                (
+                    "หน้านี้รับหรือดูรูปของฉันไหม?",
+                    "ไม่ มันรับเพียงตัวเลือกสไตล์ที่มีขอบเขต และไม่เคยรับรูป ไฟล์ หรือเมทาดาทา",
+                ),
+                (
+                    "สูตรนี้จะจำลองฟิล์มชนิดใดชนิดหนึ่งได้ไหม?",
+                    "ไม่ มันให้ลำดับเริ่มต้นและไม่อ้างความแม่นยำหรือผลลัพธ์",
+                ),
+                (
+                    "ฉันเลิกทำการแก้ไขใน Apple Photos ได้ไหม?",
+                    "Apple บันทึกการย้อนรูปหรือวิดีโอที่แก้แล้วกลับเป็นต้นฉบับ โปรดยืนยันขั้นตอนปัจจุบันสำหรับ iOS ของคุณ",
+                ),
+            ),
+        ),
+        footer="เฉพาะความชอบที่มีขอบเขต · ไม่เข้าถึงรูป · ไม่วิเคราะห์ภาพ · ไม่รับประกันผล",
+        inline="วางแผนสูตรลุคฟิล์มส่วนตัวก่อนเลือกโปรแกรมแก้ไข",
+        index=(
+            "ตัววางแผนสูตรลุคฟิล์มแบบส่วนตัว",
+            "เลือกทิศทางฟิล์มและรับลำดับการแก้ไขที่ย้อนกลับได้โดยไม่อัปโหลดหรือวิเคราะห์รูป",
+        ),
+    ),
+    "id": _copy(
+        meta=(
+            "Perencana Resep Tampilan Film Pribadi | Tanpa Unggah Foto",
+            "Ubah preferensi gaya yang terbatas menjadi urutan penyuntingan yang dapat dibalik tanpa mengunggah, memindai, menganalisis, atau menyimpan foto.",
+            "Alat gratis",
+            "English",
+            "Gratis · tanpa masukan foto · tanpa janji hasil",
+            "Perencana resep tampilan film pribadi",
+            "Pilih arah visual, kondisi pencahayaan, dan preferensi penyelesaian. Halaman mengembalikan urutan awal, bukan preset persis atau hasil yang dijamin.",
+        ),
+        badges=(
+            "Tanpa foto, berkas, atau metadata",
+            "Tanpa akses kamera, galeri, atau akun",
+            "Tanpa unggahan, penyimpanan, atau analisis",
+            "Tanpa jaminan kualitas atau hasil",
+        ),
+        planner=(
+            "Bangun resep awal yang dapat dibalik",
+            "Saran bersifat kualitatif dan bergantung pada gambar sumber, layar, editor, dan ukuran akhir. Pratinjau setiap perubahan dan simpan aslinya.",
+        ),
+        labels=(
+            "Arah visual",
+            "Pencahayaan sumber",
+            "Preferensi grain",
+            "Arah warna",
+            "Penggunaan akhir",
+        ),
+        options=(
+            (
+                "Film bersih",
+                "35mm hangat",
+                "Sinema dingin",
+                "Flash kamera sekali pakai",
+                "Vintage pudar",
+            ),
+            ("Adegan terang", "Cahaya seimbang", "Cahaya redup"),
+            ("Tanpa grain tambahan", "Grain halus", "Grain terlihat"),
+            ("Netral", "Lebih hangat", "Lebih dingin"),
+            ("Foto tunggal", "Seri yang serasi", "Cetak"),
+        ),
+        natural=(
+            "Jaga warna kulit tetap alami saat ada orang",
+            "Jika ada orang, bandingkan kulit, mata, dan rambut sebelum dan sesudah setiap langkah warna.",
+            "Tidak ada preferensi khusus wajah yang dipilih; tetap periksa orang dan referensi warna penting sebelum ekspor.",
+        ),
+        results=(
+            "Buat resep pribadi",
+            "Arah awal",
+            "Urutan penyesuaian",
+            "Pemeriksaan konsistensi",
+            "Batas resep",
+        ),
+        notes=(
+            (
+                "Jaga kontras tetap terkendali, warna seimbang, dan sorotan lembut; tambahkan stilisasi hanya setelah dasar terlihat stabil.",
+                "Utamakan midtone hangat, kontras sedang, dan sorotan lembut; perhatikan oranye dan kulit sebelum menambah efek.",
+                "Jaga sorotan terkendali, dinginkan bayangan sedikit, dan hindari mengubah objek netral menjadi biru.",
+                "Pertahankan kecerahan flash langsung dan kontras tengah yang tajam; tambahkan gelap tepi hanya setelah memeriksa wajah dan teks.",
+                "Angkat nada paling gelap dengan lembut, kurangi kontras keras, dan redam warna tanpa memudarkan detail penting.",
+            ),
+            (
+                "Lindungi sorotan terang dulu dan nilai apakah area paling terang masih menyimpan detail berguna.",
+                "Atur pencahayaan dan white balance sebelum suasana, grain, atau efek dekoratif.",
+                "Hindari mengangkat bayangan secara agresif; periksa noise dan bercak warna pada ukuran tampilan akhir.",
+            ),
+            (
+                "Biarkan grain tambahan mati dan gunakan cahaya, warna, serta kontras untuk tampilannya.",
+                "Tambahkan grain halus di akhir, lalu periksa langit halus, kulit, dan teks pada ukuran normal.",
+                "Gunakan grain sengaja hanya setelah suntingan dasar; kurangi bila wajah, detail kecil, atau tekstur cetak mengganggu.",
+            ),
+            (
+                "Perbaiki dominasi warna yang jelas dulu, lalu jaga putih dan objek familier tetap meyakinkan.",
+                "Tambahkan kehangatan bertahap dan periksa ulang putih, kulit, dan pencahayaan dalam ruang sebelum ekspor.",
+                "Dinginkan gambar bertahap; jaga sorotan dan objek netral agar tidak menjadi biru tak wajar.",
+            ),
+            (
+                "Nilai hasil pada ukuran tampilan sebenarnya dan bandingkan dengan asli yang disimpan.",
+                "Pilih satu suntingan acuan, bandingkan seluruh urutan, dan perbaiki yang menyimpang alih-alih menumpuk efek.",
+                "Pratinjau potongan dan ukuran cetak yang dituju; kecerahan layar dan grain tambahan bisa berbeda di kertas.",
+            ),
+        ),
+        boundary=(
+            "Ini adalah urutan penyuntingan, bukan preset, analisis gambar, atau janji kecocokan stok film. "
+            "Ia tidak dapat melihat pencahayaan, wajah, warna, fokus, noise, rentang dinamis, atau kondisi keluaran."
+        ),
+        review=(
+            "Empat pemeriksaan sebelum ekspor",
+            "Simpan asli yang belum disentuh atau jalur penyuntingan yang dapat dibalik.",
+            "Terapkan satu perubahan kecil dalam satu waktu dan bandingkan pada ukuran tampilan normal.",
+            "Periksa sorotan, bayangan, warna familier, dan orang sebelum menambah tekstur.",
+            "Untuk seri, bandingkan semua bingkai bersama dan perbaiki yang menyimpang sebelum ekspor.",
+        ),
+        sources=(
+            "Konteks penyuntingan resmi Apple, bukan dukungan",
+            "Apple mendokumentasikan penyuntingan foto dan video di iPhone dan pengembalian item yang disunting ke aslinya. Periksa langkah terkini untuk versi iOS Anda.",
+            "Apple: sunting foto dan video di iPhone",
+            "Apple: batalkan dan kembalikan suntingan foto di iPhone",
+        ),
+        webmcp=(
+            "Pratinjau API imperatif WebMCP Chrome",
+            "Bangun urutan penyuntingan kualitatif deterministik hanya dari pilihan gaya terbatas. Jangan pernah menerima atau mengakses foto, berkas, metadata, kamera, galeri, akun, atau teks bebas; jangan pernah menganalisis gambar atau menjamin hasil.",
+        ),
+        app=(
+            "Ingin pratinjau tampilan film langsung di perangkat?",
+            "PhotoCream Pro bersifat opsional. Halaman App Store-nya saat ini menjelaskan 100+ tampilan, grain, halation, light leak, bloom, vignette, pratinjau langsung, dan kontrol cahaya/warna, diproses di perangkat tanpa akun atau unggahan. Gratis diunduh dengan buka kunci sekali bayar. Periksa halaman terkini untuk ketersediaan dan fitur pastinya. Perencana ini bekerja tanpa aplikasi.",
+            "Lihat PhotoCream Pro di App Store",
+        ),
+        faq=(
+            "Pertanyaan perencanaan tampilan film",
+            (
+                (
+                    "Apakah halaman ini menerima atau memeriksa foto saya?",
+                    "Tidak. Ia hanya menerima pilihan gaya terbatas dan tidak pernah menerima foto, berkas, atau metadata.",
+                ),
+                (
+                    "Apakah resep ini akan menciptakan ulang stok film tertentu?",
+                    "Tidak. Ia memberikan urutan awal dan tidak membuat klaim akurasi atau hasil.",
+                ),
+                (
+                    "Bisakah saya membatalkan suntingan di Apple Photos?",
+                    "Apple mendokumentasikan pengembalian foto atau video yang disunting ke aslinya; verifikasi langkah terkini untuk versi iOS Anda.",
+                ),
+            ),
+        ),
+        footer="Hanya preferensi terbatas · tanpa akses foto · tanpa analisis gambar · tanpa janji hasil",
+        inline="Rencanakan resep tampilan film pribadi sebelum memilih editor",
+        index=(
+            "Perencana Resep Tampilan Film Pribadi",
+            "Pilih arah film dan dapatkan urutan penyuntingan yang dapat dibalik tanpa mengunggah atau menganalisis foto.",
+        ),
+    ),
+    "tr": _copy(
+        meta=(
+            "Özel Film Görünümü Reçetesi Planlayıcısı | Fotoğraf Yükleme Yok",
+            "Bir fotoğrafı yüklemeden, taramadan, analiz etmeden veya saklamadan sınırlı stil tercihlerini geri alınabilir bir düzenleme sırasına dönüştürün.",
+            "Ücretsiz araçlar",
+            "English",
+            "Ücretsiz · fotoğraf girişi yok · sonuç vaadi yok",
+            "Özel film görünümü reçetesi planlayıcısı",
+            "Bir görsel yön, ışık koşulu ve bitiş tercihi seçin. Sayfa bir başlangıç sırası döndürür, asla kesin bir ön ayar veya garantili sonuç değil.",
+        ),
+        badges=(
+            "Fotoğraf, dosya veya meta veri yok",
+            "Kamera, kitaplık veya hesap erişimi yok",
+            "Yükleme, depolama veya analiz yok",
+            "Kalite veya sonuç garantisi yok",
+        ),
+        planner=(
+            "Geri alınabilir bir başlangıç reçetesi oluştur",
+            "Öneriler nitelikseldir ve kaynak görüntüye, ekrana, editöre ve son boyuta bağlıdır. Her değişikliği önizleyin ve bir orijinali koruyun.",
+        ),
+        labels=(
+            "Görsel yön",
+            "Kaynak ışığı",
+            "Gren tercihi",
+            "Renk yönü",
+            "Son kullanım",
+        ),
+        options=(
+            (
+                "Temiz film",
+                "Sıcak 35mm",
+                "Soğuk sinema",
+                "Tek kullanımlık flaş",
+                "Solmuş vintage",
+            ),
+            ("Aydınlık sahne", "Dengeli ışık", "Az ışık"),
+            ("Eklenen gren yok", "İnce gren", "Görünür gren"),
+            ("Nötr", "Daha sıcak", "Daha soğuk"),
+            ("Tek fotoğraf", "Uyumlu seri", "Baskı"),
+        ),
+        natural=(
+            "İnsanlar varken ten tonlarını doğal tutun",
+            "İnsanlar varsa her renk adımından önce ve sonra teni, gözleri ve saçı karşılaştırın.",
+            "Yüze özgü bir tercih seçilmedi; yine de dışa aktarmadan önce insanları ve önemli renk referanslarını kontrol edin.",
+        ),
+        results=(
+            "Özel reçete oluştur",
+            "Başlangıç yönü",
+            "Ayarlama sırası",
+            "Tutarlılık kontrolü",
+            "Reçete sınırı",
+        ),
+        notes=(
+            (
+                "Kontrastı ölçülü, rengi dengeli ve parlaklıkları yumuşak tutun; stilizasyonu ancak taban stabil göründükten sonra ekleyin.",
+                "Sıcak orta tonları, orta kontrastı ve yumuşak parlaklıkları tercih edin; efekt eklemeden önce turuncuları ve teni izleyin.",
+                "Parlaklıkları kontrollü tutun, gölgeleri biraz soğutun ve nötr nesneleri maviye çevirmekten kaçının.",
+                "Doğrudan flaş parlaklığını ve keskin merkez kontrastını koruyun; kenar kararmasını ancak yüzleri ve metni kontrol ettikten sonra ekleyin.",
+                "En koyu tonları yumuşakça açın, sert kontrastı azaltın ve önemli detayı soldurmadan rengi yumuşatın.",
+            ),
+            (
+                "Önce parlak parlaklıkları koruyun ve en açık alanların hâlâ kullanışlı detay tutup tutmadığını değerlendirin.",
+                "Ruh hâli, gren veya dekoratif efektlerden önce pozlamayı ve beyaz dengesini ayarlayın.",
+                "Gölgeleri agresif açmaktan kaçının; nihai görüntüleme boyutunda gürültüyü ve renk lekelerini kontrol edin.",
+            ),
+            (
+                "Eklenen greni kapalı bırakın ve görünüm için ışığı, rengi ve kontrastı kullanın.",
+                "İnce greni sona doğru ekleyin, sonra düz gökyüzünü, teni ve metni normal boyutta inceleyin.",
+                "Kasıtlı greni yalnızca taban düzenlemeden sonra kullanın; yüzler, küçük detaylar veya baskı dokusu dikkat dağıtırsa azaltın.",
+            ),
+            (
+                "Önce belirgin bir renk kaymasını düzeltin, sonra beyazları ve tanıdık nesneleri inandırıcı tutun.",
+                "Sıcaklığı kademeli ekleyin ve dışa aktarmadan önce beyazları, teni ve iç mekân ışığını yeniden kontrol edin.",
+                "Görüntüyü kademeli soğutun; parlaklıkların ve nötr nesnelerin doğal olmayan biçimde mavileşmesini önleyin.",
+            ),
+            (
+                "Sonucu gerçek görüntüleme boyutunda değerlendirin ve korunan orijinalle karşılaştırın.",
+                "Bir referans düzenleme seçin, tüm diziyi karşılaştırın ve daha fazla efekt yığmak yerine aykırıları düzeltin.",
+                "Amaçlanan kırpmayı ve baskı boyutunu önizleyin; ekran parlaklığı ve eklenen gren kâğıtta farklı görünebilir.",
+            ),
+        ),
+        boundary=(
+            "Bu bir düzenleme sırasıdır; bir ön ayar, görüntü analizi veya film stoğu eşleşmesi vaadi değildir. "
+            "Pozlamayı, yüzleri, rengi, odağı, gürültüyü, dinamik aralığı veya çıktı koşullarını göremez."
+        ),
+        review=(
+            "Dışa aktarmadan önce dört kontrol",
+            "Dokunulmamış bir orijinali veya geri alınabilir bir düzenleme yolunu koruyun.",
+            "Her seferinde küçük bir değişiklik uygulayın ve normal görüntüleme boyutunda karşılaştırın.",
+            "Doku eklemeden önce parlaklıkları, gölgeleri, tanıdık renkleri ve insanları kontrol edin.",
+            "Bir seri için tüm kareleri birlikte karşılaştırın ve dışa aktarmadan önce aykırıları düzeltin.",
+        ),
+        sources=(
+            "Resmi Apple düzenleme bağlamı, bir onay değil",
+            "Apple, iPhone'da fotoğraf ve video düzenlemeyi ve düzenlenmiş bir öğeyi orijinaline döndürmeyi belgeler. iOS sürümünüz için güncel adımları kontrol edin.",
+            "Apple: iPhone'da fotoğraf ve video düzenleyin",
+            "Apple: iPhone'da fotoğraf düzenlemelerini geri alın ve döndürün",
+        ),
+        webmcp=(
+            "Chrome zorunlu WebMCP API önizlemesi",
+            "Yalnızca sınırlı stil seçimlerinden belirlenimci niteliksel bir düzenleme sırası oluşturun. Fotoğrafları, dosyaları, meta verileri, kameraları, kitaplıkları, hesapları veya serbest metni asla almayın veya bunlara erişmeyin; asla bir görüntüyü analiz etmeyin veya sonuç garanti etmeyin.",
+        ),
+        app=(
+            "Film görünümlerini doğrudan cihazınızda önizlemek ister misiniz?",
+            "PhotoCream Pro isteğe bağlıdır. Mevcut App Store sayfası, 100'den fazla görünümü, greni, halation'ı, ışık sızıntılarını, bloom'u, vinyet'i, canlı önizlemeyi ve ışık/renk denetimlerini tanımlar; hesap veya yükleme olmadan cihazda işlenir. Tek seferlik kilit açmayla ücretsiz indirilir. Kesin kullanılabilirlik ve özellikler için güncel sayfaya bakın. Bu planlayıcı uygulama olmadan çalışır.",
+            "PhotoCream Pro'yu App Store'da görüntüleyin",
+        ),
+        faq=(
+            "Film görünümü planlama soruları",
+            (
+                (
+                    "Bu sayfa fotoğrafımı alıyor veya inceliyor mu?",
+                    "Hayır. Yalnızca sınırlı stil seçimlerini kabul eder ve asla bir fotoğraf, dosya veya meta veri almaz.",
+                ),
+                (
+                    "Bu reçete belirli bir film stoğunu yeniden yaratır mı?",
+                    "Hayır. Bir başlangıç sırası sunar ve doğruluk veya sonuç iddiasında bulunmaz.",
+                ),
+                (
+                    "Apple Photos'ta bir düzenlemeyi geri alabilir miyim?",
+                    "Apple, düzenlenmiş bir fotoğrafı veya videoyu orijinaline döndürmeyi belgeler; iOS sürümünüz için güncel adımları doğrulayın.",
+                ),
+            ),
+        ),
+        footer="Yalnızca sınırlı tercihler · fotoğraf erişimi yok · görüntü analizi yok · sonuç vaadi yok",
+        inline="Bir editör seçmeden önce özel bir film görünümü reçetesi planlayın",
+        index=(
+            "Özel Film Görünümü Reçetesi Planlayıcısı",
+            "Bir film yönü seçin ve fotoğraf yüklemeden veya analiz etmeden geri alınabilir bir düzenleme sırası alın.",
+        ),
+    ),
 }
 
 
@@ -1756,6 +2284,10 @@ def update_one_index(path: Path, locale: str) -> bool:
     else:
         marker = '<section class="wrap grid">'
         if marker not in updated:
+            # Lite-generated hub (vi/th/id/tr) uses a different structure and is
+            # rebuilt by gen_tools_index_lite; skip rather than fail.
+            if '<div class="grid">' in updated:
+                return False
             raise RuntimeError(f"{path} is missing its tools grid")
         updated = updated.replace(marker, marker + card, 1)
     if updated == text:

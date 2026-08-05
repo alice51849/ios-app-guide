@@ -46,6 +46,10 @@ ALT_LOCALES = (
     "ko",
     "zh-Hant",
     "zh-Hans",
+    "vi",
+    "th",
+    "id",
+    "tr",
 )
 CARD_ICONS = {
     "morning": ("☀️", "👕", "🫧", "🥣", "🎒", "🚪"),
@@ -1368,6 +1372,582 @@ COPY = {
             "不填孩子资料或完成记录，建立可跳过的家庭顺序卡。",
         ),
     ),
+    "vi": _copy(
+        meta=(
+            "Trình lập thẻ nếp sinh hoạt gia đình riêng tư | Không dữ liệu trẻ",
+            "Tạo chuỗi ba đến sáu thẻ nếp sinh hoạt do phụ huynh duyệt mà không nhập tên, tuổi, lịch, trường, hành vi hay hồ sơ hoàn thành của trẻ.",
+            "Công cụ miễn phí",
+            "English",
+            "Miễn phí · dành cho phụ huynh · không hồ sơ trẻ",
+            "Trình lập thẻ nếp sinh hoạt gia đình riêng tư",
+            "Chọn bối cảnh gia đình và định dạng thẻ. Trang chỉ trả về chuỗi thẻ có thể bỏ qua và gỡ bỏ sau khi người lớn xác nhận từng bước phù hợp.",
+        ),
+        badges=(
+            "Không tên, tuổi hay hồ sơ trẻ",
+            "Không theo dõi hành vi hay hoàn thành",
+            "Không tài khoản, tải lên hay lưu trữ",
+            "Không hứa hẹn kết quả hay tự lập",
+        ),
+        planner=(
+            "Tạo chuỗi thẻ do người lớn duyệt",
+            "Các thẻ này sắp xếp các bước trong nhà; chúng không đánh giá trẻ, không kê đơn chăm sóc và không dự đoán hành vi, giấc ngủ, sức khỏe, học tập hay kết quả gia đình.",
+        ),
+        labels=(
+            "Bối cảnh nếp sinh hoạt",
+            "Số lượng thẻ",
+            "Cách trình bày thẻ",
+            "Gợi ý chuyển tiếp nhẹ nhàng",
+        ),
+        options=(
+            (
+                "Buổi sáng",
+                "Sau giờ học hoặc trông trẻ",
+                "Dọn dẹp",
+                "Giờ đi ngủ",
+            ),
+            (
+                "Chữ",
+                "Biểu tượng lớn kèm nhãn",
+                "Biểu tượng và chữ",
+            ),
+            (
+                "Chỉ hiện thẻ tiếp theo",
+                "Hiện thẻ bây giờ và tiếp theo",
+                "Đưa ra một lựa chọn an toàn có giới hạn",
+            ),
+        ),
+        adult_review=(
+            "Tôi là người lớn giám sát và đã kiểm tra các bước đã chọn cho gia đình này",
+            "Đã xác nhận người lớn duyệt. Giữ mọi thẻ là tùy chọn và thay đổi hoặc gỡ bỏ bất cứ gì không phù hợp hôm nay.",
+            "Cần người lớn duyệt trước khi thẻ xuất hiện. Kiểm tra an toàn, khả năng tiếp cận, hướng dẫn chăm sóc, nhu cầu gia đình và tín hiệu hiện tại của trẻ.",
+        ),
+        results=(
+            "Tạo thẻ riêng tư",
+            "In các thẻ đã duyệt",
+            "Thẻ nếp sinh hoạt tùy chọn",
+            "Có thể bỏ qua, tạm dừng hoặc thay thế",
+            "Thẻ tạm dừng: dừng chuỗi và kiểm tra gia đình cần gì lúc này.",
+        ),
+        steps=(
+            (
+                "Dùng tín hiệu khởi đầu bình tĩnh quen thuộc của gia đình.",
+                "Chọn quần áo mà người lớn giám sát đã chấp thuận.",
+                "Hoàn thành bước rửa hoặc chăm sóc quen thuộc với sự trợ giúp phù hợp của người lớn.",
+                "Dùng bước ăn sáng hoặc uống nước đã lên kế hoạch của gia đình.",
+                "Để người lớn kiểm tra các vật dụng cần cho ngày hôm đó.",
+                "Đi đến điểm sẵn sàng đã thống nhất cùng người lớn giám sát.",
+            ),
+            (
+                "Đến điểm chuyển tiếp đã thống nhất của gia đình.",
+                "Đặt đồ đạc vào nơi người lớn giám sát đã chọn.",
+                "Dùng bước rửa hoặc chăm sóc quen thuộc với sự trợ giúp phù hợp.",
+                "Dùng bước ăn, uống hoặc nghỉ đã lên kế hoạch của gia đình.",
+                "Chọn bước yên tĩnh, vận động hoặc gắn kết đã được người lớn chấp thuận.",
+                "Để người lớn xem trước điều gì đến tiếp theo hôm nay.",
+            ),
+            (
+                "Để người lớn chọn một khu vực nhỏ, an toàn để bắt đầu.",
+                "Trả vài món đồ chơi hoặc vật dụng về chỗ quen thuộc.",
+                "Trả sách hoặc học liệu về nơi người lớn chấp thuận.",
+                "Đặt quần áo hoặc đồ mềm vào nơi gia đình mong đợi.",
+                "Để người lớn xử lý vật sắc, nặng, vỡ hoặc chưa chắc chắn.",
+                "Cùng tạm dừng và kiểm tra lối đi cùng vật dụng cần thiết vẫn tiếp cận được.",
+            ),
+            (
+                "Dùng tín hiệu bắt đầu giờ ngủ bình tĩnh quen thuộc của gia đình.",
+                "Hoàn thành bước rửa hoặc vệ sinh quen thuộc với sự trợ giúp phù hợp của người lớn.",
+                "Chọn quần áo ngủ phù hợp với gia đình và điều kiện.",
+                "Chăm sóc răng theo hướng dẫn hiện tại của gia đình và chuyên môn.",
+                "Chọn bước gắn kết yên tĩnh, kể chuyện hoặc dỗ ngủ quen thuộc của gia đình.",
+                "Kết thúc với thiết lập giấc ngủ đã thống nhất và người lớn giám sát ở gần khi cần.",
+            ),
+        ),
+        cue_notes=(
+            "Chỉ giữ một thẻ tiếp theo hiển thị; chỉ hiện thẻ khác sau khi người lớn kiểm tra tình huống hiện tại.",
+            "Hiện thẻ hiện tại và thẻ kế tiếp mà không coi thẻ nào là hạn chót.",
+            "Chỉ đưa ra lựa chọn khi cả hai phương án đều an toàn, sẵn có và được người lớn giám sát chấp nhận.",
+        ),
+        boundary=(
+            "Trình lập kế hoạch không bao giờ biết tuổi, sự phát triển, khuyết tật, sức khỏe, nhu cầu giác quan, kế hoạch chăm sóc, văn hóa, gia đình, trạng thái hiện tại hay môi trường của trẻ. "
+            "Người lớn giám sát phải điều chỉnh, gỡ bỏ hoặc dừng mọi thẻ khi cần."
+        ),
+        preflight=(
+            "Bốn điều cần kiểm trước khi dùng một thẻ",
+            "Xác nhận bước đó an toàn và phù hợp ở nơi và thời điểm hiện tại.",
+            "Giữ khả năng tiếp cận thức ăn, nước, nhà vệ sinh, thuốc, liên lạc, di chuyển và sự thoải mái.",
+            "Dùng hướng dẫn chăm sóc chuyên môn hiện hành khi áp dụng; một thẻ không bao giờ thay thế nó.",
+            "Tạm dừng, bỏ qua hoặc thay đổi chuỗi bất cứ khi nào trẻ hoặc gia đình cần điều khác.",
+        ),
+        sources=(
+            "Bối cảnh nếp sinh hoạt chính thức, không phải sự chứng thực",
+            "CDC mô tả sự nhất quán và tính dự đoán được là một phần của cấu trúc gia đình và nói rằng mỗi gia đình tự quyết định nếp nào phù hợp nhất. Hướng dẫn đó không xác nhận công cụ này hay bảo đảm kết quả.",
+            "CDC: tạo nếp sinh hoạt nhất quán và cấu trúc gia đình",
+        ),
+        webmcp=(
+            "Bản xem trước API mệnh lệnh WebMCP của Chrome",
+            "Tạo ba đến sáu thẻ nếp sinh hoạt gia đình tùy chọn do phụ huynh duyệt, chỉ từ các lựa chọn hiển thị có giới hạn. Không bao giờ nhận hay truy cập tên, tuổi, lịch, trường, vị trí, ảnh, tài khoản, văn bản tự do, hành vi hay hồ sơ hoàn thành của trẻ; không bao giờ chấm điểm, chẩn đoán, theo dõi hay hứa hẹn kết quả.",
+        ),
+        app=(
+            "Muốn một lớp nếp sinh hoạt cha mẹ–con tùy chọn, dùng lại được?",
+            "Lumi Mission Planet là tùy chọn. Trang App Store hiện tại mô tả nhiệm vụ nếp sinh hoạt cha mẹ–con, bảng điều khiển cho phụ huynh, dữ liệu trên thiết bị, không tài khoản hay phân tích của bên thứ ba, và tải xuống miễn phí kèm mở khóa một lần. Hãy xem trang hiện tại để biết tình trạng và tính năng chính xác. Các thẻ in này hoạt động mà không cần app.",
+            "Phụ huynh: xem Lumi Mission Planet trên App Store",
+        ),
+        faq=(
+            "Câu hỏi về thẻ nếp sinh hoạt gia đình",
+            (
+                (
+                    "Trang này có thu thập thông tin về trẻ không?",
+                    "Không. Nó chỉ nhận các lựa chọn gia đình có giới hạn và không bao giờ hỏi tên, tuổi, lịch, trường, hồ sơ hay bản ghi hoạt động.",
+                ),
+                (
+                    "Các thẻ có phải chương trình hành vi hay kế hoạch chăm sóc không?",
+                    "Không. Đó là các gợi ý chuỗi gia đình có thể gỡ bỏ và không chẩn đoán, kê đơn, theo dõi hay hứa hẹn kết quả.",
+                ),
+                (
+                    "Nếu một bước không phù hợp hôm nay thì sao?",
+                    "Người lớn giám sát nên bỏ qua, thay thế hoặc dừng nó. Mọi thẻ đều là tùy chọn.",
+                ),
+            ),
+        ),
+        footer="Chỉ chuỗi do phụ huynh duyệt · không dữ liệu trẻ · không theo dõi · không hứa kết quả",
+        inline="Lập thẻ nếp sinh hoạt gia đình riêng tư do phụ huynh duyệt trước khi chọn app",
+        index=(
+            "Trình lập thẻ nếp sinh hoạt gia đình riêng tư",
+            "Tạo chuỗi gia đình có thể bỏ qua mà không nhập dữ liệu trẻ hay theo dõi hoàn thành.",
+        ),
+    ),
+    "th": _copy(
+        meta=(
+            "ตัววางแผนการ์ดกิจวัตรครอบครัวแบบส่วนตัว | ไม่มีข้อมูลเด็ก",
+            "สร้างลำดับการ์ดกิจวัตรสามถึงหกใบที่ผู้ปกครองตรวจสอบ โดยไม่กรอกชื่อ อายุ ตารางเวลา โรงเรียน พฤติกรรม หรือบันทึกการทำเสร็จของเด็ก",
+            "เครื่องมือฟรี",
+            "English",
+            "ฟรี · สำหรับผู้ปกครอง · ไม่มีโปรไฟล์เด็ก",
+            "ตัววางแผนการ์ดกิจวัตรครอบครัวแบบส่วนตัว",
+            "เลือกบริบทของครอบครัวและรูปแบบการ์ด หน้าเว็บจะคืนลำดับการ์ดที่ข้ามและนำออกได้ หลังจากผู้ใหญ่ยืนยันว่าทุกขั้นตอนเหมาะสมแล้วเท่านั้น",
+        ),
+        badges=(
+            "ไม่มีชื่อ อายุ หรือโปรไฟล์เด็ก",
+            "ไม่ติดตามพฤติกรรมหรือการทำเสร็จ",
+            "ไม่มีบัญชี อัปโหลด หรือจัดเก็บ",
+            "ไม่รับประกันผลลัพธ์หรือการพึ่งตนเอง",
+        ),
+        planner=(
+            "สร้างลำดับการ์ดที่ผู้ใหญ่ตรวจสอบ",
+            "การ์ดเหล่านี้จัดระเบียบขั้นตอนในบ้าน ไม่ได้ประเมินเด็ก ไม่สั่งการดูแล และไม่ทำนายพฤติกรรม การนอน สุขภาพ การเรียนรู้ หรือผลลัพธ์ของครอบครัว",
+        ),
+        labels=(
+            "บริบทกิจวัตร",
+            "จำนวนการ์ด",
+            "การแสดงการ์ด",
+            "สัญญาณเปลี่ยนผ่านอย่างนุ่มนวล",
+        ),
+        options=(
+            (
+                "ตอนเช้า",
+                "หลังเลิกเรียนหรือหลังรับเลี้ยง",
+                "เก็บกวาด",
+                "เวลานอน",
+            ),
+            (
+                "คำ",
+                "ไอคอนขนาดใหญ่พร้อมป้ายกำกับ",
+                "ไอคอนและคำ",
+            ),
+            (
+                "แสดงเฉพาะการ์ดถัดไป",
+                "แสดงตอนนี้และถัดไป",
+                "เสนอทางเลือกที่ปลอดภัยและมีขอบเขตหนึ่งอย่าง",
+            ),
+        ),
+        adult_review=(
+            "ฉันเป็นผู้ใหญ่ที่ดูแลและได้ตรวจสอบขั้นตอนที่เลือกสำหรับครอบครัวนี้แล้ว",
+            "ยืนยันการตรวจสอบของผู้ใหญ่แล้ว ให้ทุกการ์ดเป็นทางเลือกและเปลี่ยนหรือนำสิ่งที่ไม่เหมาะสมวันนี้ออก",
+            "ต้องมีการตรวจสอบของผู้ใหญ่ก่อนการ์ดจะปรากฏ ตรวจสอบความปลอดภัย การเข้าถึง แนวทางการดูแล ความต้องการของครอบครัว และสัญญาณปัจจุบันของเด็ก",
+        ),
+        results=(
+            "สร้างการ์ดส่วนตัว",
+            "พิมพ์การ์ดที่ตรวจสอบแล้ว",
+            "การ์ดกิจวัตรแบบเลือกได้",
+            "อาจข้าม หยุดชั่วคราว หรือแทนที่ได้",
+            "การ์ดหยุด: หยุดลำดับและตรวจสอบว่าครอบครัวต้องการอะไรตอนนี้",
+        ),
+        steps=(
+            (
+                "ใช้สัญญาณเริ่มต้นอย่างสงบที่ครอบครัวใช้ประจำ",
+                "เลือกเสื้อผ้าที่ผู้ใหญ่ที่ดูแลอนุมัติแล้ว",
+                "ทำขั้นตอนล้างหรือดูแลที่ทำประจำพร้อมความช่วยเหลือที่เหมาะสมจากผู้ใหญ่",
+                "ใช้ขั้นตอนอาหารเช้าหรือเครื่องดื่มที่ครอบครัววางแผนไว้",
+                "ให้ผู้ใหญ่ตรวจสิ่งของที่ต้องใช้ในวันนั้น",
+                "ไปยังจุดพร้อมที่ครอบครัวตกลงกันพร้อมผู้ใหญ่ที่ดูแล",
+            ),
+            (
+                "มาถึงจุดเปลี่ยนผ่านที่ครอบครัวตกลงกัน",
+                "วางสัมภาระในที่ที่ผู้ใหญ่ที่ดูแลเลือกไว้",
+                "ทำขั้นตอนล้างหรือดูแลที่ทำประจำพร้อมความช่วยเหลือที่เหมาะสม",
+                "ทำขั้นตอนอาหาร เครื่องดื่ม หรือพักที่ครอบครัววางแผนไว้",
+                "เลือกขั้นตอนเงียบ เคลื่อนไหว หรือเชื่อมสัมพันธ์ที่ผู้ใหญ่อนุมัติ",
+                "ให้ผู้ใหญ่ดูตัวอย่างว่าอะไรจะมาถัดไปในวันนี้",
+            ),
+            (
+                "ให้ผู้ใหญ่เลือกพื้นที่เล็กและปลอดภัยหนึ่งจุดเพื่อเริ่ม",
+                "นำของเล่นหรืออุปกรณ์กิจกรรมไม่กี่ชิ้นกลับไปที่เดิม",
+                "นำหนังสือหรือสื่อการเรียนกลับไปที่ที่ผู้ใหญ่อนุมัติ",
+                "วางเสื้อผ้าหรือของนุ่มในที่ที่ครอบครัวคาดหวัง",
+                "ให้ผู้ใหญ่จัดการของมีคม หนัก แตก หรือไม่แน่ใจ",
+                "หยุดพักด้วยกันและตรวจว่าทางเดินและสิ่งของที่จำเป็นยังเข้าถึงได้",
+            ),
+            (
+                "ใช้สัญญาณเริ่มเวลานอนอย่างสงบที่ครอบครัวใช้ประจำ",
+                "ทำขั้นตอนล้างหรือเข้าห้องน้ำที่ทำประจำพร้อมความช่วยเหลือที่เหมาะสมจากผู้ใหญ่",
+                "เลือกชุดนอนที่เหมาะกับครอบครัวและสภาพอากาศ",
+                "ดูแลฟันตามแนวทางปัจจุบันของครอบครัวและผู้เชี่ยวชาญ",
+                "เลือกขั้นตอนเชื่อมสัมพันธ์เงียบ เล่านิทาน หรือกล่อมนอนที่ครอบครัวทำประจำ",
+                "จบด้วยการจัดที่นอนที่ตกลงกันและมีผู้ใหญ่ที่ดูแลอยู่ใกล้เมื่อจำเป็น",
+            ),
+        ),
+        cue_notes=(
+            "แสดงการ์ดถัดไปเพียงใบเดียว เปิดเผยใบอื่นหลังจากผู้ใหญ่ตรวจสถานการณ์ปัจจุบันแล้วเท่านั้น",
+            "แสดงการ์ดปัจจุบันและใบถัดไปโดยไม่ถือว่าใบใดเป็นกำหนดเส้นตาย",
+            "เสนอทางเลือกเฉพาะเมื่อทั้งสองตัวเลือกปลอดภัย มีให้ และผู้ใหญ่ที่ดูแลยอมรับได้",
+        ),
+        boundary=(
+            "ตัววางแผนไม่เคยรู้ อายุ พัฒนาการ ความพิการ สุขภาพ ความต้องการทางประสาทสัมผัส แผนการดูแล วัฒนธรรม ครอบครัว สภาพปัจจุบัน หรือสภาพแวดล้อมของเด็ก "
+            "ผู้ใหญ่ที่ดูแลต้องปรับ นำออก หรือหยุดทุกการ์ดตามความจำเป็น"
+        ),
+        preflight=(
+            "สี่ข้อควรตรวจก่อนใช้การ์ด",
+            "ยืนยันว่าขั้นตอนปลอดภัยและเหมาะสมในสถานที่และช่วงเวลาปัจจุบัน",
+            "รักษาการเข้าถึงอาหาร น้ำ ห้องน้ำ ยา การสื่อสาร การเคลื่อนไหว และความสบาย",
+            "ใช้แนวทางการดูแลของผู้เชี่ยวชาญปัจจุบันเมื่อเกี่ยวข้อง การ์ดไม่มีวันแทนที่มัน",
+            "หยุด ข้าม หรือเปลี่ยนลำดับเมื่อใดก็ตามที่เด็กหรือครอบครัวต้องการสิ่งที่ต่างออกไป",
+        ),
+        sources=(
+            "บริบทกิจวัตรทางการ ไม่ใช่การรับรอง",
+            "CDC อธิบายความสม่ำเสมอและการคาดเดาได้ว่าเป็นส่วนหนึ่งของโครงสร้างครอบครัว และระบุว่าแต่ละครอบครัวตัดสินใจเองว่ากิจวัตรใดเหมาะที่สุด แนวทางนั้นไม่ได้รับรองเครื่องมือนี้หรือรับประกันผลลัพธ์",
+            "CDC: การสร้างกิจวัตรที่สม่ำเสมอและโครงสร้างครอบครัว",
+        ),
+        webmcp=(
+            "ตัวอย่าง API เชิงคำสั่ง WebMCP ของ Chrome",
+            "สร้างการ์ดกิจวัตรครอบครัวที่ผู้ปกครองตรวจสอบสามถึงหกใบแบบเลือกได้ จากตัวเลือกที่มองเห็นและมีขอบเขตเท่านั้น ไม่รับหรือเข้าถึงชื่อ อายุ ตารางเวลา โรงเรียน ตำแหน่ง ภาพถ่าย บัญชี ข้อความอิสระ พฤติกรรม หรือบันทึกการทำเสร็จของเด็ก ไม่ให้คะแนน วินิจฉัย ติดตาม หรือรับประกันผลลัพธ์",
+        ),
+        app=(
+            "อยากได้เลเยอร์กิจวัตรพ่อแม่–ลูกแบบเลือกได้ที่ใช้ซ้ำได้ไหม?",
+            "Lumi Mission Planet เป็นทางเลือก หน้า App Store ปัจจุบันอธิบายภารกิจกิจวัตรพ่อแม่–ลูก แดชบอร์ดสำหรับผู้ปกครอง ข้อมูลบนอุปกรณ์ ไม่มีบัญชีหรือการวิเคราะห์จากบุคคลที่สาม และดาวน์โหลดฟรีพร้อมปลดล็อกครั้งเดียว โปรดดูหน้าปัจจุบันเพื่อความพร้อมและฟีเจอร์ที่แน่นอน การ์ดพิมพ์เหล่านี้ทำงานได้โดยไม่ต้องใช้แอป",
+            "ผู้ปกครอง: ดู Lumi Mission Planet บน App Store",
+        ),
+        faq=(
+            "คำถามเกี่ยวกับการ์ดกิจวัตรครอบครัว",
+            (
+                (
+                    "หน้านี้เก็บข้อมูลเกี่ยวกับเด็กไหม?",
+                    "ไม่ มันรับเพียงตัวเลือกของครอบครัวที่มีขอบเขต และไม่เคยถามชื่อ อายุ ตารางเวลา โรงเรียน โปรไฟล์ หรือบันทึกกิจกรรม",
+                ),
+                (
+                    "การ์ดเป็นโปรแกรมพฤติกรรมหรือแผนการดูแลไหม?",
+                    "ไม่ มันคือคำแนะนำลำดับในบ้านที่นำออกได้ และไม่วินิจฉัย สั่งการ ติดตาม หรือรับประกันผล",
+                ),
+                (
+                    "ถ้าขั้นตอนไม่เหมาะกับวันนี้ทำอย่างไร?",
+                    "ผู้ใหญ่ที่ดูแลควรข้าม แทนที่ หรือหยุดมัน ทุกการ์ดเป็นทางเลือก",
+                ),
+            ),
+        ),
+        footer="เฉพาะลำดับที่ผู้ปกครองตรวจสอบ · ไม่มีข้อมูลเด็ก · ไม่ติดตาม · ไม่รับประกันผล",
+        inline="วางแผนการ์ดกิจวัตรครอบครัวส่วนตัวที่ผู้ปกครองตรวจสอบก่อนเลือกแอป",
+        index=(
+            "ตัววางแผนการ์ดกิจวัตรครอบครัวแบบส่วนตัว",
+            "สร้างลำดับในบ้านที่ข้ามได้โดยไม่กรอกข้อมูลเด็กหรือติดตามการทำเสร็จ",
+        ),
+    ),
+    "id": _copy(
+        meta=(
+            "Perencana Kartu Rutinitas Keluarga Pribadi | Tanpa Data Anak",
+            "Buat urutan tiga hingga enam kartu rutinitas yang ditinjau orang tua tanpa memasukkan nama, usia, jadwal, sekolah, perilaku, atau catatan penyelesaian anak.",
+            "Alat gratis",
+            "English",
+            "Gratis · untuk orang tua · tanpa profil anak",
+            "Perencana kartu rutinitas keluarga pribadi",
+            "Pilih konteks rumah tangga dan format kartu. Halaman mengembalikan urutan kartu yang dapat dilewati dan dihapus hanya setelah orang dewasa memastikan setiap langkah sesuai.",
+        ),
+        badges=(
+            "Tanpa nama, usia, atau profil anak",
+            "Tanpa pelacakan perilaku atau penyelesaian",
+            "Tanpa akun, unggahan, atau penyimpanan",
+            "Tanpa janji hasil atau kemandirian",
+        ),
+        planner=(
+            "Bangun urutan kartu yang ditinjau orang dewasa",
+            "Kartu ini menata langkah rumah tangga; kartu tidak menilai anak, tidak meresepkan perawatan, dan tidak memprediksi perilaku, tidur, kesehatan, belajar, atau hasil keluarga.",
+        ),
+        labels=(
+            "Konteks rutinitas",
+            "Jumlah kartu",
+            "Penyajian kartu",
+            "Isyarat transisi lembut",
+        ),
+        options=(
+            (
+                "Pagi",
+                "Sepulang sekolah atau penitipan",
+                "Beres-beres",
+                "Waktu tidur",
+            ),
+            (
+                "Kata",
+                "Ikon besar dengan label",
+                "Ikon dan kata",
+            ),
+            (
+                "Tampilkan hanya kartu berikutnya",
+                "Tampilkan sekarang dan berikutnya",
+                "Tawarkan satu pilihan aman yang terbatas",
+            ),
+        ),
+        adult_review=(
+            "Saya orang dewasa pengawas dan telah memeriksa langkah terpilih untuk rumah tangga ini",
+            "Tinjauan orang dewasa dikonfirmasi. Jaga setiap kartu tetap opsional dan ubah atau hapus apa pun yang tidak sesuai hari ini.",
+            "Tinjauan orang dewasa diperlukan sebelum kartu muncul. Periksa keamanan, akses, panduan perawatan, kebutuhan rumah tangga, dan isyarat anak saat ini.",
+        ),
+        results=(
+            "Buat kartu pribadi",
+            "Cetak kartu yang ditinjau",
+            "Kartu rutinitas opsional",
+            "Dapat dilewati, dijeda, atau diganti",
+            "Kartu jeda: hentikan urutan dan periksa apa yang dibutuhkan rumah tangga sekarang.",
+        ),
+        steps=(
+            (
+                "Gunakan isyarat awal yang tenang seperti biasa di rumah.",
+                "Pilih pakaian yang telah disetujui orang dewasa pengawas.",
+                "Selesaikan langkah cuci atau perawatan biasa dengan bantuan orang dewasa yang sesuai.",
+                "Gunakan langkah sarapan atau minum yang direncanakan keluarga.",
+                "Biarkan orang dewasa memeriksa barang yang dibutuhkan hari itu.",
+                "Menuju titik siap yang disepakati keluarga bersama orang dewasa pengawas.",
+            ),
+            (
+                "Tiba di titik transisi yang disepakati rumah tangga.",
+                "Letakkan barang di tempat yang dipilih orang dewasa pengawas.",
+                "Gunakan langkah cuci atau perawatan biasa dengan bantuan yang sesuai.",
+                "Ambil jeda makan, minum, atau istirahat yang direncanakan keluarga.",
+                "Pilih langkah tenang, gerak, atau kedekatan yang disetujui orang dewasa.",
+                "Biarkan orang dewasa mengintip apa yang berikutnya hari ini.",
+            ),
+            (
+                "Biarkan orang dewasa memilih satu area kecil dan aman untuk mulai.",
+                "Kembalikan beberapa mainan atau alat aktivitas ke tempat biasanya.",
+                "Kembalikan buku atau bahan belajar ke tempat yang disetujui orang dewasa.",
+                "Letakkan pakaian atau barang lembut di tempat yang diharapkan rumah tangga.",
+                "Biarkan orang dewasa menangani benda tajam, berat, pecah, atau tak pasti.",
+                "Berhenti sejenak bersama dan periksa jalur serta barang yang dibutuhkan tetap dapat diakses.",
+            ),
+            (
+                "Gunakan isyarat mulai tidur yang tenang seperti biasa di rumah.",
+                "Selesaikan langkah cuci atau kamar mandi biasa dengan bantuan orang dewasa yang sesuai.",
+                "Pilih pakaian tidur yang sesuai untuk rumah tangga dan kondisi.",
+                "Rawat gigi sesuai panduan keluarga dan profesional saat ini.",
+                "Pilih langkah kedekatan tenang, cerita, atau menenangkan yang biasa di keluarga.",
+                "Akhiri dengan pengaturan tidur yang disepakati dan orang dewasa pengawas di dekat bila perlu.",
+            ),
+        ),
+        cue_notes=(
+            "Tampilkan hanya satu kartu berikutnya; ungkap kartu lain hanya setelah orang dewasa memeriksa situasi saat ini.",
+            "Tampilkan kartu saat ini dan berikutnya tanpa memperlakukan keduanya sebagai tenggat.",
+            "Tawarkan pilihan hanya bila kedua opsi aman, tersedia, dan dapat diterima orang dewasa pengawas.",
+        ),
+        boundary=(
+            "Perencana tidak pernah tahu usia, perkembangan, disabilitas, kesehatan, kebutuhan sensorik, rencana perawatan, budaya, rumah tangga, kondisi saat ini, atau lingkungan anak. "
+            "Orang dewasa pengawas harus menyesuaikan, menghapus, atau menghentikan setiap kartu sesuai kebutuhan."
+        ),
+        preflight=(
+            "Empat pemeriksaan sebelum memakai kartu",
+            "Pastikan langkah aman dan sesuai di tempat dan momen saat ini.",
+            "Jaga akses ke makanan, air, kamar mandi, obat, komunikasi, mobilitas, dan kenyamanan.",
+            "Gunakan panduan perawatan profesional terkini bila berlaku; kartu tak pernah menggantikannya.",
+            "Jeda, lewati, atau ubah urutan kapan pun anak atau rumah tangga membutuhkan hal berbeda.",
+        ),
+        sources=(
+            "Konteks rutinitas resmi, bukan dukungan",
+            "CDC menjelaskan konsistensi dan keterdugaan sebagai bagian dari struktur rumah tangga dan menyatakan setiap keluarga memutuskan rutinitas mana yang paling cocok. Panduan itu tidak memvalidasi alat ini atau menjamin hasil.",
+            "CDC: menciptakan rutinitas konsisten dan struktur rumah tangga",
+        ),
+        webmcp=(
+            "Pratinjau API imperatif WebMCP Chrome",
+            "Buat tiga hingga enam kartu rutinitas keluarga opsional yang ditinjau orang tua hanya dari pilihan terlihat yang terbatas. Jangan pernah menerima atau mengakses nama, usia, jadwal, sekolah, lokasi, foto, akun, teks bebas, perilaku, atau catatan penyelesaian anak; jangan pernah menilai, mendiagnosis, memantau, atau menjanjikan hasil.",
+        ),
+        app=(
+            "Ingin lapisan rutinitas orang tua–anak opsional yang dapat dipakai ulang?",
+            "Lumi Mission Planet bersifat opsional. Halaman App Store-nya saat ini menjelaskan misi rutinitas orang tua–anak, dasbor orang tua, data di perangkat, tanpa akun atau analitik pihak ketiga, dan unduhan gratis dengan buka kunci sekali bayar. Periksa halaman terkini untuk ketersediaan dan fitur pastinya. Kartu cetak ini bekerja tanpa aplikasi.",
+            "Orang tua: lihat Lumi Mission Planet di App Store",
+        ),
+        faq=(
+            "Pertanyaan kartu rutinitas keluarga",
+            (
+                (
+                    "Apakah halaman ini mengumpulkan informasi tentang anak?",
+                    "Tidak. Ia hanya menerima pilihan rumah tangga terbatas dan tak pernah meminta nama, usia, jadwal, sekolah, profil, atau catatan aktivitas.",
+                ),
+                (
+                    "Apakah kartu ini program perilaku atau rencana perawatan?",
+                    "Tidak. Itu petunjuk urutan rumah tangga yang dapat dihapus dan tidak mendiagnosis, meresepkan, memantau, atau menjanjikan hasil.",
+                ),
+                (
+                    "Bagaimana jika sebuah langkah tidak tepat hari ini?",
+                    "Orang dewasa pengawas sebaiknya melewati, mengganti, atau menghentikannya. Setiap kartu bersifat opsional.",
+                ),
+            ),
+        ),
+        footer="Hanya urutan yang ditinjau orang tua · tanpa data anak · tanpa pelacakan · tanpa janji hasil",
+        inline="Rencanakan kartu rutinitas keluarga pribadi yang ditinjau orang tua sebelum memilih aplikasi",
+        index=(
+            "Perencana Kartu Rutinitas Keluarga Pribadi",
+            "Buat urutan rumah tangga yang dapat dilewati tanpa memasukkan data anak atau melacak penyelesaian.",
+        ),
+    ),
+    "tr": _copy(
+        meta=(
+            "Özel Aile Rutin Kartı Planlayıcısı | Çocuk Verisi Yok",
+            "Bir çocuğun adını, yaşını, programını, okulunu, davranışını veya tamamlama kaydını girmeden ebeveyn onaylı üç ila altı rutin kartından oluşan bir sıra oluşturun.",
+            "Ücretsiz araçlar",
+            "English",
+            "Ücretsiz · ebeveyne yönelik · çocuk profili yok",
+            "Özel aile rutin kartı planlayıcısı",
+            "Bir ev bağlamı ve kart biçimi seçin. Sayfa, yalnızca bir yetişkin her adımın uygun olduğunu onayladıktan sonra kaldırılabilir ve atlanabilir bir kart sırası döndürür.",
+        ),
+        badges=(
+            "Ad, yaş veya çocuk profili yok",
+            "Davranış veya tamamlama takibi yok",
+            "Hesap, yükleme veya depolama yok",
+            "Sonuç veya bağımsızlık vaadi yok",
+        ),
+        planner=(
+            "Yetişkin onaylı bir kart sırası oluştur",
+            "Bu kartlar ev adımlarını düzenler; bir çocuğu değerlendirmez, bakım reçete etmez ve davranış, uyku, sağlık, öğrenme veya aile sonuçlarını tahmin etmez.",
+        ),
+        labels=(
+            "Rutin bağlamı",
+            "Kart sayısı",
+            "Kart sunumu",
+            "Nazik geçiş ipucu",
+        ),
+        options=(
+            (
+                "Sabah",
+                "Okuldan veya bakımdan sonra",
+                "Toparlanma",
+                "Yatma zamanı",
+            ),
+            (
+                "Kelimeler",
+                "Etiketli büyük simgeler",
+                "Simgeler ve kelimeler",
+            ),
+            (
+                "Yalnızca sonraki kartı göster",
+                "Şimdiyi ve sonrakini göster",
+                "Güvenli ve sınırlı bir seçenek sun",
+            ),
+        ),
+        adult_review=(
+            "Gözeten yetişkin benim ve bu ev için seçilen adımları kontrol ettim",
+            "Yetişkin incelemesi onaylandı. Her kartı isteğe bağlı tutun ve bugün uygun olmayan her şeyi değiştirin veya kaldırın.",
+            "Kartlar görünmeden önce yetişkin incelemesi gerekir. Güvenliği, erişimi, bakım rehberliğini, ev ihtiyaçlarını ve çocuğun mevcut ipuçlarını kontrol edin.",
+        ),
+        results=(
+            "Özel kartlar oluştur",
+            "İncelenen kartları yazdır",
+            "İsteğe bağlı rutin kartı",
+            "Atlanabilir, duraklatılabilir veya değiştirilebilir",
+            "Duraklat kartı: sırayı durdurun ve evin şimdi neye ihtiyacı olduğunu kontrol edin.",
+        ),
+        steps=(
+            (
+                "Evin her zamanki sakin başlangıç ipucunu kullanın.",
+                "Gözeten yetişkinin onayladığı kıyafeti seçin.",
+                "Uygun yetişkin yardımıyla evin her zamanki yıkanma veya bakım adımını tamamlayın.",
+                "Ailenin planladığı kahvaltı veya içecek adımını kullanın.",
+                "Yetişkinin gün için gereken eşyaları kontrol etmesine izin verin.",
+                "Gözeten yetişkinle ailenin kararlaştırdığı hazır noktasına geçin.",
+            ),
+            (
+                "Evin kararlaştırdığı geçiş noktasına varın.",
+                "Eşyaları gözeten yetişkinin seçtiği yere koyun.",
+                "Uygun yardımla evin her zamanki yıkanma veya bakım adımını kullanın.",
+                "Ailenin planladığı yemek, içecek veya dinlenme molasını alın.",
+                "Yetişkinin onayladığı sakin, hareket veya bağ kurma adımını seçin.",
+                "Yetişkinin bugün sırada ne olduğuna göz atmasına izin verin.",
+            ),
+            (
+                "Yetişkinin başlamak için küçük ve güvenli bir alan seçmesine izin verin.",
+                "Birkaç oyuncağı veya etkinlik eşyasını her zamanki yerine koyun.",
+                "Kitapları veya öğrenme malzemelerini yetişkinin onayladığı yere koyun.",
+                "Kıyafet veya yumuşak eşyaları evin beklediği yere koyun.",
+                "Keskin, ağır, kırık veya belirsiz eşyaları yetişkinin ele almasına izin verin.",
+                "Birlikte durun ve yolların ve gereken eşyaların erişilebilir kaldığını kontrol edin.",
+            ),
+            (
+                "Evin her zamanki sakin yatma başlangıç ipucunu kullanın.",
+                "Uygun yetişkin yardımıyla her zamanki yıkanma veya tuvalet adımını tamamlayın.",
+                "Ev ve koşullar için onaylanmış uyku kıyafetini seçin.",
+                "Diş bakımını mevcut aile ve profesyonel rehberliğe göre tamamlayın.",
+                "Ailenin her zamanki sakin bağ kurma, hikâye veya yatıştırma adımını seçin.",
+                "Evin kararlaştırdığı uyku düzeniyle ve gerektiğinde yakında gözeten bir yetişkinle bitirin.",
+            ),
+        ),
+        cue_notes=(
+            "Yalnızca bir sonraki kartı görünür tutun; başka bir kartı ancak yetişkin mevcut durumu kontrol ettikten sonra gösterin.",
+            "Mevcut ve sonraki kartı ikisini de son tarih gibi görmeden gösterin.",
+            "Yalnızca her iki seçenek güvenli, mevcut ve gözeten yetişkin için kabul edilebilir olduğunda seçenek sunun.",
+        ),
+        boundary=(
+            "Planlayıcı çocuğun yaşını, gelişimini, engelini, sağlığını, duyusal ihtiyaçlarını, bakım planını, kültürünü, evini, mevcut durumunu veya ortamını asla bilmez. "
+            "Gözeten yetişkin her kartı gerektiğinde uyarlamalı, kaldırmalı veya durdurmalıdır."
+        ),
+        preflight=(
+            "Bir kartı kullanmadan önce dört kontrol",
+            "Adımın mevcut yer ve anda güvenli ve uygun olduğunu doğrulayın.",
+            "Yiyecek, su, tuvalet, ilaç, iletişim, hareket ve rahatlığa erişimi koruyun.",
+            "Geçerli olduğunda güncel profesyonel bakım rehberliğini kullanın; bir kart onu asla geçersiz kılmaz.",
+            "Çocuk veya ev farklı bir şeye ihtiyaç duyduğunda sırayı duraklatın, atlayın veya değiştirin.",
+        ),
+        sources=(
+            "Resmi rutin bağlamı, bir onay değil",
+            "CDC, tutarlılık ve öngörülebilirliği ev yapısının parçaları olarak tanımlar ve hangi rutinlerin en iyi işlediğine ailelerin karar verdiğini söyler. Bu rehberlik bu aracı doğrulamaz veya bir sonucu garanti etmez.",
+            "CDC: tutarlı rutinler ve ev yapısı oluşturmak",
+        ),
+        webmcp=(
+            "Chrome zorunlu WebMCP API önizlemesi",
+            "Yalnızca sınırlı görünür seçeneklerden üç ila altı isteğe bağlı ebeveyn onaylı aile rutin kartı oluşturun. Çocuğun adını, yaşını, programını, okulunu, konumunu, fotoğraflarını, hesaplarını, serbest metnini, davranışını veya tamamlama kayıtlarını asla almayın veya bunlara erişmeyin; asla puanlamayın, teşhis koymayın, izlemeyin veya bir sonuç vaat etmeyin.",
+        ),
+        app=(
+            "İsteğe bağlı, yeniden kullanılabilir bir ebeveyn–çocuk rutin katmanı ister misiniz?",
+            "Lumi Mission Planet isteğe bağlıdır. Mevcut App Store sayfası ebeveyn–çocuk rutin görevlerini, bir ebeveyn panosunu, cihazdaki verileri, hesap veya üçüncü taraf analitiği olmadığını ve tek seferlik kilit açmalı ücretsiz indirmeyi tanımlar. Kesin kullanılabilirlik ve özellikler için güncel sayfaya bakın. Bu yazdırılabilir kartlar uygulama olmadan çalışır.",
+            "Ebeveynler: Lumi Mission Planet'i App Store'da görüntüleyin",
+        ),
+        faq=(
+            "Aile rutin kartı soruları",
+            (
+                (
+                    "Bu sayfa bir çocuk hakkında bilgi topluyor mu?",
+                    "Hayır. Yalnızca sınırlı ev seçimlerini kabul eder ve asla ad, yaş, program, okul, profil veya etkinlik kaydı istemez.",
+                ),
+                (
+                    "Kartlar bir davranış programı veya bakım planı mı?",
+                    "Hayır. Bunlar kaldırılabilir ev sıra ipuçlarıdır ve teşhis koymaz, reçete etmez, izlemez veya sonuç vaat etmez.",
+                ),
+                (
+                    "Bir adım bugün doğru değilse ne olur?",
+                    "Gözeten yetişkin onu atlamalı, değiştirmeli veya durdurmalıdır. Her kart isteğe bağlıdır.",
+                ),
+            ),
+        ),
+        footer="Yalnızca ebeveyn onaylı sıra · çocuk verisi yok · takip yok · sonuç vaadi yok",
+        inline="Bir uygulama seçmeden önce özel, ebeveyn onaylı aile rutin kartları planlayın",
+        index=(
+            "Özel Aile Rutin Kartı Planlayıcısı",
+            "Çocuk verisi girmeden veya tamamlamayı izlemeden atlanabilir bir ev sırası oluşturun.",
+        ),
+    ),
 }
 
 
@@ -1831,6 +2411,10 @@ def update_one_index(path: Path, locale: str) -> bool:
     else:
         marker = '<section class="wrap grid">'
         if marker not in updated:
+            # Lite-generated hub (vi/th/id/tr) uses a different structure and is
+            # rebuilt by gen_tools_index_lite; skip rather than fail.
+            if '<div class="grid">' in updated:
+                return False
             raise RuntimeError(f"{path} is missing its tools grid")
         updated = updated.replace(marker, marker + card, 1)
     if updated == text:

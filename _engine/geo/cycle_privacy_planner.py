@@ -34,7 +34,7 @@ ACCOUNTS = ("no-account", "optional", "any")
 USE_CASES = ("basic-log", "pattern-review", "appointment-summary")
 NOTIFICATIONS = ("none", "limited", "period-estimate")
 SHARING = ("none", "essential-only", "unknown")
-ALT_LOCALES = ("en", "es-ES", "pt-BR", "de-DE", "fr-FR", "ja", "ko", "zh-Hant", "zh-Hans", "vi", "th", "id", "tr", "hi", "ms", "ru")
+ALT_LOCALES = ("en", "es-ES", "pt-BR", "de-DE", "fr-FR", "ja", "ko", "zh-Hant", "zh-Hans", "vi", "th", "id", "tr", "hi", "ms", "ru", "uk", "pl", "ta-IN")
 
 
 def _copy(
@@ -432,6 +432,69 @@ for _locale, _data in {
         footer="Только приватные предпочтения · без данных о здоровье · проверяйте перед записью",
         features=("Бесплатно · локальный расчёт · без данных о здоровье", "Без дат, симптомов и истории", "Без имён, аккаунтов и свободного текста", "Без загрузок, аналитики и рекламы", "Сравнивает предпочтения; не сертифицирует приложения"),
         inline="Сравните требования к приватности перед выбором трекера цикла", index=("Приватный чек-лист выбора трекера цикла", "Составьте требования с минимумом данных, не вводя сведения о цикле или здоровье."),
+    ),
+    "uk": dict(
+        title="Приватний чек-лист вибору трекера циклу | Без даних про здоров'я", tools="Безкоштовні інструменти", switch="English",
+        heading="Приватний чек-лист вибору трекера циклу", lead="Порівнюйте вимоги до приватності, не вводячи дати, симптоми, історію циклу, інтимну активність, плани вагітності чи особисті дані.",
+        planner="Визначте мінімальні вимоги до приватності",
+        labels=("Зберігання", "Акаунт", "Загальна мета", "Сповіщення", "Передача третім особам", "Обов'язкове блокування екрана", "Потрібен експорт"),
+        options=(("Лише на пристрої", "Шифрована синхронізація", "Будь-яке"), ("Без акаунта", "Акаунт за бажанням", "Будь-який"), ("Базові записи менструації", "Перегляд закономірностей", "Зведення для прийому"), ("Немає", "Обмежені нагадування", "Прогноз місячних"), ("Нічого", "Лише необхідне", "Невідомо")),
+        yes_no=("Так", "Ні"), update="Створити чек-лист приватності",
+        results=("Профіль готовності", "Налаштування з мінімумом даних", "Питання для перевірки", "Порада щодо сповіщень і експорту", "Межа безпеки"),
+        readiness=("Сувора мінімізація", "Дані мінімізовані", "Гнучко з перевірками", "Перевірити перед вибором"),
+        words=("Віддавайте перевагу зберіганню лише на пристрої й перевіряйте резервні копії.", "Перевірте шифрування, відновлення й видалення.", "Порівняйте локальне й синхронізоване використання.", "Виключіть застосунки з обов'язковим акаунтом.", "Віддавайте перевагу роботі без акаунта.", "Якщо акаунт є, перевірте збір і видалення даних.", "Записуйте лише необхідний мінімум.", "Дивіться на закономірності загалом; будь-який прогноз — оцінка.", "Експортуйте лише зведення, потрібне для прийому.", "Вимкніть сповіщення про цикл.", "Лишіть тільки обрані вами непомітні нагадування.", "Вважайте кожне сповіщення про місячні оцінкою.", "Не дозволяйте передачу третім особам.", "Обмежте мету, дані й строк.", "З'ясуйте отримувача й застосовну політику.", "Вимагайте захист пристрою чи застосунку.", "Перегляньте блокування: дані чутливі.", "Перевірте формат, поля, призначення й безпечне видалення.", "Не експортуйте без конкретної потреби."),
+        questions=("Де зберігаються дані та як вони шифруються?", "Чи працює без акаунта й чи можна видалити все?", "Які треті особи отримують дані й чи відкликається доступ?", "Що видно у сповіщеннях, експортах і резервних копіях?"),
+        safety="Жоден трекер не гарантує абсолютної приватності. Перед введенням реальних даних перевірте політику, дозволи, резервні копії, експорт і видалення.",
+        medical="Прогнози — це оцінки, а не контрацепція й не діагноз. Не використовуйте їх для запобігання вагітності; у разі проблем зі здоров'ям зверніться до кваліфікованого лікаря.",
+        source=("Офіційний контекст Apple, а не схвалення", "Apple: дані, оцінки, сповіщення, експорт і обмеження Cycle Tracking", "Приватність Apple Health: шифрування, iCloud, експорт і треті особи", "Apple документує лише Apple Health і Cycle Tracking, а не Cyca, і не рекомендує ні цей чек-лист, ні Cyca."),
+        web=("Попередня версія імперативного API WebMCP у Chrome", "Будує детермінований чек-лист з обмежених немедичних уподобань; не приймає дати, історію, симптоми, інтимну активність, плани вагітності, імена, вільний текст, файли чи особисті дані."),
+        app=("Хочете порівняти один із поточних варіантів?", "Cyca — за бажанням. Підтверджене позиціювання: приватно, на пристрої, разова оплата. Точну доступність, функції та приватність дивіться на актуальній сторінці.", "Відкрити Cyca в App Store"),
+        faq=("Питання про приватність", (("Чи отримує сторінка дані циклу?", "Ні; лише обмежені вподобання."), ("Чи сертифікує вона застосунки?", "Ні; вона не перевіряє й не оцінює застосунки."), ("Чи можна використовувати прогноз як контрацепцію?", "Ні; це лише оцінка."), ("Чи гарантується приватність?", "Ні; перевіряйте актуальні політики й налаштування."))),
+        footer="Лише приватні вподобання · без даних про здоров'я · перевіряйте перед записом",
+        features=("Безкоштовно · локальний розрахунок · без даних про здоров'я", "Без дат, симптомів та історії", "Без імен, акаунтів і вільного тексту", "Без завантажень, аналітики й реклами", "Порівнює вподобання; не сертифікує застосунки"),
+        inline="Порівняйте вимоги до приватності перед вибором трекера циклу", index=("Приватний чек-лист вибору трекера циклу", "Складіть вимоги з мінімумом даних, не вводячи відомості про цикл чи здоров'я."),
+    ),
+    "pl": dict(
+        title="Prywatna lista kontrolna wyboru trackera cyklu | Bez danych o zdrowiu", tools="Bezpłatne narzędzia", switch="English",
+        heading="Prywatna lista kontrolna wyboru trackera cyklu", lead="Porównuj wymagania prywatności, nie wpisując dat, objawów, historii cyklu, aktywności intymnej, planów ciąży ani danych osobowych.",
+        planner="Określ minimalne wymagania prywatności",
+        labels=("Przechowywanie", "Konto", "Cel ogólny", "Powiadomienia", "Udostępnianie stronom trzecim", "Wymagana blokada ekranu", "Potrzebny eksport"),
+        options=(("Tylko na urządzeniu", "Szyfrowana synchronizacja", "Dowolne"), ("Bez konta", "Konto opcjonalne", "Dowolne"), ("Podstawowy zapis miesiączki", "Przegląd wzorców", "Podsumowanie na wizytę"), ("Brak", "Ograniczone przypomnienia", "Szacunek miesiączki"), ("Nic", "Tylko niezbędne", "Nieznane")),
+        yes_no=("Tak", "Nie"), update="Utwórz listę prywatności",
+        results=("Profil gotowości", "Konfiguracja z minimum danych", "Pytania do sprawdzenia", "Rada o powiadomieniach i eksporcie", "Granica bezpieczeństwa"),
+        readiness=("Ścisła minimalizacja", "Dane zminimalizowane", "Elastycznie z kontrolami", "Przejrzyj przed wyborem"),
+        words=("Preferuj przechowywanie tylko na urządzeniu i sprawdzaj kopie zapasowe.", "Sprawdź szyfrowanie, odzyskiwanie i usuwanie.", "Porównaj użycie lokalne i zsynchronizowane.", "Wyklucz aplikacje z obowiązkowym kontem.", "Preferuj działanie bez konta.", "Przy koncie sprawdź zbieranie i usuwanie danych.", "Zapisuj tylko niezbędne minimum.", "Patrz na wzorce ogólnie; każda prognoza to szacunek.", "Eksportuj tylko podsumowanie potrzebne na wizytę.", "Wyłącz powiadomienia o cyklu.", "Zostaw tylko wybrane przez siebie dyskretne przypomnienia.", "Traktuj każde powiadomienie o miesiączce jako szacunek.", "Nie zezwalaj na strony trzecie.", "Ogranicz cel, dane i czas.", "Ustal odbiorcę i obowiązującą politykę.", "Wymagaj ochrony urządzenia lub aplikacji.", "Przemyśl blokadę: to dane wrażliwe.", "Sprawdź format, pola, miejsce docelowe i bezpieczne usuwanie.", "Nie eksportuj bez konkretnej potrzeby."),
+        questions=("Gdzie są przechowywane dane i jak są szyfrowane?", "Czy działa bez konta i czy można usunąć wszystko?", "Które strony trzecie dostają dane i czy dostęp można cofnąć?", "Co widać w powiadomieniach, eksportach i kopiach zapasowych?"),
+        safety="Żaden tracker nie gwarantuje absolutnej prywatności. Przed wpisaniem prawdziwych danych przejrzyj politykę, uprawnienia, kopie zapasowe, eksport i usuwanie.",
+        medical="Prognozy to szacunki, nie antykoncepcja ani diagnoza. Nie używaj ich do zapobiegania ciąży; przy obawach o zdrowie skonsultuj się z wykwalifikowanym specjalistą.",
+        source=("Oficjalny kontekst Apple, nie rekomendacja", "Apple: dane, szacunki, powiadomienia, eksport i granice Cycle Tracking", "Prywatność Apple Health: szyfrowanie, iCloud, eksport i strony trzecie", "Apple dokumentuje tylko Apple Health i Cycle Tracking, nie Cyca, i nie poleca ani tej listy, ani Cyca."),
+        web=("Podgląd imperatywnego API WebMCP w Chrome", "Buduje deterministyczną listę z ograniczonych, niemedycznych preferencji; nie przyjmuje dat, historii, objawów, aktywności intymnej, planów ciąży, imion, wolnego tekstu, plików ani danych osobowych."),
+        app=("Chcesz porównać jedną z bieżących opcji?", "Cyca jest opcjonalna. Potwierdzone pozycjonowanie: prywatnie, na urządzeniu, jednorazowa opłata. Dokładną dostępność, funkcje i prywatność sprawdź na aktualnej stronie.", "Zobacz Cyca w App Store"),
+        faq=("Pytania o prywatność", (("Czy strona otrzymuje dane cyklu?", "Nie; tylko ograniczone preferencje."), ("Czy certyfikuje aplikacje?", "Nie; nie audytuje ani nie ocenia aplikacji."), ("Czy prognozę można używać jako antykoncepcji?", "Nie; to tylko szacunek."), ("Czy prywatność jest gwarantowana?", "Nie; sprawdzaj aktualne polityki i ustawienia."))),
+        footer="Tylko prywatne preferencje · bez danych o zdrowiu · sprawdzaj przed zapisem",
+        features=("Bezpłatnie · lokalne obliczenia · bez danych o zdrowiu", "Bez dat, objawów i historii", "Bez imion, kont i wolnego tekstu", "Bez przesyłania, analityki i reklam", "Porównuje preferencje; nie certyfikuje aplikacji"),
+        inline="Porównaj wymagania prywatności przed wyborem trackera cyklu", index=("Prywatna lista kontrolna wyboru trackera cyklu", "Ułóż wymagania z minimum danych, nie wpisując informacji o cyklu ani zdrowiu."),
+    ),
+    "ta-IN": dict(
+        title="மாதவிடாய் டிராக்கர் தேர்வுக்கான தனியுரிமை சரிபார்ப்புப் பட்டியல் | உடல்நலத் தரவு இல்லை", tools="இலவசக் கருவிகள்", switch="English",
+        heading="மாதவிடாய் டிராக்கர் தேர்வுக்கான தனியுரிமை சரிபார்ப்புப் பட்டியல்", lead="தேதிகள், அறிகுறிகள், சுழற்சி வரலாறு, நெருக்கமான செயல்பாடு, கர்ப்ப நோக்கம் அல்லது தனிநபர் தரவு எதுவும் உள்ளிடாமல் தனியுரிமை விருப்பங்களை ஒப்பிடுங்கள்.",
+        planner="உங்கள் குறைந்தபட்ச தனியுரிமைத் தேவைகளை வரையறுக்கவும்",
+        labels=("சேமிப்பு", "கணக்கு", "பொது நோக்கம்", "அறிவிப்புகள்", "மூன்றாம் தரப்பு பகிர்வு", "திரைப் பூட்டு கட்டாயம்", "ஏற்றுமதி தேவை"),
+        options=(("சாதனத்தில் மட்டும்", "மறைகுறியாக்க ஒத்திசைவு", "எதுவும்"), ("கணக்கு இல்லை", "கணக்கு விருப்பம்", "எதுவும்"), ("அடிப்படை மாதவிடாய் பதிவு", "முறைகள் மறுஆய்வு", "மருத்துவ சந்திப்புக்கான சுருக்கம்"), ("இல்லை", "வரம்பிட்ட நினைவூட்டல்கள்", "மாதவிடாய் மதிப்பீடு"), ("எதுவும் இல்லை", "அத்தியாவசியம் மட்டும்", "தெரியவில்லை")),
+        yes_no=("ஆம்", "இல்லை"), update="தனியுரிமை சரிபார்ப்புப் பட்டியலை உருவாக்கு",
+        results=("தயார்நிலை சுயவிவரம்", "குறைந்த-தரவு அமைப்பு", "சரிபார்க்க வேண்டிய கேள்விகள்", "அறிவிப்பு-ஏற்றுமதி ஆலோசனை", "பாதுகாப்பு எல்லை"),
+        readiness=("கடுமையான குறைப்பு", "தரவு குறைக்கப்பட்டது", "சரிபார்ப்புகளுடன் நெகிழ்வு", "தேர்வதற்கு முன் மறுஆய்வு"),
+        words=("சாதனத்தில் மட்டும் சேமிப்பை முன்னுரிமை செய்து காப்புகளைச் சரிபார்க்கவும்.", "மறைகுறியாக்கம், மீட்பு, நீக்கத்தைச் சரிபார்க்கவும்.", "உள்ளூர் மற்றும் ஒத்திசைந்த பயன்பாட்டை ஒப்பிடுங்கள்.", "கணக்கு கட்டாய ஆப்களை விலக்குங்கள்.", "கணக்கு இல்லாத பயன்பாட்டை முன்னுரிமை செய்யுங்கள்.", "கணக்கு இருந்தால் சேகரிப்பு-நீக்கத்தைச் சரிபார்க்கவும்.", "தேவையான குறைந்தபட்சத்தை மட்டும் பதிவு செய்யுங்கள்.", "முறைகளைப் பொதுவாகப் பாருங்கள்; ஒவ்வொரு முன்னறிவிப்பும் மதிப்பீடே.", "சந்திப்புக்குத் தேவையான சுருக்கத்தை மட்டும் ஏற்றுமதி செய்யுங்கள்.", "சுழற்சி அறிவிப்புகளை அணைக்கவும்.", "நீங்களே தேர்ந்த கவனத்தை ஈர்க்காத நினைவூட்டல்களை மட்டும் வைத்திருங்கள்.", "ஒவ்வொரு மாதவிடாய் அறிவிப்பையும் மதிப்பீடாகக் கருதுங்கள்.", "மூன்றாம் தரப்புகளுக்கு அனுமதிக்க வேண்டாம்.", "நோக்கம், தரவு, காலத்தை வரம்பிடுங்கள்.", "பெறுநரையும் பொருந்தும் கொள்கையையும் தெளிவுபடுத்துங்கள்.", "சாதன அல்லது ஆப் பாதுகாப்பைக் கோருங்கள்.", "பூட்டை மறுபரிசீலிக்கவும்: தரவு உணர்திறன் மிக்கது.", "வடிவம், புலங்கள், இலக்கு, பாதுகாப்பான நீக்கத்தைச் சரிபார்க்கவும்.", "குறிப்பிட்ட தேவை இன்றி ஏற்றுமதி செய்ய வேண்டாம்."),
+        questions=("தரவு எங்கே சேமிக்கப்படுகிறது, எப்படி மறைகுறியாக்கப்படுகிறது?", "கணக்கு இல்லாமல் இயங்குமா, எல்லாவற்றையும் நீக்க முடியுமா?", "எந்த மூன்றாம் தரப்புகள் தரவு பெறுகின்றன, அணுகலை திரும்பப் பெற முடியுமா?", "அறிவிப்புகள், ஏற்றுமதிகள், காப்புகளில் என்ன தெரிகிறது?"),
+        safety="எந்த டிராக்கரும் முழுமையான தனியுரிமையை உத்தரவாதம் செய்யாது. உண்மையான தரவைச் சேர்க்கும் முன் கொள்கை, அனுமதிகள், காப்புகள், ஏற்றுமதி, நீக்கத்தை மறுஆய்வு செய்யுங்கள்.",
+        medical="முன்னறிவிப்புகள் மதிப்பீடுகள் மட்டுமே; கருத்தடையோ நோயறிதலோ அல்ல. கர்ப்பத்தைத் தவிர்க்க இவற்றைப் பயன்படுத்த வேண்டாம்; உடல்நலக் கவலை இருந்தால் தகுதிவாய்ந்த மருத்துவ நிபுணரை அணுகவும்.",
+        source=("அதிகாரப்பூர்வ Apple சூழல்; ஒப்புதல் அல்ல", "Apple: Cycle Tracking தரவு, மதிப்பீடுகள், அறிவிப்புகள், ஏற்றுமதி, வரம்புகள்", "Apple Health தனியுரிமை: மறைகுறியாக்கம், iCloud, ஏற்றுமதி, மூன்றாம் தரப்புகள்", "Apple, Apple Health மற்றும் Cycle Tracking-ஐ மட்டுமே ஆவணப்படுத்துகிறது; Cyca-வை அல்ல; இந்தப் பட்டியலையோ Cyca-வையோ பரிந்துரைக்கவில்லை."),
+        web=("Chrome-இன் கட்டளை WebMCP API முன்னோட்டம்", "வரம்பிட்ட, மருத்துவமற்ற விருப்பங்களிலிருந்து நிர்ணயமான சரிபார்ப்புப் பட்டியலை உருவாக்குகிறது; தேதிகள், வரலாறு, அறிகுறிகள், நெருக்கமான செயல்பாடு, கர்ப்ப நோக்கம், பெயர்கள், சுதந்திர உரை, கோப்புகள் அல்லது தனிநபர் தரவை ஏற்காது."),
+        app=("தற்போதைய தேர்வுகளில் ஒன்றை ஒப்பிட விரும்புகிறீர்களா?", "Cyca விருப்பத்தேர்வு. உறுதிப்படுத்தப்பட்ட நிலை: தனியுரிமை, சாதனத்திலேயே, ஒருமுறை கட்டணம். துல்லியமான கிடைப்பு, அம்சங்கள், தனியுரிமையைத் தற்போதைய பக்கத்தில் பார்க்கவும்.", "App Store-இல் Cyca-ஐப் பார்க்கவும்"),
+        faq=("தனியுரிமை கேள்விகள்", (("இந்தப் பக்கம் சுழற்சித் தரவைப் பெறுமா?", "இல்லை; வரம்பிட்ட விருப்பங்கள் மட்டுமே."), ("இது ஆப்களைச் சான்றளிக்குமா?", "இல்லை; எந்த ஆப்பையும் தணிக்கையோ மதிப்பீடோ செய்யாது."), ("முன்னறிவிப்பைக் கருத்தடையாகப் பயன்படுத்தலாமா?", "இல்லை; இது ஒரு மதிப்பீடு மட்டுமே."), ("தனியுரிமை உத்தரவாதமா?", "இல்லை; தற்போதைய கொள்கைகளையும் கட்டுப்பாடுகளையும் சரிபார்க்கவும்."))),
+        footer="தனியுரிமை விருப்பங்கள் மட்டும் · உடல்நலத் தரவு இல்லை · பதிவு செய்யும் முன் சரிபார்க்கவும்",
+        features=("இலவசம் · உள்ளூர் கணக்கீடு · உடல்நலத் தரவு இல்லை", "தேதிகள், அறிகுறிகள், வரலாறு இல்லை", "பெயர்கள், கணக்குகள், சுதந்திர உரை இல்லை", "பதிவேற்றம், பகுப்பாய்வு, விளம்பரம் இல்லை", "விருப்பங்களை ஒப்பிடுகிறது; எந்த ஆப்பையும் சான்றளிக்காது"),
+        inline="மாதவிடாய் டிராக்கரைத் தேர்வதற்கு முன் தனியுரிமைத் தேவைகளை ஒப்பிடுங்கள்", index=("மாதவிடாய் டிராக்கர் தேர்வு தனியுரிமை சரிபார்ப்புப் பட்டியல்", "சுழற்சி அல்லது உடல்நலத் தகவல் உள்ளிடாமல் குறைந்த-தரவுத் தேவைகளை உருவாக்குங்கள்."),
     ),
 }.items():
     _w = _data.pop("words")

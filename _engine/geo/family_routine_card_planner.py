@@ -50,6 +50,9 @@ ALT_LOCALES = (
     "th",
     "id",
     "tr",
+    "hi",
+    "ms",
+    "ru",
 )
 CARD_ICONS = {
     "morning": ("☀️", "👕", "🫧", "🥣", "🎒", "🚪"),
@@ -1946,6 +1949,438 @@ COPY = {
         index=(
             "Özel Aile Rutin Kartı Planlayıcısı",
             "Çocuk verisi girmeden veya tamamlamayı izlemeden atlanabilir bir ev sırası oluşturun.",
+        ),
+    ),
+    "hi": _copy(
+        meta=(
+            "निजी पारिवारिक दिनचर्या कार्ड योजनाकार | बच्चों का डेटा नहीं",
+            "बच्चे का नाम, उम्र, समय-सारणी, स्कूल, व्यवहार या पूर्णता रिकॉर्ड दर्ज किए बिना अभिभावक-स्वीकृत तीन से छह दिनचर्या कार्डों का क्रम बनाएँ।",
+            "मुफ़्त उपकरण",
+            "English",
+            "मुफ़्त · अभिभावकों के लिए · कोई बाल-प्रोफ़ाइल नहीं",
+            "निजी पारिवारिक दिनचर्या कार्ड योजनाकार",
+            "एक घरेलू संदर्भ और कार्ड प्रारूप चुनें। पृष्ठ तभी हटाने-योग्य और छोड़ने-योग्य कार्ड क्रम देता है जब एक वयस्क पुष्टि कर दे कि हर चरण उपयुक्त है।",
+        ),
+        badges=(
+            "कोई नाम, उम्र या बाल-प्रोफ़ाइल नहीं",
+            "कोई व्यवहार या पूर्णता ट्रैकिंग नहीं",
+            "कोई खाता, अपलोड या संग्रहण नहीं",
+            "कोई परिणाम या स्वतंत्रता वादा नहीं",
+        ),
+        planner=(
+            "वयस्क-स्वीकृत कार्ड क्रम बनाएँ",
+            "ये कार्ड घरेलू चरणों को व्यवस्थित करते हैं; वे किसी बच्चे का मूल्यांकन नहीं करते, देखभाल निर्धारित नहीं करते और व्यवहार, नींद, स्वास्थ्य, सीखने या पारिवारिक परिणामों का अनुमान नहीं लगाते।",
+        ),
+        labels=(
+            "दिनचर्या संदर्भ",
+            "कार्ड संख्या",
+            "कार्ड प्रस्तुति",
+            "सौम्य संक्रमण संकेत",
+        ),
+        options=(
+            (
+                "सुबह",
+                "स्कूल या देखभाल के बाद",
+                "समेटना",
+                "सोने का समय",
+            ),
+            (
+                "शब्द",
+                "लेबल वाले बड़े चिह्न",
+                "चिह्न और शब्द",
+            ),
+            (
+                "केवल अगला कार्ड दिखाएँ",
+                "अभी और अगला दोनों दिखाएँ",
+                "एक सुरक्षित, सीमित विकल्प दें",
+            ),
+        ),
+        adult_review=(
+            "देखरेख करने वाला वयस्क मैं हूँ और मैंने इस घर के लिए चुने गए चरण जाँच लिए हैं",
+            "वयस्क समीक्षा पुष्ट। हर कार्ड को वैकल्पिक रखें और जो भी आज उपयुक्त न हो उसे बदलें या हटा दें।",
+            "कार्ड दिखने से पहले वयस्क समीक्षा आवश्यक है। सुरक्षा, पहुँच, देखभाल मार्गदर्शन, घर की ज़रूरतें और बच्चे के वर्तमान संकेत जाँचें।",
+        ),
+        results=(
+            "निजी कार्ड बनाएँ",
+            "समीक्षित कार्ड प्रिंट करें",
+            "वैकल्पिक दिनचर्या कार्ड",
+            "छोड़ा, रोका या बदला जा सकता है",
+            "विराम कार्ड: क्रम रोकें और देखें कि घर को अभी क्या चाहिए।",
+        ),
+        steps=(
+            (
+                "घर का सामान्य शांत आरंभ-संकेत उपयोग करें।",
+                "देखरेख करने वाले वयस्क द्वारा स्वीकृत कपड़े चुनें।",
+                "उचित वयस्क सहायता से घर का सामान्य धुलाई या देखभाल चरण पूरा करें।",
+                "परिवार द्वारा नियोजित नाश्ता या पेय चरण उपयोग करें।",
+                "वयस्क को दिन के लिए ज़रूरी सामान जाँचने दें।",
+                "देखरेख करने वाले वयस्क के साथ परिवार के तय तैयार-बिंदु पर पहुँचें।",
+            ),
+            (
+                "घर के तय संक्रमण-बिंदु पर पहुँचें।",
+                "सामान वहीं रखें जहाँ देखरेख करने वाले वयस्क ने चुना है।",
+                "उचित सहायता से घर का सामान्य धुलाई या देखभाल चरण उपयोग करें।",
+                "परिवार द्वारा नियोजित भोजन, पेय या विश्राम लें।",
+                "वयस्क-स्वीकृत शांत, गतिविधि या जुड़ाव चरण चुनें।",
+                "वयस्क को देखने दें कि आज आगे क्या है।",
+            ),
+            (
+                "वयस्क को शुरू करने के लिए छोटा और सुरक्षित क्षेत्र चुनने दें।",
+                "कुछ खिलौने या गतिविधि-सामान उनकी सामान्य जगह पर रखें।",
+                "किताबें या सीखने की सामग्री वयस्क-स्वीकृत स्थान पर रखें।",
+                "कपड़े या मुलायम चीज़ें वहाँ रखें जहाँ घर अपेक्षा करता है।",
+                "नुकीली, भारी, टूटी या अस्पष्ट चीज़ें वयस्क को सँभालने दें।",
+                "साथ रुककर जाँचें कि रास्ते और ज़रूरी सामान पहुँच में हैं।",
+            ),
+            (
+                "घर का सामान्य शांत सोने का आरंभ-संकेत उपयोग करें।",
+                "उचित वयस्क सहायता से सामान्य धुलाई या शौचालय चरण पूरा करें।",
+                "घर और परिस्थितियों के लिए स्वीकृत सोने के कपड़े चुनें।",
+                "मौजूदा पारिवारिक और पेशेवर मार्गदर्शन के अनुसार दंत देखभाल पूरी करें।",
+                "परिवार का सामान्य शांत जुड़ाव, कहानी या सुकून चरण चुनें।",
+                "घर की तय नींद-व्यवस्था के साथ समाप्त करें और आवश्यकता होने पर देखरेख करने वाला वयस्क पास रहे।",
+            ),
+        ),
+        cue_notes=(
+            "केवल अगला कार्ड दिखाई देता रखें; कोई और कार्ड तभी दिखाएँ जब वयस्क वर्तमान स्थिति जाँच ले।",
+            "वर्तमान और अगला कार्ड दोनों दिखाएँ, पर किसी को भी समय-सीमा की तरह न लें।",
+            "विकल्प केवल तभी दें जब दोनों विकल्प सुरक्षित, उपलब्ध और देखरेख करने वाले वयस्क को स्वीकार्य हों।",
+        ),
+        boundary=(
+            "योजनाकार बच्चे की उम्र, विकास, विकलांगता, स्वास्थ्य, संवेदी ज़रूरतें, देखभाल योजना, संस्कृति, घर, वर्तमान स्थिति या परिवेश कभी नहीं जानता। "
+            "देखरेख करने वाले वयस्क को हर कार्ड आवश्यकतानुसार अनुकूलित करना, हटाना या रोकना चाहिए।"
+        ),
+        preflight=(
+            "कार्ड उपयोग से पहले चार जाँचें",
+            "पुष्टि करें कि चरण वर्तमान स्थान और क्षण में सुरक्षित और उपयुक्त है।",
+            "भोजन, पानी, शौचालय, दवा, संवाद, गतिविधि और आराम तक पहुँच बनाए रखें।",
+            "लागू होने पर वर्तमान पेशेवर देखभाल मार्गदर्शन का पालन करें; कोई कार्ड उसे कभी नहीं बदलता।",
+            "जब बच्चे या घर को कुछ अलग चाहिए हो तो क्रम रोकें, छोड़ें या बदलें।",
+        ),
+        sources=(
+            "आधिकारिक दिनचर्या संदर्भ, कोई समर्थन नहीं",
+            "CDC निरंतरता और पूर्वानुमेयता को घरेलू संरचना के हिस्से बताता है और कहता है कि कौन-सी दिनचर्या सबसे अच्छी चलती है, यह परिवार तय करते हैं। यह मार्गदर्शन इस उपकरण को प्रमाणित नहीं करता और न किसी परिणाम की गारंटी देता है।",
+            "CDC: सुसंगत दिनचर्याएँ और घरेलू संरचना बनाना",
+        ),
+        webmcp=(
+            "Chrome अनिवार्य WebMCP API पूर्वावलोकन",
+            "केवल सीमित दृश्य विकल्पों से तीन से छह वैकल्पिक अभिभावक-स्वीकृत पारिवारिक दिनचर्या कार्ड बनाएँ। बच्चे का नाम, उम्र, समय-सारणी, स्कूल, स्थान, फ़ोटो, खाते, मुक्त टेक्स्ट, व्यवहार या पूर्णता रिकॉर्ड कभी न लें और न उन तक पहुँचें; कभी स्कोर, निदान, निगरानी या परिणाम का वादा न करें।",
+        ),
+        app=(
+            "एक वैकल्पिक, पुन:प्रयोज्य अभिभावक–बच्चा दिनचर्या परत चाहिए?",
+            "Lumi Mission Planet वैकल्पिक है। वर्तमान App Store पृष्ठ अभिभावक–बच्चा दिनचर्या मिशनों, अभिभावक डैशबोर्ड, ऑन-डिवाइस डेटा, बिना खाते या तृतीय-पक्ष विश्लेषण और एक-बार अनलॉक वाले मुफ़्त डाउनलोड का वर्णन करता है। सटीक उपलब्धता और विशेषताओं के लिए वर्तमान पृष्ठ देखें। ये प्रिंट-योग्य कार्ड ऐप के बिना भी काम करते हैं।",
+            "अभिभावक: App Store पर Lumi Mission Planet देखें",
+        ),
+        faq=(
+            "पारिवारिक दिनचर्या कार्ड प्रश्न",
+            (
+                (
+                    "क्या यह पृष्ठ बच्चे के बारे में जानकारी एकत्र करता है?",
+                    "नहीं। यह केवल सीमित घरेलू विकल्प लेता है और कभी नाम, उम्र, समय-सारणी, स्कूल, प्रोफ़ाइल या गतिविधि रिकॉर्ड नहीं माँगता।",
+                ),
+                (
+                    "क्या कार्ड कोई व्यवहार कार्यक्रम या देखभाल योजना हैं?",
+                    "नहीं। ये हटाने-योग्य घरेलू क्रम-संकेत हैं और ये निदान, निर्धारण, निगरानी या परिणाम का वादा नहीं करते।",
+                ),
+                (
+                    "यदि कोई चरण आज उपयुक्त न हो तो?",
+                    "देखरेख करने वाला वयस्क उसे छोड़े, बदले या रोके। हर कार्ड वैकल्पिक है।",
+                ),
+            ),
+        ),
+        footer="केवल अभिभावक-स्वीकृत क्रम · कोई बाल-डेटा नहीं · कोई ट्रैकिंग नहीं · कोई परिणाम वादा नहीं",
+        inline="कोई ऐप चुनने से पहले निजी, अभिभावक-स्वीकृत पारिवारिक दिनचर्या कार्ड योजना बनाएँ",
+        index=(
+            "निजी पारिवारिक दिनचर्या कार्ड योजनाकार",
+            "बाल-डेटा दर्ज किए या पूर्णता ट्रैक किए बिना छोड़ने-योग्य घरेलू क्रम बनाएँ।",
+        ),
+    ),
+    "ms": _copy(
+        meta=(
+            "Perancang Kad Rutin Keluarga Peribadi | Tiada Data Kanak-kanak",
+            "Bina urutan tiga hingga enam kad rutin yang diluluskan ibu bapa tanpa memasukkan nama, umur, jadual, sekolah, tingkah laku atau rekod penyiapan kanak-kanak.",
+            "Alat percuma",
+            "English",
+            "Percuma · untuk ibu bapa · tiada profil kanak-kanak",
+            "Perancang kad rutin keluarga peribadi",
+            "Pilih konteks rumah dan format kad. Halaman ini hanya memulangkan urutan kad yang boleh dibuang dan dilangkau selepas orang dewasa mengesahkan setiap langkah sesuai.",
+        ),
+        badges=(
+            "Tiada nama, umur atau profil kanak-kanak",
+            "Tiada penjejakan tingkah laku atau penyiapan",
+            "Tiada akaun, muat naik atau storan",
+            "Tiada janji hasil atau kebebasan",
+        ),
+        planner=(
+            "Bina urutan kad yang diluluskan orang dewasa",
+            "Kad ini menyusun langkah rumah; ia tidak menilai kanak-kanak, tidak menetapkan penjagaan dan tidak meramalkan tingkah laku, tidur, kesihatan, pembelajaran atau hasil keluarga.",
+        ),
+        labels=(
+            "Konteks rutin",
+            "Bilangan kad",
+            "Persembahan kad",
+            "Isyarat peralihan lembut",
+        ),
+        options=(
+            (
+                "Pagi",
+                "Selepas sekolah atau jagaan",
+                "Mengemas",
+                "Waktu tidur",
+            ),
+            (
+                "Perkataan",
+                "Ikon besar berlabel",
+                "Ikon dan perkataan",
+            ),
+            (
+                "Tunjuk kad seterusnya sahaja",
+                "Tunjuk sekarang dan seterusnya",
+                "Beri satu pilihan selamat dan terhad",
+            ),
+        ),
+        adult_review=(
+            "Saya orang dewasa yang menyelia dan telah menyemak langkah yang dipilih untuk rumah ini",
+            "Semakan dewasa disahkan. Kekalkan setiap kad sebagai pilihan dan ubah atau buang apa-apa yang tidak sesuai hari ini.",
+            "Semakan dewasa diperlukan sebelum kad dipaparkan. Semak keselamatan, akses, panduan penjagaan, keperluan rumah dan isyarat semasa kanak-kanak.",
+        ),
+        results=(
+            "Bina kad peribadi",
+            "Cetak kad yang disemak",
+            "Kad rutin pilihan",
+            "Boleh dilangkau, dijeda atau diubah",
+            "Kad jeda: hentikan urutan dan semak apa yang rumah perlukan sekarang.",
+        ),
+        steps=(
+            (
+                "Guna isyarat mula tenang seperti biasa di rumah.",
+                "Pilih pakaian yang diluluskan orang dewasa yang menyelia.",
+                "Selesaikan langkah mandi atau penjagaan biasa dengan bantuan dewasa yang sesuai.",
+                "Guna langkah sarapan atau minuman yang dirancang keluarga.",
+                "Biarkan orang dewasa menyemak barang yang diperlukan untuk hari itu.",
+                "Bergerak ke titik sedia yang dipersetujui keluarga bersama orang dewasa yang menyelia.",
+            ),
+            (
+                "Tiba di titik peralihan yang dipersetujui rumah.",
+                "Letakkan barang di tempat yang dipilih orang dewasa yang menyelia.",
+                "Guna langkah mandi atau penjagaan biasa dengan bantuan yang sesuai.",
+                "Ambil makanan, minuman atau rehat yang dirancang keluarga.",
+                "Pilih langkah tenang, pergerakan atau ikatan yang diluluskan orang dewasa.",
+                "Biarkan orang dewasa melihat apa yang seterusnya hari ini.",
+            ),
+            (
+                "Biarkan orang dewasa memilih kawasan kecil dan selamat untuk bermula.",
+                "Letakkan beberapa mainan atau barang aktiviti di tempat biasanya.",
+                "Letakkan buku atau bahan pembelajaran di tempat yang diluluskan orang dewasa.",
+                "Letakkan pakaian atau barang lembut di tempat yang dijangka rumah.",
+                "Biarkan orang dewasa mengendalikan barang tajam, berat, pecah atau tidak pasti.",
+                "Berhenti bersama dan semak laluan serta barang penting kekal boleh dicapai.",
+            ),
+            (
+                "Guna isyarat mula tidur tenang seperti biasa di rumah.",
+                "Selesaikan langkah mandi atau tandas biasa dengan bantuan dewasa yang sesuai.",
+                "Pilih pakaian tidur yang diluluskan untuk rumah dan keadaan.",
+                "Selesaikan penjagaan gigi mengikut panduan keluarga dan profesional semasa.",
+                "Pilih langkah ikatan, cerita atau penenangan tenang seperti biasa keluarga.",
+                "Akhiri dengan susunan tidur yang dipersetujui rumah dan orang dewasa yang menyelia berdekatan jika perlu.",
+            ),
+        ),
+        cue_notes=(
+            "Kekalkan hanya kad seterusnya kelihatan; tunjukkan kad lain hanya selepas orang dewasa menyemak keadaan semasa.",
+            "Tunjukkan kad semasa dan seterusnya tanpa menganggap kedua-duanya sebagai tarikh akhir.",
+            "Beri pilihan hanya apabila kedua-dua pilihan selamat, tersedia dan boleh diterima oleh orang dewasa yang menyelia.",
+        ),
+        boundary=(
+            "Perancang ini tidak pernah mengetahui umur, perkembangan, ketidakupayaan, kesihatan, keperluan deria, pelan penjagaan, budaya, rumah, keadaan semasa atau persekitaran kanak-kanak. "
+            "Orang dewasa yang menyelia mesti menyesuaikan, membuang atau menghentikan setiap kad mengikut keperluan."
+        ),
+        preflight=(
+            "Empat semakan sebelum menggunakan kad",
+            "Sahkan langkah itu selamat dan sesuai di tempat dan waktu semasa.",
+            "Kekalkan akses kepada makanan, air, tandas, ubat, komunikasi, pergerakan dan keselesaan.",
+            "Ikut panduan penjagaan profesional semasa apabila berkenaan; kad tidak sekali-kali mengatasinya.",
+            "Jeda, langkau atau ubah urutan apabila kanak-kanak atau rumah memerlukan sesuatu yang berbeza.",
+        ),
+        sources=(
+            "Konteks rutin rasmi, bukan sokongan",
+            "CDC menerangkan konsistensi dan kebolehramalan sebagai sebahagian struktur rumah dan menyatakan keluarga yang menentukan rutin mana paling berkesan. Panduan ini tidak mengesahkan alat ini atau menjamin sebarang hasil.",
+            "CDC: membina rutin konsisten dan struktur rumah",
+        ),
+        webmcp=(
+            "Pratonton API imperatif WebMCP Chrome",
+            "Bina tiga hingga enam kad rutin keluarga pilihan yang diluluskan ibu bapa daripada pilihan kelihatan yang terhad sahaja. Jangan sekali-kali mengambil atau mengakses nama, umur, jadual, sekolah, lokasi, foto, akaun, teks bebas, tingkah laku atau rekod penyiapan kanak-kanak; jangan sekali-kali menskor, mendiagnosis, memantau atau menjanjikan hasil.",
+        ),
+        app=(
+            "Mahukan lapisan rutin ibu bapa–anak yang boleh diguna semula?",
+            "Lumi Mission Planet adalah pilihan. Halaman App Store semasa menerangkan misi rutin ibu bapa–anak, papan pemuka ibu bapa, data pada peranti, tiada akaun atau analitik pihak ketiga, dan muat turun percuma dengan buka kunci sekali. Rujuk halaman semasa untuk ketersediaan dan ciri tepat. Kad boleh cetak ini berfungsi tanpa aplikasi.",
+            "Ibu bapa: lihat Lumi Mission Planet di App Store",
+        ),
+        faq=(
+            "Soalan kad rutin keluarga",
+            (
+                (
+                    "Adakah halaman ini mengumpul maklumat tentang kanak-kanak?",
+                    "Tidak. Ia hanya menerima pilihan rumah yang terhad dan tidak sekali-kali meminta nama, umur, jadual, sekolah, profil atau rekod aktiviti.",
+                ),
+                (
+                    "Adakah kad ini program tingkah laku atau pelan penjagaan?",
+                    "Tidak. Ia isyarat urutan rumah yang boleh dibuang dan tidak mendiagnosis, menetapkan, memantau atau menjanjikan hasil.",
+                ),
+                (
+                    "Bagaimana jika sesuatu langkah tidak sesuai hari ini?",
+                    "Orang dewasa yang menyelia harus melangkau, mengubah atau menghentikannya. Setiap kad adalah pilihan.",
+                ),
+            ),
+        ),
+        footer="Urutan yang diluluskan ibu bapa sahaja · tiada data kanak-kanak · tiada penjejakan · tiada janji hasil",
+        inline="Rancang kad rutin keluarga peribadi yang diluluskan ibu bapa sebelum memilih aplikasi",
+        index=(
+            "Perancang Kad Rutin Keluarga Peribadi",
+            "Bina urutan rumah yang boleh dilangkau tanpa memasukkan data kanak-kanak atau menjejak penyiapan.",
+        ),
+    ),
+    "ru": _copy(
+        meta=(
+            "Приватный планировщик карточек семейных рутин | Без данных ребёнка",
+            "Составьте последовательность из трёх–шести одобренных родителем карточек рутин, не вводя имя ребёнка, возраст, расписание, школу, поведение или записи о выполнении.",
+            "Бесплатные инструменты",
+            "English",
+            "Бесплатно · для родителей · без профиля ребёнка",
+            "Приватный планировщик карточек семейных рутин",
+            "Выберите домашний контекст и формат карточек. Страница возвращает удаляемую и пропускаемую последовательность карточек только после того, как взрослый подтвердит уместность каждого шага.",
+        ),
+        badges=(
+            "Без имени, возраста и профиля ребёнка",
+            "Без отслеживания поведения и выполнения",
+            "Без аккаунтов, загрузок и хранения",
+            "Без обещаний результата или самостоятельности",
+        ),
+        planner=(
+            "Составить одобренную взрослым последовательность карточек",
+            "Эти карточки упорядочивают домашние шаги; они не оценивают ребёнка, не назначают уход и не предсказывают поведение, сон, здоровье, обучение или семейные результаты.",
+        ),
+        labels=(
+            "Контекст рутины",
+            "Число карточек",
+            "Вид карточек",
+            "Мягкая подсказка перехода",
+        ),
+        options=(
+            (
+                "Утро",
+                "После школы или сада",
+                "Уборка",
+                "Перед сном",
+            ),
+            (
+                "Слова",
+                "Крупные значки с подписями",
+                "Значки и слова",
+            ),
+            (
+                "Показывать только следующую карточку",
+                "Показывать текущую и следующую",
+                "Дать безопасный ограниченный выбор",
+            ),
+        ),
+        adult_review=(
+            "Я — присматривающий взрослый и проверил(а) выбранные для этого дома шаги",
+            "Проверка взрослым подтверждена. Держите каждую карточку необязательной и меняйте или убирайте всё, что сегодня не подходит.",
+            "Перед показом карточек нужна проверка взрослым. Проверьте безопасность, доступ, рекомендации по уходу, нужды дома и текущие сигналы ребёнка.",
+        ),
+        results=(
+            "Создать приватные карточки",
+            "Распечатать проверенные карточки",
+            "Необязательная карточка рутины",
+            "Можно пропустить, поставить на паузу или изменить",
+            "Карточка паузы: остановите последовательность и посмотрите, что дому нужно сейчас.",
+        ),
+        steps=(
+            (
+                "Используйте привычный спокойный стартовый сигнал дома.",
+                "Выберите одежду, одобренную присматривающим взрослым.",
+                "Выполните привычное умывание или уход с уместной помощью взрослого.",
+                "Используйте запланированный семьёй шаг завтрака или напитка.",
+                "Пусть взрослый проверит вещи, нужные на день.",
+                "Перейдите к согласованной семьёй точке готовности вместе с присматривающим взрослым.",
+            ),
+            (
+                "Придите к согласованной домом точке перехода.",
+                "Положите вещи туда, куда выбрал присматривающий взрослый.",
+                "Используйте привычное умывание или уход с уместной помощью.",
+                "Сделайте запланированный семьёй перерыв на еду, питьё или отдых.",
+                "Выберите одобренный взрослым шаг покоя, движения или близости.",
+                "Пусть взрослый посмотрит, что сегодня дальше.",
+            ),
+            (
+                "Пусть взрослый выберет маленькую безопасную зону для начала.",
+                "Положите несколько игрушек или вещей для занятий на их обычное место.",
+                "Уберите книги или учебные материалы в одобренное взрослым место.",
+                "Положите одежду или мягкие вещи туда, где их ждёт дом.",
+                "Острые, тяжёлые, сломанные или непонятные вещи пусть возьмёт взрослый.",
+                "Остановитесь вместе и проверьте, что проходы и нужные вещи доступны.",
+            ),
+            (
+                "Используйте привычный спокойный сигнал начала сна.",
+                "Выполните привычное умывание или туалет с уместной помощью взрослого.",
+                "Выберите одобренную для дома и условий одежду для сна.",
+                "Выполните уход за зубами по текущим семейным и профессиональным рекомендациям.",
+                "Выберите привычный спокойный шаг близости, истории или убаюкивания.",
+                "Завершите согласованным домом порядком сна, при необходимости с присматривающим взрослым рядом.",
+            ),
+        ),
+        cue_notes=(
+            "Держите видимой только следующую карточку; показывайте другую лишь после того, как взрослый проверит текущую ситуацию.",
+            "Показывайте текущую и следующую карточки, не превращая ни одну из них в дедлайн.",
+            "Давайте выбор только тогда, когда оба варианта безопасны, доступны и приемлемы для присматривающего взрослого.",
+        ),
+        boundary=(
+            "Планировщик никогда не знает возраст ребёнка, развитие, инвалидность, здоровье, сенсорные потребности, план ухода, культуру, дом, текущее состояние или окружение. "
+            "Присматривающий взрослый должен адаптировать, убирать или останавливать каждую карточку по мере необходимости."
+        ),
+        preflight=(
+            "Четыре проверки перед использованием карточки",
+            "Убедитесь, что шаг безопасен и уместен в текущем месте и моменте.",
+            "Сохраняйте доступ к еде, воде, туалету, лекарствам, общению, движению и комфорту.",
+            "Следуйте актуальным профессиональным рекомендациям по уходу, где они применимы; карточка никогда их не отменяет.",
+            "Ставьте на паузу, пропускайте или меняйте последовательность, когда ребёнку или дому нужно другое.",
+        ),
+        sources=(
+            "Официальный контекст рутин, а не одобрение",
+            "CDC описывает последовательность и предсказуемость как части домашней структуры и отмечает, что именно семьи решают, какие рутины работают лучше. Эти рекомендации не подтверждают этот инструмент и не гарантируют результат.",
+            "CDC: построение стабильных рутин и домашней структуры",
+        ),
+        webmcp=(
+            "Предварительная версия императивного API WebMCP в Chrome",
+            "Составьте три–шесть необязательных одобренных родителем карточек семейных рутин только из ограниченных видимых вариантов. Никогда не принимайте и не запрашивайте имя ребёнка, возраст, расписание, школу, местоположение, фото, аккаунты, свободный текст, поведение или записи о выполнении; никогда не оценивайте, не диагностируйте, не отслеживайте и не обещайте результат.",
+        ),
+        app=(
+            "Нужен необязательный многоразовый слой рутин «родитель–ребёнок»?",
+            "Lumi Mission Planet — по желанию. Текущая страница App Store описывает миссии рутин «родитель–ребёнок», родительскую панель, данные на устройстве, отсутствие аккаунтов и сторонней аналитики, бесплатную загрузку с разовой разблокировкой. Точную доступность и функции смотрите на актуальной странице. Эти печатные карточки работают и без приложения.",
+            "Родителям: открыть Lumi Mission Planet в App Store",
+        ),
+        faq=(
+            "Вопросы о карточках семейных рутин",
+            (
+                (
+                    "Собирает ли эта страница сведения о ребёнке?",
+                    "Нет. Она принимает только ограниченные домашние выборы и никогда не запрашивает имя, возраст, расписание, школу, профиль или записи активности.",
+                ),
+                (
+                    "Это поведенческая программа или план ухода?",
+                    "Нет. Это удаляемые домашние подсказки порядка; они не диагностируют, не назначают, не отслеживают и не обещают результат.",
+                ),
+                (
+                    "Что делать, если шаг сегодня не подходит?",
+                    "Присматривающий взрослый должен пропустить, изменить или остановить его. Каждая карточка необязательна.",
+                ),
+            ),
+        ),
+        footer="Только одобренная родителем последовательность · без данных ребёнка · без отслеживания · без обещаний результата",
+        inline="Спланируйте приватные, одобренные родителем карточки семейных рутин, прежде чем выбирать приложение",
+        index=(
+            "Приватный планировщик карточек семейных рутин",
+            "Составьте пропускаемую домашнюю последовательность без ввода данных ребёнка и отслеживания выполнения.",
         ),
     ),
 }

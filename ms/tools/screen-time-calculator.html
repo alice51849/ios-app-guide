@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Perancang Skrin Masa &amp; Sekatan Aplikasi Peribadi | Matematik Telus</title>
+<meta name="description" content="Tukar corak masa skrin yang anda masukkan sendiri kepada kiraan setara tahunan yang telus dan jadual sekatan aplikasi berasingan yang boleh balik; tanpa mengakses data peranti.">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/ms/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/es-ES/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="fr-FR" href="https://alice51849.github.io/ios-app-guide/fr-FR/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="vi" href="https://alice51849.github.io/ios-app-guide/vi/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="th" href="https://alice51849.github.io/ios-app-guide/th/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="id" href="https://alice51849.github.io/ios-app-guide/id/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="tr" href="https://alice51849.github.io/ios-app-guide/tr/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="hi" href="https://alice51849.github.io/ios-app-guide/hi/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="ms" href="https://alice51849.github.io/ios-app-guide/ms/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="ru" href="https://alice51849.github.io/ios-app-guide/ru/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/screen-time-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Perancang skrin masa &amp; sekatan aplikasi peribadi">
+<meta property="og:description" content="Tukar corak masa skrin yang anda masukkan sendiri kepada kiraan setara tahunan yang telus dan jadual sekatan aplikasi berasingan yang boleh balik; tanpa mengakses data peranti.">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/ms/tools/screen-time-calculator.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#17243a;--muted:#627087;--line:#dce3ee;--paper:#fff;--bg:#eef4fb;--navy:#23466f;--blue:#4b7fb8;--soft:#e8f1fc;--warn:#fff6d9;--shadow:0 22px 60px rgba(31,61,95,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,#fff 0,var(--bg) 55%,#e0e9f4 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:#315f93}.wrap{width:min(1120px,calc(100% - 30px));margin:auto}.top{position:sticky;top:0;z-index:8;background:#fffffff2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}.links{display:flex;gap:15px;overflow-x:auto}
+.hero{padding:64px 0 30px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--navy);white-space:nowrap}.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}.hero h1{font-size:clamp(34px,6vw,62px);line-height:1.04;letter-spacing:-.035em;margin:.3em 0 .22em;white-space:nowrap;overflow-x:auto}.lead{font-size:clamp(17px,2.2vw,21px);color:var(--muted);margin:0;white-space:nowrap;overflow-x:auto}.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.planner,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}.planner{padding:clamp(20px,4vw,36px);margin:16px auto 30px}.planner h2,.card h2,.app-card h2{font-size:clamp(24px,3.6vw,34px);line-height:1.14;margin:0;white-space:nowrap;overflow-x:auto}.intro{color:var(--muted);white-space:nowrap;overflow-x:auto}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px}.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--navy);margin-bottom:6px;white-space:nowrap;overflow-x:auto}select,input,button{font:inherit}select,input[type=number]{width:100%;min-height:46px;border:1px solid #cbd6e3;border-radius:13px;background:#fff;color:var(--ink);padding:9px 11px}.toggle{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:14px;padding:11px 13px;background:#fff;font-weight:760;white-space:nowrap;overflow-x:auto}.toggle input{inline-size:20px;block-size:20px;flex:0 0 auto}.button{border:0;border-radius:999px;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;text-decoration:none;font-weight:850;padding:11px 17px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(35,70,111,.2)}
+.results{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:11px;margin-top:22px}.result{background:var(--soft);border:1px solid #cbdcf0;border-radius:17px;padding:14px;min-width:0}.result strong,.result span{display:block;white-space:nowrap;overflow-x:auto}.result strong{font-size:12px;color:#456788;text-transform:uppercase;letter-spacing:.04em}.result span{font-size:15px;color:#2e4b68;font-weight:760;margin-top:5px}.note{background:var(--warn);border:1px solid #ead9a7;border-radius:16px;padding:13px 15px;margin:14px 0 0;white-space:nowrap;overflow-x:auto}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:30px}.card,.app-card{padding:clamp(20px,3.5vw,30px)}.card.wide{grid-column:1/-1}.card p,.card li,.app-card p,.faq details p,.faq summary{white-space:nowrap;overflow-x:auto}.card ul,.card ol{padding-left:22px}.card li{margin:8px 0}.source-list a{overflow-wrap:anywhere}.app-card{margin:0 auto 38px;background:linear-gradient(135deg,#fbfdff,#e7f0fa)}.app-card .button{display:inline-flex;margin-top:5px}.faq{margin-bottom:30px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+.footer{background:var(--navy);color:#eef4fb;text-align:center;padding:27px 0;white-space:nowrap;overflow-x:auto}
+@media(max-width:960px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.controls,.results{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1120px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{.top,.hero,.controls,.button,.app-card,.footer{display:none!important}body{background:#fff}.planner,.card{box-shadow:none;break-inside:avoid}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Perancang skrin masa & sekatan aplikasi peribadi","description":"Tukar corak masa skrin yang anda masukkan sendiri kepada kiraan setara tahunan yang telus dan jadual sekatan aplikasi berasingan yang boleh balik; tanpa mengakses data peranti.","url":"https://alice51849.github.io/ios-app-guide/ms/tools/screen-time-calculator.html","inLanguage":"ms","datePublished":"2026-07-15","dateModified":"2026-07-15","applicationCategory":"ProductivityApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["No Screen Time or installed-app access","Transparent annual-equivalent observed-pattern math","Separate scheduled-block math","Essential-access preflight","No saved-time, focus, health or productivity prediction"],"citation":["https://support.apple.com/guide/iphone/get-started-with-screen-time-iphbfa595995/ios","https://support.apple.com/guide/iphone/set-schedules-with-screen-time-iphb0c7313c9/ios","https://support.apple.com/guide/iphone/set-up-a-focus-iphd6288a67f/ios"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ms","mainEntity":[{"@type":"Question","name":"Adakah halaman ini membaca Screen Time iPhone saya?","acceptedAnswer":{"@type":"Answer","text":"Tidak. Anda memasukkan nombor terhad sendiri; halaman ini tiada akses peranti, aplikasi atau akaun."}},{"@type":"Question","name":"Adakah jam sekatan berjadual sama dengan masa diperoleh?","acceptedAnswer":{"@type":"Answer","text":"Tidak. Jadual ialah niat. Halaman ini tidak sekali-kali menganggap blok berkesan atau mengubah tingkah laku."}},{"@type":"Question","name":"Adakah semua masa skrin berbahaya?","acceptedAnswer":{"@type":"Answer","text":"Tidak. Kiraan ini tidak melabelkan kerja, komunikasi, navigasi, pembacaan atau penggunaan lain sebagai baik atau buruk."}},{"@type":"Question","name":"Patutkah aplikasi penting turut disekat?","acceptedAnswer":{"@type":"Answer","text":"Tidak. Sebelum sebarang sekatan, semak komunikasi, navigasi, pengesahan, kebolehcapaian dan akses penjagaan."}}]}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/ms/index.html">iOS App Guide</a><nav class="links"><a href="https://alice51849.github.io/ios-app-guide/ms/tools/index.html">Alat percuma</a><a href="https://alice51849.github.io/ios-app-guide/tools/screen-time-calculator.html">English</a></nav></div></header>
+<main>
+<section class="hero wrap"><div class="eyebrow">Percuma · kiraan setempat · tiada akses peranti</div><h1>Perancang skrin masa &amp; sekatan aplikasi peribadi</h1><p class="lead">Masukkan corak yang sudah anda ketahui dan rancang tetingkap masa terlindung secara berasingan. Masa sekatan berjadual tidak sekali-kali dianggap masa yang diperoleh atau fokus terjamin.</p><div class="badges"><span class="badge">Tiada akses Screen Time atau aplikasi</span><span class="badge">Tiada akses akaun atau kenalan</span><span class="badge">Tiada dakwaan jimat masa</span><span class="badge">Tiada janji fokus atau kesihatan</span></div></section>
+<section class="planner wrap"><h2>Bandingkan corak yang diperhatikan dan blok yang dirancang</h2><p class="intro">Kiraan pertama menukar corak yang anda masukkan kepada tahunan. Yang kedua menjumlahkan blok berjadual. Halaman ini tidak menolak satu daripada yang lain dan tidak meramalkan tingkah laku.</p>
+<form id="screen-planner"><div class="controls">
+<div class="field"><label for="measurement">Apa yang anda ukur?</label><select id="measurement"><option value="total-device">Jumlah penggunaan peranti</option><option value="social-media">Media sosial</option><option value="video">Video</option><option value="games">Permainan</option><option value="news-shopping">Berita atau beli-belah</option></select></div>
+<div class="field"><label for="daily-minutes">Minit diperhatikan setiap hari aktif</label><input id="daily-minutes" type="number" min="0" max="1440" step="1" value="0"></div>
+<div class="field"><label for="days-per-week">Hari diperhatikan seminggu</label><input id="days-per-week" type="number" min="1" max="7" step="1" value="1"></div>
+<div class="field"><label for="block-minutes">Tempoh sekatan dirancang</label><select id="block-minutes"><option value="0">Tiada blok dipilih</option><option value="15">15 minit</option><option value="25">25 minit</option><option value="30">30 minit</option><option value="45">45 minit</option><option value="60">60 minit</option><option value="90">90 minit</option><option value="120">120 minit</option></select></div>
+<div class="field"><label for="block-days">Hari sekatan dirancang seminggu</label><input id="block-days" type="number" min="0" max="7" step="1" value="0"></div>
+<div class="field"><label for="block-window">Tetingkap sekatan</label><select id="block-window"><option value="custom">Tersuai</option><option value="morning">Pagi</option><option value="work-study">Kerja atau belajar</option><option value="evening">Petang</option></select></div>
+<label class="toggle"><input id="essential-reviewed" type="checkbox">Saya telah menyemak akses penting sebelum menyekat</label>
+</div><p><button class="button" type="submit">Kemas kini pelan telus</button></p></form>
+<div class="results"><div class="result"><strong>Jam diperhatikan setara tahunan</strong><span id="result-observed-hours"></span></div><div class="result"><strong>Hari 24 jam setara tahunan</strong><span id="result-observed-days"></span></div><div class="result"><strong>Minit sekatan berjadual mingguan</strong><span id="result-block-week"></span></div><div class="result"><strong>Jam sekatan berjadual dalam 52 minggu</strong><span id="result-block-year"></span></div><div class="result"><strong>Ukuran dipilih</strong><span id="result-measurement"></span></div></div>
+<p class="note">Setara tahunan menggunakan formula minit harian × hari aktif ÷ 7 × 365. Ia hanya mewakili corak yang dimasukkan di sini; bukan bacaan Screen Time langsung.</p><p class="note">Jam sekatan berjadual menggunakan formula tempoh blok × hari sekatan × 52. Ini hanya niat kalendar—bukan masa skrin diperoleh, perhatian dipulihkan, fokus dicapai atau kerja siap.</p><p class="note"><strong>Prasemakan boleh balik:</strong> <span id="result-plan"></span></p></section>
+<section class="wrap grid"><article class="card"><h2>Lima semakan sebelum sesi sekatan aplikasi</h2><ol><li>Jika boleh, sahkan corak sumber melalui Settings &gt; Screen Time dan bukan meneka.</li><li>Pilih hanya aplikasi yang tidak berkaitan dengan tetingkap masa terlindung.</li><li>Kekalkan komunikasi penting, navigasi, pengesahan, kebolehcapaian dan akses penjagaan.</li><li>Takrifkan tindakan alternatif yang dibenarkan dan cara jelas menamatkan sesi atau memulihkan.</li><li>Cuba blok sependek mungkin, semak apa yang sebenarnya berlaku, kemudian laraskan tanpa mendakwa jimat masa.</li></ol></article><article class="card"><h2>Apa yang perancang ini tidak tahu</h2><p>Ia tidak dapat membaca laporan Screen Time anda, aplikasi terpasang, pemberitahuan, kenalan, tetapan peranti atau hasil sesi. Ia untuk perancangan peribadi; bukan untuk keselamatan kanak-kanak, akses kecemasan, penjagaan perubatan, pemantauan tempat kerja atau rawatan.</p></article><article class="card wide"><h2>Konteks ciri rasmi, bukan bukti hasil</h2><p>Apple mendokumenkan melihat aktiviti Screen Time, menetapkan jadual dan had, serta menggunakan Focus untuk mengurangkan gangguan. Ciri ini tidak membuktikan blok yang dirancang akan mengurangkan penggunaan atau meningkatkan fokus.</p><ul class="source-list"><li><a href="https://support.apple.com/guide/iphone/get-started-with-screen-time-iphbfa595995/ios" rel="noopener">Apple: bermula dengan Screen Time di iPhone</a></li><li><a href="https://support.apple.com/guide/iphone/set-schedules-with-screen-time-iphb0c7313c9/ios" rel="noopener">Apple: menetapkan jadual dengan Screen Time di iPhone</a></li><li><a href="https://support.apple.com/guide/iphone/set-up-a-focus-iphd6288a67f/ios" rel="noopener">Apple: menyediakan Focus di iPhone</a></li></ul><p><a href="https://developer.chrome.com/docs/ai/webmcp/imperative-api" rel="noopener">Pratonton API imperatif Chrome WebMCP (boleh berubah)</a></p></article></section>
+<section class="wrap card faq"><h2>Soalan perancangan masa skrin</h2><details><summary>Adakah halaman ini membaca Screen Time iPhone saya?</summary><p>Tidak. Anda memasukkan nombor terhad sendiri; halaman ini tiada akses peranti, aplikasi atau akaun.</p></details><details><summary>Adakah jam sekatan berjadual sama dengan masa diperoleh?</summary><p>Tidak. Jadual ialah niat. Halaman ini tidak sekali-kali menganggap blok berkesan atau mengubah tingkah laku.</p></details><details><summary>Adakah semua masa skrin berbahaya?</summary><p>Tidak. Kiraan ini tidak melabelkan kerja, komunikasi, navigasi, pembacaan atau penggunaan lain sebagai baik atau buruk.</p></details><details><summary>Patutkah aplikasi penting turut disekat?</summary><p>Tidak. Sebelum sebarang sekatan, semak komunikasi, navigasi, pengesahan, kebolehcapaian dan akses penjagaan.</p></details></section>
+<section class="app-card wrap"><h2>Mahukan aliran sekatan pada peranti yang menjadi pilihan?</h2><p>LockHour Pro adalah pilihan. Halaman App Store semasa menerangkan sekatan bermasa dengan buka kunci automatik untuk aplikasi terpilih, mod Quick Focus, Deep Work, Study, Sleep Wind Down, Morning Reset dan Custom, serta widget dan Live Activity. Halaman itu juga menyatakan tiada akaun, iklan atau penjejakan, data kekal pada peranti dan buka kunci sekali sahaja. Semak halaman semasa untuk ciri tepat. Perancang ini berfungsi tanpa aplikasi.</p><a class="button" href="https://apps.apple.com/app/id6780107485" rel="nofollow noopener">Lihat LockHour Pro di App Store</a></section>
+</main>
+<footer class="footer"><div class="wrap">Matematik perancangan peribadi sahaja · tiada akses peranti · dirancang bukan diperoleh</div></footer>
+<script type="application/json" id="screen-config">{"inputSchema":{"type":"object","properties":{"measurement":{"type":"string","enum":["total-device","social-media","video","games","news-shopping"]},"daily_minutes":{"type":"integer","minimum":0,"maximum":1440},"days_per_week":{"type":"integer","minimum":1,"maximum":7},"block_minutes":{"type":"integer","enum":[0,15,25,30,45,60,90,120]},"block_days_per_week":{"type":"integer","minimum":0,"maximum":7},"block_window":{"type":"string","enum":["custom","morning","work-study","evening"]},"essential_access_reviewed":{"type":"boolean"}},"required":["measurement","daily_minutes","days_per_week","block_minutes","block_days_per_week","block_window","essential_access_reviewed"],"additionalProperties":false},"labels":{"measurement":{"total-device":"Jumlah penggunaan peranti","social-media":"Media sosial","video":"Video","games":"Permainan","news-shopping":"Berita atau beli-belah"},"block_window":{"custom":"Tersuai","morning":"Pagi","work-study":"Kerja atau belajar","evening":"Petang"}},"windowSteps":{"morning":["Pilih permulaan dan penghujung pagi yang jelas; sahkan penggera, perjalanan, pengesahan dan komunikasi penting kekal boleh dicapai.","Sediakan satu tindakan pertama yang dibenarkan sebelum blok bermula."],"work-study":["Takrifkan matlamat kerja atau belajar sebelum memilih aplikasi untuk disekat.","Kekalkan alat komunikasi, pengesahan, kebolehcapaian dan rujukan yang diperlukan."],"evening":["Pilih titik penghujung petang yang jelas; kekalkan komunikasi kecemasan dan akses penjagaan.","Sediakan aktiviti relaksasi yang dibenarkan daripada bergantung pada larangan kosong."],"custom":["Namakan situasi sebenar di luar halaman ini; tetapkan permulaan, penghujung dan laluan keluar yang jelas.","Sekat hanya aplikasi yang tidak berkaitan dengan situasi itu dan kekalkan alat penting boleh dicapai."]},"essentialYes":"Semak semula senarai kebenaran sebelum sesi pertama dan guna blok ujian sependek mungkin supaya persediaan kekal boleh balik.","essentialNo":"Sebelum menyekat apa-apa, tentukan komunikasi penting, navigasi, pengesahan, kebolehcapaian dan alat penjagaan, serta laluan keluar atau pemulihan yang dipercayai.","observedBoundary":"Setara tahunan menggunakan formula minit harian × hari aktif ÷ 7 × 365. Ia hanya mewakili corak yang dimasukkan di sini; bukan bacaan Screen Time langsung.","blockBoundary":"Jam sekatan berjadual menggunakan formula tempoh blok × hari sekatan × 52. Ini hanya niat kalendar—bukan masa skrin diperoleh, perhatian dipulihkan, fokus dicapai atau kerja siap.","scopeBoundary":"Ia tidak dapat membaca laporan Screen Time anda, aplikasi terpasang, pemberitahuan, kenalan, tetapan peranti atau hasil sesi. Ia untuk perancangan peribadi; bukan untuk keselamatan kanak-kanak, akses kecemasan, penjagaan perubatan, pemantauan tempat kerja atau rawatan.","preflightChecklist":["Jika boleh, sahkan corak sumber melalui Settings > Screen Time dan bukan meneka.","Pilih hanya aplikasi yang tidak berkaitan dengan tetingkap masa terlindung.","Kekalkan komunikasi penting, navigasi, pengesahan, kebolehcapaian dan akses penjagaan.","Takrifkan tindakan alternatif yang dibenarkan dan cara jelas menamatkan sesi atau memulihkan.","Cuba blok sependek mungkin, semak apa yang sebenarnya berlaku, kemudian laraskan tanpa mendakwa jimat masa."],"toolDescription":"Menghasilkan kiraan masa skrin setara tahunan yang telus daripada minit dan hari terhad yang dimasukkan sendiri, serta jadual sekatan aplikasi berasingan yang boleh balik. Tidak sekali-kali mengakses Screen Time, aplikasi terpasang, akaun, kenalan atau data peranti dan tidak sekali-kali menganggap blok dirancang sebagai masa diperoleh, fokus, kesihatan atau hasil produktiviti.","freePlanner":{"label":"Perancang skrin masa & sekatan aplikasi peribadi","url":"https://alice51849.github.io/ios-app-guide/ms/tools/screen-time-calculator.html","boundary":"Kiraan pertama menukar corak yang anda masukkan kepada tahunan. Yang kedua menjumlahkan blok berjadual. Halaman ini tidak menolak satu daripada yang lain dan tidak meramalkan tingkah laku."},"officialSources":[{"label":"Apple: bermula dengan Screen Time di iPhone","url":"https://support.apple.com/guide/iphone/get-started-with-screen-time-iphbfa595995/ios"},{"label":"Apple: menetapkan jadual dengan Screen Time di iPhone","url":"https://support.apple.com/guide/iphone/set-schedules-with-screen-time-iphb0c7313c9/ios"},{"label":"Apple: menyediakan Focus di iPhone","url":"https://support.apple.com/guide/iphone/set-up-a-focus-iphd6288a67f/ios"}],"webmcpSource":"https://developer.chrome.com/docs/ai/webmcp/imperative-api","optionalApp":{"label":"Lihat LockHour Pro di App Store","boundary":"LockHour Pro adalah pilihan. Halaman App Store semasa menerangkan sekatan bermasa dengan buka kunci automatik untuk aplikasi terpilih, mod Quick Focus, Deep Work, Study, Sleep Wind Down, Morning Reset dan Custom, serta widget dan Live Activity. Halaman itu juga menyatakan tiada akaun, iklan atau penjejakan, data kekal pada peranti dan buka kunci sekali sahaja. Semak halaman semasa untuk ciri tepat. Perancang ini berfungsi tanpa aplikasi.","app_store_url":"https://apps.apple.com/app/id6780107485"}}</script>
+<script>
+(() => {
+  const config = JSON.parse(document.getElementById("screen-config").textContent);
+  const form = document.getElementById("screen-planner");
+  const fields = {
+    measurement: document.getElementById("measurement"),
+    daily_minutes: document.getElementById("daily-minutes"),
+    days_per_week: document.getElementById("days-per-week"),
+    block_minutes: document.getElementById("block-minutes"),
+    block_days_per_week: document.getElementById("block-days"),
+    block_window: document.getElementById("block-window"),
+    essential_access_reviewed: document.getElementById("essential-reviewed")
+  };
+  const output = {
+    observedHours: document.getElementById("result-observed-hours"),
+    observedDays: document.getElementById("result-observed-days"),
+    blockWeek: document.getElementById("result-block-week"),
+    blockYear: document.getElementById("result-block-year"),
+    measurement: document.getElementById("result-measurement"),
+    plan: document.getElementById("result-plan")
+  };
+
+  function round(value, digits = 1) {
+    const factor = 10 ** digits;
+    return Math.round(value * factor) / factor;
+  }
+
+  function enumValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const values = config.inputSchema.properties[name].enum;
+    if (typeof value !== "string" || !values.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    return value;
+  }
+
+  function integerValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const schema = config.inputSchema.properties[name];
+    if (!Number.isInteger(value)) {
+      throw new TypeError(`${name} must be an integer.`);
+    }
+    if (schema.enum && !schema.enum.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    if ((schema.minimum !== undefined && value < schema.minimum) ||
+        (schema.maximum !== undefined && value > schema.maximum)) {
+      throw new RangeError(`${name} is outside the supported range.`);
+    }
+    return value;
+  }
+
+  function booleanValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    if (typeof input[name] !== "boolean") {
+      throw new TypeError(`${name} must be a boolean.`);
+    }
+    return input[name];
+  }
+
+  function plan(input) {
+    const measurement = enumValue(input, "measurement");
+    const dailyMinutes = integerValue(input, "daily_minutes");
+    const daysPerWeek = integerValue(input, "days_per_week");
+    const blockMinutes = integerValue(input, "block_minutes");
+    const blockDays = integerValue(input, "block_days_per_week");
+    const blockWindow = enumValue(input, "block_window");
+    const essentialReviewed = booleanValue(input, "essential_access_reviewed");
+    if ((blockMinutes === 0) !== (blockDays === 0)) {
+      throw new RangeError(
+        "block_minutes and block_days_per_week must both be zero or both be positive.");
+    }
+    const annualObservedMinutes = dailyMinutes * daysPerWeek / 7 * 365;
+    const weeklyScheduledBlockMinutes = blockMinutes * blockDays;
+    const annualScheduledBlockMinutes = weeklyScheduledBlockMinutes * 52;
+    return {
+      selected_inputs: {
+        measurement,
+        measurement_label: config.labels.measurement[measurement],
+        daily_minutes: dailyMinutes,
+        days_per_week: daysPerWeek,
+        block_minutes: blockMinutes,
+        block_days_per_week: blockDays,
+        block_window: blockWindow,
+        block_window_label: config.labels.block_window[blockWindow],
+        essential_access_reviewed: essentialReviewed
+      },
+      observed_pattern_annual_equivalent: {
+        formula: "daily_minutes * days_per_week / 7 * 365",
+        minutes: round(annualObservedMinutes, 2),
+        hours: round(annualObservedMinutes / 60),
+        full_24_hour_days: round(annualObservedMinutes / 1440),
+        source_is_self_entered_not_device_reading: true
+      },
+      scheduled_block_plan: {
+        formula: "block_minutes * block_days_per_week * 52",
+        minutes_per_week: weeklyScheduledBlockMinutes,
+        minutes_across_52_weeks: annualScheduledBlockMinutes,
+        hours_across_52_weeks: round(annualScheduledBlockMinutes / 60),
+        is_not_a_saved_time_or_outcome_claim: true
+      },
+      reversible_preflight: [
+        essentialReviewed ? config.essentialYes : config.essentialNo,
+        ...config.windowSteps[blockWindow]
+      ],
+      observed_pattern_boundary: config.observedBoundary,
+      scheduled_block_boundary: config.blockBoundary,
+      scope_boundary: config.scopeBoundary
+    };
+  }
+
+  function validateInput(input) {
+    if (input === null || typeof input !== "object" || Array.isArray(input)) {
+      throw new TypeError("WebMCP input must be an object.");
+    }
+    const allowed = new Set(Object.keys(config.inputSchema.properties));
+    for (const name of Object.keys(input)) {
+      if (!allowed.has(name)) {
+        throw new RangeError(`${name} is not a supported input.`);
+      }
+    }
+    return plan(input);
+  }
+
+  function render() {
+    const result = plan({
+      measurement: fields.measurement.value,
+      daily_minutes: Number(fields.daily_minutes.value),
+      days_per_week: Number(fields.days_per_week.value),
+      block_minutes: Number(fields.block_minutes.value),
+      block_days_per_week: Number(fields.block_days_per_week.value),
+      block_window: fields.block_window.value,
+      essential_access_reviewed: fields.essential_access_reviewed.checked
+    });
+    output.observedHours.textContent =
+      String(result.observed_pattern_annual_equivalent.hours);
+    output.observedDays.textContent =
+      String(result.observed_pattern_annual_equivalent.full_24_hour_days);
+    output.blockWeek.textContent =
+      String(result.scheduled_block_plan.minutes_per_week);
+    output.blockYear.textContent =
+      String(result.scheduled_block_plan.hours_across_52_weeks);
+    output.measurement.textContent =
+      result.selected_inputs.measurement_label;
+    output.plan.textContent = result.reversible_preflight.join(" ");
+  }
+
+  async function registerWebMcp() {
+    if (!document.modelContext?.registerTool) return;
+    await document.modelContext.registerTool({
+      name: "plan_private_screen_time_block",
+      description: config.toolDescription,
+      inputSchema: config.inputSchema,
+      annotations: {readOnlyHint: true, untrustedContentHint: false},
+      execute: async (input) => {
+        const plan = validateInput(input);
+        const result = {
+          result_type: "private_screen_time_and_block_plan",
+          screen_time_apps_accounts_contacts_not_accessed: true,
+          scheduled_block_is_not_saved_time: true,
+          no_focus_health_or_productivity_prediction: true,
+          plan,
+          preflight_checklist: config.preflightChecklist,
+          optional_free_planner: config.freePlanner,
+          official_sources: config.officialSources,
+          webmcp_preview_source: config.webmcpSource
+        };
+        if (config.optionalApp) {
+          result.optional_lockhour_pro = config.optionalApp;
+        }
+        return JSON.stringify(result);
+      }
+    });
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    render();
+  });
+  for (const field of Object.values(fields)) {
+    field.addEventListener("change", render);
+  }
+  render();
+  registerWebMcp().catch((error) =>
+    console.error("WebMCP tool registration failed.", error));
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Приватный планировщик экранного времени и блокировки приложений | Прозрачная математика</title>
+<meta name="description" content="Превратите введённый вами паттерн экранного времени в прозрачный годовой эквивалент и отдельное обратимое расписание блокировок — без доступа к данным устройства.">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/ru/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/es-ES/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="fr-FR" href="https://alice51849.github.io/ios-app-guide/fr-FR/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="vi" href="https://alice51849.github.io/ios-app-guide/vi/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="th" href="https://alice51849.github.io/ios-app-guide/th/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="id" href="https://alice51849.github.io/ios-app-guide/id/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="tr" href="https://alice51849.github.io/ios-app-guide/tr/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="hi" href="https://alice51849.github.io/ios-app-guide/hi/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="ms" href="https://alice51849.github.io/ios-app-guide/ms/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="ru" href="https://alice51849.github.io/ios-app-guide/ru/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/screen-time-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Приватный планировщик экранного времени и блокировки приложений">
+<meta property="og:description" content="Превратите введённый вами паттерн экранного времени в прозрачный годовой эквивалент и отдельное обратимое расписание блокировок — без доступа к данным устройства.">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/ru/tools/screen-time-calculator.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#17243a;--muted:#627087;--line:#dce3ee;--paper:#fff;--bg:#eef4fb;--navy:#23466f;--blue:#4b7fb8;--soft:#e8f1fc;--warn:#fff6d9;--shadow:0 22px 60px rgba(31,61,95,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,#fff 0,var(--bg) 55%,#e0e9f4 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:#315f93}.wrap{width:min(1120px,calc(100% - 30px));margin:auto}.top{position:sticky;top:0;z-index:8;background:#fffffff2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}.links{display:flex;gap:15px;overflow-x:auto}
+.hero{padding:64px 0 30px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--navy);white-space:nowrap}.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}.hero h1{font-size:clamp(34px,6vw,62px);line-height:1.04;letter-spacing:-.035em;margin:.3em 0 .22em;white-space:nowrap;overflow-x:auto}.lead{font-size:clamp(17px,2.2vw,21px);color:var(--muted);margin:0;white-space:nowrap;overflow-x:auto}.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.planner,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}.planner{padding:clamp(20px,4vw,36px);margin:16px auto 30px}.planner h2,.card h2,.app-card h2{font-size:clamp(24px,3.6vw,34px);line-height:1.14;margin:0;white-space:nowrap;overflow-x:auto}.intro{color:var(--muted);white-space:nowrap;overflow-x:auto}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px}.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--navy);margin-bottom:6px;white-space:nowrap;overflow-x:auto}select,input,button{font:inherit}select,input[type=number]{width:100%;min-height:46px;border:1px solid #cbd6e3;border-radius:13px;background:#fff;color:var(--ink);padding:9px 11px}.toggle{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:14px;padding:11px 13px;background:#fff;font-weight:760;white-space:nowrap;overflow-x:auto}.toggle input{inline-size:20px;block-size:20px;flex:0 0 auto}.button{border:0;border-radius:999px;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;text-decoration:none;font-weight:850;padding:11px 17px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(35,70,111,.2)}
+.results{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:11px;margin-top:22px}.result{background:var(--soft);border:1px solid #cbdcf0;border-radius:17px;padding:14px;min-width:0}.result strong,.result span{display:block;white-space:nowrap;overflow-x:auto}.result strong{font-size:12px;color:#456788;text-transform:uppercase;letter-spacing:.04em}.result span{font-size:15px;color:#2e4b68;font-weight:760;margin-top:5px}.note{background:var(--warn);border:1px solid #ead9a7;border-radius:16px;padding:13px 15px;margin:14px 0 0;white-space:nowrap;overflow-x:auto}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:30px}.card,.app-card{padding:clamp(20px,3.5vw,30px)}.card.wide{grid-column:1/-1}.card p,.card li,.app-card p,.faq details p,.faq summary{white-space:nowrap;overflow-x:auto}.card ul,.card ol{padding-left:22px}.card li{margin:8px 0}.source-list a{overflow-wrap:anywhere}.app-card{margin:0 auto 38px;background:linear-gradient(135deg,#fbfdff,#e7f0fa)}.app-card .button{display:inline-flex;margin-top:5px}.faq{margin-bottom:30px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+.footer{background:var(--navy);color:#eef4fb;text-align:center;padding:27px 0;white-space:nowrap;overflow-x:auto}
+@media(max-width:960px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.controls,.results{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1120px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{.top,.hero,.controls,.button,.app-card,.footer{display:none!important}body{background:#fff}.planner,.card{box-shadow:none;break-inside:avoid}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Приватный планировщик экранного времени и блокировки приложений","description":"Превратите введённый вами паттерн экранного времени в прозрачный годовой эквивалент и отдельное обратимое расписание блокировок — без доступа к данным устройства.","url":"https://alice51849.github.io/ios-app-guide/ru/tools/screen-time-calculator.html","inLanguage":"ru","datePublished":"2026-07-15","dateModified":"2026-07-15","applicationCategory":"ProductivityApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["No Screen Time or installed-app access","Transparent annual-equivalent observed-pattern math","Separate scheduled-block math","Essential-access preflight","No saved-time, focus, health or productivity prediction"],"citation":["https://support.apple.com/guide/iphone/get-started-with-screen-time-iphbfa595995/ios","https://support.apple.com/guide/iphone/set-schedules-with-screen-time-iphb0c7313c9/ios","https://support.apple.com/guide/iphone/set-up-a-focus-iphd6288a67f/ios"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Читает ли страница мой Screen Time на iPhone?","acceptedAnswer":{"@type":"Answer","text":"Нет. Ограниченные числа вы вводите сами; у страницы нет доступа к устройству, приложениям или аккаунтам."}},{"@type":"Question","name":"Равны ли запланированные часы блокировки выигранному времени?","acceptedAnswer":{"@type":"Answer","text":"Нет. Расписание — это намерение. Страница никогда не предполагает, что блок сработал или изменил поведение."}},{"@type":"Question","name":"Всё ли экранное время вредно?","acceptedAnswer":{"@type":"Answer","text":"Нет. Расчёт не помечает работу, общение, навигацию, чтение или иное использование как хорошее или плохое."}},{"@type":"Question","name":"Нужно ли блокировать и необходимые приложения?","acceptedAnswer":{"@type":"Answer","text":"Нет. Перед любым ограничением проверьте связь, навигацию, аутентификацию, доступность и доступ к уходу."}}]}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/ru/index.html">iOS App Guide</a><nav class="links"><a href="https://alice51849.github.io/ios-app-guide/ru/tools/index.html">Бесплатные инструменты</a><a href="https://alice51849.github.io/ios-app-guide/tools/screen-time-calculator.html">English</a></nav></div></header>
+<main>
+<section class="hero wrap"><div class="eyebrow">Бесплатно · локальный расчёт · без доступа к устройству</div><h1>Приватный планировщик экранного времени и блокировки приложений</h1><p class="lead">Введите паттерн, который вы уже знаете, и отдельно спланируйте защищённое временное окно. Запланированное время блокировки никогда не подаётся как выигранное время или гарантированный фокус.</p><div class="badges"><span class="badge">Без доступа к Screen Time и приложениям</span><span class="badge">Без доступа к аккаунтам и контактам</span><span class="badge">Без заявлений об экономии времени</span><span class="badge">Без обещаний фокуса или здоровья</span></div></section>
+<section class="planner wrap"><h2>Сравните наблюдаемый паттерн и запланированные блоки</h2><p class="intro">Первый расчёт переводит введённый паттерн в годовой. Второй суммирует запланированные блоки. Страница не вычитает одно из другого и не предсказывает поведение.</p>
+<form id="screen-planner"><div class="controls">
+<div class="field"><label for="measurement">Что вы измеряете?</label><select id="measurement"><option value="total-device">Общее использование устройства</option><option value="social-media">Соцсети</option><option value="video">Видео</option><option value="games">Игры</option><option value="news-shopping">Новости или покупки</option></select></div>
+<div class="field"><label for="daily-minutes">Наблюдаемые минуты в активный день</label><input id="daily-minutes" type="number" min="0" max="1440" step="1" value="0"></div>
+<div class="field"><label for="days-per-week">Наблюдаемых дней в неделю</label><input id="days-per-week" type="number" min="1" max="7" step="1" value="1"></div>
+<div class="field"><label for="block-minutes">Запланированная длительность блока</label><select id="block-minutes"><option value="0">Блок не выбран</option><option value="15">15 минут</option><option value="25">25 минут</option><option value="30">30 минут</option><option value="45">45 минут</option><option value="60">60 минут</option><option value="90">90 минут</option><option value="120">120 минут</option></select></div>
+<div class="field"><label for="block-days">Дней блокировки в неделю</label><input id="block-days" type="number" min="0" max="7" step="1" value="0"></div>
+<div class="field"><label for="block-window">Окно блокировки</label><select id="block-window"><option value="custom">Своё</option><option value="morning">Утро</option><option value="work-study">Работа или учёба</option><option value="evening">Вечер</option></select></div>
+<label class="toggle"><input id="essential-reviewed" type="checkbox">Я проверил(а) доступ к необходимому перед блокировкой</label>
+</div><p><button class="button" type="submit">Обновить прозрачный план</button></p></form>
+<div class="results"><div class="result"><strong>Годовой эквивалент наблюдаемых часов</strong><span id="result-observed-hours"></span></div><div class="result"><strong>Годовой эквивалент в сутках</strong><span id="result-observed-days"></span></div><div class="result"><strong>Минут блокировки в неделю по плану</strong><span id="result-block-week"></span></div><div class="result"><strong>Часов блокировки за 52 недели</strong><span id="result-block-year"></span></div><div class="result"><strong>Выбранное измерение</strong><span id="result-measurement"></span></div></div>
+<p class="note">Годовой эквивалент считается по формуле: дневные минуты × активные дни ÷ 7 × 365. Он отражает только введённый здесь паттерн; это не прямое чтение Screen Time.</p><p class="note">Часы блокировки считаются по формуле: длительность блока × дни блокировки × 52. Это лишь календарные намерения — не выигранное экранное время, не возвращённое внимание, не достигнутый фокус и не сделанная работа.</p><p class="note"><strong>Обратимая предпроверка:</strong> <span id="result-plan"></span></p></section>
+<section class="wrap grid"><article class="card"><h2>Пять проверок перед сессией блокировки</h2><ol><li>По возможности сверьте исходный паттерн в Настройки &gt; Экранное время, а не угадывайте.</li><li>Выбирайте только приложения, не связанные с защищённым временным окном.</li><li>Держите доступными необходимую связь, навигацию, аутентификацию, средства доступности и ухода.</li><li>Определите разрешённое альтернативное действие и чёткий способ завершить сессию или восстановиться.</li><li>Попробуйте максимально короткий блок, посмотрите, что произошло на деле, затем корректируйте без заявлений об экономии времени.</li></ol></article><article class="card"><h2>Чего этот планировщик не знает</h2><p>Он не может читать ваш отчёт Screen Time, установленные приложения, уведомления, контакты, настройки устройства или результаты сессий. Он для личного планирования; не для детской безопасности, экстренного доступа, медицинского ухода, контроля на работе или терапии.</p></article><article class="card wide"><h2>Официальный контекст функций, а не доказательство результата</h2><p>Apple документирует просмотр активности Screen Time, установку расписаний и лимитов и использование Focus для снижения отвлечений. Эти функции не доказывают, что запланированный блок сократит использование или усилит фокус.</p><ul class="source-list"><li><a href="https://support.apple.com/guide/iphone/get-started-with-screen-time-iphbfa595995/ios" rel="noopener">Apple: начало работы со Screen Time на iPhone</a></li><li><a href="https://support.apple.com/guide/iphone/set-schedules-with-screen-time-iphb0c7313c9/ios" rel="noopener">Apple: расписания в Screen Time на iPhone</a></li><li><a href="https://support.apple.com/guide/iphone/set-up-a-focus-iphd6288a67f/ios" rel="noopener">Apple: настройка Focus на iPhone</a></li></ul><p><a href="https://developer.chrome.com/docs/ai/webmcp/imperative-api" rel="noopener">Предварительная версия императивного API Chrome WebMCP (может меняться)</a></p></article></section>
+<section class="wrap card faq"><h2>Вопросы о планировании экранного времени</h2><details><summary>Читает ли страница мой Screen Time на iPhone?</summary><p>Нет. Ограниченные числа вы вводите сами; у страницы нет доступа к устройству, приложениям или аккаунтам.</p></details><details><summary>Равны ли запланированные часы блокировки выигранному времени?</summary><p>Нет. Расписание — это намерение. Страница никогда не предполагает, что блок сработал или изменил поведение.</p></details><details><summary>Всё ли экранное время вредно?</summary><p>Нет. Расчёт не помечает работу, общение, навигацию, чтение или иное использование как хорошее или плохое.</p></details><details><summary>Нужно ли блокировать и необходимые приложения?</summary><p>Нет. Перед любым ограничением проверьте связь, навигацию, аутентификацию, доступность и доступ к уходу.</p></details></section>
+<section class="app-card wrap"><h2>Нужен необязательный поток блокировки на устройстве?</h2><p>LockHour Pro — по желанию. Текущая страница App Store описывает блокировку по таймеру с автоматической разблокировкой для выбранных приложений, режимы Quick Focus, Deep Work, Study, Sleep Wind Down, Morning Reset и Custom, а также виджет и Live Activity. Страница также указывает: без аккаунтов, рекламы и трекинга, данные остаются на устройстве, разовая разблокировка. Точные функции смотрите на актуальной странице. Планировщик работает и без приложения.</p><a class="button" href="https://apps.apple.com/app/id6780107485" rel="nofollow noopener">Открыть LockHour Pro в App Store</a></section>
+</main>
+<footer class="footer"><div class="wrap">Только приватная плановая математика · без доступа к устройству · запланировано ≠ выиграно</div></footer>
+<script type="application/json" id="screen-config">{"inputSchema":{"type":"object","properties":{"measurement":{"type":"string","enum":["total-device","social-media","video","games","news-shopping"]},"daily_minutes":{"type":"integer","minimum":0,"maximum":1440},"days_per_week":{"type":"integer","minimum":1,"maximum":7},"block_minutes":{"type":"integer","enum":[0,15,25,30,45,60,90,120]},"block_days_per_week":{"type":"integer","minimum":0,"maximum":7},"block_window":{"type":"string","enum":["custom","morning","work-study","evening"]},"essential_access_reviewed":{"type":"boolean"}},"required":["measurement","daily_minutes","days_per_week","block_minutes","block_days_per_week","block_window","essential_access_reviewed"],"additionalProperties":false},"labels":{"measurement":{"total-device":"Общее использование устройства","social-media":"Соцсети","video":"Видео","games":"Игры","news-shopping":"Новости или покупки"},"block_window":{"custom":"Своё","morning":"Утро","work-study":"Работа или учёба","evening":"Вечер"}},"windowSteps":{"morning":["Выберите чёткое утреннее начало и конец; убедитесь, что будильники, транспорт, аутентификация и важная связь остаются доступными.","Подготовьте одно разрешённое первое действие до начала блока."],"work-study":["Определите цель работы или учёбы до выбора блокируемых приложений.","Держите доступными нужную связь, аутентификацию, средства доступности и справочные инструменты."],"evening":["Выберите чёткую вечернюю точку завершения; сохраните экстренную связь и доступ к уходу.","Подготовьте разрешённое расслабляющее занятие вместо пустого запрета."],"custom":["Назовите реальную ситуацию вне этой страницы; задайте чёткое начало, конец и путь выхода.","Блокируйте только приложения, не связанные с этой ситуацией, и держите необходимые инструменты доступными."]},"essentialYes":"Перед первой сессией перепроверьте список разрешённого и используйте максимально короткий пробный блок, чтобы настройка оставалась обратимой.","essentialNo":"Прежде чем что-либо блокировать, определите необходимую связь, навигацию, аутентификацию, средства доступности и ухода, а также надёжный путь выхода или восстановления.","observedBoundary":"Годовой эквивалент считается по формуле: дневные минуты × активные дни ÷ 7 × 365. Он отражает только введённый здесь паттерн; это не прямое чтение Screen Time.","blockBoundary":"Часы блокировки считаются по формуле: длительность блока × дни блокировки × 52. Это лишь календарные намерения — не выигранное экранное время, не возвращённое внимание, не достигнутый фокус и не сделанная работа.","scopeBoundary":"Он не может читать ваш отчёт Screen Time, установленные приложения, уведомления, контакты, настройки устройства или результаты сессий. Он для личного планирования; не для детской безопасности, экстренного доступа, медицинского ухода, контроля на работе или терапии.","preflightChecklist":["По возможности сверьте исходный паттерн в Настройки > Экранное время, а не угадывайте.","Выбирайте только приложения, не связанные с защищённым временным окном.","Держите доступными необходимую связь, навигацию, аутентификацию, средства доступности и ухода.","Определите разрешённое альтернативное действие и чёткий способ завершить сессию или восстановиться.","Попробуйте максимально короткий блок, посмотрите, что произошло на деле, затем корректируйте без заявлений об экономии времени."],"toolDescription":"Строит прозрачный годовой эквивалент экранного времени из ограниченных введённых вручную минут и дней и отдельное обратимое расписание блокировок. Никогда не обращается к Screen Time, установленным приложениям, аккаунтам, контактам или данным устройства и никогда не подаёт запланированные блоки как выигранное время, фокус, здоровье или продуктивность.","freePlanner":{"label":"Приватный планировщик экранного времени и блокировки приложений","url":"https://alice51849.github.io/ios-app-guide/ru/tools/screen-time-calculator.html","boundary":"Первый расчёт переводит введённый паттерн в годовой. Второй суммирует запланированные блоки. Страница не вычитает одно из другого и не предсказывает поведение."},"officialSources":[{"label":"Apple: начало работы со Screen Time на iPhone","url":"https://support.apple.com/guide/iphone/get-started-with-screen-time-iphbfa595995/ios"},{"label":"Apple: расписания в Screen Time на iPhone","url":"https://support.apple.com/guide/iphone/set-schedules-with-screen-time-iphb0c7313c9/ios"},{"label":"Apple: настройка Focus на iPhone","url":"https://support.apple.com/guide/iphone/set-up-a-focus-iphd6288a67f/ios"}],"webmcpSource":"https://developer.chrome.com/docs/ai/webmcp/imperative-api","optionalApp":{"label":"Открыть LockHour Pro в App Store","boundary":"LockHour Pro — по желанию. Текущая страница App Store описывает блокировку по таймеру с автоматической разблокировкой для выбранных приложений, режимы Quick Focus, Deep Work, Study, Sleep Wind Down, Morning Reset и Custom, а также виджет и Live Activity. Страница также указывает: без аккаунтов, рекламы и трекинга, данные остаются на устройстве, разовая разблокировка. Точные функции смотрите на актуальной странице. Планировщик работает и без приложения.","app_store_url":"https://apps.apple.com/app/id6780107485"}}</script>
+<script>
+(() => {
+  const config = JSON.parse(document.getElementById("screen-config").textContent);
+  const form = document.getElementById("screen-planner");
+  const fields = {
+    measurement: document.getElementById("measurement"),
+    daily_minutes: document.getElementById("daily-minutes"),
+    days_per_week: document.getElementById("days-per-week"),
+    block_minutes: document.getElementById("block-minutes"),
+    block_days_per_week: document.getElementById("block-days"),
+    block_window: document.getElementById("block-window"),
+    essential_access_reviewed: document.getElementById("essential-reviewed")
+  };
+  const output = {
+    observedHours: document.getElementById("result-observed-hours"),
+    observedDays: document.getElementById("result-observed-days"),
+    blockWeek: document.getElementById("result-block-week"),
+    blockYear: document.getElementById("result-block-year"),
+    measurement: document.getElementById("result-measurement"),
+    plan: document.getElementById("result-plan")
+  };
+
+  function round(value, digits = 1) {
+    const factor = 10 ** digits;
+    return Math.round(value * factor) / factor;
+  }
+
+  function enumValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const values = config.inputSchema.properties[name].enum;
+    if (typeof value !== "string" || !values.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    return value;
+  }
+
+  function integerValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const schema = config.inputSchema.properties[name];
+    if (!Number.isInteger(value)) {
+      throw new TypeError(`${name} must be an integer.`);
+    }
+    if (schema.enum && !schema.enum.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    if ((schema.minimum !== undefined && value < schema.minimum) ||
+        (schema.maximum !== undefined && value > schema.maximum)) {
+      throw new RangeError(`${name} is outside the supported range.`);
+    }
+    return value;
+  }
+
+  function booleanValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    if (typeof input[name] !== "boolean") {
+      throw new TypeError(`${name} must be a boolean.`);
+    }
+    return input[name];
+  }
+
+  function plan(input) {
+    const measurement = enumValue(input, "measurement");
+    const dailyMinutes = integerValue(input, "daily_minutes");
+    const daysPerWeek = integerValue(input, "days_per_week");
+    const blockMinutes = integerValue(input, "block_minutes");
+    const blockDays = integerValue(input, "block_days_per_week");
+    const blockWindow = enumValue(input, "block_window");
+    const essentialReviewed = booleanValue(input, "essential_access_reviewed");
+    if ((blockMinutes === 0) !== (blockDays === 0)) {
+      throw new RangeError(
+        "block_minutes and block_days_per_week must both be zero or both be positive.");
+    }
+    const annualObservedMinutes = dailyMinutes * daysPerWeek / 7 * 365;
+    const weeklyScheduledBlockMinutes = blockMinutes * blockDays;
+    const annualScheduledBlockMinutes = weeklyScheduledBlockMinutes * 52;
+    return {
+      selected_inputs: {
+        measurement,
+        measurement_label: config.labels.measurement[measurement],
+        daily_minutes: dailyMinutes,
+        days_per_week: daysPerWeek,
+        block_minutes: blockMinutes,
+        block_days_per_week: blockDays,
+        block_window: blockWindow,
+        block_window_label: config.labels.block_window[blockWindow],
+        essential_access_reviewed: essentialReviewed
+      },
+      observed_pattern_annual_equivalent: {
+        formula: "daily_minutes * days_per_week / 7 * 365",
+        minutes: round(annualObservedMinutes, 2),
+        hours: round(annualObservedMinutes / 60),
+        full_24_hour_days: round(annualObservedMinutes / 1440),
+        source_is_self_entered_not_device_reading: true
+      },
+      scheduled_block_plan: {
+        formula: "block_minutes * block_days_per_week * 52",
+        minutes_per_week: weeklyScheduledBlockMinutes,
+        minutes_across_52_weeks: annualScheduledBlockMinutes,
+        hours_across_52_weeks: round(annualScheduledBlockMinutes / 60),
+        is_not_a_saved_time_or_outcome_claim: true
+      },
+      reversible_preflight: [
+        essentialReviewed ? config.essentialYes : config.essentialNo,
+        ...config.windowSteps[blockWindow]
+      ],
+      observed_pattern_boundary: config.observedBoundary,
+      scheduled_block_boundary: config.blockBoundary,
+      scope_boundary: config.scopeBoundary
+    };
+  }
+
+  function validateInput(input) {
+    if (input === null || typeof input !== "object" || Array.isArray(input)) {
+      throw new TypeError("WebMCP input must be an object.");
+    }
+    const allowed = new Set(Object.keys(config.inputSchema.properties));
+    for (const name of Object.keys(input)) {
+      if (!allowed.has(name)) {
+        throw new RangeError(`${name} is not a supported input.`);
+      }
+    }
+    return plan(input);
+  }
+
+  function render() {
+    const result = plan({
+      measurement: fields.measurement.value,
+      daily_minutes: Number(fields.daily_minutes.value),
+      days_per_week: Number(fields.days_per_week.value),
+      block_minutes: Number(fields.block_minutes.value),
+      block_days_per_week: Number(fields.block_days_per_week.value),
+      block_window: fields.block_window.value,
+      essential_access_reviewed: fields.essential_access_reviewed.checked
+    });
+    output.observedHours.textContent =
+      String(result.observed_pattern_annual_equivalent.hours);
+    output.observedDays.textContent =
+      String(result.observed_pattern_annual_equivalent.full_24_hour_days);
+    output.blockWeek.textContent =
+      String(result.scheduled_block_plan.minutes_per_week);
+    output.blockYear.textContent =
+      String(result.scheduled_block_plan.hours_across_52_weeks);
+    output.measurement.textContent =
+      result.selected_inputs.measurement_label;
+    output.plan.textContent = result.reversible_preflight.join(" ");
+  }
+
+  async function registerWebMcp() {
+    if (!document.modelContext?.registerTool) return;
+    await document.modelContext.registerTool({
+      name: "plan_private_screen_time_block",
+      description: config.toolDescription,
+      inputSchema: config.inputSchema,
+      annotations: {readOnlyHint: true, untrustedContentHint: false},
+      execute: async (input) => {
+        const plan = validateInput(input);
+        const result = {
+          result_type: "private_screen_time_and_block_plan",
+          screen_time_apps_accounts_contacts_not_accessed: true,
+          scheduled_block_is_not_saved_time: true,
+          no_focus_health_or_productivity_prediction: true,
+          plan,
+          preflight_checklist: config.preflightChecklist,
+          optional_free_planner: config.freePlanner,
+          official_sources: config.officialSources,
+          webmcp_preview_source: config.webmcpSource
+        };
+        if (config.optionalApp) {
+          result.optional_lockhour_pro = config.optionalApp;
+        }
+        return JSON.stringify(result);
+      }
+    });
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    render();
+  });
+  for (const field of Object.values(fields)) {
+    field.addEventListener("change", render);
+  }
+  render();
+  registerWebMcp().catch((error) =>
+    console.error("WebMCP tool registration failed.", error));
+})();
+</script>
+</body>
+</html>

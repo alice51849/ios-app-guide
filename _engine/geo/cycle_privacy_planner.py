@@ -34,7 +34,7 @@ ACCOUNTS = ("no-account", "optional", "any")
 USE_CASES = ("basic-log", "pattern-review", "appointment-summary")
 NOTIFICATIONS = ("none", "limited", "period-estimate")
 SHARING = ("none", "essential-only", "unknown")
-ALT_LOCALES = ("en", "es-ES", "pt-BR", "de-DE", "fr-FR", "ja", "ko", "zh-Hant", "zh-Hans")
+ALT_LOCALES = ("en", "es-ES", "pt-BR", "de-DE", "fr-FR", "ja", "ko", "zh-Hant", "zh-Hans", "vi", "th", "id", "tr")
 
 
 def _copy(
@@ -285,6 +285,90 @@ for _locale, _data in {
         footer="Préférences privées uniquement · aucune donnée de santé · vérifier avant saisie",
         features=("Gratuit · calcul local · aucune donnée de santé", "Aucune date, symptôme ou historique", "Aucun nom, compte ou texte libre", "Aucun téléversement, analyse ou publicité", "Compare les exigences; ne certifie aucune app"),
         inline="Comparer la confidentialité avant de choisir un suivi", index=("Liste privée de choix d'un suivi de cycle", "Définissez un minimum de données sans saisir d'informations de cycle ou de santé."),
+    ),
+    "vi": dict(
+        title="Danh sách riêng tư để chọn ứng dụng theo dõi chu kỳ | Không dữ liệu sức khỏe", tools="Công cụ miễn phí", switch="English",
+        heading="Danh sách riêng tư để chọn ứng dụng theo dõi chu kỳ", lead="So sánh các yêu cầu quyền riêng tư mà không nhập ngày, triệu chứng, tiền sử chu kỳ, hoạt động thân mật, ý định mang thai hay dữ liệu cá nhân.",
+        planner="Xác định yêu cầu quyền riêng tư tối thiểu của bạn",
+        labels=("Lưu trữ", "Tài khoản", "Mục đích chung", "Thông báo", "Chia sẻ với bên thứ ba", "Bắt buộc khóa màn hình", "Cần xuất dữ liệu"),
+        options=(("Chỉ trên thiết bị", "Đồng bộ mã hóa", "Cả hai"), ("Không tài khoản", "Tài khoản tùy chọn", "Bất kỳ"), ("Ghi kinh nguyệt cơ bản", "Xem xu hướng", "Tóm tắt cho buổi khám"), ("Không có", "Nhắc hạn chế", "Ước tính kỳ kinh"), ("Không", "Chỉ thiết yếu", "Không rõ")),
+        yes_no=("Có", "Không"), update="Tạo danh sách quyền riêng tư",
+        results=("Hồ sơ mức độ sẵn sàng", "Thiết lập dữ liệu tối thiểu", "Câu hỏi cần kiểm", "Lời khuyên về thông báo và xuất", "Giới hạn an toàn"),
+        readiness=("Tối giản nghiêm ngặt", "Dữ liệu tối giản", "Linh hoạt kèm kiểm tra", "Xem lại trước khi chọn"),
+        words=("Ưu tiên chỉ lưu trên thiết bị và kiểm tra bản sao lưu.", "Kiểm tra mã hóa, khôi phục và xóa.", "So sánh dùng cục bộ và đồng bộ.", "Loại bỏ ứng dụng bắt buộc tài khoản.", "Ưu tiên dùng không cần tài khoản.", "Nếu có tài khoản, xem thu thập và xóa.", "Chỉ ghi mức tối thiểu cần thiết.", "Xem xu hướng chung; mọi dự đoán chỉ là ước tính.", "Chỉ xuất bản tóm tắt cần cho buổi khám.", "Tắt thông báo chu kỳ.", "Chỉ dùng nhắc kín đáo do bạn chọn.", "Coi mọi thông báo kỳ kinh là ước tính.", "Không cho phép bên thứ ba.", "Giới hạn mục đích, dữ liệu và thời hạn.", "Làm rõ ai nhận dữ liệu và theo chính sách nào.", "Yêu cầu bảo vệ thiết bị hoặc ứng dụng.", "Cân nhắc lại khóa màn hình vì dữ liệu nhạy cảm.", "Kiểm tra định dạng, trường, đích đến và xóa an toàn.", "Không xuất cho đến khi có nhu cầu cụ thể."),
+        questions=("Dữ liệu lưu ở đâu và được mã hóa thế nào?", "Có hoạt động không cần tài khoản và xóa được hết không?", "Bên thứ ba nào nhận dữ liệu và có thu hồi được quyền không?", "Thông báo, bản xuất và sao lưu hiển thị gì?"),
+        safety="Không ứng dụng nào bảo đảm quyền riêng tư tuyệt đối. Hãy xem chính sách, quyền, sao lưu, xuất và xóa trước khi thêm dữ liệu thật.",
+        medical="Dự đoán là ước tính, không phải biện pháp tránh thai hay chẩn đoán. Đừng dùng để tránh thai; nếu lo ngại về sức khỏe hãy hỏi chuyên gia y tế có chuyên môn.",
+        source=("Bối cảnh chính thức của Apple, không phải sự chứng thực", "Apple: dữ liệu, ước tính, thông báo, xuất và giới hạn của Cycle Tracking", "Quyền riêng tư của Apple Health: mã hóa, iCloud, xuất và bên thứ ba", "Apple chỉ mô tả Health và Cycle Tracking của Apple, không mô tả Cyca và không khuyến nghị danh sách này hay Cyca."),
+        web=("Bản xem trước API mệnh lệnh WebMCP của Chrome", "Tạo danh sách xác định từ các tùy chọn có giới hạn, phi y tế; không nhận ngày, tiền sử, triệu chứng, hoạt động thân mật, ý định mang thai, tên, văn bản tự do, tệp hay dữ liệu cá nhân."),
+        app=("Muốn so sánh một lựa chọn hiện có?", "Cyca là tùy chọn. Định vị đã xác minh của nó là riêng tư, trên thiết bị và trả một lần. Hãy xem trang hiện tại để biết tình trạng, tính năng và quyền riêng tư chính xác.", "Xem Cyca trên App Store"),
+        faq=("Câu hỏi về quyền riêng tư", (("Trang này có nhận dữ liệu chu kỳ không?", "Không; chỉ nhận các tùy chọn có giới hạn."), ("Nó có chứng nhận một ứng dụng không?", "Không; nó không kiểm định hay chấm điểm ứng dụng."), ("Dự đoán có dùng làm biện pháp tránh thai không?", "Không; đó chỉ là ước tính."), ("Có bảo đảm quyền riêng tư không?", "Không; hãy kiểm tra chính sách và kiểm soát hiện tại."))),
+        footer="Chỉ tùy chọn riêng tư · không dữ liệu sức khỏe · kiểm tra trước khi ghi",
+        features=("Miễn phí · tính tại chỗ · không dữ liệu sức khỏe", "Không ngày, triệu chứng hay tiền sử", "Không tên, tài khoản hay văn bản tự do", "Không tải lên, phân tích hay quảng cáo", "So sánh tùy chọn; không chứng nhận ứng dụng nào"),
+        inline="So sánh yêu cầu quyền riêng tư trước khi chọn ứng dụng theo dõi chu kỳ", index=("Danh sách riêng tư chọn ứng dụng theo dõi chu kỳ", "Tạo yêu cầu dữ liệu tối thiểu mà không nhập thông tin chu kỳ hay sức khỏe."),
+    ),
+    "th": dict(
+        title="เช็กลิสต์ส่วนตัวสำหรับเลือกแอปติดตามรอบเดือน | ไม่มีข้อมูลสุขภาพ", tools="เครื่องมือฟรี", switch="English",
+        heading="เช็กลิสต์ส่วนตัวสำหรับเลือกแอปติดตามรอบเดือน", lead="เปรียบเทียบความต้องการด้านความเป็นส่วนตัวโดยไม่กรอกวันที่ อาการ ประวัติรอบเดือน กิจกรรมใกล้ชิด ความตั้งใจตั้งครรภ์ หรือข้อมูลส่วนบุคคล",
+        planner="กำหนดข้อกำหนดความเป็นส่วนตัวขั้นต่ำของคุณ",
+        labels=("การจัดเก็บ", "บัญชี", "การใช้งานทั่วไป", "การแจ้งเตือน", "การแบ่งปันกับบุคคลที่สาม", "ต้องล็อกหน้าจอ", "ต้องส่งออกข้อมูล"),
+        options=(("เฉพาะบนเครื่อง", "ซิงก์แบบเข้ารหัส", "อย่างใดก็ได้"), ("ไม่มีบัญชี", "บัญชีเป็นทางเลือก", "แบบใดก็ได้"), ("บันทึกประจำเดือนพื้นฐาน", "ทบทวนรูปแบบ", "สรุปสำหรับการนัดพบแพทย์"), ("ไม่มี", "เตือนแบบจำกัด", "ประมาณการรอบเดือน"), ("ไม่มี", "เฉพาะที่จำเป็น", "ไม่ทราบ")),
+        yes_no=("ใช่", "ไม่"), update="สร้างเช็กลิสต์ความเป็นส่วนตัว",
+        results=("โปรไฟล์ความพร้อม", "การตั้งค่าข้อมูลน้อยที่สุด", "คำถามที่ต้องตรวจ", "คำแนะนำเรื่องการแจ้งเตือนและการส่งออก", "ขอบเขตความปลอดภัย"),
+        readiness=("ลดข้อมูลอย่างเข้มงวด", "ลดข้อมูลแล้ว", "ยืดหยุ่นพร้อมการตรวจสอบ", "ทบทวนก่อนเลือก"),
+        words=("เลือกเก็บเฉพาะบนเครื่องและตรวจการสำรองข้อมูล", "ตรวจการเข้ารหัส การกู้คืน และการลบ", "เปรียบเทียบการใช้แบบเฉพาะเครื่องและแบบซิงก์", "ตัดแอปที่บังคับมีบัญชีออก", "เลือกใช้แบบไม่ต้องมีบัญชี", "ถ้ามีบัญชี ให้ตรวจการเก็บและการลบ", "บันทึกเฉพาะเท่าที่จำเป็นน้อยที่สุด", "ดูรูปแบบโดยรวม ทุกการทำนายเป็นเพียงประมาณการ", "ส่งออกเฉพาะสรุปที่จำเป็นสำหรับการนัด", "ปิดการแจ้งเตือนรอบเดือน", "ใช้เฉพาะการเตือนที่ไม่เปิดเผยซึ่งคุณเลือกเอง", "ถือว่าการแจ้งเตือนรอบเดือนทุกครั้งเป็นประมาณการ", "อย่าอนุญาตบุคคลที่สาม", "จำกัดวัตถุประสงค์ ข้อมูล และระยะเวลา", "ทำให้ชัดเจนว่าใครรับข้อมูลและตามนโยบายใด", "กำหนดให้มีการป้องกันเครื่องหรือแอป", "พิจารณาการล็อกใหม่เพราะข้อมูลอ่อนไหว", "ตรวจรูปแบบ ฟิลด์ ปลายทาง และการลบอย่างปลอดภัย", "อย่าส่งออกจนกว่าจะมีความจำเป็นเฉพาะเจาะจง"),
+        questions=("ข้อมูลเก็บที่ไหนและเข้ารหัสอย่างไร?", "ใช้งานได้โดยไม่มีบัญชีและลบได้ทั้งหมดไหม?", "บุคคลที่สามรายใดได้รับข้อมูลและเพิกถอนสิทธิ์ได้ไหม?", "การแจ้งเตือน การส่งออก และการสำรองแสดงอะไร?"),
+        safety="ไม่มีแอปใดรับประกันความเป็นส่วนตัวสัมบูรณ์ โปรดตรวจนโยบาย สิทธิ์ การสำรอง การส่งออก และการลบก่อนเพิ่มข้อมูลจริง",
+        medical="การทำนายเป็นประมาณการ ไม่ใช่การคุมกำเนิดหรือการวินิจฉัย อย่าใช้เพื่อหลีกเลี่ยงการตั้งครรภ์ หากกังวลเรื่องสุขภาพให้ปรึกษาผู้เชี่ยวชาญทางการแพทย์ที่มีคุณสมบัติ",
+        source=("บริบททางการของ Apple ไม่ใช่การรับรอง", "Apple: ข้อมูล ประมาณการ การแจ้งเตือน การส่งออก และขอบเขตของ Cycle Tracking", "ความเป็นส่วนตัวของ Apple Health: การเข้ารหัส iCloud การส่งออก และบุคคลที่สาม", "Apple อธิบายเฉพาะ Health และ Cycle Tracking ของ Apple ไม่ได้อธิบาย Cyca และไม่แนะนำเช็กลิสต์นี้หรือ Cyca"),
+        web=("ตัวอย่าง API เชิงคำสั่ง WebMCP ของ Chrome", "สร้างเช็กลิสต์แบบกำหนดแน่นอนจากตัวเลือกที่มีขอบเขตและไม่ใช่ทางการแพทย์ ไม่รับวันที่ ประวัติ อาการ กิจกรรมใกล้ชิด ความตั้งใจตั้งครรภ์ ชื่อ ข้อความอิสระ ไฟล์ หรือข้อมูลส่วนบุคคล"),
+        app=("อยากเปรียบเทียบตัวเลือกที่มีอยู่ไหม?", "Cyca เป็นทางเลือก การวางตำแหน่งที่ยืนยันแล้วคือส่วนตัว อยู่บนเครื่อง และจ่ายครั้งเดียว โปรดดูหน้าปัจจุบันเพื่อความพร้อม ฟีเจอร์ และความเป็นส่วนตัวที่แน่นอน", "ดู Cyca บน App Store"),
+        faq=("คำถามเรื่องความเป็นส่วนตัว", (("หน้านี้รับข้อมูลรอบเดือนไหม?", "ไม่ รับเพียงตัวเลือกที่มีขอบเขต"), ("รับรองแอปไหม?", "ไม่ ไม่ตรวจสอบหรือให้คะแนนแอป"), ("การทำนายใช้คุมกำเนิดได้ไหม?", "ไม่ เป็นเพียงประมาณการ"), ("รับประกันความเป็นส่วนตัวไหม?", "ไม่ ตรวจนโยบายและการควบคุมปัจจุบัน"))),
+        footer="เฉพาะความชอบส่วนตัว · ไม่มีข้อมูลสุขภาพ · ตรวจก่อนบันทึก",
+        features=("ฟรี · คำนวณในเครื่อง · ไม่มีข้อมูลสุขภาพ", "ไม่มีวันที่ อาการ หรือประวัติ", "ไม่มีชื่อ บัญชี หรือข้อความอิสระ", "ไม่อัปโหลด วิเคราะห์ หรือโฆษณา", "เปรียบเทียบความต้องการ ไม่รับรองแอปใด"),
+        inline="เปรียบเทียบข้อกำหนดความเป็นส่วนตัวก่อนเลือกแอปติดตามรอบเดือน", index=("เช็กลิสต์ส่วนตัวเลือกแอปติดตามรอบเดือน", "สร้างข้อกำหนดข้อมูลน้อยที่สุดโดยไม่กรอกข้อมูลรอบเดือนหรือสุขภาพ"),
+    ),
+    "id": dict(
+        title="Daftar Periksa Privasi untuk Memilih Pelacak Siklus | Tanpa Data Kesehatan", tools="Alat gratis", switch="English",
+        heading="Daftar periksa privasi untuk memilih pelacak siklus", lead="Bandingkan preferensi privasi tanpa memasukkan tanggal, gejala, riwayat siklus, aktivitas intim, niat kehamilan, atau data pribadi.",
+        planner="Tetapkan persyaratan privasi minimum Anda",
+        labels=("Penyimpanan", "Akun", "Tujuan umum", "Notifikasi", "Berbagi dengan pihak ketiga", "Kunci layar wajib", "Perlu ekspor"),
+        options=(("Hanya di perangkat", "Sinkronisasi terenkripsi", "Keduanya"), ("Tanpa akun", "Akun opsional", "Apa pun"), ("Catatan menstruasi dasar", "Tinjauan pola", "Ringkasan untuk janji temu"), ("Tidak ada", "Pengingat terbatas", "Perkiraan menstruasi"), ("Tidak ada", "Hanya yang penting", "Tidak diketahui")),
+        yes_no=("Ya", "Tidak"), update="Buat daftar periksa privasi",
+        results=("Profil kesiapan", "Pengaturan data minimum", "Pertanyaan untuk diperiksa", "Saran notifikasi dan ekspor", "Batas keamanan"),
+        readiness=("Minimalisasi ketat", "Data diminimalkan", "Fleksibel dengan pemeriksaan", "Tinjau sebelum memilih"),
+        words=("Utamakan penyimpanan hanya di perangkat dan periksa cadangan.", "Periksa enkripsi, pemulihan, dan penghapusan.", "Bandingkan penggunaan lokal dan tersinkron.", "Singkirkan aplikasi yang mewajibkan akun.", "Utamakan penggunaan tanpa akun.", "Jika ada akun, periksa pengumpulan dan penghapusan.", "Catat hanya yang minimum diperlukan.", "Lihat pola umum; setiap prediksi hanyalah perkiraan.", "Ekspor hanya ringkasan yang diperlukan untuk janji temu.", "Matikan notifikasi siklus.", "Gunakan hanya pengingat diskret pilihan Anda.", "Perlakukan setiap notifikasi menstruasi sebagai perkiraan.", "Jangan izinkan pihak ketiga.", "Batasi tujuan, data, dan durasi.", "Perjelas siapa penerima data dan menurut kebijakan mana.", "Wajibkan perlindungan perangkat atau aplikasi.", "Pertimbangkan ulang kunci layar karena data sensitif.", "Periksa format, bidang, tujuan, dan penghapusan aman.", "Jangan ekspor sampai ada kebutuhan spesifik."),
+        questions=("Di mana data disimpan dan bagaimana dienkripsi?", "Apakah berfungsi tanpa akun dan bisa hapus semua?", "Pihak ketiga mana yang menerima data dan bisakah akses dicabut?", "Apa yang tampil di notifikasi, ekspor, dan cadangan?"),
+        safety="Tidak ada pelacak yang menjamin privasi mutlak. Tinjau kebijakan, izin, cadangan, ekspor, dan penghapusan sebelum menambahkan data nyata.",
+        medical="Prediksi adalah perkiraan, bukan kontrasepsi atau diagnosis. Jangan gunakan untuk mencegah kehamilan; jika khawatir soal kesehatan, konsultasikan tenaga kesehatan berkualifikasi.",
+        source=("Konteks resmi Apple, bukan dukungan", "Apple: data, perkiraan, notifikasi, ekspor, dan batas Cycle Tracking", "Privasi Apple Health: enkripsi, iCloud, ekspor, dan pihak ketiga", "Apple hanya mendokumentasikan Health dan Cycle Tracking Apple, bukan Cyca, dan tidak merekomendasikan daftar ini atau Cyca."),
+        web=("Pratinjau API imperatif WebMCP Chrome", "Membuat daftar periksa deterministik dari preferensi terbatas dan non-medis; tidak menerima tanggal, riwayat, gejala, aktivitas intim, niat kehamilan, nama, teks bebas, berkas, atau data pribadi."),
+        app=("Ingin membandingkan satu opsi yang ada?", "Cyca bersifat opsional. Posisi terverifikasinya adalah privat, di perangkat, dan sekali bayar. Periksa halaman terkini untuk ketersediaan, fitur, dan privasi pastinya.", "Lihat Cyca di App Store"),
+        faq=("Pertanyaan privasi", (("Apakah halaman ini menerima data siklus?", "Tidak; hanya preferensi terbatas."), ("Apakah ini menyertifikasi aplikasi?", "Tidak; ia tidak mengaudit atau menilai aplikasi."), ("Apakah prediksi berfungsi sebagai kontrasepsi?", "Tidak; itu hanya perkiraan."), ("Apakah privasi dijamin?", "Tidak; periksa kebijakan dan kontrol terkini."))),
+        footer="Hanya preferensi privat · tanpa data kesehatan · periksa sebelum mencatat",
+        features=("Gratis · hitung lokal · tanpa data kesehatan", "Tanpa tanggal, gejala, atau riwayat", "Tanpa nama, akun, atau teks bebas", "Tanpa unggahan, analitik, atau iklan", "Membandingkan preferensi; tidak menyertifikasi aplikasi mana pun"),
+        inline="Bandingkan persyaratan privasi sebelum memilih pelacak siklus", index=("Daftar periksa privasi pemilihan pelacak siklus", "Buat persyaratan data minimum tanpa memasukkan info siklus atau kesehatan."),
+    ),
+    "tr": dict(
+        title="Döngü Takipçisi Seçmek İçin Özel Kontrol Listesi | Sağlık Verisi Yok", tools="Ücretsiz araçlar", switch="English",
+        heading="Döngü takipçisi seçmek için özel kontrol listesi", lead="Tarih, belirti, döngü geçmişi, mahrem etkinlik, gebelik niyeti veya kişisel veri girmeden gizlilik tercihlerini karşılaştırın.",
+        planner="Asgari gizlilik gereksinimlerinizi belirleyin",
+        labels=("Depolama", "Hesap", "Genel amaç", "Bildirimler", "Üçüncü taraflarla paylaşım", "Ekran kilidi zorunlu", "Dışa aktarma gerekli"),
+        options=(("Yalnızca cihazda", "Şifreli eşitleme", "Herhangi biri"), ("Hesap yok", "Hesap isteğe bağlı", "Herhangi biri"), ("Temel regl kaydı", "Örüntü incelemesi", "Randevu için özet"), ("Yok", "Sınırlı hatırlatma", "Regl tahmini"), ("Yok", "Yalnızca zorunlu", "Bilinmiyor")),
+        yes_no=("Evet", "Hayır"), update="Gizlilik kontrol listesi oluştur",
+        results=("Hazırlık profili", "Asgari veri kurulumu", "Kontrol edilecek sorular", "Bildirim ve dışa aktarma önerisi", "Güvenlik sınırı"),
+        readiness=("Sıkı en aza indirme", "Veri en aza indirildi", "Kontrollerle esnek", "Seçmeden önce gözden geçir"),
+        words=("Yalnızca cihazda saklamayı tercih edin ve yedekleri kontrol edin.", "Şifreleme, kurtarma ve silmeyi kontrol edin.", "Yerel ve eşitlenmiş kullanımı karşılaştırın.", "Hesap zorunlu uygulamaları eleyin.", "Hesapsız kullanımı tercih edin.", "Hesap varsa toplamayı ve silmeyi inceleyin.", "Yalnızca gereken asgari kaydı tutun.", "Örüntülere genel bakın; her tahmin bir tahmindir.", "Yalnızca randevu için gereken özeti dışa aktarın.", "Döngü bildirimlerini kapatın.", "Yalnızca kendi seçtiğiniz gizli hatırlatmaları kullanın.", "Her regl bildirimini bir tahmin olarak görün.", "Üçüncü taraflara izin vermeyin.", "Amacı, veriyi ve süreyi sınırlayın.", "Veriyi kimin, hangi politikayla aldığını netleştirin.", "Cihaz veya uygulama koruması isteyin.", "Hassas veri nedeniyle kilidi yeniden değerlendirin.", "Biçimi, alanları, hedefi ve güvenli silmeyi kontrol edin.", "Belirli bir gereksinim olmadan dışa aktarmayın."),
+        questions=("Veriler nerede saklanır ve nasıl şifrelenir?", "Hesapsız çalışır mı ve her şey silinebilir mi?", "Hangi üçüncü taraflar veri alır ve erişim geri alınabilir mi?", "Bildirimlerde, dışa aktarmalarda ve yedeklerde ne görünür?"),
+        safety="Hiçbir takipçi mutlak gizlilik garanti etmez. Gerçek veri eklemeden önce politikayı, izinleri, yedekleri, dışa aktarmayı ve silmeyi inceleyin.",
+        medical="Tahminler birer tahmindir, doğum kontrolü veya teşhis değildir. Gebeliği önlemek için kullanmayın; bir sağlık endişeniz varsa nitelikli bir sağlık uzmanına danışın.",
+        source=("Resmi Apple bağlamı, bir onay değil", "Apple: Cycle Tracking verileri, tahminleri, bildirimleri, dışa aktarımı ve sınırları", "Apple Health gizliliği: şifreleme, iCloud, dışa aktarma ve üçüncü taraflar", "Apple yalnızca Apple Health ve Cycle Tracking'i belgeler, Cyca'yı değil ve ne bu listeyi ne de Cyca'yı önerir."),
+        web=("Chrome zorunlu WebMCP API önizlemesi", "Sınırlı ve tıbbi olmayan tercihlerden belirlenimci bir kontrol listesi oluşturur; tarih, geçmiş, belirti, mahrem etkinlik, gebelik niyeti, ad, serbest metin, dosya veya kişisel veri kabul etmez."),
+        app=("Mevcut bir seçeneği karşılaştırmak ister misiniz?", "Cyca isteğe bağlıdır. Doğrulanmış konumu özel, cihazda ve tek seferlik ödemedir. Kesin kullanılabilirlik, özellikler ve gizlilik için güncel sayfaya bakın.", "Cyca'yı App Store'da görüntüleyin"),
+        faq=("Gizlilik soruları", (("Bu sayfa döngü verisi alıyor mu?", "Hayır; yalnızca sınırlı tercihler."), ("Bir uygulamayı sertifikalıyor mu?", "Hayır; hiçbir uygulamayı denetlemez veya puanlamaz."), ("Tahmin bir doğum kontrolü mü?", "Hayır; yalnızca bir tahmindir."), ("Gizlilik garanti mi?", "Hayır; güncel politikaları ve denetimleri kontrol edin."))),
+        footer="Yalnızca özel tercihler · sağlık verisi yok · kaydetmeden önce kontrol edin",
+        features=("Ücretsiz · yerel hesap · sağlık verisi yok", "Tarih, belirti veya geçmiş yok", "Ad, hesap veya serbest metin yok", "Yükleme, analitik veya reklam yok", "Tercihleri karşılaştırır; hiçbir uygulamayı sertifikalamaz"),
+        inline="Bir döngü takipçisi seçmeden önce gizlilik gereksinimlerini karşılaştırın", index=("Döngü takipçisi seçimi için özel kontrol listesi", "Döngü veya sağlık bilgisi girmeden asgari veri gereksinimleri oluşturun."),
     ),
 }.items():
     _w = _data.pop("words")
@@ -589,6 +673,10 @@ def update_one_index(path: Path, locale: str) -> bool:
     updated = existing.sub("", text)
     marker = '<section class="wrap grid">'
     if marker not in updated:
+        # Lite-generated hub (vi/th/id/tr) uses a different structure and is
+        # rebuilt by gen_tools_index_lite; skip rather than fail.
+        if '<div class="grid">' in updated:
+            return False
         raise RuntimeError(f"{path} is missing its tools grid")
     updated = updated.replace(marker, marker + index_card(locale), 1)
     if updated == text:

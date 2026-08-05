@@ -34,7 +34,7 @@ ACCOUNTS = ("no-account", "optional", "any")
 USE_CASES = ("basic-log", "pattern-review", "appointment-summary")
 NOTIFICATIONS = ("none", "limited", "period-estimate")
 SHARING = ("none", "essential-only", "unknown")
-ALT_LOCALES = ("en", "es-ES", "pt-BR", "de-DE", "fr-FR", "ja", "ko", "zh-Hant", "zh-Hans", "vi", "th", "id", "tr")
+ALT_LOCALES = ("en", "es-ES", "pt-BR", "de-DE", "fr-FR", "ja", "ko", "zh-Hant", "zh-Hans", "vi", "th", "id", "tr", "hi", "ms", "ru")
 
 
 def _copy(

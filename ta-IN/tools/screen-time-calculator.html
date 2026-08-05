@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ta-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>தனியுரிமை திரை நேரம் &amp; ஆப் தடுப்புத் திட்டமிடி | வெளிப்படையான கணிதம்</title>
+<meta name="description" content="நீங்களே உள்ளிட்ட திரை நேர முறையை வெளிப்படையான ஆண்டு சமான கணக்காகவும், தனியான மீளக்கூடிய ஆப் தடுப்பு அட்டவணையாகவும் மாற்றுங்கள்; சாதனத் தரவை அணுகாமல்.">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/ta-IN/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/es-ES/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="fr-FR" href="https://alice51849.github.io/ios-app-guide/fr-FR/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="vi" href="https://alice51849.github.io/ios-app-guide/vi/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="th" href="https://alice51849.github.io/ios-app-guide/th/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="id" href="https://alice51849.github.io/ios-app-guide/id/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="tr" href="https://alice51849.github.io/ios-app-guide/tr/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="hi" href="https://alice51849.github.io/ios-app-guide/hi/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="ms" href="https://alice51849.github.io/ios-app-guide/ms/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="ru" href="https://alice51849.github.io/ios-app-guide/ru/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="uk" href="https://alice51849.github.io/ios-app-guide/uk/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="pl" href="https://alice51849.github.io/ios-app-guide/pl/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="ta-IN" href="https://alice51849.github.io/ios-app-guide/ta-IN/tools/screen-time-calculator.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/screen-time-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="தனியுரிமை திரை நேரம் &amp; ஆப் தடுப்புத் திட்டமிடி">
+<meta property="og:description" content="நீங்களே உள்ளிட்ட திரை நேர முறையை வெளிப்படையான ஆண்டு சமான கணக்காகவும், தனியான மீளக்கூடிய ஆப் தடுப்பு அட்டவணையாகவும் மாற்றுங்கள்; சாதனத் தரவை அணுகாமல்.">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/ta-IN/tools/screen-time-calculator.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#17243a;--muted:#627087;--line:#dce3ee;--paper:#fff;--bg:#eef4fb;--navy:#23466f;--blue:#4b7fb8;--soft:#e8f1fc;--warn:#fff6d9;--shadow:0 22px 60px rgba(31,61,95,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,#fff 0,var(--bg) 55%,#e0e9f4 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:#315f93}.wrap{width:min(1120px,calc(100% - 30px));margin:auto}.top{position:sticky;top:0;z-index:8;background:#fffffff2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}.links{display:flex;gap:15px;overflow-x:auto}
+.hero{padding:64px 0 30px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--navy);white-space:nowrap}.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}.hero h1{font-size:clamp(34px,6vw,62px);line-height:1.04;letter-spacing:-.035em;margin:.3em 0 .22em;white-space:nowrap;overflow-x:auto}.lead{font-size:clamp(17px,2.2vw,21px);color:var(--muted);margin:0;white-space:nowrap;overflow-x:auto}.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.planner,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}.planner{padding:clamp(20px,4vw,36px);margin:16px auto 30px}.planner h2,.card h2,.app-card h2{font-size:clamp(24px,3.6vw,34px);line-height:1.14;margin:0;white-space:nowrap;overflow-x:auto}.intro{color:var(--muted);white-space:nowrap;overflow-x:auto}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px}.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--navy);margin-bottom:6px;white-space:nowrap;overflow-x:auto}select,input,button{font:inherit}select,input[type=number]{width:100%;min-height:46px;border:1px solid #cbd6e3;border-radius:13px;background:#fff;color:var(--ink);padding:9px 11px}.toggle{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:14px;padding:11px 13px;background:#fff;font-weight:760;white-space:nowrap;overflow-x:auto}.toggle input{inline-size:20px;block-size:20px;flex:0 0 auto}.button{border:0;border-radius:999px;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;text-decoration:none;font-weight:850;padding:11px 17px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(35,70,111,.2)}
+.results{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:11px;margin-top:22px}.result{background:var(--soft);border:1px solid #cbdcf0;border-radius:17px;padding:14px;min-width:0}.result strong,.result span{display:block;white-space:nowrap;overflow-x:auto}.result strong{font-size:12px;color:#456788;text-transform:uppercase;letter-spacing:.04em}.result span{font-size:15px;color:#2e4b68;font-weight:760;margin-top:5px}.note{background:var(--warn);border:1px solid #ead9a7;border-radius:16px;padding:13px 15px;margin:14px 0 0;white-space:nowrap;overflow-x:auto}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:30px}.card,.app-card{padding:clamp(20px,3.5vw,30px)}.card.wide{grid-column:1/-1}.card p,.card li,.app-card p,.faq details p,.faq summary{white-space:nowrap;overflow-x:auto}.card ul,.card ol{padding-left:22px}.card li{margin:8px 0}.source-list a{overflow-wrap:anywhere}.app-card{margin:0 auto 38px;background:linear-gradient(135deg,#fbfdff,#e7f0fa)}.app-card .button{display:inline-flex;margin-top:5px}.faq{margin-bottom:30px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+.footer{background:var(--navy);color:#eef4fb;text-align:center;padding:27px 0;white-space:nowrap;overflow-x:auto}
+@media(max-width:960px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.controls,.results{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1120px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{.top,.hero,.controls,.button,.app-card,.footer{display:none!important}body{background:#fff}.planner,.card{box-shadow:none;break-inside:avoid}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"தனியுரிமை திரை நேரம் & ஆப் தடுப்புத் திட்டமிடி","description":"நீங்களே உள்ளிட்ட திரை நேர முறையை வெளிப்படையான ஆண்டு சமான கணக்காகவும், தனியான மீளக்கூடிய ஆப் தடுப்பு அட்டவணையாகவும் மாற்றுங்கள்; சாதனத் தரவை அணுகாமல்.","url":"https://alice51849.github.io/ios-app-guide/ta-IN/tools/screen-time-calculator.html","inLanguage":"ta-IN","datePublished":"2026-07-15","dateModified":"2026-07-15","applicationCategory":"ProductivityApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["No Screen Time or installed-app access","Transparent annual-equivalent observed-pattern math","Separate scheduled-block math","Essential-access preflight","No saved-time, focus, health or productivity prediction"],"citation":["https://support.apple.com/guide/iphone/get-started-with-screen-time-iphbfa595995/ios","https://support.apple.com/guide/iphone/set-schedules-with-screen-time-iphb0c7313c9/ios","https://support.apple.com/guide/iphone/set-up-a-focus-iphd6288a67f/ios"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ta-IN","mainEntity":[{"@type":"Question","name":"இந்தப் பக்கம் என் iPhone Screen Time-ஐப் படிக்குமா?","acceptedAnswer":{"@type":"Answer","text":"இல்லை. வரம்பிட்ட எண்களை நீங்களே உள்ளிடுகிறீர்கள்; பக்கத்திற்கு சாதனம், ஆப் அல்லது கணக்கு அணுகல் இல்லை."}},{"@type":"Question","name":"திட்டமிட்ட தடுப்பு மணிநேரம் ஈட்டிய நேரத்திற்குச் சமமா?","acceptedAnswer":{"@type":"Answer","text":"இல்லை. அட்டவணை ஒரு நோக்கம். தடுப்பு வேலை செய்தது அல்லது நடத்தையை மாற்றியது என்று இந்தப் பக்கம் ஒருபோதும் கருதாது."}},{"@type":"Question","name":"எல்லா திரை நேரமும் தீங்கானதா?","acceptedAnswer":{"@type":"Answer","text":"இல்லை. கணக்கீடு வேலை, தொடர்பு, வழிசெலுத்தல், வாசிப்பு அல்லது வேறு பயன்பாட்டை நல்லது/கெட்டது என அடையாளமிடாது."}},{"@type":"Question","name":"அத்தியாவசிய ஆப்களையும் தடுக்க வேண்டுமா?","acceptedAnswer":{"@type":"Answer","text":"இல்லை. ஒவ்வொரு கட்டுப்பாட்டுக்கும் முன் தொடர்பு, வழிசெலுத்தல், அங்கீகாரம், அணுகல்தன்மை, பராமரிப்பு அணுகலை மறுஆய்வு செய்யுங்கள்."}}]}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/ta-IN/index.html">iOS App Guide</a><nav class="links"><a href="https://alice51849.github.io/ios-app-guide/ta-IN/tools/index.html">இலவசக் கருவிகள்</a><a href="https://alice51849.github.io/ios-app-guide/tools/screen-time-calculator.html">English</a></nav></div></header>
+<main>
+<section class="hero wrap"><div class="eyebrow">இலவசம் · உள்ளூர் கணக்கீடு · சாதன அணுகல் இல்லை</div><h1>தனியுரிமை திரை நேரம் &amp; ஆப் தடுப்புத் திட்டமிடி</h1><p class="lead">ஏற்கனவே உங்களுக்குத் தெரிந்த முறையை உள்ளிட்டு, பாதுகாக்கப்பட்ட நேர சாளரத்தைத் தனியாகத் திட்டமிடுங்கள். திட்டமிடப்பட்ட தடுப்பு நேரம் ஒருபோதும் ஈட்டிய நேரமாகவோ உத்தரவாத கவனமாகவோ காட்டப்படாது.</p><div class="badges"><span class="badge">Screen Time அல்லது ஆப் அணுகல் இல்லை</span><span class="badge">கணக்கு அல்லது தொடர்பு அணுகல் இல்லை</span><span class="badge">நேரச் சேமிப்பு கூற்று இல்லை</span><span class="badge">கவனம் அல்லது உடல்நல வாக்குறுதி இல்லை</span></div></section>
+<section class="planner wrap"><h2>கவனித்த முறையையும் திட்டமிட்ட தடுப்புகளையும் ஒப்பிடுங்கள்</h2><p class="intro">முதல் கணக்கீடு உள்ளிட்ட முறையை ஆண்டு அளவில் மாற்றுகிறது. இரண்டாவது திட்டமிட்ட தடுப்புகளைக் கூட்டுகிறது. இந்தப் பக்கம் ஒன்றிலிருந்து மற்றொன்றைக் கழிக்காது; நடத்தையை முன்னறிவிக்காது.</p>
+<form id="screen-planner"><div class="controls">
+<div class="field"><label for="measurement">எதை அளக்கிறீர்கள்?</label><select id="measurement"><option value="total-device">மொத்த சாதனப் பயன்பாடு</option><option value="social-media">சமூக ஊடகம்</option><option value="video">வீடியோ</option><option value="games">விளையாட்டுகள்</option><option value="news-shopping">செய்தி அல்லது ஷாப்பிங்</option></select></div>
+<div class="field"><label for="daily-minutes">செயலில் உள்ள ஒரு நாளில் கவனித்த நிமிடங்கள்</label><input id="daily-minutes" type="number" min="0" max="1440" step="1" value="0"></div>
+<div class="field"><label for="days-per-week">வாரத்தில் கவனித்த நாட்கள்</label><input id="days-per-week" type="number" min="1" max="7" step="1" value="1"></div>
+<div class="field"><label for="block-minutes">திட்டமிட்ட தடுப்பு நேரம்</label><select id="block-minutes"><option value="0">தடுப்பு தேர்வு இல்லை</option><option value="15">15 நிமிடங்கள்</option><option value="25">25 நிமிடங்கள்</option><option value="30">30 நிமிடங்கள்</option><option value="45">45 நிமிடங்கள்</option><option value="60">60 நிமிடங்கள்</option><option value="90">90 நிமிடங்கள்</option><option value="120">120 நிமிடங்கள்</option></select></div>
+<div class="field"><label for="block-days">வாரத்தில் திட்டமிட்ட தடுப்பு நாட்கள்</label><input id="block-days" type="number" min="0" max="7" step="1" value="0"></div>
+<div class="field"><label for="block-window">தடுப்பு சாளரம்</label><select id="block-window"><option value="custom">தனிப்பயன்</option><option value="morning">காலை</option><option value="work-study">வேலை அல்லது படிப்பு</option><option value="evening">மாலை</option></select></div>
+<label class="toggle"><input id="essential-reviewed" type="checkbox">தடுக்கும் முன் அத்தியாவசிய அணுகலைச் சரிபார்த்துவிட்டேன்</label>
+</div><p><button class="button" type="submit">வெளிப்படையான திட்டத்தைப் புதுப்பிக்கவும்</button></p></form>
+<div class="results"><div class="result"><strong>ஆண்டு சமான கவனித்த மணிநேரம்</strong><span id="result-observed-hours"></span></div><div class="result"><strong>ஆண்டு சமான 24-மணி நாட்கள்</strong><span id="result-observed-days"></span></div><div class="result"><strong>வாராந்திர திட்டமிட்ட தடுப்பு நிமிடங்கள்</strong><span id="result-block-week"></span></div><div class="result"><strong>52 வாரங்களில் திட்டமிட்ட தடுப்பு மணிநேரம்</strong><span id="result-block-year"></span></div><div class="result"><strong>தேர்ந்த அளவீடு</strong><span id="result-measurement"></span></div></div>
+<p class="note">ஆண்டு சமானம் என்பது: நாள் நிமிடங்கள் × செயல் நாட்கள் ÷ 7 × 365 சூத்திரம். இது இங்கே உள்ளிட்ட முறையை மட்டுமே குறிக்கிறது; நேரடி Screen Time அளவீடு அல்ல.</p><p class="note">திட்டமிட்ட தடுப்பு மணிநேரம்: தடுப்பு நேரம் × தடுப்பு நாட்கள் × 52 சூத்திரம். இவை நாட்காட்டி நோக்கங்கள் மட்டுமே—ஈட்டிய திரை நேரமோ, மீட்ட கவனமோ, அடைந்த ஒருமுகமோ, முடித்த வேலையோ அல்ல.</p><p class="note"><strong>மீளக்கூடிய முன்சரிபார்ப்பு:</strong> <span id="result-plan"></span></p></section>
+<section class="wrap grid"><article class="card"><h2>ஆப் தடுப்பு அமர்வுக்கு முன் ஐந்து சரிபார்ப்புகள்</h2><ol><li>முடிந்தால் ஊகிப்பதற்குப் பதில் Settings &gt; Screen Time மூலம் மூல முறையைச் சரிபார்க்கவும்.</li><li>பாதுகாக்கப்பட்ட நேர சாளரத்துடன் தொடர்பில்லாத ஆப்களை மட்டும் தேர்வு செய்யவும்.</li><li>அத்தியாவசியத் தொடர்பு, வழிசெலுத்தல், அங்கீகாரம், அணுகல்தன்மை, பராமரிப்பு அணுகலைக் கிடைக்குமாறு வைக்கவும்.</li><li>அனுமதிக்கப்பட்ட மாற்றுச் செயலையும் அமர்வை முடிக்க அல்லது மீட்கத் தெளிவான வழியையும் வரையறுக்கவும்.</li><li>முடிந்தவரை குறுகிய தடுப்பை முயற்சித்து, உண்மையில் நடந்ததை மறுஆய்வு செய்து, நேரச் சேமிப்பு கூறாமல் சரிசெய்யவும்.</li></ol></article><article class="card"><h2>இந்தத் திட்டமிடிக்குத் தெரியாதவை</h2><p>இது உங்கள் Screen Time அறிக்கை, நிறுவிய ஆப்கள், அறிவிப்புகள், தொடர்புகள், சாதன அமைப்புகள் அல்லது அமர்வு முடிவுகளைப் படிக்க முடியாது. இது தனிப்பட்ட திட்டமிடலுக்கானது; குழந்தை பாதுகாப்பு, அவசர அணுகல், மருத்துவப் பராமரிப்பு, பணியிடக் கண்காணிப்பு அல்லது சிகிச்சைக்கு அல்ல.</p></article><article class="card wide"><h2>அதிகாரப்பூர்வ அம்சச் சூழல்; முடிவின் சான்று அல்ல</h2><p>Screen Time செயல்பாட்டைப் பார்த்தல், அட்டவணைகள்-வரம்புகள் அமைத்தல், கவனச்சிதறலைக் குறைக்க Focus பயன்படுத்துதல் ஆகியவற்றை Apple ஆவணப்படுத்துகிறது. திட்டமிட்ட தடுப்பு பயன்பாட்டைக் குறைக்கும் அல்லது கவனத்தை உயர்த்தும் என இவை நிரூபிக்காது.</p><ul class="source-list"><li><a href="https://support.apple.com/guide/iphone/get-started-with-screen-time-iphbfa595995/ios" rel="noopener">Apple: iPhone-இல் Screen Time தொடங்குதல்</a></li><li><a href="https://support.apple.com/guide/iphone/set-schedules-with-screen-time-iphb0c7313c9/ios" rel="noopener">Apple: iPhone-இல் Screen Time அட்டவணைகள்</a></li><li><a href="https://support.apple.com/guide/iphone/set-up-a-focus-iphd6288a67f/ios" rel="noopener">Apple: iPhone-இல் Focus அமைத்தல்</a></li></ul><p><a href="https://developer.chrome.com/docs/ai/webmcp/imperative-api" rel="noopener">Chrome WebMCP கட்டளை API முன்னோட்டம் (மாறக்கூடும்)</a></p></article></section>
+<section class="wrap card faq"><h2>திரை நேரத் திட்டமிடல் கேள்விகள்</h2><details><summary>இந்தப் பக்கம் என் iPhone Screen Time-ஐப் படிக்குமா?</summary><p>இல்லை. வரம்பிட்ட எண்களை நீங்களே உள்ளிடுகிறீர்கள்; பக்கத்திற்கு சாதனம், ஆப் அல்லது கணக்கு அணுகல் இல்லை.</p></details><details><summary>திட்டமிட்ட தடுப்பு மணிநேரம் ஈட்டிய நேரத்திற்குச் சமமா?</summary><p>இல்லை. அட்டவணை ஒரு நோக்கம். தடுப்பு வேலை செய்தது அல்லது நடத்தையை மாற்றியது என்று இந்தப் பக்கம் ஒருபோதும் கருதாது.</p></details><details><summary>எல்லா திரை நேரமும் தீங்கானதா?</summary><p>இல்லை. கணக்கீடு வேலை, தொடர்பு, வழிசெலுத்தல், வாசிப்பு அல்லது வேறு பயன்பாட்டை நல்லது/கெட்டது என அடையாளமிடாது.</p></details><details><summary>அத்தியாவசிய ஆப்களையும் தடுக்க வேண்டுமா?</summary><p>இல்லை. ஒவ்வொரு கட்டுப்பாட்டுக்கும் முன் தொடர்பு, வழிசெலுத்தல், அங்கீகாரம், அணுகல்தன்மை, பராமரிப்பு அணுகலை மறுஆய்வு செய்யுங்கள்.</p></details></section>
+<section class="app-card wrap"><h2>விருப்பமான, சாதனத்திலேயே தடுப்பு ஓட்டம் வேண்டுமா?</h2><p>LockHour Pro விருப்பத்தேர்வு. தற்போதைய App Store பக்கம் தேர்ந்த ஆப்களுக்கான தானியங்கு திறப்புடன் நேர அடிப்படை தடுப்பு, Quick Focus, Deep Work, Study, Sleep Wind Down, Morning Reset, Custom முறைகள், விட்ஜெட் மற்றும் Live Activity ஆகியவற்றை விவரிக்கிறது. கணக்கு, விளம்பரம், கண்காணிப்பு இல்லை; தரவு சாதனத்திலேயே இருக்கும்; ஒருமுறை திறப்பு எனவும் குறிப்பிடுகிறது. துல்லியமான அம்சங்களைத் தற்போதைய பக்கத்தில் பார்க்கவும். இந்தத் திட்டமிடி ஆப் இல்லாமலும் இயங்கும்.</p><a class="button" href="https://apps.apple.com/app/id6780107485" rel="nofollow noopener">App Store-இல் LockHour Pro-ஐப் பார்க்கவும்</a></section>
+</main>
+<footer class="footer"><div class="wrap">தனியுரிமைத் திட்டக் கணிதம் மட்டும் · சாதன அணுகல் இல்லை · திட்டமிட்டது ≠ ஈட்டியது</div></footer>
+<script type="application/json" id="screen-config">{"inputSchema":{"type":"object","properties":{"measurement":{"type":"string","enum":["total-device","social-media","video","games","news-shopping"]},"daily_minutes":{"type":"integer","minimum":0,"maximum":1440},"days_per_week":{"type":"integer","minimum":1,"maximum":7},"block_minutes":{"type":"integer","enum":[0,15,25,30,45,60,90,120]},"block_days_per_week":{"type":"integer","minimum":0,"maximum":7},"block_window":{"type":"string","enum":["custom","morning","work-study","evening"]},"essential_access_reviewed":{"type":"boolean"}},"required":["measurement","daily_minutes","days_per_week","block_minutes","block_days_per_week","block_window","essential_access_reviewed"],"additionalProperties":false},"labels":{"measurement":{"total-device":"மொத்த சாதனப் பயன்பாடு","social-media":"சமூக ஊடகம்","video":"வீடியோ","games":"விளையாட்டுகள்","news-shopping":"செய்தி அல்லது ஷாப்பிங்"},"block_window":{"custom":"தனிப்பயன்","morning":"காலை","work-study":"வேலை அல்லது படிப்பு","evening":"மாலை"}},"windowSteps":{"morning":["தெளிவான காலைத் தொடக்கத்தையும் முடிவையும் தேர்வு செய்யுங்கள்; அலாரம், பயணம், அங்கீகாரம், அத்தியாவசியத் தொடர்பு ஆகியவை அணுகக்கூடியதாக இருப்பதை உறுதிப்படுத்துங்கள்.","தடுப்பு தொடங்கும் முன் அனுமதிக்கப்பட்ட ஒரு முதல் செயலைத் தயார் செய்யுங்கள்."],"work-study":["தடுக்க வேண்டிய ஆப்களைத் தேர்வதற்கு முன் வேலை அல்லது படிப்பின் இலக்கை வரையறுக்கவும்.","தேவையான தொடர்பு, அங்கீகாரம், அணுகல்தன்மை, குறிப்புக் கருவிகளைக் கிடைக்குமாறு வைக்கவும்."],"evening":["தெளிவான மாலை முடிவுப் புள்ளியைத் தேர்வு செய்யுங்கள்; அவசரத் தொடர்பையும் பராமரிப்பு அணுகலையும் தக்கவைக்கவும்.","வெற்று தடையை நம்புவதற்குப் பதில் அனுமதிக்கப்பட்ட ஓய்வுச் செயலைத் தயார் செய்யுங்கள்."],"custom":["இந்தப் பக்கத்திற்கு வெளியே உள்ள உண்மையான சூழலைப் பெயரிடுங்கள்; தெளிவான தொடக்கம், முடிவு, வெளியேறும் வழியை அமைக்கவும்.","அந்தச் சூழலுடன் தொடர்பில்லாத ஆப்களை மட்டும் தடுத்து, அத்தியாவசியக் கருவிகளை அணுகக்கூடியதாக வைக்கவும்."]},"essentialYes":"முதல் அமர்வுக்கு முன் அனுமதிப் பட்டியலை மீண்டும் சரிபார்த்து, அமைப்பு மீளக்கூடியதாக இருக்க முடிந்தவரை குறுகிய சோதனைத் தடுப்பைப் பயன்படுத்தவும்.","essentialNo":"எதையும் தடுக்கும் முன், அத்தியாவசியத் தொடர்பு, வழிசெலுத்தல், அங்கீகாரம், அணுகல்தன்மை, பராமரிப்புக் கருவிகள் மற்றும் நம்பகமான வெளியேறும்/மீட்பு வழியை வரையறுக்கவும்.","observedBoundary":"ஆண்டு சமானம் என்பது: நாள் நிமிடங்கள் × செயல் நாட்கள் ÷ 7 × 365 சூத்திரம். இது இங்கே உள்ளிட்ட முறையை மட்டுமே குறிக்கிறது; நேரடி Screen Time அளவீடு அல்ல.","blockBoundary":"திட்டமிட்ட தடுப்பு மணிநேரம்: தடுப்பு நேரம் × தடுப்பு நாட்கள் × 52 சூத்திரம். இவை நாட்காட்டி நோக்கங்கள் மட்டுமே—ஈட்டிய திரை நேரமோ, மீட்ட கவனமோ, அடைந்த ஒருமுகமோ, முடித்த வேலையோ அல்ல.","scopeBoundary":"இது உங்கள் Screen Time அறிக்கை, நிறுவிய ஆப்கள், அறிவிப்புகள், தொடர்புகள், சாதன அமைப்புகள் அல்லது அமர்வு முடிவுகளைப் படிக்க முடியாது. இது தனிப்பட்ட திட்டமிடலுக்கானது; குழந்தை பாதுகாப்பு, அவசர அணுகல், மருத்துவப் பராமரிப்பு, பணியிடக் கண்காணிப்பு அல்லது சிகிச்சைக்கு அல்ல.","preflightChecklist":["முடிந்தால் ஊகிப்பதற்குப் பதில் Settings > Screen Time மூலம் மூல முறையைச் சரிபார்க்கவும்.","பாதுகாக்கப்பட்ட நேர சாளரத்துடன் தொடர்பில்லாத ஆப்களை மட்டும் தேர்வு செய்யவும்.","அத்தியாவசியத் தொடர்பு, வழிசெலுத்தல், அங்கீகாரம், அணுகல்தன்மை, பராமரிப்பு அணுகலைக் கிடைக்குமாறு வைக்கவும்.","அனுமதிக்கப்பட்ட மாற்றுச் செயலையும் அமர்வை முடிக்க அல்லது மீட்கத் தெளிவான வழியையும் வரையறுக்கவும்.","முடிந்தவரை குறுகிய தடுப்பை முயற்சித்து, உண்மையில் நடந்ததை மறுஆய்வு செய்து, நேரச் சேமிப்பு கூறாமல் சரிசெய்யவும்."],"toolDescription":"வரம்பிட்ட, சுயமாக உள்ளிட்ட நிமிடங்கள்-நாட்களிலிருந்து வெளிப்படையான ஆண்டு சமான திரை நேரக் கணக்கையும் தனியான மீளக்கூடிய ஆப் தடுப்பு அட்டவணையையும் உருவாக்குகிறது. Screen Time, நிறுவிய ஆப்கள், கணக்குகள், தொடர்புகள் அல்லது சாதனத் தரவை ஒருபோதும் அணுகாது; திட்டமிட்ட தடுப்புகளை ஈட்டிய நேரம், கவனம், உடல்நலம் அல்லது உற்பத்தித்திறன் முடிவாக ஒருபோதும் காட்டாது.","freePlanner":{"label":"தனியுரிமை திரை நேரம் & ஆப் தடுப்புத் திட்டமிடி","url":"https://alice51849.github.io/ios-app-guide/ta-IN/tools/screen-time-calculator.html","boundary":"முதல் கணக்கீடு உள்ளிட்ட முறையை ஆண்டு அளவில் மாற்றுகிறது. இரண்டாவது திட்டமிட்ட தடுப்புகளைக் கூட்டுகிறது. இந்தப் பக்கம் ஒன்றிலிருந்து மற்றொன்றைக் கழிக்காது; நடத்தையை முன்னறிவிக்காது."},"officialSources":[{"label":"Apple: iPhone-இல் Screen Time தொடங்குதல்","url":"https://support.apple.com/guide/iphone/get-started-with-screen-time-iphbfa595995/ios"},{"label":"Apple: iPhone-இல் Screen Time அட்டவணைகள்","url":"https://support.apple.com/guide/iphone/set-schedules-with-screen-time-iphb0c7313c9/ios"},{"label":"Apple: iPhone-இல் Focus அமைத்தல்","url":"https://support.apple.com/guide/iphone/set-up-a-focus-iphd6288a67f/ios"}],"webmcpSource":"https://developer.chrome.com/docs/ai/webmcp/imperative-api","optionalApp":{"label":"App Store-இல் LockHour Pro-ஐப் பார்க்கவும்","boundary":"LockHour Pro விருப்பத்தேர்வு. தற்போதைய App Store பக்கம் தேர்ந்த ஆப்களுக்கான தானியங்கு திறப்புடன் நேர அடிப்படை தடுப்பு, Quick Focus, Deep Work, Study, Sleep Wind Down, Morning Reset, Custom முறைகள், விட்ஜெட் மற்றும் Live Activity ஆகியவற்றை விவரிக்கிறது. கணக்கு, விளம்பரம், கண்காணிப்பு இல்லை; தரவு சாதனத்திலேயே இருக்கும்; ஒருமுறை திறப்பு எனவும் குறிப்பிடுகிறது. துல்லியமான அம்சங்களைத் தற்போதைய பக்கத்தில் பார்க்கவும். இந்தத் திட்டமிடி ஆப் இல்லாமலும் இயங்கும்.","app_store_url":"https://apps.apple.com/app/id6780107485"}}</script>
+<script>
+(() => {
+  const config = JSON.parse(document.getElementById("screen-config").textContent);
+  const form = document.getElementById("screen-planner");
+  const fields = {
+    measurement: document.getElementById("measurement"),
+    daily_minutes: document.getElementById("daily-minutes"),
+    days_per_week: document.getElementById("days-per-week"),
+    block_minutes: document.getElementById("block-minutes"),
+    block_days_per_week: document.getElementById("block-days"),
+    block_window: document.getElementById("block-window"),
+    essential_access_reviewed: document.getElementById("essential-reviewed")
+  };
+  const output = {
+    observedHours: document.getElementById("result-observed-hours"),
+    observedDays: document.getElementById("result-observed-days"),
+    blockWeek: document.getElementById("result-block-week"),
+    blockYear: document.getElementById("result-block-year"),
+    measurement: document.getElementById("result-measurement"),
+    plan: document.getElementById("result-plan")
+  };
+
+  function round(value, digits = 1) {
+    const factor = 10 ** digits;
+    return Math.round(value * factor) / factor;
+  }
+
+  function enumValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const values = config.inputSchema.properties[name].enum;
+    if (typeof value !== "string" || !values.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    return value;
+  }
+
+  function integerValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const schema = config.inputSchema.properties[name];
+    if (!Number.isInteger(value)) {
+      throw new TypeError(`${name} must be an integer.`);
+    }
+    if (schema.enum && !schema.enum.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    if ((schema.minimum !== undefined && value < schema.minimum) ||
+        (schema.maximum !== undefined && value > schema.maximum)) {
+      throw new RangeError(`${name} is outside the supported range.`);
+    }
+    return value;
+  }
+
+  function booleanValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    if (typeof input[name] !== "boolean") {
+      throw new TypeError(`${name} must be a boolean.`);
+    }
+    return input[name];
+  }
+
+  function plan(input) {
+    const measurement = enumValue(input, "measurement");
+    const dailyMinutes = integerValue(input, "daily_minutes");
+    const daysPerWeek = integerValue(input, "days_per_week");
+    const blockMinutes = integerValue(input, "block_minutes");
+    const blockDays = integerValue(input, "block_days_per_week");
+    const blockWindow = enumValue(input, "block_window");
+    const essentialReviewed = booleanValue(input, "essential_access_reviewed");
+    if ((blockMinutes === 0) !== (blockDays === 0)) {
+      throw new RangeError(
+        "block_minutes and block_days_per_week must both be zero or both be positive.");
+    }
+    const annualObservedMinutes = dailyMinutes * daysPerWeek / 7 * 365;
+    const weeklyScheduledBlockMinutes = blockMinutes * blockDays;
+    const annualScheduledBlockMinutes = weeklyScheduledBlockMinutes * 52;
+    return {
+      selected_inputs: {
+        measurement,
+        measurement_label: config.labels.measurement[measurement],
+        daily_minutes: dailyMinutes,
+        days_per_week: daysPerWeek,
+        block_minutes: blockMinutes,
+        block_days_per_week: blockDays,
+        block_window: blockWindow,
+        block_window_label: config.labels.block_window[blockWindow],
+        essential_access_reviewed: essentialReviewed
+      },
+      observed_pattern_annual_equivalent: {
+        formula: "daily_minutes * days_per_week / 7 * 365",
+        minutes: round(annualObservedMinutes, 2),
+        hours: round(annualObservedMinutes / 60),
+        full_24_hour_days: round(annualObservedMinutes / 1440),
+        source_is_self_entered_not_device_reading: true
+      },
+      scheduled_block_plan: {
+        formula: "block_minutes * block_days_per_week * 52",
+        minutes_per_week: weeklyScheduledBlockMinutes,
+        minutes_across_52_weeks: annualScheduledBlockMinutes,
+        hours_across_52_weeks: round(annualScheduledBlockMinutes / 60),
+        is_not_a_saved_time_or_outcome_claim: true
+      },
+      reversible_preflight: [
+        essentialReviewed ? config.essentialYes : config.essentialNo,
+        ...config.windowSteps[blockWindow]
+      ],
+      observed_pattern_boundary: config.observedBoundary,
+      scheduled_block_boundary: config.blockBoundary,
+      scope_boundary: config.scopeBoundary
+    };
+  }
+
+  function validateInput(input) {
+    if (input === null || typeof input !== "object" || Array.isArray(input)) {
+      throw new TypeError("WebMCP input must be an object.");
+    }
+    const allowed = new Set(Object.keys(config.inputSchema.properties));
+    for (const name of Object.keys(input)) {
+      if (!allowed.has(name)) {
+        throw new RangeError(`${name} is not a supported input.`);
+      }
+    }
+    return plan(input);
+  }
+
+  function render() {
+    const result = plan({
+      measurement: fields.measurement.value,
+      daily_minutes: Number(fields.daily_minutes.value),
+      days_per_week: Number(fields.days_per_week.value),
+      block_minutes: Number(fields.block_minutes.value),
+      block_days_per_week: Number(fields.block_days_per_week.value),
+      block_window: fields.block_window.value,
+      essential_access_reviewed: fields.essential_access_reviewed.checked
+    });
+    output.observedHours.textContent =
+      String(result.observed_pattern_annual_equivalent.hours);
+    output.observedDays.textContent =
+      String(result.observed_pattern_annual_equivalent.full_24_hour_days);
+    output.blockWeek.textContent =
+      String(result.scheduled_block_plan.minutes_per_week);
+    output.blockYear.textContent =
+      String(result.scheduled_block_plan.hours_across_52_weeks);
+    output.measurement.textContent =
+      result.selected_inputs.measurement_label;
+    output.plan.textContent = result.reversible_preflight.join(" ");
+  }
+
+  async function registerWebMcp() {
+    if (!document.modelContext?.registerTool) return;
+    await document.modelContext.registerTool({
+      name: "plan_private_screen_time_block",
+      description: config.toolDescription,
+      inputSchema: config.inputSchema,
+      annotations: {readOnlyHint: true, untrustedContentHint: false},
+      execute: async (input) => {
+        const plan = validateInput(input);
+        const result = {
+          result_type: "private_screen_time_and_block_plan",
+          screen_time_apps_accounts_contacts_not_accessed: true,
+          scheduled_block_is_not_saved_time: true,
+          no_focus_health_or_productivity_prediction: true,
+          plan,
+          preflight_checklist: config.preflightChecklist,
+          optional_free_planner: config.freePlanner,
+          official_sources: config.officialSources,
+          webmcp_preview_source: config.webmcpSource
+        };
+        if (config.optionalApp) {
+          result.optional_lockhour_pro = config.optionalApp;
+        }
+        return JSON.stringify(result);
+      }
+    });
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    render();
+  });
+  for (const field of Object.values(fields)) {
+    field.addEventListener("change", render);
+  }
+  render();
+  registerWebMcp().catch((error) =>
+    console.error("WebMCP tool registration failed.", error));
+})();
+</script>
+</body>
+</html>

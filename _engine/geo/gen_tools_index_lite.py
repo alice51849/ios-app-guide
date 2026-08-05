@@ -18,6 +18,9 @@ UI = {
     "th": ("เครื่องมือเว็บอินเทอร์แอ็กทีฟฟรี", "เครื่องมือส่วนตัวที่ทำงานในเบราว์เซอร์ — ไม่มีบัญชี ไม่อัปโหลด", "เครื่องมือฟรี", "เปิดเครื่องมือ →"),
     "id": ("Alat Web Interaktif Gratis", "Alat privat yang berjalan langsung di peramban — tanpa akun, tanpa unggahan.", "Alat gratis", "Buka alat →"),
     "tr": ("Ücretsiz Etkileşimli Web Araçları", "Doğrudan tarayıcıda çalışan gizli araçlar — hesap yok, yükleme yok.", "Ücretsiz araçlar", "Aracı aç →"),
+    "hi": ("मुफ़्त इंटरैक्टिव वेब उपकरण", "निजी उपकरण जो सीधे ब्राउज़र में चलते हैं — कोई खाता नहीं, कोई अपलोड नहीं।", "मुफ़्त उपकरण", "उपकरण खोलें →"),
+    "ms": ("Alat Web Interaktif Percuma", "Alat peribadi yang berjalan terus dalam pelayar — tiada akaun, tiada muat naik.", "Alat percuma", "Buka alat →"),
+    "ru": ("Бесплатные интерактивные веб-инструменты", "Приватные инструменты прямо в браузере — без аккаунта, без загрузок.", "Бесплатные инструменты", "Открыть инструмент →"),
 }
 
 

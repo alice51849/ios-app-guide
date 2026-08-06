@@ -1697,10 +1697,16 @@ def _update_one_index(path: Path, locale: str) -> bool:
     if pattern.search(text):
         updated = pattern.sub(card, text, count=1)
     else:
-        marker = '<section class="wrap grid">'
-        if marker not in text:
+        # Two tools-index layouts exist: the original finder grid
+        # (<section class="wrap grid">) and the newer localized tools
+        # generator (<main class="wrap"><div class="grid">). Inject the
+        # finder card as the first grid child in whichever is present.
+        for marker in ('<section class="wrap grid">', '<div class="grid">'):
+            if marker in text:
+                updated = text.replace(marker, marker + card, 1)
+                break
+        else:
             raise RuntimeError(f"{path} is missing its tools grid")
-        updated = text.replace(marker, marker + card, 1)
     if updated == text:
         return False
     path.write_text(updated, encoding="utf-8")

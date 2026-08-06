@@ -2,7 +2,7 @@
 title: "ਪਰਿਵਾਰਕ ਯਾਤਰਾ 'ਤੇ ਬੱਚਿਆਂ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਗਤੀਵਿਧੀ ਐਪ"
 lang: "pa-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/pa-IN/index.html"
-modified: "2026-08-02"
+modified: "2026-08-06"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

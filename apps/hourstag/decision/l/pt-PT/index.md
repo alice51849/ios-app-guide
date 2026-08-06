@@ -2,7 +2,7 @@
 title: "best app to track where my money goes and save more"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/pt-PT/index.html"
-modified: "2026-08-02"
+modified: "2026-08-06"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -23,4 +23,4 @@ If saving feels abstract, tracking goals in hours-worked instead of dollars make
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-app-to-track-where-my-money-goes-and-save-more.html)
 
-> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.
+> Guia da autoria do editor Lumi Studio, o programador da app. Os nomes das apps são marcas dos seus proprietários e são usados apenas para identificação. Para decisões sobre documentos, saúde, escola e produtividade, verifique os requisitos oficiais quando relevante.

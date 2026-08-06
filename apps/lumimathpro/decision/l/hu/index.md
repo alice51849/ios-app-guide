@@ -2,7 +2,7 @@
 title: "legjobb teljes matematika tanuló alkalmazás óvodásoknak és kisiskolásoknak"
 lang: "hu"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/hu/index.html"
-modified: "2026-08-02"
+modified: "2026-08-06"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

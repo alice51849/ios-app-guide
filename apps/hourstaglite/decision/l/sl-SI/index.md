@@ -2,7 +2,7 @@
 title: "HoursTag Lite — Oglejte si pravo ceno stvari | iOS App"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/sl-SI/index.html"
-modified: "2026-08-02"
+modified: "2026-08-06"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

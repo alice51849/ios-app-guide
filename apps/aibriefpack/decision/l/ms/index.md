@@ -2,7 +2,7 @@
 title: "best private app to organize screenshots and documents into context before using AI"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/ms/index.html"
-modified: "2026-08-02"
+modified: "2026-08-06"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

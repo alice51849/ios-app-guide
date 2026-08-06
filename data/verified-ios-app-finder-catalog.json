@@ -16,7 +16,7 @@
     ],
     "retirement_rule": "Retire after three consecutive verified misses"
   },
-  "record_count": 35,
+  "record_count": 37,
   "apps": [
     {
       "key": "aibriefpack",
@@ -281,6 +281,50 @@
         "apple_watch": true
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
+      "verified_live": true
+    },
+    {
+      "key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "name": "DailyMate Lite",
+      "category": "kids",
+      "category_labels": {
+        "en": "Kids & learning",
+        "zh-Hant": "兒童與學習"
+      },
+      "summaries": {
+        "en": "Be ready when it is your turn to speak.",
+        "zh-Hant": "想開口時，不必先在腦中拼湊單字。DailyMate Lite 將旅行、工作、餐飲、健康等生活情境整理成簡短提示與自然回覆，讓你用完整的一來一往練習 50 種語言。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Free to start",
+        "One-time unlock",
+        "No subscription"
+      ],
+      "keywords": [
+        "travel phrasebook free",
+        "situational travel phrases",
+        "speaking practice 50 languages",
+        "cue and reply dialogues",
+        "free language phrasebook",
+        "travel phrases no subscription"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794725568",
       "verified_live": true
     },
     {
@@ -1309,6 +1353,50 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
+      "verified_live": true
+    },
+    {
+      "key": "snapportlite",
+      "app_store_id": "6792856304",
+      "name": "Snapport Lite",
+      "category": "photo-utility",
+      "category_labels": {
+        "en": "Photo & utility",
+        "zh-Hant": "照片與實用工具"
+      },
+      "summaries": {
+        "en": "Snapport Lite",
+        "zh-Hant": "Snapport Lite"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Free to start",
+        "One-time unlock",
+        "No subscription"
+      ],
+      "keywords": [
+        "free passport photo app",
+        "id photo at home free",
+        "visa photo maker free",
+        "passport photo no subscription",
+        "print passport photos at home",
+        "offline passport photo app"
+      ],
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6792856304",
       "verified_live": true
     },
     {

@@ -2,7 +2,7 @@
 title: "แอปกิจวัตรก่อนนอนสำหรับเด็กอนุบาลที่ไม่มีโฆษณาดีที่สุด"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/th/index.html"
-modified: "2026-08-02"
+modified: "2026-08-06"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

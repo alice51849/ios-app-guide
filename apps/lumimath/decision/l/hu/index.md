@@ -2,7 +2,7 @@
 title: "legjobb matek játék alkalmazás gyerekeknek logikai készségek fejlesztésére iPhone-on"
 lang: "hu"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/hu/index.html"
-modified: "2026-08-02"
+modified: "2026-08-06"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

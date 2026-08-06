@@ -2,7 +2,7 @@
 title: "أفضل تطبيق لبناء السيرة الذاتية لمن يغيرون المهنة 2026"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/ar-SA/index.html"
-modified: "2026-08-02"
+modified: "2026-08-06"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

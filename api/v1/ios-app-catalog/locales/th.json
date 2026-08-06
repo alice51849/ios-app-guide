@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-02",
-  "content_digest": "8f14ab5dd69dc7ba96582d9414c5670e0f832e1998ad3b3ee53a697c7a258fbb",
+  "date_modified": "2026-08-06",
+  "content_digest": "e499f1b9dd6e3a651b486ed5c38469cb3e1888517203b07b7274c5e6a917280d",
   "locale": "th",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 35,
+  "record_count": 37,
   "apps": [
     {
       "key": "aibriefpack",
@@ -276,6 +276,45 @@
         "currency": "THB",
         "formatted_price": "฿399.00",
         "storefront_url": "https://apps.apple.com/th/app/id6790418321"
+      }
+    },
+    {
+      "key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "name": "DailyMate Lite: พร้อมคุย",
+      "summary": "พร้อมพูดเมื่อเจอสถานการณ์จริง DailyMate Lite เปลี่ยนเหตุการณ์ในชีวิตประจำวันให้เป็นแบบฝึกสั้น ๆ ที่จับคู่ประโยคเริ่มบทสนทนากับคำตอบที่เป็นธรรมชาติใน 50 ภาษา เริ่มฟรีกับหัวข้อนักเดินทางระดับเริ่มต้น แล้วปลดล็อกคลังทั้งหมดด้วยการซื้อครั้งเดียว ไม่มีค่าสมัครสมาชิก",
+      "category": "kids",
+      "search_terms": [
+        "ฝึกออกเสียง",
+        "ฟัง",
+        "วลีท่องเที่ยว",
+        "เรียนทุกวัน",
+        "คำศัพท์",
+        "สื่อสาร",
+        "บทเรียน",
+        "ประโยคใช้บ่อย",
+        "คล่องแคล่ว",
+        "พูดมั่นใจ"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/th/app/id6794725568",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/th/dailymatelite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6794725568"
       }
     },
     {
@@ -1508,6 +1547,44 @@
         "currency": "THB",
         "formatted_price": "฿199.00",
         "storefront_url": "https://apps.apple.com/th/app/id6780575828"
+      }
+    },
+    {
+      "key": "snapportlite",
+      "app_store_id": "6792856304",
+      "name": "Snapport Lite",
+      "summary": "Snapport Lite - สร้างรูปพาสปอร์ต วีซ่า และบัตรประจำตัวพร้อมคำแนะนำขนาด พื้นหลัง และการพิมพ์",
+      "category": "photo-utility",
+      "search_terms": [
+        "รูปพาสปอร์ต",
+        "รูปวีซ่า",
+        "รูปบัตรประชาชน",
+        "รูปเอกสาร",
+        "รูปไบโอเมตริก",
+        "รูปสมัครงาน",
+        "รูปนักเรียน",
+        "35x45",
+        "พาสปอร์ต"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/th/app/id6792856304",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/th/snapportlite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6792856304"
       }
     },
     {

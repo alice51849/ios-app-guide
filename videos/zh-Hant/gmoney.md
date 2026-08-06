@@ -2,7 +2,7 @@
 title: "最佳無訂閱旅遊預算追蹤應用程式 iPhone"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/zh-Hant/gmoney.html"
-modified: "2026-08-02"
+modified: "2026-08-07"
 video_url: "https://files.catbox.moe/mlgrxy.mp4"
 duration: "PT16.2S"
 app_store_id: "6755782939"

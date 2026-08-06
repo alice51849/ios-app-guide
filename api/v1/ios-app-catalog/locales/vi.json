@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-02",
-  "content_digest": "8f14ab5dd69dc7ba96582d9414c5670e0f832e1998ad3b3ee53a697c7a258fbb",
+  "date_modified": "2026-08-06",
+  "content_digest": "e499f1b9dd6e3a651b486ed5c38469cb3e1888517203b07b7274c5e6a917280d",
   "locale": "vi",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 35,
+  "record_count": 37,
   "apps": [
     {
       "key": "aibriefpack",
@@ -284,6 +284,51 @@
         "currency": "VND",
         "formatted_price": "399.000đ",
         "storefront_url": "https://apps.apple.com/vn/app/id6790418321"
+      }
+    },
+    {
+      "key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "name": "DailyMate Lite: Luyện nói",
+      "summary": "Đến lúc cần nói mà vẫn chưa tìm được câu phù hợp? DailyMate Lite biến những tình huống như du lịch, công việc, ăn uống và sức khỏe thành các cặp gợi ý – câu đáp ngắn gọn, tự nhiên để bạn luyện hội thoại bằng 50 ngôn ngữ.",
+      "category": "kids",
+      "search_terms": [
+        "giao tiếp",
+        "du lịch",
+        "phát âm",
+        "nghe",
+        "tiếng Anh",
+        "Nhật",
+        "Hàn",
+        "Pháp",
+        "Đức",
+        "Ý",
+        "từ vựng",
+        "tự học",
+        "sân bay",
+        "khách sạn",
+        "thi",
+        "bé"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/vn/app/id6794725568",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/vi/dailymatelite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "VND",
+        "formatted_price": "Miễn phí",
+        "storefront_url": "https://apps.apple.com/vn/app/id6794725568"
       }
     },
     {
@@ -1518,6 +1563,46 @@
         "currency": "VND",
         "formatted_price": "149.000đ",
         "storefront_url": "https://apps.apple.com/vn/app/id6780575828"
+      }
+    },
+    {
+      "key": "snapportlite",
+      "app_store_id": "6792856304",
+      "name": "Snapport Lite",
+      "summary": "Snapport Lite - Tạo ảnh hộ chiếu, visa và giấy tờ với hướng dẫn kích thước, nền và in.",
+      "category": "photo-utility",
+      "search_terms": [
+        "ảnh hộ chiếu",
+        "ảnh visa",
+        "ảnh căn cước",
+        "ảnh giấy tờ",
+        "ảnh sinh trắc",
+        "ảnh cv",
+        "ảnh học sinh",
+        "ảnh 3x4",
+        "2x2",
+        "Visa",
+        "Đỏ"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/vn/app/id6792856304",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/vi/snapportlite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "VND",
+        "formatted_price": "Miễn phí",
+        "storefront_url": "https://apps.apple.com/vn/app/id6792856304"
       }
     },
     {

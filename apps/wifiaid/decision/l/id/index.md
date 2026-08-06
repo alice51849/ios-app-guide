@@ -2,7 +2,7 @@
 title: "best wifi troubleshooting app for remote workers with connected but no internet"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/id/index.html"
-modified: "2026-08-02"
+modified: "2026-08-06"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -21,4 +21,4 @@ When Wi-Fi says connected but work still cannot get online, the useful first ste
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html)
 
-> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.
+> Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.

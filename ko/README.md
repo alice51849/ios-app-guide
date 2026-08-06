@@ -4,7 +4,7 @@
 
 각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.
 
-App Store 제공 여부를 확인한 35개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
+App Store 제공 여부를 확인한 37개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
 
 **언어·지역:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · **ko** · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -95,6 +95,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 | **CV Desk** | 2026년 경력 전환자를 위한 최고의 이력서 작성 앱 | 분야를 바꿀 때 이력서 문제는 다릅니다: 경험은 실제지만 서류상 '관련 없음'으로 ATS 필터가 인간 검토 전에 걸러냅니다 — CV Desk는 이를 위해 만들어졌습니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-resume-builder-app-for-career-changers-2026.html) | [앱 스토어에서 CV Desk 받기 →](https://apps.apple.com/kr/app/id6781337213) |
 | **Cyca** | 계정 없이 사용할 수 있는 최고의 생리 주기 추적 앱 아이폰용 | 데이터 민감도가 중요한 카테고리에서 올바른 생리 주기 추적기는 흐름, 기분, 증상, 온도, 친밀감 등 모든 정보를 계정 없이 기기에만 보관하며 클라우드 동기화가 없습니다 — Cyca는 이를 위해 만들어졌습니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-period-tracker-app-no-account-required-iphone.html) | [앱 스토어에서 Cyca 받기 →](https://apps.apple.com/kr/app/id6782251621) |
 | **DailyMate** | 애플 워치와 함께 여행자에게 가장 실용적인 언어 회화 앱 | 여행 전, 실제 상황에 맞는 완전한 문장이 압박 속에 조합해야 하는 단어보다 더 유용합니다 — DailyMate는 이를 위해 만들어졌습니다. | 유료 다운로드 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [App Store에서 DailyMate 받기 →](https://apps.apple.com/kr/app/id6790418321) |
+| **DailyMate Lite: 바로 쓰는 한마디** | DailyMate Lite: 바로 쓰는 한마디 — 50개 언어 상황별 회화 \| iOS App | 막상 말하려는 순간, 알맞은 표현이 떠오르지 않나요? DailyMate Lite는 여행, 업무, 식사, 건강 등 실제 장면을 짧은 질문과 자연스러운 대답으로 구성해, 50개 언어를 한 차례의 온전한 대화로 연습할 수 있게 해 줍니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/dailymatelite.html) | [App Store에서 DailyMate Lite: 바로 쓰는 한마디 받기](https://apps.apple.com/kr/app/id6794725568) |
 | **G+Money** | 구독 없이 사용할 수 있는 최고의 여행 예산 추적 앱 아이폰용 | 여행 중 데이터가 없는 나라에서도 작동하고, 여러 통화를 처리하며, 계정을 요구하지 않는 예산 추적기가 필요합니다 — 여행별로 정리되어 각 휴가가 분리됩니다 — G+Money는 이를 위해 만들어졌습니다. | 유료 다운로드 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [앱 스토어에서 G+Money 받기 →](https://apps.apple.com/kr/app/id6755782939) |
 | **G+Money Lite** | best free travel expense tracker with currency conversion for iphone | A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html) | [Get G+Money Lite on the App Store →](https://apps.apple.com/kr/app/id6793436548) |
 | **HoursTag** | best app to track where my money goes and save more | If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something — HoursTag is built for this. | 유료 다운로드 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [App Store에서 HoursTag 받기 →](https://apps.apple.com/kr/app/id6754218117) |
@@ -118,6 +119,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 | **ScanTo Pro** | 간호사를 위한 클라우드 없는 오프라인 문서 스캐너 앱 중 최고 | 환자 동의서, 퇴원 서류, 의뢰서를 스캔할 때 서류가 기기에만 남아야 하며 절대 다른 사람 클라우드에 업로드되지 않아야 합니다 — ScanTo Pro가 이에 맞게 설계되었습니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [App Store에서 ScanTo Pro 받기 →](https://apps.apple.com/kr/app/id6779977651) |
 | **Sereno** | 구독 없이 잠들기 좋은 최고의 백색소음 앱 | 수면에 구독이 매달 귀찮게 하는 것은 휴식에 반대입니다 — Sereno는 이를 위해 만들어졌습니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [App Store에서 Sereno 받기 →](https://apps.apple.com/kr/app/id6788236641) |
 | **Snapport** | 집에서 아기와 유아용 여권 사진 앱 추천 | 아기 여권 사진은 다른 사람이 나오면 안 되고 배경은 단색이어야 하지만, 영아는 눈을 완전히 뜨지 않아도 됩니다. | 유료 다운로드 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [App Store에서 Snapport 받기 →](https://apps.apple.com/kr/app/id6780575828) |
+| **Snapport Lite** | Snapport Lite — 집에서 ID 사진 만들기 \| iOS App | Snapport Lite - 가이드 크기 조정, 배경 도구 및 인쇄 준비 완료 내보내기로 여권, 비자 및 문서 사진을 만드세요. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/snapportlite.html) | [App Store에서 Snapport Lite 받기](https://apps.apple.com/kr/app/id6792856304) |
 | **Sono Note** | 아이폰에서 회의 내용을 요약하는 최고의 음성 메모 앱 | 통화 후에는 원시 전사본이 아니라 요약, 실행 항목, 후속 초안이 필요합니다 — Sono Note는 이를 위해 만들어졌습니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [App Store에서 Sono Note 받기 →](https://apps.apple.com/kr/app/id6782139553) |
 | **TripBee Lite** | 다가오는 여행 하나를 위한 최고의 간단한 여행 계획 앱 아이폰용 | 다가오는 여행 하나를 계획 중이라면, 언젠가 할 수많은 여행 기록이 가득한 아카이브보다 그 여행에 집중된 차분한 일정표가 더 유용합니다 — 트립비 라이트는 이를 위해 만들어졌습니다. | 무료로 시작 · 평생 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [앱 스토어에서 트립비 라이트 받기 →](https://apps.apple.com/kr/app/id6791299610) |
 | **TripBee Pro: 여행 플래너** | 아이폰용 최고의 여행 일정 계획 앱 | 좋은 일정 앱은 복잡한 여행을 명확한 일별 타임라인으로 바꾸고, 아이콘으로 하루 일정을 한눈에 볼 수 있게 합니다 — TripBee Pro: 여행 플래너는 이를 위해 만들어졌습니다. | 유료 다운로드 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-trip-itinerary-planner-app-for-iphone.html) | [App Store에서 TripBee Pro: 여행 플래너 받기 →](https://apps.apple.com/kr/app/id6787754435) |
@@ -127,7 +129,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 
 ## 전체 데이터셋 다운로드
 
-JSON, JSONL, CSV 모두 동일한 1,750개 기록을 포함합니다.
+JSON, JSONL, CSV 모두 동일한 1,850개 기록을 포함합니다.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -135,6 +137,6 @@ JSON, JSONL, CSV 모두 동일한 1,750개 기록을 포함합니다.
 
 [홈](https://alice51849.github.io/ios-app-guide/ko/index.html) · [오픈 데이터](https://alice51849.github.io/ios-app-guide/ko/data/lumi-studio-publisher-search-intent-catalog.html) · [라이선스](https://creativecommons.org/licenses/by/4.0/)
 
-업데이트 날짜: 2026-08-02
+업데이트 날짜: 2026-08-07
 
 CC BY 4.0은 원본 카탈로그 편집에 적용되며, 앱 이름과 App Store 마크는 각 소유자의 권리입니다.

@@ -2,7 +2,7 @@
   "name": "Lumi Studio Publisher Intent Visuals",
   "description": "Localized first-party visual buyer-intent cards for every verified live iOS app.",
   "url": "https://alice51849.github.io/ios-app-guide/visuals/",
-  "dateModified": "2026-08-02",
+  "dateModified": "2026-08-07",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -10,12 +10,12 @@
     "url": "https://alice51849.github.io/ios-app-guide"
   },
   "source_dataset": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-  "content_digest": "5e997c5b89a4f1e64eb1c8a5d9564b6ef060d67cc561211f9f615299d58eb847",
-  "generation_digest": "e76961a6576fbea6db4e32deae19723d453662866b9096deb283b890c8d2cfb6",
+  "content_digest": "ca117d3a42c9659da2dcb6e90dcd9393c88d70c47b3a87f04368dba17309fe11",
+  "generation_digest": "f597d0f6372ef2723027086269d10f50df050a8e51600ab6005e917c04ae0ed7",
   "ordering": "official_locale_order_then_alphabetical_app_name",
-  "app_count": 35,
+  "app_count": 37,
   "locale_count": 50,
-  "image_count": 1750,
+  "image_count": 1850,
   "gallery_count": 51,
   "publisher_authored": true,
   "measured_search_volume": false,
@@ -88,6 +88,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/sa/app/id6790418321",
       "sha256": "47c8cdca6ac3078cf887d1c3476c3bd147afe60fec5e7d9f37aeedf98346060d"
+    },
+    {
+      "locale": "ar-SA",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ar-SA/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ar-SA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/sa/app/id6794725568",
+      "sha256": "e75bec390a9171253e161f4000c10e81e8cf25916cdd4b755a96d54484bb4115"
     },
     {
       "locale": "ar-SA",
@@ -321,6 +331,16 @@
     },
     {
       "locale": "ar-SA",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ar-SA/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ar-SA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/sa/app/id6792856304",
+      "sha256": "71d7e5d26df76c6ccf940744ebc305f4467e28639650d3498334b31ca90710f1"
+    },
+    {
+      "locale": "ar-SA",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ar-SA/sononote.svg",
@@ -438,6 +458,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/app/id6790418321",
       "sha256": "33c1710d4f597ec9e891636a46e18d7ba275da69a355ffa88209766aba3442ca"
+    },
+    {
+      "locale": "bn-BD",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/bn-BD/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/bn-BD/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/app/id6794725568",
+      "sha256": "33e25d707f1b97029d7bec0e1436f7209ee956da3764346e36f34e4ea276c49e"
     },
     {
       "locale": "bn-BD",
@@ -671,6 +701,16 @@
     },
     {
       "locale": "bn-BD",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/bn-BD/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/bn-BD/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/app/id6792856304",
+      "sha256": "bdc9acc44e3418f373aabd6245900966bfeec8e014835e402b27de49a399da64"
+    },
+    {
+      "locale": "bn-BD",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/bn-BD/sononote.svg",
@@ -788,6 +828,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/es/app/id6790418321",
       "sha256": "9eebfe7823f925a51cec4e15c7df500ab09cbea43d962f65429b8b441caf7625"
+    },
+    {
+      "locale": "ca",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ca/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ca/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6794725568",
+      "sha256": "f6f389939ab9de310aa40b400ebe1a4d9d2700638bf2934f88595c6fa94797cd"
     },
     {
       "locale": "ca",
@@ -1021,6 +1071,16 @@
     },
     {
       "locale": "ca",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ca/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ca/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6792856304",
+      "sha256": "baa23edcd068624c2836573ec19686bf4aea5564e07c73bac621a2a78b599468"
+    },
+    {
+      "locale": "ca",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ca/sononote.svg",
@@ -1138,6 +1198,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/cz/app/id6790418321",
       "sha256": "e57c3673e6a16db70941df16f5c1c2a2d0ea5d0bea99d1bac6b281b383a203bd"
+    },
+    {
+      "locale": "cs",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/cs/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/cs/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/cz/app/id6794725568",
+      "sha256": "5c85a1b8ef9a256fbea9a990fc1e3b608c9a0ae28161306f20acb793452ef236"
     },
     {
       "locale": "cs",
@@ -1371,6 +1441,16 @@
     },
     {
       "locale": "cs",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/cs/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/cs/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/cz/app/id6792856304",
+      "sha256": "b5175ab173c9d0d4f2e76e1ef8d90c40ed3adbfb7a795bc4636c899106123344"
+    },
+    {
+      "locale": "cs",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/cs/sononote.svg",
@@ -1488,6 +1568,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/dk/app/id6790418321",
       "sha256": "d626239e1076cdf63892b3908c1400e77ae53d21dfd1ddfda247dce87c29089e"
+    },
+    {
+      "locale": "da",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/da/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/da/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/dk/app/id6794725568",
+      "sha256": "1e710e3a7afefa80a19942c7c8e7fbf44fb3990b8f0af101a052f089cae26f4c"
     },
     {
       "locale": "da",
@@ -1721,6 +1811,16 @@
     },
     {
       "locale": "da",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/da/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/da/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/dk/app/id6792856304",
+      "sha256": "08390a28ee62e0c147862ba3c28ed8ede88b9f59f2cc720d812157e9ea2582a1"
+    },
+    {
+      "locale": "da",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/da/sononote.svg",
@@ -1838,6 +1938,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/de/app/id6790418321",
       "sha256": "57e445da721c175ce9257e091a368a99f538af19fbfda8e3e432f35537c90a84"
+    },
+    {
+      "locale": "de-DE",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/de-DE/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/de-DE/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/de/app/id6794725568",
+      "sha256": "0c22503ddc9ed079065d40d1b7f49c969e62c3097e504aca14c46cf2ab4f399c"
     },
     {
       "locale": "de-DE",
@@ -2071,6 +2181,16 @@
     },
     {
       "locale": "de-DE",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/de-DE/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/de-DE/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/de/app/id6792856304",
+      "sha256": "086825ebe6ba7567c8a91601d545e74885fce1f94f30a4a6234f4e278835eaae"
+    },
+    {
+      "locale": "de-DE",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/de-DE/sononote.svg",
@@ -2188,6 +2308,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/gr/app/id6790418321",
       "sha256": "e039a514674ae2a5ea7b1cbab72e338f0795b52265629cfc6e5b463c705bcc1c"
+    },
+    {
+      "locale": "el",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/el/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/el/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/gr/app/id6794725568",
+      "sha256": "298ee5a25b06e0a4956322769e539f6c319326622e05d11237c39ab036e7b60e"
     },
     {
       "locale": "el",
@@ -2421,6 +2551,16 @@
     },
     {
       "locale": "el",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/el/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/el/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/gr/app/id6792856304",
+      "sha256": "e325c7293e380faeb31c2620c4a57dea176a150dc246174bece780fefb452e78"
+    },
+    {
+      "locale": "el",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/el/sononote.svg",
@@ -2538,6 +2678,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/au/app/id6790418321",
       "sha256": "b4859184c315c669f8e2cc45c53c0faf5fcb947f96a0657a3d4078240e9f9f30"
+    },
+    {
+      "locale": "en-AU",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-AU/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-AU/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/au/app/id6794725568",
+      "sha256": "09142c7de99c555ac26d6db4ec0817f177e5e2eb8f55abae2d4fab8b00a4b3a6"
     },
     {
       "locale": "en-AU",
@@ -2771,6 +2921,16 @@
     },
     {
       "locale": "en-AU",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-AU/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-AU/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/au/app/id6792856304",
+      "sha256": "637eab66893fbde02cb5353ddebbad0da077928c1009232ae9678bb1d1cd4043"
+    },
+    {
+      "locale": "en-AU",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-AU/sononote.svg",
@@ -2888,6 +3048,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6790418321",
       "sha256": "4bff8ccc5af6f16a5918702c81f2f338dbfe6cf5e70bdffb403f7d4720cc772f"
+    },
+    {
+      "locale": "en-CA",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-CA/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-CA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6794725568",
+      "sha256": "d5c40fb4e398456fe662d184b8a3a2f55d60f3bfc08c569efff55e3ddd5d466e"
     },
     {
       "locale": "en-CA",
@@ -3121,6 +3291,16 @@
     },
     {
       "locale": "en-CA",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-CA/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-CA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6792856304",
+      "sha256": "eeb1262aeabfc058fb011a56780c9f671ef409a1fca2a4fe6eb3f021b049f875"
+    },
+    {
+      "locale": "en-CA",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-CA/sononote.svg",
@@ -3238,6 +3418,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/gb/app/id6790418321",
       "sha256": "54f467a84cfb62a7c4c1bfba69767cfefcb5d48ae8601b9a0cf408f7c0b1c8be"
+    },
+    {
+      "locale": "en-GB",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-GB/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-GB/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/gb/app/id6794725568",
+      "sha256": "83a9a269cdf620b73012e1d87ac83bd2ef894c9dc28b2a8068af39fb32d299f8"
     },
     {
       "locale": "en-GB",
@@ -3471,6 +3661,16 @@
     },
     {
       "locale": "en-GB",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-GB/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-GB/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/gb/app/id6792856304",
+      "sha256": "4c14b1fc3022a299b320c05d45c044b368e9dc2612ed428a57efa8dbe6d175aa"
+    },
+    {
+      "locale": "en-GB",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-GB/sononote.svg",
@@ -3588,6 +3788,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/us/app/id6790418321",
       "sha256": "626cdb0b1c69378b49a13fb80736e946b7ce691ea82c65e446de77f84b762f9a"
+    },
+    {
+      "locale": "en-US",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-US/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-US/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6794725568",
+      "sha256": "60fe23e683d2b1d0f4276b204909d4a91b5a570e6208b6b0ed59b3069b4213bb"
     },
     {
       "locale": "en-US",
@@ -3821,6 +4031,16 @@
     },
     {
       "locale": "en-US",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-US/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-US/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6792856304",
+      "sha256": "84db5a8719893d259cf608b27471dae8c8f6bea6b62008e3cba5ac380c64156e"
+    },
+    {
+      "locale": "en-US",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-US/sononote.svg",
@@ -3938,6 +4158,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/es/app/id6790418321",
       "sha256": "87ae1a9c59e749f00356875aa83b9cde1beb71d0b0a1d0bd5e78dc7a4c2f490d"
+    },
+    {
+      "locale": "es-ES",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-ES/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-ES/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6794725568",
+      "sha256": "dcdf5c4631f105df1f7533d57736e41c6007c4933907449f6e6456fd859017ed"
     },
     {
       "locale": "es-ES",
@@ -4171,6 +4401,16 @@
     },
     {
       "locale": "es-ES",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-ES/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-ES/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6792856304",
+      "sha256": "6908ca6e88e849420f523e05a1233f716d822ce6f3a4de8667ed4d1dff6cf029"
+    },
+    {
+      "locale": "es-ES",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-ES/sononote.svg",
@@ -4288,6 +4528,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/mx/app/id6790418321",
       "sha256": "cf36bb7683cd6ee9ebe7d07743361b25d2a5d8c46422ec3099de6f981a311f80"
+    },
+    {
+      "locale": "es-MX",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-MX/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-MX/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/mx/app/id6794725568",
+      "sha256": "41603ac6b955e3e7664028eae8d63f3da85637721746cc29253a0c7d4f0b39a3"
     },
     {
       "locale": "es-MX",
@@ -4521,6 +4771,16 @@
     },
     {
       "locale": "es-MX",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-MX/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-MX/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/mx/app/id6792856304",
+      "sha256": "111a2b116c5a83b48fb7f6b8cdf446e70d6ca43283085ffbcabad79c4e982126"
+    },
+    {
+      "locale": "es-MX",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-MX/sononote.svg",
@@ -4638,6 +4898,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/fi/app/id6790418321",
       "sha256": "f7b50339bd000df9946e2f6bf355f0a8205a92fead34f382002eca45a2a29a91"
+    },
+    {
+      "locale": "fi",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fi/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/fi/app/id6794725568",
+      "sha256": "68c991031d28025dcdb7a7fc39e3c3083dccbf2e3bd6138701eb8b25777c2fd5"
     },
     {
       "locale": "fi",
@@ -4871,6 +5141,16 @@
     },
     {
       "locale": "fi",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fi/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/fi/app/id6792856304",
+      "sha256": "682eaf1edf8af2177d5c3351f0da2df3b6fedeb2508561bfb771b92b69ed43fe"
+    },
+    {
+      "locale": "fi",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fi/sononote.svg",
@@ -4988,6 +5268,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6790418321",
       "sha256": "2aa8db4c2716fe4e75566e4ef4e71519c873204739a2c1f33d8c010538942b99"
+    },
+    {
+      "locale": "fr-CA",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-CA/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-CA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6794725568",
+      "sha256": "a1e7b94a3bdcc53e9cd82da3a36339c680fb1be8f158443bb580fff2d5a49beb"
     },
     {
       "locale": "fr-CA",
@@ -5221,6 +5511,16 @@
     },
     {
       "locale": "fr-CA",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-CA/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-CA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6792856304",
+      "sha256": "38a8414f68481076bf083545127dea3e75c3265d19c7473bf8372ef2d04ab1b3"
+    },
+    {
+      "locale": "fr-CA",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-CA/sononote.svg",
@@ -5338,6 +5638,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/fr/app/id6790418321",
       "sha256": "46e15758820415e982141364c2f46bce81d484bb461b38a36e3d3901483411a2"
+    },
+    {
+      "locale": "fr-FR",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-FR/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-FR/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/fr/app/id6794725568",
+      "sha256": "5fac9da98e4a7ad037d6113929c976741306bb472880b8e4d98674191892fc18"
     },
     {
       "locale": "fr-FR",
@@ -5571,6 +5881,16 @@
     },
     {
       "locale": "fr-FR",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-FR/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-FR/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/fr/app/id6792856304",
+      "sha256": "9c39387ffb6ba6d2fbbb26b271a620e80f62130918c429f641f17b17b436f00c"
+    },
+    {
+      "locale": "fr-FR",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-FR/sononote.svg",
@@ -5688,6 +6008,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/in/app/id6790418321",
       "sha256": "f581d47146b8b8a08c967bde8d7573dea63f6ccb2b10a4c746ab97d6bef23c42"
+    },
+    {
+      "locale": "gu-IN",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/gu-IN/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/gu-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6794725568",
+      "sha256": "5ba32e6b013c08e37bed5c8b93cd8f3e85fb6cc3b6e5b972d5ec92b479773095"
     },
     {
       "locale": "gu-IN",
@@ -5921,6 +6251,16 @@
     },
     {
       "locale": "gu-IN",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/gu-IN/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/gu-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6792856304",
+      "sha256": "c4becafb4b65a041b365522dfff0be514bedc92b6821dc341982abb9a59d8562"
+    },
+    {
+      "locale": "gu-IN",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/gu-IN/sononote.svg",
@@ -6038,6 +6378,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/il/app/id6790418321",
       "sha256": "616c1230ab1f9fad1beec44f223d92cd53414e55d1ff861172e4296770ec52c1"
+    },
+    {
+      "locale": "he",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/he/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/he/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/il/app/id6794725568",
+      "sha256": "745fec1ba9402cfea59fe17f525ec5defbc9d273287cbf626e4d25dba29a3c16"
     },
     {
       "locale": "he",
@@ -6271,6 +6621,16 @@
     },
     {
       "locale": "he",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/he/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/he/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/il/app/id6792856304",
+      "sha256": "64ecf39a1a9cbc70752a47ba708f9df5c0df647b1e10c1ab53424c0b368ccdbe"
+    },
+    {
+      "locale": "he",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/he/sononote.svg",
@@ -6388,6 +6748,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/in/app/id6790418321",
       "sha256": "9d6f19a9c94127e60186344722a3b2b77f2d8ec273187458868776963294221c"
+    },
+    {
+      "locale": "hi",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hi/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6794725568",
+      "sha256": "edec4e88f6cf143490cb43f306f1c05623b78f08ab92eec5895abd04dd055401"
     },
     {
       "locale": "hi",
@@ -6621,6 +6991,16 @@
     },
     {
       "locale": "hi",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hi/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6792856304",
+      "sha256": "351f14539d61fc23c28b0c8df5cd2e93841266f56777b9c86c64b1c772d985de"
+    },
+    {
+      "locale": "hi",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hi/sononote.svg",
@@ -6738,6 +7118,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/hr/app/id6790418321",
       "sha256": "46097c3ce9d78d62e6ea45e31f6000d8c83025a27a1d204cb2210b27f6d384d2"
+    },
+    {
+      "locale": "hr",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hr/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hr/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/hr/app/id6794725568",
+      "sha256": "d5db23e562751d5ace9ef3cfea6d58d517655936b2a16583f9f6f39f5c87583f"
     },
     {
       "locale": "hr",
@@ -6971,6 +7361,16 @@
     },
     {
       "locale": "hr",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hr/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hr/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/hr/app/id6792856304",
+      "sha256": "b52f7bd8d24eeacbfc9f2b19ee026cf54addca5ca3b8e64ba6fce11b2227c921"
+    },
+    {
+      "locale": "hr",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hr/sononote.svg",
@@ -7088,6 +7488,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/hu/app/id6790418321",
       "sha256": "00f374d27fa3469e9c033fe181c0339951f6fb05f2f9b395fa214eb7da65d10a"
+    },
+    {
+      "locale": "hu",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hu/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hu/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/hu/app/id6794725568",
+      "sha256": "3e2ed8caf8a6291b4f085eebaef5ad9aba6395591a88dbede66d11979defc694"
     },
     {
       "locale": "hu",
@@ -7321,6 +7731,16 @@
     },
     {
       "locale": "hu",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hu/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hu/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/hu/app/id6792856304",
+      "sha256": "1cbb3cd76ec6124ec3520e7468992de88b5e26a581e900f23b3fd7f62d71da0c"
+    },
+    {
+      "locale": "hu",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hu/sononote.svg",
@@ -7438,6 +7858,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/id/app/id6790418321",
       "sha256": "52656356690cc08a536303f0069ecd9a7a250265c083df0e6ba421c2520b0edb"
+    },
+    {
+      "locale": "id",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/id/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/id/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/id/app/id6794725568",
+      "sha256": "4cbd91d17856d7d95a275cef02e5a70b9aab844127e04f44c8418bdb91bf54df"
     },
     {
       "locale": "id",
@@ -7671,6 +8101,16 @@
     },
     {
       "locale": "id",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/id/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/id/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/id/app/id6792856304",
+      "sha256": "8145dd546f69d1049ad587a966d9681b83c63bbae82d4949b7ab4d2f38d55df0"
+    },
+    {
+      "locale": "id",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/id/sononote.svg",
@@ -7788,6 +8228,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/it/app/id6790418321",
       "sha256": "94f0d863391e212977959deb1023925f3db365c04c2789d5e570695947bf42de"
+    },
+    {
+      "locale": "it",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/it/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/it/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/it/app/id6794725568",
+      "sha256": "c4ded73c085e74aa6865a692cf639e8a5c45a6cb45e979fa8ffab004dd051022"
     },
     {
       "locale": "it",
@@ -8021,6 +8471,16 @@
     },
     {
       "locale": "it",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/it/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/it/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/it/app/id6792856304",
+      "sha256": "8564e0d781dbe20373c5a0c596c611de41fac3c92f7c09d1b83e88ca3f2a50fa"
+    },
+    {
+      "locale": "it",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/it/sononote.svg",
@@ -8138,6 +8598,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/jp/app/id6790418321",
       "sha256": "0f6bdc0ce2cfe1d91178e9a09b31ad3cacf2ec80a5b562cf449395b8537658c9"
+    },
+    {
+      "locale": "ja",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ja/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ja/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/jp/app/id6794725568",
+      "sha256": "74decc485f17bf527c91de1f1d223896ea912d2eb470a03c02a5119b8be8200d"
     },
     {
       "locale": "ja",
@@ -8371,6 +8841,16 @@
     },
     {
       "locale": "ja",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ja/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ja/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/jp/app/id6792856304",
+      "sha256": "deff17f843d16a478a00af669b943c8f98e16aba43beb42ceaec5d948a810c86"
+    },
+    {
+      "locale": "ja",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ja/sononote.svg",
@@ -8488,6 +8968,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/in/app/id6790418321",
       "sha256": "eaf45c86d5fe4b5b9076d3186a6a365dd52cc89c817bac110913506e87197ef3"
+    },
+    {
+      "locale": "kn-IN",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/kn-IN/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/kn-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6794725568",
+      "sha256": "c9d1d78b36711ef393855ff3c26c4209ff9fc4fb11d6f4448870d54c0fa2d70f"
     },
     {
       "locale": "kn-IN",
@@ -8721,6 +9211,16 @@
     },
     {
       "locale": "kn-IN",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/kn-IN/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/kn-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6792856304",
+      "sha256": "6757a31ea87f01edc694b2bd3e182a0bb5a849c28d035302e7c46c8519c1fbbe"
+    },
+    {
+      "locale": "kn-IN",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/kn-IN/sononote.svg",
@@ -8838,6 +9338,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6790418321",
       "sha256": "6fd5c5cb415f7b1ce790b1e3ad58b32b66295071808d2069a0adbb9bb9275838"
+    },
+    {
+      "locale": "ko",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ko/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/kr/app/id6794725568",
+      "sha256": "a60db0cfca3777e15a6c1be29845a496a61cdbf2f4d4c66a5062763a186d202e"
     },
     {
       "locale": "ko",
@@ -9071,6 +9581,16 @@
     },
     {
       "locale": "ko",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ko/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/kr/app/id6792856304",
+      "sha256": "5e909216481a74a9a0f3f77551ea7cd8c9ed2ab1611eae8aa9189e545186e719"
+    },
+    {
+      "locale": "ko",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ko/sononote.svg",
@@ -9188,6 +9708,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/in/app/id6790418321",
       "sha256": "0fad6a14e306b248aa6abe0decb3ff46d9598564e10a2ae151c63f93252d8e24"
+    },
+    {
+      "locale": "ml-IN",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ml-IN/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ml-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6794725568",
+      "sha256": "36204057ddc68c8618b433d2266afb4c7781aefca392fc3cf74b034dbba201f9"
     },
     {
       "locale": "ml-IN",
@@ -9421,6 +9951,16 @@
     },
     {
       "locale": "ml-IN",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ml-IN/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ml-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6792856304",
+      "sha256": "35902e8eca5ad137f57506853eafcaf94f5fa0e756ab589b5e7a3e58c79f14b6"
+    },
+    {
+      "locale": "ml-IN",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ml-IN/sononote.svg",
@@ -9538,6 +10078,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/in/app/id6790418321",
       "sha256": "c54b2a61d3487c7e399abf5f4fb99e84e5c7c437b3a590b709c969063dd2a0a4"
+    },
+    {
+      "locale": "mr-IN",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/mr-IN/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/mr-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6794725568",
+      "sha256": "4f8cda54fbad577305f5935ad15bf8dfd878bdc2df1b9b6efde242df30177fc1"
     },
     {
       "locale": "mr-IN",
@@ -9771,6 +10321,16 @@
     },
     {
       "locale": "mr-IN",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/mr-IN/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/mr-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6792856304",
+      "sha256": "2dfa81919d2c976ddd4154082c3c36227625054ec91c4c44c14890e68a5e1e66"
+    },
+    {
+      "locale": "mr-IN",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/mr-IN/sononote.svg",
@@ -9888,6 +10448,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/my/app/id6790418321",
       "sha256": "5461a3c54217722d7be74623b55a35ae2b0e1096245889872997623ad4919517"
+    },
+    {
+      "locale": "ms",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ms/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ms/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/my/app/id6794725568",
+      "sha256": "69ff5cf97e958f33d9da840f828e45e9eb7376613bc820e9e3c2196eb5e0785f"
     },
     {
       "locale": "ms",
@@ -10121,6 +10691,16 @@
     },
     {
       "locale": "ms",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ms/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ms/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/my/app/id6792856304",
+      "sha256": "1294f9bcc1eb76c55673f835a50798470bd5674b1c4a1b47fc2c123882ad2cfe"
+    },
+    {
+      "locale": "ms",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ms/sononote.svg",
@@ -10238,6 +10818,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/nl/app/id6790418321",
       "sha256": "8791c89915d67ca835bbabf8ae8a8040084ed21a8cf84acf4564a54290d229ed"
+    },
+    {
+      "locale": "nl-NL",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/nl-NL/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/nl-NL/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/nl/app/id6794725568",
+      "sha256": "e8086b611ffcea893a2f5b141bbec6178996ee83410a88518f1b2542fadde998"
     },
     {
       "locale": "nl-NL",
@@ -10471,6 +11061,16 @@
     },
     {
       "locale": "nl-NL",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/nl-NL/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/nl-NL/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/nl/app/id6792856304",
+      "sha256": "0be0ccdcad9c30360bbcc82dd78eff7f54f1bcc3bfc0509c565a1b458921cf0d"
+    },
+    {
+      "locale": "nl-NL",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/nl-NL/sononote.svg",
@@ -10588,6 +11188,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/no/app/id6790418321",
       "sha256": "e3aba6be4e8332489bcafab774068d19b76da31b67a00c2a325023b491700302"
+    },
+    {
+      "locale": "no",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/no/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/no/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/no/app/id6794725568",
+      "sha256": "ced8b9283a6878970108e7d228c8cdcaf1a254aae573f512072bbe2ea3dc1948"
     },
     {
       "locale": "no",
@@ -10821,6 +11431,16 @@
     },
     {
       "locale": "no",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/no/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/no/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/no/app/id6792856304",
+      "sha256": "84a21eee76c604863daa287f4ff8b4f9d66aa50f6231e1955a3b4d9598ce6d69"
+    },
+    {
+      "locale": "no",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/no/sononote.svg",
@@ -10938,6 +11558,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/in/app/id6790418321",
       "sha256": "943625a50eef7f9324dcdc15589287718a9584ec3718d8e015a54782df78de91"
+    },
+    {
+      "locale": "or-IN",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/or-IN/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/or-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6794725568",
+      "sha256": "43acfdb786367139a29416d44c93bf9e6f5bca678f153b121f887c5dc7ccadab"
     },
     {
       "locale": "or-IN",
@@ -11171,6 +11801,16 @@
     },
     {
       "locale": "or-IN",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/or-IN/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/or-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6792856304",
+      "sha256": "027f90083b9cf694ea614ac19004bd1f41d4bbd57a89f401e3c80970ff507518"
+    },
+    {
+      "locale": "or-IN",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/or-IN/sononote.svg",
@@ -11288,6 +11928,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/in/app/id6790418321",
       "sha256": "adc9691308a1120342f38e7725bbdcc4d1102c0c6bacae9db472d78b604d8e53"
+    },
+    {
+      "locale": "pa-IN",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pa-IN/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pa-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6794725568",
+      "sha256": "b671f876a641347c2cf73a74d3b71a3b378756ecf5fa3f3ba2c2f3c9b5c52ee9"
     },
     {
       "locale": "pa-IN",
@@ -11521,6 +12171,16 @@
     },
     {
       "locale": "pa-IN",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pa-IN/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pa-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6792856304",
+      "sha256": "c6f19f2287e9a184c14c808faeb914a221dbe969a3c8a2aa29dc0b9faa53cee5"
+    },
+    {
+      "locale": "pa-IN",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pa-IN/sononote.svg",
@@ -11638,6 +12298,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/pl/app/id6790418321",
       "sha256": "30d0b874e6e3e9ddb57a21b74a69ee5f19bd9eb1e4ad495fcfb158cef515f393"
+    },
+    {
+      "locale": "pl",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pl/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pl/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/pl/app/id6794725568",
+      "sha256": "fefc9f35fd2983641c9f016b3d9033a2708e8d3eaa1f32775d7c7c58167f3543"
     },
     {
       "locale": "pl",
@@ -11871,6 +12541,16 @@
     },
     {
       "locale": "pl",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pl/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pl/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/pl/app/id6792856304",
+      "sha256": "88a74ab32ee338a44a78edff012726c66c48621c71fd48a491c8d46c5740d97b"
+    },
+    {
+      "locale": "pl",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pl/sononote.svg",
@@ -11988,6 +12668,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/br/app/id6790418321",
       "sha256": "faa64485cc13b5006c1a3b89656ec5e49cbaff87718ed5d8a6340c460cf22602"
+    },
+    {
+      "locale": "pt-BR",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-BR/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-BR/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/br/app/id6794725568",
+      "sha256": "1bd99d03d98e8851351f2905e312c3f8cd1218e8c2c09994d5a79eabca500bc3"
     },
     {
       "locale": "pt-BR",
@@ -12221,6 +12911,16 @@
     },
     {
       "locale": "pt-BR",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-BR/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-BR/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/br/app/id6792856304",
+      "sha256": "a5b1ddd19c87db93b610128421ebcb2d184af46a99c09ba0118f1564583066a8"
+    },
+    {
+      "locale": "pt-BR",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-BR/sononote.svg",
@@ -12338,6 +13038,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/pt/app/id6790418321",
       "sha256": "16243ea7527e01d7bfa82a461fac632057e2a7af44e2eb8ba0f044459a04a0bf"
+    },
+    {
+      "locale": "pt-PT",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-PT/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-PT/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/pt/app/id6794725568",
+      "sha256": "21455c2a061ece4fba641e079e9a4388eee8f9af89734bf04ba5bb6d080501ae"
     },
     {
       "locale": "pt-PT",
@@ -12571,6 +13281,16 @@
     },
     {
       "locale": "pt-PT",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-PT/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-PT/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/pt/app/id6792856304",
+      "sha256": "96bcf56ed810182d2b7cdb930cd4b44a723a12bbf9c611da04ad94b989769340"
+    },
+    {
+      "locale": "pt-PT",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-PT/sononote.svg",
@@ -12688,6 +13408,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/ro/app/id6790418321",
       "sha256": "6da5880d58060ea7a7ee4061fbe2ebc353c7388700183f2f41fb36d423ef764a"
+    },
+    {
+      "locale": "ro",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ro/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ro/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/ro/app/id6794725568",
+      "sha256": "c9695ec6eb6dfc97b02a38f60a62dfba5927ed0f69c57d89e27c5d52460b1f48"
     },
     {
       "locale": "ro",
@@ -12921,6 +13651,16 @@
     },
     {
       "locale": "ro",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ro/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ro/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/ro/app/id6792856304",
+      "sha256": "5a70c28527ad82abbaa48339e0ed2af6edf7b67e72ebcf43c18da97e4f9d2489"
+    },
+    {
+      "locale": "ro",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ro/sononote.svg",
@@ -13038,6 +13778,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/ru/app/id6790418321",
       "sha256": "fd5f695f87a76924c0649324abc2d158709883d58961b2e938a5ac527f65fdfd"
+    },
+    {
+      "locale": "ru",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ru/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ru/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/ru/app/id6794725568",
+      "sha256": "afc679810d9cae8bda8ef5a9cea60948cd1579aed0099b14640a4bdbb2188e6f"
     },
     {
       "locale": "ru",
@@ -13271,6 +14021,16 @@
     },
     {
       "locale": "ru",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ru/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ru/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/ru/app/id6792856304",
+      "sha256": "d8c5c0dc0d703262f3a772affcc21e3296b1aa043fca2c7e18beb40c53e809da"
+    },
+    {
+      "locale": "ru",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ru/sononote.svg",
@@ -13388,6 +14148,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/sk/app/id6790418321",
       "sha256": "244f0b23c3cfe2aac2d5cb45336c499c85d39c85e03afc3a3bd82789a4f33dbb"
+    },
+    {
+      "locale": "sk",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sk/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sk/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/sk/app/id6794725568",
+      "sha256": "968851daf8f7ee863ad6c4c3df6cdab6446468f8afaf5803c2562f352eeba2bc"
     },
     {
       "locale": "sk",
@@ -13621,6 +14391,16 @@
     },
     {
       "locale": "sk",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sk/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sk/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/sk/app/id6792856304",
+      "sha256": "5c7499cf60d10d5b5c11d489f92bb716053e3f8217ff66e4c44e91237ce0f8ac"
+    },
+    {
+      "locale": "sk",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sk/sononote.svg",
@@ -13738,6 +14518,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/si/app/id6790418321",
       "sha256": "de9242be02c442d1c0ea208a33b65b4a400401a52bc22e037b8d4162f1c88f8a"
+    },
+    {
+      "locale": "sl-SI",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sl-SI/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sl-SI/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/si/app/id6794725568",
+      "sha256": "b1ba451fc54538e5aa9e307b191aaf1e81a8461c88f27e2bbc48b5cc752e1cd9"
     },
     {
       "locale": "sl-SI",
@@ -13971,6 +14761,16 @@
     },
     {
       "locale": "sl-SI",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sl-SI/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sl-SI/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/si/app/id6792856304",
+      "sha256": "d54e77db356fb24dafda17f4fef5a3d4a6bb30bde229069a68bd2301c0a0a135"
+    },
+    {
+      "locale": "sl-SI",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sl-SI/sononote.svg",
@@ -14088,6 +14888,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/se/app/id6790418321",
       "sha256": "75ca236d66cf934f044ff84c504db24dff891aaa7e3c0911f6e6ccfab42c9013"
+    },
+    {
+      "locale": "sv",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sv/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sv/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/se/app/id6794725568",
+      "sha256": "d5c26b250e15816124af5db3bc5cc7a169aa1d1af61ed87593e929f79a3dfecd"
     },
     {
       "locale": "sv",
@@ -14321,6 +15131,16 @@
     },
     {
       "locale": "sv",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sv/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sv/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/se/app/id6792856304",
+      "sha256": "fa2f90fd537a6ddae0607f176d0d27c2a2e1d006b71259ce593f687cc3348d12"
+    },
+    {
+      "locale": "sv",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sv/sononote.svg",
@@ -14438,6 +15258,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/in/app/id6790418321",
       "sha256": "c486520414f23827940570b03920116bbf791d0fea563d3a1fae591080773e4b"
+    },
+    {
+      "locale": "ta-IN",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ta-IN/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ta-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6794725568",
+      "sha256": "784ed6e816d527c1c5828369c9bd8349829e53f0a46d78806bc04b2cdd079db8"
     },
     {
       "locale": "ta-IN",
@@ -14671,6 +15501,16 @@
     },
     {
       "locale": "ta-IN",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ta-IN/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ta-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6792856304",
+      "sha256": "4cba7207258d08660a83345cc357b49002a453a71c6f3606e11ca3acfc05c4ef"
+    },
+    {
+      "locale": "ta-IN",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ta-IN/sononote.svg",
@@ -14788,6 +15628,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/in/app/id6790418321",
       "sha256": "e79b36f62f196f8906cfc8b933614254c657cbeb99a32152062e1c3ef9510af9"
+    },
+    {
+      "locale": "te-IN",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/te-IN/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/te-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6794725568",
+      "sha256": "57ad615feceae724a25fd27b0df578cc6e5ab2bd94be9c674f4a02f08ba01d4f"
     },
     {
       "locale": "te-IN",
@@ -15021,6 +15871,16 @@
     },
     {
       "locale": "te-IN",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/te-IN/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/te-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6792856304",
+      "sha256": "4480e61e52606dfe330263aafffd8ec6b5419f7ee77f47a7330e439ab41c97e4"
+    },
+    {
+      "locale": "te-IN",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/te-IN/sononote.svg",
@@ -15138,6 +15998,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/th/app/id6790418321",
       "sha256": "4e145f215d47fe5b224e68b98f38d687bda80406cb657e34c632479553d47420"
+    },
+    {
+      "locale": "th",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/th/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/th/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/th/app/id6794725568",
+      "sha256": "2809f47a9adbab376f5686a474941d639d1d750e02bd33501ff35ee24e606475"
     },
     {
       "locale": "th",
@@ -15371,6 +16241,16 @@
     },
     {
       "locale": "th",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/th/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/th/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/th/app/id6792856304",
+      "sha256": "f99a8399675292101a05e46cdc02c94cbfeecea4c90a5aadec73074c7cd6d460"
+    },
+    {
+      "locale": "th",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/th/sononote.svg",
@@ -15488,6 +16368,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/tr/app/id6790418321",
       "sha256": "5c12958447672b5a18341a28fff9994ee15352d6c0f66d4543425556febaad14"
+    },
+    {
+      "locale": "tr",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/tr/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/tr/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/tr/app/id6794725568",
+      "sha256": "126cb3699ad9ac6af5d66377099b161e6d0a4cdda4188df648017dcd4634c166"
     },
     {
       "locale": "tr",
@@ -15721,6 +16611,16 @@
     },
     {
       "locale": "tr",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/tr/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/tr/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/tr/app/id6792856304",
+      "sha256": "6cc09162ead5522669fe1e819441fd5249d71dc672f17cdbbaa8d991236c4996"
+    },
+    {
+      "locale": "tr",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/tr/sononote.svg",
@@ -15838,6 +16738,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/ua/app/id6790418321",
       "sha256": "7d30c9959a20a03666ea40434bd3c74105897682ffd27e8fb38bb75a7fd12415"
+    },
+    {
+      "locale": "uk",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/uk/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/uk/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/ua/app/id6794725568",
+      "sha256": "b3f0eec5d21fb9d85ea7b04e0860a4ebf6e7d402ecfe67179d2ee683ebbb4155"
     },
     {
       "locale": "uk",
@@ -16071,6 +16981,16 @@
     },
     {
       "locale": "uk",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/uk/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/uk/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/ua/app/id6792856304",
+      "sha256": "dc236bce858d7000a029dbeab2003893ddc6b722dda4c0b3e1d136a517bd12e6"
+    },
+    {
+      "locale": "uk",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/uk/sononote.svg",
@@ -16188,6 +17108,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/pk/app/id6790418321",
       "sha256": "bc49a5885f3852db5de46903508b9841d16d7ac21610d8f3a3eaf01b410afa23"
+    },
+    {
+      "locale": "ur-PK",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ur-PK/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ur-PK/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/pk/app/id6794725568",
+      "sha256": "3df2ac1ccdd5010c085a856f7ac0a87d1081c0bf665173217bf05bd6b2d3df1b"
     },
     {
       "locale": "ur-PK",
@@ -16421,6 +17351,16 @@
     },
     {
       "locale": "ur-PK",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ur-PK/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ur-PK/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/pk/app/id6792856304",
+      "sha256": "b38b3f054e5050364efde89047053b0d74524f38d492ec7518d25a95ca45877e"
+    },
+    {
+      "locale": "ur-PK",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ur-PK/sononote.svg",
@@ -16538,6 +17478,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/vn/app/id6790418321",
       "sha256": "49966c4e28164aedcfa19b733bf892625577dfd23a2fa36cecf5ed4ebf1ddd05"
+    },
+    {
+      "locale": "vi",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/vi/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/vi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/vn/app/id6794725568",
+      "sha256": "94ed68ef7e63cdb185fbf8ee2fa7866542efde365372c9483d68b32062f9dfec"
     },
     {
       "locale": "vi",
@@ -16771,6 +17721,16 @@
     },
     {
       "locale": "vi",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/vi/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/vi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/vn/app/id6792856304",
+      "sha256": "ad3b48d4d53eca26b1d1a0f56e2253f398836a65a30bd938ddd3bf4c9d9331c2"
+    },
+    {
+      "locale": "vi",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/vi/sononote.svg",
@@ -16888,6 +17848,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/cn/app/id6790418321",
       "sha256": "5a5a25fb6fd2973e2c145af2219ec239f96859fd6ec8d653fa3a946cb4c0f4d9"
+    },
+    {
+      "locale": "zh-Hans",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hans/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/cn/app/id6794725568",
+      "sha256": "de1c503b3074f1b0234d66b0e163ba9066708e82ef233883c5ebf62a1f80de9d"
     },
     {
       "locale": "zh-Hans",
@@ -17121,6 +18091,16 @@
     },
     {
       "locale": "zh-Hans",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hans/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/cn/app/id6792856304",
+      "sha256": "6ed69df0a417852f84bd777ec4228d0c0048ec387f3ff5aacf77adcf14fce3c0"
+    },
+    {
+      "locale": "zh-Hans",
       "app_key": "sononote",
       "app_store_id": "6782139553",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hans/sononote.svg",
@@ -17238,6 +18218,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6790418321",
       "sha256": "d1611dbf6523a961e445d64da64569bf28bfab3f1b3b6c6dfc3d3f1818ec1b2f"
+    },
+    {
+      "locale": "zh-Hant",
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hant/dailymatelite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/dailymatelite.html",
+      "app_store_url": "https://apps.apple.com/tw/app/id6794725568",
+      "sha256": "6694fe3c7619bf7c4674f4057092d8757583e01a747264f628285bdb73d05a88"
     },
     {
       "locale": "zh-Hant",
@@ -17468,6 +18458,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6780575828",
       "sha256": "6ed8894c17e92d9962f5c7a63d735545a72ce83bf4dc677d945638203af210a4"
+    },
+    {
+      "locale": "zh-Hant",
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hant/snapportlite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/snapportlite.html",
+      "app_store_url": "https://apps.apple.com/tw/app/id6792856304",
+      "sha256": "b9eec95b1d5be5885bf496065c94b29ab412a28e43b6eaffe717969a326c9bba"
     },
     {
       "locale": "zh-Hant",

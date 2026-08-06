@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-02",
-  "content_digest": "8f14ab5dd69dc7ba96582d9414c5670e0f832e1998ad3b3ee53a697c7a258fbb",
+  "date_modified": "2026-08-06",
+  "content_digest": "e499f1b9dd6e3a651b486ed5c38469cb3e1888517203b07b7274c5e6a917280d",
   "locale": "ml-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 35,
+  "record_count": 37,
   "apps": [
     {
       "key": "aibriefpack",
@@ -279,6 +279,44 @@
         "currency": "INR",
         "formatted_price": "₹ 1,199",
         "storefront_url": "https://apps.apple.com/in/app/id6790418321"
+      }
+    },
+    {
+      "key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "name": "DailyMate Lite: സംസാരിക്കൂ",
+      "summary": "സംസാരിക്കേണ്ട നിമിഷത്തിൽ ശരിയായ വാക്കുകൾ തയ്യാറായിരിക്കട്ടെ. DailyMate Lite യഥാർഥ ജീവിതസാഹചര്യങ്ങളെ ചെറുതും സ്വാഭാവികവുമായ സൂചന–മറുപടി പരിശീലനങ്ങളാക്കുന്നു—50 ഭാഷകളിൽ. ഏത് ഭാഷയിലും യാത്രാ വിഷയത്തിന്റെ തുടക്കനില സൗജന്യമായി പരീക്ഷിക്കൂ; മുഴുവൻ ലൈബ്രറി വേണമെങ്കിൽ ഒറ്റത്തവണ അൺലോക്ക് ചെയ്യൂ. സബ്‌സ്‌ക്രിപ്ഷൻ ഇല്ല.",
+      "category": "kids",
+      "search_terms": [
+        "ഭാഷാപഠനം",
+        "സ്പോക്കൺ ഇംഗ്ലീഷ്",
+        "ഉച്ചാരണം",
+        "ദൈനംദിന വാക്യങ്ങൾ",
+        "യാത്രാ സഹായി",
+        "കേൾവി",
+        "പദസമ്പത്ത്",
+        "ജാപ്പനീസ്",
+        "കൊറിയൻ"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6794725568",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/dailymatelite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "സൗജന്യം",
+        "storefront_url": "https://apps.apple.com/in/app/id6794725568"
       }
     },
     {
@@ -1493,6 +1531,45 @@
         "currency": "INR",
         "formatted_price": "₹ 499",
         "storefront_url": "https://apps.apple.com/in/app/id6780575828"
+      }
+    },
+    {
+      "key": "snapportlite",
+      "app_store_id": "6792856304",
+      "name": "Snapport Lite",
+      "summary": "Snapport Lite - നിർദ്ദേശിച്ച വലുപ്പം, പശ്ചാത്തല ഉപകരണങ്ങൾ, പ്രിന്റ്-റെഡി എക്സ്പോർട്ട് ഉപയോഗിച്ച് പാസ്പോർട്ട്, വിസ, ഡോക്യുമെന്റ് ഫോട്ടോകൾ ഉണ്ടാക്കുക.",
+      "category": "photo-utility",
+      "search_terms": [
+        "പാസ്പോർട്ട്",
+        "വിസ",
+        "ഐഡി കാർഡ്",
+        "വിദ്യാർത്ഥി ഐഡി",
+        "റിസ്യൂം / സി.വി",
+        "ജോലി ബാഡ്ജ്",
+        "സ്വകാര്യ വലുപ്പം",
+        "വെള്ളം",
+        "നീല",
+        "A4"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6792856304",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/snapportlite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "സൗജന്യം",
+        "storefront_url": "https://apps.apple.com/in/app/id6792856304"
       }
     },
     {

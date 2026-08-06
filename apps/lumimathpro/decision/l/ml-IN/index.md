@@ -2,7 +2,7 @@
 title: "പ്രീസ്കൂൾ, പ്രാരംഭ ക്ലാസുകൾക്കായി മികച്ച പൂർണ്ണ ഗണിത പഠന ആപ്പ്"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/ml-IN/index.html"
-modified: "2026-08-02"
+modified: "2026-08-06"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

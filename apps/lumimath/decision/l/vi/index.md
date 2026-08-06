@@ -2,7 +2,7 @@
 title: "ứng dụng trò chơi toán học tốt nhất cho trẻ phát triển kỹ năng logic trên iPhone"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/vi/index.html"
-modified: "2026-08-02"
+modified: "2026-08-06"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

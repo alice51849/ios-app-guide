@@ -2,7 +2,7 @@
 title: "Mask My File — Nascondi i dati sensibili | iOS App"
 lang: "it"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/it/index.html"
-modified: "2026-08-02"
+modified: "2026-08-06"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

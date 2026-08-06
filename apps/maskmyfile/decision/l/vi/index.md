@@ -2,7 +2,7 @@
 title: "best on-device file redaction app for freelancers sharing client documents"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/vi/index.html"
-modified: "2026-08-02"
+modified: "2026-08-06"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

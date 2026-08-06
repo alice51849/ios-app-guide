@@ -2,7 +2,7 @@
 title: "G+Money Lite — Gastos, presupuesto y divisas | iOS App"
 lang: "es-MX"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/es-MX/index.html"
-modified: "2026-08-02"
+modified: "2026-08-06"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

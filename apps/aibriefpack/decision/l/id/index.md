@@ -2,7 +2,7 @@
 title: "best private app to organize screenshots and documents into context before using AI"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/id/index.html"
-modified: "2026-08-02"
+modified: "2026-08-06"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,4 +22,4 @@ AI Brief — Organize screenshots, PDFs, files, notes, and links into a traceabl
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html)
 
-> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.
+> Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.

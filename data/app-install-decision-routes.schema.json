@@ -74,13 +74,13 @@
       "uniqueItems": true
     },
     "app_count": {
-      "const": 35
+      "const": 37
     },
     "locale_count": {
       "const": 50
     },
     "record_count": {
-      "const": 1750
+      "const": 1850
     },
     "locales": {
       "type": "array",
@@ -223,8 +223,8 @@
     },
     "records": {
       "type": "array",
-      "minItems": 1750,
-      "maxItems": 1750,
+      "minItems": 1850,
+      "maxItems": 1850,
       "items": {
         "$ref": "#/$defs/record"
       }
@@ -360,6 +360,7 @@
             "cvdesk",
             "cyca",
             "dailymate",
+            "dailymatelite",
             "gmoney",
             "gmoneylite",
             "hourstag",
@@ -382,6 +383,7 @@
             "scanto",
             "sereno",
             "snapport",
+            "snapportlite",
             "sononote",
             "tripbee",
             "tripbeelite",

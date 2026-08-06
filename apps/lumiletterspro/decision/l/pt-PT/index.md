@@ -2,7 +2,7 @@
 title: "melhor app completo de fonética para preparação de jardim de infância em ensino doméstico"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/pt-PT/index.html"
-modified: "2026-08-02"
+modified: "2026-08-06"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"

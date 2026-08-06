@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-02",
-  "content_digest": "8f14ab5dd69dc7ba96582d9414c5670e0f832e1998ad3b3ee53a697c7a258fbb",
+  "date_modified": "2026-08-06",
+  "content_digest": "e499f1b9dd6e3a651b486ed5c38469cb3e1888517203b07b7274c5e6a917280d",
   "locale": "sl-SI",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 35,
+  "record_count": 37,
   "apps": [
     {
       "key": "aibriefpack",
@@ -279,6 +279,44 @@
         "currency": "EUR",
         "formatted_price": "12,99 €",
         "storefront_url": "https://apps.apple.com/si/app/id6790418321"
+      }
+    },
+    {
+      "key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "name": "DailyMate Lite: Govori danes",
+      "summary": "Govori, ko je pomembno. DailyMate Lite resnične situacije spremeni v kratke vaje z uporabno iztočnico in naravnim odgovorom v 50 jezikih. Brezplačno začni s temo Potovanja na začetni ravni, nato pa z enim nakupom odkleni celotno zbirko. Brez naročnine.",
+      "category": "kids",
+      "search_terms": [
+        "učenje",
+        "pogovor",
+        "izgovorjava",
+        "fraze za potovanja",
+        "poslušanje",
+        "angleščina",
+        "nemščina",
+        "španščina",
+        "italijanščina"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/si/app/id6794725568",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/dailymatelite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno",
+        "storefront_url": "https://apps.apple.com/si/app/id6794725568"
       }
     },
     {
@@ -1502,6 +1540,41 @@
         "currency": "EUR",
         "formatted_price": "5,99 €",
         "storefront_url": "https://apps.apple.com/si/app/id6780575828"
+      }
+    },
+    {
+      "key": "snapportlite",
+      "app_store_id": "6792856304",
+      "name": "Snapport Lite",
+      "summary": "Snapport Lite - Ustvari potniške, vizumske in dokumentne fotografije s pomočjo usmerjenega merjenja, orodij za ozadje in izvoza, pripravljenega za tisk.",
+      "category": "photo-utility",
+      "search_terms": [
+        "fotografija za potni list",
+        "slika za osebno",
+        "biometrična fotografija",
+        "fotografija za dokumente",
+        "35x45",
+        "2x2"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/si/app/id6792856304",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/snapportlite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno",
+        "storefront_url": "https://apps.apple.com/si/app/id6792856304"
       }
     },
     {

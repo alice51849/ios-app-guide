@@ -2,7 +2,7 @@
 title: "2026년 경력 전환자를 위한 최고의 이력서 작성 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ko/cvdesk.html"
-modified: "2026-08-02"
+modified: "2026-08-07"
 video_url: "https://files.catbox.moe/fdknhv.mp4"
 duration: "PT16S"
 app_store_id: "6781337213"

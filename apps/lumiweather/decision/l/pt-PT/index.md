@@ -2,7 +2,7 @@
 title: "melhor app de meteorologia para ajudar pais a planear tempo ao ar livre com crianças"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/pt-PT/index.html"
-modified: "2026-08-02"
+modified: "2026-08-06"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "best on-device file redaction app for freelancers sharing client documents"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/pt-PT/index.html"
-modified: "2026-08-02"
+modified: "2026-08-06"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,4 +22,4 @@ Before a client document leaves your phone, the safest workflow is to hide only 
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html)
 
-> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.
+> Guia da autoria do editor Lumi Studio, o programador da app. Os nomes das apps são marcas dos seus proprietários e são usados apenas para identificação. Para decisões sobre documentos, saúde, escola e produtividade, verifique os requisitos oficiais quando relevante.

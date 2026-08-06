@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ar-SA",
-  "dateModified": "2026-08-02",
-  "content_digest": "e5bfe67ce45753740357eeca269b9d35c0540b62ea2875b9d353bd43f3b5580a",
-  "generation_digest": "fba7106f0739bc21b7780395db7e34437f3398d54d36d80e4aa52f98445f0433",
+  "dateModified": "2026-08-06",
+  "content_digest": "ca8b091109e6b07316a3345412b1d1b0eb3c22b48e4b94af247c215fa0d1fe2f",
+  "generation_digest": "88fae4dcde9847762983f925a43c469e92f332543939a5c49a7a712f39c13080",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 35,
+  "record_count": 37,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ar-SA.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ar-SA.rss.xml",
@@ -59,7 +59,7 @@
         "formatted_price": "مجاني"
       },
       "guide_cta_label": "اقرأ الدليل الكامل",
-      "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
+      "publisher_disclosure": "دليل من إعداد الناشر Lumi Studio، مطوّر التطبيق. أسماء التطبيقات علامات تجارية لأصحابها وتُستخدم للتعريف فقط. لقرارات المستندات والصحة والمدرسة والإنتاجية، تحقق من المتطلبات الرسمية عند الحاجة.",
       "source_persona_query": "best on-device file redaction app for freelancers sharing client documents",
       "source_surface": "answer_page",
       "query_origin": "publisher_authored_editorially_localized",
@@ -104,7 +104,7 @@
         "formatted_price": "SAR 24.99"
       },
       "guide_cta_label": "اقرأ الدليل الكامل",
-      "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
+      "publisher_disclosure": "دليل من إعداد الناشر Lumi Studio، مطوّر التطبيق. أسماء التطبيقات علامات تجارية لأصحابها وتُستخدم للتعريف فقط. لقرارات المستندات والصحة والمدرسة والإنتاجية، تحقق من المتطلبات الرسمية عند الحاجة.",
       "source_persona_query": "best wifi troubleshooting app for remote workers with connected but no internet",
       "source_surface": "answer_page",
       "query_origin": "publisher_authored_editorially_localized",
@@ -149,7 +149,7 @@
         "formatted_price": "مجاني"
       },
       "guide_cta_label": "اقرأ الدليل الكامل",
-      "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
+      "publisher_disclosure": "دليل من إعداد الناشر Lumi Studio، مطوّر التطبيق. أسماء التطبيقات علامات تجارية لأصحابها وتُستخدم للتعريف فقط. لقرارات المستندات والصحة والمدرسة والإنتاجية، تحقق من المتطلبات الرسمية عند الحاجة.",
       "source_persona_query": "best last time tracker app for household maintenance without a subscription",
       "source_surface": "answer_page",
       "query_origin": "publisher_authored_editorially_localized",
@@ -199,7 +199,7 @@
         "formatted_price": "مجاني"
       },
       "guide_cta_label": "اقرأ الدليل الكامل",
-      "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
+      "publisher_disclosure": "دليل من إعداد الناشر Lumi Studio، مطوّر التطبيق. أسماء التطبيقات علامات تجارية لأصحابها وتُستخدم للتعريف فقط. لقرارات المستندات والصحة والمدرسة والإنتاجية، تحقق من المتطلبات الرسمية عند الحاجة.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
       "source_surface": "answer_page",
       "query_origin": "publisher_authored_editorially_localized",
@@ -289,7 +289,7 @@
         "formatted_price": "SAR 24.99"
       },
       "guide_cta_label": "اقرأ الدليل الكامل",
-      "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
+      "publisher_disclosure": "دليل من إعداد الناشر Lumi Studio، مطوّر التطبيق. أسماء التطبيقات علامات تجارية لأصحابها وتُستخدم للتعريف فقط. لقرارات المستندات والصحة والمدرسة والإنتاجية، تحقق من المتطلبات الرسمية عند الحاجة.",
       "source_persona_query": "best offline English listening and reading exam trainer for iPhone",
       "source_surface": "answer_page",
       "query_origin": "publisher_authored_editorially_localized",
@@ -443,6 +443,51 @@
       "verified_live": true
     },
     {
+      "record_id": "ar-SA:dailymatelite",
+      "locale": "ar-SA",
+      "app_key": "dailymatelite",
+      "app_name": "DailyMate Lite: تكلّم الآن",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "DailyMate Lite: تكلّم الآن — ٥٠ لغة لمواقف حقيقية | iOS App",
+      "decision_context": "تكلّم بثقة عندما يحين الموقف. يحوّل DailyMate Lite مواقف الحياة اليومية إلى تدريب قصير يجمع عبارة تبدأ الحوار بردّ طبيعي، عبر ٥٠ لغة. ابدأ مجانًا بموضوع السفر للمبتدئين، ثم افتح المكتبة الكاملة بشراء واحد مدى الحياة. لا اشتراك. تعلّم الحوار كاملًا تضع كل بطاقة عبارة عملية وردّها الطبيعي معًا، لتتدرّب على التبادل كاملًا بدل حفظ كلمات منفصلة. • ٨٬٤٠٠ زوج من العبارات والردود • ٥٠ لغة للتعلّم • ١٤ موضوعًا و٨٤ موقفًا واقعيًا • ثلاثة مستويات: مبتدئ ومتوسط ومتقدم • نطق بأصوات النظام المناسبة • تقدّم وسلسلة تعلّم وعبارات محفوظة مستقلة لكل لغة ابدأ مجانًا اختر أي لغة وتدرّب مجانًا على موضوع السفر كاملًا في مستوى المبتدئين. وتبقى بقية المواضيع والمستويات ظاهرة في معاينات حقيقية. فتح دائم بشراء واحد يفتح شراء واحد جميع المواضيع والمستويات، وكامل مكتبة العبارات، والحفظ بلا حدود، والأدوات التفاعلية، وApple Watch، وApp Intents. لا رسوم شهرية ولا اشتراك. مصمم لكل شاشة استمتع بتجربة متكيفة على iPhone وiPad، واعرض تدريبك التالي على الشاشة الرئيسية، وواصل من تطبيق Apple Watch المخصص. خصوصيتك أولًا لا حساب، ولا إعلانات من أطراف ثالثة، ولا تحليلات أو تتبع. تبقى بيانات التعلّم الأساسية على جهازك، ويستخدم النطق أصوات النظام المثبتة. تعلّم بوتيرتك تدرّب قبل السفر، وبين الاجتماعات، وأثناء انتظار القهوة، أو قبل أي حوار مهم. بدّل اللغة أو الموضوع أو المستوى من دون أن تفقد تقدّمك. Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+      "category": "kids",
+      "category_label": "الأطفال والتعلم",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "بدء مجاني · فتح دائم",
+      "one_time_option": true,
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "الأطفال والتعلم",
+        "بدء مجاني · فتح دائم",
+        "App Store · مجاني"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/dailymatelite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/ar-SA/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/ar-SA/dailymatelite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fdailymatelite%2Fdecision%2Fl%2Far-SA%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ar-SA.json",
+      "app_store_id": "6794725568",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794725568",
+      "app_store_url": "https://apps.apple.com/sa/app/id6794725568",
+      "app_store_cta_label": "احصل على DailyMate Lite: تكلّم الآن من App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "SAR",
+        "formatted_price": "مجاني"
+      },
+      "guide_cta_label": "اقرأ الدليل الكامل",
+      "publisher_disclosure": "هذه مادة ينشرها Lumi Studio مباشرةً بصفته مطور جميع التطبيقات المدرجة.",
+      "source_persona_query": "best free travel phrasebook app with real dialogues for iphone",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "ar-SA:gmoney",
       "locale": "ar-SA",
       "app_key": "gmoney",
@@ -537,7 +582,7 @@
         "formatted_price": "مجاني"
       },
       "guide_cta_label": "اقرأ الدليل الكامل",
-      "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
+      "publisher_disclosure": "دليل من إعداد الناشر Lumi Studio، مطوّر التطبيق. أسماء التطبيقات علامات تجارية لأصحابها وتُستخدم للتعريف فقط. لقرارات المستندات والصحة والمدرسة والإنتاجية، تحقق من المتطلبات الرسمية عند الحاجة.",
       "source_persona_query": "best free travel expense tracker with currency conversion for iphone",
       "source_surface": "answer_page",
       "query_origin": "publisher_authored_editorially_localized",
@@ -590,7 +635,7 @@
         "formatted_price": "SAR 19.99"
       },
       "guide_cta_label": "اقرأ الدليل الكامل",
-      "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
+      "publisher_disclosure": "دليل من إعداد الناشر Lumi Studio، مطوّر التطبيق. أسماء التطبيقات علامات تجارية لأصحابها وتُستخدم للتعريف فقط. لقرارات المستندات والصحة والمدرسة والإنتاجية، تحقق من المتطلبات الرسمية عند الحاجة.",
       "source_persona_query": "best app to track where my money goes and save more",
       "source_surface": "answer_page",
       "query_origin": "publisher_authored_editorially_localized",
@@ -635,7 +680,7 @@
         "formatted_price": "مجاني"
       },
       "guide_cta_label": "اقرأ الدليل الكامل",
-      "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
+      "publisher_disclosure": "دليل من إعداد الناشر Lumi Studio، مطوّر التطبيق. أسماء التطبيقات علامات تجارية لأصحابها وتُستخدم للتعريف فقط. لقرارات المستندات والصحة والمدرسة والإنتاجية، تحقق من المتطلبات الرسمية عند الحاجة.",
       "source_persona_query": "best app to convert prices into work hours before buying",
       "source_surface": "answer_page",
       "query_origin": "publisher_authored_editorially_localized",
@@ -1492,6 +1537,56 @@
       "publisher_disclosure": "دليل من تأليف الناشر من لومي ستوديو، مطور التطبيق. أسماء التطبيقات علامات تجارية لأصحابها وتُستخدم فقط للتعريف. للتحقق من الوثائق، الصحة، المدرسة، وقرارات الإنتاجية، تحقق من المتطلبات الرسمية عند الاقتضاء.",
       "source_persona_query": "best passport photo app for babies and toddlers at home",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ar-SA:snapportlite",
+      "locale": "ar-SA",
+      "app_key": "snapportlite",
+      "app_name": "Snapport Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Snapport Lite — أنشئ صور الوثائق في المنزل | iOS App",
+      "decision_context": "Snapport Lite - أنشئ صور جواز السفر والتأشيرة والهوية مع إرشادات المقاس والخلفية والطباعة. النسخة المجانية · تدعم تصديرًا واحدًا - شراء لمرة واحدة · لك للأبد · بلا اشتراك - بلا إعلانات أو تتبّع القوالب - صور جواز السفر والتأشيرة والهوية، جاهزة للطباعة. - يعمل Snapport Lite دون اتصال. يقوم التحقّق فقط بتنزيل قائمة مقاسات عامة؛ لا تُرسل أي بيانات شخصية. اقتصاص ومحاذاة - حاذِ الوجه مع الدليل. قد تختلف المتطلبات؛ تحقّق من القواعد الرسمية. الخلفية - قد تتطلّب إزالة الخلفية مراجعة. ضبط - حافظ على مظهر طبيعي للوثائق الرسمية. تصدير - صدّر صورة واحدة أو ورقة طباعة. الخصوصية - تبقى صورك على iPhone. - بلا حساب - بلا رفع سحابي - يعمل اكتشاف الوجه على الجهاز لمحاذاة الصورة. لا تُخزَّن أي بيانات حيوية. - أنت تتحكّم في التصدير والمشاركة تختلف المتطلبات حسب الدولة والجهة ونوع الطلب. تحقّق دائماً من القواعد الرسمية قبل التقديم.",
+      "category": "photo-utility",
+      "category_label": "الصورة والأدوات",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "بدء مجاني · فتح دائم",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline"
+      ],
+      "privacy_labels": [
+        "دون اتصال"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "الصورة والأدوات",
+        "بدء مجاني · فتح دائم",
+        "دون اتصال",
+        "App Store · مجاني"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/snapportlite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/ar-SA/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/ar-SA/snapportlite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fsnapportlite%2Fdecision%2Fl%2Far-SA%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ar-SA.json",
+      "app_store_id": "6792856304",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6792856304",
+      "app_store_url": "https://apps.apple.com/sa/app/id6792856304",
+      "app_store_cta_label": "احصل على Snapport Lite من App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "SAR",
+        "formatted_price": "مجاني"
+      },
+      "guide_cta_label": "اقرأ الدليل الكامل",
+      "publisher_disclosure": "هذه مادة ينشرها Lumi Studio مباشرةً بصفته مطور جميع التطبيقات المدرجة.",
+      "source_persona_query": "best free passport photo app for iphone that works offline",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "zh-Hant",
-  "dateModified": "2026-08-02",
-  "content_digest": "e5bfe67ce45753740357eeca269b9d35c0540b62ea2875b9d353bd43f3b5580a",
-  "generation_digest": "fba7106f0739bc21b7780395db7e34437f3398d54d36d80e4aa52f98445f0433",
+  "dateModified": "2026-08-06",
+  "content_digest": "ca8b091109e6b07316a3345412b1d1b0eb3c22b48e4b94af247c215fa0d1fe2f",
+  "generation_digest": "88fae4dcde9847762983f925a43c469e92f332543939a5c49a7a712f39c13080",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 35,
+  "record_count": 37,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/zh-Hant.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/zh-Hant.rss.xml",
@@ -455,6 +455,51 @@
       "verified_live": true
     },
     {
+      "record_id": "zh-Hant:dailymatelite",
+      "locale": "zh-Hant",
+      "app_key": "dailymatelite",
+      "app_name": "DailyMate Lite：開口練習",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "DailyMate Lite：開口練習 — 50 種語言情境短句 | iOS App",
+      "decision_context": "想開口時，不必先在腦中拼湊單字。DailyMate Lite 將旅行、工作、餐飲、健康等生活情境整理成簡短提示與自然回覆，讓你用完整的一來一往練習 50 種語言。 練真正用得上的對話 每張卡片都把實用提示與自然回覆放在一起，學的不只是單字，而是一組能直接運用的對話。 • 8,400 組情境提示與回覆 • 50 種學習語言 • 14 大主題、84 個生活情境 • 初級、中級與高級 • 使用裝置內建系統語音，可調整語速 • 各語言的進度、連續學習天數與收藏分開保存 免費開始 你可以選擇任何學習語言，免費練習「旅行」主題的初級內容。其他主題與級別仍可查看真實預覽。 一次買斷，完整使用 一次性非消耗型購買可解鎖所有主題、三種級別、完整 8,400 組內容、無限收藏、互動式小工具、Apple Watch 與 App Intents。 為每個螢幕設計 iPhone 與 iPad 都有原生自適應版面；主畫面小工具可保留下一組練習，也能在專屬 Apple Watch App 上接著學。 重視隱私 不需帳號，沒有第三方廣告、分析或追蹤。核心學習資料留在裝置上，發音使用已安裝的系統語音。 隨時接著學 出發旅行前、會議空檔或等咖啡時，都能快速練習。切換語言、主題或級別，也不會失去目前進度。 Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+      "category": "kids",
+      "category_label": "兒童與學習",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "免費開始 · 永久解鎖",
+      "one_time_option": true,
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "兒童與學習",
+        "免費開始 · 永久解鎖",
+        "App Store · 免費"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/dailymatelite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/zh-Hant/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/zh-Hant/dailymatelite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fdailymatelite%2Fdecision%2Fl%2Fzh-Hant%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
+      "app_store_id": "6794725568",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794725568",
+      "app_store_url": "https://apps.apple.com/tw/app/id6794725568",
+      "app_store_cta_label": "在 App Store 取得 DailyMate Lite：開口練習",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費"
+      },
+      "guide_cta_label": "閱讀完整指南",
+      "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
+      "source_persona_query": "best free travel phrasebook app with real dialogues for iphone",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "zh-Hant:gmoney",
       "locale": "zh-Hant",
       "app_key": "gmoney",
@@ -744,7 +789,7 @@
         "免費開始 · 永久解鎖",
         "無廣告",
         "App Store · 免費",
-        "★ 5.0/5 · 3"
+        "★ 4.5/5 · 4"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/zh-Hant/index.html",
@@ -758,8 +803,8 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
-        "rating_value": 5.0,
-        "rating_count": 3
+        "rating_value": 4.5,
+        "rating_count": 4
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
@@ -1546,6 +1591,56 @@
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
       "source_persona_query": "best passport photo app for babies and toddlers at home",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "zh-Hant:snapportlite",
+      "locale": "zh-Hant",
+      "app_key": "snapportlite",
+      "app_name": "Snapport Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Snapport Lite — 在家製作證件照 | iOS App",
+      "decision_context": "Snapport Lite - 透過尺寸引導、背景工具與可列印輸出，製作護照、簽證與證件照。 免費版可匯出 1 次 - 一次購買 · 永久使用 · 無需訂閱 - 無廣告，無追蹤 範本 - 護照、簽證與證件照，可直接列印。 - Snapport Lite 完全離線運作。檢查更新只會下載公開的常用尺寸清單，不會傳送任何個人資料。 裁剪與對齊 - 將臉部對齊指引。規格可能因用途而異，送件前請確認官方規定。 背景 - 去背結果可能需要手動微調。 調整 - 證件照應保持自然外觀。 匯出 - 可匯出單張照片或排版列印。 隱私 - 你的照片只留在 iPhone。 - 無帳號 - 無雲端上傳 - 臉部偵測只在裝置端執行，用來協助對齊照片，不會儲存任何生物辨識身分資料。 - 由你決定何時匯出與分享 照片規格因國家、機關與申請類型而異，送件前請確認官方規定。",
+      "category": "photo-utility",
+      "category_label": "照片與實用工具",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "免費開始 · 永久解鎖",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline"
+      ],
+      "privacy_labels": [
+        "離線使用"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "照片與實用工具",
+        "免費開始 · 永久解鎖",
+        "離線使用",
+        "App Store · 免費"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/snapportlite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/zh-Hant/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/zh-Hant/snapportlite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fsnapportlite%2Fdecision%2Fl%2Fzh-Hant%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
+      "app_store_id": "6792856304",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6792856304",
+      "app_store_url": "https://apps.apple.com/tw/app/id6792856304",
+      "app_store_cta_label": "在 App Store 取得 Snapport Lite",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費"
+      },
+      "guide_cta_label": "閱讀完整指南",
+      "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
+      "source_persona_query": "best free passport photo app for iphone that works offline",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

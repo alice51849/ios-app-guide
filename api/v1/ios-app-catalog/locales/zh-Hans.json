@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-02",
-  "content_digest": "8f14ab5dd69dc7ba96582d9414c5670e0f832e1998ad3b3ee53a697c7a258fbb",
+  "date_modified": "2026-08-06",
+  "content_digest": "e499f1b9dd6e3a651b486ed5c38469cb3e1888517203b07b7274c5e6a917280d",
   "locale": "zh-Hans",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 35,
+  "record_count": 37,
   "apps": [
     {
       "key": "aibriefpack",
@@ -323,6 +323,67 @@
         "currency": "CNY",
         "formatted_price": "¥88.00",
         "storefront_url": "https://apps.apple.com/cn/app/id6790418321"
+      }
+    },
+    {
+      "key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "name": "DailyMate Lite：开口练习",
+      "summary": "想开口时，不必先在脑中拼凑单词。DailyMate Lite 将旅行、工作、餐饮、健康等生活场景整理成简短提示与自然回复，让你用完整的一问一答练习 50 种语言。",
+      "category": "kids",
+      "search_terms": [
+        "会话",
+        "口语",
+        "旅游",
+        "发音",
+        "听力",
+        "英语",
+        "日语",
+        "韩语",
+        "西班牙语",
+        "法语",
+        "德语",
+        "意大利语",
+        "入门",
+        "日常",
+        "外语",
+        "单词",
+        "自学",
+        "出国",
+        "机场",
+        "酒店",
+        "餐厅",
+        "问路",
+        "商务",
+        "面试",
+        "留学",
+        "离线",
+        "跟读",
+        "句型",
+        "生活",
+        "交流",
+        "实用",
+        "问答"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/cn/app/id6794725568",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/dailymatelite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费",
+        "storefront_url": "https://apps.apple.com/cn/app/id6794725568"
       }
     },
     {
@@ -1758,6 +1819,55 @@
         "currency": "CNY",
         "formatted_price": "¥38.00",
         "storefront_url": "https://apps.apple.com/cn/app/id6780575828"
+      }
+    },
+    {
+      "key": "snapportlite",
+      "app_store_id": "6792856304",
+      "name": "Snapport Lite",
+      "summary": "Snapport Lite - 通过尺寸引导、背景工具和可打印输出，制作护照、签证和证件照。",
+      "category": "photo-utility",
+      "search_terms": [
+        "护照照片",
+        "签证照片",
+        "寸照",
+        "身份证照片",
+        "大头照",
+        "简历照",
+        "学生证照片",
+        "工作证照片",
+        "白底照片",
+        "蓝底照片",
+        "红底照片",
+        "换背景",
+        "抠图",
+        "照片打印",
+        "排版打印",
+        "35x45",
+        "2x2",
+        "33x48",
+        "自定义尺寸",
+        "生物识别照片"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/cn/app/id6792856304",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/snapportlite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费",
+        "storefront_url": "https://apps.apple.com/cn/app/id6792856304"
       }
     },
     {

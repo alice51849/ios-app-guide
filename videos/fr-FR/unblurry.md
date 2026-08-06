@@ -2,7 +2,7 @@
 title: "meilleure application pour corriger les photos floues d’enfants sur iPhone"
 lang: "fr-FR"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/fr-FR/unblurry.html"
-modified: "2026-08-02"
+modified: "2026-08-07"
 video_url: "https://files.catbox.moe/sbugs3.mp4"
 duration: "PT16S"
 app_store_id: "6782275018"

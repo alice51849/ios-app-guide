@@ -2,7 +2,7 @@
 title: "best educational game app for kids no ads iphone"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/en-GB/index.html"
-modified: "2026-08-02"
+modified: "2026-08-06"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

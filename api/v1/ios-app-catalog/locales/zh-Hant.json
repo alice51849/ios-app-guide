@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-02",
-  "content_digest": "8f14ab5dd69dc7ba96582d9414c5670e0f832e1998ad3b3ee53a697c7a258fbb",
+  "date_modified": "2026-08-06",
+  "content_digest": "e499f1b9dd6e3a651b486ed5c38469cb3e1888517203b07b7274c5e6a917280d",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 35,
+  "record_count": 37,
   "apps": [
     {
       "key": "aibriefpack",
@@ -333,6 +333,67 @@
         "currency": "TWD",
         "formatted_price": "$390.00",
         "storefront_url": "https://apps.apple.com/tw/app/id6790418321"
+      }
+    },
+    {
+      "key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "name": "DailyMate Lite：開口練習",
+      "summary": "想開口時，不必先在腦中拼湊單字。DailyMate Lite 將旅行、工作、餐飲、健康等生活情境整理成簡短提示與自然回覆，讓你用完整的一來一往練習 50 種語言。",
+      "category": "kids",
+      "search_terms": [
+        "會話",
+        "口說",
+        "旅遊",
+        "發音",
+        "聽力",
+        "英語",
+        "日語",
+        "韓語",
+        "西班牙文",
+        "法文",
+        "德文",
+        "義大利文",
+        "初學",
+        "日常",
+        "外語",
+        "單字",
+        "自學",
+        "出國",
+        "機場",
+        "飯店",
+        "餐廳",
+        "問路",
+        "商務",
+        "面試",
+        "留學",
+        "離線",
+        "跟讀",
+        "句型",
+        "生活",
+        "交流",
+        "實用",
+        "對答"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/tw/app/id6794725568",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/dailymatelite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6794725568"
       }
     },
     {
@@ -696,8 +757,8 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
-        "rating_value": 5.0,
-        "rating_count": 3,
+        "rating_value": 4.5,
+        "rating_count": 4,
         "storefront_url": "https://apps.apple.com/tw/app/id6773017109"
       }
     },
@@ -1853,6 +1914,53 @@
         "currency": "TWD",
         "formatted_price": "$150.00",
         "storefront_url": "https://apps.apple.com/tw/app/id6780575828"
+      }
+    },
+    {
+      "key": "snapportlite",
+      "app_store_id": "6792856304",
+      "name": "Snapport Lite",
+      "summary": "Snapport Lite - 透過尺寸引導、背景工具與可列印輸出，製作護照、簽證與證件照。",
+      "category": "photo-utility",
+      "search_terms": [
+        "台胞證照片",
+        "履歷照",
+        "身分證照片",
+        "簽證照片",
+        "學生證照片",
+        "工作證照片",
+        "白底",
+        "排版",
+        "自訂尺寸",
+        "免費",
+        "證件大頭照",
+        "護照照片",
+        "簽證",
+        "去背",
+        "列印",
+        "生物辨識",
+        "離線",
+        "一次匯出"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/tw/app/id6792856304",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/snapportlite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6792856304"
       }
     },
     {

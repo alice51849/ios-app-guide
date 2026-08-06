@@ -2,7 +2,7 @@
 title: "애플 워치와 함께 여행자에게 가장 실용적인 언어 회화 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/ko/index.html"
-modified: "2026-08-02"
+modified: "2026-08-06"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"

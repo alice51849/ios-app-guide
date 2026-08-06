@@ -2,7 +2,7 @@
 title: "유치원 및 초등 저학년을 위한 최고의 완전한 수학 학습 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ko/lumimathpro.html"
-modified: "2026-08-02"
+modified: "2026-08-07"
 video_url: "https://files.catbox.moe/2kxtzu.mp4"
 duration: "PT16S"
 app_store_id: "6776958488"

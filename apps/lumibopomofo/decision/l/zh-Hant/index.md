@@ -2,7 +2,7 @@
 title: "iPhone 上最佳兒童注音符號學習應用程式"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/zh-Hant/index.html"
-modified: "2026-08-02"
+modified: "2026-08-06"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 免費開始 · 永久解鎖
 - 無廣告
 - App Store · 免費
-- ★ 5.0/5 · 3
+- ★ 4.5/5 · 4
 
 [在 App Store 取得 Lumi Bopomofo →](https://apps.apple.com/tw/app/id6773017109)
 

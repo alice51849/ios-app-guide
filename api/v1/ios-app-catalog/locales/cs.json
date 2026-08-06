@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-02",
-  "content_digest": "8f14ab5dd69dc7ba96582d9414c5670e0f832e1998ad3b3ee53a697c7a258fbb",
+  "date_modified": "2026-08-06",
+  "content_digest": "e499f1b9dd6e3a651b486ed5c38469cb3e1888517203b07b7274c5e6a917280d",
   "locale": "cs",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 35,
+  "record_count": 37,
   "apps": [
     {
       "key": "aibriefpack",
@@ -272,6 +272,45 @@
         "currency": "CZK",
         "formatted_price": "299,00 Kč",
         "storefront_url": "https://apps.apple.com/cz/app/id6790418321"
+      }
+    },
+    {
+      "key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "name": "DailyMate Lite: Mluvte jistě",
+      "summary": "Mluvte jistě právě tehdy, když to potřebujete. DailyMate Lite mění situace ze života v krátká cvičení: uvidíte úvodní repliku a naučíte se přirozeně odpovědět. Vyberte si kterýkoli z 50 jazyků. Téma cestování pro začátečníky je zdarma a celou knihovnu lze odemknout jediným nákupem. Bez předplatného.",
+      "category": "kids",
+      "search_terms": [
+        "konverzace",
+        "angličtina",
+        "výslovnost",
+        "poslech",
+        "řeč",
+        "cestovní fráze",
+        "španělština",
+        "japonština",
+        "samostudium",
+        "lekce"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/cz/app/id6794725568",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/cs/dailymatelite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CZK",
+        "formatted_price": "Zdarma",
+        "storefront_url": "https://apps.apple.com/cz/app/id6794725568"
       }
     },
     {
@@ -1484,6 +1523,41 @@
         "currency": "CZK",
         "formatted_price": "129,00 Kč",
         "storefront_url": "https://apps.apple.com/cz/app/id6780575828"
+      }
+    },
+    {
+      "key": "snapportlite",
+      "app_store_id": "6792856304",
+      "name": "Snapport Lite",
+      "summary": "Snapport Lite - Vytvářejte pasové, vízové a dokumentové fotografie s vedením velikosti, nástroji pro pozadí a exportem připraveným k tisku.",
+      "category": "photo-utility",
+      "search_terms": [
+        "pasová fotografie",
+        "fotka na pas",
+        "fotka na vízum",
+        "fotka na občanku",
+        "průkazová fotografie",
+        "fotka na doklady"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/cz/app/id6792856304",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/cs/snapportlite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CZK",
+        "formatted_price": "Zdarma",
+        "storefront_url": "https://apps.apple.com/cz/app/id6792856304"
       }
     },
     {

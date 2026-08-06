@@ -2,7 +2,7 @@
 title: "赤ちゃんや幼児の自宅で使える最高のパスポート写真アプリ"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ja/snapport.html"
-modified: "2026-08-02"
+modified: "2026-08-07"
 video_url: "https://files.catbox.moe/liceen.mp4"
 duration: "PT16S"
 app_store_id: "6780575828"

@@ -2,7 +2,7 @@
 title: "best offline English listening and reading exam trainer for iPhone"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/id/index.html"
-modified: "2026-08-02"
+modified: "2026-08-06"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -21,4 +21,4 @@ Aim990 Plus — Build calm, accurate decisions under time with 630 original ques
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html)
 
-> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.
+> Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.

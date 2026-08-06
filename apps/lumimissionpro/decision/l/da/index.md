@@ -2,7 +2,7 @@
 title: "bedste komplette morgen- og sengetidsrutine-app til børn"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/da/index.html"
-modified: "2026-08-02"
+modified: "2026-08-06"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"

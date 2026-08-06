@@ -342,5 +342,51 @@
       "02",
       "03"
     ]
+  },
+  "dailymatelite": {
+    "appstore_id": "6794725568",
+    "name": "DailyMate Lite",
+    "search": "DailyMate Lite",
+    "category": "kids",
+    "sub": "Be ready when it is your turn to speak.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "travel phrasebook free",
+      "situational travel phrases",
+      "speaking practice 50 languages",
+      "cue and reply dialogues",
+      "free language phrasebook",
+      "travel phrases no subscription"
+    ],
+    "keyword_source": "reviewed_persona"
+  },
+  "snapportlite": {
+    "appstore_id": "6792856304",
+    "name": "Snapport Lite",
+    "search": "Snapport Lite",
+    "category": "photo-utility",
+    "sub": "Snapport Lite - Make passport, visa, and document photos with guided sizing, background tools, and print-ready export.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "free passport photo app",
+      "id photo at home free",
+      "visa photo maker free",
+      "passport photo no subscription",
+      "print passport photos at home",
+      "offline passport photo app"
+    ],
+    "keyword_source": "reviewed_persona"
   }
 }

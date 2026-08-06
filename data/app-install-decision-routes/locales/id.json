@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "id",
-  "dateModified": "2026-08-02",
-  "content_digest": "e5bfe67ce45753740357eeca269b9d35c0540b62ea2875b9d353bd43f3b5580a",
-  "generation_digest": "fba7106f0739bc21b7780395db7e34437f3398d54d36d80e4aa52f98445f0433",
+  "dateModified": "2026-08-06",
+  "content_digest": "ca8b091109e6b07316a3345412b1d1b0eb3c22b48e4b94af247c215fa0d1fe2f",
+  "generation_digest": "88fae4dcde9847762983f925a43c469e92f332543939a5c49a7a712f39c13080",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 35,
+  "record_count": 37,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/id.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/id.rss.xml",
@@ -59,7 +59,7 @@
         "formatted_price": "Gratis"
       },
       "guide_cta_label": "Baca panduan lengkap",
-      "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
+      "publisher_disclosure": "Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.",
       "source_persona_query": "best on-device file redaction app for freelancers sharing client documents",
       "source_surface": "answer_page",
       "query_origin": "publisher_authored_editorially_localized",
@@ -104,7 +104,7 @@
         "formatted_price": "Rp 99ribu"
       },
       "guide_cta_label": "Baca panduan lengkap",
-      "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
+      "publisher_disclosure": "Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.",
       "source_persona_query": "best wifi troubleshooting app for remote workers with connected but no internet",
       "source_surface": "answer_page",
       "query_origin": "publisher_authored_editorially_localized",
@@ -149,7 +149,7 @@
         "formatted_price": "Gratis"
       },
       "guide_cta_label": "Baca panduan lengkap",
-      "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
+      "publisher_disclosure": "Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.",
       "source_persona_query": "best last time tracker app for household maintenance without a subscription",
       "source_surface": "answer_page",
       "query_origin": "publisher_authored_editorially_localized",
@@ -199,7 +199,7 @@
         "formatted_price": "Gratis"
       },
       "guide_cta_label": "Baca panduan lengkap",
-      "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
+      "publisher_disclosure": "Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
       "source_surface": "answer_page",
       "query_origin": "publisher_authored_editorially_localized",
@@ -289,7 +289,7 @@
         "formatted_price": "Rp 99ribu"
       },
       "guide_cta_label": "Baca panduan lengkap",
-      "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
+      "publisher_disclosure": "Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.",
       "source_persona_query": "best offline English listening and reading exam trainer for iPhone",
       "source_surface": "answer_page",
       "query_origin": "publisher_authored_editorially_localized",
@@ -443,6 +443,51 @@
       "verified_live": true
     },
     {
+      "record_id": "id:dailymatelite",
+      "locale": "id",
+      "app_key": "dailymatelite",
+      "app_name": "DailyMate Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "DailyMate Lite — 50 Bahasa, Dialog Nyata | iOS App",
+      "decision_context": "Siap berbicara saat situasi nyata datang. DailyMate Lite mengubah percakapan sehari-hari menjadi latihan singkat berupa kalimat pembuka dan balasan alami dalam 50 bahasa. Mulai gratis dengan topik Pelancong tingkat Pemula, lalu buka seluruh pustaka lewat satu pembelian. Tanpa langganan. Latih percakapan secara utuh Setiap kartu menampilkan kalimat yang berguna bersama balasan alaminya. Anda mempelajari satu alur percakapan lengkap, bukan sekadar kata terpisah. • 8.400 pasangan kalimat dan balasan • 50 bahasa untuk dipelajari • 14 topik dan 84 situasi sehari-hari • 3 tingkat: Pemula, Menengah, dan Mahir • Pelafalan melalui suara sistem yang sesuai • Kemajuan, hari belajar beruntun, dan frasa tersimpan yang terpisah untuk tiap bahasa Mulai gratis Pilih bahasa apa pun dan pelajari seluruh topik Pelancong tingkat Pemula secara gratis. Topik dan tingkat lain tetap terlihat melalui pratinjau yang nyata. Sekali beli, akses selamanya Satu pembelian membuka semua topik dan tingkat, seluruh pustaka berisi 8.400 pasangan, penyimpanan tanpa batas, widget interaktif, Apple Watch, dan App Intents. Tidak ada biaya bulanan atau langganan. Nyaman di setiap layar Nikmati tampilan adaptif di iPhone dan iPad, letakkan latihan berikutnya di Layar Utama, lalu lanjutkan melalui aplikasi khusus Apple Watch. Privat sejak awal Tanpa akun, iklan pihak ketiga, analitik, atau pelacakan. Data pembelajaran utama tetap berada di perangkat, sedangkan pelafalan memakai suara sistem yang terpasang. Belajar sesuai ritme Anda Berlatihlah sebelum bepergian, di sela rapat, sambil menunggu kopi, atau sebelum percakapan penting. Ganti bahasa, topik, atau tingkat tanpa kehilangan kemajuan. Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+      "category": "kids",
+      "category_label": "Anak & pembelajaran",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Gratis untuk mulai · buka kunci permanen",
+      "one_time_option": true,
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Anak & pembelajaran",
+        "Gratis untuk mulai · buka kunci permanen",
+        "App Store · Gratis"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/dailymatelite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/id/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/id/dailymatelite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fdailymatelite%2Fdecision%2Fl%2Fid%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/id.json",
+      "app_store_id": "6794725568",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794725568",
+      "app_store_url": "https://apps.apple.com/id/app/id6794725568",
+      "app_store_cta_label": "Dapatkan DailyMate Lite di App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "IDR",
+        "formatted_price": "Gratis"
+      },
+      "guide_cta_label": "Baca panduan lengkap",
+      "publisher_disclosure": "Materi ini diterbitkan langsung oleh Lumi Studio, pengembang semua aplikasi yang tercantum.",
+      "source_persona_query": "best free travel phrasebook app with real dialogues for iphone",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "id:gmoney",
       "locale": "id",
       "app_key": "gmoney",
@@ -537,7 +582,7 @@
         "formatted_price": "Gratis"
       },
       "guide_cta_label": "Baca panduan lengkap",
-      "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
+      "publisher_disclosure": "Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.",
       "source_persona_query": "best free travel expense tracker with currency conversion for iphone",
       "source_surface": "answer_page",
       "query_origin": "publisher_authored_editorially_localized",
@@ -590,7 +635,7 @@
         "formatted_price": "Rp 89ribu"
       },
       "guide_cta_label": "Baca panduan lengkap",
-      "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
+      "publisher_disclosure": "Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.",
       "source_persona_query": "best app to track where my money goes and save more",
       "source_surface": "answer_page",
       "query_origin": "publisher_authored_editorially_localized",
@@ -635,7 +680,7 @@
         "formatted_price": "Gratis"
       },
       "guide_cta_label": "Baca panduan lengkap",
-      "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
+      "publisher_disclosure": "Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.",
       "source_persona_query": "best app to convert prices into work hours before buying",
       "source_surface": "answer_page",
       "query_origin": "publisher_authored_editorially_localized",
@@ -1492,6 +1537,56 @@
       "publisher_disclosure": "Panduan yang dibuat oleh penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan hanya digunakan untuk identifikasi. Untuk dokumen, kesehatan, sekolah, dan keputusan produktivitas, verifikasi persyaratan resmi jika relevan.",
       "source_persona_query": "best passport photo app for babies and toddlers at home",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "id:snapportlite",
+      "locale": "id",
+      "app_key": "snapportlite",
+      "app_name": "Snapport Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Snapport Lite — Buat pasfoto di rumah | iOS App",
+      "decision_context": "Snapport Lite - Buat foto paspor, visa, dan kartu identitas dengan panduan ukuran, latar, dan cetak. Versi gratis · Mendukung 1 ekspor - Sekali beli · milik Anda selamanya · tanpa langganan - Tanpa iklan atau pelacakan Templat - Foto paspor, visa & identitas, siap cetak. - Snapport Lite bekerja luring. Pemeriksaan hanya mengunduh daftar ukuran publik; tidak ada data pribadi yang dikirim. Pangkas & sejajarkan - Sejajarkan wajah dengan panduan. Persyaratan bisa berbeda; periksa aturan resmi. Latar - Penghapusan latar mungkin perlu diperiksa. Sesuaikan - Pertahankan tampilan alami untuk dokumen resmi. Ekspor - Ekspor satu foto atau lembar cetak. Privasi - Foto Anda tetap di iPhone. - Tanpa akun - Tanpa unggah ke cloud - Deteksi wajah berjalan di perangkat untuk menyejajarkan foto. Tidak ada data biometrik yang disimpan. - Anda mengatur ekspor dan berbagi Persyaratan berbeda menurut negara, instansi, dan jenis pengajuan. Selalu periksa aturan resmi sebelum mengirim.",
+      "category": "photo-utility",
+      "category_label": "Foto & utilitas",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Gratis untuk mulai · buka kunci permanen",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline"
+      ],
+      "privacy_labels": [
+        "Offline"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Foto & utilitas",
+        "Gratis untuk mulai · buka kunci permanen",
+        "Offline",
+        "App Store · Gratis"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/snapportlite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/id/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/id/snapportlite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fsnapportlite%2Fdecision%2Fl%2Fid%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/id.json",
+      "app_store_id": "6792856304",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6792856304",
+      "app_store_url": "https://apps.apple.com/id/app/id6792856304",
+      "app_store_cta_label": "Dapatkan Snapport Lite di App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "IDR",
+        "formatted_price": "Gratis"
+      },
+      "guide_cta_label": "Baca panduan lengkap",
+      "publisher_disclosure": "Materi ini diterbitkan langsung oleh Lumi Studio, pengembang semua aplikasi yang tercantum.",
+      "source_persona_query": "best free passport photo app for iphone that works offline",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

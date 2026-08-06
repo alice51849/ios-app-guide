@@ -2,7 +2,7 @@
 title: "부모가 아이와 야외 시간을 계획할 때 도움이 되는 최고의 날씨 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ko/lumiweather.html"
-modified: "2026-08-02"
+modified: "2026-08-07"
 video_url: "https://files.catbox.moe/fu7uq6.mp4"
 duration: "PT16S"
 app_store_id: "6779552704"

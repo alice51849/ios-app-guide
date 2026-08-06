@@ -1894,6 +1894,104 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         },
     ],
+    "snapportlite": [
+        {
+            "query": "best free passport photo app for iphone that works offline",
+            "guide_title": "Free passport and ID photo apps: what to check before you rely on one",
+            "triggers": [
+                "free passport photo app",
+                "id photo at home free",
+                "visa photo maker free",
+                "passport photo no subscription",
+                "print passport photos at home",
+                "offline passport photo app",
+            ],
+            "persona": "applicants who want to try a private, offline ID-photo workflow with one free export before paying anything",
+            "lead": "A trustworthy free passport-photo app should let you complete a real photo — guided sizing, background, and a print-ready export — before asking for money, and it should do the work on your phone rather than a server.",
+            "paras": [
+                "Snapport Lite includes the full guided workflow free — passport, visa, and document templates, face-guided crop and alignment, background tools, and adjustment — with one free export included so you can finish and inspect a real result. It works fully offline; checking sizes only downloads a public list of common formats, and no personal data is sent.",
+                "If you need more exports, one lifetime purchase unlocks them — no subscription, no ads, no tracking, no account. Face detection for alignment runs on device and no biometric identity is stored. Photo requirements vary by country and agency, so always review the official rules before submitting, and note that automatic background removal may still need your review.",
+            ],
+            "look": [
+                "A free tier that lets you finish a real export, not just preview.",
+                "Guided sizing for passport, visa, and document formats.",
+                "Fully offline processing — photos never leave the phone.",
+                "Print-sheet export for pharmacy or home printing.",
+                "One-time unlock instead of a subscription.",
+            ],
+            "steps": [
+                "Pick the template for your country and document type.",
+                "Align your face inside the guide and process the background.",
+                "Keep your appearance natural — official photos are strict about edits.",
+                "Use the free export to check the result against official requirements.",
+                "Unlock more exports once only if you need them.",
+            ],
+            "fits": "fits people who need one passport or ID photo now, want to keep photos on their own iPhone, and prefer testing the full workflow free before a single lifetime unlock.",
+            "faq": [
+                {
+                    "q": "What is free in Snapport Lite?",
+                    "a": "The complete guided workflow — templates, crop, background, adjust — with one free export included. Additional exports use a one-time lifetime purchase; there is no subscription.",
+                },
+                {
+                    "q": "Do my photos get uploaded?",
+                    "a": "No. Processing runs on the device, there is no account or cloud upload, and face detection for alignment stores no biometric identity.",
+                },
+                {
+                    "q": "Will the photo definitely be accepted?",
+                    "a": "No app can guarantee acceptance. Requirements vary by country, agency, and application type, so review the official rules before submitting.",
+                },
+            ],
+        },
+    ],
+    "dailymatelite": [
+        {
+            "query": "best free travel phrasebook app with real dialogues for iphone",
+            "guide_title": "Free situational phrasebook apps: what to check",
+            "triggers": [
+                "travel phrasebook free",
+                "situational travel phrases",
+                "speaking practice 50 languages",
+                "cue and reply dialogues",
+                "free language phrasebook",
+                "travel phrases no subscription",
+            ],
+            "persona": "travellers and everyday learners who want to practise complete spoken exchanges free before unlocking a full phrase library once",
+            "lead": "A useful free phrasebook should teach complete exchanges — the cue you will hear and a natural reply — and let you finish a real topic free, not lock everything behind a subscription after three cards.",
+            "paras": [
+                "DailyMate Lite starts free with the complete Traveler topic at Beginner level in any of 50 learning languages, using cue-and-reply cards so you learn what to say when it is your turn to speak. Other topics and levels stay visible through genuine previews, and each language keeps separate progress, streaks, and saved phrases.",
+                "One lifetime purchase unlocks the full library — 8,400 original cue-and-reply pairs across 14 topics, 84 situations, and three levels — plus unlimited saved phrases, widgets, Apple Watch, and App Intents. There is no subscription, account, ads, or tracking, and pronunciation uses the on-device system voices installed on your iPhone.",
+            ],
+            "look": [
+                "A complete free topic you can actually finish, not a teaser.",
+                "Cue-and-reply pairs instead of isolated vocabulary lists.",
+                "Per-language progress if you study more than one language.",
+                "On-device privacy — no account, ads, or tracking.",
+                "One-time unlock instead of a subscription.",
+            ],
+            "steps": [
+                "Choose a learning language and open the free Traveler topic at Beginner level.",
+                "Practise each card as a turn: read the cue, answer with the reply.",
+                "Use pronunciation playback to check how the reply sounds.",
+                "Save the phrases you expect to need on your trip.",
+                "Unlock the full library once only if the practice style fits you.",
+            ],
+            "fits": "fits people preparing for a trip or real conversations who want situational speaking practice free first, then one lifetime unlock for the complete library.",
+            "faq": [
+                {
+                    "q": "What can I use without paying?",
+                    "a": "The complete Traveler topic at Beginner level, free in any of the 50 learning languages, with progress, streaks, and saved phrases.",
+                },
+                {
+                    "q": "Is the pronunciation a real human voice?",
+                    "a": "No — playback uses the matching system voices installed on your device, so quality follows Apple's on-device voices for that language.",
+                },
+                {
+                    "q": "Is the full version a subscription?",
+                    "a": "No — one purchase unlocks every topic, level, and the complete 8,400-pair library permanently.",
+                },
+            ],
+        },
+    ],
 }
 
 

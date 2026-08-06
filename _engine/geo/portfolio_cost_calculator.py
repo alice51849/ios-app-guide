@@ -394,10 +394,16 @@ def update_tools_index(pages: Path, locale: str) -> bool:
     if pattern.search(text):
         updated = pattern.sub(card, text, count=1)
     else:
-        marker = "</section></main>"
-        if marker not in text:
+        # Two tools-index layouts exist: the original finder grid closes with
+        # </section></main>; the newer localized tools generator closes with
+        # </div></main>. Append the card as the last grid child of whichever
+        # is present.
+        for marker in ("</section></main>", "</div></main>"):
+            if marker in text:
+                updated = text.replace(marker, card + marker, 1)
+                break
+        else:
             raise RuntimeError(f"{path} is missing its main grid marker")
-        updated = text.replace(marker, card + marker, 1)
     return write_text_if_changed(path, updated)
 
 

@@ -1894,6 +1894,56 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         },
     ],
+    "caldaily": [
+        {
+            "query": "best calculator app iphone that saves history you can name and search",
+            "guide_title": "Calculators that keep a searchable history: what to check",
+            "triggers": [
+                "calculator with saved history",
+                "name and tag a calculation",
+                "tip split discount tax tools",
+                "calculator home screen widget",
+                "export calculations to csv",
+                "calculator no subscription",
+            ],
+            "persona": "people who redo the same everyday maths and want the result and its context to survive after the app closes",
+            "lead": "A calculator worth keeping should remember more than the last number: what the calculation was for, which tool produced it, and how to find it again a week later.",
+            "paras": [
+                "CalDaily saves each result with a name and a type, groups history by day, filters by tool and exports to CSV, so a split dinner bill or a compared loan can be searched for instead of recalculated from memory. Eight advanced tools cover the awkward everyday maths — memory and scientific functions, discount and tax, tip and split, unit conversion, date differences and business days, loan payments, and trip fuel cost — each opening with defaults you set once.",
+                "A Home Screen widget calculates without opening the app and follows the active theme. One of the 100 built-in themes is free, and each advanced tool gives three free results; a single one-time purchase unlocks the remaining themes and unlimited tool use, with no subscription. Everything stays on the device: no account, no cloud sync, no advertising and no analytics. The interface is localized in 50 languages.",
+            ],
+            "look": [
+                "History entries you can name, type, search and group by day.",
+                "CSV export when the numbers need to leave the phone.",
+                "Advanced tools that remember your defaults (tax rate, party size).",
+                "A Home Screen widget that matches the app's theme.",
+                "One-time unlock rather than a subscription.",
+                "On-device only — no account, cloud sync, ads or analytics.",
+            ],
+            "steps": [
+                "Run the calculation with the keypad or the tool that fits it.",
+                "Give the result a name and a type before saving it.",
+                "Set the defaults each tool should reuse next time.",
+                "Search or filter history later, and export to CSV if needed.",
+                "Try the free theme and the three free results per tool before unlocking.",
+            ],
+            "fits": "fits people who repeatedly split bills, check discounts, convert units or compare loans and want each result labelled and findable, with a free theme and three free results per tool to judge it before a single unlock.",
+            "faq": [
+                {
+                    "q": "What can I use before paying?",
+                    "a": "The full keypad and history, one of the 100 themes, and three successful results in each of the eight advanced tools. One purchase unlocks the other themes and unlimited tool use.",
+                },
+                {
+                    "q": "Does my calculation history leave the device?",
+                    "a": "No. History is stored on the device and shared only with the app's own widget; there is no account, cloud sync, advertising or analytics.",
+                },
+                {
+                    "q": "Is the unlock a subscription?",
+                    "a": "No — it is a single one-time purchase.",
+                },
+            ],
+        },
+    ],
 }
 
 

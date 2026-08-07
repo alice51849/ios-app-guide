@@ -61,8 +61,9 @@ SCHEMA_CAT = {"photo-utility": "MultimediaApplication", "productivity": "Busines
 
 
 def en_desc(key):
-    fn = KEY2DATA.get(key)
-    if not fn or not os.path.exists(os.path.join(DATA, fn)):
+    # 新 app 不必逐一登記:預設用 <key>_full.json,KEY2DATA 只保留檔名不同的例外
+    fn = KEY2DATA.get(key) or f"{key}_full.json"
+    if not os.path.exists(os.path.join(DATA, fn)):
         return ""
     d = json.load(open(os.path.join(DATA, fn), encoding="utf-8"))
     return (d.get("en-US", {}).get("description") or "")[:700]

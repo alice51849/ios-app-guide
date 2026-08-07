@@ -1944,6 +1944,55 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         },
     ],
+    "wordmatelite": [
+        {
+            "query": "best free vocabulary app for adults one minute a day no flashcard decks",
+            "guide_title": "One-minute vocabulary habits: what to check before you commit",
+            "triggers": [
+                "free vocabulary app adults",
+                "learn five words a day",
+                "vocabulary without building decks",
+                "offline vocabulary practice",
+                "daily streak language habit",
+                "vocabulary app no subscription",
+            ],
+            "persona": "adults who abandoned flashcard apps and want a one-minute daily session they can actually keep",
+            "lead": "Most vocabulary apps fail on maintenance, not content: decks to build and review queues that grow faster than the time available. A habit-sized session is a better test of whether an app will survive week three.",
+            "paras": [
+                "WordMate Lite is built around a five-word 'pebble trail': one focused minute, five words, and a completion screen that shows exactly which five you learned. There are no decks to build and no review backlog. Progress is visible as streaks, words learned today and in total, and per-topic and per-unit rings, with 14 life topics — travel, business, exams, dining, interviews, health and others — across beginner, intermediate and advanced levels.",
+                "The free tier keeps one learning language and one life path, beginner level for the first 10 words and up to 3 saved words; everything else stays visible behind a lock or a real preview. One non-consumable purchase unlocks all 44 learning languages, all paths and levels, unlimited learning and unlimited saved words, with no subscription. It works offline, needs no account, and stores data on the device with no ads or tracking. Pronunciation uses the system text-to-speech voices installed on the device, not recorded voice actors.",
+            ],
+            "look": [
+                "A session short enough to repeat daily — five words, about a minute.",
+                "No deck building and no growing review queue.",
+                "Visible progress: streak, daily count, per-topic rings.",
+                "Works offline with no account or sign-in.",
+                "One-time unlock instead of a subscription.",
+            ],
+            "steps": [
+                "Pick one learning language and one life path to start free.",
+                "Finish a five-word trail and check the completion screen.",
+                "Set a daily goal (5, 10, 15 or 20 words) you can sustain.",
+                "Save the words you want to revisit and choose a voice for pronunciation.",
+                "Unlock every language, path and level once only if the daily rhythm sticks.",
+            ],
+            "fits": "fits adults who want vocabulary as a one-minute daily habit rather than a flashcard project, with a free path and level to test the rhythm before a single lifetime unlock.",
+            "faq": [
+                {
+                    "q": "How much can I learn without paying?",
+                    "a": "One learning language and one life path, beginner level for the first 10 words, and up to 3 saved words. Everything else stays visible with a lock or a preview.",
+                },
+                {
+                    "q": "Is the pronunciation recorded by native speakers?",
+                    "a": "No — it uses the system text-to-speech voices installed on your device, with per-language voice selection.",
+                },
+                {
+                    "q": "Does it work without a connection or an account?",
+                    "a": "Yes. It works offline, needs no account or sign-in, and keeps data on your device with no ads or tracking.",
+                },
+            ],
+        },
+    ],
 }
 
 

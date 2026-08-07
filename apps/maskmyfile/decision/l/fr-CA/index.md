@@ -2,7 +2,7 @@
 title: "Mask My File — Cachez vos infos avant l'envoi | iOS App"
 lang: "fr-CA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/fr-CA/index.html"
-modified: "2026-08-06"
+modified: "2026-08-07"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

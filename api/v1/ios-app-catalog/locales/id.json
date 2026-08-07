@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-06",
-  "content_digest": "e499f1b9dd6e3a651b486ed5c38469cb3e1888517203b07b7274c5e6a917280d",
+  "date_modified": "2026-08-07",
+  "content_digest": "502a14d151553b0f773a45a28e12c893afec999e739f7c36c8b552b2bb33d852",
   "locale": "id",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 37,
+  "record_count": 39,
   "apps": [
     {
       "key": "aibriefpack",
@@ -119,6 +119,40 @@
         "formatted_price": "Rp 99ribu",
         "storefront_url": "https://apps.apple.com/id/app/id6792483140"
       }
+    },
+    {
+      "key": "caldaily",
+      "app_store_id": "6794178671",
+      "name": "CalDaily: kalkulator & tema",
+      "summary": "Kalkulator yang benar-benar akan terus Anda pakai, karena ia mengingat apa yang ada di balik setiap angka.",
+      "category": "utility",
+      "search_terms": [
+        "diskon",
+        "pajak",
+        "tip",
+        "patungan",
+        "bagi tagihan",
+        "pinjaman",
+        "konversi satuan",
+        "hari kerja",
+        "persen",
+        "bensin",
+        "tanggal"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": true,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/id/caldaily.html",
+      "verified_live": true
     },
     {
       "key": "cvdesk",
@@ -1811,6 +1845,39 @@
         "formatted_price": "Rp 99ribu",
         "storefront_url": "https://apps.apple.com/id/app/id6790467886"
       }
+    },
+    {
+      "key": "wordmatelite",
+      "app_store_id": "6797601720",
+      "name": "Wordmate Lite 5 Kata Sehari",
+      "summary": "Banyak orang berhenti belajar bahasa tepat di titik kartu hafalannya belum juga rampung. Wordmate Lite menghapus langkah itu.",
+      "category": "kids",
+      "search_terms": [
+        "kosakata",
+        "belajar bahasa inggris",
+        "menghafal",
+        "pelafalan",
+        "jepang",
+        "korea",
+        "percakapan",
+        "bisnis",
+        "offline",
+        "wisata"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/id/wordmatelite.html",
+      "verified_live": true
     },
     {
       "key": "wordmate",

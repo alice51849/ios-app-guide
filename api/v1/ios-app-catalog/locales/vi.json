@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-06",
-  "content_digest": "e499f1b9dd6e3a651b486ed5c38469cb3e1888517203b07b7274c5e6a917280d",
+  "date_modified": "2026-08-07",
+  "content_digest": "502a14d151553b0f773a45a28e12c893afec999e739f7c36c8b552b2bb33d852",
   "locale": "vi",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 37,
+  "record_count": 39,
   "apps": [
     {
       "key": "aibriefpack",
@@ -125,6 +125,42 @@
         "formatted_price": "199.000đ",
         "storefront_url": "https://apps.apple.com/vn/app/id6792483140"
       }
+    },
+    {
+      "key": "caldaily",
+      "app_store_id": "6794178671",
+      "name": "CalDaily: máy tính và chủ đề",
+      "summary": "Một máy tính bạn sẽ thật sự dùng lâu dài, vì nó nhớ cả suy nghĩ đằng sau từng con số.",
+      "category": "utility",
+      "search_terms": [
+        "tiền boa",
+        "chia đều",
+        "giảm giá",
+        "thuế",
+        "VAT",
+        "phần trăm",
+        "đổi đơn vị",
+        "vay",
+        "trả góp",
+        "khoa học",
+        "đếm ngày",
+        "xăng",
+        "lãi suất"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": true,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/vi/caldaily.html",
+      "verified_live": true
     },
     {
       "key": "cvdesk",
@@ -1839,6 +1875,39 @@
         "formatted_price": "199.000đ",
         "storefront_url": "https://apps.apple.com/vn/app/id6790467886"
       }
+    },
+    {
+      "key": "wordmatelite",
+      "app_store_id": "6797601720",
+      "name": "Wordmate Lite 5 từ mỗi ngày",
+      "summary": "Nhiều người dừng việc học ngoại ngữ đúng ở chỗ bộ thẻ từ vẫn chưa soạn xong. Wordmate Lite bỏ hẳn bước đó đi.",
+      "category": "kids",
+      "search_terms": [
+        "học từ vựng",
+        "tiếng anh",
+        "ghi nhớ từ",
+        "phát âm",
+        "tiếng nhật",
+        "tiếng hàn",
+        "giao tiếp",
+        "du lịch",
+        "ngoại ngữ",
+        "offline"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/vi/wordmatelite.html",
+      "verified_live": true
     },
     {
       "key": "wordmate",

@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-06",
-  "content_digest": "e499f1b9dd6e3a651b486ed5c38469cb3e1888517203b07b7274c5e6a917280d",
+  "date_modified": "2026-08-07",
+  "content_digest": "502a14d151553b0f773a45a28e12c893afec999e739f7c36c8b552b2bb33d852",
   "locale": "or-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 37,
+  "record_count": 39,
   "apps": [
     {
       "key": "aibriefpack",
@@ -126,6 +126,47 @@
         "formatted_price": "₹ 599",
         "storefront_url": "https://apps.apple.com/in/app/id6792483140"
       }
+    },
+    {
+      "key": "caldaily",
+      "app_store_id": "6794178671",
+      "name": "CalDaily: କାଲକୁଲେଟର",
+      "summary": "ଏମିତି ଏକ କାଲକୁଲେଟର ଯାହା ଆପଣ ପ୍ରକୃତରେ ବ୍ୟବହାର କରିଚାଲିବେ, କାରଣ ଏହା ପ୍ରତ୍ୟେକ ସଂଖ୍ୟା ପଛର ଚିନ୍ତାକୁ ମଧ୍ୟ ମନେ ରଖେ।",
+      "category": "utility",
+      "search_terms": [
+        "ଟିପ",
+        "ବିଲ୍",
+        "ଛାଡ଼",
+        "କର",
+        "ପ୍ରତିଶତ",
+        "ଏକକ",
+        "ରୂପାନ୍ତର",
+        "ଋଣ",
+        "କିସ୍ତି",
+        "ବୈଜ୍ଞାନିକ",
+        "ତାରିଖ",
+        "ଇନ୍ଧନ",
+        "ସୁଧ",
+        "ଭାଗ",
+        "ହିସାବ",
+        "ଗଣନା",
+        "ଖର୍ଚ୍ଚ",
+        "ଦିନ"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": true,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/caldaily.html",
+      "verified_live": true
     },
     {
       "key": "cvdesk",
@@ -1785,6 +1826,42 @@
         "formatted_price": "₹ 599",
         "storefront_url": "https://apps.apple.com/in/app/id6790467886"
       }
+    },
+    {
+      "key": "wordmatelite",
+      "app_store_id": "6797601720",
+      "name": "Wordmate Lite: ଇଂରାଜୀ ଶିଖନ୍ତୁ",
+      "summary": "ନୂଆ ଶବ୍ଦ ଶିଖିବାର ଇଚ୍ଛା ଥାଏ, ମାତ୍ର ଅଧିକାଂଶ ଆପ୍ ପ୍ରଥମ ଦିନରେ ଏତେ କାର୍ଡ ଆଗରେ ରଖିଦିଏ ଯେ ଏକ ସପ୍ତାହ ଭିତରେ ସବୁ ବନ୍ଦ ହୋଇଯାଏ। Wordmate Lite ଠିକ୍ ଓଲଟା ବାଟରେ ଯାଏ। ଥରକେ ପାଞ୍ଚଟି ଶବ୍ଦ, ସମୟ ଲାଗେ ଏକ ମିନିଟ୍।",
+      "category": "kids",
+      "search_terms": [
+        "english",
+        "vocabulary",
+        "ଇଂଲିଶ",
+        "meaning",
+        "ଅର୍ଥ",
+        "ଉଚ୍ଚାରଣ",
+        "ଅଭ୍ୟାସ",
+        "ପରୀକ୍ଷା",
+        "ଭ୍ରମଣ",
+        "offline",
+        "ସାକ୍ଷାତକାର",
+        "ବ୍ୟବସାୟ",
+        "କଥା"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/wordmatelite.html",
+      "verified_live": true
     },
     {
       "key": "wordmate",

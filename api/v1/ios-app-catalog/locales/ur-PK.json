@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-06",
-  "content_digest": "e499f1b9dd6e3a651b486ed5c38469cb3e1888517203b07b7274c5e6a917280d",
+  "date_modified": "2026-08-07",
+  "content_digest": "502a14d151553b0f773a45a28e12c893afec999e739f7c36c8b552b2bb33d852",
   "locale": "ur-PK",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 37,
+  "record_count": 39,
   "apps": [
     {
       "key": "aibriefpack",
@@ -133,6 +133,46 @@
         "formatted_price": "Rs 1,700.00",
         "storefront_url": "https://apps.apple.com/pk/app/id6792483140"
       }
+    },
+    {
+      "key": "caldaily",
+      "app_store_id": "6794178671",
+      "name": "CalDaily: کیلکولیٹر",
+      "summary": "ایک ایسا کیلکولیٹر جسے آپ واقعی استعمال کرتے رہیں گے، کیونکہ یہ ہر عدد کے پیچھے کی سوچ بھی یاد رکھتا ہے۔",
+      "category": "utility",
+      "search_terms": [
+        "ٹپ",
+        "بل",
+        "رعایت",
+        "ٹیکس",
+        "فیصد",
+        "یونٹ",
+        "تبدیلی",
+        "قرض",
+        "قسط",
+        "سائنسی",
+        "تاریخ",
+        "ایندھن",
+        "شرح سود",
+        "تقسیم",
+        "چھوٹ",
+        "کاروباری دن",
+        "حساب"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": true,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/caldaily.html",
+      "verified_live": true
     },
     {
       "key": "cvdesk",
@@ -1856,6 +1896,44 @@
         "formatted_price": "Rs 1,700.00",
         "storefront_url": "https://apps.apple.com/pk/app/id6790467886"
       }
+    },
+    {
+      "key": "wordmatelite",
+      "app_store_id": "6797601720",
+      "name": "Wordmate Lite: روزانہ الفاظ",
+      "summary": "زیادہ تر منصوبے اس لیے ٹوٹ جاتے ہیں کہ وہ شروع ہی سے بہت بڑے ہوتے ہیں۔ Wordmate Lite دوسری طرف سے شروع کرتا ہے: ایک منٹ، پانچ الفاظ، اور راستے پر ایک نظر آنے والا قدم۔",
+      "category": "kids",
+      "search_terms": [
+        "english",
+        "vocabulary",
+        "لغت",
+        "تلفظ",
+        "بول چال",
+        "ترجمہ",
+        "یاد",
+        "سفر",
+        "انٹرویو",
+        "کاروبار",
+        "امتحان",
+        "عربی",
+        "فرانسیسی",
+        "آفلائن",
+        "جرمن"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/wordmatelite.html",
+      "verified_live": true
     },
     {
       "key": "wordmate",

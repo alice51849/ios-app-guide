@@ -2,7 +2,7 @@
 title: "சந்தா இல்லாத சிறந்த பயண பட்ஜெட் கண்காணிப்பாளர் செயலி iPhone க்கான"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/ta-IN/index.html"
-modified: "2026-08-06"
+modified: "2026-08-07"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

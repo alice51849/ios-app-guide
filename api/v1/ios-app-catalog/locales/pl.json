@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-06",
-  "content_digest": "e499f1b9dd6e3a651b486ed5c38469cb3e1888517203b07b7274c5e6a917280d",
+  "date_modified": "2026-08-07",
+  "content_digest": "502a14d151553b0f773a45a28e12c893afec999e739f7c36c8b552b2bb33d852",
   "locale": "pl",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 37,
+  "record_count": 39,
   "apps": [
     {
       "key": "aibriefpack",
@@ -126,6 +126,42 @@
         "formatted_price": "29,99 zł",
         "storefront_url": "https://apps.apple.com/pl/app/id6792483140"
       }
+    },
+    {
+      "key": "caldaily",
+      "app_store_id": "6794178671",
+      "name": "CalDaily: kalkulator i motywy",
+      "summary": "Kalkulator, którego naprawdę będziesz używać, bo pamięta myśl stojącą za każdą liczbą.",
+      "category": "utility",
+      "search_terms": [
+        "napiwek",
+        "rachunek",
+        "rabat",
+        "podatek",
+        "VAT",
+        "procent",
+        "przelicznik",
+        "jednostki",
+        "kredyt",
+        "rata",
+        "naukowy",
+        "daty",
+        "paliwo"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": true,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/pl/caldaily.html",
+      "verified_live": true
     },
     {
       "key": "cvdesk",
@@ -1801,6 +1837,41 @@
         "formatted_price": "29,99 zł",
         "storefront_url": "https://apps.apple.com/pl/app/id6790467886"
       }
+    },
+    {
+      "key": "wordmatelite",
+      "app_store_id": "6797601720",
+      "name": "Wordmate Lite: nauka słówek",
+      "summary": "Chcesz wrócić do nauki języka, ale wieczór znowu mija i nie przybyło ani jedno nowe słowo. Wordmate Lite skraca naukę do jednej minuty dziennie, której da się realnie dotrzymać.",
+      "category": "kids",
+      "search_terms": [
+        "angielski",
+        "hiszpański",
+        "niemiecki",
+        "włoski",
+        "fiszki",
+        "wymowa",
+        "offline",
+        "matura",
+        "podróże",
+        "biznes",
+        "powtórki",
+        "rozmówki"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/pl/wordmatelite.html",
+      "verified_live": true
     },
     {
       "key": "wordmate",

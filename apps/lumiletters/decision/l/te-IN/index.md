@@ -2,7 +2,7 @@
 title: "పిల్లల కోసం ఉత్తమ విద్యా ఆట యాప్ ప్రకటనల లేని iPhone"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/te-IN/index.html"
-modified: "2026-08-06"
+modified: "2026-08-07"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

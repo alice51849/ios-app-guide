@@ -2,7 +2,7 @@
 title: "أفضل تطبيق للضوضاء البيضاء للنوم بدون اشتراك"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/ar-SA/index.html"
-modified: "2026-08-06"
+modified: "2026-08-07"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

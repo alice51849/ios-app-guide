@@ -2,7 +2,7 @@
 title: "legjobb teljes zhuyin alkalmazás kétnyelvű gyerekeknek"
 lang: "hu"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/hu/index.html"
-modified: "2026-08-06"
+modified: "2026-08-07"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"

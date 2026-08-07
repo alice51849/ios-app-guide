@@ -16,7 +16,7 @@
     ],
     "retirement_rule": "Retire after three consecutive verified misses"
   },
-  "record_count": 37,
+  "record_count": 39,
   "apps": [
     {
       "key": "aibriefpack",
@@ -147,6 +147,50 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
+      "verified_live": true
+    },
+    {
+      "key": "caldaily",
+      "app_store_id": "6794178671",
+      "name": "CalDaily",
+      "category": "utility",
+      "category_labels": {
+        "en": "More",
+        "zh-Hant": "更多"
+      },
+      "summaries": {
+        "en": "A calculator you will actually keep using, because it remembers the thinking",
+        "zh-Hant": "一台你會真的留著用的計算機，因為它記得每個數字背後的來龍去脈。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Free to start",
+        "One-time unlock",
+        "No subscription"
+      ],
+      "keywords": [
+        "calculator with saved history",
+        "name and tag a calculation",
+        "tip split discount tax tools",
+        "calculator home screen widget",
+        "export calculations to csv",
+        "calculator no subscription"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": true,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
       "verified_live": true
     },
     {
@@ -1617,6 +1661,50 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
+      "verified_live": true
+    },
+    {
+      "key": "wordmatelite",
+      "app_store_id": "6797601720",
+      "name": "Wordmate Lite",
+      "category": "kids",
+      "category_labels": {
+        "en": "Kids & learning",
+        "zh-Hant": "兒童與學習"
+      },
+      "summaries": {
+        "en": "Five words. One minute. A trail you can actually see.",
+        "zh-Hant": "很多人的外語進度，是停在「還沒把單字卡做好」的那一步。Wordmate Lite 想拿掉的就是這一步。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · lifetime unlock",
+        "zh-Hant": "免費開始 · 永久解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Free to start",
+        "One-time unlock",
+        "No subscription"
+      ],
+      "keywords": [
+        "free vocabulary app adults",
+        "learn five words a day",
+        "vocabulary without building decks",
+        "offline vocabulary practice",
+        "daily streak language habit",
+        "vocabulary app no subscription"
+      ],
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
       "verified_live": true
     },
     {

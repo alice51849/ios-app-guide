@@ -2,7 +2,7 @@
 title: "DailyMate Lite: Mluvte jistě — 50 jazyků, praktické dialogy | iOS App"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/cs/index.html"
-modified: "2026-08-06"
+modified: "2026-08-07"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -4,7 +4,7 @@
 
 প্রতিটি অ্যাপ কার জন্য তৈরি, তারা কোন কাজ সম্পন্ন করতে চায়, এবং সরাসরি App Store পথের প্রথম পক্ষের ক্যাটালগ।
 
-৩৭টি যাচাইকৃত লাইভ iOS অ্যাপ এবং ৫০টি Apple লোকালের প্রকাশক-লিখিত অনুসন্ধান উদ্দেশ্য।
+৩৯টি যাচাইকৃত লাইভ iOS অ্যাপ এবং ৫০টি Apple লোকালের প্রকাশক-লিখিত অনুসন্ধান উদ্দেশ্য।
 
 **লোকাল:** [ar-SA](../ar-SA/) · **bn-BD** · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -92,6 +92,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **AI Brief** | AI Brief — ফাইল থেকে স্পষ্ট প্রেক্ষাপট \| iOS App | ভালো প্রেক্ষাপট। আরও ভালো উত্তর। | বিনামূল্যে শুরু · আজীবন আনলক | [গাইড](https://alice51849.github.io/ios-app-guide/bn-BD/aibriefpack.html) | [App Store থেকে AI Brief ডাউনলোড করুন](https://apps.apple.com/app/id6791658210) |
 | **Aim990** | আইফোনের জন্য সেরা TOEIC প্রস্তুতি অ্যাপ অফলাইন স্টাডি প্ল্যান | পার্ট ৫ ছোট দেখালেও, অসম্পূর্ণ বাক্যের প্রশ্নগুলি সময় নষ্ট করতে পারে যদি ব্যাকরণ ও শব্দভাণ্ডার স্বয়ংক্রিয় না হয়। | বিনামূল্যে শুরু · আজীবন আনলক | [গাইড](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [App Store থেকে Aim990 পান →](https://apps.apple.com/app/id6784974530) |
 | **Aim990 Plus** | Aim990 Plus — চাপেও দ্রুত ও নির্ভুল উত্তর \| iOS App | Aim990 Plus প্রাপ্তবয়স্ক শিক্ষার্থীদের জন্য ইংরেজি শোনা ও পড়ার নিবিড় অনুশীলন। এর মূল ধাপগুলো সময়ের চাপের মধ্যেও মনোযোগ ধরে রাখার অভ্যাস গড়ে তোলে | পেইড ডাউনলোড | [গাইড](https://alice51849.github.io/ios-app-guide/bn-BD/aim990plus.html) | [App Store থেকে Aim990 Plus ডাউনলোড করুন](https://apps.apple.com/app/id6792483140) |
+| **CalDaily ক্যালকুলেটর ও থিম** | CalDaily ক্যালকুলেটর ও থিম — উইজেট, টুল ও গোছানো হিসাব \| iOS App | এমন একটি ক্যালকুলেটর যা আপনি সত্যিই ব্যবহার করে যাবেন, কারণ এটি প্রতিটি সংখ্যার পেছনের ভাবনা মনে রাখে। | বিনামূল্যে শুরু · আজীবন আনলক | [গাইড](https://alice51849.github.io/ios-app-guide/bn-BD/caldaily.html) | [App Store থেকে CalDaily ক্যালকুলেটর ও থিম ডাউনলোড করুন](https://apps.apple.com/app/id6794178671) |
 | **CV Desk** | সেরা রিজিউম বিল্ডার অ্যাপ ক্যারিয়ার পরিবর্তনকারীদের জন্য ২০২৬ | যখন আপনি ক্ষেত্র পরিবর্তন করছেন, তখন রিজিউম সমস্যা আলাদা: আপনার অভিজ্ঞতা বাস্তব কিন্তু কাগজে 'অপ্রাসঙ্গিক', এবং ATS ফিল্টার আপনাকে বাদ দেয় মানুষের পড়ার আগে — CV Desk এর জন্য তৈরি। | বিনামূল্যে শুরু · আজীবন আনলক | [গাইড](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-resume-builder-app-for-career-changers-2026.html) | [App Store থেকে CV Desk পান →](https://apps.apple.com/app/id6781337213) |
 | **Cyca** | সেরা পিরিয়ড ট্র্যাকার অ্যাপ কোনো অ্যাকাউন্ট ছাড়াই আইফোনের জন্য | একটি বিভাগ যেখানে ডেটার সংবেদনশীলতা পুরো গল্প, সঠিক পিরিয়ড ট্র্যাকার সবকিছু — প্রবাহ, মেজাজ, উপসর্গ, তাপমাত্রা, ঘনিষ্ঠতা — আপনার ডিভাইসে রাখে, কোনো অ্যাকাউন্ট বা ক্লাউড সিঙ্ক নেই — Cyca এর জন্য তৈরি। | বিনামূল্যে শুরু · আজীবন আনলক | [গাইড](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-period-tracker-app-no-account-required-iphone.html) | [App Store থেকে Cyca পান →](https://apps.apple.com/app/id6782251621) |
 | **DailyMate** | অ্যাপল ওয়াচসহ ভ্রমণকারীদের জন্য সেরা ব্যবহারিক ভাষা বাক্যাংশ অ্যাপ | একটি যাত্রার আগে, বাস্তব পরিস্থিতির জন্য সম্পূর্ণ বাক্যাংশ বিচ্ছিন্ন শব্দের চেয়ে বেশি কার্যকর — ডেইলিমেট এই জন্য তৈরি। | পেইড ডাউনলোড | [গাইড](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [অ্যাপ স্টোর থেকে ডেইলিমেট পান →](https://apps.apple.com/app/id6790418321) |
@@ -125,11 +126,12 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **TripBee Pro: ট্রিপ প্ল্যানার** | iPhone-এর জন্য সেরা ট্রিপ ইটিনারারি প্ল্যানার অ্যাপ | একটি ভাল ইটিনারারি অ্যাপ বিশৃঙ্খল ট্রিপকে স্পষ্ট দিন-প্রতি-দিন টাইমলাইনে রূপান্তর করে — ফ্লাইট, হোটেল, কার্যক্রম, রেস্টুরেন্ট এবং পরিবহন — স্পষ্ট টাইপ আইকন সহ যাতে আপনি এক নজরে আপনার দিন পড়তে পারেন — TripBee Pro: ট্রিপ প্ল্যানার এই জন্য তৈরি। | পেইড ডাউনলোড | [গাইড](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-trip-itinerary-planner-app-for-iphone.html) | [App Store-এ TripBee Pro: ট্রিপ প্ল্যানার পান →](https://apps.apple.com/app/id6787754435) |
 | **Unblurry** | iPhone-এ বাচ্চাদের ঝাপসা ছবি ঠিক করার সেরা অ্যাপ | বাচ্চারা কখনো স্থির থাকে না, তাই নরম ফোকাস এবং ক্যামেরা শেক ছবি অবশ্যম্ভাবী — Unblurry এই জন্য তৈরি। | বিনামূল্যে শুরু · আজীবন আনলক | [গাইড](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [App Store-এ Unblurry পান →](https://apps.apple.com/app/id6782275018) |
 | **WiFi Aid** | WiFi Aid — নেটওয়ার্ক পরীক্ষা ও প্রমাণ \| iOS App | স্বাধীন পথ, DNS, TCP, TLS, টাইমিং ও স্থিতিশীলতা পরীক্ষায় সংযোগ সমস্যার সম্ভাব্য কারণ খুঁজুন। একবার কিনুন—কোনো সাবস্ক্রিপশন, বিজ্ঞাপন বা ট্র্যাকিং নেই। | পেইড ডাউনলোড | [গাইড](https://alice51849.github.io/ios-app-guide/bn-BD/wifiaid.html) | [App Store থেকে WiFi Aid ডাউনলোড করুন](https://apps.apple.com/app/id6790467886) |
+| **Wordmate Lite: ইংরেজি শেখা** | Wordmate Lite: ইংরেজি শেখা — প্রতিদিন ৫টি নতুন শব্দ \| iOS App | নতুন শব্দ শেখার ইচ্ছা প্রায় সবারই থাকে, কিন্তু বেশিরভাগ অ্যাপ প্রথম দিনেই এত কার্ড সামনে ফেলে দেয় যে এক সপ্তাহ পেরোনোর আগেই সব বন্ধ হয়ে যায়। Wordmate | বিনামূল্যে শুরু · আজীবন আনলক | [গাইড](https://alice51849.github.io/ios-app-guide/bn-BD/wordmatelite.html) | [App Store থেকে Wordmate Lite: ইংরেজি শেখা ডাউনলোড করুন](https://apps.apple.com/app/id6797601720) |
 | **Wordmate: Learn 44 Languages** | Apple Watch সহ ব্যস্ত যাত্রীদের জন্য সেরা শব্দভাণ্ডার অ্যাপ | ব্যস্ত যাত্রীদের দরকার শব্দভাণ্ডার অনুশীলন, যা ফাঁকা সময়ে সম্পূর্ণ পাঠ, নতুন অ্যাকাউন্ট বা প্রতিটি পুনরালোচনার জন্য ফোন না চায় — Wordmate: Learn 44 Languages এ জন্য তৈরি। | পেইড ডাউনলোড | [গাইড](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [App Store-এ Wordmate: Learn 44 Languages পান →](https://apps.apple.com/app/id6789917808) |
 
 ## সম্পূর্ণ ডেটাসেট ডাউনলোড করুন
 
-JSON, JSONL এবং CSV একই ১,৮৫০ রেকর্ড ধারণ করে।
+JSON, JSONL এবং CSV একই ১,৯৫০ রেকর্ড ধারণ করে।
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -137,6 +139,6 @@ JSON, JSONL এবং CSV একই ১,৮৫০ রেকর্ড ধার�
 
 [হোম](https://alice51849.github.io/ios-app-guide/bn-BD/index.html) · [খোলা তথ্য](https://alice51849.github.io/ios-app-guide/bn-BD/data/lumi-studio-publisher-search-intent-catalog.html) · [লাইসেন্স](https://creativecommons.org/licenses/by/4.0/)
 
-আপডেট: 2026-08-07
+আপডেট: 2026-08-08
 
 মূল ক্যাটালগ সংকলনের জন্য CC BY 4.0 প্রযোজ্য; অ্যাপ নাম ও App Store চিহ্ন তাদের মালিকদের।

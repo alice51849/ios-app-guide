@@ -2,7 +2,7 @@
 title: "DailyMate Lite: রোজ কথা বলুন — ৫০ ভাষায় স্বাভাবিক কথোপকথন | iOS App"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/bn-BD/index.html"
-modified: "2026-08-06"
+modified: "2026-08-07"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

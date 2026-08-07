@@ -2,7 +2,7 @@
 title: "WiFi Aid — Network Diagnosis & Evidence | iOS App"
 lang: "en-CA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/en-CA/index.html"
-modified: "2026-08-06"
+modified: "2026-08-07"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

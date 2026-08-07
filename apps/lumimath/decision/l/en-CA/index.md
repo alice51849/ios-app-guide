@@ -2,7 +2,7 @@
 title: "best math game app for kids to build logic skills iphone"
 lang: "en-CA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/en-CA/index.html"
-modified: "2026-08-06"
+modified: "2026-08-07"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

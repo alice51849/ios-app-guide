@@ -180,7 +180,7 @@
     "@id": "https://alice51849.github.io/ios-app-guide/#organization"
   },
   "datePublished": "2026-07-19",
-  "dateModified": "2026-08-07",
+  "dateModified": "2026-08-08",
   "version": "1.0.0",
   "sdVersion": "1.0.0",
   "isLiveDataset": false,
@@ -261,29 +261,29 @@
       "name": "lumi-studio-publisher-search-intent-catalog.csv",
       "description": "Canonical UTF-8 table loaded by the publisher_intents RecordSet.",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv",
-      "contentSize": "2056161 B",
+      "contentSize": "2142349 B",
       "encodingFormat": "text/csv",
-      "sha256": "90f12153bc02d3f1983a7f5a4c932d2209591797d72ac95a1fe9705a601d6d3a"
+      "sha256": "393ca60d0e25f81896992622f9cd3a162e0d0b0e58ef80fbf1291677e69da126"
     },
     {
       "@type": "cr:FileObject",
       "@id": "lumi-studio-publisher-search-intent-catalog.jsonl",
       "name": "lumi-studio-publisher-search-intent-catalog.jsonl",
-      "description": "The same 1,850 records serialized as newline-delimited JSON.",
+      "description": "The same 1,950 records serialized as newline-delimited JSON.",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl",
-      "contentSize": "2805280 B",
+      "contentSize": "2933650 B",
       "encodingFormat": "application/x-ndjson",
-      "sha256": "c774edf74fbb7b25dbb3f81d3eb20ebac61735d098642954f05e5548e43708f0"
+      "sha256": "9deaf97c9a05e98bc37ae30c639886beef78f33829086a5b079f53c179a1b80e"
     },
     {
       "@type": "cr:FileObject",
       "@id": "lumi-studio-publisher-search-intent-catalog.json",
       "name": "lumi-studio-publisher-search-intent-catalog.json",
-      "description": "Dataset envelope with provenance, coverage and all 1,850 records.",
+      "description": "Dataset envelope with provenance, coverage and all 1,950 records.",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-      "contentSize": "3107129 B",
+      "contentSize": "3251699 B",
       "encodingFormat": "application/json",
-      "sha256": "93d29ae1685f52c781b047989fe6d353c99a0e28c4abaefd132a54d760e97b3d"
+      "sha256": "0e3cb89bee275117a1e0c59a259b279c0b3fd98fc844c2cde5d4eb1ec3f667b8"
     }
   ],
   "recordSet": [
@@ -311,7 +311,7 @@
           "publisher_intents/canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html",
           "publisher_intents/canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
           "publisher_intents/app_store_url": "https://apps.apple.com/sa/app/id6791658210",
-          "publisher_intents/publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
+          "publisher_intents/publisher_disclosure": "دليل من إعداد الناشر Lumi Studio، مطوّر التطبيق. أسماء التطبيقات علامات تجارية لأصحابها وتُستخدم للتعريف فقط. لقرارات المستندات والصحة والمدرسة والإنتاجية، تحقق من المتطلبات الرسمية عند الحاجة.",
           "publisher_intents/query_origin": "publisher_authored_editorially_localized",
           "publisher_intents/measured_search_volume": false,
           "publisher_intents/is_ranking": false,

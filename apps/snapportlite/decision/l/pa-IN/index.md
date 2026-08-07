@@ -2,7 +2,7 @@
 title: "Snapport Lite — ਘਰ ਵਿੱਚ ID ਫੋਟੋਆਂ ਬਣਾਓ | iOS App"
 lang: "pa-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/pa-IN/index.html"
-modified: "2026-08-06"
+modified: "2026-08-07"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

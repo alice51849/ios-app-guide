@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """Standalone GEO auto-batch runner — finds missing language codes and generates 90 pages.
 Designed to run from LaunchAgent without Claude. Picks next 5 uncovered langs and generates."""
-import json, os, subprocess, sys, logging
+import json, os, subprocess, sys, logging, time
 from pathlib import Path
 from datetime import datetime
 
@@ -338,6 +338,10 @@ CANDIDATE_POOL = [
     ("mad","Basa Madhura / Madurese (Madura, Indonesia)","Rp 19.000","Rp 59.000","dokumen","← Abali ka App Guide","Unduh dari App Store →","Pertanyaan","Peninjauan:","✅ Bagus","⚠️ Ta' cocok","Kaangguy sapa","Banne","Catatan developer."),
     ("ban","Basa Bali / Balinese (Bali, Indonesia)","Rp 19.000","Rp 59.000","dokumen","← Mawali ka App Guide","Unduh saking App Store →","Pitakon","Peninjauan:","✅ Becik","⚠️ Nenten cocok","Anggen sira","Nenten","Catetan developer."),
     ("bjn","Bahasa Banjar / Banjarese (Kalimantan, Indonesia)","Rp 19.000","Rp 59.000","dokumen","← Bulik ka App Guide","Unduh matan App Store →","Patakunan","Peninjauan:","✅ Baik banar","⚠️ Kada cocok","Gasan siapa","Kada","Catatan developer."),
+    # Group: major storefront locales that never got base pages (2026-08 backfill)
+    ("zh-Hans","简体中文 / Simplified Chinese","¥12","¥38","文件","← 返回 App Guide","在 App Store 下载 →","常见问题","评测:","✅ 优点","⚠️ 不足","适合谁","不适合谁","开发者说明。"),
+    ("sv","Svenska / Swedish (Sweden)","25 kr","75 kr","dokument","← Tillbaka till App Guide","Ladda ner i App Store →","Vanliga frågor","Omdöme:","✅ Fördelar","⚠️ Nackdelar","Passar för","Passar inte för","Utvecklarens anmärkning."),
+    ("da","Dansk / Danish (Denmark)","19 kr.","59 kr.","dokumenter","← Tilbage til App Guide","Hent i App Store →","Ofte stillede spørgsmål","Vurdering:","✅ Fordele","⚠️ Ulemper","Passer til","Passer ikke til","Udviklerens bemærkning."),
 ]
 
 B="body{font-family:system-ui,sans-serif;max-width:720px;margin:2rem auto;padding:0 1rem;color:#222}h1{font-size:1.5rem;line-height:1.8}h2{font-size:1.1rem;margin-top:2rem}.item{border:1px solid #e5e7eb;border-radius:10px;padding:1rem;margin:.8rem 0}.item h3{margin:0 0 .3rem;font-size:1rem}.dl{display:inline-block;background:#007aff;color:#fff;padding:.55rem 1.2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:.9rem;margin:.5rem 0}.faq{border:1px solid #e8e8e8;border-radius:6px;padding:.75rem 1rem;margin:.75rem 0}.faq summary{cursor:pointer;font-size:.95rem}.faq p{margin:.5rem 0 0;color:#444;font-size:.9rem}"
@@ -356,14 +360,474 @@ def _apps():
     except Exception:
         return {}, {}
 
+# ---------------------------------------------------------------------------
+# Query clusters — the second axis of the work pool.
+# The language axis is saturated (1000+ locale directories under pages/), so new
+# autobatch work now comes from new *query intents* applied to known languages.
+# Each cluster is a list of pages: (slug, title, desc, h1, intro, [(app_key, why)], [(q, a)])
+# Only public apps are rendered; pricing wording is derived from the registry
+# purchase_model at build time so it can never claim something untrue.
+# ---------------------------------------------------------------------------
+PRICING_LINE = {
+    "paid_upfront": "One-time purchase; no subscription.",
+    "free_with_lifetime_unlock": "Free to download; one-time lifetime unlock.",
+    "free": "Free.",
+    "flexible": "One-time unlock option; optional subscription plans.",
+}
+
+
+CLUSTER_ORDER = ["problems", "pay-once", "no-account", "family", "seasonal-gifting", "switching", "lite-vs-pro"]
+
+
+def _cluster_l10n(cluster_id):
+    """Localized body copy, keyed by locale. Empty dict when we have none."""
+    try:
+        sys.path.insert(0, str(HERE))
+        import cluster_l10n
+        return {"problems": cluster_l10n.PROBLEMS}.get(cluster_id, {})
+    except Exception:
+        return {}
+
+
+def _pricing_l10n():
+    """Localized pricing wording per locale. Empty dict when unavailable."""
+    try:
+        sys.path.insert(0, str(HERE))
+        import cluster_l10n
+        return cluster_l10n.PRICING
+    except Exception:
+        return {}
+
+# Major App Store storefront locales. These already have base language pages from
+# earlier generators, so they carry no entry in CANDIDATE_POOL — but they are the
+# markets that actually produce impressions, so clusters run here first.
+# Tuple shape matches the first 8 fields of CANDIDATE_POOL rows.
+MAJOR_LOCALES = [
+    ("en", "English", "$1.99", "$5.99", "documents", "← Back to App Guide", "Download on the App Store →", "Questions"),
+    ("en-GB", "English (UK)", "£1.99", "£5.99", "documents", "← Back to App Guide", "Download on the App Store →", "Questions"),
+    ("en-AU", "English (Australia)", "A$2.99", "A$8.99", "documents", "← Back to App Guide", "Download on the App Store →", "Questions"),
+    ("en-CA", "English (Canada)", "C$2.99", "C$8.99", "documents", "← Back to App Guide", "Download on the App Store →", "Questions"),
+    ("de-DE", "Deutsch", "1,99 €", "5,99 €", "Dokumente", "← Zurück zum App Guide", "Im App Store laden →", "Häufige Fragen"),
+    ("fr-FR", "Français", "1,99 €", "5,99 €", "documents", "← Retour au App Guide", "Télécharger sur l'App Store →", "Questions fréquentes"),
+    ("es-ES", "Español", "1,99 €", "5,99 €", "documentos", "← Volver al App Guide", "Descargar en el App Store →", "Preguntas frecuentes"),
+    ("es-MX", "Español (México)", "$39 MXN", "$119 MXN", "documentos", "← Volver al App Guide", "Descargar en el App Store →", "Preguntas frecuentes"),
+    ("it-IT", "Italiano", "1,99 €", "5,99 €", "documenti", "← Torna all'App Guide", "Scarica sull'App Store →", "Domande frequenti"),
+    ("pt-BR", "Português (Brasil)", "R$ 9,90", "R$ 29,90", "documentos", "← Voltar ao App Guide", "Baixar na App Store →", "Perguntas frequentes"),
+    ("ja-JP", "日本語", "¥300", "¥900", "書類", "← App Guide に戻る", "App Store でダウンロード →", "よくある質問"),
+    ("ko-KR", "한국어", "₩2,500", "₩7,500", "문서", "← App Guide로 돌아가기", "App Store에서 다운로드 →", "자주 묻는 질문"),
+    ("zh-Hant", "繁體中文", "NT$60", "NT$180", "文件", "← 回到 App Guide", "在 App Store 下載 →", "常見問題"),
+    ("zh-Hans", "简体中文", "¥12", "¥38", "文件", "← 返回 App Guide", "在 App Store 下载 →", "常见问题"),
+    ("th", "ไทย", "฿69", "฿199", "เอกสาร", "← กลับไปที่ App Guide", "ดาวน์โหลดบน App Store →", "คำถามที่พบบ่อย"),
+    ("vi", "Tiếng Việt", "49.000 ₫", "149.000 ₫", "tài liệu", "← Quay lại App Guide", "Tải trên App Store →", "Câu hỏi thường gặp"),
+    ("id", "Bahasa Indonesia", "Rp 19.000", "Rp 59.000", "dokumen", "← Kembali ke App Guide", "Unduh di App Store →", "Pertanyaan umum"),
+    ("ms", "Bahasa Melayu", "RM 8.90", "RM 26.90", "dokumen", "← Kembali ke App Guide", "Muat turun di App Store →", "Soalan lazim"),
+    ("tr", "Türkçe", "₺59", "₺179", "belgeler", "← App Guide'a dön", "App Store'dan indir →", "Sık sorulan sorular"),
+    ("ru", "Русский", "199 ₽", "599 ₽", "документы", "← Назад в App Guide", "Загрузить в App Store →", "Частые вопросы"),
+    ("pl", "Polski", "8,99 zł", "26,99 zł", "dokumenty", "← Powrót do App Guide", "Pobierz w App Store →", "Częste pytania"),
+    ("hi", "हिन्दी", "₹99", "₹299", "दस्तावेज़", "← App Guide पर वापस", "App Store से डाउनलोड करें →", "अक्सर पूछे जाने वाले प्रश्न"),
+    ("ar-SA", "العربية", "‏7.99 ر.س", "‏22.99 ر.س", "المستندات", "← العودة إلى App Guide", "التحميل من App Store →", "الأسئلة الشائعة"),
+    ("sv", "Svenska", "25 kr", "75 kr", "dokument", "← Tillbaka till App Guide", "Ladda ner i App Store →", "Vanliga frågor"),
+    ("da", "Dansk", "19 kr.", "59 kr.", "dokumenter", "← Tilbage til App Guide", "Hent i App Store →", "Ofte stillede spørgsmål"),
+    ("nb-NO", "Norsk bokmål", "25 kr", "75 kr", "dokumenter", "← Tilbake til App Guide", "Last ned i App Store →", "Vanlige spørsmål"),
+    ("fi", "Suomi", "1,99 €", "5,99 €", "asiakirjat", "← Takaisin App Guideen", "Lataa App Storesta →", "Usein kysytyt kysymykset"),
+    ("cs", "Čeština", "49 Kč", "149 Kč", "dokumenty", "← Zpět na App Guide", "Stáhnout v App Storu", "Časté dotazy"),
+]
+
+
+def _cluster_defs(cn, pl, ph, doc):
+    return {
+        "problems": ("problems", "problems", [
+            ("wifi-connected-no-internet",
+             f"iPhone Says Wi-Fi Connected But No Internet — {cn} 2026",
+             "Find which link in the chain is actually broken.",
+             f"Wi-Fi Connected, No Internet on iPhone ({cn} 2026)",
+             "The bars look fine but nothing loads. The useful question is which step fails: the local path, DNS, TCP, TLS or the server.",
+             [("wifiaid", "Runs independent path, DNS, TCP, TLS, timing and signal checks and reports the most likely cause."),
+              ("cyca", "Checks what your connection exposes before you trust a public network.")],
+             [("Does it need an account?", "No account is required."),
+              ("Will it fix the router for me?", "No. It tells you where the failure is so you know what to change.")]),
+            ("photo-too-blurry-to-read",
+             f"Photo Too Blurry to Read the Text — {cn} 2026",
+             "Recover a readable copy of a shaky or low-light shot.",
+             f"Photo Too Blurry to Read ({cn} 2026)",
+             "A receipt, whiteboard or sign came out soft and the text is unreadable. Sharpening on device is usually enough.",
+             [("unblurry", "Sharpen and de-blur a photo on device so small text becomes readable again."),
+              ("picclear", "Clean up and clear out the near-duplicate shots left behind.")],
+             [("Is the original changed?", "No. The original stays in your library."),
+              ("Does it upload my photo?", "Processing happens on device.")]),
+            ("passport-photo-rejected",
+             f"My Passport Photo Was Rejected — {cn} 2026",
+             "Retake an ID photo that matches the official size and background rules.",
+             f"Passport Photo Rejected — What to Fix ({cn} 2026)",
+             "Rejections are usually size, head position, shadows or background. All four are fixable at home.",
+             [("snapport", "Guided sizing, background tools and a print-ready sheet for passport, visa and ID photos."),
+              ("snapportlite", "Same guided sizing, free to try before you unlock.")],
+             [("Which country specs?", "Choose the size your authority requires before exporting."),
+              ("Do I need a photo studio?", "No. A plain wall and daylight are enough.")]),
+            ("shared-file-contains-private-data",
+             f"I Need to Share a File That Contains Private Data — {cn} 2026",
+             "Remove names, numbers and addresses before you send a document.",
+             f"Share a File Without Leaking Private Data ({cn} 2026)",
+             "Blacking out with a drawing tool is not redaction — the text often survives underneath. Remove it properly.",
+             [("maskmyfile", "Finds private details in a file and masks them on device before you share."),
+              ("scanto", "Scan paper to PDF locally, so the source never touches a server.")],
+             [("Is the original overwritten?", "No, a masked copy is produced."),
+              ("Does it upload the file?", "No. The work happens on device.")]),
+            ("iphone-storage-full",
+             f"iPhone Storage Full Without Deleting Memories — {cn} 2026",
+             "Free space by clearing duplicates and clutter, not photos you care about.",
+             f"iPhone Storage Full ({cn} 2026)",
+             "Most reclaimable space is duplicates, blurry rejects and screenshots — not the photos you would miss.",
+             [("picclear", "Review near-duplicates and blurry shots and clear them in batches."),
+              ("scanto", "Replace stacks of paper photos of documents with a single searchable PDF.")],
+             [("Does it delete without asking?", "No. You confirm before anything is removed."),
+              ("Does it need iCloud?", "No.")]),
+        ]),
+        "pay-once": ("pay-once", "payonce", [
+            ("photo-tools",
+             f"Pay-Once iPhone Photo Tools — {cn} 2026",
+             "Photo utilities you buy once instead of renting.",
+             f"Pay-Once iPhone Photo Tools ({cn} 2026)",
+             "Subscription fatigue is real. These photo tools use a one-time payment instead — check the App Store for your local price.",
+             [("unblurry", "Sharpen soft photos on device."),
+              ("picclear", "Clear duplicates and blurry shots."),
+              ("snapport", "Passport and ID photos with guided sizing."),
+              ("photocream", "Film-look recipes applied on device.")],
+             [("Is there a monthly fee?", "No recurring subscription is required for these."),
+              ("Do prices differ by country?", "Yes. The App Store shows your local price.")]),
+            ("document-tools",
+             f"Pay-Once iPhone Document Tools — {cn} 2026",
+             f"Scan, redact and store {doc} without a subscription.",
+             f"Pay-Once iPhone Document Tools ({cn} 2026)",
+             f"Handling {doc} on a phone should not need a monthly plan. These are one-time unlocks — the App Store shows your local price.",
+             [("scanto", "Offline scanning to PDF with on-device OCR."),
+              ("maskmyfile", "Mask private details before sharing."),
+              ("cvdesk", "Build and export a CV without a rented editor."),
+              ("aibriefpack", "Turn screenshots and files into one clear brief.")],
+             [("Do files leave the device?", "These tools work on device."),
+              ("Is an account required?", "No.")]),
+            ("travel-tools",
+             f"Pay-Once iPhone Travel Tools — {cn} 2026",
+             "Trip planning, money and phrases without a travel subscription.",
+             f"Pay-Once iPhone Travel Tools ({cn} 2026)",
+             "One trip should not cost a yearly plan. These unlock once and keep working offline.",
+             [("tripbee", "Day-by-day offline itinerary and packing lists."),
+              ("tripbeelite", "One upcoming trip, free to start."),
+              ("gmoney", "Log spending with currency conversion."),
+              ("dailymate", "Complete travel sentences, not isolated words.")],
+             [("Do they work without signal?", "The core planning and phrase features work offline."),
+              ("Is there a recurring charge?", "No recurring subscription is required.")]),
+            ("focus-and-habits",
+             f"Pay-Once iPhone Focus and Habit Tools — {cn} 2026",
+             "Routine, focus and awareness tools with a one-time unlock.",
+             f"Pay-Once iPhone Focus and Habit Tools ({cn} 2026)",
+             "Habit apps are the most subscription-heavy category. These are not.",
+             [("mochi", "Simple recurring tasks that stay out of the way."),
+              ("mochidonestamp", "Record when you last did something you only do a few times a year."),
+              ("lockhour", "Set aside blocks of time for focused work."),
+              ("hourstag", "See a purchase as the hours of work it costs.")],
+             [("Are there ads?", "No ads in these apps."),
+              ("Is an account required?", "No.")]),
+        ]),
+        "no-account": ("no-account", "noaccount", [
+            ("no-signup-apps",
+             f"iPhone Apps That Need No Sign-Up — {cn} 2026",
+             "Open the app and start. No email, no password, no profile.",
+             f"iPhone Apps With No Sign-Up ({cn} 2026)",
+             "A sign-up screen before you have seen the app is a tax on your attention and your inbox. These start on first launch.",
+             [("scanto", "Scan straight to PDF the moment you open it."),
+              ("unblurry", "Pick a photo and sharpen it. Nothing to register."),
+              ("wifiaid", "Run a diagnosis without creating anything."),
+              ("mochi", "Add a task and close the app.")],
+             [("Is there a login wall?", "No account is required to use these."),
+              ("Is my data synced to a server?", "These apps work on device.")]),
+            ("offline-only-apps",
+             f"iPhone Apps That Work With No Internet — {cn} 2026",
+             "Tools that keep working on a plane, in a basement or abroad.",
+             f"iPhone Apps That Work Offline ({cn} 2026)",
+             "Roaming off, no signal, hotel Wi-Fi refusing to load — these still do their job.",
+             [("scanto", "Scanning and on-device OCR need no connection."),
+              ("tripbee", "Your day-by-day plan and packing lists stay available offline."),
+              ("snapport", "Size and export an ID photo with no connection."),
+              ("aim990", "Listening and reading practice stored on the device.")],
+             [("Does anything break offline?", "The core features listed here do not need a connection."),
+              ("Do they upload my files?", "No.")]),
+            ("no-tracking-apps",
+             f"iPhone Apps With No Tracking — {cn} 2026",
+             "Tools that do not build a profile of you.",
+             f"iPhone Apps That Do Not Track You ({cn} 2026)",
+             "Check the App Store privacy label before you install anything. These are built to keep the work on your device.",
+             [("maskmyfile", "Redaction happens locally; the file never leaves."),
+              ("cyca", "Shows what your connection exposes, without collecting it."),
+              ("picclear", "Reviews your library on device."),
+              ("sononote", "Notes stay on the device.")],
+             [("Are there third-party ads?", "No ads in these apps."),
+              ("Where is my data stored?", "On your device.")]),
+            ("no-watermark-apps",
+             f"iPhone Apps That Export Without a Watermark — {cn} 2026",
+             "Export the file you made, not an advertisement for the app.",
+             f"iPhone Apps With No Export Watermark ({cn} 2026)",
+             "Free tools that stamp their logo on your export are not free — they cost you the file. These do not.",
+             [("scanto", "PDF exports carry no stamp."),
+              ("snapport", "Print-ready ID photo sheets export clean."),
+              ("photocream", "Applies the look you chose and nothing else."),
+              ("cvdesk", "Your CV exports as your CV.")],
+             [("Is the watermark removed by a purchase?", "These export without a watermark; check each listing for what the unlock covers."),
+              ("Is export quality reduced?", "No.")]),
+        ]),
+        "family": ("family", "family", [
+            ("apps-for-parents",
+             f"iPhone Apps Parents Actually Use — {cn} 2026",
+             "Tools for the admin side of family life, not another screen for the kids.",
+             f"iPhone Apps for Parents ({cn} 2026)",
+             "Most 'family app' lists are really kids' games. This one is about the paperwork, the logistics and the forgetting.",
+             [("mochidonestamp", "Remember when you last did the things nobody schedules."),
+              ("scanto", "School forms and receipts into searchable PDFs."),
+              ("lumiweather", "Decide what the children should wear before you leave."),
+              ("snapport", "Passport photos for the whole family at home.")],
+             [("Are these kids' apps?", "No, these are for the adult running the household."),
+              ("Do they need accounts?", "No.")]),
+            ("choosing-a-kids-app",
+             f"How to Choose a Kids' App Without Regret — {cn} 2026",
+             "What to check before you install anything for a child.",
+             f"Choosing a Kids' App ({cn} 2026)",
+             "Four checks catch most bad installs: ads, in-app purchases, what data leaves the device, and whether the app runs without a connection.",
+             [("lumiletters", "Phonics practice with no ads and nothing to sign up for."),
+              ("lumimath", "Number sense through a build-a-planet sandbox. No ads."),
+              ("lumibopomofo", "Bopomofo for children. No ads."),
+              ("lumimission", "Daily routines as missions. No ads.")],
+             [("Are there ads?", "No ads in these."),
+              ("Is the artwork hand-drawn?", "No. The artwork is AI-generated and the speech uses system text-to-speech.")]),
+            ("screen-time-that-is-worth-it",
+             f"Screen Time Worth Allowing — iPhone {cn} 2026",
+             "Short sessions with a clear end, instead of an endless feed.",
+             f"Screen Time Worth Allowing ({cn} 2026)",
+             "The problem is rarely the screen; it is the app with no ending. These have one.",
+             [("lumiletters", "A round of letters ends when the round ends."),
+              ("lumimath", "Short, finishable number activities."),
+              ("lumimission", "A daily mission list, then done."),
+              ("lockhour", "For the adult: block out the time you want back.")],
+             [("Do these use loot boxes or streak pressure?", "No."),
+              ("Do they need an account?", "No.")]),
+            ("family-travel-day",
+             f"Getting a Family Out the Door — iPhone {cn} 2026",
+             "Packing, weather, documents and the itinerary in one pass.",
+             f"Family Travel Day Checklist ({cn} 2026)",
+             "Family trips fail at the door, not at the destination. Handle the four things that actually delay you.",
+             [("tripbee", "Day-by-day plan and packing lists that work offline."),
+              ("lumiweather", "What to wear and whether to go out at all."),
+              ("snapport", "Passport and visa photos before you travel."),
+              ("gmoney", "Track spending in the local currency.")],
+             [("Do these work abroad without data?", "The core planning features work offline."),
+              ("Is a subscription required?", "No.")]),
+        ]),
+        "seasonal-gifting": ("gifting", "gifting", [
+            ("gift-an-app",
+             f"Giving an App as a Gift — iPhone {cn} 2026",
+             "What actually makes a good app gift, and what does not.",
+             f"Giving an iPhone App as a Gift ({cn} 2026)",
+             "A subscription is a bill you hand someone; a paid download is a gift. The App Store can only gift paid apps, so that is what this list contains.",
+             [("wordmate", "Vocabulary in 44 languages for a language learner."),
+              ("tripbee", "An offline trip planner for someone with a journey coming up."),
+              ("gmoney", "Spending and currency tracking for a frequent traveller."),
+              ("snapport", "Passport and ID photos at home, for the household organiser.")],
+             [("Can I gift these on the App Store?", "The App Store gift option is available on paid apps; these are paid downloads, so the option appears on their listings."),
+              ("Will they be charged later?", "No. These are paid downloads, not subscriptions.")]),
+            ("new-iphone-setup",
+             f"First Apps for a New iPhone — {cn} 2026",
+             "What to install in the first hour of a new phone.",
+             f"New iPhone: What to Install First ({cn} 2026)",
+             "Set up the boring, useful things once and you will not think about them again.",
+             [("scanto", "Somewhere for paperwork to go."),
+              ("picclear", "Start clean instead of importing years of duplicates."),
+              ("wifiaid", "For the day the new phone will not connect."),
+              ("mochi", "The handful of recurring things you keep forgetting.")],
+             [("Do these need a subscription?", "No."),
+              ("Do they need an account?", "No.")]),
+            ("new-year-reset",
+             f"New Year Reset on iPhone — {cn} 2026",
+             "Clear the backlog: photos, paperwork, money and habits.",
+             f"New Year iPhone Reset ({cn} 2026)",
+             "Four passes, an evening each, and the phone stops being a source of low-level dread.",
+             [("picclear", "Photos: clear duplicates and rejects."),
+              ("scanto", "Paperwork: one searchable archive."),
+              ("gmoney", "Money: see where it actually went."),
+              ("mochi", "Habits: a short list you will keep.")],
+             [("Does any of this need the cloud?", "No."),
+              ("Is there a monthly fee?", "No.")]),
+            ("exam-and-application-season",
+             f"Exam and Application Season on iPhone — {cn} 2026",
+             "Test prep, documents and the photo the form asks for.",
+             f"Exam and Application Season ({cn} 2026)",
+             "Applications fail on the small things: the wrong photo size, an unreadable scan, a CV that will not export.",
+             [("aim990", "Listening and reading practice, offline."),
+              ("cvdesk", "Build and export a CV."),
+              ("snapport", "The ID photo in the size the form demands."),
+              ("scanto", "Scan certificates into one clean PDF.")],
+             [("Do these need an account?", "No."),
+              ("Do they work offline?", "The core features listed here do.")]),
+        ]),
+        "switching": ("switching", "switching", [
+            ("cancel-a-photo-subscription",
+             f"Cancelling a Photo App Subscription — iPhone {cn} 2026",
+             "What to replace a monthly photo editor with.",
+             f"Leaving a Photo Subscription ({cn} 2026)",
+             "Most people pay monthly for two or three features they use. Work out which ones, then replace only those.",
+             [("unblurry", "If you subscribed for sharpening and rescue."),
+              ("picclear", "If you subscribed for library cleanup."),
+              ("photocream", "If you subscribed for looks and presets."),
+              ("snapport", "If you subscribed for ID and passport sizing.")],
+             [("Do I lose my edits when I cancel?", "Export anything you need before your period ends; that is on the app you are leaving."),
+              ("Are these subscriptions too?", "No.")]),
+            ("cancel-a-scanner-subscription",
+             f"Cancelling a PDF Scanner Subscription — iPhone {cn} 2026",
+             "Scanner apps are the most aggressive upsell on the App Store.",
+             f"Leaving a Scanner Subscription ({cn} 2026)",
+             "Scanning is a solved problem. Paying every month for it is a pricing decision, not a technical one.",
+             [("scanto", "Offline scanning to PDF with on-device OCR."),
+              ("maskmyfile", "If you also needed to hide details before sending."),
+              ("aibriefpack", "If you were really collecting material to summarise.")],
+             [("Will my old scans still open?", "They are PDFs; any reader opens them."),
+              ("Does this one upload my documents?", "No. It works on device.")]),
+            ("cancel-a-language-subscription",
+             f"Cancelling a Language App Subscription — iPhone {cn} 2026",
+             "When a streak stops being learning.",
+             f"Leaving a Language Subscription ({cn} 2026)",
+             "If you are travelling next month, sentences beat streaks. If you are building vocabulary, spaced practice beats gems.",
+             [("dailymate", "Complete sentences for real travel situations."),
+              ("dailymatelite", "The same approach, free to start."),
+              ("wordmate", "Vocabulary in 44 languages with natural examples."),
+              ("aim990", "If the real goal is an English exam score.")],
+             [("Do I keep my progress from the old app?", "No — progress does not transfer between apps."),
+              ("Is there a monthly fee here?", "No.")]),
+            ("cancel-a-trip-planner-subscription",
+             f"Cancelling a Trip Planner Subscription — iPhone {cn} 2026",
+             "You travel a few times a year. The bill arrives every month.",
+             f"Leaving a Trip Planner Subscription ({cn} 2026)",
+             "Annual plans make sense for people who travel constantly. For everyone else the maths does not work.",
+             [("tripbee", "Day-by-day offline planning and packing lists."),
+              ("tripbeelite", "One upcoming trip, free to start."),
+              ("gmoney", "Spending and currency while you are there."),
+              ("snapport", "Visa and passport photos before you go.")],
+             [("Can I export my old itinerary?", "Export from the app you are leaving before the period ends."),
+              ("Do these work offline?", "The core planning features do.")]),
+        ]),
+        "lite-vs-pro": ("choose", "choose", [
+            ("free-version-or-paid-version",
+             f"Free Version or Paid Version — iPhone {cn} 2026",
+             "How to tell which one you actually need.",
+             f"Free Version or Paid Version ({cn} 2026)",
+             "A free version exists so you can find out whether the app suits you before paying. Use it that way: try first, unlock only if you keep opening it.",
+             [("snapportlite", "Try guided ID photo sizing before unlocking the full version."),
+              ("tripbeelite", "Plan one upcoming trip before committing."),
+              ("gmoneylite", "Log a few days of spending first."),
+              ("hourstaglite", "See a few purchases in work hours first.")],
+             [("Is the free version time-limited?", "These are free to download with an optional one-time unlock; check each listing for what the unlock adds."),
+              ("Do I lose my data when I unlock?", "No.")]),
+            ("which-photo-app-do-i-need",
+             f"Which iPhone Photo App Do I Need — {cn} 2026",
+             "Sharpen, clean up, restyle or resize — four different jobs.",
+             f"Which Photo App Do I Need ({cn} 2026)",
+             "Photo apps look interchangeable and are not. Match the app to the job and you stop buying the wrong one.",
+             [("unblurry", "The photo is soft and you need the detail back."),
+              ("picclear", "The library is full and you need space."),
+              ("photocream", "The photo is fine and you want a look."),
+              ("snapport", "The photo has to meet an official size.")],
+             [("Can one app do all four?", "In practice each of these is built for one of the jobs."),
+              ("Do they need an account?", "No.")]),
+            ("which-money-app-do-i-need",
+             f"Which iPhone Money App Do I Need — {cn} 2026",
+             "Tracking a trip, tracking a habit, or tracking a budget.",
+             f"Which Money App Do I Need ({cn} 2026)",
+             "Budget apps fail because they answer a question you were not asking. Pick by the question.",
+             [("gmoney", "You are travelling and spending in another currency."),
+              ("gmoneylite", "Same, free to start."),
+              ("hourstag", "You want to feel a price before you pay it."),
+              ("hourstaglite", "Same, free to start.")],
+             [("Do these connect to my bank?", "No. You record what you spend."),
+              ("Is there a subscription?", "No.")]),
+            ("which-study-app-do-i-need",
+             f"Which iPhone Study App Do I Need — {cn} 2026",
+             "Exam score, vocabulary, or a child learning to read.",
+             f"Which Study App Do I Need ({cn} 2026)",
+             "Three different learners, three different apps. Buying the wrong one is why people quit.",
+             [("aim990", "An adult preparing for an English listening and reading exam."),
+              ("wordmate", "Someone building vocabulary across languages."),
+              ("lumiletters", "A child learning English letters and sounds."),
+              ("lumibopomofo", "A child learning Bopomofo.")],
+             [("Are the kids' apps ad-free?", "Yes, no ads."),
+              ("Is the artwork hand-drawn?", "No. The artwork is AI-generated and the speech uses system text-to-speech.")]),
+        ]),
+    }
+
+
+def gen_cluster(cluster_id, row):
+    """Generate one query-cluster for one language. Returns pages written."""
+    lang, cn, pl, ph, doc, back, dl, faq_l = row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7]
+    APPS, APPSTORE = _apps()
+    subdir, sm_key, pages = _cluster_defs(cn, pl, ph, doc)[cluster_id]
+    l10n = _cluster_l10n(cluster_id).get(lang, {})
+    pricing = dict(PRICING_LINE)
+    pricing.update(_pricing_l10n().get(lang, {}))
+    out = PAGES / lang / subdir
+    out.mkdir(parents=True, exist_ok=True)
+    slugs = []
+    for slug_s, title, desc, h1, intro, items_raw, faqs in pages:
+        loc = l10n.get(slug_s)
+        if loc:
+            # Fully localized body copy for a real storefront locale.
+            title, desc, h1, intro = loc["title"], loc["desc"], loc["h1"], loc["intro"]
+            faqs = loc["faqs"]
+            items_raw = [(k, loc["why"].get(k, w)) for k, w in items_raw]
+        ih = ""
+        li = []
+        pos = 1
+        for key, why in items_raw:
+            app = APPS.get(key)
+            aid = APPSTORE.get(key, "")
+            if not app or not aid:
+                continue  # never link an app that is not public
+            name = app.get("name", key)
+            price = pricing.get(app.get("purchase_model"), "")
+            url = f"https://apps.apple.com/app/id{aid}?ct=iag_{sm_key}_{lang}"
+            ih += (f'<div class="item"><h3>{pos}. {name}</h3><p>{why}</p>'
+                   f'<p class="muted">{price}</p>'
+                   f'<a href="{url}" class="dl" rel="noopener">{dl}</a></div>\n')
+            li.append({"@type": "ListItem", "position": pos, "name": name, "url": url})
+            pos += 1
+        if not li:
+            continue
+        slug = f"{slug_s}-{lang.lower()}"
+        ld = json.dumps([
+            {"@context": "https://schema.org", "@type": "ItemList", "name": title, "itemListElement": li},
+            {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": _fl(faqs)},
+        ], ensure_ascii=False)
+        rtl = ' dir="rtl"' if lang.split("-")[0] in {"ar", "he", "fa", "ur", "ckb", "lrc", "haz", "bqi", "glk", "mzn", "luz"} else ""
+        html = (f'<!DOCTYPE html>\n<html lang="{lang}"{rtl}>\n<head><meta charset="utf-8">'
+                f'<title>{title}</title><meta name="description" content="{desc}">'
+                f'<meta name="robots" content="index,follow">'
+                f'<link rel="canonical" href="{GEO_SITE}/{lang}/{subdir}/{slug}.html">'
+                f'<style>{B}.muted{{color:#666;font-size:.85rem;margin:.2rem 0 0}}</style>'
+                f'<script type="application/ld+json">{ld}</script></head>\n'
+                f'<body><p><a href="{GEO_SITE}/{lang}/">{back}</a></p><h1>{h1}</h1><p>{intro}</p>{ih}'
+                f'<h2>{faq_l}</h2>{_fh(faqs)}</body></html>')
+        (out / f"{slug}.html").write_text(html, encoding="utf-8")
+        slugs.append(slug)
+    if slugs:
+        sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        sm += "\n".join(f'<url><loc>{GEO_SITE}/{lang}/{subdir}/{s}.html</loc></url>' for s in slugs) + "\n</urlset>\n"
+        (PAGES / f"sitemap_{sm_key}_{lang}.xml").write_text(sm, encoding="utf-8")
+    return len(slugs)
+
+
 def gen_lang(lang, cn, pl, ph, doc, back, dl, faq_l, verdict_l, pros_l, cons_l, wfl, wnotl, devnote):
     APPS, APPSTORE = _apps()
     defs = [
         ("bf","best-for","bestfor",[
-            ("photo-hide",f"Best iPhone App to Hide Photos — {cn} 2026",f"Photo privacy.",f"Best App to Hide Photos iPhone ({cn} 2026)","Real privacy?",[("zafe",f"Face ID. {pl} one-time. No iCloud."),("maskmyfile","Redact docs. Offline.")],[("Secure?","Yes, AES."),("iCloud?","Never.")]),
+            ("photo-hide",f"Best iPhone App to Hide Photos — {cn} 2026",f"Photo privacy.",f"Best App to Hide Photos iPhone ({cn} 2026)","Real privacy?",[("maskmyfile","Mask private details before sharing. On device."),("picclear","Clear the shots you did not mean to keep.")],[("Secure?","Yes, AES."),("iCloud?","Never.")]),
             ("scan-offline",f"Best Offline Scanner — iPhone {cn} 2026","PDF offline.",f"Best Offline Scanner iPhone ({cn} 2026)","No internet.",[("scanto",f"Local PDF. {ph} one-time.")],[("Internet?","No."),("Uploads?","Never.")]),
             ("passport-photo",f"Best Passport Photo App — iPhone {cn} 2026","Photo at home.",f"Best Passport Photo App iPhone ({cn} 2026)","No photographer.",[("snapport",f"Auto crop. {pl}.")],[("Specs?","Yes."),("Guarantee?","Yes.")]),
-            ("social-block",f"Best App to Block Social Media — iPhone {cn} 2026","Productivity.",f"Block Social Media iPhone ({cn} 2026)","More focus?",[("zafe","Keep photos off mind.")],[("Screen Time?","Yes."),("WhatsApp?","Screen Time.")]),
+            ("social-block",f"Best App to Block Social Media — iPhone {cn} 2026","Productivity.",f"Block Social Media iPhone ({cn} 2026)","More focus?",[("lockhour","Set aside blocks of time for focused work."),("mochi","Keep the day's tasks small and visible.")],[("Screen Time?","Yes."),("WhatsApp?","Screen Time.")]),
             ("document-mask",f"Best App to Mask Document Data — iPhone {cn} 2026",f"Redact {doc}.",f"Mask Document Data iPhone ({cn} 2026)",f"Protect {doc}?",[("maskmyfile",f"Permanent. {pl}.")],[("Edits original?","No."),("Server?","No.")])
         ]),
         ("wf","workflow","workflow",[
@@ -377,9 +841,9 @@ def gen_lang(lang, cn, pl, ph, doc, back, dl, faq_l, verdict_l, pros_l, cons_l, 
             ("snapport-vs-photographer",f"Snapport vs Photographer — {cn} 2026","Home vs studio.",f"Snapport vs Photographer ({cn})",[("Cost",f"{pl}+guarantee","Studio"),("At home?","Yes","No")],"For most: Snapport.",[("Specs?","Yes."),("One-time?",pl)])
         ]),
         ("sea","seasonal","seasonal",[
-            ("school",f"Back to School iPhone Apps — {cn} 2026","School apps.",f"Back to School iPhone Apps ({cn} 2026)","New year.",[("scanto","Scan notes."),("snapport","Student photo."),("zafe",f"Keep {doc} secure.")],[("Coding?","No."),("Kids?","Yes.")]),
-            ("year-end",f"Year-End iPhone Apps — {cn} 2026","Year-end docs.",f"Year-End iPhone Apps ({cn} 2026)","Organise.",[("zafe","Store."),("maskmyfile","Redact."),("scanto","Scan.")],[("Cloud?","No."),("Start?","Zafe.")]),
-            ("summer",f"Travel iPhone Apps — {cn} 2026","Travel.",f"Travel iPhone Apps ({cn} 2026)","Enjoy!",[("snapport","Passport photo."),("zafe","Secure storage."),("scanto","Travel docs.")],[("Internet?","No."),("Abroad?","Yes.")])
+            ("school",f"Back to School iPhone Apps — {cn} 2026","School apps.",f"Back to School iPhone Apps ({cn} 2026)","New year.",[("scanto","Scan notes."),("snapport","Student photo."),("aibriefpack",f"Turn {doc} into one clear brief.")],[("Coding?","No."),("Kids?","Yes.")]),
+            ("year-end",f"Year-End iPhone Apps — {cn} 2026","Year-end docs.",f"Year-End iPhone Apps ({cn} 2026)","Organise.",[("maskmyfile","Redact."),("scanto","Scan."),("cvdesk","Refresh your CV.")],[("Cloud?","No."),("Start?","ScanTo Pro.")]),
+            ("summer",f"Travel iPhone Apps — {cn} 2026","Travel.",f"Travel iPhone Apps ({cn} 2026)","Enjoy!",[("snapport","Passport photo."),("tripbee","Offline day-by-day plan."),("scanto","Travel docs.")],[("Internet?","No."),("Abroad?","Yes.")])
         ]),
     ]
     total = 0
@@ -393,7 +857,8 @@ def gen_lang(lang, cn, pl, ph, doc, back, dl, faq_l, verdict_l, pros_l, cons_l, 
                 ih=""; li=[]; pos=1
                 for key, why in items_raw:
                     app=APPS.get(key,{}); aid=APPSTORE.get(key,""); name=app.get("name",key)
-                    url=f"https://apps.apple.com/app/id{aid}?ct=iag_bf_{lang}" if aid else "#"
+                    if not aid: continue  # never emit a dead link for a non-public app
+                    url=f"https://apps.apple.com/app/id{aid}?ct=iag_bf_{lang}"
                     ih+=f'<div class="item"><h3>{pos}. {name}</h3><p>{why}</p><a href="{url}" class="dl" rel="noopener">{dl}</a></div>\n'
                     li.append({"@type":"ListItem","position":pos,"name":name,"url":url}); pos+=1
                 ld=json.dumps([{"@context":"https://schema.org","@type":"ItemList","name":title,"itemListElement":li},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":_fl(faqs)}],ensure_ascii=False)
@@ -417,7 +882,8 @@ def gen_lang(lang, cn, pl, ph, doc, back, dl, faq_l, verdict_l, pros_l, cons_l, 
                 ih=""; li=[]; pos=1
                 for key, why in items_raw:
                     app=APPS.get(key,{}); aid=APPSTORE.get(key,""); name=app.get("name",key)
-                    url=f"https://apps.apple.com/app/id{aid}?ct=iag_seasonal_{lang}" if aid else "#"
+                    if not aid: continue  # never emit a dead link for a non-public app
+                    url=f"https://apps.apple.com/app/id{aid}?ct=iag_seasonal_{lang}"
                     ih+=f'<div class="item"><h3>{pos}. {name}</h3><p>{why}</p><a href="{url}" class="dl" rel="noopener">{dl}</a></div>\n'
                     li.append({"@type":"ListItem","position":pos,"name":name,"url":url}); pos+=1
                 ld=json.dumps([{"@context":"https://schema.org","@type":"ItemList","name":title,"itemListElement":li},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":_fl(faqs)}],ensure_ascii=False)
@@ -430,14 +896,17 @@ def gen_lang(lang, cn, pl, ph, doc, back, dl, faq_l, verdict_l, pros_l, cons_l, 
     # Review pages
     rev_out = PAGES / lang / "reviews"; rev_out.mkdir(parents=True, exist_ok=True)
     rev_slugs = []
-    for key, short_pl, short_ph in [("zafe",pl,pl),("scanto",ph,ph),("snapport",pl,pl),("maskmyfile",pl,pl)]:
+    for key, short_pl, short_ph in [("scanto",ph,ph),("snapport",pl,pl),("maskmyfile",pl,pl),("wifiaid",pl,pl)]:
         app=APPS.get(key,{}); aid=APPSTORE.get(key,""); name=app.get("name",key)
+        if not aid: continue
         slug=f"{key}-review-2026-{lang.lower()}"
         su=f"https://apps.apple.com/app/id{aid}?ct=iag_review_{lang}" if aid else "#"
         stars="★★★★☆"
         pros_h=f"<li>{short_pl} one-time</li><li>Face ID / AES</li><li>Offline</li>"
         cons_h="<li>No cloud sync</li>"
-        ld=json.dumps([{"@context":"https://schema.org","@type":"Review","itemReviewed":{"@type":"SoftwareApplication","name":name},"reviewRating":{"@type":"Rating","ratingValue":"4","bestRating":"5"},"reviewBody":f"Best {key} app. {short_pl}."},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":_fl([("Secure?","Yes."),("One-time?",short_pl)])}],ensure_ascii=False)
+        # 不輸出 Review/ratingValue:發行商自評星等在機器可讀端像第三方評分,
+        # 違反 Google review snippet 政策(風險是全網域手動處分)。
+        ld=json.dumps([{"@context":"https://schema.org","@type":"FAQPage","mainEntity":_fl([("Secure?","Yes."),("One-time?",short_pl)])}],ensure_ascii=False)
         html=f'<!DOCTYPE html>\n<html lang="{lang}">\n<head><meta charset="utf-8"><title>{name} Review 2026 — {cn}</title><meta name="description" content="Review."><meta name="robots" content="index,follow"><link rel="canonical" href="{GEO_SITE}/{lang}/reviews/{slug}.html"><style>{R}</style><script type="application/ld+json">{ld}</script></head>\n<body><p><a href="{GEO_SITE}/{lang}/">{back}</a></p><h1>{name} Review ({cn} 2026)</h1><div class="stars">{stars}</div><p><strong>{verdict_l}</strong> Best {key} app. {short_pl}.</p><div class="disclaimer">{devnote}</div><h2>{pros_l}</h2><ul class="pros">{pros_h}</ul><h2>{cons_l}</h2><ul class="cons">{cons_h}</ul><h2>{wfl}</h2><p>Privacy seekers.</p><a href="{su}" class="dl" rel="noopener">{dl}</a></body></html>'
         (rev_out / f"{slug}.html").write_text(html, encoding="utf-8")
         rev_slugs.append(slug); total += 1
@@ -468,6 +937,73 @@ def register_sitemaps(langs):
         )
     llms.write_text(txt, encoding="utf-8")
 
+def register_cluster_sitemaps(sm_key, langs):
+    """Append cluster sitemaps for new langs to gen_llms.py at both registration points."""
+    llms = HERE / "gen_llms.py"
+    txt = llms.read_text(encoding="utf-8")
+    for lang in langs:
+        name = f"sitemap_{sm_key}_{lang}.xml"
+        if name in txt:
+            continue
+        entry = f'        "{name}",\n'
+        txt = txt.replace(
+            '    ):\n        if os.path.exists(os.path.join(PAGES, filename)):',
+            entry + '    ):\n        if os.path.exists(os.path.join(PAGES, filename)):',
+            1
+        )
+        txt = txt.replace(
+            '    ])\n    items = "\\n".join(f"  <sitemap>',
+            entry + '    ])\n    items = "\\n".join(f"  <sitemap>',
+            1
+        )
+    llms.write_text(txt, encoding="utf-8")
+
+
+def run_cluster_pass(batch_size):
+    """Second work axis: apply each query cluster to languages that lack it."""
+    for cluster_id in CLUSTER_ORDER:
+        subdir = _cluster_defs("x", "x", "x", "x")[cluster_id][0]
+        sm_key = _cluster_defs("x", "x", "x", "x")[cluster_id][1]
+        todo = []
+        for row in MAJOR_LOCALES + CANDIDATE_POOL:
+            lang = row[0]
+            if not (PAGES / lang / "best-for").is_dir():
+                continue  # base language pages must exist first
+            if any((PAGES / lang / subdir).glob("*.html")):
+                continue
+            todo.append(row)
+            if len(todo) >= batch_size:
+                break
+        if not todo:
+            continue
+        done, total = [], 0
+        for row in todo:
+            try:
+                n = gen_cluster(cluster_id, row)
+                if n:
+                    done.append(row[0])
+                    total += n
+                    logging.info(f"Cluster {cluster_id}: {n} pages for {row[0]} ({row[1]})")
+            except Exception as e:
+                logging.error(f"Cluster {cluster_id} failed {row[0]}: {e}")
+        if not done:
+            continue
+        register_cluster_sitemaps(sm_key, done)
+        run_generators()
+        pub = next_pub_num()
+        msg = git_commit_push([f"{cluster_id}:{l}" for l in done], pub, total, lang_dirs=done)
+        logging.info(f"Committed pub {pub}: {msg} ({total} pages)")
+        log = HERE.parent / "agent" / "auto_loop_log.md"
+        if log.exists():
+            log.write_text(
+                log.read_text().rstrip()
+                + f"\n| {pub} | auto | auto-batch cluster {cluster_id} | {'/'.join(done)} | {total} |\n"
+            )
+        print(json.dumps({"pub": pub, "cluster": cluster_id, "langs": done, "pages": total}))
+        return True
+    return False
+
+
 def update_hub_langs(langs_dict):
     """Add to LANG_NAMES in both hub generators."""
     for hub_file in [HERE / "gen_topic_hubs.py", HERE / "gen_review_hubs.py"]:
@@ -481,11 +1017,48 @@ def run_generators():
     for script in ["gen_llms.py", "gen_topic_hubs.py", "gen_review_hubs.py"]:
         subprocess.run([PYTHON, str(HERE / script)], capture_output=True, cwd=str(HERE.parent))
 
-def git_commit_push(langs, pub_num):
-    msg = f"pub {pub_num}: auto-batch {'/'.join(langs)} {len(langs)*18} pages"
-    subprocess.run(["git", "-C", str(PAGES), "add", "-A"], capture_output=True)
-    subprocess.run(["git", "-C", str(PAGES), "commit", "-m", msg], capture_output=True)
-    subprocess.run(["git", "-C", str(PAGES), "push", "origin", "HEAD"], capture_output=True)
+# Files this runner (and the generators it invokes) owns. Everything else in the
+# pages repo belongs to another worker or schedule — staging it with `add -A`
+# silently published their half-finished edits under our commit message.
+OWNED_PATHS = [
+    "llms.txt", "llms-full.txt", "robots.txt", "sitemap_index.xml",
+    "sitemap_topic_hubs.xml", "sitemap_review_hubs.xml",
+    "topic-hubs", "review-hubs",
+]
+
+
+def git_commit_push(langs, pub_num, pages=None, lang_dirs=None):
+    count = pages if pages is not None else len(langs) * 18
+    msg = f"pub {pub_num}: auto-batch {'/'.join(langs)} {count} pages"
+    paths = list(OWNED_PATHS)
+    for lang in (lang_dirs or []):
+        paths.append(lang)
+        paths.extend(
+            p.name for p in PAGES.glob(f"sitemap_*_{lang}.xml")
+        )
+    paths = [p for p in paths if (PAGES / p).exists()]
+
+    def _git(*args, retries=6):
+        """Run git, retrying while another worker holds index.lock."""
+        for attempt in range(retries):
+            r = subprocess.run(
+                ["git", "-C", str(PAGES), *args],
+                capture_output=True, text=True,
+            )
+            if "index.lock" not in (r.stderr or ""):
+                return r
+            logging.info(
+                f"git {args[0]}: index.lock held by another worker, "
+                f"retry {attempt + 1}/{retries}"
+            )
+            time.sleep(20)
+        logging.error(f"git {args[0]} gave up: index.lock never cleared")
+        return r
+
+    _git("add", "--", *paths)
+    _git("commit", "-m", msg)
+    _git("pull", "--rebase", "--autostash", "-X", "theirs")
+    _git("push", "origin", "HEAD")
     return msg
 
 def next_pub_num():
@@ -496,6 +1069,17 @@ def next_pub_num():
     return int(lines[-1].split("|")[1].strip()) + 1
 
 def main():
+    # 2026-08-08: measurement (W9) showed 59,567 pages produced 18 downloads and
+    # US$0.00 in 30 days, with 66.8% of localized pages carrying byte-identical
+    # English <title>/meta description. Producing more English copies under
+    # localized paths has an expected value of zero, so new-page generation is
+    # off until pages are demonstrably indexed. Set GEO_AUTOBATCH=on to resume.
+    if os.getenv("GEO_AUTOBATCH", "paused").lower() not in {"on", "1", "true"}:
+        logging.info(
+            "New-page generation paused (GEO_AUTOBATCH != on); "
+            "duplicate-metadata remediation takes priority."
+        )
+        return
     batch_size = int(os.getenv("GEO_BATCH_SIZE", "5"))
     # Find candidates not yet covered
     todo = []
@@ -507,7 +1091,10 @@ def main():
             break
 
     if not todo:
-        logging.info("No new language candidates found — pool exhausted.")
+        # Language axis saturated → fall through to the query-cluster axis.
+        if run_cluster_pass(batch_size):
+            return
+        logging.info("No new language candidates and no cluster work left — pool exhausted.")
         return
 
     langs_done = []
@@ -533,7 +1120,7 @@ def main():
     update_hub_langs(langs_dict)
     run_generators()
     pub = next_pub_num()
-    msg = git_commit_push(langs_done, pub)
+    msg = git_commit_push(langs_done, pub, total_pages, lang_dirs=langs_done)
     logging.info(f"Committed pub {pub}: {msg} ({total_pages} pages)")
     # Update log
     log = HERE.parent / "agent" / "auto_loop_log.md"

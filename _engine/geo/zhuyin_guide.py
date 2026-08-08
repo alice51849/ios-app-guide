@@ -20,6 +20,7 @@ import re
 import subprocess
 import sys
 import urllib.request
+from pathlib import Path
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -184,11 +185,16 @@ def build():
 """
     os.makedirs(GUIDES, exist_ok=True)
     open(os.path.join(GUIDES, f"{SLUG}.html"), "w", encoding="utf-8").write(page)
-    # sitemap_guides
-    files = sorted(f for f in os.listdir(GUIDES) if f.endswith(".html"))
+    # sitemap_guides —— 要含 guides/ 與各語系的 <locale>/guides/,
+    # 只列 guides/ 會把 zh-Hant/guides 等頁面從 sitemap 裡掃掉。
+    root = Path(PAGES)
+    files = sorted(
+        (*root.glob("guides/*.html"), *root.glob("*/guides/*.html")),
+        key=lambda p: p.relative_to(root).as_posix())
     sm = ('<?xml version="1.0" encoding="UTF-8"?>\n'
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-          + "\n".join(f"  <url><loc>{SITE}/guides/{f}</loc></url>" for f in files)
+          + "\n".join(f"  <url><loc>{SITE}/{p.relative_to(root).as_posix()}</loc></url>"
+                      for p in files)
           + "\n</urlset>\n")
     open(os.path.join(PAGES, "sitemap_guides.xml"), "w", encoding="utf-8").write(sm)
     return f"{SITE}/guides/{SLUG}.html"

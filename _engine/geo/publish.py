@@ -16,11 +16,6 @@ from official_locales import OFFICIAL_LOCALES
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide")
-STANDARD_SITE_GUIDE_CONTRACT_URL = os.environ.get(
-    "STANDARD_SITE_GUIDE_CONTRACT_URL",
-    "https://raw.githubusercontent.com/alice51849/"
-    "alice51849.github.io/main/standard_site_guide_contract.json",
-)
 PY = sys.executable
 COMMIT_TRAILERS = (
     "\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
@@ -46,30 +41,7 @@ def require(cmd, cwd=None, env=None):
     return output
 
 
-def sync_standard_site(env):
-    require(
-        [
-            PY,
-            os.path.join(HERE, "sync_standard_site.py"),
-            "--site-root",
-            PAGES,
-            "--contract-url",
-            STANDARD_SITE_GUIDE_CONTRACT_URL,
-            "--allow-initial-404",
-            "--timeout",
-            "10",
-            "--retries",
-            "3",
-            "--retry-delay",
-            "2",
-        ],
-        env=env,
-    )
-
-
 def reconcile_lastmod_after_rebase(env):
-    sync_standard_site(env)
-    require([PY, os.path.join(HERE, "reconcile_answer_semantics.py")], env=env)
     require([PY, os.path.join(HERE, "gen_sitemap_lastmod.py")], env=env)
     require(["git", "add", "-A"], cwd=PAGES)
     returncode, output = run(
@@ -149,6 +121,10 @@ def main():
     require([PY, os.path.join(HERE, "zhuyin_mini_reader.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_story_sequence_cards.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_grade1_guide.py")], env=env)
+    # 開學季 zh-Hant 內容叢集(hub + 先修/怎麼教/教學順序/符號表/拼讀)。
+    # 必須排在 zhuyin_grade1_guide.py 之後:兩者都會重建 sitemap_guides.xml,
+    # 由後跑的這支把新頁一起寫進去。
+    require([PY, os.path.join(HERE, "zhuyin_back_to_school.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_anki_deck.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_skos_vocabulary.py")], env=env)
     require([PY, os.path.join(HERE, "zhuyin_croissant_dataset.py")], env=env)
@@ -209,14 +185,6 @@ def main():
         env=env,
     )
     require(
-        [
-            PY,
-            os.path.join(HERE, "reconcile_answer_semantics.py"),
-            "--repair",
-        ],
-        env=env,
-    )
-    require(
         [PY, os.path.join(HERE, "family_outing_weather_planner.py")],
         env=env,
     )
@@ -265,12 +233,17 @@ def main():
     require([PY, os.path.join(HERE, "gen_mobile_store_ctas.py")], env=env)
     require([PY, os.path.join(HERE, "gen_app_store_qr_ctas.py")], env=env)
     require([PY, os.path.join(HERE, "gen_app_store_share_ctas.py")], env=env)
+    # Off-page reach: give every page a store path, keep only App-Store-reachable
+    # locales in the index, then attribute every outbound store link.  These run
+    # after the page generators on purpose — editing built pages outside the
+    # pipeline is silently undone by the next publish.
+    require([PY, os.path.join(HERE, "gen_store_reach.py")], env=env)
+    require([PY, os.path.join(HERE, "gen_locale_indexation.py")], env=env)
+    require([PY, os.path.join(HERE, "gen_store_attribution.py")], env=env)
     require([PY, os.path.join(HERE, "validate_webstories.py")], env=env)
     require([PY, os.path.join(HERE, "gen_llms.py"), "--cached-live"], env=env)
     require([PY, os.path.join(HERE, "zhuyin_resourcesync.py")], env=env)
     require([PY, os.path.join(HERE, "gen_feed.py")], env=env)
-    sync_standard_site(env)
-    require([PY, os.path.join(HERE, "reconcile_answer_semantics.py")], env=env)
     require([PY, os.path.join(HERE, "gen_sitemap_lastmod.py")], env=env)
     if "--no-push" in sys.argv:
         print("\n(--no-push:略過部署/推送)")

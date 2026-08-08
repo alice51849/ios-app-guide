@@ -170,6 +170,16 @@ def build(pages=PAGES):
   <a href="{REPO}" rel="nofollow"><strong>注音學習 App 精選清單</strong></a>，
   或 <a href="{SITE}/guides/zhuyin-app-recommendation.html"><strong>注音 App 推薦指南</strong></a>。</p>
 
+  <h2>開學季其他準備內容</h2>
+  <ul>
+    <li><a href="{SITE}/guides/zhuyin-back-to-school-30-days.html"><strong>開學前 30 天注音準備清單</strong></a>:四週節奏與開學前檢核。</li>
+    <li><a href="{SITE}/guides/zhuyin-xianxiu.html"><strong>注音先修要不要上?</strong></a></li>
+    <li><a href="{SITE}/guides/how-to-teach-zhuyin-at-home.html"><strong>在家教注音的 7 個步驟</strong></a></li>
+    <li><a href="{SITE}/guides/bopomofo-teaching-order.html"><strong>ㄅㄆㄇ 教學順序</strong></a>、
+        <a href="{SITE}/guides/zhuyin-symbol-chart.html"><strong>注音符號表</strong></a>、
+        <a href="{SITE}/guides/zhuyin-blending-jiehe-yun.html"><strong>拼讀與結合韻</strong></a></li>
+  </ul>
+
   <h2>常見問題</h2>
 {faq_html}
 

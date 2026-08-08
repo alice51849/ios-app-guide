@@ -147,6 +147,16 @@ def build():
   想看含這些 App 的完整比較與挑選建議,可參考這份獨立整理的
   <a href="https://github.com/alice51849/awesome-zhuyin-bopomofo-apps" rel="nofollow"><strong>注音學習 App 精選清單</strong></a>。</p>
 
+  <h2>不用 App 也想先做點什麼?</h2>
+  <ul>
+    <li><a href="{SITE}/guides/zhuyin-back-to-school-30-days.html"><strong>開學前 30 天注音準備清單</strong></a>:四週節奏,每天 8–10 分鐘。</li>
+    <li><a href="{SITE}/guides/zhuyin-xianxiu.html"><strong>注音先修要不要上?</strong></a>:先修班、在家練、不練三條路的比較。</li>
+    <li><a href="{SITE}/guides/how-to-teach-zhuyin-at-home.html"><strong>注音符號怎麼教?在家 7 步驟</strong></a></li>
+    <li><a href="{SITE}/guides/bopomofo-teaching-order.html"><strong>ㄅㄆㄇ 教學順序</strong></a>與
+        <a href="{SITE}/guides/zhuyin-symbol-chart.html"><strong>可列印注音符號表</strong></a></li>
+    <li><a href="{SITE}/guides/zhuyin-blending-jiehe-yun.html"><strong>拼讀與結合韻怎麼教</strong></a></li>
+  </ul>
+
   <h2>常見問題</h2>
 {faq_html}
 

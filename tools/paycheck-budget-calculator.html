@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paycheck Budget Calculator — Free Budget by Paycheck (50/30/20, Editable)</title>
+<meta name="description" content="Split each paycheck into needs, wants and savings with transparent math. Editable 50/30/20 split, per-paycheck and per-month numbers, fixed-bills check. Free, no account, nothing stored.">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/tools/paycheck-budget-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Paycheck budget calculator">
+<meta property="og:description" content="Split each paycheck into needs, wants and savings with transparent math. Editable 50/30/20 split, per-paycheck and per-month numbers, fixed-bills check. Free, no account, nothing stored.">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/tools/paycheck-budget-calculator.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#3d3223;--muted:#8a7a5f;--line:#e9dcc3;--paper:#fff;--bg:#faf3e4;--brand:#9a6b16;--gold:#c8922a;--soft:#fdf6e8;--good:#2e7d4f;--bad:#b3452e;--warn:#fff6d9;--shadow:0 22px 60px rgba(122,90,35,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 88% 0,#fff 0,var(--bg) 55%,#f3e6cd 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:#8a5c10}.wrap{width:min(1080px,calc(100% - 30px));margin:auto}
+.top{position:sticky;top:0;z-index:8;background:#fffdf8f2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
+.nav{min-height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}
+.hero{padding:56px 0 26px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--brand);white-space:nowrap}
+.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}
+.hero h1{font-size:clamp(32px,5.6vw,56px);line-height:1.06;letter-spacing:-.03em;margin:.3em 0 .22em}
+.lead{font-size:clamp(17px,2.2vw,20px);color:var(--muted);margin:0}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.tool,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow)}
+.tool{padding:clamp(20px,4vw,34px);margin:14px auto 28px}
+.tool h2,.card h2,.app-card h2{font-size:clamp(22px,3.4vw,31px);line-height:1.15;margin:0 0 6px}
+.intro{color:var(--muted);margin:0 0 8px}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--brand);margin-bottom:6px;white-space:nowrap}
+select,input,button,textarea{font:inherit;color:var(--ink)}
+select,input:not([type=range]):not([type=file]),textarea{width:100%;border:1px solid #dcc9a4;border-radius:13px;background:#fff;padding:10px 12px}
+select,input:not([type=range]):not([type=file]){min-height:46px}
+textarea{min-height:74px;resize:vertical}
+.button{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--gold));color:#fff;text-decoration:none;font-weight:850;padding:12px 19px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(154,107,22,.24)}
+.button.ghost{background:#fff;color:var(--brand);border:1px solid var(--line);box-shadow:none}
+.button[disabled]{opacity:.45;cursor:not-allowed}
+.results{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin-top:18px}
+.result{background:var(--soft);border:1px solid #ecd9b4;border-radius:16px;padding:13px;min-width:0}
+.result strong{display:block;font-size:12px;color:#96793d;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.result span{display:block;font-size:16px;font-weight:780;margin-top:5px;white-space:nowrap;overflow-x:auto}
+.result.ok span{color:var(--good)}.result.err span{color:var(--bad)}
+.note{background:var(--warn);border:1px solid #ead9a7;border-radius:15px;padding:12px 15px;margin:14px 0 0;font-size:14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:28px}
+.card,.app-card{padding:clamp(20px,3.4vw,28px)}.card.wide{grid-column:1/-1}
+.card ul,.card ol{padding-left:22px;margin:8px 0}.card li{margin:7px 0}
+.app-card{margin:0 auto 34px;background:linear-gradient(135deg,#fffdf7,#f7ecd6)}
+.app-card .button{margin-top:8px}
+.faq{margin-bottom:28px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}
+.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radius:14px;background:#fff;touch-action:none}
+.filedrop{border:2px dashed #dcc9a4;border-radius:18px;padding:26px;text-align:center;background:var(--soft);margin-top:14px}
+.filedrop input{width:auto}
+.footer{background:#4a3a1e;color:#f6eeda;text-align:center;padding:26px 0}
+.footer a{color:#f0ddb4}
+.small{font-size:13px;color:var(--muted)}
+@media(max-width:900px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.controls,.results{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1080px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+@media print{.top,.hero,.app-card,.footer,.faq,.grid{display:none!important}body{background:#fff}.tool{box-shadow:none;border:0}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Paycheck budget calculator","description":"Split each paycheck into needs, wants and savings with transparent math. Editable 50/30/20 split, per-paycheck and per-month numbers, fixed-bills check. Free, no account, nothing stored.","url":"https://alice51849.github.io/ios-app-guide/tools/paycheck-budget-calculator.html","inLanguage":"en","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"FinanceApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Weekly, biweekly, semi-monthly and monthly pay frequencies","Editable needs/wants percentages with auto-balancing savings","Per-paycheck and per-month amounts side by side","Fixed-bills vs needs-bucket check with visible math"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"en","mainEntity":[{"@type":"Question","name":"Is 50/30/20 a rule I should follow?","acceptedAnswer":{"@type":"Answer","text":"It is a common starting point, nothing more. The point of this calculator is that the split is editable — high-rent cities often need a much larger needs share."}},{"@type":"Question","name":"Why per paycheck instead of per month?","acceptedAnswer":{"@type":"Answer","text":"Most people are paid weekly or biweekly, and overspending happens between paychecks. Seeing both views keeps the monthly plan and the between-paychecks reality connected."}},{"@type":"Question","name":"Does it store my income?","acceptedAnswer":{"@type":"Answer","text":"No. There is no account, no localStorage and no network call. Numbers exist only while the page is open."}},{"@type":"Question","name":"What does a red ‘needs left’ mean?","acceptedAnswer":{"@type":"Answer","text":"Your fixed bills are bigger than the entire needs bucket at the current split, so the plan is not realistic yet — raise the needs percentage or lower a bill."}}]}</script>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="index.html">← Free tools</a><a href="https://alice51849.github.io/ios-app-guide/" >iOS App Guide</a></div></header>
+<section class="hero wrap">
+<span class="eyebrow">Budget by paycheck · transparent math · free</span>
+<h1>Paycheck budget calculator</h1>
+<p class="lead">Start from the money that actually arrives, split it per paycheck and per month, and see immediately whether fixed bills even fit inside the needs bucket.</p>
+<div class="badges"><span class="badge">Per-paycheck and monthly view</span><span class="badge">Editable 50/30/20</span><span class="badge">Fixed-bills reality check</span><span class="badge">Nothing saved or sent</span></div>
+</section>
+<main class="wrap">
+<section class="tool" id="tool">
+<h2>Split one paycheck honestly</h2>
+<p class="intro">Enter what actually lands in your account. The split is editable — 50/30/20 is a starting point, not a rule.</p>
+<div class="controls">
+<div class="field"><label for="pay">Take-home per paycheck</label><input type="number" id="pay" value="2000" min="0" step="any" inputmode="decimal"></div>
+<div class="field"><label for="freq">Pay frequency</label><select id="freq">
+<option value="4.3333">Weekly</option><option value="2.1667" selected>Every two weeks</option>
+<option value="2">Twice a month</option><option value="1">Monthly</option></select></div>
+<div class="field"><label for="bills">Fixed monthly bills (rent, utilities…)</label><input type="number" id="bills" value="900" min="0" step="any" inputmode="decimal"></div>
+<div class="field"><label for="pn">Needs %</label><input type="number" id="pn" value="50" min="0" max="100"></div>
+<div class="field"><label for="pw">Wants %</label><input type="number" id="pw" value="30" min="0" max="100"></div>
+<div class="field"><label for="ps">Savings % (auto = 100 − needs − wants)</label><input type="number" id="ps" value="20" readonly></div>
+</div>
+<div class="results">
+<div class="result"><strong>Monthly take-home</strong><span id="m-total">—</span></div>
+<div class="result"><strong>Needs / month</strong><span id="m-needs">—</span></div>
+<div class="result"><strong>Wants / month</strong><span id="m-wants">—</span></div>
+<div class="result"><strong>Savings / month</strong><span id="m-save">—</span></div>
+<div class="result"><strong>Needs / paycheck</strong><span id="p-needs">—</span></div>
+<div class="result"><strong>Wants / paycheck</strong><span id="p-wants">—</span></div>
+<div class="result"><strong>Savings / paycheck</strong><span id="p-save">—</span></div>
+<div class="result" id="left-box"><strong>Needs left after fixed bills</strong><span id="m-left">—</span></div>
+</div>
+<p class="note" id="warn" hidden></p>
+<p class="small">Math: monthly = paycheck × factor (weekly 52/12, biweekly 26/12, semi-monthly 2, monthly 1). Nothing is saved or sent anywhere.</p>
+</section>
+<section class="grid">
+<article class="card"><h2>How it works</h2><ol><li>Enter take-home pay per paycheck and how often you are paid.</li><li>Monthly income = paycheck × frequency factor (weekly 52÷12, biweekly 26÷12, twice a month 2, monthly 1).</li><li>The needs/wants/savings split applies to both views; savings auto-balances to keep the total at 100%.</li><li>Fixed bills are subtracted from the monthly needs bucket so a shortfall is visible, not hidden.</li></ol></article>
+<article class="card"><h2>What it will never do</h2><ul><li>No budgeting advice — the split percentages are yours to change.</li><li>No income, spending or savings prediction; it only rearranges numbers you typed.</li><li>Nothing is stored: reloading the page clears everything.</li></ul></article>
+<article class="card wide"><h2>More free tools</h2><ul><li><a href="hours-of-work-calculator.html">Hours of work calculator (price → work time)</a></li><li><a href="subscription-cost-calculator.html">Subscription cost calculator</a></li><li><a href="currency-converter.html">Currency converter (ECB reference rates)</a></li></ul></article>
+</section>
+<section class="faq"><h2>Questions</h2><details><summary>Is 50/30/20 a rule I should follow?</summary><p>It is a common starting point, nothing more. The point of this calculator is that the split is editable — high-rent cities often need a much larger needs share.</p></details><details><summary>Why per paycheck instead of per month?</summary><p>Most people are paid weekly or biweekly, and overspending happens between paychecks. Seeing both views keeps the monthly plan and the between-paychecks reality connected.</p></details><details><summary>Does it store my income?</summary><p>No. There is no account, no localStorage and no network call. Numbers exist only while the page is open.</p></details><details><summary>What does a red ‘needs left’ mean?</summary><p>Your fixed bills are bigger than the entire needs bucket at the current split, so the plan is not realistic yet — raise the needs percentage or lower a bill.</p></details></section>
+<section class="app-card"><h2>Want to see prices as hours of your work?</h2>
+<p>HoursTag: Hours to Buy is optional — this free tool runs entirely in your browser and works without it. Check the app’s current App Store listing for exact features, pricing and availability before downloading.</p>
+<a class="button" href="https://apps.apple.com/app/id6754218117" rel="nofollow noopener">View HoursTag: Hours to Buy on the App Store</a></section>
+</main>
+<footer class="footer"><div class="wrap">Runs in your browser · nothing is uploaded or stored · <a href="index.html">all free tools</a></div></footer>
+<script>
+function n(id){return parseFloat(document.getElementById(id).value)||0;}
+function fmt(x){return x.toLocaleString(undefined,{maximumFractionDigits:0});}
+function set(id,v){document.getElementById(id).textContent=fmt(v);}
+function calc(){
+  var pn=Math.min(100,Math.max(0,n('pn'))),pw=Math.min(100,Math.max(0,n('pw')));
+  var ps=Math.max(0,100-pn-pw);document.getElementById('ps').value=ps.toFixed(0);
+  var pay=n('pay'),factor=parseFloat(document.getElementById('freq').value);
+  var monthly=pay*factor,bills=n('bills');
+  set('m-total',monthly);set('m-needs',monthly*pn/100);set('m-wants',monthly*pw/100);set('m-save',monthly*ps/100);
+  set('p-needs',pay*pn/100);set('p-wants',pay*pw/100);set('p-save',pay*ps/100);
+  var left=monthly*pn/100-bills;set('m-left',left);
+  var box=document.getElementById('left-box');box.classList.toggle('err',left<0);box.classList.toggle('ok',left>=0);
+  var w=document.getElementById('warn');
+  if(pn+pw>100){w.hidden=false;w.textContent='Needs + wants exceed 100% — savings is set to 0 and the split no longer adds up. Reduce one of them.';}
+  else if(left<0){w.hidden=false;w.textContent='Fixed bills are larger than the whole needs bucket. This is a signal to raise the needs %, not to hide the gap.';}
+  else w.hidden=true;}
+['pay','freq','bills','pn','pw'].forEach(function(id){
+  document.getElementById(id).addEventListener('input',calc);
+  document.getElementById(id).addEventListener('change',calc);});
+calc();
+</script>
+</body>
+</html>

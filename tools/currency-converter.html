@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Currency Converter — Free Exchange Rate Calculator (ECB Reference Rates)</title>
+<meta name="description" content="Convert between 30 currencies with dated European Central Bank reference rates. Free exchange rate calculator that shows its rate, its date and its source — no account, no ads-wall.">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/tools/currency-converter.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Currency converter">
+<meta property="og:description" content="Convert between 30 currencies with dated European Central Bank reference rates. Free exchange rate calculator that shows its rate, its date and its source — no account, no ads-wall.">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/tools/currency-converter.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#3d3223;--muted:#8a7a5f;--line:#e9dcc3;--paper:#fff;--bg:#faf3e4;--brand:#9a6b16;--gold:#c8922a;--soft:#fdf6e8;--good:#2e7d4f;--bad:#b3452e;--warn:#fff6d9;--shadow:0 22px 60px rgba(122,90,35,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 88% 0,#fff 0,var(--bg) 55%,#f3e6cd 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:#8a5c10}.wrap{width:min(1080px,calc(100% - 30px));margin:auto}
+.top{position:sticky;top:0;z-index:8;background:#fffdf8f2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
+.nav{min-height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}
+.hero{padding:56px 0 26px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--brand);white-space:nowrap}
+.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}
+.hero h1{font-size:clamp(32px,5.6vw,56px);line-height:1.06;letter-spacing:-.03em;margin:.3em 0 .22em}
+.lead{font-size:clamp(17px,2.2vw,20px);color:var(--muted);margin:0}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.tool,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow)}
+.tool{padding:clamp(20px,4vw,34px);margin:14px auto 28px}
+.tool h2,.card h2,.app-card h2{font-size:clamp(22px,3.4vw,31px);line-height:1.15;margin:0 0 6px}
+.intro{color:var(--muted);margin:0 0 8px}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--brand);margin-bottom:6px;white-space:nowrap}
+select,input,button,textarea{font:inherit;color:var(--ink)}
+select,input:not([type=range]):not([type=file]),textarea{width:100%;border:1px solid #dcc9a4;border-radius:13px;background:#fff;padding:10px 12px}
+select,input:not([type=range]):not([type=file]){min-height:46px}
+textarea{min-height:74px;resize:vertical}
+.button{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--gold));color:#fff;text-decoration:none;font-weight:850;padding:12px 19px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(154,107,22,.24)}
+.button.ghost{background:#fff;color:var(--brand);border:1px solid var(--line);box-shadow:none}
+.button[disabled]{opacity:.45;cursor:not-allowed}
+.results{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin-top:18px}
+.result{background:var(--soft);border:1px solid #ecd9b4;border-radius:16px;padding:13px;min-width:0}
+.result strong{display:block;font-size:12px;color:#96793d;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.result span{display:block;font-size:16px;font-weight:780;margin-top:5px;white-space:nowrap;overflow-x:auto}
+.result.ok span{color:var(--good)}.result.err span{color:var(--bad)}
+.note{background:var(--warn);border:1px solid #ead9a7;border-radius:15px;padding:12px 15px;margin:14px 0 0;font-size:14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:28px}
+.card,.app-card{padding:clamp(20px,3.4vw,28px)}.card.wide{grid-column:1/-1}
+.card ul,.card ol{padding-left:22px;margin:8px 0}.card li{margin:7px 0}
+.app-card{margin:0 auto 34px;background:linear-gradient(135deg,#fffdf7,#f7ecd6)}
+.app-card .button{margin-top:8px}
+.faq{margin-bottom:28px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}
+.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radius:14px;background:#fff;touch-action:none}
+.filedrop{border:2px dashed #dcc9a4;border-radius:18px;padding:26px;text-align:center;background:var(--soft);margin-top:14px}
+.filedrop input{width:auto}
+.footer{background:#4a3a1e;color:#f6eeda;text-align:center;padding:26px 0}
+.footer a{color:#f0ddb4}
+.small{font-size:13px;color:var(--muted)}
+@media(max-width:900px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.controls,.results{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1080px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+@media print{.top,.hero,.app-card,.footer,.faq,.grid{display:none!important}body{background:#fff}.tool{box-shadow:none;border:0}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Currency converter","description":"Convert between 30 currencies with dated European Central Bank reference rates. Free exchange rate calculator that shows its rate, its date and its source — no account, no ads-wall.","url":"https://alice51849.github.io/ios-app-guide/tools/currency-converter.html","inLanguage":"en","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"FinanceApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["30-currency conversion on ECB reference rates","Rate, date and source always displayed","Built-in dated snapshot works even if the live feed is unreachable","No account, tracking wall or hidden margin"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"en","mainEntity":[{"@type":"Question","name":"Where do the rates come from?","acceptedAnswer":{"@type":"Answer","text":"European Central Bank reference rates, via the open frankfurter.dev API, with a dated built-in snapshot as fallback. The source and date are always displayed under the result."}},{"@type":"Question","name":"Is this the rate I will get at my bank?","acceptedAnswer":{"@type":"Answer","text":"No. Banks, cards and exchange counters add their own margin and fees. ECB reference rates are a fair mid-market reference for comparison only."}},{"@type":"Question","name":"Does it work offline?","acceptedAnswer":{"@type":"Answer","text":"After the page loads once, conversion keeps working with the most recent rates it has, and keeps showing their date so you always know how fresh they are."}},{"@type":"Question","name":"Why only 30 currencies?","acceptedAnswer":{"@type":"Answer","text":"The ECB publishes reference rates for these currencies. The page will not fill the gaps with unsourced numbers."}}]}</script>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="index.html">← Free tools</a><a href="https://alice51849.github.io/ios-app-guide/" >iOS App Guide</a></div></header>
+<section class="hero wrap">
+<span class="eyebrow">ECB reference rates · date always shown · free</span>
+<h1>Currency converter</h1>
+<p class="lead">A converter that tells you exactly which rate it used and when it was published — because a rate without a date is a guess.</p>
+<div class="badges"><span class="badge">30 currencies</span><span class="badge">Dated ECB reference rates</span><span class="badge">Works offline after load</span><span class="badge">No account</span></div>
+</section>
+<main class="wrap">
+<section class="tool" id="tool">
+<h2>Convert between 30 currencies</h2>
+<p class="intro">European Central Bank reference rates. The rate and its date are always shown — reference rates are not the rate your bank or card will give you.</p>
+<div class="controls">
+<div class="field"><label for="amt">Amount</label><input type="number" id="amt" value="100" min="0" step="any" inputmode="decimal"></div>
+<div class="field"><label for="from">From</label><select id="from"></select></div>
+<div class="field"><label for="to">To</label><select id="to"></select></div>
+</div>
+<div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+<button class="button ghost" id="swap">⇅ Swap</button>
+</div>
+<div class="results">
+<div class="result" style="grid-column:1/-1"><strong>Converted</strong><span id="res">—</span></div>
+<div class="result" style="grid-column:1/-1"><strong>Rate</strong><span id="rate">—</span></div>
+<div class="result" style="grid-column:1/-1"><strong>Rates as of</strong><span id="asof">—</span></div>
+</div>
+<p class="note" id="srcnote">ECB reference rates. Cards, banks and exchange counters add their own margin — treat this as a fair mid-market reference, not a quote.</p>
+</section>
+<section class="grid">
+<article class="card"><h2>How it works</h2><ol><li>The page ships with a dated ECB snapshot, then tries to refresh from the open frankfurter.dev feed of ECB reference rates.</li><li>Conversion is transparent cross-rate math: amount × rate(to) ÷ rate(from) against the USD base.</li><li>The rate line and its publication date update with every input.</li></ol></article>
+<article class="card"><h2>What it will never do</h2><ul><li>It never claims to show the rate your bank, card or exchange counter will give you — those include margins this page cannot know.</li><li>No quotes, no predictions, no “best time to exchange” advice.</li><li>ECB publishes reference rates on working days; weekends show the last working-day rate with its date.</li></ul></article>
+<article class="card wide"><h2>More free tools</h2><ul><li><a href="hours-of-work-calculator.html">Hours of work calculator (price → work time)</a></li><li><a href="subscription-cost-calculator.html">Subscription cost calculator</a></li><li><a href="paycheck-budget-calculator.html">Paycheck budget calculator</a></li></ul></article>
+</section>
+<section class="faq"><h2>Questions</h2><details><summary>Where do the rates come from?</summary><p>European Central Bank reference rates, via the open frankfurter.dev API, with a dated built-in snapshot as fallback. The source and date are always displayed under the result.</p></details><details><summary>Is this the rate I will get at my bank?</summary><p>No. Banks, cards and exchange counters add their own margin and fees. ECB reference rates are a fair mid-market reference for comparison only.</p></details><details><summary>Does it work offline?</summary><p>After the page loads once, conversion keeps working with the most recent rates it has, and keeps showing their date so you always know how fresh they are.</p></details><details><summary>Why only 30 currencies?</summary><p>The ECB publishes reference rates for these currencies. The page will not fill the gaps with unsourced numbers.</p></details></section>
+<section class="app-card"><h2>Tracking money across currencies on iPhone?</h2>
+<p>G+Money is optional — this free tool runs entirely in your browser and works without it. Check the app’s current App Store listing for exact features, pricing and availability before downloading.</p>
+<a class="button" href="https://apps.apple.com/app/id6755782939" rel="nofollow noopener">View G+Money on the App Store</a></section>
+</main>
+<footer class="footer"><div class="wrap">Runs in your browser · nothing is uploaded or stored · <a href="index.html">all free tools</a></div></footer>
+<script>
+var SNAP={"amount":1.0,"base":"USD","date":"2026-08-07","rates":{"AUD":1.4204,"BRL":5.0998,"CAD":1.401,"CHF":0.81032,"CNY":6.7476,"CZK":21.033,"DKK":6.4808,"EUR":0.86693,"GBP":0.74352,"HKD":7.8449,"HUF":315.99,"IDR":17846,"ILS":3.0029,"INR":95.21,"ISK":123.62,"JPY":158.34,"KRW":1415.95,"MXN":17.1551,"MYR":4.091,"NOK":9.5145,"NZD":1.7032,"PHP":60.867,"PLN":3.7263,"RON":4.5535,"SEK":9.4889,"SGD":1.2809,"THB":33.055,"TRY":47.706,"ZAR":16.2233}},NAMES={"USD":"US Dollar","EUR":"Euro","JPY":"Japanese Yen","GBP":"British Pound","AUD":"Australian Dollar","BRL":"Brazilian Real","CAD":"Canadian Dollar","CHF":"Swiss Franc","CNY":"Chinese Yuan","CZK":"Czech Koruna","DKK":"Danish Krone","HKD":"Hong Kong Dollar","HUF":"Hungarian Forint","IDR":"Indonesian Rupiah","ILS":"Israeli Shekel","INR":"Indian Rupee","ISK":"Icelandic Krona","KRW":"South Korean Won","MXN":"Mexican Peso","MYR":"Malaysian Ringgit","NOK":"Norwegian Krone","NZD":"New Zealand Dollar","PHP":"Philippine Peso","PLN":"Polish Zloty","RON":"Romanian Leu","SEK":"Swedish Krona","SGD":"Singapore Dollar","THB":"Thai Baht","TRY":"Turkish Lira","ZAR":"South African Rand"};
+var rates=null,asof='',src='';
+function useData(base,d,date,label){rates={};rates[base]=1;
+  for(var k in d)rates[k]=d[k];asof=date;src=label;fill();calc();}
+function fill(){var codes=Object.keys(rates).sort();
+  ['from','to'].forEach(function(id){var sel=document.getElementById(id);
+    var keep=sel.value;sel.innerHTML='';
+    codes.forEach(function(c){var o=document.createElement('option');o.value=c;
+      o.textContent=c+(NAMES[c]?' — '+NAMES[c]:'');sel.appendChild(o);});
+    sel.value=keep&&codes.indexOf(keep)>=0?keep:(id==='from'?'USD':'EUR');});}
+function fmt(x){return x.toLocaleString(undefined,{maximumFractionDigits:x>=100?2:4});}
+function calc(){if(!rates)return;
+  var a=parseFloat(document.getElementById('amt').value)||0;
+  var f=document.getElementById('from').value,t=document.getElementById('to').value;
+  var r=rates[t]/rates[f];
+  document.getElementById('res').textContent=fmt(a)+' '+f+' = '+fmt(a*r)+' '+t;
+  document.getElementById('rate').textContent='1 '+f+' = '+fmt(r)+' '+t;
+  document.getElementById('asof').textContent=asof+' · '+src;}
+['amt','from','to'].forEach(function(id){
+  document.getElementById(id).addEventListener('input',calc);
+  document.getElementById(id).addEventListener('change',calc);});
+document.getElementById('swap').addEventListener('click',function(){
+  var f=document.getElementById('from'),t=document.getElementById('to');
+  var v=f.value;f.value=t.value;t.value=v;calc();});
+useData(SNAP.base,SNAP.rates,SNAP.date,'built-in ECB snapshot');
+fetch('https://api.frankfurter.dev/v1/latest?base=USD').then(function(r){return r.json();})
+  .then(function(d){if(d&&d.rates)useData(d.base,d.rates,d.date,'live ECB reference (frankfurter.dev)');})
+  .catch(function(){});
+</script>
+</body>
+</html>

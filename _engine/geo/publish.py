@@ -102,6 +102,8 @@ def main():
     require([PY, os.path.join(HERE, "portfolio_app_finder.py")], env=env)
     require([PY, os.path.join(HERE, "gen_hubs.py")], env=env)
     require([PY, os.path.join(HERE, "portfolio_cost_calculator.py")], env=env)
+    # W19 需求導向工具頁(shortlist.json 驗證過有搜尋量的 checker/converter/maker)
+    require([PY, os.path.join(HERE, "demand_tools.py")], env=env)
     require([PY, os.path.join(HERE, "outreach_scorecard.py")], env=env)
     require([PY, os.path.join(HERE, "gen_data_hub.py")], env=env)
     require([PY, os.path.join(HERE, "family_travel_static_api.py")], env=env)
@@ -199,6 +201,11 @@ def main():
             [PY, os.path.join(HERE, "add_related_tools.py"), "--locale", locale],
             env=env,
         )
+    # 工具頁的「新工具上線通知」訂閱。跑在工具頁產生器之後,否則會被覆蓋。
+    # tool_email_capture.json 沒填 endpoint 時它只會移除舊區塊,不會上線壞表單。
+    require([PY, os.path.join(HERE, "gen_tool_email_capture.py")], env=env)
+    # 檔期曝光:讓入口頁跟著開學季/報稅季/新年走(agent/season_engine.py 算的)
+    require([PY, os.path.join(HERE, "gen_seasonal_spotlight.py")], env=env)
     require([PY, os.path.join(HERE, "fix_en_hreflang.py")], env=env)
     require([PY, os.path.join(HERE, "gen_webstories.py")], env=env)
     require([PY, os.path.join(HERE, "gen_webstories_i18n.py")], env=env)

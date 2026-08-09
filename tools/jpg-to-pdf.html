@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JPG to PDF Converter — Free, Private, Runs in Your Browser</title>
+<meta name="description" content="Turn photos or scans (JPG, PNG, WebP) into a single PDF directly in your browser. Reorder pages, choose A4, Letter or fit-to-image. Free, no upload, no watermark, no account.">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/tools/jpg-to-pdf.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="JPG to PDF converter">
+<meta property="og:description" content="Turn photos or scans (JPG, PNG, WebP) into a single PDF directly in your browser. Reorder pages, choose A4, Letter or fit-to-image. Free, no upload, no watermark, no account.">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/tools/jpg-to-pdf.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#3d3223;--muted:#8a7a5f;--line:#e9dcc3;--paper:#fff;--bg:#faf3e4;--brand:#9a6b16;--gold:#c8922a;--soft:#fdf6e8;--good:#2e7d4f;--bad:#b3452e;--warn:#fff6d9;--shadow:0 22px 60px rgba(122,90,35,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 88% 0,#fff 0,var(--bg) 55%,#f3e6cd 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:#8a5c10}.wrap{width:min(1080px,calc(100% - 30px));margin:auto}
+.top{position:sticky;top:0;z-index:8;background:#fffdf8f2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
+.nav{min-height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}
+.hero{padding:56px 0 26px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--brand);white-space:nowrap}
+.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}
+.hero h1{font-size:clamp(32px,5.6vw,56px);line-height:1.06;letter-spacing:-.03em;margin:.3em 0 .22em}
+.lead{font-size:clamp(17px,2.2vw,20px);color:var(--muted);margin:0}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.tool,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow)}
+.tool{padding:clamp(20px,4vw,34px);margin:14px auto 28px}
+.tool h2,.card h2,.app-card h2{font-size:clamp(22px,3.4vw,31px);line-height:1.15;margin:0 0 6px}
+.intro{color:var(--muted);margin:0 0 8px}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--brand);margin-bottom:6px;white-space:nowrap}
+select,input,button,textarea{font:inherit;color:var(--ink)}
+select,input:not([type=range]):not([type=file]),textarea{width:100%;border:1px solid #dcc9a4;border-radius:13px;background:#fff;padding:10px 12px}
+select,input:not([type=range]):not([type=file]){min-height:46px}
+textarea{min-height:74px;resize:vertical}
+.button{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--gold));color:#fff;text-decoration:none;font-weight:850;padding:12px 19px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(154,107,22,.24)}
+.button.ghost{background:#fff;color:var(--brand);border:1px solid var(--line);box-shadow:none}
+.button[disabled]{opacity:.45;cursor:not-allowed}
+.results{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin-top:18px}
+.result{background:var(--soft);border:1px solid #ecd9b4;border-radius:16px;padding:13px;min-width:0}
+.result strong{display:block;font-size:12px;color:#96793d;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.result span{display:block;font-size:16px;font-weight:780;margin-top:5px;white-space:nowrap;overflow-x:auto}
+.result.ok span{color:var(--good)}.result.err span{color:var(--bad)}
+.note{background:var(--warn);border:1px solid #ead9a7;border-radius:15px;padding:12px 15px;margin:14px 0 0;font-size:14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:28px}
+.card,.app-card{padding:clamp(20px,3.4vw,28px)}.card.wide{grid-column:1/-1}
+.card ul,.card ol{padding-left:22px;margin:8px 0}.card li{margin:7px 0}
+.app-card{margin:0 auto 34px;background:linear-gradient(135deg,#fffdf7,#f7ecd6)}
+.app-card .button{margin-top:8px}
+.faq{margin-bottom:28px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}
+.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radius:14px;background:#fff;touch-action:none}
+.filedrop{border:2px dashed #dcc9a4;border-radius:18px;padding:26px;text-align:center;background:var(--soft);margin-top:14px}
+.filedrop input{width:auto}
+.footer{background:#4a3a1e;color:#f6eeda;text-align:center;padding:26px 0}
+.footer a{color:#f0ddb4}
+.small{font-size:13px;color:var(--muted)}
+@media(max-width:900px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.controls,.results{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1080px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+@media print{.top,.hero,.app-card,.footer,.faq,.grid{display:none!important}body{background:#fff}.tool{box-shadow:none;border:0}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"JPG to PDF converter","description":"Turn photos or scans (JPG, PNG, WebP) into a single PDF directly in your browser. Reorder pages, choose A4, Letter or fit-to-image. Free, no upload, no watermark, no account.","url":"https://alice51849.github.io/ios-app-guide/tools/jpg-to-pdf.html","inLanguage":"en","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Multiple JPG/PNG/WebP images combined into one PDF","Page reorder and remove before export","A4, US Letter or fit-to-image pages with margin options","PDF assembled locally in the browser; no upload or account"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"en","mainEntity":[{"@type":"Question","name":"Are my documents uploaded to a server?","acceptedAnswer":{"@type":"Answer","text":"No. The images are read and the PDF is assembled entirely inside your browser. Airplane mode after loading the page works fine."}},{"@type":"Question","name":"Is there a page limit or watermark?","acceptedAnswer":{"@type":"Answer","text":"No watermark, no forced limit. Very large batches are limited only by your device’s memory."}},{"@type":"Question","name":"Can it make the text searchable (OCR)?","acceptedAnswer":{"@type":"Answer","text":"No. This tool outputs image pages. OCR needs an actual recognition engine, which is exactly the kind of job a dedicated scanning app does better."}},{"@type":"Question","name":"Why do my photos get converted to JPEG?","acceptedAnswer":{"@type":"Answer","text":"PDF embeds JPEG natively and it keeps files small. Images are drawn on a white background, so transparent PNGs stay readable."}}]}</script>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="index.html">← Free tools</a><a href="https://alice51849.github.io/ios-app-guide/" >iOS App Guide</a></div></header>
+<section class="hero wrap">
+<span class="eyebrow">No upload · no watermark · assembled locally</span>
+<h1>JPG to PDF converter</h1>
+<p class="lead">Select images, put them in order, download one PDF. The whole conversion happens inside your browser — your documents never touch a server.</p>
+<div class="badges"><span class="badge">Files never uploaded</span><span class="badge">Multiple images → one PDF</span><span class="badge">A4 / Letter / fit</span><span class="badge">No watermark</span></div>
+</section>
+<main class="wrap">
+<section class="tool" id="tool">
+<h2>Combine images into one PDF</h2>
+<p class="intro">Pick photos or scans, order them, download a PDF. Files are processed by your browser only.</p>
+<div class="filedrop"><input type="file" id="file" accept="image/*" multiple> <span class="small">JPG, PNG, WebP — multiple allowed</span></div>
+<div class="controls" style="margin-top:14px">
+<div class="field"><label for="size">Page size</label><select id="size">
+<option value="a4">A4</option><option value="letter">US Letter</option><option value="fit">Fit each image</option></select></div>
+<div class="field"><label for="margin">Margin</label><select id="margin">
+<option value="24">Normal</option><option value="0">None</option><option value="48">Wide</option></select></div>
+<div class="field"><label>&nbsp;</label><button class="button" id="make" disabled>Download PDF</button></div>
+</div>
+<ol id="list" style="margin-top:14px;padding-left:22px"></ol>
+<p class="note">Each image becomes one PDF page. Nothing is uploaded — the PDF is assembled locally in your browser.</p>
+</section>
+<section class="grid">
+<article class="card"><h2>How it works</h2><ol><li>Selected images are read locally with the file API.</li><li>Each image is normalized to JPEG (long edge capped at 2600 px, white background) on a canvas.</li><li>A minimal PDF is assembled in the page — one image per page, scaled into your chosen page size and margin.</li><li>The result downloads as a normal PDF file; nothing is transmitted.</li></ol></article>
+<article class="card"><h2>What it will never do</h2><ul><li>No OCR — the output PDF contains images, not selectable text.</li><li>No compression promises: file size depends on your images.</li><li>Nothing is uploaded, logged or kept; reloading the page clears the list.</li></ul></article>
+<article class="card wide"><h2>More free tools</h2><ul><li><a href="image-to-pdf-iphone.html">Image to PDF on iPhone (built-in ways)</a></li><li><a href="photo-storage-calculator.html">Photo storage calculator</a></li><li><a href="passport-photo-checker.html">Passport photo checker</a></li></ul></article>
+</section>
+<section class="faq"><h2>Questions</h2><details><summary>Are my documents uploaded to a server?</summary><p>No. The images are read and the PDF is assembled entirely inside your browser. Airplane mode after loading the page works fine.</p></details><details><summary>Is there a page limit or watermark?</summary><p>No watermark, no forced limit. Very large batches are limited only by your device’s memory.</p></details><details><summary>Can it make the text searchable (OCR)?</summary><p>No. This tool outputs image pages. OCR needs an actual recognition engine, which is exactly the kind of job a dedicated scanning app does better.</p></details><details><summary>Why do my photos get converted to JPEG?</summary><p>PDF embeds JPEG natively and it keeps files small. Images are drawn on a white background, so transparent PNGs stay readable.</p></details></section>
+<section class="app-card"><h2>Scanning documents regularly on iPhone?</h2>
+<p>ScanTo Pro: Offline PDF &amp; OCR is optional — this free tool runs entirely in your browser and works without it. Check the app’s current App Store listing for exact features, pricing and availability before downloading.</p>
+<a class="button" href="https://apps.apple.com/app/id6779977651" rel="nofollow noopener">View ScanTo Pro: Offline PDF &amp; OCR on the App Store</a></section>
+</main>
+<footer class="footer"><div class="wrap">Runs in your browser · nothing is uploaded or stored · <a href="index.html">all free tools</a></div></footer>
+<script>
+var files=[];
+var input=document.getElementById('file'),list=document.getElementById('list'),make=document.getElementById('make');
+input.addEventListener('change',function(){
+  for(var i=0;i<input.files.length;i++)files.push(input.files[i]);
+  input.value='';draw();});
+function draw(){list.innerHTML='';
+  files.forEach(function(f,i){
+    var li=document.createElement('li');
+    li.innerHTML=esc(f.name)+' <button data-a="up" data-i="'+i+'">↑</button> <button data-a="dn" data-i="'+i+'">↓</button> <button data-a="rm" data-i="'+i+'">✕</button>';
+    list.appendChild(li);});
+  make.disabled=!files.length;}
+function esc(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML;}
+list.addEventListener('click',function(e){
+  var b=e.target.closest('button');if(!b)return;
+  var i=+b.dataset.i,a=b.dataset.a;
+  if(a==='rm')files.splice(i,1);
+  if(a==='up'&&i>0){var t=files[i-1];files[i-1]=files[i];files[i]=t;}
+  if(a==='dn'&&i<files.length-1){var t2=files[i+1];files[i+1]=files[i];files[i]=t2;}
+  draw();});
+function loadImage(f){return new Promise(function(res,rej){
+  var u=URL.createObjectURL(f),im=new Image();
+  im.onload=function(){res({img:im,url:u});};im.onerror=rej;im.src=u;});}
+function toJpeg(img){
+  var MAX=2600,w=img.naturalWidth,h=img.naturalHeight;
+  var s=Math.min(1,MAX/Math.max(w,h));w=Math.round(w*s);h=Math.round(h*s);
+  var c=document.createElement('canvas');c.width=w;c.height=h;
+  var x=c.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,w,h);x.drawImage(img,0,0,w,h);
+  return new Promise(function(res){c.toBlob(function(b){
+    b.arrayBuffer().then(function(buf){res({bytes:new Uint8Array(buf),w:w,h:h});});},'image/jpeg',0.9);});}
+function buildPdf(images,pageSize,margin){
+  var enc=new TextEncoder(),parts=[],offsets=[],pos=0;
+  function push(x){var b=typeof x==='string'?enc.encode(x):x;parts.push(b);pos+=b.length;}
+  function obj(id,body){offsets[id]=pos;push(id+' 0 obj\n'+body+'\nendobj\n');}
+  push('%PDF-1.4\n');
+  var n=images.length,kids=[];
+  for(var i=0;i<n;i++)kids.push((5+i*3)+' 0 R');
+  obj(1,'<< /Type /Catalog /Pages 2 0 R >>');
+  obj(2,'<< /Type /Pages /Kids ['+kids.join(' ')+'] /Count '+n+' >>');
+  for(var i=0;i<n;i++){
+    var im=images[i];
+    var pw,ph;
+    if(pageSize==='a4'){pw=595.28;ph=841.89;}
+    else if(pageSize==='letter'){pw=612;ph=792;}
+    else{pw=im.w*72/96+2*margin;ph=im.h*72/96+2*margin;}
+    var availW=pw-2*margin,availH=ph-2*margin;
+    var s=Math.min(availW/im.w,availH/im.h);
+    var dw=im.w*s,dh=im.h*s,dx=(pw-dw)/2,dy=(ph-dh)/2;
+    var xo=3+i*3,co=4+i*3,po=5+i*3;
+    offsets[xo]=pos;
+    push(xo+' 0 obj\n<< /Type /XObject /Subtype /Image /Width '+im.w+' /Height '+im.h
+      +' /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length '+im.bytes.length+' >>\nstream\n');
+    push(im.bytes);push('\nendstream\nendobj\n');
+    var content='q '+dw.toFixed(2)+' 0 0 '+dh.toFixed(2)+' '+dx.toFixed(2)+' '+dy.toFixed(2)+' cm /Im'+i+' Do Q';
+    obj(co,'<< /Length '+content.length+' >>\nstream\n'+content+'\nendstream');
+    obj(po,'<< /Type /Page /Parent 2 0 R /MediaBox [0 0 '+pw.toFixed(2)+' '+ph.toFixed(2)
+      +'] /Resources << /XObject << /Im'+i+' '+xo+' 0 R >> >> /Contents '+co+' 0 R >>');}
+  var total=3+n*3;
+  var xref=pos,table='xref\n0 '+total+'\n0000000000 65535 f \n';
+  for(var id=1;id<total;id++){
+    table+=String(offsets[id]).padStart(10,'0')+' 00000 n \n';}
+  push(table+'trailer\n<< /Size '+total+' /Root 1 0 R >>\nstartxref\n'+xref+'\n%%EOF');
+  return new Blob(parts,{type:'application/pdf'});}
+make.addEventListener('click',function(){
+  make.disabled=true;make.textContent='Working…';
+  var pageSize=document.getElementById('size').value;
+  var margin=parseFloat(document.getElementById('margin').value);
+  Promise.all(files.map(loadImage)).then(function(loaded){
+    return Promise.all(loaded.map(function(l){
+      var p=toJpeg(l.img);URL.revokeObjectURL(l.url);return p;}));
+  }).then(function(images){
+    var blob=buildPdf(images,pageSize,margin);
+    var a=document.createElement('a');a.href=URL.createObjectURL(blob);
+    a.download='images.pdf';a.click();
+    setTimeout(function(){URL.revokeObjectURL(a.href);},5000);
+  }).catch(function(e){alert('Could not read one of the images: '+e);})
+  .finally(function(){make.disabled=false;make.textContent='Download PDF';});});
+</script>
+</body>
+</html>

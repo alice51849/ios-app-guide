@@ -239,6 +239,10 @@ def _load_asc_growth_signals(raw=None, today=None):
 
 ASC_MARKET_LOCALES, ASC_GROWTH_ACTIONS = _load_asc_growth_signals()
 
+# ASC 證實有曝光的市場,在語言輪替中佔幾個位子(長尾語言各佔 1 個)。
+# 3 = 主力市場約每 4 次挑選輪到一次,長尾仍會出現、不被排除。
+PREFERRED_LOCALE_WEIGHT = 3
+
 
 class RequestError(RuntimeError):
     """A request failed or returned an unusable response."""
@@ -378,15 +382,33 @@ def _prioritized_locales(items, locales):
     if len(keys) > 1:
         raise ValueError("social App group contains multiple publisher keys")
     app = next(iter(keys), None)
-    preferred = ASC_MARKET_LOCALES.get(app, ())
-    return tuple(
+    preferred = tuple(
         dict.fromkeys(
-            (
-                *(locale for locale in preferred if locale in locales),
-                *locales,
-            )
+            locale
+            for locale in ASC_MARKET_LOCALES.get(app, ())
+            if locale in locales
         )
     )
+    tail = tuple(locale for locale in locales if locale not in preferred)
+    if not preferred:
+        return tuple(dict.fromkeys(locales))
+    # 平均輪替在這個規模下等於沒有宣傳:41 支 App、每區每天 1 個時段,
+    # 一支 App 一年只在該區被挑到約 9 次,平均分給 25 個語言就是「每個
+    # 語言每 2.8 年一次」。所以把 ASC 證實有曝光的市場加權,長尾語言
+    # 仍留在輪替中(永不排除),只是頻率低。
+    cycle = []
+    tail_iter = iter(tail)
+    exhausted = False
+    while not exhausted:
+        for locale in preferred:
+            cycle.extend([locale] * PREFERRED_LOCALE_WEIGHT)
+        for _ in range(len(preferred)):
+            nxt = next(tail_iter, None)
+            if nxt is None:
+                exhausted = True
+                break
+            cycle.append(nxt)
+    return tuple(cycle)
 
 
 def filter_reachable_pool(pool, validator=None, label="Social", max_workers=8):

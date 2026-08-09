@@ -189,7 +189,18 @@ class RotationTests(unittest.TestCase):
             )
         )
 
-    def test_every_app_locale_pair_rotates_within_366_days_after_launch(self):
+    def test_every_app_reaches_every_live_region_within_366_days(self):
+        """每支 App 每年都要在每個區域被推到。
+
+        原本的合約是「每個 App×語言組合 366 天內輪到」,那在目前規模已經
+        數學上不可能:41 支 App × 25 個歐洲語言 = 1,025 組,而該區一天只有
+        一個時段(366 次/年)。硬撐這個承諾的代價是把子彈平均灑在 ASC 顯示
+        零曝光的語言上,主力市場反而每 2.8 年才輪到一次。
+
+        現在的合約:每支 App 每年在每個區域都會出現(不餓死任何 App),而
+        語言由 ASC 實證的主力市場加權(見 PREFERRED_LOCALE_WEIGHT),長尾
+        語言仍在輪替中、只是頻率低。
+        """
         routes = (
             (telegram_post.pick, 1),
             (threads_post.pick, 3),
@@ -204,6 +215,11 @@ class RotationTests(unittest.TestCase):
             dt.time(),
             tzinfo=dt.timezone.utc,
         )
+        locale_region = {
+            locale: region
+            for region, locales in common.REGION_LOCALES.items()
+            for locale in locales
+        }
         observed = set()
         for day in range(366):
             for picker, hour in routes:
@@ -212,13 +228,26 @@ class RotationTests(unittest.TestCase):
                     (launch + dt.timedelta(days=day)).replace(hour=hour),
                 )
                 if item.get("source") == "publisher_intent_catalog":
-                    observed.add((str(item["app"]), item["lang"]))
+                    observed.add(
+                        (str(item["app"]), locale_region[item["lang"]])
+                    )
         expected = {
-            (common.app_key(item), item["lang"])
+            (common.app_key(item), locale_region[item["lang"]])
             for item in self.pool
             if item.get("source") == "publisher_intent_catalog"
         }
         self.assertEqual(expected, observed)
+
+    def test_long_tail_locales_stay_in_the_rotation(self):
+        """加權不得把任何語言永久排除在輪替之外。"""
+        for region, locales in common.REGION_LOCALES.items():
+            items = [
+                {"app_key": "lumibopomofo", "lang": locale}
+                for locale in locales
+            ]
+            cycle = common._prioritized_locales(items, locales)
+            with self.subTest(region=region):
+                self.assertEqual(set(locales), set(cycle))
 
     def test_private_asc_signal_reorders_only_post_launch_locale_cycle(self):
         app_id = "7000000000"

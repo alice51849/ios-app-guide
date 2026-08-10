@@ -2,7 +2,7 @@
 title: "Wordmate Lite: λεξιλόγιο — Πέντε νέες λέξεις κάθε μέρα | iOS App"
 lang: "el"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/el/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ publisher: "Lumi Studio"
 - Παιδιά & μάθηση
 - Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής
 - Εκτός σύνδεσης
+- App Store · Δωρεάν
 
-[Αποκτήστε το Wordmate Lite: λεξιλόγιο από το App Store](https://apps.apple.com/app/id6797601720)
+[Αποκτήστε το Wordmate Lite: λεξιλόγιο από το App Store](https://apps.apple.com/gr/app/id6797601720)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/wordmatelite.html)
 

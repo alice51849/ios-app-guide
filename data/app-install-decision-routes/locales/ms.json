@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ms",
-  "dateModified": "2026-08-07",
-  "content_digest": "937fcbd3ed3e0032af411039253e9e8dfdc4632dc023207eef29ed49e7902d29",
-  "generation_digest": "58e58cb706b7b1c6630ff8ff7dac0bda681a7dc6ee3db3f0c8bad2f352fc3a3d",
+  "dateModified": "2026-08-10",
+  "content_digest": "47a1f20b0c326142c669281dff07742690caf9951e0ba7a162515d80943f36b0",
+  "generation_digest": "f25707616008a6adb18e1430d1282f1edc5b98aa800618cddbf47f7689b417c0",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -322,7 +322,8 @@
       "badge_labels": [
         "Lagi",
         "Percuma untuk bermula · buka kunci kekal",
-        "Widjet"
+        "Widjet",
+        "App Store · Percuma"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/ms/index.html",
@@ -330,9 +331,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ms.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/my/app/id6794178671",
       "app_store_cta_label": "Dapatkan CalDaily: kalkulator & tema di App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "MYR",
+        "formatted_price": "Percuma"
+      },
       "guide_cta_label": "Baca panduan penuh",
       "publisher_disclosure": "Bahan ini diterbitkan terus oleh Lumi Studio, pembangun semua aplikasi yang disenaraikan.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -1863,7 +1868,8 @@
       "badge_labels": [
         "Kanak-kanak & pembelajaran",
         "Percuma untuk bermula · buka kunci kekal",
-        "Luar talian"
+        "Luar talian",
+        "App Store · Percuma"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/ms/index.html",
@@ -1871,9 +1877,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ms.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/my/app/id6797601720",
       "app_store_cta_label": "Dapatkan Wordmate Lite Seminit Sehari di App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "MYR",
+        "formatted_price": "Percuma"
+      },
       "guide_cta_label": "Baca panduan penuh",
       "publisher_disclosure": "Bahan ini diterbitkan terus oleh Lumi Studio, pembangun semua aplikasi yang disenaraikan.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",

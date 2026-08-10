@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-07",
-  "content_digest": "502a14d151553b0f773a45a28e12c893afec999e739f7c36c8b552b2bb33d852",
+  "date_modified": "2026-08-10",
+  "content_digest": "3e82be22a1ebf63c41156b149fcd6d664c3b6306ce910db3a5d5e80a960a8dc5",
   "locale": "fr-CA",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -158,9 +158,15 @@
         "widget": true,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/ca/app/id6794178671",
       "guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/caldaily.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CAD",
+        "formatted_price": "Gratuit",
+        "storefront_url": "https://apps.apple.com/ca/app/id6794178671"
+      }
     },
     {
       "key": "cvdesk",
@@ -1857,9 +1863,15 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/ca/app/id6797601720",
       "guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/wordmatelite.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CAD",
+        "formatted_price": "Gratuit",
+        "storefront_url": "https://apps.apple.com/ca/app/id6797601720"
+      }
     },
     {
       "key": "wordmate",

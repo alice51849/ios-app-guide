@@ -2,7 +2,7 @@
 title: "CalDaily: Calculator & Themes — Widget, tools, tidy history | iOS App"
 lang: "en-CA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/en-CA/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ A calculator you will actually keep using, because it remembers the thinking beh
 - More
 - Free to start · lifetime unlock
 - Widget
+- App Store · Free
 
-[Get CalDaily: Calculator & Themes on the App Store](https://apps.apple.com/app/id6794178671)
+[Get CalDaily: Calculator & Themes on the App Store](https://apps.apple.com/ca/app/id6794178671)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-CA/caldaily.html)
 

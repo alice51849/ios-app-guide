@@ -2,7 +2,7 @@
 title: "CalDaily: کیلکولیٹر — ویجٹ، اوزار اور ریکارڈ | iOS App"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/ur-PK/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ publisher: "Lumi Studio"
 - مزید
 - مفت آغاز · مستقل ان لاک
 - وجیٹ
+- App Store · مفت
 
-[App Store سے CalDaily: کیلکولیٹر حاصل کریں](https://apps.apple.com/app/id6794178671)
+[App Store سے CalDaily: کیلکولیٹر حاصل کریں](https://apps.apple.com/pk/app/id6794178671)
 
 [مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/caldaily.html)
 

@@ -2,7 +2,7 @@
 title: "适用于 iPhone 的最佳离线 TOEIC 备考应用及学习计划"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990/decision/l/zh-Hans/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

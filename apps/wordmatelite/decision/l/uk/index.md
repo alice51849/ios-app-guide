@@ -2,7 +2,7 @@
 title: "Wordmate Lite: вивчення мов — П’ять нових слів за хвилину | iOS App"
 lang: "uk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/uk/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ publisher: "Lumi Studio"
 - Діти та навчання
 - Безкоштовно для початку · довічне розблокування
 - Офлайн
+- App Store · Безкоштовно
 
-[Завантажте Wordmate Lite: вивчення мов з App Store](https://apps.apple.com/app/id6797601720)
+[Завантажте Wordmate Lite: вивчення мов з App Store](https://apps.apple.com/ua/app/id6797601720)
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/wordmatelite.html)
 

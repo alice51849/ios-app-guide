@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "en-AU",
-  "dateModified": "2026-08-07",
-  "content_digest": "937fcbd3ed3e0032af411039253e9e8dfdc4632dc023207eef29ed49e7902d29",
-  "generation_digest": "58e58cb706b7b1c6630ff8ff7dac0bda681a7dc6ee3db3f0c8bad2f352fc3a3d",
+  "dateModified": "2026-08-10",
+  "content_digest": "47a1f20b0c326142c669281dff07742690caf9951e0ba7a162515d80943f36b0",
+  "generation_digest": "f25707616008a6adb18e1430d1282f1edc5b98aa800618cddbf47f7689b417c0",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -25,7 +25,7 @@
       "priority_rank": 1,
       "priority_group": "launch_boost",
       "publisher_query": "Mask My File — Hide private details to share | iOS App",
-      "decision_context": "Share safely without losing the context people actually need. Mask My File finds private details before you share.etails before you share.etails before you share.etails before you send a file, permanently hides only what you choose, then reopens and verifies the new copy before it shows Private Ready. WHAT YOU CAN DO • Images and PDFs: full-width preview, up to 5× zoom, smooth drag, and precise manual selections. • Visual files: permanent solid redaction or removal only. Face and barcode detection simply mark regions for you to review. • Text, JSON, XML, HTML, CSV, TSV and RTF: search every match, then apply a full mask, a partial mask, a placeholder, a pseudonym, or removal. • Remove metadata where the format allows. Work page by page in PDFs, or protect up to 100 files at once with individual previews, cross-file search, and per-file manual selections. • Keep everything organised with Private Session, project workspaces and Placeholder Vault. USE IT WHEN IT MATTERS Before you send a rental application, a medical record, a payslip showing your tax file number or Medicare card, or a client file to a workmate, keep the useful context while permanently hiding the details they do not need. PRIVATE BY DESIGN Everything is processed on your device. There is no account, advertising, tracking, analytics or content upload. Apple Vision and the embedded Tesseract OCR engine run locally. Face detection creates regions only: it does not identify a person, build a template, share face data or retain it. Apple handles purchases with StoreKit. Mask My File does not use a VPN, NetworkExtension, proxy, tunnel, DNS filter or network routing. Originals are never overwritten; temporary workspace files, Private Session data and projects stay on the device until you delete them. BUY ONCE. USE IT FOR LIFE. One purchase unlocks unlimited verified outputs and batch processing for good. No subscriptions. Restore your purchase any time through the App Store.",
+      "decision_context": "Share safely without losing the context people actually need. Mask My File finds private details before you send a file, permanently hides only what you choose, then reopens and verifies the new copy before it shows Private Ready. WHAT YOU CAN DO • Images and PDFs: full-width preview, up to 5× zoom, smooth drag, and precise manual selections. • Visual files: permanent solid redaction or removal only. Face and barcode detection simply mark regions for you to review. • Text, JSON, XML, HTML, CSV, TSV and RTF: search every match, then apply a full mask, a partial mask, a placeholder, a pseudonym, or removal. • Remove metadata where the format allows. Work page by page in PDFs, or protect up to 100 files at once with individual previews, cross-file search, and per-file manual selections. • Keep everything organised with Private Session, project workspaces and Placeholder Vault. USE IT WHEN IT MATTERS Before you send a rental application, a medical record, a payslip showing your tax file number or Medicare card, or a client file to a workmate, keep the useful context while permanently hiding the details they do not need. PRIVATE BY DESIGN Everything is processed on your device. There is no account, advertising, tracking, analytics or content upload. Apple Vision and the embedded Tesseract OCR engine run locally. Face detection creates regions only: it does not identify a person, build a template, share face data or retain it. Apple handles purchases with StoreKit. Mask My File does not use a VPN, NetworkExtension, proxy, tunnel, DNS filter or network routing. Originals are never overwritten; temporary workspace files, Private Session data and projects stay on the device until you delete them. BUY ONCE. USE IT FOR LIFE. One purchase unlocks unlimited verified outputs and batch processing for good. No subscriptions. Restore your purchase any time through the App Store.",
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
@@ -75,7 +75,7 @@
       "priority_rank": 2,
       "priority_group": "launch_boost",
       "publisher_query": "WiFi Aid — Network Diagnosis & Evidence | iOS App",
-      "decision_context": "Find the most likely connection problem with independent path, DNS, TCP, TLS, timing and signal checks.ignal checks.ignal checks.tability checks. Pay once upfront—no subscription, ads or tracking. • Run a Check — Wi-Fi, DNS and internet checks in one tap • Deep Check — More evidence and stability samples • Check a Website — See whether one destination or the wider internet is failing • Evidence — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Connection looks unstable — Variation • Check History — Private records stored only on this device • Apple Watch — Run a Check • Widget · iPad — Connected · Run a Check No account, ads, analytics or tracking. Private records stored only on this device. One upfront App Store purchase. No subscription.",
+      "decision_context": "Find the most likely connection problem with independent path, DNS, TCP, TLS, timing and stability checks. Pay once upfront—no subscription, ads or tracking. • Run a Check — Wi-Fi, DNS and internet checks in one tap • Deep Check — More evidence and stability samples • Check a Website — See whether one destination or the wider internet is failing • Evidence — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Connection looks unstable — Variation • Check History — Private records stored only on this device • Apple Watch — Run a Check • Widget · iPad — Connected · Run a Check No account, ads, analytics or tracking. Private records stored only on this device. One upfront App Store purchase. No subscription.",
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "paid_upfront",
@@ -322,7 +322,8 @@
       "badge_labels": [
         "More",
         "Free to start · lifetime unlock",
-        "Widget"
+        "Widget",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/en-AU/index.html",
@@ -330,9 +331,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/au/app/id6794178671",
       "app_store_cta_label": "Get CalDaily: Calculator & Themes on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "AUD",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -1863,7 +1868,8 @@
       "badge_labels": [
         "Kids & learning",
         "Free to start · lifetime unlock",
-        "Offline"
+        "Offline",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/en-AU/index.html",
@@ -1871,9 +1877,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/au/app/id6797601720",
       "app_store_cta_label": "Get Wordmate Lite: Learn Words on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "AUD",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",

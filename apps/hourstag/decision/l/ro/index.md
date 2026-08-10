@@ -2,7 +2,7 @@
 title: "HoursTag: Ore pentru cumpărat — Buget, cheltuieli & economii | iOS App"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/ro/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

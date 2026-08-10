@@ -2,7 +2,7 @@
 title: "แอปวลีภาษาที่ใช้งานได้จริงดีที่สุดสำหรับนักเดินทางที่ใช้แอปเปิลวอทช์"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/th/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "CalDaily: କାଲକୁଲେଟର — ୱିଜେଟ, ଉପକରଣ ଓ ଇତିହାସ | iOS App"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/or-IN/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ publisher: "Lumi Studio"
 - ଅଧିକ
 - ମୁକ୍ତ ଆରମ୍ଭ · ଜୀବନକାଳ ଅନଲକ୍
 - ଉଇଜେଟ
+- App Store · ମାଗଣା
 
-[App Store ରୁ CalDaily: କାଲକୁଲେଟର ପାଆନ୍ତୁ](https://apps.apple.com/app/id6794178671)
+[App Store ରୁ CalDaily: କାଲକୁଲେଟର ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6794178671)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/caldaily.html)
 

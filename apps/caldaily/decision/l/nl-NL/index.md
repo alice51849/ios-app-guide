@@ -2,7 +2,7 @@
 title: "CalDaily: rekenmachine+thema's — Widget, tools, geschiedenis | iOS App"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/nl-NL/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ Een rekenmachine die je houdt, omdat hij onthoudt waar elk getal over ging. De m
 - Meer
 - Gratis te starten · levenslange ontgrendeling
 - Widget
+- App Store · Gratis
 
-[Download CalDaily: rekenmachine+thema's in de App Store](https://apps.apple.com/app/id6794178671)
+[Download CalDaily: rekenmachine+thema's in de App Store](https://apps.apple.com/nl/app/id6794178671)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/caldaily.html)
 

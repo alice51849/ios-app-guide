@@ -2,7 +2,7 @@
 title: "mejor app de notas de voz que resume reuniones en iPhone"
 lang: "es-MX"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/es-MX/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

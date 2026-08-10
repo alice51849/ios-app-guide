@@ -2,7 +2,7 @@
 title: "CalDaily: laskin ja teemat — Widget, työkalut ja historia | iOS App"
 lang: "fi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/fi/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ Laskin, jonka käyttöä todella jatkat, koska se muistaa jokaisen luvun taustan
 - Lisää
 - Ilmainen aloitus · elinikäinen avaus
 - Widget
+- App Store · Ilmainen
 
-[Lataa CalDaily: laskin ja teemat App Storesta](https://apps.apple.com/app/id6794178671)
+[Lataa CalDaily: laskin ja teemat App Storesta](https://apps.apple.com/fi/app/id6794178671)
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/caldaily.html)
 

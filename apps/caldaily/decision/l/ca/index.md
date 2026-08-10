@@ -2,7 +2,7 @@
 title: "CalDaily: calculadora i temes — Widget, eines i historial | iOS App"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/ca/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ Una calculadora que continuaràs fent servir, perquè recorda el raonament que h
 - Més
 - Inici gratuït · desbloqueig de per vida
 - Widget
+- App Store · Gratis
 
-[Descarrega CalDaily: calculadora i temes a l’App Store](https://apps.apple.com/app/id6794178671)
+[Descarrega CalDaily: calculadora i temes a l’App Store](https://apps.apple.com/es/app/id6794178671)
 
 [Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/caldaily.html)
 

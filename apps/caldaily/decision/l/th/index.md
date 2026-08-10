@@ -2,7 +2,7 @@
 title: "CalDaily: เครื่องคิดเลข — วิดเจ็ต, เครื่องมือ, ประวัติ | iOS App"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/th/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ publisher: "Lumi Studio"
 - เพิ่มเติม
 - เริ่มใช้ฟรี · ปลดล็อกถาวร
 - วิดเจ็ต
+- App Store · ฟรี
 
-[ดาวน์โหลด CalDaily: เครื่องคิดเลข บน App Store](https://apps.apple.com/app/id6794178671)
+[ดาวน์โหลด CalDaily: เครื่องคิดเลข บน App Store](https://apps.apple.com/th/app/id6794178671)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/caldaily.html)
 

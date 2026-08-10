@@ -2,7 +2,7 @@
 title: "CalDaily: kalkulačka a motivy — Widget, nástroje a historie | iOS App"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/cs/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ Kalkulačka, kterou budete opravdu používat dál, protože si pamatuje, co za 
 - Více
 - Zdarma na začátek · doživotní odemknutí
 - Widget
+- App Store · Zdarma
 
-[Stáhněte si CalDaily: kalkulačka a motivy v App Storu](https://apps.apple.com/app/id6794178671)
+[Stáhněte si CalDaily: kalkulačka a motivy v App Storu](https://apps.apple.com/cz/app/id6794178671)
 
 [Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/caldaily.html)
 

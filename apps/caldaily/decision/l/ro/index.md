@@ -2,7 +2,7 @@
 title: "CalDaily: calculator și teme — Widget, instrumente, istoric | iOS App"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/ro/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ Un calculator pe care chiar continui să îl folosești, pentru că ține minte 
 - Mai mult
 - Început gratuit · deblocare pe viață
 - Widget
+- App Store · Gratuit
 
-[Descarcă CalDaily: calculator și teme din App Store](https://apps.apple.com/app/id6794178671)
+[Descarcă CalDaily: calculator și teme din App Store](https://apps.apple.com/ro/app/id6794178671)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/caldaily.html)
 

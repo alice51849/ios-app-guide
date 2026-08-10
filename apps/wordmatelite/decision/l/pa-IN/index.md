@@ -2,7 +2,7 @@
 title: "Wordmate Lite: ਅੰਗਰੇਜ਼ੀ ਸਿੱਖੋ — ਰੋਜ਼ 5 ਨਵੇਂ ਸ਼ਬਦ, ਇੱਕ ਮਿੰਟ | iOS App"
 lang: "pa-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/pa-IN/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ publisher: "Lumi Studio"
 - ਬੱਚੇ ਅਤੇ ਸਿੱਖਿਆ
 - ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਸਦਾ ਲਈ ਅਨਲੌਕ
 - ਆਫਲਾਈਨ
+- App Store · ਮੁਫ਼ਤ
 
-[App Store ਤੋਂ Wordmate Lite: ਅੰਗਰੇਜ਼ੀ ਸਿੱਖੋ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/app/id6797601720)
+[App Store ਤੋਂ Wordmate Lite: ਅੰਗਰੇਜ਼ੀ ਸਿੱਖੋ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6797601720)
 
 [ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://alice51849.github.io/ios-app-guide/pa-IN/wordmatelite.html)
 

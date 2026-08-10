@@ -2,7 +2,7 @@
 title: "melhor editor de fotos com look de filme para criadores de viagens no iPhone com pagamento único"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/pt-PT/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

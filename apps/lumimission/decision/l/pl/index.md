@@ -2,7 +2,7 @@
 title: "najlepsza aplikacja do rutyny przed snem dla przedszkolaków bez reklam"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/pl/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

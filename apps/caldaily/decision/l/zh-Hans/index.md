@@ -2,7 +2,7 @@
 title: "CalDaily 计算器与主题 — 桌面小组件、八种工具、计算记录 | iOS App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/zh-Hans/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ publisher: "Lumi Studio"
 - 更多
 - 免费开始使用 · 永久解锁
 - 小组件
+- App Store · 免费
 
-[在 App Store 获取 CalDaily 计算器与主题](https://apps.apple.com/app/id6794178671)
+[在 App Store 获取 CalDaily 计算器与主题](https://apps.apple.com/cn/app/id6794178671)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/caldaily.html)
 

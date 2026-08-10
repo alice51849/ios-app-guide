@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "kn-IN",
-  "dateModified": "2026-08-07",
-  "content_digest": "937fcbd3ed3e0032af411039253e9e8dfdc4632dc023207eef29ed49e7902d29",
-  "generation_digest": "58e58cb706b7b1c6630ff8ff7dac0bda681a7dc6ee3db3f0c8bad2f352fc3a3d",
+  "dateModified": "2026-08-10",
+  "content_digest": "47a1f20b0c326142c669281dff07742690caf9951e0ba7a162515d80943f36b0",
+  "generation_digest": "f25707616008a6adb18e1430d1282f1edc5b98aa800618cddbf47f7689b417c0",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -322,7 +322,8 @@
       "badge_labels": [
         "ಇನ್ನಷ್ಟು",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್",
-        "ವಿಜೆಟ್"
+        "ವಿಜೆಟ್",
+        "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/kn-IN/index.html",
@@ -330,9 +331,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/kn-IN.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/in/app/id6794178671",
       "app_store_cta_label": "App Store ನಲ್ಲಿ CalDaily ಕ್ಯಾಲ್ಕುಲೇಟರ್ ಪಡೆಯಿರಿ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ಉಚಿತ"
+      },
       "guide_cta_label": "ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ",
       "publisher_disclosure": "ಇದು ಪಟ್ಟಿಯಲ್ಲಿ ಇರುವ ಪ್ರತಿಯೊಂದು ಆ್ಯಪ್‌ನ ಅಭಿವೃದ್ಧಿಪಡಿಸಿದ Lumi Studio ಅವರಿಂದ ಪ್ರಕಟಿಸಲಾದ ಮೊದಲ-ಪಕ್ಷದ ವಸ್ತು.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -1863,7 +1868,8 @@
       "badge_labels": [
         "ಮಕ್ಕಳು ಮತ್ತು ಕಲಿಕೆ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್",
-        "ಆಫ್‌ಲೈನ್"
+        "ಆಫ್‌ಲೈನ್",
+        "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/kn-IN/index.html",
@@ -1871,9 +1877,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/kn-IN.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/in/app/id6797601720",
       "app_store_cta_label": "App Store ನಲ್ಲಿ Wordmate Lite: ಇಂಗ್ಲಿಷ್ ಕಲಿಕೆ ಪಡೆಯಿರಿ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ಉಚಿತ"
+      },
       "guide_cta_label": "ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ",
       "publisher_disclosure": "ಇದು ಪಟ್ಟಿಯಲ್ಲಿ ಇರುವ ಪ್ರತಿಯೊಂದು ಆ್ಯಪ್‌ನ ಅಭಿವೃದ್ಧಿಪಡಿಸಿದ Lumi Studio ಅವರಿಂದ ಪ್ರಕಟಿಸಲಾದ ಮೊದಲ-ಪಕ್ಷದ ವಸ್ತು.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",

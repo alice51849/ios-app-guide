@@ -2,7 +2,7 @@
 title: "best free travel expense tracker with currency conversion for iphone"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/id/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

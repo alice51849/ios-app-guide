@@ -2,7 +2,7 @@
 title: "HoursTag: Timmar att köpa — Budget, utgifter & sparande | iOS App"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/sv/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

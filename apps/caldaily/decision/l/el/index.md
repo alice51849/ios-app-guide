@@ -2,7 +2,7 @@
 title: "CalDaily αριθμομηχανή — Widget, εργαλεία, 100 θέματα | iOS App"
 lang: "el"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/el/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ publisher: "Lumi Studio"
 - Περισσότερα
 - Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής
 - Γραφικό στοιχείο
+- App Store · Δωρεάν
 
-[Αποκτήστε το CalDaily αριθμομηχανή από το App Store](https://apps.apple.com/app/id6794178671)
+[Αποκτήστε το CalDaily αριθμομηχανή από το App Store](https://apps.apple.com/gr/app/id6794178671)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/caldaily.html)
 

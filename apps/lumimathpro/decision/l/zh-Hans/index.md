@@ -2,7 +2,7 @@
 title: "适合学前及低年级的最佳完整数学学习App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/zh-Hans/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

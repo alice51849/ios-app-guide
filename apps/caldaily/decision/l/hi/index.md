@@ -2,7 +2,7 @@
 title: "CalDaily कैलकुलेटर और थीम — विजेट, टूल और साफ़ हिसाब | iOS App"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/hi/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ publisher: "Lumi Studio"
 - और अधिक
 - मुफ़्त शुरुआत · हमेशा के लिए अनलॉक
 - विजेट
+- App Store · मुफ़्त
 
-[App Store पर CalDaily कैलकुलेटर और थीम पाएँ](https://apps.apple.com/app/id6794178671)
+[App Store पर CalDaily कैलकुलेटर और थीम पाएँ](https://apps.apple.com/in/app/id6794178671)
 
 [पूरा मार्गदर्शक पढ़ें](https://alice51849.github.io/ios-app-guide/hi/caldaily.html)
 

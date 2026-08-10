@@ -2,7 +2,7 @@
 title: "ପିଲାମାନେ ସହିତ ବାହାରେ ଯିବା ପାଇଁ ଅଭିଭାବକମାନେ ଯୋଜନା କରିବା ପାଇଁ ସର୍ବୋତ୍ତମ ପୂର୍ଣ୍ଣ ଆବହା ଆପ୍"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/or-IN/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

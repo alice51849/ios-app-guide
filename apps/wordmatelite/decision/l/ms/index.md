@@ -2,7 +2,7 @@
 title: "Wordmate Lite Seminit Sehari — Lima perkataan, 44 bahasa | iOS App"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/ms/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ Ramai yang tersekat belajar bahasa pada titik kad hafalan masih belum siap disus
 - Kanak-kanak & pembelajaran
 - Percuma untuk bermula · buka kunci kekal
 - Luar talian
+- App Store · Percuma
 
-[Dapatkan Wordmate Lite Seminit Sehari di App Store](https://apps.apple.com/app/id6797601720)
+[Dapatkan Wordmate Lite Seminit Sehari di App Store](https://apps.apple.com/my/app/id6797601720)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/wordmatelite.html)
 

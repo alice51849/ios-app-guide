@@ -2,7 +2,7 @@
 title: "Wordmate Lite: Learn Words — Five a day, one quiet minute | iOS App"
 lang: "en-AU"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/en-AU/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ Five words, one minute, and a trail you can actually see behind you. Most vocabu
 - Kids & learning
 - Free to start · lifetime unlock
 - Offline
+- App Store · Free
 
-[Get Wordmate Lite: Learn Words on the App Store](https://apps.apple.com/app/id6797601720)
+[Get Wordmate Lite: Learn Words on the App Store](https://apps.apple.com/au/app/id6797601720)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-AU/wordmatelite.html)
 

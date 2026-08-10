@@ -2,7 +2,7 @@
 title: "CalDaily: kalkulator i motywy — Widżet, narzędzia, historia | iOS App"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/pl/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ Kalkulator, którego naprawdę będziesz używać, bo pamięta myśl stojącą z
 - Więcej
 - Darmowe na start · dożywotni dostęp
 - Widżet
+- App Store · Bezpłatnie
 
-[Pobierz CalDaily: kalkulator i motywy z App Store](https://apps.apple.com/app/id6794178671)
+[Pobierz CalDaily: kalkulator i motywy z App Store](https://apps.apple.com/pl/app/id6794178671)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/caldaily.html)
 

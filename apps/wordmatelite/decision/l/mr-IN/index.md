@@ -2,7 +2,7 @@
 title: "Wordmate Lite: इंग्रजी शिका — रोज 5 नवे शब्द, एक मिनिट | iOS App"
 lang: "mr-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/mr-IN/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ publisher: "Lumi Studio"
 - मुलं आणि शिक्षण
 - सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक
 - ऑफलाइन
+- App Store · मोफत
 
-[App Store वरून Wordmate Lite: इंग्रजी शिका मिळवा](https://apps.apple.com/app/id6797601720)
+[App Store वरून Wordmate Lite: इंग्रजी शिका मिळवा](https://apps.apple.com/in/app/id6797601720)
 
 [संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/wordmatelite.html)
 

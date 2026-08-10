@@ -2,7 +2,7 @@
 title: "CalDaily: கால்குலேட்டர் — விட்ஜெட், கருவிகள், வரலாறு | iOS App"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/ta-IN/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ publisher: "Lumi Studio"
 - மேலும்
 - இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும்
 - விட்ஜெட்
+- App Store · இலவசம்
 
-[App Store-இல் CalDaily: கால்குலேட்டர்-ஐப் பெறுங்கள்](https://apps.apple.com/app/id6794178671)
+[App Store-இல் CalDaily: கால்குலேட்டர்-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6794178671)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/caldaily.html)
 

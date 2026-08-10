@@ -2,7 +2,7 @@
 title: "Wordmate Lite: Ordforråd — Fem nye ord hver dag | iOS App"
 lang: "no"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/no/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ Fem ord. Ett minutt. En sti du faktisk ser. De fleste gloseprogrammer ber deg f�
 - Barn og læring
 - Gratis å starte · livstidsopplåsing
 - Frakoblet
+- App Store · Gratis
 
-[Last ned Wordmate Lite: Ordforråd fra App Store](https://apps.apple.com/app/id6797601720)
+[Last ned Wordmate Lite: Ordforråd fra App Store](https://apps.apple.com/no/app/id6797601720)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/wordmatelite.html)
 

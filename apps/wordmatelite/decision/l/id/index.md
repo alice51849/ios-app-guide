@@ -2,7 +2,7 @@
 title: "Wordmate Lite 5 Kata Sehari — 44 bahasa, satu menit per hari | iOS App"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/id/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ Banyak orang berhenti belajar bahasa tepat di titik kartu hafalannya belum juga 
 - Anak & pembelajaran
 - Gratis untuk mulai · buka kunci permanen
 - Offline
+- App Store · Gratis
 
-[Dapatkan Wordmate Lite 5 Kata Sehari di App Store](https://apps.apple.com/app/id6797601720)
+[Dapatkan Wordmate Lite 5 Kata Sehari di App Store](https://apps.apple.com/id/app/id6797601720)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/wordmatelite.html)
 

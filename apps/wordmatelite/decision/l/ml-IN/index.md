@@ -2,7 +2,7 @@
 title: "Wordmate Lite: ഇംഗ്ലീഷ് പഠനം — ദിവസം 5 വാക്ക്, ഒരു മിനിറ്റ് | iOS App"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/ml-IN/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ publisher: "Lumi Studio"
 - കുട്ടികൾ & പഠനം
 - സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക്
 - ഓഫ്‌ലൈൻ
+- App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് Wordmate Lite: ഇംഗ്ലീഷ് പഠനം നേടൂ](https://apps.apple.com/app/id6797601720)
+[App Store-ൽ നിന്ന് Wordmate Lite: ഇംഗ്ലീഷ് പഠനം നേടൂ](https://apps.apple.com/in/app/id6797601720)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/wordmatelite.html)
 

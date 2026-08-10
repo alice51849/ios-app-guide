@@ -2,7 +2,7 @@
 title: "AI Brief — ফাইল থেকে স্পষ্ট প্রেক্ষাপট | iOS App"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/bn-BD/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

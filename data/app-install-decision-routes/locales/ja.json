@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ja",
-  "dateModified": "2026-08-07",
-  "content_digest": "937fcbd3ed3e0032af411039253e9e8dfdc4632dc023207eef29ed49e7902d29",
-  "generation_digest": "58e58cb706b7b1c6630ff8ff7dac0bda681a7dc6ee3db3f0c8bad2f352fc3a3d",
+  "dateModified": "2026-08-10",
+  "content_digest": "47a1f20b0c326142c669281dff07742690caf9951e0ba7a162515d80943f36b0",
+  "generation_digest": "f25707616008a6adb18e1430d1282f1edc5b98aa800618cddbf47f7689b417c0",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -322,7 +322,8 @@
       "badge_labels": [
         "その他",
         "無料で開始・買い切りで永久解除",
-        "ウィジェット"
+        "ウィジェット",
+        "App Store · 無料"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/ja/index.html",
@@ -330,9 +331,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ja.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/jp/app/id6794178671",
       "app_store_cta_label": "App Store で CalDaily 電卓とテーマ を入手",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料"
+      },
       "guide_cta_label": "完全ガイドを読む",
       "publisher_disclosure": "これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -862,7 +867,8 @@
         "子ども・学習",
         "有料ダウンロード",
         "広告なし",
-        "App Store · ¥1,500"
+        "App Store · ¥1,500",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/answers/best-complete-zhuyin-app-for-bilingual-children.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/ja/index.html",
@@ -875,7 +881,9 @@
       "storefront_facts": {
         "price": "1500",
         "currency": "JPY",
-        "formatted_price": "¥1,500"
+        "formatted_price": "¥1,500",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "完全ガイドを読む",
       "publisher_disclosure": "アプリ開発者であるLumi Studioによる公式購入ガイドです。アプリ名は各所有者の商標であり、識別のためにのみ使用しています。書類、健康、学校、生産性に関する判断は、該当する公式要件を必ずご確認ください。",
@@ -1866,7 +1874,8 @@
       "badge_labels": [
         "子ども・学習",
         "無料で開始・買い切りで永久解除",
-        "オフライン"
+        "オフライン",
+        "App Store · 無料"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/ja/index.html",
@@ -1874,9 +1883,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ja.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/jp/app/id6797601720",
       "app_store_cta_label": "App Store で Wordmate Lite 1日5単語 を入手",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料"
+      },
       "guide_cta_label": "完全ガイドを読む",
       "publisher_disclosure": "これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",

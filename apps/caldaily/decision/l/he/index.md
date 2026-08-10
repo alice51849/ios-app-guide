@@ -2,7 +2,7 @@
 title: "CalDaily מחשבון ועיצובים — וידג'ט, כלים והיסטוריה | iOS App"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/he/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ publisher: "Lumi Studio"
 - עוד
 - התחלה ללא תשלום · פתיחה לכל החיים
 - וידג'ט
+- App Store · בחינם
 
-[הורידו את CalDaily מחשבון ועיצובים מה-App Store](https://apps.apple.com/app/id6794178671)
+[הורידו את CalDaily מחשבון ועיצובים מה-App Store](https://apps.apple.com/il/app/id6794178671)
 
 [קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/caldaily.html)
 

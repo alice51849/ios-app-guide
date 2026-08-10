@@ -2,7 +2,7 @@
 title: "CalDaily: kalkylator och teman — Widget, verktyg, historik | iOS App"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/sv/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ En kalkylator du behåller, eftersom den minns vad varje tal handlade om. De fle
 - Mer
 - Gratis att börja · livstidsupplåsning
 - Widget
+- App Store · Gratis
 
-[Hämta CalDaily: kalkylator och teman i App Store](https://apps.apple.com/app/id6794178671)
+[Hämta CalDaily: kalkylator och teman i App Store](https://apps.apple.com/se/app/id6794178671)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/caldaily.html)
 

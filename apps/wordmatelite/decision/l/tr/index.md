@@ -2,7 +2,7 @@
 title: "Wordmate Lite: Kelime Ezberle — Günde beş sözcük, bir dakika | iOS App"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/tr/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ publisher: "Lumi Studio"
 - Çocuklar & öğrenme
 - Başlangıçta ücretsiz · ömür boyu açma
 - Çevrimdışı
+- App Store · Ücretsiz
 
-[Wordmate Lite: Kelime Ezberle uygulamasını App Store'dan al](https://apps.apple.com/app/id6797601720)
+[Wordmate Lite: Kelime Ezberle uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6797601720)
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/wordmatelite.html)
 

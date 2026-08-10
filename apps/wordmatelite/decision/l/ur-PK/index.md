@@ -2,7 +2,7 @@
 title: "Wordmate Lite: روزانہ الفاظ — انگریزی سمیت 44 زبانیں | iOS App"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/ur-PK/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ publisher: "Lumi Studio"
 - بچے اور سیکھنا
 - مفت آغاز · مستقل ان لاک
 - آف لائن
+- App Store · مفت
 
-[App Store سے Wordmate Lite: روزانہ الفاظ حاصل کریں](https://apps.apple.com/app/id6797601720)
+[App Store سے Wordmate Lite: روزانہ الفاظ حاصل کریں](https://apps.apple.com/pk/app/id6797601720)
 
 [مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/wordmatelite.html)
 

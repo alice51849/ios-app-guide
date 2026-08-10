@@ -2,7 +2,7 @@
 title: "Wordmate Lite: 5 mots par jour — Ton vocabulaire, une minute | iOS App"
 lang: "fr-CA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/fr-CA/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ Cinq mots, une minute, un pas de plus sur ton chemin. Wordmate Lite prend la vie
 - Enfants et apprentissage
 - Gratuit au départ · déverrouillage définitif
 - Hors ligne
+- App Store · Gratuit
 
-[Obtenir Wordmate Lite: 5 mots par jour sur l'App Store](https://apps.apple.com/app/id6797601720)
+[Obtenir Wordmate Lite: 5 mots par jour sur l'App Store](https://apps.apple.com/ca/app/id6797601720)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-CA/wordmatelite.html)
 

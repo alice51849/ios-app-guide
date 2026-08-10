@@ -2,7 +2,7 @@
 title: "Wordmate Lite: ଇଂରାଜୀ ଶିଖନ୍ତୁ — ଦିନକୁ 5 ନୂଆ ଶବ୍ଦ, ଏକ ମିନିଟ୍ | iOS App"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/or-IN/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ publisher: "Lumi Studio"
 - ଶିଶୁ ଏବଂ ଶିକ୍ଷା
 - ମୁକ୍ତ ଆରମ୍ଭ · ଜୀବନକାଳ ଅନଲକ୍
 - ଅଫଲାଇନ
+- App Store · ମାଗଣା
 
-[App Store ରୁ Wordmate Lite: ଇଂରାଜୀ ଶିଖନ୍ତୁ ପାଆନ୍ତୁ](https://apps.apple.com/app/id6797601720)
+[App Store ରୁ Wordmate Lite: ଇଂରାଜୀ ଶିଖନ୍ତୁ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6797601720)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/wordmatelite.html)
 

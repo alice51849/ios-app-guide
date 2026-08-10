@@ -2,7 +2,7 @@
 title: "Wordmate Lite: vocabolario — Cinque parole al giorno | iOS App"
 lang: "it"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/it/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ Cinque parole, un minuto, un passo visibile sul tuo percorso. Wordmate Lite pren
 - Bambini e apprendimento
 - Gratis per iniziare · sblocco permanente
 - Offline
+- App Store · Gratis
 
-[Scarica Wordmate Lite: vocabolario sull'App Store](https://apps.apple.com/app/id6797601720)
+[Scarica Wordmate Lite: vocabolario sull'App Store](https://apps.apple.com/it/app/id6797601720)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/wordmatelite.html)
 

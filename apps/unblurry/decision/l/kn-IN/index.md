@@ -2,7 +2,7 @@
 title: "iPhone ನಲ್ಲಿ ಮಕ್ಕಳ ಧೂಳಾದ ಫೋಟೋಗಳನ್ನು ಸರಿಪಡಿಸಲು ಉತ್ತಮ ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/kn-IN/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

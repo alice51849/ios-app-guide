@@ -2,7 +2,7 @@
 title: "beste app for reiseplanlegger på iPhone"
 lang: "no"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/no/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"

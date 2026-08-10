@@ -4,9 +4,9 @@
   "name": "Lumi Studio App Install Decision Routes",
   "description": "First-party install decision routes for every verified live iOS app and Apple locale, with a direct App Store path, purchase model, privacy facts, device surfaces and provenance.",
   "identifier": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes.json",
-  "dateModified": "2026-08-07",
-  "content_digest": "937fcbd3ed3e0032af411039253e9e8dfdc4632dc023207eef29ed49e7902d29",
-  "generation_digest": "58e58cb706b7b1c6630ff8ff7dac0bda681a7dc6ee3db3f0c8bad2f352fc3a3d",
+  "dateModified": "2026-08-10",
+  "content_digest": "47a1f20b0c326142c669281dff07742690caf9951e0ba7a162515d80943f36b0",
+  "generation_digest": "f25707616008a6adb18e1430d1282f1edc5b98aa800618cddbf47f7689b417c0",
   "publisher_disclosure": "First-party decision-support material published by Lumi Studio, the developer of every listed app; not an independent ranking or measured search-volume product.",
   "ordering": "official_locale_order_then_priority_then_alphabetical_app_name",
   "priority_app_keys": [
@@ -634,7 +634,8 @@
       "badge_labels": [
         "المزيد",
         "بدء مجاني · فتح دائم",
-        "عنصر واجهة"
+        "عنصر واجهة",
+        "App Store · مجاني"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/ar-SA/index.html",
@@ -642,9 +643,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ar-SA.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/sa/app/id6794178671",
       "app_store_cta_label": "احصل على CalDaily حاسبة وسمات من App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "SAR",
+        "formatted_price": "مجاني"
+      },
       "guide_cta_label": "اقرأ الدليل الكامل",
       "publisher_disclosure": "هذه مادة ينشرها Lumi Studio مباشرةً بصفته مطور جميع التطبيقات المدرجة.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -2175,7 +2180,8 @@
       "badge_labels": [
         "الأطفال والتعلم",
         "بدء مجاني · فتح دائم",
-        "دون اتصال"
+        "دون اتصال",
+        "App Store · مجاني"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/ar-SA/index.html",
@@ -2183,9 +2189,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ar-SA.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/sa/app/id6797601720",
       "app_store_cta_label": "احصل على Wordmate Lite: تعلّم المفردات من App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "SAR",
+        "formatted_price": "مجاني"
+      },
       "guide_cta_label": "اقرأ الدليل الكامل",
       "publisher_disclosure": "هذه مادة ينشرها Lumi Studio مباشرةً بصفته مطور جميع التطبيقات المدرجة.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -4309,7 +4319,8 @@
       "badge_labels": [
         "Més",
         "Inici gratuït · desbloqueig de per vida",
-        "Widget"
+        "Widget",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/ca/index.html",
@@ -4317,9 +4328,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ca.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/es/app/id6794178671",
       "app_store_cta_label": "Descarrega CalDaily: calculadora i temes a l’App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Llegeix la guia completa",
       "publisher_disclosure": "Aquest és material de primera mà publicat per Lumi Studio, el desenvolupador de totes les apps llistades.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -5850,7 +5865,8 @@
       "badge_labels": [
         "Infants i aprenentatge",
         "Inici gratuït · desbloqueig de per vida",
-        "Fora de línia"
+        "Fora de línia",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/ca/index.html",
@@ -5858,9 +5874,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ca.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/es/app/id6797601720",
       "app_store_cta_label": "Descarrega Wordmate Lite: vocabulari a l’App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Llegeix la guia completa",
       "publisher_disclosure": "Aquest és material de primera mà publicat per Lumi Studio, el desenvolupador de totes les apps llistades.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -6239,7 +6259,8 @@
       "badge_labels": [
         "Více",
         "Zdarma na začátek · doživotní odemknutí",
-        "Widget"
+        "Widget",
+        "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/cs/index.html",
@@ -6247,9 +6268,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/cs.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/cz/app/id6794178671",
       "app_store_cta_label": "Stáhněte si CalDaily: kalkulačka a motivy v App Storu",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CZK",
+        "formatted_price": "Zdarma"
+      },
       "guide_cta_label": "Přečtěte si celý průvodce",
       "publisher_disclosure": "Toto je materiál od první strany publikovaný Lumi Studio, vývojářem všech uvedených aplikací.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -7780,7 +7805,8 @@
       "badge_labels": [
         "Děti a učení",
         "Zdarma na začátek · doživotní odemknutí",
-        "Offline"
+        "Offline",
+        "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/cs/index.html",
@@ -7788,9 +7814,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/cs.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/cz/app/id6797601720",
       "app_store_cta_label": "Stáhněte si Wordmate Lite: slovíčka denně v App Storu",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CZK",
+        "formatted_price": "Zdarma"
+      },
       "guide_cta_label": "Přečtěte si celý průvodce",
       "publisher_disclosure": "Toto je materiál od první strany publikovaný Lumi Studio, vývojářem všech uvedených aplikací.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -8169,7 +8199,8 @@
       "badge_labels": [
         "Mere",
         "Gratis at komme i gang · permanent oplåsning",
-        "Widget"
+        "Widget",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/da/index.html",
@@ -8177,9 +8208,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/dk/app/id6794178671",
       "app_store_cta_label": "Hent CalDaily: lommeregner & temaer i App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "DKK",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Læs hele vejledningen",
       "publisher_disclosure": "Dette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -9710,7 +9745,8 @@
       "badge_labels": [
         "Børn & læring",
         "Gratis at komme i gang · permanent oplåsning",
-        "Offline"
+        "Offline",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/da/index.html",
@@ -9718,9 +9754,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/dk/app/id6797601720",
       "app_store_cta_label": "Hent Wordmate Lite: Ordforråd i App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "DKK",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Læs hele vejledningen",
       "publisher_disclosure": "Dette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -10099,7 +10139,8 @@
       "badge_labels": [
         "Mehr",
         "Kostenloser Einstieg · dauerhafte Freischaltung",
-        "Widget"
+        "Widget",
+        "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/de-DE/index.html",
@@ -10107,9 +10148,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/de-DE.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/de/app/id6794178671",
       "app_store_cta_label": "CalDaily: Rechner & Designs im App Store laden",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Kostenlos"
+      },
       "guide_cta_label": "Lesen Sie den vollständigen Leitfaden",
       "publisher_disclosure": "Dieses Material wird direkt von Lumi Studio veröffentlicht, dem Entwickler aller aufgeführten Apps.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -11640,7 +11685,8 @@
       "badge_labels": [
         "Kinder & Lernen",
         "Kostenloser Einstieg · dauerhafte Freischaltung",
-        "Offline"
+        "Offline",
+        "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/de-DE/index.html",
@@ -11648,9 +11694,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/de-DE.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/de/app/id6797601720",
       "app_store_cta_label": "Wordmate Lite: Vokabeltrainer im App Store laden",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Kostenlos"
+      },
       "guide_cta_label": "Lesen Sie den vollständigen Leitfaden",
       "publisher_disclosure": "Dieses Material wird direkt von Lumi Studio veröffentlicht, dem Entwickler aller aufgeführten Apps.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -12029,7 +12079,8 @@
       "badge_labels": [
         "Περισσότερα",
         "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
-        "Γραφικό στοιχείο"
+        "Γραφικό στοιχείο",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/el/index.html",
@@ -12037,9 +12088,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/el.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/gr/app/id6794178671",
       "app_store_cta_label": "Αποκτήστε το CalDaily αριθμομηχανή από το App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Αυτό είναι πρωτογενές υλικό που δημοσιεύεται από το Lumi Studio, τον δημιουργό κάθε καταχωρημένης εφαρμογής.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -13570,7 +13625,8 @@
       "badge_labels": [
         "Παιδιά & μάθηση",
         "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
-        "Εκτός σύνδεσης"
+        "Εκτός σύνδεσης",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/el/index.html",
@@ -13578,9 +13634,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/el.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/gr/app/id6797601720",
       "app_store_cta_label": "Αποκτήστε το Wordmate Lite: λεξιλόγιο από το App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Αυτό είναι πρωτογενές υλικό που δημοσιεύεται από το Lumi Studio, τον δημιουργό κάθε καταχωρημένης εφαρμογής.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -13662,7 +13722,7 @@
       "priority_rank": 1,
       "priority_group": "launch_boost",
       "publisher_query": "Mask My File — Hide private details to share | iOS App",
-      "decision_context": "Share safely without losing the context people actually need. Mask My File finds private details before you share.etails before you share.etails before you share.etails before you send a file, permanently hides only what you choose, then reopens and verifies the new copy before it shows Private Ready. WHAT YOU CAN DO • Images and PDFs: full-width preview, up to 5× zoom, smooth drag, and precise manual selections. • Visual files: permanent solid redaction or removal only. Face and barcode detection simply mark regions for you to review. • Text, JSON, XML, HTML, CSV, TSV and RTF: search every match, then apply a full mask, a partial mask, a placeholder, a pseudonym, or removal. • Remove metadata where the format allows. Work page by page in PDFs, or protect up to 100 files at once with individual previews, cross-file search, and per-file manual selections. • Keep everything organised with Private Session, project workspaces and Placeholder Vault. USE IT WHEN IT MATTERS Before you send a rental application, a medical record, a payslip showing your tax file number or Medicare card, or a client file to a workmate, keep the useful context while permanently hiding the details they do not need. PRIVATE BY DESIGN Everything is processed on your device. There is no account, advertising, tracking, analytics or content upload. Apple Vision and the embedded Tesseract OCR engine run locally. Face detection creates regions only: it does not identify a person, build a template, share face data or retain it. Apple handles purchases with StoreKit. Mask My File does not use a VPN, NetworkExtension, proxy, tunnel, DNS filter or network routing. Originals are never overwritten; temporary workspace files, Private Session data and projects stay on the device until you delete them. BUY ONCE. USE IT FOR LIFE. One purchase unlocks unlimited verified outputs and batch processing for good. No subscriptions. Restore your purchase any time through the App Store.",
+      "decision_context": "Share safely without losing the context people actually need. Mask My File finds private details before you send a file, permanently hides only what you choose, then reopens and verifies the new copy before it shows Private Ready. WHAT YOU CAN DO • Images and PDFs: full-width preview, up to 5× zoom, smooth drag, and precise manual selections. • Visual files: permanent solid redaction or removal only. Face and barcode detection simply mark regions for you to review. • Text, JSON, XML, HTML, CSV, TSV and RTF: search every match, then apply a full mask, a partial mask, a placeholder, a pseudonym, or removal. • Remove metadata where the format allows. Work page by page in PDFs, or protect up to 100 files at once with individual previews, cross-file search, and per-file manual selections. • Keep everything organised with Private Session, project workspaces and Placeholder Vault. USE IT WHEN IT MATTERS Before you send a rental application, a medical record, a payslip showing your tax file number or Medicare card, or a client file to a workmate, keep the useful context while permanently hiding the details they do not need. PRIVATE BY DESIGN Everything is processed on your device. There is no account, advertising, tracking, analytics or content upload. Apple Vision and the embedded Tesseract OCR engine run locally. Face detection creates regions only: it does not identify a person, build a template, share face data or retain it. Apple handles purchases with StoreKit. Mask My File does not use a VPN, NetworkExtension, proxy, tunnel, DNS filter or network routing. Originals are never overwritten; temporary workspace files, Private Session data and projects stay on the device until you delete them. BUY ONCE. USE IT FOR LIFE. One purchase unlocks unlimited verified outputs and batch processing for good. No subscriptions. Restore your purchase any time through the App Store.",
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
@@ -13712,7 +13772,7 @@
       "priority_rank": 2,
       "priority_group": "launch_boost",
       "publisher_query": "WiFi Aid — Network Diagnosis & Evidence | iOS App",
-      "decision_context": "Find the most likely connection problem with independent path, DNS, TCP, TLS, timing and signal checks.ignal checks.ignal checks.tability checks. Pay once upfront—no subscription, ads or tracking. • Run a Check — Wi-Fi, DNS and internet checks in one tap • Deep Check — More evidence and stability samples • Check a Website — See whether one destination or the wider internet is failing • Evidence — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Connection looks unstable — Variation • Check History — Private records stored only on this device • Apple Watch — Run a Check • Widget · iPad — Connected · Run a Check No account, ads, analytics or tracking. Private records stored only on this device. One upfront App Store purchase. No subscription.",
+      "decision_context": "Find the most likely connection problem with independent path, DNS, TCP, TLS, timing and stability checks. Pay once upfront—no subscription, ads or tracking. • Run a Check — Wi-Fi, DNS and internet checks in one tap • Deep Check — More evidence and stability samples • Check a Website — See whether one destination or the wider internet is failing • Evidence — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Connection looks unstable — Variation • Check History — Private records stored only on this device • Apple Watch — Run a Check • Widget · iPad — Connected · Run a Check No account, ads, analytics or tracking. Private records stored only on this device. One upfront App Store purchase. No subscription.",
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "paid_upfront",
@@ -13959,7 +14019,8 @@
       "badge_labels": [
         "More",
         "Free to start · lifetime unlock",
-        "Widget"
+        "Widget",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/en-AU/index.html",
@@ -13967,9 +14028,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/au/app/id6794178671",
       "app_store_cta_label": "Get CalDaily: Calculator & Themes on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "AUD",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -15500,7 +15565,8 @@
       "badge_labels": [
         "Kids & learning",
         "Free to start · lifetime unlock",
-        "Offline"
+        "Offline",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/en-AU/index.html",
@@ -15508,9 +15574,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/au/app/id6797601720",
       "app_store_cta_label": "Get Wordmate Lite: Learn Words on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "AUD",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -15642,7 +15712,7 @@
       "priority_rank": 2,
       "priority_group": "launch_boost",
       "publisher_query": "WiFi Aid — Network Diagnosis & Evidence | iOS App",
-      "decision_context": "Find the most likely connection problem with independent path, DNS, TCP, TLS, timing and signal checks.ignal checks.ignal checks.tability checks. Pay once upfront—no subscription, ads or tracking. • Run a Check — Wi-Fi, DNS and internet checks in one tap • Deep Check — More evidence and stability samples • Check a Website — See whether one destination or the wider internet is failing • Evidence — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Connection looks unstable — Variation • Check History — Private records stored only on this device • Apple Watch — Run a Check • Widget · iPad — Connected · Run a Check No account, ads, analytics or tracking. Private records stored only on this device. One upfront App Store purchase. No subscription.",
+      "decision_context": "Find the most likely connection problem with independent path, DNS, TCP, TLS, timing and stability checks. Pay once upfront—no subscription, ads or tracking. • Run a Check — Wi-Fi, DNS and internet checks in one tap • Deep Check — More evidence and stability samples • Check a Website — See whether one destination or the wider internet is failing • Evidence — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Connection looks unstable — Variation • Check History — Private records stored only on this device • Apple Watch — Run a Check • Widget · iPad — Connected · Run a Check No account, ads, analytics or tracking. Private records stored only on this device. One upfront App Store purchase. No subscription.",
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "paid_upfront",
@@ -15889,7 +15959,8 @@
       "badge_labels": [
         "More",
         "Free to start · lifetime unlock",
-        "Widget"
+        "Widget",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/en-CA/index.html",
@@ -15897,9 +15968,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-CA.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/ca/app/id6794178671",
       "app_store_cta_label": "Get CalDaily: Calculator & Themes on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CAD",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -17430,7 +17505,8 @@
       "badge_labels": [
         "Kids & learning",
         "Free to start · lifetime unlock",
-        "Offline"
+        "Offline",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/en-CA/index.html",
@@ -17438,9 +17514,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-CA.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/ca/app/id6797601720",
       "app_store_cta_label": "Get Wordmate Lite: Vocabulary on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CAD",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -17819,7 +17899,8 @@
       "badge_labels": [
         "More",
         "Free to start · lifetime unlock",
-        "Widget"
+        "Widget",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/en-GB/index.html",
@@ -17827,9 +17908,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-GB.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/gb/app/id6794178671",
       "app_store_cta_label": "Get CalDaily: Calculator & Themes on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -19360,7 +19445,8 @@
       "badge_labels": [
         "Children & learning",
         "Free to start · lifetime unlock",
-        "Offline"
+        "Offline",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/en-GB/index.html",
@@ -19368,9 +19454,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-GB.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/gb/app/id6797601720",
       "app_store_cta_label": "Get Wordmate Lite: Vocabulary on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -19452,7 +19542,7 @@
       "priority_rank": 1,
       "priority_group": "launch_boost",
       "publisher_query": "Mask My File — Redact files before sharing | iOS App",
-      "decision_context": "Share safely without losing the context people actually need. Mask My File finds private details before you share.etails before you share.etails before you share.etails before you send a file, permanently hides only what you choose, then reopens and verifies the new copy before showing Private Ready. WHAT YOU CAN DO • Images and PDFs: full-width preview, up to 5× zoom, fluid drag, and precise manual selections. • Visual files: permanent solid redaction or removal only. Face and barcode detection simply mark regions for your review. • Text, JSON, XML, HTML, CSV, TSV, and RTF: search every match, then apply a full mask, a partial mask, a placeholder, a pseudonym, or removal. • Remove metadata where the format supports it. Work page by page in PDFs, or protect up to 100 files at once with individual previews, cross-file search, and per-file manual selections. • Stay organized with Private Session, project workspaces, and Placeholder Vault. USE IT WHEN IT MATTERS Before you send a rental application, a medical record, a pay stub with a Social Security number, or a customer file to a coworker, keep the useful context while permanently hiding the details they do not need. PRIVATE BY DESIGN Everything is processed on your device. There is no account, advertising, tracking, analytics, or content upload. Apple Vision and the embedded Tesseract OCR engine run locally. Face detection creates regions only: it does not identify a person, build a template, share face data, or retain it. Apple handles purchases with StoreKit. Mask My File does not use a VPN, NetworkExtension, proxy, tunnel, DNS filter, or network routing. Originals are never overwritten; temporary workspace files, Private Session data, and projects stay on the device until you delete them. BUY ONCE. USE IT FOR LIFE. One purchase unlocks unlimited verified outputs and batch processing for good. No subscriptions. Restore your purchase anytime through the App Store.",
+      "decision_context": "Share safely without losing the context people actually need. Mask My File finds private details before you send a file, permanently hides only what you choose, then reopens and verifies the new copy before showing Private Ready. WHAT YOU CAN DO • Images and PDFs: full-width preview, up to 5× zoom, fluid drag, and precise manual selections. • Visual files: permanent solid redaction or removal only. Face and barcode detection simply mark regions for your review. • Text, JSON, XML, HTML, CSV, TSV, and RTF: search every match, then apply a full mask, a partial mask, a placeholder, a pseudonym, or removal. • Remove metadata where the format supports it. Work page by page in PDFs, or protect up to 100 files at once with individual previews, cross-file search, and per-file manual selections. • Stay organized with Private Session, project workspaces, and Placeholder Vault. USE IT WHEN IT MATTERS Before you send a rental application, a medical record, a pay stub with a Social Security number, or a customer file to a coworker, keep the useful context while permanently hiding the details they do not need. PRIVATE BY DESIGN Everything is processed on your device. There is no account, advertising, tracking, analytics, or content upload. Apple Vision and the embedded Tesseract OCR engine run locally. Face detection creates regions only: it does not identify a person, build a template, share face data, or retain it. Apple handles purchases with StoreKit. Mask My File does not use a VPN, NetworkExtension, proxy, tunnel, DNS filter, or network routing. Originals are never overwritten; temporary workspace files, Private Session data, and projects stay on the device until you delete them. BUY ONCE. USE IT FOR LIFE. One purchase unlocks unlimited verified outputs and batch processing for good. No subscriptions. Restore your purchase anytime through the App Store.",
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
@@ -19502,7 +19592,7 @@
       "priority_rank": 2,
       "priority_group": "launch_boost",
       "publisher_query": "WiFi Aid — Network Diagnosis & Evidence | iOS App",
-      "decision_context": "Find the most likely connection problem with independent path, DNS, TCP, TLS, timing and signal checks.ignal checks.ignal checks.tability checks. Pay once upfront—no subscription, ads or tracking. • Run a Check — Wi-Fi, DNS and internet checks in one tap • Deep Check — More evidence and stability samples • Check a Website — See whether one destination or the wider internet is failing • Evidence — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Connection looks unstable — Variation • Check History — Private records stored only on this device • Apple Watch — Run a Check • Widget · iPad — Connected · Run a Check No account, ads, analytics or tracking. Private records stored only on this device. One upfront App Store purchase. No subscription.",
+      "decision_context": "Find the most likely connection problem with independent path, DNS, TCP, TLS, timing and stability checks. Pay once upfront—no subscription, ads or tracking. • Run a Check — Wi-Fi, DNS and internet checks in one tap • Deep Check — More evidence and stability samples • Check a Website — See whether one destination or the wider internet is failing • Evidence — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Connection looks unstable — Variation • Check History — Private records stored only on this device • Apple Watch — Run a Check • Widget · iPad — Connected · Run a Check No account, ads, analytics or tracking. Private records stored only on this device. One upfront App Store purchase. No subscription.",
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "paid_upfront",
@@ -19547,7 +19637,7 @@
       "priority_rank": 3,
       "priority_group": "launch_boost",
       "publisher_query": "Mochi DoneStamp: Last Time — Remember when you did it | iOS App",
-      "decision_context": "When did you last change the sheets, water a plant, call family, or back up photos?e a filter? Mochi DoneStamp is a life-event memory, not another to-do list. Finish something, tap once, and the exact time becomes part of a calm history. Add an approximate or exact rhythm when useful; the next due time always restarts from when you actually finished. • One-tap logging with Undo • Backdate, edit, or delete any occurrence • Flexible and exact rhythms from minutes to years • Local reminders with Done and Snooze actions • Interactive Home and Lock Screen widgets • Siri and Shortcuts • Optional notes and compressed photos • Interval insights, complete backup, and JSON export • Light and Dark Mode, iPad, VoiceOver, RTL, and Dynamic Type Start free with one active event and unlimited history. Unlock Lifetime Pro once for unlimited events and the complete feature set. No account. No ads. No analytics. No tracking. Your core data stays on your device. No subscription—ever.",
+      "decision_context": "When did you last change the sheets, water a plant, call family, back up photos, or replace a filter? Mochi DoneStamp is a life-event memory, not another to-do list. Finish something, tap once, and the exact time becomes part of a calm history. Add an approximate or exact rhythm when useful; the next due time always restarts from when you actually finished. • One-tap logging with Undo • Backdate, edit, or delete any occurrence • Flexible and exact rhythms from minutes to years • Local reminders with Done and Snooze actions • Interactive Home and Lock Screen widgets • Siri and Shortcuts • Optional notes and compressed photos • Interval insights, complete backup, and JSON export • Light and Dark Mode, iPad, VoiceOver, RTL, and Dynamic Type Start free with one active event and unlimited history. Unlock Lifetime Pro once for unlimited events and the complete feature set. No account. No ads. No analytics. No tracking. Your core data stays on your device. No subscription—ever.",
       "category": "lifestyle",
       "category_label": "Lifestyle",
       "purchase_model": "free_with_lifetime_unlock",
@@ -19752,7 +19842,8 @@
       "badge_labels": [
         "More",
         "Free to start · lifetime unlock",
-        "Widget"
+        "Widget",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/en-US/index.html",
@@ -19760,9 +19851,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-US.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/us/app/id6794178671",
       "app_store_cta_label": "Get CalDaily: Calculator & Themes on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -21305,7 +21400,8 @@
       "badge_labels": [
         "Kids & learning",
         "Free to start · lifetime unlock",
-        "Offline"
+        "Offline",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/en-US/index.html",
@@ -21313,9 +21409,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-US.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/us/app/id6797601720",
       "app_store_cta_label": "Get Wordmate Lite: Vocabulary on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -21694,7 +21794,8 @@
       "badge_labels": [
         "Más",
         "Gratis para empezar · desbloqueo permanente",
-        "Widget"
+        "Widget",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/es-ES/index.html",
@@ -21702,9 +21803,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/es-ES.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/es/app/id6794178671",
       "app_store_cta_label": "Consigue CalDaily: calculadora y temas en el App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Lee la guía completa",
       "publisher_disclosure": "Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -23235,7 +23340,8 @@
       "badge_labels": [
         "Infantil y aprendizaje",
         "Gratis para empezar · desbloqueo permanente",
-        "Sin conexión"
+        "Sin conexión",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/es-ES/index.html",
@@ -23243,9 +23349,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/es-ES.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/es/app/id6797601720",
       "app_store_cta_label": "Consigue Wordmate Lite: vocabulario en el App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Lee la guía completa",
       "publisher_disclosure": "Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -23624,7 +23734,8 @@
       "badge_labels": [
         "Más",
         "Gratis para empezar · desbloqueo permanente",
-        "Widget"
+        "Widget",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/es-MX/index.html",
@@ -23632,9 +23743,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/es-MX.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/mx/app/id6794178671",
       "app_store_cta_label": "Consigue CalDaily: calculadora y temas en el App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "MXN",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Lee la guía completa",
       "publisher_disclosure": "Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -25165,7 +25280,8 @@
       "badge_labels": [
         "Niños y aprendizaje",
         "Gratis para empezar · desbloqueo permanente",
-        "Sin conexión"
+        "Sin conexión",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/es-MX/index.html",
@@ -25173,9 +25289,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/es-MX.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/mx/app/id6797601720",
       "app_store_cta_label": "Consigue Wordmate Lite: aprende idiomas en el App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "MXN",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Lee la guía completa",
       "publisher_disclosure": "Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -25554,7 +25674,8 @@
       "badge_labels": [
         "Lisää",
         "Ilmainen aloitus · elinikäinen avaus",
-        "Widget"
+        "Widget",
+        "App Store · Ilmainen"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/fi/index.html",
@@ -25562,9 +25683,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fi.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/fi/app/id6794178671",
       "app_store_cta_label": "Lataa CalDaily: laskin ja teemat App Storesta",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen"
+      },
       "guide_cta_label": "Lue koko opas",
       "publisher_disclosure": "Tämä on Lumi Studion, jokaisen listatun sovelluksen kehittäjän, julkaisema ensimmäisen osapuolen materiaali.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -27095,7 +27220,8 @@
       "badge_labels": [
         "Lapset & oppiminen",
         "Ilmainen aloitus · elinikäinen avaus",
-        "Offline"
+        "Offline",
+        "App Store · Ilmainen"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/fi/index.html",
@@ -27103,9 +27229,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fi.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/fi/app/id6797601720",
       "app_store_cta_label": "Lataa Wordmate Lite: Sanasto App Storesta",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen"
+      },
       "guide_cta_label": "Lue koko opas",
       "publisher_disclosure": "Tämä on Lumi Studion, jokaisen listatun sovelluksen kehittäjän, julkaisema ensimmäisen osapuolen materiaali.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -27484,7 +27614,8 @@
       "badge_labels": [
         "Plus",
         "Gratuit au départ · déverrouillage définitif",
-        "Widget"
+        "Widget",
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/fr-CA/index.html",
@@ -27492,9 +27623,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fr-CA.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/ca/app/id6794178671",
       "app_store_cta_label": "Obtenir CalDaily : calculatrice sur l'App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CAD",
+        "formatted_price": "Gratuit"
+      },
       "guide_cta_label": "Lire le guide complet",
       "publisher_disclosure": "Ce contenu est publié directement par Lumi Studio, le développeur de chaque app listée.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -29089,7 +29224,8 @@
       "badge_labels": [
         "Enfants et apprentissage",
         "Gratuit au départ · déverrouillage définitif",
-        "Hors ligne"
+        "Hors ligne",
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/fr-CA/index.html",
@@ -29097,9 +29233,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fr-CA.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/ca/app/id6797601720",
       "app_store_cta_label": "Obtenir Wordmate Lite: 5 mots par jour sur l'App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CAD",
+        "formatted_price": "Gratuit"
+      },
       "guide_cta_label": "Lire le guide complet",
       "publisher_disclosure": "Ce contenu est publié directement par Lumi Studio, le développeur de chaque app listée.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -29414,7 +29554,8 @@
       "badge_labels": [
         "Plus",
         "Gratuit au départ · déverrouillage définitif",
-        "Widget"
+        "Widget",
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/fr-FR/index.html",
@@ -29422,9 +29563,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fr-FR.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/fr/app/id6794178671",
       "app_store_cta_label": "Obtenir CalDaily : calculatrice sur l'App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratuit"
+      },
       "guide_cta_label": "Lire le guide complet",
       "publisher_disclosure": "Ce contenu est publié directement par Lumi Studio, le développeur de chaque application répertoriée.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -31019,7 +31164,8 @@
       "badge_labels": [
         "Enfants & apprentissage",
         "Gratuit au départ · déverrouillage définitif",
-        "Hors ligne"
+        "Hors ligne",
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/fr-FR/index.html",
@@ -31027,9 +31173,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fr-FR.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/fr/app/id6797601720",
       "app_store_cta_label": "Obtenir Wordmate Lite: vocabulaire sur l'App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratuit"
+      },
       "guide_cta_label": "Lire le guide complet",
       "publisher_disclosure": "Ce contenu est publié directement par Lumi Studio, le développeur de chaque application répertoriée.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -31344,7 +31494,8 @@
       "badge_labels": [
         "વધુ",
         "મફત શરૂઆત · કાયમી અનલૉક",
-        "વિજેટ"
+        "વિજેટ",
+        "App Store · મફત"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/gu-IN/index.html",
@@ -31352,9 +31503,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/gu-IN.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/in/app/id6794178671",
       "app_store_cta_label": "App Store પરથી CalDaily કેલ્ક્યુલેટર અને થીમ મેળવો",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "મફત"
+      },
       "guide_cta_label": "પૂર્ણ માર્ગદર્શિકા વાંચો",
       "publisher_disclosure": "આ સામગ્રી Lumi Studio દ્વારા સીધી પ્રકાશિત કરવામાં આવી છે, જે સૂચિબદ્ધ તમામ એપ્સનો વિકાસકર્તા છે.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -32885,7 +33040,8 @@
       "badge_labels": [
         "બાળકો અને અભ્યાસ",
         "મફત શરૂઆત · કાયમી અનલૉક",
-        "ઑફલાઇન"
+        "ઑફલાઇન",
+        "App Store · મફત"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/gu-IN/index.html",
@@ -32893,9 +33049,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/gu-IN.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/in/app/id6797601720",
       "app_store_cta_label": "App Store પરથી Wordmate Lite: અંગ્રેજી શીખો મેળવો",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "મફત"
+      },
       "guide_cta_label": "પૂર્ણ માર્ગદર્શિકા વાંચો",
       "publisher_disclosure": "આ સામગ્રી Lumi Studio દ્વારા સીધી પ્રકાશિત કરવામાં આવી છે, જે સૂચિબદ્ધ તમામ એપ્સનો વિકાસકર્તા છે.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -33274,7 +33434,8 @@
       "badge_labels": [
         "עוד",
         "התחלה ללא תשלום · פתיחה לכל החיים",
-        "וידג'ט"
+        "וידג'ט",
+        "App Store · בחינם"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/he/index.html",
@@ -33282,9 +33443,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/he.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/il/app/id6794178671",
       "app_store_cta_label": "הורידו את CalDaily מחשבון ועיצובים מה-App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "ILS",
+        "formatted_price": "בחינם"
+      },
       "guide_cta_label": "קרא את המדריך המלא",
       "publisher_disclosure": "זהו חומר רשמי שפורסם על ידי Lumi Studio, המפתח של כל אפליקציה ברשימה.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -34815,7 +34980,8 @@
       "badge_labels": [
         "ילדים ולמידה",
         "התחלה ללא תשלום · פתיחה לכל החיים",
-        "לא מקוון"
+        "לא מקוון",
+        "App Store · בחינם"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/he/index.html",
@@ -34823,9 +34989,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/he.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/il/app/id6797601720",
       "app_store_cta_label": "הורידו את Wordmate Lite: לומדים שפות מה-App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "ILS",
+        "formatted_price": "בחינם"
+      },
       "guide_cta_label": "קרא את המדריך המלא",
       "publisher_disclosure": "זהו חומר רשמי שפורסם על ידי Lumi Studio, המפתח של כל אפליקציה ברשימה.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -35204,7 +35374,8 @@
       "badge_labels": [
         "और अधिक",
         "मुफ़्त शुरुआत · हमेशा के लिए अनलॉक",
-        "विजेट"
+        "विजेट",
+        "App Store · मुफ़्त"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/hi/index.html",
@@ -35212,9 +35383,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hi.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/in/app/id6794178671",
       "app_store_cta_label": "App Store पर CalDaily कैलकुलेटर और थीम पाएँ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "मुफ़्त"
+      },
       "guide_cta_label": "पूरा मार्गदर्शक पढ़ें",
       "publisher_disclosure": "यह सामग्री सीधे Lumi Studio ने प्रकाशित की है, जो सूचीबद्ध सभी ऐप का डेवलपर है।",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -36745,7 +36920,8 @@
       "badge_labels": [
         "बच्चे और सीखना",
         "मुफ़्त शुरुआत · हमेशा के लिए अनलॉक",
-        "ऑफ़लाइन"
+        "ऑफ़लाइन",
+        "App Store · मुफ़्त"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/hi/index.html",
@@ -36753,9 +36929,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hi.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/in/app/id6797601720",
       "app_store_cta_label": "App Store पर Wordmate Lite: इंग्लिश सीखें पाएँ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "मुफ़्त"
+      },
       "guide_cta_label": "पूरा मार्गदर्शक पढ़ें",
       "publisher_disclosure": "यह सामग्री सीधे Lumi Studio ने प्रकाशित की है, जो सूचीबद्ध सभी ऐप का डेवलपर है।",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -37134,7 +37314,8 @@
       "badge_labels": [
         "Više",
         "Besplatno za početak · doživotno otključavanje",
-        "Widget"
+        "Widget",
+        "App Store · Besplatno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/hr/index.html",
@@ -37142,9 +37323,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/hr/app/id6794178671",
       "app_store_cta_label": "Preuzmite CalDaily: kalkulator i teme u App Storeu",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno"
+      },
       "guide_cta_label": "Pročitajte cijeli vodič",
       "publisher_disclosure": "Ovo je materijal iz prve ruke koji je objavio Lumi Studio, razvojni tim svake navedene aplikacije.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -38675,7 +38860,8 @@
       "badge_labels": [
         "Djeca i učenje",
         "Besplatno za početak · doživotno otključavanje",
-        "Izvan mreže"
+        "Izvan mreže",
+        "App Store · Besplatno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/hr/index.html",
@@ -38683,9 +38869,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/hr/app/id6797601720",
       "app_store_cta_label": "Preuzmite Wordmate Lite: vokabular u App Storeu",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno"
+      },
       "guide_cta_label": "Pročitajte cijeli vodič",
       "publisher_disclosure": "Ovo je materijal iz prve ruke koji je objavio Lumi Studio, razvojni tim svake navedene aplikacije.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -39064,7 +39254,8 @@
       "badge_labels": [
         "Továbbiak",
         "Ingyenes kezdés · életre szóló feloldás",
-        "Widget"
+        "Widget",
+        "App Store · Ingyenes"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/hu/index.html",
@@ -39072,9 +39263,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/hu/app/id6794178671",
       "app_store_cta_label": "Töltse le a(z) CalDaily: számológép, témák appot az App Store-ból",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "HUF",
+        "formatted_price": "Ingyenes"
+      },
       "guide_cta_label": "Olvasd el a teljes útmutatót",
       "publisher_disclosure": "Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -40605,7 +40800,8 @@
       "badge_labels": [
         "Gyerekek & tanulás",
         "Ingyenes kezdés · életre szóló feloldás",
-        "Offline"
+        "Offline",
+        "App Store · Ingyenes"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/hu/index.html",
@@ -40613,9 +40809,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/hu/app/id6797601720",
       "app_store_cta_label": "Töltse le a(z) Wordmate Lite: szótanulás appot az App Store-ból",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "HUF",
+        "formatted_price": "Ingyenes"
+      },
       "guide_cta_label": "Olvasd el a teljes útmutatót",
       "publisher_disclosure": "Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -40994,7 +41194,8 @@
       "badge_labels": [
         "Lainnya",
         "Gratis untuk mulai · buka kunci permanen",
-        "Widget"
+        "Widget",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/id/index.html",
@@ -41002,9 +41203,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/id.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/id/app/id6794178671",
       "app_store_cta_label": "Dapatkan CalDaily: kalkulator & tema di App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "IDR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Baca panduan lengkap",
       "publisher_disclosure": "Materi ini diterbitkan langsung oleh Lumi Studio, pengembang semua aplikasi yang tercantum.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -42535,7 +42740,8 @@
       "badge_labels": [
         "Anak & pembelajaran",
         "Gratis untuk mulai · buka kunci permanen",
-        "Offline"
+        "Offline",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/id/index.html",
@@ -42543,9 +42749,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/id.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/id/app/id6797601720",
       "app_store_cta_label": "Dapatkan Wordmate Lite 5 Kata Sehari di App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "IDR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Baca panduan lengkap",
       "publisher_disclosure": "Materi ini diterbitkan langsung oleh Lumi Studio, pengembang semua aplikasi yang tercantum.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -42924,7 +43134,8 @@
       "badge_labels": [
         "Altro",
         "Gratis per iniziare · sblocco permanente",
-        "Widget"
+        "Widget",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/it/index.html",
@@ -42932,9 +43143,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/it/app/id6794178671",
       "app_store_cta_label": "Scarica CalDaily: calcolatrice e temi sull'App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Leggi la guida completa",
       "publisher_disclosure": "Questo contenuto è pubblicato direttamente da Lumi Studio, lo sviluppatore di tutte le app elencate.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -44471,7 +44686,8 @@
       "badge_labels": [
         "Bambini e apprendimento",
         "Gratis per iniziare · sblocco permanente",
-        "Offline"
+        "Offline",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/it/index.html",
@@ -44479,9 +44695,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/it/app/id6797601720",
       "app_store_cta_label": "Scarica Wordmate Lite: vocabolario sull'App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Leggi la guida completa",
       "publisher_disclosure": "Questo contenuto è pubblicato direttamente da Lumi Studio, lo sviluppatore di tutte le app elencate.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -44860,7 +45080,8 @@
       "badge_labels": [
         "その他",
         "無料で開始・買い切りで永久解除",
-        "ウィジェット"
+        "ウィジェット",
+        "App Store · 無料"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/ja/index.html",
@@ -44868,9 +45089,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ja.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/jp/app/id6794178671",
       "app_store_cta_label": "App Store で CalDaily 電卓とテーマ を入手",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料"
+      },
       "guide_cta_label": "完全ガイドを読む",
       "publisher_disclosure": "これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -45400,7 +45625,8 @@
         "子ども・学習",
         "有料ダウンロード",
         "広告なし",
-        "App Store · ¥1,500"
+        "App Store · ¥1,500",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/answers/best-complete-zhuyin-app-for-bilingual-children.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/ja/index.html",
@@ -45413,7 +45639,9 @@
       "storefront_facts": {
         "price": "1500",
         "currency": "JPY",
-        "formatted_price": "¥1,500"
+        "formatted_price": "¥1,500",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "完全ガイドを読む",
       "publisher_disclosure": "アプリ開発者であるLumi Studioによる公式購入ガイドです。アプリ名は各所有者の商標であり、識別のためにのみ使用しています。書類、健康、学校、生産性に関する判断は、該当する公式要件を必ずご確認ください。",
@@ -46404,7 +46632,8 @@
       "badge_labels": [
         "子ども・学習",
         "無料で開始・買い切りで永久解除",
-        "オフライン"
+        "オフライン",
+        "App Store · 無料"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/ja/index.html",
@@ -46412,9 +46641,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ja.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/jp/app/id6797601720",
       "app_store_cta_label": "App Store で Wordmate Lite 1日5単語 を入手",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料"
+      },
       "guide_cta_label": "完全ガイドを読む",
       "publisher_disclosure": "これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -46793,7 +47026,8 @@
       "badge_labels": [
         "ಇನ್ನಷ್ಟು",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್",
-        "ವಿಜೆಟ್"
+        "ವಿಜೆಟ್",
+        "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/kn-IN/index.html",
@@ -46801,9 +47035,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/kn-IN.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/in/app/id6794178671",
       "app_store_cta_label": "App Store ನಲ್ಲಿ CalDaily ಕ್ಯಾಲ್ಕುಲೇಟರ್ ಪಡೆಯಿರಿ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ಉಚಿತ"
+      },
       "guide_cta_label": "ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ",
       "publisher_disclosure": "ಇದು ಪಟ್ಟಿಯಲ್ಲಿ ಇರುವ ಪ್ರತಿಯೊಂದು ಆ್ಯಪ್‌ನ ಅಭಿವೃದ್ಧಿಪಡಿಸಿದ Lumi Studio ಅವರಿಂದ ಪ್ರಕಟಿಸಲಾದ ಮೊದಲ-ಪಕ್ಷದ ವಸ್ತು.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -48334,7 +48572,8 @@
       "badge_labels": [
         "ಮಕ್ಕಳು ಮತ್ತು ಕಲಿಕೆ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್",
-        "ಆಫ್‌ಲೈನ್"
+        "ಆಫ್‌ಲೈನ್",
+        "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/kn-IN/index.html",
@@ -48342,9 +48581,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/kn-IN.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/in/app/id6797601720",
       "app_store_cta_label": "App Store ನಲ್ಲಿ Wordmate Lite: ಇಂಗ್ಲಿಷ್ ಕಲಿಕೆ ಪಡೆಯಿರಿ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ಉಚಿತ"
+      },
       "guide_cta_label": "ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ",
       "publisher_disclosure": "ಇದು ಪಟ್ಟಿಯಲ್ಲಿ ಇರುವ ಪ್ರತಿಯೊಂದು ಆ್ಯಪ್‌ನ ಅಭಿವೃದ್ಧಿಪಡಿಸಿದ Lumi Studio ಅವರಿಂದ ಪ್ರಕಟಿಸಲಾದ ಮೊದಲ-ಪಕ್ಷದ ವಸ್ತು.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -48723,7 +48966,8 @@
       "badge_labels": [
         "더 보기",
         "무료로 시작 · 평생 잠금 해제",
-        "위젯"
+        "위젯",
+        "App Store · 무료"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/ko/index.html",
@@ -48731,9 +48975,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/kr/app/id6794178671",
       "app_store_cta_label": "App Store에서 CalDaily 계산기 및 테마 받기",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "KRW",
+        "formatted_price": "무료"
+      },
       "guide_cta_label": "전체 안내서 읽기",
       "publisher_disclosure": "이 자료는 목록에 있는 모든 앱의 개발사 Lumi Studio가 직접 발행한 1차 자료입니다.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -50264,7 +50512,8 @@
       "badge_labels": [
         "어린이 & 학습",
         "무료로 시작 · 평생 잠금 해제",
-        "오프라인"
+        "오프라인",
+        "App Store · 무료"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/ko/index.html",
@@ -50272,9 +50521,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/kr/app/id6797601720",
       "app_store_cta_label": "App Store에서 Wordmate Lite 하루 5단어 받기",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "KRW",
+        "formatted_price": "무료"
+      },
       "guide_cta_label": "전체 안내서 읽기",
       "publisher_disclosure": "이 자료는 목록에 있는 모든 앱의 개발사 Lumi Studio가 직접 발행한 1차 자료입니다.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -50653,7 +50906,8 @@
       "badge_labels": [
         "കൂടുതൽ",
         "സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക്",
-        "വിഡ്ജറ്റ്"
+        "വിഡ്ജറ്റ്",
+        "App Store · സൗജന്യം"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/ml-IN/index.html",
@@ -50661,9 +50915,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ml-IN.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/in/app/id6794178671",
       "app_store_cta_label": "App Store-ൽ നിന്ന് CalDaily കാൽക്കുലേറ്റർ നേടൂ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "സൗജന്യം"
+      },
       "guide_cta_label": "പൂർണ്ണ ഗൈഡ് വായിക്കുക",
       "publisher_disclosure": "ഇത് Lumi Studio പ്രസിദ്ധീകരിച്ച ആദ്യകക്ഷി വസ്തുവാണ്, എല്ലാ ലിസ്റ്റുചെയ്ത ആപ്പുകളുടെയും വികസകനാണ്.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -52194,7 +52452,8 @@
       "badge_labels": [
         "കുട്ടികൾ & പഠനം",
         "സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക്",
-        "ഓഫ്‌ലൈൻ"
+        "ഓഫ്‌ലൈൻ",
+        "App Store · സൗജന്യം"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/ml-IN/index.html",
@@ -52202,9 +52461,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ml-IN.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/in/app/id6797601720",
       "app_store_cta_label": "App Store-ൽ നിന്ന് Wordmate Lite: ഇംഗ്ലീഷ് പഠനം നേടൂ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "സൗജന്യം"
+      },
       "guide_cta_label": "പൂർണ്ണ ഗൈഡ് വായിക്കുക",
       "publisher_disclosure": "ഇത് Lumi Studio പ്രസിദ്ധീകരിച്ച ആദ്യകക്ഷി വസ്തുവാണ്, എല്ലാ ലിസ്റ്റുചെയ്ത ആപ്പുകളുടെയും വികസകനാണ്.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -52583,7 +52846,8 @@
       "badge_labels": [
         "अधिक",
         "सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक",
-        "विजेट"
+        "विजेट",
+        "App Store · मोफत"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/mr-IN/index.html",
@@ -52591,9 +52855,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/mr-IN.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/in/app/id6794178671",
       "app_store_cta_label": "App Store वरून CalDaily: कॅल्क्युलेटर मिळवा",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "मोफत"
+      },
       "guide_cta_label": "संपूर्ण मार्गदर्शक वाचा",
       "publisher_disclosure": "हे Lumi Studio कडून प्रकाशित केलेले प्रथम पक्ष साहित्य आहे, जे प्रत्येक सूचीबद्ध अॅपचे विकसक आहे.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -54124,7 +54392,8 @@
       "badge_labels": [
         "मुलं आणि शिक्षण",
         "सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक",
-        "ऑफलाइन"
+        "ऑफलाइन",
+        "App Store · मोफत"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/mr-IN/index.html",
@@ -54132,9 +54401,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/mr-IN.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/in/app/id6797601720",
       "app_store_cta_label": "App Store वरून Wordmate Lite: इंग्रजी शिका मिळवा",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "मोफत"
+      },
       "guide_cta_label": "संपूर्ण मार्गदर्शक वाचा",
       "publisher_disclosure": "हे Lumi Studio कडून प्रकाशित केलेले प्रथम पक्ष साहित्य आहे, जे प्रत्येक सूचीबद्ध अॅपचे विकसक आहे.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -54513,7 +54786,8 @@
       "badge_labels": [
         "Lagi",
         "Percuma untuk bermula · buka kunci kekal",
-        "Widjet"
+        "Widjet",
+        "App Store · Percuma"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/ms/index.html",
@@ -54521,9 +54795,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ms.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/my/app/id6794178671",
       "app_store_cta_label": "Dapatkan CalDaily: kalkulator & tema di App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "MYR",
+        "formatted_price": "Percuma"
+      },
       "guide_cta_label": "Baca panduan penuh",
       "publisher_disclosure": "Bahan ini diterbitkan terus oleh Lumi Studio, pembangun semua aplikasi yang disenaraikan.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -56054,7 +56332,8 @@
       "badge_labels": [
         "Kanak-kanak & pembelajaran",
         "Percuma untuk bermula · buka kunci kekal",
-        "Luar talian"
+        "Luar talian",
+        "App Store · Percuma"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/ms/index.html",
@@ -56062,9 +56341,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ms.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/my/app/id6797601720",
       "app_store_cta_label": "Dapatkan Wordmate Lite Seminit Sehari di App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "MYR",
+        "formatted_price": "Percuma"
+      },
       "guide_cta_label": "Baca panduan penuh",
       "publisher_disclosure": "Bahan ini diterbitkan terus oleh Lumi Studio, pembangun semua aplikasi yang disenaraikan.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -56443,7 +56726,8 @@
       "badge_labels": [
         "Meer",
         "Gratis te starten · levenslange ontgrendeling",
-        "Widget"
+        "Widget",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/nl-NL/index.html",
@@ -56451,9 +56735,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/nl-NL.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/nl/app/id6794178671",
       "app_store_cta_label": "Download CalDaily: rekenmachine+thema's in de App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Lees de volledige gids",
       "publisher_disclosure": "Dit is materiaal van de eerste partij, gepubliceerd door Lumi Studio, de ontwikkelaar van elke vermelde app.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -57984,7 +58272,8 @@
       "badge_labels": [
         "Kinderen & leren",
         "Gratis te starten · levenslange ontgrendeling",
-        "Offline"
+        "Offline",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/nl-NL/index.html",
@@ -57992,9 +58281,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/nl-NL.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/nl/app/id6797601720",
       "app_store_cta_label": "Download Wordmate Lite: Woordenschat in de App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Lees de volledige gids",
       "publisher_disclosure": "Dit is materiaal van de eerste partij, gepubliceerd door Lumi Studio, de ontwikkelaar van elke vermelde app.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -58373,7 +58666,8 @@
       "badge_labels": [
         "Mer",
         "Gratis å starte · livstidsopplåsing",
-        "Widget"
+        "Widget",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/no/index.html",
@@ -58381,9 +58675,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/no.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/no/app/id6794178671",
       "app_store_cta_label": "Last ned CalDaily: kalkulator og temaer fra App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "NOK",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Les hele veiledningen",
       "publisher_disclosure": "Dette er førsteparts materiale publisert av Lumi Studio, utvikleren av hver oppført app.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -59914,7 +60212,8 @@
       "badge_labels": [
         "Barn og læring",
         "Gratis å starte · livstidsopplåsing",
-        "Frakoblet"
+        "Frakoblet",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/no/index.html",
@@ -59922,9 +60221,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/no.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/no/app/id6797601720",
       "app_store_cta_label": "Last ned Wordmate Lite: Ordforråd fra App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "NOK",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Les hele veiledningen",
       "publisher_disclosure": "Dette er førsteparts materiale publisert av Lumi Studio, utvikleren av hver oppført app.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -60303,7 +60606,8 @@
       "badge_labels": [
         "ଅଧିକ",
         "ମୁକ୍ତ ଆରମ୍ଭ · ଜୀବନକାଳ ଅନଲକ୍",
-        "ଉଇଜେଟ"
+        "ଉଇଜେଟ",
+        "App Store · ମାଗଣା"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/or-IN/index.html",
@@ -60311,9 +60615,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/or-IN.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/in/app/id6794178671",
       "app_store_cta_label": "App Store ରୁ CalDaily: କାଲକୁଲେଟର ପାଆନ୍ତୁ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ମାଗଣା"
+      },
       "guide_cta_label": "ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ",
       "publisher_disclosure": "ଏହା Lumi Studio ଦ୍ୱାରା ପ୍ରକାଶିତ ପ୍ରଥମ-ପକ୍ଷ ସାମଗ୍ରୀ, ଯାହାରେ ସମସ୍ତ ତାଲିକାଭୁକ୍ତ ଆପ୍ସର ବିକାଶକ ଅଛନ୍ତି।",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -61844,7 +62152,8 @@
       "badge_labels": [
         "ଶିଶୁ ଏବଂ ଶିକ୍ଷା",
         "ମୁକ୍ତ ଆରମ୍ଭ · ଜୀବନକାଳ ଅନଲକ୍",
-        "ଅଫଲାଇନ"
+        "ଅଫଲାଇନ",
+        "App Store · ମାଗଣା"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/or-IN/index.html",
@@ -61852,9 +62161,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/or-IN.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/in/app/id6797601720",
       "app_store_cta_label": "App Store ରୁ Wordmate Lite: ଇଂରାଜୀ ଶିଖନ୍ତୁ ପାଆନ୍ତୁ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ମାଗଣା"
+      },
       "guide_cta_label": "ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ",
       "publisher_disclosure": "ଏହା Lumi Studio ଦ୍ୱାରା ପ୍ରକାଶିତ ପ୍ରଥମ-ପକ୍ଷ ସାମଗ୍ରୀ, ଯାହାରେ ସମସ୍ତ ତାଲିକାଭୁକ୍ତ ଆପ୍ସର ବିକାଶକ ଅଛନ୍ତି।",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -62233,7 +62546,8 @@
       "badge_labels": [
         "ਹੋਰ",
         "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਸਦਾ ਲਈ ਅਨਲੌਕ",
-        "ਵਿਜੈਟ"
+        "ਵਿਜੈਟ",
+        "App Store · ਮੁਫ਼ਤ"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/pa-IN/index.html",
@@ -62241,9 +62555,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pa-IN.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/in/app/id6794178671",
       "app_store_cta_label": "App Store ਤੋਂ CalDaily: ਕੈਲਕੁਲੇਟਰ ਪ੍ਰਾਪਤ ਕਰੋ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ਮੁਫ਼ਤ"
+      },
       "guide_cta_label": "ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ",
       "publisher_disclosure": "ਇਹ Lumi Studio ਵੱਲੋਂ ਪ੍ਰਕਾਸ਼ਿਤ ਪਹਿਲਾ-ਪੱਖ ਸਮੱਗਰੀ ਹੈ, ਜੋ ਹਰ ਦਰਜ ਕੀਤੇ ਐਪ ਦਾ ਡਿਵੈਲਪਰ ਹੈ।",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -63774,7 +64092,8 @@
       "badge_labels": [
         "ਬੱਚੇ ਅਤੇ ਸਿੱਖਿਆ",
         "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਸਦਾ ਲਈ ਅਨਲੌਕ",
-        "ਆਫਲਾਈਨ"
+        "ਆਫਲਾਈਨ",
+        "App Store · ਮੁਫ਼ਤ"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/pa-IN/index.html",
@@ -63782,9 +64101,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pa-IN.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/in/app/id6797601720",
       "app_store_cta_label": "App Store ਤੋਂ Wordmate Lite: ਅੰਗਰੇਜ਼ੀ ਸਿੱਖੋ ਪ੍ਰਾਪਤ ਕਰੋ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ਮੁਫ਼ਤ"
+      },
       "guide_cta_label": "ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ",
       "publisher_disclosure": "ਇਹ Lumi Studio ਵੱਲੋਂ ਪ੍ਰਕਾਸ਼ਿਤ ਪਹਿਲਾ-ਪੱਖ ਸਮੱਗਰੀ ਹੈ, ਜੋ ਹਰ ਦਰਜ ਕੀਤੇ ਐਪ ਦਾ ਡਿਵੈਲਪਰ ਹੈ।",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -64163,7 +64486,8 @@
       "badge_labels": [
         "Więcej",
         "Darmowe na start · dożywotni dostęp",
-        "Widżet"
+        "Widżet",
+        "App Store · Bezpłatnie"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/pl/index.html",
@@ -64171,9 +64495,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pl.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/pl/app/id6794178671",
       "app_store_cta_label": "Pobierz CalDaily: kalkulator i motywy z App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "PLN",
+        "formatted_price": "Bezpłatnie"
+      },
       "guide_cta_label": "Przeczytaj pełny przewodnik",
       "publisher_disclosure": "Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -65704,7 +66032,8 @@
       "badge_labels": [
         "Dzieci i nauka",
         "Darmowe na start · dożywotni dostęp",
-        "Offline"
+        "Offline",
+        "App Store · Bezpłatnie"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/pl/index.html",
@@ -65712,9 +66041,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pl.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/pl/app/id6797601720",
       "app_store_cta_label": "Pobierz Wordmate Lite: nauka słówek z App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "PLN",
+        "formatted_price": "Bezpłatnie"
+      },
       "guide_cta_label": "Przeczytaj pełny przewodnik",
       "publisher_disclosure": "Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -66093,7 +66426,8 @@
       "badge_labels": [
         "Mais",
         "Grátis para começar · desbloqueio permanente",
-        "Widget"
+        "Widget",
+        "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/pt-BR/index.html",
@@ -66101,9 +66435,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pt-BR.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/br/app/id6794178671",
       "app_store_cta_label": "Baixe CalDaily: calculadora e temas na App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis"
+      },
       "guide_cta_label": "Leia o guia completo",
       "publisher_disclosure": "Este conteúdo é publicado diretamente pela Lumi Studio, desenvolvedora de todos os apps apresentados.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -67637,7 +67975,8 @@
       "badge_labels": [
         "Infantil e aprendizado",
         "Grátis para começar · desbloqueio permanente",
-        "Offline"
+        "Offline",
+        "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/pt-BR/index.html",
@@ -67645,9 +67984,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pt-BR.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/br/app/id6797601720",
       "app_store_cta_label": "Baixe Wordmate Lite: aprenda idiomas na App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis"
+      },
       "guide_cta_label": "Leia o guia completo",
       "publisher_disclosure": "Este conteúdo é publicado diretamente pela Lumi Studio, desenvolvedora de todos os apps apresentados.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -68026,7 +68369,8 @@
       "badge_labels": [
         "Mais",
         "Grátis para começar · desbloqueio permanente",
-        "Widget"
+        "Widget",
+        "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/pt-PT/index.html",
@@ -68034,9 +68378,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pt-PT.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/pt/app/id6794178671",
       "app_store_cta_label": "Baixe CalDaily: calculadora e temas na App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Grátis"
+      },
       "guide_cta_label": "Leia o guia completo",
       "publisher_disclosure": "Este conteúdo é publicado diretamente pela Lumi Studio, que desenvolve todas as apps apresentadas.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -69567,7 +69915,8 @@
       "badge_labels": [
         "Crianças e aprendizagem",
         "Grátis para começar · desbloqueio permanente",
-        "Offline"
+        "Offline",
+        "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/pt-PT/index.html",
@@ -69575,9 +69924,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pt-PT.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/pt/app/id6797601720",
       "app_store_cta_label": "Baixe Wordmate Lite: vocabulário na App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Grátis"
+      },
       "guide_cta_label": "Leia o guia completo",
       "publisher_disclosure": "Este conteúdo é publicado diretamente pela Lumi Studio, que desenvolve todas as apps apresentadas.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -69956,7 +70309,8 @@
       "badge_labels": [
         "Mai mult",
         "Început gratuit · deblocare pe viață",
-        "Widget"
+        "Widget",
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/ro/index.html",
@@ -69964,9 +70318,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/ro/app/id6794178671",
       "app_store_cta_label": "Descarcă CalDaily: calculator și teme din App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RON",
+        "formatted_price": "Gratuit"
+      },
       "guide_cta_label": "Citește ghidul complet",
       "publisher_disclosure": "Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -71497,7 +71855,8 @@
       "badge_labels": [
         "Copii & învățare",
         "Început gratuit · deblocare pe viață",
-        "Offline"
+        "Offline",
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/ro/index.html",
@@ -71505,9 +71864,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/ro/app/id6797601720",
       "app_store_cta_label": "Descarcă Wordmate Lite: cuvinte zilnic din App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RON",
+        "formatted_price": "Gratuit"
+      },
       "guide_cta_label": "Citește ghidul complet",
       "publisher_disclosure": "Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -71886,7 +72249,8 @@
       "badge_labels": [
         "Ещё",
         "Бесплатно начать · пожизненная разблокировка",
-        "Виджет"
+        "Виджет",
+        "App Store · Бесплатно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/ru/index.html",
@@ -71894,9 +72258,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ru.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/ru/app/id6794178671",
       "app_store_cta_label": "Установить CalDaily: калькулятор и темы в App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RUB",
+        "formatted_price": "Бесплатно"
+      },
       "guide_cta_label": "Прочитать полное руководство",
       "publisher_disclosure": "Это материал, созданный Lumi Studio, разработчиком всех перечисленных приложений.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -73427,7 +73795,8 @@
       "badge_labels": [
         "Дети и обучение",
         "Бесплатно начать · пожизненная разблокировка",
-        "Автономно"
+        "Автономно",
+        "App Store · Бесплатно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/ru/index.html",
@@ -73435,9 +73804,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ru.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/ru/app/id6797601720",
       "app_store_cta_label": "Установить Wordmate Lite: 5 слов в день в App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RUB",
+        "formatted_price": "Бесплатно"
+      },
       "guide_cta_label": "Прочитать полное руководство",
       "publisher_disclosure": "Это материал, созданный Lumi Studio, разработчиком всех перечисленных приложений.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -73816,7 +74189,8 @@
       "badge_labels": [
         "Viac",
         "Zadarmo na začiatok · doživotné odomknutie",
-        "Widget"
+        "Widget",
+        "App Store · Zadarmo"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/sk/index.html",
@@ -73824,9 +74198,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/sk/app/id6794178671",
       "app_store_cta_label": "Stiahnuť CalDaily: kalkulačka a témy v App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Zadarmo"
+      },
       "guide_cta_label": "Prečítať celý sprievodca",
       "publisher_disclosure": "Toto je materiál prvej strany publikovaný Lumi Studio, vývojárom každej uvedenej aplikácie.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -75357,7 +75735,8 @@
       "badge_labels": [
         "Deti a učenie",
         "Zadarmo na začiatok · doživotné odomknutie",
-        "Offline"
+        "Offline",
+        "App Store · Zadarmo"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/sk/index.html",
@@ -75365,9 +75744,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/sk/app/id6797601720",
       "app_store_cta_label": "Stiahnuť Wordmate Lite: slovíčka denne v App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Zadarmo"
+      },
       "guide_cta_label": "Prečítať celý sprievodca",
       "publisher_disclosure": "Toto je materiál prvej strany publikovaný Lumi Studio, vývojárom každej uvedenej aplikácie.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -75746,7 +76129,8 @@
       "badge_labels": [
         "Več",
         "Brezplačen začetek · doživljenjska odklenitev",
-        "Gradnik"
+        "Gradnik",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/sl-SI/index.html",
@@ -75754,9 +76138,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sl-SI.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/si/app/id6794178671",
       "app_store_cta_label": "Prenesite CalDaily: kalkulator in teme iz trgovine App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "To je gradivo prve roke, ki ga je objavil Lumi Studio, razvijalec vseh navedenih aplikacij.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -77287,7 +77675,8 @@
       "badge_labels": [
         "Otroci in učenje",
         "Brezplačen začetek · doživljenjska odklenitev",
-        "Brez povezave"
+        "Brez povezave",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/sl-SI/index.html",
@@ -77295,9 +77684,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sl-SI.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/si/app/id6797601720",
       "app_store_cta_label": "Prenesite Wordmate Lite: besedišče iz trgovine App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "To je gradivo prve roke, ki ga je objavil Lumi Studio, razvijalec vseh navedenih aplikacij.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -77676,7 +78069,8 @@
       "badge_labels": [
         "Mer",
         "Gratis att börja · livstidsupplåsning",
-        "Widget"
+        "Widget",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/sv/index.html",
@@ -77684,9 +78078,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/se/app/id6794178671",
       "app_store_cta_label": "Hämta CalDaily: kalkylator och teman i App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "SEK",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Läs hela guiden",
       "publisher_disclosure": "Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -79223,7 +79621,8 @@
       "badge_labels": [
         "Barn & lärande",
         "Gratis att börja · livstidsupplåsning",
-        "Offline"
+        "Offline",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/sv/index.html",
@@ -79231,9 +79630,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/se/app/id6797601720",
       "app_store_cta_label": "Hämta Wordmate Lite: Ordförråd i App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "SEK",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Läs hela guiden",
       "publisher_disclosure": "Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -79612,7 +80015,8 @@
       "badge_labels": [
         "மேலும்",
         "இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும்",
-        "விட்ஜெட்"
+        "விட்ஜெட்",
+        "App Store · இலவசம்"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/ta-IN/index.html",
@@ -79620,9 +80024,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ta-IN.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/in/app/id6794178671",
       "app_store_cta_label": "App Store-இல் CalDaily: கால்குலேட்டர்-ஐப் பெறுங்கள்",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "இலவசம்"
+      },
       "guide_cta_label": "முழு வழிகாட்டியை படிக்கவும்",
       "publisher_disclosure": "இது Lumi Studio வெளியிட்ட முதல்-பார்ட்டி தரவு, இது பட்டியலிடப்பட்ட ஒவ்வொரு செயலியின் உருவாக்குநர்.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -81153,7 +81561,8 @@
       "badge_labels": [
         "குழந்தைகள் & கற்றல்",
         "இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும்",
-        "ஆஃப்லைன்"
+        "ஆஃப்லைன்",
+        "App Store · இலவசம்"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/ta-IN/index.html",
@@ -81161,9 +81570,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ta-IN.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/in/app/id6797601720",
       "app_store_cta_label": "App Store-இல் Wordmate Lite: ஆங்கிலம் கற்க-ஐப் பெறுங்கள்",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "இலவசம்"
+      },
       "guide_cta_label": "முழு வழிகாட்டியை படிக்கவும்",
       "publisher_disclosure": "இது Lumi Studio வெளியிட்ட முதல்-பார்ட்டி தரவு, இது பட்டியலிடப்பட்ட ஒவ்வொரு செயலியின் உருவாக்குநர்.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -81542,7 +81955,8 @@
       "badge_labels": [
         "ఇంకా",
         "ఉచితంగా ప్రారంభించండి · జీవితకాల అన్లాక్",
-        "విడ్జెట్"
+        "విడ్జెట్",
+        "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/te-IN/index.html",
@@ -81550,9 +81964,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/te-IN.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/in/app/id6794178671",
       "app_store_cta_label": "App Store నుంచి CalDaily: క్యాలిక్యులేటర్ పొందండి",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ఉచితం"
+      },
       "guide_cta_label": "పూర్తి మార్గదర్శకాన్ని చదవండి",
       "publisher_disclosure": "ఇది Lumi Studio ద్వారా ప్రచురించబడిన స్వంత సంస్థ పదార్థం, ప్రతి జాబితా చేయబడిన యాప్ యొక్క అభివృద్ధికర్త.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -83083,7 +83501,8 @@
       "badge_labels": [
         "పిల్లలు & అభ్యాసం",
         "ఉచితంగా ప్రారంభించండి · జీవితకాల అన్లాక్",
-        "ఆఫ్‌లైన్"
+        "ఆఫ్‌లైన్",
+        "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/te-IN/index.html",
@@ -83091,9 +83510,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/te-IN.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/in/app/id6797601720",
       "app_store_cta_label": "App Store నుంచి Wordmate Lite: రోజూ 5 పదాలు పొందండి",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ఉచితం"
+      },
       "guide_cta_label": "పూర్తి మార్గదర్శకాన్ని చదవండి",
       "publisher_disclosure": "ఇది Lumi Studio ద్వారా ప్రచురించబడిన స్వంత సంస్థ పదార్థం, ప్రతి జాబితా చేయబడిన యాప్ యొక్క అభివృద్ధికర్త.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -83472,7 +83895,8 @@
       "badge_labels": [
         "เพิ่มเติม",
         "เริ่มใช้ฟรี · ปลดล็อกถาวร",
-        "วิดเจ็ต"
+        "วิดเจ็ต",
+        "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/th/index.html",
@@ -83480,9 +83904,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/th.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/th/app/id6794178671",
       "app_store_cta_label": "ดาวน์โหลด CalDaily: เครื่องคิดเลข บน App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี"
+      },
       "guide_cta_label": "อ่านคู่มือฉบับเต็ม",
       "publisher_disclosure": "เนื้อหานี้เผยแพร่โดยตรงจาก Lumi Studio ซึ่งเป็นผู้พัฒนาแอปทั้งหมดที่ระบุไว้",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -85013,7 +85441,8 @@
       "badge_labels": [
         "เด็ก & การเรียนรู้",
         "เริ่มใช้ฟรี · ปลดล็อกถาวร",
-        "ออฟไลน์"
+        "ออฟไลน์",
+        "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/th/index.html",
@@ -85021,9 +85450,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/th.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/th/app/id6797601720",
       "app_store_cta_label": "ดาวน์โหลด Wordmate Lite วันละ 5 คำ บน App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี"
+      },
       "guide_cta_label": "อ่านคู่มือฉบับเต็ม",
       "publisher_disclosure": "เนื้อหานี้เผยแพร่โดยตรงจาก Lumi Studio ซึ่งเป็นผู้พัฒนาแอปทั้งหมดที่ระบุไว้",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -85402,7 +85835,8 @@
       "badge_labels": [
         "Daha fazla",
         "Başlangıçta ücretsiz · ömür boyu açma",
-        "Araç takımı"
+        "Araç takımı",
+        "App Store · Ücretsiz"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/tr/index.html",
@@ -85410,9 +85844,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/tr.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/tr/app/id6794178671",
       "app_store_cta_label": "CalDaily: hesap makinesi uygulamasını App Store'dan al",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TRY",
+        "formatted_price": "Ücretsiz"
+      },
       "guide_cta_label": "Kılavuzun tamamını oku",
       "publisher_disclosure": "Bu, listelenen her uygulamanın geliştiricisi Lumi Studio tarafından yayımlanan birinci taraf materyaldir.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -86943,7 +87381,8 @@
       "badge_labels": [
         "Çocuklar & öğrenme",
         "Başlangıçta ücretsiz · ömür boyu açma",
-        "Çevrimdışı"
+        "Çevrimdışı",
+        "App Store · Ücretsiz"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/tr/index.html",
@@ -86951,9 +87390,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/tr.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/tr/app/id6797601720",
       "app_store_cta_label": "Wordmate Lite: Kelime Ezberle uygulamasını App Store'dan al",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TRY",
+        "formatted_price": "Ücretsiz"
+      },
       "guide_cta_label": "Kılavuzun tamamını oku",
       "publisher_disclosure": "Bu, listelenen her uygulamanın geliştiricisi Lumi Studio tarafından yayımlanan birinci taraf materyaldir.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -87332,7 +87775,8 @@
       "badge_labels": [
         "Ще",
         "Безкоштовно для початку · довічне розблокування",
-        "Віджет"
+        "Віджет",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/uk/index.html",
@@ -87340,9 +87784,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/uk.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/ua/app/id6794178671",
       "app_store_cta_label": "Завантажте CalDaily: калькулятор і теми з App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -88873,7 +89321,8 @@
       "badge_labels": [
         "Діти та навчання",
         "Безкоштовно для початку · довічне розблокування",
-        "Офлайн"
+        "Офлайн",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/uk/index.html",
@@ -88881,9 +89330,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/uk.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/ua/app/id6797601720",
       "app_store_cta_label": "Завантажте Wordmate Lite: вивчення мов з App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -89262,7 +89715,8 @@
       "badge_labels": [
         "مزید",
         "مفت آغاز · مستقل ان لاک",
-        "وجیٹ"
+        "وجیٹ",
+        "App Store · مفت"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/ur-PK/index.html",
@@ -89270,9 +89724,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ur-PK.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/pk/app/id6794178671",
       "app_store_cta_label": "App Store سے CalDaily: کیلکولیٹر حاصل کریں",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "PKR",
+        "formatted_price": "مفت"
+      },
       "guide_cta_label": "مکمل رہنمائی پڑھیں",
       "publisher_disclosure": "یہ مواد براہ راست Lumi Studio نے شائع کیا ہے، جو فہرست میں شامل تمام ایپس کا ڈویلپر ہے۔",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -90803,7 +91261,8 @@
       "badge_labels": [
         "بچے اور سیکھنا",
         "مفت آغاز · مستقل ان لاک",
-        "آف لائن"
+        "آف لائن",
+        "App Store · مفت"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/ur-PK/index.html",
@@ -90811,9 +91270,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ur-PK.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/pk/app/id6797601720",
       "app_store_cta_label": "App Store سے Wordmate Lite: روزانہ الفاظ حاصل کریں",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "PKR",
+        "formatted_price": "مفت"
+      },
       "guide_cta_label": "مکمل رہنمائی پڑھیں",
       "publisher_disclosure": "یہ مواد براہ راست Lumi Studio نے شائع کیا ہے، جو فہرست میں شامل تمام ایپس کا ڈویلپر ہے۔",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -91192,7 +91655,8 @@
       "badge_labels": [
         "Khác",
         "Bắt đầu miễn phí · mở khóa vĩnh viễn",
-        "Tiện ích"
+        "Tiện ích",
+        "App Store · Miễn phí"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/vi/index.html",
@@ -91200,9 +91664,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/vi.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/vn/app/id6794178671",
       "app_store_cta_label": "Tải CalDaily: máy tính và chủ đề trên App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "VND",
+        "formatted_price": "Miễn phí"
+      },
       "guide_cta_label": "Đọc toàn bộ hướng dẫn",
       "publisher_disclosure": "Tài liệu này do Lumi Studio trực tiếp công bố; Lumi Studio là nhà phát triển của tất cả ứng dụng được liệt kê.",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -92733,7 +93201,8 @@
       "badge_labels": [
         "Trẻ em & học tập",
         "Bắt đầu miễn phí · mở khóa vĩnh viễn",
-        "Ngoại tuyến"
+        "Ngoại tuyến",
+        "App Store · Miễn phí"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/vi/index.html",
@@ -92741,9 +93210,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/vi.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/vn/app/id6797601720",
       "app_store_cta_label": "Tải Wordmate Lite 5 từ mỗi ngày trên App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "VND",
+        "formatted_price": "Miễn phí"
+      },
       "guide_cta_label": "Đọc toàn bộ hướng dẫn",
       "publisher_disclosure": "Tài liệu này do Lumi Studio trực tiếp công bố; Lumi Studio là nhà phát triển của tất cả ứng dụng được liệt kê.",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -93122,7 +93595,8 @@
       "badge_labels": [
         "更多",
         "免费开始使用 · 永久解锁",
-        "小组件"
+        "小组件",
+        "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/zh-Hans/index.html",
@@ -93130,9 +93604,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hans.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/cn/app/id6794178671",
       "app_store_cta_label": "在 App Store 获取 CalDaily 计算器与主题",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -94628,7 +95106,8 @@
       "badge_labels": [
         "儿童与学习",
         "免费开始使用 · 永久解锁",
-        "离线"
+        "离线",
+        "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/zh-Hans/index.html",
@@ -94636,9 +95115,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hans.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/cn/app/id6797601720",
       "app_store_cta_label": "在 App Store 获取 Wordmate Lite 每天五个单词",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -95023,7 +95506,8 @@
       "badge_labels": [
         "更多",
         "免費開始 · 永久解鎖",
-        "主畫面小工具"
+        "主畫面小工具",
+        "App Store · 免費"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/zh-Hant/index.html",
@@ -95031,9 +95515,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/tw/app/id6794178671",
       "app_store_cta_label": "在 App Store 取得 CalDaily 計算機與主題",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費"
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -96621,7 +97109,8 @@
       "badge_labels": [
         "兒童與學習",
         "免費開始 · 永久解鎖",
-        "離線使用"
+        "離線使用",
+        "App Store · 免費"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/zh-Hant/index.html",
@@ -96629,9 +97118,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/tw/app/id6797601720",
       "app_store_cta_label": "在 App Store 取得 Wordmate Lite 每天五個單字",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費"
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",

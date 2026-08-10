@@ -2,7 +2,7 @@
 title: "Snapport Lite — Skapa ID-foton hemma | iOS App"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/sv/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

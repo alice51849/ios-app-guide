@@ -2,7 +2,7 @@
 title: "Wordmate Lite: nauka słówek — Minuta dziennie, 5 nowych słów | iOS App"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/pl/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ Chcesz wrócić do nauki języka, ale wieczór znowu mija i nie przybyło ani je
 - Dzieci i nauka
 - Darmowe na start · dożywotni dostęp
 - Offline
+- App Store · Bezpłatnie
 
-[Pobierz Wordmate Lite: nauka słówek z App Store](https://apps.apple.com/app/id6797601720)
+[Pobierz Wordmate Lite: nauka słówek z App Store](https://apps.apple.com/pl/app/id6797601720)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/wordmatelite.html)
 

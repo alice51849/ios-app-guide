@@ -2,7 +2,7 @@
 title: "iPhone சேமிப்பிடத்தை விடுவிக்க சிறந்த பயன்பாடு, நகல் புகைப்படங்களை நீக்குதல்"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/ta-IN/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

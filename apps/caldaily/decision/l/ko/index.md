@@ -2,7 +2,7 @@
 title: "CalDaily 계산기 및 테마 — 위젯, 도구, 기록 정리 | iOS App"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/ko/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ publisher: "Lumi Studio"
 - 더 보기
 - 무료로 시작 · 평생 잠금 해제
 - 위젯
+- App Store · 무료
 
-[App Store에서 CalDaily 계산기 및 테마 받기](https://apps.apple.com/app/id6794178671)
+[App Store에서 CalDaily 계산기 및 테마 받기](https://apps.apple.com/kr/app/id6794178671)
 
 [전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/caldaily.html)
 

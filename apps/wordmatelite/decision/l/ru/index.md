@@ -2,7 +2,7 @@
 title: "Wordmate Lite: 5 слов в день — Учим языки без зубрёжки | iOS App"
 lang: "ru"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/ru/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ publisher: "Lumi Studio"
 - Дети и обучение
 - Бесплатно начать · пожизненная разблокировка
 - Автономно
+- App Store · Бесплатно
 
-[Установить Wordmate Lite: 5 слов в день в App Store](https://apps.apple.com/app/id6797601720)
+[Установить Wordmate Lite: 5 слов в день в App Store](https://apps.apple.com/ru/app/id6797601720)
 
 [Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/wordmatelite.html)
 

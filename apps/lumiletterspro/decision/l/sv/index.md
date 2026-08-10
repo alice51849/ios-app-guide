@@ -2,7 +2,7 @@
 title: "bästa kompletta fonetikappen för hemundervisning i förskoleklass"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/sv/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"

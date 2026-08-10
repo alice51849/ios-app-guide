@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/terms/" xmlns:integrity="https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.metadata.json#">
   <id>https://alice51849.github.io/ios-app-guide/opds/family-travel-observation-passport.xml</id>
   <title>Family Travel Observation Passport OER Catalog</title>
-  <updated>2026-07-11T00:00:00Z</updated>
+  <updated>2026-08-10T00:00:00Z</updated>
   <author>
     <name>Lumi Apps - iOS App Guide</name>
     <uri>https://alice51849.github.io/ios-app-guide</uri>
@@ -15,7 +15,7 @@
   <entry>
     <id>https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.html#resource</id>
     <title xml:lang="en">Free Family Travel Observation Passport</title>
-    <updated>2026-07-11T00:00:00Z</updated>
+    <updated>2026-08-10T00:00:00Z</updated>
     <published>2026-07-11T00:00:00Z</published>
     <author>
       <name>Lumi Apps - iOS App Guide</name>
@@ -32,17 +32,17 @@
     <link rel="alternate" href="https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.html" type="text/html" title="Free Family Travel Observation Passport" />
     <link rel="describedby" href="https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.metadata.json" type="application/ld+json" title="Schema.org LearningResource metadata" />
     <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" type="text/html" title="CC BY 4.0" />
-    <link rel="http://opds-spec.org/acquisition/open-access" href="https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport-en-a4.pdf" type="application/pdf" title="A4 PDF" length="27869">
-      <integrity:checksum algorithm="sha-256" encoding="hex">185193cee7dc165c9e5162bca6b6cd9500130b91853527af862e661f296e38fb</integrity:checksum>
+    <link rel="http://opds-spec.org/acquisition/open-access" href="https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport-en-a4.pdf" type="application/pdf" title="A4 PDF" length="27840">
+      <integrity:checksum algorithm="sha-256" encoding="hex">61346df9f383c628aaa201aabb546e9fc669f9d89fbce2dbe67f17b320d1e4f5</integrity:checksum>
     </link>
-    <link rel="http://opds-spec.org/acquisition/open-access" href="https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport-en-letter.pdf" type="application/pdf" title="US Letter PDF" length="27900">
-      <integrity:checksum algorithm="sha-256" encoding="hex">e9cca24d577fb7a71be5a14ac33711c225ac2886224d8c2877992688ba185c2f</integrity:checksum>
+    <link rel="http://opds-spec.org/acquisition/open-access" href="https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport-en-letter.pdf" type="application/pdf" title="US Letter PDF" length="27871">
+      <integrity:checksum algorithm="sha-256" encoding="hex">1810058c2fa8b12b0c9317a86007911377e7f2bd63e743fafb30dd13ecad278a</integrity:checksum>
     </link>
   </entry>
   <entry>
     <id>https://alice51849.github.io/ios-app-guide/zh-Hant/tools/family-travel-observation-passport.html#resource</id>
     <title xml:lang="zh-Hant">免費親子旅行觀察護照</title>
-    <updated>2026-07-11T00:00:00Z</updated>
+    <updated>2026-08-10T00:00:00Z</updated>
     <published>2026-07-11T00:00:00Z</published>
     <author>
       <name>Lumi Apps - iOS App Guide</name>
@@ -59,11 +59,11 @@
     <link rel="alternate" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/family-travel-observation-passport.html" type="text/html" title="免費親子旅行觀察護照" />
     <link rel="describedby" href="https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.metadata.json" type="application/ld+json" title="Schema.org LearningResource metadata" />
     <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" type="text/html" title="CC BY 4.0" />
-    <link rel="http://opds-spec.org/acquisition/open-access" href="https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport-zh-hant-a4.pdf" type="application/pdf" title="A4 PDF" length="32697">
-      <integrity:checksum algorithm="sha-256" encoding="hex">23f05aaa5869ab2894397b452955922e22d2568d806f1ad4bf61a14c19f7fa59</integrity:checksum>
+    <link rel="http://opds-spec.org/acquisition/open-access" href="https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport-zh-hant-a4.pdf" type="application/pdf" title="A4 PDF" length="32668">
+      <integrity:checksum algorithm="sha-256" encoding="hex">d868361e004c6f74712e31eee3513c3cca376ac884890fcb7206fcd48e71786d</integrity:checksum>
     </link>
-    <link rel="http://opds-spec.org/acquisition/open-access" href="https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport-zh-hant-letter.pdf" type="application/pdf" title="US Letter PDF" length="32692">
-      <integrity:checksum algorithm="sha-256" encoding="hex">1a670e48f08a2d4af25fac7978eb46617a72b3de4b7aff62d5903621ab6fd74b</integrity:checksum>
+    <link rel="http://opds-spec.org/acquisition/open-access" href="https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport-zh-hant-letter.pdf" type="application/pdf" title="US Letter PDF" length="32663">
+      <integrity:checksum algorithm="sha-256" encoding="hex">7dfa502825cae0a590c646bd5fd5d2c9fc5243736ed1890764c7254602d3b176</integrity:checksum>
     </link>
   </entry>
 </feed>

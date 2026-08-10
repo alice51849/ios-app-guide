@@ -2,7 +2,7 @@
 title: "CalDaily : calculatrice — Widget, outils, 100 thèmes | iOS App"
 lang: "fr-CA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/fr-CA/index.html"
-modified: "2026-08-07"
+modified: "2026-08-10"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,9 @@ Une calculatrice que vous gardez, parce qu'elle se souvient du contexte de chaqu
 - Plus
 - Gratuit au départ · déverrouillage définitif
 - Widget
+- App Store · Gratuit
 
-[Obtenir CalDaily : calculatrice sur l'App Store](https://apps.apple.com/app/id6794178671)
+[Obtenir CalDaily : calculatrice sur l'App Store](https://apps.apple.com/ca/app/id6794178671)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-CA/caldaily.html)
 

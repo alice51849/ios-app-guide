@@ -191,16 +191,24 @@ def main():
         env=env,
     )
     require([PY, os.path.join(HERE, "add_related_answers.py")], env=env)
-    require(
-        [PY, os.path.join(HERE, "add_related_answers.py"), "--locale", "zh-Hant"],
-        env=env,
-    )
+    # 每個官方語系的 answers 之間也要有同主題橫向連結,不能只有 en/zh-Hant。
+    # 沒有 answers 目錄的語系會自己 no-op。
+    for locale in OFFICIAL_LOCALES:
+        require(
+            [PY, os.path.join(HERE, "add_related_answers.py"),
+             "--locale", locale],
+            env=env,
+        )
     require([PY, os.path.join(HERE, "add_related_tools.py")], env=env)
     for locale in OFFICIAL_LOCALES:
         require(
             [PY, os.path.join(HERE, "add_related_tools.py"), "--locale", locale],
             env=env,
         )
+    # App 頁 → 該 App 的 answers/guides(每頁 3–8 條)。跑在 answers/guides
+    # 產生器之後才有東西可以連;只加站內連結,不動 App Store 連結,所以不會
+    # 影響下游「一頁一個 App ID」的身份判定。
+    require([PY, os.path.join(HERE, "gen_app_page_related.py")], env=env)
     # 工具頁的「新工具上線通知」訂閱。跑在工具頁產生器之後,否則會被覆蓋。
     # tool_email_capture.json 沒填 endpoint 時它只會移除舊區塊,不會上線壞表單。
     require([PY, os.path.join(HERE, "gen_tool_email_capture.py")], env=env)
@@ -232,6 +240,10 @@ def main():
     )
     require([PY, os.path.join(HERE, "gen_publisher_disclosures.py")], env=env)
     require([PY, os.path.join(HERE, "gen_guide_design.py")], env=env)
+    # 免費版優先導流:品類需求頁的商店 CTA 換成免費/Lite 版(app_pairs.py 11 對)。
+    # 必須跑在 normalize/decision-cards/banner/QR/attribution 鏈之前,讓下游
+    # 依「換門後」的連結重建 QR 與歸因。
+    require([PY, os.path.join(HERE, "gen_free_first_links.py")], env=env)
     require([PY, os.path.join(HERE, "gen_app_store_facts.py")], env=env)
     require([PY, os.path.join(HERE, "app_install_decision_routes.py")], env=env)
     require([PY, os.path.join(HERE, "normalize_app_store_links.py")], env=env)
@@ -244,6 +256,10 @@ def main():
     # locales in the index, then attribute every outbound store link.  These run
     # after the page generators on purpose — editing built pages outside the
     # pipeline is silently undone by the next publish.
+    # 連結圖補完:把只存在於 sitemap 的孤兒頁接回首頁 3 次點擊內。必須跑在
+    # 所有頁面產生器之後(才掃得到全部頁),而且要在 build_pages_i18n 重寫
+    # 語系首頁之後,否則注入的導覽會被蓋掉。
+    require([PY, os.path.join(HERE, "gen_link_hubs.py")], env=env)
     require([PY, os.path.join(HERE, "gen_store_reach.py")], env=env)
     require([PY, os.path.join(HERE, "gen_locale_indexation.py")], env=env)
     require([PY, os.path.join(HERE, "gen_store_attribution.py")], env=env)

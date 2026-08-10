@@ -38,6 +38,22 @@ HEADINGS = {
     "pt-BR": "Respostas relacionadas", "pt-PT": "Respostas relacionadas",
     "it": "Risposte correlate", "ru": "\u041f\u043e\u0445\u043e\u0436\u0438\u0435 \u043e\u0442\u0432\u0435\u0442\u044b",
     "ms": "Jawapan berkaitan", "pl": "Powi\u0105zane odpowiedzi", "ar-SA": "\u0625\u062c\u0627\u0628\u0627\u062a \u0630\u0627\u062a \u0635\u0644\u0629",
+    # \u5176\u9918\u5b98\u65b9\u8a9e\u7cfb:\u5c11\u4e86\u9019\u4e9b\u5b57,\u8a72\u8a9e\u7cfb\u7684\u9801\u9762\u6703\u639b\u4e00\u500b\u82f1\u6587\u6a19\u984c(\u7ad9\u4e0a\u5df2\u7d93\u6709
+    # 41.8% \u7684\u9801\u662f\u300c\u7ffb\u8b6f\u904e\u4f46\u5176\u5be6\u9084\u662f\u82f1\u6587\u300d,\u5225\u518d\u591a\u88fd\u9020\u4e00\u6279)\u3002
+    "th": "\u0e04\u0e33\u0e16\u0e32\u0e21\u0e17\u0e35\u0e48\u0e40\u0e01\u0e35\u0e48\u0e22\u0e27\u0e02\u0e49\u0e2d\u0e07",
+    "vi": "C\u00e2u tr\u1ea3 l\u1eddi li\u00ean quan",
+    "id": "Jawaban terkait", "tr": "\u0130lgili yan\u0131tlar",
+    "nl-NL": "Gerelateerde antwoorden", "sv": "Relaterade svar",
+    "da": "Relaterede svar", "no": "Relaterte svar", "fi": "Aiheeseen liittyv\u00e4t vastaukset",
+    "cs": "Souvisej\u00edc\u00ed odpov\u011bdi", "sk": "S\u00favisiace odpovede",
+    "hu": "Kapcsol\u00f3d\u00f3 v\u00e1laszok", "ro": "R\u0103spunsuri conexe",
+    "hr": "Povezani odgovori", "sl-SI": "Sorodni odgovori",
+    "uk": "\u041f\u043e\u0432'\u044f\u0437\u0430\u043d\u0456 \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0456",
+    "el": "\u03a3\u03c7\u03b5\u03c4\u03b9\u03ba\u03ad\u03c2 \u03b1\u03c0\u03b1\u03bd\u03c4\u03ae\u03c3\u03b5\u03b9\u03c2",
+    "he": "\u05ea\u05e9\u05d5\u05d1\u05d5\u05ea \u05e7\u05e9\u05d5\u05e8\u05d5\u05ea",
+    "ca": "Respostes relacionades",
+    "hi": "\u0938\u0902\u092c\u0902\u0927\u093f\u0924 \u0909\u0924\u094d\u0924\u0930",
+    "fr-CA": "R\u00e9ponses associ\u00e9es",
 }
 
 def appid(h):

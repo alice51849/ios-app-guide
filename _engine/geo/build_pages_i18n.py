@@ -1734,6 +1734,11 @@ def localized_directory_schema_item(record):
             "url": record["store_url"],
             "availability": "https://schema.org/InStock",
         }
+        # No aggregateRating markup. Even when the numbers come from the
+        # real App Store listing, this is the publisher marking up a
+        # rating for its own product, which Google treats as a
+        # self-serving review snippet. Kept out of the JSON-LD.
+        item.pop("aggregateRating", None)
     return item
 
 
@@ -1902,6 +1907,61 @@ DIRECTORY_SCRIPT = r"""<script>
 </script>"""
 
 
+# 各語系首頁通往內容區的導覽。在此之前 answers / tools / alternatives 等
+# 兩萬多頁只出現在 sitemap,從首頁完全點不到 —— 搜尋引擎對這種「孤兒頁」
+# 會大幅降權,這正是站台頁數龐大卻幾乎沒有自然流量的結構性原因。
+SECTION_NAV_LABELS = {
+    "answers": {
+        "en": "Answers", "zh-Hant": "問題解答", "zh-Hans": "问题解答",
+        "ja": "回答", "ko": "답변", "de": "Antworten", "fr": "Réponses",
+        "es": "Respuestas", "pt": "Respostas", "it": "Risposte",
+        "ru": "Ответы", "ar": "إجابات", "th": "คำตอบ", "vi": "Giải đáp",
+        "id": "Jawaban", "ms": "Jawapan", "tr": "Yanıtlar", "pl": "Odpowiedzi",
+    },
+    "tools": {
+        "en": "Free tools", "zh-Hant": "免費工具", "zh-Hans": "免费工具",
+        "ja": "無料ツール", "ko": "무료 도구", "de": "Kostenlose Tools",
+        "fr": "Outils gratuits", "es": "Herramientas gratis",
+        "pt": "Ferramentas gratuitas", "it": "Strumenti gratuiti",
+        "ru": "Бесплатные инструменты", "ar": "أدوات مجانية",
+        "th": "เครื่องมือฟรี", "vi": "Công cụ miễn phí",
+        "id": "Alat gratis", "ms": "Alat percuma", "tr": "Ücretsiz araçlar",
+        "pl": "Darmowe narzędzia",
+    },
+    "alternatives": {
+        "en": "Alternatives", "zh-Hant": "替代方案", "zh-Hans": "替代方案",
+        "ja": "代替アプリ", "ko": "대안 앱", "de": "Alternativen",
+        "fr": "Alternatives", "es": "Alternativas", "pt": "Alternativas",
+        "it": "Alternative", "ru": "Альтернативы", "ar": "بدائل",
+        "th": "ทางเลือก", "vi": "Lựa chọn thay thế", "id": "Alternatif",
+        "ms": "Alternatif", "tr": "Alternatifler", "pl": "Alternatywy",
+    },
+}
+
+
+def locale_section_nav(locale):
+    """只連該語系實際存在的區塊索引,避免產生 404。"""
+    e = html.escape
+    lang = base_lang(locale)
+    items = []
+    for section, labels in SECTION_NAV_LABELS.items():
+        if not os.path.exists(os.path.join(PAGES, locale, section, "index.html")):
+            continue
+        label = labels.get(locale) or labels.get(lang) or labels["en"]
+        items.append(
+            f'      <li><a href="{SITE}/{locale}/{section}/index.html">'
+            f'{e(label)}</a></li>'
+        )
+    if not items:
+        return ""
+    rows = "\n".join(items)
+    return (
+        '  <nav class="section-nav" aria-label="Sections">\n'
+        f'    <ul>\n{rows}\n    </ul>\n'
+        '  </nav>\n'
+    )
+
+
 def build_locale_index(locale, keys, locales):
     ui = get_ui(locale)
     finder_ui = get_finder_ui(locale)
@@ -1955,7 +2015,7 @@ def build_locale_index(locale, keys, locales):
 </head><body><main>
   <h1>{e(ui["dir_dir"])}</h1>
   <p class="intro">{e(ui["dir_lead"])}</p>
-{catalog_link}  <form class="finder-shell" role="search" data-local-app-finder hidden>
+{catalog_link}{locale_section_nav(locale)}  <form class="finder-shell" role="search" data-local-app-finder hidden>
     <label class="sr-only" for="app-search">{e(finder_ui["find"])}</label>
     <div class="finder-field">
       <svg class="finder-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2" d="m20 20-4.4-4.4m2.4-5.1a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
@@ -1989,6 +2049,15 @@ def build_root_index(locales):
 </head><body><main>
   <h1>iOS Apps — choose your language</h1>
   <p><a href="{SITE}/apps/index.html">Browse all verified apps by category</a></p>
+  <nav aria-label="Sections">
+    <ul>
+      <li><a href="{SITE}/answers/index.html">Answers — buying guides by question</a></li>
+      <li><a href="{SITE}/hubs/index.html">Topic hubs</a></li>
+      <li><a href="{SITE}/tools/index.html">Free browser tools</a></li>
+      <li><a href="{SITE}/alternatives/index.html">App alternatives</a></li>
+      <li><a href="{SITE}/about.html">About this site</a></li>
+    </ul>
+  </nav>
   <ul>
 {lang_links}
   </ul>

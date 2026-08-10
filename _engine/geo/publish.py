@@ -205,10 +205,6 @@ def main():
             [PY, os.path.join(HERE, "add_related_tools.py"), "--locale", locale],
             env=env,
         )
-    # App 頁 → 該 App 的 answers/guides(每頁 3–8 條)。跑在 answers/guides
-    # 產生器之後才有東西可以連;只加站內連結,不動 App Store 連結,所以不會
-    # 影響下游「一頁一個 App ID」的身份判定。
-    require([PY, os.path.join(HERE, "gen_app_page_related.py")], env=env)
     # 工具頁的「新工具上線通知」訂閱。跑在工具頁產生器之後,否則會被覆蓋。
     # tool_email_capture.json 沒填 endpoint 時它只會移除舊區塊,不會上線壞表單。
     require([PY, os.path.join(HERE, "gen_tool_email_capture.py")], env=env)
@@ -256,6 +252,12 @@ def main():
     # locales in the index, then attribute every outbound store link.  These run
     # after the page generators on purpose — editing built pages outside the
     # pipeline is silently undone by the next publish.
+    # App 頁 → 該 App 的 answers/guides(每頁 3–8 條)。**必須跑在
+    # gen_free_first_links / normalize_app_store_links 之後**:那兩支會把
+    # 商店連結換成免費版,頁面的 App Store ID 會變,提早跑就會挑到舊 App 的
+    # 問答,下一輪再被改掉。只加站內連結,不動商店連結,所以不影響下游
+    # 「一頁一個 App ID」的身份判定。
+    require([PY, os.path.join(HERE, "gen_app_page_related.py")], env=env)
     # 連結圖補完:把只存在於 sitemap 的孤兒頁接回首頁 3 次點擊內。必須跑在
     # 所有頁面產生器之後(才掃得到全部頁),而且要在 build_pages_i18n 重寫
     # 語系首頁之後,否則注入的導覽會被蓋掉。

@@ -96,6 +96,23 @@ def app_ids(source):
     return set(APP_ID_RE.findall(source))
 
 
+def primary_app_id(source):
+    """頁面的主 App = 出現次數最多的 App Store ID(平手取小的)。
+
+    不能用「剛好只有一個 ID 才算數」:gen_store_reach / gen_store_attribution
+    跑在後面,會替某些頁補上第二個商店連結,那條規則會讓同一頁在兩次發布之間
+    一下算數、一下不算數,產出的相關連結就跟著加了又刪(2026-08-08 量到 7 頁
+    在互翻)。取最高票的 ID 對「多一條次要連結」免疫。
+    """
+    ids = APP_ID_RE.findall(source)
+    if not ids:
+        return None
+    counts = {}
+    for value in ids:
+        counts[value] = counts.get(value, 0) + 1
+    return min(counts, key=lambda k: (-counts[k], int(k)))
+
+
 def base_lang(locale):
     return locale.split("-")[0]
 
@@ -118,16 +135,14 @@ def collect(locale):
                 continue
             path = os.path.join(folder, name)
             source = read(path)
-            ids = app_ids(source)
-            if len(ids) != 1:
+            app_id = primary_app_id(source)
+            if not app_id:
                 continue
             title = text_of(source, H1_RE) or text_of(source, TITLE_RE)
             if not title:
                 continue
             url = f"{SITE}/{locale}/{section}/{name}"
-            out.setdefault(next(iter(ids)), []).append(
-                (url, title, tokens(title))
-            )
+            out.setdefault(app_id, []).append((url, title, tokens(title)))
     return out
 
 
@@ -181,10 +196,13 @@ def pick_related(source, url_self, pool, limit):
     seed = tokens(
         text_of(source, TITLE_RE) + " " + text_of(source, H1_RE)
     )
-    linked = {html.unescape(h) for h in HREF_RE.findall(BLOCK.sub("", source))}
+    # 刻意**不**排除「頁面上已經連過的 URL」:那個集合會被跑在後面的
+    # gen_store_reach / gen_store_attribution 等產生器改動,拿它當輸入會讓
+    # 這裡每輪選出不同的 3–8 條,兩支產生器互相翻頁永遠不收斂。多一條重複
+    # 連結沒有壞處,不穩定才有。
     scored = []
     for url, title, toks in pool:
-        if url == url_self or url in linked:
+        if url == url_self:
             continue
         scored.append((len(seed & toks), -len(title), url, title))
     scored.sort(reverse=True)
@@ -205,10 +223,10 @@ def process_locale(locale, state):
             continue
         path = os.path.join(folder, name)
         source = read(path)
-        ids = app_ids(source)
-        if len(ids) != 1:
+        app_id = primary_app_id(source)
+        if not app_id:
             continue
-        pool = pool_by_app.get(next(iter(ids)), [])
+        pool = pool_by_app.get(app_id, [])
         url_self = f"{SITE}/{locale}/{name}"
         related = pick_related(source, url_self, pool, MAX_LINKS)
         if len(related) < MIN_LINKS:
@@ -228,10 +246,10 @@ def process_hubs(state):
             continue
         path = os.path.join(folder, name)
         source = read(path)
-        ids = app_ids(source)
-        if len(ids) != 1:
+        app_id = primary_app_id(source)
+        if not app_id:
             continue
-        pool = pool_by_app.get(next(iter(ids)), [])
+        pool = pool_by_app.get(app_id, [])
         linked = {
             html.unescape(h) for h in HREF_RE.findall(BLOCK.sub("", source))
         }
@@ -256,13 +274,13 @@ def collect_root_answers():
         if not name.endswith(".html") or name == "index.html":
             continue
         source = read(os.path.join(folder, name))
-        ids = app_ids(source)
-        if len(ids) != 1:
+        app_id = primary_app_id(source)
+        if not app_id:
             continue
         title = text_of(source, H1_RE) or text_of(source, TITLE_RE)
         if not title:
             continue
-        out.setdefault(next(iter(ids)), []).append(
+        out.setdefault(app_id, []).append(
             (f"{SITE}/answers/{name}", title, tokens(title))
         )
     return out

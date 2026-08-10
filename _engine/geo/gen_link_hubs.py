@@ -278,6 +278,19 @@ STYLE = (
 )
 
 
+def feed_discovery_block():
+    """gen_feed.ensure_site_feed_discovery() 會把 feed 探索連結塞進
+    `pages/*/*.html` 的 </head> 前——我們的 browse.html 正好落在它的範圍。
+    自己先寫出一模一樣的三行,gen_feed 才會判定「已經有了」而不改動;
+    否則兩支產生器每輪互相加/刪這三行,永遠不會收斂。
+    """
+    try:
+        from gen_feed import feed_discovery_links
+    except Exception:
+        return ""
+    return feed_discovery_links() + "\n"
+
+
 def base_lang(locale):
     return locale.split("-")[0]
 
@@ -427,7 +440,7 @@ def render_browse(parent, locale, groups, page_no, page_urls, parent_index_url):
         f"<title>{e(title)}{e(suffix)} | iOS</title>\n"
         f'<meta name="description" content="{e(lead)}">\n'
         f'<link rel="canonical" href="{e(canonical, quote=True)}">\n'
-        f"{STYLE}\n</head><body><main>\n"
+        f"{STYLE}\n{feed_discovery_block()}</head><body><main>\n"
         f"{up}"
         f"  <h1>{e(title)}{e(suffix)}</h1>\n"
         f'  <p class="lead">{e(lead)}</p>\n'
@@ -467,6 +480,13 @@ def splice(source, block):
     idx = source.rfind("</main>")
     if idx != -1:
         cut = idx + len("</main>")
+        return source[:cut] + block + source[cut:]
+    # 沒有 </main> 的頁(例如 data/index.html)不能退回「</body> 之前」:
+    # gen_store_reach 也把它的區塊接在檔尾,兩邊搶同一個錨點就會每輪對調。
+    # 改成接在 <body> 開標籤之後——那個位置沒有別人在用。
+    match = re.search(r"<body\b[^>]*>", source, re.I)
+    if match:
+        cut = match.end()
         return source[:cut] + block + source[cut:]
     idx = source.rfind("</body>")
     if idx == -1:

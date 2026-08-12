@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>백색소음·핑크노이즈·브라운노이즈 재생기 — 무료, 설치 없이, 수면 타이머 포함</title>
+<meta name="description" content="브라우저에서 직접 생성하는 백색소음, 핑크노이즈, 브라운노이즈. 음량 조절과 마지막 30초에 서서히 줄어드는 수면 타이머 제공. 가입도 광고도 없습니다.">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/ko/tools/white-noise-generator.html">
+<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/white-noise-generator.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/white-noise-generator.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/tools/white-noise-generator.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tools/white-noise-generator.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/white-noise-generator.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/white-noise-generator.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="백색소음 재생">
+<meta property="og:description" content="브라우저에서 직접 생성하는 백색소음, 핑크노이즈, 브라운노이즈. 음량 조절과 마지막 30초에 서서히 줄어드는 수면 타이머 제공. 가입도 광고도 없습니다.">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/ko/tools/white-noise-generator.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#3d3223;--muted:#8a7a5f;--line:#e9dcc3;--paper:#fff;--bg:#faf3e4;--brand:#9a6b16;--gold:#c8922a;--soft:#fdf6e8;--good:#2e7d4f;--bad:#b3452e;--warn:#fff6d9;--shadow:0 22px 60px rgba(122,90,35,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 88% 0,#fff 0,var(--bg) 55%,#f3e6cd 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:#8a5c10}.wrap{width:min(1080px,calc(100% - 30px));margin:auto}
+.top{position:sticky;top:0;z-index:8;background:#fffdf8f2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
+.nav{min-height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}
+.hero{padding:56px 0 26px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--brand);white-space:nowrap}
+.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}
+.hero h1{font-size:clamp(32px,5.6vw,56px);line-height:1.06;letter-spacing:-.03em;margin:.3em 0 .22em}
+.lead{font-size:clamp(17px,2.2vw,20px);color:var(--muted);margin:0}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.tool,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow)}
+.tool{padding:clamp(20px,4vw,34px);margin:14px auto 28px}
+.tool h2,.card h2,.app-card h2{font-size:clamp(22px,3.4vw,31px);line-height:1.15;margin:0 0 6px}
+.intro{color:var(--muted);margin:0 0 8px}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--brand);margin-bottom:6px;white-space:nowrap}
+select,input,button,textarea{font:inherit;color:var(--ink)}
+select,input:not([type=range]):not([type=file]),textarea{width:100%;border:1px solid #dcc9a4;border-radius:13px;background:#fff;padding:10px 12px}
+select,input:not([type=range]):not([type=file]){min-height:46px}
+textarea{min-height:74px;resize:vertical}
+.button{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--gold));color:#fff;text-decoration:none;font-weight:850;padding:12px 19px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(154,107,22,.24)}
+.button.ghost{background:#fff;color:var(--brand);border:1px solid var(--line);box-shadow:none}
+.button[disabled]{opacity:.45;cursor:not-allowed}
+.results{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin-top:18px}
+.result{background:var(--soft);border:1px solid #ecd9b4;border-radius:16px;padding:13px;min-width:0}
+.result strong{display:block;font-size:12px;color:#96793d;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.result span{display:block;font-size:16px;font-weight:780;margin-top:5px;white-space:nowrap;overflow-x:auto}
+.result.ok span{color:var(--good)}.result.err span{color:var(--bad)}
+.note{background:var(--warn);border:1px solid #ead9a7;border-radius:15px;padding:12px 15px;margin:14px 0 0;font-size:14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:28px}
+.card,.app-card{padding:clamp(20px,3.4vw,28px)}.card.wide{grid-column:1/-1}
+.card ul,.card ol{padding-left:22px;margin:8px 0}.card li{margin:7px 0}
+.app-card{margin:0 auto 34px;background:linear-gradient(135deg,#fffdf7,#f7ecd6)}
+.app-card .button{margin-top:8px}
+.faq{margin-bottom:28px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}
+.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radius:14px;background:#fff;touch-action:none}
+.filedrop{border:2px dashed #dcc9a4;border-radius:18px;padding:26px;text-align:center;background:var(--soft);margin-top:14px}
+.filedrop input{width:auto}
+.footer{background:#4a3a1e;color:#f6eeda;text-align:center;padding:26px 0}
+.footer a{color:#f0ddb4}
+.small{font-size:13px;color:var(--muted)}
+@media(max-width:900px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.controls,.results{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1080px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+@media print{.top,.hero,.app-card,.footer,.faq,.grid{display:none!important}body{background:#fff}.tool{box-shadow:none;border:0}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"백색소음 재생","description":"브라우저에서 직접 생성하는 백색소음, 핑크노이즈, 브라운노이즈. 음량 조절과 마지막 30초에 서서히 줄어드는 수면 타이머 제공. 가입도 광고도 없습니다.","url":"https://alice51849.github.io/ios-app-guide/ko/tools/white-noise-generator.html","inLanguage":"ko","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"HealthApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["백색·핑크·브라운 소음 실시간 합성","청감에 맞춘 음량 곡선","30초 페이드아웃 수면 타이머","페이지 로드 후 오프라인 동작"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ko","mainEntity":[{"@type":"Question","name":"백색·핑크·브라운 소음의 실제 차이는?","acceptedAnswer":{"@type":"Answer","text":"주파수에 대한 에너지 기울기입니다. 백색은 평탄해서 '쉬-' 하는 소리, 핑크는 옥타브당 약 −3 dB로 고른 빗소리, 브라운은 약 −6 dB로 멀리서 나는 폭포 소리에 가깝습니다. 이 페이지에서 바꿔 보면 바로 알 수 있습니다."}},{"@type":"Question","name":"화면을 끄면 계속 재생되나요?","acceptedAnswer":{"@type":"Answer","text":"스마트폰에서는 화면이 꺼지거나 앱을 전환하면 브라우저 탭이 보통 정지·일시중단됩니다. 이는 이 페이지 설정이 아니라 운영체제 규칙이며, 설치형 앱만 우회할 수 있습니다."}},{"@type":"Question","name":"데이터를 사용하나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 소리는 기기에서 생성됩니다. 페이지를 한 번 불러온 뒤에는 완전히 오프라인으로 쓸 수 있습니다."}}]}</script>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="index.html">← 무료 도구</a><a href="https://alice51849.github.io/ios-app-guide/ko/" >iOS App Guide</a></div></header>
+<section class="hero wrap">
+<span class="eyebrow">브라우저에서 실시간 생성 · 수면 타이머</span>
+<h1>백색소음 재생</h1>
+<p class="lead">짧은 음원을 반복 재생하는 것이 아니라 그 자리에서 합성한 세 가지 소음. 타이머는 마지막 30초 동안 서서히 줄어들어 갑자기 끊기지 않습니다.</p>
+<div class="badges"><span class="badge">백색·핑크·브라운</span><span class="badge">페이드아웃 타이머</span><span class="badge">설치 불필요</span><span class="badge">로드 후 오프라인 가능</span></div>
+</section>
+<main class="wrap">
+<section class="tool" id="tool">
+<h2>소음 종류를 고르고 재생</h2>
+<p class="intro">소리는 기기 안에서 합성됩니다. 스트리밍하지 않습니다.</p>
+<div class="controls">
+<div class="field"><label for="type">소음 종류</label><select id="type">
+<option value="white">백색</option><option value="pink" selected>핑크</option>
+<option value="brown">브라운</option></select></div>
+<div class="field"><label for="vol">음량 · <span id="vv">40</span></label><input type="range" id="vol" min="0" max="100" value="40"></div>
+<div class="field"><label for="timer">수면 타이머</label><select id="timer">
+<option value="0">타이머 없음</option><option value="15">15 min</option><option value="30">30 min</option>
+<option value="45">45 min</option><option value="60">60 min</option><option value="90">90 min</option></select></div>
+</div>
+<div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
+<button class="button" id="play">▶ 재생</button>
+<button class="button ghost" id="stop" disabled>■ 정지</button></div>
+<div class="results">
+<div class="result"><strong>상태</strong><span id="state">—</span></div>
+<div class="result"><strong>남은 시간</strong><span id="left">—</span></div>
+<div class="result" style="grid-column:span 2"><strong>지금 들리는 소리</strong><span id="prof">—</span></div>
+</div>
+<p class="note">작은 음량으로 시작하세요. 이어폰으로 약 70 dB를 넘는 소리를 밤새 듣는 것은 안전하지 않습니다.</p>
+</section>
+<section class="grid">
+<article class="card"><h2>작동 방식</h2><ol><li>Web Audio API로 10초 분량의 소음 버퍼를 메모리에 만들고 반복 재생합니다. 스트리밍하거나 내려받지 않습니다.</li><li>백색소음은 균일 난수 그대로, 핑크노이즈는 Voss–McCartney 필터를 거쳐 옥타브당 약 −3 dB, 브라운노이즈는 적분하여 약 −6 dB로 떨어집니다.</li><li>음량 슬라이더 값은 제곱해서 게인에 전달하므로 슬라이더 중간이 귀에도 중간으로 들립니다.</li><li>타이머가 30초 남으면 게인을 0으로 낮춥니다. 갑자기 무음이 되지 않습니다.</li></ol></article>
+<article class="card"><h2>이 도구가 하지 않는 일</h2><ul><li>건강 효과를 주장하지 않습니다. 소음은 불면증·이명·ADHD의 치료가 아닙니다.</li><li>녹음하거나 듣거나 분석하지 않습니다. 마이크를 전혀 사용하지 않습니다.</li><li>업로드도 저장도 없습니다. 탭을 닫으면 그것으로 끝입니다.</li></ul></article>
+<article class="card wide"><h2>다른 무료 도구</h2><ul><li><a href="sleep-cycle-calculator.html">몇 시에 자야 할까?</a></li><li><a href="travel-budget-calculator.html">여행 예산 계산기</a></li><li><a href="voice-to-text.html">음성 텍스트 변환</a></li><li><a href="https://alice51849.github.io/ios-app-guide/tools/currency-converter.html">Currency converter</a></li></ul></article>
+</section>
+<section class="faq"><h2>자주 묻는 질문</h2><details><summary>백색·핑크·브라운 소음의 실제 차이는?</summary><p>주파수에 대한 에너지 기울기입니다. 백색은 평탄해서 &#x27;쉬-&#x27; 하는 소리, 핑크는 옥타브당 약 −3 dB로 고른 빗소리, 브라운은 약 −6 dB로 멀리서 나는 폭포 소리에 가깝습니다. 이 페이지에서 바꿔 보면 바로 알 수 있습니다.</p></details><details><summary>화면을 끄면 계속 재생되나요?</summary><p>스마트폰에서는 화면이 꺼지거나 앱을 전환하면 브라우저 탭이 보통 정지·일시중단됩니다. 이는 이 페이지 설정이 아니라 운영체제 규칙이며, 설치형 앱만 우회할 수 있습니다.</p></details><details><summary>데이터를 사용하나요?</summary><p>아니요. 소리는 기기에서 생성됩니다. 페이지를 한 번 불러온 뒤에는 완전히 오프라인으로 쓸 수 있습니다.</p></details></section>
+<section class="app-card"><h2>화면을 끈 상태에서도 계속 재생되길 원하나요?</h2>
+<p>Sereno 은(는) 선택 사항입니다. 이 도구는 브라우저에서만 동작하므로 앱 없이도 사용할 수 있습니다. 기능·가격·제공 여부는 App Store의 현재 페이지에서 확인하세요.</p>
+<a class="button" href="https://apps.apple.com/app/id6788236641" rel="nofollow noopener">App Store에서 Sereno 보기</a></section>
+</main>
+<footer class="footer"><div class="wrap">브라우저에서 실행 · 업로드하거나 저장하지 않습니다 · <a href="index.html">무료 도구 전체</a></div></footer>
+<script>var L={"h2":"소음 종류를 고르고 재생","intro":"소리는 기기 안에서 합성됩니다. 스트리밍하지 않습니다.","l_type":"소음 종류","t_white":"백색","t_pink":"핑크","t_brown":"브라운","l_vol":"음량","l_timer":"수면 타이머","t_off":"타이머 없음","b_play":"▶ 재생","b_stop":"■ 정지","r_state":"상태","r_left":"남은 시간","r_profile":"지금 들리는 소리","s_playing":"재생 중","s_stopped":"정지됨","s_nolimit":"타이머 없음","s_unsupported":"이 브라우저는 Web Audio를 지원하지 않습니다","d_white":"모든 주파수가 거의 평탄 — 라디오 잡음 같은 '쉬-' 소리.","d_pink":"옥타브당 약 −3 dB — 고르게 내리는 빗소리에 가까움.","d_brown":"옥타브당 약 −6 dB — 멀리서 들리는 폭포처럼 낮은 소리.","note":"작은 음량으로 시작하세요. 이어폰으로 약 70 dB를 넘는 소리를 밤새 듣는 것은 안전하지 않습니다."};
+
+var ctx=null,src=null,gain=null,tick=null,endAt=0,fading=false;
+var $=function(i){return document.getElementById(i);};
+function buffer(kind){
+  var len=Math.floor(ctx.sampleRate*10),buf=ctx.createBuffer(1,len,ctx.sampleRate),d=buf.getChannelData(0),i;
+  if(kind==='white'){for(i=0;i<len;i++)d[i]=Math.random()*2-1;}
+  else if(kind==='pink'){var b0=0,b1=0,b2=0,b3=0,b4=0,b5=0,b6=0;
+    for(i=0;i<len;i++){var w=Math.random()*2-1;
+      b0=0.99886*b0+w*0.0555179;b1=0.99332*b1+w*0.0750759;b2=0.96900*b2+w*0.1538520;
+      b3=0.86650*b3+w*0.3104856;b4=0.55000*b4+w*0.5329522;b5=-0.7616*b5-w*0.0168980;
+      d[i]=(b0+b1+b2+b3+b4+b5+b6+w*0.5362)*0.11;b6=w*0.115926;}}
+  else{var last=0;for(i=0;i<len;i++){var w2=Math.random()*2-1;last=(last+0.02*w2)/1.02;d[i]=last*3.5;}}
+  return buf;}
+function level(){return Math.pow(parseInt($('vol').value,10)/100,2)*0.9;}
+function mmss(ms){var s=Math.max(0,Math.round(ms/1000));
+  return Math.floor(s/60)+':'+('0'+(s%60)).slice(-2);}
+function start(){
+  var AC=window.AudioContext||window.webkitAudioContext;
+  if(!AC){$('state').textContent=L.s_unsupported;return;}
+  if(!ctx)ctx=new AC();
+  if(ctx.state==='suspended')ctx.resume();
+  stop(true);
+  var kind=$('type').value;
+  src=ctx.createBufferSource();src.buffer=buffer(kind);src.loop=true;
+  gain=ctx.createGain();gain.gain.setValueAtTime(0.0001,ctx.currentTime);
+  gain.gain.exponentialRampToValueAtTime(Math.max(level(),0.0002),ctx.currentTime+1.2);
+  src.connect(gain).connect(ctx.destination);src.start();
+  fading=false;
+  var mins=parseInt($('timer').value,10)||0;
+  endAt=mins?Date.now()+mins*60000:0;
+  $('play').disabled=true;$('stop').disabled=false;
+  $('state').textContent=L.s_playing;
+  $('prof').textContent=L['d_'+kind];
+  tick=setInterval(update,500);update();}
+function update(){
+  if(!endAt){$('left').textContent=L.s_nolimit;return;}
+  var ms=endAt-Date.now();$('left').textContent=mmss(ms);
+  if(ms<=30000&&!fading&&gain){fading=true;
+    gain.gain.linearRampToValueAtTime(0.0001,ctx.currentTime+Math.max(ms/1000,1));}
+  if(ms<=0)stop();}
+function stop(quiet){
+  if(tick){clearInterval(tick);tick=null;}
+  if(src){try{src.stop();}catch(e){}src.disconnect();src=null;}
+  if(gain){gain.disconnect();gain=null;}
+  endAt=0;fading=false;
+  $('play').disabled=false;$('stop').disabled=true;
+  if(!quiet){$('state').textContent=L.s_stopped;$('left').textContent='—';}}
+$('play').addEventListener('click',start);
+$('stop').addEventListener('click',function(){stop();});
+$('vol').addEventListener('input',function(){$('vv').textContent=$('vol').value;
+  if(gain&&!fading)gain.gain.setTargetAtTime(level(),ctx.currentTime,0.05);});
+$('type').addEventListener('change',function(){$('prof').textContent=L['d_'+$('type').value];
+  if(src)start();});
+$('timer').addEventListener('change',function(){
+  if(!src)return;var m=parseInt($('timer').value,10)||0;
+  endAt=m?Date.now()+m*60000:0;fading=false;
+  if(gain)gain.gain.setTargetAtTime(level(),ctx.currentTime,0.05);update();});
+$('prof').textContent=L.d_pink;
+</script>
+</body>
+</html>

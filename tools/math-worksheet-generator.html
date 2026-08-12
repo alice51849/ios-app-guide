@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Math Worksheet Generator — Free Printable Addition, Subtraction, Times Tables</title>
+<meta name="description" content="Generate a printable arithmetic worksheet in seconds: pick the operations, the number range and how many problems, with an optional answer key. Free, no sign-up, prints clean.">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/tools/math-worksheet-generator.html">
+<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/math-worksheet-generator.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tools/math-worksheet-generator.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/math-worksheet-generator.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/math-worksheet-generator.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Math worksheet generator">
+<meta property="og:description" content="Generate a printable arithmetic worksheet in seconds: pick the operations, the number range and how many problems, with an optional answer key. Free, no sign-up, prints clean.">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/tools/math-worksheet-generator.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#3d3223;--muted:#8a7a5f;--line:#e9dcc3;--paper:#fff;--bg:#faf3e4;--brand:#9a6b16;--gold:#c8922a;--soft:#fdf6e8;--good:#2e7d4f;--bad:#b3452e;--warn:#fff6d9;--shadow:0 22px 60px rgba(122,90,35,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 88% 0,#fff 0,var(--bg) 55%,#f3e6cd 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:#8a5c10}.wrap{width:min(1080px,calc(100% - 30px));margin:auto}
+.top{position:sticky;top:0;z-index:8;background:#fffdf8f2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
+.nav{min-height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}
+.hero{padding:56px 0 26px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--brand);white-space:nowrap}
+.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}
+.hero h1{font-size:clamp(32px,5.6vw,56px);line-height:1.06;letter-spacing:-.03em;margin:.3em 0 .22em}
+.lead{font-size:clamp(17px,2.2vw,20px);color:var(--muted);margin:0}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.tool,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow)}
+.tool{padding:clamp(20px,4vw,34px);margin:14px auto 28px}
+.tool h2,.card h2,.app-card h2{font-size:clamp(22px,3.4vw,31px);line-height:1.15;margin:0 0 6px}
+.intro{color:var(--muted);margin:0 0 8px}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--brand);margin-bottom:6px;white-space:nowrap}
+select,input,button,textarea{font:inherit;color:var(--ink)}
+select,input:not([type=range]):not([type=file]),textarea{width:100%;border:1px solid #dcc9a4;border-radius:13px;background:#fff;padding:10px 12px}
+select,input:not([type=range]):not([type=file]){min-height:46px}
+textarea{min-height:74px;resize:vertical}
+.button{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--gold));color:#fff;text-decoration:none;font-weight:850;padding:12px 19px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(154,107,22,.24)}
+.button.ghost{background:#fff;color:var(--brand);border:1px solid var(--line);box-shadow:none}
+.button[disabled]{opacity:.45;cursor:not-allowed}
+.results{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin-top:18px}
+.result{background:var(--soft);border:1px solid #ecd9b4;border-radius:16px;padding:13px;min-width:0}
+.result strong{display:block;font-size:12px;color:#96793d;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.result span{display:block;font-size:16px;font-weight:780;margin-top:5px;white-space:nowrap;overflow-x:auto}
+.result.ok span{color:var(--good)}.result.err span{color:var(--bad)}
+.note{background:var(--warn);border:1px solid #ead9a7;border-radius:15px;padding:12px 15px;margin:14px 0 0;font-size:14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:28px}
+.card,.app-card{padding:clamp(20px,3.4vw,28px)}.card.wide{grid-column:1/-1}
+.card ul,.card ol{padding-left:22px;margin:8px 0}.card li{margin:7px 0}
+.app-card{margin:0 auto 34px;background:linear-gradient(135deg,#fffdf7,#f7ecd6)}
+.app-card .button{margin-top:8px}
+.faq{margin-bottom:28px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}
+.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radius:14px;background:#fff;touch-action:none}
+.filedrop{border:2px dashed #dcc9a4;border-radius:18px;padding:26px;text-align:center;background:var(--soft);margin-top:14px}
+.filedrop input{width:auto}
+.footer{background:#4a3a1e;color:#f6eeda;text-align:center;padding:26px 0}
+.footer a{color:#f0ddb4}
+.small{font-size:13px;color:var(--muted)}
+@media(max-width:900px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.controls,.results{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1080px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+@media print{.top,.hero,.app-card,.footer,.faq,.grid,.controls,.note{display:none!important}body{background:#fff}.tool{box-shadow:none;border:0;padding:0}.sheet{border:0;padding:0}}
+
+.sheet{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;margin-top:18px}
+.sheet h3{margin:0 0 4px;font-family:ui-serif,Georgia,serif}
+.probs{display:grid;grid-template-columns:repeat(var(--cols,3),minmax(0,1fr));gap:14px 22px;margin-top:14px}
+.prob{font-size:19px;font-variant-numeric:tabular-nums;border-bottom:1px solid #e4d7bd;padding:6px 2px}
+.prob i{font-style:normal;color:#b09258}
+.key{margin-top:16px;font-size:14px;color:var(--muted);column-count:3;column-gap:20px}
+@media(max-width:640px){.probs{grid-template-columns:repeat(2,minmax(0,1fr))}.key{column-count:2}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Math worksheet generator","description":"Generate a printable arithmetic worksheet in seconds: pick the operations, the number range and how many problems, with an optional answer key. Free, no sign-up, prints clean.","url":"https://alice51849.github.io/ios-app-guide/tools/math-worksheet-generator.html","inLanguage":"en","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"EducationalApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Choose any mix of the four operations","Number range from 10 to 100","12 to 40 problems, 2–4 columns","Optional answer key on the same sheet"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"en","mainEntity":[{"@type":"Question","name":"Will the printed sheet match the screen?","acceptedAnswer":{"@type":"Answer","text":"Yes. The problems are generated once from a seed and only redrawn when you change a setting or press “New sheet”, so printing shows the same problems in the same order."}},{"@type":"Question","name":"Can I get an answer key?","acceptedAnswer":{"@type":"Answer","text":"Yes — turn it on and it prints at the bottom of the same sheet in three columns. Turn it off for the child’s copy and on for yours."}},{"@type":"Question","name":"Are there negative answers or remainders?","acceptedAnswer":{"@type":"Answer","text":"No. Subtraction is always ordered so the answer is zero or positive, and division problems are built from a whole answer, so they never leave a remainder."}}]}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="index.html">← Free tools</a><a href="https://alice51849.github.io/ios-app-guide/" >iOS App Guide</a></div></header>
+<section class="hero wrap">
+<span class="eyebrow">Printable · answer key optional · free</span>
+<h1>Math worksheet generator</h1>
+<p class="lead">Pick what your child is working on, press print. Subtraction never goes negative and division always comes out whole, so nothing on the page needs an apology.</p>
+<div class="badges"><span class="badge">+ − × ÷</span><span class="badge">Answer key</span><span class="badge">Prints clean</span><span class="badge">No sign-up</span></div>
+</section>
+<main class="wrap">
+<section class="tool" id="tool">
+<h2>Build a worksheet</h2>
+<p class="intro">Everything is generated on this page. Nothing is stored.</p>
+<div class="controls">
+<div class="field"><label>Operations</label>
+<label class="small"><input type="checkbox" id="op_add" style="width:auto" checked> Addition</label>
+<label class="small"><input type="checkbox" id="op_sub" style="width:auto" checked> Subtraction</label>
+<label class="small"><input type="checkbox" id="op_mul" style="width:auto"> Multiplication</label>
+<label class="small"><input type="checkbox" id="op_div" style="width:auto"> Division</label></div>
+<div class="field"><label for="max">Largest number</label><select id="max">
+<option value="10">10</option><option value="20" selected>20</option>
+<option value="50">50</option><option value="100">100</option></select></div>
+<div class="field"><label for="count">Problems</label><select id="count">
+<option value="12">12</option><option value="20">20</option><option value="24" selected>24</option>
+<option value="30">30</option><option value="40">40</option></select></div>
+</div>
+<div class="controls" style="margin-top:10px">
+<div class="field"><label for="cols">Columns</label><select id="cols">
+<option value="2">2</option><option value="3" selected>3</option><option value="4">4</option></select></div>
+<div class="field"><label for="key">Answer key</label><select id="key">
+<option value="0">Hide</option><option value="1">Include</option></select></div>
+<div class="field" style="align-self:end;display:flex;gap:8px">
+<button class="button" id="new">New sheet</button>
+<button class="button ghost" id="print">Print</button></div>
+</div>
+<div class="sheet" id="sheet"></div>
+<p class="note">Subtraction never produces a negative result and every division divides exactly.</p>
+</section>
+<section class="grid">
+<article class="card"><h2>How it works</h2><ol><li>Problems are drawn from a small seeded generator, so the sheet on screen is exactly the sheet that prints. “New sheet” draws a fresh seed.</li><li>Subtraction always picks the smaller number second, so a beginner never meets a negative answer by accident.</li><li>Division is generated backwards from a whole quotient, so every division on the sheet divides exactly.</li><li>Multiplication stays inside the times tables — up to 9×9 for the smaller ranges and 12×12 for the larger ones.</li></ol></article>
+<article class="card"><h2>What it will never do</h2><ul><li>It does not grade anything, track a child, or store a name. Nothing is saved and nothing is sent.</li><li>It is not a curriculum. Number ranges and operations are your choice; the page has no opinion about what a given age should be doing.</li><li>No account, no watermark, no print limit.</li></ul></article>
+<article class="card wide"><h2>More free tools</h2><ul><li><a href="reward-chart-maker.html">Reward chart maker</a></li><li><a href="letter-tracing-worksheet.html">Letter tracing worksheet</a></li><li><a href="duplicate-photo-finder.html">Duplicate photo finder</a></li><li><a href="currency-converter.html">Currency converter</a></li></ul></article>
+</section>
+<section class="faq"><h2>Questions</h2><details><summary>Will the printed sheet match the screen?</summary><p>Yes. The problems are generated once from a seed and only redrawn when you change a setting or press “New sheet”, so printing shows the same problems in the same order.</p></details><details><summary>Can I get an answer key?</summary><p>Yes — turn it on and it prints at the bottom of the same sheet in three columns. Turn it off for the child’s copy and on for yours.</p></details><details><summary>Are there negative answers or remainders?</summary><p>No. Subtraction is always ordered so the answer is zero or positive, and division problems are built from a whole answer, so they never leave a remainder.</p></details></section>
+<section class="app-card"><h2>Practising maths on an iPad too?</h2>
+<p>Lumi Math Planet is optional — this free tool runs entirely in your browser and works without it. Check the app’s current App Store listing for exact features, pricing and availability before downloading.</p>
+<a class="button" href="https://apps.apple.com/app/id6778269699" rel="nofollow noopener">View Lumi Math Planet on the App Store</a></section>
+</main>
+<footer class="footer"><div class="wrap">Runs in your browser · nothing is uploaded or stored · <a href="index.html">all free tools</a></div></footer>
+<script>var L={"h2":"Build a worksheet","intro":"Everything is generated on this page. Nothing is stored.","l_ops":"Operations","o_add":"Addition","o_sub":"Subtraction","o_mul":"Multiplication","o_div":"Division","l_max":"Largest number","l_count":"Problems","l_cols":"Columns","l_key":"Answer key","on":"Include","off":"Hide","b_new":"New sheet","b_print":"Print","title_sheet":"Practice sheet","meta":"{n} problems · name: ____________  date: __________","answers":"Answers","note":"Subtraction never produces a negative result and every division divides exactly."};
+
+var $=function(i){return document.getElementById(i);};
+var seed=Math.floor(Math.random()*1e9);
+function rnd(){seed=(seed*1103515245+12345)&0x7fffffff;return seed/0x7fffffff;}
+function ri(a,b){return a+Math.floor(rnd()*(b-a+1));}
+function ops(){var o=[];
+  if($('op_add').checked)o.push('+');
+  if($('op_sub').checked)o.push('-');
+  if($('op_mul').checked)o.push('x');
+  if($('op_div').checked)o.push('/');
+  return o.length?o:['+'];}
+function problems(){
+  var list=ops(),max=parseInt($('max').value,10),n=parseInt($('count').value,10),out=[];
+  for(var i=0;i<n;i++){
+    var op=list[Math.floor(rnd()*list.length)],a,b,ans;
+    if(op==='+'){a=ri(1,max);b=ri(1,max-a>1?max-a:1);ans=a+b;}
+    else if(op==='-'){a=ri(2,max);b=ri(1,a);ans=a-b;}
+    else if(op==='x'){var lim=max<=20?9:12;a=ri(2,lim);b=ri(2,lim);ans=a*b;}
+    else{var lim2=max<=20?9:12;b=ri(2,lim2);ans=ri(2,lim2);a=b*ans;}
+    out.push({a:a,b:b,op:op,ans:ans});}
+  return out;}
+function sign(op){return op==='x'?'×':(op==='/'?'÷':op);}
+function render(){
+  var ps=problems(),host=$('sheet'),cols=$('cols').value;
+  var h='<h3>'+L.title_sheet+'</h3><p class="small">'+L.meta
+      .replace('{n}',ps.length)+'</p>';
+  h+='<div class="probs" style="--cols:'+cols+'">';
+  ps.forEach(function(p,i){
+    h+='<div class="prob"><i>'+(i+1)+'.</i> '+p.a+' '+sign(p.op)+' '+p.b+' =</div>';});
+  h+='</div>';
+  if($('key').value==='1'){
+    h+='<div class="key"><strong>'+L.answers+'</strong><br>';
+    ps.forEach(function(p,i){h+=(i+1)+'. '+p.ans+'<br>';});
+    h+='</div>';}
+  host.innerHTML=h;
+  window.__last=ps;}
+['op_add','op_sub','op_mul','op_div','max','count','cols','key'].forEach(function(i){
+  $(i).addEventListener('change',render);});
+$('new').addEventListener('click',function(){seed=Math.floor(Math.random()*1e9);render();});
+$('print').addEventListener('click',function(){window.print();});
+render();
+</script>
+</body>
+</html>

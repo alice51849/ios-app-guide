@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ホワイトノイズ／ピンクノイズ／ブラウンノイズ生成 — 無料・ダウンロード不要・スリープタイマー付き</title>
+<meta name="description" content="ブラウザ内で生成する本物のホワイト・ピンク・ブラウンノイズ。音量調整と、最後の30秒でフェードアウトするスリープタイマー付き。登録不要・広告なし。">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/ja/tools/white-noise-generator.html">
+<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/white-noise-generator.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/white-noise-generator.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/tools/white-noise-generator.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tools/white-noise-generator.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/white-noise-generator.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/white-noise-generator.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ホワイトノイズを再生する">
+<meta property="og:description" content="ブラウザ内で生成する本物のホワイト・ピンク・ブラウンノイズ。音量調整と、最後の30秒でフェードアウトするスリープタイマー付き。登録不要・広告なし。">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/ja/tools/white-noise-generator.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#3d3223;--muted:#8a7a5f;--line:#e9dcc3;--paper:#fff;--bg:#faf3e4;--brand:#9a6b16;--gold:#c8922a;--soft:#fdf6e8;--good:#2e7d4f;--bad:#b3452e;--warn:#fff6d9;--shadow:0 22px 60px rgba(122,90,35,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 88% 0,#fff 0,var(--bg) 55%,#f3e6cd 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:#8a5c10}.wrap{width:min(1080px,calc(100% - 30px));margin:auto}
+.top{position:sticky;top:0;z-index:8;background:#fffdf8f2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
+.nav{min-height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}
+.hero{padding:56px 0 26px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--brand);white-space:nowrap}
+.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}
+.hero h1{font-size:clamp(32px,5.6vw,56px);line-height:1.06;letter-spacing:-.03em;margin:.3em 0 .22em}
+.lead{font-size:clamp(17px,2.2vw,20px);color:var(--muted);margin:0}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.tool,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow)}
+.tool{padding:clamp(20px,4vw,34px);margin:14px auto 28px}
+.tool h2,.card h2,.app-card h2{font-size:clamp(22px,3.4vw,31px);line-height:1.15;margin:0 0 6px}
+.intro{color:var(--muted);margin:0 0 8px}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--brand);margin-bottom:6px;white-space:nowrap}
+select,input,button,textarea{font:inherit;color:var(--ink)}
+select,input:not([type=range]):not([type=file]),textarea{width:100%;border:1px solid #dcc9a4;border-radius:13px;background:#fff;padding:10px 12px}
+select,input:not([type=range]):not([type=file]){min-height:46px}
+textarea{min-height:74px;resize:vertical}
+.button{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--gold));color:#fff;text-decoration:none;font-weight:850;padding:12px 19px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(154,107,22,.24)}
+.button.ghost{background:#fff;color:var(--brand);border:1px solid var(--line);box-shadow:none}
+.button[disabled]{opacity:.45;cursor:not-allowed}
+.results{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin-top:18px}
+.result{background:var(--soft);border:1px solid #ecd9b4;border-radius:16px;padding:13px;min-width:0}
+.result strong{display:block;font-size:12px;color:#96793d;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.result span{display:block;font-size:16px;font-weight:780;margin-top:5px;white-space:nowrap;overflow-x:auto}
+.result.ok span{color:var(--good)}.result.err span{color:var(--bad)}
+.note{background:var(--warn);border:1px solid #ead9a7;border-radius:15px;padding:12px 15px;margin:14px 0 0;font-size:14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:28px}
+.card,.app-card{padding:clamp(20px,3.4vw,28px)}.card.wide{grid-column:1/-1}
+.card ul,.card ol{padding-left:22px;margin:8px 0}.card li{margin:7px 0}
+.app-card{margin:0 auto 34px;background:linear-gradient(135deg,#fffdf7,#f7ecd6)}
+.app-card .button{margin-top:8px}
+.faq{margin-bottom:28px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}
+.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radius:14px;background:#fff;touch-action:none}
+.filedrop{border:2px dashed #dcc9a4;border-radius:18px;padding:26px;text-align:center;background:var(--soft);margin-top:14px}
+.filedrop input{width:auto}
+.footer{background:#4a3a1e;color:#f6eeda;text-align:center;padding:26px 0}
+.footer a{color:#f0ddb4}
+.small{font-size:13px;color:var(--muted)}
+@media(max-width:900px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.controls,.results{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1080px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+@media print{.top,.hero,.app-card,.footer,.faq,.grid{display:none!important}body{background:#fff}.tool{box-shadow:none;border:0}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"ホワイトノイズを再生する","description":"ブラウザ内で生成する本物のホワイト・ピンク・ブラウンノイズ。音量調整と、最後の30秒でフェードアウトするスリープタイマー付き。登録不要・広告なし。","url":"https://alice51849.github.io/ios-app-guide/ja/tools/white-noise-generator.html","inLanguage":"ja","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"HealthApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["ホワイト・ピンク・ブラウンノイズをリアルタイム合成","聴感に合わせた音量カーブ","30秒フェードアウト付きスリープタイマー","ページ読み込み後はオフラインでも動作"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ja","mainEntity":[{"@type":"Question","name":"ホワイト・ピンク・ブラウンの違いは？","acceptedAnswer":{"@type":"Answer","text":"周波数に対するエネルギーの傾きです。ホワイトは平坦で「サー」という高めの音、ピンクは約 −3 dB/oct で雨音のようなバランス、ブラウンは約 −6 dB/oct で遠くの滝のような低音寄りです。このページで切り替えればすぐ分かります。"}},{"@type":"Question","name":"画面をロックしても鳴り続けますか？","acceptedAnswer":{"@type":"Answer","text":"スマートフォンではブラウザのタブは画面ロックやアプリ切り替えで停止・サスペンドされるのが普通です。これは OS の仕様で、このページの設定では変えられません。インストール型のアプリだけが回避できます。"}},{"@type":"Question","name":"通信量はかかりますか？","acceptedAnswer":{"@type":"Answer","text":"かかりません。音は端末側で生成しています。ページを読み込んだ後は完全にオフラインで使えます。"}}]}</script>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="index.html">← 無料ツール一覧</a><a href="https://alice51849.github.io/ios-app-guide/ja/" >iOS App Guide</a></div></header>
+<section class="hero wrap">
+<span class="eyebrow">その場で生成 · スリープタイマー付き</span>
+<h1>ホワイトノイズを再生する</h1>
+<p class="lead">短いループ音源ではなく、その場で合成した3種類のノイズ。タイマーは最後の30秒でフェードアウトするので、急に止まって目が覚めることがありません。</p>
+<div class="badges"><span class="badge">ホワイト・ピンク・ブラウン</span><span class="badge">フェードアウト付きタイマー</span><span class="badge">ダウンロード不要</span><span class="badge">読み込み後はオフライン可</span></div>
+</section>
+<main class="wrap">
+<section class="tool" id="tool">
+<h2>ノイズの種類を選んで再生</h2>
+<p class="intro">音は端末内で合成しています。ストリーミングはしていません。</p>
+<div class="controls">
+<div class="field"><label for="type">ノイズの種類</label><select id="type">
+<option value="white">ホワイト</option><option value="pink" selected>ピンク</option>
+<option value="brown">ブラウン</option></select></div>
+<div class="field"><label for="vol">音量 · <span id="vv">40</span></label><input type="range" id="vol" min="0" max="100" value="40"></div>
+<div class="field"><label for="timer">スリープタイマー</label><select id="timer">
+<option value="0">タイマーなし</option><option value="15">15 min</option><option value="30">30 min</option>
+<option value="45">45 min</option><option value="60">60 min</option><option value="90">90 min</option></select></div>
+</div>
+<div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
+<button class="button" id="play">▶ 再生</button>
+<button class="button ghost" id="stop" disabled>■ 停止</button></div>
+<div class="results">
+<div class="result"><strong>状態</strong><span id="state">—</span></div>
+<div class="result"><strong>残り時間</strong><span id="left">—</span></div>
+<div class="result" style="grid-column:span 2"><strong>いま鳴っている音</strong><span id="prof">—</span></div>
+</div>
+<p class="note">小さめの音量から始めてください。ヘッドホンでおよそ 70 dB を超える音を一晩流し続けるのは安全ではありません。</p>
+</section>
+<section class="grid">
+<article class="card"><h2>しくみ</h2><ol><li>Web Audio API で 10 秒分のノイズをメモリ上に作り、それをループ再生します。音源をダウンロードしたりストリーミングしたりはしません。</li><li>ホワイトは一様乱数そのもの。ピンクは Voss–McCartney 型のフィルタを通してオクターブあたり約 −3 dB に、ブラウンは積分してオクターブあたり約 −6 dB にしています。</li><li>音量スライダーは2乗してからゲインに渡すため、スライダーの真ん中が耳にも真ん中に聞こえます。</li><li>タイマー残り 30 秒でゲインを 0 に向けて下げるので、突然無音になりません。</li></ol></article>
+<article class="card"><h2>このツールがしないこと</h2><ul><li>健康効果はうたいません。ノイズは不眠・耳鳴り・ADHD の治療ではありません。</li><li>録音・集音・解析は一切行いません。マイクには触れません。</li><li>アップロードも保存もしません。タブを閉じればそれで終わりです。</li></ul></article>
+<article class="card wide"><h2>ほかの無料ツール</h2><ul><li><a href="packing-list-generator.html">持ち物リストを作る</a></li><li><a href="voice-to-text.html">音声をテキストにする</a></li><li><a href="photo-sharpener.html">写真をシャープにする</a></li><li><a href="https://alice51849.github.io/ios-app-guide/tools/currency-converter.html">Currency converter</a></li></ul></article>
+</section>
+<section class="faq"><h2>よくある質問</h2><details><summary>ホワイト・ピンク・ブラウンの違いは？</summary><p>周波数に対するエネルギーの傾きです。ホワイトは平坦で「サー」という高めの音、ピンクは約 −3 dB/oct で雨音のようなバランス、ブラウンは約 −6 dB/oct で遠くの滝のような低音寄りです。このページで切り替えればすぐ分かります。</p></details><details><summary>画面をロックしても鳴り続けますか？</summary><p>スマートフォンではブラウザのタブは画面ロックやアプリ切り替えで停止・サスペンドされるのが普通です。これは OS の仕様で、このページの設定では変えられません。インストール型のアプリだけが回避できます。</p></details><details><summary>通信量はかかりますか？</summary><p>かかりません。音は端末側で生成しています。ページを読み込んだ後は完全にオフラインで使えます。</p></details></section>
+<section class="app-card"><h2>画面を消したままノイズを鳴らし続けたいですか？</h2>
+<p>Sereno は任意です。このツールはブラウザだけで動くので、アプリがなくても使えます。機能・価格・配信状況は App Store の最新ページでご確認ください。</p>
+<a class="button" href="https://apps.apple.com/app/id6788236641" rel="nofollow noopener">App Store で Sereno を見る</a></section>
+</main>
+<footer class="footer"><div class="wrap">ブラウザ内で動作 · アップロード・保存は一切なし · <a href="index.html">無料ツール一覧</a></div></footer>
+<script>var L={"h2":"ノイズの種類を選んで再生","intro":"音は端末内で合成しています。ストリーミングはしていません。","l_type":"ノイズの種類","t_white":"ホワイト","t_pink":"ピンク","t_brown":"ブラウン","l_vol":"音量","l_timer":"スリープタイマー","t_off":"タイマーなし","b_play":"▶ 再生","b_stop":"■ 停止","r_state":"状態","r_left":"残り時間","r_profile":"いま鳴っている音","s_playing":"再生中","s_stopped":"停止","s_nolimit":"タイマーなし","s_unsupported":"このブラウザは Web Audio に対応していません","d_white":"全周波数でほぼ平坦。ラジオの砂嵐のような「サー」という音。","d_pink":"オクターブあたり約 −3 dB。一定に降る雨のようなバランス。","d_brown":"オクターブあたり約 −6 dB。遠くの滝のような低い音。","note":"小さめの音量から始めてください。ヘッドホンでおよそ 70 dB を超える音を一晩流し続けるのは安全ではありません。"};
+
+var ctx=null,src=null,gain=null,tick=null,endAt=0,fading=false;
+var $=function(i){return document.getElementById(i);};
+function buffer(kind){
+  var len=Math.floor(ctx.sampleRate*10),buf=ctx.createBuffer(1,len,ctx.sampleRate),d=buf.getChannelData(0),i;
+  if(kind==='white'){for(i=0;i<len;i++)d[i]=Math.random()*2-1;}
+  else if(kind==='pink'){var b0=0,b1=0,b2=0,b3=0,b4=0,b5=0,b6=0;
+    for(i=0;i<len;i++){var w=Math.random()*2-1;
+      b0=0.99886*b0+w*0.0555179;b1=0.99332*b1+w*0.0750759;b2=0.96900*b2+w*0.1538520;
+      b3=0.86650*b3+w*0.3104856;b4=0.55000*b4+w*0.5329522;b5=-0.7616*b5-w*0.0168980;
+      d[i]=(b0+b1+b2+b3+b4+b5+b6+w*0.5362)*0.11;b6=w*0.115926;}}
+  else{var last=0;for(i=0;i<len;i++){var w2=Math.random()*2-1;last=(last+0.02*w2)/1.02;d[i]=last*3.5;}}
+  return buf;}
+function level(){return Math.pow(parseInt($('vol').value,10)/100,2)*0.9;}
+function mmss(ms){var s=Math.max(0,Math.round(ms/1000));
+  return Math.floor(s/60)+':'+('0'+(s%60)).slice(-2);}
+function start(){
+  var AC=window.AudioContext||window.webkitAudioContext;
+  if(!AC){$('state').textContent=L.s_unsupported;return;}
+  if(!ctx)ctx=new AC();
+  if(ctx.state==='suspended')ctx.resume();
+  stop(true);
+  var kind=$('type').value;
+  src=ctx.createBufferSource();src.buffer=buffer(kind);src.loop=true;
+  gain=ctx.createGain();gain.gain.setValueAtTime(0.0001,ctx.currentTime);
+  gain.gain.exponentialRampToValueAtTime(Math.max(level(),0.0002),ctx.currentTime+1.2);
+  src.connect(gain).connect(ctx.destination);src.start();
+  fading=false;
+  var mins=parseInt($('timer').value,10)||0;
+  endAt=mins?Date.now()+mins*60000:0;
+  $('play').disabled=true;$('stop').disabled=false;
+  $('state').textContent=L.s_playing;
+  $('prof').textContent=L['d_'+kind];
+  tick=setInterval(update,500);update();}
+function update(){
+  if(!endAt){$('left').textContent=L.s_nolimit;return;}
+  var ms=endAt-Date.now();$('left').textContent=mmss(ms);
+  if(ms<=30000&&!fading&&gain){fading=true;
+    gain.gain.linearRampToValueAtTime(0.0001,ctx.currentTime+Math.max(ms/1000,1));}
+  if(ms<=0)stop();}
+function stop(quiet){
+  if(tick){clearInterval(tick);tick=null;}
+  if(src){try{src.stop();}catch(e){}src.disconnect();src=null;}
+  if(gain){gain.disconnect();gain=null;}
+  endAt=0;fading=false;
+  $('play').disabled=false;$('stop').disabled=true;
+  if(!quiet){$('state').textContent=L.s_stopped;$('left').textContent='—';}}
+$('play').addEventListener('click',start);
+$('stop').addEventListener('click',function(){stop();});
+$('vol').addEventListener('input',function(){$('vv').textContent=$('vol').value;
+  if(gain&&!fading)gain.gain.setTargetAtTime(level(),ctx.currentTime,0.05);});
+$('type').addEventListener('change',function(){$('prof').textContent=L['d_'+$('type').value];
+  if(src)start();});
+$('timer').addEventListener('change',function(){
+  if(!src)return;var m=parseInt($('timer').value,10)||0;
+  endAt=m?Date.now()+m*60000:0;fading=false;
+  if(gain)gain.gain.setTargetAtTime(level(),ctx.currentTime,0.05);update();});
+$('prof').textContent=L.d_pink;
+</script>
+</body>
+</html>

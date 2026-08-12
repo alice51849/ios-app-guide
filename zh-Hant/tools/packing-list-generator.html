@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>行李清單產生器 — 依天數自動算數量，可列印，免費</title>
+<meta name="description" content="輸入天數、氣候、旅行類型與同行人數，直接產生連數量都算好的行李清單，可複製、列印或存成 .txt，免註冊。">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/packing-list-generator.html">
+<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/packing-list-generator.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/packing-list-generator.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tools/packing-list-generator.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/packing-list-generator.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/packing-list-generator.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="行李清單產生器">
+<meta property="og:description" content="輸入天數、氣候、旅行類型與同行人數，直接產生連數量都算好的行李清單，可複製、列印或存成 .txt，免註冊。">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/packing-list-generator.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#3d3223;--muted:#8a7a5f;--line:#e9dcc3;--paper:#fff;--bg:#faf3e4;--brand:#9a6b16;--gold:#c8922a;--soft:#fdf6e8;--good:#2e7d4f;--bad:#b3452e;--warn:#fff6d9;--shadow:0 22px 60px rgba(122,90,35,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 88% 0,#fff 0,var(--bg) 55%,#f3e6cd 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:#8a5c10}.wrap{width:min(1080px,calc(100% - 30px));margin:auto}
+.top{position:sticky;top:0;z-index:8;background:#fffdf8f2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
+.nav{min-height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}
+.hero{padding:56px 0 26px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--brand);white-space:nowrap}
+.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}
+.hero h1{font-size:clamp(32px,5.6vw,56px);line-height:1.06;letter-spacing:-.03em;margin:.3em 0 .22em}
+.lead{font-size:clamp(17px,2.2vw,20px);color:var(--muted);margin:0}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.tool,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow)}
+.tool{padding:clamp(20px,4vw,34px);margin:14px auto 28px}
+.tool h2,.card h2,.app-card h2{font-size:clamp(22px,3.4vw,31px);line-height:1.15;margin:0 0 6px}
+.intro{color:var(--muted);margin:0 0 8px}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--brand);margin-bottom:6px;white-space:nowrap}
+select,input,button,textarea{font:inherit;color:var(--ink)}
+select,input:not([type=range]):not([type=file]),textarea{width:100%;border:1px solid #dcc9a4;border-radius:13px;background:#fff;padding:10px 12px}
+select,input:not([type=range]):not([type=file]){min-height:46px}
+textarea{min-height:74px;resize:vertical}
+.button{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--gold));color:#fff;text-decoration:none;font-weight:850;padding:12px 19px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(154,107,22,.24)}
+.button.ghost{background:#fff;color:var(--brand);border:1px solid var(--line);box-shadow:none}
+.button[disabled]{opacity:.45;cursor:not-allowed}
+.results{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin-top:18px}
+.result{background:var(--soft);border:1px solid #ecd9b4;border-radius:16px;padding:13px;min-width:0}
+.result strong{display:block;font-size:12px;color:#96793d;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.result span{display:block;font-size:16px;font-weight:780;margin-top:5px;white-space:nowrap;overflow-x:auto}
+.result.ok span{color:var(--good)}.result.err span{color:var(--bad)}
+.note{background:var(--warn);border:1px solid #ead9a7;border-radius:15px;padding:12px 15px;margin:14px 0 0;font-size:14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:28px}
+.card,.app-card{padding:clamp(20px,3.4vw,28px)}.card.wide{grid-column:1/-1}
+.card ul,.card ol{padding-left:22px;margin:8px 0}.card li{margin:7px 0}
+.app-card{margin:0 auto 34px;background:linear-gradient(135deg,#fffdf7,#f7ecd6)}
+.app-card .button{margin-top:8px}
+.faq{margin-bottom:28px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}
+.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radius:14px;background:#fff;touch-action:none}
+.filedrop{border:2px dashed #dcc9a4;border-radius:18px;padding:26px;text-align:center;background:var(--soft);margin-top:14px}
+.filedrop input{width:auto}
+.footer{background:#4a3a1e;color:#f6eeda;text-align:center;padding:26px 0}
+.footer a{color:#f0ddb4}
+.small{font-size:13px;color:var(--muted)}
+@media(max-width:900px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.controls,.results{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1080px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+@media print{.top,.hero,.app-card,.footer,.faq,.grid{display:none!important}body{background:#fff}.tool{box-shadow:none;border:0}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"行李清單產生器","description":"輸入天數、氣候、旅行類型與同行人數，直接產生連數量都算好的行李清單，可複製、列印或存成 .txt，免註冊。","url":"https://alice51849.github.io/ios-app-guide/zh-Hant/tools/packing-list-generator.html","inLanguage":"zh-Hant","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"TravelApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["依晚數與人數推算數量","依氣候與旅行類型調整項目","兒童與嬰兒專屬項目","可複製、列印或下載純文字"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hant","mainEntity":[{"@type":"Question","name":"數量是怎麼算的？","acceptedAnswer":{"@type":"Answer","text":"都是從你輸入的數字推出來的：內衣襪子是晚數＋1（上限 14），上衣是晚數＋1（上限 8），褲子是每三晚一件再加一件。所有規則都寫在「運作方式」裡。"}},{"@type":"Question","name":"家庭旅行可以用嗎？","acceptedAnswer":{"@type":"Answer","text":"可以。大人與小孩是分開的欄位，牙刷、水壺這類每人一份的項目會照人數增加，兒童區塊只有在至少一位小孩時才出現。"}},{"@type":"Question","name":"清單會被保存嗎？","acceptedAnswer":{"@type":"Answer","text":"不會，每次都是重新產生的。想留著請用複製、下載 .txt 或列印。"}}]}</script>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="index.html">← 免費工具</a><a href="https://alice51849.github.io/ios-app-guide/zh-Hant/" >iOS App Guide</a></div></header>
+<section class="hero wrap">
+<span class="eyebrow">數量依行程計算 · 可列印</span>
+<h1>行李清單產生器</h1>
+<p class="lead">一般清單只會寫「襪子」。這裡會依住幾晚、什麼氣候、幾個人，把數量一起算出來。</p>
+<div class="badges"><span class="badge">數量自動計算</span><span class="badge">含兒童與嬰兒</span><span class="badge">複製／列印／.txt</span><span class="badge">免註冊</span></div>
+</section>
+<main class="wrap">
+<section class="tool" id="tool">
+<h2>描述行程，立刻產生清單</h2>
+<p class="intro">邊輸入邊更新數量，不會保存任何資料。</p>
+<div class="controls">
+<div class="field"><label for="nights">住幾晚</label><input type="number" id="nights" value="5" min="1" max="60" inputmode="numeric"></div>
+<div class="field"><label for="adults">大人</label><input type="number" id="adults" value="2" min="1" max="12" inputmode="numeric"></div>
+<div class="field"><label for="kids">小孩</label><input type="number" id="kids" value="0" min="0" max="12" inputmode="numeric"></div>
+</div>
+<div class="controls" style="margin-top:10px">
+<div class="field"><label for="climate">氣候</label><select id="climate">
+<option value="hot">熱</option><option value="mild" selected>溫和</option>
+<option value="cold">冷</option></select></div>
+<div class="field"><label for="trip">旅行類型</label><select id="trip">
+<option value="city" selected>城市／一般</option><option value="beach">海邊</option>
+<option value="hiking">健行／戶外</option><option value="business">出差</option></select></div>
+<div class="field"><label>其他條件</label>
+<label class="small"><input type="checkbox" id="ointl" style="width:auto" checked> 出國</label>
+<label class="small"><input type="checkbox" id="olaptop" style="width:auto"> 會帶筆電</label>
+<label class="small"><input type="checkbox" id="obaby" style="width:auto"> 帶嬰兒</label>
+<label class="small"><input type="checkbox" id="odrive" style="width:auto"> 會自己開車</label></div>
+</div>
+<div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
+<button class="button ghost" id="copy">複製清單</button>
+<button class="button ghost" id="txt">下載 .txt</button>
+<button class="button ghost" id="print">列印</button></div>
+<div id="out" style="margin-top:18px"></div>
+<p class="note">所有規則都寫在「運作方式」；不符合你的習慣就自行增減。</p>
+</section>
+<section class="grid">
+<article class="card"><h2>運作方式</h2><ol><li>每個項目都有規則：內衣與襪子是「晚數＋1」（上限 14），上衣是「晚數＋1」（上限 8），褲子是「每三晚一件再加一件」。</li><li>氣候會整組開關：厚外套、帽子手套只在「冷」出現，短褲涼鞋只在「熱」出現，雨衣則在非炎熱時出現。</li><li>旅行類型各有專屬區塊：出差是襯衫與皮鞋，健行是登山鞋與小背包，海邊是浴巾與浮潛用具。</li><li>有小孩會加上點心、備用衣物與濕紙巾；勾選嬰兒則以「每晚 6 片」計算尿布並加上餵食用品。</li></ol></article>
+<article class="card"><h2>這個工具不會做的事</h2><ul><li>這不是航空規定檢查工具。液體、電池與行李重量規定各航空公司與航線都不同，請以航空公司公告為準。</li><li>不會儲存你的行程。重新整理就沒了，也不會上傳。</li><li>無法知道你個人的必需品，請把結果當成起點再自行增補。</li></ul></article>
+<article class="card wide"><h2>其他免費工具</h2><ul><li><a href="travel-budget-calculator.html">旅遊預算計算機</a></li><li><a href="voice-to-text.html">語音轉文字</a></li><li><a href="redact-to-pdf.html">文件遮蔽並輸出 PDF</a></li><li><a href="https://alice51849.github.io/ios-app-guide/tools/currency-converter.html">Currency converter</a></li></ul></article>
+</section>
+<section class="faq"><h2>常見問題</h2><details><summary>數量是怎麼算的？</summary><p>都是從你輸入的數字推出來的：內衣襪子是晚數＋1（上限 14），上衣是晚數＋1（上限 8），褲子是每三晚一件再加一件。所有規則都寫在「運作方式」裡。</p></details><details><summary>家庭旅行可以用嗎？</summary><p>可以。大人與小孩是分開的欄位，牙刷、水壺這類每人一份的項目會照人數增加，兒童區塊只有在至少一位小孩時才出現。</p></details><details><summary>清單會被保存嗎？</summary><p>不會，每次都是重新產生的。想留著請用複製、下載 .txt 或列印。</p></details></section>
+<section class="app-card"><h2>想讓這份清單留到下次旅行嗎？</h2>
+<p>TripBee Lite 是選用的——這個工具完全在瀏覽器裡執行，沒有 App 也能用。功能、價格與上架狀況請以 App Store 頁面為準。</p>
+<a class="button" href="https://apps.apple.com/app/id6791299610" rel="nofollow noopener">在 App Store 查看 TripBee Lite</a></section>
+</main>
+<footer class="footer"><div class="wrap">全部在瀏覽器內完成 · 不上傳、不儲存 · <a href="index.html">所有免費工具</a></div></footer>
+<script>var L={"c_doc":"證件與金錢","c_cloth":"衣物","c_toilet":"盥洗用品","c_tech":"電子產品","c_kid":"兒童","c_act":"行程專屬","i_passport":"護照","i_id":"身分證","i_tickets":"機票／訂房確認","i_insurance":"旅平險資料","i_wallet":"錢包、卡片、少量現金","i_licence":"駕照","i_underwear":"內衣褲","i_socks":"襪子","i_tshirt":"上衣","i_trousers":"褲子／裙子","i_sleepwear":"睡衣","i_shoes":"好走的鞋","i_sweater":"毛衣／刷毛外套","i_coat":"厚外套","i_gloveshat":"帽子、手套、圍巾","i_shorts":"短褲","i_swimsuit":"泳衣","i_sandals":"涼鞋","i_raincoat":"雨衣","i_shirt":"襯衫","i_blazer":"西裝外套","i_dressshoes":"皮鞋","i_toothbrush":"牙刷","i_toothpaste":"牙膏","i_shampoo":"洗髮精與沐浴用品","i_deodorant":"體香劑","i_razor":"刮鬍刀","i_meds":"常備藥與止痛藥","i_sunscreen":"防曬乳","i_glasses":"眼鏡／隱形眼鏡","i_charger":"手機充電器","i_powerbank":"行動電源","i_adapter":"轉接插頭","i_headphones":"耳機","i_laptop":"筆電／平板","i_laptopcharger":"筆電充電器","i_kidsnacks":"路上的點心","i_kidtoys":"安靜的玩具／童書","i_kidclothes":"小孩替換衣物","i_wipes":"濕紙巾","i_diapers":"尿布","i_bottles":"奶瓶／餵食用品","i_carrier":"揹巾或推車","i_beachtowel":"海灘巾","i_snorkel":"浮潛用具／泳鏡","i_boots":"登山鞋","i_daypack":"小背包","i_firstaid":"急救包","i_bottle":"水壺","i_book":"書／已下載的影音","h2":"描述行程，立刻產生清單","intro":"邊輸入邊更新數量，不會保存任何資料。","l_nights":"住幾晚","l_adults":"大人","l_kids":"小孩","l_climate":"氣候","c_hot":"熱","c_mild":"溫和","c_cold":"冷","l_trip":"旅行類型","p_city":"城市／一般","p_beach":"海邊","p_hiking":"健行／戶外","p_business":"出差","l_extras":"其他條件","o_intl":"出國","o_laptop":"會帶筆電","o_baby":"帶嬰兒","o_drive":"會自己開車","b_copy":"複製清單","b_copied":"已複製","b_txt":"下載 .txt","b_print":"列印","count":"這份清單共 {n} 項。","note":"所有規則都寫在「運作方式」；不符合你的習慣就自行增減。"};
+
+var $=function(i){return document.getElementById(i);};
+function ctx(){return {
+  n:Math.max(1,parseInt($('nights').value,10)||1),
+  a:Math.max(1,parseInt($('adults').value,10)||1),
+  k:Math.max(0,parseInt($('kids').value,10)||0),
+  cl:$('climate').value,tp:$('trip').value,
+  intl:$('ointl').checked,lap:$('olaptop').checked,
+  baby:$('obaby').checked,drive:$('odrive').checked};}
+var ITEMS=[
+['passport','doc',function(c){return c.a+c.k;},function(c){return c.intl;}],
+['id','doc',function(){return 1;},function(c){return !c.intl;}],
+['tickets','doc',function(){return 1;},function(){return true;}],
+['insurance','doc',function(){return 1;},function(c){return c.intl;}],
+['wallet','doc',function(){return 1;},function(){return true;}],
+['licence','doc',function(){return 1;},function(c){return c.drive;}],
+['underwear','cloth',function(c){return Math.min(c.n+1,14);},function(){return true;}],
+['socks','cloth',function(c){return Math.min(c.n+1,14);},function(){return true;}],
+['tshirt','cloth',function(c){return Math.min(c.n+1,8);},function(){return true;}],
+['trousers','cloth',function(c){return Math.ceil(c.n/3)+1;},function(){return true;}],
+['sleepwear','cloth',function(){return 1;},function(){return true;}],
+['shoes','cloth',function(){return 1;},function(){return true;}],
+['sweater','cloth',function(c){return c.cl==='cold'?2:1;},function(c){return c.cl!=='hot';}],
+['coat','cloth',function(){return 1;},function(c){return c.cl==='cold';}],
+['gloveshat','cloth',function(){return 1;},function(c){return c.cl==='cold';}],
+['shorts','cloth',function(){return 2;},function(c){return c.cl==='hot';}],
+['swimsuit','cloth',function(){return 1;},function(c){return c.cl==='hot'||c.tp==='beach';}],
+['sandals','cloth',function(){return 1;},function(c){return c.cl==='hot'||c.tp==='beach';}],
+['raincoat','cloth',function(){return 1;},function(c){return c.cl!=='hot';}],
+['shirt','cloth',function(c){return Math.min(c.n,5);},function(c){return c.tp==='business';}],
+['blazer','cloth',function(){return 1;},function(c){return c.tp==='business';}],
+['dressshoes','cloth',function(){return 1;},function(c){return c.tp==='business';}],
+['toothbrush','toilet',function(c){return c.a+c.k;},function(){return true;}],
+['toothpaste','toilet',function(){return 1;},function(){return true;}],
+['shampoo','toilet',function(){return 1;},function(){return true;}],
+['deodorant','toilet',function(){return 1;},function(){return true;}],
+['razor','toilet',function(){return 1;},function(){return true;}],
+['meds','toilet',function(){return 1;},function(){return true;}],
+['sunscreen','toilet',function(){return 1;},function(c){return c.cl==='hot'||c.tp==='beach'||c.tp==='hiking';}],
+['glasses','toilet',function(){return 1;},function(){return true;}],
+['charger','tech',function(c){return c.a;},function(){return true;}],
+['powerbank','tech',function(){return 1;},function(){return true;}],
+['adapter','tech',function(){return 1;},function(c){return c.intl;}],
+['headphones','tech',function(c){return c.a;},function(){return true;}],
+['laptop','tech',function(){return 1;},function(c){return c.lap;}],
+['laptopcharger','tech',function(){return 1;},function(c){return c.lap;}],
+['kidsnacks','kid',function(){return 1;},function(c){return c.k>0;}],
+['kidtoys','kid',function(){return 1;},function(c){return c.k>0;}],
+['kidclothes','kid',function(c){return c.k*2;},function(c){return c.k>0;}],
+['wipes','kid',function(){return 1;},function(c){return c.k>0||c.baby;}],
+['diapers','kid',function(c){return c.n*6;},function(c){return c.baby;}],
+['bottles','kid',function(){return 2;},function(c){return c.baby;}],
+['carrier','kid',function(){return 1;},function(c){return c.baby;}],
+['beachtowel','act',function(c){return c.a+c.k;},function(c){return c.tp==='beach';}],
+['snorkel','act',function(){return 1;},function(c){return c.tp==='beach';}],
+['boots','act',function(){return 1;},function(c){return c.tp==='hiking';}],
+['daypack','act',function(){return 1;},function(c){return c.tp==='hiking';}],
+['firstaid','act',function(){return 1;},function(c){return c.tp==='hiking';}],
+['bottle','act',function(c){return c.a+c.k;},function(){return true;}],
+['book','act',function(){return 1;},function(){return true;}]];
+var CATS=['doc','cloth','toilet','tech','kid','act'];
+function lines(){
+  var c=ctx(),out=[];
+  CATS.forEach(function(cat){
+    var rows=[];
+    ITEMS.forEach(function(it){
+      if(it[1]!==cat||!it[3](c))return;
+      var n=Math.max(1,Math.round(it[2](c)));
+      rows.push({name:L['i_'+it[0]],qty:n});});
+    if(rows.length)out.push({cat:L['c_'+cat],rows:rows});});
+  return out;}
+function render(){
+  var groups=lines(),host=$('out');host.innerHTML='';var total=0;
+  groups.forEach(function(g){
+    var card=document.createElement('article');card.className='card';
+    card.style.marginBottom='14px';
+    var h=document.createElement('h2');h.textContent=g.cat;h.style.fontSize='20px';card.appendChild(h);
+    var ul=document.createElement('ul');ul.style.listStyle='none';ul.style.paddingLeft='0';
+    g.rows.forEach(function(r){
+      total++;
+      var li=document.createElement('li');li.style.margin='6px 0';
+      var cb=document.createElement('input');cb.type='checkbox';cb.style.width='auto';
+      cb.style.marginRight='8px';li.appendChild(cb);
+      li.appendChild(document.createTextNode(r.name+(r.qty>1?'  × '+r.qty:'')));
+      ul.appendChild(li);});
+    card.appendChild(ul);host.appendChild(card);});
+  var p=document.createElement('p');p.className='small';
+  p.textContent=L.count.replace('{n}',total);host.appendChild(p);}
+function asText(){
+  return lines().map(function(g){
+    return g.cat+'\n'+g.rows.map(function(r){
+      return '[ ] '+r.name+(r.qty>1?' x'+r.qty:'');}).join('\n');}).join('\n\n');}
+['nights','adults','kids','climate','trip','ointl','olaptop','obaby','odrive']
+  .forEach(function(i){$(i).addEventListener('input',render);$(i).addEventListener('change',render);});
+$('copy').addEventListener('click',function(){
+  var t=asText();
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(t).then(function(){$('copy').textContent=L.b_copied;
+      setTimeout(function(){$('copy').textContent=L.b_copy;},1600);});}
+  else{window.prompt(L.b_copy,t);}});
+$('txt').addEventListener('click',function(){
+  var b=new Blob([asText()],{type:'text/plain;charset=utf-8'});
+  var a=document.createElement('a');a.href=URL.createObjectURL(b);
+  a.download='packing-list.txt';a.click();
+  setTimeout(function(){URL.revokeObjectURL(a.href);},4000);});
+$('print').addEventListener('click',function(){window.print();});
+render();
+</script>
+</body>
+</html>

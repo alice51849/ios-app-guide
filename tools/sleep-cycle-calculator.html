@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>What Time Should I Go to Bed? — Free Sleep Cycle Calculator</title>
+<meta name="description" content="Enter the time you must wake up and get bedtimes that land between sleep cycles, with the fall-asleep delay and cycle length you can adjust yourself. Plain arithmetic, no tracking.">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/tools/sleep-cycle-calculator.html">
+<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/sleep-cycle-calculator.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/tools/sleep-cycle-calculator.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/sleep-cycle-calculator.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/sleep-cycle-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="What time should I go to bed?">
+<meta property="og:description" content="Enter the time you must wake up and get bedtimes that land between sleep cycles, with the fall-asleep delay and cycle length you can adjust yourself. Plain arithmetic, no tracking.">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/tools/sleep-cycle-calculator.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#3d3223;--muted:#8a7a5f;--line:#e9dcc3;--paper:#fff;--bg:#faf3e4;--brand:#9a6b16;--gold:#c8922a;--soft:#fdf6e8;--good:#2e7d4f;--bad:#b3452e;--warn:#fff6d9;--shadow:0 22px 60px rgba(122,90,35,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 88% 0,#fff 0,var(--bg) 55%,#f3e6cd 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:#8a5c10}.wrap{width:min(1080px,calc(100% - 30px));margin:auto}
+.top{position:sticky;top:0;z-index:8;background:#fffdf8f2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
+.nav{min-height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}
+.hero{padding:56px 0 26px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--brand);white-space:nowrap}
+.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}
+.hero h1{font-size:clamp(32px,5.6vw,56px);line-height:1.06;letter-spacing:-.03em;margin:.3em 0 .22em}
+.lead{font-size:clamp(17px,2.2vw,20px);color:var(--muted);margin:0}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.tool,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow)}
+.tool{padding:clamp(20px,4vw,34px);margin:14px auto 28px}
+.tool h2,.card h2,.app-card h2{font-size:clamp(22px,3.4vw,31px);line-height:1.15;margin:0 0 6px}
+.intro{color:var(--muted);margin:0 0 8px}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--brand);margin-bottom:6px;white-space:nowrap}
+select,input,button,textarea{font:inherit;color:var(--ink)}
+select,input:not([type=range]):not([type=file]),textarea{width:100%;border:1px solid #dcc9a4;border-radius:13px;background:#fff;padding:10px 12px}
+select,input:not([type=range]):not([type=file]){min-height:46px}
+textarea{min-height:74px;resize:vertical}
+.button{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--gold));color:#fff;text-decoration:none;font-weight:850;padding:12px 19px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(154,107,22,.24)}
+.button.ghost{background:#fff;color:var(--brand);border:1px solid var(--line);box-shadow:none}
+.button[disabled]{opacity:.45;cursor:not-allowed}
+.results{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin-top:18px}
+.result{background:var(--soft);border:1px solid #ecd9b4;border-radius:16px;padding:13px;min-width:0}
+.result strong{display:block;font-size:12px;color:#96793d;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.result span{display:block;font-size:16px;font-weight:780;margin-top:5px;white-space:nowrap;overflow-x:auto}
+.result.ok span{color:var(--good)}.result.err span{color:var(--bad)}
+.note{background:var(--warn);border:1px solid #ead9a7;border-radius:15px;padding:12px 15px;margin:14px 0 0;font-size:14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:28px}
+.card,.app-card{padding:clamp(20px,3.4vw,28px)}.card.wide{grid-column:1/-1}
+.card ul,.card ol{padding-left:22px;margin:8px 0}.card li{margin:7px 0}
+.app-card{margin:0 auto 34px;background:linear-gradient(135deg,#fffdf7,#f7ecd6)}
+.app-card .button{margin-top:8px}
+.faq{margin-bottom:28px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}
+.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radius:14px;background:#fff;touch-action:none}
+.filedrop{border:2px dashed #dcc9a4;border-radius:18px;padding:26px;text-align:center;background:var(--soft);margin-top:14px}
+.filedrop input{width:auto}
+.footer{background:#4a3a1e;color:#f6eeda;text-align:center;padding:26px 0}
+.footer a{color:#f0ddb4}
+.small{font-size:13px;color:var(--muted)}
+@media(max-width:900px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.controls,.results{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1080px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+@media print{.top,.hero,.app-card,.footer,.faq,.grid{display:none!important}body{background:#fff}.tool{box-shadow:none;border:0}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"What time should I go to bed?","description":"Enter the time you must wake up and get bedtimes that land between sleep cycles, with the fall-asleep delay and cycle length you can adjust yourself. Plain arithmetic, no tracking.","url":"https://alice51849.github.io/ios-app-guide/tools/sleep-cycle-calculator.html","inLanguage":"en","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"HealthApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Bedtimes counted back from an alarm time","Wake times counted forward from a bedtime","Cycle length adjustable 80–110 minutes","Fall-asleep delay adjustable"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"en","mainEntity":[{"@type":"Question","name":"Is a sleep cycle really 90 minutes?","acceptedAnswer":{"@type":"Answer","text":"90 minutes is the common average, but individual cycles run roughly 80–110 minutes and change through the night. That is exactly why the cycle length here is a slider rather than a fixed number."}},{"@type":"Question","name":"Why subtract time for falling asleep?","acceptedAnswer":{"@type":"Answer","text":"Because you do not fall asleep the instant you lie down. Sleep-onset latency of 10–20 minutes is typical, so the calculation subtracts it before counting cycles."}},{"@type":"Question","name":"Should I always aim for six cycles?","acceptedAnswer":{"@type":"Answer","text":"No. Total sleep need varies from person to person. Six cycles is nine hours, which is more than many adults need. Compare the options and see which wake-up actually feels better."}}]}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="index.html">← Free tools</a><a href="https://alice51849.github.io/ios-app-guide/" >iOS App Guide</a></div></header>
+<section class="hero wrap">
+<span class="eyebrow">Plain arithmetic · nothing measured, nothing stored</span>
+<h1>What time should I go to bed?</h1>
+<p class="lead">Waking mid-cycle is what makes an eight-hour night feel terrible. Pick your alarm time and this counts whole cycles backwards — with every assumption on screen and editable.</p>
+<div class="badges"><span class="badge">Bedtime or wake time</span><span class="badge">Adjustable cycle length</span><span class="badge">Adjustable fall-asleep delay</span><span class="badge">No account</span></div>
+</section>
+<main class="wrap">
+<section class="tool" id="tool">
+<h2>Count backwards from your alarm</h2>
+<p class="intro">Change any assumption; the times update immediately.</p>
+<div class="controls">
+<div class="field"><label for="mode">I know my…</label><select id="mode">
+<option value="wake">Wake-up time</option><option value="bed">Bedtime</option></select></div>
+<div class="field"><label for="time">Time</label><input type="time" id="time" value="07:00"></div>
+<div class="field"><label for="fall">Time to fall asleep</label><select id="fall">
+<option value="0">0 min</option><option value="10">10 min</option><option value="15" selected>15 min</option>
+<option value="20">20 min</option><option value="30">30 min</option></select></div>
+</div>
+<div class="controls" style="margin-top:10px">
+<div class="field"><label for="cyc">Cycle length · <span id="cv">90</span> min</label><input type="range" id="cyc" min="80" max="110" step="5" value="90"></div>
+<div class="field" style="align-self:end"><button class="button ghost" id="now">Going to bed now</button></div>
+<div class="field"></div>
+</div>
+<div id="out" class="results"></div>
+<p class="note">These are averages, not a measurement of your sleep. Highlighted rows are 5 and 6 cycles, roughly 7.5–9 hours.</p>
+</section>
+<section class="grid">
+<article class="card"><h2>How it works</h2><ol><li>One cycle defaults to 90 minutes, the usual textbook average. Yours may be anywhere from about 80 to 110 minutes, so the slider changes it.</li><li>In wake mode: bedtime = alarm − (cycles × cycle length) − fall-asleep delay. In bedtime mode the same sum runs forwards.</li><li>Five and six cycles (about 7.5–9 hours) are highlighted because that is where most adult sleep-need estimates sit.</li><li>Everything is computed in the page. No date, no alarm and no habit is saved anywhere.</li></ol></article>
+<article class="card"><h2>What it will never do</h2><ul><li>It does not measure your sleep. Nothing here detects a real cycle — it is arithmetic on an average, not a reading from your body.</li><li>It gives no medical advice. Persistent trouble sleeping is a question for a doctor, not a calculator.</li><li>It never claims a “best” bedtime. It shows options; which one you use is your call.</li></ul></article>
+<article class="card wide"><h2>More free tools</h2><ul><li><a href="packing-list-generator.html">Packing list generator</a></li><li><a href="travel-budget-calculator.html">Travel budget calculator</a></li><li><a href="voice-to-text.html">Voice to text</a></li><li><a href="currency-converter.html">Currency converter</a></li></ul></article>
+</section>
+<section class="faq"><h2>Questions</h2><details><summary>Is a sleep cycle really 90 minutes?</summary><p>90 minutes is the common average, but individual cycles run roughly 80–110 minutes and change through the night. That is exactly why the cycle length here is a slider rather than a fixed number.</p></details><details><summary>Why subtract time for falling asleep?</summary><p>Because you do not fall asleep the instant you lie down. Sleep-onset latency of 10–20 minutes is typical, so the calculation subtracts it before counting cycles.</p></details><details><summary>Should I always aim for six cycles?</summary><p>No. Total sleep need varies from person to person. Six cycles is nine hours, which is more than many adults need. Compare the options and see which wake-up actually feels better.</p></details></section>
+<section class="app-card"><h2>Trouble settling once you are in bed?</h2>
+<p>Sereno is optional — this free tool runs entirely in your browser and works without it. Check the app’s current App Store listing for exact features, pricing and availability before downloading.</p>
+<a class="button" href="https://apps.apple.com/app/id6788236641" rel="nofollow noopener">View Sereno on the App Store</a></section>
+</main>
+<footer class="footer"><div class="wrap">Runs in your browser · nothing is uploaded or stored · <a href="index.html">all free tools</a></div></footer>
+<script>var L={"h2":"Count backwards from your alarm","intro":"Change any assumption; the times update immediately.","l_mode":"I know my…","m_wake":"Wake-up time","m_bed":"Bedtime","l_time":"Time","l_fall":"Time to fall asleep","l_cycle":"Cycle length","b_now":"Going to bed now","cycles":"cycles","hours":"h","exp_wake":"Go to bed at one of these","exp_bed":"Set the alarm for one of these","exp_note":"Assumes {f} min to fall asleep and a {c} min cycle — both editable above.","note":"These are averages, not a measurement of your sleep. Highlighted rows are 5 and 6 cycles, roughly 7.5–9 hours."};
+
+var $=function(i){return document.getElementById(i);};
+function pad(n){return ('0'+n).slice(-2);}
+function fmt(mins){mins=((mins%1440)+1440)%1440;return pad(Math.floor(mins/60))+':'+pad(mins%60);}
+function render(){
+  var mode=$('mode').value,fall=parseInt($('fall').value,10),cyc=parseInt($('cyc').value,10);
+  var parts=($('time').value||'07:00').split(':');
+  var base=parseInt(parts[0],10)*60+parseInt(parts[1],10);
+  var out=$('out');out.innerHTML='';
+  for(var n=6;n>=3;n--){
+    var total=n*cyc;
+    var t=mode==='wake'?base-total-fall:base+fall+total;
+    var d=document.createElement('div');d.className='result'+(n===5||n===6?' ok':'');
+    var hrs=(total/60);
+    d.innerHTML='<strong>'+n+' '+L.cycles+' · '+hrs.toFixed(1)+' '+L.hours+'</strong><span>'+fmt(t)+'</span>';
+    out.appendChild(d);}
+  var label=document.createElement('div');
+  label.className='result';label.style.gridColumn='1/-1';
+  label.innerHTML='<strong>'+(mode==='wake'?L.exp_wake:L.exp_bed)+'</strong><span>'+
+    L.exp_note.replace('{f}',fall).replace('{c}',cyc)+'</span>';
+  out.appendChild(label);}
+['mode','time','fall'].forEach(function(i){$(i).addEventListener('change',render);});
+$('cyc').addEventListener('input',function(){$('cv').textContent=$('cyc').value;render();});
+$('now').addEventListener('click',function(){
+  var d=new Date();$('mode').value='bed';
+  $('time').value=pad(d.getHours())+':'+pad(d.getMinutes());render();});
+render();
+</script>
+</body>
+</html>

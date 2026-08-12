@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>画像圧縮ツール — 圧縮前後のファイルサイズがそのまま見える（無料・ブラウザ完結）</title>
+<meta name="description" content="写真の長辺と画質を選ぶだけで、圧縮前と圧縮後の実サイズを表示してからダウンロードできます。アップロードなし、ウォーターマークなし、登録なし。">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/ja/tools/image-compressor.html">
+<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/image-compressor.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/image-compressor.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tools/image-compressor.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/image-compressor.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/image-compressor.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="画像を圧縮する">
+<meta property="og:description" content="写真の長辺と画質を選ぶだけで、圧縮前と圧縮後の実サイズを表示してからダウンロードできます。アップロードなし、ウォーターマークなし、登録なし。">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/ja/tools/image-compressor.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#3d3223;--muted:#8a7a5f;--line:#e9dcc3;--paper:#fff;--bg:#faf3e4;--brand:#9a6b16;--gold:#c8922a;--soft:#fdf6e8;--good:#2e7d4f;--bad:#b3452e;--warn:#fff6d9;--shadow:0 22px 60px rgba(122,90,35,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 88% 0,#fff 0,var(--bg) 55%,#f3e6cd 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:#8a5c10}.wrap{width:min(1080px,calc(100% - 30px));margin:auto}
+.top{position:sticky;top:0;z-index:8;background:#fffdf8f2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
+.nav{min-height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}
+.hero{padding:56px 0 26px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--brand);white-space:nowrap}
+.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}
+.hero h1{font-size:clamp(32px,5.6vw,56px);line-height:1.06;letter-spacing:-.03em;margin:.3em 0 .22em}
+.lead{font-size:clamp(17px,2.2vw,20px);color:var(--muted);margin:0}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.tool,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow)}
+.tool{padding:clamp(20px,4vw,34px);margin:14px auto 28px}
+.tool h2,.card h2,.app-card h2{font-size:clamp(22px,3.4vw,31px);line-height:1.15;margin:0 0 6px}
+.intro{color:var(--muted);margin:0 0 8px}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--brand);margin-bottom:6px;white-space:nowrap}
+select,input,button,textarea{font:inherit;color:var(--ink)}
+select,input:not([type=range]):not([type=file]),textarea{width:100%;border:1px solid #dcc9a4;border-radius:13px;background:#fff;padding:10px 12px}
+select,input:not([type=range]):not([type=file]){min-height:46px}
+textarea{min-height:74px;resize:vertical}
+.button{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--gold));color:#fff;text-decoration:none;font-weight:850;padding:12px 19px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(154,107,22,.24)}
+.button.ghost{background:#fff;color:var(--brand);border:1px solid var(--line);box-shadow:none}
+.button[disabled]{opacity:.45;cursor:not-allowed}
+.results{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin-top:18px}
+.result{background:var(--soft);border:1px solid #ecd9b4;border-radius:16px;padding:13px;min-width:0}
+.result strong{display:block;font-size:12px;color:#96793d;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.result span{display:block;font-size:16px;font-weight:780;margin-top:5px;white-space:nowrap;overflow-x:auto}
+.result.ok span{color:var(--good)}.result.err span{color:var(--bad)}
+.note{background:var(--warn);border:1px solid #ead9a7;border-radius:15px;padding:12px 15px;margin:14px 0 0;font-size:14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:28px}
+.card,.app-card{padding:clamp(20px,3.4vw,28px)}.card.wide{grid-column:1/-1}
+.card ul,.card ol{padding-left:22px;margin:8px 0}.card li{margin:7px 0}
+.app-card{margin:0 auto 34px;background:linear-gradient(135deg,#fffdf7,#f7ecd6)}
+.app-card .button{margin-top:8px}
+.faq{margin-bottom:28px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}
+.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radius:14px;background:#fff;touch-action:none}
+.filedrop{border:2px dashed #dcc9a4;border-radius:18px;padding:26px;text-align:center;background:var(--soft);margin-top:14px}
+.filedrop input{width:auto}
+.footer{background:#4a3a1e;color:#f6eeda;text-align:center;padding:26px 0}
+.footer a{color:#f0ddb4}
+.small{font-size:13px;color:var(--muted)}
+@media(max-width:900px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.controls,.results{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1080px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+@media print{.top,.hero,.app-card,.footer,.faq,.grid{display:none!important}body{background:#fff}.tool{box-shadow:none;border:0}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"画像を圧縮する","description":"写真の長辺と画質を選ぶだけで、圧縮前と圧縮後の実サイズを表示してからダウンロードできます。アップロードなし、ウォーターマークなし、登録なし。","url":"https://alice51849.github.io/ios-app-guide/ja/tools/image-compressor.html","inLanguage":"ja","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["長辺を指定してリサイズ","JPEG・WebP と画質スライダー","圧縮前後のバイト数と最終ピクセル数を表示","すべてブラウザ内で処理"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ja","mainEntity":[{"@type":"Question","name":"写真はサーバーに送られますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。デコード・リサイズ・再エンコードはすべてご自身のブラウザ内で行われます。ページを開いた後は機内モードでも動作します。"}},{"@type":"Question","name":"JPEG と WebP はどちらを選べばよいですか？","acceptedAnswer":{"@type":"Answer","text":"同じ見た目なら WebP のほうが 20〜35% ほど小さくなり、現行のブラウザと iOS で表示できます。提出フォームなどが .jpg を要求する場合だけ JPEG を選んでください。"}},{"@type":"Question","name":"PNG を圧縮したら逆に大きくなりました","acceptedAnswer":{"@type":"Answer","text":"スクリーンショットや線画のような平坦な画像は PNG のほうが小さいことがあります。その場合は結果が「+」で表示されるので、元のファイルを使ってください。"}},{"@type":"Question","name":"位置情報は消えますか？","acceptedAnswer":{"@type":"Answer","text":"canvas を通して再エンコードすると EXIF（GPS を含む）は失われます。ただしこれは副作用であってプライバシー保証ではありません。重要な写真は書き出した側を必ず確認してください。"}}]}</script>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="index.html">← 無料ツール一覧</a><a href="https://alice51849.github.io/ios-app-guide/ja/" >iOS App Guide</a></div></header>
+<section class="hero wrap">
+<span class="eyebrow">ブラウザ内で処理 · 圧縮前後のサイズを表示</span>
+<h1>画像を圧縮する</h1>
+<p class="lead">「どれだけ小さくなったか」を推定値ではなく実バイト数で表示します。元のファイルには一切手を加えません。</p>
+<div class="badges"><span class="badge">アップロードなし</span><span class="badge">JPEG / WebP</span><span class="badge">実サイズ表示</span><span class="badge">ウォーターマークなし</span></div>
+</section>
+<main class="wrap">
+<section class="tool" id="tool">
+<h2>写真を選んで、サイズを決めて、実際の削減量を見る</h2>
+<p class="intro">ブラウザがデコードできる JPG・PNG・WebP・HEIC に対応。データはこのページから出ません。</p>
+<div class="filedrop"><input type="file" id="file" accept="image/*"> <span class="small">一度に 1 枚</span></div>
+<div class="controls" style="margin-top:16px">
+<div class="field"><label for="maxw">長辺</label><select id="maxw">
+<option value="0">元のまま</option><option value="2560">2560 px</option>
+<option value="1920" selected>1920 px</option><option value="1280">1280 px</option>
+<option value="1024">1024 px</option><option value="640">640 px</option></select></div>
+<div class="field"><label for="q">画質 · <span id="qv">80</span></label><input type="range" id="q" min="30" max="96" value="80"></div>
+<div class="field"><label for="fmt">出力形式</label><select id="fmt">
+<option value="image/jpeg">JPEG</option><option value="image/webp">WebP</option></select></div>
+</div>
+<div class="results">
+<div class="result"><strong>元のサイズ</strong><span id="o">—</span></div>
+<div class="result"><strong>圧縮後</strong><span id="n">—</span></div>
+<div class="result ok"><strong>変化</strong><span id="s">—</span></div>
+<div class="result"><strong>ピクセル数</strong><span id="d">—</span></div>
+</div>
+<div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
+<a class="button" id="dl" download>圧縮した画像を保存</a></div>
+<canvas class="stage" id="cv" style="margin-top:18px;display:none"></canvas>
+<p class="note">パーセンテージは実際にエンコードされたバイト数から計算しています（推定ではありません）。元ファイルは変更されません。</p>
+</section>
+<section class="grid">
+<article class="card"><h2>しくみ</h2><ol><li>選んだファイルはブラウザ内で読み込まれ、どこにも送信されません。</li><li>指定した長辺に合わせて canvas に描き直します。背景は白で塗るため、透過 PNG も読めるまま残ります。</li><li>選んだ画質で JPEG または WebP に再エンコードし、できたデータのバイト数を実測します。</li><li>ダウンロードリンクはそのデータを指します。設定を変えるとその場で再エンコードします。</li></ol></article>
+<article class="card"><h2>このツールがしないこと</h2><ul><li>「90% 削減」のような固定の宣伝文句は出しません。削減率は画像次第なので、実測値だけを表示します。</li><li>失われた解像度は戻せません。書き出したコピーの縮小は元に戻せませんが、元ファイルはそのまま残ります。</li><li>アップロード・順番待ち・アカウント・ウォーターマークはありません。</li></ul></article>
+<article class="card wide"><h2>ほかの無料ツール</h2><ul><li><a href="white-noise-generator.html">ホワイトノイズを再生する</a></li><li><a href="packing-list-generator.html">持ち物リストを作る</a></li><li><a href="voice-to-text.html">音声をテキストにする</a></li><li><a href="https://alice51849.github.io/ios-app-guide/tools/currency-converter.html">Currency converter</a></li></ul></article>
+</section>
+<section class="faq"><h2>よくある質問</h2><details><summary>写真はサーバーに送られますか？</summary><p>いいえ。デコード・リサイズ・再エンコードはすべてご自身のブラウザ内で行われます。ページを開いた後は機内モードでも動作します。</p></details><details><summary>JPEG と WebP はどちらを選べばよいですか？</summary><p>同じ見た目なら WebP のほうが 20〜35% ほど小さくなり、現行のブラウザと iOS で表示できます。提出フォームなどが .jpg を要求する場合だけ JPEG を選んでください。</p></details><details><summary>PNG を圧縮したら逆に大きくなりました</summary><p>スクリーンショットや線画のような平坦な画像は PNG のほうが小さいことがあります。その場合は結果が「+」で表示されるので、元のファイルを使ってください。</p></details><details><summary>位置情報は消えますか？</summary><p>canvas を通して再エンコードすると EXIF（GPS を含む）は失われます。ただしこれは副作用であってプライバシー保証ではありません。重要な写真は書き出した側を必ず確認してください。</p></details></section>
+<section class="app-card"><h2>iPhone で書類をよくスキャン・送信しますか？</h2>
+<p>ScanTo Pro: Offline PDF &amp; OCR は任意です。このツールはブラウザだけで動くので、アプリがなくても使えます。機能・価格・配信状況は App Store の最新ページでご確認ください。</p>
+<a class="button" href="https://apps.apple.com/app/id6779977651" rel="nofollow noopener">App Store で ScanTo Pro: Offline PDF &amp; OCR を見る</a></section>
+</main>
+<footer class="footer"><div class="wrap">ブラウザ内で動作 · アップロード・保存は一切なし · <a href="index.html">無料ツール一覧</a></div></footer>
+<script>var L={"h2":"写真を選んで、サイズを決めて、実際の削減量を見る","intro":"ブラウザがデコードできる JPG・PNG・WebP・HEIC に対応。データはこのページから出ません。","accept":"一度に 1 枚","l_size":"長辺","o_keep":"元のまま","l_quality":"画質","l_format":"出力形式","r_before":"元のサイズ","r_after":"圧縮後","r_saved":"変化","r_dim":"ピクセル数","b_download":"圧縮した画像を保存","note":"パーセンテージは実際にエンコードされたバイト数から計算しています（推定ではありません）。元ファイルは変更されません。","err_read":"このブラウザではこのファイルをデコードできませんでした。"};
+
+var file=null,img=null,url='';
+var $=function(i){return document.getElementById(i);};
+function human(b){if(b<1024)return b+' B';
+  if(b<1048576)return (b/1024).toFixed(0)+' KB';
+  return (b/1048576).toFixed(2)+' MB';}
+$('file').addEventListener('change',function(){
+  file=$('file').files[0];if(!file)return;
+  if(url)URL.revokeObjectURL(url);
+  url=URL.createObjectURL(file);img=new Image();
+  img.onload=run;img.onerror=function(){alert(L.err_read);};img.src=url;});
+$('q').addEventListener('input',function(){$('qv').textContent=$('q').value;run();});
+['maxw','fmt'].forEach(function(i){$(i).addEventListener('change',run);});
+function run(){
+  if(!img||!img.naturalWidth)return;
+  var maxw=parseInt($('maxw').value,10)||0;
+  var w=img.naturalWidth,h=img.naturalHeight;
+  if(maxw&&Math.max(w,h)>maxw){var s=maxw/Math.max(w,h);w=Math.round(w*s);h=Math.round(h*s);}
+  var c=$('cv');c.width=w;c.height=h;c.style.display='block';
+  var x=c.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,w,h);
+  x.imageSmoothingQuality='high';x.drawImage(img,0,0,w,h);
+  var type=$('fmt').value,quality=parseInt($('q').value,10)/100;
+  c.toBlob(function(b){
+    if(!b)return;
+    $('o').textContent=human(file.size);
+    $('n').textContent=human(b.size);
+    var pct=100-(b.size/file.size*100);
+    $('s').textContent=(pct>=0?'-':'+')+Math.abs(pct).toFixed(0)+'%';
+    $('d').textContent=w+' × '+h+' px';
+    var a=$('dl');if(a.href&&a.dataset.blob)URL.revokeObjectURL(a.href);
+    a.href=URL.createObjectURL(b);a.dataset.blob='1';
+    var base=(file.name||'image').replace(/\.[^.]+$/,'');
+    a.download=base+'-'+w+'px.'+(type==='image/webp'?'webp':'jpg');
+  },type,quality);}
+</script>
+</body>
+</html>
